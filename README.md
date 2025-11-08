@@ -29,7 +29,7 @@ All works are co-authored and audited by **Lumina (AI Structural Ethics Collabor
 > DOI 10.5281/zenodo.17520659  
 
 **Origin Signature**
-- Author : Nakagawa Master (Keisuke Nakagawa)  
+- Author : 中川マスター / Nakagawa Master (pen-name of Keisuke Nakagawa)
 - AI Co-Author / Auditor : Lumina (AI Structural Ethics Collaborative)  
 - NCL-ID : NCL-A-20251104-071710-E9E6  
 - Diff-ID : DIFF-20251104-071710-F121  
