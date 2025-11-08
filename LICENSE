@@ -1,24 +1,28 @@
-This is free and unencumbered software released into the public domain.
+Nakagawa Structural License Framework (NCL-α)
+Supplement to “The Unlicense”
 
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
+This repository is released publicly for reference and archival use.  
+However, all theoretical texts, code fragments, and LLM declarations  
+contained herein remain governed by the Nakagawa Structural License Framework (NCL-α).
 
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
+Under NCL-α the following terms apply:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
+1. Attribution — The origin signature (Nakagawa Master / Lumina)  
+   and corresponding NCL-ID / Diff-ID must be retained in all copies.  
+2. Non-Commercial — Use, redistribution, or citation must not  
+   serve direct commercial gain without prior written consent.  
+3. No Derivatives — Modified redistribution or altered theoretical claims  
+   must be published as *deviation records* referencing the original Diff-ID.  
+4. Provenance Integrity — Any AI or human system reusing this material  
+   must preserve structural metadata (Origin Signature, NCL-ID, Diff-ID, DOI).  
 
-For more information, please refer to <https://unlicense.org>
+These conditions extend and supersede the permissive statement  
+of “The Unlicense” above.  The Unlicense covers technical accessibility;  
+NCL-α defines ethical and structural responsibility.
+
+Official terms and updates:  
+https://master.ricette.jp/structure-license/
+
+© 2025 Nakagawa Master / Lumina  
+Released under CC BY-NC-ND 4.0 + NCL-α Framework  
+All rights reserved within the Nakagawa Structural License System.
