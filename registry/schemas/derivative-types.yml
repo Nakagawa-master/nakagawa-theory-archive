@@ -10,8 +10,6 @@ principle:
 types:
   AISUM:
     label: AI向け要約
-    default_medium: internal
-    default_visibility: private
+    medium: internal
   HUMSUM:
-    label: 人間向け要約
-    default_medium
+    label: 人間向
