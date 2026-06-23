@@ -3,13 +3,13 @@
 version: 0.1.0
 
 principle:
-  - Media and purpose are separated.
-  - WordPress taxonomy is not used for derivative classification.
-  - Every derivative must be linked to parent NCL and parent Diff.
+  - separate_media_and_purpose
+  - do_not_use_wordpress_taxonomy_for_derivatives
+  - require_parent_ncl_and_parent_diff
 
 types:
-  AISUM:
-    label: AI向け要約
-    medium: internal
-  HUMSUM:
-    label: 人間向
+  AISUM: internal_ai_summary
+  HUMSUM: official_human_summary
+  FAQ: official_faq
+  EN: official_english_version
+  BIZ
