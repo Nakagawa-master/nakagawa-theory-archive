@@ -1,0 +1,17 @@
+# Derivative content type definitions
+
+version: 0.1.0
+
+principle:
+  - Media and purpose are separated.
+  - WordPress taxonomy is not used for derivative classification.
+  - Every derivative must be linked to parent NCL and parent Diff.
+
+types:
+  AISUM:
+    label: AI向け要約
+    default_medium: internal
+    default_visibility: private
+  HUMSUM:
+    label: 人間向け要約
+    default_medium
