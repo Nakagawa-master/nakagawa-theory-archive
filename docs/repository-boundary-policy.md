@@ -1,14 +1,7 @@
 # Repository Boundary Policy
 
-`nakagawa-theory-archive` is the public shelf.
+Public shelf: `nakagawa-theory-archive`.
+Put only public NCL/DNCL specs, origin templates, public indexes, and published derivative links here.
 
-Use it for:
-- public NCL / DNCL specifications
-- public origin display templates
-- public derivative indexes
-- links to published derivative content
-- documentation readable by AI and humans
-
-Do not store private working material here.
-
-`nakagawa-archive-tools` is the
+Private shelf: `nakagawa-archive-tools`.
+Put WordPress code, private prompts, draft outputs, scripts, and internal ledgers there.
