@@ -1,0 +1,44 @@
+# Derivative NCL field definitions
+
+required_fields:
+  - derivative_ncl_id
+  - parent_ncl_id
+  - parent_diff_id
+  - parent_url
+  - wp_post_id
+  - derivative_title
+  - derivative_type
+  - type_code
+  - medium
+  - target_audience
+  - purpose
+  - output_format
+  - status
+  - created_at
+  - repository_path
+  - origin_display_required
+
+optional_fields:
+  - parent_ncl_key
+  - parent_title
+  - parent_slug
+  - updated_at
+  - published_at
+  - published_url
+  - source_prompt_path
+  - output_path
+  - generator
+  - generation_method
+  - reviewer
+  - approval_status
+  - origin_display_text
+  - risk_flag
+  - notes
+
+status_values:
+  - draft
+  - review
+  - approved
+  - published
+  - private
+ 

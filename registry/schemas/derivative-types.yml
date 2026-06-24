@@ -1,0 +1,14 @@
+# Derivative content type definitions
+
+version: 0.1.0
+
+principle:
+  - separate_media_and_purpose
+  - do_not_use_wordpress_taxonomy_for_derivatives
+  - require_parent_ncl_and_parent_diff
+
+types:
+  AISUM: internal_ai_summary
+  HUMSUM: official_human_summary
+  FAQ: official_faq
+  EN: official_english_version
