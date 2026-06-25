@@ -1,0 +1,24 @@
+record_name: pilot_001_origin_derivative_links_live_confirmation_v0_1
+status: confirmed_by_human
+parent:
+  title: Nakagawa OS L1-L7 layer specification
+  parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/
+  parent_ncl_id: NCL-α-20251124-e4c70c
+  parent_diff_id: DIFF-20251124-0012
+confirmation:
+  origin_article_official_derivative_links_displayed: true
+  confirmed_by_human_message: 公式派生物表示OK
+  implementation_repo: Nakagawa-master/nakagawa-archive-tools
+  implementation_file: wordpress/master.ricette.jp-wp-content/mu-plugins/ncl-official-derivative-links.php
+  displayed_block_title: 公式派生物
+  displayed_links:
+    - 公式派生物一覧
+    - 人間向け要約
+    - FAQ
+    - 日本語AI索引
+    - English AI Index
+    - 中文 AI 索引
+next_phase:
+  - final_copy_review_for_derivative_pages
+  - prepare_indexing_transition_after_final_copy_review
+  - prepare_final_sitemap_after_indexing_decision
