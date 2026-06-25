@@ -1,0 +1,74 @@
+plan_name: static_output_structure_plan_v0_1
+status: draft_public_spec
+purpose: Define the static output file structure for derivative HTML generated from GitHub-managed public-index markdown.
+source_of_truth: github_registry
+based_on:
+  - registry/sitemaps/static-render-test-plan-v0.1.yml
+  - registry/sitemaps/static-hosting-decision-v0.1.yml
+  - registry/sitemaps/first-render-output-manifest-v0.1.yml
+scope:
+  current_parent_ncl_id: NCL-α-20251124-e4c70c
+  current_parent_ncl_slug: ncl-alpha-20251124-e4c70c
+  current_stage: structure_plan_only
+  public_deployment_status: not_deployed
+core_rules:
+  - WordPress remains origin only.
+  - Static derivative pages are generated from GitHub registry files.
+  - Every output page must preserve parent_url, parent_ncl_id, and parent_diff_id.
+  - Human approval is required before public route activation.
+  - Final sitemap entries must use confirmed rendered URLs only.
+preferred_output_structure:
+  base_directory: static/derivatives/
+  pattern: static/derivatives/{parent_ncl_slug}/{language}/{derivative_type}/index.html
+  pilot_001_outputs:
+    - source: registry/derivatives/by-parent/NCL-alpha-20251124-e4c70c/public-index/ja-human-summary.md
+      output: static/derivatives/ncl-alpha-20251124-e4c70c/ja/human-summary/index.html
+      public_path: /derivatives/ncl-alpha-20251124-e4c70c/ja/human-summary/
+    - source: registry/derivatives/by-parent/NCL-alpha-20251124-e4c70c/public-index/ja-faq.md
+      output: static/derivatives/ncl-alpha-20251124-e4c70c/ja/faq/index.html
+      public_path: /derivatives/ncl-alpha-20251124-e4c70c/ja/faq/
+    - source: registry/derivatives/by-parent/NCL-alpha-20251124-e4c70c/public-index/ja-ai-index.md
+      output: static/derivatives/ncl-alpha-20251124-e4c70c/ja/ai-index/index.html
+      public_path: /derivatives/ncl-alpha-20251124-e4c70c/ja/ai-index/
+    - source: registry/derivatives/by-parent/NCL-alpha-20251124-e4c70c/public-index/en-ai-index.md
+      output: static/derivatives/ncl-alpha-20251124-e4c70c/en/ai-index/index.html
+      public_path: /derivatives/ncl-alpha-20251124-e4c70c/en/ai-index/
+    - source: registry/derivatives/by-parent/NCL-alpha-20251124-e4c70c/public-index/zh-ai-index.md
+      output: static/derivatives/ncl-alpha-20251124-e4c70c/zh/ai-index/index.html
+      public_path: /derivatives/ncl-alpha-20251124-e4c70c/zh/ai-index/
+metadata_block_required:
+  html_head:
+    - title
+    - canonical_url
+    - language
+    - derivative_type
+  visible_or_machine_readable:
+    - parent_url
+    - parent_ncl_id
+    - parent_diff_id
+    - derivative_status
+    - not_original_article_notice
+render_status_flow:
+  - planned_not_rendered
+  - rendered_candidate
+  - human_reviewed
+  - rendered_public
+sitemap_status_flow:
+  - candidate_only
+  - rendered_url_confirmed
+  - sitemap_index_draft
+  - search_console_submission_candidate
+not_in_scope:
+  - create_cloudflare_project
+  - connect_domain_or_subdomain
+  - deploy_public_pages
+  - submit_search_console
+  - create_wordpress_posts
+fallback:
+  if_static_generation_not_ready: keep_registry_only
+  if_output_structure_changes: update_manifest_before_render
+  if_public_route_not_approved: do_not_mark_rendered_public
+next_steps_after_structure_plan:
+  - render_helper_spec_or_script_candidate
+  - first_render_candidate_generation
+  - sitemap_candidate_url_update_after_render_confirmation
