@@ -1,5 +1,5 @@
 record_name: pilot_001_master_derivatives_output_candidate_v0_1
-status: deploy_candidate_prepared_not_uploaded
+status: live_verified_noindex_pending_publication_decision
 source_of_truth: github_registry
 parent:
   title: Nakagawa OS L1-L7 layer specification
@@ -18,36 +18,59 @@ prepared_outputs:
     language: ja
     repository_path: deploy/lolipop/master-ricette/derivatives/index.html
     intended_url: https://master.ricette.jp/derivatives/
+    live_verified_by_human_browser: true
   - type: parent_derivative_index
     language: ja
     repository_path: deploy/lolipop/master-ricette/derivatives/ncl-alpha-20251124-e4c70c/index.html
     intended_url: https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/
+    live_verified_by_human_browser: true
   - type: human_summary
     language: ja
     repository_path: deploy/lolipop/master-ricette/derivatives/ncl-alpha-20251124-e4c70c/ja/human-summary/index.html
     intended_url: https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/ja/human-summary/
+    live_verified_by_human_browser: true
   - type: faq
     language: ja
     repository_path: deploy/lolipop/master-ricette/derivatives/ncl-alpha-20251124-e4c70c/ja/faq/index.html
     intended_url: https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/ja/faq/
+    live_verified_by_human_browser: true
   - type: ai_index
     language: ja
     repository_path: deploy/lolipop/master-ricette/derivatives/ncl-alpha-20251124-e4c70c/ja/ai-index/index.html
     intended_url: https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/ja/ai-index/
+    live_verified_by_human_browser: true
   - type: ai_index
     language: en
     repository_path: deploy/lolipop/master-ricette/derivatives/ncl-alpha-20251124-e4c70c/en/ai-index/index.html
     intended_url: https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/en/ai-index/
+    live_verified_by_human_browser: true
   - type: ai_index
     language: zh
     repository_path: deploy/lolipop/master-ricette/derivatives/ncl-alpha-20251124-e4c70c/zh/ai-index/index.html
     intended_url: https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/zh/ai-index/
+    live_verified_by_human_browser: true
 current_publication_state:
   files_created_in_github: true
-  local_pull_completed: false
-  uploaded_to_lolipop: false
-  live_pages_verified: false
+  local_pull_completed: true
+  uploaded_to_lolipop: true
+  uploaded_by_human: true
+  live_pages_verified: true
+  verified_live_page_count: 7
+  route_test_file_removed_from_github: true
+  route_test_folder_removed_from_lolipop: true
   noindex_nofollow_active: true
+  wordpress_database_used_for_derivative_posts: false
+  wordpress_origin_site_unaffected: visually_no_conflict_reported
+human_verification:
+  screenshot_received: true
+  verified_urls:
+    - https://master.ricette.jp/derivatives/
+    - https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/
+    - https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/ja/human-summary/
+    - https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/ja/faq/
+    - https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/ja/ai-index/
+    - https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/en/ai-index/
+    - https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/zh/ai-index/
 blocked_actions:
   - remove_noindex
   - final_sitemap_generation
@@ -56,10 +79,9 @@ blocked_actions:
   - derivatives_ricette_jp_connection
   - automatic_bulk_upload_without_review
 next_required_steps:
-  - create_pull_request_and_merge
-  - pull_latest_main_to_local
-  - upload_prepared_candidate_files_for_visual_check
-  - verify_each_live_url
+  - prepare_sitemap_candidate_for_master_derivatives_routes
+  - prepare_noindex_transition_review
+  - decide_origin_article_derivative_link_display
 fallback:
   if_any_page_404: check_folder_path_before_retry
   if_navigation_broken: fix_candidate_before_next_upload
