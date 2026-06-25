@@ -1,0 +1,31 @@
+note_name: static_hosting_review_note_v0_1
+status: review_only_no_external_action
+purpose: Record the static hosting review points before any external hosting action.
+source_of_truth: github_registry
+current_state:
+  static_candidates: ready_in_github
+  public_activation: blocked
+  external_hosting_action: not_started
+  dns_change: none
+review_points:
+  - confirm_static_directory_exists
+  - confirm_static_derivative_candidates_exist
+  - confirm_no_secret_values_required
+  - confirm_output_directory_static
+  - confirm_derivatives_base_path
+  - confirm_canonical_url_policy
+  - confirm_rollback_plan
+recommended_later_values:
+  repository: Nakagawa-master/nakagawa-theory-archive
+  branch: main
+  output_directory: static
+  environment_variables: none_required_for_pilot_001
+blocked_until_explicit_approval:
+  - external_hosting_setup
+  - domain_connection
+  - dns_change
+  - public_route_enablement
+  - rendered_public_status_change
+fallback:
+  if_hosting_not_ready: keep_static_candidates_in_github
+  if_domain_policy_unclear: keep_public_activation_blocked
