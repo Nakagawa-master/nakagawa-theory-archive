@@ -1,5 +1,5 @@
 record_name: pilot_001_master_derivatives_output_candidate_v0_1
-status: deploy_candidate_prepared_not_uploaded
+status: uploaded_to_lolipop_pending_live_verification
 source_of_truth: github_registry
 parent:
   title: Nakagawa OS L1-L7 layer specification
@@ -44,10 +44,29 @@ prepared_outputs:
     intended_url: https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/zh/ai-index/
 current_publication_state:
   files_created_in_github: true
-  local_pull_completed: false
-  uploaded_to_lolipop: false
+  local_pull_completed: true
+  uploaded_to_lolipop: true
+  uploaded_by_human: true
+  upload_scope: derivatives_folder_candidate_package
+  test_folder_still_present: true
   live_pages_verified: false
   noindex_nofollow_active: true
+verification_required:
+  - open_hub_index_url
+  - open_parent_derivative_index_url
+  - open_ja_human_summary_url
+  - open_ja_faq_url
+  - open_ja_ai_index_url
+  - open_en_ai_index_url
+  - open_zh_ai_index_url
+  - confirm_navigation_links
+  - confirm_wordpress_origin_site_unaffected
+recommended_test_folder_handling:
+  current_decision: keep_temporarily
+  delete_after:
+    - all_7_pilot_urls_verified
+    - no_wordpress_conflict_confirmed
+    - before_noindex_transition_or_final_sitemap
 blocked_actions:
   - remove_noindex
   - final_sitemap_generation
@@ -56,10 +75,9 @@ blocked_actions:
   - derivatives_ricette_jp_connection
   - automatic_bulk_upload_without_review
 next_required_steps:
-  - create_pull_request_and_merge
-  - pull_latest_main_to_local
-  - upload_prepared_candidate_files_for_visual_check
   - verify_each_live_url
+  - record_live_verification_result
+  - then_delete_test_folder_if_no_longer_needed
 fallback:
   if_any_page_404: check_folder_path_before_retry
   if_navigation_broken: fix_candidate_before_next_upload
