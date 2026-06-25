@@ -1,0 +1,66 @@
+record_name: pilot_001_master_derivatives_output_candidate_v0_1
+status: deploy_candidate_prepared_not_uploaded
+source_of_truth: github_registry
+parent:
+  title: Nakagawa OS L1-L7 layer specification
+  parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/
+  parent_ncl_id: NCL-α-20251124-e4c70c
+  parent_diff_id: DIFF-20251124-0012
+canonical_route_candidate:
+  base_url: https://master.ricette.jp/derivatives/
+  reason:
+    - official_derivatives_belong_under_master_archive
+    - route_test_has_been_verified
+    - no_dns_change_required
+    - wordpress_database_is_not_used_for_derivative_posts
+prepared_outputs:
+  - type: hub_index
+    language: ja
+    repository_path: deploy/lolipop/master-ricette/derivatives/index.html
+    intended_url: https://master.ricette.jp/derivatives/
+  - type: parent_derivative_index
+    language: ja
+    repository_path: deploy/lolipop/master-ricette/derivatives/ncl-alpha-20251124-e4c70c/index.html
+    intended_url: https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/
+  - type: human_summary
+    language: ja
+    repository_path: deploy/lolipop/master-ricette/derivatives/ncl-alpha-20251124-e4c70c/ja/human-summary/index.html
+    intended_url: https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/ja/human-summary/
+  - type: faq
+    language: ja
+    repository_path: deploy/lolipop/master-ricette/derivatives/ncl-alpha-20251124-e4c70c/ja/faq/index.html
+    intended_url: https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/ja/faq/
+  - type: ai_index
+    language: ja
+    repository_path: deploy/lolipop/master-ricette/derivatives/ncl-alpha-20251124-e4c70c/ja/ai-index/index.html
+    intended_url: https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/ja/ai-index/
+  - type: ai_index
+    language: en
+    repository_path: deploy/lolipop/master-ricette/derivatives/ncl-alpha-20251124-e4c70c/en/ai-index/index.html
+    intended_url: https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/en/ai-index/
+  - type: ai_index
+    language: zh
+    repository_path: deploy/lolipop/master-ricette/derivatives/ncl-alpha-20251124-e4c70c/zh/ai-index/index.html
+    intended_url: https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/zh/ai-index/
+current_publication_state:
+  files_created_in_github: true
+  local_pull_completed: false
+  uploaded_to_lolipop: false
+  live_pages_verified: false
+  noindex_nofollow_active: true
+blocked_actions:
+  - remove_noindex
+  - final_sitemap_generation
+  - search_console_action
+  - dns_change
+  - derivatives_ricette_jp_connection
+  - automatic_bulk_upload_without_review
+next_required_steps:
+  - create_pull_request_and_merge
+  - pull_latest_main_to_local
+  - upload_prepared_candidate_files_for_visual_check
+  - verify_each_live_url
+fallback:
+  if_any_page_404: check_folder_path_before_retry
+  if_navigation_broken: fix_candidate_before_next_upload
+  if_wordpress_conflict: remove_uploaded_candidate_and_reassess
