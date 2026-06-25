@@ -1,0 +1,38 @@
+status_name: cloudflare_preview_created_v0_1
+status: preview_created_not_verified
+source_of_truth: github_registry
+created_from:
+  provider: cloudflare_pages
+  repository: Nakagawa-master/nakagawa-theory-archive
+  branch: main
+  output_directory: static
+  project_name: nakagawa-derivatives
+preview:
+  preview_url: https://nakagawa-derivatives.pages.dev
+  created: true
+  verified: false
+  custom_domain_connected: false
+  dns_changed: false
+  search_console_action_taken: false
+  final_sitemap_generated: false
+  robots_policy: noindex_nofollow
+next_required_checks:
+  - open_preview_url
+  - verify_root_landing_page_loads
+  - verify_derivatives_index_page_loads
+  - verify_pilot_001_parent_index_loads
+  - verify_five_derivative_pages_load
+  - verify_original_article_links_point_to_master_ricette_jp
+  - verify_parent_ncl_id_and_diff_id_are_visible_or_in_metadata
+  - verify_derivative_notice_present
+blocked_until_preview_verified:
+  - custom_domain_connection
+  - dns_or_cname_change
+  - noindex_transition
+  - final_sitemap_generation
+  - search_console_action
+  - wordpress_derivative_post_creation
+fallback:
+  if_preview_pages_fail: fix_static_paths_before_domain_connection
+  if_metadata_missing: fix_static_pages_before_domain_connection
+  if_preview_ok: prepare_preview_verified_status_update
