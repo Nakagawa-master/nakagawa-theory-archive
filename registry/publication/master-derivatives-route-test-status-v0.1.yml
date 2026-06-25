@@ -1,0 +1,33 @@
+status_name: master_derivatives_route_test_status_v0_1
+status: test_file_prepared_not_uploaded
+source_of_truth: github_registry
+preferred_canonical_route_candidate: https://master.ricette.jp/derivatives/
+staging_route:
+  cloudflare_pages: https://nakagawa-derivatives.pages.dev
+prepared_test_file:
+  repository_path: deploy/lolipop/master-ricette/derivatives/test/index.html
+  intended_live_url: https://master.ricette.jp/derivatives/test/
+current_state:
+  test_file_created_in_github: true
+  pulled_to_local: false
+  lolipop_public_folder_confirmed: false
+  ftp_uploaded: false
+  live_url_verified: false
+  wordpress_unaffected: unknown
+  noindex_nofollow_active: true
+blocked_actions:
+  - upload_pilot_001_derivative_pages
+  - remove_noindex
+  - final_sitemap_generation
+  - search_console_action
+  - dns_change
+  - derivatives_ricette_jp_connection
+next_required_steps:
+  - pull_latest_main_to_local_after_pr_merge
+  - confirm_lolipop_public_folder_for_master_ricette_jp
+  - upload_test_file_only
+  - verify_live_test_url
+fallback:
+  if_live_url_404: check_folder_path_or_wordpress_rewrite
+  if_wordpress_conflict: remove_test_file_and_reassess
+  if_ftp_unclear: stop_before_upload
