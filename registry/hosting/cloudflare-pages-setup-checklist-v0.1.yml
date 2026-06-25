@@ -1,0 +1,61 @@
+checklist_name: cloudflare_pages_setup_checklist_v0_1
+status: pre_activation_checklist
+purpose: Prepare for possible Cloudflare Pages setup without connecting a domain, changing DNS, deploying public pages, or submitting Search Console.
+source_of_truth: github_registry
+based_on:
+  - registry/sitemaps/static-hosting-decision-v0.1.yml
+  - registry/sitemaps/static-output-structure-plan-v0.1.yml
+  - registry/sitemaps/render-output-status/pilot-001-render-output-status-v0.1.yml
+current_state:
+  primary_hosting_candidate: cloudflare_pages
+  public_activation_status: blocked_until_human_approval
+  dns_status: not_changed
+  search_console_status: not_submitted
+  wordpress_status: origin_only
+pre_setup_checks:
+  repository:
+    - confirm_repository: Nakagawa-master/nakagawa-theory-archive
+    - confirm_static_directory: static/
+    - confirm_candidate_pages_exist: static/derivatives/ncl-alpha-20251124-e4c70c/
+  build:
+    - confirm_no_build_required_for_static_html
+    - confirm_output_directory_candidate: static
+    - confirm_no_secret_values_required
+  routing:
+    - confirm_target_base_path: /derivatives/
+    - confirm_domain_or_subdomain_strategy_before_activation
+    - confirm_canonical_url_policy_before_submission
+  safety:
+    - no_wordpress_post_creation
+    - no_ftp_upload
+    - no_dns_change_without_approval
+    - no_search_console_submission_without_approval
+    - no_public_route_activation_without_approval
+possible_cloudflare_pages_settings:
+  project_source: github_repository
+  repository: Nakagawa-master/nakagawa-theory-archive
+  production_branch: main
+  build_command: none_or_empty
+  output_directory: static
+  environment_variables: none_required_for_pilot_001
+manual_approval_required_before:
+  - connecting_custom_domain
+  - changing_dns
+  - activating_public_route
+  - marking_candidate_paths_as_rendered_public
+  - generating_final_sitemap_index
+  - submitting_to_search_console
+rollback_preparation:
+  - keep_github_registry_as_source_of_truth
+  - keep_static_html_candidates_in_repository
+  - do_not_delete_parent_wordpress_article
+  - if_public_route_fails_keep_registry_only
+next_steps_allowed_without_public_activation:
+  - review_cloudflare_project_settings
+  - prepare_non_secret_setup_notes
+  - prepare_final_preflight_check
+blocked_steps:
+  - actual_cloudflare_project_creation_if_it_requires_account_action
+  - custom_domain_connection
+  - dns_change
+  - search_console_submission
