@@ -1,0 +1,69 @@
+decision_name: derivatives_ricette_jp_adoption_decision_v1_0
+status: adopted_for_pilot_001_publication_path
+source_of_truth: github_registry
+decision:
+  derivative_hub_domain: derivatives.ricette.jp
+  delivery_candidate: cloudflare_pages
+  origin_site: master.ricette.jp
+  wordpress_role: origin_articles_only
+  github_role: derivative_registry_static_outputs_and_sitemap_source_of_truth
+rationale:
+  - master_ricette_jp_is_the_origin_article_site
+  - derivatives_ricette_jp_is_the_derivative_connection_and_index_hub
+  - derivative_identity_is_based_on_parent_url_parent_ncl_id_parent_diff_id_and_derivative_ncl_id
+  - external_media_derivatives_should_not_be_forced_into_wordpress
+  - moving_future_urls_should_not_be_an_initial_design_assumption
+  - subdomain_separation_reduces_risk_to_wordpress_origin_site
+  - cloudflare_pages_can_serve_static_outputs_from_github_without_wordpress_database_growth
+scope:
+  included_for_pilot_001:
+    - static_html_official_derivatives
+    - human_summary
+    - faq
+    - ja_ai_index
+    - en_ai_index
+    - zh_ai_index
+    - sitemap_candidate_after_public_route_confirmation
+  excluded_for_pilot_001:
+    - full_third_party_intake_automation
+    - full_deviation_ledger_automation
+    - mass_wordpress_origin_page_backfill
+    - search_console_submission_before_public_route_confirmation
+    - wordpress_derivative_post_creation
+url_policy:
+  permanent_primary_route_candidate: https://derivatives.ricette.jp/
+  planned_paths:
+    - /derivatives/ncl-alpha-20251124-e4c70c/ja/human-summary/
+    - /derivatives/ncl-alpha-20251124-e4c70c/ja/faq/
+    - /derivatives/ncl-alpha-20251124-e4c70c/ja/ai-index/
+    - /derivatives/ncl-alpha-20251124-e4c70c/en/ai-index/
+    - /derivatives/ncl-alpha-20251124-e4c70c/zh/ai-index/
+  migration_policy:
+    - do_not_plan_future_migration_to_master_ricette_jp_derivatives_as_default
+    - if_migration_becomes_necessary_use_redirects_canonical_updates_and_ncl_url_migration_records
+origin_page_future_policy:
+  - show_selected_official_or_verified_derivative_links_only
+  - link_to_derivatives_ricette_jp_full_index
+  - keep_article_page_readable_and_origin_focused
+derivative_hub_future_policy:
+  - record_official_derivatives
+  - record_external_media_derivatives
+  - record_selected_verified_third_party_derivatives
+  - connect_to_deviation_ledger_when_reviewed_and_publicly_appropriate
+manual_approval_required_before:
+  - cloudflare_pages_external_setup
+  - custom_domain_connection
+  - dns_change
+  - marking_pages_as_rendered_public
+  - final_sitemap_generation
+  - search_console_action
+alignment_with_10000x_plan:
+  - increases_derivative_surface_without_polluting_origin_site
+  - gives_ai_and_search_crawlers_clear_static_entry_points
+  - preserves_origin_signature_and_ncl_diff_relationships
+  - enables_future_external_media_indexing
+  - keeps_human_workload_low_after_initial_setup
+fallback:
+  if_cloudflare_pages_not_ready: keep_static_candidates_in_github
+  if_custom_domain_not_ready: use_preview_url_for_review_only
+  if_search_console_scope_unclear: do_not_submit
