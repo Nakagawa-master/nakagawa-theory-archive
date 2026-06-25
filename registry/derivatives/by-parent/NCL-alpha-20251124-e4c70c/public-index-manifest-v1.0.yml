@@ -1,0 +1,47 @@
+manifest_name: pilot_001_public_index_manifest_v1_0
+status: approved
+publication_stage: public_derivative_index_preparation
+parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/
+parent_ncl_id: NCL-α-20251124-e4c70c
+parent_ncl_key: NCL-alpha-20251124-e4c70c
+parent_diff_id: DIFF-20251124-0012
+approval_source_repo: Nakagawa-master/nakagawa-archive-tools
+approval_pr: 28
+approval_status: approved_for_public_derivative_index_preparation
+entries:
+  - derivative_ncl_id: DNCL-alpha-20251124-e4c70c-JA-HSUM-001
+    derivative_type: human_summary
+    type_code: JA_HSUM
+    status: approved
+    source_file: official-domain-human-summary.md
+    sitemap_eligible: false
+  - derivative_ncl_id: DNCL-alpha-20251124-e4c70c-JA-FAQ-001
+    derivative_type: faq
+    type_code: JA_FAQ
+    status: approved
+    source_file: official-domain-faq.md
+    sitemap_eligible: false
+  - derivative_ncl_id: DNCL-alpha-20251124-e4c70c-JA-AI-001
+    derivative_type: ai_summary
+    type_code: JA_AI
+    status: approved
+    source_file: ai-index-ja.md
+    sitemap_eligible: false
+  - derivative_ncl_id: DNCL-alpha-20251124-e4c70c-EN-AI-001
+    derivative_type: ai_summary
+    type_code: EN_AI
+    status: approved
+    source_file: ai-index-en.md
+    sitemap_eligible: false
+  - derivative_ncl_id: DNCL-alpha-20251124-e4c70c-ZH-AI-001
+    derivative_type: ai_summary
+    type_code: ZH_AI
+    status: approved
+    source_file: ai-index-zh.md
+    sitemap_eligible: false
+rules:
+  - no_wordpress_post_creation
+  - no_wordpress_database_body_storage
+  - no_ftp_or_server_deploy
+  - sitemap_inclusion_requires_published_or_externally_visible_status
+next_step: prepare_public_body_files_or_static_display_records
