@@ -1,0 +1,45 @@
+spec_name: external_derivative_sitemap_spec_v0_1
+status: draft_public_spec
+purpose: Define sitemap structure for GitHub-managed external derivative assets.
+core_rule: Derivative assets are not stored as new WordPress posts.
+source_of_truth: github_registry
+sitemap_index:
+  target_file: sitemap-index.xml
+  role: entrypoint_for_search_engines
+  search_console_target: submit_sitemap_index
+partition_policy:
+  by_parent_ncl: true
+  by_language: true
+  by_media_type: true
+  max_urls_per_sitemap: 50000
+planned_sitemaps:
+  - sitemap-derivatives-ja.xml
+  - sitemap-derivatives-en.xml
+  - sitemap-derivatives-zh.xml
+  - sitemap-derivatives-ai-index.xml
+  - sitemap-derivatives-by-parent.xml
+required_url_fields:
+  - derivative_url
+  - parent_url
+  - parent_ncl_id
+  - parent_diff_id
+  - derivative_type
+  - language
+  - lastmod
+  - status
+publication_rule:
+  include_only_status:
+    - published
+    - externally_visible
+exclude_status:
+  - draft
+  - private
+  - review
+  - internal_only
+automation_rule:
+  on_derivative_publication: update_sitemap_source_record
+  on_parent_diff_change: update_lastmod_or_mark_outdated
+  on_url_removed: remove_from_next_generated_sitemap
+fallback:
+  if_generation_fails: keep_registry_record_and_retry_later
+  if_search_console_unavailable: keep_sitemap_index_available_for_crawlers
