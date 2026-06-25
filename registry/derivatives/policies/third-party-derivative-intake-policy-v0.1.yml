@@ -1,0 +1,77 @@
+policy_name: third_party_derivative_intake_policy_v0_1
+status: draft_public_spec
+purpose: Define how third-party or external derivative records are accepted, reviewed, and connected without overloading origin article pages.
+source_of_truth: github_registry
+scope:
+  includes:
+    - YouTube_derivatives
+    - note_derivatives
+    - Bluesky_posts
+    - X_posts
+    - external_blog_posts
+    - quoted_or_adapted_pages
+    - AI_generated_derivative_outputs
+  excludes:
+    - private_notes_without_public_url
+    - unrelated_mentions_without_derivative_claim
+    - unresolved_abuse_reports_without_review
+record_identity:
+  required_minimum:
+    - parent_url
+    - parent_ncl_id
+    - derivative_url
+    - medium
+    - reported_or_created_at
+    - verification_status
+  recommended:
+    - parent_diff_id
+    - derivative_ncl_id
+    - derivative_title
+    - derivative_type
+    - creator_name_or_handle
+    - source_quote_or_description
+    - relation_type
+    - risk_flag
+verification_statuses:
+  - self_created
+  - reported
+  - pending_review
+  - verified_official
+  - verified_third_party
+  - disputed
+  - rejected
+  - archived
+origin_page_inclusion:
+  default: false
+  allowed_when:
+    - verified_official
+    - verified_third_party
+    - high_value_for_origin_reader
+    - curator_approved
+  display_limit: small_curated_set
+  must_link_to: derivatives_hub_full_record
+derivatives_hub_inclusion:
+  default: true_after_minimum_review
+  display_policy:
+    - show_status
+    - show_parent_connection
+    - show_medium
+    - show_derivative_url_when_safe
+    - show_review_state_when_needed
+relationship_to_deviation_ledger:
+  - third_party_derivative_intake_is_not_the_same_as_deviation_reporting
+  - suspected_misuse_should_create_or_link_review_flag
+  - confirmed_misuse_may_link_to_deviation_record
+  - unresolved_reports_should_not_be_displayed_as_confirmed_deviation
+automation_policy:
+  zapier_or_future_intake_forms_may_create_pending_review_records
+  github_registry_remains_source_of_truth
+  human_review_required_before_verified_or_origin_page_display
+not_in_scope_for_pilot_001_public_activation:
+  - full_public_submission_form
+  - automatic_web_crawling_for_misuse
+  - automatic_accusation_or_public_labeling
+  - mass_origin_page_backfill
+fallback:
+  if_review_capacity_low: keep_pending_records_hidden_or_derivative_hub_only
+  if_risk_flag_high: require_manual_review_before_public_display
