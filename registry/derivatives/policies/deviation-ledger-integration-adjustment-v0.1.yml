@@ -1,0 +1,98 @@
+policy_name: deviation_ledger_integration_adjustment_v0_1
+status: draft_public_spec
+purpose: Adjust the derivative hub design to reflect the existing WordPress-side Deviation Ledger structure.
+source_of_truth: github_registry
+background:
+  existing_wordpress_elements:
+    - article_side_deviation_ledger_block
+    - fixed_page_deviation_ledger_log
+    - deviation_report_form
+    - ncl_challenge_form
+  existing_principle:
+    - deviation_ledger_is_not_a_condemnation_list
+    - deviation_ledger_records_recovery_process
+    - listing_and_removal_are_symmetric
+    - resolved_or_removed_items_may_remain_as_history
+current_state:
+  deviation_ledger_automation: not_fully_operational
+  public_record_count: may_be_zero_for_now
+  reporting_window: exists_or_planned_on_wordpress_side
+  full_auto_detection: future_ideal_not_current_requirement
+core_distinction:
+  derivative_registry:
+    role: record_and_index_origin_based_derivatives
+    examples:
+      - official_html_derivatives
+      - ai_index_pages
+      - faq_pages
+      - youtube_derivatives
+      - note_derivatives
+      - social_post_sets
+      - verified_high_value_third_party_derivatives
+  deviation_ledger:
+    role: record_misuse_misalignment_or_recovery_process
+    examples:
+      - unauthorized_large_scale_paraphrase
+      - cut_and_paste_usage
+      - theory_renaming_or_attribution_swap
+      - citation_problem
+      - structural_or_ethical_misalignment
+      - report_rebuttal_correction_recovery_process
+relationship_model:
+  - derivative_registry_and_deviation_ledger_are_separate_systems
+  - a_derivative_record_may_have_review_or_deviation_flags
+  - a_deviation_record_may_link_to_parent_ncl_id_parent_diff_id_and_related_external_url
+  - unresolved_reports_must_not_be_displayed_as_confirmed_deviation
+  - the_origin_article_block_may_link_to_fixed_deviation_ledger_log
+  - the_derivative_hub_may_link_to_deviation_status_when_publicly_appropriate
+origin_article_page_policy:
+  display:
+    - article_side_deviation_ledger_block
+    - current_record_status_for_that_article
+    - link_to_fixed_deviation_ledger_log
+  avoid:
+    - displaying_all_derivative_records
+    - displaying_all_third_party_items
+    - displaying_unverified_accusatory_claims
+  future_possible_addition:
+    - small_curated_official_derivatives_block
+    - link_to_derivatives_hub_full_index
+derivatives_hub_policy:
+  display:
+    - official_derivatives
+    - external_derivatives
+    - selected_or_verified_third_party_derivatives
+    - status_and_verification_metadata
+  deviation_connection:
+    - show_review_state_if_needed
+    - link_to_deviation_record_only_when_reviewed_or_publicly_appropriate
+    - keep_accusatory_language_out_of_unverified_records
+pilot_001_decision:
+  continue_derivatives_ricette_jp_publication_path: true
+  deviation_ledger_full_automation_required_before_pilot_publication: false
+  reason:
+    - the_deviation_ledger_is_a_parallel_recovery_and_review_system
+    - pilot_001_derivative_publication_uses_official_derivatives_only
+    - third_party_and_misuse_detection_can_be_integrated_later
+alignment_with_10000x_plan:
+  - preserves_origin_authority_on_master_ricette_jp
+  - keeps_derivative_expansion_on_derivatives_ricette_jp
+  - avoids_wordpress_database_bloat
+  - keeps_ncl_diff_and_origin_connection_visible
+  - allows_future_third_party_growth_without_overloading_origin_pages
+  - allows_deviation_recovery_process_to_connect_without_blocking_derivative_scale
+blocked_actions:
+  - treating_all_third_party_derivatives_as_confirmed_deviation
+  - turning_origin_article_pages_into_full_external_registry
+  - public_accusation_without_review
+  - requiring_full_deviation_automation_before_pilot_001_static_derivative_publication
+future_work:
+  - inspect_wordpress_template_and_shortcode_for_deviation_ledger_block
+  - document_fixed_page_deviation_ledger_log_structure
+  - define_deviation_status_fields_for_cross_linking
+  - design_future_report_intake_and_review_queue
+  - connect_reviewed_deviation_records_to_derivative_registry_when_needed
+fallback:
+  if_deviation_workflow_is_not_ready: keep_deviation_connection_as_link_only
+  if_report_is_unverified: keep_pending_review_and_do_not_show_as_confirmed
+  if_origin_page_display_becomes_too_large: move_detail_to_derivative_hub_or_fixed_ledger_page
