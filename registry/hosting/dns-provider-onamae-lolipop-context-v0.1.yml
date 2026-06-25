@@ -1,0 +1,42 @@
+context_name: dns_provider_onamae_lolipop_context_v0_1
+status: provider_context_recorded_dns_target_not_applied
+source_of_truth: github_registry
+human_reported_context:
+  registrar: onamae_com
+  web_server: lolipop
+  domain: ricette.jp
+  target_subdomain: derivatives.ricette.jp
+cloudflare_requested_record:
+  type: CNAME
+  name: derivatives
+  target: nakagawa-derivatives.pages.dev
+important_distinction:
+  - registrar_is_not_always_dns_provider
+  - web_server_is_not_always_dns_provider
+  - actual_dns_edit_location_depends_on_current_nameservers
+risk_notes:
+  - do_not_transfer_dns_to_cloudflare
+  - do_not_change_nameservers
+  - do_not_modify_root_domain
+  - do_not_modify_master_ricette_jp
+  - do_not_modify_mail_mx_txt_records
+  - add_only_derivatives_subdomain_cname_after_current_nameserver_is_confirmed
+next_required_step:
+  - check_current_nameserver_for_ricette_jp_in_onamae_or_dns_management_screen
+possible_outcomes:
+  onamae_dns_active:
+    action_later: add_cname_in_onamae_dns_record_settings
+  lolipop_or_related_dns_active:
+    action_later: add_cname_in_actual_dns_provider_if_supported
+  unknown_or_other_dns_active:
+    action_later: capture_nameserver_and_dns_record_screen_before_action
+blocked_until_nameserver_confirmed:
+  - add_cname
+  - save_dns_record
+  - click_cloudflare_check_dns_records
+  - noindex_transition
+  - final_sitemap_generation
+  - search_console_action
+fallback:
+  if_nameserver_screen_is_unclear: capture_screenshot_and_stop
+  if_existing_derivatives_record_exists: stop_before_overwrite
