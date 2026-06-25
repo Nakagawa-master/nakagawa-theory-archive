@@ -1,0 +1,91 @@
+manifest_name: first_render_output_manifest_v0_1
+status: planned_render_manifest
+purpose: Record the planned static HTML outputs for Pilot 001 before deployment or sitemap submission.
+source_of_truth: github_registry
+based_on:
+  - registry/sitemaps/static-render-test-plan-v0.1.yml
+  - registry/sitemaps/static-hosting-decision-v0.1.yml
+publication_state:
+  render_status: not_rendered_yet
+  public_deployment_status: not_deployed
+  search_console_status: not_submitted
+  sitemap_status: candidate_only
+parent:
+  title: Nakagawa OS L1-L7 layer specification
+  parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/
+  parent_ncl_id: NCL-α-20251124-e4c70c
+  parent_diff_id: DIFF-20251124-0012
+  parent_ncl_slug: ncl-alpha-20251124-e4c70c
+hosting_direction:
+  primary_candidate: cloudflare_pages
+  fallback_candidate: github_pages
+  public_activation: pending_human_approval
+outputs:
+  - output_id: pilot-001-ja-human-summary
+    source_path: registry/derivatives/by-parent/NCL-alpha-20251124-e4c70c/public-index/ja-human-summary.md
+    planned_output_path: /derivatives/ncl-alpha-20251124-e4c70c/ja/human-summary/
+    language: ja
+    derivative_type: human_summary
+    status: planned_not_rendered
+  - output_id: pilot-001-ja-faq
+    source_path: registry/derivatives/by-parent/NCL-alpha-20251124-e4c70c/public-index/ja-faq.md
+    planned_output_path: /derivatives/ncl-alpha-20251124-e4c70c/ja/faq/
+    language: ja
+    derivative_type: faq
+    status: planned_not_rendered
+  - output_id: pilot-001-ja-ai-index
+    source_path: registry/derivatives/by-parent/NCL-alpha-20251124-e4c70c/public-index/ja-ai-index.md
+    planned_output_path: /derivatives/ncl-alpha-20251124-e4c70c/ja/ai-index/
+    language: ja
+    derivative_type: ai_index
+    status: planned_not_rendered
+  - output_id: pilot-001-en-ai-index
+    source_path: registry/derivatives/by-parent/NCL-alpha-20251124-e4c70c/public-index/en-ai-index.md
+    planned_output_path: /derivatives/ncl-alpha-20251124-e4c70c/en/ai-index/
+    language: en
+    derivative_type: ai_index
+    status: planned_not_rendered
+  - output_id: pilot-001-zh-ai-index
+    source_path: registry/derivatives/by-parent/NCL-alpha-20251124-e4c70c/public-index/zh-ai-index.md
+    planned_output_path: /derivatives/ncl-alpha-20251124-e4c70c/zh/ai-index/
+    language: zh
+    derivative_type: ai_index
+    status: planned_not_rendered
+required_metadata_on_rendered_pages:
+  - parent_url
+  - parent_ncl_id
+  - parent_diff_id
+  - derivative_type
+  - language
+  - canonical_url
+  - status
+render_gate:
+  required_before_rendered_candidate:
+    - confirm_source_markdown_exists
+    - confirm_parent_metadata_matches_manifest
+    - confirm_output_template_preserves_origin_notice
+    - confirm_static_host_preview_or_output_location
+public_gate:
+  required_before_rendered_public:
+    - human_approval
+    - stable_public_url_confirmed
+    - canonical_url_confirmed
+    - rollback_path_confirmed
+    - sitemap_candidate_updated_with_public_urls
+sitemap_policy:
+  include_in_final_sitemap_only_when_status:
+    - rendered_public
+  exclude_status:
+    - planned_not_rendered
+    - rendered_candidate
+    - registry_only
+    - review
+fallback:
+  if_render_not_ready: keep_planned_not_rendered
+  if_hosting_not_ready: keep_registry_only
+  if_metadata_missing: block_render
+  if_public_activation_not_approved: keep_rendered_candidate_or_registry_only
+next_steps_after_manifest:
+  - render_helper_or_static_output_structure_plan
+  - sitemap_candidate_url_update_after_render_confirmation
+  - sitemap_index_draft_after_public_url_confirmation
