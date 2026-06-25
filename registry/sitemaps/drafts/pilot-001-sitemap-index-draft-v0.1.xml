@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Draft only. Do not submit to Search Console.
+  Public hosting is not confirmed.
+  These paths are rendered candidates, not confirmed live URLs.
+-->
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/ja/human-summary/</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/ja/faq/</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/ja/ai-index/</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/en/ai-index/</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/zh/ai-index/</loc>
+  </sitemap>
+</sitemapindex>
