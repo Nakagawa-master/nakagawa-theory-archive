@@ -1,0 +1,66 @@
+policy_name: static_derivative_render_policy_v0_1
+status: draft_public_spec
+purpose: Define how GitHub-managed derivative markdown assets may later be rendered into crawlable static HTML without creating WordPress posts.
+source_of_truth: github_registry
+core_rules:
+  - WordPress remains origin only.
+  - Derivatives are rendered from GitHub registry assets, not stored as WordPress posts.
+  - Each rendered page must preserve parent_url, parent_ncl_id, and parent_diff_id.
+  - Sitemap generation must use rendered public URLs, not internal repository paths.
+  - Human approval remains required before first public rendering route is activated.
+render_inputs:
+  - registry/derivatives/by-parent/*/public-index/*.md
+render_outputs:
+  preferred_base_path: /derivatives/
+  url_pattern: /derivatives/{parent_ncl_slug}/{language}/{derivative_type}/
+  example_urls:
+    - /derivatives/ncl-alpha-20251124-e4c70c/ja/human-summary/
+    - /derivatives/ncl-alpha-20251124-e4c70c/ja/faq/
+    - /derivatives/ncl-alpha-20251124-e4c70c/ja/ai-index/
+    - /derivatives/ncl-alpha-20251124-e4c70c/en/ai-index/
+    - /derivatives/ncl-alpha-20251124-e4c70c/zh/ai-index/
+required_page_metadata:
+  - title
+  - parent_url
+  - parent_ncl_id
+  - parent_diff_id
+  - derivative_type
+  - language
+  - canonical_url
+  - lastmod
+  - status
+page_footer_required:
+  - parent_origin_notice
+  - ncl_id_reference
+  - diff_id_reference
+  - not_original_article_notice
+sitemap_rule:
+  include_only_rendered_status:
+    - rendered_public
+  exclude_status:
+    - registry_only
+    - draft
+    - internal_only
+    - review
+hosting_options:
+  cloudflare_pages:
+    status: preferred_candidate
+    reason: static_pages_scalable_and_wordpress_independent
+  github_pages:
+    status: acceptable_candidate
+    reason: simple_for_registry_based_public_pages
+  wordpress_static_pages:
+    status: limited_option
+    reason: avoid_mass_wordpress_storage
+publication_flow:
+  - registry_public_index_prepared
+  - render_policy_approved
+  - static_host_selected
+  - first_render_test
+  - sitemap_candidate_url_update
+  - sitemap_index_generation
+  - search_console_submission_candidate
+fallback:
+  if_rendering_not_ready: keep_public_index_as_registry_only
+  if_static_host_unavailable: retry_later_without_wordpress_post_creation
+  if_metadata_missing: block_render_until_fixed
