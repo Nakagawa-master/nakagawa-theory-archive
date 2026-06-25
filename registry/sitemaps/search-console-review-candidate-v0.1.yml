@@ -1,0 +1,32 @@
+candidate_name: search_console_review_candidate_v0_1
+status: review_only_not_submitted
+purpose: Record the later review scope for Search Console after public hosting is confirmed. This file does not submit anything.
+source_of_truth: github_registry
+current_state:
+  public_host_status: not_confirmed
+  final_sitemap_status: not_generated
+  review_status: prepared
+  submission_status: not_submitted
+candidate_scope:
+  parent_ncl_id: NCL-α-20251124-e4c70c
+  parent_diff_id: DIFF-20251124-0012
+  pages_count: 5
+paths_for_later_review:
+  - /derivatives/ncl-alpha-20251124-e4c70c/ja/human-summary/
+  - /derivatives/ncl-alpha-20251124-e4c70c/ja/faq/
+  - /derivatives/ncl-alpha-20251124-e4c70c/ja/ai-index/
+  - /derivatives/ncl-alpha-20251124-e4c70c/en/ai-index/
+  - /derivatives/ncl-alpha-20251124-e4c70c/zh/ai-index/
+blockers_before_any_external_action:
+  - public_host_not_confirmed
+  - canonical_url_not_final
+  - rendered_public_status_not_set
+  - human_approval_not_recorded
+  - final_sitemap_not_generated
+manual_action_required_later:
+  - confirm_public_sitemap_url
+  - perform_external_console_action_only_after_approval
+fallback:
+  if_public_route_not_ready: keep_review_only
+  if_sitemap_url_changes: update_review_candidate
+  if_human_approval_missing: keep_blocked
