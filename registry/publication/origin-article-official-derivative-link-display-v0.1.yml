@@ -1,0 +1,41 @@
+﻿record_name: origin_article_official_derivative_link_display_v0_1
+status: display_policy_prepared
+source_of_truth: github_registry
+purpose: Define how official derivative links should appear on the parent origin article page.
+parent:
+  title: Nakagawa OS L1-L7 layer specification
+  parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/
+  parent_ncl_id: NCL-α-20251124-e4c70c
+  parent_diff_id: DIFF-20251124-0012
+display_location:
+  preferred_area: origin_article_bottom_connection_and_reuse_block
+block_title: 公式派生物
+links:
+  - label: 公式派生物一覧
+    url: https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/
+    type: parent_derivative_index
+  - label: 人間向け要約
+    url: https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/ja/human-summary/
+    type: human_summary
+  - label: FAQ
+    url: https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/ja/faq/
+    type: faq
+  - label: 日本語AI索引
+    url: https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/ja/ai-index/
+    type: ai_index
+    language: ja
+  - label: English AI Index
+    url: https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/en/ai-index/
+    type: ai_index
+    language: en
+  - label: 中文 AI 索引
+    url: https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/zh/ai-index/
+    type: ai_index
+    language: zh
+copy_guidance:
+  intro: この原典から派生した公式補助ページです。原典を置き換えるものではありません。
+  caution: 公式派生物は原典理解、AI索引、多言語接続のための補助導線です。
+blocked_until_display_confirmed:
+  - remove_noindex_from_derivative_pages
+  - final_sitemap_generation
+  - search_console_submission
