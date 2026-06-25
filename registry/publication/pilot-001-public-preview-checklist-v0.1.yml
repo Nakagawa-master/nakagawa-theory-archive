@@ -1,0 +1,41 @@
+checklist_name: pilot_001_public_preview_checklist_v0_1
+status: pre_public_route_review
+source_of_truth: github_registry
+purpose: Define what must be checked on a Cloudflare preview URL before connecting derivatives.ricette.jp or taking any external indexing action.
+preview_scope:
+  static_output_directory: static
+  expected_pages:
+    - /
+    - /derivatives/
+    - /derivatives/ncl-alpha-20251124-e4c70c/
+    - /derivatives/ncl-alpha-20251124-e4c70c/ja/human-summary/
+    - /derivatives/ncl-alpha-20251124-e4c70c/ja/faq/
+    - /derivatives/ncl-alpha-20251124-e4c70c/ja/ai-index/
+    - /derivatives/ncl-alpha-20251124-e4c70c/en/ai-index/
+    - /derivatives/ncl-alpha-20251124-e4c70c/zh/ai-index/
+required_checks:
+  - root_landing_page_loads
+  - derivatives_index_page_loads
+  - pilot_001_parent_index_page_loads
+  - all_five_derivative_pages_load
+  - original_article_link_points_to_master_ricette_jp
+  - parent_ncl_id_visible_or_in_metadata
+  - parent_diff_id_visible_or_in_metadata
+  - derivative_notice_present
+  - no_wordpress_post_created
+  - no_final_sitemap_generated
+  - no_search_console_action_taken
+  - no_dns_or_custom_domain_change_without_approval
+robots_policy_for_preview:
+  current_html_meta: noindex_nofollow
+  reason: keep preview and candidate pages out of search before final route confirmation
+approval_required_before_status_change:
+  - remove_noindex_if_desired
+  - connect_custom_domain
+  - mark_rendered_public
+  - generate_final_sitemap
+  - search_console_action
+fallback:
+  if_any_page_fails: fix_static_candidate_before_domain_connection
+  if_metadata_missing: block_public_route_activation
+  if_preview_url_only: do_not_submit_sitemap
