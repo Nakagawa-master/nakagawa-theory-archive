@@ -1,5 +1,5 @@
 status_name: master_derivatives_route_test_status_v0_1
-status: test_file_prepared_not_uploaded
+status: uploaded_pending_browser_verification
 source_of_truth: github_registry
 preferred_canonical_route_candidate: https://master.ricette.jp/derivatives/
 staging_route:
@@ -9,12 +9,18 @@ prepared_test_file:
   intended_live_url: https://master.ricette.jp/derivatives/test/
 current_state:
   test_file_created_in_github: true
-  pulled_to_local: false
-  lolipop_public_folder_confirmed: false
-  ftp_uploaded: false
-  live_url_verified: false
-  wordpress_unaffected: unknown
+  pulled_to_local: true
+  lolipop_public_folder_confirmed: true
+  derivatives_folder_created: true
+  test_file_uploaded_by_human: true
+  live_url_verified_by_assistant_tool: false
+  live_url_verified_by_human_browser: pending
+  wordpress_unaffected: pending_confirmation
   noindex_nofollow_active: true
+verification_note:
+  assistant_attempted_url_fetch: true
+  assistant_fetch_result: external_fetch_unavailable_or_cache_miss
+  next_verification_source: human_browser_screenshot
 blocked_actions:
   - upload_pilot_001_derivative_pages
   - remove_noindex
@@ -23,11 +29,10 @@ blocked_actions:
   - dns_change
   - derivatives_ricette_jp_connection
 next_required_steps:
-  - pull_latest_main_to_local_after_pr_merge
-  - confirm_lolipop_public_folder_for_master_ricette_jp
-  - upload_test_file_only
-  - verify_live_test_url
+  - open_expected_live_url_in_browser
+  - confirm_route_test_page_loads
+  - confirm_master_ricette_jp_origin_site_is_unaffected
 fallback:
   if_live_url_404: check_folder_path_or_wordpress_rewrite
   if_wordpress_conflict: remove_test_file_and_reassess
-  if_ftp_unclear: stop_before_upload
+  if_unexpected_page: stop_and_report_screen
