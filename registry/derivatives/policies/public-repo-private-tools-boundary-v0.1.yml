@@ -1,0 +1,64 @@
+policy_name: public_repo_private_tools_boundary_v0_1
+status: active_boundary_for_official_derivative_deployment
+source_of_truth: github_registry
+purpose: Clarify why official derivative HTML outputs may exist in the public theory archive repository while internal automation tools remain in the private tools repository.
+core_decision:
+  official_derivative_public_outputs_belong_in_public_repo: true
+  internal_generation_tools_and_sensitive_workflows_belong_in_private_repo: true
+why_public_repo_is_valid_for_official_outputs:
+  - official_derivative_pages_are_intended_public_artifacts
+  - master_ricette_jp_derivatives_pages_are_part_of_the_official_archive_surface
+  - deployment_ready_html_should_be_reviewable_and_versioned
+  - public_repo_can_act_as_the_source_of_truth_for_public_static_outputs
+  - ncl_diff_parent_metadata_should_remain_auditable
+why_private_tools_repo_should_not_hold_public_outputs_as_primary:
+  - private_repo_is_for_work_queue_drafts_prompts_and_internal_automation
+  - public_html_outputs_should_not_depend_on_private_visibility_once_published
+  - private_repo_should_not_be_the_canonical_record_for_public_urls
+boundary:
+  public_repo_nakagawa_theory_archive:
+    allowed:
+      - public_derivative_registry
+      - public_output_candidates
+      - deploy_ready_static_html
+      - public_sitemap_candidates
+      - public_route_status_records
+      - canonical_url_mapping_for_public_derivatives
+    not_allowed:
+      - secrets
+      - ftp_passwords
+      - api_keys
+      - private_unreviewed_generation_prompts_when_sensitive
+      - unpublished_sensitive_drafts
+  private_repo_nakagawa_archive_tools:
+    allowed:
+      - automation_queues
+      - zapier_payload_templates
+      - private_review_gates
+      - draft_generation_prompts
+      - non_public_working_notes
+    not_primary_place_for:
+      - canonical_public_html_outputs
+      - final_public_sitemap_urls
+      - public_archive_surface_files
+master_derivatives_route_decision:
+  canonical_candidate: https://master.ricette.jp/derivatives/
+  repo_source_path: deploy/lolipop/master-ricette/derivatives/
+  server_destination_path: /master/derivatives/
+  rationale:
+    - semantic_home_is_official_archive
+    - generated_files_are_public_official_derivatives
+    - git_history_preserves_provenance
+    - wordpress_database_is_not_burdened_with_derivative_posts
+    - lolipop_serves_static_files_under_official_archive_domain
+alignment_with_four_layer_model:
+  layer_1_origin: master.ricette.jp_origin_articles
+  layer_2_official_derivatives: master.ricette.jp_derivatives_static_html
+  layer_3_external_media: youtube_note_bluesky_x_notebooklm
+  layer_4_cross_registry: future_derivatives_ricette_jp_or_registry_interface
+blocked:
+  - storing_secrets_in_public_repo
+  - automatic_bulk_publish_without_review
+  - search_console_before_final_sitemap_review
+  - noindex_transition_before_live_output_review
+  - dns_changes_for_derivatives_ricette_jp_during_pilot_001
