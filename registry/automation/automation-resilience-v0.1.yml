@@ -1,0 +1,56 @@
+contract_name: automation_resilience_v0_1
+status: draft_public_spec
+purpose: Keep the 10000x expansion workflow running even when one automation tool is unavailable or rate-limited.
+principle: No single automation service should be a single point of failure.
+core_rules:
+  - Use staged automation, not all-at-once automation.
+  - Keep GitHub as the source of truth.
+  - Keep queue records human-readable and tool-readable.
+  - If one service fails, mark status and route to fallback.
+  - Human review remains the final gate before external publication.
+failure_modes:
+  zapier_quota_exceeded:
+    primary_response: pause_low_priority_zaps
+    fallback: batch_queue_items_for_manual_or_scheduled_processing
+    record_status: waiting_for_automation_capacity
+  zapier_task_error:
+    primary_response: retry_once_then_log_error
+    fallback: create_github_issue_or_queue_note
+    record_status: automation_error_needs_review
+  google_calendar_unavailable:
+    primary_response: use_github_queue_due_date
+    fallback: use_google_sheet_date_field_or_manual_batch_review
+    record_status: schedule_fallback_active
+  google_sheets_unavailable:
+    primary_response: use_github_yml_queue
+    fallback: local_csv_export_then_later_sync
+    record_status: sheet_fallback_active
+  google_drive_unavailable:
+    primary_response: keep_files_in_github
+    fallback: local_export_folder
+    record_status: drive_fallback_active
+  codex_unavailable:
+    primary_response: create_prompt_pack_for_later_codex_run
+    fallback: chatgpt_generates_short_draft_then_human_review
+    record_status: codex_fallback_active
+  chatgpt_limit_reached:
+    primary_response: defer_generation_batch
+    fallback: queue_next_run_and_preserve_inputs
+    record_status: ai_generation_waiting
+priority_levels:
+  p0: origin_and_ncl_integrity
+  p1: derivative_queue_creation
+  p2: ai_summary_generation
+  p3: multilingual_generation
+  p4: external_display_packaging
+  p5: social_or_optional_distribution
+quota_policy:
+  - Reserve automation capacity for p0 and p1 first.
+  - Batch p2 through p5 when limits are tight.
+  - Do not spend automation quota on low-value repetitive outputs.
+  - Prefer scheduled batches over continuous triggering.
+minimum_viable_operation:
+  if_all_automation_limited:
+    keep: github_queue_and_manual_batch_review
+    stop: optional_distribution
+    preserve: parent_ncl_id_parent_diff_id_and_derivative_status
