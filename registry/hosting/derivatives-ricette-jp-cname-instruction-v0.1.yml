@@ -1,0 +1,39 @@
+instruction_name: derivatives_ricette_jp_cname_instruction_v0_1
+status: cname_instruction_received_not_applied
+source_of_truth: github_registry
+cloudflare_pages_project:
+  project_name: nakagawa-derivatives
+  preview_url: https://nakagawa-derivatives.pages.dev
+custom_domain:
+  domain: derivatives.ricette.jp
+  setup_method_selected: my_dns_provider
+cloudflare_requested_dns_record:
+  type: CNAME
+  name: derivatives
+  target: nakagawa-derivatives.pages.dev
+current_state:
+  cname_record_applied: false
+  dns_provider_unknown_or_not_confirmed: true
+  cloudflare_check_dns_records_clicked: false
+  custom_domain_active: false
+  noindex_nofollow_active: true
+  final_sitemap_generated: false
+  search_console_action_taken: false
+next_required_human_information:
+  - identify_current_dns_provider_for_ricette_jp
+blocked_until_dns_provider_confirmed:
+  - add_or_edit_cname_record
+  - click_check_dns_records
+  - noindex_transition
+  - final_sitemap_generation
+  - search_console_action
+safety_notes:
+  - do_not_begin_dns_transfer
+  - do_not_change_nameservers
+  - do_not_change_root_domain_records
+  - do_not_touch_master_ricette_jp_records
+  - add_only_derivatives_subdomain_cname_after_provider_is_confirmed
+fallback:
+  if_dns_provider_unclear: stop_and_identify_provider_first
+  if_existing_derivatives_record_exists: review_before_overwriting
+  if_dns_screen_differs: capture_screen_before_saving
