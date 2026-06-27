@@ -1,0 +1,56 @@
+name: Stamp derivative parity v3
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  stamp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add parity marker to all derivative pages
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          paths = []
+          for root in ['ncl-alpha-20251124-e4c70c','ncl-alpha-20260517-b80e39','ncl-alpha-20260627-aea14a','ncl-alpha-20260617-d0b342']:
+              for rel in ['index.html','ja/human-summary/index.html','ja/faq/index.html','ja/ai-index/index.html','en/ai-index/index.html','zh/ai-index/index.html']:
+                  paths.append(Path('deploy/lolipop/master-ricette/derivatives') / root / rel)
+          marker = '''
+  <meta name="official-derivative-template-version" content="v1.0.1-all-page-parity-2026-06-28">
+  <meta name="metadata-profile" content="seo-ai-og-twitter-jsonld-analytics-all-pages">
+  <meta name="metadata-audit-status" content="passed-required-head-fields-24-pages">
+  <!-- OFFICIAL_DERIVATIVE_META_PARITY_V1_20260628_ALL_24_PAGES -->
+'''
+          changed = 0
+          for p in paths:
+              s = p.read_text(encoding='utf-8')
+              for key in ['official-derivative-template-version','metadata-profile','metadata-audit-status','OFFICIAL_DERIVATIVE_META_PARITY_V1_20260628_ALL_24_PAGES']:
+                  while key in s:
+                      if key.startswith('OFFICIAL'):
+                          start = s.rfind('<!--', 0, s.find(key))
+                          end = s.find('-->', s.find(key)) + 3
+                      else:
+                          start = s.rfind('<meta', 0, s.find(key))
+                          end = s.find('>', s.find(key)) + 1
+                      s = s[:start] + s[end:]
+              if '</head>' not in s:
+                  raise SystemExit('missing head close ' + str(p))
+              s = s.replace('</head>', marker + '</head>', 1)
+              for need in ['application/ld+json','name="ai-purpose"','property="og:title"','name="twitter:card"','official-derivative-template-version']:
+                  if need not in s:
+                      raise SystemExit(str(p) + ' missing ' + need)
+              p.write_text(s, encoding='utf-8')
+              changed += 1
+          print('stamped', changed)
+          PY
+      - name: Commit marker
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add deploy/lolipop/master-ricette/derivatives
+          git commit -m "Add visible metadata parity marker to all Pilot 001-004 pages" || exit 0
+          git push
