@@ -1,0 +1,48 @@
+name: Stamp derivative parity v4
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/stamp-derivative-parity-v4.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  stamp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add marker
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          roots=['ncl-alpha-20251124-e4c70c','ncl-alpha-20260517-b80e39','ncl-alpha-20260627-aea14a','ncl-alpha-20260617-d0b342']
+          rels=['index.html','ja/human-summary/index.html','ja/faq/index.html','ja/ai-index/index.html','en/ai-index/index.html','zh/ai-index/index.html']
+          marker='  <meta name="metadata-audit-status" content="passed-required-head-fields-24-pages-v1-20260628">\n  <!-- META_PARITY_24_PAGES_20260628 -->\n'
+          count=0
+          for root in roots:
+            for rel in rels:
+              p=Path('deploy/lolipop/master-ricette/derivatives')/root/rel
+              s=p.read_text(encoding='utf-8')
+              s=s.replace('  <!-- META_PARITY_24_PAGES_20260628 -->\n','')
+              s=s.replace('  <meta name="metadata-audit-status" content="passed-required-head-fields-24-pages-v1-20260628">\n','')
+              if '</head>' not in s:
+                raise SystemExit(str(p))
+              s=s.replace('</head>', marker+'</head>', 1)
+              for need in ['application/ld+json','name="ai-purpose"','property="og:title"','name="twitter:card"','metadata-audit-status']:
+                if need not in s:
+                  raise SystemExit(str(p)+' missing '+need)
+              p.write_text(s, encoding='utf-8')
+              count += 1
+          print('marked', count)
+          PY
+      - name: Commit marker
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add deploy/lolipop/master-ricette/derivatives
+          git commit -m "Mark all Pilot 001-004 pages as metadata parity checked" || exit 0
+          git push
