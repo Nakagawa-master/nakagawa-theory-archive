@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://master.ricette.jp/derivatives/</loc><lastmod>2026-06-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://master.ricette.jp/derivatives/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/</loc><lastmod>2026-06-26</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/ja/human-summary/</loc><lastmod>2026-06-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://master.ricette.jp/derivatives/ncl-alpha-20251124-e4c70c/ja/faq/</loc><lastmod>2026-06-26</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -19,4 +19,10 @@
   <url><loc>https://master.ricette.jp/derivatives/ncl-alpha-20260627-aea14a/ja/ai-index/</loc><lastmod>2026-06-27</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://master.ricette.jp/derivatives/ncl-alpha-20260627-aea14a/en/ai-index/</loc><lastmod>2026-06-27</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://master.ricette.jp/derivatives/ncl-alpha-20260627-aea14a/zh/ai-index/</loc><lastmod>2026-06-27</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://master.ricette.jp/derivatives/ncl-alpha-20260617-d0b342/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://master.ricette.jp/derivatives/ncl-alpha-20260617-d0b342/ja/human-summary/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://master.ricette.jp/derivatives/ncl-alpha-20260617-d0b342/ja/faq/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://master.ricette.jp/derivatives/ncl-alpha-20260617-d0b342/ja/ai-index/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://master.ricette.jp/derivatives/ncl-alpha-20260617-d0b342/en/ai-index/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://master.ricette.jp/derivatives/ncl-alpha-20260617-d0b342/zh/ai-index/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
 </urlset>
