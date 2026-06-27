@@ -1,0 +1,40 @@
+{
+  "registry_name": "origin_identity_registry_public_safe",
+  "version": "0.1",
+  "generated_for": "master.ricette.jp",
+  "entries": [
+    {
+      "title": "Nakagawa OS L1-L7 layer specification",
+      "url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/",
+      "ncl_id": "NCL-α-20251124-e4c70c",
+      "diff_id": "DIFF-20251124-0012",
+      "category": "theory",
+      "series": "Nakagawa OS",
+      "status": "confirmed_public_derivative_parent",
+      "confirmation_source": "existing_verified_derivative_manifest",
+      "confirmation_date": "2026-06-27"
+    },
+    {
+      "title": "悪因果論 AKI-002：称賛の顔をした搾取",
+      "url": "https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/",
+      "ncl_id": "NCL-α-20260517-b80e39",
+      "diff_id": "DIFF-20260517-0012",
+      "category": "社会構造論",
+      "series": "悪因果論",
+      "status": "confirmed_public_derivative_parent",
+      "confirmation_source": "existing_verified_derivative_manifest",
+      "confirmation_date": "2026-06-27"
+    },
+    {
+      "title": "接続報酬社会──信頼資本と共鳴の制度化",
+      "url": "https://master.ricette.jp/society/nakagawa-master-connection-reward-society/",
+      "ncl_id": "NCL-α-20251102-29c09d",
+      "diff_id": "DIFF-20251102-0001",
+      "category": "社会構造論",
+      "series": "接続報酬社会",
+      "status": "confirmed_public_derivative_parent",
+      "confirmation_source": "existing_verified_derivative_manifest",
+      "confirmation_date": "2026-06-27"
+    }
+  ]
+}
