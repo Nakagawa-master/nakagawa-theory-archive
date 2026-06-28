@@ -37,6 +37,9 @@ jobs:
       - name: Summarize derivative batch
         run: python tools/official_derivatives/build_batch_summary.py
 
+      - name: Run listing guard
+        run: python tools/official_derivatives/check_staged_listing.py
+
       - name: Commit generated pages to PR branch
         run: |
           git config user.name "github-actions[bot]"
