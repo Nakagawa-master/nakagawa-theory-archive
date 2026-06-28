@@ -6,19 +6,17 @@ scope:
 - expected pages per target: 6
 - expected total pages: 30
 
-completed in this branch so far:
-- slot05 / ncl-alpha-20260511-e243be / index.html
-- slot05 / ncl-alpha-20260511-e243be / ja/human-summary/index.html
-- slot05 / ncl-alpha-20260511-e243be / ja/faq/index.html
-- slot05 / ncl-alpha-20260511-e243be / ja/ai-index/index.html
-- slot05 / ncl-alpha-20260511-e243be / en/ai-index/index.html
-- slot05 / ncl-alpha-20260511-e243be / zh/ai-index/index.html
+correction:
+- slot05 static HTML output was removed after template alignment review.
+- future HTML output must be generated from a shared template contract.
+- only text/data values may vary per origin and per page type.
 
-completed_pages: 6
-remaining_pages: 24
+completed_pages: 0
+remaining_pages: 30
 
 validation status:
-- generated HTML committed: partial
+- generated HTML committed: false
+- template parity contract: required before generation resumes
 - render_heads.py --status=staged validation: not yet run
 - public export: not performed
 - FTP: not performed
@@ -26,6 +24,8 @@ validation status:
 - Search Console: not touched
 
 next:
-- generate slot06-09 HTML pages
+- define template parity contract
+- update generator so body layout, nav, card grid, style, metadata slots and page set are template-controlled
+- generate all 30 pages only after template parity contract is in place
 - then validate all 30 staged pages
 - do not deploy before all 30 pages validate
