@@ -18,7 +18,7 @@ def rows():
 
 
 def main():
-    print('check_set=staged_listing_v1')
+    print('check_set=staged_listing_v2')
     staged = [r['folder_id'] for r in rows() if r.get('export_status') == 'staged']
     errors = []
     checked = 0
