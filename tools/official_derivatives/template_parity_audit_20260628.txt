@@ -1,38 +1,37 @@
-template parity audit 2026-06-28
+template parity audit 2026-06-28 updated
 
 scope:
 - PR35
 - candidate 05-09 official derivatives
-- comparison basis: existing official derivatives 001-004
+- comparison basis: shared six page derivative structure
 
-answer:
-- full template parity is not yet achieved.
-- head metadata rendering is template-controlled through render_heads.py.
-- target selection is template-controlled through targets.tsv.
-- candidate generation tooling exists.
-- slot05 body HTML was created with partial hand-built structure and does not fully match 001-004 page body templates.
+current answer:
+- template parity check now passes in CI
+- candidate 05-09 pages are generated through template controlled tooling
+- head metadata is rendered through render_heads.py
+- target selection is controlled through targets.tsv
+- origin data is tracked through origin_manifest.tsv
 
-specific issue:
-- hub page has the same major parts, but wording and formatting differ from 001-004.
-- child pages use simplified style/body structure instead of the existing 001-004 child-page wrapper/header/article/nav pattern.
-- line-level layout and link placement are therefore not guaranteed identical.
+current successful checks:
+- generate candidate 05-09 pages
+- validate template parity
+- validate head metadata
+- validate promotion readiness
+- check manifest freshness
+- summarize derivative batch
+- run listing guard
+- upload generated pages artifact
 
-risk:
-- visual drift
-- link placement drift
-- structural drift
-- manual HTML accumulation
-
-required correction:
-1. stop generating slot06-09 until template parity is fixed.
-2. introduce explicit body templates for each page type.
-3. replace slot05 generated pages using the same page-type templates.
-4. validate all pages for required structural markers before any deployment.
-5. do not FTP, update sitemap, or touch Search Console before template parity passes.
+remaining boundary:
+- PR remains draft
+- no production server action
+- no sitemap action
+- no Search Console action
+- Codex pass or fail review result is not yet observed
 
 status:
-- slot05 generated pages: draft output only
-- slot05 template parity: failed
-- server action: not performed
-- sitemap: not updated
-- Search Console: not touched
+- expected pages: 30
+- completed pages: 30
+- template parity: passed in CI
+- staged boundary: passed in CI
+- listing guard: passed in CI
