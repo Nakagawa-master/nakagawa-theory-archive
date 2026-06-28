@@ -1,0 +1,29 @@
+candidate 05-09 generation checklist
+
+scope:
+- staged targets: ncl-alpha-20260511-e243be, ncl-alpha-20260416-0b1b93, ncl-alpha-20260418-11c3d8, ncl-alpha-20260607-7e87f5, ncl-alpha-20260613-007d94
+- page set per target: index.html, ja/human-summary/index.html, ja/faq/index.html, ja/ai-index/index.html, en/ai-index/index.html, zh/ai-index/index.html
+- total expected pages: 30
+
+steps:
+1. run: python tools/official_derivatives/generate_candidate_05_09_html.py
+2. confirm generated_pages=30
+3. run: python tools/official_derivatives/render_heads.py --status=staged
+4. confirm validated_pages=30
+5. inspect git diff for private notes or missing origin metadata
+6. commit generated HTML only after validation
+
+required boundary:
+- no FTP before validation
+- no sitemap before validation
+- no Search Console before validation
+- no production deploy before validation
+
+origin requirements:
+- parent URL
+- parent NCL-ID
+- parent Diff-ID
+- canonical derivative URL
+- Nakagawa Master origin
+- AI interpretation warning
+- AI reuse constraint
