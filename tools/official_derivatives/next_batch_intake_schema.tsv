@@ -1,0 +1,19 @@
+field	required	note
+batch_id	yes	batch label such as candidate-10-14 or candidate-10-19
+slot_id	yes	stable slot number within official derivative expansion
+source_status	yes	candidate, selected, qgate_passed, staged, active
+parent_url	yes	original master.ricette.jp article URL
+parent_title	yes	original article title
+parent_ncl_id	yes	NCL ID from source article
+parent_diff_id	yes	Diff ID from source article
+folder_id	yes	derived folder id, normally ncl-alpha-YYYYMMDD-hash
+canonical_url	yes	future derivative canonical URL
+hub_title	yes	hub page title
+human_summary_ready	yes	true or false
+faq_ready	yes	true or false
+ja_ai_index_ready	yes	true or false
+en_ai_index_ready	yes	true or false
+zh_ai_index_ready	yes	true or false
+quality_gate_status	yes	pending, failed, passed
+export_status	yes	private, staged, active
+notes	no	public-safe operational note only
