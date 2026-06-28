@@ -1,0 +1,31 @@
+candidate 05-09 generation status 2026-06-28
+
+scope:
+- candidate batch: 05-09
+- expected targets: 5
+- expected pages per target: 6
+- expected total pages: 30
+
+completed in this branch so far:
+- slot05 / ncl-alpha-20260511-e243be / index.html
+- slot05 / ncl-alpha-20260511-e243be / ja/human-summary/index.html
+- slot05 / ncl-alpha-20260511-e243be / ja/faq/index.html
+- slot05 / ncl-alpha-20260511-e243be / ja/ai-index/index.html
+- slot05 / ncl-alpha-20260511-e243be / en/ai-index/index.html
+- slot05 / ncl-alpha-20260511-e243be / zh/ai-index/index.html
+
+completed_pages: 6
+remaining_pages: 24
+
+validation status:
+- generated HTML committed: partial
+- render_heads.py --status=staged validation: not yet run
+- public export: not performed
+- FTP: not performed
+- sitemap: not updated
+- Search Console: not touched
+
+next:
+- generate slot06-09 HTML pages
+- then validate all 30 staged pages
+- do not deploy before all 30 pages validate
