@@ -4,6 +4,7 @@ import sys
 
 
 def main():
+    print('check_set=manifest_freshness_v1')
     a = subprocess.call([sys.executable, 'tools/official_derivatives/build_origin_manifest.py'])
     if a != 0:
         return a
