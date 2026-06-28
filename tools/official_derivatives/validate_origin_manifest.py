@@ -66,6 +66,7 @@ def check_row(row, statuses):
 
 
 def main():
+    print('check_set=origin_manifest_v1')
     rows=read_tsv(MANIFEST)
     statuses=status_map()
     errors=[]
