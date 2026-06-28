@@ -3,7 +3,8 @@ from pathlib import Path
 import re, html, json, sys
 
 BASE = Path(__file__).resolve().parents[2] / 'deploy/lolipop/master-ricette/derivatives'
-PILOTS = ['ncl-alpha-20251124-e4c70c','ncl-alpha-20260517-b80e39','ncl-alpha-20260627-aea14a','ncl-alpha-20260617-d0b342']
+TARGETS_FILE = Path(__file__).resolve().with_name('targets.tsv')
+DEFAULT_PILOTS = ['ncl-alpha-20251124-e4c70c','ncl-alpha-20260517-b80e39','ncl-alpha-20260627-aea14a','ncl-alpha-20260617-d0b342']
 PAGES = ['index.html','ja/human-summary/index.html','ja/faq/index.html','ja/ai-index/index.html','en/ai-index/index.html','zh/ai-index/index.html']
 REQUIRED = ['description','canonical','derivative-type','derivative-scope','language','parent-url','parent-ncl-id','parent-diff-id','pilot-id','render-status','origin-author','source-archive','ai-purpose','ai-summary','ai-interpretation-warning','ai-reuse-constraint','ai-origin-policy','ai-citation-requirement','og:title','twitter:card','application/ld+json','official-derivative-template-version']
 
@@ -34,6 +35,26 @@ def purpose(rel):
     return 'official Japanese AI index for retrieval and interpretation'
 def locale(l): return {'ja':'ja_JP','en':'en_US','zh':'zh_CN'}.get(l,'ja_JP')
 
+def load_targets(args):
+    status='active'
+    explicit=[]
+    for a in args:
+        if a.startswith('--status='):
+            status=a.split('=',1)[1]
+        elif a:
+            explicit.append(a)
+    if explicit:
+        return explicit
+    if not TARGETS_FILE.exists():
+        return DEFAULT_PILOTS
+    rows=[]
+    for line in TARGETS_FILE.read_text(encoding='utf-8').splitlines()[1:]:
+        if not line.strip(): continue
+        parts=line.split('\t')
+        if len(parts) < 2: continue
+        rows.append({'folder_id':parts[0].strip(),'export_status':parts[1].strip()})
+    return [r['folder_id'] for r in rows if r['export_status']==status]
+
 def render_head(s, rel):
     title=one(r'<title>(.*?)</title>',s,'Official derivative')
     desc=meta('description',s,title)
@@ -52,8 +73,8 @@ def render_head(s, rel):
     return '\n'.join(lines)
 
 def main():
-    changed=[]; errors=[]
-    for root in PILOTS:
+    changed=[]; errors=[]; targets=load_targets(sys.argv[1:])
+    for root in targets:
         for rel in PAGES:
             p=BASE/root/rel
             if not p.exists(): errors.append('missing '+str(p)); continue
@@ -65,7 +86,7 @@ def main():
             if ns!=s: p.write_text(ns,encoding='utf-8'); changed.append(str(p))
     if errors:
         print('\n'.join(errors)); return 1
-    print('validated_pages=24')
+    print('validated_pages='+str(len(targets)*len(PAGES)))
     print('changed_files='+str(len(changed)))
     return 0
 if __name__=='__main__': sys.exit(main())
