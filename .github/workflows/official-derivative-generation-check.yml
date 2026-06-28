@@ -1,0 +1,24 @@
+name: Official derivative generation check
+
+on:
+  pull_request:
+    paths:
+      - 'tools/official_derivatives/**'
+      - 'deploy/lolipop/master-ricette/derivatives/**'
+  workflow_dispatch:
+
+jobs:
+  candidate-generation-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate candidate 05-09 pages
+        run: python tools/official_derivatives/generate_candidate_05_09_html.py
+
+      - name: Validate template parity
+        run: python tools/official_derivatives/validate_template_parity.py --status=staged
+
+      - name: Validate head metadata
+        run: python tools/official_derivatives/render_heads.py --status=staged
