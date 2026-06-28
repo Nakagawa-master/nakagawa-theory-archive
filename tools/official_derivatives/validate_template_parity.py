@@ -20,7 +20,9 @@ def targets(status='staged'):
             out.append(parts[0].strip())
     return out
 
-def has_meta(s, name):
+def has_field(s, name):
+    if name == 'canonical':
+        return 'rel="canonical"' in s or "rel='canonical'" in s
     return f'name="{name}"' in s or f"name='{name}'" in s
 
 def check(path, rel, folder):
@@ -29,8 +31,8 @@ def check(path, rel, folder):
     s=path.read_text(encoding='utf-8')
     errors=[]
     for name in REQUIRED_META:
-        if not has_meta(s, name):
-            errors.append(f'{path}: missing meta {name}')
+        if not has_field(s, name):
+            errors.append(f'{path}: missing field {name}')
     for marker in REQUIRED_STRUCT:
         if marker not in s:
             errors.append(f'{path}: missing structure {marker}')
