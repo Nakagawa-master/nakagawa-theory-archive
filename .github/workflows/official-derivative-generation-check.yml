@@ -22,3 +22,6 @@ jobs:
 
       - name: Validate head metadata
         run: python tools/official_derivatives/render_heads.py --status=staged
+
+      - name: Require generated output to be committed
+        run: git diff --exit-code
