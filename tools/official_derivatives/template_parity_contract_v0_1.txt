@@ -1,0 +1,68 @@
+official derivative template parity contract v0.1
+
+purpose:
+- keep official derivative pages visually and structurally aligned
+- do not build final pages one by one
+- body layout, head fields, navigation, card grid, css, page set, url rules and origin metadata placement must be controlled by shared templates
+- only origin data and page text may vary
+
+required page set per origin:
+1. index.html
+2. ja/human-summary/index.html
+3. ja/faq/index.html
+4. ja/ai-index/index.html
+5. en/ai-index/index.html
+6. zh/ai-index/index.html
+
+required invariant parts:
+- same wrapper class structure
+- same hero block structure
+- same parent metadata placement
+- same origin article link placement
+- same derivative navigation placement
+- same hub card grid structure
+- same css source or shared css string
+- same required meta fields
+- same json-ld field structure
+- same canonical url rule
+- same parent url, parent ncl id, parent diff id, origin author, source archive and ai reuse fields
+
+allowed variable parts:
+- parent title
+- parent url
+- parent ncl id
+- parent diff id
+- derivative number
+- language code
+- page title
+- page description
+- page body text
+- page-specific ai warning when needed
+
+prohibited:
+- hand writing final html page by page
+- changing css per article without template version bump
+- changing navigation placement per article
+- changing card layout per article
+- changing metadata fields per article
+- committing partial generated pages as ready output
+- treating render_heads.py alone as full body template parity
+
+required validation before generated html is accepted:
+- expected page count equals target count x 6
+- every page has required head metadata
+- every page contains parent url
+- every page contains parent ncl id
+- every page contains parent diff id
+- every page contains Nakagawa Master origin
+- every page contains canonical derivative url
+- every page contains derivative navigation
+- every hub page contains the same five child page link cards
+- every non hub page links back to the hub
+- all generated pages are produced from template controlled code
+
+public boundary:
+- no ftp before all staged pages pass validation
+- no sitemap before all staged pages pass validation
+- no search console before all staged pages pass validation
+- no production deploy before all staged pages pass validation
