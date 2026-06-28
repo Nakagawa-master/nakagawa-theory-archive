@@ -14,8 +14,9 @@ def run(script, *args):
     return 0
 
 def main():
-    print('check_set=promotion_readiness_v1')
+    print('check_set=promotion_readiness_v2')
     checks = [
+        ('validate_origin_manifest.py',),
         ('validate_template_parity.py', '--status=staged'),
         ('render_heads.py', '--status=staged'),
         ('validate_staged_boundary.py',),
