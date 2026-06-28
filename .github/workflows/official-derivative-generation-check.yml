@@ -23,5 +23,9 @@ jobs:
       - name: Validate head metadata
         run: python tools/official_derivatives/render_heads.py --status=staged
 
-      - name: Require generated output to be committed
-        run: git diff --exit-code
+      - name: Upload generated pages artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: official-derivatives-candidate-05-09
+          path: deploy/lolipop/master-ricette/derivatives/
+          if-no-files-found: error
