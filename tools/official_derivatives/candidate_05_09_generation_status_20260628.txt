@@ -6,6 +6,11 @@ scope:
 - pages per target: 6
 - expected total pages: 30
 
+alignment:
+- this is not a page count task.
+- acceleration means reaching intermediate milestones earlier through reusable structure.
+- isolated rushing is not acceleration.
+
 correction:
 - slot05 hand-built html was removed after template review.
 - next html output must come from shared template generation.
