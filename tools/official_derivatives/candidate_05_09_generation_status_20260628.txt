@@ -1,49 +1,39 @@
-candidate 05-09 generation status 2026-06-28
+candidate 05-09 generation status 2026-06-28 refreshed
 
 scope:
-- batch: 05-09
 - targets: 5
-- pages per target: 6
-- expected total pages: 30
-
-alignment:
-- not a page count task
-- reusable structure pulls later milestones earlier
-- influence and action power grow by reusable checked systems, not isolated output count
-
-result:
-- generated pages added to PR branch by workflow
+- pages_per_target: 6
+- expected_pages: 30
 - completed_pages: 30
 - remaining_pages: 0
 
-workflow:
-- generator: success
-- template parity check: success
-- head metadata check: success
-- staged boundary check: success
-- page branch update: success
-- artifact upload: success
+latest_confirmed:
+- workflow: Official derivative generation check
+- run_number: 37
+- result: success
+
+checks_passed:
+- generate candidate pages
+- template parity
+- head metadata
+- promotion readiness
+- manifest freshness
+- batch summary
+- listing guard
+- artifact upload
 
 state:
-- generated html in branch: true
-- template contract: present
-- template generator: present
-- parity check: passed
-- head metadata check: passed
-- staged boundary check: passed
-- target state validator: present
-- staged pages use noindex,nofollow
-- staged pages use official_derivative_staged_nonindexable
-
-boundary:
-- production server upload: no
-- sitemap update: no
-- Search Console: no
-- PR draft: yes
-- Cloudflare preview may exist from repository integration, but staged generated pages are nonindexable
+- targets.tsv present
+- origin_manifest.tsv present
+- build_origin_manifest.py present
+- validate_origin_manifest.py present
+- validate_promotion_ready.py present
+- validate_release_boundary.py present
+- check_manifest_fresh.py present
+- check_staged_listing.py present
+- generated html present
+- staged pages remain noindex,nofollow
 
 next:
 - keep PR draft
-- run Codex mechanical review from PR comment
-- wire target state validator into a check workflow when tool safety allows
-- keep public boundary closed until final review
+- wait for Codex mechanical review result
