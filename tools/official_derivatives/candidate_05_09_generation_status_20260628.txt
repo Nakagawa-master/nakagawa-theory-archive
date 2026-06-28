@@ -9,7 +9,7 @@ scope:
 
 latest_confirmed:
 - workflow: Official derivative generation check
-- run_number: 37
+- run_number: 39
 - result: success
 
 checks_passed:
