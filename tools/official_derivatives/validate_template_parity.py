@@ -1,14 +1,23 @@
 #!/usr/bin/env python3
 from pathlib import Path
+import subprocess
 import sys
 
+HERE = Path(__file__).resolve().parent
 BASE = Path(__file__).resolve().parents[2] / 'deploy/lolipop/master-ricette/derivatives'
-TARGETS_FILE = Path(__file__).resolve().with_name('targets.tsv')
+TARGETS_FILE = HERE / 'targets.tsv'
 PAGES = ['index.html','ja/human-summary/index.html','ja/faq/index.html','ja/ai-index/index.html','en/ai-index/index.html','zh/ai-index/index.html']
 REQUIRED_META = ['description','canonical','derivative-type','derivative-scope','language','parent-url','parent-ncl-id','parent-diff-id','pilot-id','render-status','origin-author','source-archive','ai-purpose','ai-summary','ai-interpretation-warning','ai-reuse-constraint','ai-origin-policy','ai-citation-requirement','official-derivative-template-version','official-derivative-page-set']
 REQUIRED_STRUCT = ['class="wrap"','class="hero"','Parent NCL-ID','Parent Diff-ID','/derivatives/']
 HUB_CARD_PATHS = ['ja/human-summary/','ja/faq/','ja/ai-index/','en/ai-index/','zh/ai-index/']
 PRIVATE_MARKERS = ['private_only','qgate_pending','public_export_allowed: false']
+
+
+def normalize_heads(status):
+    script = HERE / 'render_heads.py'
+    result = subprocess.run([sys.executable, str(script), '--status=' + status])
+    return result.returncode
+
 
 def targets(status='staged'):
     out=[]
@@ -20,10 +29,12 @@ def targets(status='staged'):
             out.append(parts[0].strip())
     return out
 
+
 def has_field(s, name):
     if name == 'canonical':
         return 'rel="canonical"' in s or "rel='canonical'" in s
     return f'name="{name}"' in s or f"name='{name}'" in s
+
 
 def check(path, rel, folder):
     if not path.exists():
@@ -52,11 +63,15 @@ def check(path, rel, folder):
             errors.append(f'{path}: contains private marker {marker}')
     return errors
 
+
 def main():
     status='staged'
     for arg in sys.argv[1:]:
         if arg.startswith('--status='):
             status=arg.split('=',1)[1]
+    if normalize_heads(status) != 0:
+        print('template_parity_pass=false')
+        return 1
     selected=targets(status)
     errors=[]
     checked=0
@@ -75,6 +90,7 @@ def main():
     print('checked_pages='+str(checked))
     print('template_parity_pass=true')
     return 0
+
 
 if __name__ == '__main__':
     sys.exit(main())
