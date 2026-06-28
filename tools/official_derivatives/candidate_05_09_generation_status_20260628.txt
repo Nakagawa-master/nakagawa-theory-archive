@@ -31,6 +31,7 @@ state:
 - parity check: passed
 - head metadata check: passed
 - staged boundary check: passed
+- target state validator: present
 - staged pages use noindex,nofollow
 - staged pages use official_derivative_staged_nonindexable
 
@@ -44,4 +45,5 @@ boundary:
 next:
 - keep PR draft
 - run Codex mechanical review from PR comment
+- wire target state validator into a check workflow when tool safety allows
 - keep public boundary closed until final review
