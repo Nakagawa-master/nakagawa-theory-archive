@@ -28,6 +28,9 @@ jobs:
       - name: Validate head metadata
         run: python tools/official_derivatives/render_heads.py --status=staged
 
+      - name: Validate staged boundary
+        run: python tools/official_derivatives/validate_staged_boundary.py
+
       - name: Commit generated pages to PR branch
         run: |
           git config user.name "github-actions[bot]"
