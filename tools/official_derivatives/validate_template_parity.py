@@ -5,46 +5,72 @@ import sys
 BASE = Path(__file__).resolve().parents[2] / 'deploy/lolipop/master-ricette/derivatives'
 TARGETS_FILE = Path(__file__).resolve().with_name('targets.tsv')
 PAGES = ['index.html','ja/human-summary/index.html','ja/faq/index.html','ja/ai-index/index.html','en/ai-index/index.html','zh/ai-index/index.html']
-COMMON = ['<main class="wrap">','<p class="pilot">','Parent NCL-ID:','Parent Diff-ID:','/derivatives/">公式派生物一覧へ戻る']
-HUB = ['<section class="hero">','<p class="status">公式派生物一覧</p>','<section class="grid">','<article class="card"><h2>人間向け要約</h2>','<article class="card"><h2>FAQ</h2>','<article class="card"><h2>日本語AI索引</h2>','<article class="card"><h2>English AI Index</h2>']
-CHILD = ['<p class="status">公式派生物</p>','<header>','<article>','<nav aria-label="Derivative navigation">','</section></main></body></html>']
-AI = ['article role','central concept','definition','core claim','causal sequence','judgment conditions','interpretation warnings','reuse constraints']
+REQUIRED_META = ['description','canonical','derivative-type','derivative-scope','language','parent-url','parent-ncl-id','parent-diff-id','pilot-id','render-status','origin-author','source-archive','ai-purpose','ai-summary','ai-interpretation-warning','ai-reuse-constraint','ai-origin-policy','ai-citation-requirement','official-derivative-template-version','official-derivative-page-set']
+REQUIRED_STRUCT = ['class="wrap"','class="hero"','Parent NCL-ID','Parent Diff-ID','/derivatives/']
+HUB_CARD_PATHS = ['ja/human-summary/','ja/faq/','ja/ai-index/','en/ai-index/','zh/ai-index/']
+PRIVATE_MARKERS = ['private_only','qgate_pending','public_export_allowed: false']
 
 def targets(status='staged'):
     out=[]
     for line in TARGETS_FILE.read_text(encoding='utf-8').splitlines()[1:]:
+        if not line.strip():
+            continue
         parts=line.split('\t')
         if len(parts) >= 2 and parts[1].strip()==status:
             out.append(parts[0].strip())
     return out
 
-def check(path, rel):
+def has_meta(s, name):
+    return f'name="{name}"' in s or f"name='{name}'" in s
+
+def check(path, rel, folder):
     if not path.exists():
         return [f'missing {path}']
     s=path.read_text(encoding='utf-8')
-    markers=list(COMMON)
-    markers += HUB if rel=='index.html' else CHILD
-    if 'ai-index' in rel:
-        markers += AI
     errors=[]
-    for marker in markers:
+    for name in REQUIRED_META:
+        if not has_meta(s, name):
+            errors.append(f'{path}: missing meta {name}')
+    for marker in REQUIRED_STRUCT:
         if marker not in s:
-            errors.append(f'{path}: missing {marker}')
-    if '<meta name="parent-ncl-id"' not in s or '<meta name="parent-diff-id"' not in s:
-        errors.append(f'{path}: missing origin metadata')
+            errors.append(f'{path}: missing structure {marker}')
+    if rel == 'index.html':
+        for child in HUB_CARD_PATHS:
+            if child not in s:
+                errors.append(f'{path}: missing hub child link {child}')
+    else:
+        if f'/derivatives/{folder}/' not in s:
+            errors.append(f'{path}: missing hub backlink')
+    if 'ai-index' in rel:
+        for marker in ['article role','central concept','definition','core claim','causal sequence','judgment conditions','interpretation warnings','reuse constraints']:
+            if marker not in s:
+                errors.append(f'{path}: missing ai section {marker}')
+    for marker in PRIVATE_MARKERS:
+        if marker in s:
+            errors.append(f'{path}: contains private marker {marker}')
     return errors
 
 def main():
+    status='staged'
+    for arg in sys.argv[1:]:
+        if arg.startswith('--status='):
+            status=arg.split('=',1)[1]
+    selected=targets(status)
     errors=[]
-    selected=targets('staged')
-    for target in selected:
+    checked=0
+    for folder in selected:
         for rel in PAGES:
-            errors.extend(check(BASE/target/rel, rel))
+            errors.extend(check(BASE/folder/rel, rel, folder))
+            if (BASE/folder/rel).exists():
+                checked += 1
+    expected=len(selected)*len(PAGES)
+    if checked != expected:
+        errors.append(f'checked_pages={checked} expected_pages={expected}')
     if errors:
         print('\n'.join(errors))
         print('template_parity_pass=false')
         return 1
-    print('checked_pages='+str(len(selected)*len(PAGES)))
+    print('checked_pages='+str(checked))
     print('template_parity_pass=true')
     return 0
 
