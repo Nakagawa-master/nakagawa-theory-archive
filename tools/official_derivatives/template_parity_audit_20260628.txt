@@ -1,0 +1,38 @@
+template parity audit 2026-06-28
+
+scope:
+- PR35
+- candidate 05-09 official derivatives
+- comparison basis: existing official derivatives 001-004
+
+answer:
+- full template parity is not yet achieved.
+- head metadata rendering is template-controlled through render_heads.py.
+- target selection is template-controlled through targets.tsv.
+- candidate generation tooling exists.
+- slot05 body HTML was created with partial hand-built structure and does not fully match 001-004 page body templates.
+
+specific issue:
+- hub page has the same major parts, but wording and formatting differ from 001-004.
+- child pages use simplified style/body structure instead of the existing 001-004 child-page wrapper/header/article/nav pattern.
+- line-level layout and link placement are therefore not guaranteed identical.
+
+risk:
+- visual drift
+- link placement drift
+- structural drift
+- manual HTML accumulation
+
+required correction:
+1. stop generating slot06-09 until template parity is fixed.
+2. introduce explicit body templates for each page type.
+3. replace slot05 generated pages using the same page-type templates.
+4. validate all pages for required structural markers before any deployment.
+5. do not FTP, update sitemap, or touch Search Console before template parity passes.
+
+status:
+- slot05 generated pages: draft output only
+- slot05 template parity: failed
+- server action: not performed
+- sitemap: not updated
+- Search Console: not touched
