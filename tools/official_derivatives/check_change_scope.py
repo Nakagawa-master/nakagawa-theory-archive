@@ -17,6 +17,11 @@ DISALLOWED_PARTS = (
     'search_console',
 )
 
+EXTRA_CHECKS = (
+    'check_target_folder_scope.py',
+    'check_next_batch_schema.py',
+)
+
 
 def git(*args):
     return subprocess.run(['git', *args], text=True, capture_output=True)
@@ -40,11 +45,15 @@ def allowed(path):
     return any(path.startswith(prefix) for prefix in ALLOWED_PREFIXES if prefix.endswith('/'))
 
 
-def run_extra_check():
-    script = HERE / 'check_target_folder_scope.py'
-    if not script.exists():
-        return 0
-    return subprocess.run([sys.executable, str(script)]).returncode
+def run_extra_checks():
+    for name in EXTRA_CHECKS:
+        script = HERE / name
+        if not script.exists():
+            continue
+        result = subprocess.run([sys.executable, str(script)])
+        if result.returncode != 0:
+            return result.returncode
+    return 0
 
 
 def main():
@@ -56,13 +65,13 @@ def main():
             errors.append('outside_allowed_scope=' + path)
         if any(part in low for part in DISALLOWED_PARTS):
             errors.append('disallowed_path_part=' + path)
-    print('check_set=official_derivative_change_scope_v2')
+    print('check_set=official_derivative_change_scope_v3')
     print('changed_files=' + str(len(files)))
     if errors:
         print('\n'.join(errors))
         print('change_scope_pass=false')
         return 1
-    extra_code = run_extra_check()
+    extra_code = run_extra_checks()
     if extra_code != 0:
         print('change_scope_pass=false')
         return extra_code
