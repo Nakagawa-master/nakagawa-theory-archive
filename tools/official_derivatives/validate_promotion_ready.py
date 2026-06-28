@@ -5,6 +5,7 @@ import sys
 
 HERE = Path(__file__).resolve().parent
 
+
 def run(script, *args):
     cmd = [sys.executable, str(HERE / script)] + list(args)
     print('run=' + ' '.join(cmd))
@@ -13,9 +14,11 @@ def run(script, *args):
         return result.returncode
     return 0
 
+
 def main():
-    print('check_set=promotion_readiness_v2')
+    print('check_set=promotion_readiness_v3')
     checks = [
+        ('check_change_scope.py',),
         ('validate_origin_manifest.py',),
         ('validate_template_parity.py', '--status=staged'),
         ('render_heads.py', '--status=staged'),
@@ -29,6 +32,7 @@ def main():
             return code
     print('promotion_ready=true')
     return 0
+
 
 if __name__ == '__main__':
     sys.exit(main())
