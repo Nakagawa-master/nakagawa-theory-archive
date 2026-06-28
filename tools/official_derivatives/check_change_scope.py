@@ -3,6 +3,8 @@ from pathlib import Path
 import subprocess
 import sys
 
+HERE = Path(__file__).resolve().parent
+
 ALLOWED_PREFIXES = (
     '.github/workflows/official-derivative-generation-check.yml',
     'tools/official_derivatives/',
@@ -38,6 +40,13 @@ def allowed(path):
     return any(path.startswith(prefix) for prefix in ALLOWED_PREFIXES if prefix.endswith('/'))
 
 
+def run_extra_check():
+    script = HERE / 'check_target_folder_scope.py'
+    if not script.exists():
+        return 0
+    return subprocess.run([sys.executable, str(script)]).returncode
+
+
 def main():
     files = changed_files()
     errors = []
@@ -47,12 +56,16 @@ def main():
             errors.append('outside_allowed_scope=' + path)
         if any(part in low for part in DISALLOWED_PARTS):
             errors.append('disallowed_path_part=' + path)
-    print('check_set=official_derivative_change_scope_v1')
+    print('check_set=official_derivative_change_scope_v2')
     print('changed_files=' + str(len(files)))
     if errors:
         print('\n'.join(errors))
         print('change_scope_pass=false')
         return 1
+    extra_code = run_extra_check()
+    if extra_code != 0:
+        print('change_scope_pass=false')
+        return extra_code
     print('change_scope_pass=true')
     return 0
 
