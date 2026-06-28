@@ -35,22 +35,28 @@ def purpose(rel):
     if rel.startswith('zh/'): return 'official Chinese AI index for retrieval and interpretation'
     return 'official Japanese AI index for retrieval and interpretation'
 def locale(l): return {'ja':'ja_JP','en':'en_US','zh':'zh_CN'}.get(l,'ja_JP')
+def robots_for(status): return 'noindex,nofollow' if status == 'staged' else 'index,follow'
+def render_status_for(status): return 'official_derivative_staged_nonindexable' if status == 'staged' else 'official_derivative_active_indexable'
 
-def load_targets(args):
+def parse_args(args):
     status='active'; explicit=[]
     for a in args:
         if a.startswith('--status='): status=a.split('=',1)[1]
         elif a: explicit.append(a)
-    if explicit: return explicit
-    if not TARGETS_FILE.exists(): return DEFAULT_PILOTS
+    return status, explicit
+
+def load_targets(args):
+    status, explicit = parse_args(args)
+    if explicit: return status, explicit
+    if not TARGETS_FILE.exists(): return status, DEFAULT_PILOTS
     rows=[]
     for line in TARGETS_FILE.read_text(encoding='utf-8').splitlines()[1:]:
         if not line.strip(): continue
         parts=line.split('\t')
         if len(parts) >= 2: rows.append({'folder_id':parts[0].strip(),'export_status':parts[1].strip()})
-    return [r['folder_id'] for r in rows if r['export_status']==status]
+    return status, [r['folder_id'] for r in rows if r['export_status']==status]
 
-def render_head(s, rel):
+def render_head(s, rel, status):
     title=one(r'<title>(.*?)</title>',s,'Official derivative')
     desc=meta('description',s,title)
     canon=one(r'<link\s+rel=["\']canonical["\']\s+href=["\'](.*?)["\']',s)
@@ -65,9 +71,9 @@ def render_head(s, rel):
     site=prop('og:site_name',s,'中川マスター公式アーカイブ')
     data={'@context':'https://schema.org','@type':'WebPage','name':title,'description':desc,'url':canon,'isPartOf':{'@type':'WebSite','name':'中川マスター公式アーカイブ','url':'https://master.ricette.jp/'},'about':parent_title,'author':{'@type':'Person','name':'Nakagawa Master'},'inLanguage':l,'mainEntity':{'@type':'CreativeWork','name':parent_title,'url':parent_url},'identifier':[parent_ncl,parent_diff],'isBasedOn':parent_url}
     lines=[
-        '<head>','  <meta charset="utf-8">','  <meta name="viewport" content="width=device-width, initial-scale=1">','  <meta name="robots" content="index,follow">',
+        '<head>','  <meta charset="utf-8">','  <meta name="viewport" content="width=device-width, initial-scale=1">',f'  <meta name="robots" content="{robots_for(status)}">',
         f'  <title>{esc(title)}</title>',f'  <meta name="description" content="{esc(desc)}">',f'  <link rel="canonical" href="{esc(canon)}">',f'  <meta name="derivative-type" content="{dtype(rel)}">','  <meta name="derivative-scope" content="official_derivative_from_origin_article">',f'  <meta name="language" content="{l}">',
-        f'  <meta name="parent-url" content="{esc(parent_url)}">',f'  <meta name="parent-ncl-id" content="{esc(parent_ncl)}">',f'  <meta name="parent-diff-id" content="{esc(parent_diff)}">',f'  <meta name="pilot-id" content="{esc(pilot)}">','  <meta name="render-status" content="official_derivative_active_indexable">','  <meta name="origin-author" content="Nakagawa Master">','  <meta name="source-archive" content="master.ricette.jp">',
+        f'  <meta name="parent-url" content="{esc(parent_url)}">',f'  <meta name="parent-ncl-id" content="{esc(parent_ncl)}">',f'  <meta name="parent-diff-id" content="{esc(parent_diff)}">',f'  <meta name="pilot-id" content="{esc(pilot)}">',f'  <meta name="render-status" content="{render_status_for(status)}">','  <meta name="origin-author" content="Nakagawa Master">','  <meta name="source-archive" content="master.ricette.jp">',
         f'  <meta name="ai-purpose" content="{purpose(rel)}">',f'  <meta name="ai-summary" content="{esc(desc)}">',f'  <meta name="ai-interpretation-warning" content="{esc(ai_warning)}">',f'  <meta name="ai-reuse-constraint" content="{esc(ai_reuse)}">','  <meta name="ai-origin-policy" content="Preserve Origin and parent article context.">','  <meta name="ai-citation-requirement" content="Keep parent URL, NCL-ID, Diff-ID and canonical derivative URL attached.">',
         f'  <meta name="official-derivative-template-version" content="{TEMPLATE_VERSION}">','  <meta name="official-derivative-page-set" content="six_pages_per_origin">','  <meta property="og:type" content="article">',f'  <meta property="og:title" content="{esc(title)}">',f'  <meta property="og:description" content="{esc(desc)}">',f'  <meta property="og:url" content="{esc(canon)}">',f'  <meta property="og:site_name" content="{esc(site)}">',f'  <meta property="og:locale" content="{locale(l)}">','  <meta name="twitter:card" content="summary">',f'  <meta name="twitter:title" content="{esc(title)}">',f'  <meta name="twitter:description" content="{esc(desc)}">','  '+style(s),
         '  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BN0BY8C838"></script>',"  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BN0BY8C838');</script>","  <script type=\"text/javascript\">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a]||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','lkf0sdpw8r');</script>",'  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7505659945932614" crossorigin="anonymous"></script>','  <script type="application/ld+json">'+json.dumps(data,ensure_ascii=False,separators=(',',':'))+'</script>','</head>'
@@ -75,14 +81,14 @@ def render_head(s, rel):
     return '\n'.join(lines)
 
 def main():
-    changed=[]; errors=[]; targets=load_targets(sys.argv[1:])
+    changed=[]; errors=[]; status, targets=load_targets(sys.argv[1:])
     for root in targets:
         for rel in PAGES:
             p=BASE/root/rel
             if not p.exists(): errors.append('missing '+str(p)); continue
             s=p.read_text(encoding='utf-8')
             if '</head>' not in s: errors.append('no head '+str(p)); continue
-            ns=re.sub(r'<head>.*?</head>',render_head(s,rel),s,count=1,flags=re.S|re.I)
+            ns=re.sub(r'<head>.*?</head>',render_head(s,rel,status),s,count=1,flags=re.S|re.I)
             for r in REQUIRED:
                 if r not in ns: errors.append(str(p)+' missing '+r)
             if ns!=s: p.write_text(ns,encoding='utf-8'); changed.append(str(p))
@@ -90,5 +96,6 @@ def main():
         print('\n'.join(errors)); return 1
     print('validated_pages='+str(len(targets)*len(PAGES)))
     print('changed_files='+str(len(changed)))
+    print('target_status='+status)
     return 0
 if __name__=='__main__': sys.exit(main())
