@@ -16,6 +16,10 @@ current generator:
 - shared css, page set, child cards, head, hero, nav, shell and page bodies are template controlled.
 - generator requires the template contract file.
 
+workflow:
+- official-derivative-generation-check.yml runs generator, parity check, head metadata check and artifact upload.
+- this makes generated pages available only after the generation chain runs in the pull request workflow.
+
 completed_pages: 0
 remaining_pages: 30
 
@@ -23,11 +27,11 @@ checks:
 - generated html committed: false
 - template contract: present
 - template generator: present
+- artifact workflow: present
 - parity check: pending
 - head metadata check: pending
 
 next:
-- generate all 30 pages
-- run parity check
-- run head metadata check
-- deploy only after checks pass
+- use workflow output as generated candidate package
+- inspect workflow result and artifact
+- commit generated pages only after checks pass
