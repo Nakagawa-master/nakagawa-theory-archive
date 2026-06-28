@@ -5,7 +5,8 @@ import sys
 BASE = Path(__file__).resolve().parents[2] / 'deploy/lolipop/master-ricette/derivatives'
 TARGETS_FILE = Path(__file__).resolve().with_name('targets.tsv')
 PAGES = ['index.html','ja/human-summary/index.html','ja/faq/index.html','ja/ai-index/index.html','en/ai-index/index.html','zh/ai-index/index.html']
-REQUIRED_META = ['parent-url','parent-ncl-id','parent-diff-id','origin-author','ai-interpretation-warning','ai-reuse-constraint','official-derivative-template-version','official-derivative-page-set']
+COMMON_META = ['parent-url','parent-ncl-id','parent-diff-id','origin-author','ai-interpretation-warning','ai-reuse-constraint']
+STAGED_META = ['official-derivative-template-version','official-derivative-page-set']
 
 
 def rows():
@@ -27,7 +28,7 @@ def expected_markers(status):
     return []
 
 
-def forbidden_markers(status):
+def opposite_markers(status):
     if status == 'active':
         return ['noindex,nofollow','official_derivative_staged_nonindexable']
     if status == 'staged':
@@ -39,6 +40,12 @@ def has_meta(text, name):
     return f'name="{name}"' in text or f"name='{name}'" in text
 
 
+def required_meta_for(status):
+    if status == 'staged':
+        return COMMON_META + STAGED_META
+    return COMMON_META
+
+
 def check_file(path, status):
     errors=[]
     if not path.exists():
@@ -47,10 +54,10 @@ def check_file(path, status):
     for marker in expected_markers(status):
         if marker not in text:
             errors.append(str(path)+' missing '+marker)
-    for marker in forbidden_markers(status):
+    for marker in opposite_markers(status):
         if marker in text:
             errors.append(str(path)+' contains '+marker)
-    for meta in REQUIRED_META:
+    for meta in required_meta_for(status):
         if not has_meta(text, meta):
             errors.append(str(path)+' missing meta '+meta)
     return errors
