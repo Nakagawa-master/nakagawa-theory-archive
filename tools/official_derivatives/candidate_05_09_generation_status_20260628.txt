@@ -1,31 +1,33 @@
 candidate 05-09 generation status 2026-06-28
 
 scope:
-- candidate batch: 05-09
-- expected targets: 5
-- expected pages per target: 6
+- batch: 05-09
+- targets: 5
+- pages per target: 6
 - expected total pages: 30
 
 correction:
-- slot05 static HTML output was removed after template alignment review.
-- future HTML output must be generated from a shared template contract.
-- only text/data values may vary per origin and per page type.
+- slot05 hand-built html was removed after template review.
+- next html output must come from shared template generation.
+- only text and data values may vary.
+
+current generator:
+- generate_candidate_05_09_html.py was rebuilt around template_parity_contract_v0_1.txt.
+- shared css, page set, child cards, head, hero, nav, shell and page bodies are template controlled.
+- generator requires the template contract file.
 
 completed_pages: 0
 remaining_pages: 30
 
-validation status:
-- generated HTML committed: false
-- template parity contract: required before generation resumes
-- render_heads.py --status=staged validation: not yet run
-- public export: not performed
-- FTP: not performed
-- sitemap: not updated
-- Search Console: not touched
+checks:
+- generated html committed: false
+- template contract: present
+- template generator: present
+- parity check: pending
+- head metadata check: pending
 
 next:
-- define template parity contract
-- update generator so body layout, nav, card grid, style, metadata slots and page set are template-controlled
-- generate all 30 pages only after template parity contract is in place
-- then validate all 30 staged pages
-- do not deploy before all 30 pages validate
+- generate all 30 pages
+- run parity check
+- run head metadata check
+- deploy only after checks pass
