@@ -14,6 +14,7 @@ def run(script, *args):
     return 0
 
 def main():
+    print('check_set=promotion_readiness_v1')
     checks = [
         ('validate_template_parity.py', '--status=staged'),
         ('render_heads.py', '--status=staged'),
