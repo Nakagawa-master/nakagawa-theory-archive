@@ -7,36 +7,35 @@ scope:
 - expected total pages: 30
 
 alignment:
-- this is not a page count task.
-- acceleration means reaching intermediate milestones earlier through reusable structure.
-- isolated rushing is not acceleration.
+- not a page count task
+- reusable structure pulls later milestones earlier
 
-correction:
-- slot05 hand-built html was removed after template review.
-- next html output must come from shared template generation.
-- only text and data values may vary.
-
-current generator:
-- generate_candidate_05_09_html.py was rebuilt around template_parity_contract_v0_1.txt.
-- shared css, page set, child cards, head, hero, nav, shell and page bodies are template controlled.
-- generator requires the template contract file.
+result:
+- generated pages added to PR branch by workflow
+- completed_pages: 30
+- remaining_pages: 0
 
 workflow:
-- official-derivative-generation-check.yml runs generator, parity check, head metadata check and artifact upload.
-- this makes generated pages available only after the generation chain runs in the pull request workflow.
+- generator: success
+- template parity check: success
+- head metadata check: success
+- page branch update: success
+- artifact upload: success
 
-completed_pages: 0
-remaining_pages: 30
-
-checks:
-- generated html committed: false
+state:
+- generated html in branch: true
 - template contract: present
 - template generator: present
-- artifact workflow: present
-- parity check: pending
-- head metadata check: pending
+- parity check: passed
+- head metadata check: passed
+
+boundary:
+- server upload: no
+- sitemap update: no
+- Search Console: no
+- PR draft: yes
 
 next:
-- use workflow output as generated candidate package
-- inspect workflow result and artifact
-- commit generated pages only after checks pass
+- inspect representative generated pages
+- update PR body
+- keep public boundary closed until final review
