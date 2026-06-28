@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from pathlib import Path
+import subprocess
 import sys
 
 BASE = Path(__file__).resolve().parents[2] / 'deploy/lolipop/master-ricette/derivatives'
@@ -41,6 +42,11 @@ def main():
         return 1
     print('checked_pages='+str(checked))
     print('staged_boundary_pass=true')
+    validator = Path(__file__).resolve().with_name('validate_release_boundary.py')
+    if validator.exists():
+        result = subprocess.run([sys.executable, str(validator)])
+        if result.returncode != 0:
+            return result.returncode
     return 0
 
 if __name__ == '__main__':
