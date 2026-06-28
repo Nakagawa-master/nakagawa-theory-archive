@@ -28,14 +28,17 @@ state:
 - template generator: present
 - parity check: passed
 - head metadata check: passed
+- staged pages use noindex,nofollow
+- staged pages use official_derivative_staged_nonindexable
 
 boundary:
-- server upload: no
+- production server upload: no
 - sitemap update: no
 - Search Console: no
 - PR draft: yes
+- Cloudflare preview may exist from repository integration, but staged generated pages are nonindexable
 
 next:
-- inspect representative generated pages
-- update PR body
+- keep PR draft
+- run Codex mechanical review from PR comment
 - keep public boundary closed until final review
