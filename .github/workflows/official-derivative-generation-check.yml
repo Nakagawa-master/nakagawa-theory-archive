@@ -7,12 +7,17 @@ on:
       - 'deploy/lolipop/master-ricette/derivatives/**'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   candidate-generation-check:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
 
       - name: Generate candidate 05-09 pages
         run: python tools/official_derivatives/generate_candidate_05_09_html.py
@@ -22,6 +27,23 @@ jobs:
 
       - name: Validate head metadata
         run: python tools/official_derivatives/render_heads.py --status=staged
+
+      - name: Commit generated pages to PR branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add \
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260511-e243be \
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260416-0b1b93 \
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260418-11c3d8 \
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260607-7e87f5 \
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260613-007d94
+          if git diff --cached --quiet; then
+            echo "No generated page changes to commit."
+          else
+            git commit -m "Generate candidate 05-09 derivative pages"
+            git push origin HEAD:${{ github.head_ref || github.ref_name }}
+          fi
 
       - name: Upload generated pages artifact
         uses: actions/upload-artifact@v4
