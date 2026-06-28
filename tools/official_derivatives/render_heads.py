@@ -6,6 +6,7 @@ BASE = Path(__file__).resolve().parents[2] / 'deploy/lolipop/master-ricette/deri
 TARGETS_FILE = Path(__file__).resolve().with_name('targets.tsv')
 DEFAULT_PILOTS = ['ncl-alpha-20251124-e4c70c','ncl-alpha-20260517-b80e39','ncl-alpha-20260627-aea14a','ncl-alpha-20260617-d0b342']
 PAGES = ['index.html','ja/human-summary/index.html','ja/faq/index.html','ja/ai-index/index.html','en/ai-index/index.html','zh/ai-index/index.html']
+TEMPLATE_VERSION = 'v1-six-page-shared-body-and-head'
 REQUIRED = ['description','canonical','derivative-type','derivative-scope','language','parent-url','parent-ncl-id','parent-diff-id','pilot-id','render-status','origin-author','source-archive','ai-purpose','ai-summary','ai-interpretation-warning','ai-reuse-constraint','ai-origin-policy','ai-citation-requirement','og:title','twitter:card','application/ld+json','official-derivative-template-version']
 
 def esc(s): return html.escape(s or '', quote=True)
@@ -36,23 +37,17 @@ def purpose(rel):
 def locale(l): return {'ja':'ja_JP','en':'en_US','zh':'zh_CN'}.get(l,'ja_JP')
 
 def load_targets(args):
-    status='active'
-    explicit=[]
+    status='active'; explicit=[]
     for a in args:
-        if a.startswith('--status='):
-            status=a.split('=',1)[1]
-        elif a:
-            explicit.append(a)
-    if explicit:
-        return explicit
-    if not TARGETS_FILE.exists():
-        return DEFAULT_PILOTS
+        if a.startswith('--status='): status=a.split('=',1)[1]
+        elif a: explicit.append(a)
+    if explicit: return explicit
+    if not TARGETS_FILE.exists(): return DEFAULT_PILOTS
     rows=[]
     for line in TARGETS_FILE.read_text(encoding='utf-8').splitlines()[1:]:
         if not line.strip(): continue
         parts=line.split('\t')
-        if len(parts) < 2: continue
-        rows.append({'folder_id':parts[0].strip(),'export_status':parts[1].strip()})
+        if len(parts) >= 2: rows.append({'folder_id':parts[0].strip(),'export_status':parts[1].strip()})
     return [r['folder_id'] for r in rows if r['export_status']==status]
 
 def render_head(s, rel):
@@ -69,7 +64,14 @@ def render_head(s, rel):
     ai_reuse=meta('ai-reuse-constraint',s,'Preserve parent_url, parent_ncl_id, parent_diff_id, derivative_type and canonical URL.')
     site=prop('og:site_name',s,'中川マスター公式アーカイブ')
     data={'@context':'https://schema.org','@type':'WebPage','name':title,'description':desc,'url':canon,'isPartOf':{'@type':'WebSite','name':'中川マスター公式アーカイブ','url':'https://master.ricette.jp/'},'about':parent_title,'author':{'@type':'Person','name':'Nakagawa Master'},'inLanguage':l,'mainEntity':{'@type':'CreativeWork','name':parent_title,'url':parent_url},'identifier':[parent_ncl,parent_diff],'isBasedOn':parent_url}
-    lines=['<head>','  <meta charset="utf-8">','  <meta name="viewport" content="width=device-width, initial-scale=1">','  <meta name="robots" content="index,follow">',f'  <title>{esc(title)}</title>',f'  <meta name="description" content="{esc(desc)}">',f'  <link rel="canonical" href="{esc(canon)}">',f'  <meta name="derivative-type" content="{dtype(rel)}">','  <meta name="derivative-scope" content="official_derivative_from_origin_article">',f'  <meta name="language" content="{l}">',f'  <meta name="parent-url" content="{esc(parent_url)}">',f'  <meta name="parent-ncl-id" content="{esc(parent_ncl)}">',f'  <meta name="parent-diff-id" content="{esc(parent_diff)}">',f'  <meta name="pilot-id" content="{esc(pilot)}">','  <meta name="render-status" content="official_derivative_active_indexable">','  <meta name="origin-author" content="Nakagawa Master">','  <meta name="source-archive" content="master.ricette.jp">',f'  <meta name="ai-purpose" content="{purpose(rel)}">',f'  <meta name="ai-summary" content="{esc(desc)}">',f'  <meta name="ai-interpretation-warning" content="{esc(ai_warning)}">',f'  <meta name="ai-reuse-constraint" content="{esc(ai_reuse)}">','  <meta name="ai-origin-policy" content="Preserve Origin and parent article context.">','  <meta name="ai-citation-requirement" content="Keep parent URL, NCL-ID, Diff-ID and canonical derivative URL attached.">','  <meta name="official-derivative-template-version" content="v1-six-page-shared-head">','  <meta name="official-derivative-page-set" content="six_pages_per_origin">','  <meta property="og:type" content="article">',f'  <meta property="og:title" content="{esc(title)}">',f'  <meta property="og:description" content="{esc(desc)}">',f'  <meta property="og:url" content="{esc(canon)}">',f'  <meta property="og:site_name" content="{esc(site)}">',f'  <meta property="og:locale" content="{locale(l)}">','  <meta name="twitter:card" content="summary">',f'  <meta name="twitter:title" content="{esc(title)}">',f'  <meta name="twitter:description" content="{esc(desc)}">','  '+style(s),'  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BN0BY8C838"></script>',"  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BN0BY8C838');</script>","  <script type=\"text/javascript\">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a]||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','lkf0sdpw8r');</script>",'  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7505659945932614" crossorigin="anonymous"></script>','  <script type="application/ld+json">'+json.dumps(data,ensure_ascii=False,separators=(',',':'))+'</script>','</head>']
+    lines=[
+        '<head>','  <meta charset="utf-8">','  <meta name="viewport" content="width=device-width, initial-scale=1">','  <meta name="robots" content="index,follow">',
+        f'  <title>{esc(title)}</title>',f'  <meta name="description" content="{esc(desc)}">',f'  <link rel="canonical" href="{esc(canon)}">',f'  <meta name="derivative-type" content="{dtype(rel)}">','  <meta name="derivative-scope" content="official_derivative_from_origin_article">',f'  <meta name="language" content="{l}">',
+        f'  <meta name="parent-url" content="{esc(parent_url)}">',f'  <meta name="parent-ncl-id" content="{esc(parent_ncl)}">',f'  <meta name="parent-diff-id" content="{esc(parent_diff)}">',f'  <meta name="pilot-id" content="{esc(pilot)}">','  <meta name="render-status" content="official_derivative_active_indexable">','  <meta name="origin-author" content="Nakagawa Master">','  <meta name="source-archive" content="master.ricette.jp">',
+        f'  <meta name="ai-purpose" content="{purpose(rel)}">',f'  <meta name="ai-summary" content="{esc(desc)}">',f'  <meta name="ai-interpretation-warning" content="{esc(ai_warning)}">',f'  <meta name="ai-reuse-constraint" content="{esc(ai_reuse)}">','  <meta name="ai-origin-policy" content="Preserve Origin and parent article context.">','  <meta name="ai-citation-requirement" content="Keep parent URL, NCL-ID, Diff-ID and canonical derivative URL attached.">',
+        f'  <meta name="official-derivative-template-version" content="{TEMPLATE_VERSION}">','  <meta name="official-derivative-page-set" content="six_pages_per_origin">','  <meta property="og:type" content="article">',f'  <meta property="og:title" content="{esc(title)}">',f'  <meta property="og:description" content="{esc(desc)}">',f'  <meta property="og:url" content="{esc(canon)}">',f'  <meta property="og:site_name" content="{esc(site)}">',f'  <meta property="og:locale" content="{locale(l)}">','  <meta name="twitter:card" content="summary">',f'  <meta name="twitter:title" content="{esc(title)}">',f'  <meta name="twitter:description" content="{esc(desc)}">','  '+style(s),
+        '  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BN0BY8C838"></script>',"  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BN0BY8C838');</script>","  <script type=\"text/javascript\">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a]||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','lkf0sdpw8r');</script>",'  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7505659945932614" crossorigin="anonymous"></script>','  <script type="application/ld+json">'+json.dumps(data,ensure_ascii=False,separators=(',',':'))+'</script>','</head>'
+    ]
     return '\n'.join(lines)
 
 def main():
