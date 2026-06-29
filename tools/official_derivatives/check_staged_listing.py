@@ -10,6 +10,7 @@ CHECK_FILES = [
     ROOT / 'deploy/lolipop/master-ricette/sitemap_index.xml',
     ROOT / 'deploy/lolipop/master-ricette/derivatives/index.html',
 ]
+PAGE_SUFFIXES = ['', 'ja/human-summary/', 'ja/faq/', 'ja/ai-index/', 'en/ai-index/', 'zh/ai-index/']
 
 
 def rows():
@@ -17,8 +18,17 @@ def rows():
         return list(csv.DictReader(f, delimiter='\t'))
 
 
+def staged_patterns(folder):
+    out = []
+    for suffix in PAGE_SUFFIXES:
+        rel = '/derivatives/' + folder + '/' + suffix
+        out.append(rel)
+        out.append('https://master.ricette.jp' + rel)
+    return out
+
+
 def main():
-    print('check_set=staged_listing_v2')
+    print('check_set=staged_listing_v3')
     staged = [r['folder_id'] for r in rows() if r.get('export_status') == 'staged']
     errors = []
     checked = 0
@@ -28,9 +38,10 @@ def main():
         checked += 1
         text = path.read_text(encoding='utf-8', errors='ignore')
         for folder in staged:
-            url = 'https://master.ricette.jp/derivatives/' + folder + '/'
-            if url in text:
-                errors.append(str(path) + ' contains staged url ' + folder)
+            for pattern in staged_patterns(folder):
+                if pattern in text:
+                    errors.append(str(path) + ' contains staged pattern ' + folder)
+                    break
     if errors:
         print('\n'.join(errors))
         print('staged_listing_pass=false')
