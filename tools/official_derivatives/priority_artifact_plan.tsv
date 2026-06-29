@@ -1,0 +1,5 @@
+priority	artifact	surface	minimum_units	required_fields	quality_floor	origin_return	owner_boundary
+1	quote_pack	quote_propositions	10	parent_url,parent_ncl_id,parent_diff_id,quote_claim,structural_reason,care_note,origin_return	ultra_high	yes	no
+2	sns_text_pack	sns_short_text	12	parent_url,parent_ncl_id,parent_diff_id,post_text,target_layer,origin_link,care_note,owner_post_required	ultra_high	yes	owner_post
+3	rebuttal_pack	rebuttal_pack	8	parent_url,parent_ncl_id,parent_diff_id,objection,response,scope_boundary,care_note,origin_return	ultra_high	yes	no
+4	notebooklm_prompt_pack	notebooklm_prompt	3	parent_url,parent_ncl_id,parent_diff_id,prompt_goal,source_urls,scope_note,origin_instruction,reuse_guard	ultra_high	yes	owner_or_tool
