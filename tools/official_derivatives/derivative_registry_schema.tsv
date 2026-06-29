@@ -1,0 +1,21 @@
+field	required	note
+registry_version	yes	registry schema version
+batch_id	yes	candidate or release batch id
+origin_slot_id	yes	stable origin slot id
+derivative_id	yes	stable derivative page id
+page_role	yes	hub, human_summary, faq, ja_ai_index, en_ai_index, zh_ai_index
+language	yes	ja, en, zh, or und
+export_status	yes	private, staged, active, retired
+parent_url	yes	original article URL
+parent_title	yes	original article title
+parent_ncl_id	yes	parent NCL ID
+parent_diff_id	yes	parent Diff ID
+folder_id	yes	derivative folder id
+relative_path	yes	path under derivative folder
+canonical_url	yes	canonical derivative URL
+origin_author	yes	Nakagawa Master
+source_archive	yes	master.ricette.jp
+quality_gate_status	yes	pending, failed, passed
+render_status	yes	private, staged_nonindexable, active_indexable
+created_from_manifest	yes	true or false
+notes	no	public-safe note only
