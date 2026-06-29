@@ -1,0 +1,22 @@
+field	value
+batch_id	candidate-10-19
+commit_sha	bb69b62fe844145a03ee3a5872b67aaf95cfedcd
+run_name	Official derivative generation check
+run_id	28407797584
+run_number	256
+workflow_status	completed
+workflow_conclusion	success
+builder_file	build_next_10_origin_catalog_from_verified_overlay.py
+handoff_file	codex_next_10_verified_catalog_handoff.md
+public_origin_discovery_validator	completed_success
+verified_overlay_validator	completed_success
+matrix_validator	completed_success
+effect_bundle_validator	completed_success
+verified_overlay_rows	9
+expected_origin_catalog_rows_after_build	9
+ready_for_candidate_rows_after_build	0
+page_generation	false
+production_deploy	false
+sitemap_update	false
+search_console_action	false
+index_follow_conversion	false
