@@ -40,6 +40,9 @@ jobs:
       - name: Run listing guard
         run: python tools/official_derivatives/check_staged_listing.py
 
+      - name: Validate candidate 05-09 effect bundles
+        run: python tools/official_derivatives/check_candidate_05_09_effect_bundles.py
+
       - name: Commit generated pages and reports to PR branch
         run: |
           git config user.name "github-actions[bot]"
