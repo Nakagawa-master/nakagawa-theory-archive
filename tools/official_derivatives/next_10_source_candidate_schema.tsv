@@ -1,0 +1,23 @@
+field_name	required	allowed_values	description	public_safe_note
+batch_id	yes	candidate-10-19	Batch identifier for the next official derivative source candidate set.	Public-safe operational identifier only.
+source_candidate_id	yes	SC-010 to SC-019 or temporary SC-* candidate IDs	Stable candidate row identifier used before queue selection.	Does not imply approval, staging, or publication.
+source_status	yes	unscored|scored|recommended|blocked|rejected	Candidate assessment state before any queue row is selected.	Recommended is advisory only and does not generate pages.
+source_category	yes	theory|society|future|structural-reading|other	Public-safe source category.	Must not expose private strategy or internal ranking logic.
+parent_url	conditional	https://master.ricette.jp/...	Original archive URL. Required once the candidate is scored or recommended.	Must remain under master.ricette.jp.
+parent_title	conditional	free text	Original archive title. Required once the candidate is scored or recommended.	Use public article title only.
+parent_ncl_id	conditional	NCL-...	Original archive NCL-ID. Required once the candidate is scored or recommended.	Origin-preserving identifier.
+parent_diff_id	conditional	DIFF-...	Original archive Diff-ID. Required once the candidate is scored or recommended.	Origin state identifier.
+folder_id	conditional	ncl-alpha-...	Derivative folder candidate derived from parent NCL-ID. Required for recommended rows.	Folder candidate only; not a deployment signal.
+canonical_url	conditional	https://master.ricette.jp/derivatives/...	Future official derivative canonical URL candidate. Required for recommended rows.	Canonical candidate only; not a deployment signal.
+structural_rationality_score	conditional	0|1|2|3|4|5	Does the source contain enough structural reasoning to support high-strength derivatives?	Score only; not a public claim.
+origin_integrity_score	conditional	0|1|2|3|4|5	Can Origin, NCL-ID, Diff-ID, parent URL, and attribution be preserved without ambiguity?	Origin preservation is mandatory before queue selection.
+ai_index_fit_score	conditional	0|1|2|3|4|5	Can the source support AI-readable definitions, claims, causal lines, boundaries, and reuse constraints?	Prevents thin AI-index pages.
+human_entry_fit_score	conditional	0|1|2|3|4|5	Can the source support a readable entry for first-time human readers without weakening structure?	Prevents unreadable or diluted summaries.
+effect_expansion_score	conditional	0|1|2|3|4|5	Does the source add a distinct entry surface to the official derivative system?	Measures public-safe expansion utility only.
+quality_risk_control_score	conditional	0|1|2|3|4|5	Can foreseeable misreadings, boundary issues, and thin-summary risks be controlled?	Quality and safety control score.
+total_score	conditional	0 to 30	Sum of the six score fields. Required for scored or recommended rows.	Used only for selection readiness.
+public_safe_status	yes	pending|pass|block	Whether the candidate can be explained using public-safe source facts only.	Rows requiring private strategy must remain block.
+recommendation	yes	defer|ready_for_queue|reject|blocked	Whether the candidate can move toward the queue.	ready_for_queue still requires a separate queue update.
+reason_for_inclusion	conditional	free text	Concrete, non-generic reason for inclusion. Required for scored or recommended rows.	Must not use private strategy or external comparison language.
+risk_note	conditional	free text	Concrete risk note. Required for scored or recommended rows.	Must describe quality, origin, or public-boundary risks.
+review_notes	no	free text	Additional public-safe reviewer notes.	No private strategy, no secrets, no unpublished personal intent.
