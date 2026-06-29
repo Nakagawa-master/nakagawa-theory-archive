@@ -40,6 +40,9 @@ jobs:
       - name: Run listing guard
         run: python tools/official_derivatives/check_staged_listing.py
 
+      - name: Validate priority effect bundle matrix
+        run: python tools/official_derivatives/check_priority_effect_bundle_matrix.py
+
       - name: Validate candidate 05-09 effect bundles
         run: python tools/official_derivatives/check_candidate_05_09_effect_bundles.py
 
