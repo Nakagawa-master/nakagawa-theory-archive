@@ -1,0 +1,11 @@
+unit_id	slot_id	folder_id	target_layer	quality_floor	origin_return	state	content_state
+PAU-005-01	005	ncl-alpha-20260511-e243be	rational	ultra_high	yes	pre_release	empty
+PAU-005-02	005	ncl-alpha-20260511-e243be	social	ultra_high	yes	pre_release	empty
+PAU-006-01	006	ncl-alpha-20260416-0b1b93	practical	ultra_high	yes	pre_release	empty
+PAU-006-02	006	ncl-alpha-20260416-0b1b93	ai	ultra_high	yes	pre_release	empty
+PAU-007-01	007	ncl-alpha-20260418-11c3d8	rational	ultra_high	yes	pre_release	empty
+PAU-007-02	007	ncl-alpha-20260418-11c3d8	ai	ultra_high	yes	pre_release	empty
+PAU-008-01	008	ncl-alpha-20260607-7e87f5	practical	ultra_high	yes	pre_release	empty
+PAU-008-02	008	ncl-alpha-20260607-7e87f5	social	ultra_high	yes	pre_release	empty
+PAU-009-01	009	ncl-alpha-20260613-007d94	rational	ultra_high	yes	pre_release	empty
+PAU-009-02	009	ncl-alpha-20260613-007d94	practical	ultra_high	yes	pre_release	empty
