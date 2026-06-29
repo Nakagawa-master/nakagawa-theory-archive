@@ -35,7 +35,7 @@ def main():
             'catalog_status': 'reviewed',
             'source_category': source.get('source_category',''),
             'parent_url': source.get('parent_url',''),
-            'parent_title': source.get('parent_title',''),
+            'parent_title': '',
             'parent_ncl_id': overlay.get('parent_ncl_id',''),
             'parent_diff_id': overlay.get('parent_diff_id',''),
             'folder_id': overlay.get('folder_id',''),
@@ -51,9 +51,9 @@ def main():
             'effect_expansion_score': '0',
             'quality_risk_control_score': '0',
             'total_score': '5',
-            'reason_for_inclusion': source.get('reason_for_inclusion',''),
-            'risk_note': source.get('risk_note',''),
-            'review_notes': 'generated_from_verified_overlay; scoring_pending',
+            'reason_for_inclusion': 'verified_public_origin',
+            'risk_note': 'scoring_pending',
+            'review_notes': 'generated_from_verified_overlay; title_and_quality_scoring_pending',
         })
     with OUT.open('w', encoding='utf-8', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=OUT_HEADER, delimiter='\t', lineterminator='\n')
