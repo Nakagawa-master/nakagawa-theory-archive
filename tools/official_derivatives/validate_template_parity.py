@@ -29,6 +29,10 @@ def strengthen_faq():
     return run_script('strengthen_candidate_faq_pages.py')
 
 
+def strengthen_ai_index():
+    return run_script('strengthen_candidate_ai_index_pages.py')
+
+
 def normalize_heads(status):
     return run_script('render_heads.py', '--status=' + status)
 
@@ -69,7 +73,7 @@ def check(path, rel, folder):
         if f'/derivatives/{folder}/' not in s:
             errors.append(f'{path}: missing hub backlink')
     if 'ai-index' in rel:
-        for marker in ['article role','central concept','definition','core claim','causal sequence','judgment conditions','interpretation warnings','reuse constraints']:
+        for marker in ['article role','central concept','definition','core claim','causal sequence','judgment conditions','interpretation warnings','reuse constraints','origin preservation','citation requirement']:
             if marker not in s:
                 errors.append(f'{path}: missing ai section {marker}')
     for marker in PRIVATE_MARKERS:
@@ -87,6 +91,9 @@ def main():
         print('template_parity_pass=false')
         return 1
     if strengthen_faq() != 0:
+        print('template_parity_pass=false')
+        return 1
+    if strengthen_ai_index() != 0:
         print('template_parity_pass=false')
         return 1
     if normalize_heads(status) != 0:
