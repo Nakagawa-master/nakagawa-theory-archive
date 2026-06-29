@@ -1,0 +1,10 @@
+source_type	tier	use_scope	link_key	note
+origin_article	primary	main_reference	parent_url	origin_is_main_basis
+human_summary	support	short_entry_reference	parent_url	origin_link_required
+faq	support	question_answer_reference	parent_url	clear_scope_required
+ja_ai_index	support	ai_reference_ja	parent_url	origin_identity_required
+en_ai_index	support	ai_reference_en	parent_url	origin_identity_required
+zh_ai_index	support	ai_reference_zh	parent_url	origin_identity_required
+memory_only	excluded	outside_current_source	none	not_a_basis
+unlinked_text	excluded	missing_origin_link	none	not_a_basis
+low_basis_text	excluded	weak_basis	none	not_a_basis
