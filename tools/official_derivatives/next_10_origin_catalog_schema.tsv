@@ -1,0 +1,25 @@
+field_name	required	allowed_values	description	public_safe_note
+batch_id	yes	candidate-10-19	Batch identifier for the next ten official derivative slots.	public_safe
+origin_catalog_id	yes	OC-* 	Stable catalog row identifier.	public_safe
+catalog_status	yes	unreviewed|reviewed|blocked|ready_for_candidate	Origin catalog review state before source candidate promotion.	public_safe
+source_category	yes	theory|society|future|structural-reading|other	Public-safe source category.	public_safe
+parent_url	yes	https://master.ricette.jp/*	Canonical public origin article URL.	public_origin_only
+parent_title	yes	text	Public origin article title.	public_origin_only
+parent_ncl_id	yes	NCL-*	Origin NCL identifier.	origin_identity
+parent_diff_id	yes	DIFF-*	Origin Diff identifier.	origin_identity
+folder_id	yes	ncl-*	Expected derivative folder id.	derived_from_origin_identity
+canonical_url	yes	https://master.ricette.jp/derivatives/*	Expected derivative canonical URL.	derived_from_origin_identity
+already_in_origin_manifest	yes	true|false	Whether this origin is already active or staged in origin_manifest.tsv.	public_safe
+public_safe_status	yes	pending|pass|block	Public-safe review state.	public_safe
+exclusion_status	yes	available|excluded|review_required	Selection availability before source-candidate promotion.	public_safe
+exclusion_reason	yes	text	Reason for availability or exclusion.	public_safe_no_private_strategy
+structural_rationality_score	yes	0|1|2|3|4|5	Structural rationality score.	public_safe_score
+origin_integrity_score	yes	0|1|2|3|4|5	Origin integrity score.	public_safe_score
+ai_index_fit_score	yes	0|1|2|3|4|5	AI index fit score.	public_safe_score
+human_entry_fit_score	yes	0|1|2|3|4|5	Human entry fit score.	public_safe_score
+effect_expansion_score	yes	0|1|2|3|4|5	Effect expansion fit score.	public_safe_score
+quality_risk_control_score	yes	0|1|2|3|4|5	Quality risk control score.	public_safe_score
+total_score	yes	0-30	Sum of the six score fields.	public_safe_score
+reason_for_inclusion	yes	text	Concrete public-safe reason for candidate promotion.	public_safe_no_private_strategy
+risk_note	yes	text	Concrete public-safe risk note.	public_safe_no_private_strategy
+review_notes	no	text	Optional public-safe review notes.	public_safe_no_private_strategy
