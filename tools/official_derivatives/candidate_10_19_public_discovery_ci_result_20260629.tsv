@@ -1,0 +1,21 @@
+field	value
+batch_id	candidate-10-19
+commit_sha	9dd4ed63ccd91e993dc2793de5472fe6049baf35
+run_name	Official derivative generation check
+run_id	28388128635
+run_number	248
+workflow_status	completed
+workflow_conclusion	success
+public_origin_discovery_validator	completed_success
+matrix_validator	completed_success
+effect_bundle_validator	completed_success
+discovery_rows	10
+discovery_status	reviewed
+public_safe_status	pending
+exclusion_status	review_required
+ready_for_catalog_rows	0
+page_generation	false
+production_deploy	false
+sitemap_update	false
+search_console_action	false
+index_follow_conversion	false
