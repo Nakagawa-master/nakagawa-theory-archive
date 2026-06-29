@@ -6,6 +6,7 @@ import sys
 HERE = Path(__file__).resolve().parent
 BASE = HERE.parents[1] / 'deploy/lolipop/master-ricette/derivatives'
 TARGETS = HERE / 'targets.tsv'
+AI_MARKERS = ['article role', 'central concept', 'definition', 'core claim', 'causal sequence', 'judgment conditions', 'interpretation warnings', 'reuse constraints', 'origin preservation', 'citation requirement']
 
 PAGES = {
     'ja/human-summary/index.html': {
@@ -17,16 +18,16 @@ PAGES = {
         'min_h2': 8,
     },
     'ja/ai-index/index.html': {
-        'markers': ['article role', 'central concept', 'definition', 'core claim', 'causal sequence', 'judgment conditions', 'interpretation warnings', 'reuse constraints'],
-        'min_h2': 8,
+        'markers': AI_MARKERS,
+        'min_h2': 10,
     },
     'en/ai-index/index.html': {
-        'markers': ['article role', 'central concept', 'definition', 'core claim', 'causal sequence', 'judgment conditions', 'interpretation warnings', 'reuse constraints'],
-        'min_h2': 8,
+        'markers': AI_MARKERS,
+        'min_h2': 10,
     },
     'zh/ai-index/index.html': {
-        'markers': ['article role', 'central concept', 'definition', 'core claim', 'causal sequence', 'judgment conditions', 'interpretation warnings', 'reuse constraints'],
-        'min_h2': 8,
+        'markers': AI_MARKERS,
+        'min_h2': 10,
     },
 }
 
@@ -63,7 +64,7 @@ def main():
             count = h2_count(html)
             if count < rule['min_h2']:
                 errors.append(str(path) + ': h2_count=' + str(count) + ' min=' + str(rule['min_h2']))
-    print('check_set=derivative_content_strength_v2')
+    print('check_set=derivative_content_strength_v3')
     print('checked_pages=' + str(checked))
     if errors:
         print('\n'.join(errors))
