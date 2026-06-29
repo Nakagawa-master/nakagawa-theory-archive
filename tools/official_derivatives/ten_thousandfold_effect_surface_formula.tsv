@@ -1,0 +1,16 @@
+surface_class	minimum_units_per_origin	effect_route	activation_priority	owner_boundary	origin_return_required
+hub_return	1	derivative_navigation_to_origin	1	no	yes
+human_summary	1	first_reader_understanding_to_origin	1	no	yes
+faq	1	misread_reduction_and_judgment_to_origin	1	no	yes
+ja_ai_index	1	japanese_ai_reuse_to_origin	1	no	yes
+en_ai_index	1	english_ai_reuse_to_origin	1	no	yes
+zh_ai_index	1	chinese_ai_reuse_to_origin	1	no	yes
+quote_proposition	10	short_claim_reuse_to_origin	2	no	yes
+sns_short_text	12	social_attention_to_origin	2	owner_post	yes
+notebooklm_prompt	3	ai_media_reuse_to_origin	2	owner_or_tool	yes
+rebuttal	8	objection_control_to_origin	2	no	yes
+practical_application	3	work_or_business_use_to_origin	3	no	yes
+fatigue_society_application	3	burden_recognition_to_origin	3	no	yes
+meaning_sensitivity_reading	2	meaning_need_to_origin	3	no	yes
+third_party_derivative_log	1	earned_surface_to_origin	4	no	yes
+deviation_ledger	1	misread_tracking_to_origin	4	no	yes
