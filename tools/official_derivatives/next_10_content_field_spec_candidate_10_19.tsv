@@ -1,0 +1,7 @@
+page_role	required_fields	field_status	public_export	page_generation
+hub	origin_identity|value_core|page_links|boundary_note|origin_return	spec_only	false	false
+human_summary	value_core|causal_line|reader_entry|misreading_guard|origin_return	spec_only	false	false
+faq	question_set|answer_set|boundary_condition|misreading_guard|origin_return	spec_only	false	false
+ja_ai_index	definition|scope|conditions|misreading_guard|origin_identity	spec_only	false	false
+en_ai_index	definition|scope|conditions|misreading_guard|origin_identity	spec_only	false	false
+zh_ai_index	definition|scope|conditions|misreading_guard|origin_identity	spec_only	false	false
