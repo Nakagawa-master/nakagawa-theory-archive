@@ -6,6 +6,7 @@ QUEUE = Path('tools/official_derivatives/next_10_queue_candidate_10_19.tsv')
 INTAKE = Path('tools/official_derivatives/next_batch_intake_candidate_10_19.tsv')
 FIELDS = ['batch_id','slot_id','source_status','parent_url','parent_title','parent_ncl_id','parent_diff_id','folder_id','canonical_url','hub_title','human_summary_ready','faq_ready','ja_ai_index_ready','en_ai_index_ready','zh_ai_index_ready','quality_gate_status','export_status','notes']
 READY = ['parent_url','parent_title','parent_ncl_id','parent_diff_id','folder_id','canonical_url']
+QUALITY_MARKER = 'intake_quality_passed'
 
 
 def read(path):
@@ -48,10 +49,16 @@ def norm(rows):
 def main():
     queue = read(QUEUE)
     intake = read(INTAKE)
-    expected = [expected_row(r) for r in queue if is_ready(r)]
+    ready_queue = [row for row in queue if is_ready(row)]
+    blocked_candidates = [row for row in queue if row.get('selection_status') == 'candidate' and row.get('handoff_status') == 'intake_blocked']
+    expected = [expected_row(r) for r in ready_queue]
     errors = []
     if norm(intake) != expected:
         errors.append('intake_exactness_mismatch')
+    for row in ready_queue:
+        slot = row.get('slot_id','unknown')
+        if QUALITY_MARKER not in row.get('notes',''):
+            errors.append('missing_intake_quality_marker=' + slot)
     for row in intake:
         slot = row.get('slot_id','unknown')
         for key in FIELDS:
@@ -66,7 +73,9 @@ def main():
             errors.append('bad_quality_gate_status=' + slot)
         if not row.get('canonical_url','').startswith('https://master.ricette.jp/derivatives/'):
             errors.append('bad_canonical=' + slot)
-    print('check_set=next_10_intake_v2')
+    print('check_set=next_10_intake_v3')
+    print('blocked_candidate_rows=' + str(len(blocked_candidates)))
+    print('ready_queue_rows=' + str(len(ready_queue)))
     print('expected_intake_rows=' + str(len(expected)))
     print('actual_intake_rows=' + str(len(intake)))
     if errors:
