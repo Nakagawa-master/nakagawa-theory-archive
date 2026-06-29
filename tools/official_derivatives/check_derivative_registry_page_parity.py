@@ -11,13 +11,11 @@ def rows():
         return list(csv.DictReader(f, delimiter='\t'))
 
 
-def has_meta(html, name, value):
-    return ('name="' + name + '" content="' + value + '"') in html
-
-
 def main():
     errors = []
     data = rows()
+    if len(data) != 30:
+        errors.append('registry_rows_expected=30')
     for r in data:
         folder = r.get('folder_id','')
         rel = r.get('relative_path','')
@@ -42,7 +40,7 @@ def main():
                 errors.append('staged_robots_missing=' + label)
             if 'official_derivative_staged_nonindexable' not in html:
                 errors.append('staged_status_missing=' + label)
-    print('check_set=derivative_registry_page_parity_v1')
+    print('check_set=derivative_registry_page_parity_v2')
     print('registry_rows=' + str(len(data)))
     if errors:
         print('\n'.join(errors[:30]))
