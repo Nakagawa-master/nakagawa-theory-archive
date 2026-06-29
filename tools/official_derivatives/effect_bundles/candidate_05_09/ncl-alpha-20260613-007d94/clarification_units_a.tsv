@@ -1,0 +1,5 @@
+unit_id	point	clarification	origin_return
+CL-009-01	effort_status	この理論は努力の有無ではなく、努力の向け先を扱う。未来定義、現在構造、因果線、観測、修正、再投入を含む構造行為として読む。	Required
+CL-009-02	density	この理論は努力を成果へ接続するために高密度化する。労力の投下先と検証循環が中心である。	Required
+CL-009-03	condition_shift	従来型の努力観をそのまま使うのではなく、未来定義と検証循環が必要になった条件変化を読む。	Required
+CL-009-04	beyond_efficiency	効率だけではなく、未来定義が現在構造を通るか、どの因果線へ労力を投下するか、何を観測して修正するかを見る。	Required
