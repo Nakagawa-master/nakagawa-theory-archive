@@ -1,0 +1,19 @@
+field	value
+pr	35
+branch	work/render-manifest-20260628
+commit_sha	d5766bc2e9549be5fc974c3def162bc62cb71683
+run_name	Official derivative generation check
+run_id	28387642348
+run_number	245
+workflow_status	completed
+workflow_conclusion	success
+matrix_validator	completed_success
+effect_bundle_validator	completed_success
+origin_count	5
+units_per_origin	33
+total_units	165
+public_activation	false
+production_deploy	false
+sitemap_update	false
+search_console_action	false
+index_follow_conversion	false
