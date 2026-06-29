@@ -1,0 +1,6 @@
+slot_id	folder_id	unit_count	layer_a	layer_b	quality_floor	origin_return	state
+005	ncl-alpha-20260511-e243be	2	rational	social	ultra_high	yes	pre_release
+006	ncl-alpha-20260416-0b1b93	2	practical	ai	ultra_high	yes	pre_release
+007	ncl-alpha-20260418-11c3d8	2	rational	ai	ultra_high	yes	pre_release
+008	ncl-alpha-20260607-7e87f5	2	practical	social	ultra_high	yes	pre_release
+009	ncl-alpha-20260613-007d94	2	rational	practical	ultra_high	yes	pre_release
