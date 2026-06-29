@@ -5,8 +5,10 @@ from pathlib import Path
 QUEUE = Path('tools/official_derivatives/next_10_queue_candidate_10_19.tsv')
 INTAKE = Path('tools/official_derivatives/next_batch_intake_candidate_10_19.tsv')
 PRE_GATE = Path('tools/official_derivatives/next_10_pre_intake_gate_20260630.tsv')
+BLUEPRINT = Path('tools/official_derivatives/next_10_content_blueprint_candidate_10_19.tsv')
 FIELDS = ['batch_id','slot_id','source_status','parent_url','parent_title','parent_ncl_id','parent_diff_id','folder_id','canonical_url','hub_title','human_summary_ready','faq_ready','ja_ai_index_ready','en_ai_index_ready','zh_ai_index_ready','quality_gate_status','export_status','notes']
 READY = ['parent_url','parent_title','parent_ncl_id','parent_diff_id','folder_id','canonical_url']
+ROLES = {'hub':'index.html','human_summary':'ja/human-summary/index.html','faq':'ja/faq/index.html','ja_ai_index':'ja/ai-index/index.html','en_ai_index':'en/ai-index/index.html','zh_ai_index':'zh/ai-index/index.html'}
 QUALITY_MARKER = 'intake_quality_passed'
 GATE_PASS = {'gate_state':'passed','identity_ok':'true','score_ok':'true','plan_ok':'true','origin_ok':'true','allow_intake':'true'}
 
@@ -52,10 +54,39 @@ def norm(rows):
     return [{k: r.get(k,'') for k in FIELDS} for r in rows]
 
 
+def blueprint_index(rows):
+    result = {}
+    for row in rows:
+        slot = row.get('slot_id','')
+        result.setdefault(slot, []).append(row)
+    return result
+
+
+def blueprint_complete(slot, folder, rows, errors):
+    roles = sorted(row.get('page_role','') for row in rows)
+    if roles != sorted(ROLES):
+        errors.append('blueprint_roles_not_complete=' + slot)
+        return False
+    for row in rows:
+        role = row.get('page_role','')
+        if row.get('folder_id') != folder:
+            errors.append('blueprint_folder_mismatch=' + slot)
+        if role in ROLES and row.get('page_path') != ROLES[role]:
+            errors.append('blueprint_path_mismatch=' + slot + ':' + role)
+        if row.get('blueprint_status') != 'planned':
+            errors.append('blueprint_not_planned=' + slot + ':' + role)
+        if row.get('origin_trace_status') != 'linked':
+            errors.append('blueprint_origin_not_linked=' + slot + ':' + role)
+        if row.get('page_generation') != 'false':
+            errors.append('blueprint_page_generation_not_false=' + slot + ':' + role)
+    return True
+
+
 def main():
     queue = read(QUEUE)
     intake = read(INTAKE)
     gates = {row.get('slot_id',''): row for row in read(PRE_GATE)}
+    blueprints = blueprint_index(read(BLUEPRINT))
     ready_queue = [row for row in queue if is_ready(row)]
     blocked_candidates = [row for row in queue if row.get('selection_status') == 'candidate' and row.get('handoff_status') == 'intake_blocked']
     expected = [expected_row(r) for r in ready_queue]
@@ -65,6 +96,7 @@ def main():
     for row in ready_queue:
         slot = row.get('slot_id','unknown')
         gate = gates.get(slot)
+        blueprint_complete(slot, row.get('folder_id',''), blueprints.get(slot, []), errors)
         if not gate:
             errors.append('missing_pre_intake_gate=' + slot)
         elif not gate_passed(gate):
@@ -74,10 +106,14 @@ def main():
     for row in blocked_candidates:
         slot = row.get('slot_id','unknown')
         gate = gates.get(slot)
+        blueprint_complete(slot, row.get('folder_id',''), blueprints.get(slot, []), errors)
         if not gate:
             errors.append('missing_blocked_pre_intake_gate=' + slot)
-        elif gate.get('allow_intake') != 'false':
-            errors.append('blocked_row_allows_intake=' + slot)
+        else:
+            if gate.get('plan_ok') != 'true':
+                errors.append('blocked_plan_not_ready=' + slot)
+            if gate.get('allow_intake') != 'false':
+                errors.append('blocked_row_allows_intake=' + slot)
         if QUALITY_MARKER in row.get('notes',''):
             errors.append('blocked_row_has_quality_marker=' + slot)
     for row in intake:
@@ -94,14 +130,16 @@ def main():
             errors.append('bad_quality_gate_status=' + slot)
         if not row.get('canonical_url','').startswith('https://master.ricette.jp/derivatives/'):
             errors.append('bad_canonical=' + slot)
-    print('check_set=next_10_intake_v4')
+    print('check_set=next_10_intake_v5')
     print('pre_intake_gate_rows=' + str(len(gates)))
+    print('content_blueprint_slots=' + str(len(blueprints)))
+    print('content_blueprint_rows=' + str(sum(len(v) for v in blueprints.values())))
     print('blocked_candidate_rows=' + str(len(blocked_candidates)))
     print('ready_queue_rows=' + str(len(ready_queue)))
     print('expected_intake_rows=' + str(len(expected)))
     print('actual_intake_rows=' + str(len(intake)))
     if errors:
-        print('\n'.join(errors[:40]))
+        print('\n'.join(errors[:60]))
         print('next_10_intake_pass=false')
         return 1
     print('next_10_intake_pass=true')
