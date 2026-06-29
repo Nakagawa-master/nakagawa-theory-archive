@@ -1,6 +1,7 @@
 contract_key	contract_value	note
 batch_scope	candidate_05_09	current_staged_batch_only
 artifact	quote_pack	priority_artifact_1
+rule_scope	internal_generation_rule	artifact_side_rule_not_owner_obligation
 source_primary	origin_article	main_reference_required
 source_support	human_summary,faq,ja_ai_index,en_ai_index,zh_ai_index	support_reference_set
 minimum_units_total	10	from_priority_artifact_plan
@@ -12,3 +13,4 @@ origin_return	yes	must_return_to_origin
 quality_status_initial	draft	until_source_reading_and_review
 release_state_initial	pre_release	no_public_action_by_contract
 owner_boundary	no	internal_artifact_only
+owner_obligation	none	no_added_owner_burden
