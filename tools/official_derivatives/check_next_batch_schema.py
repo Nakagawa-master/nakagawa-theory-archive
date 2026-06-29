@@ -14,12 +14,12 @@ def main():
         rows = list(r)
     fields = [x.get('field','') for x in rows]
     bad = [x for x in NEEDED if x not in fields]
-    print('check_set=next_batch_schema_v2')
+    print('check_set=next_batch_schema_v3')
     if bad:
         print('\n'.join('missing=' + x for x in bad))
         print('next_batch_schema_pass=false')
         return 1
-    registry = Path('tools/official_derivatives/check_derivative_registry_schema.py')
+    registry = Path('tools/official_derivatives/check_derivative_registry_rows.py')
     if registry.exists():
         result = subprocess.run([sys.executable, str(registry)])
         if result.returncode != 0:
