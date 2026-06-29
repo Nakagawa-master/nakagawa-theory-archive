@@ -1,0 +1,15 @@
+field	required	note
+batch_id	yes	candidate-10-19
+slot_id	yes	Official Derivative 010 through Official Derivative 019
+selection_status	yes	unselected, candidate, selected, rejected
+source_category	yes	theory, society, future, structural-reading, other, unknown
+reason_for_inclusion	yes	public-safe reason for why this source should enter the next batch
+risk_note	yes	public-safe note for ambiguity, source weakness, boundary risk, or none
+parent_url	no	filled only after source selection
+parent_title	no	filled only after source selection
+parent_ncl_id	no	filled only after source selection
+parent_diff_id	no	filled only after source selection
+folder_id	no	filled only after source selection
+canonical_url	no	filled only after source selection
+handoff_status	yes	queue_only, intake_ready, intake_blocked
+notes	no	public-safe operational note only
