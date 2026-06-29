@@ -1,0 +1,18 @@
+field_name	required	allowed_values	description
+batch_id	yes	candidate-10-19	Batch identifier.
+discovery_id	yes	DISC-*	Stable discovery row identifier.
+discovery_status	yes	unreviewed|reviewed|blocked|ready_for_catalog	Discovery review state.
+source_category	yes	theory|society|future|structural-reading|other	Origin category.
+parent_url	yes	https://master.ricette.jp/*	Public origin article URL.
+parent_title	yes	text	Public origin article title.
+parent_ncl_id	yes	NCL-*	Origin NCL identifier.
+parent_diff_id	yes	DIFF-*	Origin Diff identifier.
+folder_id	yes	ncl-*	Expected derivative folder id.
+canonical_url	yes	https://master.ricette.jp/derivatives/*	Expected derivative canonical URL.
+already_in_origin_manifest	yes	true|false	Already present in origin_manifest.tsv.
+public_safe_status	yes	pending|pass|block	Public review state.
+exclusion_status	yes	available|excluded|review_required	Selection availability.
+exclusion_reason	yes	text	Reason for availability or exclusion.
+reason_for_inclusion	yes	text	Reason for inclusion.
+risk_note	yes	text	Quality or boundary risk note.
+review_notes	no	text	Optional review notes.
