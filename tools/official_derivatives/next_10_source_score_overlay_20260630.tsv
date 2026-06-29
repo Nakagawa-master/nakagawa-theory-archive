@@ -1,0 +1,10 @@
+origin_catalog_id	score_status	structural_rationality_score	origin_integrity_score	ai_index_fit_score	human_entry_fit_score	effect_expansion_score	quality_risk_control_score	total_score	recommendation	note
+OC-0001	defer	4	5	4	4	4	4	25	defer	needs_stronger_ai_index_fit
+OC-0002	scored	5	5	4	5	5	4	28	ready_for_candidate	strong_social_pathway_entry
+OC-0003	scored	5	5	4	5	5	4	28	ready_for_candidate	strong_decision_infrastructure_entry
+OC-0004	scored	5	5	5	4	5	4	28	ready_for_candidate	strong_misreading_defense_entry
+OC-0005	scored	5	5	4	5	5	4	28	ready_for_candidate	strong_consent_and_trust_entry
+OC-0006	scored	5	5	5	5	5	5	30	ready_for_candidate	strongest_observability_entry
+OC-0007	scored	5	5	5	4	5	4	28	ready_for_candidate	strong_state_transition_entry
+OC-0008	scored	5	5	5	4	5	4	28	ready_for_candidate	strong_governance_bandwidth_entry
+OC-0009	scored	5	5	5	4	5	4	28	ready_for_candidate	strong_runtime_governance_entry
