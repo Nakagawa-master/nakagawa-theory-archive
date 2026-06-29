@@ -5,6 +5,9 @@ from pathlib import Path
 DISCOVERY = Path('tools/official_derivatives/next_10_public_origin_discovery_input.tsv')
 CATALOG = Path('tools/official_derivatives/next_10_origin_catalog_candidate_10_19.tsv')
 
+IDENTITY_FIELDS = ['source_category','parent_url','parent_ncl_id','parent_diff_id','folder_id','canonical_url']
+FULL_FIELDS = IDENTITY_FIELDS + ['parent_title','exclusion_reason','reason_for_inclusion','risk_note']
+
 
 def read_rows(path):
     with path.open(encoding='utf-8', newline='') as f:
@@ -28,6 +31,15 @@ def ready_discovery(row):
     )
 
 
+def overlay_reviewed_catalog(row):
+    return (
+        row.get('catalog_status') == 'reviewed'
+        and 'generated_from_verified_overlay' in row.get('review_notes','')
+        and row.get('reason_for_inclusion') == 'verified_public_origin'
+        and row.get('risk_note') == 'scoring_pending'
+    )
+
+
 def main():
     discovery_rows = read_rows(DISCOVERY)
     catalog_rows = read_rows(CATALOG)
@@ -39,7 +51,8 @@ def main():
         if not source:
             errors.append('catalog_without_ready_discovery=' + rid)
             continue
-        for field in ['source_category','parent_url','parent_title','parent_ncl_id','parent_diff_id','folder_id','canonical_url','exclusion_reason','reason_for_inclusion','risk_note']:
+        fields = IDENTITY_FIELDS if overlay_reviewed_catalog(row) else FULL_FIELDS
+        for field in fields:
             if row.get(field,'') != source.get(field,''):
                 errors.append('catalog_discovery_mismatch=' + rid + ':' + field)
         if row.get('already_in_origin_manifest') != 'false':
@@ -48,7 +61,7 @@ def main():
             errors.append('catalog_public_safe_not_pass=' + rid)
         if row.get('exclusion_status') != 'available':
             errors.append('catalog_not_available=' + rid)
-    print('check_set=next_10_discovery_to_origin_catalog_v1')
+    print('check_set=next_10_discovery_to_origin_catalog_v2')
     print('ready_discovery_rows=' + str(len(ready)))
     print('origin_catalog_rows=' + str(len(catalog_rows)))
     if errors:
