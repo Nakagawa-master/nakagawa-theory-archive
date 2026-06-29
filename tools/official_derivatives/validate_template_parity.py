@@ -21,6 +21,10 @@ def run_script(name, *args):
     return result.returncode
 
 
+def strengthen_human_summary():
+    return run_script('strengthen_candidate_human_summary_pages.py')
+
+
 def strengthen_faq():
     return run_script('strengthen_candidate_faq_pages.py')
 
@@ -79,6 +83,9 @@ def main():
     for arg in sys.argv[1:]:
         if arg.startswith('--status='):
             status=arg.split('=',1)[1]
+    if strengthen_human_summary() != 0:
+        print('template_parity_pass=false')
+        return 1
     if strengthen_faq() != 0:
         print('template_parity_pass=false')
         return 1
