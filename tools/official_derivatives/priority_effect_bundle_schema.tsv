@@ -1,0 +1,16 @@
+column	required	purpose
+folder_id	yes	origin derivative folder id
+pilot_id	yes	official derivative slot or pilot id
+parent_url	yes	origin article URL
+parent_ncl_id	yes	origin NCL-ID
+parent_diff_id	yes	origin Diff-ID
+artifact	yes	priority artifact family
+surface	yes	effect surface class
+minimum_units	yes	minimum units required per origin for this artifact
+required_fields	yes	fields that generated content must preserve
+quality_floor	yes	required quality level
+origin_return	yes	whether the artifact returns to the origin
+owner_boundary	yes	whether owner action is required for activation
+state	yes	current operational state
+content_state	yes	whether concrete content exists
+next_action	yes	next executable action
