@@ -43,6 +43,9 @@ jobs:
       - name: Validate candidate 10-19 public origin discovery
         run: python tools/official_derivatives/check_next_10_public_origin_discovery.py
 
+      - name: Validate candidate 10-19 verified origin overlay
+        run: python tools/official_derivatives/check_next_10_verified_origin_overlay.py
+
       - name: Validate priority effect bundle matrix
         run: python tools/official_derivatives/check_priority_effect_bundle_matrix.py
 
