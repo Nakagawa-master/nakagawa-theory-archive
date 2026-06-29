@@ -13,8 +13,8 @@ EXTRA_CHECKS = (
     'check_next_10_source_score_overlay.py','check_next_10_catalog_to_source_candidates.py',
     'check_next_10_source_candidate_schema.py','check_next_10_source_quality_gate.py',
     'check_next_10_source_candidate_report.py','check_next_10_selection_quality.py',
-    'check_next_10_content_blueprint.py','check_next_10_page_bundle.py',
-    'check_next_10_intake.py','check_next_10_intake_report.py',
+    'check_next_10_content_blueprint.py','check_next_10_content_value_spec.py',
+    'check_next_10_page_bundle.py','check_next_10_intake.py','check_next_10_intake_report.py',
     'check_workflow_artifact_scope.py','check_derivative_content_strength.py')
 
 def git(*args):
@@ -51,7 +51,7 @@ def main():
             errors.append('outside_allowed_scope=' + path)
         if any(part in low for part in DISALLOWED_PARTS):
             errors.append('disallowed_path_part=' + path)
-    print('check_set=official_derivative_change_scope_v18')
+    print('check_set=official_derivative_change_scope_v19')
     print('changed_files=' + str(len(files)))
     if errors:
         print('\n'.join(errors))
