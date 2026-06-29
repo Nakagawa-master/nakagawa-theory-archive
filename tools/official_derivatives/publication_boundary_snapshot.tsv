@@ -1,0 +1,3 @@
+scope	repo_state	ftp_state	public_state	sitemap_state	search_console_state	index_state	note
+candidate_05_09	staged_in_branch	not_uploaded	not_public	not_updated	not_submitted	noindex_nofollow	owner_boundary_not_crossed
+candidate_10_19	queue_only	not_uploaded	not_public	not_updated	not_submitted	not_generated	no_sources_selected
