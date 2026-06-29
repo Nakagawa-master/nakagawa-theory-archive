@@ -5,7 +5,7 @@ plan = list(csv.DictReader(Path('tools/official_derivatives/priority_artifact_pl
 impact = list(csv.DictReader(Path('tools/official_derivatives/impact_execution_map.tsv').open(encoding='utf-8'), delimiter='\t'))
 impact_artifacts = {r.get('required_artifact','') for r in impact}
 expected = ['quote_pack','sns_text_pack','rebuttal_pack','notebooklm_prompt_pack']
-print('check_set=priority_artifact_plan_v2')
+print('check_set=priority_artifact_plan_v3')
 if [r.get('artifact','') for r in plan] != expected:
     print('priority_artifact_plan_pass=false')
     raise SystemExit(1)
@@ -33,4 +33,9 @@ for key in ['quote_id','quality_floor','quality_status','release_state']:
 if any(r.get('required') != 'yes' for r in q_schema):
     print('priority_artifact_plan_pass=false')
     raise SystemExit(1)
+source_text = Path('tools/official_derivatives/quote_pack_source_matrix.tsv').read_text(encoding='utf-8')
+for key in ['origin_article','primary','human_summary','faq','ja_ai_index','en_ai_index','zh_ai_index','support','parent_url']:
+    if key not in source_text:
+        print('priority_artifact_plan_pass=false')
+        raise SystemExit(1)
 print('priority_artifact_plan_pass=true')
