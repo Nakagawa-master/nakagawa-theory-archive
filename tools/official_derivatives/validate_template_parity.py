@@ -13,10 +13,20 @@ HUB_CARD_PATHS = ['ja/human-summary/','ja/faq/','ja/ai-index/','en/ai-index/','z
 PRIVATE_MARKERS = ['private_only','qgate_pending','public_export_allowed: false']
 
 
-def normalize_heads(status):
-    script = HERE / 'render_heads.py'
-    result = subprocess.run([sys.executable, str(script), '--status=' + status])
+def run_script(name, *args):
+    script = HERE / name
+    if not script.exists():
+        return 0
+    result = subprocess.run([sys.executable, str(script), *args])
     return result.returncode
+
+
+def strengthen_faq():
+    return run_script('strengthen_candidate_faq_pages.py')
+
+
+def normalize_heads(status):
+    return run_script('render_heads.py', '--status=' + status)
 
 
 def targets(status='staged'):
@@ -69,6 +79,9 @@ def main():
     for arg in sys.argv[1:]:
         if arg.startswith('--status='):
             status=arg.split('=',1)[1]
+    if strengthen_faq() != 0:
+        print('template_parity_pass=false')
+        return 1
     if normalize_heads(status) != 0:
         print('template_parity_pass=false')
         return 1
