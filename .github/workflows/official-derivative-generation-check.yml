@@ -61,5 +61,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: official-derivatives-candidate-05-09
-          path: deploy/lolipop/master-ricette/derivatives/
+          path: |
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260511-e243be
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260416-0b1b93
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260418-11c3d8
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260607-7e87f5
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260613-007d94
           if-no-files-found: error
