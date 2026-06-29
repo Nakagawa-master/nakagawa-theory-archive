@@ -40,7 +40,7 @@ jobs:
       - name: Run listing guard
         run: python tools/official_derivatives/check_staged_listing.py
 
-      - name: Commit generated pages to PR branch
+      - name: Commit generated pages and reports to PR branch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -49,11 +49,12 @@ jobs:
             deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260416-0b1b93 \
             deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260418-11c3d8 \
             deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260607-7e87f5 \
-            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260613-007d94
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260613-007d94 \
+            tools/official_derivatives/candidate_05_09_gate_report.md
           if git diff --cached --quiet; then
-            echo "No generated page changes to commit."
+            echo "No generated page or report changes to commit."
           else
-            git commit -m "Generate candidate 05-09 derivative pages"
+            git commit -m "Generate candidate 05-09 derivative pages and gate report"
             git push origin HEAD:${{ github.head_ref || github.ref_name }}
           fi
 
@@ -67,4 +68,5 @@ jobs:
             deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260418-11c3d8
             deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260607-7e87f5
             deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260613-007d94
+            tools/official_derivatives/candidate_05_09_gate_report.md
           if-no-files-found: error
