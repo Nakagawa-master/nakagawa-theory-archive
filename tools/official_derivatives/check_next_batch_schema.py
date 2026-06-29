@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import csv
+import subprocess
 import sys
 from pathlib import Path
 
@@ -13,11 +14,17 @@ def main():
         rows = list(r)
     fields = [x.get('field','') for x in rows]
     bad = [x for x in NEEDED if x not in fields]
-    print('check_set=next_batch_schema_v1')
+    print('check_set=next_batch_schema_v2')
     if bad:
         print('\n'.join('missing=' + x for x in bad))
         print('next_batch_schema_pass=false')
         return 1
+    registry = Path('tools/official_derivatives/check_derivative_registry_schema.py')
+    if registry.exists():
+        result = subprocess.run([sys.executable, str(registry)])
+        if result.returncode != 0:
+            print('next_batch_schema_pass=false')
+            return result.returncode
     print('schema_fields=' + str(len(fields)))
     print('next_batch_schema_pass=true')
     return 0
