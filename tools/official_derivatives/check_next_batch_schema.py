@@ -6,6 +6,7 @@ from pathlib import Path
 
 P = Path('tools/official_derivatives/next_batch_intake_schema.tsv')
 NEEDED = ['batch_id','slot_id','parent_url','parent_ncl_id','parent_diff_id','folder_id','canonical_url','quality_gate_status','export_status']
+EXTRA = ['check_derivative_registry_rows.py','check_derivative_registry_identity.py']
 
 
 def main():
@@ -14,17 +15,18 @@ def main():
         rows = list(r)
     fields = [x.get('field','') for x in rows]
     bad = [x for x in NEEDED if x not in fields]
-    print('check_set=next_batch_schema_v3')
+    print('check_set=next_batch_schema_v4')
     if bad:
         print('\n'.join('missing=' + x for x in bad))
         print('next_batch_schema_pass=false')
         return 1
-    registry = Path('tools/official_derivatives/check_derivative_registry_rows.py')
-    if registry.exists():
-        result = subprocess.run([sys.executable, str(registry)])
-        if result.returncode != 0:
-            print('next_batch_schema_pass=false')
-            return result.returncode
+    for name in EXTRA:
+        script = Path('tools/official_derivatives') / name
+        if script.exists():
+            result = subprocess.run([sys.executable, str(script)])
+            if result.returncode != 0:
+                print('next_batch_schema_pass=false')
+                return result.returncode
     print('schema_fields=' + str(len(fields)))
     print('next_batch_schema_pass=true')
     return 0
