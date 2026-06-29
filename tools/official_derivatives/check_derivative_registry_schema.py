@@ -20,7 +20,7 @@ def row_count(path):
 
 
 def main():
-    print('check_set=derivative_registry_schema_v2')
+    print('check_set=derivative_registry_schema_v3')
     result = subprocess.run([sys.executable, 'tools/official_derivatives/build_derivative_registry.py'])
     if result.returncode != 0:
         print('derivative_registry_schema_pass=false')
@@ -30,11 +30,17 @@ def main():
     print('schema_fields=' + str(len(found)))
     rows = row_count(REGISTRY) if REGISTRY.exists() else 0
     print('registry_rows=' + str(rows))
-    if missing or rows != 30:
+    fresh = subprocess.run(['git','diff','--quiet','--',str(REGISTRY)])
+    if missing or rows != 30 or fresh.returncode != 0:
         for x in missing:
             print('missing=' + x)
+        if rows != 30:
+            print('registry_rows_expected=30')
+        if fresh.returncode != 0:
+            print('registry_fresh=false')
         print('derivative_registry_schema_pass=false')
         return 1
+    print('registry_fresh=true')
     print('derivative_registry_schema_pass=true')
     return 0
 
