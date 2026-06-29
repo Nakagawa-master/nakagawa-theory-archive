@@ -6,7 +6,7 @@ from pathlib import Path
 
 P = Path('tools/official_derivatives/next_batch_intake_schema.tsv')
 NEEDED = ['batch_id','slot_id','parent_url','parent_ncl_id','parent_diff_id','folder_id','canonical_url','quality_gate_status','export_status']
-EXTRA = ['check_derivative_registry_rows.py','check_derivative_registry_identity.py','check_derivative_registry_canonical.py','check_derivative_registry_page_parity.py','check_derivative_registry_boundary.py','check_effect_surface_map.py','check_effect_readiness.py','check_effect_force_keys.py','check_scale_keys.py','check_layer_keys.py','check_flow.py']
+EXTRA = ['check_derivative_registry_rows.py','check_derivative_registry_identity.py','check_derivative_registry_canonical.py','check_derivative_registry_page_parity.py','check_derivative_registry_boundary.py','check_effect_surface_map.py','check_effect_readiness.py','check_effect_force_keys.py','check_scale_keys.py','check_layer_keys.py','check_flow.py','check_stage_io.py']
 
 
 def main():
@@ -14,7 +14,7 @@ def main():
         rows = list(csv.DictReader(f, delimiter='\t'))
     fields = [x.get('field','') for x in rows]
     bad = [x for x in NEEDED if x not in fields]
-    print('check_set=next_batch_schema_v14')
+    print('check_set=next_batch_schema_v15')
     if bad:
         print('next_batch_schema_pass=false')
         return 1
