@@ -9,11 +9,11 @@ TARGETS = HERE / 'targets.tsv'
 
 PAGES = {
     'ja/human-summary/index.html': {
-        'markers': ['この記事が発見していること', '判断方法', '誤読防止', '原典を読む理由'],
-        'min_h2': 4,
+        'markers': ['なぜ普通の読者にも関係するのか', 'この記事が発見していること', '中心因果線', '判断方法', '誤読防止', '原典を読む理由'],
+        'min_h2': 6,
     },
     'ja/faq/index.html': {
-        'markers': ['Q1.', 'Q2.', 'Q3.', 'Q4.'],
+        'markers': ['Q1.', 'Q2.', 'Q3.', 'Q4.', 'Q5.', 'Q6.', 'Q7.', 'Q8.'],
         'min_h2': 8,
     },
     'ja/ai-index/index.html': {
@@ -63,7 +63,7 @@ def main():
             count = h2_count(html)
             if count < rule['min_h2']:
                 errors.append(str(path) + ': h2_count=' + str(count) + ' min=' + str(rule['min_h2']))
-    print('check_set=derivative_content_strength_v1')
+    print('check_set=derivative_content_strength_v2')
     print('checked_pages=' + str(checked))
     if errors:
         print('\n'.join(errors))
