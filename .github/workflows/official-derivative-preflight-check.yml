@@ -1,0 +1,23 @@
+name: Official derivative preflight check
+
+on:
+  pull_request:
+    paths:
+      - 'tools/official_derivatives/**'
+      - 'deploy/lolipop/master-ricette/derivatives/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  preflight-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+
+      - name: Run public export preflight
+        run: python tools/official_derivatives/check_public_export_preflight.py
