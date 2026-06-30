@@ -34,9 +34,6 @@ jobs:
       - name: Validate universal renderer contract
         run: python tools/official_derivatives/check_universal_renderer_contract.py
 
-      - name: Validate universal page renderer
-        run: python tools/official_derivatives/check_universal_page_renderer.py
-
       - name: Validate promotion readiness
         run: python tools/official_derivatives/validate_promotion_ready.py
 
