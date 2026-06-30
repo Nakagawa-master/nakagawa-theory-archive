@@ -22,6 +22,9 @@ jobs:
       - name: Generate candidate 05-09 pages
         run: python tools/official_derivatives/generate_candidate_05_09_universal.py
 
+      - name: Generate candidate 10-17 pages
+        run: python tools/official_derivatives/generate_candidate_10_17_universal.py
+
       - name: Validate candidate generator core parity
         run: python tools/official_derivatives/check_candidate_generator_core_parity.py
 
@@ -71,11 +74,19 @@ jobs:
             deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260418-11c3d8 \
             deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260607-7e87f5 \
             deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260613-007d94 \
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260512-1202e0 \
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260513-4e76d3 \
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260517-fe6641 \
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260518-f38a1e \
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260211-051ce0 \
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260214-40c1de \
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260215-198686 \
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260227-4ecc69 \
             tools/official_derivatives/candidate_05_09_gate_report.md
           if git diff --cached --quiet; then
             echo "No generated page or report changes to commit."
           else
-            git commit -m "Generate candidate 05-09 derivative pages and gate report"
+            git commit -m "Generate staged derivative pages through universal renderer"
             git push origin HEAD:${{ github.head_ref || github.ref_name }}
           fi
 
@@ -89,5 +100,13 @@ jobs:
             deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260418-11c3d8
             deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260607-7e87f5
             deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260613-007d94
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260512-1202e0
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260513-4e76d3
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260517-fe6641
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260518-f38a1e
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260211-051ce0
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260214-40c1de
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260215-198686
+            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260227-4ecc69
             tools/official_derivatives/candidate_05_09_gate_report.md
           if-no-files-found: error
