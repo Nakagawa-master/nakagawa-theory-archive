@@ -1,9 +1,9 @@
 batch_id	slot_id	folder_id	page_roles	input_state	origin_identity_ready	content_values_ready	public_export	page_generation
-candidate-10-19	Official Derivative 010	ncl-alpha-20260512-1202e0	hub|human_summary|faq|ja_ai_index|en_ai_index|zh_ai_index	pending	true	false	false	false
-candidate-10-19	Official Derivative 011	ncl-alpha-20260513-4e76d3	hub|human_summary|faq|ja_ai_index|en_ai_index|zh_ai_index	pending	true	false	false	false
-candidate-10-19	Official Derivative 012	ncl-alpha-20260517-fe6641	hub|human_summary|faq|ja_ai_index|en_ai_index|zh_ai_index	pending	true	false	false	false
-candidate-10-19	Official Derivative 013	ncl-alpha-20260518-f38a1e	hub|human_summary|faq|ja_ai_index|en_ai_index|zh_ai_index	pending	true	false	false	false
-candidate-10-19	Official Derivative 014	ncl-alpha-20260211-051ce0	hub|human_summary|faq|ja_ai_index|en_ai_index|zh_ai_index	pending	true	false	false	false
-candidate-10-19	Official Derivative 015	ncl-alpha-20260214-40c1de	hub|human_summary|faq|ja_ai_index|en_ai_index|zh_ai_index	pending	true	false	false	false
-candidate-10-19	Official Derivative 016	ncl-alpha-20260215-198686	hub|human_summary|faq|ja_ai_index|en_ai_index|zh_ai_index	pending	true	false	false	false
-candidate-10-19	Official Derivative 017	ncl-alpha-20260227-4ecc69	hub|human_summary|faq|ja_ai_index|en_ai_index|zh_ai_index	pending	true	false	false	false
+candidate-10-19	Official Derivative 010	ncl-alpha-20260512-1202e0	hub|human_summary|faq|ja_ai_index|en_ai_index|zh_ai_index	pending	true	true	false	false
+candidate-10-19	Official Derivative 011	ncl-alpha-20260513-4e76d3	hub|human_summary|faq|ja_ai_index|en_ai_index|zh_ai_index	pending	true	true	false	false
+candidate-10-19	Official Derivative 012	ncl-alpha-20260517-fe6641	hub|human_summary|faq|ja_ai_index|en_ai_index|zh_ai_index	pending	true	true	false	false
+candidate-10-19	Official Derivative 013	ncl-alpha-20260518-f38a1e	hub|human_summary|faq|ja_ai_index|en_ai_index|zh_ai_index	pending	true	true	false	false
+candidate-10-19	Official Derivative 014	ncl-alpha-20260211-051ce0	hub|human_summary|faq|ja_ai_index|en_ai_index|zh_ai_index	pending	true	true	false	false
+candidate-10-19	Official Derivative 015	ncl-alpha-20260214-40c1de	hub|human_summary|faq|ja_ai_index|en_ai_index|zh_ai_index	pending	true	true	false	false
+candidate-10-19	Official Derivative 016	ncl-alpha-20260215-198686	hub|human_summary|faq|ja_ai_index|en_ai_index|zh_ai_index	pending	true	true	false	false
+candidate-10-19	Official Derivative 017	ncl-alpha-20260227-4ecc69	hub|human_summary|faq|ja_ai_index|en_ai_index|zh_ai_index	pending	true	true	false	false
