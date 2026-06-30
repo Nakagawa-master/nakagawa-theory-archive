@@ -9,7 +9,7 @@ public_export: false
 
 Keep Official Derivative 010-017 ready for later body drafting without creating page body text, generated HTML, public export, sitemap changes, or index/follow conversion.
 
-The pre-body gate must confirm that body drafting can later preserve origin identity, value core, causal line, misreading guard, origin return, page links, FAQ question sets, AI index definitions, body skeleton requirements, and body quality requirements.
+The pre-body gate must confirm that body drafting can later preserve origin identity, value core, causal line, misreading guard, origin return, page links, FAQ question sets, AI index definitions, body skeleton requirements, body quality requirements, and per-slot value anchors.
 
 ## Inputs
 
@@ -26,6 +26,7 @@ The pre-body gate must confirm that body drafting can later preserve origin iden
 - tools/official_derivatives/next_10_draft_material_gate_candidate_10_19.tsv
 - tools/official_derivatives/next_10_body_skeleton_gate_candidate_10_19.tsv
 - tools/official_derivatives/next_10_body_generation_quality_gate_candidate_10_19.tsv
+- tools/official_derivatives/next_10_body_value_anchor_candidate_10_19.tsv
 
 ## Checkers and workflow bindings
 
@@ -43,6 +44,7 @@ The pre-body gate must confirm that body drafting can later preserve origin iden
 - draft material gate: draft_material_ready
 - skeleton gate: spec_only
 - quality gate: spec_only
+- value anchor gate: anchor_ready
 - body text generation: false
 - HTML generation: false
 - public export: false
@@ -61,6 +63,12 @@ The pre-body gate must confirm that body drafting can later preserve origin iden
 Each role must preserve structural rationality, consistency, specificity, validity, credibility, uniqueness, strength, human readability, AI reusability, misreading resistance, and origin fidelity.
 
 The quality table must also preserve parent URL, parent NCL-ID, parent Diff-ID, and canonical URL while body_text_generation, html_generation, and public_export remain false.
+
+## Per-slot value anchor requirements
+
+Each active slot must preserve a concrete value anchor, causal anchor, misreading guard anchor, human entry anchor, AI reference anchor, and origin return anchor before later body drafting.
+
+This prevents later drafts from becoming generic summaries, service introductions, political commentary, sales tips, crisis rhetoric, or originless AI summaries.
 
 ## Boundary
 
