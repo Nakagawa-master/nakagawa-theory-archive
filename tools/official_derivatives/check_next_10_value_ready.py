@@ -5,15 +5,24 @@ from pathlib import Path
 LEDGER = Path('tools/official_derivatives/next_10_value_ready_candidate_10_19.tsv')
 QUEUE = Path('tools/official_derivatives/next_10_queue_candidate_10_19.tsv')
 CANDIDATES = Path('tools/official_derivatives/next_10_source_candidates_candidate_10_19.tsv')
+MATERIAL_GATE = Path('tools/official_derivatives/next_10_draft_material_gate_candidate_10_19.tsv')
 HEADER = [
     'batch_id','slot_id','source_candidate_id','folder_id',
     'origin_identity','value_core','causal_line','misreading_guard',
     'origin_return','page_links','question_set','index_definition',
     'body_generation','public_export','page_generation','readiness_state',
 ]
+MATERIAL_HEADER = [
+    'batch_id','slot_id','source_candidate_id','folder_id',
+    'human_summary_material','faq_material','ai_index_material','origin_material','misreading_material',
+    'body_text_generation','html_generation','public_export','gate_state',
+]
 VALUE_FIELDS = [
     'origin_identity','value_core','causal_line','misreading_guard',
     'origin_return','page_links','question_set','index_definition',
+]
+MATERIAL_FIELDS = [
+    'human_summary_material','faq_material','ai_index_material','origin_material','misreading_material',
 ]
 QUEUE_MATERIAL_FIELDS = [
     'reason_for_inclusion','risk_note','parent_url','parent_title',
@@ -39,27 +48,38 @@ def main():
     header, rows = read(LEDGER)
     _, queue_rows = read(QUEUE)
     _, candidate_rows = read(CANDIDATES)
+    material_header, material_rows = read(MATERIAL_GATE)
     errors = []
     ready_queue = {row['slot_id']: row for row in queue_rows if row.get('handoff_status') == 'intake_ready'}
     ready_candidates = {row['source_candidate_id']: row for row in candidate_rows if row.get('recommendation') == 'ready_for_queue'}
+    material_by_slot = {row['slot_id']: row for row in material_rows if row.get('gate_state') == 'draft_material_ready'}
     if header != HEADER:
         errors.append('bad_value_ready_header')
+    if material_header != MATERIAL_HEADER:
+        errors.append('bad_material_gate_header')
     if len(rows) != 8:
         errors.append(f'value_ready_rows={len(rows)} expected=8')
+    if len(material_rows) != 8:
+        errors.append(f'material_gate_rows={len(material_rows)} expected=8')
     slots = [row.get('slot_id','') for row in rows]
     if slots != EXPECTED_SLOTS:
         errors.append('slot_sequence_mismatch')
+    if [row.get('slot_id','') for row in material_rows] != EXPECTED_SLOTS:
+        errors.append('material_slot_sequence_mismatch')
     for row in rows:
         slot = row.get('slot_id','')
         candidate_id = row.get('source_candidate_id','')
         queue_row = ready_queue.get(slot)
         candidate_row = ready_candidates.get(candidate_id)
+        material_row = material_by_slot.get(slot)
         if row.get('batch_id') != 'candidate-10-19':
             errors.append('bad_batch=' + slot)
         if queue_row is None:
             errors.append('slot_not_intake_ready=' + slot)
         if candidate_row is None:
             errors.append('candidate_not_ready=' + candidate_id)
+        if material_row is None:
+            errors.append('material_gate_missing=' + slot)
         if queue_row and row.get('folder_id') != queue_row.get('folder_id'):
             errors.append('folder_mismatch=' + slot)
         if queue_row and not present(queue_row, QUEUE_MATERIAL_FIELDS):
@@ -70,6 +90,15 @@ def main():
             for field in ['parent_url','parent_title','parent_ncl_id','parent_diff_id','folder_id','canonical_url']:
                 if queue_row.get(field) != candidate_row.get(field):
                     errors.append('source_queue_mismatch=' + slot + ':' + field)
+        if material_row:
+            if material_row.get('source_candidate_id') != candidate_id or material_row.get('folder_id') != row.get('folder_id'):
+                errors.append('material_value_mismatch=' + slot)
+            for field in MATERIAL_FIELDS:
+                if material_row.get(field) != 'ready':
+                    errors.append('material_not_ready=' + slot + ':' + field)
+            for field in ['body_text_generation','html_generation','public_export']:
+                if material_row.get(field) != 'false':
+                    errors.append('material_boundary_not_false=' + slot + ':' + field)
         for field in VALUE_FIELDS:
             if row.get(field) != 'derived':
                 errors.append('field_not_derived=' + slot + ':' + field)
@@ -78,10 +107,11 @@ def main():
                 errors.append('boundary_not_false=' + slot + ':' + field)
         if row.get('readiness_state') != 'value_ready':
             errors.append('bad_readiness_state=' + slot)
-    print('check_set=next_10_value_ready_v2')
+    print('check_set=next_10_value_ready_v3')
     print('value_ready_rows=' + str(len(rows)))
+    print('material_gate_rows=' + str(len(material_rows)))
     if errors:
-        print('\n'.join(errors[:80]))
+        print('\n'.join(errors[:100]))
         print('next_10_value_ready_pass=false')
         return 1
     print('next_10_value_ready_pass=true')
