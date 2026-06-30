@@ -1,0 +1,9 @@
+batch_id	slot_id	source_candidate_id	folder_id	origin_identity	value_core	causal_line	misreading_guard	origin_return	page_links	question_set	index_definition	body_generation	public_export	page_generation	readiness_state
+candidate-10-19	Official Derivative 010	SC-0001	ncl-alpha-20260512-1202e0	derived	derived	derived	derived	derived	derived	derived	derived	false	false	false	value_ready
+candidate-10-19	Official Derivative 011	SC-0002	ncl-alpha-20260513-4e76d3	derived	derived	derived	derived	derived	derived	derived	derived	false	false	false	value_ready
+candidate-10-19	Official Derivative 012	SC-0003	ncl-alpha-20260517-fe6641	derived	derived	derived	derived	derived	derived	derived	derived	false	false	false	value_ready
+candidate-10-19	Official Derivative 013	SC-0004	ncl-alpha-20260518-f38a1e	derived	derived	derived	derived	derived	derived	derived	derived	false	false	false	value_ready
+candidate-10-19	Official Derivative 014	SC-0005	ncl-alpha-20260211-051ce0	derived	derived	derived	derived	derived	derived	derived	derived	false	false	false	value_ready
+candidate-10-19	Official Derivative 015	SC-0006	ncl-alpha-20260214-40c1de	derived	derived	derived	derived	derived	derived	derived	derived	false	false	false	value_ready
+candidate-10-19	Official Derivative 016	SC-0007	ncl-alpha-20260215-198686	derived	derived	derived	derived	derived	derived	derived	derived	false	false	false	value_ready
+candidate-10-19	Official Derivative 017	SC-0008	ncl-alpha-20260227-4ecc69	derived	derived	derived	derived	derived	derived	derived	derived	false	false	false	value_ready
