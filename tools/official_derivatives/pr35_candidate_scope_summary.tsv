@@ -1,0 +1,4 @@
+scope_option	source_pr	folder_count	page_count	materialized_effect_units	candidate_05_09_folders	candidate_10_17_folders	pre_boundary_change	decision_state	scope_note
+all_13	35	13	78	429	5	8	false	decision_pending	full_staged_scope
+candidate_05_09_only	35	5	30	165	5	0	false	decision_pending	initial_batch_only
+candidate_10_17_only	35	8	48	264	0	8	false	blocked_until_boundary	followup_batch_only
