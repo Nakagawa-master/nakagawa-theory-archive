@@ -1,0 +1,7 @@
+guard_id	rank_option	source_pr	guard_area	expected_state	if_not_met	fallback_option	change_now
+pr35-r1-001	all_13	35	origin_traceability	intact	block_rank1	candidate_05_09_only	false
+pr35-r1-002	all_13	35	quality_checks	green	block_rank1	candidate_05_09_only	false
+pr35-r1-003	all_13	35	ai_index_integrity	intact	block_rank1	candidate_05_09_only	false
+pr35-r1-004	all_13	35	human_entry_surface	present	fallback_if_smaller_first_set_needed	candidate_05_09_only	false
+pr35-r1-005	all_13	35	batch_validation	green	block_rank1	candidate_05_09_only	false
+pr35-r1-006	all_13	35	manual_review_need	false	block_rank1	candidate_05_09_only	false
