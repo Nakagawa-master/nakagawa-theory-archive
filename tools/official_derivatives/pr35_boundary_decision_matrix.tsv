@@ -1,0 +1,7 @@
+decision_id	source_pr	decision_area	state	pre_boundary_change	pre_boundary_work	basis_file	next_output
+pr35-boundary-001	35	candidate_folder_scope	decision_pending	false	safe_to_prepare	candidate_activation_list_pr35.tsv	scope_summary
+pr35-boundary-002	35	staged_page_visibility_state	blocked_until_boundary	false	safe_to_prepare	activation_diff_plan_pr35.tsv	visibility_review
+pr35-boundary-003	35	public_listing_scope	blocked_until_boundary	false	safe_to_prepare	activation_diff_plan_pr35.tsv	listing_review
+pr35-boundary-004	35	external_service_timing	blocked_until_boundary	false	safe_to_prepare	activation_diff_plan_pr35.tsv	timing_review
+pr35-boundary-005	35	transfer_method	blocked_until_boundary	false	safe_to_prepare	activation_diff_plan_pr35.tsv	method_review
+pr35-boundary-006	35	public_flag_timing	blocked_until_boundary	false	safe_to_prepare	activation_diff_plan_pr35.tsv	flag_review
