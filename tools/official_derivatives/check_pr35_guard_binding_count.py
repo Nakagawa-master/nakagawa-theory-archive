@@ -12,6 +12,8 @@ EXPECTED_KEYS = {
     'scope_summary_check',
     'guard_table_check',
 }
+ALLOWED_SUFFIXES = {'.py', '.tsv'}
+ROOT = 'tools/official_derivatives/'
 
 
 def read_rows(path: Path) -> list[dict[str, str]]:
@@ -36,11 +38,19 @@ def main() -> int:
         errors.append('binding_evidence_key_mismatch')
     for row in rows:
         key = row['evidence_key']
+        check_path = row['check_path']
+        path = Path(check_path)
         if row['binding_state'] != 'bound':
             errors.append(f'bad_binding_state:{key}')
         if row['change_now'] != 'false':
             errors.append(f'bad_change_now:{key}')
-    print('check_set=pr35_guard_binding_count_v2')
+        if not check_path.startswith(ROOT):
+            errors.append(f'bad_path_root:{key}')
+        if path.suffix not in ALLOWED_SUFFIXES:
+            errors.append(f'bad_path_suffix:{key}')
+        if not path.is_file():
+            errors.append(f'missing_path:{key}')
+    print('check_set=pr35_guard_binding_count_v3')
     print(f'rows={len(rows)}')
     print(f'evidence_rows={len(evidence_rows)}')
     if errors:
