@@ -73,14 +73,16 @@ This PR is a staged infrastructure step toward:
 - moving from manual page work toward near-full automation,
 - preparing higher-strength effect bundles without public release,
 - converting candidate 10-17 from planned effect units to validated materialized unit ledgers,
-- adding a separate public-export preflight gate before any later owner/publication boundary action,
-- checking entry-signal markers across the 78 staged pages before any later owner/publication boundary action,
-- documenting the release-candidate boundary so public activation work remains separate and explicit.
+- adding a separate public-export preflight gate before any later boundary action,
+- checking entry-signal markers across the 78 staged pages before any later boundary action,
+- documenting the candidate boundary so later activation work remains separate and explicit,
+- adding a draft operation manifest so later activation work can be scoped before external action.
 
 ## Latest validation note
 
-- Official derivative generation check run #373 completed with success.
-- Official derivative preflight check run #11 completed with success.
-- Public export preflight verifies staged targets, staged pages, registry rows, 429 materialized units, origin identity, and non-production boundaries before any later owner/publication boundary action.
+- Official derivative generation check run #377 completed with success.
+- Official derivative preflight check run #15 completed with success.
+- Public export preflight verifies staged targets, staged pages, registry rows, 429 materialized units, origin identity, and non-production boundaries.
 - Entry signal check runs in the preflight workflow and verifies the 78 staged pages for required role-level entry markers.
-- Candidate boundary doc check runs in the preflight workflow and verifies the release-candidate boundary document before any later owner/publication boundary action.
+- Candidate boundary doc check runs in the preflight workflow.
+- Release operation manifest check runs in the preflight workflow.
