@@ -82,6 +82,15 @@ jobs:
       - name: Validate candidate 10-19 body skeleton gate
         run: python tools/official_derivatives/check_next_10_body_skeleton_gate.py
 
+      - name: Validate candidate 10-19 body quality table
+        run: |
+          table=tools/official_derivatives/next_10_body_generation_quality_gate_candidate_10_19.tsv
+          test "$(wc -l < "$table")" -eq 7
+          grep -q 'structural_rationality' "$table"
+          grep -q 'origin_fidelity' "$table"
+          grep -q 'parent_ncl_id' "$table"
+          awk -F '\t' 'NR>1 && ($8 != "false" || $9 != "false" || $10 != "false") { exit 1 }' "$table"
+
       - name: Validate priority effect bundle matrix
         run: python tools/official_derivatives/check_priority_effect_bundle_matrix.py
 
