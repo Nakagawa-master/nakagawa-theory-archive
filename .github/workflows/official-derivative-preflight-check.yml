@@ -30,3 +30,6 @@ jobs:
 
       - name: Run release operation manifest check
         run: python tools/official_derivatives/check_release_operation_manifest.py
+
+      - name: Run candidate activation list check
+        run: python tools/official_derivatives/check_candidate_activation_list.py
