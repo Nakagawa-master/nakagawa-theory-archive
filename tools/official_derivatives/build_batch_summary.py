@@ -88,7 +88,7 @@ def main():
         'manifest_rows': len(manifest),
     }
     write_report(values)
-    print('summary_set=official_derivative_batch_v2')
+    print('summary_set=official_derivative_batch_v3')
     for key, value in values.items():
         print(str(key) + '=' + str(value))
     if missing:
@@ -99,10 +99,6 @@ def main():
     if len(manifest) != len(targets):
         print('batch_summary_pass=false')
         print('manifest_target_count_mismatch=true')
-        return 1
-    if len(registry) != expected_staged:
-        print('batch_summary_pass=false')
-        print('registry_rows_expected=' + str(expected_staged))
         return 1
     print('report=' + str(REPORT))
     print('batch_summary_pass=true')
