@@ -54,3 +54,6 @@ jobs:
 
       - name: Run PR35 guard evidence keys check
         run: python tools/official_derivatives/check_pr35_guard_evidence_keys.py
+
+      - name: Run PR35 guard binding count check
+        run: python tools/official_derivatives/check_pr35_guard_binding_count.py
