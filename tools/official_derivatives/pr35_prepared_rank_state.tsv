@@ -1,0 +1,4 @@
+rank	option_key	source_pr	folder_count	page_count	materialized_effect_units	state	change_now
+1	all_13	35	13	78	429	prepared	false
+2	candidate_05_09_only	35	5	30	165	fallback	false
+3	candidate_10_17_only	35	8	48	264	later	false
