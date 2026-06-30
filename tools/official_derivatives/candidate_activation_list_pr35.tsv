@@ -1,0 +1,14 @@
+candidate_set	source_pr	folder_id	page_count	materialized_effect_units	operation_state	owner_boundary_required	candidate_status
+pr35	35	ncl-alpha-20260211-051ce0	6	33	draft_only	true	pending_boundary
+pr35	35	ncl-alpha-20260214-40c1de	6	33	draft_only	true	pending_boundary
+pr35	35	ncl-alpha-20260215-198686	6	33	draft_only	true	pending_boundary
+pr35	35	ncl-alpha-20260227-4ecc69	6	33	draft_only	true	pending_boundary
+pr35	35	ncl-alpha-20260416-0b1b93	6	33	draft_only	true	pending_boundary
+pr35	35	ncl-alpha-20260418-11c3d8	6	33	draft_only	true	pending_boundary
+pr35	35	ncl-alpha-20260511-e243be	6	33	draft_only	true	pending_boundary
+pr35	35	ncl-alpha-20260512-1202e0	6	33	draft_only	true	pending_boundary
+pr35	35	ncl-alpha-20260513-4e76d3	6	33	draft_only	true	pending_boundary
+pr35	35	ncl-alpha-20260517-fe6641	6	33	draft_only	true	pending_boundary
+pr35	35	ncl-alpha-20260518-f38a1e	6	33	draft_only	true	pending_boundary
+pr35	35	ncl-alpha-20260607-7e87f5	6	33	draft_only	true	pending_boundary
+pr35	35	ncl-alpha-20260613-007d94	6	33	draft_only	true	pending_boundary
