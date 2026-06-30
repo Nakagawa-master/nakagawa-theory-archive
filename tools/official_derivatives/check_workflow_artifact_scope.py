@@ -8,7 +8,7 @@ ROOT = HERE.parents[1]
 TARGETS = HERE / 'targets.tsv'
 WORKFLOW = ROOT / '.github/workflows/official-derivative-generation-check.yml'
 PREFIX = 'deploy/lolipop/master-ricette/derivatives/'
-ARTIFACT_NAME = 'official-derivatives-candidate-05-09'
+ARTIFACT_NAME = 'official-derivatives-candidate-05-17'
 
 
 def staged_folders():
@@ -49,7 +49,8 @@ def main():
         errors.append('found=' + ','.join(sorted(found)))
     if len(paths) != len(expected):
         errors.append('artifact_path_count_mismatch')
-    print('check_set=workflow_artifact_scope_v1')
+    print('check_set=workflow_artifact_scope_v2')
+    print('artifact_name=' + ARTIFACT_NAME)
     print('staged_targets=' + str(len(expected)))
     print('artifact_paths=' + str(len(paths)))
     if errors:
