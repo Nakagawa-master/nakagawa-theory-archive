@@ -45,3 +45,6 @@ jobs:
 
       - name: Run PR35 scope summary check
         run: python tools/official_derivatives/check_pr35_candidate_scope_summary.py
+
+      - name: Run PR35 rank state check
+        run: python tools/official_derivatives/check_pr35_prepared_rank_state.py
