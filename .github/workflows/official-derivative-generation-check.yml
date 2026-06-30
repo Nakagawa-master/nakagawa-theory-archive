@@ -73,6 +73,12 @@ jobs:
       - name: Validate candidate 05-09 effect bundles
         run: python tools/official_derivatives/check_candidate_05_09_effect_bundles.py
 
+      - name: Build candidate 10-17 materialized unit ledgers
+        run: python tools/official_derivatives/build_candidate_10_17_effect_unit_ledgers.py
+
+      - name: Validate candidate 10-17 materialized unit ledgers
+        run: python tools/official_derivatives/check_candidate_10_17_materialized_unit_ledgers.py
+
       - name: Commit generated pages and reports to PR branch
         run: |
           git config user.name "github-actions[bot]"
@@ -94,11 +100,17 @@ jobs:
             tools/official_derivatives/derivative_registry_candidate_05_09.tsv \
             tools/official_derivatives/staged_official_derivative_registry.tsv \
             tools/official_derivatives/candidate_05_09_gate_report.md \
-            tools/official_derivatives/staged_official_derivative_gate_report.md
+            tools/official_derivatives/staged_official_derivative_gate_report.md \
+            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_unit_ledger.tsv \
+            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_quote_units.tsv \
+            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_social_units.tsv \
+            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_clarification_units.tsv \
+            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_notebooklm_units.tsv \
+            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_unit_summary.tsv
           if git diff --cached --quiet; then
-            echo "No generated page or report changes to commit."
+            echo "No generated page, report, or effect ledger changes to commit."
           else
-            git commit -m "Generate staged derivative pages through universal renderer"
+            git commit -m "Generate staged derivative pages and effect ledgers"
             git push origin HEAD:${{ github.head_ref || github.ref_name }}
           fi
 
@@ -124,4 +136,10 @@ jobs:
             tools/official_derivatives/staged_official_derivative_registry.tsv
             tools/official_derivatives/candidate_05_09_gate_report.md
             tools/official_derivatives/staged_official_derivative_gate_report.md
+            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_unit_ledger.tsv
+            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_quote_units.tsv
+            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_social_units.tsv
+            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_clarification_units.tsv
+            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_notebooklm_units.tsv
+            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_unit_summary.tsv
           if-no-files-found: error
