@@ -21,3 +21,6 @@ jobs:
 
       - name: Run public export preflight
         run: python tools/official_derivatives/check_public_export_preflight.py
+
+      - name: Run entry signal check
+        run: python tools/official_derivatives/check_entry_signal.py
