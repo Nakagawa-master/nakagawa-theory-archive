@@ -2,24 +2,26 @@
 from universal_page_renderer import assert_renderer_contract, pages_for
 
 record = {
-    'folder_id': 'ncl-alpha-test',
-    'slot_id': 'Official Derivative TEST',
-    'parent_url': 'https://master.ricette.jp/test/',
-    'parent_title': 'Test Origin',
-    'parent_ncl_id': 'NCL-TEST',
-    'parent_diff_id': 'DIFF-TEST',
-    'canonical_url': 'https://master.ricette.jp/derivatives/ncl-alpha-test/',
-    'value_core': 'core',
-    'causal_line': 'causal',
-    'misreading_guard': 'guard',
-    'origin_return': 'https://master.ricette.jp/test/',
-    'public_export': 'false',
-    'page_generation': 'false',
+    'folder': 'ncl-alpha-test',
+    'pilot': 'Official Derivative TEST',
+    'url': 'https://master.ricette.jp/test/',
+    'title': 'Test Origin',
+    'ncl': 'NCL-TEST',
+    'diff': 'DIFF-TEST',
+    'short': 'Test Origin',
+    'desc': 'Test description',
+    'core': 'Test core',
+    'summary': ['Test lead', 'Test finding', 'Test judgment'],
+    'faq': ['Test boundary', 'Test misreading', 'Test AI note'],
+    'en': 'Test English index',
+    'zh': 'Test Chinese index',
 }
 
 assert_renderer_contract(record)
 pages = pages_for(record)
 if len(pages) != 6:
+    print('page_count=' + str(len(pages)))
+    print('universal_page_renderer_pass=false')
     raise SystemExit(1)
 html = pages['index.html']
 checks = ['Parent NCL-ID', 'Parent Diff-ID', '/derivatives/ncl-alpha-test/', 'Test Origin']
@@ -28,5 +30,6 @@ if missing:
     print('missing=' + ','.join(missing))
     print('universal_page_renderer_pass=false')
     raise SystemExit(1)
-print('check_set=universal_page_renderer_v2')
+print('check_set=universal_page_renderer_v3')
+print('page_count=' + str(len(pages)))
 print('universal_page_renderer_pass=true')
