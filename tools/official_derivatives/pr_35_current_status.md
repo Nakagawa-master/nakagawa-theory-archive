@@ -33,6 +33,19 @@ This file supersedes the older PR body summary for current staged-batch facts.
 - materialized unit ledger builder active
 - materialized unit ledger validator active
 
+## Candidate 10-19
+
+- selected prepared slots: Official Derivative 010-017
+- selected slot count: 8
+- page roles per selected slot: 6
+- virtual preparation units: 48
+- preparation state: value, material, skeleton, policy ready
+- generated output state: none
+- body_text_generation: false
+- html_generation: false
+- public_export: false
+- Official Derivative 018-019 remain queue_only until later selection
+
 ## Staged effect total
 
 - total origins with staged pages: 13
@@ -87,7 +100,8 @@ This PR is a staged infrastructure step toward:
 - adding a separate public-export preflight gate before any later boundary action,
 - checking entry-signal markers across the 78 staged pages before any later boundary action,
 - documenting the candidate boundary so later activation work remains separate and explicit,
-- connecting PR35 rank, guard, evidence, binding, file index, and script sequence tables to CI checks.
+- connecting PR35 rank, guard, evidence, binding, file index, and script sequence tables to CI checks,
+- keeping candidate 10-19 as virtual preparation units until a later text-only phase is explicitly opened.
 
 ## Latest validation note
 
