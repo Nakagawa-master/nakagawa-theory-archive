@@ -5,6 +5,8 @@ from pathlib import Path
 QUEUE = Path('tools/official_derivatives/next_10_queue_candidate_10_19.tsv')
 BLUEPRINT = Path('tools/official_derivatives/next_10_content_blueprint_candidate_10_19.tsv')
 FIELD_SPEC = Path('tools/official_derivatives/next_10_content_field_spec_candidate_10_19.tsv')
+TEMPLATE_VERSION = 'v1-six-page-shared-body-and-head'
+PAGE_SET = 'six_pages_per_origin'
 ROLES = {
     'hub': 'index.html',
     'human_summary': 'ja/human-summary/index.html',
@@ -48,6 +50,12 @@ def main():
         errors.append('bad_content_field_spec_header')
     if sorted(spec) != sorted(ROLES):
         errors.append('content_field_spec_roles_mismatch')
+    if len(ROLES) != 6:
+        errors.append('template_page_count_not_six')
+    if TEMPLATE_VERSION != 'v1-six-page-shared-body-and-head':
+        errors.append('template_version_changed')
+    if PAGE_SET != 'six_pages_per_origin':
+        errors.append('page_set_changed')
     for role, needed in MIN_FIELDS.items():
         row = spec.get(role)
         if not row:
@@ -91,7 +99,9 @@ def main():
             errors.append('missing_or_extra_roles=' + slot)
     if len(rows) != len(candidate_slots) * len(ROLES):
         errors.append('blueprint_rows=' + str(len(rows)) + ':expected=' + str(len(candidate_slots) * len(ROLES)))
-    print('check_set=next_10_content_blueprint_v2')
+    print('check_set=next_10_content_blueprint_v3')
+    print('template_version=' + TEMPLATE_VERSION)
+    print('page_set=' + PAGE_SET)
     print('candidate_slots=' + str(len(candidate_slots)))
     print('content_blueprint_rows=' + str(len(rows)))
     print('content_field_spec_roles=' + str(len(spec_rows)))
