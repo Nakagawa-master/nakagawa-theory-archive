@@ -59,13 +59,21 @@ def main() -> int:
         errors.append('duplicate_index_key')
     for row in index_rows:
         key = row['item_key']
+        file_path = row['file_path']
+        path = Path(file_path)
         if row['source_pr'] != '35':
             errors.append(f'bad_index_source_pr:{key}')
         if row['state'] != 'present':
             errors.append(f'bad_index_state:{key}')
         if row['change_now'] != 'false':
             errors.append(f'bad_index_change_now:{key}')
-    print('check_set=pr35_guard_binding_count_v4')
+        if not file_path.startswith(ROOT):
+            errors.append(f'bad_index_path_root:{key}')
+        if path.suffix not in ALLOWED_SUFFIXES:
+            errors.append(f'bad_index_path_suffix:{key}')
+        if not path.is_file():
+            errors.append(f'missing_index_path:{key}')
+    print('check_set=pr35_guard_binding_count_v5')
     print(f'rows={len(rows)}')
     print(f'evidence_rows={len(evidence_rows)}')
     print(f'index_rows={len(index_rows)}')
