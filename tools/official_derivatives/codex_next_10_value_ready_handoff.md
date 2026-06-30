@@ -21,6 +21,10 @@ The ledger must not contain page body text. It should only confirm that the valu
 
 - tools/official_derivatives/next_10_value_ready_candidate_10_19.tsv
 
+## Checker
+
+- tools/official_derivatives/check_next_10_value_ready.py
+
 ## Required state
 
 - rows: 8
@@ -28,6 +32,7 @@ The ledger must not contain page body text. It should only confirm that the valu
 - body generation: false
 - public export: false
 - page generation: false
+- generation workflow: includes value readiness check
 
 ## Boundary
 
