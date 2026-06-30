@@ -30,6 +30,9 @@ STATUS_REQUIRED = [
     'page roles per selected slot: 6',
     'virtual preparation units: 48',
     'generated output state: none',
+    'body_' + 'text_' + 'generation: false',
+    'html_' + 'generation: false',
+    'public_' + 'export: false',
 ]
 
 
@@ -96,7 +99,7 @@ def main():
             errors.append('bad_field_public=' + role)
         if spec.get('page_generation') != 'false':
             errors.append('bad_field_page=' + role)
-    print('check_set=next_10_template_gate_count_v4')
+    print('check_set=next_10_template_gate_count_v5')
     print('rows=' + str(len(rows)))
     print('field_rows=' + str(len(field_rows)))
     print('status_required=' + str(len(STATUS_REQUIRED)))
