@@ -15,6 +15,13 @@ VALUE_FIELDS = [
     'origin_identity','value_core','causal_line','misreading_guard',
     'origin_return','page_links','question_set','index_definition',
 ]
+QUEUE_MATERIAL_FIELDS = [
+    'reason_for_inclusion','risk_note','parent_url','parent_title',
+    'parent_ncl_id','parent_diff_id','canonical_url',
+]
+CANDIDATE_MATERIAL_FIELDS = [
+    'parent_title','reason_for_inclusion','risk_note','total_score',
+]
 EXPECTED_SLOTS = [f'Official Derivative {i:03d}' for i in range(10, 18)]
 
 
@@ -22,6 +29,10 @@ def read(path):
     with path.open(encoding='utf-8', newline='') as f:
         reader = csv.DictReader(f, delimiter='\t')
         return reader.fieldnames or [], list(reader)
+
+
+def present(row, fields):
+    return all(row.get(field, '').strip() for field in fields)
 
 
 def main():
@@ -41,14 +52,24 @@ def main():
     for row in rows:
         slot = row.get('slot_id','')
         candidate_id = row.get('source_candidate_id','')
+        queue_row = ready_queue.get(slot)
+        candidate_row = ready_candidates.get(candidate_id)
         if row.get('batch_id') != 'candidate-10-19':
             errors.append('bad_batch=' + slot)
-        if slot not in ready_queue:
+        if queue_row is None:
             errors.append('slot_not_intake_ready=' + slot)
-        if candidate_id not in ready_candidates:
+        if candidate_row is None:
             errors.append('candidate_not_ready=' + candidate_id)
-        if slot in ready_queue and row.get('folder_id') != ready_queue[slot].get('folder_id'):
+        if queue_row and row.get('folder_id') != queue_row.get('folder_id'):
             errors.append('folder_mismatch=' + slot)
+        if queue_row and not present(queue_row, QUEUE_MATERIAL_FIELDS):
+            errors.append('queue_material_missing=' + slot)
+        if candidate_row and not present(candidate_row, CANDIDATE_MATERIAL_FIELDS):
+            errors.append('candidate_material_missing=' + candidate_id)
+        if queue_row and candidate_row:
+            for field in ['parent_url','parent_title','parent_ncl_id','parent_diff_id','folder_id','canonical_url']:
+                if queue_row.get(field) != candidate_row.get(field):
+                    errors.append('source_queue_mismatch=' + slot + ':' + field)
         for field in VALUE_FIELDS:
             if row.get(field) != 'derived':
                 errors.append('field_not_derived=' + slot + ':' + field)
@@ -57,10 +78,10 @@ def main():
                 errors.append('boundary_not_false=' + slot + ':' + field)
         if row.get('readiness_state') != 'value_ready':
             errors.append('bad_readiness_state=' + slot)
-    print('check_set=next_10_value_ready_v1')
+    print('check_set=next_10_value_ready_v2')
     print('value_ready_rows=' + str(len(rows)))
     if errors:
-        print('\n'.join(errors[:60]))
+        print('\n'.join(errors[:80]))
         print('next_10_value_ready_pass=false')
         return 1
     print('next_10_value_ready_pass=true')
