@@ -63,26 +63,40 @@ Every staged derivative path and materialized unit row is expected to retain:
 - public_activation=false
 - production_deploy=false
 
+## Guard and index state
+
+- prepared rank state table: present
+- rank1 guard table: present
+- guard evidence key table: present
+- guard check binding table: present
+- PR35 file index: present
+- PR35 script sequence table: present
+- guard binding checker: active in preflight
+- script sequence table check: active in preflight
+
 ## Purpose alignment
 
 This PR is a staged infrastructure step toward:
 
 - multiplying each origin article into multiple human and AI entry surfaces,
 - preserving origin and theory identity,
-- reducing owner verification burden,
+- reducing verification burden,
 - moving from manual page work toward near-full automation,
 - preparing higher-strength effect bundles without public release,
 - converting candidate 10-17 from planned effect units to validated materialized unit ledgers,
 - adding a separate public-export preflight gate before any later boundary action,
 - checking entry-signal markers across the 78 staged pages before any later boundary action,
 - documenting the candidate boundary so later activation work remains separate and explicit,
-- adding a draft operation manifest so later activation work can be scoped before external action.
+- connecting PR35 rank, guard, evidence, binding, file index, and script sequence tables to CI checks.
 
 ## Latest validation note
 
-- Official derivative generation check run #377 completed with success.
-- Official derivative preflight check run #15 completed with success.
+- Official derivative generation check run #422 completed with success.
+- Official derivative preflight check run #60 completed with success.
 - Public export preflight verifies staged targets, staged pages, registry rows, 429 materialized units, origin identity, and non-production boundaries.
 - Entry signal check runs in the preflight workflow and verifies the 78 staged pages for required role-level entry markers.
 - Candidate boundary doc check runs in the preflight workflow.
 - Release operation manifest check runs in the preflight workflow.
+- PR35 guard evidence keys check runs in the preflight workflow.
+- PR35 guard binding count check runs in the preflight workflow.
+- PR35 script sequence table check runs in the preflight workflow.
