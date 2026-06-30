@@ -4,6 +4,7 @@ from pathlib import Path
 
 BINDINGS = Path('tools/official_derivatives/pr35_guard_check_bindings.tsv')
 EVIDENCE = Path('tools/official_derivatives/pr35_guard_evidence_keys.tsv')
+FILE_INDEX = Path('tools/official_derivatives/pr35_file_index.tsv')
 EXPECTED_KEYS = {
     'candidate_list_check',
     'preflight_check',
@@ -23,6 +24,7 @@ def read_rows(path: Path) -> list[dict[str, str]]:
 def main() -> int:
     rows = read_rows(BINDINGS)
     evidence_rows = read_rows(EVIDENCE)
+    index_rows = read_rows(FILE_INDEX)
     errors: list[str] = []
     keys = [row['evidence_key'] for row in rows]
     evidence_keys = {row['evidence_key'] for row in evidence_rows}
@@ -50,9 +52,23 @@ def main() -> int:
             errors.append(f'bad_path_suffix:{key}')
         if not path.is_file():
             errors.append(f'missing_path:{key}')
-    print('check_set=pr35_guard_binding_count_v3')
+    index_keys = [row['item_key'] for row in index_rows]
+    if len(index_rows) != 8:
+        errors.append(f'index_row_count={len(index_rows)} expected=8')
+    if len(set(index_keys)) != len(index_keys):
+        errors.append('duplicate_index_key')
+    for row in index_rows:
+        key = row['item_key']
+        if row['source_pr'] != '35':
+            errors.append(f'bad_index_source_pr:{key}')
+        if row['state'] != 'present':
+            errors.append(f'bad_index_state:{key}')
+        if row['change_now'] != 'false':
+            errors.append(f'bad_index_change_now:{key}')
+    print('check_set=pr35_guard_binding_count_v4')
     print(f'rows={len(rows)}')
     print(f'evidence_rows={len(evidence_rows)}')
+    print(f'index_rows={len(index_rows)}')
     if errors:
         for error in errors:
             print(error)
