@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import csv
+import runpy
 from pathlib import Path
 
 PATH = Path('tools/official_derivatives/next_10_pre_body_entry_effect_gate_candidate_10_19.tsv')
@@ -34,6 +35,7 @@ def split(value: str) -> set[str]:
 
 
 def main() -> int:
+    runpy.run_path('tools/official_derivatives/check_next_10_four_stage_gate.py', run_name='__main__')
     with PATH.open(encoding='utf-8', newline='') as f:
         reader = csv.DictReader(f, delimiter='\t')
         header = reader.fieldnames or []
@@ -62,7 +64,7 @@ def main() -> int:
         for field in ['body_text_generation','html_generation','public_export']:
             if row.get(field) != 'false':
                 errors.append('boundary_not_false=' + role + ':' + field)
-    print('check_set=next_10_pre_body_entry_effect_gate_v1')
+    print('check_set=next_10_pre_body_entry_effect_gate_v2')
     print('rows=' + str(len(rows)))
     print('public_export=false')
     print('body_text_generation=false')
