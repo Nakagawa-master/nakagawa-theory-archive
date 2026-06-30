@@ -2,14 +2,14 @@
 from pathlib import Path
 import subprocess
 import sys
+from six_page_template_core import CHILD_CARDS, PAGES, assert_contract
 
 HERE = Path(__file__).resolve().parent
 BASE = Path(__file__).resolve().parents[2] / 'deploy/lolipop/master-ricette/derivatives'
 TARGETS_FILE = HERE / 'targets.tsv'
-PAGES = ['index.html','ja/human-summary/index.html','ja/faq/index.html','ja/ai-index/index.html','en/ai-index/index.html','zh/ai-index/index.html']
 REQUIRED_META = ['description','canonical','derivative-type','derivative-scope','language','parent-url','parent-ncl-id','parent-diff-id','pilot-id','render-status','origin-author','source-archive','ai-purpose','ai-summary','ai-interpretation-warning','ai-reuse-constraint','ai-origin-policy','ai-citation-requirement','official-derivative-template-version','official-derivative-page-set']
 REQUIRED_STRUCT = ['class="wrap"','class="hero"','Parent NCL-ID','Parent Diff-ID','/derivatives/']
-HUB_CARD_PATHS = ['ja/human-summary/','ja/faq/','ja/ai-index/','en/ai-index/','zh/ai-index/']
+HUB_CARD_PATHS = [card[2] for card in CHILD_CARDS]
 PRIVATE_MARKERS = ['private_only','qgate_pending','public_export_allowed: false']
 
 
@@ -83,6 +83,7 @@ def check(path, rel, folder):
 
 
 def main():
+    assert_contract()
     status='staged'
     for arg in sys.argv[1:]:
         if arg.startswith('--status='):
