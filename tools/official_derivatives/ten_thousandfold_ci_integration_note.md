@@ -12,6 +12,7 @@ Reason:
 - requires concrete effect surfaces per origin
 - requires origin return on every effect route
 - blocks weak batches that add pages without action-surface expansion
+- keeps PR35 current status tied to virtual preparation units before any later text phase
 
 Boundary:
 
