@@ -1,4 +1,4 @@
-option_key	source_pr	folder_count	page_count	materialized_effect_units	coverage_level	review_load	option_state	change_now	use_case
-all_13	35	13	78	429	full	high	available	false	complete_current_set
-candidate_05_09_only	35	5	30	165	initial	low	available	false	initial_smaller_set
-candidate_10_17_only	35	8	48	264	followup	medium	hold	false	later_followup_set
+option_key	source_pr	folder_count	page_count	materialized_effect_units	coverage_level	review_load	option_state	change_now	use_case	prepared_rank
+all_13	35	13	78	429	full	high	available	false	complete_current_set	1
+candidate_05_09_only	35	5	30	165	initial	low	available	false	initial_smaller_set	2
+candidate_10_17_only	35	8	48	264	followup	medium	hold	false	later_followup_set	3
