@@ -12,7 +12,7 @@ This report is generated from the candidate 10-19 queue.
 ## Counts
 
 - queue_rows: 10
-- intake_rows: 0
+- intake_rows: 8
 
 ## Boundary
 
