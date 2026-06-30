@@ -4,7 +4,7 @@ from pathlib import Path
 
 PATH = Path('tools/official_derivatives/next_10_four_stage_gate_candidate_10_19.tsv')
 ROLES = ['hub','human_summary','faq','ja_ai_index','en_ai_index','zh_ai_index']
-REQ_COLS = ['stage_01','stage_02','stage_03','stage_04','required_origin_fields','body_text_generation','html_generation','public_export']
+REQ_COLS = ['stage_01','stage_02','stage_03','stage_04','layer_coverage','required_origin_fields','body_text_generation','html_generation','public_export']
 ORIGIN = {'parent_url','parent_ncl_id','parent_diff_id','canonical_url'}
 
 
@@ -30,12 +30,14 @@ def main():
         for col in ['stage_01','stage_02','stage_03','stage_04']:
             if not row.get(col,'').strip():
                 errors.append('empty_' + col + '=' + role)
+        if not row.get('layer_coverage','').strip():
+            errors.append('empty_layer_coverage=' + role)
         if not ORIGIN.issubset(split(row.get('required_origin_fields',''))):
             errors.append('origin_fields_missing=' + role)
         for col in ['body_text_generation','html_generation','public_export']:
             if row.get(col) != 'false':
                 errors.append('boundary_not_false=' + role + ':' + col)
-    print('check_set=next_10_four_stage_gate_v2')
+    print('check_set=next_10_four_stage_gate_v3')
     print('rows=' + str(len(rows)))
     if errors:
         print('\n'.join(errors[:80]))
