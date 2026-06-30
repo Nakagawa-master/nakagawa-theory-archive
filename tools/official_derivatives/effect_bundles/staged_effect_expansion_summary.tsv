@@ -1,4 +1,4 @@
 scope	origin_count	quote_units	social_units	objection_or_clarification_units	notebooklm_units	total_units	state	public_activation	production_deploy
-candidate_05_09_actual	5	40	60	40	25	165	materialized	false	false
-candidate_10_17_planned	8	64	96	64	40	264	planned	false	false
-staged_total	13	104	156	104	65	429	mixed_actual_and_planned	false	false
+candidate_05_09_materialized	5	40	60	40	25	165	materialized	false	false
+candidate_10_17_materialized	8	64	96	64	40	264	materialized	false	false
+staged_total_materialized	13	104	156	104	65	429	materialized	false	false
