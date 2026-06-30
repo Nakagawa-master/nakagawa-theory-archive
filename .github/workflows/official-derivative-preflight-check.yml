@@ -57,3 +57,38 @@ jobs:
 
       - name: Run PR35 guard binding count check
         run: python tools/official_derivatives/check_pr35_guard_binding_count.py
+
+      - name: Run PR35 script sequence table check
+        run: |
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+          path = Path('tools/official_derivatives/pr35_script_sequence.tsv')
+          expected = ['rank_state_script', 'rank1_script', 'evidence_keys_script', 'binding_rows_script']
+          rows = list(csv.DictReader(path.open(encoding='utf-8'), delimiter='\t'))
+          keys = [row['item_key'] for row in rows]
+          ranks = [row['sequence_rank'] for row in rows]
+          errors = []
+          if len(rows) != 4:
+              errors.append(f'row_count={len(rows)} expected=4')
+          if keys != expected:
+              errors.append('item_sequence_mismatch')
+          if ranks != ['1', '2', '3', '4']:
+              errors.append('rank_sequence_mismatch')
+          for row in rows:
+              key = row['item_key']
+              if row['source_pr'] != '35':
+                  errors.append(f'bad_source_pr:{key}')
+              if row['state'] != 'present':
+                  errors.append(f'bad_state:{key}')
+              if row['change_now'] != 'false':
+                  errors.append(f'bad_change_now:{key}')
+          print('check_set=pr35_script_sequence_table_v1')
+          print(f'rows={len(rows)}')
+          if errors:
+              for error in errors:
+                  print(error)
+              print('pr35_script_sequence_table_pass=false')
+              raise SystemExit(1)
+          print('pr35_script_sequence_table_pass=true')
+          PY
