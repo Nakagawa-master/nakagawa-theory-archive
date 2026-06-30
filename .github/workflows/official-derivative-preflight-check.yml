@@ -42,3 +42,6 @@ jobs:
 
       - name: Run PR35 boundary decision matrix check
         run: python tools/official_derivatives/check_pr35_boundary_decision_matrix.py
+
+      - name: Run PR35 scope summary check
+        run: python tools/official_derivatives/check_pr35_candidate_scope_summary.py
