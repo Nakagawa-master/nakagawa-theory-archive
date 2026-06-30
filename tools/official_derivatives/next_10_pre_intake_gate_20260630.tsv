@@ -1,9 +1,9 @@
 batch_id	slot_id	gate_state	identity_ok	score_ok	plan_ok	origin_ok	allow_intake
-candidate-10-19	Official Derivative 010	planned	true	true	true	true	false
-candidate-10-19	Official Derivative 011	planned	true	true	true	true	false
-candidate-10-19	Official Derivative 012	planned	true	true	true	true	false
-candidate-10-19	Official Derivative 013	planned	true	true	true	true	false
-candidate-10-19	Official Derivative 014	planned	true	true	true	true	false
-candidate-10-19	Official Derivative 015	planned	true	true	true	true	false
-candidate-10-19	Official Derivative 016	planned	true	true	true	true	false
-candidate-10-19	Official Derivative 017	planned	true	true	true	true	false
+candidate-10-19	Official Derivative 010	passed	true	true	true	true	true
+candidate-10-19	Official Derivative 011	passed	true	true	true	true	true
+candidate-10-19	Official Derivative 012	passed	true	true	true	true	true
+candidate-10-19	Official Derivative 013	passed	true	true	true	true	true
+candidate-10-19	Official Derivative 014	passed	true	true	true	true	true
+candidate-10-19	Official Derivative 015	passed	true	true	true	true	true
+candidate-10-19	Official Derivative 016	passed	true	true	true	true	true
+candidate-10-19	Official Derivative 017	passed	true	true	true	true	true
