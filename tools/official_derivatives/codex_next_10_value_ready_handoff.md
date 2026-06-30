@@ -9,7 +9,7 @@ public_export: false
 
 Keep Official Derivative 010-017 ready for later body drafting without creating page body text, generated HTML, public export, sitemap changes, or index/follow conversion.
 
-The pre-body gate must confirm that body drafting can later preserve origin identity, value core, causal line, misreading guard, origin return, page links, FAQ question sets, AI index definitions, body skeleton requirements, body quality requirements, per-slot value anchors, and role-specific drafting instructions.
+The pre-body gate must confirm that body drafting can later preserve origin identity, value core, causal line, misreading guard, origin return, page links, FAQ question sets, AI index definitions, body skeleton requirements, body quality requirements, per-slot value anchors, role-specific drafting instructions, slot failure profiles, and role review criteria.
 
 ## Inputs
 
@@ -29,6 +29,8 @@ The pre-body gate must confirm that body drafting can later preserve origin iden
 - tools/official_derivatives/next_10_body_generation_quality_gate_candidate_10_19.tsv
 - tools/official_derivatives/next_10_body_value_anchor_candidate_10_19.tsv
 - tools/official_derivatives/next_10_role_drafting_instruction_candidate_10_19.tsv
+- tools/official_derivatives/next_10_slot_failure_profile_candidate_10_19.tsv
+- tools/official_derivatives/next_10_role_review_criteria_candidate_10_19.tsv
 
 ## Checkers and workflow bindings
 
@@ -48,6 +50,8 @@ The pre-body gate must confirm that body drafting can later preserve origin iden
 - quality gate: spec_only
 - value anchor gate: anchor_ready
 - role drafting instruction gate: instruction_ready
+- slot failure profile gate: failure_profile_ready
+- role review criteria gate: review_ready
 - body text generation: false
 - HTML generation: false
 - public export: false
@@ -79,6 +83,13 @@ This prevents later drafts from becoming generic summaries, service introduction
 - human_summary uses value_anchor, causal_anchor, human_entry_anchor, misreading_guard_anchor, and origin_return_anchor for human entry and causal understanding
 - FAQ uses misreading_guard_anchor, causal_anchor, and origin_return_anchor for beginner, structure, and boundary questions
 - JA / EN / ZH AI indexes use value_anchor, causal_anchor, ai_reference_anchor, and origin_return_anchor for AI reuse with origin retention
+
+## Final pre-body defense requirements
+
+- each slot has a failure profile with must_fail_if, must_preserve, and review_focus
+- each slot failure profile must preserve origin_return
+- each role has review criteria with must_check, must_fail_if, and quality_axes
+- each role review must keep the relevant human / FAQ / AI reuse criteria before any body text generation
 
 ## Boundary
 
