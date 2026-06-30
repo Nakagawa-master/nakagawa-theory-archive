@@ -33,3 +33,6 @@ jobs:
 
       - name: Run candidate activation list check
         run: python tools/official_derivatives/check_candidate_activation_list.py
+
+      - name: Run activation diff plan check
+        run: python tools/official_derivatives/check_activation_diff_plan.py
