@@ -118,6 +118,12 @@ jobs:
       - name: Validate staged effect materialization
         run: python tools/official_derivatives/check_staged_effect_materialization.py
 
+      - name: Build PR35 transfer manifest
+        run: python tools/official_derivatives/build_pr35_transfer_manifest.py
+
+      - name: Validate PR35 transfer manifest
+        run: python tools/official_derivatives/check_pr35_transfer_manifest.py
+
       - name: Commit generated pages and reports to PR branch
         run: |
           git config user.name "github-actions[bot]"
@@ -146,9 +152,10 @@ jobs:
             tools/official_derivatives/effect_bundles/candidate_10_17_materialized_social_units.tsv \
             tools/official_derivatives/effect_bundles/candidate_10_17_materialized_clarification_units.tsv \
             tools/official_derivatives/effect_bundles/candidate_10_17_materialized_notebooklm_units.tsv \
-            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_unit_summary.tsv
+            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_unit_summary.tsv \
+            tools/official_derivatives/pr35_transfer_manifest.tsv
           if git diff --cached --quiet; then
-            echo "No generated page, report, or effect ledger changes to commit."
+            echo "No generated page, report, effect ledger, or transfer manifest changes to commit."
           else
             git commit -m "Generate staged derivative pages and effect ledgers"
             git push origin HEAD:${{ github.head_ref || github.ref_name }}
