@@ -28,6 +28,9 @@ jobs:
       - name: Validate head metadata
         run: python tools/official_derivatives/render_heads.py --status=staged
 
+      - name: Validate universal renderer contract
+        run: python tools/official_derivatives/check_universal_renderer_contract.py
+
       - name: Validate promotion readiness
         run: python tools/official_derivatives/validate_promotion_ready.py
 
