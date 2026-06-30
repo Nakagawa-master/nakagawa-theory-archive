@@ -40,6 +40,15 @@ jobs:
       - name: Validate universal page renderer
         run: python tools/official_derivatives/check_universal_page_renderer.py
 
+      - name: Validate change scope
+        run: python tools/official_derivatives/check_change_scope.py
+
+      - name: Validate origin manifest
+        run: python tools/official_derivatives/validate_origin_manifest.py
+
+      - name: Validate staged boundary
+        run: python tools/official_derivatives/validate_staged_boundary.py
+
       - name: Validate promotion readiness
         run: python tools/official_derivatives/validate_promotion_ready.py
 
