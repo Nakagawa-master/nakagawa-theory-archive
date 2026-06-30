@@ -72,9 +72,11 @@ This PR is a staged infrastructure step toward:
 - reducing owner verification burden,
 - moving from manual page work toward near-full automation,
 - preparing higher-strength effect bundles without public release,
-- converting candidate 10-17 from planned effect units to validated materialized unit ledgers.
+- converting candidate 10-17 from planned effect units to validated materialized unit ledgers,
+- adding a separate public-export preflight gate before any later owner/publication boundary action.
 
 ## Latest validation note
 
-- Official derivative generation check run #356 completed with success after adding candidate 10-17 materialized unit ledger build and validation steps.
-- The subsequent bot-generated ledger commit may show an action_required workflow state because it is a bot follow-up commit, but the ledger generation and validation path passed in run #356 before commit.
+- Official derivative generation check run #364 completed with success after accepting materialized summary scopes.
+- Official derivative preflight check run #2 completed with success.
+- Public export preflight now verifies staged targets, staged pages, registry rows, 429 materialized units, origin identity, and non-production boundaries before any later owner/publication boundary action.
