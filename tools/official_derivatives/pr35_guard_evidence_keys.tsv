@@ -1,0 +1,7 @@
+guard_area	source_pr	evidence_key	expected_state	change_now
+origin_traceability	35	candidate_list_check	green	false
+quality_checks	35	preflight_check	green	false
+ai_index_integrity	35	entry_signal_check	green	false
+human_entry_surface	35	option_brief	present	false
+batch_validation	35	scope_summary_check	green	false
+manual_review_need	35	guard_table_check	false	false
