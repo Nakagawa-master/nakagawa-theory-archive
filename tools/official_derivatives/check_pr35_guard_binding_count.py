@@ -67,6 +67,7 @@ def main() -> int:
     for row in index_rows:
         key = row['item_key']
         file_path = row['file_path']
+        item_type = row['item_type']
         path = Path(file_path)
         if row['source_pr'] != '35':
             errors.append(f'bad_index_source_pr:{key}')
@@ -78,9 +79,13 @@ def main() -> int:
             errors.append(f'bad_index_path_root:{key}')
         if path.suffix not in ALLOWED_SUFFIXES:
             errors.append(f'bad_index_path_suffix:{key}')
+        if item_type == 'script' and path.suffix != '.py':
+            errors.append(f'bad_script_path:{key}')
+        if item_type == 'table' and path.suffix != '.tsv':
+            errors.append(f'bad_table_path:{key}')
         if not path.is_file():
             errors.append(f'missing_index_path:{key}')
-    print('check_set=pr35_guard_binding_count_v6')
+    print('check_set=pr35_guard_binding_count_v7')
     print(f'rows={len(rows)}')
     print(f'evidence_rows={len(evidence_rows)}')
     print(f'index_rows={len(index_rows)}')
