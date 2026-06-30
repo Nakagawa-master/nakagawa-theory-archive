@@ -7,6 +7,7 @@ BLUEPRINT = Path('tools/official_derivatives/next_10_content_blueprint_candidate
 FIELD_SPEC = Path('tools/official_derivatives/next_10_content_field_spec_candidate_10_19.tsv')
 TEMPLATE_VERSION = 'v1-six-page-shared-body-and-head'
 PAGE_SET = 'six_pages_per_origin'
+CONTRACT_SCOPE = 'all_future_origins'
 ROLES = {
     'hub': 'index.html',
     'human_summary': 'ja/human-summary/index.html',
@@ -56,6 +57,8 @@ def main():
         errors.append('template_version_changed')
     if PAGE_SET != 'six_pages_per_origin':
         errors.append('page_set_changed')
+    if CONTRACT_SCOPE != 'all_future_origins':
+        errors.append('contract_scope_changed')
     for role, needed in MIN_FIELDS.items():
         row = spec.get(role)
         if not row:
@@ -99,9 +102,10 @@ def main():
             errors.append('missing_or_extra_roles=' + slot)
     if len(rows) != len(candidate_slots) * len(ROLES):
         errors.append('blueprint_rows=' + str(len(rows)) + ':expected=' + str(len(candidate_slots) * len(ROLES)))
-    print('check_set=next_10_content_blueprint_v3')
+    print('check_set=next_10_content_blueprint_v4')
     print('template_version=' + TEMPLATE_VERSION)
     print('page_set=' + PAGE_SET)
+    print('contract_scope=' + CONTRACT_SCOPE)
     print('candidate_slots=' + str(len(candidate_slots)))
     print('content_blueprint_rows=' + str(len(rows)))
     print('content_field_spec_roles=' + str(len(spec_rows)))
