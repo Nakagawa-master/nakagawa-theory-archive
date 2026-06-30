@@ -179,12 +179,19 @@ def main():
             if not r.get(field,'').strip():
                 errors.append('role_review_field_missing=' + role + ':' + field)
         require_false(r, ['body_text_generation','html_generation','public_export'], 'role_review', errors)
-    print('check_set=next_10_content_value_spec_v4')
+    virtual_body_draft_units = [(slot, role) for slot in EXPECTED_SLOTS for role in EXPECTED_ROLES]
+    if len(virtual_body_draft_units) != 48:
+        errors.append('virtual_body_draft_unit_count_mismatch')
+    if len(set(virtual_body_draft_units)) != 48:
+        errors.append('virtual_body_draft_unit_duplicate')
+    print('check_set=next_10_content_value_spec_v5')
     print('content_value_spec_rows=' + str(len(rows)))
     print('field_rows=' + str(len(field_rows)))
     print('role_instruction_rows=' + str(len(role_rows)))
     print('slot_failure_rows=' + str(len(slot_failure_rows)))
     print('role_review_rows=' + str(len(role_review_rows)))
+    print('virtual_body_draft_units=' + str(len(virtual_body_draft_units)))
+    print('body_draft_readiness=spec_ready_not_generated')
     print('public_export=false')
     print('page_generation=false')
     if errors:
