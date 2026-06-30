@@ -3,11 +3,13 @@ from __future__ import annotations
 
 import csv
 from pathlib import Path
+import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parent
 BUNDLE_ROOT = ROOT / "effect_bundles" / "candidate_05_09"
 EXPECTED = ROOT / "effect_bundles" / "candidate_05_09_effect_bundle_expected_counts.tsv"
+PLAN_CHECK = ROOT / "check_candidate_10_17_effect_bundle_plan.py"
 
 CONFIG = {
     "ncl-alpha-20260511-e243be": {
@@ -82,6 +84,16 @@ def read_expected() -> dict[str, dict[str, str]]:
         return {row["folder_id"]: row for row in csv.DictReader(f, delimiter="\t")}
 
 
+def run_plan_check(errors: list[str]) -> None:
+    result = subprocess.run([sys.executable, str(PLAN_CHECK)], text=True, capture_output=True)
+    if result.stdout:
+        print(result.stdout.strip())
+    if result.stderr:
+        print(result.stderr.strip())
+    if result.returncode != 0:
+        errors.append("candidate_10_17_effect_bundle_plan_failed")
+
+
 def main() -> int:
     errors: list[str] = []
     expected = read_expected()
@@ -127,16 +139,18 @@ def main() -> int:
     if observed_total != 165:
         errors.append(f"observed_total_units={observed_total}:expected=165")
 
+    run_plan_check(errors)
+
     if errors:
-        print("candidate_05_09_effect_bundles: fail")
+        print("candidate_effect_bundles: fail")
         for error in errors:
             print(error)
         return 1
 
-    print("candidate_05_09_effect_bundles: pass")
-    print("origin_count=5")
-    print("units_per_origin=33")
-    print("observed_total_units=165")
+    print("candidate_effect_bundles: pass")
+    print("candidate_05_09_origin_count=5")
+    print("candidate_05_09_observed_total_units=165")
+    print("candidate_10_17_expected_total_units=264")
     print("public_activation=false")
     print("production_deploy=false")
     return 0
