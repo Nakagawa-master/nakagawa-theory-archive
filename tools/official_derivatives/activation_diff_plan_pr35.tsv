@@ -1,0 +1,9 @@
+operation_id	source_pr	change_area	allowed_now	required_current_state	owner_boundary_required	future_action_scope
+pr35-activation-diff-draft	35	robots_directives	false	no_change	true	define_before_activation
+pr35-activation-diff-draft	35	sitemap_entries	false	no_change	true	define_before_activation
+pr35-activation-diff-draft	35	search_console_submission	false	no_change	true	define_before_activation
+pr35-activation-diff-draft	35	index_follow_state	false	no_change	true	define_before_activation
+pr35-activation-diff-draft	35	ftp_or_deploy_method	false	no_change	true	define_before_activation
+pr35-activation-diff-draft	35	public_activation_flag	false	no_change	true	define_before_activation
+pr35-activation-diff-draft	35	canonical_url_publication	false	no_change	true	define_before_activation
+pr35-activation-diff-draft	35	candidate_folder_scope	false	listed_only	true	use_candidate_activation_list_pr35
