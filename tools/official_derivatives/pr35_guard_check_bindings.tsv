@@ -1,0 +1,7 @@
+evidence_key	check_path	binding_state	change_now
+candidate_list_check	tools/official_derivatives/check_candidate_activation_list.py	bound	false
+preflight_check	tools/official_derivatives/check_public_export_preflight.py	bound	false
+entry_signal_check	tools/official_derivatives/check_entry_signal.py	bound	false
+option_brief	tools/official_derivatives/pr35_option_brief.tsv	bound	false
+scope_summary_check	tools/official_derivatives/check_pr35_candidate_scope_summary.py	bound	false
+guard_table_check	tools/official_derivatives/check_pr35_rank1_guard_table.py	bound	false
