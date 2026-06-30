@@ -5,6 +5,7 @@ from six_page_template_core import PAGE_ROLES, assert_contract
 
 PATH = Path('tools/official_derivatives/next_10_high_strength_template_gate_candidate_10_19.tsv')
 FIELD_SPEC = Path('tools/official_derivatives/next_10_content_field_spec_candidate_10_19.tsv')
+STATUS = Path('tools/official_derivatives/pr_35_current_status.md')
 HEADER = ['batch_id','page_role','gate_status','required_sections','must_preserve','public_export','page_generation']
 KEEP = {'parent_url','parent_ncl_id','parent_diff_id','canonical_url'}
 ROLE_SECTIONS = {
@@ -24,6 +25,12 @@ FIELD_COVER = {
     'origin_identity': {'origin_preservation'},
     'misreading_guard': {'interpretation_warnings','reuse_constraints'},
 }
+STATUS_REQUIRED = [
+    'selected slot count: 8',
+    'page roles per selected slot: 6',
+    'virtual preparation units: 48',
+    'generated output state: none',
+]
 
 
 def read_rows(path: Path):
@@ -42,6 +49,7 @@ def main():
     assert_contract()
     header, rows = read_rows(PATH)
     _, field_rows = read_rows(FIELD_SPEC)
+    status_text = STATUS.read_text(encoding='utf-8')
     errors = []
     roles = {row.get('page_role','') for row in rows}
     by_role = {row.get('page_role',''): row for row in rows}
@@ -51,6 +59,9 @@ def main():
         errors.append(f'row_count={len(rows)} expected=6')
     if roles != set(PAGE_ROLES):
         errors.append('role_set_mismatch')
+    for item in STATUS_REQUIRED:
+        if item not in status_text:
+            errors.append('status_missing=' + item)
     for row in rows:
         role = row.get('page_role','')
         sections = set(filter(None, row.get('required_sections','').split('|')))
@@ -85,9 +96,10 @@ def main():
             errors.append('bad_field_public=' + role)
         if spec.get('page_generation') != 'false':
             errors.append('bad_field_page=' + role)
-    print('check_set=next_10_template_gate_count_v3')
+    print('check_set=next_10_template_gate_count_v4')
     print('rows=' + str(len(rows)))
     print('field_rows=' + str(len(field_rows)))
+    print('status_required=' + str(len(STATUS_REQUIRED)))
     if errors:
         print('\n'.join(errors[:50]))
         print('next_10_template_gate_count_pass=false')
