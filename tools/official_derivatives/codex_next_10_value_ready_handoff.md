@@ -9,7 +9,7 @@ public_export: false
 
 Keep Official Derivative 010-017 ready for later body drafting without creating page body text, generated HTML, public export, sitemap changes, or index/follow conversion.
 
-The pre-body gate must confirm that body drafting can later preserve origin identity, value core, causal line, misreading guard, origin return, page links, FAQ question sets, AI index definitions, body skeleton requirements, body quality requirements, and per-slot value anchors.
+The pre-body gate must confirm that body drafting can later preserve origin identity, value core, causal line, misreading guard, origin return, page links, FAQ question sets, AI index definitions, body skeleton requirements, body quality requirements, per-slot value anchors, and role-specific drafting instructions.
 
 ## Inputs
 
@@ -19,6 +19,7 @@ The pre-body gate must confirm that body drafting can later preserve origin iden
 - tools/official_derivatives/next_10_content_value_extraction_spec_20260630.tsv
 - tools/official_derivatives/next_10_content_field_spec_candidate_10_19.tsv
 - tools/official_derivatives/next_10_high_strength_template_gate_candidate_10_19.tsv
+- tools/official_derivatives/next_10_body_value_anchor_candidate_10_19.tsv
 
 ## Outputs
 
@@ -27,6 +28,7 @@ The pre-body gate must confirm that body drafting can later preserve origin iden
 - tools/official_derivatives/next_10_body_skeleton_gate_candidate_10_19.tsv
 - tools/official_derivatives/next_10_body_generation_quality_gate_candidate_10_19.tsv
 - tools/official_derivatives/next_10_body_value_anchor_candidate_10_19.tsv
+- tools/official_derivatives/next_10_role_drafting_instruction_candidate_10_19.tsv
 
 ## Checkers and workflow bindings
 
@@ -45,6 +47,7 @@ The pre-body gate must confirm that body drafting can later preserve origin iden
 - skeleton gate: spec_only
 - quality gate: spec_only
 - value anchor gate: anchor_ready
+- role drafting instruction gate: instruction_ready
 - body text generation: false
 - HTML generation: false
 - public export: false
@@ -68,7 +71,14 @@ The quality table must also preserve parent URL, parent NCL-ID, parent Diff-ID, 
 
 Each active slot must preserve a concrete value anchor, causal anchor, misreading guard anchor, human entry anchor, AI reference anchor, and origin return anchor before later body drafting.
 
-This prevents later drafts from becoming generic summaries, service introductions, political commentary, sales tips, crisis rhetoric, or originless AI summaries.
+This prevents later drafts from becoming generic summaries, service introductions, shallow advice, crisis rhetoric, or originless AI summaries.
+
+## Role drafting instruction requirements
+
+- hub uses value_anchor and origin_return_anchor to position the page and return to the origin
+- human_summary uses value_anchor, causal_anchor, human_entry_anchor, misreading_guard_anchor, and origin_return_anchor for human entry and causal understanding
+- FAQ uses misreading_guard_anchor, causal_anchor, and origin_return_anchor for beginner, structure, and boundary questions
+- JA / EN / ZH AI indexes use value_anchor, causal_anchor, ai_reference_anchor, and origin_return_anchor for AI reuse with origin retention
 
 ## Boundary
 
