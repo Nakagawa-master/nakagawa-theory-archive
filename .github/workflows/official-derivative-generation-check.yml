@@ -20,7 +20,7 @@ jobs:
           ref: ${{ github.head_ref || github.ref_name }}
 
       - name: Generate candidate 05-09 pages
-        run: python tools/official_derivatives/generate_candidate_05_09_html.py
+        run: python tools/official_derivatives/generate_candidate_05_09_universal.py
 
       - name: Validate candidate generator core parity
         run: python tools/official_derivatives/check_candidate_generator_core_parity.py
