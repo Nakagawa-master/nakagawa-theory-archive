@@ -15,6 +15,7 @@ This report is an operational readiness estimate for the official derivative sys
 - candidate_05_09_origin_count: 5
 - derivative_pages_per_origin: 6
 - effect_surface_rows: 6
+- effect_surface_signal_columns: 3
 - candidate_10_19_queue_slots: 10
 - candidate_10_19_source_selected: false
 - candidate_10_19_intake_rows: 0
@@ -29,6 +30,7 @@ This report is an operational readiness estimate for the official derivative sys
 |---|---:|---:|---|
 | origin_identity_preservation | active | 15 | parent URL, NCL-ID, Diff-ID, folder and canonical checks exist |
 | six_surface_derivative_pattern | active | 20 | hub, human summary, FAQ, Japanese AI index, English AI index, Chinese AI index |
+| surface_signal_mapping | active | 5 | six-surface map now carries human entry, AI reference, and origin return signals |
 | staged_quality_and_boundary_gates | active | 15 | staged/noindex boundary and registry checks exist |
 | candidate_10_19_source_pipeline | prepared | 10 | discovery, catalog, source candidate, queue and intake gates exist, but no source is selected |
 | public_release_path | blocked_by_owner_boundary | 0 | deploy, sitemap, Search Console and index/follow are not touched here |
@@ -36,7 +38,7 @@ This report is an operational readiness estimate for the official derivative sys
 
 ## Interpretation
 
-The system is no longer a one-page manual output path. It is becoming a controlled derivative machine with origin identity, role coverage and staged boundary checks. The current practical effect is still limited because most pages are staged and non-indexable, and external surfaces are not yet connected.
+The system is no longer a one-page manual output path. It is becoming a controlled derivative machine with origin identity, role coverage, staged boundary checks, and explicit surface signals for human entry, AI reference, and origin return. The current practical effect is still limited because most pages are staged and non-indexable, and external surfaces are not yet connected.
 
 The next structural threshold is the 1000-2000 multiplier zone. That requires candidate 10-19 source records to be filled with public-safe origin facts, selected through quality gates, converted to intake, generated, and checked without weakening origin identity.
 
