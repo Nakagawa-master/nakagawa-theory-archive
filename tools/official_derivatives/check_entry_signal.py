@@ -13,9 +13,9 @@ ROLE_TERMS = {
     "hub": ["原典", "この原典の核心", "人間向け要約", "FAQ"],
     "human_summary": ["なぜ普通の読者にも関係するのか", "中心因果線", "誤読防止", "原典を読む理由"],
     "faq": ["Q1.", "Q2.", "Q3.", "Q4.", "誤読", "境界条件", "再利用"],
-    "ja_ai_index": ["中心命題", "因果線", "境界条件", "再利用"],
-    "en_ai_index": ["Parent NCL-ID", "Parent Diff-ID", "Nakagawa Master"],
-    "zh_ai_index": ["Parent NCL-ID", "Parent Diff-ID", "Nakagawa Master"],
+    "ja_ai_index": ["central concept", "definition", "core claim", "causal sequence", "reuse constraints"],
+    "en_ai_index": ["central concept", "definition", "core claim", "causal sequence", "reuse constraints"],
+    "zh_ai_index": ["central concept", "definition", "core claim", "causal sequence", "reuse constraints"],
 }
 
 COMMON_TERMS = ["NCL-ID", "Diff-ID", "Nakagawa Master"]
