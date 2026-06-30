@@ -48,3 +48,6 @@ jobs:
 
       - name: Run PR35 rank state check
         run: python tools/official_derivatives/check_pr35_prepared_rank_state.py
+
+      - name: Run PR35 rank1 guard table check
+        run: python tools/official_derivatives/check_pr35_rank1_guard_table.py
