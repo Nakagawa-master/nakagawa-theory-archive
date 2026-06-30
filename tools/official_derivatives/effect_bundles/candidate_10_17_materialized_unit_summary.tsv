@@ -1,0 +1,6 @@
+scope	origin_count	unit_type	unit_count	state	public_activation	production_deploy
+candidate_10_17_quote	8	quote	64	materialized	false	false
+candidate_10_17_social	8	social	96	materialized	false	false
+candidate_10_17_clarification	8	clarification	64	materialized	false	false
+candidate_10_17_notebooklm	8	notebooklm	40	materialized	false	false
+candidate_10_17_materialized_total	8	all	264	materialized	false	false
