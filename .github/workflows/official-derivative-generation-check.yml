@@ -82,6 +82,9 @@ jobs:
       - name: Validate candidate 10-19 body skeleton gate
         run: python tools/official_derivatives/check_next_10_body_skeleton_gate.py
 
+      - name: Validate candidate 10-19 pre-body entry effect gate
+        run: python tools/official_derivatives/check_next_10_pre_body_entry_effect_gate.py
+
       - name: Validate candidate 10-19 body quality table
         run: |
           table=tools/official_derivatives/next_10_body_generation_quality_gate_candidate_10_19.tsv
