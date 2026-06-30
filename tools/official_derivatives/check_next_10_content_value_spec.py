@@ -257,7 +257,21 @@ def main():
         errors.append('virtual_body_draft_unit_count_mismatch')
     if len(set(virtual_body_draft_units)) != 48:
         errors.append('virtual_body_draft_unit_duplicate')
-    print('check_set=next_10_content_value_spec_v7')
+    virtual_draft_phase_gate = {
+        'batch_id': 'candidate-10-19',
+        'gate_state': 'draft_phase_gate_ready',
+        'current_state': 'locked',
+        'open_target': 'draft_text_only',
+    }
+    if virtual_draft_phase_gate.get('batch_id') != 'candidate-10-19':
+        errors.append('bad_virtual_draft_phase_gate_batch')
+    if virtual_draft_phase_gate.get('gate_state') != 'draft_phase_gate_ready':
+        errors.append('bad_virtual_draft_phase_gate_state')
+    if virtual_draft_phase_gate.get('current_state') != 'locked':
+        errors.append('bad_virtual_draft_phase_gate_current_state')
+    if virtual_draft_phase_gate.get('open_target') != 'draft_text_only':
+        errors.append('bad_virtual_draft_phase_gate_target')
+    print('check_set=next_10_content_value_spec_v8')
     print('content_value_spec_rows=' + str(len(rows)))
     print('field_rows=' + str(len(field_rows)))
     print('role_instruction_rows=' + str(len(role_rows)))
@@ -268,11 +282,12 @@ def main():
     print('virtual_body_draft_units=' + str(len(virtual_body_draft_units)))
     print('draft_execution_policy=ready_blocked')
     print('post_draft_validation_gate=ready')
+    print('draft_phase_gate=ready_locked')
     print('body_draft_readiness=spec_ready_not_generated')
     print('public_export=false')
     print('page_generation=false')
     if errors:
-        print('\n'.join(errors[:160]))
+        print('\n'.join(errors[:180]))
         print('next_10_content_value_spec_pass=false')
         return 1
     print('next_10_content_value_spec_pass=true')
