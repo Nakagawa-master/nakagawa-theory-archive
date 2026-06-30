@@ -79,6 +79,9 @@ jobs:
       - name: Validate candidate 10-17 materialized unit ledgers
         run: python tools/official_derivatives/check_candidate_10_17_materialized_unit_ledgers.py
 
+      - name: Validate staged effect materialization
+        run: python tools/official_derivatives/check_staged_effect_materialization.py
+
       - name: Commit generated pages and reports to PR branch
         run: |
           git config user.name "github-actions[bot]"
@@ -101,6 +104,7 @@ jobs:
             tools/official_derivatives/staged_official_derivative_registry.tsv \
             tools/official_derivatives/candidate_05_09_gate_report.md \
             tools/official_derivatives/staged_official_derivative_gate_report.md \
+            tools/official_derivatives/effect_bundles/staged_effect_expansion_summary.tsv \
             tools/official_derivatives/effect_bundles/candidate_10_17_materialized_unit_ledger.tsv \
             tools/official_derivatives/effect_bundles/candidate_10_17_materialized_quote_units.tsv \
             tools/official_derivatives/effect_bundles/candidate_10_17_materialized_social_units.tsv \
@@ -136,6 +140,7 @@ jobs:
             tools/official_derivatives/staged_official_derivative_registry.tsv
             tools/official_derivatives/candidate_05_09_gate_report.md
             tools/official_derivatives/staged_official_derivative_gate_report.md
+            tools/official_derivatives/effect_bundles/staged_effect_expansion_summary.tsv
             tools/official_derivatives/effect_bundles/candidate_10_17_materialized_unit_ledger.tsv
             tools/official_derivatives/effect_bundles/candidate_10_17_materialized_quote_units.tsv
             tools/official_derivatives/effect_bundles/candidate_10_17_materialized_social_units.tsv
