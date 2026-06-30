@@ -24,3 +24,6 @@ jobs:
 
       - name: Run entry signal check
         run: python tools/official_derivatives/check_entry_signal.py
+
+      - name: Run candidate boundary doc check
+        run: python tools/official_derivatives/check_candidate_boundary_doc.py
