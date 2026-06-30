@@ -23,12 +23,15 @@ def read(path):
         reader = csv.DictReader(f, delimiter='\t')
         return reader.fieldnames or [], list(reader)
 
+def active(row):
+    return (row.get('selection_status') == 'candidate' and row.get('handoff_status') == 'intake_blocked') or (row.get('selection_status') == 'selected' and row.get('handoff_status') == 'intake_ready')
+
 def main():
     assert_contract()
     _, queue = read(QUEUE)
     header, rows = read(BLUEPRINT)
     spec_header, spec_rows = read(FIELD_SPEC)
-    slots = {r.get('slot_id',''): r.get('folder_id','') for r in queue if r.get('selection_status') == 'candidate' and r.get('handoff_status') == 'intake_blocked'}
+    slots = {r.get('slot_id',''): r.get('folder_id','') for r in queue if active(r)}
     spec = {r.get('page_role',''): r for r in spec_rows}
     errors = []
     if header != HEADER: errors.append('bad_blueprint_header')
@@ -49,7 +52,7 @@ def main():
         slot = row.get('slot_id','')
         role = row.get('page_role','')
         if slot not in slots:
-            errors.append('slot_not_candidate=' + slot)
+            errors.append('slot_not_active=' + slot)
             continue
         by_slot[slot].append(role)
         if row.get('batch_id') != 'candidate-10-19': errors.append('bad_batch=' + slot)
@@ -62,11 +65,11 @@ def main():
     for slot, roles in by_slot.items():
         if sorted(roles) != sorted(ROLES): errors.append('role_set=' + slot)
     if len(rows) != len(slots) * len(ROLES): errors.append('row_count')
-    print('check_set=next_10_content_blueprint_v5')
+    print('check_set=next_10_content_blueprint_v6')
     print('template_version=' + TEMPLATE_VERSION)
     print('page_set=' + PAGE_SET)
     print('contract_scope=' + CONTRACT_SCOPE)
-    print('candidate_slots=' + str(len(slots)))
+    print('active_slots=' + str(len(slots)))
     print('content_blueprint_rows=' + str(len(rows)))
     if errors:
         print('\n'.join(errors[:60]))
