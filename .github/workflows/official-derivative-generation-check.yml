@@ -76,6 +76,9 @@ jobs:
       - name: Validate candidate 10-19 value readiness
         run: python tools/official_derivatives/check_next_10_value_ready.py
 
+      - name: Validate candidate 10-19 template gate count
+        run: python tools/official_derivatives/check_next_10_template_gate_count.py
+
       - name: Validate priority effect bundle matrix
         run: python tools/official_derivatives/check_priority_effect_bundle_matrix.py
 
