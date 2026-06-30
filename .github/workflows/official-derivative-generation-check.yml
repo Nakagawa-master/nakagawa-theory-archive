@@ -67,6 +67,15 @@ jobs:
       - name: Validate candidate 10-19 verified origin overlay
         run: python tools/official_derivatives/check_next_10_verified_origin_overlay.py
 
+      - name: Validate candidate 10-19 content blueprint
+        run: python tools/official_derivatives/check_next_10_content_blueprint.py
+
+      - name: Validate candidate 10-19 content value spec
+        run: python tools/official_derivatives/check_next_10_content_value_spec.py
+
+      - name: Validate candidate 10-19 value readiness
+        run: python tools/official_derivatives/check_next_10_value_ready.py
+
       - name: Validate priority effect bundle matrix
         run: python tools/official_derivatives/check_priority_effect_bundle_matrix.py
 
@@ -117,34 +126,3 @@ jobs:
             git commit -m "Generate staged derivative pages and effect ledgers"
             git push origin HEAD:${{ github.head_ref || github.ref_name }}
           fi
-
-      - name: Upload generated pages artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: official-derivatives-candidate-05-17
-          path: |
-            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260511-e243be
-            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260416-0b1b93
-            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260418-11c3d8
-            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260607-7e87f5
-            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260613-007d94
-            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260512-1202e0
-            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260513-4e76d3
-            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260517-fe6641
-            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260518-f38a1e
-            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260211-051ce0
-            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260214-40c1de
-            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260215-198686
-            deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260227-4ecc69
-            tools/official_derivatives/derivative_registry_candidate_05_09.tsv
-            tools/official_derivatives/staged_official_derivative_registry.tsv
-            tools/official_derivatives/candidate_05_09_gate_report.md
-            tools/official_derivatives/staged_official_derivative_gate_report.md
-            tools/official_derivatives/effect_bundles/staged_effect_expansion_summary.tsv
-            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_unit_ledger.tsv
-            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_quote_units.tsv
-            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_social_units.tsv
-            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_clarification_units.tsv
-            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_notebooklm_units.tsv
-            tools/official_derivatives/effect_bundles/candidate_10_17_materialized_unit_summary.tsv
-          if-no-files-found: error
