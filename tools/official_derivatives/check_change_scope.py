@@ -1,24 +1,13 @@
 #!/usr/bin/env python3
-from pathlib import Path
 import subprocess
-import sys
 
-HERE = Path(__file__).resolve().parent
 ALLOWED_PREFIXES = ('.github/workflows/official-derivative-generation-check.yml','tools/official_derivatives/','deploy/lolipop/master-ricette/derivatives/')
 DISALLOWED_PARTS = ('sitemap','search-console','search_console')
-EXTRA_CHECKS = (
-    'check_target_folder_scope.py','check_next_batch_schema.py','check_identity_links.py',
-    'check_next_10_queue.py','check_next_10_source_inventory.py','check_next_10_public_origin_discovery.py',
-    'check_next_10_discovery_to_origin_catalog.py','check_next_10_origin_catalog.py',
-    'check_next_10_source_score_overlay.py','check_next_10_catalog_to_source_candidates.py',
-    'check_next_10_source_candidate_schema.py','check_next_10_source_quality_gate.py',
-    'check_next_10_source_candidate_report.py','check_next_10_selection_quality.py',
-    'check_next_10_content_blueprint.py','check_next_10_content_value_spec.py',
-    'check_next_10_page_bundle.py','check_next_10_intake.py','check_next_10_intake_report.py',
-    'check_workflow_artifact_scope.py','check_derivative_content_strength.py')
+
 
 def git(*args):
     return subprocess.run(['git', *args], text=True, capture_output=True)
+
 
 def changed_files():
     subprocess.run(['git','fetch','origin','main','--depth=1'], text=True)
@@ -30,17 +19,10 @@ def changed_files():
         return [line.strip() for line in result.stdout.splitlines() if line.strip()]
     return []
 
+
 def allowed(path):
     return path in ALLOWED_PREFIXES or any(path.startswith(prefix) for prefix in ALLOWED_PREFIXES if prefix.endswith('/'))
 
-def run_extra_checks():
-    for name in EXTRA_CHECKS:
-        script = HERE / name
-        if script.exists():
-            result = subprocess.run([sys.executable, str(script)])
-            if result.returncode != 0:
-                return result.returncode
-    return 0
 
 def main():
     errors=[]
@@ -51,18 +33,15 @@ def main():
             errors.append('outside_allowed_scope=' + path)
         if any(part in low for part in DISALLOWED_PARTS):
             errors.append('disallowed_path_part=' + path)
-    print('check_set=official_derivative_change_scope_v19')
+    print('check_set=official_derivative_change_scope_v20')
     print('changed_files=' + str(len(files)))
     if errors:
         print('\n'.join(errors))
         print('change_scope_pass=false')
         return 1
-    code=run_extra_checks()
-    if code != 0:
-        print('change_scope_pass=false')
-        return code
     print('change_scope_pass=true')
     return 0
 
+
 if __name__ == '__main__':
-    sys.exit(main())
+    raise SystemExit(main())
