@@ -5,11 +5,17 @@ from pathlib import Path
 SPEC = Path('tools/official_derivatives/next_10_content_value_extraction_spec_20260630.tsv')
 GATE = Path('tools/official_derivatives/next_10_high_strength_template_gate_candidate_10_19.tsv')
 FIELD_SPEC = Path('tools/official_derivatives/next_10_content_field_spec_candidate_10_19.tsv')
+ROLE_INSTRUCTIONS = Path('tools/official_derivatives/next_10_role_drafting_instruction_candidate_10_19.tsv')
 HEADER = ['value_key','source_table','required_source_fields','used_by_page_roles','status','public_export','page_generation']
+ROLE_HEADER = [
+    'batch_id','page_role','instruction_state','anchor_source','required_anchor_fields',
+    'role_anchor_use','required_reader_effect','prohibited_drift','body_text_generation','html_generation','public_export',
+]
 REQUIRED = {
     'origin_identity','value_core','causal_line','misreading_guard',
     'origin_return','page_links','question_set','index_definition'
 }
+EXPECTED_ROLES = ['hub','human_summary','faq','ja_ai_index','en_ai_index','zh_ai_index']
 FIELD_COVER = {
     'question_set': {'beginner_questions','structure_questions','boundary_questions'},
     'answer_set': {'beginner_questions','structure_questions','boundary_questions'},
@@ -19,12 +25,24 @@ FIELD_COVER = {
     'origin_identity': {'origin_preservation'},
     'misreading_guard': {'interpretation_warnings','reuse_constraints'},
 }
+ROLE_ANCHOR_NEEDS = {
+    'hub': {'value_anchor','origin_return_anchor'},
+    'human_summary': {'value_anchor','causal_anchor','human_entry_anchor','misreading_guard_anchor','origin_return_anchor'},
+    'faq': {'misreading_guard_anchor','causal_anchor','origin_return_anchor'},
+    'ja_ai_index': {'value_anchor','causal_anchor','ai_reference_anchor','origin_return_anchor'},
+    'en_ai_index': {'value_anchor','causal_anchor','ai_reference_anchor','origin_return_anchor'},
+    'zh_ai_index': {'value_anchor','causal_anchor','ai_reference_anchor','origin_return_anchor'},
+}
 
 
 def read(path):
     with path.open(encoding='utf-8', newline='') as f:
         reader = csv.DictReader(f, delimiter='\t')
         return reader.fieldnames or [], list(reader)
+
+
+def split_set(value):
+    return set(filter(None, value.split('|')))
 
 
 def covered(field, sections):
@@ -40,11 +58,14 @@ def main():
     header, rows = read(SPEC)
     _, gate_rows = read(GATE)
     _, field_rows = read(FIELD_SPEC)
+    role_header, role_rows = read(ROLE_INSTRUCTIONS)
     errors = []
     keys = {r.get('value_key','') for r in rows}
     gate_by_role = {r.get('page_role',''): set(filter(None, r.get('required_sections','').split('|'))) for r in gate_rows}
     if header != HEADER:
         errors.append('bad_content_value_spec_header')
+    if role_header != ROLE_HEADER:
+        errors.append('bad_role_instruction_header')
     if keys != REQUIRED:
         errors.append('content_value_spec_keys_mismatch')
     for r in rows:
@@ -62,6 +83,10 @@ def main():
         errors.append(f'gate_rows={len(gate_rows)} expected=6')
     if len(field_rows) != 6:
         errors.append(f'field_rows={len(field_rows)} expected=6')
+    if len(role_rows) != 6:
+        errors.append(f'role_instruction_rows={len(role_rows)} expected=6')
+    if [r.get('page_role','') for r in role_rows] != EXPECTED_ROLES:
+        errors.append('role_instruction_sequence_mismatch')
     for spec_row in field_rows:
         role = spec_row.get('page_role','')
         sections = gate_by_role.get(role)
@@ -77,13 +102,30 @@ def main():
             errors.append('field_public_export_not_false=' + role)
         if spec_row.get('page_generation') != 'false':
             errors.append('field_page_generation_not_false=' + role)
-    print('check_set=next_10_content_value_spec_v2')
+    for r in role_rows:
+        role = r.get('page_role','')
+        if r.get('batch_id') != 'candidate-10-19':
+            errors.append('bad_role_instruction_batch=' + role)
+        if r.get('instruction_state') != 'instruction_ready':
+            errors.append('bad_role_instruction_state=' + role)
+        if r.get('anchor_source') != 'next_10_body_value_anchor_candidate_10_19.tsv':
+            errors.append('bad_role_anchor_source=' + role)
+        if not ROLE_ANCHOR_NEEDS.get(role, set()).issubset(split_set(r.get('required_anchor_fields',''))):
+            errors.append('role_anchor_fields_missing=' + role)
+        for field in ['role_anchor_use','required_reader_effect','prohibited_drift']:
+            if not r.get(field,'').strip():
+                errors.append('role_instruction_field_missing=' + role + ':' + field)
+        for field in ['body_text_generation','html_generation','public_export']:
+            if r.get(field) != 'false':
+                errors.append('role_instruction_boundary_not_false=' + role + ':' + field)
+    print('check_set=next_10_content_value_spec_v3')
     print('content_value_spec_rows=' + str(len(rows)))
     print('field_rows=' + str(len(field_rows)))
+    print('role_instruction_rows=' + str(len(role_rows)))
     print('public_export=false')
     print('page_generation=false')
     if errors:
-        print('\n'.join(errors[:60]))
+        print('\n'.join(errors[:80]))
         print('next_10_content_value_spec_pass=false')
         return 1
     print('next_10_content_value_spec_pass=true')
