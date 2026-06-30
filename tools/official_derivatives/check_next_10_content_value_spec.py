@@ -39,7 +39,7 @@ EXPECTED_ROLES = ['hub','human_summary','faq','ja_ai_index','en_ai_index','zh_ai
 EXPECTED_SLOTS = [f'Official Derivative {i:03d}' for i in range(10, 18)]
 REQUIRED_POLICY_PRE = {
     'virtual_48_units','value_ready','draft_material_ready','skeleton_gate','quality_gate',
-    'value_anchor_gate','role_instruction_gate','failure_profile_gate','role_review_gate',
+    'value_anchor_gate','role_instruction_gate','failure_profile_gate','role_review_gate','draft_text_only_harness',
 }
 REQUIRED_POLICY_POST = {
     'origin_retention','causal_line','misreading_guard','role_quality_axes','boundary_check','no_public_export',
