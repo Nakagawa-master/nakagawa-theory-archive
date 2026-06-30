@@ -4,6 +4,7 @@ from pathlib import Path
 
 QUEUE = Path('tools/official_derivatives/next_10_queue_candidate_10_19.tsv')
 BUNDLE = Path('tools/official_derivatives/next_10_page_input_bundle_candidate_10_19.tsv')
+VR = Path('tools/official_derivatives/next_10_vr_min_20260630.tsv')
 ROLES = 'hub|human_summary|faq|ja_ai_index|en_ai_index|zh_ai_index'
 
 
@@ -15,6 +16,7 @@ def rows(path):
 def main():
     q = rows(QUEUE)
     b = rows(BUNDLE)
+    v = rows(VR)
     slots = {r.get('slot_id',''): r.get('folder_id','') for r in q if r.get('selection_status') == 'candidate'}
     errors = []
     seen = set()
@@ -34,11 +36,24 @@ def main():
                 errors.append(key + '_not_false=' + slot)
     if seen != set(slots):
         errors.append('slot_set_mismatch')
-    print('check_set=next_10_page_bundle_v1')
+    v_seen = set()
+    for r in v:
+        slot = r.get('slot_id','')
+        v_seen.add(slot)
+        if slot not in slots:
+            errors.append('vr_slot_not_candidate=' + slot)
+        elif r.get('folder_id','') != slots[slot]:
+            errors.append('vr_folder_mismatch=' + slot)
+        if r.get('state','') != 'ok':
+            errors.append('vr_state_not_ok=' + slot)
+    if v_seen != set(slots):
+        errors.append('vr_slot_set_mismatch')
+    print('check_set=next_10_page_bundle_v2')
     print('candidate_slots=' + str(len(slots)))
     print('bundle_rows=' + str(len(b)))
+    print('vr_rows=' + str(len(v)))
     if errors:
-        print('\n'.join(errors[:40]))
+        print('\n'.join(errors[:50]))
         print('next_10_page_bundle_pass=false')
         return 1
     print('next_10_page_bundle_pass=true')
