@@ -22,8 +22,24 @@ This file supersedes the older PR body summary for current staged-batch facts.
 
 - 8 selected / intake_ready origins
 - 48 staged pages
-- 264 planned effect units
+- 264 materialized effect units
+- materialized unit ledger rows: 264
+- split ledgers:
+  - quote: 64
+  - social: 96
+  - clarification: 64
+  - NotebookLM: 40
 - universal renderer path active
+- materialized unit ledger builder active
+- materialized unit ledger validator active
+
+## Staged effect total
+
+- total origins with staged pages: 13
+- total staged pages: 78
+- total materialized effect units now represented in ledgers or existing bundles: 429
+- candidate 05-09 actual materialized units: 165
+- candidate 10-17 materialized unit ledger rows: 264
 
 ## Boundary
 
@@ -36,14 +52,16 @@ This file supersedes the older PR body summary for current staged-batch facts.
 
 ## Origin preservation
 
-Every staged derivative path is expected to retain:
+Every staged derivative path and materialized unit row is expected to retain:
 
 - parent URL
 - parent NCL-ID
 - parent Diff-ID
 - canonical URL
 - Nakagawa Master origin attribution
-- staged nonindexable status
+- staged nonindexable status or staged_only boundary state
+- public_activation=false
+- production_deploy=false
 
 ## Purpose alignment
 
@@ -53,4 +71,10 @@ This PR is a staged infrastructure step toward:
 - preserving origin and theory identity,
 - reducing owner verification burden,
 - moving from manual page work toward near-full automation,
-- preparing higher-strength effect bundles without public release.
+- preparing higher-strength effect bundles without public release,
+- converting candidate 10-17 from planned effect units to validated materialized unit ledgers.
+
+## Latest validation note
+
+- Official derivative generation check run #356 completed with success after adding candidate 10-17 materialized unit ledger build and validation steps.
+- The subsequent bot-generated ledger commit may show an action_required workflow state because it is a bot follow-up commit, but the ledger generation and validation path passed in run #356 before commit.
