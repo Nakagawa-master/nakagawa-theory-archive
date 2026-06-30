@@ -92,7 +92,9 @@ jobs:
             deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260215-198686 \
             deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260227-4ecc69 \
             tools/official_derivatives/derivative_registry_candidate_05_09.tsv \
-            tools/official_derivatives/candidate_05_09_gate_report.md
+            tools/official_derivatives/staged_official_derivative_registry.tsv \
+            tools/official_derivatives/candidate_05_09_gate_report.md \
+            tools/official_derivatives/staged_official_derivative_gate_report.md
           if git diff --cached --quiet; then
             echo "No generated page or report changes to commit."
           else
@@ -119,5 +121,7 @@ jobs:
             deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260215-198686
             deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260227-4ecc69
             tools/official_derivatives/derivative_registry_candidate_05_09.tsv
+            tools/official_derivatives/staged_official_derivative_registry.tsv
             tools/official_derivatives/candidate_05_09_gate_report.md
+            tools/official_derivatives/staged_official_derivative_gate_report.md
           if-no-files-found: error
