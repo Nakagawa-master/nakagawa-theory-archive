@@ -13,18 +13,22 @@ def rows(path):
         return list(csv.DictReader(f, delimiter='\t'))
 
 
+def active(row):
+    return (row.get('selection_status') == 'candidate' and row.get('handoff_status') == 'intake_blocked') or (row.get('selection_status') == 'selected' and row.get('handoff_status') == 'intake_ready')
+
+
 def main():
     q = rows(QUEUE)
     b = rows(BUNDLE)
     v = rows(VR)
-    slots = {r.get('slot_id',''): r.get('folder_id','') for r in q if r.get('selection_status') == 'candidate'}
+    slots = {r.get('slot_id',''): r.get('folder_id','') for r in q if active(r)}
     errors = []
     seen = set()
     for r in b:
         slot = r.get('slot_id','')
         seen.add(slot)
         if slot not in slots:
-            errors.append('slot_not_candidate=' + slot)
+            errors.append('slot_not_active=' + slot)
         elif r.get('folder_id','') != slots[slot]:
             errors.append('folder_mismatch=' + slot)
         if r.get('page_roles','') != ROLES:
@@ -43,15 +47,15 @@ def main():
         slot = r.get('slot_id','')
         v_seen.add(slot)
         if slot not in slots:
-            errors.append('vr_slot_not_candidate=' + slot)
+            errors.append('vr_slot_not_active=' + slot)
         elif r.get('folder_id','') != slots[slot]:
             errors.append('vr_folder_mismatch=' + slot)
         if r.get('state','') != 'ok':
             errors.append('vr_state_not_ok=' + slot)
     if v_seen != set(slots):
         errors.append('vr_slot_set_mismatch')
-    print('check_set=next_10_page_bundle_v3')
-    print('candidate_slots=' + str(len(slots)))
+    print('check_set=next_10_page_bundle_v4')
+    print('active_slots=' + str(len(slots)))
     print('bundle_rows=' + str(len(b)))
     print('vr_rows=' + str(len(v)))
     print('content_values_ready=true')
