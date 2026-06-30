@@ -31,6 +31,9 @@ jobs:
       - name: Run PR35 current status check
         run: grep -q 'virtual preparation units: 48' tools/official_derivatives/pr_35_current_status.md
 
+      - name: Run candidate 10-19 selection count check
+        run: python tools/official_derivatives/check_next_10_selection_counts.py
+
       - name: Run release operation manifest check
         run: python tools/official_derivatives/check_release_operation_manifest.py
 
