@@ -6,6 +6,7 @@ ROOT = Path(__file__).resolve().parent
 EXPECTED = ROOT / 'effect_bundles' / 'candidate_10_17_effect_bundle_expected_counts.tsv'
 TARGETS = ROOT / 'targets.tsv'
 QUEUE = ROOT / 'next_10_queue_candidate_10_19.tsv'
+SPEC = ROOT / 'effect_bundles' / 'candidate_10_17_unit_materialization_spec.md'
 
 
 def read(path):
@@ -41,9 +42,12 @@ def main():
         errors.append('row_count=' + str(len(expected)))
     if total != 264:
         errors.append('total_units=' + str(total))
-    print('check_set=candidate_10_17_effect_bundle_plan_v1')
+    if not SPEC.exists():
+        errors.append('missing_materialization_spec')
+    print('check_set=candidate_10_17_effect_bundle_plan_v2')
     print('origin_count=' + str(len(folders)))
     print('expected_total_units=' + str(total))
+    print('spec_exists=' + str(SPEC.exists()).lower())
     print('public_activation=false')
     print('production_deploy=false')
     if errors:
