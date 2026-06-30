@@ -28,6 +28,9 @@ jobs:
       - name: Run candidate boundary doc check
         run: python tools/official_derivatives/check_candidate_boundary_doc.py
 
+      - name: Run PR35 current status check
+        run: grep -q 'virtual preparation units: 48' tools/official_derivatives/pr_35_current_status.md
+
       - name: Run release operation manifest check
         run: python tools/official_derivatives/check_release_operation_manifest.py
 
