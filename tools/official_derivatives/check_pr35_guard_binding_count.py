@@ -53,10 +53,17 @@ def main() -> int:
         if not path.is_file():
             errors.append(f'missing_path:{key}')
     index_keys = [row['item_key'] for row in index_rows]
+    index_types = [row['item_type'] for row in index_rows]
     if len(index_rows) != 8:
         errors.append(f'index_row_count={len(index_rows)} expected=8')
     if len(set(index_keys)) != len(index_keys):
         errors.append('duplicate_index_key')
+    if set(index_types) != {'script', 'table'}:
+        errors.append('index_type_set_mismatch')
+    if index_types.count('script') != 4:
+        errors.append(f'index_script_count={index_types.count("script")} expected=4')
+    if index_types.count('table') != 4:
+        errors.append(f'index_table_count={index_types.count("table")} expected=4')
     for row in index_rows:
         key = row['item_key']
         file_path = row['file_path']
@@ -73,7 +80,7 @@ def main() -> int:
             errors.append(f'bad_index_path_suffix:{key}')
         if not path.is_file():
             errors.append(f'missing_index_path:{key}')
-    print('check_set=pr35_guard_binding_count_v5')
+    print('check_set=pr35_guard_binding_count_v6')
     print(f'rows={len(rows)}')
     print(f'evidence_rows={len(evidence_rows)}')
     print(f'index_rows={len(index_rows)}')
