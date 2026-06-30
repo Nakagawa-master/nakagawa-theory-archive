@@ -73,10 +73,12 @@ This PR is a staged infrastructure step toward:
 - moving from manual page work toward near-full automation,
 - preparing higher-strength effect bundles without public release,
 - converting candidate 10-17 from planned effect units to validated materialized unit ledgers,
-- adding a separate public-export preflight gate before any later owner/publication boundary action.
+- adding a separate public-export preflight gate before any later owner/publication boundary action,
+- checking entry-signal markers across the 78 staged pages before any later owner/publication boundary action.
 
 ## Latest validation note
 
-- Official derivative generation check run #364 completed with success after accepting materialized summary scopes.
-- Official derivative preflight check run #2 completed with success.
-- Public export preflight now verifies staged targets, staged pages, registry rows, 429 materialized units, origin identity, and non-production boundaries before any later owner/publication boundary action.
+- Official derivative generation check run #369 completed with success.
+- Official derivative preflight check run #7 completed with success.
+- Public export preflight verifies staged targets, staged pages, registry rows, 429 materialized units, origin identity, and non-production boundaries before any later owner/publication boundary action.
+- Entry signal check now runs in the preflight workflow and verifies the 78 staged pages for required role-level entry markers.
