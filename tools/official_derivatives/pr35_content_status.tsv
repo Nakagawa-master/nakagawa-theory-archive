@@ -1,0 +1,6 @@
+field	value
+content_state	review
+owner_check	before_next_step
+upload_state	not_ready
+pilot_base	needed
+source_reading	needed
