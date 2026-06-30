@@ -10,6 +10,15 @@ MANIFEST = HERE / 'origin_manifest.tsv'
 REGISTRY = HERE / 'derivative_registry_candidate_05_09.tsv'
 REPORT = HERE / 'candidate_05_09_gate_report.md'
 PAGES = ['index.html','ja/human-summary/index.html','ja/faq/index.html','ja/ai-index/index.html','en/ai-index/index.html','zh/ai-index/index.html']
+REG_HEADER = ['registry_version','batch_id','origin_slot_id','derivative_id','page_role','language','export_status','parent_url','parent_title','parent_ncl_id','parent_diff_id','folder_id','relative_path','canonical_url','origin_author','source_archive','quality_gate_status','render_status','created_from_manifest','notes']
+REG_PAGES = [
+    ('hub','und','index.html',''),
+    ('human_summary','ja','ja/human-summary/index.html','ja/human-summary/'),
+    ('faq','ja','ja/faq/index.html','ja/faq/'),
+    ('ja_ai_index','ja','ja/ai-index/index.html','ja/ai-index/'),
+    ('en_ai_index','en','en/ai-index/index.html','en/ai-index/'),
+    ('zh_ai_index','zh','zh/ai-index/index.html','zh/ai-index/'),
+]
 
 
 def read_tsv(path):
@@ -28,6 +37,43 @@ def page_count(folders):
             else:
                 missing.append(str(path))
     return checked, missing
+
+
+def write_registry(manifest, staged):
+    rows = []
+    staged_set = set(staged)
+    for m in manifest:
+        folder = m['folder_id']
+        if folder not in staged_set:
+            continue
+        for role, lang, rel, suffix in REG_PAGES:
+            rows.append({
+                'registry_version': 'v0.2',
+                'batch_id': 'staged-official-derivatives',
+                'origin_slot_id': m['pilot_id'],
+                'derivative_id': folder + '--' + role.replace('_','-'),
+                'page_role': role,
+                'language': lang,
+                'export_status': 'staged',
+                'parent_url': m['parent_url'],
+                'parent_title': m['hub_title'],
+                'parent_ncl_id': m['parent_ncl_id'],
+                'parent_diff_id': m['parent_diff_id'],
+                'folder_id': folder,
+                'relative_path': rel,
+                'canonical_url': m['canonical_url'] + suffix,
+                'origin_author': 'Nakagawa Master',
+                'source_archive': 'master.ricette.jp',
+                'quality_gate_status': 'pending',
+                'render_status': 'staged_nonindexable',
+                'created_from_manifest': 'true',
+                'notes': 'generated row',
+            })
+    with REGISTRY.open('w', encoding='utf-8', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=REG_HEADER, delimiter='\t')
+        writer.writeheader()
+        writer.writerows(rows)
+    return rows
 
 
 def write_report(values):
@@ -68,9 +114,9 @@ def write_report(values):
 def main():
     targets = read_tsv(TARGETS)
     manifest = read_tsv(MANIFEST)
-    registry = read_tsv(REGISTRY) if REGISTRY.exists() else []
     active = [r['folder_id'] for r in targets if r.get('export_status') == 'active']
     staged = [r['folder_id'] for r in targets if r.get('export_status') == 'staged']
+    registry = write_registry(manifest, staged)
     checked_staged, missing = page_count(staged)
     expected_staged = len(staged) * len(PAGES)
     values = {
@@ -88,7 +134,7 @@ def main():
         'manifest_rows': len(manifest),
     }
     write_report(values)
-    print('summary_set=official_derivative_batch_v3')
+    print('summary_set=official_derivative_batch_v4')
     for key, value in values.items():
         print(str(key) + '=' + str(value))
     if missing:
@@ -99,6 +145,10 @@ def main():
     if len(manifest) != len(targets):
         print('batch_summary_pass=false')
         print('manifest_target_count_mismatch=true')
+        return 1
+    if len(registry) != expected_staged:
+        print('batch_summary_pass=false')
+        print('registry_rows_expected=' + str(expected_staged))
         return 1
     print('report=' + str(REPORT))
     print('batch_summary_pass=true')
