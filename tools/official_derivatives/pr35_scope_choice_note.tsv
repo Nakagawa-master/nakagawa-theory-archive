@@ -1,0 +1,4 @@
+scope_option	source_pr	folder_count	page_count	materialized_effect_units	coverage_level	review_load	choice_state	change_now	note
+all_13	35	13	78	429	full	high	ready_for_choice	false	uses_all_current_staged_folders
+candidate_05_09_only	35	5	30	165	initial	low	ready_for_choice	false	uses_initial_complete_batch_only
+candidate_10_17_only	35	8	48	264	followup	medium	hold	false	uses_followup_batch_without_initial_batch
