@@ -9,7 +9,7 @@ public_export: false
 
 Keep Official Derivative 010-017 ready for later body drafting without creating page body text, generated HTML, public export, sitemap changes, or index/follow conversion.
 
-The pre-body gate must confirm that body drafting can later preserve origin identity, value core, causal line, misreading guard, origin return, page links, FAQ question sets, AI index definitions, body skeleton requirements, body quality requirements, per-slot value anchors, role-specific drafting instructions, slot failure profiles, and role review criteria.
+The pre-body gate must confirm that body drafting can later preserve origin identity, value core, causal line, misreading guard, origin return, page links, FAQ question sets, AI index definitions, body skeleton requirements, body quality requirements, per-slot value anchors, role-specific drafting instructions, slot failure profiles, role review criteria, and a virtual 48-unit body draft readiness matrix.
 
 ## Inputs
 
@@ -52,6 +52,8 @@ The pre-body gate must confirm that body drafting can later preserve origin iden
 - role drafting instruction gate: instruction_ready
 - slot failure profile gate: failure_profile_ready
 - role review criteria gate: review_ready
+- virtual body draft readiness matrix: 48 units, generated inside the checker from 8 slots x 6 roles
+- body draft readiness: spec_ready_not_generated
 - body text generation: false
 - HTML generation: false
 - public export: false
@@ -90,6 +92,7 @@ This prevents later drafts from becoming generic summaries, service introduction
 - each slot failure profile must preserve origin_return
 - each role has review criteria with must_check, must_fail_if, and quality_axes
 - each role review must keep the relevant human / FAQ / AI reuse criteria before any body text generation
+- the checker derives 48 virtual body draft units from Official Derivative 010-017 x six page roles and confirms the full matrix exists without creating page body text
 
 ## Boundary
 
