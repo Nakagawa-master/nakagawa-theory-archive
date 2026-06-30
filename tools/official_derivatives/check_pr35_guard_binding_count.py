@@ -5,6 +5,7 @@ from pathlib import Path
 BINDINGS = Path('tools/official_derivatives/pr35_guard_check_bindings.tsv')
 EVIDENCE = Path('tools/official_derivatives/pr35_guard_evidence_keys.tsv')
 FILE_INDEX = Path('tools/official_derivatives/pr35_file_index.tsv')
+WORKFLOW = Path('.github/workflows/official-derivative-preflight-check.yml')
 EXPECTED_KEYS = {
     'candidate_list_check',
     'preflight_check',
@@ -31,6 +32,7 @@ def main() -> int:
     rows = read_rows(BINDINGS)
     evidence_rows = read_rows(EVIDENCE)
     index_rows = read_rows(FILE_INDEX)
+    workflow_text = WORKFLOW.read_text(encoding='utf-8')
     errors: list[str] = []
     keys = [row['evidence_key'] for row in rows]
     evidence_keys = {row['evidence_key'] for row in evidence_rows}
@@ -84,6 +86,7 @@ def main() -> int:
             errors.append(f'missing_script_pair:{script_key}')
         elif script_row['item_type'] != 'script':
             errors.append(f'bad_pair_script_type:{script_key}')
+    workflow_script_count = 0
     for row in index_rows:
         key = row['item_key']
         file_path = row['file_path']
@@ -103,12 +106,20 @@ def main() -> int:
             errors.append(f'bad_script_path:{key}')
         if item_type == 'table' and path.suffix != '.tsv':
             errors.append(f'bad_table_path:{key}')
+        if item_type == 'script':
+            if file_path not in workflow_text:
+                errors.append(f'workflow_missing_script:{key}')
+            else:
+                workflow_script_count += 1
         if not path.is_file():
             errors.append(f'missing_index_path:{key}')
-    print('check_set=pr35_guard_binding_count_v8')
+    if workflow_script_count != 4:
+        errors.append(f'workflow_script_count={workflow_script_count} expected=4')
+    print('check_set=pr35_guard_binding_count_v9')
     print(f'rows={len(rows)}')
     print(f'evidence_rows={len(evidence_rows)}')
     print(f'index_rows={len(index_rows)}')
+    print(f'workflow_scripts={workflow_script_count}')
     if errors:
         for error in errors:
             print(error)
