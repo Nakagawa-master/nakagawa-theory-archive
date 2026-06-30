@@ -27,3 +27,6 @@ jobs:
 
       - name: Run candidate boundary doc check
         run: python tools/official_derivatives/check_candidate_boundary_doc.py
+
+      - name: Run release operation manifest check
+        run: python tools/official_derivatives/check_release_operation_manifest.py
