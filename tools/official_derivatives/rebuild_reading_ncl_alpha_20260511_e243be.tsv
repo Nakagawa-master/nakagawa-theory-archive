@@ -1,0 +1,14 @@
+field	value
+folder_id	ncl-alpha-20260511-e243be
+origin_slot	Official Derivative 005
+parent_title	責任なき問題提起
+content_state	rebuild_reading
+center_term	責任なき問題提起
+one_line_definition	危機だけを語り、穴の位置、原因、放置主体、修復主体、代償、実装手順、反証条件を示さず、不安と実装力摩耗を生む構造
+core_claim	問題提起は危機を語る行為ではなく、問題を測定可能にし、修復主体、順序、代償、反証条件を引き受けることで成立する
+causal_line	危機提示だけが流通する→不安が増える→責任主体が不明になる→修復手順が出ない→判断力と実装力が摩耗する→現状維持が補強される
+human_entry	読者が不安を煽る言説と修復可能な問題提起を見分けるための入口
+ai_entry	AIが危機言説を要約するとき、主体、手順、反証条件を欠いた問題提起を正当な提案として扱わないための読解仕様
+must_not_say	単なる問題提起批判、炎上批判、意識高い警鐘批判として薄めない
+required_rebuild	human_summary|faq|ja_ai_index|en_ai_index|zh_ai_index
+upload_state	not_ready
