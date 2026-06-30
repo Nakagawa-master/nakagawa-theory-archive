@@ -31,7 +31,9 @@ def main():
             errors.append('roles_mismatch=' + slot)
         if r.get('input_state','') != 'pending':
             errors.append('state_not_pending=' + slot)
-        for key in ['public_export','page_generation','content_values_ready']:
+        if r.get('content_values_ready','') != 'true':
+            errors.append('content_values_not_ready=' + slot)
+        for key in ['public_export','page_generation']:
             if r.get(key,'') != 'false':
                 errors.append(key + '_not_false=' + slot)
     if seen != set(slots):
@@ -48,10 +50,13 @@ def main():
             errors.append('vr_state_not_ok=' + slot)
     if v_seen != set(slots):
         errors.append('vr_slot_set_mismatch')
-    print('check_set=next_10_page_bundle_v2')
+    print('check_set=next_10_page_bundle_v3')
     print('candidate_slots=' + str(len(slots)))
     print('bundle_rows=' + str(len(b)))
     print('vr_rows=' + str(len(v)))
+    print('content_values_ready=true')
+    print('public_export=false')
+    print('page_generation=false')
     if errors:
         print('\n'.join(errors[:50]))
         print('next_10_page_bundle_pass=false')
