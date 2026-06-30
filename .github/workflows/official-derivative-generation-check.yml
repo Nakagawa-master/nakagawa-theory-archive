@@ -22,6 +22,9 @@ jobs:
       - name: Generate candidate 05-09 pages
         run: python tools/official_derivatives/generate_candidate_05_09_html.py
 
+      - name: Validate candidate generator core parity
+        run: python tools/official_derivatives/check_candidate_generator_core_parity.py
+
       - name: Validate template parity
         run: python tools/official_derivatives/validate_template_parity.py --status=staged
 
