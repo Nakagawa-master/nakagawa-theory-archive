@@ -15,6 +15,13 @@ def read(path):
         return list(csv.DictReader(f, delimiter='\t'))
 
 
+def first_summary(summary, scopes):
+    for scope in scopes:
+        if scope in summary:
+            return summary[scope]
+    return {}
+
+
 def main():
     expected = read(EXPECTED)
     staged = {r['folder_id'] for r in read(TARGETS) if r.get('export_status') == 'staged'}
@@ -46,15 +53,29 @@ def main():
         errors.append('total_units=' + str(total))
     if not SPEC.exists():
         errors.append('missing_materialization_spec')
-    if summary.get('candidate_10_17_planned', {}).get('total_units') != '264':
+
+    summary_10_17 = first_summary(summary, ['candidate_10_17_materialized', 'candidate_10_17_planned'])
+    summary_total = first_summary(summary, ['staged_total_materialized', 'staged_total'])
+    if summary_10_17.get('total_units') != '264':
         errors.append('summary_10_17_total')
-    if summary.get('staged_total', {}).get('total_units') != '429':
+    if summary_total.get('total_units') != '429':
         errors.append('summary_staged_total')
-    print('check_set=candidate_10_17_effect_bundle_plan_v3')
+    if summary_10_17 and summary_10_17.get('public_activation') != 'false':
+        errors.append('summary_10_17_public_activation')
+    if summary_10_17 and summary_10_17.get('production_deploy') != 'false':
+        errors.append('summary_10_17_production_deploy')
+    if summary_total and summary_total.get('public_activation') != 'false':
+        errors.append('summary_total_public_activation')
+    if summary_total and summary_total.get('production_deploy') != 'false':
+        errors.append('summary_total_production_deploy')
+
+    print('check_set=candidate_10_17_effect_bundle_plan_v4')
     print('origin_count=' + str(len(folders)))
     print('expected_total_units=' + str(total))
     print('spec_exists=' + str(SPEC.exists()).lower())
     print('summary_exists=' + str(SUMMARY.exists()).lower())
+    print('summary_10_17_scope=' + summary_10_17.get('scope', 'missing'))
+    print('summary_total_scope=' + summary_total.get('scope', 'missing'))
     print('public_activation=false')
     print('production_deploy=false')
     if errors:
