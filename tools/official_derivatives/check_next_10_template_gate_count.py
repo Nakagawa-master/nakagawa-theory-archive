@@ -34,6 +34,7 @@ STATUS_REQUIRED = [
     'html_' + 'generation: false',
     'public_' + 'export: false',
 ]
+STATUS_REMAINDER_PARTS = ['018', '019']
 
 
 def read_rows(path: Path):
@@ -65,6 +66,9 @@ def main():
     for item in STATUS_REQUIRED:
         if item not in status_text:
             errors.append('status_missing=' + item)
+    for item in STATUS_REMAINDER_PARTS:
+        if item not in status_text:
+            errors.append('status_remainder_missing=' + item)
     for row in rows:
         role = row.get('page_role','')
         sections = set(filter(None, row.get('required_sections','').split('|')))
@@ -99,10 +103,11 @@ def main():
             errors.append('bad_field_public=' + role)
         if spec.get('page_generation') != 'false':
             errors.append('bad_field_page=' + role)
-    print('check_set=next_10_template_gate_count_v5')
+    print('check_set=next_10_template_gate_count_v6')
     print('rows=' + str(len(rows)))
     print('field_rows=' + str(len(field_rows)))
     print('status_required=' + str(len(STATUS_REQUIRED)))
+    print('status_remainder_parts=' + str(len(STATUS_REMAINDER_PARTS)))
     if errors:
         print('\n'.join(errors[:50]))
         print('next_10_template_gate_count_pass=false')
