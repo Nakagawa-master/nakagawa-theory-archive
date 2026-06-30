@@ -7,6 +7,7 @@ EXPECTED = ROOT / 'effect_bundles' / 'candidate_10_17_effect_bundle_expected_cou
 TARGETS = ROOT / 'targets.tsv'
 QUEUE = ROOT / 'next_10_queue_candidate_10_19.tsv'
 SPEC = ROOT / 'effect_bundles' / 'candidate_10_17_unit_materialization_spec.md'
+SUMMARY = ROOT / 'effect_bundles' / 'staged_effect_expansion_summary.tsv'
 
 
 def read(path):
@@ -18,6 +19,7 @@ def main():
     expected = read(EXPECTED)
     staged = {r['folder_id'] for r in read(TARGETS) if r.get('export_status') == 'staged'}
     selected = {r['folder_id'] for r in read(QUEUE) if r.get('selection_status') == 'selected' and r.get('handoff_status') == 'intake_ready'}
+    summary = {r['scope']: r for r in read(SUMMARY)} if SUMMARY.exists() else {}
     errors = []
     total = 0
     folders = set()
@@ -44,10 +46,15 @@ def main():
         errors.append('total_units=' + str(total))
     if not SPEC.exists():
         errors.append('missing_materialization_spec')
-    print('check_set=candidate_10_17_effect_bundle_plan_v2')
+    if summary.get('candidate_10_17_planned', {}).get('total_units') != '264':
+        errors.append('summary_10_17_total')
+    if summary.get('staged_total', {}).get('total_units') != '429':
+        errors.append('summary_staged_total')
+    print('check_set=candidate_10_17_effect_bundle_plan_v3')
     print('origin_count=' + str(len(folders)))
     print('expected_total_units=' + str(total))
     print('spec_exists=' + str(SPEC.exists()).lower())
+    print('summary_exists=' + str(SUMMARY.exists()).lower())
     print('public_activation=false')
     print('production_deploy=false')
     if errors:
