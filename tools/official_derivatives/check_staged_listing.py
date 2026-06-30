@@ -4,7 +4,10 @@ import csv
 import sys
 
 ROOT = Path(__file__).resolve().parents[2]
-TARGETS = Path(__file__).resolve().parent / 'targets.tsv'
+HERE = Path(__file__).resolve().parent
+TARGETS = HERE / 'targets.tsv'
+STAGED_REGISTRY = HERE / 'staged_official_derivative_registry.tsv'
+STAGED_REPORT = HERE / 'staged_official_derivative_gate_report.md'
 CHECK_FILES = [
     ROOT / 'deploy/lolipop/master-ricette/sitemap.xml',
     ROOT / 'deploy/lolipop/master-ricette/sitemap_index.xml',
@@ -13,8 +16,8 @@ CHECK_FILES = [
 PAGE_SUFFIXES = ['', 'ja/human-summary/', 'ja/faq/', 'ja/ai-index/', 'en/ai-index/', 'zh/ai-index/']
 
 
-def rows():
-    with TARGETS.open(encoding='utf-8', newline='') as f:
+def rows(path=TARGETS):
+    with path.open(encoding='utf-8', newline='') as f:
         return list(csv.DictReader(f, delimiter='\t'))
 
 
@@ -28,7 +31,7 @@ def staged_patterns(folder):
 
 
 def main():
-    print('check_set=staged_listing_v3')
+    print('check_set=staged_listing_v4')
     staged = [r['folder_id'] for r in rows() if r.get('export_status') == 'staged']
     errors = []
     checked = 0
@@ -42,6 +45,12 @@ def main():
                 if pattern in text:
                     errors.append(str(path) + ' contains staged pattern ' + folder)
                     break
+    if not STAGED_REGISTRY.exists():
+        errors.append('missing_staged_registry_alias')
+    elif len(rows(STAGED_REGISTRY)) != len(staged) * 6:
+        errors.append('staged_registry_count_mismatch')
+    if not STAGED_REPORT.exists():
+        errors.append('missing_staged_report_alias')
     if errors:
         print('\n'.join(errors))
         print('staged_listing_pass=false')
