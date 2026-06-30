@@ -1,0 +1,9 @@
+item_key	source_pr	file_path	item_type	state	change_now
+rank_state	35	tools/official_derivatives/pr35_prepared_rank_state.tsv	table	present	false
+rank_state_script	35	tools/official_derivatives/check_pr35_prepared_rank_state.py	script	present	false
+rank1_table	35	tools/official_derivatives/pr35_rank1_guard_matrix.tsv	table	present	false
+rank1_script	35	tools/official_derivatives/check_pr35_rank1_guard_table.py	script	present	false
+evidence_keys	35	tools/official_derivatives/pr35_guard_evidence_keys.tsv	table	present	false
+evidence_keys_script	35	tools/official_derivatives/check_pr35_guard_evidence_keys.py	script	present	false
+binding_rows	35	tools/official_derivatives/pr35_guard_check_bindings.tsv	table	present	false
+binding_rows_script	35	tools/official_derivatives/check_pr35_guard_binding_count.py	script	present	false
