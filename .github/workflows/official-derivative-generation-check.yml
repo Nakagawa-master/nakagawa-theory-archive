@@ -79,6 +79,9 @@ jobs:
       - name: Validate candidate 10-19 template gate count
         run: python tools/official_derivatives/check_next_10_template_gate_count.py
 
+      - name: Validate candidate 10-19 body skeleton gate
+        run: python tools/official_derivatives/check_next_10_body_skeleton_gate.py
+
       - name: Validate priority effect bundle matrix
         run: python tools/official_derivatives/check_priority_effect_bundle_matrix.py
 
