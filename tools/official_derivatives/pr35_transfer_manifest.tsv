@@ -1,0 +1,14 @@
+source_pr	folder_id	page_count	local_root	server_root	owner_step
+35	ncl-alpha-20260211-051ce0	6	deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260211-051ce0	/derivatives/ncl-alpha-20260211-051ce0	required
+35	ncl-alpha-20260214-40c1de	6	deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260214-40c1de	/derivatives/ncl-alpha-20260214-40c1de	required
+35	ncl-alpha-20260215-198686	6	deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260215-198686	/derivatives/ncl-alpha-20260215-198686	required
+35	ncl-alpha-20260227-4ecc69	6	deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260227-4ecc69	/derivatives/ncl-alpha-20260227-4ecc69	required
+35	ncl-alpha-20260416-0b1b93	6	deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260416-0b1b93	/derivatives/ncl-alpha-20260416-0b1b93	required
+35	ncl-alpha-20260418-11c3d8	6	deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260418-11c3d8	/derivatives/ncl-alpha-20260418-11c3d8	required
+35	ncl-alpha-20260511-e243be	6	deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260511-e243be	/derivatives/ncl-alpha-20260511-e243be	required
+35	ncl-alpha-20260512-1202e0	6	deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260512-1202e0	/derivatives/ncl-alpha-20260512-1202e0	required
+35	ncl-alpha-20260513-4e76d3	6	deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260513-4e76d3	/derivatives/ncl-alpha-20260513-4e76d3	required
+35	ncl-alpha-20260517-fe6641	6	deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260517-fe6641	/derivatives/ncl-alpha-20260517-fe6641	required
+35	ncl-alpha-20260518-f38a1e	6	deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260518-f38a1e	/derivatives/ncl-alpha-20260518-f38a1e	required
+35	ncl-alpha-20260607-7e87f5	6	deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260607-7e87f5	/derivatives/ncl-alpha-20260607-7e87f5	required
+35	ncl-alpha-20260613-007d94	6	deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260613-007d94	/derivatives/ncl-alpha-20260613-007d94	required
