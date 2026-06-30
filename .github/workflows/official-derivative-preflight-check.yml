@@ -51,3 +51,6 @@ jobs:
 
       - name: Run PR35 rank1 guard table check
         run: python tools/official_derivatives/check_pr35_rank1_guard_table.py
+
+      - name: Run PR35 guard evidence keys check
+        run: python tools/official_derivatives/check_pr35_guard_evidence_keys.py
