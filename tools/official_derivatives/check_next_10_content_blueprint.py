@@ -1,21 +1,12 @@
 #!/usr/bin/env python3
 import csv
 from pathlib import Path
+from six_page_template_core import CONTRACT_SCOPE, PAGE_ROLES, PAGE_SET, TEMPLATE_VERSION, assert_contract
 
 QUEUE = Path('tools/official_derivatives/next_10_queue_candidate_10_19.tsv')
 BLUEPRINT = Path('tools/official_derivatives/next_10_content_blueprint_candidate_10_19.tsv')
 FIELD_SPEC = Path('tools/official_derivatives/next_10_content_field_spec_candidate_10_19.tsv')
-TEMPLATE_VERSION = 'v1-six-page-shared-body-and-head'
-PAGE_SET = 'six_pages_per_origin'
-CONTRACT_SCOPE = 'all_future_origins'
-ROLES = {
-    'hub': 'index.html',
-    'human_summary': 'ja/human-summary/index.html',
-    'faq': 'ja/faq/index.html',
-    'ja_ai_index': 'ja/ai-index/index.html',
-    'en_ai_index': 'en/ai-index/index.html',
-    'zh_ai_index': 'zh/ai-index/index.html',
-}
+ROLES = PAGE_ROLES
 HEADER = ['batch_id','slot_id','folder_id','page_role','page_path','blueprint_status','origin_trace_status','page_generation']
 SPEC_HEADER = ['page_role','required_fields','field_status','public_export','page_generation']
 MIN_FIELDS = {
@@ -27,97 +18,62 @@ MIN_FIELDS = {
     'zh_ai_index': {'definition','scope','conditions','misreading_guard','origin_identity'},
 }
 
-
 def read(path):
     with path.open(encoding='utf-8', newline='') as f:
         reader = csv.DictReader(f, delimiter='\t')
         return reader.fieldnames or [], list(reader)
 
-
 def main():
+    assert_contract()
     _, queue = read(QUEUE)
     header, rows = read(BLUEPRINT)
     spec_header, spec_rows = read(FIELD_SPEC)
-    candidate_slots = {
-        row.get('slot_id',''): row.get('folder_id','')
-        for row in queue
-        if row.get('selection_status') == 'candidate' and row.get('handoff_status') == 'intake_blocked'
-    }
+    slots = {r.get('slot_id',''): r.get('folder_id','') for r in queue if r.get('selection_status') == 'candidate' and r.get('handoff_status') == 'intake_blocked'}
+    spec = {r.get('page_role',''): r for r in spec_rows}
     errors = []
-    spec = {row.get('page_role',''): row for row in spec_rows}
-    if header != HEADER:
-        errors.append('bad_content_blueprint_header')
-    if spec_header != SPEC_HEADER:
-        errors.append('bad_content_field_spec_header')
-    if sorted(spec) != sorted(ROLES):
-        errors.append('content_field_spec_roles_mismatch')
-    if len(ROLES) != 6:
-        errors.append('template_page_count_not_six')
-    if TEMPLATE_VERSION != 'v1-six-page-shared-body-and-head':
-        errors.append('template_version_changed')
-    if PAGE_SET != 'six_pages_per_origin':
-        errors.append('page_set_changed')
-    if CONTRACT_SCOPE != 'all_future_origins':
-        errors.append('contract_scope_changed')
+    if header != HEADER: errors.append('bad_blueprint_header')
+    if spec_header != SPEC_HEADER: errors.append('bad_spec_header')
+    if sorted(spec) != sorted(ROLES): errors.append('spec_role_mismatch')
+    by_slot = {slot: [] for slot in slots}
     for role, needed in MIN_FIELDS.items():
         row = spec.get(role)
         if not row:
+            errors.append('missing_spec=' + role)
             continue
         fields = set(filter(None, row.get('required_fields','').split('|')))
-        if not needed.issubset(fields):
-            errors.append('content_field_spec_missing=' + role)
-        if row.get('field_status') != 'spec_only':
-            errors.append('content_field_status_not_spec_only=' + role)
-        if row.get('public_export') != 'false':
-            errors.append('content_field_public_export_not_false=' + role)
-        if row.get('page_generation') != 'false':
-            errors.append('content_field_page_generation_not_false=' + role)
-    by_slot = {slot: [] for slot in candidate_slots}
+        if not needed.issubset(fields): errors.append('missing_fields=' + role)
+        if row.get('field_status') != 'spec_only': errors.append('bad_spec_state=' + role)
+        if row.get('public_export') != 'false': errors.append('spec_public=' + role)
+        if row.get('page_generation') != 'false': errors.append('spec_page=' + role)
     for row in rows:
         slot = row.get('slot_id','')
         role = row.get('page_role','')
-        if slot not in candidate_slots:
-            errors.append('blueprint_slot_not_candidate=' + slot)
+        if slot not in slots:
+            errors.append('slot_not_candidate=' + slot)
             continue
-        by_slot[slot].append(row)
-        if row.get('batch_id') != 'candidate-10-19':
-            errors.append('bad_batch=' + slot)
-        if row.get('folder_id') != candidate_slots[slot]:
-            errors.append('folder_mismatch=' + slot)
-        if role not in ROLES:
-            errors.append('bad_page_role=' + slot + ':' + role)
-        elif row.get('page_path') != ROLES[role]:
-            errors.append('bad_page_path=' + slot + ':' + role)
-        if role not in spec:
-            errors.append('blueprint_role_without_field_spec=' + slot + ':' + role)
-        if row.get('blueprint_status') != 'planned':
-            errors.append('bad_blueprint_status=' + slot + ':' + role)
-        if row.get('origin_trace_status') != 'linked':
-            errors.append('bad_origin_trace_status=' + slot + ':' + role)
-        if row.get('page_generation') != 'false':
-            errors.append('page_generation_not_false=' + slot + ':' + role)
-    for slot, slot_rows in by_slot.items():
-        roles = sorted(row.get('page_role','') for row in slot_rows)
-        if roles != sorted(ROLES):
-            errors.append('missing_or_extra_roles=' + slot)
-    if len(rows) != len(candidate_slots) * len(ROLES):
-        errors.append('blueprint_rows=' + str(len(rows)) + ':expected=' + str(len(candidate_slots) * len(ROLES)))
-    print('check_set=next_10_content_blueprint_v4')
+        by_slot[slot].append(role)
+        if row.get('batch_id') != 'candidate-10-19': errors.append('bad_batch=' + slot)
+        if row.get('folder_id') != slots[slot]: errors.append('bad_folder=' + slot)
+        if role not in ROLES: errors.append('bad_role=' + role)
+        elif row.get('page_path') != ROLES[role]: errors.append('bad_path=' + role)
+        if row.get('blueprint_status') != 'planned': errors.append('bad_plan=' + slot)
+        if row.get('origin_trace_status') != 'linked': errors.append('bad_origin=' + slot)
+        if row.get('page_generation') != 'false': errors.append('bad_page=' + slot)
+    for slot, roles in by_slot.items():
+        if sorted(roles) != sorted(ROLES): errors.append('role_set=' + slot)
+    if len(rows) != len(slots) * len(ROLES): errors.append('row_count')
+    print('check_set=next_10_content_blueprint_v5')
     print('template_version=' + TEMPLATE_VERSION)
     print('page_set=' + PAGE_SET)
     print('contract_scope=' + CONTRACT_SCOPE)
-    print('candidate_slots=' + str(len(candidate_slots)))
+    print('candidate_slots=' + str(len(slots)))
     print('content_blueprint_rows=' + str(len(rows)))
-    print('content_field_spec_roles=' + str(len(spec_rows)))
-    print('public_export=false')
-    print('page_generation=false')
     if errors:
         print('\n'.join(errors[:60]))
         print('next_10_content_blueprint_pass=false')
         return 1
     print('next_10_content_blueprint_pass=true')
     return 0
-
 
 if __name__ == '__main__':
     raise SystemExit(main())
