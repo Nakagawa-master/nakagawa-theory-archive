@@ -9,7 +9,7 @@ public_export: false
 
 Keep Official Derivative 010-017 ready for later body drafting without creating page body text, generated HTML, public export, sitemap changes, or index/follow conversion.
 
-The pre-body gate must confirm that body drafting can later preserve origin identity, value core, causal line, misreading guard, origin return, page links, FAQ question sets, AI index definitions, body skeleton requirements, body quality requirements, per-slot value anchors, role-specific drafting instructions, slot failure profiles, role review criteria, a virtual 48-unit body draft readiness matrix, and a draft execution policy.
+The pre-body gate must confirm that body drafting can later preserve origin identity, value core, causal line, misreading guard, origin return, page links, FAQ question sets, AI index definitions, body skeleton requirements, body quality requirements, per-slot value anchors, role-specific drafting instructions, slot failure profiles, role review criteria, a virtual 48-unit body draft readiness matrix, draft execution policy, and post-draft validation gate.
 
 ## Inputs
 
@@ -32,6 +32,7 @@ The pre-body gate must confirm that body drafting can later preserve origin iden
 - tools/official_derivatives/next_10_slot_failure_profile_candidate_10_19.tsv
 - tools/official_derivatives/next_10_role_review_criteria_candidate_10_19.tsv
 - tools/official_derivatives/next_10_draft_execution_policy_candidate_10_19.tsv
+- tools/official_derivatives/next_10_post_draft_validation_gate_candidate_10_19.tsv
 
 ## Checkers and workflow bindings
 
@@ -55,6 +56,7 @@ The pre-body gate must confirm that body drafting can later preserve origin iden
 - role review criteria gate: review_ready
 - virtual body draft readiness matrix: 48 units, generated inside the checker from 8 slots x 6 roles
 - draft execution policy: draft_execution_policy_ready
+- post-draft validation gate: post_draft_validation_ready
 - current execution state: blocked_until_later_draft_commit
 - body draft readiness: spec_ready_not_generated
 - body text generation: false
@@ -98,6 +100,7 @@ This prevents later drafts from becoming generic summaries, service introduction
 - the checker derives 48 virtual body draft units from Official Derivative 010-017 x six page roles and confirms the full matrix exists without creating page body text
 - the draft execution policy keeps current execution blocked until all pre-body gates pass and a later explicit draft phase is opened
 - any generated draft must later preserve origin retention, causal line, misreading guard, role quality axes, and no-public-export boundary before it can proceed
+- the post-draft validation gate must later fail drafts that become thin summaries, generic text, originless text, parent-identity-losing text, causal-line-missing text, boundary-missing text, role-structure-missing text, or translation-thinned text
 
 ## Boundary
 
