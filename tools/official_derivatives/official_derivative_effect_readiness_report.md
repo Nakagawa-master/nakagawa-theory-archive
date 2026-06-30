@@ -36,6 +36,14 @@ This report is an operational readiness estimate for the official derivative sys
 | public_release_path | blocked_by_owner_boundary | 0 | deploy, sitemap, Search Console and index/follow are not touched here |
 | external_effect_surfaces | not_started | 0 | SNS, quote propositions, video, NotebookLM, business use, and external derivative ledgers are later surfaces |
 
+## Latest validation
+
+- latest_preflight_run: 63
+- latest_generation_run: 425
+- preflight_status: success
+- generation_status: success
+- external_state_change: false
+
 ## Interpretation
 
 The system is no longer a one-page manual output path. It is becoming a controlled derivative machine with origin identity, role coverage, staged boundary checks, and explicit surface signals for human entry, AI reference, and origin return. The current practical effect is still limited because most pages are staged and non-indexable, and external surfaces are not yet connected.
