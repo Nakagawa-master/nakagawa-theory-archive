@@ -8,6 +8,7 @@ FIELD_SPEC = Path('tools/official_derivatives/next_10_content_field_spec_candida
 ROLE_INSTRUCTIONS = Path('tools/official_derivatives/next_10_role_drafting_instruction_candidate_10_19.tsv')
 SLOT_FAILURES = Path('tools/official_derivatives/next_10_slot_failure_profile_candidate_10_19.tsv')
 ROLE_REVIEWS = Path('tools/official_derivatives/next_10_role_review_criteria_candidate_10_19.tsv')
+DRAFT_POLICY = Path('tools/official_derivatives/next_10_draft_execution_policy_candidate_10_19.tsv')
 HEADER = ['value_key','source_table','required_source_fields','used_by_page_roles','status','public_export','page_generation']
 ROLE_HEADER = [
     'batch_id','page_role','instruction_state','anchor_source','required_anchor_fields',
@@ -21,12 +22,26 @@ ROLE_REVIEW_HEADER = [
     'batch_id','page_role','review_state','must_check','must_fail_if','quality_axes',
     'body_text_generation','html_generation','public_export',
 ]
+DRAFT_POLICY_HEADER = [
+    'batch_id','policy_state','current_execution_state','unlock_condition','pre_generation_required',
+    'post_generation_required','must_fail_if','body_text_generation','html_generation','public_export',
+]
 REQUIRED = {
     'origin_identity','value_core','causal_line','misreading_guard',
     'origin_return','page_links','question_set','index_definition'
 }
 EXPECTED_ROLES = ['hub','human_summary','faq','ja_ai_index','en_ai_index','zh_ai_index']
 EXPECTED_SLOTS = [f'Official Derivative {i:03d}' for i in range(10, 18)]
+REQUIRED_POLICY_PRE = {
+    'virtual_48_units','value_ready','draft_material_ready','skeleton_gate','quality_gate',
+    'value_anchor_gate','role_instruction_gate','failure_profile_gate','role_review_gate',
+}
+REQUIRED_POLICY_POST = {
+    'origin_retention','causal_line','misreading_guard','role_quality_axes','boundary_check','no_public_export',
+}
+REQUIRED_POLICY_FAIL = {
+    'thin_summary','genericization','origin_loss','causal_line_missing','boundary_missing','html_generation_attempt','public_export_attempt',
+}
 FIELD_COVER = {
     'question_set': {'beginner_questions','structure_questions','boundary_questions'},
     'answer_set': {'beginner_questions','structure_questions','boundary_questions'},
@@ -86,6 +101,7 @@ def main():
     role_header, role_rows = read(ROLE_INSTRUCTIONS)
     slot_failure_header, slot_failure_rows = read(SLOT_FAILURES)
     role_review_header, role_review_rows = read(ROLE_REVIEWS)
+    draft_policy_header, draft_policy_rows = read(DRAFT_POLICY)
     errors = []
     keys = {r.get('value_key','') for r in rows}
     gate_by_role = {r.get('page_role',''): set(filter(None, r.get('required_sections','').split('|'))) for r in gate_rows}
@@ -97,6 +113,8 @@ def main():
         errors.append('bad_slot_failure_header')
     if role_review_header != ROLE_REVIEW_HEADER:
         errors.append('bad_role_review_header')
+    if draft_policy_header != DRAFT_POLICY_HEADER:
+        errors.append('bad_draft_policy_header')
     if keys != REQUIRED:
         errors.append('content_value_spec_keys_mismatch')
     for r in rows:
@@ -120,6 +138,8 @@ def main():
         errors.append(f'slot_failure_rows={len(slot_failure_rows)} expected=8')
     if len(role_review_rows) != 6:
         errors.append(f'role_review_rows={len(role_review_rows)} expected=6')
+    if len(draft_policy_rows) != 1:
+        errors.append(f'draft_policy_rows={len(draft_policy_rows)} expected=1')
     if [r.get('page_role','') for r in role_rows] != EXPECTED_ROLES:
         errors.append('role_instruction_sequence_mismatch')
     if [r.get('slot_id','') for r in slot_failure_rows] != EXPECTED_SLOTS:
@@ -179,23 +199,41 @@ def main():
             if not r.get(field,'').strip():
                 errors.append('role_review_field_missing=' + role + ':' + field)
         require_false(r, ['body_text_generation','html_generation','public_export'], 'role_review', errors)
+    for r in draft_policy_rows:
+        if r.get('batch_id') != 'candidate-10-19':
+            errors.append('bad_draft_policy_batch')
+        if r.get('policy_state') != 'draft_execution_policy_ready':
+            errors.append('bad_draft_policy_state')
+        if r.get('current_execution_state') != 'blocked_until_later_draft_commit':
+            errors.append('bad_draft_current_execution_state')
+        if r.get('unlock_condition') != 'all_pre_body_gates_pass_and_explicit_draft_phase':
+            errors.append('bad_draft_unlock_condition')
+        if not REQUIRED_POLICY_PRE.issubset(split_set(r.get('pre_generation_required',''))):
+            errors.append('draft_policy_pre_generation_missing')
+        if not REQUIRED_POLICY_POST.issubset(split_set(r.get('post_generation_required',''))):
+            errors.append('draft_policy_post_generation_missing')
+        if not REQUIRED_POLICY_FAIL.issubset(split_set(r.get('must_fail_if',''))):
+            errors.append('draft_policy_must_fail_missing')
+        require_false(r, ['body_text_generation','html_generation','public_export'], 'draft_policy', errors)
     virtual_body_draft_units = [(slot, role) for slot in EXPECTED_SLOTS for role in EXPECTED_ROLES]
     if len(virtual_body_draft_units) != 48:
         errors.append('virtual_body_draft_unit_count_mismatch')
     if len(set(virtual_body_draft_units)) != 48:
         errors.append('virtual_body_draft_unit_duplicate')
-    print('check_set=next_10_content_value_spec_v5')
+    print('check_set=next_10_content_value_spec_v6')
     print('content_value_spec_rows=' + str(len(rows)))
     print('field_rows=' + str(len(field_rows)))
     print('role_instruction_rows=' + str(len(role_rows)))
     print('slot_failure_rows=' + str(len(slot_failure_rows)))
     print('role_review_rows=' + str(len(role_review_rows)))
+    print('draft_policy_rows=' + str(len(draft_policy_rows)))
     print('virtual_body_draft_units=' + str(len(virtual_body_draft_units)))
+    print('draft_execution_policy=ready_blocked')
     print('body_draft_readiness=spec_ready_not_generated')
     print('public_export=false')
     print('page_generation=false')
     if errors:
-        print('\n'.join(errors[:120]))
+        print('\n'.join(errors[:140]))
         print('next_10_content_value_spec_pass=false')
         return 1
     print('next_10_content_value_spec_pass=true')
