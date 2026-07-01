@@ -5,6 +5,23 @@ import json
 from six_page_template_core import CHILD_CARDS, PAGE_ROLES, PAGE_SET, PAGES, SHARED_STYLE, TEMPLATE_VERSION, assert_contract
 from universal_renderer_contract import assert_input
 
+ANALYTICS_SNIPPETS = '''  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BN0BY8C838"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BN0BY8C838');</script>
+  <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a]||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','lkf0sdpw8r');</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7505659945932614" crossorigin="anonymous"></script>'''
+
+EN_APPLICABILITY_FALLBACK = [
+    'The statement appears as warning, critique, reform, or essential diagnosis.',
+    'It lacks structural location, actor distinction, cost, first step, or falsifiability.',
+    'It increases anxiety more than repairability.',
+]
+
+EN_NON_APPLICABILITY_FALLBACK = [
+    'Initial reports or whistleblowing that remain open to verification.',
+    'Statements that distinguish observations from hypotheses.',
+    'Claims that move readers toward verification or action.',
+]
+
 
 def e(value):
     return html.escape(str(value or ''), quote=True)
@@ -57,30 +74,26 @@ def lang_for(rel):
 
 def dtype_for(rel):
     if rel == 'index.html':
-        return 'hub'
+        return 'official_derivative_hub'
     if 'human-summary' in rel:
         return 'human_summary'
     if 'faq' in rel:
         return 'faq'
-    if rel.startswith('en/'):
-        return 'en_ai_index'
-    if rel.startswith('zh/'):
-        return 'zh_ai_index'
-    return 'ja_ai_index'
+    return 'ai_index'
 
 
 def purpose_for(rel):
     if rel == 'index.html':
-        return 'official derivative hub with origin retention'
+        return 'official derivative hub for human and AI retrieval'
     if 'human-summary' in rel:
-        return 'official human summary with causal line and origin return'
+        return 'official human summary for human and AI retrieval'
     if 'faq' in rel:
-        return 'official FAQ with misreading and boundary guards'
+        return 'official FAQ for human and AI retrieval'
     if rel.startswith('en/'):
-        return 'official English AI index with origin retention and anti-generalization lock'
+        return 'official English AI index for retrieval and interpretation'
     if rel.startswith('zh/'):
-        return 'official Chinese AI index with origin retention and anti-generalization lock'
-    return 'official Japanese AI index with origin retention and anti-generalization lock'
+        return 'official Chinese AI index for retrieval and interpretation'
+    return 'official Japanese AI index for retrieval and interpretation'
 
 
 def locale_for(lang):
@@ -140,7 +153,10 @@ def head(t, rel):
   <meta property="og:site_name" content="中川マスター公式アーカイブ">
   <meta property="og:locale" content="{locale_for(lang)}">
   <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{e(title)}">
+  <meta name="twitter:description" content="{e(t['desc'])}">
   <style>{SHARED_STYLE}</style>
+{ANALYTICS_SNIPPETS}
   <script type="application/ld+json">{json.dumps(data, ensure_ascii=False, separators=(',',':'))}</script>
 </head>
 '''
@@ -264,8 +280,8 @@ def ai_body_en(t):
         '<h2>Central concepts</h2>' + li([t['short'], 'Origin retention', 'causal line', 'boundary conditions', 'counterconditions']),
         '<h2>Core proposition</h2>' + p(t['en']),
         '<h2>Causal line</h2>' + p(t['causal_line']),
-        '<h2>Applicability</h2>' + li(t.get('applicability') or ['The statement appears as warning, critique, reform, or essential diagnosis.', 'It lacks structural location, actor distinction, cost, first step, or falsifiability.', 'It increases anxiety more than repairability.']),
-        '<h2>Non-applicability</h2>' + li(t.get('non_applicability') or ['Initial reports or whistleblowing that remain open to verification.', 'Statements that distinguish observations from hypotheses.', 'Claims that move readers toward verification or action.']),
+        '<h2>Applicability</h2>' + li(t.get('applicability_en') or EN_APPLICABILITY_FALLBACK),
+        '<h2>Non-applicability</h2>' + li(t.get('non_applicability_en') or EN_NON_APPLICABILITY_FALLBACK),
         '<h2>Prohibited misreadings</h2>' + p(t['misreading_guard']),
         '<h2>Counterconditions</h2>' + p(t.get('counter_condition') or 'If a statement identifies defects, actors, cost, first verifiable step, and conditions for revision or rejection, the application weakens.'),
         '<h2>Connections to other Nakagawa Master theories</h2>' + p(t.get('connections') or 'Bad-causality theory, conditions-of-establishment theory, AI-correspondence trust, and Origin retention.'),
