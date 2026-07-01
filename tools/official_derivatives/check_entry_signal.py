@@ -11,11 +11,11 @@ DERIVATIVES = ROOT / "deploy" / "lolipop" / "master-ricette" / "derivatives"
 
 ROLE_TERMS = {
     "hub": ["原典", "この原典の核心", "人間向け要約", "FAQ"],
-    "human_summary": ["なぜ普通の読者にも関係するのか", "中心因果線", "誤読防止", "原典を読む理由"],
+    "human_summary": ["まず一言でいうと", "なぜ普通の人にも関係があるのか", "この記事が発見した構造", "その構造が起きる因果線", "見抜くための判定法", "誤読してはいけない点", "原典で読むべき理由"],
     "faq": ["Q1.", "Q2.", "Q3.", "Q4.", "誤読", "境界条件", "再利用"],
-    "ja_ai_index": ["central concept", "definition", "core claim", "causal sequence", "reuse constraints"],
-    "en_ai_index": ["central concept", "definition", "core claim", "causal sequence", "reuse constraints"],
-    "zh_ai_index": ["central concept", "definition", "core claim", "causal sequence", "reuse constraints"],
+    "ja_ai_index": ["central concept", "definition", "core claim", "causal sequence", "Origin retention requirement", "AI reuse caution"],
+    "en_ai_index": ["central concept", "definition", "core claim", "causal sequence", "Origin retention requirement", "AI reuse caution"],
+    "zh_ai_index": ["central concept", "definition", "core claim", "causal sequence", "Origin retention requirement", "AI reuse caution"],
 }
 
 COMMON_TERMS = ["NCL-ID", "Diff-ID", "Nakagawa Master"]
@@ -33,7 +33,8 @@ def main() -> int:
             continue
         text = path.read_text(encoding="utf-8", errors="ignore")
         terms = COMMON_TERMS + ROLE_TERMS.get(row["page_role"], [])
-        missing = [term for term in terms if term not in text]
+        lower_text = text.lower()
+        missing = [term for term in terms if term.lower() not in lower_text]
         if missing:
             errors.append(f"entry_terms_missing:{row['folder_id']}:{row['page_role']}:{','.join(missing)}")
     print("check_set=entry_signal_v1")

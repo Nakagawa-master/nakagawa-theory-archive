@@ -52,9 +52,10 @@ This file supersedes the older PR body summary for current staged-batch facts.
 
 - total origins with staged pages: 13
 - total staged pages: 78
-- total materialized effect units represented in ledgers or existing bundles: 429
+- total materialized effect units now represented in ledgers or existing bundles: 429
 - candidate 05-09 materialized units: 165
 - candidate 10-17 materialized unit ledger rows: 264
+- 264 materialized effect units
 
 ## Boundary
 
