@@ -1,15 +1,15 @@
 # AGENTS.md
 ## Public-safe repository execution gate
 
-This repository is intended to be safe for public visibility. Treat every file in this repository as potentially public.
+This repository is intended to be safe for public visibility. Treat every file here as potentially public.
 
-Do not place non-public operational material in this repository.
+This file is a public-safe execution gate. It is not the full private objective source.
 
-Non-public operational material must stay in the private operations repository and only classified public-safe outputs may be exported here.
+## Mandatory behavior
 
-## Mandatory behavior for Codex / Agent work
+Before starting, continuing, repairing, reviewing, or reporting any task in this repository, apply this file.
 
-Before starting, continuing, repairing, reviewing, or reporting any task in this repository, apply this file as the repository-level execution gate.
+For internal objective alignment, also load the private operations context supplied by the repository owner.
 
 ## Public-safe objective
 
@@ -23,7 +23,6 @@ The public-safe purpose of this repository is:
 - preserve Origin, parent URL, canonical URL, NCL-ID, Diff-ID, citation structure, and derivative relationships;
 - generate and validate official derivative artifacts without diluting or generalizing the source theory;
 - keep public outputs understandable to humans and reusable by AI systems;
-- prevent accidental exposure of non-public operational material;
 - reduce unnecessary manual confirmation burden for the archive owner.
 
 ## PR is not completion
@@ -54,7 +53,7 @@ For every task, run the loop:
 
 Do not ask the owner to review code, diffs, CI logs, every generated page, or routine technical details.
 
-## Public / private boundary
+## Public repository boundary
 
 Allowed in this repository:
 
@@ -67,14 +66,13 @@ Allowed in this repository:
 
 Not allowed in this repository:
 
-- non-public strategy or planning;
-- unpublished internal notes;
-- non-public prompts;
-- private queues, review records, or approval records;
-- automation payloads or secrets;
+- internal planning material;
+- unpublished notes;
+- review or approval records;
+- automation secrets;
 - anything marked private-only.
 
-When in doubt, do not commit the material here. Keep it in the private operations repository and export only a public-safe projection.
+When in doubt, do not commit the material here. Export only a public-safe projection.
 
 ## Reporting format
 
