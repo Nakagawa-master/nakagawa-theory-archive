@@ -25,6 +25,18 @@ The public-safe purpose of this repository is:
 - keep public outputs understandable to humans and reusable by AI systems;
 - reduce unnecessary manual confirmation burden for the archive owner.
 
+## No routine return rule
+
+Routine implementation work must be completed by the agent side, not sent back as review work.
+
+Do not ask the archive owner to inspect code, diffs, CI logs, PR lists, validator output, generated pages, unresolved routine review comments, or next-step prompts.
+
+Archive-owner action is limited to public release approval, authentication, repository visibility, permission changes, irreversible operations, production FTP/Search Console/index activation, or source-of-truth judgment.
+
+Remote PR cleanup, CI confirmation, review-comment repair, validator reruns, package regeneration, branch consolidation, PR body updates, staged-package checks, and Codex task continuation are agent-side tasks.
+
+If a report would create routine work for the archive owner, continue the loop instead.
+
 ## PR is not completion
 
 A pull request is an internal work unit. It is not the final deliverable.
@@ -35,8 +47,8 @@ Acceptable completion states are:
 
 1. staged package completed and validated;
 2. public-ready package completed and validated;
-3. blocker reached that truly requires owner authority, authentication, publication approval, or source-of-truth judgment;
-4. safe handoff report produced with no code, diff, CI-log, or page-by-page review required from the owner.
+3. blocker reached that truly requires owner authority, authentication, publication approval, irreversible action, or source-of-truth judgment;
+4. safe handoff report produced with no code, diff, CI-log, PR review, Codex prompt, or page-by-page review required from the owner.
 
 ## Loop rule
 
@@ -49,9 +61,8 @@ For every task, run the loop:
 5. repair failures;
 6. re-run validation;
 7. package the result;
-8. report only completion state, validation result, and unavoidable owner-boundary items.
-
-Do not ask the owner to review code, diffs, CI logs, every generated page, or routine technical details.
+8. update the relevant PR or report state;
+9. report only completion state, validation result, and unavoidable owner-boundary items.
 
 ## Public repository boundary
 
@@ -90,6 +101,9 @@ Owner action needed:
 
 Public exposure risk:
 - none / needs private handling
+
+Returned routine work:
+- zero
 ```
 
 If owner action is not truly required, continue the loop instead of returning for confirmation.
