@@ -2,7 +2,7 @@
 import csv
 from pathlib import Path
 
-REGISTRY = Path('tools/official_derivatives/derivative_registry_candidate_05_09.tsv')
+REGISTRY = Path('tools/official_derivatives/staged_official_derivative_registry.tsv')
 BASE = Path('deploy/lolipop/master-ricette/derivatives')
 
 
@@ -14,8 +14,8 @@ def rows():
 def main():
     errors = []
     data = rows()
-    if len(data) != 30:
-        errors.append('registry_rows_expected=30')
+    if len(data) != 78:
+        errors.append('registry_rows_expected=78')
     for r in data:
         folder = r.get('folder_id','')
         rel = r.get('relative_path','')
