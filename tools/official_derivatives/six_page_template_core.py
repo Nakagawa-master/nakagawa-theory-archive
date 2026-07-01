@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-TEMPLATE_VERSION = 'v4-green-direct-navigation-origin-retention'
+TEMPLATE_VERSION = 'v5-global-green-template-contract'
 PAGE_SET = 'six_pages_per_origin'
 CONTRACT_SCOPE = 'all_future_origins'
 
@@ -34,7 +34,7 @@ CHILD_CARDS = [
 
 
 def assert_contract():
-    if TEMPLATE_VERSION != 'v4-green-direct-navigation-origin-retention':
+    if TEMPLATE_VERSION != 'v5-global-green-template-contract':
         raise AssertionError('template version drift')
     if PAGE_SET != 'six_pages_per_origin':
         raise AssertionError('page set drift')
