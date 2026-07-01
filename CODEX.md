@@ -4,6 +4,8 @@ This repository is the public-safe archive/output repository.
 
 Codex must read `AGENTS.md` before work in this repository.
 
+`AGENTS.md` and this file are public-safe gates, not the full private objective source. For internal objective alignment, load the private operations context supplied by the repository owner.
+
 ## Core rule
 
 A pull request is not the final deliverable. A task is not complete merely because a PR was created or updated.
@@ -23,4 +25,4 @@ Detect issue, inspect source, implement, validate, repair failures, revalidate, 
 
 Preserve Origin, parent URL, canonical URL, NCL-ID, Diff-ID, citation structure, derivative relationships, and staged/noindex boundary until public-ready.
 
-Do not place non-public strategy, unpublished plans, private queues, approval records, secrets, or non-public prompts in this repository. Keep non-public operations outside this public-safe output repository and export only public-safe artifacts here.
+Keep internal planning material outside this public-safe output repository and export only public-safe artifacts here.
