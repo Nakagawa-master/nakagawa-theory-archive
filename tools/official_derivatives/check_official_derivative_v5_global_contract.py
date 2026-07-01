@@ -1,21 +1,29 @@
 #!/usr/bin/env python3
+import csv
 from pathlib import Path
 
 from six_page_template_core import PAGES, TEMPLATE_VERSION, assert_contract
-import official_derivative_v5_data as data
 
 ROOT = Path(__file__).resolve().parents[2]
 BASE = ROOT / 'deploy/lolipop/master-ricette/derivatives'
+MANIFEST = ROOT / 'tools/official_derivatives/origin_manifest.tsv'
+
+
+def load_records():
+    with MANIFEST.open(encoding='utf-8', newline='') as f:
+        rows = list(csv.DictReader(f, delimiter='\t'))
+    return [row for row in rows if row.get('export_status') == 'staged']
+
 
 assert_contract()
-records = data.TARGETS
+records = load_records()
 errors = []
 
 if not records:
-    errors.append('no_records')
+    errors.append('no_staged_records')
 
 for record in records:
-    folder = record['folder']
+    folder = record['folder_id']
     for rel in PAGES:
         path = BASE / folder / rel
         if not path.exists():
@@ -28,9 +36,9 @@ for record in records:
             'official_derivative_staged_nonindexable',
             'Parent NCL-ID',
             'Parent Diff-ID',
-            record['ncl'],
-            record['diff'],
-            record['url'],
+            record['parent_ncl_id'],
+            record['parent_diff_id'],
+            record['parent_url'],
             '/derivatives/' + folder + '/',
             'background:#eef8f1',
             'border-left:6px solid #2f855a',
@@ -52,7 +60,7 @@ print('template_version=' + TEMPLATE_VERSION)
 print('target_count=' + str(len(records)))
 print('expected_pages=' + str(expected_pages))
 if errors:
-    print('\n'.join(errors[:120]))
+    print('\n'.join(errors[:160]))
     print('official_derivative_v5_global_contract_pass=false')
     raise SystemExit(1)
 print('official_derivative_v5_global_contract_pass=true')
