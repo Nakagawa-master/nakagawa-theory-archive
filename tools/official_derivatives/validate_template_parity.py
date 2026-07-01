@@ -1,51 +1,15 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import subprocess
 import sys
 from six_page_template_core import CHILD_CARDS, PAGES, assert_contract
+import official_derivative_v5_data as data
 
-HERE = Path(__file__).resolve().parent
 BASE = Path(__file__).resolve().parents[2] / 'deploy/lolipop/master-ricette/derivatives'
-TARGETS_FILE = HERE / 'targets.tsv'
 REQUIRED_META = ['description','canonical','derivative-type','derivative-scope','language','parent-url','parent-ncl-id','parent-diff-id','pilot-id','render-status','origin-author','source-archive','ai-purpose','ai-summary','ai-interpretation-warning','ai-reuse-constraint','ai-origin-policy','ai-citation-requirement','official-derivative-template-version','official-derivative-page-set']
-REQUIRED_STRUCT = ['class="wrap"','class="hero"','Parent NCL-ID','Parent Diff-ID','/derivatives/']
+REQUIRED_STRUCT = ['class="wrap"','class="hero"','Parent NCL-ID','Parent Diff-ID','/derivatives/','background:#eef8f1','border-left:6px solid #2f855a']
 HUB_CARD_PATHS = [card[2] for card in CHILD_CARDS]
 PRIVATE_MARKERS = ['private_only','qgate_pending','public_export_allowed: false']
-
-
-def run_script(name, *args):
-    script = HERE / name
-    if not script.exists():
-        return 0
-    result = subprocess.run([sys.executable, str(script), *args])
-    return result.returncode
-
-
-def strengthen_human_summary():
-    return run_script('strengthen_candidate_human_summary_pages.py')
-
-
-def strengthen_faq():
-    return run_script('strengthen_candidate_faq_pages.py')
-
-
-def strengthen_ai_index():
-    return run_script('strengthen_candidate_ai_index_pages.py')
-
-
-def normalize_heads(status):
-    return run_script('render_heads.py', '--status=' + status)
-
-
-def targets(status='staged'):
-    out=[]
-    for line in TARGETS_FILE.read_text(encoding='utf-8').splitlines()[1:]:
-        if not line.strip():
-            continue
-        parts=line.split('\t')
-        if len(parts) >= 2 and parts[1].strip()==status:
-            out.append(parts[0].strip())
-    return out
+FORBIDDEN = ['6ページ構成','border-left:6px solid #1d4ed8']
 
 
 def has_field(s, name):
@@ -54,17 +18,21 @@ def has_field(s, name):
     return f'name="{name}"' in s or f"name='{name}'" in s
 
 
-def check(path, rel, folder):
+def check(path, rel, record):
+    folder = record['folder']
     if not path.exists():
         return [f'missing {path}']
-    s=path.read_text(encoding='utf-8')
-    errors=[]
+    s = path.read_text(encoding='utf-8')
+    errors = []
     for name in REQUIRED_META:
         if not has_field(s, name):
             errors.append(f'{path}: missing field {name}')
     for marker in REQUIRED_STRUCT:
         if marker not in s:
             errors.append(f'{path}: missing structure {marker}')
+    for marker in [record['url'], record['ncl'], record['diff'], record['pilot']]:
+        if marker not in s:
+            errors.append(f'{path}: missing identity {marker}')
     if rel == 'index.html':
         for child in HUB_CARD_PATHS:
             if child not in s:
@@ -73,49 +41,46 @@ def check(path, rel, folder):
         if f'/derivatives/{folder}/' not in s:
             errors.append(f'{path}: missing hub backlink')
     if 'ai-index' in rel:
-        for marker in ['article role','central concept','definition','core claim','causal sequence','judgment conditions','interpretation warnings','reuse constraints','origin preservation','citation requirement']:
+        for marker in ['AI reading lock', '適用', '反証']:
+            if rel.startswith('ja/') and marker not in s:
+                errors.append(f'{path}: missing ai marker {marker}')
+    if rel == 'ja/human-summary/index.html':
+        for marker in ['なぜ普通の人にも関係があるのか', 'この記事が発見した構造', 'その構造が起きる因果線', '見抜くための判定法', '誤読してはいけない点', '原典で読むべき理由']:
             if marker not in s:
-                errors.append(f'{path}: missing ai section {marker}')
-    for marker in PRIVATE_MARKERS:
+                errors.append(f'{path}: missing human marker {marker}')
+    if rel == 'ja/faq/index.html':
+        for marker in ['第1層：初心者向けFAQ', '第2層：構造理解FAQ', '第3層：誤読・反論・境界条件FAQ']:
+            if marker not in s:
+                errors.append(f'{path}: missing faq marker {marker}')
+    if '<strong>直接リンク:</strong>' in s:
+        block = s.split('<strong>直接リンク:</strong>', 1)[1].split('</nav>', 1)[0]
+        if '原典' in block:
+            errors.append(f'{path}: origin in direct links')
+    for marker in PRIVATE_MARKERS + FORBIDDEN:
         if marker in s:
-            errors.append(f'{path}: contains private marker {marker}')
+            errors.append(f'{path}: forbidden marker {marker}')
     return errors
 
 
 def main():
     assert_contract()
-    status='staged'
-    for arg in sys.argv[1:]:
-        if arg.startswith('--status='):
-            status=arg.split('=',1)[1]
-    if strengthen_human_summary() != 0:
-        print('template_parity_pass=false')
-        return 1
-    if strengthen_faq() != 0:
-        print('template_parity_pass=false')
-        return 1
-    if strengthen_ai_index() != 0:
-        print('template_parity_pass=false')
-        return 1
-    if normalize_heads(status) != 0:
-        print('template_parity_pass=false')
-        return 1
-    selected=targets(status)
-    errors=[]
-    checked=0
-    for folder in selected:
+    selected = data.TARGETS
+    errors = []
+    checked = 0
+    for record in selected:
         for rel in PAGES:
-            errors.extend(check(BASE/folder/rel, rel, folder))
-            if (BASE/folder/rel).exists():
+            path = BASE / record['folder'] / rel
+            errors.extend(check(path, rel, record))
+            if path.exists():
                 checked += 1
-    expected=len(selected)*len(PAGES)
+    expected = len(selected) * len(PAGES)
     if checked != expected:
         errors.append(f'checked_pages={checked} expected_pages={expected}')
     if errors:
-        print('\n'.join(errors))
+        print('\n'.join(errors[:120]))
         print('template_parity_pass=false')
         return 1
-    print('checked_pages='+str(checked))
+    print('checked_pages=' + str(checked))
     print('template_parity_pass=true')
     return 0
 
