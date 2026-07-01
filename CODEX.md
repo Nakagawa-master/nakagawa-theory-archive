@@ -12,8 +12,8 @@ Completion means one of these:
 
 - staged package generated and validated;
 - public-ready package generated and validated;
-- work is blocked by a true owner/permission/publication boundary;
-- concise handoff report is produced without requiring code, diff, CI, or page-by-page review from the owner.
+- work is blocked by a true owner, permission, publication, or source-of-truth boundary;
+- concise handoff report is produced without requiring code, diff, CI-log, or page-by-page review from the owner.
 
 ## Required loop
 
@@ -23,4 +23,4 @@ Detect issue, inspect source, implement, validate, repair failures, revalidate, 
 
 Preserve Origin, parent URL, canonical URL, NCL-ID, Diff-ID, citation structure, derivative relationships, and staged/noindex boundary until public-ready.
 
-Do not place internal strategy, unpublished plans, private queues, approval ledgers, secrets, or non-public operational prompts in this repository. Put those in the private operations repository and export only public-safe artifacts here.
+Do not place non-public strategy, unpublished plans, private queues, approval records, secrets, or non-public prompts in this repository. Keep non-public operations outside this public-safe output repository and export only public-safe artifacts here.
