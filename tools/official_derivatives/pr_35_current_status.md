@@ -42,7 +42,9 @@ This file supersedes the older PR body summary for current staged-batch facts.
 - page roles per selected slot: 6
 - virtual preparation units: 48
 - preparation state: value, material, skeleton, policy ready
+- generated output state: none
 - body_text_generation: false
+- html_generation: false
 - public_export: false
 - Official Derivative 018-019 remain queue_only until later selection
 
