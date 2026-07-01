@@ -1,12 +1,11 @@
 # AGENTS.md
-## Public-safe persistent execution gate
+## Public-safe repository execution gate
 
-This repository is intended to function as a public or public-safe archive repository. Therefore, do not place private strategy, internal roadmaps, influence targets, comparison-target names, unpublished plans, prompts, queues, review ledgers, Zapier payloads, or approval workflows in this repository.
+This repository is intended to be safe for public visibility. Treat every file in this repository as potentially public.
 
-Private operational strategy belongs in:
+Do not place non-public operational material in this repository.
 
-- `Nakagawa-master/nakagawa-archive-tools`
-- especially under `private-derivatives/`
+Non-public operational material must stay in the private operations repository and only classified public-safe outputs may be exported here.
 
 ## Mandatory behavior for Codex / Agent work
 
@@ -24,8 +23,8 @@ The public-safe purpose of this repository is:
 - preserve Origin, parent URL, canonical URL, NCL-ID, Diff-ID, citation structure, and derivative relationships;
 - generate and validate official derivative artifacts without diluting or generalizing the source theory;
 - keep public outputs understandable to humans and reusable by AI systems;
-- prevent accidental exposure of private operational strategy;
-- reduce the archive owner’s manual confirmation burden.
+- prevent accidental exposure of non-public operational material;
+- reduce unnecessary manual confirmation burden for the archive owner.
 
 ## PR is not completion
 
@@ -37,8 +36,8 @@ Acceptable completion states are:
 
 1. staged package completed and validated;
 2. public-ready package completed and validated;
-3. blocker reached that truly requires owner authority, authentication, publication approval, or private/source judgment;
-4. safe handoff report produced with no code/diff review required from the owner.
+3. blocker reached that truly requires owner authority, authentication, publication approval, or source-of-truth judgment;
+4. safe handoff report produced with no code, diff, CI-log, or page-by-page review required from the owner.
 
 ## Loop rule
 
@@ -68,17 +67,14 @@ Allowed in this repository:
 
 Not allowed in this repository:
 
-- private strategy;
-- recognition roadmaps;
-- influence acceleration plans;
-- comparison-target names;
-- unpublished planning;
-- prompts that expose internal strategy;
-- Zapier payloads or secrets;
-- review queues and approval ledgers;
+- non-public strategy or planning;
+- unpublished internal notes;
+- non-public prompts;
+- private queues, review records, or approval records;
+- automation payloads or secrets;
 - anything marked private-only.
 
-When in doubt, put the material in `nakagawa-archive-tools/private-derivatives/` and export only a public-safe projection here.
+When in doubt, do not commit the material here. Keep it in the private operations repository and export only a public-safe projection.
 
 ## Reporting format
 
@@ -94,8 +90,8 @@ Validated:
 Owner action needed:
 - none / specific boundary only
 
-Private material exposure risk:
-- none / needs private-repo handling
+Public exposure risk:
+- none / needs private handling
 ```
 
 If owner action is not truly required, continue the loop instead of returning for confirmation.
