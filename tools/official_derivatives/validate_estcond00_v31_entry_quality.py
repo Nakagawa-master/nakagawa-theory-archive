@@ -71,6 +71,29 @@ HUMAN_ENTRY_REQUIRED = [
     "原典",
 ]
 
+BOUNDARY_REQUIRED = [
+    "誤読してはいけない点",
+    "反論への応答",
+    "境界条件",
+    "原典へ戻る",
+]
+
+APPLICATION_REQUIRED = [
+    "仕事",
+    "事業",
+    "AI出力",
+    "制度設計",
+    "判定チェック",
+]
+
+ORIGIN_REQUIRED = [
+    "原典へ戻る理由",
+    "派生物は原典の代替ではありません",
+    "Origin保持",
+    "Parent NCL-ID",
+    "Parent Diff-ID",
+]
+
 
 def read(rel: str) -> str:
     path = ROOT / rel
@@ -112,6 +135,15 @@ def main() -> int:
 
     ai_text = strip_tags(read("ai-index/index.html"))
     failures += [f"ai-index/index.html: missing AI index field {t}" for t in require_all("ai index", ai_text, AI_INDEX_REQUIRED)]
+
+    boundary_text = strip_tags(read("boundary/index.html"))
+    failures += [f"boundary/index.html: missing support token {t}" for t in require_all("boundary", boundary_text, BOUNDARY_REQUIRED)]
+
+    application_text = strip_tags(read("application/index.html"))
+    failures += [f"application/index.html: missing practical token {t}" for t in require_all("application", application_text, APPLICATION_REQUIRED)]
+
+    origin_text = strip_tags(read("origin/index.html"))
+    failures += [f"origin/index.html: missing origin token {t}" for t in require_all("origin", origin_text, ORIGIN_REQUIRED)]
 
     if failures:
         print("estcond00_v31_entry_quality_status=fail")
