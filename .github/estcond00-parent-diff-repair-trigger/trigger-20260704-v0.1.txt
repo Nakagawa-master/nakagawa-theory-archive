@@ -1,0 +1,13 @@
+ESTCOND00 parent Diff repair fallback trigger
+
+Purpose:
+- Trigger .github/workflows/estcond00-parent-diff-repair.yml via push path fallback.
+- Repair remaining public shelf parent Diff-ID drift from DIFF-20260630-0003 to DIFF-20260627-0002.
+- Update ESTCOND00 route package manifest after repair.
+
+Boundaries:
+- No FTP.
+- No Search Console.
+- No production sitemap apply.
+- No live WordPress MU plugin deployment.
+- No owner QA return.
