@@ -2,6 +2,9 @@ name: ESTCOND00 parent Diff repair
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/estcond00-parent-diff-repair-trigger/**'
 
 permissions:
   contents: write
