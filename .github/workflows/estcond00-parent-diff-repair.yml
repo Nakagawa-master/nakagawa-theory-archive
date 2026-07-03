@@ -29,6 +29,9 @@ jobs:
           grep -R "NCL-DER-20260704-estcond00-0001" "$ROOT"
           grep -R "DIFF-DER-20260704-0001" "$ROOT"
 
+      - name: Update ESTCOND00 route package manifest
+        run: python tools/official_derivatives/update_estcond00_route_manifest_after_parent_diff_repair.py
+
       - name: Commit repair if needed
         shell: bash
         run: |
@@ -38,7 +41,8 @@ jobs:
           git add \
             deploy/lolipop/master-ricette/derivatives/ultra-quality/establishment-conditions-00/ai-index/index.html \
             deploy/lolipop/master-ricette/derivatives/ultra-quality/establishment-conditions-00/application/index.html \
-            deploy/lolipop/master-ricette/derivatives/ultra-quality/establishment-conditions-00/origin/index.html
+            deploy/lolipop/master-ricette/derivatives/ultra-quality/establishment-conditions-00/origin/index.html \
+            tools/official_derivatives/estcond00_route_package_manifest.tsv
           if git diff --cached --quiet; then
             echo "No ESTCOND00 parent Diff repair changes to commit."
           else
