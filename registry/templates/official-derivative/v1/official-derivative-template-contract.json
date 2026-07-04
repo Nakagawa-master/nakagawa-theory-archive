@@ -1,20 +1,22 @@
 {
   "template_id": "official-derivative-fixed-layout-v1",
-  "purpose": "Lock official derivative visual/layout structure so only field values change per origin and per page.",
+  "purpose": "Lock official derivative visual and layout structure so only field values change per origin and per page.",
   "scope": "one origin = six pages: hub, human_summary, faq, ja_ai_index, en_ai_index, zh_ai_index",
   "fixed_elements": [
-    "css",
-    "wrap width and page padding",
-    "hero/panel/card border radius, border, shadow, background",
-    "top status badge position and style",
-    "h1 placement and sizing",
-    "origin/meta placement",
-    "common notice block placement and style",
-    "content panel placement",
-    "origin connection/reference bundle placement and style",
-    "related links placement and size",
-    "grid layout for hub cards",
-    "no title-under-number placement"
+    "shared_css",
+    "wrap_width_and_page_padding",
+    "hero_panel_card_shape",
+    "top_status_badge",
+    "h1_placement_and_size",
+    "origin_meta_placement",
+    "common_notice_block",
+    "decorated_hub_lead_block",
+    "content_panel",
+    "hub_origin_bundle_immediately_before_related_links",
+    "article_origin_bundle_block",
+    "related_links_block",
+    "hub_card_grid",
+    "no_title_under_number"
   ],
   "replaceable_field_values_only": [
     "derivative_number",
@@ -32,15 +34,13 @@
     "language_specific_link_labels"
   ],
   "hard_rules": [
-    "Do not edit visual structure per page.",
-    "Do not change CSS per page.",
-    "Do not add page-specific decorations unless the template version is changed intentionally.",
-    "Do not place derivative number under title.",
-    "Do not use Pilot labels after officialization review begins.",
-    "All generated static and deploy/lolipop outputs must be synchronized.",
-    "Master should review rendered output, not source layout differences."
+    "visual_structure_is_not_edited_per_page",
+    "css_is_not_changed_per_page",
+    "static_and_deploy_outputs_are_synchronized",
+    "hub_order_is_hero_lead_core_cards_optional_supplement_origin_bundle_related_links",
+    "reviewer_checks_rendered_output_not_source_layout_differences"
   ],
-  "template_css_version": "official-derivative-green-fixed-css-v1",
-  "status": "owner_review_template_contract_for_pilot001_r8",
-  "boundary": "preview branch only; not public activation; no sitemap update; no approval record"
+  "template_css_version": "official-derivative-green-fixed-css-v1-r9",
+  "status": "owner_review_template_contract_for_pilot001_r9",
+  "boundary": "preview branch only; no public activation in this edit"
 }
