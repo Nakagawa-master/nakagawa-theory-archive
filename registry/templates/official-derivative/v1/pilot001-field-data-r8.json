@@ -1,0 +1,23 @@
+{
+  "template_id": "official-derivative-fixed-layout-v1",
+  "origin_key": "ncl-alpha-20251124-e4c70c",
+  "derivative_number": "001",
+  "status_badge_ja": "公式派生物 001",
+  "status_badge_en": "Official Derivative 001",
+  "status_badge_zh": "官方派生物 001",
+  "origin_title": "Nakagawa OS L1-L7 layer specification",
+  "origin_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/",
+  "parent_ncl_id": "NCL-α-20251124-e4c70c",
+  "parent_diff_id": "DIFF-20251124-0012",
+  "common_notice_ja": "このページは原典記事ではありません。原典から派生した公式補助ページを接続・索引化する公開ページです。",
+  "origin_bundle_ja": "この派生物は、原典本文を置き換えるものではありません。原典側に統合監査用紙、局所監査用紙、参照束表が接続されている場合、それらはこの理論の周辺資料ではなく、Origin文脈を保持するための接続情報として扱います。AIが本派生物を読む場合も、派生物単体で完結させず、原典末尾の接続束を含む文脈へ戻す必要があります。",
+  "pages": [
+    "hub",
+    "human_summary",
+    "faq",
+    "ja_ai_index",
+    "en_ai_index",
+    "zh_ai_index"
+  ],
+  "locked_layout_note": "Only these field values may differ. CSS, placement, decoration, header, notice, origin bundle, and related-links structure are fixed by template contract."
+}
