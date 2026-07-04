@@ -1,0 +1,27 @@
+name: Deploy derivatives to Lolipop
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'deploy/lolipop/master-ricette/derivatives/**'
+      - '.github/workflows/deploy-derivatives-lolipop.yml'
+  workflow_dispatch:
+
+jobs:
+  deploy-derivatives:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy derivatives folder to Lolipop
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.LOLIPOP_FTP_HOST }}
+          username: ${{ secrets.LOLIPOP_FTP_USER }}
+          password: ${{ secrets.LOLIPOP_FTP_PASSWORD }}
+          local-dir: deploy/lolipop/master-ricette/derivatives/
+          server-dir: /master/derivatives/
+          dangerous-clean-slate: false
