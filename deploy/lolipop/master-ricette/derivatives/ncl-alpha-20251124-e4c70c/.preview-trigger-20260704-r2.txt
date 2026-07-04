@@ -1,6 +1,10 @@
-Corrected Pilot001 review preview trigger R5.
+Corrected Pilot001 review preview trigger R6.
 
-R5 fixes public wording, removes internal candidate/review wording from the top page, aligns the child page footer/navigation with the fixed Official003-style contract, and keeps static output synchronized for Cloudflare preview.
-This file exists only on the owner-review preview branch and must be removed before merge or public activation.
+R6 fixes:
+- official derivative number moved into the meta area above Parent NCL-ID / Parent Diff-ID;
+- unnecessary L1-L7 supplemental panel removed from the Pilot001 top page;
+- related-links footer restored in the simple Official003-style form;
+- top and all five child pages aligned in deploy/lolipop and static output.
+
 Review target:
 /derivatives/ncl-alpha-20251124-e4c70c/
