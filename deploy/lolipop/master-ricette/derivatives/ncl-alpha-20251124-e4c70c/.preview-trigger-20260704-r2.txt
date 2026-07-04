@@ -1,11 +1,12 @@
-Corrected Pilot001 review preview trigger R11.
+Corrected Pilot001 review preview trigger R12.
 
-R11 fixes:
-- Pilot001 hub status label finalized as single decorated label: 公式派生物 001一覧;
-- Official003 hub status label finalized as single decorated label: 公式派生物 003一覧;
-- deploy/lolipop and static outputs synchronized for both Pilot001 and Official003 hub pages;
-- R10 head/meta/script/JSON-LD parity remains in place for hub pages;
-- child-page head/meta parity remains the next renderer-level hardening target before full public release automation.
+R12 fixes:
+- Full head/meta/script/JSON-LD parity is now enforced for preview responses through static/_worker.js;
+- Target coverage: derivatives top hub, Official Derivative 001 hub and child pages, Official Derivative 003 hub and child pages;
+- Head parity includes title, description, keywords, canonical, derivative meta, AI meta, OG meta, Twitter card meta, GA4, Microsoft Clarity, AdSense, JSON-LD, metadata-audit-status, and shared CSS;
+- 001 hub label remains single decorated label: 公式派生物 001一覧;
+- 003 hub label remains single decorated label: 公式派生物 003一覧;
+- R12 template contract recorded at registry/templates/official-derivative/v1/official-derivative-template-contract.json.
 
 Review target:
 /derivatives/ncl-alpha-20251124-e4c70c/
