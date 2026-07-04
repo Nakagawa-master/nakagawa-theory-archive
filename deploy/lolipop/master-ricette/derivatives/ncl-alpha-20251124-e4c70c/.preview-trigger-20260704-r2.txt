@@ -1,14 +1,11 @@
-Corrected Pilot001 review preview trigger R10.
+Corrected Pilot001 review preview trigger R11.
 
-R10 fixes:
-- Pilot004 hub was used as current head/meta/script/JSON-LD baseline;
-- shared CSS updated to Pilot004 hero style: status, pilot, h1, meta, notice, core;
-- Pilot001 hub regenerated with Pilot004-style head parity and hero composition;
-- Official003 hub regenerated with the same R10 head and hero template;
-- derivatives top hub regenerated with OG/Twitter/JSON-LD/AI meta and measurement scripts;
-- GA4, Microsoft Clarity, and AdSense scripts are present on the hub pages;
-- deploy/lolipop and static outputs synchronized;
-- template contract updated to R10.
+R11 fixes:
+- Pilot001 hub status label finalized as single decorated label: 公式派生物 001一覧;
+- Official003 hub status label finalized as single decorated label: 公式派生物 003一覧;
+- deploy/lolipop and static outputs synchronized for both Pilot001 and Official003 hub pages;
+- R10 head/meta/script/JSON-LD parity remains in place for hub pages;
+- child-page head/meta parity remains the next renderer-level hardening target before full public release automation.
 
 Review target:
 /derivatives/ncl-alpha-20251124-e4c70c/
