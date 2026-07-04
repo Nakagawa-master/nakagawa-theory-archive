@@ -1,6 +1,6 @@
-Corrected Pilot001 review preview trigger R4.
+Corrected Pilot001 review preview trigger R5.
 
-This preview includes the high-density rewrite, shared footer menu contract, and static output synchronization across all six pages.
-It exists only on the owner-review preview branch and must be removed before any merge or public activation.
+R5 fixes public wording, removes internal candidate/review wording from the top page, aligns the child page footer/navigation with the fixed Official003-style contract, and keeps static output synchronized for Cloudflare preview.
+This file exists only on the owner-review preview branch and must be removed before merge or public activation.
 Review target:
 /derivatives/ncl-alpha-20251124-e4c70c/
