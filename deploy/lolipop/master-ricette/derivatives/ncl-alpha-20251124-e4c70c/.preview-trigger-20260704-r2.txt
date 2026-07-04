@@ -1,14 +1,12 @@
-Corrected Pilot001 review preview trigger R7.
+Corrected Pilot001 review preview trigger R8.
 
-R7 fixes:
-- top badge restored as Official Derivative 001 / 公式派生物 001;
-- title-under-number placement removed;
-- common decorated notice restored across the six-page set;
-- human summary first paragraph changed to normal text and wording updated to いまどの深さ・位置で話しているのか;
-- AI index long intro changed from decorated lead to normal text;
-- origin connection / reference bundle block restored across the six-page set;
-- related-links footer preserved;
-- deploy/lolipop and static outputs synchronized.
+R8 fixes:
+- top page structure re-aligned to Official003 / hub-style order;
+- origin connection / reference bundle moved after the derivative cards instead of before them;
+- status badge reduced in size;
+- related-links heading and link text reduced in size;
+- deploy/lolipop and static top output synchronized;
+- Official003 top source also normalized to the same top structure.
 
 Review target:
 /derivatives/ncl-alpha-20251124-e4c70c/
