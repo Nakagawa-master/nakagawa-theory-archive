@@ -1,6 +1,6 @@
-Corrected Pilot001 review preview trigger R3.
+Corrected Pilot001 review preview trigger R4.
 
-This preview includes the high-density rewrite and shared footer menu contract across all six pages.
+This preview includes the high-density rewrite, shared footer menu contract, and static output synchronization across all six pages.
 It exists only on the owner-review preview branch and must be removed before any merge or public activation.
 Review target:
 /derivatives/ncl-alpha-20251124-e4c70c/
