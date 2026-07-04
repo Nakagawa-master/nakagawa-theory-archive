@@ -1,13 +1,14 @@
-Corrected Pilot001 review preview trigger R9.
+Corrected Pilot001 review preview trigger R10.
 
-R9 fixes:
-- shared CSS updated so the hub lead block is decorated again;
-- Pilot001 hub order fixed as hero, lead/core panel, derivative cards, origin bundle, related links;
-- origin connection/reference bundle moved to immediately before related links on the hub page;
-- Official003 hub regenerated with the same fixed template and corrected wording;
-- derivatives top page regenerated as a fixed hub template with card field values only;
-- deploy/lolipop and static outputs synchronized for the review path;
-- template contract updated to R9.
+R10 fixes:
+- Pilot004 hub was used as current head/meta/script/JSON-LD baseline;
+- shared CSS updated to Pilot004 hero style: status, pilot, h1, meta, notice, core;
+- Pilot001 hub regenerated with Pilot004-style head parity and hero composition;
+- Official003 hub regenerated with the same R10 head and hero template;
+- derivatives top hub regenerated with OG/Twitter/JSON-LD/AI meta and measurement scripts;
+- GA4, Microsoft Clarity, and AdSense scripts are present on the hub pages;
+- deploy/lolipop and static outputs synchronized;
+- template contract updated to R10.
 
 Review target:
 /derivatives/ncl-alpha-20251124-e4c70c/
