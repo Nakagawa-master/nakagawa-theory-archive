@@ -1,12 +1,14 @@
-Corrected Pilot001 review preview trigger R8.
+Corrected Pilot001 review preview trigger R8-final.
 
-R8 fixes:
-- top page structure re-aligned to Official003 / hub-style order;
-- origin connection / reference bundle moved after the derivative cards instead of before them;
-- status badge reduced in size;
-- related-links heading and link text reduced in size;
-- deploy/lolipop and static top output synchronized;
-- Official003 top source also normalized to the same top structure.
+R8-final fixes:
+- stopped individual visual editing and added template contract: registry/templates/official-derivative/v1/official-derivative-template-contract.json;
+- added Pilot001 field-data file: registry/templates/official-derivative/v1/pilot001-field-data-r8.json;
+- added shared CSS as a single fixed visual source: /derivatives/_assets/official-derivative-v1.css;
+- regenerated all six Pilot001 pages with the same CSS, same header structure, same notice block, same origin-bundle block, and same related-links structure;
+- restored top page order to Official003-style order: hero, content panel with core and origin bundle, derivative cards, related links;
+- removed title-under-number placement;
+- reduced status badge size and related-links size through shared CSS;
+- synchronized deploy/lolipop and static outputs.
 
 Review target:
 /derivatives/ncl-alpha-20251124-e4c70c/
