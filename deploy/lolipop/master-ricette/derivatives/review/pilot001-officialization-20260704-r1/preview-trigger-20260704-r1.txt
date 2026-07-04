@@ -1,0 +1,9 @@
+Pilot001 officialization review preview trigger.
+
+Review root:
+/deploy/lolipop/master-ricette/derivatives/review/pilot001-officialization-20260704-r1/
+
+Intended live URL after Lolipop upload:
+https://master.ricette.jp/derivatives/review/pilot001-officialization-20260704-r1/
+
+This trigger exists only to create a branch diff for external preview/deploy systems. It is not part of public activation.
