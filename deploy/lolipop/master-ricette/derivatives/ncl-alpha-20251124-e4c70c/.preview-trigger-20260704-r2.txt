@@ -1,10 +1,14 @@
-Corrected Pilot001 review preview trigger R6.
+Corrected Pilot001 review preview trigger R7.
 
-R6 fixes:
-- official derivative number moved into the meta area above Parent NCL-ID / Parent Diff-ID;
-- unnecessary L1-L7 supplemental panel removed from the Pilot001 top page;
-- related-links footer restored in the simple Official003-style form;
-- top and all five child pages aligned in deploy/lolipop and static output.
+R7 fixes:
+- top badge restored as Official Derivative 001 / 公式派生物 001;
+- title-under-number placement removed;
+- common decorated notice restored across the six-page set;
+- human summary first paragraph changed to normal text and wording updated to いまどの深さ・位置で話しているのか;
+- AI index long intro changed from decorated lead to normal text;
+- origin connection / reference bundle block restored across the six-page set;
+- related-links footer preserved;
+- deploy/lolipop and static outputs synchronized.
 
 Review target:
 /derivatives/ncl-alpha-20251124-e4c70c/
