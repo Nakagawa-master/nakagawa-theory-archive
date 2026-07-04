@@ -1,6 +1,6 @@
 {
   "manifest_name": "official_derivatives_public_safe_manifest",
-  "version": "0.1",
+  "version": "0.2-estcond00-cleaned",
   "generated_for": "master.ricette.jp/derivatives",
   "items": [
     {
@@ -40,21 +40,24 @@
       ]
     },
     {
-      "pilot_id": "Pilot 003",
-      "parent_title": "接続報酬社会──信頼資本と共鳴の制度化",
-      "parent_url": "https://master.ricette.jp/society/nakagawa-master-connection-reward-society/",
-      "parent_ncl_id": "NCL-α-20251102-29c09d",
-      "parent_diff_id": "DIFF-20251102-0001",
-      "status": "candidate_noindex",
-      "robots": "noindex,nofollow",
-      "derivative_base_url": "https://master.ricette.jp/derivatives/ncl-alpha-20251102-29c09d/",
+      "pilot_id": "公式派生物 003",
+      "derivative_set_id": "ESTCOND00-OFFICIAL-DERIVATIVE-SET-20260704",
+      "parent_title": "成立条件論・第0論：誰も全体を見ていない社会",
+      "parent_url": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
+      "parent_ncl_id": "NCL-α-20260627-aea14a",
+      "parent_diff_id": "DIFF-20260627-0002",
+      "status": "active_indexable_approved",
+      "robots": "index,follow",
+      "approval_record": "private-derivatives/operations/release/approvals/estcond00-approval-record-20260704-v1.json",
+      "derivative_id_registry": "private-derivatives/operations/release/registries/estcond00-derivative-id-registry-20260704-v1.json",
+      "derivative_base_url": "https://master.ricette.jp/derivatives/ncl-alpha-20260627-aea14a/",
       "urls": [
-        "https://master.ricette.jp/derivatives/ncl-alpha-20251102-29c09d/",
-        "https://master.ricette.jp/derivatives/ncl-alpha-20251102-29c09d/ja/human-summary/",
-        "https://master.ricette.jp/derivatives/ncl-alpha-20251102-29c09d/ja/faq/",
-        "https://master.ricette.jp/derivatives/ncl-alpha-20251102-29c09d/ja/ai-index/",
-        "https://master.ricette.jp/derivatives/ncl-alpha-20251102-29c09d/en/ai-index/",
-        "https://master.ricette.jp/derivatives/ncl-alpha-20251102-29c09d/zh/ai-index/"
+        "https://master.ricette.jp/derivatives/ncl-alpha-20260627-aea14a/",
+        "https://master.ricette.jp/derivatives/ncl-alpha-20260627-aea14a/ja/human-summary/",
+        "https://master.ricette.jp/derivatives/ncl-alpha-20260627-aea14a/ja/faq/",
+        "https://master.ricette.jp/derivatives/ncl-alpha-20260627-aea14a/ja/ai-index/",
+        "https://master.ricette.jp/derivatives/ncl-alpha-20260627-aea14a/en/ai-index/",
+        "https://master.ricette.jp/derivatives/ncl-alpha-20260627-aea14a/zh/ai-index/"
       ]
     }
   ]
