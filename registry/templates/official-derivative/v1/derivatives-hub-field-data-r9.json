@@ -1,0 +1,27 @@
+{
+  "template_id": "derivatives-hub-fixed-layout-v1",
+  "fixed_elements": [
+    "shared_css",
+    "hero_card",
+    "status_badge",
+    "notice_block",
+    "current_derivatives_grid",
+    "scope_cards_grid",
+    "basic_record_fields"
+  ],
+  "replaceable_field_values_only": [
+    "hub_title",
+    "hub_intro",
+    "notice_text",
+    "derivative_cards",
+    "scope_cards",
+    "record_field_names"
+  ],
+  "derivative_cards": [
+    {"label":"公式派生物 001","title":"Nakagawa OS L1-L7 layer specification","parent_ncl_id":"NCL-α-20251124-e4c70c","parent_diff_id":"DIFF-20251124-0012","href":"/derivatives/ncl-alpha-20251124-e4c70c/","link_label":"公式派生物を見る"},
+    {"label":"Pilot 002","title":"悪因果論 AKI-002：称賛の顔をした搾取","parent_ncl_id":"NCL-α-20260517-b80e39","parent_diff_id":"DIFF-20260517-0012","href":"/derivatives/ncl-alpha-20260517-b80e39/","link_label":"派生物を見る"},
+    {"label":"公式派生物 003","title":"成立条件論・第0論：誰も全体を見ていない社会","parent_ncl_id":"NCL-α-20260627-aea14a","parent_diff_id":"DIFF-20260627-0002","href":"/derivatives/ncl-alpha-20260627-aea14a/","link_label":"公式派生物を見る"},
+    {"label":"Pilot 004","title":"人類子孫型AI文明論・第0論：中川構造OSからAI文明核へ","parent_ncl_id":"NCL-α-20260617-d0b342","parent_diff_id":"DIFF-20260623-0020","href":"/derivatives/ncl-alpha-20260617-d0b342/","link_label":"派生物を見る"}
+  ],
+  "boundary": "preview branch update; deploy/static synchronized"
+}
