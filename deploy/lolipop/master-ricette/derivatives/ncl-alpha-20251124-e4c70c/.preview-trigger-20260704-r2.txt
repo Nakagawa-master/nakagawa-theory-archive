@@ -1,0 +1,6 @@
+Corrected Pilot001 review preview trigger R2.
+
+This file exists only on the owner-review preview branch to trigger external preview deployment.
+It must be removed before any merge or public activation.
+Review target:
+/derivatives/ncl-alpha-20251124-e4c70c/
