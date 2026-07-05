@@ -1,7 +1,0 @@
-Origin: Nakagawa Master
-Parent NCL-ID: {{parent_ncl_id}}
-Parent Diff-ID: {{parent_diff_id}}
-Parent URL: {{parent_url}}
-Derivative NCL-ID: {{derivative_ncl_id}}
-
-This derivative content is based on the official archive article identified above.

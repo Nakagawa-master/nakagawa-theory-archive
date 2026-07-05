@@ -1,9 +1,0 @@
-Deploy trigger for official derivatives 001 and 003.
-
-Purpose:
-- Upload deploy/lolipop/master-ricette/derivatives/ to Lolipop /master/derivatives/.
-- Publish Official Derivative 001 label on derivatives top.
-- Publish Official Derivative 003 fixed R12 template.
-- Keep R12 official derivative template contract as fixed baseline for future derivatives.
-
-This file is only a deployment trigger and may remain harmlessly in the deployed folder.
