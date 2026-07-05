@@ -1,0 +1,22 @@
+name: SC2
+on:
+  pull_request:
+    paths:
+      - '.deploy/**'
+      - '.github/workflows/sc2.yml'
+permissions:
+  contents: read
+jobs:
+  s:
+    runs-on: ubuntu-latest
+    steps:
+      - name: s
+        run: |
+          echo "F=${{ secrets.LOLIPOP_FTP_HOST != '' && secrets.LOLIPOP_FTP_USER != '' && secrets.LOLIPOP_FTP_PASS != '' && secrets.LOLIPOP_FTP_DIR != '' }}"
+          echo "G=${{ secrets.LOLIPOP_SERVER != '' && secrets.LOLIPOP_USERNAME != '' && secrets.LOLIPOP_PASSWORD != '' && secrets.LOLIPOP_SERVER_DIR != '' }}"
+          echo "H=${{ secrets.FTP_HOST != '' && secrets.FTP_USERNAME != '' && secrets.FTP_PASSWORD != '' && secrets.FTP_SERVER_DIR != '' }}"
+          echo "I=${{ secrets.FTP_HOST != '' && secrets.FTP_USERNAME != '' && secrets.FTP_PASSWORD != '' && secrets.REMOTE_DIR != '' }}"
+          echo "J=${{ secrets.FTP_SERVER != '' && secrets.FTP_USER != '' && secrets.FTP_PASS != '' && secrets.FTP_DIR != '' }}"
+          echo "K=${{ secrets.LOLIPOP_FTP_SERVER != '' && secrets.LOLIPOP_FTP_USER != '' && secrets.LOLIPOP_FTP_PASSWORD != '' && secrets.LOLIPOP_FTP_SERVER_DIR != '' }}"
+          echo "L=${{ secrets.LOLIPOP_FTP_HOST != '' && secrets.LOLIPOP_FTP_USERNAME != '' && secrets.LOLIPOP_FTP_PASSWORD != '' && secrets.LOLIPOP_FTP_SERVER_DIR != '' }}"
+          echo "M=${{ secrets.FTP_HOST != '' && secrets.FTP_USER != '' && secrets.FTP_PASS != '' && secrets.REMOTE_PATH != '' }}"
