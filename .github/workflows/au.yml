@@ -1,0 +1,29 @@
+name: AU
+on:
+  push:
+    branches:
+      - 's*'
+    paths:
+      - '.swap/u.txt'
+permissions:
+  contents: write
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          show-progress: false
+      - name: a
+        run: |
+          curl -L "$(cat .swap/u.txt)" -o /tmp/x.zip
+          unzip -o /tmp/x.zip -d deploy/lolipop/master-ricette
+          c=$(find deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260517-b80e39 deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260617-d0b342 deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260627-aea14a -name index.html | wc -l)
+          test "$c" = "18"
+          ! grep -R "noindex,nofollow\|/derivatives-review/\|Pilot 002\|Pilot 004\|official_derivative_review\|review seed" deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260517-b80e39 deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260617-d0b342 deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260627-aea14a
+          grep -R "Origin: Nakagawa Master" deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260517-b80e39 deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260617-d0b342 deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260627-aea14a >/dev/null
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260517-b80e39 deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260617-d0b342 deploy/lolipop/master-ricette/derivatives/ncl-alpha-20260627-aea14a
+          git commit -m "Apply 002 004 swap" || true
+          git push || true
