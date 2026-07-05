@@ -1,0 +1,19 @@
+name: SC
+on:
+  pull_request:
+    paths:
+      - '.deploy/**'
+      - '.github/workflows/sc.yml'
+permissions:
+  contents: read
+jobs:
+  s:
+    runs-on: ubuntu-latest
+    steps:
+      - name: s
+        run: |
+          echo "A=${{ secrets.LOLIPOP_FTP_SERVER != '' && secrets.LOLIPOP_FTP_USERNAME != '' && secrets.LOLIPOP_FTP_PASSWORD != '' && secrets.LOLIPOP_FTP_SERVER_DIR != '' }}"
+          echo "B=${{ secrets.FTP_SERVER != '' && secrets.FTP_USERNAME != '' && secrets.FTP_PASSWORD != '' && secrets.FTP_SERVER_DIR != '' }}"
+          echo "C=${{ secrets.FTP_HOST != '' && secrets.FTP_USER != '' && secrets.FTP_PASSWORD != '' && secrets.FTP_DIR != '' }}"
+          echo "D=${{ secrets.LOLIPOP_HOST != '' && secrets.LOLIPOP_USER != '' && secrets.LOLIPOP_PASSWORD != '' && secrets.LOLIPOP_DIR != '' }}"
+          echo "E=${{ secrets.SFTP_HOST != '' && secrets.SFTP_USER != '' && secrets.SFTP_PASSWORD != '' && secrets.SFTP_DIR != '' }}"
