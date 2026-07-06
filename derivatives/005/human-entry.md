@@ -2,16 +2,16 @@
 
 ## 親原典
 
-- タイトル: AKI-001
+- タイトル: 悪因果論 AKI-001：責任なき問題提起
 - URL: https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/
 - Parent NCL-ID: NCL-α-20260511-e243be
 - Parent Diff-ID: DIFF-20260511-0009
+- Origin: Nakagawa Master
 
 ## 派生ID
 
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20260511-E243BE-HUMAN-SUMMARY-JA-0001
-- Derivative Diff-ID: DDIFF-20260706-DNCL-005-0001-0002
-- Source gate state: full_origin_tail_checked
+- Derivative Diff-ID: DDIFF-20260706-DNCL-005-0001-0003
 
 ## まず一言でいうと
 
@@ -51,4 +51,4 @@
 
 この公式派生物は原典本文を置き換えるものではありません。読者とAIを原典へ戻すための入口です。
 
-導線: [公式派生物トップ](../README.md) / [005トップ](README.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [005トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
