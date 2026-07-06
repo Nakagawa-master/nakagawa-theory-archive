@@ -1,0 +1,39 @@
+name: official derivative 005 navigation fix
+
+on:
+  push:
+    paths:
+      - 'tools/official_derivatives/maintenance-trigger-005-nav.txt'
+      - '.github/workflows/official-derivative-005-nav-fix.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add missing 005 EN navigation
+        shell: bash
+        run: |
+          set -e
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path('derivatives/005/en-ai-index.md')
+          text = p.read_text(encoding='utf-8')
+          nav = """
+
+---
+
+Navigation: [Official Derivatives Top](../README.md) / [005 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+"""
+          if 'Navigation: [Official Derivatives Top]' not in text:
+              p.write_text(text.rstrip() + nav, encoding='utf-8')
+          PY
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add derivatives/005/en-ai-index.md
+          git commit -m 'Add navigation to Official Derivative 005 EN AI index' || true
+          git push || true
