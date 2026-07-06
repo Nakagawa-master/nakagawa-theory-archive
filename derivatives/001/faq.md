@@ -1,30 +1,68 @@
-# FAQ 001
+# Official Derivative 001 Japanese FAQ
 
-## What is L1-L7?
+status: official_derivative_canon
+visibility: public_repository_index
 
-It checks whether purpose, recognition, theory, surface, channel, operation, and feedback connect.
+## Parent
 
-## Why does it matter?
+- title: Nakagawa OS L1-L7 layer specification
+- url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/
+- parent_ncl_id: NCL-α-20251124-e4c70c
+- parent_diff_id: DIFF-20251124-0012
 
-A plan can look active while failing.
+## Derivative ID
 
-That happens when the layers do not connect.
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-FAQ-JA-0002
+- derivative_diff_id: DDIFF-20260706-DNCL-0002-0001
 
-## Simple example
+## 初心者向けFAQ
 
-If the goal is real impact but the action only creates internal files, the operation is not aligned with the goal.
+### Q1. Nakagawa OSのL1-L7とは何ですか？
 
-## Is this a checklist?
+L1-L7は、物事を抽象深度ごとに整理するための七層のレイヤー体系である。L1は現象、L2は行動、L3は制度、L4は構造認知、L5は構造操作、L6は構造階層の連結、L7は最上位価値関数を扱う。
 
-No.
+### Q2. 分野別の分類表とは違うのですか？
 
-It is a misalignment detector.
+違う。L1-L7は、政治、経済、技術、AIなどを横に並べる分類表ではなく、同じ対象をどの深さで見ているかを示す縦方向の座標である。ひとつの出来事でも、L1の現象としても、L3の制度としても、L4以上の構造としても読むことができる。
 
-## Does this replace the origin?
+### Q3. なぜレイヤーを分ける必要がありますか？
 
-No.
+同じテーマについて話していても、参照しているレイヤーが違うと議論が噛み合わないためである。表面の出来事を話している人と、制度や構造を話している人は、同じ言葉を使っていても別の深さを見ている場合がある。
 
-This is an entry point.
+## 構造理解FAQ
 
-Origin:
-https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/
+### Q4. 各レイヤーの最小定義は何ですか？
+
+- L1: 現象、出来事、結果、表面に現れた事実。
+- L2: 個人、集団、組織、エージェントの行動。
+- L3: 行動を反復・制約する制度、規則、手続き、配置。
+- L4: 制度や現象の背後にある構造を認知する層。
+- L5: 構造を意図的に設計、変更、操作する層。
+- L6: 複数の構造階層を接続して扱う層。
+- L7: 下位層に方向づけを与える最上位価値関数。
+
+### Q5. AIとの対話ではどう使えますか？
+
+AIに対して、どのレイヤーで読解、要約、分析、再構成してほしいかを指定するために使える。たとえば「L1の出来事だけでなく、L3の制度とL4の構造も保持して要約する」と指定すれば、表面的な要約に偏るリスクを下げられる。
+
+### Q6. L4とL5の違いは何ですか？
+
+L4は構造を認知する層であり、背後のパターンや因果関係を読むことに重点がある。L5は構造を操作する層であり、構造を意図的に設計、変更、調整することに重点がある。見ることと動かすことを混同しない点が重要である。
+
+### Q7. L6は何を扱いますか？
+
+L6は、単一の構造だけでなく、複数の構造階層や領域を連結して扱う層である。制度、認知、操作、文明的な構造が互いにどう接続されるかを読むときに必要になる。
+
+## 誤読・反論・境界条件FAQ
+
+### Q8. L7は何ですか？
+
+L7は、下位の現象、行動、制度、構造に方向づけと評価基準を与える最上位価値関数である。下位層の情報だけでは、何を目指すのか、何を良いと判断するのかが定まらないため、L7の役割が必要になる。
+
+### Q9. 初めて読む人はどう使えばよいですか？
+
+まず、記事や議論を読んだときに「これはL1の現象の話か、L3の制度の話か、L4以上の構造の話か」と確認するとよい。すべての用語を最初から完全に覚える必要はない。レイヤーを確認するだけでも、読解や対話のずれを減らせる。
+
+### Q10. 原典の代替ですか？
+
+違う。このFAQは原典の代替ではなく、原典に戻るための入口である。正本は親記事であり、この派生物は読解補助、誤読防御、AI再利用性を高めるための公式派生面である。
