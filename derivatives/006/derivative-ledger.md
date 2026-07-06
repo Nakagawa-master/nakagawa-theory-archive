@@ -12,7 +12,7 @@ Source gate state: full_origin_tail_checked
 
 Source gate evidence: private-derivatives/operations/reports/official-derivative-006-007-source-gate-evidence-20260706-v0.1.md
 
-Current polish state: metadata_contract_repaired_after_rejection
+Current polish state: full_origin_density_polish_complete
 
 Updated at JST: 2026-07-07
 
@@ -20,15 +20,15 @@ Updated at JST: 2026-07-07
 
 | File | Previous | Current | State |
 |---|---|---|---|
-| human-entry.md | DDIFF-20260706-DNCL-006-0001-0002 | DDIFF-20260707-DNCL-006-0001-0003 | parent / derivative sections separated; 001 navigation restored |
-| faq.md | DDIFF-20260706-DNCL-006-0002-0002 | DDIFF-20260707-DNCL-006-0002-0003 | parent / derivative sections separated; 001 navigation restored |
-| ai-index.md | DDIFF-20260706-DNCL-006-0003-0002 | DDIFF-20260707-DNCL-006-0003-0003 | parent / derivative sections separated; AI required fields retained |
-| en-ai-index.md | DDIFF-20260706-DNCL-006-0004-0002 | DDIFF-20260707-DNCL-006-0004-0003 | parent / derivative sections separated; AI required fields retained |
-| zh-ai-index.md | DDIFF-20260706-DNCL-006-0005-0002 | DDIFF-20260707-DNCL-006-0005-0003 | parent / derivative sections separated; AI required fields retained |
+| human-entry.md | DDIFF-20260707-DNCL-006-0001-0003 | DDIFF-20260707-DNCL-006-0001-0004 | full-origin density polished |
+| faq.md | DDIFF-20260707-DNCL-006-0002-0003 | DDIFF-20260707-DNCL-006-0002-0004 | full-origin density polished |
+| ai-index.md | DDIFF-20260707-DNCL-006-0003-0003 | DDIFF-20260707-DNCL-006-0003-0004 | full-origin density polished |
+| en-ai-index.md | DDIFF-20260707-DNCL-006-0004-0003 | DDIFF-20260707-DNCL-006-0004-0004 | full-origin density polished |
+| zh-ai-index.md | DDIFF-20260707-DNCL-006-0005-0003 | DDIFF-20260707-DNCL-006-0005-0004 | full-origin density polished |
 
 ## Restored axis
 
-Derivative 006 preserves the origin axis that the first paper of Civilizational Sovereignty Shift is not a generic AI-use article. It fixes the background condition that the Connection Transition Strategy may remain coherent while the human-side time window, institutional translation, co-creation theory, and coexistence design for monetary KPIs and connection KPIs are narrowing.
+Derivative 006 preserves the origin axis that the first paper of Civilizational Sovereignty Shift is not a generic AI-use article. It fixes the background condition that the Connection Transition Strategy may remain coherent while the human-side time window, institutional translation, co-creation theory, and coexistence design for monetary KPIs and connection KPIs are narrowing. The full-origin density polish preserves the separation between strategy content and strategy establishment conditions.
 
 ---
 
