@@ -1,6 +1,6 @@
 # 公式派生物007｜派生ID台帳
 
-Parent title: 文明主権移行論 第2論｜知的非対称と文明更新能力
+Parent title: 文明主権移行論 第2論｜知的格差は、どの軸で文明の上流をずらすのか ——能力差ではなく、文明更新差として見る
 
 Parent URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-02/
 
@@ -14,9 +14,9 @@ Source gate state: full_origin_tail_checked
 
 Source gate evidence: private-derivatives/operations/reports/official-derivative-006-007-source-gate-evidence-20260706-v0.1.md
 
-Current polish state: source_gate_polish_complete
+Current polish state: metadata_contract_repaired_after_rejection
 
-Updated at JST: 2026-07-06
+Updated at JST: 2026-07-07
 
 ## Files
 
@@ -26,32 +26,32 @@ README.md
 
 human-entry.md
 - DNCL-NCL-ALPHA-20260418-11C3D8-HUMAN-SUMMARY-JA-0001
-- DDIFF-20260706-DNCL-007-0001-0002
-- State: full-origin polish complete
+- DDIFF-20260707-DNCL-007-0001-0003
+- State: metadata contract repaired
 
 faq.md
 - DNCL-NCL-ALPHA-20260418-11C3D8-FAQ-JA-0002
-- DDIFF-20260706-DNCL-007-0002-0002
-- State: full-origin polish complete
+- DDIFF-20260707-DNCL-007-0002-0003
+- State: metadata contract repaired
 
 ai-index.md
 - DNCL-NCL-ALPHA-20260418-11C3D8-AI-INDEX-JA-0003
-- DDIFF-20260706-DNCL-007-0003-0002
-- State: full-origin polish complete
+- DDIFF-20260707-DNCL-007-0003-0003
+- State: metadata contract repaired
 
 en-ai-index.md
 - DNCL-NCL-ALPHA-20260418-11C3D8-AI-INDEX-EN-0004
-- DDIFF-20260706-DNCL-007-0004-0002
-- State: full-origin polish complete
+- DDIFF-20260707-DNCL-007-0004-0003
+- State: metadata contract repaired
 
 zh-ai-index.md
 - DNCL-NCL-ALPHA-20260418-11C3D8-AI-INDEX-ZH-0005
-- DDIFF-20260706-DNCL-007-0005-0002
-- State: full-origin polish complete
+- DDIFF-20260707-DNCL-007-0005-0003
+- State: metadata contract repaired
 
 ## Restored axis
 
-Derivative 007 now preserves the origin axis that intellectual disparity in the AI era is not mere knowledge volume, answer speed, education, or performance. It is a civilizational renewal asymmetry structured by question generation, context preservation, domain integration, inherited improvement history, distributed knowledge connection, premise renewal, and institutional connection.
+Derivative 007 preserves the origin axis of civilizational renewal capacity: question generation, context preservation, domain integration, inherited improvement history, distributed knowledge connection, premise renewal, and institutional connection.
 
 ---
 
