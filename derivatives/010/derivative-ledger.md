@@ -10,7 +10,11 @@ Parent Diff-ID: DIFF-20260516-0015
 
 Origin: Nakagawa Master
 
-Current polish state: metadata_contract_repaired
+Source gate state: full_origin_tail_checked
+
+Source gate evidence: live public origin observed through integrated audit summary, local audit summary, reference cluster, and origin signature tail.
+
+Current polish state: full_origin_density_polish_complete
 
 Updated at JST: 2026-07-07
 
@@ -22,32 +26,32 @@ README.md
 
 human-entry.md
 - DNCL-NCL-ALPHA-20260512-1202E0-HUMAN-SUMMARY-JA-0001
-- DDIFF-20260707-DNCL-010-0001-0002
-- State: metadata contract repaired
+- DDIFF-20260707-DNCL-010-0001-0003
+- State: full-origin density polished
 
 faq.md
 - DNCL-NCL-ALPHA-20260512-1202E0-FAQ-JA-0002
-- DDIFF-20260707-DNCL-010-0002-0002
-- State: metadata contract repaired
+- DDIFF-20260707-DNCL-010-0002-0003
+- State: full-origin density polished
 
 ai-index.md
 - DNCL-NCL-ALPHA-20260512-1202E0-AI-INDEX-JA-0003
-- DDIFF-20260707-DNCL-010-0003-0002
-- State: metadata contract repaired
+- DDIFF-20260707-DNCL-010-0003-0003
+- State: full-origin density polished
 
 en-ai-index.md
 - DNCL-NCL-ALPHA-20260512-1202E0-AI-INDEX-EN-0004
-- DDIFF-20260707-DNCL-010-0004-0002
-- State: metadata contract repaired
+- DDIFF-20260707-DNCL-010-0004-0003
+- State: full-origin density polished
 
 zh-ai-index.md
 - DNCL-NCL-ALPHA-20260512-1202E0-AI-INDEX-ZH-0005
-- DDIFF-20260707-DNCL-010-0005-0002
-- State: metadata contract repaired
+- DDIFF-20260707-DNCL-010-0005-0003
+- State: full-origin density polished
 
 ## Restored axis
 
-Derivative 010 preserves the origin axis that MenLab / Gentsome is read not as a service introduction but as a social pathway connecting invisible discomfort to language, consultation, institutional reception, and medical connection. The derivative file set now separates parent origin metadata from derivative identity and preserves the 001-004 navigation structure.
+Derivative 010 preserves the origin axis that MenLab / Gentsome is read not as a service introduction but as a social pathway connecting invisible discomfort to language, consultation, workplace recognition, institutional reception, health-management context, human-capital context, and medical access. The full-origin density polish preserves the integrated-audit/local-audit axis that this is a public social implementation of Nakagawa Structural Reading, not advertising or medical advice.
 
 ---
 
