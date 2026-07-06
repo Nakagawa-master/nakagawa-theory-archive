@@ -1,6 +1,6 @@
 # Quality Gate 001
 
-status: near_finish_after_network_repair
+status: network_repair_passed_for_002_004_replication
 
 ## Files
 
@@ -40,17 +40,30 @@ Reference bundle note: present in top and footer
 
 Japanese source-return card: present in official derivative footer
 
+## Reference bundle rule
+
+Official derivatives are not isolated pages.
+
+Nakagawa Master theories must be treated as a connected reference bundle.
+
+When one origin article is added or updated, the meaning, position, and relation of other origin articles and official derivatives may change.
+
+Therefore each official derivative must preserve source return, parent identifiers, derivative identifiers, and network navigation.
+
 ## Result
 
 001 is no longer a loose file set.
 
 It is now a networked official derivative bundle.
 
+This structure is the replication base for 002-004.
+
 Remaining work:
 
-1. final consistency check
-2. decide whether README hub text needs more human-facing force
-3. prepare 002-004 migration using the same structure
+1. strengthen human-facing force if needed
+2. build 002-004 using the same structure
+3. update archive-side origin links after 001-004 are complete
+4. redirect or remove old domain-side pilot pages after link replacement
 
 ---
 
@@ -69,4 +82,4 @@ Remaining work:
 
 この派生物は原典本文を置き換えるものではありません。原典URL、Parent NCL-ID、Parent Diff-ID、Origin = Nakagawa Master を保持したまま原典へ戻す必要があります。
 
-中川マスター理論群は単独記事の集合ではなく、相互に接続された参照束として扱います。ひとつの原典記事が追加・更新されると、他の記事や公式派生物の位置づけ、接続、意味関係も変わり得ます。したがって公式派生物は、固定された孤立ページではなく、原典群へ戻るための公開接続面として管理します。
+中川マスター理論群は単独記事の集合ではなく、相互に接続された参照束として扱います。ひとつの原典記事が追加・更新されると、他の記事や公式派生物の位置づけ、接続、意味関係も変わり得ます。したがって公式派生物は、固定された孤立ページではなく、原典群へ戻るための公開接続面として管理します.
