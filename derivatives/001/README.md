@@ -2,13 +2,25 @@
 
 ## Nakagawa OS L1-L7
 
-A structural entry for seeing why plans fail when purpose, action, and feedback do not connect.
+Nakagawa OS L1-L7 is a vertical layer specification for reading where a statement, event, judgment, system, or AI output is being processed.
+
+It separates surface phenomena, behavior, institutions, structural cognition, structural operation, structural linkage, and top-level value function.
 
 ## One-line entry
 
 Many failures are not caused by lack of effort.
 
-They happen because the layers are misaligned.
+They happen because people and systems speak from different layers while assuming they are discussing the same thing.
+
+## Why this matters
+
+A conversation can fail before disagreement begins.
+
+A plan can look active while losing its connection to purpose.
+
+An AI summary can sound correct while erasing the structural layer of the original theory.
+
+L1-L7 exists to prevent that collapse.
 
 ## Derivative ID
 
@@ -16,12 +28,6 @@ They happen because the layers are misaligned.
 derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-JA-0000
 derivative_diff_id: DDIFF-20260706-DNCL-0000-0001
 ```
-
-## What this derivative does
-
-This derivative introduces the L1-L7 structure as a way to check whether a plan connects from root purpose to real-world feedback.
-
-It is an entry point, not a replacement for the origin article.
 
 ## Files
 
@@ -32,6 +38,7 @@ ai-index.md
 en-ai-index.md
 zh-ai-index.md
 derivative-ledger.md
+quality-gate.md
 ```
 
 ## Origin
@@ -45,4 +52,6 @@ Parent Diff-ID: DIFF-20251124-0012
 
 ## Source return
 
-Read the origin article for the full theory structure.
+This derivative is not a replacement for the origin article.
+
+Use it as an entry point, then return to the parent article for the full theory structure.
