@@ -6,8 +6,12 @@
 - URL: https://master.ricette.jp/theory/nakagawa-master-causal-opacity-effort-theory/
 - Parent NCL-ID: NCL-α-20260607-7e87f5
 - Parent Diff-ID: DIFF-20260610-0017
-- Derivative Diff-ID: DDIFF-20260706-DNCL-008-0001-0002
-- Source gate state: full_origin_tail_checked
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260607-7E87F5-HUMAN-SUMMARY-JA-0001
+- Derivative Diff-ID: DDIFF-20260707-DNCL-008-0001-0003
 
 ## まず一言でいうと
 
