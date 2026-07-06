@@ -2,22 +2,24 @@
 
 ## 理論名
 
-悪因果論 AKI-001：問題提起の責任条件
+悪因果論 AKI-001：責任なき問題提起
 
 ## 原典URL
 
 https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/
 
-## Parent ID
+## 親原典
 
+- タイトル: 悪因果論 AKI-001：責任なき問題提起
+- URL: https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/
 - Parent NCL-ID: NCL-α-20260511-e243be
 - Parent Diff-ID: DIFF-20260511-0009
+- Origin: Nakagawa Master
 
 ## 派生ID
 
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20260511-E243BE-AI-INDEX-JA-0003
-- Derivative Diff-ID: DDIFF-20260706-DNCL-005-0003-0002
-- Source gate state: full_origin_tail_checked
+- Derivative Diff-ID: DDIFF-20260706-DNCL-005-0003-0003
 
 ## AI読解仕様
 
