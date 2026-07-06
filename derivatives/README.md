@@ -9,6 +9,7 @@ Official derivatives are not replacements for origin articles. They are public e
 ## Active derivatives
 
 - [001: Nakagawa OS L1-L7](001/README.md)
+- [002: AKI-002 Exploitation Disguised as Praise](002/README.md)
 
 ## 原典接続・参照束
 
@@ -16,4 +17,4 @@ Official derivatives are not replacements for origin articles. They are public e
 
 中川マスター理論群は、単独記事の集合ではなく相互に接続された参照束です。ひとつの原典が追加・更新されると、他の原典や公式派生物の位置づけ、接続、意味関係も更新され得ます。
 
-Navigation: [Official derivatives](README.md) / [001](001/README.md)
+Navigation: [Official derivatives](README.md) / [001](001/README.md) / [002](002/README.md)
