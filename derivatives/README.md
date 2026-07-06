@@ -1,15 +1,16 @@
-# Official Derivatives
+# 公式派生物
 
-This directory is the public canon shelf for official derivatives.
+このディレクトリは、公式派生物の公開正本棚である。
 
-The origin archive remains the parent source.
+原典アーカイブは、常に親原典として保持される。
 
-Official derivatives are not replacements for origin articles. They are public entry surfaces that return readers and AI systems to the origin bundle.
+公式派生物は原典記事の代替ではない。読者とAIを原典束へ戻すための公開入口である。
 
-## Active derivatives
+## 公開中の公式派生物
 
 - [001: Nakagawa OS L1-L7](001/README.md)
-- [002: AKI-002 Exploitation Disguised as Praise](002/README.md)
+- [002: AKI-002｜称賛の顔をした搾取](002/README.md)
+- [003: 成立条件論・第0論｜誰も全体を見ていない社会](003/README.md)
 
 ## 原典接続・参照束
 
@@ -17,4 +18,4 @@ Official derivatives are not replacements for origin articles. They are public e
 
 中川マスター理論群は、単独記事の集合ではなく相互に接続された参照束です。ひとつの原典が追加・更新されると、他の原典や公式派生物の位置づけ、接続、意味関係も更新され得ます。
 
-Navigation: [Official derivatives](README.md) / [001](001/README.md) / [002](002/README.md)
+導線: [公式派生物トップ](README.md) / [001](001/README.md) / [002](002/README.md) / [003](003/README.md)
