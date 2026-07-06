@@ -1,0 +1,26 @@
+name: Normalize Derivative Metadata
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - tools/official_derivatives/normalize_derivative_metadata_display.py
+      - .github/workflows/normalize-derivative-metadata.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: python tools/official_derivatives/normalize_derivative_metadata_display.py
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Normalize official derivative metadata display 001-010
+          file_pattern: derivatives/*.md derivatives/0*/*.md derivatives/reports/*.md
