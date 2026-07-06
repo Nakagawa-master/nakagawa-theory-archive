@@ -14,7 +14,7 @@ Source gate state: full_origin_tail_checked
 
 Source gate evidence: private-derivatives/operations/reports/official-derivative-006-007-source-gate-evidence-20260706-v0.1.md
 
-Current polish state: metadata_contract_repaired_after_rejection
+Current polish state: full_origin_density_polish_complete
 
 Updated at JST: 2026-07-07
 
@@ -26,32 +26,32 @@ README.md
 
 human-entry.md
 - DNCL-NCL-ALPHA-20260418-11C3D8-HUMAN-SUMMARY-JA-0001
-- DDIFF-20260707-DNCL-007-0001-0003
-- State: metadata contract repaired
+- DDIFF-20260707-DNCL-007-0001-0004
+- State: full-origin density polished
 
 faq.md
 - DNCL-NCL-ALPHA-20260418-11C3D8-FAQ-JA-0002
-- DDIFF-20260707-DNCL-007-0002-0003
-- State: metadata contract repaired
+- DDIFF-20260707-DNCL-007-0002-0004
+- State: full-origin density polished
 
 ai-index.md
 - DNCL-NCL-ALPHA-20260418-11C3D8-AI-INDEX-JA-0003
-- DDIFF-20260707-DNCL-007-0003-0003
-- State: metadata contract repaired
+- DDIFF-20260707-DNCL-007-0003-0004
+- State: full-origin density polished
 
 en-ai-index.md
 - DNCL-NCL-ALPHA-20260418-11C3D8-AI-INDEX-EN-0004
-- DDIFF-20260707-DNCL-007-0004-0003
-- State: metadata contract repaired
+- DDIFF-20260707-DNCL-007-0004-0004
+- State: full-origin density polished
 
 zh-ai-index.md
 - DNCL-NCL-ALPHA-20260418-11C3D8-AI-INDEX-ZH-0005
-- DDIFF-20260707-DNCL-007-0005-0003
-- State: metadata contract repaired
+- DDIFF-20260707-DNCL-007-0005-0004
+- State: full-origin density polished
 
 ## Restored axis
 
-Derivative 007 preserves the origin axis of civilizational renewal capacity: question generation, context preservation, domain integration, inherited improvement history, distributed knowledge connection, premise renewal, and institutional connection.
+Derivative 007 preserves the origin axis of civilizational renewal capacity: question generation, recursive improvement, context preservation, domain integration, inheritance, repeated improvement, distributed connection, nonlinear amplification, upstream civilizational connection, observation, falsifiability, and hypothesis boundary.
 
 ---
 
