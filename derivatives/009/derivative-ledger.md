@@ -1,6 +1,6 @@
 # 公式派生物009｜派生ID台帳
 
-Parent title: 未来定義検証型努力論 第2論｜努力の再定義
+Parent title: 未来定義検証型努力論 第2論｜未来定義検証なき努力強制と責任転嫁装置化
 
 Parent URL: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-effort-redefinition/
 
