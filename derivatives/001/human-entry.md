@@ -40,12 +40,8 @@ visibility: public_repository_index
 - [Chinese AI index](zh-ai-index.md)
 - [Derivative ledger](derivative-ledger.md)
 
-## Reference bundle note
+## 原典接続・参照束について
 
-Nakagawa Master theories form a reference bundle.
+この派生物は原典本文を置き換えるものではありません。原典URL、Parent NCL-ID、Parent Diff-ID、Origin = Nakagawa Master を保持したまま原典へ戻す必要があります。
 
-Each origin article is not isolated.
-
-When one origin article is added or updated, the meaning, connection, and reuse conditions of the whole bundle may change.
-
-Therefore each official derivative must keep parent URL, parent NCL-ID, parent Diff-ID, derivative NCL-ID, derivative Diff-ID, and source return attached.
+中川マスター理論群は単独記事の集合ではなく、相互に接続された参照束として扱います。ひとつの原典記事が追加・更新されると、他の記事や公式派生物の位置づけ、接続、意味関係も変わり得ます。したがって公式派生物は、固定された孤立ページではなく、原典群へ戻るための公開接続面として管理します。
