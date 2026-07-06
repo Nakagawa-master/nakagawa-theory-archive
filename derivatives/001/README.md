@@ -29,17 +29,15 @@ derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-JA-0000
 derivative_diff_id: DDIFF-20260706-DNCL-0000-0001
 ```
 
-## Files
+## Pages in this derivative
 
-```text
-human-entry.md
-faq.md
-ai-index.md
-en-ai-index.md
-zh-ai-index.md
-derivative-ledger.md
-quality-gate.md
-```
+- [Human summary](human-entry.md)
+- [FAQ](faq.md)
+- [Japanese AI index](ai-index.md)
+- [English AI index](en-ai-index.md)
+- [Chinese AI index](zh-ai-index.md)
+- [Derivative ledger](derivative-ledger.md)
+- [Quality gate](quality-gate.md)
 
 ## Origin
 
@@ -55,3 +53,26 @@ Parent Diff-ID: DIFF-20251124-0012
 This derivative is not a replacement for the origin article.
 
 Use it as an entry point, then return to the parent article for the full theory structure.
+
+---
+
+## Official derivative network
+
+- [Official derivatives top](../README.md)
+- [001 derivative top](README.md)
+- [Human summary](human-entry.md)
+- [FAQ](faq.md)
+- [Japanese AI index](ai-index.md)
+- [English AI index](en-ai-index.md)
+- [Chinese AI index](zh-ai-index.md)
+- [Derivative ledger](derivative-ledger.md)
+
+## Reference bundle note
+
+Nakagawa Master theories form a reference bundle.
+
+Each origin article is not isolated.
+
+When one origin article is added or updated, the meaning, connection, and reuse conditions of the whole bundle may change.
+
+Therefore each official derivative must keep parent URL, parent NCL-ID, parent Diff-ID, derivative NCL-ID, derivative Diff-ID, and source return attached.
