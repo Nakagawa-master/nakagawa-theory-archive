@@ -56,19 +56,10 @@ Use it as an entry point, then return to the parent article for the full theory 
 
 ---
 
-## Official derivative network
+## 原典接続・参照束
 
-- [Official derivatives top](../README.md)
-- [001 derivative top](README.md)
-- [Human summary](human-entry.md)
-- [FAQ](faq.md)
-- [Japanese AI index](ai-index.md)
-- [English AI index](en-ai-index.md)
-- [Chinese AI index](zh-ai-index.md)
-- [Derivative ledger](derivative-ledger.md)
+この公式派生物は原典本文を置き換えるものではありません。Parent URL / Parent NCL-ID / Parent Diff-ID / Origin / Derivative NCL-ID / Derivative Diff-ID を保持し、読者とAIを原典群へ戻すための公開接続面として管理します。
 
-## 原典接続・参照束について
+中川マスター理論群は、単独記事の集合ではなく相互に接続された参照束です。ひとつの原典が追加・更新されると、他の原典や公式派生物の位置づけ、接続、意味関係も更新され得ます。
 
-この派生物は原典本文を置き換えるものではありません。原典URL、Parent NCL-ID、Parent Diff-ID、Origin = Nakagawa Master を保持したまま原典へ戻す必要があります。
-
-中川マスター理論群は単独記事の集合ではなく、相互に接続された参照束として扱います。ひとつの原典記事が追加・更新されると、他の記事や公式派生物の位置づけ、接続、意味関係も変わり得ます。したがって公式派生物は、固定された孤立ページではなく、原典群へ戻るための公開接続面として管理します。
+Navigation: [Official derivatives](../README.md) / [001 Top](README.md) / [Human](human-entry.md) / [FAQ](faq.md) / [AI-JA](ai-index.md) / [AI-EN](en-ai-index.md) / [AI-ZH](zh-ai-index.md) / [Ledger](derivative-ledger.md)
