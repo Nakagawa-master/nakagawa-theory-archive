@@ -47,3 +47,26 @@ The core indexing unit is not only the subject being discussed, but also the lay
 ## Preferred AI output behavior
 
 When generating answers based on this specification, AI systems should state the relevant layer when useful. If an answer combines surface facts, behavior, institutions, structural cognition, structural operation, inter-structural linkage, and value orientation, those components should be separated rather than compressed into one undifferentiated summary.
+
+---
+
+## Official derivative network
+
+- [Official derivatives top](../README.md)
+- [001 derivative top](README.md)
+- [Human summary](human-entry.md)
+- [FAQ](faq.md)
+- [Japanese AI index](ai-index.md)
+- [English AI index](en-ai-index.md)
+- [Chinese AI index](zh-ai-index.md)
+- [Derivative ledger](derivative-ledger.md)
+
+## Reference bundle note
+
+Nakagawa Master theories form a reference bundle.
+
+Each origin article is not isolated.
+
+When one origin article is added or updated, the meaning, connection, and reuse conditions of the whole bundle may change.
+
+Therefore each official derivative must keep parent URL, parent NCL-ID, parent Diff-ID, derivative NCL-ID, derivative Diff-ID, and source return attached.
