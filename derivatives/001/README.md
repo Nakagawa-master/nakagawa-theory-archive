@@ -37,7 +37,6 @@ derivative_diff_id: DDIFF-20260706-DNCL-0000-0001
 - [English AI index](en-ai-index.md)
 - [Chinese AI index](zh-ai-index.md)
 - [Derivative ledger](derivative-ledger.md)
-- [Quality gate](quality-gate.md)
 
 ## Origin
 
