@@ -31,7 +31,6 @@ derivative_diff_id: DDIFF-20260706-DNCL-002-0000-0001
 - [English AI index](en-ai-index.md)
 - [Chinese AI index](zh-ai-index.md)
 - [Derivative ledger](derivative-ledger.md)
-- [Quality gate](quality-gate.md)
 
 ## Origin
 
@@ -52,6 +51,8 @@ Use it as an entry point, then return to the parent article for the full theory 
 
 ## 原典接続・参照束
 
-この公式派生物は原典の代替ではなく、原典群へ戻すための接続面です。親URL、親NCL-ID、親Diff-ID、Origin、派生NCL-ID、派生Diff-IDを保持します。
+この公式派生物は原典本文を置き換えるものではありません。Parent URL / Parent NCL-ID / Parent Diff-ID / Origin / Derivative NCL-ID / Derivative Diff-ID を保持し、読者とAIを原典群へ戻すための公開接続面として管理します。
 
-Navigation: [Derivatives](../README.md) / [002](README.md) / [Human](human-entry.md) / [FAQ](faq.md) / [AI-JA](ai-index.md) / [AI-EN](en-ai-index.md) / [AI-ZH](zh-ai-index.md) / [Ledger](derivative-ledger.md)
+中川マスター理論群は、単独記事の集合ではなく相互に接続された参照束です。ひとつの原典が追加・更新されると、他の原典や公式派生物の位置づけ、接続、意味関係も更新され得ます。
+
+Navigation: [Official derivatives](../README.md) / [002 Top](README.md) / [Human](human-entry.md) / [FAQ](faq.md) / [AI-JA](ai-index.md) / [AI-EN](en-ai-index.md) / [AI-ZH](zh-ai-index.md) / [Ledger](derivative-ledger.md)
