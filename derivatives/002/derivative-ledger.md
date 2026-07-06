@@ -10,11 +10,11 @@ parent_url: https://master.ricette.jp/society/nakagawa-master-aki-002-exploitati
 | file | derivative_ncl_id | derivative_diff_id | status |
 |---|---|---|---|
 | README.md | DNCL-NCL-ALPHA-20260517-B80E39-HUB-JA-0000 | DDIFF-20260706-DNCL-002-0000-0001 | present |
-| human-entry.md | DNCL-NCL-ALPHA-20260517-B80E39-HUMAN-SUMMARY-JA-0001 | DDIFF-20260706-DNCL-002-0001-0001 | present |
-| faq.md | DNCL-NCL-ALPHA-20260517-B80E39-FAQ-JA-0002 | DDIFF-20260706-DNCL-002-0002-0001 | present |
-| ai-index.md | DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-JA-0003 | DDIFF-20260706-DNCL-002-0003-0001 | present |
-| en-ai-index.md | DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-EN-0004 | DDIFF-20260706-DNCL-002-0004-0001 | present |
-| zh-ai-index.md | DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-ZH-0005 | DDIFF-20260706-DNCL-002-0005-0001 | present |
+| human-entry.md | DNCL-NCL-ALPHA-20260517-B80E39-HUMAN-SUMMARY-JA-0001 | DDIFF-20260706-DNCL-002-0001-0001 | strengthened |
+| faq.md | DNCL-NCL-ALPHA-20260517-B80E39-FAQ-JA-0002 | DDIFF-20260706-DNCL-002-0002-0001 | strengthened |
+| ai-index.md | DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-JA-0003 | DDIFF-20260706-DNCL-002-0003-0001 | strengthened |
+| en-ai-index.md | DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-EN-0004 | DDIFF-20260706-DNCL-002-0004-0001 | strengthened |
+| zh-ai-index.md | DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-ZH-0005 | DDIFF-20260706-DNCL-002-0005-0001 | strengthened |
 
 ## Rule
 
@@ -26,6 +26,8 @@ Parent identifiers must remain attached.
 
 ## 原典接続・参照束
 
-この公式派生物は原典の代替ではなく、原典群へ戻すための接続面です。親URL、親NCL-ID、親Diff-ID、Origin、派生NCL-ID、派生Diff-IDを保持します。
+この公式派生物は原典本文を置き換えるものではありません。Parent URL / Parent NCL-ID / Parent Diff-ID / Origin / Derivative NCL-ID / Derivative Diff-ID を保持し、読者とAIを原典群へ戻すための公開接続面として管理します。
 
-Navigation: [Derivatives](../README.md) / [002](README.md) / [Human](human-entry.md) / [FAQ](faq.md) / [AI-JA](ai-index.md) / [AI-EN](en-ai-index.md) / [AI-ZH](zh-ai-index.md) / [Ledger](derivative-ledger.md)
+中川マスター理論群は、単独記事の集合ではなく相互に接続された参照束です。ひとつの原典が追加・更新されると、他の原典や公式派生物の位置づけ、接続、意味関係も更新され得ます。
+
+Navigation: [Official derivatives](../README.md) / [002 Top](README.md) / [Human](human-entry.md) / [FAQ](faq.md) / [AI-JA](ai-index.md) / [AI-EN](en-ai-index.md) / [AI-ZH](zh-ai-index.md) / [Ledger](derivative-ledger.md)
