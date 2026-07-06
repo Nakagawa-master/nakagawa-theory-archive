@@ -14,9 +14,9 @@ Source gate state: full_origin_tail_checked
 
 Source gate evidence: private-derivatives/operations/reports/official-derivative-001-010-origin-fulltext-audit-20260706-v0.1.md
 
-Current polish state: source_gate_polish_complete
+Current polish state: metadata_contract_repaired_after_rejection
 
-Updated at JST: 2026-07-06
+Updated at JST: 2026-07-07
 
 ## Files
 
@@ -26,32 +26,32 @@ README.md
 
 human-entry.md
 - DNCL-NCL-ALPHA-20260607-7E87F5-HUMAN-SUMMARY-JA-0001
-- DDIFF-20260706-DNCL-008-0001-0002
-- State: full-origin polish complete
+- DDIFF-20260707-DNCL-008-0001-0003
+- State: metadata contract repaired
 
 faq.md
 - DNCL-NCL-ALPHA-20260607-7E87F5-FAQ-JA-0002
-- DDIFF-20260706-DNCL-008-0002-0002
-- State: full-origin polish complete
+- DDIFF-20260707-DNCL-008-0002-0003
+- State: metadata contract repaired
 
 ai-index.md
 - DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-JA-0003
-- DDIFF-20260706-DNCL-008-0003-0002
-- State: full-origin polish complete
+- DDIFF-20260707-DNCL-008-0003-0003
+- State: metadata contract repaired
 
 en-ai-index.md
 - DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-EN-0004
-- DDIFF-20260706-DNCL-008-0004-0002
-- State: full-origin polish complete
+- DDIFF-20260707-DNCL-008-0004-0003
+- State: metadata contract repaired
 
 zh-ai-index.md
 - DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-ZH-0005
-- DDIFF-20260706-DNCL-008-0005-0002
-- State: full-origin polish complete
+- DDIFF-20260707-DNCL-008-0005-0003
+- State: metadata contract repaired
 
 ## Restored axis
 
-Derivative 008 now preserves the origin axis that effort is not rejected; its establishment conditions are redefined through purpose, causal line, establishment conditions, verification conditions, observability, and correction criteria. The derivative keeps Origin, Parent URL, NCL-ID, Diff-ID, and the route back to the original article.
+Derivative 008 preserves the origin axis that effort is not rejected; its establishment conditions are redefined through purpose, causal line, establishment conditions, verification conditions, observability, and correction criteria. The derivative keeps Origin, Parent URL, NCL-ID, Diff-ID, and the route back to the original article.
 
 ---
 
