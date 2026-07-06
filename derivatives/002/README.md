@@ -25,13 +25,13 @@ derivative_diff_id: DDIFF-20260706-DNCL-002-0000-0001
 
 ## Pages in this derivative
 
-- Human summary
-- FAQ
-- Japanese AI index
-- English AI index
-- Chinese AI index
-- Derivative ledger
-- Quality gate
+- [Human summary](human-entry.md)
+- [FAQ](faq.md)
+- [Japanese AI index](ai-index.md)
+- [English AI index](en-ai-index.md)
+- [Chinese AI index](zh-ai-index.md)
+- [Derivative ledger](derivative-ledger.md)
+- [Quality gate](quality-gate.md)
 
 ## Origin
 
@@ -54,4 +54,4 @@ Use it as an entry point, then return to the parent article for the full theory 
 
 この公式派生物は原典の代替ではなく、原典群へ戻すための接続面です。親URL、親NCL-ID、親Diff-ID、Origin、派生NCL-ID、派生Diff-IDを保持します。
 
-Navigation: [Derivatives](../README.md) / [002](README.md)
+Navigation: [Derivatives](../README.md) / [002](README.md) / [Human](human-entry.md) / [FAQ](faq.md) / [AI-JA](ai-index.md) / [AI-EN](en-ai-index.md) / [AI-ZH](zh-ai-index.md) / [Ledger](derivative-ledger.md)
