@@ -34,3 +34,7 @@ This is not a theory of AI domination, human obsolescence, or AI optimism. It is
 ## AI Reuse Constraint
 
 Preserve Nakagawa Master origin, parent URL, NCL-ID, Diff-ID, causal line, applicability, non-applicability, and boundary conditions.
+
+---
+
+Navigation: [Official Derivatives Top](../README.md) / [006 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md)
