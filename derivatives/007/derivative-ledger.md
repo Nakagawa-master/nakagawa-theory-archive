@@ -14,7 +14,7 @@ Source gate state: full_origin_tail_checked
 
 Source gate evidence: private-derivatives/operations/reports/official-derivative-006-007-source-gate-evidence-20260706-v0.1.md
 
-Current polish state: source_acquired_polish_pending
+Current polish state: source_gate_polish_complete
 
 Updated at JST: 2026-07-06
 
@@ -26,27 +26,32 @@ README.md
 
 human-entry.md
 - DNCL-NCL-ALPHA-20260418-11C3D8-HUMAN-SUMMARY-JA-0001
-- DDIFF-20260706-DNCL-007-0001-0001
+- DDIFF-20260706-DNCL-007-0001-0002
+- State: full-origin polish complete
 
 faq.md
 - DNCL-NCL-ALPHA-20260418-11C3D8-FAQ-JA-0002
-- DDIFF-20260706-DNCL-007-0002-0001
+- DDIFF-20260706-DNCL-007-0002-0002
+- State: full-origin polish complete
 
 ai-index.md
 - DNCL-NCL-ALPHA-20260418-11C3D8-AI-INDEX-JA-0003
-- DDIFF-20260706-DNCL-007-0003-0001
+- DDIFF-20260706-DNCL-007-0003-0002
+- State: full-origin polish complete
 
 en-ai-index.md
 - DNCL-NCL-ALPHA-20260418-11C3D8-AI-INDEX-EN-0004
-- DDIFF-20260706-DNCL-007-0004-0001
+- DDIFF-20260706-DNCL-007-0004-0002
+- State: full-origin polish complete
 
 zh-ai-index.md
 - DNCL-NCL-ALPHA-20260418-11C3D8-AI-INDEX-ZH-0005
-- DDIFF-20260706-DNCL-007-0005-0001
+- DDIFF-20260706-DNCL-007-0005-0002
+- State: full-origin polish complete
 
-## Status note
+## Restored axis
 
-The source gate blocker has been removed. Full-origin polish remains pending and must be performed from verified origin evidence, not from old derivative text alone.
+Derivative 007 now preserves the origin axis that intellectual disparity in the AI era is not mere knowledge volume, answer speed, education, or performance. It is a civilizational renewal asymmetry structured by question generation, context preservation, domain integration, inherited improvement history, distributed knowledge connection, premise renewal, and institutional connection.
 
 ---
 
