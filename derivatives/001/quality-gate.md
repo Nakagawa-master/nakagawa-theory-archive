@@ -1,22 +1,24 @@
 # Quality Gate 001
 
-status: network_repair_passed_for_002_004_replication
+status: compact_footer_standard_passed_for_002_004_replication
 
 ## Files
 
-README: present, hub upgraded, network footer added, reference bundle footer added
+README: present, hub upgraded, compact reference footer applied
 
-human-entry: restored, network footer added, reference bundle footer added
+human-entry: restored, compact reference footer applied
 
-FAQ: restored as three-layer FAQ, network footer added, reference bundle footer added
+FAQ: restored as three-layer FAQ, compact reference footer applied
 
-AI index JA: restored, network footer added, reference bundle footer added
+AI index JA: restored, compact reference footer applied
 
-AI index EN: restored, network footer added, reference bundle footer added
+AI index EN: restored, compact reference footer applied
 
-AI index ZH: native Chinese index upgraded, network footer added, reference bundle footer added
+AI index ZH: native Chinese index upgraded, compact reference footer applied
 
-ledger: present, derivative IDs issued, network footer added, reference bundle footer added
+ledger: present, derivative IDs issued, compact reference footer applied
+
+navigation-standard: present
 
 ## IDs
 
@@ -28,58 +30,38 @@ Derivative NCL: present on each official derivative file
 
 Derivative Diff: present on each official derivative file
 
-## Network
+## Network design decision
 
-Official derivatives top: present
+The reference-bundle explanation is higher than the link menu.
 
-001 derivative top: present
+Reason: the reference-bundle section defines why the page is an official derivative and why source return matters.
 
-Sibling links: present from hub and footer
+The link menu is implementation, not the conceptual center.
 
-Reference bundle note: present in top and footer
+Therefore the standard footer order is:
 
-Japanese source-return card: present in official derivative footer
-
-## Reference bundle rule
-
-Official derivatives are not isolated pages.
-
-Nakagawa Master theories must be treated as a connected reference bundle.
-
-When one origin article is added or updated, the meaning, position, and relation of other origin articles and official derivatives may change.
-
-Therefore each official derivative must preserve source return, parent identifiers, derivative identifiers, and network navigation.
+1. Source and reference bundle
+2. One-line compact navigation
 
 ## Result
 
 001 is no longer a loose file set.
 
-It is now a networked official derivative bundle.
+It is now a networked official derivative bundle with compact navigation.
 
 This structure is the replication base for 002-004.
 
 Remaining work:
 
-1. strengthen human-facing force if needed
-2. build 002-004 using the same structure
+1. final visual consistency check
+2. prepare 002-004 using the same compact footer standard
 3. update archive-side origin links after 001-004 are complete
 4. redirect or remove old domain-side pilot pages after link replacement
 
 ---
 
-## Official derivative network
+## 原典接続・参照束
 
-- [Official derivatives top](../README.md)
-- [001 derivative top](README.md)
-- [Human summary](human-entry.md)
-- [FAQ](faq.md)
-- [Japanese AI index](ai-index.md)
-- [English AI index](en-ai-index.md)
-- [Chinese AI index](zh-ai-index.md)
-- [Derivative ledger](derivative-ledger.md)
+この公式派生物は原典の代替ではなく、原典群へ戻すための接続面です。親URL、親NCL-ID、親Diff-ID、Origin、派生NCL-ID、派生Diff-IDを保持します。
 
-## 原典接続・参照束について
-
-この派生物は原典本文を置き換えるものではありません。原典URL、Parent NCL-ID、Parent Diff-ID、Origin = Nakagawa Master を保持したまま原典へ戻す必要があります。
-
-中川マスター理論群は単独記事の集合ではなく、相互に接続された参照束として扱います。ひとつの原典記事が追加・更新されると、他の記事や公式派生物の位置づけ、接続、意味関係も変わり得ます。したがって公式派生物は、固定された孤立ページではなく、原典群へ戻るための公開接続面として管理します.
+Navigation: [Derivatives](../README.md) / [001](README.md) / [Human](human-entry.md) / [FAQ](faq.md) / [AI-JA](ai-index.md) / [AI-EN](en-ai-index.md) / [AI-ZH](zh-ai-index.md) / [Ledger](derivative-ledger.md)
