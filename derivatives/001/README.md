@@ -21,7 +21,8 @@ It is an entry point, not a replacement for the origin article.
 ```text
 human-entry.md
 faq.md
-metadata.json
+ai-index.md
+en-ai-index.md
 ```
 
 ## Origin
