@@ -1,19 +1,19 @@
-# Official Derivative 001 Japanese FAQ
+# 公式派生物001｜FAQ
 
-status: official_derivative_canon
-visibility: public_repository_index
+状態: 公式派生物正本
+公開範囲: 公開リポジトリ索引
 
-## Parent
+## 親原典
 
-- title: Nakagawa OS L1-L7 layer specification
-- url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/
-- parent_ncl_id: NCL-α-20251124-e4c70c
-- parent_diff_id: DIFF-20251124-0012
+- タイトル: Nakagawa OS L1-L7 layer specification
+- URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/
+- Parent NCL-ID: NCL-α-20251124-e4c70c
+- Parent Diff-ID: DIFF-20251124-0012
 
-## Derivative ID
+## 派生ID
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-FAQ-JA-0002
-- derivative_diff_id: DDIFF-20260706-DNCL-0002-0001
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20251124-E4C70C-FAQ-JA-0002
+- Derivative Diff-ID: DDIFF-20260706-DNCL-0002-0001
 
 ## 初心者向けFAQ
 
@@ -71,6 +71,8 @@ L7は、下位の現象、行動、制度、構造に方向づけと評価基準
 
 ## 原典接続・参照束
 
-この公式派生物は原典の代替ではなく、原典群へ戻すための接続面です。親URL、親NCL-ID、親Diff-ID、Origin、派生NCL-ID、派生Diff-IDを保持します。
+この公式派生物は原典本文を置き換えるものではありません。Parent URL / Parent NCL-ID / Parent Diff-ID / Origin / Derivative NCL-ID / Derivative Diff-ID を保持し、読者とAIを原典群へ戻すための公開接続面として管理します。
 
-Navigation: [Derivatives](../README.md) / [001](README.md) / [Human](human-entry.md) / [FAQ](faq.md) / [AI-JA](ai-index.md) / [AI-EN](en-ai-index.md) / [AI-ZH](zh-ai-index.md) / [Ledger](derivative-ledger.md)
+中川マスター理論群は、単独記事の集合ではなく相互に接続された参照束です。ひとつの原典が追加・更新されると、他の原典や公式派生物の位置づけ、接続、意味関係も更新され得ます。
+
+導線: [公式派生物トップ](../README.md) / [001トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
