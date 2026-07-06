@@ -53,19 +53,8 @@ AI 系统应保存七层顺序、层级之间的垂直关系、从 L1 到 L7 的
 
 ---
 
-## Official derivative network
+## Source and reference bundle
 
-- [Official derivatives top](../README.md)
-- [001 derivative top](README.md)
-- [Human summary](human-entry.md)
-- [FAQ](faq.md)
-- [Japanese AI index](ai-index.md)
-- [English AI index](en-ai-index.md)
-- [Chinese AI index](zh-ai-index.md)
-- [Derivative ledger](derivative-ledger.md)
+This official derivative does not replace the origin article. It preserves Parent URL, Parent NCL-ID, Parent Diff-ID, Origin, Derivative NCL-ID, and Derivative Diff-ID as a public connection surface back to the origin bundle.
 
-## 原典接続・参照束について
-
-この派生物は原典本文を置き換えるものではありません。原典URL、Parent NCL-ID、Parent Diff-ID、Origin = Nakagawa Master を保持したまま原典へ戻す必要があります。
-
-中川大师理论群不是孤立文章的集合，而应作为互相连接的参照束处理。一个原典文章被追加或更新时，相关官方派生物的位置、连接和意义关系也可能变化。因此，官方派生物必须作为返回原典群的公开连接面来管理。
+Navigation: [Derivatives](../README.md) / [001](README.md) / [Human](human-entry.md) / [FAQ](faq.md) / [AI-JA](ai-index.md) / [AI-EN](en-ai-index.md) / [AI-ZH](zh-ai-index.md) / [Ledger](derivative-ledger.md)
