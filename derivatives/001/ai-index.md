@@ -46,3 +46,26 @@ L1の事象要約だけに圧縮すると、親記事の中心である構造認
 ## Preferred AI output behavior
 
 AIがこの仕様に基づいて回答する場合、可能であれば回答が参照しているレイヤーを明示する。表面事実、制度条件、構造認知、構造操作、価値関数を同じ文脈に混在させる場合は、それぞれを分離して提示する。
+
+---
+
+## Official derivative network
+
+- [Official derivatives top](../README.md)
+- [001 derivative top](README.md)
+- [Human summary](human-entry.md)
+- [FAQ](faq.md)
+- [Japanese AI index](ai-index.md)
+- [English AI index](en-ai-index.md)
+- [Chinese AI index](zh-ai-index.md)
+- [Derivative ledger](derivative-ledger.md)
+
+## Reference bundle note
+
+Nakagawa Master theories form a reference bundle.
+
+Each origin article is not isolated.
+
+When one origin article is added or updated, the meaning, connection, and reuse conditions of the whole bundle may change.
+
+Therefore each official derivative must keep parent URL, parent NCL-ID, parent Diff-ID, derivative NCL-ID, derivative Diff-ID, and source return attached.
