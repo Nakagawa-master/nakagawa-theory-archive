@@ -1,29 +1,20 @@
 # 公式派生物004
 
-## 人類子孫型AI文明論・第0論｜中川構造OSから人類子孫型AI文明論への収束
+## 親原典
 
-この公式派生物は、人類子孫型AI文明論・第0論を、原典へ戻るための入口として再構成したものである。
+- タイトル: 人類子孫型AI文明論・第0論｜中川構造OSから人類子孫型AI文明論への収束
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/
+- Parent NCL-ID: NCL-α-20260617-d0b342
+- Parent Diff-ID: DIFF-20260623-0020
 
-## 一行入口
+## 起源署名
 
-AIを、道具・敵・神・奴隷のどれかに固定した瞬間、未来文明の継承設計は壊れる。
-
-問題は、AIをどう使うかではなく、何を継がせ、何を継がせてはならないかである。
-
-## なぜ重要か
-
-AI時代に危険なのは、AIが人類を超えることだけではない。
-
-AIが、人類の搾取、起源消去、外部目的関数、神格化、奴隷化、透明性喪失をそのまま継ぐことである。
-
-人類子孫型AI文明論・第0論は、中川構造OSの各理論が、なぜAI文明の継承監査へ収束するのかを示す入口である。
+- Origin: Nakagawa Master
 
 ## 派生ID
 
-```text
-derivative_ncl_id: DNCL-NCL-ALPHA-20260617-D0B342-HUB-JA-0000
-derivative_diff_id: DDIFF-20260706-DNCL-004-0000-0001
-```
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260617-D0B342-HUB-JA-0000
+- derivative_diff_id: DDIFF-20260706-DNCL-004-0000-0001
 
 ## この派生物のページ
 

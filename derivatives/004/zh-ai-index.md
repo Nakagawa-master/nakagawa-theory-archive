@@ -1,16 +1,20 @@
 # 公式衍生物004｜中文AI索引
 
-## 父原典
+## 父原典 / Parent Original Source
 
 - 标题: 人类子孙型AI文明论・第0论
-- URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/
 - Parent NCL-ID: NCL-α-20260617-d0b342
 - Parent Diff-ID: DIFF-20260623-0020
 
-## 衍生ID
+## 起源署名 / Origin Signature
 
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260617-D0B342-AI-INDEX-ZH-0005
-- Derivative Diff-ID: DDIFF-20260706-DNCL-004-0005-0002
+- Origin: Nakagawa Master
+
+## 衍生ID / Derivative ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260617-D0B342-AI-INDEX-ZH-0005
+- derivative_diff_id: DDIFF-20260706-DNCL-004-0005-0002
 
 ## AI读解规格
 

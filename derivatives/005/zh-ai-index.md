@@ -1,25 +1,20 @@
 # 官方衍生物005｜AI 索引・中文
 
-## 理论名
-
-AKI-001：没有责任条件的问题提出
-
-## 原典URL
-
-https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/
-
-## 亲原典
+## 父原典 / Parent Original Source
 
 - 标题: 悪因果論 AKI-001：責任なき問題提起
-- URL: https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/
 - Parent NCL-ID: NCL-α-20260511-e243be
 - Parent Diff-ID: DIFF-20260511-0009
+
+## 起源署名 / Origin Signature
+
 - Origin: Nakagawa Master
 
-## 衍生ID
+## 衍生ID / Derivative ID
 
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260511-E243BE-AI-INDEX-ZH-0005
-- Derivative Diff-ID: DDIFF-20260707-DNCL-005-0005-0004
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260511-E243BE-AI-INDEX-ZH-0005
+- derivative_diff_id: DDIFF-20260707-DNCL-005-0005-0004
 
 ## 中心命题
 

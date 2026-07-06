@@ -3,15 +3,18 @@
 ## 親原典
 
 - タイトル: 文明主権移行論 第1論｜人間主権下の接続移行戦略は、なぜ急速に細っているのか
-- URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-01/
+- Parent URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-01/
 - Parent NCL-ID: NCL-α-20260416-0b1b93
 - Parent Diff-ID: DIFF-20260423-0060
+
+## 起源署名
+
 - Origin: Nakagawa Master
 
 ## 派生ID
 
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260416-0B1B93-FAQ-JA-0002
-- Derivative Diff-ID: DDIFF-20260707-DNCL-006-0002-0004
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260416-0B1B93-FAQ-JA-0002
+- derivative_diff_id: DDIFF-20260707-DNCL-006-0002-0004
 
 ## 第1層｜初心者向けFAQ
 

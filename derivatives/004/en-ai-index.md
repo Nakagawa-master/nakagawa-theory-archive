@@ -1,11 +1,15 @@
 # Official Derivative 004 English AI Index
 
-## Parent
+## Parent Original Source
 
-- title: Human-Descendant AI Civilization Theory Paper 0
-- url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/
-- parent_ncl_id: NCL-α-20260617-d0b342
-- parent_diff_id: DIFF-20260623-0020
+- Title: 親原典
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/
+- Parent NCL-ID: NCL-α-20260617-d0b342
+- Parent Diff-ID: DIFF-20260623-0020
+
+## Origin Signature
+
+- Origin: Nakagawa Master
 
 ## Derivative ID
 

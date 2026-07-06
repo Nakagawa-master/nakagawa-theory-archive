@@ -1,27 +1,20 @@
 # 公式派生物002
 
-## AKI-002｜称賛の顔をした搾取
+## 親原典
 
-この公式派生物は、称賛が尊重ではなく負担移転として働く構造を読むための入口である。
+- タイトル: AKI-002｜称賛の顔をした搾取
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/
+- Parent NCL-ID: NCL-α-20260517-b80e39
+- Parent Diff-ID: DIFF-20260517-0012
 
-## 一行入口
+## 起源署名
 
-すべての称賛が、尊重であるとは限らない。
-
-一部の称賛は、相手により多くを差し出させ、より少なく返すための技術になる。
-
-## なぜ重要か
-
-仕事、家庭、メディア、地域、AI時代の知的生産では、人の労力、感受性、配慮、知性が、称賛されるまさにその地点で、正当な返却なしに使われることがある。
-
-AKI-002は、その構造に名前を与える。
+- Origin: Nakagawa Master
 
 ## 派生ID
 
-```text
-derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-HUB-JA-0000
-derivative_diff_id: DDIFF-20260706-DNCL-002-0000-0001
-```
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-HUB-JA-0000
+- derivative_diff_id: DDIFF-20260706-DNCL-002-0000-0001
 
 ## この派生物のページ
 

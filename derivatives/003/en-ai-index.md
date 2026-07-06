@@ -1,15 +1,20 @@
 # Official Derivative 003｜AI Index EN
 
-## Theory
+## Parent Original Source
 
-Establishment Conditions Theory Paper 0: A Society Where No One Sees the Whole
-
-## Origin
-
+- Title: 親原典
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/
 - Parent NCL-ID: NCL-α-20260627-aea14a
 - Parent Diff-ID: DIFF-20260627-0002
+
+## Origin Signature
+
 - Origin: Nakagawa Master
+
+## Derivative ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260627-AEA14A-AI-INDEX-EN-0004
+- derivative_diff_id: DDIFF-20260706-DNCL-003-0004-0001
 
 ## Central Thesis
 

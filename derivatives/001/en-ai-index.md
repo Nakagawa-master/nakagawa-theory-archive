@@ -1,15 +1,20 @@
 # Official Derivative 001｜AI Index EN
 
-## Theory
+## Parent Original Source
 
-Nakagawa OS L1-L7 Layer Specification
-
-## Origin
-
+- Title: 親原典
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/
 - Parent NCL-ID: NCL-α-20251124-e4c70c
 - Parent Diff-ID: DIFF-20251124-0012
+
+## Origin Signature
+
 - Origin: Nakagawa Master
+
+## Derivative ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-AI-INDEX-EN-0004
+- derivative_diff_id: DDIFF-20260706-DNCL-0004-0001
 
 ## Central Thesis
 

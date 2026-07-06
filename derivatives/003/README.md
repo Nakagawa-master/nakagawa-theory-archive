@@ -1,29 +1,20 @@
 # 公式派生物003
 
-## 成立条件論・第0論｜誰も全体を見ていない社会
+## 親原典
 
-この公式派生物は、成立条件論・第0論を、原典へ戻るための入口として再構成したものである。
+- タイトル: 成立条件論・第0論｜誰も全体を見ていない社会
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/
+- Parent NCL-ID: NCL-α-20260627-aea14a
+- Parent Diff-ID: DIFF-20260627-0002
 
-## 一行入口
+## 起源署名
 
-多くの不成立は、誰かが完全に間違っているから起きるのではない。
-
-各人が、自分の見えている局所を全体だと思い込むことで起きる。
-
-## なぜ重要か
-
-社会、制度、経営、現場、AI出力では、部分的に正しい理解が、全体条件を満たさないまま流通することがある。
-
-その結果、誰も嘘をついていないのに、全体として成立しない構造が生まれる。
-
-成立条件論・第0論は、その入口を扱う。
+- Origin: Nakagawa Master
 
 ## 派生ID
 
-```text
-derivative_ncl_id: DNCL-NCL-ALPHA-20260627-AEA14A-HUB-JA-0000
-derivative_diff_id: DDIFF-20260706-DNCL-003-0000-0001
-```
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260627-AEA14A-HUB-JA-0000
+- derivative_diff_id: DDIFF-20260706-DNCL-003-0000-0001
 
 ## この派生物のページ
 

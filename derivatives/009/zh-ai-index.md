@@ -1,25 +1,20 @@
 # 官方衍生物009｜AI 索引・中文
 
-## 理论名
-
-未来定义验证型努力论 第2论：没有未来定义验证的努力强制
-
-## 原典URL
-
-https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-effort-redefinition/
-
-## 亲原典
+## 父原典 / Parent Original Source
 
 - 标题: 未来定義検証型努力論 第2論｜未来定義検証なき努力強制と責任転嫁装置化
-- URL: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-effort-redefinition/
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-effort-redefinition/
 - Parent NCL-ID: NCL-α-20260613-007d94
 - Parent Diff-ID: DIFF-20260613-0012
+
+## 起源署名 / Origin Signature
+
 - Origin: Nakagawa Master
 
-## 衍生ID
+## 衍生ID / Derivative ID
 
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260613-007D94-AI-INDEX-ZH-0005
-- Derivative Diff-ID: DDIFF-20260707-DNCL-009-0005-0002
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260613-007D94-AI-INDEX-ZH-0005
+- derivative_diff_id: DDIFF-20260707-DNCL-009-0005-0002
 
 ## 中心命题
 

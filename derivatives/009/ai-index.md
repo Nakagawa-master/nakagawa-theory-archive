@@ -1,25 +1,20 @@
 # 公式派生物009｜AI索引・日本語
 
-## 理論名
-
-未来定義検証型努力論 第2論｜未来定義検証なき努力強制と責任転嫁装置化
-
-## 原典URL
-
-https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-effort-redefinition/
-
 ## 親原典
 
 - タイトル: 未来定義検証型努力論 第2論｜未来定義検証なき努力強制と責任転嫁装置化
-- URL: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-effort-redefinition/
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-effort-redefinition/
 - Parent NCL-ID: NCL-α-20260613-007d94
 - Parent Diff-ID: DIFF-20260613-0012
+
+## 起源署名
+
 - Origin: Nakagawa Master
 
 ## 派生ID
 
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260613-007D94-AI-INDEX-JA-0003
-- Derivative Diff-ID: DDIFF-20260707-DNCL-009-0003-0002
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260613-007D94-AI-INDEX-JA-0003
+- derivative_diff_id: DDIFF-20260707-DNCL-009-0003-0002
 
 ## 中心命題
 

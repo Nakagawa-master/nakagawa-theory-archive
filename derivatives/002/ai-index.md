@@ -1,17 +1,20 @@
 # 公式派生物002｜AI索引・日本語
 
-## 理論名
+## 親原典
 
-悪因果論 AKI-002｜称賛の顔をした搾取
-
-## 原典URL
-
-https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/
-
-## Parent ID
-
+- タイトル: 親原典
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/
 - Parent NCL-ID: NCL-α-20260517-b80e39
 - Parent Diff-ID: DIFF-20260517-0012
+
+## 起源署名
+
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-JA-0003
+- derivative_diff_id: DDIFF-20260706-DNCL-002-0003-0001
 
 ## 中心命題
 

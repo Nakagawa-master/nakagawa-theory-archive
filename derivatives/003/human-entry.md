@@ -3,9 +3,18 @@
 ## 親原典
 
 - タイトル: 成立条件論・第0論｜誰も全体を見ていない社会
-- URL: https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/
 - Parent NCL-ID: NCL-α-20260627-aea14a
 - Parent Diff-ID: DIFF-20260627-0002
+
+## 起源署名
+
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260627-AEA14A-HUMAN-SUMMARY-JA-0001
+- derivative_diff_id: DDIFF-20260706-DNCL-003-0001-0001
 
 ## まず一言でいうと
 

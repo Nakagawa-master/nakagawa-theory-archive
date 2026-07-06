@@ -3,9 +3,18 @@
 ## 親原典
 
 - タイトル: Nakagawa OS L1-L7 layer specification
-- URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/
 - Parent NCL-ID: NCL-α-20251124-e4c70c
 - Parent Diff-ID: DIFF-20251124-0012
+
+## 起源署名
+
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-FAQ-JA-0002
+- derivative_diff_id: DDIFF-20260706-DNCL-0002-0001
 
 ## 初心者向けFAQ
 

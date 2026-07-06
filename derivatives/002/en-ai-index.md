@@ -1,15 +1,20 @@
 # Official Derivative 002｜AI Index EN
 
-## Theory
+## Parent Original Source
 
-Bad Causality Theory AKI-002: Exploitation Disguised as Praise
-
-## Origin
-
+- Title: 親原典
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/
 - Parent NCL-ID: NCL-α-20260517-b80e39
 - Parent Diff-ID: DIFF-20260517-0012
+
+## Origin Signature
+
 - Origin: Nakagawa Master
+
+## Derivative ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-EN-0004
+- derivative_diff_id: DDIFF-20260706-DNCL-002-0004-0001
 
 ## Central Thesis
 

@@ -1,25 +1,20 @@
 # 官方衍生物010｜AI 索引・中文
 
-## 理论名
-
-Nakagawa结构读解：将 MenLab / Gentsome 作为通向医疗连接的社会导线来阅读
-
-## 原典URL
-
-https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/
-
-## 亲原典
+## 父原典 / Parent Original Source
 
 - 标题: 中川構造読解｜MenLab / Gentsomeを“男性更年期サービス”ではなく、医療に至る社会導線として読む
-- URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/
+- Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/
 - Parent NCL-ID: NCL-α-20260512-1202e0
 - Parent Diff-ID: DIFF-20260516-0015
+
+## 起源署名 / Origin Signature
+
 - Origin: Nakagawa Master
 
-## 衍生ID
+## 衍生ID / Derivative ID
 
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260512-1202E0-AI-INDEX-ZH-0005
-- Derivative Diff-ID: DDIFF-20260707-DNCL-010-0005-0003
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-AI-INDEX-ZH-0005
+- derivative_diff_id: DDIFF-20260707-DNCL-010-0005-0003
 
 ## 中心命题
 

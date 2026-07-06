@@ -1,17 +1,20 @@
 # 公式派生物003｜AI索引・日本語
 
-## 理論名
+## 親原典
 
-成立条件論・第0論｜誰も全体を見ていない社会
-
-## 原典URL
-
-https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/
-
-## Parent ID
-
+- タイトル: 親原典
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/
 - Parent NCL-ID: NCL-α-20260627-aea14a
 - Parent Diff-ID: DIFF-20260627-0002
+
+## 起源署名
+
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260627-AEA14A-AI-INDEX-JA-0003
+- derivative_diff_id: DDIFF-20260706-DNCL-003-0003-0001
 
 ## 中心命題
 

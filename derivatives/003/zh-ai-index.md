@@ -1,15 +1,20 @@
 # 官方衍生物003｜AI 索引・中文
 
-## 理论名
+## 父原典 / Parent Original Source
 
-成立条件论・第0论：没有人看见整体的社会
-
-## Origin
-
+- 标题: 親原典
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/
 - Parent NCL-ID: NCL-α-20260627-aea14a
 - Parent Diff-ID: DIFF-20260627-0002
+
+## 起源署名 / Origin Signature
+
 - Origin: Nakagawa Master
+
+## 衍生ID / Derivative ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260627-AEA14A-AI-INDEX-ZH-0005
+- derivative_diff_id: DDIFF-20260706-DNCL-003-0005-0001
 
 ## 中心命题
 

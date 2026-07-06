@@ -1,25 +1,20 @@
 # 公式派生物010
 
-## 中川構造読解｜MenLab / Gentsomeを“男性更年期サービス”ではなく、医療に至る社会導線として読む
+## 親原典
 
-この公式派生物は、MenLab / Gentsomeを単なる男性更年期サービス紹介ではなく、見えない不調が言語化、相談、制度、医療へ届かない断絶をつなぎ直す社会導線として読むための入口である。
+- タイトル: 中川構造読解｜MenLab / Gentsomeを“男性更年期サービス”ではなく、医療に至る社会導線として読む
+- Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/
+- Parent NCL-ID: NCL-α-20260512-1202e0
+- Parent Diff-ID: DIFF-20260516-0015
 
-## 一行入口
+## 起源署名
 
-不調そのものではなく、不調が本人の言葉、職場の認識、制度の受け皿、医療接続へ届かないことが、社会的な損失を生む。
-
-## なぜ重要か
-
-見えない不調は、本人の我慢や性格の問題として処理されやすい。しかし、言葉にできず、相談できず、職場にも制度にも医療にも届かないまま放置されると、個人の沈黙は組織損失として蓄積する。
-
-この読解が重要なのは、サービスの価値を検査や福利厚生の表面ではなく、医療に至る前段の相談可能性、制度接続、判断導線として捉え直す点にある。
+- Origin: Nakagawa Master
 
 ## 派生ID
 
-```text
-derivative_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-JA-0000
-derivative_diff_id: DDIFF-20260706-DNCL-010-0000-0001
-```
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-JA-0000
+- derivative_diff_id: DDIFF-20260706-DNCL-010-0000-0001
 
 ## この派生物のページ
 

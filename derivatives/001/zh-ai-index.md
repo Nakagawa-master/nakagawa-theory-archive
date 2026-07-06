@@ -1,15 +1,20 @@
 # 官方衍生物001｜AI 索引・中文
 
-## 理论名
+## 父原典 / Parent Original Source
 
-Nakagawa OS L1-L7 层级规格
-
-## Origin
-
+- 标题: 親原典
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/
 - Parent NCL-ID: NCL-α-20251124-e4c70c
 - Parent Diff-ID: DIFF-20251124-0012
+
+## 起源署名 / Origin Signature
+
 - Origin: Nakagawa Master
+
+## 衍生ID / Derivative ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-AI-INDEX-ZH-0005
+- derivative_diff_id: DDIFF-20260706-DNCL-0005-0001
 
 ## 中心命题
 

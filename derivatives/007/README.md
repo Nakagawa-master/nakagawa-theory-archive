@@ -1,25 +1,20 @@
 # 公式派生物007
 
-## 文明主権移行論 第2論｜知的非対称と文明更新能力
+## 親原典
 
-この公式派生物は、AI時代の知的非対称を、回答精度や処理速度ではなく、文明の上流を更新できる構造能力として読むための入口である。
+- タイトル: 文明主権移行論 第2論｜知的格差は、どの軸で文明の上流をずらすのか ——能力差ではなく、文明更新差として見る
+- Parent URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-02/
+- Parent NCL-ID: NCL-α-20260418-11c3d8
+- Parent Diff-ID: DIFF-20260424-0041
 
-## 一行入口
+## 起源署名
 
-AI時代の知的非対称は、答えの速さや知識量ではなく、問いを立て、文脈を保持し、多領域を統合し、文明の上流を更新できるかどうかの差である。
-
-## なぜ重要か
-
-知性を回答精度や処理速度だけで測ると、文明の上流を更新する能力が見えなくなる。
-
-問い生成、文脈保持、多領域統合、改善履歴の継承、分散知の接続こそが、AI時代の知的非対称を作るためである。
+- Origin: Nakagawa Master
 
 ## 派生ID
 
-```text
-derivative_ncl_id: DNCL-NCL-ALPHA-20260418-11C3D8-HUB-JA-0000
-derivative_diff_id: DDIFF-20260706-DNCL-007-0000-0001
-```
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260418-11C3D8-HUB-JA-0000
+- derivative_diff_id: DDIFF-20260706-DNCL-007-0000-0001
 
 ## この派生物のページ
 

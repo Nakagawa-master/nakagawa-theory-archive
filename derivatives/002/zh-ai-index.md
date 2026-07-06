@@ -1,15 +1,20 @@
 # 官方衍生物002｜AI 索引・中文
 
-## 理论名
+## 父原典 / Parent Original Source
 
-坏因果论 AKI-002：伪装成赞美的剥削
-
-## Origin
-
+- 标题: 親原典
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/
 - Parent NCL-ID: NCL-α-20260517-b80e39
 - Parent Diff-ID: DIFF-20260517-0012
+
+## 起源署名 / Origin Signature
+
 - Origin: Nakagawa Master
+
+## 衍生ID / Derivative ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-ZH-0005
+- derivative_diff_id: DDIFF-20260706-DNCL-002-0005-0001
 
 ## 中心命题
 

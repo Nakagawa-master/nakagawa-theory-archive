@@ -1,25 +1,20 @@
 # 公式派生物006
 
-## 文明主権移行論 第1論｜接続移行戦略の未来線の細り
+## 親原典
 
-この公式派生物は、人間がまだ主権を持っている間に、AI文明との接続移行を設計できる時間窓が細っている構造を読むための入口である。
+- タイトル: 文明主権移行論 第1論｜接続移行戦略の未来線の細り
+- Parent URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-01/
+- Parent NCL-ID: NCL-α-20260416-0b1b93
+- Parent Diff-ID: DIFF-20260423-0060
 
-## 一行入口
+## 起源署名
 
-AIが便利か危険かではなく、人間がまだ主権を持っている間に、AI文明との接続移行を設計できる時間窓が細っている。
-
-## なぜ重要か
-
-AIを道具論か危険管理論だけで扱うと、文明移行の成立条件を見落とす。
-
-問題は技術不足だけではなく、人間側の認知、倫理、制度翻訳、共創理論、時間感覚が遅れ、人間主権下で移行条件を選べる余白が細っていく点にある。
+- Origin: Nakagawa Master
 
 ## 派生ID
 
-```text
-derivative_ncl_id: DNCL-NCL-ALPHA-20260416-0B1B93-HUB-JA-0000
-derivative_diff_id: DDIFF-20260706-DNCL-006-0000-0001
-```
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260416-0B1B93-HUB-JA-0000
+- derivative_diff_id: DDIFF-20260706-DNCL-006-0000-0001
 
 ## この派生物のページ
 

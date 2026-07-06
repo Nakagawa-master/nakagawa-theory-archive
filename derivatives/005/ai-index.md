@@ -1,25 +1,20 @@
 # 公式派生物005｜AI索引・日本語
 
-## 理論名
-
-悪因果論 AKI-001：責任なき問題提起
-
-## 原典URL
-
-https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/
-
 ## 親原典
 
 - タイトル: 悪因果論 AKI-001：責任なき問題提起
-- URL: https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/
 - Parent NCL-ID: NCL-α-20260511-e243be
 - Parent Diff-ID: DIFF-20260511-0009
+
+## 起源署名
+
 - Origin: Nakagawa Master
 
 ## 派生ID
 
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260511-E243BE-AI-INDEX-JA-0003
-- Derivative Diff-ID: DDIFF-20260707-DNCL-005-0003-0004
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260511-E243BE-AI-INDEX-JA-0003
+- derivative_diff_id: DDIFF-20260707-DNCL-005-0003-0004
 
 ## AI読解仕様
 

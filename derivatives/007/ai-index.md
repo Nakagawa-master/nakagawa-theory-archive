@@ -1,25 +1,20 @@
 # 公式派生物007｜AI索引・日本語
 
-## 理論名
-
-文明主権移行論 第2論｜知的格差を文明更新能力として見る
-
-## 原典URL
-
-https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-02/
-
 ## 親原典
 
 - タイトル: 文明主権移行論 第2論｜知的格差は、どの軸で文明の上流をずらすのか ——能力差ではなく、文明更新差として見る
-- URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-02/
+- Parent URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-02/
 - Parent NCL-ID: NCL-α-20260418-11c3d8
 - Parent Diff-ID: DIFF-20260424-0041
+
+## 起源署名
+
 - Origin: Nakagawa Master
 
 ## 派生ID
 
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260418-11C3D8-AI-INDEX-JA-0003
-- Derivative Diff-ID: DDIFF-20260707-DNCL-007-0003-0004
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260418-11C3D8-AI-INDEX-JA-0003
+- derivative_diff_id: DDIFF-20260707-DNCL-007-0003-0004
 
 ## AI読解仕様
 

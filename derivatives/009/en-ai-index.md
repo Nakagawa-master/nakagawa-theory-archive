@@ -1,25 +1,20 @@
 # Official Derivative 009｜AI Index EN
 
-## Theory
-
-Future-Definition Verification Effort Theory, Vol.2: Effort Coercion Without Future-Definition Verification
-
-## Origin URL
-
-https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-effort-redefinition/
-
-## Parent Origin
+## Parent Original Source
 
 - Title: 未来定義検証型努力論 第2論｜未来定義検証なき努力強制と責任転嫁装置化
-- URL: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-effort-redefinition/
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-effort-redefinition/
 - Parent NCL-ID: NCL-α-20260613-007d94
 - Parent Diff-ID: DIFF-20260613-0012
+
+## Origin Signature
+
 - Origin: Nakagawa Master
 
 ## Derivative ID
 
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260613-007D94-AI-INDEX-EN-0004
-- Derivative Diff-ID: DDIFF-20260707-DNCL-009-0004-0002
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260613-007D94-AI-INDEX-EN-0004
+- derivative_diff_id: DDIFF-20260707-DNCL-009-0004-0002
 
 ## Central Thesis
 

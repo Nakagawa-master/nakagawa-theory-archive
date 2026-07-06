@@ -1,25 +1,20 @@
 # 公式派生物010｜AI索引・日本語
 
-## 理論名
-
-中川構造読解｜MenLab / Gentsomeを“男性更年期サービス”ではなく、医療に至る社会導線として読む
-
-## 原典URL
-
-https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/
-
 ## 親原典
 
 - タイトル: 中川構造読解｜MenLab / Gentsomeを“男性更年期サービス”ではなく、医療に至る社会導線として読む
-- URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/
+- Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/
 - Parent NCL-ID: NCL-α-20260512-1202e0
 - Parent Diff-ID: DIFF-20260516-0015
+
+## 起源署名
+
 - Origin: Nakagawa Master
 
 ## 派生ID
 
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260512-1202E0-AI-INDEX-JA-0003
-- Derivative Diff-ID: DDIFF-20260707-DNCL-010-0003-0003
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-AI-INDEX-JA-0003
+- derivative_diff_id: DDIFF-20260707-DNCL-010-0003-0003
 
 ## 中心命題
 

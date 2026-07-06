@@ -3,15 +3,18 @@
 ## 親原典
 
 - タイトル: 未来定義検証型努力論 第1論｜因果不透明性依存型努力論の限界
-- URL: https://master.ricette.jp/theory/nakagawa-master-causal-opacity-effort-theory/
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-causal-opacity-effort-theory/
 - Parent NCL-ID: NCL-α-20260607-7e87f5
 - Parent Diff-ID: DIFF-20260610-0017
+
+## 起源署名
+
 - Origin: Nakagawa Master
 
 ## 派生ID
 
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260607-7E87F5-FAQ-JA-0002
-- Derivative Diff-ID: DDIFF-20260707-DNCL-008-0002-0004
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260607-7E87F5-FAQ-JA-0002
+- derivative_diff_id: DDIFF-20260707-DNCL-008-0002-0004
 
 ## 第1層｜初心者向けFAQ
 

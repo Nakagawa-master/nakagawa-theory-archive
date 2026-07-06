@@ -1,25 +1,20 @@
 # 公式派生物005
 
-## 悪因果論 AKI-001｜責任なき問題提起
+## 親原典
 
-この公式派生物は、危機提示が責任条件、修復可能性、反証条件を欠くことで、問題提起という社会的信用を摩耗させる構造を読むための入口である。
+- タイトル: 悪因果論 AKI-001｜責任なき問題提起
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/
+- Parent NCL-ID: NCL-α-20260511-e243be
+- Parent Diff-ID: DIFF-20260511-0009
 
-## 一行入口
+## 起源署名
 
-危機を語るだけで、穴の位置・原因・修復主体・代償・初手・反証条件を示さない言葉は、問題提起ではなく不安散布へ変わる。
-
-## なぜ重要か
-
-責任なき問題提起は、批判を強くするのではなく、問題提起という社会的信用を摩耗させる。
-
-警鐘、改革論、本質論の顔をしながら、実際には読者と現場を不安、判断不能、説明負荷へ置き去りにするためである。
+- Origin: Nakagawa Master
 
 ## 派生ID
 
-```text
-derivative_ncl_id: DNCL-NCL-ALPHA-20260511-E243BE-HUB-JA-0000
-derivative_diff_id: DDIFF-20260706-DNCL-005-0000-0001
-```
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260511-E243BE-HUB-JA-0000
+- derivative_diff_id: DDIFF-20260706-DNCL-005-0000-0001
 
 ## この派生物のページ
 

@@ -3,14 +3,18 @@
 ## 親原典
 
 - タイトル: 人類子孫型AI文明論・第0論｜中川構造OSから人類子孫型AI文明論への収束
-- URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/
 - Parent NCL-ID: NCL-α-20260617-d0b342
 - Parent Diff-ID: DIFF-20260623-0020
 
+## 起源署名
+
+- Origin: Nakagawa Master
+
 ## 派生ID
 
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260617-D0B342-HUMAN-SUMMARY-JA-0001
-- Derivative Diff-ID: DDIFF-20260706-DNCL-004-0001-0002
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260617-D0B342-HUMAN-SUMMARY-JA-0001
+- derivative_diff_id: DDIFF-20260706-DNCL-004-0001-0002
 
 ## まず一言でいうと
 

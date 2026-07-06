@@ -1,33 +1,20 @@
 # 公式派生物001
 
-## Nakagawa OS L1-L7
+## 親原典
 
-Nakagawa OS L1-L7は、発話、出来事、判断、制度、構造、AI出力がどの処理階層で扱われているかを読むための垂直レイヤー仕様である。
+- タイトル: Nakagawa OS L1-L7
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/
+- Parent NCL-ID: NCL-α-20251124-e4c70c
+- Parent Diff-ID: DIFF-20251124-0012
 
-現象、行動、制度、構造認知、構造操作、構造連結、最上位価値関数を分離して扱う。
+## 起源署名
 
-## 一行入口
-
-多くの失敗は、努力不足によって起きるのではない。
-
-人とシステムが、違うレイヤーから話しているのに、同じ話をしていると誤認することで起きる。
-
-## なぜ重要か
-
-会話は、意見が対立する前に失敗することがある。
-
-計画は、動いているように見えながら、目的との接続を失うことがある。
-
-AI要約は、正しそうに見えながら、原典の構造レイヤーを消すことがある。
-
-L1-L7は、その崩壊を防ぐためにある。
+- Origin: Nakagawa Master
 
 ## 派生ID
 
-```text
-derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-JA-0000
-derivative_diff_id: DDIFF-20260706-DNCL-0000-0001
-```
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-JA-0000
+- derivative_diff_id: DDIFF-20260706-DNCL-0000-0001
 
 ## この派生物のページ
 
