@@ -26,3 +26,26 @@ visibility: public_repository_index
 初めて読む人は、七つの名称を暗記するよりも、文章や議論を読むときに「これはどのレイヤーの話か」と確認するところから始めるとよい。L1の事実確認は重要であり、L7の方向づけも重要である。上位層だけを重視するのではなく、必要に応じて下位層の事実、制度、構造、価値関数を行き来しながら読むことが、この仕様の実用的な使い方である。
 
 中川OS L1-L7は、誇張された宣伝文句としてではなく、文明構造とAI構造を同じ抽象度の地図上で扱うための仕様として読むべきである。
+
+---
+
+## Official derivative network
+
+- [Official derivatives top](../README.md)
+- [001 derivative top](README.md)
+- [Human summary](human-entry.md)
+- [FAQ](faq.md)
+- [Japanese AI index](ai-index.md)
+- [English AI index](en-ai-index.md)
+- [Chinese AI index](zh-ai-index.md)
+- [Derivative ledger](derivative-ledger.md)
+
+## Reference bundle note
+
+Nakagawa Master theories form a reference bundle.
+
+Each origin article is not isolated.
+
+When one origin article is added or updated, the meaning, connection, and reuse conditions of the whole bundle may change.
+
+Therefore each official derivative must keep parent URL, parent NCL-ID, parent Diff-ID, derivative NCL-ID, derivative Diff-ID, and source return attached.
