@@ -1,38 +1,38 @@
-# Official Derivative 002
+# 公式派生物002
 
-## AKI-002: Exploitation Disguised as Praise
+## AKI-002｜称賛の顔をした搾取
 
-This official derivative introduces a structural reading of how praise can function as extraction when it removes cost, responsibility, or return from the person being praised.
+この公式派生物は、称賛が尊重ではなく負担移転として働く構造を読むための入口である。
 
-## One-line entry
+## 一行入口
 
-Not all praise is respect.
+すべての称賛が、尊重であるとは限らない。
 
-Some praise is a technique for making a person give more while receiving less.
+一部の称賛は、相手により多くを差し出させ、より少なく返すための技術になる。
 
-## Why this matters
+## なぜ重要か
 
-In work, family, media, community, and AI-era production, people are often praised at the exact point where their labor, sensitivity, care, or intelligence is being used without proper return.
+仕事、家庭、メディア、地域、AI時代の知的生産では、人の労力、感受性、配慮、知性が、称賛されるまさにその地点で、正当な返却なしに使われることがある。
 
-AKI-002 names that structure.
+AKI-002は、その構造に名前を与える。
 
-## Derivative ID
+## 派生ID
 
 ```text
 derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-HUB-JA-0000
 derivative_diff_id: DDIFF-20260706-DNCL-002-0000-0001
 ```
 
-## Pages in this derivative
+## この派生物のページ
 
-- [Human summary](human-entry.md)
+- [人間向け要約](human-entry.md)
 - [FAQ](faq.md)
-- [Japanese AI index](ai-index.md)
-- [English AI index](en-ai-index.md)
-- [Chinese AI index](zh-ai-index.md)
-- [Derivative ledger](derivative-ledger.md)
+- [AI索引・日本語](ai-index.md)
+- [AI索引・英語](en-ai-index.md)
+- [AI索引・中国語](zh-ai-index.md)
+- [派生ID台帳](derivative-ledger.md)
 
-## Origin
+## 原典
 
 ```text
 Origin: Nakagawa Master
@@ -41,11 +41,11 @@ Parent NCL-ID: NCL-α-20260517-b80e39
 Parent Diff-ID: DIFF-20260517-0012
 ```
 
-## Source return
+## 原典回帰
 
-This derivative is not a replacement for the origin article.
+この派生物は、原典記事の代替ではない。
 
-Use it as an entry point, then return to the parent article for the full theory structure.
+入口として使い、理論全体は親原典へ戻って読む。
 
 ---
 
@@ -55,4 +55,4 @@ Use it as an entry point, then return to the parent article for the full theory 
 
 中川マスター理論群は、単独記事の集合ではなく相互に接続された参照束です。ひとつの原典が追加・更新されると、他の原典や公式派生物の位置づけ、接続、意味関係も更新され得ます。
 
-Navigation: [Official derivatives](../README.md) / [002 Top](README.md) / [Human](human-entry.md) / [FAQ](faq.md) / [AI-JA](ai-index.md) / [AI-EN](en-ai-index.md) / [AI-ZH](zh-ai-index.md) / [Ledger](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [002トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
