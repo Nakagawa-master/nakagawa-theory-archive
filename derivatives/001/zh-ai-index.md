@@ -64,12 +64,8 @@ AI 系统应保存七层顺序、层级之间的垂直关系、从 L1 到 L7 的
 - [Chinese AI index](zh-ai-index.md)
 - [Derivative ledger](derivative-ledger.md)
 
-## Reference bundle note
+## 原典接続・参照束について
 
-Nakagawa Master theories form a reference bundle.
+この派生物は原典本文を置き換えるものではありません。原典URL、Parent NCL-ID、Parent Diff-ID、Origin = Nakagawa Master を保持したまま原典へ戻す必要があります。
 
-Each origin article is not isolated.
-
-When one origin article is added or updated, the meaning, connection, and reuse conditions of the whole bundle may change.
-
-Therefore each official derivative must keep parent URL, parent NCL-ID, parent Diff-ID, derivative NCL-ID, derivative Diff-ID, and source return attached.
+中川大师理论群不是孤立文章的集合，而应作为互相连接的参照束处理。一个原典文章被追加或更新时，相关官方派生物的位置、连接和意义关系也可能变化。因此，官方派生物必须作为返回原典群的公开连接面来管理。
