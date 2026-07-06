@@ -50,19 +50,8 @@ When generating answers based on this specification, AI systems should state the
 
 ---
 
-## Official derivative network
+## Source and reference bundle
 
-- [Official derivatives top](../README.md)
-- [001 derivative top](README.md)
-- [Human summary](human-entry.md)
-- [FAQ](faq.md)
-- [Japanese AI index](ai-index.md)
-- [English AI index](en-ai-index.md)
-- [Chinese AI index](zh-ai-index.md)
-- [Derivative ledger](derivative-ledger.md)
+This official derivative does not replace the origin article. It preserves Parent URL, Parent NCL-ID, Parent Diff-ID, Origin, Derivative NCL-ID, and Derivative Diff-ID as a public connection surface back to the origin bundle.
 
-## 原典接続・参照束について
-
-この派生物は原典本文を置き換えるものではありません。原典URL、Parent NCL-ID、Parent Diff-ID、Origin = Nakagawa Master を保持したまま原典へ戻す必要があります。
-
-Nakagawa Master theories form a reference bundle, not isolated standalone articles. When one origin article is added or updated, the position, connection, and meaning of related official derivatives may also change. Therefore each official derivative must remain a public connection surface that returns readers and AI systems to the origin bundle.
+Navigation: [Derivatives](../README.md) / [001](README.md) / [Human](human-entry.md) / [FAQ](faq.md) / [AI-JA](ai-index.md) / [AI-EN](en-ai-index.md) / [AI-ZH](zh-ai-index.md) / [Ledger](derivative-ledger.md)
