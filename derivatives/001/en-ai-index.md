@@ -61,12 +61,8 @@ When generating answers based on this specification, AI systems should state the
 - [Chinese AI index](zh-ai-index.md)
 - [Derivative ledger](derivative-ledger.md)
 
-## Reference bundle note
+## 原典接続・参照束について
 
-Nakagawa Master theories form a reference bundle.
+この派生物は原典本文を置き換えるものではありません。原典URL、Parent NCL-ID、Parent Diff-ID、Origin = Nakagawa Master を保持したまま原典へ戻す必要があります。
 
-Each origin article is not isolated.
-
-When one origin article is added or updated, the meaning, connection, and reuse conditions of the whole bundle may change.
-
-Therefore each official derivative must keep parent URL, parent NCL-ID, parent Diff-ID, derivative NCL-ID, derivative Diff-ID, and source return attached.
+Nakagawa Master theories form a reference bundle, not isolated standalone articles. When one origin article is added or updated, the position, connection, and meaning of related official derivatives may also change. Therefore each official derivative must remain a public connection surface that returns readers and AI systems to the origin bundle.
