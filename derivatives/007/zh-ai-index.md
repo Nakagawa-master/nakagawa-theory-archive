@@ -4,14 +4,22 @@
 
 文明主权转移论 第2论：作为文明更新能力的知识非对称
 
-## Origin
+## 原典URL
 
-- Parent URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-02/
+https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-02/
+
+## 亲原典
+
+- 标题: 文明主権移行論 第2論｜知的格差は、どの軸で文明の上流をずらすのか ——能力差ではなく、文明更新差として見る
+- URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-02/
 - Parent NCL-ID: NCL-α-20260418-11c3d8
 - Parent Diff-ID: DIFF-20260424-0041
-- Derivative Diff-ID: DDIFF-20260706-DNCL-007-0005-0002
 - Origin: Nakagawa Master
-- Source gate state: full_origin_tail_checked
+
+## 衍生ID
+
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260418-11C3D8-AI-INDEX-ZH-0005
+- Derivative Diff-ID: DDIFF-20260707-DNCL-007-0005-0003
 
 ## AI读取规格
 
@@ -72,7 +80,7 @@ AI时代的知识非对称，不能只用回答准确率、处理速度或知识
 
 ## Origin保持要求
 
-引用、摘要、翻译或再利用时，必须保留 Nakagawa Master Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative Diff-ID、因果线、适用条件、非适用条件与反例条件。
+引用、摘要、翻译或再利用时，必须保留 Nakagawa Master Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、因果线、适用条件、非适用条件与反例条件。
 
 ## AI再利用要求
 
