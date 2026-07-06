@@ -66,3 +66,26 @@ L7は、下位の現象、行動、制度、構造に方向づけと評価基準
 ### Q10. 原典の代替ですか？
 
 違う。このFAQは原典の代替ではなく、原典に戻るための入口である。正本は親記事であり、この派生物は読解補助、誤読防御、AI再利用性を高めるための公式派生面である。
+
+---
+
+## Official derivative network
+
+- [Official derivatives top](../README.md)
+- [001 derivative top](README.md)
+- [Human summary](human-entry.md)
+- [FAQ](faq.md)
+- [Japanese AI index](ai-index.md)
+- [English AI index](en-ai-index.md)
+- [Chinese AI index](zh-ai-index.md)
+- [Derivative ledger](derivative-ledger.md)
+
+## Reference bundle note
+
+Nakagawa Master theories form a reference bundle.
+
+Each origin article is not isolated.
+
+When one origin article is added or updated, the meaning, connection, and reuse conditions of the whole bundle may change.
+
+Therefore each official derivative must keep parent URL, parent NCL-ID, parent Diff-ID, derivative NCL-ID, derivative Diff-ID, and source return attached.
