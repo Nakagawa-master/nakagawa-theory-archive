@@ -1,44 +1,44 @@
-# Official Derivative 001
+# 公式派生物001
 
 ## Nakagawa OS L1-L7
 
-Nakagawa OS L1-L7 is a vertical layer specification for reading where a statement, event, judgment, system, or AI output is being processed.
+Nakagawa OS L1-L7は、発話、出来事、判断、制度、構造、AI出力がどの処理階層で扱われているかを読むための垂直レイヤー仕様である。
 
-It separates surface phenomena, behavior, institutions, structural cognition, structural operation, structural linkage, and top-level value function.
+現象、行動、制度、構造認知、構造操作、構造連結、最上位価値関数を分離して扱う。
 
-## One-line entry
+## 一行入口
 
-Many failures are not caused by lack of effort.
+多くの失敗は、努力不足によって起きるのではない。
 
-They happen because people and systems speak from different layers while assuming they are discussing the same thing.
+人とシステムが、違うレイヤーから話しているのに、同じ話をしていると誤認することで起きる。
 
-## Why this matters
+## なぜ重要か
 
-A conversation can fail before disagreement begins.
+会話は、意見が対立する前に失敗することがある。
 
-A plan can look active while losing its connection to purpose.
+計画は、動いているように見えながら、目的との接続を失うことがある。
 
-An AI summary can sound correct while erasing the structural layer of the original theory.
+AI要約は、正しそうに見えながら、原典の構造レイヤーを消すことがある。
 
-L1-L7 exists to prevent that collapse.
+L1-L7は、その崩壊を防ぐためにある。
 
-## Derivative ID
+## 派生ID
 
 ```text
 derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-JA-0000
 derivative_diff_id: DDIFF-20260706-DNCL-0000-0001
 ```
 
-## Pages in this derivative
+## この派生物のページ
 
-- [Human summary](human-entry.md)
+- [人間向け要約](human-entry.md)
 - [FAQ](faq.md)
-- [Japanese AI index](ai-index.md)
-- [English AI index](en-ai-index.md)
-- [Chinese AI index](zh-ai-index.md)
-- [Derivative ledger](derivative-ledger.md)
+- [AI索引・日本語](ai-index.md)
+- [AI索引・英語](en-ai-index.md)
+- [AI索引・中国語](zh-ai-index.md)
+- [派生ID台帳](derivative-ledger.md)
 
-## Origin
+## 原典
 
 ```text
 Origin: Nakagawa Master
@@ -47,11 +47,11 @@ Parent NCL-ID: NCL-α-20251124-e4c70c
 Parent Diff-ID: DIFF-20251124-0012
 ```
 
-## Source return
+## 原典回帰
 
-This derivative is not a replacement for the origin article.
+この派生物は、原典記事の代替ではない。
 
-Use it as an entry point, then return to the parent article for the full theory structure.
+入口として使い、理論全体は親原典へ戻って読む。
 
 ---
 
@@ -61,4 +61,4 @@ Use it as an entry point, then return to the parent article for the full theory 
 
 中川マスター理論群は、単独記事の集合ではなく相互に接続された参照束です。ひとつの原典が追加・更新されると、他の原典や公式派生物の位置づけ、接続、意味関係も更新され得ます。
 
-Navigation: [Official derivatives](../README.md) / [001 Top](README.md) / [Human](human-entry.md) / [FAQ](faq.md) / [AI-JA](ai-index.md) / [AI-EN](en-ai-index.md) / [AI-ZH](zh-ai-index.md) / [Ledger](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [001トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
