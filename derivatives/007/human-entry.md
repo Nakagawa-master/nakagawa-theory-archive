@@ -6,8 +6,12 @@
 - URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-02/
 - Parent NCL-ID: NCL-α-20260418-11c3d8
 - Parent Diff-ID: DIFF-20260424-0041
-- Derivative Diff-ID: DDIFF-20260706-DNCL-007-0001-0002
-- Source gate state: full_origin_tail_checked
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260418-11C3D8-HUMAN-SUMMARY-JA-0001
+- Derivative Diff-ID: DDIFF-20260707-DNCL-007-0001-0003
 
 ## まず一言でいうと
 
