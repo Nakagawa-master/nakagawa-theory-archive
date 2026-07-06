@@ -12,7 +12,7 @@ Source gate state: full_origin_tail_checked
 
 Source gate evidence: private-derivatives/operations/reports/official-derivative-006-007-source-gate-evidence-20260706-v0.1.md
 
-Current polish state: source_acquired_polish_pending
+Current polish state: source_gate_polish_complete
 
 Updated at JST: 2026-07-06
 
@@ -20,11 +20,15 @@ Updated at JST: 2026-07-06
 
 | File | Previous | Current | State |
 |---|---|---|---|
-| human-entry.md | DDIFF-20260706-DNCL-006-0001-0001 | DDIFF-20260706-DNCL-006-0001-0001 | polish blocked by connector safety check; source gate acquired |
-| faq.md | DDIFF-20260706-DNCL-006-0002-0001 | DDIFF-20260706-DNCL-006-0002-0001 | polish pending |
-| ai-index.md | DDIFF-20260706-DNCL-006-0003-0001 | DDIFF-20260706-DNCL-006-0003-0001 | polish pending |
-| en-ai-index.md | DDIFF-20260706-DNCL-006-0004-0001 | DDIFF-20260706-DNCL-006-0004-0001 | polish pending |
-| zh-ai-index.md | DDIFF-20260706-DNCL-006-0005-0001 | DDIFF-20260706-DNCL-006-0005-0001 | polish pending |
+| human-entry.md | DDIFF-20260706-DNCL-006-0001-0001 | DDIFF-20260706-DNCL-006-0001-0002 | full-origin polish complete |
+| faq.md | DDIFF-20260706-DNCL-006-0002-0001 | DDIFF-20260706-DNCL-006-0002-0002 | full-origin polish complete |
+| ai-index.md | DDIFF-20260706-DNCL-006-0003-0001 | DDIFF-20260706-DNCL-006-0003-0002 | full-origin polish complete |
+| en-ai-index.md | DDIFF-20260706-DNCL-006-0004-0001 | DDIFF-20260706-DNCL-006-0004-0002 | full-origin polish complete |
+| zh-ai-index.md | DDIFF-20260706-DNCL-006-0005-0001 | DDIFF-20260706-DNCL-006-0005-0002 | full-origin polish complete |
+
+## Restored axis
+
+Derivative 006 now preserves the origin axis that the first paper of Civilizational Sovereignty Shift is not a generic AI-use article. It fixes the background condition that the Connection Transition Strategy may remain coherent while the human-side time window, institutional translation, co-creation theory, and coexistence design for monetary KPIs and connection KPIs are narrowing.
 
 ---
 
