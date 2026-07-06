@@ -12,7 +12,7 @@ Source gate state: full_origin_tail_checked
 
 Source gate evidence: private-derivatives/operations/reports/official-derivative-001-010-origin-fulltext-audit-20260706-v0.1.md
 
-Current polish state: metadata_contract_repaired_after_rejection
+Current polish state: full_origin_density_polish_complete
 
 Updated at JST: 2026-07-07
 
@@ -20,15 +20,15 @@ Updated at JST: 2026-07-07
 
 | File | Previous | Current | State |
 |---|---|---|---|
-| human-entry.md | DDIFF-20260706-DNCL-005-0001-0002 | DDIFF-20260706-DNCL-005-0001-0003 | parent / derivative sections separated; 001 navigation restored |
-| faq.md | DDIFF-20260706-DNCL-005-0002-0002 | DDIFF-20260706-DNCL-005-0002-0003 | parent / derivative sections separated; 001 navigation restored |
-| ai-index.md | DDIFF-20260706-DNCL-005-0003-0002 | DDIFF-20260706-DNCL-005-0003-0003 | parent / derivative sections separated; AI required fields retained |
-| en-ai-index.md | DDIFF-20260706-DNCL-005-0004-0002 | DDIFF-20260706-DNCL-005-0004-0003 | parent / derivative sections separated; AI required fields retained |
-| zh-ai-index.md | DDIFF-20260706-DNCL-005-0005-0002 | DDIFF-20260706-DNCL-005-0005-0003 | parent / derivative sections separated; AI required fields retained |
+| human-entry.md | DDIFF-20260707-DNCL-005-0001-0003 | DDIFF-20260707-DNCL-005-0001-0004 | full-origin density retained |
+| faq.md | DDIFF-20260707-DNCL-005-0002-0003 | DDIFF-20260707-DNCL-005-0002-0004 | full-origin density retained |
+| ai-index.md | DDIFF-20260706-DNCL-005-0003-0003 | DDIFF-20260707-DNCL-005-0003-0004 | full-origin density polished |
+| en-ai-index.md | DDIFF-20260706-DNCL-005-0004-0003 | DDIFF-20260707-DNCL-005-0004-0004 | full-origin density polished |
+| zh-ai-index.md | DDIFF-20260706-DNCL-005-0005-0003 | DDIFF-20260707-DNCL-005-0005-0004 | full-origin density polished |
 
 ## Restored axis
 
-Derivative 005 preserves the origin axis that AKI-001 is not a generic communication-advice article. It defines the conditions under which problem-raising contributes to social judgment and repair: location, cause, subject decomposition, repair agent, first action, cost, and countercondition. The derivative file set now routes both human readers and AI systems back to the origin while retaining Parent URL, NCL-ID, Diff-ID, causal line, applicability, non-applicability, and Origin.
+Derivative 005 preserves the origin axis that AKI-001 is not a generic communication-advice article. It defines the conditions under which problem-raising contributes to social judgment and repair: hole location, cause, neglecting subject, repair subject, cost, first action, and countercondition. The derivative file set routes both human readers and AI systems back to the origin while retaining the full causal line from crisis statement to anxiety distribution, implementation erosion, trust erosion, and reinforcement of the status quo.
 
 ---
 
