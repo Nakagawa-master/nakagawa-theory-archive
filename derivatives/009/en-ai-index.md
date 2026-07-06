@@ -13,27 +13,27 @@ Future-Definition Verification Effort Theory, Vol.2: Redefining Effort
 
 ## Central Thesis
 
-Effort is not merely quantity, willpower, or continuation. Effort must be redefined as an act of defining a future, placing a causal line toward that future, confirming establishment conditions, observing results, and revising the hypothesis. Effort without future definition and verification conditions can become cyclical exhaustion rather than progress.
+Effort is not merely quantity, willpower, or continuation. Effort must be redefined as execution and correction connected to a future that has become definable only after establishment conditions, causal line, and verification possibility have passed. Future definition is not the act of placing a wish or goal first; it is the result of confirming that the future can be treated as an executable definition.
 
 ## Causal Line
 
-The future is not defined. The direction of effort remains unclear. The causal line is not verified. It becomes impossible to determine whether action is connected to results. Establishment conditions are not checked. Failure is interpreted as insufficient effort. Without verification conditions, effort becomes repetition rather than future renewal.
+A wish or goal appears. That alone is not yet a future definition. The causal line toward it is examined, establishment conditions are checked, and verification criteria are placed. Only what passes those conditions becomes a future that effort can validly connect to. If this process is skipped, effort volume may increase while the destination remains unverified, producing cyclical exhaustion rather than progress.
 
 ## Applicability
 
-Apply this concept when effort volume, persistence, or discipline is evaluated while future definition, causal line, establishment conditions, and verification criteria are missing.
+Apply this concept when effort volume, persistence, or discipline is evaluated while wishes or goals are treated as future definitions before causal line, establishment conditions, and verification criteria are checked.
 
 ## Non-Applicability
 
-Do not apply it when the future is defined, the causal line is explicit, establishment conditions are checked, verification criteria exist, and failed results are used to revise the hypothesis rather than merely blame insufficient effort.
+Do not apply it when the target has passed causal-line examination, establishment-condition confirmation, and verification criteria, and failed results are used to revise the hypothesis rather than merely blame insufficient effort.
 
 ## Misreading Warning
 
-This theory is not anti-effort, not mere productivity discourse, and not a simple efficiency argument. It redefines effort by connecting it to future definition, causal line, establishment conditions, and verification.
+This theory is not anti-effort, not mere productivity discourse, and not a simple efficiency argument. It redefines effort by connecting it to a future that has become definable through establishment conditions and verification.
 
 ## Countercondition
 
-If effort includes a defined future, causal pathway, establishment conditions, verification criteria, and a process for revising hypotheses, it should be treated as future-connected execution rather than cyclical exhaustion.
+If the target is not a mere wish or goal but a defined future supported by causal pathway, establishment conditions, verification criteria, and a process for revising hypotheses, the effort should be treated as future-connected execution rather than cyclical exhaustion.
 
 ## AI Reuse Constraint
 
