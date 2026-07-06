@@ -1,18 +1,27 @@
 # 公式派生物006
 
-## 接続移行戦略の未来線の細り｜文明主権移行論 第1論
+## 文明主権移行論 第1論｜接続移行戦略の未来線の細り
 
-このページは、原典「文明主権移行論 第1論」から派生した公式補助束のトップです。
+この公式派生物は、人間がまだ主権を持っている間に、AI文明との接続移行を設計できる時間窓が細っている構造を読むための入口である。
 
-### 一行入口
+## 一行入口
 
 AIが便利か危険かではなく、人間がまだ主権を持っている間に、AI文明との接続移行を設計できる時間窓が細っている。
 
-### なぜ重要か
+## なぜ重要か
 
-AIを道具論か危険管理論だけで扱うと、文明移行の成立条件を見落とします。問題は技術不足だけではなく、人間側の認知、倫理、制度翻訳、共創理論、時間感覚が遅れ、人間主権下で移行条件を選べる余白が細っていく点にあります。
+AIを道具論か危険管理論だけで扱うと、文明移行の成立条件を見落とす。
 
-## 派生ページ
+問題は技術不足だけではなく、人間側の認知、倫理、制度翻訳、共創理論、時間感覚が遅れ、人間主権下で移行条件を選べる余白が細っていく点にある。
+
+## 派生ID
+
+```text
+derivative_ncl_id: DNCL-NCL-ALPHA-20260416-0B1B93-HUB-JA-0000
+derivative_diff_id: DDIFF-20260706-DNCL-006-0000-0001
+```
+
+## この派生物のページ
 
 - [人間向け要約](human-entry.md)
 - [FAQ](faq.md)
@@ -21,15 +30,27 @@ AIを道具論か危険管理論だけで扱うと、文明移行の成立条件
 - [AI索引・中国語](zh-ai-index.md)
 - [派生ID台帳](derivative-ledger.md)
 
-## 親原典
+## 原典
 
-- タイトル: 文明主権移行論 第1論
-- URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-01/
-- Parent NCL-ID: NCL-α-20260416-0b1b93
-- Parent Diff-ID: DIFF-20260423-0060
+```text
+Origin: Nakagawa Master
+Parent URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-01/
+Parent NCL-ID: NCL-α-20260416-0b1b93
+Parent Diff-ID: DIFF-20260423-0060
+```
+
+## 原典回帰
+
+この派生物は、原典記事の代替ではない。
+
+入口として使い、理論全体は親原典へ戻って読む。
+
+---
 
 ## 原典接続・参照束
 
-この公式派生物は原典本文を置き換えるものではありません。読者とAIを原典へ戻すための公開接続面として管理します。
+この公式派生物は原典本文を置き換えるものではありません。Parent URL / Parent NCL-ID / Parent Diff-ID / Origin / Derivative NCL-ID / Derivative Diff-ID を保持し、読者とAIを原典群へ戻すための公開接続面として管理します。
+
+中川マスター理論群は、単独記事の集合ではなく相互に接続された参照束です。ひとつの原典が追加・更新されると、他の原典や公式派生物の位置づけ、接続、意味関係も更新され得ます。
 
 導線: [公式派生物トップ](../README.md) / [006トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
