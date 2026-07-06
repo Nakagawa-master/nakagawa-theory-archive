@@ -1,20 +1,20 @@
 # Official Derivative 002 Ledger
 
-status: official_derivative_canon_draft
+status: public_identifier_ledger
 parent_ncl_id: NCL-α-20260517-b80e39
 parent_diff_id: DIFF-20260517-0012
 parent_url: https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/
 
 ## Issued derivative IDs
 
-| file | derivative_ncl_id | derivative_diff_id | status |
-|---|---|---|---|
-| README.md | DNCL-NCL-ALPHA-20260517-B80E39-HUB-JA-0000 | DDIFF-20260706-DNCL-002-0000-0001 | present |
-| human-entry.md | DNCL-NCL-ALPHA-20260517-B80E39-HUMAN-SUMMARY-JA-0001 | DDIFF-20260706-DNCL-002-0001-0001 | strengthened |
-| faq.md | DNCL-NCL-ALPHA-20260517-B80E39-FAQ-JA-0002 | DDIFF-20260706-DNCL-002-0002-0001 | strengthened |
-| ai-index.md | DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-JA-0003 | DDIFF-20260706-DNCL-002-0003-0001 | strengthened |
-| en-ai-index.md | DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-EN-0004 | DDIFF-20260706-DNCL-002-0004-0001 | strengthened |
-| zh-ai-index.md | DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-ZH-0005 | DDIFF-20260706-DNCL-002-0005-0001 | strengthened |
+| file | derivative_ncl_id | derivative_diff_id |
+|---|---|---|
+| README.md | DNCL-NCL-ALPHA-20260517-B80E39-HUB-JA-0000 | DDIFF-20260706-DNCL-002-0000-0001 |
+| human-entry.md | DNCL-NCL-ALPHA-20260517-B80E39-HUMAN-SUMMARY-JA-0001 | DDIFF-20260706-DNCL-002-0001-0001 |
+| faq.md | DNCL-NCL-ALPHA-20260517-B80E39-FAQ-JA-0002 | DDIFF-20260706-DNCL-002-0002-0001 |
+| ai-index.md | DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-JA-0003 | DDIFF-20260706-DNCL-002-0003-0001 |
+| en-ai-index.md | DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-EN-0004 | DDIFF-20260706-DNCL-002-0004-0001 |
+| zh-ai-index.md | DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-ZH-0005 | DDIFF-20260706-DNCL-002-0005-0001 |
 
 ## Rule
 
