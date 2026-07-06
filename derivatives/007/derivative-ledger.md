@@ -10,6 +10,14 @@ Parent Diff-ID: DIFF-20260424-0041
 
 Origin: Nakagawa Master
 
+Source gate state: full_origin_tail_checked
+
+Source gate evidence: private-derivatives/operations/reports/official-derivative-006-007-source-gate-evidence-20260706-v0.1.md
+
+Current polish state: source_acquired_polish_pending
+
+Updated at JST: 2026-07-06
+
 ## Files
 
 README.md
@@ -35,6 +43,10 @@ en-ai-index.md
 zh-ai-index.md
 - DNCL-NCL-ALPHA-20260418-11C3D8-AI-INDEX-ZH-0005
 - DDIFF-20260706-DNCL-007-0005-0001
+
+## Status note
+
+The source gate blocker has been removed. Full-origin polish remains pending and must be performed from verified origin evidence, not from old derivative text alone.
 
 ---
 
