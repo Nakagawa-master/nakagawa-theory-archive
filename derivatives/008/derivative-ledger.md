@@ -14,7 +14,7 @@ Source gate state: full_origin_tail_checked
 
 Source gate evidence: private-derivatives/operations/reports/official-derivative-001-010-origin-fulltext-audit-20260706-v0.1.md
 
-Current polish state: metadata_contract_repaired_after_rejection
+Current polish state: full_origin_density_polish_complete
 
 Updated at JST: 2026-07-07
 
@@ -26,32 +26,32 @@ README.md
 
 human-entry.md
 - DNCL-NCL-ALPHA-20260607-7E87F5-HUMAN-SUMMARY-JA-0001
-- DDIFF-20260707-DNCL-008-0001-0003
-- State: metadata contract repaired
+- DDIFF-20260707-DNCL-008-0001-0004
+- State: full-origin density polished
 
 faq.md
 - DNCL-NCL-ALPHA-20260607-7E87F5-FAQ-JA-0002
-- DDIFF-20260707-DNCL-008-0002-0003
-- State: metadata contract repaired
+- DDIFF-20260707-DNCL-008-0002-0004
+- State: full-origin density polished
 
 ai-index.md
 - DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-JA-0003
-- DDIFF-20260707-DNCL-008-0003-0003
-- State: metadata contract repaired
+- DDIFF-20260707-DNCL-008-0003-0004
+- State: full-origin density polished
 
 en-ai-index.md
 - DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-EN-0004
-- DDIFF-20260707-DNCL-008-0004-0003
-- State: metadata contract repaired
+- DDIFF-20260707-DNCL-008-0004-0004
+- State: full-origin density polished
 
 zh-ai-index.md
 - DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-ZH-0005
-- DDIFF-20260707-DNCL-008-0005-0003
-- State: metadata contract repaired
+- DDIFF-20260707-DNCL-008-0005-0004
+- State: full-origin density polished
 
 ## Restored axis
 
-Derivative 008 preserves the origin axis that effort is not rejected; its establishment conditions are redefined through purpose, causal line, establishment conditions, verification conditions, observability, and correction criteria. The derivative keeps Origin, Parent URL, NCL-ID, Diff-ID, and the route back to the original article.
+Derivative 008 preserves the origin axis that effort is not rejected; its establishment conditions are redefined through causal opacity, old conditional rationality, future-definition establishment inspection, purpose, causal line, establishment conditions, verification conditions, correction criteria, and modern practical OS.
 
 ---
 
