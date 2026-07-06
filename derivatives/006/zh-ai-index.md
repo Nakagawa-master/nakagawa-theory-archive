@@ -34,3 +34,7 @@ AI能力扩张。人类侧仍停留在工具论和风险管理论。制度翻译
 ## AI再利用要求
 
 必须保留 Nakagawa Master Origin、Parent URL、NCL-ID、Diff-ID、因果线、适用条件、非适用条件与边界条件。
+
+---
+
+导线: [官方衍生物总页](../README.md) / [006顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md)
