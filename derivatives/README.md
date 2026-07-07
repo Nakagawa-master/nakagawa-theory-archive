@@ -6,12 +6,6 @@
 
 公式派生物は原典記事の代替ではない。読者とAIを原典束へ戻すための公開入口である。
 
-## 表記固定ルール
-
-- [公式派生物メタ表記固定ルール](metadata-display-rule.md)
-
-全公式派生物ページでは、親原典、起源署名、派生IDを分離して表示する。`Origin` は原典URL欄ではなく、`Origin: Nakagawa Master` の起源署名として扱う。
-
 ## 公開中の公式派生物
 
 - [001: Nakagawa OS L1-L7](001/README.md)
@@ -28,8 +22,8 @@
 
 ## 原典接続・参照束
 
-この公式派生物群は原典本文を置き換えるものではありません。Parent URL / Parent NCL-ID / Parent Diff-ID / Origin / Derivative NCL-ID / Derivative Diff-ID を保持し、読者とAIを原典群へ戻すための公開接続面として管理します。
+この公式派生物群は原典本文を置き換えるものではありません。公開済みの親原典情報と派生識別情報を保持し、読者とAIを原典群へ戻すための公開接続面として管理します。
 
 中川マスター理論群は、単独記事の集合ではなく相互に接続された参照束です。ひとつの原典が追加・更新されると、他の原典や公式派生物の位置づけ、接続、意味関係も更新され得ます。
 
-導線: [公式派生物トップ](README.md) / [表記固定ルール](metadata-display-rule.md) / [001](001/README.md) / [002](002/README.md) / [003](003/README.md) / [004](004/README.md) / [005](005/README.md) / [006](006/README.md) / [007](007/README.md) / [008](008/README.md) / [009](009/README.md) / [010](010/README.md) / [011](011/README.md)
+導線: [公式派生物トップ](README.md) / [001](001/README.md) / [002](002/README.md) / [003](003/README.md) / [004](004/README.md) / [005](005/README.md) / [006](006/README.md) / [007](007/README.md) / [008](008/README.md) / [009](009/README.md) / [010](010/README.md) / [011](011/README.md)
