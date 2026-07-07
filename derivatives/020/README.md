@@ -57,16 +57,6 @@
 
 中心は、K、Occ(K)、Res、V/P/A、減衰、冷却、縮退、H再接続、R再割当、True-U再計測である。
 
-## 全文取得状態
-
-第10論はGitHub Actions HTML経路により全文ミラー化済みである。
-
-- mirror: `origin-fulltext/articles/nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda.md`
-- fulltext_status: pass
-- audit_bundle_status: pass
-- ncl_id: NCL-α-20260225-1f258d
-- diff_id: DIFF-20260226-0020
-
 ---
 
 導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
