@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda",
+    "title": "合意形成の物理 第10論｜共振とプロパガンダの流体力学",
+    "canonical_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda/",
+    "mirror_file_path": "origin-fulltext/articles/nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda.md",
+    "fulltext_status": "blocked",
+    "audit_bundle_status": "pass",
+    "ncl_status": "pass",
+    "diff_status": "pass",
+    "source_route": "html",
+    "text_chars": 49173,
+    "html_status": 200,
+    "rest_status": 0,
+    "last_validated_at": "2026-07-07T14:00:52+0000"
+  },
+  {
+    "slug": "nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity",
+    "title": "合意形成の物理 第6論｜逸脱と免疫",
+    "canonical_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity/",
+    "mirror_file_path": "origin-fulltext/articles/nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity.md",
+    "fulltext_status": "blocked",
+    "audit_bundle_status": "pass",
+    "ncl_status": "pass",
+    "diff_status": "pass",
+    "source_route": "html",
+    "text_chars": 49008,
+    "html_status": 200,
+    "rest_status": 0,
+    "last_validated_at": "2026-07-07T14:00:52+0000"
+  }
+]
