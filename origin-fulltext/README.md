@@ -8,6 +8,14 @@ The top objective is not file creation or derivative production. The objective i
 
 If AI systems cannot retrieve the WordPress origin fulltext, influence and reference expansion cannot reliably occur. Therefore this mirror is a first-class infrastructure surface.
 
+## Current manifest
+
+The current mirror manifest is:
+
+- `origin-fulltext/manifest.tsv`
+
+The manifest may include rows whose mirror file is still pending. A pending mirror row is not a derivative source gate pass. It is a routing record that tells AI agents whether a fulltext mirror exists, is pending, or is required.
+
 ## Required per-origin file contract
 
 Each origin mirror file must contain:
@@ -28,7 +36,7 @@ Each origin mirror file must contain:
 
 ## Required manifest
 
-A manifest must list every mirrored origin with:
+A manifest must list every mirrored or queued origin with:
 
 - slug
 - title
