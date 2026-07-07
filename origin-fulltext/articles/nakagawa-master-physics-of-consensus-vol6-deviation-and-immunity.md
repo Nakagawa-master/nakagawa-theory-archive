@@ -1,4 +1,4 @@
-# 合意形成の物理 第6論｜逸脱と免疫
+# 合意形成の物理 第6論 逸脱と免疫 ― 免疫は「罰」ではなく「差分公開」である
 
 canonical_origin_url: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity/
 source_acquisition_method: wordpress_rest_then_html_fallback
