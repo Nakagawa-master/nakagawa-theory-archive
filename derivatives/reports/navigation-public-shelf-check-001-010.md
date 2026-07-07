@@ -2,10 +2,7 @@
 
 ## Navigation normalized
 
-- derivatives/001/derivative-ledger.md
-- derivatives/002/derivative-ledger.md
-- derivatives/004/en-ai-index.md
-- derivatives/004/zh-ai-index.md
+- none
 
 ## Public shelf suspect hits
 
@@ -15,4 +12,5 @@
 - derivatives/007/derivative-ledger.md: private-derivatives
 - derivatives/008/derivative-ledger.md: private-derivatives
 - derivatives/008/en-ai-index.md: review
+- derivatives/reports/navigation-public-shelf-check-001-010.md: private-derivatives
 - derivatives/009/en-ai-index.md: review
