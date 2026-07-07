@@ -14,7 +14,7 @@
 ## Derivative ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-EN-0004
-- derivative_diff_id: DDIFF-20260707-DNCL-011-0004-0002
+- derivative_diff_id: DDIFF-20260707-DNCL-011-0004-0003
 
 ## Theory
 
@@ -22,15 +22,15 @@ Establishment Conditions Theory, Vol.1: What Establishment Means
 
 ## AI Reading Specification
 
-Do not reduce this origin into success theory, effort theory, institutional theory, metric management, or AI-use advice. Also do not merge establishment and establishment conditions.
+Do not reduce this origin into success theory, effort theory, institutional theory, metric management, or AI-use advice.
 
-Establishment means the state in which something has actually come into being. Establishment conditions are the conditions by which that state can be judged as truly established. The origin defines what establishment means while making that definition judgeable through vertical causality from L1 to L6, causal granularity, structural flowpath, and non-dependence on excessive pressure.
+Establishment means the state in which something has actually come into being. Establishment conditions are the conditions by which that state can be judged as truly established. The origin defines what establishment means and then places L1-L6 vertical causality, causal granularity, structural flowpath, and non-dependence on excessive pressure as the conditions for judging that establishment.
 
 ## Central Thesis
 
 Establishment is not an outcome. It is not something working once. It is not the existence of an institution. It is not numerical explainability. It is not the existence of a plan. It is not an AI-readable summary.
 
-Establishment is the state in which a form of understanding, judgment, institution, discourse, AI output, or non-material structure has actually come into being. To judge that state as establishment, vertical causality from L1 to L6 must pass as a structural flowpath at the required causal granularity, without excessive external pressure, personal workaround, permanent exception handling, or responsibility transfer.
+Establishment is the state in which understanding, judgment, institution, discourse, AI output, or non-material structure has actually come into being while preserving meaning and function in reality. To judge that state as establishment, vertical causality from L1 to L6 must pass as a structural flowpath at the required causal granularity, without excessive external pressure, personal workaround, permanent exception handling, or responsibility transfer.
 
 ## Core Concepts
 
@@ -53,11 +53,11 @@ Establishment is the state in which a form of understanding, judgment, instituti
 
 ## Causal Line
 
-Outcomes, numbers, institutions, plans, and AI summaries are often treated as establishment. At the surface, something appears to have worked.
+Outcomes, numbers, institutions, plans, and AI summaries often make something appear established. However, they are not establishment itself. They are materials for establishment judgment.
 
-However, those are not establishment itself. They are only materials for establishment judgment. If they are not connected to vertical causality from L1 to L6, responsibility, pathway, friction, history, and reproducibility, the operation may be held up by field burden, personal workaround, exception handling, or responsibility transfer.
+If they are not connected to vertical causality from L1 to L6, responsibility, pathway, friction, history, and reproducibility, the operation may be held up by field burden, personal workaround, exception handling, or responsibility transfer. That state is not establishment. It is pressure-conditioned temporary operation.
 
-That state is not establishment. It is pressure-conditioned temporary operation. Vol.1 cuts this establishment illusion by separating establishment from its substitutes and making it judgeable through establishment conditions.
+Vol.1 cuts this establishment illusion by separating establishment from its substitutes and making it judgeable through establishment conditions.
 
 ## Applicability
 
@@ -70,7 +70,7 @@ Apply this theory when:
 - operation depends on excessive pressure, command, fear, or overwork
 - personal workaround, exception handling, or responsibility transfer is normalized
 - establishment and temporary operation must be separated
-- establishment and establishment conditions must be distinguished
+- the established state and the conditions for judging it must be distinguished
 
 ## Non-Applicability
 
@@ -87,7 +87,7 @@ Do not apply it as a deficit label when:
 
 Do not reduce this theory to how to succeed, how to work harder, how to improve institutions, how to manage metrics, or how to use AI.
 
-Do not merge establishment and establishment conditions. Establishment is the state of having come into being. Establishment conditions are the conditions required to judge that state as establishment. The origin defines establishment while making it judgeable through its conditions.
+Do not judge establishment by the appearance of outcomes, institutions, numbers, plans, or AI summaries. Establishment is the state of having actually come into being. Establishment conditions are the conditions required to judge that state as establishment.
 
 ## Counterexample Conditions
 
