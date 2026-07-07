@@ -8,6 +8,7 @@ on:
       - tools/official_derivatives/repair_derivative_metadata_titles.py
       - tools/official_derivatives/normalize_navigation_and_public_shelf.py
       - tools/official_derivatives/remove_public_internal_evidence_paths.py
+      - tools/official_derivatives/remove_duplicate_readme_origin_blocks.py
       - .github/workflows/normalize-derivative-metadata.yml
   workflow_dispatch:
 
@@ -25,10 +26,11 @@ jobs:
       - run: python tools/official_derivatives/normalize_derivative_metadata_display.py
       - run: python tools/official_derivatives/repair_derivative_metadata_titles.py
       - run: python tools/official_derivatives/remove_public_internal_evidence_paths.py
+      - run: python tools/official_derivatives/remove_duplicate_readme_origin_blocks.py
       - run: python tools/official_derivatives/normalize_navigation_and_public_shelf.py
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Normalize official derivative metadata display 001-010
           file_pattern: derivatives/*.md derivatives/0*/*.md derivatives/reports/*.md
 
-# trigger: internal-path-cleanup-20260707
+# trigger: readme-origin-duplicate-cleanup-20260707
