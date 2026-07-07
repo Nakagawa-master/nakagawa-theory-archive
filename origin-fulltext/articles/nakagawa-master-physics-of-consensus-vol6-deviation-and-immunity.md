@@ -2,8 +2,8 @@
 
 canonical_origin_url: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity/
 source_acquisition_method: wordpress_rest_then_html_fallback
-validation_state: blocked
-ncl_id_observed: NCL-Registry
+validation_state: pass
+ncl_id_observed: NCL-α-20260215-71cedd
 diff_id_observed: DIFF-20260215-0021
 modified: not_observed
 
@@ -13,7 +13,7 @@ modified: not_observed
 - integrated_audit: pass
 - local_audit: pass
 - reference_cluster: pass
-- origin_signature: fail
+- origin_signature: pass
 
 ## Full origin text
 
