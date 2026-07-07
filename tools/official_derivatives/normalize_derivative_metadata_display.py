@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# trigger: 2026-07-07 metadata-display-normalization
 from pathlib import Path
 import re
 
