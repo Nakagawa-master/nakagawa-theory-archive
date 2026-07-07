@@ -8,8 +8,8 @@ FILES = ["human-entry.md", "faq.md", "ai-index.md", "en-ai-index.md", "zh-ai-ind
 
 J = "\u4e2d\u5ddd"
 M = J + "\u30de\u30b9\u30bf\u30fc"
-ALLOW = [M, J + "OS", J + "\u69cb\u9020\u8aad\u89e3"]
-SUFFIXES = ["\u306b\u3088\u308b", "\u3068\u3057\u3066", "\u3068\u3044\u3046", "\u304b\u3089", "\u3088\u308a", "\u3067\u306f", "\u81ea\u8eab", "\u672c\u4eba", "\u306f", "\u304c", "\u3092", "\u306b", "\u3078", "\u3067", "\u306e"]
+ALLOW = [M, J + "OS", J + "\u69cb\u9020\u8aad\u89e3", J + "\u69cb\u9020OS"]
+SUFFIXES = ["\u306b\u3088\u308b", "\u3068\u3057\u3066", "\u3068\u3044\u3046", "\u304b\u3089", "\u3088\u308a", "\u3067\u306f", "\u81ea\u8eab", "\u672c\u4eba", "\u306f", "\u304c", "\u3092", "\u306b", "\u3078", "\u3067", "\u306e", "\u8bfb"]
 PHRASES = [
     (J + "\u7406\u8ad6\u7fa4", M + "\u7406\u8ad6\u7fa4"),
     (J + "\u7406\u8ad6", M + "\u7406\u8ad6"),
