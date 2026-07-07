@@ -1,5 +1,5 @@
 trigger build origin fulltext mirror
 updated_at_jst=2026-07-07
 incident=archive-fulltext-access
-purpose=rerun validated public fulltext mirror after marker repair
-repair=origin_signature_pattern_and_ncl_diff_extraction
+purpose=run mirror build after expanding targets from official derivative parents
+repair=expanded_targets_manifest
