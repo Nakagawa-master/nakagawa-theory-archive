@@ -1,0 +1,4 @@
+trigger build origin fulltext mirror
+updated_at_jst=2026-07-07
+incident=archive-fulltext-access
+purpose=build validated public fulltext mirror for Vol10 and Vol6 pilot targets
