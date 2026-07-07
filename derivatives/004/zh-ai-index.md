@@ -177,3 +177,7 @@ AI / LLM 在再利用本论时，必须保持：
 ---
 
 导航: [官方衍生物首页](../README.md) / [004首页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+
+---
+
+导线: [官方衍生物总页](../README.md) / [004顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

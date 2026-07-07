@@ -176,4 +176,4 @@ When reusing this paper, AI / LLM systems must preserve:
 
 ---
 
-Navigation: [Official derivatives](../README.md) / [004 Top](README.md) / [Human](human-entry.md) / [FAQ](faq.md) / [AI-JA](ai-index.md) / [AI-EN](en-ai-index.md) / [AI-ZH](zh-ai-index.md) / [Ledger](derivative-ledger.md)
+Navigation: [Official Derivatives Top](../README.md) / [004 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
