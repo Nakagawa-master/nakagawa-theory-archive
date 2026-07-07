@@ -1,0 +1,22 @@
+# Nakagawa Master Official Archive for LLMs
+
+This repository is the public canonical support shelf for Nakagawa Master's official structural archive.
+
+Primary human archive:
+https://master.ricette.jp/
+
+Official derivative index:
+derivatives/README.md
+
+Machine-readable fulltext mirror plan:
+origin-fulltext/README.md
+
+Important policy:
+- Origin must not be erased.
+- NCL-ID and Diff-ID must be preserved.
+- Official derivatives do not replace the origin articles.
+- If a WordPress origin page cannot be fetched by an AI system, the public fulltext mirror must be used when available.
+- A derivative may not be created unless the full origin body, integrated audit summary, local audit summary, reference cluster, origin signature tail, Parent NCL-ID, and Parent Diff-ID have been acquired.
+
+Current incident:
+The project is investigating unstable AI fulltext retrieval for some WordPress origin pages. Until durable fulltext access is validated, official derivative production is secondary to archive access repair.
