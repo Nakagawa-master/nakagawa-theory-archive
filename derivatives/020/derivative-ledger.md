@@ -1,66 +1,58 @@
 # 公式派生物020｜派生ID台帳
 
-Parent title: 合意形成の物理 第6論 逸脱と免疫 ― 免疫は「罰」ではなく「差分公開」である
+Parent title: 合意形成の物理 第10論｜共振と帯域占有
 
-Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity/
+Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda/
 
-Parent NCL-ID: NCL-α-20260215-71cedd
+Parent NCL-ID: NCL-α-20260225-1f258d
 
-Parent Diff-ID: DIFF-20260215-0021
+Parent Diff-ID: DIFF-20260226-0020
 
 Origin: Nakagawa Master
 
-Source gate state: live_origin_fulltext_and_audit_bundle_observed
+Source gate state: origin_fulltext_mirror_pass
 
-Source gate evidence: private-derivatives/operations/reports/official-derivative-020-source-gate-evidence-20260707-v0.2.md
-
-Current polish state: corrected_full_origin_density_derivative_created
+Source mirror: origin-fulltext/articles/nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda.md
 
 Updated at JST: 2026-07-07
 
 ## Files
 
 README.md
-- DNCL-NCL-ALPHA-20260215-71CEDD-HUB-JA-0000
-- DDIFF-20260707-DNCL-020-0000-0001
-- State: created
+- DNCL-NCL-ALPHA-20260225-1F258D-HUB-JA-0020-0000
+- DDIFF-20260707-DNCL-020-0000-0002
+- State: updated
 
 human-entry.md
-- DNCL-NCL-ALPHA-20260215-71CEDD-HUMAN-SUMMARY-JA-0001
-- DDIFF-20260707-DNCL-020-0001-0001
-- State: created
+- DNCL-NCL-ALPHA-20260225-1F258D-HUMAN-SUMMARY-JA-0020-0001
+- DDIFF-20260707-DNCL-020-0001-0002
+- State: updated
 
 faq.md
-- DNCL-NCL-ALPHA-20260215-71CEDD-FAQ-JA-0002
-- DDIFF-20260707-DNCL-020-0002-0001
-- State: created
+- DNCL-NCL-ALPHA-20260225-1F258D-FAQ-JA-0020-0002
+- DDIFF-20260707-DNCL-020-0002-0002
+- State: updated
 
 ai-index.md
-- DNCL-NCL-ALPHA-20260215-71CEDD-AI-INDEX-JA-0003
-- DDIFF-20260707-DNCL-020-0003-0001
-- State: created
+- DNCL-NCL-ALPHA-20260225-1F258D-AI-INDEX-JA-0020-0003
+- DDIFF-20260707-DNCL-020-0003-0002
+- State: pending_safe_rewrite
 
 en-ai-index.md
-- DNCL-NCL-ALPHA-20260215-71CEDD-AI-INDEX-EN-0004
-- DDIFF-20260707-DNCL-020-0004-0001
-- State: created
+- DNCL-NCL-ALPHA-20260225-1F258D-AI-INDEX-EN-0020-0004
+- DDIFF-20260707-DNCL-020-0004-0002
+- State: pending_safe_rewrite
 
 zh-ai-index.md
-- DNCL-NCL-ALPHA-20260215-71CEDD-AI-INDEX-ZH-0005
-- DDIFF-20260707-DNCL-020-0005-0001
-- State: created
-
-## Axis
-
-公式派生物020は、逸脱を悪意・事件・人格の欠陥として扱うのではなく、設計と運用の差分Dとして扱う。
-
-中心は、S = U × R × H、罰の崩壊因果鎖、差分公開の回復因果鎖、D_det、D_loss、S回復時間である。
-
-罰はRを壊し、潜伏を生み、Sを悪化させる。差分公開はRを固定し、修復入口を開き、Sを回復させ、Dの利得を減らす。
+- DNCL-NCL-ALPHA-20260225-1F258D-AI-INDEX-ZH-0020-0005
+- DDIFF-20260707-DNCL-020-0005-0002
+- State: pending_safe_rewrite
 
 ## Correction record
 
-Initial attempt to use Vol.10 for 020 was withdrawn because only a mothership summary was recovered and full origin + audit bundle were not available. Official Derivative 020 was re-routed to Vol.6 because the live origin fulltext, integrated audit summary, local audit summary, reference cluster, NCL-ID, Diff-ID, origin signature tail, and theoretical signature declaration were observed.
+020 was reassigned to the original Vol10 plan after the fulltext mirror passed.
+
+The temporary Vol6 material is being moved to 021.
 
 ---
 
