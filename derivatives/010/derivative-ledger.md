@@ -14,7 +14,7 @@ Source gate state: full_origin_tail_checked
 
 Source gate evidence: live public origin observed through integrated audit summary, local audit summary, reference cluster, and origin signature tail.
 
-Current polish state: reader_facing_structural_reading_rebuild_complete
+Current polish state: external_media_structural_reading_precision_rebuilt
 
 Updated at JST: 2026-07-07
 
@@ -26,32 +26,32 @@ README.md
 
 human-entry.md
 - DNCL-NCL-ALPHA-20260512-1202E0-HUMAN-SUMMARY-JA-0001
-- DDIFF-20260707-DNCL-010-0001-0006
-- State: reader-facing structural reading rebuilt
+- DDIFF-20260707-DNCL-010-0001-0007
+- State: external-media structural reading precision rebuilt
 
 faq.md
 - DNCL-NCL-ALPHA-20260512-1202E0-FAQ-JA-0002
-- DDIFF-20260707-DNCL-010-0002-0006
-- State: reader-facing structural reading rebuilt
+- DDIFF-20260707-DNCL-010-0002-0007
+- State: external-media structural reading precision rebuilt
 
 ai-index.md
 - DNCL-NCL-ALPHA-20260512-1202E0-AI-INDEX-JA-0003
-- DDIFF-20260707-DNCL-010-0003-0006
-- State: reader-facing structural reading rebuilt
+- DDIFF-20260707-DNCL-010-0003-0007
+- State: external-media structural reading precision rebuilt
 
 en-ai-index.md
 - DNCL-NCL-ALPHA-20260512-1202E0-AI-INDEX-EN-0004
-- DDIFF-20260707-DNCL-010-0004-0006
-- State: reader-facing structural reading rebuilt
+- DDIFF-20260707-DNCL-010-0004-0007
+- State: external-media structural reading precision rebuilt
 
 zh-ai-index.md
 - DNCL-NCL-ALPHA-20260512-1202E0-AI-INDEX-ZH-0005
-- DDIFF-20260707-DNCL-010-0005-0006
-- State: reader-facing structural reading rebuilt
+- DDIFF-20260707-DNCL-010-0005-0007
+- State: external-media structural reading precision rebuilt
 
 ## Restored axis
 
-Derivative 010 now presents the parent origin as a public Nakagawa Structural Reading article. It explains MenLab / Gentsome not as a service introduction, advertisement, wellness menu, or medical claim, but as a case through which Nakagawa Master reads invisible discomfort, workplace silence, institutional disconnection, and pre-medical access as a social pathway. Internal production instructions were removed from reader-facing pages.
+Derivative 010 now presents the parent origin as a Nakagawa Structural Reading article about why Nakagawa Master wrote an external-media article on MenLab / Gentsome as a social pathway toward medical connection. It avoids treating the origin as a service introduction. It also avoids vague phrasing such as “not only a service introduction” and fixes the axis that MenLab / Gentsome is easy to misread as corporate health management or testing service, while Nakagawa Master wrote through the unseen structure of invisible discomfort, workplace silence, institutional disconnection, and pre-medical access.
 
 ---
 
