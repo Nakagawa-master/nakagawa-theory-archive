@@ -1,4 +1,5 @@
 trigger build origin fulltext mirror
 updated_at_jst=2026-07-07
 incident=archive-fulltext-access
-purpose=build validated public fulltext mirror for Vol10 and Vol6 pilot targets
+purpose=rerun validated public fulltext mirror after marker repair
+repair=origin_signature_pattern_and_ncl_diff_extraction
