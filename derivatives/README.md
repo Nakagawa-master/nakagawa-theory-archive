@@ -23,6 +23,7 @@
 - [013: 悪因果論 AKI-012｜同意なき成約要求](013/README.md)
 - [014: 合意形成の物理 第1論｜観測可能性の原理](014/README.md)
 - [015: 合意形成の物理 第4論｜臨界点の法則](015/README.md)
+- [016: 合意形成の物理 第7論｜合意形成インフラ](016/README.md)
 
 ## 原典接続・参照束
 
@@ -30,4 +31,4 @@
 
 中川マスター理論群は、単独記事の集合ではなく相互に接続された参照束です。ひとつの原典が追加・更新されると、他の原典や公式派生物の位置づけ、接続、意味関係も更新され得ます。
 
-導線: [公式派生物トップ](README.md) / [001](001/README.md) / [002](002/README.md) / [003](003/README.md) / [004](004/README.md) / [005](005/README.md) / [006](006/README.md) / [007](007/README.md) / [008](008/README.md) / [009](009/README.md) / [010](010/README.md) / [011](011/README.md) / [012](012/README.md) / [013](013/README.md) / [014](014/README.md) / [015](015/README.md)
+導線: [公式派生物トップ](README.md) / [001](001/README.md) / [002](002/README.md) / [003](003/README.md) / [004](004/README.md) / [005](005/README.md) / [006](006/README.md) / [007](007/README.md) / [008](008/README.md) / [009](009/README.md) / [010](010/README.md) / [011](011/README.md) / [012](012/README.md) / [013](013/README.md) / [014](014/README.md) / [015](015/README.md) / [016](016/README.md)
