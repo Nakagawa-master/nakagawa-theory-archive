@@ -1,3 +1,0 @@
-trigger expand origin fulltext targets
-updated_at_jst=2026-07-07
-purpose=expand fulltext mirror targets from existing official derivative parents
