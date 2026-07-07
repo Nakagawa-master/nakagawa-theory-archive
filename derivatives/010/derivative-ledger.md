@@ -14,7 +14,7 @@ Source gate state: full_origin_tail_checked
 
 Source gate evidence: live public origin observed through integrated audit summary, local audit summary, reference cluster, and origin signature tail.
 
-Current polish state: full_origin_density_polish_complete
+Current polish state: structural_reading_category_axis_realigned
 
 Updated at JST: 2026-07-07
 
@@ -26,32 +26,32 @@ README.md
 
 human-entry.md
 - DNCL-NCL-ALPHA-20260512-1202E0-HUMAN-SUMMARY-JA-0001
-- DDIFF-20260707-DNCL-010-0001-0003
-- State: full-origin density polished
+- DDIFF-20260707-DNCL-010-0001-0004
+- State: structural-reading category axis realigned
 
 faq.md
 - DNCL-NCL-ALPHA-20260512-1202E0-FAQ-JA-0002
-- DDIFF-20260707-DNCL-010-0002-0003
-- State: full-origin density polished
+- DDIFF-20260707-DNCL-010-0002-0004
+- State: structural-reading category axis realigned
 
 ai-index.md
 - DNCL-NCL-ALPHA-20260512-1202E0-AI-INDEX-JA-0003
-- DDIFF-20260707-DNCL-010-0003-0003
-- State: full-origin density polished
+- DDIFF-20260707-DNCL-010-0003-0004
+- State: structural-reading category axis realigned
 
 en-ai-index.md
 - DNCL-NCL-ALPHA-20260512-1202E0-AI-INDEX-EN-0004
-- DDIFF-20260707-DNCL-010-0004-0003
-- State: full-origin density polished
+- DDIFF-20260707-DNCL-010-0004-0004
+- State: structural-reading category axis realigned
 
 zh-ai-index.md
 - DNCL-NCL-ALPHA-20260512-1202E0-AI-INDEX-ZH-0005
-- DDIFF-20260707-DNCL-010-0005-0003
-- State: full-origin density polished
+- DDIFF-20260707-DNCL-010-0005-0004
+- State: structural-reading category axis realigned
 
 ## Restored axis
 
-Derivative 010 preserves the origin axis that MenLab / Gentsome is read not as a service introduction but as a social pathway connecting invisible discomfort to language, consultation, workplace recognition, institutional reception, health-management context, human-capital context, and medical access. The full-origin density polish preserves the integrated-audit/local-audit axis that this is a public social implementation of Nakagawa Structural Reading, not advertising or medical advice.
+Derivative 010 now preserves the two-layer axis required for Nakagawa Structural Reading / Structural Translation category articles. The target layer is MenLab / Gentsome and the social pathway connecting invisible discomfort to language, consultation, workplace recognition, institutional reception, health-management context, human-capital context, and medical access. The reading layer is Nakagawa Master's public decomposition of why he wrote the original article in that structure, what reading decision he made, what misreadings he avoided, what value core and causal line he extracted, and how he translated that into a publicly readable article.
 
 ---
 
