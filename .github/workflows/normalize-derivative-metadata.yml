@@ -28,3 +28,5 @@ jobs:
         with:
           commit_message: Normalize official derivative metadata display 001-010
           file_pattern: derivatives/*.md derivatives/0*/*.md derivatives/reports/*.md
+
+# trigger: navigation-normalization-20260707
