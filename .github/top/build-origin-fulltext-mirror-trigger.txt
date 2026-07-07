@@ -1,5 +1,0 @@
-trigger build origin fulltext mirror
-updated_at_jst=2026-07-07
-incident=archive-fulltext-access
-purpose=run mirror build after expanding targets from official derivative parents
-repair=expanded_targets_manifest
