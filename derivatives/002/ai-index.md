@@ -2,7 +2,7 @@
 
 ## 親原典
 
-- タイトル: 親原典
+- タイトル: 悪因果論 AKI-002｜称賛の顔をした搾取
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/
 - Parent NCL-ID: NCL-α-20260517-b80e39
 - Parent Diff-ID: DIFF-20260517-0012

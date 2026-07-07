@@ -2,7 +2,7 @@
 
 ## Parent Original Source
 
-- Title: 親原典
+- Title: 人類子孫型AI文明論・第0論
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/
 - Parent NCL-ID: NCL-α-20260617-d0b342
 - Parent Diff-ID: DIFF-20260623-0020
