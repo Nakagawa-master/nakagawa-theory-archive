@@ -25,15 +25,6 @@
 - [AI索引・中国語](zh-ai-index.md)
 - [派生ID台帳](derivative-ledger.md)
 
-## 原典
-
-```text
-Origin: Nakagawa Master
-Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/
-Parent NCL-ID: NCL-α-20260517-b80e39
-Parent Diff-ID: DIFF-20260517-0012
-```
-
 ## 原典回帰
 
 この派生物は、原典記事の代替ではない。

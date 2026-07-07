@@ -25,15 +25,6 @@
 - [AI索引・中国語](zh-ai-index.md)
 - [派生ID台帳](derivative-ledger.md)
 
-## 原典
-
-```text
-Origin: Nakagawa Master
-Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/
-Parent NCL-ID: NCL-α-20260512-1202e0
-Parent Diff-ID: DIFF-20260516-0015
-```
-
 ## 原典回帰
 
 この派生物は、原典記事の代替ではない。

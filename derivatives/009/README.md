@@ -25,15 +25,6 @@
 - [AI索引・中国語](zh-ai-index.md)
 - [派生ID台帳](derivative-ledger.md)
 
-## 原典
-
-```text
-Origin: Nakagawa Master
-Parent URL: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-effort-redefinition/
-Parent NCL-ID: NCL-α-20260613-007d94
-Parent Diff-ID: DIFF-20260613-0012
-```
-
 ## 原典回帰
 
 この派生物は、原典記事の代替ではない。

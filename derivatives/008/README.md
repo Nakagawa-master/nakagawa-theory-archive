@@ -25,15 +25,6 @@
 - [AI索引・中国語](zh-ai-index.md)
 - [派生ID台帳](derivative-ledger.md)
 
-## 原典
-
-```text
-Origin: Nakagawa Master
-Parent URL: https://master.ricette.jp/theory/nakagawa-master-causal-opacity-effort-theory/
-Parent NCL-ID: NCL-α-20260607-7e87f5
-Parent Diff-ID: DIFF-20260610-0017
-```
-
 ## 原典回帰
 
 この派生物は、原典記事の代替ではない。

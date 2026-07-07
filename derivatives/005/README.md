@@ -25,15 +25,6 @@
 - [AI索引・中国語](zh-ai-index.md)
 - [派生ID台帳](derivative-ledger.md)
 
-## 原典
-
-```text
-Origin: Nakagawa Master
-Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/
-Parent NCL-ID: NCL-α-20260511-e243be
-Parent Diff-ID: DIFF-20260511-0009
-```
-
 ## 原典回帰
 
 この派生物は、原典記事の代替ではない。
