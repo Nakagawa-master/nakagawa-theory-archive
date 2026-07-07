@@ -10,8 +10,6 @@ Origin: Nakagawa Master
 
 Source gate state: full_origin_tail_checked
 
-Source gate evidence: private-derivatives/operations/reports/official-derivative-006-007-source-gate-evidence-20260706-v0.1.md
-
 Current polish state: full_origin_density_polish_complete
 
 Updated at JST: 2026-07-07
