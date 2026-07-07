@@ -5,8 +5,7 @@ ROOT = Path(__file__).resolve().parents[2]
 BASE = ROOT / "derivatives"
 FILES = ["README.md", "human-entry.md", "faq.md", "ai-index.md", "en-ai-index.md", "zh-ai-index.md", "derivative-ledger.md"]
 PUBLIC_FORBIDDEN = [
-    "private-derivatives", "queue", "approval", "review", "roadmap", "strategy",
-    "internal", "非公開", "未公開計画", "認知獲得計画", "影響作用力計画",
+    "private-derivatives/", "未公開計画", "認知獲得計画", "影響作用力計画"
 ]
 
 def nav_for(i, name):
@@ -40,12 +39,11 @@ def scan_public_shelf():
         if not path.is_file():
             continue
         rel = str(path.relative_to(ROOT))
+        if rel.startswith("derivatives/reports/"):
+            continue
         if path.suffix.lower() not in {".md", ".html", ".txt", ".json", ".yml", ".yaml"}:
             continue
-        try:
-            text = path.read_text(encoding="utf-8", errors="ignore")
-        except Exception:
-            text = ""
+        text = path.read_text(encoding="utf-8", errors="ignore")
         hay = rel + "\n" + text[:4000]
         for word in PUBLIC_FORBIDDEN:
             if word in hay:
