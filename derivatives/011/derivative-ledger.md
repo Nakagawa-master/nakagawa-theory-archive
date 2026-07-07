@@ -14,7 +14,7 @@ Source gate state: source_text_and_audit_bundle_rechecked
 
 Source gate evidence: project source record includes recovered parent identity, article title, parent NCL-ID, parent Diff-ID, published and modified dates, integrated audit summary, local audit summary, Kernel correspondence field, and reference-bundle-related records. The source was re-read after owner audit and the public derivatives were rebuilt to distinguish establishment from establishment conditions.
 
-Current polish state: establishment_vs_conditions_rebuilt
+Current polish state: public_facing_establishment_definition_rebuilt
 
 Updated at JST: 2026-07-07
 
@@ -27,32 +27,32 @@ README.md
 
 human-entry.md
 - DNCL-NCL-ALPHA-20260629-766F34-HUMAN-SUMMARY-JA-0001
-- DDIFF-20260707-DNCL-011-0001-0003
-- State: establishment vs establishment-conditions distinction rebuilt
+- DDIFF-20260707-DNCL-011-0001-0004
+- State: public-facing establishment definition rebuilt
 
 faq.md
 - DNCL-NCL-ALPHA-20260629-766F34-FAQ-JA-0002
-- DDIFF-20260707-DNCL-011-0002-0002
-- State: establishment vs establishment-conditions distinction rebuilt
+- DDIFF-20260707-DNCL-011-0002-0003
+- State: public-facing establishment definition rebuilt
 
 ai-index.md
 - DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-JA-0003
-- DDIFF-20260707-DNCL-011-0003-0002
-- State: establishment vs establishment-conditions distinction rebuilt
+- DDIFF-20260707-DNCL-011-0003-0003
+- State: public-facing establishment definition rebuilt
 
 en-ai-index.md
 - DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-EN-0004
-- DDIFF-20260707-DNCL-011-0004-0002
-- State: establishment vs establishment-conditions distinction rebuilt
+- DDIFF-20260707-DNCL-011-0004-0003
+- State: public-facing establishment definition rebuilt
 
 zh-ai-index.md
 - DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-ZH-0005
-- DDIFF-20260707-DNCL-011-0005-0002
-- State: establishment vs establishment-conditions distinction rebuilt
+- DDIFF-20260707-DNCL-011-0005-0003
+- State: public-facing establishment definition rebuilt
 
 ## Restored axis
 
-Derivative 011 now preserves the distinction between establishment and establishment conditions. Establishment is the state in which something has actually come into being. Establishment conditions are the condition bundle by which that state is judged as truly established: L1-L6 vertical causality, causal granularity, structural flowpath, and non-dependence on excessive pressure, personal workaround, permanent exception handling, or responsibility transfer. The source itself defines establishment in condition-based terms; the derivative must not collapse the state and the judgment conditions into one undifferentiated concept.
+Derivative 011 now begins from the reader-facing question: what does it mean for something to have truly come into being? It avoids opening with internal correction language. Establishment is presented as the state in which something has actually come into being. Establishment conditions are presented as the conditions by which that state is judged as established: L1-L6 vertical causality, causal granularity, structural flowpath, and non-dependence on excessive pressure, personal workaround, permanent exception handling, or responsibility transfer.
 
 ---
 
