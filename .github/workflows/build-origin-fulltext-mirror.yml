@@ -1,0 +1,28 @@
+name: build origin fulltext mirror
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'tools/origin_fulltext/build_origin_fulltext_mirror.py'
+      - 'origin-fulltext/origin-fulltext-targets.json'
+      - '.github/workflows/build-origin-fulltext-mirror.yml'
+      - '.github/top/build-origin-fulltext-mirror-trigger.txt'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build origin fulltext mirror
+        run: python3 tools/origin_fulltext/build_origin_fulltext_mirror.py
+      - name: Commit mirror outputs
+        run: |
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add origin-fulltext/manifest.json origin-fulltext/origin-fulltext-build-report.json origin-fulltext/articles || true
+          git commit -m record-origin-fulltext-mirror-build || true
+          git push || true
