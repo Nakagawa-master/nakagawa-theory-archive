@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# trigger: 2026-07-07 metadata-title-repair
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
