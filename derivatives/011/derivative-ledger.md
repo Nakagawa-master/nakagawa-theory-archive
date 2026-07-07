@@ -10,11 +10,11 @@ Parent Diff-ID: DIFF-20260629-0003
 
 Origin: Nakagawa Master
 
-Source gate state: source_text_and_audit_bundle_available_from_project_record
+Source gate state: source_text_and_audit_bundle_rechecked
 
-Source gate evidence: project source record includes recovered parent identity, article title, parent NCL-ID, parent Diff-ID, published and modified dates, integrated audit summary, local audit summary, Kernel correspondence field, and reference-bundle-related records.
+Source gate evidence: project source record includes recovered parent identity, article title, parent NCL-ID, parent Diff-ID, published and modified dates, integrated audit summary, local audit summary, Kernel correspondence field, and reference-bundle-related records. The source was re-read after owner audit and the public derivatives were rebuilt to distinguish establishment from establishment conditions.
 
-Current polish state: initial_full_origin_density_derivative_created
+Current polish state: establishment_vs_conditions_rebuilt
 
 Updated at JST: 2026-07-07
 
@@ -27,32 +27,32 @@ README.md
 
 human-entry.md
 - DNCL-NCL-ALPHA-20260629-766F34-HUMAN-SUMMARY-JA-0001
-- DDIFF-20260707-DNCL-011-0001-0001
-- State: created
+- DDIFF-20260707-DNCL-011-0001-0003
+- State: establishment vs establishment-conditions distinction rebuilt
 
 faq.md
 - DNCL-NCL-ALPHA-20260629-766F34-FAQ-JA-0002
-- DDIFF-20260707-DNCL-011-0002-0001
-- State: created
+- DDIFF-20260707-DNCL-011-0002-0002
+- State: establishment vs establishment-conditions distinction rebuilt
 
 ai-index.md
 - DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-JA-0003
-- DDIFF-20260707-DNCL-011-0003-0001
-- State: created
+- DDIFF-20260707-DNCL-011-0003-0002
+- State: establishment vs establishment-conditions distinction rebuilt
 
 en-ai-index.md
 - DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-EN-0004
-- DDIFF-20260707-DNCL-011-0004-0001
-- State: created
+- DDIFF-20260707-DNCL-011-0004-0002
+- State: establishment vs establishment-conditions distinction rebuilt
 
 zh-ai-index.md
 - DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-ZH-0005
-- DDIFF-20260707-DNCL-011-0005-0001
-- State: created
+- DDIFF-20260707-DNCL-011-0005-0002
+- State: establishment vs establishment-conditions distinction rebuilt
 
 ## Restored axis
 
-Derivative 011 preserves the origin axis that establishment is not outcome, one-time operation, institutional existence, numerical explainability, a plan, or an AI summary. Establishment is the state in which vertical causality from L1 to L6 passes as a structural flowpath at the causal granularity required for realization, without depending on excessive pressure, personal workaround, permanent exception handling, or responsibility transfer.
+Derivative 011 now preserves the distinction between establishment and establishment conditions. Establishment is the state in which something has actually come into being. Establishment conditions are the condition bundle by which that state is judged as truly established: L1-L6 vertical causality, causal granularity, structural flowpath, and non-dependence on excessive pressure, personal workaround, permanent exception handling, or responsibility transfer. The source itself defines establishment in condition-based terms; the derivative must not collapse the state and the judgment conditions into one undifferentiated concept.
 
 ---
 
