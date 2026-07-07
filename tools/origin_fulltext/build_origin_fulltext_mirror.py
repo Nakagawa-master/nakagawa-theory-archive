@@ -23,15 +23,15 @@ TARGETS = ROOT / "origin-fulltext" / "origin-fulltext-targets.json"
 OUT_DIR = ROOT / "origin-fulltext" / "articles"
 REPORT = ROOT / "origin-fulltext" / "origin-fulltext-build-report.json"
 MANIFEST = ROOT / "origin-fulltext" / "manifest.json"
-USER_AGENT = "NakagawaOriginFulltextMirror/1.0"
+USER_AGENT = "NakagawaOriginFulltextMirror/1.1"
 
-REQUIRED_MARKERS = {
-    "ncl": "NCL-",
-    "diff": "DIFF-",
-    "integrated_audit": "統合監査要旨",
-    "local_audit": "局所監査要旨",
-    "reference_cluster": "参照束",
-    "origin_signature": "Origin:",
+REQUIRED_MARKER_PATTERNS = {
+    "ncl": r"NCL-ID[^\n]*NCL-|NCL-α-|NCL-A-",
+    "diff": r"Diff-ID[^\n]*DIFF-|DIFF-",
+    "integrated_audit": r"統合監査要旨",
+    "local_audit": r"局所監査要旨",
+    "reference_cluster": r"参照束",
+    "origin_signature": r"中川マスター|Nakagawa Master|Origin Handling|起源情報",
 }
 
 
@@ -97,23 +97,46 @@ def extract_from_html(raw: bytes, charset: str) -> str:
 
 
 def marker_state(text: str) -> Dict[str, bool]:
-    return {key: marker in text for key, marker in REQUIRED_MARKERS.items()}
+    return {key: re.search(pattern, text, flags=re.I) is not None for key, pattern in REQUIRED_MARKER_PATTERNS.items()}
 
 
-def first_match(pattern: str, text: str) -> str:
-    m = re.search(pattern, text)
+def extract_ncl(text: str) -> str:
+    patterns = [
+        r"NCL-ID（構造起源ID）[:：]\s*(NCL-[^\s\n]+)",
+        r"NCL-ID \(Origin Identifier\)[:：]\s*(NCL-[^\s\n]+)",
+        r"NCL-ID[:：]\s*(NCL-[^\s\n]+)",
+    ]
+    for pattern in patterns:
+        m = re.search(pattern, text)
+        if m:
+            return m.group(1).strip()
+    m = re.search(r"(NCL-[A-Za-z0-9_α-ωΑ-Ω-]+)", text)
     return m.group(1).strip() if m else ""
 
 
-def build_markdown(target: Dict[str, Any], text: str, meta: Dict[str, Any], markers: Dict[str, bool]) -> str:
-    ncl = first_match(r"(NCL[-A-Za-z0-9_α-ωΑ-Ωぁ-んァ-ヶ一-龠・ー]+)", text)
-    diff = first_match(r"(DIFF[-A-Za-z0-9_]+)", text)
+def extract_diff(text: str) -> str:
+    patterns = [
+        r"Diff-ID（差分ID）[:：]\s*(DIFF-[^\s\n]+)",
+        r"Diff-ID \(Difference Identifier\)[:：]\s*(DIFF-[^\s\n]+)",
+        r"Diff-ID[:：]\s*(DIFF-[^\s\n]+)",
+    ]
+    for pattern in patterns:
+        m = re.search(pattern, text)
+        if m:
+            return m.group(1).strip()
+    m = re.search(r"(DIFF-[A-Za-z0-9_-]+)", text)
+    return m.group(1).strip() if m else ""
+
+
+def build_markdown(target: Dict[str, Any], text: str, meta: Dict[str, Any], markers: Dict[str, bool], is_valid: bool) -> str:
+    ncl = extract_ncl(text)
+    diff = extract_diff(text)
     lines = [
         "# " + target["title"],
         "",
         "canonical_origin_url: " + target["canonical_url"],
         "source_acquisition_method: wordpress_rest_then_html_fallback",
-        "validation_state: " + ("pass" if all(markers.values()) else "blocked"),
+        "validation_state: " + ("pass" if is_valid else "blocked"),
         "ncl_id_observed: " + (ncl or "not_observed"),
         "diff_id_observed: " + (diff or "not_observed"),
         "modified: " + str(meta.get("modified") or "not_observed"),
@@ -143,7 +166,9 @@ def main() -> int:
         text = rest_text if len(rest_text) >= len(html_text) else html_text
         source_route = "rest" if text == rest_text else "html"
         markers = marker_state(text)
-        is_valid = all(markers.values()) and len(text) > 10000
+        ncl = extract_ncl(text)
+        diff = extract_diff(text)
+        is_valid = all(markers.values()) and bool(ncl) and bool(diff) and len(text) > 10000
         mirror_path = OUT_DIR / f"{slug}.md"
         meta["source_route"] = source_route
         meta["html_status"] = html_status
@@ -152,7 +177,7 @@ def main() -> int:
         meta["rest_bytes"] = len(rest_body)
         meta["text_chars"] = len(text)
         meta["validated_at"] = now
-        md = build_markdown(target, text, meta, markers)
+        md = build_markdown(target, text, meta, markers, is_valid)
         mirror_path.write_text(md, encoding="utf-8")
         item = {
             "slug": slug,
@@ -161,8 +186,10 @@ def main() -> int:
             "mirror_file_path": str(mirror_path.relative_to(ROOT)),
             "fulltext_status": "pass" if is_valid else "blocked",
             "audit_bundle_status": "pass" if markers.get("integrated_audit") and markers.get("local_audit") and markers.get("reference_cluster") else "blocked",
-            "ncl_status": "pass" if markers.get("ncl") else "blocked",
-            "diff_status": "pass" if markers.get("diff") else "blocked",
+            "ncl_id": ncl or "not_observed",
+            "diff_id": diff or "not_observed",
+            "ncl_status": "pass" if ncl else "blocked",
+            "diff_status": "pass" if diff else "blocked",
             "source_route": source_route,
             "text_chars": len(text),
             "html_status": html_status,
