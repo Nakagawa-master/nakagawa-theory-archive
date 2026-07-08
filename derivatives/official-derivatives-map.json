@@ -1,0 +1,29 @@
+{
+  "version": "public-official-derivatives-map-v1",
+  "updated_jst": "2026-07-08",
+  "source": "Nakagawa-master/nakagawa-theory-archive/derivatives/official-derivatives-map.json",
+  "entries": [
+    {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
+    {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
+    {"number":"003","ncl_id":"NCL-α-20260627-aea14a","origin_slug":"nakagawa-master-why-establishment-conditions-theory-is-necessary","title":"成立条件論・第0論｜誰も全体を見ていない社会","derivative_dir":"derivatives/003","status":"active"},
+    {"number":"004","ncl_id":"NCL-α-20260617-d0b342","origin_slug":"nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory","title":"人類子孫型AI文明論・第0論","derivative_dir":"derivatives/004","status":"active"},
+    {"number":"005","ncl_id":"NCL-α-20260511-e243be","origin_slug":"nakagawa-master-aki-001-irresponsible-problem-raising","title":"AKI-001｜責任なき問題提起","derivative_dir":"derivatives/005","status":"active"},
+    {"number":"006","ncl_id":"NCL-α-20260416-0b1b93","origin_slug":"nakagawa-master-civilizational-sovereignty-shift-01","title":"文明主権移行論 第1論","derivative_dir":"derivatives/006","status":"active"},
+    {"number":"007","ncl_id":"NCL-α-20260418-11c3d8","origin_slug":"nakagawa-master-civilizational-sovereignty-shift-02","title":"文明主権移行論 第2論｜知的非対称と文明更新能力","derivative_dir":"derivatives/007","status":"active"},
+    {"number":"008","ncl_id":"NCL-α-20260607-7e87f5","origin_slug":"nakagawa-master-causal-opacity-effort-theory","title":"未来定義検証型努力論 第1論｜因果不透明性依存型努力論の限界","derivative_dir":"derivatives/008","status":"active"},
+    {"number":"009","ncl_id":"NCL-α-20260613-007d94","origin_slug":"","title":"未来定義検証型努力論 第2論｜未来定義検証なき努力強制と責任転嫁装置化","derivative_dir":"derivatives/009","status":"active"},
+    {"number":"010","ncl_id":"NCL-α-20260512-1202e0","origin_slug":"nakagawa-master-menlab-gentsome-structural-reading-social-pathway","title":"中川構造読解｜MenLab / Gentsomeを医療に至る社会導線として読む","derivative_dir":"derivatives/010","status":"active"},
+    {"number":"011","ncl_id":"NCL-α-20260629-766f34","origin_slug":"nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment","title":"成立条件論・第1論｜成立とは何か","derivative_dir":"derivatives/011","status":"active"},
+    {"number":"012","ncl_id":"NCL-α-20260517-fe6641","origin_slug":"nakagawa-master-aki-011-recognition-pollution-by-performance-of-understanding","title":"悪因果論 AKI-011｜理解演出による認識汚染","derivative_dir":"derivatives/012","status":"active"},
+    {"number":"013","ncl_id":"NCL-α-20260518-f38a1e","origin_slug":"nakagawa-master-aki-012-consentless-closing-demand","title":"悪因果論 AKI-012｜同意なき成約要求","derivative_dir":"derivatives/013","status":"active"},
+    {"number":"014","ncl_id":"NCL-α-20260211-051ce0","origin_slug":"nakagawa-master-physics-of-consensus-vol1-principle-of-observability","title":"合意形成の物理 第1論｜観測可能性の原理","derivative_dir":"derivatives/014","status":"active"},
+    {"number":"015","ncl_id":"NCL-α-20260214-40c1de","origin_slug":"nakagawa-master-physics-of-consensus-vol4-law-of-critical-point","title":"合意形成の物理 第4論｜臨界点の法則","derivative_dir":"derivatives/015","status":"active"},
+    {"number":"016","ncl_id":"NCL-α-20260215-198686","origin_slug":"nakagawa-master-physics-of-consensus-vol7-infrastructure-of-governance","title":"合意形成の物理 第7論｜合意形成インフラ","derivative_dir":"derivatives/016","status":"active"},
+    {"number":"017","ncl_id":"NCL-α-20260227-4ecc69","origin_slug":"nakagawa-master-physics-of-consensus-vol12-runtime-governance","title":"合意形成の物理 第12論｜実行時ガバナンスと再起動プロトコル","derivative_dir":"derivatives/017","status":"active"},
+    {"number":"018","ncl_id":"NCL-α-20260222-482bdb","origin_slug":"nakagawa-master-physics-of-consensus-vol8-external-interference-physics","title":"合意形成の物理 第8論｜外部干渉の物理","derivative_dir":"derivatives/018","status":"active"},
+    {"number":"019","ncl_id":"NCL-α-20260223-e7e1c4","origin_slug":"nakagawa-master-physics-of-consensus-vol9-cognitive-hacking-defense-os","title":"合意形成の物理 第9論｜認知ハック防御OS","derivative_dir":"derivatives/019","status":"active"},
+    {"number":"020","ncl_id":"NCL-α-20260225-1f258d","origin_slug":"nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda","title":"合意形成の物理 第10論｜共振と帯域占有","derivative_dir":"derivatives/020","status":"active"},
+    {"number":"021","ncl_id":"NCL-α-20260215-71cedd","origin_slug":"nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity","title":"合意形成の物理 第6論｜逸脱と免疫","derivative_dir":"derivatives/021","status":"active"},
+    {"number":"022","ncl_id":"NCL-α-20260618-c2d11b","origin_slug":"nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss","title":"悪因果論 AKI-014｜構造把握ごっこ","derivative_dir":"derivatives/022","status":"active"}
+  ]
+}
