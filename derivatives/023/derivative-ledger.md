@@ -14,7 +14,7 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-HUB-JA-0023-0000
-- derivative_diff_id: DDIFF-20260708-DNCL-023-0000-0001
+- derivative_diff_id: DDIFF-20260708-DNCL-023-0000-0002
 
 Updated at JST: 2026-07-08
 
@@ -26,7 +26,7 @@ Updated at JST: 2026-07-08
 - ai-index.md: created / header_fixed / footer_normalized
 - en-ai-index.md: created / header_fixed / footer_normalized
 - zh-ai-index.md: created / header_fixed / footer_normalized
-- derivative-ledger.md: created / header_fixed / footer_normalized
+- derivative-ledger.md: created / header_fixed / footer_normalized / map_state_updated
 
 ## Child derivative IDs
 
@@ -50,7 +50,7 @@ Updated at JST: 2026-07-08
 ## Current publication state
 
 - public derivative files: created in GitHub public archive repo
-- WordPress JSON row: to be added in private tools source map
+- WordPress JSON row: added in private tools source map
 - live origin backlink: not yet verified
 
 ## Correction / boundary record
