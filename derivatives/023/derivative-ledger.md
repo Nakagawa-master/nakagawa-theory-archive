@@ -14,19 +14,19 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-HUB-JA-0023-0000
-- derivative_diff_id: DDIFF-20260708-DNCL-023-0000-0002
+- derivative_diff_id: DDIFF-20260708-DNCL-023-0000-0003
 
 Updated at JST: 2026-07-08
 
 ## Files
 
-- README.md: created
-- human-entry.md: created / header_fixed / footer_normalized
-- faq.md: created / three_layer_structure / footer_normalized
-- ai-index.md: created / header_fixed / footer_normalized
-- en-ai-index.md: created / header_fixed / footer_normalized
-- zh-ai-index.md: created / header_fixed / footer_normalized
-- derivative-ledger.md: created / header_fixed / footer_normalized / map_state_updated
+- README.md: created / meta_axis_corrected
+- human-entry.md: created / header_fixed / footer_normalized / meta_axis_corrected
+- faq.md: created / three_layer_structure / footer_normalized / meta_axis_corrected
+- ai-index.md: created / header_fixed / footer_normalized / meta_axis_corrected
+- en-ai-index.md: created / header_fixed / footer_normalized / meta_axis_corrected
+- zh-ai-index.md: created / header_fixed / footer_normalized / meta_axis_corrected
+- derivative-ledger.md: created / header_fixed / footer_normalized / map_state_updated / correction_logged
 
 ## Child derivative IDs
 
@@ -51,7 +51,7 @@ Updated at JST: 2026-07-08
 
 - public derivative files: created in GitHub public archive repo
 - WordPress JSON row: added in private tools source map
-- live origin backlink: not yet verified
+- live origin backlink: owner reported visible before this axis correction
 
 ## Correction / boundary record
 
@@ -60,6 +60,7 @@ Updated at JST: 2026-07-08
 - Funds identity evidence was requalified against current 001-022 map before generation.
 - Public files do not contain private operation history, source gate mechanics, token details, or internal route details.
 - Text avoids financial product recommendation, safety guarantee, company official statement language, and production backstory.
+- 2026-07-08 correction: user detected a subtle axis drift. Initial OD023 copy over-centered Funds / repair reserve fund operation itself. Corrected to match OD010 structural-reading precedent: the parent origin is about why Nakagawa Master wrote the external media article through the community-fund-defense angle, not merely about Funds itself.
 
 ---
 
