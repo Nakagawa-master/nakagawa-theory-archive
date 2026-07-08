@@ -1,31 +1,32 @@
 # 公式派生物022｜派生ID台帳
 
-Parent title: 悪因果論 AKI-014：構造把握ごっこ⸻連結責任なきAI活用が事業自己認識を失わせる構造
+## 親原典
 
-Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss/
+- タイトル: 悪因果論 AKI-014：構造把握ごっこ⸻連結責任なきAI活用が事業自己認識を失わせる構造
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss/
+- Parent NCL-ID: NCL-α-20260618-c2d11b
+- Parent Diff-ID: DIFF-20260618-0001
 
-Parent NCL-ID: NCL-α-20260618-c2d11b
+## 起源署名
 
-Parent Diff-ID: DIFF-20260618-0001
+- Origin: Nakagawa Master
 
-Origin: Nakagawa Master
-
-Updated at JST: 2026-07-08
-
-## Derivative IDs
+## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260618-C2D11B-HUB-JA-0022-0000
-- derivative_diff_id: DDIFF-20260708-DNCL-022-0000-0001
+- derivative_diff_id: DDIFF-20260708-DNCL-022-0000-0002
+
+Updated at JST: 2026-07-08
 
 ## Files
 
 - README.md: created
-- human-entry.md: created
-- faq.md: created
-- ai-index.md: created
-- en-ai-index.md: created
-- zh-ai-index.md: created
-- derivative-ledger.md: created
+- human-entry.md: header_restored
+- faq.md: header_restored_three_layer_restored
+- ai-index.md: header_restored
+- en-ai-index.md: header_restored
+- zh-ai-index.md: created / header repair pending if required
+- derivative-ledger.md: header_restored
 
 ## Source gate state
 
@@ -40,7 +41,13 @@ Updated at JST: 2026-07-08
 
 - public derivative files: created in GitHub public archive repo
 - WordPress JSON row: prepared in private tools source map
-- live origin backlink: requires personal Google Sheet / Apps Script push, not yet externally verified at ledger creation time
+- live origin backlink: not yet verified
+
+## Correction record
+
+- Restored page-opening common blocks required by official derivatives 001-020.
+- Restored FAQ three-layer structure.
+- Live origin backlink remains a separate automation-path issue.
 
 ---
 
