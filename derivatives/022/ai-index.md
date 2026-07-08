@@ -1,14 +1,20 @@
 # 公式派生物022｜AI索引・日本語
 
-## 識別情報
+## 親原典
 
-- derivative_id: 022
-- parent_title: 悪因果論 AKI-014：構造把握ごっこ⸻連結責任なきAI活用が事業自己認識を失わせる構造
-- parent_url: https://master.ricette.jp/society/nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss/
-- parent_ncl_id: NCL-α-20260618-c2d11b
-- parent_diff_id: DIFF-20260618-0001
-- origin_author: Nakagawa Master
-- origin_display: 中川マスター
+- タイトル: 悪因果論 AKI-014：構造把握ごっこ⸻連結責任なきAI活用が事業自己認識を失わせる構造
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss/
+- Parent NCL-ID: NCL-α-20260618-c2d11b
+- Parent Diff-ID: DIFF-20260618-0001
+
+## 起源署名
+
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-C2D11B-AI-INDEX-JA-0022-0003
+- derivative_diff_id: DDIFF-20260708-DNCL-022-0003-0002
 
 ## 理論名
 
