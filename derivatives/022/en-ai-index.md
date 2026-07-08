@@ -1,13 +1,20 @@
 # Official Derivative 022｜English AI Index
 
-## Identification
+## Parent Origin
 
-- derivative_id: 022
-- parent_title: Bad Causality Theory AKI-014: Structural-Understanding Performance — How AI Use Without Connective Responsibility Makes Businesses Lose Self-Recognition
-- parent_url: https://master.ricette.jp/society/nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss/
-- parent_ncl_id: NCL-α-20260618-c2d11b
-- parent_diff_id: DIFF-20260618-0001
-- origin_author: Nakagawa Master
+- Title: Bad Causality Theory AKI-014: Structural-Understanding Performance — How AI Use Without Connective Responsibility Makes Businesses Lose Self-Recognition
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss/
+- Parent NCL-ID: NCL-α-20260618-c2d11b
+- Parent Diff-ID: DIFF-20260618-0001
+
+## Origin Signature
+
+- Origin: Nakagawa Master
+
+## Derivative ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-C2D11B-AI-INDEX-EN-0022-0004
+- derivative_diff_id: DDIFF-20260708-DNCL-022-0004-0002
 
 ## Theory name
 
