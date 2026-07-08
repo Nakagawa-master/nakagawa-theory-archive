@@ -21,12 +21,12 @@ Updated at JST: 2026-07-08
 ## Files
 
 - README.md: created
-- human-entry.md: header_restored
-- faq.md: header_restored_three_layer_restored
-- ai-index.md: header_restored
-- en-ai-index.md: header_restored
-- zh-ai-index.md: created / header repair pending if required
-- derivative-ledger.md: header_restored
+- human-entry.md: header_restored / footer_normalized
+- faq.md: header_restored / three_layer_restored / footer_normalized
+- ai-index.md: header_restored / footer_normalized
+- en-ai-index.md: header_restored / footer_normalized
+- zh-ai-index.md: header_restored / footer_normalized
+- derivative-ledger.md: header_restored / footer_normalized
 
 ## Source gate state
 
@@ -41,14 +41,15 @@ Updated at JST: 2026-07-08
 
 - public derivative files: created in GitHub public archive repo
 - WordPress JSON row: prepared in private tools source map
-- live origin backlink: not yet verified
+- live origin backlink: verified by owner before automation trigger installation
 
 ## Correction record
 
 - Restored page-opening common blocks required by official derivatives 001-020.
 - Restored FAQ three-layer structure.
-- Live origin backlink remains a separate automation-path issue.
+- Normalized footer navigation across all OD022 files.
+- Removed public derivative map from public archive after owner boundary correction.
 
 ---
 
-導線: [公式派生物トップ](../README.md) / [022トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [公式派生物トップ](../README.md) / [022トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
