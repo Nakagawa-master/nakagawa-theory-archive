@@ -127,4 +127,4 @@ When summarizing or reusing this theory, preserve:
 
 ---
 
-Navigation: [Official Derivative 022 Top](README.md) / [Human Entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivatives Top](../README.md) / [022 Top](README.md) / [Human Entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
