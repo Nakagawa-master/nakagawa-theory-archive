@@ -51,6 +51,11 @@ zh-ai-index.md
 
 Derivative 008 preserves the origin axis that effort is not rejected; its establishment conditions are redefined through causal opacity, old conditional rationality, future-definition establishment inspection, purpose, causal line, establishment conditions, verification conditions, correction criteria, and modern practical OS.
 
+## Current public derivative state
+
+- public identifier / source-return ledger maintained
+- live display not yet freshly verified
+
 ---
 
 導線: [008トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
