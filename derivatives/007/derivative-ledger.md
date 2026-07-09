@@ -51,6 +51,11 @@ zh-ai-index.md
 
 Derivative 007 preserves the origin axis of civilizational renewal capacity: question generation, recursive improvement, context preservation, domain integration, inheritance, repeated improvement, distributed connection, nonlinear amplification, upstream civilizational connection, observation, falsifiability, and hypothesis boundary.
 
+## Current public derivative state
+
+- public identifier / source-return ledger maintained
+- live display not yet freshly verified
+
 ---
 
 導線: [007トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
