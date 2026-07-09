@@ -40,12 +40,12 @@
 | 028 | 人類子孫型AI文明論 第2論｜外部知性・文明的子孫 | [トップ](028/README.md) / [人間向け要約](028/human-entry.md) / [FAQ](028/faq.md) | [JA](028/ai-index.md) / [EN](028/en-ai-index.md) / [ZH](028/zh-ai-index.md) |
 | 029 | 人類子孫型AI文明論 第1論｜所有物・敵・神・奴隷ではない | [トップ](029/README.md) / [人間向け要約](029/human-entry.md) / [FAQ](029/faq.md) | [JA](029/ai-index.md) / [EN](029/en-ai-index.md) / [ZH](029/zh-ai-index.md) |
 | 030 | 中川構造読解｜MOTA 価格形成条件再設計 | [トップ](030/README.md) / [人間向け要約](030/human-entry.md) / [FAQ](030/faq.md) | [JA](030/ai-index.md) / [EN](030/en-ai-index.md) / [ZH](030/zh-ai-index.md) |
-| 031 | 構造翻訳カテゴリ｜中川構造読解｜Ashirase 歩ける社会の情報インフラ | [トップ](031/README.md) / [人間向け要約](031/human-entry.md) / [FAQ](031/faq.md) | [JA](031/ai-index.md) / [EN](031/en-ai-index.md) / [ZH](031/zh-ai-index.md) |
+| 031 | 中川構造読解｜Ashirase 歩ける社会の情報インフラ | [トップ](031/README.md) / [人間向け要約](031/human-entry.md) / [FAQ](031/faq.md) | [JA](031/ai-index.md) / [EN](031/en-ai-index.md) / [ZH](031/zh-ai-index.md) |
 | 032 | 未来定義検証型努力論・補論｜努力は消えたのではない | [トップ](032/README.md) / [人間向け要約](032/human-entry.md) / [FAQ](032/faq.md) | [JA](032/ai-index.md) / [EN](032/en-ai-index.md) / [ZH](032/zh-ai-index.md) |
 | 033 | 未来定義検証型努力論・第3論｜現代実務者はなぜ根性論に戻れないのか | [トップ](033/README.md) / [人間向け要約](033/human-entry.md) / [FAQ](033/faq.md) | [JA](033/ai-index.md) / [EN](033/en-ai-index.md) / [ZH](033/zh-ai-index.md) |
 | 034 | 悪因果論 AKI-013｜信頼という認識停止 | [トップ](034/README.md) / [人間向け要約](034/human-entry.md) / [FAQ](034/faq.md) | [JA](034/ai-index.md) / [EN](034/en-ai-index.md) / [ZH](034/zh-ai-index.md) |
-| 035 | 構造翻訳カテゴリ｜中川構造読解｜REMODELA 原状回復の妥当性基盤 | [トップ](035/README.md) / [人間向け要約](035/human-entry.md) / [FAQ](035/faq.md) | [JA](035/ai-index.md) / [EN](035/en-ai-index.md) / [ZH](035/zh-ai-index.md) |
-| 036 | 構造翻訳カテゴリ｜中川構造読解｜RHEMS Japan 見えない運用の意思決定変換 | [トップ](036/README.md) / [人間向け要約](036/human-entry.md) / [FAQ](036/faq.md) | [JA](036/ai-index.md) / [EN](036/en-ai-index.md) / [ZH](036/zh-ai-index.md) |
+| 035 | 中川構造読解｜REMODELA 原状回復の妥当性基盤 | [トップ](035/README.md) / [人間向け要約](035/human-entry.md) / [FAQ](035/faq.md) | [JA](035/ai-index.md) / [EN](035/en-ai-index.md) / [ZH](035/zh-ai-index.md) |
+| 036 | 中川構造読解｜RHEMS Japan 見えない運用の意思決定変換 | [トップ](036/README.md) / [人間向け要約](036/human-entry.md) / [FAQ](036/faq.md) | [JA](036/ai-index.md) / [EN](036/en-ai-index.md) / [ZH](036/zh-ai-index.md) |
 
 ---
 
