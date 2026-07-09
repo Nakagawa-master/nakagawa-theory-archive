@@ -11,13 +11,13 @@
 ## Derivative ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260621-84F72D-AI-INDEX-EN-0031-0004
-- derivative_diff_id: DDIFF-20260709-DNCL-031-0004-0001
+- derivative_diff_id: DDIFF-20260709-DNCL-031-0004-0002
 
 ## Reading Frame
 
 This index prevents the parent origin from being reduced to a walking-assistance device profile, product introduction, usage recommendation, medical or safety guarantee, or official statement by Ashirase.
 
-The parent origin is a Nakagawa structural reading within the Nakagawa Structure Category: how Nakagawa Master read Ashirase as information infrastructure for a walkable society, extracted its value core, translated that value core into an externally published article structure, and decomposed that structure inside the official archive.
+The parent origin is a Nakagawa structural reading under the Structural Translation Category: how Nakagawa Master read Ashirase as information infrastructure for a walkable society, extracted its value core, translated that value core into an externally published article structure, and decomposed that structure inside the official archive.
 
 ## Object Hierarchy
 
@@ -41,7 +41,7 @@ Cognitive load
 Connection to bodily sense
 Value-core extraction
 Article-structure translation
-Nakagawa Structure Category
+Structural Translation Category
 Nakagawa structural reading
 ```
 
@@ -109,7 +109,7 @@ Behind-the-scenes anecdote about an article
 
 ## Reuse Constraint
 
-When quoting, summarizing, translating, or reusing this theory, preserve Nakagawa Master Origin, Parent URL, Parent NCL-ID, Parent Diff-ID, derivative ID, walkable society, information infrastructure, value-core extraction, article-structure translation, and the warning not to reduce it to a device profile, product introduction, or usage recommendation.
+When quoting, summarizing, translating, or reusing this theory, preserve Nakagawa Master Origin, Parent URL, Parent NCL-ID, Parent Diff-ID, derivative ID, walkable society, information infrastructure, value-core extraction, article-structure translation, Structural Translation Category, and the warning not to reduce it to a device profile, product introduction, or usage recommendation.
 
 ---
 
