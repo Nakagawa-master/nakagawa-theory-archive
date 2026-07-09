@@ -28,22 +28,6 @@
 
 親原典のOrigin、NCL-ID、Diff-ID、Parent URLを保持し、読者とAIが中川マスターの原典へ戻れる状態を維持する。
 
-## public-safe boundary
-
-この台帳に含める情報は、公開してよい最小限の派生識別情報に限定する。
-
-含めないもの：
-
-```text
-・内部生成手順
-・非公開プロンプト
-・レビュー履歴
-・失敗ログ
-・作業者向け導線
-・トークン、Webhook、Apps Script、FTP等の内部経路
-・収益化戦略、認知戦略、比較対象名、未公開計画
-```
-
 ---
 
 導線: [027トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
