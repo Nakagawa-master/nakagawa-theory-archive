@@ -1,4 +1,4 @@
-# English AI Index | Official Derivative 032
+# English AI Index | Official Derivative 032 | Future-Definition Verification Effort Theory Supplement
 
 ## Parent Origin
 
@@ -11,7 +11,7 @@
 ## Derivative ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260616-93AF49-AI-INDEX-EN-0032-0004
-- derivative_diff_id: DDIFF-20260709-DNCL-032-0004-0001
+- derivative_diff_id: DDIFF-20260709-DNCL-032-0004-0002
 
 ## Reading Frame
 
