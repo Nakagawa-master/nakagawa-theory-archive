@@ -28,6 +28,11 @@ Updated at JST: 2026-07-07
 
 Derivative 006 preserves the origin axis that the first paper of Civilizational Sovereignty Shift is not a generic AI-use article. It fixes the background condition that the Connection Transition Strategy may remain coherent while the human-side time window, institutional translation, co-creation theory, and coexistence design for monetary KPIs and connection KPIs are narrowing. The full-origin density polish preserves the separation between strategy content and strategy establishment conditions.
 
+## Current public derivative state
+
+- public identifier / source-return ledger maintained
+- live display not yet freshly verified
+
 ---
 
 導線: [006トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
