@@ -1,4 +1,4 @@
-# 公式派生物035｜構造翻訳カテゴリ｜中川構造読解｜REMODELA 原状回復の妥当性基盤
+# 公式派生物035｜中川構造読解｜REMODELA 原状回復の妥当性基盤
 
 ## 親原典
 
@@ -14,7 +14,7 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260610-9D1E58-HUB-JA-0035-0000
-- derivative_diff_id: DDIFF-20260709-DNCL-035-0000-0002
+- derivative_diff_id: DDIFF-20260709-DNCL-035-0000-0003
 
 ## 位置づけ
 
