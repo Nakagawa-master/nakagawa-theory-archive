@@ -14,10 +14,10 @@ Source gate state: live_origin_fulltext_observed
 
 ## Polish state
 
-Previous polish state: initial_derivative_created
+Previous polish state: public_safe_density_polish_applied_to_readme_human_entry_ai_index
 
 Current public derivative state:
-- public_safe_density_polish_applied_to_readme_human_entry_ai_index
+- public_safe_archive_network_wording_polish_applied_to_readme_and_ledger
 - live display not yet freshly verified
 
 Updated at JST: 2026-07-09
@@ -26,7 +26,7 @@ Updated at JST: 2026-07-09
 
 README.md
 - DNCL-AKI-011-HUB-JA-0000
-- DDIFF-20260707-DNCL-012-0000-0003
+- DDIFF-20260709-DNCL-012-0000-0004
 
 human-entry.md
 - DNCL-AKI-011-HUMAN-SUMMARY-JA-0001
@@ -53,6 +53,12 @@ zh-ai-index.md
 公式派生物012は、わかりやすさ自体ではなく、わかりやすさが問いを閉じる場合の認識固定を扱う。
 
 良い説明は問いを開き、悪い理解演出は問いを閉じる。
+
+## Archive network note
+
+公式派生物012は、親原典への公開接続面であり、原典本文を置き換えない。
+
+Parent URL / Parent NCL-ID / Parent Diff-ID / Origin / Derivative NCL-ID / Derivative Diff-ID を保持し、読者とAIを公式アーカイブ原典群へ戻すために管理する。
 
 ---
 
