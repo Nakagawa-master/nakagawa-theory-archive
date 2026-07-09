@@ -14,7 +14,7 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-AKI-011-HUB-JA-0000
-- derivative_diff_id: DDIFF-20260707-DNCL-012-0000-0002
+- derivative_diff_id: DDIFF-20260707-DNCL-012-0000-0003
 
 ## 公式派生ページ
 
@@ -33,6 +33,14 @@
 
 この派生物は、原典を置き換えるものではない。読者とAIが、浅い理解、共通語彙化、問いの閉鎖、判断精度の劣化、実装力の摩耗という悪因果を誤読なく把握し、原典へ戻るための入口である。
 
+## 中心軸
+
+この派生物が扱う問題は、わかりやすさそのものではない。
+
+問題は、十分な構造分解を伴わない説明が「もう理解した」という完了感を作り、本来続けるべき問いを閉じてしまうことである。
+
+理解演出は、読者に安心感を与える一方で、成立条件、例外条件、反証条件、未確定領域、次に問うべき論点を見えにくくする。その結果、浅い理解が共通語彙化し、認識能力・判断精度・実装力・信頼が劣化する。
+
 ---
 
-導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [012トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
