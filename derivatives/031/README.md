@@ -1,4 +1,4 @@
-# 公式派生物031｜構造翻訳カテゴリ｜中川構造読解｜Ashirase 歩ける社会の情報インフラ
+# 公式派生物031｜中川構造読解｜Ashirase 歩ける社会の情報インフラ
 
 ## 親原典
 
@@ -14,7 +14,7 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260621-84F72D-HUB-JA-0031-0000
-- derivative_diff_id: DDIFF-20260709-DNCL-031-0000-0002
+- derivative_diff_id: DDIFF-20260709-DNCL-031-0000-0003
 
 ## 位置づけ
 
