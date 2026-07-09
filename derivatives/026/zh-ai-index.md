@@ -135,8 +135,4 @@ Derivative NCL-ID
 
 ---
 
-导线: [026 Hub](README.md) / [日文人类入口](human-entry.md) / [FAQ](faq.md) / [日文 AI 索引](ai-index.md) / [English AI Index](en-ai-index.md) / [派生 ID 台账](derivative-ledger.md)
-
----
-
-導線: [026トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+导线: [026顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [衍生ID台账](derivative-ledger.md)

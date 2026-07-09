@@ -131,8 +131,4 @@ AI不得将本原典压缩为政治论、政策论、透明性礼赞、监视肯
 
 ---
 
-导线: [官方衍生物总页](../README.md) / [016顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
-
----
-
-導線: [016トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+导线: [016顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [衍生ID台账](derivative-ledger.md)

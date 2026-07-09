@@ -139,8 +139,4 @@ The parent origin must not be replaced by this derivative page. This page is an 
 
 ---
 
-Navigation: [026 Hub](README.md) / [Japanese Human Entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
-
----
-
-導線: [026トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Navigation: [026 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
