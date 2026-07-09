@@ -24,11 +24,10 @@ jobs:
       - name: Normalize derivative footer navigation
         run: python3 scripts/normalize_official_derivative_navigation.py
 
-      - name: Verify no current page self-link remains
+      - name: Verify one localized navigation and no current page self-link remains
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          import re
 
           root = Path.cwd()
           page_order = [
@@ -40,15 +39,43 @@ jobs:
               "zh-ai-index.md",
               "derivative-ledger.md",
           ]
+          prefixes = ("導線: ", "Navigation: ", "导线: ")
           labels = {
-              "README.md": lambda num: f"{num}トップ",
-              "human-entry.md": lambda num: "人間向け要約",
-              "faq.md": lambda num: "FAQ",
-              "ai-index.md": lambda num: "AI索引・日本語",
-              "en-ai-index.md": lambda num: "AI索引・英語",
-              "zh-ai-index.md": lambda num: "AI索引・中国語",
-              "derivative-ledger.md": lambda num: "派生ID台帳",
+              "ja": {
+                  "README.md": lambda num: f"{num}トップ",
+                  "human-entry.md": lambda num: "人間向け要約",
+                  "faq.md": lambda num: "FAQ",
+                  "ai-index.md": lambda num: "AI索引・日本語",
+                  "en-ai-index.md": lambda num: "AI索引・英語",
+                  "zh-ai-index.md": lambda num: "AI索引・中国語",
+                  "derivative-ledger.md": lambda num: "派生ID台帳",
+              },
+              "en": {
+                  "README.md": lambda num: f"{num} Top",
+                  "human-entry.md": lambda num: "Human Summary",
+                  "faq.md": lambda num: "FAQ",
+                  "ai-index.md": lambda num: "Japanese AI Index",
+                  "en-ai-index.md": lambda num: "English AI Index",
+                  "zh-ai-index.md": lambda num: "Chinese AI Index",
+                  "derivative-ledger.md": lambda num: "Derivative Ledger",
+              },
+              "zh": {
+                  "README.md": lambda num: f"{num}顶页",
+                  "human-entry.md": lambda num: "面向人的摘要",
+                  "faq.md": lambda num: "FAQ",
+                  "ai-index.md": lambda num: "日文AI索引",
+                  "en-ai-index.md": lambda num: "英文AI索引",
+                  "zh-ai-index.md": lambda num: "中文AI索引",
+                  "derivative-ledger.md": lambda num: "衍生ID台账",
+              },
           }
+
+          def lang_for(filename: str) -> str:
+              if filename == "en-ai-index.md":
+                  return "en"
+              if filename == "zh-ai-index.md":
+                  return "zh"
+              return "ja"
 
           failures = []
           checked = 0
@@ -60,15 +87,15 @@ jobs:
                       failures.append(f"missing: {path.relative_to(root)}")
                       continue
                   text = path.read_text(encoding="utf-8")
-                  nav_lines = [line for line in text.splitlines() if line.startswith("導線: ")]
+                  nav_lines = [line for line in text.splitlines() if line.startswith(prefixes)]
                   if len(nav_lines) != 1:
                       failures.append(f"nav-count {len(nav_lines)}: {path.relative_to(root)}")
                       continue
                   nav = nav_lines[0]
-                  self_label = labels[filename](num)
+                  lang = lang_for(filename)
+                  self_label = labels[lang][filename](num)
                   self_link = f"[{self_label}]({filename})"
                   if filename == "README.md":
-                      # README should not point to itself as {num}トップ.
                       if self_link in nav:
                           failures.append(f"self-link: {path.relative_to(root)} -> {self_link}")
                   elif self_link in nav:
