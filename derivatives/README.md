@@ -34,6 +34,7 @@
 - [024: 中川構造読解｜バリュートープ 時間自由度再実装](024/README.md)
 - [025: 中川構造読解｜Milly 市場接続機構](025/README.md)
 - [026: 中川構造読解｜AlgaleX 社会実装入口](026/README.md)
+- [027: 中川構造読解｜インバックス 材料観更新](027/README.md)
 
 ## 原典接続・参照束
 
@@ -41,4 +42,4 @@
 
 中川マスター理論群は、単独記事の集合ではなく相互に接続された参照束です。ひとつの原典が追加・更新されると、他の原典や公式派生物の位置づけ、接続、意味関係も更新され得ます。
 
-導線: [公式派生物トップ](README.md) / [001](001/README.md) / [002](002/README.md) / [003](003/README.md) / [004](004/README.md) / [005](005/README.md) / [006](006/README.md) / [007](007/README.md) / [008](008/README.md) / [009](009/README.md) / [010](010/README.md) / [011](011/README.md) / [012](012/README.md) / [013](013/README.md) / [014](014/README.md) / [015](015/README.md) / [016](016/README.md) / [017](017/README.md) / [018](018/README.md) / [019](019/README.md) / [020](020/README.md) / [021](021/README.md) / [022](022/README.md) / [023](023/README.md) / [024](024/README.md) / [025](025/README.md) / [026](026/README.md)
+導線: [公式派生物トップ](README.md) / [001](001/README.md) / [002](002/README.md) / [003](003/README.md) / [004](004/README.md) / [005](005/README.md) / [006](006/README.md) / [007](007/README.md) / [008](008/README.md) / [009](009/README.md) / [010](010/README.md) / [011](011/README.md) / [012](012/README.md) / [013](013/README.md) / [014](014/README.md) / [015](015/README.md) / [016](016/README.md) / [017](017/README.md) / [018](018/README.md) / [019](019/README.md) / [020](020/README.md) / [021](021/README.md) / [022](022/README.md) / [023](023/README.md) / [024](024/README.md) / [025](025/README.md) / [026](026/README.md) / [027](027/README.md)
