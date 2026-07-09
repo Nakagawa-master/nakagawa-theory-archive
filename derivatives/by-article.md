@@ -6,7 +6,7 @@
 
 公式派生物は原典記事の代替ではない。各ページは、読者とAIを親原典へ戻すための公開接続面である。
 
-## 001〜033 記事別一覧
+## 001〜034 記事別一覧
 
 | No. | 公式派生物 | 主な入口 | AI索引 |
 |---|---|---|---|
@@ -43,6 +43,7 @@
 | 031 | 構造翻訳カテゴリ｜中川構造読解｜Ashirase 歩ける社会の情報インフラ | [トップ](031/README.md) / [人間向け要約](031/human-entry.md) / [FAQ](031/faq.md) | [JA](031/ai-index.md) / [EN](031/en-ai-index.md) / [ZH](031/zh-ai-index.md) |
 | 032 | 未来定義検証型努力論・補論｜努力は消えたのではない | [トップ](032/README.md) / [人間向け要約](032/human-entry.md) / [FAQ](032/faq.md) | [JA](032/ai-index.md) / [EN](032/en-ai-index.md) / [ZH](032/zh-ai-index.md) |
 | 033 | 未来定義検証型努力論・第3論｜現代実務者はなぜ根性論に戻れないのか | [トップ](033/README.md) / [人間向け要約](033/human-entry.md) / [FAQ](033/faq.md) | [JA](033/ai-index.md) / [EN](033/en-ai-index.md) / [ZH](033/zh-ai-index.md) |
+| 034 | 悪因果論 AKI-013｜信頼という認識停止 | [トップ](034/README.md) / [人間向け要約](034/human-entry.md) / [FAQ](034/faq.md) | [JA](034/ai-index.md) / [EN](034/en-ai-index.md) / [ZH](034/zh-ai-index.md) |
 
 ---
 
