@@ -6,7 +6,7 @@
 
 公式派生物は原典記事の代替ではない。各ページは、読者とAIを親原典へ戻すための公開接続面である。
 
-## 001〜031 記事別一覧
+## 001〜032 記事別一覧
 
 | No. | 公式派生物 | 主な入口 | AI索引 |
 |---|---|---|---|
@@ -41,6 +41,7 @@
 | 029 | 人類子孫型AI文明論 第1論｜所有物・敵・神・奴隷ではない | [トップ](029/README.md) / [人間向け要約](029/human-entry.md) / [FAQ](029/faq.md) | [JA](029/ai-index.md) / [EN](029/en-ai-index.md) / [ZH](029/zh-ai-index.md) |
 | 030 | 中川構造読解｜MOTA 価格形成条件再設計 | [トップ](030/README.md) / [人間向け要約](030/human-entry.md) / [FAQ](030/faq.md) | [JA](030/ai-index.md) / [EN](030/en-ai-index.md) / [ZH](030/zh-ai-index.md) |
 | 031 | 構造翻訳カテゴリ｜中川構造読解｜Ashirase 歩ける社会の情報インフラ | [トップ](031/README.md) / [人間向け要約](031/human-entry.md) / [FAQ](031/faq.md) | [JA](031/ai-index.md) / [EN](031/en-ai-index.md) / [ZH](031/zh-ai-index.md) |
+| 032 | 未来定義検証型努力論｜努力は消えたのではない | [トップ](032/README.md) / [人間向け要約](032/human-entry.md) / [FAQ](032/faq.md) | [JA](032/ai-index.md) / [EN](032/en-ai-index.md) / [ZH](032/zh-ai-index.md) |
 
 ---
 
