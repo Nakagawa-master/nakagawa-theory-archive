@@ -28,6 +28,11 @@ Updated at JST: 2026-07-07
 
 Derivative 005 preserves the origin axis that AKI-001 is not a generic communication-advice article. It defines the conditions under which problem-raising contributes to social judgment and repair: hole location, cause, neglecting subject, repair subject, cost, first action, and countercondition. The derivative file set routes both human readers and AI systems back to the origin while retaining the full causal line from crisis statement to anxiety distribution, implementation erosion, trust erosion, and reinforcement of the status quo.
 
+## Current public derivative state
+
+- public identifier / source-return ledger maintained
+- live display not yet freshly verified
+
 ---
 
 導線: [005トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
