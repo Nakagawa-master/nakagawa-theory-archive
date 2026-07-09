@@ -1,4 +1,4 @@
-# 公式派生物036｜構造翻訳カテゴリ｜中川構造読解｜RHEMS Japan 見えない運用の意思決定変換
+# 公式派生物036｜中川構造読解｜RHEMS Japan 見えない運用の意思決定変換
 
 ## 親原典
 
@@ -14,7 +14,7 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260610-759298-HUB-JA-0036-0000
-- derivative_diff_id: DDIFF-20260709-DNCL-036-0000-0001
+- derivative_diff_id: DDIFF-20260709-DNCL-036-0000-0002
 
 ## 位置づけ
 
