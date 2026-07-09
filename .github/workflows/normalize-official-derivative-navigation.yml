@@ -1,0 +1,96 @@
+name: Normalize official derivative navigation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/normalize-official-derivative-navigation.yml
+      - scripts/normalize_official_derivative_navigation.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  normalize-navigation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Normalize derivative footer navigation
+        run: python3 scripts/normalize_official_derivative_navigation.py
+
+      - name: Verify no current page self-link remains
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          root = Path.cwd()
+          page_order = [
+              "README.md",
+              "human-entry.md",
+              "faq.md",
+              "ai-index.md",
+              "en-ai-index.md",
+              "zh-ai-index.md",
+              "derivative-ledger.md",
+          ]
+          labels = {
+              "README.md": lambda num: f"{num}トップ",
+              "human-entry.md": lambda num: "人間向け要約",
+              "faq.md": lambda num: "FAQ",
+              "ai-index.md": lambda num: "AI索引・日本語",
+              "en-ai-index.md": lambda num: "AI索引・英語",
+              "zh-ai-index.md": lambda num: "AI索引・中国語",
+              "derivative-ledger.md": lambda num: "派生ID台帳",
+          }
+
+          failures = []
+          checked = 0
+          for folder in sorted((root / "derivatives").glob("[0-9][0-9][0-9]")):
+              num = folder.name
+              for filename in page_order:
+                  path = folder / filename
+                  if not path.exists():
+                      failures.append(f"missing: {path.relative_to(root)}")
+                      continue
+                  text = path.read_text(encoding="utf-8")
+                  nav_lines = [line for line in text.splitlines() if line.startswith("導線: ")]
+                  if len(nav_lines) != 1:
+                      failures.append(f"nav-count {len(nav_lines)}: {path.relative_to(root)}")
+                      continue
+                  nav = nav_lines[0]
+                  self_label = labels[filename](num)
+                  self_link = f"[{self_label}]({filename})"
+                  if filename == "README.md":
+                      # README should not point to itself as {num}トップ.
+                      if self_link in nav:
+                          failures.append(f"self-link: {path.relative_to(root)} -> {self_link}")
+                  elif self_link in nav:
+                      failures.append(f"self-link: {path.relative_to(root)} -> {self_link}")
+                  checked += 1
+
+          print(f"verified_files={checked}")
+          if failures:
+              print("navigation verification failed:")
+              for failure in failures:
+                  print(failure)
+              raise SystemExit(1)
+          PY
+
+      - name: Commit normalized navigation
+        run: |
+          if git diff --quiet; then
+            echo "No navigation changes needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add derivatives
+          git commit -m "Normalize official derivative footer navigation"
+          git push
