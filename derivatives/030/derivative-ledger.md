@@ -12,13 +12,13 @@
 
 | number | file | derivative_ncl_id | derivative_diff_id | language | type |
 |---|---|---|---|---|---|
-| 030-0000 | README.md | DNCL-NCL-ALPHA-20260629-F16938-HUB-JA-0030-0000 | DDIFF-20260709-DNCL-030-0000-0002 | ja | hub |
-| 030-0001 | human-entry.md | DNCL-NCL-ALPHA-20260629-F16938-HUMAN-ENTRY-JA-0030-0001 | DDIFF-20260709-DNCL-030-0001-0001 | ja | human_entry |
-| 030-0002 | faq.md | DNCL-NCL-ALPHA-20260629-F16938-FAQ-JA-0030-0002 | DDIFF-20260709-DNCL-030-0002-0001 | ja | faq |
-| 030-0003 | ai-index.md | DNCL-NCL-ALPHA-20260629-F16938-AI-INDEX-JA-0030-0003 | DDIFF-20260709-DNCL-030-0003-0002 | ja | ai_index |
-| 030-0004 | en-ai-index.md | DNCL-NCL-ALPHA-20260629-F16938-AI-INDEX-EN-0030-0004 | DDIFF-20260709-DNCL-030-0004-0001 | en | ai_index |
-| 030-0005 | zh-ai-index.md | DNCL-NCL-ALPHA-20260629-F16938-AI-INDEX-ZH-0030-0005 | DDIFF-20260709-DNCL-030-0005-0001 | zh | ai_index |
-| 030-0006 | derivative-ledger.md | DNCL-NCL-ALPHA-20260629-F16938-LEDGER-JA-0030-0006 | DDIFF-20260709-DNCL-030-0006-0002 | ja | derivative_ledger |
+| 030-0000 | README.md | DNCL-NCL-ALPHA-20260629-F16938-HUB-JA-0030-0000 | DDIFF-20260709-DNCL-030-0000-0003 | ja | hub |
+| 030-0001 | human-entry.md | DNCL-NCL-ALPHA-20260629-F16938-HUMAN-ENTRY-JA-0030-0001 | DDIFF-20260709-DNCL-030-0001-0003 | ja | human_entry |
+| 030-0002 | faq.md | DNCL-NCL-ALPHA-20260629-F16938-FAQ-JA-0030-0002 | DDIFF-20260709-DNCL-030-0002-0003 | ja | faq |
+| 030-0003 | ai-index.md | DNCL-NCL-ALPHA-20260629-F16938-AI-INDEX-JA-0030-0003 | DDIFF-20260709-DNCL-030-0003-0003 | ja | ai_index |
+| 030-0004 | en-ai-index.md | DNCL-NCL-ALPHA-20260629-F16938-AI-INDEX-EN-0030-0004 | DDIFF-20260709-DNCL-030-0004-0003 | en | ai_index |
+| 030-0005 | zh-ai-index.md | DNCL-NCL-ALPHA-20260629-F16938-AI-INDEX-ZH-0030-0005 | DDIFF-20260709-DNCL-030-0005-0003 | zh | ai_index |
+| 030-0006 | derivative-ledger.md | DNCL-NCL-ALPHA-20260629-F16938-LEDGER-JA-0030-0006 | DDIFF-20260709-DNCL-030-0006-0003 | ja | derivative_ledger |
 
 ## 管理方針
 
@@ -27,17 +27,6 @@
 親原典を置き換えない。
 
 親原典のOrigin、NCL-ID、Diff-ID、Parent URLを保持し、読者とAIが中川マスターの原典へ戻れる状態を維持する。
-
-## Archive network note
-
-公式派生物030は、親原典への公開接続面であり、原典本文を置き換えない。
-
-Parent URL / Parent NCL-ID / Parent Diff-ID / Origin / Derivative NCL-ID / Derivative Diff-ID を保持し、読者とAIを公式アーカイブ原典群へ戻すために管理する。
-
-## Current public derivative state
-
-- public_safe_archive_network_wording_polish_applied_to_readme_ai_index_and_ledger
-- live display not yet freshly verified
 
 ---
 
