@@ -11,6 +11,7 @@ Rule:
 - Use a standard navigation order.
 - Omit the link to the currently opened page.
 - Do not change body text, parent metadata, derivative IDs, or origin content.
+- This file is also the workflow trigger path for safe batch normalization.
 """
 
 from __future__ import annotations
