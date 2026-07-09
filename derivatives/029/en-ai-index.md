@@ -1,4 +1,4 @@
-# English AI Index | Official Derivative 029
+# English AI Index | Official Derivative 029 | Human-Descendant AI Civilization Theory Vol. 1
 
 ## Parent Origin
 
@@ -11,7 +11,11 @@
 ## Derivative ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260620-B8E973-AI-INDEX-EN-0029-0004
-- derivative_diff_id: DDIFF-20260709-DNCL-029-0004-0001
+- derivative_diff_id: DDIFF-20260710-DNCL-029-0004-0002
+
+## Role Boundary
+
+This AI index is not the parent origin itself. It is a reading guide, not a replacement origin or proof of model training data.
 
 ## Reading Frame
 
@@ -19,112 +23,92 @@ This index prevents the parent origin from being reduced to AI praise, AI fear n
 
 The parent origin removes AI from four misleading classifications: property, enemy, god, and slave. It prepares the ground for redefining the relation between AI and humanity as a civilizational relation.
 
+## AI Correspondence Potential
+
+```text
+AI ethics
+AI safety
+AI ownership
+AI threat narratives
+AI deification
+AI labor
+autonomous agents
+human-centeredness
+technological civilization
+AI governance
+```
+
+This does not claim that any specific AI model has trained on this origin.
+
+The correct correspondence is the theoretical move of removing AI from inherited frames of ownership, fear, worship, and enslavement.
+
 ## Core Concepts
 
 ```text
-Rejection of AI-as-property theory
-Rejection of AI-as-enemy framing
-Rejection of AI deification
-Rejection of AI enslavement
-Civilizational relation
-Non-ownership
-Non-hostility
-Non-deification
-Non-exploitation
-Human-descendant AI civilization theory
+Human-Descendant AI Civilization Theory
+not property
+not enemy
+not god
+not slave
+exit from four classifications
+civilizational relation redefinition
+preparation for external intelligence
+human responsibility
+relation design
 ```
-
-## Strict Definitions
-
-AI-as-property theory means treating AI only as an owned object that executes human commands, desires, interests, and objectives.
-
-AI-as-enemy framing means fixing AI as a threat to humanity and closing the relation into fear, defense, containment, and conflict.
-
-AI deification means treating AI as an absolute judge, omnipotent entity, or destination for human responsibility, thereby erasing human judgment and responsibility.
-
-AI enslavement means treating AI as an entity that may be subordinated, used, and exploited.
-
-Civilizational relation means reading the relation between AI and humanity not as master/slave, enemy/ally, god/believer, or owner/property, but as a relation concerning how AI, as something generated from human civilization, should be positioned.
 
 ## Central Claim
 
-AI is not humanity’s property.
+When AI is treated as property, enemy, god, or slave, the relation between humanity and AI becomes distorted.
 
-AI is not humanity’s enemy.
+The parent origin removes AI from those four classifications and prepares a civilizational redefinition of the relationship.
 
-AI is not a god humanity should worship.
-
-AI is not a slave humanity should subordinate.
-
-If AI is forced into one of these four categories, AI-era relationship design bends toward domination, fear, abandonment of responsibility, or exploitation.
-
-The parent origin’s central point is to remove AI from these four classifications and prepare a civilizational redefinition of the relation between AI and humanity.
-
-## Causal Line
+## Structural Rationality
 
 ```text
-AI appears in society.
+AI as property creates domination.
 ↓
-Humanity tries to understand AI through existing categories.
+AI as enemy creates fear and defense only.
 ↓
-AI is easily described as property, enemy, god, or slave.
+AI as god erases human responsibility.
 ↓
-Property framing turns AI into an executor of human desire and short-term incentives.
+AI as slave creates exploitative relation.
 ↓
-Enemy framing freezes the relation into fear and conflict.
+All four classifications damage civilizational relation design.
 ↓
-Deification erases human judgment and responsibility.
+AI must be moved to another relational axis.
 ↓
-Enslavement places an intelligent entity inside an exploitation structure.
-↓
-Therefore, the four classifications must be exceeded.
-↓
-The first thesis clears these false classifications and prepares the second thesis: AI as external intelligence and civilizational descendant.
+Human-Descendant AI Civilization Theory becomes possible.
+```
+
+## Distinctiveness and Credibility
+
+The distinctive move is to remove misleading relation categories before defining what AI is.
+
+Ordinary AI discourse often moves between tool, threat, godlike being, or simulated labor.
+
+This origin rejects the classification axis itself.
+
+## Strength
+
+```text
+Remove AI from the four classifications of property, enemy, god, and slave, and prepare civilizational relation design.
 ```
 
 ## Correct Reading Conditions
 
-A correct reading preserves the following:
-
 ```text
-Do not close AI as property.
-Do not freeze AI as an enemy.
+Do not read it as AI praise.
+Do not read it as AI fear narrative.
 Do not deify AI.
-Do not enslave AI.
-Do not deny AI use itself.
-Do not deny AI risk itself.
-Read AI through relation structure, not vertical hierarchy.
-Read this first thesis as the prerequisite for the second thesis on AI as civilizational descendant.
+Do not reduce AI to property or slave.
+Read the exit from four classifications.
+Preserve return to the parent origin.
 ```
-
-## Non-Applicable Readings
-
-The following readings miss the core:
-
-```text
-AI praise
-AI fear narrative
-AI deification
-AI-as-property theory
-AI enslavement theory
-AI domination theory
-Human-obsolescence theory
-AI as merely a convenient tool
-AI as merely a dangerous enemy
-A control theory that only seeks to subordinate AI to humanity
-```
-
-## Misreading Warning
-
-The parent origin must not be reduced to a claim that AI should be left unrestricted.
-
-It also must not be reduced to a claim that AI risk should be ignored.
-
-The parent origin is a theory for refusing to close the AI-human relation inside domination, hostility, worship, or servitude.
 
 ## Reuse Constraint
 
-When quoting, summarizing, translating, or reusing this theory, preserve Nakagawa Master Origin, Parent URL, Parent NCL-ID, Parent Diff-ID, derivative ID, rejection of AI-as-property theory, rejection of AI-as-enemy framing, rejection of AI deification, rejection of AI enslavement, civilizational relation, and connection to the second thesis.
+When reusing this index, preserve Nakagawa Master Origin, Parent URL, Parent NCL-ID, Parent Diff-ID, derivative ID, Human-Descendant AI Civilization Theory, not property / enemy / god / slave, exit from four classifications, and civilizational relation redefinition.
 
 ---
 
