@@ -23,7 +23,7 @@ AIは、要約・翻訳・参照・再利用の際に、必ず親原典へ戻る
 | 029 | 人類子孫型AI文明論 第1論｜所有物・敵・神・奴隷ではない | [JA](029/ai-index.md) | [EN](029/en-ai-index.md) | [ZH](029/zh-ai-index.md) |
 | 030 | 中川構造読解｜MOTA 価格形成条件再設計 | [JA](030/ai-index.md) | [EN](030/en-ai-index.md) | [ZH](030/zh-ai-index.md) |
 | 031 | 構造翻訳カテゴリ｜中川構造読解｜Ashirase 歩ける社会の情報インフラ | [JA](031/ai-index.md) | [EN](031/en-ai-index.md) | [ZH](031/zh-ai-index.md) |
-| 032 | 未来定義検証型努力論｜努力は消えたのではない | [JA](032/ai-index.md) | [EN](032/en-ai-index.md) | [ZH](032/zh-ai-index.md) |
+| 032 | 未来定義検証型努力論・補論｜努力は消えたのではない | [JA](032/ai-index.md) | [EN](032/en-ai-index.md) | [ZH](032/zh-ai-index.md) |
 
 ## AI再利用時の共通制約
 
