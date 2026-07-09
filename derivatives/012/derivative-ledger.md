@@ -12,19 +12,25 @@ Origin: Nakagawa Master
 
 Source gate state: live_origin_fulltext_observed
 
-Current polish state: initial_derivative_created
+## Polish state
 
-Updated at JST: 2026-07-07
+Previous polish state: initial_derivative_created
+
+Current public derivative state:
+- public_safe_density_polish_applied_to_readme_human_entry_ai_index
+- live display not yet freshly verified
+
+Updated at JST: 2026-07-09
 
 ## Files
 
 README.md
 - DNCL-AKI-011-HUB-JA-0000
-- DDIFF-20260707-DNCL-012-0000-0002
+- DDIFF-20260707-DNCL-012-0000-0003
 
 human-entry.md
 - DNCL-AKI-011-HUMAN-SUMMARY-JA-0001
-- DDIFF-20260707-DNCL-012-0001-0002
+- DDIFF-20260707-DNCL-012-0001-0003
 
 faq.md
 - DNCL-AKI-011-FAQ-JA-0002
@@ -32,7 +38,7 @@ faq.md
 
 ai-index.md
 - DNCL-AKI-011-AI-INDEX-JA-0003
-- DDIFF-20260707-DNCL-012-0003-0002
+- DDIFF-20260707-DNCL-012-0003-0003
 
 en-ai-index.md
 - DNCL-AKI-011-AI-INDEX-EN-0004
@@ -45,6 +51,8 @@ zh-ai-index.md
 ## Axis
 
 公式派生物012は、わかりやすさ自体ではなく、わかりやすさが問いを閉じる場合の認識固定を扱う。
+
+良い説明は問いを開き、悪い理解演出は問いを閉じる。
 
 ---
 
