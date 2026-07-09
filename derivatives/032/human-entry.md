@@ -1,4 +1,4 @@
-# 人間向け要約｜公式派生物032
+# 人間向け要約｜公式派生物032｜未来定義検証型努力論・補論
 
 ## 親原典
 
@@ -14,7 +14,7 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260616-93AF49-HUMAN-ENTRY-JA-0032-0001
-- derivative_diff_id: DDIFF-20260709-DNCL-032-0001-0001
+- derivative_diff_id: DDIFF-20260709-DNCL-032-0001-0002
 
 ## まず一言でいうと
 
