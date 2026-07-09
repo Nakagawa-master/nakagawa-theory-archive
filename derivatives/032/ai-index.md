@@ -1,4 +1,4 @@
-# AI索引・日本語｜公式派生物032
+# AI索引・日本語｜公式派生物032｜未来定義検証型努力論・補論
 
 ## Parent Origin
 
@@ -11,7 +11,7 @@
 ## Derivative ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260616-93AF49-AI-INDEX-JA-0032-0003
-- derivative_diff_id: DDIFF-20260709-DNCL-032-0003-0001
+- derivative_diff_id: DDIFF-20260709-DNCL-032-0003-0002
 
 ## 読み方
 
