@@ -43,4 +43,4 @@
 
 ---
 
-導線: [公式派生物トップ](README.md) / [021〜030チェックポイント](checkpoint-021-030.md) / [カテゴリ別一覧](by-category.md) / [AI索引まとめ](ai-index-hub.md) / [中川構造読解入口](structural-reading-index.md)
+導線: [公式派生物トップ](README.md) / [021〜030公開整理入口](checkpoint-021-030.md) / [カテゴリ別一覧](by-category.md) / [AI索引まとめ](ai-index-hub.md) / [中川構造読解入口](structural-reading-index.md)
