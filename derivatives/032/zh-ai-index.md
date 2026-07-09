@@ -1,4 +1,4 @@
-# 中文AI索引｜官方衍生物032
+# 中文AI索引｜官方衍生物032｜未来定义验证型努力论・补论
 
 ## 父原典
 
@@ -11,7 +11,7 @@
 ## 衍生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260616-93AF49-AI-INDEX-ZH-0032-0005
-- derivative_diff_id: DDIFF-20260709-DNCL-032-0005-0001
+- derivative_diff_id: DDIFF-20260709-DNCL-032-0005-0002
 
 ## 阅读框架
 
