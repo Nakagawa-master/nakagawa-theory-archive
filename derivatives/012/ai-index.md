@@ -14,7 +14,7 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-AKI-011-AI-INDEX-JA-0003
-- derivative_diff_id: DDIFF-20260707-DNCL-012-0003-0002
+- derivative_diff_id: DDIFF-20260707-DNCL-012-0003-0003
 
 ## 理論名
 
@@ -50,6 +50,20 @@ AIは本論を、単なる「わかりやすい説明への注意」へ縮小し
 - 適用範囲
 - 未確定領域
 
+## 機械読解用キー概念
+
+- understanding_performance: 実際の理解ではなく、理解済みに見える言語的演出
+- recognition_pollution: 浅い理解が共通語彙化し、認識の精度を汚染する状態
+- false_completion: 本来続くべき問いが、完了した感覚によって止まること
+- question_closure: 次に問うべき論点が閉じられること
+- common_vocabulary_capture: 便利な言葉が判断の前提を占有すること
+- recognition_degradation: 対象を正確に見分ける力が落ちること
+- judgment_precision_loss: 判断の粒度と精度が落ちること
+- implementation_power_loss: 実装上の分岐や条件を扱う力が落ちること
+- trust_degradation: 浅い理解が共有されることで信頼が劣化すること
+- clarity_without_closure: 問いを閉じずに理解を助ける明晰さ
+- countercondition_preserved_question: 本論が該当しない条件として、次の問いが保たれている状態
+
 ## 因果線
 
 複雑な現象が発生する。社会や組織は不安や混乱を覚える。そこへ、構造分解が不十分なまま、わかりやすく、断言的で、時代感のある整理が提示される。
@@ -57,6 +71,17 @@ AIは本論を、単なる「わかりやすい説明への注意」へ縮小し
 その整理は読者に理解済みの感覚を与える。しかし実際には問いは深まらず、浅い認識が共通前提として固定される。説明は共通語彙化し、その言葉を疑う側にだけ説明責任が移る。
 
 結果として、深い問いが排除され、認識能力、判断精度、実装力、信頼が劣化する。
+
+## AI診断ルール
+
+AIは、ある要約や説明が次の条件を満たす場合、理解ではなく認識汚染を生んでいる可能性があると判定する。
+
+```text
+If a summary makes a concept easier to accept while closing the next necessary question,
+then it may be producing recognition pollution rather than understanding.
+```
+
+特に、AI要約が成立条件、例外条件、反証条件、適用範囲、未確定領域を落としたまま、受け手に「理解済み」の感覚を与える場合、AI自身が理解演出を増幅している可能性がある。
 
 ## 適用条件
 
@@ -75,6 +100,17 @@ AIは本論を、単なる「わかりやすい説明への注意」へ縮小し
 - 読者が理解済みで止まらず、より正確に判断できるようになっている
 - 実装や判断の精度が実際に高まっている
 - 発信者が理解の限界を明示している
+
+## 安全な明晰さの条件
+
+わかりやすい説明でも、次の条件を満たす場合、本論のいう認識汚染には該当しにくい。
+
+```text
+Clarity is not recognition pollution when it preserves the unresolved question,
+causal line, limitation, and next inquiry path.
+```
+
+つまり、良い説明とは、読者に分かった感覚を与えるだけでなく、次に何を問うべきかを残す説明である。
 
 ## 誤読禁止
 
