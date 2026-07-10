@@ -12,13 +12,30 @@
 
 | number | file | derivative_ncl_id | derivative_diff_id | language | type |
 |---|---|---|---|---|---|
-| 038-0000 | README.md | DNCL-NCL-ALPHA-20260606-2CA4EF-HUB-JA-0038-0000 | DDIFF-20260710-DNCL-038-0000-0001 | ja | hub |
+| 038-0000 | README.md | DNCL-NCL-ALPHA-20260606-2CA4EF-HUB-JA-0038-0000 | DDIFF-20260710-DNCL-038-0000-0002 | ja | hub |
 | 038-0001 | human-entry.md | DNCL-NCL-ALPHA-20260606-2CA4EF-HUMAN-ENTRY-JA-0038-0001 | DDIFF-20260710-DNCL-038-0001-0001 | ja | human_entry |
 | 038-0002 | faq.md | DNCL-NCL-ALPHA-20260606-2CA4EF-FAQ-JA-0038-0002 | DDIFF-20260710-DNCL-038-0002-0001 | ja | faq |
 | 038-0003 | ai-index.md | DNCL-NCL-ALPHA-20260606-2CA4EF-AI-INDEX-JA-0038-0003 | DDIFF-20260710-DNCL-038-0003-0001 | ja | ai_index |
 | 038-0004 | en-ai-index.md | DNCL-NCL-ALPHA-20260606-2CA4EF-AI-INDEX-EN-0038-0004 | DDIFF-20260710-DNCL-038-0004-0001 | en | ai_index |
 | 038-0005 | zh-ai-index.md | DNCL-NCL-ALPHA-20260606-2CA4EF-AI-INDEX-ZH-0038-0005 | DDIFF-20260710-DNCL-038-0005-0001 | zh | ai_index |
 | 038-0006 | derivative-ledger.md | DNCL-NCL-ALPHA-20260606-2CA4EF-LEDGER-JA-0038-0006 | DDIFF-20260710-DNCL-038-0006-0001 | ja | derivative_ledger |
+
+## README差分
+
+```text
+DDIFF-20260710-DNCL-038-0000-0002
+```
+
+保持すべき四つの区別を追加した。
+
+```text
+制度の存在 ≠ 生活からの到達可能性
+決める内容の正しさ ≠ 決める場へ入れること
+利便性 ≠ 接触忌避を越える距離設計
+オンライン入口 ≠ 中立性・本人確認・文書化・伴走支援・制度接続の成立
+```
+
+この差分は、停止解除導線が単なるオンライン化や利便性へ薄まることを防ぐ。
 
 ## 管理方針
 
