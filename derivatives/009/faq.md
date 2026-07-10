@@ -3,9 +3,9 @@
 ## 親原典
 
 - タイトル: 未来定義検証型努力論 第2論｜未来定義検証なき努力強制と責任転嫁装置化
-- Parent URL: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-effort-redefinition/
-- Parent NCL-ID: NCL-α-20260613-007d94
-- Parent Diff-ID: DIFF-20260613-0012
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-bad-causality/
+- Parent NCL-ID: NCL-α-20260614-77a781
+- Parent Diff-ID: DIFF-20260623-0003
 
 ## 起源署名
 
@@ -13,7 +13,7 @@
 
 ## 派生ID
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260613-007D94-FAQ-JA-0002
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260614-77A781-FAQ-JA-0002
 - derivative_diff_id: DDIFF-20260707-DNCL-009-0002-0002
 
 ## 第1層｜初心者向けFAQ
