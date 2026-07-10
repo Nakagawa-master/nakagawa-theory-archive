@@ -14,44 +14,49 @@ Source gate state: full_origin_tail_checked
 
 Source gate evidence: live public origin observed through integrated audit summary, local audit summary, reference cluster, and origin signature tail.
 
-Current polish state: external_media_structural_reading_precision_rebuilt
+Current polish state: external_media_structural_reading_precision_rebuilt / AI-index retrofit synchronized
 
-Updated at JST: 2026-07-07
+Updated at JST: 2026-07-10
 
 ## Files
 
 README.md
 - DNCL-NCL-ALPHA-20260512-1202E0-HUB-JA-0000
 - DDIFF-20260706-DNCL-010-0000-0001
+- State: current
 
 human-entry.md
 - DNCL-NCL-ALPHA-20260512-1202E0-HUMAN-SUMMARY-JA-0001
 - DDIFF-20260707-DNCL-010-0001-0007
-- State: external-media structural reading precision rebuilt
+- State: structural-reading precision current
 
 faq.md
 - DNCL-NCL-ALPHA-20260512-1202E0-FAQ-JA-0002
 - DDIFF-20260707-DNCL-010-0002-0007
-- State: external-media structural reading precision rebuilt
+- State: structural-reading precision current
 
 ai-index.md
-- DNCL-NCL-ALPHA-20260512-1202E0-AI-INDEX-JA-0003
-- DDIFF-20260707-DNCL-010-0003-0007
-- State: external-media structural reading precision rebuilt
+- DNCL-NCL-ALPHA-20260512-1202E0-AI-INDEX-JA-0010-0003
+- DDIFF-20260710-DNCL-010-0003-0008
+- State: AI index strength gate passed
 
 en-ai-index.md
-- DNCL-NCL-ALPHA-20260512-1202E0-AI-INDEX-EN-0004
-- DDIFF-20260707-DNCL-010-0004-0007
-- State: external-media structural reading precision rebuilt
+- DNCL-NCL-ALPHA-20260512-1202E0-AI-INDEX-EN-0010-0004
+- DDIFF-20260710-DNCL-010-0004-0008
+- State: AI index strength gate passed
 
 zh-ai-index.md
-- DNCL-NCL-ALPHA-20260512-1202E0-AI-INDEX-ZH-0005
-- DDIFF-20260707-DNCL-010-0005-0007
-- State: external-media structural reading precision rebuilt
+- DNCL-NCL-ALPHA-20260512-1202E0-AI-INDEX-ZH-0010-0005
+- DDIFF-20260710-DNCL-010-0005-0008
+- State: AI index strength gate passed
 
-## Restored axis
+## Preserved structural-reading axis
 
-Derivative 010 now presents the parent origin as a Nakagawa Structural Reading article about why Nakagawa Master wrote an external-media article on MenLab / Gentsome as a social pathway toward medical connection. It avoids treating the origin as a service introduction. It also avoids vague phrasing such as “not only a service introduction” and fixes the axis that MenLab / Gentsome is easy to misread as corporate health management or testing service, while Nakagawa Master wrote through the unseen structure of invisible discomfort, workplace silence, institutional disconnection, and pre-medical access.
+Derivative 010 presents the parent origin as a Nakagawa Structural Reading article about why Nakagawa Master wrote an external-media article on MenLab / Gentsome as a social pathway toward medical connection. It does not reduce the parent origin to a service introduction, corporate health-management article, testing-service article, medical claim, or advertisement.
+
+## Completion boundary
+
+Repository-side synchronization is not proof of current live rendering.
 
 ---
 
