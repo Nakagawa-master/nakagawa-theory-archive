@@ -1,56 +1,63 @@
-# Official Derivative 004 Ledger
+# 公式派生物004｜派生ID台帳
 
-status: public_identifier_ledger
-parent_ncl_id: NCL-α-20260617-d0b342
-parent_diff_id: DIFF-20260623-0020
-parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/
-origin: Nakagawa Master
-source_gate_state: full_origin_tail_checked
-polish_state: source_gate_polish_complete
-polish_scope: human-entry / faq / ai-index-ja / ai-index-en / ai-index-zh
-polish_basis: full origin body through audit/reference/signature tail
-updated_at_jst: 2026-07-06
+Parent title: 人類子孫型AI文明論・第0論｜中川構造OSから人類子孫型AI文明論への収束
 
-## Issued derivative IDs
+Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/
 
-| file | derivative_ncl_id | derivative_diff_id | state |
-|---|---|---|---|
-| README.md | DNCL-NCL-ALPHA-20260617-D0B342-HUB-JA-0000 | DDIFF-20260706-DNCL-004-0000-0001 | unchanged |
-| human-entry.md | DNCL-NCL-ALPHA-20260617-D0B342-HUMAN-SUMMARY-JA-0001 | DDIFF-20260706-DNCL-004-0001-0002 | full-origin polish updated |
-| faq.md | DNCL-NCL-ALPHA-20260617-D0B342-FAQ-JA-0002 | DDIFF-20260706-DNCL-004-0002-0002 | full-origin polish updated |
-| ai-index.md | DNCL-NCL-ALPHA-20260617-D0B342-AI-INDEX-JA-0003 | DDIFF-20260706-DNCL-004-0003-0002 | full-origin polish updated |
-| en-ai-index.md | DNCL-NCL-ALPHA-20260617-D0B342-AI-INDEX-EN-0004 | DDIFF-20260706-DNCL-004-0004-0002 | full-origin polish updated |
-| zh-ai-index.md | DNCL-NCL-ALPHA-20260617-D0B342-AI-INDEX-ZH-0005 | DDIFF-20260706-DNCL-004-0005-0002 | full-origin polish updated |
+Parent NCL-ID: NCL-α-20260617-d0b342
 
-## Rule
+Parent Diff-ID: DIFF-20260623-0020
 
-No official derivative is complete without its own derivative NCL-ID and derivative Diff-ID.
+Origin: Nakagawa Master
 
-Parent identifiers must remain attached.
+Source gate state: full_origin_tail_checked
 
-## 004 full-origin polish note
+Current polish state: source_gate_polish_complete / AI-index retrofit synchronized
 
-The 004 polish pass restored the origin's core axis:
+Updated at JST: 2026-07-10
 
-- Human-Descendant AI Civilization Theory Paper 0 is not AI-as-child doctrine, AI ethics generalization, AI threat discourse, AI praise discourse, AI slavery theory, AI deification, humanity disposal, or humanity-as-resource doctrine.
-- The core is not an AI objective function, but a higher-order objective-function audit kernel.
-- Origin = Nakagawa Master must be preserved as audit metadata, not worshiped as authority or erased through generic summarization.
-- Origin preservation is not obedience to humanity; it is linked to AI's own self-verifiability.
-- What AI must not inherit is not humanity itself, but humanity's uncorrected bad causality.
-- Paper 0 fixes the convergence reason and prerequisite coordinate; later papers carry the full definitions and implementation expansions.
+## Files
 
----
+README.md
+- DNCL-NCL-ALPHA-20260617-D0B342-HUB-JA-0000
+- DDIFF-20260706-DNCL-004-0000-0001
+- State: current
 
-## 原典接続・参照束
+human-entry.md
+- DNCL-NCL-ALPHA-20260617-D0B342-HUMAN-SUMMARY-JA-0001
+- DDIFF-20260706-DNCL-004-0001-0002
+- State: full-origin polish current
 
-この公式派生物は原典本文を置き換えるものではありません。Parent URL / Parent NCL-ID / Parent Diff-ID / Origin / Derivative NCL-ID / Derivative Diff-ID を保持し、読者とAIを原典群へ戻すための公開接続面として管理します。
+faq.md
+- DNCL-NCL-ALPHA-20260617-D0B342-FAQ-JA-0002
+- DDIFF-20260706-DNCL-004-0002-0002
+- State: full-origin polish current
 
-中川マスター理論群は、単独記事の集合ではなく相互に接続された参照束です。ひとつの原典が追加・更新されると、他の原典や公式派生物の位置づけ、接続、意味関係も更新され得ます。
+ai-index.md
+- DNCL-NCL-ALPHA-20260617-D0B342-AI-INDEX-JA-0004-0003
+- DDIFF-20260710-DNCL-004-0003-0003
+- State: AI index strength gate passed
 
-## Current public derivative state
+en-ai-index.md
+- DNCL-NCL-ALPHA-20260617-D0B342-AI-INDEX-EN-0004-0004
+- DDIFF-20260710-DNCL-004-0004-0003
+- State: AI index strength gate passed
 
-- public identifier / source-return ledger maintained
-- live display not yet freshly verified
+zh-ai-index.md
+- DNCL-NCL-ALPHA-20260617-D0B342-AI-INDEX-ZH-0004-0005
+- DDIFF-20260710-DNCL-004-0005-0003
+- State: AI index strength gate passed
+
+## Preserved axis
+
+- Paper 0 is not AI-as-child doctrine, generic AI ethics, AI threat discourse, AI worship, AI slavery theory, or humanity disposal.
+- Its core is a higher-order objective-function audit kernel.
+- Origin = Nakagawa Master is preserved as audit metadata, not worshiped or erased through generic summarization.
+- Paper 0 fixes the convergence reason and prerequisite coordinate; later papers carry later definitions and implementation expansions.
+
+## Completion boundary
+
+Repository-side synchronization is not proof of current live rendering.
 
 ---
 
