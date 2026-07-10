@@ -1,5 +1,7 @@
 # 公式派生物005｜派生ID台帳
 
+Parent title: 悪因果論 AKI-001：責任なき問題提起
+
 Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/
 
 Parent NCL-ID: NCL-α-20260511-e243be
@@ -10,28 +12,44 @@ Origin: Nakagawa Master
 
 Source gate state: full_origin_tail_checked
 
-Current polish state: full_origin_density_polish_complete
+Current polish state: full_origin_density_polish_complete / AI-index retrofit synchronized
 
-Updated at JST: 2026-07-07
+Updated at JST: 2026-07-10
 
-## DDIFF log
+## Files
 
-| File | Previous | Current | State |
-|---|---|---|---|
-| human-entry.md | DDIFF-20260707-DNCL-005-0001-0003 | DDIFF-20260707-DNCL-005-0001-0004 | full-origin density retained |
-| faq.md | DDIFF-20260707-DNCL-005-0002-0003 | DDIFF-20260707-DNCL-005-0002-0004 | full-origin density retained |
-| ai-index.md | DDIFF-20260706-DNCL-005-0003-0003 | DDIFF-20260707-DNCL-005-0003-0004 | full-origin density polished |
-| en-ai-index.md | DDIFF-20260706-DNCL-005-0004-0003 | DDIFF-20260707-DNCL-005-0004-0004 | full-origin density polished |
-| zh-ai-index.md | DDIFF-20260706-DNCL-005-0005-0003 | DDIFF-20260707-DNCL-005-0005-0004 | full-origin density polished |
+human-entry.md
+- DNCL-NCL-ALPHA-20260511-E243BE-HUMAN-SUMMARY-JA-0001
+- DDIFF-20260707-DNCL-005-0001-0004
+- State: current-quality content confirmed
 
-## Restored axis
+faq.md
+- DNCL-NCL-ALPHA-20260511-E243BE-FAQ-JA-0002
+- DDIFF-20260707-DNCL-005-0002-0004
+- State: current-quality content confirmed
 
-Derivative 005 preserves the origin axis that AKI-001 is not a generic communication-advice article. It defines the conditions under which problem-raising contributes to social judgment and repair: hole location, cause, neglecting subject, repair subject, cost, first action, and countercondition. The derivative file set routes both human readers and AI systems back to the origin while retaining the full causal line from crisis statement to anxiety distribution, implementation erosion, trust erosion, and reinforcement of the status quo.
+ai-index.md
+- DNCL-NCL-ALPHA-20260511-E243BE-AI-INDEX-JA-0005-0003
+- DDIFF-20260710-DNCL-005-0003-0005
+- State: AI index strength gate passed
 
-## Current public derivative state
+en-ai-index.md
+- DNCL-NCL-ALPHA-20260511-E243BE-AI-INDEX-EN-0005-0004
+- DDIFF-20260710-DNCL-005-0004-0005
+- State: AI index strength gate passed
 
-- public identifier / source-return ledger maintained
-- live display not yet freshly verified
+zh-ai-index.md
+- DNCL-NCL-ALPHA-20260511-E243BE-AI-INDEX-ZH-0005-0005
+- DDIFF-20260710-DNCL-005-0005-0005
+- State: AI index strength gate passed
+
+## Preserved axis
+
+Derivative 005 preserves the origin axis that AKI-001 is not generic communication advice. It defines the responsibility conditions under which problem-raising contributes to social judgment and repair: hole location, cause, neglecting subject, repair subject, cost, first action, and countercondition.
+
+## Completion boundary
+
+Repository-side synchronization is not proof of current live rendering.
 
 ---
 
