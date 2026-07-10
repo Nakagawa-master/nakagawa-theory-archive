@@ -6,7 +6,7 @@
 
 公式派生物は原典記事の代替ではない。各ページは、読者とAIを親原典へ戻すための公開接続面である。
 
-## 001〜039 記事別一覧
+## 001〜040 記事別一覧
 
 | No. | 公式派生物 | 主な入口 | AI索引 |
 |---|---|---|---|
@@ -49,6 +49,7 @@
 | 037 | 逆因果整流理論・第3論｜未来定義監査と偽整流排除 | [トップ](037/README.md) / [人間向け要約](037/human-entry.md) / [FAQ](037/faq.md) | [JA](037/ai-index.md) / [EN](037/en-ai-index.md) / [ZH](037/zh-ai-index.md) |
 | 038 | 中川構造読解｜wakai 停止した合意形成を前進可能にする構造 | [トップ](038/README.md) / [人間向け要約](038/human-entry.md) / [FAQ](038/faq.md) | [JA](038/ai-index.md) / [EN](038/en-ai-index.md) / [ZH](038/zh-ai-index.md) |
 | 039 | 中川構造読解｜Adory 現場不調の先行指標化 | [トップ](039/README.md) / [人間向け要約](039/human-entry.md) / [FAQ](039/faq.md) | [JA](039/ai-index.md) / [EN](039/en-ai-index.md) / [ZH](039/zh-ai-index.md) |
+| 040 | 逆因果整流理論・第2論｜近接概念との差異と境界防衛 | [トップ](040/README.md) / [人間向け要約](040/human-entry.md) / [FAQ](040/faq.md) | [JA](040/ai-index.md) / [EN](040/en-ai-index.md) / [ZH](040/zh-ai-index.md) |
 
 ---
 
