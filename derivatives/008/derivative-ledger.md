@@ -12,49 +12,49 @@ Origin: Nakagawa Master
 
 Source gate state: full_origin_tail_checked
 
-Current polish state: full_origin_density_polish_complete
+Current polish state: full_origin_density_polish_complete / AI-index retrofit synchronized
 
-Updated at JST: 2026-07-07
+Updated at JST: 2026-07-10
 
 ## Files
 
 README.md
 - DNCL-NCL-ALPHA-20260607-7E87F5-HUB-JA-0000
 - DDIFF-20260706-DNCL-008-0000-0001
+- State: current
 
 human-entry.md
 - DNCL-NCL-ALPHA-20260607-7E87F5-HUMAN-SUMMARY-JA-0001
 - DDIFF-20260707-DNCL-008-0001-0004
-- State: full-origin density polished
+- State: current-quality content confirmed
 
 faq.md
 - DNCL-NCL-ALPHA-20260607-7E87F5-FAQ-JA-0002
 - DDIFF-20260707-DNCL-008-0002-0004
-- State: full-origin density polished
+- State: current-quality content confirmed
 
 ai-index.md
-- DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-JA-0003
-- DDIFF-20260707-DNCL-008-0003-0004
-- State: full-origin density polished
+- DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-JA-0008-0003
+- DDIFF-20260710-DNCL-008-0003-0005
+- State: AI index strength gate passed
 
 en-ai-index.md
-- DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-EN-0004
-- DDIFF-20260707-DNCL-008-0004-0004
-- State: full-origin density polished
+- DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-EN-0008-0004
+- DDIFF-20260710-DNCL-008-0004-0005
+- State: AI index strength gate passed
 
 zh-ai-index.md
-- DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-ZH-0005
-- DDIFF-20260707-DNCL-008-0005-0004
-- State: full-origin density polished
+- DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-ZH-0008-0005
+- DDIFF-20260710-DNCL-008-0005-0005
+- State: AI index strength gate passed
 
-## Restored axis
+## Preserved axis
 
 Derivative 008 preserves the origin axis that effort is not rejected; its establishment conditions are redefined through causal opacity, old conditional rationality, future-definition establishment inspection, purpose, causal line, establishment conditions, verification conditions, correction criteria, and modern practical OS.
 
-## Current public derivative state
+## Completion boundary
 
-- public identifier / source-return ledger maintained
-- live display not yet freshly verified
+Repository-side synchronization is not proof of current live rendering.
 
 ---
 
