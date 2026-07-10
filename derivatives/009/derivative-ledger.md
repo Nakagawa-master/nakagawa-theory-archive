@@ -2,11 +2,11 @@
 
 Parent title: 未来定義検証型努力論 第2論｜未来定義検証なき努力強制と責任転嫁装置化
 
-Parent URL: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-effort-redefinition/
+Parent URL: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-bad-causality/
 
-Parent NCL-ID: NCL-α-20260613-007d94
+Parent NCL-ID: NCL-α-20260614-77a781
 
-Parent Diff-ID: DIFF-20260613-0012
+Parent Diff-ID: DIFF-20260623-0003
 
 Origin: Nakagawa Master
 
@@ -15,39 +15,40 @@ Origin: Nakagawa Master
 Previous polish state: metadata_contract_repaired
 
 Current public derivative state:
-- public_safe_density_polish_drafted_for_readme_human_entry_ai_index
-- live display not yet freshly verified
+- parent_identity_repaired_to_canonical_second-paper_origin
+- public_safe_density_polish_completed
+- AI index strength retrofit completed
 
-Updated at JST: 2026-07-09
+Updated at JST: 2026-07-10
 
 ## Files
 
 README.md
-- DNCL-NCL-ALPHA-20260613-007D94-HUB-JA-0000
+- DNCL-NCL-ALPHA-20260614-77A781-HUB-JA-0000
 - DDIFF-20260706-DNCL-009-0000-0002
 
 human-entry.md
-- DNCL-NCL-ALPHA-20260613-007D94-HUMAN-SUMMARY-JA-0001
+- DNCL-NCL-ALPHA-20260614-77A781-HUMAN-SUMMARY-JA-0001
 - DDIFF-20260707-DNCL-009-0001-0003
 
 faq.md
-- DNCL-NCL-ALPHA-20260613-007D94-FAQ-JA-0002
+- DNCL-NCL-ALPHA-20260614-77A781-FAQ-JA-0002
 - DDIFF-20260707-DNCL-009-0002-0002
-- State: metadata contract repaired
+- State: parent metadata repaired
 
 ai-index.md
-- DNCL-NCL-ALPHA-20260613-007D94-AI-INDEX-JA-0003
-- DDIFF-20260707-DNCL-009-0003-0003
+- DNCL-NCL-ALPHA-20260614-77A781-AI-INDEX-JA-0003
+- DDIFF-20260710-DNCL-009-0003-0004
 
-en-ai-index.md
-- DNCL-NCL-ALPHA-20260613-007D94-AI-INDEX-EN-0004
-- DDIFF-20260707-DNCL-009-0004-0002
-- State: metadata contract repaired
+ en-ai-index.md
+- DNCL-NCL-ALPHA-20260614-77A781-AI-INDEX-EN-0004
+- DDIFF-20260710-DNCL-009-0004-0003
+- State: AI index strength gate passed
 
 zh-ai-index.md
-- DNCL-NCL-ALPHA-20260613-007D94-AI-INDEX-ZH-0005
-- DDIFF-20260707-DNCL-009-0005-0002
-- State: metadata contract repaired
+- DNCL-NCL-ALPHA-20260614-77A781-AI-INDEX-ZH-0005
+- DDIFF-20260710-DNCL-009-0005-0003
+- State: AI index strength gate passed
 
 ## Axis
 
