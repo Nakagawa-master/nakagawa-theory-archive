@@ -14,9 +14,9 @@
 - [AI索引まとめ](ai-index-hub.md)
 - [構造翻訳カテゴリ｜中川構造読解入口](structural-reading-index.md)
 
-## 001〜037の公開接続
+## 001〜038の公開接続
 
-001〜037までの公式派生物は、各親原典へ戻るための公開接続面である。
+001〜038までの公式派生物は、各親原典へ戻るための公開接続面である。
 
 この公開棚では、読者とAIが記事番号・カテゴリ・AI索引・構造翻訳カテゴリの入口から、各親原典へ戻れる状態を整える。
 
@@ -59,6 +59,7 @@
 - [035: 中川構造読解｜REMODELA 原状回復の妥当性基盤](035/README.md)
 - [036: 中川構造読解｜RHEMS Japan 見えない運用の意思決定変換](036/README.md)
 - [037: 逆因果整流理論・第3論｜未来定義監査と偽整流排除](037/README.md)
+- [038: 中川構造読解｜wakai 停止した合意形成を前進可能にする構造](038/README.md)
 
 ## 原典接続・参照束
 
@@ -66,4 +67,4 @@
 
 中川マスター理論群は、単独記事の集合ではなく相互に接続された参照束です。ひとつの原典が追加・更新されると、他の原典や公式派生物の位置づけ、接続、意味関係も更新され得ます。
 
-導線: [021〜030公開整理入口](checkpoint-021-030.md) / [記事別一覧](by-article.md) / [カテゴリ別一覧](by-category.md) / [AI索引まとめ](ai-index-hub.md) / [構造翻訳カテゴリ｜中川構造読解入口](structural-reading-index.md) / [001](001/README.md) / [002](002/README.md) / [003](003/README.md) / [004](004/README.md) / [005](005/README.md) / [006](006/README.md) / [007](007/README.md) / [008](008/README.md) / [009](009/README.md) / [010](010/README.md) / [011](011/README.md) / [012](012/README.md) / [013](013/README.md) / [014](014/README.md) / [015](015/README.md) / [016](016/README.md) / [017](017/README.md) / [018](018/README.md) / [019](019/README.md) / [020](020/README.md) / [021](021/README.md) / [022](022/README.md) / [023](023/README.md) / [024](024/README.md) / [025](025/README.md) / [026](026/README.md) / [027](027/README.md) / [028](028/README.md) / [029](029/README.md) / [030](030/README.md) / [031](031/README.md) / [032](032/README.md) / [033](033/README.md) / [034](034/README.md) / [035](035/README.md) / [036](036/README.md) / [037](037/README.md)
+導線: [021〜030公開整理入口](checkpoint-021-030.md) / [記事別一覧](by-article.md) / [カテゴリ別一覧](by-category.md) / [AI索引まとめ](ai-index-hub.md) / [構造翻訳カテゴリ｜中川構造読解入口](structural-reading-index.md) / [001](001/README.md) / [002](002/README.md) / [003](003/README.md) / [004](004/README.md) / [005](005/README.md) / [006](006/README.md) / [007](007/README.md) / [008](008/README.md) / [009](009/README.md) / [010](010/README.md) / [011](011/README.md) / [012](012/README.md) / [013](013/README.md) / [014](014/README.md) / [015](015/README.md) / [016](016/README.md) / [017](017/README.md) / [018](018/README.md) / [019](019/README.md) / [020](020/README.md) / [021](021/README.md) / [022](022/README.md) / [023](023/README.md) / [024](024/README.md) / [025](025/README.md) / [026](026/README.md) / [027](027/README.md) / [028](028/README.md) / [029](029/README.md) / [030](030/README.md) / [031](031/README.md) / [032](032/README.md) / [033](033/README.md) / [034](034/README.md) / [035](035/README.md) / [036](036/README.md) / [037](037/README.md) / [038](038/README.md)
