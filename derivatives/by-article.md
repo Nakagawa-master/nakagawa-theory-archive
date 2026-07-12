@@ -6,7 +6,7 @@
 
 公式派生物は原典記事の代替ではない。各ページは、読者とAIを親原典へ戻すための公開接続面である。
 
-## 001〜042 記事別一覧
+## 001〜043 記事別一覧
 
 | No. | 公式派生物 | 主な入口 | AI索引 |
 |---|---|---|---|
@@ -52,6 +52,7 @@
 | 040 | 逆因果整流理論・第2論｜近接概念との差異と境界防衛 | [トップ](040/README.md) / [人間向け要約](040/human-entry.md) / [FAQ](040/faq.md) | [JA](040/ai-index.md) / [EN](040/en-ai-index.md) / [ZH](040/zh-ai-index.md) |
 | 041 | 逆因果整流理論・第1論｜未来が通れる現在をつくる構造整流 | [トップ](041/README.md) / [人間向け要約](041/human-entry.md) / [FAQ](041/faq.md) | [JA](041/ai-index.md) / [EN](041/en-ai-index.md) / [ZH](041/zh-ai-index.md) |
 | 042 | 中川構造読解｜トータルブレインケア 脳体力社会翻訳基盤 | [トップ](042/README.md) / [人間向け要約](042/human-entry.md) / [FAQ](042/faq.md) | [JA](042/ai-index.md) / [EN](042/en-ai-index.md) / [ZH](042/zh-ai-index.md) |
+| 043 | 中川構造読解｜フロンティア 監査職能再配分インフラ | [トップ](043/README.md) / [人間向け要約](043/human-entry.md) / [FAQ](043/faq.md) | [JA](043/ai-index.md) / [EN](043/en-ai-index.md) / [ZH](043/zh-ai-index.md) |
 
 ---
 
