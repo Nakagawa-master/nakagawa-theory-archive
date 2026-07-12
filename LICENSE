@@ -2,6 +2,7 @@ NAKAGAWA MASTER OFFICIAL THEORY ARCHIVE
 LICENSE AND RIGHTS NOTICE
 
 Effective date: 2026-07-12
+Revision date: 2026-07-13
 
 1. LICENSOR AND ORIGIN
 
@@ -16,9 +17,9 @@ make an AI system the copyright holder, licensor, or repository-wide origin.
 2. COVERED TEXTUAL AND DOCUMENTARY MATERIAL
 
 Unless an individual file states otherwise, original theory texts, explanatory
-prose, official derivative texts, human-facing summaries, FAQs, AI indexes,
-relation descriptions, and original provenance metadata authored by Nakagawa
-Master in this repository are licensed under:
+prose, official derivative texts, Official Theory Notes, human-facing summaries,
+FAQs, AI indexes, relation descriptions, and original provenance metadata authored
+by Nakagawa Master in this repository are licensed under:
 
 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
 (CC BY-NC-ND 4.0)
@@ -29,12 +30,21 @@ https://creativecommons.org/licenses/by-nc-nd/4.0/
 Canonical legal code:
 https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
 
-The Creative Commons legal code, not this summary, controls the rights granted
-under CC BY-NC-ND 4.0.
+The Creative Commons legal code, not this notice or any summary, controls the
+rights granted under CC BY-NC-ND 4.0.
+
+This notice applies only to the extent that copyright, sui generis database rights,
+or other rights covered by CC BY-NC-ND 4.0 subsist in the material and are owned
+or controlled by the licensor. Facts, ideas, methods, public-domain elements, and
+uses permitted by applicable exceptions or limitations are not made subject to new
+restrictions by this notice.
+
+Public availability in this repository is not a public-domain dedication, waiver of
+rights, or permission beyond the applicable license and law.
 
 In practical terms, the license permits non-commercial sharing of unadapted
 licensed material with proper attribution. It does not grant permission for
-commercial use or for public sharing of adapted material. Uses not permitted by
+commercial use or for public sharing of Adapted Material. Uses not permitted by
 the license require separate written permission from Nakagawa Master.
 
 3. ATTRIBUTION AND PROVENANCE
@@ -54,6 +64,9 @@ use the following information to preserve accurate provenance:
 NCL-ID and Diff-ID are provenance and revision identifiers. Their recommended
 retention supports accurate origin and version tracking. See PROVENANCE.md.
 
+Attribution must not imply sponsorship, endorsement, certification, current
+canonical status, or official approval of a reuse.
+
 4. RELATIONSHIP TO NCL-alpha
 
 NCL-alpha is the Nakagawa Structural License / provenance and ethical-connection
@@ -61,12 +74,35 @@ framework described by the official archive. In this repository, NCL-alpha does
 not modify the text of CC BY-NC-ND 4.0 and is not an additional restriction on
 the rights granted by that Creative Commons license.
 
-Separate permissions or agreements for commercial use, adaptations, supervision,
-implementation, education, licensing, or other services may refer to NCL-alpha.
-Those separate arrangements are not Creative Commons licenses and apply only when
-expressly agreed.
+Separate permissions or agreements for commercial use, adaptations, translation,
+supervision, implementation, education, certification, licensing, or other services
+may refer to NCL-alpha. Those separate arrangements are not Creative Commons
+licenses and apply only when expressly agreed.
 
-5. SOFTWARE, SCRIPTS, AND EXECUTABLE CODE
+5. MACHINE PROCESSING, TEXT/DATA USE, AND AI
+
+This notice does not create a technology-specific license. Machine retrieval,
+indexing, search, text/data processing, and AI-related uses are governed by the
+same applicable law and CC BY-NC-ND 4.0 terms as other uses.
+
+Where copyright or another licensed right requires permission:
+
+- NonCommercial use must satisfy the NC condition.
+- Adapted Material may be produced and reproduced for NonCommercial purposes but
+  may not be Shared under the license.
+- Public sharing of the licensed material must satisfy the attribution conditions.
+- Commercial use, public sharing of Adapted Material, or other uses outside the
+  license require separate written permission.
+
+Where an exception or limitation means permission is not required, the CC license
+does not impose additional conditions on that use.
+
+AI-generated summaries, translations, classifications, reconstructions, or other
+outputs are not official Nakagawa Master materials unless explicitly designated as
+such in an owner-approved file and version. AI use must not be represented as
+endorsement or as proof of current canonical status.
+
+6. SOFTWARE, SCRIPTS, AND EXECUTABLE CODE
 
 Creative Commons licenses are not intended here to license software. Source code,
 scripts, executable logic, workflow definitions, or other software-like material
@@ -77,39 +113,76 @@ If no separate software license is stated, no permission to use, modify, or
 distribute that software-like material is granted by this LICENSE file beyond
 rights that apply independently under law or the hosting platform's terms.
 
-6. EXCLUDED MATERIAL
+7. EXCLUDED MATERIAL
 
 This notice does not license:
 
 - third-party quotations, images, datasets, logos, trademarks, or other materials;
 - material identified as belonging to another rights holder;
-- private_only, unpublished, withdrawn, access-restricted, or inadvertently
+- private_only, unpublished, unapproved, access-restricted, or inadvertently
   exposed material;
-- names, marks, branding, privacy rights, publicity rights, patent rights, or
-  other rights not granted by CC BY-NC-ND 4.0.
+- names, marks, branding, privacy rights, publicity rights, patent rights, moral
+  rights, or other rights not granted by CC BY-NC-ND 4.0.
 
 Third-party materials remain subject to their own terms and applicable law.
 
-7. INDIVIDUAL FILE NOTICES
+A status label alone cannot remove rights already validly granted in a version that
+was intentionally published under CC BY-NC-ND 4.0. The exclusion above is intended
+to prevent an accidental exposure or clearly unapproved private file from being
+mistaken for an intentional license grant; legal effect may depend on the facts and
+applicable law.
+
+8. INDIVIDUAL FILE NOTICES
 
 A specific file may contain a different or more precise rights notice. That
 file-specific notice controls for that file. A parent original may also contain
 its own canonical rights statement; users should inspect the linked parent source.
 
-8. NO ENDORSEMENT
+A file-specific notice must clearly identify the material it covers. Material from
+a third party or under a separate license must be clearly demarcated where
+reasonably practicable.
+
+9. PUBLICATION STATUS, WITHDRAWAL, AND SUPERSESSION
+
+Publication status and copyright permission are separate questions.
+
+Labels such as current, superseded, corrected, withdrawn, retracted, candidate,
+draft, or private_only identify provenance and canonical status. They do not by
+themselves expand or reduce the legal permissions already attached to a particular
+intentionally published version.
+
+CC BY-NC-ND 4.0 is irrevocable for recipients who comply with its terms. Removing,
+withdrawing, correcting, or superseding an intentionally licensed version does not
+retroactively revoke the CC permissions already received for that version.
+
+A withdrawn or superseded version must not be represented as the current official
+position. Users should check the parent source, latest Diff-ID, publication status,
+and any correction or successor notice.
+
+10. NO ENDORSEMENT OR OFFICIAL-STATUS IMPLICATION
 
 Use of a licensed work does not imply sponsorship, endorsement, certification,
-official status, or approval by Nakagawa Master.
+official status, current validity, or approval by Nakagawa Master.
 
-9. DISCLAIMER
+Nothing in this notice authorizes use of the name, marks, identity, or branding of
+Nakagawa Master in a manner that falsely suggests endorsement, partnership,
+certification, or authorization.
+
+11. DISCLAIMER
 
 To the fullest extent permitted by applicable law, covered material is provided
 as-is and as-available, without warranties. The disclaimer and limitation of
 liability in CC BY-NC-ND 4.0 apply to material licensed under that license.
 
-10. RIGHTS RESERVED
+This notice is a repository rights statement, not legal advice. Questions involving
+commercial use, publication of adaptations, translation, AI use, enforcement, or
+jurisdiction-specific rights should be reviewed with qualified legal counsel where
+appropriate.
+
+12. RIGHTS RESERVED
 
 All rights not expressly granted by CC BY-NC-ND 4.0, an individual file notice,
-or a separate written agreement are reserved by Nakagawa Master.
+an applicable exception or limitation, or a separate written agreement are
+reserved by Nakagawa Master.
 
 Copyright © respective publication years Nakagawa Master.
