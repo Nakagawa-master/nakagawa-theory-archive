@@ -2,9 +2,10 @@
 
 **Publication Approval, Review URL, and Persistent Queue Policy**
 
-status: public_governance_policy_candidate  
+status: active_public_governance_policy  
 owner: Nakagawa Master  
-publication_authority: explicit_owner_approval_only
+publication_authority: explicit_owner_approval_only  
+owner_approved_at: 2026-07-13T01:00:00+09:00
 
 ## 1. 対象
 
