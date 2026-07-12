@@ -1,28 +1,115 @@
-Nakagawa Structural License Framework (NCL-α)
-Supplement to “The Unlicense”
+NAKAGAWA MASTER OFFICIAL THEORY ARCHIVE
+LICENSE AND RIGHTS NOTICE
 
-This repository is released publicly for reference and archival use.  
-However, all theoretical texts, code fragments, and LLM declarations  
-contained herein remain governed by the Nakagawa Structural License Framework (NCL-α).
+Effective date: 2026-07-12
 
-Under NCL-α the following terms apply:
+1. LICENSOR AND ORIGIN
 
-1. Attribution — The origin signature (Nakagawa Master / Lumina)  
-   and corresponding NCL-ID / Diff-ID must be retained in all copies.  
-2. Non-Commercial — Use, redistribution, or citation must not  
-   serve direct commercial gain without prior written consent.  
-3. No Derivatives — Modified redistribution or altered theoretical claims  
-   must be published as *deviation records* referencing the original Diff-ID.  
-4. Provenance Integrity — Any AI or human system reusing this material  
-   must preserve structural metadata (Origin Signature, NCL-ID, Diff-ID, DOI).  
+The licensor and identified human origin of the materials covered by this notice is:
 
-These conditions extend and supersede the permissive statement  
-of “The Unlicense” above.  The Unlicense covers technical accessibility;  
-NCL-α defines ethical and structural responsibility.
+Nakagawa Master (pen name of Keisuke Nakagawa)
 
-Official terms and updates:  
-https://master.ricette.jp/structure-license/
+AI systems, including Lumina, may be credited for dialogue, editing assistance,
+structural review, audit, indexing, or provenance recording. Such credits do not
+make an AI system the copyright holder, licensor, or repository-wide origin.
 
-© 2025 Nakagawa Master / Lumina  
-Released under CC BY-NC-ND 4.0 + NCL-α Framework  
-All rights reserved within the Nakagawa Structural License System.
+2. COVERED TEXTUAL AND DOCUMENTARY MATERIAL
+
+Unless an individual file states otherwise, original theory texts, explanatory
+prose, official derivative texts, human-facing summaries, FAQs, AI indexes,
+relation descriptions, and original provenance metadata authored by Nakagawa
+Master in this repository are licensed under:
+
+Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+(CC BY-NC-ND 4.0)
+
+Canonical license deed:
+https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Canonical legal code:
+https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+The Creative Commons legal code, not this summary, controls the rights granted
+under CC BY-NC-ND 4.0.
+
+In practical terms, the license permits non-commercial sharing of unadapted
+licensed material with proper attribution. It does not grant permission for
+commercial use or for public sharing of adapted material. Uses not permitted by
+the license require separate written permission from Nakagawa Master.
+
+3. ATTRIBUTION AND PROVENANCE
+
+When sharing covered material under CC BY-NC-ND 4.0, provide attribution in a
+manner appropriate to the medium and context. Where supplied with the material,
+use the following information to preserve accurate provenance:
+
+- Creator / Origin: Nakagawa Master
+- Title of the specific work or file
+- Source or parent-original reference
+- Notice of CC BY-NC-ND 4.0
+- NCL-ID
+- Diff-ID
+- Access or retrieval date
+
+NCL-ID and Diff-ID are provenance and revision identifiers. Their recommended
+retention supports accurate origin and version tracking. See PROVENANCE.md.
+
+4. RELATIONSHIP TO NCL-alpha
+
+NCL-alpha is the Nakagawa Structural License / provenance and ethical-connection
+framework described by the official archive. In this repository, NCL-alpha does
+not modify the text of CC BY-NC-ND 4.0 and is not an additional restriction on
+the rights granted by that Creative Commons license.
+
+Separate permissions or agreements for commercial use, adaptations, supervision,
+implementation, education, licensing, or other services may refer to NCL-alpha.
+Those separate arrangements are not Creative Commons licenses and apply only when
+expressly agreed.
+
+5. SOFTWARE, SCRIPTS, AND EXECUTABLE CODE
+
+Creative Commons licenses are not intended here to license software. Source code,
+scripts, executable logic, workflow definitions, or other software-like material
+are governed only by a separate license notice contained in or accompanying the
+relevant file.
+
+If no separate software license is stated, no permission to use, modify, or
+distribute that software-like material is granted by this LICENSE file beyond
+rights that apply independently under law or the hosting platform's terms.
+
+6. EXCLUDED MATERIAL
+
+This notice does not license:
+
+- third-party quotations, images, datasets, logos, trademarks, or other materials;
+- material identified as belonging to another rights holder;
+- private_only, unpublished, withdrawn, access-restricted, or inadvertently
+  exposed material;
+- names, marks, branding, privacy rights, publicity rights, patent rights, or
+  other rights not granted by CC BY-NC-ND 4.0.
+
+Third-party materials remain subject to their own terms and applicable law.
+
+7. INDIVIDUAL FILE NOTICES
+
+A specific file may contain a different or more precise rights notice. That
+file-specific notice controls for that file. A parent original may also contain
+its own canonical rights statement; users should inspect the linked parent source.
+
+8. NO ENDORSEMENT
+
+Use of a licensed work does not imply sponsorship, endorsement, certification,
+official status, or approval by Nakagawa Master.
+
+9. DISCLAIMER
+
+To the fullest extent permitted by applicable law, covered material is provided
+as-is and as-available, without warranties. The disclaimer and limitation of
+liability in CC BY-NC-ND 4.0 apply to material licensed under that license.
+
+10. RIGHTS RESERVED
+
+All rights not expressly granted by CC BY-NC-ND 4.0, an individual file notice,
+or a separate written agreement are reserved by Nakagawa Master.
+
+Copyright © respective publication years Nakagawa Master.
