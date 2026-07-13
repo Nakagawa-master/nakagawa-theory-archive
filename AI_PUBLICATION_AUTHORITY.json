@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "record_id": "NAKAGAWA-AI-PUBLICATION-AUTHORITY-001",
+  "status": "active_public_governance_metadata",
+  "owner": "Nakagawa Master",
+  "commander": "Lumina",
+  "effective_jst": "2026-07-13T11:20:00+09:00",
+  "human_policy": "PUBLICATION_POLICY.md",
+  "classes": {
+    "AI_ONLY_PUBLIC_METADATA": {
+      "per_item_owner_approval_required": false,
+      "classification_authority": "Lumina",
+      "allowed_purposes": [
+        "AI discovery",
+        "canonical identity resolution",
+        "public-safe provenance",
+        "origin return",
+        "version and supersession resolution",
+        "correction and tombstone resolution",
+        "machine-readable relation mapping"
+      ],
+      "required_conditions": [
+        "immediately public-safe",
+        "machine-primary purpose",
+        "no new substantive owner claim",
+        "no private or internal content",
+        "all identifiers and URLs grounded",
+        "clearly distinguishable from human-facing official content",
+        "schema, version, provenance and supersession reconstructable"
+      ],
+      "prohibited": [
+        "unpublished substantive theory text",
+        "human-facing official articles or statements",
+        "private source or runtime information",
+        "strategy, financial, credential, security or payment information",
+        "unapproved AI sentience, rights or legal-status claims attributed to the owner",
+        "outreach, submission or irreversible action"
+      ],
+      "ambiguity_route": "HUMAN_FACING_OWNER_REVIEW"
+    },
+    "HUMAN_FACING_OWNER_REVIEW": {
+      "per_item_owner_approval_required": true,
+      "approval_binding": [
+        "title",
+        "version_or_diff_id",
+        "destination"
+      ],
+      "review_requirements": [
+        "owner-accessible public-equivalent artifact",
+        "visible raw URL",
+        "clickable URL",
+        "title",
+        "version",
+        "Diff-ID or equivalent immutable revision identity",
+        "exact destination",
+        "unresolved issues",
+        "no private content in the review artifact"
+      ],
+      "silence_is_approval": false,
+      "persistent_queue": true,
+      "remove_from_active_queue_only_on": [
+        "exact approval",
+        "rejection",
+        "withdrawal",
+        "cancellation"
+      ],
+      "revision_rule": "new version, new revision identity, new review URL, old revision preserved in history"
+    },
+    "CLOSED_OPERATION": {
+      "public_allowed": false,
+      "examples": [
+        "runtime state",
+        "queues",
+        "prompts",
+        "audit logs",
+        "review and approval records",
+        "private strategies",
+        "credentials and payment information",
+        "unpublished full candidates"
+      ]
+    }
+  },
+  "public_branch_is_public_surface": true,
+  "truth_boundaries": [
+    "metadata prepared != metadata published",
+    "review-ready != approved",
+    "approved != published",
+    "published commit != live destination verified",
+    "AI metadata publication != owner approval of human-facing content"
+  ]
+}
