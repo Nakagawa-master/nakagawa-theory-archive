@@ -93,6 +93,7 @@ This is a bounded non-canonical interpretation/translation artifact. It does not
 
 - Origin: Nakagawa Master
 - Canonical parent: **中川構造読解｜フロンティアに見た、AI監査を企業統治の実行基盤へ変換する内部監査再設計の構造**
+- Canonical parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-frontier-ai-audit-governance-structural-reading/
 - Parent NCL-ID: `NCL-α-20260527-b4d04d`
 - Parent Diff-ID: `DIFF-20260527-0005`
 - Official Derivative: `derivatives/043/README.md`
