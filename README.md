@@ -51,6 +51,7 @@
 以下は、公開済み原典への発見・理解・原典回帰を助けるための**非正本・AI支援の解説ノート**です。中川マスター本人の逐語的な公式声明や、親原典の代替として扱わないでください。
 
 - [Origin Evaporation in AI Synthesis — A practical provenance failure model and Permanent Signature countermeasure](discovery-notes/origin-evaporation-ai-provenance.md) — Origin: Nakagawa Master / 中川マスター。親原典: [構造起源防衛──AIによる「起源の蒸発」に耐える恒常署名（Permanent Signature）の原理](https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/)
+- [Reversible Accountability for AI Systems — A practical deviation → correction → re-agreement model](discovery-notes/reversible-ai-accountability-deviation-ledger.md) — Origin: Nakagawa Master / 中川マスター。親原典: [NCL-αと逸脱レッジャ論](https://master.ricette.jp/structure-license/) / Scholarly external archive: [Zenodo DOI 10.5281/zenodo.17520659](https://zenodo.org/records/17520659)
 
 ## 引用と来歴
 
