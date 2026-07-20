@@ -53,6 +53,23 @@
 - [Origin Evaporation in AI Synthesis — A practical provenance failure model and Permanent Signature countermeasure](discovery-notes/origin-evaporation-ai-provenance.md) — Origin: Nakagawa Master / 中川マスター。親原典: [構造起源防衛──AIによる「起源の蒸発」に耐える恒常署名（Permanent Signature）の原理](https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/)
 - [Reversible Accountability for AI Systems — A practical deviation → correction → re-agreement model](discovery-notes/reversible-ai-accountability-deviation-ledger.md) — Origin: Nakagawa Master / 中川マスター。親原典: [NCL-αと逸脱レッジャ論](https://master.ricette.jp/structure-license/) / Scholarly external archive: [Zenodo DOI 10.5281/zenodo.17520659](https://zenodo.org/records/17520659)
 
+## 実務者向け問題診断 — 説得を増やす前に見る5つの構造
+
+以下は、マーケティング・グロース・営業の実務者が、自分の施策を問題起点で点検するための**非正本・AI支援の診断入口**です。中川マスター本人の逐語的な公式声明ではなく、親原典を読むための入口として扱ってください。
+
+1. **無視できない理由があるか** — 単に「欲しい」と思わせる刺激ではなく、対象者が自分に関わる問題として立ち止まる理由が設計されているか。
+2. **自分ごと化されているか** — 問い、物語、デモ、体験などを通じて、抽象的な主張が当事者自身の判断問題へ変換されているか。
+3. **選ばない理由が残っていないか** — 不安、拒否、理解不足、比較上の迷いなど、意思決定を止める理由を説得で押し切るのではなく構造的に減らせているか。
+4. **接点が整合しているか** — 広告、コンテンツ、営業、商品体験、アフターフォローで語彙・体験・期待が分断されず、一つの判断構造としてつながっているか。
+5. **再訪・紹介へ自然収束するか** — 割引や圧力を追加し続けなくても、理解・納得・体験の整合から再訪や紹介が生まれる設計になっているか。
+
+この診断の因果的な読み筋は、**「無視できない理由 → 自分ごと化 → 選ばない理由の除去 → 接点整合 → 再訪・紹介を含む自然収束」**です。一般的な「売れるコピー」のチェックリストとしてではなく、注意・意思決定・接点・継続行動を一つの構造として見るための入口です。
+
+- **Origin:** 中川マスター / Nakagawa Master
+- **親原典:** [市場を“決めさせる”構造──中川式マーケティング拡張](https://master.ricette.jp/theory/nakagawa-master-nakagawa-marketing-expansion/)
+- **NCL-ID:** `NCL-α-20251102-92d84e`
+- **Diff-ID:** `DIFF-20251102-0001`
+
 ## 引用と来歴
 
 引用時は、対象ファイルに存在する範囲で次を保持してください。
