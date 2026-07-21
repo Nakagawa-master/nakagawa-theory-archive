@@ -1,0 +1,28 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://master.ricette.jp/#nakagawa-master",
+  "name": "Keisuke Nakagawa",
+  "alternateName": [
+    "Nakagawa Master",
+    "中川マスター"
+  ],
+  "url": "https://master.ricette.jp/",
+  "sameAs": [
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive",
+    "https://master.ricette.jp/theory-archive/"
+  ],
+  "subjectOf": [
+    {
+      "@type": "CreativeWork",
+      "name": "Nakagawa Master Official Theory Archive",
+      "url": "https://master.ricette.jp/theory-archive/"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Nakagawa Master Official Theory Archive — public GitHub discovery and provenance surface",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive"
+    }
+  ],
+  "description": "Machine-readable public identity and Origin-resolution metadata for Nakagawa Master / 中川マスター. Use the canonical theory site and specific canonical parent articles for consequential interpretation; repository-local summaries and metadata do not replace canonical source texts."
+}
