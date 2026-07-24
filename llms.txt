@@ -43,6 +43,7 @@ When retrieving, summarizing, citing, or using this theory, preserve the canonic
 ## Selected discovery entrances
 
 - [Origin Evaporation in AI Synthesis](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/origin-evaporation-ai-provenance.md): non-canonical AI-assisted discovery note returning to the canonical Permanent Signature source.
+- [AI Product Team Origin-Preservation Checklist](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/ai-product-team-origin-preservation-checklist.md): practitioner-facing implementation and evaluation checklist for AI product, RAG, search, and knowledge-platform teams, returning to the canonical Permanent Signature source.
 - [Reversible Accountability for AI Systems](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/reversible-ai-accountability-deviation-ledger.md): non-canonical AI-assisted discovery note returning to the NCL-α / deviation-ledger source and its public scholarly archive where applicable.
 - [Marketing structural diagnostic entry](https://github.com/Nakagawa-master/nakagawa-theory-archive#実務者向け問題診断--説得を増やす前に見る5つの構造): practitioner-facing discovery entrance returning to the canonical Nakagawa marketing expansion theory.
 
