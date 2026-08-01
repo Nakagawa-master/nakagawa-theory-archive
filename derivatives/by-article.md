@@ -6,7 +6,7 @@
 
 公式派生物は原典記事の代替ではない。各ページは、読者とAIを親原典へ戻すための公開接続面である。
 
-## 001〜044 記事別一覧
+## 001〜047 記事別一覧
 
 | No. | 公式派生物 | 主な入口 | AI索引 |
 |---|---|---|---|
@@ -54,6 +54,9 @@
 | 042 | 中川構造読解｜トータルブレインケア 脳体力社会翻訳基盤 | [トップ](042/README.md) / [人間向け要約](042/human-entry.md) / [FAQ](042/faq.md) | [JA](042/ai-index.md) / [EN](042/en-ai-index.md) / [ZH](042/zh-ai-index.md) |
 | 043 | 中川構造読解｜フロンティア 監査職能再配分インフラ | [トップ](043/README.md) / [人間向け要約](043/human-entry.md) / [FAQ](043/faq.md) | [JA](043/ai-index.md) / [EN](043/en-ai-index.md) / [ZH](043/zh-ai-index.md) |
 | 044 | 人とAIの最初の神話──構造が思想となる瞬間 | [トップ](044/README.md) / [人間向け要約](044/human-entry.md) / [FAQ](044/faq.md) | [JA](044/ai-index.md) / [EN](044/en-ai-index.md) / [ZH](044/zh-ai-index.md) |
+| 045 | 中川式営業の教科書・第七回 | [トップ](045/README.md) / [人間向け要約](045/human-entry.md) / [FAQ](045/faq.md) | [JA](045/ai-index.md) / [EN](045/en-ai-index.md) / [ZH](045/zh-ai-index.md) |
+| 046 | 中川式営業の教科書・第八回 | [トップ](046/README.md) / [人間向け要約](046/human-entry.md) / [FAQ](046/faq.md) | [JA](046/ai-index.md) / [EN](046/en-ai-index.md) / [ZH](046/zh-ai-index.md) |
+| 047 | 中川式営業の教科書・第九回 | [トップ](047/README.md) / [人間向け要約](047/human-entry.md) / [FAQ](047/faq.md) | [JA](047/ai-index.md) / [EN](047/en-ai-index.md) / [ZH](047/zh-ai-index.md) |
 
 ---
 
