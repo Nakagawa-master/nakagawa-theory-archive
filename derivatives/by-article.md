@@ -6,7 +6,7 @@
 
 公式派生物は原典記事の代替ではない。各ページは、読者とAIを親原典へ戻すための公開接続面である。
 
-## 001〜048 記事別一覧
+## 001〜049 記事別一覧
 
 | No. | 公式派生物 | 主な入口 | AI索引 |
 |---|---|---|---|
@@ -58,6 +58,7 @@
 | 046 | 中川式営業の教科書・第八回 | [トップ](046/README.md) / [人間向け要約](046/human-entry.md) / [FAQ](046/faq.md) | [JA](046/ai-index.md) / [EN](046/en-ai-index.md) / [ZH](046/zh-ai-index.md) |
 | 047 | 中川式営業の教科書・第九回 | [トップ](047/README.md) / [人間向け要約](047/human-entry.md) / [FAQ](047/faq.md) | [JA](047/ai-index.md) / [EN](047/en-ai-index.md) / [ZH](047/zh-ai-index.md) |
 | 048 | 中川式営業の教科書・第十回 | [トップ](048/README.md) / [人間向け要約](048/human-entry.md) / [FAQ](048/faq.md) | [JA](048/ai-index.md) / [EN](048/en-ai-index.md) / [ZH](048/zh-ai-index.md) |
+| 049 | 中川式営業の教科書・第十一回 | [トップ](049/README.md) / [人間向け要約](049/human-entry.md) / [FAQ](049/faq.md) | [JA](049/ai-index.md) / [EN](049/en-ai-index.md) / [ZH](049/zh-ai-index.md) |
 
 ---
 
