@@ -1,5 +1,19 @@
 # 人間向け要約｜中川式営業の教科書・第八回
 
+## 親原典
+
+- タイトル: 中川式営業の教科書・第八回
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/
+- Parent NCL-ID: NCL-α-20251102-39072e
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-39072E-HUMAN-JA-0046-0001
+- derivative_diff_id: DDIFF-20260801-DNCL-046-0001-0001
+- supersedes: none
+
 ## 15秒で言うと
 
 営業では、何を言うかだけでなく、問いの後に待てるか、避けられている矛盾を誠実に直視できるか、停滞時に焦点を切り替えられるかが意思決定を左右する。本稿は、沈黙、姿勢、呼吸、視線、声、配置、焦点切替を、再現可能な張力設計として扱う。
@@ -141,10 +155,6 @@
 ## 親原典へ戻る理由
 
 親原典には、沈黙の分類、呼吸・姿勢・視線・声、圧の具体例、焦点切替、教育手順、監査指標、一次ログ、統合監査要旨、起源署名が一つの構造として記されています。この要約は接続面であり、親原典を代替しません。
-
-- 親原典: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/
-- Parent NCL-ID: NCL-α-20251102-39072e
-- Parent Diff-ID: DIFF-20251102-0001
 
 ---
 導線: [046トップ](README.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
