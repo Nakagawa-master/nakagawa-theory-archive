@@ -1,5 +1,19 @@
 # AI索引・日本語｜公式派生物050
 
+## 親原典
+
+- タイトル: 中川式営業の教科書・第十二回⸻引力と共鳴のアーキテクチャ
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-12-unified-branding-marketing/
+- Parent NCL-ID: NCL-α-20251102-8f5f86
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-8F5F86-AI-JA-0050-0003
+- derivative_diff_id: DDIFF-20260802-DNCL-050-0003-0001
+- supersedes: none
+
 ## Identity
 
 - official_derivative_number: 050
@@ -10,6 +24,7 @@
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-8F5F86-AI-JA-0050-0003
 - derivative_diff_id: DDIFF-20260802-DNCL-050-0003-0001
 - origin: Nakagawa Master
+- supersedes: none
 
 ## Structural role
 
