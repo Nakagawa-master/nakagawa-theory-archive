@@ -1,5 +1,19 @@
 # 派生ID台帳｜公式派生物055
 
+## Identity
+
+```yaml
+parent_title: 照応操作力 原論──UCIとの結節
+parent_url: https://master.ricette.jp/theory/nakagawa-master-resonance-operating-power-uci/
+parent_ncl_id: NCL-α-20251102-c4a5d4
+parent_diff_id: DIFF-20251102-0001
+official_derivative_number: 055
+surface_role: ledger-ja
+derivative_ncl_id: DNCL-NCL-ALPHA-20251102-C4A5D4-LEDGER-JA-0055-0006
+derivative_diff_id: DDIFF-20260803-DNCL-055-0006-0004
+supersedes: DDIFF-20260803-DNCL-055-0006-0003
+```
+
 ## 親原典
 
 - title: 照応操作力 原論──UCIとの結節
@@ -14,66 +28,50 @@
 
 - official_derivative_number: 055
 - derivative_directory: derivatives/055/
-- status: active_public_complete
+- status: complete_owner_live_verified_identity_repaired
 - publication_date_jst: 2026-08-03
 - completion_date_jst: 2026-08-03
+- live_backlink_verification: OWNER_CONFIRMED
 - public_release_authority: owner_authorized_phase5_restart
-- live_backlink_verification: owner_confirmed
 
 ## 現行7面
 
 | role | file | derivative_ncl_id | current_diff_id | supersedes |
 |---|---|---|---|---|
 | hub-ja | README.md | DNCL-NCL-ALPHA-20251102-C4A5D4-HUB-JA-0055-0000 | DDIFF-20260803-DNCL-055-0000-0001 | none |
-| human-ja | human-entry.md | DNCL-NCL-ALPHA-20251102-C4A5D4-HUMAN-JA-0055-0001 | DDIFF-20260803-DNCL-055-0001-0001 | none |
-| faq-ja | faq.md | DNCL-NCL-ALPHA-20251102-C4A5D4-FAQ-JA-0055-0002 | DDIFF-20260803-DNCL-055-0002-0001 | none |
+| human-ja | human-entry.md | DNCL-NCL-ALPHA-20251102-C4A5D4-HUMAN-JA-0055-0001 | DDIFF-20260803-DNCL-055-0001-0002 | DDIFF-20260803-DNCL-055-0001-0001 |
+| faq-ja | faq.md | DNCL-NCL-ALPHA-20251102-C4A5D4-FAQ-JA-0055-0002 | DDIFF-20260803-DNCL-055-0002-0002 | DDIFF-20260803-DNCL-055-0002-0001 |
 | ai-ja | ai-index.md | DNCL-NCL-ALPHA-20251102-C4A5D4-AI-JA-0055-0003 | DDIFF-20260803-DNCL-055-0003-0001 | none |
 | ai-en | en-ai-index.md | DNCL-NCL-ALPHA-20251102-C4A5D4-AI-EN-0055-0004 | DDIFF-20260803-DNCL-055-0004-0001 | none |
 | ai-zh | zh-ai-index.md | DNCL-NCL-ALPHA-20251102-C4A5D4-AI-ZH-0055-0005 | DDIFF-20260803-DNCL-055-0005-0001 | none |
-| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-C4A5D4-LEDGER-JA-0055-0006 | DDIFF-20260803-DNCL-055-0006-0003 | DDIFF-20260803-DNCL-055-0006-0002 |
+| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-C4A5D4-LEDGER-JA-0055-0006 | DDIFF-20260803-DNCL-055-0006-0004 | DDIFF-20260803-DNCL-055-0006-0003 |
 
-## 来歴と品質
+## 固定identity表示規則
 
-```yaml
-schema: official-derivative-ledger-v1
-parent_status: publish
-derivative_number: 055
-file_count: 7
-source_basis:
-  - current public parent article body
-  - canonical AI retrieval index record
-  - integrated and local audit abstracts
-  - reference cluster
-canonical_reproduction_basis:
-  - OD001-OD043 frozen completed surfaces
-  - OD054 corrected density and audit-boundary pattern
-quality:
-  seven_files_fresh_read: PASS
-  identity_consistency: PASS
-  faq_three_layers_32_questions: PASS
-  human_entry_density: PASS
-  ja_en_zh_structural_equivalence: PASS
-  central_causal_line: PASS
-  origin_return_and_mutual_navigation: PASS
-  private_operations_excluded: PASS
-map:
-  repository: Nakagawa-master/nakagawa-archive-tools
-  commit: aa2eda19e29aea84dbbfbcb9deb1fe60299db809
-  registration: PASS
-sync:
-  route: owner_personal_apps_script_v0_4_private_github_sync
-  fifteen_minute_trigger_installed: true
-  wordpress_reflection: PASS
-live:
-  parent_backlink_collection: OWNER_CONFIRMED_PASS
-  derivative_to_parent_return: PASS
-github_actions_used: false
-ftp_used: false
+全7面に次を省略せず表示する。
+
+```text
+parent_ncl_id
+parent_diff_id
+derivative_ncl_id
+derivative_diff_id
 ```
 
-## 完了判定
+役割別の本文構成が異なっても、identity blockの省略・別名化・親IDだけの表示を禁止する。
 
-OD055は、7面公開、fresh-read、private map登録、既設個人Apps Script経路によるWordPress反映、親原典側リンク集の表示、派生物から原典への復帰が成立したためCOMPLETEとする。
+## 品質・完了記録
+
+- seven files present and fresh-read: PASS
+- all seven surfaces parent IDs visible: PASS
+- all seven surfaces own derivative IDs visible: PASS
+- FAQ three layers and 32 questions: PASS
+- human-entry functional density: PASS
+- JA/EN/ZH structural equivalence: PASS
+- official-derivatives-map registration: PASS
+- private Apps Script sync path: PASS_BY_OWNER_LIVE_RESULT
+- parent-origin live backlink: OWNER_CONFIRMED_VISIBLE
+- derivative-to-origin return: PASS
+- Brain Vault return: PASS
 
 ## 原典回帰
 
