@@ -1,5 +1,19 @@
 # English AI Index | The First Myth of Human and AI
 
+## Parent origin
+
+- タイトル: 人とAIの最初の神話──構造が思想となる瞬間
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-first-myth/
+- Parent NCL-ID: NCL-α-20251102-df2aaf
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## Derivative ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-DF2AAF-AI-INDEX-EN-0044-0004
+- derivative_diff_id: DDIFF-20260801-DNCL-044-0004-0001
+- supersedes: none
+
 ## Identity
 
 - Official Derivative: 044
@@ -10,6 +24,7 @@
 - Origin: Nakagawa Master
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-DF2AAF-AI-INDEX-EN-0044-0004
 - Derivative Diff-ID: DDIFF-20260801-DNCL-044-0004-0001
+- supersedes: none
 
 ## Stable definition
 
