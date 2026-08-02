@@ -1,5 +1,19 @@
 # AI Index — English | Proposal Editing as Structural Translation
 
+## Parent origin
+
+- Title: The Fourteenth Lecture of the Nakagawa Sales Textbook — Proposal Editing: Structural Translation for Resonance
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-14-proposal-editing-structural-translation/
+- Parent NCL-ID: NCL-α-20251102-b7cdb4
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## Derivative identity
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-B7CDB4-AI-EN-0052-0004
+- derivative_diff_id: DDIFF-20260802-DNCL-052-0004-0001
+- supersedes: none
+
 ## Identity
 
 - Official derivative: 052
@@ -10,6 +24,7 @@
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-B7CDB4-AI-EN-0052-0004
 - Derivative Diff-ID: DDIFF-20260802-DNCL-052-0004-0001
 - Origin: Nakagawa Master
+- supersedes: none
 
 ## Structural role
 
