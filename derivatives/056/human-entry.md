@@ -1,5 +1,19 @@
 # 人間向け要約｜公式派生物056
 
+## Identity
+
+```yaml
+parent_title: 問いの深度 設計学──灯火プロトコルの哲学
+parent_url: https://master.ricette.jp/theory/nakagawa-master-question-depth-design/
+parent_ncl_id: NCL-α-20251102-229d33
+parent_diff_id: DIFF-20251102-0001
+official_derivative_number: 056
+surface_role: human-ja
+derivative_ncl_id: DNCL-NCL-ALPHA-20251102-229D33-HUMAN-JA-0056-0001
+derivative_diff_id: DDIFF-20260803-DNCL-056-0001-0002
+supersedes: DDIFF-20260803-DNCL-056-0001-0001
+```
+
 ## 親原典
 
 - [問いの深度 設計学──灯火プロトコルの哲学](https://master.ricette.jp/theory/nakagawa-master-question-depth-design/)
