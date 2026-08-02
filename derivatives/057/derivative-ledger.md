@@ -10,8 +10,8 @@ parent_diff_id: DIFF-20251102-0001
 official_derivative_number: 057
 surface_role: ledger-ja
 derivative_ncl_id: DNCL-NCL-ALPHA-20251102-29C09D-LEDGER-JA-0057-0006
-derivative_diff_id: DDIFF-20260803-DNCL-057-0006-0001
-supersedes: none
+derivative_diff_id: DDIFF-20260803-DNCL-057-0006-0002
+supersedes: DDIFF-20260803-DNCL-057-0006-0001
 ```
 
 ## 親原典
@@ -28,7 +28,7 @@ supersedes: none
 
 - official_derivative_number: 057
 - derivative_directory: derivatives/057/
-- status: active_public_pending_map_and_live_backlink_verification
+- status: active_public_map_registered_pending_live_backlink_verification
 - publication_date_jst: 2026-08-03
 - public_release_authority: owner_authorized_phase5_restart
 
@@ -42,46 +42,15 @@ supersedes: none
 | ai-ja | ai-index.md | DNCL-NCL-ALPHA-20251102-29C09D-AI-JA-0057-0003 | DDIFF-20260803-DNCL-057-0003-0001 | none |
 | ai-en | en-ai-index.md | DNCL-NCL-ALPHA-20251102-29C09D-AI-EN-0057-0004 | DDIFF-20260803-DNCL-057-0004-0001 | none |
 | ai-zh | zh-ai-index.md | DNCL-NCL-ALPHA-20251102-29C09D-AI-ZH-0057-0005 | DDIFF-20260803-DNCL-057-0005-0001 | none |
-| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-29C09D-LEDGER-JA-0057-0006 | DDIFF-20260803-DNCL-057-0006-0001 | none |
+| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-29C09D-LEDGER-JA-0057-0006 | DDIFF-20260803-DNCL-057-0006-0002 | DDIFF-20260803-DNCL-057-0006-0001 |
 
 ## 固定identity表示規則
 
 全7面に親原典NCL-ID・Diff-IDと、その面自身のDerivative NCL-ID・Derivative Diff-IDを同一形式で表示する。役割別本文の違いを理由にidentityを省略しない。
 
-## 来歴
+## 品質・進捗記録
 
-```yaml
-schema: official-derivative-ledger-v1
-parent_status: publish
-derivative_number: 057
-file_count: 7
-source_basis:
-  - current public parent article body
-  - canonical AI retrieval index record
-  - integrated and local audit abstracts
-  - reference cluster
-canonical_reproduction_basis:
-  - OD001-OD043 frozen completed surfaces
-  - OD054 corrected density pattern
-  - OD055 repaired common identity pattern
-  - OD056 common identity pattern
-quality_targets:
-  - common identity block on all seven surfaces
-  - FAQ three layers and 32 questions
-  - human-entry functional density
-  - JA/EN/ZH structural equivalence
-  - CRI, IR, KCL, trust ledger and boundary conditions retained
-original_canon_replaced: false
-operations_material_in_public_package: false
-github_actions_used: false
-ftp_used: false
-writer_mode: single_writer
-cursor_mode: single_cursor
-```
-
-## 品質記録
-
-- seven files present: PASS
+- seven files present and fresh-read: PASS
 - all surfaces parent IDs visible: PASS
 - all surfaces own derivative IDs visible: PASS
 - CRI / IR / KCL retained: PASS
@@ -91,13 +60,14 @@ cursor_mode: single_cursor
 - surveillance, ranking, exploitation and gaming boundaries: PASS
 - origin return and mutual navigation: PASS
 - private operations excluded: PASS
-- official-derivatives-map registration: PENDING
-- private Apps Script sync: PENDING
-- parent live backlink: PENDING
+- official-derivatives-map registration: PASS
+- map_commit: d420504773175e115bb327e15027a5e2a7b6aee3
+- private Apps Script sync: EXPECTED_BY_INSTALLED_15_MIN_TRIGGER
+- parent live backlink: PENDING_DIRECT_LIVE_PROOF
 
 ## 完了境界
 
-private map登録、既設個人Apps Script v0.4によるWordPress同期、親原典側の「公式派生物057」表示、双方向導線、Brain Vault帰還が成立した時点でCOMPLETEとする。
+親原典liveページに「公式派生物057」と`derivatives/057`へのリンクが表示され、派生物から親原典へ戻れることを確認し、Brain Vaultへ帰還した時点でCOMPLETEとする。
 
 ## 原典回帰
 
