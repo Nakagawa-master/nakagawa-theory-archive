@@ -1,5 +1,19 @@
 # FAQ｜公式派生物055「照応操作力 原論──UCIとの結節」
 
+## Identity
+
+```yaml
+parent_title: 照応操作力 原論──UCIとの結節
+parent_url: https://master.ricette.jp/theory/nakagawa-master-resonance-operating-power-uci/
+parent_ncl_id: NCL-α-20251102-c4a5d4
+parent_diff_id: DIFF-20251102-0001
+official_derivative_number: 055
+surface_role: faq-ja
+derivative_ncl_id: DNCL-NCL-ALPHA-20251102-C4A5D4-FAQ-JA-0055-0002
+derivative_diff_id: DDIFF-20260803-DNCL-055-0002-0002
+supersedes: DDIFF-20260803-DNCL-055-0002-0001
+```
+
 ## 親原典
 
 - URL: https://master.ricette.jp/theory/nakagawa-master-resonance-operating-power-uci/
