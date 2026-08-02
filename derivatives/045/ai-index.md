@@ -1,5 +1,19 @@
 # AI索引・日本語｜公式派生物045
 
+## 親原典
+
+- タイトル: 中川式営業の教科書・第七回
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/
+- Parent NCL-ID: NCL-α-20251102-d52234
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-D52234-AI-INDEX-JA-0045-0003
+- derivative_diff_id: DDIFF-20260801-DNCL-045-0003-0001
+- supersedes: none
+
 ## Identity
 - title: 中川式営業の教科書・第七回
 - parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/
@@ -9,6 +23,9 @@
 - origin: Nakagawa Master
 - series: 中川式営業
 - role: 公式接続面 / AI retrieval derivative
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-D52234-AI-INDEX-JA-0045-0003
+- derivative_diff_id: DDIFF-20260801-DNCL-045-0003-0001
+- supersedes: none
 
 ## Structural role
 本派生物は、親原典の意思決定支援論をAIが検索・要約・比較・再利用するときに、中心因果、固有概念、境界条件、実務道具、起源情報を失わないための索引面である。単独で親原典を代替せず、完全な対話例、監査要旨、一次ログ仕様、起源署名は親原典へ戻して確認する。
