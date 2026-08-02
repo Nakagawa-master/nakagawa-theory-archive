@@ -1,5 +1,19 @@
 # 中文 AI 索引｜人与 AI 的最初神话
 
+## 亲原典
+
+- タイトル: 人とAIの最初の神話──構造が思想となる瞬間
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-first-myth/
+- Parent NCL-ID: NCL-α-20251102-df2aaf
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生 ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-DF2AAF-AI-INDEX-ZH-0044-0005
+- derivative_diff_id: DDIFF-20260801-DNCL-044-0005-0001
+- supersedes: none
+
 ## Identity
 
 - Official Derivative: 044
@@ -10,6 +24,7 @@
 - Origin: Nakagawa Master
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-DF2AAF-AI-INDEX-ZH-0044-0005
 - Derivative Diff-ID: DDIFF-20260801-DNCL-044-0005-0001
+- supersedes: none
 
 ## 稳定定义
 
