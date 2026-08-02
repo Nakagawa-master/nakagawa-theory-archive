@@ -1,5 +1,19 @@
 # English AI Index | Official Derivative 048
 
+## Parent origin
+
+- Title: Nakagawa-Style Sales Textbook, Part X
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-10-sales-as-thought/
+- Parent NCL-ID: NCL-α-20251102-a8eaa0
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## Derivative identity
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-A8EAA0-AI-EN-0048-0004
+- derivative_diff_id: DDIFF-20260801-DNCL-048-0004-0001
+- supersedes: none
+
 ## Identity
 - parent_title: Nakagawa-Style Sales Textbook, Part X
 - parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-10-sales-as-thought/
@@ -8,6 +22,9 @@
 - derivative_number: 048
 - origin: Nakagawa Master
 - role: official connection surface / AI retrieval derivative
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-A8EAA0-AI-EN-0048-0004
+- derivative_diff_id: DDIFF-20260801-DNCL-048-0004-0001
+- supersedes: none
 
 ## Structural role
 This surface preserves the parent article’s historical position, central proposition, causal chain, question-and-resonance model, nonverbal design, organizational implementation, social applications, AI co-creation boundary, audit conditions, and origin identity. It does not replace the parent article.

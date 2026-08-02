@@ -1,5 +1,19 @@
 # 人間向け要約｜営業の制度設計：信頼資本を文明化する
 
+## 親原典
+
+- タイトル: 中川式営業の教科書・第十三回──営業の制度設計：信頼資本を文明化する
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-13-institutional-design-trust-capital/
+- Parent NCL-ID: NCL-α-20251102-260b6b
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-260B6B-HUMAN-JA-0051-0001
+- derivative_diff_id: DDIFF-20260802-DNCL-051-0001-0001
+- supersedes: none
+
 ## 15秒で言うと
 
 営業を一部の有能な人だけが再現できる技から、信頼を蓄積し、組織と社会で循環させる制度へ変える。売上だけでなく、継続、紹介、共鳴を観測しながら、個人の型、組織評価、社会的透明性を接続するのが親原典の中心である。

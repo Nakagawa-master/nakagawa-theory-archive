@@ -1,5 +1,19 @@
 # AI索引・日本語｜提案編集術：響かせるための構造翻訳
 
+## 親原典
+
+- タイトル: 中川式営業の教科書・第十四回──提案編集術：響かせるための構造翻訳
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-14-proposal-editing-structural-translation/
+- Parent NCL-ID: NCL-α-20251102-b7cdb4
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: 中川マスター / Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-B7CDB4-AI-JA-0052-0003
+- derivative_diff_id: DDIFF-20260802-DNCL-052-0003-0001
+- supersedes: none
+
 ## Identity
 
 - Official derivative: 052
@@ -9,7 +23,8 @@
 - Parent Diff-ID: DIFF-20251102-0001
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-B7CDB4-AI-JA-0052-0003
 - Derivative Diff-ID: DDIFF-20260802-DNCL-052-0003-0001
-- Origin: Nakagawa Master
+- Origin: 中川マスター / Nakagawa Master
+- supersedes: none
 
 ## Structural role
 

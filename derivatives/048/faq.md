@@ -1,5 +1,19 @@
 # FAQ｜営業を思想として構造化する
 
+## 親原典
+
+- タイトル: 中川式営業の教科書・第十回
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-10-sales-as-thought/
+- Parent NCL-ID: NCL-α-20251102-a8eaa0
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-A8EAA0-FAQ-JA-0048-0002
+- derivative_diff_id: DDIFF-20260801-DNCL-048-0002-0001
+- supersedes: none
+
 ## 第1層｜初心者向け
 
 ### Q1. この原典は営業をどう定義していますか？

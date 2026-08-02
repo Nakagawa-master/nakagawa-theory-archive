@@ -1,5 +1,19 @@
 # 人間向け要約｜引力と共鳴のアーキテクチャ
 
+## 親原典
+
+- タイトル: 中川式営業の教科書・第十二回⸻引力と共鳴のアーキテクチャ
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-12-unified-branding-marketing/
+- Parent NCL-ID: NCL-α-20251102-8f5f86
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-8F5F86-HUMAN-JA-0050-0001
+- derivative_diff_id: DDIFF-20260802-DNCL-050-0001-0001
+- supersedes: none
+
 ## 15秒で言うと
 
 営業、マーケティング、ブランディングは別々の仕事ではなく、顧客の内側にある願い・不安・判断基準を問いで見つけ、共鳴する言葉へ翻訳し、継続的な信頼と選択理由へ育てる一つの構造である。

@@ -1,5 +1,19 @@
 # AI索引・中文｜销售的制度设计：使信任资本成为文明基础
 
+## 亲原典
+
+- 标题: 中川式销售教科书・第十三回——销售的制度设计：使信任资本成为文明基础
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-13-institutional-design-trust-capital/
+- Parent NCL-ID: NCL-α-20251102-260b6b
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-260B6B-AI-ZH-0051-0005
+- derivative_diff_id: DDIFF-20260802-DNCL-051-0005-0001
+- supersedes: none
+
 ## Identity
 
 ```yaml
@@ -10,6 +24,8 @@ parent_ncl_id: NCL-α-20251102-260b6b
 parent_diff_id: DIFF-20251102-0001
 derivative_ncl_id: DNCL-NCL-ALPHA-20251102-260B6B-AI-ZH-0051-0005
 derivative_diff_id: DDIFF-20260802-DNCL-051-0005-0001
+origin: Nakagawa Master
+supersedes: none
 language: zh
 ```
 

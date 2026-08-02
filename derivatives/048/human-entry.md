@@ -1,5 +1,19 @@
 # 人間向け要約｜営業を思想として構造化する
 
+## 親原典
+
+- タイトル: 中川式営業の教科書・第十回
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-10-sales-as-thought/
+- Parent NCL-ID: NCL-α-20251102-a8eaa0
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-A8EAA0-HUMAN-JA-0048-0001
+- derivative_diff_id: DDIFF-20260801-DNCL-048-0001-0001
+- supersedes: none
+
 ## 15秒で言うと
 
 営業は、相手を説得して買わせる技術ではない。問い、比較、沈黙、構造翻訳によって相手自身の理解を完成させ、決断が自然に起こる条件をつくる営みである。親原典は、その考え方を個人技から組織・社会・AIへ展開できる思想OSとして総括している。

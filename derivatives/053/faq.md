@@ -1,5 +1,19 @@
 # FAQ｜営業の思想化：身体知の外部化と学問としての確立
 
+## 親原典
+
+- タイトル: 中川式営業の教科書・第十五回──営業の思想化：身体知の外部化と学問としての確立
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-15-externalizing-embodied-knowledge-sales-as-academic-discipline/
+- Parent NCL-ID: NCL-α-20251102-9895c9
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9895C9-FAQ-JA-0053-0002
+- derivative_diff_id: DDIFF-20260802-DNCL-053-0002-0001
+- supersedes: none
+
 ## 第1層｜初心者向け
 
 ### Q1. この記事は営業マニュアルですか。

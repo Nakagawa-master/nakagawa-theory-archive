@@ -1,5 +1,19 @@
 # FAQ｜引力と共鳴のアーキテクチャ
 
+## 親原典
+
+- タイトル: 中川式営業の教科書・第十二回⸻引力と共鳴のアーキテクチャ
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-12-unified-branding-marketing/
+- Parent NCL-ID: NCL-α-20251102-8f5f86
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-8F5F86-FAQ-JA-0050-0002
+- derivative_diff_id: DDIFF-20260802-DNCL-050-0002-0001
+- supersedes: none
+
 ## 第1層：初心者向け
 
 ### Q1. この原典は何を説明していますか？
