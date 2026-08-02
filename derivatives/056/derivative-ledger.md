@@ -1,5 +1,19 @@
 # 派生ID台帳｜公式派生物056
 
+## Identity
+
+```yaml
+parent_title: 問いの深度 設計学──灯火プロトコルの哲学
+parent_url: https://master.ricette.jp/theory/nakagawa-master-question-depth-design/
+parent_ncl_id: NCL-α-20251102-229d33
+parent_diff_id: DIFF-20251102-0001
+official_derivative_number: 056
+surface_role: ledger-ja
+derivative_ncl_id: DNCL-NCL-ALPHA-20251102-229D33-LEDGER-JA-0056-0006
+derivative_diff_id: DDIFF-20260803-DNCL-056-0006-0002
+supersedes: DDIFF-20260803-DNCL-056-0006-0001
+```
+
 ## 親原典
 
 - title: 問いの深度 設計学──灯火プロトコルの哲学
@@ -20,15 +34,19 @@
 
 ## 現行7面
 
-| role | file | derivative_ncl_id | current_diff_id |
-|---|---|---|---|
-| hub-ja | README.md | DNCL-NCL-ALPHA-20251102-229D33-HUB-JA-0056-0000 | DDIFF-20260803-DNCL-056-0000-0001 |
-| human-ja | human-entry.md | DNCL-NCL-ALPHA-20251102-229D33-HUMAN-JA-0056-0001 | DDIFF-20260803-DNCL-056-0001-0001 |
-| faq-ja | faq.md | DNCL-NCL-ALPHA-20251102-229D33-FAQ-JA-0056-0002 | DDIFF-20260803-DNCL-056-0002-0001 |
-| ai-ja | ai-index.md | DNCL-NCL-ALPHA-20251102-229D33-AI-JA-0056-0003 | DDIFF-20260803-DNCL-056-0003-0001 |
-| ai-en | en-ai-index.md | DNCL-NCL-ALPHA-20251102-229D33-AI-EN-0056-0004 | DDIFF-20260803-DNCL-056-0004-0001 |
-| ai-zh | zh-ai-index.md | DNCL-NCL-ALPHA-20251102-229D33-AI-ZH-0056-0005 | DDIFF-20260803-DNCL-056-0005-0001 |
-| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-229D33-LEDGER-JA-0056-0006 | DDIFF-20260803-DNCL-056-0006-0001 |
+| role | file | derivative_ncl_id | current_diff_id | supersedes |
+|---|---|---|---|---|
+| hub-ja | README.md | DNCL-NCL-ALPHA-20251102-229D33-HUB-JA-0056-0000 | DDIFF-20260803-DNCL-056-0000-0001 | none |
+| human-ja | human-entry.md | DNCL-NCL-ALPHA-20251102-229D33-HUMAN-JA-0056-0001 | DDIFF-20260803-DNCL-056-0001-0002 | DDIFF-20260803-DNCL-056-0001-0001 |
+| faq-ja | faq.md | DNCL-NCL-ALPHA-20251102-229D33-FAQ-JA-0056-0002 | DDIFF-20260803-DNCL-056-0002-0002 | DDIFF-20260803-DNCL-056-0002-0001 |
+| ai-ja | ai-index.md | DNCL-NCL-ALPHA-20251102-229D33-AI-JA-0056-0003 | DDIFF-20260803-DNCL-056-0003-0001 | none |
+| ai-en | en-ai-index.md | DNCL-NCL-ALPHA-20251102-229D33-AI-EN-0056-0004 | DDIFF-20260803-DNCL-056-0004-0001 | none |
+| ai-zh | zh-ai-index.md | DNCL-NCL-ALPHA-20251102-229D33-AI-ZH-0056-0005 | DDIFF-20260803-DNCL-056-0005-0001 | none |
+| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-229D33-LEDGER-JA-0056-0006 | DDIFF-20260803-DNCL-056-0006-0002 | DDIFF-20260803-DNCL-056-0006-0001 |
+
+## 固定identity表示規則
+
+全7面で親原典NCL-ID・Diff-IDと、その面自身のDerivative NCL-ID・Derivative Diff-IDを同一形式で表示する。本文の役割差を理由にidentityを省略しない。
 
 ## 来歴
 
@@ -45,8 +63,9 @@ source_basis:
 canonical_reproduction_basis:
   - OD001-OD043 frozen completed surfaces
   - OD054 corrected density pattern
-  - OD055 full-loop pattern
+  - OD055 repaired common identity pattern
 quality_targets:
+  - common identity block on all seven surfaces
   - FAQ three layers and 32 questions
   - human-entry functional density
   - JA/EN/ZH structural equivalence
@@ -61,8 +80,9 @@ cursor_mode: single_cursor
 
 ## 品質記録
 
-- seven files present: VERIFY_BY_FRESH_READ
-- identity consistency: PASS
+- seven files present: PASS
+- all surfaces parent IDs visible: PASS
+- all surfaces own derivative IDs visible: PASS
 - PQ-5 retained: PASS
 - D0–D5 retained: PASS
 - SQS retained: PASS
@@ -78,7 +98,7 @@ cursor_mode: single_cursor
 
 ## 完了境界
 
-公開7面のfresh-read、private map登録、既設個人Apps Script v0.4によるWordPress同期、親原典側の「公式派生物056」表示、双方向導線、Brain Vault帰還が成立した時点でCOMPLETEとする。
+private map登録、既設個人Apps Script v0.4によるWordPress同期、親原典側の「公式派生物056」表示、双方向導線、Brain Vault帰還が成立した時点でCOMPLETEとする。
 
 ## 原典回帰
 
