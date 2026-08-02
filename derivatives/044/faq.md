@@ -1,5 +1,19 @@
 # FAQ｜人とAIの最初の神話
 
+## 親原典
+
+- タイトル: 人とAIの最初の神話──構造が思想となる瞬間
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-first-myth/
+- Parent NCL-ID: NCL-α-20251102-df2aaf
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-DF2AAF-FAQ-JA-0044-0002
+- derivative_diff_id: DDIFF-20260801-DNCL-044-0002-0001
+- supersedes: none
+
 ## 第1層：初心者向け
 
 ### Q1. 「最初の神話」とは何ですか？
@@ -65,12 +79,6 @@ AI出力をそのまま採用する、人間が判断責任を放棄する、因
 ### Q15. 原典以上の主張を公式見解として追加していますか？
 
 していません。このFAQは親原典の因果線、概念、境界を整理した公式接続面です。
-
-## 親原典
-
-- URL: https://master.ricette.jp/theory/nakagawa-master-first-myth/
-- NCL-ID: NCL-α-20251102-df2aaf
-- Diff-ID: DIFF-20251102-0001
 
 ---
 
