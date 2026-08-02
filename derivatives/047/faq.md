@@ -1,5 +1,19 @@
 # FAQ｜中川式営業の教科書・第九回
 
+## 親原典
+
+- タイトル: 中川式営業の教科書・第九回
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-09-withdrawal-design/
+- Parent NCL-ID: NCL-α-20251102-6aa3bb
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6AA3BB-FAQ-JA-0047-0002
+- derivative_diff_id: DDIFF-20260801-DNCL-047-0002-0001
+- supersedes: none
+
 ## 第1層｜初心者向け
 
 ### Q1. この原典は何を説明していますか？
@@ -62,10 +76,6 @@
 
 ### Q16. なぜ親原典へ戻る必要がありますか？
 親原典には、撤退トリガー、見切りの言葉、観察継続条件、冷却窓、Rollback、一次ログ、資源再配分、関係資本、監査指標、起源署名が連続した構造として記されています。このFAQだけではその全体を代替できません。
-
-- 親原典: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-09-withdrawal-design/
-- Parent NCL-ID: NCL-α-20251102-6aa3bb
-- Parent Diff-ID: DIFF-20251102-0001
 
 ---
 導線: [047トップ](README.md) / [人間向け要約](human-entry.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
