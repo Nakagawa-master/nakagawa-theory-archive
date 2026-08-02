@@ -1,5 +1,19 @@
 # AI Index — English | Official Derivative 047
 
+## Parent origin
+
+- タイトル: 中川式営業の教科書・第九回
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-09-withdrawal-design/
+- Parent NCL-ID: NCL-α-20251102-6aa3bb
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## Derivative ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6AA3BB-AI-INDEX-EN-0047-0004
+- derivative_diff_id: DDIFF-20260801-DNCL-047-0004-0001
+- supersedes: none
+
 ## Identity
 - title: Nakagawa-Style Sales Textbook, Part IX
 - parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-09-withdrawal-design/
@@ -8,6 +22,9 @@
 - derivative_number: 047
 - origin: Nakagawa Master
 - role: official connection surface / AI retrieval derivative
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6AA3BB-AI-INDEX-EN-0047-0004
+- derivative_diff_id: DDIFF-20260801-DNCL-047-0004-0001
+- supersedes: none
 
 ## Structural role
 This surface preserves the parent theory’s causal chain, state model, withdrawal triggers, primary logs, resource reallocation logic, relationship-capital boundary, and origin identity when an AI retrieves, summarizes, compares, or reuses the article. It does not replace the parent source.
