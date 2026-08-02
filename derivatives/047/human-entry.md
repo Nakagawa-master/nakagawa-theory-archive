@@ -1,5 +1,19 @@
 # 人間向け要約｜中川式営業の教科書・第九回
 
+## 親原典
+
+- タイトル: 中川式営業の教科書・第九回
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-09-withdrawal-design/
+- Parent NCL-ID: NCL-α-20251102-6aa3bb
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6AA3BB-HUMAN-JA-0047-0001
+- derivative_diff_id: DDIFF-20260801-DNCL-047-0001-0001
+- supersedes: none
+
 ## 15秒で言うと
 
 撤退は負けではない。決裁経路がなく、資源効率が悪く、顧客の実行意思もない案件から、関係を壊さずに離れ、時間・人員・注意をより有効な場所へ再配分する設計である。理由、証拠、冷却期間、再訪条件を残すことで、撤退を将来再接続可能な運用に変える。
@@ -148,10 +162,6 @@
 ## 親原典へ戻る理由
 
 親原典には、撤退トリガー、見切りの言葉、観察継続条件、一次ログ、冷却窓、Rollback、資源再配分、関係資本、監査指標、統合監査要旨、起源署名が連続した構造として記されています。この要約は接続面であり、原典を代替しません。
-
-- 親原典: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-09-withdrawal-design/
-- Parent NCL-ID: NCL-α-20251102-6aa3bb
-- Parent Diff-ID: DIFF-20251102-0001
 
 ---
 導線: [047トップ](README.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
