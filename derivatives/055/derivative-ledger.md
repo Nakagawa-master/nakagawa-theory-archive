@@ -14,7 +14,7 @@
 
 - official_derivative_number: 055
 - derivative_directory: derivatives/055/
-- status: active_public_pending_map_and_live_backlink_verification
+- status: active_public_map_registered_spreadsheet_push_pending
 - publication_date_jst: 2026-08-03
 - public_release_authority: owner_authorized_phase5_restart
 
@@ -28,13 +28,14 @@
 | ai-ja | ai-index.md | DNCL-NCL-ALPHA-20251102-C4A5D4-AI-JA-0055-0003 | DDIFF-20260803-DNCL-055-0003-0001 | none |
 | ai-en | en-ai-index.md | DNCL-NCL-ALPHA-20251102-C4A5D4-AI-EN-0055-0004 | DDIFF-20260803-DNCL-055-0004-0001 | none |
 | ai-zh | zh-ai-index.md | DNCL-NCL-ALPHA-20251102-C4A5D4-AI-ZH-0055-0005 | DDIFF-20260803-DNCL-055-0005-0001 | none |
-| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-C4A5D4-LEDGER-JA-0055-0006 | DDIFF-20260803-DNCL-055-0006-0001 | none |
+| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-C4A5D4-LEDGER-JA-0055-0006 | DDIFF-20260803-DNCL-055-0006-0002 | DDIFF-20260803-DNCL-055-0006-0001 |
 
 ## 来歴
 
 ```yaml
 schema: official-derivative-ledger-v1
 publication_date: 2026-08-03
+ledger_verification_update: 2026-08-03
 parent_post_id: 244
 parent_status: publish
 derivative_number: 055
@@ -61,6 +62,9 @@ github_actions_used: false
 ftp_used: false
 writer_mode: single_writer
 cursor_mode: single_cursor
+map_repository: Nakagawa-master/nakagawa-archive-tools
+map_path: wordpress/master.ricette.jp-wp-content/mu-plugins/official-derivatives-map.json
+map_commit: aa2eda19e29aea84dbbfbcb9deb1fe60299db809
 ```
 
 ## 原典固有要素の保持
@@ -83,7 +87,7 @@ retained_elements:
 
 ## 現在の品質記録
 
-- seven files present: VERIFY_BY_FRESH_READ
+- seven files present and fresh-read: PASS
 - parent URL/NCL-ID/Diff-ID consistency: PASS
 - parent public body fetched: PASS
 - surface-specific derivative IDs: PASS
@@ -95,24 +99,26 @@ retained_elements:
 - order/silence/discomfort structure retained: PASS
 - coercion and misreading boundaries retained: PASS
 - internal operations material excluded: PASS
-- official-derivatives-map registration: PENDING
+- official-derivatives-map registration and fresh-read: PASS
 - personal Spreadsheet menu Push: PENDING
-- parent-origin live backlink collection: PENDING
+- parent-origin live backlink collection: NOT_VISIBLE_BEFORE_PUSH
 
 ## 完了境界
 
-OD055は、7面公開だけではCOMPLETEにしない。次をすべて確認した時点で完了とする。
+OD055は、7面公開とmap登録だけではCOMPLETEにしない。次をすべて確認した時点で完了とする。
 
 ```text
-7面を公開repoからfresh-read
-→ 既存形式のofficial-derivatives-mapへ055を登録
-→ マスター個人Spreadsheetの既設メニューからPush
-→ WordPress側JSON map反映
-→ 親原典liveページに公式派生物055とderivatives/055へのリンク表示
-→ 派生物から親原典への復帰
-→ receipt・cursor・Brain Vault正本へ帰還
-→ 同じ経路からOD056を再取得
+7面を公開repoからfresh-read: PASS
+→ 既存形式のofficial-derivatives-mapへ055を登録: PASS
+→ マスター個人Spreadsheetの既設メニューからPush: PENDING
+→ WordPress側JSON map反映: PENDING
+→ 親原典liveページに公式派生物055とderivatives/055へのリンク表示: PENDING
+→ 派生物から親原典への復帰: PASS_FROM_PUBLIC_SURFACES
+→ receipt・cursor・Brain Vault正本へ帰還: PENDING
+→ 同じ経路からOD056を再取得: BLOCKED_UNTIL_FULL_LOOP
 ```
+
+現在接続されているGoogle Driveでは対象の個人Spreadsheetを取得できず、SpreadsheetメニューのApps Script実行機能も公開されていない。したがってPush未実行のまま完了宣言やcursor前進を行わない。
 
 live表示をLuminaから確認できない場合のみ、`PENDING_OWNER_VISUAL_CONFIRMATION`として親原典URLと派生物URLをマスターへ提示する。未確認状態をCOMPLETEと表現しない。
 
