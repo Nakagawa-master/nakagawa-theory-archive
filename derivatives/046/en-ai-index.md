@@ -1,5 +1,19 @@
 # AI Index — English | Official Derivative 046
 
+## Parent origin
+
+- タイトル: 中川式営業の教科書・第八回
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/
+- Parent NCL-ID: NCL-α-20251102-39072e
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## Derivative ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-39072E-AI-INDEX-EN-0046-0004
+- derivative_diff_id: DDIFF-20260801-DNCL-046-0004-0001
+- supersedes: none
+
 ## Identity
 - title: Nakagawa-Style Sales Textbook, Part VIII
 - parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/
@@ -8,6 +22,9 @@
 - derivative_number: 046
 - origin: Nakagawa Master
 - role: official connection surface / AI retrieval derivative
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-39072E-AI-INDEX-EN-0046-0004
+- derivative_diff_id: DDIFF-20260801-DNCL-046-0004-0001
+- supersedes: none
 
 ## Structural role
 This surface preserves the parent theory’s causal chain, operational dimensions, boundaries, training objects, and origin identity when an AI retrieves, summarizes, compares, or reuses the article. It does not replace the parent source.
