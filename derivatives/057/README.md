@@ -1,20 +1,19 @@
 # 公式派生物057｜接続報酬社会──信頼資本と共鳴の制度化
 
-## Identity
+## 親原典
 
-```yaml
-parent_title: 接続報酬社会──信頼資本と共鳴の制度化
-parent_url: https://master.ricette.jp/society/nakagawa-master-connection-reward-society/
-parent_ncl_id: NCL-α-20251102-29c09d
-parent_diff_id: DIFF-20251102-0001
-parent_post_id: 251
-official_derivative_number: 057
-surface_role: hub-ja
-derivative_ncl_id: DNCL-NCL-ALPHA-20251102-29C09D-HUB-JA-0057-0000
-derivative_diff_id: DDIFF-20260803-DNCL-057-0000-0001
-supersedes: none
-origin: Nakagawa Master
-```
+- タイトル: 接続報酬社会──信頼資本と共鳴の制度化
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-connection-reward-society/
+- Parent NCL-ID: NCL-α-20251102-29c09d
+- Parent Diff-ID: DIFF-20251102-0001
+- Parent Post ID: 251
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-29C09D-HUB-JA-0057-0000
+- derivative_diff_id: DDIFF-20260803-DNCL-057-0000-0002
+- supersedes: DDIFF-20260803-DNCL-057-0000-0001
 
 ## この原典が定義するもの
 
