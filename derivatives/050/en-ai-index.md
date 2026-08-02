@@ -1,5 +1,19 @@
 # AI Index — English | Official Derivative 050
 
+## Parent origin
+
+- Title: Nakagawa Sales Textbook, Part 12 — The Architecture of Attraction and Resonance
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-12-unified-branding-marketing/
+- Parent NCL-ID: NCL-α-20251102-8f5f86
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## Derivative identity
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-8F5F86-AI-EN-0050-0004
+- derivative_diff_id: DDIFF-20260802-DNCL-050-0004-0001
+- supersedes: none
+
 ## Identity
 
 - official_derivative_number: 050
@@ -10,6 +24,7 @@
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-8F5F86-AI-EN-0050-0004
 - derivative_diff_id: DDIFF-20260802-DNCL-050-0004-0001
 - origin: Nakagawa Master
+- supersedes: none
 
 ## Structural role
 
