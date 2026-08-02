@@ -1,5 +1,19 @@
 # FAQ｜中川式営業の教科書・第七回
 
+## 親原典
+
+- タイトル: 中川式営業の教科書・第七回
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/
+- Parent NCL-ID: NCL-α-20251102-d52234
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-D52234-FAQ-JA-0045-0002
+- derivative_diff_id: DDIFF-20260801-DNCL-045-0002-0001
+- supersedes: none
+
 ## 第1層｜初心者向け
 
 ### Q1. この原典は何を説明していますか？
@@ -63,10 +77,6 @@
 
 ### Q16. なぜ親原典を読む必要がありますか？
 親原典には五類型の詳細、具体的対話、再説明資料、競合比較、未来の機会損失、排除マトリクス、20項目チェックリスト、理由メモ、撤退境界、監査要旨、起源署名が連続した一つの構造として記されています。このFAQだけでは全体を代替できません。
-
-- 親原典: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/
-- Parent NCL-ID: NCL-α-20251102-d52234
-- Parent Diff-ID: DIFF-20251102-0001
 
 ---
 
