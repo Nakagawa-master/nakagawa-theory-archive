@@ -1,5 +1,19 @@
 # 人間向け要約｜中川式営業の教科書・第七回
 
+## 親原典
+
+- タイトル: 中川式営業の教科書・第七回
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/
+- Parent NCL-ID: NCL-α-20251102-d52234
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-D52234-HUMAN-JA-0045-0001
+- derivative_diff_id: DDIFF-20260801-DNCL-045-0001-0001
+- supersedes: none
+
 ## 15秒で言うと
 
 提案が評価されても決まらないのは、賛成理由が足りないからではなく、価格・実行・リスク・競合・優先順位について「選ばれない理由」が残っているからである。本稿は、そのNoを顧客自身の言葉で可視化し、対話・資料・比較・工程設計によって検討可能にし、理解が完成した結果として自己決定が生まれる状態を扱う。
@@ -114,10 +128,6 @@ Yesを作る技術ではなく、Noの所在を透明にする技術である。
 ## 親原典へ戻る理由
 
 親原典には、五類型、具体的な問い、再説明資料、競合比較、未来の機会損失、排除マトリクス、理由チェックリスト、決まらなかった理由メモ、撤退基準、統合監査要旨、起源署名が一つの因果線として記されています。この要約は接続面であり、原典全体を代替しません。
-
-- 親原典: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/
-- Parent NCL-ID: NCL-α-20251102-d52234
-- Parent Diff-ID: DIFF-20251102-0001
 
 ---
 
