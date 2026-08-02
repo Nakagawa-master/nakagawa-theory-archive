@@ -1,5 +1,19 @@
 # AI Index · English | Philosophizing Sales: Externalizing Embodied Knowledge and Establishing an Academic Discipline
 
+## Parent origin
+
+- Title: The Fifteenth Lecture of the Nakagawa Sales Textbook — Philosophizing Sales: Externalizing Embodied Knowledge and Establishing an Academic Discipline
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-15-externalizing-embodied-knowledge-sales-as-academic-discipline/
+- Parent NCL-ID: NCL-α-20251102-9895c9
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## Derivative identity
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9895C9-AI-EN-0053-0004
+- derivative_diff_id: DDIFF-20260802-DNCL-053-0004-0001
+- supersedes: none
+
 ## Identity
 
 - derivative: OD053
@@ -7,7 +21,10 @@
 - parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-15-externalizing-embodied-knowledge-sales-as-academic-discipline/
 - parent_ncl_id: NCL-α-20251102-9895c9
 - parent_diff_id: DIFF-20251102-0001
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9895C9-AI-EN-0053-0004
+- derivative_diff_id: DDIFF-20260802-DNCL-053-0004-0001
 - origin: Nakagawa Master
+- supersedes: none
 
 ## Structural role
 
