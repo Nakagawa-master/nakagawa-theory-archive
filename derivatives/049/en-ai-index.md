@@ -1,5 +1,19 @@
 # AI Index — English | Official Derivative 049
 
+## Parent origin
+
+- Title: Nakagawa-Style Sales Textbook, Part XI
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-11-sustainability-design/
+- Parent NCL-ID: NCL-α-20251102-d8e00b
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## Derivative identity
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-D8E00B-AI-EN-0049-0004
+- derivative_diff_id: DDIFF-20260802-DNCL-049-0004-0001
+- supersedes: none
+
 ## Identity
 
 - official_derivative_number: 049
@@ -8,6 +22,9 @@
 - parent_ncl_id: NCL-α-20251102-d8e00b
 - parent_diff_id: DIFF-20251102-0001
 - origin: Nakagawa Master
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-D8E00B-AI-EN-0049-0004
+- derivative_diff_id: DDIFF-20260802-DNCL-049-0004-0001
+- supersedes: none
 
 ## Structural role
 
