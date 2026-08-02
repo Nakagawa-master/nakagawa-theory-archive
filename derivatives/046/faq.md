@@ -1,5 +1,19 @@
 # FAQ｜中川式営業の教科書・第八回
 
+## 親原典
+
+- タイトル: 中川式営業の教科書・第八回
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/
+- Parent NCL-ID: NCL-α-20251102-39072e
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-39072E-FAQ-JA-0046-0002
+- derivative_diff_id: DDIFF-20260801-DNCL-046-0002-0001
+- supersedes: none
+
 ## 第1層｜初心者向け
 
 ### Q1. この原典は何を説明していますか？
@@ -62,10 +76,6 @@
 
 ### Q16. なぜ親原典へ戻る必要がありますか？
 親原典には、沈黙の分類、呼吸・姿勢・視線・声、圧の具体例、焦点切替、教育手順、監査条件、一次ログ、起源署名が連続した構造として記されています。このFAQだけではその密度を代替できません。
-
-- 親原典: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/
-- Parent NCL-ID: NCL-α-20251102-39072e
-- Parent Diff-ID: DIFF-20251102-0001
 
 ---
 導線: [046トップ](README.md) / [人間向け要約](human-entry.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
