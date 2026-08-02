@@ -1,5 +1,19 @@
 # 人間向け入口｜公式派生物055
 
+## Identity
+
+```yaml
+parent_title: 照応操作力 原論──UCIとの結節
+parent_url: https://master.ricette.jp/theory/nakagawa-master-resonance-operating-power-uci/
+parent_ncl_id: NCL-α-20251102-c4a5d4
+parent_diff_id: DIFF-20251102-0001
+official_derivative_number: 055
+surface_role: human-ja
+derivative_ncl_id: DNCL-NCL-ALPHA-20251102-C4A5D4-HUMAN-JA-0055-0001
+derivative_diff_id: DDIFF-20260803-DNCL-055-0001-0002
+supersedes: DDIFF-20260803-DNCL-055-0001-0001
+```
+
 ## 15秒でいうと
 
 照応操作力とは、相手と自分の構造を照らし合わせ、言葉だけでなく沈黙や違和感も読みながら、関係と因果の流れを調整する力です。UCIが広い領域へ作用する大きな構想だとすれば、照応操作力は、それを一つひとつの対話、営業、AI共創、制度設計で実際に働かせる基礎です。
