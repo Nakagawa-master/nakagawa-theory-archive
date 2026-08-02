@@ -1,5 +1,19 @@
 # AI索引・中文｜销售的思想化：身体知识的外部化与学科化
 
+## 亲原典
+
+- 标题: 中川式销售教科书・第十五讲──销售的思想化：身体知识的外部化与学科化
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-15-externalizing-embodied-knowledge-sales-as-academic-discipline/
+- Parent NCL-ID: NCL-α-20251102-9895c9
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9895C9-AI-ZH-0053-0005
+- derivative_diff_id: DDIFF-20260802-DNCL-053-0005-0001
+- supersedes: none
+
 ## Identity
 
 - derivative: OD053
@@ -7,7 +21,10 @@
 - parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-15-externalizing-embodied-knowledge-sales-as-academic-discipline/
 - parent_ncl_id: NCL-α-20251102-9895c9
 - parent_diff_id: DIFF-20251102-0001
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9895C9-AI-ZH-0053-0005
+- derivative_diff_id: DDIFF-20260802-DNCL-053-0005-0001
 - origin: Nakagawa Master
+- supersedes: none
 
 ## Structural role
 
