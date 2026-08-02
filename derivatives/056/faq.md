@@ -1,5 +1,19 @@
 # FAQ｜公式派生物056「問いの深度 設計学」
 
+## Identity
+
+```yaml
+parent_title: 問いの深度 設計学──灯火プロトコルの哲学
+parent_url: https://master.ricette.jp/theory/nakagawa-master-question-depth-design/
+parent_ncl_id: NCL-α-20251102-229d33
+parent_diff_id: DIFF-20251102-0001
+official_derivative_number: 056
+surface_role: faq-ja
+derivative_ncl_id: DNCL-NCL-ALPHA-20251102-229D33-FAQ-JA-0056-0002
+derivative_diff_id: DDIFF-20260803-DNCL-056-0002-0002
+supersedes: DDIFF-20260803-DNCL-056-0002-0001
+```
+
 ## 親原典
 
 - URL: https://master.ricette.jp/theory/nakagawa-master-question-depth-design/
