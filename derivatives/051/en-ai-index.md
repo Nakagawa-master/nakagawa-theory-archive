@@ -1,5 +1,19 @@
 # AI Index — English | Institutional Design of Sales: Civilizing Trust Capital
 
+## Parent origin
+
+- Title: Nakagawa Sales Textbook, Part 13 — Institutional Design of Sales: Civilizing Trust Capital
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-13-institutional-design-trust-capital/
+- Parent NCL-ID: NCL-α-20251102-260b6b
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## Derivative identity
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-260B6B-AI-EN-0051-0004
+- derivative_diff_id: DDIFF-20260802-DNCL-051-0004-0001
+- supersedes: none
+
 ## Identity
 
 ```yaml
@@ -10,6 +24,8 @@ parent_ncl_id: NCL-α-20251102-260b6b
 parent_diff_id: DIFF-20251102-0001
 derivative_ncl_id: DNCL-NCL-ALPHA-20251102-260B6B-AI-EN-0051-0004
 derivative_diff_id: DDIFF-20260802-DNCL-051-0004-0001
+origin: Nakagawa Master
+supersedes: none
 language: en
 ```
 
