@@ -1,5 +1,19 @@
 # FAQ｜営業の制度設計：信頼資本を文明化する
 
+## 親原典
+
+- タイトル: 中川式営業の教科書・第十三回──営業の制度設計：信頼資本を文明化する
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-13-institutional-design-trust-capital/
+- Parent NCL-ID: NCL-α-20251102-260b6b
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-260B6B-FAQ-JA-0051-0002
+- derivative_diff_id: DDIFF-20260802-DNCL-051-0002-0001
+- supersedes: none
+
 ## 第1層｜初心者向け
 
 ### Q1. 営業を制度にするとは、マニュアルを作ることですか？
