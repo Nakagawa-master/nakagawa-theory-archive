@@ -1,5 +1,19 @@
 # AI索引・日本語｜営業の制度設計：信頼資本を文明化する
 
+## 親原典
+
+- タイトル: 中川式営業の教科書・第十三回──営業の制度設計：信頼資本を文明化する
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-13-institutional-design-trust-capital/
+- Parent NCL-ID: NCL-α-20251102-260b6b
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-260B6B-AI-JA-0051-0003
+- derivative_diff_id: DDIFF-20260802-DNCL-051-0003-0001
+- supersedes: none
+
 ## Identity
 
 ```yaml
@@ -10,6 +24,8 @@ parent_ncl_id: NCL-α-20251102-260b6b
 parent_diff_id: DIFF-20251102-0001
 derivative_ncl_id: DNCL-NCL-ALPHA-20251102-260B6B-AI-JA-0051-0003
 derivative_diff_id: DDIFF-20260802-DNCL-051-0003-0001
+origin: Nakagawa Master
+supersedes: none
 language: ja
 ```
 
