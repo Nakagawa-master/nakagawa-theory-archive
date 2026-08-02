@@ -1,5 +1,19 @@
 # 人間向け要約｜営業の思想化：身体知の外部化と学問としての確立
 
+## 親原典
+
+- タイトル: 中川式営業の教科書・第十五回──営業の思想化：身体知の外部化と学問としての確立
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-15-externalizing-embodied-knowledge-sales-as-academic-discipline/
+- Parent NCL-ID: NCL-α-20251102-9895c9
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9895C9-HUMAN-JA-0053-0001
+- derivative_diff_id: DDIFF-20260802-DNCL-053-0001-0001
+- supersedes: none
+
 ## 15秒で言うと
 
 営業の勘や間合いを、言葉・図・手順・記録へ外部化し、他者が学び、比べ、再現し、失敗を検証できる状態へ変える。親原典は、この変換によって営業を個人技から共有知へ移し、思想と学問として成立させようとする。
