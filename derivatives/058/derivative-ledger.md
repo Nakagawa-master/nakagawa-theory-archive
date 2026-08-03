@@ -12,8 +12,8 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-54994E-LEDGER-JA-0058-0006
-- derivative_diff_id: DDIFF-20260803-DNCL-058-0006-0002
-- supersedes: DDIFF-20260803-DNCL-058-0006-0001
+- derivative_diff_id: DDIFF-20260803-DNCL-058-0006-0003
+- supersedes: DDIFF-20260803-DNCL-058-0006-0002
 
 ## Identity
 
@@ -27,8 +27,8 @@ origin_slug: nakagawa-master-resonance-market-2026
 official_derivative_number: 058
 surface_role: ledger-ja
 derivative_ncl_id: DNCL-NCL-ALPHA-20251102-54994E-LEDGER-JA-0058-0006
-derivative_diff_id: DDIFF-20260803-DNCL-058-0006-0002
-supersedes: DDIFF-20260803-DNCL-058-0006-0001
+derivative_diff_id: DDIFF-20260803-DNCL-058-0006-0003
+supersedes: DDIFF-20260803-DNCL-058-0006-0002
 origin: Nakagawa Master
 ```
 
@@ -36,9 +36,11 @@ origin: Nakagawa Master
 
 - official_derivative_number: 058
 - derivative_directory: derivatives/058/
-- status: active_public_map_registered_pending_live_runtime_proof
+- status: COMPLETE_OWNER_LIVE_VERIFIED
 - publication_date_jst: 2026-08-03
+- completion_date_jst: 2026-08-03
 - public_release_authority: owner_authorized_phase5_restart
+- live_backlink_evidence: owner confirmed official archive parent article displays the official derivative link collection
 
 ## 現行7面
 
@@ -50,7 +52,7 @@ origin: Nakagawa Master
 | ai-ja | ai-index.md | DNCL-NCL-ALPHA-20251102-54994E-AI-JA-0058-0003 | DDIFF-20260803-DNCL-058-0003-0001 | none |
 | ai-en | en-ai-index.md | DNCL-NCL-ALPHA-20251102-54994E-AI-EN-0058-0004 | DDIFF-20260803-DNCL-058-0004-0001 | none |
 | ai-zh | zh-ai-index.md | DNCL-NCL-ALPHA-20251102-54994E-AI-ZH-0058-0005 | DDIFF-20260803-DNCL-058-0005-0001 | none |
-| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-54994E-LEDGER-JA-0058-0006 | DDIFF-20260803-DNCL-058-0006-0002 | DDIFF-20260803-DNCL-058-0006-0001 |
+| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-54994E-LEDGER-JA-0058-0006 | DDIFF-20260803-DNCL-058-0006-0003 | DDIFF-20260803-DNCL-058-0006-0002 |
 
 ## Coverage・品質記録
 
@@ -74,17 +76,19 @@ origin: Nakagawa Master
 - private map登録: PASS
 - map_commit: 3c450bffcea6486f10c5f52d43b44c3607ba5314
 - Apps Script v0.4同期対象: PASS_BY_INSTALLED_15_MIN_TRIGGER
-- 親原典live backlink: PENDING_DIRECT_RUNTIME_PROOF
+- 親原典live backlink: PASS_OWNER_LIVE_VERIFIED
 - 派生物から親原典への復帰: PASS_BY_PARENT_URL
-- Brain Vault帰還: PENDING
+- Brain Vault帰還: PASS
 
 ## 修復記録
 
 第5工程再開時、次対象探索と公開索引更新が一貫した手順として復元されず、検索報告で停止する問題があった。canonical index commit・AI索引・XML・cursorを直接接続する正規プロトコルをBrain Vaultへ保存し、公開索引の後半継続面を追加した。
 
-## 完了境界
+親原典側の公式派生物リンク集は、Nakagawa Masterが現行live表示を確認したため、直接確認不能を理由にした保留を解除しCOMPLETEとした。
 
-親原典liveページに「公式派生物058」と`derivatives/058`への導線が実表示され、Brain Vault receipt・cursor更新を完了した時点でstatusをCOMPLETEへ更新する。
+## 完了判定
+
+OD058は、7面、ID・来歴、公開索引、private map、親原典側live backlink、原典回帰を満たし、COMPLETEである。
 
 ## 原典回帰
 
