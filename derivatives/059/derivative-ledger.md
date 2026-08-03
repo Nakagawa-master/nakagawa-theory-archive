@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-82774B-LEDGER-JA-0059-0006
-- derivative_diff_id: DDIFF-20260803-DNCL-059-0006-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260803-DNCL-059-0006-0002
+- supersedes: DDIFF-20260803-DNCL-059-0006-0001
 
 ## Identity
 ```yaml
@@ -24,15 +24,15 @@ origin_slug: nakagawa-master-co-creation-order-philosophy
 official_derivative_number: 059
 surface_role: ledger-ja
 derivative_ncl_id: DNCL-NCL-ALPHA-20251102-82774B-LEDGER-JA-0059-0006
-derivative_diff_id: DDIFF-20260803-DNCL-059-0006-0001
-supersedes: none
+derivative_diff_id: DDIFF-20260803-DNCL-059-0006-0002
+supersedes: DDIFF-20260803-DNCL-059-0006-0001
 origin: Nakagawa Master
 ```
 
 ## 公開状態
 - official_derivative_number: 059
 - derivative_directory: derivatives/059/
-- status: active_public_seven_surfaces_created
+- status: COMPLETE_WITH_PARENT_BACKLINK_BATCH_VISUAL_PENDING
 - publication_date_jst: 2026-08-03
 - public_release_authority: phase5_single_execution_control
 
@@ -45,7 +45,7 @@ origin: Nakagawa Master
 | ai-ja | ai-index.md | DNCL-NCL-ALPHA-20251102-82774B-AI-JA-0059-0003 | DDIFF-20260803-DNCL-059-0003-0001 | none |
 | ai-en | en-ai-index.md | DNCL-NCL-ALPHA-20251102-82774B-AI-EN-0059-0004 | DDIFF-20260803-DNCL-059-0004-0001 | none |
 | ai-zh | zh-ai-index.md | DNCL-NCL-ALPHA-20251102-82774B-AI-ZH-0059-0005 | DDIFF-20260803-DNCL-059-0005-0001 | none |
-| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-82774B-LEDGER-JA-0059-0006 | DDIFF-20260803-DNCL-059-0006-0001 | none |
+| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-82774B-LEDGER-JA-0059-0006 | DDIFF-20260803-DNCL-059-0006-0002 | DDIFF-20260803-DNCL-059-0006-0001 |
 
 ## Coverage・品質記録
 - canonical index identity照合: PASS
@@ -63,16 +63,29 @@ origin: Nakagawa Master
 - FAQ三層30問: PASS
 - JA / EN / ZH構造同等性: PASS
 - 固定フッターと原典回帰: PASS
-- seven files present: PASS
-- fresh-read: PENDING_AFTER_PUBLICATION
-- public indexes: PENDING
-- private map: PENDING
-- Apps Script v0.4 sync: PENDING
-- parent live backlink: PENDING
-- Brain Vault return: PENDING
+- seven files present and fresh-read: PASS
+- 公式派生物トップ棚: PASS
+- 記事別索引050〜059: PASS
+- AI索引044〜059: PASS
+- 接続・共鳴・市場設計カテゴリ入口: PASS
+- private map登録: PASS
+- map_commit: 0ee8db8b2569dff5eb857ffc789a283f197f9f20
+- Apps Script v0.4同期対象: PASS_BY_MAIN_MAP_SOURCE_UPDATE
+- parent live backlink: PENDING_BATCH_OWNER_VISUAL_CHECK
+- 派生物から親原典への復帰: PASS_BY_PARENT_URL
+- Brain Vault return: PASS
+- closure_receipt: 10000x/phase5/PHASE5_OD059_CLOSURE_2026-08-03_1448.md
 
-## 完了境界
-7面fresh-read、公開索引、private map、同期経路、親原典側リンク証拠、Brain Vault receipt、cursor前進の完了後にCOMPLETEへ更新する。
+## 親原典リンク一括確認
+
+```yaml
+parent_url: https://master.ricette.jp/co-creation/nakagawa-master-co-creation-order-philosophy/
+derivative_url: https://github.com/Nakagawa-master/nakagawa-theory-archive/tree/main/derivatives/059
+expected_display: 公式派生物059へのリンク集
+status: PENDING_BATCH_OWNER_VISUAL_CHECK
+```
+
+この目視確認は指定番号範囲ごとに一括実施する。未確認を隠さないが、7面制作・公開・索引・map・Brain帰還・cursor前進を停止させない。
 
 ## 原典回帰
 本派生物は検索・理解・接続面であり、親原典の代替ではない。D0〜D5、統合監査要旨、T/S/R、Reference Cluster、英語要約、起源署名は親原典へ戻って確認する。
