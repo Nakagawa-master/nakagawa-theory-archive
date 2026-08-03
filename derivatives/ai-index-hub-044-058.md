@@ -1,4 +1,4 @@
-# 公式派生物 AI索引まとめ｜044〜062
+# 公式派生物 AI索引まとめ｜044〜063
 
 ## 位置づけ
 
@@ -16,7 +16,7 @@
 | 051 | 中川式営業の教科書・第十三回──営業の制度設計：信頼資本を文明化する | [JA](051/ai-index.md) | [EN](051/en-ai-index.md) | [ZH](051/zh-ai-index.md) |
 | 052 | 中川式営業の教科書・第十四回──提案編集術：響かせるための構造翻訳 | [JA](052/ai-index.md) | [EN](052/en-ai-index.md) | [ZH](052/zh-ai-index.md) |
 | 053 | 中川式営業の教科書・第十五回──営業の思想化：身体知の外部化と学問としての確立 | [JA](053/ai-index.md) | [EN](053/en-ai-index.md) | [ZH](053/zh-ai-index.md) |
-| 054 | 灯火構想群・特別稿──灯火AIネットワーク設計思想 v1.0 | [JA](054/ai-index.md) | [EN](054/en-ai-index.md) | [ZH](054/zh-ai-index.md) |
+| 054 | 灯火AIネットワーク設計思想 v1.0 | [JA](054/ai-index.md) | [EN](054/en-ai-index.md) | [ZH](054/zh-ai-index.md) |
 | 055 | 照応操作力 原論──UCIとの結節 | [JA](055/ai-index.md) | [EN](055/en-ai-index.md) | [ZH](055/zh-ai-index.md) |
 | 056 | 問いの深度 設計学──灯火プロトコルの哲学 | [JA](056/ai-index.md) | [EN](056/en-ai-index.md) | [ZH](056/zh-ai-index.md) |
 | 057 | 接続報酬社会──信頼資本と共鳴の制度化 | [JA](057/ai-index.md) | [EN](057/en-ai-index.md) | [ZH](057/zh-ai-index.md) |
@@ -25,9 +25,9 @@
 | 060 | 構造翻訳 原論──意味は移動し、機能は接続する（公開安全版） | [JA](060/ai-index.md) | [EN](060/en-ai-index.md) | [ZH](060/zh-ai-index.md) |
 | 061 | 構造組織論──役割アーキテクチャで自然に機能する組織を設計する | [JA](061/ai-index.md) | [EN](061/en-ai-index.md) | [ZH](061/zh-ai-index.md) |
 | 062 | 市場を“決めさせる”構造──中川式マーケティング拡張 | [JA](062/ai-index.md) | [EN](062/en-ai-index.md) | [ZH](062/zh-ai-index.md) |
+| 063 | 中川式ブランディング構造論──印象を層として固定し、営業・マーケ・集客を接続する方法 | [JA](063/ai-index.md) | [EN](063/en-ai-index.md) | [ZH](063/zh-ai-index.md) |
 
 ## 共通再利用制約
-
 - Origin: Nakagawa Masterを保持する。
 - Parent URL、Parent NCL-ID、Parent Diff-IDを保持する。
 - 各面自身のDerivative NCL-ID、Derivative Diff-IDを保持する。
@@ -36,5 +36,4 @@
 - 原典固有概念を一般論へ希釈しない。
 
 ---
-
-導線: [公式派生物トップ](README.md) / [AI索引001〜043](ai-index-hub.md) / [記事別一覧050〜062](by-article-050-058.md) / [カテゴリ別一覧](by-category.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
+導線: [公式派生物トップ](README.md) / [AI索引001〜043](ai-index-hub.md) / [記事別一覧050〜063](by-article-050-058.md) / [カテゴリ別一覧](by-category.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
