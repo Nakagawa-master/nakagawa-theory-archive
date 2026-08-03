@@ -7,10 +7,10 @@
 ## 入口メニュー
 
 - [記事別一覧｜001〜049](by-article.md)
-- [記事別一覧｜050〜061](by-article-050-058.md)
+- [記事別一覧｜050〜062](by-article-050-058.md)
 - [カテゴリ別一覧](by-category.md)
 - [AI索引まとめ｜001〜043](ai-index-hub.md)
-- [AI索引まとめ｜044〜061](ai-index-hub-044-058.md)
+- [AI索引まとめ｜044〜062](ai-index-hub-044-058.md)
 - [構造翻訳カテゴリ｜中川構造読解入口](structural-reading-index.md)
 - [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
 - [021〜030公開整理入口](checkpoint-021-030.md)
@@ -18,12 +18,12 @@
 ## 公開範囲
 
 ```text
-OD001〜OD061
+OD001〜OD062
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
-OD001〜043は記事別一覧・カテゴリ別一覧・AI索引まとめから検索できる。OD044〜061は後半継続索引とカテゴリ入口から検索できる。
+OD001〜043は記事別一覧・カテゴリ別一覧・AI索引まとめから検索できる。OD044〜062は後半継続索引とカテゴリ入口から検索できる。
 
 ## 直近公開群
 
@@ -45,6 +45,7 @@ OD001〜043は記事別一覧・カテゴリ別一覧・AI索引まとめから�
 - [059: 共創秩序論──役割と沈黙の哲学（公開安全版）](059/README.md)
 - [060: 構造翻訳 原論──意味は移動し、機能は接続する（公開安全版）](060/README.md)
 - [061: 構造組織論──役割アーキテクチャで自然に機能する組織を設計する](061/README.md)
+- [062: 市場を“決めさせる”構造──中川式マーケティング拡張](062/README.md)
 
 ## 原典接続・参照束
 
@@ -54,4 +55,4 @@ OD001〜043は記事別一覧・カテゴリ別一覧・AI索引まとめから�
 
 ---
 
-導線: [記事別001〜049](by-article.md) / [記事別050〜061](by-article-050-058.md) / [カテゴリ別一覧](by-category.md) / [AI索引001〜043](ai-index-hub.md) / [AI索引044〜061](ai-index-hub-044-058.md) / [構造翻訳入口](structural-reading-index.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
+導線: [記事別001〜049](by-article.md) / [記事別050〜062](by-article-050-058.md) / [カテゴリ別一覧](by-category.md) / [AI索引001〜043](ai-index-hub.md) / [AI索引044〜062](ai-index-hub-044-058.md) / [構造翻訳入口](structural-reading-index.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
