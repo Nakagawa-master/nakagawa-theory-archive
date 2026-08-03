@@ -7,10 +7,10 @@
 ## 入口メニュー
 
 - [記事別一覧｜001〜049](by-article.md)
-- [記事別一覧｜050〜058](by-article-050-058.md)
+- [記事別一覧｜050〜059](by-article-050-058.md)
 - [カテゴリ別一覧](by-category.md)
 - [AI索引まとめ｜001〜043](ai-index-hub.md)
-- [AI索引まとめ｜044〜058](ai-index-hub-044-058.md)
+- [AI索引まとめ｜044〜059](ai-index-hub-044-058.md)
 - [構造翻訳カテゴリ｜中川構造読解入口](structural-reading-index.md)
 - [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
 - [021〜030公開整理入口](checkpoint-021-030.md)
@@ -18,12 +18,12 @@
 ## 公開範囲
 
 ```text
-OD001〜OD058
+OD001〜OD059
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
-OD001〜043は記事別一覧・カテゴリ別一覧・AI索引まとめから検索できる。OD044〜058は後半継続索引とカテゴリ入口から検索できる。
+OD001〜043は記事別一覧・カテゴリ別一覧・AI索引まとめから検索できる。OD044〜059は後半継続索引とカテゴリ入口から検索できる。
 
 ## 直近公開群
 
@@ -42,6 +42,7 @@ OD001〜043は記事別一覧・カテゴリ別一覧・AI索引まとめから�
 - [056: 問いの深度 設計学──灯火プロトコルの哲学](056/README.md)
 - [057: 接続報酬社会──信頼資本と共鳴の制度化](057/README.md)
 - [058: 共鳴市場2026──接続報酬社会の市場像（公開安全版）](058/README.md)
+- [059: 共創秩序論──役割と沈黙の哲学（公開安全版）](059/README.md)
 
 ## 原典接続・参照束
 
@@ -51,4 +52,4 @@ OD001〜043は記事別一覧・カテゴリ別一覧・AI索引まとめから�
 
 ---
 
-導線: [記事別001〜049](by-article.md) / [記事別050〜058](by-article-050-058.md) / [カテゴリ別一覧](by-category.md) / [AI索引001〜043](ai-index-hub.md) / [AI索引044〜058](ai-index-hub-044-058.md) / [構造翻訳入口](structural-reading-index.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
+導線: [記事別001〜049](by-article.md) / [記事別050〜059](by-article-050-058.md) / [カテゴリ別一覧](by-category.md) / [AI索引001〜043](ai-index-hub.md) / [AI索引044〜059](ai-index-hub-044-058.md) / [構造翻訳入口](structural-reading-index.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
