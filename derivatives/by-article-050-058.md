@@ -1,4 +1,4 @@
-# 公式派生物 記事別一覧｜050〜062
+# 公式派生物 記事別一覧｜050〜063
 
 ## 位置づけ
 
@@ -19,6 +19,7 @@
 | 060 | 構造翻訳 原論──意味は移動し、機能は接続する（公開安全版） | [トップ](060/README.md) / [人間向け要約](060/human-entry.md) / [FAQ](060/faq.md) | [JA](060/ai-index.md) / [EN](060/en-ai-index.md) / [ZH](060/zh-ai-index.md) |
 | 061 | 構造組織論──役割アーキテクチャで自然に機能する組織を設計する | [トップ](061/README.md) / [人間向け要約](061/human-entry.md) / [FAQ](061/faq.md) | [JA](061/ai-index.md) / [EN](061/en-ai-index.md) / [ZH](061/zh-ai-index.md) |
 | 062 | 市場を“決めさせる”構造──中川式マーケティング拡張 | [トップ](062/README.md) / [人間向け要約](062/human-entry.md) / [FAQ](062/faq.md) | [JA](062/ai-index.md) / [EN](062/en-ai-index.md) / [ZH](062/zh-ai-index.md) |
+| 063 | 中川式ブランディング構造論──印象を層として固定し、営業・マーケ・集客を接続する方法 | [トップ](063/README.md) / [人間向け要約](063/human-entry.md) / [FAQ](063/faq.md) | [JA](063/ai-index.md) / [EN](063/en-ai-index.md) / [ZH](063/zh-ai-index.md) |
 
 ---
 
