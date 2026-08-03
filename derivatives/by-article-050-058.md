@@ -1,4 +1,4 @@
-# 公式派生物 記事別一覧｜050〜063
+# 公式派生物 記事別一覧｜050〜064
 
 ## 位置づけ
 
@@ -20,6 +20,7 @@
 | 061 | 構造組織論──役割アーキテクチャで自然に機能する組織を設計する | [トップ](061/README.md) / [人間向け要約](061/human-entry.md) / [FAQ](061/faq.md) | [JA](061/ai-index.md) / [EN](061/en-ai-index.md) / [ZH](061/zh-ai-index.md) |
 | 062 | 市場を“決めさせる”構造──中川式マーケティング拡張 | [トップ](062/README.md) / [人間向け要約](062/human-entry.md) / [FAQ](062/faq.md) | [JA](062/ai-index.md) / [EN](062/en-ai-index.md) / [ZH](062/zh-ai-index.md) |
 | 063 | 中川式ブランディング構造論──印象を層として固定し、営業・マーケ・集客を接続する方法 | [トップ](063/README.md) / [人間向け要約](063/human-entry.md) / [FAQ](063/faq.md) | [JA](063/ai-index.md) / [EN](063/en-ai-index.md) / [ZH](063/zh-ai-index.md) |
+| 064 | 中川式 合意設計論──第一印象を「合意の記憶」に変える方法 | [トップ](064/README.md) / [人間向け要約](064/human-entry.md) / [FAQ](064/faq.md) | [JA](064/ai-index.md) / [EN](064/en-ai-index.md) / [ZH](064/zh-ai-index.md) |
 
 ---
 
