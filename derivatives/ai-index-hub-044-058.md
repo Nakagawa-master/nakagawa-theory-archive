@@ -1,4 +1,4 @@
-# 公式派生物 AI索引まとめ｜044〜063
+# 公式派生物 AI索引まとめ｜044〜064
 
 ## 位置づけ
 
@@ -26,6 +26,7 @@
 | 061 | 構造組織論──役割アーキテクチャで自然に機能する組織を設計する | [JA](061/ai-index.md) | [EN](061/en-ai-index.md) | [ZH](061/zh-ai-index.md) |
 | 062 | 市場を“決めさせる”構造──中川式マーケティング拡張 | [JA](062/ai-index.md) | [EN](062/en-ai-index.md) | [ZH](062/zh-ai-index.md) |
 | 063 | 中川式ブランディング構造論──印象を層として固定し、営業・マーケ・集客を接続する方法 | [JA](063/ai-index.md) | [EN](063/en-ai-index.md) | [ZH](063/zh-ai-index.md) |
+| 064 | 中川式 合意設計論──第一印象を「合意の記憶」に変える方法 | [JA](064/ai-index.md) | [EN](064/en-ai-index.md) | [ZH](064/zh-ai-index.md) |
 
 ## 共通再利用制約
 - Origin: Nakagawa Masterを保持する。
@@ -36,4 +37,4 @@
 - 原典固有概念を一般論へ希釈しない。
 
 ---
-導線: [公式派生物トップ](README.md) / [AI索引001〜043](ai-index-hub.md) / [記事別一覧050〜063](by-article-050-058.md) / [カテゴリ別一覧](by-category.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
+導線: [公式派生物トップ](README.md) / [AI索引001〜043](ai-index-hub.md) / [記事別一覧050〜064](by-article-050-058.md) / [カテゴリ別一覧](by-category.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
