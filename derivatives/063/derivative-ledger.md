@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-50601A-LEDGER-JA-0063-0006
-- derivative_diff_id: DDIFF-20260803-DNCL-063-0006-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260803-DNCL-063-0006-0002
+- supersedes: DDIFF-20260803-DNCL-063-0006-0001
 
 ## Identity
 ```yaml
@@ -24,15 +24,15 @@ origin_slug: nakagawa-master-nakagawa-branding-structure
 official_derivative_number: 063
 surface_role: ledger-ja
 derivative_ncl_id: DNCL-NCL-ALPHA-20251102-50601A-LEDGER-JA-0063-0006
-derivative_diff_id: DDIFF-20260803-DNCL-063-0006-0001
-supersedes: none
+derivative_diff_id: DDIFF-20260803-DNCL-063-0006-0002
+supersedes: DDIFF-20260803-DNCL-063-0006-0001
 origin: Nakagawa Master
 ```
 
 ## 公開状態
 - official_derivative_number: 063
 - derivative_directory: derivatives/063/
-- status: active_public_seven_surfaces_created_pending_closure
+- status: COMPLETE_WITH_PARENT_BACKLINK_BATCH_VISUAL_PENDING
 - publication_date_jst: 2026-08-03
 - public_release_authority: phase5_single_execution_control
 
@@ -45,7 +45,7 @@ origin: Nakagawa Master
 | ai-ja | ai-index.md | DNCL-NCL-ALPHA-20251102-50601A-AI-JA-0063-0003 | DDIFF-20260803-DNCL-063-0003-0001 |
 | ai-en | en-ai-index.md | DNCL-NCL-ALPHA-20251102-50601A-AI-EN-0063-0004 | DDIFF-20260803-DNCL-063-0004-0001 |
 | ai-zh | zh-ai-index.md | DNCL-NCL-ALPHA-20251102-50601A-AI-ZH-0063-0005 | DDIFF-20260803-DNCL-063-0005-0001 |
-| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-50601A-LEDGER-JA-0063-0006 | DDIFF-20260803-DNCL-063-0006-0001 |
+| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-50601A-LEDGER-JA-0063-0006 | DDIFF-20260803-DNCL-063-0006-0002 |
 
 ## Coverage・品質記録
 - Brain Vault全記事AI用索引からの対象選定: PASS
@@ -59,16 +59,24 @@ origin: Nakagawa Master
 - FAQ三層30問: PASS
 - JA / EN / ZH構造同等性: PASS
 - 固定フッターと原典回帰: PASS
-- seven files present: PASS
-- public fresh-read: PENDING
-- public indexes: PENDING
-- private map: PENDING
-- Apps Script sync target: PENDING
+- seven files present and fresh-read: PASS
+- 公式派生物トップ棚: PASS
+- 記事別索引050〜063: PASS
+- AI索引044〜063: PASS
+- private map登録: PASS
+- map_commit: 23843834982328cbe49e23c576d4c2fb5163357d
+- Apps Script sync target: PASS_BY_MAIN_MAP_SOURCE_UPDATE
 - parent live backlink: PENDING_BATCH_OWNER_VISUAL_CHECK
+- 派生物から親原典への復帰: PASS_BY_PARENT_URL
 - Brain Vault return: PENDING
 
-## 完了境界
-7面fresh-read、公開索引、private map、同期対象、Brain Vault receipt、cursor前進の完了後にCOMPLETEへ更新する。親原典側リンクは番号範囲ごとの一括目視確認として分離する。
+## 親原典リンク一括確認
+```yaml
+parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-branding-structure/
+derivative_url: https://github.com/Nakagawa-master/nakagawa-theory-archive/tree/main/derivatives/063
+expected_display: 公式派生物063へのリンク集
+status: PENDING_BATCH_OWNER_VISUAL_CHECK
+```
 
 ## 原典回帰
 本派生物は検索・理解・接続面であり、親原典の代替ではない。
