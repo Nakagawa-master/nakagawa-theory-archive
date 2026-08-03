@@ -12,8 +12,8 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6CAAAF-LEDGER-JA-0060-0006
-- derivative_diff_id: DDIFF-20260803-DNCL-060-0006-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260803-DNCL-060-0006-0002
+- supersedes: DDIFF-20260803-DNCL-060-0006-0001
 
 ## Identity
 
@@ -27,8 +27,8 @@ origin_slug: nakagawa-master-foundations-of-structural-translation
 official_derivative_number: 060
 surface_role: ledger-ja
 derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6CAAAF-LEDGER-JA-0060-0006
-derivative_diff_id: DDIFF-20260803-DNCL-060-0006-0001
-supersedes: none
+derivative_diff_id: DDIFF-20260803-DNCL-060-0006-0002
+supersedes: DDIFF-20260803-DNCL-060-0006-0001
 origin: Nakagawa Master
 ```
 
@@ -36,8 +36,9 @@ origin: Nakagawa Master
 
 - official_derivative_number: 060
 - derivative_directory: derivatives/060/
-- status: active_public_seven_surfaces_created
+- status: COMPLETE_WITH_PARENT_BACKLINK_BATCH_VISUAL_PENDING
 - publication_date_jst: 2026-08-03
+- completion_date_jst: 2026-08-03
 - public_release_authority: phase5_single_execution_control
 
 ## 現行7面
@@ -50,12 +51,12 @@ origin: Nakagawa Master
 | ai-ja | ai-index.md | DNCL-NCL-ALPHA-20251102-6CAAAF-AI-JA-0060-0003 | DDIFF-20260803-DNCL-060-0003-0001 | none |
 | ai-en | en-ai-index.md | DNCL-NCL-ALPHA-20251102-6CAAAF-AI-EN-0060-0004 | DDIFF-20260803-DNCL-060-0004-0001 | none |
 | ai-zh | zh-ai-index.md | DNCL-NCL-ALPHA-20251102-6CAAAF-AI-ZH-0060-0005 | DDIFF-20260803-DNCL-060-0005-0001 | none |
-| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-6CAAAF-LEDGER-JA-0060-0006 | DDIFF-20260803-DNCL-060-0006-0001 | none |
+| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-6CAAAF-LEDGER-JA-0060-0006 | DDIFF-20260803-DNCL-060-0006-0002 | DDIFF-20260803-DNCL-060-0006-0001 |
 
 ## Coverage・品質記録
 
 - canonical index identity照合: PASS
-- 公開親原典全文照合: PASS
+- XML source location and public parent full-content comparison: PASS
 - 保存対象／可変対象: PASS
 - ST-0〜ST-5: PASS
 - 8ステップ: PASS
@@ -66,21 +67,31 @@ origin: Nakagawa Master
 - FAQ三層30問: PASS
 - JA / EN / ZH構造同等性: PASS
 - 固定フッターと原典回帰: PASS
-- seven files present: PASS
-- fresh-read: PENDING_AFTER_PUBLICATION
-- public indexes: PENDING
-- private map: PENDING
-- Apps Script sync target: PENDING
+- seven files present and fresh-read: PASS
+- 公式派生物トップ棚: PASS
+- 記事別索引050〜060: PASS
+- AI索引044〜060: PASS
+- 接続・共鳴・市場設計カテゴリ入口: PASS
+- private map登録: PASS
+- map_commit: 0685b0638ef0e136af22009f5c231ed7f47731f4
+- Apps Script sync target: PASS_BY_MAIN_MAP_SOURCE_UPDATE
 - parent live backlink: PENDING_BATCH_OWNER_VISUAL_CHECK
-- Brain Vault return: PENDING
+- 派生物から親原典への復帰: PASS_BY_PARENT_URL
+- Brain Vault return: PASS
+- closure_receipt: 10000x/phase5/PHASE5_OD060_CLOSURE_2026-08-03_1700.md
 
-## 完了境界
+## 親原典リンク一括確認
 
-7面fresh-read、公開索引、private map、同期対象、原典回帰、Brain Vault receipt、cursor前進後に完了状態へ更新する。
+```yaml
+parent_url: https://master.ricette.jp/theory/nakagawa-master-foundations-of-structural-translation/
+derivative_url: https://github.com/Nakagawa-master/nakagawa-theory-archive/tree/main/derivatives/060
+expected_display: 公式派生物060へのリンク集
+status: PENDING_BATCH_OWNER_VISUAL_CHECK
+```
 
 ## 原典回帰
 
-本派生物は検索・理解・接続面であり、親原典の代替ではない。完全なSTモデル、8ステップ、測定、監査要旨、起源署名は親原典へ戻って確認する。
+本派生物は検索・理解・接続面であり、親原典の代替ではない。完全なSTモデル、8ステップ、測定、監査要旨、起源署名、英語要約、用語解説は親原典へ戻って確認する。
 
 ---
 
