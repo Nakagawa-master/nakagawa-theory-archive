@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-50601A-LEDGER-JA-0063-0006
-- derivative_diff_id: DDIFF-20260803-DNCL-063-0006-0002
-- supersedes: DDIFF-20260803-DNCL-063-0006-0001
+- derivative_diff_id: DDIFF-20260803-DNCL-063-0006-0003
+- supersedes: DDIFF-20260803-DNCL-063-0006-0002
 
 ## Identity
 ```yaml
@@ -24,8 +24,8 @@ origin_slug: nakagawa-master-nakagawa-branding-structure
 official_derivative_number: 063
 surface_role: ledger-ja
 derivative_ncl_id: DNCL-NCL-ALPHA-20251102-50601A-LEDGER-JA-0063-0006
-derivative_diff_id: DDIFF-20260803-DNCL-063-0006-0002
-supersedes: DDIFF-20260803-DNCL-063-0006-0001
+derivative_diff_id: DDIFF-20260803-DNCL-063-0006-0003
+supersedes: DDIFF-20260803-DNCL-063-0006-0002
 origin: Nakagawa Master
 ```
 
@@ -45,7 +45,7 @@ origin: Nakagawa Master
 | ai-ja | ai-index.md | DNCL-NCL-ALPHA-20251102-50601A-AI-JA-0063-0003 | DDIFF-20260803-DNCL-063-0003-0001 |
 | ai-en | en-ai-index.md | DNCL-NCL-ALPHA-20251102-50601A-AI-EN-0063-0004 | DDIFF-20260803-DNCL-063-0004-0001 |
 | ai-zh | zh-ai-index.md | DNCL-NCL-ALPHA-20251102-50601A-AI-ZH-0063-0005 | DDIFF-20260803-DNCL-063-0005-0001 |
-| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-50601A-LEDGER-JA-0063-0006 | DDIFF-20260803-DNCL-063-0006-0002 |
+| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-50601A-LEDGER-JA-0063-0006 | DDIFF-20260803-DNCL-063-0006-0003 |
 
 ## Coverage・品質記録
 - Brain Vault全記事AI用索引からの対象選定: PASS
@@ -68,7 +68,8 @@ origin: Nakagawa Master
 - Apps Script sync target: PASS_BY_MAIN_MAP_SOURCE_UPDATE
 - parent live backlink: PENDING_BATCH_OWNER_VISUAL_CHECK
 - 派生物から親原典への復帰: PASS_BY_PARENT_URL
-- Brain Vault return: PENDING
+- Brain Vault return: PASS
+- closure_receipt: 10000x/phase5/PHASE5_OD063_CLOSURE_2026-08-03_1821.md
 
 ## 親原典リンク一括確認
 ```yaml
