@@ -1,4 +1,4 @@
-# 公式派生物 記事別一覧｜050〜059
+# 公式派生物 記事別一覧｜050〜060
 
 ## 位置づけ
 
@@ -16,6 +16,7 @@
 | 057 | 接続報酬社会──信頼資本と共鳴の制度化 | [トップ](057/README.md) / [人間向け要約](057/human-entry.md) / [FAQ](057/faq.md) | [JA](057/ai-index.md) / [EN](057/en-ai-index.md) / [ZH](057/zh-ai-index.md) |
 | 058 | 共鳴市場2026──接続報酬社会の市場像（公開安全版） | [トップ](058/README.md) / [人間向け要約](058/human-entry.md) / [FAQ](058/faq.md) | [JA](058/ai-index.md) / [EN](058/en-ai-index.md) / [ZH](058/zh-ai-index.md) |
 | 059 | 共創秩序論──役割と沈黙の哲学（公開安全版） | [トップ](059/README.md) / [人間向け要約](059/human-entry.md) / [FAQ](059/faq.md) | [JA](059/ai-index.md) / [EN](059/en-ai-index.md) / [ZH](059/zh-ai-index.md) |
+| 060 | 構造翻訳 原論──意味は移動し、機能は接続する（公開安全版） | [トップ](060/README.md) / [人間向け要約](060/human-entry.md) / [FAQ](060/faq.md) | [JA](060/ai-index.md) / [EN](060/en-ai-index.md) / [ZH](060/zh-ai-index.md) |
 
 ---
 
