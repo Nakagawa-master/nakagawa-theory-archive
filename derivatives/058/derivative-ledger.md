@@ -12,8 +12,8 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-54994E-LEDGER-JA-0058-0006
-- derivative_diff_id: DDIFF-20260803-DNCL-058-0006-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260803-DNCL-058-0006-0002
+- supersedes: DDIFF-20260803-DNCL-058-0006-0001
 
 ## Identity
 
@@ -27,8 +27,8 @@ origin_slug: nakagawa-master-resonance-market-2026
 official_derivative_number: 058
 surface_role: ledger-ja
 derivative_ncl_id: DNCL-NCL-ALPHA-20251102-54994E-LEDGER-JA-0058-0006
-derivative_diff_id: DDIFF-20260803-DNCL-058-0006-0001
-supersedes: none
+derivative_diff_id: DDIFF-20260803-DNCL-058-0006-0002
+supersedes: DDIFF-20260803-DNCL-058-0006-0001
 origin: Nakagawa Master
 ```
 
@@ -36,7 +36,7 @@ origin: Nakagawa Master
 
 - official_derivative_number: 058
 - derivative_directory: derivatives/058/
-- status: active_public_pending_index_map_live_completion
+- status: active_public_map_registered_pending_live_runtime_proof
 - publication_date_jst: 2026-08-03
 - public_release_authority: owner_authorized_phase5_restart
 
@@ -50,33 +50,41 @@ origin: Nakagawa Master
 | ai-ja | ai-index.md | DNCL-NCL-ALPHA-20251102-54994E-AI-JA-0058-0003 | DDIFF-20260803-DNCL-058-0003-0001 | none |
 | ai-en | en-ai-index.md | DNCL-NCL-ALPHA-20251102-54994E-AI-EN-0058-0004 | DDIFF-20260803-DNCL-058-0004-0001 | none |
 | ai-zh | zh-ai-index.md | DNCL-NCL-ALPHA-20251102-54994E-AI-ZH-0058-0005 | DDIFF-20260803-DNCL-058-0005-0001 | none |
-| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-54994E-LEDGER-JA-0058-0006 | DDIFF-20260803-DNCL-058-0006-0001 | none |
+| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-54994E-LEDGER-JA-0058-0006 | DDIFF-20260803-DNCL-058-0006-0002 | DDIFF-20260803-DNCL-058-0006-0001 |
 
 ## Coverage・品質記録
 
 - 親原典本文・canonical index・NCL-ID・Diff-ID照合: PASS
-- seven files present: PASS
-- 全7面の親原典表示・自己派生ID表示: PASS_PENDING_FRESH_READ
+- seven files present and fresh-read: PASS
+- 全7面の親原典表示・自己派生ID表示: PASS
 - READMEの中心命題・因果・機構・指標・反証: PASS
 - human-entryの実務工程・具体例・判定・境界: PASS
 - FAQ三層32問・理由・例・非適用条件: PASS
-- JA / EN / ZHの構造同等性: PASS_PENDING_FRESH_READ
+- JA / EN / ZHの構造同等性: PASS
 - R-Value / R-Price / ROB / CL-API / SS-1.0保持: PASS
 - CRI / IR / KCL / SIR / D-Gap保持: PASS
 - 三シナリオと予測の反証可能性: PASS
 - T/S/R / RB / UCI / REI / 位相監査境界: PASS
 - 貨幣廃止・人気投票・信用スコア・監視への誤読防止: PASS
-- 固定フッターと相互導線: PASS_PENDING_FRESH_READ
-- 公開全体索引接続: PENDING
-- private map登録: PENDING
-- Apps Script同期: PENDING
-- 親原典live backlink: PENDING
+- 固定フッターと相互導線: PASS
+- 公開全体トップ接続: PASS
+- 記事別継続索引050〜058: PASS
+- AI索引継続面044〜058: PASS
+- 接続・共鳴・市場設計カテゴリ入口: PASS
+- private map登録: PASS
+- map_commit: 3c450bffcea6486f10c5f52d43b44c3607ba5314
+- Apps Script v0.4同期対象: PASS_BY_INSTALLED_15_MIN_TRIGGER
+- 親原典live backlink: PENDING_DIRECT_RUNTIME_PROOF
 - 派生物から親原典への復帰: PASS_BY_PARENT_URL
 - Brain Vault帰還: PENDING
 
+## 修復記録
+
+第5工程再開時、次対象探索と公開索引更新が一貫した手順として復元されず、検索報告で停止する問題があった。canonical index commit・AI索引・XML・cursorを直接接続する正規プロトコルをBrain Vaultへ保存し、公開索引の後半継続面を追加した。
+
 ## 完了境界
 
-全7面fresh-read、公開全体索引接続、private map登録、個人Apps Script同期、親原典live表示、双方向往復、Brain Vault receipt・cursor更新が完了した時点でstatusをCOMPLETEへ更新する。
+親原典liveページに「公式派生物058」と`derivatives/058`への導線が実表示され、Brain Vault receipt・cursor更新を完了した時点でstatusをCOMPLETEへ更新する。
 
 ## 原典回帰
 
