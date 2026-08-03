@@ -1,4 +1,4 @@
-# 公式派生物 記事別一覧｜050〜064
+# 公式派生物 記事別一覧｜050〜066
 
 ## 位置づけ
 
@@ -21,6 +21,8 @@
 | 062 | 市場を“決めさせる”構造──中川式マーケティング拡張 | [トップ](062/README.md) / [人間向け要約](062/human-entry.md) / [FAQ](062/faq.md) | [JA](062/ai-index.md) / [EN](062/en-ai-index.md) / [ZH](062/zh-ai-index.md) |
 | 063 | 中川式ブランディング構造論──印象を層として固定し、営業・マーケ・集客を接続する方法 | [トップ](063/README.md) / [人間向け要約](063/human-entry.md) / [FAQ](063/faq.md) | [JA](063/ai-index.md) / [EN](063/en-ai-index.md) / [ZH](063/zh-ai-index.md) |
 | 064 | 中川式 合意設計論──第一印象を「合意の記憶」に変える方法 | [トップ](064/README.md) / [人間向け要約](064/human-entry.md) / [FAQ](064/faq.md) | [JA](064/ai-index.md) / [EN](064/en-ai-index.md) / [ZH](064/zh-ai-index.md) |
+| 065 | 中川式 共創哲学──心と自我、人類の視座と新しい関係性 | [トップ](065/README.md) / [人間向け要約](065/human-entry.md) / [FAQ](065/faq.md) | [JA](065/ai-index.md) / [EN](065/en-ai-index.md) / [ZH](065/zh-ai-index.md) |
+| 066 | 中川式 貨幣社会限界論──AIがもたらす「労働と貨幣」の断絶と次の構造 | [トップ](066/README.md) / [人間向け要約](066/human-entry.md) / [FAQ](066/faq.md) | [JA](066/ai-index.md) / [EN](066/en-ai-index.md) / [ZH](066/zh-ai-index.md) |
 
 ---
 
