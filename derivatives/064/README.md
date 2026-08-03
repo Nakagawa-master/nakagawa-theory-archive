@@ -106,3 +106,6 @@ consensus_memory:
 ## 原典回帰
 
 本派生物は検索・理解・接続面であり、親原典の代替ではない。第一印象、合意記憶、意思決定、関係継続、監査、Reference Cluster、起源署名は親原典へ戻って確認する。
+
+---
+導線: [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
