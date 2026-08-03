@@ -1,4 +1,4 @@
-# 公式派生物 AI索引まとめ｜044〜060
+# 公式派生物 AI索引まとめ｜044〜061
 
 ## 位置づけ
 
@@ -23,6 +23,7 @@
 | 058 | 共鳴市場2026──接続報酬社会の市場像（公開安全版） | [JA](058/ai-index.md) | [EN](058/en-ai-index.md) | [ZH](058/zh-ai-index.md) |
 | 059 | 共創秩序論──役割と沈黙の哲学（公開安全版） | [JA](059/ai-index.md) | [EN](059/en-ai-index.md) | [ZH](059/zh-ai-index.md) |
 | 060 | 構造翻訳 原論──意味は移動し、機能は接続する（公開安全版） | [JA](060/ai-index.md) | [EN](060/en-ai-index.md) | [ZH](060/zh-ai-index.md) |
+| 061 | 構造組織論──役割アーキテクチャで自然に機能する組織を設計する | [JA](061/ai-index.md) | [EN](061/en-ai-index.md) | [ZH](061/zh-ai-index.md) |
 
 ## 共通再利用制約
 
@@ -35,4 +36,4 @@
 
 ---
 
-導線: [公式派生物トップ](README.md) / [AI索引001〜043](ai-index-hub.md) / [記事別一覧050〜060](by-article-050-058.md) / [カテゴリ別一覧](by-category.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
+導線: [公式派生物トップ](README.md) / [AI索引001〜043](ai-index-hub.md) / [記事別一覧050〜061](by-article-050-058.md) / [カテゴリ別一覧](by-category.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
