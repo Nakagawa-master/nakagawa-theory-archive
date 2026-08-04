@@ -104,12 +104,12 @@ OD077は、構造ログ、監査要旨、束指標を一次証拠・解釈窓・
 
 ```yaml
 public_indexes: PENDING
-private_map: PENDING
-parent_backlink: PENDING_PRIVATE_MAP_AND_OWNER_VISUAL_CONFIRMATION
+private_map: PASS_REGISTERED
+parent_backlink: SYNC_TRIGGERED_OR_PERIODIC_SYNC_PENDING_VISUAL_CONFIRMATION
 brain_return: PENDING
 same_path_reload: PENDING
 final_package_validation: PENDING
-completion_status: PENDING_PUBLIC_CLOSURE
+completion_status: PENDING_PARENT_BACKLINK_VISUAL_CONFIRMATION
 ```
 
 ---
