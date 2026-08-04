@@ -35,7 +35,7 @@
 | 072 | 接続裁定設計論 | [JA](072/ai-index.md) | [EN](072/en-ai-index.md) | [ZH](072/zh-ai-index.md) |
 | 073 | 接続公共圏OS | [JA](073/ai-index.md) | [EN](073/en-ai-index.md) | [ZH](073/zh-ai-index.md) |
 | 074 | 接続文明ロードマップ2030–2055 | [JA](074/ai-index.md) | [EN](074/en-ai-index.md) | [ZH](074/zh-ai-index.md) |
-| 075 | 接続価値会計 標準 v0.9 | [JA](075/ai-index.md) | [EN](075/en-ai-index.md) | [ZH](075/zh-ai-index.md) |
+| 075 | 合意の記憶 | [JA](075/ai-index.md) | [EN](075/en-ai-index.md) | [ZH](075/zh-ai-index.md) |
 | 076 | 主観と客観の可動域 | [JA](076/ai-index.md) | [EN](076/en-ai-index.md) | [ZH](076/zh-ai-index.md) |
 
 ## 共通再利用制約
