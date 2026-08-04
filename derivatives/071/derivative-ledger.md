@@ -36,13 +36,13 @@
 ## Seven surfaces
 
 ```yaml
-README.md: PASS_FIRST_OUTPUT
-human-entry.md: PASS_FIRST_OUTPUT
-faq.md: PASS_FIRST_OUTPUT
-ai-index.md: PASS_FIRST_OUTPUT
-en-ai-index.md: PASS_FIRST_OUTPUT
-zh-ai-index.md: PASS_FIRST_OUTPUT
-derivative-ledger.md: PASS
+README.md: PASS_INITIAL_CONTENT
+human-entry.md: PASS_INITIAL_CONTENT
+faq.md: PASS_AFTER_DENSITY_GATE_ALIGNMENT
+ai-index.md: PASS_INITIAL_CONTENT
+en-ai-index.md: PASS_INITIAL_CONTENT
+zh-ai-index.md: PASS_AFTER_CANONICAL_HEADING_ALIGNMENT
+derivative-ledger.md: PASS_AFTER_CANONICAL_SECTION_ALIGNMENT
 ```
 
 ## Formatting parity
@@ -83,11 +83,13 @@ faq_multi_sentence_answers: PASS
 ja_en_zh_required_sections: PASS
 ja_en_zh_semantic_parity: PASS
 origin_return: PASS
-second_density_repair_required: false
-first_output_acceptance_test: PASS
+first_output_content_quality: PASS
+first_output_full_factory_gate: FAIL_FORMAT_AND_DENSITY_ALIGNMENT_REQUIRED
+second_density_repair_required: true
+final_acceptance_after_gate_alignment: PASS
 ```
 
-OD071は、旧KPIと接続KPIのデュアル運用、Adapter Layer、二重会計、準拠ラベル、自治体・大学・企業・市民の連合、反発吸収、30・90・180・365日の導入段階、盲目礼賛の無効化、縮退・ロールバックを7面に同等保持した。
+OD071は、初回から中核意味、README、人間向け要約、三言語の内容品質を保持した。一方、完全Factory gateとの突合でFAQ回答密度、FAQ第2層名、中国語identity正規表記、ledger固定セクションの調律が必要となったため、完全な一発PASSとは扱わない。上流と実ファイルの再調律後はPASSである。
 
 ## Navigation and closure
 
@@ -101,7 +103,7 @@ completion_status: COMPLETE_WITH_PARENT_BACKLINK_VISUAL_CONFIRMATION_PENDING
 next_cursor: OD074
 ```
 
-未確認の親原典側実表示を確認済みとは記録しない。その他の7面、公開索引、map、体裁、密度、三言語同等性は初回出力でPASSした。
+未確認の親原典側実表示を確認済みとは記録しない。最終版の7面、公開索引、map、体裁、密度、三言語同等性はPASSした。
 
 ---
 
