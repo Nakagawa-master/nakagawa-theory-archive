@@ -25,7 +25,7 @@ README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 - [072: 中川式 接続裁定設計論](072/README.md)
 - [073: 中川式 接続公共圏OS](073/README.md)
 - [074: 中川式 接続文明ロードマップ2030–2055](074/README.md)
-- [075: 中川式 接続価値会計 標準 v0.9](075/README.md)
+- [075: 合意の記憶](075/README.md)
 - [076: 主観と客観の可動域](076/README.md)
 
 ## 原典接続・参照束
