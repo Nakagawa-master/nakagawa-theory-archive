@@ -10,6 +10,7 @@
 | 078 | 灯火AIネットワークの理念層 | [トップ](078/README.md) / [要約](078/human-entry.md) / [FAQ](078/faq.md) | [JA](078/ai-index.md) / [EN](078/en-ai-index.md) / [ZH](078/zh-ai-index.md) |
 | 079 | 臨界点と政策ウィンドウ | [トップ](079/README.md) / [要約](079/human-entry.md) / [FAQ](079/faq.md) | [JA](079/ai-index.md) / [EN](079/en-ai-index.md) / [ZH](079/zh-ai-index.md) |
 | 080 | 構造的正統性の設計 | [トップ](080/README.md) / [要約](080/human-entry.md) / [FAQ](080/faq.md) | [JA](080/ai-index.md) / [EN](080/en-ai-index.md) / [ZH](080/zh-ai-index.md) |
+| 081 | 束指標 | [トップ](081/README.md) / [要約](081/human-entry.md) / [FAQ](081/faq.md) | [JA](081/ai-index.md) / [EN](081/en-ai-index.md) / [ZH](081/zh-ai-index.md) |
 
 ## 原典回帰
 
