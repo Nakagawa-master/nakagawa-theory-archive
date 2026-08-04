@@ -1,4 +1,4 @@
-# 公式派生物 記事別一覧｜050〜066
+# 公式派生物 記事別一覧｜050〜067
 
 ## 位置づけ
 
@@ -23,6 +23,7 @@
 | 064 | 中川式 合意設計論──第一印象を「合意の記憶」に変える方法 | [トップ](064/README.md) / [人間向け要約](064/human-entry.md) / [FAQ](064/faq.md) | [JA](064/ai-index.md) / [EN](064/en-ai-index.md) / [ZH](064/zh-ai-index.md) |
 | 065 | 中川式 共創哲学──心と自我、人類の視座と新しい関係性 | [トップ](065/README.md) / [人間向け要約](065/human-entry.md) / [FAQ](065/faq.md) | [JA](065/ai-index.md) / [EN](065/en-ai-index.md) / [ZH](065/zh-ai-index.md) |
 | 066 | 中川式 貨幣社会限界論──AIがもたらす「労働と貨幣」の断絶と次の構造 | [トップ](066/README.md) / [人間向け要約](066/human-entry.md) / [FAQ](066/faq.md) | [JA](066/ai-index.md) / [EN](066/en-ai-index.md) / [ZH](066/zh-ai-index.md) |
+| 067 | 中川式 接続価値会計論──「つながり」を評価単位にする社会設計 | [トップ](067/README.md) / [人間向け要約](067/human-entry.md) / [FAQ](067/faq.md) | [JA](067/ai-index.md) / [EN](067/en-ai-index.md) / [ZH](067/zh-ai-index.md) |
 
 ---
 
