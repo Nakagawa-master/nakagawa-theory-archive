@@ -8,6 +8,7 @@
 | 078 | 灯火AIネットワークの理念層 | [JA](078/ai-index.md) | [EN](078/en-ai-index.md) | [ZH](078/zh-ai-index.md) |
 | 079 | 臨界点と政策ウィンドウ | [JA](079/ai-index.md) | [EN](079/en-ai-index.md) | [ZH](079/zh-ai-index.md) |
 | 080 | 構造的正統性の設計 | [JA](080/ai-index.md) | [EN](080/en-ai-index.md) | [ZH](080/zh-ai-index.md) |
+| 081 | 束指標 | [JA](081/ai-index.md) | [EN](081/en-ai-index.md) | [ZH](081/zh-ai-index.md) |
 
 ## 共通再利用制約
 
