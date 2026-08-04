@@ -96,7 +96,7 @@ ja_en_zh_required_sections: PASS
 ja_en_zh_semantic_parity: PASS
 volume_and_density_restored: PASS
 first_output_content_quality: PASS
-first_output_full_factory_gate: PASS_PENDING_PUBLIC_CLOSURE
+first_output_full_factory_gate: PASS
 second_density_repair_required: false
 ```
 
@@ -105,13 +105,15 @@ OD074は、四因子、三段波動、四臨界、公開監査ダッシュボー
 ## Navigation and closure
 
 ```yaml
-public_indexes: PENDING_BATCH_INDEX_UPDATE
-private_map: PENDING_BATCH_MAP_UPDATE
-parent_backlink: PENDING_PRIVATE_MAP_AND_OWNER_VISUAL_CONFIRMATION
-brain_return: PENDING_BATCH_RETURN
-same_path_reload: PENDING_BATCH_RETURN
-completion_status: PENDING_PUBLIC_CLOSURE
+public_indexes: PASS_THROUGH_OD076
+private_map: PASS_REGISTERED
+parent_backlink: REGISTERED_IN_PRIVATE_MAP__OWNER_VISUAL_CONFIRMATION_PENDING
+brain_return: PASS
+same_path_reload: PASS
+completion_status: COMPLETE_WITH_PARENT_BACKLINK_VISUAL_CONFIRMATION_PENDING
 ```
+
+未確認の親原典側実表示を確認済みとは記録しない。7面、公開索引、map、体裁、密度、三言語同等性はPASSした。
 
 ---
 
