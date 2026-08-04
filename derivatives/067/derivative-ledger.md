@@ -47,13 +47,13 @@ XMLの直接行範囲取得は空応答だったが、canonical indexがXML blob
 ## Seven surfaces
 
 ```yaml
-README.md: CREATED
-human-entry.md: CREATED
-faq.md: CREATED
-ai-index.md: CREATED
-en-ai-index.md: CREATED
-zh-ai-index.md: CREATED
-derivative-ledger.md: CREATED
+README.md: PASS
+human-entry.md: PASS
+faq.md: PASS
+ai-index.md: PASS
+en-ai-index.md: PASS
+zh-ai-index.md: PASS
+derivative-ledger.md: PASS
 ```
 
 ## Semantic coverage
@@ -83,7 +83,10 @@ origin_return: PASS
 readme_exact_footer: PASS
 other_six_return_to_readme: PASS
 all_surfaces_derivative_top_link: PASS
-public_derivative_top_listing: PASS_AFTER_INDEX_UPDATE
+public_derivative_top_listing: PASS
+by_article_index: PASS
+ai_index_hub: PASS
+category_index: PASS
 parent_backlink_state: PENDING_BATCH_OWNER_VISUAL_CHECK
 ```
 
@@ -92,15 +95,15 @@ parent_backlink_state: PENDING_BATCH_OWNER_VISUAL_CHECK
 ```yaml
 public_fresh_read: PASS
 public_indexes: PASS
-private_map: PENDING_SYNC_CONFIRMATION
+private_map: PASS
 ledger: PASS
-brain_return: PENDING_FINAL_RETURN
-same_path_reload: PENDING_FINAL_RETURN
+brain_return: PASS
+same_path_reload: PASS
 completion_status: COMPLETE_WITH_PARENT_BACKLINK_BATCH_VISUAL_PENDING
 next_cursor_after_brain_return: OD068
 ```
 
-親原典側リンク集は、private map同期後にマスターが範囲一括で目視確認する。未確認をOWNER_VISUAL_CONFIRMED_PASSとは記録しない。
+親原典側リンク集の入力はprivate mapへ登録済み。実表示のマスター目視は将来の範囲一括確認に残し、未確認をOWNER_VISUAL_CONFIRMED_PASSとは記録しない。
 
 ---
 
