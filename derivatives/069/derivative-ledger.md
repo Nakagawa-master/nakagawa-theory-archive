@@ -16,16 +16,11 @@ generation_mode: SINGLE_WORK_PACKET_DETERMINISTIC_RENDER
 
 ## Retrieval evidence
 ```yaml
-ai_index:
-  source: reference_corpus/official_archive/generated/canonical_index_0291_0300.jsonl
-  result: PASS
-xml:
-  blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-  item_range: 70161-70406
-  content_range: 70168-70297
-  provenance: PASS
-live_parent:
-  result: PASS
+ai_index: PASS
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+xml_item_range: 70161-70406
+xml_content_range: 70168-70297
+live_parent: PASS
 parity_result: PASS
 no_duplicate: PASS
 ```
@@ -38,11 +33,13 @@ faq_three_layers_30: PASS
 ja_en_zh_parity: PASS
 readme_footer: PASS
 return_links: PASS
-public_indexes: PENDING_BATCH_UPDATE
-private_map: PENDING_BATCH_UPDATE
+public_indexes: PASS
+private_map: PASS
 parent_backlink_state: PENDING_BATCH_OWNER_VISUAL_CHECK
-brain_return: PENDING_BATCH_FINAL_RETURN
-completion_status: COMPLETE_WITH_PARENT_BACKLINK_BATCH_VISUAL_PENDING_AFTER_BATCH_CLOSURE
+brain_return: PASS
+same_path_reload: PASS
+completion_status: COMPLETE_WITH_PARENT_BACKLINK_BATCH_VISUAL_PENDING
+next_cursor_after_return: OD070
 ```
 
 ---
