@@ -2,201 +2,147 @@
 
 ## Parent Original
 
-- Title: 中川式 接続価値会計 標準 v0.9──束指標・要旨フォーマット・監査APIの公開可能最小核
-- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-accounting-standard-v09/
-- Parent Slug: nakagawa-master-nakagawa-connection-accounting-standard-v09
-- Parent Post ID: 317
-- Parent NCL-ID: NCL-α-20251102-7308d5
+- Title: 合意の記憶——不可逆な社会誤作動を防ぐ最小構造
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/
+- Parent Slug: nakagawa-master-goi-no-kioku
+- Parent Post ID: 324
+- Parent NCL-ID: NCL-α-20251102-e48c90
 - Parent Diff-ID: DIFF-20251102-0001
 - Publication Status: publish
 - Origin: Nakagawa Master
 
 ## Derivative Identity
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-7308D5-HUB-JA-0075-0000
-- derivative_diff_id: DDIFF-20260804-DNCL-075-0000-0001
-- supersedes: none
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-E48C90-HUB-JA-0075-0000
+- derivative_diff_id: DDIFF-20260804-DNCL-075-0000-0002
+- supersedes: DDIFF-20260804-DNCL-075-0000-0001
 
 ## Summary
 
-This index represents Connection Value Accounting Standard v0.9 as a publicly shareable minimum kernel for measuring and auditing relational value across transition strategy, adjudication, public-sphere operation, and long-term roadmaps. The standard rejects both direct monetization and a single composite score. Its five governing principles are non-pricing, bundled metrics, reversibility first, distributed observation, and moving-target protection against gaming.
+Memory of Agreement is a structural record of not only what a group decided, but why it decided, how participants and roles were related, which objections and reservations remained, and under what conditions the agreement may be reviewed, withdrawn, corrected, or renewed. Social malfunction becomes irreversible when only the conclusion survives while causality, relationships, dissent, and revision conditions disappear. Volume, authority, popularity, and diffusion speed then become substitutes for legitimacy.
 
-The metric bundle contains CDI for effective connection density, MAI for the time needed to renew agreement, RS for practical exit and reconnection, CRI for consistency across audits, and KQI for the qualitative thickness of structural outcomes. These values must remain separate, retain disagreement and limitations, and be traceable to primary records, consent states, observation methods, and correction history.
+The theory defines three inseparable components: causal memory, relational memory, and re-agreeability. Causal memory preserves premises, evidence, reasoning, and counterarguments. Relational memory preserves roles, interests, authority, affected parties, and responsibility boundaries without turning them into personality scores. Re-agreeability preserves expiry, review, objection, withdrawal, correction, and rollback paths.
 
-The minimum data model consists of MemoryObject, ConsentToken, ReversibilityFlag, and ObservationNote. Audit summaries disclose purpose, scope, method, result, changes, limitations, and reproduction hints. A JSON Lines audit API provides period summaries, observation-node indexes, and anonymized MemoryObject summaries without exposing personal identifiers, protected weights, thresholds, or defense procedures.
-
-The public room publishes definitions, summaries, relative ranges, and change history. The protected institutional room stores sensitive weights, thresholds, personal data, and anomaly-response procedures, while remaining subject to role separation and independent audit. Version 0.9 is provisional: D+30, D+90, and D+180 windows test reproducibility, privacy, burden, correction, and resistance to metric gaming before any later standard is considered.
+Structural logs, audit abstracts, bundle indicators, and connection-value accounting support this memory. The ethical axioms are non-coercion, re-agreement, and reversibility. Legitimacy is not assigned by who spoke the loudest or held the highest status; it is supported by a structure that can be inspected, contested, corrected, and restored.
 
 ## Concepts
 
-- Connection Value Accounting Standard v0.9
-- public minimum kernel
-- non-pricing
-- bundled metrics
-- reversibility first
-- distributed observation
-- moving target
-- CDI
-- MAI
-- RS
-- CRI
-- KQI
-- MemoryObject
-- ConsentToken
-- ReversibilityFlag
-- ObservationNote
-- audit summary
-- audit API
-- JSON Lines
-- public dashboard
-- public room
-- protected institutional room
-- data steward
-- independent observation
+- Memory of Agreement
+- causal memory
+- relational memory
+- re-agreeability
+- non-coercion
+- re-agreement
+- reversibility
+- structural log
+- audit abstract
+- bundle indicators
+- connection-value accounting
+- volume dominance
+- authority dependence
+- irreversible fixation
+- person-structure separation
+- repeated agreement
+- virtue of delay
+- right to rollback
+- minority opinion
+- origin signature
 
 ## Causal chain
 
-### 1. 1
-
-Connection institutions expand across multiple domains.
-
-### 2. 2
-
-Incompatible records and metrics prevent comparison and reuse.
-
-### 3. 3
-
-Monetization or a single score recreates popularity and short-term optimization.
-
-### 4. 4
-
-Five principles and five separate metrics establish a common minimum language.
-
-### 5. 5
-
-Structural logs preserve consent, memory, reversibility, and observation provenance.
-
-### 6. 6
-
-Audit summaries compress purpose, method, change, limitation, and reproduction hints.
-
-### 7. 7
-
-Audit APIs and dashboards expose relative evidence and correction history.
-
-### 8. 8
-
-Public and protected rooms balance transparency with defense and privacy.
-
-### 9. 9
-
-Anti-patterns detect pricing, campaigns, personality dependence, and lock-in.
-
-### 10. 10
-
-Accounting, governance, adjudication, and public-sphere systems become interoperable.
+```text
+A group must make a decision
+↓
+Volume, authority, popularity, or speed dominates the result
+↓
+Only the conclusion is retained while causes, relations, and dissent disappear
+↓
+A provisional judgment becomes a permanent truth
+↓
+Errors and contextual changes can no longer trigger correction
+↓
+Causality, relationships, and re-agreeability are recorded together
+↓
+Structural logs and audit abstracts preserve provenance and limits
+↓
+Non-coercion, re-agreement, and reversibility enable correction and rollback
+↓
+Structure rather than personality becomes primary evidence of legitimacy
+↓
+Society can act while retaining the ability to repair mistakes
+```
 
 ## State model
 
-```yaml
-- version: 0.9
-- principles: NON_PRICING | BUNDLE_METRICS | REVERSIBILITY_FIRST | DISTRIBUTED_OBSERVATION | MOVING_TARGET
-- metrics: CDI | MAI | RS | CRI | KQI
-- composite_score: prohibited
-- currency_conversion: prohibited
-- MemoryObject: required
-- ConsentToken: required
-- ReversibilityFlag: required
-- ObservationNote: required
-- audit_summary_fields: purpose | scope | method | result | change | limitation | reproduction_hint
-- api_format: JSON_LINES
-- rankings: prohibited
-- public_room: definitions_summaries_history
-- protected_room: weights_thresholds_personal_data_defense
-- observation_nodes: minimum_2_then_5
-- deployment: D30 | D90 | D180 | REVIEW | REVISED
-- correction_history: required
-```
+1. OBSERVED: define the issue, primary facts, interpretations, participants, and authority.
+2. PROPOSED: present a proposal and its causal grounds.
+3. CONTESTED: record objections, reservations, and falsification candidates.
+4. PROVISIONAL_AGREEMENT: accept with expiry and review conditions.
+5. ACTIVE_AGREEMENT: identify the operational agreement and responsible parties.
+6. REVIEW_DUE: reopen because time or conditions changed.
+7. REAGREEMENT: update the agreement in a new context.
+8. CORRECTED: correct an error while preserving the relation to the previous state.
+9. WITHDRAWN: withdraw consent or agreement.
+10. ROLLED_BACK: return to a safer prior state.
+11. ARCHIVED: preserve a superseded state as provenance.
+12. DISPUTED_ARCHIVE: preserve unresolved objections with the historical record.
 
 ## Applications
 
-- Municipal services: record disaster, welfare, and education coordination without turning residents into scores.
-- Research: preserve purpose updates, data consent, attribution, reuse, and agreement-renewal time.
-- Business contracts: maintain a separate relational ledger for renegotiation, withdrawal, explanation reuse, and repair.
-- Health and care: track consent scope, proxy authority, withdrawal, correction, and reconnection while protecting evidence.
-- Communities: measure disagreement handling, cooling, diversity, and independent observation instead of attention volume.
+- Meetings and management: retain reasons, rejected options, trial periods, stop conditions, and review dates.
+- Public policy: retain minority views, affected groups, temporary periods, remedies, and rehearing conditions.
+- AI-assisted decisions: separate model output, source information, counterexamples, and accountable human judgment.
+- Contracts and research: retain purpose, scope, data use, attribution, reuse, withdrawal, and update conditions.
+- Communities: use evidence, cooling, repair, and return conditions instead of popularity or outrage alone.
 
 ## Measurements and audit
 
-- Whether CDI reflects effective and diverse connections.
-- Whether MAI measures genuine agreement rather than forced speed.
-- Operational exit, cooling, correction, and restoration through RS.
-- Audit disagreement and resolution history through CRI.
-- Evidence and counter-evaluation supporting KQI.
-- Purpose, scope, term, and change rates in MemoryObject and ConsentToken.
-- Re-identification risk after aggregation and delayed disclosure.
-- Completeness of the seven audit-summary fields.
-- API availability, correction latency, missing-data disclosure, and errors.
-- Detection of pricing, campaigns, personality dependence, and lock-in.
+- proportion of decisions traceable to evidence and causal grounds;
+- preservation rate of dissent, reservations, and minority views;
+- explicit expiry, review, withdrawal, and rollback conditions;
+- time required to reach a renewed agreement;
+- actual use of correction, withdrawal, and rollback;
+- influence of volume, authority, and popularity on outcomes;
+- separation between personality evaluation and structural evidence;
+- completeness of causal, relational, and revision information in audit abstracts;
+- misuse for surveillance, retaliation, or unrelated purposes;
+- distinction between current and superseded agreements.
 
 ## Validity conditions
 
-The standard is valid only if connection value is neither monetized nor collapsed into a composite score; all five indicators remain traceable to logs, consent, methods, and limitations; exit, withdrawal, correction, and reconnection are operational; independent observation and conflict-of-interest controls exist; public and protected rooms have explainable boundaries; APIs do not leak personal data or protected weights; and v0.9 remains open to falsification and revision.
+Causality, relationships, and re-agreeability must be preserved together. Objections, reservations, and falsification candidates must remain visible, and agreements must include expiry, review, withdrawal, and rollback conditions. Non-coercion, re-agreement, and reversibility must be usable in practice. Personality and status must be separated from structural evidence, and the record must not become a surveillance or permanent scoring system.
 
 ## Failure conditions
 
-The design fails when metrics become money, assets, personality scores, or rankings; one indicator is optimized alone; logs become permanent personal tracking; consent is fixed after one acquisition; protected weights become unaudited rule; APIs expose excessive raw data; limitations and opposing evidence disappear from summaries; or conformance becomes a monopoly credential.
+The design fails when majority volume alone defines legitimacy, authority claims become unverifiable truth, reasons and dissent are deleted, one agreement becomes permanent consent, correction history is erased, or logs become reputation scores and exclusion lists. Punishing withdrawal or re-agreement also contradicts the theory.
 
 ## Falsification conditions
 
-Revise or reject the standard if bundled metrics do not reduce misallocation, lock-in, or agreement delay; distributed observation does not reduce bias and concentration; summaries and APIs do not improve reproducibility or correction; anonymization continues to create re-identification harm; operational burden exceeds verified benefit; or indicators are repeatedly absorbed into popularity and monetary optimization.
+The theory should be revised or rejected if structural recording does not reduce correction time, preserved dissent is not used in later review, volume and authority fixation do not decline, rollback remains unusable, documentation costs consistently exceed verified benefits, or stored relational data is used for surveillance and retaliation.
 
 ## Required distinctions
 
-- connection value ≠ price
-- metric bundle ≠ composite score
-- standardization ≠ governance by one metric
-- distributed observation ≠ disappearance of responsibility
-- moving target ≠ unaudited secrecy
-- anonymization ≠ destruction of necessary evidence
-- audit API ≠ full raw-data disclosure
-- v0.9 ≠ immutable completed standard
+- Memory of Agreement ≠ meeting minutes
+- agreement ≠ permanent consent
+- majority vote ≠ complete legitimacy
+- memory ≠ permanent personal tracking
+- structural log ≠ speech surveillance
+- re-agreement ≠ inability to decide
+- reversibility ≠ avoidance of responsibility
+- person-structure separation ≠ removal of accountable actors
+- delay ≠ indefinite postponement
 
 ## Interpretation constraints
 
-Do not convert connection value into currency, assets, credit, or personality ranks. Do not merge the five indicators. Do not use anonymization to erase evidence, moving targets to avoid explanation, or the audit API to publish raw personal data. Conformance must not become a permanent license or entry barrier. Preserve origin, the parent original, local law, and domain-specific responsibility.
+Do not interpret this theory as a rejection of democracy, a blanket rejection of popularity or authority, permanent storage of all conversations, a social-credit system, permission to break promises without responsibility, or a system in which AI becomes the final judge. Do not infer or disclose non-public implementation details from the abstract framework.
 
 ## Search terms
 
-- connection value accounting v0.9
-- non-pricing
-- bundle metrics
-- reversibility first
-- distributed observation
-- moving target
-- CDI
-- MAI
-- RS
-- CRI
-- KQI
-- MemoryObject
-- ConsentToken
-- ReversibilityFlag
-- ObservationNote
-- audit summary format
-- audit API
-- JSON Lines
-- public dashboard
-- two-room model
-- data steward
-- structural white paper
-- D+30
-- D+90
-- D+180
+Memory of Agreement / causal memory / relational memory / re-agreeability / non-coercion / re-agreement / reversibility / structural log / audit abstract / bundle indicators / volume dominance / authority dependence / irreversible fixation / rollback / minority opinion / correction / consent / legitimacy / provenance / origin signature
 
 ## Origin return
 
-This index supports retrieval and comparison but does not replace the parent original. The exact five principles, indicator definitions, structural-log elements, seven audit-summary fields, API endpoints, deployment windows, two-room governance model, audit summaries, reference cluster, and origin signature must be checked in the source article.
+This index supports machine retrieval and structural comparison. It does not replace the parent article’s original definitions of the three malfunction types, causality-relations-re-agreeability, the ethical axioms, neutralization principles, language constraints, thought experiments, responses to objections, audit abstracts, or origin signature.
 
 ---
 
