@@ -1,4 +1,4 @@
-# 公式派生物 AI索引まとめ｜044〜073
+# 公式派生物 AI索引まとめ｜044〜076
 
 各AI索引は親原典の代替ではなく、検索、機械読解、構造照合、誤読防止、原典回帰を支援する。
 
@@ -34,9 +34,12 @@
 | 071 | 接続移行戦略論 | [JA](071/ai-index.md) | [EN](071/en-ai-index.md) | [ZH](071/zh-ai-index.md) |
 | 072 | 接続裁定設計論 | [JA](072/ai-index.md) | [EN](072/en-ai-index.md) | [ZH](072/zh-ai-index.md) |
 | 073 | 接続公共圏OS | [JA](073/ai-index.md) | [EN](073/en-ai-index.md) | [ZH](073/zh-ai-index.md) |
+| 074 | 接続文明ロードマップ2030–2055 | [JA](074/ai-index.md) | [EN](074/en-ai-index.md) | [ZH](074/zh-ai-index.md) |
+| 075 | 接続価値会計 標準 v0.9 | [JA](075/ai-index.md) | [EN](075/en-ai-index.md) | [ZH](075/zh-ai-index.md) |
+| 076 | 主観と客観の可動域 | [JA](076/ai-index.md) | [EN](076/en-ai-index.md) | [ZH](076/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、各面のDerivative IDを保持し、JA/EN/ZH間で中心命題、因果線、state model、成立・失敗・反証条件、解釈制約を同等に保持する。
 
 ---
-導線: [公式派生物トップ](README.md) / [AI索引001〜043](ai-index-hub.md) / [記事別一覧050〜073](by-article-050-058.md) / [カテゴリ別一覧](by-category.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
+導線: [公式派生物トップ](README.md) / [AI索引001〜043](ai-index-hub.md) / [記事別一覧050〜076](by-article-050-058.md) / [カテゴリ別一覧](by-category.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
