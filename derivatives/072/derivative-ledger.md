@@ -45,17 +45,38 @@ zh-ai-index.md: PASS_FIRST_OUTPUT
 derivative-ledger.md: PASS
 ```
 
-## Formatting and density acceptance
+## Formatting parity
 
 ```yaml
 od067_formatting_reference: PASS
+parent_identity_block: PASS
+derivative_identity_block: PASS
 parent_identity_one_item_per_line: PASS
 derivative_identity_one_item_per_line: PASS
 heading_sequence: PASS
 paragraph_breaks: PASS
 readme_exact_footer: PASS
 other_surface_full_footer_menu: PASS
+footer_labels_and_order: PASS
+```
+
+## Semantic and density coverage
+
+```yaml
+positioning: PASS
+central_thesis: PASS
+causal_chain: PASS
+structural_layers: PASS
+state_model: PASS
+applications: PASS
+measurements: PASS
+validity_conditions: PASS
+failure_conditions: PASS
+falsification_conditions: PASS
+required_distinctions: PASS
+prohibited_misreadings: PASS
 readme_volume_and_semantic_density: PASS
+volume_and_density_restored: PASS
 human_entry_seven_sections: PASS
 faq_three_layers_30: PASS
 faq_multi_sentence_answers: PASS
@@ -68,14 +89,17 @@ first_output_acceptance_test: PASS
 
 OD072は、事件受理、可逆的暫定措置、一次・二次証拠、証拠来歴、利益相反回避、公開室・機関室、比例的救済、観察復帰、制限付き復帰、完全復帰、新証拠による再審を7面に同等保持した。裁定を人格処罰や炎上裁判へ縮約していない。
 
-## Closure state
+## Navigation and closure
 
-- public_indexes: PASS — derivative top, by-article index, AI index hub, connection category index updated through OD073
-- private_map: PASS — OD072 registered with parent NCL-ID and slug
-- parent_backlink: REGISTERED_IN_PRIVATE_MAP__OWNER_VISUAL_CONFIRMATION_PENDING
-- brain_return: PASS — Official Archive Memory updated through OD073
-- same_path_reload: PASS — fresh-read restored completed_through OD073 and next_cursor OD074
-- completion_status: COMPLETE_WITH_PARENT_BACKLINK_VISUAL_CONFIRMATION_PENDING
+```yaml
+public_indexes: PASS
+private_map: PASS
+parent_backlink: REGISTERED_IN_PRIVATE_MAP__OWNER_VISUAL_CONFIRMATION_PENDING
+brain_return: PASS
+same_path_reload: PASS
+completion_status: COMPLETE_WITH_PARENT_BACKLINK_VISUAL_CONFIRMATION_PENDING
+next_cursor: OD074
+```
 
 未確認の親原典側実表示を確認済みとは記録しない。その他の7面、公開索引、map、体裁、密度、三言語同等性は初回出力でPASSした。
 
