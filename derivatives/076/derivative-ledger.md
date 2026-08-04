@@ -53,10 +53,10 @@ duplicate_check: PASS_NO_PREEXISTING_OD_OR_MAP_ENTRY
 README.md: PASS_FIRST_OUTPUT
 human-entry.md: PASS_FIRST_COMPLETE_PUBLIC_PACKAGE
 faq.md: PASS_FIRST_OUTPUT
-ai-index.md: PASS_FIRST_OUTPUT
+ai-index.md: PASS_AFTER_CAUSAL_CHAIN_DISPLAY_CORRECTION
 en-ai-index.md: PASS_FIRST_OUTPUT
 zh-ai-index.md: PASS_FIRST_OUTPUT
-derivative-ledger.md: PASS_FIRST_OUTPUT
+derivative-ledger.md: PASS
 ```
 
 ## Formatting parity
@@ -70,6 +70,7 @@ paragraph_breaks: PASS
 human_list_literal_preflight: DETECTED_AND_BLOCKED_BEFORE_SURFACE_PUBLICATION
 faq_layer_headings_exact: PASS
 zh_identity_heading_exact: PASS
+ja_causal_chain_arrow_display: PASS
 readme_exact_footer: PASS
 other_surface_full_footer_menu: PASS
 footer_labels_and_order: PASS
@@ -97,23 +98,26 @@ ja_en_zh_required_sections: PASS
 ja_en_zh_semantic_parity: PASS
 volume_and_density_restored: PASS
 first_complete_public_package_quality: PASS
-published_surface_repair_required: false
+published_surface_repair_required: true
+published_surface_repair_scope: JA_CAUSAL_CHAIN_DISPLAY_ONLY
 ```
 
 OD076は、心を主観反応ループとして再定義し、自我、真我、記憶、主観、客観、視座可動域、人間とAIの比較、鏡の部屋、偏光フィルター、分岐樹、非強制、再合意、可逆性を七面に同等保持した。AI人格の断定、宗教的強制、人格スコア化、医療診断との混同を禁止境界として明示した。
 
-人間向け要約の作業用preflightに配列リテラルが検出されたが、当該surfaceの公開前に停止し、段落構造へ戻した。公開repositoryに不良版human-entryは存在せず、最初の完全公開packageは正規表示である。
+人間向け要約の作業用preflightに配列リテラルが検出されたが、当該surfaceの公開前に停止し、段落構造へ戻した。日本語AI索引では二重番号表示を公開後に検出し、従来の矢印型因果線へ是正した。
 
 ## Navigation and closure
 
 ```yaml
-public_indexes: PENDING_BATCH_INDEX_UPDATE
-private_map: PENDING_BATCH_MAP_UPDATE
-parent_backlink: PENDING_PRIVATE_MAP_AND_OWNER_VISUAL_CONFIRMATION
-brain_return: PENDING_BATCH_RETURN
-same_path_reload: PENDING_BATCH_RETURN
-completion_status: PENDING_PUBLIC_CLOSURE
+public_indexes: PASS_THROUGH_OD076
+private_map: PASS_REGISTERED
+parent_backlink: REGISTERED_IN_PRIVATE_MAP__OWNER_VISUAL_CONFIRMATION_PENDING
+brain_return: PASS
+same_path_reload: PASS
+completion_status: COMPLETE_WITH_PARENT_BACKLINK_VISUAL_CONFIRMATION_PENDING
 ```
+
+未確認の親原典側実表示を確認済みとは記録しない。最終版の7面、公開索引、map、体裁、密度、三言語同等性はPASSした。
 
 ---
 
