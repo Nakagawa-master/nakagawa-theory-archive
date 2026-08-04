@@ -1,4 +1,4 @@
-# 公式派生物 AI索引まとめ｜044〜066
+# 公式派生物 AI索引まとめ｜044〜067
 
 ## 位置づけ
 
@@ -29,6 +29,7 @@
 | 064 | 中川式 合意設計論──第一印象を「合意の記憶」に変える方法 | [JA](064/ai-index.md) | [EN](064/en-ai-index.md) | [ZH](064/zh-ai-index.md) |
 | 065 | 中川式 共創哲学──心と自我、人類の視座と新しい関係性 | [JA](065/ai-index.md) | [EN](065/en-ai-index.md) | [ZH](065/zh-ai-index.md) |
 | 066 | 中川式 貨幣社会限界論──AIがもたらす「労働と貨幣」の断絶と次の構造 | [JA](066/ai-index.md) | [EN](066/en-ai-index.md) | [ZH](066/zh-ai-index.md) |
+| 067 | 中川式 接続価値会計論──「つながり」を評価単位にする社会設計 | [JA](067/ai-index.md) | [EN](067/en-ai-index.md) | [ZH](067/zh-ai-index.md) |
 
 ## 共通再利用制約
 - Origin: Nakagawa Masterを保持する。
@@ -39,4 +40,4 @@
 - 原典固有概念を一般論へ希釈しない。
 
 ---
-導線: [公式派生物トップ](README.md) / [AI索引001〜043](ai-index-hub.md) / [記事別一覧050〜066](by-article-050-058.md) / [カテゴリ別一覧](by-category.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
+導線: [公式派生物トップ](README.md) / [AI索引001〜043](ai-index-hub.md) / [記事別一覧050〜067](by-article-050-058.md) / [カテゴリ別一覧](by-category.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
