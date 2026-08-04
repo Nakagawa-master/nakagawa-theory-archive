@@ -112,15 +112,15 @@ OD075は、旧重複候補を廃棄し、未展開原典「合意の記憶」へ
 ## Navigation and closure
 
 ```yaml
-public_indexes: PENDING_CORRECTION_UPDATE
-private_map: PENDING_CORRECTION_UPDATE
-parent_backlink: PENDING_PRIVATE_MAP_AND_OWNER_VISUAL_CONFIRMATION
-brain_return: PENDING_CORRECTION_RETURN
-same_path_reload: PENDING_CORRECTION_RETURN
-completion_status: PENDING_CLOSURE_AFTER_DUPLICATE_REPLACEMENT
+public_indexes: PASS_CORRECTED_IDENTITY_THROUGH_OD076
+private_map: PASS_CORRECTED_IDENTITY_REGISTERED
+parent_backlink: REGISTERED_IN_PRIVATE_MAP__OWNER_VISUAL_CONFIRMATION_PENDING
+brain_return: PASS
+same_path_reload: PASS
+completion_status: COMPLETE_WITH_PARENT_BACKLINK_VISUAL_CONFIRMATION_PENDING
 ```
 
-旧075親原典を完成対象として残さず、新075のidentityだけを公開索引、private map、Brain Vaultへ反映する。未確認の親原典側実表示を確認済みとは記録しない。
+旧075親原典を完成対象として残さず、新075のidentityだけを公開索引、private map、Brain Vaultへ反映した。未確認の親原典側実表示を確認済みとは記録しない。
 
 ---
 
