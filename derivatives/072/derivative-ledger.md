@@ -73,8 +73,8 @@ OD072は、事件受理、可逆的暫定措置、一次・二次証拠、証拠
 - public_indexes: PASS — derivative top, by-article index, AI index hub, connection category index updated through OD073
 - private_map: PASS — OD072 registered with parent NCL-ID and slug
 - parent_backlink: REGISTERED_IN_PRIVATE_MAP__OWNER_VISUAL_CONFIRMATION_PENDING
-- brain_return: PENDING_FINAL_BATCH_RETURN_TO_OD073
-- same_path_reload: PENDING_FINAL_BATCH_RETURN
+- brain_return: PASS — Official Archive Memory updated through OD073
+- same_path_reload: PASS — fresh-read restored completed_through OD073 and next_cursor OD074
 - completion_status: COMPLETE_WITH_PARENT_BACKLINK_VISUAL_CONFIRMATION_PENDING
 
 未確認の親原典側実表示を確認済みとは記録しない。その他の7面、公開索引、map、体裁、密度、三言語同等性は初回出力でPASSした。
