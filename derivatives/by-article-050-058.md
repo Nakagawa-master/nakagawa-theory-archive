@@ -30,7 +30,7 @@
 | 072 | 中川式 接続裁定設計論 | [トップ](072/README.md) / [要約](072/human-entry.md) / [FAQ](072/faq.md) | [JA](072/ai-index.md) / [EN](072/en-ai-index.md) / [ZH](072/zh-ai-index.md) |
 | 073 | 中川式 接続公共圏OS | [トップ](073/README.md) / [要約](073/human-entry.md) / [FAQ](073/faq.md) | [JA](073/ai-index.md) / [EN](073/en-ai-index.md) / [ZH](073/zh-ai-index.md) |
 | 074 | 中川式 接続文明ロードマップ2030–2055 | [トップ](074/README.md) / [要約](074/human-entry.md) / [FAQ](074/faq.md) | [JA](074/ai-index.md) / [EN](074/en-ai-index.md) / [ZH](074/zh-ai-index.md) |
-| 075 | 中川式 接続価値会計 標準 v0.9 | [トップ](075/README.md) / [要約](075/human-entry.md) / [FAQ](075/faq.md) | [JA](075/ai-index.md) / [EN](075/en-ai-index.md) / [ZH](075/zh-ai-index.md) |
+| 075 | 合意の記憶 | [トップ](075/README.md) / [要約](075/human-entry.md) / [FAQ](075/faq.md) | [JA](075/ai-index.md) / [EN](075/en-ai-index.md) / [ZH](075/zh-ai-index.md) |
 | 076 | 主観と客観の可動域 | [トップ](076/README.md) / [要約](076/human-entry.md) / [FAQ](076/faq.md) | [JA](076/ai-index.md) / [EN](076/en-ai-index.md) / [ZH](076/zh-ai-index.md) |
 
 ---
