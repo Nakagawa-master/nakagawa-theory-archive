@@ -34,4 +34,4 @@ DNCL-NCL-ALPHA-20251102-53D609-HUMAN-JA-0068-0000 / DDIFF-20260804-DNCL-068-HUMA
 管理強化、中央集権、社会信用スコア、秘密主義、監視制度ではない。ガバナンスとは接続を支配することではなく、制度が自らの歪みを検出し、修正・撤回できる状態を作ることである。
 
 ---
-導線: [067ではなく068トップ](README.md) / [公式派生物トップ](../README.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [068トップ](README.md) / [公式派生物トップ](../README.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
