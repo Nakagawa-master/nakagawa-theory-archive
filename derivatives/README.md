@@ -7,10 +7,10 @@
 ## 入口メニュー
 
 - [記事別一覧｜001〜049](by-article.md)
-- [記事別一覧｜050〜066](by-article-050-058.md)
+- [記事別一覧｜050〜067](by-article-050-058.md)
 - [カテゴリ別一覧](by-category.md)
 - [AI索引まとめ｜001〜043](ai-index-hub.md)
-- [AI索引まとめ｜044〜066](ai-index-hub-044-058.md)
+- [AI索引まとめ｜044〜067](ai-index-hub-044-058.md)
 - [構造翻訳カテゴリ｜中川構造読解入口](structural-reading-index.md)
 - [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
 - [021〜030公開整理入口](checkpoint-021-030.md)
@@ -18,12 +18,12 @@
 ## 公開範囲
 
 ```text
-OD001〜OD066
+OD001〜OD067
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
-OD001〜043は記事別一覧・カテゴリ別一覧・AI索引まとめから検索できる。OD044〜066は後半継続索引とカテゴリ入口から検索できる。
+OD001〜043は記事別一覧・カテゴリ別一覧・AI索引まとめから検索できる。OD044〜067は後半継続索引とカテゴリ入口から検索できる。
 
 ## 直近公開群
 
@@ -50,6 +50,7 @@ OD001〜043は記事別一覧・カテゴリ別一覧・AI索引まとめから�
 - [064: 中川式 合意設計論──第一印象を「合意の記憶」に変える方法](064/README.md)
 - [065: 中川式 共創哲学──心と自我、人類の視座と新しい関係性](065/README.md)
 - [066: 中川式 貨幣社会限界論──AIがもたらす「労働と貨幣」の断絶と次の構造](066/README.md)
+- [067: 中川式 接続価値会計論──「つながり」を評価単位にする社会設計](067/README.md)
 
 ## 原典接続・参照束
 
@@ -59,4 +60,4 @@ OD001〜043は記事別一覧・カテゴリ別一覧・AI索引まとめから�
 
 ---
 
-導線: [記事別001〜049](by-article.md) / [記事別050〜066](by-article-050-058.md) / [カテゴリ別一覧](by-category.md) / [AI索引001〜043](ai-index-hub.md) / [AI索引044〜066](ai-index-hub-044-058.md) / [構造翻訳入口](structural-reading-index.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
+導線: [記事別001〜049](by-article.md) / [記事別050〜067](by-article-050-058.md) / [カテゴリ別一覧](by-category.md) / [AI索引001〜043](ai-index-hub.md) / [AI索引044〜067](ai-index-hub-044-058.md) / [構造翻訳入口](structural-reading-index.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
