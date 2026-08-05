@@ -16,13 +16,12 @@
 
 ## 公開範囲
 ```text
-OD001〜OD083
+OD001〜OD084
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
 ## 直近公開群
-- [076: 主観と客観の可動域](076/README.md)
 - [077: 接続価値会計の基礎語彙](077/README.md)
 - [078: 灯火AIネットワークの理念層](078/README.md)
 - [079: 臨界点と政策ウィンドウ](079/README.md)
@@ -30,6 +29,7 @@ README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 - [081: 束指標](081/README.md)
 - [082: 接続価値会計](082/README.md)
 - [083: 照応の原理](083/README.md)
+- [084: 核点指標──KPI再定義](084/README.md)
 
 ## 原典接続・参照束
 新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持し、内容、ID、来歴、導線、原典回帰が一致しない場合は修復してfresh-readする。
