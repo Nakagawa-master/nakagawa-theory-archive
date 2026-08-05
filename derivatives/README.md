@@ -32,7 +32,7 @@ README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 - [084: 核点指標──KPI再定義](084/README.md)
 
 ## 原典接続・参照束
-新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持し、内容、ID、来歴、導線、原典回帰が一致しない場合は修復してfresh-readする。
+新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。OD084は非命令ガバナンス、因果設計、KPI監査の接続面として記事別・AI索引から到達できる。各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持し、内容、ID、来歴、導線、原典回帰が一致しない場合は修復してfresh-readする。
 
 ---
 導線: [記事別001〜049](by-article.md) / [記事別050〜076](by-article-050-058.md) / [記事別077〜100](by-article-077-100.md) / [カテゴリ別一覧](by-category.md) / [AI索引001〜043](ai-index-hub.md) / [AI索引044〜076](ai-index-hub-044-058.md) / [AI索引077〜100](ai-index-hub-077-100.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
