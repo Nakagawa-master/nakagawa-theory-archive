@@ -1,19 +1,19 @@
-# AI索引｜官方派生物086｜核心点探索学
+# 中文AI索引｜官方派生物086
 
-## Identity
+## 亲原典
 
-```yaml
-od_number: OD086
-language: zh
-parent_post_id: 380
-parent_title: 核心点探索学──识别唯一因果支点的方法（公开安全版）
-parent_url: https://master.ricette.jp/theory/nakagawa-master-core-point-discovery/
-parent_ncl_id: NCL-α-20251102-9fa0d4
-parent_diff_id: DIFF-20251102-0001
-derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9FA0D4-AI-ZH-0086-0001
-derivative_diff_id: DDIFF-20260806-DNCL-086-ZH01-0001
-origin: Nakagawa Master
-```
+- 标题: 核心点探索学──识别唯一因果支点的方法（公开安全版）
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-core-point-discovery/
+- Parent Post ID: 380
+- Parent NCL-ID: NCL-α-20251102-9fa0d4
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9FA0D4-AI-ZH-0086-0001
+- derivative_diff_id: DDIFF-20260806-DNCL-086-ZH01-0001
+- supersedes: none
 
 ## 检索摘要
 
@@ -122,6 +122,10 @@ reopened: 重新调整因果分解
 
 核心点探索, true KPI, KGI, 因果支点, 反例筛选, 必要作用, 一因子干预, 稳定性测试, 自由度测试, 诱导检查, Sub Metrics, 非命令治理
 
+## 原典回归
+
+本索引用于检索、机器阅读、结构比较与防止误读。再利用时必须保留Parent NCL-ID、Parent Diff-ID与派生ID，并回到亲原典确认完整定义、边界、例示与来源。
+
 ---
 
-导航: [官方派生物首页](../README.md) / [顶部](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [派生ID台账](derivative-ledger.md)
+导航: [官方派生物首页](../README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
