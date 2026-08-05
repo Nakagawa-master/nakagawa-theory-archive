@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-05 19:18:00",
+  "updated_jst": "2026-08-05 22:49:00",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -84,6 +84,7 @@
     {"number":"080","ncl_id":"NCL-α-20251102-84f683","origin_slug":"nakagawa-master-structural-legitimacy","title":"構造的正統性の設計──「誰が語るか」ではなく「何が残るか」","derivative_dir":"derivatives/080","status":"active"},
     {"number":"081","ncl_id":"NCL-α-20251102-a6f14e","origin_slug":"nakagawa-master-bundle-metrics","title":"束指標──単一指標神話を超える「測りの言語」","derivative_dir":"derivatives/081","status":"active"},
     {"number":"082","ncl_id":"NCL-α-20251102-fde84b","origin_slug":"nakagawa-master-connected-value-accounting","title":"接続価値会計──束指標を“帳簿”に変える","derivative_dir":"derivatives/082","status":"active"},
-    {"number":"083","ncl_id":"NCL-α-20251102-ead79e","origin_slug":"nakagawa-master-principle-of-resonance-structure","title":"照応の原理──世界を動かす“共鳴構造”","derivative_dir":"derivatives/083","status":"active"}
+    {"number":"083","ncl_id":"NCL-α-20251102-ead79e","origin_slug":"nakagawa-master-principle-of-resonance-structure","title":"照応の原理──世界を動かす“共鳴構造”","derivative_dir":"derivatives/083","status":"active"},
+    {"number":"084","ncl_id":"NCL-α-20251102-8c8352","origin_slug":"nakagawa-master-true-kpi-noncoercive-governance","title":"非命令ガバナンスの「核点指標」──KPI再定義","derivative_dir":"derivatives/084","status":"active"}
   ]
 }
