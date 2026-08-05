@@ -14,6 +14,7 @@
 | 082 | 接続価値会計 | [トップ](082/README.md) / [要約](082/human-entry.md) / [FAQ](082/faq.md) | [JA](082/ai-index.md) / [EN](082/en-ai-index.md) / [ZH](082/zh-ai-index.md) |
 | 083 | 照応の原理 | [トップ](083/README.md) / [要約](083/human-entry.md) / [FAQ](083/faq.md) | [JA](083/ai-index.md) / [EN](083/en-ai-index.md) / [ZH](083/zh-ai-index.md) |
 | 084 | 核点指標──KPI再定義 | [トップ](084/README.md) / [要約](084/human-entry.md) / [FAQ](084/faq.md) | [JA](084/ai-index.md) / [EN](084/en-ai-index.md) / [ZH](084/zh-ai-index.md) |
+| 085 | 問いの浅さと制度設計不在 | [トップ](085/README.md) / [要約](085/human-entry.md) / [FAQ](085/faq.md) | [JA](085/ai-index.md) / [EN](085/en-ai-index.md) / [ZH](085/zh-ai-index.md) |
 
 ## 原典回帰
 
