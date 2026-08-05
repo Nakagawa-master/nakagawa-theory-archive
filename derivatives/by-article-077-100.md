@@ -12,6 +12,7 @@
 | 080 | 構造的正統性の設計 | [トップ](080/README.md) / [要約](080/human-entry.md) / [FAQ](080/faq.md) | [JA](080/ai-index.md) / [EN](080/en-ai-index.md) / [ZH](080/zh-ai-index.md) |
 | 081 | 束指標 | [トップ](081/README.md) / [要約](081/human-entry.md) / [FAQ](081/faq.md) | [JA](081/ai-index.md) / [EN](081/en-ai-index.md) / [ZH](081/zh-ai-index.md) |
 | 082 | 接続価値会計 | [トップ](082/README.md) / [要約](082/human-entry.md) / [FAQ](082/faq.md) | [JA](082/ai-index.md) / [EN](082/en-ai-index.md) / [ZH](082/zh-ai-index.md) |
+| 083 | 照応の原理 | [トップ](083/README.md) / [要約](083/human-entry.md) / [FAQ](083/faq.md) | [JA](083/ai-index.md) / [EN](083/en-ai-index.md) / [ZH](083/zh-ai-index.md) |
 
 ## 原典回帰
 
