@@ -16,13 +16,12 @@
 
 ## 公開範囲
 ```text
-OD001〜OD085
+OD001〜OD086
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
 ## 直近公開群
-- [078: 灯火AIネットワークの理念層](078/README.md)
 - [079: 臨界点と政策ウィンドウ](079/README.md)
 - [080: 構造的正統性の設計](080/README.md)
 - [081: 束指標](081/README.md)
@@ -30,9 +29,10 @@ README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 - [083: 照応の原理](083/README.md)
 - [084: 核点指標──KPI再定義](084/README.md)
 - [085: 問いの浅さと制度設計不在](085/README.md)
+- [086: 核点探索学](086/README.md)
 
 ## 原典接続・参照束
-新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。OD085は問いの深度、人口逆ピラミッド、非実施コスト、実物制約、核点KPIを接続する制度設計面である。各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持し、内容、ID、来歴、導線、原典回帰が一致しない場合は修復してfresh-readする。
+新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。OD086はKGI定義、因果展開、反事例ふるい、一因子介入、自由度・誘導検査を接続する核点探索面である。各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持し、内容、ID、来歴、導線、原典回帰が一致しない場合は修復してfresh-readする。
 
 ---
 導線: [記事別001〜049](by-article.md) / [記事別050〜076](by-article-050-058.md) / [記事別077〜100](by-article-077-100.md) / [カテゴリ別一覧](by-category.md) / [AI索引001〜043](ai-index-hub.md) / [AI索引044〜076](ai-index-hub-044-058.md) / [AI索引077〜100](ai-index-hub-077-100.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
