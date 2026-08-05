@@ -11,6 +11,7 @@
 | 081 | 束指標 | [JA](081/ai-index.md) | [EN](081/en-ai-index.md) | [ZH](081/zh-ai-index.md) |
 | 082 | 接続価値会計 | [JA](082/ai-index.md) | [EN](082/en-ai-index.md) | [ZH](082/zh-ai-index.md) |
 | 083 | 照応の原理 | [JA](083/ai-index.md) | [EN](083/en-ai-index.md) | [ZH](083/zh-ai-index.md) |
+| 084 | 核点指標──KPI再定義 | [JA](084/ai-index.md) | [EN](084/en-ai-index.md) | [ZH](084/zh-ai-index.md) |
 
 ## 共通再利用制約
 
