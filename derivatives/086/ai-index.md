@@ -1,19 +1,19 @@
-# AI索引｜公式派生物086｜核点探索学
+# AI索引・日本語｜公式派生物086
 
-## Identity
+## 親原典
 
-```yaml
-od_number: OD086
-language: ja
-parent_post_id: 380
-parent_title: 核点探索学──唯一の因果支点を見抜く方法（公開安全版）
-parent_url: https://master.ricette.jp/theory/nakagawa-master-core-point-discovery/
-parent_ncl_id: NCL-α-20251102-9fa0d4
-parent_diff_id: DIFF-20251102-0001
-derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9FA0D4-AI-JA-0086-0001
-derivative_diff_id: DDIFF-20260806-DNCL-086-JA01-0001
-origin: Nakagawa Master
-```
+- タイトル: 核点探索学──唯一の因果支点を見抜く方法（公開安全版）
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-core-point-discovery/
+- Parent Post ID: 380
+- Parent NCL-ID: NCL-α-20251102-9fa0d4
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9FA0D4-AI-JA-0086-0001
+- derivative_diff_id: DDIFF-20260806-DNCL-086-JA01-0001
+- supersedes: none
 
 ## 検索要旨
 
@@ -121,8 +121,12 @@ reopened: 因果分解へ戻る
 
 ## Retrieval keywords
 
-核点探索, core point discovery, true KPI, KGI, causal fulcrum, counterexample sieve, single-factor intervention, necessary actuation, freedom test, induction audit, Sub Metrics,因果設計,非命令ガバナンス
+核点探索, core point discovery, true KPI, KGI, causal fulcrum, counterexample sieve, single-factor intervention, necessary actuation, freedom test, induction audit, Sub Metrics, 因果設計, 非命令ガバナンス
+
+## Origin return
+
+本索引は検索、機械読解、構造比較、誤読防止のための派生面である。公開安全版の完全な定義、例示、倫理条件、起源署名は親原典へ戻って確認する。Parent NCL-IDとParent Diff-ID、派生IDを保持したまま再利用する。
 
 ---
 
-導線: [公式派生物トップ](../README.md) / [トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
