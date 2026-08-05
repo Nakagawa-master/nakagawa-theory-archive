@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-05 08:30:00",
+  "updated_jst": "2026-08-05 17:41:00",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -82,6 +82,7 @@
     {"number":"078","ncl_id":"NCL-α-20251102-62e3d1","origin_slug":"nakagawa-master-tokibi-ai-ide-layer","title":"灯火AIネットワークの理念層──可動域を保つ「接続のミドルウェア」","derivative_dir":"derivatives/078","status":"active"},
     {"number":"079","ncl_id":"NCL-α-20251102-852729","origin_slug":"nakagawa-master-critical-point-policy-window","title":"臨界点と政策ウィンドウ──接続文明への移行を読み解く12の兆候","derivative_dir":"derivatives/079","status":"active"},
     {"number":"080","ncl_id":"NCL-α-20251102-84f683","origin_slug":"nakagawa-master-structural-legitimacy","title":"構造的正統性の設計──「誰が語るか」ではなく「何が残るか」","derivative_dir":"derivatives/080","status":"active"},
-    {"number":"081","ncl_id":"NCL-α-20251102-a6f14e","origin_slug":"nakagawa-master-bundle-metrics","title":"束指標──単一指標神話を超える「測りの言語」","derivative_dir":"derivatives/081","status":"active"}
+    {"number":"081","ncl_id":"NCL-α-20251102-a6f14e","origin_slug":"nakagawa-master-bundle-metrics","title":"束指標──単一指標神話を超える「測りの言語」","derivative_dir":"derivatives/081","status":"active"},
+    {"number":"082","ncl_id":"NCL-α-20251102-fde84b","origin_slug":"nakagawa-master-connected-value-accounting","title":"接続価値会計──束指標を“帳簿”に変える","derivative_dir":"derivatives/082","status":"active"}
   ]
 }
