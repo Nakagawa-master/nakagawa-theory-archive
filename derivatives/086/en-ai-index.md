@@ -1,19 +1,19 @@
-# AI Index | Official Derivative 086 | Core Point Discovery
+# English AI Index | Official Derivative 086
 
-## Identity
+## Parent Original
 
-```yaml
-od_number: OD086
-language: en
-parent_post_id: 380
-parent_title: Core Point Discovery—How to Identify the Unique Causal Fulcrum (Public-Safe Edition)
-parent_url: https://master.ricette.jp/theory/nakagawa-master-core-point-discovery/
-parent_ncl_id: NCL-α-20251102-9fa0d4
-parent_diff_id: DIFF-20251102-0001
-derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9FA0D4-AI-EN-0086-0001
-derivative_diff_id: DDIFF-20260806-DNCL-086-EN01-0001
-origin: Nakagawa Master
-```
+- Title: Core Point Discovery—How to Identify the Unique Causal Fulcrum (Public-Safe Edition)
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-core-point-discovery/
+- Parent Post ID: 380
+- Parent NCL-ID: NCL-α-20251102-9fa0d4
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## Derivative Identity
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9FA0D4-AI-EN-0086-0001
+- derivative_diff_id: DDIFF-20260806-DNCL-086-EN01-0001
+- supersedes: none
 
 ## Retrieval Summary
 
@@ -122,6 +122,10 @@ reopened: causal decomposition revised
 
 core point discovery, true KPI, KGI, causal fulcrum, counterexample sieve, necessary actuation, single-factor intervention, stabilization test, freedom test, induction audit, sub-metrics, noncoercive governance
 
+## Origin Return
+
+This index supports retrieval, machine reading, structural comparison, and resistance to misreading. Preserve the Parent NCL-ID, Parent Diff-ID, and derivative identity, and return to the parent original for complete definitions, boundaries, examples, and provenance.
+
 ---
 
-Navigation: [Official Derivatives](../README.md) / [Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivatives](../README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
