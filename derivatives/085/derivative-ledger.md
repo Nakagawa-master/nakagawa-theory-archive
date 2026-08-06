@@ -77,7 +77,8 @@ parent_identity_block: PASS
 language_specific_derivative_ids: PASS
 heading_sequence: PASS
 FAQ_layers: BEGINNER_Q1_Q10__PRACTITIONER_Q11_Q20__AI_RESEARCHER_Q21_Q30
-navigation_footer: PASS_FIXED
+readme_global_top_link: PASS
+other_surface_numbered_top_link: PASS
 new_display_contract_added: false
 ```
 
@@ -113,4 +114,4 @@ completion_status: SEE_CURRENT_STATE_OWNER
 
 ---
 
-導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物085トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

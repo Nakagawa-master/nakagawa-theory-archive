@@ -74,8 +74,8 @@ parent_identity_block: GENERATED
 language_specific_derivative_ids: GENERATED
 heading_sequence: OD083_FIXED_FIXTURE
 normal_text_numbering: GENERATED
-readme_exact_footer: GENERATED
-other_surface_footer_without_od_top: GENERATED
+readme_global_top_link: GENERATED
+other_surface_numbered_top_link: GENERATED
 faq_audience_layers_and_Q1_Q30: GENERATED
 ```
 
@@ -113,4 +113,4 @@ The ledger does not declare mutable completion. Publication, public indexes, pub
 
 ---
 
-導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物084トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
