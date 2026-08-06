@@ -14,6 +14,7 @@
 | 084 | 核点指標──KPI再定義 | [JA](084/ai-index.md) | [EN](084/en-ai-index.md) | [ZH](084/zh-ai-index.md) |
 | 085 | 問いの浅さと制度設計不在 | [JA](085/ai-index.md) | [EN](085/en-ai-index.md) | [ZH](085/zh-ai-index.md) |
 | 086 | 核点探索学 | [JA](086/ai-index.md) | [EN](086/en-ai-index.md) | [ZH](086/zh-ai-index.md) |
+| 087 | 照応設計の作法 | [JA](087/ai-index.md) | [EN](087/en-ai-index.md) | [ZH](087/zh-ai-index.md) |
 
 ## 共通再利用制約
 
