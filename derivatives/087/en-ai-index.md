@@ -57,4 +57,4 @@ correspondence architecture, resonance design, non-coercive governance, structur
 Return to the parent original for definitions, context, public-safety boundaries, and origin signature.
 
 ---
-Navigation: [Official derivative top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index Japanese](ai-index.md) / [AI index English](en-ai-index.md) / [AI index Chinese](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+Navigation: [Official derivative 087 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index Japanese](ai-index.md) / [AI index English](en-ai-index.md) / [AI index Chinese](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
