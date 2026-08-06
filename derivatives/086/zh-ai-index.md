@@ -173,4 +173,4 @@ KGI被定义为具体到达状态，而不是活动目标。候选来自因果�
 
 ---
 
-导航: [官方派生物首页](../README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+导航: [官方派生物086首页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
