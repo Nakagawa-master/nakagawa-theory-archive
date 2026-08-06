@@ -57,4 +57,4 @@ field_unaligned / common_object_defined / destination_shared / perspectives_mapp
 定义、语境、公开安全边界与起源签名必须返回父原典确认。
 
 ---
-导航: [官方派生物首页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生台账](derivative-ledger.md)
+导航: [官方派生物087首页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生台账](derivative-ledger.md)
