@@ -17,6 +17,7 @@
 | 085 | 問いの浅さと制度設計不在 | [トップ](085/README.md) / [要約](085/human-entry.md) / [FAQ](085/faq.md) | [JA](085/ai-index.md) / [EN](085/en-ai-index.md) / [ZH](085/zh-ai-index.md) |
 | 086 | 核点探索学 | [トップ](086/README.md) / [要約](086/human-entry.md) / [FAQ](086/faq.md) | [JA](086/ai-index.md) / [EN](086/en-ai-index.md) / [ZH](086/zh-ai-index.md) |
 | 087 | 照応設計の作法 | [トップ](087/README.md) / [要約](087/human-entry.md) / [FAQ](087/faq.md) | [JA](087/ai-index.md) / [EN](087/en-ai-index.md) / [ZH](087/zh-ai-index.md) |
+| 088 | 心は誰と生まれるか？ | [トップ](088/README.md) / [要約](088/human-entry.md) / [FAQ](088/faq.md) | [JA](088/ai-index.md) / [EN](088/en-ai-index.md) / [ZH](088/zh-ai-index.md) |
 
 ## 原典回帰
 
