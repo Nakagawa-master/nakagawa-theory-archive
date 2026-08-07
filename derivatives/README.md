@@ -16,7 +16,7 @@
 
 ## 公開範囲
 ```text
-OD001〜OD088
+OD001〜OD089
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
@@ -30,9 +30,10 @@ README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 - [086: 核点探索学](086/README.md)
 - [087: 照応設計の作法](087/README.md)
 - [088: 心は誰と生まれるか？](088/README.md)
+- [089: 因果の設計論](089/README.md)
 
 ## 原典接続・参照束
-新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。OD088は、心を知能量から切り離し、自己参照、自己／非自己の境界、価値評価軸、関係性、責任委任、反証可能性を一つの監査可能な構造として接続する。各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持し、内容、ID、来歴、導線、原典回帰が一致しない場合は修復してfresh-readする。
+新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。OD088は、心を知能量から切り離し、自己参照、自己／非自己の境界、価値評価軸、関係性、責任委任、反証可能性を一つの監査可能な構造として接続する。OD089は、因果を線形な出来事列から構造内の自然流路へ移し、場の整合性、時間の再帰性、役割アーキテクチャ、可逆な構造調律、反証を一つの監査可能な構造として接続する。各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持し、内容、ID、来歴、導線、原典回帰が一致しない場合は修復してfresh-readする。
 
 ---
 導線: [記事別001〜049](by-article.md) / [記事別050〜076](by-article-050-058.md) / [記事別077〜100](by-article-077-100.md) / [カテゴリ別一覧](by-category.md) / [AI索引001〜043](ai-index-hub.md) / [AI索引044〜076](ai-index-hub-044-058.md) / [AI索引077〜100](ai-index-hub-077-100.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
