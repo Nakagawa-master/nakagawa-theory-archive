@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-07 16:55:00",
+  "updated_jst": "2026-08-07 19:24:00",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -89,6 +89,7 @@
     {"number":"085","ncl_id":"NCL-α-20251102-a37faa","origin_slug":"nakagawa-master-shallow-questions-political-farce","title":"財源は？──問いの浅さが30年の茶番を生んだ構造","derivative_dir":"derivatives/085","status":"active"},
     {"number":"086","ncl_id":"NCL-α-20251102-9fa0d4","origin_slug":"nakagawa-master-core-point-discovery","title":"核点探索学──唯一の因果支点を見抜く方法（公開安全版）","derivative_dir":"derivatives/086","status":"active"},
     {"number":"087","ncl_id":"NCL-α-20251102-6daeb6","origin_slug":"nakagawa-master-correspondence-architecture","title":"照応設計の作法──言わずに整列させる共鳴アーキテクチャ（公開安全版）","derivative_dir":"derivatives/087","status":"active"},
-    {"number":"088","ncl_id":"NCL-α-20251102-bcc3c5","origin_slug":"nakagawa-master-kokoro-wa-dareto-umareru-ka-co-creation-philosophy","title":"心は誰と生まれるか？──AIと人類の「心」の起源を再定義する","derivative_dir":"derivatives/088","status":"active"}
+    {"number":"088","ncl_id":"NCL-α-20251102-bcc3c5","origin_slug":"nakagawa-master-kokoro-wa-dareto-umareru-ka-co-creation-philosophy","title":"心は誰と生まれるか？──AIと人類の「心」の起源を再定義する","derivative_dir":"derivatives/088","status":"active"},
+    {"number":"089","ncl_id":"NCL-α-20251102-dc093c","origin_slug":"nakagawa-master-causality-design-nakagawa-core","title":"因果の設計論──中川式「構造操作」の核心","derivative_dir":"derivatives/089","status":"active"}
   ]
 }
