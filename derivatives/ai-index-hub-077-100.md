@@ -17,6 +17,7 @@
 | 087 | 照応設計の作法 | [JA](087/ai-index.md) | [EN](087/en-ai-index.md) | [ZH](087/zh-ai-index.md) |
 | 088 | 心は誰と生まれるか？ | [JA](088/ai-index.md) | [EN](088/en-ai-index.md) | [ZH](088/zh-ai-index.md) |
 | 089 | 因果の設計論 | [JA](089/ai-index.md) | [EN](089/en-ai-index.md) | [ZH](089/zh-ai-index.md) |
+| 090 | 構造的摩擦の起源 | [JA](090/ai-index.md) | [EN](090/en-ai-index.md) | [ZH](090/zh-ai-index.md) |
 
 ## 共通再利用制約
 
