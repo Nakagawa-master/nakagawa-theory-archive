@@ -112,11 +112,11 @@ OD085_density_floor: PASS
 ## Navigation and closure
 
 ```yaml
-public_indexes: COMPLETE_THROUGH_OD103
-public_map: COMPLETE_THROUGH_OD104
-private_map: COMPLETE_THROUGH_OD104
+public_indexes: COMPLETE_THROUGH_OD105
+public_map: COMPLETE_THROUGH_OD105
+private_map: COMPLETE_THROUGH_OD105
 parent_backlink_display_procedure: COMPLETE
-owner_visual_for_OD103: PENDING
+owner_visual_for_OD103: CONFIRMED_BY_OWNER
 brain_return: CURRENT_STATE_OWNER
 completion_authority: OFFICIAL_ARCHIVE_MEMORY
 completion_status: SEE_CURRENT_STATE_OWNER
