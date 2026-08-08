@@ -30,13 +30,15 @@ zh:
 
 ## Factory
 ```yaml
-baseline: OD085_GOLDEN_MASTER
-factory: private-derivatives/factory/v2
+golden_master: OD085
+factory_version: 2.0
 surface_creation_mode: ONE_PACKET_ONE_RENDERER_RUN
 manual_surface_edit_after_render: false
 contents_api_surface_composition: false
-github_actions_runtime_sync: false
+manual_renderer_validator_parity: PASS
+github_actions_used: false
 production_mode: SINGLE_WRITER_SINGLE_CURSOR_SERIAL
+normal_parent_backlink_sync: PRIVATE_MAP_MAIN__OWNER_APPS_SCRIPT_V0_4__WORDPRESS_REST_JSON__STABLE_MU_RENDERER
 ```
 
 ## Retrieval evidence
@@ -75,6 +77,8 @@ derivative-ledger.md: present
 readme_footer: GLOBAL_PARENT_FOOTER
 non_readme_footer: LOCAL_OD103_FOOTER
 faq_exact_count: 30
+faq_answer_density: OD085_GOLDEN_MASTER_RESTORED
+human_density: OD085_GOLDEN_MASTER_RESTORED
 language_hub_ids: 3
 parent_identity_repeated: true
 origin_signature_preserved: true
@@ -87,13 +91,13 @@ central_thesis:
   derivative_sections: [README.center, human.summary, ai-index.core_thesis]
 causal_chain:
   source_locator: live_parent_origin_stillness_minimal_intervention_three_layer_sync
-  derivative_sections: [README.causal_chain, ai-index.causal_chain]
+  derivative_sections: [README.causal_chain, human.origin_and_layers, ai-index.causal_chain]
 boundaries:
   source_locator: live_parent_public_boundary_and_ethics
-  derivative_sections: [README.boundaries, FAQ, ai-index.boundaries]
+  derivative_sections: [README.boundaries, human.safety, FAQ, ai-index.boundaries]
 falsification:
   source_locator: public_safe_derivative_explicit_testability
-  derivative_sections: [README.falsification, ai-index.falsification]
+  derivative_sections: [README.falsification, human.falsification, FAQ, ai-index.falsification]
 origin:
   source_locator: parent_NCL_and_Diff_declaration
   derivative_sections: [all_surfaces]
@@ -109,17 +113,21 @@ key_semantics:
   - reversibility
 ```
 
-## Navigation and closure
+## Public closure evidence
 ```yaml
-public_surface_links: complete
-parent_return_link: complete
-public_index_update: pending_same_OD_cycle
-public_map_update: pending_same_OD_cycle
-private_map_update: pending_same_OD_cycle
-apps_script_v0_4_display_input: pending_same_OD_cycle
-owner_visual: pending_after_display_procedure
-g10: not_complete_until_owner_visual
+public_seven_surfaces: COMPLETE
+public_article_index: COMPLETE
+public_ai_index: COMPLETE
+public_root_index: COMPLETE
+public_map: COMPLETE
+private_map_main: COMPLETE
+apps_script_v0_4_display_input: COMPLETE
+owner_parent_backlink_visual: CONFIRMED_BY_OWNER
+mutable_state_authority: Brain_Vault_OFFICIAL_ARCHIVE_MEMORY
 ```
+
+## Mutable-state boundary
+本台帳は成果物identity、Factory証拠、構造・意味coverage、公開閉鎖証拠を保持する。production cursorや次ODの決定は所有せず、可変状態の正本はBrain Vaultの `master_records/official_archive/OFFICIAL_ARCHIVE_MEMORY.md` とする。
 
 ---
 導線: [公式派生物103トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
