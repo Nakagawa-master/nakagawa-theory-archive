@@ -7,6 +7,7 @@
 |---|---|---|---|
 | 101 | 文明構造の黎明 | [トップ](101/README.md) / [要約](101/human-entry.md) / [FAQ](101/faq.md) | [JA](101/ai-index.md) / [EN](101/en-ai-index.md) / [ZH](101/zh-ai-index.md) |
 | 102 | 矛盾消費の原理 | [トップ](102/README.md) / [要約](102/human-entry.md) / [FAQ](102/faq.md) | [JA](102/ai-index.md) / [EN](102/en-ai-index.md) / [ZH](102/zh-ai-index.md) |
+| 103 | 起点の最小介入と構造の最大創発 | [トップ](103/README.md) / [要約](103/human-entry.md) / [FAQ](103/faq.md) | [JA](103/ai-index.md) / [EN](103/en-ai-index.md) / [ZH](103/zh-ai-index.md) |
 
 ## 原典回帰
 各面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持する。定義、境界、起源署名、反証条件は親原典へ戻って確認する。
