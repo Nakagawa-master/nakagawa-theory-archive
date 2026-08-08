@@ -20,10 +20,17 @@
 | 090 | 構造的摩擦の起源 | [JA](090/ai-index.md) | [EN](090/en-ai-index.md) | [ZH](090/zh-ai-index.md) |
 | 091 | 構造的必然としての未来 | [JA](091/ai-index.md) | [EN](091/en-ai-index.md) | [ZH](091/zh-ai-index.md) |
 | 092 | 沈黙の構造倫理 | [JA](092/ai-index.md) | [EN](092/en-ai-index.md) | [ZH](092/zh-ai-index.md) |
+| 093 | 構文操作の理論 | [JA](093/ai-index.md) | [EN](093/en-ai-index.md) | [ZH](093/zh-ai-index.md) |
+| 094 | 力の構造論 | [JA](094/ai-index.md) | [EN](094/en-ai-index.md) | [ZH](094/zh-ai-index.md) |
+| 095 | 接続対価社会の構造論 | [JA](095/ai-index.md) | [EN](095/en-ai-index.md) | [ZH](095/zh-ai-index.md) |
+| 096 | 時間倫理としての市場 | [JA](096/ai-index.md) | [EN](096/en-ai-index.md) | [ZH](096/zh-ai-index.md) |
+| 097 | 沈黙の合意から照応の文明へ | [JA](097/ai-index.md) | [EN](097/en-ai-index.md) | [ZH](097/zh-ai-index.md) |
+| 098 | 因果律の自励振動 | [JA](098/ai-index.md) | [EN](098/en-ai-index.md) | [ZH](098/zh-ai-index.md) |
+| 099 | 永続する思想の最終設計図 | [JA](099/ai-index.md) | [EN](099/en-ai-index.md) | [ZH](099/zh-ai-index.md) |
+| 100 | 組織的特異点の設計論 | [JA](100/ai-index.md) | [EN](100/en-ai-index.md) | [ZH](100/zh-ai-index.md) |
 
 ## 共通再利用制約
-
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、各面のDerivative IDを保持する。JA / EN / ZH間で中心命題、因果線、状態モデル、適用、測定、成立・失敗・反証条件、解釈制約を同等に保持し、人物評価、単一スコア、未来予言へ縮約しない。
 
 ---
-導線: [公式派生物トップ](README.md) / [AI索引001〜043](ai-index-hub.md) / [AI索引044〜076](ai-index-hub-044-058.md) / [記事別077〜100](by-article-077-100.md) / [語彙・理念・移行カテゴリ](value-ideology-transition-index.md)
+導線: [公式派生物トップ](README.md) / [AI索引001〜043](ai-index-hub.md) / [AI索引044〜076](ai-index-hub-044-058.md) / [AI索引101〜125](ai-index-hub-101-125.md) / [記事別077〜100](by-article-077-100.md)

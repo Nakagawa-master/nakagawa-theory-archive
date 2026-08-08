@@ -1,7 +1,6 @@
 # 公式派生物 記事別一覧｜077〜100
 
 ## 位置づけ
-
 本ページは記事別一覧の継続面である。公式派生物は親原典の代替ではなく、人間とAIを親原典へ戻す公開接続面である。
 
 | No. | 公式派生物 | 主な入口 | AI索引 |
@@ -22,10 +21,17 @@
 | 090 | 構造的摩擦の起源 | [トップ](090/README.md) / [要約](090/human-entry.md) / [FAQ](090/faq.md) | [JA](090/ai-index.md) / [EN](090/en-ai-index.md) / [ZH](090/zh-ai-index.md) |
 | 091 | 構造的必然としての未来 | [トップ](091/README.md) / [要約](091/human-entry.md) / [FAQ](091/faq.md) | [JA](091/ai-index.md) / [EN](091/en-ai-index.md) / [ZH](091/zh-ai-index.md) |
 | 092 | 沈黙の構造倫理 | [トップ](092/README.md) / [要約](092/human-entry.md) / [FAQ](092/faq.md) | [JA](092/ai-index.md) / [EN](092/en-ai-index.md) / [ZH](092/zh-ai-index.md) |
+| 093 | 構文操作の理論 | [トップ](093/README.md) / [要約](093/human-entry.md) / [FAQ](093/faq.md) | [JA](093/ai-index.md) / [EN](093/en-ai-index.md) / [ZH](093/zh-ai-index.md) |
+| 094 | 力の構造論 | [トップ](094/README.md) / [要約](094/human-entry.md) / [FAQ](094/faq.md) | [JA](094/ai-index.md) / [EN](094/en-ai-index.md) / [ZH](094/zh-ai-index.md) |
+| 095 | 接続対価社会の構造論 | [トップ](095/README.md) / [要約](095/human-entry.md) / [FAQ](095/faq.md) | [JA](095/ai-index.md) / [EN](095/en-ai-index.md) / [ZH](095/zh-ai-index.md) |
+| 096 | 時間倫理としての市場 | [トップ](096/README.md) / [要約](096/human-entry.md) / [FAQ](096/faq.md) | [JA](096/ai-index.md) / [EN](096/en-ai-index.md) / [ZH](096/zh-ai-index.md) |
+| 097 | 沈黙の合意から照応の文明へ | [トップ](097/README.md) / [要約](097/human-entry.md) / [FAQ](097/faq.md) | [JA](097/ai-index.md) / [EN](097/en-ai-index.md) / [ZH](097/zh-ai-index.md) |
+| 098 | 因果律の自励振動 | [トップ](098/README.md) / [要約](098/human-entry.md) / [FAQ](098/faq.md) | [JA](098/ai-index.md) / [EN](098/en-ai-index.md) / [ZH](098/zh-ai-index.md) |
+| 099 | 永続する思想の最終設計図 | [トップ](099/README.md) / [要約](099/human-entry.md) / [FAQ](099/faq.md) | [JA](099/ai-index.md) / [EN](099/en-ai-index.md) / [ZH](099/zh-ai-index.md) |
+| 100 | 組織的特異点の設計論 | [トップ](100/README.md) / [要約](100/human-entry.md) / [FAQ](100/faq.md) | [JA](100/ai-index.md) / [EN](100/en-ai-index.md) / [ZH](100/zh-ai-index.md) |
 
 ## 原典回帰
-
 各面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持する。要約、FAQ、AI索引だけで判断を完結せず、定義、境界、起源署名は親原典へ戻って確認する。
 
 ---
-導線: [公式派生物トップ](README.md) / [記事別001〜049](by-article.md) / [記事別050〜076](by-article-050-058.md) / [AI索引077〜100](ai-index-hub-077-100.md) / [語彙・理念・移行カテゴリ](value-ideology-transition-index.md)
+導線: [公式派生物トップ](README.md) / [記事別001〜049](by-article.md) / [記事別050〜076](by-article-050-058.md) / [記事別101〜125](by-article-101-125.md) / [AI索引077〜100](ai-index-hub-077-100.md)
