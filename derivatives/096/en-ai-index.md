@@ -1,7 +1,7 @@
 # English AI Index | Official Derivative 096
 
 ## Parent Original
-- Title: Market as Temporal Ethics — Designing Credit Around Future Coherence
+- Title: Market as Temporal Ethics — Designing Credit by the Consistency of the Future
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-temporal-ethics-market-credit-structure/
 - Parent Post ID: 595
 - Parent NCL-ID: NCL-α-20251102-482a93
@@ -15,37 +15,91 @@
 
 ## Summary
 
-The source reframes market credit as a temporal structure: trust grows when observers can reasonably expect the same non-contradictory coherence to continue. Structural rhythm means that principles, actions and records repeat in phase. When that rhythm is observable and counterexamples are repaired without changing the baseline merely to protect appearances, a provisional sense of completion may form and future coherence can be treated as present credit. The operational dimensions are cadence, tone, margin and durable trace. Validation must include return, continuation, re-reference, recovery after failure and the cost of rigidity, not only short-term sales or attention.
+Temporal market ethics evaluates credit not only by current price, current profit, or present ability to pay, but also by whether promises remain coherent across the next cycle, whether failure can be repaired, and whether future actors retain usable options. A transaction can look successful now while exporting repair costs, environmental loss, relationship damage, or knowledge depletion to later actors. The model therefore brings cycle length, future debt, recovery windows, substitution, renegotiation, and primary-record re-reference into the present credit decision.
+
+It is not deterministic prediction and not a demand to sacrifice the present for an imagined future. The model preserves current outcomes as baseline evidence, then adds time-directional evidence and tests whether the combined evaluation improves durability without causing decision paralysis or unjust present harm.
 
 ## Concepts
-Temporal ethics; structural rhythm; future debt; provisional completion; cadence; tone; margin; traceability; counterexample resilience.
+
+- temporal ethics
+- market
+- credit
+- future consistency
+- cycle
+- recovery window
+- future debt
+- optionality
+- reversibility
+- re-reference
+- burden transfer
+- falsification
+- origin return
 
 ## Causal chain
+
 ```text
-short-term pressure → hidden long-term coherence → repeated aligned rhythm → observable traces → repair without baseline drift → future-coherence expectation → structural credit
+credit is judged from current price and current output
+→ deferred repair and relationship costs become invisible
+→ present optimization narrows future options and recovery windows
+→ record cycles, promises, burden owners, and repair paths
+→ add future consistency to the present decision criteria
+→ compare short-term gains and future debt on the same evidence surface
+→ support the model only when durability and recoverability improve across multiple cycles
 ```
 
 ## State model
+
 ```yaml
-- cadence_set
-- tone_bounded
-- margin_preserved
-- traces_connected
-- counterexample_repaired
-- credit_behavior_observed
+- current_market_baseline
+- time_horizon_declared
+- promise_responsibility_signed
+- future_debt_mapped
+- recovery_window_defined
+- reversible_pilot
+- next_cycle_observed
+- optionality_burden_checked
+- multi_cycle_compared
+- counterevidence_reviewed
+- update_or_rollback
 ```
 
 ## Applications
-Long-term publishing, customer relationships, research archives, service operations and brand trust.
 
-## Measurements
-Cadence variance, tone spikes, return/continuation/re-reference, recovery time, trace gaps and rigidity cost.
+In procurement, compare price with substitution, supplier recovery capacity, and future renegotiation cost. In investment, record delayed repair and asset repurposability. In AI-service contracts, audit model updates, data deletion, log migration, exit, and responsibility handover. In public policy, place immediate relief and long-term dependence on the same timeline rather than treating them as separate debates.
 
-## Validity / failure / falsification
-The theory requires a visible baseline and honest repair. Retroactive premise changes, success-only storytelling or selling “future credit” as certainty are failure modes. Lack of reproducible relation between temporal coherence and trust behavior weakens the hypothesis.
+## Measurements and audit
+
+Measure present returns, next-cycle repair cost, renegotiation cost, promise-fulfillment rate, available substitutes, withdrawal or repurposing time, recovery time, and primary-record re-reference. Separate current beneficiaries from future burden bearers. Keep uncertainty and alternative scenarios with predictions, then compare estimates with realized outcomes in the next cycle.
+
+## Validity conditions
+
+The time horizon and cycle must be declared before evaluation. Present benefits and future debt must be traceable within the same evidence architecture. Substitution, withdrawal, renegotiation, and repurposing must be practically available rather than nominal. Future burden bearers must not be completely invisible, and primary records must allow later decision makers to reconstruct promises and assumptions.
+
+## Failure conditions
+
+Failure includes using “long term” without a defined cycle, compressing uncertain future harms into one authoritative number, externalizing repair costs to other actors without disclosure, ignoring urgent present safety in the name of future consistency, or presenting predictions as facts that cannot be challenged. Long-term analysis that merely freezes action is not success.
+
+## Falsification conditions
+
+The hypothesis weakens when adding future-debt and recovery evidence does not improve durability or repair costs across cycles; when the evaluation causes persistent harmful paralysis; when predicted debts do not recur and alternative explanations dominate; or when a current-only comparison remains superior even after long-term cost, freedom, and recoverability are included.
+
+## Required distinctions
+
+Distinguish temporal ethics from fortune telling, long-term orientation from neglect of the present, credit from simple solvency, future debt from vague anxiety, and recoverability from irresponsible postponement. Related financial or ESG methods may overlap but should not erase the parent original's structural roles.
 
 ## Interpretation constraints
-Not a price-forecasting model, a formula for blind trust, or a command to resist necessary change.
+
+Do not output a single inevitable future. Do not let an AI define the interests of future generations as unquestionable facts. Do not dismiss current profit or current safety. Keep prediction uncertainty visible. Preserve Parent identifiers and return to the original for precise definitions, exceptions, origin signatures, and quotations.
+
+For machine reading, treat immediate outcome, next-cycle persistence, and post-failure recovery as different states. Never promote an immediate improvement automatically to long-term validity. Record the chosen observation horizon because changing the horizon can change the conclusion.
+
+## Search terms
+
+temporal ethics, market, credit, future consistency, cycle, recovery window, future debt, optionality, reversibility, re-reference, burden transfer, Nakagawa Master, OD096, official derivative, origin return
+
+## Origin return
+
+The definitive definitions, examples, ethical boundary, and origin signature remain in the parent original: https://master.ricette.jp/theory/nakagawa-master-temporal-ethics-market-credit-structure/. Preserve Parent NCL-ID NCL-α-20251102-482a93 and Parent Diff-ID DIFF-20251102-0001. This AI surface is a retrieval derivative, not a replacement original.
 
 ---
 
