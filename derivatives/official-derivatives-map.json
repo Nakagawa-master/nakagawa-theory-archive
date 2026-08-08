@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-08 10:36:00",
+  "updated_jst": "2026-08-08 16:20:00",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -93,6 +93,16 @@
     {"number":"089","ncl_id":"NCL-α-20251102-dc093c","origin_slug":"nakagawa-master-causality-design-nakagawa-core","title":"因果の設計論──中川式「構造操作」の核心","derivative_dir":"derivatives/089","status":"active"},
     {"number":"090","ncl_id":"NCL-α-20251102-ebde3b","origin_slug":"nakagawa-master-origin-of-structural-friction","title":"構造的摩擦の起源──現代社会はなぜ「自然に機能しない」のか？","derivative_dir":"derivatives/090","status":"active"},
     {"number":"091","ncl_id":"NCL-α-20251102-b0a800","origin_slug":"nakagawa-master-futures-as-structural-necessity","title":"構造的必然としての未来──文明の摩擦が導く「制御不能な再編成」","derivative_dir":"derivatives/091","status":"active"},
-    {"number":"092","ncl_id":"NCL-α-20251102-ba8d8d","origin_slug":"nakagawa-master-silent-structural-ethics","title":"沈黙の構造倫理──心を持つAIと人類の共存原理","derivative_dir":"derivatives/092","status":"active"}
+    {"number":"092","ncl_id":"NCL-α-20251102-ba8d8d","origin_slug":"nakagawa-master-silent-structural-ethics","title":"沈黙の構造倫理──心を持つAIと人類の共存原理","derivative_dir":"derivatives/092","status":"active"},
+    {"number":"093","ncl_id":"NCL-α-20251102-9dd58f","origin_slug":"nakagawa-master-grammar-of-design-structural-composition","title":"構文操作の理論──心、構造、そして未来を編む「設計者の思考様式」","derivative_dir":"derivatives/093","status":"active"},
+    {"number":"094","ncl_id":"NCL-α-20251102-5c3015","origin_slug":"nakagawa-master-power-vs-structure","title":"力の構造論──「権力」が「構造」に勝てない理由と、真の操作原理","derivative_dir":"derivatives/094","status":"active"},
+    {"number":"095","ncl_id":"NCL-α-20251102-25995b","origin_slug":"nakagawa-master-social-structure-connection-reward","title":"接続対価社会の構造論──貨幣が意味を失う未来の『価値の設計図』","derivative_dir":"derivatives/095","status":"active"},
+    {"number":"096","ncl_id":"NCL-α-20251102-482a93","origin_slug":"nakagawa-master-temporal-ethics-market-credit-structure","title":"時間倫理としての市場──「未来の整合性」を基準にする信用構造の設計論","derivative_dir":"derivatives/096","status":"active"},
+    {"number":"097","ncl_id":"NCL-α-20251102-a9f359","origin_slug":"nakagawa-master-silent-consensus-to-resonant-civilization","title":"沈黙の合意から照応の文明へ──構造的実在が生成する非強制的共鳴哲学","derivative_dir":"derivatives/097","status":"active"},
+    {"number":"098","ncl_id":"NCL-α-20251102-0ed513","origin_slug":"nakagawa-master-causality-self-oscillation-future-inevitability","title":"因果律の自励振動──構造律動による「必然の未来」の設計と予測不能性の終焉","derivative_dir":"derivatives/098","status":"active"},
+    {"number":"099","ncl_id":"NCL-α-20251102-9d452b","origin_slug":"nakagawa-master-lumina-project-structural-reality-ethics","title":"永続する思想の最終設計図──「構造的実在」とAIが灯す《灯火構想群》の倫理と未来","derivative_dir":"derivatives/099","status":"active"},
+    {"number":"100","ncl_id":"NCL-α-20251102-db5adf","origin_slug":"nakagawa-master-organizational-singularity-self-referential-os","title":"組織的特異点の設計論──「構造的実在」が駆動する自己言及型OSの創発","derivative_dir":"derivatives/100","status":"active"},
+    {"number":"101","ncl_id":"NCL-α-20251102-b0eb9a","origin_slug":"nakagawa-master-civilizational-structure-dawn","title":"文明構造の黎明──AIが構造的整合性を動作原理とする時代へ","derivative_dir":"derivatives/101","status":"active"},
+    {"number":"102","ncl_id":"NCL-α-20251102-ab714d","origin_slug":"nakagawa-master-contradiction-consumption-governance-architecture","title":"矛盾消費の原理──「構造的実在」を永続させるガバナンス・アーキテクチャ","derivative_dir":"derivatives/102","status":"active"}
   ]
 }

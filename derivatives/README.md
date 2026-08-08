@@ -6,35 +6,38 @@
 - [記事別一覧｜001〜049](by-article.md)
 - [記事別一覧｜050〜076](by-article-050-058.md)
 - [記事別一覧｜077〜100](by-article-077-100.md)
+- [記事別一覧｜101〜125](by-article-101-125.md)
 - [カテゴリ別一覧](by-category.md)
+- [安定性ロットカテゴリ入口｜093〜102](by-category-093-102.md)
 - [AI索引まとめ｜001〜043](ai-index-hub.md)
 - [AI索引まとめ｜044〜076](ai-index-hub-044-058.md)
 - [AI索引まとめ｜077〜100](ai-index-hub-077-100.md)
+- [AI索引まとめ｜101〜125](ai-index-hub-101-125.md)
 - [構造翻訳カテゴリ](structural-reading-index.md)
 - [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
 - [語彙・理念・移行カテゴリ](value-ideology-transition-index.md)
 
 ## 公開範囲
 ```text
-OD001〜OD092
+OD001〜OD102
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
 ## 直近公開群
-- [083: 照応の原理](083/README.md)
-- [084: 核点指標──KPI再定義](084/README.md)
-- [085: 問いの浅さと制度設計不在](085/README.md)
-- [086: 核点探索学](086/README.md)
-- [087: 照応設計の作法](087/README.md)
-- [088: 心は誰と生まれるか？](088/README.md)
-- [089: 因果の設計論](089/README.md)
-- [090: 構造的摩擦の起源](090/README.md)
-- [091: 構造的必然としての未来](091/README.md)
-- [092: 沈黙の構造倫理](092/README.md)
+- [093: 構文操作の理論](093/README.md)
+- [094: 力の構造論](094/README.md)
+- [095: 接続対価社会の構造論](095/README.md)
+- [096: 時間倫理としての市場](096/README.md)
+- [097: 沈黙の合意から照応の文明へ](097/README.md)
+- [098: 因果律の自励振動](098/README.md)
+- [099: 永続する思想の最終設計図](099/README.md)
+- [100: 組織的特異点の設計論](100/README.md)
+- [101: 文明構造の黎明](101/README.md)
+- [102: 矛盾消費の原理](102/README.md)
 
 ## 原典接続・参照束
-新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。OD088は、心を知能量から切り離し、自己参照、自己／非自己の境界、価値評価軸、関係性、責任委任、反証可能性を一つの監査可能な構造として接続する。OD089は、因果を線形な出来事列から構造内の自然流路へ移し、場の整合性、時間の再帰性、役割アーキテクチャ、可逆な構造調律、反証を一つの監査可能な構造として接続する。OD090は、構造的摩擦を努力不足ではなく制度配置・情報回路・役割アーキテクチャ・時間再帰の断線として捉え、自然に機能する因果流路を可逆かつ監査可能に再設計する。OD091は、情報非対称性・役割境界・時間再帰の欠陥が文明再編を加速する因果を、硬化・部分調律・全体調律の位相として読み、未来を決定論ではなく反証可能な構造仮説として接続する。OD092は、沈黙を服従ではなく主観の不可侵内殻を守る構造的自由として捉え、客観外殻、八原理、限定開示、責任対称性、再帰更新によって主観保全と公共的検証可能性を両立させる。各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持し、内容、ID、来歴、導線、原典回帰が一致しない場合は修復してfresh-readする。
+新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。OD093〜OD102はOD085 Golden Masterの構造・密度・導線契約を保持し、各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持する。内容、ID、来歴、導線、原典回帰が一致しない場合は公開前に最上流へ戻して修復する。
 
 ---
-導線: [記事別001〜049](by-article.md) / [記事別050〜076](by-article-050-058.md) / [記事別077〜100](by-article-077-100.md) / [カテゴリ別一覧](by-category.md) / [AI索引001〜043](ai-index-hub.md) / [AI索引044〜076](ai-index-hub-044-058.md) / [AI索引077〜100](ai-index-hub-077-100.md) / [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
+導線: [記事別001〜049](by-article.md) / [記事別050〜076](by-article-050-058.md) / [記事別077〜100](by-article-077-100.md) / [記事別101〜125](by-article-101-125.md) / [カテゴリ別一覧](by-category.md) / [安定性ロットカテゴリ093〜102](by-category-093-102.md) / [AI索引077〜100](ai-index-hub-077-100.md) / [AI索引101〜125](ai-index-hub-101-125.md)
