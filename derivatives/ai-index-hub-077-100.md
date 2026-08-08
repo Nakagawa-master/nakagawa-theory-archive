@@ -19,6 +19,7 @@
 | 089 | 因果の設計論 | [JA](089/ai-index.md) | [EN](089/en-ai-index.md) | [ZH](089/zh-ai-index.md) |
 | 090 | 構造的摩擦の起源 | [JA](090/ai-index.md) | [EN](090/en-ai-index.md) | [ZH](090/zh-ai-index.md) |
 | 091 | 構造的必然としての未来 | [JA](091/ai-index.md) | [EN](091/en-ai-index.md) | [ZH](091/zh-ai-index.md) |
+| 092 | 沈黙の構造倫理 | [JA](092/ai-index.md) | [EN](092/en-ai-index.md) | [ZH](092/zh-ai-index.md) |
 
 ## 共通再利用制約
 
