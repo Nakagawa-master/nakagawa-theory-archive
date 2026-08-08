@@ -62,13 +62,13 @@ four_key_duplicate_check:
 ## Seven surfaces
 
 ```yaml
-README.md: READY_FOR_PUBLICATION
-human-entry.md: READY_FOR_PUBLICATION
-faq.md: READY_Q1_Q30
-ai-index.md: READY
-en-ai-index.md: READY
-zh-ai-index.md: READY
-derivative-ledger.md: READY
+README.md: PUBLISHED
+human-entry.md: PUBLISHED
+faq.md: PUBLISHED_Q1_Q30
+ai-index.md: PUBLISHED
+en-ai-index.md: PUBLISHED
+zh-ai-index.md: PUBLISHED
+derivative-ledger.md: PUBLISHED
 ```
 
 ## Formatting parity
@@ -109,11 +109,11 @@ OD085_density_floor: PASS
 ## Navigation and closure
 
 ```yaml
-public_indexes: PENDING_PUBLICATION
-public_map: PENDING_PUBLICATION
-private_map: PENDING_PUBLICATION
-parent_backlink_display_procedure: PENDING_PUBLICATION
-owner_visual_for_OD105: PENDING
+public_indexes: COMPLETE_THROUGH_OD105
+public_map: COMPLETE_THROUGH_OD105
+private_map: COMPLETE_THROUGH_OD105
+parent_backlink_display_procedure: COMPLETE
+owner_visual_for_OD105: CONFIRMED_BY_OWNER
 brain_return: CURRENT_STATE_OWNER
 completion_authority: OFFICIAL_ARCHIVE_MEMORY
 completion_status: SEE_CURRENT_STATE_OWNER
