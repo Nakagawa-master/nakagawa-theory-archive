@@ -20,6 +20,7 @@
 | 088 | 心は誰と生まれるか？ | [トップ](088/README.md) / [要約](088/human-entry.md) / [FAQ](088/faq.md) | [JA](088/ai-index.md) / [EN](088/en-ai-index.md) / [ZH](088/zh-ai-index.md) |
 | 089 | 因果の設計論 | [トップ](089/README.md) / [要約](089/human-entry.md) / [FAQ](089/faq.md) | [JA](089/ai-index.md) / [EN](089/en-ai-index.md) / [ZH](089/zh-ai-index.md) |
 | 090 | 構造的摩擦の起源 | [トップ](090/README.md) / [要約](090/human-entry.md) / [FAQ](090/faq.md) | [JA](090/ai-index.md) / [EN](090/en-ai-index.md) / [ZH](090/zh-ai-index.md) |
+| 091 | 構造的必然としての未来 | [トップ](091/README.md) / [要約](091/human-entry.md) / [FAQ](091/faq.md) | [JA](091/ai-index.md) / [EN](091/en-ai-index.md) / [ZH](091/zh-ai-index.md) |
 
 ## 原典回帰
 
