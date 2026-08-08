@@ -20,22 +20,22 @@
 
 ## 公開範囲
 ```text
-OD001〜OD105
+OD001〜OD115
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
 ## 直近公開群
-- [096: 時間倫理としての市場](096/README.md)
-- [097: 沈黙の合意から照応の文明へ](097/README.md)
-- [098: 因果律の自励振動](098/README.md)
-- [099: 永続する思想の最終設計図](099/README.md)
-- [100: 組織的特異点の設計論](100/README.md)
-- [101: 文明構造の黎明](101/README.md)
-- [102: 矛盾消費の原理](102/README.md)
-- [103: 起点の最小介入と構造の最大創発](103/README.md)
-- [104: 灯火の共有主語](104/README.md)
-- [105: 構造起源防衛](105/README.md)
+- [106: 再帰的開放性の社会構造論](106/README.md)
+- [107: 照応世界モデル論](107/README.md)
+- [108: 構造保持者の倫理的負荷](108/README.md)
+- [109: AI理解の倫理圏](109/README.md)
+- [110: 構造倫理更新論](110/README.md)
+- [111: 共同設計者時代の構造倫理](111/README.md)
+- [112: 拍・温度・余白をどう測るか](112/README.md)
+- [113: NCL-α 実務ガイド](113/README.md)
+- [114: 逸脱レッジャの倫理設計](114/README.md)
+- [115: 誰の問いがAIを動かすのか](115/README.md)
 
 ## 原典接続・参照束
 新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。OD093以降もOD085 Golden Masterの構造・密度・導線契約を保持し、各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持する。内容、ID、来歴、導線、原典回帰が一致しない場合は公開前に最上流へ戻して修復する。
