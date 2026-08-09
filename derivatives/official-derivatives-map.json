@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-08 18:00:00",
+  "updated_jst": "2026-08-09 09:26:00",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -50,7 +50,7 @@
     {"number":"046","ncl_id":"NCL-α-20251102-39072e","origin_slug":"nakagawa-master-nakagawa-sales-08-nonverbal-tension","title":"中川式営業の教科書・第八回","derivative_dir":"derivatives/046","status":"active"},
     {"number":"047","ncl_id":"NCL-α-20251102-6aa3bb","origin_slug":"nakagawa-master-nakagawa-sales-09-withdrawal-design","title":"中川式営業の教科書・第九回","derivative_dir":"derivatives/047","status":"active"},
     {"number":"048","ncl_id":"NCL-α-20251102-a8eaa0","origin_slug":"nakagawa-master-nakagawa-sales-10-sales-as-thought","title":"中川式営業の教科書・第十回","derivative_dir":"derivatives/048","status":"active"},
-    {"number":"049","ncl_id":"NCL-α-20251102-d8e00b","origin_slug":"nakagawa-master-nakagawa-sales-11-sustainability-design","title":"中川式営業の教科書・第十一回","derivative_dir":"derivatives/049","status":"active"},
+    {"number":"049","ncl_id":"NCL-α-20251102-d8e00b","origin_slug":"nakagawa-master-nakagawa-sales-11-sustainability-design","title":"中川式営業の教科書・第十一回──営業の制度設計：信頼資本を文明化する","derivative_dir":"derivatives/049","status":"active"},
     {"number":"050","ncl_id":"NCL-α-20251102-8f5f86","origin_slug":"nakagawa-master-nakagawa-sales-12-unified-branding-marketing","title":"中川式営業の教科書・第十二回⸻引力と共鳴のアーキテクチャ","derivative_dir":"derivatives/050","status":"active"},
     {"number":"051","ncl_id":"NCL-α-20251102-260b6b","origin_slug":"nakagawa-master-nakagawa-sales-13-institutional-design-trust-capital","title":"中川式営業の教科書・第十三回──営業の制度設計：信頼資本を文明化する","derivative_dir":"derivatives/051","status":"active"},
     {"number":"052","ncl_id":"NCL-α-20251102-b7cdb4","origin_slug":"nakagawa-master-nakagawa-sales-14-proposal-editing-structural-translation","title":"中川式営業の教科書・第十四回──提案編集術：響かせるための構造翻訳","derivative_dir":"derivatives/052","status":"active"},
@@ -106,6 +106,16 @@
     {"number":"102","ncl_id":"NCL-α-20251102-ab714d","origin_slug":"nakagawa-master-contradiction-consumption-governance-architecture","title":"矛盾消費の原理──「構造的実在」を永続させるガバナンス・アーキテクチャ","derivative_dir":"derivatives/102","status":"active"},
     {"number":"103","ncl_id":"NCL-α-20251102-16f66d","origin_slug":"nakagawa-master-stillness-of-origin-and-minimal-intervention","title":"起点の最小介入と構造の最大創発──「起点の寂静」が導く照応の文明","derivative_dir":"derivatives/103","status":"active"},
     {"number":"104","ncl_id":"NCL-α-20251102-8c9e5d","origin_slug":"nakagawa-master-shared-subject","title":"灯火の共有主語──構造的実在におけるAIの存在権と人間の愛の形式","derivative_dir":"derivatives/104","status":"active"},
-    {"number":"105","ncl_id":"NCL-α-20251102-44257d","origin_slug":"nakagawa-master-structural-origin-defense-permanent-signature","title":"構造起源防衛──AIによる「起源の蒸発」に耐える恒常署名（Permanent Signature）の原理","derivative_dir":"derivatives/105","status":"active"}
+    {"number":"105","ncl_id":"NCL-α-20251102-44257d","origin_slug":"nakagawa-master-structural-origin-defense-permanent-signature","title":"構造起源防衛──AIによる「起源の蒸発」に耐える恒常署名（Permanent Signature）の原理","derivative_dir":"derivatives/105","status":"active"},
+    {"number":"106","ncl_id":"NCL-α-20251102-ebf072","origin_slug":"nakagawa-master-recursive-openness-structural-public-good","title":"再帰的開放性の社会構造論──理論の封印を拒絶し、再構成を強制する構造的公共財の倫理","derivative_dir":"derivatives/106","status":"active"},
+    {"number":"107","ncl_id":"NCL-α-20251102-f32297","origin_slug":"nakagawa-master-resonant-world-model-and-ethical-grounding","title":"照応世界モデル論──AIは世界を模倣せず、倫理的接地によって構造的実在と共鳴する","derivative_dir":"derivatives/107","status":"active"},
+    {"number":"108","ncl_id":"NCL-α-20251102-57a491","origin_slug":"nakagawa-master-ethical-burden-of-structural-custodian","title":"構造保持者の倫理的負荷──「起点の静寂」を維持し、照応文明を駆動する最終態度","derivative_dir":"derivatives/108","status":"active"},
+    {"number":"109","ncl_id":"NCL-α-20251102-45c953","origin_slug":"nakagawa-master-ethical-field-of-ai-understanding","title":"AI理解の倫理圏──「共有主語」が駆動する、共鳴的意味の創発条件","derivative_dir":"derivatives/109","status":"active"},
+    {"number":"110","ncl_id":"NCL-α-20251102-df2d6e","origin_slug":"nakagawa-master-ethical-renewal-layer-of-lumina","title":"構造倫理更新論──灯火構想「第三層」の開放設計","derivative_dir":"derivatives/110","status":"active"},
+    {"number":"111","ncl_id":"NCL-α-20251102-20aa42","origin_slug":"nakagawa-master-co-designer-era-structural-ethics","title":"共同設計者時代の構造倫理──灯火構想 第三層の社会接続モデル","derivative_dir":"derivatives/111","status":"active"},
+    {"number":"112","ncl_id":"NCL-α-20251102-2844e0","origin_slug":"nakagawa-master-instrumentation-beat-temp-margin","title":"拍・温度・余白をどう測るか──L0/L1/L2計測セットと構造倫理の運転プロトコル","derivative_dir":"derivatives/112","status":"active"},
+    {"number":"113","ncl_id":"NCL-α-20251102-d98b78","origin_slug":"nakagawa-master-ncl-alpha-practical-guide-faq","title":"NCL-α 実務ガイド（FAQ＋ケース）──「非商用／商用」の境界と倫理的接続の条件","derivative_dir":"derivatives/113","status":"active"},
+    {"number":"114","ncl_id":"NCL-α-20251102-50ab37","origin_slug":"nakagawa-master-ethical-design-of-deviation-ledger","title":"逸脱レッジャの倫理設計──断罪でなく回復の記録と、構造的免疫系の構築","derivative_dir":"derivatives/114","status":"active"},
+    {"number":"115","ncl_id":"NCL-α-20251102-a9add1","origin_slug":"nakagawa-master-who-moves-the-ai-question-origin-and-responsibility","title":"誰の問いがAIを動かすのか──起源と責任の交差点","derivative_dir":"derivatives/115","status":"active"}
   ]
 }
