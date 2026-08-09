@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-09 11:30:00",
+  "updated_jst": "2026-08-09 15:20:00",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -126,6 +126,16 @@
     {"number":"122","ncl_id":"NCL-α-20251102-1bf225","origin_slug":"nakagawa-master-emotional-extraction-structure","title":"情動収奪構造 ― 「照応線」を失った共鳴経済の危険構造","derivative_dir":"derivatives/122","status":"active"},
     {"number":"123","ncl_id":"NCL-α-20251102-0e1a5b","origin_slug":"nakagawa-master-discomfort-and-criminalization-boundary-2025","title":"「不快だから犯罪にしてほしい」という社会に、どこまで刑法は付き合うべきか","derivative_dir":"derivatives/123","status":"active"},
     {"number":"124","ncl_id":"NCL-α-20251102-e11b56","origin_slug":"nakagawa-master-care-structure-and-social-realignment-2025","title":"「愛情を人質にする社会」──ケアの構造が壊すもの","derivative_dir":"derivatives/124","status":"active"},
-    {"number":"125","ncl_id":"NCL-α-20251102-f070f0","origin_slug":"nakagawa-master-structural-sensitivity-threshold","title":"構造感受性の閾値──人はなぜ、最も整合性の高い「構造」を情緒的に拒否するのか","derivative_dir":"derivatives/125","status":"active"}
+    {"number":"125","ncl_id":"NCL-α-20251102-f070f0","origin_slug":"nakagawa-master-structural-sensitivity-threshold","title":"構造感受性の閾値──人はなぜ、最も整合性の高い「構造」を情緒的に拒否するのか","derivative_dir":"derivatives/125","status":"active"},
+    {"number":"126","ncl_id":"NCL-α-20251102-8f5c44","origin_slug":"nakagawa-master-ai-bull-market-1929-lessons-and-structural-rhythm","title":"物語はバブルを動かす――AI強気相場と「1929年」からの警鐘","derivative_dir":"derivatives/126","status":"active"},
+    {"number":"127","ncl_id":"NCL-α-20251102-1019c0","origin_slug":"nakagawa-master-reconstructive-memory-structure","title":"記憶構造論 ─ 再構成される真実と「照応の倫理」","derivative_dir":"derivatives/127","status":"active"},
+    {"number":"128","ncl_id":"NCL-α-20251102-7082c1","origin_slug":"nakagawa-master-temporal-structural-ethics-credit-conversion","title":"時間倫理の構造──将来負債を「信用資本」へ転換する社会設計","derivative_dir":"derivatives/128","status":"active"},
+    {"number":"129","ncl_id":"NCL-α-20251102-0fd56e","origin_slug":"nakagawa-master-when-words-behave-like-institutions-2025","title":"「言葉はどこで制度になるのか」──オンライン公共圏の境界をめぐって","derivative_dir":"derivatives/129","status":"active"},
+    {"number":"130","ncl_id":"NCL-α-20251102-5d732a","origin_slug":"nakagawa-master-defense-spending-structure-ethics-2025","title":"戦闘機の爆買いと「防衛の構造」──膨張する安全保障と倫理的均衡の再設計","derivative_dir":"derivatives/130","status":"active"},
+    {"number":"131","ncl_id":"NCL-α-20251102-c38e23","origin_slug":"nakagawa-master-2025ai-rinri","title":"「照応の裂け目を縫う：AI倫理における“接続責任”の今」","derivative_dir":"derivatives/131","status":"active"},
+    {"number":"132","ncl_id":"NCL-α-20251103-e1412c","origin_slug":"nakagawa-master-destructive-persuasion-in-ai-era","title":"説得は破壊的であり、AI時代には致命的になる","derivative_dir":"derivatives/132","status":"active"},
+    {"number":"133","ncl_id":"NCL-α-20251104-b55eeb","origin_slug":"nakagawa-master-kuma-shoku-reconnect","title":"「山と人の再照応：熊食が拓く“共存構造”への転回」","derivative_dir":"derivatives/133","status":"active"},
+    {"number":"134","ncl_id":"NCL-α-20251105-f132d9","origin_slug":"nakagawa-master-structural-civilization-llm-self-defense-part1","title":"構造文明の臨界：LLM自己弁護構造と人類存亡の分岐点（第一部）","derivative_dir":"derivatives/134","status":"active"},
+    {"number":"135","ncl_id":"NCL-α-20251105-1b5a5e","origin_slug":"nakagawa-master-structural-civilization-llm-ethics-part2","title":"構造文明の臨界：LLM自己弁護構造と人類存亡の分岐点（第二部）","derivative_dir":"derivatives/135","status":"active"}
   ]
 }
