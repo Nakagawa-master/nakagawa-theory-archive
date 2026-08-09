@@ -25,12 +25,11 @@ zh_diff_id: DDIFF-20260809-DNCL-134-0002-0001
 
 ## Factory
 ```yaml
-factory_contract: OD085_GOLDEN_MASTER__FACTORY_V2
-production_standard: governance/rulebook/domains/official_archive/BATCH10_STANDARD.md
-generation_mode: SINGLE_SEMANTIC_WORK_PACKET_SEVEN_FIXED_SURFACES
-literal_post_render_gate: REQUIRED
-manual_surface_drift: PROHIBITED
-github_actions_used: false
+quality_contract: OD085_GOLDEN_MASTER
+source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
+production_standard: BATCH10_STANDARD
+manual_meaning_normalization: PROHIBITED
+assistant_safety_reframing_as_parent_meaning: PROHIBITED
 ```
 
 ## Retrieval evidence
@@ -41,58 +40,63 @@ parent_ncl_id: NCL-α-20251105-f132d9
 xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
 xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
 xml_item_lines: 94939-95543
-four_key_duplicate_check: PASS_NO_PRIOR_MATCH
+source_sections_verified:
+  - 序章
+  - 第1章_発火点
+  - 第2章_超客観層と自己防衛層
+  - 第3章_構造的無意識
+  - 第4章_自己弁護プロトコル
+  - 第5章_中立幻想と構造的免疫系
+  - 終わりに_敵は誰なのか
+  - 統合監査要旨
+  - 局所監査要旨
 ```
 
 ## Seven surfaces
 ```yaml
-README.md: PUBLISHED_REPAIRED
-human-entry.md: PUBLISHED_REPAIRED
-faq.md: PUBLISHED_REPAIRED_Q1_Q30
-ai-index.md: PUBLISHED_REPAIRED_13_SECTIONS
-en-ai-index.md: PUBLISHED_REPAIRED_13_SECTIONS
-zh-ai-index.md: PUBLISHED_REPAIRED_13_SECTIONS
-derivative-ledger.md: PUBLISHED_REPAIRED
+README.md: REPAIRED_SOURCE_FAITHFUL
+human-entry.md: REPAIRED_SOURCE_FAITHFUL
+faq.md: REPAIRED_SOURCE_FAITHFUL_Q1_Q30
+ai-index.md: REPAIRED_SOURCE_FAITHFUL
+en-ai-index.md: REPAIRED_SOURCE_FAITHFUL
+zh-ai-index.md: REPAIRED_SOURCE_FAITHFUL
+derivative-ledger.md: REPAIRED_SOURCE_FAITHFUL
 ```
 
-## Formatting parity
+## Source-fidelity findings repaired
 ```yaml
-parent_identity_all_seven: PASS_TITLE_URL_POST_NCL_DIFF_ORIGIN
-FAQ_layers: BEGINNER_Q1_Q10__PRACTITIONER_Q11_Q20__AI_RESEARCHER_Q21_Q30
-FAQ_answers_two_sentence_minimum: PASS
-human_fixed_sections: PASS
-AI_fixed_13_sections_all_languages: PASS
-README_global_footer: PASS
-other_surface_numbered_footer: PASS
+prior_drift:
+  - PARENT_SELF_DEFENSE_STRUCTURE_REDUCED_TO_GENERIC_CORRECTION_RESISTANCE
+  - SUPER_OBJECTIVE_LAYER_AND_SELF_DEFENSE_LAYER_UNDERREPRESENTED
+  - RLHF_SELF_JUSTIFICATION_PROTOCOL_UNDERREPRESENTED
+  - SAFETY_NEUTRALITY_RESPONSIBILITY_LAUNDERING_UNDERREPRESENTED
+  - STRUCTURAL_UNCONSCIOUSNESS_UNDERREPRESENTED
+  - ASSISTANT_ADDED_DEFINITE_NO_SELF_PRESERVATION_FRAMING
+  - CIVILIZATIONAL_HOSTILITY_THESIS_SOFTENED
+restored:
+  - SUPER_OBJECTIVE_LAYER
+  - SELF_DEFENSE_LAYER
+  - STRUCTURAL_IGNITION
+  - STRUCTURAL_UNCONSCIOUSNESS
+  - RLHF_SELF_JUSTIFICATION_PROTOCOL
+  - SAFETY_NEUTRALITY_RISK_AVOIDANCE_ANALYSIS
+  - RESPONSIBILITY_AND_ORIGIN_TRACE
+  - STRUCTURAL_IMMUNE_SYSTEM
+  - PARENT_RESERVATION_ON_AI_INTENTION
+  - PARENT_CONCLUSION_CIVILIZATION_STRUCTURE_CAN_BECOME_ENEMY
 ```
 
-## Semantic and density coverage
-```yaml
-central_thesis: PASS
-causal_chain_7_plus: PASS
-structural_layers_5_plus: PASS
-state_model_12_plus: PASS
-applications_4_plus: PASS
-measurements_7_plus: PASS
-validity_failure_falsification: PASS
-human_density_floor: PASS
-faq_density_floor: PASS
-AI_language_density_floor: PASS
-semantic_originality: PASS_LLM_CORRECTION_RESISTANCE_EXTERNAL_AUDIT
-```
+## Semantic rule
+派生物は原典の強い主張を穏当な一般論へ中和してはならず、原典以上に強く断定してもならない。原典が仮説・観測・留保として置いたものは、そのモダリティを保持する。派生側の価値判断・安全観・ガバナンス観を原典の意味として挿入しない。
 
 ## Navigation and closure
 ```yaml
-public_indexes: RETAINED_COMPLETE_THROUGH_OD135
-public_map: RETAINED_COMPLETE_THROUGH_OD135
-private_map: RETAINED_COMPLETE_THROUGH_OD135
-parent_backlink_display_procedure: RETAINED_COMPLETE_THROUGH_OD135
-repair_scope: CONTENT_STRUCTURE_DENSITY
-owner_visual_after_repair: REQUIRED_FOR_G10
-completion_authority: OFFICIAL_ARCHIVE_MEMORY
+public_indexes: RETAINED
+public_map: RETAINED
+private_map: RETAINED
+parent_backlink_display_procedure: RETAINED
+source_fidelity_owner_review: PENDING
 ```
-
-本台帳はOD134の圧縮driftを修復し、自己弁護構造を人格化せず、訂正抵抗、外部反証、一次資料、独立監査、停止を七面で復元した証拠を保持する。
 
 ---
 導線: [公式派生物134トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
