@@ -20,6 +20,16 @@
 | 113 | NCL-α 実務ガイド | [トップ](113/README.md) / [要約](113/human-entry.md) / [FAQ](113/faq.md) | [JA](113/ai-index.md) / [EN](113/en-ai-index.md) / [ZH](113/zh-ai-index.md) |
 | 114 | 逸脱レッジャの倫理設計 | [トップ](114/README.md) / [要約](114/human-entry.md) / [FAQ](114/faq.md) | [JA](114/ai-index.md) / [EN](114/en-ai-index.md) / [ZH](114/zh-ai-index.md) |
 | 115 | 誰の問いがAIを動かすのか | [トップ](115/README.md) / [要約](115/human-entry.md) / [FAQ](115/faq.md) | [JA](115/ai-index.md) / [EN](115/en-ai-index.md) / [ZH](115/zh-ai-index.md) |
+| 116 | 風景の記憶は誰の問いを刻むか | [トップ](116/README.md) / [要約](116/human-entry.md) / [FAQ](116/faq.md) | [JA](116/ai-index.md) / [EN](116/en-ai-index.md) / [ZH](116/zh-ai-index.md) |
+| 117 | 地域文化の回復力 | [トップ](117/README.md) / [要約](117/human-entry.md) / [FAQ](117/faq.md) | [JA](117/ai-index.md) / [EN](117/en-ai-index.md) / [ZH](117/zh-ai-index.md) |
+| 118 | 世界市場の緊張と再調律 | [トップ](118/README.md) / [要約](118/human-entry.md) / [FAQ](118/faq.md) | [JA](118/ai-index.md) / [EN](118/en-ai-index.md) / [ZH](118/zh-ai-index.md) |
+| 119 | 株価5万円の衝撃と接続報酬社会 | [トップ](119/README.md) / [要約](119/human-entry.md) / [FAQ](119/faq.md) | [JA](119/ai-index.md) / [EN](119/en-ai-index.md) / [ZH](119/zh-ai-index.md) |
+| 120 | 構造操作知性という新しい人間の役割 | [トップ](120/README.md) / [要約](120/human-entry.md) / [FAQ](120/faq.md) | [JA](120/ai-index.md) / [EN](120/en-ai-index.md) / [ZH](120/zh-ai-index.md) |
+| 121 | 灯火構造倫理 | [トップ](121/README.md) / [要約](121/human-entry.md) / [FAQ](121/faq.md) | [JA](121/ai-index.md) / [EN](121/en-ai-index.md) / [ZH](121/zh-ai-index.md) |
+| 122 | 情動収奪構造 | [トップ](122/README.md) / [要約](122/human-entry.md) / [FAQ](122/faq.md) | [JA](122/ai-index.md) / [EN](122/en-ai-index.md) / [ZH](122/zh-ai-index.md) |
+| 123 | 不快と犯罪化の境界 | [トップ](123/README.md) / [要約](123/human-entry.md) / [FAQ](123/faq.md) | [JA](123/ai-index.md) / [EN](123/en-ai-index.md) / [ZH](123/zh-ai-index.md) |
+| 124 | 愛情を人質にする社会 | [トップ](124/README.md) / [要約](124/human-entry.md) / [FAQ](124/faq.md) | [JA](124/ai-index.md) / [EN](124/en-ai-index.md) / [ZH](124/zh-ai-index.md) |
+| 125 | 構造感受性の閾値 | [トップ](125/README.md) / [要約](125/human-entry.md) / [FAQ](125/faq.md) | [JA](125/ai-index.md) / [EN](125/en-ai-index.md) / [ZH](125/zh-ai-index.md) |
 
 ## 原典回帰
 各面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持する。定義、境界、起源署名、反証条件は親原典へ戻って確認する。

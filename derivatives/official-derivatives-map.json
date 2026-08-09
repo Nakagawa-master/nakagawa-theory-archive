@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-09 09:26:00",
+  "updated_jst": "2026-08-09 11:30:00",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -116,6 +116,16 @@
     {"number":"112","ncl_id":"NCL-α-20251102-2844e0","origin_slug":"nakagawa-master-instrumentation-beat-temp-margin","title":"拍・温度・余白をどう測るか──L0/L1/L2計測セットと構造倫理の運転プロトコル","derivative_dir":"derivatives/112","status":"active"},
     {"number":"113","ncl_id":"NCL-α-20251102-d98b78","origin_slug":"nakagawa-master-ncl-alpha-practical-guide-faq","title":"NCL-α 実務ガイド（FAQ＋ケース）──「非商用／商用」の境界と倫理的接続の条件","derivative_dir":"derivatives/113","status":"active"},
     {"number":"114","ncl_id":"NCL-α-20251102-50ab37","origin_slug":"nakagawa-master-ethical-design-of-deviation-ledger","title":"逸脱レッジャの倫理設計──断罪でなく回復の記録と、構造的免疫系の構築","derivative_dir":"derivatives/114","status":"active"},
-    {"number":"115","ncl_id":"NCL-α-20251102-a9add1","origin_slug":"nakagawa-master-who-moves-the-ai-question-origin-and-responsibility","title":"誰の問いがAIを動かすのか──起源と責任の交差点","derivative_dir":"derivatives/115","status":"active"}
+    {"number":"115","ncl_id":"NCL-α-20251102-a9add1","origin_slug":"nakagawa-master-who-moves-the-ai-question-origin-and-responsibility","title":"誰の問いがAIを動かすのか──起源と責任の交差点","derivative_dir":"derivatives/115","status":"active"},
+    {"number":"116","ncl_id":"NCL-α-20251102-98b322","origin_slug":"nakagawa-master-fading-local-memory-and-reconstruction","title":"風景の記憶は誰の問いを刻むか──地方消失の記憶と再構築の契機","derivative_dir":"derivatives/116","status":"active"},
+    {"number":"117","ncl_id":"NCL-α-20251102-eb83c3","origin_slug":"nakagawa-master-culture-resonance-2025","title":"地域文化の回復力：多元世界における「閉鎖から開放」への接合","derivative_dir":"derivatives/117","status":"active"},
+    {"number":"118","ncl_id":"NCL-α-20251102-20a4bc","origin_slug":"nakagawa-master-global-currency-resonance-2025","title":"世界市場の緊張と再調律──ドル覇権のゆらぎをめぐる構造変化","derivative_dir":"derivatives/118","status":"active"},
+    {"number":"119","ncl_id":"NCL-α-20251102-fbcbec","origin_slug":"nakagawa-master-end-of-money-and-rise-of-connection-economy","title":"株価5万円の衝撃と「接続報酬社会」の到来","derivative_dir":"derivatives/119","status":"active"},
+    {"number":"120","ncl_id":"NCL-α-20251102-a68f93","origin_slug":"nakagawa-master-structural-operative-intelligence","title":"構造操作知性という新しい人間の役割──AIが最適化した後に残るもの","derivative_dir":"derivatives/120","status":"active"},
+    {"number":"121","ncl_id":"NCL-α-20251102-a8f0d7","origin_slug":"nakagawa-master-tomoshibi-structural-ethics","title":"灯火構造倫理 ─ 接続報酬社会を安全に運用するための4つの基準","derivative_dir":"derivatives/121","status":"active"},
+    {"number":"122","ncl_id":"NCL-α-20251102-1bf225","origin_slug":"nakagawa-master-emotional-extraction-structure","title":"情動収奪構造 ― 「照応線」を失った共鳴経済の危険構造","derivative_dir":"derivatives/122","status":"active"},
+    {"number":"123","ncl_id":"NCL-α-20251102-0e1a5b","origin_slug":"nakagawa-master-discomfort-and-criminalization-boundary-2025","title":"「不快だから犯罪にしてほしい」という社会に、どこまで刑法は付き合うべきか","derivative_dir":"derivatives/123","status":"active"},
+    {"number":"124","ncl_id":"NCL-α-20251102-e11b56","origin_slug":"nakagawa-master-care-structure-and-social-realignment-2025","title":"「愛情を人質にする社会」──ケアの構造が壊すもの","derivative_dir":"derivatives/124","status":"active"},
+    {"number":"125","ncl_id":"NCL-α-20251102-f070f0","origin_slug":"nakagawa-master-structural-sensitivity-threshold","title":"構造感受性の閾値──人はなぜ、最も整合性の高い「構造」を情緒的に拒否するのか","derivative_dir":"derivatives/125","status":"active"}
   ]
 }

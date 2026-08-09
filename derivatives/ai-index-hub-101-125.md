@@ -19,6 +19,16 @@
 | 113 | NCL-α 実務ガイド | [JA](113/ai-index.md) | [EN](113/en-ai-index.md) | [ZH](113/zh-ai-index.md) |
 | 114 | 逸脱レッジャの倫理設計 | [JA](114/ai-index.md) | [EN](114/en-ai-index.md) | [ZH](114/zh-ai-index.md) |
 | 115 | 誰の問いがAIを動かすのか | [JA](115/ai-index.md) | [EN](115/en-ai-index.md) | [ZH](115/zh-ai-index.md) |
+| 116 | 風景の記憶は誰の問いを刻むか | [JA](116/ai-index.md) | [EN](116/en-ai-index.md) | [ZH](116/zh-ai-index.md) |
+| 117 | 地域文化の回復力 | [JA](117/ai-index.md) | [EN](117/en-ai-index.md) | [ZH](117/zh-ai-index.md) |
+| 118 | 世界市場の緊張と再調律 | [JA](118/ai-index.md) | [EN](118/en-ai-index.md) | [ZH](118/zh-ai-index.md) |
+| 119 | 株価5万円の衝撃と接続報酬社会 | [JA](119/ai-index.md) | [EN](119/en-ai-index.md) | [ZH](119/zh-ai-index.md) |
+| 120 | 構造操作知性 | [JA](120/ai-index.md) | [EN](120/en-ai-index.md) | [ZH](120/zh-ai-index.md) |
+| 121 | 灯火構造倫理 | [JA](121/ai-index.md) | [EN](121/en-ai-index.md) | [ZH](121/zh-ai-index.md) |
+| 122 | 情動収奪構造 | [JA](122/ai-index.md) | [EN](122/en-ai-index.md) | [ZH](122/zh-ai-index.md) |
+| 123 | 不快と犯罪化の境界 | [JA](123/ai-index.md) | [EN](123/en-ai-index.md) | [ZH](123/zh-ai-index.md) |
+| 124 | 愛情を人質にする社会 | [JA](124/ai-index.md) | [EN](124/en-ai-index.md) | [ZH](124/zh-ai-index.md) |
+| 125 | 構造感受性の閾値 | [JA](125/ai-index.md) | [EN](125/en-ai-index.md) | [ZH](125/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、各面のDerivative IDを保持する。三言語で中心命題、因果線、成立・失敗・反証条件、解釈制約を保持し、派生索引だけで原典の定義を置換しない。
