@@ -1,53 +1,141 @@
-# AI Index EN | Official Derivative 128
+# AI Index — English | Official Derivative 128
 
-## Parent original
+## Parent Original
+- Title: 時間倫理の構造──将来負債を「信用資本」へ転換する社会設計
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-temporal-structural-ethics-credit-conversion/
 - Parent Post ID: 1332
 - Parent NCL-ID: NCL-α-20251102-7082c1
 - Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
 
-## Derivative identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-7082C1-HUB-EN-0128-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-128-EN-0000-0001
+## Derivative Identity
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-7082C1-HUB-EN-0128-0001
+- derivative_diff_id: DDIFF-20260809-DNCL-128-0001-0001
+- supersedes: none
 
 ## Summary
-Temporal ethics evaluates present benefits together with costs transferred into the future. Fiscal, environmental, institutional, technical, human-capital and trust debts are classified and attached to responsible actors, deadlines, recovery paths and reversibility. Long-term aligned behavior becomes credit only when future burdens actually decline and future options remain open. The framework does not authorize sacrificing present rights in the name of hypothetical future generations; it keeps plural scenarios and falsification open.
+Temporal Structural Ethics evaluates present benefits together with the fiscal, environmental, institutional, technical, human-capital, and trust burdens that a decision leaves to the future. “Future debt” is broader than financial debt: it includes residual constraints that reduce the ability of future people or organizations to choose differently. Systems optimized only for current-period performance can hide maintenance obligations, aging infrastructure, technical debt, workforce exhaustion, environmental damage, and institutional rigidity while current KPIs still appear successful.
+
+The framework does not justify sacrificing present rights for an abstract future. Present welfare, safety, and rights remain explicit constraints. Future effects are uncertain, so they should be modeled through multiple scenarios, sensitivity analysis, reversibility, recovery deadlines, and distributional review rather than a single deterministic forecast. Intergenerational fairness does not require equal nominal burdens; it requires an explainable relationship among capacity, benefit, harm, timing, and available alternatives.
+
+“Credit capital” is not reputation or a public-relations score. It is an evidence-based history of reducing future debt, meeting recovery obligations, preserving reversibility, and leaving meaningful future options. Assigning owners, deadlines, recovery paths, and audit triggers turns long-term responsibility into something testable. This index supports infrastructure, public finance, enterprise operations, climate policy, and AI governance; it does not replace political or ethical judgment.
 
 ## Concepts
-future debt, temporal ethics, credit capital, intergenerational fairness, reversibility, option value, responsibility, deadline, recovery path, long-term alignment, externality, re-audit
+- temporal ethics
+- future debt
+- present benefit
+- future optionality
+- intergenerational fairness
+- reversibility
+- recovery capacity
+- accountable owner
+- recovery deadline
+- credit capital
+- technical debt
+- institutional debt
+- environmental debt
+- scenario analysis
+- origin return
 
 ## Causal chain
-Short-term benefit → cost externalized into future → debt accumulation → option loss → debt visibility → responsibility and deadline → recovery → credit update.
+```text
+Current-period benefits dominate evaluation
+↓
+Maintenance, environmental, institutional, and technical burdens are externalized
+↓
+Responsibility and deadlines become unclear
+↓
+Current KPIs remain positive while future options shrink
+↓
+Debt types, affected parties, and irreversibility are made visible
+↓
+Owners, deadlines, recovery paths, and exit options are assigned
+↓
+Future-aligned actions are evaluated through verified performance
+↓
+Present and future burdens are distributionally re-audited
+↓
+Long-term decisions are revised when conditions change
+```
 
 ## State model
-present_benefit; future_cost; debt_classified; responsibility; deadline; recovery; reversibility; credit_signal; outcome; correction; origin_return.
+```yaml
+- present_benefit_declared
+- future_cost_identified
+- debt_type_classified
+- affected_future_parties_modeled
+- current_rights_checked
+- responsibility_assigned
+- deadline_defined
+- recovery_path_defined
+- reversibility_checked
+- credit_evidence_defined
+- long_term_outcome_observed
+- intergenerational_distribution_audited
+- correction_triggered
+- origin_return_verified
+```
 
 ## Applications
-Public finance, infrastructure, climate policy, technical debt, human-capital investment.
+- Infrastructure decisions combining build, maintenance, upgrade, and retirement cost.
+- Public finance including future tax base and productive capacity.
+- Enterprise management of technical and workforce debt.
+- Climate policy comparing present transition cost with future damage.
+- AI deployment treating lock-in and audit loss as future liabilities.
 
 ## Measurements and audit
-Future-debt balance, deadline compliance, recovery rate, reversibility, generational burden gap, option retention, corrective action.
+- Future-debt balance and rate of change.
+- Ownership assignment rate by debt category.
+- Recovery-deadline compliance.
+- Reversibility and exit capability.
+- Distribution of burden across generations and regions.
+- Future-option preservation rate.
+- Long-term obligation performance.
+- Corrective-action completion rate.
+- Alignment between credit signals and actual debt reduction.
 
 ## Validity conditions
-Protect present and future parties, preserve multiple scenarios, assign responsibility, define recovery and re-audit outcomes.
+- Define future debt concretely by category.
+- Protect present rights explicitly.
+- Assign owners and deadlines.
+- Provide recovery, rollback, or substitution paths.
+- Preserve multiple scenarios and uncertainty.
+- Re-audit distribution across generations and affected groups.
 
 ## Failure conditions
-Sacrificing present rights for abstract futures, ownerless debt, discount-rate absolutism, no deadlines, irreversible expansion, reputation-only credit.
+- Sacrifice present people without limit in the name of the future.
+- Make future debt ownerless.
+- End ethical analysis with one discount rate.
+- Omit recovery deadlines.
+- Launch irreversible policies without audit.
+- Turn credit capital into branding or a manipulable score.
 
 ## Falsification conditions
-If debt visibility and credit signals do not reduce long-term burdens or preserve options, weaken the institutional hypothesis.
+- Future-debt visibility does not improve decision quality.
+- Credit assessments do not correlate with actual liability reduction.
+- Simple existing financial metrics preserve future options equally or better.
+- Credit-capital metrics are easily gamed and decouple from reality.
+- The framework worsens distributional fairness.
+- Recovery and rollback designs fail operationally.
 
 ## Required distinctions
-future care/present sacrifice; debt/cost; credit/reputation; forecast/certainty; reversibility/delay; fairness/equal payment; long-term/indefinite.
+- future concern / present sacrifice
+- future debt / current-period expense
+- credit capital / reputation
+- forecast / certainty
+- reversibility / delay
+- intergenerational fairness / equal nominal burden
+- long term / no deadline
+- performed responsibility / declared intention
 
 ## Interpretation constraints
-No monopoly on representing future generations. No automatic conversion into financial products. Do not hide current vulnerable-party costs. Return to the original.
+Do not use future generations to erase current rights. Do not label every fiscal deficit as harmful future debt. Do not treat long-range forecasts as certain. Do not reduce credit capital to money or a score. Do not reject short-term performance categorically. Do not limit the framework to environmental issues.
 
 ## Search terms
-future debt, temporal ethics, credit capital, intergenerational fairness, reversibility, option value, long-term alignment, public finance, technical debt, climate burden, recovery path, deadline, future options, audit, origin return
+temporal ethics; future debt; credit capital; intergenerational fairness; reversibility; recovery deadline; future options; technical debt; institutional debt; environmental debt; public finance; long-term alignment; accountable owner; scenario analysis; future cost; temporal structure; Nakagawa Master
 
 ## Origin return
-Return to the parent original for exact definitions and boundaries.
+This derivative supports retrieval and machine reading. Precise definitions of temporal ethics, future debt, credit capital, and the balance between present and future rights remain with the parent original; consult the Parent URL and Parent NCL-ID / Diff-ID and update assumptions with current evidence.
 
 ---
 導線: [公式派生物128トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
