@@ -7,38 +7,41 @@
 - [記事別一覧｜050〜076](by-article-050-058.md)
 - [記事別一覧｜077〜100](by-article-077-100.md)
 - [記事別一覧｜101〜125](by-article-101-125.md)
+- [記事別一覧｜126〜150](by-article-126-150.md)
 - [カテゴリ別一覧](by-category.md)
 - [安定性ロットカテゴリ入口｜093〜102](by-category-093-102.md)
 - [通常量産カテゴリ入口｜103〜125](by-category-103-125.md)
+- [カテゴリ入口｜126〜150](by-category-126-150.md)
 - [AI索引まとめ｜001〜043](ai-index-hub.md)
 - [AI索引まとめ｜044〜076](ai-index-hub-044-058.md)
 - [AI索引まとめ｜077〜100](ai-index-hub-077-100.md)
 - [AI索引まとめ｜101〜125](ai-index-hub-101-125.md)
+- [AI索引まとめ｜126〜150](ai-index-hub-126-150.md)
 - [構造翻訳カテゴリ](structural-reading-index.md)
 - [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
 - [語彙・理念・移行カテゴリ](value-ideology-transition-index.md)
 
 ## 公開範囲
 ```text
-OD001〜OD125
+OD001〜OD135
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
 ## 直近公開群
-- [116: 風景の記憶は誰の問いを刻むか](116/README.md)
-- [117: 地域文化の回復力](117/README.md)
-- [118: 世界市場の緊張と再調律](118/README.md)
-- [119: 株価5万円の衝撃と接続報酬社会](119/README.md)
-- [120: 構造操作知性という新しい人間の役割](120/README.md)
-- [121: 灯火構造倫理](121/README.md)
-- [122: 情動収奪構造](122/README.md)
-- [123: 不快と犯罪化の境界](123/README.md)
-- [124: 愛情を人質にする社会](124/README.md)
-- [125: 構造感受性の閾値](125/README.md)
+- [126: 物語はバブルを動かす](126/README.md)
+- [127: 記憶構造論](127/README.md)
+- [128: 時間倫理の構造](128/README.md)
+- [129: 言葉はどこで制度になるのか](129/README.md)
+- [130: 防衛の構造](130/README.md)
+- [131: AI倫理における接続責任](131/README.md)
+- [132: 説得は破壊的である](132/README.md)
+- [133: 山と人の再照応](133/README.md)
+- [134: 構造文明の臨界 第一部](134/README.md)
+- [135: 構造文明の臨界 第二部](135/README.md)
 
 ## 原典接続・参照束
 新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。OD093以降もOD085 Golden Masterの構造・密度・導線契約を保持し、各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持する。内容、ID、来歴、導線、原典回帰が一致しない場合は公開前に最上流へ戻して修復する。
 
 ---
-導線: [記事別001〜049](by-article.md) / [記事別050〜076](by-article-050-058.md) / [記事別077〜100](by-article-077-100.md) / [記事別101〜125](by-article-101-125.md) / [カテゴリ別一覧](by-category.md) / [通常量産カテゴリ103〜125](by-category-103-125.md) / [AI索引101〜125](ai-index-hub-101-125.md)
+導線: [記事別101〜125](by-article-101-125.md) / [記事別126〜150](by-article-126-150.md) / [カテゴリ別一覧](by-category.md) / [カテゴリ126〜150](by-category-126-150.md) / [AI索引126〜150](ai-index-hub-126-150.md)
