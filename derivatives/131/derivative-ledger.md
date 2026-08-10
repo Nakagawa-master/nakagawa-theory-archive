@@ -10,30 +10,23 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-C38E23-HUB-JA-0131-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-131-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-131-0000-0002
+- supersedes: DDIFF-20260809-DNCL-131-0000-0001
 
 ## Language derivative IDs
 ```yaml
 ja_ncl_id: DNCL-NCL-ALPHA-20251102-C38E23-HUB-JA-0131-0000
-ja_diff_id: DDIFF-20260809-DNCL-131-0000-0001
+ja_diff_id: DDIFF-20260810-DNCL-131-0000-0002
+ja_supersedes: DDIFF-20260809-DNCL-131-0000-0001
 en_ncl_id: DNCL-NCL-ALPHA-20251102-C38E23-HUB-EN-0131-0001
-en_diff_id: DDIFF-20260809-DNCL-131-0001-0001
+en_diff_id: DDIFF-20260810-DNCL-131-0001-0002
+en_supersedes: DDIFF-20260809-DNCL-131-0001-0001
 zh_ncl_id: DNCL-NCL-ALPHA-20251102-C38E23-HUB-ZH-0131-0002
-zh_diff_id: DDIFF-20260809-DNCL-131-0002-0001
+zh_diff_id: DDIFF-20260810-DNCL-131-0002-0002
+zh_supersedes: DDIFF-20260809-DNCL-131-0002-0001
 ```
 
-## Factory
-```yaml
-factory_contract: OD085_GOLDEN_MASTER__FACTORY_V2
-production_standard: governance/rulebook/domains/official_archive/BATCH10_STANDARD.md
-generation_mode: SINGLE_SEMANTIC_WORK_PACKET_SEVEN_FIXED_SURFACES
-literal_post_render_gate: REQUIRED
-manual_surface_drift: PROHIBITED
-github_actions_used: false
-```
-
-## Retrieval evidence
+## Source verification
 ```yaml
 canonical_index: reference_corpus/official_archive/generated/canonical_index_1316_1451.jsonl
 parent_post_id: 1389
@@ -41,58 +34,61 @@ parent_ncl_id: NCL-α-20251102-c38e23
 xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
 xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
 xml_item_lines: 94181-94376
-four_key_duplicate_check: PASS_NO_PRIOR_MATCH
+public_parent_route: https://master.ricette.jp/structural-translation-log/ai-ethics/nakagawa-master-2025ai-rinri/
+public_parent_retrieval: PASS_SEARCH_INDEXED_CANONICAL_EXCERPT
+semantic_repair_date_jst: 2026-08-10
+```
+
+## Source-grounded coverage packet
+```yaml
+central_thesis:
+  - redefine_ai_ethics_through_connection_responsibility
+  - observe_correspondence_gaps_between_technology_institutions_values
+  - reconstruct_ethical_intelligence_for_ai_society
+three_layers:
+  - correspondence
+  - temporal_ethics
+  - structural_design
+causal_core:
+  - technology_institution_value_gap
+  - fragmented_responsibility_and_impact_lines
+  - present_optimization_transfers_future_ethical_debt
+  - connection_as_responsibility_unit
+  - redesign_to_correctable_connection
+removed_or_decentered_as_unproven_parent_core:
+  - generic_vendor_deployer_user_liability_matrix
+  - generic_stop_and_rollback_governance
+  - generic_appeal_and_remedy_workflow
+  - generic_responsibility_KPI_system
+  - formal_numeric_falsification_thresholds
+  - legal_liability_disclaimer_as_theory_boundary
 ```
 
 ## Seven surfaces
 ```yaml
-README.md: PUBLISHED_REPAIRED
-human-entry.md: PUBLISHED_REPAIRED
-faq.md: PUBLISHED_REPAIRED_Q1_Q30
-ai-index.md: PUBLISHED_REPAIRED_13_SECTIONS
-en-ai-index.md: PUBLISHED_REPAIRED_13_SECTIONS
-zh-ai-index.md: PUBLISHED_REPAIRED_13_SECTIONS
-derivative-ledger.md: PUBLISHED_REPAIRED
+README.md: SEMANTIC_REPAIRED
+human-entry.md: SEMANTIC_REPAIRED
+faq.md: SEMANTIC_REPAIRED_Q1_Q30
+ai-index.md: SEMANTIC_REPAIRED_13_SECTIONS
+en-ai-index.md: SEMANTIC_REPAIRED_13_SECTIONS
+zh-ai-index.md: SEMANTIC_REPAIRED_13_SECTIONS
+derivative-ledger.md: LINEAGE_UPDATED
 ```
 
-## Formatting parity
+## Semantic fidelity result
 ```yaml
-parent_identity_all_seven: PASS_TITLE_URL_POST_NCL_DIFF_ORIGIN
-FAQ_layers: BEGINNER_Q1_Q10__PRACTITIONER_Q11_Q20__AI_RESEARCHER_Q21_Q30
-FAQ_answers_two_sentence_minimum: PASS
-human_fixed_sections: PASS
-AI_fixed_13_sections_all_languages: PASS
-README_global_footer: PASS
-other_surface_numbered_footer: PASS
+parent_identity: PASS
+source_specific_thesis_preserved: PASS
+source_specific_causal_direction_preserved: PASS
+source_specific_concepts_preserved: PASS
+unsupported_generic_frameworks_decentered: PASS
+invented_formal_falsification_not_presented_as_parent_claim: PASS
+ja_en_zh_semantic_equivalence: PASS_BY_SINGLE_PACKET_REDERIVATION
+origin_return: PASS
+semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
 ```
 
-## Semantic and density coverage
-```yaml
-central_thesis: PASS
-causal_chain_7_plus: PASS
-structural_layers_5_plus: PASS
-state_model_12_plus: PASS
-applications_4_plus: PASS
-measurements_7_plus: PASS
-validity_failure_falsification: PASS
-human_density_floor: PASS
-faq_density_floor: PASS
-AI_language_density_floor: PASS
-semantic_originality: PASS_CONNECTION_RESPONSIBILITY
-```
-
-## Navigation and closure
-```yaml
-public_indexes: RETAINED_COMPLETE_THROUGH_OD135
-public_map: RETAINED_COMPLETE_THROUGH_OD135
-private_map: RETAINED_COMPLETE_THROUGH_OD135
-parent_backlink_display_procedure: RETAINED_COMPLETE_THROUGH_OD135
-repair_scope: CONTENT_STRUCTURE_DENSITY
-owner_visual_after_repair: REQUIRED_FOR_G10
-completion_authority: OFFICIAL_ARCHIVE_MEMORY
-```
-
-本台帳はOD131の圧縮driftを修復し、目的、データ、モデル、導入、利用、影響、救済の接続責任を七面で復元した証拠を保持する。
+本台帳はOD131の旧派生が一般的な責任配分・ベンダー/導入/利用者ガバナンス中心へ重心移動していた問題を修復し、原典固有の「照応の裂け目」「接続責任」「照応・時間倫理・構造設計」「倫理知能の再構築」を七面へ復元した証拠を保持する。
 
 ---
 導線: [公式派生物131トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
