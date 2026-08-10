@@ -10,143 +10,132 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-FBCBEC-HUB-EN-0119-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-119-EN-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-119-EN-0000-0002
+- supersedes: DDIFF-20260809-DNCL-119-EN-0000-0001
 
 ## Summary
-This original separates financial asset prices from lived social value. Rising market prices do not guarantee proportional improvement in real income, living costs, public access, time autonomy, or relational capital. The proposed connection-reward direction is not immediate abolition of money and not a universal social-credit score. It is a transition design in which hard-to-see contributions such as mediation, care, knowledge sharing, continuity, and trust can be recorded as a bundle alongside monetary accounting. Any connection-based reward must be audited for popularity bias, surveillance, emotional extraction, and concentration of power. People need meaningful dissent, correction, and exit. The title's market level belongs to the source context and must not be read as a current-price claim or investment recommendation.
+The parent article interprets the Nikkei reaching 50,000 not as proof of broad prosperity but as evidence that markets increasingly price structural position: where a nation, firm, or person is connected. Nakagawa Master's Connection Reward Society is a social structure in which reward shifts from labor quantity toward connection position. As AI removes entry-level and middle-layer work, the labor→wage→consumption→production cycle begins to break. Money remains, but it loses effectiveness as the certificate through which people gain legitimate participation in society. In the emerging connection-allocation model, access to AI tools, medical and educational spheres, or limited economic zones can itself become a connection right and a reward. The core design problem is therefore who allocates connection rights and by what ethics. The parent supplies two axes: Correspondence, which aligns attributed value with actual contribution, and Temporal Ethics, which rewards sustained contribution according to a future-oriented rhythm.
 
 ## Concepts
-- asset price
-- lived value
-- connection-reward society
-- connection value
-- relational capital
-- contribution
-- trust
-- dual accounting
-- nonmonetary reward
-- popularity bias
-- emotional extraction
-- exit right
-- transition design
-- value plurality
-- source return
+- Connection Reward Society
+- connection position
+- connection rights
+- labor-wage model
+- end of the monetary economy
+- legitimacy of social participation
+- AI removal of entry work
+- upper-layer concentration model
+- political life-support model
+- connection-allocation model
+- Correspondence
+- Temporal Ethics
+- future debt into trust capital
+- ethical connection society
+- legitimacy of connection allocation
 
 ## Causal chain
 ```text
-Asset-price rise
+Nikkei 50,000 appears as surface prosperity
 ↓
-Equated with social prosperity
+Markets price connection position more than production output
 ↓
-Gap with lived conditions
+The source of reward shifts from labor quantity to structural position
 ↓
-Limits of money-only measurement
+AI replaces entry-level and middle-layer work
 ↓
-Observe connection contributions
+The labor→wage→consumption→production cycle begins to stop
 ↓
-Run dual value accounting
+Money loses function as a certificate of social participation
 ↓
-Connect carefully to rewards
+Connection rights emerge as rewards beyond salary
 ↓
-Audit extraction and power
+The legitimacy of allocating those rights becomes the central design problem
 ↓
-Maintain plural value measures
+Correspondence aligns value with contribution
++
+Temporal Ethics rewards sustained contribution in a future rhythm
+↓
+Connection Reward Society can become an ethical connection society
 ```
 
 ## State model
 ```yaml
-- asset_price_observed
-- real_income_compared
-- living_cost_compared
-- public_value_checked
-- nonmonetary_contribution_mapped
-- connection_bundle_defined
-- dual_accounting_opened
-- reward_boundary_defined
-- popularity_bias_checked
-- extraction_risk_checked
-- transition_reaudited
+- surface_prosperity_reinterpreted_as_connection_position
+- connection_reward_society_identified
+- labor_wage_cycle_break_observed
+- money_legitimacy_function_failure_identified
+- three_branch_models_identified
+- connection_rights_as_reward_identified
+- correspondence_axis_applied
+- temporal_ethics_axis_applied
+- enclosure_risk_audited
+- T_S_R_checked
+- public_audit_bundle_checked
 - origin_return_verified
 ```
 
 ## Applications
-1. Pair financial metrics with customer, worker, and regional relationship indicators.
-2. Make mediation and care visible without forcing monetization.
-3. Allocate opportunities and recognition as well as money.
-4. Pair GDP or market data with access, time autonomy, and trust.
+1. Interpret market valuation as pricing of network and supply-chain position rather than production output alone.
+2. Analyze how AI removal of labor-entry routes can sever access to money and therefore to social participation.
+3. Treat access to AI, health, education, and bounded economic spheres as potential connection-right rewards in the parent framework.
+4. Audit allocation legitimacy through Correspondence, Temporal Ethics, T/S/R, and the public audit bundle.
 
 ## Measurements and audit
-- asset-price/real-income gap
-- living-cost burden
-- recorded connection contribution
-- trust continuity
-- reward concentration
-- popularity bias
-- unpaid-contribution visibility
-- exit availability
-- public-value access
+The parent explicitly requires periodic verification that connection-right allocation has not become enclosure by a specific group, checks of T/S/R (T: correspondence, S: structural sustainability, R: recursion), and public-audit-bundle consistency showing that the relation between evaluation and reward is explainable.
 
 ## Validity conditions
-- Separate price from lived value.
-- Do not abolish money by assumption.
-- Use a metric bundle.
-- Do not equate popularity with value.
-- Preserve dissent and correction.
-- Audit transition harms.
+- Reward is shifting from labor quantity toward connection position.
+- AI is structurally disrupting the labor-wage circulation model.
+- The end of money is read as failure of its social-legitimacy function, not literal disappearance of currency.
+- Connection rights are treated as an emerging reward form.
+- The legitimacy of connection is governed through Correspondence and Temporal Ethics.
 
 ## Failure conditions
-- Treat stock prices as total prosperity.
-- Collapse connection value into one score.
-- Extract emotional labor.
-- Declare money immediately obsolete.
-- Concentrate power in highly connected actors.
-- Hide worsening living conditions behind abstract value.
+- Weaken Connection Reward Society into generic recognition of nonmonetary value.
+- Replace the parent's end-of-labor-wage thesis with a cautious dual-accounting model.
+- Reduce connection rights to ordinary benefits or generic access policy.
+- Remove Correspondence and Temporal Ethics and substitute derivative-authored safety principles.
+- Read the Nikkei reference merely as an investment or price issue.
 
 ## Falsification conditions
-- Contribution recognition does not improve.
-- New metrics increase surveillance.
-- Money-only systems remain consistently fairer.
-- The price/lived-value gap does not appear.
-- Plural metrics add complexity without decision benefit.
+The parent audit states that if extreme concentration appears across threshold θ, or the observation window δ closes, and connection rights become fixed as monopolistic privilege, the hypothesis that connection rewards can be allocated ethically should be rejected or revised.
 
 ## Required distinctions
-- stock price / prosperity
-- price / value
-- money abolition / plural measures
-- connection / popularity
-- contribution / self-sacrifice
-- trust / surveillance
-- reward / power
-- transition / revolution
+- stock-price rise / prosperity
+- production output / connection position
+- labor quantity / connection reward
+- disappearance of money / failure of money's legitimacy function
+- salary / connection rights
+- connection / ethical connection
+- immediate output / Temporal Ethics
+- connection value / legitimacy of connection allocation
 
 ## Interpretation constraints
-- Not a stock-price forecast.
-- Not investment advice.
-- Not a social-credit specification.
-- Do not exploit unpaid care.
-- Do not create status castes from connection scores.
-- Return to source context.
+- Do not weaken the parent into a generic plural-value framework.
+- Do not add exit rights, refusal rights, social-credit avoidance, or popularity-bias rules as central parent claims unless source-explicit.
+- Preserve the source-specific strong claims: connection position, connection rights, Correspondence, Temporal Ethics, and the end of the monetary economy.
+- Do not distort the source either into literal disappearance of money or into a claim that money remains structurally unchanged.
+- Prefer the source-explicit audit and falsification conditions.
 
 ## Search terms
-- connection reward society
-- asset price
-- lived value
-- connection value
-- relational capital
-- contribution accounting
-- trust accounting
-- dual accounting
-- nonmonetary reward
-- popularity bias
-- emotional extraction
-- exit right
-- transition design
-- value plurality
-- source return
+- Connection Reward Society
+- connection position
+- connection rights
+- end of monetary economy
+- labor wage cycle
+- Correspondence
+- Temporal Ethics
+- ethical connection society
+- AI labor displacement
+- distribution legitimacy
+- structural position
+- access as reward
+- Nakagawa Master
+- future debt trust capital
+- connection allocation
 
 ## Origin return
-The source-level market reference is contextual, not a live quote. Return to the parent original for theory and to separate current evidence for financial decisions.
+Use the parent article's sections on the market shock, Connection Reward Society, the end of the monetary economy, the three branch models, Correspondence, Temporal Ethics, and the integrated audit summary as final semantic authority.
 
 ---
 
