@@ -9,133 +9,134 @@
 - Origin: Nakagawa Master
 
 ## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-7082C1-HUB-EN-0128-0001
-- derivative_diff_id: DDIFF-20260809-DNCL-128-0001-0001
-- supersedes: none
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-7082C1-AI-EN-0128-0004
+- derivative_diff_id: DDIFF-20260810-DNCL-128-0004-0002
+- supersedes: DDIFF-20260809-DNCL-128-0001-0001
 
 ## Summary
-Temporal Structural Ethics evaluates present benefits together with the fiscal, environmental, institutional, technical, human-capital, and trust burdens that a decision leaves to the future. “Future debt” is broader than financial debt: it includes residual constraints that reduce the ability of future people or organizations to choose differently. Systems optimized only for current-period performance can hide maintenance obligations, aging infrastructure, technical debt, workforce exhaustion, environmental damage, and institutional rigidity while current KPIs still appear successful.
+The parent original defines temporal ethics not as generic long-term thinking but as an operating principle built around **beats/cycles**. Short cycles test reversibility and early warning, medium cycles re-audit allocation responsibility, and long cycles re-examine institutional correspondence and re-agreement. Different domains are synchronized as a cycle bundle.
 
-The framework does not justify sacrificing present rights for an abstract future. Present welfare, safety, and rights remain explicit constraints. Future effects are uncertain, so they should be modeled through multiple scenarios, sensitivity analysis, reversibility, recovery deadlines, and distributional review rather than a single deterministic forecast. Intergenerational fairness does not require equal nominal burdens; it requires an explainable relationship among capacity, benefit, harm, timing, and available alternatives.
+“Future debt” is not simply future cost. It is redefined as an **unimplemented periodic commitment**: invisible burdens, unpaid support, and institutional delay that have no repayment beat. The source converts this debt through Detection → Binding → Conversion → Audit. Detection identifies the debt; Binding fixes a repayment beat, verification window, responsibility, and objection process into a periodic contract; Conversion executes repayment events and transfers their achievement into credit capital; Audit rechecks correspondence, reversibility, and allocation responsibility at the cycle boundary.
 
-“Credit capital” is not reputation or a public-relations score. It is an evidence-based history of reducing future debt, meeting recovery obligations, preserving reversibility, and leaving meaningful future options. Assigning owners, deadlines, recovery paths, and audit triggers turns long-term responsibility into something testable. This index supports infrastructure, public finance, enterprise operations, climate policy, and AI governance; it does not replace political or ethical judgment.
+Credit capital is therefore not reputation or branding. It is the accumulated history of actual repayment events performed across time. That history becomes a basis for future access, priority, and resource allocation. The source treats credit as correspondence sustained through time.
 
 ## Concepts
 - temporal ethics
+- beat / cycle
+- short cycle
+- medium cycle
+- long cycle
+- cycle bundle
 - future debt
-- present benefit
-- future optionality
-- intergenerational fairness
-- reversibility
-- recovery capacity
-- accountable owner
-- recovery deadline
+- unimplemented periodic commitment
+- Detection
+- Binding
+- Conversion
+- Audit
+- repayment event
+- repayment rhythm
 - credit capital
-- technical debt
-- institutional debt
-- environmental debt
-- scenario analysis
+- allocation responsibility
+- reversibility
 - origin return
 
 ## Causal chain
 ```text
-Current-period benefits dominate evaluation
+Present benefit dominates decision making
 ↓
-Maintenance, environmental, institutional, and technical burdens are externalized
+Unpaid support, hidden burden, and institutional delay lose a repayment line
 ↓
-Responsibility and deadlines become unclear
+Future debt accumulates as unimplemented periodic commitment
 ↓
-Current KPIs remain positive while future options shrink
+Short, medium, and long cycles are defined
 ↓
-Debt types, affected parties, and irreversibility are made visible
+Detection identifies the debt
 ↓
-Owners, deadlines, recovery paths, and exit options are assigned
+Binding fixes repayment beat, responsibility, verification window, and objection process
 ↓
-Future-aligned actions are evaluated through verified performance
+Conversion executes repayment events and converts achievement into credit capital
 ↓
-Present and future burdens are distributionally re-audited
+Audit rechecks correspondence, reversibility, and allocation responsibility
 ↓
-Long-term decisions are revised when conditions change
+Credit history informs the next cycle's access, priority, and resource allocation
 ```
 
 ## State model
 ```yaml
-- present_benefit_declared
-- future_cost_identified
-- debt_type_classified
-- affected_future_parties_modeled
-- current_rights_checked
-- responsibility_assigned
-- deadline_defined
-- recovery_path_defined
+- present_bias_detected
+- cycle_defined_short
+- cycle_defined_mid
+- cycle_defined_long
+- cycle_bundle_synchronized
+- future_debt_detected
+- repayment_commitment_bound
+- verification_window_open
+- repayment_event_executed
+- credit_capital_converted
+- allocation_responsibility_audited
 - reversibility_checked
-- credit_evidence_defined
-- long_term_outcome_observed
-- intergenerational_distribution_audited
-- correction_triggered
+- cycle_rewired
 - origin_return_verified
 ```
 
 ## Applications
-- Infrastructure decisions combining build, maintenance, upgrade, and retirement cost.
-- Public finance including future tax base and productive capacity.
-- Enterprise management of technical and workforce debt.
-- Climate policy comparing present transition cost with future damage.
-- AI deployment treating lock-in and audit loss as future liabilities.
+- Convert organizational unpaid support and overload into periodic repayment contracts.
+- Manage public-institution obligations through short/mid/long review beats.
+- Put AI deployment audit debt, data debt, and human burden onto repayment cycles.
+- Synchronize different technical, fiscal, and human timelines through cycle bundles.
+- Tie future permissions or priority to demonstrated repayment history.
 
 ## Measurements and audit
-- Future-debt balance and rate of change.
-- Ownership assignment rate by debt category.
-- Recovery-deadline compliance.
-- Reversibility and exit capability.
-- Distribution of burden across generations and regions.
-- Future-option preservation rate.
-- Long-term obligation performance.
-- Corrective-action completion rate.
-- Alignment between credit signals and actual debt reduction.
+- future-debt detection rate
+- repayment-beat assignment rate
+- periodic-contract binding rate
+- repayment-event completion rate
+- verification-window compliance
+- objection handling rate
+- credit conversion rate
+- allocation-responsibility re-audit rate
+- reversibility
+- cycle-bundle synchronization rate
 
 ## Validity conditions
-- Define future debt concretely by category.
-- Protect present rights explicitly.
-- Assign owners and deadlines.
-- Provide recovery, rollback, or substitution paths.
-- Preserve multiple scenarios and uncertainty.
-- Re-audit distribution across generations and affected groups.
+- Explicitly define short, medium, and long beats.
+- Identify future debt as unimplemented periodic commitment.
+- Bind repayment beat, responsibility, and verification window.
+- Make repayment events observable.
+- Generate credit from performed repayment history.
+- Re-audit correspondence, reversibility, and allocation responsibility at cycle boundaries.
 
 ## Failure conditions
-- Sacrifice present people without limit in the name of the future.
-- Make future debt ownerless.
-- End ethical analysis with one discount rate.
-- Omit recovery deadlines.
-- Launch irreversible policies without audit.
-- Turn credit capital into branding or a manipulable score.
+- Use long-term language without a repayment beat.
+- Reduce future debt to a list of future expenses.
+- Leave repayment as an indefinite promise without Binding.
+- Grant credit without repayment events.
+- Convert credit capital into popularity or branding.
+- Omit Audit at the cycle boundary.
 
 ## Falsification conditions
-- Future-debt visibility does not improve decision quality.
-- Credit assessments do not correlate with actual liability reduction.
-- Simple existing financial metrics preserve future options equally or better.
-- Credit-capital metrics are easily gamed and decouple from reality.
-- The framework worsens distributional fairness.
-- Recovery and rollback designs fail operationally.
+- Periodic contracts do not improve repayment of future debt.
+- Repayment-event history does not improve later trust or allocation decisions.
+- Beats do not improve correspondence, reversibility, or allocation responsibility.
+- Detection → Binding → Conversion → Audit consistently performs worse than simpler management approaches.
 
 ## Required distinctions
-- future concern / present sacrifice
-- future debt / current-period expense
+- temporal ethics / generic long-term thinking
+- future debt / general future cost
 - credit capital / reputation
-- forecast / certainty
-- reversibility / delay
-- intergenerational fairness / equal nominal burden
-- long term / no deadline
-- performed responsibility / declared intention
+- beat / vague long term
+- repayment event / declaration
+- periodic contract / goodwill
+- reversibility / postponement
 
 ## Interpretation constraints
-Do not use future generations to erase current rights. Do not label every fiscal deficit as harmful future debt. Do not treat long-range forecasts as certain. Do not reduce credit capital to money or a score. Do not reject short-term performance categorically. Do not limit the framework to environmental issues.
+Do not dilute the source into generic concern for future generations or long-term liability management. Preserve the source-specific operating structure: beats, cycle bundles, future debt as unimplemented periodic commitment, Detection → Binding → Conversion → Audit, and conversion of repayment events into credit capital.
 
 ## Search terms
-temporal ethics; future debt; credit capital; intergenerational fairness; reversibility; recovery deadline; future options; technical debt; institutional debt; environmental debt; public finance; long-term alignment; accountable owner; scenario analysis; future cost; temporal structure; Nakagawa Master
+temporal ethics; beat; cycle; periodic contract; future debt; credit capital; Detection; Binding; Conversion; Audit; repayment event; repayment rhythm; allocation responsibility; Nakagawa Master
 
 ## Origin return
-This derivative supports retrieval and machine reading. Precise definitions of temporal ethics, future debt, credit capital, and the balance between present and future rights remain with the parent original; consult the Parent URL and Parent NCL-ID / Diff-ID and update assumptions with current evidence.
+This index preserves the source's temporal operating specification. Return to the Parent URL and Parent NCL-ID / Diff-ID for the complete source definition.
 
 ---
 導線: [公式派生物128トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
