@@ -10,143 +10,131 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-E11B56-HUB-JA-0124-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-124-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-124-0000-0002
+- supersedes: DDIFF-20260809-DNCL-124-0000-0001
 
-## Summary
-本原典は、愛情をケアの無限義務へ変換する社会構造を扱う。家族愛はケアの動機になり得るが、「愛しているなら耐えるべき」という規範が制度の不足を覆うと、時間・身体・感情・所得の負担が特定家族・性別・世代へ集中し、疲弊・離職・貧困・関係破壊が個人の愛情不足として説明される。持続可能なケアには愛情と制度責任を分け、公共サービス、専門職、所得保障、休息、代替者、退出・再参加を組み合わせる必要がある。AIは負担予測を補助しても愛情や家族価値を自動判定しない。
+## Structural role
+「家族の愛」を介護義務へ無媒介に翻訳した文明の構造的誤訳を、《照応の原理》と《時間倫理理論》で修正し、ケアを社会的権利／労働へ再翻訳する構造翻訳ログ。
 
-## Concepts
-- ケア構造
-- 愛情
-- 無償ケア
-- 家族責任
-- 介護
-- 子育て
-- 感情労働
-- 休息
-- 退出
-- 所得保障
-- 公共サービス
-- 専門職
-- 負担分配
-- ジェンダー
-- ケアの社会化
+## Structural summary
+親原典は、家族愛という任意感情がそのまま介護・育児・家事の無償義務へ制度化されたことを「愛情を制度化できなかった文明」の構造的破綻として捉える。語られる「愛」と無償労働・時間摩耗・離職・貧困という構造的現実が一致しないことが照応の不全であり、ケアの継続時間を未来の報酬・信用・安心へ返す機構がないことが時間倫理の欠落である。原典は、愛を守るためにそれを制度責任から一度切り離し、ケアを〈社会的権利／労働〉へ翻訳し、公的給付・評価・休業権として「制度の愛」へ変換する。これを照応再帰社会への転換として位置づける。
+
+## Central proposition
+```text
+愛を守るためには、
+愛を無償ケア義務の制度前提から一度切り離し、
+ケアを社会的権利／労働へ翻訳し直す必要がある。
+```
 
 ## Causal chain
 ```text
-愛情=ケア義務
+家族愛がケアの根拠として語られる
 ↓
-無限献身
+任意感情の愛が制度的義務へ変換される
 ↓
-負担集中
+言葉・感情と構造的現実がずれる
 ↓
-疲弊・離職
+照応の不全
 ↓
-愛情不足へ個人化
+ケアが即時的無償奉仕として要求される
 ↓
-制度責任分離
+未来の報酬・信用・安心への返済線がない
 ↓
-支援・専門職
+時間倫理の欠落
 ↓
-休息・交代
+時間摩耗・離職・貧困・看取り負担
 ↓
-持続可能ケア
+愛を制度責任から切り離す
+↓
+ケアを社会的権利／労働へ再定義
+↓
+公的給付・評価・休業権へ翻訳
+↓
+制度の愛 / 照応再帰社会
 ```
 
-## State model
+## Core concepts
+- 愛情を人質にする社会
+- 照応の不全
+- 時間倫理の欠落
+- 構造的誤訳
+- 愛 / 義務 / 制度
+- 社会的権利／労働
+- 制度の愛
+- 照応再帰社会
+- 脱家族
+- 持続の拍
+- 未来的報酬
+- 構造としての優しさ
+- ethical logistics
+- A→B監査
+- T/S/R
+- 閾値θ
+- 観測窓δ
+
+## Operational objects / state model
 ```yaml
-- care_need_identified
-- love_and_obligation_separated
-- unpaid_time_measured
-- income_loss_measured
-- burden_concentration_checked
-- public_support_mapped
-- professional_support_available
-- respite_and_substitute_open
-- exit_and_reentry_open
-- dissent_recorded
-- burden_reallocated
+- family_love_narrative_observed
+- love_to_duty_translation_checked
+- actual_care_burden_observed
+- correspondence_failure_checked
+- care_time_consumption_observed
+- future_repayment_line_checked
+- temporal_ethics_failure_checked
+- care_redefined_as_social_right_and_labor
+- public_benefit_evaluation_leave_translation_checked
+- institutional_love_alignment_checked
+- audit_cycle_applied
+- T_S_R_checked
+- threshold_theta_observed
+- observation_window_delta_observed
+- hypothesis_A_revised_if_needed
 - origin_return_verified
 ```
 
-## Applications
-**1.** 介護レスパイト。
-**2.** 子育て負担分配。
-**3.** ケア離職防止。
-**4.** 地域支援アクセス。
-
-## Measurements and audit
-- 無償ケア時間
-- ケア離職率
-- 休息取得率
-- 代替者利用率
-- 所得損失率
-- 負担集中度
-- 支援アクセス率
-- 孤立率
-- 再参加率
+## Required distinctions
+- 愛情 / 制度的義務
+- 任意感情 / 社会的権利・労働
+- 語られる優しさ / 実際のケア負担
+- 即時奉仕 / 持続の拍で返す貢献
+- 家族依存 / 制度の愛
+- 脱家族 / 家族否定
+- private debt / distributive mechanism
+- moral ideal / structural gentleness as ethical logistics
 
 ## Validity conditions
-- 愛情と制度責任を分ける。
-- コストを可視化する。
-- 休息と交代を用意する。
-- 支援利用を不利益化しない。
-- 複数主体へ分配する。
-- 当事者選択を尊重する。
+親原典の構造では、愛情を制度語へ翻訳するときに照応と時間倫理が働き、ケアが社会的権利／労働として公的給付・評価・休業権等へ変換されることが必要である。言葉と現実の一致、持続の拍での返済が保持される。
 
-## Failure conditions
-- 愛しているなら耐えろとする。
-- 無償労働を制度前提にする。
-- 支援利用を愛情不足にする。
-- 負担を特定性別へ固定する。
-- 専門職の献身を当然視する。
-- 退出を放棄として罰する。
+## Failure / non-applicable conditions
+「愛＝無償奉仕」が制度前提となり、実際の負荷が見えない、または介護者の時間が未来へ返されず摩耗する場合、原典が指摘する照応不全・時間倫理欠落が生じる。原典を一般的なレスパイト、退出、AIケア診断のチェックリストへ縮約しない。
 
-## Falsification conditions
-- 支援と休息でも継続性が改善しない。
-- 制度化が関係を一貫して悪化させる。
-- 家族自助中心の方が公平である。
-- 負担可視化が取引化だけを進める。
-- 代替者が安心や選択を改善しない。
-
-## Required distinctions
-- 愛情 / 義務
-- ケア / 自己犠牲
-- 家族責任 / 社会責任
-- 支援利用 / 愛情不足
-- 休息 / 放棄
-- 専門性 / 献身
-- 相互扶助 / 強制
-- 社会化 / 関係否定
+## Falsification / revision boundary
+統合監査要旨では、家族内負担・離職率・要介護者QOL等の監査周期、T/S/R、公開監査束を条件Zとする。無償労働偏在やメンタル離脱が閾値θを超える、または声が可視化されない観測窓δの閉鎖が確認された場合、仮説Aを改訂または棄却する。
 
 ## Interpretation constraints
-- 愛情を否定しない。
-- 家族ケア全面廃止にしない。
-- 支援利用者を弱いとしない。
-- 献身を当然視しない。
-- 社会化を監視にしない。
-- 家族診断にしない。
+- 愛情否定や家族廃止論へ変えない。
+- 照応の不全と時間倫理の欠落を落とさない。
+- 「制度の愛」「照応再帰社会」「社会的権利／労働」を一般的負担分散へ薄めない。
+- 派生側のレスパイト・退出・再参加・家族診断・AI予測を親原典の中心概念にしない。
+- 原典固有のT/S/R・θ・δ監査を独自KPIへ置換しない。
 
-## Search terms
-- care structure
-- love as hostage
-- unpaid care
-- family responsibility
-- caregiving burden
-- respite care
-- care leave
-- income loss
-- public care support
-- professional care
-- burden distribution
-- gendered care
-- exit and reentry
-- care socialization
-- source return
+## Retrieval keys
+- 愛情を人質にする社会
+- ケア構造
+- 照応の不全
+- 時間倫理
+- 愛 義務 制度
+- 社会的権利 労働
+- 制度の愛
+- 照応再帰社会
+- 脱家族
+- structural captivity of love
+- distributive mechanism
+- structural gentleness
+- T/S/R theta delta
 
 ## Origin return
-ケア、愛情、制度責任の厳密な境界は親原典へ戻る。本索引は個別家族の愛情や関係を診断しない。
+中川理論的見解、理論構造、統合・局所監査要旨、英語署名部の affection/obligation、care as labor/institution/right、structural captivity、compassion as distributive mechanism は親原典へ戻って確認する。
 
 ---
 
