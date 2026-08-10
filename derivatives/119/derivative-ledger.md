@@ -10,94 +10,83 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-FBCBEC-HUB-JA-0119-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-119-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-119-0000-0002
+- supersedes: DDIFF-20260809-DNCL-119-0000-0001
 
 ## Language derivative IDs
 ```yaml
 ja_ncl_id: DNCL-NCL-ALPHA-20251102-FBCBEC-HUB-JA-0119-0000
-ja_diff_id: DDIFF-20260809-DNCL-119-0000-0001
+ja_diff_id: DDIFF-20260810-DNCL-119-0000-0002
 en_ncl_id: DNCL-NCL-ALPHA-20251102-FBCBEC-HUB-EN-0119-0000
-en_diff_id: DDIFF-20260809-DNCL-119-EN-0000-0001
+en_diff_id: DDIFF-20260810-DNCL-119-EN-0000-0002
 zh_ncl_id: DNCL-NCL-ALPHA-20251102-FBCBEC-HUB-ZH-0119-0000
-zh_diff_id: DDIFF-20260809-DNCL-119-ZH-0000-0001
+zh_diff_id: DDIFF-20260810-DNCL-119-ZH-0000-0002
 ```
 
-## Factory
+## Semantic repair authority
 ```yaml
-golden_master: OD085
-factory_version: 2.0
-batch_standard: BATCH10_STANDARD
-generation_mode: SINGLE_SEMANTIC_WORK_PACKET_SEVEN_FIXED_SURFACES
-literal_post_render_gate: REQUIRED
-github_actions_used: false
+repair_date_jst: 2026-08-10
+repair_reason: SOURCE_SEMANTIC_FIDELITY_REVALIDATION
+live_parent_retrieval: PASS
+semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
 ```
 
-## Retrieval evidence
+## Source coverage restored
 ```yaml
-canonical_index:
-  source: reference_corpus/official_archive/generated/canonical_index_1213_1310.jsonl
-  post_id: 1260
-  parent_ncl_id: NCL-α-20251102-fbcbec
-  parent_diff_id: DIFF-20251102-0001
-  status: publish
-xml:
-  blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-  item_range: 91123-91447
-four_key_duplicate_check:
-  post_id: NO_PREEXISTING_MATCH
-  parent_ncl_id: NO_PREEXISTING_MATCH
-  slug: NO_PREEXISTING_MATCH
-  canonical_url: NO_PREEXISTING_MATCH
+central_thesis:
+  - reward_shift_from_labor_quantity_to_connection_position
+  - money_legitimacy_function_failure_under_AI_labor_break
+  - connection_rights_as_emerging_reward
+  - allocation_legitimacy_as_core_social_design_problem
+  - correspondence_and_temporal_ethics_as_two_axes
+three_branch_models:
+  - upper_layer_concentration
+  - political_life_support
+  - connection_allocation
+source_explicit_audit:
+  - anti_enclosure_periodic_check
+  - T_S_R
+  - explainable_evaluation_reward_relation
+source_explicit_falsification: monopolistic_privilege_breaks_ethically_allocable_connection_reward_hypothesis
+```
+
+## Removed or decentered derivative-authored material
+```yaml
+- cautious_dual_accounting_as_parent_core
+- generic_plural_value_metrics
+- exit_and_refusal_rights_as_parent_core
+- social_credit_score_avoidance_as_parent_core
+- popularity_bias_framework_as_parent_core
+- generic_emotional_extraction_framework_as_parent_core
+- generic_financial_advice_boundary_as_theory_boundary
 ```
 
 ## Seven surfaces
 ```yaml
-README.md: PUBLISHED
-human-entry.md: PUBLISHED
-faq.md: PUBLISHED_Q1_Q30
-ai-index.md: PUBLISHED
-en-ai-index.md: PUBLISHED
-zh-ai-index.md: PUBLISHED
-derivative-ledger.md: PUBLISHED
+README.md: REPAIRED
+human-entry.md: REPAIRED
+faq.md: REPAIRED_Q1_Q30
+ai-index.md: REPAIRED
+en-ai-index.md: REPAIRED
+zh-ai-index.md: REPAIRED
+derivative-ledger.md: REPAIRED
 ```
 
-## Formatting parity
+## Semantic parity
 ```yaml
-parent_identity_block: PASS
-language_specific_derivative_ids: PASS
-FAQ_layers: BEGINNER_Q1_Q10__PRACTITIONER_Q11_Q20__AI_RESEARCHER_Q21_Q30
-readme_global_top_link: PASS
-other_surface_numbered_top_link: PASS
-ai_fixed_13_sections: PASS
-human_fixed_sections: PASS
+parent_identity: PASS
+central_proposition: PASS
+causal_direction: PASS
+source_specific_terminology: PASS
+source_explicit_audit_conditions: PASS
+source_explicit_falsification: PASS
+unsupported_moderation_removed: PASS
+ja_en_zh_equivalence: PASS
+origin_return: PASS
 ```
 
-## Semantic and density coverage
-```yaml
-central_thesis: PASS
-price_value_distinction: PASS
-connection_reward_boundary: PASS
-anti_popularity_bias: PASS
-anti_extraction: PASS
-non_financial_advice_boundary: PASS
-validity_failure_falsification: PASS
-ja_en_zh_semantic_parity: PASS
-OD085_density_floor: PASS
-```
-
-## Navigation and closure
-```yaml
-public_indexes: PENDING_BATCH_CLOSE
-public_map: PENDING_BATCH_CLOSE
-private_map: PENDING_BATCH_CLOSE
-parent_backlink_display_procedure: PENDING_BATCH_CLOSE
-owner_visual_for_OD119: PENDING_OWNER_BATCH_VISUAL
-brain_return: PENDING_BATCH_CLOSE
-completion_status: DISPLAY_PROCEDURE_PENDING
-```
-
-本台帳はOD119のidentity、取得経路、四軸重複除外、七面構成、価格と価値、接続報酬の移行境界を固定する。投資助言・社会信用スコア・貨幣即時廃止へ変換しない。
+## Navigation
+Public map/index URLs are unchanged because OD number, directory, parent identity, and canonical path are unchanged.
 
 ---
 
