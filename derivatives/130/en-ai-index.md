@@ -10,133 +10,126 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-5D732A-HUB-EN-0130-0001
-- derivative_diff_id: DDIFF-20260809-DNCL-130-0001-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-130-0001-0002
+- supersedes: DDIFF-20260809-DNCL-130-0001-0001
 
 ## Summary
-This index treats defense as a system of establishment conditions rather than a count of platforms or the size of a budget. Threat definition, deterrence, mission objectives, personnel, maintenance, munitions, logistics, alliances, diplomacy, civil resilience, adversary response, and total ownership cost all contribute to real security. The framework does not deny legitimate threats or the need for military equipment; it asks whether visible procurement translates into operational capability and improved security outcomes.
+This index preserves the parent article's structural reading of Japan's rapidly expanding defense spending and military buildup. Its core concepts are the cycle between deterrence and dependence, the asymmetry between military speed and ethical/institutional/social adjustment, structural rhythm, temporal ethics, and the need to recalibrate a national "defense rhythm."
 
-Procurement can expand while readiness remains constrained by personnel, maintenance, ammunition, training, or sustainment. One side's buildup can also change the behavior and threat perception of the other side, so deterrence and escalation must be considered together. Acquisition price is only part of cost; long-term maintenance, upgrades, basing, training, and workforce requirements can reshape fiscal and industrial capacity.
+The parent does not place the essence of security in the number of fighter aircraft or the size of a defense budget. Security anxiety can accelerate military expansion; expansion can become a dependence on deterrence and can trigger counterpart reactions that feed further expansion. Military procurement and policy can accelerate faster than institutions, public life, fiscal adjustment, and ethical deliberation. That speed gap produces a misalignment between the state's time and the time of everyday life.
 
-Ethical balance does not mean military weakness. It means comparing equipment, diplomacy, cyber capability, alliance arrangements, evacuation, healthcare, communications, and infrastructure resilience against common security outcomes, while tracking how burdens are distributed across regions and generations. Deterrence hypotheses should be falsifiable and resource allocation should change when threats, technology, or evidence change. This derivative supports structural audit, not operational military decision-making.
+The article's redesign direction is to treat defense as a structural rhythm rather than a static stock of equipment, connect present security decisions to future burdens through temporal ethics, and recalibrate defense activity into a rhythm society can sustain. The essence of safety is therefore located in temporal alignment between institutions and everyday life, not simply in platform counts.
 
 ## Concepts
 - defense structure
-- security
-- threat assessment
+- defense-spending expansion
+- military buildup
 - deterrence
-- mission objective
-- procurement
-- operational capability
-- personnel
-- maintenance
-- munitions
-- total ownership cost
-- adversary response
-- escalation
-- civil resilience
-- alliance
+- dependence
+- reciprocal buildup
+- speed/ethics asymmetry
+- structural rhythm
+- temporal ethics
+- defense rhythm
+- state time
+- everyday-life time
+- temporal alignment
 - origin return
 
 ## Causal chain
 ```text
-Threat perception increases
+Security anxiety rises
 ↓
-Procurement and budget growth become visible responses
+Defense spending and military buildup accelerate
 ↓
-Platform count and spending are treated as security proxies
+Deterrence strengthening becomes the dominant security response
 ↓
-Personnel, maintenance, munitions, diplomacy, and resilience receive less attention
+Dependence on deterrence and counterpart reactions feed further buildup
 ↓
-Adversary reaction can reinforce threat perception
+Military and procurement speed outpaces ethical, institutional, and social adjustment
 ↓
-Ownership cost and operational constraints accumulate
+State time and everyday-life time become misaligned
 ↓
-Threat, mission, readiness, and alternatives are separated
+Defense is reframed as structural rhythm
 ↓
-Military, diplomatic, civil, and alliance measures are compared on common outcomes
+Present and future are reconnected through temporal ethics
 ↓
-Resources are revised based on real capability and resilience
+Defense rhythm is recalibrated toward institutional and everyday-life alignment
 ```
 
 ## State model
 ```yaml
-- threat_defined
-- probability_and_horizon_estimated
-- defense_objective_defined
-- equipment_role_mapped
-- personnel_capacity_checked
-- maintenance_and_munitions_checked
-- alliance_and_diplomacy_checked
-- adversary_response_modeled
-- total_ownership_costed
-- civilian_resilience_compared
-- distributional_burden_checked
-- escalation_risk_audited
-- alternatives_compared
+- security_anxiety_rising
+- defense_spending_expanding
+- military_procurement_accelerating
+- deterrence_dependency_cycle_visible
+- counterpart_reaction_visible
+- military_speed_exceeds_social_adjustment
+- institutional_time_misaligned
+- everyday_life_time_misaligned
+- structural_rhythm_reframed
+- temporal_ethics_applied
+- defense_rhythm_recalibrated
+- institutional_and_life_time_realigned
 - origin_return_verified
 ```
 
 ## Applications
-- Evaluate procurement using acquisition and total ownership cost.
-- Compare military, cyber, diplomatic, and resilience spending on shared security outcomes.
-- Audit regional burden around bases against national benefits.
-- Examine alliance dependence and autonomous capability.
-- Separate public spending figures from actual readiness.
+- Read defense-spending growth by speed and recurring structure, not amount alone.
+- Place fighter-aircraft procurement inside the deterrence/dependence cycle.
+- Include counterpart reaction when examining reciprocal military buildup.
+- Compare military policy speed with institutional and everyday-life adjustment speed.
+- Connect present security decisions to future burdens through temporal ethics.
+- Examine whether national defense rhythm remains aligned with social time.
 
 ## Measurements and audit
-- Threat-hypothesis update frequency.
-- Equipment availability rate.
-- Personnel readiness.
-- Maintenance and munitions sufficiency.
-- Total ownership cost to acquisition cost ratio.
-- Adversary-response indicators.
-- Civil-resilience investment share.
-- Regional burden concentration.
-- Contribution to security outcomes.
+The parent is not centered on a formal security KGI or numerical threshold system, so this derivative does not invent one as an official claim. Audit attention stays on source-grounded relations:
+- acceleration of defense spending and military buildup
+- counterpart reaction after deterrence strengthening
+- cycles in which deterrence produces dependence or additional buildup
+- gap between military decision speed and institutional adjustment speed
+- misalignment between state time and everyday-life time
+- transfer of present security burdens into the future
+- whether defense rhythm remains compatible with sustainable social cycles
 
 ## Validity conditions
-- Define the threat and mission concretely.
-- Separate acquisition from operational capability.
-- Include adversary response and escalation.
-- Measure ownership cost and workforce constraints.
-- Compare diplomacy, alliances, and civil resilience.
-- Make burden distribution visible.
+- Observe military expansion on a time axis.
+- Read deterrence together with dependence.
+- Include counterpart reaction in the causal chain.
+- Distinguish military speed from ethical, institutional, and social adjustment speed.
+- Treat defense as structural rhythm rather than static inventory.
+- Connect present and future through temporal ethics.
+- Return the security criterion to institutional/everyday-life temporal alignment.
 
 ## Failure conditions
-- Treat spending or platform count as security itself.
-- Leave threats undefined.
-- Ignore personnel, maintenance, or munitions.
-- Ignore adversary response.
-- Exclude ownership cost.
-- Dismiss criticism as rejection of defense.
+- Equating greater spending or more fighter aircraft with security itself.
+- Ignoring dependence and further buildup generated by deterrence structures.
+- Removing counterpart reaction from the causal chain.
+- Justifying military speed while excluding institutional and everyday-life time.
+- Separating future burdens from present security decisions.
+- Replacing structural rhythm and temporal ethics with generic procurement efficiency.
 
 ## Falsification conditions
-- Procurement growth remains unrelated to security outcomes.
-- Buildup does not improve deterrence after adversary response is modeled.
-- Civil or diplomatic alternatives consistently outperform military expansion.
-- Ownership cost persistently undermines operational readiness.
-- Threat hypotheses repeatedly fail against observed evidence.
-- Simpler force structures consistently provide better resilience.
+The parent is not a formal numerical-falsification article. This derivative therefore does not invent security KPIs, thresholds, or generic optimization equations. Evaluation remains limited to whether the source-described deterrence/dependence cycle, speed/ethics asymmetry, and temporal misalignment are actually present in the relevant context.
 
 ## Required distinctions
-- defense spending / defense capability
-- acquisition / operation
-- deterrence / arms race
-- threat / fear
-- alliance / dependence
-- equipment / civil resilience
-- security / budget size
-- criticism / rejection of defense
+- defense-spending increase / security itself
+- deterrence / dependence on deterrence
+- military buildup / defense rhythm
+- military speed / ethical-institutional-social speed
+- equipment quantity / defense structure
+- present security / burdens transferred to the future
+- state time / everyday-life time
+- static inventory / structural rhythm
 
 ## Interpretation constraints
-Do not reject defense needs categorically. Do not label procurement automatically wasteful. Do not equate larger budgets with greater security. Do not treat diplomacy as a universal substitute. Do not model adversaries as a single perfectly rational actor. Do not demand unnecessary disclosure of operational secrets.
+Do not convert the parent into a simple defense-budget-cutting argument. Do not reinterpret military buildup as automatically producing security. Do not reduce the deterrence/dependence cycle to a generic cost-effectiveness framework. Preserve structural rhythm and temporal ethics. Do not add source-absent security KPIs, operational doctrine, legal/military disclaimers, or generic procurement optimization as official parent claims.
 
 ## Search terms
-defense structure; security; defense spending; fighter aircraft; deterrence; threat assessment; readiness; total ownership cost; maintenance; munitions; adversary response; arms race; alliance; civil resilience; base burden; security outcome; Nakagawa Master
+defense structure; defense spending; military buildup; fighter aircraft; deterrence; dependence; reciprocal buildup; speed and ethics asymmetry; structural rhythm; temporal ethics; defense rhythm; state time; everyday-life time; temporal alignment; Nakagawa Master
 
 ## Origin return
-This is a retrieval derivative. Time-specific claims about defense procurement and the security environment belong to the parent original and current security evidence; consult the Parent URL and Parent NCL-ID / Diff-ID before material decisions.
+This is a retrieval derivative. Concrete claims about defense spending, equipment procurement, the security environment, tone, and argumentation belong to the parent article; return to the Parent URL and Parent NCL-ID / Diff-ID for citation or judgment.
 
 ---
 導線: [公式派生物130トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
