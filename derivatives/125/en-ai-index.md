@@ -10,143 +10,152 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-F070F0-HUB-EN-0125-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-125-EN-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-125-EN-0000-0002
+- supersedes: DDIFF-20260809-DNCL-125-EN-0000-0001
 
 ## Summary
-The structural sensitivity threshold describes a change-design problem: a highly coherent new structure may still trigger emotional rejection when it appears to invalidate a person's self-story, affiliation, role, responsibility, or past choices all at once. Logical consistency and integrability are therefore different variables. Rejection should not be immediately classified as ignorance, bad faith, or pathology. Practical design adjusts pacing, information load, emotional pressure, pause space, partial adoption, dissent, and exit so that people can revise their model while preserving continuity of self. Small reversible experiments can create evidence without demanding total prior agreement. The concept must not be used to dismiss legitimate counterarguments; the proposed structure itself may be wrong or unfair. AI may help detect overload patterns but must not automatically diagnose an individual's psychology.
+The Structural Sensitivity Threshold is a structural-psychology concept describing the boundary at which a person or organization begins to reject a highly coherent higher-order structure because it threatens the current equilibrium of roles, relationships, and lived stability. The parent identifies three typical reactions: threat conversion, reversal from structural issues to motives/personality, and contraction back to established practice. It treats this not as a problem solved by stronger persuasion but as a design problem involving presentation order, load distribution, and repayment rhythm. The three source-defined principles for reducing cognitive friction are immediate visualization of correspondence, front-loading rhythm/Temporal Ethics, and staged presentation of roles through a minimum Unit of Change. The parent also specifies an adoption sequence, public observation principles, and an integrated audit using A→B, X/Y, condition Z, T/S/R, threshold θ, observation window δ, and phenomenon M.
 
 ## Concepts
 - structural sensitivity
-- threshold
-- emotional rejection
-- logical consistency
-- self narrative
-- affiliation
-- cognitive dissonance
-- defensive response
-- pacing
-- emotional temperature
-- margin
-- partial adoption
-- self continuity
-- falsification
-- non-coercion
+- structural sensitivity threshold
+- higher-order structure
+- correspondence
+- acceptance
+- threat conversion
+- reversal
+- contraction
+- cognitive friction
+- immediate correspondence visualization
+- rhythm
+- Temporal Ethics
+- staged role presentation
+- Unit of Change
+- acceptance space
+- allocation responsibility
+- reversibility
+- T/S/R
+- threshold theta
+- observation window delta
+- phenomenon M
 
 ## Causal chain
 ```text
-Highly coherent new structure
+Present a higher-order structure
 ↓
-Conflict with self and affiliation
+Current equilibrium, roles, and relationship gains appear threatened
 ↓
-Perceived loss of prior choices
+Structural Sensitivity Threshold is crossed
 ↓
-Defensive rejection
+Threat conversion / reversal / contraction
 ↓
-More forceful correctness pressure
+Cognitive friction increases
 ↓
-Rejection hardens
+Visualize correspondence immediately
 ↓
-Adjust pacing, temperature, margin
+Front-load rhythm and the observation window
 ↓
-Allow partial adoption
+Split roles into a minimum Unit of Change
 ↓
-Reconstruct with self-continuity
+Move rejection toward conditional suspension
+↓
+Form an acceptance space
 ```
 
 ## State model
 ```yaml
-- new_structure_presented
-- prior_model_recorded
-- identity_conflict_checked
-- affiliation_loss_checked
-- emotional_temperature_observed
-- information_load_adjusted
-- pacing_adjusted
-- pause_space_opened
-- partial_adoption_allowed
-- dissent_and_exit_open
-- reengagement_observed
+- high_order_structure_presented
+- current_equilibrium_impact_observed
+- threat_reversal_contraction_observed
+- correspondence_visualized
+- repayment_rhythm_declared
+- observation_window_declared
+- unit_of_change_split
+- support_and_revision_route_declared
+- acceptance_space_formed
+- audit_bundle_checked
 - origin_return_verified
 ```
 
 ## Applications
-1. Start organizational reform with reversible experiments.
-2. Teach from the learner's prior model before replacing it.
-3. Let AI advice present options, uncertainty, and pause rather than one forced optimum.
-4. Observe role and affiliation loss in social-policy change.
+1. Visualize correspondence with Before/After causal lines, an allocation-responsibility map, and a repayment schedule.
+2. Front-load short/mid/long evaluation, rollback procedures, and renegotiation at threshold exceedance.
+3. Split major rearrangements into a minimum Unit of Change and test locally before expansion.
+4. Provide an inquiry → verification → revision route.
+5. Use the parent-defined sequence: pain-point correspondence → causal rearrangement → rhythm contract → allocation responsibility → reversibility.
 
 ## Measurements and audit
-- rejection rate
-- retained understanding
-- pause selection
-- partial-adoption success
-- exit rate
-- dissent intake
-- re-engagement
-- self-reported emotional temperature
-- reversible experiments
+- where questions concentrate: causality, allocation, or time
+- whether alternatives can be generated
+- tolerance for small reversible experiments
+- whether evaluative language takes a person or a structure as subject
+- whether time language is instantaneous or periodic
+- presence of responsibility terms such as explanation, allocation, and redo
+- audit cycle
+- T/S/R
+- consistency of the public audit bundle
+- threshold θ
+- observation window δ
+- phenomenon M
 
 ## Validity conditions
-- Separate logical consistency from integrability.
-- Do not equate rejection with ignorance.
-- Adjust pacing, temperature, and margin.
-- Allow partial adoption and pause.
-- Respect continuity of self.
-- Preserve counterevidence and exit.
+- Observe how a highly coherent structure affects current equilibrium, roles, and relationship gains.
+- Do not reduce rejection to information deficit alone.
+- Visualize correspondence immediately.
+- Declare rhythm and the verification window before implementation.
+- Split large role redistribution into a minimum Unit of Change.
+- Make allocation responsibility and reversibility explicit.
 
 ## Failure conditions
-- Demand acceptance because the model is correct.
-- Pathologize rejectors.
-- Change the full structure at once.
-- Ignore affiliation loss.
-- Punish pause.
-- Demand consent before understanding.
+- Rely only on stronger persuasion or willpower.
+- Ignore conditions under which improvement is perceived as threat.
+- Miss reversal from structural argument to motive/personality.
+- Fail to treat contraction to established practice as a design signal.
+- Omit repayment rhythm, observation window, rollback, or renegotiation.
+- Provide no route for anxiety or objection to move into verification and revision.
 
 ## Falsification conditions
-- Calibration does not improve understanding or acceptance.
-- Strong one-shot implementation consistently performs better.
-- Information deficit alone explains rejection.
-- Self-continuity protections mainly preserve false beliefs.
-- Threshold judgments cannot be reproduced across observers.
+Follow the parent integrated audit. If indicator values cross the relevant threshold θ, or if the observation window δ closes and phenomenon M is observed, hypothesis A is rejected or revised. Do not invent a separate derivative-only falsification set.
 
 ## Required distinctions
-- logical consistency / integrability
-- rejection / ignorance
-- understanding / consent
-- pause / opposition
-- pacing / delay
-- temperature / emotional appeasement
-- margin / ambiguity
-- non-coercion / neglect
+- high coherence / automatic acceptance
+- information deficit / structural defense
+- improvement / threat conversion
+- structural issue / reversal to personality
+- new role distribution / contraction to established practice
+- persuasion / design
+- correspondence visualization / self-justification
+- rhythm / mere delay
+- reversibility / arbitrary withdrawal
+- observation / person-rating
 
 ## Interpretation constraints
-- Do not pathologize rejection.
-- Do not rank emotion below logic.
-- Do not distort facts for comfort.
-- Do not make pause indefinite.
-- Do not use non-coercion to evade explanation.
-- Do not use as individual diagnosis.
+- Do not turn Structural Sensitivity into a diagnosis or ranking of individuals.
+- Do not reduce the parent to generic emotional accommodation.
+- Do not elevate derivative-authored “temperature,” “self-continuity,” or “exit” into parent core concepts.
+- Do not replace the three source-defined principles with generic communication advice.
+- Do not replace T/S/R, θ, δ, and M with derivative-invented KPIs.
+- Do not add AI psychological diagnosis as an official parent use case.
 
 ## Search terms
 - structural sensitivity threshold
-- emotional rejection
-- logical consistency
-- self narrative
-- affiliation threat
-- cognitive dissonance
-- pacing
-- emotional temperature
-- margin
-- partial adoption
-- self continuity
-- reversible change
-- dissent
-- non coercion
-- source return
+- threat conversion
+- reversal
+- contraction
+- correspondence visualization
+- temporal ethics
+- repayment rhythm
+- Unit of Change
+- acceptance space
+- allocation responsibility
+- reversibility
+- T/S/R
+- threshold theta
+- observation window delta
+- phenomenon M
 
 ## Origin return
-Return to the parent original for the theoretical meaning of threshold, pacing, temperature, and margin. This index is a change-design surface, not a psychological diagnosis.
+Return to the parent for definitions, the three principles, presentation order, observation principles, and the integrated audit. This index is a retrieval surface and must not promote derivative inference into an official parent claim.
 
 ---
 
