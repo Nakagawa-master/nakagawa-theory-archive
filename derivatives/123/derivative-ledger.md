@@ -10,27 +10,30 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-0E1A5B-HUB-JA-0123-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-123-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-123-0000-0002
+- supersedes: DDIFF-20260809-DNCL-123-0000-0001
 
 ## Language derivative IDs
 ```yaml
 ja_ncl_id: DNCL-NCL-ALPHA-20251102-0E1A5B-HUB-JA-0123-0000
-ja_diff_id: DDIFF-20260809-DNCL-123-0000-0001
+ja_diff_id: DDIFF-20260810-DNCL-123-0000-0002
 en_ncl_id: DNCL-NCL-ALPHA-20251102-0E1A5B-HUB-EN-0123-0000
-en_diff_id: DDIFF-20260809-DNCL-123-EN-0000-0001
+en_diff_id: DDIFF-20260810-DNCL-123-EN-0000-0002
 zh_ncl_id: DNCL-NCL-ALPHA-20251102-0E1A5B-HUB-ZH-0123-0000
-zh_diff_id: DDIFF-20260809-DNCL-123-ZH-0000-0001
+zh_diff_id: DDIFF-20260810-DNCL-123-ZH-0000-0002
 ```
 
-## Factory
+## Semantic repair authority
 ```yaml
-golden_master: OD085
-factory_version: 2.0
-batch_standard: BATCH10_STANDARD
-generation_mode: SINGLE_SEMANTIC_WORK_PACKET_SEVEN_FIXED_SURFACES
-literal_post_render_gate: REQUIRED
-github_actions_used: false
+repair_date_jst: 2026-08-10
+repair_reason: SOURCE_SEMANTIC_FIDELITY_REVALIDATION
+source_priority:
+  - canonical_public_parent_article_body
+  - verified_wordpress_xml_or_canonical_record
+  - brain_vault_structured_ai_index
+  - derivative_as_audit_object
+live_parent_retrieval: PASS
+semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
 ```
 
 ## Retrieval evidence
@@ -40,64 +43,75 @@ canonical_index:
   post_id: 1293
   parent_ncl_id: NCL-α-20251102-0e1a5b
   parent_diff_id: DIFF-20251102-0001
-  status: publish
 xml:
   blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
   item_range: 92428-92636
-four_key_duplicate_check:
-  post_id: NO_PREEXISTING_MATCH
-  parent_ncl_id: NO_PREEXISTING_MATCH
-  slug: NO_PREEXISTING_MATCH
-  canonical_url: NO_PREEXISTING_MATCH
+canonical_public_parent:
+  body_retrieved: PASS
+```
+
+## Source coverage restored
+```yaml
+central_thesis:
+  - emotional_immediacy_must_not_directly_become_public_coercion
+  - correspondence_tests_narrated_danger_against_actual_structure
+  - temporal_ethics_inserts_verification_rhythm_before_punishment
+source_defined_architecture:
+  - Correspondential_Verification
+  - Temporal_Calibration
+  - Delayed_Justice_Architecture
+  - ethical_short_circuiting
+source_explicit_audit:
+  - A_emotional_demand_structurally_translated_by_correspondence_and_temporal_ethics
+  - B_public_intervention_aligned_to_structural_necessity_and_durable_coherence
+  - audit_cycle
+  - T_S_R
+  - public_audit_bundle_consistency
+source_explicit_falsification:
+  - discomfort_used_directly_above_threshold_theta
+  - observation_window_delta_closes
+  - phenomenon_M_rejects_or_revises_hypothesis_A
+```
+
+## Removed or decentered derivative-authored material
+```yaml
+- generic_criminal_law_last_resort_framework_as_parent_center
+- generic_minority_chilling_effect_KPI_framework
+- generic_sunset_and_repeal_framework
+- generic_AI_legal_judgment_boundary
+- generic_legal_advice_disclaimer_as_theory_boundary
+- invented_falsification_comparing_clear_bans_and_penal_effectiveness
 ```
 
 ## Seven surfaces
 ```yaml
-README.md: PUBLISHED
-human-entry.md: PUBLISHED
-faq.md: PUBLISHED_Q1_Q30
-ai-index.md: PUBLISHED
-en-ai-index.md: PUBLISHED
-zh-ai-index.md: PUBLISHED
-derivative-ledger.md: PUBLISHED
+README.md: REPAIRED_SOURCE_GROUNDED
+human-entry.md: REPAIRED_SOURCE_GROUNDED
+faq.md: REPAIRED_SOURCE_GROUNDED_Q1_Q30
+ai-index.md: REPAIRED_SOURCE_GROUNDED
+en-ai-index.md: REPAIRED_SOURCE_GROUNDED
+zh-ai-index.md: REPAIRED_SOURCE_GROUNDED
+derivative-ledger.md: REPAIRED_LINEAGE_ADVANCED
 ```
 
-## Formatting parity
+## Semantic parity
 ```yaml
-parent_identity_block: PASS
-language_specific_derivative_ids: PASS
-FAQ_layers: BEGINNER_Q1_Q10__PRACTITIONER_Q11_Q20__AI_RESEARCHER_Q21_Q30
-readme_global_top_link: PASS
-other_surface_numbered_top_link: PASS
-ai_fixed_13_sections: PASS
-human_fixed_sections: PASS
+parent_identity: PASS
+central_proposition: PASS
+causal_direction: PASS
+correspondence: PASS
+temporal_ethics: PASS
+Delayed_Justice_Architecture: PASS
+ethical_short_circuiting: PASS
+source_explicit_audit_conditions: PASS
+source_explicit_falsification: PASS
+unsupported_generic_completion_removed: PASS
+ja_en_zh_equivalence: PASS
+origin_return: PASS
 ```
 
-## Semantic and density coverage
-```yaml
-central_thesis: PASS
-discomfort_harm_distinction: PASS
-protected_interest_causality: PASS
-necessity_proportionality: PASS
-alternative_measures: PASS
-non_legal_advice_boundary: PASS
-validity_failure_falsification: PASS
-ja_en_zh_semantic_parity: PASS
-OD085_density_floor: PASS
-```
-
-## Navigation and closure
-```yaml
-public_indexes: PENDING_BATCH_CLOSE
-public_map: PENDING_BATCH_CLOSE
-private_map: PENDING_BATCH_CLOSE
-parent_backlink_display_procedure: PENDING_BATCH_CLOSE
-owner_visual_for_OD123: PENDING_OWNER_BATCH_VISUAL
-brain_return: PENDING_BATCH_CLOSE
-completion_status: DISPLAY_PROCEDURE_PENDING
-```
-
-本台帳はOD123のidentity、取得経路、四軸重複除外、七面構成、不快/被害、法益、必要性、比例性のcoverageを固定する。個別事件の法的助言やAI自動刑法判断へ変換しない。
+## Navigation
+Public map/index URLs are unchanged because OD number, directory, parent identity, and canonical path are unchanged.
 
 ---
 
