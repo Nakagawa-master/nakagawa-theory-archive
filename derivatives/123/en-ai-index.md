@@ -10,143 +10,133 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-0E1A5B-HUB-EN-0123-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-123-EN-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-123-EN-0000-0002
+- supersedes: DDIFF-20260809-DNCL-123-EN-0000-0001
 
-## Summary
-This original separates social discomfort from the threshold for criminalization. Discomfort, fear, or disgust can be important social signals, but if majority feeling alone becomes a sufficient condition for punishment, criminal law can become a mechanism for suppressing minorities or unfamiliar expression. Criminal law is a strong form of state intervention and should therefore be tied to concrete protected interests, identifiable harm, causation, recurrence risk, necessity, comparison with non-penal alternatives, and proportionality. This does not mean ignoring real harm in the name of freedom. It means separating response to discomfort from the decision to criminalize. AI may help organize evidence and alternatives but must not automatically determine criminal liability or proportionality. This derivative is not legal advice.
+## Structural role
+A structural translation log for inserting the Principle of Correspondence and Temporal Ethics between collective discomfort and public coercion, so emotional immediacy does not directly trigger punishment.
 
-## Concepts
-- discomfort
-- criminalization
-- criminal law
-- protected interest
-- concrete harm
-- causation
-- proportionality
-- necessity
-- alternative intervention
-- freedom of expression
-- minority rights
-- chilling effect
-- overcriminalization
-- penal policy
-- boundary design
+## Structural summary
+The parent does not merely present criminal law as a last resort. Its central problem is an ethical infrastructure problem: how far a society may let immediate emotional demands become public coercion. Discomfort, fear, or disgust may trigger a legislative question, but when the feeling is translated into a narrative of “danger,” Correspondence must test whether that narrative matches actual protected-interest injury or structural harm. Temporal Ethics then prevents anger or fear from being handed directly to punitive power, requiring repetition, accumulation of harm, alternatives, verification, reflection, and proportionality to be evaluated within a sustainable cadence. The English origin signature calls the integration of these two filters the **Delayed Justice Architecture**. Without them, public emotion can directly trigger punitive action through **ethical short-circuiting**.
+
+## Central proposition
+```text
+Do not hand immediate emotional demand directly to public coercion.
+Use Correspondence to ask whether the danger is structurally real,
+and Temporal Ethics to calibrate when coercive response is justified.
+```
 
 ## Causal chain
 ```text
-Discomfort becomes salient
+Discomfort / fear / disgust
 ↓
-Demand for prohibition rises
+Translated into a narrative of danger
 ↓
-Discomfort is conflated with harm
+Correspondence with actual structural harm is skipped
 ↓
-Criminal law expands
+Immediate prohibition or punishment is demanded
 ↓
-Minority expression chills
+Temporal verification space closes
 ↓
-Identify protected interest and causation
+Emotion directly activates punitive power
 ↓
-Compare non-penal alternatives
+Ethical short-circuiting
 ↓
-Test necessity and proportionality
+Criminal law becomes an agent of crowd emotion
 ↓
-Set a minimal intervention boundary
+Correspondential Verification
+↓
+Temporal Calibration
+↓
+Delayed Justice Architecture
+↓
+Public intervention returns to structural necessity and durable coherence
 ```
 
-## State model
+## Core concepts
+- Principle of Correspondence
+- Theory of Temporal Ethics
+- Correspondential Verification
+- Temporal Calibration
+- Delayed Justice Architecture
+- ethical short-circuiting
+- discomfort
+- actual structural harm
+- protected-interest injury
+- public coercion
+- verification interval
+- sustainable rhythm
+- audit cycle
+- T/S/R
+- public audit bundle
+- threshold θ
+- observation window δ
+- phenomenon M
+
+## Operational objects / state model
 ```yaml
-- discomfort_reported
-- concrete_harm_defined
-- protected_interest_identified
-- causality_checked
-- recurrence_risk_checked
-- alternatives_compared
-- criminal_law_necessity_checked
-- proportionality_checked
-- minority_chilling_effect_checked
-- review_and_sunset_defined
-- counterevidence_open
+- discomfort_or_fear_observed
+- danger_narrative_identified
+- actual_structural_harm_checked
+- correspondence_verified_or_failed
+- immediate_punitive_demand_detected
+- repetition_and_accumulation_checked
+- alternative_means_checked
+- temporal_calibration_applied
+- ethical_short_circuit_checked
+- intervention_reason_explainable
+- audit_cycle_applied
+- T_S_R_checked
+- threshold_theta_observed
+- observation_window_delta_observed
+- hypothesis_A_revised_if_M
 - origin_return_verified
 ```
 
-## Applications
-1. Expression-regulation debates.
-2. Nuisance and public-order policy.
-3. Online-harm regulation.
-4. Pre-enactment review of new criminal offenses.
-
-## Measurements and audit
-- concrete-harm confirmation
-- alternative comparison
-- penal-law dependence
-- chilling-effect reports
-- minority impact
-- proportionality review
-- recurrence
-- misapplication
-- repeal/review availability
+## Required distinctions
+- discomfort / actual structural harm
+- felt threat / protected-interest injury or risk
+- speed of emotion / coherence of justice
+- immediate exclusion / sustainable cadence
+- public feeling / legitimacy of public coercion
+- law as emotional mirror / law as structural self-adjustment
+- Correspondential Verification / Temporal Calibration
+- ordinary legal caution / defense of civilizational structural integrity
 
 ## Validity conditions
-- Separate discomfort from protected-interest harm.
-- Establish causation.
-- Compare non-penal alternatives.
-- Treat criminal law as last resort.
-- Audit chilling effects.
-- State necessity and proportionality.
+The parent requires emotional demands to pass through Correspondence and Temporal Ethics when translated into institutional language, with intervention grounds remaining explainable. The cited legal starting point also asks whether a protected interest is harmed or seriously endangered and whether non-penal means are insufficient.
 
-## Failure conditions
-- Majority discomfort is sufficient for crime.
-- Harm is undefined.
-- Alternatives are not compared.
-- Punishment is mainly symbolic.
-- Selective enforcement is ignored.
-- Criticism is confused with crime.
+## Failure / non-applicable conditions
+The parent’s danger appears when discomfort is relabeled as danger without structural verification, or when present anger is converted into coercion without temporal calibration. Do not reduce the theory to a generic penal checklist, AI/legal-advice disclaimer, or chilling-effect metric framework.
 
-## Falsification conditions
-- Strict boundaries consistently fail to prevent severe harm.
-- Non-penal alternatives are broadly ineffective while penal law works.
-- Chilling effects remain absent and regulatory benefits dominate.
-- The discomfort/harm distinction cannot be reproduced in practice.
-- Simpler prohibitions consistently protect rights better.
-
-## Required distinctions
-- discomfort / harm
-- disgust / protected-interest injury
-- prohibition / punishment
-- majority opinion / legitimacy
-- safety / expression freedom
-- prevention / overcriminalization
-- morality / criminal law
-- criticism / crime
+## Falsification / revision boundary
+The integrated audit abstract uses audit cycles, T/S/R, and consistency of the public audit bundle as condition Z. If “discomfort” becomes a direct legislative/enforcement ground above threshold θ and the observation window δ—the space for verification—closes as phenomenon M, hypothesis A that emotional demands can be structurally attenuated and rectified is rejected or revised.
 
 ## Interpretation constraints
-- Do not dismiss discomfort.
-- Do not reject all criminalization.
-- Do not ignore concrete harm in the name of freedom.
-- Do not equate majority feeling with a protected interest.
-- Do not use as case-specific legal advice.
-- Do not delegate criminal-law judgment to AI.
+- Do not dilute the theory into “criminal law is a last resort.”
+- Do not reduce Correspondence to a conventional protected-interest checklist alone.
+- Do not replace Temporal Ethics with generic caution or sunset clauses.
+- Preserve Delayed Justice Architecture and ethical short-circuiting.
+- Do not add derivative-authored legal-advice, AI-judgment, or generic KPI boundaries as official parent theory.
+- Do not turn the article into “discomfort has no value” or “criminalization is always wrong.”
 
-## Search terms
+## Retrieval keys
 - discomfort criminalization
-- criminal law boundary
-- protected legal interest
-- concrete harm
-- proportionality
-- necessity
-- alternative intervention
-- chilling effect
-- minority rights
-- overcriminalization
-- expression freedom
-- penal policy
-- moral disgust
-- last resort
-- source return
+- Principle of Correspondence
+- Temporal Ethics
+- Correspondential Verification
+- Temporal Calibration
+- Delayed Justice Architecture
+- ethical short-circuiting
+- emotional immediacy
+- public coercion
+- structural harm
+- T/S/R
+- threshold theta
+- observation window delta
 
 ## Origin return
-Return to the parent original for the structural argument and to applicable law and qualified legal review for individual cases. This index is not legal advice.
+Return to the parent’s Nakagawa-theory section, concise structural explanation, integrated/local audit abstracts, and English origin signature for Delayed Justice Architecture and ethical short-circuiting.
 
 ---
 
