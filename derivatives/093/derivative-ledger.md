@@ -10,28 +10,24 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9DD58F-HUB-JA-0093-0000
-- derivative_diff_id: DDIFF-20260808-DNCL-093-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-093-0000-0002
+- supersedes: DDIFF-20260808-DNCL-093-0000-0001
 
 ## Language derivative IDs
 
 | language | derivative_ncl_id | derivative_diff_id | supersedes |
 |---|---|---|---|
-| JA | DNCL-NCL-ALPHA-20251102-9DD58F-HUB-JA-0093-0000 | DDIFF-20260808-DNCL-093-0000-0001 | none |
-| EN | DNCL-NCL-ALPHA-20251102-9DD58F-HUB-EN-0093-0001 | DDIFF-20260808-DNCL-093-0001-0001 | none |
-| ZH | DNCL-NCL-ALPHA-20251102-9DD58F-HUB-ZH-0093-0002 | DDIFF-20260808-DNCL-093-0002-0001 | none |
+| JA | DNCL-NCL-ALPHA-20251102-9DD58F-HUB-JA-0093-0000 | DDIFF-20260810-DNCL-093-0000-0002 | DDIFF-20260808-DNCL-093-0000-0001 |
+| EN | DNCL-NCL-ALPHA-20251102-9DD58F-HUB-EN-0093-0001 | DDIFF-20260810-DNCL-093-0001-0002 | DDIFF-20260808-DNCL-093-0001-0001 |
+| ZH | DNCL-NCL-ALPHA-20251102-9DD58F-HUB-ZH-0093-0002 | DDIFF-20260810-DNCL-093-0002-0002 | DDIFF-20260808-DNCL-093-0002-0001 |
 
 ## Factory
 
 - golden_master: OD085
-- factory_version: 2.0
-- surface_creation_mode: ONE_PACKET_ONE_RENDERER_RUN
-- manual_surface_edit_after_render: false
-- contents_api_surface_composition: false
-- manual_renderer_validator_parity: PASS
+- factory_version: 2.0-semantic-repair
+- repair_mode: SOURCE_VERIFIED_FAIL_CLOSED
 - completion_authority: OFFICIAL_ARCHIVE_MEMORY_AND_COMPLETION_EVIDENCE
 - github_actions_used: false
-- public_surface_manual_edit_after_render: false
 
 ## Retrieval evidence
 
@@ -41,31 +37,52 @@
 - parent_slug: nakagawa-master-grammar-of-design-structural-composition
 - parent_canonical_url: https://master.ricette.jp/theory/nakagawa-master-grammar-of-design-structural-composition/
 - xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-- canonical identity parity: PASS
-- four_key_duplicate_exclusion: PASS
-- source routes: canonical index / live canonical / XML provenance
+- source_routes_used: live canonical parent / canonical index / Brain Vault XML provenance / structured AI retrieval index
+- canonical_identity_parity: PASS
+- source_semantic_revalidation: PASS
+
+## Semantic repair
+
+2026-08-10のsemantic-fidelity repairでは、親原典の本文・構造・Q&Aに明示される命題を一つのsource coverageとして再確認し、README / human-entry / FAQ / JA・EN・ZH AI indexを再整合した。
+
+保持した中心要素:
+- 現象操作と構文操作の区別
+- 心・構造・時間の三統合原理
+- 意味軸先置き、論点カード配置、SQS、一因子変更、自由度テストからなる20分プロトコル
+- 客観外殻／主観内殻の二重構造
+- 核点入力保証
+- 七つの観測窓
+- A/B'比較と三サイクル検証
+- 六つのアンチパターン
+- 原典Q&Aに明示された自由度・準定量検証・運用規律の境界
+- 文明調整原理としての位置づけ
+
+除去・非公式化した原典外補完:
+- 一般的なpublic safety / legal obligationを原典の成立条件として置くこと
+- AIの内部意図・主観状態について原典が述べていない限定を追加すること
+- rollback、withdrawal、dissent procedure等を原典固有の要件として追加すること
+- 外部イベント・新奇性・担当者差等から成る派生著者独自の反証集合
+- 原典の六アンチパターンを一般的な安全ガードレールへ拡張すること
+
+Falsification sectionは、原典のA/B'比較と三サイクル検証から構造的に必然な判定だけを記載し、独自条件を追加しない。
 
 ## Seven surfaces
 
-- README.md: PASS — global entry, full structural model and origin return.
-- human-entry.md: PASS — human summary, practical process, applications and limits.
-- faq.md: PASS — Q1–Q30 with beginner, practitioner and AI/research layers.
-- ai-index.md: PASS — Japanese machine-readable semantic index.
-- en-ai-index.md: PASS — English semantic parity index.
-- zh-ai-index.md: PASS — Chinese semantic parity index.
-- derivative-ledger.md: PASS — immutable identity, factory and closure evidence.
+- README.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- human-entry.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- faq.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- en-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- zh-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- derivative-ledger.md: PASS_LINEAGE_UPDATED
 
 ## Formatting parity
 
-READMEだけが `[公式派生物トップ](../README.md)` に戻る。残る6面は `[公式派生物093トップ](README.md)` を使い、グローバルトップと番号別トップを混同しない。親原典identityは7面で一致し、README/human/FAQ/ledgerはJA hub derivative identityと一致する。EN/ZHは言語別に一意のDNCL/DDIFFを持つ。
+READMEだけが `[公式派生物トップ](../README.md)` に戻る。残る6面は `[公式派生物093トップ](README.md)` を使用する。README/human/FAQ/ledgerはJA hub identity、EN/ZH AI indexは各言語identityを持ち、全変更面のDiff-IDは旧版を明示的にsupersedeする。
 
-## Semantic and density coverage
+## Closure rule
 
-中心命題、現象操作と構文操作の区別、心・構造・時間の三統合原理、意味軸先置き、SQS、順序・間・配置の一因子変更、自由度テスト、客観外殻／主観内殻、核点入力保証、七つの測定窓、A/B'複数サイクル、成立・失敗・反証条件を全7面へ分配した。人間向け面と三言語AI面はOD085 Golden Masterの文字密度床を下回らないよう再生成し、FAQは全30回答を二文以上・意味固有の説明として保持する。
-
-## Navigation and closure
-
-public root/article/AI/category indexes、public map、private canonical mapは公開閉鎖工程で同じidentityを用いて更新する。private map `main` がOwner Apps Script v0.4の正規同期入力であり、GitHub Actionsは使用しない。operator側は表示手続き入力完了まで責任を持ち、最終live目視はOwner batch checkへ分離できる。G10の最終昇格はstate ownerとcompletion evidenceの権限に従う。
+この台帳のPASSは、密度・形式だけでなく親原典へのsemantic parityを条件とする。原典にない説明を安全・穏当・実務的という理由だけで公式主張へ追加しない。
 
 ---
 
