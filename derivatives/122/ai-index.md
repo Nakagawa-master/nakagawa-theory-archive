@@ -10,143 +10,133 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-1BF225-HUB-JA-0122-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-122-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-122-0000-0002
+- supersedes: DDIFF-20260809-DNCL-122-0000-0001
 
-## Summary
-情動収奪構造は、共鳴・反応・親密さが価値化される際、本人の自発性を超えて感情表現やケアが実質義務となり、便益が中心主体へ集中する危険を扱う。照応線は価値の起点へ戻る来歴であり、所有権の自動確定ではない。安全条件は継続的同意、非反応の権利、退出、評価停止、便益還流、必要最小限の起源追跡である。高エンゲージメントだけを成功とせず、情動労働時間、自己検閲、依存、報酬集中を監査する。AIは収奪候補を検出できても感情・同意を自動確定せず、個人診断に使わない。
+## Structural role
+灯火構造倫理の「逆側の地図」。照応・時間倫理・可逆性・配分責任の欠落によって、共鳴経済が情動収奪へ転化する条件、類型、崩壊過程、防火壁を定義する。
 
-## Concepts
-- 情動収奪
-- 共鳴経済
-- 照応線
-- 感情労働
-- 共感
-- ケア
-- 同意
-- 退出権
-- 非反応の権利
-- 便益還流
-- 起源保持
-- プラットフォーム
-- 評価圧力
-- 親密性
-- 非収奪
+## Structural summary
+情動収奪構造は、感情の高揚・共鳴の宣言が価値・権利・優先順位・配分の根拠となり、4線のいずれかが欠けることで、感情表明そのものが配分と序列の通貨になる構造である。照応欠落は感情的正義論、時間倫理欠落は燃え尽き市場、可逆性欠落は教祖化、配分責任欠落はアクセス独占を生む。4線のうち3つ以上が欠ける状態を原典は完全な情動収奪構造（EES）と分類する。短期的な高熱は長期支援者の未返済、疲労・負債の不可視化、修正権の欠落、アクセス閉鎖を通じて構造の熱死へ進む。防火壁は灯火構造倫理の4線を同時に回復することである。
+
+## Central proposition
+```text
+共鳴の熱そのものを価値配分の根拠にし、
+照応・時間倫理・可逆性・配分責任を失うと、
+感情は循環ではなく支配・依存・収奪の燃料になる。
+```
 
 ## Causal chain
 ```text
-共鳴計測
+共鳴・感情が価値根拠になる
 ↓
-報酬接続
+4線の欠落
 ↓
-反応義務
+実際の貢献・返済線・修正権・配分理由が消える
 ↓
-起源蒸発
+感情表明が正当性と序列の通貨になる
 ↓
-情動収奪
+感情的正義論 / 燃え尽き市場 / 教祖化 / アクセス独占
 ↓
-照応線・同意
+支配・依存・囲い込み・疲弊
 ↓
-非反応・退出
+義務感と負債意識へ転化
 ↓
-便益還流
+構造の熱死
 ↓
-自発的共鳴
+灯火構造倫理の4線で回復
 ```
 
-## State model
+## Core concepts
+- 情動収奪構造（Emotional Extraction Structure）
+- 照応（Correspondence）
+- 時間倫理（Temporal Responsibility）
+- 可逆性（Reversibility）
+- 配分責任（Allocation Accountability）
+- 感情的正義論
+- 燃え尽き市場
+- 教祖化
+- アクセス独占
+- 完全な情動収奪構造（EES）
+- 信仰転写モデル
+- 共鳴通貨モデル
+- AI信仰モデル
+- 構造の熱死
+- 灯火構造倫理
+
+## Operational objects / state model
 ```yaml
-- resonance_metric_defined
-- origin_line_recorded
-- consent_checked
-- emotional_labor_observed
-- reward_link_checked
-- benefit_capture_mapped
-- nonresponse_right_open
-- exit_right_open
-- evaluation_stop_available
-- benefit_return_checked
-- extraction_reaudited
+- resonance_or_emotion_used_as_value_basis
+- correspondence_line_checked
+- temporal_repayment_line_checked
+- reversibility_checked
+- allocation_accountability_checked
+- missing_lines_counted
+- emotional_justice_detected
+- burnout_market_detected
+- sanctification_detected
+- access_monopoly_detected
+- EES_classified_if_three_or_more_lines_missing
+- support_debt_and_fatigue_observed
+- structural_heat_death_risk_observed
+- four_lines_restored
+- audit_cycle_and_reagreement_applied
 - origin_return_verified
 ```
 
-## Applications
-**1.** SNS反応報酬の監査。
-**2.** コミュニティ返信圧力の監査。
-**3.** ケアの感情労働評価。
-**4.** ファン経済の親密さ境界。
-
-## Measurements and audit
-- 情動労働時間
-- 反応義務感
-- 退出率
-- 非反応選択率
-- 便益還流率
-- 報酬集中度
-- 起源追跡率
-- 依存兆候
-- 自己検閲率
-
-## Validity conditions
-- 感情提供を任意にする。
-- 照応線を保持する。
-- 便益還流を可視化する。
-- 非反応と退出を不利益化しない。
-- 親密さを権利化しない。
-- 収奪を監査する。
-
-## Failure conditions
-- 非反応者を低価値にする。
-- 共感を無料資源にする。
-- 便益を還流しない。
-- 退出者を罰する。
-- 親密さを購入権にする。
-- 感情演出を奨励する。
-
-## Falsification conditions
-- 情動負荷が下がらない。
-- 便益還流が共鳴を改善しない。
-- 非反応権が共同体を一貫して破壊する。
-- 評価削減でも依存が改善しない。
-- 単純契約の方が収奪防止で優れる。
+## Source-defined patterns
+1. **信仰転写モデル**: 感情の強さを真実の証へ変える。
+2. **共鳴通貨モデル**: 感謝・救済・必要感を擬似通貨化する。
+3. **アクセス独占モデル**: 出入り口を握り、選別線そのものを価値化する。
+4. **AI信仰モデル**: AI出力を権威化し、可逆性・責任主体・照応を溶かす。
 
 ## Required distinctions
-- 共鳴 / 情動労働
-- 親密さ / 権利
-- 同意 / 期待
-- 反応 / 貢献
-- 照応線 / 所有
-- 便益還流 / 慈善
-- 退出 / 裏切り
-- 評価 / 人格
+- 感情 / 感情を配分根拠へ変える構造
+- 共鳴 / 情動収奪
+- 語られる価値 / 実際の貢献・負荷・支援
+- 瞬間的注目 / 長期支援
+- 信頼 / 聖域化
+- 選択 / 密室配分
+- 高熱 / 持続可能性
+- 灯火構造倫理 / 4線を欠いた運用
+
+## Validity conditions
+原典が示す灯火運用圏では、照応・時間倫理・可逆性・配分責任の4線を同時に要求する。4線は単なる道徳ではなく、使用許諾・安全装置・回復線として機能する。設計側と運用側の双方を監査する。
+
+## Failure / non-applicable conditions
+4線の欠落により、感情の強度が価値配分を占有し、実際の負荷・長期支援・修正可能性・配分理由が失われる場合は、原典が定義する灯火の運用圏外へ出る。特定団体・人物の告発へ縮約しない。
+
+## Falsification / revision boundary
+原典の統合監査要旨に従い、監査周期・T/S/R・公開監査束の整合で継続見直しを行う。指標値が閾値θを外れる、または観測窓δが閉じる等の現象Mが生じた場合、仮説Aを棄却・改訂対象とする。派生側で独自の一般反証条件を追加しない。
 
 ## Interpretation constraints
-- 反応義務にしない。
-- ケアを無料資源にしない。
-- 親密さを購入権にしない。
-- 沈黙を低評価にしない。
-- 照応線を所有権にしない。
-- 個人診断にしない。
+- 情動収奪構造を「返信義務」「退出権」「個人診断」だけの理論へ置換しない。
+- 感情そのものを悪とする理論へ変えない。
+- 4線欠落診断と配分構造を落とさない。
+- EES、4類型、構造の熱死を一般的プラットフォーム倫理へ薄めない。
+- AI信仰モデルを「AI利用一般の禁止」に変えない。
+- 特定の団体・人物への告発として読まない。
 
-## Search terms
-- emotional extraction
-- resonance economy
-- correspondence line
-- emotional labor
-- consent
-- exit right
-- right not to respond
-- benefit return
-- provenance
-- platform extraction
-- intimacy economy
-- engagement pressure
-- self censorship
-- non extraction
-- source return
+## Retrieval keys
+- 情動収奪構造
+- emotional extraction structure
+- 照応
+- 時間倫理
+- 可逆性
+- 配分責任
+- EES
+- 感情的正義論
+- 燃え尽き市場
+- 教祖化
+- アクセス独占
+- 信仰転写モデル
+- 共鳴通貨モデル
+- AI信仰モデル
+- 構造の熱死
+- 灯火構造倫理
 
 ## Origin return
-情動収奪と照応線の定義は親原典へ戻る。本索引は個人心理の診断を行わない。
+4線欠落マトリクス、EES判定、典型4モデル、構造の熱死、灯火運用圏との線引き、統合監査要旨は親原典本文へ戻って確認する。
 
 ---
 
