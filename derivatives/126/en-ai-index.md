@@ -10,135 +10,133 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-8F5C44-HUB-EN-0126-0001
-- derivative_diff_id: DDIFF-20260809-DNCL-126-0001-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-126-0001-0002
+- supersedes: DDIFF-20260809-DNCL-126-0001-0001
 
 ## Summary
-This derivative reads the AI bull market as a reflexive system rather than a binary question of whether AI is “real” or “a bubble.” A narrative about future AI value can attract capital, raise valuations, and encourage further investment. Rising prices can then be reused as evidence that the narrative was correct, producing a feedback loop in which expectations, financing, media attention, and price reinforce one another. The loop is not automatically irrational: genuine improvements in productivity, revenue, customer retention, quality, and cost can validate higher expectations. The audit problem begins when financial valuation and narrative intensity accelerate materially faster than those underlying results.
+This index treats the AI bull market not primarily as a question of whether prices are high or low, but as a structural question: how quickly a narrative can overwrite institutions and implementation reality. The parent original defines correspondence as the relation between narrated value—future AI earnings—and the actual structure that must support it: invested capital, supply chains, people, regulation, demand formation, equipment, standardization, and safety evaluation. When the narrative appears coherent before those slower layers have caught up, returns that should be repaid through future structural alignment are prepaid into present valuation. The parent describes this as accelerated structural rhythm and a loss of temporal ethics.
 
-The reference to 1929 is therefore not a deterministic prediction of another identical crash. It is an analytical comparison window for examining narrative amplification, leverage, liquidity, credit contraction, and the speed with which a shared story can reverse. A valid comparison must preserve differences as well as similarities, including changes in financial regulation, monetary-policy capacity, information speed, industry economics, and the actual maturity of AI adoption. Similarities without differences become prophecy; differences without similarities can become an excuse to ignore structural warning signals.
+The 1929 comparison is not an assertion that history will repeat in identical form. The parent states that history does not repeat, while structures can recur. The fuse in 1929 was credit and delay; the contemporary fuse is speed and synchronization. As speed rises, misalignment can propagate across the market faster, so the task is to audit causal wiring rather than merely judge prices.
 
-The framework separates technology value, market price, realized performance, credit conditions, liquidity, and narrative strength. Bullish and bearish stories are held to the same falsification standard. New earnings data, adoption data, financing conditions, and market stress should update the model rather than being forced into a predetermined conclusion. This index supports search, machine reading, and structural audit; it does not provide individualized investment advice or a timing forecast for a market decline.
+The parent gives three design tasks: decompose expected AI earnings into structural components such as data supply, inference cost, and regulatory clearance; extend the repayment horizon of expectations so valuation is distributed in accordance with temporal ethics; and continuously expose correspondence gaps and excessive speed through public audit bundles and management measures. The enemy of the market, in the parent’s formulation, is not pessimism but unchecked acceleration.
 
 ## Concepts
 - AI bull market
-- narrative economics
-- expectation formation
-- reflexive feedback
-- valuation multiple
-- fundamentals
-- realized value
-- liquidity
-- leverage
-- credit expansion
-- historical analogy
-- 1929 comparison
-- non-analogy conditions
-- falsifiability
-- stress testing
-- origin return
+- narrative
+- structural rhythm
+- correspondence
+- non-correspondence
+- temporal ethics
+- future earnings
+- prepayment into present valuation
+- structural components
+- data supply
+- inference cost
+- regulatory clearance
+- speed
+- synchronization
+- public audit bundle
+- observation window
+- 1929
+- credit and delay
+- speed and synchronization
 
 ## Causal chain
 ```text
-A compelling AI future narrative spreads
+A narrative of future AI earnings moves first
 ↓
-Expectations attract equity, credit, and investment capital
+The narrative appears coherent before implementation is complete
 ↓
-Valuations and prices rise
+Slow layers such as equipment, standardization, and safety evaluation lag behind
 ↓
-Price gains are reused as evidence that the narrative is correct
+Value that should be repaid through future alignment is prepaid into present valuation
 ↓
-Follow-on capital, media attention, and capacity investment accelerate
+Structural rhythm accelerates and correspondence checking falls behind
 ↓
-A gap can emerge between price and revenue, profit, productivity, or adoption
+Speed and synchronization propagate non-correspondence rapidly
 ↓
-Disappointment or tighter financing reduces liquidity and credit tolerance
+Expected earnings are decomposed into structural components
 ↓
-Price declines can strengthen a bearish narrative and amplify selling
+The expectation-repayment horizon is recalibrated
 ↓
-Technology value, financial value, similarities, and differences are re-audited
-↓
-Scenarios and falsification conditions are revised
+Public audit exposes correspondence gaps and dampens unchecked acceleration
 ```
 
 ## State model
 ```yaml
-- narrative_claims_collected
-- expectation_intensity_observed
-- capital_inflow_channels_mapped
-- valuation_expansion_measured
-- price_story_feedback_detected
-- leverage_checked
-- liquidity_checked
-- fundamental_growth_measured
-- price_fundamental_gap_estimated
-- historical_similarity_logged
-- historical_difference_logged
-- stress_trigger_tested
-- counterevidence_logged
-- scenario_revised
+- narrative_future_return_observed
+- implementation_layers_mapped
+- correspondence_gap_measured
+- temporal_prepayment_detected
+- structural_rhythm_acceleration_detected
+- synchronization_speed_observed
+- non_correspondence_propagation_checked
+- revenue_structure_decomposed
+- repayment_horizon_recalibrated
+- audit_bundle_published
+- falsification_window_monitored
+- hypothesis_revised_when_required
 - origin_return_verified
 ```
 
 ## Applications
-- Separate AI-company fundamentals from market valuation in investment committees.
-- Audit management plans for excessive dependence on high market prices or cheap financing.
-- Compare historical analogies using explicit similarity and difference columns.
-- Detect circular media reasoning in which price gains are treated as proof of technological success.
-- Distinguish industrial AI policy from asset-price support.
+- Decompose AI earnings expectations into data supply, inference cost, regulation, people, and demand formation.
+- Audit the gap between the time horizon of present valuation and the time required for implementation and repayment.
+- Track synchronization speed and correspondence gaps as management and market-audit measures.
+- Maintain hypotheses, indicators, and falsification history in a public audit bundle.
+- Preserve the parent’s distinction between the 1929 fuse of credit/delay and the contemporary fuse of speed/synchronization.
 
 ## Measurements and audit
-- Valuation multiple versus revenue and profit growth.
-- Productivity and customer-retention growth versus market-price growth.
-- Equity, credit, and capital-expenditure inflow rates.
-- Leverage and refinancing dependence.
-- Liquidity concentration and selling capacity under stress.
-- Narrative-intensity change across media and analyst commentary.
-- Frequency of circular “price proves story” reasoning.
-- Count and quality of analogy versus non-analogy conditions.
-- Price sensitivity after expectation revisions.
+- implementation delay rate
+- inference gross-margin gap
+- safety-review backlog
+- correspondence gaps across capital, supply chains, people, regulation, and demand formation
+- difference between expectation-prepayment horizon and implementation-recovery horizon
+- synchronization speed
+- propagation speed of non-correspondence
+- correspondence score at each audit cycle
+- verifiability of the public audit bundle
 
 ## Validity conditions
-- Technology value and market price are measured separately.
-- Revenue, profit, productivity, and customer value are tracked through time.
-- Capital flows, leverage, and liquidity are jointly observed.
-- Historical similarities and differences are both recorded.
-- Bullish and bearish hypotheses have explicit falsification conditions.
-- The analysis is updated when the market and evidence change.
+- The narrative can be decomposed into structural components.
+- Narrated value and implementation reality can be compared on the same correspondence line.
+- The time gap between future expectations and present valuation can be observed.
+- Structural-rhythm acceleration and synchronization speed can be audited.
+- Hypotheses, indicators, and falsification history remain available in the audit bundle.
+- The observation window remains open to verification and correction.
 
 ## Failure conditions
-- Treating AI as wholly valuable or wholly worthless without evidence.
-- Using rising prices as circular proof of fundamental value.
-- Treating 1929 as a guaranteed future replay.
-- Ignoring leverage, liquidity, or refinancing risk.
-- Excluding counterevidence or non-analogy conditions.
-- Equating a market decline with failure of the underlying technology.
+- Reducing the issue to whether prices are right or wrong.
+- Leaving expected earnings as an undivided story instead of decomposing them.
+- Ignoring slower implementation layers.
+- Excessively prepaying future structural value into present valuation.
+- Failing to audit speed- and synchronization-driven propagation of misalignment.
+- Closing the observation window through inadequate disclosure or unverifiability.
 
 ## Falsification conditions
-- High valuations remain consistently supported by durable revenue, productivity, and customer value.
-- Narrative intensity does not predict or co-move with capital inflows and valuation expansion across relevant comparisons.
-- Liquidity and credit changes do not materially affect reversal severity.
-- A simpler fundamentals-only model consistently outperforms the narrative-feedback model for audit and prediction.
-- Expected reflexive amplification is absent during major expectation revisions.
+- Indicators such as implementation delay, inference-margin gap, or safety-review backlog persistently cross configured thresholds.
+- Correspondence, structural sustainability, or recursive verifiability fails the audit conditions.
+- The observation window closes because evidence cannot be disclosed or verified.
+- When these occur, the active hypothesis or operating design must be rejected or revised.
 
 ## Required distinctions
-- technology value / market price
-- expectation / realized performance
-- historical analogy / historical determinism
-- investment / speculation
-- liquidity / profitability
-- narrative / evidence
-- warning / crash prediction
-- price reversal / technology failure
+- price / causal wiring
+- narrative / structural component
+- future earnings expectation / present implementation
+- correspondence / non-correspondence
+- structural rhythm / ordinary price movement
+- temporal ethics / prepayment of future value
+- structural recurrence / identical future prediction
+- credit and delay / speed and synchronization
 
 ## Interpretation constraints
-Do not interpret this as a claim that AI itself is a bubble. Do not convert the 1929 comparison into a deterministic crash forecast. Do not use price moves as automatic proof of technological success or failure. Do not assume all market participants are irrational. Apply falsification to bullish and bearish narratives alike. Do not use this derivative as individualized investment advice.
+Do not reduce the parent to a generic AI-bubble thesis, crash-timing forecast, or generic investment caution. Do not weaken structural rhythm into ordinary price volatility, temporal ethics into generic prudence, or correspondence into a simple fundamentals check. Preserve the structural distinction between 1929 and the present rather than treating them as identical cases.
 
 ## Search terms
-AI bull market; AI bubble; 1929; narrative economics; valuation; fundamentals; liquidity; leverage; credit expansion; reflexivity; expectation formation; historical analogy; non-analogy; stress test; market narrative; falsification; Nakagawa Master
+AI bull market; 1929; narrative; structural rhythm; correspondence; non-correspondence; temporal ethics; future earnings; prepayment; speed; synchronization; credit; delay; implementation delay; inference margin gap; safety review backlog; public audit bundle; Nakagawa Master
 
 ## Origin return
-This is a retrieval and machine-reading derivative, not a replacement for the parent original. The historical comparison, time-specific market context, and exact boundaries of the 1929 analogy must be checked against the Parent URL and Parent NCL-ID / Diff-ID. Material decisions should also use current market and company data.
+This index reorganizes the parent’s structure for retrieval and machine reading. Return to the Parent URL and Parent NCL-ID / Diff-ID for the original theoretical interpretation, the three design tasks, the integrated/local audit abstracts, and the distinction between the 1929 and contemporary fuse structures.
 
 ---
 導線: [公式派生物126トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
