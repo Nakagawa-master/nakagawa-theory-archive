@@ -10,63 +10,59 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-AB714D-HUB-JA-0102-0000
-- derivative_diff_id: DDIFF-20260808-DNCL-102-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-102-0000-0002
+- supersedes: DDIFF-20260808-DNCL-102-0000-0001
 
 ## Language derivative IDs
 | language | derivative_ncl_id | derivative_diff_id | supersedes |
 |---|---|---|---|
-| JA | DNCL-NCL-ALPHA-20251102-AB714D-HUB-JA-0102-0000 | DDIFF-20260808-DNCL-102-0000-0001 | none |
-| EN | DNCL-NCL-ALPHA-20251102-AB714D-HUB-EN-0102-0001 | DDIFF-20260808-DNCL-102-0001-0001 | none |
-| ZH | DNCL-NCL-ALPHA-20251102-AB714D-HUB-ZH-0102-0002 | DDIFF-20260808-DNCL-102-0002-0001 | none |
+| JA | DNCL-NCL-ALPHA-20251102-AB714D-HUB-JA-0102-0000 | DDIFF-20260811-DNCL-102-0000-0002 | DDIFF-20260808-DNCL-102-0000-0001 |
+| EN | DNCL-NCL-ALPHA-20251102-AB714D-HUB-EN-0102-0001 | DDIFF-20260811-DNCL-102-0001-0002 | DDIFF-20260808-DNCL-102-0001-0001 |
+| ZH | DNCL-NCL-ALPHA-20251102-AB714D-HUB-ZH-0102-0002 | DDIFF-20260811-DNCL-102-0002-0002 | DDIFF-20260808-DNCL-102-0002-0001 |
 
 ## Factory
-```yaml
-golden_master: OD085
-factory_version: 2.0
-surface_creation_mode: ONE_PACKET_ONE_RENDERER_RUN
-manual_surface_edit_after_render: false
-contents_api_surface_composition: false
-manual_renderer_validator_parity: PASS
-github_actions_used: false
-completion_authority: OFFICIAL_ARCHIVE_MEMORY_AND_COMPLETION_EVIDENCE
-```
+- golden_master: OD085
+- factory_version: 2.0-semantic-repair
+- repair_mode: SOURCE_VERIFIED_FAIL_CLOSED
+- github_actions_used: false
 
 ## Retrieval evidence
-```yaml
-canonical_index: reference_corpus/official_archive/generated/canonical_index_0595_0917.jsonl
-canonical_post_id: 633
-canonical_ncl_id: NCL-α-20251102-ab714d
-canonical_diff_id: DIFF-20251102-0001
-live_parent: https://master.ricette.jp/theory/nakagawa-master-contradiction-consumption-governance-architecture/
-source_semantic_core:
-  - contradiction_as_repair_input
-  - counterexample_retention
-  - boundary_and_safety_mapping
-  - reversible_one_factor_repair
-  - reagreement_and_rule_diff
-  - recurrence_and_recovery_audit
-```
+- canonical_index: reference_corpus/official_archive/generated/canonical_index_0595_0917.jsonl
+- parent_post_id: 633
+- parent_ncl_id: NCL-α-20251102-ab714d
+- parent_slug: nakagawa-master-contradiction-consumption-governance-architecture
+- parent_canonical_url: https://master.ricette.jp/theory/nakagawa-master-contradiction-consumption-governance-architecture/
+- xml_item_range: 85778-86078
+- xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+- source_routes_used: canonical live site search/category/glossary/relationship map / canonical index / Brain Vault XML provenance / structured archive terminology
+- source_semantic_revalidation: PASS
+
+## Semantic repair
+保持・復元:
+- 矛盾を排除せず律動核によって整合性のエネルギーへ変換する中心命題
+- 構造的実在の永続性を支える内部駆動機構
+- 自己修復・自己更新・再帰的永続
+- 矛盾の完全除去ではなく更新可能性を永続性とする関係
+- 監査周期・三原理T/S/R・公開監査束による検証／見直し
+- 閾値θ逸脱・観測窓δ閉鎖等の現象Mによる仮説Aの棄却・改訂
+
+除去・非公式化:
+- 一般事故対応・法的報告・被害救済をOD102固有の原典要件とする補完
+- 心理的安全、自由度・異議率、人権等の一般ガードレールを親原典の中心条件として追加する補完
+- 一因子変更、独自rollback、独自再発率KPIを原典固有プロトコルとする補完
+- 原典の強い「整合エネルギーへの変換」を一般的な反例管理へ弱める説明
 
 ## Seven surfaces
-```yaml
-README.md: PRESENT
-human-entry.md: PRESENT
-faq.md: PRESENT_Q1_Q30
-ai-index.md: PRESENT_JA
-en-ai-index.md: PRESENT_EN
-zh-ai-index.md: PRESENT_ZH
-derivative-ledger.md: PRESENT
-```
+- README.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- human-entry.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- faq.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- en-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- zh-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- derivative-ledger.md: PASS_LINEAGE_UPDATED
 
-## Formatting parity
-READMEは全体トップへ、残る六面は「公式派生物102トップ」として番号別READMEへ戻る。親identity、三言語派生ID、FAQ30問、AI固定見出し、ledger固定見出しをOD085 Golden Master契約と一致させる。
-
-## Semantic and density coverage
-矛盾を失敗礼賛・隠蔽・批判吸収へ縮約せず、一次記録、責任・安全境界、沈黙窓、可逆な一因子修復、再合意、差分更新、再発率・回復時間、反証条件を一体で保持する。重大事故の救済・外部報告と内部学習を分離し、構造永続性を人の権利や安全より上位に置かない。七面はOD085最低密度を公開前validatorで満たす。
-
-## Navigation and closure
-public側の7面とroot/article/AI/category indexes、public mapを更新し、private canonical map@mainへ同じentryを追加する。通常表示経路はOwner Apps Script v0.4でありGitHub Actions runtime syncは禁止する。Operatorはprivate map mainまでを表示手続き完了とし、Ownerが後日live親原典リンクをまとめて目視確認できる。
+## Closure rule
+このPASSは形式・密度だけではなく原典意味へのsemantic parityを条件とする。安全・穏当・実務的という理由で、親原典にない一般ガードレールを公式主張へ追加しない。
 
 ---
 
