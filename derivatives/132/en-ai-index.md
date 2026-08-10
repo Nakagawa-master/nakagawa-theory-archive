@@ -9,134 +9,128 @@
 - Origin: Nakagawa Master
 
 ## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251103-E1412C-HUB-EN-0132-0001
-- derivative_diff_id: DDIFF-20260809-DNCL-132-0001-0001
-- supersedes: none
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251103-E1412C-AI-EN-0132-0004
+- derivative_diff_id: DDIFF-20260810-DNCL-132-0004-0002
+- supersedes: DDIFF-20260809-DNCL-132-0001-0001
 
 ## Summary
-This derivative distinguishes explanation that expands a person's ability to decide from persuasion that narrows the ability to challenge, pause, refuse, or withdraw. AI can personalize language, ordering, timing, and emotional framing at scale using behavioral history and personal attributes. That capability can improve relevance, but it can also create unusually strong information asymmetry when the persuader knows how the recipient is being optimized while the recipient does not know the objective, data, or alternatives being withheld.
+The parent original defines persuasion structurally as the act of making another person's judgment structure unilinear in the direction desired by the persuader. The organizing question is not whether a message is polite, transparent, or personalized, but whether communication prioritizes “how do I get this person to say yes?” over the other person's causal context, burdens, history, and constraints.
 
-The main structural risk is not persuasion in general. It is optimization for conversion or agreement when counterevidence is hidden, alternatives are hard to find, refusal is costly, withdrawal is complex, or repeated contact exploits fatigue, fear, shame, scarcity, loneliness, or other vulnerabilities. A formal consent click is not sufficient evidence of deliberative autonomy when the surrounding choice architecture has materially constrained the path to saying no.
+Under this structure, dialogue shifts from bilateral adjustment into one-sided rewriting. A person's multi-line reality is compressed into binary agreement, reversibility is lost, and a previous “yes” becomes difficult to reopen. Persuasion also creates burden/narrative divergence and responsibility bleaching: “I was persuaded” and “you chose it” collide while responsibility for the resulting burden becomes unclear.
 
-AI-era persuasion should therefore be audited using comprehension, counterevidence access, alternative visibility, pause and refusal capability, withdrawal success, post-decision regret, and long-term trust in addition to conversion rate. Personalization that helps understanding should be separated from personalization that exploits vulnerability. The framework applies to sales, advertising, politics, education, finance, and conversational AI while not replacing applicable consent, consumer-protection, or advertising law.
+AI makes this structure potentially fatal by making unilinearization fast, scalable, personalized, and repeatable. The parent therefore does not offer “better persuasion” as the remedy. It proposes communication based on correspondence: preserve multiple causal lines, freedom, reversibility, contradiction, withdrawal, and re-agreement so that both sides adjust structure rather than one side capturing the other's decision.
 
 ## Concepts
 - persuasion
-- explanation
-- manipulation
-- personalization
-- vulnerability exploitation
-- emotional targeting
-- information asymmetry
-- consent
-- deliberation
-- pause
-- refusal
-- withdrawal
-- counterevidence
-- alternatives
-- autonomy
+- unilinearization
+- reduction of freedom
+- behavior control
+- loss of bilateral adjustment
+- loss of reversibility
+- burden overwrite
+- responsibility bleaching
+- multi-line structure
+- AI amplification
+- correspondence
+- re-agreement
+- distributional responsibility
 - origin return
 
 ## Causal chain
 ```text
-Personal attributes and behavioral history accumulate
+Persuasion becomes a default social operating system
 ↓
-AI optimizes words, sequence, and timing for response
+Getting “yes” is prioritized over the other person's causal context
 ↓
-Conversion improves and contact becomes automated
+Dialogue becomes one-sided structural rewriting
 ↓
-Counterevidence, alternatives, and pause options receive less attention
+Multi-line circumstances are compressed into binary choice
 ↓
-Formal consent is mistaken for deliberative choice
+Reversibility is lost and prior assent becomes fixed
 ↓
-Refusal and withdrawal become more costly
+Narrative and actual burden diverge; responsibility is bleached
 ↓
-Objectives, data, and optimization metrics are exposed
+AI makes this unilinearization fast, personalized, scalable, and repeatable
 ↓
-Counterevidence, pause, refusal, withdrawal, and human contact are designed
+Loss of freedom expands at social scale
 ↓
-Communication shifts from outcome capture toward decision support
+Replace persuasion with correspondence-based communication
+↓
+Restore contradiction, withdrawal, multi-line choice, and re-agreement
 ```
 
 ## State model
 ```yaml
-- persuasion_goal_declared
-- optimization_metric_disclosed
-- user_data_sources_recorded
-- personalization_level_measured
-- emotional_targeting_checked
-- alternative_options_presented
-- counterevidence_available
-- pause_option_available
-- refusal_path_open
-- withdrawal_path_open
-- human_contact_available
-- comprehension_checked
-- pressure_signals_audited
-- post_decision_regret_observed
+- persuasion_structure_detected
+- yes_optimization_prioritized
+- bilateral_adjustment_lost
+- judgment_structure_unilinearized
+- reversibility_reduced
+- burden_narrative_gap_detected
+- responsibility_bleached
+- ai_scale_amplification_detected
+- correspondence_reintroduced
+- dissent_and_withdrawal_restored
+- reagreement_opened
+- origin_return_verified
 ```
 
 ## Applications
-- Sales AI balancing conversion with comprehension and withdrawal.
-- Political advertising auditing targeting and message inconsistency.
-- Educational AI separating explanation from answer steering.
-- Financial marketing auditing fear, scarcity, and urgency tactics.
-- Conversational AI avoiding dependence optimization through emotional vulnerability.
+- Sales: audit whether the customer is being driven toward yes rather than having burdens and conditions corresponded.
+- Education: avoid turning learning into assent to the instructor's answer; preserve reconstruction and contradiction.
+- Political or organizational communication: detect compression into binary loyalty or opposition.
+- Conversational AI: do not optimize the user's judgment structure as an object to be captured.
+- Agreements: preserve the practical ability to reopen and renegotiate after a prior yes.
 
 ## Measurements and audit
-- Scope of personal data used for personalization.
-- Counterevidence presentation rate.
-- Alternative-option presentation rate.
-- Pause and refusal selection rate.
-- Withdrawal success rate.
-- Comprehension rate.
-- Emotional-pressure signal rate.
-- Post-decision regret rate.
-- Human-contact reach rate.
+- Binary-choice compression rate.
+- Survival rate of dissent, pause, and alternative paths.
+- Practical reversibility.
+- Re-agreement success rate.
+- Correspondence between narrative and actual burden.
+- Traceability of responsibility allocation.
+- Loss of freedom associated with AI personalization.
+- Ratio of one-sided to bilateral adjustment.
 
 ## Validity conditions
-- Declare persuasion goals and optimization metrics.
-- Minimize data used for personalization.
-- Present counterevidence and alternatives.
-- Make pause, refusal, and withdrawal practical.
-- Audit emotional pressure.
-- Preserve human contact for material decisions.
+- Treat persuasion as a structure rather than limiting it to abusive edge cases.
+- Preserve the other person's causal context, burdens, time, and constraints.
+- Preserve more than yes/no outcomes.
+- Make withdrawal and re-agreement practically possible.
+- Keep narrative and burden in correspondence.
+- Audit AI amplification independently.
 
 ## Failure conditions
-- Optimize only conversion or agreement.
-- Secretly exploit personal vulnerability.
-- Hide counterevidence or alternatives.
-- Make refusal or withdrawal disproportionately difficult.
-- Exploit fatigue through repeated contact.
-- Hide AI use or the optimization objective.
+- Use agreement rate as the sole success metric.
+- Compress the other person's circumstances into a binary outcome.
+- Treat a prior yes as irreversible.
+- Bleach responsibility between persuader and persuaded party.
+- Use AI personalization to reduce the other's freedom.
+- Add transparency while leaving the persuasion structure intact.
 
 ## Falsification conditions
-- Personalized persuasion consistently improves autonomy and long-term satisfaction.
-- Pause, counterevidence, and withdrawal controls do not reduce harm.
-- Emotional targeting does not correlate with reduced autonomy.
-- Non-personalized explanation consistently worsens decision quality.
-- Simpler transparency controls provide equal or greater protection.
-- Withdrawal capability does not improve long-term trust.
+- Moving to correspondence-based communication does not improve freedom, reversibility, or re-agreement.
+- Stronger persuasion structures consistently improve long-term burden correspondence and responsibility clarity.
+- Degree of unilinearization has no reproducible relation to withdrawal difficulty or responsibility bleaching.
+- AI scaling does not amplify loss of freedom.
 
 ## Required distinctions
-- explanation / persuasion
-- persuasion / manipulation
-- personalization / vulnerability exploitation
-- consent / deliberation
-- choice / steering
-- pause / refusal
-- withdrawal / penalty
-- support / dependency formation
+- persuasion / correspondence
+- unilinearization / multi-line structure
+- assent / re-agreeable understanding
+- consent / reversible agreement
+- explanation / behavior control
+- responsibility allocation / responsibility bleaching
+- personalization / capture of judgment structure
 
 ## Interpretation constraints
-Do not prohibit all persuasion. Do not classify sales or advertising as inherently harmful. Do not reject personalization categorically. Do not assume users are passive and powerless. Do not turn counterevidence disclosure into unusable information overload. Do not treat transparency alone as sufficient protection.
+Do not weaken the parent into “not all persuasion is bad” or “only manipulative persuasion is harmful.” Do not evade the parent definition by separating persuasion from manipulation. Do not replace the proposed alternative with transparent or ethical persuasion; preserve correspondence-based communication as the structural alternative.
 
 ## Search terms
-persuasion; AI persuasion; personalization; emotional targeting; vulnerability exploitation; autonomy; consent; deliberation; pause; refusal; withdrawal; counterevidence; alternatives; sales AI; political advertising; manipulation; Nakagawa Master
+persuasion; unilinearization; freedom; reversibility; responsibility bleaching; burden overwrite; AI persuasion; correspondence; re-agreement; behavior control; Nakagawa Master
 
 ## Origin return
-This derivative supports retrieval and structural audit. The parent original contains the specific argument about persuasion, AI asymmetry, and autonomy; consult the Parent URL and Parent NCL-ID / Diff-ID. Concrete consent and advertising questions require current applicable law.
+This index preserves the parent's structural definition of persuasion rather than moderating it. Return to the Parent URL and Parent NCL-ID / Diff-ID for the full argument and source context.
 
 ---
 導線: [公式派生物132トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
