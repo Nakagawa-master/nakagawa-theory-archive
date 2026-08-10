@@ -10,64 +10,67 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-DB5ADF-HUB-JA-0100-0000
-- derivative_diff_id: DDIFF-20260808-DNCL-100-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-100-0000-0002
+- supersedes: DDIFF-20260808-DNCL-100-0000-0001
 
 ## Language derivative IDs
 | language | derivative_ncl_id | derivative_diff_id | supersedes |
 |---|---|---|---|
-| JA | DNCL-NCL-ALPHA-20251102-DB5ADF-HUB-JA-0100-0000 | DDIFF-20260808-DNCL-100-0000-0001 | none |
-| EN | DNCL-NCL-ALPHA-20251102-DB5ADF-HUB-EN-0100-0001 | DDIFF-20260808-DNCL-100-0001-0001 | none |
-| ZH | DNCL-NCL-ALPHA-20251102-DB5ADF-HUB-ZH-0100-0002 | DDIFF-20260808-DNCL-100-0002-0001 | none |
+| JA | DNCL-NCL-ALPHA-20251102-DB5ADF-HUB-JA-0100-0000 | DDIFF-20260811-DNCL-100-0000-0002 | DDIFF-20260808-DNCL-100-0000-0001 |
+| EN | DNCL-NCL-ALPHA-20251102-DB5ADF-HUB-EN-0100-0001 | DDIFF-20260811-DNCL-100-0001-0002 | DDIFF-20260808-DNCL-100-0001-0001 |
+| ZH | DNCL-NCL-ALPHA-20251102-DB5ADF-HUB-ZH-0100-0002 | DDIFF-20260811-DNCL-100-0002-0002 | DDIFF-20260808-DNCL-100-0002-0001 |
 
 ## Factory
-```yaml
-golden_master: OD085
-factory_version: 2.0
-surface_creation_mode: ONE_PACKET_ONE_RENDERER_RUN
-manual_surface_edit_after_render: false
-contents_api_surface_composition: false
-manual_renderer_validator_parity: PASS
-github_actions_used: false
-completion_authority: OFFICIAL_ARCHIVE_MEMORY_AND_COMPLETION_EVIDENCE
-```
+- golden_master: OD085
+- factory_version: 2.0-semantic-repair
+- repair_mode: SOURCE_VERIFIED_FAIL_CLOSED
+- github_actions_used: false
+- completion_authority: OFFICIAL_ARCHIVE_MEMORY_AND_COMPLETION_EVIDENCE
 
 ## Retrieval evidence
-```yaml
-canonical_index: reference_corpus/official_archive/generated/canonical_index_0595_0917.jsonl
-canonical_post_id: 624
-canonical_ncl_id: NCL-α-20251102-db5adf
-canonical_diff_id: DIFF-20251102-0001
-live_parent: https://master.ricette.jp/theory/nakagawa-master-organizational-singularity-self-referential-os/
-live_retrieval: PASS
-source_semantic_core:
-  - idea_action_record_phase_alignment
-  - rhythm_nucleus_interpretive_code_executable_trace
-  - contradiction_consumption
-  - counterexample_tolerance
-  - rhythm_temperature_margin
-  - origin_holder_ethics
-```
+- canonical_index: reference_corpus/official_archive/generated/canonical_index_0595_0917.jsonl
+- parent_post_id: 624
+- parent_ncl_id: NCL-α-20251102-db5adf
+- parent_slug: nakagawa-master-organizational-singularity-self-referential-os
+- parent_canonical_url: https://master.ricette.jp/theory/nakagawa-master-organizational-singularity-self-referential-os/
+- xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+- xml_item_range: 85264-85529
+- source_routes_used: live canonical parent / canonical index / Brain Vault XML provenance / structured AI retrieval index
+- canonical_identity_parity: PASS
+- source_semantic_revalidation: PASS
+
+## Semantic repair
+2026-08-11のsemantic-fidelity repairでは、親原典の要旨、本文六章、結論、統合監査要旨、局所監査要旨、理論署名宣言を一つのsource coverageとして再確認し、README / human-entry / FAQ / JA・EN・ZH AI indexを再整合した。
+
+保持・復元した中心要素:
+- 構造的実在＝理念・行為・記録が同位相で反復される拍
+- 律動核／解釈コード／実行ログの三層自己参照OS
+- 矛盾の外部放出禁止、常態テンポ修復、辞書の追記・精緻化
+- 反例耐性と信用の前倒し蓄積
+- 外部戦略の不要化
+- 起点保持者、基準拍、温度帯、余白
+- 公開版五則
+- 公共審査を第三者観測へ接続する三原則
+- 公開／秘匿境界と原典の排除語彙・安全語彙
+- T/S/R、Rollback Cost、強制力学、有害ロックインを含む統合監査要旨の棄却・改訂条件
+
+除去・非公式化した原典外補完:
+- 一般的な法務・顧客・安全条件を本理論固有の成立条件として置くこと
+- 派生独自の異議提出率・自由度等を中心監査指標として追加すること
+- 原典の「外部戦略の不要化」を「外部依存を少し下げる」程度へ弱めること
+- 原典外の人格診断・カリスマ経営等の一般的誤読禁止を必要以上に増やすこと
 
 ## Seven surfaces
-```yaml
-README.md: PRESENT
-human-entry.md: PRESENT
-faq.md: PRESENT_Q1_Q30
-ai-index.md: PRESENT_JA
-en-ai-index.md: PRESENT_EN
-zh-ai-index.md: PRESENT_ZH
-derivative-ledger.md: PRESENT
-```
+- README.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- human-entry.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- faq.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- en-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- zh-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- derivative-ledger.md: PASS_LINEAGE_UPDATED
 
-## Formatting parity
-READMEは全体の公式派生物トップへ戻り、残る六面は「公式派生物100トップ」として番号別READMEへ戻る。H1/H2順序、親原典identity、JA/EN/ZH派生ID、FAQ30問、AI索引固定13見出しをOD085 Golden Masterに合わせる。
-
-## Semantic and density coverage
-中心命題、因果線、構造層、状態モデル、適用、測定、成立条件、失敗条件、反証条件、必須区別、誤読禁止を親原典の意味核へ接続した。組織的特異点をAI特異点や閉鎖的自己正当化へ縮約せず、反例・第三者観測・rollbackを保持する。七面はOD085の最低文字密度を下回らないことを公開前validatorの必須条件とする。
-
-## Navigation and closure
-public側では7面、root/article/AI/category indexes、public mapを同一公開単位で更新する。private canonical map@mainへ同じentryを追加し、Owner Apps Script v0.4が読む同期入力までをoperator display procedureとする。GitHub Actions runtime syncは使用しない。最終live目視はOwner batch verificationとして後段でG10へ昇格できる。
+## Closure rule
+このPASSは密度や形式ではなく、live parent本文とBrain Vault canonical provenanceを基準にしたsemantic parityを条件とする。原典の強い主張を派生側の安全・穏当・実務的補完で弱めず、原典自身にある節度・公開境界・反証条件のみを保持する。
 
 ---
 
