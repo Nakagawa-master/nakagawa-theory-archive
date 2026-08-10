@@ -10,143 +10,133 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-A68F93-HUB-EN-0120-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-120-EN-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-120-EN-0000-0002
+- supersedes: DDIFF-20260809-DNCL-120-EN-0000-0001
 
 ## Summary
-Structural operative intelligence reframes the human role after AI optimization. If human value is defined by search speed, memory, or volume of generated alternatives, technical progress continually narrows the space in which humans appear superior. The remaining design task is different: decide what should be optimized, whose conditions must be included, which contradictions matter, which losses are unacceptable, and what future direction the system should pursue. Operation is a cycle of observation, abstraction, contradiction detection, problem framing, AI-supported search and generation, human selection, impact audit, counterevidence, and redesign. This is neither a doctrine of permanent human superiority nor a claim that AI is merely a passive tool. It is a way to separate contribution, decision authority, and responsibility.
+The parent defines Structural Operative Intelligence as the human role that remains when AI handles rapid local optimization. AI can optimize points and lines inside a given condition space, but a locally correct answer can export distortion into another department, relationship, season, or future cycle. The human task is therefore whole-causal orchestration: map and rearrange causal chains, role distributions, correspondence among language, images, institutions and atmosphere, and move the chain itself rather than merely analyze it. The parent further binds this role to Temporal Structural Ethics and Structural Rhythm for future debt, credit and long-cycle evaluation; Correspondence Topology for transmitting ideas and decision standards through sustainable interpretive paths; and Structural Psychology for handling defensive rejection without destroying consensus. The role is operational responsibility for arranging “what comes next” while AI optimizes “now.”
 
 ## Concepts
-- structural operative intelligence
-- problem framing
-- purpose design
-- abstraction
-- contradiction detection
-- relationship design
-- meaning creation
-- AI optimization
-- human selection
-- decision authority
-- responsibility
-- external impact
-- redesign
-- collaboration
-- future design
+- Structural Operative Intelligence
+- local optimization
+- whole-causal orchestration
+- causal relations
+- role distribution
+- mutual correspondence
+- environment rearrangement
+- Temporal Structural Ethics
+- future-side debt
+- credit capital
+- Structural Rhythm
+- Correspondence Topology
+- sustainable reference structure
+- Structural Psychology
+- consensus formation
 
 ## Causal chain
 ```text
-AI accelerates search and optimization
+AI accelerates local optimization
 ↓
-Humans compete on the same axis
+Traditional excellence is absorbed into AI capability
 ↓
-Role anxiety grows
+Local correctness does not guarantee future/system-wide stability
 ↓
-Shift to framing and purpose
+Human work shifts to whole-causal orchestration
 ↓
-Model structure and contradiction
+Causality, roles, and correspondence are bundled across layers
 ↓
-Delegate search to AI
+Language, images, institutions, timing, and trust are moved as one causal story
 ↓
-Record human selection
+Temporal Ethics and Structural Rhythm address future debt and credit
 ↓
-Audit external impact
+Correspondence Topology designs transmission and inheritance paths
 ↓
-Redesign the structure
+Structural Psychology handles defensive rejection without coercive breakdown
+↓
+The environment itself is rearranged
 ```
 
 ## State model
 ```yaml
-- phenomenon_observed
-- structure_abstracted
-- contradictions_detected
-- purpose_declared
-- affected_parties_mapped
-- ai_search_delegated
-- alternatives_generated
-- human_selection_recorded
-- external_impact_checked
-- counterevidence_opened
-- structure_revised
+- local_optimization_boundary_identified
+- cross_layer_causal_map_built
+- role_distribution_mapped
+- correspondence_paths_mapped
+- future_debt_and_credit_rhythm_checked
+- structural_rhythm_cycle_defined
+- correspondence_topology_defined
+- transmission_risk_checked
+- structural_psychology_resistance_observed
+- consensus_path_designed
+- environment_rearranged
 - origin_return_verified
 ```
 
 ## Applications
-1. Redefine optimization goals before accepting AI forecasts in management.
-2. Let AI generate policy alternatives while humans compare rights and distribution.
-3. Use AI search in research while humans define questions and falsification.
-4. Teach problem framing and counterexamples rather than answer speed alone.
+1. Reorganize organizations by treating people, institutions, trust and time as one causal system.
+2. Design crisis communication by bundling text, executive imagery, announcement timing, employee explanation, contract conditions and KPI interpretation.
+3. Evaluate business transformation with future distortion and credit capital, not only immediate gain.
+4. Design inheritance of ideas and decision standards through Correspondence Topology.
+5. Use Structural Psychology to move through rejection without turning consensus formation into coercion.
 
 ## Measurements and audit
-- problem-reframing rate
-- contradiction detection
-- purpose declaration
-- alternative comparison
-- final-accountability clarity
-- external-impact audit
-- redesign count
-- counterevidence intake
-- AI-dependency error rate
+The parent describes Structural Rhythm as evaluation by beats such as three-month or six-month cycles, asking whether distortion is falling and total trust is rising. Its integrated audit also requires recurring audit cycles, T/S/R, and consistency of a publicly available audit bundle; if threshold θ or observation-window δ phenomena M appear, hypothesis A is rejected or revised.
 
 ## Validity conditions
-- Do not define human value by speed competition.
-- Make purpose explicit.
-- Separate generation from adoption.
-- Include affected parties.
-- Preserve falsification and redesign.
-- Identify final decision responsibility.
+- Treat AI output as local optimization and separately address whole-system/future causality.
+- Bundle causality, roles, and correspondence across multiple layers.
+- Move the causal chain rather than stopping at analysis.
+- Include Temporal Ethics and Structural Rhythm.
+- Include Correspondence Topology for transmission and continuity.
+- Include Structural Psychology for the friction of consensus formation.
 
 ## Failure conditions
-- Define value as being smarter than AI.
-- Delegate purpose without review.
-- Treat generation as decision.
-- Replace structure with jargon.
-- Exclude external impact.
-- Transfer responsibility to AI.
+- Reduce Structural Operative Intelligence to problem framing or purpose design alone.
+- Make AI/human responsibility separation the central thesis.
+- Omit Temporal Ethics or Structural Rhythm.
+- Treat Correspondence Topology as a mere manual.
+- Turn Structural Psychology into persuasion technique.
+- Publish concrete synchronization/operation kernels without the parent’s stated boundary.
 
 ## Falsification conditions
-- Structural-operation training does not improve decisions.
-- Full AI delegation consistently performs better.
-- Human involvement adds only bias and delay.
-- Structural models underperform simpler heuristics.
-- Responsibility separation does not improve explainability.
+Following the parent’s integrated audit, if indicator values cross threshold θ, an observation window δ closes, or comparable phenomenon M appears, the hypothesis that designing, translating, bundling and defining structures stabilizes and aligns institutional operation must be rejected or revised.
 
 ## Required distinctions
-- knowledge volume / structural operation
-- generation / decision
-- optimization / purpose
-- AI contribution / human responsibility
-- abstraction / jargon
-- question / answer
-- collaboration / delegation
-- meaning / efficiency
+- local optimization / whole causality
+- answer / chain design
+- analysis / operation
+- short-term result / Temporal Ethics
+- one-off evaluation / Structural Rhythm
+- document / Correspondence Topology
+- persuasion / consensus formation
+- public principles / controlled operational kernel
 
 ## Interpretation constraints
-- Not human-supremacy theory.
-- Do not freeze AI as a mere tool.
-- Do not turn structural operation into domination.
-- Do not equate question origin with total responsibility.
-- Do not assume AI proposals are automatically objective.
-- Do not use as an employment aptitude test.
+- Do not weaken the parent into generic problem-framing or AI-accountability theory.
+- Preserve the parent’s time-bound claim that this role is the position most strongly identified as something “only humans can do” in the described AI era; do not erase it merely to balance wording.
+- Do not convert structural operation into domination; the parent’s purpose is to move structures without breaking consensus.
+- Preserve the parent’s non-public boundary for concrete synchronization procedures and operational kernels.
+- Do not omit Temporal Ethics, Structural Rhythm, Correspondence Topology, or Structural Psychology from the central structure.
 
 ## Search terms
-- structural operative intelligence
-- structural intelligence
-- problem framing
-- purpose design
-- contradiction detection
-- AI optimization
-- human AI collaboration
-- abstraction
-- decision responsibility
-- external impact
-- redesign
-- question design
+- Structural Operative Intelligence
+- local optimization
+- whole causal orchestration
+- role distribution
+- correspondence
+- Temporal Structural Ethics
+- Structural Rhythm
+- Correspondence Topology
+- Structural Psychology
+- consensus formation
+- future debt
+- credit capital
+- environment rearrangement
 - human role after AI
-- future design
-- source return
+- Nakagawa Master
 
 ## Origin return
-Return to the parent original for the exact definition and role boundary. This index does not automatically determine legal responsibility or human superiority.
+Use the parent’s Chapters 1–5, conclusion, integrated audit and local audit as final semantic authority. This index is a retrieval aid and does not replace the parent’s full structure.
 
 ---
 
