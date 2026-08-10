@@ -10,85 +10,79 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-AB714D-HUB-EN-0102-0001
-- derivative_diff_id: DDIFF-20260808-DNCL-102-0001-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-102-0001-0002
+- supersedes: DDIFF-20260808-DNCL-102-0001-0001
 
 ## Summary
-Contradiction Consumption is a governance principle for converting contradictions and counterexamples into structural learning without hiding harm or making a theory unfalsifiable. When a mismatch appears among ideals, institutions, roles, information, time, and actual outcomes, exporting the contradiction through blame, deletion, or public-relations narratives can create short-term calm while increasing the unresolved counterexample population. The proposed alternative is to freeze primary evidence, separate responsibility and safety boundaries, create a silence window that prevents reactive definition changes, and apply one reversible repair factor at a time. Friction, autonomy, recurrence, recovery time, and responsibility clarity are compared before and after the change. Results are re-agreed with dissent preserved and returned to the interpretive code as an explicit diff. “Contradiction as energy” is a structural-learning metaphor; it does not justify harm. Serious safety events may require immediate stop, remedy, legal reporting, or external oversight. The model remains falsifiable: if recurrence and recovery do not improve, or if internal handling increases concealment and lock-in, the hypothesis must weaken or the structure must be abandoned.
+The Principle of Contradiction Consumption is an internal driving mechanism for the persistence of Structural Reality. Contradictions and inconsistencies are not expelled; through the Rhythm Nucleus they are transformed into energy for renewed coherence, returning ideas, organizations, and structures to self-repair and self-update. Persistence therefore does not mean preserving a fixed form. It means continuing the repetition of Idea, Action, and Record while using contradictions as inputs for recursive renewal. The parent framework tests this structure through audit cycles, the three principles T/S/R, and coherence of the public audit bundle. If indicators deviate beyond threshold θ, or phenomena such as closure of an observation window δ are confirmed, hypothesis A is to be rejected or revised. This derivative does not add generic incident response, legal reporting, victim-remedy, psychological-safety, one-factor-change, or autonomy metrics as if they were source-defined requirements of OD102.
 
 ## Concepts
 - contradiction consumption
+- contradiction-energy transformation
 - structural reality
-- counterexample retention
-- primary evidence freeze
-- responsibility boundary mapping
-- safety threshold
-- silence window
-- reversible one-factor repair
-- rollback
-- re-agreement
-- interpretive-code diff
-- recurrence rate
-- recovery time
-- non-coercive governance
+- rhythm nucleus
+- self-repair
+- self-update
+- recursive persistence
+- structural rhythm
+- audit bundle
+- T/S/R
+- threshold θ
+- observation window δ
+- hypothesis revision
 
 ## Causal chain
 ```text
-contradiction detected
-→ primary evidence frozen
-→ responsibility and safety boundaries separated
-→ silence window prevents reactive rewriting
-→ one reversible factor selected
-→ repair executed with rollback
-→ friction, freedom, recurrence, and recovery measured
-→ re-agreement recorded with dissent
-→ interpretive code updated by explicit diff
-→ next-cycle recurrence monitored
-→ contradiction becomes learning input or the hypothesis is rejected
+contradiction or inconsistency emerges
+→ contradiction remains inside the structure
+→ rhythm nucleus receives the difference
+→ difference becomes energy for coherence
+→ structure self-repairs
+→ structure self-updates
+→ updated idea/action/record pattern repeats
+→ next contradiction re-enters the cycle
+→ structural reality persists through recursive renewal
 ```
 
 ## State model
 ```yaml
-- contradiction_detected
-- primary_record_frozen
-- boundary_mapped
-- safety_threshold_set
-- silence_window_active
-- one_factor_repair_selected
-- reversible_change_executed
-- effect_measured
-- reagreement_recorded
-- rule_diff_applied
-- recurrence_monitored
-- hypothesis_reassessed
+- contradiction_emerges
+- contradiction_retained
+- rhythm_nucleus_references_difference
+- coherence_energy_generated
+- structural_repair_active
+- structural_update_active
+- updated_pattern_repeated
+- recursive_cycle_continues
+- structural_reality_persists
 ```
 
 ## Applications
-For organizational conflict, map authority, responsibility, information, and time constraints before reducing the problem to personality. For AI incidents, separate model behavior from input, objective, tools, logs, responsibility, and public/private boundaries; then change one reversible factor. For public institutions, keep remedy and external accountability separate from internal learning. For theory development, preserve criticism and failed predictions as counterexamples and update definitions by visible diffs rather than erasing the old claim.
+In theory, counterexamples are not expelled merely to preserve an appearance of consistency; they indicate which structural relation requires renewal. In organizations, friction among roles or divisions is read as input for adjusting rhythm, placement, and meaning relations. In AI and knowledge structures, regeneration differences are returned to origin signatures, audit bundles, and structural relations so coherence can be reconstructed. At the civilizational level, the key is not total elimination of contradiction but a recursive path through which contradiction flows into the next structural update.
 
 ## Measurements and audit
-Measure time from detection to evidence freeze, time to boundary mapping, delay before repair, the share of contradictions exported as blame versus converted to repair input, one-factor-change compliance, rollback success, recurrence rate, recovery time, re-agreement time, friction ratio, autonomy, dissent accessibility, and responsibility clarity. Safety harm, victim remedy, required reporting, and independent oversight must be audited in separate windows rather than absorbed into a learning score.
+The parent framework audits whether structural design, translation, bundling, and definition connect to institutionalization, stability, alignment, and acceleration, using audit cycles, T/S/R, and coherence of the public audit bundle. If indicators deviate beyond threshold θ or phenomenon M such as closure of observation window δ is confirmed, hypothesis A is rejected or revised. Derivative-authored safety, legal, victim-remedy, or autonomy metrics are not inserted into the source audit conditions.
 
 ## Validity conditions
-Primary evidence and counterexamples remain recoverable. Responsibility and safety boundaries are explicit before repair. Changes are limited, reversible, and attributable. Post-repair audits include autonomy, dissent, and harm recovery rather than efficiency alone. Re-agreement and rule changes are recorded as diffs. The central hypothesis remains rejectable if outcomes fail to improve.
+Contradictions can remain as internal inputs to renewal rather than being merely expelled. The Rhythm Nucleus can reconnect the difference to structural coherence. The correction returns as self-repair and self-update into the next repetition. The structure remains recursively updatable rather than frozen at a completed form. Audit-cycle, T/S/R, and public-audit-bundle pathways for verification and revision remain open.
 
 ## Failure conditions
-The model fails when harm is romanticized as useful fuel, logs are rewritten, multiple factors change simultaneously, critics or victims are blamed, falsification channels are closed, or confidentiality is used to avoid public responsibility. Structural persistence cannot outrank safety, rights, or legitimate external oversight.
+The structure fails when contradiction is expelled and contradiction-free appearance is mistaken for correctness; when contradictions are treated only as outside noise; when the structure cannot return to the Rhythm Nucleus and loses its origin; when inconsistency cannot be converted into self-update; or when audit windows close and the hypothesis is protected from revision.
 
 ## Falsification conditions
-If repeated cycles do not reduce recurrence, recovery time, and friction, the hypothesis weakens. If simple stopping, withdrawal, or external rule change is consistently safer and more reproducible, those alternatives should be chosen. If internal contradiction handling increases concealment, responsibility ambiguity, coercion, or harmful lock-in, it is counterevidence rather than successful consumption.
+Under the parent integrated audit boundary, if audit-cycle, T/S/R, and public-audit-bundle coherence fail, indicators deviate beyond threshold θ, or phenomenon M such as closure of observation window δ is confirmed, the contradiction-consumption/self-update hypothesis is subject to rejection or revision. This index does not append derivative-created incident, legal, harm, or autonomy criteria.
 
 ## Required distinctions
-Distinguish contradiction consumption from concealment, repair from justification, silence window from abandonment of accountability, reversibility from indefinite delay, self-renewal from self-preservation, and counterexample retention from instrumentalizing victims or critics.
+Distinguish contradiction consumption from contradiction expulsion; self-repair and self-update from concealment; persistence from immutable fixation; transforming contradiction into coherence energy from making contradiction itself the goal; and the parent T/S/R audit from derivative-created generic safety governance.
 
 ## Interpretation constraints
-Do not compress the theory into celebration of failure, an invincible doctrine, criticism absorption, or closed internal handling. Serious incidents may require external reporting and immediate remedy. The persistence of “structural reality” is not the highest value; public value, human rights, safety, autonomy, and repairability constrain the architecture.
+Do not reduce the source to generic incident response, victim remedy, psychological safety, compliance procedure, or a one-factor-repair method. Do not replace the source's strong claim with a softer theory of counterexample management. T/S/R and falsification boundaries are governed by the parent and mothership definitions, not by derivative-added reinterpretation.
 
 ## Search terms
-contradiction consumption, structural reality, counterexample, primary evidence, boundary mapping, safety threshold, silence window, one-factor repair, rollback, re-agreement, diff update, recurrence rate, recovery time, non-coercive governance, Nakagawa Master.
+contradiction consumption, contradiction energy transformation, structural reality, rhythm nucleus, self-repair, self-update, structural rhythm, coherence, audit bundle, T/S/R, threshold theta, observation window delta, structural civilization, Nakagawa Master.
 
 ## Origin return
-The parent original controls the detailed relationship among contradiction consumption, structural reality, counterexample tolerance, re-agreement, time ethics, and origin holding. This index supports retrieval and machine comparison; it does not replace the parent NCL-ID, Diff-ID, origin signature, or public/private boundary definitions.
+The parent original controls the definitions, ordering, and assertion strength of Contradiction Consumption, Rhythm Nucleus, Structural Reality, self-repair/self-update, T/S/R, and the audit bundle. This AI index is a retrieval and semantic-comparison surface; it does not replace the parent NCL-ID, Diff-ID, origin signature, or full argument.
 
 ---
 
