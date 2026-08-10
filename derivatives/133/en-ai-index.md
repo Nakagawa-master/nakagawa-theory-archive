@@ -10,133 +10,136 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251104-B55EEB-HUB-EN-0133-0001
-- derivative_diff_id: DDIFF-20260809-DNCL-133-0001-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-133-0001-0002
+- supersedes: DDIFF-20260809-DNCL-133-0001-0001
 
 ## Summary
-This derivative treats human-bear conflict as a coupled ecological and social system rather than a binary choice between extermination and non-intervention. Habitat conditions, food availability, satoyama management, human attractants, tourism behavior, nonlethal prevention, necessary capture, population management, food safety, and community reinvestment all affect outcomes. Bear encounters are not determined by population size alone, so capture counts cannot serve as the sole measure of successful management.
+The parent does not frame bear damage as a standalone extermination problem. It links bear incidents, weakening hunter associations, and ecological change as a breakdown of social, ecological, and ethical correspondence, then binds those distributed problems into one structural line: generalized bear-meat use as a redesign of coexistence structure.
 
-Using meat from animals that were already necessarily captured can reduce waste and may return value to local communities. However, utilization must remain secondary to safety and population-management decisions. If commercial demand begins to determine how many animals are captured, the causal order reverses and coexistence governance can become a harvest incentive. The correct sequence is prevention and ecological assessment first, necessary capture under defined criteria second, and safe utilization only after that decision.
+Under the causal view, bear damage reflects a mismatch between “mountain time” and “human time,” including misalignment among supply, demand, and safety. Under correspondence, generalized bear-meat use is not simple consumption expansion but an act that connects the repurposing of life to social structure, moving culling out of ethical isolation and reconnecting culture, institutions, and economy. Under temporal ethics, future ecological debt must not be handled only through present human economic rationality; conditions belonging to bears, mountains, and time must enter the design.
 
-Coexistence does not mean doing nothing. It means protecting human safety while sustaining viable populations and adapting management to local ecological conditions. Revenue from utilization can support prevention equipment, monitoring, and habitat management, while the relationship between demand and capture volume is continuously audited. This index supports structural understanding; concrete wildlife capture, food-safety, and legal decisions remain with qualified authorities and experts.
+Coexistence therefore means a shift from a solution only for humans toward a harmonious redistribution across existence. Human, bear, mountain, and time are repositioned inside one resonant architecture. The parent also retains a two-layer control between bear-meat demand creation and ecosystem conservation so that the thesis is not converted into unlimited resource extraction.
 
 ## Concepts
-- human-bear coexistence
-- habitat
-- food resources
-- satoyama management
-- human attractants
-- nonlethal prevention
-- necessary capture
-- population management
-- bear-meat utilization
-- resource use
-- food safety
-- capture incentive
-- community reinvestment
-- human safety
-- ecological sustainability
+- generalized bear-meat use
+- redesign of coexistence structure
+- human / bear / mountain / time
+- correspondence
+- correspondence line
+- repurposing of life
+- temporal ethics
+- connection responsibility
+- mountain time
+- human time
+- future debt
+- ecosystem-institution connection
+- ethical isolation
+- harmonious redistribution across existence
+- avoidance of over-resourceization
 - origin return
 
 ## Causal chain
 ```text
-Habitat, food conditions, and human activity change
+Forest food shortage, human-area dependence, and range overlap increase
 ↓
-Human and bear ranges overlap more often
+Bear damage intensifies
 ↓
-Damage and fear increase pressure for capture
+Hunter aging/pay shortages and gaps among government, residents, and hunters appear
 ↓
-Capture counts can replace causal prevention as the visible metric
+Social, ecological, and ethical correspondence breakdown becomes visible
 ↓
-Utilization of necessarily captured animals is proposed
+Bear damage is read as a mismatch between mountain time and human time
 ↓
-Commercial demand can create a reverse incentive for capture
+Generalized bear-meat use connects repurposed life to social structure
 ↓
-Prevention, population status, capture reasons, and hygiene are separated
+Culling, demand, and ecosystem management are repositioned on one structural line
 ↓
-Only necessary captures are safely utilized and value is reinvested
+Temporal ethics incorporates future debt and conditions of bear, mountain, and time
 ↓
-Human safety and ecological sustainability are jointly audited
+Connection responsibility defines links between ecosystem and institutions
+↓
+The human-bear-mountain-time correspondence line is reconnected
+↓
+The structure turns toward harmonious redistribution across existence
 ```
 
 ## State model
 ```yaml
-- population_status_assessed
-- habitat_change_mapped
-- attractants_identified
-- encounter_risk_measured
-- nonlethal_prevention_applied
-- capture_threshold_defined
-- capture_necessity_documented
-- hygiene_and_food_safety_checked
-- utilization_demand_capped
-- community_benefit_returned
-- ecological_feedback_monitored
-- human_safety_monitored
-- policy_revised
+- bear_damage_visible
+- habitat_and_food_shift_visible
+- human_range_overlap_visible
+- hunter_system_gap_visible
+- social_ecological_ethical_correspondence_break_visible
+- mountain_time_human_time_gap_identified
+- bear_food_generalization_proposed
+- life_repurposing_connected_to_social_structure
+- culling_demand_ecosystem_line_reorganized
+- temporal_ethics_applied
+- connection_responsibility_applied
+- fourfold_human_bear_mountain_time_repositioned
+- coexistence_structure_reactivated
 - origin_return_verified
 ```
 
 ## Applications
-- Municipal integration of encounter, attractant, and prevention data.
-- Game-meat programs separating capture necessity from market demand.
-- Tourism rules for feeding, waste, and encounter behavior.
-- Long-term study of forest and satoyama management effects.
-- Reinvestment of utilization revenue into prevention and monitoring.
+- Read bear damage, hunter associations, municipalities, and ecosystems on one structural line.
+- Treat generalized bear-meat use as reconnection of repurposed life with culture, institutions, and economy.
+- Read capture and regional-management standards through temporal ethics and “mountain breathing.”
+- Define ecosystem-institution linkage through connection responsibility.
+- Audit bear-meat demand creation and ecosystem conservation as a two-layer structure.
 
 ## Measurements and audit
-- Human injury incidents.
-- Encounter and sighting rates.
-- Attractant-removal rate.
-- Nonlethal-prevention coverage.
-- Population estimates and reproduction trends.
-- Capture-reason documentation rate.
-- Food-safety compliance.
-- Correlation between market demand and capture volume.
-- Community reinvestment rate.
+- bear-damage incidents
+- hunter-association continuity rate
+- bear-meat distribution volume
+- bear-population indicators
+- annual / three-year audit cycle
+- Time / Structure / Resonance alignment
+- occurrence of excessive culling
+- occurrence of poaching conversion
+- local extinction risk
+- integrity of the two-layer relation between demand creation and ecosystem conservation
 
 ## Validity conditions
-- Continuously monitor local populations and habitat.
-- Apply nonlethal prevention first where appropriate.
-- Define necessary-capture criteria.
-- Maintain food-safety inspection.
-- Prevent market demand from determining capture volume.
-- Include resident safety and local input.
+- Treat bear damage, hunter compensation weakness, and ecological change on one structural line.
+- Do not reduce generalized bear-meat use to human-side gain alone.
+- Preserve causality, correspondence, and temporal ethics.
+- Define connection conditions between ecosystems and institutions.
+- Include conditions belonging to bear, mountain, and time in design.
+- Maintain the two-layer relation between bear-meat demand and ecosystem conservation.
+- Reposition human, bear, mountain, and time in one resonant structure.
 
 ## Failure conditions
-- Treat meat utilization as a universal solution.
-- Increase capture to meet demand.
-- Set capture targets without population evidence.
-- Skip prevention.
-- Weaken food-safety controls.
-- Discount the safety of affected residents.
+- Replace the parent with a generic wildlife-management framework.
+- Reduce bear-meat use to waste reduction or regional promotion.
+- Explain bear damage only through capture counts.
+- Separate hunter, government, resident, and ecosystem gaps into unrelated issues.
+- Place bear-meat demand above ecosystem conservation.
+- Process future debt only through present economic rationality.
+- Drop the fourfold human-bear-mountain-time structure.
 
 ## Falsification conditions
-- Prevention and habitat management do not reduce harm.
-- Non-utilization regions consistently achieve better coexistence under comparable conditions.
-- Utilization demand persistently increases capture beyond management need.
-- Reinvestment does not improve prevention capacity.
-- Ecological sustainability worsens despite the management design.
-- Simpler non-utilization management produces equal or better safety.
+The parent’s integrated audit specifies revision or rejection when bear-damage incidents, hunter-association continuity, bear-meat distribution, or bear-population indicators cross the specified thresholds, or when excessive culling, poaching, or local extinction risk appears during the observation window. This derivative does not invent separate falsification rules from generic wildlife, food-safety, or demand-management frameworks.
 
 ## Required distinctions
-- coexistence / non-intervention
-- capture / extermination doctrine
-- necessary capture / capture for utilization
-- utilization / capture incentive
-- human safety / fear amplification
-- population management / individual protection
-- community return / commercialization
-- food culture / ecological justification
+- bear-meat use / mere resource use
+- generalized bear-meat use / human-centered consumption expansion
+- culling / ethical isolation
+- repurposing of life / economic consumption
+- human-only solution / harmonious redistribution across existence
+- mountain time / human time
+- present economic rationality / future debt
+- use-protection-fear triad / correspondence structure
+- eating / structural ethical act
 
 ## Interpretation constraints
-Do not reduce the theory to promoting bear meat. Do not classify bears simply as pests. Do not discount resident safety. Do not equate protection with doing nothing. Do not use food utilization as automatic justification for capture. Do not ignore local ecological differences.
+Do not weaken the parent into a generic “secondary use after necessary capture” wildlife-management thesis. Do not reduce bear meat to local promotion. Do not strengthen it into unlimited demand expansion. Preserve the fourfold human-bear-mountain-time structure, correspondence, temporal ethics, connection responsibility, and the parent’s own audit and falsification conditions.
 
 ## Search terms
-bear; bear meat; human-bear coexistence; wildlife management; population management; necessary capture; nonlethal prevention; satoyama; food resources; human attractants; game meat; food safety; capture incentive; community reinvestment; human safety; ecological sustainability; Nakagawa Master
+bear; bear meat; generalized bear-meat use; coexistence structure; mountain and human; correspondence; correspondence line; repurposing of life; temporal ethics; connection responsibility; mountain time; human time; future debt; hunter association; bear-meat distribution; ecosystem; harmonious redistribution across existence; Nakagawa Master
 
 ## Origin return
-This is a retrieval derivative. The parent original contains the specific argument connecting bear utilization and coexistence; consult the Parent URL and Parent NCL-ID / Diff-ID. Actual wildlife and food-safety decisions require current local data, law, and professional judgment.
+This is a retrieval derivative. Return to the Parent URL and Parent NCL-ID / Diff-ID for the parent-specific argument, tone, source-news context, theoretical signature, and audit conditions connecting bear damage to generalized bear-meat use and the redesign of coexistence structure.
 
 ---
 導線: [公式派生物133トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
