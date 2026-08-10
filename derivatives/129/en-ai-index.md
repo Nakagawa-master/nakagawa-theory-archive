@@ -10,133 +10,136 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-0FD56E-HUB-EN-0129-0001
-- derivative_diff_id: DDIFF-20260809-DNCL-129-0001-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-129-0001-0002
+- supersedes: DDIFF-20260809-DNCL-129-0001-0001
 
 ## Summary
-This derivative asks when online speech begins to behave like an institution. A statement can remain ordinary expression, but recommendation systems, search ranking, repetition, crowd response, monetization rules, and moderation can amplify it until it changes reputation, participation, visibility, income, or practical choice. The relevant unit of audit is therefore not only what was said, but how the speech traveled, which actors amplified it, what power asymmetries existed, and what effective sanctions followed.
+The parent examines the point at which individual speech in the online public sphere begins to act “like an institution” because propagation and synchronization outrun ethical verification. Its two governing lines are Correspondence and Temporal Ethics. Correspondence checks whether stated values, accusations, and warnings actually correspond to the structure of harm. Temporal Ethics moves judgment and intervention away from immediate reflex and into a continuing beat that preserves verification and correction.
 
-The framework does not deny freedom of expression. It distinguishes discomfort, criticism, disagreement, harm, coercion, and exclusion, and it rejects the idea that every offensive statement should automatically be regulated as institutional violence. Platforms can exert strong practical influence without being identical to states; speakers, platforms, crowds, advertisers, and ranking systems can all contribute differently to the final effect.
+When propagation runs ahead of correspondence, sanctions can begin before the danger named by speech matches the actual harm profile, and a “narrative of justice” can overwrite the life of the affected person. Fast synchronization removes the observation window needed for correction and fixes misallocation. The parent treats this not primarily as individual moral failure but as a structural deficiency produced by missing correspondence and delayed ethics.
 
-A core requirement is reversibility. When a rating, norm, or sanction is wrong or excessive, appeal, correction, review, re-entry, and exit must work in practice. A correction that is technically published but never reaches the audience exposed to the original claim does not provide full remedy. This index supports structural analysis of online public spheres but does not replace legal determinations about illegality, crime, or permissible regulation.
+The design task has three parts: decompose criticism from personality into act / terminology / operation and make the correspondence line visible; institutionalize public correction routes through versioning, annotations, and additions; and operate recipient-safety requirements such as trigger warnings and mute routes together with speaker reversibility through withdrawal and update. The conclusion is not harsher punishment but finer structure.
 
 ## Concepts
 - online public sphere
-- institutional effect
-- speech
-- recommendation
-- visibility
-- repetition
-- norm formation
-- sanction
-- power asymmetry
-- moderation
-- appeal
-- correction
-- re-entry
-- exit capability
+- speech behaving like an institution
+- correspondence
+- temporal ethics
+- ethical lag
+- observation window
+- synchronization acceleration
+- statement–harm structure
+- personality / act / term / operation
+- public correction
+- versioning
+- annotation and addition
+- recipient safety
+- trigger warning
+- mute route
+- withdrawal and update
 - reversibility
-- origin return
+- audit bundle
+- structural refinement
 
 ## Causal chain
 ```text
-Speech is produced
+Speech is published
 ↓
-Recommendation, sharing, and search amplify reach
+Propagation and synchronization accelerate
 ↓
-Repetition turns evaluation into a practical norm
+Sanction runs ahead of correspondence checking
 ↓
-Reputation, participation, income, or visibility are affected
+Speech and actual harm remain misaligned
 ↓
-Platforms and crowds become co-producers of the effect
+A justice narrative overwrites the affected person's lived reality
 ↓
-Discomfort is separated from harm and criticism from exclusion
+The observation window closes and misallocation becomes fixed
 ↓
-Reach, power asymmetry, and sanction effects are recorded
+Criticism is decomposed from personality into act / term / operation
 ↓
-Appeal, correction, re-entry, and exit are designed
+Public correction and safety-plus-reversibility routes are designed
 ↓
-Reversibility of the public sphere is re-audited
+Verification and correction operate on a Temporal Ethics beat
+↓
+Structural refinement restores care in the public sphere
 ```
 
 ## State model
 ```yaml
-- speech_created
-- original_context_preserved
-- amplification_route_recorded
-- recommendation_effect_measured
-- repetition_observed
-- norm_effect_detected
-- sanction_effect_checked
-- platform_power_mapped
-- affected_parties_identified
-- appeal_channel_open
-- correction_visibility_checked
-- reentry_possible
-- exit_cost_measured
-- outcome_reaudited
+- speech_published
+- propagation_accelerated
+- synchronization_pressure_detected
+- statement_harm_correspondence_checked
+- personality_targeting_decomposed
+- act_term_operation_units_defined
+- observation_window_preserved
+- public_correction_route_open
+- version_annotation_append_route_open
+- recipient_safety_route_open
+- speaker_retraction_update_route_open
+- audit_bundle_operational
+- correction_outcome_reaudited
+- origin_return_verified
 ```
 
 ## Applications
-- Separate deletion, downranking, recommendation limits, and demonetization in moderation audits.
-- Design appeal and re-entry routes for online communities.
-- Measure ranking effects in AI recommendation systems.
-- Decompose speaker, crowd, platform, and media contributions during online pile-ons.
-- Audit informal workplace-platform norms that affect participation and evaluation.
+- Check correspondence between online criticism and actual harm after separating personality from act, term, and operation.
+- Operate versioning, annotation, and additions as visible public correction routes.
+- Put trigger warnings and mute routes in the same audit bundle as withdrawal and update capability.
+- Preserve an observation window in community operations instead of allowing immediate synchronization to determine sanctions.
+- Audit speech speed, correspondence, and correction capacity together in AI-era public communication.
 
 ## Measurements and audit
-- Reach amplification ratio.
-- Recommendation contribution rate.
-- Repetition and norm-formation speed.
-- Effect on reputation, income, or participation.
-- Appeal intake rate.
-- Correction visibility rate.
-- Re-entry success rate.
-- Exit cost.
-- Reproducibility of moderation reasons.
+- statement–harm correspondence consistency
+- misallocation signal rate
+- correction completion rate
+- affected-party satisfaction
+- observation-window status
+- durability of correction / withdrawal / update operations
+- preservation of reversible minutes and logs
+- visibility of evidence / counterevidence / remedies in the public audit bundle
+- T/S/R consistency
 
 ## Validity conditions
-- Separate original speech from amplification.
-- Measure power and reach asymmetry.
-- Distinguish discomfort from material harm.
-- Provide appeal and review routes.
-- Verify correction visibility.
-- Preserve re-entry and meaningful exit.
+- Check speech against actual harm through Correspondence.
+- Run judgment and intervention on a correction-capable beat.
+- Decompose criticism from personality into act / term / operation.
+- Maintain public correction routes.
+- Design recipient safety and speaker reversibility together.
+- Preserve the observation window.
+- Keep evidence, counterevidence, and remedies auditable.
 
 ## Failure conditions
-- Treat all discomfort as institutional harm.
-- Ignore institutional effects because they are “only words.”
-- Hide recommendation and ranking structures.
-- Block appeal and review.
-- Publish corrections where affected audiences cannot see them.
-- Normalize permanent exclusion without explanation or review.
+- Treat propagation speed as evidence of correctness.
+- Sanction without checking correspondence to actual harm.
+- Fix the whole personality as the target of criticism.
+- Close the observation window through immediate reaction.
+- Hide or omit correction routes.
+- Treat safety and expression as mutually exclusive.
+- Equate harsher punishment with structural improvement.
 
 ## Falsification conditions
-- Amplification and repetition do not affect behavioral conditions.
-- Changing recommendation structures does not change institutional effects.
-- Appeal and correction mechanisms do not improve remedy.
-- Content-only models consistently explain outcomes equally or better.
-- Exit capability does not reduce harm.
-- Power-asymmetry measures do not improve prediction.
+Under the parent’s integrated audit, the active hypothesis is revised or rejected when monitored indicators such as misallocation signals, correction completion, and affected-party satisfaction persistently cross their configured thresholds, or when the verification/correction observation window closes for the specified period. T/S/R and the public audit bundle remain the parent’s re-agreement conditions; this derivative does not invent a separate recommendation/ranking causal model.
 
 ## Required distinctions
-- speech / institutional effect
-- expression / coercion
-- deletion / reach restriction
-- discomfort / harm
-- recommendation / neutral display
-- norm / law
-- criticism / exclusion
-- correction / erasure
+- speech / actual harm
+- personality / act, term, operation
+- immediate reflex / correction-capable beat
+- justice narrative / affected person's life
+- criticism / sanction
+- public correction / invisible edit
+- recipient safety / speaker reversibility
+- harsher punishment / structural refinement
+- speech velocity / ethical beat
 
 ## Interpretation constraints
-Do not reject freedom of expression. Do not classify criticism or disagreement automatically as institutional violence. Do not use discomfort as an automatic basis for criminalization. Do not equate platforms and states. Do not place all responsibility on algorithms. Return legal determinations to applicable law and professional procedure.
+Do not replace the parent with a generic recommendation-algorithm audit, moderation policy, or legal-regulation framework. Do not classify every offensive statement as institutional violence, and do not assume words are harmless merely because they are words. Preserve Correspondence, Temporal Ethics, personality→act/term/operation decomposition, public correction, and safety plus reversibility as the parent-specific structure.
 
 ## Search terms
-online public sphere; institutional effect; speech; recommendation; visibility; moderation; norm formation; sanction; appeal; correction; re-entry; exit capability; power asymmetry; ranking; freedom of expression; reversibility; Nakagawa Master
+online public sphere; words as institutions; correspondence; temporal ethics; ethical lag; observation window; synchronization; speech; actual harm; personality; act; terminology; operation; public correction; versioning; reversibility; audit bundle; structural refinement; Nakagawa Master
 
 ## Origin return
-This is a retrieval derivative. The precise boundary between speech and institutional effect remains with the parent original; consult the Parent URL and Parent NCL-ID / Diff-ID. Concrete legal and regulatory decisions require current law and appropriate professional procedures.
+This index reorganizes the parent for retrieval and machine reading. Return to the Parent URL and Parent NCL-ID / Diff-ID for the parent’s definitions of Correspondence and Temporal Ethics, the three design tasks, integrated/local audit abstracts, and the structural signature concerning speech velocity and ethical lag.
 
 ---
 導線: [公式派生物129トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
