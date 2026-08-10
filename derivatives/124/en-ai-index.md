@@ -10,143 +10,128 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-E11B56-HUB-EN-0124-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-124-EN-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-124-EN-0000-0002
+- supersedes: DDIFF-20260809-DNCL-124-EN-0000-0001
 
-## Summary
-This original examines a care structure in which love is used as leverage for unlimited unpaid sacrifice. Love can motivate care, but when institutions assume that a loving family member will always provide time, emotion, physical labor, and lost income, structural shortages disappear into private responsibility. Burden may concentrate on particular family members, genders, or generations, producing exhaustion, employment exit, poverty, isolation, and relationship damage that is then misdescribed as insufficient love. Sustainable care separates affection from institutional obligation and combines public services, professional care, income protection, respite, substitutes, temporary exit, and re-entry. The goal is not to abolish family care but to make it voluntary and sustainable. AI can estimate workload but must not diagnose love or family worth.
+## Structural role
+A structural translation log that repairs the civilizational mistranslation in which voluntary family affection became unpaid care duty, using Correspondence and Temporal Ethics to retranslate care as social right/labor.
 
-## Concepts
-- care structure
-- love
-- unpaid care
-- family responsibility
-- caregiving
-- childcare
-- emotional labor
-- respite
-- exit
-- income protection
-- public service
-- professional care
-- burden distribution
-- gender
-- care socialization
+## Structural summary
+The parent describes a structural breakdown of a civilization that failed to institutionalize love. “Family love” was translated directly into caregiving duty; voluntary affection became obligation, creating a Correspondence failure between beautiful language and the actual realities of unpaid labor, time erosion, employment exit, poverty, and end-of-life burden. Temporal Ethics is also missing because continuing care time is demanded as immediate service without a mechanism that returns contribution through future compensation, social credit, or security. The proposed transition is not rejection of love or family. Love is temporarily separated from institutional responsibility so care can be translated into social right/labor and implemented as public benefit, evaluation, leave rights, and other forms of “institutional love.” The parent frames this as a transition toward a recursively corresponding society.
+
+## Central proposition
+```text
+To protect love, separate it from unpaid institutional duty,
+translate care into social right/labor,
+and restore alignment between affection, obligation, and system.
+```
 
 ## Causal chain
 ```text
-Love is equated with duty
+Family love is narrated as the basis of care
 ↓
-Unlimited sacrifice is expected
+Voluntary affection is translated directly into duty
 ↓
-Burden concentrates
+Words/emotion diverge from structural reality
 ↓
-Exhaustion and employment exit
+Correspondence failure
 ↓
-Failure is personalized as insufficient love
+Care is demanded as immediate unpaid service
 ↓
-Separate affection from institutional duty
+No future repayment mechanism for continuing care time
 ↓
-Add public and professional support
+Temporal Ethics failure
 ↓
-Guarantee respite and substitution
+Time erosion, employment exit, poverty, end-of-life burden
 ↓
-Rebuild sustainable care
+Separate love from institutional responsibility
+↓
+Redefine care as social right/labor
+↓
+Translate into public benefit, evaluation, leave rights
+↓
+Institutional love / recursively corresponding society
 ```
 
-## State model
+## Core concepts
+- Correspondence failure
+- Temporal Ethics failure
+- structural mistranslation
+- affection / obligation / institution
+- care as social right/labor
+- institutional love
+- recursively corresponding society
+- de-familialization
+- sustainable rhythm
+- future repayment
+- structural gentleness
+- ethical logistics
+- T/S/R
+- threshold θ
+- observation window δ
+
+## Operational objects / state model
 ```yaml
-- care_need_identified
-- love_and_obligation_separated
-- unpaid_time_measured
-- income_loss_measured
-- burden_concentration_checked
-- public_support_mapped
-- professional_support_available
-- respite_and_substitute_open
-- exit_and_reentry_open
-- dissent_recorded
-- burden_reallocated
+- family_love_narrative_observed
+- love_to_duty_translation_checked
+- actual_care_burden_observed
+- correspondence_failure_checked
+- care_time_consumption_observed
+- future_repayment_line_checked
+- temporal_ethics_failure_checked
+- care_redefined_as_social_right_and_labor
+- public_benefit_evaluation_leave_translation_checked
+- institutional_love_alignment_checked
+- audit_cycle_applied
+- T_S_R_checked
+- threshold_theta_observed
+- observation_window_delta_observed
+- hypothesis_A_revised_if_needed
 - origin_return_verified
 ```
 
-## Applications
-1. Respite and substitution in long-term care.
-2. Non-gendered distribution of childcare burden.
-3. Prevent care-related employment exit.
-4. Build support routes that do not shame families for asking for help.
-
-## Measurements and audit
-- unpaid-care hours
-- care-related employment exit
-- respite use
-- substitute-care use
-- income loss
-- burden concentration
-- support access
-- isolation
-- re-entry rate
+## Required distinctions
+- affection / institutional obligation
+- voluntary emotion / social right and labor
+- narrated gentleness / actual care burden
+- immediate service / contribution returned through sustainable rhythm
+- family dependence / institutional love
+- de-familialization / rejection of family
+- private debt / distributive mechanism
+- moral ideal / structural gentleness as ethical logistics
 
 ## Validity conditions
-- Separate love from institutional duty.
-- Make care costs visible.
-- Provide respite and substitution.
-- Do not penalize asking for help.
-- Distribute burden across actors.
-- Respect affected-party choice.
+The parent requires Correspondence and Temporal Ethics when translating affection into institutional language. Care is redefined as social right/labor and translated into public allocation such as benefits, evaluation, and leave rights, preserving alignment between words and reality and returning continuing contribution through time.
 
-## Failure conditions
-- Demand endurance as proof of love.
-- Assume unlimited unpaid family labor.
-- Label support use as lack of love.
-- Fix burden to one gender.
-- Justify low professional pay through devotion.
-- Punish temporary exit as abandonment.
+## Failure / non-applicable conditions
+The parent-defined failure occurs when “love = unpaid service” becomes an institutional premise or when caregiving time is consumed without a future return line. Do not reduce the parent to a generic respite/exit/re-entry, AI workload prediction, or family-diagnosis framework.
 
-## Falsification conditions
-- Support and respite do not improve sustainability.
-- Institutionalization consistently damages relationships.
-- Family-only care is consistently fairer and more sustainable.
-- Visibility of burden only commercializes relationships.
-- Substitute care does not improve safety or choice.
-
-## Required distinctions
-- love / obligation
-- care / self-sacrifice
-- family responsibility / social responsibility
-- support use / lack of love
-- respite / abandonment
-- professionalism / devotion
-- mutual aid / coercion
-- socialization / denial of relationships
+## Falsification / revision boundary
+The integrated audit uses periodic checks of intra-family burden, employment exit, care-recipient QOL, T/S/R, and public audit-bundle consistency. If unpaid labor concentration or mental withdrawal exceeds threshold θ, or observation window δ closes so voices disappear, hypothesis A is revised or rejected.
 
 ## Interpretation constraints
-- Do not reject love.
-- Do not abolish family care by assumption.
-- Do not stigmatize support users.
-- Do not normalize caregiver sacrifice.
-- Do not turn social support into surveillance.
-- Do not use as family diagnosis.
+- Do not turn the article into rejection of love or abolition of family care.
+- Preserve Correspondence failure and Temporal Ethics failure.
+- Preserve institutional love, recursively corresponding society, and care as social right/labor.
+- Do not elevate derivative-authored respite, exit/re-entry, family diagnosis, or AI prediction into parent core theory.
+- Do not replace the parent’s T/S/R–θ–δ audit with invented generic KPIs.
 
-## Search terms
-- care structure
+## Retrieval keys
 - love as hostage
-- unpaid care
-- caregiving burden
-- respite care
-- care leave
-- income protection
-- public care
-- professional care
-- burden distribution
-- gendered care
-- exit and reentry
-- family responsibility
-- care socialization
-- source return
+- care structure
+- Correspondence failure
+- Temporal Ethics
+- affection obligation institution
+- care as social right labor
+- institutional love
+- recursive correspondence society
+- de-familialization
+- structural captivity of love
+- compassion distributive mechanism
+- structural gentleness
 
 ## Origin return
-Return to the parent original for the exact care/love argument and to applicable care, labor, and welfare systems for concrete cases. This index is not a family diagnosis.
+Return to the parent’s Nakagawa-theory section, concise structural explanation, integrated/local audit abstracts, and English origin signature for affection/obligation, care as labor/institution/right, structural captivity, and compassion as a distributive mechanism.
 
 ---
 
