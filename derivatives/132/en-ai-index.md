@@ -10,133 +10,128 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251103-E1412C-HUB-EN-0132-0001
-- derivative_diff_id: DDIFF-20260809-DNCL-132-0001-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-132-0001-0002
+- supersedes: DDIFF-20260809-DNCL-132-0001-0001
 
 ## Summary
-This derivative distinguishes explanation that expands a person's ability to decide from persuasion that narrows the ability to challenge, pause, refuse, or withdraw. AI can personalize language, ordering, timing, and emotional framing at scale using behavioral history and personal attributes. That capability can improve relevance, but it can also create unusually strong information asymmetry when the persuader knows how the recipient is being optimized while the recipient does not know the objective, data, or alternatives being withheld.
+This index preserves the parent article's strong claim: persuasion is an operation that linearizes another person's structure and deprives it of reversibility. A person holds multiple causal lines, values, hesitations, and possible judgments. Persuasion rearranges those plural structures toward one conclusion desired by the persuader; when dissent, reconsideration, and the ability to return are lost, communication becomes structurally destructive.
 
-The main structural risk is not persuasion in general. It is optimization for conversion or agreement when counterevidence is hidden, alternatives are hard to find, refusal is costly, withdrawal is complex, or repeated contact exploits fatigue, fear, shame, scarcity, loneliness, or other vulnerabilities. A formal consent click is not sufficient evidence of deliberative autonomy when the surrounding choice architecture has materially constrained the path to saying no.
+In the AI era, this linearization can be amplified by speed, scale, repetition, and optimization. The source therefore does not merely ask how to make persuasion safer. It proposes a shift away from one-directional persuasion toward correspondence-structure communication grounded in bidirectionality, reversibility, temporal ethics, and allocation responsibility.
 
-AI-era persuasion should therefore be audited using comprehension, counterevidence access, alternative visibility, pause and refusal capability, withdrawal success, post-decision regret, and long-term trust in addition to conversion rate. Personalization that helps understanding should be separated from personalization that exploits vulnerability. The framework applies to sales, advertising, politics, education, finance, and conversational AI while not replacing applicable consent, consumer-protection, or advertising law.
+Bidirectionality means both structures can affect the relationship. Reversibility means understanding, judgment, and relation can be reorganized later. Temporal ethics asks whether present agreement creates irreversible debt for future freedom of judgment. Allocation responsibility makes visible who distributes information, opportunity, voice, and room for judgment. Together they form the source-specific alternative to persuasion-centered communication.
 
 ## Concepts
 - persuasion
-- explanation
-- manipulation
-- personalization
-- vulnerability exploitation
-- emotional targeting
-- information asymmetry
-- consent
-- deliberation
-- pause
-- refusal
-- withdrawal
-- counterevidence
-- alternatives
-- autonomy
+- persuasion structure
+- structural linearization
+- reversibility
+- bidirectionality
+- AI optimization
+- domination structure
+- temporal ethics
+- allocation responsibility
+- correspondence
+- correspondence-structure communication
+- plural judgment structure
+- freedom of judgment
 - origin return
 
 ## Causal chain
 ```text
-Personal attributes and behavioral history accumulate
+A person holds plural judgment structures
 ↓
-AI optimizes words, sequence, and timing for response
+Persuasion rearranges them toward one desired conclusion
 ↓
-Conversion improves and contact becomes automated
+The structure becomes linearized
 ↓
-Counterevidence, alternatives, and pause options receive less attention
+Dissent, reconsideration, and return paths shrink
 ↓
-Formal consent is mistaken for deliberative choice
+Reversibility is lost
 ↓
-Refusal and withdrawal become more costly
+AI amplifies speed, scale, repetition, and optimization
 ↓
-Objectives, data, and optimization metrics are exposed
+One-directional communication can become a domination structure
 ↓
-Counterevidence, pause, refusal, withdrawal, and human contact are designed
+Move away from persuasion-centered communication
 ↓
-Communication shifts from outcome capture toward decision support
+Embed bidirectionality, reversibility, temporal ethics, and allocation responsibility
+↓
+Shift to correspondence-structure communication
 ```
 
 ## State model
 ```yaml
-- persuasion_goal_declared
-- optimization_metric_disclosed
-- user_data_sources_recorded
-- personalization_level_measured
-- emotional_targeting_checked
-- alternative_options_presented
-- counterevidence_available
-- pause_option_available
-- refusal_path_open
-- withdrawal_path_open
-- human_contact_available
-- comprehension_checked
-- pressure_signals_audited
-- post_decision_regret_observed
+- plural_judgment_structure_present
+- persuasion_structure_active
+- structure_linearized
+- dissent_space_reduced
+- reversibility_reduced
+- ai_amplification_active
+- domination_risk_visible
+- bidirectionality_restored
+- reversibility_restored
+- temporal_ethics_applied
+- allocation_responsibility_visible
+- correspondence_communication_active
+- origin_return_verified
 ```
 
 ## Applications
-- Sales AI balancing conversion with comprehension and withdrawal.
-- Political advertising auditing targeting and message inconsistency.
-- Educational AI separating explanation from answer steering.
-- Financial marketing auditing fear, scarcity, and urgency tactics.
-- Conversational AI avoiding dependence optimization through emotional vulnerability.
+- Design human-AI dialogue as mutual correspondence rather than forced convergence.
+- Preserve another party's judgment structure and return paths in sales and consensus formation.
+- Avoid owning a learner's structure through one correct conclusion in education or advice.
+- Audit large-scale AI optimization for structural linearization.
+- Make allocation of information, opportunity, voice, and judgment space visible.
 
 ## Measurements and audit
-- Scope of personal data used for personalization.
-- Counterevidence presentation rate.
-- Alternative-option presentation rate.
-- Pause and refusal selection rate.
-- Withdrawal success rate.
-- Comprehension rate.
-- Emotional-pressure signal rate.
-- Post-decision regret rate.
-- Human-contact reach rate.
+The parent is not centered on generic autonomy KPIs, consent rates, or click-through metrics, so this derivative does not invent them as official theory. Audit stays with source-grounded structural relations:
+- whether plural judgment structures remain intact
+- whether a single conclusion is structurally imposed
+- whether dissent, reconsideration, and return paths remain
+- whether AI amplifies linearization through speed, scale, or repetition
+- whether present agreement reduces future freedom of judgment
+- whether allocation responsibility is visible
+- whether bidirectional correspondence is functioning
 
 ## Validity conditions
-- Declare persuasion goals and optimization metrics.
-- Minimize data used for personalization.
-- Present counterevidence and alternatives.
-- Make pause, refusal, and withdrawal practical.
-- Audit emotional pressure.
-- Preserve human contact for material decisions.
+- Do not own another person's structure through one conclusion.
+- Preserve bidirectionality.
+- Preserve reversibility.
+- Connect present and future through temporal ethics.
+- Make allocation responsibility visible.
+- Treat AI amplification as a structural risk.
+- Shift to correspondence-structure communication.
 
 ## Failure conditions
-- Optimize only conversion or agreement.
-- Secretly exploit personal vulnerability.
-- Hide counterevidence or alternatives.
-- Make refusal or withdrawal disproportionately difficult.
-- Exploit fatigue through repeated contact.
-- Hide AI use or the optimization objective.
+- Fix plural judgment structures into one conclusion.
+- Treat conformity alone as success.
+- Remove dissent, reconsideration, or return paths.
+- Repeatedly amplify one-directional optimization with AI.
+- Ignore debt imposed on future freedom of judgment.
+- Black-box allocation of information and opportunity.
+- Lose bidirectionality and become a domination structure.
 
 ## Falsification conditions
-- Personalized persuasion consistently improves autonomy and long-term satisfaction.
-- Pause, counterevidence, and withdrawal controls do not reduce harm.
-- Emotional targeting does not correlate with reduced autonomy.
-- Non-personalized explanation consistently worsens decision quality.
-- Simpler transparency controls provide equal or greater protection.
-- Withdrawal capability does not improve long-term trust.
+The parent is not primarily a formal numerical falsification article. This derivative does not invent autonomy scores, consent rates, regret rates, or similar thresholds as official falsification criteria. Evaluation remains tied to the parent propositions: persuasion produces structural linearization and loss of reversibility, AI amplifies that structure, and correspondence-structure communication is the proposed alternative.
 
 ## Required distinctions
-- explanation / persuasion
-- persuasion / manipulation
-- personalization / vulnerability exploitation
-- consent / deliberation
-- choice / steering
-- pause / refusal
-- withdrawal / penalty
-- support / dependency formation
+- persuasion / correspondence
+- linearization / preservation of plural structure
+- conformity / structural sharing
+- irreversibility / reversibility
+- one-directional communication / bidirectionality
+- present agreement / temporal ethics
+- opaque allocation / allocation responsibility
+- optimization / domination-structure formation
 
 ## Interpretation constraints
-Do not prohibit all persuasion. Do not classify sales or advertising as inherently harmful. Do not reject personalization categorically. Do not assume users are passive and powerless. Do not turn counterevidence disclosure into unusable information overload. Do not treat transparency alone as sufficient protection.
+Do not weaken the source claim "persuasion is destructive" into "only some bad persuasion is harmful." Do not replace the article with generic personalization, consent-UI, advertising, or consumer-protection guidance. Do not reduce reversibility to cancellation procedures. Preserve bidirectionality, temporal ethics, and allocation responsibility. Keep the final direction as a shift to correspondence-structure communication, not merely safer persuasion.
 
 ## Search terms
-persuasion; AI persuasion; personalization; emotional targeting; vulnerability exploitation; autonomy; consent; deliberation; pause; refusal; withdrawal; counterevidence; alternatives; sales AI; political advertising; manipulation; Nakagawa Master
+persuasion; persuasion structure; structural linearization; reversibility; bidirectionality; AI optimization; domination structure; temporal ethics; allocation responsibility; correspondence; correspondence-structure communication; judgment structure; Nakagawa Master
 
 ## Origin return
-This derivative supports retrieval and structural audit. The parent original contains the specific argument about persuasion, AI asymmetry, and autonomy; consult the Parent URL and Parent NCL-ID / Diff-ID. Concrete consent and advertising questions require current applicable law.
+This is a retrieval derivative. Return to the Parent URL and Parent NCL-ID / Diff-ID for the source-specific argument about destructive persuasion, structural linearization, loss of reversibility, AI amplification, and the shift to correspondence-structure communication.
 
 ---
 導線: [公式派生物132トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
