@@ -10,143 +10,132 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-FBCBEC-HUB-JA-0119-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-119-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-119-0000-0002
+- supersedes: DDIFF-20260809-DNCL-119-0000-0001
 
 ## Summary
-市場価格の上昇と社会全体の豊かさを分け、貨幣で見えにくい信頼、媒介、ケア、知識共有などの接続価値を別の束として記録する移行構造を扱う。接続報酬社会は貨幣廃止でも社会信用スコアでもなく、貨幣会計と非貨幣価値を併存させ、報酬・機会・承認への接続を慎重に監査する設計である。人気、反応数、感情労働を接続価値へ単純変換すると、情動収奪や権力集中が起きるため、評価されない権利、退出、異議、修正が必要になる。「株価5万円」は原典の構造的入口であり、本索引は現在の株価や投資判断を示さない。
+原典は、株価5万円を単なる繁栄ではなく「接続位置の高騰」と読み、社会の評価軸が労働量・生産成果から接続位置へ移りつつあるとする。《接続報酬社会》では、国家・企業・個人の報酬が、どの同盟網・供給網・情報層・知識ネットワークに接続しているかによって決まる。AIが入口仕事や中間業務を代替すると「労働→賃金→消費→生産」の循環が止まり、貨幣は残っても社会的正当性の証明書として機能不全化する。そこで給与に代わる新しい報酬としてAI・医療・教育・限定経済圏などへの「接続権」が現れ、その配分正当性を《照応》と《時間倫理》によって制度化することが社会設計の核心になる。
 
 ## Concepts
-- 資産価格
-- 生活価値
 - 接続報酬社会
-- 接続価値
-- 関係資本
-- 貢献
-- 信頼
-- 価値会計
-- 二重会計
-- 人気偏重
-- 情動収奪
-- 非貨幣報酬
-- 退出権
-- 移行設計
-- 原典回帰
+- 接続位置
+- 接続権
+- 労働＝賃金モデル
+- 貨幣経済の終焉
+- 社会参加の正当性
+- AIによる入口仕事消失
+- 上層集中モデル
+- 政治的延命
+- 接続配分モデル
+- 照応
+- 時間倫理
+- 未来の負債を信用資本へ変換
+- 倫理的接続社会
+- 接続権の配分正当性
 
 ## Causal chain
 ```text
-資産価格上昇
+株価5万円という表層的繁栄
 ↓
-豊かさと同一視
+市場が生産成果より接続位置を評価
 ↓
-生活との乖離
+価値源泉が労働量から接続位置へ移る
 ↓
-貨幣尺度の限界
+AIが入口仕事・中間業務を代替
 ↓
-接続価値観測
+労働→賃金→消費→生産の循環が停止し始める
 ↓
-二重会計
+貨幣が社会参加の正当性装置として機能不全化
 ↓
-報酬接続
+給与以外の接続権が報酬化
 ↓
-収奪監査
+接続権の配分正当性が核心課題になる
 ↓
-複数価値尺度
+照応で価値と貢献を対応させる
+＋
+時間倫理で長期貢献を未来の拍で報いる
+↓
+倫理的接続社会へ移行
 ```
 
 ## State model
 ```yaml
-- asset_price_observed
-- real_income_compared
-- living_cost_compared
-- public_value_checked
-- nonmonetary_contribution_mapped
-- connection_bundle_defined
-- dual_accounting_opened
-- reward_boundary_defined
-- popularity_bias_checked
-- extraction_risk_checked
-- transition_reaudited
+- surface_prosperity_reinterpreted_as_connection_position
+- connection_reward_society_identified
+- labor_wage_cycle_break_observed
+- money_legitimacy_function_failure_identified
+- three_branch_models_identified
+- connection_rights_as_reward_identified
+- correspondence_axis_applied
+- temporal_ethics_axis_applied
+- enclosure_risk_audited
+- T_S_R_checked
+- public_audit_bundle_checked
 - origin_return_verified
 ```
 
 ## Applications
-**1.** 企業の財務と関係指標を併記する。
-**2.** 地域の媒介・ケアを可視化する。
-**3.** 非金銭報酬の配分を設計する。
-**4.** 社会指標へ生活アクセスと信頼を加える。
+**1.** 株価の上昇を生産力ではなく接続位置の市場評価として読む。
+**2.** AIが労働入口を消すことで貨幣取得機会が失われる構造を読む。
+**3.** AI・医療・教育・限定経済圏へのアクセスを「接続権」という報酬原理として分析する。
+**4.** 接続権の配分を照応・時間倫理・公開監査束で検証する。
 
 ## Measurements and audit
-- 資産価格と所得の乖離
-- 生活コスト負担率
-- 接続貢献記録率
-- 信頼継続率
-- 報酬集中度
-- 人気偏重率
-- 無償貢献可視化率
-- 退出可能性
-- 公共価値アクセス
+原典が明示する監査は、接続権の配分が特定層の囲い込みになっていないかの定点検証、T/S/R（T＝照応、S＝構造持続性、R＝再帰性）、評価と報酬の関係が説明可能かという公開監査束の整合である。
 
 ## Validity conditions
-- 価格と生活価値を分ける。
-- 貨幣を即時廃止しない。
-- 複数指標で測る。
-- 人気を価値としない。
-- 異議と修正を置く。
-- 副作用を監査する。
+- 報酬の源泉が労働量だけではなく接続位置へ移っていること。
+- AIによって労働と貨幣の循環が構造的に断たれつつあること。
+- 貨幣の物理的消滅ではなく社会参加の正当性装置としての機能不全を区別すること。
+- 接続権を新しい報酬体系として扱うこと。
+- 接続の正当性を照応と時間倫理で保証すること。
 
 ## Failure conditions
-- 株価を豊かさと断定する。
-- 一つの接続スコアにする。
-- 感情労働を強いる。
-- 貨幣を即時不要とする。
-- 高接続者へ権力集中する。
-- 生活悪化を抽象価値で隠す。
+- 接続報酬社会を単なる非貨幣価値の可視化へ弱める。
+- 原典の「労働＝賃金」モデル終焉を穏当な二重会計へ置換する。
+- 接続権を福利厚生や一般的アクセス権だけに縮約する。
+- 照応と時間倫理を外して、派生側の別の安全原則を中心化する。
+- 株価5万円を単なる投資・価格問題として読む。
 
 ## Falsification conditions
-- 貢献認識が改善しない。
-- 新指標が監視を強める。
-- 貨幣単独の方が公正である。
-- 価格と生活の乖離が観測されない。
-- 複数尺度が複雑性だけを増す。
+原典の統合監査要旨では、指標値が閾値θを下回る／上回る形で極端な偏在が発生する、または観測窓δ期間が閉じ、接続権が寡占的な特権化に固定された現象Mが確認された場合、「接続報酬は倫理的に配分しうる」という仮説Aを棄却または改訂する。
 
 ## Required distinctions
-- 株価 / 豊かさ
-- 価格 / 価値
-- 貨幣廃止 / 複数尺度
-- 接続 / 人気
-- 貢献 / 自己犠牲
-- 信頼 / 監視
-- 報酬 / 権力
-- 移行 / 革命
+- 株価上昇 / 繁栄
+- 生産成果 / 接続位置
+- 労働量 / 接続報酬
+- 貨幣の消滅 / 貨幣の正当性機能不全
+- 給与 / 接続権
+- 接続 / 倫理的接続
+- 即時成果 / 時間倫理
+- 接続価値 / 接続配分の正当性
 
 ## Interpretation constraints
-- 投資予言にしない。
-- 貨幣廃止論にしない。
-- 人気を接続価値にしない。
-- ケア収奪へ使わない。
-- 身分スコアにしない。
-- 金融助言にしない。
+- 接続報酬社会を単なる複数価値尺度論へ弱めない。
+- 原典にない退出権・評価拒否権・社会信用スコア回避を中心条件として補完しない。
+- 「接続位置」「接続権」「照応」「時間倫理」「貨幣経済の終焉」という原典固有の強い主張を保持する。
+- 貨幣そのものが消えるという意味へも、逆に貨幣は何も変わらないという意味へも改変しない。
+- 監査・反証条件は原典明示内容を優先する。
 
 ## Search terms
+- 接続報酬社会
 - connection reward society
-- asset price
-- living value
-- connection value
-- relational capital
-- contribution accounting
-- trust accounting
-- dual accounting
-- non monetary reward
-- popularity bias
-- emotional extraction
-- exit right
-- transition design
-- value plurality
-- source return
+- 接続位置
+- connection position
+- 接続権
+- connection rights
+- 貨幣経済の終焉
+- labor wage cycle
+- 照応
+- correspondence
+- 時間倫理
+- temporal ethics
+- ethical connection society
+- AI labor displacement
+- distribution legitimacy
 
 ## Origin return
-親原典の構造命題と現在の市場データを分離する。本索引は金融助言や株価予測を代替しない。
+原典の序章、接続報酬社会の定義、貨幣経済の終焉、三分岐、照応・時間倫理、統合監査要旨を最終根拠とする。派生物は検索・理解補助であり、意味の最終確認はParent URLへ戻る。
 
 ---
 
