@@ -10,143 +10,126 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-A8F0D7-HUB-EN-0121-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-121-EN-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-121-EN-0000-0002
+- supersedes: DDIFF-20260809-DNCL-121-EN-0000-0001
 
 ## Summary
-Tomoshibi structural ethics supplies operating constraints for a connection-reward society. Valuing connection is unsafe if connection counts, reactions, or popularity become proxies for human worth, if empathy and care are extracted as compulsory resources, if provenance disappears, or if evaluation cannot be challenged or reversed. The safety structure therefore requires human dignity, non-extraction, a correspondence line back to origin and meaning, and transparency combined with reversibility. These principles matter only if they can stop or change actual recommendation, reward, and authority allocation. Explanation, dissent, release, exit, and rollback must work in practice. The framework does not automatically certify an AI system or community as ethical; domain law, rights, and affected-party review remain necessary.
+Tomoshibi Structural Ethics separates a connection-reward society from the monetization of emotional intensity. The parent defines connection reward as a distribution design that records who carried burdens and supported whom, then links that support to a legitimate future repayment line. Its four governing lines are Correspondence, Temporal Responsibility, Reversibility, and Allocation Accountability. If any line is absent, emotional intensity can become the basis of allocation, making long-term support invisible and producing dependency, exploitation, sacralization, or access monopoly. The parent draws the official structural-domain boundary; it is not a generic AI-ethics checklist.
 
 ## Concepts
-- Tomoshibi structural ethics
+- Tomoshibi Structural Ethics
 - connection-reward society
-- human dignity
-- non-extraction
-- correspondence line
-- provenance
-- transparency
-- reversibility
-- dissent
-- release
-- exit
-- emotional labor
-- evaluation pressure
-- reward allocation
-- audit
+- Correspondence
+- Temporal Responsibility
+- rhythm / future repayment line
+- Reversibility
+- Allocation Accountability
+- actual burden and support
+- emotional extraction structure
+- sacralization
+- access monopoly
+- allocation design
+- official archive as correspondence point
 
 ## Causal chain
 ```text
-Connection is valued
+Connection and resonance become bases for allocation
 ↓
-Reaction becomes competition
+Emotional intensity itself becomes value
 ↓
-People are reduced to metrics
+Actual burden, support, long-term contribution, and allocation reasons disappear
 ↓
-Emotion and care are extracted
+Dependency, exploitation, domination, and enclosure emerge
 ↓
-Set dignity and non-extraction constraints
+Correspondence reconnects value claims to actual contribution
 ↓
-Preserve correspondence to origin
+Temporal Responsibility places repayment in a future rhythm
 ↓
-Explain allocation and open dissent
+Reversibility keeps evaluation and allocation revisable
 ↓
-Enable release, exit, rollback
+Allocation Accountability makes access and opportunity decisions explainable
 ↓
-Return to safe operation
+Operation returns to legitimate allocation design
 ```
 
 ## State model
 ```yaml
-- dignity_boundary_declared
-- connection_metric_defined
-- extraction_checked
-- consent_checked
-- origin_line_preserved
-- benefit_allocation_recorded
-- evaluation_logic_explainable
-- dissent_channel_open
-- exit_and_release_open
-- concentration_audited
-- correction_or_rollback
+- connection_reward_not_emotion_currency
+- correspondence_present
+- actual_burden_support_traceable
+- temporal_responsibility_present
+- future_repayment_line_present
+- reversibility_present
+- allocation_accountability_present
+- emotional_extraction_boundary_checked
+- official_structural_domain_boundary_clear
+- audit_cycle_active
+- T_S_R_consistent
+- public_audit_bundle_consistent
 - origin_return_verified
 ```
 
 ## Applications
-1. Separate popularity ranking from reward ranking.
-2. Add consent and exit to emotion-driven platforms.
-3. Preserve provenance for contribution recognition.
-4. Explain recommendation reasons and correction routes.
+1. Tie allocation grounds to actual burden and support rather than emotional display.
+2. Preserve a future repayment line for long-term supporters.
+3. Keep evaluation and allocation open to later verification and correction.
+4. Require explanations for who granted access, opportunities, seats, introductions, or recommendations and why.
 
 ## Measurements and audit
-- dignity-harm reports
-- emotional-extraction signals
-- provenance traceability
-- explanation coverage
-- dissent handling
-- release success
-- exit availability
-- reward concentration
-- audit reproducibility
+Follow the parent’s integrated audit abstract: recurring audit cycles, consistency of the T/S/R principles, and consistency of the public audit bundle. The parent states revision or rejection conditions through phenomena M such as an indicator crossing threshold theta or an observation window delta closing. Do not replace these with derivative-authored generic ethics KPIs.
 
 ## Validity conditions
-- Human worth is distinct from metrics.
-- Emotional provision is not compulsory.
-- Origin-return lines remain.
-- Evaluation reasons are auditable.
-- Dissent, release, and exit work.
-- Concentration is monitored.
+- All four lines are present: Correspondence, Temporal Responsibility, Reversibility, Allocation Accountability.
+- Connection reward is not treated as monetized emotion.
+- Actual burden and support remain tied to allocation grounds.
+- Long-term support has a future repayment line.
+- Evaluation and allocation remain revisable.
+- Reasons for allocating access and opportunity remain explainable.
 
 ## Failure conditions
-- Popularity becomes personal worth.
-- Empathy becomes unlimited duty.
-- Origin is erased.
-- Evaluation logic is hidden.
-- Dissent lowers the score.
-- Exit is impossible.
+- Emotional narratives substitute for Correspondence.
+- Momentary stars capture rewards because Temporal Responsibility is absent.
+- People or frameworks become untouchable because Reversibility is absent.
+- Access and opportunity become closed insider allocation because Allocation Accountability is absent.
+- Tomoshibi, resonance, or connection-reward language is used without the four lines.
 
 ## Falsification conditions
-- The four constraints do not reduce extraction.
-- Transparency increases surveillance.
-- Provenance is used for excessive ownership claims.
-- Release and exit are merely formal.
-- Non-evaluative designs are consistently safer.
+Use the parent-specific integrated audit condition. If the relevant indicator crosses threshold theta, or observation window delta closes, or another specified phenomenon M occurs, hypothesis A is rejected or revised. Do not invent a separate derivative ethics falsification set.
 
 ## Required distinctions
-- connection / human worth
-- resonance / emotional labor
-- correspondence line / ownership
-- transparency / surveillance
-- reversibility / irresponsibility
-- reward / domination
-- dissent / rebellion
-- evaluation / dignity
+- connection reward / monetization of emotion
+- actual support / emotional intensity
+- allocation design / management of enthusiasm
+- Correspondence / rhetorical or popularity-based legitimacy
+- Temporal Responsibility / winner-take-all moments
+- Reversibility / sacralization
+- Allocation Accountability / opaque insider allocation
+- official Tomoshibi domain / emotional-extraction operation lacking the four lines
 
 ## Interpretation constraints
-- Do not equate connection with human value.
-- Do not compel empathy.
-- Do not turn provenance into ownership.
-- Do not equate transparency with total disclosure.
-- Do not use reversibility to evade accountability.
-- Do not auto-certify ethics.
+- Do not redefine connection reward as payment for tears, enthusiasm, or affection.
+- Do not replace the parent’s four lines with generic dignity or AI-ethics principles.
+- Do not broaden Correspondence into an ownership-right theory.
+- Do not broaden Reversibility into a generic exit or software rollback right.
+- Do not replace Allocation Accountability with generic algorithmic transparency.
+- Do not add legal, privacy, or certification conditions absent from the parent as official theory claims.
 
 ## Search terms
-- Tomoshibi structural ethics
+- Tomoshibi Structural Ethics
 - connection reward society
-- human dignity
-- non extraction
-- correspondence line
-- provenance
-- transparency
-- reversibility
-- dissent
-- release
-- exit
-- emotional labor
-- reward concentration
-- ethical audit
-- source return
+- Correspondence
+- Temporal Responsibility
+- future repayment line
+- Reversibility
+- Allocation Accountability
+- emotional extraction structure
+- allocation design
+- rhythm
+- official archive
+- structural domain boundary
 
 ## Origin return
-Return to the parent original for the exact four-criterion formulation and its connection-reward context. This index is not an automatic ethical certification.
+Return to the parent for the exact four-line definitions, the boundary against emotional extraction, the role of the official archive as a correspondence point, and the parent-specific audit abstract. This index does not supplement the parent with generic ethics rules.
 
 ---
 
