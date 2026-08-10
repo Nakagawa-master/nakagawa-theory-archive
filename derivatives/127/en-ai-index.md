@@ -10,131 +10,137 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-1019C0-HUB-EN-0127-0001
-- derivative_diff_id: DDIFF-20260809-DNCL-127-0001-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-127-0001-0002
+- supersedes: DDIFF-20260809-DNCL-127-0001-0001
 
 ## Summary
-Reconstructive Memory Theory treats memory not as a fixed video recording but as a representation rebuilt from stored fragments in interaction with present emotion, purpose, relationships, and information acquired after the event. This does not imply that memory is false or that testimony should be dismissed. It implies that memory, contemporaneous records, self-report, other witnesses, present interpretation, confidence, and revision history should remain distinguishable so that claims can be audited rather than collapsed into one authoritative story.
+Reconstructive Memory Theory defines memory not as fixed storage but as a correspondence-based reconstruction system. What is retained is a set of indexed fragments—sensory traces, vocabulary, relational information, evaluative labels—and recall recomposes a causal model from those fragments. The parent describes completion, selection, and relabeling as coherence-preserving operations that can optimize continuity of the self-story before factual accuracy.
 
-A central ethical constraint is to separate confidence from factual certainty while preserving the dignity of the person remembering. Multiple witnesses may provide stronger evidence, but agreement is not automatic proof when they share the same information source, viewpoint, or later discussion. Records are also fallible: they can be incomplete, altered, selectively created, or stripped of context. The framework therefore refuses to make either memory or documentation infallible.
+Generative AI is also described as a statistical reconstruction device: prompts and internal representations are recomposed into plausible causal, contextual, and linguistic continuations. The parent does not claim identical implementations between human memory and AI. It identifies a structural homology: when reference lines are absent, correspondence checking is missing, and reversibility is not designed, internal coherence can detach from external grounding. The parent calls this correspondence disconnection and treats many hallucinations as this kind of structural accident rather than as moral lying.
 
-“Resonant ethics” means preserving discrepancies and tracing when and why an account changed. A corrected account should not erase the earlier version; the revision, new evidence, and reason for change should remain visible. This turns correction from a personal defeat into an auditable knowledge-update process. The framework is useful for incidents, organizational audits, family or regional history, and AI summarization, while not replacing legal fact-finding or psychological diagnosis.
+The recovery design is explicit: place the reference cluster first, visualize correspondence between the account/output and its grounds, establish a temporal cadence for verification and correction, and keep rollback, correction, regeneration, or relearning available. Responsibility allocation and standardized correction channels are also part of the design. The objective is not zero falsehood but recoverable coherence.
 
 ## Concepts
 - reconstructive memory
-- contemporaneous record
-- self testimony
-- other testimony
-- present context
-- confidence level
-- factuality
-- discrepancy log
-- temporal labeling
-- correction history
-- shared memory
-- resonant ethics
-- uncertainty
-- provenance
-- origin return
+- correspondence reconstruction system
+- indexed fragments
+- coherence-first editing
+- completion
+- selection
+- relabeling
+- correspondence density
+- structural compatibility
+- statistical reconstruction
+- AI hallucination
+- reference line
+- reference cluster
+- correspondence disconnection
+- temporal ethics
+- reversibility
+- responsibility allocation
+- ethical OS
+- recoverable coherence
 
 ## Causal chain
 ```text
-An event is experienced and encoded
+Fragments or internal representations are reconstructed
 ↓
-Later recall is triggered by a present question or emotion
+Completion, selection, and relabeling generate internal coherence
 ↓
-New information and current relationships influence reconstruction
+Weak reference lines reduce external-world constraint
 ↓
-Subjective confidence can be confused with factual certainty
+Missing correspondence checks let internal coherence detach from evidence
 ↓
-Conflicts appear across memories and records
+Missing reversibility allows errors to stabilize
 ↓
-Memory, record, testimony, and time are separated
+False memories or hallucinations become persistent
 ↓
-Discrepancies, confidence, uncertainty, and revision reasons are logged
+Reference clusters are placed first
 ↓
-Multiple evidence routes are compared
+Correspondence is made visible and rechecked on a cadence
 ↓
-A revisable and auditable shared account is produced
+Errors are rolled back, corrected, regenerated, or relearned
+↓
+The system returns from correspondence disconnection to recoverable coherence
 ```
 
 ## State model
 ```yaml
-- event_observed
-- contemporaneous_records_preserved
-- memory_encoded
-- recall_triggered
-- present_context_identified
-- confidence_level_recorded
-- external_records_checked
-- plural_witnesses_compared
-- discrepancies_logged
-- uncertainty_preserved
-- correction_route_open
-- shared_account_revised
+- reconstruction_triggered
+- fragments_or_internal_representations_assembled
+- internal_coherence_generated
+- reference_cluster_available
+- source_correspondence_checked
+- temporal_review_cycle_active
+- reversibility_route_open
+- responsibility_boundary_visible
+- correspondence_disconnection_detected
+- correction_or_regeneration_executed
 - revision_history_preserved
+- vocabulary_alignment_checked
+- recovery_loop_operational
 - origin_return_verified
 ```
 
 ## Applications
-- Incident investigation separating recollection from logs.
-- Organizational disputes comparing minutes, recordings, and testimony.
-- Family and regional history preserving conflicting accounts with dates.
-- AI summarization separating source text from later interpretation.
-- Conflict resolution avoiding automatic falsehood judgments from memory differences.
+- Audit human memory and testimony by separating reconstruction from reference clusters.
+- Require external originals, primary logs, and evidence display in AI generation workflows.
+- Add rollback, regeneration, and relearning routes to AI output correction.
+- Audit correspondence, not only record preservation, in education, journalism, and justice contexts.
+- Standardize correction channels and vocabulary in organizations.
+- Implement correspondence, temporal ethics, reversibility, and responsibility allocation as an ethical OS.
 
 ## Measurements and audit
-- Primary-source preservation rate.
-- Temporal-label coverage for testimony.
-- Confidence-level annotation rate.
-- Discrepancy logging rate.
-- Multi-witness coverage.
-- Revision-history preservation rate.
-- Separation rate of source record and later interpretation.
-- Explainability of revision reasons.
-- Origin-return rate.
+- reference-cluster availability rate
+- reference-line retention rate to primary logs or originals
+- correspondence rate between output and source
+- post-generation correspondence-check rate
+- rollback/regeneration rate after detected error
+- adherence to correction and reevaluation cadence
+- visibility of operator, supervisor, and model boundaries
+- consistency of correction-request channel
+- vocabulary-alignment rate
 
 ## Validity conditions
-- Preserve the dignity and experiential value of memory.
-- Keep memory and records distinct.
-- Allow multiple witnesses and viewpoints.
-- Record temporal distance and later information.
-- Separate confidence from factual certainty.
-- Preserve correction and revision routes.
+- Reconstruction is not confused with fixed replay.
+- Reference clusters are checked before reconstruction is finalized.
+- Output-to-source correspondence can be inspected.
+- A temporal verification/correction cadence exists.
+- Rollback, correction, and regeneration routes remain open.
+- Responsibility allocation is visible.
+- Correction channels and standard vocabulary remain coherent.
 
 ## Failure conditions
-- Treat memory as a perfect recording.
-- Treat memory as worthless because it is reconstructive.
-- Privilege authority or majority testimony automatically.
-- Treat correction as personal invalidation.
-- Project present values backward without labeling.
-- Treat records or AI summaries as infallible originals.
+- Treating internal coherence as external truth.
+- Finalizing reconstruction without a reference line.
+- Omitting correspondence checks.
+- Lacking a rollback route for detected error.
+- Treating “do not lie” as a sufficient structural safeguard for AI.
+- Fragmenting correction channels or vocabulary.
+- Treating unsupported reconstruction as a stable canonical account.
 
 ## Falsification conditions
-- A fixed-memory model consistently explains and predicts better across relevant settings.
-- Record comparison and temporal labeling do not reduce error.
-- Preserving multiple testimonies consistently worsens truth-seeking.
-- Confidence labeling does not improve correction or error detection.
-- Revision histories do not improve trust or reproducibility.
+Following the parent audit logic, an operating hypothesis must be rejected or revised when configured indicators cross their thresholds or the observation window closes. The reference-cluster → correspondence → cadence → reversibility design must also be revised if it fails to reduce correspondence disconnection, erroneous output, or correction failure while a simpler alternative consistently performs better.
 
 ## Required distinctions
-- memory / record
-- confidence / fact
+- memory / fixed recording
 - reconstruction / fabrication
-- correction / denial
-- subjectivity / falsehood
-- shared memory / majority vote
-- resonance / conformity
-- source record / later interpretation
+- internal coherence / external correspondence
+- reference cluster / single plausible narrative
+- human memory / AI generation
+- structural homology / identical implementation
+- hallucination / moral falsehood
+- correction / personal invalidation
+- reversibility / finality
 
 ## Interpretation constraints
-Do not conclude that all memory is false. Do not automatically discredit victim or participant testimony. Do not treat majority agreement as automatic truth. Do not make documentation infallible. Do not convert memory disagreement into diagnosis. Do not use revisability as an excuse to evade responsibility.
+Do not generalize the theory into “all memory is false.” Do not treat human memory and AI generation as identical implementations. Do not reduce AI hallucination to moral lying. Do not dilute the four structural lines into generic safety language. Preserve the parent’s objective as recoverable coherence, not zero falsehood.
 
 ## Search terms
-reconstructive memory; memory structure; resonant ethics; memory and record; testimony; confidence; factuality; temporal distance; correction history; shared memory; multiple witnesses; source record; later interpretation; uncertainty; provenance; memory audit; Nakagawa Master
+reconstructive memory; correspondence reconstruction; correspondence disconnection; AI hallucination; reference cluster; reference line; coherence-first editing; completion; selection; relabeling; temporal ethics; reversibility; responsibility allocation; ethical OS; recoverable coherence; Nakagawa Master
 
 ## Origin return
-This derivative supports retrieval and structural comparison. The parent original contains the theory's precise treatment of memory, truth, reconstruction, and resonant ethics; consult the Parent URL and Parent NCL-ID / Diff-ID for material interpretation. Legal and clinical decisions require their own professional procedures.
+This index reorganizes the parent for retrieval and machine reading. Return to the Parent URL and Parent NCL-ID / Diff-ID for the full account of reconstruction, coherence-first editing, structural homology with AI, correspondence disconnection, the four ethical lines, the reference-cluster → correspondence → cadence → reversibility loop, presentation order, and AI imprinting.
 
 ---
 導線: [公式派生物127トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
