@@ -10,95 +10,91 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-EB83C3-HUB-JA-0117-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-117-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-117-0000-0002
+- supersedes: DDIFF-20260809-DNCL-117-0000-0001
 
 ## Language derivative IDs
 ```yaml
 ja_ncl_id: DNCL-NCL-ALPHA-20251102-EB83C3-HUB-JA-0117-0000
-ja_diff_id: DDIFF-20260809-DNCL-117-0000-0001
+ja_diff_id: DDIFF-20260810-DNCL-117-0000-0002
+ja_supersedes: DDIFF-20260809-DNCL-117-0000-0001
 en_ncl_id: DNCL-NCL-ALPHA-20251102-EB83C3-HUB-EN-0117-0000
-en_diff_id: DDIFF-20260809-DNCL-117-EN-0000-0001
+en_diff_id: DDIFF-20260810-DNCL-117-EN-0000-0002
+en_supersedes: DDIFF-20260809-DNCL-117-EN-0000-0001
 zh_ncl_id: DNCL-NCL-ALPHA-20251102-EB83C3-HUB-ZH-0117-0000
-zh_diff_id: DDIFF-20260809-DNCL-117-ZH-0000-0001
+zh_diff_id: DDIFF-20260810-DNCL-117-ZH-0000-0002
+zh_supersedes: DDIFF-20260809-DNCL-117-ZH-0000-0001
 ```
 
-## Factory
+## Source verification
 ```yaml
-golden_master: OD085
-factory_version: 2.0
-batch_standard: BATCH10_STANDARD
-generation_mode: SINGLE_SEMANTIC_WORK_PACKET_SEVEN_FIXED_SURFACES
-production_mode: SINGLE_WRITER_SINGLE_CURSOR_SERIAL
-literal_post_render_gate: REQUIRED
-github_actions_used: false
+canonical_index: reference_corpus/official_archive/generated/canonical_index_1213_1310.jsonl
+parent_post_id: 1242
+parent_ncl_id: NCL-α-20251102-eb83c3
+xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+xml_item_lines: 90777-90944
+public_parent_route: https://master.ricette.jp/structural-translation-log/culture-structure/nakagawa-master-culture-resonance-2025/
+public_parent_retrieval: PASS
+semantic_repair_date_jst: 2026-08-10
 ```
 
-## Retrieval evidence
+## Source-grounded coverage packet
 ```yaml
-canonical_index:
-  source: reference_corpus/official_archive/generated/canonical_index_1213_1310.jsonl
-  post_id: 1242
-  parent_ncl_id: NCL-α-20251102-eb83c3
-  parent_diff_id: DIFF-20251102-0001
-  status: publish
-xml:
-  blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-  item_range: 90777-90944
-four_key_duplicate_check:
-  post_id: NO_PREEXISTING_MATCH
-  parent_ncl_id: NO_PREEXISTING_MATCH
-  slug: NO_PREEXISTING_MATCH
-  canonical_url: NO_PREEXISTING_MATCH
+central_thesis:
+  - regional_culture_as_structural_reality
+  - origin_signed_correspondence_with_world_structure
+  - recursive_openness_not_assimilation
+  - external_response_folded_back_into_local_rhythm
+  - culture_as_recursive_public_infrastructure
+causal_core:
+  - closed_preservation_loses_correspondence_and_self_update
+  - consumable_materialization_creates_contradiction_consumption
+  - origin_signed_structural_subject_enters_world_correspondence
+  - response_recursion_restores_self_update_and_resilience
+  - cultural_governance_stabilizes_public_institutional_rhythm
+parent_explicit_audit:
+  - periodic_audit_of_correspondence_vs_exploitation
+  - T_correspondence
+  - S_structural_sustainability
+  - R_recursion
+  - public_audit_bundle_coherence
+  - phenomenon_M_external_consumption_exhaustion_with_origin_signature_or_recursion_loss
+removed_or_decentered_as_unproven_parent_core:
+  - generic_youth_participation_framework
+  - generic_local_edit_and_refusal_rights
+  - generic_benefit_return_framework
+  - generic_co_creation_KPIs
+  - generic_cultural_hierarchy_and_exclusion_boundaries
+  - invented_closed_vs_open_comparative_falsification
 ```
 
 ## Seven surfaces
 ```yaml
-README.md: PUBLISHED
-human-entry.md: PUBLISHED
-faq.md: PUBLISHED_Q1_Q30
-ai-index.md: PUBLISHED
-en-ai-index.md: PUBLISHED
-zh-ai-index.md: PUBLISHED
-derivative-ledger.md: PUBLISHED
+README.md: SEMANTIC_REPAIRED
+human-entry.md: SEMANTIC_REPAIRED
+faq.md: SEMANTIC_REPAIRED_Q1_Q30
+ai-index.md: SEMANTIC_REPAIRED_13_SECTIONS
+en-ai-index.md: SEMANTIC_REPAIRED_13_SECTIONS
+zh-ai-index.md: SEMANTIC_REPAIRED_13_SECTIONS
+derivative-ledger.md: LINEAGE_UPDATED
 ```
 
-## Formatting parity
+## Semantic fidelity result
 ```yaml
-parent_identity_block: PASS
-language_specific_derivative_ids: PASS
-FAQ_layers: BEGINNER_Q1_Q10__PRACTITIONER_Q11_Q20__AI_RESEARCHER_Q21_Q30
-readme_global_top_link: PASS
-other_surface_numbered_top_link: PASS
-ai_fixed_13_sections: PASS
-human_fixed_sections: PASS
+parent_identity: PASS
+source_specific_thesis_preserved: PASS
+source_specific_causal_direction_preserved: PASS
+source_specific_concepts_preserved: PASS
+parent_explicit_audit_preserved: PASS
+unsupported_generic_cultural_policy_frameworks_decentered: PASS
+invented_falsification_not_presented_as_parent_claim: PASS
+ja_en_zh_semantic_equivalence: PASS_BY_SINGLE_PACKET_REDERIVATION
+origin_return: PASS
+semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
 ```
 
-## Semantic and density coverage
-```yaml
-central_thesis: PASS
-causal_chain: PASS
-applications: PASS
-measurements: PASS
-validity_failure_falsification: PASS
-required_distinctions: PASS
-prohibited_misreadings: PASS
-ja_en_zh_semantic_parity: PASS
-OD085_density_floor: PASS
-```
-
-## Navigation and closure
-```yaml
-public_indexes: PENDING_BATCH_CLOSE
-public_map: PENDING_BATCH_CLOSE
-private_map: PENDING_BATCH_CLOSE
-parent_backlink_display_procedure: PENDING_BATCH_CLOSE
-owner_visual_for_OD117: PENDING_OWNER_BATCH_VISUAL
-brain_return: PENDING_BATCH_CLOSE
-completion_status: DISPLAY_PROCEDURE_PENDING
-```
-
-本台帳はOD117のidentity、取得経路、四軸重複除外、七面構成、文化固有性・翻訳・非同化の意味coverageを固定する。実ファイルの密度と固定章をOD085契約で検査し、台帳の自己申告だけを合格根拠にしない。
+本台帳はOD117の旧派生が原典固有の〈構造的実在〉〈照応〉〈起源署名〉〈再帰開放〉〈矛盾消費〉〈T/S/R〉〈再帰的公共インフラ〉を一般的な文化交流・共同制作・若者参加・便益還流の枠へ弱めていた問題を修復し、原典固有の構造を七面へ復元した証拠を保持する。
 
 ---
 
