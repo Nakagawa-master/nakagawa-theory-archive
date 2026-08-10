@@ -10,143 +10,129 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-98B322-HUB-EN-0116-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-116-EN-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-116-EN-0000-0002
+- supersedes: DDIFF-20260809-DNCL-116-EN-0000-0001
 
 ## Summary
-This original treats regional disappearance as more than a population-count problem. A locality can lose the memory embedded in landscapes, the roles that made participation meaningful, and the routes by which former residents or outsiders can return and contribute even when some infrastructure remains. Efficiency and consolidation can be rational in the short term, but they can also remove irreversible social and cultural conditions for later reconstruction. Reconstruction therefore does not mean freezing the past. It means recording memory and provenance, keeping viable life infrastructure, and translating inherited meanings into new roles, participation routes, learning, work, and repeated connection. Success is audited with a bundle of measures such as continuity of participation, regenerated roles, access to services, revisits, youth involvement, and resident dissent. Population growth alone is insufficient. AI interpretation must preserve these boundaries and return to the canonical parent for concrete policy or disputed meaning.
+The parent treats regional disappearance not merely as population decline or infrastructure contraction, but as structural hollowing in which a locality loses the origin and signature of the questions it has historically generated. When emigration, demographic decline, and cultural rupture interrupt the inheritance of those questions, they become grave markers rather than active sources of future structure.
+
+Even if the landscape remains, memory becomes unsigned when the connection among question, respondent, context, and record is lost. The parent describes this as the disappearance of a correspondence waveform. Once the question signature disappears, the locality may remain a target of support while losing recognition as a unique unit of value for future allocation, circulation, and credit.
+
+Reconstruction therefore is not frozen preservation of scenery. It begins by re-signing historically embedded questions, bundling primary records, responses, and provenance as a structural origin, restoring the repeated rhythm of question-action-record, and reconnecting that origin to future allocation, inheritance, and credit. This is the parent-specific meaning of structural translation that inscribes the question.
 
 ## Concepts
 - regional disappearance
-- landscape memory
-- population decline
-- efficiency
-- local roles
-- relation population
-- external connection
-- memory continuity
-- reconstruction
-- diversity
-- life infrastructure
-- reversibility
-- regional culture
+- questions becoming grave markers
+- question signature
+- regional-memory re-signature
+- unsigned memory
+- disappearance of correspondence waveform
 - origin of questions
-- source return
+- structural rhythm
+- structural hollowing
+- future allocation
+- value circulation
+- credit unit
+- inheritance structure
+- value-undetermined locality
+- structural translation that inscribes questions
+- origin return
 
 ## Causal chain
 ```text
-Reduce decline to population count
+Population decline, youth outmigration, and cultural rupture advance
 ↓
-Make consolidation the sole solution
+Inheritance of place-origin questions is interrupted
 ↓
-Roles, relations, and memory thin out
+Questions become unsigned and turn into grave markers
 ↓
-Reasons to stay or return disappear
+Landscape remains but memory becomes unsigned
 ↓
-The landscape loses identifiable social meaning
+The correspondence waveform of question-response-record disappears
 ↓
-Record remaining memory and relations
+The locality's unique value origin becomes invisible to institutions and markets
 ↓
-Open new roles to internal and external participants
+The basis for future allocation, value circulation, and credit weakens
 ↓
-Redesign life infrastructure and cultural meaning together
+Historically embedded questions are re-signed
 ↓
-Maintain revisit, continuity, and renewal
+Primary records, responses, and signatures are rebuilt as an origin bundle
+↓
+Structural rhythm is restored
+↓
+The question is reconnected to future allocation, inheritance, and credit
 ```
 
 ## State model
 ```yaml
-- scope_declared
-- affected_parties_identified
-- memory_assets_recorded
-- local_roles_mapped
-- life_infrastructure_checked
-- irreversible_loss_risk_checked
-- participation_routes_opened
-- multi_metric_observation_open
-- dissent_and_exit_channel_open
-- counterevidence_checked
-- revision_or_rollback
+- local_question_origin_identified
+- historical_question_records_traced
+- signature_continuity_checked
+- unsigned_memory_detected
+- correspondence_waveform_loss_detected
+- question_gravemarking_detected
+- question_resignature_started
+- origin_bundle_reconstructed
+- structural_rhythm_restored
+- future_allocation_anchor_restored
+- inheritance_target_defined
+- external_consumption_reduction_checked
+- revision_condition_monitored
 - origin_return_verified
 ```
 
 ## Applications
-1. Design vacant-house reuse around participants and local roles rather than occupancy alone.
-2. Connect local archives to education, research, and creation instead of static preservation only.
-3. Audit public-facility consolidation with both cost and access/relation losses.
-4. Shift tourism from one-time consumption toward revisits and co-creation.
+- Build regional archives that preserve questions, responses, signatures, and primary records as one origin bundle.
+- Connect regional policy not only to subsidies or migration measures but to place-specific questions as grounds for future allocation.
+- Preserve local culture by passing question signatures forward rather than reducing them to tourism copy.
+- Evaluate reconstruction through continuity of question origin, signature, records, and future allocation rather than population count alone.
 
 ## Measurements and audit
-- memory-recording rate
-- continuing internal/external participation
-- regenerated roles
-- life-infrastructure access
-- revisit rate
-- youth involvement
-- reuse of local resources
-- irreversible withdrawal rate
-- resident-dissent incorporation
+- continuity of question records
+- continuity of question signatures
+- presence of unsigned floating regional memory
+- whether memory is reduced to externally consumable sentiment
+- preservation of local rhythm, temperature, and interval
+- continuity of theory, signature, primary-record, and audit bundles
+- connection of re-signed questions to future allocation and inheritance
 
 ## Validity conditions
-- Do not judge locality value by population alone.
-- Record memory, roles, and provenance.
-- Keep multiple forms of participation open.
-- Include practical life conditions.
-- Preserve return paths even when consolidation occurs.
-- Reaudit continuity after intervention.
+- Identify historically generated questions as structural origins.
+- Preserve question signatures and primary records.
+- Do not reduce memory to scenery or nostalgia.
+- Preserve the structural rhythm of question, response, and record.
+- Connect re-signature to future allocation, inheritance, and credit.
+- Preserve locality-specific rhythm, temperature, and interval rather than stripping them for external consumption.
 
 ## Failure conditions
-- Consolidate solely for efficiency.
-- Freeze heritage while ignoring present life conditions.
-- Treat outsiders only as consumers.
-- Remove resident dissent or exit.
-- Use population growth as the sole success metric.
-- Commercialize memory while erasing origin actors.
+- Reduce regional disappearance to population count alone.
+- Preserve scenery while losing question signatures.
+- Reduce regional stories to tourism copy or numerical indicators.
+- Convert memory into sentiment designed only for external consumption.
+- Strip, silence, or sever question signatures.
+- Fail to connect re-signed questions to future allocation and inheritance.
 
 ## Falsification conditions
-- Memory, roles, and connection do not improve continuity or viability.
-- Pure efficiency consolidation consistently produces better resilience.
-- Preservation becomes a barrier to new participants.
-- External connection increases dependency or extraction.
-- Simpler infrastructure investment produces equal or better recovery.
+The parent requires revision of the re-signature hypothesis when regional stories remain reduced to tourism copy or numerical indicators, question signatures are stripped, silenced, or severed, or continuity of question records, non-consumptive memory, and locality-specific rhythm/temperature/interval cannot be maintained. This derivative does not invent falsification tests based on participation rates, revisit rates, population targets, or infrastructure-investment comparisons.
 
 ## Required distinctions
-- population maintenance / regional continuity
-- preservation / reconstruction
-- tourism consumption / continuing connection
-- efficiency / resilience
-- memory / nostalgia
-- external participation / external control
-- consolidation / disappearance
-- culture / exclusion
+- regional disappearance / population decline alone
+- landscape / question structure
+- memory / unsigned memory
+- preservation / question re-signature
+- support target / unique unit of value
+- tourism copy / question inheritance
+- past preservation / origin of future allocation
+- generic revitalization / structural translation that inscribes questions
 
 ## Interpretation constraints
-- Do not reduce disappearance to population decline.
-- Do not freeze landscapes as untouchable relics.
-- Do not rank outsiders above residents.
-- Do not reject efficiency categorically.
-- Do not turn memory into automatic ownership.
-- Do not replace the source with this index.
+Do not replace the parent with a generic theory of relation population, external participation, or regional resilience. Do not introduce categorical positions on efficiency as the semantic center. Preserve the parent-specific structure of question gravemarking, unsigned memory, correspondence waveform, re-signature, structural rhythm, future allocation, and credit unit. Do not add policy disclaimers or AI-evaluation boundaries absent from the parent as official theory.
 
 ## Search terms
-- regional disappearance
-- landscape memory
-- regional resilience
-- population decline
-- local roles
-- relation population
-- external connection
-- memory continuity
-- irreversible loss
-- regional archive
-- revisit route
-- local culture
-- life infrastructure
-- reconstruction
-- source return
+regional disappearance; question gravemarking; question signature; regional memory re-signature; unsigned memory; correspondence waveform; structural rhythm; origin of questions; future allocation; value circulation; credit unit; structural hollowing; regional culture; inheritance structure; structural translation; Nakagawa Master
 
 ## Origin return
-Definitions, examples, policy boundaries, and reference context belong to the canonical parent article. This index supports retrieval and machine interpretation and does not replace source-level judgment.
+This is a retrieval derivative. Return to the Parent URL and Parent NCL-ID / Diff-ID for the parent-specific argument, examples, theoretical signature, and audit conditions that define regional disappearance as loss of question origin, signature, and future-allocation capacity.
 
 ---
 
