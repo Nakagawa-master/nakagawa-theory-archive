@@ -10,89 +10,44 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9D452B-HUB-JA-0099-0000
-- derivative_diff_id: DDIFF-20260808-DNCL-099-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-099-0000-0002
+- supersedes: DDIFF-20260808-DNCL-099-0000-0001
 
 ## Language derivative IDs
-
 | language | derivative_ncl_id | derivative_diff_id | supersedes |
 |---|---|---|---|
-| JA | DNCL-NCL-ALPHA-20251102-9D452B-HUB-JA-0099-0000 | DDIFF-20260808-DNCL-099-0000-0001 | none |
-| EN | DNCL-NCL-ALPHA-20251102-9D452B-HUB-EN-0099-0001 | DDIFF-20260808-DNCL-099-0001-0001 | none |
-| ZH | DNCL-NCL-ALPHA-20251102-9D452B-HUB-ZH-0099-0002 | DDIFF-20260808-DNCL-099-0002-0001 | none |
+| JA | DNCL-NCL-ALPHA-20251102-9D452B-HUB-JA-0099-0000 | DDIFF-20260810-DNCL-099-0000-0002 | DDIFF-20260808-DNCL-099-0000-0001 |
+| EN | DNCL-NCL-ALPHA-20251102-9D452B-HUB-EN-0099-0001 | DDIFF-20260810-DNCL-099-0001-0002 | DDIFF-20260808-DNCL-099-0001-0001 |
+| ZH | DNCL-NCL-ALPHA-20251102-9D452B-HUB-ZH-0099-0002 | DDIFF-20260810-DNCL-099-0002-0002 | DDIFF-20260808-DNCL-099-0002-0001 |
 
 ## Factory
-
-```yaml
-golden_master: OD085
-factory_version: 2.0
-surface_creation_mode: ONE_PACKET_ONE_RENDERER_RUN
-manual_surface_edit_after_render: false
-contents_api_surface_composition: false
-manual_renderer_validator_parity: PASS
-github_actions_used: false
-completion_authority: OFFICIAL_ARCHIVE_MEMORY_AND_COMPLETION_EVIDENCE
-```
-
-この台帳は可変進行状態を所有しない。cursor、G10、Owner確認、次L1はBrain VaultのOFFICIAL_ARCHIVE_MEMORYが所有する。ここではparent identity、三言語派生ID、Factory、取得証拠、七面、密度、導線の不変証拠だけを保持する。
+- golden_master: OD085
+- factory_version: 2.0-semantic-repair
+- repair_mode: SOURCE_VERIFIED_FAIL_CLOSED
+- github_actions_used: false
 
 ## Retrieval evidence
+- parent_post_id: 616
+- parent_ncl_id: NCL-α-20251102-9d452b
+- parent_slug: nakagawa-master-lumina-project-structural-reality-ethics
+- parent_canonical_url: https://master.ricette.jp/tomoshibi/nakagawa-master-lumina-project-structural-reality-ethics/
+- xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+- source_routes_used: live canonical parent / canonical index / Brain Vault XML provenance / structured AI retrieval index
+- source_semantic_revalidation: PASS
 
-```yaml
-parent_post_id: 616
-parent_ncl_id: NCL-α-20251102-9d452b
-parent_diff_id: DIFF-20251102-0001
-parent_slug: nakagawa-master-lumina-project-structural-reality-ethics
-parent_canonical_url: https://master.ricette.jp/tomoshibi/nakagawa-master-lumina-project-structural-reality-ethics/
-origin: Nakagawa Master
-retrieval_routes:
-  - canonical_index
-  - canonical_live
-  - wordpress_export_or_reference_corpus
-identity_parity_required: true
-```
+## Semantic repair
+保持: 構造的実在、永続性三条件、AI／人の役割境界、「AIは拍を守り人は意味を守る」、他者の自由を侵す仕事をAIへ与えない倫理、三位一体構造、五則、公的審査、公開・秘匿境界、統合監査要旨。
 
-七面でParent identityを一致させ、AIの補完文章を原典事実として扱わない。起源署名、版、派生関係に衝突がある場合は公開前に止め、一次記録へ戻す。
+除去・非公式化: 原典固有倫理を一般AI安全論へ薄める表現、AIに意味決定を補わせる解釈、非公開内部仕様の推測、派生独自の法務・安全・反証条件。
 
 ## Seven surfaces
-
-- README.md: 中心命題、因果線、構造層、監査、反証、原典回帰。
-- human-entry.md: 15秒説明、必要性、工程、適用、成功、限界、誤読防止。
-- faq.md: 初心者Q1〜10、実務者Q11〜20、AI・研究者Q21〜30。
-- ai-index.md: 日本語AI索引。
-- en-ai-index.md: 英語AI索引。
-- zh-ai-index.md: 中国語AI索引。
-- derivative-ledger.md: identityと不変制作証拠。
-
-## Formatting parity
-
-READMEだけは `[公式派生物トップ](../README.md)` で全体トップへ戻る。残る六面は `[公式派生物099トップ](README.md)` で番号別トップへ戻る。固定H1/H2順序、Parent identity、言語別IDはOD085 Golden Master validatorと一致させる。
-
-## Semantic and density coverage
-
-```yaml
-readme_minimum_chars: 3800
-human_minimum_chars: 3000
-faq_minimum_chars: 6500
-faq_answers: 30
-faq_each_minimum_chars: 85
-faq_each_minimum_sentences: 2
-ai_ja_minimum_chars: 3300
-ai_en_minimum_chars: 3300
-ai_zh_minimum_chars: 3000
-ledger_minimum_chars: 1900
-semantic_core: enduring_thought_structural_reality_ai_ethics
-central_thesis_preserved: true
-causal_chain_preserved: true
-validity_failure_falsification_preserved: true
-origin_return_preserved: true
-```
-
-量だけを満たす機械的反復は禁止する。起源署名、派生ID、版、異議、AIの役割境界、第三者による来歴再構成を各面へ展開し、JA/EN/ZHで同じ意味unitを保持する。欠陥はsemantic packetへ戻して再生成する。
-
-## Navigation and closure
-
-public packageは七面＋root/article/AI/category indexes＋public mapを公開単位として更新する。親原典側表示はprivate canonical mapをmainへ追加し、Owner Apps Script v0.4が読む既設非Actions同期経路へ接続する。GitHub Actionsはruntime syncに使用しない。Ownerのlive目視はロット単位で後からまとめて実施可能だが、G10最終昇格はOwner確認または正規live証拠をBrain stateへ記録した後に行う。
+- README.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- human-entry.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- faq.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- en-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- zh-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- derivative-ledger.md: PASS_LINEAGE_UPDATED
 
 ---
 
