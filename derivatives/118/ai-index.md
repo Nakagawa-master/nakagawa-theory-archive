@@ -10,143 +10,127 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-20A4BC-HUB-JA-0118-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-118-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-118-0000-0002
+- supersedes: DDIFF-20260809-DNCL-118-0000-0001
 
 ## Summary
-ドル中心の世界市場の揺らぎを、単純な崩壊予測ではなく信用基盤の多軸化として読む。基軸通貨の持続性は国家力だけでなく、流動性、法制度、取引網、決済インフラ、危機時の利用可能性などの構造的持続性に依存する。複数通貨・地域決済の拡大は集中リスクを下げ得るが、分断と取引コストを増やす可能性もあるため、分散を自動的な安定とみなさない。接続価値も法定通貨の即時代替ではなく別価値軸として扱う。AI利用では時点の異なる市場情報を混同せず、原典の構造命題と現在の市場データを分離する。本索引は金融助言ではない。
+原典は、ドル覇権の揺らぎを単純な崩壊ではなく《矛盾消費構造》による世界金融秩序の再調律として読む。ドルは世界の信用を集中して吸収してきたが、その集中は「ドルへ依存する力」と「ドル支配から離脱する力」を同時に生む。世界経済はこの矛盾を解消せず循環的に消費することで安定してきた。現在の緊張は矛盾の消費速度と回復速度のずれ、すなわちドルの構造律動の乱れとして捉えられ、代替通貨や金など他構造の共鳴を引き起こす。原典はこの過程を単中心から多照応への移行とし、再帰的安定点を探る構造変化として位置づける。
 
 ## Concepts
+- 矛盾消費構造
 - ドル覇権
-- 基軸通貨
-- 信用基盤
-- 多極化
-- 地域通貨
-- 決済網
-- 流動性
-- 制度信頼
-- 地政学
-- 通貨分散
-- 接続価値
-- 信用ネットワーク
-- 市場再調律
-- 集中リスク
-- 相互運用性
+- 信用構造
+- ドル依存
+- ドルからの自立
+- 構造的免疫反応
+- 構造律動
+- 信認の前借り
+- 共鳴
+- 代替通貨
+- 金
+- 単中心構造
+- 多照応構造
+- 再帰的安定点
+- 金融秩序の再調律
 
 ## Causal chain
 ```text
-単一信用軸
+ドルへ世界の信用が集中
 ↓
-財政・地政学圧力
+集中が矛盾を内包
 ↓
-代替決済増加
+ドル依存とドル離脱が同時進行
 ↓
-多軸化
+矛盾を循環消費して安定を維持
 ↓
-移行緊張
+矛盾の消費速度と回復速度がずれる
 ↓
-制度・流動性比較
+信認の前借りに構造律動が追いつかない
 ↓
-相互運用設計
+ドルの構造律動が乱れる
 ↓
-集中・分断監査
+代替通貨・金など他構造が共鳴
 ↓
-再調律
+単中心から多照応へ移行
+↓
+再帰的安定点を探索
 ```
 
 ## State model
 ```yaml
-- reserve_structure_observed
-- trust_basis_mapped
-- liquidity_checked
-- geopolitical_pressure_checked
-- alternative_routes_observed
-- concentration_measured
-- interoperability_checked
-- fragmentation_risk_checked
-- volatility_observed
-- counterevidence_checked
-- scenario_revised
+- dollar_trust_concentration_observed
+- dependence_and_exit_duality_identified
+- contradiction_consumption_identified
+- consumption_recovery_gap_observed
+- structural_rhythm_disturbance_observed
+- alternative_structure_resonance_observed
+- monocentric_to_poly_resonant_shift_observed
+- recursive_stability_hypothesis_checked
+- audit_bundle_checked
 - origin_return_verified
 ```
 
 ## Applications
-**1.** 通貨リスクの複数シナリオ設計。
-**2.** 地域決済と既存通貨の接続。
-**3.** 国際決済の制度・流動性比較。
-**4.** 接続価値と法定会計の併存設計。
+**1.** ドル信認の揺らぎを、単なる価格変動ではなく依存と離脱の二重構造として読む。
+**2.** 各国の準備通貨分散を、反乱ではなく多照応化の共鳴現象として読む。
+**3.** 金融秩序の緊張と緩和を、矛盾消費と構造律動の関係として監査する。
+**4.** 単一中心の支配と複数構造の照応の違いを比較する。
 
 ## Measurements and audit
-- 決済通貨集中度
-- 流動性深度
-- 制度信頼指標
-- 為替変動率
-- 相互運用率
-- 資本逃避兆候
-- 取引コスト
-- 制裁依存度
-- 信用分散度
+原典が明示する監査は、世界金融構造の緊張と緩和のリズムの定点観測、T/S/R（T＝照応、S＝構造持続性、R＝再帰性）、公開監査束の整合確認である。派生物側で一般的な市場KPI群を追加しない。
 
 ## Validity conditions
-- 崩壊を前提にしない。
-- 制度条件を比較する。
-- 流動性を含める。
-- 相互運用性を確認する。
-- 地政学と市場因果を分ける。
-- 誤差を監査する。
+- ドルへの依存とドルからの離脱が同時に存在すること。
+- 矛盾が秩序の内部燃料として循環していること。
+- 信認の集中と構造律動の関係が説明できること。
+- 他構造の共鳴を単なる勝者交代ではなく多照応化として読めること。
+- 原典の監査条件と起源文脈を保持すること。
 
 ## Failure conditions
-- 通貨の勝敗だけで説明する。
-- 政治的好悪を信用に置換する。
-- 流動性を無視する。
-- 分散を自動安定とする。
-- 接続価値を法定通貨代替とする。
-- 短期相場を構造証明にする。
+- ドル覇権の揺らぎを即時崩壊だけで説明する。
+- 依存と離脱の同時進行を片方だけに還元する。
+- 矛盾を除去対象とみなし、矛盾消費という中心概念を失う。
+- 多照応化を単純な次期覇権通貨の選択へ変換する。
+- 一般的な投資・通貨リスク管理論へ原典を置換する。
 
 ## Falsification conditions
-- 多軸化が確認されない。
-- 分散が継続的に不安定性を増す。
-- 単一網が危機耐性で優れる。
-- 地政学との関係が再現されない。
-- 信用分散モデルが説明力を持たない。
+原典の統合監査要旨では、単一通貨による支配が再び「完全正義」として語られ、市場や各国がその歪みを矛盾エネルギーとして再帰利用できなくなった場合、「矛盾は循環燃料として機能し続ける」という仮説Aを棄却・改訂する。
 
 ## Required distinctions
-- 揺らぎ / 崩壊
-- 通貨価値 / 国家好悪
-- 分散 / 安定
-- 信用 / 価格
-- 流動性 / 人気
-- 地域決済 / 基軸通貨
-- 接続価値 / 法定通貨
-- 構造変化 / 短期相場
+- 崩壊 / 再調律
+- 矛盾の解消 / 矛盾の消費
+- ドル依存 / ドルからの自立
+- 単中心 / 多照応
+- 価格変動 / 構造律動
+- 通貨交代 / 構造共鳴
+- 危機回復の線形物語 / 構造代謝
 
 ## Interpretation constraints
-- 崩壊予言にしない。
-- 投資推奨にしない。
-- 多極化を自動的善としない。
-- 接続価値を無規制通貨にしない。
-- 短期価格だけで因果を確定しない。
-- 金融助言にしない。
+- 原典をドル崩壊予測へ縮約しない。
+- 原典を一般的な通貨分散・投資助言回避フレームへ置換しない。
+- 矛盾消費、構造律動、多照応、再帰的安定という原典固有語を保持する。
+- 派生側で原典にない政策・制度・市場運用条件を公式主張として補完しない。
+- 監査・反証条件は原典明示内容を優先する。
 
 ## Search terms
-- reserve currency
+- 矛盾消費構造
+- contradiction consumption
 - dollar hegemony
-- trust basis
-- multipolar currency
-- liquidity
-- payment network
-- institutional trust
-- geopolitical finance
-- currency diversification
-- interoperability
-- fragmentation risk
-- connection value
-- settlement network
-- market realignment
-- source return
+- ドル依存
+- 脱ドル
+- 信用構造
+- 構造律動
+- structural rhythm
+- 多照応
+- poly-resonant structure
+- 共鳴
+- 再帰的安定
+- 金融秩序再調律
+- 単中心
+- structural immunity
 
 ## Origin return
-原典の時点・文脈と現在市場を区別し、構造命題の最終確認はParent URLへ戻る。本索引は投資助言を代替しない。
+原典の中川理論的見解、統合監査要旨、局所監査要旨、理論署名宣言を最終根拠とする。派生物は検索・理解補助であり、意味の最終確認はParent URLへ戻る。
 
 ---
 
