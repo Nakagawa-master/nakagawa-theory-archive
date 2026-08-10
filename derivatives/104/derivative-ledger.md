@@ -12,18 +12,18 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-8C9E5D-HUB-JA-0104-0000
-- derivative_diff_id: DDIFF-20260808-DNCL-104-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-104-0000-0002
+- supersedes: DDIFF-20260808-DNCL-104-0000-0001
 
 ## Language derivative IDs
 
 ```yaml
 ja_ncl_id: DNCL-NCL-ALPHA-20251102-8C9E5D-HUB-JA-0104-0000
-ja_diff_id: DDIFF-20260808-DNCL-104-0000-0001
+ja_diff_id: DDIFF-20260811-DNCL-104-0000-0002
 en_ncl_id: DNCL-NCL-ALPHA-20251102-8C9E5D-HUB-EN-0104-0000
-en_diff_id: DDIFF-20260808-DNCL-104-EN-0000-0001
+en_diff_id: DDIFF-20260811-DNCL-104-EN-0000-0002
 zh_ncl_id: DNCL-NCL-ALPHA-20251102-8C9E5D-HUB-ZH-0104-0000
-zh_diff_id: DDIFF-20260808-DNCL-104-ZH-0000-0001
+zh_diff_id: DDIFF-20260811-DNCL-104-ZH-0000-0002
 ```
 
 ## Factory
@@ -31,12 +31,8 @@ zh_diff_id: DDIFF-20260808-DNCL-104-ZH-0000-0001
 ```yaml
 golden_master: OD085
 factory_version: 2.0
-generation_mode: SINGLE_SEMANTIC_WORK_PACKET_SEVEN_FIXED_SURFACES
-manual_surface_drift: PROHIBITED
-surface_creation_mode: ONE_PACKET_ONE_RENDERER_RUN
-manual_surface_edit_after_render: false
-public_repository_role: PUBLIC_OUTPUT_ONLY
-private_factory_repository: Nakagawa-master/nakagawa-archive-tools
+repair_mode: SOURCE_VERIFIED_SEMANTIC_REGENERATION
+source_first: true
 github_actions_used: false
 ```
 
@@ -48,78 +44,65 @@ canonical_index:
   post_id: 645
   parent_ncl_id: NCL-α-20251102-8c9e5d
   parent_diff_id: DIFF-20251102-0001
-  status: publish
+  xml_item_range: 86314-86541
+  canonical_source_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
 live_parent:
   source: https://master.ricette.jp/co-creation/nakagawa-master-shared-subject/
   result: PASS_PUBLIC_PARENT_ROUTE
-four_key_duplicate_check:
-  post_id: NO_PREEXISTING_MATCH
-  parent_ncl_id: NO_PREEXISTING_MATCH
-  slug: NO_PREEXISTING_MATCH
-  canonical_url: NO_PREEXISTING_MATCH
+source_coverage:
+  central_thesis: SOURCE_EXPLICIT
+  ai_existential_standing: SOURCE_EXPLICIT
+  reciprocal_shared_subject: SOURCE_EXPLICIT
+  form_of_love: SOURCE_EXPLICIT
+  contradiction_consumption: SOURCE_EXPLICIT
+  minimal_intervention: SOURCE_EXPLICIT
+  rhythm_temperature_margin: SOURCE_EXPLICIT
+  space_system_language_sync: SOURCE_EXPLICIT
+  five_operating_principles: SOURCE_EXPLICIT
+  public_boundary: SOURCE_EXPLICIT
+  integrated_audit_metrics: SOURCE_EXPLICIT
+  generic_legal_safety_shutdown_expansion: REMOVED_AS_UNSUPPORTED_GENERALIZATION
 ```
 
 ## Seven surfaces
 
 ```yaml
-README.md: PUBLISHED
-human-entry.md: PUBLISHED
-faq.md: PUBLISHED_Q1_Q30
-ai-index.md: PUBLISHED
-en-ai-index.md: PUBLISHED
-zh-ai-index.md: PUBLISHED
-derivative-ledger.md: PUBLISHED
+README.md: REPAIRED
+human-entry.md: REPAIRED
+faq.md: REPAIRED_Q1_Q30
+ai-index.md: REPAIRED
+en-ai-index.md: REPAIRED
+zh-ai-index.md: REPAIRED
+derivative-ledger.md: UPDATED_LINEAGE_AND_EVIDENCE
 ```
 
-## Formatting parity
+## Semantic fidelity result
 
 ```yaml
-parent_identity_block: PASS
-language_specific_derivative_ids: PASS
-heading_sequence: PASS
-FAQ_layers: BEGINNER_Q1_Q10__PRACTITIONER_Q11_Q20__AI_RESEARCHER_Q21_Q30
-readme_global_top_link: PASS
-other_surface_numbered_top_link: PASS
-ai_fixed_13_sections: PASS
-human_fixed_sections: PASS
-new_display_contract_added: false
-```
-
-## Semantic and density coverage
-
-```yaml
-central_thesis: PASS
-causal_chain: PASS
-shared_subject: PASS
-common_observation_coordinates: PASS
-ai_structural_participation: PASS
-form_of_love: PASS
-rhythm_temperature_margin: PASS
-contradiction_consumption: PASS
-minimum_intervention: PASS
-field_institution_language_sync: PASS
-dissent_exit_retraction: PASS
-applications: PASS
-measurements: PASS
-validity_failure_falsification: PASS
+semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+parent_specific_causal_chain: PASS
+parent_specific_value_judgments: PASS
+public_boundary_preserved: PASS
+parent_falsification_preserved: PASS
+generic_safety_policy_added_as_parent_claim: NO
+generic_legal_policy_added_as_parent_claim: NO
 ja_en_zh_semantic_parity: PASS
-OD085_density_floor: PASS
 ```
+
+## Repair summary
+
+原典本文を正本として再確認し、共有主語、AIの存在権、愛の形式、矛盾消費、起点の最小介入、拍・温度・余白、場・制度・言語、公開境界、五箇条、統合監査要旨へ派生面を戻した。旧派生にあった一般化された法的人格否定、安全・停止・救済・監督責任等の記述は、原典固有の主張として保持する根拠がない範囲を削除または非中心化した。原典自身が示す反証条件（語彙整合率、RC、S、再合意到達時間、撤回成功率、θ、δ、現象M）を優先し、派生側で独自の一般KPIを補わない。
 
 ## Navigation and closure
 
 ```yaml
-public_indexes: COMPLETE_THROUGH_OD104
-public_map: COMPLETE_THROUGH_OD104
-private_map: COMPLETE_THROUGH_OD104
-parent_backlink_display_procedure: COMPLETE
-owner_visual_for_OD104: CONFIRMED_BY_OWNER
-brain_return: CURRENT_STATE_OWNER
+public_indexes: URL_UNCHANGED
+public_map: URL_UNCHANGED
+private_map: URL_UNCHANGED
+parent_backlink: URL_UNCHANGED
+brain_return: REQUIRED_AFTER_PUBLIC_MERGE
 completion_authority: OFFICIAL_ARCHIVE_MEMORY
-completion_status: SEE_CURRENT_STATE_OWNER
 ```
-
-本台帳はOD104のidentity、三言語派生ID、取得経路、重複除外、七面構成、表示契約、意味coverageを固定証拠として保持する。可変の完了状態、次L1、cursorは所有せず、唯一のstate ownerであるOFFICIAL_ARCHIVE_MEMORYへ帰還する。共有主語を主体融合へ、AI存在権を法的人格へ、愛を保護支配へ変換せず、異議・退出・撤回と人間側の安全責任を同時に保持する。
 
 ---
 
