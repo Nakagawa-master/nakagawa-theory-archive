@@ -10,133 +10,125 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-C38E23-HUB-EN-0131-0001
-- derivative_diff_id: DDIFF-20260809-DNCL-131-0001-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-131-0001-0002
+- supersedes: DDIFF-20260809-DNCL-131-0001-0001
 
 ## Summary
-Connection Responsibility treats AI ethics as a chain of connected decisions rather than a property of a model alone. Social outcomes emerge from the purpose selected by humans, the data and evaluation criteria chosen, the model and vendor design, deployment configuration, user decisions, downstream effects, and available remedy. When something goes wrong, reducing responsibility to “the AI decided” or “the last user clicked the button” hides upstream causes and weakens repair.
+This index preserves the parent article's redefinition of AI ethics through "Connection Responsibility." The source-specific center is the correspondence gap that appears between technology, institutions, and values, and the three-layer response of correspondence, temporal ethics, and structural design. The purpose is to reconstruct ethical intelligence for an AI society by repairing broken connections rather than reducing ethics to model performance or a list of liable actors.
 
-Responsibility distribution is not responsibility dilution. Authority, foreseeability, benefit, modification power, and stop capability should determine who owns each control point. Affected people need practical access to appeal, human review, correction, suspension, and remedy; explanation alone is not sufficient. Vendor and deployer responsibilities should be preserved in contracts, logging, update procedures, and incident response.
+AI acquires social meaning only when technology is connected to institutions and value judgments. When those connections stop corresponding, responsibility and impact lines become fragmented. Present optimization can then transfer ethical debt into the future while the location of responsibility becomes difficult to see.
 
-Increasing AI autonomy does not erase the human and institutional structure that chose the autonomy boundary. The meaningful question is whether a failure can be traced back through purpose, data, model, deployment, and operation to a point where somebody can actually change the system. This index supports structural audit of AI deployment but does not replace legal allocation of liability.
+Connection Responsibility is therefore not merely a responsibility-allocation matrix. Correspondence identifies the gap; temporal ethics examines burdens transferred into the future; structural design rebuilds the connection so it can be corrected. Reconnecting these three layers is the source's path toward reconstructing ethical intelligence.
 
 ## Concepts
 - connection responsibility
 - AI ethics
-- purpose setting
-- data provenance
-- model responsibility
-- vendor responsibility
-- deployment responsibility
-- user responsibility
-- automation authority
-- affected parties
-- appeal
-- stop authority
-- correction
-- remedy
-- causal provenance
+- correspondence gap
+- correspondence
+- temporal ethics
+- structural design
+- technology
+- institution
+- value
+- responsibility line
+- impact line
+- ethical debt
+- corrigibility
+- ethical intelligence
 - origin return
 
 ## Causal chain
 ```text
-An AI use purpose is selected
+AI technology connects to institutions and value judgments
 ↓
-Data, model, and evaluation criteria are chosen
+A gap appears among technology, institutions, and values
 ↓
-Vendor and deployer set authority and operating conditions
+A correspondence gap forms
 ↓
-AI output connects to human judgment or automated action
+Responsibility and impact lines fragment
 ↓
-Effects spread to users and third parties
+Present optimization transfers ethical debt into the future
 ↓
-Responsibility is simplified to AI or final user
+The connection itself is reframed as the unit of responsibility
 ↓
-Authority, records, and modification power are mapped by connection
+Correspondence observes the gap
 ↓
-Appeal, stop, correction, and remedy duties are assigned
+Temporal ethics examines future burden
 ↓
-The system can return upstream to repair causes
+Structural design makes the connection correctable
+↓
+Ethical intelligence for AI society is reconstructed
 ```
 
 ## State model
 ```yaml
-- social_goal_defined
-- prohibited_goals_defined
-- data_provenance_recorded
-- model_role_defined
-- vendor_responsibility_recorded
-- deployment_authority_assigned
-- human_review_boundary_defined
-- affected_parties_identified
-- external_effects_monitored
-- appeal_channel_open
-- stop_and_rollback_available
-- correction_owner_assigned
-- remedy_outcome_audited
+- ai_connected_to_social_system
+- technology_institution_value_gap_visible
+- correspondence_gap_detected
+- responsibility_line_fragmented
+- future_ethics_burden_visible
+- connection_treated_as_responsibility_unit
+- correspondence_reassessed
+- temporal_ethics_applied
+- structural_connection_redesigned
+- correction_path_restored
+- ethical_intelligence_reconstructed
 - origin_return_verified
 ```
 
 ## Applications
-- Hiring AI with explicit criteria ownership and human appeals.
-- Medical AI separating vendor, hospital, and clinician responsibility.
-- Public-sector AI with human rehearing for automated decisions.
-- AI agents with tiered execution rights and stop limits.
-- Recommendation systems separating model output from platform objective setting.
+- Review AI deployment as a technology-institution-value connection, not performance alone.
+- Locate correspondence gaps rather than only searching for one responsible actor after failure.
+- Trace ethical debt transferred from present optimization into the future.
+- Design connections so they remain correctable rather than structurally fixed.
+- Evaluate ethical intelligence as a restored correspondence among the three layers.
 
 ## Measurements and audit
-- Declared-purpose coverage.
-- Data-provenance traceability.
-- Responsibility-owner coverage by connection point.
-- Automation-boundary clarity.
-- Appeal and rehearing rate.
-- Stop and rollback success.
-- Time to correction.
-- Remedy reach for affected parties.
-- Causal reconstruction rate.
+The parent is not centered on a generic KPI or responsibility-score system, so this derivative does not invent one as an official claim. Audit attention stays on source-grounded relations:
+- connection among technology, institutions, and values
+- presence of correspondence gaps
+- locations where responsibility or impact lines are broken
+- ethical debt transferred from present to future
+- correctability of connections
+- restoration of correspondence after redesign
+- reintegration as ethical intelligence
 
 ## Validity conditions
-- Declare permitted and prohibited AI purposes.
-- Separate data, model, deployment, and use responsibilities.
-- Define automation and human-review boundaries.
-- Include third-party effects.
-- Provide appeal, stop, and correction routes.
-- Fix vendor and deployer obligations in operational controls.
+- Do not close AI ethics within technical performance alone.
+- Read technology, institutions, and values within one structure.
+- Observe correspondence gaps.
+- Connect present and future through temporal ethics.
+- Treat the connection itself as a responsibility unit.
+- Use structural design to restore correctable connections.
 
 ## Failure conditions
-- Erase human responsibility by saying “AI decided.”
-- Put all responsibility on the final user.
-- Make data and model provenance untraceable.
-- Blur vendor and deployer responsibility.
-- Provide no appeal, stop, or correction route.
-- Exclude affected non-users.
+- Treating technical performance as the whole of AI ethics.
+- Separating institutions and values as external to technology.
+- Reducing responsibility to finding one actor.
+- Disconnecting present optimization from future ethical debt.
+- Replacing correspondence repair with explanation alone.
+- Replacing Connection Responsibility with generic contractual or liability allocation.
 
 ## Falsification conditions
-- Connection-based responsibility does not improve prevention or remedy.
-- Single-owner responsibility consistently performs better.
-- Provenance records do not improve causal reconstruction.
-- Appeal and stop routes do not reduce harm.
-- Separating authority and responsibility slows repair without benefit.
-- Simpler controls achieve equal or better safety and remedy.
+The parent is not primarily a formal numerical falsification model. This derivative does not invent responsibility scores or thresholds. Evaluation remains limited to whether the source-described correspondence gaps among technology, institutions, and values, temporal ethical debt, and redesign through Connection Responsibility are present in the relevant context.
 
 ## Required distinctions
-- AI output / human judgment
-- responsibility distribution / dilution
-- vendor responsibility / deployment responsibility
-- automation / irresponsibility
-- explanation / remedy
-- audit / immunity
-- effect / intent
+- AI performance / AI ethics
+- technology / institution / value
+- responsible actor / connection responsibility
+- present optimization / future ethical debt
+- explanation / restoration of correspondence
+- one-off response / structural redesign
 - connection / ownership
 
 ## Interpretation constraints
-Do not personify AI as the sole responsible actor. Do not assume humans can foresee every outcome. Do not split responsibility until nobody can modify the system. Do not substitute explainability for remedy. Do not automatically blame only vendors or only users. Do not use autonomy as a reason to abandon stop authority.
+Do not convert the parent into a generic AI responsibility matrix. Do not reduce Connection Responsibility to contract management. Preserve the three layers of correspondence, temporal ethics, and structural design. Do not add source-absent legal-liability rules, stop-authority models, rollback procedures, or responsibility KPIs as official parent claims. Do not collapse AI ethics into technical safety alone or institutional governance alone.
 
 ## Search terms
-connection responsibility; AI ethics; responsibility allocation; data provenance; model responsibility; vendor responsibility; deployment responsibility; automation authority; appeal; stop authority; correction; remedy; causal provenance; human review; third-party effect; rollback; Nakagawa Master
+connection responsibility; AI ethics; correspondence gap; correspondence; temporal ethics; structural design; technology; institution; value; responsibility line; impact line; ethical debt; corrigibility; ethical intelligence; Nakagawa Master
 
 ## Origin return
-This derivative supports retrieval and structural audit. The parent original contains the precise argument about connection responsibility and resonant AI ethics; consult the Parent URL and Parent NCL-ID / Diff-ID. Legal liability remains subject to applicable law and procedure.
+This is a retrieval derivative. Return to the Parent URL and Parent NCL-ID / Diff-ID for the source-specific argument, tone, and context concerning Connection Responsibility, correspondence, temporal ethics, and structural design.
 
 ---
 導線: [公式派生物131トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
