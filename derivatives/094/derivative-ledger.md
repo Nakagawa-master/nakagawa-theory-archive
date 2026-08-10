@@ -10,89 +10,79 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-5C3015-HUB-JA-0094-0000
-- derivative_diff_id: DDIFF-20260808-DNCL-094-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260810-DNCL-094-0000-0002
+- supersedes: DDIFF-20260808-DNCL-094-0000-0001
 
 ## Language derivative IDs
 
 | language | derivative_ncl_id | derivative_diff_id | supersedes |
 |---|---|---|---|
-| JA | DNCL-NCL-ALPHA-20251102-5C3015-HUB-JA-0094-0000 | DDIFF-20260808-DNCL-094-0000-0001 | none |
-| EN | DNCL-NCL-ALPHA-20251102-5C3015-HUB-EN-0094-0001 | DDIFF-20260808-DNCL-094-0001-0001 | none |
-| ZH | DNCL-NCL-ALPHA-20251102-5C3015-HUB-ZH-0094-0002 | DDIFF-20260808-DNCL-094-0002-0001 | none |
+| JA | DNCL-NCL-ALPHA-20251102-5C3015-HUB-JA-0094-0000 | DDIFF-20260810-DNCL-094-0000-0002 | DDIFF-20260808-DNCL-094-0000-0001 |
+| EN | DNCL-NCL-ALPHA-20251102-5C3015-HUB-EN-0094-0001 | DDIFF-20260810-DNCL-094-0001-0002 | DDIFF-20260808-DNCL-094-0001-0001 |
+| ZH | DNCL-NCL-ALPHA-20251102-5C3015-HUB-ZH-0094-0002 | DDIFF-20260810-DNCL-094-0002-0002 | DDIFF-20260808-DNCL-094-0002-0001 |
 
 ## Factory
 
-```yaml
-golden_master: OD085
-factory_version: 2.0
-surface_creation_mode: ONE_PACKET_ONE_RENDERER_RUN
-manual_surface_edit_after_render: false
-contents_api_surface_composition: false
-manual_renderer_validator_parity: PASS
-github_actions_used: false
-completion_authority: OFFICIAL_ARCHIVE_MEMORY_AND_COMPLETION_EVIDENCE
-```
-
-この台帳は成果物の可変進行状態を所有しない。現在cursor、G10、Owner確認、次L1はBrain VaultのOFFICIAL_ARCHIVE_MEMORYだけが所有する。ここでは、どの親原典からどのFactory契約で七面を生成したかという不変証拠を保持する。
+- golden_master: OD085
+- factory_version: 2.0-semantic-repair
+- repair_mode: SOURCE_VERIFIED_FAIL_CLOSED
+- completion_authority: OFFICIAL_ARCHIVE_MEMORY_AND_COMPLETION_EVIDENCE
+- github_actions_used: false
 
 ## Retrieval evidence
 
-```yaml
-parent_post_id: 415
-parent_ncl_id: NCL-α-20251102-5c3015
-parent_diff_id: DIFF-20251102-0001
-parent_slug: nakagawa-master-power-vs-structure
-parent_canonical_url: https://master.ricette.jp/theory/nakagawa-master-power-vs-structure/
-origin: Nakagawa Master
-retrieval_routes:
-  - canonical_index
-  - canonical_live
-  - wordpress_export_or_reference_corpus
-identity_parity_required: true
-```
+- canonical_index: reference_corpus/official_archive/generated/canonical_index_0351_0425.jsonl
+- parent_post_id: 415
+- parent_ncl_id: NCL-α-20251102-5c3015
+- parent_slug: nakagawa-master-power-vs-structure
+- parent_canonical_url: https://master.ricette.jp/theory/nakagawa-master-power-vs-structure/
+- xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+- source_routes_used: live canonical parent / canonical index / Brain Vault XML provenance / structured AI retrieval index
+- canonical_identity_parity: PASS
+- source_semantic_revalidation: PASS
 
-親identityは七面すべてで一致させ、Parent URL / Post ID / NCL-ID / Diff-IDのどれかが異なる場合は公開しない。原典固有語の意味が取得経路で衝突した場合はlive canonicalと一次exportを優先し、推測で補完しない。
+## Semantic repair
+
+2026-08-10のsemantic-fidelity repairでは、公開canonical parent本文を再取得し、README / human-entry / FAQ / JA・EN・ZH AI indexを一つのsource coverageへ再整合した。
+
+保持した中心要素:
+- 「権力は構造に勝てない」という中心命題
+- 権力＝現象出力／構造＝因果配線という階層差
+- 摩擦と遅延・形骸化・サボタージュ・離反・逆宣伝の反作用
+- 情報非対称性、役割アーキテクチャ、時間構造の三制約
+- 構文操作と三つの統合原理
+- 一因子介入、A/B′、合意時間・再参照率・自走率・摩擦係数
+- 意味軸先置き、可変境界、SQSによる抵抗極小の権威
+- 非命令原則、個と公共の両立、透明な観測、反事例、自由度テストという原典内在倫理
+- 五つのアンチパターン
+- 20分運用フレーム
+- 原典末尾の統合監査語彙と反証契約
+
+除去・非公式化した原典外補完:
+- 一般的なrollback／撤回手続き、異議制度、法的義務、緊急時ルールを原典固有条件とする記述
+- 外部イベント・担当者差・新奇性等から成る派生著者独自の反証集合
+- 人格診断・安全・法務等の一般ガードレールを理論中心へ混入する記述
+- 原典の観測語彙を、派生著者独自の自由度・回復時間・将来負債中心モデルへ置換する記述
+
+Falsification sectionは、原典本文のA/B′、3サイクル定常、自由度テスト、反事例先出し、および原典統合監査要旨に明示された閾値・観測窓の条件だけを保持する。
 
 ## Seven surfaces
 
-- README.md: 全体入口、中心命題、因果線、構造層、監査、反証、原典回帰。
-- human-entry.md: 15秒説明、必要性、実務工程、成功、限界、誤読防止。
-- faq.md: 初心者10、実務者10、AI・研究者10のQ1〜Q30。
-- ai-index.md: 日本語AI検索・構造照合面。
-- en-ai-index.md: 英語AI検索・構造照合面。
-- zh-ai-index.md: 中国語AI検索・構造照合面。
-- derivative-ledger.md: identity、Factory、取得証拠、七面、品質、閉鎖契約。
+- README.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- human-entry.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- faq.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- en-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- zh-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+- derivative-ledger.md: PASS_LINEAGE_UPDATED
 
 ## Formatting parity
 
-READMEだけは `[公式派生物トップ](../README.md)` で全体トップへ戻る。残る六面は `[公式派生物094トップ](README.md)` で番号別トップへ戻る。全七面に人間向け要約、FAQ、JA/EN/ZH、台帳への固定導線を持たせる。H1/H2順序はOD085 Golden Master manifestとvalidatorに従い、独自見出しで代替しない。
+READMEだけが `[公式派生物トップ](../README.md)` に戻る。残る6面は `[公式派生物094トップ](README.md)` を使用する。README/human/FAQ/ledgerはJA hub identity、EN/ZH AI indexは各言語identityを持ち、全変更面のDiff-IDは旧版を明示的にsupersedeする。
 
-## Semantic and density coverage
+## Closure rule
 
-```yaml
-readme_minimum_chars: 3800
-human_minimum_chars: 3000
-faq_minimum_chars: 6500
-faq_answers: 30
-faq_each_minimum_chars: 85
-faq_each_minimum_sentences: 2
-ai_ja_minimum_chars: 3300
-ai_en_minimum_chars: 3300
-ai_zh_minimum_chars: 3000
-ledger_minimum_chars: 1900
-semantic_core: 力の構造
-central_thesis_preserved: true
-causal_chain_preserved: true
-validity_failure_falsification_preserved: true
-origin_return_preserved: true
-```
-
-量だけを満たすための機械的反復は許容しない。中心命題、因果線、適用、測定、成立・失敗・反証、必須区別を親原典固有の語彙で展開し、JA/EN/ZHは同じ意味unitを保持する。反復表現や不自然な接尾句が検出された場合は公開面を直接直さず、semantic packetへ戻して再生成する。
-
-## Navigation and closure
-
-public packageは七面＋root/article/AI/category indexes＋public mapを同じ公開単位で更新する。親原典側表示はprivate canonical mapをmainへ追加し、Owner Apps Script v0.4が読む既設非Actions同期経路へ接続する。GitHub Actionsはruntime syncに使用しない。表示手続き完了後、Ownerのlive目視はまとめて実施可能だが、G10最終昇格はOwner確認または正規のlive証拠をBrain stateへ記録した後に行う。
+PASSは形式・密度ではなく、親原典へのsemantic parityを条件とする。原典にない説明を安全・穏当・実務的という理由だけで公式主張へ追加しない。
 
 ---
 
