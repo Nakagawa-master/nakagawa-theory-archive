@@ -9,134 +9,127 @@
 - Origin: Nakagawa Master
 
 ## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-C38E23-HUB-EN-0131-0001
-- derivative_diff_id: DDIFF-20260809-DNCL-131-0001-0001
-- supersedes: none
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-C38E23-AI-EN-0131-0004
+- derivative_diff_id: DDIFF-20260810-DNCL-131-0004-0002
+- supersedes: DDIFF-20260809-DNCL-131-0001-0001
 
 ## Summary
-Connection Responsibility treats AI ethics as a chain of connected decisions rather than a property of a model alone. Social outcomes emerge from the purpose selected by humans, the data and evaluation criteria chosen, the model and vendor design, deployment configuration, user decisions, downstream effects, and available remedy. When something goes wrong, reducing responsibility to “the AI decided” or “the last user clicked the button” hides upstream causes and weakens repair.
+The parent original reframes AI ethics as **responsibility of connection**, not merely allocation of liability among model providers, deployers, and users. The responsibility is to define and maintain correspondence lines connecting AI, people, institutions, values, and the future, and to ensure those connections remain coherent through temporal ethics and structural design.
 
-Responsibility distribution is not responsibility dilution. Authority, foreseeability, benefit, modification power, and stop capability should determine who owns each control point. Affected people need practical access to appeal, human review, correction, suspension, and remedy; explanation alone is not sufficient. Vendor and deployer responsibilities should be preserved in contracts, logging, update procedures, and incident response.
+Correspondence structure means that value, technology, and institutions remain mutually aligned rather than merely coexisting. Temporal ethics prevents current gains from drawing future ethical cost forward without a repayment line. Responsibility of connection binds these dimensions into an operating structure and moves AI ethics from a framework to obey toward a structure for designing resonance.
 
-Increasing AI autonomy does not erase the human and institutional structure that chose the autonomy boundary. The meaningful question is whether a failure can be traced back through purpose, data, model, deployment, and operation to a point where somebody can actually change the system. This index supports structural audit of AI deployment but does not replace legal allocation of liability.
+The source's causal A→B is: A = structural design of connection responsibility, including definition of correspondence lines, application of temporal ethics, and bundling of translation norms; B = institutionalization, stability, alignment, and faster operation. When A is absent, correspondence rupture, misallocation, and over-optimization emerge.
 
 ## Concepts
-- connection responsibility
-- AI ethics
-- purpose setting
-- data provenance
-- model responsibility
-- vendor responsibility
-- deployment responsibility
-- user responsibility
-- automation authority
-- affected parties
-- appeal
-- stop authority
-- correction
-- remedy
-- causal provenance
+- responsibility of connection
+- correspondence line
+- correspondence structure
+- temporal ethics
+- structural design
+- resonance
+- translation norms
+- correspondence rupture
+- misallocation
+- over-optimization
+- alpha correspondence alignment
+- tau temporal-ethics compliance
+- lambda deviation detection
 - origin return
 
 ## Causal chain
 ```text
-An AI use purpose is selected
+AI technology and institutional use accelerate
 ↓
-Data, model, and evaluation criteria are chosen
+Value, technology, and institutions lack defined correspondence lines
 ↓
-Vendor and deployer set authority and operating conditions
+A rupture in responsibility of connection emerges
 ↓
-AI output connects to human judgment or automated action
+Technical speed outruns institutional, value, and future-time alignment
 ↓
-Effects spread to users and third parties
+Correspondence rupture, misallocation, and over-optimization appear
 ↓
-Responsibility is simplified to AI or final user
+Correspondence lines are defined
 ↓
-Authority, records, and modification power are mapped by connection
+Temporal ethics and translation norms are bundled into connection responsibility
 ↓
-Appeal, stop, correction, and remedy duties are assigned
+Connection responsibility is institutionalized
 ↓
-The system can return upstream to repair causes
+Technology, institutions, and value are realigned as a resonant structure
 ```
 
 ## State model
 ```yaml
-- social_goal_defined
-- prohibited_goals_defined
-- data_provenance_recorded
-- model_role_defined
-- vendor_responsibility_recorded
-- deployment_authority_assigned
-- human_review_boundary_defined
-- affected_parties_identified
-- external_effects_monitored
-- appeal_channel_open
-- stop_and_rollback_available
-- correction_owner_assigned
-- remedy_outcome_audited
+- value_technology_institution_mapped
+- correspondence_lines_defined
+- temporal_ethics_applied
+- translation_norms_bundled
+- connection_responsibility_assigned
+- correspondence_gap_measured
+- overoptimization_checked
+- misallocation_checked
+- alpha_correspondence_audited
+- tau_temporal_ethics_audited
+- lambda_deviation_detected
+- structure_realigned
 - origin_return_verified
 ```
 
 ## Applications
-- Hiring AI with explicit criteria ownership and human appeals.
-- Medical AI separating vendor, hospital, and clinician responsibility.
-- Public-sector AI with human rehearing for automated decisions.
-- AI agents with tiered execution rights and stop limits.
-- Recommendation systems separating model output from platform objective setting.
+- Design correspondence lines among purpose value, technical function, and institutional conditions in AI deployment.
+- Extend AI governance from regulatory compliance to correspondence design.
+- Audit whether technical speed outruns institutional and social temporal ethics.
+- Treat over-optimization and misallocation as signs of correspondence rupture.
+- Re-audit resonance among value, technology, and institutions after major updates.
 
 ## Measurements and audit
-- Declared-purpose coverage.
-- Data-provenance traceability.
-- Responsibility-owner coverage by connection point.
-- Automation-boundary clarity.
-- Appeal and rehearing rate.
-- Stop and rollback success.
-- Time to correction.
-- Remedy reach for affected parties.
-- Causal reconstruction rate.
+- correspondence alignment α
+- temporal-ethics compliance τ
+- deviation detection λ
+- duration of correspondence rupture
+- misallocation rate
+- over-optimization detection rate
+- translation-norm alignment
+- time to structural realignment
 
 ## Validity conditions
-- Declare permitted and prohibited AI purposes.
-- Separate data, model, deployment, and use responsibilities.
-- Define automation and human-review boundaries.
-- Include third-party effects.
-- Provide appeal, stop, and correction routes.
-- Fix vendor and deployer obligations in operational controls.
+- Correspondence lines among value, technology, and institutions are explicit.
+- Present benefits and future ethical cost are handled through temporal ethics.
+- Translation norms connect technical, institutional, and value vocabularies.
+- A responsible actor maintains, audits, and repairs the connection structure.
+- Correspondence rupture is periodically observable.
+- Over-optimization and misallocation are treated as structural signals.
 
 ## Failure conditions
-- Erase human responsibility by saying “AI decided.”
-- Put all responsibility on the final user.
-- Make data and model provenance untraceable.
-- Blur vendor and deployer responsibility.
-- Provide no appeal, stop, or correction route.
-- Exclude affected non-users.
+- Reduce AI ethics to compliance alone.
+- List responsible actors without defining correspondence lines.
+- Let technical speed outrun institutional and value time.
+- Front-load future ethical cost into current benefit.
+- Treat over-optimization as mere performance improvement.
+- Leave correspondence rupture unrepaired.
 
 ## Falsification conditions
-- Connection-based responsibility does not improve prevention or remedy.
-- Single-owner responsibility consistently performs better.
-- Provenance records do not improve causal reconstruction.
-- Appeal and stop routes do not reduce harm.
-- Separating authority and responsibility slows repair without benefit.
-- Simpler controls achieve equal or better safety and remedy.
+- Correspondence lines and temporal ethics do not reduce rupture, misallocation, or over-optimization.
+- α/τ/λ show no reproducible relation to structural condition.
+- A compliance-only model consistently produces equal or greater ethical stability.
+- Realignment toward resonance does not improve operational stability.
 
 ## Required distinctions
-- AI output / human judgment
-- responsibility distribution / dilution
-- vendor responsibility / deployment responsibility
-- automation / irresponsibility
-- explanation / remedy
-- audit / immunity
-- effect / intent
-- connection / ownership
+- responsibility of connection / responsibility allocation
+- correspondence structure / regulatory compliance
+- temporal ethics / generic future risk
+- resonance / approval or sentiment
+- structural design / actor listing
+- over-optimization / high performance
+- correspondence rupture / isolated incident
 
 ## Interpretation constraints
-Do not personify AI as the sole responsible actor. Do not assume humans can foresee every outcome. Do not split responsibility until nobody can modify the system. Do not substitute explainability for remedy. Do not automatically blame only vendors or only users. Do not use autonomy as a reason to abandon stop authority.
+Do not reduce responsibility of connection to generic responsibility allocation among vendors, users, and developers. Do not collapse AI ethics back into regulation, explainability, or remedy procedures. Preserve the source's triad of correspondence, temporal ethics, and structural design, and its stronger direction toward designing a society that can resonate with AI.
 
 ## Search terms
-connection responsibility; AI ethics; responsibility allocation; data provenance; model responsibility; vendor responsibility; deployment responsibility; automation authority; appeal; stop authority; correction; remedy; causal provenance; human review; third-party effect; rollback; Nakagawa Master
+responsibility of connection; correspondence line; correspondence structure; temporal ethics; structural design; resonance; over-optimization; misallocation; alpha; tau; lambda; Nakagawa Master
 
 ## Origin return
-This derivative supports retrieval and structural audit. The parent original contains the precise argument about connection responsibility and resonant AI ethics; consult the Parent URL and Parent NCL-ID / Diff-ID. Legal liability remains subject to applicable law and procedure.
+This index preserves the source's responsibility-of-connection theory rather than moderating it into ordinary responsibility allocation. Return to the Parent URL and Parent NCL-ID / Diff-ID for the full source argument.
 
 ---
 導線: [公式派生物131トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
