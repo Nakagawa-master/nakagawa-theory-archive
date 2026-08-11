@@ -2,10 +2,10 @@
 
 ## 親原典
 
-- タイトル: 成立条件論・第0論｜誰も全体を見ていない社会
+- タイトル: 成立条件論・第0論｜誰も全体を見ていない社会⸻局所全体化がなぜ成立判定理論を必要にするのか
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/
 - Parent NCL-ID: NCL-α-20260627-aea14a
-- Parent Diff-ID: DIFF-20260627-0002
+- Parent Diff-ID: DIFF-20260630-0003
 
 ## 起源署名
 
