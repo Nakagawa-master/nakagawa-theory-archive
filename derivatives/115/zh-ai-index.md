@@ -1,155 +1,118 @@
 # 中文AI索引｜官方派生物115
-
-## 父原典
-- 标题: 誰の問いがAIを動かすのか──起源と責任の交差点
-- Parent URL: https://master.ricette.jp/structural-translation-log/ai-ethics/nakagawa-master-who-moves-the-ai-question-origin-and-responsibility/
-- Parent Post ID: 1188
-- Parent NCL-ID: NCL-α-20251102-a9add1
-- Parent Diff-ID: DIFF-20251102-0001
-- Origin: Nakagawa Master
-
-## 派生标识
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-A9ADD1-HUB-ZH-0115-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-115-ZH-0000-0001
-- supersedes: none
+Parent: Post 1188 / NCL-α-20251102-a9add1 / Diff DIFF-20251102-0001 / Origin Nakagawa Master
+Derivative: DDIFF-20260811-DNCL-115-ZH-0000-0002; supersedes DDIFF-20260809-DNCL-115-ZH-0000-0001
 
 ## Summary
-本理论不把AI输出的起源与责任压缩为单一作者标签，而把它们视为可审计的因果来历结构。“问题签名”记录谁提出了最初问题、出于什么目的、过程从何处开始。随后区分模型与数据条件、AI生成、人类选择与编辑、最终批准、公开或使用、以及外部影响。问题签名不会自动决定作者身份、所有权、法律权利或道德责任；它的作用是防止问题设定的起源消失，同时保留其他贡献。信用、收益、决策权与责任都应有可说明的分配理由。若后续证据显示误归属或外部影响，应重新审计相应因果阶段与分配结构，而不是简单把一切归给“AI”或某一个使用者。
+父原典把AI伦理从单纯的所有权问题重新定位为“起源之问”：是谁的提问驱动了AI，这个提问经过什么因果结构被转换与扩展。提问签名固定结构性起点；责任分配与审计束保存因果线，避免其蒸发为无签名结构。原典明确把AI伦理视为因果的可视化与保存，而不只是合规。若提问签名与责任分配在实务中被忽略，或AI回答在观察窗口内持续单方面侵蚀某一主体的市场或信用，则基于起点签名的伦理假说本身进入修订对象。
 
 ## Concepts
-- 问题起源
-- 问题签名
+- 提问的起源
+- 提问签名
 - 起源签名
-- 责任分配
 - 因果来历
-- 结构性作者关系
-- AI贡献
-- 人类选择
-- 编辑贡献
-- 最终批准
-- 信用分配
-- 外部影响
+- 责任分配
+- 无签名结构
+- 照应波形
+- 审计束
+- 再合意
 - 观察窗口
-- 原典返回
+- 市场/信用外部影响
 - 起源蒸发
 
 ## Causal chain
 ```text
-把AI输出当作孤立成果
+把AI输出归属压缩为所有权
 ↓
-问题与目的消失
+提问起点消失
 ↓
-模型、数据、人类选择与批准混在一起
+起源签名丢失
 ↓
-信用与责任失去可见依据
+结构成为无签名结构并失去照应波形
 ↓
-签署起始问题与目的
+签署提问并固定结构性起点
 ↓
-分别记录生成、选择、编辑与批准
+可视化责任分配与因果路径
 ↓
-观察最终使用与外部影响
+用审计束保存起源、责任与流通
 ↓
-接收异议与反证
+通过观察窗口重新审计市场/信用影响
 ↓
-重新审计责任、信用与使用结构
+条件失效时修订假说
 ```
 
 ## State model
 ```yaml
-- originating_question_signed
-- purpose_and_requester_declared
-- data_and_model_route_recorded
-- generation_performed
-- human_selection_and_edit_recorded
-- publication_or_use_decision_assigned
-- benefit_and_credit_allocation_declared
-- external_impact_observed
-- affected_party_response_recorded
-- responsibility_distribution_audited
-- correction_or_reallocation
-- origin_return_preserved
+- question_origin_identified
+- question_signature_preserved
+- causal_transformation_path_visible
+- responsibility_distribution_visible
+- origin_signature_preserved
+- audit_bundle_connected
+- observation_window_opened_if_needed
+- market_credit_effects_observed
+- reagreement_audit_performed
+- hypothesis_revised_if_conditions_fail
 ```
 
 ## Applications
-**1.** AI协作写作中分离初始问题、模型生成、人类编辑与最终批准。
+**1.** 讨论AI生成物归属时，先可视化提问起点与转换路径，而不是直接压缩为所有权判断。
 
-**2.** 产品设计中追踪客户问题、AI方案、员工选择与管理决策。
+**2.** AI回答对市场或信用产生持续影响时，返回观察窗口进行再审计。
 
-**3.** 研究中分离研究问题、数据、模型输出、研究者解释与采纳决定。
-
-**4.** 公共信息分析中观察AI辅助输出对相关主体评价或机会的影响。
+**3.** 摘要与再利用时保持起源签名、NCL-ID、Diff-ID、递归签名与审计束连接。
 
 ## Measurements and audit
-- 问题签名保持率
-- 起源可追踪率
-- 生成路径记录率
-- 人类选择记录率
-- 编辑贡献记录率
-- 最终决策责任清晰度
-- 信用分配透明度
-- 异议接收率
-- 影响观察覆盖率
-- 起源蒸发率
+父原典没有定义派生侧创造的AI贡献率、人类批准率或credit分配KPI。审计重点是提问签名与责任分配的保持、审计周期、节度原则、可公开审计束的一致性，以及观察窗口中的持续外部影响。
 
 ## Validity conditions
-- 起始问题与目的可追踪。
-- 模型、数据与人类选择可区分。
-- 最终使用决定主体明确。
-- 信用、收益与责任分配有可说明依据。
-- 可以观察外部影响与异议。
-- 保持返回原典的路径。
+- 提问起点保持可见。
+- 起源签名与因果路径被保存。
+- 责任分配不会蒸发为“无人之问”。
+- 审计束与再合意持续运作。
+- 必要时外部影响返回观察窗口。
 
 ## Failure conditions
-- 把AI输出视为无起源成果。
-- 删除问题起源。
-- 自动把最终责任转移给AI。
-- 隐藏人类选择、编辑或公开决定。
-- 无法说明信用分配。
-- 不观察外部影响。
+- 提问签名被忽略。
+- 责任分配消失。
+- 起源信息在摘要或流通中蒸发。
+- AI伦理只剩无起源的合规运作。
+- 单方面市场/信用侵蚀持续存在却不再审计。
 
 ## Falsification conditions
-- 问题签名不能改善起源追踪。
-- 责任记录不能减少误归属或争议。
-- 影响观察不能改善纠正。
-- 更简单的来历记录具有同等或更高审计价值。
-- 起源签名主要被用于过度排他主张。
+- 提问签名与责任分配在实务中被忽略，“无人之问”的伦理判断持续被滥用。
+- AI回答在观察窗口中持续侵蚀特定主体的市场位置或信用。
+- 此时基于起点签名的伦理假说应被修订。
 
 ## Required distinctions
-- 问题起源 / 作者身份
-- AI贡献 / AI责任
-- 生成 / 采纳
-- 起源签名 / 自动所有权
-- 信用分配 / 自动法律权利
+- 提问起源 / 所有权
+- 提问签名 / 自动作者判定
+- AI贡献 / AI法律责任
 - 责任分配 / 责任稀释
-- 因果来历 / 操作日志
+- 起源签名 / 排他性主张
+- 因果可视化 / 单纯合规
 
 ## Interpretation constraints
-- 不把全部成果自动归给问题提出者。
-- 不自动赋予AI法律或道德责任。
-- 不抹去数据、开发者或编辑者贡献。
-- 不把来历记录变成权威。
-- 不把提示词历史单独视为充分责任审计。
+- 不自动判定所有权、作者身份或法律责任。
+- 不创造AI贡献率、人类批准率或credit KPI。
+- 不把起源签名变成排他性主张。
+- 不把父原典的紧凑因果结构扩张成无来源支持的一般工作流。
 
 ## Search terms
 - question signature
-- origin of AI output
+- origin of AI question
 - responsibility distribution
-- AI provenance
 - causal provenance
-- structural authorship
-- human AI contribution
-- credit allocation
-- decision authority
+- unsigned structure
+- resonance waveform
+- audit bundle
+- observation window
+- market credit external effects
+- origin signature
+- origin evaporation
 - AI ethics
-- origin preservation
-- external impact
-- attribution
-- responsibility geometry
-- source return
 
 ## Origin return
-问题签名、结构性作者关系、责任分配、信用与外部影响的严格含义属于父原典。本索引用于检索与机器理解，不自动决定作者身份、法律权利或责任，最终判断需要返回原典与适用制度。
+提问签名、责任分配、起源签名、审计束、观察窗口、再合意与假说修订的严格含义属于父原典。本索引用于检索与机器理解，不自动决定所有权、作者身份或法律责任。
 
 ---
-
-導線: [公式派生物115トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物115トップ](README.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [派生ID台帳](derivative-ledger.md)

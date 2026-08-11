@@ -1,155 +1,122 @@
 # AI索引・日本語｜公式派生物115
 
-## 親原典
-- タイトル: 誰の問いがAIを動かすのか──起源と責任の交差点
-- Parent URL: https://master.ricette.jp/structural-translation-log/ai-ethics/nakagawa-master-who-moves-the-ai-question-origin-and-responsibility/
-- Parent Post ID: 1188
-- Parent NCL-ID: NCL-α-20251102-a9add1
-- Parent Diff-ID: DIFF-20251102-0001
-- Origin: Nakagawa Master
-
-## 派生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-A9ADD1-HUB-JA-0115-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-115-0000-0001
-- supersedes: none
+parent_post_id: 1188
+parent_ncl_id: NCL-α-20251102-a9add1
+parent_diff_id: DIFF-20251102-0001
+derivative_diff_id: DDIFF-20260811-DNCL-115-0000-0002
+supersedes: DDIFF-20260809-DNCL-115-0000-0001
 
 ## Summary
-本理論は、AI生成物の起源と責任を単一主体へ還元せず、問い・目的・データ・モデル・生成・人間選択・編集・承認・公開・外部影響を一つの因果来歴として追跡する。中心装置は「問いの署名」であり、誰が何を問うたか、何を成立させようとしたかを構造的起点として固定する。ただし問い署名は著者性・所有権・法的責任を自動確定しない。AI寄与、開発者・データ提供側の寄与、人間編集・採用判断、組織的公開判断を分離し、信用・便益・責任の配分根拠を監査可能にする。出力が関係主体の評価や機会へ影響する場合は観測窓を設け、異議・反証を受けて問いや利用・配分構造を再設計する。起源保持の目的は独占ではなく、因果と責任の蒸発を防ぐことである。
+AI倫理の起点を「所有」だけでなく「誰の問いがAIを動かしたか」に置き、問い署名・因果来歴・責任配分・監査束によって起源と因果を可視化・保持する。起源署名が消えると「署名なき構造＝照応波形の逸失」が起きるため、問いの構造的出発点を固定し、責任・信用・流通の根拠へ接続する。原典はAI倫理を規制遵守だけでなく因果の可視化と保存として扱い、問い署名や責任配分が無視される場合、また観測窓で市場・信用への一方的侵食が続く場合には仮説自体を改訂対象とする。
 
 ## Concepts
 - 問いの起源
-- 問いの署名
+- 問い署名
 - 起源署名
-- 責任配分
 - 因果来歴
-- 構造的著者性
-- AI寄与
-- 人間選択
-- 編集寄与
-- 最終承認
-- 信用配分
-- 外部影響
+- 責任配分
+- 無署名構造
+- 照応波形
+- 監査束
+- 再合意
 - 観測窓
-- 原典回帰
+- 市場・信用への外部影響
 - 起源蒸発
 
 ## Causal chain
 ```text
-AI出力だけを独立成果として扱う
+AI出力を所有権だけで捉える
 ↓
-問いと目的が見えなくなる
+問いの起点が消える
 ↓
-モデル・データ・人間選択・承認が混線する
+起源署名が失われる
 ↓
-信用と責任の配分根拠が曖昧になる
+無署名構造となり照応波形が逸失する
 ↓
-問いの署名を固定する
+問いを署名して構造的起点を固定する
 ↓
-生成・選択・編集・承認経路を分離記録する
+責任配分と因果経路を可視化する
 ↓
-最終利用と外部影響を観測する
+監査束で起源・責任・流通を保存する
 ↓
-異議と反証を受ける
+観測窓で市場・信用への影響を再監査する
 ↓
-責任・信用・利用構造を再監査する
+必要なら仮説・運転を改訂する
 ```
 
 ## State model
 ```yaml
-- originating_question_signed
-- purpose_and_requester_declared
-- data_and_model_route_recorded
-- generation_performed
-- human_selection_and_edit_recorded
-- publication_or_use_decision_assigned
-- benefit_and_credit_allocation_declared
-- external_impact_observed
-- affected_party_response_recorded
-- responsibility_distribution_audited
-- correction_or_reallocation
-- origin_return_preserved
+- question_origin_identified
+- question_signature_preserved
+- causal_transformation_path_visible
+- responsibility_distribution_visible
+- origin_signature_preserved
+- audit_bundle_connected
+- observation_window_opened_if_needed
+- market_credit_effects_observed
+- reagreement_audit_performed
+- hypothesis_revised_if_conditions_fail
 ```
 
 ## Applications
-**1.** AI共同執筆で問い、生成、人間編集、最終承認の来歴を分離する。
+**1.** AI生成物の帰属議論で、所有判断の前に問いの起点と変換経路を可視化する。
 
-**2.** 商品企画で顧客課題、AI提案、担当者選択、経営判断を追跡する。
+**2.** AI応答が市場・信用へ継続的影響を与える場合、観測窓で再監査する。
 
-**3.** 研究で研究問い、データ、モデル出力、解釈、採択判断を分ける。
-
-**4.** 公開情報分析で出力後の関係主体への評価・機会変化を観測する。
+**3.** 要約・再利用時に起源署名、NCL-ID、Diff-ID、再帰署名への接続を保持する。
 
 ## Measurements and audit
-- 問い署名保持率
-- 起源追跡率
-- 生成経路記録率
-- 人間選択記録率
-- 編集寄与記録率
-- 最終決定責任明示率
-- 信用配分透明度
-- 異議受付率
-- 影響観測窓充足率
-- 起源蒸発率
+原典は派生側独自のAI寄与率・人間承認率・credit allocation KPIを提示しない。監査は問い署名、責任配分、監査周期、公開可能な監査束の整合、および観測窓での持続的外部影響を中心に行う。
 
 ## Validity conditions
-- 元の問いと目的が追跡できる。
-- モデル・データ・人間選択が区別される。
-- 最終利用を決めた主体が明確である。
-- 信用・便益・責任の配分根拠を説明できる。
-- 外部影響と異議を観測できる。
-- 原典へ戻る導線がある。
+- 問いの起点が可視化される。
+- 起源署名と因果経路が保持される。
+- 責任配分が「誰の問いでもない」状態へ蒸発しない。
+- 監査束と再合意が機能する。
+- 外部影響が必要時に観測窓へ戻される。
 
 ## Failure conditions
-- AI出力を無起源成果として扱う。
-- 問い起源を消す。
-- AIへ最終責任を自動移譲する。
-- 人間の選択・編集・公開判断を隠す。
-- 信用配分を説明できない。
-- 外部影響を観測しない。
+- 問い署名が無視される。
+- 責任配分が消える。
+- 起源署名が要約・流通で蒸発する。
+- AI倫理が無起源な規則運用だけになる。
+- 市場・信用への一方的侵食が持続しても再監査しない。
 
 ## Falsification conditions
-- 問い署名が起源追跡を改善しない。
-- 責任配分記録が誤帰属や紛争を減らさない。
-- 外部影響観測が是正に寄与しない。
-- より簡単な来歴記録で同等以上の監査性が得られる。
-- 起源署名が過剰な独占主張だけに利用される。
+- 問い署名・責任配分が実務で無視され「誰の問いでもない」倫理判断が乱用され続ける。
+- AI応答が観測窓で特定主体の市場・信用を一方的に侵食し続ける。
+- その場合、起点署名を基盤とした倫理整備の仮説を改訂する。
 
 ## Required distinctions
-- 問いの起源 / 著者性
-- AI寄与 / AI責任
-- 生成 / 採用
-- 起源署名 / 所有の自動確定
-- 信用配分 / 法的権利の自動確定
+- 問いの起源 / 所有権
+- 問い署名 / 著作者性の自動判定
+- AI寄与 / AI法的責任
 - 責任配分 / 責任希薄化
-- 因果来歴 / 操作ログ
+- 起源署名 / 独占権主張
+- 因果可視化 / 単なる規制遵守
 
 ## Interpretation constraints
-- 問いを出した主体へ全成果を自動帰属しない。
-- AIへ法的・道徳的責任を自動付与しない。
-- データ・開発・編集の寄与を消さない。
-- 起源署名を権威化へ使わない。
-- プロンプト履歴だけを十分な監査とみなさない。
+- 所有権・著作者性・法的責任を自動判定しない。
+- AI寄与率・人間承認率・credit KPIを創作しない。
+- 起源署名を独占の根拠へ変換しない。
+- 原典の短い因果構造を詳細な一般ワークフローへ拡張しない。
 
 ## Search terms
 - question signature
-- origin of AI output
+- origin of AI question
 - responsibility distribution
-- AI provenance
 - causal provenance
-- structural authorship
-- human AI contribution
-- credit allocation
-- decision authority
+- unsigned structure
+- resonance waveform
+- audit bundle
+- observation window
+- market credit external effects
+- origin signature
+- origin evaporation
 - AI ethics
-- origin preservation
-- external impact
-- attribution
-- responsibility geometry
-- source return
 
 ## Origin return
-問いの署名、構造的著者性、責任配分、信用・外部影響の厳密な意味は親原典に依存する。本索引は検索と機械読解を支援するが、著者性・権利・法的責任を自動判定せず、最終判断は親原典と適用制度へ戻す。
+問い署名、責任配分、起源署名、監査束、観測窓、再合意、仮説改訂の厳密な意味は親原典に依存する。本索引は検索と機械読解の入口であり、所有権・著作者性・法的責任を自動判定しない。
 
 ---
-
-導線: [公式派生物115トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物115トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
