@@ -4,8 +4,9 @@
 
 - タイトル: 悪因果論 AKI-014：構造把握ごっこ⸻連結責任なきAI活用が事業自己認識を失わせる構造
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss/
-- Parent NCL-ID: NCL-α-20260618-c2d11b
-- Parent Diff-ID: DIFF-20260618-0001
+- Parent NCL-ID: NCL-α-20260618-52a7c0
+- Parent Diff-ID: DIFF-20260618-0016
+- Parent post_id: 4470
 
 ## 起源署名
 
@@ -13,8 +14,8 @@
 
 ## 派生ID
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-C2D11B-HUB-JA-0022-0000
-- derivative_diff_id: DDIFF-20260708-DNCL-022-0000-0001
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-52A7C0-HUB-JA-0022-0000
+- derivative_diff_id: DDIFF-20260811-DNCL-022-0000-0003
 
 ## 位置づけ
 
@@ -35,6 +36,21 @@ AIは参照された情報を増幅する。
 したがって、AI時代に問うべき中心は「AIに何をさせるか」ではない。
 
 中心は、AIに何を参照させ、誰が事業・顧客・営業・広報・プロダクト・組織認識・情報資産の連結層を監査するのかである。
+
+## 悪因果の核
+
+```text
+連結責任の空白
+→ 専門家最適化
+→ AIによる形式整備
+→ ズレの正規化
+→ 社内ナレッジ化
+→ AIによる再参照
+→ 事業OS汚染の自己再生
+→ 事業自己認識の喪失
+```
+
+重要なのは、ズレた出力が一度だけ生じることではない。ズレた成果物が社内の正規情報として保存され、次の人間判断やAI出力の参照元となることで、構造断線が再帰的に自己再生する点にある。
 
 ## 公開派生物
 

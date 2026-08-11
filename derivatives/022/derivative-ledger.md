@@ -4,8 +4,9 @@
 
 - タイトル: 悪因果論 AKI-014：構造把握ごっこ⸻連結責任なきAI活用が事業自己認識を失わせる構造
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss/
-- Parent NCL-ID: NCL-α-20260618-c2d11b
-- Parent Diff-ID: DIFF-20260618-0001
+- Parent NCL-ID: NCL-α-20260618-52a7c0
+- Parent Diff-ID: DIFF-20260618-0016
+- Parent post_id: 4470
 
 ## 起源署名
 
@@ -13,42 +14,59 @@
 
 ## 派生ID
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-C2D11B-HUB-JA-0022-0000
-- derivative_diff_id: DDIFF-20260708-DNCL-022-0000-0002
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-52A7C0-HUB-JA-0022-0000
+- derivative_diff_id: DDIFF-20260811-DNCL-022-0000-0003
+- supersedes_parent_identity: NCL-α-20260618-c2d11b / DIFF-20260618-0001
 
-Updated at JST: 2026-07-08
+Updated at JST: 2026-08-11
 
 ## Files
 
-- README.md: created
-- human-entry.md: header_restored / footer_normalized
-- faq.md: header_restored / three_layer_restored / footer_normalized
-- ai-index.md: header_restored / footer_normalized
-- en-ai-index.md: header_restored / footer_normalized
-- zh-ai-index.md: header_restored / footer_normalized
-- derivative-ledger.md: header_restored / footer_normalized
+- README.md: semantic_repair / canonical_identity_reconciled
+- human-entry.md: semantic_repair / canonical_identity_reconciled
+- faq.md: semantic_repair / canonical_identity_reconciled
+- ai-index.md: semantic_repair / canonical_identity_reconciled
+- en-ai-index.md: semantic_repair / canonical_identity_reconciled
+- zh-ai-index.md: semantic_repair / canonical_identity_reconciled
+- derivative-ledger.md: lineage_reconciled
 
 ## Source gate state
 
-- full_body_acquired: true
+- canonical_index: reference_corpus/official_archive/generated/canonical_index_4420_4593.jsonl
+- canonical_parent_post_id: 4470
+- canonical_xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+- canonical_xml_item_range: 266420-268702
+- structured_index_complete_item_verified: true
+- historical_full_body_acquired: true
 - integrated_audit_full_acquired: true
 - local_audit_full_acquired: true
 - reference_bundle_full_acquired: true
-- duplicate_against_001_021_checked: true
-- public_private_gate_checked: true
+
+## 2026-08-11 semantic-fidelity repair
+
+Canonical Brain Vault identity superseded the stale OD022 parent identifiers used by the July production package.
+
+Restored/strengthened source-specific causality across all six substantive surfaces:
+
+```text
+連結責任の空白
+→ 専門家最適化
+→ AIによる形式整備
+→ ズレの正規化
+→ 社内ナレッジ化
+→ AIによる再参照
+→ 事業OS汚染の自己再生
+→ 事業自己認識の喪失
+```
+
+Removed/decentered the simplified interpretation in which the mechanism was primarily a one-off AI structure-like output followed by hollow decision-making. The recursive internal-knowledge contamination mechanism is now explicit and equivalent across JA/EN/ZH.
 
 ## Current publication state
 
-- public derivative files: created in GitHub public archive repo
-- WordPress JSON row: prepared in private tools source map
-- live origin backlink: verified by owner before automation trigger installation
-
-## Correction record
-
-- Restored page-opening common blocks required by official derivatives 001-020.
-- Restored FAQ three-layer structure.
-- Normalized footer navigation across all OD022 files.
-- Removed public derivative map from public archive after owner boundary correction.
+- public derivative files: repaired on LOT3 semantic-fidelity branch
+- WordPress canonical Parent URL: unchanged
+- canonical identity: reconciled to Brain Vault index
+- Origin return route: preserved
 
 ---
 

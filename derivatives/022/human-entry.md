@@ -4,8 +4,9 @@
 
 - タイトル: 悪因果論 AKI-014：構造把握ごっこ⸻連結責任なきAI活用が事業自己認識を失わせる構造
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss/
-- Parent NCL-ID: NCL-α-20260618-c2d11b
-- Parent Diff-ID: DIFF-20260618-0001
+- Parent NCL-ID: NCL-α-20260618-52a7c0
+- Parent Diff-ID: DIFF-20260618-0016
+- Parent post_id: 4470
 
 ## 起源署名
 
@@ -13,8 +14,8 @@
 
 ## 派生ID
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-C2D11B-HUMAN-SUMMARY-JA-0022-0001
-- derivative_diff_id: DDIFF-20260708-DNCL-022-0001-0002
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-52A7C0-HUMAN-SUMMARY-JA-0022-0001
+- derivative_diff_id: DDIFF-20260811-DNCL-022-0001-0003
 
 ## 15秒入口
 
@@ -66,14 +67,14 @@ AKI-014が定義する「構造把握ごっこ」とは、この状態である�
 → AIによる形式整備
 → ズレの正規化
 → 社内ナレッジ化
-→ 再参照
+→ AIによる再参照
 → 事業OS汚染の自己再生
 → 事業自己認識の喪失
 ```
 
 この因果線が重要である。
 
-問題は「AIを使った」ことではない。問題は、ズレた前提情報をAIが整え、その整った成果物が社内公式情報として保存され、さらにAIがそれを再参照することで、構造断線が自己再生を始める点にある。
+問題は「AIを使った」ことではない。問題は、ズレた前提情報をAIが整え、その整った成果物が社内公式情報として保存され、さらに人間とAIがそれを再参照することで、構造断線が自己再生を始める点にある。
 
 ## 見えにくい理由
 
@@ -119,6 +120,7 @@ AKI-014が定義する「構造把握ごっこ」とは、この状態である�
 6. それとも、事象を発生させる生成原理としての因果の束を指しているか。
 7. AIで速くなったことと、事業が成立したことを混同していないか。
 8. AI生成物を社内ナレッジ化する前に、連結層の整合性を監査しているか。
+9. 一度保存されたAI生成物が、次の人間判断やAI生成の参照元になっていないか。
 
 ## 封じる構造
 
