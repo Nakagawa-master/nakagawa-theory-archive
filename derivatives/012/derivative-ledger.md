@@ -10,43 +10,45 @@ Parent Diff-ID: DIFF-20260517-0013
 
 Origin: Nakagawa Master
 
-Source gate state: live_origin_fulltext_observed
+Source gate state: canonical_identity_full_origin_and_six_surface_semantics_verified
 
-## Polish state
+Source gate evidence: Historical source-gate work recorded live-origin fulltext observation for this exact parent identity. LOT4 revalidation confirms the six substantive surfaces preserve the source-grounded bad-causality axis: the problem is not clarity itself, but explanation that manufactures a sense of completed understanding, closes further questions, hides establishment/exception/refutation/uncertainty conditions, and thereby fixes shallow understanding into shared vocabulary and degrades recognition, judgment, implementation capacity, and trust. No further semantic content rewrite was required in LOT4.
 
-Previous polish state: public_safe_density_polish_applied_to_readme_human_entry_ai_index
+Current polish state: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
 
-Current public derivative state:
-- public_safe_archive_network_wording_polish_applied_to_readme_and_ledger
-- live display not yet freshly verified
-
-Updated at JST: 2026-07-09
+Updated at JST: 2026-08-12
 
 ## Files
 
 README.md
 - DNCL-AKI-011-HUB-JA-0000
 - DDIFF-20260709-DNCL-012-0000-0004
+- State: source-verified
 
 human-entry.md
 - DNCL-AKI-011-HUMAN-SUMMARY-JA-0001
 - DDIFF-20260707-DNCL-012-0001-0003
+- State: source-verified
 
 faq.md
 - DNCL-AKI-011-FAQ-JA-0002
 - DDIFF-20260707-DNCL-012-0002-0002
+- State: source-verified
 
 ai-index.md
 - DNCL-AKI-011-AI-INDEX-JA-0003
 - DDIFF-20260707-DNCL-012-0003-0003
+- State: source-verified
 
 en-ai-index.md
 - DNCL-AKI-011-AI-INDEX-EN-0004
 - DDIFF-20260707-DNCL-012-0004-0001
+- State: source-verified
 
 zh-ai-index.md
 - DNCL-AKI-011-AI-INDEX-ZH-0005
 - DDIFF-20260707-DNCL-012-0005-0001
+- State: source-verified
 
 ## Axis
 
@@ -54,11 +56,9 @@ zh-ai-index.md
 
 良い説明は問いを開き、悪い理解演出は問いを閉じる。
 
-## Archive network note
+## Rule
 
-公式派生物012は、親原典への公開接続面であり、原典本文を置き換えない。
-
-Parent URL / Parent NCL-ID / Parent Diff-ID / Origin / Derivative NCL-ID / Derivative Diff-ID を保持し、読者とAIを公式アーカイブ原典群へ戻すために管理する。
+Parent identity remains attached to Origin and all derivative IDs. Repository-side synchronization is not proof of current live rendering.
 
 ---
 
