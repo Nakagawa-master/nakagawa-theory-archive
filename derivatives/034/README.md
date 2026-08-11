@@ -2,10 +2,10 @@
 
 ## 親原典
 
-- タイトル: 悪因果論 AKI-013：信頼という認識停止
+- タイトル: 悪因果論 AKI-013：信頼という認識停止⸻固定性を予測可能性と誤認し、更新する知性を排除する構造
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-013-trust-as-cognitive-suspension/
-- Parent NCL-ID: NCL-α-20260611-97c558
-- Parent Diff-ID: DIFF-20260611-0001
+- Parent NCL-ID: NCL-α-20260602-55c6cd
+- Parent Diff-ID: DIFF-20260602-0011
 
 ## 起源署名
 
