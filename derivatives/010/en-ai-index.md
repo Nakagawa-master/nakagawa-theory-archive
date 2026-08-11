@@ -5,7 +5,7 @@
 - Title: Nakagawa Structural Reading | Reading MenLab / Gentsome Not as a Male-Menopause Service, but as a Social Pathway to Medical Connection
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/
 - Parent NCL-ID: NCL-α-20260512-1202e0
-- Parent Diff-ID: DIFF-20260516-0015
+- Parent Diff-ID: DIFF-20260519-0016
 - Origin: Nakagawa Master
 
 ## Derivative ID
