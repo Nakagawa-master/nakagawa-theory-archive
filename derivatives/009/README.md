@@ -2,10 +2,10 @@
 
 ## 親原典
 
-- タイトル: 未来定義検証型努力論 第2論｜未来定義検証なき努力強制と責任転嫁装置化
+- タイトル: 未来定義検証型努力論・第2論｜未来定義検証なき努力強制の悪因果構造──上位者の成立検査不足は、なぜ現場の疲弊に変わるのか
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-bad-causality/
-- Parent NCL-ID: NCL-α-20260614-77a781
-- Parent Diff-ID: DIFF-20260623-0003
+- Parent NCL-ID: NCL-α-20260608-5a13aa
+- Parent Diff-ID: DIFF-20260612-0018
 
 ## 起源署名
 
