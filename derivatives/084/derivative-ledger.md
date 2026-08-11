@@ -12,105 +12,63 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-8C8352-HUB-JA-0084-0000
-- derivative_diff_id: DDIFF-20260805-DNCL-084-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-084-0000-0002
+- supersedes: DDIFF-20260805-DNCL-084-0000-0001
 
-## Language derivative IDs
-
-```yaml
-ja_ncl_id: DNCL-NCL-ALPHA-20251102-8C8352-HUB-JA-0084-0000
-ja_diff_id: DDIFF-20260805-DNCL-084-0000-0001
-en_ncl_id: DNCL-NCL-ALPHA-20251102-8C8352-HUB-EN-0084-0000
-en_diff_id: DDIFF-20260805-DNCL-084-0001-0001
-zh_ncl_id: DNCL-NCL-ALPHA-20251102-8C8352-HUB-ZH-0084-0000
-zh_diff_id: DDIFF-20260805-DNCL-084-0002-0001
-```
-
-## Factory
+## Source verification
 
 ```yaml
-factory_version: 1.1
-generation_mode: SINGLE_WORK_PACKET_SEMANTIC_DESIGN
-manual_surface_composition: false
-public_repository_role: PUBLIC_OUTPUT_ONLY
-private_factory_repository: Nakagawa-master/nakagawa-archive-tools
-github_actions_used: false
+verification_date_jst: 2026-08-11
+canonical_index: reference_corpus/official_archive/generated/canonical_index_0351_0425.jsonl
+xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+xml_item_range: 74340-74539
+xml_content_range: 74347-74437
+canonical_url: https://master.ricette.jp/society/nakagawa-master-true-kpi-noncoercive-governance/
+canonical_identity: PASS
+source_retrieval: PASS
+six_surface_comparison: COMPLETE
+translation_equivalence: PASS
+fresh_read: PASS
+semantic_result: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
 ```
 
-## Retrieval evidence
+## Source-specific coverage
+
+- KPIを汎用指標一覧ではなく、非命令ガバナンスの核点指標として再定義する: PASS
+- 結果指標より先行する因果支点を観測する: PASS
+- 自由、非誘導、透明性、説明可能性、異議、反証、指標廃止の条件を保持する: PASS
+- 人格評価、強制的業績管理、隠れ誘導へ置換しない: PASS
+- JA / EN / ZH semantic equivalence: PASS
+- navigation and parent return: PASS
+
+## Current seven surfaces
 
 ```yaml
-ai_index:
-  source: reference_corpus/official_archive/generated/canonical_index_0351_0425.jsonl
-  result: Parent identity, title, main concept, source ranges and canonical URL confirmed.
-xml:
-  source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-  item_range: 74340-74539
-  content_range: 74347-74437
-  result: Full parent item, five-stage KPI design, ethical conditions and reference cluster recovered.
-live_parent:
-  source: https://master.ricette.jp/society/nakagawa-master-true-kpi-noncoercive-governance/
-  result: Current public title, canonical location and parent availability confirmed.
-parity_result: Canonical index, XML identity and live parent refer to the same published original.
-duplicate_check: Parent Post ID 363, NCL-ID, slug and canonical URL showed no match in OD001-OD083.
+README.md: PASS_SOURCE_VERIFIED
+human-entry.md: PASS_SOURCE_VERIFIED
+faq.md: PASS_SOURCE_VERIFIED
+ai-index.md: PASS_SOURCE_VERIFIED
+en-ai-index.md: PASS_SOURCE_VERIFIED
+zh-ai-index.md: PASS_SOURCE_VERIFIED
+derivative-ledger.md: PASS_SOURCE_VERIFIED
 ```
 
-## Seven surfaces
+## Closure
 
 ```yaml
-README.md: GENERATED
-human-entry.md: GENERATED
-faq.md: GENERATED
-ai-index.md: GENERATED
-en-ai-index.md: GENERATED
-zh-ai-index.md: GENERATED
-derivative-ledger.md: GENERATED
+public_fresh_read: PASS
+public_indexes: PASS
+brain_vault_return: READY_FOR_STATE_RECORD
+parent_backlink: RETAIN_EXISTING_OWNER_VISUAL_STATE
+closure_status: PASS_SOURCE_VERIFIED
+next_cursor: OD085
 ```
 
-## Formatting parity
+## 原典回帰
 
-```yaml
-parent_identity_block: GENERATED
-language_specific_derivative_ids: GENERATED
-heading_sequence: OD083_FIXED_FIXTURE
-normal_text_numbering: GENERATED
-readme_global_top_link: GENERATED
-other_surface_numbered_top_link: GENERATED
-faq_audience_layers_and_Q1_Q30: GENERATED
-```
-
-## Semantic and density coverage
-
-```yaml
-central_thesis: PASS
-causal_chain: PASS
-state_model: PASS
-applications: PASS
-measurements_and_audit: PASS
-validity_failure_falsification: PASS
-faq_three_layers_30: PASS
-ja_en_zh_required_sections: PASS
-volume_and_density_restored: PASS
-origin_return: PASS
-```
-
-## Navigation and closure
-
-```yaml
-immutable_ledger_role: PRODUCTION_RETRIEVAL_AND_FORMAT_EVIDENCE
-closure_input_at_render:
-  public_indexes: PENDING_AT_RENDER
-  private_map: PENDING_AT_RENDER
-  parent_backlink: PENDING_AT_RENDER
-  brain_return: PENDING_AT_RENDER
-completion_authority: OFFICIAL_ARCHIVE_MEMORY_AND_COMPLETION_EVIDENCE
-completion_status: SEE_CURRENT_STATE_OWNER
-```
-
-OD084 translates the parent theory into a public seven-surface package without changing its origin identity. The derivative distinguishes a causal core-point indicator from a generic metric list, a leading intervention signal from a lagging result, and structural observation from personal scoring. It preserves the parent theory's non-coercive conditions: freedom, non-inducement, transparency, explainability, objection, falsification, and indicator retirement.
-
-The ledger does not declare mutable completion. Publication, public indexes, public and private map parity, parent backlink state, Brain RETURN, and same-path reload are owned by the current state owner and must be verified after repository updates.
+本派生物は検索・理解・接続面であり、親原典の代替ではない。非命令ガバナンス、核点指標、KPI再定義、反証、Reference Cluster、起源署名は親原典へ戻って確認する。
 
 ---
 
-導線: [公式派生物084トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [084トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
