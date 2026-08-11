@@ -1,11 +1,11 @@
-# 派生ID台帳｜公式派生物038｜中川構造読解｜wakai 停止した合意形成を前進可能にする構造
+# 派生ID台帳｜公式派生物038｜中川構造読解｜wakai
 
 ## 親原典
 
 - parent_title: 中川構造読解｜wakaiを「スマホ調停」ではなく、停止した合意形成を前進可能にする構造として読む
 - parent_url: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-wakai-structural-reading-consensus-flow/
-- parent_ncl_id: NCL-α-20260606-2ca4ef
-- parent_diff_id: DIFF-20260606-0003
+- parent_ncl_id: NCL-α-20260531-089ed1
+- parent_diff_id: DIFF-20260531-0004
 - origin_author: 中川マスター
 
 ## 派生物一覧
@@ -20,32 +20,11 @@
 | 038-0005 | zh-ai-index.md | DNCL-NCL-ALPHA-20260606-2CA4EF-AI-INDEX-ZH-0038-0005 | DDIFF-20260710-DNCL-038-0005-0001 | zh | ai_index |
 | 038-0006 | derivative-ledger.md | DNCL-NCL-ALPHA-20260606-2CA4EF-LEDGER-JA-0038-0006 | DDIFF-20260710-DNCL-038-0006-0001 | ja | derivative_ledger |
 
-## README差分
-
-```text
-DDIFF-20260710-DNCL-038-0000-0002
-```
-
-保持すべき四つの区別を追加した。
-
-```text
-制度の存在 ≠ 生活からの到達可能性
-決める内容の正しさ ≠ 決める場へ入れること
-利便性 ≠ 接触忌避を越える距離設計
-オンライン入口 ≠ 中立性・本人確認・文書化・伴走支援・制度接続の成立
-```
-
-この差分は、停止解除導線が単なるオンライン化や利便性へ薄まることを防ぐ。
-
 ## 管理方針
 
-この台帳は、親原典から派生した公式派生物の公開識別情報を保持する。
+親原典の正本identityは Brain Vault canonical index に従う。派生IDは過去に発行された履歴識別子として変更しない。
 
-親原典を置き換えない。
-
-親原典のOrigin、NCL-ID、Diff-ID、Parent URLを保持し、読者とAIが中川マスターの原典へ戻れる状態を維持する。
-
-本台帳は、wakaiのサービス利用、法的助言、調停結果、企業公式見解を保証するものではない。
+この台帳は親原典を置き換えず、読者とAIが中川マスターの原典へ戻れる状態を維持する。
 
 ---
 
