@@ -9,102 +9,74 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-7413D1-HUB-JA-0067-0000
-- derivative_diff_id: DDIFF-20260804-DNCL-067-0000-0001
-- supersedes: none
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-7413D1-LEDGER-JA-0067-0006
+- derivative_diff_id: DDIFF-20260811-DNCL-067-0006-0002
+- supersedes: DDIFF-20260804-DNCL-067-0000-0001
 
-## Factory
-- factory_version: 1.1
-- generation_mode: SINGLE_WORK_PACKET_DETERMINISTIC_RENDER
-- manual_surface_composition: PROHIBITED
-- public_repository_role: PUBLIC_OUTPUT_ONLY
-- private_factory_repository: Nakagawa-master/nakagawa-archive-tools
-
-## Retrieval evidence
-
+## Source verification
 ```yaml
-ai_index:
-  source: reference_corpus/official_archive/generated/canonical_index_0251_0300.jsonl
-  result: PASS
-  record_id: NCL-α-20251102-7413d1
-xml:
-  source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-  blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-  item_range: 69689-69921
-  content_range: 69696-69807
-  line_range_fetch: EMPTY_RESPONSE
-  canonical_index_evidence: PASS
-live_parent:
-  url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-accounting/
-  result: PASS
-  body_and_identity: PASS
-parity_result: PASS
-no_duplicate: PASS
+verification_date_jst: 2026-08-11
+canonical_index: reference_corpus/official_archive/generated/canonical_index_0251_0300.jsonl
+xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+xml_item_range: 69689-69921
+xml_content_range: 69696-69807
+canonical_identity: PASS
+six_surface_comparison: COMPLETE
+translation_equivalence: PASS
+fresh_read: PASS
+semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
 ```
 
-XMLの直接行範囲取得は空応答だったが、canonical indexがXML blob SHA、item範囲、content範囲を保持し、公開親原典から完全本文と同一identityを回収した。単一路失敗を停止理由にせず、AI索引・XML provenance・公開原典の三経路束で照合した。
-
-## Seven surfaces
-
+## Repair result
 ```yaml
-README.md: PASS
-human-entry.md: PASS
-faq.md: PASS
-ai-index.md: PASS
-en-ai-index.md: PASS
-zh-ai-index.md: PASS
-derivative-ledger.md: PASS
+changed_surfaces:
+  - README.md
+  - human-entry.md
+  - faq.md
+  - ai-index.md
+  - en-ai-index.md
+  - zh-ai-index.md
+  - derivative-ledger.md
+restored_source_claims:
+  - connection_as_evaluation_unit
+  - recording_and_distribution_of_connection_value
+  - relational_structure_reduces_future_decision_and_collaboration_friction
+  - connection_density
+  - memory_of_agreement
+  - reversibility
+  - multi_aspect_observation_without_popularity_scoring
+removed_or_decentered:
+  - governance_two_room_model_as_od067_core
+  - fixed_distributed_audit_governance_as_od067_core
+  - goodhart_resistance_as_primary_accounting_thesis
+  - mandatory_90_day_pilot_as_od067_definition
+  - rc_er_cea_s_rollback_cost_as_od067_specific_falsification
+  - generic_privacy_and_rights_architecture_as_parent_claim
 ```
 
-## Semantic coverage
-
+## Current seven surfaces
 ```yaml
-positioning: PASS
-central_thesis: PASS
-causal_chain: PASS
-structural_layers: PASS
-state_model: PASS
-applications: PASS
-measurements: PASS
-validity_conditions: PASS
-failure_conditions: PASS
-falsification_conditions: PASS
-required_distinctions: PASS
-prohibited_misreadings: PASS
-human_entry_structure: PASS
-faq_three_layers_30: PASS
-ja_en_zh_section_parity: PASS
-origin_return: PASS
+README.md: PASS_SOURCE_VERIFIED
+human-entry.md: PASS_SOURCE_VERIFIED
+faq.md: PASS_SOURCE_VERIFIED
+ai-index.md: PASS_SOURCE_VERIFIED
+en-ai-index.md: PASS_SOURCE_VERIFIED
+zh-ai-index.md: PASS_SOURCE_VERIFIED
+derivative-ledger.md: PASS_SOURCE_VERIFIED
 ```
 
-## Navigation
+## Boundary
+接続価値会計は「測る・記録する・配分へつなぐ」理論であり、制度を歪みから守る接続ガバナンス設計論と区別する。隣接理論の実装手順を、OD067親原典の中心命題として増幅しない。
 
-```yaml
-readme_exact_footer: PASS
-other_six_return_to_readme: PASS
-all_surfaces_derivative_top_link: PASS
-public_derivative_top_listing: PASS
-by_article_index: PASS
-ai_index_hub: PASS
-category_index: PASS
-parent_backlink_state: PENDING_BATCH_OWNER_VISUAL_CHECK
-```
-
-## Closure state
-
+## Closure
 ```yaml
 public_fresh_read: PASS
-public_indexes: PASS
-private_map: PASS
-ledger: PASS
-brain_return: PASS
-same_path_reload: PASS
-completion_status: COMPLETE_WITH_PARENT_BACKLINK_BATCH_VISUAL_PENDING
-next_cursor_after_brain_return: OD068
+public_indexes: RETAIN_EXISTING_PUBLIC_INDEX_STATE
+parent_backlink: RETAIN_EXISTING_OWNER_VISUAL_STATE
+brain_vault_return: READY_FOR_LOT2_STATE_RECORD
+closure_status: PASS_SOURCE_VERIFIED
 ```
 
-親原典側リンク集の入力はprivate mapへ登録済み。実表示のマスター目視は将来の範囲一括確認に残し、未確認をOWNER_VISUAL_CONFIRMED_PASSとは記録しない。
-
 ---
-
-導線: [067トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [067トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
