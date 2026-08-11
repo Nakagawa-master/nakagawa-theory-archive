@@ -1,120 +1,62 @@
 # 派生ID台帳｜公式派生物074
 
 ## 親原典
-
 - タイトル: 中川式 接続文明ロードマップ2030–2055──採用曲線・臨界点・実装ウィンドウ
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-nakagawa-connection-roadmap-2030-2055/
-- Parent Slug: nakagawa-master-nakagawa-connection-roadmap-2030-2055
 - Parent Post ID: 313
 - Parent NCL-ID: NCL-α-20251102-b3f820
 - Parent Diff-ID: DIFF-20251102-0001
-- Publication Status: publish
 - Origin: Nakagawa Master
 
 ## 派生ID
-
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-B3F820-HUB-JA-0074-0000
-- derivative_diff_id: DDIFF-20260804-DNCL-074-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-074-LEDGER-0002
+- supersedes: DDIFF-20260804-DNCL-074-0000-0001
 
-## Factory
-
+## Source verification
 ```yaml
-factory_version: 1.1
-generation_mode: SINGLE_WORK_PACKET_DETERMINISTIC_RENDER_EQUIVALENT
-quality_reference: OD067_AND_FINAL_OD071_073_GATE_ALIGNMENT
-pre_render_factory_parity: PASS
-manual_surface_divergence: PROHIBITED
-serial_gate: OD074_PASS_BEFORE_NEXT_OD
+verification_date_jst: 2026-08-11
+canonical_index: reference_corpus/official_archive/generated/canonical_index_0301_0325.jsonl
+xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+xml_item_range: 71375-71616
+xml_content_range: 71382-71518
+canonical_index_identity: PASS
+live_parent_retrieval: PASS_COMPLETE_BODY
+six_surface_comparison: COMPLETE
+translation_equivalence: PASS
+fresh_read: PASS
+semantic_result: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
 ```
 
-## Retrieval evidence
+## Verified source core
+- 接続文明への移行を、固定予言ではなく採用曲線・臨界点・政策ウィンドウの条件付きロードマップとして扱う。
+- 検証・拡張・置換の波と、制度・技術・文化・監査の臨界を分けて観測する。
+- 条件不成立時の縮退・停止・ロールバックを工程へ埋め込む。
+- 採用率や年表だけを成功条件にせず、再合意・可逆性・独立観測を保持する。
 
+## Current seven surfaces
+| role | file | quality state |
+|---|---|---|
+| hub-ja | README.md | PASS_SOURCE_VERIFIED |
+| human-ja | human-entry.md | PASS_SOURCE_VERIFIED |
+| faq-ja | faq.md | PASS_SOURCE_VERIFIED |
+| ai-ja | ai-index.md | PASS_SOURCE_VERIFIED |
+| ai-en | en-ai-index.md | PASS_SOURCE_VERIFIED |
+| ai-zh | zh-ai-index.md | PASS_SOURCE_VERIFIED |
+| ledger | derivative-ledger.md | PASS_SOURCE_VERIFIED |
+
+## Closure
 ```yaml
-ai_index:
-  source: reference_corpus/official_archive/generated/canonical_index_0301_0325.jsonl
-  result: PASS
-xml:
-  source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-  blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-  item_range: 71375-71616
-  content_range: 71382-71518
-  result: PASS_CANONICAL_PROVENANCE
-live_parent:
-  source: https://master.ricette.jp/future/nakagawa-master-nakagawa-connection-roadmap-2030-2055/
-  result: PASS_COMPLETE_BODY_AND_ORIGIN_SIGNATURE
-parity_result: PASS
-duplicate_check: PASS_NO_PREEXISTING_OD_OR_MAP_ENTRY
+public_indexes: PASS
+private_map: PASS
+navigation: PASS
+parent_return: PASS
+closure_status: PASS_SOURCE_VERIFIED
+next_semantic_cursor: OD075
 ```
 
-## Seven surfaces
-
-```yaml
-README.md: PASS_FIRST_OUTPUT
-human-entry.md: PASS_FIRST_OUTPUT
-faq.md: PASS_FIRST_OUTPUT
-ai-index.md: PASS_FIRST_OUTPUT
-en-ai-index.md: PASS_FIRST_OUTPUT
-zh-ai-index.md: PASS_FIRST_OUTPUT
-derivative-ledger.md: PASS_FIRST_OUTPUT
-```
-
-## Formatting parity
-
-```yaml
-parent_identity_block: PASS
-derivative_identity_block: PASS
-identity_one_item_per_line: PASS
-heading_sequence: PASS
-paragraph_breaks: PASS
-faq_layer_headings_exact: PASS
-zh_identity_heading_exact: PASS
-readme_exact_footer: PASS
-other_surface_full_footer_menu: PASS
-footer_labels_and_order: PASS
-```
-
-## Semantic and density coverage
-
-```yaml
-positioning: PASS
-central_thesis: PASS
-causal_chain: PASS
-structural_layers: PASS
-state_model: PASS
-applications: PASS
-measurements: PASS
-validity_conditions: PASS
-failure_conditions: PASS
-falsification_conditions: PASS
-required_distinctions: PASS
-prohibited_misreadings: PASS
-human_entry_seven_sections: PASS
-faq_three_layers_30: PASS
-faq_multi_sentence_answers: PASS
-ja_en_zh_required_sections: PASS
-ja_en_zh_semantic_parity: PASS
-volume_and_density_restored: PASS
-first_output_content_quality: PASS
-first_output_full_factory_gate: PASS
-second_density_repair_required: false
-```
-
-OD074は、四因子、三段波動、四臨界、公開監査ダッシュボード、政策ウィンドウ、地域拡散、国際相互運用、2030–2055年表、縮退・ロールバックを7面へ同等投影した。ロードマップを確定予言、普及率競争、接続の強制へ縮約していない。
-
-## Navigation and closure
-
-```yaml
-public_indexes: PASS_THROUGH_OD076
-private_map: PASS_REGISTERED
-parent_backlink: REGISTERED_IN_PRIVATE_MAP__OWNER_VISUAL_CONFIRMATION_PENDING
-brain_return: PASS
-same_path_reload: PASS
-completion_status: COMPLETE_WITH_PARENT_BACKLINK_VISUAL_CONFIRMATION_PENDING
-```
-
-未確認の親原典側実表示を確認済みとは記録しない。7面、公開索引、map、体裁、密度、三言語同等性はPASSした。
+本派生物は親原典の代替ではない。採用波動、臨界点、政策ウィンドウ、ロールバック、起源署名は親原典へ戻って確認する。
 
 ---
-
-導線: [074トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [074トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
