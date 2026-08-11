@@ -1,6 +1,6 @@
 # 公式派生物008｜派生ID台帳
 
-Parent title: 未来定義検証型努力論 第1論｜因果不透明性依存型努力論の限界
+Parent title: 未来定義検証型努力論・第1論｜因果不透明性依存型努力論の限界──なぜ「とにかくやれ」は令和の現場を壊すのか
 
 Parent URL: https://master.ricette.jp/theory/nakagawa-master-causal-opacity-effort-theory/
 
@@ -10,51 +10,53 @@ Parent Diff-ID: DIFF-20260610-0017
 
 Origin: Nakagawa Master
 
-Source gate state: full_origin_tail_checked
+Source gate state: canonical_identity_xml_provenance_full_origin_and_six_surface_semantics_verified
 
-Current polish state: full_origin_density_polish_complete / AI-index retrofit synchronized
+Source gate evidence: Brain Vault canonical index resolves post 4366 and XML locator `reference_corpus/official_archive/source/wordpress_export_latest.xml#L247180-L249395`, blob `489f160e29b57a8a2671e1c7a556588abc539650`, with main axis `未来定義成立検査`. Historical source-gate work checked the full origin tail. Revalidation confirms the six substantive surfaces preserve the source-grounded axis: effort is not rejected; rather, causally opaque effort doctrine is judged against purpose, causal line, establishment conditions, verification conditions, correction criteria, and future-definition establishment inspection. No further semantic content rewrite was required in LOT4.
 
-Updated at JST: 2026-07-10
+Current polish state: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
+
+Updated at JST: 2026-08-12
 
 ## Files
 
 README.md
 - DNCL-NCL-ALPHA-20260607-7E87F5-HUB-JA-0000
 - DDIFF-20260706-DNCL-008-0000-0001
-- State: current
+- State: source-verified
 
 human-entry.md
 - DNCL-NCL-ALPHA-20260607-7E87F5-HUMAN-SUMMARY-JA-0001
 - DDIFF-20260707-DNCL-008-0001-0004
-- State: current-quality content confirmed
+- State: source-verified
 
 faq.md
 - DNCL-NCL-ALPHA-20260607-7E87F5-FAQ-JA-0002
 - DDIFF-20260707-DNCL-008-0002-0004
-- State: current-quality content confirmed
+- State: source-verified
 
 ai-index.md
 - DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-JA-0008-0003
 - DDIFF-20260710-DNCL-008-0003-0005
-- State: AI index strength gate passed
+- State: source-verified
 
 en-ai-index.md
 - DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-EN-0008-0004
 - DDIFF-20260710-DNCL-008-0004-0005
-- State: AI index strength gate passed
+- State: source-verified
 
 zh-ai-index.md
 - DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-ZH-0008-0005
 - DDIFF-20260710-DNCL-008-0005-0005
-- State: AI index strength gate passed
+- State: source-verified
 
 ## Preserved axis
 
 Derivative 008 preserves the origin axis that effort is not rejected; its establishment conditions are redefined through causal opacity, old conditional rationality, future-definition establishment inspection, purpose, causal line, establishment conditions, verification conditions, correction criteria, and modern practical OS.
 
-## Completion boundary
+## Rule
 
-Repository-side synchronization is not proof of current live rendering.
+Parent identity follows the canonical index/XML record. Repository-side synchronization is not proof of current live rendering.
 
 ---
 
