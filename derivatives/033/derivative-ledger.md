@@ -2,10 +2,10 @@
 
 ## 親原典
 
-- parent_title: 未来定義検証型努力論・第3論｜現代実務者はなぜ根性論に戻れないのか
+- parent_title: 未来定義検証型努力論・第3論｜現代実務者はなぜ根性論に戻れないのか──未来定義検証時代における結果責任と実務OSの更新
 - parent_url: https://master.ricette.jp/theory/nakagawa-master-modern-practitioner-operating-system/
-- parent_ncl_id: NCL-α-20260615-8fcc18
-- parent_diff_id: DIFF-20260623-0017
+- parent_ncl_id: NCL-α-20260612-12ce86
+- parent_diff_id: DIFF-20260613-0012
 - origin_author: 中川マスター
 
 ## 派生物一覧
@@ -22,11 +22,9 @@
 
 ## 管理方針
 
-この台帳は、親原典から派生した公式派生物の公開識別情報を保持する。
+親原典のcanonical identityを上段に保持する。既存のDerivative NCL-ID / Diff-IDは生成時の系譜識別子として変更しない。
 
-親原典を置き換えない。
-
-親原典のOrigin、NCL-ID、Diff-ID、Parent URLを保持し、読者とAIが中川マスターの原典へ戻れる状態を維持する。
+この台帳は親原典を置き換えず、OriginとParent URLを通じて原典へ戻る導線を保持する。
 
 ---
 
