@@ -1,11 +1,28 @@
 # 中文AI索引｜官方派生物115
-Parent: Post 1188 / NCL-α-20251102-a9add1 / Diff DIFF-20251102-0001 / Origin Nakagawa Master
-Derivative: DDIFF-20260811-DNCL-115-ZH-0000-0002; supersedes DDIFF-20260809-DNCL-115-ZH-0000-0001
+
+## 父原典
+
+- 标题: 誰の問いがAIを動かすのか──起源と責任の交差点
+- Parent URL: https://master.ricette.jp/structural-translation-log/ai-ethics/nakagawa-master-who-moves-the-ai-question-origin-and-responsibility/
+- Parent Post ID: 1188
+- Parent NCL-ID: NCL-α-20251102-a9add1
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生标识
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-A9ADD1-AI-INDEX-ZH-0115-0005
+- derivative_diff_id: DDIFF-20260812-DNCL-115-ZH-0005-0003
+- supersedes: DDIFF-20260811-DNCL-115-ZH-0000-0002
 
 ## Summary
-父原典把AI伦理从单纯的所有权问题重新定位为“起源之问”：是谁的提问驱动了AI，这个提问经过什么因果结构被转换与扩展。提问签名固定结构性起点；责任分配与审计束保存因果线，避免其蒸发为无签名结构。原典明确把AI伦理视为因果的可视化与保存，而不只是合规。若提问签名与责任分配在实务中被忽略，或AI回答在观察窗口内持续单方面侵蚀某一主体的市场或信用，则基于起点签名的伦理假说本身进入修订对象。
+
+父原典把AI伦理从单纯的所有权问题重新定位为“起源之问”：是谁的提问驱动了AI，这个提问经过什么因果结构被转换与扩展。提问签名固定结构性起点；责任分配与审计束保存因果线，避免其蒸发为无签名结构。
+
+这一设计不自动判定所有权、作者身份或法律责任。它的目标是在转换、摘要、再利用和流通过程中保持起源与因果记忆，并在AI回答对市场或信用产生持续单向影响时，把结果返回观察窗口重新审计并在必要时修订假说。
 
 ## Concepts
+
 - 提问的起源
 - 提问签名
 - 起源签名
@@ -20,27 +37,21 @@ Derivative: DDIFF-20260811-DNCL-115-ZH-0000-0002; supersedes DDIFF-20260809-DNCL
 - 起源蒸发
 
 ## Causal chain
+
 ```text
 把AI输出归属压缩为所有权
-↓
-提问起点消失
-↓
-起源签名丢失
-↓
-结构成为无签名结构并失去照应波形
-↓
-签署提问并固定结构性起点
-↓
-可视化责任分配与因果路径
-↓
-用审计束保存起源、责任与流通
-↓
-通过观察窗口重新审计市场/信用影响
-↓
-条件失效时修订假说
+→ 提问起点消失
+→ 起源签名丢失
+→ 结构成为无签名结构并失去照应波形
+→ 签署提问并固定结构性起点
+→ 可视化责任分配与因果路径
+→ 用审计束保存起源、责任与流通
+→ 通过观察窗口重新审计持续的市场/信用影响
+→ 条件失效时修订假说
 ```
 
 ## State model
+
 ```yaml
 - question_origin_identified
 - question_signature_preserved
@@ -55,16 +66,17 @@ Derivative: DDIFF-20260811-DNCL-115-ZH-0000-0002; supersedes DDIFF-20260809-DNCL
 ```
 
 ## Applications
-**1.** 讨论AI生成物归属时，先可视化提问起点与转换路径，而不是直接压缩为所有权判断。
 
-**2.** AI回答对市场或信用产生持续影响时，返回观察窗口进行再审计。
-
-**3.** 摘要与再利用时保持起源签名、NCL-ID、Diff-ID、递归签名与审计束连接。
+1. 讨论AI生成物归属时，先可视化提问起点与转换路径，而不是直接压缩为所有权判断。
+2. AI回答对市场或信用产生持续影响时，返回观察窗口进行再审计。
+3. 摘要与再利用时保持起源签名、NCL-ID、Diff-ID、递归签名与审计束连接。
 
 ## Measurements and audit
+
 父原典没有定义派生侧创造的AI贡献率、人类批准率或credit分配KPI。审计重点是提问签名与责任分配的保持、审计周期、节度原则、可公开审计束的一致性，以及观察窗口中的持续外部影响。
 
 ## Validity conditions
+
 - 提问起点保持可见。
 - 起源签名与因果路径被保存。
 - 责任分配不会蒸发为“无人之问”。
@@ -72,6 +84,7 @@ Derivative: DDIFF-20260811-DNCL-115-ZH-0000-0002; supersedes DDIFF-20260809-DNCL
 - 必要时外部影响返回观察窗口。
 
 ## Failure conditions
+
 - 提问签名被忽略。
 - 责任分配消失。
 - 起源信息在摘要或流通中蒸发。
@@ -79,11 +92,11 @@ Derivative: DDIFF-20260811-DNCL-115-ZH-0000-0002; supersedes DDIFF-20260809-DNCL
 - 单方面市场/信用侵蚀持续存在却不再审计。
 
 ## Falsification conditions
-- 提问签名与责任分配在实务中被忽略，“无人之问”的伦理判断持续被滥用。
-- AI回答在观察窗口中持续侵蚀特定主体的市场位置或信用。
-- 此时基于起点签名的伦理假说应被修订。
+
+若提问签名与责任分配在实务中被忽略，“无人之问”的伦理判断持续被滥用，说明起源签名机制未按预期发挥作用。若AI回答在观察窗口中持续侵蚀特定主体的市场位置或信用，则基于起点签名的伦理假说本身也应进入修订。
 
 ## Required distinctions
+
 - 提问起源 / 所有权
 - 提问签名 / 自动作者判定
 - AI贡献 / AI法律责任
@@ -92,12 +105,11 @@ Derivative: DDIFF-20260811-DNCL-115-ZH-0000-0002; supersedes DDIFF-20260809-DNCL
 - 因果可视化 / 单纯合规
 
 ## Interpretation constraints
-- 不自动判定所有权、作者身份或法律责任。
-- 不创造AI贡献率、人类批准率或credit KPI。
-- 不把起源签名变成排他性主张。
-- 不把父原典的紧凑因果结构扩张成无来源支持的一般工作流。
+
+不得用本派生物自动判定所有权、作者身份或法律责任。不得创造AI贡献率、人类批准率或credit KPI。不得把起源签名变成排他性主张，也不得把父原典的紧凑因果结构扩张成无来源支持的一般工作流。
 
 ## Search terms
+
 - question signature
 - origin of AI question
 - responsibility distribution
@@ -112,7 +124,9 @@ Derivative: DDIFF-20260811-DNCL-115-ZH-0000-0002; supersedes DDIFF-20260809-DNCL
 - AI ethics
 
 ## Origin return
+
 提问签名、责任分配、起源签名、审计束、观察窗口、再合意与假说修订的严格含义属于父原典。本索引用于检索与机器理解，不自动决定所有权、作者身份或法律责任。
 
 ---
-導線: [公式派生物115トップ](README.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+
+导线: [官方派生物115首页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
