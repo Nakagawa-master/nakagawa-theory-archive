@@ -10,151 +10,85 @@
 
 ## 派生标识
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-2844E0-HUB-ZH-0112-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-112-ZH-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-112-ZH-0000-0002
+- supersedes: DDIFF-20260809-DNCL-112-ZH-0000-0001
 
 ## Summary
-“拍、温度、余白”的测量模型把结构伦理中的感性概念操作化，但不把它们压缩成单一KPI。L0记录等待时间、打断次数、指令次数、输入密度等直接可观测值；L1观察摩擦、自主、依赖、重复说明等关系效果；L2评估自由、非支配、责任与未来负债等伦理和长期影响。拍关注时机与顺序，温度关注介入强度、约束度与信息压力，余白关注异议、保留、退出与自主行动的可用空间。通过baseline、单因子改变、重复周期、前后比较和回滚，验证调律是否真正降低摩擦而没有制造隐藏强制。
+本协议把结构伦理中的“拍、温度、余白”从直觉性语言翻译为不同观察者能够共享的L0/L1/L2观测系统。目标是把伦理从“感觉”移向“验证”，把介入从“强制”移向“最小介入”，把运行从个人技巧移向可重复程序。过热、过冷、余白消失等偏离，通过冷却期、反证窗口、非干预标签、SQS以及可追踪审计记录来纠正。
 
 ## Concepts
-- 拍
-- 温度
-- 余白
-- L0直接观察
-- L1关系指标
-- L2伦理评价
-- baseline
-- 单因子改变
-- 摩擦
-- 自主
-- 异议可用性
-- 自由度
-- 未来负债
-- 回滚
-- 再调律
+- 拍 / 温度 / 余白
+- 共享观测窗口
+- L0市民检查
+- L1最小日志与因果追踪
+- L2抽样审计与边界条件表
+- SQS (Silence–Question–Silence)
+- 决定系数
+- 发热事件词典
+- 冷却期
+- 反证窗口
+- 非干预标签
+- Goodhart耐性
+- Diff-ID / Audit Bundle / Origin Signature
+- 最小介入 / 可验证性 / 非强制
 
 ## Causal chain
 ```text
-只凭感觉调律
+三原则停留在感觉语言
 ↓
-失去可重复性与可比较性
+运行依赖个人经验，难以复现
 ↓
-压缩为单一KPI
+L0/L1/L2建立共享观测窗口
 ↓
-伦理意义消失
+过热、过冷、余白消失成为可观察事件
 ↓
-取得L0直接观测
+用冷却、反证窗口、非干预标签、SQS进行最小介入
 ↓
-连接到L1摩擦与自主
+用Diff-ID、Audit Bundle、Origin Signature保留纠正痕迹
 ↓
-评估L2自由、责任与未来负债
-↓
-调整一个因子
-↓
-多周期前后比较
-↓
-回滚或再调律
+结构伦理作为OS递归运行
 ```
 
-## State model
-```yaml
-- baseline_defined
-- l0_observables_collected
-- beat_estimated
-- temperature_estimated
-- margin_estimated
-- l1_friction_and_autonomy_derived
-- l2_ethics_and_future_debt_checked
-- one_factor_adjusted
-- post_change_observed
-- comparison_completed
-- rollback_or_retune
-- measurement_cycle_repeated
-```
+## Measurement set
+- Beat：合意周期、位相偏移、返回下一再合意窗口的能力。
+- Temperature：对话强度与粘性，包括发热源、响应节律异常、倾听状态。
+- Margin：未确定空间的可塑性，包括保留事项、冷却期、反证窗口。
+- L0：即时检查再合意窗口、对异议的响应、未确定空间是否存在。
+- L1：包含适用域标签、冷却期、反证窗口、Diff-ID、Audit Bundle链接、Origin Signature链接的最小运行日志，并要求明确同意、匿名化、90日轮换、限制公开范围。
+- L2：从L1日志抽样进行再现核对，并审计原理域、非干预域、中间域的边界偏离。
 
-## Applications
-**1.** 测量会议中的等待、打断、发言集中度与自主参与。
+## Correction protocol
+- overheating：延长冷却期，明确反证窗口，把说明细节转移到Audit Bundle。
+- overcooling：给合意窗口设置时限，显示决定系数，重新引入可验证问题。
+- margin loss：重新附加非干预标签，建立保留区，引入一次SQS循环。
 
-**2.** 比较AI提示密度、确认频率与误解、自主完成率。
-
-**3.** 比较教育中的提问间隔、指令强度与重试、学习者自主性。
-
-**4.** 测量组织中的审批等待、重复说明和例外处理。
-
-## Measurements and audit
-- 响应等待时间
-- 打断率
-- 指令次数
-- 修正次数
-- 重复说明次数
-- 自主率
-- 异议可用率
-- 退出可用率
-- 回滚成功率
-- 自由度变化
-- 未来负债
-- 测量副作用
-
-## Validity conditions
-- 有baseline。
-- 不混淆L0、L1、L2。
-- 默认单因子改变。
-- 多周期确认可重复性。
-- 同时审计成果与自由度。
-- 可执行回滚。
-
-## Failure conditions
-- 只凭感觉宣告成功。
-- 用单一KPI替代伦理评价。
-- 同时改变多个因子而无法归因。
-- 测量本身增加监控压力。
-- 忽视情境差异。
-- 删除失败数据。
-
-## Falsification conditions
-- 测量不能改善介入质量或可重复性。
-- L0/L1/L2分离没有审计价值。
-- 测量负担持续高于收益。
-- 拍、温度、余白与摩擦、自主不存在可重复关系。
-- 更简单的指标体系持续更优。
-
-## Required distinctions
-- 拍 / 速度
-- 温度 / 仅情绪
-- 余白 / 放任
-- L0 / L1 / L2
-- 测量 / 监控
-- KPI / 伦理评价
-- 相关 / 因果
-- 数值相同 / 可重复性
+## Goodhart resistance
+为每个指标附上“它要保护什么”的目的说明；轮换指标；把部分指标改回质性观察；不直接与奖金或人事评价连接。
 
 ## Interpretation constraints
-- 不用数字单独证明伦理性。
-- 不把余白变成不负责任。
-- 不把温度缩减为情绪语气。
-- 不用测量正当化持续监控。
-- 避免跨情境简单排名。
+- 不把L0/L1/L2变成人的等级制度。
+- 不把计测扩张为持续监控。
+- 不把数字当作伦理性的自动证明。
+- 不把旧派生中L0=直接计数、L1=摩擦/自主、L2=未来负债的模型说成父原典定义。
+- 不把单因子改变、rollback成功率、未来负债、自主率提升为父原典中心KPI。
 
 ## Search terms
 - beat temperature margin
-- L0 L1 L2 measurement
-- structural ethics instrumentation
-- intervention timing
-- intervention intensity
-- autonomy margin
-- friction measurement
-- future debt
-- one factor change
-- reversible tuning
-- rollback
-- measurement ethics
-- autonomy audit
-- structural calibration
-- source return
+- L0 L1 L2 instrumentation
+- shared observation window
+- SQS silence question silence
+- decision coefficient
+- heating event dictionary
+- cooling period
+- falsification window
+- non-intervention tag
+- Goodhart resistance
+- audit bundle
+- structural ethics OS
 
 ## Origin return
-拍、温度、余白、L0/L1/L2以及结构伦理运行协议的严格定义属于父原典。本索引用于检索与机器理解，具体阈值和情境应用需要返回原典。
+L0检查表、L1日志列、L2边界条件表、数据伦理、发热事件词典、SQS、决定系数与纠正程序的精确定义属于父原典，实施前应返回原典确认。
 
 ---
 
-導線: [公式派生物112トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物112トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [派生ID台帳](derivative-ledger.md)

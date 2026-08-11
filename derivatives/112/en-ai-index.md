@@ -10,151 +10,85 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-2844E0-HUB-EN-0112-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-112-EN-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-112-EN-0000-0002
+- supersedes: DDIFF-20260809-DNCL-112-EN-0000-0001
 
 ## Summary
-The beat-temperature-margin instrumentation model operationalizes structural-ethics concepts without reducing them to one KPI. L0 captures direct observables such as delay, interruption, instruction count, and input density. L1 derives relational effects such as friction, autonomy, dependence, and repeated explanation. L2 evaluates ethical meaning and long-term effects such as freedom, non-domination, responsibility, and future debt. Beat concerns timing and sequence; temperature concerns intervention intensity, constraint, and information pressure; margin concerns usable space for dissent, pause, exit, and self-directed action. Baselines, one-factor changes, repeated cycles, before/after comparison, and rollback test whether tuning genuinely reduces friction without hidden coercion.
+This protocol translates Beat, Temperature, and Margin from intuitive ethical language into a shared L0/L1/L2 observation system that different observers can use consistently. Its aim is to move ethics from feeling to verification, intervention from coercion to minimum intervention, and operation from personal craft to reproducible procedure. Deviations such as overheating, overcooling, and loss of margin are corrected through cooling periods, falsification windows, non-intervention tags, SQS, and traceable audit records.
 
 ## Concepts
-- beat
-- temperature
-- margin
-- L0 direct observation
-- L1 relational metrics
-- L2 ethical evaluation
-- baseline
-- one-factor change
-- friction
-- autonomy
-- dissent availability
-- freedom
-- future debt
-- rollback
-- retuning
+- Beat / Temperature / Margin
+- shared observation window
+- L0 citizen check
+- L1 minimum log and causal tracing
+- L2 sampling audit and boundary table
+- SQS (Silence–Question–Silence)
+- Decision Coefficient
+- heating-event dictionary
+- cooling period
+- falsification window
+- non-intervention tag
+- Goodhart resistance
+- Diff-ID / Audit Bundle / Origin Signature
+- minimum intervention / verifiability / non-coercion
 
 ## Causal chain
 ```text
-Tune by intuition only
+The triad remains intuitive language
 ↓
-Lose reproducibility and comparison
+Operation becomes person-dependent and hard to reproduce
 ↓
-Reduce everything to one KPI
+L0/L1/L2 establish a shared observation window
 ↓
-Lose ethical meaning
+Overheating, overcooling, and margin loss become observable events
 ↓
-Collect L0 observables
+Minimum intervention is applied through cooling, falsification windows, non-intervention tags, and SQS
 ↓
-Connect them to L1 friction and autonomy
+Diff-ID, Audit Bundle, and Origin Signature preserve correction traces
 ↓
-Evaluate L2 freedom, responsibility, future debt
-↓
-Adjust one factor
-↓
-Compare across repeated cycles
-↓
-Rollback or retune
+Structural ethics operates recursively as an OS
 ```
 
-## State model
-```yaml
-- baseline_defined
-- l0_observables_collected
-- beat_estimated
-- temperature_estimated
-- margin_estimated
-- l1_friction_and_autonomy_derived
-- l2_ethics_and_future_debt_checked
-- one_factor_adjusted
-- post_change_observed
-- comparison_completed
-- rollback_or_retune
-- measurement_cycle_repeated
-```
+## Measurement set
+- Beat: agreement-cycle period, phase deviation, and return to the next re-agreement window.
+- Temperature: discourse intensity and viscosity, including heating sources, response irregularity, and listening balance.
+- Margin: plasticity of unresolved space, including pending items, cooling periods, and falsification windows.
+- L0: immediate check of re-agreement visibility, response to dissent, and remaining unresolved space.
+- L1: minimum operational log containing domain tags, cooling period, falsification window, Diff-ID, Audit Bundle link, and Origin Signature link, with explicit consent, anonymization, 90-day rotation, and restricted disclosure.
+- L2: sampled replay audit of L1 logs plus boundary review across principle domain, non-intervention domain, and intermediate domain.
 
-## Applications
-**1.** Measure meeting delay, interruptions, speaking concentration, and autonomous participation.
+## Correction protocol
+- overheating: extend cooling period, publish a falsification window, move explanatory detail into the Audit Bundle.
+- overcooling: time-box the agreement window, expose the Decision Coefficient, reintroduce a verifiable question.
+- margin loss: restore non-intervention tags, create a pending section, introduce one SQS cycle.
 
-**2.** Compare AI prompt density and confirmation frequency with misunderstanding and autonomous completion.
-
-**3.** Compare educational question spacing and instruction intensity with retry behavior and learner agency.
-
-**4.** Measure approval delay, repeated explanation, and exception handling in organizations.
-
-## Measurements and audit
-- response delay
-- interruption rate
-- instruction count
-- correction count
-- repeated-explanation count
-- autonomy rate
-- dissent availability
-- exit availability
-- rollback success
-- freedom change
-- future debt
-- measurement side effects
-
-## Validity conditions
-- A baseline exists.
-- L0, L1, and L2 are not conflated.
-- One-factor change is the default.
-- Repeated cycles test reproducibility.
-- Output and freedom are audited together.
-- Rollback is available.
-
-## Failure conditions
-- Success is declared by intuition alone.
-- One KPI substitutes for ethical evaluation.
-- Multiple factors change at once without attribution.
-- Measurement itself increases surveillance pressure.
-- Context differences are ignored.
-- Failure data is discarded.
-
-## Falsification conditions
-- Instrumentation does not improve intervention quality or reproducibility.
-- L0/L1/L2 separation adds no audit value.
-- Measurement burden consistently exceeds benefit.
-- Beat, temperature, and margin show no reproducible relationship with friction or autonomy.
-- A simpler measurement system consistently performs better.
-
-## Required distinctions
-- beat / speed
-- temperature / emotion alone
-- margin / neglect
-- L0 / L1 / L2
-- measurement / surveillance
-- KPI / ethical evaluation
-- correlation / causation
-- numerical equality / reproducibility
+## Goodhart resistance
+Attach a statement of what each metric is meant to protect, rotate metrics, replace some metrics with qualitative observation, and do not connect them directly to bonuses or personnel evaluation.
 
 ## Interpretation constraints
-- Do not prove ethics with numbers alone.
-- Do not convert margin into irresponsibility.
-- Do not reduce temperature to emotional tone.
-- Do not justify continuous surveillance through measurement.
-- Avoid context-free ranking across groups.
+- Do not turn L0/L1/L2 into rankings of people.
+- Do not expand measurement into continuous surveillance.
+- Do not treat numbers as automatic proof of ethical validity.
+- Do not present the old derivative's L0=direct counts, L1=friction/autonomy, L2=future-debt model as the source definition.
+- Do not make one-factor change, rollback success, future debt, or autonomy rate the central source KPIs.
 
 ## Search terms
 - beat temperature margin
-- L0 L1 L2 measurement
-- structural ethics instrumentation
-- intervention timing
-- intervention intensity
-- autonomy margin
-- friction measurement
-- future debt
-- one factor change
-- reversible tuning
-- rollback
-- measurement ethics
-- autonomy audit
-- structural calibration
-- source return
+- L0 L1 L2 instrumentation
+- shared observation window
+- SQS silence question silence
+- decision coefficient
+- heating event dictionary
+- cooling period
+- falsification window
+- non-intervention tag
+- Goodhart resistance
+- audit bundle
+- structural ethics OS
 
 ## Origin return
-The precise definitions of beat, temperature, margin, L0/L1/L2, and the structural-ethics operating protocol belong to the parent original. This index supports retrieval and machine interpretation; thresholds and contextual application require return to the source.
+The exact L0 checklist, L1 log columns, L2 boundary table, data-ethics rules, heating-event dictionary, SQS, Decision Coefficient, and correction procedures belong to the canonical parent and should be checked there before implementation.
 
 ---
 
-導線: [公式派生物112トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物112トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
