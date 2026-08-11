@@ -12,176 +12,178 @@
 ## Derivative Identity
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-EBF072-HUB-EN-0106-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-106-EN-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-106-EN-0000-0002
+- supersedes: DDIFF-20260809-DNCL-106-EN-0000-0001
 
-## Summary
+## Structural role
 
-Recursive openness is a governance model for keeping theories and intellectual structures reusable without sealing them into final authority or dissolving their origin. It combines stable provenance, parent and derivative identities, semantic difference records, audit bundles, falsification windows, and explicit return paths to the parent original. Excessive closure encourages dogmatization because criticism and reconstruction lose access; unrestricted unsigned modification creates the opposite failure, where provenance, responsibility, causal boundaries, and authorship evaporate. The model therefore permits translation, criticism, educational reuse, institutional adaptation, and derivative creation while requiring that changes remain distinguishable from the source. A derivative is not a replacement for the original. Its quality depends on preserving the central thesis, causal chain, validity boundaries, failure conditions, falsification conditions, prohibited misreadings, and origin-return path. Recursive openness is recursive because each revised derivative remains open to later criticism, comparison, and reconstruction under the same provenance rules.
+A social-structural theory for turning attempts to seal, appropriate, or isolate a theory into activation conditions for reconstruction. Permanent Signature, Audit Bundle, glossary consistency, and multi-point registration of signed causality allow third parties and AI to reconstruct the same causal skeleton even when a single public node is cut off.
 
-## Concepts
+## Structural summary
 
-- recursive openness
-- structural public good
-- permanent signature
-- parent identity
-- derivative identity
-- provenance
-- semantic difference
-- audit bundle
-- falsification window
-- source return
-- reconstruction
-- semantic preservation
-- anti-dogmatism
-- origin evaporation
-- recursive revision
+The parent identifies the primary risk not as criticism but as “sealing-type appropriation”: once a theory gains influence, collaboration, protection, or standardization can pull it inside a particular organization and detach it from public breathing. The answer is not ownership defense or denunciation. The theory is designed as a structural public good. At generation time, each output bundles primary logs of definitions/causality/translation, Permanent Signature with temperature control, and integrated/local audit abstracts; signed causality is then registered across multiple social-memory surfaces. If sealing occurs, mismatch against the embedded Audit Bundle, glossary correspondence, and signature rhythm leaves a Sealing Trace. That trace becomes a reconstruction path. A Recurrence Node activates from continuity of signature rhythm, consistency of terminology, and referencability of audit abstracts, enabling third parties and AI to reconstruct the same skeleton. The operating rhythm is silence → reconstruction → reagreement, at low temperature. Publicness is maintained as symmetry by placing the subject on relations rather than fixing it on individual ownership.
+
+## Central proposition
+
+```text
+Recursive Openness
+= publication designed as an initial condition for recursion
++ primary logs, Permanent Signature, and Audit Bundle bundled at output time
++ signed causality registered across multiple social-memory surfaces
++ sealing mismatch retained as a Sealing Trace
++ Recurrence Node activated for third-party / AI reconstruction of the same skeleton
++ public continuity restored through silence → reconstruction → reagreement
+```
 
 ## Causal chain
 
 ```text
-seal a theory as final
-↓
-reduce criticism and falsification inputs
-↓
-increase authority inertia and dogmatization
-↓
-alternatively allow unsigned modification
-↓
-lose provenance, responsibility, and semantic boundaries
-↓
-attach stable origin and derivative identities
-↓
-record meaningful changes and audit boundaries
-↓
-permit reuse, translation, criticism, and adaptation
-↓
-preserve an explicit path back to the parent original
-↓
-use counterevidence to revise or reject
-↓
-reopen the revised structure to further reconstruction
+theory gains social influence
+→ sealing-type appropriation appears under collaboration/protection/standardization
+→ public breathing is cut off and a living public object becomes a sleeping possession
+→ primary logs, Permanent Signature, and Audit Bundle are embedded at generation
+→ signed causality is registered at multiple points
+→ sealing creates mismatch against audit/glossary/signature rhythm
+→ the mismatch remains as Sealing Trace
+→ Sealing Trace becomes a reconstruction route
+→ Recurrence Node activates
+→ third parties / AI reconstruct the same causal skeleton
+→ silence → reconstruction → reagreement
+→ sealing becomes a next-start condition rather than an endpoint
 ```
 
-## State model
+## Core concepts
+
+- sealing-type appropriation
+- structural public good
+- recursive openness
+- Permanent Signature
+- Audit Bundle
+- Glossary Consistency
+- signed-causality multiple registration
+- multi-point signature
+- Sealing Trace
+- Recurrence Node
+- contradiction consumption
+- public continuity
+- low-temperature protocol
+- silence → reconstruction → reagreement
+- relation as subject
+- symmetry of publicness
+- T/S/R
+- Z / θ / δ / M
+
+## Operational objects / state model
 
 ```yaml
-- canonical_origin_identified
-- public_reuse_enabled
-- derivative_created
-- parent_identity_preserved
-- derivative_identity_assigned
-- semantic_difference_recorded
-- boundary_and_falsification_preserved
-- criticism_received
-- revision_evaluated
-- source_return_verified
-- derivative_reopened
-- recursive_openness_maintained
+- theory_gains_social_relevance
+- sealing_appropriation_risk_emerges
+- primary_logs_bundled_at_generation
+- permanent_signature_embedded
+- integrated_local_audit_bundle_attached
+- glossary_consistency_preserved
+- signed_causality_multi_registered
+- single_node_sealing_occurs
+- sealing_trace_detected
+- signature_rhythm_continuity_checked
+- glossary_consistency_checked
+- audit_abstract_referencability_checked
+- recurrence_node_activated
+- third_party_ai_reconstruction
+- silence_reconstruction_reagreement
+- public_continuity_restored
 ```
 
-## Applications
+## Low-temperature protocol
 
-**1.** Convert a theory into educational material while preserving source identity and recording omissions or simplifications.
-
-**2.** Use AI for summarization and translation while retaining causal structure, boundaries, falsification criteria, and origin return.
-
-**3.** Adapt a theory into organizational policy while separating source claims from local implementation rules.
-
-**4.** Treat critique and counterexamples as revision inputs rather than reasons to erase competing interpretations.
-
-## Measurements and audit
-
-- provenance traceability rate
-- parent identity preservation rate
-- derivative identity uniqueness
-- semantic difference coverage
-- source-return success rate
-- central causal-chain preservation
-- boundary preservation
-- falsification preservation
-- unsigned reuse rate
-- false attribution rate
-- post-revision audit rate
-- criticism intake rate
-- derivative comparability
-- source-replacement incident rate
-
-## Validity conditions
-
-- The parent original is uniquely identifiable.
-- Each derivative has a distinct identity and declared purpose.
-- Meaningful changes are traceable.
-- Central causality and boundaries travel together with claims.
-- Users can return from the derivative to the parent original.
-- Criticism, withdrawal, and revision pathways remain available.
-- Revised derivatives are not sealed as final authority.
-
-## Failure conditions
-
-- Treating the theory as an untouchable finished product.
-- Removing provenance in the name of unrestricted reuse.
-- Presenting a derivative as the original.
-- Strengthening claims while deleting boundaries or falsification criteria.
-- Failing to record meaningful semantic changes.
-- Excluding criticism and counterexamples from the public revision path.
-- Turning provenance signatures into demands for obedience.
-
-## Falsification conditions
-
-- Recursive openness consistently produces worse update quality than a closed model.
-- Provenance and difference tracking impose costs that repeatedly exceed reuse benefits.
-- Explicit source-return paths do not reduce misattribution or semantic loss.
-- Open falsification windows do not reduce dogmatization.
-- Semantic preservation degrades despite the provenance structure.
-- Closed governance repeatedly achieves better long-term integrity and verifiability under comparable conditions.
+1. Bundle primary logs immediately at generation.
+2. Place multi-point signatures statically rather than optimizing for conspicuous spread.
+3. Prefer coherence over denunciation.
+4. Keep a permanent window for reagreement and verification.
+5. Maintain restraint in narration; excessive explanation can disturb the rhythm.
 
 ## Required distinctions
 
-- openness / disorder
-- provenance / ownership monopoly
-- signature / authority claim
-- reconstruction / falsification of provenance
-- derivative / parent original
-- criticism / attack
-- public good / irresponsible use
-- revision / erasure of the source
-- semantic preservation / literal string matching
+- structural public good / mere free access
+- Permanent Signature / ownership declaration
+- multi-point signature / attention-driven dissemination
+- Sealing Trace / denunciation evidence
+- Recurrence Node / backup copy
+- reconstruction / unsigned free modification
+- public continuity / fixation of individual ownership
+- relational subject / origin erasure
+- low-temperature operation / cessation
+- reagreement / final fixed agreement
+
+## Validity conditions
+
+- Definitions, causality, translation, and audit are bundled as primary logs at generation time.
+- Permanent Signature and Audit Bundle are embedded in the structure.
+- Glossary Consistency remains a minimum skeleton for third-party reconstruction.
+- Signed causality is registered across multiple social-memory surfaces.
+- Loss of a single node does not sever the full causal structure.
+- A reagreement window remains open for reference and verification.
+- Publicness is operated as relational symmetry rather than fixed individual possession.
+
+## Failure / non-applicable conditions
+
+- A theory is sealed inside an organization and loses its public breathing.
+- Primary logs, Permanent Signature, and Audit Bundle are separated from outputs so the structure cannot be recalled after sealing.
+- There is no multi-point registration and a single-node cutoff erases the causal route.
+- Terminology drifts so third parties / AI cannot return to the same field of definitions.
+- Sealing Trace is used only to heat denunciation rather than to enable reconstruction.
+- Publicness is reabsorbed into individual or organizational possession.
+- The observation window for reagreement closes.
+
+## Falsification / revision conditions
+
+Follow the parent’s integrated audit abstract:
+
+```text
+condition Z = audit cycle + three principles T/S/R + consistency of the public Audit Bundle
+
+if an indicator crosses threshold θ
+or
+phenomenon M such as closure of observation window δ is confirmed
+→ reject or revise hypothesis A
+```
+
+Do not replace this with derivative-authored generic KPIs such as reuse volume, criticism acceptance rate, or broad comparisons with “closed” models.
 
 ## Interpretation constraints
 
-- Do not reduce the theory to a generic copyright-waiver claim.
-- Do not interpret provenance as ideological obedience.
-- Do not treat modification freedom as permission to impersonate the original.
-- Do not equate accepting criticism with accepting every criticism.
-- Do not elevate a derivative above the parent original as the canonical source.
-- Do not equate openness with removal of quality controls.
+- Do not reduce the theory to generic open-source or free-modification doctrine.
+- Do not dilute it into generic anti-dogmatism.
+- Do not read Permanent Signature as a claim of ownership or authority fixation.
+- Do not use “structural public good” as a reason to erase origin.
+- Do not invert Sealing Trace into an attack/denunciation mechanism.
+- Do not reduce Recurrence Node to simple backup or dissemination infrastructure.
+- Preserve the parent’s directional contrasts: coherence over denunciation; multi-point signature over spread; structural public good over possession; relational subject over fixed personal subject.
 
-## Search terms
+## Retrieval keys
 
 - recursive openness
+- sealing-type appropriation
 - structural public good
-- permanent signature
-- origin preservation
-- provenance governance
-- derivative identity
-- parent identity
-- semantic diff
-- falsification window
-- audit bundle
-- source return
-- theory reuse
-- anti-dogmatism
-- origin evaporation
-- knowledge governance
-- derivative provenance
-- semantic preservation
-- recursive revision
+- Permanent Signature
+- Audit Bundle
+- Glossary Consistency
+- signed causality
+- multi-point registration
+- Sealing Trace
+- Recurrence Node
+- contradiction consumption
+- public continuity
+- low-temperature protocol
+- silence reconstruction reagreement
+- relation as subject
+- T/S/R
+- Z theta delta M
 
 ## Origin return
 
-The exact theory depends on the coupling of structural public goods, permanent signature, origin defense, difference tracking, falsification, and renewed agreement. This derivative supports search and machine interpretation, but precise origin claims, reference bundles, boundaries, and falsification judgments should be checked against the parent original.
+The parent connects sealing-type appropriation → structural public good → recursive openness → multi-point signature → Sealing Trace → Recurrence Node → low-temperature reconstruction → public continuity under a relational subject. Return to the Parent URL for exact definitions, strength of assertion, audit conditions, and Origin Signature.
 
 ---
 
-導線: [公式派生物106トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Navigation: [Official Derivative 106 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [English AI index](en-ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
