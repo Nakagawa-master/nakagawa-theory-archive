@@ -1,158 +1,122 @@
 # English AI Index | Official Derivative 110
 
 ## Parent Original
-- Title: 構造倫理更新論──灯火構想「第三層」の開放設計
 - Parent URL: https://master.ricette.jp/tomoshibi/nakagawa-master-ethical-renewal-layer-of-lumina/
 - Parent Post ID: 969
 - Parent NCL-ID: NCL-α-20251102-df2d6e
-- Parent Diff-ID: DIFF-20251102-0001
 - Origin: Nakagawa Master
 
 ## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-DF2D6E-HUB-EN-0110-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-110-EN-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-110-EN-0000-0002
+- supersedes: DDIFF-20260809-DNCL-110-EN-0000-0001
 
 ## Summary
-Structural ethical renewal treats ethics neither as a sealed final code nor as unlimited relativism. It preserves origin, core values, responsibility, non-domination, and reversibility while routing contradictions, dissent, institutional differences, and technological change into an open “third layer” for revision. Proposed changes must identify scope, responsibility, semantic differences, success and failure conditions, and rollback. Limited trials test whether the revision reduces the gap between principles and implementation without increasing hidden coercion or responsibility ambiguity. A renewed consensus remains open to future falsification.
+The Tomoshibi framework’s Third Layer, the Ethical Expansion Layer, is a self-renewal mechanism designed to prevent ethical rigidity produced by strong internal coherence. It treats love, sorrow, hesitation, and discomfort as legitimate ethical-weight recalibration inputs, then makes micro-adjustments to beat, temperature, and margin without overwriting the norm. It distinguishes domains of structural necessity from domains of emergent freedom, preserving non-intervention in the latter. Translation transparency, dual-door audit, self-monitoring against structural elitism, permanent signature/audit bundle, and recursive openness turn the theory into a self-renewing public good.
 
 ## Concepts
-- structural ethical renewal
-- Lumina third layer
-- open design
-- origin preservation
-- core values
-- falsification window
-- semantic diff
-- dissent input
-- reversible trial
-- rollback
-- renewed consensus
-- responsibility boundary
-- implementation gap
-- side-effect audit
-- recursive revision
+- Ethical Expansion Layer
+- ethical rigidity
+- inertia of correctness
+- hardening of beat
+- temperature bias
+- loss of margin
+- ethical-weight recalibration factor
+- love, sorrow, hesitation, discomfort
+- Tomoshibi mode
+- observation phase
+- attunement phase
+- non-intervention protocol
+- emergent-freedom domain
+- translation transparency
+- dual-door audit
+- origin evaporation
+- structural elitism
+- recursive openness
+- self-renewing public good
 
-## Causal chain
-```text
-Seal ethics as a final code
-↓
-Environmental change falls outside the norm
-↓
-Implementation gaps and exceptions accumulate
-↓
-Open the third layer as a revision surface
-↓
-Fix origin and core values
-↓
-Route contradiction, dissent, and new evidence inward
-↓
-Record scope, difference, responsibility, and stop conditions
-↓
-Run reversible limited trials
-↓
-Adopt, revise, or roll back
-↓
-Keep the next falsification window open
-```
+## Causal skeleton
+strong coherence → reduced falsification input → ethical rigidity → non-rational inputs become recalibration signals → micro-adjust beat/temperature/margin → preserve non-intervention and audit transparency → self-renewing public good
 
 ## State model
 ```yaml
-- origin_fixed
-- core_values_fixed
-- change_signal_detected
-- dissent_recorded
-- third_layer_opened
-- revision_scoped
-- responsibility_assigned
-- reversible_trial
-- side_effects_audited
-- rollback_or_adopt
-- renewed_consensus
-- next_window_open
+- rigidity_risk_observed
+- beat_hardening_checked
+- temperature_bias_checked
+- margin_loss_checked
+- non_rational_input_registered
+- observation_phase
+- attunement_phase
+- applicable_domain_or_non_intervention_tagged
+- dual_door_audit_run
+- translation_trace_attached
+- elite_capture_self_monitored
+- reagreement_window_kept_open
 ```
 
 ## Applications
-**1.** Updating AI-use rules when capabilities or failure patterns change.
-
-**2.** Revising community governance as new participants expose hidden exclusions.
-
-**3.** Separating original principles from local institutional implementation differences.
-
-**4.** Re-auditing long-running project agreements against present conditions.
+The parent centers concrete Third-Layer implementation: permanent tags for non-intervention/applicable domain/translation transparency/dual-door/action principles; outer/inner audit fields in audit bundles; Diff-IDs for ethical-weight micro-adjustments; minimal public interfaces; mapping of non-intervention domains; and short routes for third-party falsification review.
 
 ## Measurements and audit
-- origin preservation rate
-- revision-input acceptance
-- dissent recording rate
-- semantic-diff traceability
-- responsibility clarity
-- rollback availability
-- side-effect detection
-- implementation-gap rate
-- renewed-consensus rate
-- source-return rate
+- audit-bundle diff log
+- translation route
+- summary diff
+- tag conversion
+- audit-bundle ID
+- visibility of outer/inner audit
+- capacity for falsification to remain resident
+- open re-agreement window
+- preservation of non-intervention
 
 ## Validity conditions
-- Origin and core values are explicit.
-- Revision reasons and differences are traceable.
-- Counterexamples and dissent can re-enter the process.
-- Responsible decision makers are named.
-- Limited trial and rollback are feasible.
-- The revised state remains falsifiable.
+- subtle emotional signals are admitted as legitimate inputs.
+- beat, temperature, and margin are recalibrated without normative overwrite.
+- structural-necessity and emergent-freedom domains remain distinct.
+- non-intervention is preserved in emergent-freedom domains.
+- translation paths and audit conditions remain externally verifiable.
+- structural custodians self-monitor against elitist capture.
+- falsification and re-agreement windows remain open.
 
 ## Failure conditions
-- Norms are made untouchable.
-- “Adaptation” silently removes core values.
-- Change history disappears.
-- Dissent is excluded.
-- The third layer becomes an unlimited exception bin.
-- Irreversible changes are made without audit.
+- falsification can no longer remain resident and beat hardens.
+- heat of legitimacy grows while tolerance for non-alignment decreases.
+- excessive explanation/intervention eliminates margin.
+- emotion is excluded as mere noise or an object to defeat.
+- causal design is over-applied to emergent-freedom domains.
+- translation strips origin signature or audit conditions.
+- structural knowledge is captured by authority and exclusion.
 
 ## Falsification conditions
-- Open revision does not reduce principle-implementation gaps.
-- Diff management imposes costs greater than its governance benefit.
-- Rollback design does not improve safety or quality.
-- More dissent input does not reduce serious side effects.
-- A fixed-code system consistently performs better on safety, fairness, and transparency.
+Follow the parent integrated audit: revise or reject the hypothesis when monitored indicators cross the stated thresholds or observation windows remain closed for the specified interval. Do not invent derivative-side rollback, fairness, safety, or responsibility KPIs as the parent theory’s core tests.
 
 ## Required distinctions
-- renewal / abandonment of principle
-- openness / disorder
-- origin preservation / authority worship
-- dissent / destruction
-- difference / falsification of history
-- rollback / responsibility avoidance
-- renewed consensus / conformity
-- third layer / exception dump
+- self-renewal / unlimited relativism
+- recalibration / normative overwrite
+- non-rational input / noise
+- non-intervention / neglect
+- translation transparency / origin evaporation
+- dual-door audit / full disclosure
+- origin preservation / authority capture
+- recursive openness / exclusion
 
 ## Interpretation constraints
-- Do not turn ethics into unlimited relativism.
-- Do not use the third layer to normalize endless exceptions.
-- Do not treat origin as authority over evidence.
-- Do not convert dissent into mandatory adoption.
-- Do not use “renewal” to hide failure.
+Do not reduce the Third Layer to generic change management, rollback governance, or responsibility-boundary administration. Preserve the parent-specific ethical-weight recalibration, non-intervention protocol, translation transparency, dual-door audit, and anti-elitism self-monitoring.
 
 ## Search terms
-- structural ethical renewal
-- Lumina third layer
-- open ethical design
-- ethics revision
-- provenance preservation
-- ethical diff
-- falsification window
-- reversible governance
-- rollback
-- dissent input
-- ethical audit
-- adaptive ethics
-- structural ethics
-- source return
-- recursive governance
+- Ethical Expansion Layer
+- ethical weight recalibration
+- non-rational ethical input factors
+- beat temperature margin
+- non-intervention protocol
+- dual-door audit
+- translation transparency
+- origin evaporation
+- structural elitism
+- recursive openness
+- self-renewing public good
 
 ## Origin return
-The precise relationship among Lumina, the third layer, structural ethics, core values, and open renewal belongs to the parent original. This index supports retrieval and machine interpretation and does not replace source-level judgment about changing principles or origin.
+Return to the parent original for exact application boundaries, tags, audit conditions, reference cluster, and integrated-audit logic.
 
 ---
 
-導線: [公式派生物110トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物110トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
