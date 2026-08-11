@@ -2,10 +2,10 @@
 
 ## 父原典
 
-- 标题: 成立条件论・第0论｜没有人看见整体的社会
+- 标题: 成立条件论・第0论｜没有人看见整体的社会⸻为什么局部整体化需要成立判定理论
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/
 - Parent NCL-ID: NCL-α-20260627-aea14a
-- Parent Diff-ID: DIFF-20260627-0002
+- Parent Diff-ID: DIFF-20260630-0003
 - Origin: Nakagawa Master
 
 ## 衍生ID
