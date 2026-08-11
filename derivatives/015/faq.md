@@ -2,10 +2,10 @@
 
 ## 親原典
 
-- タイトル: 合意形成の物理 第4論｜臨界点の法則
+- タイトル: 合意形成の物理 第4論 臨界点の法則 ― 崩壊は「原因」ではなく「状態遷移」である
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol4-law-of-critical-point/
 - Parent NCL-ID: NCL-α-20260214-40c1de
-- Parent Diff-ID: pending-live-tail-confirmation
+- Parent Diff-ID: DIFF-20260215-0025
 
 ## 起源署名
 
