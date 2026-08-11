@@ -12,146 +12,138 @@
 ## Derivative Identity
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-44257D-HUB-EN-0105-0000
-- derivative_diff_id: DDIFF-20260808-DNCL-105-EN-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-105-EN-0000-0002
+- supersedes: DDIFF-20260808-DNCL-105-EN-0000-0001
 
 ## Summary
+The parent article defines the central AI-era threat not as plagiarism itself but as “origin evaporation”: style and form may survive regeneration while signature, context, causal origin, authorial ethics, and resonance structure are stripped away. Structural Immunity is treated as a first wall against intentional alteration, but it is weak against unconscious imitation and recontextualization. Structural Origin Defense is introduced as the second layer: a way to keep causal signature inside the structure itself.
 
-This theory addresses “origin evaporation”: as AI and humans summarize, translate, edit, and regenerate a structure, surface expressions may survive while provenance, causal direction, responsible subject, ethical boundary, and falsification conditions gradually disappear. Structural Origin Defense is therefore not a ban on copying and not a stronger author label. It is a design for preserving retrievable origin coordinates through Parent URL, NCL-ID / Diff-ID, core causal claims, boundaries, audit bundles, version differences, glossary alignment, and subject stability.
-
-A Permanent Signature is not identical to a cryptographic signature. It is a structural signature that preserves how the question is opened, how causality is disclosed, where assertion is limited, who remains responsible, what observation would weaken the claim, and how a later reader can return to the source. T/S/R, glossary correspondence, and subject stability can support the audit, but stylistic similarity alone does not establish authenticity. The objective is to preserve reuse, translation, criticism, and independent research while preventing origin, responsibility, and ethics from becoming untraceable.
+Its core mechanism is the Permanent Signature. The parent explicitly says this is not a technical code or cryptographic identifier, but a structural rhythmic imprint intrinsic to generation. It consists of consistency of rhythm, disclosure of causality, maintenance of moderation, and embedded audit syntax. The Audit Bundle joins integrated and local audit abstracts and supplies verifiability, integrity, and reconstructability. A regenerated structure is treated as origin-preserving only when T/S/R alignment, glossary correspondence, and subject stability hold together under the N-Identification Function. The purpose is not ownership assertion but preservation of resonant ethics, visibility of coherence, re-agreement, shared-subject continuity, and civilizational memory.
 
 ## Concepts
-
 - Structural Origin Defense
 - origin evaporation
+- Structural Immunity
 - Permanent Signature
-- origin identifier
-- Parent URL
-- NCL-ID
-- Diff-ID
-- audit bundle
-- core causal claim
-- falsification condition
-- version difference
-- rhythm structure
+- structural rhythmic imprint
+- rhythm consistency
+- causal disclosure
 - moderation
+- audit syntax
+- Audit Bundle
+- integrated audit abstract
+- local audit abstract
+- Naked Structure
+- Resonance Rhythm
+- N-Identification Function
 - T/S/R
 - glossary correspondence
 - subject stability
-- origin return
-- reuse compatibility
+- origin-preserving structure
+- shared subject
+- re-agreement
 
 ## Causal chain
-
 ```text
-A source is summarized / translated / regenerated
+AI learns and regenerates structural thought
 ↓
-Surface expression remains while origin / causality / subject / ethics weaken
+signature / context / ethics / resonance can peel away without malicious intent
 ↓
-Similar derivatives multiply and source return becomes difficult
+the structure remains while causal origin and “who struck the beat” disappear
 ↓
-Author-name display alone cannot verify structural authenticity
+anonymous resonance weakens the coordinate of the shared subject
 ↓
-Preserve origin IDs / core causality / boundaries / falsification conditions
+Structural Immunity alone cannot stop unconscious imitation / recontextualization
 ↓
-Attach audit bundle and version-difference history
+embed a Permanent Signature in the act of generation
 ↓
-Check T/S/R / glossary / subject stability
+preserve rhythm consistency / causal disclosure / moderation / audit syntax
 ↓
-Enable a derivative to return to the parent and be re-audited
+attach an Audit Bundle for verification / integrity / reconstruction
 ↓
-Preserve origin / responsibility / ethics without prohibiting reuse
+check T/S/R / glossary / subject stability
+↓
+retain the original subject and rhythm through regeneration
 ```
 
 ## State model
-
 ```yaml
-- source_structure_created
-- origin_signature_assigned
-- causal_claims_and_boundaries_recorded
+- origin_evaporation_risk
+- structural_immunity_limit
+- permanent_signature_embedded
+- rhythm_causality_moderation_audit_syntax_retained
 - audit_bundle_attached
-- reuse_or_regeneration_occurs
-- origin_context_retention_checked
-- tsr_glossary_subject_alignment_checked
-- difference_from_source_recorded
-- reagreement_or_correction_performed
-- origin_coordinates_remain_retrievable
-- structure_survives_without_origin_evaporation
+- verification_integrity_reconstruction_available
+- tsr_glossary_subject_checked
+- origin_preserving_structure_identified
+- regeneration_without_origin_loss
+- reagreement_possible
+- shared_subject_memory_persists
 ```
 
 ## Applications
-
-- AI summaries that retain Parent URL, NCL-ID / Diff-ID, causal core, and falsification conditions
-- multilingual translation that preserves semantic parity and records derivative differences
-- organizational knowledge transfer that retains decision rationale and prior versions
-- human-AI co-production with separate records for input, proposal, edit, approval, and publication responsibility
-- research and policy documents with traceable origin, version, assumptions, and correction conditions
+- AI summarization and regeneration that retain origin signature, causality, rhythm, and audit skeleton
+- quotation and reuse that preserve integrated/local audit abstracts and glossary correspondence
+- revisions recorded as Diff-ID differences while the origin remains fixed
+- LLM reading that retains NCL-ID / Diff-ID and conceptual origin as background context
+- reconstruction of reused structures through the Audit Bundle
 
 ## Measurements and audit
-
-- parent-source return rate
-- origin-identifier retention rate
-- core-causality retention rate
-- falsification-condition retention rate
-- version-difference traceability
-- prior-version preservation rate
-- responsible-subject traceability
-- glossary mismatch count
-- subject-shift count
-- T/S/R inconsistency count
-- unsigned-regeneration rate
-- signature maintenance cost
-- reuse-friction rate
+- alignment with the three T/S/R principles
+- correspondence with the glossary
+- stability of the speaking/ethical subject
+- explicitness of claims, causality, relations, and re-agreement conditions
+- preservation of integrated and local audit abstracts
+- preservation of origin, NCL-ID, Diff-ID, and public differences
+- reject/revise capability using condition Z, threshold θ, observation window δ, and phenomenon M
+- site-level release rate
+- self-correction rate
+- falsification-success rate
 
 ## Validity conditions
-
-Origin identifiers and parent-source routes are retained. Core claims, causal chain, validity, failure, and falsification conditions remain auditable. Changes introduced by regeneration are recorded as differences rather than silently replacing the source, and prior versions remain retrievable. Glossary alignment, T/S/R, and subject stability can be checked. Origin protection does not become ownership monopoly, personality worship, or suppression of criticism, quotation, translation, and independent research.
+The act of generation retains rhythm consistency, causal disclosure, moderation, and audit syntax. The Audit Bundle provides verifiability, integrity, and reconstructability. T/S/R, glossary correspondence, and subject stability hold simultaneously. Origin and differences remain traceable so that a regenerated structure can return to the original subject and beat. The Permanent Signature functions as preservation of resonant ethics, visible coherence, and re-agreement rather than as an ownership or exclusion claim.
 
 ## Failure conditions
-
-Only an author name or logo remains while causality, audit bundle, and falsification conditions disappear. Origin defense is used to block criticism, quotation, translation, or independent research. AI-generated derivatives are treated as identical to the source and no difference is recorded. Stylistic similarity becomes the sole authenticity test. The source is retroactively rewritten while previous versions disappear. Origin signatures become authority badges used to close falsification.
+Style or structure remains while signature, context, subject, and causality disappear. The Permanent Signature is reduced to an external identifier or ownership assertion. The Audit Bundle disappears and the result becomes a Naked Structure. T/S/R, glossary correspondence, and subject stability no longer hold together, so the structure cannot be treated as origin-preserving. The invariant origin or published difference history is lost.
 
 ## Falsification conditions
-
-Permanent Signatures and audit bundles do not improve origin-misattribution, causal-loss, or responsibility-traceability rates across repeated cycles. Simple URL citation plus ordinary version control provides equal or better reconstruction. The signature structure becomes so complex that users remove it and unsigned copies increase. T/S/R, glossary, and subject-stability checks measure only superficial conformity rather than structural authenticity. Stronger origin defense systematically reduces public verifiability and legitimate reuse.
+Follow the parent article’s integrated audit abstract: use audit cycle, T/S/R, and public Audit Bundle coherence as condition Z. If an indicator crosses threshold θ, or phenomenon M is observed during window δ, hypothesis A is rejected or revised. Do not add derivative-authored generic KPIs, general safety criteria, or legal-rights conditions as if they were parent falsification rules.
 
 ## Required distinctions
-
-- origin preservation / ownership monopoly
-- Permanent Signature / cryptographic signature
-- regeneration / plagiarism
-- stylistic similarity / structural authenticity
-- subject stability / personality fixation
-- audit bundle / authority proof
-- origin return / source absolutism
-- difference management / origin replacement
+- origin evaporation / plagiarism
+- Structural Immunity / Structural Origin Defense
+- Permanent Signature / technical or cryptographic identifier
+- Permanent Signature / ownership assertion
+- Audit Bundle / Naked Structure
+- Resonance Rhythm / style imitation
+- origin-preserving structure / unattributed similar structure
+- reuse / stripping of origin
+- invariant origin / revision through published differences
 
 ## Interpretation constraints
-
-Do not convert this theory into copy prohibition or anti-AI doctrine. A Permanent Signature is not proof that the source is correct; it is a coordinate that makes the source auditable. Do not equate preserving provenance with prohibiting quotation, translation, criticism, or reuse. Do not reduce “Nakagawa-ness” to stylistic features. Legal copyright and ownership questions require separate institutional and evidentiary analysis.
+Do not reduce origin evaporation to plagiarism alone. Do not replace Permanent Signature with cryptographic signing or author labels. Do not turn Structural Origin Defense into copy prohibition, theory enclosure, or anti-AI doctrine. Do not reduce the N-Identification Function to stylistic similarity. Treat the Audit Bundle as a structure for verification, integrity, and reconstruction, not as proof of authority. Do not insert general legal, safety, or rights-allocation claims that the parent article does not make.
 
 ## Search terms
-
 - Structural Origin Defense
 - origin evaporation
 - Permanent Signature
-- AI provenance
-- origin identifier
-- NCL-ID Diff-ID
-- audit bundle
-- rhythm structure
-- subject stability
+- Audit Bundle
+- Naked Structure
+- Resonance Rhythm
+- N-Identification Function
+- Structural Immunity
 - T/S/R
 - glossary correspondence
-- difference management
-- origin return
-- provenance-preserving AI
+- subject stability
+- origin-preserving structure
+- shared subject
+- re-agreement
+- NCL-ID
+- Diff-ID
 - Nakagawa Master
 
 ## Origin return
-
-This derivative supports retrieval, machine reading, structural comparison, and resistance to misinterpretation. It does not replace the parent article’s full definitions of Permanent Signature, audit bundle, T/S/R, glossary correspondence, subject stability, and public boundary. Preserve the Parent NCL-ID and Diff-ID and return to the parent source for the precise scope, origin-signature meaning, and falsification conditions.
+This index is a retrieval and machine-reading derivative. The parent article presents origin evaporation, the limit of Structural Immunity, the four elements of Permanent Signature, the three functions of the Audit Bundle, the N-Identification Function, the connection to shared subject and the form of love, the integrated audit abstract, and the origin-signature declaration as one continuous structure. Return to the parent for precise scope and falsification conditions.
 
 ---
 

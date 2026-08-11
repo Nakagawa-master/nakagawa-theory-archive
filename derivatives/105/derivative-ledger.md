@@ -12,18 +12,18 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-44257D-HUB-JA-0105-0000
-- derivative_diff_id: DDIFF-20260808-DNCL-105-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-105-0000-0002
+- supersedes: DDIFF-20260808-DNCL-105-0000-0001
 
 ## Language derivative IDs
 
 ```yaml
 ja_ncl_id: DNCL-NCL-ALPHA-20251102-44257D-HUB-JA-0105-0000
-ja_diff_id: DDIFF-20260808-DNCL-105-0000-0001
+ja_diff_id: DDIFF-20260811-DNCL-105-0000-0002
 en_ncl_id: DNCL-NCL-ALPHA-20251102-44257D-HUB-EN-0105-0000
-en_diff_id: DDIFF-20260808-DNCL-105-EN-0000-0001
+en_diff_id: DDIFF-20260811-DNCL-105-EN-0000-0002
 zh_ncl_id: DNCL-NCL-ALPHA-20251102-44257D-HUB-ZH-0105-0000
-zh_diff_id: DDIFF-20260808-DNCL-105-ZH-0000-0001
+zh_diff_id: DDIFF-20260811-DNCL-105-ZH-0000-0002
 ```
 
 ## Factory
@@ -31,12 +31,8 @@ zh_diff_id: DDIFF-20260808-DNCL-105-ZH-0000-0001
 ```yaml
 golden_master: OD085
 factory_version: 2.0
-generation_mode: SINGLE_SEMANTIC_WORK_PACKET_SEVEN_FIXED_SURFACES
-manual_surface_drift: PROHIBITED
-surface_creation_mode: ONE_PACKET_ONE_RENDERER_RUN
-manual_surface_edit_after_render: false
-public_repository_role: PUBLIC_OUTPUT_ONLY
-private_factory_repository: Nakagawa-master/nakagawa-archive-tools
+repair_mode: SOURCE_VERIFIED_SEMANTIC_REGENERATION
+source_first: true
 github_actions_used: false
 ```
 
@@ -48,78 +44,71 @@ canonical_index:
   post_id: 917
   parent_ncl_id: NCL-α-20251102-44257d
   parent_diff_id: DIFF-20251102-0001
-  status: publish
+  xml_item_range: 86542-86807
+  canonical_source_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
 live_parent:
   source: https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/
   result: PASS_PUBLIC_PARENT_ROUTE
-four_key_duplicate_check:
-  post_id: NO_PREEXISTING_MATCH
-  parent_ncl_id: NO_PREEXISTING_MATCH
-  slug: NO_PREEXISTING_MATCH
-  canonical_url: NO_PREEXISTING_MATCH
+source_coverage:
+  origin_evaporation: SOURCE_EXPLICIT
+  structural_immunity_limit: SOURCE_EXPLICIT
+  permanent_signature_definition: SOURCE_EXPLICIT
+  permanent_signature_four_elements: SOURCE_EXPLICIT
+  audit_bundle_three_functions: SOURCE_EXPLICIT
+  naked_structure: SOURCE_EXPLICIT
+  resonance_rhythm: SOURCE_EXPLICIT
+  n_identification_function: SOURCE_EXPLICIT
+  tsr_glossary_subject_stability: SOURCE_EXPLICIT
+  origin_preserving_structure: SOURCE_EXPLICIT
+  shared_subject_and_love_continuity: SOURCE_EXPLICIT
+  integrated_audit_z_theta_delta_m: SOURCE_EXPLICIT
+  invariant_origin_and_diff_publication: SOURCE_EXPLICIT
+  generic_legal_publication_safety_extensions: REMOVED_AS_UNSUPPORTED_GENERALIZATION
+  derivative_authored_generic_kpis: REMOVED_AS_UNSUPPORTED_GENERALIZATION
 ```
 
 ## Seven surfaces
 
 ```yaml
-README.md: PUBLISHED
-human-entry.md: PUBLISHED
-faq.md: PUBLISHED_Q1_Q30
-ai-index.md: PUBLISHED
-en-ai-index.md: PUBLISHED
-zh-ai-index.md: PUBLISHED
-derivative-ledger.md: PUBLISHED
+README.md: REPAIRED
+human-entry.md: REPAIRED
+faq.md: REPAIRED_Q1_Q30
+ai-index.md: REPAIRED
+en-ai-index.md: REPAIRED
+zh-ai-index.md: REPAIRED
+derivative-ledger.md: UPDATED_LINEAGE_AND_EVIDENCE
 ```
 
-## Formatting parity
+## Semantic fidelity result
 
 ```yaml
-parent_identity_block: PASS
-language_specific_derivative_ids: PASS
-heading_sequence: PASS
-FAQ_layers: BEGINNER_Q1_Q10__PRACTITIONER_Q11_Q20__AI_RESEARCHER_Q21_Q30
-readme_global_top_link: PASS
-other_surface_numbered_top_link: PASS
-ai_fixed_13_sections: PASS
-human_fixed_sections: PASS
-new_display_contract_added: false
-```
-
-## Semantic and density coverage
-
-```yaml
-central_thesis: PASS
-causal_chain: PASS
-origin_evaporation: PASS
-permanent_signature: PASS
-audit_bundle: PASS
-origin_identifiers: PASS
-difference_history: PASS
-tsr_alignment: PASS
-glossary_correspondence: PASS
-subject_stability: PASS
-reuse_without_origin_loss: PASS
-applications: PASS
-measurements: PASS
-validity_failure_falsification: PASS
+semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+parent_specific_causal_chain: PASS
+parent_specific_value_judgments: PASS
+parent_permanent_signature_definition: PASS
+parent_audit_bundle_definition: PASS
+parent_n_identification_conditions: PASS
+parent_falsification_preserved: PASS
+generic_legal_policy_added_as_parent_claim: NO
+generic_safety_policy_added_as_parent_claim: NO
+derivative_authored_generic_measurement_added_as_parent_claim: NO
 ja_en_zh_semantic_parity: PASS
-OD085_density_floor: PASS
 ```
+
+## Repair summary
+
+原典本文を正本として再確認し、旧派生を「起源の蒸発 → 構造免疫の限界 → 恒常署名の四要素 → 監査束の三機能 → T/S/R・用語集・主語安定性による中川性識別 → 起源保持型 → 共有主語と倫理の持続」という原典固有の筋へ戻した。旧派生に混在していた一般的な法的権利論、公開／非公開安全境界、AI共同制作責任分解、暗号署名併用論、独自KPI、URL＋版管理との比較反証など、原典固有の主張として保持できない一般化は削除した。反証は原典の統合監査要旨にある条件Z・閾値θ・観測窓δ・現象Mを優先した。
 
 ## Navigation and closure
 
 ```yaml
-public_indexes: COMPLETE_THROUGH_OD105
-public_map: COMPLETE_THROUGH_OD105
-private_map: COMPLETE_THROUGH_OD105
-parent_backlink_display_procedure: COMPLETE
-owner_visual_for_OD105: CONFIRMED_BY_OWNER
-brain_return: CURRENT_STATE_OWNER
+public_indexes: URL_UNCHANGED
+public_map: URL_UNCHANGED
+private_map: URL_UNCHANGED
+parent_backlink: URL_UNCHANGED
+brain_return: REQUIRED_AFTER_PUBLIC_MERGE
 completion_authority: OFFICIAL_ARCHIVE_MEMORY
-completion_status: SEE_CURRENT_STATE_OWNER
 ```
-
-本台帳はOD105のidentity、三言語派生ID、取得経路、重複除外、七面構成、表示契約、意味coverageを固定証拠として保持する。可変の完了状態、次L1、cursorは所有せず、唯一のstate ownerであるOFFICIAL_ARCHIVE_MEMORYへ帰還する。構造起源防衛をコピー禁止やAI排除へ変換せず、再利用・翻訳・批判の自由を保ちながら、起源、因果、責任、倫理、反証、差分を追跡可能にする。
 
 ---
 
