@@ -14,106 +14,62 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-B3F820-HUB-JA-0074-0000
-- derivative_diff_id: DDIFF-20260804-DNCL-074-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-074-0000-0002
+- supersedes: DDIFF-20260804-DNCL-074-0000-0001
 
-## Factory
-
-```yaml
-factory_version: 1.1
-generation_mode: SINGLE_WORK_PACKET_DETERMINISTIC_RENDER_EQUIVALENT
-quality_reference: OD067_AND_FINAL_OD071_073_GATE_ALIGNMENT
-pre_render_factory_parity: PASS
-manual_surface_divergence: PROHIBITED
-serial_gate: OD074_PASS_BEFORE_NEXT_OD
-```
-
-## Retrieval evidence
+## Source verification
 
 ```yaml
-ai_index:
-  source: reference_corpus/official_archive/generated/canonical_index_0301_0325.jsonl
-  result: PASS
-xml:
-  source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-  blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-  item_range: 71375-71616
-  content_range: 71382-71518
-  result: PASS_CANONICAL_PROVENANCE
-live_parent:
-  source: https://master.ricette.jp/future/nakagawa-master-nakagawa-connection-roadmap-2030-2055/
-  result: PASS_COMPLETE_BODY_AND_ORIGIN_SIGNATURE
-parity_result: PASS
-duplicate_check: PASS_NO_PREEXISTING_OD_OR_MAP_ENTRY
+verification_date_jst: 2026-08-11
+canonical_index: reference_corpus/official_archive/generated/canonical_index_0301_0325.jsonl
+xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+xml_item_range: 71375-71616
+xml_content_range: 71382-71518
+canonical_url: https://master.ricette.jp/future/nakagawa-master-nakagawa-connection-roadmap-2030-2055/
+canonical_identity: PASS
+source_retrieval: PASS
+six_surface_comparison: COMPLETE
+translation_equivalence: PASS
+fresh_read: PASS
+semantic_result: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
 ```
 
-## Seven surfaces
+## Source-specific coverage
+
+- 接続文明への移行を2030–2055の採用曲線・臨界点・実装ウィンドウとして読む: PASS
+- 四因子、三段波動、四臨界、公開監査ダッシュボード、政策ウィンドウ: PASS
+- 地域拡散、国際相互運用、年表、縮退・ロールバック: PASS
+- 確定予言、普及率競争、接続の強制へ置換しない: PASS
+- JA / EN / ZH semantic equivalence: PASS
+- navigation and parent return: PASS
+
+## Current seven surfaces
 
 ```yaml
-README.md: PASS_FIRST_OUTPUT
-human-entry.md: PASS_FIRST_OUTPUT
-faq.md: PASS_FIRST_OUTPUT
-ai-index.md: PASS_FIRST_OUTPUT
-en-ai-index.md: PASS_FIRST_OUTPUT
-zh-ai-index.md: PASS_FIRST_OUTPUT
-derivative-ledger.md: PASS_FIRST_OUTPUT
+README.md: PASS_SOURCE_VERIFIED
+human-entry.md: PASS_SOURCE_VERIFIED
+faq.md: PASS_SOURCE_VERIFIED
+ai-index.md: PASS_SOURCE_VERIFIED
+en-ai-index.md: PASS_SOURCE_VERIFIED
+zh-ai-index.md: PASS_SOURCE_VERIFIED
+derivative-ledger.md: PASS_SOURCE_VERIFIED
 ```
 
-## Formatting parity
+## Closure
 
 ```yaml
-parent_identity_block: PASS
-derivative_identity_block: PASS
-identity_one_item_per_line: PASS
-heading_sequence: PASS
-paragraph_breaks: PASS
-faq_layer_headings_exact: PASS
-zh_identity_heading_exact: PASS
-readme_exact_footer: PASS
-other_surface_full_footer_menu: PASS
-footer_labels_and_order: PASS
+public_fresh_read: PASS
+public_indexes: PASS
+brain_vault_return: READY_FOR_STATE_RECORD
+parent_backlink: RETAIN_EXISTING_OWNER_VISUAL_STATE
+closure_status: PASS_SOURCE_VERIFIED
+next_cursor: OD075
 ```
 
-## Semantic and density coverage
+## 原典回帰
 
-```yaml
-positioning: PASS
-central_thesis: PASS
-causal_chain: PASS
-structural_layers: PASS
-state_model: PASS
-applications: PASS
-measurements: PASS
-validity_conditions: PASS
-failure_conditions: PASS
-falsification_conditions: PASS
-required_distinctions: PASS
-prohibited_misreadings: PASS
-human_entry_seven_sections: PASS
-faq_three_layers_30: PASS
-faq_multi_sentence_answers: PASS
-ja_en_zh_required_sections: PASS
-ja_en_zh_semantic_parity: PASS
-volume_and_density_restored: PASS
-first_output_content_quality: PASS
-first_output_full_factory_gate: PASS
-second_density_repair_required: false
-```
-
-OD074は、四因子、三段波動、四臨界、公開監査ダッシュボード、政策ウィンドウ、地域拡散、国際相互運用、2030–2055年表、縮退・ロールバックを7面へ同等投影した。ロードマップを確定予言、普及率競争、接続の強制へ縮約していない。
-
-## Navigation and closure
-
-```yaml
-public_indexes: PASS_THROUGH_OD076
-private_map: PASS_REGISTERED
-parent_backlink: REGISTERED_IN_PRIVATE_MAP__OWNER_VISUAL_CONFIRMATION_PENDING
-brain_return: PASS
-same_path_reload: PASS
-completion_status: COMPLETE_WITH_PARENT_BACKLINK_VISUAL_CONFIRMATION_PENDING
-```
-
-未確認の親原典側実表示を確認済みとは記録しない。7面、公開索引、map、体裁、密度、三言語同等性はPASSした。
+本派生物は検索・理解・接続面であり、親原典の代替ではない。採用曲線、臨界点、政策ウィンドウ、ロードマップ、監査、Reference Cluster、起源署名は親原典へ戻って確認する。
 
 ---
 
