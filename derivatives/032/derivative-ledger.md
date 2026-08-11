@@ -2,10 +2,10 @@
 
 ## 親原典
 
-- parent_title: 未来定義検証型努力論・補論｜努力は消えたのではない
+- parent_title: 未来定義検証型努力論・補論｜努力は消えたのではない──未来定義検証時代における努力の再定義
 - parent_url: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-effort-redefinition/
-- parent_ncl_id: NCL-α-20260616-93af49
-- parent_diff_id: DIFF-20260623-0002
+- parent_ncl_id: NCL-α-20260613-007d94
+- parent_diff_id: DIFF-20260613-0012
 - origin_author: 中川マスター
 
 ## 派生物一覧
@@ -20,13 +20,20 @@
 | 032-0005 | zh-ai-index.md | DNCL-NCL-ALPHA-20260616-93AF49-AI-INDEX-ZH-0032-0005 | DDIFF-20260709-DNCL-032-0005-0002 | zh | ai_index |
 | 032-0006 | derivative-ledger.md | DNCL-NCL-ALPHA-20260616-93AF49-LEDGER-JA-0032-0006 | DDIFF-20260709-DNCL-032-0006-0002 | ja | derivative_ledger |
 
-## 管理方針
+## Lineage note
 
-この台帳は、親原典から派生した公式派生物の公開識別情報を保持する。
+Child derivative IDs preserve the historical lineage identifiers embedded at generation time. Canonical parent identity is reconciled above and across the six substantive surfaces; child IDs are not regenerated solely because the parent canonical record was reindexed.
 
-親原典を置き換えない。
+## Source-verified state
 
-親原典のOrigin、NCL-ID、Diff-ID、Parent URLを保持し、読者とAIが中川マスターの原典へ戻れる状態を維持する。
+```yaml
+semantic_fidelity_status: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+canonical_parent_post_id: 4436
+canonical_parent_ncl_id: NCL-α-20260613-007d94
+canonical_parent_diff_id: DIFF-20260613-0012
+canonical_xml_lines: 256103-258799
+source_kernel: effort_redefinition
+```
 
 ---
 
