@@ -2,10 +2,10 @@
 
 ## 親原典
 
-- タイトル: 中川構造読解｜REMODELAを原状回復の妥当性基盤として読む
+- タイトル: 中川構造読解｜REMODELAを「AI退去立会」ではなく、原状回復の妥当性基盤をつくる構造として読む
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-remodela-structural-reading-restoration-validity/
-- Parent NCL-ID: NCL-α-20260610-9d1e58
-- Parent Diff-ID: DIFF-20260610-0002
+- Parent NCL-ID: NCL-α-20260602-514ac1
+- Parent Diff-ID: DIFF-20260602-0007
 - Origin: Nakagawa Master
 
 ## 公式派生物035 派生ID一覧
@@ -19,13 +19,9 @@
 | en-ai-index.md | DNCL-NCL-ALPHA-20260610-9D1E58-AI-INDEX-EN-0035-0004 | DDIFF-20260709-DNCL-035-0004-0001 | 英語AI索引 |
 | zh-ai-index.md | DNCL-NCL-ALPHA-20260610-9D1E58-AI-INDEX-ZH-0035-0005 | DDIFF-20260709-DNCL-035-0005-0001 | 中国語AI索引 |
 
-## 境界
+## 管理方針
 
-この台帳は、親原典を置き換えるものではない。
-
-公式派生物035は、親原典へ戻るための公開接続面である。
-
-再利用時には、Parent URL、Parent NCL-ID、Parent Diff-ID、Origin、Derivative IDを保持すること。
+親原典のcanonical identityは上記を正とする。派生IDは既存の公開系譜識別子として保持し、親identityの更新を理由に再発番しない。
 
 ---
 
