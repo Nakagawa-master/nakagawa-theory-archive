@@ -2,10 +2,10 @@
 
 ## Parent Origin
 
-- Title: Future-Definition Verification Effort Theory Vol. 2 | Forced Effort Without Future-Definition Verification and Its Transformation into a Responsibility-Transfer Device
+- Title: Future-Definition Verification Effort Theory Vol. 2 | Bad Causality of Forced Effort Without Future-Definition Verification — Why Failure of Establishment Testing Upstream Becomes Exhaustion in the Field
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-bad-causality/
-- Parent NCL-ID: NCL-α-20260614-77a781
-- Parent Diff-ID: DIFF-20260623-0003
+- Parent NCL-ID: NCL-α-20260608-5a13aa
+- Parent Diff-ID: DIFF-20260612-0018
 - Origin: Nakagawa Master
 
 ## Derivative ID
