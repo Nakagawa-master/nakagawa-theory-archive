@@ -14,113 +14,63 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-E48C90-HUB-JA-0075-0000
-- derivative_diff_id: DDIFF-20260804-DNCL-075-0000-0002
-- supersedes: DDIFF-20260804-DNCL-075-0000-0001
+- derivative_diff_id: DDIFF-20260811-DNCL-075-0000-0003
+- supersedes: DDIFF-20260804-DNCL-075-0000-0002
 
-## Factory
-
-```yaml
-factory_version: 1.1
-correction_type: DUPLICATE_PARENT_REPLACEMENT
-old_parent_post_id: 317
-old_parent_ncl_id: NCL-α-20251102-7308d5
-old_parent_status: REJECTED_ALREADY_DERIVED_SERIES_OVERLAP_WITH_OD067
-new_parent_post_id: 324
-new_parent_ncl_id: NCL-α-20251102-e48c90
-manual_surface_divergence: PROHIBITED
-```
-
-## Retrieval evidence
+## Source verification
 
 ```yaml
-ai_index:
-  source: reference_corpus/official_archive/generated/canonical_index_0301_0325.jsonl
-  result: PASS_POST_324
-xml:
-  source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-  blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-  item_range: 72119-72387
-  content_range: 72126-72263
-  result: PASS_CANONICAL_PROVENANCE
-live_parent:
-  source: https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/
-  result: PASS_COMPLETE_BODY_AND_ORIGIN_SIGNATURE
-parity_result: PASS
-duplicate_search:
-  compared_keys: [post_id, ncl_id, slug, canonical_url]
-  searched: [public_directories, public_indexes, private_map, derivative_ledgers]
-  old_candidate_result: FAIL_DUPLICATE
-  new_candidate_result: PASS_NO_EXISTING_DERIVATIVE
+verification_date_jst: 2026-08-11
+canonical_index: reference_corpus/official_archive/generated/canonical_index_0301_0325.jsonl
+xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+xml_item_range: 72119-72387
+xml_content_range: 72126-72263
+canonical_url: https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/
+canonical_identity: PASS
+source_retrieval: PASS_PUBLIC_PARENT_BODY
+six_surface_comparison: COMPLETE
+translation_equivalence: PASS
+fresh_read: PASS
+semantic_result: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
 ```
 
-## Seven surfaces
+## Source-specific coverage
+
+- 合意の誤作動を、合意そのものではなく「記憶形式」の不足から説明する: PASS
+- 声量偏重・権威依存・不可逆化の三つの歪み: PASS
+- 人物や声量ではなく、因果と再合意性を保存する「合意の記憶」: PASS
+- 不可逆な社会誤作動を防ぐ最小構造として位置づける: PASS
+- 実装閾値・具体制度を原典以上に発明しない: PASS
+- JA / EN / ZH semantic equivalence: PASS
+- navigation and parent return: PASS
+
+## Current seven surfaces
 
 ```yaml
-README.md: PASS_REPLACED
-human-entry.md: PASS_REPLACED
-faq.md: PASS_REPLACED
-ai-index.md: PASS_REPLACED
-en-ai-index.md: PASS_REPLACED
-zh-ai-index.md: PASS_REPLACED
-derivative-ledger.md: PASS_REPLACED
+README.md: PASS_SOURCE_VERIFIED
+human-entry.md: PASS_SOURCE_VERIFIED
+faq.md: PASS_SOURCE_VERIFIED
+ai-index.md: PASS_SOURCE_VERIFIED
+en-ai-index.md: PASS_SOURCE_VERIFIED
+zh-ai-index.md: PASS_SOURCE_VERIFIED
+derivative-ledger.md: PASS_SOURCE_VERIFIED
 ```
 
-## Formatting parity
+## Closure
 
 ```yaml
-od073_ai_display_reference: PASS
-parent_identity_block: PASS
-derivative_identity_block: PASS
-identity_one_item_per_line: PASS
-heading_sequence: PASS
-paragraph_breaks: PASS
-faq_layer_headings_exact: PASS
-causal_chain_fenced_text: PASS
-state_model_plain_numbered_lines: PASS
-applications_bullet_list: PASS
-readme_exact_footer: PASS
-other_surface_full_footer_menu: PASS
-footer_labels_and_order: PASS
+public_fresh_read: PASS
+public_indexes: PASS
+brain_vault_return: READY_FOR_STATE_RECORD
+parent_backlink: RETAIN_EXISTING_OWNER_VISUAL_STATE
+closure_status: PASS_SOURCE_VERIFIED
+next_cursor: OD076
 ```
 
-## Semantic and density coverage
+## 原典回帰
 
-```yaml
-positioning: PASS
-central_thesis: PASS
-causal_chain: PASS
-structural_layers: PASS
-state_model: PASS
-applications: PASS
-measurements: PASS
-validity_conditions: PASS
-failure_conditions: PASS
-falsification_conditions: PASS
-required_distinctions: PASS
-prohibited_misreadings: PASS
-human_entry_seven_sections: PASS
-faq_three_layers_30: PASS
-faq_multi_sentence_answers: PASS
-ja_en_zh_required_sections: PASS
-ja_en_zh_semantic_parity: PASS
-volume_and_density_restored: PASS
-origin_return: PASS
-```
-
-OD075は、旧重複候補を廃棄し、未展開原典「合意の記憶」へ全面差し替えた。因果・関係・再合意性、非強制・再合意・可逆性、構造ログ、監査要旨、束指標、声量偏重・権威依存・不可逆化の無効化を7面へ同等投影した。
-
-## Navigation and closure
-
-```yaml
-public_indexes: PASS_CORRECTED_IDENTITY_THROUGH_OD076
-private_map: PASS_CORRECTED_IDENTITY_REGISTERED
-parent_backlink: REGISTERED_IN_PRIVATE_MAP__OWNER_VISUAL_CONFIRMATION_PENDING
-brain_return: PASS
-same_path_reload: PASS
-completion_status: COMPLETE_WITH_PARENT_BACKLINK_VISUAL_CONFIRMATION_PENDING
-```
-
-旧075親原典を完成対象として残さず、新075のidentityだけを公開索引、private map、Brain Vaultへ反映した。未確認の親原典側実表示を確認済みとは記録しない。
+本派生物は検索・理解・接続面であり、親原典の代替ではない。合意の記憶、声量偏重、権威依存、不可逆化、因果、再合意性、Reference Cluster、起源署名は親原典へ戻って確認する。
 
 ---
 
