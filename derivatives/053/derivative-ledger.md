@@ -50,6 +50,16 @@
 - origin return and mutual navigation: PASS
 - density against same-type completed derivatives: PASS
 
+## Semantic fidelity revalidation — 2026-08-12
+- result: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
+- canonical_post_id: 229
+- canonical_index: reference_corpus/official_archive/generated/canonical_index_0201_0250.jsonl
+- canonical_xml_locator: reference_corpus/official_archive/source/wordpress_export_latest.xml#L66014-L66270
+- canonical_xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+- source_supported_kernel: 身体知を言語化・可視化・制度化し、中川式営業を思想と営業学として確立する
+- six_surface_comparison: PASS
+- ja_en_zh_equivalence: PASS
+
 ## Origin return
 
 The derivative is a retrieval and reading surface, not a replacement for the parent. Return to the parent for the complete fifteen-lecture trajectory, examples, audit summaries, falsification conditions, and origin declaration.
