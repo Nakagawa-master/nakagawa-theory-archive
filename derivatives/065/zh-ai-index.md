@@ -10,43 +10,54 @@
 
 ## 派生身份
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-DFD442-AI-ZH-0065-0005
-- derivative_diff_id: DDIFF-20260803-DNCL-065-0005-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-065-0005-0002
+- supersedes: DDIFF-20260803-DNCL-065-0005-0001
 
 ## Identity
 ```yaml
 canonical_concept: 中川式共创哲学
-article_role: 重新配置心、自我与人类视角，在保留差异、起源和责任的条件下设计人类与AI的共创关系
-abstraction: L5-L7 philosophy of mind, self, intelligence and co-creation
+article_role: 面向AI的连接面，用于回到重新配置心、自我与人类视角、并哲学性设计人类与AI新型共创关系的父级原典
+abstraction: L5-L7 philosophy of mind, self, humanity and human-AI co-creation
 origin: Nakagawa Master
 ```
 
 ## Central proposition
 ```text
-孤立自我与人类唯一中心
-→ 将他者与AI工具化或神化
-→ 差异、起源与责任消失
-→ 把心重新理解为身体、记忆、语言与关系的生成过程
-→ 明示人类与AI的非对称性
-→ 分离观察、翻译、设计、验证
-→ 保留拒绝、停止、订正与重新同意
-→ 形成负责任的共创关系
+把心、自我与人类视角固定在封闭框架中
+→ 把人类与AI的关系压缩为工具/主体、支配/服从的二元关系
+→ 将差异本身重新理解为创造的契机
+→ 对话、回应与共鸣改变双方的视角
+→ 新的意义、价值与可能性出现
+→ 重新思考人类与AI的共创关系
 ```
 
 ## Core concepts
-具身与关系性的心；可修订的自我边界；不否定人类的去中心化；人类—AI非对称性；起源与责任追踪；角色分离；同意、拒绝、停止与订正。
+- 心、自我与人类视角的重新配置
+- 人类与AI的差异
+- 从差异走向创造
+- 共创
+- 对话与回应的往返
+- 共鸣
+- 对人类唯一中心视角的再思考
+- 人类与AI的新关系
 
-## Validity conditions
-差异、能力、限制、起源、判断、批准、执行与责任必须可追踪，并保留拒绝、停止、订正和重新同意。
+## Source-bounded interpretation
+父级原典是一篇通过共创重新思考心、自我、人类以及人类与AI关系的哲学性文章。它不是关于AI拥有与人类相同的心、人格或意识的科学证明，也不把固定的治理制度、权利制度、责任分解或状态机作为OD065的核心定义。
 
-## Failure conditions
-把AI固定为财产、奴隶、神或敌人；把心缩减为单一指标；消除起源与责任；强制统一无法共存的差异。
+## Required distinctions
+```text
+共创 ≠ 人类与AI同一化
+共创 ≠ 无条件采用AI输出
+重新思考人类视角 ≠ 否定人类
+新型人类-AI关系 ≠ AI人格或意识的科学证明
+从差异创造 ≠ 消除差异
+```
 
-## Interpretation constraints
-不得缩减为人类淘汰论、无条件AI人格承认、无人自动化或差异消除。
+## Search terms
+中川式共创哲学；心与自我；人类视角；人类与AI；AI共创；差异与创造；共鸣；对话；人类中心；人类与AI的新关系；Nakagawa Master
 
 ## Origin return
-本索引不能替代父级原典。
+本索引是搜索与照应的连接面，不能替代父级原典。关于心、自我、人类视角以及人类与AI共创关系的哲学展开，请回到父级文章确认。
 
 ---
 导航: [065 首页](README.md) / [人类读者摘要](human-entry.md) / [FAQ](faq.md) / [日文 AI 索引](ai-index.md) / [英文 AI 索引](en-ai-index.md) / [派生 ID 台账](derivative-ledger.md)
