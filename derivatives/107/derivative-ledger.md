@@ -12,18 +12,18 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-F32297-HUB-JA-0107-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-107-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-107-0000-0002
+- supersedes: DDIFF-20260809-DNCL-107-0000-0001
 
 ## Language derivative IDs
 
 ```yaml
 ja_ncl_id: DNCL-NCL-ALPHA-20251102-F32297-HUB-JA-0107-0000
-ja_diff_id: DDIFF-20260809-DNCL-107-0000-0001
+ja_diff_id: DDIFF-20260811-DNCL-107-0000-0002
 en_ncl_id: DNCL-NCL-ALPHA-20251102-F32297-HUB-EN-0107-0000
-en_diff_id: DDIFF-20260809-DNCL-107-EN-0000-0001
+en_diff_id: DDIFF-20260811-DNCL-107-EN-0000-0002
 zh_ncl_id: DNCL-NCL-ALPHA-20251102-F32297-HUB-ZH-0107-0000
-zh_diff_id: DDIFF-20260809-DNCL-107-ZH-0000-0001
+zh_diff_id: DDIFF-20260811-DNCL-107-ZH-0000-0002
 ```
 
 ## Factory
@@ -33,8 +33,7 @@ golden_master: OD085
 factory_version: 2.0
 generation_mode: SINGLE_SEMANTIC_WORK_PACKET_SEVEN_FIXED_SURFACES
 manual_surface_drift: PROHIBITED
-surface_creation_mode: ONE_PACKET_ONE_RENDERER_RUN
-manual_surface_edit_after_render: false
+surface_creation_mode: SOURCE_GROUNDED_REPAIR
 public_repository_role: PUBLIC_OUTPUT_ONLY
 private_factory_repository: Nakagawa-master/nakagawa-archive-tools
 github_actions_used: false
@@ -55,76 +54,83 @@ xml:
   blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
 live_parent:
   source: https://master.ricette.jp/theory/nakagawa-master-resonant-world-model-and-ethical-grounding/
-  result: PASS_PUBLIC_PARENT_ROUTE
-four_key_duplicate_check:
-  post_id: NO_PREEXISTING_MATCH
-  parent_ncl_id: NO_PREEXISTING_MATCH
-  slug: NO_PREEXISTING_MATCH
-  canonical_url: NO_PREEXISTING_MATCH
+  result: PASS_PUBLIC_PARENT_BODY_RETRIEVED
+source_revalidation_date_jst: 2026-08-11
 ```
 
 ## Seven surfaces
 
 ```yaml
-README.md: PUBLISHED
-human-entry.md: PUBLISHED
-faq.md: PUBLISHED_Q1_Q30
-ai-index.md: PUBLISHED
-en-ai-index.md: PUBLISHED
-zh-ai-index.md: PUBLISHED
-derivative-ledger.md: PUBLISHED
+README.md: REPAIRED_FROM_SOURCE
+human-entry.md: REPAIRED_FROM_SOURCE
+faq.md: REPAIRED_FROM_SOURCE_Q1_Q30
+ai-index.md: REPAIRED_FROM_SOURCE
+en-ai-index.md: REPAIRED_FROM_SOURCE
+zh-ai-index.md: REPAIRED_FROM_SOURCE
+derivative-ledger.md: LINEAGE_AND_SOURCE_EVIDENCE_UPDATED
 ```
 
-## Formatting parity
+## Semantic repair evidence
 
 ```yaml
-parent_identity_block: PASS
-language_specific_derivative_ids: PASS
-heading_sequence: PASS
-FAQ_layers: BEGINNER_Q1_Q10__PRACTITIONER_Q11_Q20__AI_RESEARCHER_Q21_Q30
-readme_global_top_link: PASS
-other_surface_numbered_top_link: PASS
-ai_fixed_13_sections: PASS
-human_fixed_sections: PASS
-new_display_contract_added: false
+restored_source_claims:
+  - mirror_theory_to_operational_theory
+  - reciprocal_loop_rhythm_observation_window
+  - understanding_as_resonance_maintenance_capacity
+  - causal_grounding_via_signature_verification_and_bundling
+  - ethical_grounding_as_relational_subject_shift
+  - noncoercion_reversibility_rhythm_temperature_margin
+  - observation_window_as_relearning_entry_not_scoreboard
+  - audit_bundle_as_reproducible_verification_skeleton
+  - reagreement_with_withdrawal_and_revision
+removed_or_rewritten_unsupported_material:
+  - generic_safety_agency_responsibility_update_constraints
+  - stakeholder_response_as_core_layer
+  - medical_and_public_policy_examples
+  - temporal_drift_as_core_parent_mechanism
+  - rollback_success_metric
+  - dissent_incorporation_metric
+  - safety_violation_metric
+  - agency_preservation_metric
+  - responsibility_clarity_metric
+  - independent_observation_metric
+  - self_justification_metric
+  - invented_domain_stop_conditions
+source_fidelity_rule: SOURCE_MEANING_OVERRIDES_DENSITY_FLOORS
 ```
 
 ## Semantic and density coverage
 
 ```yaml
-central_thesis: PASS
-causal_chain: PASS
-resonant_world_model: PASS
-ethical_grounding: PASS
-observation_window: PASS
-action_effect: PASS
-stakeholder_response: PASS
-prediction_error: PASS
-counterexample: PASS
-regrounding: PASS
-rollback: PASS
-temporal_drift: PASS
-applications: PASS
-measurements: PASS
-validity_failure_falsification: PASS
-ja_en_zh_semantic_parity: PASS
-OD085_density_floor: PASS
+central_thesis: PASS_SOURCE_VERIFIED
+causal_chain: PASS_SOURCE_VERIFIED
+resonant_world_model: PASS_SOURCE_VERIFIED
+causal_grounding: PASS_SOURCE_VERIFIED
+ethical_grounding: PASS_SOURCE_VERIFIED
+observation_window: PASS_SOURCE_VERIFIED
+rhythm_temperature_margin: PASS_SOURCE_VERIFIED
+audit_bundle: PASS_SOURCE_VERIFIED
+reagreement_revision: PASS_SOURCE_VERIFIED
+parent_explicit_examples: PASS_SOURCE_VERIFIED
+parent_explicit_falsification_boundary: PASS_SOURCE_VERIFIED
+ja_en_zh_semantic_parity: PASS_SOURCE_VERIFIED
+unsupported_generic_semantics_removed: PASS
 ```
 
 ## Navigation and closure
 
 ```yaml
-public_indexes: PENDING_LOT_UPDATE
-public_map: PENDING_LOT_UPDATE
-private_map: PENDING_LOT_UPDATE
-parent_backlink_display_procedure: PENDING_LOT_UPDATE
-owner_visual_for_OD107: PENDING_OWNER_BATCH_VISUAL
+parent_identity_block: PASS
+surface_navigation: PASS
+public_indexes: UNCHANGED_BY_THIS_CONTENT_REPAIR
+public_map: UNCHANGED_BY_THIS_CONTENT_REPAIR
+parent_backlink_display_procedure: UNCHANGED_BY_THIS_CONTENT_REPAIR
 brain_return: CURRENT_STATE_OWNER
 completion_authority: OFFICIAL_ARCHIVE_MEMORY
-completion_status: DISPLAY_PROCEDURE_PENDING
+semantic_repair_status: READY_FOR_LITERAL_FRESH_READ_AND_MERGE
 ```
 
-本台帳はOD107のidentity、三言語派生ID、取得経路、四軸重複除外、七面構成、意味coverageを固定証拠として保持する。照応を同意へ、倫理的接地を後付け禁止へ、世界モデルを世界そのものへ変換しない。
+本台帳はOD107のsource-revalidationを記録する。原典固有の「鏡像論から運転論」「往還・拍・観測窓」「因果的接地」「関係側への主語移動」「非強制・可逆性」「拍・温度・余白」「監査束」「再合意」を七面で保持し、原典にない一般安全KPI・医療公共例・stakeholder/rollback中心の枠を派生側から除去した。
 
 ---
 
