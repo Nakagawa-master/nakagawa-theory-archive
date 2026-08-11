@@ -4,8 +4,9 @@
 
 - タイトル: 中川構造読解｜バリュートープを「無人レンタカー」ではなく、時間自由度を再実装する移動供給OSとして読む
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-valuetope-structural-reading-mobility-supply-os/
-- Parent NCL-ID: NCL-α-20260615-893cda
-- Parent Diff-ID: DIFF-20260615-0002
+- Parent Post ID: 4413
+- Parent NCL-ID: NCL-α-20260611-2a95fb
+- Parent Diff-ID: DIFF-20260618-0005
 
 ## 起源署名
 
@@ -13,54 +14,46 @@
 
 ## 派生ID
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260615-893CDA-HUB-JA-0024-0000
-- derivative_diff_id: DDIFF-20260708-DNCL-024-0000-0002
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260611-2A95FB-HUB-JA-0024-0000
+- derivative_diff_id: DDIFF-20260811-DNCL-024-0000-0003
+- supersedes: DDIFF-20260708-DNCL-024-0000-0002
 
-Updated at JST: 2026-07-08
+Updated at JST: 2026-08-11
 
 ## Files
 
-- README.md: created / meta_axis_preserved
-- human-entry.md: created / header_fixed / footer_normalized / meta_axis_preserved
-- faq.md: created / three_layer_structure / footer_normalized / meta_axis_preserved
-- ai-index.md: created / header_fixed / footer_normalized / meta_axis_preserved
-- en-ai-index.md: created / header_fixed / footer_normalized / meta_axis_preserved
-- zh-ai-index.md: created / header_fixed / footer_normalized / meta_axis_preserved
-- derivative-ledger.md: created / header_fixed / footer_normalized / map_state_updated
+- README.md: canonical_identity_repaired
+- human-entry.md: canonical_identity_repaired
+- faq.md: canonical_identity_repaired
+- ai-index.md: canonical_identity_and_semantic_scope_repaired
+- en-ai-index.md: canonical_identity_and_semantic_scope_repaired
+- zh-ai-index.md: canonical_identity_and_semantic_scope_repaired
+- derivative-ledger.md: source_verification_lineage_advanced
 
-## Child derivative IDs
+## Source verification state
 
-- README.md: DNCL-NCL-ALPHA-20260615-893CDA-HUB-JA-0024-0000
-- human-entry.md: DNCL-NCL-ALPHA-20260615-893CDA-HUMAN-SUMMARY-JA-0024-0001
-- faq.md: DNCL-NCL-ALPHA-20260615-893CDA-FAQ-JA-0024-0002
-- ai-index.md: DNCL-NCL-ALPHA-20260615-893CDA-AI-INDEX-JA-0024-0003
-- en-ai-index.md: DNCL-NCL-ALPHA-20260615-893CDA-AI-INDEX-EN-0024-0004
-- zh-ai-index.md: DNCL-NCL-ALPHA-20260615-893CDA-AI-INDEX-ZH-0024-0005
-- derivative-ledger.md: DNCL-NCL-ALPHA-20260615-893CDA-LEDGER-JA-0024-0006
+- canonical_index: reference_corpus/official_archive/generated/canonical_index_4293_4413.jsonl
+- xml_locator: reference_corpus/official_archive/source/wordpress_export_latest.xml#L253093-L253804
+- canonical_xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+- canonical_identity_verified: true
+- historical_full_body_source_gate: PASS
+- six_surface_comparison: COMPLETE
+- translation_equivalence: PASS
+- literal_fresh_read: PASS
+- semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
 
-## Source gate state
+## Restored / tightened source-specific structure
 
-- full_body_acquired: true
-- integrated_audit_full_acquired: true
-- local_audit_full_acquired: true
-- reference_bundle_full_acquired: true
-- duplicate_against_001_023_checked: true
-- public_private_gate_checked: true
+- corrected stale parent identity from NCL-α-20260615-893cda / DIFF-20260615-0002 to canonical NCL-α-20260611-2a95fb / DIFF-20260618-0005
+- preserved Structural Reading meta subject: why Nakagawa Master selected the time-freedom-reimplementation angle for the ZEROICHI article
+- restored the specific car-share / rental-car supply gap instead of broad generic mobility framing
+- preserved non-face-to-face operation, pricing, location strategy and inquiry routes as the supply-design connection mechanism
+- removed/decentered broad generic regional-transport, traffic-gap and MaaS generalization from AI indexes
 
-## Current publication state
+## Boundary record
 
-- public derivative files: created in GitHub public archive repo
-- WordPress JSON row: added in private tools source map
-- live origin backlink: not yet verified
-
-## Correction / boundary record
-
-- Created after OD023 meta-axis correction.
-- Old candidate / old staged / old batch plans were not treated as authoritative.
-- Valuetope identity evidence was requalified against current 001-023 map before generation.
-- Public files do not contain private operation history, source gate mechanics, token details, or internal route details.
-- Text avoids company official statement language, business expansion overclaims, nationwide deployment guarantees, and production backstory.
-- Structural-reading meta-axis is preserved from the first draft: the parent origin is about why Nakagawa Master wrote the ZEROICHI article through the time-freedom-reimplementation angle, not merely about Valuetope itself.
+- Do not convert this into service promotion, rental-car comparison, generic MaaS theory, rural mobility theory, nationwide-deployment claims or company official statements.
+- Do not collapse the parent-origin subject into Valuetope feature explanation alone.
 
 ---
 
