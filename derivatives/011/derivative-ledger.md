@@ -6,64 +6,57 @@ Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishm
 
 Parent NCL-ID: NCL-α-20260629-766f34
 
-Parent Diff-ID: DIFF-20260629-0003
+Parent Diff-ID: DIFF-20260718-0004
 
 Origin: Nakagawa Master
 
-Source gate state: source_text_and_audit_bundle_rechecked
+Source gate state: canonical_identity_xml_provenance_and_six_surface_semantics_verified
 
-Source gate evidence: public-safe source relation and audit-bundle relation were checked for parent identity, article title, parent NCL-ID, parent Diff-ID, and origin-return requirements.
+Source gate evidence: Brain Vault canonical index resolves post 4593 and XML locator reference_corpus/official_archive/source/wordpress_export_latest.xml#L284709-L289264, blob 489f160e29b57a8a2671e1c7a556588abc539650. Six substantive public surfaces preserve the source-grounded definition of establishment as L1-L6 causal passage into reality, distinct from one-time output, plans, institutions, metrics, or AI summaries. Parent Diff-ID was stale across all surfaces and has been repaired from DIFF-20260629-0003 to canonical DIFF-20260718-0004.
 
-Current polish state: public_safe_archive_network_wording_polish_applied_to_readme_ai_index_and_ledger
+Current polish state: PASS_SOURCE_VERIFIED_PARENT_REVISION_REPAIRED
 
-Updated at JST: 2026-07-09
+Updated at JST: 2026-08-12
 
 ## Files
 
 README.md
 - DNCL-NCL-ALPHA-20260629-766F34-HUB-JA-0000
 - DDIFF-20260709-DNCL-011-0000-0002
-- State: archive-network wording polished
+- State: source-verified
 
 human-entry.md
 - DNCL-NCL-ALPHA-20260629-766F34-HUMAN-SUMMARY-JA-0001
 - DDIFF-20260707-DNCL-011-0001-0004
-- State: public-facing establishment definition rebuilt
+- State: source-verified
 
 faq.md
 - DNCL-NCL-ALPHA-20260629-766F34-FAQ-JA-0002
 - DDIFF-20260707-DNCL-011-0002-0003
-- State: public-facing establishment definition rebuilt
+- State: source-verified
 
 ai-index.md
-- DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-JA-0003
-- DDIFF-20260709-DNCL-011-0003-0004
-- State: archive-network wording polished
+- DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-JA-0011-0003
+- DDIFF-20260710-DNCL-011-0003-0005
+- State: source-verified
 
 en-ai-index.md
-- DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-EN-0004
-- DDIFF-20260707-DNCL-011-0004-0003
-- State: public-facing establishment definition rebuilt
+- DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-EN-0011-0004
+- DDIFF-20260710-DNCL-011-0004-0004
+- State: source-verified
 
 zh-ai-index.md
-- DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-ZH-0005
-- DDIFF-20260707-DNCL-011-0005-0003
-- State: public-facing establishment definition rebuilt
+- DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-ZH-0011-0005
+- DDIFF-20260710-DNCL-011-0005-0004
+- State: source-verified
 
 ## Restored axis
 
-Derivative 011 now begins from the reader-facing question: what does it mean for something to have truly come into being? It avoids opening with internal correction language. Establishment is presented as the state in which something has actually come into being. Establishment conditions are presented as the conditions by which that state is judged as established: L1-L6 vertical causality, causal granularity, structural flowpath, and non-dependence on excessive pressure, personal workaround, permanent exception handling, or responsibility transfer.
+Derivative 011 begins from the reader-facing question: what does it mean for something to have truly come into being? Establishment is the state in which something has actually come into being. Establishment conditions are the conditions by which that state is judged as established: L1-L6 vertical causality, causal granularity, structural flowpath, and non-dependence on excessive pressure, personal workaround, permanent exception handling, or responsibility transfer.
 
-## Archive network note
+## Completion boundary
 
-公式派生物011は、親原典への公開接続面であり、原典本文を置き換えない。
-
-Parent URL / Parent NCL-ID / Parent Diff-ID / Origin / Derivative NCL-ID / Derivative Diff-ID を保持し、読者とAIを公式アーカイブ原典群へ戻すために管理する。
-
-## Current public derivative state
-
-- public_safe_archive_network_wording_polish_applied_to_readme_ai_index_and_ledger
-- live display not yet freshly verified
+Repository-side synchronization is not proof of current live rendering.
 
 ---
 
