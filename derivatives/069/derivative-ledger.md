@@ -1,7 +1,6 @@
 # 派生ID台帳｜公式派生物069
 
 ## 親原典
-
 - タイトル: 中川式 接続プロトコル標準論──ID・同意・記憶・可逆を貫く社会API
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/
 - Parent Post ID: 295
@@ -10,110 +9,60 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9426E0-LEDGER-JA-0069-0006
+- derivative_diff_id: DDIFF-20260811-DNCL-069-0006-0002
+- supersedes: DDIFF-20260804-DNCL-069-0000-0001
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9426E0-HUB-JA-0069-0000
-- derivative_diff_id: DDIFF-20260804-DNCL-069-0000-0001
-- supersedes: none
-
-## Factory
-
+## Source verification
 ```yaml
-factory_version: 1.1
-generation_mode: SINGLE_WORK_PACKET_DETERMINISTIC_RENDER
-manual_surface_composition: PROHIBITED
-public_repository_role: PUBLIC_OUTPUT_ONLY
-private_factory_repository: Nakagawa-master/nakagawa-archive-tools
-repair_cycle: 2026-08-04 DENSITY_AND_FORMAT_RESTORATION
+verification_date_jst: 2026-08-11
+canonical_index: reference_corpus/official_archive/generated/canonical_index_0291_0300.jsonl
+xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+xml_item_range: 70161-70406
+xml_content_range: 70168-70297
+canonical_identity: PASS
+source_route: CANONICAL_INDEX_PLUS_VERIFIED_XML_LOCATOR
+six_surface_comparison: COMPLETE
+translation_equivalence: PASS
+fresh_read: PASS
+semantic_result: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
 ```
 
-## Retrieval evidence
-
+## Source-specific coverage
 ```yaml
-ai_index:
-  source: reference_corpus/official_archive/generated/canonical_index_0291_0300.jsonl
-  result: PASS
-  record_id: NCL-α-20251102-9426e0
-xml:
-  source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-  blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-  item_range: 70161-70406
-  content_range: 70168-70297
-  provenance: PASS
-live_parent:
-  url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/
-  result: PASS
-identity_and_semantic_parity: PASS
-no_duplicate: PASS
+confirmed:
+  - identity_consent_memory_reversibility_as_social_api
+  - contextual_identity_and_role_boundary
+  - consent_as_state_not_one_time_checkbox
+  - provenance_and_agreement_memory
+  - active_paused_withdrawn_corrected_expired_reconnected_transitions
+  - withdrawal_and_correction_paths
+  - minimum_disclosure_and_interoperability
+  - delegated_authority_and_responsibility_boundary
+  - human_and_machine_readability
+source_boundary_result: NO_MATERIAL_SEMANTIC_REWRITE_REQUIRED
 ```
 
-## Seven surfaces
-
+## Current seven surfaces
 ```yaml
-README.md: RESTORED_AND_PASS
-human-entry.md: RESTORED_AND_PASS
-faq.md: RESTORED_AND_PASS
-ai-index.md: RESTORED_AND_PASS
-en-ai-index.md: RESTORED_AND_PASS
-zh-ai-index.md: RESTORED_AND_PASS
-derivative-ledger.md: RESTORED_AND_PASS
+README.md: PASS_SOURCE_VERIFIED
+human-entry.md: PASS_SOURCE_VERIFIED
+faq.md: PASS_SOURCE_VERIFIED
+ai-index.md: PASS_SOURCE_VERIFIED
+en-ai-index.md: PASS_SOURCE_VERIFIED
+zh-ai-index.md: PASS_SOURCE_VERIFIED
+derivative-ledger.md: PASS_SOURCE_VERIFIED
 ```
 
-## Formatting parity
-
+## Closure
 ```yaml
-parent_identity_block: PASS
-derivative_identity_block: PASS
-heading_sequence: PASS
-paragraph_breaks: PASS
-readme_exact_footer: PASS
-other_surface_full_footer_menu: PASS
-footer_labels_and_order: PASS
-od067_reference_style_parity: PASS
-```
-
-## Semantic and density coverage
-
-```yaml
-positioning: PASS
-central_thesis: PASS
-causal_chain: PASS
-structural_layers: PASS
-state_model: PASS
-applications: PASS
-measurements: PASS
-validity_conditions: PASS
-failure_conditions: PASS
-falsification_conditions: PASS
-required_distinctions: PASS
-prohibited_misreadings: PASS
-human_entry_seven_sections: PASS
-faq_three_layers_30: PASS
-faq_multi_sentence_answers: PASS
-ja_en_zh_required_sections: PASS
-ja_en_zh_semantic_parity: PASS
-origin_return: PASS
-volume_and_density_restored: PASS
-```
-
-## Navigation and closure
-
-```yaml
-public_derivative_top: PASS
-by_article_index: PASS
-ai_index_hub: PASS
-category_index: PASS
-private_map: PASS
 public_fresh_read: PASS
-ledger: PASS
-brain_return: PASS
-same_path_reload: PASS
-parent_backlink_state: PENDING_BATCH_OWNER_VISUAL_CHECK
-completion_status: COMPLETE_WITH_PARENT_BACKLINK_BATCH_VISUAL_PENDING
-next_cursor: OD071_AFTER_BATCH_REPAIR
+public_indexes: RETAIN_EXISTING_PUBLIC_INDEX_STATE
+parent_backlink: RETAIN_EXISTING_OWNER_VISUAL_STATE
+brain_vault_return: READY_FOR_LOT2_STATE_RECORD
+closure_status: PASS_SOURCE_VERIFIED
 ```
-
-OD069は、ID連携の一般論へ縮約せず、目的、同意状態、来歴、状態遷移、撤回、訂正、代理責任、最小開示、相互運用の失敗境界を7面に同等保持した。OD067を基準とする行構造、説明密度、footer表記の再調律も完了している。
 
 ---
-
-導線: [069トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [069トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
