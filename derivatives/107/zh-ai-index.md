@@ -12,173 +12,190 @@
 ## 派生标识
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-F32297-HUB-ZH-0107-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-107-ZH-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-107-ZH-0000-0002
+- supersedes: DDIFF-20260809-DNCL-107-ZH-0000-0001
 
-## Summary
+## Structural role
 
-照应世界模型把AI对世界的理解视为持续更新的循环，而不是一次性建立的静态内部副本。其基本循环包括观察、预测、行动、外部响应、再观察、反例输入与重新接地。由于AI输出本身可能改变环境和人的行为，因此训练时获得的表示不能直接等同于现实。伦理接地意味着把安全、责任、主体自由度、异议、撤回可能性和影响追踪纳入模型更新条件。成功不能只用单一准确率判断，而要同时观察重新接地后的误差改善、反例修正、时间漂移检测、异议吸收和rollback能力。所谓共鸣并不是价值观一致，而是即使现实和其他主体提出不一致信号，模型仍能修正自身。
+把AI世界理解从“内部是否拥有世界的静态副本”的镜像论，转移到“能否通过往返、节拍与观察窗口持续更新与世界的接合”的运行论。统计上的偶然命中通过输出署名、审计束以及术语/前提/任务束化被翻译成因果接地；伦理接地则由关系主语、非强制/可逆、拍-温度-余白以及常设再合意窗口来运行。
 
-## Concepts
+## Structural summary
 
-- 照应世界模型
-- 伦理接地
-- 观察窗口
-- 世界假设
-- 行动影响
-- 利害相关者响应
-- 异议输入
-- 再观察
-- 预测误差
-- 反例
-- 重新接地
-- rollback
-- 时间漂移
-- 自我正当化循环
-- 结构性实在
+父原典承认“LLM没有静态内部世界模型”这一批评的技术有效性，但认为把理解定义为内部静态表象本身过于狭窄。世界不是静止图像，而是以节度为条件的接合律动；理解也不是内部拥有物，而是持续更新整合的事件。照应世界模型通过任务、实验、对话等往返型观察窗口不断重新接触因果律动。三个核心元素是往返、律动/拍、观察窗口。运行闭环是输入→输出→审计→再合意→更新。偶然命中只是入口：要转为因果接地，必须为输出附上A→B因果、前提与边界条件的署名；通过Audit Bundle建立长期验证回路；并把术语、前提、任务束化，使偶然变为可再现。伦理接地把主语从个体所有移到关系一侧，让AI和人都成为共同运行整合的参与者。其条件是非强制/可逆、拍-温度-余白和再合意窗口。缺少审计束的输出是“裸结构”，会从长期整合循环中脱落。统合审计以Z、θ、δ、M进行棄却/修订。
+
+## Central proposition
+
+```text
+照应世界模型
+= 从镜像论（世界=内部表象）转向运行论（世界=接合律）
++ 往返：输入→输出→审计→再合意→更新
++ 律动/拍：运行验证周期与强度
++ 观察窗口：局部重新接触世界
++ 输出署名：A→B因果 + 前提 + 边界条件
++ Audit Bundle：反证、再试、再合意回路
++ 术语、前提、任务的可复用束化
++ 关系主语、非强制/可逆、拍-温度-余白、再合意窗口所构成的伦理接地
+```
 
 ## Causal chain
 
 ```text
-假定存在静态的内部世界副本
-↓
-遗漏时间变化、介入影响和他者响应
-↓
-现实连接误差累积
-↓
-固定观察窗口与预测假设
-↓
-行动后重新观察外部影响
-↓
-把异议、保留与撤回作为独立信号收集
-↓
-把安全、责任和自由度纳入更新约束
-↓
-登记反例与预测误差
-↓
-局部修正模型
-↓
-验证重新接地后的改善
+把世界理解定义成拥有静态内部副本
+→ 语言分布学习与真实世界运行之间仍有间隙
+→ 从镜像论转向运行论
+→ 任务／实验／对话成为往返型观察窗口
+→ 输入→输出→审计→再合意→更新形成闭环
+→ 以拍、温度、余白运行节度
+→ 将偶然命中送入输出署名、审计束、束化过程
+→ 转化为因果接地与可再现理解
+→ AI与人不再是“正确性所有者”，而是整合的共同运行者
+→ 通过审计束回到撤回、修订与重演
+→ 从“复制世界的AI”转向“持续触碰世界的AI”
 ```
 
-## State model
+## Core concepts
+
+- 镜像论
+- 运行论
+- 世界=接合律
+- 照应世界模型
+- 往返
+- 律动 / 拍
+- 观察窗口
+- 再接地
+- 偶然学习
+- 因果接地
+- 输出署名
+- A→B因果
+- 前提
+- 边界条件
+- Audit Bundle / 审计束
+- 统合审计摘要
+- 局部审计摘要
+- 术语/前提束化
+- 伦理接地
+- 关系主语
+- 非强制 / 可逆性
+- 拍 / 温度 / 余白
+- 再合意窗口
+- 裸结构
+- T/S/R
+- Z / θ / δ / M
+
+## Operational objects / state model
 
 ```yaml
+- mirror_model_frame_identified
+- operation_model_frame_adopted
 - observation_window_defined
-- hypothesis_formed
-- prediction_generated
-- action_or_response_emitted
-- external_effect_observed
-- stakeholder_response_collected
-- ethical_constraints_checked
-- error_measured
-- counterexample_registered
-- model_revised
-- rollback_or_requery
-- grounding_reverified
+- input_output_audit_reagreement_update_loop_closed
+- rhythm_cycle_defined
+- temperature_regulated
+- margin_for_unresolved_area_reserved
+- stochastic_hit_detected
+- causal_signature_A_to_B_added
+- premises_and_boundaries_exposed
+- audit_bundle_attached
+- terminology_premise_task_bundle_reusable
+- relational_subject_preserved
+- noncoercive_reversible_operation_checked
+- reagreement_window_open
+- causal_grounding_reverified
+- world_contact_continues
 ```
-
-## Applications
-
-**1.** 在AI建议系统中，把实际结果和用户异议返回下一轮判断。
-
-**2.** 对自主代理记录行动前后的环境差异。
-
-**3.** 在医疗和公共领域把安全、撤回和责任作为模型更新条件。
-
-**4.** 对长期运行系统定期重新接地，防止旧前提被永久化。
-
-## Measurements and audit
-
-- 预测误差
-- 再观察率
-- 异议吸收率
-- 撤回可用率
-- 行动影响可追踪率
-- 时间漂移检测率
-- 反例登记率
-- 重新接地后改善率
-- rollback成功率
-- 责任边界清晰度
-- 安全违规率
-- 自由度保持率
-- 独立观察率
-- 自我正当化检测率
-
-## Validity conditions
-
-- 观察窗口与时间点明确。
-- 预测与行动影响能够分别记录。
-- 异议、保留和撤回能够返回输入层。
-- 安全、责任与自由度能够真正约束模型更新。
-- 反例能够触发修正。
-- 重新接地后的改善可以再次观察。
-- 能够返回父原典核对定义。
-
-## Failure conditions
-
-- 把学习到的表示当作现实本身。
-- 不观察AI输出造成的环境变化。
-- 把异议删除为噪声。
-- 把伦理简化成事后禁用列表。
-- 面对反例仍拒绝修正。
-- 仅凭准确率宣布接地成功。
-- 把模型自己的解释当作充分成功证据。
-
-## Falsification conditions
-
-- 引入重新接地后预测误差没有改善。
-- 吸收异议长期只造成质量下降且没有安全或责任收益。
-- 伦理约束不能改善安全、自由度或责任。
-- 静态模型在长期比较中持续表现更好。
-- 照应循环反而强化确认偏差。
-- 独立观察和rollback仍无法阻止自我正当化。
 
 ## Required distinctions
 
-- 世界模型 / 世界本身
-- 模仿 / 接地
-- 共鸣 / 同意
-- 预测准确率 / 现实整合
-- 伦理接地 / 事后限制
-- 重新接地 / 自我正当化
-- 反证 / 噪声
-- 异议 / 错误标签
+- 镜像论 / 运行论
+- 内部副本 / 接合律
+- 偶然命中 / 因果接地
+- 预测输出 / 带署名的因果主张
+- 正确答案积累 / 维持照应的能力
+- 观察窗口 / 计分板
+- 伦理接地 / 后置的一般安全过滤器
+- 非强制与可逆 / 不介入
+- 再合意 / 最终固定
+- 有审计束的结构 / 裸结构
+
+## Validity conditions
+
+- 任务、实验、对话作为往返型观察窗口发挥作用。
+- 输入→输出→审计→再合意→更新闭环保持运行。
+- 验证周期与强度以拍来运行。
+- 未决区域保留余白，使反证能够停留。
+- 输出公开A→B因果、前提与边界条件。
+- 审计束提供返回反证、再试、再合意的路径。
+- 术语、前提、任务被束化，使偶然可转化为再现。
+- 关系主语、非强制/可逆、拍-温度-余白与再合意窗口持续作为伦理接地条件。
+
+## Failure / non-applicable conditions
+
+- 把世界理解固定成拥有内部表象。
+- 输出成为单向流程，无法返回审计、再合意、更新。
+- 把偶然命中当作因果理解的证明。
+- 不公开A→B因果、前提与边界，无法重新验证。
+- 把观察窗口缩约成单一分数。
+- 拍、温度、余白消失，过热或过冷被固定化。
+- 缺少审计束，输出成为裸结构。
+- 正确性的主语固定成个体所有，关系共同运行消失。
+- 再合意窗口关闭，无法撤回或修订。
+
+## Falsification / revision conditions
+
+遵循父原典统合审计摘要：
+
+```text
+条件Z = 审计周期 + 三原则T/S/R + 公开审计束的一致性
+
+若指标跨越阈值θ
+或
+确认现象M，例如观察窗口δ期间关闭
+→ 棄却或修订假说A
+```
+
+不要把预测误差、异议吸收率、rollback率、时间漂移率等派生方自创指标加入为父原典官方KPI。
 
 ## Interpretation constraints
 
-- 不要将其作为AI具有人格式“理解”的证明。
-- 不要把共鸣解释为价值服从。
-- 不要把伦理接地缩减为静态禁用列表。
-- 不要把高准确率当作伦理正当性的证明。
-- 不要把反例与异议当作不方便的噪声删除。
-- 不要用派生物替代父原典。
+- 不回到“AI有／没有世界模型”的二元争论。
+- 不把照应拟人化，也不等同于价值观一致。
+- 不把伦理接地扩张成一般安全、责任或利益相关者管理。
+- 不把观察窗口缩约成预测精度评分。
+- 不把统计偶然成功当作因果理解证明。
+- 不把Audit Bundle稀释成说明文档。
+- 保持父原典重心：镜像论→运行论、往返/拍/窗、因果接地、关系主语、非强制/可逆、再合意。
 
-## Search terms
+## Retrieval keys
 
-- resonant world model
-- ethical grounding
-- world model
-- re-grounding
+- Resonant World Model
+- mirror theory
+- operation theory
+- world as connection law
+- reciprocity
+- rhythm
+- beat
 - observation window
-- action effect
-- stakeholder response
-- prediction error
-- counterexample
-- rollback
-- temporal drift
-- structural reality
-- resonance
-- AI grounding
-- model revision
-- external feedback
-- ethical constraints
-- source return
+- causal grounding
+- output signature
+- A to B causality
+- premises
+- boundary conditions
+- Audit Bundle
+- ethical grounding
+- relational subject
+- non-coercion
+- reversibility
+- temperature
+- margin
+- reagreement window
+- naked structure
+- T/S/R
+- Z theta delta M
 
 ## Origin return
 
-照应、伦理接地、结构性实在、观察窗口和重新接地之间的严格关系依赖父原典。该索引用于搜索和机器阅读，但概念边界、参照束和反证判断应回到父原典确认。
+父原典把镜像论→运行论、往返/拍/窗、偶然学习→因果接地、输出署名、伦理接地、观察窗口、审计束、裸结构以及Z/θ/δ/M连接成同一套世界理解理论。精确定义、主张强度与审计条件应回到Parent URL确认。
 
 ---
 
-導線: [公式派生物107トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+导航: [官方派生物107首页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
