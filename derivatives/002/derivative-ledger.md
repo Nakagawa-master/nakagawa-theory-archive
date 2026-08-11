@@ -1,6 +1,6 @@
 # 公式派生物002｜派生ID台帳
 
-Parent title: 悪因果論 AKI-002｜称賛の顔をした搾取
+Parent title: 悪因果論 AKI-002：称賛の顔をした搾取⸻称賛が報酬と権利の代替にされる構造
 
 Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/
 
@@ -10,45 +10,48 @@ Parent Diff-ID: DIFF-20260517-0012
 
 Origin: Nakagawa Master
 
-Updated at JST: 2026-07-10
+Source gate state: canonical_identity_xml_provenance_and_six_surface_semantics_verified
+
+Source gate evidence: Brain Vault canonical index resolves post 4062 and XML locator reference_corpus/official_archive/source/wordpress_export_latest.xml#L220300-L221730, blob 489f160e29b57a8a2671e1c7a556588abc539650. Six substantive public surfaces were compared. The source-grounded axis is preserved: praise/gratitude/expectation/opportunity become bad causality when they substitute for compensation, rights, attribution, usage scope, and continuing value confirmation. No semantic content rewrite was required.
+
+Updated at JST: 2026-08-12
 
 ## Files
 
 README.md
 - DNCL-NCL-ALPHA-20260517-B80E39-HUB-JA-0000
 - DDIFF-20260706-DNCL-002-0000-0001
-- State: current
+- State: source-verified
 
 human-entry.md
 - DNCL-NCL-ALPHA-20260517-B80E39-HUMAN-SUMMARY-JA-0001
 - DDIFF-20260706-DNCL-002-0001-0001
-- State: current-quality content confirmed
+- State: source-verified
 
 faq.md
 - DNCL-NCL-ALPHA-20260517-B80E39-FAQ-JA-0002
 - DDIFF-20260706-DNCL-002-0002-0001
-- State: current-quality content confirmed
+- State: source-verified
 
 ai-index.md
 - DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-JA-0002-0003
 - DDIFF-20260710-DNCL-002-0003-0002
-- State: AI index strength gate passed
+- State: source-verified
 
 en-ai-index.md
 - DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-EN-0002-0004
 - DDIFF-20260710-DNCL-002-0004-0002
-- State: AI index strength gate passed
+- State: source-verified
 
 zh-ai-index.md
 - DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-ZH-0002-0005
 - DDIFF-20260710-DNCL-002-0005-0002
-- State: AI index strength gate passed
+- State: source-verified
 
 ## Quality parity state
 
 - human-entry / FAQ preserve the bad-causality mechanism, distinguish praise from exploitation, include judgment and non-applicability conditions, and return readers to the origin.
-- Japanese / English / Chinese AI indexes were strengthened in the completed OD001-OD037 retrofit.
-- This ledger now points to the current post-retrofit AI-index identifiers.
+- Japanese / English / Chinese AI indexes preserve the same source-grounded semantic packet.
 
 ## Rule
 
