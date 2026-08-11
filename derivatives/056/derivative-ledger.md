@@ -64,6 +64,15 @@ origin: Nakagawa Master
 - official-derivatives-map registration: PASS
 - parent-origin live backlink: OWNER_CONFIRMED_VISIBLE
 
+## Semantic fidelity revalidation — 2026-08-12
+- result: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
+- canonical_post_id: 248
+- canonical_index: reference_corpus/official_archive/generated/canonical_index_0201_0250.jsonl
+- canonical_xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+- source_supported_kernel: PQ-5、D0〜D5、SQSにより問いを情報取得ではなく関係・因果・制度・起源の設計として扱う
+- six_surface_comparison: PASS
+- ja_en_zh_equivalence: PASS
+
 ## 原典回帰
 
 本派生物は検索・理解・接続面であり、親原典の代替ではない。PQ-5、D0〜D5、SQS、Inquiry Canvas、監査、反証、起源宣言は親原典へ戻って確認する。
