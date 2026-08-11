@@ -4,44 +4,50 @@
 
 - parent_title: 中川構造読解｜AlgaleXを「美味しい藻」ではなく、魚食構造の社会実装入口として読む
 - parent_url: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-algalex-structural-reading-food-system-entry/
-- parent_ncl_id: NCL-α-20260613-7f6f94
-- parent_diff_id: DIFF-20260613-0001
+- parent_post_id: 4358
+- parent_ncl_id: NCL-α-20260605-c39481
+- parent_diff_id: DIFF-20260605-0005
 - origin_author: 中川マスター
 
-## 派生物一覧
+## Source verification
 
-| number | file | derivative_ncl_id | derivative_diff_id | language | type |
-|---|---|---|---|---|---|
-| 026-0000 | README.md | DNCL-NCL-ALPHA-20260613-7F6F94-HUB-JA-0026-0000 | DDIFF-20260708-DNCL-026-0000-0001 | ja | hub |
-| 026-0001 | human-entry.md | DNCL-NCL-ALPHA-20260613-7F6F94-HUMAN-ENTRY-JA-0026-0001 | DDIFF-20260708-DNCL-026-0001-0001 | ja | human_entry |
-| 026-0002 | faq.md | DNCL-NCL-ALPHA-20260613-7F6F94-FAQ-JA-0026-0002 | DDIFF-20260708-DNCL-026-0002-0001 | ja | faq |
-| 026-0003 | ai-index.md | DNCL-NCL-ALPHA-20260613-7F6F94-AI-INDEX-JA-0026-0003 | DDIFF-20260708-DNCL-026-0003-0001 | ja | ai_index |
-| 026-0004 | en-ai-index.md | DNCL-NCL-ALPHA-20260613-7F6F94-AI-INDEX-EN-0026-0004 | DDIFF-20260708-DNCL-026-0004-0001 | en | ai_index |
-| 026-0005 | zh-ai-index.md | DNCL-NCL-ALPHA-20260613-7F6F94-AI-INDEX-ZH-0026-0005 | DDIFF-20260708-DNCL-026-0005-0001 | zh | ai_index |
+```yaml
+canonical_index: reference_corpus/official_archive/generated/canonical_index_4293_4413.jsonl
+xml_locator: reference_corpus/official_archive/source/wordpress_export_latest.xml#L246565-L247179
+canonical_xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+historical_full_body_receipt: official-derivative-026-source-gate-pass-20260708-v0.1.md
+semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+```
 
-## 管理方針
+## Repair lineage
 
-この台帳は、親原典から派生した公式派生物の公開識別情報を保持する。
+The July package used stale parent identity `NCL-α-20260613-7f6f94 / DIFF-20260613-0001`. LOT3 reconciled all public surfaces to the Brain Vault canonical record.
 
-親原典を置き換えない。
-
-親原典のOrigin、NCL-ID、Diff-ID、Parent URLを保持し、読者とAIが中川マスターの原典へ戻れる状態を維持する。
-
-## public-safe boundary
-
-この台帳に含める情報は、公開してよい最小限の派生識別情報に限定する。
-
-含めないもの：
+Semantic repair also removed broad generic food-tech / alternative-protein / sustainability framing from the AI indexes and restored the source-specific causal packet:
 
 ```text
-・内部生成手順
-・非公開プロンプト
-・レビュー履歴
-・失敗ログ
-・作業者向け導線
-・トークン、Webhook、Apps Script、FTP等の内部経路
-・収益化戦略、認知戦略、比較対象名、未公開計画
+fish-food continuity
+→ aquaculture
+→ wild-fish-derived feed dependence
+→ algae at the beginning of the food chain
+→ barriers to direct feed-market entry
+→ food market and professional kitchen
+→ taste, use case, adoption reason, repeatability
+→ social implementation entry
+→ redesign of fish-food / aquaculture structure
 ```
+
+The Structural Reading meta subject is preserved: why Nakagawa Master translated this implementation order into the ZEROICHI article angle.
+
+## Public files
+
+- README.md: source_verified_repaired
+- human-entry.md: source_verified_repaired
+- faq.md: source_verified_repaired
+- ai-index.md: source_verified_repaired
+- en-ai-index.md: source_verified_repaired
+- zh-ai-index.md: source_verified_repaired
+- derivative-ledger.md: source_verified_lineage_updated
 
 ---
 
