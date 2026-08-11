@@ -86,6 +86,23 @@ origin: Nakagawa Master
 
 親原典側の公式派生物リンク集は、Nakagawa Masterが現行live表示を確認したため、直接確認不能を理由にした保留を解除しCOMPLETEとした。
 
+## Semantic fidelity revalidation — LOT3 2026-08-12
+
+```yaml
+result: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
+canonical_parent_post_id: 255
+canonical_parent_ncl_id: NCL-α-20251102-54994e
+canonical_parent_diff_id: DIFF-20251102-0001
+canonical_index: reference_corpus/official_archive/generated/canonical_index_0251_0300.jsonl
+xml_locator: reference_corpus/official_archive/source/wordpress_export_latest.xml#L67305-L67584
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+source_supported_kernel:
+  - R_Value_R_Price_ROB_CL_API_and_metric_system_design_the_market_image_of_connection_reward_society
+six_surface_comparison: COMPLETE
+translation_equivalence: PASS
+content_rewrite_required: false
+```
+
 ## 完了判定
 
 OD058は、7面、ID・来歴、公開索引、private map、親原典側live backlink、原典回帰を満たし、COMPLETEである。
