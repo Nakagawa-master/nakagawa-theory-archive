@@ -51,6 +51,16 @@ origin_return_present: true
 internal_operations_excluded: true
 ```
 
+## Semantic fidelity revalidation — 2026-08-12
+- result: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
+- canonical_post_id: 217
+- canonical_index: reference_corpus/official_archive/generated/canonical_index_0201_0250.jsonl
+- canonical_xml_locator: reference_corpus/official_archive/source/wordpress_export_latest.xml#L65536-L65763
+- canonical_xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+- source_supported_kernel: 信頼資本を個人の型、組織評価、社会制度へ展開し営業を制度化する
+- six_surface_comparison: PASS
+- ja_en_zh_equivalence: PASS
+
 ---
 
 導線: [051トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
