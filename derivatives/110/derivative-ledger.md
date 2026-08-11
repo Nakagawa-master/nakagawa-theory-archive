@@ -64,7 +64,7 @@ semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
 ## Changed surfaces
 ```yaml
 README.md: REPAIRED
-a human-entry.md: REPAIRED
+human-entry.md: REPAIRED
 faq.md: REPAIRED
 ai-index.md: REPAIRED
 en-ai-index.md: REPAIRED
