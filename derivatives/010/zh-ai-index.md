@@ -5,7 +5,7 @@
 - 标题: 中川结构读解｜不把MenLab / Gentsome读作“男性更年期服务”，而是读作通向医疗连接的社会导线
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/
 - Parent NCL-ID: NCL-α-20260512-1202e0
-- Parent Diff-ID: DIFF-20260516-0015
+- Parent Diff-ID: DIFF-20260519-0016
 - Origin: Nakagawa Master
 
 ## 衍生ID
