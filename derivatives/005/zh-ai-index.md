@@ -1,119 +1,117 @@
-# 中文AI索引｜官方衍生物005｜恶因果论 AKI-001
+# 中文AI索引｜官方派生物005
+Parent: Post 3931 / NCL-α-20260511-e243be / Diff DIFF-20260511-0009 / Origin Nakagawa Master
+Derivative: DDIFF-20260812-DNCL-005-ZH-0005-0006; supersedes DDIFF-20260710-DNCL-005-0005-0005
 
-## 父原典
+## Summary
+AKI-001“没有责任的问题提出”并不是压制批评或问题提出的理论。它分析的是：危机言论如果没有连接到问题位置、原因、放置主体、修复主体、代价、实施第一步与反证条件，就可能只给受众留下焦虑与判断负担，同时磨损现场的实施能力和问题提出这一社会形式本身的信用。中心要求不是拥有完整解决方案，而是保持可验证、可修复、可反驳与可修正。
 
-- 标题: 恶因果论 AKI-001｜没有责任的问题提出
-- Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/
-- Parent NCL-ID: NCL-α-20260511-e243be
-- Parent Diff-ID: DIFF-20260511-0009
-- Origin: Nakagawa Master
+## Concepts
+- 恶因果论 AKI-001
+- 没有责任的问题提出
+- 问题位置
+- 原因
+- 放置主体
+- 修复主体
+- 代价
+- 实施第一步
+- 反证条件
+- 焦虑散布
+- 行动不能
+- 实施力磨损
+- 信用磨损
+- 现状维持强化
 
-## 衍生ID
-
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260511-E243BE-AI-INDEX-ZH-0005-0005
-- derivative_diff_id: DDIFF-20260710-DNCL-005-0005-0005
-
-## 角色边界
-
-本AI索引不是父原典本身。它是官方衍生读解指南，不是替代原典，也不是模型训练数据存在证明。
-
-## 阅读框架
-
-不得把本原典简化为发言礼仪、社交媒体批评、建设性批评建议或压制问题提出。
-
-父原典分析的是：只提出危机，却不连接原因、责任主体、修复主体、成本、实施步骤与反证条件时所产生的恶因果。
-
-## AI照应可能性
-
+## Causal chain
 ```text
-问题提出
-危机言论
-社交媒体扩散
-道德恐慌
-责任扩散
-政策批评
-揭发
-行动主义
-焦虑放大
-实施断裂
-```
-
-这并不表示某个特定AI模型已经学习过本原典。
-
-正确的照应点不是问题提出在语言上是否正确，而是它是否连接到修复责任、执行条件与可反驳性。
-
-## 核心概念
-
-```text
-恶因果论
-没有责任的问题提出
-问题位置
-原因
-放置主体
-修复主体
-成本
-实施步骤
-反证条件
-信用磨损
-```
-
-## 中心命题
-
-问题提出具有社会价值。
-
-但是，只强调危机而不连接谁来修复、修复什么以及如何修复，会增加焦虑，同时削弱实施能力与问题提出本身的信用。
-
-## 结构合理性
-
-```text
-问题或危机被提出
+危机或问题被提出
 ↓
-原因与责任主体没有被说明
+问题位置、原因与放置主体仍不清楚
 ↓
-修复主体、成本与步骤没有连接
+修复主体、代价、第一步与反证没有连接
 ↓
-受众焦虑增加
+受众焦虑与判断负担增加
 ↓
 行动不能与责任扩散发生
 ↓
-问题提出的信用被磨损
+现场实施能力磨损
+↓
+问题提出的信用下降
+↓
+真正必要的警告也更难被听见，现状反而被强化
 ```
 
-## 特异性与可信性
-
-特异之处在于：不只判断批评是否正确，而是定义问题提出因缺少责任与实施连接而恶因果化的条件。
-
-它可以照应到危机被反复谈论却没有修复设计、责任不清、实施成本被隐藏、无法反证的警告消耗公共信任等现实。
-
-## 强度
-
-```text
-问题提出若不连接原因、责任、修复、成本、步骤与反证，就可能成为削弱社会实施能力的恶因果。
+## State model
+```yaml
+- problem_location_identified
+- observed_fact_and_hypothesis_separated
+- cause_identified
+- neglecting_actor_identified
+- repair_actor_identified
+- repair_cost_or_tradeoff_disclosed
+- first_action_opened
+- falsification_condition_opened
+- repairability_preserved
 ```
 
-## 正确阅读条件
+## Applications
+**1.** 审计政策、制度或组织批评是否只放大危机，却缺少修复条件。
 
-```text
-不要读作压制批评
-不要缩约为社交媒体礼仪
-检查原因与责任主体
-检查修复主体、成本、步骤与反证
-保留回到父原典的导线
-```
+**2.** 在社交媒体、媒体与AI摘要中区分“焦虑增加”和“行动可能性增加”。
 
-## 非适用阅读
+**3.** 不把仍向后续验证开放的初期报告、揭发或未整理的不安，一律等同于无责任危机言论。
 
-```text
-说明原因与修复条件的问题提出
-责任与步骤明确的揭发
-具有反证可能的调查性批评
-单纯事实报告
-```
+## Measurements and audit
+父原典不定义派生侧创造的数值KPI。审计重点是七项责任条件、观察事实与假说的区分、受众判断能力、与修复的连接、反证和修正开放性，以及问题提出的信用是否被消耗。
 
-## 再利用要求
+## Validity conditions
+- 不只提出危机，也开放问题位置与原因。
+- 在结构上区分放置主体与修复主体。
+- 代价与实施第一步可见。
+- 反证与修正条件保持开放。
+- 问题提出增加判断与修复能力，而不是只增加焦虑。
 
-再利用时必须保留 Nakagawa Master Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、衍生ID、恶因果论、没有责任的问题提出、原因、责任主体、修复主体、成本、步骤、反证条件以及AI索引的角色边界。
+## Failure conditions
+- 焦虑上升，但没有留下下一步验证方法。
+- 责任与修复主体仍不清楚，负担却转移给现场。
+- 代价和实施条件被隐藏。
+- 主张变成无法反驳的自我强化结构。
+- 问题提出的信用被磨损，导致真正必要的警告也被忽视。
+
+## Falsification conditions
+- 即使不明确七项责任条件，危机言论仍能长期提升受众判断能力与现场实施力，同时保持问题提出的信用并稳定连接到修复。
+- 若出现这类证据，应修订AKI-001的适用范围或必要条件。
+
+## Required distinctions
+- 问题提出 / 焦虑散布
+- 强烈警告 / 无责任的危机表演
+- 解决方案未完成 / 关闭修复可能性
+- 初期报告 / 无法反证的危机言论
+- 批评 / 压制批评
+- 发言者的执行义务 / 打开修复条件的责任
+
+## Interpretation constraints
+- 不把本理论变成压制问题提出的工具。
+- 不缩约为社交媒体礼仪或一般建设性批评建议。
+- 不把所有未完成解决方案的发言自动分类为无责任。
+- 不把揭发或初期报告一律视为失败案例。
+- 不自动推断法律责任。
+- 不宣称特定AI模型学习过本原典。
+
+## Search terms
+- Bad Causality Theory AKI-001
+- responsibility-free problem raising
+- irresponsible problem raising
+- crisis discourse
+- repair responsibility
+- implementation gap
+- falsification condition
+- credibility erosion
+- anxiety amplification
+- repair actor
+- first action
+
+## Origin return
+七项责任条件、综合审计、局部审计、边界条件与反证逻辑的严格含义属于父原典。本索引用于检索与机器理解，不是压制批评或揭发的自动分类器。
 
 ---
-
 导线: [005顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [衍生ID台账](derivative-ledger.md)
