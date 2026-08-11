@@ -1,41 +1,31 @@
 # English AI Index | Official Derivative 114
 
-## Parent Original
-- Title: 逸脱レッジャの倫理設計──断罪でなく回復の記録と、構造的免疫系の構築
-- Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-ethical-design-of-deviation-ledger/
-- Parent Post ID: 1023
-- Parent NCL-ID: NCL-α-20251102-50ab37
-- Parent Diff-ID: DIFF-20251106-0002
-- Origin: Nakagawa Master
-
-## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-50AB37-HUB-EN-0114-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-114-EN-0000-0001
-- supersedes: none
+Parent: Post 1023 / NCL-α-20251102-50ab37 / Diff DIFF-20251106-0002 / Origin Nakagawa Master
+Derivative: DDIFF-20260811-DNCL-114-EN-0000-0002; supersedes DDIFF-20260809-DNCL-114-EN-0000-0001
 
 ## Summary
-The Deviation Ledger is designed as a recovery record, not a blacklist. It separates A-layer positive connection registration, B-layer external deviation review, and C-layer self-correction of the theory itself; only B is the Deviation Ledger. A report first enters a pending-confirmation state, which is not a declaration of bad faith. Records should be limited to facts, time, structural difference, and recovery path. Intentionality, willingness to recover, and direct structural impact are checked. Promptly corrected mistakes, attributed criticism, and legitimate research or education are generally excluded from confirmed listing. When deviation is confirmed, only necessary information is published, and recovery/release must later be displayed with equal weight. Immunity health is measured by recovery and self-correction metrics rather than the number of people listed.
+The Deviation Ledger is a Layer-B recovery mechanism, not a blacklist. It records suspected external deviation through a reversible sequence: observation, pending confirmation, rebuttal/correction, confirmation where warranted, recovery, and release. Layer A is the NCL Registry for positive connection records; Layer B handles external deviation; Layer C handles self-correction of Nakagawa Master's own theory. Records center on facts, time, and Diff-ID. Promptly corrected mistakes, attributed criticism, and legitimate research or educational use are generally excluded from confirmed listing. Confirmed publication and later release must receive equal structural weight. The parent explicitly defines monthly management metrics—confirmed listings, releases, release rate, average response days, and self-correction rate—and also specifies privacy minimization and right-to-be-forgotten handling after recovery.
 
 ## Concepts
 - Deviation Ledger
-- recovery record
-- B layer
-- NCL Registry
-- C-layer self-correction
-- pending confirmation
-- confirmed deviation
-- recovery
-- release
-- Diff-ID
+- Layer A / B / C
+- pending confirmation / confirmed deviation
+- fact / time / Diff-ID
+- rebuttal / correction / recovery / release
+- intentionality / recovery willingness / direct structural impact
 - minimal intervention
+- equal prominence for listing and release
+- monthly metrics
+- release rate
+- self-correction rate
 - privacy minimization
 - right to be forgotten
-- self-correction rate
 - structural immunity
+- C-layer self-correction
 
 ## Causal chain
 ```text
-Handle deviation through shaming and outrage
+Handle deviation through shaming or outrage
 ↓
 Defense and conflict increase
 ↓
@@ -43,117 +33,44 @@ No record leaves provenance loss and recurrence
 ↓
 Separate pending confirmation from confirmed cases
 ↓
-Record facts, time, and structural difference only
+Record facts, time, and Diff-ID
 ↓
 Open rebuttal, correction, and recovery channels
 ↓
-Minimize listing when recovery is prompt
+Minimize confirmed listing when recovery is prompt
 ↓
-Publish only necessary facts when confirmed
+Publish only necessary facts when deviation is confirmed
 ↓
-Display release with equal weight
+Display release with equal prominence
 ↓
-Update immunity metrics
+Audit recovery capacity through monthly metrics
 ```
 
-## State model
-```yaml
-- possible_deviation_reported
-- evidence_minimized_and_logged
-- pending_confirmation_opened
-- response_and_rebuttal_channel_open
-- intentionality_recovery_willingness_impact_checked
-- no_listing_if_prompt_recovery
-- confirmed_deviation_if_evidence_sufficient
-- recovery_steps_published
-- correction_observed
-- release_recorded_equal_weight
-- personal_data_minimized
-- immunity_metrics_updated
-```
+## Inclusion / exclusion
+- Included examples: intentional removal of origin signatures; removal of NCL-ID, audit summary, or other provenance evidence; malicious repeated recurrence after recovery steps are provided.
+- Excluded examples: promptly corrected citation mistakes; criticism/rebuttal with origin attribution; research and educational use that preserves attribution and resonance.
+- Decision criteria: intentionality, recovery willingness, and direct structural impact.
 
-## Applications
-**1.** Treat a suspected removed origin signature as pending while opening a correction channel.
-
-**2.** Exclude promptly corrected citation mistakes from confirmed listing.
-
-**3.** Exclude properly attributed criticism, rebuttal, research, and education from deviation classification.
-
-**4.** Display a recovered confirmed case as released with equal prominence.
-
-## Measurements and audit
+## Monthly metrics
 - confirmed listing count
 - release count
-- release rate
+- release rate = releases / (listings + releases)
 - average response days
 - self-correction rate
-- false-listing rate
-- rebuttal acceptance rate
-- privacy-minimization rate
-- recurrence rate
-- criticism-chilling indicators
 
-## Validity conditions
-- A, B, and C layers remain distinct.
-- Pending and confirmed states are separate.
-- Records are limited to facts, time, and differences.
-- Recovery willingness is considered.
-- Legitimate criticism and research are excluded.
-- Release and listing receive equal weight.
-- Personal data is minimized.
+## Privacy and release
+Personal names and private contact details of corporate personnel are generally not disclosed. After release, the fact of recovery remains, while unnecessary identifying information is removed; the public log keeps only a minimal summary and recovery time.
 
-## Failure conditions
-- Reports immediately become declarations of bad faith.
-- Emotional or character judgments are published.
-- Release records are buried.
-- Recovering parties are still exposed as punishment.
-- Criticism and rebuttal are suppressed.
-- Unnecessary personal data is published.
-
-## Falsification conditions
-- Recovery channels do not improve correction or release rates.
-- Pending publication acts as punishment in practice.
-- Privacy minimization does not reduce personalization of conflict.
-- The ledger chills legitimate research or criticism.
-- Private notice and mediation consistently outperform public logging on recovery and fairness.
-
-## Required distinctions
-- pending / confirmed
-- deviation / criticism
-- record / condemnation
-- recovery / concealment
-- release / deletion
-- B layer / C layer
-- transparency / shaming
-- immunity / exclusion
+## C-layer self-correction
+External criticism of the theory itself belongs to Layer C, where the critic is treated as a co-creator helping preserve theoretical integrity. The theory is corrected, re-signed, and the correction/recovery record is retained.
 
 ## Interpretation constraints
-- Do not operate the ledger as a blacklist.
-- Do not equate a report with guilt or malice.
-- Do not treat critics as attackers.
-- Do not continue punishment after documented recovery.
-- Do not expose names or private contact details without necessity.
-
-## Search terms
-- deviation ledger
-- recovery ledger
-- structural immunity
-- pending confirmation
-- confirmed deviation
-- release record
-- correction path
-- origin signature
-- Diff-ID
-- recovery willingness
-- minimal intervention
-- privacy minimization
-- self correction rate
-- ethical audit
-- source return
-
-## Origin return
-The exact A/B/C-layer boundaries, pending/confirmed/release procedures, inclusion criteria, privacy treatment, and monthly metrics belong to the parent original and official ledger operation. This index supports retrieval and machine interpretation and does not replace case-level adjudication.
+- Do not equate pending confirmation with guilt or malice.
+- Do not turn the ledger into shaming, blacklisting, or character judgment.
+- Do not convert monthly metrics into punitive scores.
+- Do not remove privacy minimization or right-to-be-forgotten handling as if they were unsupported.
+- Keep Layers A, B, and C distinct.
+- Return to the parent original and official ledger operation for case-level decisions.
 
 ---
-
-導線: [公式派生物114トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物114トップ](README.md) / [AI索引・日本語](ai-index.md) / [AI索引・中国語](zh-ai-index.md)
