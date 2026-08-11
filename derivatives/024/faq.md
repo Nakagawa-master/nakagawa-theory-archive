@@ -4,8 +4,9 @@
 
 - タイトル: 中川構造読解｜バリュートープを「無人レンタカー」ではなく、時間自由度を再実装する移動供給OSとして読む
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-valuetope-structural-reading-mobility-supply-os/
-- Parent NCL-ID: NCL-α-20260615-893cda
-- Parent Diff-ID: DIFF-20260615-0002
+- Parent Post ID: 4413
+- Parent NCL-ID: NCL-α-20260611-2a95fb
+- Parent Diff-ID: DIFF-20260618-0005
 
 ## 起源署名
 
@@ -13,8 +14,9 @@
 
 ## 派生ID
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260615-893CDA-FAQ-JA-0024-0002
-- derivative_diff_id: DDIFF-20260708-DNCL-024-0002-0001
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260611-2A95FB-FAQ-JA-0024-0002
+- derivative_diff_id: DDIFF-20260811-DNCL-024-0002-0002
+- supersedes: DDIFF-20260708-DNCL-024-0002-0001
 
 # 第1層：初心者向けFAQ
 
