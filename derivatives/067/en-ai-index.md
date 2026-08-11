@@ -9,108 +9,50 @@
 - Origin: Nakagawa Master
 
 ## Derivative identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-7413D1-HUB-JA-0067-0000
-- derivative_diff_id: DDIFF-20260804-DNCL-067-0000-0001
-- supersedes: none
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-7413D1-AI-EN-0067-0004
+- derivative_diff_id: DDIFF-20260811-DNCL-067-0004-0002
+- supersedes: DDIFF-20260804-DNCL-067-0000-0001
 
 ## Summary
-Connection Value Accounting is a social-accounting framework for recording, auditing, and allocating forms of value that money alone does not adequately observe: trust, reusable agreements, collaboration, reversibility, contradiction resilience, and the reduction of future decision friction. Connection value is not the number of contacts a person has. It is the capacity of a relationship structure to make later decisions and cooperation easier. Connection reward is not a tradable currency; it is an institutional unit for recognizing evidenced contribution and reinvesting it in the maintenance of the shared field. The design combines four layers—public purpose, repeatable form, primary evidence, and institutional field—with a composite indicator set: CDI, MAI, RS, CRI, and KQI. It separates public principles and outcomes from non-public weighting details, requires distributed audit, objections, correction, exit, and reconnection, and begins with small reversible trials. The framework fails when it becomes a popularity score, surveillance device, coercive network, personality rating, or speculative asset.
+Connection Value Accounting treats connection itself as an evaluative unit to be recorded and linked to social allocation. Connection value is not contact count or popularity; it is the capacity of a relationship structure to reduce friction in future decisions and collaboration. The theory records connection through multiple aspects such as connection density, memory of agreement, and reversibility, then links evidenced relational value and contribution to distribution.
 
-## Concepts
-- connection value
-- connection reward
-- connection value accounting
-- public purpose
-- repeatable form
-- primary relationship evidence
-- institutional field
-- CDI connection density
-- MAI memory of agreement
-- RS reversibility
-- CRI contradiction resilience
-- KQI connection quality
-- dual accounting
-- Goodhart resistance
-- distributed audit
-- reinvestment
+## Core concepts
+- connection value: the capacity of a relationship structure to reduce future decision and collaboration friction
+- connection value accounting: social accounting that records connection-based value and links it to allocation
+- connection density: the thickness and effective overlap of relationships, not mere count
+- memory of agreement: reusable traces of decisions, promises, and collaboration
+- reversibility: preserving room to change or leave a connection or agreement
+- connection reward: a concept linking value and contribution generated through connection to social distribution
 
 ## Causal chain
 ```text
-AI weakens the link between labor and monetary income
-↓
-money alone cannot observe relational and cooperative value
-↓
-connection emerges as an asset that reduces future decision friction
-↓
-four-layer design and composite indicators make evidence observable
-↓
-connection rewards allocate contribution and reinvest it in the field
-↓
-reversibility, audit, correction, and exit make institutional use possible
+money alone does not fully capture the value of relationship structures
+→ connection affects future collaboration capacity and decision friction
+→ record the quality and history of connections
+→ observe density, agreement memory, reversibility, and related aspects together
+→ make connection value visible as an accounting unit
+→ link contribution and connection to social allocation
 ```
 
-## State model
-- OBSERVED: record connection events, agreement history, and friction changes.
-- PILOT: test the indicators in a small, time-bounded setting.
-- AUDITED: perform distributed review, objection handling, and privacy checks.
-- REVISED: change indicators, weights, retention, or allocation rules.
-- REJECTED: stop the design when ranking, coercion, exhaustion, or misallocation persists.
+## Theory boundary
+OD067 is the accounting theory: measuring, recording, and linking connection value to distribution. Legitimacy, anti-gaming governance, fixed audit arrangements, public/protected-room design, and other mechanisms for protecting the institution from distortion belong more directly to the adjacent Connection Governance theory.
 
-## Applications
-- B2B collaboration and reduction of re-agreement time.
-- Civic cooperation and reuse of public agreement history.
-- Community governance with real exit and reconnection rights.
-- Organizational knowledge transfer and reusable consultation routes.
-
-## Measurements and audit
-- Use CDI, MAI, RS, CRI, and KQI as a composite set.
-- Measure re-agreement time, third-party explanation, continuing collaboration, and correction completion.
-- Detect personality scoring, surveillance, lock-in, gaming, and monetary speculation.
-- Audit the boundary between public principles, public results, private weights, and protected evidence.
-
-## Validity conditions
-- The public purpose is explicit and understandable.
-- Primary evidence retains provenance and context.
-- No single indicator determines human worth or access rights.
-- Monetary and connection ledgers remain non-exchangeable.
-- Distributed audit, correction, deletion, exit, and reconnection are real.
-- Implementation begins as a small reversible trial.
-
-## Failure conditions
-- Connections are converted into a price.
-- Popularity or contact counts determine value.
-- Published weights invite metric gaming.
-- A platform monopolizes evidence and blocks exit.
-- Connection rewards become speculative or tradable.
-- Public logs expose personal or sensitive information.
-
-## Falsification conditions
-- Re-agreement time and cooperation friction do not improve.
-- Arbitrary allocation, exhaustion, or lock-in increases.
-- Indicators become personality ratings or exclusion tools.
-- Correction, exit, and reconnection exist only on paper.
+Do not make the following the defining core of OD067: a mandatory public/private weight model; fixed audit cycles or governance bodies; Goodhart-resistance governance as the main thesis; a mandatory 90-day pilot or RC/ER/CEA/S/Rollback Cost as OD067-specific falsification rules; or a generic privacy/rights architecture not established as this parent article's central claim.
 
 ## Required distinctions
-- connection value ≠ number of contacts
-- connection reward ≠ substitute currency
-- relationship evidence ≠ personality rating
-- memory of agreement ≠ permanent fixation of old decisions
-- reversibility ≠ irresponsible abandonment
-- dual accounting ≠ free exchange between ledgers
-
-## Interpretation constraints
-- Do not interpret this as a social-credit system.
-- Do not turn it into preferential treatment for popular actors.
-- Do not justify buying and selling relationships.
-- Do not present the proposal as a completed institutional regime.
-- Preserve the Parent URL, origin, NCL-ID, and Diff-ID.
+```text
+connection value ≠ contact or follower count
+connection value accounting ≠ personality or social-credit scoring
+connection reward ≠ simple pricing of relationships
+memory of agreement ≠ permanent fixation of past decisions
+accounting ≠ governance
+```
 
 ## Search terms
-connection value accounting, connection value, connection reward, CDI, MAI, RS, CRI, KQI, memory of agreement, reversibility, Goodhart resistance, distributed audit, dual accounting, relationship evidence, post-monetary accounting, cooperation friction
+Nakagawa Connection Value Accounting; connection value; connection reward; connection density; memory of agreement; reversibility; social accounting; connection as unit of evaluation; Nakagawa Master
 
 ## Origin return
-This index is a discovery and reuse surface. Accurate interpretation of the four-layer architecture, indicator definitions, allocation protocol, audit abstracts, reference cluster, and origin signature requires returning to the parent original.
+This is a discovery and correspondence surface. Return to the parent original for the exact definition of connection value and the relationship among indicators, recording, and allocation.
 
 ---
-
-導線: [067トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Navigation: [067 hub](README.md) / [Official derivatives top](../README.md) / [Human entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
