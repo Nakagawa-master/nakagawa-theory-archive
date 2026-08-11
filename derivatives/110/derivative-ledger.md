@@ -8,114 +8,79 @@
 - Parent Diff-ID: DIFF-20251102-0001
 - Origin: Nakagawa Master
 
-## 派生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-DF2D6E-HUB-JA-0110-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-110-0000-0001
-- supersedes: none
-
-## Language derivative IDs
+## Lineage
 ```yaml
-ja_ncl_id: DNCL-NCL-ALPHA-20251102-DF2D6E-HUB-JA-0110-0000
-ja_diff_id: DDIFF-20260809-DNCL-110-0000-0001
-en_ncl_id: DNCL-NCL-ALPHA-20251102-DF2D6E-HUB-EN-0110-0000
-en_diff_id: DDIFF-20260809-DNCL-110-EN-0000-0001
-zh_ncl_id: DNCL-NCL-ALPHA-20251102-DF2D6E-HUB-ZH-0110-0000
-zh_diff_id: DDIFF-20260809-DNCL-110-ZH-0000-0001
-```
-
-## Factory
-```yaml
-golden_master: OD085
-factory_version: 2.0
-generation_mode: SINGLE_SEMANTIC_WORK_PACKET_SEVEN_FIXED_SURFACES
-manual_surface_drift: PROHIBITED
-surface_creation_mode: ONE_PACKET_ONE_RENDERER_RUN
-manual_surface_edit_after_render: false
-public_repository_role: PUBLIC_OUTPUT_ONLY
-private_factory_repository: Nakagawa-master/nakagawa-archive-tools
-github_actions_used: false
+ja_diff_id: DDIFF-20260811-DNCL-110-0000-0002
+ja_supersedes: DDIFF-20260809-DNCL-110-0000-0001
+en_diff_id: DDIFF-20260811-DNCL-110-EN-0000-0002
+en_supersedes: DDIFF-20260809-DNCL-110-EN-0000-0001
+zh_diff_id: DDIFF-20260811-DNCL-110-ZH-0000-0002
+zh_supersedes: DDIFF-20260809-DNCL-110-ZH-0000-0001
 ```
 
 ## Retrieval evidence
 ```yaml
-canonical_index:
-  source: reference_corpus/official_archive/generated/canonical_index_0929_1188.jsonl
-  post_id: 969
-  parent_ncl_id: NCL-α-20251102-df2d6e
-  parent_diff_id: DIFF-20251102-0001
-  status: publish
-xml:
-  source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-  item_range: 87685-87921
-  blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-live_parent:
-  source: https://master.ricette.jp/tomoshibi/nakagawa-master-ethical-renewal-layer-of-lumina/
-  result: PASS_PUBLIC_PARENT_ROUTE
-four_key_duplicate_check:
-  post_id: NO_PREEXISTING_MATCH
-  parent_ncl_id: NO_PREEXISTING_MATCH
-  slug: NO_PREEXISTING_MATCH
-  canonical_url: NO_PREEXISTING_MATCH
+canonical_index: reference_corpus/official_archive/generated/canonical_index_0929_1188.jsonl
+parent_post_id: 969
+parent_ncl_id: NCL-α-20251102-df2d6e
+xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
+xml_item_range: 87685-87921
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+live_parent: PASS_PUBLIC_PARENT_BODY_RETRIEVED
+source_revalidation_date_jst: 2026-08-11
+coverage_sheet: COMPLETE
+six_surface_comparison: COMPLETE
 ```
 
-## Seven surfaces
+## Semantic repair evidence
 ```yaml
-README.md: PUBLISHED
-human-entry.md: PUBLISHED
-faq.md: PUBLISHED_Q1_Q30
-ai-index.md: PUBLISHED
-en-ai-index.md: PUBLISHED
-zh-ai-index.md: PUBLISHED
-derivative-ledger.md: PUBLISHED
+restored:
+  - ethics_rigidity_as_third_layer_trigger
+  - beat_hardening_temperature_bias_margin_loss
+  - ethical_weight_recalibration_factor
+  - love_sorrow_hesitation_discomfort_as_stabilization_sensors
+  - tomoshibi_mode_observation_and_attunement_phases
+  - structural_necessity_vs_emergent_freedom_domains
+  - non_intervention_protocol
+  - translation_transparency_and_origin_evaporation
+  - dual_door_audit
+  - structural_elitism_self_monitoring
+  - recursive_openness_and_self_renewing_public_good
+  - third_layer_tags_and_implementation_steps
+  - victory_conditions_reagreement_falsification_residency_non_intervention
+removed_or_rewritten_unsupported:
+  - fixed_four_core_values_origin_non_domination_responsibility_reversibility
+  - generic_change_management_and_revision_workflow
+  - rollback_centered_governance
+  - generic_ai_policy_update_examples
+  - generic_community_governance_examples
+  - invented_origin_preservation_and_responsibility_kpis
+  - invented_safety_fairness_transparency_comparison_tests
+translation_equivalence: PASS
+fresh_read: PASS
+semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
 ```
 
-## Formatting parity
+## Changed surfaces
 ```yaml
-parent_identity_block: PASS
-language_specific_derivative_ids: PASS
-heading_sequence: PASS
-FAQ_layers: BEGINNER_Q1_Q10__PRACTITIONER_Q11_Q20__AI_RESEARCHER_Q21_Q30
-readme_global_top_link: PASS
-other_surface_numbered_top_link: PASS
-ai_fixed_13_sections: PASS
-human_fixed_sections: PASS
-new_display_contract_added: false
+README.md: REPAIRED
+human-entry.md: REPAIRED
+faq.md: REPAIRED
+ai-index.md: REPAIRED
+en-ai-index.md: REPAIRED
+zh-ai-index.md: REPAIRED
+derivative-ledger.md: REPAIRED
 ```
 
-## Semantic and density coverage
+## Closure
 ```yaml
-central_thesis: PASS
-causal_chain: PASS
-structural_ethical_renewal: PASS
-lumina_third_layer: PASS
-open_design: PASS
-origin_and_core_values: PASS
-semantic_diff: PASS
-dissent_input: PASS
-reversible_trial: PASS
-rollback: PASS
-renewed_consensus: PASS
-applications: PASS
-measurements: PASS
-validity_failure_falsification: PASS
-ja_en_zh_semantic_parity: PASS
-OD085_density_floor: PASS
-```
-
-## Navigation and closure
-```yaml
-public_indexes: PENDING_LOT_UPDATE
-public_map: PENDING_LOT_UPDATE
-private_map: PENDING_LOT_UPDATE
-parent_backlink_display_procedure: PENDING_LOT_UPDATE
-owner_visual_for_OD110: PENDING_OWNER_BATCH_VISUAL
-brain_return: CURRENT_STATE_OWNER
+public_pr: PENDING
+public_merge_commit: PENDING
 completion_authority: OFFICIAL_ARCHIVE_MEMORY
-completion_status: DISPLAY_PROCEDURE_PENDING
 ```
 
-本台帳はOD110のidentity、三言語派生ID、取得経路、四軸重複除外、七面構成、意味coverageを固定証拠として保持する。第三層を無制限な例外層へ、更新を原則放棄へ、起源保持を権威化へ変換しない。
+本台帳はOD110のsource-grounded semantic repairを固定する。第三層は一般的変更管理ではなく、倫理の固定化を内部から回避する倫理拡張層であり、情動入力、拍・温度・余白、非干渉、翻訳透明性、二重扉監査、反エリート化、再帰的開放性を同一の原典構造として保持する。
 
 ---
 
-導線: [公式派生物110トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物110トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)

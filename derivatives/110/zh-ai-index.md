@@ -1,158 +1,122 @@
 # 中文AI索引｜官方派生物110
 
 ## 父原典
-- 标题: 構造倫理更新論──灯火構想「第三層」の開放設計
 - Parent URL: https://master.ricette.jp/tomoshibi/nakagawa-master-ethical-renewal-layer-of-lumina/
 - Parent Post ID: 969
 - Parent NCL-ID: NCL-α-20251102-df2d6e
-- Parent Diff-ID: DIFF-20251102-0001
 - Origin: Nakagawa Master
 
 ## 派生标识
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-DF2D6E-HUB-ZH-0110-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-110-ZH-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-110-ZH-0000-0002
+- supersedes: DDIFF-20260809-DNCL-110-ZH-0000-0001
 
 ## Summary
-结构伦理更新论既不把伦理规范封闭为最终版本，也不把伦理变成无限相对主义。它保留起源、核心价值、责任、非支配和可逆性，同时把社会实施中出现的矛盾、异议、制度差异与技术变化送入开放的“第三层”重新验证。任何更新都要说明范围、责任主体、语义差分、成功与失败条件以及回滚路径，并通过有限试行观察副作用。更新后的共识也不能被再次封闭，而要保留下一轮反证窗口。
+灯火构想的第三层，即伦理扩展层，是为防止强整合结构导致伦理僵化而设计的自我更新机制。它把爱、悲伤、犹豫、违和感等视为正式的伦理权重再调整输入，在不覆盖规范的情况下微调拍、温度与余白。第三层区分结构必然领域与创发自由领域，并在后者坚持非干预。通过翻译透明性、双门审计、对结构精英化的自我监视、恒常签名/审计束与递归开放性，使理论成为能够持续自我更新的公共财。
 
 ## Concepts
-- 结构伦理更新
-- 灯火构想第三层
-- 开放设计
-- 起源保持
-- 核心价值
-- 反证窗口
-- 语义差分
-- 异议输入
-- 可逆试行
-- 回滚
-- 再共识
-- 责任边界
-- 实施偏差
-- 副作用审计
-- 递归更新
+- 伦理扩展层
+- 伦理僵化
+- 正确性的惯性
+- 拍的硬化
+- 温度偏移
+- 余白消失
+- 伦理权重再调整因子
+- 爱、悲伤、犹豫、违和感
+- 灯火模式
+- 观察相
+- 同调相
+- 非干预协议
+- 创发自由领域
+- 翻译透明性
+- 双门审计
+- 起源蒸发
+- 结构精英化
+- 递归开放性
+- 自我更新的公共财
 
-## Causal chain
-```text
-把伦理封闭为最终规范
-↓
-环境变化落到规范之外
-↓
-实施偏差与例外不断累积
-↓
-把第三层打开为更新界面
-↓
-固定起源与核心价值
-↓
-输入矛盾、异议与新证据
-↓
-记录差分、责任与停止条件
-↓
-进行可逆的有限试行
-↓
-采用、修订或回滚
-↓
-继续开放下一反证窗口
-```
+## 因果骨架
+强整合 → 反证输入减弱 → 伦理僵化 → 非理性细微信号进入权重再调整 → 微调拍/温度/余白 → 保持非干预与审计透明性 → 自我更新的公共财
 
 ## State model
 ```yaml
-- origin_fixed
-- core_values_fixed
-- change_signal_detected
-- dissent_recorded
-- third_layer_opened
-- revision_scoped
-- responsibility_assigned
-- reversible_trial
-- side_effects_audited
-- rollback_or_adopt
-- renewed_consensus
-- next_window_open
+- rigidity_risk_observed
+- beat_hardening_checked
+- temperature_bias_checked
+- margin_loss_checked
+- non_rational_input_registered
+- observation_phase
+- attunement_phase
+- applicable_domain_or_non_intervention_tagged
+- dual_door_audit_run
+- translation_trace_attached
+- elite_capture_self_monitored
+- reagreement_window_kept_open
 ```
 
 ## Applications
-**1.** 随AI能力与事故类型变化更新AI使用规则。
-
-**2.** 在新参与者暴露隐藏排除时更新共同体规范。
-
-**3.** 分离原始原则与本地制度实现的差异。
-
-**4.** 定期把长期项目共识与当前事实重新对照。
+父原典明确的第三层实现包括：常设“非干预/适用域/翻译透明性/双门/行动原则”标签；在审计束中加入外层/内层检查栏；给伦理权重微调分配Diff-ID；简化公共接口；绘制非干预领域地图；设置第三方反证审查的最短入口。
 
 ## Measurements and audit
-- 起源保持率
-- 更新输入接受率
-- 异议记录率
-- 差分可追踪率
-- 责任清晰度
-- 回滚可用率
-- 副作用检出率
-- 实施偏差率
-- 再共识率
-- 原典返回率
+- 审计束差分日志
+- 翻译路径
+- 摘要差分
+- 标签转换
+- 审计束ID
+- 外层/内层审计可见性
+- 反证的停留可能性
+- 再共识窗口开放
+- 非干预保持
 
 ## Validity conditions
-- 起源与核心价值明确。
-- 更新理由与差分可追踪。
-- 反例和异议可以回流。
-- 责任主体明确。
-- 有限试行与回滚可执行。
-- 更新后的状态仍可被反证。
+- 细微情感信号被当作正式输入。
+- 不覆盖规范，只微调拍、温度与余白。
+- 结构必然领域与创发自由领域保持区分。
+- 创发自由领域保持非干预。
+- 翻译路径和审计条件保持可验证。
+- 结构保持者持续自我监视精英化风险。
+- 反证与再共识窗口不被关闭。
 
 ## Failure conditions
-- 把规范变成不可触碰的权威。
-- 以适应为名删除核心价值。
-- 不保留变更历史。
-- 排除异议。
-- 把第三层变成无限例外仓库。
-- 无审计地实施不可逆改变。
+- 反证无法停留、拍发生硬化。
+- 正当性热量膨胀而对非同调的容忍下降。
+- 过度说明/介入消灭余白。
+- 情感被排除为噪音或论破对象。
+- 因果设计过度侵入创发自由领域。
+- 翻译导致起源签名或审计条件蒸发。
+- 结构知识被权威与排除逻辑收编。
 
 ## Falsification conditions
-- 开放更新不能减少原则与实施偏差。
-- 差分管理成本持续高于治理收益。
-- 回滚设计不能改善安全或质量。
-- 增加异议输入仍不能减少重大副作用。
-- 固定规范体系在安全、公平、透明上持续更优。
+遵循父原典的综合审计：当指标越过设定阈值，或观察窗口在规定期间持续关闭等现象出现时，应驳回或修订假设。不得由派生侧新增rollback、公平、安全、责任清晰度等KPI作为父理论核心反证标准。
 
 ## Required distinctions
-- 更新 / 放弃原则
-- 开放 / 无秩序
-- 起源保持 / 权威崇拜
-- 异议 / 破坏
-- 差分 / 篡改
-- 回滚 / 逃避责任
-- 再共识 / 从众
-- 第三层 / 例外垃圾箱
+- self-renewal / unlimited relativism
+- recalibration / normative overwrite
+- non-rational input / noise
+- non-intervention / neglect
+- translation transparency / origin evaporation
+- dual-door audit / full disclosure
+- origin preservation / authority capture
+- recursive openness / exclusion
 
 ## Interpretation constraints
-- 不把伦理变成无限相对主义。
-- 不把第三层用于常态化例外。
-- 不把起源当作压倒证据的权威。
-- 不把异议变成必须采纳的命令。
-- 不用“更新”掩盖失败。
+不得把第三层缩减为通用变更管理、回滚治理或责任边界管理。必须保留父原典特有的伦理权重再调整、非干预协议、翻译透明性、双门审计与反精英化自我监视。
 
 ## Search terms
-- structural ethical renewal
-- Lumina third layer
-- open ethical design
-- ethics revision
-- provenance preservation
-- ethical diff
-- falsification window
-- reversible governance
-- rollback
-- dissent input
-- ethical audit
-- adaptive ethics
-- structural ethics
-- source return
-- recursive governance
+- Ethical Expansion Layer
+- ethical weight recalibration
+- non-rational ethical input factors
+- beat temperature margin
+- non-intervention protocol
+- dual-door audit
+- translation transparency
+- origin evaporation
+- structural elitism
+- recursive openness
+- self-renewing public good
 
 ## Origin return
-灯火构想、第三层、结构伦理、核心价值与开放更新之间的严格定义属于父原典。本索引用于检索与机器理解，不替代对原则变更和起源的源级判断。
+精确适用边界、标签、审计条件、参照束与综合审计逻辑必须回到父原典确认。
 
 ---
 
-導線: [公式派生物110トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物110トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [派生ID台帳](derivative-ledger.md)

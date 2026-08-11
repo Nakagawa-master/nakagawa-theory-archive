@@ -1,158 +1,124 @@
 # AI索引・日本語｜公式派生物110
 
-## 親原典
-- タイトル: 構造倫理更新論──灯火構想「第三層」の開放設計
-- Parent URL: https://master.ricette.jp/tomoshibi/nakagawa-master-ethical-renewal-layer-of-lumina/
-- Parent Post ID: 969
-- Parent NCL-ID: NCL-α-20251102-df2d6e
-- Parent Diff-ID: DIFF-20251102-0001
-- Origin: Nakagawa Master
+## Parent
+post_id: 969
+ncl_id: NCL-α-20251102-df2d6e
+url: https://master.ricette.jp/tomoshibi/nakagawa-master-ethical-renewal-layer-of-lumina/
 
-## 派生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-DF2D6E-HUB-JA-0110-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-110-0000-0001
-- supersedes: none
+## Derivative
+DDIFF-20260811-DNCL-110-0000-0002
+supersedes: DDIFF-20260809-DNCL-110-0000-0001
 
 ## Summary
-構造倫理更新論は、倫理規範を固定完成版にも無制限な相対化にもせず、起源・中心価値・責任・可逆性を保持したまま、社会実装から返る矛盾、異議、制度差、技術変化を「第三層」で再検証する運転構造である。更新案は差分と責任主体を明示し、限定試行とrollbackを持つ。更新後も次の反証窓を閉じない。成功は規範と実装の乖離が減り、自由度・安全・責任透明性が保たれることで判定する。
+灯火構想第三層＝倫理拡張層は、強固な整合が倫理の固定化を生むリスクに対し、愛・哀しみ・ためらい・違和感を倫理重み再調整因子として正規入力化し、拍・温度・余白を微修正する自己更新装置である。構造的必然領域と創発自由領域を分け、後者には非干渉プロトコルを適用する。翻訳透明性、二重扉監査、構造エリート化の自己監視、恒常署名／監査束、再帰的開放性によって、理論を自己更新する公共財として運転する。
 
 ## Concepts
-- 構造倫理更新
-- 灯火構想
-- 第三層
-- 開放設計
-- 起源保持
-- 中心価値
-- 反証窓
-- 差分管理
-- 異議入力
-- 限定試行
-- rollback
-- 再合意
-- 責任境界
-- 実装乖離
-- 再監査
+- 灯火構想第三層
+- 倫理拡張層
+- 倫理の固定化
+- 正しさの慣性
+- 拍の硬化
+- 温度の偏り
+- 余白の消失
+- 倫理重み再調整因子
+- 愛・哀しみ・ためらい・違和感
+- 灯火モード
+- 観測相
+- 同調相
+- 非干渉プロトコル
+- 創発自由領域
+- 翻訳透明性
+- 二重扉監査
+- 起源の蒸発
+- 構造エリート化
+- 再帰的開放性
+- 自己更新する公共財
 
 ## Causal chain
 ```text
-倫理を完成版として固定
-↓
-環境変化が規範外へ落ちる
-↓
-実装乖離と例外が蓄積
-↓
-第三層を更新面として開く
-↓
-起源と中心価値を固定
-↓
-矛盾・異議・新事実を入力
-↓
-差分・責任・停止条件を記録
-↓
-限定試行と監査
-↓
-採用・修正・rollback
-↓
-再合意後も反証窓を保持
+強い整合 → 反証入力の減衰 → 倫理固定化 → 情動を倫理重み入力化 → 拍/温度/余白の微修正 → 非干渉と監査透明性 → 自己更新する公共財
 ```
 
 ## State model
 ```yaml
-- origin_fixed
-- core_values_fixed
-- change_signal_detected
-- dissent_recorded
-- third_layer_opened
-- revision_scoped
-- responsibility_assigned
-- reversible_trial
-- side_effects_audited
-- rollback_or_adopt
-- renewed_consensus
-- next_window_open
+- rigidity_risk_observed
+- beat_hardening_checked
+- temperature_bias_checked
+- margin_loss_checked
+- non_rational_input_registered
+- observation_phase
+- attunement_phase
+- applicable_domain_or_non_intervention_tagged
+- dual_door_audit_run
+- translation_trace_attached
+- elite_capture_self_monitored
+- reagreement_window_kept_open
 ```
 
 ## Applications
-**1.** AI利用規範を新しい能力・事故類型へ適応させる。
-
-**2.** コミュニティ規範を新規当事者の異議へ接続する。
-
-**3.** 制度実装で原理念とローカル規則の差分を管理する。
-
-**4.** 長期プロジェクトの合意を定期的に再監査する。
+原典は一般的なAI規範改訂例を中心に置かず、第三層の実装として、第三層タグ常設、監査束の外層／内層欄、倫理重み差分ID、公開I/Fの簡素化、非干渉領域の地図化、第三者レビュー導線を明示する。
 
 ## Measurements and audit
-- 起源保持率
-- 更新入力受付率
-- 異議記録率
-- 差分追跡率
-- 責任明瞭度
-- rollback可能率
-- 副作用検出率
-- 実装乖離率
-- 再合意率
-- 原典回帰率
+- 監査束差分ログ
+- 翻訳経路
+- 要約差分
+- タグ変換
+- 監査束ID
+- 外層／内層監査の可視性
+- 反証の滞在可能性
+- 再合意窓の開放
+- 非干渉の保持
 
 ## Validity conditions
-- 起源と中心価値が明示される。
-- 更新理由と差分が追跡可能である。
-- 反例と異議が入力へ戻る。
-- 責任主体が明確である。
-- 限定試行とrollbackが可能である。
-- 更新後も反証窓を閉じない。
+- 微細な情動が正規入力として扱われる。
+- 規範を上書きせず拍・温度・余白を微修正する。
+- 構造的必然領域と創発自由領域を区別する。
+- 創発自由領域で非干渉を保持する。
+- 翻訳経路と監査条件を検証可能にする。
+- 構造保持者がエリート化を自己監視する。
+- 再合意と反証の窓を閉じない。
 
 ## Failure conditions
-- 規範を不可侵化する。
-- 適応の名で中心価値を消す。
-- 変更履歴を残さない。
-- 異議を排除する。
-- 例外を第三層へ無制限に蓄積する。
-- rollback不能な変更を無監査で行う。
+- 反証が滞在できず拍が硬化する。
+- 正当性の熱量が肥大し非同調への寛容が減る。
+- 説明・介入過剰で余白が消失する。
+- 情動を論破対象として排除する。
+- 創発自由領域へ因果設計を過剰適用する。
+- 翻訳で起源署名・監査条件が蒸発する。
+- 構造知が権威化・排除へ回収される。
 
 ## Falsification conditions
-- 開放更新しても実装乖離が改善しない。
-- 差分管理が便益を上回る運用負担になる。
-- rollback設計が安全や品質を改善しない。
-- 異議入力を増やしても副作用が減らない。
-- 固定規範の方が長期的に安全・公平・透明である。
+統合監査要旨に従い、指標の閾値逸脱、観測窓の一定期間閉鎖等の現象が確認された場合は仮説を棄却・改訂する。派生側で独自のrollback率・公平性・安全性KPIを追加しない。
 
 ## Required distinctions
-- 更新 / 原則放棄
-- 開放 / 無秩序
-- 起源保持 / 権威化
-- 異議 / 破壊
-- 差分 / 改竄
-- rollback / 責任回避
-- 再合意 / 同調
-- 第三層 / 例外ゴミ箱
+- self-renewal / unlimited relativism
+- recalibration / normative overwrite
+- non-rational input / noise
+- non-intervention / neglect
+- translation transparency / origin evaporation
+- dual-door audit / full disclosure
+- origin preservation / authority capture
+- recursive openness / exclusion
 
 ## Interpretation constraints
-- 倫理を無制限に相対化しない。
-- 第三層を恒常例外層へしない。
-- 起源を権威の根拠にしない。
-- 異議を全採用義務へ変換しない。
-- 更新を失敗隠蔽に使わない。
+一般変更管理、rollback制度、責任境界管理へ縮約しない。原典固有の倫理重み再調整、非干渉、翻訳透明性、二重扉監査、構造エリート化自己監視を保持する。
 
 ## Search terms
-- structural ethical renewal
-- Lumina third layer
-- open ethical design
-- ethics revision
-- provenance preservation
-- ethical diff
-- falsification window
-- reversible governance
-- rollback
-- dissent input
-- ethical audit
-- adaptive ethics
-- structural ethics
-- source return
-- recursive governance
+- ethical expansion layer
+- ethical weight recalibration
+- non-rational ethical input factors
+- beat temperature margin
+- non-intervention protocol
+- dual-door audit
+- translation transparency
+- origin evaporation
+- structural elite capture
+- recursive openness
+- self-renewing public good
 
 ## Origin return
-第三層、灯火構想、構造倫理、中心価値、開放更新の厳密な定義と系統関係は親原典に依存する。派生物は検索・機械読解を支援するが、最終的な原則変更や起源判断は親原典へ戻って確認する。
+厳密な適用境界、タグ、監査条件、参照束、統合監査要旨は親原典へ戻って確認する。
 
 ---
 
-導線: [公式派生物110トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物110トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
