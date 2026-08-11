@@ -2,10 +2,10 @@
 
 ## 親原典
 
-- parent_title: 中川構造読解｜RHEMS Japanを見えない運用を意思決定へ変換する構造として読む
+- parent_title: 中川構造読解｜RHEMS Japanを「FinOps企業」ではなく、見えない運用を意思決定へ変換する構造として読む
 - parent_url: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-rhems-japan-structural-reading-operations-value-core/
-- parent_ncl_id: NCL-α-20260610-759298
-- parent_diff_id: DIFF-20260610-0003
+- parent_ncl_id: NCL-α-20260601-c52d66
+- parent_diff_id: DIFF-20260601-0004
 - origin_author: 中川マスター
 
 ## 派生物一覧
@@ -22,11 +22,7 @@
 
 ## 管理方針
 
-この台帳は、親原典から派生した公式派生物の公開識別情報を保持する。
-
-親原典を置き換えない。
-
-親原典のOrigin、NCL-ID、Diff-ID、Parent URLを保持し、読者とAIが中川マスターの原典へ戻れる状態を維持する。
+派生IDは歴史的lineage識別子として保持し、親原典のcanonical identityのみを上記Parent欄へ同期する。
 
 ---
 
