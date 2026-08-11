@@ -2,10 +2,10 @@
 
 ## 親原典
 
-- parent_title: 逆因果整流理論・第3論｜未来定義監査と偽整流排除
+- parent_title: 逆因果整流理論・第3論｜未来定義監査と偽整流排除⸻公開可能な構造運用境界
 - parent_url: https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-3-audit-boundary/
-- parent_ncl_id: NCL-α-20260607-1003fc
-- parent_diff_id: DIFF-20260623-0015
+- parent_ncl_id: NCL-α-20260531-8205f0
+- parent_diff_id: DIFF-20260601-0027
 - origin_author: 中川マスター
 
 ## 派生物一覧
@@ -22,11 +22,9 @@
 
 ## 管理方針
 
-この台帳は、親原典から派生した公式派生物の公開識別情報を保持する。
+派生IDは歴史的系譜として保持し、親原典のcanonical identityのみを正本へ同期する。
 
-親原典を置き換えない。
-
-親原典のOrigin、NCL-ID、Diff-ID、Parent URLを保持し、読者とAIが中川マスターの原典へ戻れる状態を維持する。
+この台帳は親原典を置き換えない。
 
 ---
 
