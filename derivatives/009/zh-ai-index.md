@@ -2,10 +2,10 @@
 
 ## 父原典
 
-- 标题: 未来定义验证型努力论 第2论｜没有未来定义验证的努力强制与责任转移装置化
+- 标题: 未来定义验证型努力论・第2论｜没有未来定义验证的努力强制恶因果结构──为什么上位者缺乏成立检验会转化为现场疲惫
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-bad-causality/
-- Parent NCL-ID: NCL-α-20260614-77a781
-- Parent Diff-ID: DIFF-20260623-0003
+- Parent NCL-ID: NCL-α-20260608-5a13aa
+- Parent Diff-ID: DIFF-20260612-0018
 - Origin: Nakagawa Master
 
 ## 衍生ID
