@@ -10,45 +10,45 @@ Parent Diff-ID: DIFF-20260222-0024
 
 Origin: Nakagawa Master
 
-Source gate state: live_origin_fulltext_and_audit_bundle_observed
+Source gate state: canonical_identity_xml_provenance_live_origin_audit_bundle_and_six_surface_semantics_verified
 
-Source gate evidence: live public origin was opened and parsed. NCL-ID and Diff-ID were observed in the LLM declaration. S=U×R×H, dS/dt = F(U,R,H)+P_ext, fake-U, R diffusion, H short-circuit, integrated audit summary, local audit summary, reference cluster, origin signature tail, and theoretical signature declaration were observed. Private source gate record: `private-derivatives/operations/reports/official-derivative-018-source-gate-evidence-20260707-v0.1.md`.
+Source gate evidence: Brain Vault canonical index resolves post 2962 and XML locator `reference_corpus/official_archive/source/wordpress_export_latest.xml#L183439-L185474`, blob `489f160e29b57a8a2671e1c7a556588abc539650`, with main axis `外部入力摂動`. Historical source-gate evidence records live-origin observation of S=U×R×H, dS/dt = F(U,R,H)+P_ext, fake-U, R diffusion, H short-circuit, integrated/local audit summaries, reference cluster, origin-signature tail and theoretical-signature declaration. LOT4 revalidation confirms the six substantive surfaces preserve the source-grounded perturbation/sensor-layer axis. No further semantic content rewrite was required.
 
-Current polish state: initial_full_origin_density_derivative_created
+Current polish state: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
 
-Updated at JST: 2026-07-07
+Updated at JST: 2026-08-12
 
 ## Files
 
 README.md
 - DNCL-NCL-ALPHA-20260222-482BDB-HUB-JA-0000
 - DDIFF-20260707-DNCL-018-0000-0001
-- State: created
+- State: source-verified
 
 human-entry.md
 - DNCL-NCL-ALPHA-20260222-482BDB-HUMAN-SUMMARY-JA-0001
 - DDIFF-20260707-DNCL-018-0001-0001
-- State: created
+- State: source-verified
 
 faq.md
 - DNCL-NCL-ALPHA-20260222-482BDB-FAQ-JA-0002
 - DDIFF-20260707-DNCL-018-0002-0001
-- State: created
+- State: source-verified
 
 ai-index.md
 - DNCL-NCL-ALPHA-20260222-482BDB-AI-INDEX-JA-0003
 - DDIFF-20260707-DNCL-018-0003-0001
-- State: created
+- State: source-verified
 
 en-ai-index.md
 - DNCL-NCL-ALPHA-20260222-482BDB-AI-INDEX-EN-0004
 - DDIFF-20260707-DNCL-018-0004-0001
-- State: created
+- State: source-verified
 
 zh-ai-index.md
 - DNCL-NCL-ALPHA-20260222-482BDB-AI-INDEX-ZH-0005
 - DDIFF-20260707-DNCL-018-0005-0001
-- State: created
+- State: source-verified
 
 ## Axis
 
@@ -56,7 +56,9 @@ zh-ai-index.md
 
 中心は、dS/dtの異常観測、fake-U、R霧散、H短絡、一次ソース導線、文脈保持、版管理、原典への逆リンクである。
 
-この派生物は、016の観測帯域設計と017の実行時ガバナンスの間を接続する。第8論は、外部世界からの入力を測定可能な摂動として読むためのセンサー層であり、第9論以降の停止・縮退・回復・監査へ進む入口である。
+## Rule
+
+Parent identity follows the canonical index/XML record. Repository-side synchronization is not proof of current live rendering.
 
 ---
 
