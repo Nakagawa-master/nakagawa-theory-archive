@@ -12,18 +12,18 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-EBF072-HUB-JA-0106-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-106-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-106-0000-0002
+- supersedes: DDIFF-20260809-DNCL-106-0000-0001
 
 ## Language derivative IDs
 
 ```yaml
 ja_ncl_id: DNCL-NCL-ALPHA-20251102-EBF072-HUB-JA-0106-0000
-ja_diff_id: DDIFF-20260809-DNCL-106-0000-0001
+ja_diff_id: DDIFF-20260811-DNCL-106-0000-0002
 en_ncl_id: DNCL-NCL-ALPHA-20251102-EBF072-HUB-EN-0106-0000
-en_diff_id: DDIFF-20260809-DNCL-106-EN-0000-0001
+en_diff_id: DDIFF-20260811-DNCL-106-EN-0000-0002
 zh_ncl_id: DNCL-NCL-ALPHA-20251102-EBF072-HUB-ZH-0106-0000
-zh_diff_id: DDIFF-20260809-DNCL-106-ZH-0000-0001
+zh_diff_id: DDIFF-20260811-DNCL-106-ZH-0000-0002
 ```
 
 ## Factory
@@ -31,12 +31,9 @@ zh_diff_id: DDIFF-20260809-DNCL-106-ZH-0000-0001
 ```yaml
 golden_master: OD085
 factory_version: 2.0
-generation_mode: SINGLE_SEMANTIC_WORK_PACKET_SEVEN_FIXED_SURFACES
-manual_surface_drift: PROHIBITED
-surface_creation_mode: ONE_PACKET_ONE_RENDERER_RUN
-manual_surface_edit_after_render: false
-public_repository_role: PUBLIC_OUTPUT_ONLY
-private_factory_repository: Nakagawa-master/nakagawa-archive-tools
+repair_mode: SOURCE_VERIFIED_SEMANTIC_REGENERATION
+source_first: true
+single_writer_single_cursor: true
 github_actions_used: false
 ```
 
@@ -49,81 +46,95 @@ canonical_index:
   parent_ncl_id: NCL-α-20251102-ebf072
   parent_diff_id: DIFF-20251102-0001
   status: publish
-xml:
-  source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-  item_range: 86808-86989
-  blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-live_parent:
+  xml_item_range: 86808-86989
+  canonical_source_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+verified_xml:
+  path: reference_corpus/official_archive/source/wordpress_export_latest.xml
+  connector_line_range_fetch: EMPTY_BODY_LIMITATION
+public_parent:
   source: https://master.ricette.jp/society/nakagawa-master-recursive-openness-structural-public-good/
-  result: PASS_PUBLIC_PARENT_ROUTE
-four_key_duplicate_check:
-  post_id: NO_PREEXISTING_MATCH
-  parent_ncl_id: NO_PREEXISTING_MATCH
-  slug: NO_PREEXISTING_MATCH
-  canonical_url: NO_PREEXISTING_MATCH
+  direct_open: TIMEOUT
+  indexed_public_page_retrieval: PASS_FULL_PARENT_TEXT_COVERAGE
+source_authority_rule: PUBLIC_PARENT_TEXT_USED__NO_DERIVATIVE_INFERENCE_PROMOTED
+```
+
+## Source coverage
+
+```yaml
+sealing_type_appropriation: SOURCE_EXPLICIT
+collaboration_protection_standardization_as_sealing_path: SOURCE_EXPLICIT
+structural_public_good_as_resonant_field: SOURCE_EXPLICIT
+public_not_equal_free_access: SOURCE_EXPLICIT
+permanent_signature: SOURCE_EXPLICIT
+audit_bundle: SOURCE_EXPLICIT
+glossary_consistency: SOURCE_EXPLICIT
+primary_log_bundle_at_generation: SOURCE_EXPLICIT
+signed_causality_multi_registration: SOURCE_EXPLICIT
+single_node_cutoff_resilience: SOURCE_EXPLICIT
+sealing_trace: SOURCE_EXPLICIT
+contradiction_consumption: SOURCE_EXPLICIT
+recurrence_node: SOURCE_EXPLICIT
+recurrence_activation_three_conditions: SOURCE_EXPLICIT
+third_party_ai_same_skeleton_reconstruction: SOURCE_EXPLICIT
+silence_reconstruction_reagreement: SOURCE_EXPLICIT
+low_temperature_protocol_five_steps: SOURCE_EXPLICIT
+relation_as_subject: SOURCE_EXPLICIT
+publicness_as_symmetry_and_ethical_immunity: SOURCE_EXPLICIT
+integrated_audit_Z_theta_delta_M: SOURCE_EXPLICIT
+noncoercive_reversible_verifiable_minimum_connection_note: SOURCE_EXPLICIT
+generic_open_source_governance: REMOVED_AS_UNSUPPORTED_GENERALIZATION
+generic_anti_dogmatism_thesis: REMOVED_AS_UNSUPPORTED_GENERALIZATION
+derivative_authored_reuse_and_criticism_kpis: REMOVED_AS_UNSUPPORTED_GENERALIZATION
+generic_closed_vs_open_falsification: REMOVED_AS_UNSUPPORTED_GENERALIZATION
+legal_rights_or_ownership_policy_generalization: REMOVED_AS_UNSUPPORTED_GENERALIZATION
 ```
 
 ## Seven surfaces
 
 ```yaml
-README.md: PUBLISHED
-human-entry.md: PUBLISHED
-faq.md: PUBLISHED_Q1_Q30
-ai-index.md: PUBLISHED
-en-ai-index.md: PUBLISHED
-zh-ai-index.md: PUBLISHED
-derivative-ledger.md: PUBLISHED
+README.md: REPAIRED
+human-entry.md: REPAIRED
+faq.md: REPAIRED_Q1_Q30
+ai-index.md: REPAIRED
+en-ai-index.md: REPAIRED
+zh-ai-index.md: REPAIRED
+derivative-ledger.md: UPDATED_LINEAGE_AND_EVIDENCE
 ```
 
-## Formatting parity
+## Semantic fidelity result
 
 ```yaml
-parent_identity_block: PASS
-language_specific_derivative_ids: PASS
-heading_sequence: PASS
-FAQ_layers: BEGINNER_Q1_Q10__PRACTITIONER_Q11_Q20__AI_RESEARCHER_Q21_Q30
-readme_global_top_link: PASS
-other_surface_numbered_top_link: PASS
-ai_fixed_13_sections: PASS
-human_fixed_sections: PASS
-new_display_contract_added: false
-```
-
-## Semantic and density coverage
-
-```yaml
-central_thesis: PASS
-causal_chain: PASS
-recursive_openness: PASS
-structural_public_good: PASS
-origin_preservation: PASS
-permanent_signature: PASS
-semantic_diff: PASS
-audit_bundle: PASS
-falsification_window: PASS
-source_return: PASS
-anti_dogmatism_boundary: PASS
-applications: PASS
-measurements: PASS
-validity_failure_falsification: PASS
+semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+parent_specific_causal_chain: PASS
+parent_specific_value_judgments: PASS
+sealing_type_appropriation_preserved: PASS
+structural_public_good_definition_preserved: PASS
+permanent_signature_audit_bundle_glossary_preserved: PASS
+sealing_trace_and_recurrence_node_preserved: PASS
+low_temperature_protocol_preserved: PASS
+relation_subject_symmetry_preserved: PASS
+parent_falsification_Z_theta_delta_M_preserved: PASS
+generic_open_source_claim_added_as_parent_claim: NO
+generic_anti_dogmatism_claim_added_as_parent_claim: NO
+derivative_authored_generic_measurement_added_as_parent_claim: NO
+generic_legal_policy_added_as_parent_claim: NO
 ja_en_zh_semantic_parity: PASS
-OD085_density_floor: PASS
 ```
+
+## Repair summary
+
+原典本文を正本として再確認し、旧派生の「理論を固定すると権威化する／批判や再利用を開く／差分と反証を管理する」という一般的な知識ガバナンス化を撤去した。原典固有の筋である「封印型奪取 → 構造的公共財 → 出力時の一次ログ・恒常署名・監査束 → 署名付き因果の多点登録 → 封印によるSealing Trace → 再帰ノード → 第三者／AIの同骨格再構成 → 沈黙・再構成・再合意 → 関係を主語にした公的連続性」へ全内容面を戻した。反証は派生側の独自KPIや閉鎖型との一般比較を削除し、原典の統合監査要旨にある条件Z・閾値θ・観測窓δ・現象Mへ統一した。
 
 ## Navigation and closure
 
 ```yaml
-public_indexes: PENDING_LOT_UPDATE
-public_map: PENDING_LOT_UPDATE
-private_map: PENDING_LOT_UPDATE
-parent_backlink_display_procedure: PENDING_LOT_UPDATE
-owner_visual_for_OD106: PENDING_OWNER_BATCH_VISUAL
-brain_return: CURRENT_STATE_OWNER
+public_indexes: URL_UNCHANGED
+public_map: URL_UNCHANGED
+private_map: URL_UNCHANGED
+parent_backlink: URL_UNCHANGED
+brain_return: REQUIRED_AFTER_PUBLIC_MERGE
 completion_authority: OFFICIAL_ARCHIVE_MEMORY
-completion_status: DISPLAY_PROCEDURE_PENDING
 ```
-
-本台帳はOD106のidentity、三言語派生ID、取得経路、四軸重複除外、七面構成、意味coverageを固定証拠として保持する。再帰的開放性を著作権放棄や無秩序な改変許可へ縮約せず、起源保持、差分、反証、再構成、原典回帰を同時に保持する。
 
 ---
 
