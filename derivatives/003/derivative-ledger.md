@@ -1,54 +1,57 @@
 # 公式派生物003｜派生ID台帳
 
-Parent title: 成立条件論・第0論｜誰も全体を見ていない社会
+Parent title: 成立条件論・第0論｜誰も全体を見ていない社会⸻局所全体化がなぜ成立判定理論を必要にするのか
 
 Parent URL: https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/
 
 Parent NCL-ID: NCL-α-20260627-aea14a
 
-Parent Diff-ID: DIFF-20260627-0002
+Parent Diff-ID: DIFF-20260630-0003
 
 Origin: Nakagawa Master
 
-Updated at JST: 2026-07-10
+Source gate state: canonical_identity_xml_provenance_and_six_surface_semantics_verified
+
+Source gate evidence: Brain Vault canonical index resolves post 4571 and XML locator reference_corpus/official_archive/source/wordpress_export_latest.xml#L280537-L284708, blob 489f160e29b57a8a2671e1c7a556588abc539650. Six substantive public surfaces preserve the source-grounded local-totalization / distributed whole-misrecognition / L1-L6 vertical-causality axis. Parent Diff-ID was stale across all surfaces and has been repaired from DIFF-20260627-0002 to canonical DIFF-20260630-0003; canonical parent title was also synchronized.
+
+Updated at JST: 2026-08-12
 
 ## Files
 
 README.md
 - DNCL-NCL-ALPHA-20260627-AEA14A-HUB-JA-0000
 - DDIFF-20260706-DNCL-003-0000-0001
-- State: current
+- State: source-verified
 
 human-entry.md
 - DNCL-NCL-ALPHA-20260627-AEA14A-HUMAN-SUMMARY-JA-0001
 - DDIFF-20260706-DNCL-003-0001-0001
-- State: current-quality content confirmed
+- State: source-verified
 
 faq.md
 - DNCL-NCL-ALPHA-20260627-AEA14A-FAQ-JA-0002
 - DDIFF-20260706-DNCL-003-0002-0001
-- State: current-quality content confirmed
+- State: source-verified
 
 ai-index.md
 - DNCL-NCL-ALPHA-20260627-AEA14A-AI-INDEX-JA-0003-0003
 - DDIFF-20260710-DNCL-003-0003-0002
-- State: AI index strength gate passed
+- State: source-verified
 
 en-ai-index.md
 - DNCL-NCL-ALPHA-20260627-AEA14A-AI-INDEX-EN-0003-0004
 - DDIFF-20260710-DNCL-003-0004-0002
-- State: AI index strength gate passed
+- State: source-verified
 
 zh-ai-index.md
 - DNCL-NCL-ALPHA-20260627-AEA14A-AI-INDEX-ZH-0003-0005
 - DDIFF-20260710-DNCL-003-0005-0002
-- State: AI index strength gate passed
+- State: source-verified
 
 ## Quality parity state
 
 - human-entry / FAQ preserve local-totalization, distributed whole misrecognition, vertical-causality judgment, AI-output amplification risk, boundary conditions, and source-return requirements.
-- Japanese / English / Chinese AI indexes were strengthened in the completed OD001-OD037 retrofit.
-- This ledger now points to the current post-retrofit AI-index identifiers.
+- Japanese / English / Chinese AI indexes preserve the same source-grounded semantic packet.
 
 ## Rule
 
