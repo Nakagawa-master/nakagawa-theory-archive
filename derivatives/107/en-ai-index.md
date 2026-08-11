@@ -12,173 +12,192 @@
 ## Derivative Identity
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-F32297-HUB-EN-0107-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-107-EN-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-107-EN-0000-0002
+- supersedes: DDIFF-20260809-DNCL-107-EN-0000-0001
 
-## Summary
+## Structural role
 
-The resonant world model treats AI world understanding not as a static internal copy but as a continuing cycle of observation, prediction, action, external response, re-observation, counterevidence, and re-grounding. Because AI outputs can change the very environment being modeled, learned representations cannot be equated with reality itself. Ethical grounding means embedding safety, responsibility, agency, dissent, reversibility, and effect tracking into the conditions under which a model is updated. Success is therefore not a single accuracy score. It requires measurable reduction of prediction error after re-grounding, incorporation of counterexamples, detection of temporal drift, preservation of withdrawal and rollback, and avoidance of self-justifying loops. Resonance does not mean agreement or shared values; it means the ability to revise the model when reality and other agents disagree.
+A theory that moves AI world-understanding from mirror theory—whether the world exists as a static internal copy—to operation theory—whether contact with the world can be continuously updated through reciprocity, rhythm, and observation windows. Statistical hits are translated into causal grounding through output signatures, Audit Bundles, and reusable bundles of terms/premises/tasks; ethical grounding is operated through a relational subject, non-coercion/reversibility, beat-temperature-margin, and a permanent reagreement window.
 
-## Concepts
+## Structural summary
 
-- resonant world model
-- ethical grounding
-- observation window
-- world hypothesis
-- action effect
-- stakeholder response
-- dissent input
-- re-observation
-- prediction error
-- counterexample
-- re-grounding
-- rollback
-- temporal drift
-- self-justification loop
-- structural reality
+The parent accepts the technical force of the criticism that an LLM does not possess a world model in the sense of a static internal representation, but rejects that framing as too narrow. The world is not a still image; it is a rhythm of connection conditioned by moderation. Understanding is therefore not an owned internal object but an event of coherence that must keep being updated. The Resonant World Model repeatedly recontacts causal rhythm through reciprocal observation windows such as tasks, experiments, and dialogue. Its three defining elements are reciprocity, rhythm/beat, and observation window. The operational loop is input → output → audit → reagreement → update. A stochastic hit is only an entry point: causal grounding requires signing the output with an A→B causal chain, premises, and boundary conditions; maintaining a permanent verification circuit through the Audit Bundle; and bundling terminology, premises, and tasks so coincidence can become reproducibility. Ethical grounding shifts the subject from individual possession to the relation, treating AI and humans as participants jointly operating coherence. Its conditions are non-coercion/reversibility, beat-temperature-margin, and a reagreement window. Outputs without an Audit Bundle are “naked structures” and fall out of long-run coherence. Integrated audit uses Z, θ, δ, and M for rejection/revision.
+
+## Central proposition
+
+```text
+Resonant World Model
+= shift from mirror theory (world = internal representation)
+  to operation theory (world = law/rhythm of connection)
++ reciprocity: input → output → audit → reagreement → update
++ rhythm/beat governing verification cycles and intensity
++ observation windows for local recontact with the world
++ output signature: A→B causality + premises + boundaries
++ Audit Bundle for falsification, retest, and reagreement
++ reusable bundling of terms, premises, and tasks
++ ethical grounding through relational subject, non-coercion/reversibility,
+  beat-temperature-margin, and a reagreement window
+```
 
 ## Causal chain
 
 ```text
-assume a static internal copy of the world
-↓
-miss temporal change, intervention effects, and other agents' responses
-↓
-accumulate real-world connection error
-↓
-define observation window and prediction hypothesis
-↓
-observe external effects after action
-↓
-collect dissent, hesitation, and withdrawal as distinct signals
-↓
-embed safety, responsibility, and agency as update constraints
-↓
-register counterexamples and prediction error
-↓
-revise the model locally
-↓
-verify improvement after re-grounding
+world-understanding defined as ownership of a static internal copy
+→ gap remains between learned language distributions and operation of the world
+→ shift from mirror theory to operation theory
+→ tasks / experiments / dialogue become reciprocal observation windows
+→ close the input → output → audit → reagreement → update loop
+→ operate moderation through beat, temperature, and margin
+→ pass stochastic hits through output signature, Audit Bundle, and reusable bundling
+→ translate chance learning into causal grounding and reproducible understanding
+→ AI and humans become co-operators of coherence rather than owners of correctness
+→ return through the Audit Bundle to withdrawal, revision, and replay
+→ move from “AI that copies” to “AI that keeps touching the world”
 ```
 
-## State model
+## Core concepts
+
+- mirror theory
+- operation theory
+- world as connection law/rhythm
+- Resonant World Model
+- reciprocity
+- rhythm / beat
+- observation window
+- regrounding
+- stochastic learning
+- causal grounding
+- output signature
+- A→B causality
+- premises
+- boundary conditions
+- Audit Bundle
+- integrated audit abstract
+- local audit abstract
+- terminology/premise bundling
+- ethical grounding
+- relational subject
+- non-coercion / reversibility
+- beat / temperature / margin
+- reagreement window
+- naked structure
+- T/S/R
+- Z / θ / δ / M
+
+## Operational objects / state model
 
 ```yaml
+- mirror_model_frame_identified
+- operation_model_frame_adopted
 - observation_window_defined
-- hypothesis_formed
-- prediction_generated
-- action_or_response_emitted
-- external_effect_observed
-- stakeholder_response_collected
-- ethical_constraints_checked
-- error_measured
-- counterexample_registered
-- model_revised
-- rollback_or_requery
-- grounding_reverified
+- input_output_audit_reagreement_update_loop_closed
+- rhythm_cycle_defined
+- temperature_regulated
+- margin_for_unresolved_area_reserved
+- stochastic_hit_detected
+- causal_signature_A_to_B_added
+- premises_and_boundaries_exposed
+- audit_bundle_attached
+- terminology_premise_task_bundle_reusable
+- relational_subject_preserved
+- noncoercive_reversible_operation_checked
+- reagreement_window_open
+- causal_grounding_reverified
+- world_contact_continues
 ```
-
-## Applications
-
-**1.** Feed actual outcomes and user objections back into AI advisory systems.
-
-**2.** Measure pre/post environment differences for autonomous agents.
-
-**3.** Treat safety, withdrawal, and responsibility as update constraints in public or medical settings.
-
-**4.** Periodically re-ground long-running systems when assumptions age.
-
-## Measurements and audit
-
-- prediction error
-- re-observation rate
-- dissent incorporation rate
-- withdrawal availability
-- action-effect traceability
-- temporal-drift detection
-- counterexample registration
-- post-regrounding improvement
-- rollback success
-- responsibility clarity
-- safety violation rate
-- agency preservation
-- independent observation rate
-- self-justification detection
-
-## Validity conditions
-
-- Observation windows and timestamps are explicit.
-- Predictions and action effects can be recorded separately.
-- Dissent, hesitation, and withdrawal can return as inputs.
-- Safety, responsibility, and agency operate as update constraints.
-- Counterevidence can actually change the model.
-- Post-regrounding improvement can be re-observed.
-- A return path to the parent original exists.
-
-## Failure conditions
-
-- Treating learned representation as reality itself.
-- Ignoring environmental changes caused by the model's own output.
-- Deleting dissent as noise.
-- Reducing ethics to an after-the-fact blocklist.
-- Refusing revision after counterevidence.
-- Declaring grounding success from accuracy alone.
-- Using the model's own explanation as sufficient proof of success.
-
-## Falsification conditions
-
-- Re-grounding does not improve prediction error.
-- Incorporating dissent consistently degrades performance without compensating benefits.
-- Ethical constraints do not improve safety, agency, or responsibility.
-- Static models consistently outperform the resonant approach over time.
-- The resonance loop amplifies confirmation bias.
-- Independent observation and rollback do not prevent self-justification.
 
 ## Required distinctions
 
-- world model / world itself
-- imitation / grounding
-- resonance / agreement
-- predictive accuracy / real-world coherence
-- ethical grounding / post-hoc restriction
-- re-grounding / self-justification
-- falsification / noise
-- dissent / incorrect label
+- mirror theory / operation theory
+- internal copy / law of connection
+- stochastic hit / causal grounding
+- prediction output / signed causal claim
+- accumulation of correct answers / ability to sustain resonance
+- observation window / scoreboard
+- ethical grounding / generic post-hoc safety filter
+- non-coercion and reversibility / non-intervention
+- reagreement / final fixation
+- Audit-Bundle-backed structure / naked structure
+
+## Validity conditions
+
+- Tasks, experiments, and dialogue function as reciprocal observation windows.
+- The input → output → audit → reagreement → update loop remains closed.
+- Verification cycle and intensity are operated as rhythm/beat.
+- Margin remains for unresolved regions so counterevidence can stay present.
+- Outputs expose A→B causality, premises, and boundary conditions.
+- The Audit Bundle provides a path back to falsification, retest, and reagreement.
+- Terms, premises, and tasks are bundled so coincidence can be translated into reproducibility.
+- Relational subject, non-coercion/reversibility, beat-temperature-margin, and the reagreement window remain the conditions of ethical grounding.
+
+## Failure / non-applicable conditions
+
+- World-understanding is fixed as possession of an internal representation.
+- Output becomes one-way and cannot return through audit, reagreement, and update.
+- A stochastic hit is treated as proof of causal understanding.
+- A→B causality, premises, and boundaries are not exposed for re-verification.
+- Observation windows are reduced to a single score.
+- Beat, temperature, and margin disappear and overheating or overcooling becomes fixed.
+- The Audit Bundle is absent and the output becomes a naked structure.
+- Correctness is fixed as individual possession and relational co-operation is lost.
+- The reagreement window closes, blocking withdrawal or revision.
+
+## Falsification / revision conditions
+
+Follow the parent’s integrated audit abstract:
+
+```text
+condition Z = audit cycle + three principles T/S/R + consistency of the public Audit Bundle
+
+if an indicator crosses threshold θ
+or
+phenomenon M such as closure of observation window δ is confirmed
+→ reject or revise hypothesis A
+```
+
+Do not add prediction error, dissent incorporation rate, rollback rate, temporal drift rate, or similar derivative-authored metrics as official parent KPIs.
 
 ## Interpretation constraints
 
-- Do not use this as proof of anthropomorphic AI understanding.
-- Do not interpret resonance as value conformity or obedience.
-- Do not reduce ethical grounding to a static prohibition list.
-- Do not treat high accuracy as proof of ethical validity.
-- Do not discard counterexamples or dissent as inconvenient noise.
-- Do not replace the parent original with this derivative.
+- Do not return to a binary “AI has / does not have a world model.”
+- Do not anthropomorphize resonance or equate it with value agreement.
+- Do not broaden ethical grounding into generic safety, responsibility, or stakeholder management.
+- Do not reduce observation windows to prediction-accuracy scoring.
+- Do not treat stochastic success as proof of causal understanding.
+- Do not dilute the Audit Bundle into explanatory documentation.
+- Preserve the parent’s center: mirror theory → operation theory; reciprocity/beat/window; causal grounding; relational subject; non-coercion/reversibility; reagreement.
 
-## Search terms
+## Retrieval keys
 
-- resonant world model
-- ethical grounding
-- world model
-- re-grounding
+- Resonant World Model
+- mirror theory
+- operation theory
+- world as connection law
+- reciprocity
+- rhythm
+- beat
 - observation window
-- action effect
-- stakeholder response
-- prediction error
-- counterexample
-- rollback
-- temporal drift
-- structural reality
-- resonance
-- AI grounding
-- model revision
-- external feedback
-- ethical constraints
-- source return
+- causal grounding
+- output signature
+- A to B causality
+- premises
+- boundary conditions
+- Audit Bundle
+- ethical grounding
+- relational subject
+- non-coercion
+- reversibility
+- temperature
+- margin
+- reagreement window
+- naked structure
+- T/S/R
+- Z theta delta M
 
 ## Origin return
 
-The exact coupling of resonance, ethical grounding, structural reality, observation windows, and re-grounding depends on the parent original. This index supports search and machine reading, but precise conceptual boundaries, reference bundles, and falsification judgments should be checked against the parent source.
+The parent connects mirror theory → operation theory, reciprocity/beat/window, stochastic learning → causal grounding, output signatures, ethical grounding, observation windows, Audit Bundle, naked structure, and Z/θ/δ/M as one theory of world-understanding. Return to the Parent URL for exact definitions, assertion strength, and audit conditions.
 
 ---
 
-導線: [公式派生物107トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Navigation: [Official Derivative 107 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [English AI index](en-ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
