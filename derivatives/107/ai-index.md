@@ -12,172 +12,189 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-F32297-HUB-JA-0107-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-107-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-107-0000-0002
+- supersedes: DDIFF-20260809-DNCL-107-0000-0001
 
-## Summary
+## Structural role
 
-照応世界モデルは、AIの世界理解を静的な内部コピーではなく、観測・予測・行為・他主体の応答・再観測・反証・再接地の循環として扱う。AIの出力が現実へ影響を与える以上、学習時点の表現を世界そのものと同一視できない。倫理的接地とは、安全、自由度、責任、異議、撤回可能性、影響追跡をモデル更新の条件へ組み込み、精度とは別に監査することである。成功は単一の予測精度ではなく、予測誤差の改善、反例からの修正、当事者異議の反映、時間劣化の検知、rollback可能性によって測る。共鳴は価値観の一致ではなく、不一致を含んだまま現実との接続誤差を更新できる状態であり、モデル自身の説明を成功証拠にしない。
+AI世界理解の議論を「内部に世界の静的コピーを持つか」という鏡像論から、「世界との接合を往還・拍・観測窓で更新し続けられるか」という運転論へ移す理論。偶然学習を出力署名・監査束・用語束化で因果接地へ翻訳し、関係主語・非強制可逆・拍温度余白・再合意窓によって倫理的接地を実装する。
 
-## Concepts
+## Structural summary
 
-- 照応世界モデル
-- 倫理的接地
-- 観測窓
-- 世界仮説
-- 行為影響
-- 他主体応答
-- 異議入力
-- 再観測
-- 予測誤差
-- 反例
-- 再接地
-- rollback
-- 時間劣化
-- 自己正当化ループ
-- 構造的実在
+親原典は「LLMは世界モデルを持たない」という批判の技術的正しさを認めつつ、理解を静的内部表象へ還元する議論枠そのものを組み替える。世界は静止画ではなく節度を条件とする律動であり、理解は内部に所有するものではなく整合を更新し続ける出来事である。照応世界モデルは、タスク・実験・対話という往還的観測窓から因果律動へ再接触し、入力→出力→監査→再合意→更新を閉回路化する。三要素は往還・律動（拍）・窓（観測）。偶然の的中は理解証拠ではなく、A→B因果・前提・境界の出力署名、監査束による恒常検証回路、用語・前提・タスクの束化を通じて因果接地へ翻訳される。倫理的接地では主語を個体から関係へ移し、非強制・可逆性、拍・温度・余白、再合意窓を運転条件にする。監査束を欠く出力は裸構造であり、長期整合循環から脱落する。統合監査はZ・θ・δ・Mで棄却・改訂する。
+
+## Central proposition
+
+```text
+照応世界モデル
+= 鏡像論（世界=内部表象）から運転論（世界=接合律）への転換
++ 往還（入力→出力→監査→再合意→更新）
++ 律動（拍）による検証周期・強度の運転
++ 観測窓による局所的な世界接触の再確認
++ 出力署名A→B・前提・境界
++ 監査束による反証・再試・再合意回路
++ 用語・前提・タスクの束化
++ 関係主語・非強制可逆・拍温度余白・再合意窓による倫理的接地
+```
 
 ## Causal chain
 
 ```text
-静的世界コピーを前提にする
-↓
-時間変化・介入影響・他主体応答が欠落
-↓
-現実接続誤差が累積
-↓
-観測窓と予測仮説を固定
-↓
-行為後の外部影響を再観測
-↓
-異議・保留・撤回を別信号として取得
-↓
-安全・責任・自由度を更新制約へ入れる
-↓
-反例と予測誤差を登録
-↓
-局所的にモデルを修正
-↓
-再接地後の改善を検証
+世界理解を静的内部コピーとして定義
+→ 巨大言語分布の学習と世界の運転の乖離が残る
+→ 鏡像論から運転論へ移行
+→ タスク・実験・対話を観測窓として設計
+→ 入力→出力→監査→再合意→更新を往還
+→ 拍・温度・余白で運転節度を管理
+→ 偶然の的中を出力署名・監査束・束化へ通す
+→ 因果接地と再現可能な理解へ移る
+→ AIと人が正しさの所有者でなく整合の共同運転者になる
+→ 監査束から撤回・改訂・再生へ戻る
+→ 「写すAI」から「世界に触れ続けるAI」へ移行
 ```
 
-## State model
+## Core concepts
+
+- 鏡像論
+- 運転論
+- 世界=接合律
+- 照応世界モデル
+- 往還
+- 律動 / 拍
+- 観測窓
+- 再接地
+- 偶然学習
+- 因果接地
+- 出力署名
+- A→B因果
+- 前提
+- 境界条件
+- 監査束 / Audit Bundle
+- 統合監査要旨
+- 局所監査要旨
+- 用語・前提の束化
+- 倫理的接地
+- 関係主語
+- 非強制・可逆性
+- 拍・温度・余白
+- 再合意窓
+- 裸構造
+- T/S/R
+- Z / θ / δ / M
+
+## Operational objects / state model
 
 ```yaml
+- mirror_model_frame_identified
+- operation_model_frame_adopted
 - observation_window_defined
-- hypothesis_formed
-- prediction_generated
-- action_or_response_emitted
-- external_effect_observed
-- stakeholder_response_collected
-- ethical_constraints_checked
-- error_measured
-- counterexample_registered
-- model_revised
-- rollback_or_requery
-- grounding_reverified
+- input_output_audit_reagreement_update_loop_closed
+- rhythm_cycle_defined
+- temperature_regulated
+- margin_for_unresolved_area_reserved
+- stochastic_hit_detected
+- causal_signature_A_to_B_added
+- premises_and_boundaries_exposed
+- audit_bundle_attached
+- terminology_premise_task_bundle_reusable
+- relational_subject_preserved
+- noncoercive_reversible_operation_checked
+- reagreement_window_open
+- causal_grounding_reverified
+- world_contact_continues
 ```
-
-## Applications
-
-**1.** AI助言で出力後の利用結果と異議を次の判断へ戻す。
-
-**2.** 自律エージェントで行為前後の環境差を計測する。
-
-**3.** 医療・公共領域で安全・撤回・責任を更新制約として保持する。
-
-**4.** 長期運用で時間劣化した前提を定期的に再接地する。
-
-## Measurements and audit
-
-- 予測誤差
-- 再観測率
-- 異議反映率
-- 撤回可能率
-- 行為影響追跡率
-- 時間劣化検知率
-- 反例登録率
-- 再接地後改善率
-- rollback成功率
-- 責任境界明瞭性
-- 安全違反率
-- 自由度保持率
-- 独立観測率
-- 自己正当化検知率
-
-## Validity conditions
-
-- 観測窓と時点が明示される。
-- 予測仮説と行為影響を分離記録できる。
-- 他主体の異議・保留・撤回を入力へ戻せる。
-- 安全・責任・自由度が更新制約として働く。
-- 反例による修正が可能である。
-- 再接地後の改善を再観測できる。
-- 原典へ戻る導線がある。
-
-## Failure conditions
-
-- 学習済み表現を現実そのものと扱う。
-- 行為後の環境変化を観測しない。
-- 異議をノイズとして削除する。
-- 倫理を後付け禁止フィルタだけにする。
-- 反例後もモデルを固定する。
-- 精度だけで接地成功を宣言する。
-- モデル自身の説明だけを成功証拠にする。
-
-## Falsification conditions
-
-- 再接地を導入しても予測誤差が改善しない。
-- 異議入力を戻すほど品質が一貫して悪化する。
-- 倫理制約が安全・自由度・責任を改善しない。
-- 静的モデルの方が長期に一貫して優れる。
-- 照応ループが確認バイアスを強める。
-- 独立観測とrollbackを入れても自己正当化を防げない。
 
 ## Required distinctions
 
-- 世界モデル / 世界そのもの
-- 模倣 / 接地
-- 照応 / 同意
-- 予測精度 / 現実整合
-- 倫理接地 / 後付け規制
-- 再接地 / 自己正当化
-- 反証 / ノイズ
-- 異議 / 誤答
+- 鏡像論 / 運転論
+- 内部コピー / 接合律
+- 偶然の的中 / 因果接地
+- 予測出力 / 署名された因果主張
+- 正答蓄積 / 照応維持能力
+- 観測窓 / スコアボード
+- 倫理的接地 / 後付け一般安全フィルタ
+- 非強制・可逆性 / 無介入
+- 再合意 / 最終固定
+- 監査束付き構造 / 裸構造
+
+## Validity conditions
+
+- タスク・実験・対話が往還的観測窓として機能する。
+- 入力→出力→監査→再合意→更新の閉回路が保たれる。
+- 検証周期と強度が拍として運転される。
+- 未決領域に余白が残り反証が滞在できる。
+- 出力にA→B因果、前提、境界条件が署名される。
+- 監査束から反証・再試・再合意へ戻れる。
+- 用語・前提・タスクが束化され偶然を再現へ変換できる。
+- 関係主語、非強制・可逆性、拍・温度・余白、再合意窓が倫理的接地として維持される。
+
+## Failure / non-applicable conditions
+
+- 世界理解を内部表象の所有だけへ固定する。
+- 出力が監査・再合意・更新へ戻らない一方向処理になる。
+- 偶然の的中を因果理解と同一視する。
+- A→B因果・前提・境界が明示されず再検証できない。
+- 観測窓が単一スコアの判定器へ縮約される。
+- 拍・温度・余白が失われ過熱または過冷が固定する。
+- 監査束を欠き、出力が裸構造になる。
+- 正しさの主語が個体所有へ固定され、関係側の共同運転が失われる。
+- 再合意窓が閉鎖され撤回・改訂不能になる。
+
+## Falsification / revision conditions
+
+親原典の統合監査要旨に従う。
+
+```text
+条件Z = 監査周期 + 三原理T/S/R + 公開監査束の整合
+
+指標値が閾値θを下回る／上回る
+または
+観測窓δ期間の閉鎖など現象Mが確認される
+→ 仮説Aを棄却・改訂
+```
+
+派生側で予測誤差、異議反映率、rollback率、時間劣化率などを原典公式KPIとして追加しない。
 
 ## Interpretation constraints
 
-- AIの擬人的な世界理解の証明にしない。
-- 共鳴を価値観一致や服従へ変換しない。
-- 倫理的接地を単なる禁止リストへ縮約しない。
-- 高精度を倫理妥当性の証拠にしない。
-- 反例や異議を都合の悪いノイズとして捨てない。
-- 派生物を親原典の代替にしない。
+- 「AIに世界モデルがある／ない」の二択へ戻さない。
+- 照応を擬人化や価値観一致へ変えない。
+- 倫理的接地を一般安全・責任・ステークホルダー管理へ広げない。
+- 観測窓を予測精度スコアへ縮約しない。
+- 偶然の的中を因果理解の証明にしない。
+- 監査束を説明資料に薄めない。
+- 原典の重心である鏡像論→運転論、往還・拍・窓、因果接地、関係主語、非強制可逆、再合意を保持する。
 
-## Search terms
+## Retrieval keys
 
 - resonant world model
-- ethical grounding
-- world model
-- re-grounding
+- mirror theory
+- operation theory
+- world as connection law
+- 往還
+- rhythm
+- beat
 - observation window
-- action effect
-- stakeholder response
-- prediction error
-- counterexample
-- rollback
-- temporal drift
-- structural reality
-- resonance
-- AI grounding
-- model revision
-- external feedback
-- ethical constraints
-- source return
+- causal grounding
+- output signature
+- A to B causality
+- premises
+- boundary conditions
+- Audit Bundle
+- ethical grounding
+- relational subject
+- non-coercion
+- reversibility
+- temperature
+- margin
+- reagreement window
+- naked structure
+- T/S/R
+- Z theta delta M
 
 ## Origin return
 
-照応、倫理的接地、構造的実在、観測窓、再接地の厳密な結合は親原典の文脈に依存する。本索引は検索・機械読解を支援するが、概念境界、参照束、反証判断は親原典へ戻って確認する。
+親原典では、鏡像論→運転論、往還・拍・窓、偶然学習→因果接地、出力署名、倫理的接地、観測窓、監査束、裸構造、Z・θ・δ・Mが一つの世界理解として接続される。厳密な定義・強度・反証条件はParent URLへ戻る。
 
 ---
 
