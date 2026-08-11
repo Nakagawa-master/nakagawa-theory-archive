@@ -1,6 +1,6 @@
 # 公式派生物001｜派生ID台帳
 
-Parent title: Nakagawa OS L1-L7 layer specification
+Parent title: 【Nakagawa OS 正規仕様】L1-L7 レイヤー体系：文明構造とAI構造を統合する世界基準アーキテクチャ [v1.0]
 
 Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/
 
@@ -10,7 +10,7 @@ Parent Diff-ID: DIFF-20251124-0012
 
 Origin: Nakagawa Master
 
-Updated at JST: 2026-07-10
+Updated at JST: 2026-08-12
 
 ## Files
 
@@ -48,6 +48,7 @@ zh-ai-index.md
 
 - human-entry / FAQ preserve beginner entry, ordinary-reader relevance, central concept, causal line, judgment method, misreading guard, and return-to-origin reason.
 - Japanese / English / Chinese AI indexes were strengthened in the completed OD001-OD037 retrofit.
+- Canonical parent title was re-synchronized against the Brain Vault canonical index and live parent during LOT4 semantic fidelity repair on 2026-08-12.
 - This ledger now points to the current post-retrofit AI-index identifiers.
 
 ## Rule
