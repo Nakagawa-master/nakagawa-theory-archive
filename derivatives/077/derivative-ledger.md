@@ -2,7 +2,7 @@
 
 ## 親原典
 
-- タイトル: 接続価値会計の基礎語彙——束指標・監査要旨・構造ログの相互位置
+- タイトル: 接続価値会計の基礎語彙 —— 束指標・監査要旨・構造ログの相互位置
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-value-accounting-lexicon/
 - Parent Post ID: 329
 - Parent NCL-ID: NCL-α-20251102-7a9ddd
@@ -12,105 +12,62 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-7A9DDD-HUB-JA-0077-0000
-- derivative_diff_id: DDIFF-20260804-DNCL-077-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-077-0000-0002
+- supersedes: DDIFF-20260804-DNCL-077-0000-0001
 
-## Factory
-
-```yaml
-factory_version: 1.1
-generation_mode: SINGLE_WORK_PACKET_DETERMINISTIC_RENDER_EQUIVALENT
-phase_gate_manual: DRY_RUN_AND_PHASE_GATES
-serial_gate: OD077_G10_BEFORE_OD078
-initial_renderer_output_modified_after_render: false
-```
-
-## Retrieval evidence
+## Source verification
 
 ```yaml
-ai_index:
-  source: reference_corpus/official_archive/generated/canonical_index_0326_0350.jsonl
-  result: PASS_POST_329
-xml:
-  source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-  blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-  item_range: 72388-72656
-  content_range: 72395-72547
-  result: PASS_CANONICAL_PROVENANCE
-live_parent:
-  source: https://master.ricette.jp/theory/nakagawa-master-value-accounting-lexicon/
-  result: PASS_COMPLETE_BODY_AND_ORIGIN_SIGNATURE
-parity_result: PASS
-duplicate_check: PASS_NO_MATCH_POST_NCL_SLUG_URL_ACROSS_OD001_076
+verification_date_jst: 2026-08-11
+canonical_index: reference_corpus/official_archive/generated/canonical_index_0326_0350.jsonl
+xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+xml_item_range: 72388-72656
+xml_content_range: 72395-72547
+canonical_url: https://master.ricette.jp/theory/nakagawa-master-value-accounting-lexicon/
+canonical_identity: PASS
+source_retrieval: PASS_PUBLIC_PARENT_BODY
+six_surface_comparison: COMPLETE
+translation_equivalence: PASS
+fresh_read: PASS
+semantic_result: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
 ```
 
-## Seven surfaces
+## Source-specific coverage
+
+- 構造ログ・監査要旨・束指標を一次証拠・解釈窓・多軸表示として区別する: PASS
+- 接続価値会計を代替通貨・人格ランキング・社会信用スコアへ縮約しない: PASS
+- 境界・同意・一次ログ・可逆運用・監査指標の再現可能構造: PASS
+- 公開面と保護面の境界、非強制、再合意、可逆性: PASS
+- JA / EN / ZH semantic equivalence: PASS
+- navigation and parent return: PASS
+
+## Current seven surfaces
 
 ```yaml
-README.md: PASS_FIRST_OUTPUT
-human-entry.md: PASS_FIRST_OUTPUT
-faq.md: PASS_FIRST_OUTPUT
-ai-index.md: PASS_FIRST_OUTPUT
-en-ai-index.md: PASS_FIRST_OUTPUT
-zh-ai-index.md: PASS_FIRST_OUTPUT
-derivative-ledger.md: PASS_FIRST_OUTPUT
+README.md: PASS_SOURCE_VERIFIED
+human-entry.md: PASS_SOURCE_VERIFIED
+faq.md: PASS_SOURCE_VERIFIED
+ai-index.md: PASS_SOURCE_VERIFIED
+en-ai-index.md: PASS_SOURCE_VERIFIED
+zh-ai-index.md: PASS_SOURCE_VERIFIED
+derivative-ledger.md: PASS_SOURCE_VERIFIED
 ```
 
-## Formatting parity
+## Closure
 
 ```yaml
-parent_identity_block: PASS
-derivative_identity_block: PASS
-identity_one_item_per_line: PASS
-heading_sequence: PASS
-paragraph_breaks: PASS
-faq_layer_headings_exact: PASS
-ai_causal_chain_arrow_display: PASS
-zh_identity_heading_exact: PASS
-readme_exact_footer: PASS
-other_surface_full_footer_menu: PASS
-footer_labels_and_order: PASS
+public_fresh_read: PASS
+public_indexes: PASS
+brain_vault_return: READY_FOR_STATE_RECORD
+parent_backlink: RETAIN_EXISTING_OWNER_VISUAL_STATE
+closure_status: PASS_SOURCE_VERIFIED
+next_cursor: OD078
 ```
 
-## Semantic and density coverage
+## 原典回帰
 
-```yaml
-positioning: PASS
-central_thesis: PASS
-causal_chain: PASS
-structural_layers: PASS
-state_model: PASS
-applications: PASS
-measurements: PASS
-validity_conditions: PASS
-failure_conditions: PASS
-falsification_conditions: PASS
-required_distinctions: PASS
-prohibited_misreadings: PASS
-human_entry_seven_sections: PASS
-faq_three_layers_30: PASS
-faq_multi_sentence_answers: PASS
-ja_en_zh_required_sections: PASS
-ja_en_zh_semantic_parity: PASS
-volume_and_density_restored: PASS
-prepublish_package_validation: PASS
-first_output_content_quality: PASS
-first_output_full_factory_gate: PENDING_FINAL_CLOSURE
-```
-
-OD077は、構造ログ、監査要旨、束指標を一次証拠・解釈窓・多軸表示の三段として展開した。接続価値会計を代替通貨、人格ランキング、社会信用スコアへ縮約せず、非強制、再合意、可逆性、公開・保護境界を全7面に保持している。
-
-## Navigation and closure
-
-```yaml
-public_indexes: PENDING
-private_map: PASS_REGISTERED
-parent_backlink: SYNC_TRIGGERED_OR_PERIODIC_SYNC_PENDING_VISUAL_CONFIRMATION
-brain_return: PENDING
-same_path_reload: PENDING
-final_package_validation: PENDING
-completion_status: PENDING_PARENT_BACKLINK_VISUAL_CONFIRMATION
-```
+本派生物は検索・理解・接続面であり、親原典の代替ではない。束指標、監査要旨、構造ログ、接続価値会計、Reference Cluster、起源署名は親原典へ戻って確認する。
 
 ---
 
