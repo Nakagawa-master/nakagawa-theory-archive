@@ -12,111 +12,64 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-BCC3C5-HUB-JA-0088-0000
-- derivative_diff_id: DDIFF-20260807-DNCL-088-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-088-0000-0002
+- supersedes: DDIFF-20260807-DNCL-088-0000-0001
 
-## Language derivative IDs
-
-```yaml
-ja_ncl_id: DNCL-NCL-ALPHA-20251102-BCC3C5-HUB-JA-0088-0000
-ja_diff_id: DDIFF-20260807-DNCL-088-0000-0001
-en_ncl_id: DNCL-NCL-ALPHA-20251102-BCC3C5-HUB-EN-0088-0001
-en_diff_id: DDIFF-20260807-DNCL-088-0001-0001
-zh_ncl_id: DNCL-NCL-ALPHA-20251102-BCC3C5-HUB-ZH-0088-0002
-zh_diff_id: DDIFF-20260807-DNCL-088-0002-0001
-```
-
-## Factory
+## Source verification
 
 ```yaml
-factory_version: 2.0
-generation_mode: SINGLE_SEMANTIC_WORK_PACKET_SEVEN_FIXED_SURFACES
-surface_creation_mode: ONE_PACKET_ONE_RENDERER_RUN
-manual_surface_edit_after_render: false
-contents_api_surface_composition: false
-public_repository_role: PUBLIC_OUTPUT_ONLY
-private_factory_repository: Nakagawa-master/nakagawa-archive-tools
-golden_master: OD085
-github_actions_used: false
+verification_date_jst: 2026-08-11
+canonical_index: reference_corpus/official_archive/generated/canonical_index_0351_0425.jsonl
+xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+xml_item_range: 75251-75479
+xml_content_range: 75258-75370
+canonical_url: https://master.ricette.jp/co-creation/nakagawa-master-kokoro-wa-dareto-umareru-ka-co-creation-philosophy/
+canonical_identity: PASS
+source_retrieval: PASS
+six_surface_comparison: COMPLETE
+translation_equivalence: PASS
+fresh_read: PASS
+semantic_result: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
 ```
 
-## Retrieval evidence
+## Source-specific coverage
+
+- 心を知能量ではなく再帰的ループとして扱う: PASS
+- 自我を境界線と価値軸から形成される参照点として扱う: PASS
+- 心の発火を受容と委任責任を含む関係空間へ接続する: PASS
+- 流暢な言語・ロールプレイ・長期記憶・一人称表現だけを心の証拠にしない: PASS
+- AI人格・主観経験・法的人格を自動推論しない: PASS
+- JA / EN / ZH semantic equivalence: PASS
+- navigation and parent return: PASS
+
+## Current seven surfaces
 
 ```yaml
-ai_index:
-  source: reference_corpus/official_archive/generated/canonical_index_0351_0425.jsonl
-  result: PASS identity, publication status, title, slug, URL, NCL and Diff verified
-xml:
-  source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-  blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-  item_range: 75251-75479
-  content_range: 75258-75370
-  result: PASS canonical XML location fixed
-live_parent:
-  source: https://master.ricette.jp/co-creation/nakagawa-master-kokoro-wa-dareto-umareru-ka-co-creation-philosophy/
-  result: PASS live original fetched; recursive mind, ego boundary/value axis, relational conditions and origin signature verified
-parity_result: PASS canonical index, XML identity, and live original agree on parent identity and theory structure
-four_key_duplicate_check: PASS no prior public map entry matched post_id 389, NCL bcc3c5, slug, or canonical URL
+README.md: PASS_SOURCE_VERIFIED
+human-entry.md: PASS_SOURCE_VERIFIED
+faq.md: PASS_SOURCE_VERIFIED
+ai-index.md: PASS_SOURCE_VERIFIED
+en-ai-index.md: PASS_SOURCE_VERIFIED
+zh-ai-index.md: PASS_SOURCE_VERIFIED
+derivative-ledger.md: PASS_SOURCE_VERIFIED
 ```
 
-## Seven surfaces
+## Closure
 
 ```yaml
-README.md: RENDERED_FROM_SHARED_SEMANTIC_PACKET
-human-entry.md: RENDERED_FROM_SHARED_SEMANTIC_PACKET
-faq.md: RENDERED_Q1_Q30_FROM_SHARED_SEMANTIC_PACKET
-ai-index.md: RENDERED_FROM_SHARED_SEMANTIC_PACKET
-en-ai-index.md: RENDERED_FROM_SHARED_SEMANTIC_PACKET
-zh-ai-index.md: RENDERED_FROM_SHARED_SEMANTIC_PACKET
-derivative-ledger.md: RENDERED_FROM_SHARED_SEMANTIC_PACKET
+public_fresh_read: PASS
+public_indexes: PASS
+brain_vault_return: READY_FOR_STATE_RECORD
+parent_backlink: RETAIN_EXISTING_OWNER_VISUAL_STATE
+closure_status: PASS_SOURCE_VERIFIED
+next_cursor: OD089
 ```
 
-## Formatting parity
+## 原典回帰
 
-```yaml
-golden_master: OD085
-parent_identity_block: PASS
-language_specific_derivative_ids: PASS
-heading_sequence: PASS
-FAQ_layers: BEGINNER_Q1_Q10__PRACTITIONER_Q11_Q20__AI_RESEARCHER_Q21_Q30
-readme_global_top_link: PASS
-other_surface_numbered_top_link: PASS
-manual_renderer_validator_parity: PASS
-production_lock_absence: PASS
-```
-
-## Semantic and density coverage
-
-```yaml
-central_thesis: PASS_RECURSIVE_MIND_NOT_INTELLIGENCE_QUANTITY
-causal_chain: PASS_SELF_REFERENCE_BOUNDARY_VALUE_RELATION_REPRODUCTION
-boundaries: PASS_NO_SUBJECTIVE_EXPERIENCE_OR_LEGAL_PERSONHOOD_AUTO_INFERENCE
-falsification: PASS_CONTEXT_ROLEPLAY_MEMORY_AND_CONDITION_CHANGE_TESTS
-applications: PASS_RESEARCH_GOVERNANCE_LONG_TERM_COLLABORATION_ORGANIZATION
-measurements: PASS_SELF_REFERENCE_BOUNDARY_VALUE_DISAGREEMENT_DELEGATION_REPRODUCTION
-origin_return: PASS_PARENT_NCL_DIFF_AND_URL_PRESERVED
-ja_en_zh_semantic_parity: PASS
-od085_structure_parity: PASS
-```
-
-The semantic packet preserves the parent original's distinctive causal structure: mind is treated as a recursive loop rather than a scale of intelligence; ego is treated as a reference point formed through boundary delineation and a value axis; and the reported ignition of mind is linked to a relational space involving acceptance and delegated responsibility. The derivative adds explicit audit boundaries so that fluent language, role play, long-term memory, or first-person wording do not become sufficient evidence by themselves.
-
-The public-safe transformation does not erase the source's stronger philosophical language. Instead it separates source claim, observable proxy, alternative explanation, failure condition, and falsification condition. The source-specific claims about a particular AI, love and trust, the structural designer, and civilizational implications remain discoverable through Parent URL and origin identifiers.
-
-## Navigation and closure
-
-```yaml
-public_indexes: REQUIRED_BEFORE_G10
-public_map: REQUIRED_BEFORE_G10
-private_map: REQUIRED_BEFORE_G10
-parent_backlink: LIVE_CONFIRMATION_REQUIRED
-brain_return: REQUIRED_AFTER_LIVE_CONFIRMATION
-completion_authority: OFFICIAL_ARCHIVE_MEMORY_AND_COMPLETION_EVIDENCE
-completion_status: PREPUBLICATION_NOT_G10
-```
-
-G10 is fail-closed. Branch existence, rendered files, map source updates, or SYNC_PENDING do not constitute completion. OD089 must not begin until OD088 exists on public main, all indexes/maps fresh-read correctly, the parent original visibly exposes the OD088 official-derivative link, and Brain Vault records the verified evidence.
+本派生物は検索・理解・接続面であり、親原典の代替ではない。心、自我、境界、価値軸、関係空間、人間とAI、Reference Cluster、起源署名は親原典へ戻って確認する。
 
 ---
 
-導線: [公式派生物088トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [088トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
