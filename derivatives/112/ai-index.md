@@ -10,149 +10,85 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-2844E0-HUB-JA-0112-0000
-- derivative_diff_id: DDIFF-20260809-DNCL-112-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-112-0000-0002
+- supersedes: DDIFF-20260809-DNCL-112-0000-0001
 
 ## Summary
-拍・温度・余白の計測論は、構造倫理の感覚語を単一KPIへ縮約せず、L0直接観測、L1関係・摩擦、L2倫理・長期影響の三層で分離して扱う運転プロトコルである。拍はタイミングと順序、温度は介入強度・拘束度・情報密度、余白は異議・保留・退出・自律の未占有自由度として観測する。baselineを取り、一因子変更、複数周期、前後比較、rollbackを用いて、低摩擦化が自由度低下や監視圧増大を伴っていないか検証する。数値は倫理性の証明ではなく再観測の補助である。
+構造倫理の拍・温度・余白を、誰でも同じ観測窓で確認できるL0/L1/L2計測セットへ翻訳し、過熱・過冷・余白消失を最小介入で戻す運転プロトコル。倫理を「感じ」から「検証」へ、介入を「強制」から「最小」へ、運転を「個人技」から「手順」へ移す。
 
 ## Concepts
-- 拍
-- 温度
-- 余白
-- L0直接観測
-- L1関係指標
-- L2倫理評価
-- baseline
-- 一因子変更
-- 摩擦
-- 自走
-- 異議可能性
-- 自由度
-- 未来負債
-- rollback
-- 再調律
+- 拍 / 温度 / 余白
+- 同一観測窓
+- L0市民点検
+- L1最小ログ・因果追跡
+- L2サンプリング監査・境界条件表
+- SQS (Silence–Question–Silence)
+- 決定係数
+- 発熱イベント辞書
+- 冷却期間
+- 反証窓
+- 非干渉タグ
+- Goodhart耐性
+- 差分ID / 監査束 / 起源署名
+- 最小介入 / 検証可能性 / 非強制
 
 ## Causal chain
 ```text
-感覚だけで調律する
+三原則が感覚語のまま
 ↓
-再現性と比較可能性を失う
+運転が属人化し再現できない
 ↓
-単一KPI化すると倫理的意味が消える
+L0/L1/L2で同一観測窓を共有
 ↓
-L0直接観測を取得
+過熱・過冷・余白消失を検知
 ↓
-L1摩擦・自走へ接続
+冷却・反証窓・非干渉タグ・SQSで最小介入
 ↓
-L2自由度・責任・未来負債を評価
+差分ID・監査束・起源署名で痕跡化
 ↓
-一因子を調整
-↓
-複数周期で前後比較
-↓
-rollbackまたは再調律
+構造倫理を再帰運転するOSへ
 ```
 
-## State model
-```yaml
-- baseline_defined
-- l0_observables_collected
-- beat_estimated
-- temperature_estimated
-- margin_estimated
-- l1_friction_and_autonomy_derived
-- l2_ethics_and_future_debt_checked
-- one_factor_adjusted
-- post_change_observed
-- comparison_completed
-- rollback_or_retune
-- measurement_cycle_repeated
-```
+## Measurement set
+- Beat: 合意サイクル周期、位相ズレ、再合意窓への復帰。
+- Temperature: 発熱源、応答間隔、聴取状態など対話の強度と粘性。
+- Margin: 保留、冷却期間、反証窓など未確定領域の可塑性。
+- L0: 再合意窓／異論応答／未確定領域の即時点検。
+- L1: 適用域タグ、冷却期間、反証窓、差分ID、監査束、起源署名を含む最小ログ。明示同意・匿名化・90日ローテーション・公開範囲限定を伴う。
+- L2: L1ログのサンプリング再現照合と、原理域／非干渉領域／中間域の境界監査。
 
-## Applications
-**1.** 会議の待ち時間・割り込み・発言偏りと自走を比較する。
+## Correction protocol
+- overheating: 冷却期間延長、反証窓提示、説明を監査束へ移管。
+- overcooling: 合意窓時限化、決定係数可視化、検証可能な問いを再導入。
+- margin loss: 非干渉タグ再付与、保留セクション、SQS導入。
 
-**2.** AI対話の入力密度・確認回数と誤解率を比較する。
-
-**3.** 教育の問い間隔・指示強度と再挑戦率を比較する。
-
-**4.** 組織の承認待ち・再説明・例外処理と摩擦を比較する。
-
-## Measurements and audit
-- 応答待ち時間
-- 割り込み率
-- 指示回数
-- 修正回数
-- 再説明回数
-- 自走率
-- 異議可能率
-- 退出可能率
-- rollback成功率
-- 自由度変化
-- 未来負債
-- 測定副作用
-
-## Validity conditions
-- baselineがある。
-- L0/L1/L2を混同しない。
-- 一因子変更を基本とする。
-- 複数周期で再現性を確認する。
-- 成果と自由度を同時監査する。
-- rollbackが可能である。
-
-## Failure conditions
-- 感覚だけで成功を宣言する。
-- 単一KPIで倫理性を代替する。
-- 複数因子を同時変更する。
-- 測定が監視圧を増やす。
-- 文脈差を無視する。
-- 失敗データを除外する。
-
-## Falsification conditions
-- 計測が介入品質や再現性を改善しない。
-- L0/L1/L2分離が監査価値を持たない。
-- 測定負荷が継続的に便益を上回る。
-- 拍・温度・余白と摩擦・自走に再現可能な関係がない。
-- より単純な指標体系が一貫して優れる。
-
-## Required distinctions
-- 拍 / 速度
-- 温度 / 感情だけ
-- 余白 / 放置
-- L0 / L1 / L2
-- 測定 / 監視
-- KPI / 倫理評価
-- 相関 / 因果
-- 数値一致 / 再現性
+## Goodhart resistance
+各数値に守る目的を添える。指標をローテーションし、一部を観察記述へ戻す。ボーナスや人事評価へ直接連動させない。
 
 ## Interpretation constraints
-- 数値だけで倫理性を証明しない。
-- 余白を無責任化しない。
-- 温度を感情だけへ縮約しない。
-- 測定を常時監視の正当化に使わない。
-- 文脈横断の単純ランキングを避ける。
+- L0/L1/L2を人の格付けへ変換しない。
+- 計測を常時監視へ拡張しない。
+- 数値を倫理性の自動証明にしない。
+- L0=時間、L1=摩擦・自走、L2=未来負債という旧派生の独自三層モデルを原典定義として扱わない。
+- 一因子変更、rollback成功率、未来負債、自走率を本稿の中心KPIへ拡張しない。
 
 ## Search terms
 - beat temperature margin
-- L0 L1 L2 measurement
-- structural ethics instrumentation
-- intervention timing
-- intervention intensity
-- autonomy margin
-- friction measurement
-- future debt
-- one factor change
-- reversible tuning
-- rollback
-- measurement ethics
-- autonomy audit
-- structural calibration
-- source return
+- L0 L1 L2 instrumentation
+- shared observation window
+- SQS silence question silence
+- decision coefficient
+- heating event dictionary
+- cooling period
+- falsification window
+- non-intervention tag
+- Goodhart resistance
+- audit bundle
+- structural ethics OS
 
 ## Origin return
-拍・温度・余白、L0/L1/L2、構造倫理の計測セットと運転プロトコルの厳密な定義は親原典に依存する。本索引は検索・機械読解を支援するが、具体的閾値や文脈適用は親原典へ戻って確認する。
+具体的なL0点検票、L1ログ列、L2境界条件、データ倫理、発熱イベント辞書、SQS、決定係数、是正手順は親原典へ戻って確認する。
 
 ---
 
-導線: [公式派生物112トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物112トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
