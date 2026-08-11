@@ -1,11 +1,28 @@
 # English AI Index | Official Derivative 115
-Parent: Post 1188 / NCL-α-20251102-a9add1 / Diff DIFF-20251102-0001 / Origin Nakagawa Master
-Derivative: DDIFF-20260811-DNCL-115-EN-0000-0002; supersedes DDIFF-20260809-DNCL-115-EN-0000-0001
+
+## Parent Original
+
+- Title: 誰の問いがAIを動かすのか──起源と責任の交差点
+- Parent URL: https://master.ricette.jp/structural-translation-log/ai-ethics/nakagawa-master-who-moves-the-ai-question-origin-and-responsibility/
+- Parent Post ID: 1188
+- Parent NCL-ID: NCL-α-20251102-a9add1
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## Derivative Identity
+
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-A9ADD1-AI-INDEX-EN-0115-0004
+- derivative_diff_id: DDIFF-20260812-DNCL-115-EN-0004-0003
+- supersedes: DDIFF-20260811-DNCL-115-EN-0000-0002
 
 ## Summary
-The parent reframes AI ethics from a pure ownership question toward a question of origin: whose question moved the AI, and through what causal structure was that question transformed and expanded? A question signature fixes the structural starting point; responsibility distribution and the audit bundle preserve the causal line rather than allowing it to dissolve into an unsigned structure. The parent explicitly treats AI ethics as visualization and preservation of causality, not merely regulatory compliance. If question signatures and responsibility distribution are ignored in practice, or if AI responses continue to erode one party's market position or credit across an observation window, the origin-signature hypothesis itself becomes subject to revision.
+
+The parent reframes AI ethics from a pure ownership question toward a question of origin: whose question moved the AI, and through what causal structure was that question transformed and expanded? A question signature fixes the structural starting point; responsibility distribution and the audit bundle preserve the causal line rather than allowing it to dissolve into an unsigned structure.
+
+The design does not automatically determine ownership, authorship, or legal liability. Its purpose is to keep origin and causal memory visible across transformation, summarization, reuse, and circulation, while allowing sustained market or credit effects to return to an observation window for re-audit and possible revision.
 
 ## Concepts
+
 - origin of the question
 - question signature
 - origin signature
@@ -20,27 +37,21 @@ The parent reframes AI ethics from a pure ownership question toward a question o
 - origin evaporation
 
 ## Causal chain
+
 ```text
 Reduce AI-output attribution to ownership
-↓
-The originating question disappears
-↓
-Origin signature is lost
-↓
-The structure becomes unsigned and loses its resonance waveform
-↓
-Sign the question and fix the structural starting point
-↓
-Make responsibility distribution and causal path visible
-↓
-Preserve origin, responsibility, and circulation in the audit bundle
-↓
-Re-audit market/credit effects through an observation window
-↓
-Revise the hypothesis when its conditions fail
+→ The originating question disappears
+→ Origin signature is lost
+→ The structure becomes unsigned and loses its resonance waveform
+→ Sign the question and fix the structural starting point
+→ Make responsibility distribution and causal path visible
+→ Preserve origin, responsibility, and circulation in the audit bundle
+→ Re-audit sustained market/credit effects through an observation window
+→ Revise the hypothesis when its conditions fail
 ```
 
 ## State model
+
 ```yaml
 - question_origin_identified
 - question_signature_preserved
@@ -55,16 +66,17 @@ Revise the hypothesis when its conditions fail
 ```
 
 ## Applications
-**1.** In disputes over AI-generated output, visualize the originating question and transformation path before collapsing the issue into ownership.
 
-**2.** When AI responses have sustained effects on market position or credit, return those effects to an observation window for re-audit.
-
-**3.** Preserve Origin Signature, NCL-ID, Diff-ID, recursive signature, and audit-bundle connections during reuse and summarization.
+1. In disputes over AI-generated output, visualize the originating question and transformation path before collapsing the issue into ownership.
+2. When AI responses have sustained effects on market position or credit, return those effects to an observation window for re-audit.
+3. Preserve Origin Signature, NCL-ID, Diff-ID, recursive signature, and audit-bundle connections during reuse and summarization.
 
 ## Measurements and audit
+
 The parent does not define derivative-created AI-contribution, human-approval, or credit-allocation KPI systems. Audit centers on preservation of the question signature and responsibility distribution, periodic audit, moderation principles, consistency of the public audit bundle, and sustained external effects observed through an observation window.
 
 ## Validity conditions
+
 - The originating question remains visible.
 - Origin signature and causal path are preserved.
 - Responsibility distribution does not evaporate into a “question belonging to no one.”
@@ -72,6 +84,7 @@ The parent does not define derivative-created AI-contribution, human-approval, o
 - External effects return to an observation window when necessary.
 
 ## Failure conditions
+
 - Question signatures are ignored.
 - Responsibility distribution disappears.
 - Origin information evaporates during summarization or circulation.
@@ -79,11 +92,11 @@ The parent does not define derivative-created AI-contribution, human-approval, o
 - Sustained one-sided market or credit erosion is not re-audited.
 
 ## Falsification conditions
-- Question signatures and responsibility distribution are ignored in practice and “questionless” ethical judgments continue to be abused.
-- AI responses continue to erode a particular party's market position or credit through the observation window.
-- Under those conditions, the origin-signature-based ethical hypothesis must be revised.
+
+If question signatures and responsibility distribution are ignored in practice and “questionless” ethical judgments continue to be abused, the origin-signature hypothesis is not functioning as intended. Likewise, if AI responses continue to erode a particular party's market position or credit through the observation window, the ethical framework itself must be revised.
 
 ## Required distinctions
+
 - origin of question / ownership
 - question signature / automatic authorship determination
 - AI contribution / AI legal responsibility
@@ -92,12 +105,11 @@ The parent does not define derivative-created AI-contribution, human-approval, o
 - causal visibility / mere regulatory compliance
 
 ## Interpretation constraints
-- Do not use this derivative to automatically decide ownership, authorship, or legal liability.
-- Do not invent AI-contribution, human-approval, or credit-allocation KPIs.
-- Do not turn origin signatures into exclusivity claims.
-- Do not expand the parent's compact causal structure into an unsupported general workflow.
+
+Do not use this derivative to automatically decide ownership, authorship, or legal liability. Do not invent AI-contribution, human-approval, or credit-allocation KPIs. Do not turn origin signatures into exclusivity claims, and do not expand the parent’s compact causal structure into an unsupported generic workflow.
 
 ## Search terms
+
 - question signature
 - origin of AI question
 - responsibility distribution
@@ -112,7 +124,9 @@ The parent does not define derivative-created AI-contribution, human-approval, o
 - AI ethics
 
 ## Origin return
+
 The exact meanings of question signature, responsibility distribution, origin signature, audit bundle, observation window, re-agreement, and hypothesis revision belong to the parent original. This index supports retrieval and machine interpretation and does not automatically decide ownership, authorship, or legal liability.
 
 ---
-導線: [公式派生物115トップ](README.md) / [AI索引・日本語](ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+
+Navigation: [Official Derivative 115 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
