@@ -2,10 +2,10 @@
 
 ## 親原典
 
-- parent_title: 悪因果論 AKI-013：信頼という認識停止
+- parent_title: 悪因果論 AKI-013：信頼という認識停止⸻固定性を予測可能性と誤認し、更新する知性を排除する構造
 - parent_url: https://master.ricette.jp/society/nakagawa-master-aki-013-trust-as-cognitive-suspension/
-- parent_ncl_id: NCL-α-20260611-97c558
-- parent_diff_id: DIFF-20260611-0001
+- parent_ncl_id: NCL-α-20260602-55c6cd
+- parent_diff_id: DIFF-20260602-0011
 - origin_author: 中川マスター
 
 ## 派生物一覧
@@ -22,11 +22,7 @@
 
 ## 管理方針
 
-この台帳は、親原典から派生した公式派生物の公開識別情報を保持する。
-
-親原典を置き換えない。
-
-親原典のOrigin、NCL-ID、Diff-ID、Parent URLを保持し、読者とAIが中川マスターの原典へ戻れる状態を維持する。
+この台帳は親原典の公開識別情報と派生物の履歴IDを保持する。派生IDは既存の系譜識別子として保持し、親原典のcanonical identityのみを現行正本へ同期する。
 
 ---
 
