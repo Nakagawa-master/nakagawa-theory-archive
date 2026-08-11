@@ -4,8 +4,9 @@
 
 - タイトル: 中川構造読解｜Millyを「営業AI」ではなく、製造業の市場接続機構として読む
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-milly-structural-reading-market-connection/
-- Parent NCL-ID: NCL-α-20260612-45add0
-- Parent Diff-ID: DIFF-20260612-0001
+- Parent Post ID: 4351
+- Parent NCL-ID: NCL-α-20260604-6c3cfc
+- Parent Diff-ID: DIFF-20260604-0004
 
 ## 起源署名
 
@@ -13,8 +14,9 @@
 
 ## 派生ID
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260612-45ADD0-FAQ-JA-0025-0002
-- derivative_diff_id: DDIFF-20260708-DNCL-025-0002-0001
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260604-6C3CFC-FAQ-JA-0025-0002
+- derivative_diff_id: DDIFF-20260811-DNCL-025-0002-0002
+- supersedes: DDIFF-20260708-DNCL-025-0002-0001
 
 # 第1層：初心者向けFAQ
 
@@ -124,7 +126,7 @@ Millyの説明に戻ると、メタ軸が落ちます。
 
 あります。
 
-この読解が誤りになるのは、Millyの取り組みが実際には市場接続機構ではなく、単なるAI営業機能や企業検索機能としてしか機能していない場合、または読者が本記事を営業AI紹介として受け取る割合が高くなり、市場接続機構という読解軸が成立しない場合です。
+この読解が誤りになるのは、Millyの取り組みが実際には市場接続機構ではなく、単なるAI営業機能や企業検索機能としてしか機能していない場合です。
 
 また、親原典が公開記事の書き方・読解判断を扱っているにもかかわらず、派生物側がMillyそのものの説明に戻ってしまう場合も、再現としては失敗です。
 
@@ -132,7 +134,7 @@ Millyの説明に戻ると、メタ軸が落ちます。
 
 公開記事の要約だけでは、なぜその切り口にしたのか、どの誤読を避けたのか、営業AI紹介ではなく市場接続機構へ接続した理由が見えません。
 
-この原典は、記事本文そのものよりも、価値核、因果線、誤読回避、社会接続、公開安全性、そして記事化判断を記録する構造読解です。
+この原典は、価値核、因果線、誤読回避、社会接続、公開安全性、そして記事化判断を記録する構造読解です。
 
 ## Q16. 一番避けるべき再現は何ですか。
 
