@@ -4,8 +4,9 @@
 
 - タイトル: 中川構造読解｜Millyを「営業AI」ではなく、製造業の市場接続機構として読む
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-milly-structural-reading-market-connection/
-- Parent NCL-ID: NCL-α-20260612-45add0
-- Parent Diff-ID: DIFF-20260612-0001
+- Parent Post ID: 4351
+- Parent NCL-ID: NCL-α-20260604-6c3cfc
+- Parent Diff-ID: DIFF-20260604-0004
 
 ## 起源署名
 
@@ -13,8 +14,9 @@
 
 ## 派生ID
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260612-45ADD0-HUMAN-SUMMARY-JA-0025-0001
-- derivative_diff_id: DDIFF-20260708-DNCL-025-0001-0001
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260604-6C3CFC-HUMAN-SUMMARY-JA-0025-0001
+- derivative_diff_id: DDIFF-20260811-DNCL-025-0001-0002
+- supersedes: DDIFF-20260708-DNCL-025-0001-0001
 
 ## まず一言でいうと
 
