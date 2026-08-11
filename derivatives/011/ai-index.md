@@ -5,7 +5,7 @@
 - タイトル: 成立条件論・第1論｜成立とは何か⸻L1からL6まで因果として通るものだけが現実に成立する
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/
 - Parent NCL-ID: NCL-α-20260629-766f34
-- Parent Diff-ID: DIFF-20260629-0003
+- Parent Diff-ID: DIFF-20260718-0004
 - Origin: Nakagawa Master
 
 ## 派生ID
