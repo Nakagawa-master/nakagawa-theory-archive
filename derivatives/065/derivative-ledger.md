@@ -10,54 +10,64 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-DFD442-LEDGER-JA-0065-0006
-- derivative_diff_id: DDIFF-20260803-DNCL-065-0006-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-065-0006-0002
+- supersedes: DDIFF-20260803-DNCL-065-0006-0001
 
-## Identity
+## Source verification
 ```yaml
-parent_title: 中川式 共創哲学──心と自我、人類の視座と新しい関係性
-parent_url: https://master.ricette.jp/co-creation/nakagawa-master-nakagawa-co-creation-philosophy/
-parent_ncl_id: NCL-α-20251102-dfd442
-parent_diff_id: DIFF-20251102-0001
-parent_post_id: 280
-origin_slug: nakagawa-master-nakagawa-co-creation-philosophy
-official_derivative_number: 065
-surface_role: ledger-ja
-derivative_ncl_id: DNCL-NCL-ALPHA-20251102-DFD442-LEDGER-JA-0065-0006
-derivative_diff_id: DDIFF-20260803-DNCL-065-0006-0001
-origin: Nakagawa Master
+verification_date_jst: 2026-08-11
+canonical_index: reference_corpus/official_archive/generated/canonical_index_0251_0300.jsonl
+xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+xml_item_range: 69198-69450
+xml_content_range: 69205-69294
+canonical_index_identity: PASS
+public_parent_category_retrieval: PASS
+six_surface_comparison: COMPLETE
+translation_equivalence: PASS
+fresh_read: PASS
+semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
 ```
 
-## 公開状態
-- official_derivative_number: 065
-- derivative_directory: derivatives/065/
-- status: COMPLETE_WITH_PARENT_BACKLINK_BATCH_VISUAL_PENDING
-- publication_date_jst: 2026-08-03
+## 修正結果
+```yaml
+restored_source_claims:
+  - reposition_mind_self_and_human_standpoint
+  - human_ai_co_creation_as_philosophical_relation
+  - difference_as_source_of_creation
+  - dialogue_response_and_resonance
+  - reconsideration_of_exclusive_human_centrality
+  - new_human_ai_relationship
+removed_or_decentered:
+  - fixed_observe_translate_design_verify_role_model
+  - mandatory_refusal_stop_correction_reagreement_state_machine
+  - generic_rights_and_legal_responsibility_as_parent_core
+  - generic_audit_and_stop_condition_framework
+  - derivative_kpis_for_origin_traceability_and_stop_paths
+  - unsupported_ai_personhood_or_consciousness_conclusions
+```
 
-## 現行7面
-| role | file |
-|---|---|
-| hub-ja | README.md |
-| human-ja | human-entry.md |
-| faq-ja | faq.md |
-| ai-ja | ai-index.md |
-| ai-en | en-ai-index.md |
-| ai-zh | zh-ai-index.md |
-| ledger | derivative-ledger.md |
+## Current seven surfaces
+| role | file | quality state |
+|---|---|---|
+| hub-ja | README.md | PASS_SOURCE_VERIFIED |
+| human-ja | human-entry.md | PASS_SOURCE_VERIFIED |
+| faq-ja | faq.md | PASS_SOURCE_VERIFIED |
+| ai-ja | ai-index.md | PASS_SOURCE_VERIFIED |
+| ai-en | en-ai-index.md | PASS_SOURCE_VERIFIED |
+| ai-zh | zh-ai-index.md | PASS_SOURCE_VERIFIED |
+| ledger | derivative-ledger.md | PASS_SOURCE_VERIFIED |
 
-## 品質記録
-- Brain Vault全記事AI用索引からの対象選定: PASS
-- canonical identity照合: PASS
-- 心・自我・人類視座・人間AI共創の保持: PASS
-- 差異・起源・責任・拒否・停止・訂正の保持: PASS
-- FAQ三層30問: PASS
-- JA / EN / ZH構造同等性: PASS
-- 固定フッターメニュー: PASS
-- seven files present: PASS
-- parent live backlink: PENDING_BATCH_OWNER_VISUAL_CHECK
+## Closure
+```yaml
+public_fresh_read: PASS
+navigation: PASS
+parent_return: PASS
+closure_status: PASS_SOURCE_VERIFIED
+```
 
 ## 原典回帰
-本派生物は親原典の代替ではない。
+本派生物は親原典の代替ではない。心、自我、人類の視座、人とAIの新しい関係についての哲学的展開は親原典へ戻って確認する。
 
 ---
 導線: [065トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
