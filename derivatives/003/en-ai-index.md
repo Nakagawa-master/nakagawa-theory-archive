@@ -2,10 +2,10 @@
 
 ## Parent Origin
 
-- Title: Establishment Conditions Theory Paper 0 | A Society Where No One Sees the Whole
+- Title: Establishment Conditions Theory Paper 0 | A Society Where No One Sees the Whole — Why Local Totalization Requires an Establishment-Judgment Theory
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/
 - Parent NCL-ID: NCL-α-20260627-aea14a
-- Parent Diff-ID: DIFF-20260627-0002
+- Parent Diff-ID: DIFF-20260630-0003
 - Origin: Nakagawa Master
 
 ## Derivative ID
