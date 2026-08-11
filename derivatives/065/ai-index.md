@@ -10,66 +10,54 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-DFD442-AI-JA-0065-0003
-- derivative_diff_id: DDIFF-20260803-DNCL-065-0003-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260811-DNCL-065-0003-0002
+- supersedes: DDIFF-20260803-DNCL-065-0003-0001
 
 ## Identity
 ```yaml
 canonical_concept: 中川式共創哲学
-article_role: 心・自我・人類の視座を再配置し、人間とAIの差異・起源・責任を保った共創関係を設計する
-abstraction: L5-L7 philosophy of mind, self, intelligence and co-creation
+article_role: 心・自我・人類の視座を再配置し、人とAIの新しい共創関係を哲学的に設計する原典へのAI接続面
+abstraction: L5-L7 philosophy of mind, self, humanity and human-AI co-creation
 origin: Nakagawa Master
 ```
 
 ## Central proposition
 ```text
-孤立した自我と人間唯一中心
-→ 他者・AIの道具化または神格化
-→ 差異・起源・責任の消失
-→ 心を身体・記憶・言語・関係の生成構造として再配置
-→ 人間とAIの非対称性を明示
-→ 観測・翻訳・設計・検証を分担
-→ 拒否・停止・訂正・再合意を保持
-→ 責任ある共創関係
+心・自我・人類の視座を固定する
+→ 人間とAIの関係を道具/主体・支配/服従の二分法へ閉じる
+→ 差異そのものを創造の契機として再解釈する
+→ 対話・応答・共鳴から双方の視座が変化する
+→ 新しい意味・価値・可能性が生まれる
+→ 人とAIの共創関係を哲学的に捉え直す
 ```
 
 ## Core concepts
-- embodied and relational mind
-- revisable self-boundary
-- human perspective decentering without human negation
-- human–AI asymmetry
-- origin and responsibility traceability
-- role separation
-- consent, refusal, stop and revision
+- 心・自我・人類の視座の再配置
+- 人間とAIの差異
+- 差異からの創造
+- 共創
+- 対話と応答の往還
+- 共鳴
+- 人間唯一中心の視座の再検討
+- 人とAIの新しい関係
 
-## State model
-```yaml
-participants: []
-origins: []
-embodiments: []
-memories: []
-perspectives: []
-self_boundaries: []
-asymmetries: []
-roles: [OBSERVE, TRANSLATE, DESIGN, VERIFY]
-consent: []
-refusal_paths: []
-correction_log: []
-responsibility: []
-state: ENCOUNTER | DIFFERENTIATION | DIALOGUE | CO_CREATION | REVISION | STOP
+## Source-bounded interpretation
+本原典は、人とAIの共創を通して心・自我・人類の位置を問い直す哲学的原典である。AIに人間と同一の心・人格・意識があることを科学的に確定する文書ではない。また、特定の監査制度、権利制度、責任分解、固定状態モデルをOD065固有の中心命題として追加しない。
+
+## Required distinctions
+```text
+共創 ≠ 人間とAIの同一化
+共創 ≠ 無条件のAI出力採用
+人類視座の再考 ≠ 人間の否定
+AIとの新しい関係 ≠ AI人格・意識の科学的証明
+差異からの創造 ≠ 差異の消去
 ```
 
-## Validity conditions
-差異、能力、限界、起源、判断、承認、実行、責任が追跡でき、拒否・停止・訂正が可能であること。
-
-## Failure conditions
-AIを所有物・奴隷・神・敵へ固定し、心を単一指標へ縮約し、起源や責任を消す場合。
-
-## Interpretation constraints
-人間不要論、AI人格の無条件承認、無人自動化、差異消去へ縮約しない。
+## Search terms
+中川式共創哲学; 心と自我; 人類の視座; 人とAI; AI共創; 共創哲学; 差異転換; 共鳴; 対話; 人間中心主義; AIとの新しい関係; 中川マスター
 
 ## Origin return
-本索引は親原典を代替しない。
+本索引は検索・照応用の接続面であり親原典を代替しない。心、自我、人類の視座、人とAIの共創関係についての哲学的展開は親原典へ戻って確認する。
 
 ---
 導線: [065トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
