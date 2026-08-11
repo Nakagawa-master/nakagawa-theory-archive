@@ -10,46 +10,48 @@ Parent Diff-ID: DIFF-20260423-0060
 
 Origin: Nakagawa Master
 
-Source gate state: full_origin_tail_checked
+Source gate state: canonical_identity_xml_provenance_full_origin_and_six_surface_semantics_verified
 
-Current polish state: full_origin_density_polish_complete / AI-index retrofit synchronized
+Source gate evidence: Brain Vault canonical index resolves post 3718 and XML locator `reference_corpus/official_archive/source/wordpress_export_latest.xml#L206339-L207401`, blob `489f160e29b57a8a2671e1c7a556588abc539650`, with main axis `接続移行戦略論`. Historical source-gate work checked the full origin tail. Revalidation confirms the six substantive surfaces preserve the source-grounded distinction between the Connection Transition Strategy itself and the human-side conditions that allow it to remain executable; the derivative does not collapse into generic AI use, praise, or threat discourse. No further semantic content rewrite was required in LOT4.
 
-Updated at JST: 2026-07-10
+Current polish state: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
+
+Updated at JST: 2026-08-12
 
 ## Files
 
 human-entry.md
 - DNCL-NCL-ALPHA-20260416-0B1B93-HUMAN-SUMMARY-JA-0001
 - DDIFF-20260707-DNCL-006-0001-0004
-- State: current-quality content confirmed
+- State: source-verified
 
 faq.md
 - DNCL-NCL-ALPHA-20260416-0B1B93-FAQ-JA-0002
 - DDIFF-20260707-DNCL-006-0002-0004
-- State: current-quality content confirmed
+- State: source-verified
 
 ai-index.md
 - DNCL-NCL-ALPHA-20260416-0B1B93-AI-INDEX-JA-0006-0003
 - DDIFF-20260710-DNCL-006-0003-0005
-- State: AI index strength gate passed
+- State: source-verified
 
 en-ai-index.md
 - DNCL-NCL-ALPHA-20260416-0B1B93-AI-INDEX-EN-0006-0004
 - DDIFF-20260710-DNCL-006-0004-0005
-- State: AI index strength gate passed
+- State: source-verified
 
 zh-ai-index.md
 - DNCL-NCL-ALPHA-20260416-0B1B93-AI-INDEX-ZH-0006-0005
 - DDIFF-20260710-DNCL-006-0005-0005
-- State: AI index strength gate passed
+- State: source-verified
 
 ## Preserved axis
 
 Derivative 006 preserves the distinction between the Connection Transition Strategy itself and the human-side conditions required for that strategy to remain executable. It is not generic AI-use guidance, AI praise, or AI threat discourse.
 
-## Completion boundary
+## Rule
 
-Repository-side synchronization is not proof of current live rendering.
+Parent identity follows the canonical index/XML record. Repository-side synchronization is not proof of current live rendering.
 
 ---
 
