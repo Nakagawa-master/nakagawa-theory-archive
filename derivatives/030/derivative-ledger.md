@@ -2,10 +2,11 @@
 
 ## 親原典
 
-- parent_title: 中川構造読解｜MOTAはなぜ車買取サービスではなく高額売却市場の価格形成条件を再設計する事業として読まれるべきなのか
+- parent_title: 中川構造読解｜MOTAはなぜ「車買取サービス」ではなく、高額売却市場の価格形成条件を再設計する事業として読まれるべきなのか
 - parent_url: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mota-structural-reading-price-formation-design/
 - parent_ncl_id: NCL-α-20260629-f16938
 - parent_diff_id: DIFF-20260629-0001
+- parent_post_id: 4609
 - origin_author: 中川マスター
 
 ## 派生物一覧
@@ -20,13 +21,34 @@
 | 030-0005 | zh-ai-index.md | DNCL-NCL-ALPHA-20260629-F16938-AI-INDEX-ZH-0030-0005 | DDIFF-20260709-DNCL-030-0005-0003 | zh | ai_index |
 | 030-0006 | derivative-ledger.md | DNCL-NCL-ALPHA-20260629-F16938-LEDGER-JA-0030-0006 | DDIFF-20260709-DNCL-030-0006-0003 | ja | derivative_ledger |
 
+## Source-verified repair lineage
+
+- canonical index: `reference_corpus/official_archive/generated/canonical_index_4609_4743.jsonl`
+- WordPress XML locator: `reference_corpus/official_archive/source/wordpress_export_latest.xml#L289265-L290567`
+- canonical XML blob SHA: `489f160e29b57a8a2671e1c7a556588abc539650`
+- source gate receipt: `official-derivative-030-source-gate-pass-20260709-v0.1.md`
+- semantic result: `PASS_SOURCE_VERIFIED_AFTER_REPAIR`
+
+### Restored source-specific structure
+
+```text
+information asymmetry
+single-buyer weak competition
+multi-buyer competition
+phone / negotiation / comparison burden
+premature compromise under high burden
+competition + low burden as simultaneous establishment condition
+price-formation condition redesign
+Nakagawa Master article-construction meta subject
+```
+
+### Reuse boundary
+
+Do not turn this package into used-car appraisal comparison, car-selling tips, a price guarantee, generic auction/used-car-market theory, or MOTA official messaging.
+
 ## 管理方針
 
-この台帳は、親原典から派生した公式派生物の公開識別情報を保持する。
-
-親原典を置き換えない。
-
-親原典のOrigin、NCL-ID、Diff-ID、Parent URLを保持し、読者とAIが中川マスターの原典へ戻れる状態を維持する。
+この台帳は、親原典から派生した公式派生物の公開識別情報とsource-verified lineageを保持する。親原典を置き換えない。
 
 ---
 
