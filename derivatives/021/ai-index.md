@@ -1,66 +1,153 @@
 # AI索引・日本語｜公式派生物021｜合意形成の物理 第6論
 
-Parent: NCL-α-20260215-71cedd / DIFF-20260215-0021 / Origin Nakagawa Master
-Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity/
+## 親原典
+- タイトル: 合意形成の物理 第6論 逸脱と免疫 ― 免疫は「罰」ではなく「差分公開」である
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity/
+- Parent Post ID: 2919
+- Parent NCL-ID: NCL-α-20260215-71cedd
+- Parent Diff-ID: DIFF-20260215-0021
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-AI-INDEX-JA-0021-0003
+- derivative_diff_id: DDIFF-20260812-DNCL-021-0003-0004
+- supersedes: DDIFF-20260812-DNCL-021-0003-0003
 
 ## Summary
-本原典は、逸脱を違反者処罰の対象としてではなく、設計と運用の差分Dとして観測し、責任R・履歴H・理解Uを回復して S = U × R × H を戻す「免疫」を扱う。中心は、罰 → R低下 → 潜伏 → S悪化 → D増幅という崩壊因果鎖と、差分公開 → R固定 → 修復可能 → S回復 → D減衰という回復因果鎖である。
+本原典は、逸脱を違反者処罰の対象としてではなく、設計と運用の差分Dとして観測し、責任R・履歴H・理解Uを回復して S = U × R × H を戻す「免疫」を扱う。原典は安全を逸脱ゼロとは定義せず、逸脱が見えた後に修復入口が固定され、履歴が残り、合意安定度が速く回復する系を免疫のある状態として読む。
+
+中心には二本の因果線がある。罰中心の運用が責任回避・報告抑制・潜伏へつながる場合、`罰 → R低下 → 潜伏 → S悪化 → D増幅` が成立する。一方、差分公開が修復責任と履歴へ接続する場合、`差分公開 → R固定 → 修復可能 → S回復 → D減衰` へ進む。罰や公開の有無を道徳的に評価するのではなく、U/R/Hと回復可能性への作用を評価する。
+
+D_det、D_loss、S回復時間は組み合わせて読む。D_detが増えてもD_lossが下がり回復時間が短くなるなら、以前見えなかった逸脱が検知可能になり、免疫が改善している可能性がある。逆に検知件数が減ってもD_lossが増え回復が遅ければ、潜伏が増えただけかもしれない。
 
 ## Concepts
-- 合意形成の物理
+- 合意形成の物理 第6論
 - 逸脱 D
 - 免疫
 - 差分公開
 - S = U × R × H
-- D_det
-- D_loss
+- D_det / detected deviation
+- D_loss / hidden or realized loss
 - S回復時間
-- R固定
-- H再接続
+- repair entry R
+- difference history H
+- 報告抑制
+- 潜伏
+- 修復可能性
+- 差分履歴
 
 ## Causal chain
-設計と運用のズレ → 逸脱D → 罰中心ならR低下・潜伏・H断絶 → S悪化 → D増幅。差分が検証可能に公開されるならR固定 → 修復入口確立 → H/U回復 → S回復 → D減衰。
+```text
+設計と運用の差分Dが発生する
+↓
+罰中心運用なら責任回避・報告抑制が起こり得る
+↓
+Rが弱まり逸脱が潜伏する
+↓
+Hが失われSが悪化する
+↓
+Dが増幅する
+```
 
-## State / operational model
-1. Dを設計と運用の差分として検知する。
-2. D_detとD_lossを分離する。
-3. 誰が観測・修復・停止するかRを固定する。
-4. 判断根拠・変更履歴・差分へHを接続する。
-5. U/R/Hが戻るまでのS回復時間を観測する。
-6. D_det増減を単独で改善・悪化と判定しない。
+```text
+差分Dが検知される
+↓
+差分が検証可能な形で公開される
+↓
+修復責任Rと入口が固定される
+↓
+履歴Hが連続する
+↓
+修復可能性が上がりSが回復する
+↓
+Dが減衰する
+```
+
+## State model
+```yaml
+- deviation_d_occurs
+- deviation_detectable_or_hidden
+- detected_deviation_d_det_observed
+- hidden_or_lost_deviation_d_loss_observed
+- punishment_pressure_observed
+- reporting_suppression_observed
+- repair_responsibility_r_fixed_or_diffused
+- difference_history_h_preserved_or_lost
+- repair_entry_available
+- consensus_stability_s_recovering_or_degrading
+- recovery_time_observed
+- deviation_amplifying_or_damping
+- difference_disclosure_used_for_repair_not_exposure
+- origin_return_verified
+```
 
 ## Applications
-組織運用、制度設計、内部統制、不祥事対応、品質改善など、逸脱を隠すか罰するかではなく、修復可能な差分として扱う場面で使う。一般的コンプライアンス論へ縮約しない。
+- 内部通報で通報件数増加を悪化と即断せず、D_loss低下・R明確化・回復時間短縮を併せて見る。
+- 品質管理で不具合報告を減らすことより、差分が早く出て履歴と修復入口へ接続されるかを監査する。
+- AI運用でエラー件数だけでなく未検知損失、修正履歴、再発時の回復速度を見る。
+- 組織ガバナンスで厳罰化後に表面上の違反件数が減っても、報告抑制と潜伏が増えていないかを見る。
+- 公開制度で透明性の量ではなく、差分が責任・履歴・再発防止へ接続しているかを見る。
 
 ## Measurements and audit
-原典にない一般KPIは追加しない。観測対象はD_det、D_loss、S回復時間、U/R/H、差分到達性、責任追跡可能性、履歴連続性、公開後の修復速度である。
+原典にない一般KPI、免疫スコア、固定検知率、固定回復時間閾値を追加しない。
+
+- D_det増加とD_loss低下が同時に起きているか。
+- D_det減少が逸脱減少なのか報告抑制なのか。
+- 差分公開後にRが修復入口として固定されているか。
+- Hが差分・変更理由・修復履歴として残っているか。
+- S回復時間が短くなっているか。
+- 罰の強化が報告抑制・潜伏・責任回避を増やしていないか。
+- 差分公開が晒し・報復・人物攻撃へ変わっていないか。
+- 検知量だけで健康度を判定していないか。
 
 ## Validity conditions
-差分が検証可能で、Rが修復入口として追跡でき、Hが変更履歴へ連続し、公開後にS回復が観測できること。D_det単独ではなくD_lossと回復時間を束で読むこと。
+- 逸脱ゼロを免疫と定義しない。
+- D_det、D_loss、S回復時間を組み合わせて読む。
+- 責任Rを修復入口として追跡可能にする。
+- 差分履歴Hを保持する。
+- 差分公開を修復可能性へ接続する。
+- 罰中心運用による潜伏・報告抑制を監査する。
+- 公開を晒しや報復へ変換しない。
 
 ## Failure conditions
-罰によって差分が潜伏する、公開が晒しや攻撃になりU/Rを下げる、Rが処罰対象固定に変質する、Hが残らない、修復後もSが戻らない場合は失敗である。
+- 逸脱件数が少ないほど安全と短絡する。
+- D_det増加を自動的に悪化とみなす。
+- 厳罰化だけで免疫が高まるとみなす。
+- 透明性や公開量そのものを免疫と同一視する。
+- 内部通報推奨や一般コンプライアンス論へ縮約する。
+- 差分公開を人物攻撃・晒し・報復へ使う。
+- D_det / D_loss / 回復時間へ派生側独自の固定合格値を与える。
 
 ## Falsification conditions
-差分公開を強めてもD_lossが継続的に増え、S回復時間が悪化し、U/R/Hが系統的に低下するなら、公開設計または理論適用は改訂対象となる。
+罰を強化しても報告抑制や潜伏が増えず、D_lossが継続的に低下し、RとHが強まり、S回復時間が短縮し、Dが減衰することが広く再現されるなら、罰の崩壊因果鎖の適用範囲は再検討される。
+
+逆に差分公開を増やしてもR/Hが改善せず、修復可能性やS回復が高まらず、晒し・報復・情報過多だけが増えるなら、公開設計や理論適用は改訂対象になる。派生側で反証用の数値閾値を作らない。
 
 ## Required distinctions
-- 逸脱 と 悪意
-- 免疫 と 処罰
-- 差分公開 と 全面公開
-- R固定 と 犯人固定
-- D_det と D_loss
-- 静けさ と 健全性
-- 透明性 と 修復可能性
+- 逸脱発生 / 免疫不全
+- D_det増加 / 悪化
+- D_loss低下 / 単なる報告増加
+- 責任R / 処罰対象
+- 差分公開 / 透明性礼賛
+- 差分公開 / 晒し
+- 罰 / 修復
+- 逸脱ゼロ / 安全
+- 検知件数 / 健康度
 
 ## Interpretation constraints
-厳罰化批判、内部通報推奨、透明性礼賛、コンプライアンス一般論へ縮約してはならない。罰や公開の有無ではなく、U/R/Hと回復可能性への作用を判定する。
+- 厳罰化批判だけへ縮約しない。
+- 内部通報推奨だけへ縮約しない。
+- 透明性礼賛にしない。
+- 一般的コンプライアンス論へ薄めない。
+- 罰を全面否定する理論にしない。
+- 公開量が多いほど免疫が高いとしない。
+- 原典にない検知率、免疫スコア、固定合格値を創作しない。
 
 ## Search terms
-合意形成の物理, 逸脱と免疫, 差分公開, S U R H, D_det, D_loss, S回復時間, R固定, H再接続
+合意形成の物理; 逸脱と免疫; 差分公開; S U R H; D_det; D_loss; S回復時間; R固定; H再接続; 修復可能性; Nakagawa Master
 
 ## Origin return
-最終判断は親原典へ戻す。この索引は原典の代替でも、特定AIの学習データ証明でもない。
+本索引は親原典の検索・再利用面であり原典の代替ではない。罰→R低下→潜伏→S悪化→D増幅、差分公開→R固定→修復可能→S回復→D減衰、D_det / D_loss / S回復時間の組合せはParent URLへ戻って確認する。
 
 ---
-Navigation: [021トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物021トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
