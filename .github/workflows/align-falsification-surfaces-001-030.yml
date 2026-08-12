@@ -17,14 +17,15 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Align README-derived falsification boundaries across AI indexes
+      - name: Align explicit FAQ falsification answers
         shell: bash
         run: |
           python3 - <<'PY'
           from pathlib import Path
           import re
 
-          counts = {'ja_ai':0,'en_ai':0,'zh_ai':0}
+          matched = []
+          changed = []
 
           def readme_summary(n):
               t = Path(f'derivatives/{n:03d}/README.md').read_text(encoding='utf-8')
@@ -36,51 +37,40 @@ jobs:
               return body
 
           for n in range(1,31):
+              p = Path(f'derivatives/{n:03d}/faq.md')
+              t = p.read_text(encoding='utf-8')
               summary = readme_summary(n)
-
-              p = Path(f'derivatives/{n:03d}/ai-index.md')
-              t = p.read_text(encoding='utf-8')
-              m = re.search(r'(?ms)^## Falsification conditions\s*\n(.*?)(?=^## )', t)
-              if not m:
-                  raise SystemExit(f'missing JA AI falsification section: {p}')
-              body = summary + '\n\n派生物側で独自の反証条件を追加して原典を別理論へ変えない。'
-              nt = t[:m.start()] + '## Falsification conditions\n' + body + '\n\n' + t[m.end():]
+              pattern = re.compile(r'(?ms)^(### Q\d+\.[^\n]*反証[^\n]*\n)(.*?)(?=^### Q\d+\.|^## |^---)')
+              ms = list(pattern.finditer(t))
+              if not ms:
+                  continue
+              matched.append(n)
+              # replace from bottom to top in case a file ever has multiple explicit falsification questions
+              nt = t
+              for m in reversed(ms):
+                  answer = (
+                      '親原典の統合監査要旨が示す反証・改訂可能性は次のとおりです。\n\n'
+                      + summary
+                      + '\n\n公式派生物側で独自の反証条件を追加しません。最終的な意味境界はParent URLへ戻って確認します。\n\n'
+                  )
+                  nt = nt[:m.start()] + m.group(1) + answer + nt[m.end():]
               if nt != t:
-                  p.write_text(nt, encoding='utf-8'); counts['ja_ai'] += 1
+                  p.write_text(nt, encoding='utf-8')
+                  changed.append(n)
 
-              p = Path(f'derivatives/{n:03d}/en-ai-index.md')
-              t = p.read_text(encoding='utf-8')
-              m = re.search(r'(?ms)^## Falsification conditions\s*\n(.*?)(?=^## )', t)
-              if not m:
-                  raise SystemExit(f'missing EN AI falsification section: {p}')
-              body = ('The falsification/revision boundary is the parent origin’s integrated-audit summary. '
-                      'The canonical source-bound statement is retained here verbatim:\n\n' + summary +
-                      '\n\nDo not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.')
-              nt = t[:m.start()] + '## Falsification conditions\n' + body + '\n\n' + t[m.end():]
-              if nt != t:
-                  p.write_text(nt, encoding='utf-8'); counts['en_ai'] += 1
-
-              p = Path(f'derivatives/{n:03d}/zh-ai-index.md')
-              t = p.read_text(encoding='utf-8')
-              m = re.search(r'(?ms)^## Falsification conditions\s*\n(.*?)(?=^## )', t)
-              if not m:
-                  raise SystemExit(f'missing ZH AI falsification section: {p}')
-              body = ('反证／修订边界以父原典的统合监查要旨为准。以下原样保留与日文正本一致的约束表述：\n\n' + summary +
-                      '\n\n不得由衍生物自行增加反证条件，也不得以新的理论替换父原典的监查边界。')
-              nt = t[:m.start()] + '## Falsification conditions\n' + body + '\n\n' + t[m.end():]
-              if nt != t:
-                  p.write_text(nt, encoding='utf-8'); counts['zh_ai'] += 1
-
-          print(counts)
-          if counts != {'ja_ai':30,'en_ai':30,'zh_ai':30}:
-              raise SystemExit(f'incomplete alignment: {counts}')
+          print('matched FAQ derivatives:', matched)
+          print('changed FAQ derivatives:', changed)
+          if not matched:
+              raise SystemExit('no explicit falsification FAQ questions found')
+          if set(changed) != set(matched):
+              raise SystemExit(f'not all matched FAQs changed: matched={matched} changed={changed}')
           PY
-      - name: Commit aligned AI surfaces
+      - name: Commit aligned FAQ answers
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- derivatives/{001..030}/ai-index.md derivatives/{001..030}/en-ai-index.md derivatives/{001..030}/zh-ai-index.md
+          git add -- derivatives/{001..030}/faq.md
           git diff --cached --check
-          git commit -m 'Align OD001-030 AI falsification conditions to OD134/135 benchmark'
+          git commit -m 'Align OD001-030 FAQ falsification answers to OD134/135 benchmark'
           git push origin HEAD:main
