@@ -57,7 +57,7 @@ interpretation_constraints_present: PASS
 origin_return_present: PASS
 readme_extra_seven_surface_body_section: NONE
 sufficient_volume_and_density: PASS
-literal_fresh_read_required: PASS_MAIN
+literal_fresh_read: PASS
 ```
 
 ## Seven responsibility conditions — epistemic status
@@ -126,8 +126,9 @@ branch_fresh_read: PASS
 public_rebuild_pr: 231
 public_rebuild_merge_commit: a0f7bdab5f5914ea66495c8c8a391f7d02053c1c
 main_fresh_read: PASS
-brain_vault_evidence: TO_BE_RECORDED_AFTER_FINAL_LEDGER_PUBLICATION
-closure: COMPLETE_CONTENT_PENDING_EVIDENCE_RECORD
+brain_vault_evidence: PASS
+closure: COMPLETE_SOURCE_VERIFIED
+internal_status_terms_removed: PASS
 ```
 
 ---
