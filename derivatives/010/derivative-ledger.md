@@ -136,8 +136,11 @@ structural_necessity_boundary: PASS
 quantitative_claim_binding: PASS_NO_UNSUPPORTED_NUMBERS
 translation_equivalence: PASS_STRUCTURAL
 volume_density_od134_od135_floor: PASS_REBUILT
-branch_fresh_read_required: true
-main_publish_required_for_closure: true
+branch_fresh_read: PASS
+main_publish: PASS
+main_commit: c3b06bce154ed1efd2f4db068a8d19edcac12b4a
+main_fresh_read: PASS
+closure_status: COMPLETE_CLOSED_CORRECTED
 ```
 
 ---
