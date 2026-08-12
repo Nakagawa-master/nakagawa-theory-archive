@@ -148,4 +148,4 @@ A crisis or problem is raised
 The exact seven responsibility conditions, integrated audit, local audit, boundary conditions, and falsification logic belong to the parent original. This index is for retrieval and machine interpretation and is not an automatic classifier for suppressing criticism or whistleblowing. Preserve Parent URL, Post ID, NCL-ID, Diff-ID, Origin, and derivative identity when reusing it.
 
 ---
-Navigation: [Official Derivative 005 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+導線: [公式派生物005トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
