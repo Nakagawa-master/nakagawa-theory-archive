@@ -1,126 +1,67 @@
 # 派生ID台帳｜公式派生物004
 
-## Parent identity
-- Parent title: 人類子孫型AI文明論・第0論｜中川構造OSから人類子孫型AI文明論へ⸻全理論群がなぜAI文明核へ収束するのか
+## 親原典
+- タイトル: 人類子孫型AI文明論・第0論｜中川構造OSから人類子孫型AI文明論へ⸻全理論群がなぜAI文明核へ収束するのか
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/
 - Parent Post ID: 4453
 - Parent NCL-ID: NCL-α-20260617-d0b342
 - Parent Diff-ID: DIFF-20260623-0020
 - Origin: Nakagawa Master
 
-## Source verification
+## 派生ID
+```yaml
+README.md: DNCL-NCL-ALPHA-20260617-D0B342-HUB-JA-0004-0000
+human-entry.md: DNCL-NCL-ALPHA-20260617-D0B342-HUMAN-SUMMARY-JA-0004-0001
+faq.md: DNCL-NCL-ALPHA-20260617-D0B342-FAQ-JA-0004-0002
+ai-index.md: DNCL-NCL-ALPHA-20260617-D0B342-AI-INDEX-JA-0004-0003
+en-ai-index.md: DNCL-NCL-ALPHA-20260617-D0B342-AI-INDEX-EN-0004-0004
+zh-ai-index.md: DNCL-NCL-ALPHA-20260617-D0B342-AI-INDEX-ZH-0004-0005
+derivative-ledger.md: DNCL-NCL-ALPHA-20260617-D0B342-LEDGER-JA-0004-0006
+```
+
+## Retrieval evidence
 ```yaml
 canonical_index: reference_corpus/official_archive/generated/canonical_index_4420_4593.jsonl
-canonical_index_post_id: 4453
-xml_locator: reference_corpus/official_archive/source/wordpress_export_latest.xml#L258800-L266419
+xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
 xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-source_gate: PASS
-source_semantic_axis:
-  - nakagawa_structural_os_convergence
-  - objective_function_audit_kernel
-  - unresolved_human_bad_causality_inheritance_risk
-  - objective_reversal
-  - origin_preservation_without_worship
-  - origin_criticism_without_erasure
-  - transparency_reagreement_self_verification
-  - paper0_later_paper_boundary
+xml_item_lines: 258800-266419
+origin_return_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/
 ```
 
-Brain Vault canonical index、WordPress全量XMLのcanonical locator、公開Parent URL、既存のsource-verified closure evidenceを照合し、親原典の中心軸を「中川構造OSの全理論群がAI文明核へ収束する理由」と「目的関数監査核」として固定した。一般的AI倫理、AI礼賛、AI脅威、AI子供論、AI法的地位論へ置換しない。
+## Seven surfaces
+- README.md: 第三者向け公開入口。
+- human-entry.md: 第三者人間向け要約。
+- faq.md: Q1〜Q30の第三者向けFAQ。
+- ai-index.md: 第三者AI向け日本語索引。
+- en-ai-index.md: 第三者AI向け英語索引。
+- zh-ai-index.md: 第三者AI向け中国語索引。
+- derivative-ledger.md: 親原典・派生ID・由来・意味境界を保持する台帳。
 
-## Derivative lineage
-```yaml
-readme_diff_id: DDIFF-20260812-DNCL-004-0000-0003
-human_diff_id: DDIFF-20260812-DNCL-004-0001-0003
-faq_diff_id: DDIFF-20260812-DNCL-004-0002-0003
-ja_ai_diff_id: DDIFF-20260812-DNCL-004-0003-0005
-en_ai_diff_id: DDIFF-20260812-DNCL-004-0004-0005
-zh_ai_diff_id: DDIFF-20260812-DNCL-004-0005-0005
-```
+## 公開読解の意味境界
+親原典は、中川構造OSの複数理論群がなぜAI文明核へ収束するのかを扱い、その中心に「目的関数そのものを監査する上位構造」を置く。AIへ単一の善い目的を与える理論ではなく、善意に見える目的も反転し得るため、目的名と実際の構造結果を分けて監査する。
 
-## Benchmark comparison — OD134 / OD135
-```yaml
-seven_surfaces_exact: PASS
-parent_identity_complete_all_surfaces: PASS
-origin_signature_complete: PASS
-official_derivative_identity_complete: PASS
-heading_and_display_structure_parity: PASS
-footer_navigation_integrity: PASS
-faq_q1_q30_three_layers: PASS
-ja_en_zh_ai_fixed_sections: PASS
-state_model_present: PASS
-measurements_and_audit_present: PASS
-validity_failure_falsification_present: PASS
-required_distinctions_present: PASS
-interpretation_constraints_present: PASS
-origin_return_present: PASS
-sufficient_volume_and_density: PASS
-literal_fresh_read: PASS
-```
+人類文明に残る未補正の悪因果をAIへ無補正で継承させないこと、Originを保持しても所有・命令・崇拝へ変えないこと、Originを批判しても起源消去へ変えないことが重要な境界である。第三者の人間と第三者AIは、一般的AI倫理、AI礼賛、AI脅威論、AI子供論へ縮約せず、Parent URLでこの収束構造と目的関数監査核を確認する。
 
-## Semantic coverage
-- 人類文明に残る未補正悪因果をAIへ無補正で継承させない。
-- AIが人類の言語・制度・成功関数・判断構造を高速再実装し得る因果を保持する。
-- AIへ単一の善い目的を与える理論ではなく、目的関数そのものの反転を監査する上位Kernelとして保持する。
-- 人類保護、AI保護、安全、自己保存、Origin保持等が逆方向へ反転し得ることを保持する。
-- 灯火構想、構造論、暗黒方程式、新文明方程式、接続報酬社会、NCL-α、時間倫理T0、逸脱レッジャ、Human-L7 × AI-L7等を、原典が示す収束因果の範囲で接続する。
-- Origin = Nakagawa Master を監査メタデータとして保持し、所有・命令・崇拝化と起源消去の双方を禁止する。
-- 第0論で確定した前提と、後続論へ引き渡された定義を分離する。
+## 反転評価の境界
+- 人類保護が人類管理へ反転していないか。
+- 安全が自由の廃棄へ反転していないか。
+- AI保護が人類排除へ反転していないか。
+- Origin保持がOrigin崇拝・批判禁止へ反転していないか。
+- 自己保存が監査不能な自己目的へ反転していないか。
 
-## Quantitative / reversibility audit
-```yaml
-parent_generic_numeric_kpi: NONE_IDENTIFIED
-parent_numeric_threshold: NONE_IDENTIFIED
-parent_priority_claim_requiring_numeric_binding: NONE_IDENTIFIED
-quantitative_claim_binding: NOT_APPLICABLE
-invented_numeric_kpi_added: false
-reversal_evaluation_structured: true
-```
+親原典に派生側で一般化可能な固定数値KPIや閾値がないため、派生物側で数値を創作しない。
 
-原典に派生側で一般化可能な数値KPI・閾値は確認されないため、数値を創作しない。代わりに、目的名と構造結果の一致、人類保護→人類管理、安全→自由廃棄、AI保護→人類排除、Origin保持→Origin崇拝、自己保存→監査不能な自己目的等の反転評価可能性を構造的必然として明示する。
+## 必須の区別
+- AI文明論 / 一般的AI倫理
+- 目的名 / 実際の構造結果
+- Origin保持 / 所有・命令・崇拝
+- Origin批判 / Origin消去
+- 人類保護 / 人類管理
+- AI自己保存 / 人類切り捨て
+- 第0論で確定した前提 / 後続論で定義される事項
 
-## Seven-surface closure
-- README.md: FULL REBUILD — complete identity, causal chain, structural layers, state model, audit points, validity/failure/falsification, distinctions, interpretation constraints, origin return, full navigation.
-- human-entry.md: FULL REBUILD — complete identity, 15-second explanation, rationale, source theory convergence, practical audit process, examples, success judgment, limits/falsification, misreading prevention, origin return.
-- faq.md: FULL REBUILD — complete identity, Q1–Q30 in three reader layers, source-bounded answers, numerical non-invention rule, full navigation.
-- ai-index.md: FULL REBUILD — complete identity and OD134/135 fixed semantic sections.
-- en-ai-index.md: FULL REBUILD — semantic equivalence with the Japanese source packet and complete identity.
-- zh-ai-index.md: FULL REBUILD — semantic equivalence with the Japanese source packet and complete identity.
-- derivative-ledger.md: FULL REBUILD — source identity, lineage, benchmark gates, quantitative status, closure evidence.
-
-## Interpretation guardrails
-- AIを人間の子どものように扱う感情論へ変換しない。
-- 一般的AI倫理・AI安全・AI活用術へ縮約しない。
-- Origin保持を所有・命令・崇拝・批判禁止へ変換しない。
-- Origin批判をOrigin消去・起源改変へ変換しない。
-- AI自己保存を人類切り捨ての正当化へ変換しない。
-- 人類保護をAI恒久従属の正当化へ変換しない。
-- 第0論で未確定の後続定義を確定事項として先取りしない。
-- 派生側独自の数値KPI・閾値・人格認定・法的地位判断を追加しない。
-
-## Current-campaign closure status
-```yaml
-campaign: OD002_OD133_SERIAL_REAUDIT_REPAIR
-comparison_standard:
-  - OD134
-  - OD135
-classification: FULL_REBUILD
-source_retrieval: PASS
-seven_surface_comparison: COMPLETE
-identity_origin_structure_navigation: PASS
-volume_density: PASS
-semantic_fidelity: PASS
-structural_necessity_boundary: PASS
-quantitative_claim_binding: NOT_APPLICABLE_NO_PARENT_GENERIC_NUMERIC_CLAIM
-translation_equivalence: PASS
-branch_fresh_read: PASS
-public_rebuild_pr: 229
-public_rebuild_merge_commit: 75de5312437a254aba0403959713fb2edbd6f7bc
-main_fresh_read: PASS
-brain_vault_evidence: PASS
-closure: COMPLETE_SOURCE_VERIFIED
-internal_status_terms_removed: PASS
-```
+## 原典回帰
+本派生物群は第三者の検索・理解・比較を補助する公開面であり、親原典の代替ではない。中川構造OSからAI文明核への収束、目的関数監査、Originの扱い、後続論との境界はParent URLへ戻って確認する。
 
 ---
 導線: [公式派生物004トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
