@@ -57,7 +57,7 @@ interpretation_constraints_present: PASS
 origin_return_present: PASS
 readme_extra_seven_surface_body_section: NONE
 sufficient_volume_and_density: PASS
-literal_fresh_read_required: PENDING_PUBLIC_MERGE
+literal_fresh_read_required: PASS_MAIN
 ```
 
 ## Seven responsibility conditions — epistemic status
@@ -90,13 +90,13 @@ quantitative_claim_binding: PASS_SOURCE_BOUND_ENUMERATION
 - 法的責任判断、人物評価、派生側独自KPIを追加しない。
 
 ## Seven-surface closure
-- README.md: FULL REBUILD — complete identity, causal chain, structural layers, state model, seven source-defined conditions, audit points, validity/boundary/failure/falsification, distinctions, interpretation constraints, origin return, benchmark footer.
-- human-entry.md: FULL REBUILD — complete identity, 15-second explanation, seven conditions without scoring, practical process, applications, success judgment, limits/falsification, misreading prevention, origin return.
-- faq.md: FULL REBUILD — complete identity, Q1–Q30 in three reader layers, explicit non-scoring treatment of seven conditions, full benchmark footer.
-- ai-index.md: FULL REBUILD — complete identity, all OD134/135 fixed semantic sections, source-bounded enumeration status.
-- en-ai-index.md: FULL REBUILD — semantic equivalence with Japanese packet and complete identity.
-- zh-ai-index.md: FULL REBUILD — semantic equivalence with Japanese packet and complete identity.
-- derivative-ledger.md: FULL REBUILD — identity, source evidence, lineage, benchmark gates, epistemic status, closure evidence.
+- README.md: FULL REBUILD — PASS.
+- human-entry.md: FULL REBUILD — PASS.
+- faq.md: FULL REBUILD — PASS Q1-Q30 / three layers.
+- ai-index.md: FULL REBUILD — PASS fixed sections.
+- en-ai-index.md: FULL REBUILD — PASS semantic equivalence.
+- zh-ai-index.md: FULL REBUILD — PASS semantic equivalence.
+- derivative-ledger.md: FULL REBUILD — PASS.
 
 ## Interpretation guardrails
 - 「問題を言うな」という抑圧論へ変換しない。
@@ -122,11 +122,12 @@ semantic_fidelity: PASS
 structural_necessity_boundary: PASS
 quantitative_claim_binding: PASS_SOURCE_BOUND_ENUMERATION_NOT_SCORE
 translation_equivalence: PASS
-branch_fresh_read: PENDING
-public_main_merge: PENDING
-main_fresh_read: PENDING
-brain_vault_evidence: PENDING
-closure: OPEN_UNTIL_MAIN_VERIFIED
+branch_fresh_read: PASS
+public_rebuild_pr: 231
+public_rebuild_merge_commit: a0f7bdab5f5914ea66495c8c8a391f7d02053c1c
+main_fresh_read: PASS
+brain_vault_evidence: TO_BE_RECORDED_AFTER_FINAL_LEDGER_PUBLICATION
+closure: COMPLETE_CONTENT_PENDING_EVIDENCE_RECORD
 ```
 
 ---
