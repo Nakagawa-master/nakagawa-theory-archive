@@ -127,8 +127,7 @@ public_rebuild_pr: 241
 public_rebuild_merge_commit: ad6d99966cd27e317dc87a02d317fa50ac7028c9
 main_fresh_read: PASS
 closure: COMPLETE
-next_cursor: OD010
 ```
 
 ---
-導線: [公式派生物009トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [公式派生物009トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
