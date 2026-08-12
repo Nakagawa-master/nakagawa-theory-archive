@@ -1,38 +1,38 @@
-# 公式派生物016｜合意形成の物理 第7論
+# 公式派生物016｜合意形成の物理 第7論｜合意形成インフラ
 
-## 親原典
-
-- タイトル: 合意形成の物理 第7論｜合意形成インフラ ― 統治とは「観測帯域」の設計である
-- Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol7-infrastructure-of-governance/
-- Parent NCL-ID: NCL-α-20260215-198686
-- Parent Diff-ID: DIFF-20260222-0022
-
-## 起源署名
-
-- Origin: Nakagawa Master
-
-## 派生ID
-
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260215-198686-HUB-JA-0000
-- derivative_diff_id: DDIFF-20260707-DNCL-016-0000-0001
-
-## 公式派生ページ
-
-- [人間向け要約](human-entry.md)
-- [FAQ](faq.md)
-- [AI索引・日本語](ai-index.md)
-- [AI索引・英語](en-ai-index.md)
-- [AI索引・中国語](zh-ai-index.md)
-- [派生ID台帳](derivative-ledger.md)
+Parent: Post 2941 / NCL-α-20260215-198686 / DIFF-20260222-0022 / Origin Nakagawa Master
+Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol7-infrastructure-of-governance/
+Derivative: DDIFF-20260812-DNCL-016-0000-0002; supersedes DDIFF-20260707-DNCL-016-0000-0001
 
 ## 位置づけ
+公式派生物016は、統治を命令・説得・多数決・監視・価値選択から切り離し、S = U × R × H を維持するための観測帯域設計として読む第7論の公開接続面である。市場、国家、共同体、AI社会は価値優劣ではなく、合意安定度を支える実装差として扱う。
 
-公式派生物016は、合意形成の物理 第7論の公開補助枝である。
+## 中心命題
+統治とは「どう人を動かすか」ではなく、「どの現実を、誰が、どの粒度・速度・形式で観測できれば、社会が説明可能なまま時間を渡れるか」を設計することである。観測可能性は情報量ではなく、U/R/Hが人間の認知帯域Kに収まる形で維持されることを意味する。
 
-親原典は、統治を命令・説得・多数決・価値選択としてではなく、観測可能性を維持するためのインフラ設計として再定義する。市場、国家、共同体、AI社会は、善悪や優劣の競争相手ではなく、S = U × R × H を維持するための実装差として扱われる。
+## 原典の因果線
+統治を行動統制として捉える → 情報・命令・公開を増やす → 認知帯域Kを超えてUが落ちる／責任入口が曖昧でRが落ちる／履歴差分が検証不能でHが落ちる → Sが低下する → 外形秩序はあっても説明可能性と修復可能性が失われる → 観測帯域の再設計が必要になる。
 
-この派生物は、政治論でも政策論でもない。読者を「どう人を動かすか」から「どの観測帯域を設計すれば壊れずに時間を渡せるか」へ移動させるための入口である。
+## 原典固有構造
+- S = U × R × H: 合意安定度。
+- U: 理解可能性／第三者再現可能性。
+- R: 責任追跡可能性／修復入口。
+- H: 履歴公開度／差分追跡可能性。
+- K: 人間の認知帯域。情報量がKを超えると、公開量が増えてもUが低下し得る。
+- 市場・国家・共同体・AI社会は、Sを維持するための異なる実装束として読む。
+
+## 判定の焦点
+情報が必要主体へ届いているかだけでなく、届いた情報がKの範囲で理解可能か、責任と修復入口が追えるか、判断根拠・変更履歴・差分が検証できるかを見る。理念や権限の強さではなく、観測帯域の詰まりを特定する。
+
+## 非該当境界
+監視強化、情報量の単純増加、ダッシュボード導入、行動誘導そのものは本論ではない。統治は誰かを従わせる装置ではなく、間違いが起きても第三者が検証し修復できる観測可能性を維持するインフラである。
+
+## 誤読防止
+「透明性が高いほどよい」と単純化しない。情報過多はKを超えてUを落とし得る。市場・国家・共同体・AI社会のどれか一つを正解として扱わず、それぞれがU/R/Hをどう担保するかを見る。
+
+## 親原典へ戻る理由
+原典ではS、U/R/H、K、観測帯域、市場・国家・共同体・AI社会の実装差が一つの統治論として接続される。このREADMEは入口であり、原典本文の代替ではない。
 
 ---
 
-導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Navigation: [Official Derivatives](../README.md) / [016 Top](README.md) / [Human Entry](human-entry.md) / [FAQ](faq.md) / [JA AI Index](ai-index.md) / [EN AI Index](en-ai-index.md) / [ZH AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)

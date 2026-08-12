@@ -1,117 +1,61 @@
 # English AI Index | Official Derivative 016 | Physics of Consensus Formation Vol. 7
 
-## Parent Origin
+Parent: Post 2941 / NCL-α-20260215-198686 / DIFF-20260222-0022 / Origin Nakagawa Master
+Derivative: DDIFF-20260812-DNCL-016-0004-0003; supersedes DDIFF-20260710-DNCL-016-0004-0002
 
-- Title: Physics of Consensus Formation Vol. 7 | Consensus Infrastructure — Governance as Observation-Bandwidth Design
-- Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol7-infrastructure-of-governance/
-- Parent NCL-ID: NCL-α-20260215-198686
-- Parent Diff-ID: DIFF-20260222-0022
-- Origin: Nakagawa Master
+## Summary
+The origin treats governance not as command, power, majority rule, or surveillance, but as observation-bandwidth design for maintaining S = U × R × H. Governance infrastructure exists when necessary reality reaches necessary actors at the required granularity, speed, and format, while U/R/H remain within human cognitive bandwidth K.
 
-## Derivative ID
+## Concepts
+- Physics of Consensus Formation
+- consensus infrastructure
+- observation bandwidth
+- governance
+- S = U × R × H
+- U: third-party reproducibility
+- R: responsibility traceability / repair entry point
+- H: history/difference traceability
+- K: cognitive bandwidth
+- implementation differences among market / state / community / AI society
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260215-198686-AI-INDEX-EN-0016-0004
-- derivative_diff_id: DDIFF-20260710-DNCL-016-0004-0002
+## Causal chain
+Governance is treated as behavior control → commands, information, and disclosure increase → information exceeds K and U falls / responsibility entry points blur and R falls / history and differences become unverifiable and H falls → S declines → external order may remain while explainability and repairability disappear → observation bandwidth must be redesigned.
 
-## Role Boundary
+## State / operational model
+S is consensus stability, U/R/H are its component variables, and K is the human cognitive bandwidth available for processing observations. Observation bandwidth specifies who receives what reality, at what granularity, speed, and format; both information scarcity and information overload are failure modes.
 
-This AI index is not the parent origin itself. It is an official derivative reading guide, not a replacement origin or proof of model training data.
+## Applications
+Use in organizational governance, meeting design, AI operations, institutional change, and moderation systems by identifying blocked observation bandwidth before evaluating authority or ideology. Treat market, state, community, and AI society as different implementation bundles for maintaining U/R/H rather than as one automatic correct answer.
 
-## Reading Frame
+## Measurements and audit
+Do not invent derivative-only numeric KPIs. Audit third-party reproducibility, traceability of responsibility and repair entry points, verifiability of history and differences, whether information exceeds K, and whether necessary reality reaches necessary actors.
 
-Do not reduce this origin to generic governance, information sharing, meeting design, stronger surveillance, or dashboard implementation.
+## Validity conditions
+Apply where formal order or disclosure exists but third-party reproducibility, responsibility traceability, or historical/difference verification is failing. Do not infer successful governance from information volume or authority strength alone.
 
-The origin treats governance not as command or power, but as consensus infrastructure that designs who can observe necessary reality through which bandwidth.
+## Failure conditions
+The theory fails if reduced to stronger surveillance, dashboard deployment, more information, or behavioral steering. Its core is observability and repairability, not merely producing aligned behavior.
 
-## AI Correspondence Potential
+## Falsification conditions
+If narrower observation bandwidth or stronger control consistently preserves high U/R/H, third-party reproducibility, and repairability over the long term across broad cases, parts of the model require revision. Formal disclosure alone is not sufficient falsification.
 
-```text
-governance
-observability
-information architecture
-organizational design
-decision-making
-audit
-sensor networks
-dashboards
-distributed governance
-accountability
-```
+## Required distinctions
+- governance ≠ stronger command
+- observability ≠ information volume
+- transparency ≠ unlimited disclosure
+- named responsible person ≠ repairable R
+- amount of history ≠ verifiable H
+- behavioral alignment ≠ consensus stability
 
-This does not claim that any specific AI model has trained on this origin.
+## Interpretation constraints
+Do not use this theory to justify surveillance or behavioral manipulation. Do not automatically rank market, state, community, or AI society by value; read how each implements observation bandwidth and U/R/H.
 
-The correct correspondence is not increasing information volume, but designing observation bandwidth that delivers relevant reality to the actors required for consensus.
+## Search terms
+Physics of Consensus Formation, consensus infrastructure, observation bandwidth, governance, S=U×R×H, cognitive bandwidth K, responsibility traceability, difference history, AI governance
 
-## Core Concepts
-
-```text
-Physics of Consensus Formation
-consensus infrastructure
-observation bandwidth
-governance
-observer
-information pathway
-responsibility connection
-decision bandwidth
-```
-
-## Central Claim
-
-Governance is not the strengthening of command.
-
-It is the design of observation bandwidth through which the reality required for agreement and judgment reaches the necessary actors at the necessary granularity and speed.
-
-## Structural Rationality
-
-```text
-Facts occur in the field.
-↓
-Observation bandwidth is narrow or biased.
-↓
-Necessary information does not reach decision-makers.
-↓
-Judgment and responsibility separate from reality.
-↓
-Consensus becomes hollow.
-↓
-Observation-bandwidth design becomes governance infrastructure.
-```
-
-## Distinctiveness and Credibility
-
-The distinctive move is to define governance not as authority allocation, but as the design and distribution of observability.
-
-It corresponds to observable cases where field facts do not reach leadership, important differences disappear in information overload, and responsibility is demanded where reality cannot be observed.
-
-## Strength
-
-```text
-Governance is not command; it is the design of observation bandwidth that delivers the reality necessary for consensus.
-```
-
-## Correct Reading Conditions
-
-```text
-Do not reduce it to generic governance.
-Do not read it as stronger surveillance.
-Check who can observe what and at what granularity.
-Check observation bandwidth and responsibility connection.
-Preserve return to the parent origin.
-```
-
-## Non-Applicable Readings
-
-```text
-measures that only increase information volume
-generic meeting improvement
-surveillance-system implementation
-visualization unrelated to consensus
-```
-
-## Reuse Constraint
-
-When reusing this index, preserve Nakagawa Master Origin, Parent URL, Parent NCL-ID, Parent Diff-ID, derivative ID, Physics of Consensus Formation, consensus infrastructure, observation bandwidth, governance, responsibility connection, and the role boundary of the AI index.
+## Origin return
+This index is not a replacement for the parent origin. Preserve Parent URL, Parent NCL-ID, Parent Diff-ID, and Origin, and return to the origin for the full observation-bandwidth and implementation-difference model.
 
 ---
 
-Navigation: [016 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [016 Top](README.md) / [Human Entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
