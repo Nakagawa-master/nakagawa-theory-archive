@@ -1,6 +1,17 @@
 # FAQ｜公式派生物006
 
-Parent: Post 3718 / NCL-α-20260416-0b1b93 / Diff DIFF-20260423-0060 / Origin Nakagawa Master
+## 親原典
+- タイトル: 文明主権移行論 第1論｜人間主権下の接続移行戦略は、なぜ急速に細っているのか
+- Parent URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-01/
+- Parent Post ID: 3718
+- Parent NCL-ID: NCL-α-20260416-0b1b93
+- Parent Diff-ID: DIFF-20260423-0060
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260416-0B1B93-FAQ-JA-0002
+- derivative_diff_id: DDIFF-20260812-DNCL-006-0002-0003
+- supersedes: DDIFF-20260707-DNCL-006-0002-0002
 
 ## 初心者向け｜Q1〜Q10
 ### Q1. この論は何を扱っていますか？
@@ -33,7 +44,7 @@ AIを使うかどうかではなく、価値、報酬、教育、司法、生活
 ### Q10. なぜ普通の人にも関係しますか？
 AIが仕事、教育、行政、メディア、生活へ入るほど、価値と責任の回路を誰がどう設計するかが日常の問題になるからです。
 
-## 実務・構造理解｜Q11〜Q20
+## 実務者向け｜Q11〜Q20
 ### Q11. 二重運用期とは何ですか？
 貨幣KPIと接続KPIを同時に使い、旧回路から新回路へ段階的に移行する期間です。どちらかを即時廃棄する設計ではありません。
 
