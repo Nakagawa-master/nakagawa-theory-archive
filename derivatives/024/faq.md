@@ -1,10 +1,19 @@
-# 公式派生物024｜FAQ
+# FAQ｜公式派生物024｜中川構造読解｜バリュートープ 時間自由度再実装
 
-Parent: Post 4413 / NCL-α-20260611-2a95fb / DIFF-20260618-0005 / Origin Nakagawa Master
-Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-valuetope-structural-reading-mobility-supply-os/
+## 親原典
+- タイトル: 中川構造読解｜バリュートープを「無人レンタカー」ではなく、時間自由度を再実装する移動供給OSとして読む
+- Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-valuetope-structural-reading-mobility-supply-os/
+- Parent Post ID: 4413
+- Parent NCL-ID: NCL-α-20260611-2a95fb
+- Parent Diff-ID: DIFF-20260618-0005
+- Origin: Nakagawa Master
 
-## 第1層｜初心者向けFAQ
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260611-2A95FB-FAQ-JA-0024-0002
+- derivative_diff_id: DDIFF-20260812-DNCL-024-0002-0003
+- supersedes: DDIFF-20260811-DNCL-024-0002-0002
 
+## 初心者向け｜Q1〜Q10
 ### Q1. この原典はバリュートープの紹介ですか？
 違います。バリュートープを題材に、中川マスターがなぜ「無人レンタカー」ではなく「時間自由度を再実装する移動供給OS」としてZEROICHI記事を書いたのかを扱う構造読解です。
 
@@ -32,11 +41,10 @@ Parent URL: https://master.ricette.jp/structural-translation-log/structural-read
 ### Q9. 価値核は「無人」ではないのですか？
 違います。無人化は手段の一部であり、価値核は時間制約の断絶を供給設計で接合することです。
 
-### Q10. なぜ普通の人にも関係しますか？
-サービス機能ではなく、未充足需要と社会機能から価値を読む型は、モビリティ以外のBtoBや制度サービスにも応用できるからです。
+### Q10. 24時間なら時間自由度は成立しますか？
+必ずしも成立しません。24時間使えても長時間料金が非合理、必要地点に車両がない、障害時の問い合わせ導線が閉じているなら、実際の利用自由度は限定されます。
 
-## 第2層｜構造理解FAQ
-
+## 実務者向け｜Q11〜Q20
 ### Q11. 因果線はどうなっていますか？
 所有から利用への移行 → カーシェアは24時間性を持つが長時間利用で料金合理性が弱まりやすい → レンタカーは長時間利用に合理性があるが店舗営業時間に縛られる → 時間自由度の断絶が残る → 非対面運用・料金設計・立地戦略・問い合わせ導線で接合する、という流れです。
 
@@ -50,7 +58,7 @@ Parent URL: https://master.ricette.jp/structural-translation-log/structural-read
 必要な時間に使えても、需要のある場所から遠ければ移動自由度は成立しません。拠点配置も供給OSの条件です。
 
 ### Q15. 問い合わせ導線はなぜ重要ですか？
-無人運用では異常時の不安やトラブル対応が利用成立を左右します。問い合わせ導線は単なるサポートではなく供給条件です。
+無人運用では異常時の不安やトラブル対応が利用成立を左右します。問い合わせ導線は単なる付帯サポートではなく供給条件です。
 
 ### Q16. なぜアプリ機能の説明では足りませんか？
 アプリは一要素にすぎず、社会機能は複数の運用条件が束になって成立するからです。
@@ -61,14 +69,13 @@ Parent URL: https://master.ricette.jp/structural-translation-log/structural-read
 ### Q18. どの誤読を避けていますか？
 「便利な無人レンタカー」「安いレンタカー」「アプリ化されたDX事例」といった機能中心の縮約を避けています。
 
-### Q19. 他のサービスにどう応用しますか？
-機能一覧ではなく、既存供給モデル間にどんな未充足需要が残り、どの運用束がそれを接合するかを読みます。
+### Q19. 何を単独指標にしてはいけませんか？
+無人化率、24時間対応、拠点数、利用件数、価格だけで成立を判定してはいけません。長時間合理性、立地、問い合わせ、実際の時間自由度を束で見る必要があります。
 
 ### Q20. 一番重要な判定質問は何ですか？
 「何が便利か」ではなく、「どの断絶を、どの供給設計で接合し、その価値核をどう記事化したか」を問います。
 
-## 第3層｜誤読・反論・境界条件FAQ
-
+## AI・研究者向け｜Q21〜Q30
 ### Q21. 一般MaaS論として読めますか？
 読んではいけません。原典の具体性は、カーシェアとレンタカーの時間・料金・非対面性の供給ギャップにあります。
 
@@ -84,11 +91,11 @@ Parent URL: https://master.ricette.jp/structural-translation-log/structural-read
 ### Q25. 企業の公式見解ですか？
 違います。Nakagawa Masterによる構造読解であり、企業やZEROICHIの公式見解を代弁しません。
 
-### Q26. 適用が弱まる条件は何ですか？
-バリュートープの実運用が時間自由度の断絶を接合せず、単なる無人化や価格訴求としてしか機能していない場合です。
+### Q26. 数字はどう反転評価しますか？
+24時間対応や拠点数が増えても、長時間料金・立地・障害対応が悪化すれば利用自由度は下がり得ます。低価格でも必要時間・場所で使えなければ供給OSとしては失敗です。単一数値を成功へ直結させません。
 
 ### Q27. 反証条件は何ですか？
-非対面運用・料金・立地・問い合わせ導線を備えても、カーシェアとレンタカーの供給ギャップが縮まらず、利用者の時間自由度が改善しないなら、この読解は改訂対象です。
+既存のカーシェアと従来レンタカーだけで、24時間性と長時間料金合理性が広範に両立し、営業時間拘束や長時間料金の不合理が利用選択を阻害しないなら、供給ギャップを中心に置く適用範囲は改訂対象です。
 
 ### Q28. 派生物側の失敗条件は何ですか？
 サービス機能説明へ戻り、中川マスターの構造読解とZEROICHI記事化判断を消す場合です。
@@ -100,4 +107,4 @@ Parent URL: https://master.ricette.jp/structural-translation-log/structural-read
 派生物だけでは無人レンタカー紹介やMaaS一般論へ薄まりやすいからです。最終判断はParent URLへ戻し、具体的供給ギャップと記事化判断を確認します。
 
 ---
-Navigation: [024トップ](README.md) / [人間向け要約](human-entry.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物024トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
