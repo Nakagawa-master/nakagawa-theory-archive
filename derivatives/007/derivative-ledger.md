@@ -155,14 +155,15 @@ footer_navigation: PASS
 faq_q1_q30_three_layers: PASS
 ja_en_zh_structure_equivalence: PASS
 translation_semantic_equivalence: PASS
-volume_density: PASS_TARGETED_ABOVE_OD134_OD135_REFERENCE
+volume_density: PASS_ABOVE_OD134_OD135_MAX_REFERENCE
 source_fidelity: PASS
 structural_necessity_boundary: PASS
 quantitative_claim_binding: PASS_SOURCE_BOUND_ENUMERATION_COUNT_7
-fresh_read_branch: PENDING_POST_WRITE
-public_main_merge: PENDING_POST_FRESH_READ
-main_fresh_read: PENDING_POST_MERGE
-brain_vault_closure_evidence: PENDING_POST_MAIN_VERIFY
+fresh_read_branch: PASS
+public_main_merge: PASS_PR_239_MERGE_9d3c0c61cf971e4bc10fc51d1326ca84b6e6185b
+main_fresh_read: PASS
+main_surface_blob_match: PASS_ALL_SEVEN
+brain_vault_closure_evidence: READY_TO_RECORD
 next_cursor_after_complete: OD008
 ```
 
