@@ -30,14 +30,14 @@ jobs:
               if not p.exists():
                   raise SystemExit(f"missing: {p}")
               text = p.read_text(encoding="utf-8")
-              m = re.search(r'(?ms)^## 反証・改訂条件\s*\n(.*?)(?=^## )', text)
+              m = re.search(r'(?ms)^## 反証(?:・改訂)?条件\s*\n(.*?)(?=^## )', text)
               if not m:
                   raise SystemExit(f"missing section: {p}")
               body = m.group(1).strip()
               blocks = [b.strip() for b in re.split(r'\n\s*\n', body) if b.strip()]
 
-              # 134/135 benchmark: the section states the parent origin's integrated-audit
-              # summary and does not add derivative-authored falsification theories.
+              # OD134/135 benchmark: state only the parent origin's integrated-audit
+              # summary; do not create a derivative-authored falsification theory.
               selected = None
               for block in blocks:
                   if '統合監査要旨' in block:
@@ -53,10 +53,8 @@ jobs:
                   first = blocks[0] if blocks else ''
                   if first.startswith('- '):
                       first = next((ln[2:] for ln in first.splitlines() if ln.startswith('- ')), first)
-                  # Keep only the first source-specific condition. Make its provenance explicit.
                   selected = '親原典の統合監査要旨では、' + first
 
-              # Remove derivative-side meta clauses if they were accidentally captured.
               selected = re.sub(r'\s*派生側で[^。]*。', '', selected).strip()
               selected = re.sub(r'\s*本派生物側で[^。]*。', '', selected).strip()
               selected = re.sub(r'\s*公式派生物側で[^。]*。', '', selected).strip()
