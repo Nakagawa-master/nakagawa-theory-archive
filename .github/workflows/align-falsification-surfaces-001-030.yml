@@ -7,7 +7,7 @@ on:
       - '.github/workflows/align-falsification-surfaces-001-030.yml'
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   align:
@@ -15,62 +15,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Align explicit FAQ falsification answers
+      - name: Print canonical falsification summaries
         shell: bash
         run: |
           python3 - <<'PY'
           from pathlib import Path
           import re
-
-          matched = []
-          changed = []
-
-          def readme_summary(n):
+          for n in range(1,31):
               t = Path(f'derivatives/{n:03d}/README.md').read_text(encoding='utf-8')
               m = re.search(r'(?ms)^## 反証・改訂条件\s*\n(.*?)(?=^## )', t)
               if not m:
-                  raise SystemExit(f'missing README falsification section: {n:03d}')
+                  raise SystemExit(f'missing: {n:03d}')
               body = m.group(1).strip()
               body = re.sub(r'\s*派生物側で独自の反証条件を追加して原典を別理論へ変えない。\s*$', '', body).strip()
-              return body
-
-          for n in range(1,31):
-              p = Path(f'derivatives/{n:03d}/faq.md')
-              t = p.read_text(encoding='utf-8')
-              summary = readme_summary(n)
-              pattern = re.compile(r'(?ms)^(### Q\d+\.[^\n]*反証[^\n]*\n)(.*?)(?=^### Q\d+\.|^## |^---)')
-              ms = list(pattern.finditer(t))
-              if not ms:
-                  continue
-              matched.append(n)
-              # replace from bottom to top in case a file ever has multiple explicit falsification questions
-              nt = t
-              for m in reversed(ms):
-                  answer = (
-                      '親原典の統合監査要旨が示す反証・改訂可能性は次のとおりです。\n\n'
-                      + summary
-                      + '\n\n公式派生物側で独自の反証条件を追加しません。最終的な意味境界はParent URLへ戻って確認します。\n\n'
-                  )
-                  nt = nt[:m.start()] + m.group(1) + answer + nt[m.end():]
-              if nt != t:
-                  p.write_text(nt, encoding='utf-8')
-                  changed.append(n)
-
-          print('matched FAQ derivatives:', matched)
-          print('changed FAQ derivatives:', changed)
-          if not matched:
-              raise SystemExit('no explicit falsification FAQ questions found')
-          if set(changed) != set(matched):
-              raise SystemExit(f'not all matched FAQs changed: matched={matched} changed={changed}')
+              print(f'<<<OD{n:03d}>>>')
+              print(body)
+              print(f'<<<END{n:03d}>>>')
           PY
-      - name: Commit aligned FAQ answers
-        shell: bash
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- derivatives/{001..030}/faq.md
-          git diff --cached --check
-          git commit -m 'Align OD001-030 FAQ falsification answers to OD134/135 benchmark'
-          git push origin HEAD:main
