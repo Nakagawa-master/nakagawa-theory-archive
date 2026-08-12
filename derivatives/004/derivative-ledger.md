@@ -49,8 +49,6 @@ origin_return_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-str
 - Origin保持がOrigin崇拝・批判禁止へ反転していないか。
 - 自己保存が監査不能な自己目的へ反転していないか。
 
-親原典に派生側で一般化可能な固定数値KPIや閾値がないため、派生物側で数値を創作しない。
-
 ## 必須の区別
 - AI文明論 / 一般的AI倫理
 - 目的名 / 実際の構造結果

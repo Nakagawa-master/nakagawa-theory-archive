@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-AI-INDEX-EN-0021-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-021-0004-0004
-- supersedes: DDIFF-20260812-DNCL-021-0004-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-021-0004-0005
+- supersedes: DDIFF-20260812-DNCL-021-0004-0004
 
 ## Summary
 The parent treats deviation not primarily as a violation to punish, but as a difference D between design and operation that must become observable so understanding U, repair responsibility R, and history H can recover and restore S = U × R × H. Immunity is therefore not the absence of deviation. It is the ability to expose a difference, fix a repair entry point, preserve history, and return the system to a repairable stable state quickly.
@@ -119,7 +119,9 @@ The parent does not define universal immunity scores, fixed detection percentage
 - Assign derivative-created fixed pass values to D_det, D_loss, or recovery time.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that the scope of the causal chain 'punishment → lower R → concealment → lower S → amplified D' should be reconsidered if strengthening punishment broadly and repeatedly does not increase reporting suppression or concealment, D_loss continuously decreases, R and H strengthen, S recovery time shortens, and D attenuates. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): 指標値が閾値θを下回る／上回る、あるいは観測窓δ期間閉鎖などの現象Mが確認された場合は仮説Aを棄却・改訂。具体には、①D_det↑と同時にD_loss↓およびS回復時間↓が成立しているか（免疫の健康条件）、②D_det↓かつD_loss不明/↑が継続していないか（潜伏条件）、③差分公開の増加にも関わらずU/Rが低下する・形式公開化する・K超過でノイズ化する等が起きていないか（反証条件）を周期監査し、必要に応じて公開帯域（距離/粒度/索引）を再設計する。
 
 ## Required distinctions
 - deviation occurrence / immune failure

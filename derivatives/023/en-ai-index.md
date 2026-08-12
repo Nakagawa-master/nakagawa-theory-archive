@@ -10,8 +10,8 @@
 
 ## Derivative identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-AI-INDEX-EN-0023-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-023-0004-0004
-- supersedes: DDIFF-20260812-DNCL-023-0004-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-023-0004-0005
+- supersedes: DDIFF-20260813-DNCL-023-0004-0004
 
 ## Summary
 The parent reads condominium repair reserve funds not as discretionary investment capital but as purpose-bound communal money whose function is to preserve future repair capacity, the shared living base, resident consensus, and explainability. The core question is not return maximization. Nominal balances can remain intact while rising construction, labor, material, and repair costs reduce the amount of actual repair work those balances can purchase. At the same time, communal repair funds cannot freely pursue high-risk strategies because principal preservation, liquidity at repair dates, institutional fit, explainability, and collective decision procedures constrain acceptable operation.
@@ -90,7 +90,9 @@ Numbers are reversal-evaluable. A larger nominal balance can coexist with weaker
 - preserving only the fund structure while dropping the parent’s public deconstruction of why “community fund defense” was foregrounded in the external article.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that the scope of the need to redesign management as 'community-fund defense' may be reconsidered if, despite long-term changes in prices, construction costs, and labor costs, deposit-centered management alone broadly and repeatedly preserves the feasibility of planned repairs, does not increase pressure for lump-sum collections, borrowing, or postponement, and does not damage the community's explanation, consensus, or institutional conditions. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): 本記事が「Fundsの投資商品紹介」「管理組合向け投資推奨」「企業称賛記事」「公開記事の要約・再構成」として読まれる割合が閾値θを上回る、または共同体資金防衛という読解軸が観測窓δ期間内に読者理解として成立しない現象Mが確認された場合は、仮説Aを棄却・改訂。
 
 ## Required distinctions
 - investment product ≠ community fund defense

@@ -10,8 +10,8 @@
 
 ## Derivative ID
 - derivative_ncl_id: DNCL-AKI-011-AI-INDEX-EN-0012-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-012-0004-0004
-- supersedes: DDIFF-20260812-DNCL-012-0004-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-012-0004-0005
+- supersedes: DDIFF-20260812-DNCL-012-0004-0004
 
 ## Summary
 AKI-011 does not treat clarity itself as harmful. It analyzes the bad causality in which an explanation without sufficient structural decomposition produces a sense of completed understanding before the subject is actually understood well enough to be handled, closes inquiry and verification, fixes shallow interpretation into shared vocabulary, shifts the burden of explanation onto challengers, and progressively degrades recognition, judgment, implementation capacity, correctability, and trust.
@@ -104,7 +104,9 @@ Audit the visibility of next questions, establishment conditions, exception cond
 - Add political, medical, legal, or universal scoring claims absent from the origin.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that the adverse-causality hypothesis weakens if simplification and common-vocabulary use spread widely while recognition accuracy, decision accuracy, implementation capacity, revisability, and trust continue to improve, questions about viability conditions, exceptions, falsification, and uncertain areas remain open, and no verification stoppage is observed. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): 未確定領域・実装上の分岐・判定質問・問いを開く設計）で検証・見直しを行う。反証条件：わかりやすい説明が、読者を次の問いへ導き、成立条件・例外条件・反証条件・適用範囲・未確定領域を明示し、判断精度や実装可能性を実際に高めている場合、本稿の仮説Aは当該対象には適用しない。
 
 ## Required distinctions
 - understanding / performance of understanding

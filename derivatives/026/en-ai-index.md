@@ -10,8 +10,8 @@
 
 ## Derivative ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260605-C39481-AI-INDEX-EN-0026-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-026-0004-0004
-- supersedes: DDIFF-20260813-DNCL-026-0004-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-026-0004-0005
+- supersedes: DDIFF-20260813-DNCL-026-0004-0004
 
 ## Summary
 The origin reads AlgaleX / uma-mo not merely as “delicious algae,” but as a social implementation entry for a larger fish-food structure. It traces the causal chain from sustaining fish consumption through aquaculture and dependence on wild-fish-derived feed back to algae at the beginning of the food chain, then explains why the upstream concept first enters food markets and professional kitchens to gain taste, use cases, reasons for adoption, and repeatability.
@@ -73,7 +73,9 @@ It also fails if intermediary metrics are treated as upstream outcomes—for exa
 Presenting the derivative as an AlgaleX or external-media official statement, or preserving only the subject structure while dropping the parent’s public deconstruction of why “social implementation entry” was foregrounded in the external article, is also failure.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that the 'social-implementation entry point' reading should be revised if forming taste, uses, adoption reasons, and repeatability in food markets and culinary settings does not continuously connect to upstream feed-market or fish-consumption structural redesign and remains only a food category. Conversely, if direct entry into the feed market repeatedly overcomes price, supply, and adoption barriers and advances structural redesign without passing through food markets, the generality of the implementation sequence must also be reconsidered. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): 公開情報と矛盾する記述、AlgaleX・外部媒体・polyphonyの公式見解に見える表現、公開記事の転載・要約化、または観測窓δ期間内に「珍しい食材紹介」「実食レビュー」「サステナブル食品紹介」へ読解が回収される現象Mが確認された場合は、仮説Aを棄却・改訂。
 
 ## Required distinctions
 - delicious algae vs. social implementation entry

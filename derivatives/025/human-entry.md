@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260604-6C3CFC-HUMAN-SUMMARY-JA-0025-0001
-- derivative_diff_id: DDIFF-20260813-DNCL-025-0001-0004
-- supersedes: DDIFF-20260812-DNCL-025-0001-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-025-0001-0005
+- supersedes: DDIFF-20260813-DNCL-025-0001-0004
 
 ## 15秒説明
 この原典は、Millyを「営業文面を作るAI」や「企業を探すマッチングサービス」として紹介する記事ではない。製造業が持つ技術能力を市場側の課題語・比較軸へ翻訳し、探索され、比較対象に入り、選定され、信用を補完され、取引可能性へ接続するための市場接続機構として読む構造読解である。

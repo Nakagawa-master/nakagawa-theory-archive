@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-HUMAN-SUMMARY-JA-0023-0001
-- derivative_diff_id: DDIFF-20260813-DNCL-023-0001-0004
-- supersedes: DDIFF-20260812-DNCL-023-0001-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-023-0001-0005
+- supersedes: DDIFF-20260813-DNCL-023-0001-0004
 
 ## 15秒説明
 この原典はFundsの商品紹介ではない。修繕積立金を、個人が収益最大化を目指す投資資金ではなく、共同住宅の将来修繕能力・生活基盤・住民合意・説明可能性を守る目的拘束された共同体資金として読む中川構造読解である。

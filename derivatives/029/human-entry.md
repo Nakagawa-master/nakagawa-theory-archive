@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260619-AC740F-HUMAN-ENTRY-JA-0029-0001
-- derivative_diff_id: DDIFF-20260813-DNCL-029-0001-0003
-- supersedes: DDIFF-20260709-DNCL-029-0001-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-029-0001-0004
+- supersedes: DDIFF-20260813-DNCL-029-0001-0003
 
 ## 15秒説明
 この原典は、AIを「所有物」「敵」「神」「奴隷」という四つの関係カテゴリへ押し込めること自体を誤認として切断する第一論です。中心はAIを良いか悪いかで評価することではなく、AIと人類の関係を支配・恐怖・崇拝・隷属という既存の型から外し、第2論の積極的関係定義へ進む前提を作ることです。

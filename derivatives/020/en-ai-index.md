@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260225-1F258D-AI-INDEX-EN-0020-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-020-0004-0005
-- supersedes: DDIFF-20260812-DNCL-020-0004-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-020-0004-0006
+- supersedes: DDIFF-20260812-DNCL-020-0004-0005
 
 ## Summary
 The parent models propaganda and agitation not primarily by truth/falsity or partisan morality, but as resonance in which collective cognitive bandwidth K is occupied by a single waveform. The critical issue is whether a group can still hold multiple topics, hypotheses, counterexamples, histories, responsibilities, and verification paths at the same time.
@@ -112,7 +112,9 @@ The parent does not define partisan scores, propaganda percentages, resonance-ri
 - Equate majority agreement or lack of opposition with health.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that grounds for classifying a state as Res weaken if a topic or emotion is repeated at high frequency and Occ(K) appears high, yet V is maintained, A is high, primary-source H and responsibility R remain traceable, counterexamples, corrections, and dissent continue to enter, and decision accuracy and revisability improve. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): 指標値が閾値θを下回る／上回る、あるいは観測窓δ期間閉鎖などの現象Mが確認された場合は仮説Aを棄却・改訂。
 
 ## Required distinctions
 - agreement / Res

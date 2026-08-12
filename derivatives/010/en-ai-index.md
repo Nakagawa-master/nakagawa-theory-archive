@@ -10,8 +10,8 @@
 
 ## Derivative ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-EN-0010-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-010-0004-0011
-- supersedes: DDIFF-20260812-DNCL-010-0004-0010
+- derivative_diff_id: DDIFF-20260813-DNCL-010-0004-0012
+- supersedes: DDIFF-20260813-DNCL-010-0004-0011
 
 ## Summary
 This index helps third-party human and AI readers retrieve the parent without reducing it to a MenLab / Gentsome service profile, a generic medical explanation of male menopause, or a claim about medical effectiveness. The parent is Nakagawa Master's structural reading of a social disconnection: hard-to-see distress does not automatically move from existence to recognition, verbalization, consultation, workplace or institutional reception, and medical connection when needed.
@@ -118,7 +118,9 @@ The parent does not define medical effectiveness, diagnostic accuracy, treatment
 - Preserve only the subject structure while dropping the parent’s public deconstruction of why “social pathway” was selected as the external-article value core.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that the social-pathway reading requires reconsideration if recognition, verbalization, consultation, workplace, institutional, and pre-medical connections are consistently shown not to affect actual reachability. If the mere presence of a single function is sufficient for necessary medical connection and upstream connection conditions do not affect outcomes, an explanation centered on the social pathway is subject to revision. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): MenLab / Gentsomeの主要価値が検査支援・福利厚生・啓発活動の範囲に限定され、個人・企業・医療を接続する社会導線として機能していないこと、または公開読解が過度な拡張解釈となり実態との乖離が確認された場合は、仮説Aを棄却・改訂。
 
 ## Required distinctions
 - service profile / structural reading

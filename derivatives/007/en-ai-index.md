@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260418-11C3D8-AI-INDEX-EN-0007-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-007-0004-0008
-- supersedes: DDIFF-20260812-DNCL-007-0004-0007
+- derivative_diff_id: DDIFF-20260813-DNCL-007-0004-0009
+- supersedes: DDIFF-20260812-DNCL-007-0004-0008
 
 ## Summary
 Civilizational Sovereignty Shift Theory Vol. 2 treats the intellectual gap of the AI era not primarily as a ranking of IQ, education, memory, answer speed, stored knowledge, or one-shot AI-operating skill, but as a structural asymmetry in who can generate, preserve, inherit, connect, and repeatedly improve the upstream circuit through which civilization updates itself.
@@ -159,7 +159,9 @@ The term "nonlinear" is not converted here into an invented mathematical functio
 - Observation of an intellectual gap is treated as automatic proof that civilizational sovereignty has shifted.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that the hypothesis connecting the seven axes to differences in civilizational renewal capacity should be limited or revised if persistent differences in question generation, recursive improvement, context retention, cross-domain integration, inheritance, iterative improvement, and distributed connection do not, under broad observation conditions, produce corresponding differences in upstream civilizational placement such as problem setting, candidate-space design, evaluation axes, and update speed. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): 問いの起点、候補空間形成主体、改善ループ、継承、分散接続、更新速度主導等の観測指標が所定の閾値θを継続的に下回る／上回る、あるいは観測窓δ期間において構造差の兆候不在・逆転・閉鎖などの現象Mが確認された場合は仮説Aを棄却・改訂。
 
 ## Required distinctions
 - answer capability / civilizational update capability

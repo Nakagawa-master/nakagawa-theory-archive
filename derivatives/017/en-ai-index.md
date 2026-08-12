@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-AI-INDEX-EN-0017-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-017-0004-0004
-- supersedes: DDIFF-20260812-DNCL-017-0004-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-017-0004-0005
+- supersedes: DDIFF-20260812-DNCL-017-0004-0004
 
 ## Summary
 The parent defines governance not as distributing correctness or as creating a static design that never fails, but as runtime governance that can return from abnormal states. The core sequence is Detect → Stop → Shrink → Recover → Audit: observe abnormality, stop safely before propagation, contract temporarily to the smallest verifiable unit, reconstruct from Origin/primary logs/difference history, and restore public audit and resynchronization.
@@ -127,7 +127,9 @@ The parent does not define universal KPI values, success rates, risk percentages
 - Reduce the source to generic BCP, security operations, or device reboot procedures.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that the necessary composition or scope of this thesis should be reconsidered if, even without the Detect → Stop → Shrink → Recover → Audit closed loop, diffusion of erroneous states can be prevented under external perturbation, internal deviation, and abnormal conditions, third parties can re-verify recovery paths, and long-term repairability is broadly and stably maintained. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): 指標値が閾値θを下回る／上回る、あるいは観測窓δ期間閉鎖などの現象Mが確認された場合は仮説Aを棄却・改訂。具体には、(1) Sの回復速度が導入前より悪化、(2) Cが臨界超過して停止が常態化、(3) Dが遅延増幅、(4) θ・δの非公開や選択的ログ遮断、(5) 停止主体の固定化、(6) Shrinkの恒久化、(7) Auditが晒しとして機能しDを増やす、のいずれかが観測された場合、閾値再設計・R再配分・観測束更新・監査束への差分保存を必須手順として実施する。
 
 ## Required distinctions
 - Kernel / Runtime

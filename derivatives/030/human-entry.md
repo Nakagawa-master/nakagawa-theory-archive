@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260629-F16938-HUMAN-ENTRY-JA-0030-0001
-- derivative_diff_id: DDIFF-20260813-DNCL-030-0001-0006
-- supersedes: DDIFF-20260813-DNCL-030-0001-0005
+- derivative_diff_id: DDIFF-20260813-DNCL-030-0001-0007
+- supersedes: DDIFF-20260813-DNCL-030-0001-0006
 
 ## 15秒説明
 この親原典は、MOTAを「高く売れる便利な車買取サービス」として紹介する記事ではない。車の売却価格は車両価値だけでなく、情報非対称、買い手間競争、価格提示、電話・交渉・比較負担によって形成されると読み、**競争と低負担を同時に成立させる市場設計**を価値核として捉える中川構造読解である。

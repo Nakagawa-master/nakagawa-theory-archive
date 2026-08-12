@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260215-198686-AI-INDEX-EN-0016-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-016-0004-0003
-- supersedes: DDIFF-20260710-DNCL-016-0004-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-016-0004-0004
+- supersedes: DDIFF-20260812-DNCL-016-0004-0003
 
 ## Summary
 The parent treats governance not as command, power, majority rule, surveillance, or behavioral steering, but as observation-bandwidth design for maintaining `S = U × R × H`. Governance infrastructure exists when the reality needed for judgment and repair reaches the actors who need it, at a usable granularity, speed, and format, while interpretability, responsibility/repair traceability, and historical-difference traceability remain usable within human cognitive bandwidth K.
@@ -124,7 +124,9 @@ The parent uses `S = U × R × H` and K as structural variables. The derivative 
 - One institutional form is declared universally superior beyond the parent.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that the bandwidth-design hypothesis or its scope should be revised if, even after information is compressed and organized to fit within K while preserving connections to original materials, responsibility, and differences, U/R/H, S, and repairability repeatedly fail to improve and instead worsen across broad conditions. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): 指標値が閾値θを下回る／上回る、あるいは観測窓δ期間閉鎖などの現象Mが確認された場合は仮説Aを棄却・改訂。
 
 ## Required distinctions
 - governance / behavior control

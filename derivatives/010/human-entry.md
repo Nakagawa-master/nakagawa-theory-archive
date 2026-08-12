@@ -12,8 +12,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUMAN-SUMMARY-JA-0010-0001
-- derivative_diff_id: DDIFF-20260813-DNCL-010-0001-0009
-- supersedes: DDIFF-20260812-DNCL-010-0001-0008
+- derivative_diff_id: DDIFF-20260813-DNCL-010-0001-0010
+- supersedes: DDIFF-20260813-DNCL-010-0001-0009
 
 ## 15秒説明
 この原典はMenLab / Gentsomeを紹介する記事ではありません。見えにくい不調が、本人の認識、言語化、相談、職場・制度、必要時の医療へつながる前に脱落する構造を読み、対象の価値を「医療に至る社会導線」として捉える中川構造読解です。

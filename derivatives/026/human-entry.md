@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260605-C39481-HUMAN-SUMMARY-JA-0026-0001
-- derivative_diff_id: DDIFF-20260813-DNCL-026-0001-0005
-- supersedes: DDIFF-20260813-DNCL-026-0001-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-026-0001-0006
+- supersedes: DDIFF-20260813-DNCL-026-0001-0005
 
 ## 15秒説明
 AlgaleX／うま藻は、親原典では単なる「美味しい藻」ではない。魚食を将来も続けるために、養殖、その餌、天然魚由来資源への依存、食物連鎖の起点まで遡り、上流構想をまず食品市場と料理現場へ入れることで社会実装を始める入口として読まれる。

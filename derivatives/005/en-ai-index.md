@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260511-E243BE-AI-INDEX-EN-0005-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-005-EN-0004-0007
-- supersedes: DDIFF-20260812-DNCL-005-EN-0004-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-005-EN-0004-0008
+- supersedes: DDIFF-20260812-DNCL-005-EN-0004-0007
 
 ## Summary
 AKI-001, “Responsibility-Free Problem Raising,” is not a theory for suppressing criticism or requiring every speaker to possess a complete solution. It analyzes bad causality that appears when crisis or defect discourse fails to connect to seven source-defined responsibility conditions: problem location, cause, neglecting actor, repair actor, cost or tradeoff, first implementation action, and falsification condition.
@@ -183,7 +183,9 @@ Reversal evaluation does not count how many of the seven items are present. It c
 - The seven conditions are converted into a derivative-created scoring KPI.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that the applicability or required conditions of AKI-001 should be reconsidered if crisis presentation without explicit seven responsibility conditions nevertheless, across broad conditions and repeated observation, stably increases recipients' decision capacity and field implementation capacity, does not erode trust in problem-raising, does not obstruct the reach of genuinely necessary warnings, and consistently connects to repair. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): の不在）→不安散布→行動不能→実装力の摩耗→問題提起への信頼低下→現状維持の補強」という因果に基づく。 関係─利害X（問題を語る側：発信者・批評空間・危機言説の流通構造）と利害Y（問題を受ける側：読者・現場・当事者・社会の実装能力）が相互に影響する。 再合意─条件Z（判定質問・観測可能な兆候・反証条件・修復可能性への接続）で検証・見直し／反証条件：危機提示が速報・一次通報として後続の検証に接続されている場合、観測事実・仮説境界・次に確認すべき点が明示されている場合、または読者を不安に固定せず判断・行動へ接続している現象Mが確認された場合は、当該言説を「責任なき問題提起」とする仮説Aを棄却・改訂。
 
 ## Required distinctions
 - problem raising / anxiety diffusion

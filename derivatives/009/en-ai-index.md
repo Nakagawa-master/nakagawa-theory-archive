@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260608-5A13AA-AI-INDEX-EN-0009-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-009-0004-0005
-- supersedes: DDIFF-20260812-DNCL-009-0004-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-009-0004-0006
+- supersedes: DDIFF-20260812-DNCL-009-0004-0005
 
 ## Summary
 The parent analyzes a bad-causality structure in which a target value is mistaken for an established future definition and effort is demanded before establishment conditions, causal lines, verification conditions, correction conditions, and responsibility placement have been sufficiently designed. The theory does not reject effort, ambitious targets, or KPIs themselves. It distinguishes a verifiable effort demand from forced effort that makes the field absorb an unverified design.
@@ -127,7 +127,9 @@ The parent defines no universal insufficient-effort rate, fatigue rate, trust ra
 - Exhaustion, silence, or learning shutdown appears while targets, assumptions, and conditions remain unchanged.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that this thesis's applicability hypothesis should be limited or revised if, even after viability conditions, causal lines, verification conditions, correction conditions, and responsibility allocation are made explicit and the design side also re-examines failures, broad observation still shows no change in the structures producing exhaustion, responsibility shifting, learning cessation, and avoidance of challenge. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): 因果線、成立条件、検証条件が明示され、現場に検証権限と修正条件が与えられ、成果不成立時に努力量ではなく仮説・資源・時間・主体条件が検証される場合は、仮説Aを棄却・改訂。
 
 ## Required distinctions
 - target value / future definition

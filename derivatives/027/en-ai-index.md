@@ -10,8 +10,8 @@
 
 ## Derivative ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260607-898D28-AI-INDEX-EN-0027-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-027-0004-0003
-- supersedes: DDIFF-20260811-DNCL-027-0004-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-027-0004-0004
+- supersedes: DDIFF-20260813-DNCL-027-0004-0003
 
 ## Summary
 The origin reads Invax not merely as surplus-soil reuse, but as an implementation OS that translates heterogeneous soil into conditionally usable construction material through a continuous chain of soil assessment, mix testing, mixing, curing, quality confirmation, field correction, verification, and movement toward standardization. The value kernel is an update in what civil engineering treats as “material.”
@@ -71,7 +71,9 @@ It also fails if intermediary metrics are treated as structural outcomes—for e
 Presenting the derivative as an Invax, HO Soil, or external-media official statement, or preserving only the implementation structure while dropping the parent’s public deconstruction of why “material-view update” was foregrounded in the external article, is also failure.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that the reading of an 'implementation OS supporting an updated view of materials' should be revised if repeated soil evaluation, blend testing, mixing and curing, quality confirmation, field correction, and verification fail to form reproducible material conditions by use case and do not accumulate knowledge toward standardization. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): 公開情報と矛盾する記述、HOソイルやAI標準化の効果を過剰に断定する記述、インバックス・外部媒体・所属組織の公式見解に見える表現、または観測窓δ期間内に「残土リサイクル紹介」「環境美談」「特殊工法紹介」へ読解が回収される現象Mが確認された場合は、仮説Aを棄却・改訂。
 
 ## Required distinctions
 - surplus-soil reuse vs. material-view update

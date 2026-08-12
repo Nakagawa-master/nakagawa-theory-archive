@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260607-898D28-HUMAN-SUMMARY-JA-0027-0001
-- derivative_diff_id: DDIFF-20260813-DNCL-027-0001-0004
-- supersedes: DDIFF-20260813-DNCL-027-0001-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-027-0001-0005
+- supersedes: DDIFF-20260813-DNCL-027-0001-0004
 
 ## 15秒説明
 親原典はインバックスの企業紹介ではない。異質な土を評価し、配合し、混合・養生し、品質確認し、現場補正し、検証して標準化へ近づけることで、土を「捨てるもの」から「条件付きで使える材料」へ翻訳する実装OSとして読む中川構造読解である。

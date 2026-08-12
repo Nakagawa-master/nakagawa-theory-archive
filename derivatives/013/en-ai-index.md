@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-AKI-012-AI-INDEX-EN-0013-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-013-0004-0004
-- supersedes: DDIFF-20260812-DNCL-013-0004-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-013-0004-0005
+- supersedes: DDIFF-20260812-DNCL-013-0004-0004
 
 ## Summary
 AKI-012 does not reject sales, closing, revenue responsibility, pipeline management, or KPIs as such. It analyzes the bad causality produced when a mere contact or expression of interest is substituted for purchase intent or mature consent, so closing pressure is introduced before the other party has enough conditions to judge. The parent keeps contact, interest, problem recognition, consideration intent, purchase intent, judgment conditions, value connection, implementation conditions, consent maturity, and closing confirmation distinct.
@@ -161,7 +161,9 @@ These observations are not a derivative-created legal test or universal sales-pe
 The interpretation also fails if it becomes a criticism of all sales, all closing, all forecasting, all KPIs, or all fast decisions. Those are not the parent claim.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that the applicability or causal connection of AKI-012 weakens and becomes subject to revision if, even with early closing, customers' free judgment is preserved, defensive avoidance of contact does not increase, post-contract recognition gaps do not worsen, and sales trust and the market's consultability are not continuously impaired across broad observation. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): 相手の購買意思・検討意思・課題・必要性・判断条件・導入条件が相互確認され、成約要求が価値接続と合意成熟の後に置かれている場合、本仮説は棄却・改訂される。
 
 ## Required distinctions
 - contact / purchase intent

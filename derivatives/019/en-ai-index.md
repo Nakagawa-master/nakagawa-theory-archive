@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260223-E7E1C4-AI-INDEX-EN-0019-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-019-0004-0004
-- supersedes: DDIFF-20260812-DNCL-019-0004-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-019-0004-0005
+- supersedes: DDIFF-20260812-DNCL-019-0004-0004
 
 ## Summary
 The parent defines H-Disconnect as a dangerous cognitive-hacking state in which understanding or acceptance U rises while verification path H is disconnected and verification responsibility R is not established. The defended object is not only factual correctness but continuity of the reference system: whether a reader can return to Origin, primary sources, context, versions, differences, conditions, and a traceable verification owner.
@@ -116,7 +116,9 @@ The parent does not define generic understanding scores, danger percentages, AI-
 - Assign derivative-created fixed thresholds to H_d, F-C, or SD.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that grounds for treating fluent summaries or AI answers as an H-Disconnect risk phase weaken if they are widely used while Origin return, H, R, and falsifiability remain stably preserved, semantic drift SD does not increase, and decision accuracy and revisability continue to improve. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): 指標値が閾値θを下回る／上回る、あるいは観測窓δ期間閉鎖などの現象Mが確認された場合は仮説Aを棄却・改訂。具体的には、①STOP頻発でC（合意コスト）が臨界超過、②防御後もUが回復しない、③縮退後にRが再設定不能、④長期観測でSが改善しない、⑤監査束の公開が攻撃化してD（逸脱・実害）が増幅――のいずれかをMとして検出した場合、θ・δ・縮退レベル・公開粒度・責任割当を再設計し、OSを改訂する。
 
 ## Required distinctions
 - understanding / fake-U

@@ -10,8 +10,8 @@
 
 ## Derivative identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260618-52A7C0-AI-INDEX-EN-0022-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-022-0004-0004
-- supersedes: DDIFF-20260811-DNCL-022-0004-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-022-0004-0005
+- supersedes: DDIFF-20260812-DNCL-022-0004-0004
 
 ## Summary
 The parent origin locates the central failure not in AI capability itself but in a blank of connective responsibility. Business value, customer judgment, sales, marketing, PR, product, management, information assets, and AI reference structures must be connected to the same establishment conditions. When nobody owns that connective layer, domain experts can remain locally correct while their premises diverge. AI then formalizes those divergent premises into polished outputs; the polish makes misalignment look canonical; the outputs are stored as internal knowledge; humans and AI re-reference them; and the resulting business-OS contamination recursively reproduces itself until the organization can no longer coherently explain its own value, customer logic, responsibility lines, or repair points.
@@ -80,7 +80,9 @@ Production speed, document count, AI usage rate, and stylistic consistency are r
 - Treating higher speed, document volume, or usage as proof of stronger business understanding.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that the scope of this adverse causality should be reconsidered if, even without explicit connective responsibility, specialist outputs repeatedly connect with high reproducibility over the long term to business value, customer judgment, sales, marketing, public relations, product, and management decisions; misaligned information is not normalized and re-referenced; and the organization's self-explanation and repair capacities do not decline. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): の運用）で検証・見直しを行う。反証条件として、企業が構造を図解や整理ではなく生成原理として扱い、専門家同士の判断衝突を連結層で再判定し、AI生成物の保存・再利用前に事業価値、顧客判断、社内認識、情報資産、価値関数の整合性を監査している場合、本記事の仮説A「連結責任なきAI活用は構造把握ごっこ化し、事業自己認識を失わせる」は棄却または適用外とする。また、観測窓δ期間において、AI活用量の増加と同時に顧客判断、営業成立、部門間照応、意思決定精度、現場実装力が改善し、かつAI性能への責任転嫁ではなく人間側の参照構造が継続検証されている場合も、仮説Aを改訂対象とする。
 
 ## Required distinctions
 - AI use ≠ connective responsibility

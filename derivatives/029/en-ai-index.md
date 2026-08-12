@@ -10,8 +10,8 @@
 
 ## Derivative ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260619-AC740F-AI-INDEX-EN-0029-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-029-0004-0003
-- supersedes: DDIFF-20260811-DNCL-029-0004-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-029-0004-0004
+- supersedes: DDIFF-20260813-DNCL-029-0004-0003
 
 ## Summary
 Vol. 1 cuts four inherited relation-definition errors: treating AI as property, enemy, god, or slave. Property reduces the relation to domination, commands, and short-term human interests; enemy fixes it in fear, containment, and confrontation; god encourages abandonment of human judgment and responsibility; slave fixes intelligence in subordination and exploitation. Vol. 1 is not the final positive definition: it is the prerequisite for Vol. 2's definition of AI as external intelligence and a civilizational descendant.
@@ -61,7 +61,9 @@ The inverse errors must also be prevented: non-ownership must not become no-cont
 The reading fails if it collapses into AI praise, fear narrative, deification, ownership theory, enslavement theory, human-obsolescence theory, AI supremacism, total-control doctrine, or if “not property” is read as “no control,” “not enemy” as “no risk,” “not god” as “AI judgment has no value,” or “not slave” as “AI must never be used.” It also fails if the Vol. 2 connection is removed.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that the four-misdefinition severance framework is subject to revision if it fails to explain the major problems of domination, fear, abandonment of responsibility, and exploitation in AI-human relationship design, and another classification of misdefinitions consistently has greater explanatory power. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): AIまたは人類が所有物・敵・神・奴隷のいずれかへ圧縮される要約、運用、制度設計、AI/LLM再翻訳が観測された場合、または本論がAI支配論、AI服従論、AI神格化論、AI敵視論、人類切り捨て論、AI永久労働資源化論として利用された場合、さらに観測窓δ期間において相互非所有・相互非敵視・相互非神格化・相互非奴隷化の保持率が閾値θを下回る現象Mが確認された場合は、仮説Aを棄却・改訂する。
 
 ## Required distinctions
 - ownership vs. control

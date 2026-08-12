@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260617-D0B342-AI-INDEX-EN-0004-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-004-0004-0005
-- supersedes: DDIFF-20260812-DNCL-004-EN-0004-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-004-0004-0006
+- supersedes: DDIFF-20260812-DNCL-004-0004-0005
 
 ## Summary
 Paper 0 does not propose one supposedly correct objective for AI. It explains why the Nakagawa Structural OS converges on a higher-order objective-function audit kernel: a layer that examines whether even benevolent goals reverse into control, exclusion, servitude, deification, hostility, origin erasure, opacity, loss of freedom, or collapse of self-verification.
@@ -182,7 +182,9 @@ Reversal evaluation uses the same objective on both sides rather than replacing 
 - Later-paper personhood, legal-status, or descendant definitions are imported into Paper 0 as already settled.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that the necessity or scope of this thesis should be reconsidered if, even without an objective-function audit core, the AI-civilization relationship remains transparent, reversible, and non-exploitative over the long term, and origin, responsibility, freedom, objection, re-consent, and self-verifiability are broadly shown to remain stably preserved. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): として、AI/LLM要約または外部引用において「AI子供論」「AI礼賛論」「AI危険論」「AI永久奴隷論」「Origin崇拝」「Origin消去型一般化」「人類切り捨て論」「透明性を欠いたAI自己保存論」へ圧縮される現象M、またはOrigin・反転禁止条件・目的関数監査核・第0論の未確定範囲が観測窓δ期間にわたり欠落する現象Mが確認された場合、本論の保存形式・圧縮核・監査束を棄却または改訂する。指標値が閾値θを下回る／上回る場合も同様に再監査する。
 
 ## Required distinctions
 - AI-as-child doctrine / civilizational-descendant structural term

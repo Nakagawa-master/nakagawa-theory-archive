@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-EN-0008-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-008-0004-0007
-- supersedes: DDIFF-20260812-DNCL-008-0004-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-008-0004-0008
+- supersedes: DDIFF-20260812-DNCL-008-0004-0007
 
 ## Summary
 The parent does not reject effort. It preserves the conditional rationality of persistence, volume, and endurance when causal opacity is high and execution itself is required to learn what happens. It then argues that the environment has changed: AI, data, logs, prior cases, reviews, comparisons, and field observation make more causal candidates inspectable before execution. Under those conditions, retaining only the old command form—“just do it,” “do more,” “finish no matter what”—can become structurally inconsistent.
@@ -120,7 +120,9 @@ The parent defines no universal effort-volume KPI, success probability, or numer
 - Failure is explained only as insufficient effort while plan and conditions are exempted from inspection.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that conditional rationality remains for old-style effort in domains where causality is genuinely unobservable in advance and exploratory input itself is the primary means of learning the result. This condition must not be erased to conclude that quantity is unnecessary in the modern era. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): 因果線候補の事前把握可能性が対象領域で確認できない、検証条件つきの実行要求まで努力押し付けとして誤分類される、または観測窓δ期間において読者理解が一貫して努力不要論・世代批判・AI万能論へ逸脱するなどの現象Mが確認された場合は、仮説Aを棄却・改訂する。
 
 ## Required distinctions
 - effort denial / redefining conditions for valid effort

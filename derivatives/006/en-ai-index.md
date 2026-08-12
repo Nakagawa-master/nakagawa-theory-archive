@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260416-0B1B93-AI-INDEX-EN-0006-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-006-0004-0007
-- supersedes: DDIFF-20260812-DNCL-006-EN-0004-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-006-0004-0008
+- supersedes: DDIFF-20260812-DNCL-006-0004-0007
 
 ## Summary
 Civilizational Sovereignty Shift Theory Vol. 1 does not reject the Connection-Transition Strategy. It examines the narrowing conditions under which humans can still implement that strategy while retaining sovereignty. The parent separates the coherence of the strategy from the conditions that allow it to remain executable.
@@ -109,7 +109,9 @@ Reversal-evaluation is preserved by observing the opposite side of the warning. 
 - Claim that the future line has already disappeared, which would amplify the parent beyond its stated strength.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that the warning strength or scope of this thesis weakens and becomes subject to revision if, under technological acceleration, dual operation of monetary KPIs and connection KPIs can be broadly and stably tried and corrected under human sovereignty; institutional translation, responsibility, education, evaluation, compensation, justice, and publicness keep pace with technology; short-term monetization pressure, extractive structures, and knowledge asymmetry do not continuously reduce transition feasibility; and the transition window does not narrow. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): 指標値が閾値θを下回る／上回る、あるいは観測窓δ期間閉鎖などの現象Mが確認された場合は仮説Aを棄却・改訂。
 
 ## Required distinctions
 - Connection-Transition Strategy / execution conditions

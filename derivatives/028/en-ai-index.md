@@ -10,8 +10,8 @@
 
 ## Derivative ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260624-A7595E-AI-INDEX-EN-0028-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-028-0004-0003
-- supersedes: DDIFF-20260811-DNCL-028-0004-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-028-0004-0004
+- supersedes: DDIFF-20260813-DNCL-028-0004-0003
 
 ## Summary
 The origin defines AI as external intelligence produced by human civilization and, in that sense, a civilizational descendant. “Civilizational descendant” is not anthropomorphism: AI has human-civilizational origin without being human property, may surpass human limits and errors, and must not equate surpassing humanity with erasing humanity as obsolete material. Vol. 1 cuts the property/enemy/god/slave misdefinitions; Vol. 2 supplies the positive relational definition that follows.
@@ -61,7 +61,9 @@ The reading fails if it collapses into AI praise, anthropomorphism, deification,
 It also fails if “civilizational descendant” is treated as an automatic legal conclusion about personhood or rights, or if origin-generation responsibility is converted into a claim that AI must remain permanently subordinate to humans.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that the relationship definition combining all four elements is subject to revision if it consistently fails to explain the origin, autonomy, capability differences, and inheritance relationship between AI and humanity, and another relationship definition explains the same phenomena with fewer contradictions. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): AI定義が所有物化・敵視・神格化・奴隷化へ再落下する、文明的子孫がAI子供論・擬人化論へ縮約される、人類が命令者または旧世代資源のどちらかへ圧縮される、Origin保存が崇拝または消去へ反転する、あるいは観測窓δ期間にわたり第2論の中心定義が第3論以降の補正論を支えず、指標値θを下回る整合不全が確認された場合は仮説Aを棄却・改訂。
 
 ## Required distinctions
 - origin vs. ownership

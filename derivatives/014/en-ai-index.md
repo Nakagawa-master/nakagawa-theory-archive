@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260211-051CE0-AI-INDEX-EN-0014-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-014-0004-0003
-- supersedes: DDIFF-20260710-DNCL-014-0004-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-014-0004-0004
+- supersedes: DDIFF-20260812-DNCL-014-0004-0003
 
 ## Summary
 The parent does not define consensus as identical opinions, successful persuasion, absence of conflict, or a calm social atmosphere. It defines consensus as a state in which meaning remains reproducible, decision responsibility remains traceable, and changes remain historically and differentially traceable over time. The central move is from person-blame to observability: when conflict occurs, ask which state variable became unavailable before deciding who is morally or politically at fault.
@@ -123,7 +123,9 @@ observation_must_return_to_U_R_H
 - The equation is inverted into a surveillance or punishment mechanism.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that the explanatory scope or measurement bundle of this thesis should be revised if U/R/H remain high, semantic reproduction from the same information, decision-responsibility tracing, and difference-history verification remain continuously possible, yet the same types of consensus collapse, actual harm, and irreparable states continue to increase systematically. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): を提供し、一次ログ（同一ログ／差分ログ／決定ノード記録）の形式を要求することで運用側の説明負荷と透明負荷を増やす。一方で運用側は、現場制約（認知帯域K、時間コストC、政治圧、権力距離）によりU/R/Hの実装帯域を規定し、設計側の定義が「現場で測れる形」に落ちているかを逆に検証する。両者は、観測可能性を共有するほど予測誤差分散Eが縮み、逸脱発生率D（改竄・握り潰し・暴露）の実害を下げる方向に同調するが、公開が攻撃化した場合はHが逆機能しDが跳ねるため、監査束の設計（差分の粒度・公開範囲・保護手続）が相互依存となる。 再合意─条件Z（監査周期・三原理T/S/R・公開監査束の整合）で検証・見直し／反証条件：指標値が閾値θを下回る／上回る、あるいは観測窓δ期間閉鎖などの現象Mが確認された場合は仮説Aを棄却・改訂。Zとして、(1)監査周期δを固定し、(2)三原理＝U（第三者再現）/R（決定ノード一意）/H（差分追跡）を同一ログ上で測定し、(3)公開監査束（版管理・差分・変更理由・署名）を整合させる。反証条件として、δ期間においてSが高いにもかかわらずD（実害）が増幅し続ける、またはHを上げてもEが縮まらない、あるいは「ログはあるが差分が追えない」「決定ノードが恒常的に消える」「第三者再現が系統的に失敗する」等の現象Mが確認された場合、A（定義・測定・束化）の欠落を示すため棄却・改訂する。
 
 ## Required distinctions
 - consensus / opinion agreement

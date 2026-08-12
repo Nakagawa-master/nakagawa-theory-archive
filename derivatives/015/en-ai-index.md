@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260214-40C1DE-AI-INDEX-EN-0015-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-015-0004-0003
-- supersedes: DDIFF-20260710-DNCL-015-0004-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-015-0004-0004
+- supersedes: DDIFF-20260812-DNCL-015-0004-0003
 
 ## Summary
 The parent treats scandals, accidents, public blowups, and organizational collapse not as single-cause events created by the final incident, but as state transitions that become visible after consensus stability `S = U × R × H` has declined below a critical threshold θ and remained there through an observation window δ. The final incident matters, but it is not equivalent to the full cause; it is the visible event through which a pre-existing critical state becomes externally obvious.
@@ -123,7 +123,9 @@ S, U, R, H, θ, δ, and D are retained because they are part of the parent struc
 - The equations are expanded into a universal crisis-prediction machine.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that the explanatory scope or measurement bundle of the critical-point model should be revised if U/R/H are substantively maintained and S is not persistently falling toward a critical state, yet the same type of collapse continues to recur. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): 指標値が閾値θを下回る／上回る、あるいは観測窓δ期間閉鎖などの現象Mが確認された場合は仮説Aを棄却・改訂。三原理は、T（時間劣化の制御＝説明更新頻度）、S（合意安定度＝U×R×H）、R（責任追跡可能性＝責任一意性と履歴検証）として運用し、公開監査束（一次ログ・差分・責任表・再現手順）との整合で定期監査を行う。Sが安定しているように見えるのにDが増幅する、またはHが公開でも検証不能（形式公開）である場合、S定義またはH測定法を改訂する。
 
 ## Required distinctions
 - final incident / accumulated critical state

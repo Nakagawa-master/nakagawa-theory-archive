@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260222-482BDB-AI-INDEX-EN-0018-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-018-0004-0004
-- supersedes: DDIFF-20260812-DNCL-018-0004-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-018-0004-0005
+- supersedes: DDIFF-20260812-DNCL-018-0004-0004
 
 ## Summary
 The parent treats external inputs not by first labeling them enemies, misinformation, ideology, or moral wrongdoing, but as perturbation P_ext acting on consensus stability S = U × R × H. It extends the state model through `dS/dt = F(U,R,H) + P_ext`, separating internal change from outside input and observing effects through fake-U, R diffusion, and H short-circuit.
@@ -119,7 +119,9 @@ The parent does not define generic risk scores, enemy ratings, occurrence probab
 - Assign derivative-created enemy or risk scores to P_ext.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that grounds for treating an input as a problem under this thesis weaken if, even as external input increases or accelerates, U/R/H remain stable or improve, fake-U, R diffusion, and H short-circuit do not arise, and deterioration in dS/dt is not observed. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): 指標値が閾値θを下回る／上回る、あるいは観測窓δ期間閉鎖などの現象Mが確認された場合は仮説Aを棄却・改訂。条件Zは、(1) 監査周期：定期（例：週次／月次）＋イベント駆動（ΔS/dt急変時）で二重化、(2) 三原理T/S/R：速度T（進行速度の上限管理）、安定S（Sの回復・維持）、責任R（責任ノードの一意化）の同時達成、(3) 公開監査束：一次ログ・閾値・停止理由・差分（停止前後）を追跡可能な最小粒度で束ね、公開可能範囲で継続開示することを指す。現象Mの例は、S低下の連続、fake-Uの恒常化、Rトレース不能の増加、H一次ソース到達率の下落、停止回数の増加に伴うC（合意コスト）の臨界超過、または監査閉鎖（δ期間のログ欠損・非公開化）である。
 
 ## Required distinctions
 - external input / enemy

@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-EN-0001-0001
-- derivative_diff_id: DDIFF-20260812-DNCL-001-0001-0004
-- supersedes: DDIFF-20260812-DNCL-001-0001-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-001-0001-0005
+- supersedes: DDIFF-20260812-DNCL-001-0001-0004
 
 ## Summary
 The parent original defines Nakagawa OS L1-L7 as a canonical vertical coordinate for reading humans, organizations, society, AI, and civilization by abstraction depth rather than by horizontal domain. L1 is phenomena, L2 behavior/process, L3 norms/systems, L4 structural recognition, L5 structural operation, L6 inter-structural causation, and L7 the top-level structure/value function. The source treats misalignment between these depths as a cause of structural noise: observed outcomes, behavior, institutions, hidden causality, intervention, cross-structure linkage, and value functions become misconnected when they are discussed on different levels without translation.
@@ -119,7 +119,9 @@ knowledge is divided into horizontal domains
 - Lose parent identity or origin traceability.
 
 ## Falsification conditions
-Under the parent origin's integrated audit summary, if structural divergence M is observed within observation window δ and the correspondence indicator exceeds threshold θ in a manner inconsistent with the current hypothesis, hypothesis A in the current specification is to be rejected or revised. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): 指標値が閾値 θ を下回る／上回る、または観測窓 δ において構造的乖離 M が確認された場合に、仮説 A（現行仕様）を棄却・改訂する。
 
 ## Required distinctions
 - horizontal domain / vertical depth

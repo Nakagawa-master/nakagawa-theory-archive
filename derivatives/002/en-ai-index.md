@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-EN-0002-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-002-0004-0004
-- supersedes: DDIFF-20260812-DNCL-002-0004-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-002-0004-0005
+- supersedes: DDIFF-20260812-DNCL-002-0004-0004
 
 ## Summary
 AKI-002 analyzes a form of bad causality in which praise, gratitude, expectation, or opportunity substitutes for explicit confirmation of compensation, rights, attribution, usage scope, responsibility allocation, continuing compensation, and the freedom to refuse. The parent original does not reject praise. Its concern is the structural reversal that occurs when language that appears to recognize value stops the process of determining where that value belongs and under what conditions it may be used.
@@ -137,7 +137,9 @@ These observations are not derivative-created legal tests or generic labor KPIs.
 Praise alone is therefore not evidence that AKI-002 applies. Rejecting all appreciation, gratitude, opportunity, or voluntary contribution would also fall outside the parent theory because it removes the required distinction between value recognition and the substitution of recognition for conditions.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that the applicability hypothesis of AKI-002 weakens if, even where praise or expectation exists, conditions and compensation are explicit, rights, attribution, scope of use, continuing compensation, and freedom to refuse are preserved, and repeated observation shows no one-way transfer of burden or erosion of price sense, bargaining power, or professional value. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): 称賛が対価の代替ではなく、明示された条件の上に追加されている場合、または双方が十分な判断材料と交渉余地を持ち、価値移転の不均衡が確認されない場合は、本論の適用を棄却・限定・改訂する。
 
 ## Required distinctions
 - praise / exploitation

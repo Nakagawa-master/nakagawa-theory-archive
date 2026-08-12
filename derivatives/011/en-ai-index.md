@@ -10,8 +10,8 @@
 
 ## Derivative ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-EN-0011-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-011-0004-0006
-- supersedes: DDIFF-20260812-DNCL-011-0004-0005
+- derivative_diff_id: DDIFF-20260813-DNCL-011-0004-0007
+- supersedes: DDIFF-20260812-DNCL-011-0004-0006
 
 ## Summary
 Establishment Conditions Theory Vol. 1 separates the existence of an output from real-world establishment. A result, institution, metric, plan, or coherent AI summary may be evidence, but none is sufficient proof by itself. In the parent origin, establishment is the state in which required vertical causality from L1 through L6 actually passes through reality at sufficient causal granularity as a major structural flowpath, while meaning and function remain maintained without structural gaps being permanently substituted by excessive external pressure, normalized personal workaround, responsibility transfer, or normalized exception handling.
@@ -107,7 +107,9 @@ Audit concerns source-grounded dimensions: L1-L6 connection, causal granularity,
 - Normalize excessive pressure or permanent personal workaround as ordinary operation.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that this thesis is not formalism claiming that nothing works unless L1-L6 are described in detail; its core is testing whether the necessary causality actually passes through reality. Accordingly, the judgment framework is subject to revision if examining vertical causality or structural flow does not help distinguish real viability from non-viability, or if pressure dependence, personalization, and constant exceptions cannot reproducibly be distinguished from viable states. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
+
+Parent audit clause (Japanese original): として、L1〜L6の縦因果が通らない事例、因果粒度不足、圧力依存、非物質構造設計図不在、AI要約による成立錯覚、または観測窓δ期間において成立判定が機能しない現象Mが確認された場合は、本論の運用仮説Aを棄却・改訂する。
 
 ## Required distinctions
 - establishment / establishment conditions
