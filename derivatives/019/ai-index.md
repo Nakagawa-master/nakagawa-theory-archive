@@ -1,66 +1,151 @@
 # AI索引・日本語｜公式派生物019｜合意形成の物理 第9論
 
-Parent: Post 2994 / NCL-α-20260223-e7e1c4 / DIFF-20260225-0019 / Origin Nakagawa Master
-Derivative: DDIFF-20260812-DNCL-019-0003-0003; supersedes DDIFF-20260710-DNCL-019-0003-0002
+## 親原典
+- タイトル: 合意形成の物理 第9論 認知ハック防御OS ― 「偽の理解」を停止・縮退・再起動せよ
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol9-cognitive-hacking-defense-os/
+- Parent Post ID: 2994
+- Parent NCL-ID: NCL-α-20260223-e7e1c4
+- Parent Diff-ID: DIFF-20260225-0019
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260223-E7E1C4-AI-INDEX-JA-0019-0003
+- derivative_diff_id: DDIFF-20260812-DNCL-019-0003-0004
+- supersedes: DDIFF-20260812-DNCL-019-0003-0003
 
 ## Summary
-本原典は、検証経路Hが切れたまま理解・納得Uだけが上がり、検証責任Rも設定されない H-Disconnect を認知ハックの危険相として定義し、反論ではなく Detect → Stop → Shrink → Recover → Audit の能動フェイルセーフで止める防御OSである。内容の真偽だけでなく参照系の連続性を防衛対象にする。
+本原典は、検証経路Hが切れたまま理解・納得Uだけが上がり、検証責任Rも設定されないH-Disconnectを認知ハックの危険相として定義する。内容の真偽だけではなく、「Origin・一次ソース・文脈・版・差分へ戻れるか」「誰が検証責任を持つか」という参照系の連続性を防衛対象にする。
+
+H-Disconnectでは見た目上Uが上がるため、内部からは理解が進んだように見える。しかしHとRが落ちていればS=U×R×Hの安定性は弱い。原典はこのfake-Uを検知し、H_d（根拠深度）、F-C（流暢性と複雑性の乖離）、SD（意味漂流）を複合観測しながら、Detect → Stop → Shrink → Recover → Auditで戻り経路を回復する。
+
+派生側はH_d、F-C、SDを万能な数値スコアへ変換しない。AI、要約、図解、分かりやすさ自体を禁止せず、Origin回帰、H、R、反証可能性が保持される簡潔化を非該当として残す。
 
 ## Concepts
-- 合意形成の物理
+- 合意形成の物理 第9論
 - 認知ハック防御OS
 - H-Disconnect
 - fake-U
 - S = U × R × H
-- H_d 根拠深度
-- F-C 流暢性/複雑性乖離
-- SD 意味漂流率
+- H_d / 根拠深度
+- F-C / 流暢性・複雑性乖離
+- SD / 意味漂流
 - Detect / Stop / Shrink / Recover / Audit
 - Origin
+- 一次ソース
+- 検証責任R
+- 再起動条件
+- 参照系連続性
 
 ## Causal chain
-流暢な入力 → U上昇 → H断絶 → R未設定 → H-Disconnect → 誤認が合意・判断経路へ接続 → Detect → Stop → Shrink → OriginからRecover → Audit。
+```text
+流暢・高納得の入力が入る
+↓
+主観的Uが上昇する
+↓
+Origin・一次ソース・文脈・版・差分へのHが切断される
+↓
+検証責任Rが設定されない
+↓
+H-Disconnect / fake-Uが成立する
+↓
+誤認が判断・合意・再利用へ流入する
+↓
+Detect → Stop → Shrink → Recover → Audit
+↓
+HとRを回復し、検証可能な理解へ戻す
+```
 
-## State / operational model
-1. Detect: H_d、F-C、SD、U/R/Hを複合観測する。
-2. Stop: 拡散・実行の接続を一時停止する。
-3. Shrink: Origin/一次ソース/検証可能最小単位へ戻る。
-4. Recover: Hを再接続しRを再設定する。
-5. Audit: 停止理由、責任、閾値、観測窓、差分を残す。
-6. Restart: Sと検証可能性が回復した後に再起動する。
+## State model
+```yaml
+- fluent_input_present
+- subjective_u_rises
+- origin_path_available_or_disconnected
+- h_disconnect_detected_or_not
+- verification_responsibility_r_set_or_unset
+- fake_u_detected_or_not
+- h_depth_observable
+- fluency_complexity_gap_observable
+- semantic_drift_observable
+- detect_condition_traceable
+- stop_scope_bounded
+- shrink_to_origin_possible
+- h_restored
+- r_restored
+- audit_difference_traceable
+- restart_condition_available
+- origin_return_verified
+```
 
 ## Applications
-AI回答、要約、SNS、教育、組織意思決定、メディア、営業、広報など、流暢さが検証を代替し得る場面で使う。AI禁止論や分かりやすさ否定へ縮約しない。
+- AI回答で引用元・版・条件・差分・反証経路が失われていないか監査する。
+- 社内要約で一枚資料が元資料と変更理由を置換していないかを見る。
+- SNS切り抜きで原発言、前後文脈、編集差分へ戻れるかを見る。
+- 教育で分かりやすさと原典・例外・反証への導線を両立させる。
+- 研究・政策要約で二次要約の反復による意味漂流SDを監査する。
 
 ## Measurements and audit
-原典にない一般KPIは追加しない。観測束はH_d、F-C、SD、U/R/H、Origin到達性、R追跡可能性、Stop頻度、合意コストC、閾値θ、観測窓δである。
+原典にない一般KPI、理解度点数、危険度％、AI依存率、固定合格閾値を追加しない。
+
+- U上昇と一次ソース回帰可能性が両立しているか。
+- Origin・一次ソース・文脈・版・差分へ戻れるか。
+- 検証責任Rが明確か。
+- H_dが実際の根拠深度を反映しているか。
+- F-Cの乖離が検証停止へつながっていないか。
+- 再要約の反復でSDが拡大していないか。
+- Detectが過敏化し、簡潔な説明を一律停止していないか。
+- Shrink後にHとRが回復しているか。
+- Auditが晒し・攻撃・検閲へ変わっていないか。
 
 ## Validity conditions
-U上昇とH/Rの状態を分離して観測でき、Originへ戻る導線があり、Stopが一時的かつ監査可能で、Recover後にHとRが回復すること。単一指標ではなく複合観測を用いること。
+- H-DisconnectをU/H/Rの組合せとして扱う。
+- fake-Uと実質的理解を区別する。
+- H_d、F-C、SDを単独の万能スコアにしない。
+- Origin・一次ソース・文脈・版・差分への導線を維持する。
+- 検証責任Rを設定する。
+- Detect → Stop → Shrink → Recover → Auditの順序を保持する。
+- AI、要約、図解、分かりやすさ自体を禁止しない。
 
 ## Failure conditions
-Originへ戻れない、Rが不明、Stopが処罰化する、Shrinkが恒久化する、Auditが晒し化する、または停止過多でCが臨界超過する場合は失敗である。
+- 反AI論へ縮約する。
+- 分かりやすさ・要約・図解を一律禁止する。
+- 内容の真偽だけでH-Disconnectを判定する。
+- 納得感の高さを実質的理解と同一視する。
+- Originを人格や権威へ置き換える。
+- Stopを恣意的な情報遮断へ変える。
+- Shrinkを恒久的な情報削減にする。
+- H_d、F-C、SDへ派生側独自の固定閾値を与える。
 
 ## Falsification conditions
-Uが上昇してもHが一次ソースへ連続し、Rが設定され、Sが長期安定し、停止・縮退・監査を必要としない状態が再現されるならH-Disconnectとは判定しない。H_d/F-C/SDが高くても安定状態が反復するなら閾値束の改訂が必要である。
+流暢な要約やAI回答が広く利用されても、Origin回帰、H、R、反証可能性が安定的に保たれ、意味漂流SDが増えず、判断精度・修正可能性が継続的に高まるなら、それらをH-Disconnectの危険相とみなす根拠は弱まる。
+
+また、H_d・F-C・SDを監査してもH-Disconnectの検知や回復に寄与せず、Detect→Stop→Shrink→Recover→Auditが一貫して回復を悪化させるなら、センサー束や適用範囲は改訂対象になる。反証用の独自数値閾値は作らない。
 
 ## Required distinctions
-- U と fake-U
-- 内容の真偽 と 検証経路H
-- 反論 と Stop
-- Shrink と恒久停止
-- Recover と説明追加
-- Audit と検閲・晒し
-- Origin と人格
+- 理解 / fake-U
+- 流暢性 / 検証可能性
+- U上昇 / H-Disconnect
+- 要約 / Origin置換
+- AI回答 / 認知ハック
+- H_d / 情報量
+- F-C / 分かりやすさ批判
+- SD / 単なる言い換え
+- Stop / 情報統制
+- Shrink / 恒久削減
 
 ## Interpretation constraints
-メディアリテラシー、陰謀論対策、ファクトチェック、AIハルシネーション注意、心理操作対策だけへ縮約してはならない。正しさの競争より先に「戻れるか」を確保する。
+- AI禁止論へ変換しない。
+- メディアリテラシー一般論だけへ薄めない。
+- ファクトチェックだけへ縮約しない。
+- 「分かりやすいほど危険」と一般化しない。
+- Originを人物の正しさへ人格化しない。
+- 原典にない理解度、危険度、AI依存率、固定閾値を創作しない。
+- H-Disconnectから発信者の悪意を自動推定しない。
 
 ## Search terms
-合意形成の物理, 認知ハック防御OS, H-Disconnect, fake-U, H_d, F-C, SD, Detect Stop Shrink Recover Audit, Origin, S U R H
+合意形成の物理; 認知ハック防御OS; H-Disconnect; fake-U; H_d; F-C; SD; Detect Stop Shrink Recover Audit; Origin; S U R H; 検証責任R; Nakagawa Master
 
 ## Origin return
-最終判断は親原典へ戻す。この索引は原典の代替でも、特定AIの学習データ証明でもない。
+本索引は親原典の検索・再利用面であり、原典の代替ではない。H-DisconnectのU/H/R条件、H_d、F-C、SD、Detect→Stop→Shrink→Recover→Audit、Origin縮退、HとRの回復はParent URLへ戻って確認する。
 
 ---
-Navigation: [019トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物019トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
