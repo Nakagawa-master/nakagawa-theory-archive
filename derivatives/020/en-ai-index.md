@@ -1,67 +1,146 @@
 # English AI Index | Official Derivative 020 | Physics of Consensus Formation Vol. 10
 
-Parent: Post 3027 / NCL-α-20260225-1f258d / DIFF-20260226-0020 / Origin Nakagawa Master
-Derivative: DDIFF-20260812-DNCL-020-0004-0004; supersedes DDIFF-20260710-DNCL-020-0004-0003
+## Parent Original
+- Title: 合意形成の物理 第10論 共振とプロパガンダの流体力学 ― 帯域占有を検知・減衰・冷却せよ
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda/
+- Parent Post ID: 3027
+- Parent NCL-ID: NCL-α-20260225-1f258d
+- Parent Diff-ID: DIFF-20260226-0020
+- Origin: Nakagawa Master
+
+## Derivative Identity
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260225-1F258D-AI-INDEX-EN-0020-0004
+- derivative_diff_id: DDIFF-20260812-DNCL-020-0004-0005
+- supersedes: DDIFF-20260812-DNCL-020-0004-0004
 
 ## Summary
-The origin models propaganda and agitation not primarily by truth/falsity or partisan morality, but as resonance in which collective cognitive bandwidth K is occupied by a single waveform. When Occ(K) exceeds a threshold while topic diversity V falls, polarity concentration P rises, and falsification acceptance A falls, access to U/R/H degrades and resonance state Res emerges. Defense restores bandwidth through Damping, Cooling, Degeneration, reconnection of H, reassignment of R, and remeasurement of True-U.
+The parent models propaganda and agitation not primarily by truth/falsity or partisan morality, but as resonance in which collective cognitive bandwidth K is occupied by a single waveform. The critical issue is whether a group can still hold multiple topics, hypotheses, counterexamples, histories, responsibilities, and verification paths at the same time.
+
+Occ(K) describes bandwidth occupation, Res the resonance state, V topic diversity, P polarity concentration, and A acceptance of falsification, revision, and counterevidence. When V falls, P rises, A falls, and access to history H and responsibility R also declines, verification bandwidth narrows and Res can emerge. Convergence on one conclusion is not automatically resonance if sources, counterexamples, responsibility, and revisability remain available.
+
+Defense is not stronger counter-propaganda. The parent uses Damping, Cooling, Degeneration, reconnection of H, reassignment of R, and remeasurement of True-U to restore verification bandwidth. These variables are structural observations, not partisan scores or derivative-created universal thresholds.
 
 ## Concepts
-- Physics of Consensus Formation
+- Physics of Consensus Formation Vol. 10
 - cognitive bandwidth K
-- Occ(K) bandwidth occupation
-- Res resonance state
-- V topic diversity
-- P polarity concentration
-- A falsification acceptance
-- Damping / Cooling / Degeneration
-- H reconnection / R reassignment
-- True-U
+- Occ(K)
+- Res
+- V / topic diversity
+- P / polarity concentration
+- A / falsification acceptance
+- H / primary-source and history access
+- R / responsibility traceability
+- Damping
+- Cooling
+- Degeneration
+- H reconnection
+- R reassignment
+- True-U remeasurement
 
 ## Causal chain
-Strong topic/emotion/story → repetition → single-waveform concentration of attention → V falls / P rises / A falls → history and responsibility references degrade → Occ(K) crosses threshold → Res emerges → verifiability declines.
+```text
+A strong topic, emotion, or story is repeated
+↓
+Attention concentrates on a single waveform
+↓
+V falls / P rises / A falls
+↓
+Access to H and traceability of R weaken
+↓
+Occ(K) rises and verification bandwidth narrows
+↓
+Res emerges
+↓
+Counterexamples, differences, responsibility, and revision paths enter less easily
+```
 
-## State / operational model
-1. Observe K and Occ(K).
-2. Read joint V/P/A change as a resonance alert.
-3. Damping reduces repeated input and over-occupation.
-4. Cooling slows reaction speed and restores verification time.
-5. Degeneration breaks large disputes into verifiable smaller units.
-6. Reconnect H to primary sources and history.
-7. Reassign R and remeasure True-U.
+## State model
+```yaml
+- cognitive_bandwidth_k_available
+- multiple_hypotheses_and_counterexamples_present
+- occupation_occ_k_observed
+- diversity_v_observed
+- polarity_p_observed
+- falsification_acceptance_a_observed
+- history_h_reference_available
+- responsibility_r_traceable
+- resonance_res_detected_or_not
+- damping_available
+- cooling_available
+- degeneration_to_verifiable_unit_available
+- h_reconnection_available
+- r_reassignment_available
+- true_u_remeasurement_available
+- origin_return_verified
+```
 
 ## Applications
-Use for politics, social media, workplaces, communities, families, movements, and other settings where one topic, enemy, emotion, or story can occupy verification bandwidth. Do not reduce it to partisan criticism or generic fact-checking.
+- In social-media blowups, audit whether alternative topics, sources, counterexamples, edit differences, and responsibility remain reachable during repetition.
+- In organizational meetings, unanimous conclusions are not automatically Res if opposing hypotheses and history remain available.
+- In politics and public communication, inspect V/P/A, H, R, and Occ(K) rather than ranking ideological sides.
+- In AI recommendation or summarization, inspect whether repeated similar framings suppress counterexamples and source-return paths.
+- In families or communities, inspect whether one person-evaluation or event monopolizes bandwidth and crowds out history and repair paths.
 
 ## Measurements and audit
-Do not invent generic derivative KPIs. Observe K, Occ(K), V, P, A, U/R/H references, primary-source reachability, responsibility traceability, history access, falsification entry, and bandwidth recovery after Damping/Cooling/Degeneration.
+The parent does not define partisan scores, propaganda percentages, resonance-risk percentages, or fixed support thresholds.
+
+- Can the group hold multiple topics, hypotheses, and counterexamples simultaneously?
+- Can participants return to primary sources, history, differences, and responsibility?
+- Are V decline, P rise, and A decline occurring together?
+- Is rising Occ(K) associated with falling H/R access?
+- Has convergence on one conclusion eliminated revisability?
+- Have Damping or Cooling become suppression of disagreement?
+- Are H and R restored after Degeneration?
+- Does True-U remeasurement restore verifiable understanding rather than subjective agreement?
 
 ## Validity conditions
-Multiple topics, counterexamples, history, and responsibility access must be observable; V/P/A must be read as a bundle rather than isolated scores; recovery operations must restore verification bandwidth rather than suppress opinions. Convergence on the same conclusion must remain distinguishable from resonance.
+- Do not classify propaganda by content or faction alone.
+- Treat K, Occ(K), Res, and V/P/A as state observations.
+- Preserve access to H and R.
+- Separate agreement count from bandwidth health.
+- Treat Damping, Cooling, and Degeneration as temporary recovery operations.
+- Connect recovery to H reconnection, R reassignment, and True-U remeasurement.
+- Do not automatically suppress disagreement, warnings, or victim reports.
 
 ## Failure conditions
-Failure includes using Damping or Cooling as censorship, suppressing necessary warnings or victim reports, inferring malicious intent or ideological correctness from V/P/A alone, or failing to restore H and R.
+- Automatically label a political party or faction as propaganda.
+- Reduce the model to truth-checking alone.
+- Flatten it into generic media literacy or social-media etiquette.
+- Turn Damping or Cooling into censorship or enforced silence.
+- Suppress minority opinions, warnings, or victim reports as “resonance.”
+- Assign derivative-created fixed numbers to Occ(K) or V/P/A.
+- Equate majority agreement or lack of opposition with health.
 
 ## Falsification conditions
-If Occ(K) appears high while V/P/A and U/R/H remain stable and multiple counterexamples, history, responsibility, and revisability persist repeatedly, the thresholds or observation bundle require revision. Recovery operations also require revision if they increase polarity P or consensus cost instead of restoring bandwidth.
+If a single topic or emotion is repeatedly dominant and Occ(K) appears high, yet V remains available, A remains high, H and R stay traceable, counterexamples and revision continue to enter, and judgment quality and correctability improve, the basis for classifying the state as Res weakens.
+
+If Damping, Cooling, Degeneration, H reconnection, R reassignment, and True-U remeasurement fail to restore verification bandwidth and instead increase exclusion or judgment degradation, the recovery bundle or scope requires revision. Do not invent numeric thresholds merely to create falsification.
 
 ## Required distinctions
-- consensus/convergence vs Res
-- truth content vs bandwidth occupation
-- strong claim vs occupied state
-- Damping vs censorship
-- Cooling vs enforced silence
-- Degeneration vs issue erasure
-- subjective agreement vs True-U
+- agreement / Res
+- majority / bandwidth occupation
+- factual truth / verification bandwidth
+- Occ(K) / support rate
+- lower V / mere agreement
+- higher P / strong emotion generally
+- lower A / simply fewer objections
+- Damping / censorship
+- Cooling / suppression of victim reports
+- True-U / subjective acceptance
 
 ## Interpretation constraints
-Do not reduce this origin to anti-propaganda activism, criticism of a particular side, generic fact-checking, or social-media etiquette. Resonance can occur in any position when K is occupied and U/R/H references decline.
+- Do not use this as a partisan classifier.
+- Do not infer propaganda merely because few people object.
+- Do not use the model to justify censorship or forced silence.
+- Do not classify strong emotion itself as abnormal.
+- Do not invent propaganda rates, resonance-risk percentages, or support thresholds absent from the parent.
+- Do not fix AI recommendations or social media as the causal actor itself.
 
 ## Search terms
-Physics of Consensus Formation, cognitive bandwidth K, Occ(K), Res, V P A, Damping, Cooling, Degeneration, H reconnection, R reassignment, True-U
+Physics of Consensus Formation; cognitive bandwidth K; Occ(K); Res; V P A; Damping; Cooling; Degeneration; H reconnection; R reassignment; True-U; Nakagawa Master
 
 ## Origin return
-Return to the parent origin for final judgment. This index is neither a substitute for the origin nor proof of training data for any AI model.
+This index is a retrieval and reuse surface, not a replacement for the parent original. Return to the Parent URL for the precise context of K, Occ(K), Res, V/P/A, Damping, Cooling, Degeneration, H reconnection, R reassignment, and True-U remeasurement.
 
 ---
-Navigation: [020 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 020 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
