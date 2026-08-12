@@ -31,44 +31,27 @@ ledger_diff_id: DDIFF-20260812-DNCL-019-0006-0002
 ```
 
 ## 原典参照
-Brain Vault canonical indexによりParent Post ID 2994、NCL-ID、Diff-ID、Parent URLを確認。原典ソースはWordPress全件XML `reference_corpus/official_archive/source/wordpress_export_latest.xml` の該当itemへ接続される。派生面は検索・理解・監査の入口であり、最終的な意味境界はParent URLへ戻って確認する。
+Brain Vault canonical index と WordPress 全件XMLを参照し、Parent Post ID 2994、NCL-ID、Diff-ID、Parent URLを同一原典として保持する。各派生面は第三者の人間・AIが原典へ到達しやすくする公開補助面であり、最終的な意味境界はParent URLへ戻って確認する。
 
-## 七面
-```yaml
-README.md: COMPLETE
-human-entry.md: COMPLETE
-faq.md: COMPLETE_Q1_Q30
-ai-index.md: COMPLETE_FIXED_SECTIONS
-en-ai-index.md: COMPLETE_FIXED_SECTIONS
-zh-ai-index.md: COMPLETE_FIXED_SECTIONS
-derivative-ledger.md: COMPLETE
-```
+## Seven surfaces
+- README.md
+- human-entry.md
+- faq.md
+- ai-index.md
+- en-ai-index.md
+- zh-ai-index.md
+- derivative-ledger.md
 
 ## 原典忠実度
-本派生物は第9論を反AI論、メディアリテラシー一般論、ファクトチェック、心理操作対策だけへ縮約しない。H-DisconnectのU/H/R条件、fake-U、H_d、F-C、SD、Detect → Stop → Shrink → Recover → Audit、Origin縮退、HとRの回復を七面で保持する。
+本派生物は第9論を反AI論、メディアリテラシー一般論、ファクトチェック、心理操作対策だけへ縮約しない。H-DisconnectのU/H/R条件、fake-U、H_d、F-C、SD、Detect → Stop → Shrink → Recover → Audit、Origin縮退、HとRの回復を保持する。
 
 派生側はH_d、F-C、SDへ理解度点数、危険度％、AI依存率、固定合格閾値を追加しない。分かりやすさ、要約、AI利用そのものを禁止せず、Origin回帰・H・R・反証可能性が保持される場合を非該当として残す。
 
-## 表示・導線
-七面すべてで親原典情報、Origin、派生IDを保持し、FAQはQ1〜Q30の三層構造、AI索引はSummary / Concepts / Causal chain / State model / Applications / Measurements and audit / Validity conditions / Failure conditions / Falsification conditions / Required distinctions / Interpretation constraints / Search terms / Origin return を保持する。
+## 第三者向けの読解境界
+第三者は、AIや要約の使用有無そのものではなく、理解感だけが先行してHとRが切断されていないか、Originへ戻れるか、反証可能性が残っているかを確認する。本派生物は企業・組織・外部媒体の公式見解を代弁せず、Nakagawa Masterの公開原典の理解を補助する。
 
-フッター導線はREADME、人間向け要約、FAQ、日本語AI索引、英語AI索引、中国語AI索引、派生ID台帳の七面を相互接続する。
-
-## 確定状態
-```yaml
-parent_identity_complete: true
-origin_signature_complete: true
-official_derivative_identity_complete: true
-seven_surface_structure_complete: true
-footer_navigation_complete: true
-faq_q1_q30_complete: true
-ja_en_zh_structure_equivalent: true
-source_fidelity_preserved: true
-structural_expansion_bounded: true
-unsupported_numeric_claims_added: false
-anti_ai_reduction_avoided: true
-internal_operational_language_removed: true
-```
+## 原典回帰
+H-Disconnect、fake-U、H_d、F-C、SD、Detect → Stop → Shrink → Recover → Audit、Origin縮退、H/R回復の厳密な意味はParent URLへ戻って確認する。
 
 ---
 導線: [公式派生物019トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
