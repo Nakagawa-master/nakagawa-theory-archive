@@ -116,11 +116,7 @@ The parent does not define generic understanding scores, danger percentages, AI-
 - Assign derivative-created fixed thresholds to H_d, F-C, or SD.
 
 ## Falsification conditions
-The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
-
-親原典の統合監査要旨では、流暢な要約やAI回答が広く利用されても、Origin回帰、H、R、反証可能性が安定的に保たれ、意味漂流SDが増えず、判断精度・修正可能性が継続的に高まるなら、それらをH-Disconnectの危険相とみなす根拠は弱まる。
-
-Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
+The parent origin's integrated audit summary states that grounds for treating fluent summaries or AI answers as an H-Disconnect risk phase weaken if they are widely used while Origin return, H, R, and falsifiability remain stably preserved, semantic drift SD does not increase, and decision accuracy and revisability continue to improve. This derivative index does not invent a separate falsification theory.
 
 ## Required distinctions
 - understanding / fake-U

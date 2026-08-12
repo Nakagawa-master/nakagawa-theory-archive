@@ -127,11 +127,7 @@ The parent defines no universal insufficient-effort rate, fatigue rate, trust ra
 - Exhaustion, silence, or learning shutdown appears while targets, assumptions, and conditions remain unchanged.
 
 ## Falsification conditions
-The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
-
-親原典の統合監査要旨では、成立条件、因果線、検証条件、修正条件、責任配置を明示し、設計側も失敗時に再検査する構造を整えても、広い観測条件で疲弊・責任転嫁・学習停止・挑戦回避の発生構造が変わらない場合、本論の適用仮説は限定・改訂される。
-
-Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
+The parent origin's integrated audit summary states that this thesis's applicability hypothesis should be limited or revised if, even after viability conditions, causal lines, verification conditions, correction conditions, and responsibility allocation are made explicit and the design side also re-examines failures, broad observation still shows no change in the structures producing exhaustion, responsibility shifting, learning cessation, and avoidance of challenge. This derivative index does not invent a separate falsification theory.
 
 ## Required distinctions
 - target value / future definition

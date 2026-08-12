@@ -123,11 +123,7 @@ observation_must_return_to_U_R_H
 - The equation is inverted into a surveillance or punishment mechanism.
 
 ## Falsification conditions
-The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
-
-親原典の統合監査要旨では、U/R/Hが高く維持され、同じ情報からの意味再現、決定責任の追跡、差分履歴の検証が継続的に可能であるにもかかわらず、同型の合意崩壊・実害・修理不能状態が系統的に増え続けるなら、本論の説明範囲または測定束は改訂対象になる。
-
-Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
+The parent origin's integrated audit summary states that the explanatory scope or measurement bundle of this thesis should be revised if U/R/H remain high, semantic reproduction from the same information, decision-responsibility tracing, and difference-history verification remain continuously possible, yet the same types of consensus collapse, actual harm, and irreparable states continue to increase systematically. This derivative index does not invent a separate falsification theory.
 
 ## Required distinctions
 - consensus / opinion agreement

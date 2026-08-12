@@ -71,11 +71,7 @@ It also fails if intermediary metrics are treated as structural outcomes—for e
 Presenting the derivative as an Invax, HO Soil, or external-media official statement, or preserving only the implementation structure while dropping the parent’s public deconstruction of why “material-view update” was foregrounded in the external article, is also failure.
 
 ## Falsification conditions
-The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
-
-親原典の統合監査要旨では、土質評価、配合試験、混合・養生、品質確認、現場補正、検証を繰り返しても、用途ごとの再現可能な材料条件が形成されず、標準化への知見も蓄積しないなら、「材料観更新を支える実装OS」という読解は改訂対象となる。
-
-Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
+The parent origin's integrated audit summary states that the reading of an 'implementation OS supporting an updated view of materials' should be revised if repeated soil evaluation, blend testing, mixing and curing, quality confirmation, field correction, and verification fail to form reproducible material conditions by use case and do not accumulate knowledge toward standardization. This derivative index does not invent a separate falsification theory.
 
 ## Required distinctions
 - surplus-soil reuse vs. material-view update

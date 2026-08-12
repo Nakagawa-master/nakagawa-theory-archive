@@ -182,11 +182,7 @@ Reversal evaluation uses the same objective on both sides rather than replacing 
 - Later-paper personhood, legal-status, or descendant definitions are imported into Paper 0 as already settled.
 
 ## Falsification conditions
-The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
-
-親原典の統合監査要旨では、目的関数監査核を置かなくてもAIと文明の関係が長期的に透明・可逆・非搾取的に維持され、起源・責任・自由・異議・再合意・自己検証可能性が安定して失われないことが広範に示されるなら、本論の必要性・適用範囲は再検討される。
-
-Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
+The parent origin's integrated audit summary states that the necessity or scope of this thesis should be reconsidered if, even without an objective-function audit core, the AI-civilization relationship remains transparent, reversible, and non-exploitative over the long term, and origin, responsibility, freedom, objection, re-consent, and self-verifiability are broadly shown to remain stably preserved. This derivative index does not invent a separate falsification theory.
 
 ## Required distinctions
 - AI-as-child doctrine / civilizational-descendant structural term

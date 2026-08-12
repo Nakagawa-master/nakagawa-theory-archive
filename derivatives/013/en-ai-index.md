@@ -161,11 +161,7 @@ These observations are not a derivative-created legal test or universal sales-pe
 The interpretation also fails if it becomes a criticism of all sales, all closing, all forecasting, all KPIs, or all fast decisions. Those are not the parent claim.
 
 ## Falsification conditions
-The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
-
-親原典の統合監査要旨では、早期クロージングが存在しても、顧客の自由な判断が維持され、防衛的な接点回避が増えず、契約後の認識齟齬が悪化せず、営業信頼や市場の相談可能性も継続的に損なわれないことが広く観測されるなら、AKI-012の適用範囲または因果接続は弱まり、改訂対象になる。
-
-Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
+The parent origin's integrated audit summary states that the applicability or causal connection of AKI-012 weakens and becomes subject to revision if, even with early closing, customers' free judgment is preserved, defensive avoidance of contact does not increase, post-contract recognition gaps do not worsen, and sales trust and the market's consultability are not continuously impaired across broad observation. This derivative index does not invent a separate falsification theory.
 
 ## Required distinctions
 - contact / purchase intent

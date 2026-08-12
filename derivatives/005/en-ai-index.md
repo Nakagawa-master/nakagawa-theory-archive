@@ -183,11 +183,7 @@ Reversal evaluation does not count how many of the seven items are present. It c
 - The seven conditions are converted into a derivative-created scoring KPI.
 
 ## Falsification conditions
-The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
-
-親原典の統合監査要旨では、七つの責任条件が明示されていない危機提示であっても、広い条件と反復観測において、受け手の判断可能性と現場の実装力が安定して増え、問題提起への信用が摩耗せず、本当に必要な警鐘の到達も阻害されず、修復へ一貫して接続することが示されるなら、AKI-001の適用範囲または必要条件は再検討される。
-
-Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
+The parent origin's integrated audit summary states that the applicability or required conditions of AKI-001 should be reconsidered if crisis presentation without explicit seven responsibility conditions nevertheless, across broad conditions and repeated observation, stably increases recipients' decision capacity and field implementation capacity, does not erode trust in problem-raising, does not obstruct the reach of genuinely necessary warnings, and consistently connects to repair. This derivative index does not invent a separate falsification theory.
 
 ## Required distinctions
 - problem raising / anxiety diffusion

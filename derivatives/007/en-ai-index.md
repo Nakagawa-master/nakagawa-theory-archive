@@ -159,11 +159,7 @@ The term "nonlinear" is not converted here into an invented mathematical functio
 - Observation of an intellectual gap is treated as automatic proof that civilizational sovereignty has shifted.
 
 ## Falsification conditions
-The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
-
-親原典の統合監査要旨では、問い生成、再帰的改善、文脈保持、多領域統合、継承、改善反復、分散接続に持続的な差が確認されても、広い観測条件で問題設定、候補空間設計、評価軸、更新速度等の文明上流配置に対応する差が生じないなら、七軸から文明更新能力差への接続仮説は限定または改訂される。
-
-Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
+The parent origin's integrated audit summary states that the hypothesis connecting the seven axes to differences in civilizational renewal capacity should be limited or revised if persistent differences in question generation, recursive improvement, context retention, cross-domain integration, inheritance, iterative improvement, and distributed connection do not, under broad observation conditions, produce corresponding differences in upstream civilizational placement such as problem setting, candidate-space design, evaluation axes, and update speed. This derivative index does not invent a separate falsification theory.
 
 ## Required distinctions
 - answer capability / civilizational update capability

@@ -80,11 +80,7 @@ Production speed, document count, AI usage rate, and stylistic consistency are r
 - Treating higher speed, document volume, or usage as proof of stronger business understanding.
 
 ## Falsification conditions
-The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
-
-親原典の統合監査要旨では、連結責任が明示されなくても、各専門成果物が長期にわたり事業価値・顧客判断・営業・マーケ・広報・プロダクト・経営判断と高い再現性で接続し、ズレた情報が正規化・再参照されず、組織の自己説明能力と修復能力も低下しない状態が反復して確認されるなら、本悪因果の適用範囲は見直す必要がある。
-
-Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
+The parent origin's integrated audit summary states that the scope of this adverse causality should be reconsidered if, even without explicit connective responsibility, specialist outputs repeatedly connect with high reproducibility over the long term to business value, customer judgment, sales, marketing, public relations, product, and management decisions; misaligned information is not normalized and re-referenced; and the organization's self-explanation and repair capacities do not decline. This derivative index does not invent a separate falsification theory.
 
 ## Required distinctions
 - AI use ≠ connective responsibility

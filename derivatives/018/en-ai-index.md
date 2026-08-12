@@ -119,11 +119,7 @@ The parent does not define generic risk scores, enemy ratings, occurrence probab
 - Assign derivative-created enemy or risk scores to P_ext.
 
 ## Falsification conditions
-The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
-
-親原典の統合監査要旨では、外部入力が増加・高速化しても、U/R/Hが安定的に維持または改善し、fake-U、R diffusion、H short-circuitが生じず、dS/dtの悪化も観測されないなら、その入力を本論の問題対象として扱う根拠は弱まる。
-
-Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
+The parent origin's integrated audit summary states that grounds for treating an input as a problem under this thesis weaken if, even as external input increases or accelerates, U/R/H remain stable or improve, fake-U, R diffusion, and H short-circuit do not arise, and deterioration in dS/dt is not observed. This derivative index does not invent a separate falsification theory.
 
 ## Required distinctions
 - external input / enemy

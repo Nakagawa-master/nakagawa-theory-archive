@@ -154,11 +154,7 @@ The reversal test remains source-bounded: if local correctness is accompanied by
 Specialization, local expertise, and division of labor therefore do not themselves satisfy the theory's failure mode. The relevant question is whether local correctness is mistaken for whole establishment while connection remains unjudged.
 
 ## Falsification conditions
-The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
-
-親原典の統合監査要旨では、第0論の適用仮説は、L1〜L6の明示的な接続判定を行わなくても、局所判断だけで責任特定可能性、履歴公開、現場負荷、制度疲労、例外処理、意味軸、理解可能性が長期的かつ広範に安定し、局所正解が継続的に全体成立へ接続する場合に弱まる。
-
-Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
+The parent origin's integrated audit summary states that the applicability hypothesis of Volume 0 weakens if, without explicit L1-L6 connection judgments, local judgments alone keep responsibility traceability, history disclosure, field burden, institutional fatigue, exception handling, meaning axes, and intelligibility stable over the long term and across broad conditions, while local correctness continues to connect to whole-system viability. This derivative index does not invent a separate falsification theory.
 
 ## Required distinctions
 - local correctness / whole establishment

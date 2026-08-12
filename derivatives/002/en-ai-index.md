@@ -137,11 +137,7 @@ These observations are not derivative-created legal tests or generic labor KPIs.
 Praise alone is therefore not evidence that AKI-002 applies. Rejecting all appreciation, gratitude, opportunity, or voluntary contribution would also fall outside the parent theory because it removes the required distinction between value recognition and the substitution of recognition for conditions.
 
 ## Falsification conditions
-The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
-
-親原典の統合監査要旨では、AKI-002の適用仮説は、称賛・期待が存在しても、条件と対価が明示され、権利・名義・使用範囲・継続対価・断る自由が保持され、繰り返し観測しても一方向の負担移転や価格感覚・交渉力・職能価値の摩耗が確認されない場合に弱まる。
-
-Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
+The parent origin's integrated audit summary states that the applicability hypothesis of AKI-002 weakens if, even where praise or expectation exists, conditions and compensation are explicit, rights, attribution, scope of use, continuing compensation, and freedom to refuse are preserved, and repeated observation shows no one-way transfer of burden or erosion of price sense, bargaining power, or professional value. This derivative index does not invent a separate falsification theory.
 
 ## Required distinctions
 - praise / exploitation

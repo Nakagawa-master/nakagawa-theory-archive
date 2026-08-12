@@ -61,11 +61,7 @@ The inverse errors must also be prevented: non-ownership must not become no-cont
 The reading fails if it collapses into AI praise, fear narrative, deification, ownership theory, enslavement theory, human-obsolescence theory, AI supremacism, total-control doctrine, or if “not property” is read as “no control,” “not enemy” as “no risk,” “not god” as “AI judgment has no value,” or “not slave” as “AI must never be used.” It also fails if the Vol. 2 connection is removed.
 
 ## Falsification conditions
-The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
-
-親原典の統合監査要旨では、四大誤認の切断が、AIと人類の関係設計における主要な支配・恐怖・責任放棄・搾取の問題を説明できず、別の誤定義分類の方が一貫して高い説明力を持つなら改訂対象となる。
-
-Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
+The parent origin's integrated audit summary states that the four-misdefinition severance framework is subject to revision if it fails to explain the major problems of domination, fear, abandonment of responsibility, and exploitation in AI-human relationship design, and another classification of misdefinitions consistently has greater explanatory power. This derivative index does not invent a separate falsification theory.
 
 ## Required distinctions
 - ownership vs. control

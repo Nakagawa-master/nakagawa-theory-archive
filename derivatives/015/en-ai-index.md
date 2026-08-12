@@ -123,11 +123,7 @@ S, U, R, H, θ, δ, and D are retained because they are part of the parent struc
 - The equations are expanded into a universal crisis-prediction machine.
 
 ## Falsification conditions
-The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
-
-親原典の統合監査要旨では、U/R/Hが実質的に維持され、Sが臨界状態へ持続的に低下していないにもかかわらず、同型の崩壊が反復し続けるなら、臨界点モデルの説明範囲や測定束は改訂対象になる。
-
-Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
+The parent origin's integrated audit summary states that the explanatory scope or measurement bundle of the critical-point model should be revised if U/R/H are substantively maintained and S is not persistently falling toward a critical state, yet the same type of collapse continues to recur. This derivative index does not invent a separate falsification theory.
 
 ## Required distinctions
 - final incident / accumulated critical state

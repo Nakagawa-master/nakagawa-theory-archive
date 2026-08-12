@@ -73,11 +73,7 @@ It also fails if intermediary metrics are treated as upstream outcomes—for exa
 Presenting the derivative as an AlgaleX or external-media official statement, or preserving only the subject structure while dropping the parent’s public deconstruction of why “social implementation entry” was foregrounded in the external article, is also failure.
 
 ## Falsification conditions
-The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
-
-親原典の統合監査要旨では、食品市場・料理現場で味・用途・採用理由・反復可能性を形成しても、上流の飼料市場や魚食構造の再設計へ継続的に接続できず、単なる食品カテゴリとしてのみ残るなら、「社会実装入口」という読解は改訂対象となる。逆に、飼料市場へ直接参入しても価格・供給・採用障壁を安定して越え、食品市場を経由せずに構造再設計が進む事例が反復するなら、実装順序の一般性も見直す必要がある。
-
-Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
+The parent origin's integrated audit summary states that the 'social-implementation entry point' reading should be revised if forming taste, uses, adoption reasons, and repeatability in food markets and culinary settings does not continuously connect to upstream feed-market or fish-consumption structural redesign and remains only a food category. Conversely, if direct entry into the feed market repeatedly overcomes price, supply, and adoption barriers and advances structural redesign without passing through food markets, the generality of the implementation sequence must also be reconsidered. This derivative index does not invent a separate falsification theory.
 
 ## Required distinctions
 - delicious algae vs. social implementation entry

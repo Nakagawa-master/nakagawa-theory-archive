@@ -119,11 +119,7 @@ knowledge is divided into horizontal domains
 - Lose parent identity or origin traceability.
 
 ## Falsification conditions
-The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
-
-原典の統合監査要旨に従い、観測窓δで構造的乖離Mが確認され、照応指標が閾値θを越えて現行仮説と整合しない場合は、現行仕様の仮説Aを棄却・改訂する。
-
-Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
+Under the parent origin's integrated audit summary, if structural divergence M is observed within observation window δ and the correspondence indicator exceeds threshold θ in a manner inconsistent with the current hypothesis, hypothesis A in the current specification is to be rejected or revised. This derivative index does not invent a separate falsification theory.
 
 ## Required distinctions
 - horizontal domain / vertical depth

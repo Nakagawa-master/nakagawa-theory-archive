@@ -119,11 +119,7 @@ The parent does not define universal immunity scores, fixed detection percentage
 - Assign derivative-created fixed pass values to D_det, D_loss, or recovery time.
 
 ## Falsification conditions
-The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
-
-親原典の統合監査要旨では、罰を強化しても報告抑制や潜伏が増えず、D_lossが継続的に低下し、RとHが強まり、S回復時間が短縮し、Dが減衰することが広く再現されるなら、「罰→R低下→潜伏→S悪化→D増幅」という適用範囲は再検討される。
-
-Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
+The parent origin's integrated audit summary states that the scope of the causal chain 'punishment → lower R → concealment → lower S → amplified D' should be reconsidered if strengthening punishment broadly and repeatedly does not increase reporting suppression or concealment, D_loss continuously decreases, R and H strengthen, S recovery time shortens, and D attenuates. This derivative index does not invent a separate falsification theory.
 
 ## Required distinctions
 - deviation occurrence / immune failure
