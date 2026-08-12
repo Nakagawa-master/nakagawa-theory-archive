@@ -89,8 +89,8 @@ surface_role_mixing: NONE
 semantic_fidelity: PASS
 structural_necessity_boundary: PASS
 translation_equivalence: PASS
-volume_density_od134_od135_floor: PASS_BY_FULL_REBUILD_TARGET
-fresh_read_status: PENDING_PUBLIC_MERGE_VERIFICATION
+volume_density_od134_od135_floor: PASS
+fresh_read_status: PASS_MAIN
 ```
 
 ## Excluded invention
@@ -110,17 +110,17 @@ classification: FULL_REBUILD
 source_retrieval: PASS
 seven_surface_comparison: COMPLETE
 identity_origin_structure_navigation: PASS
-volume_density: PASS_BY_REBUILD_TARGET
+volume_density: PASS
 semantic_fidelity: PASS
 structural_necessity_boundary: PASS
 quantitative_claim_binding: PASS_SOURCE_BOUND_ENUMERATION_NOT_SCORE
 reversal_evaluation: PASS_SOURCE_BOUNDED
 translation_equivalence: PASS
-public_rebuild_pr: PENDING
-public_rebuild_merge_commit: PENDING
-main_fresh_read: PENDING
-closure: PENDING_PUBLIC_MERGE_AND_MAIN_FRESH_READ
-next_cursor: OD008_UNTIL_CLOSED
+public_rebuild_pr: 237
+public_rebuild_merge_commit: 2ac1512733820f47393efe539c5e2f4babaf106c
+main_fresh_read: PASS
+closure: COMPLETE
+next_cursor: OD009
 ```
 
 ---
