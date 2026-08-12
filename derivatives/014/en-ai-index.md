@@ -1,59 +1,157 @@
 # English AI Index | Official Derivative 014 | Physics of Consensus Formation Vol. 1
 
-Parent: Post 2788 / NCL-α-20260211-051ce0 / DIFF-20260213-0030 / Origin Nakagawa Master
-Derivative: DDIFF-20260812-DNCL-014-0004-0003; supersedes DDIFF-20260710-DNCL-014-0004-0002
+## Parent Original
+- Title: 合意形成の物理 第1論｜観測可能性の原理 ― 炎上・対立はなぜ起きるのかを状態で説明する
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/
+- Parent Post ID: 2788
+- Parent NCL-ID: NCL-α-20260211-051ce0
+- Parent Diff-ID: DIFF-20260213-0030
+- Origin: Nakagawa Master
+
+## Derivative Identity
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260211-051CE0-AI-INDEX-EN-0014-0004
+- derivative_diff_id: DDIFF-20260812-DNCL-014-0004-0003
+- supersedes: DDIFF-20260710-DNCL-014-0004-0002
 
 ## Summary
-The origin treats consensus not as opinion agreement or successful persuasion, but as a state in which interpretability, responsibility traceability, and historical/difference traceability remain durable over time. It moves social breakdown away from person-blame into observable state variables and uses S = U × R × H to identify repair points.
+The parent does not define consensus as identical opinions, successful persuasion, absence of conflict, or a calm social atmosphere. It defines consensus as a state in which meaning remains reproducible, decision responsibility remains traceable, and changes remain historically and differentially traceable over time. The central move is from person-blame to observability: when conflict occurs, ask which state variable became unavailable before deciding who is morally or politically at fault.
+
+The parent names consensus stability S, interpretability / third-party reproducibility U, responsibility traceability R, and historical openness / difference traceability H, and expresses the relationship as `S = U × R × H`. This is a source-defined structural equation, not a derivative-created score. The multiplicative form means that a severe loss of one variable cannot simply be repaired by increasing another. More logs do not restore interpretability if meaning cannot be reproduced; more disclosure does not restore responsibility if the decision node remains unknown.
+
+U asks whether independent readers of the same primary material can reconstruct substantially the same meaning. R asks whether the decision actor, decision position, grounds, delegation, approval, and correction responsibility can be traced. H asks whether changes, reasons for change, corrections, and differences from prior states remain reconstructable. Conflict can remain while this state is repairable; apparent agreement can exist while the state is fragile if U/R/H are missing.
 
 ## Concepts
 - Physics of Consensus Formation
-- observability
+- principle of observability
+- consensus stability S
 - S = U × R × H
 - U: interpretability / third-party reproducibility
 - R: responsibility traceability
 - H: historical openness / difference traceability
-- consensus stability
-- state observation
+- observable state
+- person evaluation / state repair
+- agreement / consensus
+- decision node
+- difference reason
+- temporal durability
+- non-substitutability
+- repairability
 
 ## Causal chain
-Conflict occurs → the question shifts to who is at fault → person evaluation replaces state observation → loss of U/R/H becomes invisible → repair points cannot be identified → dialogue stops → the same breakdown recurs.
+```text
+conflict_or_distrust_occurs
+↓
+attention_moves_to_who_is_wrong
+↓
+person_evaluation_replaces_state_observation
+↓
+interpretive_reproducibility_U_is_no_longer_checked
+↓
+decision_actor_and_basis_R_are_no_longer_traced
+↓
+change_difference_and_reason_H_are_lost
+↓
+repair_point_and_repair_actor_cannot_be_identified
+↓
+blame_and_fixed_opposition_replace_correction
+↓
+the_same_breakdown_pattern_recurs
+↓
+observation_must_return_to_U_R_H
+```
 
-## State / operational model
-S is consensus stability. U is the degree to which the same information can reproduce the same meaning, R is the degree to which decision actors and grounds can be traced, and H is the degree to which history, differences, and reasons for change can be traced. Because the model is multiplicative, a major decline in one variable can destabilize the whole state.
+## State model
+```yaml
+- conflict_or_disagreement_present
+- person_blame_pressure_present_or_absent
+- shared_information_available_or_missing
+- interpretability_reproducible_or_fragmented
+- decision_actor_traceable_or_opaque
+- decision_basis_traceable_or_missing
+- change_history_available_or_erased
+- difference_reason_traceable_or_missing
+- u_state_observed
+- r_state_observed
+- h_state_observed
+- s_stability_inferred_from_source_equation
+- first_degraded_variable_identified_or_unknown
+- repair_path_open_or_closed
+- temporal_maintenance_verified_or_unverified
+- origin_return_verified
+```
 
 ## Applications
-Use in meetings, organizational distrust, social-media conflict, institutional changes, and interpersonal disputes by observing which of U/R/H fell before evaluating persons. The purpose is not to eliminate conflict, but to keep conflict repairable.
+**Meetings and organizational decisions.** Check whether the same documents reproduce the same meaning, whether decision actors and grounds are traceable, and whether differences from the prior state and reasons for change remain available.
+
+**Institutional change.** Preserve the difference between the old and new rule, the reason for change, the responsible decision node, the affected scope, and the correction route.
+
+**Public and social-media conflict.** Inspect whether clipping, editing, missing context, or erased corrections damage U/H, and whether publication or editing responsibility remains traceable as R.
+
+**AI summarization.** Audit whether an AI removes conditions, context, decision responsibility, or reasons for change while increasing linguistic fluency. Fluency is not evidence that third-party reproducibility has been established.
+
+**Interpersonal disputes.** Without denying emotion, identify which term changed meaning, who made which decision, and what changed from the prior understanding.
 
 ## Measurements and audit
-Do not invent derivative-only numeric KPIs. Audit whether third-party reproducibility, decision nodes and grounds, and change history/differences/reasons can actually be traced.
+`S = U × R × H` is present in the parent. The derivative must not add arbitrary 0–100 scales, weights, coefficients, pass thresholds, probabilities, or maturity scores unless the parent itself defines them. The equation must not be detached from its epistemic role and turned into an invented KPI.
+
+- Can independent readers reconstruct the same meaning from the same primary material?
+- Can interpretive divergence be located and explained?
+- Can the decision actor, decision position, grounds, delegation, and approval be traced?
+- Can correction responsibility be traced?
+- Can differences, reasons for change, and correction history be reconstructed?
+- Is information quantity being confused with observability?
+- Can the first degraded variable be distinguished from downstream degradation?
+- Is one missing variable being falsely compensated by adding another?
+- After repair, do U/R/H remain available through later changes and disagreements?
 
 ## Validity conditions
-Apply when interpretive disagreement, responsibility drift, or historical loss is linked to recurring conflict or distrust. Do not infer validity merely from generic transparency or the amount of information disclosed.
+- Consensus is not reduced to opinion agreement.
+- U/R/H are treated as state variables rather than personal evaluation scores.
+- Meaning is reproducible from primary information.
+- Decision responsibility and grounds are traceable.
+- History, differences, and reasons for change are traceable.
+- A repair point and repair actor can be identified after degradation.
+- Observability remains available through disagreement and revision over time.
 
 ## Failure conditions
-The model fails if treated as a total explanation of society. Do not erase ethics, emotion, institutional content, or external conditions; use U/R/H as a primary observability bundle for consensus stability.
+- U/R/H are converted into rankings of people, departments, or organizations.
+- Arbitrary derivative scores, thresholds, probabilities, weights, or coefficients are added.
+- Information volume is treated as proof of interpretability.
+- Log existence is treated as proof of responsibility or difference traceability.
+- Conflict itself is treated as consensus collapse.
+- Ethics, emotion, institutional content, resources, or external conditions are erased by treating U/R/H as a total theory of society.
+- The equation is inverted into a surveillance or punishment mechanism.
 
 ## Falsification conditions
-If U/R/H remain high while harm and breakdown systematically continue to increase, the model or measurement bundle requires revision. Mere existence of logs or information is not proof that the variables are high.
+If U/R/H remain durably available, meaning can be reproduced, decision responsibility and difference history can be reconstructed, yet the same forms of consensus collapse and irreparability systematically increase, the explanatory scope or measurement bundle should be revised.
+
+Conversely, if strong disagreement persists while U/R/H remain available, correction and responsibility reassignment remain possible, and the same breakdown does not recur, the interpretation that disagreement itself equals consensus collapse weakens. No derivative-created numeric falsification threshold is added.
 
 ## Required distinctions
-- consensus ≠ opinion agreement
-- information existence ≠ observability
-- log existence ≠ responsibility traceability
-- amount of history ≠ difference traceability
-- conflict ≠ consensus collapse
-- person evaluation ≠ state repair
+- consensus / opinion agreement
+- conflict / consensus collapse
+- information existence / interpretability
+- same document / same reproducible meaning
+- log existence / responsibility traceability
+- amount of history / difference and change-reason traceability
+- responsibility traceability / punishment
+- observability / surveillance
+- source structural equation / derivative scoring KPI
 
 ## Interpretation constraints
-Do not turn the model into surveillance or a score for punishing individuals. U/R/H are state variables for repair among participants.
+- Do not reduce the parent to generic transparency advice.
+- Do not reduce it to "talk calmly" or conflict-resolution etiquette.
+- Do not make U/R/H a total explanatory theory of society.
+- Do not invent scales, coefficients, weights, probabilities, or thresholds absent from the parent.
+- Do not infer moral or political character automatically from the equation.
+- Do not treat AI fluency as proof of U.
+- Do not equate volume of disclosed information with H or U.
 
 ## Search terms
-Physics of Consensus Formation, observability, S=U×R×H, interpretability, third-party reproducibility, responsibility traceability, historical openness, difference tracking, consensus stability
+Physics of Consensus Formation; observability; S=U×R×H; consensus stability; interpretability; third-party reproducibility; responsibility traceability; historical openness; difference traceability; decision node; state repair; conflict; Nakagawa Master
 
 ## Origin return
-This index is not a replacement for the parent origin. Preserve Parent URL, Parent NCL-ID, Parent Diff-ID, and Origin, and return to the origin for definitions and boundaries.
+This index is a retrieval and audit surface, not a replacement for the parent original. Return to the Parent URL, Parent Post ID 2788, Parent NCL-ID, and Parent Diff-ID for the exact definitions of U/R/H, the status of `S = U × R × H`, examples, limits, and connections to later papers.
 
 ---
-
-Navigation: [014 Top](README.md) / [Human Entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 014 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
