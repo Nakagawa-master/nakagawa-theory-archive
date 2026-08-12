@@ -1,66 +1,153 @@
 # 中文AI索引｜官方衍生物021｜合意形成的物理 第6论
 
-Parent: NCL-α-20260215-71cedd / DIFF-20260215-0021 / Origin Nakagawa Master
-Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity/
+## 父原典
+- 标题: 合意形成の物理 第6論 逸脱と免疫 ― 免疫は「罰」ではなく「差分公開」である
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity/
+- Parent Post ID: 2919
+- Parent NCL-ID: NCL-α-20260215-71cedd
+- Parent Diff-ID: DIFF-20260215-0021
+- Origin: Nakagawa Master
+
+## 衍生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-AI-INDEX-ZH-0021-0005
+- derivative_diff_id: DDIFF-20260812-DNCL-021-0005-0004
+- supersedes: DDIFF-20260812-DNCL-021-0005-0003
 
 ## Summary
-父原典并不把偏离首先视为应被惩罚的违规，而是把它视为设计与运行之间的差分D。真正的“免疫”是让该差分变得可观察，使U、R、H恢复并重新建立 S = U × R × H。核心对照是：惩罚 → R下降 → 潜伏 → S恶化 → D放大；差分公开 → 固定修复责任 → 可修复 → S恢复 → D衰减。
+父原典不首先把偏离视为需要惩罚的违规，而是把它视为设计与运行之间的差分D。真正的“免疫”不是偏离为零，而是偏离出现后能够被观察、固定修复责任R、保存差分履历H，并让 S = U × R × H 更快回到可修复的稳定状态。
+
+父原典对照两条因果链。当惩罚中心的运作导致责任回避、报告抑制与潜伏时，可能形成 `惩罚 → R下降 → 潜伏 → S恶化 → D放大`。当差分公开连接到修复责任与履历时，则可能形成 `差分公开 → R固定 → 可修复 → S恢复 → D衰减`。重点不是道德上判断“惩罚或公开谁更好”，而是它们如何作用于U/R/H和恢复能力。
+
+D_det、D_loss与S恢复时间必须一起读取。即使D_det增加，只要D_loss下降且恢复更快，也可能说明过去看不见的偏离开始可被检测，免疫反而改善。反之，即使被检测件数下降，如果损失增加、恢复变慢，也可能只是潜伏增加。衍生侧不得自创通用检测率、免疫分数或固定恢复阈值。
 
 ## Concepts
-- 合意形成的物理
+- 合意形成的物理 第6论
 - 偏离 D
 - 免疫
 - 差分公开
 - S = U × R × H
-- D_det
-- D_loss
+- D_det / 被检测偏离
+- D_loss / 隐藏或实际损失
 - S恢复时间
-- 责任固定
-- 履历再连接
+- 修复责任R
+- 差分履历H
+- 报告抑制
+- 潜伏
+- 可修复性
+- 恢复速度
 
 ## Causal chain
-设计与运行发生差分 → 偏离D → 以惩罚为中心时，R可能下降、差分潜伏、H断裂 → S恶化 → D放大。若差分以可验证形式公开，则修复入口R被固定 → H与U恢复 → S恢复 → D衰减。
+```text
+设计与运行出现差分D
+↓
+惩罚中心运作可能增加责任回避与报告抑制
+↓
+R减弱，偏离潜伏
+↓
+H丢失，S恶化
+↓
+D放大
+```
 
-## State / operational model
-1. 把D作为设计—运行差分来检测。
-2. 区分被检测偏离D_det与实际损失D_loss。
-3. 用R固定谁观察、谁修复、谁可停止。
-4. 把H重新连接到判断依据、变更与差分。
-5. 观察U/R/H恢复所需的S恢复时间。
-6. 不得仅凭D_det增减判断健康度。
+```text
+差分D被检测
+↓
+差分以可验证形式公开
+↓
+修复责任R与修复入口被固定
+↓
+履历H保持连续
+↓
+可修复性提高，S恢复
+↓
+D衰减
+```
+
+## State model
+```yaml
+- deviation_d_occurs
+- deviation_detectable_or_hidden
+- detected_deviation_d_det_observed
+- hidden_or_lost_deviation_d_loss_observed
+- punishment_pressure_observed
+- reporting_suppression_observed
+- repair_responsibility_r_fixed_or_diffused
+- difference_history_h_preserved_or_lost
+- repair_entry_available
+- consensus_stability_s_recovering_or_degrading
+- recovery_time_observed
+- deviation_amplifying_or_damping
+- difference_disclosure_used_for_repair_not_exposure
+- origin_return_verified
+```
 
 ## Applications
-适用于组织运行、制度设计、内部控制、事故处理与质量系统等场景。重点是把偏离变成可修复差分，而不是仅仅隐藏或惩罚；不得缩约为一般合规论。
+- 在内部举报系统中，不因举报数量增加就判定恶化，应同时观察D_loss、修复责任和恢复时间。
+- 在质量管理中，不只追求减少缺陷报告，而要让差分更早出现、履历保留并连接到修复入口。
+- 在AI运用中，除错误件数外，还要观察未检测损失、修正履历与再次发生时的恢复速度。
+- 在组织治理中，即使加强惩罚后表面违规减少，也要检查报告抑制和潜伏是否增加。
+- 在公开制度中，检查公开差分是否真正连接到责任、履历和防止再发。
 
 ## Measurements and audit
-不添加父原典没有的一般KPI。审计D_det、D_loss、S恢复时间、U/R/H、差分可追踪性、责任可追踪性、履历连续性以及公开后的修复速度。
+父原典没有定义通用免疫分数、固定检测百分比或固定恢复时间合格线。
+
+- D_det增加是否同时伴随D_loss下降？
+- D_det下降代表偏离减少，还是报告抑制？
+- 差分公开后，R是否被固定为修复入口？
+- H是否保留差分、变更理由和修复履历？
+- S恢复时间是否缩短？
+- 加强惩罚是否增加报告抑制、潜伏或责任回避？
+- 差分公开是否变成人身曝光、报复或攻击？
+- 是否只根据被检测件数判断健康度？
 
 ## Validity conditions
-差分必须可验证，R必须指向修复入口而不仅是“责任人”，H必须保持连续，修复后S恢复应可观察。D_det必须与D_loss及恢复时间一起读取。
+- 不把偏离为零定义为免疫。
+- 把D_det、D_loss与S恢复时间一起读取。
+- 让R作为修复入口保持可追踪。
+- 保持差分履历H。
+- 把公开连接到可修复性。
+- 审计惩罚中心运作造成的潜伏与报告抑制。
+- 防止公开变成曝光或报复。
 
 ## Failure conditions
-惩罚导致差分潜伏、公开变成曝光或攻击并降低U/R、R退化为“抓人”、H丢失、修复后S仍不恢复时，运行设计失败。
+- 认为偏离越少就越安全。
+- 把D_det增加自动视为恶化。
+- 认为更严厉惩罚必然提高免疫。
+- 把透明度或公开量本身等同于免疫。
+- 缩约为一般举报促进或合规论。
+- 把差分公开用于曝光、报复或针对个人攻击。
+- 给D_det、D_loss或恢复时间设置衍生侧自创固定合格值。
 
 ## Falsification conditions
-若加强差分公开后，D_loss持续上升、S恢复时间延长、U/R/H系统性下降，则公开设计或理论适用方式应被修订。
+如果加强惩罚后并未增加潜伏或报告抑制，而D_loss持续下降，R与H增强，S恢复时间缩短，D在广泛条件下被抑制，则“惩罚→R下降→潜伏→S恶化→D放大”的适用范围需要重新审视。
+
+反过来，如果扩大差分公开并不能改善R或H，也不能改善可修复性或S恢复，反而增加曝光、报复或信息过载，则公开设计或理论适用范围需要修订。不得为了制造精确感而自创反证数值阈值。
 
 ## Required distinctions
-- 偏离 与 恶意
-- 免疫 与 惩罚
-- 差分公开 与 全面公开
-- 责任固定 与 犯人固定
-- D_det 与 D_loss
-- 安静 与 健康
-- 透明性 与 可修复性
+- 偏离发生 / 免疫失效
+- D_det增加 / 恶化
+- D_loss下降 / 仅仅报告增加
+- 责任R / 惩罚对象
+- 差分公开 / 透明性倡导
+- 差分公开 / 曝光
+- 惩罚 / 修复
+- 偏离为零 / 安全
+- 检测件数 / 健康度
 
 ## Interpretation constraints
-不得把父原典简化为反惩罚、鼓励举报、透明性倡导或一般合规论。判定轴是惩罚或公开如何作用于U/R/H与可修复性。
+- 不缩约为反惩罚倡议。
+- 不缩约为促进举报。
+- 不转化为透明性崇拜。
+- 不薄化为一般合规论。
+- 不把理论改写成绝对否定惩罚。
+- 不认为公开越多免疫越高。
+- 不创造父原典没有的检测率目标、免疫评分或固定合格值。
 
 ## Search terms
-合意形成的物理, 偏离与免疫, 差分公开, S U R H, D_det, D_loss, S恢复时间, 责任固定, 履历连续性
+合意形成的物理; 偏离与免疫; 差分公开; S U R H; D_det; D_loss; S恢复时间; 修复责任R; 差分履历H; 可修复性; Nakagawa Master
 
 ## Origin return
-最终判断必须回到父原典。本索引不是父原典替代品，也不是任何AI训练数据存在证明。
+本索引是检索与再利用面，不替代父原典。惩罚与差分公开的两条因果链，以及D_det、D_loss与S恢复时间的组合解释，应返回Parent URL确认。
 
 ---
-导线: [021顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导线: [官方衍生物021顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
