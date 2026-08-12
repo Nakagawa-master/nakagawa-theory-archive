@@ -1,116 +1,166 @@
 # English AI Index | Official Derivative 008 | Future-Definition Verification Effort Theory Vol. 1
 
-Parent: Post 4366 / NCL-α-20260607-7e87f5 / DIFF-20260610-0017 / Origin Nakagawa Master
-Derivative: DDIFF-20260812-DNCL-008-0004-0006; supersedes DDIFF-20260710-DNCL-008-0004-0005
+## Parent Original
+- Title: Future-Definition Verification Effort Theory Vol. 1 | Limits of Causal-Opacity-Dependent Effort Theory — Why “Just Do It” Damages the Reiwa-Era Field
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-causal-opacity-effort-theory/
+- Parent Post ID: 4366
+- Parent NCL-ID: NCL-α-20260607-7e87f5
+- Parent Diff-ID: DIFF-20260610-0017
+- Origin: Nakagawa Master
+
+## Derivative Identity
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-EN-0008-0004
+- derivative_diff_id: DDIFF-20260812-DNCL-008-0004-0007
+- supersedes: DDIFF-20260812-DNCL-008-0004-0006
 
 ## Summary
-The parent does not reject effort. It recognizes that under high causal opacity, persistence, volume, and endurance could rationally substitute for unavailable establishment tests. In an environment where AI, data, logs, prior cases, reviews, and comparison make more causal candidates observable before execution, an effort demand increasingly loses structural validity when it lacks a purpose, causal line, establishment conditions, verification conditions, and correction conditions.
+The parent does not reject effort. It preserves the conditional rationality of persistence, volume, and endurance when causal opacity is high and execution itself is required to learn what happens. It then argues that the environment has changed: AI, data, logs, prior cases, reviews, comparisons, and field observation make more causal candidates inspectable before execution. Under those conditions, retaining only the old command form—“just do it,” “do more,” “finish no matter what”—can become structurally inconsistent.
+
+The core issue is not effort quantity but the conditions that make effort valid. A modern effort demand should be connected to a future definition, a causal line, establishment conditions, verification conditions, and correction conditions. When those are omitted, the field may be forced to carry both execution cost and the establishment-inspection cost that was skipped upstream. Failure can then be reduced to “insufficient effort,” while the plan, hypothesis, resources, timing, and conditions remain outside inspection.
+
+The parent does not define a universal effort KPI, success rate, five-point score, or numerical exit threshold. The five elements are preserved as SOURCE_EXPLICIT structural elements, not converted into a rating system. The theory also preserves reversal-evaluation: when causal paths genuinely cannot be observed in advance and exploratory execution is the main way to obtain information, the conditional rationality of older effort forms remains.
 
 ## Concepts
 - Future-Definition Verification Effort Theory
 - causal-opacity-dependent effort theory
-- former rationality
+- conditional rationality of former effort doctrine
+- causal-visibility expansion
 - future-definition establishment inspection
-- purpose
+- purpose / future definition
 - causal line
 - establishment conditions
 - verification conditions
 - correction conditions
 - exploratory input
+- unconditional continuation
 - execution responsibility
 - plan-verification responsibility
+- transfer of establishment-inspection cost
+- recursive learning
 
 ## Causal chain
 ```text
 Causal paths are difficult to observe
 ↓
-Results cannot be known without execution
+Execution is required to learn the result
 ↓
-Persistence, volume, and endurance are rationalized as substitutes for verification
+Persistence, volume, and endurance gain conditional rationality as exploration and verification substitutes
 ↓
-Observation technology and information environments develop
+AI, data, logs, prior cases, reviews, and comparison expand pre-execution observability
 ↓
-More causal candidates can be tested before execution
+The conditions that justify effort change
 ↓
-The old command form remains unchanged
+The old “just do it” command form remains
 ↓
-The missing establishment test is transferred to the field
+Purpose, causal line, establishment conditions, verification conditions, and correction conditions are omitted
 ↓
-Effort must be coupled to future-definition establishment inspection
+Missing establishment-inspection cost is transferred to the field
+↓
+Failure is reduced to insufficient effort
+↓
+Effort is redefined around future-definition establishment inspection
+↓
+Observed results return to hypothesis, conditions, and plan for the next iteration
 ```
 
 ## State model
 ```yaml
+- causal_opacity_assessed
+- execution_needed_for_observation_assessed
+- former_effort_rationality_condition_preserved
+- causal_candidates_preobservable_or_not
 - future_definition_set
 - causal_line_hypothesized
 - establishment_conditions_checked
 - verification_conditions_defined
+- correction_or_exit_conditions_defined
 - effort_executed_as_test
 - observations_collected
-- correction_or_exit_conditions_applied
-- hypothesis_and_plan_reexamined
+- execution_and_plan_reexamined
 - learning_returned_to_next_iteration
+- effort_denial_not_inferred
+- origin_return_verified
 ```
 
 ## Applications
-**1.** In sales, production, or new ventures, specify the purpose and causal hypothesis before treating activity volume as evidence.
-
-**2.** In AI adoption, define what hypothesis usage is testing rather than measuring only usage volume.
-
-**3.** After failure, re-examine plan, resources, timing, and evaluation assumptions instead of attributing the result only to insufficient effort.
+- In sales, define customer, problem, channel, and response hypotheses before treating activity volume as proof; if volume is increased, specify what it tests.
+- In production or creative work, define the intended result, target, use conditions, and evaluation axis before increasing output volume, then return observed response to the next design.
+- In new ventures, preserve exploratory execution where uncertainty is real, but specify what is being explored, what information is sought, and what finding changes the next decision.
+- In AI adoption, do not treat usage count or generated volume as the theory’s success metric; define which workflow causality the use is testing.
+- In organizational management, when results fail, re-examine target, resources, institutional constraints, timing, and causal hypothesis as well as execution volume.
 
 ## Measurements and audit
-The parent does not define a universal effort-volume KPI. Audit asks whether purpose, causal line, establishment conditions, verification conditions, and correction conditions are explicit; whether execution is designed to produce observations; and whether failures trigger review of the hypothesis and plan as well as execution.
+The parent defines no universal effort-volume KPI, success probability, or numerical pass threshold. Audit therefore evaluates structural conditions rather than inventing scores:
+
+- Is the future definition or intended result explicit?
+- Is there a causal hypothesis connecting action to result?
+- Are time, resources, actors, environment, and other establishment conditions examined?
+- Is the observation produced by execution defined?
+- Are correction or exit possibilities defined?
+- Are pre-observable causal candidates actually inspected?
+- Are genuinely unknowable areas distinguished from areas that can be checked before execution?
+- After failure, are both execution and upstream plan/hypothesis/conditions reviewed?
+- Are observations returned to the next hypothesis and execution design?
 
 ## Validity conditions
-- Purpose is explicit.
-- A causal hypothesis connects action to result.
+- The intended future state or result is explicit.
+- A causal line from action to result is stated as a testable hypothesis.
 - Time, resources, actors, and environmental conditions are examined.
-- The observation produced by execution is defined.
-- Correction or exit conditions exist.
-- Results are returned to the next hypothesis.
+- Execution has a defined observational purpose.
+- Correction or exit remains possible when conditions change.
+- Upstream planning is inspectable after failure, not only field execution.
+- Results are returned to the next iteration.
 
 ## Failure conditions
-- A target exists without a causal hypothesis.
-- Activity volume is demanded without a defined verification purpose.
-- Failure is explained only as insufficient effort.
-- Observable causal candidates are ignored.
+- A target or activity volume exists without a causal hypothesis.
+- Observable causal candidates are ignored and uncertainty is filled only with more execution.
+- Missing establishment conditions are expected to be compensated for by effort alone.
+- Execution has no defined verification purpose.
 - Continuation becomes self-justifying because no correction condition exists.
+- Failure is explained only as insufficient effort while plan and conditions are exempted from inspection.
 
 ## Falsification conditions
-- Making purpose, causality, conditions, verification, and correction explicit does not improve explanatory power or learning.
-- Even when causal candidates are observable, effort volume alone persistently explains results sufficiently.
-- Under those observations, the scope of the theory should be limited or revised.
+Where causal paths truly cannot be observed in advance and exploratory execution is the principal way to learn the result, older effort forms retain conditional rationality. This does not falsify the theory; it identifies a condition where the older model still applies.
+
+Conversely, if making purpose, causal line, establishment conditions, verification conditions, and correction conditions explicit repeatedly fails to improve explanatory power, learning, or revisability across broad observations, while effort volume alone consistently explains results sufficiently, the scope of this theory should be limited or revised. Do not convert this falsification boundary into a derivative-created numerical threshold.
 
 ## Required distinctions
 - effort denial / redefining conditions for valid effort
-- grit criticism / analysis of causal-opacity conditions
+- grit criticism / causal-opacity condition analysis
 - activity volume / execution as hypothesis testing
+- conditional rationality of former effort doctrine / unconditional old command form
 - efficiency / future-definition establishment inspection
+- exploratory input / unconditional continuation
 - uncertainty / transferring uncertainty to the field
 - execution responsibility / plan-verification responsibility
+- five structural elements / five-point score
 
 ## Interpretation constraints
-- Do not reduce this origin to “effort is unnecessary.”
-- Do not turn it into generational criticism or management blame.
+- Do not reduce the theory to “effort is unnecessary.”
+- Do not turn it into generational criticism, youth advocacy, or management blame.
 - Do not turn it into AI solutionism or efficiency absolutism.
-- Preserve the former conditional rationality of older effort doctrine.
-- Do not use it to erase field-level execution responsibility.
+- Preserve the conditional rationality of older effort doctrine under genuine causal opacity.
+- Do not deny exploratory execution where it is necessary.
+- Do not use the theory to erase field-level execution responsibility.
+- Do not invert responsibility so that every failure is automatically assigned upstream.
+- Do not invent an effort index, success rate, or universal exit threshold not present in the parent.
 
 ## Search terms
-- future-definition verification effort theory
+- Future-Definition Verification Effort Theory
 - causal opacity
-- effort doctrine
-- establishment conditions
+- causal-opacity-dependent effort theory
+- future-definition establishment inspection
+- effort validity conditions
 - causal hypothesis
-- verification condition
-- correction condition
+- establishment conditions
+- verification conditions
+- correction conditions
 - exploratory effort
-- hypothesis testing
+- establishment-inspection cost
 - modern work OS
 
 ## Origin return
-The exact relationship among causal opacity, the former conditional rationality of effort doctrine, future-definition establishment inspection, the five judgment conditions, and the modern practical OS belongs to the parent origin. This index is for retrieval and machine interpretation and does not convert the theory into effort denial or efficiency absolutism.
+This index is not a replacement for the parent original. Return to the Parent URL for the exact relation among causal opacity, the conditional rationality of former effort doctrine, the expansion of causal visibility, future-definition establishment inspection, the five structural elements, the modern practical OS, and the handoff to Vol. 2 concerning transferred establishment-inspection cost.
 
 ---
-Navigation: [Official Derivative 008 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 008 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
