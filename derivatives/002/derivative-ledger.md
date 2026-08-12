@@ -174,9 +174,13 @@ changed_surfaces:
   - derivative-ledger.md
 translation_equivalence: PASS
 fresh_read: PASS_BRANCH_LITERAL_READ
-public_main_merge_or_no_change_evidence: PENDING
-main_fresh_read: PENDING
-semantic_result: REBUILT_SOURCE_VERIFIED_READY_FOR_PUBLICATION
+public_main_merge_or_no_change_evidence:
+  pr: 225
+  merge_commit: 385d99c7a5fbb0baacf1b1eea091c485e3673e9e
+main_fresh_read: PASS
+semantic_result: PASS_SOURCE_VERIFIED_CURRENT_CAMPAIGN
+closure: COMPLETE
+next_cursor: OD003
 ```
 
 ---
