@@ -163,8 +163,9 @@ fresh_read_branch: PASS
 public_main_merge: PASS_PR_239_MERGE_9d3c0c61cf971e4bc10fc51d1326ca84b6e6185b
 main_fresh_read: PASS
 main_surface_blob_match: PASS_ALL_SEVEN
-brain_vault_closure_evidence: READY_TO_RECORD
-next_cursor_after_complete: OD008
+brain_vault_closure_evidence: PASS
+closure: COMPLETE_SOURCE_VERIFIED
+internal_status_terms_removed: PASS
 ```
 
 ---
