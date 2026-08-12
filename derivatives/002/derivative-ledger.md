@@ -173,10 +173,10 @@ changed_surfaces:
   - zh-ai-index.md
   - derivative-ledger.md
 translation_equivalence: PASS
-fresh_read: PENDING_BRANCH_LITERAL_READ
+fresh_read: PASS_BRANCH_LITERAL_READ
 public_main_merge_or_no_change_evidence: PENDING
 main_fresh_read: PENDING
-semantic_result: REBUILT_SOURCE_VERIFIED_AWAITING_PUBLICATION
+semantic_result: REBUILT_SOURCE_VERIFIED_READY_FOR_PUBLICATION
 ```
 
 ---
