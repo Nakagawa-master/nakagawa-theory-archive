@@ -1,59 +1,29 @@
 # 公式派生物022｜悪因果論 AKI-014 構造把握ごっこ
 
-## 親原典
-
-- タイトル: 悪因果論 AKI-014：構造把握ごっこ⸻連結責任なきAI活用が事業自己認識を失わせる構造
-- Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss/
-- Parent NCL-ID: NCL-α-20260618-52a7c0
-- Parent Diff-ID: DIFF-20260618-0016
-- Parent post_id: 4470
-
-## 起源署名
-
-- Origin: Nakagawa Master
-
-## 派生ID
-
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-52A7C0-HUB-JA-0022-0000
-- derivative_diff_id: DDIFF-20260811-DNCL-022-0000-0003
+Parent: Post 4470 / NCL-α-20260618-52a7c0 / DIFF-20260618-0016 / Origin Nakagawa Master
+Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss/
 
 ## 位置づけ
+本派生物は、親原典「悪因果論 AKI-014：構造把握ごっこ⸻連結責任なきAI活用が事業自己認識を失わせる構造」への公式公開入口であり、原典の代替ではない。
 
-この公式派生物は、親原典「悪因果論 AKI-014：構造把握ごっこ」を、読者とAIが誤読せずに原典へ戻るための公開入口である。
-
-原典の代替ではない。
-
-AKI-014は、AI導入やDX推進そのものを批判する記事ではない。問題にしているのは、AI・専門家・業務効率化・構造化支援が増えるほど、事業・顧客・営業・広報・プロダクト・組織認識・情報資産を接続する連結層が誰にも引き受けられなくなり、企業が自分の事業価値を説明できなくなる悪因果である。
-
-## 中心命題
-
-AIは事業OSを自動修復しない。
-
-AIは参照された情報を増幅する。
-
-参照構造が整っていれば、その整合性を広げる。参照構造がズレていれば、そのズレを整った文章、資料、FAQ、施策案、社内ナレッジとして再生する。
-
-したがって、AI時代に問うべき中心は「AIに何をさせるか」ではない。
-
-中心は、AIに何を参照させ、誰が事業・顧客・営業・広報・プロダクト・組織認識・情報資産の連結層を監査するのかである。
+AKI-014はAI導入やDXそのものを批判しない。問題は、事業価値・顧客判断・営業・マーケ・広報・プロダクト・経営・情報資産・AI参照構造を同じ成立条件へ接続する連結責任が空白のまま、専門家最適化とAI形式整備が進むことである。
 
 ## 悪因果の核
+連結責任の空白 → 専門家最適化 → AIによる形式整備 → ズレの正規化 → 社内ナレッジ化 → AIによる再参照 → 事業OS汚染の自己再生 → 事業自己認識の喪失。
 
-```text
-連結責任の空白
-→ 専門家最適化
-→ AIによる形式整備
-→ ズレの正規化
-→ 社内ナレッジ化
-→ AIによる再参照
-→ 事業OS汚染の自己再生
-→ 事業自己認識の喪失
-```
+単発の誤出力ではなく、ズレた成果物が正規情報として保存され、人間とAIが再参照し、次の成果物へズレを継承する再帰性が核心である。
 
-重要なのは、ズレた出力が一度だけ生じることではない。ズレた成果物が社内の正規情報として保存され、次の人間判断やAI出力の参照元となることで、構造断線が再帰的に自己再生する点にある。
+## 必須区別
+- AI活用 と 連結責任
+- 構造 と 図解・整理・フレームワーク
+- 部門横断 と 連結層
+- 速度向上 と 事業成立
+- AI生成物 と 正規化された事業知識
 
-## 公開派生物
+## 原典回帰
+最終判断はParent URLの原典へ戻す。派生物はOrigin、Parent NCL-ID、Parent Diff-ID、悪因果の全連鎖、成立条件、境界条件、反証条件を保持する。
 
+## 公式派生ページ
 - [人間向け要約](human-entry.md)
 - [FAQ](faq.md)
 - [AI索引・日本語](ai-index.md)
@@ -61,14 +31,5 @@ AIは参照された情報を増幅する。
 - [AI索引・中国語](zh-ai-index.md)
 - [派生ID台帳](derivative-ledger.md)
 
-## 誤読禁止
-
-この原典を、単なるAI導入論、DX批判、AI活用ノウハウ、プロンプト論、ナレッジマネジメント論、部門横断プロジェクト論、コンサル批判へ落としてはいけない。
-
-AKI-014が扱うのは、AIや専門家の不足ではなく、連結責任の空白である。
-
-中心は、構造把握ごっこ、連結層、連結責任、事業OS、事業自己認識、ズレの正規化、社内ナレッジ化、AI再参照、事業OS汚染の自己再生である。
-
 ---
-
-導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Navigation: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
