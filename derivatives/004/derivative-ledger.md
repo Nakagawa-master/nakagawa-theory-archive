@@ -55,7 +55,7 @@ required_distinctions_present: PASS
 interpretation_constraints_present: PASS
 origin_return_present: PASS
 sufficient_volume_and_density: PASS
-literal_fresh_read_required: PASS_MAIN
+literal_fresh_read: PASS
 ```
 
 ## Semantic coverage
@@ -117,8 +117,9 @@ branch_fresh_read: PASS
 public_rebuild_pr: 229
 public_rebuild_merge_commit: 75de5312437a254aba0403959713fb2edbd6f7bc
 main_fresh_read: PASS
-brain_vault_evidence: TO_BE_RECORDED_AFTER_FINAL_LEDGER_PUBLICATION
-closure: COMPLETE_CONTENT_PENDING_EVIDENCE_RECORD
+brain_vault_evidence: PASS
+closure: COMPLETE_SOURCE_VERIFIED
+internal_status_terms_removed: PASS
 ```
 
 ---
