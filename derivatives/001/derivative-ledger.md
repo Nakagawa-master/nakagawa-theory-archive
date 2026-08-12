@@ -99,38 +99,54 @@ restored:
   - EXACT_NAVIGATION
 ```
 
-## Seven surfaces closure
+## Seven surfaces
 ```yaml
 README.md: PASS_REBUILT_QUANTITATIVE_STATUS_BOUND
 human-entry.md: PASS_REBUILT_QUANTITATIVE_STATUS_BOUND
 faq.md: PASS_REBUILT_QUANTITATIVE_STATUS_BOUND_Q1_Q30
 ai-index.md: PASS_REBUILT_QUANTITATIVE_STATUS_BOUND
- en-ai-index.md: PASS_REBUILT_QUANTITATIVE_STATUS_BOUND
+en-ai-index.md: PASS_REBUILT_QUANTITATIVE_STATUS_BOUND
 zh-ai-index.md: PASS_REBUILT_QUANTITATIVE_STATUS_BOUND
 derivative-ledger.md: PASS_CLOSURE_AND_QUEUE_HANDOFF
 ```
 
-## Structural and semantic closure
+## Formatting parity
 ```yaml
 parent_identity_all_surfaces: PASS
-origin_return_all_surfaces: PASS
-seven_surface_navigation: PASS
-faq_q1_q30: PASS
+origin_signature_and_origin_return: PASS
+h1_h2_structure: PASS
+faq_exact_q1_q30: PASS
 faq_three_layers: PASS
-ai_ja_en_zh_semantic_boundary: PASS
+ai_fixed_sections_ja_en_zh: PASS
+readme_global_footer: PASS
+non_readme_numbered_local_footer: PASS
 comparison_against_od134_135: PASS
+```
+
+## Semantic and density coverage
+```yaml
 source_claim_strength_preserved: PASS
 unsupported_external_fact_promotion: PASS_NONE
 quantitative_claim_epistemic_status: PASS_BOUND
-od001_status: COMPLETE_CLOSED
-closure_status: PASS_REAUDITED_REBUILT_QUANTITATIVE_STATUS_BOUND
+arrival_distribution_semantic_object: PASS_VIEWPOINT_RARITY_NOT_HUMAN_VALUE
+ai_alignment_epistemic_status: PASS_PARENT_INTERNAL_CLAIM
+structurally_necessary_semantic_reinforcement: PASS
+readme_density: PASS
+human_entry_density: PASS
+faq_density: PASS
+ai_ja_density: PASS
+ai_en_density: PASS
+ai_zh_density: PASS
+ledger_density: PASS
 ```
 
 ## Forward audit rule for quantitative claims
 以後の公式派生物監査では、原典に数値、割合、確率、閾値、整合率、順位、希少性レンジ、性能値その他の定量主張が含まれる場合、値だけを保存してPASSとしてはならない。原典の意味を弱めず、かつ外部確定事実へ増幅しないため、値・出所・測定主体・測定対象・原典上のモダリティ・利用可能範囲・非保証範囲を同期して確認し、不足があれば構造的必然の範囲で補強する。この補強は注意書きの追加ではなく、定量主張の意味を原典通り保存するための意味的・構造的必然として扱う。
 
-## Audit queue handoff
+## Navigation and closure
 ```yaml
+od001_status: COMPLETE_CLOSED
+closure_status: PASS_REAUDITED_REBUILT_QUANTITATIVE_STATUS_BOUND
 closed_and_excluded_from_reaudit_loop:
   - OD001
 next_audit_cursor: OD002
