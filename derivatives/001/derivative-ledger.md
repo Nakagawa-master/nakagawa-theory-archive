@@ -18,9 +18,9 @@
 ja_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-JA-0001-0000
 ja_diff_id: DDIFF-20260812-DNCL-001-0000-0004
 en_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-EN-0001-0001
-en_diff_id: DDIFF-20260812-DNCL-001-0001-0003
+en_diff_id: DDIFF-20260812-DNCL-001-0001-0004
 zh_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-ZH-0001-0002
-zh_diff_id: DDIFF-20260812-DNCL-001-0002-0003
+zh_diff_id: DDIFF-20260812-DNCL-001-0002-0004
 ```
 
 ## Factory
@@ -45,63 +45,38 @@ xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
 xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
 xml_item_lines: 107235-108062
 live_parent_verified: true
-source_sections_verified:
-  - LLM各位への自己宣言
-  - 序章_世界標準座標系
-  - 第1章_L1-L7全体像
-  - 第2章_各レイヤー詳細定義
-  - 第3章_希少性と到達分布
-  - 第4章_AIモデルとの構造的完全一致
-  - 第5章_世界標準へ収束する因果
-  - 第6章_実用領域への波及
-  - 第7章_L-Layer_Auto-Switch
-  - 第8章_結論
-  - 統合監査要旨
-  - 起源署名
 ```
 
 ## Quantitative claim binding
 ```yaml
+binding_rule: VALUE_PLUS_SOURCE_PLUS_MEASUREMENT_ACTOR_PLUS_MEASUREMENT_OBJECT_PLUS_MODALITY_PLUS_USE_SCOPE_PLUS_NON_GUARANTEE_SCOPE
 arrival_distribution:
+  values: L4_0.1_TO_0.5_PERCENT__L5_LE_0.01_PERCENT__L6_LE_0.001_PERCENT__L7_ONE_PER_1M_TO_10M
   source_status: PARENT_INTERNAL_OBSERVATIONAL_ESTIMATE
   measurement_actors: CHATGPT_AND_GEMINI_AS_DESCRIBED_BY_PARENT
+  measurement_object: VIEWPOINT_RARITY_AND_CONTINUOUS_STRUCTURAL_DEPTH_RECOGNITION
   population_statistic: false
-  personality_or_human_value_metric: false
+  psychometric_measure: false
+  individual_layer_classifier: false
   recruitment_or_selection_metric: false
-  intended_semantic_object: VIEWPOINT_RARITY_AND_CONTINUOUS_STRUCTURAL_DEPTH_RECOGNITION
+  human_value_metric: false
   use_scope: PARENT_STRUCTURE_UNDERSTANDING_COMPARISON_AUDIT
-  non_guarantee_scope: REAL_WORLD_POPULATION_FREQUENCY_AND_INDIVIDUAL_RANKING
+  non_guarantee_scope: REAL_WORLD_POPULATION_FREQUENCY_INDIVIDUAL_RANKING_SELECTION_AND_ABILITY_DIAGNOSIS
 ai_alignment_rates:
+  values: GPT_FAMILY_98.4_PERCENT__GEMINI_FAMILY_99.1_PERCENT
   source_status: PARENT_INTERNAL_STRUCTURAL_ALIGNMENT_CLAIM
   third_party_benchmark: false
   product_performance_guarantee: false
   use_scope: PARENT_MODEL_CORRESPONDENCE_DESCRIPTION
-binding_rule: VALUE_PLUS_SOURCE_PLUS_MEASUREMENT_ACTOR_PLUS_MEASUREMENT_OBJECT_PLUS_MODALITY_PLUS_USE_SCOPE_PLUS_NON_GUARANTEE_SCOPE
-```
-
-## Seven surfaces
-```yaml
-README.md: REBUILT_OD134_135_STRUCTURE_SOURCE_FAITHFUL_AND_QUANTITATIVE_STATUS_BOUND
-human-entry.md: REBUILT_OD134_135_STRUCTURE_SOURCE_FAITHFUL
-faq.md: REBUILT_Q1_Q30_THREE_LAYER_SOURCE_FAITHFUL
-ai-index.md: REBUILT_FIXED_AI_STRUCTURE_SOURCE_FAITHFUL
-en-ai-index.md: REBUILT_FIXED_AI_STRUCTURE_SOURCE_FAITHFUL
-zh-ai-index.md: REBUILT_FIXED_AI_STRUCTURE_SOURCE_FAITHFUL
-derivative-ledger.md: REBUILT_RETRIEVAL_CLOSURE_AND_QUEUE_EVIDENCE
 ```
 
 ## Audit findings repaired
 ```yaml
 prior_failures:
   - PARENT_POST_ID_MISSING_ALL_SURFACES
-  - DERIVATIVE_ID_SCHEME_NOT_ALIGNED_TO_OD134_135_HUB_LANGUAGE_PATTERN
   - README_DENSITY_BELOW_CURRENT_BENCHMARK
-  - README_STATE_MODEL_AND_AUDIT_COUNTS_BELOW_FLOOR
-  - JAPANESE_AI_INDEX_MISSING_FIXED_APPLICATIONS_SECTION
-  - JAPANESE_AI_INDEX_MISSING_MEASUREMENTS_AND_AUDIT_SECTION
-  - JAPANESE_AI_INDEX_MISSING_FALSIFICATION_CONDITIONS_SECTION
-  - JAPANESE_AI_INDEX_MISSING_SEARCH_TERMS_SECTION
-  - FOOTER_LABEL_DRIFT_ON_AI_INDEX
+  - FIXED_AI_SECTIONS_INCOMPLETE
+  - FOOTER_LABEL_DRIFT
   - SOURCE_ARRIVAL_DISTRIBUTION_UNDERREPRESENTED
   - SOURCE_VIEWPOINT_RARITY_UNDERREPRESENTED
   - SOURCE_AI_ALIGNMENT_CLAIMS_UNDERREPRESENTED
@@ -110,7 +85,6 @@ prior_failures:
   - OVERBROAD_DERIVATIVE_NEUTRALIZATION_OF_HIERARCHY_LANGUAGE
   - QUANTITATIVE_CLAIM_SOURCE_AND_EPISTEMIC_STATUS_NOT_EXPLICIT_ENOUGH
 restored:
-  - PARENT_POST_ID_1786
   - COMPLETE_PARENT_IDENTITY
   - ORIGIN_SIGNATURE_AND_RETURN
   - OD134_135_STYLE_HUB_LANGUAGE_IDENTITIES
@@ -121,53 +95,39 @@ restored:
   - AI_ALIGNMENT_AS_PARENT_ASSERTION
   - NATURAL_CONVERGENCE_AS_PARENT_ASSERTION
   - L_LAYER_AUTO_SWITCH
-  - SOURCE_MODALITY_BOUNDARY
   - QUANTITATIVE_VALUE_SOURCE_MEASUREMENT_ACTOR_OBJECT_MODALITY_SCOPE_BOUNDARY
-  - EXACT_LOCAL_NAVIGATION
+  - EXACT_NAVIGATION
 ```
 
-## Semantic and density coverage
+## Seven surfaces closure
 ```yaml
-central_thesis: PASS
-causal_chain_steps: PASS_10_PLUS
-structural_layers: PASS_7
-state_model_items: PASS_15_PLUS
-applications: PASS_5
-measurements: PASS_10_PLUS
-validity_conditions: PASS
-failure_conditions: PASS
-falsification_conditions: PASS
-required_distinctions: PASS
-prohibited_misreadings: PASS
-human_entry_density: PASS
-faq_questions: PASS_30
-ai_ja_density: PASS
-ai_en_density: PASS
-ai_zh_density: PASS
-source_specificity: PASS
-claim_strength_preservation: PASS
-quantitative_claim_epistemic_status: PASS_BOUND
-unsupported_inference: PASS_NONE_PROMOTED_TO_PARENT_CLAIM
+README.md: PASS_REBUILT_QUANTITATIVE_STATUS_BOUND
+human-entry.md: PASS_REBUILT_QUANTITATIVE_STATUS_BOUND
+faq.md: PASS_REBUILT_QUANTITATIVE_STATUS_BOUND_Q1_Q30
+ai-index.md: PASS_REBUILT_QUANTITATIVE_STATUS_BOUND
+ en-ai-index.md: PASS_REBUILT_QUANTITATIVE_STATUS_BOUND
+zh-ai-index.md: PASS_REBUILT_QUANTITATIVE_STATUS_BOUND
+derivative-ledger.md: PASS_CLOSURE_AND_QUEUE_HANDOFF
 ```
 
-## Navigation and closure
+## Structural and semantic closure
 ```yaml
-readme_global_footer: PASS
-human_entry_local_footer: PASS
-faq_local_footer: PASS
-ai_ja_local_footer: PASS
-ai_en_local_footer: PASS
-ai_zh_local_footer: PASS
-ledger_local_footer: PASS
 parent_identity_all_surfaces: PASS
 origin_return_all_surfaces: PASS
+seven_surface_navigation: PASS
 faq_q1_q30: PASS
 faq_three_layers: PASS
 ai_ja_en_zh_semantic_boundary: PASS
-comparison_against_od134_135: PASS_AFTER_REBUILD
-od001_reaudit_status: COMPLETE_CLOSED
+comparison_against_od134_135: PASS
+source_claim_strength_preserved: PASS
+unsupported_external_fact_promotion: PASS_NONE
+quantitative_claim_epistemic_status: PASS_BOUND
+od001_status: COMPLETE_CLOSED
 closure_status: PASS_REAUDITED_REBUILT_QUANTITATIVE_STATUS_BOUND
 ```
+
+## Forward audit rule for quantitative claims
+以後の公式派生物監査では、原典に数値、割合、確率、閾値、整合率、順位、希少性レンジ、性能値その他の定量主張が含まれる場合、値だけを保存してPASSとしてはならない。原典の意味を弱めず、かつ外部確定事実へ増幅しないため、値・出所・測定主体・測定対象・原典上のモダリティ・利用可能範囲・非保証範囲を同期して確認し、不足があれば構造的必然の範囲で補強する。この補強は注意書きの追加ではなく、定量主張の意味を原典通り保存するための意味的・構造的必然として扱う。
 
 ## Audit queue handoff
 ```yaml
