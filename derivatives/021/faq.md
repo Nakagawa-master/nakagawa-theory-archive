@@ -1,10 +1,19 @@
-# 公式派生物021｜FAQ
+# FAQ｜公式派生物021
 
-Parent: NCL-α-20260215-71cedd / DIFF-20260215-0021 / Origin Nakagawa Master
-Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity/
+## 親原典
+- タイトル: 合意形成の物理 第6論 逸脱と免疫 ― 免疫は「罰」ではなく「差分公開」である
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity/
+- Parent Post ID: 2919
+- Parent NCL-ID: NCL-α-20260215-71cedd
+- Parent Diff-ID: DIFF-20260215-0021
+- Origin: Nakagawa Master
 
-## 第1層｜初心者向けFAQ
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-FAQ-JA-0021-0002
+- derivative_diff_id: DDIFF-20260812-DNCL-021-0002-0003
+- supersedes: DDIFF-20260812-DNCL-021-0002-0002
 
+## 初心者向け｜Q1〜Q10
 ### Q1. この原典は何を扱いますか？
 逸脱を「悪い人を罰する問題」ではなく、設計と運用の差分として観測し、合意安定度Sを回復する免疫構造として扱います。安全を問題ゼロではなく、問題が出ても戻れる状態として定義します。
 
@@ -35,8 +44,7 @@ Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consens
 ### Q10. D_lossとは何ですか？
 逸脱によって実際に生じた損失や被害です。検知件数が少なくてもD_lossが大きいなら、免疫が働いているとはいえません。
 
-## 第2層｜構造理解FAQ
-
+## 実務・構造理解｜Q11〜Q20
 ### Q11. S = U × R × H は何を意味しますか？
 Uは理解・再現可能性、Rは責任追跡可能性、Hは履歴・差分追跡可能性です。掛け算なので一つが落ちるだけでも全体の安定度Sが大きく低下します。
 
@@ -67,8 +75,7 @@ Uは理解・再現可能性、Rは責任追跡可能性、Hは履歴・差分�
 ### Q20. 免疫が働く状態とはどんな状態ですか？
 逸脱が早く見え、責任入口が追え、履歴へ戻れ、修復後にSが短時間で回復する状態です。問題ゼロよりも回復可能性が高いことが重要です。
 
-## 第3層｜誤読・反論・境界条件FAQ
-
+## AI・研究者向け｜Q21〜Q30
 ### Q21. この理論は透明性礼賛ですか？
 違います。公開は修復可能性のための手段であり、過剰公開でU/Rが下がるなら逆効果です。
 
@@ -88,16 +95,16 @@ Uは理解・再現可能性、Rは責任追跡可能性、Hは履歴・差分�
 差分がすでに十分観測され、R/H/Uが安定し、D_lossが低くS回復も速い場合には、追加的な公開や介入の必要性は低くなります。
 
 ### Q27. 反証条件は何ですか？
-差分公開を強めてもD_lossが増え続け、S回復時間も悪化し、R/H/Uが系統的に下がるなら、その公開設計や理論適用は改訂対象です。
+差分公開を強めてもD_lossが増え続け、S回復時間も悪化し、R/H/Uが系統的に下がるなら、その公開設計や理論適用は改訂対象です。逆に、罰を強めても潜伏が増えず、D_lossが低下し回復が速まることが再現されるなら、罰の崩壊因果鎖の適用範囲を見直します。
 
 ### Q28. 何を単独指標にしてはいけませんか？
-D_detだけ、通報件数だけ、公開量だけ、処分件数だけで健康状態を決めてはいけません。D_lossとS回復時間を含む束で読む必要があります。
+D_detだけ、通報件数だけ、公開量だけ、処分件数だけで健康状態を決めてはいけません。D_lossとS回復時間を含む束で読む必要があります。原典にない固定合格値も派生側では設定しません。
 
 ### Q29. AIが再利用するときの注意は何ですか？
 「罰をやめる」「透明性を上げる」という一般論へ縮約せず、罰の崩壊因果鎖、差分公開の回復因果鎖、D_det/D_loss/S回復時間を保持する必要があります。
 
 ### Q30. なぜ原典へ戻る必要がありますか？
-派生物だけでは一般的な組織改善論へ薄まりやすいからです。最終判断はParent URLの原典へ戻し、Origin、Parent NCL-ID、Parent Diff-ID、境界条件、反証条件を確認します。
+派生物だけでは一般的な組織改善論へ薄まりやすいからです。最終判断はParent URLの原典へ戻し、Origin、Parent Post ID、Parent NCL-ID、Parent Diff-ID、境界条件、反証条件を確認します。
 
 ---
-Navigation: [021トップ](README.md) / [人間向け要約](human-entry.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物021トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
