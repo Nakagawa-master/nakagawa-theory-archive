@@ -120,7 +120,7 @@ The parent defines no universal effort-volume KPI, success probability, or numer
 - Failure is explained only as insufficient effort while plan and conditions are exempted from inspection.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that conditional rationality remains for old-style effort in domains where causality is genuinely unobservable in advance and exploratory投入 itself is the primary means of learning the result. This condition must not be erased to conclude that quantity is unnecessary in the modern era. This derivative index does not invent a separate falsification theory.
+The parent origin's integrated audit summary states that conditional rationality remains for old-style effort in domains where causality is genuinely unobservable in advance and exploratory input itself is the primary means of learning the result. This condition must not be erased to conclude that quantity is unnecessary in the modern era. This derivative index does not invent a separate falsification theory.
 
 ## Required distinctions
 - effort denial / redefining conditions for valid effort
