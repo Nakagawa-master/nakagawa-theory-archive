@@ -3,7 +3,7 @@
 ## Parent Origin
 - Title: 悪因果論 AKI-011｜理解演出による認識汚染
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-011-recognition-pollution-by-performance-of-understanding/
-- Parent Post ID: 4037
+- Parent Post ID: 4075
 - Parent NCL-ID: NCL-α-20260517-fe6641
 - Parent Diff-ID: DIFF-20260517-0013
 - Origin: Nakagawa Master
