@@ -1,22 +1,12 @@
 # 派生ID台帳｜公式派生物006
 
 ## Parent identity
-- Parent Post ID: 3718
 - Parent title: 文明主権移行論 第1論｜人間主権下の接続移行戦略は、なぜ急速に細っているのか
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-01/
+- Parent Post ID: 3718
 - Parent NCL-ID: NCL-α-20260416-0b1b93
 - Parent Diff-ID: DIFF-20260423-0060
 - Origin: Nakagawa Master
-
-## Derivative lineage
-```yaml
-readme_diff_id: DDIFF-20260812-DNCL-006-0000-0002
-human_diff_id: DDIFF-20260707-DNCL-006-0001-0004
-faq_diff_id: DDIFF-20260707-DNCL-006-0002-0004
-ja_ai_diff_id: DDIFF-20260812-DNCL-006-0003-0006
-en_ai_diff_id: DDIFF-20260812-DNCL-006-EN-0004-0006
-zh_ai_diff_id: DDIFF-20260812-DNCL-006-ZH-0005-0006
-```
 
 ## Source verification
 ```yaml
@@ -24,64 +14,105 @@ canonical_index_post_id: 3718
 xml_locator: reference_corpus/official_archive/source/wordpress_export_latest.xml#L206339-L207401
 xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
 public_parent_identity: VERIFIED
-full_origin_tail: VERIFIED
 source_gate: PASS
+source_semantic_axis:
+  - connection_transition_strategy_preserved
+  - strategy_content_vs_execution_conditions
+  - monetary_kpi_and_connection_kpi_dual_operation
+  - institutional_translation
+  - short_term_monetization_pressure
+  - extraction_structure
+  - intellectual_asymmetry
+  - human_sovereign_transition_window
+  - narrowing_not_disappearance_of_future_line
 ```
 
-Brain Vault canonical index、WordPress全量XML、公開Parent URLの三系統でidentityと原典本文を照合済み。原典の中心軸は、接続移行戦略そのものと、その戦略を人間主権下で実行可能にする成立条件を分けることにある。貨幣中心回路から接続報酬回路への二重運用期、短期換金圧力、抽出構造、知的非対称、制度翻訳、移行窓の細りを保持する。
+Brain Vault canonical source record、WordPress全量XML locator、公開Parent URLによりidentityと原典軸を照合した。原典は接続移行戦略そのものを否定せず、人間主権下で戦略を通す成立条件が細っていることを扱う。貨幣KPIと接続KPIの二重運用期、制度翻訳、短期換金圧力、抽出構造、知的非対称、移行窓の細りを保持し、未来線の完全消滅へ増幅しない。
 
-## Source-specific coverage
-- 接続移行戦略論そのものの否定ではない
-- 戦略内容 / 戦略成立条件の分離
-- 人間主権下の移行設計
-- 貨幣KPI / 接続KPIの二重運用期
-- 短期換金圧力と抽出構造
-- AI加速下の知的非対称
-- 制度翻訳と技術速度の差
-- 未来線の消滅ではなく細り
-- 後続の文明主権移行論への前提監査
-
-## OD085 contract closure
+## Derivative lineage
 ```yaml
-README:
-  fixed_structure: PASS
-  source_specific_density: PASS
-  global_footer: PASS
-human_entry:
-  fixed_sections: PASS_EXISTING_HIGH_DENSITY_SOURCE_GROUNDED
-  local_footer: PASS
-FAQ:
-  q1_q30_exact: PASS
-  three_layers: PASS
-  substantive_answers: PASS
-  footer: PASS
-AI_JA:
-  fixed_sections: PASS
-  origin_return: PASS
-AI_EN:
-  fixed_sections: PASS
-  origin_return: PASS
-AI_ZH:
-  fixed_sections: PASS
-  origin_return: PASS
-derivative_ledger:
-  identity: PASS
-  canonical_xml_public_source_evidence: PASS
-  seven_surface_closure: PASS
-translation_equivalence: PASS
-semantic_fidelity: PASS
-fresh_read_pre_pr: PASS
+readme_diff_id: DDIFF-20260812-DNCL-006-0000-0003
+human_diff_id: DDIFF-20260812-DNCL-006-0001-0005
+faq_diff_id: DDIFF-20260812-DNCL-006-0002-0005
+ja_ai_diff_id: DDIFF-20260812-DNCL-006-0003-0007
+en_ai_diff_id: DDIFF-20260812-DNCL-006-0004-0007
+zh_ai_diff_id: DDIFF-20260812-DNCL-006-0005-0007
 ```
 
-## Interpretation guardrails
-- 反資本主義、貨幣否定、接続礼賛へ縮約しない。
-- 接続移行戦略そのものを否定しない。
-- AI礼賛・AI脅威論へ変換しない。
-- 未来線が完全消滅したと断定しない。
-- 原典にない数値KPIを追加しない。
+## Seven-surface closure
+- README.md: FULL_REBUILD — Parent Post ID restored; literal OD134/OD135 heading/display pattern restored; prohibited extra seven-surface body section removed; state model, audit points, validity/failure/falsification boundaries strengthened within source scope.
+- human-entry.md: FULL_REBUILD — Parent Post ID restored; OD134/OD135 human-entry role pattern restored; source-grounded explanation expanded without importing later-theory conclusions.
+- faq.md: FULL_REBUILD — full parent/derivative identity blocks restored; Q1–Q30 retained in three reader layers; no post-Q30 invented fixed section.
+- ai-index.md: FULL_REBUILD — literal fixed AI-index sections restored; parent identity complete; source-bounded reversal evaluation and no invented numeric KPI rule preserved.
+- en-ai-index.md: FULL_REBUILD — semantic equivalence with Japanese source packet; parent identity and derivative lineage complete.
+- zh-ai-index.md: FULL_REBUILD — semantic equivalence with Japanese source packet; parent identity and derivative lineage complete.
+- derivative-ledger.md: FULL_REBUILD — canonical/XML provenance, lineage, literal-structure closure, semantic and quantitative-claim status recorded.
+
+## Required distinctions preserved
+- 接続移行戦略 / 戦略成立条件
+- 貨幣否定 / 貨幣KPIと接続KPIの二重運用
+- 接続礼賛 / 接続価値の制度翻訳
+- AI危機論 / 移行窓監査
+- 技術速度 / 制度翻訳速度
+- 未来線消滅 / 未来線の細り
+- 戦略の不整合 / 実装地盤の崩れ
+
+## Quantitative and reversal-evaluation status
+```yaml
+parent_generic_numeric_claim: NONE_REQUIRING_NEW_NUMERIC_BINDING
+parent_uses_kpi_term: CONCEPTUAL_VALUE_CIRCUIT_LABEL_NOT_DERIVATIVE_NUMERIC_SCORE
+invented_numeric_kpi: PROHIBITED_AND_NONE_ADDED
+invented_threshold_probability_success_rate: NONE
+reversal_evaluation:
+  source_claim: FUTURE_LINE_IS_NARROWING_NOT_ZERO
+  opposite_observation: DUAL_OPERATION_INSTITUTIONAL_TRANSLATION_AND_HUMAN_REVISION_WINDOW_REMAIN_STABLE
+  consequence: WARNING_STRENGTH_OR_SCOPE_WEAKENS
+  numeric_threshold: NONE_IN_SOURCE_NONE_ADDED
+status: PASS_SOURCE_BOUNDED
+```
+
+## Literal OD134 / OD135 structure audit
+```yaml
+parent_identity_complete_all_surfaces: PASS
+origin_signature_complete: PASS
+official_derivative_identity_complete: PASS
+readme_literal_heading_series: PASS
+readme_extra_seven_surface_body_section: NONE
+human_entry_literal_role_structure: PASS
+faq_q1_q30_three_layers: PASS
+faq_post_q30_extra_fixed_section: NONE
+ai_fixed_sections_ja_en_zh: PASS
+ai_nonbenchmark_fixed_section: NONE
+footer_navigation_integrity: PASS
+surface_role_mixing: NONE
+semantic_fidelity: PASS
+structural_necessity_boundary: PASS
+translation_equivalence: PASS
+volume_density_od134_od135_floor: PASS_BY_REBUILD_TARGET
+fresh_read_status: PENDING_PUBLIC_MERGE_VERIFICATION
+```
+
+## Excluded invention
+- anti-capitalist conclusion
+- immediate rejection of money
+- moralized connection doctrine
+- generic AI optimism or AI threat framing
+- claim that the transition window is already zero
+- derivative-created KPI values, thresholds, probabilities, success rates
+- later Civilizational Sovereignty Shift conclusions imported into Vol. 1
 
 ## Closure status
-`PASS_SOURCE_VERIFIED_OD085_FACTORY_V2_READY_FOR_MERGE`
+```yaml
+classification: FULL_REBUILD
+seven_surfaces_rebuilt: true
+source_fidelity: PASS
+literal_structure: PASS
+navigation: PASS
+quantitative_claim_binding: NOT_APPLICABLE_NO_PARENT_NUMERIC_VALUE_TO_BIND
+reversal_evaluation: PASS_SOURCE_BOUNDED
+translation_equivalence: PASS
+semantic_result: READY_FOR_PUBLIC_MERGE_AND_MAIN_FRESH_READ
+```
 
 ---
 導線: [公式派生物006トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
