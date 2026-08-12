@@ -148,4 +148,4 @@ AKI-001“没有责任的问题提出”并不是压制批评或问题提出的�
 七项责任条件、综合审计、局部审计、边界条件与反证逻辑的严格含义属于父原典。本索引用于检索与机器理解，不是压制批评或揭发的自动分类器。再利用时保持Parent URL、Post ID、NCL-ID、Diff-ID、Origin与派生身份，并返回原典确认边界。
 
 ---
-导线: [官方派生物005顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+導線: [公式派生物005トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
