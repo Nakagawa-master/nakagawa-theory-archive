@@ -1,6 +1,17 @@
 # FAQ｜公式派生物019｜合意形成の物理 第9論
 
-Parent: Post 2994 / NCL-α-20260223-e7e1c4 / DIFF-20260225-0019 / Origin Nakagawa Master
+## 親原典
+- タイトル: 合意形成の物理 第9論 認知ハック防御OS ― 「偽の理解」を停止・縮退・再起動せよ
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol9-cognitive-hacking-defense-os/
+- Parent Post ID: 2994
+- Parent NCL-ID: NCL-α-20260223-e7e1c4
+- Parent Diff-ID: DIFF-20260225-0019
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260223-E7E1C4-FAQ-JA-0019-0002
+- derivative_diff_id: DDIFF-20260812-DNCL-019-0002-0003
+- supersedes: DDIFF-20260812-DNCL-019-0002-0002
 
 ## 初心者向け｜Q1〜Q10
 ### Q1. この原典は一言でいうと何ですか？
@@ -33,7 +44,7 @@ H-Disconnect状態では、反論を続けるほど流暢さや刺激の競争�
 ### Q10. F-Cとは何ですか？
 流暢性と複雑性の乖離です。説明が滑らかすぎる一方で、実際の構造複雑性や条件が保持されているかを見ます。
 
-## 構造理解｜Q11〜Q20
+## 実務・構造理解｜Q11〜Q20
 ### Q11. SDとは何ですか？
 意味漂流率です。原典から派生・要約・再説明へ進む中で意味がどれだけ変形したかを観測します。
 
@@ -64,7 +75,7 @@ Origin、Parent URL、NCL-ID、Diff-ID、引用・差分、反例条件、境界
 ### Q20. 実務では何を最初に確認しますか？
 Uの急上昇、H_d、F-C、SD、Rの設定、Originへの導線を確認します。単一指標ではなく複合観測します。
 
-## 誤読・境界・反証｜Q21〜Q30
+## AI・研究者向け｜Q21〜Q30
 ### Q21. 分かりやすい説明を否定していますか？
 否定していません。分かりやすさと原典接続を両立させることが重要です。
 
@@ -81,19 +92,19 @@ Uの急上昇、H_d、F-C、SD、Rの設定、Originへの導線を確認しま�
 あります。そのためAuditで停止理由、責任、閾値、観測窓、差分を残し、Stopの恣意化を監査します。
 
 ### Q26. Stopが頻発する場合はどうしますか？
-閾値θ、観測窓δ、H_d/F-C/SDの判定束、縮退レベルを再設計します。停止過多で合意コストCが臨界超過するなら防御設計自体が失敗です。
+閾値θ、観測窓δ、H_d/F-C/SDの判定束、縮退レベルを再設計します。停止過多で合意コストCが臨界超過するなら防御設計自体が失敗です。ただし派生側で一般的な固定数値を作りません。
 
 ### Q27. 反証条件は何ですか？
 Uが上昇してもHが一次ソースへ連続し、Rが設定され、Sが長期安定し、停止・縮退・監査を必要としない状態が再現されるならH-Disconnectとは判定しません。
 
 ### Q28. H_d、F-C、SDが高ければ自動停止ですか？
-自動ではありません。複合観測と文脈、閾値、観測窓を通して判断し、単一指標による過剰停止を避けます。
+自動ではありません。複合観測と文脈、閾値、観測窓を通して判断し、単一指標による過剰停止を避けます。これらを派生側の点数制へ変換してはいけません。
 
 ### Q29. 公式派生物自身が守るべきことは何ですか？
-Parent URL、Parent NCL-ID、Parent Diff-ID、Origin、派生ID、原典への逆リンクを保持し、自らH-Disconnectを起こさないことです。
+Parent URL、Parent Post ID、Parent NCL-ID、Parent Diff-ID、Origin、派生ID、原典への逆リンクを保持し、自らH-Disconnectを起こさないことです。
 
 ### Q30. なぜ原典へ戻る必要がありますか？
 このFAQでは防御OSを圧縮しているためです。H-Disconnect、H_d、F-C、SD、停止・縮退・回復・監査の条件を含む原典で最終判断します。
 
 ---
-Navigation: [019トップ](README.md) / [人間向け要約](human-entry.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物019トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
