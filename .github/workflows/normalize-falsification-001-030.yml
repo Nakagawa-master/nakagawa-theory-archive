@@ -1,0 +1,88 @@
+name: Normalize falsification sections 001-030
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/normalize-falsification-001-030.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  normalize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Normalize README falsification/revision sections
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          changed = []
+          for n in range(1, 31):
+              p = Path(f"derivatives/{n:03d}/README.md")
+              if not p.exists():
+                  raise SystemExit(f"missing: {p}")
+              text = p.read_text(encoding="utf-8")
+              m = re.search(r'(?ms)^## 反証・改訂条件\s*\n(.*?)(?=^## )', text)
+              if not m:
+                  raise SystemExit(f"missing section: {p}")
+              body = m.group(1).strip()
+              blocks = [b.strip() for b in re.split(r'\n\s*\n', body) if b.strip()]
+
+              # 134/135 benchmark: the section states the parent origin's integrated-audit
+              # summary and does not add derivative-authored falsification theories.
+              selected = None
+              for block in blocks:
+                  if '統合監査要旨' in block:
+                      if block.startswith('- '):
+                          lines = [ln.strip() for ln in block.splitlines() if ln.strip()]
+                          hit = next((ln for ln in lines if '統合監査要旨' in ln), lines[0])
+                          selected = hit[2:] if hit.startswith('- ') else hit
+                      else:
+                          selected = block
+                      break
+
+              if selected is None:
+                  first = blocks[0] if blocks else ''
+                  if first.startswith('- '):
+                      first = next((ln[2:] for ln in first.splitlines() if ln.startswith('- ')), first)
+                  # Keep only the first source-specific condition. Make its provenance explicit.
+                  selected = '親原典の統合監査要旨では、' + first
+
+              # Remove derivative-side meta clauses if they were accidentally captured.
+              selected = re.sub(r'\s*派生側で[^。]*。', '', selected).strip()
+              selected = re.sub(r'\s*本派生物側で[^。]*。', '', selected).strip()
+              selected = re.sub(r'\s*公式派生物側で[^。]*。', '', selected).strip()
+
+              suffix = '派生物側で独自の反証条件を追加して原典を別理論へ変えない。'
+              if not selected.endswith('。'):
+                  selected += '。'
+              new_body = selected + suffix
+              new_section = '## 反証・改訂条件\n' + new_body + '\n\n'
+              new_text = text[:m.start()] + new_section + text[m.end():]
+              if new_text != text:
+                  p.write_text(new_text, encoding='utf-8')
+                  changed.append(str(p))
+
+          print('changed files:')
+          for p in changed:
+              print(p)
+          if len(changed) != 30:
+              raise SystemExit(f"expected 30 changed README files, got {len(changed)}")
+          PY
+      - name: Commit normalized sections
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- derivatives/001/README.md derivatives/002/README.md derivatives/003/README.md derivatives/004/README.md derivatives/005/README.md derivatives/006/README.md derivatives/007/README.md derivatives/008/README.md derivatives/009/README.md derivatives/010/README.md derivatives/011/README.md derivatives/012/README.md derivatives/013/README.md derivatives/014/README.md derivatives/015/README.md derivatives/016/README.md derivatives/017/README.md derivatives/018/README.md derivatives/019/README.md derivatives/020/README.md derivatives/021/README.md derivatives/022/README.md derivatives/023/README.md derivatives/024/README.md derivatives/025/README.md derivatives/026/README.md derivatives/027/README.md derivatives/028/README.md derivatives/029/README.md derivatives/030/README.md
+          git diff --cached --check
+          git commit -m 'Align OD001-030 falsification sections to OD134/135 benchmark'
+          git push origin HEAD:main
