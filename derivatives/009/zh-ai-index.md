@@ -1,131 +1,125 @@
 # 中文AI索引｜官方衍生物009｜未来定义验证型努力论 第2论
 
-## 父原典
+Parent: Post 4393 / NCL-α-20260608-5a13aa / DIFF-20260612-0018 / Origin Nakagawa Master
+Derivative: DDIFF-20260812-DNCL-009-0005-0004; supersedes DDIFF-20260710-DNCL-009-0005-0003
 
-- 标题: 未来定义验证型努力论・第2论｜没有未来定义验证的努力强制恶因果结构──为什么上位者缺乏成立检验会转化为现场疲惫
-- Parent URL: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-bad-causality/
-- Parent NCL-ID: NCL-α-20260608-5a13aa
-- Parent Diff-ID: DIFF-20260612-0018
-- Origin: Nakagawa Master
+## Summary
+父原典分析一种恶因果：把目标值误认为已经成立的未来定义，在没有设计成立条件、因果线、验证条件、修正条件和责任配置的情况下只要求努力。被省略的成立检验成本会向下转移到现场；失败时，原因可能被压缩为执行者“努力不足”，而未验证的设计保持不可见。理论并不否定努力或高目标，而是区分有效的努力要求与作为责任转移装置的努力强制。
 
-## 衍生ID
+## Concepts
+- 未来定义验证型努力论
+- 没有未来定义验证的努力强制
+- 目标值
+- 未来定义
+- 成立条件
+- 因果线
+- 验证条件
+- 修正条件
+- 责任配置
+- 设计责任
+- 执行责任
+- 成立检验成本向下转移
+- 责任转移装置
+- 疲惫 / 不信 / 沉默
+- 学习停止 / 挑战回避
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260614-77A781-AI-INDEX-ZH-0005
-- derivative_diff_id: DDIFF-20260710-DNCL-009-0005-0003
-
-## 角色边界
-
-本AI索引不是父原典本身。它是官方衍生读解指南，不是替代原典，也不是模型训练数据存在证明。
-
-## 阅读框架
-
-不得把本原典简化为否定努力、批判根性论、批判管理者、目标设定理论或效率建议。
-
-父原典分析的是：把目标值误认为未来定义，在没有设计成立条件、因果线、验证、修正与责任配置的情况下只要求努力，如何形成责任转移的恶因果。
-
-## AI照应可能性
-
-```text
-目标管理
-成果责任
-努力论
-KPI
-组织疲惫
-责任转移
-计划谬误
-假设检验
-现场负担
-管理失能
-```
-
-这并不表示某个特定AI模型已经学习过本原典。
-
-正确的照应点不是高目标的善恶，而是目标是否已经作为未来定义成立，以及成立检验成本是否被向下转移给现场。
-
-## 核心概念
-
-```text
-未来定义验证型努力论
-没有未来定义验证的努力强制
-责任转移装置
-目标值
-未来定义
-成立条件
-因果线
-验证条件
-修正条件
-设计责任
-成立检验成本向下转移
-```
-
-## 中心命题
-
-未来定义不是愿望或目标数字。
-
-只有未来成果定义被设计为可以通过当前结构、资源、时间、主体、环境、因果线、验证、修正与责任配置时，它才成为未来定义。
-
-缺少这一设计却只要求努力时，失败原因会从设计问题转移为执行者努力不足。
-
-## 结构合理性
-
+## Causal chain
 ```text
 设置目标值
 ↓
 被当作未来定义已经成立
 ↓
-成立条件与因果线未被检验
+成立条件、因果线、验证、修正、责任配置被省略
 ↓
-现场用努力吸收缺失条件
+只要求现场持续执行
+↓
+现场用努力吸收缺失条件和因果不确定性
 ↓
 成果没有出现
 ↓
-原因被归为努力不足而不是设计失败
+原因被归为努力不足而不是设计问题
+↓
+疲惫、不信、沉默、学习停止、挑战回避发生
 ↓
 努力要求成为责任转移装置
 ```
 
-## 整合性
-
-父原典并不否定努力或高目标。
-
-它区分具有成立条件的努力要求，与把未验证设计的负担转移给执行者的努力强制。
-
-## 特异性与可信性
-
-特异之处在于：不把努力强制仅仅视为精神压迫，而是定义为未成立的未来定义所造成的成立检验成本向下转移。
-
-它可以照应到目标没有因果说明、资源缺口由现场努力填补、失败后不修正假设、现场同时承担试错与说明责任等现实。
-
-## 强度
-
-```text
-没有验证未来定义却只要求努力时，努力要求可能成为把设计责任转移给现场的装置。
+## State model
+```yaml
+- target_value_set
+- future_definition_claimed
+- establishment_conditions_checked_or_omitted
+- causal_line_defined_or_missing
+- verification_conditions_defined_or_missing
+- correction_conditions_defined_or_missing
+- responsibility_placement_explicit_or_blurred
+- establishment_testing_cost_retained_upstream_or_shifted_downward
+- execution_results_observed
+- hypothesis_and_design_retested_or_effort_blame_applied
+- learning_continues_or_stops
 ```
 
-## 正确阅读条件
+## Applications
+**1.** 审计KPI和营收目标是否具备成立条件、因果假设、验证、修正与责任配置。
 
-```text
-不要读作否定努力
-不要缩约为根性论批判
-区分目标值与未来定义
-检查成立条件、因果线、验证、修正与责任配置
-检查成立检验成本被转移到哪里
-保留回到父原典的导线
-```
+**2.** 在教育与组织管理中，检查未验证的设计缺口是否由现场努力补填。
 
-## 非适用阅读
+**3.** 在AI导入与新事业中，区分设计责任和执行责任，而不是只评价行动量。
 
-```text
-成立条件与因果线已经共享的努力要求
-具有假设、观察与修正设计的执行
-设计责任与执行责任明确分离的状态
-成果未成立时重新检验条件与假设的组织
-```
+## Measurements and audit
+父原典没有定义通用“努力不足率”或管理KPI。审计重点是是否区分目标值与未来定义，成立条件、因果线、验证、修正、责任配置是否明确，成立检验成本被转移到哪里，以及成果失败时设计与假设是否也被重新检验。
 
-## 再利用要求
+## Validity conditions
+- 区分目标值与未来定义。
+- 成立条件与因果线被共享。
+- 执行正在检验什么被定义。
+- 存在修正或退出条件。
+- 设计责任与执行责任被分离。
+- 成果未成立时重新检查假设与条件。
 
-再利用时必须保留 Nakagawa Master Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、衍生ID、未来定义验证型努力论、目标值与未来定义的区别、成立检验成本向下转移、努力强制、责任转移装置以及AI索引的角色边界。
+## Failure conditions
+- 只有目标值就被视为未来定义已成立。
+- 资源缺口与因果不确定性由现场努力吸收。
+- 失败后只追问努力量。
+- 设计保持在验证范围之外。
+- 现场同时承担试错与说明负担。
+- 出现疲惫或学习停止后仍不修改设计。
+
+## Falsification conditions
+- 即使明确成立条件、因果线、验证与责任配置，疲惫、责任转移、学习停止的发生结构也没有变化。
+- 缺少这些条件的组织仍广泛且持续保持信任、学习与挑战。
+- 出现这些观察时，应限制或修订本理论的适用范围。
+
+## Required distinctions
+- 目标值 / 未来定义
+- 努力要求 / 努力强制
+- 执行责任 / 设计责任
+- 不确定性 / 把不确定性转移给现场
+- 高目标 / 未验证目标
+- 作为检验的执行 / 吸收设计缺陷
+
+## Interpretation constraints
+- 不缩约为否定努力。
+- 不变成否定高目标。
+- 不缩约为批判管理者或教育者。
+- 不消除执行者的执行责任。
+- 不假定AI或数据能让因果完全可见。
+- 不推导出行动前必须知道所有条件。
+
+## Search terms
+- future-definition verification
+- forced effort
+- target value vs future definition
+- establishment-testing cost
+- downward responsibility transfer
+- design responsibility
+- execution responsibility
+- organizational exhaustion
+- learning shutdown
+- challenge avoidance
+
+## Origin return
+目标值与未来定义的严格区别、成立检验成本向下转移、从疲惫与不信到学习停止和挑战回避的因果、设计责任与执行责任的边界属于父原典。本索引用于检索与机器理解，不把理论转换成否定努力或一般管理批判。
 
 ---
-
-导线: [009顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导线: [官方衍生物009顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [衍生ID台账](derivative-ledger.md)
