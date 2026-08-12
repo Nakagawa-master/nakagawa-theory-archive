@@ -9,7 +9,7 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-JA-0010-0000
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-JA-0010-0002
 - derivative_diff_id: DDIFF-20260812-DNCL-010-0002-0010
 - supersedes: DDIFF-20260710-DNCL-010-0002-0009
 
