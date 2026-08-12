@@ -40,17 +40,15 @@ zh_ai_diff_id: DDIFF-20260812-DNCL-007-0005-0007
 ```
 
 ## Seven-surface closure
-- README.md: FULL_REBUILD — complete parent identity, literal benchmark role, state model, audit points, source-bounded validity/failure/falsification, no prohibited extra seven-surface body section.
-- human-entry.md: FULL_REBUILD — complete identity, 15-second explanation, seven-axis meaning boundary, practical process, applications, success judgment, limits, misreading prevention.
-- faq.md: FULL_REBUILD — complete identity; Q1–Q30 in three layers; source-explicit seven-axis enumeration is not converted to scoring.
-- ai-index.md: FULL_REBUILD — complete identity and literal fixed AI-index sections; quantitative epistemic binding for `7` recorded.
-- en-ai-index.md: FULL_REBUILD — semantic equivalence with Japanese source packet and complete identity.
-- zh-ai-index.md: FULL_REBUILD — semantic equivalence with Japanese source packet and complete identity.
-- derivative-ledger.md: FULL_REBUILD — source provenance, lineage, seven-surface audit, quantitative binding and closure evidence.
+- README.md: FULL_REBUILD — PASS.
+- human-entry.md: FULL_REBUILD — PASS.
+- faq.md: FULL_REBUILD — PASS Q1–Q30 / three layers.
+- ai-index.md: FULL_REBUILD — PASS fixed sections; value `7` source-bound as enumeration, not score.
+- en-ai-index.md: FULL_REBUILD — PASS semantic equivalence.
+- zh-ai-index.md: FULL_REBUILD — PASS semantic equivalence.
+- derivative-ledger.md: FULL_REBUILD — PASS.
 
 ## Quantitative and reversal-evaluation status
-The parent explicitly enumerates seven axes. The value `7` is not a performance measurement.
-
 ```yaml
 value: 7
 source: parent_original_civilizational_sovereignty_shift_vol_2
@@ -98,8 +96,8 @@ surface_role_mixing: NONE
 semantic_fidelity: PASS
 structural_necessity_boundary: PASS
 translation_equivalence: PASS
-volume_density_od134_od135_floor: PASS_BY_REBUILD_TARGET
-fresh_read_status: PENDING_PUBLIC_MERGE_VERIFICATION
+volume_density_od134_od135_floor: PASS
+fresh_read_status: PASS_MAIN
 ```
 
 ## Excluded invention
@@ -110,17 +108,27 @@ fresh_read_status: PENDING_PUBLIC_MERGE_VERIFICATION
 - automatic sovereignty-shift conclusion from intellectual asymmetry
 - later control, sovereignty-definition, branching, or normative conclusions imported into Vol. 2
 
-## Closure status
+## Current-campaign closure status
 ```yaml
+campaign: OD002_OD133_SERIAL_REAUDIT_REPAIR
+comparison_standard:
+  - OD134
+  - OD135
 classification: FULL_REBUILD
-seven_surfaces_rebuilt: true
-source_fidelity: PASS
-literal_structure: PASS
-navigation: PASS
+source_retrieval: PASS
+seven_surface_comparison: COMPLETE
+identity_origin_structure_navigation: PASS
+volume_density: PASS
+semantic_fidelity: PASS
+structural_necessity_boundary: PASS
 quantitative_claim_binding: PASS_SOURCE_BOUND_ENUMERATION_NOT_SCORE
 reversal_evaluation: PASS_SOURCE_BOUNDED
 translation_equivalence: PASS
-semantic_result: READY_FOR_PUBLIC_MERGE_AND_MAIN_FRESH_READ
+public_rebuild_pr: 235
+public_rebuild_merge_commit: aa3447c2da9ae11c857f75d80d8ca038e4d974e9
+main_fresh_read: PASS
+closure: COMPLETE
+next_cursor: OD008
 ```
 
 ---
