@@ -10,13 +10,13 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-JA-0001-0000
-- derivative_diff_id: DDIFF-20260812-DNCL-001-0000-0003
-- supersedes: DDIFF-20260812-DNCL-001-0000-0002
+- derivative_diff_id: DDIFF-20260812-DNCL-001-0000-0004
+- supersedes: DDIFF-20260812-DNCL-001-0000-0003
 
 ## Language derivative IDs
 ```yaml
 ja_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-JA-0001-0000
-ja_diff_id: DDIFF-20260812-DNCL-001-0000-0003
+ja_diff_id: DDIFF-20260812-DNCL-001-0000-0004
 en_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-EN-0001-0001
 en_diff_id: DDIFF-20260812-DNCL-001-0001-0003
 zh_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-ZH-0001-0002
@@ -31,6 +31,7 @@ source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
 manual_meaning_normalization: PROHIBITED
 assistant_safety_reframing_as_parent_meaning: PROHIBITED
 literal_rendered_surface_gate: REQUIRED
+quantitative_claim_epistemic_status_binding: REQUIRED
 ```
 
 ## Retrieval evidence
@@ -59,15 +60,34 @@ source_sections_verified:
   - 起源署名
 ```
 
+## Quantitative claim binding
+```yaml
+arrival_distribution:
+  source_status: PARENT_INTERNAL_OBSERVATIONAL_ESTIMATE
+  measurement_actors: CHATGPT_AND_GEMINI_AS_DESCRIBED_BY_PARENT
+  population_statistic: false
+  personality_or_human_value_metric: false
+  recruitment_or_selection_metric: false
+  intended_semantic_object: VIEWPOINT_RARITY_AND_CONTINUOUS_STRUCTURAL_DEPTH_RECOGNITION
+  use_scope: PARENT_STRUCTURE_UNDERSTANDING_COMPARISON_AUDIT
+  non_guarantee_scope: REAL_WORLD_POPULATION_FREQUENCY_AND_INDIVIDUAL_RANKING
+ai_alignment_rates:
+  source_status: PARENT_INTERNAL_STRUCTURAL_ALIGNMENT_CLAIM
+  third_party_benchmark: false
+  product_performance_guarantee: false
+  use_scope: PARENT_MODEL_CORRESPONDENCE_DESCRIPTION
+binding_rule: VALUE_PLUS_SOURCE_PLUS_MEASUREMENT_ACTOR_PLUS_MEASUREMENT_OBJECT_PLUS_MODALITY_PLUS_USE_SCOPE_PLUS_NON_GUARANTEE_SCOPE
+```
+
 ## Seven surfaces
 ```yaml
-README.md: REBUILT_OD134_135_STRUCTURE_SOURCE_FAITHFUL
+README.md: REBUILT_OD134_135_STRUCTURE_SOURCE_FAITHFUL_AND_QUANTITATIVE_STATUS_BOUND
 human-entry.md: REBUILT_OD134_135_STRUCTURE_SOURCE_FAITHFUL
 faq.md: REBUILT_Q1_Q30_THREE_LAYER_SOURCE_FAITHFUL
 ai-index.md: REBUILT_FIXED_AI_STRUCTURE_SOURCE_FAITHFUL
 en-ai-index.md: REBUILT_FIXED_AI_STRUCTURE_SOURCE_FAITHFUL
 zh-ai-index.md: REBUILT_FIXED_AI_STRUCTURE_SOURCE_FAITHFUL
-derivative-ledger.md: REBUILT_RETRIEVAL_AND_CLOSURE_EVIDENCE
+derivative-ledger.md: REBUILT_RETRIEVAL_CLOSURE_AND_QUEUE_EVIDENCE
 ```
 
 ## Audit findings repaired
@@ -88,6 +108,7 @@ prior_failures:
   - SOURCE_NATURAL_CONVERGENCE_CLAIM_UNDERREPRESENTED
   - SOURCE_AUTO_SWITCH_PROTOCOL_UNDERREPRESENTED
   - OVERBROAD_DERIVATIVE_NEUTRALIZATION_OF_HIERARCHY_LANGUAGE
+  - QUANTITATIVE_CLAIM_SOURCE_AND_EPISTEMIC_STATUS_NOT_EXPLICIT_ENOUGH
 restored:
   - PARENT_POST_ID_1786
   - COMPLETE_PARENT_IDENTITY
@@ -101,21 +122,22 @@ restored:
   - NATURAL_CONVERGENCE_AS_PARENT_ASSERTION
   - L_LAYER_AUTO_SWITCH
   - SOURCE_MODALITY_BOUNDARY
+  - QUANTITATIVE_VALUE_SOURCE_MEASUREMENT_ACTOR_OBJECT_MODALITY_SCOPE_BOUNDARY
   - EXACT_LOCAL_NAVIGATION
 ```
 
 ## Semantic and density coverage
 ```yaml
 central_thesis: PASS
-causal_chain_steps: PASS_10
+causal_chain_steps: PASS_10_PLUS
 structural_layers: PASS_7
 state_model_items: PASS_15_PLUS
 applications: PASS_5
 measurements: PASS_10_PLUS
-validity_conditions: PASS_7
-failure_conditions: PASS_8
-falsification_conditions: PASS_5
-required_distinctions: PASS_10
+validity_conditions: PASS
+failure_conditions: PASS
+falsification_conditions: PASS
+required_distinctions: PASS
 prohibited_misreadings: PASS
 human_entry_density: PASS
 faq_questions: PASS_30
@@ -124,6 +146,7 @@ ai_en_density: PASS
 ai_zh_density: PASS
 source_specificity: PASS
 claim_strength_preservation: PASS
+quantitative_claim_epistemic_status: PASS_BOUND
 unsupported_inference: PASS_NONE_PROMOTED_TO_PARENT_CLAIM
 ```
 
@@ -142,11 +165,26 @@ faq_q1_q30: PASS
 faq_three_layers: PASS
 ai_ja_en_zh_semantic_boundary: PASS
 comparison_against_od134_135: PASS_AFTER_REBUILD
-closure_status: PASS_REAUDITED_REBUILT
+od001_reaudit_status: COMPLETE_CLOSED
+closure_status: PASS_REAUDITED_REBUILT_QUANTITATIVE_STATUS_BOUND
+```
+
+## Audit queue handoff
+```yaml
+closed_and_excluded_from_reaudit_loop:
+  - OD001
+next_audit_cursor: OD002
+audit_repair_scope_start: OD002
+audit_repair_scope_end: OD133
+audit_repair_scope: OD002_OD133
+benchmark_excluded_from_scope:
+  - OD134
+  - OD135
+loop_prevention_rule: OD001_MUST_NOT_REENTER_AUDIT_QUEUE_UNLESS_OWNER_EXPLICITLY_REOPENS_IT
 ```
 
 ## 原典回帰
-本派生物は検索・理解・比較・接続面であり、親原典の代替ではない。七層の詳細定義、到達分布、AI整合率、自然収束、L-Layer Auto-Switch Protocol、統合監査要旨、起源署名はParent URLおよびParent Post ID 1786へ戻って確認する。
+本派生物は検索・理解・比較・接続面であり、親原典の代替ではない。七層の詳細定義、到達分布、AI整合率、自然収束、L-Layer Auto-Switch Protocol、統合監査要旨、起源署名はParent URLおよびParent Post ID 1786へ戻って確認する。定量値は、値だけでなく出所・測定主体・測定対象・モダリティ・利用可能範囲・非保証範囲と不可分に読む。
 
 ---
 導線: [公式派生物001トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
