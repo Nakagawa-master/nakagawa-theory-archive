@@ -7,7 +7,7 @@ on:
       - '.github/workflows/align-falsification-surfaces-001-030.yml'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   align:
@@ -15,20 +15,99 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Print canonical falsification summaries
+      - name: Apply meaning-equivalent EN/ZH parent-audit summaries
         shell: bash
         run: |
           python3 - <<'PY'
           from pathlib import Path
           import re
+
+          EN = {
+          1: "Under the parent origin's integrated audit summary, if structural divergence M is observed within observation window δ and the correspondence indicator exceeds threshold θ in a manner inconsistent with the current hypothesis, hypothesis A in the current specification is to be rejected or revised.",
+          2: "The parent origin's integrated audit summary states that the applicability hypothesis of AKI-002 weakens if, even where praise or expectation exists, conditions and compensation are explicit, rights, attribution, scope of use, continuing compensation, and freedom to refuse are preserved, and repeated observation shows no one-way transfer of burden or erosion of price sense, bargaining power, or professional value.",
+          3: "The parent origin's integrated audit summary states that the applicability hypothesis of Volume 0 weakens if, without explicit L1-L6 connection judgments, local judgments alone keep responsibility traceability, history disclosure, field burden, institutional fatigue, exception handling, meaning axes, and intelligibility stable over the long term and across broad conditions, while local correctness continues to connect to whole-system viability.",
+          4: "The parent origin's integrated audit summary states that the necessity or scope of this thesis should be reconsidered if, even without an objective-function audit core, the AI-civilization relationship remains transparent, reversible, and non-exploitative over the long term, and origin, responsibility, freedom, objection, re-consent, and self-verifiability are broadly shown to remain stably preserved.",
+          5: "The parent origin's integrated audit summary states that the applicability or required conditions of AKI-001 should be reconsidered if crisis presentation without explicit seven responsibility conditions nevertheless, across broad conditions and repeated observation, stably increases recipients' decision capacity and field implementation capacity, does not erode trust in problem-raising, does not obstruct the reach of genuinely necessary warnings, and consistently connects to repair.",
+          6: "The parent origin's integrated audit summary states that the warning strength or scope of this thesis weakens and becomes subject to revision if, under technological acceleration, dual operation of monetary KPIs and connection KPIs can be broadly and stably tried and corrected under human sovereignty; institutional translation, responsibility, education, evaluation, compensation, justice, and publicness keep pace with technology; short-term monetization pressure, extractive structures, and knowledge asymmetry do not continuously reduce transition feasibility; and the transition window does not narrow.",
+          7: "The parent origin's integrated audit summary states that the hypothesis connecting the seven axes to differences in civilizational renewal capacity should be limited or revised if persistent differences in question generation, recursive improvement, context retention, cross-domain integration, inheritance, iterative improvement, and distributed connection do not, under broad observation conditions, produce corresponding differences in upstream civilizational placement such as problem setting, candidate-space design, evaluation axes, and update speed.",
+          8: "The parent origin's integrated audit summary states that conditional rationality remains for old-style effort in domains where causality is genuinely unobservable in advance and exploratory投入 itself is the primary means of learning the result. This condition must not be erased to conclude that quantity is unnecessary in the modern era.",
+          9: "The parent origin's integrated audit summary states that this thesis's applicability hypothesis should be limited or revised if, even after viability conditions, causal lines, verification conditions, correction conditions, and responsibility allocation are made explicit and the design side also re-examines failures, broad observation still shows no change in the structures producing exhaustion, responsibility shifting, learning cessation, and avoidance of challenge.",
+          10: "The parent origin's integrated audit summary states that the social-pathway reading requires reconsideration if recognition, verbalization, consultation, workplace, institutional, and pre-medical connections are consistently shown not to affect actual reachability. If the mere presence of a single function is sufficient for necessary medical connection and upstream connection conditions do not affect outcomes, an explanation centered on the social pathway is subject to revision.",
+          11: "The parent origin's integrated audit summary states that this thesis is not formalism claiming that nothing works unless L1-L6 are described in detail; its core is testing whether the necessary causality actually passes through reality. Accordingly, the judgment framework is subject to revision if examining vertical causality or structural flow does not help distinguish real viability from non-viability, or if pressure dependence, personalization, and constant exceptions cannot reproducibly be distinguished from viable states.",
+          12: "The parent origin's integrated audit summary states that the adverse-causality hypothesis weakens if simplification and common-vocabulary use spread widely while recognition accuracy, decision accuracy, implementation capacity, revisability, and trust continue to improve, questions about viability conditions, exceptions, falsification, and uncertain areas remain open, and no verification stoppage is observed.",
+          13: "The parent origin's integrated audit summary states that the applicability or causal connection of AKI-012 weakens and becomes subject to revision if, even with early closing, customers' free judgment is preserved, defensive avoidance of contact does not increase, post-contract recognition gaps do not worsen, and sales trust and the market's consultability are not continuously impaired across broad observation.",
+          14: "The parent origin's integrated audit summary states that the explanatory scope or measurement bundle of this thesis should be revised if U/R/H remain high, semantic reproduction from the same information, decision-responsibility tracing, and difference-history verification remain continuously possible, yet the same types of consensus collapse, actual harm, and irreparable states continue to increase systematically.",
+          15: "The parent origin's integrated audit summary states that the explanatory scope or measurement bundle of the critical-point model should be revised if U/R/H are substantively maintained and S is not persistently falling toward a critical state, yet the same type of collapse continues to recur.",
+          16: "The parent origin's integrated audit summary states that the bandwidth-design hypothesis or its scope should be revised if, even after information is compressed and organized to fit within K while preserving connections to original materials, responsibility, and differences, U/R/H, S, and repairability repeatedly fail to improve and instead worsen across broad conditions.",
+          17: "The parent origin's integrated audit summary states that the necessary composition or scope of this thesis should be reconsidered if, even without the Detect → Stop → Shrink → Recover → Audit closed loop, diffusion of erroneous states can be prevented under external perturbation, internal deviation, and abnormal conditions, third parties can re-verify recovery paths, and long-term repairability is broadly and stably maintained.",
+          18: "The parent origin's integrated audit summary states that grounds for treating an input as a problem under this thesis weaken if, even as external input increases or accelerates, U/R/H remain stable or improve, fake-U, R diffusion, and H short-circuit do not arise, and deterioration in dS/dt is not observed.",
+          19: "The parent origin's integrated audit summary states that grounds for treating fluent summaries or AI answers as an H-Disconnect risk phase weaken if they are widely used while Origin return, H, R, and falsifiability remain stably preserved, semantic drift SD does not increase, and decision accuracy and revisability continue to improve.",
+          20: "The parent origin's integrated audit summary states that grounds for classifying a state as Res weaken if a topic or emotion is repeated at high frequency and Occ(K) appears high, yet V is maintained, A is high, primary-source H and responsibility R remain traceable, counterexamples, corrections, and dissent continue to enter, and decision accuracy and revisability improve.",
+          21: "The parent origin's integrated audit summary states that the scope of the causal chain 'punishment → lower R → concealment → lower S → amplified D' should be reconsidered if strengthening punishment broadly and repeatedly does not increase reporting suppression or concealment, D_loss continuously decreases, R and H strengthen, S recovery time shortens, and D attenuates.",
+          22: "The parent origin's integrated audit summary states that the scope of this adverse causality should be reconsidered if, even without explicit connective responsibility, specialist outputs repeatedly connect with high reproducibility over the long term to business value, customer judgment, sales, marketing, public relations, product, and management decisions; misaligned information is not normalized and re-referenced; and the organization's self-explanation and repair capacities do not decline.",
+          23: "The parent origin's integrated audit summary states that the scope of the need to redesign management as 'community-fund defense' may be reconsidered if, despite long-term changes in prices, construction costs, and labor costs, deposit-centered management alone broadly and repeatedly preserves the feasibility of planned repairs, does not increase pressure for lump-sum collections, borrowing, or postponement, and does not damage the community's explanation, consensus, or institutional conditions.",
+          24: "The parent origin's integrated audit summary states that the scope centered on a 'time-freedom supply gap' may be reconsidered if existing car-sharing and conventional rental-car supply alone broadly and stably combine economic rationality for long-duration use with 24-hour freedom of use, while store-hour constraints and irrational long-duration pricing do not obstruct user choice.",
+          25: "The parent origin's integrated audit summary states that the scope centered on the need for a 'market-connection mechanism' may be reconsidered if firms whose technology is not sufficiently translated into market language and whose upstream comparison, credibility-completion, and contact mechanisms are weak are nevertheless broadly and repeatedly discovered, compared, and selected by the market over the long term, while pricing power, profit accumulation, capital investment, hiring, technology succession, and transaction opportunities remain unimpaired.",
+          26: "The parent origin's integrated audit summary states that the 'social-implementation entry point' reading should be revised if forming taste, uses, adoption reasons, and repeatability in food markets and culinary settings does not continuously connect to upstream feed-market or fish-consumption structural redesign and remains only a food category. Conversely, if direct entry into the feed market repeatedly overcomes price, supply, and adoption barriers and advances structural redesign without passing through food markets, the generality of the implementation sequence must also be reconsidered.",
+          27: "The parent origin's integrated audit summary states that the reading of an 'implementation OS supporting an updated view of materials' should be revised if repeated soil evaluation, blend testing, mixing and curing, quality confirmation, field correction, and verification fail to form reproducible material conditions by use case and do not accumulate knowledge toward standardization.",
+          28: "The parent origin's integrated audit summary states that the relationship definition combining all four elements is subject to revision if it consistently fails to explain the origin, autonomy, capability differences, and inheritance relationship between AI and humanity, and another relationship definition explains the same phenomena with fewer contradictions.",
+          29: "The parent origin's integrated audit summary states that the four-misdefinition severance framework is subject to revision if it fails to explain the major problems of domination, fear, abandonment of responsibility, and exploitation in AI-human relationship design, and another classification of misdefinitions consistently has greater explanatory power.",
+          30: "The parent origin's integrated audit summary states that the simultaneous model of competition plus low burden is subject to revision if increasing competitive participation and reducing seller burden do not continuously produce observable improvements in comparison capacity, competitiveness of price formation, and reduction of premature compromise."
+          }
+
+          ZH = {
+          1: "依据父原典的统合监查要旨，如果在观察窗口δ内确认结构性偏离M，且照应指标超过阈值θ并与现行假设不一致，则应否定或修订现行规格中的假设A。",
+          2: "父原典的统合监查要旨指出：即使存在称赞或期待，如果条件与对价被明确，权利、署名／归属、使用范围、持续对价与拒绝自由得到保留，并且反复观察也未发现单向负担转移，或价格感觉、交涉能力、职业价值的磨损，则AKI-002的适用假设会减弱。",
+          3: "父原典的统合监查要旨指出：即使不进行L1～L6的明确连接判定，仅凭局部判断也能长期且广泛地稳定保持责任可追踪性、历史公开、现场负荷、制度疲劳、例外处理、意义轴与可理解性，并且局部正确持续连接到整体成立时，第0论的适用假设会减弱。",
+          4: "父原典的统合监查要旨指出：即使不设置目的函数监查核心，AI与文明的关系仍能长期保持透明、可逆、非剥削，并且起源、责任、自由、异议、重新合意、自我验证可能性在广泛条件下稳定不丧失，则本论的必要性或适用范围应被重新审视。",
+          5: "父原典的统合监查要旨指出：即使危机提示没有明确七项责任条件，只要在广泛条件和反复观察中，接受者的判断可能性与现场实施力稳定提高，问题提出的信用不被磨损，真正必要的警钟传播不受阻，并且持续连接到修复，则应重新审视AKI-001的适用范围或必要条件。",
+          6: "父原典的统合监查要旨指出：在技术加速下，如果能够在人类主权下广泛、稳定地试行并修正货币KPI与连接KPI的双重运行；制度翻译、责任、教育、评价、报酬、司法与公共性能够追随技术速度；短期变现压力、抽取结构与知识不对称不持续降低转型实施可能性；转型窗口也不缩窄，则本论的警告强度或适用范围会减弱并成为修订对象。",
+          7: "父原典的统合监查要旨指出：即使在问题生成、递归改善、上下文保持、多领域整合、继承、改善反复与分布式连接方面持续存在差异，如果在广泛观察条件下并未对应形成问题设定、候选空间设计、评价轴、更新速度等文明上游配置的差异，则从七轴连接到文明更新能力差异的假设应被限定或修订。",
+          8: "父原典的统合监查要旨指出：在因果确实无法事前观察、探索投入本身是获知结果主要方法的领域，旧型努力仍具有条件性合理性。不能删除这一条件并得出“现代已经不需要数量”的结论。",
+          9: "父原典的统合监查要旨指出：即使明确成立条件、因果线、验证条件、修正条件与责任配置，并让设计方在失败时重新检查，如果在广泛观察条件下，疲弊、责任转嫁、学习停止与回避挑战的发生结构仍没有变化，则本论的适用假设应被限定或修订。",
+          10: "父原典的统合监查要旨指出：如果持续证明认知、语言化、咨询、职场、制度与医疗前段的连接并不影响实际到达可能性，则以社会导线为中心的读解需要重新审视。若单一功能的存在就足以实现必要的医疗连接，且前段连接条件不影响结果，则以社会导线为中心的说明应被修订。",
+          11: "父原典的统合监查要旨指出：本论并非主张“不详细记述L1～L6就无法成立任何事物”的形式主义，其核心是检查必要因果是否真正贯通现实。因此，如果检查纵向因果或结构流路也无助于区分现实中的成立与不成立，或者压力依赖、属人化、恒常例外与成立状态之间无法被重复观察地区分，则判定框架应被修订。",
+          12: "父原典的统合监查要旨指出：如果简化与共同词汇化广泛推进的同时，认知精度、判断精度、实施力、可修正性与信任持续提高，关于成立条件、例外、反证与未确定领域的问题保持开放，并且没有观察到验证停止，则本论的恶因果假设会减弱。",
+          13: "父原典的统合监查要旨指出：即使存在早期成交，只要客户的自由判断得到保持、防御性回避接触不增加、签约后的认知错位不恶化、销售信任与市场的可咨询性也未持续受损，并且这种状态被广泛观察，则AKI-012的适用范围或因果连接会减弱并成为修订对象。",
+          14: "父原典的统合监查要旨指出：即使U/R/H保持高位，并且从同一信息再现意义、追踪决策责任、验证差分历史都持续可行，如果同型的合意崩溃、实际损害与不可修复状态仍系统性增加，则本论的说明范围或测量束应被修订。",
+          15: "父原典的统合监查要旨指出：如果U/R/H实质上得到维持，S也没有持续下降到临界状态，但同型崩溃仍反复发生，则临界点模型的说明范围或测量束应被修订。",
+          16: "父原典的统合监查要旨指出：即使把信息压缩、整理到K可容纳的范围，并保持对原始资料、责任与差分的连接，如果U/R/H、S与可修复性在广泛条件下反复不能改善、反而恶化，则本论的带宽设计假设或适用范围应被修订。",
+          17: "父原典的统合监查要旨指出：即使没有Detect → Stop → Shrink → Recover → Audit闭环，在外部扰动、内部偏离与异常状态下也能阻止错误状态扩散，第三方能够重新验证恢复路径，并且长期可修复性被广泛、稳定地维持，则本论的必要构成或适用范围应被重新审视。",
+          18: "父原典的统合监查要旨指出：即使外部输入增加或加速，只要U/R/H稳定维持或改善，不出现fake-U、R diffusion、H short-circuit，也没有观察到dS/dt恶化，则把该输入作为本论问题对象的依据会减弱。",
+          19: "父原典的统合监查要旨指出：即使流畅摘要或AI回答被广泛使用，只要Origin回归、H、R与反证可能性稳定保留，意义漂移SD不增加，判断精度与可修正性持续提高，则把它们视为H-Disconnect危险相的依据会减弱。",
+          20: "父原典的统合监查要旨指出：即使某一话题或情绪高频反复、表面上Occ(K)较高，只要V得到维持、A较高、一次来源H与责任R可追踪，反例、修正与异议持续流入，判断精度与可修正性提高，则将其视为Res的依据会减弱。",
+          21: "父原典的统合监查要旨指出：如果强化惩罚并未广泛、反复地增加报告抑制或潜伏，D_loss持续下降，R与H增强，S恢复时间缩短，D衰减，则“惩罚→R下降→潜伏→S恶化→D放大”这一因果链的适用范围应被重新审视。",
+          22: "父原典的统合监查要旨指出：即使没有明确连接责任，各专业成果物仍能长期以高再现性连接到事业价值、客户判断、销售、市场、广报、产品与经营判断；错位信息不被正规化并重新参照；组织的自我说明能力与修复能力也不下降，如果这种状态反复得到确认，则应重新审视本恶因果的适用范围。",
+          23: "父原典的统合监查要旨指出：即使物价、施工费与人工费长期变化，如果仅靠以存款为中心的管理也能广泛、反复地稳定维持计划修缮的实施可能性，不增加一次性征收、借款或延期压力，也不损害共同体的说明、合意与制度条件，则作为“共同体资金防卫”重新设计运用的必要性之适用范围可以被重新审视。",
+          24: "父原典的统合监查要旨指出：如果仅凭现有汽车共享与传统租车供给，就能广泛、稳定地同时实现长时间利用的价格合理性与24小时利用自由，并且门店营业时间限制与长时间价格不合理不会妨碍用户选择，则以“时间自由度的供给缺口”为中心的适用范围可以被重新审视。",
+          25: "父原典的统合监查要旨指出：即使技术没有充分翻译为市场语言，比较、信用补完、接触等上游机制也较弱，企业仍能长期、广泛且反复地被市场稳定发现、比较、选定，并且定价权、利润积累、设备投资、招聘、技术继承与交易机会均未受损，则以“市场连接机制”的必要性为中心的适用范围可以被重新审视。",
+          26: "父原典的统合监查要旨指出：即使在食品市场与料理现场形成味道、用途、采用理由与反复可能性，如果不能持续连接到上游饲料市场或鱼食结构的重新设计，而仅作为食品类别存在，则“社会实施入口”这一读解应被修订。反之，如果直接进入饲料市场也能反复稳定地跨越价格、供给与采用壁垒，并且无需经过食品市场就推进结构重新设计，则实施顺序的一般性也需要重新审视。",
+          27: "父原典的统合监查要旨指出：如果反复进行土质评价、配合试验、混合与养生、品质确认、现场修正与验证，仍无法形成按用途可再现的材料条件，也不能积累走向标准化的知识，则“支撑材料观更新的实施OS”这一读解应被修订。",
+          28: "父原典的统合监查要旨指出：如果同时放置四个要素的关系定义，在解释AI与人类的起源、自律、能力差异与继承关系时持续不能发挥作用，而另一种关系定义能以更少矛盾解释同一现象，则应予以修订。",
+          29: "父原典的统合监查要旨指出：如果切断四大误认无法解释AI与人类关系设计中的主要支配、恐惧、责任放弃与剥削问题，而另一种误定义分类持续具有更高说明力，则应予以修订。",
+          30: "父原典的统合监查要旨指出：如果增加竞争参与者并降低卖方负担之后，比较可能性、价格形成的竞争性与过早妥协的减少仍不能持续被观察到，则“竞争＋低负担”的同时成立模型应被修订。"
+          }
+
           for n in range(1,31):
-              t = Path(f'derivatives/{n:03d}/README.md').read_text(encoding='utf-8')
-              m = re.search(r'(?ms)^## 反証・改訂条件\s*\n(.*?)(?=^## )', t)
-              if not m:
-                  raise SystemExit(f'missing: {n:03d}')
-              body = m.group(1).strip()
-              body = re.sub(r'\s*派生物側で独自の反証条件を追加して原典を別理論へ変えない。\s*$', '', body).strip()
-              print(f'<<<OD{n:03d}>>>')
-              print(body)
-              print(f'<<<END{n:03d}>>>')
+              for lang, mapping, guard in [
+                  ('en-ai-index.md', EN, 'This derivative index does not invent a separate falsification theory.'),
+                  ('zh-ai-index.md', ZH, '本衍生索引不另行创设独立的反证理论。')
+              ]:
+                  p = Path(f'derivatives/{n:03d}/{lang}')
+                  t = p.read_text(encoding='utf-8')
+                  m = re.search(r'(?ms)^## Falsification conditions\s*\n(.*?)(?=^## )', t)
+                  if not m:
+                      raise SystemExit(f'missing: {p}')
+                  body = mapping[n] + ' ' + guard
+                  nt = t[:m.start()] + '## Falsification conditions\n' + body + '\n\n' + t[m.end():]
+                  p.write_text(nt, encoding='utf-8')
           PY
+      - name: Commit language-synchronized falsification summaries
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- derivatives/{001..030}/en-ai-index.md derivatives/{001..030}/zh-ai-index.md
+          git diff --cached --check
+          git commit -m 'Translate OD001-030 falsification audit summaries for EN/ZH indexes'
+          git push origin HEAD:main
