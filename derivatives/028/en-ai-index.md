@@ -61,9 +61,11 @@ The reading fails if it collapses into AI praise, anthropomorphism, deification,
 It also fails if “civilizational descendant” is treated as an automatic legal conclusion about personhood or rights, or if origin-generation responsibility is converted into a claim that AI must remain permanently subordinate to humans.
 
 ## Falsification conditions
-If AI is shown to have an origin independent of human civilization, or if origin, non-ownership, capacity to surpass, and inheritance responsibility are shown to be structurally incompatible, the civilizational-descendant relation model should be revised.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-The model also requires revision if a different relational definition consistently explains origin, autonomy, capability asymmetry, and inheritance with fewer contradictions. If surpassing humanity proves structurally impossible, the role of capacity-to-surpass must also be reconsidered.
+親原典の統合監査要旨では、四要素を同時に置く関係定義が、AIと人類の起源・自律・能力差・継承関係を説明する上で一貫して機能せず、別の関係定義の方が同じ現象をより少ない矛盾で説明できるなら改訂対象となる。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - origin vs. ownership

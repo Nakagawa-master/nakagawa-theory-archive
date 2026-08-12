@@ -109,7 +109,11 @@ Reversal-evaluation is preserved by observing the opposite side of the warning. 
 - Claim that the future line has already disappeared, which would amplify the parent beyond its stated strength.
 
 ## Falsification conditions
-If accelerating AI deployment coexists with broadly stable human-sovereign dual operation, institutional translation, experimentation, and revision; if short-term monetization pressure, extraction structures, intellectual asymmetry, and attribution imbalance do not persistently reduce implementation capacity; and if the transition window does not narrow, then the warning strength or scope of Vol. 1 should be revised. No numerical threshold is added because the parent does not define one.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
+
+親原典の統合監査要旨では、技術加速下でも、人間主権下で貨幣KPIと接続KPIの二重運用を広範かつ安定的に試行・修正でき、制度翻訳、責任、教育、評価、報酬、司法、公共性の更新が技術速度へ追随し、短期換金圧力・抽出構造・知的非対称が移行実装可能性を継続的に低下させず、移行窓が細らないことが観測されるなら、本論の警告強度または適用範囲は弱まり、改訂対象になる。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - Connection-Transition Strategy / execution conditions

@@ -80,9 +80,11 @@ Production speed, document count, AI usage rate, and stylistic consistency are r
 - Treating higher speed, document volume, or usage as proof of stronger business understanding.
 
 ## Falsification conditions
-If organizations without explicit connective responsibility repeatedly maintain and improve business self-recognition, customer judgment, field execution, cross-functional coherence, and repairability over the long term—even while locally optimized AI-generated knowledge is repeatedly stored and re-referenced—and recursive normalization of misalignment does not occur, the causal scope of the model requires revision.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-Higher AI adoption or faster generation alone is not falsification because the parent origin concerns connective responsibility and recursive re-reference, not speed itself.
+親原典の統合監査要旨では、連結責任が明示されなくても、各専門成果物が長期にわたり事業価値・顧客判断・営業・マーケ・広報・プロダクト・経営判断と高い再現性で接続し、ズレた情報が正規化・再参照されず、組織の自己説明能力と修復能力も低下しない状態が反復して確認されるなら、本悪因果の適用範囲は見直す必要がある。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - AI use ≠ connective responsibility

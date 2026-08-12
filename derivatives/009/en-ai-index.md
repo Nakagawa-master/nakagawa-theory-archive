@@ -127,11 +127,11 @@ The parent defines no universal insufficient-effort rate, fatigue rate, trust ra
 - Exhaustion, silence, or learning shutdown appears while targets, assumptions, and conditions remain unchanged.
 
 ## Falsification conditions
-If establishment conditions, causal lines, verification conditions, correction conditions, and responsibility placement are made explicit, and design is re-examined when outcomes fail, yet the broad structure of exhaustion, responsibility transfer, learning shutdown, and challenge avoidance remains unchanged across relevant observations, the application hypothesis should be limited or revised.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-Conversely, if settings that lack these structural elements broadly and persistently maintain trust, learning, dissent, and challenge-taking without observable downward transfer of establishment-testing cost or compression into insufficient-effort blame, the proposed causal connection from target-value misrecognition to responsibility transfer requires revision.
+親原典の統合監査要旨では、成立条件、因果線、検証条件、修正条件、責任配置を明示し、設計側も失敗時に再検査する構造を整えても、広い観測条件で疲弊・責任転嫁・学習停止・挑戦回避の発生構造が変わらない場合、本論の適用仮説は限定・改訂される。
 
-Do not convert these falsification boundaries into derivative-created fatigue rates, trust rates, effort-deficit rates, or numerical thresholds.
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - target value / future definition

@@ -119,9 +119,11 @@ The parent does not define generic risk scores, enemy ratings, occurrence probab
 - Assign derivative-created enemy or risk scores to P_ext.
 
 ## Falsification conditions
-If strong external inputs occur while U/R/H remain stable or improve, fake-U, R diffusion, H short-circuit, and dS/dt deterioration are not reproducibly observed, then the basis for classifying those inputs as problematic under this model weakens.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-If restoring primary sources, context, version, differences, and backlinks does not improve verifiability or S, and the relationship between P_ext and U/R/H changes cannot be reproduced, the sensor bundle or scope requires revision. Do not invent numeric thresholds merely to make falsification appear precise.
+親原典の統合監査要旨では、外部入力が増加・高速化しても、U/R/Hが安定的に維持または改善し、fake-U、R diffusion、H short-circuitが生じず、dS/dtの悪化も観測されないなら、その入力を本論の問題対象として扱う根拠は弱まる。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - external input / enemy

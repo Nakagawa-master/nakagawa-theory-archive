@@ -183,11 +183,11 @@ Reversal evaluation does not count how many of the seven items are present. It c
 - The seven conditions are converted into a derivative-created scoring KPI.
 
 ## Falsification conditions
-If crisis discourse that does not explicitly state the seven responsibility conditions nevertheless produces durable increases in audience judgment and field implementation capacity across broad conditions, preserves trust in problem raising, does not obstruct necessary warnings, and reliably connects to repair, the scope or necessary conditions of AKI-001 should be reconsidered.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-If opening the responsibility conditions fails to improve repairability or implementation capacity and is broadly shown to obstruct legitimate problem discovery, which conditions are required at which stage should be revised. In particular, if demanding complete causal attribution, tradeoff analysis, and repair design at the first whistleblowing stage systematically suppresses important information, that implementation would contradict the source's repairability purpose.
+親原典の統合監査要旨では、七つの責任条件が明示されていない危機提示であっても、広い条件と反復観測において、受け手の判断可能性と現場の実装力が安定して増え、問題提起への信用が摩耗せず、本当に必要な警鐘の到達も阻害されず、修復へ一貫して接続することが示されるなら、AKI-001の適用範囲または必要条件は再検討される。
 
-Conversely, strong or alarming language should not be classified as AKI-001 merely because it creates anxiety. If it simultaneously improves causal clarity, verification, repair authority, tradeoff visibility, next-step capacity, and falsifiability, the distinctive bad-causality chain is weakened. The derivative must not pre-empt these distinctions by inventing a numerical threshold.
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - problem raising / anxiety diffusion

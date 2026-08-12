@@ -154,11 +154,11 @@ The reversal test remains source-bounded: if local correctness is accompanied by
 Specialization, local expertise, and division of labor therefore do not themselves satisfy the theory's failure mode. The relevant question is whether local correctness is mistaken for whole establishment while connection remains unjudged.
 
 ## Falsification conditions
-The Paper 0 application hypothesis weakens if, without explicit L1-L6 connection judgment, locally correct decisions nevertheless maintain long-term and broad stability in responsibility traceability, public or retraceable history, field burden, institutional fatigue, exception handling, meaning continuity, and mutual intelligibility, while continuing to connect reliably to whole establishment.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-Simple mistakes caused by absent information are not central evidence for local totalization if adding the missing information resolves the issue without a persistent whole-misrecognition mechanism. Conversely, having more information does not falsify the theory if responsibility and connection remain unjudged.
+親原典の統合監査要旨では、第0論の適用仮説は、L1〜L6の明示的な接続判定を行わなくても、局所判断だけで責任特定可能性、履歴公開、現場負荷、制度疲労、例外処理、意味軸、理解可能性が長期的かつ広範に安定し、局所正解が継続的に全体成立へ接続する場合に弱まる。
 
-AI's ability to synthesize multiple domains also does not by itself falsify the hypothesis. If such synthesis repeatedly connects to actual L1-L6 conditions and stably resolves responsibility, resources, time, field burden, history, and meaning without hiding interface failure, the claim that AI can amplify whole-like local correctness becomes weaker in that application. No invented numerical threshold is used to replace this parent-bounded falsification route.
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - local correctness / whole establishment

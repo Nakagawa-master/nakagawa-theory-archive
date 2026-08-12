@@ -94,9 +94,11 @@ Counts are reversal-evaluable. More inquiries can mean worse connection if most 
 - preserving only the market-connection structure while dropping the parent’s public deconstruction of why that value core was foregrounded in the external article.
 
 ## Falsification conditions
-If firms with weak market-language translation, weak comparison-set entry, and weak credibility supplementation nevertheless remain broadly and repeatedly discoverable, selected, and transactable over the long term while maintaining pricing power, retained profit, investment, hiring, and technical succession, the scope of the market-connection mechanism thesis should be revised.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-Higher inquiry volume, AI adoption, or automation rates alone do not falsify the origin because the parent asks whether technical capability actually connects to comparison, credibility, and transaction.
+親原典の統合監査要旨では、技術が市場語へ十分翻訳されず、比較・信用補完・接触の上流機構も弱い企業であっても、長期にわたり市場から安定して発見・比較・選定され、価格決定力・利益蓄積・設備投資・採用・技術継承が損なわれず、取引機会も継続する事例が広範に反復するなら、「市場接続機構」の必要性を中心に置く適用範囲は見直し得る。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - sales AI ≠ market-connection mechanism

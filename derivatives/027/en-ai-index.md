@@ -71,9 +71,11 @@ It also fails if intermediary metrics are treated as structural outcomes—for e
 Presenting the derivative as an Invax, HO Soil, or external-media official statement, or preserving only the implementation structure while dropping the parent’s public deconstruction of why “material-view update” was foregrounded in the external article, is also failure.
 
 ## Falsification conditions
-If the implementation OS repeatedly fails to improve verifiability or reproducibility of quality conditions, and usable-material conditions cannot be stated, the structural reading should be revised. The same applies if tacit judgment cannot move toward repeatable practice.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-Conversely, if heterogeneous soils repeatedly achieve stable equivalent quality without assessment, mix testing, field correction, or verification, the general necessity of those implementation stages should be reconsidered.
+親原典の統合監査要旨では、土質評価、配合試験、混合・養生、品質確認、現場補正、検証を繰り返しても、用途ごとの再現可能な材料条件が形成されず、標準化への知見も蓄積しないなら、「材料観更新を支える実装OS」という読解は改訂対象となる。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - surplus-soil reuse vs. material-view update

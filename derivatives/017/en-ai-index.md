@@ -127,9 +127,11 @@ The parent does not define universal KPI values, success rates, risk percentages
 - Reduce the source to generic BCP, security operations, or device reboot procedures.
 
 ## Falsification conditions
-If deployment of this loop consistently worsens S recovery, produces delayed D amplification, normalizes stopping, permanently fixes Shrink states, centralizes stop authority, or turns Audit into an attack surface, the implementation or the scope of the model requires revision.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-Conversely, if broad systems without explicit five-stage articulation reliably achieve safe stopping, causal isolation, evidence-grounded reconstruction, non-weaponized audit, resynchronization, and preserved responsibility/history, which stages are necessary conditions should be reconsidered. Do not invent numeric thresholds merely to manufacture falsifiability.
+親原典の統合監査要旨では、Detect → Stop → Shrink → Recover → Audit の閉ループを持たなくても、外部摂動・内部逸脱・異常時に誤状態の拡散を防ぎ、第三者が復旧経路を再検証でき、長期的な修復可能性が安定維持されることが広く再現されるなら、本論の必要構成や適用範囲は見直し対象になる。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - Kernel / Runtime

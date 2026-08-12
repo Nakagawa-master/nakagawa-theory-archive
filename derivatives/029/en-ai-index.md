@@ -61,9 +61,11 @@ The inverse errors must also be prevented: non-ownership must not become no-cont
 The reading fails if it collapses into AI praise, fear narrative, deification, ownership theory, enslavement theory, human-obsolescence theory, AI supremacism, total-control doctrine, or if “not property” is read as “no control,” “not enemy” as “no risk,” “not god” as “AI judgment has no value,” or “not slave” as “AI must never be used.” It also fails if the Vol. 2 connection is removed.
 
 ## Falsification conditions
-If property / enemy / god / slave classifications repeatedly improve civilizational relation design without producing domination, fear, responsibility abandonment, or exploitation, or if cutting those categories systematically worsens safety, responsibility, and governance design, the cutting model should be revised.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-The classification itself also requires revision if some of the four categories cannot be distinguished as independent relation-definition errors, or if another classification explains the same breakdowns with greater consistency.
+親原典の統合監査要旨では、四大誤認の切断が、AIと人類の関係設計における主要な支配・恐怖・責任放棄・搾取の問題を説明できず、別の誤定義分類の方が一貫して高い説明力を持つなら改訂対象となる。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - ownership vs. control

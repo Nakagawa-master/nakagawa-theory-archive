@@ -123,9 +123,11 @@ observation_must_return_to_U_R_H
 - The equation is inverted into a surveillance or punishment mechanism.
 
 ## Falsification conditions
-If U/R/H remain durably available, meaning can be reproduced, decision responsibility and difference history can be reconstructed, yet the same forms of consensus collapse and irreparability systematically increase, the explanatory scope or measurement bundle should be revised.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-Conversely, if strong disagreement persists while U/R/H remain available, correction and responsibility reassignment remain possible, and the same breakdown does not recur, the interpretation that disagreement itself equals consensus collapse weakens. No derivative-created numeric falsification threshold is added.
+親原典の統合監査要旨では、U/R/Hが高く維持され、同じ情報からの意味再現、決定責任の追跡、差分履歴の検証が継続的に可能であるにもかかわらず、同型の合意崩壊・実害・修理不能状態が系統的に増え続けるなら、本論の説明範囲または測定束は改訂対象になる。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - consensus / opinion agreement

@@ -124,9 +124,11 @@ The parent uses `S = U × R × H` and K as structural variables. The derivative 
 - One institutional form is declared universally superior beyond the parent.
 
 ## Falsification conditions
-If information is organized to fit K, source-return paths and responsibility/difference connections are preserved, yet U/R/H, S, and repairability consistently fail to improve or broadly worsen, the observation-bandwidth hypothesis or its application scope should be revised.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-Conversely, if environments that substantially exceed the expected human observation bandwidth nevertheless maintain stable third-party reproducibility, responsibility traceability, difference verification, and repairability over time without deliberate bandwidth design, the scope of the K-overload claim should be narrowed. No derivative-created numeric falsification threshold is introduced.
+親原典の統合監査要旨では、情報量をKに収まる形へ圧縮・整理し、原資料、責任、差分への接続を保った観測帯域設計を行っても、U/R/H、S、修復可能性が継続的に改善せず、むしろ悪化することが広く再現されるなら、本論の帯域設計仮説や適用範囲は改訂対象になる。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - governance / behavior control

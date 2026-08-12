@@ -119,9 +119,11 @@ The parent does not define universal immunity scores, fixed detection percentage
 - Assign derivative-created fixed pass values to D_det, D_loss, or recovery time.
 
 ## Falsification conditions
-If stronger punishment repeatedly does not increase concealment or reporting suppression, while D_loss falls, R and H strengthen, S recovery becomes faster, and D is damped across broad conditions, the scope of the punishment-collapse causal path should be reconsidered.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-Conversely, if stronger difference disclosure fails to improve R or H, does not improve repairability or S recovery, and instead increases exposure, retaliation, or information overload, the disclosure design or theoretical scope requires revision. Do not invent numeric thresholds merely to manufacture falsifiability.
+親原典の統合監査要旨では、罰を強化しても報告抑制や潜伏が増えず、D_lossが継続的に低下し、RとHが強まり、S回復時間が短縮し、Dが減衰することが広く再現されるなら、「罰→R低下→潜伏→S悪化→D増幅」という適用範囲は再検討される。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - deviation occurrence / immune failure

@@ -90,9 +90,11 @@ Numbers are reversal-evaluable. A larger nominal balance can coexist with weaker
 - preserving only the fund structure while dropping the parent’s public deconstruction of why “community fund defense” was foregrounded in the external article.
 
 ## Falsification conditions
-If changing construction and labor costs are broadly and repeatedly absorbed by deposit-centered reserve management without loss of future repair capacity, without increasing pressure for borrowing, lump-sum collections, delay, or scope reduction, and while explainability, consensus, liquidity, and institutional conditions remain stable, the scope in which additional community-fund defense design is necessary should be revised.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-A high realized yield from a particular product alone does not falsify the reading because the parent origin is about defending future repair execution under communal constraints, not maximizing financial return.
+親原典の統合監査要旨では、物価・工事費・人件費が長期的に変動しても、預金中心の管理だけで予定修繕の実行可能性が安定して維持され、一時金・借入・延期圧力も増えず、共同体の説明・合意・制度条件も損なわれない事例が広範かつ反復的に成立するなら、「共同体資金防衛」として運用を再設計する必要性の適用範囲は見直し得る。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - investment product ≠ community fund defense

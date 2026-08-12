@@ -118,7 +118,11 @@ The parent does not define medical effectiveness, diagnostic accuracy, treatment
 - Preserve only the subject structure while dropping the parent’s public deconstruction of why “social pathway” was selected as the external-article value core.
 
 ## Falsification conditions
-If evidence shows that the social-pathway reading does not match the concrete structure described in the parent, the hypothesis should be limited or revised. The derivative must not create a new falsification system using medical-effect KPIs, improvement rates, loss thresholds, or other numbers not defined by the parent.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
+
+親原典の統合監査要旨では、親原典が置く社会導線という読解は、認識・言語化・相談・職場・制度・医療前段の接続が実際の到達可能性に関係しないことが一貫して示される場合、適用範囲の再検討が必要になる。単一機能が存在するだけで必要な医療接続が十分成立し、前段の接続条件が結果へ影響しないなら、社会導線を中心に置く説明は修正対象となる。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - service profile / structural reading

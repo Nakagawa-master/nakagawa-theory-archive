@@ -161,11 +161,11 @@ These observations are not a derivative-created legal test or universal sales-pe
 The interpretation also fails if it becomes a criticism of all sales, all closing, all forecasting, all KPIs, or all fast decisions. Those are not the parent claim.
 
 ## Falsification conditions
-The AKI-012 application hypothesis weakens if sustained observation shows that early closing demands do not reduce consultation capacity, do not impair free judgment, do not create defensive avoidance, do not increase post-contract recognition gaps or trust loss, and do not shift sales behavior away from customer understanding. If those outcomes remain stable while early closing is present across relevant cases, the claimed causal connection or its scope requires revision.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-Conversely, if closing is moved behind mature judgment and consent conditions but defensive avoidance, recognition gaps, and consultation loss do not improve, other causal factors must be investigated. The source-bounded theory does not authorize treating every consultation problem as evidence of consentless closing demand.
+親原典の統合監査要旨では、早期クロージングが存在しても、顧客の自由な判断が維持され、防衛的な接点回避が増えず、契約後の認識齟齬が悪化せず、営業信頼や市場の相談可能性も継続的に損なわれないことが広く観測されるなら、AKI-012の適用範囲または因果接続は弱まり、改訂対象になる。
 
-A single conversion-rate result, one successful contract, or one fast purchase is insufficient by itself as falsification because the source causal claim concerns the sequence, freedom of judgment, defensive learning, trust, organizational attention, and market consultation capacity. No derivative-created numeric threshold replaces those relations.
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - contact / purchase intent

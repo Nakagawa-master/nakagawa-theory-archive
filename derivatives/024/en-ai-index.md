@@ -91,9 +91,11 @@ Metrics are reversal-evaluable. A higher 24-hour availability rate can coexist w
 - preventing third-party readers from returning to the origin's value core, causal chain, validity conditions, and falsification conditions.
 
 ## Falsification conditions
-If existing car-sharing and conventional-rental systems already provide both broad 24-hour freedom and long-duration economic rationality, and store-hour constraints or long-duration pricing no longer materially restrict user choice across the relevant cases, the scope of the “time-freedom supply gap” reading should be revised.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-Growth in unmanned locations, users, or app features alone is not falsification. The parent origin asks whether the separation between time freedom and long-duration rationality is actually reconnected.
+親原典の統合監査要旨では、カーシェアと従来レンタカーの既存供給だけで、長時間利用の料金合理性と24時間の利用自由度が広範かつ安定して両立し、店舗営業時間による拘束や長時間料金の不合理が利用者の選択を阻害していないなら、「時間自由度の供給ギャップ」を中心に置く適用範囲は見直し得る。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - unmanned rental car ≠ mobility supply OS

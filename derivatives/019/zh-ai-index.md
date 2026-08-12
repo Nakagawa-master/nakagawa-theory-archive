@@ -116,9 +116,11 @@ Detect → Stop → Shrink → Recover → Audit
 - 给H_d、F-C、SD设置衍生侧自创固定阈值。
 
 ## Falsification conditions
-如果流畅摘要和AI回答广泛使用，同时Origin回归、H、R和反证可能性长期保持，SD不增加，判断精度与修正可能性持续提高，则把这些使用视为H-Disconnect的依据会减弱。
+反证／修订边界以父原典的统合监查要旨为准。以下原样保留与日文正本一致的约束表述：
 
-如果H_d、F-C、SD审计无法帮助检测或修复H-Disconnect，或者Detect → Stop → Shrink → Recover → Audit持续恶化恢复效果，则传感束或适用范围需要修订。不得为了制造精确感而自行添加数值阈值。
+親原典の統合監査要旨では、流暢な要約やAI回答が広く利用されても、Origin回帰、H、R、反証可能性が安定的に保たれ、意味漂流SDが増えず、判断精度・修正可能性が継続的に高まるなら、それらをH-Disconnectの危険相とみなす根拠は弱まる。
+
+不得由衍生物自行增加反证条件，也不得以新的理论替换父原典的监查边界。
 
 ## Required distinctions
 - 理解 / fake-U

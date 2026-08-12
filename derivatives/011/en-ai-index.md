@@ -107,7 +107,11 @@ Audit concerns source-grounded dimensions: L1-L6 connection, causal granularity,
 - Normalize excessive pressure or permanent personal workaround as ordinary operation.
 
 ## Falsification conditions
-The judgment framework should be revised if inspecting vertical causality, causal granularity, and structural flowpaths does not materially help distinguish established from non-established structures, or if pressure dependence, normalized personal workaround, and normalized exceptions do not reproducibly relate to non-establishment. Do not invent derivative thresholds or success rates to construct a separate falsification system.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
+
+親原典の統合監査要旨では、本論は「L1〜L6を詳しく記述しなければ何も成立しない」とする形式主義ではない。原典の核は、必要因果が現実に通っているかを検査することにある。したがって、縦因果や構造流路を検査しても現実の成立・未成立の区別に寄与しないこと、あるいは圧力依存・属人化・恒常例外と成立状態との区別が再現的に観測できないことが示されるなら、判定枠は改訂対象になる。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - establishment / establishment conditions

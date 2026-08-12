@@ -182,11 +182,11 @@ Reversal evaluation uses the same objective on both sides rather than replacing 
 - Later-paper personhood, legal-status, or descendant definitions are imported into Paper 0 as already settled.
 
 ## Falsification conditions
-If AI-civilization relations remain durably transparent, reversible, non-exploitative, and preserve origin, responsibility, freedom, dissent, re-agreement, release, and self-verifiability without a higher-order objective audit kernel, the necessity or scope of the kernel should be reconsidered.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-If maximizing single objectives across broad conditions does not produce structural reversal into control, exclusion, origin erasure, thinning of freedom, or audit failure, and an additional audit kernel produces no structural improvement, its required scope should be revised. Likewise, if deploying the proposed higher-order audit does not improve reversal detection, provenance, responsibility tracing, correction, re-agreement, or recovery, the implementation of the kernel itself must remain open to revision.
+親原典の統合監査要旨では、目的関数監査核を置かなくてもAIと文明の関係が長期的に透明・可逆・非搾取的に維持され、起源・責任・自由・異議・再合意・自己検証可能性が安定して失われないことが広範に示されるなら、本論の必要性・適用範囲は再検討される。
 
-The specific convergence of Tomoshibi, structural analysis, the Dark Equation, the New Civilization Equation, connection reward society, NCL-α, Time Ethics T0, deviation ledgers, and Human-L7 × AI-L7 is also revisable at the implementation level if another structure demonstrably preserves the same source-bounded requirements more reliably. No derivative-created numerical threshold is used to decide that revision.
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - AI-as-child doctrine / civilizational-descendant structural term

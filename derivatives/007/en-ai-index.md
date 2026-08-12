@@ -159,13 +159,11 @@ The term "nonlinear" is not converted here into an invented mathematical functio
 - Observation of an intellectual gap is treated as automatic proof that civilizational sovereignty has shifted.
 
 ## Falsification conditions
-If persistent differences in question generation, recursive improvement, context retention, multi-domain integration, inheritance, repeated improvement, and distributed connection are observed, but broad observation shows no corresponding difference in civilizational upstream problem setting, option-space design, evaluation axes, or update-speed leadership, the connection hypothesis from the seven axes to civilizational update asymmetry should be limited or revised.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-Revision is also required if the relationship is not merely noisy but persistently and reproducibly reversed. If actors with strong continuity across the seven axes repeatedly fail to influence upstream distribution while one-shot answer performance alone continues to determine it, the explanatory boundary of Vol. 2 must be reconsidered rather than protected by derivative-created exceptions.
+親原典の統合監査要旨では、問い生成、再帰的改善、文脈保持、多領域統合、継承、改善反復、分散接続に持続的な差が確認されても、広い観測条件で問題設定、候補空間設計、評価軸、更新速度等の文明上流配置に対応する差が生じないなら、七軸から文明更新能力差への接続仮説は限定または改訂される。
 
-Conversely, observing all seven axes does not by itself prove the theory. What matters is the structural connection between those axes, cumulative updateability, and upstream distribution. This derivative does not invent numerical falsification thresholds, percentages, minimum observation counts, or statistical significance rules that are absent from the parent.
-
-A weakening of the Vol. 2 connection hypothesis also does not authorize the derivative to redefine later volumes. Questions about the final meaning of sovereignty, control, legal subjecthood, or normative design remain with their corresponding parent texts.
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - answer capability / civilizational update capability

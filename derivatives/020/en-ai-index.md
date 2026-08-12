@@ -112,9 +112,11 @@ The parent does not define partisan scores, propaganda percentages, resonance-ri
 - Equate majority agreement or lack of opposition with health.
 
 ## Falsification conditions
-If a single topic or emotion is repeatedly dominant and Occ(K) appears high, yet V remains available, A remains high, H and R stay traceable, counterexamples and revision continue to enter, and judgment quality and correctability improve, the basis for classifying the state as Res weakens.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-If Damping, Cooling, Degeneration, H reconnection, R reassignment, and True-U remeasurement fail to restore verification bandwidth and instead increase exclusion or judgment degradation, the recovery bundle or scope requires revision. Do not invent numeric thresholds merely to create falsification.
+親原典の統合監査要旨では、特定話題や感情が高頻度で反復され、見かけ上Occ(K)が高い状態でも、Vが維持され、Aが高く、一次ソースHと責任Rが追跡可能で、反例・修正・異論が継続的に流入し、判断精度・修正可能性が高まるなら、Resとみなす根拠は弱まる。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - agreement / Res

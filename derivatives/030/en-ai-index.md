@@ -66,9 +66,11 @@ The reading fails if reduced to appraisal comparison, selling tips, a high-price
 It also fails if it asserts “more buyers always means a higher price,” “fewer calls always means a higher price,” or treats one successful sale as proof of superior market design. Removing the public-deconstruction meta perspective also breaks the Nakagawa Structural Reading frame.
 
 ## Falsification conditions
-If increasing competition while lowering seller burden repeatedly fails to improve comparison capacity, effective competition, or premature-compromise behavior, the simultaneous-condition model should be revised.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-Conversely, if a single buyer repeatedly produces equally strong price-formation conditions because information asymmetry is effectively removed, the necessity of multi-buyer competition should be reconsidered. If sellers consistently complete comparison despite high burden, the role assigned to burden should also be revised.
+親原典の統合監査要旨では、競争参加者を増やし、売却者負担を下げても、比較可能性・価格形成の競争性・早期妥協の減少が継続的に観測できないなら、競争＋低負担という同時成立モデルは改訂対象となる。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - vehicle value vs. price-formation conditions

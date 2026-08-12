@@ -120,9 +120,11 @@ The parent defines no universal effort-volume KPI, success probability, or numer
 - Failure is explained only as insufficient effort while plan and conditions are exempted from inspection.
 
 ## Falsification conditions
-Where causal paths truly cannot be observed in advance and exploratory execution is the principal way to learn the result, older effort forms retain conditional rationality. This does not falsify the theory; it identifies a condition where the older model still applies.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
 
-Conversely, if making purpose, causal line, establishment conditions, verification conditions, and correction conditions explicit repeatedly fails to improve explanatory power, learning, or revisability across broad observations, while effort volume alone consistently explains results sufficiently, the scope of this theory should be limited or revised. Do not convert this falsification boundary into a derivative-created numerical threshold.
+親原典の統合監査要旨では、因果が実際に事前観測不能で、探索投入そのものが結果を知るための主要な方法である領域では、旧型努力の条件付き合理性が残る。この条件を消して「現代では量は不要」と結論してはならない。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - effort denial / redefining conditions for valid effort

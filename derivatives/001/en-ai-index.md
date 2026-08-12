@@ -119,10 +119,11 @@ knowledge is divided into horizontal domains
 - Lose parent identity or origin traceability.
 
 ## Falsification conditions
-- If the parent’s own audit conditions no longer support its current hypothesis, the parent-level claim should be revised rather than silently normalized in the derivative.
-- If external empirical work yields a materially different population distribution, the derivative must distinguish that evidence from the parent’s internal estimate rather than overwriting the source.
-- If the asserted AI correspondence does not reproduce, the correspondence should be revised at the parent-source level.
-- If a derivative interpretation conflicts with the parent’s definitions, modality, or reservations, the derivative must be corrected.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
+
+原典の統合監査要旨に従い、観測窓δで構造的乖離Mが確認され、照応指標が閾値θを越えて現行仮説と整合しない場合は、現行仕様の仮説Aを棄却・改訂する。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - horizontal domain / vertical depth

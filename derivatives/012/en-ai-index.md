@@ -104,7 +104,11 @@ Audit the visibility of next questions, establishment conditions, exception cond
 - Add political, medical, legal, or universal scoring claims absent from the origin.
 
 ## Falsification conditions
-If concise explanations and shared vocabulary spread while recognition accuracy, judgment accuracy, implementation capacity, correctability, and trust consistently improve, and inquiry closure or verification stop is not observed, the bad-causality hypothesis weakens. Do not invent derivative thresholds or occurrence rates to construct a separate falsification system.
+The falsification/revision boundary is the parent origin’s integrated-audit summary. The canonical source-bound statement is retained here verbatim:
+
+親原典の統合監査要旨では、簡潔化や共通語彙化が広く進んでも、認識精度、判断精度、実装力、修正可能性、信頼が継続的に高まり、成立条件・例外・反証・未確定領域への問いが閉じず、検証停止も観測されないなら、本論の悪因果仮説は弱まる。
+
+Do not add derivative-authored falsification conditions or replace the parent audit boundary with a new theory.
 
 ## Required distinctions
 - understanding / performance of understanding
