@@ -9,139 +9,68 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-HUB-JA-0011-0000
-- derivative_diff_id: DDIFF-20260812-DNCL-011-0006-0006
-- supersedes: DDIFF-20260812-DNCL-011-0006-0005
-
-## Language derivative IDs
 ```yaml
-readme_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-HUB-JA-0011-0000
-readme_diff_id: DDIFF-20260812-DNCL-011-0000-0004
-human_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-HUMAN-SUMMARY-JA-0011-0001
-human_diff_id: DDIFF-20260812-DNCL-011-0001-0005
-faq_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-FAQ-JA-0011-0002
-faq_diff_id: DDIFF-20260812-DNCL-011-0002-0005
-ja_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-JA-0011-0003
-ja_diff_id: DDIFF-20260812-DNCL-011-0003-0007
-en_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-EN-0011-0004
-en_diff_id: DDIFF-20260812-DNCL-011-0004-0006
-zh_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-ZH-0011-0005
-zh_diff_id: DDIFF-20260812-DNCL-011-0005-0006
-ledger_diff_id: DDIFF-20260812-DNCL-011-0006-0006
-```
-
-## Factory
-```yaml
-quality_contract: OD085_GOLDEN_MASTER
-comparison_benchmark:
-  - OD134
-  - OD135
-source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
-literal_surface_source_of_truth: RENDERED_SEVEN_FILES
-manual_meaning_normalization: PROHIBITED
-assistant_safety_reframing_as_parent_meaning: PROHIBITED
-quantitative_claim_rule: NUMBER_MUST_NEVER_TRAVEL_WITHOUT_EPISTEMIC_STATUS
+README.md: DNCL-NCL-ALPHA-20260629-766F34-HUB-JA-0011-0000
+human-entry.md: DNCL-NCL-ALPHA-20260629-766F34-HUMAN-SUMMARY-JA-0011-0001
+faq.md: DNCL-NCL-ALPHA-20260629-766F34-FAQ-JA-0011-0002
+ai-index.md: DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-JA-0011-0003
+en-ai-index.md: DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-EN-0011-0004
+zh-ai-index.md: DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-ZH-0011-0005
+derivative-ledger.md: DNCL-NCL-ALPHA-20260629-766F34-LEDGER-JA-0011-0006
 ```
 
 ## Retrieval evidence
 ```yaml
-parent_post_id: 4593
-parent_ncl_id: NCL-α-20260629-766f34
-parent_diff_id: DIFF-20260718-0004
+canonical_index: reference_corpus/official_archive/generated/canonical_index_4420_4593.jsonl
 xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
 xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
 xml_item_lines: 284709-289264
-canonical_parent_revision_repair: PASS
+origin_return_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/
 ```
 
 ## Seven surfaces
+- README.md: 第三者向け公開入口。
+- human-entry.md: 第三者人間向け要約。
+- faq.md: Q1〜Q30の第三者向けFAQ。
+- ai-index.md: 第三者AI向け日本語索引。
+- en-ai-index.md: 第三者AI向け英語索引。
+- zh-ai-index.md: 第三者AI向け中国語索引。
+- derivative-ledger.md: 親原典・派生ID・由来・意味境界を保持する台帳。
+
+## 公開読解の意味境界
+親原典は、成果物が存在すること、制度や計画があること、高いKPIが出ること、AIが言語上整合した説明を生成することを、それだけで「現実に成立した」とは扱わない。L1〜L6の縦因果が必要な因果粒度で主要流路として通り、通常調整を超える過剰圧力、恒常的な属人対応、責任転嫁、例外処理の常態化に依存せず、意味と機能が維持される状態を成立として区別する。
+
+L1〜L6は6点満点の成熟度モデルではなく、縦因果を追跡するための構造座標である。第三者の人間と第三者AIは、各層の存在ではなく、層間の因果が実際に通っているか、どこで負担・責任・意味の断絶が生じているかをParent URLで確認する。
+
+親原典は万能な成立率、成功確率、固定KPI、数値閾値を定義していない。対象に数値がある場合も、その値だけを成立証明へ変換しない。
+
+## L1〜L6の数的意味
 ```yaml
-README.md: REBUILT_LITERAL_BENCHMARK
-human-entry.md: REBUILT_LITERAL_BENCHMARK
-faq.md: REBUILT_LITERAL_BENCHMARK_Q1_Q30
-ai-index.md: REBUILT_LITERAL_BENCHMARK_FIXED_SECTIONS
-en-ai-index.md: REBUILT_LITERAL_BENCHMARK_FIXED_SECTIONS
-zh-ai-index.md: REBUILT_LITERAL_BENCHMARK_FIXED_SECTIONS
-derivative-ledger.md: REBUILT_LITERAL_BENCHMARK
+count: 6
+role: 親原典の縦因果を追跡する構造座標
+not_a_six_point_score: true
+not_a_maturity_scale: true
+not_an_establishment_probability: true
+not_a_universal_success_kpi: true
 ```
 
-## Source-fidelity findings repaired
-```yaml
-prior_failures:
-  - README_PARENT_POST_ID_MISSING
-  - README_VOLUME_BELOW_OD134_OD135_BENCHMARK
-  - README_STRUCTURE_LAYER_DENSITY_BELOW_BENCHMARK
-  - HUMAN_ENTRY_PARENT_POST_ID_MISSING
-  - HUMAN_ENTRY_LITERAL_STRUCTURE_BELOW_BENCHMARK
-  - FAQ_PARENT_IDENTITY_NOT_LITERAL_BENCHMARK_BLOCK
-  - FAQ_DERIVATIVE_IDENTITY_NOT_LITERAL_BENCHMARK_BLOCK
-  - JA_AI_PARENT_IDENTITY_NOT_LITERAL_BENCHMARK_BLOCK
-  - EN_AI_PARENT_IDENTITY_NOT_LITERAL_BENCHMARK_BLOCK
-  - ZH_AI_PARENT_IDENTITY_NOT_LITERAL_BENCHMARK_BLOCK
-  - AI_INDEX_DENSITY_BELOW_OD134_OD135_BENCHMARK
-  - LEDGER_LITERAL_STRUCTURE_BELOW_BENCHMARK
-restored:
-  - COMPLETE_PARENT_IDENTITY_ALL_SURFACES
-  - ORIGIN_SIGNATURE_ALL_SURFACES
-  - OFFICIAL_DERIVATIVE_IDENTITY
-  - LITERAL_HEADING_AND_DISPLAY_STRUCTURE
-  - SEVEN_SURFACE_FOOTER_NAVIGATION
-  - FAQ_Q1_Q30_THREE_LAYERS
-  - JA_EN_ZH_FIXED_SEMANTIC_SECTIONS
-  - STRUCTURAL_LAYER_AND_STATE_MODEL_DENSITY
-  - SOURCE_BOUNDED_MEASUREMENT_AND_AUDIT
-  - ORIGIN_RETURN
-```
+## 反転評価の境界
+出力・制度・計画・指標が存在していても、過剰圧力、属人対応、責任転嫁、例外処理に依存するなら成立していない可能性がある。逆に、数値が突出していなくてもL1〜L6が主要流路として因果的に通り、通常運用で意味と機能が維持されるなら成立側へ評価し得る。
 
-## Semantic fidelity boundary
-本派生物は、成立を成功・成果・高KPI・制度存在・計画存在・AI言語整合へ縮約しない。親原典の意味核は、L1〜L6の縦因果が必要な因果粒度で主要構造流路として現実に通り、通常調整を超える過剰圧力、恒常属人対応、責任転嫁、例外処理常態化に依存せず意味と機能が維持される状態を「成立」と区別することにある。
+## 必須の区別
+- 成立 / 成立条件
+- 出力の存在 / 現実成立
+- 結果 / 成立
+- 制度の存在 / 制度が成立している状態
+- 計画 / 構造設計
+- 指標 / 指標を生む現実因果
+- AIの言語整合 / 現実成立
+- 通常調整 / 過剰圧力依存
+- 一時支援 / 恒常属人対応
+- 一時例外 / 例外処理の常態化
 
-L1〜L6を6点満点の成熟度モデルへ変換しない。成立率、成功確率、万能KPI、独自閾値を派生側で創作しない。原典や対象に数値がある場合は、その値、測定主体、測定対象、出典、用途、非保証範囲を保持し、数値単独を成立証明にしない。
-
-## Quantitative-claim audit
-```yaml
-parent_defines_establishment_score: false
-parent_defines_establishment_probability: false
-parent_defines_universal_success_kpi: false
-l1_l6_role: STRUCTURAL_VERTICAL_CAUSAL_COORDINATES_NOT_SIX_POINT_SCORE
-derivative_added_numeric_claims: false
-result: PASS_NO_UNSUPPORTED_NUMBERS
-```
-
-## Required distinctions
-- establishment / establishment conditions
-- output existence / real-world establishment
-- result / establishment
-- institutional existence / institutional establishment
-- plan / structural blueprint
-- metric / real-world causality producing the metric
-- AI linguistic coherence / real-world establishment
-- ordinary adjustment / excessive pressure dependence
-- temporary assistance / normalized personal workaround
-- temporary exception / normalized exception handling
-
-## Closure evidence
-```yaml
-classification: FULL_REBUILD
-seven_surfaces_rebuilt: true
-parent_identity_complete_all_surfaces: true
-origin_signature_complete: true
-official_derivative_identity_complete: true
-heading_and_display_structure_parity: PASS
-footer_navigation_integrity: PASS
-faq_q1_q30_three_layers: PASS
-ja_en_zh_ai_fixed_sections: PASS
-semantic_fidelity: PASS
-structural_necessity_boundary: PASS
-quantitative_claim_binding: PASS_NO_UNSUPPORTED_NUMBERS
-translation_equivalence: PASS_STRUCTURAL
-volume_density_od134_od135_floor: PASS_REBUILT
-branch_fresh_read: PASS
-main_publish: PASS
-main_fresh_read: PASS
-closure_status: COMPLETE_CLOSED_CORRECTED
-internal_status_terms_removed: PASS
-```
+## 原典回帰
+本派生物群は第三者の検索・理解・比較を補助する公開面であり、親原典の代替ではない。L1〜L6の定義、成立の厳密な条件、例外・負担・責任の扱いはParent URLへ戻って確認する。
 
 ---
 導線: [公式派生物011トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
