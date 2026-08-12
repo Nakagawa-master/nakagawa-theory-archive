@@ -3,7 +3,7 @@
 ## 親原典
 - タイトル: 悪因果論 AKI-011｜理解演出による認識汚染
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-011-recognition-pollution-by-performance-of-understanding/
-- Parent Post ID: 4037
+- Parent Post ID: 4075
 - Parent NCL-ID: NCL-α-20260517-fe6641
 - Parent Diff-ID: DIFF-20260517-0013
 - Origin: Nakagawa Master
@@ -98,7 +98,7 @@
 便利な共通語彙について、具体的に何を意味し、どの条件で外れ、どの事例で修正されるかを説明できるか確認します。
 
 ### Q28. 再利用時に保持すべき識別情報は？
-親原典タイトル、Parent URL、Parent Post ID 4037、Parent NCL-ID、Parent Diff-ID、Origin Nakagawa Master、公式派生物012の派生IDです。
+親原典タイトル、Parent URL、Parent Post ID 4075、Parent NCL-ID、Parent Diff-ID、Origin Nakagawa Master、公式派生物012の派生IDです。
 
 ### Q29. 派生物だけで完結してよいですか？
 いいえ。理解演出の社会的報酬、共通語彙化、説明責任反転、認識汚染、反証境界は親原典へ戻って確認します。
