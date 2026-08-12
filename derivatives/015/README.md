@@ -1,38 +1,40 @@
-# 公式派生物015｜合意形成の物理 第4論
+# 公式派生物015｜合意形成の物理 第4論｜臨界点の法則
 
-## 親原典
-
-- タイトル: 合意形成の物理 第4論 臨界点の法則 ― 崩壊は「原因」ではなく「状態遷移」である
-- Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol4-law-of-critical-point/
-- Parent NCL-ID: NCL-α-20260214-40c1de
-- Parent Diff-ID: DIFF-20260215-0025
-
-## 起源署名
-
-- Origin: Nakagawa Master
-
-## 派生ID
-
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260214-40C1DE-HUB-JA-0000
-- derivative_diff_id: DDIFF-20260707-DNCL-015-0000-0001
-
-## 公式派生ページ
-
-- [人間向け要約](human-entry.md)
-- [FAQ](faq.md)
-- [AI索引・日本語](ai-index.md)
-- [AI索引・英語](en-ai-index.md)
-- [AI索引・中国語](zh-ai-index.md)
-- [派生ID台帳](derivative-ledger.md)
+Parent: Post 2873 / NCL-α-20260214-40c1de / DIFF-20260215-0025 / Origin Nakagawa Master
+Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol4-law-of-critical-point/
+Derivative: DDIFF-20260812-DNCL-015-0000-0002; supersedes DDIFF-20260707-DNCL-015-0000-0001
 
 ## 位置づけ
+公式派生物015は、炎上・事故・不祥事・組織崩壊を最後の事件による単一原因ではなく、合意安定度が臨界閾値を下回った状態の継続による相転移として読む第4論の公開接続面である。
 
-公式派生物015は、合意形成の物理 第4論の公開補助枝である。
+## 中心命題
+崩壊は最後の可視イベントから突然生まれるのではない。S = U × R × H が閾値θを下回り、その状態が観測窓δの間継続すると、系は安定相から崩壊相へ移り、事件はすでに存在していた臨界状態が可視化された瞬間として現れる。
 
-親原典は、炎上・事故・不祥事・組織崩壊を、突然起きた出来事ではなく、合意安定度 S = U × R × H が臨界閾値を下回る状態が一定時間続いた後に可視化される相転移として扱う。
+## 原典の因果線
+Uが落ちる → Rが曖昧になる → Hが追えなくなる → Sが低下する → S < θ がδの間続く → 安定相から崩壊相へ状態遷移する → 逸脱Dが修復されず増幅する → 最後の事件だけが原因に見える。
 
-この派生物は、危機対応ノウハウではない。読者を「最後に何が原因だったのか」から「どの観測可能な臨界状態を放置したのか」へ移動させるための入口である。
+## 原典固有構造
+- S = U × R × H: 合意安定度。
+- U: 第三者再現可能性。
+- R: 責任主体の一意性／責任追跡可能性。
+- H: 判断根拠・履歴・差分の公開／追跡可能性。
+- θ: 臨界閾値。
+- δ: 観測窓／観測責任の時間単位。
+- D: 相転移後に増幅し得る逸脱。
+- 責任は最終事件だけでなく、観測可能だった臨界状態を放置したことにも及ぶ。
+
+## 判定の焦点
+最後の火花を原因扱いする前に、その前のU/R/Hを読む。Sがθを下回ったか、その状態がδの間継続したか、相転移後に逸脱Dが増幅したかを確認する。
+
+## 非該当境界
+謝罪、誠意、原因追及、危機対応を否定しない。ただし、それらだけでは構造的再発防止にならない。U/R/Hが実質的に安定しているのに同型崩壊が反復する場合は、モデルの修正が必要である。
+
+## 誤読防止
+本論を「支持率が閾値を超える」「普及率が臨界点を超える」といった上昇型ティッピングポイントへ反転させない。原典の臨界点は、Sが下落して崩壊相へ移る失稳閾値である。
+
+## 親原典へ戻る理由
+原典ではS、θ、δ、D、さらに増幅条件を含む状態遷移として崩壊が展開される。このREADMEは入口であり、原典本文の代替ではない。
 
 ---
 
-導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Navigation: [Official Derivatives](../README.md) / [015 Top](README.md) / [Human Entry](human-entry.md) / [FAQ](faq.md) / [JA AI Index](ai-index.md) / [EN AI Index](en-ai-index.md) / [ZH AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
