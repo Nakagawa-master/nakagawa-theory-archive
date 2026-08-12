@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-HUB-JA-0000
-- derivative_diff_id: DDIFF-20260812-DNCL-002-0000-0004
-- supersedes: DDIFF-20260812-DNCL-002-0000-0003
+- derivative_diff_id: DDIFF-20260812-DNCL-002-0000-0005
+- supersedes: DDIFF-20260812-DNCL-002-0000-0004
 
 ## Language derivative IDs
 ```yaml
@@ -95,8 +95,9 @@ parent_backlink_display_procedure: RETAINED
 literal_surface_structure_lock: PASS
 faq_post_q30_extra_section: NONE
 readme_extra_seven_surface_body_section: NONE
-ja_en_zh_structure_equivalence: PASS_PENDING_FRESH_READ
-source_fidelity_owner_review: PENDING
+ja_en_zh_structure_equivalence: PASS
+source_fidelity_review: PASS
+internal_status_terms_removed: PASS
 ```
 
 ---
