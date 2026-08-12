@@ -14,51 +14,109 @@
 - derivative_diff_id: DDIFF-20260812-DNCL-001-0000-0002
 - supersedes: DDIFF-20260706-DNCL-0000-0001
 
-## Source verification
+## Language derivative IDs
+
+```yaml
+hub_ja:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-JA-0000
+  derivative_diff_id: DDIFF-20260812-DNCL-001-0000-0002
+human_ja:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUMAN-SUMMARY-JA-0001
+  derivative_diff_id: DDIFF-20260812-DNCL-001-0001-0002
+faq_ja:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-FAQ-JA-0002
+  derivative_diff_id: DDIFF-20260812-DNCL-001-0002-0002
+ai_ja:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-AI-INDEX-JA-0001-0003
+  derivative_diff_id: DDIFF-20260812-DNCL-001-0003-0004
+ai_en:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-AI-INDEX-EN-0001-0004
+  derivative_diff_id: DDIFF-20260812-DNCL-001-0004-0003
+ai_zh:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-AI-INDEX-ZH-0001-0005
+  derivative_diff_id: DDIFF-20260812-DNCL-001-0005-0003
+```
+
+## Factory
+
+```yaml
+reference_structure:
+  - OD134
+  - OD135
+minimum_contract_reference: OD085
+repair_campaign: OD001_OD133_STRUCTURAL_LITERAL_REAUDIT_2026-08-12
+mode: SINGLE_WRITER_SINGLE_CURSOR_FAIL_CLOSED
+```
+
+## Retrieval evidence
 
 ```yaml
 verification_date_jst: 2026-08-12
 brain_vault_semantic_closure: LOT4_OD001_OD020_SEMANTIC_FIDELITY_CLOSURE_2026-08-12.md
 canonical_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/
+parent_ncl_id: NCL-α-20251124-e4c70c
+parent_diff_id: DIFF-20251124-0012
+origin: Nakagawa Master
 canonical_identity: PASS
 source_retrieval: PASS
 semantic_result: PASS_SOURCE_VERIFIED
-structure_golden_master: OD085
-structure_repair: PASS
 ```
 
-## Current seven surfaces
+## Seven surfaces
 
 ```yaml
-README.md: PASS_OD085_STRUCTURE_DENSITY
-human-entry.md: PASS_OD085_STRUCTURE_DENSITY
-faq.md: PASS_Q1_Q30_THREE_LAYER
-ai-index.md: PASS_FIXED_AI_STRUCTURE
-en-ai-index.md: PASS_FIXED_AI_STRUCTURE
-zh-ai-index.md: PASS_FIXED_AI_STRUCTURE
-derivative-ledger.md: PASS_CLOSURE_EVIDENCE
+README.md: PRESENT
+human-entry.md: PRESENT
+faq.md: PRESENT
+ai-index.md: REBUILT_LITERAL_FIXED_STRUCTURE_2026-08-12
+en-ai-index.md: PRESENT_FIXED_STRUCTURE
+zh-ai-index.md: PRESENT_FIXED_STRUCTURE
+derivative-ledger.md: REBUILT_LITERAL_FIXED_STRUCTURE_2026-08-12
 ```
 
-## Surface identities
-
-- README.md: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-JA-0000 / DDIFF-20260812-DNCL-001-0000-0002
-- human-entry.md: DNCL-NCL-ALPHA-20251124-E4C70C-HUMAN-SUMMARY-JA-0001 / DDIFF-20260812-DNCL-001-0001-0002
-- faq.md: DNCL-NCL-ALPHA-20251124-E4C70C-FAQ-JA-0002 / DDIFF-20260812-DNCL-001-0002-0002
-- ai-index.md: DNCL-NCL-ALPHA-20251124-E4C70C-AI-INDEX-JA-0001-0003 / DDIFF-20260812-DNCL-001-0003-0003
-- en-ai-index.md: DNCL-NCL-ALPHA-20251124-E4C70C-AI-INDEX-EN-0001-0004 / DDIFF-20260812-DNCL-001-0004-0003
-- zh-ai-index.md: DNCL-NCL-ALPHA-20251124-E4C70C-AI-INDEX-ZH-0001-0005 / DDIFF-20260812-DNCL-001-0005-0003
-
-## Closure
+## Formatting parity
 
 ```yaml
 parent_identity_all_surfaces: PASS
-origin_return_all_surfaces: PASS
-seven_surface_navigation: PASS
+origin_signature_all_surfaces: PASS
 faq_q1_q30: PASS
 faq_three_layers: PASS
-ai_ja_en_zh_semantic_boundary: PASS
-od085_structure_contract: PASS
-closure_status: PASS_P0_REPAIRED
+readme_global_footer: PASS
+non_readme_numbered_local_footer: PASS
+ai_required_sections_ja: PASS_AFTER_REBUILD
+ai_required_sections_en: PASS
+ai_required_sections_zh: PASS
+ledger_required_sections: PASS_AFTER_REBUILD
+```
+
+## Semantic and density coverage
+
+```yaml
+central_thesis: PASS
+causal_chain: PASS
+structural_layers: PASS
+state_model: PASS
+applications: PASS
+measurements: PASS
+validity_conditions: PASS
+failure_conditions: PASS
+falsification_conditions: PASS
+required_distinctions: PASS
+prohibited_misreadings: PASS
+faq_density: PASS
+ja_en_zh_semantic_boundary: PASS
+origin_return: PASS
+structural_extension_boundary: PASS_SOURCE_FAITHFUL
+```
+
+## Navigation and closure
+
+```yaml
+seven_surface_navigation: PASS
+literal_surface_read: PASS
+reference_134_135_structure: PASS_AFTER_REBUILD
+od085_minimum_contract: PASS
+closure_status: PASS_STRUCTURAL_LITERAL_REAUDIT_OD001
 ```
 
 ## 原典回帰
@@ -67,4 +125,4 @@ closure_status: PASS_P0_REPAIRED
 
 ---
 
-導線: [公式派生物001トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物001トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

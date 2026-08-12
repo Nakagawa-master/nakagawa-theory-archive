@@ -1,6 +1,17 @@
 # FAQ｜公式派生物005
 
-Parent: Post 3931 / NCL-α-20260511-e243be / Diff DIFF-20260511-0009 / Origin Nakagawa Master
+## 親原典
+- タイトル: 悪因果論 AKI-001｜責任なき問題提起
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/
+- Parent Post ID: 3931
+- Parent NCL-ID: NCL-α-20260511-e243be
+- Parent Diff-ID: DIFF-20260511-0009
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260511-E243BE-FAQ-JA-0002
+- derivative_diff_id: DDIFF-20260812-DNCL-005-0002-0003
+- supersedes: DDIFF-20260812-DNCL-005-0002-0002
 
 ## 初心者向け｜Q1〜Q10
 ### Q1. 責任なき問題提起とは何ですか？
@@ -33,7 +44,7 @@ Parent: Post 3931 / NCL-α-20260511-e243be / Diff DIFF-20260511-0009 / Origin Na
 ### Q10. なぜ普通の人にも関係しますか？
 仕事、政治、教育、SNS、メディア、AI利用など、私たちは日常的に問題を語るからです。問題提起の質が低いと、社会全体の修復力と信用資産が摩耗します。
 
-## 実務・構造理解｜Q11〜Q20
+## 実務者向け｜Q11〜Q20
 ### Q11. まず何を確認すべきですか？
 その問題がどこにあるのか、何が観測事実で何が仮説なのかを確認します。次に原因、主体、代償、初手、反証へ進みます。
 
