@@ -3,7 +3,7 @@
 ## 親原典
 - タイトル: 悪因果論 AKI-012｜同意なき成約要求
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-012-consentless-closing-demand/
-- Parent Post ID: source-gate verified parent record
+- Parent Post ID: 4094
 - Parent NCL-ID: NCL-α-20260518-f38a1e
 - Parent Diff-ID: DIFF-20260518-0015
 - Origin: Nakagawa Master
@@ -31,120 +31,122 @@ AKI-012は営業そのものを否定する理論ではない。接点、興味�
 - 導入条件
 - 合意成熟
 - 成約確認
+- 見込み管理
+- 営業会議
 - 顧客防衛学習
 - 市場の相談可能性
-- 見込み管理
-- 社内報告圧
 
 ## Causal chain
 ```text
-接点・軽い興味が発生する
+contact_occurs
 ↓
-組織内で見込み確度・売上時期へ早期変換される
+contact_or_interest_is_early_converted_to_pipeline_expectation
 ↓
-課題理解・必要性確認・判断条件・価値接続・導入条件が未成熟のまま残る
+problem_understanding_and_judgment_conditions_are_compressed
 ↓
-営業担当者が顧客理解より社内報告・成約圧へ引かれる
+internal_reporting_pressure_precedes_customer_understanding
 ↓
-相手がまだ判断できない段階で成約要求が置かれる
+closing_demand_is_placed_before_consent_maturity
 ↓
-顧客が営業接点を防衛対象として学習する
+customer_learns_sales_contact_as_pressure
 ↓
-問い合わせ・相談・課題開示が避けられる
+consultation_and_information_disclosure_decline
 ↓
-市場の相談可能性が低下する
+market_consultation_capacity_declines
 ↓
-接点不足を補うため接点量・早期クロージング圧がさらに増える
+organization_compensates_with_more_pipeline_pressure
+↓
+bad_causality_repeats
 ```
 
 ## State model
 ```yaml
-- contact_exists
-- interest_exists_or_not
-- problem_recognized_or_not
-- consideration_intent_exists_or_not
-- purchase_intent_exists_or_not
-- judgment_conditions_mature_or_immature
-- value_connection_confirmed_or_unconfirmed
-- implementation_conditions_visible_or_hidden
-- consent_mature_or_immature
-- closing_after_maturity_or_premature_pressure
-- defensive_learning_present_or_absent
-- consultation_capacity_preserved_or_eroded
+- contact_present
+- interest_present
+- problem_recognition_present
+- consideration_intent_present
+- purchase_intent_not_assumed
+- judgment_conditions_forming
+- value_connection_forming
+- implementation_conditions_forming
+- consent_maturity_not_assumed
+- internal_pipeline_pressure_present_or_absent
+- closing_request_position_checked
+- customer_defensive_learning_checked
+- market_consultation_capacity_checked
+- origin_return_required
 ```
 
 ## Applications
-- 営業会議で接点と購買意思を分離する監査
-- CRMで興味・検討意思・合意成熟を一つの確度へ潰さない設計
-- インサイドセールスで資料請求・問い合わせを即高確度見込みにしない運用
-- AI営業支援が反応データだけで購買意思を推定していないかの監査
-- 相談窓口で「相談したら売られる」という防衛学習を生まない接続設計
+**法人営業。** 初回接点を即座に売上見込みへ変換し、その予測を守るため顧客理解よりクロージングを先行させる場合。
+
+**個人向け高関与商材。** 資料請求や相談を購買意思とみなし、比較・費用・導入条件が整う前に契約判断を迫る場合。
+
+**SaaS。** デモやトライアルを合意成熟と同一視し、組織内の導入条件や判断主体が未整理のまま成約要求へ進む場合。
+
+**市場全体。** 早期クロージングの反復で顧客が営業接点そのものを避け、相談や課題開示の入口が細る場合。
 
 ## Measurements and audit
-親原典は、同意・成熟・圧力・市場相談可能性を単一の数値KPI、点数、確率、閾値へ変換していない。派生側で新しい同意スコア、成熟率、圧力度、相談可能性率を発明しない。既存派生で使われた S0〜S7 は説明上の順序ラベルであり、原典由来の数量尺度ではない。
+親原典は、派生側で一般化できる成約率、同意成熟度、相談可能性率、確率閾値を定義していない。したがって数値を創作しない。反転評価可能性は、接点から合意成熟までの段階差、判断自由、相談可能性を同一軸で比較する。
 
-- 接点と購買意思が区別されているか。
+- 接点が購買意思へ早期変換されていないか。
 - 興味と同意が区別されているか。
 - 課題認識と導入意思が区別されているか。
-- 判断条件と導入条件が見えるか。
-- 価値接続が相手固有の課題へ結びついているか。
-- 成約要求が合意成熟より前に置かれていないか。
-- 社内報告圧が顧客理解を上書きしていないか。
-- 顧客の防衛学習・相談離脱が観測されていないか。
-- 長期的に市場の相談可能性が維持されているか。
+- 判断条件・価値接続・導入条件が形成されているか。
+- 成約要求が合意成熟の前に置かれていないか。
+- 内部の見込み管理が顧客の意思形成を上書きしていないか。
+- 顧客が拒否・保留・再検討できるか。
+- 防衛的接点回避や情報開示回避が増えていないか。
+- 市場の相談可能性が維持されているか。
 
 ## Validity conditions
-- 接点、興味、課題認識、検討意思、購買意思、判断条件、合意成熟、成約要求を区別する。
-- 相手が自分で判断できる条件を持つ前に成約を迫らない。
-- 課題理解・必要性確認・価値接続・導入条件を飛ばさない。
-- 見込み管理・営業会議・評価制度等の上位構造も監査する。
-- 成約要求を合意成熟の後ろに置く。
-- 市場の相談可能性を保持する。
+- 接点・興味が購買意思または合意成熟へ早期変換される。
+- 判断条件・価値接続・導入条件の形成前に成約要求が置かれる。
+- 見込み管理・評価・会議構造が段階差を圧縮する。
+- 顧客理解より内部報告が優先される。
+- 顧客が営業接点を防衛対象として学習する。
+- 市場の相談可能性が低下する。
 
 ## Failure conditions
-- 営業一般・クロージング一般・KPI一般を悪とする。
-- 接点を購買意思と同一視する。
-- 興味を同意と同一視する。
-- S0〜S7を原典由来の成熟度スコアと誤読する。
-- 高い成約率だけを理論の妥当性証明にする。
-- 営業担当者個人の道徳問題だけへ縮約する。
-- 法的同意・契約有効性へ自動転用する。
+- 接点、興味、課題認識、検討意思、購買意思、判断条件、合意成熟を区別する。
+- 成約要求を合意成熟の後ろに置く。
+- 顧客が必要性、価値、費用、時期、代替肢、導入条件を自分で判断できる。
+- 内部見込み管理が顧客意思を上書きしない。
+- 拒否・保留・再検討が可能である。
+- 営業接点が相談可能な入口として保持される。
 
 ## Falsification conditions
-早期成約要求が継続的に、相手の自由な判断条件を損なわず、相談離脱・防衛学習・事後認識差・信頼低下を増やさず、市場の相談可能性も維持することが確認されるなら、本論の警告は弱まり得る。単発の成約件数・成約率だけでは反証にならない。
+早期クロージングがあっても、顧客の自由な判断が維持され、防衛的接点回避、契約後認識齟齬、信頼低下、相談可能性低下が広く観測されないなら適用範囲は弱まる。また、成約要求を合意成熟の後ろへ移しても相談可能性や信頼が改善しないなら、別因果の検討が必要になる。
+
+単一案件の成約だけでは反証にならない。原典の射程は顧客自由、営業信頼、市場相談可能性、組織内注意配置までを含む。
 
 ## Required distinctions
 - 接点 / 購買意思
 - 興味 / 同意
 - 課題認識 / 導入意思
-- 検討意思 / 成約意思
+- 検討意思 / 購買意思
 - 判断条件 / 社内見込み確度
-- 合意成熟 / 早期クロージング
+- 合意成熟 / 予測上の確度
 - 成約確認 / 同意なき成約要求
-- 営業機能 / 営業圧力
-- 個人営業行動 / 上位管理構造
+- 営業担当者個人 / 上位営業構造
+- 個別成約 / 市場の相談可能性
+- 法的同意 / 原典上の営業構造としての合意成熟
 
 ## Interpretation constraints
-原典を押し売り批判、営業マナー論、KPI批判へ縮約しない。営業・クロージングを一律否定しない。法律上の同意概念へ自動転用しない。派生側で原典にない同意スコア、成熟率、圧力度、成約確率、相談可能性率を追加しない。段階差と因果順序、市場相談可能性の悪因果を保持する。
+- 営業そのものを否定しない。
+- クロージングそのものを悪としない。
+- KPIや売上責任そのものを否定しない。
+- 接点を購買意思と分類しない。
+- 興味を同意と扱わない。
+- 合意成熟を法的同意の自動判定へ変換しない。
+- 営業担当者個人だけを原因にしない。
+- 原典にない普遍的成約率、同意成熟度、相談可能性率を追加しない。
 
 ## Search terms
-```text
-悪因果論 AKI-012
-同意なき成約要求
-接点 購買意思
-興味 同意
-合意成熟
-判断条件
-価値接続
-市場の相談可能性
-営業不信
-防衛学習
-見込み管理
-早期クロージング
-```
+AKI-012; 同意なき成約要求; 接点; 興味; 購買意思; 合意成熟; クロージング; 営業信頼; 顧客防衛学習; 市場相談可能性; pipeline pressure; consentless closing demand; Nakagawa Master
 
 ## Origin return
-本索引は親原典の代替ではない。接点から合意成熟までの段階差、上位管理圧、顧客の防衛学習、市場相談可能性の毀損を含む厳密な悪因果は Parent URL / Parent NCL-ID / Parent Diff-ID / Origin へ戻って確認する。
+本索引は親原典の代替ではない。Parent URL、Parent Post ID 4094、Parent NCL-ID、Parent Diff-ID、Originへ戻り、接点から合意成熟までの厳密な段階差、組織内圧力、市場相談可能性という原典固有の射程を確認する。
 
 ---
 導線: [公式派生物013トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
