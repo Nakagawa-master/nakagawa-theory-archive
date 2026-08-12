@@ -1,63 +1,41 @@
 # 公式派生物016｜派生ID台帳
 
-Parent title: 合意形成の物理 第7論  合意形成インフラ ― 統治とは「観測帯域」の設計である
+## Parent identity
+- Parent title: 合意形成の物理 第7論｜合意形成インフラ ― 統治とは「観測帯域」の設計である
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol7-infrastructure-of-governance/
+- Parent NCL-ID: NCL-α-20260215-198686
+- Parent Diff-ID: DIFF-20260222-0022
+- Origin: Nakagawa Master
 
-Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol7-infrastructure-of-governance/
+## Derivative identity
+- README.md: DDIFF-20260812-DNCL-016-0000-0002
+- human-entry.md: DDIFF-20260707-DNCL-016-0001-0001
+- faq.md: DDIFF-20260812-DNCL-016-0002-0002
+- ai-index.md: DDIFF-20260812-DNCL-016-0003-0003
+- en-ai-index.md: DDIFF-20260812-DNCL-016-0004-0003
+- zh-ai-index.md: DDIFF-20260812-DNCL-016-0005-0003
 
-Parent NCL-ID: NCL-α-20260215-198686
+## Lineage and source verification
+Source gate state: canonical_identity_xml_provenance_live_origin_and_six_surface_semantics_verified.
 
-Parent Diff-ID: DIFF-20260222-0022
+Brain Vault canonical index resolves post 2941. XML locator: `reference_corpus/official_archive/source/wordpress_export_latest.xml#L181259-L183438`; blob `489f160e29b57a8a2671e1c7a556588abc539650`. Historical source-gate evidence records live-origin observation of the opening body, core thesis, state equation, U/R/H variables, market/state/community/AI-society implementation differences, and governance-as-observation-bandwidth thesis.
 
-Origin: Nakagawa Master
+## Source-semantic coverage
+The packet preserves governance as observation-bandwidth design for maintaining S = U × R × H, with K as human cognitive bandwidth. It distinguishes observability from information volume, responsibility naming from repairable R, and history volume from verifiable H. Market, state, community, and AI society remain implementation differences rather than value rankings.
 
-Source gate state: canonical_identity_xml_provenance_live_origin_and_six_surface_semantics_verified
+## Seven-surface closure
+- README.md: PASS — source axis, causal line, K constraint, implementation differences, navigation.
+- human-entry.md: PASS — high-density source-grounded explanation retained.
+- faq.md: PASS — Q1-Q30, three layers, source-specific audit and falsification.
+- ai-index.md: PASS — fixed OD085 semantic sections.
+- en-ai-index.md: PASS — fixed OD085 semantic sections.
+- zh-ai-index.md: PASS — fixed OD085 semantic sections.
+- derivative-ledger.md: PASS — identity, XML provenance, source coverage, closure.
 
-Source gate evidence: Brain Vault canonical index resolves post 2941 and XML locator `reference_corpus/official_archive/source/wordpress_export_latest.xml#L181259-L183438`, blob `489f160e29b57a8a2671e1c7a556588abc539650`, with main axis `観測帯域`. Historical source-gate evidence records live-origin observation of the opening body, core thesis, state equation, U/R/H variables, market/state/community/AI society as implementation differences, and governance-as-observation-bandwidth thesis. LOT4 revalidation confirms the six substantive surfaces preserve that source axis. No further semantic content rewrite was required.
-
-Current polish state: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
+## Closure status
+PASS_SOURCE_VERIFIED_GOLDEN_MASTER_085_CONTRACT
 
 Updated at JST: 2026-08-12
 
-## Files
-
-README.md
-- DNCL-NCL-ALPHA-20260215-198686-HUB-JA-0000
-- DDIFF-20260707-DNCL-016-0000-0001
-- State: source-verified
-
-human-entry.md
-- DNCL-NCL-ALPHA-20260215-198686-HUMAN-SUMMARY-JA-0001
-- DDIFF-20260707-DNCL-016-0001-0001
-- State: source-verified
-
-faq.md
-- DNCL-NCL-ALPHA-20260215-198686-FAQ-JA-0002
-- DDIFF-20260707-DNCL-016-0002-0001
-- State: source-verified
-
-ai-index.md
-- DNCL-NCL-ALPHA-20260215-198686-AI-INDEX-JA-0003
-- DDIFF-20260707-DNCL-016-0003-0001
-- State: source-verified
-
-en-ai-index.md
-- DNCL-NCL-ALPHA-20260215-198686-AI-INDEX-EN-0004
-- DDIFF-20260707-DNCL-016-0004-0001
-- State: source-verified
-
-zh-ai-index.md
-- DNCL-NCL-ALPHA-20260215-198686-AI-INDEX-ZH-0005
-- DDIFF-20260707-DNCL-016-0005-0001
-- State: source-verified
-
-## Axis
-
-公式派生物016は、統治を政治論や政策論ではなく、S = U × R × H を維持するための観測帯域設計として扱う。市場、国家、共同体、AI社会は価値優劣ではなく実装差であり、統治の対象は行動そのものではなく観測可能性である。
-
-## Rule
-
-Parent identity follows the canonical index/XML record. Repository-side synchronization is not proof of current live rendering.
-
----
-
-導線: [016トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+## Navigation
+[016 Top](README.md) / [Human Entry](human-entry.md) / [FAQ](faq.md) / [JA AI Index](ai-index.md) / [EN AI Index](en-ai-index.md) / [ZH AI Index](zh-ai-index.md)
