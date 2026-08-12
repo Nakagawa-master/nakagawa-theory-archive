@@ -55,7 +55,7 @@ required_distinctions_present: PASS
 interpretation_constraints_present: PASS
 origin_return_present: PASS
 sufficient_volume_and_density: PASS
-literal_fresh_read_required: PASS_BRANCH
+literal_fresh_read_required: PASS_MAIN
 ```
 
 ## Semantic coverage
@@ -114,10 +114,11 @@ structural_necessity_boundary: PASS
 quantitative_claim_binding: NOT_APPLICABLE_NO_PARENT_GENERIC_NUMERIC_CLAIM
 translation_equivalence: PASS
 branch_fresh_read: PASS
-public_main_merge: PENDING
-main_fresh_read: PENDING
-brain_vault_evidence: PENDING
-closure: OPEN_UNTIL_MAIN_VERIFIED
+public_rebuild_pr: 229
+public_rebuild_merge_commit: 75de5312437a254aba0403959713fb2edbd6f7bc
+main_fresh_read: PASS
+brain_vault_evidence: TO_BE_RECORDED_AFTER_FINAL_LEDGER_PUBLICATION
+closure: COMPLETE_CONTENT_PENDING_EVIDENCE_RECORD
 ```
 
 ---
