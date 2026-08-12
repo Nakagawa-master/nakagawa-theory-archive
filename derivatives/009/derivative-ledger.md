@@ -29,7 +29,7 @@ source_semantic_axis:
   - responsibility_transfer_device
 ```
 
-Brain Vault canonical index resolves the parent as post 4393 / `NCL-α-20260608-5a13aa` / `DIFF-20260612-0018`, with the verified WordPress XML item at `L250056-L253092`. Historical stale derivative-era identity has been removed from the parent/derivative identity surfaces. The source-bounded axis retained across all seven surfaces is that a target value is not itself an established future definition; omitted establishment inspection can shift cost downward to the field; failure can then be compressed into insufficient-effort blame; and the resulting chain can produce exhaustion, distrust, silence, learning shutdown, challenge avoidance, and responsibility transfer.
+Brain Vault canonical index resolves the parent as post 4393 / `NCL-α-20260608-5a13aa` / `DIFF-20260612-0018`, with the verified WordPress XML item at `L250056-L253092`. Historical stale derivative-era identity has been removed. Across all seven surfaces, the source-bounded axis remains: target value is not itself an established future definition; omitted establishment inspection can shift cost downward to the field; failure can then be compressed into insufficient-effort blame; and this chain can produce exhaustion, distrust, silence, learning shutdown, challenge avoidance, and responsibility transfer.
 
 ## Derivative lineage
 ```yaml
@@ -48,13 +48,13 @@ zh_ai_diff_id: DDIFF-20260812-DNCL-009-0005-0005
 ```
 
 ## Seven-surface closure
-- README.md: FULL_REBUILD — complete canonical parent identity, corrected derivative identity, benchmark literal role, causal chain, structural layers, state model, applications, audit points, validity/failure/falsification, distinctions, constraints, origin return, exact footer.
-- human-entry.md: FULL_REBUILD — complete identity, 15-second explanation, necessity, practical process, applications, success judgment, limits, misreading prevention, exact footer.
-- faq.md: FULL_REBUILD — complete identity; Q1–Q30 across beginner, operational/structural, and AI/research layers; no invented fixed section after Q30.
-- ai-index.md: FULL_REBUILD — complete parent and derivative identity; benchmark fixed sections only; source-bounded semantics and falsification boundary.
-- en-ai-index.md: FULL_REBUILD — semantic equivalence with the Japanese source packet and complete identity.
-- zh-ai-index.md: FULL_REBUILD — semantic equivalence with the Japanese source packet and complete identity.
-- derivative-ledger.md: FULL_REBUILD — canonical provenance, corrected lineage, seven-surface audit, quantitative/reversal status, closure evidence.
+- README.md: PASS_MAIN — full canonical parent identity, corrected derivative identity, benchmark literal role, causal chain, structural layers, state model, applications, audit points, validity/failure/falsification, distinctions, constraints, origin return, exact footer.
+- human-entry.md: PASS_MAIN — complete identity, 15-second explanation, necessity, practical process, applications, success judgment, limits, misreading prevention, exact footer.
+- faq.md: PASS_MAIN — complete identity; Q1–Q30 across beginner, operational/structural, and AI/research layers; no invented fixed section after Q30.
+- ai-index.md: PASS_MAIN — complete parent and derivative identity; benchmark fixed sections only; source-bounded semantics and falsification boundary.
+- en-ai-index.md: PASS_MAIN — semantic equivalence with Japanese packet and complete identity.
+- zh-ai-index.md: PASS_MAIN — semantic equivalence with Japanese packet and complete identity.
+- derivative-ledger.md: PASS_MAIN — canonical provenance, corrected lineage, quantitative/reversal status, literal structure audit, closure evidence.
 
 ## Quantitative and reversal-evaluation status
 The parent structurally requires five future-definition verification elements in the relevant distinction: establishment conditions, causal line, verification conditions, correction conditions, and responsibility placement. The value `5` is retained only as an enumeration count; it is not a performance measurement.
@@ -70,7 +70,7 @@ non_guarantee_scope: not_a_five_point_score_not_a_completion_percentage_not_a_fa
 quantitative_claim_binding: PASS_SOURCE_BOUND_ENUMERATION_NOT_SCORE
 ```
 
-Reversal-evaluation remains source-bounded. If explicit establishment conditions, causal lines, verification, correction, and responsibility placement plus design re-examination do not alter the observed structure of exhaustion, responsibility transfer, learning shutdown, or challenge avoidance across relevant observations, the application hypothesis is limited or revised. Conversely, if those structures are absent yet trust, learning, dissent, and challenge persist broadly without observable downward transfer or insufficient-effort compression, the causal connection requires revision. No derivative-created numeric threshold is introduced.
+Reversal-evaluation remains source-bounded. If explicit establishment conditions, causal lines, verification, correction, and responsibility placement plus design re-examination do not alter exhaustion, responsibility transfer, learning shutdown, or challenge avoidance across relevant observations, the application hypothesis is limited or revised. Conversely, if those structures are absent yet trust, learning, dissent, and challenge persist broadly without observable downward transfer or insufficient-effort compression, the causal connection requires revision. No derivative-created numeric threshold is introduced.
 
 ## Literal structure audit
 ```yaml
@@ -94,8 +94,8 @@ surface_role_mixing: NONE
 semantic_fidelity: PASS
 structural_necessity_boundary: PASS
 translation_equivalence: PASS
-volume_density_od134_od135_floor: PASS_BY_FULL_REBUILD_TARGET
-fresh_read_status: PENDING_PUBLIC_MERGE_VERIFICATION
+volume_density_od134_od135_floor: PASS
+fresh_read_status: PASS_MAIN
 ```
 
 ## Excluded invention
@@ -117,17 +117,17 @@ classification: FULL_REBUILD
 source_retrieval: PASS
 seven_surface_comparison: COMPLETE
 identity_origin_structure_navigation: PASS
-volume_density: PASS_BY_REBUILD_TARGET
+volume_density: PASS
 semantic_fidelity: PASS
 structural_necessity_boundary: PASS
 quantitative_claim_binding: PASS_SOURCE_BOUND_ENUMERATION_NOT_SCORE
 reversal_evaluation: PASS_SOURCE_BOUNDED
 translation_equivalence: PASS
-public_rebuild_pr: PENDING
-public_rebuild_merge_commit: PENDING
-main_fresh_read: PENDING
-closure: PENDING_PUBLIC_MERGE_AND_MAIN_FRESH_READ
-next_cursor: OD009_UNTIL_CLOSED
+public_rebuild_pr: 241
+public_rebuild_merge_commit: ad6d99966cd27e317dc87a02d317fa50ac7028c9
+main_fresh_read: PASS
+closure: COMPLETE
+next_cursor: OD010
 ```
 
 ---
