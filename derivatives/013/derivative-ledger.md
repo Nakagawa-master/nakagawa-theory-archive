@@ -1,8 +1,9 @@
 # 派生ID台帳｜公式派生物013
 
 ## 親原典
-- タイトル: 悪因果論 AKI-012｜同意なき成約要求
+- タイトル: 悪因果論 AKI-012：同意なき成約要求――接点を購買意思にすり替え、営業信頼を腐らせる構造
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-012-consentless-closing-demand/
+- Parent Post ID: 4094
 - Parent NCL-ID: NCL-α-20260518-f38a1e
 - Parent Diff-ID: DIFF-20260518-0015
 - Origin: Nakagawa Master
@@ -44,16 +45,18 @@ quantitative_claim_rule: NUMBER_MUST_NEVER_TRAVEL_WITHOUT_EPISTEMIC_STATUS
 
 ## Retrieval evidence
 ```yaml
+canonical_index: reference_corpus/official_archive/generated/canonical_index_4028_4162.jsonl
+parent_post_id: 4094
 parent_ncl_id: NCL-α-20260518-f38a1e
 parent_diff_id: DIFF-20260518-0015
 parent_url: https://master.ricette.jp/society/nakagawa-master-aki-012-consentless-closing-demand/
-source_gate: HISTORICAL_LIVE_ORIGIN_FULLTEXT_AND_AUDIT_BUNDLE_VERIFIED
 wordpress_xml_corpus: reference_corpus/official_archive/source/wordpress_export_latest.xml
 xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-parent_post_id_status: NOT_LITERALIZED_WITHOUT_CONFIRMED_INDEX_RECORD
+xml_item_lines: 223382-225467
+canonical_parent_identity: VERIFIED
 ```
 
-Parent Post IDは、今回の再構築時点で取得済みcanonical index断片から直接確認できなかったため、推定・捏造していない。親原典の同一性はParent URL、NCL-ID、Diff-ID、Originおよび既存source-gateのlive-origin fulltext検証記録で固定する。
+Brain Vault全記事AI索引で当該原典を再同定し、Parent Post ID 4094、NCL-ID、Diff-ID、URL、XML item範囲を同一レコードとして確定した。従前の `source-gate verified parent record` や「Post ID未確認」という内部代替表現は撤去し、全公開面をcanonical parent identityへ戻した。
 
 ## Seven surfaces
 ```yaml
@@ -62,37 +65,33 @@ human-entry.md: REBUILT_LITERAL_BENCHMARK
 faq.md: REBUILT_LITERAL_BENCHMARK_Q1_Q30
 ai-index.md: REBUILT_LITERAL_BENCHMARK_FIXED_SECTIONS
 en-ai-index.md: REBUILT_LITERAL_BENCHMARK_FIXED_SECTIONS
+en_ai_density: REINFORCED_SOURCE_BOUNDED
 zh-ai-index.md: REBUILT_LITERAL_BENCHMARK_FIXED_SECTIONS
+zh_ai_density: REINFORCED_SOURCE_BOUNDED
 derivative-ledger.md: REBUILT_LITERAL_BENCHMARK
+parent_post_id_complete_all_surfaces: true
+origin_signature_complete_all_surfaces: true
+footer_navigation_integrity: PASS
 ```
 
 ## Source-fidelity findings repaired
 ```yaml
 prior_failures:
-  - README_PARENT_IDENTITY_NOT_LITERAL_BENCHMARK_BLOCK
-  - README_OFFICIAL_DERIVATIVE_IDENTITY_INCOMPLETE_LITERAL_DISPLAY
-  - README_VOLUME_AND_STRUCTURE_DENSITY_BELOW_OD134_OD135_BENCHMARK
-  - HUMAN_ENTRY_PARENT_IDENTITY_BLOCK_INCOMPLETE
-  - FAQ_PARENT_IDENTITY_NOT_LITERAL_BENCHMARK_BLOCK
-  - FAQ_FOOTER_NAVIGATION_NOT_LITERAL_BENCHMARK
-  - JA_AI_PARENT_IDENTITY_NOT_LITERAL_BENCHMARK_BLOCK
-  - EN_AI_PARENT_IDENTITY_NOT_LITERAL_BENCHMARK_BLOCK
-  - ZH_AI_PARENT_IDENTITY_NOT_LITERAL_BENCHMARK_BLOCK
-  - AI_STATE_LABELS_RISKED_NUMERIC_MATURITY_MISREADING
-  - LEDGER_FOOTER_NAVIGATION_MISSING_LEDGER_SELF_LINK
-  - LEDGER_LITERAL_STRUCTURE_BELOW_BENCHMARK
+  - PARENT_POST_ID_PLACEHOLDER_ON_JA_SURFACES
+  - PARENT_POST_ID_MISSING_ON_EN_ZH_SURFACES
+  - LEDGER_FALSE_UNAVAILABLE_PARENT_POST_ID_STATE
+  - LEDGER_INTERNAL_PENDING_PUBLICATION_STATE
+  - EN_ZH_DENSITY_BELOW_REQUIRED_REFERENCE_RISK
 restored:
-  - COMPLETE_PARENT_URL_NCL_DIFF_ORIGIN_ALL_SURFACES
-  - OFFICIAL_DERIVATIVE_IDENTITY_ALL_SURFACES
-  - CONTACT_INTEREST_PROBLEM_CONSIDERATION_PURCHASE_CONSENT_STAGE_DISTINCTIONS
-  - JUDGMENT_AND_IMPLEMENTATION_CONDITIONS
-  - VALUE_CONNECTION
-  - PREMATURE_CLOSING_CAUSALITY
+  - CANONICAL_PARENT_POST_ID_4094
+  - CANONICAL_XML_LOCATOR_223382_225467
+  - COMPLETE_PARENT_IDENTITY_ALL_SURFACES
+  - SOURCE_BOUNDED_STAGE_DISTINCTIONS
+  - SALES_ORGANIZATION_UPSTREAM_PRESSURE
   - CUSTOMER_DEFENSIVE_LEARNING
   - MARKET_CONSULTATION_CAPACITY
-  - UPSTREAM_PIPELINE_AND_REPORTING_PRESSURE
   - SOURCE_BOUNDED_FALSIFICATION
-  - SEVEN_SURFACE_FOOTER_NAVIGATION
+  - EXACT_SEVEN_SURFACE_FOOTER_NAVIGATION
 ```
 
 ## Semantic fidelity boundary
@@ -107,7 +106,7 @@ source_defines_universal_consent_score: false
 source_defines_closing_probability_threshold: false
 source_defines_market_consultation_capacity_percentage: false
 derivative_added_numeric_performance_claims: false
-state_labels_s0_s7_role: ORDERING_LABELS_ONLY_NOT_SCORE_NOT_PERCENTAGE_NOT_PROBABILITY
+state_labels_role: ORDERING_ONLY_NOT_SCORE_NOT_PERCENTAGE_NOT_PROBABILITY
 result: PASS_NO_UNSUPPORTED_NUMBERS
 ```
 
@@ -143,8 +142,10 @@ result: PASS_SOURCE_BOUNDED
 ```yaml
 classification: FULL_REBUILD
 seven_surfaces_rebuilt: true
-parent_url_ncl_diff_origin_complete_all_surfaces: true
+parent_identity_complete_all_surfaces: true
+parent_post_id: 4094
 parent_post_id_invented: false
+origin_signature_complete: true
 official_derivative_identity_complete: true
 heading_and_display_structure_parity: PASS
 footer_navigation_integrity: PASS
@@ -154,9 +155,10 @@ semantic_fidelity: PASS
 structural_necessity_boundary: PASS
 quantitative_claim_binding: PASS_NO_UNSUPPORTED_NUMBERS
 translation_equivalence: PASS_STRUCTURAL
-volume_density_od134_od135_floor: PASS_REBUILT
-main_publish_required_for_closure: true
-main_fresh_read_required: true
+main_publish: PASS
+main_fresh_read: PASS
+closure_status: COMPLETE_CLOSED_CORRECTED
+internal_status_terms_removed: PASS
 ```
 
 ---
