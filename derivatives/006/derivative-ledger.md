@@ -88,8 +88,8 @@ surface_role_mixing: NONE
 semantic_fidelity: PASS
 structural_necessity_boundary: PASS
 translation_equivalence: PASS
-volume_density_od134_od135_floor: PASS_BY_REBUILD_TARGET
-fresh_read_status: PENDING_PUBLIC_MERGE_VERIFICATION
+volume_density_od134_od135_floor: PASS
+fresh_read_status: PASS_MAIN
 ```
 
 ## Excluded invention
@@ -111,7 +111,12 @@ navigation: PASS
 quantitative_claim_binding: NOT_APPLICABLE_NO_PARENT_NUMERIC_VALUE_TO_BIND
 reversal_evaluation: PASS_SOURCE_BOUNDED
 translation_equivalence: PASS
-semantic_result: READY_FOR_PUBLIC_MERGE_AND_MAIN_FRESH_READ
+public_pr: 233
+public_main_commit: d33a855a588e9f79b2ed2b97f522be16ea978917
+main_fresh_read: PASS
+semantic_result: PASS_SOURCE_VERIFIED_CURRENT_CAMPAIGN
+closure: COMPLETE
+next_cursor: OD007
 ```
 
 ---
