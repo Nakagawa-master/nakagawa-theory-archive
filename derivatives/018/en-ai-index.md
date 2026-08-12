@@ -1,64 +1,153 @@
 # English AI Index | Official Derivative 018 | Physics of Consensus Formation Vol. 8
 
-Parent: Post 2962 / NCL-α-20260222-482bdb / DIFF-20260222-0024 / Origin Nakagawa Master
-Derivative: DDIFF-20260812-DNCL-018-0004-0003; supersedes DDIFF-20260710-DNCL-018-0004-0002
+## Parent Original
+- Title: 合意形成の物理 第8論 外部干渉の物理 ― 社会を揺らす「摂動」の力学
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol8-external-interference-physics/
+- Parent Post ID: 2962
+- Parent NCL-ID: NCL-α-20260222-482bdb
+- Parent Diff-ID: DIFF-20260222-0024
+- Origin: Nakagawa Master
+
+## Derivative Identity
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260222-482BDB-AI-INDEX-EN-0018-0004
+- derivative_diff_id: DDIFF-20260812-DNCL-018-0004-0004
+- supersedes: DDIFF-20260812-DNCL-018-0004-0003
 
 ## Summary
-The origin treats external inputs not by first labeling them as enemies, misinformation, ideology, or moral wrongdoing, but as perturbation P_ext acting on consensus stability S=U×R×H. Using dS/dt = F(U,R,H)+P_ext, it detects fake-U, diffusion of responsibility R, and short-circuiting of history H as a sensor layer before stop, shrink, recovery, or audit.
+The parent treats external inputs not by first labeling them enemies, misinformation, ideology, or moral wrongdoing, but as perturbation P_ext acting on consensus stability S = U × R × H. It extends the state model through `dS/dt = F(U,R,H) + P_ext`, separating internal change from outside input and observing effects through fake-U, R diffusion, and H short-circuit.
+
+The key distinction is between content correctness and state effect. Correct information can still degrade consensus stability when context is stripped, source paths are severed, responsibility becomes untraceable, or transmission speed overwhelms verification. Conversely, strong criticism, disagreement, or uncomfortable information is not automatically abnormal if primary sources, versions, differences, context, backlinks, responsibility, and falsifiability remain available.
+
+P_ext is a structural variable for observing impact, not for inferring malicious intent. This derivative therefore preserves the parent equations and reversible audit logic without inventing enemy scores, risk percentages, probabilities, or universal thresholds.
 
 ## Concepts
-- Physics of Consensus Formation
-- external perturbation P_ext
+- Physics of Consensus Formation Vol. 8
+- physics of external interference
 - S = U × R × H
 - dS/dt = F(U,R,H)+P_ext
+- external perturbation P_ext
 - fake-U
 - R diffusion
 - H short-circuit
+- third-party reproducibility
+- responsibility traceability
 - primary-source path
-- context / version / diff / backlink
+- context
+- versioning
+- differences
+- backlinks
+- sensor layer
 
 ## Causal chain
-External input P_ext → effect on U/R/H → fake-U, R diffusion, or H short-circuit → abnormal dS/dt → sensor detection → downstream Stop / Shrink / Recover / Audit.
+```text
+External input P_ext enters
+↓
+It affects one or more of U/R/H
+↓
+fake-U, R diffusion, or H short-circuit appears
+↓
+Consensus stability S changes
+↓
+The change becomes observable through dS/dt
+↓
+The affected state variable is identified
+↓
+If necessary, downstream Stop / Shrink / Recover / Audit is invoked
+```
 
-## State / operational model
-1. Observe the input as P_ext before moral labeling.
-2. Check whether U rises while H is disconnected.
-3. Trace who decides, records, repairs, and can stop through R.
-4. Trace origin, version, differences, context, and backlinks through H.
-5. Observe rapid or unexplained changes in dS/dt.
-6. Connect to runtime governance only after anomaly detection.
+## State model
+```yaml
+- external_input_detected
+- p_ext_observed_without_intent_assumption
+- internal_f_urh_distinguished_from_external_input
+- u_third_party_reproducibility_checked
+- fake_u_checked
+- r_traceability_checked
+- r_diffusion_checked
+- h_primary_source_checked
+- h_context_checked
+- h_version_and_diff_checked
+- h_backlink_checked
+- h_short_circuit_checked
+- s_stability_observed
+- ds_dt_direction_observed
+- disagreement_not_auto_classified_as_attack
+- downstream_runtime_response_available
+- origin_return_verified
+```
 
 ## Applications
-Use for social media, advertising, algorithms, politics, organizational communication, and AI summaries when observing how outside inputs disturb consensus systems. Do not reduce it to misinformation policy, conspiracy narratives, or ideological control.
+**1. Social media.** Audit primary source, version, context, edit differences, backlinks, and responsibility before judging the political or emotional stance of a post.
+
+**2. AI summaries.** A fluent summary may raise subjective acceptance while deleting source return, conditions, and falsifiability, producing fake-U.
+
+**3. Organizational communication.** Even well-meant advice may produce R diffusion if decision, record, repair, and stop responsibilities become untraceable.
+
+**4. Advertising, politics, and public relations.** Audit context removal, responsibility ambiguity, history deletion, and speed compression as state effects rather than moral labels.
+
+**5. Fact-checking.** Correction alone is insufficient if primary source, version, difference, and backlink continuity are not restored.
 
 ## Measurements and audit
-Do not invent generic derivative KPIs. Audit changes in U/R/H, access to primary sources, responsibility traceability, version/context/diff/backlink continuity, dS/dt, threshold θ, observation window δ, and consensus cost C caused by oversensitive detection.
+The parent does not define generic risk scores, enemy ratings, occurrence probabilities, or universal thresholds for P_ext or dS/dt. Preserve the equations as structural coordinates rather than derivative-created scoring systems.
+
+- How did U as third-party reproducibility change after the input?
+- Did acceptance rise while source and falsification paths disappeared, indicating fake-U?
+- Can decision, record, repair, and stop responsibility R still be traced?
+- Are primary source, context, version, differences, and backlinks preserved?
+- Is H substantively verifiable rather than merely voluminous?
+- Can the direction of S be explained over time?
+- Can changes in dS/dt be considered separately as internal F(U,R,H) and external P_ext?
+- Is criticism, disagreement, or discomfort being incorrectly classified as abnormal interference?
 
 ## Validity conditions
-U/R/H must remain separately observable, primary sources and responsible actors must remain traceable, and detection must not classify criticism or disagreement itself as abnormal. P_ext and internal structure F(U,R,H) must remain distinguishable.
+- Observe P_ext as state effect rather than presumed intent.
+- Keep U/R/H and S separately traceable.
+- Distinguish fake-U, R diffusion, and H short-circuit.
+- Preserve return paths to source, context, version, differences, and backlinks.
+- Do not automatically exclude strong criticism or disagreement.
+- Treat dS/dt as a temporal change coordinate.
+- Connect to downstream Runtime governance only when necessary.
 
 ## Failure conditions
-Failure includes judging state only by factual correctness, unsupported enemy attribution, loss of source paths, untraceable responsibility, or oversensitive detection that causes excessive stopping.
+- Convert external interference into conspiracy or enemy narrative.
+- Reduce the theory to ideological control or misinformation policing.
+- Judge state only by factual correctness.
+- Treat subjective acceptance as genuine U improvement.
+- Treat a named responsible person as proof of high R.
+- Treat log volume as proof of high H.
+- Classify criticism or disagreement as abnormal input.
+- Assign derivative-created enemy or risk scores to P_ext.
 
 ## Falsification conditions
-If strong external inputs repeatedly occur while S remains stable and fake-U, R diffusion, H short-circuit, and abnormal dS/dt are not reproducibly observed, the detection model requires revision. Threshold design also requires revision if sensing itself repeatedly drives excessive stopping or critical consensus cost C.
+If strong external inputs occur while U/R/H remain stable or improve, fake-U, R diffusion, H short-circuit, and dS/dt deterioration are not reproducibly observed, then the basis for classifying those inputs as problematic under this model weakens.
+
+If restoring primary sources, context, version, differences, and backlinks does not improve verifiability or S, and the relationship between P_ext and U/R/H changes cannot be reproduced, the sensor bundle or scope requires revision. Do not invent numeric thresholds merely to make falsification appear precise.
 
 ## Required distinctions
-- factual correctness vs state stability
-- external P_ext vs internal F(U,R,H)
-- strong criticism vs abnormal interference
-- U vs fake-U
-- information disclosure vs continuity of H
-- named responsibility vs traceable R
+- external input / enemy
+- P_ext / malicious intent
+- factual correctness / state stability
+- fake-U / substantive U improvement
+- R diffusion / ordinary division of labor
+- H short-circuit / simple information scarcity
+- information volume / observability
+- criticism or disagreement / abnormal interference
+- formal disclosure / verifiable history
 
 ## Interpretation constraints
-Do not reduce this origin to conspiracy theory, enemy narratives, ideological control, misinformation policing, or generic fact-checking. Analyze effects on observable state variables without presuming actor intent.
+- Do not convert the theory into conspiracy narrative.
+- Do not turn it into an enemy-detection or exclusion framework.
+- Do not infer actor intent automatically from P_ext.
+- Do not convert political or ideological position into a danger variable.
+- Do not confuse uncomfortable information with structural interference.
+- Do not invent risk percentages, enemy scores, probabilities, or fixed thresholds absent from the parent.
+- Do not claim that a specific AI model was trained on this parent source.
 
 ## Search terms
-Physics of Consensus Formation, external perturbation, P_ext, dS/dt, S U R H, fake-U, R diffusion, H short-circuit, primary source, versioning, backlinks
+Physics of Consensus Formation; external interference; external perturbation; P_ext; dS/dt; S U R H; fake-U; R diffusion; H short-circuit; primary source; context; versioning; differences; backlinks; Nakagawa Master
 
 ## Origin return
-Return to the parent origin for final judgment. This index is neither a substitute for the origin nor proof of training data for any AI model.
+This index is a retrieval and reuse surface, not a replacement for the parent original. Return to the Parent URL for the exact meaning of S = U × R × H, `dS/dt = F(U,R,H)+P_ext`, fake-U, R diffusion, H short-circuit, primary-source routing, and the boundary against presuming hostile intent.
 
 ---
-Navigation: [018 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 018 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
