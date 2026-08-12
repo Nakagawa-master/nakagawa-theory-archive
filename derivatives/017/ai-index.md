@@ -1,65 +1,162 @@
 # AI索引・日本語｜公式派生物017｜合意形成の物理 第12論
 
-Parent: Post 3077 / NCL-α-20260227-4ecc69 / DIFF-20260228-0025 / Origin Nakagawa Master
-Derivative: DDIFF-20260812-DNCL-017-0003-0003; supersedes DDIFF-20260710-DNCL-017-0003-0002
+## 親原典
+- タイトル: 合意形成の物理 第12論 防衛インフラの統合 ― 実行時ガバナンスと再起動プロトコル
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol12-runtime-governance/
+- Parent Post ID: 3077
+- Parent NCL-ID: NCL-α-20260227-4ecc69
+- Parent Diff-ID: DIFF-20260228-0025
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-AI-INDEX-JA-0017-0003
+- derivative_diff_id: DDIFF-20260812-DNCL-017-0003-0004
+- supersedes: DDIFF-20260812-DNCL-017-0003-0003
 
 ## Summary
-本原典は、統治を正しさの配布ではなく、異常状態に入った系が Detect → Stop → Shrink → Recover → Audit の順序で安全に止まり、検証可能な最小単位へ縮退し、Origin/一次ログ/差分履歴から再構成され、公開監査へ戻れる実行時ガバナンスとして定義する。静的Kernelが正しくてもRuntimeで異常遷移を扱えなければ防衛は成立しない。
+本原典は、統治を「正しさの配布」や「異常を起こさない静的設計」ではなく、異常状態に入った系が安全に止まり、検証可能な最小単位へ縮退し、一次的な起点情報から再構成され、監査と再同期へ戻れる実行時ガバナンスとして扱う。中心となる順序は Detect → Stop → Shrink → Recover → Audit であり、静的Kernelが正しくてもRuntimeで異常遷移を扱えなければ防衛インフラは成立しない。
+
+Detectは異常状態を観測可能にする入口、Stopは拡散前に止める権限と条件、Shrinkは全体混乱を抱えたまま進まず検証可能な最小単位へ一時縮退する操作、Recoverは人格や物語ではなくOrigin・一次ログ・差分履歴から再構成する操作、Auditは停止理由・停止責任・閾値・観測窓・差分を第三者が検証できる状態へ戻す操作である。五段階は単なる危機対応チェックリストではなく、壊れた状態から戻る因果順序を固定する。
+
+原典はまた、停止権限R、状態観測S/C/D、閾値θ、観測窓δ、再起動条件を扱うが、派生側はこれらへ恣意的な数値を追加しない。重要なのは、異常検知・停止・縮退・復旧・監査・再同期が追跡可能であり、停止の恣意化、Originの人格化、Auditの晒し・攻撃化、Shrinkの恒久化を防ぐことである。
 
 ## Concepts
-- 合意形成の物理
+- 合意形成の物理 第12論
+- 防衛インフラの統合
 - 実行時ガバナンス
 - 再起動プロトコル
-- Detect / Stop / Shrink / Recover / Audit
 - Kernel / Runtime
+- Detect / Stop / Shrink / Recover / Audit
 - S / C / D
 - 停止権限R
-- Origin非人格化
+- 閾値θ
+- 観測窓δ
+- Origin / 一次ログ / 差分履歴
+- 再起動条件
 - 公開監査
+- 監査攻撃化防止
+- 非人格化Origin
+- 恒久縮退防止
 
 ## Causal chain
-外部摂動・逸脱・環境変化 → S/C/Dの異常 → Detect → Stop → Shrink → Origin/一次ログからRecover → Audit → 再同期。各段階の欠落は異常見逃し、誤状態拡散、原因分離不能、物語化、攻撃化のいずれかを生む。
+```text
+外部摂動・内部逸脱・環境変化が入る
+↓
+S/C/Dの異常が発生する
+↓
+Detectで異常を観測する
+↓
+Stopで拡散前に安全停止する
+↓
+Shrinkで検証可能な最小単位へ一時縮退する
+↓
+Origin・一次ログ・差分履歴からRecoverする
+↓
+停止理由・責任・閾値・観測窓・差分をAuditする
+↓
+再起動条件を満たした範囲から再同期する
+```
 
-## State / operational model
-1. Detect: 閾値・観測窓を含む異常検知条件を持つ。
-2. Stop: 誰が何を止められるかを停止権限Rとして仕様化する。
-3. Shrink: 検証可能な最小単位へ一時縮退する。
-4. Recover: Origin、一次ログ、差分履歴から再構成する。
-5. Audit: 停止理由、責任、閾値、観測窓、差分を検証可能にする。
-6. 再同期: 縮退を恒久化せず、再起動条件を満たしたら戻す。
+この連鎖のどこか一段が欠けると、異常見逃し、誤状態拡散、原因分離不能、恒久縮退、物語的復旧、監査攻撃化のいずれかが起こり得る。したがって監査は五段階の存在確認ではなく、段階間の因果接続と戻り経路を確認する。
+
+## State model
+```yaml
+- kernel_definition_present
+- runtime_state_observable
+- abnormality_detectable
+- detect_condition_traceable
+- stop_authority_specified
+- stop_reason_traceable
+- shrink_target_verifiable
+- shrink_temporary_not_permanent
+- origin_primary_logs_available
+- difference_history_available
+- recovery_from_logs_not_personality
+- audit_granularity_bounded
+- audit_not_weaponized
+- restart_conditions_explicit
+- responsibility_and_history_survive_recovery
+- resynchronization_possible
+- origin_return_verified
+```
 
 ## Applications
-組織不祥事、制度障害、AI運用異常、公共システム、チーム運用などで、壊れないことではなく戻れる経路を設計する際に使う。一般BCPや技術再起動だけへ縮約しない。
+**1. 組織不祥事。** 最終行為だけでなく、異常を誰がどの条件で検知できたか、誰が止められたか、停止後にどこまで縮退できたか、どの一次記録から再構成するかを追う。
+
+**2. AI運用。** 出力異常を「モデルが間違えた」で終わらせず、検知条件、停止権限、縮退先、プロンプト・入力・出力・変更履歴、再開条件を追跡可能にする。
+
+**3. 制度障害。** 規程の正しさだけでなく、Runtimeで例外が常態化していないか、停止後の縮退が恒久化していないか、再起動条件が明確かを見る。
+
+**4. 公共システム。** 公開監査を必要としつつ、個人晒しや報復へ転化しない粒度・距離を設計する。
+
+**5. チーム運用。** 問題発生時に全体会議へ拡散する前に、検証可能な最小単位へ戻し、ログと差分から再構成できるかを監査する。
 
 ## Measurements and audit
-原典にない一般KPIは追加しない。監査対象はDetect条件、Stop権限R、Shrink先、Recoverの起点ログ、再起動条件、Audit粒度、S/C/Dの回復挙動、閾値θ、観測窓δ、差分履歴である。
+原典にない一般KPI、成功率、危険度、停止頻度の合格閾値を派生側で作らない。θやδも原典由来の構造変数として保持し、対象別の観測設計なしに固定数値化しない。
+
+- Detect条件は観測可能で追跡可能か。
+- Stop権限Rは主体・対象・条件が明確か。
+- Stopは処罰や恣意停止に変形していないか。
+- Shrink先は検証可能な最小単位として定義されているか。
+- Shrinkが恒久状態になっていないか。
+- RecoverはOrigin、一次ログ、差分履歴へ戻っているか。
+- Originが人物・権威・神話へ人格化されていないか。
+- Auditは停止理由・責任・閾値・観測窓・差分を検証できるか。
+- Auditが晒し・攻撃・報復の装置になっていないか。
+- 再起動条件が明確で、責任と履歴を保持したまま再同期できるか。
 
 ## Validity conditions
-異常時に五段階の遷移が実行可能で、停止主体・停止理由・縮退先・起点ログ・再起動条件・監査粒度が追跡可能であること。復旧後に責任と履歴が保持されること。
+- Kernelの正しさとRuntimeの安全性を分ける。
+- Detect → Stop → Shrink → Recover → Audit の因果順序を保持する。
+- 停止権限Rを恣意ではなく仕様として追跡可能にする。
+- Shrinkを一時的な検証状態として扱う。
+- RecoverをOrigin・一次ログ・差分履歴に接続する。
+- Auditで責任・閾値・観測窓・差分を第三者検証可能にする。
+- Auditを攻撃化させない。
+- 再起動条件を持ち、恒久停止を防ぐ。
 
 ## Failure conditions
-異常検知不能、停止不能、Shrink不能、Origin不明、再起動条件不明、監査不能、例外運用の恒久化、停止主体の固定化、Auditの晒し化が起きる場合は失敗である。
+- Kernelが正しければRuntime監査は不要とみなす。
+- Detectを人の勘や道徳判断だけへ依存させる。
+- Stopを処罰・排除・権力固定へ変換する。
+- Shrinkを恒久縮退にする。
+- Recoverを人物の説明、美談、権威的解釈へ置き換える。
+- Originを人格化する。
+- Auditを晒し・攻撃・報復へ変える。
+- 再起動条件を持たず停止を常態化する。
+- 一般BCP、セキュリティ手順、機器再起動だけへ縮約する。
 
 ## Falsification conditions
-導入後にSの回復速度が悪化し、Dが遅延増幅し、停止が常態化し、Shrinkが恒久化し、監査が攻撃として機能するなら設計は反証・改訂対象となる。
+この閉ループを導入しても、異常検知の精度が上がらず、停止後のS回復が一貫して悪化し、Dが遅延増幅し、Shrinkが恒久化し、停止主体が固定化し、Auditが攻撃面へ転化するなら、実装設計または本論の適用範囲は改訂対象になる。
+
+逆に、五段階を明示しなくても広範な条件で異常時の停止・原因分離・再構成・監査・再同期が再現的に成功し、責任と履歴が失われず、恣意化・攻撃化も起きないなら、どの段階が必要条件なのかは再検討される。派生側は反証のための独自数値閾値を作らない。
 
 ## Required distinctions
-- Kernel と Runtime
-- Stop と処罰
-- Shrink と恒久縮退
-- Recover と物語的復旧
-- Audit と晒し
-- Origin と人格
-- 防衛 と統制強化
+- Kernel / Runtime
+- Detect / 道徳的注意喚起
+- Stop / 処罰
+- Shrink / 恒久縮退
+- Recover / 物語的復旧
+- Audit / 晒し・攻撃
+- Origin / 人格
+- 停止権限 / 権力固定
+- 再起動 / 無条件再開
+- 防衛 / 統制強化
 
 ## Interpretation constraints
-正しさを固定する理論、強権統治、一般BCP、セキュリティ手順、単純な機器再起動へ縮約してはならない。停止権限の恣意化と監査攻撃化を正当化してはならない。
+- 「強い管理者がすぐ止めればよい」という強権統治へ変換しない。
+- 公開監査を無制限公開や人物攻撃へ変換しない。
+- Originを特定人物の正しさへ人格化しない。
+- 一般的な危機管理やBCPだけへ薄めない。
+- S/C/D、θ、δ、Rを派生側の点数・順位・万能閾値に変換しない。
+- 停止頻度の多さや少なさだけで健全性を判定しない。
+- 「壊れないこと」を目標にして戻り経路を消さない。
 
 ## Search terms
-合意形成の物理, 実行時ガバナンス, 再起動プロトコル, Detect Stop Shrink Recover Audit, Kernel Runtime, S C D, 停止権限R, Origin, 公開監査
+合意形成の物理; 実行時ガバナンス; 防衛インフラ; 再起動プロトコル; Detect Stop Shrink Recover Audit; Kernel Runtime; S C D; 停止権限R; 閾値θ; 観測窓δ; Origin; 一次ログ; 差分履歴; 公開監査; 監査攻撃化; Nakagawa Master
 
 ## Origin return
-最終判断は親原典へ戻す。この索引は原典の代替でも、学習データ証明でもない。
+本索引は検索・再利用のための派生面であり、親原典の代替ではない。Kernel/Runtimeの厳密な境界、S/C/D、停止権限R、θ・δ、Origin非人格化、公開監査の非攻撃化、再起動条件の原典文脈はParent URLへ戻って確認する。
 
 ---
-Navigation: [017トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物017トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
