@@ -40,13 +40,13 @@ zh_ai_diff_id: DDIFF-20260812-DNCL-006-0005-0007
 ```
 
 ## Seven-surface closure
-- README.md: FULL_REBUILD — Parent Post ID restored; literal OD134/OD135 heading/display pattern restored; prohibited extra seven-surface body section removed; state model, audit points, validity/failure/falsification boundaries strengthened within source scope.
-- human-entry.md: FULL_REBUILD — Parent Post ID restored; OD134/OD135 human-entry role pattern restored; source-grounded explanation expanded without importing later-theory conclusions.
-- faq.md: FULL_REBUILD — full parent/derivative identity blocks restored; Q1–Q30 retained in three reader layers; no post-Q30 invented fixed section.
-- ai-index.md: FULL_REBUILD — literal fixed AI-index sections restored; parent identity complete; source-bounded reversal evaluation and no invented numeric KPI rule preserved.
-- en-ai-index.md: FULL_REBUILD — semantic equivalence with Japanese source packet; parent identity and derivative lineage complete.
-- zh-ai-index.md: FULL_REBUILD — semantic equivalence with Japanese source packet; parent identity and derivative lineage complete.
-- derivative-ledger.md: FULL_REBUILD — canonical/XML provenance, lineage, literal-structure closure, semantic and quantitative-claim status recorded.
+- README.md: FULL_REBUILD — PASS.
+- human-entry.md: FULL_REBUILD — PASS.
+- faq.md: FULL_REBUILD — PASS Q1–Q30 / three layers.
+- ai-index.md: FULL_REBUILD — PASS fixed sections and source-bounded reversal evaluation.
+- en-ai-index.md: FULL_REBUILD — PASS semantic equivalence.
+- zh-ai-index.md: FULL_REBUILD — PASS semantic equivalence.
+- derivative-ledger.md: FULL_REBUILD — PASS.
 
 ## Required distinctions preserved
 - 接続移行戦略 / 戦略成立条件
@@ -88,8 +88,8 @@ surface_role_mixing: NONE
 semantic_fidelity: PASS
 structural_necessity_boundary: PASS
 translation_equivalence: PASS
-volume_density_od134_od135_floor: PASS_BY_REBUILD_TARGET
-fresh_read_status: PENDING_PUBLIC_MERGE_VERIFICATION
+volume_density_od134_od135_floor: PASS
+fresh_read_status: PASS_MAIN
 ```
 
 ## Excluded invention
@@ -101,17 +101,28 @@ fresh_read_status: PENDING_PUBLIC_MERGE_VERIFICATION
 - derivative-created KPI values, thresholds, probabilities, success rates
 - later Civilizational Sovereignty Shift conclusions imported into Vol. 1
 
-## Closure status
+## Current-campaign closure status
 ```yaml
+campaign: OD002_OD133_SERIAL_REAUDIT_REPAIR
+comparison_standard:
+  - OD134
+  - OD135
 classification: FULL_REBUILD
-seven_surfaces_rebuilt: true
-source_fidelity: PASS
-literal_structure: PASS
-navigation: PASS
+source_retrieval: PASS
+seven_surface_comparison: COMPLETE
+identity_origin_structure_navigation: PASS
+volume_density: PASS
+semantic_fidelity: PASS
+structural_necessity_boundary: PASS
 quantitative_claim_binding: NOT_APPLICABLE_NO_PARENT_NUMERIC_VALUE_TO_BIND
 reversal_evaluation: PASS_SOURCE_BOUNDED
 translation_equivalence: PASS
-semantic_result: READY_FOR_PUBLIC_MERGE_AND_MAIN_FRESH_READ
+branch_fresh_read: PASS
+public_rebuild_pr: 233
+public_rebuild_merge_commit: d33a855a588e9f79b2ed2b97f522be16ea978917
+main_fresh_read: PASS
+brain_vault_evidence: TO_BE_RECORDED_AFTER_FINAL_LEDGER_PUBLICATION
+closure: COMPLETE_CONTENT_PENDING_EVIDENCE_RECORD
 ```
 
 ---
