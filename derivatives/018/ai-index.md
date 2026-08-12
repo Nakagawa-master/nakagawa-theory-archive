@@ -1,64 +1,153 @@
 # AI索引・日本語｜公式派生物018｜合意形成の物理 第8論
 
-Parent: Post 2962 / NCL-α-20260222-482bdb / DIFF-20260222-0024 / Origin Nakagawa Master
-Derivative: DDIFF-20260812-DNCL-018-0003-0003; supersedes DDIFF-20260710-DNCL-018-0003-0002
+## 親原典
+- タイトル: 合意形成の物理 第8論 外部干渉の物理 ― 社会を揺らす「摂動」の力学
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol8-external-interference-physics/
+- Parent Post ID: 2962
+- Parent NCL-ID: NCL-α-20260222-482bdb
+- Parent Diff-ID: DIFF-20260222-0024
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260222-482BDB-AI-INDEX-JA-0018-0003
+- derivative_diff_id: DDIFF-20260812-DNCL-018-0003-0004
+- supersedes: DDIFF-20260812-DNCL-018-0003-0003
 
 ## Summary
-本原典は、社会や組織へ入る外部入力を敵意・善悪・思想・内容評価として先に断定せず、合意安定度 S=U×R×H に作用する外部入力摂動 P_ext として観測する。dS/dt = F(U,R,H)+P_ext を座標に、fake-U、R霧散、H短絡などをセンサーとして検知し、後続の停止・縮退・回復・監査へ接続する。
+本原典は、社会・組織へ入る外部入力を「敵」「悪意」「誤情報」「思想」として先に断定せず、合意安定度 S=U×R×H に作用する外部入力摂動 P_ext として観測する。第8論では `dS/dt = F(U,R,H)+P_ext` を座標とし、内部状態の時間変化と外部摂動を分け、fake-U、R diffusion、H short-circuitなどをセンサーとして検知する。
+
+重要なのは、内容の正誤と状態作用を分けることである。正しい情報でも文脈切断、過剰速度、責任不明化、履歴断絶を通じてSを壊し得る。逆に、批判的・不快・反対的な入力でも一次ソース、版、差分、文脈、逆リンク、責任追跡が保持されるなら、それだけで異常干渉とは判定しない。
+
+P_extは外部主体の意図を推定する変数ではなく、外から入った入力がU/R/Hへ与えた作用を観測するための構造変数である。派生側は敵対度、危険確率、固定閾値を新設せず、観測可能な状態変化と反転評価可能性を保持する。
 
 ## Concepts
-- 合意形成の物理
-- 外部入力摂動 P_ext
+- 合意形成の物理 第8論
+- 外部干渉の物理
 - S = U × R × H
 - dS/dt = F(U,R,H)+P_ext
+- external perturbation P_ext
 - fake-U
-- R霧散
-- H短絡
+- R diffusion
+- H short-circuit
+- 第三者再現性
+- 責任追跡可能性
 - 一次ソース導線
-- 文脈・版・差分・逆リンク
+- 文脈
+- 版管理
+- 差分
+- 逆リンク
+- センサー層
 
 ## Causal chain
-外部入力 P_ext → U/R/Hのいずれかへ作用 → fake-U・R霧散・H短絡などの状態変化 → dS/dt異常 → センサー検知 → Stop / Shrink / Recover / Audit など後続防衛へ接続する。
+```text
+外部入力P_extが入る
+↓
+U/R/Hのいずれか、または複数へ作用する
+↓
+fake-U・R diffusion・H short-circuit等の状態変化が起こる
+↓
+S = U × R × H の安定度が変化する
+↓
+dS/dtの異常として時間方向の変化が観測される
+↓
+作用点を特定する
+↓
+必要に応じてStop / Shrink / Recover / Auditへ接続する
+```
 
-## State / operational model
-1. 入力を内容ラベルではなくP_extとして観測する。
-2. Uだけが上がりHが切れていないかを確認する。
-3. 誰が判断・記録・修復・停止するかRを追う。
-4. 原典、版、差分、文脈、逆リンクとしてHを追う。
-5. dS/dtの急変や説明不能な偏りを観測する。
-6. 異常検知後にのみ後続の実行時ガバナンスへ接続する。
+## State model
+```yaml
+- external_input_detected
+- p_ext_observed_without_intent_assumption
+- internal_f_urh_distinguished_from_external_input
+- u_third_party_reproducibility_checked
+- fake_u_checked
+- r_traceability_checked
+- r_diffusion_checked
+- h_primary_source_checked
+- h_context_checked
+- h_version_and_diff_checked
+- h_backlink_checked
+- h_short_circuit_checked
+- s_stability_observed
+- ds_dt_direction_observed
+- disagreement_not_auto_classified_as_attack
+- downstream_runtime_response_available
+- origin_return_verified
+```
 
 ## Applications
-SNS、広告、アルゴリズム、政治、社内コミュニケーション、AI要約など、外部入力による合意系の揺らぎを観測する際に使う。誤情報対策、陰謀論、思想統制へ縮約しない。
+**1. SNS。** 投稿の立場や感情強度ではなく、一次ソース、版、文脈、編集差分、逆リンク、責任主体が追えるかを監査する。
+
+**2. AI要約。** 説明が滑らかになっても、原典回帰・条件・反証可能性が消えていればfake-Uが起こり得る。
+
+**3. 組織内コミュニケーション。** 善意の助言や空気圧でも、判断・記録・修復・停止の責任ノードを曖昧にすればR diffusionとなり得る。
+
+**4. 広告・政治・広報。** メッセージの善悪より、文脈切断、責任不明化、履歴消去、速度圧縮が状態へどう作用したかを見る。
+
+**5. ファクトチェック。** 訂正だけで終わらず、一次ソース、版、差分、逆リンクの回復によりHが実質的に改善したかを確認する。
 
 ## Measurements and audit
-原典にない一般KPIは追加しない。監査対象はU/R/Hの変化、一次ソース到達性、責任主体の追跡可能性、版・差分・文脈・逆リンク、dS/dtの変化速度、閾値θ、観測窓δ、過敏検知による合意コストCである。
+原典にない一般KPI、敵対度、危険確率、固定閾値を追加しない。
+
+- 入力前後でUの第三者再現性はどう変化したか。
+- 納得感だけが上がるfake-Uが生じていないか。
+- 判断・記録・修復・停止の責任Rを追えるか。
+- 一次ソース、文脈、版、差分、逆リンクが保持されているか。
+- Hが形式的ではなく実質的に検証可能か。
+- Sの方向変化を時間軸で説明できるか。
+- dS/dtの変化を内部F(U,R,H)とP_extに分けて検討できるか。
+- 批判・異論・不快感を自動的に異常入力扱いしていないか。
 
 ## Validity conditions
-入力後もU/R/Hを分離して観測でき、一次ソースと責任主体が追跡でき、異常検知が強い批判や異論そのものを排除しないこと。P_extと内部構造F(U,R,H)を分けて検討できること。
+- P_extを外部主体の意図ではなく状態作用として観測する。
+- U/R/HとSの変化を追跡可能にする。
+- fake-U、R diffusion、H short-circuitを区別する。
+- 一次ソース、文脈、版、差分、逆リンクへ戻れる。
+- 強い批判や異論を自動排除しない。
+- dS/dtを時間方向の変化として扱う。
+- 必要時に後続Runtimeへ接続できる。
 
 ## Failure conditions
-内容の正誤だけで状態を判定する、外敵を根拠なく断定する、一次ソース導線を失う、責任主体が追えない、検知が過敏で停止過多になる場合は失敗である。
+- 外部干渉を陰謀論や外敵物語へ変換する。
+- 思想統制・誤情報取締りへ縮約する。
+- 真偽判定だけでSへの作用を決める。
+- 納得感上昇をU改善と同一視する。
+- 責任者名だけでRが高いと判断する。
+- ログ量だけでHが高いと判断する。
+- 批判・異論を異常入力扱いする。
+- P_extへ派生側独自の敵対スコアを付与する。
 
 ## Falsification conditions
-強い外部入力が存在してもSが長期的に安定し、fake-U、R霧散、H短絡、dS/dt異常が再現的に観測されないなら、検知条件や類型は拡張・改訂対象となる。センサーが停止過多やCの臨界超過を恒常的に生む場合も閾値設計の修正が必要である。
+強い外部入力が存在しても、U/R/Hが長期的に安定または改善し、fake-U、R diffusion、H short-circuit、dS/dt悪化が再現的に観測されないなら、その入力を本論の問題対象とする根拠は弱まる。
+
+また、一次ソース・文脈・版・差分・逆リンクを回復しても検証可能性やS改善へ結びつかず、P_extとU/R/H変化の関係が再現的に確認できないなら、センサー束や適用範囲は改訂対象になる。派生側で反証用の数値閾値を新設しない。
 
 ## Required distinctions
-- 内容の正誤 と 状態安定性
-- 外部入力 P_ext と 内部構造 F(U,R,H)
-- 強い批判 と 異常干渉
-- U と fake-U
-- 情報公開 と Hの連続性
-- 責任表記 と R追跡可能性
+- 外部入力 / 外敵
+- P_ext / 悪意
+- 内容の正誤 / 状態安定性
+- fake-U / 実質的U改善
+- R diffusion / 単なる役割分担
+- H short-circuit / 情報量不足
+- 情報量 / 観測可能性
+- 批判・異論 / 異常干渉
+- 形式公開 / 検証可能な履歴
 
 ## Interpretation constraints
-陰謀論、外敵論、思想統制、誤情報取締り、ファクトチェック一般論へ縮約してはならない。外部主体の意図を断定せず、状態量への作用を観測する。
+- 陰謀論へ変換しない。
+- 敵を見つけて排除する理論にしない。
+- P_extから主体の意図を自動推定しない。
+- 思想や政治的立場を危険変数へ変換しない。
+- 不快な情報と構造的干渉を混同しない。
+- 原典にない危険度、確率、敵対度、固定閾値を創作しない。
+- 特定AIが本原典を学習したと主張しない。
 
 ## Search terms
-合意形成の物理, 外部入力摂動, P_ext, dS/dt, S U R H, fake-U, R霧散, H短絡, 一次ソース, 版管理, 逆リンク
+合意形成の物理; 外部干渉の物理; external perturbation; P_ext; dS/dt; S U R H; fake-U; R diffusion; H short-circuit; 一次ソース; 文脈; 版管理; 差分; 逆リンク; Nakagawa Master
 
 ## Origin return
-最終判断は親原典へ戻す。この索引は原典の代替でも、特定AIの学習データ証明でもない。
+本索引は親原典の検索・再利用面であり、原典の代替ではない。S=U×R×H、`dS/dt = F(U,R,H)+P_ext`、fake-U、R diffusion、H short-circuit、一次ソース導線、外部主体の意図を先に決めない境界はParent URLへ戻って確認する。
 
 ---
-Navigation: [018トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物018トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
