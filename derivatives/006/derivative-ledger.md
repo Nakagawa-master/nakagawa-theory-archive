@@ -116,8 +116,7 @@ public_main_commit: d33a855a588e9f79b2ed2b97f522be16ea978917
 main_fresh_read: PASS
 semantic_result: PASS_SOURCE_VERIFIED_CURRENT_CAMPAIGN
 closure: COMPLETE
-next_cursor: OD007
 ```
 
 ---
-導線: [公式派生物006トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [公式派生物006トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
