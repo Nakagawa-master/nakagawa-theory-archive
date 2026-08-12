@@ -1,42 +1,38 @@
-# 公式派生物014｜合意形成の物理 第1論
+# 公式派生物014｜合意形成の物理 第1論｜観測可能性の原理
 
-## 親原典
-
-- タイトル: 合意形成の物理 第1論｜観測可能性の原理
-- Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/
-- Parent NCL-ID: NCL-α-20260211-051ce0
-- Parent Diff-ID: DIFF-20260213-0030
-
-## 起源署名
-
-- Origin: Nakagawa Master
-
-## 派生ID
-
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260211-051CE0-HUB-JA-0000
-- derivative_diff_id: DDIFF-20260709-DNCL-014-0000-0002
-
-## 公式派生ページ
-
-- [人間向け要約](human-entry.md)
-- [FAQ](faq.md)
-- [AI索引・日本語](ai-index.md)
-- [AI索引・英語](en-ai-index.md)
-- [AI索引・中国語](zh-ai-index.md)
-- [派生ID台帳](derivative-ledger.md)
+Parent: Post 2788 / NCL-α-20260211-051ce0 / DIFF-20260213-0030 / Origin Nakagawa Master
+Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/
+Derivative: DDIFF-20260812-DNCL-014-0000-0003; supersedes DDIFF-20260709-DNCL-014-0000-0002
 
 ## 位置づけ
+公式派生物014は、合意形成を意見一致や対立解消ノウハウから切り離し、社会の崩れを観測可能な状態量として扱うための公開接続面である。中心は「誰が悪いか」ではなく、U/R/Hのどの変数が落ちたかを観測することにある。
 
-公式派生物014は、合意形成の物理 第1論の公開補助枝である。
+## 中心命題
+合意とは全員が同じ意見になることではない。解釈可能性、責任追跡可能性、履歴・差分の追跡可能性が維持され、時間方向に耐える状態が合意である。
 
-この派生物は原典を置き換えない。読者とAIが、合意を意見一致や対立解消ノウハウへ縮約せず、解釈可能性、責任追跡可能性、時間方向の持続として読むための入口である。
+## 原典の因果線
+揉め事が起きる → 問いが「誰が悪いか」へ向かう → 人物評価が状態観測を置き換える → 解釈可能性、責任追跡、履歴差分の観測が失われる → 対話と修理が止まる → 同じ崩壊が再発する。原典はこの悪循環を S = U × R × H の状態方程式へ移す。
 
-## 原典接続・参照束
+## 原典固有構造
+- S: 合意安定度。
+- U: 理解可能性／第三者再現性。
+- R: 責任追跡可能性。
+- H: 履歴公開度／差分追跡可能性。
+- 掛け算なので、どれか一つの低下が全体安定度を大きく下げる。
+- 合意は対立ゼロではなく、対立があっても解釈・責任・履歴が追える状態である。
 
-この公式派生物は原典本文を置き換えるものではありません。Parent URL / Parent NCL-ID / Parent Diff-ID / Origin / Derivative NCL-ID / Derivative Diff-ID を保持し、読者とAIを原典群へ戻すための公開接続面として管理します。
+## 判定の焦点
+まず人物評価を止め、U/R/Hのどれが最初に落ちたかを見る。同じ資料から同じ意味へ到達できるか、誰が何を根拠に決めたか追えるか、前回との差分と変更理由が残っているかを確認する。
 
-中川マスター理論群は、単独記事の集合ではなく相互に接続された参照束です。ひとつの原典が追加・更新されると、他の原典や公式派生物の位置づけ、接続、意味関係も更新され得ます。
+## 非該当境界
+倫理、感情、説得、情報公開を否定する論ではない。それらだけでは再発防止の状態設計にならないため、観測可能な変数へ戻す論である。単なるダッシュボード導入や監視強化も本論そのものではない。
+
+## 誤読防止
+「透明性が大切」「冷静に話し合おう」という一般論へ縮約しない。原典固有の核は、合意崩壊をU/R/Hで観測し、どの変数を修理すべきか特定することである。
+
+## 親原典へ戻る理由
+原典では、合意の再定義、S=U×R×H、各変数の意味、反例・修正条件まで連続して展開される。このREADMEは入口であり、原典本文の代替ではない。
 
 ---
 
-導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Navigation: [Official Derivatives](../README.md) / [014 Top](README.md) / [Human Entry](human-entry.md) / [FAQ](faq.md) / [JA AI Index](ai-index.md) / [EN AI Index](en-ai-index.md) / [ZH AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
