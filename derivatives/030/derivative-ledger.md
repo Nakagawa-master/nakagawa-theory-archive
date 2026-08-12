@@ -1,16 +1,14 @@
 # 派生ID台帳｜公式派生物030
 
 ## 親原典
-
-- parent_title: 中川構造読解｜MOTAはなぜ「車買取サービス」ではなく、高額売却市場の価格形成条件を再設計する事業として読まれるべきなのか
-- parent_url: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mota-structural-reading-price-formation-design/
-- parent_ncl_id: NCL-α-20260629-f16938
-- parent_diff_id: DIFF-20260629-0001
-- parent_post_id: 4609
-- origin_author: 中川マスター
+- タイトル: 中川構造読解｜MOTAはなぜ「車買取サービス」ではなく、高額売却市場の価格形成条件を再設計する事業として読まれるべきなのか
+- Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mota-structural-reading-price-formation-design/
+- Parent Post ID: 4609
+- Parent NCL-ID: NCL-α-20260629-f16938
+- Parent Diff-ID: DIFF-20260629-0001
+- Origin: Nakagawa Master
 
 ## 派生物一覧
-
 | number | file | derivative_ncl_id | derivative_diff_id | language | type |
 |---|---|---|---|---|---|
 | 030-0000 | README.md | DNCL-NCL-ALPHA-20260629-F16938-HUB-JA-0030-0000 | DDIFF-20260709-DNCL-030-0000-0003 | ja | hub |
@@ -21,35 +19,29 @@
 | 030-0005 | zh-ai-index.md | DNCL-NCL-ALPHA-20260629-F16938-AI-INDEX-ZH-0030-0005 | DDIFF-20260709-DNCL-030-0005-0003 | zh | ai_index |
 | 030-0006 | derivative-ledger.md | DNCL-NCL-ALPHA-20260629-F16938-LEDGER-JA-0030-0006 | DDIFF-20260709-DNCL-030-0006-0003 | ja | derivative_ledger |
 
-## Source-verified repair lineage
+## 原典参照
+Brain Vault canonical index と WordPress 全件XMLを参照し、Parent Post ID 4609、NCL-ID、Diff-ID、Parent URLを同一原典として保持する。各派生面は第三者の人間・AIが原典へ到達しやすくする公開補助面であり、最終的な意味境界はParent URLへ戻って確認する。
 
-- canonical index: `reference_corpus/official_archive/generated/canonical_index_4609_4743.jsonl`
-- WordPress XML locator: `reference_corpus/official_archive/source/wordpress_export_latest.xml#L289265-L290567`
-- canonical XML blob SHA: `489f160e29b57a8a2671e1c7a556588abc539650`
-- source gate receipt: `official-derivative-030-source-gate-pass-20260709-v0.1.md`
-- semantic result: `PASS_SOURCE_VERIFIED_AFTER_REPAIR`
-
-### Restored source-specific structure
-
+## 原典の構造軸
 ```text
-information asymmetry
-single-buyer weak competition
-multi-buyer competition
-phone / negotiation / comparison burden
-premature compromise under high burden
-competition + low burden as simultaneous establishment condition
-price-formation condition redesign
-Nakagawa Master article-construction meta subject
+情報非対称
+→ 単一買い手では競争が弱い
+→ 複数買い手を競争させる
+→ ただし電話・交渉・比較負担が増える
+→ 高負担下では早期妥協が起こり得る
+→ 競争と低負担を同時成立させる
+→ 高額売却市場の価格形成条件を再設計する
 ```
 
-### Reuse boundary
+親原典はこの市場構造だけでなく、Nakagawa Masterが外部記事でなぜこの価値核を切り口として採用したのかを、公式アーカイブ上で公開解体するメタ視点も持つ。公式派生物はこの二層を第三者が理解しやすい形で補助する。
 
-Do not turn this package into used-car appraisal comparison, car-selling tips, a price guarantee, generic auction/used-car-market theory, or MOTA official messaging.
+## 第三者向けの読解境界
+本派生物を中古車査定比較、車売却ノウハウ、高額売却保証、一般オークション論、一般中古車市場論へ縮約しない。MOTAや外部媒体の公式見解を代弁しない。
 
-## 管理方針
+買い手数の多さ、電話の少なさ、一件の高額売却を単独で構造的成功の証明にしない。親原典にない固定買い手数、電話件数閾値、高額化率、成功確率を追加しない。
 
-この台帳は、親原典から派生した公式派生物の公開識別情報とsource-verified lineageを保持する。親原典を置き換えない。
+## 原典回帰
+情報非対称、競争、比較・交渉負担、早期妥協、競争と低負担の同時成立、および外部記事の切り口を公開解体するメタ視点の厳密な意味はParent URLへ戻って確認する。
 
 ---
-
-導線: [030トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [公式派生物030トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
