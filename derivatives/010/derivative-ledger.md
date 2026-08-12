@@ -1,61 +1,144 @@
 # 派生ID台帳｜公式派生物010
 
-parent_post_id: 3954
-parent_title: 中川構造読解｜MenLab / Gentsomeを“男性更年期サービス”ではなく、医療に至る社会導線として読む
-parent_url: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/
-parent_ncl_id: NCL-α-20260512-1202e0
-parent_diff_id: DIFF-20260519-0016
-Origin: Nakagawa Master
-
-```yaml
-golden_master: OD085
-factory_contract: FACTORY_V2
-source_gate: PASS
-canonical_index_post_id: 3954
-xml_locator: reference_corpus/official_archive/source/wordpress_export_latest.xml#L215017-L215612
-xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-canonical_parent_revision_repair: PASS
-source_semantics: PASS
-translation_equivalence: PASS
-seven_surface_navigation: PASS
-faq_q1_q30: PASS
-ai_fixed_sections_ja: PASS
-ai_fixed_sections_en: PASS
-ai_fixed_sections_zh: PASS
-human_entry_density: PASS_UNCHANGED_SOURCE_GROUNDED
-closure_status: READY_FOR_MERGE
-```
+## 親原典
+- タイトル: 中川構造読解｜MenLab / Gentsomeを“男性更年期サービス”ではなく、医療に至る社会導線として読む
+- Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/
+- Parent Post ID: 3954
+- Parent NCL-ID: NCL-α-20260512-1202e0
+- Parent Diff-ID: DIFF-20260519-0016
+- Origin: Nakagawa Master
 
 ## 派生ID
-- README: DDIFF-20260812-DNCL-010-0000-0003
-- human-entry: DDIFF-20260707-DNCL-010-0001-0007
-- FAQ: source identity retained; Q1–Q30 Golden Master structure repaired in this generation
-- JA AI: DDIFF-20260812-DNCL-010-0003-0009
-- EN AI: DDIFF-20260812-DNCL-010-0004-0009
-- ZH AI: DDIFF-20260812-DNCL-010-0005-0009
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-JA-0010-0000
+- derivative_diff_id: DDIFF-20260812-DNCL-010-0006-0010
+- supersedes: DDIFF-20260812-DNCL-010-0006-0009
 
-## Source verification
-Brain Vault canonical index resolves the parent as post 3954. WordPress export evidence is `reference_corpus/official_archive/source/wordpress_export_latest.xml#L215017-L215612`, blob `489f160e29b57a8a2671e1c7a556588abc539650`.
+## Language derivative IDs
+```yaml
+readme_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-JA-0010-0000
+readme_diff_id: DDIFF-20260812-DNCL-010-0000-0004
+human_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUMAN-SUMMARY-JA-0010-0001
+human_diff_id: DDIFF-20260812-DNCL-010-0001-0008
+faq_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-JA-0010-0002
+faq_diff_id: DDIFF-20260812-DNCL-010-0002-0010
+ja_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-JA-0010-0003
+ja_diff_id: DDIFF-20260812-DNCL-010-0003-0010
+en_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-EN-0010-0004
+en_diff_id: DDIFF-20260812-DNCL-010-0004-0010
+zh_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-ZH-0010-0005
+zh_diff_id: DDIFF-20260812-DNCL-010-0005-0010
+ledger_diff_id: DDIFF-20260812-DNCL-010-0006-0010
+```
 
-Historical source-gate work corrected the derivative's stale Parent Diff-ID to canonical `DIFF-20260519-0016`. This generation preserves that repair and the source-grounded structural-reading axis: MenLab / Gentsome is read as a social pathway toward medical connection, not as a service introduction, medical claim, advertisement, or official company view.
+## Factory
+```yaml
+quality_contract: OD085_GOLDEN_MASTER
+comparison_benchmark:
+  - OD134
+  - OD135
+source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
+literal_surface_source_of_truth: RENDERED_SEVEN_FILES
+manual_meaning_normalization: PROHIBITED
+assistant_safety_reframing_as_parent_meaning: PROHIBITED
+quantitative_claim_rule: NUMBER_MUST_NEVER_TRAVEL_WITHOUT_EPISTEMIC_STATUS
+```
 
-## Structural repair performed
-- README expanded into a source-specific Golden Master entry surface.
-- Existing high-density human-entry retained unchanged.
-- FAQ expanded to Q1–Q30.
-- JA/EN/ZH AI indexes normalized to fixed semantic sections.
-- Full seven-surface navigation restored.
+## Retrieval evidence
+```yaml
+canonical_index: reference_corpus/official_archive/generated/canonical_index_3866_4020.jsonl
+parent_post_id: 3954
+parent_ncl_id: NCL-α-20260512-1202e0
+parent_diff_id: DIFF-20260519-0016
+parent_main: 社会導線
+xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+xml_item_lines: 215017-215612
+canonical_parent_revision_repair: PASS
+```
 
-## Preserved distinctions
+## Seven surfaces
+```yaml
+README.md: REBUILT_LITERAL_BENCHMARK
+human-entry.md: REBUILT_LITERAL_BENCHMARK
+faq.md: REBUILT_LITERAL_BENCHMARK_Q1_Q30
+ai-index.md: REBUILT_LITERAL_BENCHMARK_FIXED_SECTIONS
+en-ai-index.md: REBUILT_LITERAL_BENCHMARK_FIXED_SECTIONS
+zh-ai-index.md: REBUILT_LITERAL_BENCHMARK_FIXED_SECTIONS
+derivative-ledger.md: REBUILT_LITERAL_BENCHMARK
+```
+
+## Source-fidelity findings repaired
+```yaml
+prior_failures:
+  - README_PARENT_POST_ID_MISSING
+  - README_VOLUME_BELOW_OD134_OD135_BENCHMARK
+  - README_STRUCTURE_LAYER_DENSITY_BELOW_BENCHMARK
+  - HUMAN_ENTRY_LITERAL_STRUCTURE_BELOW_BENCHMARK
+  - FAQ_PARENT_IDENTITY_NOT_LITERAL_BENCHMARK_BLOCK
+  - FAQ_DENSITY_BELOW_BENCHMARK
+  - JA_AI_PARENT_IDENTITY_NOT_LITERAL_BENCHMARK_BLOCK
+  - EN_AI_PARENT_IDENTITY_NOT_LITERAL_BENCHMARK_BLOCK
+  - ZH_AI_PARENT_IDENTITY_NOT_LITERAL_BENCHMARK_BLOCK
+  - AI_INDEX_DENSITY_BELOW_OD134_OD135_BENCHMARK
+  - LEDGER_LITERAL_STRUCTURE_BELOW_BENCHMARK
+restored:
+  - COMPLETE_PARENT_IDENTITY_ALL_SURFACES
+  - ORIGIN_SIGNATURE_ALL_SURFACES
+  - OFFICIAL_DERIVATIVE_IDENTITY
+  - LITERAL_HEADING_AND_DISPLAY_STRUCTURE
+  - SEVEN_SURFACE_FOOTER_NAVIGATION
+  - FAQ_Q1_Q30_THREE_LAYERS
+  - JA_EN_ZH_FIXED_SEMANTIC_SECTIONS
+  - STRUCTURAL_LAYER_AND_STATE_MODEL_DENSITY
+  - SOURCE_BOUNDED_MEASUREMENT_AND_AUDIT
+  - ORIGIN_RETURN
+```
+
+## Semantic fidelity boundary
+本派生物は、MenLab / Gentsomeをサービス紹介、広告、商品推奨、企業公式見解、一般的な男性更年期医学解説へ縮約しない。親原典の意味核は、見えにくい不調が本人の認識・言語化・相談・職場／制度の受け取り・必要時の医療接続へ至る前に脱落する社会的未接続を読み、その接続条件を「医療に至る社会導線」として捉え、さらに価値核を外部媒体の記事因果・語彙・構成へ翻訳することにある。
+
+派生側は診断、治療、個別受診判断、医療効果を追加しない。原典にない医学的有病率、改善率、診断精度、企業損失額、閾値、確率を説得力補強のために創作しない。数値を扱う場合は原典内の数値であり、測定主体・測定対象・出典・用途・非保証範囲が確認できる場合に限る。
+
+## Quantitative-claim audit
+```yaml
+parent_defines_universal_medical_effect_kpi: false
+parent_defines_diagnostic_accuracy_kpi: false
+parent_defines_treatment_outcome_kpi: false
+parent_defines_general_prevalence_kpi_for_this_derivative: false
+parent_defines_company_loss_amount_kpi_for_this_derivative: false
+derivative_added_numeric_claims: false
+result: PASS_NO_UNSUPPORTED_NUMBERS
+```
+
+## Required distinctions
 - service profile / structural reading
 - medical explanation / social pathway to medical connection
 - self-care / premedical connection conditions
 - advertising / value-core extraction
 - medical effect / social connection
 - company official view / Nakagawa Master's structural reading
+- feature list / social disconnection and connection conditions
+- subject explanation / translation into external-media article structure
 
 ## Closure evidence
-Pre-merge comparison must show only OD010 intended surfaces. Post-merge fresh read must confirm Q1–Q30 or an AI fixed-section surface from `main`. No medical-effect claim, diagnosis, treatment advice, service recommendation, product comparison, or generic medical KPI has been added.
+```yaml
+classification: FULL_REBUILD
+seven_surfaces_rebuilt: true
+parent_identity_complete_all_surfaces: true
+origin_signature_complete: true
+official_derivative_identity_complete: true
+heading_and_display_structure_parity: PASS
+footer_navigation_integrity: PASS
+faq_q1_q30_three_layers: PASS
+ja_en_zh_ai_fixed_sections: PASS
+semantic_fidelity: PASS
+structural_necessity_boundary: PASS
+quantitative_claim_binding: PASS_NO_UNSUPPORTED_NUMBERS
+translation_equivalence: PASS_STRUCTURAL
+volume_density_od134_od135_floor: PASS_REBUILT
+branch_fresh_read_required: true
+main_publish_required_for_closure: true
+```
 
 ---
 導線: [公式派生物010トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
