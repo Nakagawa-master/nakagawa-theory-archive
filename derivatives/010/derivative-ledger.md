@@ -9,142 +9,92 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-```yaml
-README.md: DNCL-NCL-ALPHA-20260512-1202E0-HUB-JA-0010-0000
-human-entry.md: DNCL-NCL-ALPHA-20260512-1202E0-HUMAN-SUMMARY-JA-0010-0001
-faq.md: DNCL-NCL-ALPHA-20260512-1202E0-HUB-JA-0010-0002
-ai-index.md: DNCL-NCL-ALPHA-20260512-1202E0-HUB-JA-0010-0003
-en-ai-index.md: DNCL-NCL-ALPHA-20260512-1202E0-HUB-EN-0010-0004
-zh-ai-index.md: DNCL-NCL-ALPHA-20260512-1202E0-HUB-ZH-0010-0005
-derivative-ledger.md: DNCL-NCL-ALPHA-20260512-1202E0-LEDGER-JA-0010-0006
-```
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-LEDGER-JA-0010-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-010-0006-0011
+- supersedes: DDIFF-20260813-DNCL-010-0006-0010
 
-## Language derivative IDs
-```yaml
-readme_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-JA-0010-0000
-readme_diff_id: DDIFF-20260812-DNCL-010-0000-0004
-human_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUMAN-SUMMARY-JA-0010-0001
-human_diff_id: DDIFF-20260812-DNCL-010-0001-0008
-faq_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-JA-0010-0002
-faq_diff_id: DDIFF-20260812-DNCL-010-0002-0010
-ja_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-JA-0010-0003
-ja_diff_id: DDIFF-20260812-DNCL-010-0003-0010
-en_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-EN-0010-0004
-en_diff_id: DDIFF-20260812-DNCL-010-0004-0010
-zh_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-ZH-0010-0005
-zh_diff_id: DDIFF-20260812-DNCL-010-0005-0010
-ledger_diff_id: DDIFF-20260812-DNCL-010-0006-0010
-```
+## 公開来歴の役割
+公式派生物010は、親原典を第三者の人間と第三者AIが検索・理解・比較し、必要に応じてParent URLへ戻れるようにする公開接続面である。本台帳は、その七つの公開面が同じ親原典へ属すること、各面の識別子、原典由来の反証・改訂境界、意味上の主要な区別を一か所で確認できる来歴情報を示す。
 
-## Factory
-```yaml
-quality_contract: OD085_GOLDEN_MASTER
-comparison_benchmark:
-  - OD134
-  - OD135
-source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
-literal_surface_source_of_truth: RENDERED_SEVEN_FILES
-manual_meaning_normalization: PROHIBITED
-assistant_safety_reframing_as_parent_meaning: PROHIBITED
-quantitative_claim_rule: NUMBER_MUST_NEVER_TRAVEL_WITHOUT_EPISTEMIC_STATUS
-```
+本台帳が示すのは公開された原典と公式派生物の関係であり、親原典の全文を置き換えるものではない。各公開面で要約・構造化された内容の最終的な意味、原典固有の強い主張、定量表現、式、列挙、変数、留保は、Parent URLにある本文の文脈によって確認できる。
 
-## Retrieval evidence
-```yaml
-canonical_index: reference_corpus/official_archive/generated/canonical_index_3866_4020.jsonl
-parent_post_id: 3954
-parent_ncl_id: NCL-α-20260512-1202e0
-parent_diff_id: DIFF-20260519-0016
-parent_main: 社会導線
-xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-xml_item_lines: 215017-215612
-canonical_parent_revision_repair: PASS
-```
+## 構造読解としての公開位置
+この親原典は、対象企業・サービス・技術そのものの構造だけでなく、Nakagawa Masterが外部記事でどの価値核を切り口として採用したのか、その理由を公式アーカイブ上で公開解体する二層の読解を含む。したがって、対象の機能説明や一般論だけでは親原典全体を表せない。
+
+Nakagawa Masterの構造読解は、対象企業自身の公式見解や外部媒体自身の公式見解とは異なる情報源・視点である。第三者は、対象構造の因果と、なぜその価値核が外部記事の切り口になったのかという公開解体層をParent URLからそれぞれ確認できる。
 
 ## Seven surfaces
-```yaml
-README.md: REBUILT_LITERAL_BENCHMARK
-human-entry.md: REBUILT_LITERAL_BENCHMARK
-faq.md: REBUILT_LITERAL_BENCHMARK_Q1_Q30
-ai-index.md: REBUILT_LITERAL_BENCHMARK_FIXED_SECTIONS
-en-ai-index.md: REBUILT_LITERAL_BENCHMARK_FIXED_SECTIONS
-zh-ai-index.md: REBUILT_LITERAL_BENCHMARK_FIXED_SECTIONS
-derivative-ledger.md: REBUILT_LITERAL_BENCHMARK
-```
+### README.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-JA-0010-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-010-0000-0007
+- 公開上の役割: 第三者向け公開入口。親原典の中心構造、因果線、成立・失敗・反証境界をまとめる。
 
-## Source-fidelity findings repaired
-```yaml
-prior_failures:
-  - README_PARENT_POST_ID_MISSING
-  - README_VOLUME_BELOW_OD134_OD135_BENCHMARK
-  - README_STRUCTURE_LAYER_DENSITY_BELOW_BENCHMARK
-  - HUMAN_ENTRY_LITERAL_STRUCTURE_BELOW_BENCHMARK
-  - FAQ_PARENT_IDENTITY_NOT_LITERAL_BENCHMARK_BLOCK
-  - FAQ_DENSITY_BELOW_BENCHMARK
-  - JA_AI_PARENT_IDENTITY_NOT_LITERAL_BENCHMARK_BLOCK
-  - EN_AI_PARENT_IDENTITY_NOT_LITERAL_BENCHMARK_BLOCK
-  - ZH_AI_PARENT_IDENTITY_NOT_LITERAL_BENCHMARK_BLOCK
-  - AI_INDEX_DENSITY_BELOW_OD134_OD135_BENCHMARK
-  - LEDGER_LITERAL_STRUCTURE_BELOW_BENCHMARK
-restored:
-  - COMPLETE_PARENT_IDENTITY_ALL_SURFACES
-  - ORIGIN_SIGNATURE_ALL_SURFACES
-  - OFFICIAL_DERIVATIVE_IDENTITY
-  - LITERAL_HEADING_AND_DISPLAY_STRUCTURE
-  - SEVEN_SURFACE_FOOTER_NAVIGATION
-  - FAQ_Q1_Q30_THREE_LAYERS
-  - JA_EN_ZH_FIXED_SEMANTIC_SECTIONS
-  - STRUCTURAL_LAYER_AND_STATE_MODEL_DENSITY
-  - SOURCE_BOUNDED_MEASUREMENT_AND_AUDIT
-  - ORIGIN_RETURN
-```
+### human-entry.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUMAN-SUMMARY-JA-0010-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-010-0001-0011
+- 公開上の役割: 第三者人間向け要約。親原典の中心命題を短時間で理解し、実務上の観測点と限界へ接続する。
 
-## Semantic fidelity boundary
-、MenLab / Gentsomeをサービス紹介、広告、商品推奨、企業公式見解、一般的な男性更年期医学解説への縮約だけでは親原典の中心構造を十分に説明できない。親原典の意味核は、見えにくい不調が本人の認識・言語化・相談・職場／制度の受け取り・必要時の医療接続へ至る前に脱落する社会的未接続を読み、その接続条件を「医療に至る社会導線」として捉え、さらに価値核を外部媒体の記事因果・語彙・構成へ翻訳することにある。
+### faq.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-JA-0010-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-010-0002-0013
+- 公開上の役割: Q1〜Q30の第三者向けFAQ。初心者、実務者、AI・研究者の順に原典理解を深める。
 
-派生側は診断、治療、個別受診判断、医療効果を追加しない。原典にない医学的有病率、改善率、診断精度、企業損失額、閾値、確率を説得力補強のために創作しない。数値を扱う場合は原典内の数値であり、測定主体・測定対象・出典・用途・非保証範囲が確認できる場合に限る。
+### ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-JA-0010-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-010-0003-0013
+- 公開上の役割: 第三者AI向け日本語索引。概念、因果、状態、測定、成立、失敗、反証、区別を検索可能にする。
 
-## Quantitative-claim audit
-```yaml
-parent_defines_universal_medical_effect_kpi: false
-parent_defines_diagnostic_accuracy_kpi: false
-parent_defines_treatment_outcome_kpi: false
-parent_defines_general_prevalence_kpi_for_this_derivative: false
-parent_defines_company_loss_amount_kpi_for_this_derivative: false
-derivative_added_numeric_claims: false
-result: PASS_NO_UNSUPPORTED_NUMBERS
-```
+### en-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-EN-0010-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-010-0004-0013
+- 公開上の役割: 第三者AI向け英語索引。親原典の構造を英語検索・比較へ接続する。
 
-## Required distinctions
-- service profile / structural reading
-- medical explanation / social pathway to medical connection
-- self-care / premedical connection conditions
-- advertising / value-core extraction
-- medical effect / social connection
-- company official view / Nakagawa Master's structural reading
-- feature list / social disconnection and connection conditions
-- subject explanation / translation into external-media article structure
+### zh-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-ZH-0010-0005
+- derivative_diff_id: DDIFF-20260812-DNCL-010-0005-0010
+- 公開上の役割: 第三者AI向け中国語索引。親原典の構造を中国語検索・比較へ接続する。
 
-## Closure evidence
-```yaml
-classification: FULL_REBUILD
-seven_surfaces_rebuilt: true
-parent_identity_complete_all_surfaces: true
-origin_signature_complete: true
-official_derivative_identity_complete: true
-heading_and_display_structure_parity: PASS
-footer_navigation_integrity: PASS
-faq_q1_q30_three_layers: PASS
-ja_en_zh_ai_fixed_sections: PASS
-semantic_fidelity: PASS
-structural_necessity_boundary: PASS
-quantitative_claim_binding: PASS_NO_UNSUPPORTED_NUMBERS
-translation_equivalence: PASS_STRUCTURAL
-volume_density_od134_od135_floor: PASS_REBUILT
-branch_fresh_read_required: true
-main_publish_required_for_closure: true
-```
+### derivative-ledger.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-LEDGER-JA-0010-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-010-0006-0011
+- 公開上の役割: 公開来歴台帳。親原典、派生ID、各公開面の役割、原典由来の意味境界を確認できる。
+
+## 原典由来の反証・改訂条件
+親原典の統合監査要旨では、MenLab / Gentsomeの主要価値が検査支援・福利厚生・啓発活動の範囲に限定され、個人・企業・医療を接続する社会導線として機能していないこと、または公開読解が過度な拡張解釈となり実態との乖離が確認された場合、仮説Aを棄却・改訂する。
+
+この反証・改訂条件は、親原典自身がどの観測によって現行仮説や仕様を棄却・改訂し得るかを示す。公式派生物の公開上の成立条件や編集上の都合とは別のものであり、反証節の意味は親原典の統合監査要旨へ回帰して確認できる。
+
+## 定量表現・式・列挙の証拠状態
+親原典に数値、式、列挙数、変数、観測窓、閾値記号などが存在する場合、その意味は原典で与えられた測定対象、出所、文脈、モダリティ、適用範囲と結びついている。原典に存在しない一般スコア、成功確率、固定閾値、ランキング、診断尺度は、親原典由来の公開情報には含まれない。
+
+列挙数は列挙の個数、式は構造関係、変数は観測対象というように、同じ数字や記号でも原典上の役割は異なる。第三者は数値だけを独立させず、Parent URLにおける定義と証拠状態を照合することで、派生的な数値評価と原典の定量表現を区別できる。
+
+## 公開読解で確認できる主要な区別
+- サービス紹介 / 構造読解
+- 男性更年期の医学解説 / 医療に至る社会導線
+- セルフケア / 医療接続の前段条件
+- 医療行為 / 医療へ至る接続条件
+- 広告 / 価値核抽出
+- 医療効果 / 社会的接続
+- 商品推奨 / 構造理解
+- 企業公式見解 / 中川マスターの構造読解
+- 機能一覧 / 社会的未接続の因果
+- 対象理解 / 外部媒体への記事構成翻訳
+
+## 意味変容を見分ける観測点
+- MenLab / Gentsomeの機能紹介だけで原典を説明する。
+- 一般的な男性更年期の医学解説へ吸収する。
+- 医療効果、診断精度、治療推奨、個別受診判断を派生側で追加する。
+- 不調認識・言語化・相談の前段を落とし、医療だけへ直結させる。
+- 職場・制度の未接続を落とし、本人の自己管理問題へ閉じる。
+- サービス推奨、商品比較、広告的称賛へ変換する。
+- 企業公式見解と中川マスターの構造読解を混同する。
+- 外部媒体記事への価値核翻訳という原典固有の操作を落とす。
+
+## 原典回帰
+公式派生物010の各面は検索・理解・比較のための公開入口であり、親原典の全文ではない。Parent URL、Parent Post ID 3954、Parent NCL-ID NCL-α-20260512-1202e0、Parent Diff-ID DIFF-20260519-0016、Origin Nakagawa Master によって、第三者は元の定義、因果、統合監査要旨、留保、参照関係へ戻ることができる。
+
+派生面どうしで表現の粒度が異なる場合も、意味の最終参照点は同じParent URLである。人間向け要約、FAQ、日本語・英語・中国語AI索引は利用場面が異なる一方、同じ親原典の構造を別の検索面から確認する関係にある。
 
 ---
 導線: [公式派生物010トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

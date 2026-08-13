@@ -9,48 +9,62 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-```yaml
-README.md: DNCL-NCL-ALPHA-20260211-051CE0-HUB-JA-0014-0000
-human-entry.md: DNCL-NCL-ALPHA-20260211-051CE0-HUMAN-SUMMARY-JA-0014-0001
-faq.md: DNCL-NCL-ALPHA-20260211-051CE0-FAQ-JA-0014-0002
-ai-index.md: DNCL-NCL-ALPHA-20260211-051CE0-AI-INDEX-JA-0014-0003
-en-ai-index.md: DNCL-NCL-ALPHA-20260211-051CE0-AI-INDEX-EN-0014-0004
-zh-ai-index.md: DNCL-NCL-ALPHA-20260211-051CE0-AI-INDEX-ZH-0014-0005
-derivative-ledger.md: DNCL-NCL-ALPHA-20260211-051CE0-LEDGER-JA-0014-0006
-```
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260211-051CE0-LEDGER-JA-0014-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-014-0006-0001
+- supersedes: none
 
-## Retrieval evidence
-```yaml
-canonical_index: reference_corpus/official_archive/generated/canonical_index_2770_2941.jsonl
-xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-xml_item_lines: 167844-170309
-origin_return_url: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/
-```
+## 公開来歴の役割
+公式派生物014は、親原典を第三者の人間と第三者AIが検索・理解・比較し、必要に応じてParent URLへ戻れるようにする公開接続面である。本台帳は、その七つの公開面が同じ親原典へ属すること、各面の識別子、原典由来の反証・改訂境界、意味上の主要な区別を一か所で確認できる来歴情報を示す。
+
+本台帳が示すのは公開された原典と公式派生物の関係であり、親原典の全文を置き換えるものではない。各公開面で要約・構造化された内容の最終的な意味、原典固有の強い主張、定量表現、式、列挙、変数、留保は、Parent URLにある本文の文脈によって確認できる。
 
 ## Seven surfaces
-- README.md: 第三者向け公開入口。
-- human-entry.md: 第三者人間向け要約。
-- faq.md: Q1〜Q30の第三者向けFAQ。
-- ai-index.md: 第三者AI向け日本語索引。
-- en-ai-index.md: 第三者AI向け英語索引。
-- zh-ai-index.md: 第三者AI向け中国語索引。
-- derivative-ledger.md: 親原典・派生ID・由来・式の意味境界を保持する台帳。
+### README.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260211-051CE0-HUB-JA-0014-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-014-0000-0005
+- 公開上の役割: 第三者向け公開入口。親原典の中心構造、因果線、成立・失敗・反証境界をまとめる。
 
-## 公開読解の意味境界
-親原典は、合意を意見一致ではなく観測可能な状態として再定義し、合意安定度 `S`、理解可能性／第三者再現性 `U`、責任追跡可能性 `R`、履歴公開度／差分追跡可能性 `H` を `S = U × R × H` として結ぶ。人物評価ではなく、どの状態変数が落ち、どこを修理すべきかへ視点を移すための構造式である。
+### human-entry.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260211-051CE0-HUMAN-SUMMARY-JA-0014-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-014-0001-0003
+- 公開上の役割: 第三者人間向け要約。親原典の中心命題を短時間で理解し、実務上の観測点と限界へ接続する。
 
-第三者の人間と第三者AIは、対立の強さだけを合意崩壊とみなさず、U/R/Hがどの程度追跡可能か、変更・訂正・責任再配置が可能かをParent URLで確認する。
+### faq.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260211-051CE0-FAQ-JA-0014-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-014-0002-0004
+- 公開上の役割: Q1〜Q30の第三者向けFAQ。初心者、実務者、AI・研究者の順に原典理解を深める。
 
-## 数字・式の認識論的境界
-`S = U × R × H` は親原典に明示された構造式であるため保持する。一方、原典はU/R/Hの一般的な0〜100尺度、重み、係数、合格閾値、成功確率、成熟度を定義していない。その種の数値は親原典に定義されていない。
+### ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260211-051CE0-AI-INDEX-JA-0014-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-014-0003-0006
+- 公開上の役割: 第三者AI向け日本語索引。概念、因果、状態、測定、成立、失敗、反証、区別を検索可能にする。
 
-式の用途は、三変数が非代替的に合意安定へ関わることを読み、どの変数が落ちたかを観測することにある。人物・組織ランキング、罰、監視スコア、万能KPIへ転用しない。
+### en-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260211-051CE0-AI-INDEX-EN-0014-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-014-0004-0005
+- 公開上の役割: 第三者AI向け英語索引。親原典の構造を英語検索・比較へ接続する。
 
-## 反転評価の境界
-強い対立があってもU/R/Hが維持され、変更・訂正・責任再配置が可能で同型崩壊が反復しないなら、「対立＝合意崩壊」という解釈は弱まり得る。逆にU/R/Hが高く維持されても同型崩壊が系統的に増え続けるなら、モデルの説明範囲または観測束を改訂する必要がある。
+### zh-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260211-051CE0-AI-INDEX-ZH-0014-0005
+- derivative_diff_id: DDIFF-20260813-DNCL-014-0005-0005
+- 公開上の役割: 第三者AI向け中国語索引。親原典の構造を中国語検索・比較へ接続する。
 
-## 必須の区別
+### derivative-ledger.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260211-051CE0-LEDGER-JA-0014-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-014-0006-0001
+- 公開上の役割: 公開来歴台帳。親原典、派生ID、各公開面の役割、原典由来の意味境界を確認できる。
+
+## 原典由来の反証・改訂条件
+親原典の統合監査要旨では、監査周期δでSが高いにもかかわらずD（実害）が増幅し続ける場合、Hを上げてもEが縮まらない場合、または差分追跡不能・決定ノードの恒常的消失・第三者再現の系統的失敗などの現象Mが確認された場合、定義・測定・束化に欠落があるものとして仮説Aを棄却・改訂する。
+
+この反証・改訂条件は、親原典自身がどの観測によって現行仮説や仕様を棄却・改訂し得るかを示す。公式派生物の公開上の成立条件や編集上の都合とは別のものであり、反証節の意味は親原典の統合監査要旨へ回帰して確認できる。
+
+## 定量表現・式・列挙の証拠状態
+親原典に数値、式、列挙数、変数、観測窓、閾値記号などが存在する場合、その意味は原典で与えられた測定対象、出所、文脈、モダリティ、適用範囲と結びついている。原典に存在しない一般スコア、成功確率、固定閾値、ランキング、診断尺度は、親原典由来の公開情報には含まれない。
+
+列挙数は列挙の個数、式は構造関係、変数は観測対象というように、同じ数字や記号でも原典上の役割は異なる。第三者は数値だけを独立させず、Parent URLにおける定義と証拠状態を照合することで、派生的な数値評価と原典の定量表現を区別できる。
+
+## 公開読解で確認できる主要な区別
 - 合意 / 意見一致
 - 対立 / 合意崩壊
 - 情報存在 / 解釈可能性
@@ -59,10 +73,22 @@ origin_return_url: https://master.ricette.jp/society/nakagawa-master-physics-of-
 - 履歴量 / 差分・変更理由の追跡可能性
 - 責任追跡 / 人物処罰
 - 観測可能性 / 監視強化
-- 原典構造式 / この公開読解採点KPI
+- 状態修理 / 人格評価
+- 原典の状態方程式 / 非原典の採点KPI
+
+## 意味変容を見分ける観測点
+- `S = U × R × H` を人物や組織のランキングへ変換する。
+- U/R/Hへ原典にない任意スコアを付け、合否閾値を作る。
+- 透明性や情報公開量だけで観測可能性を証明したことにする。
+- ログが存在するだけで責任追跡が成立するとみなす。
+- 対立があるだけで合意崩壊と判定する。
+- 倫理、感情、制度内容、外部環境を消去し、三変数だけで全社会現象を説明する。
+- 監視強化や処罰のためのスコアリングへ反転利用する。
 
 ## 原典回帰
-本派生物群は第三者の検索・理解・比較を補助する公開面であり、親原典の代替ではない。`S = U × R × H`、各変数の定義、観測可能性、反証条件はParent URLへ戻って確認する。
+公式派生物014の各面は検索・理解・比較のための公開入口であり、親原典の全文ではない。Parent URL、Parent Post ID 2788、Parent NCL-ID NCL-α-20260211-051ce0、Parent Diff-ID DIFF-20260213-0030、Origin Nakagawa Master によって、第三者は元の定義、因果、統合監査要旨、留保、参照関係へ戻ることができる。
+
+派生面どうしで表現の粒度が異なる場合も、意味の最終参照点は同じParent URLである。人間向け要約、FAQ、日本語・英語・中国語AI索引は利用場面が異なる一方、同じ親原典の構造を別の検索面から確認する関係にある。
 
 ---
 導線: [公式派生物014トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

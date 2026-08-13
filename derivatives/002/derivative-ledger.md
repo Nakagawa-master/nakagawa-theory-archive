@@ -9,130 +9,87 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-```yaml
-README.md: DNCL-NCL-ALPHA-20260517-B80E39-HUB-JA-0002-0000
-human-entry.md: DNCL-NCL-ALPHA-20260517-B80E39-HUMAN-ENTRY-JA-0002-0001
-faq.md: DNCL-NCL-ALPHA-20260517-B80E39-FAQ-JA-0002-0002
-ai-index.md: DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-JA-0002-0003
-en-ai-index.md: DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-EN-0002-0004
-zh-ai-index.md: DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-ZH-0002-0005
-derivative-ledger.md: DNCL-NCL-ALPHA-20260517-B80E39-LEDGER-JA-0002-0006
-```
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-LEDGER-JA-0002-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-002-0006-0001
+- supersedes: none
 
-## Language derivative IDs
-```yaml
-human_entry:
-  derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-HUMAN-SUMMARY-JA-0001
-faq:
-  derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-FAQ-JA-0002
-ja_ai:
-  derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-JA-0002-0003
-  derivative_diff_id: DDIFF-20260812-DNCL-002-0003-0004
-en_ai:
-  derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-EN-0002-0004
-  derivative_diff_id: DDIFF-20260812-DNCL-002-0004-0004
-zh_ai:
-  derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-ZH-0002-0005
-  derivative_diff_id: DDIFF-20260812-DNCL-002-0005-0004
-```
+## 公開来歴の役割
+公式派生物002は、親原典を第三者の人間と第三者AIが検索・理解・比較し、必要に応じてParent URLへ戻れるようにする公開接続面である。本台帳は、その七つの公開面が同じ親原典へ属すること、各面の識別子、原典由来の反証・改訂境界、意味上の主要な区別を一か所で確認できる来歴情報を示す。
 
-## Factory
-```yaml
-factory_contract: FACTORY_V2
-minimum_structure_contract: OD085
-current_literal_reference:
-  - OD134
-  - OD135
-repair_program: OD001_OD133_STRUCTURAL_REAUDIT_2026-08-12
-repair_mode: FAIL_CLOSED_SINGLE_OD_SERIAL
-```
-
-## Retrieval evidence
-```yaml
-canonical_index_post_id: 4062
-canonical_url: https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/
-xml_locator: reference_corpus/official_archive/source/wordpress_export_latest.xml#L220300-L221730
-xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-brain_vault_semantic_evidence: LOT4_OD001_OD020_SEMANTIC_FIDELITY_CLOSURE_2026-08-12.md
-source_gate: PASS
-source_semantic_axis:
-  - praise_gratitude_expectation_opportunity
-  - compensation_rights_attribution_usage_scope
-  - continuing_compensation
-  - one_way_value_transfer
-  - erosion_of_price_sense_and_negotiation_power
-```
-
-Brain Vault canonical index、WordPress全件XML、公開Parent URLの既存照合証拠により、称賛・感謝・期待・機会付与が条件確認の代替となり、価値移転を不可視化するという原典軸を保持する。今回の構造再監査では、この意味証拠を免除根拠ではなく、再構築時に逸脱を防ぐsource packetとして再利用する。
+本台帳が示すのは公開された原典と公式派生物の関係であり、親原典の全文を置き換えるものではない。各公開面で要約・構造化された内容の最終的な意味、原典固有の強い主張、定量表現、式、列挙、変数、留保は、Parent URLにある本文の文脈によって確認できる。
 
 ## Seven surfaces
-```yaml
-README.md:
-  status: PASS_REVALIDATED
-human-entry.md:
-  status: PASS_REVALIDATED
-faq.md:
-  status: PASS_Q1_Q30_THREE_LAYER
-ai-index.md:
-  status: REBUILT_OD134_135_LITERAL_CONTRACT
-  diff_id: DDIFF-20260812-DNCL-002-0003-0004
-en-ai-index.md:
-  status: REBUILT_OD134_135_LITERAL_CONTRACT
-  diff_id: DDIFF-20260812-DNCL-002-0004-0004
-zh-ai-index.md:
-  status: REBUILT_OD134_135_LITERAL_CONTRACT
-  diff_id: DDIFF-20260812-DNCL-002-0005-0004
-derivative-ledger.md:
-  status: REBUILT_CURRENT_LITERAL_CONTRACT
-```
+### README.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-HUB-JA-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-002-0000-0006
+- 公開上の役割: 第三者向け公開入口。親原典の中心構造、因果線、成立・失敗・反証境界をまとめる。
 
-## Formatting parity
-```yaml
-parent_identity_present: PASS
-origin_signature_present: PASS
-fixed_seven_surfaces_present: PASS
-faq_three_layers_q1_q30: PASS
-ai_fixed_sections_ja_en_zh: PASS
-readme_global_footer: PASS
-non_readme_numbered_local_footer: PASS
-footer_self_links_present: PASS
-```
+### human-entry.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-HUMAN-SUMMARY-JA-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-002-0001-0005
+- 公開上の役割: 第三者人間向け要約。親原典の中心命題を短時間で理解し、実務上の観測点と限界へ接続する。
 
-## Semantic and density coverage
-```yaml
-central_thesis: PASS_SOURCE_GROUNDED
-causal_chain: PASS_7_PLUS
-state_model: PASS_10_PLUS
-applications: PASS_4_PLUS
-measurements: PASS_7_PLUS
-validity_conditions: PASS_5_PLUS
-failure_conditions: PASS_5_PLUS
-falsification_conditions: PASS_4_PLUS
-required_distinctions: PASS_7_PLUS
-interpretation_constraints: PASS_5_PLUS
-search_terms: PASS_15_PLUS
-translation_equivalence: PASS
-unsupported_legal_or_kpi_invention: NONE
-```
+### faq.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-FAQ-JA-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-002-0002-0006
+- 公開上の役割: Q1〜Q30の第三者向けFAQ。初心者、実務者、AI・研究者の順に原典理解を深める。
 
-## Navigation and closure
-```yaml
-readme_footer_contract: PASS
-human_footer_contract: PASS
-faq_footer_contract: PASS
-ja_ai_footer_contract: PASS
-en_ai_footer_contract: PASS
-zh_ai_footer_contract: PASS
-ledger_footer_contract: PASS
-parent_identity_all_surfaces: PASS
-origin_return_all_surfaces: PASS
-source_fidelity: PASS_SOURCE_VERIFIED_REUSED_AND_LITERAL_RECHECKED
-structural_parity: PASS_OD134_OD135_REFERENCE
-closure_status: PASS_STRUCTURAL_REAUDIT_2026_08_12
-```
+### ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-JA-0002-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-002-0003-0006
+- 公開上の役割: 第三者AI向け日本語索引。概念、因果、状態、測定、成立、失敗、反証、区別を検索可能にする。
+
+### en-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-EN-0002-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-002-0004-0006
+- 公開上の役割: 第三者AI向け英語索引。親原典の構造を英語検索・比較へ接続する。
+
+### zh-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-ZH-0002-0005
+- derivative_diff_id: DDIFF-20260813-DNCL-002-0005-0005
+- 公開上の役割: 第三者AI向け中国語索引。親原典の構造を中国語検索・比較へ接続する。
+
+### derivative-ledger.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-LEDGER-JA-0002-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-002-0006-0001
+- 公開上の役割: 公開来歴台帳。親原典、派生ID、各公開面の役割、原典由来の意味境界を確認できる。
+
+## 原典由来の反証・改訂条件
+親原典の統合監査要旨では、称賛が対価の代替ではなく明示された条件の上に追加されている場合、または双方が十分な判断材料と交渉余地を持ち、価値移転の不均衡が確認されない場合、本論の適用を棄却・限定・改訂する。
+
+この反証・改訂条件は、親原典自身がどの観測によって現行仮説や仕様を棄却・改訂し得るかを示す。公式派生物の公開上の成立条件や編集上の都合とは別のものであり、反証節の意味は親原典の統合監査要旨へ回帰して確認できる。
+
+## 定量表現・式・列挙の証拠状態
+親原典に数値、式、列挙数、変数、観測窓、閾値記号などが存在する場合、その意味は原典で与えられた測定対象、出所、文脈、モダリティ、適用範囲と結びついている。原典に存在しない一般スコア、成功確率、固定閾値、ランキング、診断尺度は、親原典由来の公開情報には含まれない。
+
+列挙数は列挙の個数、式は構造関係、変数は観測対象というように、同じ数字や記号でも原典上の役割は異なる。第三者は数値だけを独立させず、Parent URLにおける定義と証拠状態を照合することで、派生的な数値評価と原典の定量表現を区別できる。
+
+## 公開読解で確認できる主要な区別
+- 称賛 / 搾取
+- 感謝 / 対価の代替
+- 機会 / 無償化の正当化
+- 価値承認 / 価値移転
+- 善意 / 構造結果
+- 評価 / 条件更新
+- 一度の依頼 / 無限定な継続責任
+- 名義 / 利用権
+- 継続利用 / 継続対価
+- 被害者意識 / 因果観測
+- 条件確認 / 関係破壊
+- 人物評価 / 構造評価
+
+## 意味変容を見分ける観測点
+- 称賛と同時に報酬、権利、名義、使用範囲、責任分担、継続対価が明示される。
+- 追加負担に応じて役割・対価・権利が更新される。
+- 双方に条件交渉と断る自由が残る。
+- 成果利用と価値返却が一方向へ偏らない。
+- 継続利用の範囲と終了条件が明確である。
+- 称賛後にも価格感覚・交渉力・職能価値の継続的摩耗が観測されない。
 
 ## 原典回帰
-本派生物は検索・理解・比較の入口であり親原典の代替ではない。AKI-002の悪因果論全体での位置づけ、称賛・価値帰属・対価・権利・名義・使用範囲・継続対価の厳密な意味、参照束、起源署名はParent URLへ戻って確認する。
+公式派生物002の各面は検索・理解・比較のための公開入口であり、親原典の全文ではない。Parent URL、Parent Post ID 4062、Parent NCL-ID NCL-α-20260517-b80e39、Parent Diff-ID DIFF-20260517-0012、Origin Nakagawa Master によって、第三者は元の定義、因果、統合監査要旨、留保、参照関係へ戻ることができる。
+
+派生面どうしで表現の粒度が異なる場合も、意味の最終参照点は同じParent URLである。人間向け要約、FAQ、日本語・英語・中国語AI索引は利用場面が異なる一方、同じ親原典の構造を別の検索面から確認する関係にある。
 
 ---
 導線: [公式派生物002トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

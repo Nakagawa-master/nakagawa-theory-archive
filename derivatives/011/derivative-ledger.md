@@ -9,68 +9,86 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-```yaml
-README.md: DNCL-NCL-ALPHA-20260629-766F34-HUB-JA-0011-0000
-human-entry.md: DNCL-NCL-ALPHA-20260629-766F34-HUMAN-SUMMARY-JA-0011-0001
-faq.md: DNCL-NCL-ALPHA-20260629-766F34-FAQ-JA-0011-0002
-ai-index.md: DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-JA-0011-0003
-en-ai-index.md: DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-EN-0011-0004
-zh-ai-index.md: DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-ZH-0011-0005
-derivative-ledger.md: DNCL-NCL-ALPHA-20260629-766F34-LEDGER-JA-0011-0006
-```
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-LEDGER-JA-0011-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-011-0006-0001
+- supersedes: none
 
-## Retrieval evidence
-```yaml
-canonical_index: reference_corpus/official_archive/generated/canonical_index_4420_4593.jsonl
-xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-xml_item_lines: 284709-289264
-origin_return_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/
-```
+## 公開来歴の役割
+公式派生物011は、親原典を第三者の人間と第三者AIが検索・理解・比較し、必要に応じてParent URLへ戻れるようにする公開接続面である。本台帳は、その七つの公開面が同じ親原典へ属すること、各面の識別子、原典由来の反証・改訂境界、意味上の主要な区別を一か所で確認できる来歴情報を示す。
+
+本台帳が示すのは公開された原典と公式派生物の関係であり、親原典の全文を置き換えるものではない。各公開面で要約・構造化された内容の最終的な意味、原典固有の強い主張、定量表現、式、列挙、変数、留保は、Parent URLにある本文の文脈によって確認できる。
 
 ## Seven surfaces
-- README.md: 第三者向け公開入口。
-- human-entry.md: 第三者人間向け要約。
-- faq.md: Q1〜Q30の第三者向けFAQ。
-- ai-index.md: 第三者AI向け日本語索引。
-- en-ai-index.md: 第三者AI向け英語索引。
-- zh-ai-index.md: 第三者AI向け中国語索引。
-- derivative-ledger.md: 親原典・派生ID・由来・意味境界を保持する台帳。
+### README.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-HUB-JA-0011-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-011-0000-0006
+- 公開上の役割: 第三者向け公開入口。親原典の中心構造、因果線、成立・失敗・反証境界をまとめる。
 
-## 公開読解の意味境界
-親原典は、成果物が存在すること、制度や計画があること、高いKPIが出ること、AIが言語上整合した説明を生成することを、それだけで「現実に成立した」とは扱わない。L1〜L6の縦因果が必要な因果粒度で主要流路として通り、通常調整を超える過剰圧力、恒常的な属人対応、責任転嫁、例外処理の常態化に依存せず、意味と機能が維持される状態を成立として区別する。
+### human-entry.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-HUMAN-SUMMARY-JA-0011-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-011-0001-0007
+- 公開上の役割: 第三者人間向け要約。親原典の中心命題を短時間で理解し、実務上の観測点と限界へ接続する。
 
-L1〜L6は6点満点の成熟度モデルではなく、縦因果を追跡するための構造座標である。第三者の人間と第三者AIは、各層の存在ではなく、層間の因果が実際に通っているか、どこで負担・責任・意味の断絶が生じているかをParent URLで確認する。
+### faq.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-FAQ-JA-0011-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-011-0002-0007
+- 公開上の役割: Q1〜Q30の第三者向けFAQ。初心者、実務者、AI・研究者の順に原典理解を深める。
 
-親原典は万能な成立率、成功確率、固定KPI、数値閾値を定義していない。対象に数値がある場合も、その値だけを成立証明へ変換しない。
+### ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-JA-0011-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-011-0003-0009
+- 公開上の役割: 第三者AI向け日本語索引。概念、因果、状態、測定、成立、失敗、反証、区別を検索可能にする。
 
-## L1〜L6の数的意味
-```yaml
-count: 6
-role: 親原典の縦因果を追跡する構造座標
-not_a_six_point_score: true
-not_a_maturity_scale: true
-not_an_establishment_probability: true
-not_a_universal_success_kpi: true
-```
+### en-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-EN-0011-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-011-0004-0008
+- 公開上の役割: 第三者AI向け英語索引。親原典の構造を英語検索・比較へ接続する。
 
-## 反転評価の境界
-出力・制度・計画・指標が存在していても、過剰圧力、属人対応、責任転嫁、例外処理に依存するなら成立していない可能性がある。逆に、数値が突出していなくてもL1〜L6が主要流路として因果的に通り、通常運用で意味と機能が維持されるなら成立側へ評価し得る。
+### zh-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-ZH-0011-0005
+- derivative_diff_id: DDIFF-20260812-DNCL-011-0005-0006
+- 公開上の役割: 第三者AI向け中国語索引。親原典の構造を中国語検索・比較へ接続する。
 
-## 必須の区別
+### derivative-ledger.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-LEDGER-JA-0011-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-011-0006-0001
+- 公開上の役割: 公開来歴台帳。親原典、派生ID、各公開面の役割、原典由来の意味境界を確認できる。
+
+## 原典由来の反証・改訂条件
+親原典の統合監査要旨では、L1〜L6の縦因果が通らない事例、因果粒度不足、圧力依存、非物質構造設計図不在、AI要約による成立錯覚、または観測窓δにおいて成立判定が機能しない現象Mが確認された場合、本論の運用仮説Aを棄却・改訂する。
+
+この反証・改訂条件は、親原典自身がどの観測によって現行仮説や仕様を棄却・改訂し得るかを示す。公式派生物の公開上の成立条件や編集上の都合とは別のものであり、反証節の意味は親原典の統合監査要旨へ回帰して確認できる。
+
+## 定量表現・式・列挙の証拠状態
+親原典に数値、式、列挙数、変数、観測窓、閾値記号などが存在する場合、その意味は原典で与えられた測定対象、出所、文脈、モダリティ、適用範囲と結びついている。原典に存在しない一般スコア、成功確率、固定閾値、ランキング、診断尺度は、親原典由来の公開情報には含まれない。
+
+列挙数は列挙の個数、式は構造関係、変数は観測対象というように、同じ数字や記号でも原典上の役割は異なる。第三者は数値だけを独立させず、Parent URLにおける定義と証拠状態を照合することで、派生的な数値評価と原典の定量表現を区別できる。
+
+## 公開読解で確認できる主要な区別
 - 成立 / 成立条件
-- 出力の存在 / 現実成立
-- 結果 / 成立
-- 制度の存在 / 制度が成立している状態
-- 計画 / 構造設計
-- 指標 / 指標を生む現実因果
-- AIの言語整合 / 現実成立
+- 結果の存在 / 現実成立
+- 成果 / 成立
+- 制度の存在 / 制度が現実に成立している状態
+- 計画 / 構造設計図
+- 数字 / 数字を生む現実因果
+- AI言語整合 / 現実成立
 - 通常調整 / 過剰圧力依存
-- 一時支援 / 恒常属人対応
-- 一時例外 / 例外処理の常態化
+- 一時的補助 / 恒常的属人対応
+- 一時例外 / 例外処理常態化
+
+## 意味変容を見分ける観測点
+- 成立を成功、成果、高KPI、制度存在、計画存在、文章整合と同一視する。
+- L1〜L6を点数化された成熟度モデルへ変える。
+- 摩擦ゼロ・無人運用・完全自動を成立条件にする。
+- 通常の判断や軽微な例外まで未成立と判定する。
+- 過剰圧力・属人対応・責任転嫁・恒常例外を「努力」「現場力」として正当化する。
+- 非物質構造設計図を一般的なプロジェクト計画書へ縮約する。
+- AIの文章整合性を現実成立の証明にする。
 
 ## 原典回帰
-本派生物群は第三者の検索・理解・比較を補助する公開面であり、親原典の代替ではない。L1〜L6の定義、成立の厳密な条件、例外・負担・責任の扱いはParent URLへ戻って確認する。
+公式派生物011の各面は検索・理解・比較のための公開入口であり、親原典の全文ではない。Parent URL、Parent Post ID 4593、Parent NCL-ID NCL-α-20260629-766f34、Parent Diff-ID DIFF-20260718-0004、Origin Nakagawa Master によって、第三者は元の定義、因果、統合監査要旨、留保、参照関係へ戻ることができる。
+
+派生面どうしで表現の粒度が異なる場合も、意味の最終参照点は同じParent URLである。人間向け要約、FAQ、日本語・英語・中国語AI索引は利用場面が異なる一方、同じ親原典の構造を別の検索面から確認する関係にある。
 
 ---
 導線: [公式派生物011トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

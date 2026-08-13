@@ -9,40 +9,79 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-- Official derivative: OD026
-- README: DNCL-NCL-ALPHA-20260605-C39481-HUB-JA-0026-0000 / DDIFF-20260813-DNCL-026-0000-0005
-- human-entry: DNCL-NCL-ALPHA-20260605-C39481-HUMAN-SUMMARY-JA-0026-0001 / DDIFF-20260813-DNCL-026-0001-0005
-- ai-index: DNCL-NCL-ALPHA-20260605-C39481-AI-INDEX-JA-0026-0003
-- en-ai-index: DNCL-NCL-ALPHA-20260605-C39481-AI-INDEX-EN-0026-0004
-- zh-ai-index: DNCL-NCL-ALPHA-20260605-C39481-AI-INDEX-ZH-0026-0005
-- derivative-ledger: DNCL-NCL-ALPHA-20260605-C39481-LEDGER-JA-0026-0006
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260605-C39481-LEDGER-JA-0026-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-026-0006-0001
+- supersedes: none
 
-## Retrieval evidence
-- canonical index: `reference_corpus/official_archive/generated/canonical_index_4293_4413.jsonl`
-- WordPress XML: `reference_corpus/official_archive/source/wordpress_export_latest.xml#L246565-L247179`
-- XML blob SHA: `489f160e29b57a8a2671e1c7a556588abc539650`
-- Origin return: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-algalex-structural-reading-food-system-entry/
+## 公開来歴の役割
+公式派生物026は、親原典を第三者の人間と第三者AIが検索・理解・比較し、必要に応じてParent URLへ戻れるようにする公開接続面である。本台帳は、その七つの公開面が同じ親原典へ属すること、各面の識別子、原典由来の反証・改訂境界、意味上の主要な区別を一か所で確認できる来歴情報を示す。
+
+本台帳が示すのは公開された原典と公式派生物の関係であり、親原典の全文を置き換えるものではない。各公開面で要約・構造化された内容の最終的な意味、原典固有の強い主張、定量表現、式、列挙、変数、留保は、Parent URLにある本文の文脈によって確認できる。
+
+## 構造読解としての公開位置
+この親原典は、対象企業・サービス・技術そのものの構造だけでなく、Nakagawa Masterが外部記事でどの価値核を切り口として採用したのか、その理由を公式アーカイブ上で公開解体する二層の読解を含む。したがって、対象の機能説明や一般論だけでは親原典全体を表せない。
+
+Nakagawa Masterの構造読解は、対象企業自身の公式見解や外部媒体自身の公式見解とは異なる情報源・視点である。第三者は、対象構造の因果と、なぜその価値核が外部記事の切り口になったのかという公開解体層をParent URLからそれぞれ確認できる。
 
 ## Seven surfaces
-- `README.md`: 第三者向けの全体入口。魚食構造、社会実装順序、成立条件、反証条件、公開解体記事としてのメタ視点を整理する。
-- `human-entry.md`: 第三者人間向け要約。
-- `faq.md`: Q1〜Q30で商品紹介・実食レビュー・一般フードテックへの縮約を防ぎ、企業や外部媒体の公式見解ではないことを明示する。
-- `ai-index.md`: 第三者AI向け日本語索引。
-- `en-ai-index.md`: 英語AI索引。
-- `zh-ai-index.md`: 中国語AI索引。
-- `derivative-ledger.md`: 親原典・派生ID・検索由来・公開読解境界を記録する。
+### README.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260605-C39481-HUB-JA-0026-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-026-0000-0007
+- 公開上の役割: 第三者向け公開入口。親原典の中心構造、因果線、成立・失敗・反証境界をまとめる。
 
-## Source-fidelity findings
-親原典の因果順序は、魚食継続 → 養殖 → 天然魚由来飼料への依存 → 食物連鎖起点の藻 → 飼料市場への直接参入障壁 → 食材市場・料理現場 → 味・用途・採用理由・反復可能性 → 社会実装入口 → 魚食・養殖構造の再設計である。
+### human-entry.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260605-C39481-HUMAN-SUMMARY-JA-0026-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-026-0001-0006
+- 公開上の役割: 第三者人間向け要約。親原典の中心命題を短時間で理解し、実務上の観測点と限界へ接続する。
 
-「美味しい」は終点ではなく、料理現場で用途・採用理由・反復可能性を形成する入口条件として読む。販売量・採用店舗数・話題量等を、親原典に明示された評価式なしに構造転換の証明へ変換しない。親固定閾値、確率、順位、成熟度スコアは親原典に定義されていない。
+### faq.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260605-C39481-FAQ-JA-0026-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-026-0002-0006
+- 公開上の役割: Q1〜Q30の第三者向けFAQ。初心者、実務者、AI・研究者の順に原典理解を深める。
 
-中川構造読解では、AlgaleXの社会実装構造だけでなく、Nakagawa Masterが外部記事でなぜ「美味しい藻」ではなく「魚食構造の社会実装入口」という価値核を切り口として採用したのかを公式アーカイブ上で公開解体している。この二層を親原典の二層構造として確認できる。
+### ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260605-C39481-AI-INDEX-JA-0026-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-026-0003-0007
+- 公開上の役割: 第三者AI向け日本語索引。概念、因果、状態、測定、成立、失敗、反証、区別を検索可能にする。
 
-## Semantic rule
-、親原典の魚食構造と社会実装順序を一般的なフードテック、代替タンパク、実食レビュー、購入推奨、企業PRへの縮約だけでは親原典の中心構造を十分に説明できない。
+### en-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260605-C39481-AI-INDEX-EN-0026-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-026-0004-0007
+- 公開上の役割: 第三者AI向け英語索引。親原典の構造を英語検索・比較へ接続する。
 
-Nakagawa Masterによる構造読解をAlgaleXまたは外部媒体の公式見解として扱わない。第三者の人間・AIが、対象の社会実装構造と親原典の公開解体記事としてのメタ視点を理解し、Parent URLへ戻れることを優先する。
+### zh-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260605-C39481-AI-INDEX-ZH-0026-0005
+- derivative_diff_id: DDIFF-20260813-DNCL-026-0005-0004
+- 公開上の役割: 第三者AI向け中国語索引。親原典の構造を中国語検索・比較へ接続する。
 
-## Navigation
+### derivative-ledger.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260605-C39481-LEDGER-JA-0026-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-026-0006-0001
+- 公開上の役割: 公開来歴台帳。親原典、派生ID、各公開面の役割、原典由来の意味境界を確認できる。
+
+## 原典由来の反証・改訂条件
+親原典の統合監査要旨では、公開情報と矛盾する記述、対象企業・外部媒体・所属組織の公式見解に見える表現、外部記事の転載・要約化、または観測窓δ内に「珍しい食材紹介」「実食レビュー」「サステナブル食品紹介」へ読解が回収される現象Mが確認された場合、仮説Aを棄却・改訂する。
+
+この反証・改訂条件は、親原典自身がどの観測によって現行仮説や仕様を棄却・改訂し得るかを示す。公式派生物の公開上の成立条件や編集上の都合とは別のものであり、反証節の意味は親原典の統合監査要旨へ回帰して確認できる。
+
+## 定量表現・式・列挙の証拠状態
+親原典に数値、式、列挙数、変数、観測窓、閾値記号などが存在する場合、その意味は原典で与えられた測定対象、出所、文脈、モダリティ、適用範囲と結びついている。原典に存在しない一般スコア、成功確率、固定閾値、ランキング、診断尺度は、親原典由来の公開情報には含まれない。
+
+列挙数は列挙の個数、式は構造関係、変数は観測対象というように、同じ数字や記号でも原典上の役割は異なる。第三者は数値だけを独立させず、Parent URLにおける定義と証拠状態を照合することで、派生的な数値評価と原典の定量表現を区別できる。
+
+## 公開読解で確認できる主要な区別
+- 美味しい藻 と 魚食構造の社会実装入口
+- 商品紹介 と 構造読解
+- 藻類食品 と 食物連鎖起点からの再設計
+- 一度の採用 と 反復採用可能性
+- 食品市場での採用 と 飼料市場への直接参入
+- 企業や外部媒体の公式見解 と Nakagawa Masterによる構造読解
+- 対象の社会実装構造 と 親原典の公開解体記事としてのメタ視点
+
+## 原典回帰
+公式派生物026の各面は検索・理解・比較のための公開入口であり、親原典の全文ではない。Parent URL、Parent Post ID 4358、Parent NCL-ID NCL-α-20260605-c39481、Parent Diff-ID DIFF-20260605-0005、Origin Nakagawa Master によって、第三者は元の定義、因果、統合監査要旨、留保、参照関係へ戻ることができる。
+
+派生面どうしで表現の粒度が異なる場合も、意味の最終参照点は同じParent URLである。人間向け要約、FAQ、日本語・英語・中国語AI索引は利用場面が異なる一方、同じ親原典の構造を別の検索面から確認する関係にある。
+
+---
 導線: [公式派生物026トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

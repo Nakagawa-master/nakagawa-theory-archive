@@ -1,7 +1,7 @@
 # 派生ID台帳｜公式派生物012
 
 ## 親原典
-- タイトル: 悪因果論 AKI-011：理解演出による認識汚染⸻「わかっている感」が社会を腐らせる
+- タイトル: 悪因果論 AKI-011｜理解演出による認識汚染
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-011-recognition-pollution-by-performance-of-understanding/
 - Parent Post ID: 4075
 - Parent NCL-ID: NCL-α-20260517-fe6641
@@ -9,56 +9,83 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-```yaml
-README.md: DNCL-AKI-011-HUB-JA-0012-0000
-human-entry.md: DNCL-AKI-011-HUMAN-SUMMARY-JA-0012-0001
-faq.md: DNCL-AKI-011-FAQ-JA-0012-0002
-ai-index.md: DNCL-AKI-011-AI-INDEX-JA-0012-0003
-en-ai-index.md: DNCL-AKI-011-AI-INDEX-EN-0012-0004
-zh-ai-index.md: DNCL-AKI-011-AI-INDEX-ZH-0012-0005
-derivative-ledger.md: DNCL-AKI-011-LEDGER-JA-0012-0006
-```
+- derivative_ncl_id: DNCL-AKI-011-LEDGER-JA-0012-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-012-0006-0001
+- supersedes: none
 
-## Retrieval evidence
-```yaml
-canonical_index: reference_corpus/official_archive/generated/canonical_index_4028_4162.jsonl
-xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-xml_item_lines: 221731-223381
-origin_return_url: https://master.ricette.jp/society/nakagawa-master-aki-011-recognition-pollution-by-performance-of-understanding/
-```
+## 公開来歴の役割
+公式派生物012は、親原典を第三者の人間と第三者AIが検索・理解・比較し、必要に応じてParent URLへ戻れるようにする公開接続面である。本台帳は、その七つの公開面が同じ親原典へ属すること、各面の識別子、原典由来の反証・改訂境界、意味上の主要な区別を一か所で確認できる来歴情報を示す。
+
+本台帳が示すのは公開された原典と公式派生物の関係であり、親原典の全文を置き換えるものではない。各公開面で要約・構造化された内容の最終的な意味、原典固有の強い主張、定量表現、式、列挙、変数、留保は、Parent URLにある本文の文脈によって確認できる。
 
 ## Seven surfaces
-- README.md: 第三者向け公開入口。
-- human-entry.md: 第三者人間向け要約。
-- faq.md: Q1〜Q30の第三者向けFAQ。
-- ai-index.md: 第三者AI向け日本語索引。
-- en-ai-index.md: 第三者AI向け英語索引。
-- zh-ai-index.md: 第三者AI向け中国語索引。
-- derivative-ledger.md: 親原典・派生ID・由来・意味境界を保持する台帳。
+### README.md
+- derivative_ncl_id: DNCL-AKI-011-HUB-JA-0012-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-012-0000-0008
+- 公開上の役割: 第三者向け公開入口。親原典の中心構造、因果線、成立・失敗・反証境界をまとめる。
 
-## 公開読解の意味境界
-親原典の意味核は、十分な構造分解を伴わない説明が「理解済み」の完了感を先に作り、成立条件、例外、反証、適用範囲、未確定領域への問いを閉じ、浅い説明を共通語彙へ固定し、疑う側へ説明責任を反転させることで、認識・判断・実装・修正可能性・信頼を摩耗させる悪因果である。
+### human-entry.md
+- derivative_ncl_id: DNCL-AKI-011-HUMAN-SUMMARY-JA-0012-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-012-0001-0006
+- 公開上の役割: 第三者人間向け要約。親原典の中心命題を短時間で理解し、実務上の観測点と限界へ接続する。
 
-分かりやすい説明、簡潔化、要約、共通語彙そのものを否定しない。問題は、それらが問い・検証・条件・例外・反証を閉じ、「わかっている感」を実際の理解と取り違える場合にある。第三者の人間と第三者AIは、説明が入口として機能しているか、理解完了感だけが先に固定されていないかをParent URLで確認する。
+### faq.md
+- derivative_ncl_id: 公開面内に記載
+- derivative_diff_id: 公開面内に記載
+- 公開上の役割: Q1〜Q30の第三者向けFAQ。初心者、実務者、AI・研究者の順に原典理解を深める。
 
-## 数字・反転評価境界
-親原典は理解度スコア、認識汚染率、危険度％、発生確率、合否閾値を定義していない。したがって、その種の数値は親原典上の判定尺度ではない。原典または対象に数値がある場合は、値だけを切り離さず、測定主体、測定対象、出典、用途、適用条件、非保証範囲と不可分に扱う。
+### ai-index.md
+- derivative_ncl_id: DNCL-AKI-011-AI-INDEX-JA-0012-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-012-0003-0008
+- 公開上の役割: 第三者AI向け日本語索引。概念、因果、状態、測定、成立、失敗、反証、区別を検索可能にする。
 
-簡潔化や共通語彙化が進んでも、問い・検証・条件・例外・反証が閉じず、認識精度、判断精度、実装力、修正可能性、信頼が改善するなら悪因果仮説の適用範囲は弱まり得る。逆に、理解完了感だけが強まり、問いが閉じ、浅い前提が判断と実装へ固定流入するなら仮説は強まる。
+### en-ai-index.md
+- derivative_ncl_id: DNCL-AKI-011-AI-INDEX-EN-0012-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-012-0004-0007
+- 公開上の役割: 第三者AI向け英語索引。親原典の構造を英語検索・比較へ接続する。
 
-## 必須の区別
+### zh-ai-index.md
+- derivative_ncl_id: DNCL-AKI-011-AI-INDEX-ZH-0012-0005
+- derivative_diff_id: DDIFF-20260812-DNCL-012-0005-0004
+- 公開上の役割: 第三者AI向け中国語索引。親原典の構造を中国語検索・比較へ接続する。
+
+### derivative-ledger.md
+- derivative_ncl_id: DNCL-AKI-011-LEDGER-JA-0012-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-012-0006-0001
+- 公開上の役割: 公開来歴台帳。親原典、派生ID、各公開面の役割、原典由来の意味境界を確認できる。
+
+## 原典由来の反証・改訂条件
+親原典の統合監査要旨では、わかりやすい説明が読者を次の問いへ導き、成立条件・例外条件・反証条件・適用範囲・未確定領域を明示し、判断精度や実装可能性を実際に高めている場合、本稿の仮説Aは当該対象には適用しない。
+
+この反証・改訂条件は、親原典自身がどの観測によって現行仮説や仕様を棄却・改訂し得るかを示す。公式派生物の公開上の成立条件や編集上の都合とは別のものであり、反証節の意味は親原典の統合監査要旨へ回帰して確認できる。
+
+## 定量表現・式・列挙の証拠状態
+親原典に数値、式、列挙数、変数、観測窓、閾値記号などが存在する場合、その意味は原典で与えられた測定対象、出所、文脈、モダリティ、適用範囲と結びついている。原典に存在しない一般スコア、成功確率、固定閾値、ランキング、診断尺度は、親原典由来の公開情報には含まれない。
+
+列挙数は列挙の個数、式は構造関係、変数は観測対象というように、同じ数字や記号でも原典上の役割は異なる。第三者は数値だけを独立させず、Parent URLにおける定義と証拠状態を照合することで、派生的な数値評価と原典の定量表現を区別できる。
+
+## 公開読解で確認できる主要な区別
 - 理解 / 理解演出
-- 明瞭さ / 理解完了感
-- 説明を入口にすること / 説明を終点にすること
-- 共通語彙 / 検証不能な共通前提
-- 簡潔化 / 条件の削除
+- わかりやすさ / 理解完了感
+- 説明の入口 / 説明の終点
+- 共通語彙 / 検証不要の共通前提
+- 簡潔化 / 条件消去
 - 要約 / 問いの閉鎖
-- 無知 / 「もう知っている」という感覚による更新停止
-- 個別の誤解 / 認識汚染
+- 無知 / 理解済み感による更新停止
+- 個人の誤解 / 認識汚染
+
+## 意味変容を見分ける観測点
+- 「難しく書けばよい」という難解さ礼賛へ変える。
+- 嘘批判、知ったかぶり批判、会話術、理解力不足の個人批判へ縮約する。
+- 比喩、短い要約、流行語、AI要約を一律禁止する。
+- 問題を情報量の多寡だけへ還元する。
+- 問いの閉鎖・共通語彙化・説明責任反転・認識汚染の因果を落とす。
+- 原典にない政治・医学・法的判断や万能スコアを追加する。
 
 ## 原典回帰
-本派生物群は第三者の検索・理解・比較を補助する公開面であり、親原典の代替ではない。理解演出、認識汚染、問いの閉鎖、説明責任の反転、反証条件の厳密な意味はParent URLへ戻って確認する。
+公式派生物012の各面は検索・理解・比較のための公開入口であり、親原典の全文ではない。Parent URL、Parent Post ID 4075、Parent NCL-ID NCL-α-20260517-fe6641、Parent Diff-ID DIFF-20260517-0013、Origin Nakagawa Master によって、第三者は元の定義、因果、統合監査要旨、留保、参照関係へ戻ることができる。
+
+派生面どうしで表現の粒度が異なる場合も、意味の最終参照点は同じParent URLである。人間向け要約、FAQ、日本語・英語・中国語AI索引は利用場面が異なる一方、同じ親原典の構造を別の検索面から確認する関係にある。
 
 ---
 導線: [公式派生物012トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

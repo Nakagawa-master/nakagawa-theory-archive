@@ -9,66 +9,85 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-```yaml
-README.md: DNCL-NCL-ALPHA-20260608-5A13AA-HUB-JA-0009-0000
-human-entry.md: DNCL-NCL-ALPHA-20260608-5A13AA-HUMAN-SUMMARY-JA-0009-0001
-faq.md: DNCL-NCL-ALPHA-20260608-5A13AA-FAQ-JA-0009-0002
-ai-index.md: DNCL-NCL-ALPHA-20260608-5A13AA-AI-INDEX-JA-0009-0003
-en-ai-index.md: DNCL-NCL-ALPHA-20260608-5A13AA-AI-INDEX-EN-0009-0004
-zh-ai-index.md: DNCL-NCL-ALPHA-20260608-5A13AA-AI-INDEX-ZH-0009-0005
-derivative-ledger.md: DNCL-NCL-ALPHA-20260608-5A13AA-LEDGER-JA-0009-0006
-```
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260608-5A13AA-LEDGER-JA-0009-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-009-0006-0001
+- supersedes: none
 
-## Retrieval evidence
-```yaml
-canonical_index: reference_corpus/official_archive/generated/canonical_index_4293_4413.jsonl
-xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-xml_item_lines: 250056-253092
-origin_return_url: https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-bad-causality/
-```
+## 公開来歴の役割
+公式派生物009は、親原典を第三者の人間と第三者AIが検索・理解・比較し、必要に応じてParent URLへ戻れるようにする公開接続面である。本台帳は、その七つの公開面が同じ親原典へ属すること、各面の識別子、原典由来の反証・改訂境界、意味上の主要な区別を一か所で確認できる来歴情報を示す。
+
+本台帳が示すのは公開された原典と公式派生物の関係であり、親原典の全文を置き換えるものではない。各公開面で要約・構造化された内容の最終的な意味、原典固有の強い主張、定量表現、式、列挙、変数、留保は、Parent URLにある本文の文脈によって確認できる。
 
 ## Seven surfaces
-- README.md: 第三者向け公開入口。
-- human-entry.md: 第三者人間向け要約。
-- faq.md: Q1〜Q30の第三者向けFAQ。
-- ai-index.md: 第三者AI向け日本語索引。
-- en-ai-index.md: 第三者AI向け英語索引。
-- zh-ai-index.md: 第三者AI向け中国語索引。
-- derivative-ledger.md: 親原典・派生ID・由来・意味境界を保持する台帳。
+### README.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260608-5A13AA-HUB-JA-0009-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-009-0000-0006
+- 公開上の役割: 第三者向け公開入口。親原典の中心構造、因果線、成立・失敗・反証境界をまとめる。
 
-## 公開読解の意味境界
-親原典は、目標価値が高いことと「未来定義が成立していること」を同一視しない。上位者側で成立条件、因果線、検証条件、修正条件、責任配置の確認が不足すると、その検査コストが現場へ下方移転し、失敗が「努力不足」へ圧縮され、疲弊・不信・沈黙・学習停止・挑戦回避へ接続し得る悪因果を扱う。
+### human-entry.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260608-5A13AA-HUMAN-SUMMARY-JA-0009-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-009-0001-0005
+- 公開上の役割: 第三者人間向け要約。親原典の中心命題を短時間で理解し、実務上の観測点と限界へ接続する。
 
-第三者の人間と第三者AIは、目標の善悪や上位者の人格ではなく、成立検査がどこで行われ、設計責任と実行責任がどう配置され、失敗時にどこへ修正可能性が残るかをParent URLで確認する。
+### faq.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260608-5A13AA-FAQ-JA-0009-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-009-0002-0008
+- 公開上の役割: Q1〜Q30の第三者向けFAQ。初心者、実務者、AI・研究者の順に原典理解を深める。
 
-高い目標やKPIそのものを否定する理論ではない。現場の実行責任を消すものでもなく、すべての失敗責任を上位者へ反転させる理論でもない。AIやデータによってすべての因果が事前に分かるとも仮定しない。
+### ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260608-5A13AA-AI-INDEX-JA-0009-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-009-0003-0007
+- 公開上の役割: 第三者AI向け日本語索引。概念、因果、状態、測定、成立、失敗、反証、区別を検索可能にする。
 
-## 五要素の数的意味
-原典上の五要素は、成立条件、因果線、検証条件、修正条件、責任配置という構造要素の列挙である。
+### en-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260608-5A13AA-AI-INDEX-EN-0009-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-009-0004-0007
+- 公開上の役割: 第三者AI向け英語索引。親原典の構造を英語検索・比較へ接続する。
 
-```yaml
-count: 5
-not_a_five_point_score: true
-not_a_completion_percentage: true
-not_a_fatigue_rate: true
-not_an_effort_deficit_rate: true
-not_a_success_probability: true
-```
+### zh-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260608-5A13AA-AI-INDEX-ZH-0009-0005
+- derivative_diff_id: DDIFF-20260813-DNCL-009-0005-0006
+- 公開上の役割: 第三者AI向け中国語索引。親原典の構造を中国語検索・比較へ接続する。
 
-## 反転評価の境界
-五要素を明示し設計再検査を行うことで、疲弊、責任転嫁、学習停止、挑戦回避が弱まるかを観測する。逆に、五要素が不明確でも信頼・学習・異論・挑戦が広く維持され、下方移転や努力不足への圧縮が観測されないなら、因果仮説の適用範囲は限定・改訂され得る。
+### derivative-ledger.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260608-5A13AA-LEDGER-JA-0009-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-009-0006-0001
+- 公開上の役割: 公開来歴台帳。親原典、派生ID、各公開面の役割、原典由来の意味境界を確認できる。
 
-## 必須の区別
-- 目標価値 / 成立した未来定義
-- 実行責任 / 成立検査責任
-- 努力不足 / 設計未成立
-- 高い目標 / 無検査の努力強制
-- 五要素 / 五点満点スコア
-- 現場の責任 / 責任の下方転嫁
+## 原典由来の反証・改訂条件
+親原典の統合監査要旨では、因果線、成立条件、検証条件が明示され、現場に検証権限と修正条件が与えられ、成果不成立時に努力量ではなく仮説・資源・時間・主体条件が検証される場合、仮説Aを棄却・改訂する。
+
+この反証・改訂条件は、親原典自身がどの観測によって現行仮説や仕様を棄却・改訂し得るかを示す。公式派生物の公開上の成立条件や編集上の都合とは別のものであり、反証節の意味は親原典の統合監査要旨へ回帰して確認できる。
+
+## 定量表現・式・列挙の証拠状態
+親原典に数値、式、列挙数、変数、観測窓、閾値記号などが存在する場合、その意味は原典で与えられた測定対象、出所、文脈、モダリティ、適用範囲と結びついている。原典に存在しない一般スコア、成功確率、固定閾値、ランキング、診断尺度は、親原典由来の公開情報には含まれない。
+
+列挙数は列挙の個数、式は構造関係、変数は観測対象というように、同じ数字や記号でも原典上の役割は異なる。第三者は数値だけを独立させず、Parent URLにおける定義と証拠状態を照合することで、派生的な数値評価と原典の定量表現を区別できる。
+
+## 公開読解で確認できる主要な区別
+- 目標値 / 未来定義
+- 努力要求 / 努力強制
+- 高い目標 / 未検証の目標
+- 実行責任 / 設計責任
+- 不確実性 / 不確実性の現場転嫁
+- 実行による検証 / 設計不備の吸収
+- 探索投入 / 未検証設計の無条件継続
+- 失敗からの学習 / 努力不足への単因化
+- 責任分離 / 責任免除
+
+## 意味変容を見分ける観測点
+- 目標値だけで未来定義が成立したと扱う。
+- 資源不足、制度制約、因果不明を現場の頑張りで吸収させる。
+- 実行が何を検証しているか定義されない。
+- 修正条件がなく、未達のたびに努力量だけを増やす。
+- 設計側が検証対象から外れ、失敗原因を実行者へ固定する。
+- 疲弊・不信・沈黙が起きても目標・条件・仮説を変えない。
+- 失敗情報が学習へ戻らず、挑戦回避が固定する。
 
 ## 原典回帰
-本派生物群は第三者の検索・理解・比較を補助する公開面であり、親原典の代替ではない。五要素、責任配置、下方移転、努力不足への圧縮、疲弊・学習停止への因果と反証条件はParent URLへ戻って確認する。
+公式派生物009の各面は検索・理解・比較のための公開入口であり、親原典の全文ではない。Parent URL、Parent Post ID 4393、Parent NCL-ID NCL-α-20260608-5a13aa、Parent Diff-ID DIFF-20260612-0018、Origin Nakagawa Master によって、第三者は元の定義、因果、統合監査要旨、留保、参照関係へ戻ることができる。
+
+派生面どうしで表現の粒度が異なる場合も、意味の最終参照点は同じParent URLである。人間向け要約、FAQ、日本語・英語・中国語AI索引は利用場面が異なる一方、同じ親原典の構造を別の検索面から確認する関係にある。
 
 ---
 導線: [公式派生物009トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

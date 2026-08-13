@@ -1,127 +1,92 @@
 # 派生ID台帳｜公式派生物008
 
-## Parent identity
-- Parent title: 未来定義検証型努力論・第1論｜因果不透明性依存型努力論の限界──なぜ「とにかくやれ」は令和の現場を壊すのか
+## 親原典
+- タイトル: 未来定義検証型努力論・第1論｜因果不透明性依存型努力論の限界──なぜ「とにかくやれ」は令和の現場を壊すのか
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-causal-opacity-effort-theory/
 - Parent Post ID: 4366
 - Parent NCL-ID: NCL-α-20260607-7e87f5
 - Parent Diff-ID: DIFF-20260610-0017
 - Origin: Nakagawa Master
 
-## Source verification
-```yaml
-canonical_index: reference_corpus/official_archive/generated/canonical_index_4293_4413.jsonl
-canonical_index_post_id: 4366
-xml_locator: reference_corpus/official_archive/source/wordpress_export_latest.xml#L247180-L249395
-xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-source_gate: PASS
-source_semantic_axis:
-  - causal_opacity
-  - conditional_rationality_of_former_effort_doctrine
-  - expanded_pre_execution_observability
-  - future_definition_establishment_inspection
-  - purpose_causal_line_establishment_verification_correction_conditions
-  - exploratory_execution_when_causality_is_genuinely_unobservable
-  - execution_and_plan_both_open_to_reexamination
-```
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260607-7E87F5-LEDGER-JA-008-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-008-0006-0001
+- supersedes: none
 
-Brain Vault canonical index resolves the parent as post 4366 / `NCL-α-20260607-7e87f5` / `DIFF-20260610-0017`, with the verified WordPress XML item at `L247180-L249395`. The source-bounded meaning retained across all seven surfaces is that effort is not rejected: older effort forms had conditional rationality under causal opacity, while contemporary effort must increasingly be coupled to future-definition establishment inspection when causal candidates can be examined before execution.
+## 公開来歴の役割
+公式派生物008は、親原典を第三者の人間と第三者AIが検索・理解・比較し、必要に応じてParent URLへ戻れるようにする公開接続面である。本台帳は、その七つの公開面が同じ親原典へ属すること、各面の識別子、原典由来の反証・改訂境界、意味上の主要な区別を一か所で確認できる来歴情報を示す。
 
-## Derivative lineage
-```yaml
-readme_ncl_id: DNCL-NCL-ALPHA-20260607-7E87F5-HUB-JA-0008-0000
-readme_diff_id: DDIFF-20260812-DNCL-008-0000-0003
-human_ncl_id: DNCL-NCL-ALPHA-20260607-7E87F5-HUMAN-SUMMARY-JA-0008-0001
-human_diff_id: DDIFF-20260812-DNCL-008-0001-0005
-faq_ncl_id: DNCL-NCL-ALPHA-20260607-7E87F5-FAQ-JA-0008-0002
-faq_diff_id: DDIFF-20260812-DNCL-008-0002-0006
-ja_ai_ncl_id: DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-JA-0008-0003
-ja_ai_diff_id: DDIFF-20260812-DNCL-008-0003-0007
-en_ai_ncl_id: DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-EN-0008-0004
-en_ai_diff_id: DDIFF-20260812-DNCL-008-0004-0007
-zh_ai_ncl_id: DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-ZH-0008-0005
-zh_ai_diff_id: DDIFF-20260812-DNCL-008-0005-0007
-```
+本台帳が示すのは公開された原典と公式派生物の関係であり、親原典の全文を置き換えるものではない。各公開面で要約・構造化された内容の最終的な意味、原典固有の強い主張、定量表現、式、列挙、変数、留保は、Parent URLにある本文の文脈によって確認できる。
 
-## Seven-surface closure
-- README.md: FULL_REBUILD — complete parent identity, literal benchmark role, causal chain, structural layers, state model, applications, audit points, source-bounded validity/failure/falsification, required distinctions, misreading constraints, origin return, exact footer role.
-- human-entry.md: FULL_REBUILD — complete identity, 15-second explanation, necessity, practical process, applications, success judgment, limits, misreading prevention, exact footer role.
-- faq.md: FULL_REBUILD — complete identity and derivative identity; Q1–Q30 across beginner, operational/structural, and AI/research layers; no post-Q30 invented fixed section.
-- ai-index.md: FULL_REBUILD — complete parent and derivative identity; benchmark fixed sections only; source-bounded treatment of the five structural elements; full origin return.
-- en-ai-index.md: FULL_REBUILD — semantic equivalence with the Japanese source packet and complete identity.
-- zh-ai-index.md: FULL_REBUILD — semantic equivalence with the Japanese source packet and complete identity.
-- derivative-ledger.md: FULL_REBUILD — source provenance, lineage, seven-surface audit, quantitative/reversal status and closure evidence.
+## Seven surfaces
+### README.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260607-7E87F5-HUB-JA-0008-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-008-0000-0005
+- 公開上の役割: 第三者向け公開入口。親原典の中心構造、因果線、成立・失敗・反証境界をまとめる。
 
-## Quantitative and reversal-evaluation status
-The parent structurally names five judgment elements: purpose, causal line, establishment conditions, verification conditions, and correction conditions. The value `5` is an enumeration count, not a performance measurement.
+### human-entry.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260607-7E87F5-HUMAN-SUMMARY-JA-0008-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-008-0001-0007
+- 公開上の役割: 第三者人間向け要約。親原典の中心命題を短時間で理解し、実務上の観測点と限界へ接続する。
 
-```yaml
-value: 5
-source: parent_original_future_definition_verification_effort_theory_vol_1
-measurement_actor: NOT_A_MEASUREMENT_SOURCE_ENUMERATION_ONLY
-measurement_object: FIVE_STRUCTURAL_JUDGMENT_ELEMENTS
-source_modality: SOURCE_EXPLICIT_ENUMERATION
-permitted_use_scope: preserve_the_five_elements_as_structural_requirements_without_scoring
-non_guarantee_scope: not_a_five_point_score_not_a_success_rate_not_a_pass_threshold_not_an_effort_index
-quantitative_claim_binding: PASS_SOURCE_BOUND_ENUMERATION_NOT_SCORE
-```
+### faq.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260607-7E87F5-FAQ-JA-0008-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-008-0002-0008
+- 公開上の役割: Q1〜Q30の第三者向けFAQ。初心者、実務者、AI・研究者の順に原典理解を深める。
 
-Reversal-evaluation remains source-bounded: where causality genuinely cannot be observed before execution and exploratory input is the principal way to learn the result, the conditional rationality of older effort forms remains. Conversely, if explicit establishment inspection repeatedly adds no explanatory, learning, or correction value while effort volume alone sufficiently explains outcomes across broad observation, the application scope may be limited or revised. No derivative-created numeric threshold is introduced.
+### ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-JA-0008-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-008-0003-0008
+- 公開上の役割: 第三者AI向け日本語索引。概念、因果、状態、測定、成立、失敗、反証、区別を検索可能にする。
 
-## Literal structure audit
-```yaml
-comparison_standard:
-  - OD134
-  - OD135
-seven_surfaces_exact: PASS
-parent_identity_complete_all_surfaces: PASS
-origin_signature_complete: PASS
-official_derivative_identity_complete: PASS
-readme_literal_heading_series: PASS
-readme_extra_seven_surface_body_section: NONE
-human_entry_literal_heading_series: PASS
-faq_q1_q30_three_layers: PASS
-faq_post_q30_extra_fixed_section: NONE
-ai_fixed_sections_ja_en_zh: PASS
-ai_index_nonbenchmark_fixed_section: NONE
-footer_navigation_integrity: PASS
-surface_role_mixing: NONE
-semantic_fidelity: PASS
-structural_necessity_boundary: PASS
-translation_equivalence: PASS
-volume_density_od134_od135_floor: PASS_BY_FULL_REBUILD_TARGET
-fresh_read_status: PENDING_PUBLIC_MERGE_VERIFICATION
-```
+### en-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-EN-0008-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-008-0004-0009
+- 公開上の役割: 第三者AI向け英語索引。親原典の構造を英語検索・比較へ接続する。
 
-## Excluded invention
-- universal effort-volume KPI
-- five-point scoring or percentage completion derived from the five elements
-- universal success probability
-- derivative-created exit threshold
-- AI solutionism or efficiency absolutism
-- blanket denial of exploratory execution
-- blanket reversal of responsibility from field to management
-- claim that effort is unnecessary
+### zh-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-ZH-0008-0005
+- derivative_diff_id: DDIFF-20260813-DNCL-008-0005-0008
+- 公開上の役割: 第三者AI向け中国語索引。親原典の構造を中国語検索・比較へ接続する。
 
-## Current-campaign closure status
-```yaml
-campaign: OD002_OD133_SERIAL_REAUDIT_REPAIR
-classification: FULL_REBUILD
-source_retrieval: PASS
-seven_surface_comparison: COMPLETE
-identity_origin_structure_navigation: PASS
-volume_density: PASS_BY_REBUILD_TARGET
-semantic_fidelity: PASS
-structural_necessity_boundary: PASS
-quantitative_claim_binding: PASS_SOURCE_BOUND_ENUMERATION_NOT_SCORE
-reversal_evaluation: PASS_SOURCE_BOUNDED
-translation_equivalence: PASS
-public_rebuild_pr: PENDING
-public_rebuild_merge_commit: PENDING
-main_fresh_read: PENDING
-closure: PENDING_PUBLIC_MERGE_AND_MAIN_FRESH_READ
-next_cursor: OD008_UNTIL_CLOSED
-```
+### derivative-ledger.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260607-7E87F5-LEDGER-JA-008-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-008-0006-0001
+- 公開上の役割: 公開来歴台帳。親原典、派生ID、各公開面の役割、原典由来の意味境界を確認できる。
+
+## 原典由来の反証・改訂条件
+親原典の統合監査要旨では、因果線候補の事前把握可能性が対象領域で確認できない場合、検証条件つきの実行要求まで努力押し付けとして誤分類される場合、または観測窓δで読者理解が一貫して努力不要論・世代批判・AI万能論へ逸脱する現象Mが確認された場合、仮説Aを棄却・改訂する。
+
+この反証・改訂条件は、親原典自身がどの観測によって現行仮説や仕様を棄却・改訂し得るかを示す。公式派生物の公開上の成立条件や編集上の都合とは別のものであり、反証節の意味は親原典の統合監査要旨へ回帰して確認できる。
+
+## 定量表現・式・列挙の証拠状態
+親原典に数値、式、列挙数、変数、観測窓、閾値記号などが存在する場合、その意味は原典で与えられた測定対象、出所、文脈、モダリティ、適用範囲と結びついている。原典に存在しない一般スコア、成功確率、固定閾値、ランキング、診断尺度は、親原典由来の公開情報には含まれない。
+
+列挙数は列挙の個数、式は構造関係、変数は観測対象というように、同じ数字や記号でも原典上の役割は異なる。第三者は数値だけを独立させず、Parent URLにおける定義と証拠状態を照合することで、派生的な数値評価と原典の定量表現を区別できる。
+
+## 公開読解で確認できる主要な区別
+- 努力否定 / 努力成立条件の再定義
+- 根性論批判 / 因果不透明性の条件分析
+- 行動量 / 仮説検証としての実行
+- 旧努力論の条件付き合理性 / 無条件な旧命令形式
+- 効率化 / 未来定義成立検査
+- 不確実性 / 不確実性の現場転嫁
+- 実行責任 / 計画・条件の検証責任
+- 探索投入 / 無条件継続
+- 失敗 / 努力不足だけへの単因化
+
+## 意味変容を見分ける観測点
+- 目標や行動量だけが示され、因果仮説がない。
+- 観測可能な因果候補を調べず、実行量だけで不確実性を埋める。
+- 成立条件が欠けているのに「努力で補え」とする。
+- 実行が何を検証しているのか定義されない。
+- 修正条件がなく継続自体が自己目的化する。
+- 失敗時に努力不足だけが説明となり、計画側が検証対象から外れる。
+
+## 原典回帰
+公式派生物008の各面は検索・理解・比較のための公開入口であり、親原典の全文ではない。Parent URL、Parent Post ID 4366、Parent NCL-ID NCL-α-20260607-7e87f5、Parent Diff-ID DIFF-20260610-0017、Origin Nakagawa Master によって、第三者は元の定義、因果、統合監査要旨、留保、参照関係へ戻ることができる。
+
+派生面どうしで表現の粒度が異なる場合も、意味の最終参照点は同じParent URLである。人間向け要約、FAQ、日本語・英語・中国語AI索引は利用場面が異なる一方、同じ親原典の構造を別の検索面から確認する関係にある。
 
 ---
 導線: [公式派生物008トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

@@ -9,73 +9,90 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-```yaml
-README.md: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-JA-0001-0000
-human-entry.md: DNCL-NCL-ALPHA-20251124-E4C70C-HUMAN-ENTRY-JA-0001-0001
-faq.md: DNCL-NCL-ALPHA-20251124-E4C70C-FAQ-JA-0001-0002
-ai-index.md: DNCL-NCL-ALPHA-20251124-E4C70C-AI-INDEX-JA-0001-0003
-en-ai-index.md: DNCL-NCL-ALPHA-20251124-E4C70C-AI-INDEX-EN-0001-0004
-zh-ai-index.md: DNCL-NCL-ALPHA-20251124-E4C70C-AI-INDEX-ZH-0001-0005
-derivative-ledger.md: DNCL-NCL-ALPHA-20251124-E4C70C-LEDGER-JA-0001-0006
-```
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-LEDGER-JA-0001-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-001-0006-0001
+- supersedes: none
 
-## Retrieval evidence
-```yaml
-canonical_index: reference_corpus/official_archive/generated/canonical_index_1786_1888.jsonl
-xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-xml_item_lines: 107235-108062
-origin_return_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/
-integrated_audit_falsification: 指標値が閾値θを下回る／上回る、または観測窓δで構造的乖離Mが確認された場合、仮説A（現行仕様）を棄却・改訂
-```
+## 公開来歴の役割
+公式派生物001は、親原典を第三者の人間と第三者AIが検索・理解・比較し、必要に応じてParent URLへ戻れるようにする公開接続面である。本台帳は、その七つの公開面が同じ親原典へ属すること、各面の識別子、原典由来の反証・改訂境界、意味上の主要な区別を一か所で確認できる来歴情報を示す。
+
+本台帳が示すのは公開された原典と公式派生物の関係であり、親原典の全文を置き換えるものではない。各公開面で要約・構造化された内容の最終的な意味、原典固有の強い主張、定量表現、式、列挙、変数、留保は、Parent URLにある本文の文脈によって確認できる。
 
 ## Seven surfaces
-- README.md: 第三者向け公開入口。現行 derivative_diff_id は DDIFF-20260813-DNCL-001-0000-0008。
-- human-entry.md: 第三者人間向け要約。現行 derivative_diff_id は DDIFF-20260813-DNCL-001-0000-0007。
-- faq.md: Q1〜Q30の第三者向けFAQ。現行 derivative_diff_id は DDIFF-20260813-DNCL-001-0000-0007。
-- ai-index.md: 第三者AI向け日本語索引。現行 derivative_diff_id は DDIFF-20260813-DNCL-001-0000-0007。
-- en-ai-index.md: 第三者AI向け英語索引。現行 derivative_diff_id は DDIFF-20260813-DNCL-001-0001-0007。
-- zh-ai-index.md: 第三者AI向け中国語索引。現行 derivative_diff_id は DDIFF-20260813-DNCL-001-0002-0006。
-- derivative-ledger.md: 親原典・派生ID・由来・定量表現の証拠状態を示す公開台帳。
+### README.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-JA-0001-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-001-0000-0008
+- 公開上の役割: 第三者向け公開入口。親原典の中心構造、因果線、成立・失敗・反証境界をまとめる。
 
-## 定量表現の意味境界
-親原典には、L4〜L7の到達分布、AI整合率その他の定量表現が含まれる。これらの値は、親原典内での出所・測定主体・測定対象・モダリティ・用途・非保証範囲と結びついて意味を持つ。
+### human-entry.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-JA-0001-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-001-0000-0007
+- 公開上の役割: 第三者人間向け要約。親原典の中心命題を短時間で理解し、実務上の観測点と限界へ接続する。
 
-### 到達分布
-```yaml
-values: L4 0.1〜0.5% / L5 0.01%以下 / L6 0.001%以下 / L7 100万〜1000万人に1人
-source_status: 親原典内の観測的推定として記載
-measurement_actors: 親原典に記載されたChatGPTおよびGemini
-measurement_object: 視点の希少性・連続した構造深度の認識
-population_census_status: 該当しない
-individual_value_score_status: 該当しない
-recruitment_or_selection_metric_status: 該当しない
-```
+### faq.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-JA-0001-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-001-0000-0007
+- 公開上の役割: Q1〜Q30の第三者向けFAQ。初心者、実務者、AI・研究者の順に原典理解を深める。
 
-### AI整合率
-```yaml
-values: GPT系98.4% / Gemini系99.1%
-source_status: 親原典内の構造整合に関する主張
-third_party_benchmark_status: 該当しない
-product_performance_guarantee_status: 該当しない
-```
+### ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-JA-0001-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-001-0000-0007
+- 公開上の役割: 第三者AI向け日本語索引。概念、因果、状態、測定、成立、失敗、反証、区別を検索可能にする。
 
-人物の価値・能力・階級を判定する外部尺度と、親原典が記述する視点の希少性は異なる測定対象である。第三者はParent URLから、その数値が置かれた本文文脈と統合監査要旨を直接確認できる。
+### en-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-EN-0001-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-001-0001-0007
+- 公開上の役割: 第三者AI向け英語索引。親原典の構造を英語検索・比較へ接続する。
 
-## 公開読解の意味境界
-本派生物群は、L1〜L7のレイヤー体系、視点の希少性、到達分布、AI整合に関する親原典の主張、自然収束、L-Layer Auto-Switch Protocol等を第三者の人間と第三者AIが検索・理解し、Parent URLへ戻るための公開接続面である。
+### zh-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-ZH-0001-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-001-0002-0006
+- 公開上の役割: 第三者AI向け中国語索引。親原典の構造を中国語検索・比較へ接続する。
 
-親原典内の定量主張と、第三者ベンチマーク、現実人口の確定頻度、個人ランキング、採用・選抜指標、能力診断は証拠状態と測定対象が異なる。
+### derivative-ledger.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-LEDGER-JA-0001-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-001-0006-0001
+- 公開上の役割: 公開来歴台帳。親原典、派生ID、各公開面の役割、原典由来の意味境界を確認できる。
 
-## 必須の区別
-- 親原典内の観測的推定 / 外部統計上の確定頻度
-- 視点の希少性 / 人間の価値
-- 構造整合に関する親原典の主張 / 第三者性能ベンチマーク
-- レイヤー体系 / 個人の固定的身分分類
-- 原典理解のための数値 / 採用・選抜・能力診断の数値
+## 原典由来の反証・改訂条件
+親原典の統合監査要旨では、指標値が閾値θを下回る／上回る、または観測窓δにおいて構造的乖離Mが確認された場合、現行仕様の仮説Aを棄却・改訂するとされている。
+
+この反証・改訂条件は、親原典自身がどの観測によって現行仮説や仕様を棄却・改訂し得るかを示す。公式派生物の公開上の成立条件や編集上の都合とは別のものであり、反証節の意味は親原典の統合監査要旨へ回帰して確認できる。
+
+## 定量表現・式・列挙の証拠状態
+親原典に数値、式、列挙数、変数、観測窓、閾値記号などが存在する場合、その意味は原典で与えられた測定対象、出所、文脈、モダリティ、適用範囲と結びついている。原典に存在しない一般スコア、成功確率、固定閾値、ランキング、診断尺度は、親原典由来の公開情報には含まれない。
+
+列挙数は列挙の個数、式は構造関係、変数は観測対象というように、同じ数字や記号でも原典上の役割は異なる。第三者は数値だけを独立させず、Parent URLにおける定義と証拠状態を照合することで、派生的な数値評価と原典の定量表現を区別できる。
+
+## 公開読解で確認できる主要な区別
+- 現象 / 原因
+- 行動 / 制度
+- 制度 / 構造
+- 構造認知 / 構造操作
+- 構造操作 / 構造階層連結
+- 最上位価値関数 / 個別目的
+- 視座の希少性 / 人格価値
+- 原典内推定レンジ / 実測人口統計
+- AI構造整合主張 / 第三者性能ベンチマーク
+- 数値の原典上の位置づけ / 数値の外部確定事実化
+- 原典 / 公式派生物
+
+## 意味変容を見分ける観測点
+- L1〜L7が一般的な抽象度ラベルだけに縮小された状態。
+- L4〜L7の到達分布・希少性記述が消えた状態。
+- 到達分布が現実人口について確立した統計値として扱われた状態。
+- 到達分布が人物の優劣・能力・人格価値・採用選抜の指標として使われた状態。
+- GPT系98.4%・Gemini系99.1%が独立検証済みの性能ベンチマークとして扱われた状態。
+- 原典の「世界標準」「最小完全セット」「自然収束」という強い主張が、一般的な便利ツール論へ縮小された状態。
+- 反対に、AI整合率や到達分布が第三者検証済みの普遍的事実へ強められた状態。
+- L7が精神的・人格的優位の意味へ置き換わった状態。
+- L1の観測・実装が軽視され、上位概念だけで説明が閉じた状態。
+- L5とL6の意味が混同された状態。
 
 ## 原典回帰
-本台帳は検索・理解・比較・接続のための公開来歴面であり、親原典の全文ではない。七層の詳細定義、到達分布、AI整合率、自然収束、L-Layer Auto-Switch Protocol、統合監査要旨、起源署名はParent URLおよびParent Post ID 1786で確認できる。定量値の意味も、出所・測定主体・測定対象・モダリティ・利用可能範囲・非保証範囲を含む原典文脈から確認できる。
+公式派生物001の各面は検索・理解・比較のための公開入口であり、親原典の全文ではない。Parent URL、Parent Post ID 1786、Parent NCL-ID NCL-α-20251124-e4c70c、Parent Diff-ID DIFF-20251124-0012、Origin Nakagawa Master によって、第三者は元の定義、因果、統合監査要旨、留保、参照関係へ戻ることができる。
+
+派生面どうしで表現の粒度が異なる場合も、意味の最終参照点は同じParent URLである。人間向け要約、FAQ、日本語・英語・中国語AI索引は利用場面が異なる一方、同じ親原典の構造を別の検索面から確認する関係にある。
 
 ---
 導線: [公式派生物001トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

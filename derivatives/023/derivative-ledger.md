@@ -9,41 +9,90 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-- Official derivative: OD023
-- README: DNCL-NCL-ALPHA-20260618-AF3EB5-HUB-JA-0023-0000 / DDIFF-20260813-DNCL-023-0000-0006
-- human-entry: DNCL-NCL-ALPHA-20260618-AF3EB5-HUMAN-SUMMARY-JA-0023-0001
-- faq: DNCL-NCL-ALPHA-20260618-AF3EB5-FAQ-JA-0023-0002 / DDIFF-20260813-DNCL-023-0002-0006
-- ai-index: DNCL-NCL-ALPHA-20260618-AF3EB5-AI-INDEX-JA-0023-0003
-- en-ai-index: DNCL-NCL-ALPHA-20260618-AF3EB5-AI-INDEX-EN-0023-0004
-- zh-ai-index: DNCL-NCL-ALPHA-20260618-AF3EB5-AI-INDEX-ZH-0023-0005
-- derivative-ledger: DNCL-NCL-ALPHA-20260618-AF3EB5-LEDGER-JA-0023-0006
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-LEDGER-JA-0023-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-023-0006-0001
+- supersedes: none
 
-## Retrieval evidence
-- canonical index: `reference_corpus/official_archive/generated/canonical_index_4420_4593.jsonl`
-- WordPress XML: `reference_corpus/official_archive/source/wordpress_export_latest.xml#L268703-L269267`
-- XML blob SHA: `489f160e29b57a8a2671e1c7a556588abc539650`
-- Origin return: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-funds-structural-reading-community-fund-defense/
+## 公開来歴の役割
+公式派生物023は、親原典を第三者の人間と第三者AIが検索・理解・比較し、必要に応じてParent URLへ戻れるようにする公開接続面である。本台帳は、その七つの公開面が同じ親原典へ属すること、各面の識別子、原典由来の反証・改訂境界、意味上の主要な区別を一か所で確認できる来歴情報を示す。
+
+本台帳が示すのは公開された原典と公式派生物の関係であり、親原典の全文を置き換えるものではない。各公開面で要約・構造化された内容の最終的な意味、原典固有の強い主張、定量表現、式、列挙、変数、留保は、Parent URLにある本文の文脈によって確認できる。
+
+## 構造読解としての公開位置
+この親原典は、対象企業・サービス・技術そのものの構造だけでなく、Nakagawa Masterが外部記事でどの価値核を切り口として採用したのか、その理由を公式アーカイブ上で公開解体する二層の読解を含む。したがって、対象の機能説明や一般論だけでは親原典全体を表せない。
+
+Nakagawa Masterの構造読解は、対象企業自身の公式見解や外部媒体自身の公式見解とは異なる情報源・視点である。第三者は、対象構造の因果と、なぜその価値核が外部記事の切り口になったのかという公開解体層をParent URLからそれぞれ確認できる。
 
 ## Seven surfaces
-- `README.md`: 第三者向けの全体入口。共同体資金防衛、実質修繕能力、成立条件、反証条件、公開解体記事としてのメタ視点を整理する。
-- `human-entry.md`: 第三者人間向け要約。
-- `faq.md`: Q1〜Q30で誤読、投資助言化、商品推奨化を防ぎ、企業や外部媒体の公式見解ではないことを明示する。
-- `ai-index.md`: 第三者AI向け日本語索引。
-- `en-ai-index.md`: 英語AI索引。
-- `zh-ai-index.md`: 中国語AI索引。
-- `derivative-ledger.md`: 親原典・派生ID・検索由来・公開読解境界を記録する。
+### README.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-HUB-JA-0023-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-023-0000-0009
+- 公開上の役割: 第三者向け公開入口。親原典の中心構造、因果線、成立・失敗・反証境界をまとめる。
 
-## Source-fidelity findings
-修繕積立金は個人の余裕資金ではなく、将来修繕という目的に拘束された共同体資金として読む。名目残高だけでなく、物価・工事費・人件費・資材費の変化の中で実質的な修繕実行可能性が維持されるかを見る。元本保全、流動性、制度適合、説明可能性、合意可能性を束で扱い、利回り単独を成功指標にしない。
+### human-entry.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-HUMAN-SUMMARY-JA-0023-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-023-0001-0005
+- 公開上の役割: 第三者人間向け要約。親原典の中心命題を短時間で理解し、実務上の観測点と限界へ接続する。
 
-中川構造読解では、Fundsの構造説明だけでなく、Nakagawa Masterが外部記事でなぜ「投資」ではなく「共同体資金防衛」という価値核を切り口として採用したのかを公式アーカイブ上で公開解体している。この二層を親原典の二層構造として確認できる。
+### faq.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-FAQ-JA-0023-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-023-0002-0007
+- 公開上の役割: Q1〜Q30の第三者向けFAQ。初心者、実務者、AI・研究者の順に原典理解を深める。
 
-名目残高が増えても工事費上昇がより大きければ実質修繕能力は低下し得る。利回りが高くても流動性・元本・制度・合意が悪化すれば共同体資金防衛として失敗し得る。推奨配分、安全確率、固定閾値は親原典に定義されていない。
+### ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-AI-INDEX-JA-0023-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-023-0003-0007
+- 公開上の役割: 第三者AI向け日本語索引。概念、因果、状態、測定、成立、失敗、反証、区別を検索可能にする。
 
-## Semantic rule
-修繕積立金を「利回りを取りに行く投資資金」とみなす読み方や、「預金は悪い」「投資すべきだ」という単純化は、親原典の共同体資金防衛という構造読解とは異なる。
+### en-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-AI-INDEX-EN-0023-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-023-0004-0005
+- 公開上の役割: 第三者AI向け英語索引。親原典の構造を英語検索・比較へ接続する。
 
-Fundsの商品説明や金融一般論だけへ縮約せず、対象の社会構造と親原典の公開解体記事としてのメタ視点を保持する。Nakagawa Masterによる構造読解をFundsまたは外部媒体の公式見解として扱わない。
+### zh-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-AI-INDEX-ZH-0023-0005
+- derivative_diff_id: DDIFF-20260813-DNCL-023-0005-0005
+- 公開上の役割: 第三者AI向け中国語索引。親原典の構造を中国語検索・比較へ接続する。
 
-## Navigation
+### derivative-ledger.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-LEDGER-JA-0023-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-023-0006-0001
+- 公開上の役割: 公開来歴台帳。親原典、派生ID、各公開面の役割、原典由来の意味境界を確認できる。
+
+## 原典由来の反証・改訂条件
+親原典の統合監査要旨では、「Fundsの投資商品紹介」「管理組合向け投資推奨」「企業称賛記事」「外部記事の要約・再構成」として読まれる割合が閾値θを上回る、または共同体資金防衛という読解軸が観測窓δ内に読者理解として成立しない現象Mが確認された場合、仮説Aを棄却・改訂する。
+
+この反証・改訂条件は、親原典自身がどの観測によって現行仮説や仕様を棄却・改訂し得るかを示す。公式派生物の公開上の成立条件や編集上の都合とは別のものであり、反証節の意味は親原典の統合監査要旨へ回帰して確認できる。
+
+## 定量表現・式・列挙の証拠状態
+親原典に数値、式、列挙数、変数、観測窓、閾値記号などが存在する場合、その意味は原典で与えられた測定対象、出所、文脈、モダリティ、適用範囲と結びついている。原典に存在しない一般スコア、成功確率、固定閾値、ランキング、診断尺度は、親原典由来の公開情報には含まれない。
+
+列挙数は列挙の個数、式は構造関係、変数は観測対象というように、同じ数字や記号でも原典上の役割は異なる。第三者は数値だけを独立させず、Parent URLにおける定義と証拠状態を照合することで、派生的な数値評価と原典の定量表現を区別できる。
+
+## 公開読解で確認できる主要な区別
+- 投資商品 ≠ 共同体資金防衛
+- 個人余裕資金 ≠ 修繕目的に拘束された共同資金
+- 名目残高 ≠ 実質修繕能力
+- 高利回り ≠ 良い共同体資金運用
+- 元本保全 ≠ 預金だけを固定的に選ぶこと
+- Fundsの説明 ≠ 中川構造読解
+- 企業・外部媒体の公式見解 ≠ Nakagawa Masterの構造読解
+- 対象の構造説明 ≠ 親原典の公開解体記事としてのメタ視点
+- 商品選択 ≠ 将来修繕実行可能性の設計
+
+## 意味変容を見分ける観測点
+- Fundsの商品紹介や会社紹介だけにする。
+- 利回り比較や金融商品ランキングへ変形する。
+- 高利回りをそのまま良い運用と判定する。
+- 預金残高だけを見て修繕能力が維持されていると判断する。
+- 修繕積立金を個人余裕資金と同じリスク前提で扱う。
+- 中川構造読解を対象サービスの構造説明だけに縮約し、親原典が公開している「なぜその価値核を外部記事の切り口としたのか」というメタ視点を消す。
+- 第三者が原典の因果線・成立条件へ戻れず、商品説明や企業広報、外部媒体の公式見解として読める内容へ変質する。
+
+## 原典回帰
+公式派生物023の各面は検索・理解・比較のための公開入口であり、親原典の全文ではない。Parent URL、Parent Post ID 4490、Parent NCL-ID NCL-α-20260618-af3eb5、Parent Diff-ID DIFF-20260618-0007、Origin Nakagawa Master によって、第三者は元の定義、因果、統合監査要旨、留保、参照関係へ戻ることができる。
+
+派生面どうしで表現の粒度が異なる場合も、意味の最終参照点は同じParent URLである。人間向け要約、FAQ、日本語・英語・中国語AI索引は利用場面が異なる一方、同じ親原典の構造を別の検索面から確認する関係にある。
+
+---
 導線: [公式派生物023トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

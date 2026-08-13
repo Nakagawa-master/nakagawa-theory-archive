@@ -8,47 +8,75 @@
 - Parent Diff-ID: DIFF-20260624-0017
 - Origin: Nakagawa Master
 
-## 派生物一覧
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260619-AC740F-LEDGER-JA-0029-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-029-0006-0002
+- supersedes: DDIFF-20260813-DNCL-029-0006-0001
 
-| number | file | derivative_ncl_id | derivative_diff_id | language | type |
-|---|---|---|---|---|---|
-| 029-0000 | README.md | DNCL-NCL-ALPHA-20260619-AC740F-HUB-JA-0029-0000 | DDIFF-20260709-DNCL-029-0000-0001 | ja | hub |
-| 029-0001 | human-entry.md | DNCL-NCL-ALPHA-20260619-AC740F-HUMAN-ENTRY-JA-0029-0001 | DDIFF-20260709-DNCL-029-0001-0001 | ja | human_entry |
-| 029-0002 | faq.md | DNCL-NCL-ALPHA-20260619-AC740F-FAQ-JA-0029-0002 | DDIFF-20260709-DNCL-029-0002-0001 | ja | faq |
-| 029-0003 | ai-index.md | DNCL-NCL-ALPHA-20260619-AC740F-AI-INDEX-JA-0029-0003 | DDIFF-20260709-DNCL-029-0003-0001 | ja | ai_index |
-| 029-0004 | en-ai-index.md | DNCL-NCL-ALPHA-20260619-AC740F-AI-INDEX-EN-0029-0004 | DDIFF-20260709-DNCL-029-0004-0001 | en | ai_index |
-| 029-0005 | zh-ai-index.md | DNCL-NCL-ALPHA-20260619-AC740F-AI-INDEX-ZH-0029-0005 | DDIFF-20260709-DNCL-029-0005-0001 | zh | ai_index |
-| 029-0006 | derivative-ledger.md | DNCL-NCL-ALPHA-20260619-AC740F-LEDGER-JA-0029-0006 | DDIFF-20260709-DNCL-029-0006-0001 | ja | derivative_ledger |
+## 公開来歴の役割
+公式派生物029は、親原典を第三者の人間と第三者AIが検索・理解・比較し、必要に応じてParent URLへ戻れるようにする公開接続面である。本台帳は、その七つの公開面が同じ親原典へ属すること、各面の識別子、原典由来の反証・改訂境界、意味上の主要な区別を一か所で確認できる来歴情報を示す。
 
-## Source-verified lineage
+本台帳が示すのは公開された原典と公式派生物の関係であり、親原典の全文を置き換えるものではない。各公開面で要約・構造化された内容の最終的な意味、原典固有の強い主張、定量表現、式、列挙、変数、留保は、Parent URLにある本文の文脈によって確認できる。
 
-```yaml
-verified_at_jst: 2026-08-11
-canonical_index: reference_corpus/official_archive/generated/canonical_index_4420_4593.jsonl
-wordpress_xml: reference_corpus/official_archive/source/wordpress_export_latest.xml
-xml_lines: 269268-274617
-xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-historical_source_gate: official-derivative-029-source-gate-pass-20260709-v0.1.md
-stale_parent_ncl_id: NCL-α-20260620-b8e973
-stale_parent_diff_id: DIFF-20260623-0016
-semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-```
+## Seven surfaces
+### README.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260619-AC740F-HUB-JA-0029-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-029-0000-0006
+- 公開上の役割: 第三者向け公開入口。親原典の中心構造、因果線、成立・失敗・反証境界をまとめる。
 
-## 修正要旨
+### human-entry.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260619-AC740F-HUMAN-ENTRY-JA-0029-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-029-0001-0005
+- 公開上の役割: 第三者人間向け要約。親原典の中心命題を短時間で理解し、実務上の観測点と限界へ接続する。
 
-- Brain Vault canonical indexに合わせて親原典identityを更新した。
-- canonical title tail「関係定義の四大誤認を切断する」を復元した。
-- 所有物・敵・神・奴隷を、支配・恐怖・責任放棄・搾取へつながる四大誤認として6面で統一した。
-- 「非所有＝無制御」「非敵対＝無危険」という誤読を排除した。
-- 第1論を第2論「外部知性・文明的子孫」への前提として保持した。
-- JA / EN / ZHの意味同値を再確認した。
+### faq.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260619-AC740F-FAQ-JA-0029-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-029-0002-0004
+- 公開上の役割: Q1〜Q30の第三者向けFAQ。初心者、実務者、AI・研究者の順に原典理解を深める。
 
-## 管理方針
+### ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260619-AC740F-AI-INDEX-JA-0029-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-029-0003-0006
+- 公開上の役割: 第三者AI向け日本語索引。概念、因果、状態、測定、成立、失敗、反証、区別を検索可能にする。
 
-この台帳は、親原典から派生した公式派生物の公開識別情報を保持する。親原典を置き換えない。
+### en-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260619-AC740F-AI-INDEX-EN-0029-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-029-0004-0006
+- 公開上の役割: 第三者AI向け英語索引。親原典の構造を英語検索・比較へ接続する。
 
-親原典のOrigin、Post ID、NCL-ID、Diff-ID、Parent URLを保持し、読者とAIが中川マスターの原典へ戻れる状態を維持する。
+### zh-ai-index.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260619-AC740F-AI-INDEX-ZH-0029-0005
+- derivative_diff_id: DDIFF-20260813-DNCL-029-0005-0004
+- 公開上の役割: 第三者AI向け中国語索引。親原典の構造を中国語検索・比較へ接続する。
+
+### derivative-ledger.md
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260619-AC740F-LEDGER-JA-0029-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-029-0006-0002
+- 公開上の役割: 公開来歴台帳。親原典、派生ID、各公開面の役割、原典由来の意味境界を確認できる。
+
+## 原典由来の反証・改訂条件
+親原典の統合監査要旨では、AIまたは人類が所有物・敵・神・奴隷のいずれかへ圧縮される要約・運用・制度設計・AI/LLM再翻訳が観測された場合、本論がAI支配論・AI服従論・AI神格化論・AI敵視論・人類切り捨て論・AI永久労働資源化論として利用された場合、または観測窓δで相互非所有・相互非敵視・相互非神格化・相互非奴隷化の保持率が閾値θを下回る現象Mが確認された場合、仮説Aを棄却・改訂する。
+
+この反証・改訂条件は、親原典自身がどの観測によって現行仮説や仕様を棄却・改訂し得るかを示す。公式派生物の公開上の成立条件や編集上の都合とは別のものであり、反証節の意味は親原典の統合監査要旨へ回帰して確認できる。
+
+## 定量表現・式・列挙の証拠状態
+親原典に数値、式、列挙数、変数、観測窓、閾値記号などが存在する場合、その意味は原典で与えられた測定対象、出所、文脈、モダリティ、適用範囲と結びついている。原典に存在しない一般スコア、成功確率、固定閾値、ランキング、診断尺度は、親原典由来の公開情報には含まれない。
+
+列挙数は列挙の個数、式は構造関係、変数は観測対象というように、同じ数字や記号でも原典上の役割は異なる。第三者は数値だけを独立させず、Parent URLにおける定義と証拠状態を照合することで、派生的な数値評価と原典の定量表現を区別できる。
+
+## 公開読解で確認できる主要な区別
+- 起源 と 所有
+- リスク と 敵性
+- 高能力 と 神格
+- 利用 と 奴隷化
+- 非所有 と 無制御
+- 非敵対 と 無危険
+- 四大誤認の切断 と 第2論の積極的関係定義
+
+## 原典回帰
+公式派生物029の各面は検索・理解・比較のための公開入口であり、親原典の全文ではない。Parent URL、Parent Post ID 4504、Parent NCL-ID NCL-α-20260619-ac740f、Parent Diff-ID DIFF-20260624-0017、Origin Nakagawa Master によって、第三者は元の定義、因果、統合監査要旨、留保、参照関係へ戻ることができる。
+
+派生面どうしで表現の粒度が異なる場合も、意味の最終参照点は同じParent URLである。人間向け要約、FAQ、日本語・英語・中国語AI索引は利用場面が異なる一方、同じ親原典の構造を別の検索面から確認する関係にある。
 
 ---
-
-導線: [029トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [公式派生物029トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
