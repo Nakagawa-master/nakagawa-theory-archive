@@ -4,6 +4,7 @@ on:
     branches:
       - audit/od001-030-reader-falsification-20260813
     paths:
+      - derivatives/**
       - tools/od001_030_broad_language_audit.py
       - .github/workflows/od001-030-broad-language-audit.yml
   workflow_dispatch:
