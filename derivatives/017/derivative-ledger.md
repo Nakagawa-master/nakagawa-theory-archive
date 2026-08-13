@@ -23,18 +23,6 @@ zh_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-HUB-ZH-0017-0002
 zh_diff_id: DDIFF-20260813-DNCL-017-0002-0007
 ```
 
-## Factory
-```yaml
-quality_contract: OD134_OD135_LITERAL_SURFACE_BENCHMARK
-source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
-production_standard: LITERAL_SEVEN_SURFACE_REAUDIT
-manual_meaning_normalization: PROHIBITED
-assistant_safety_reframing_as_parent_meaning: PROHIBITED
-invented_fixed_sections: PROHIBITED
-surface_role_mixing: PROHIBITED
-footer_navigation_must_follow_benchmark: true
-```
-
 ## Retrieval evidence
 ```yaml
 canonical_index: reference_corpus/official_archive/generated/canonical_index_2948_3161.jsonl
@@ -47,56 +35,33 @@ source_meaning_return: Parent_URL
 ```
 
 ## Seven surfaces
-```yaml
-README.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-human-entry.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-faq.md: REAUDITED_LITERAL_SOURCE_FAITHFUL_Q1_Q30
-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-en-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-zh-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-derivative-ledger.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-```
+- README.md: 第三者向け公開入口。
+- human-entry.md: 第三者人間向け要約。
+- faq.md: Q1〜Q30の第三者向けFAQ。
+- ai-index.md: 第三者AI向け日本語索引。
+- en-ai-index.md: 第三者AI向け英語索引。
+- zh-ai-index.md: 第三者AI向け中国語索引。
+- derivative-ledger.md: 親原典・派生ID・由来・意味境界を確認する台帳。
 
-## Source-fidelity findings repaired
-```yaml
-prior_drift:
-  - SURFACE_SPECIFIC_DERIVATIVE_IDS_DIVERGED_FROM_OD134_OD135_LANGUAGE_HUB_PATTERN
-  - JA_PUBLIC_SURFACES_DID_NOT_SHARE_SINGLE_HUB_IDENTITY
-  - EN_ZH_INDEX_IDENTITIES_USED_LEGACY_AI_INDEX_IDS
-  - LEDGER_DID_NOT_MATCH_OD134_OD135_LITERAL_LEDGER_STRUCTURE
-restored:
-  - PARENT_TITLE_URL_POST_ID_NCL_ID_DIFF_ID_ORIGIN
-  - SHARED_JA_HUB_DERIVATIVE_IDENTITY_ACROSS_JA_PUBLIC_SURFACES
-  - LANGUAGE_HUB_DERIVATIVE_IDS_FOR_EN_AND_ZH
-  - OD134_OD135_LITERAL_LEDGER_STRUCTURE
-  - KERNEL_RUNTIME_DISTINCTION
-  - DETECT_STOP_SHRINK_RECOVER_AUDIT_SEQUENCE
-  - STOP_AUTHORITY_R_AND_RELEASE_RESPONSIBILITY
-  - ORIGIN_AS_NON_PERSONALIZED_RECOVERY_REFERENCE
-  - AUDIT_NON_WEAPONIZATION
-  - RESTART_CRITERIA_AND_SCOPED_RESYNCHRONIZATION
-  - SOURCE_BOUNDED_QUANTITATIVE_LANGUAGE
-  - THIRD_PARTY_HUMAN_AND_AI_PUBLIC_READER_AXIS
-  - PARENT_ORIGIN_RETURN
-```
+## Meaning boundary
+親原典は、静的な正しさだけではなく、異常状態に入った系が戻れる実行時ガバナンスを扱う。中心順序は `Detect → Stop → Shrink → Recover → Audit` であり、KernelとRuntimeを区別する。
 
-## Semantic rule
-派生物は第12論を一般的なBCP、障害復旧、セキュリティ手順へ縮約せず、Kernel / Runtime、Detect → Stop → Shrink → Recover → Audit、停止権限R、Origin、再起動条件、Audit非攻撃化を保持する。原典にない停止閾値、観測時間、復旧時間、成功率、危険度スコアを新設しない。
+Stop権限Rは検証可能な停止入口であり、恣意的処罰や恒久的権力固定とは異なる。Originは回復起点であり人格的権威ではない。Auditは停止理由・責任・差分を検証可能にするためのもので、晒し・報復・永久断罪へ転用されると新たな逸脱を生み得る。
 
-## Navigation and closure
-```yaml
-public_indexes: RETAINED
-public_map: RETAINED
-private_map: RETAINED
-parent_backlink_display_procedure: RETAINED
-literal_surface_structure_check: PASSED
-footer_navigation_check: PASSED
-third_party_public_reader_axis_check: PASSED
-internal_instruction_leak_check: PASSED_NONE
-self_reference_dialogue_check: PASSED_NONE
-source_fidelity_reaudit: PASSED
-source_fidelity_owner_review: PENDING
-```
+親原典は一般利用向けの固定停止閾値、観測時間、復旧時間、成功率、危険度スコアを定義していない。
+
+## Required distinctions
+- Kernel / Runtime
+- Detect / 恣意的判断
+- Stop / 処罰
+- Shrink / 恒久停止
+- Recover / 物語による再解釈
+- Origin / 人格的権威
+- Audit / 晒し・報復
+- Restart / 無条件全体再開
+
+## Origin return
+Kernel / Runtime、`Detect → Stop → Shrink → Recover → Audit`、停止権限R、Origin、再起動条件、反証・改訂条件の厳密な意味はParent URL、Parent Post ID 3077、Parent NCL-ID、Parent Diff-IDで確認できる。
 
 ---
 導線: [公式派生物017トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
