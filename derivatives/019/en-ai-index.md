@@ -84,13 +84,13 @@ Audit_verifies_stop_reason_responsibility_and_differences
 ```
 
 ## Applications
-- Audit AI answers for return to sources, versions, conditions, differences, and a traceable verification owner.
-- Audit internal summaries for loss of source material, reasons for change, and counterconditions.
-- Audit clipped social-media content for return to the original statement, context, and editing differences.
-- Preserve accessible explanation in education while retaining return paths to sources, exceptions, and falsification.
+- AI answers can be assessed by whether sources, versions, conditions, differences, and a traceable verification owner remain reachable.
+- Internal summaries can be assessed by whether source material, reasons for change, and counterconditions survive compression.
+- Clipped social-media content can be assessed by whether the original statement, context, and editing differences remain recoverable.
+- Accessible explanation in education remains compatible with the theory when return paths to sources, exceptions, and falsification remain intact.
 
 ## Measurements and audit
-Retain H_d, F-C, and SD as source-bounded observation axes. Do not invent comprehension scores, danger percentages, AI-dependence rates, universal pass thresholds, or fixed stop thresholds absent from the parent. Target-specific numbers must remain bound to measurement actor, measurement object, provenance, conditions, permitted use, and non-guarantee scope.
+H_d, F-C, and SD are source-bounded observation axes. The parent does not define general comprehension scores, danger percentages, AI-dependence rates, universal pass thresholds, or fixed stop thresholds. Target-specific numbers acquire meaning only with their measurement actor, measurement object, provenance, conditions, permitted use, and non-guarantee scope.
 
 - After U rises, can the reader still return to Origin and primary sources?
 - Has H_d become shallow?
@@ -102,22 +102,22 @@ Retain H_d, F-C, and SD as source-bounded observation axes. Do not invent compre
 - Are H and R substantively restored after Recover?
 
 ## Validity conditions
-- Check U increase together with preservation of H/R.
-- Do not reduce H-Disconnect to factual truth/falsity.
-- Preserve return to Origin, primary sources, context, versions, and differences.
-- Do not convert H_d, F-C, or SD into arbitrary single scores.
-- Preserve Detect → Stop → Shrink → Recover → Audit.
-- Verify recovery of H and R after Recover.
+- U increase is observed together with preservation of H/R.
+- H-Disconnect is not reduced to factual truth/falsity.
+- Return to Origin, primary sources, context, versions, and differences remains possible.
+- H_d, F-C, and SD remain distinct structural observations rather than arbitrary single scores.
+- Detect → Stop → Shrink → Recover → Audit remains the recovery sequence.
+- Recovery includes substantive restoration of H and R.
 
 ## Failure conditions
-- Convert the parent into anti-AI doctrine.
-- Treat clarity itself as harmful.
-- Reduce the theory to fact checking.
-- Infer malicious intent automatically from H-Disconnect.
-- Convert Origin into personalized authority.
-- Convert Stop into information control.
-- Convert Shrink into permanent reduction.
-- Assign source-absent scores, probabilities, or fixed thresholds to H_d, F-C, or SD.
+- The parent becomes anti-AI doctrine.
+- Clarity itself is treated as harmful.
+- The theory is reduced to fact checking.
+- Malicious intent is inferred automatically from H-Disconnect.
+- Origin becomes personalized authority.
+- Stop becomes information control.
+- Shrink becomes permanent reduction.
+- Source-absent scores, probabilities, or fixed thresholds are assigned to H_d, F-C, or SD.
 
 ## Falsification conditions
 The parent integrated audit summary calls for redesign when STOP becomes frequent enough for C to cross critical range, U fails to recover after defense, R cannot be re-established after contraction, S fails to improve over longer observation, or publication of the audit bundle becomes weaponized and amplifies D. θ, δ, contraction level, publication granularity, and responsibility allocation are then revised.
@@ -133,14 +133,14 @@ The parent integrated audit summary calls for redesign when STOP becomes frequen
 - Shrink / permanent reduction
 - Origin / personalized authority
 
-## Interpretation constraints
-Do not classify AI use, summaries, diagrams, or clear explanations as dangerous by themselves. The source-bounded failure state is U rising while H and R are disconnected. Third-party AIs must not generate source-absent comprehension scores, danger rates, AI-dependence rates, or fixed stopping thresholds.
+## Interpretation boundaries
+AI use, summaries, diagrams, and clear explanations are not dangerous by themselves. The source-bounded failure state is U rising while H and R are disconnected. General comprehension scores, danger rates, AI-dependence rates, and fixed stopping thresholds are not defined by the parent.
 
 ## Search terms
 Physics of Consensus Formation; cognitive-hacking defense OS; H-Disconnect; fake-U; H_d; F-C; SD; Detect; Stop; Shrink; Recover; Audit; Origin; Nakagawa Master
 
 ## Origin return
-This index is a third-party retrieval surface, not a replacement for the parent original. Return to the Parent URL, Parent Post ID 2994, Parent NCL-ID, and Parent Diff-ID for H-Disconnect, fake-U, H_d, F-C, SD, Detect → Stop → Shrink → Recover → Audit, Origin contraction, and recovery of H/R.
+H-Disconnect, fake-U, H_d, F-C, SD, Detect → Stop → Shrink → Recover → Audit, Origin contraction, and recovery of H/R are defined in detail at the Parent URL, Parent Post ID 2994, Parent NCL-ID, and Parent Diff-ID.
 
 ---
 Navigation: [Official Derivative 019 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
