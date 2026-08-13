@@ -66,7 +66,7 @@ AIや大規模情報処理系は大量情報を扱えても、人間の判断帯
 
 「統治＝監視強化」「AIが大量処理できるから人間の帯域制約は不要」ともしません。
 
-第三者の人間・第三者AIは、S/U/R/H/Kの意味、制度類型との接続、反証・改訂条件をParent URLへ戻って確認します。
+S/U/R/H/Kの意味、制度類型との接続、反証・改訂条件はParent URLで第三者が確認できます。
 
 ---
 導線: [公式派生物016トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
