@@ -1,0 +1,28 @@
+name: OD001-030 broad public prose cleanup
+on:
+  push:
+    branches:
+      - audit/od001-030-reader-falsification-20260813
+    paths:
+      - tools/od001_030_broad_language_cleanup.py
+      - .github/workflows/od001-030-broad-language-cleanup.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Normalize bare imperatives and FAQ self-dialogue
+        run: python tools/od001_030_broad_language_cleanup.py
+      - name: Re-normalize seven-link footers
+        run: python tools/od001_030_footer_and_residual_cleanup.py
+      - name: Commit broad prose cleanup
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add derivatives/001 derivatives/002 derivatives/003 derivatives/004 derivatives/005 derivatives/006 derivatives/007 derivatives/008 derivatives/009 derivatives/010 derivatives/011 derivatives/012 derivatives/013 derivatives/014 derivatives/015 derivatives/016 derivatives/017 derivatives/018 derivatives/019 derivatives/020 derivatives/021 derivatives/022 derivatives/023 derivatives/024 derivatives/025 derivatives/026 derivatives/027 derivatives/028 derivatives/029 derivatives/030
+          if git diff --cached --quiet; then echo "No changes"; else git commit -m "Normalize OD001-030 bare public imperatives and self-dialogue" && git push origin HEAD:audit/od001-030-reader-falsification-20260813; fi
+      - name: Strict benchmark validation
+        run: python tools/od001_030_final_validate.py
