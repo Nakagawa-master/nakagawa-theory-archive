@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-FAQ-JA-0021-0002
-- derivative_diff_id: DDIFF-20260813-DNCL-021-0002-0005
-- supersedes: DDIFF-20260813-DNCL-021-0002-0004
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-HUB-JA-0021-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-021-0000-0007
+- supersedes: DDIFF-20260813-DNCL-021-0000-0006
 
 ## 初心者向け｜Q1〜Q10
 ### Q1. この原典は何を扱いますか？
@@ -95,7 +95,6 @@ Uは理解・再現可能性、Rは責任追跡可能性、Hは履歴・差分�
 差分がすでに十分観測され、R/H/Uが安定し、D_lossが低くS回復も速い場合には、追加的な公開や介入の必要性は低くなります。
 
 ### Q27. 反証条件は何ですか？
-
 親原典の統合監査要旨では、D_detの増加と同時にD_lossとS回復時間が低下するかを監査し、D_det低下とD_loss不明・増加が継続する場合、または差分公開の増加にもかかわらずU/R低下・形式公開化・K超過によるノイズ化が起きる場合、公開帯域の距離・粒度・索引を再設計して改訂する。
 
 ### Q28. 何を単独指標にしてはいけませんか？

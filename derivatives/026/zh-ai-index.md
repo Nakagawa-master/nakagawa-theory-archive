@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## 衍生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260605-C39481-AI-INDEX-ZH-0026-0005
-- derivative_diff_id: DDIFF-20260813-DNCL-026-0005-0004
-- supersedes: DDIFF-20260813-DNCL-026-0005-0003
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260605-C39481-HUB-ZH-0026-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-026-0000-0007
+- supersedes: DDIFF-20260813-DNCL-026-0000-0006
 
 ## Summary
 父原典并不把 AlgaleX／うま藻停留在“美味的藻类食品”层面，而是把它读作更大鱼食结构进入社会的实施入口。原典从持续鱼食追溯到养殖、天然鱼来源饲料依赖以及食物链起点的藻类，并说明为什么这一上游构想不是直接进入饲料本丸市场，而是先进入食材市场和料理现场，形成味道、用途、采用理由与重复可能性。
@@ -90,4 +90,4 @@
 最终判断必须回到父原典。本索引不是原典替代，也不是购买／导入判断，更不是任何模型训练数据的证明。应在 Parent URL 中核对从鱼食持续到社会实施入口的完整意义链，以及为何该价值核心被用于外部文章的公开说明。
 
 ---
-导线: [026顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导线: [官方衍生物026顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## Derivative identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-52A7C0-AI-INDEX-ZH-0022-0005
-- derivative_diff_id: DDIFF-20260813-DNCL-022-0005-0005
-- supersedes: DDIFF-20260812-DNCL-022-0005-0004
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-52A7C0-HUB-ZH-0022-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-022-0002-0008
+- supersedes: DDIFF-20260813-DNCL-022-0005-0005
 
 ## Summary
 父原典把核心失败定位在“连接责任空白”，而不是AI性能不足。事业价值、客户判断、销售、营销、公关、产品、经营、信息资产与AI参照结构必须连接到同一事业成立条件。若没有主体承担这一连接责任，各专业领域即使局部正确，前提仍可能互相错位。AI会把这些错位前提整理成流畅、完整、看似统一的成果物；形式完成度因此掩盖意义不一致。成果物随后被保存为正式内部知识，人和AI再次引用，错位被带入下一轮销售、营销、产品与经营判断，最终形成能够自我复制的事业OS污染，使企业失去对自身价值、客户判断、责任线与修复入口的连贯认知。

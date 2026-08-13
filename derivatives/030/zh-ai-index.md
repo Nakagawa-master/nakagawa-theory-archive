@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## 衍生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260629-F16938-AI-INDEX-ZH-0030-0005
-- derivative_diff_id: DDIFF-20260813-DNCL-030-0005-0006
-- supersedes: DDIFF-20260813-DNCL-030-0005-0005
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260629-F16938-HUB-ZH-0030-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-030-0000-0008
+- supersedes: DDIFF-20260813-DNCL-030-0000-0007
 
 ## Summary
 父原典并不把 MOTA 仅读作汽车收购服务、估价比较或“电话较少”的便利服务。它把卖方与收购方的信息不对称、单一买方下的弱竞争、多买方竞争、电话／交涉／比较负担以及高负担下的过早妥协，视为同一个价格形成问题，并把 MOTA 读作让竞争与低卖方负担同时成立的市场条件再设计。
@@ -91,4 +91,4 @@
 最终判断必须回到 Parent URL。父原典把信息不对称、竞争、比较负担、过早妥协和价格形成之间的关系，与“为什么这一价值核心被选择为外部文章切入口”的公开说明结合在一起。本索引只是帮助第三方AI理解的公开辅助面，不替代原典，也不代表 MOTA 或外部媒体的官方见解，更不替代个别卖车判断。
 
 ---
-导线: [030顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导线: [官方衍生物030顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

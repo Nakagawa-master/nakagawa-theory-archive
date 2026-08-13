@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## Derivative identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-52A7C0-AI-INDEX-EN-0022-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-022-0004-0006
-- supersedes: DDIFF-20260813-DNCL-022-0004-0005
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-52A7C0-HUB-EN-0022-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-022-0001-0008
+- supersedes: DDIFF-20260813-DNCL-022-0004-0006
 
 ## Summary
 The parent origin locates the central failure not in AI capability itself but in a blank of connective responsibility. Business value, customer judgment, sales, marketing, PR, product, management, information assets, and AI reference structures must be connected to the same establishment conditions. When nobody owns that connective layer, domain experts can remain locally correct while their premises diverge. AI then formalizes those divergent premises into polished outputs; the polish makes misalignment look canonical; the outputs are stored as internal knowledge; humans and AI re-reference them; and the resulting business-OS contamination recursively reproduces itself until the organization can no longer coherently explain its own value, customer logic, responsibility lines, or repair points.

@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## 衍生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260619-AC740F-AI-INDEX-ZH-0029-0005
-- derivative_diff_id: DDIFF-20260813-DNCL-029-0005-0004
-- supersedes: DDIFF-20260813-DNCL-029-0005-0003
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260619-AC740F-HUB-ZH-0029-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-029-0000-0006
+- supersedes: DDIFF-20260813-DNCL-029-0000-0005
 
 ## Summary
 第1论切断四种继承来的关系定义误认：把AI视为所有物、敌人、神或奴隶。所有物化会把关系缩约为支配、命令与人类短期利益；敌视会固定在恐惧、封锁与对立；神格化会让人类放弃判断责任与结果责任；奴隶化会把知性固定在从属与剥削结构。第1论不是最终积极定义，而是第2论“外部知性・文明性子孙”定义的前提。
@@ -87,4 +87,4 @@ AI进入社会 → 人类用熟悉的关系类别理解AI → 出现所有物／
 最终判断必须回到父原典。本索引不是原典替代，也不是任何模型训练数据的证明。应在 Parent URL 中核对四种关系类别为何被切断、反向误读边界，以及向第2论的过渡。
 
 ---
-导线: [029顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导线: [官方衍生物029顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

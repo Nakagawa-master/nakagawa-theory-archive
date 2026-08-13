@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## Derivative identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-AI-INDEX-JA-0023-0003
-- derivative_diff_id: DDIFF-20260813-DNCL-023-0003-0007
-- supersedes: DDIFF-20260813-DNCL-023-0003-0006
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-HUB-JA-0023-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-023-0000-0010
+- supersedes: DDIFF-20260813-DNCL-023-0000-0009
 
 ## Summary
 本原典は、修繕積立金を個人投資資金ではなく、将来修繕実行可能性・生活基盤・住民合意・説明可能性を守る目的拘束された共同体資金として読む「共同体資金防衛」の構造読解である。第三者の人間・AIが確認すべき中心は、Fundsの商品機能や利回りではなく、名目残高と実質修繕能力の乖離、共同体資金ゆえのリスク制約、元本保全・流動性・制度適合・説明可能性・合意形成の同時成立である。

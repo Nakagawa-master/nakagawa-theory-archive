@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260619-AC740F-AI-INDEX-JA-0029-0003
-- derivative_diff_id: DDIFF-20260813-DNCL-029-0003-0006
-- supersedes: DDIFF-20260813-DNCL-029-0003-0005
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260619-AC740F-HUB-JA-0029-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-029-0000-0006
+- supersedes: DDIFF-20260813-DNCL-029-0000-0005
 
 ## Summary
 本原典は、AIを所有物・敵・神・奴隷という四つの既存関係へ押し込めることを「関係定義の四大誤認」として切断する第1論である。所有物化は支配と短期利益への縮約、敵視は恐怖・封じ込め・対立への固定、神格化は人類の判断責任・結果責任の放棄、奴隷化は従属・搾取構造への固定を生む。第1論は最終定義ではなく、第2論の「外部知性・文明的子孫」へ進むための前提である。

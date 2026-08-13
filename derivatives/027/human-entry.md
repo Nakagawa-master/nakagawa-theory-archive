@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260607-898D28-HUMAN-SUMMARY-JA-0027-0001
-- derivative_diff_id: DDIFF-20260813-DNCL-027-0001-0005
-- supersedes: DDIFF-20260813-DNCL-027-0001-0004
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260607-898D28-HUB-JA-0027-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-027-0000-0008
+- supersedes: DDIFF-20260813-DNCL-027-0000-0007
 
 ## 15秒説明
 親原典はインバックスの企業紹介ではない。異質な土を評価し、配合し、混合・養生し、品質確認し、現場補正し、検証して標準化へ近づけることで、土を「捨てるもの」から「条件付きで使える材料」へ翻訳する実装OSとして読む中川構造読解である。
@@ -78,7 +78,7 @@ Nakagawa Masterによる構造読解をインバックスや外部媒体の公�
 
 再利用件数が増えたから材料観更新が成功した、と単純に結論づけません。条件付きで材料として成立する知が残ることが重要です。
 
-公式派生物は第三者が原典の意味を確認する補助面であり、インバックスや外部媒体の公式見解として扱いません。
+第三者が原典の意味を確認する公開補助面として読み、インバックスや外部媒体の公式見解として扱いません。
 
 ---
 導線: [公式派生物027トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

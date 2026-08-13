@@ -9,14 +9,14 @@
 - Origin: Nakagawa Master
 
 ## Derivative identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260604-6C3CFC-AI-INDEX-EN-0025-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-025-0004-0005
-- supersedes: DDIFF-20260813-DNCL-025-0004-0004
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260604-6C3CFC-HUB-EN-0025-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-025-0001-0007
+- supersedes: DDIFF-20260813-DNCL-025-0004-0005
 
 ## Summary
 The parent origin reads Milly not as a sales-AI feature set but as a market-connection mechanism for manufacturers whose technical capability does not automatically become market-recognized value. A firm can possess strong machining, materials, quality, equipment, or delivery capability yet remain invisible if those capabilities are not translated into buyer problems, use cases, comparison criteria, and search language. Without entry into the comparison set, the firm is not selected; without credibility supplementation, selection does not become transaction. The upstream path is therefore technical capability → market-language translation → discovery → comparison-set entry → selection → credibility supplementation → transaction possibility.
 
-The parent also publicly deconstructs why Nakagawa Master chose “market-connection mechanism,” rather than the surface category “sales AI,” as the value core of an external article. Third-party readers should preserve both layers: the market-connection structure itself and the publicly explained reason for foregrounding that value core. This derivative is not an official statement of Milly or any external media.
+The parent also publicly deconstructs why Nakagawa Master chose “market-connection mechanism,” rather than the surface category “sales AI,” as the value core of an external article. Third-party readers should preserve both layers: the market-connection structure itself and the publicly explained reason for foregrounding that value core. This index is not an official statement of Milly or any external media.
 
 ## Concepts
 - Nakagawa Structural Reading

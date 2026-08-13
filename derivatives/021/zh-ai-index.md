@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## 衍生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-AI-INDEX-ZH-0021-0005
-- derivative_diff_id: DDIFF-20260813-DNCL-021-0005-0006
-- supersedes: DDIFF-20260813-DNCL-021-0005-0005
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-HUB-ZH-0021-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-021-0002-0007
+- supersedes: DDIFF-20260813-DNCL-021-0005-0006
 
 ## Summary
 父原典不首先把偏离视为需要惩罚的违规，而是把它视为设计与运行之间的差分D。真正的“免疫”不是偏离为零，而是偏离出现后能够被观察、固定修复责任R、保存差分履历H，并让 S = U × R × H 更快回到可修复的稳定状态。

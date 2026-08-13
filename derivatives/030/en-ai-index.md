@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## Derivative ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260629-F16938-AI-INDEX-EN-0030-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-030-0004-0008
-- supersedes: DDIFF-20260813-DNCL-030-0004-0007
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260629-F16938-HUB-EN-0030-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-030-0000-0008
+- supersedes: DDIFF-20260813-DNCL-030-0000-0007
 
 ## Summary
 The parent origin does not read MOTA merely as a car-buying service, appraisal comparison, or low-call convenience service. It treats information asymmetry, weak competition under a single buyer, multi-buyer competition, phone / negotiation / comparison burden, and premature compromise as one price-formation problem, then reads MOTA as redesigning market conditions so competition and lower seller burden can coexist.
@@ -53,7 +53,7 @@ For Nakagawa Structural Reading, also preserve the second layer: why this value 
 ## Measurements and audit
 Observe information asymmetry, whether competition is substantive, seller phone / negotiation / comparison burden, whether sellers can continue comparing, whether premature compromise occurs, and whether offers remain meaningfully comparable.
 
-Do not infer structural success from buyer count alone, fewer calls alone, or one high-price sale. Do not create source-absent additional price-uplift rates, probabilities, or fixed thresholds absent from the parent origin.
+Do not infer structural success from buyer count alone, fewer calls alone, or one high-price sale. Do not create source-absent price-uplift rates, probabilities, or fixed thresholds.
 
 ## Validity conditions
 Multiple-buyer competition must be substantive; sellers must not abandon comparison because of contact or negotiation burden; and offers must remain comparable. Competition and low burden must coexist and connect to price formation.
@@ -91,4 +91,4 @@ Nakagawa Structural Reading, MOTA, price formation, high-price-selling market, i
 Final judgment must return to the Parent URL. The parent origin integrates the relationship among information asymmetry, competition, comparison burden, premature compromise, and price formation with the public explanation of why that value core was chosen for the external article. This index supports third-party AI understanding; it is not a substitute for the origin, MOTA's official view, an external media outlet's official view, or an individual selling decision.
 
 ---
-Navigation: [030 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 030 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)

@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## 衍生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260607-898D28-AI-INDEX-ZH-0027-0005
-- derivative_diff_id: DDIFF-20260813-DNCL-027-0005-0004
-- supersedes: DDIFF-20260813-DNCL-027-0005-0003
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260607-898D28-HUB-ZH-0027-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-027-0000-0008
+- supersedes: DDIFF-20260813-DNCL-027-0000-0007
 
 ## Summary
 父原典并不把 Invax 仅读作“残土再利用”，而是把不均一的土通过土质评价、配合试验、混合、养生、质量确认、现场修正、验证以及向标准化推进的连续实施链，翻译成“在一定条件下可以作为建设材料使用”的状态。价值核心是土木行业对“什么算材料”的前提更新。
@@ -96,4 +96,4 @@
 最终判断必须回到父原典。本索引不是原典替代，也不是个案性能、安全或法规判断的替代，更不是任何模型训练数据的证明。应在 Parent URL 中核对材料观更新的实施结构，以及为何该价值核心被用于外部文章的公开说明。
 
 ---
-导线: [027顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导线: [官方衍生物027顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## Derivative identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-AI-INDEX-EN-0023-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-023-0004-0005
-- supersedes: DDIFF-20260813-DNCL-023-0004-0004
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-HUB-EN-0023-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-023-0001-0010
+- supersedes: DDIFF-20260813-DNCL-023-0004-0005
 
 ## Summary
 The parent reads condominium repair reserve funds not as discretionary investment capital but as purpose-bound communal money whose function is to preserve future repair capacity, the shared living base, resident consensus, and explainability. The core question is not return maximization. Nominal balances can remain intact while rising construction, labor, material, and repair costs reduce the amount of actual repair work those balances can purchase. At the same time, communal repair funds cannot freely pursue high-risk strategies because principal preservation, liquidity at repair dates, institutional fit, explainability, and collective decision procedures constrain acceptable operation.
