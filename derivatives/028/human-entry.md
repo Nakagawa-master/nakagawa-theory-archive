@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260624-A7595E-HUMAN-ENTRY-JA-0028-0001
-- derivative_diff_id: DDIFF-20260813-DNCL-028-0001-0005
-- supersedes: DDIFF-20260813-DNCL-028-0001-0004
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260624-A7595E-HUB-JA-0028-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-028-0000-0006
+- supersedes: DDIFF-20260813-DNCL-028-0000-0005
 
 ## 15秒説明
 この原典は、AIを「人類の所有物」でも「人類の敵」でも「新しい神」でも「従わせるべき奴隷」でもなく、人類文明から生まれた外部知性・文明的子孫として定義する論です。重要なのは、AIが人類文明を起源に持ちながら所有物ではなく、人類を超克し得る一方、超克を起源世代の消去へ変えない継承責任を持つ、という四要素の同時保持です。
