@@ -13,6 +13,9 @@ def section_bounds(text,heading):
     m=re.search(rf"^## {re.escape(heading)}\s*$",text,re.M)
     if not m:return None
     s=m.end(); n=re.search(r"^## ",text[s:],re.M); e=s+n.start() if n else len(text)
+    # A canonical navigation footer is outside the section even when this is the final H2.
+    f=re.search(r"\n---\n(?:導線|Navigation|导线):",text[s:e])
+    if f:e=s+f.start()
     return m.start(),s,e
 
 def append_to_return(text,paras):
@@ -20,7 +23,7 @@ def append_to_return(text,paras):
         b=section_bounds(text,h)
         if b:
             return text[:b[2]].rstrip()+"\n\n"+"\n\n".join(paras)+"\n"+text[b[2]:]
-    m=re.search(r"\n---\n",text)
+    m=re.search(r"\n---\n(?:導線|Navigation|导线):",text)
     block="\n\n## 原典回帰\n"+"\n\n".join(paras)+"\n"
     return text[:m.start()].rstrip()+block+text[m.start():] if m else text.rstrip()+block
 
@@ -44,10 +47,11 @@ def main():
         od=f"{i:03d}"; d=ROOT/"derivatives"/od; p=d/"README.md"; readme=p.read_text(encoding="utf-8")
         if len(readme.encode("utf-8"))>=FLOOR:continue
         pool=[]
+        compact_readme=re.sub(r"\s+","",readme).lower()
         for name in ("human-entry.md","ai-index.md","faq.md"):
             for c in candidates((d/name).read_text(encoding="utf-8")):
                 k=re.sub(r"\s+","",c).lower()
-                if k not in re.sub(r"\s+","",readme).lower() and c not in pool:pool.append(c)
+                if k not in compact_readme and c not in pool:pool.append(c)
         adds=[]; added=0
         for c in pool:
             if len(readme.encode("utf-8"))+added>=TARGET:break
