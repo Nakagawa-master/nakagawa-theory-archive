@@ -3,6 +3,7 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
+# Post-footer-fix rerun marker: 2026-08-13.
 ROOT=Path(__file__).resolve().parents[1]
 FLOOR=12348
 TARGET=12780
