@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260623-CFAA58-HUB-JA-0031-0000
-- derivative_diff_id: DDIFF-20260813-DNCL-031-0000-0003
-- supersedes: DDIFF-20260813-DNCL-031-0000-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-031-0000-0004
+- supersedes: DDIFF-20260813-DNCL-031-0000-0003
 
 ## 15秒説明
 親原典は、Ashiraseを「便利な歩行支援デバイス」として紹介する記事ではありません。歩くことは脚が動くだけでは成立せず、方向、周囲環境、次の判断に必要な情報が本人に使える形で届き、移動中の認知負荷が過剰にならないことまで含めて成立すると読みます。そのためAshiraseを、**歩ける社会を成立させる情報インフラ**として捉えます。
