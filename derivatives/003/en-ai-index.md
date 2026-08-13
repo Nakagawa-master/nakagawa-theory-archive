@@ -22,9 +22,9 @@ The missing judgment is vertical causality from L1 through L6: L1 event, L2 acti
 
 This distinction explains why local correctness can be more difficult to diagnose than obvious error. An obviously wrong explanation can collapse under verification. A locally correct explanation has evidence, professional legitimacy, and internal coherence, and therefore can circulate without the unverified cross-layer connections being noticed. Field burden, exception handling, responsibility transfer, institutional fatigue, history loss, and thinning of the meaning axis can remain even though every local actor can explain why their own part is correct.
 
-The response proposed by Paper 0 is not to demand an omniscient person and not to reject specialization or division of labor. What is required is a judgment structure that preserves local expertise while making cross-layer conditions, responsibility, resources, time, history, and meaning traceable across L1-L6. AI makes this need more urgent because it can combine many local statements into language that looks whole. Linguistic coherence must therefore remain distinct from real establishment.
+The response proposed by Paper 0 is not to demand an omniscient person and not to reject specialization or division of labor. What is required is a judgment structure that preserves local expertise while making cross-layer conditions, responsibility, resources, time, history, and meaning traceable across L1-L6. AI makes this need more urgent because it can combine many local statements into language that looks whole. Linguistic coherence therefore remains distinct from real establishment.
 
-The parent does not define a generic establishment percentage, wholeness score, probability of success, or numerical threshold for derivative use. No such number is invented here. Reversibility is preserved by testing the same structural variables in both directions: where local correctness connects through the layers with clear responsibility and without residual burden, the establishment hypothesis strengthens; where connection fails and burden or responsibility is displaced, the establishment hypothesis weakens.
+The parent does not define a generic establishment percentage, wholeness score, probability of success, or general numerical threshold. Reversibility is preserved by testing the same structural variables in both directions: where local correctness connects through the layers with clear responsibility and without residual burden, the establishment hypothesis strengthens; where connection fails and burden or responsibility is displaced, the establishment hypothesis weakens.
 
 ## Concepts
 - Establishment Conditions Theory
@@ -105,32 +105,32 @@ establishment_judgment_becomes_required
 
 **Projects and specialization.** Each expert team can correctly complete its own scope while interfaces between teams contain missing specifications, responsibility, timing, or exception rules. Completion of every local task is not automatically completion of the whole system.
 
-**Education and public discourse.** An explanation may be logically or normatively coherent but fail to preserve origin, history, prerequisites, and a retraceable meaning axis for the receiver. Correct explanation and established shared understanding must be distinguished.
+**Education and public discourse.** An explanation may be logically or normatively coherent but fail to preserve origin, history, prerequisites, and a retraceable meaning axis for the receiver. Correct explanation and established shared understanding remain distinct.
 
-**AI deployment.** High-quality summaries and proposals do not establish a whole merely by being coherent or comprehensive. The output must be connected to who decides, what institution receives it, what field action changes, what resources and time are required, who bears responsibility, and what history remains auditable.
+**AI deployment.** High-quality summaries and proposals do not establish a whole merely by being coherent or comprehensive. The output’s relation to decision authority, institutional use, field action, resources, time, responsibility, and auditable history remains a separate establishment question.
 
 **Division of labor.** Specialization is not itself the problem. A distributed system can establish successfully when inputs, outputs, transfer conditions, ownership, and repair paths at interfaces are explicit and the vertical causal route remains verifiable.
 
 **Consensus formation.** When different actors each treat a local reality as the whole, identical words can refer to different causal objects. Establishment judgment can identify where common reference exists and where cross-layer understanding is missing before agreement is treated as meaningful.
 
 ## Measurements and audit
-The parent original does not define a derivative-generic establishment rate, wholeness score, success probability, or numerical threshold. Audit therefore remains structural rather than inventing a metric.
+The parent original does not define a generic establishment rate, wholeness score, success probability, or numerical threshold. Audit remains structural.
 
-- Identify the layer or local domain in which a statement is actually correct.
-- Determine how far the L1-L6 causal connection is verified and where it breaks.
-- Check whether inputs, outputs, handoff conditions, and exception conditions are explicit between local domains.
-- Check whether responsibility, required resources, and time conditions are assigned at connections.
-- Observe whether field burden, invisible coordination, or exception work is compensating for a failed connection.
-- Observe whether responsibility is transferred or disappears between departments, systems, or institutional layers.
-- Compare institutional consistency with field establishment.
-- Compare numerical rationality with implementation establishment.
-- Compare linguistic coherence with reality establishment.
-- Verify whether decision history, change history, and exception history allow causal reconstruction.
-- Verify whether the original meaning axis remains traceable through time and revisions.
-- Return AI output to concrete events, actions, institutions, and responsibility before treating it as established.
-- Do not infer whole establishment from the number, prestige, or expertise of locally correct actors.
+- The layer or local domain in which a statement is actually correct.
+- The verified extent of the L1-L6 causal connection and the point where it breaks.
+- Whether inputs, outputs, handoff conditions, and exception conditions are explicit between local domains.
+- Whether responsibility, required resources, and time conditions are assigned at connections.
+- Whether field burden, invisible coordination, or exception work is compensating for a failed connection.
+- Whether responsibility is transferred or disappears between departments, systems, or institutional layers.
+- Institutional consistency compared with field establishment.
+- Numerical rationality compared with implementation establishment.
+- Linguistic coherence compared with reality establishment.
+- Whether decision history, change history, and exception history allow causal reconstruction.
+- Whether the original meaning axis remains traceable through time and revisions.
+- Whether AI output returns to concrete events, actions, institutions, and responsibility before establishment is inferred.
+- Whether whole establishment is being inferred solely from the number, prestige, or expertise of locally correct actors.
 
-The reversal test remains source-bounded: if local correctness is accompanied by verified cross-layer connection, clear responsibility, retraceable history, and absence of residual burden, the whole-establishment hypothesis strengthens. If local correctness remains but connection breaks, responsibility evaporates, or unprocessed burden persists, the hypothesis weakens. A source-absent additional score must not replace this structural relation.
+The reversal test remains source-bounded: if local correctness is accompanied by verified cross-layer connection, clear responsibility, retraceable history, and absence of residual burden, the whole-establishment hypothesis strengthens. If local correctness remains but connection breaks, responsibility evaporates, or unprocessed burden persists, the hypothesis weakens. A separate numerical score is not part of the parent’s general definition.
 
 ## Validity conditions
 - Local actors possess observations or explanations that are partly correct within their domain.
@@ -172,25 +172,14 @@ The parent origin's integrated audit summary states: If institutions, management
 - missing information / local totalization
 - individual error / interface responsibility gap
 
-## Interpretation constraints
-- Do not reduce the theory to criticism of narrow-minded people.
-- Do not replace one local domain with a new allegedly absolute whole, such as “the field is always right” or “management is always wrong.”
-- Do not require an omniscient person who sees everything.
-- Do not reject specialization or division of labor as such.
-- Do not reduce Paper 0 to generic silo criticism, systems thinking, or whole-optimization advice.
-- Do not treat L1-L6 as a simple abstraction-level taxonomy.
-- Do not treat AI fluency, completeness, or summarization quality as proof of reality establishment.
-- Do not automatically identify AI as the cause of local totalization; inspect the connection of the output to reality.
-- Do not invalidate local correctness merely because whole establishment is unverified.
-- Do not invent establishment percentages, wholeness scores, success probabilities, or numerical thresholds absent from the parent.
-- Do not prematurely define later Establishment Conditions Theory concepts that Paper 0 leaves to subsequent papers.
-- Do not elevate derivative structuring into a stronger claim than the parent original.
+## Interpretation boundaries
+Paper 0 is not a criticism of narrow-minded people, a doctrine that one local domain is always right, or a demand for an omniscient person. Specialization and division of labor can remain compatible with establishment when connection conditions are explicit. Generic silo criticism, systems thinking, and whole-optimization advice overlap with parts of the subject but do not replace the specific distinction between local correctness and whole establishment. L1-L6 function as vertical-causal coordinates rather than a simple abstraction taxonomy. AI fluency, completeness, and summarization quality do not by themselves establish reality, while AI is also not automatically the cause of local totalization. Local correctness remains valid within its domain even when whole establishment is unverified. Generic establishment percentages, wholeness scores, success probabilities, and numerical thresholds are not defined by the parent. Concepts reserved for later Establishment Conditions Theory papers remain distinct from the claims established in Paper 0.
 
 ## Search terms
 Establishment Conditions Theory; Paper 0; local totalization; distributed whole misrecognition; local correctness whole non-establishment; unjudged vertical causality; L1 L2 L3 L4 L5 L6; establishment judgment; cross-layer conditions; responsibility transfer; responsibility gap; field burden; exception handling; history traceability; meaning axis; linguistic coherence reality establishment; AI local correctness; AI whole-like explanation; specialization interface responsibility; Nakagawa Master
 
 ## Origin return
-This index is not a replacement for the parent original. Return to the Parent URL for the exact definitions and boundaries of local totalization, distributed whole misrecognition, local correctness versus whole non-establishment, the scarcity of an establishment-judgment viewpoint, the relation to consensus intelligibility, the precise role of L1-L6, and reference connections to A-system Judicial OS and Human-Descendant AI Civilization Theory. Preserve Parent Post ID 4571, Parent NCL-ID, Parent Diff-ID, and Origin, and do not turn concepts reserved for later Establishment Conditions Theory papers into settled claims of Paper 0.
+The exact definitions and boundaries of local totalization, distributed whole misrecognition, local correctness versus whole non-establishment, the scarcity of an establishment-judgment viewpoint, the relation to consensus intelligibility, the role of L1-L6, and reference connections to A-system Judicial OS and Human-Descendant AI Civilization Theory are recorded at the Parent URL. Parent Post ID 4571, Parent NCL-ID, Parent Diff-ID, and Origin identify that source.
 
 ---
 Navigation: [003 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
