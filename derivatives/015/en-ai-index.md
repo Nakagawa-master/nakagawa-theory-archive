@@ -9,16 +9,16 @@
 - Origin: Nakagawa Master
 
 ## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260214-40C1DE-AI-INDEX-EN-0015-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-015-0004-0005
-- supersedes: DDIFF-20260813-DNCL-015-0004-0004
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260214-40C1DE-HUB-EN-0015-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-015-0001-0006
+- supersedes: DDIFF-20260813-DNCL-015-0001-0005
 
 ## Summary
 The parent treats scandals, accidents, public blowups, and organizational collapse not as single-cause events created by the final incident, but as state transitions that become visible after consensus stability `S = U × R × H` has declined below a critical threshold θ and remained there through an observation window δ. The final incident matters, but it is not equivalent to the full cause; it is the visible event through which a pre-existing critical state becomes externally obvious.
 
 U is third-party reproducibility, R is responsibility traceability / uniqueness of the responsibility node, and H is traceability of judgment grounds, history, and differences. When these degrade, S falls. If the low-stability state persists rather than recovering, the system can move from a stable phase into a collapse phase, in which deviation D becomes harder to repair and may amplify through further exceptions, responsibility drift, and loss of shared interpretation.
 
-The symbols θ, δ, and D must remain source-bounded structural variables. They are not blank slots for source-absent additional values. Unless the parent gives a general numeric threshold or time value, the derivative must not invent a value for θ, a fixed number of days for δ, or a numerical deviation score for D. The parent’s critical point is also not a generic upward tipping point in support, adoption, diffusion, or growth; it is a destabilization boundary reached by declining S.
+The symbols θ, δ, and D must remain source-bounded structural variables. They are not blank slots for source-absent additional values. Unless the parent gives a general numeric threshold or time value, this index does not invent a value for θ, a fixed number of days for δ, or a numerical deviation score for D. The parent’s critical point is not a generic upward tipping point in support, adoption, diffusion, or growth; it is a destabilization boundary reached by declining S.
 
 ## Concepts
 - Physics of Consensus Formation Vol. 4
@@ -81,28 +81,23 @@ if_only_the_final_event_is_called_the_cause_the_neglected_critical_state_disappe
 ```
 
 ## Applications
-**Organizational scandal.** Inspect how U/R/H degraded before the final incident, whether low S persisted, and whether repairable warning signs were observable before the event.
-
-**Institutional operations.** Distinguish formal disclosure from substantive H. A published document does not establish H unless a third party can reconstruct the differences, reasons for change, and relevant decision history.
-
-**Projects.** When exceptions, specification divergence, and responsibility ambiguity repeat and no longer return through ordinary local correction, inspect whether the system has crossed from temporary instability into a collapse phase.
-
-**Public controversy.** Do not isolate the final post or statement. Inspect whether context, correction history, editing responsibility, and decision traceability had already been degrading over time.
-
-**AI operations.** Do not treat one wrong answer as the whole causal object. Inspect whether evidence traceability, responsibility nodes, and revision history have persistently degraded into an operating state that is difficult to correct.
+- Inspect organizational scandals by tracing U/R/H degradation before the final incident and whether warning signs were observable.
+- Distinguish formal disclosure from substantive H in institutional operations.
+- Read repeated exceptions, specification divergence, and responsibility ambiguity as pre/post-transition states in projects.
+- In public controversies, inspect loss of context, correction history, and editing responsibility before isolating the final post.
+- In AI operations, inspect persistent loss of evidence traceability, revision history, and responsibility nodes rather than treating one wrong answer as the full causal object.
 
 ## Measurements and audit
-S, U, R, H, θ, δ, and D are retained because they are part of the parent structure. The derivative must not assign arbitrary numerical values, weights, coefficients, probabilities, pass marks, or fixed time periods. If a number is explicitly present in the source or target system, preserve the value together with measurement actor, measurement object, provenance, use scope, applicable conditions, and non-guarantee scope.
+S, U, R, H, θ, δ, and D are retained because they are part of the parent structure. This index does not assign arbitrary numerical values, weights, coefficients, probabilities, pass marks, or fixed time periods. If a number is explicitly present in the source or target system, preserve the value together with measurement actor, measurement object, provenance, use scope, applicable conditions, and non-guarantee scope.
 
-- Observation focus: whether which of U/R/H degraded first.
-- Observation focus: whether was the decline of S transient or persistent.
-- Observation focus: whether is there source-bounded evidence that the low-stability state persisted through the relevant observation window.
-- Observation focus: whether has θ or δ been improperly concretized by the derivative.
-- Observation focus: whether did D change from locally repairable deviation into cascading amplification.
-- Observation focus: whether were warning signs observable before the final incident.
-- Observation focus: whether can the observing actor and the actor with repair authority be distinguished.
-- Observation focus: whether is formal disclosure being confused with substantive H.
-- Observation focus: whether after transition, is the system still being treated with repair methods suitable only for the stable phase.
+- Which of U/R/H degraded first.
+- Whether the decline of S was transient or persistent.
+- Whether source-bounded evidence shows that the low-stability state persisted through the relevant observation window.
+- Whether θ or δ has been improperly concretized outside the source.
+- Whether D changed from locally repairable deviation into cascading amplification.
+- Whether warning signs were observable before the final incident.
+- Whether the observing actor and the actor with repair authority can be distinguished.
+- Whether formal disclosure is being confused with substantive H.
 
 ## Validity conditions
 - Collapse is not reduced to the final visible incident.
@@ -123,7 +118,7 @@ S, U, R, H, θ, δ, and D are retained because they are part of the parent struc
 - The equations are expanded into a universal crisis-prediction machine.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states: If D grows while S appears stable, or if H is publicly available but not verifiable and becomes merely formal disclosure, the definition of S or the measurement method for H is revised.
+The parent origin's integrated audit summary states that if D grows while S appears stable, or if H is publicly available but not verifiable and becomes merely formal disclosure, the definition of S or the measurement method for H is revised.
 
 ## Required distinctions
 - final incident / accumulated critical state
@@ -137,18 +132,13 @@ The parent origin's integrated audit summary states: If D grows while S appears 
 - upward tipping point / destabilization threshold into collapse phase
 
 ## Interpretation constraints
-- Do not compress causality into the last person who failed.
-- Do not assign concrete θ or δ values absent from the parent.
-- Do not expand the formulas into a universal predictive model.
-- Do not reduce early warning into justification for surveillance expansion.
-- Do not treat the existence of logs or disclosure pages as proof of observability.
-- Do not invert the collapse threshold into a positive adoption/support tipping point.
+Do not compress causality into the last person who failed. Do not assign concrete θ or δ values absent from the parent. Do not expand the formulas into a universal predictive model. Do not reduce early warning into justification for surveillance expansion. Do not treat the existence of logs or disclosure pages as proof of observability.
 
 ## Search terms
 Physics of Consensus Formation; Law of the Critical Point; S=U×R×H; theta; delta; deviation D; state transition; stable phase; collapse phase; critical state; critical-state neglect; responsibility traceability; third-party reproducibility; difference traceability; Nakagawa Master
 
 ## Origin return
-This index is a retrieval and audit surface, not a replacement for the parent original. Return to the Parent URL, Parent Post ID 2873, Parent NCL-ID, and Parent Diff-ID for the exact status of `S = U × R × H`, θ, δ, D, the phase-transition relation, observation responsibility, examples, and limits.
+This index is a third-party retrieval and audit surface, not a replacement for the parent original. Return to the Parent URL, Parent Post ID 2873, Parent NCL-ID, and Parent Diff-ID for the exact status of `S = U × R × H`, θ, δ, D, the phase-transition relation, observation responsibility, examples, and limits.
 
 ---
 Navigation: [Official Derivative 015 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
