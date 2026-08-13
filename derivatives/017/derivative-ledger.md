@@ -10,48 +10,93 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-HUB-JA-0017-0000
-- derivative_diff_id: DDIFF-20260813-DNCL-017-0006-0004
-- supersedes: DDIFF-20260813-DNCL-017-0006-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-017-0000-0005
+- supersedes: DDIFF-20260813-DNCL-017-0000-0004
 
 ## Language derivative IDs
 ```yaml
-readme_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-HUB-JA-0017-0000
-readme_diff_id: DDIFF-20260812-DNCL-017-0000-0003
-human_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-HUMAN-SUMMARY-JA-0017-0001
-human_diff_id: DDIFF-20260812-DNCL-017-0001-0002
-faq_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-FAQ-JA-0017-0002
-faq_diff_id: DDIFF-20260812-DNCL-017-0002-0003
-ja_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-AI-INDEX-JA-0017-0003
-ja_diff_id: DDIFF-20260812-DNCL-017-0003-0004
-en_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-AI-INDEX-EN-0017-0004
-en_diff_id: DDIFF-20260812-DNCL-017-0004-0004
-zh_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-AI-INDEX-ZH-0017-0005
-zh_diff_id: DDIFF-20260812-DNCL-017-0005-0004
-ledger_diff_id: DDIFF-20260812-DNCL-017-0006-0002
+ja_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-HUB-JA-0017-0000
+ja_diff_id: DDIFF-20260813-DNCL-017-0000-0005
+en_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-HUB-EN-0017-0001
+en_diff_id: DDIFF-20260813-DNCL-017-0001-0007
+zh_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-HUB-ZH-0017-0002
+zh_diff_id: DDIFF-20260813-DNCL-017-0002-0007
 ```
 
-## 原典参照
-Brain Vault canonical index と WordPress 全件XMLを参照し、Parent Post ID 3077、NCL-ID、Diff-ID、Parent URLを同一原典として保持する。各派生面は第三者の人間・AIが原典へ到達しやすくする公開補助面であり、最終的な意味境界はParent URLへ戻って確認する。
+## Factory
+```yaml
+quality_contract: OD134_OD135_LITERAL_SURFACE_BENCHMARK
+source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
+production_standard: LITERAL_SEVEN_SURFACE_REAUDIT
+manual_meaning_normalization: PROHIBITED
+assistant_safety_reframing_as_parent_meaning: PROHIBITED
+invented_fixed_sections: PROHIBITED
+surface_role_mixing: PROHIBITED
+footer_navigation_must_follow_benchmark: true
+```
+
+## Retrieval evidence
+```yaml
+canonical_index: reference_corpus/official_archive/generated/canonical_index_2948_3161.jsonl
+parent_post_id: 3077
+parent_ncl_id: NCL-α-20260227-4ecc69
+parent_diff_id: DIFF-20260228-0025
+parent_url: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol12-runtime-governance/
+xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
+source_meaning_return: Parent_URL
+```
 
 ## Seven surfaces
-- README.md
-- human-entry.md
-- faq.md
-- ai-index.md
-- en-ai-index.md
-- zh-ai-index.md
-- derivative-ledger.md
+```yaml
+README.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
+human-entry.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
+faq.md: REAUDITED_LITERAL_SOURCE_FAITHFUL_Q1_Q30
+ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
+en-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
+zh-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
+derivative-ledger.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
+```
 
-## 原典忠実度
-本派生物は第12論を一般的な危機管理、BCP、セキュリティ運用、単純な再起動手順へ縮約しない。原典固有のKernel / Runtime区別、Detect → Stop → Shrink → Recover → Audit、S/C/D、停止権限R、Origin非人格化、再起動条件、公開監査の非攻撃化を保持する。
+## Source-fidelity findings repaired
+```yaml
+prior_drift:
+  - SURFACE_SPECIFIC_DERIVATIVE_IDS_DIVERGED_FROM_OD134_OD135_LANGUAGE_HUB_PATTERN
+  - JA_PUBLIC_SURFACES_DID_NOT_SHARE_SINGLE_HUB_IDENTITY
+  - EN_ZH_INDEX_IDENTITIES_USED_LEGACY_AI_INDEX_IDS
+  - LEDGER_DID_NOT_MATCH_OD134_OD135_LITERAL_LEDGER_STRUCTURE
+restored:
+  - PARENT_TITLE_URL_POST_ID_NCL_ID_DIFF_ID_ORIGIN
+  - SHARED_JA_HUB_DERIVATIVE_IDENTITY_ACROSS_JA_PUBLIC_SURFACES
+  - LANGUAGE_HUB_DERIVATIVE_IDS_FOR_EN_AND_ZH
+  - OD134_OD135_LITERAL_LEDGER_STRUCTURE
+  - KERNEL_RUNTIME_DISTINCTION
+  - DETECT_STOP_SHRINK_RECOVER_AUDIT_SEQUENCE
+  - STOP_AUTHORITY_R_AND_RELEASE_RESPONSIBILITY
+  - ORIGIN_AS_NON_PERSONALIZED_RECOVERY_REFERENCE
+  - AUDIT_NON_WEAPONIZATION
+  - RESTART_CRITERIA_AND_SCOPED_RESYNCHRONIZATION
+  - SOURCE_BOUNDED_QUANTITATIVE_LANGUAGE
+  - THIRD_PARTY_HUMAN_AND_AI_PUBLIC_READER_AXIS
+  - PARENT_ORIGIN_RETURN
+```
 
-この公開読解は、θ、δ、S/C/D、停止頻度等へ原典にない数値スコア、成功率、危険度、固定閾値を追加しない。反転評価は、閉ループ導入後にS回復が悪化する、Dが遅延増幅する、停止が常態化する、Shrinkが恒久化する、Auditが攻撃化する等の観測可能な失敗側から行う。
+## Semantic rule
+派生物は第12論を一般的なBCP、障害復旧、セキュリティ手順へ縮約せず、Kernel / Runtime、Detect → Stop → Shrink → Recover → Audit、停止権限R、Origin、再起動条件、Audit非攻撃化を保持する。原典にない停止閾値、観測時間、復旧時間、成功率、危険度スコアを新設しない。
 
-## 第三者向けの読解境界
-第三者は、危機発生時の個別手順そのものではなく、KernelとRuntimeの区別、停止権限、縮退、回復、監査、再起動条件が一つの閉ループとして成立しているかを確認する。ここでの構造読解は企業・組織・外部媒体の公式見解を代弁するものではなく、Nakagawa Masterの公開原典に示された理論構造を補助的に整理するものである。
-
-## 原典回帰
-具体的なKernel / Runtimeの定義、Detect → Stop → Shrink → Recover → Auditの位置づけ、S/C/D、停止権限R、Origin非人格化、再起動条件、公開監査の非攻撃化はParent URLへ戻って確認する。
+## Navigation and closure
+```yaml
+public_indexes: RETAINED
+public_map: RETAINED
+private_map: RETAINED
+parent_backlink_display_procedure: RETAINED
+literal_surface_structure_check: PASSED
+footer_navigation_check: PASSED
+third_party_public_reader_axis_check: PASSED
+internal_instruction_leak_check: PASSED_NONE
+self_reference_dialogue_check: PASSED_NONE
+source_fidelity_reaudit: PASSED
+source_fidelity_owner_review: PENDING
+```
 
 ---
 導線: [公式派生物017トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
