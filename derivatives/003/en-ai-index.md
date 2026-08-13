@@ -22,7 +22,7 @@ The missing judgment is vertical causality from L1 through L6: L1 event, L2 acti
 
 This distinction explains why local correctness can be more difficult to diagnose than obvious error. An obviously wrong explanation can collapse under verification. A locally correct explanation has evidence, professional legitimacy, and internal coherence, and therefore can circulate without the unverified cross-layer connections being noticed. Field burden, exception handling, responsibility transfer, institutional fatigue, history loss, and thinning of the meaning axis can remain even though every local actor can explain why their own part is correct.
 
-The response proposed by Paper 0 is not to demand an omniscient person and not to reject specialization or division of labor. What is required is a judgment structure that preserves local expertise while making cross-layer conditions, responsibility, resources, time, history, and meaning traceable across L1-L6. AI makes this need more urgent because it can combine many local statements into language that looks whole. Linguistic coherence must therefore remain distinct from real establishment.
+The response proposed by Paper 0 is not to demand an omniscient person and not to reject specialization or division of labor. Paper 0 identifies a judgment structure in which local expertise coexists with traceable cross-layer conditions, responsibility, resources, time, history, and meaning across L1-L6. AI makes this distinction more important because it can combine many local statements into language that looks whole. The source distinguishes linguistic coherence from real establishment.
 
 The parent does not define a generic establishment percentage, wholeness score, probability of success, or numerical threshold for derivative use. No such number is invented here. Reversibility is preserved by testing the same structural variables in both directions: where local correctness connects through the layers with clear responsibility and without residual burden, the establishment hypothesis strengthens; where connection fails and burden or responsibility is displaced, the establishment hypothesis weakens.
 
@@ -107,7 +107,7 @@ establishment_judgment_becomes_required
 
 **Education and public discourse.** An explanation may be logically or normatively coherent but fail to preserve origin, history, prerequisites, and a retraceable meaning axis for the receiver. Correct explanation and established shared understanding must be distinguished.
 
-**AI deployment.** High-quality summaries and proposals do not establish a whole merely by being coherent or comprehensive. The output must be connected to who decides, what institution receives it, what field action changes, what resources and time are required, who bears responsibility, and what history remains auditable.
+**AI deployment.** High-quality summaries and proposals do not establish a whole merely by being coherent or comprehensive. The relevant establishment test is whether the output is connected to who decides, what institution receives it, what field action changes, what resources and time are required, who bears responsibility, and what history remains auditable.
 
 **Division of labor.** Specialization is not itself the problem. A distributed system can establish successfully when inputs, outputs, transfer conditions, ownership, and repair paths at interfaces are explicit and the vertical causal route remains verifiable.
 

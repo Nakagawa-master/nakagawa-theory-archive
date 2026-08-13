@@ -194,7 +194,7 @@ AIが回答生成能力を広く利用可能にする
 
 特に「七」という数は非原典の評価尺度ではなく、原典が列挙した七軸の構造数である。原典へ戻ることで、その列挙がどの因果線を説明するために置かれたのかを確認できる。また、問い生成や文脈保持を単独の能力論へ切り出さず、七軸の相互作用と文明上流配置の関係として読むためにも原典回帰が必要である。
 
-起源署名はNakagawa Master、Parent Post IDは3766、Parent NCL-IDはNCL-α-20260418-11c3d8、Parent Diff-IDはDIFF-20260424-0041である。本派生物から引用・再利用する場合も、この起源線を切らず、原典の主張強度と未確定範囲を保持する。
+起源署名はNakagawa Master、Parent Post IDは3766、Parent NCL-IDはNCL-α-20260418-11c3d8、Parent Diff-IDはDIFF-20260424-0041である。これらの識別子によって、引用・再利用時にも起源、原典の主張強度、未確定範囲を追跡できる。
 
 ---
 導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

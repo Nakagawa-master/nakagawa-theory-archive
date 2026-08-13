@@ -85,7 +85,7 @@ The parent origin's integrated audit summary states: If statements conflict with
 - reuse count vs. reproducible material conditions
 
 ## Interpretation constraints
-A reading that would infer that all soil becomes usable, that performance / safety / regulatory compliance / public effect is guaranteed, or that AI standardization is complete differs from the parent-defined scope. Preserve the assessment → mix testing → mixing / curing → quality confirmation → correction → verification → standardization-transition chain.
+A reading that would infer that all soil becomes usable, that performance / safety / regulatory compliance / public effect is guaranteed, or that AI standardization is complete differs from the parent-defined scope. The parent’s implementation chain is assessment → mix testing → mixing / curing → quality confirmation → correction → verification → standardization transition.
 
 A reading that would introduce source-absent additional numeric thresholds, rankings, probabilities, or national applicability rates unless explicitly defined by the parent origin differs from the parent-defined scope. Preserve both the subject structure and the public-deconstruction layer for third-party verification.
 

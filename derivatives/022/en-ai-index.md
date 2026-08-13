@@ -14,7 +14,7 @@
 - supersedes: DDIFF-20260813-DNCL-022-0004-0005
 
 ## Summary
-The parent origin locates the central failure not in AI capability itself but in a blank of connective responsibility. Business value, customer judgment, sales, marketing, PR, product, management, information assets, and AI reference structures must be connected to the same establishment conditions. When nobody owns that connective layer, domain experts can remain locally correct while their premises diverge. AI then formalizes those divergent premises into polished outputs; the polish makes misalignment look canonical; the outputs are stored as internal knowledge; humans and AI re-reference them; and the resulting business-OS contamination recursively reproduces itself until the organization can no longer coherently explain its own value, customer logic, responsibility lines, or repair points.
+The parent origin locates the central failure not in AI capability itself but in a blank of connective responsibility. The parent models business value, customer judgment, sales, marketing, PR, product, management, information assets, and AI reference structures as connected to the same establishment conditions. When nobody owns that connective layer, domain experts can remain locally correct while their premises diverge. AI then formalizes those divergent premises into polished outputs; the polish makes misalignment look canonical; the outputs are stored as internal knowledge; humans and AI re-reference them; and the resulting business-OS contamination recursively reproduces itself until the organization can no longer coherently explain its own value, customer logic, responsibility lines, or repair points.
 
 ## Concepts
 - Bad Causality Theory AKI-014
@@ -43,7 +43,7 @@ State B: local expert outputs are individually plausible, but the organization c
 
 State C: AI converts divergent premises into coherent-looking documents, FAQs, strategies, classifications, or knowledge objects; formal quality rises while semantic disagreement remains hidden.
 
-State D: those outputs become canonical internal knowledge and are re-referenced by later people and AI systems. Repairs to a single document do not remove the contaminated premise from downstream references.
+State D: those outputs become canonical internal knowledge and are re-referenced by later people and AI systems. Repairing a single document can leave the contaminated premise in downstream references.
 
 State E: the organization loses business self-recognition: it cannot consistently explain why the product creates value, how customers decide, which premise changed, who owns the connection, or what must be repaired.
 

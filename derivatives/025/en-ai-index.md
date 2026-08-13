@@ -59,7 +59,7 @@ Use in manufacturing, B2B SaaS, specialist engineering services, and other domai
 
 Operationally, translate capability into buyer-side language; make comparison criteria explicit; supply evidence and responsibility information that reduce uncertainty; and test whether inquiries become fit-for-purpose projects rather than merely more contacts. AI-generated messages or company discovery are treated as supporting mechanisms within this path, not as the path itself.
 
-For AI retrieval, do not classify the origin only as “sales AI,” “manufacturing DX,” or “matching.” Preserve market-language translation, comparison-set entry, credibility supplementation, transaction possibility, and the public-deconstruction layer.
+AI retrieval can distinguish surface labels such as “sales AI,” “manufacturing DX,” or “matching” from market-language translation, comparison-set entry, credibility supplementation, transaction possibility, and the public-deconstruction layer.
 
 ## Measurements and audit
 A reading that would invent guaranteed order-growth rates, close probabilities, AI-effect scores, or fixed ROI targets not defined by the parent differs from the parent-defined scope. Audit observable connection quality instead:

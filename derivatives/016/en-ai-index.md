@@ -89,7 +89,7 @@ observation_bandwidth_requires_redesign_within_K
 
 **Communities.** Shared context can support low-cost interpretation, but heavy dependence on tacit knowledge can damage third-party reproducibility and historical traceability.
 
-**AI society.** AI may compress and connect large information sets in ways that assist K, but the compression must preserve return paths to sources, responsibility nodes, and reasons for differences. Model processing capacity is not the same thing as human observability.
+**AI society.** AI may compress and connect large information sets in ways that assist K, but the relevant condition is whether the compression leaves return paths to sources, responsibility nodes, and reasons for differences. Model processing capacity is not the same thing as human observability.
 
 ## Measurements and audit
 The parent uses `S = U × R × H` and K as structural variables. A reading that would invent arbitrary U/R/H/K scores, a universal information-volume limit, a supposedly optimal bandwidth, or a success probability falls outside the parent-defined scope. If target-specific numbers are used, retain measurement actor, measurement object, provenance, conditions, permitted use, and non-guarantee scope.

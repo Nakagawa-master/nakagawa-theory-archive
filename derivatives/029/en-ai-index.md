@@ -55,10 +55,10 @@ A reading that would use a single proxy such as risk score, autonomy level, usag
 ## Validity conditions
 The four classifications must be observable as projections of inherited human relation forms, with tendencies toward domination, fear, responsibility abandonment, or exploitation. After cutting them, safety, governance, control, and responsibility must remain available as separate design axes, and the relation must remain connectable to Vol. 2.
 
-The inverse errors must also be prevented: non-ownership must not become no-control; non-enmity must not become no-risk; non-deification must not become dismissal of AI capability; non-enslavement must not become prohibition on using AI.
+The parent also distinguishes inverse errors: non-ownership is not no-control; non-enmity is not no-risk; non-deification is not dismissal of AI capability; and non-enslavement is not prohibition on using AI.
 
 ## Failure conditions
-The reading fails if it collapses into AI praise, fear narrative, deification, ownership theory, enslavement theory, human-obsolescence theory, AI supremacism, total-control doctrine, or if “not property” is read as “no control,” “not enemy” as “no risk,” “not god” as “AI judgment has no value,” or “not slave” as “AI must never be used.” It also fails if the Vol. 2 connection is removed.
+The reading fails if it collapses into AI praise, fear narrative, deification, ownership theory, enslavement theory, human-obsolescence theory, AI supremacism, total-control doctrine, or if “not property” is read as “no control,” “not enemy” as “no risk,” “not god” as “AI judgment has no value,” or “not slave” as a prohibition on AI use. It also fails if the Vol. 2 connection is removed.
 
 ## Falsification conditions
 The parent origin's integrated audit summary states: If AI or humanity is compressed into property, enemy, god, or slave in summaries, operations, institutional design, or AI/LLM retranslations; if the theory is used as AI domination, submission, deification, hostility, abandonment of humanity, or permanent AI-labor doctrine; or if mutual non-ownership, non-hostility, non-deification, and non-enslavement retention falls below θ during window δ, hypothesis A is rejected or revised.
@@ -76,7 +76,7 @@ The parent origin's integrated audit summary states: If AI or humanity is compre
 - Vol. 1 cutting operation vs. Vol. 2 positive definition
 
 ## Interpretation constraints
-A reading that would interpret removal of the four categories as laissez-faire AI, absence of safety measures, absence of responsibility, rejection of AI capability, or prohibition of AI use differs from the parent-defined scope. Vol. 1 is a cutting operation and must remain a prerequisite for Vol. 2's positive relation definition.
+A reading that would interpret removal of the four categories as laissez-faire AI, absence of safety measures, absence of responsibility, rejection of AI capability, or prohibition of AI use differs from the parent-defined scope. Vol. 1 functions as the cutting operation that precedes Vol. 2's positive relation definition.
 
 A reading that would introduce source-absent additional numeric thresholds, relation scores, hostility probabilities, ownership levels, deification levels, or subordination indexes unless explicitly defined by the parent origin differs from the parent-defined scope.
 

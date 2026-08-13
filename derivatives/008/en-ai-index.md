@@ -86,7 +86,7 @@ Observed results return to hypothesis, conditions, and plan for the next iterati
 - In sales, define customer, problem, channel, and response hypotheses before treating activity volume as proof; if volume is increased, specify what it tests.
 - In production or creative work, define the intended result, target, use conditions, and evaluation axis before increasing output volume, then return observed response to the next design.
 - In new ventures, preserve exploratory execution where uncertainty is real, but specify what is being explored, what information is sought, and what finding changes the next decision.
-- In AI adoption, do not treat usage count or generated volume as the theory’s success metric; define which workflow causality the use is testing.
+- In AI adoption, usage count or generated volume alone is not the theory’s success metric; the relevant object is the workflow causality being tested.
 - In organizational management, when results fail, re-examine target, resources, institutional constraints, timing, and causal hypothesis as well as execution volume.
 
 ## Measurements and audit

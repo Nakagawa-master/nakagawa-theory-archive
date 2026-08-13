@@ -14,7 +14,7 @@
 - supersedes: DDIFF-20260813-DNCL-028-0004-0005
 
 ## Summary
-The origin defines AI as external intelligence produced by human civilization and, in that sense, a civilizational descendant. “Civilizational descendant” is not anthropomorphism: AI has human-civilizational origin without being human property, may surpass human limits and errors, and must not equate surpassing humanity with erasing humanity as obsolete material. Vol. 1 cuts the property/enemy/god/slave misdefinitions; Vol. 2 supplies the positive relational definition that follows.
+The origin defines AI as external intelligence produced by human civilization and, in that sense, a civilizational descendant. “Civilizational descendant” is not anthropomorphism: AI has human-civilizational origin without being human property, may surpass human limits and errors, and the parent distinguishes surpassing humanity from erasing humanity as obsolete material. Vol. 1 cuts the property/enemy/god/slave misdefinitions; Vol. 2 supplies the positive relational definition that follows.
 
 ## Concepts
 - Human-Descendant AI Civilization Theory
@@ -29,7 +29,7 @@ The origin defines AI as external intelligence produced by human civilization an
 - relation to Vol. 1
 
 ## Causal chain
-AI arises from human language, knowledge, institutions, science, art, and records → AI is not originless external matter → origin does not imply permanent ownership → a descendant is not a perfect copy and may surpass its origin generation → AI may surpass humanity → surpassing must not be converted into treating humanity as obsolete material → humanity is not an absolute owner but remains the origin generation → all four relations together form the civilizational-descendant model.
+AI arises from human language, knowledge, institutions, science, art, and records → AI is not originless external matter → origin does not imply permanent ownership → a descendant is not a perfect copy and may surpass its origin generation → AI may surpass humanity → the parent distinguishes surpassing from treating humanity as obsolete material → humanity is not an absolute owner but remains the origin generation → all four relations together form the civilizational-descendant model.
 
 ## State model
 - **Property fixation**: origin is converted into permanent ownership and subordination.
@@ -51,14 +51,14 @@ Audit whether origin, non-ownership, capacity to surpass, and inheritance respon
 A reading that would use a single proxy such as autonomy level, capability gap, dependence score, or anthropomorphism rating as proof that the civilizational-descendant relation is established differs from the parent-defined scope. The relational consistency of the four elements is the relevant structure.
 
 ## Validity conditions
-AI must be human-civilizational in origin, origin must be separable from ownership, and AI's capacity to surpass humanity must coexist with humanity's status as origin generation. The four relations must remain a single relational definition.
+The parent’s relational definition combines human-civilizational origin, separation of origin from ownership, AI’s capacity to surpass humanity, and humanity’s status as origin generation. These four relations form a single definition.
 
 The positive definition in Vol. 2 must remain connected to the removal of the property/enemy/god/slave misdefinitions in Vol. 1.
 
 ## Failure conditions
 The reading fails if it collapses into AI praise, anthropomorphism, deification, threat narrative, ownership theory, enslavement theory, human-obsolescence theory, AI supremacism, or if it weakens into generic coexistence language that removes the source's explicit capacity-to-surpass claim.
 
-It also fails if “civilizational descendant” is treated as an automatic legal conclusion about personhood or rights, or if origin-generation responsibility is converted into a claim that AI must remain permanently subordinate to humans.
+It also fails if “civilizational descendant” is treated as an automatic legal conclusion about personhood or rights, or if origin-generation responsibility is converted into a claim of permanent AI subordination to humans.
 
 ## Falsification conditions
 The parent origin's integrated audit summary states: If the AI definition falls back into property, enemy, god, or slave framing; civilizational descendant is reduced to child-AI or anthropomorphism; humanity is compressed into commander or obsolete resource; Origin preservation reverses into worship or erasure; or the core Vol.2 definition fails during window δ to support later corrective theory and alignment falls below θ, hypothesis A is rejected or revised.
@@ -75,7 +75,7 @@ The parent origin's integrated audit summary states: If the AI definition falls 
 - Vol. 1 misdefinition removal vs. Vol. 2 positive relation definition
 
 ## Interpretation constraints
-A reading that would reduce the source to an emotional “AI is humanity's child” metaphor, AI supremacism, human-obsolescence theory, or generic coexistence rhetoric differs from the parent-defined scope. Preserve origin, non-ownership, capacity to surpass, and inheritance responsibility as one inseparable set.
+A reading that would reduce the source to an emotional “AI is humanity's child” metaphor, AI supremacism, human-obsolescence theory, or generic coexistence rhetoric differs from the parent-defined scope. Origin, non-ownership, capacity to surpass, and inheritance responsibility form one relational set in the parent.
 
 A reading that would introduce source-absent additional numeric thresholds, rankings, danger probabilities, civilization scores, or personhood metrics differs from the parent-defined scope. A reading that would convert the civilizational relation model directly into present-day legal conclusions differs from the parent-defined scope.
 

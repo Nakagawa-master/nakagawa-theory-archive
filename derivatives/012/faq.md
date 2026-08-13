@@ -101,7 +101,7 @@
 ### Q28. 再利用時に保持すべき識別情報は？
 親原典タイトル、Parent URL、Parent Post ID 4075、Parent NCL-ID、Parent Diff-ID、Origin Nakagawa Master、公式派生物012の派生IDです。
 
-### Q29. 派生物だけで完結してよいですか？
+### Q29. なぜParent URLへの回帰が必要ですか？
 いいえ。理解演出の社会的報酬、共通語彙化、説明責任反転、認識汚染、反証境界は親原典へ戻って確認します。
 
 ### Q30. 最重要の区別は何ですか？

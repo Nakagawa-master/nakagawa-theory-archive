@@ -110,7 +110,7 @@ Any derivative ordering labels are ordering aids only. They are not source-defin
 
 **High-involvement purchases.** Where cost, timing, alternatives, internal approval, or implementation consequences matter, inspect whether closing pressure arrives before the buyer has enough conditions to judge. The theory does not require slowness; it requires causal order.
 
-**AI sales support.** Lead scoring, next-best-action systems, summaries, and generated follow-ups can intensify the substitution if behavioral signals are converted into assumed consent. AI output must remain a prediction about internal management, not an authority over the customer's decision state.
+**AI sales support.** Lead scoring, next-best-action systems, summaries, and generated follow-ups can intensify the substitution if behavioral signals are converted into assumed consent. AI output in this context is a prediction for internal management rather than an authority over the customer's decision state.
 
 **Evaluation systems and sales meetings.** Inspect whether compensation, forecast accuracy, review rituals, and managerial questioning reward customer understanding or reward premature conversion of early contact into a closing promise. The source places causal responsibility partly in these upstream structures rather than solely in the salesperson's temperament.
 

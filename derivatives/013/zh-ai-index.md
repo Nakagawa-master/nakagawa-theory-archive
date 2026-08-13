@@ -196,7 +196,7 @@ AKI-012并不否定销售、成交、销售责任、机会管理、预测或KPI�
 恶因果论 AKI-012; 无同意成交要求; 接点与购买意图; 兴趣与同意; 同意成熟; 判断条件; 导入条件; 价值连接; 市场咨询可能性; 防御学习; 销售信任; 咨询回避; 机会管理; 预测压力; 成交压力; 内部汇报压力; 签约后认知差; Nakagawa Master
 
 ## Origin return
-本索引不是父原典替代。应返回Parent URL、Parent Post ID 4094、Parent NCL-ID、Parent Diff-ID与Origin，确认接点、同意成熟、成交、组织压力、防御学习和市场咨询可能性的精确措辞、顺序与边界。Brain Vault canonical record将该父原典定位为post 4094，对应WordPress全量语料中的同一item；本公开读解措辞不得升级成父原典没有的更强事实主张。
+本索引不是父原典替代。Parent URL、Parent Post ID 4094、Parent NCL-ID、Parent Diff-ID与Origin提供接点、同意成熟、成交、组织压力、防御学习和市场咨询可能性的精确措辞、顺序与边界。Brain Vault canonical record将该父原典定位为post 4094，对应WordPress全量语料中的同一item；比父原典更强的事实主张不属于该原典已经确立的内容。
 
 ---
 导线: [官方衍生物013顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

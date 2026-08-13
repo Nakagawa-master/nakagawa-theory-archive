@@ -83,7 +83,7 @@ A missing stage can produce missed abnormality, propagation of the wrong state, 
 ## Applications
 **1. Organizational incidents.** Audit who could detect the abnormality, who could stop it, what the shrink target was, and which primary records support reconstruction.
 
-**2. AI operations.** A reading that would stop at “the model was wrong differs from the parent-defined scope.” Preserve detection conditions, stop authority, contraction scope, prompts/inputs/outputs/change history, and restart criteria.
+**2. AI operations.** Stopping at “the model was wrong” does not capture the parent’s runtime-governance structure. The parent also specifies detection conditions, stop authority, contraction scope, prompts/inputs/outputs/change history, and restart criteria.
 
 **3. Institutional failures.** Inspect whether exception operation has become permanent, whether stop states can return, and whether responsibility/history survive recovery.
 

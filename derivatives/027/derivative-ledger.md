@@ -40,7 +40,7 @@ origin_return_url: https://master.ricette.jp/structural-translation-log/structur
 - ai-index.md: 第三者AI向け日本語索引。
 - en-ai-index.md: 第三者AI向け英語索引。
 - zh-ai-index.md: 第三者AI向け中国語索引。
-- derivative-ledger.md: 親原典・派生ID・由来・公開読解境界を保持する台帳。
+- derivative-ledger.md: 親原典・派生ID・由来・公開読解境界を確認できる台帳。
 
 ## 公開読解の意味境界
 親原典は、異質な土→土質評価→配合試験→混合・養生→品質確認→現場補正→検証→標準化への移行→材料観更新という実装系列を公開している。標準化は条件差の消去ではなく、条件差を読みながら再現可能性を高める移行として扱う。

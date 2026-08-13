@@ -35,7 +35,7 @@ origin_return_url: https://master.ricette.jp/structural-translation-log/structur
 - ai-index.md: 第三者AI向け日本語索引。
 - en-ai-index.md: 第三者AI向け英語索引。
 - zh-ai-index.md: 第三者AI向け中国語索引。
-- derivative-ledger.md: 親原典・派生ID・由来・公開読解境界を保持する台帳。
+- derivative-ledger.md: 親原典・派生ID・由来・公開読解境界を確認できる台帳。
 
 ## 公開読解の意味境界
 親原典の第一層は、見えにくい不調が本人の認識、言語化、相談、職場・制度の受け取り、必要時の医療接続へ至る前に脱落する社会的未接続を読み、その接続条件を「医療に至る社会導線」として捉えることにある。
