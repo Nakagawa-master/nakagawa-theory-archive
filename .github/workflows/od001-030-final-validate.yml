@@ -4,6 +4,7 @@ on:
     branches:
       - audit/od001-030-reader-falsification-20260813
     paths:
+      - derivatives/**
       - tools/od001_030_final_validate.py
       - .github/workflows/od001-030-final-validate.yml
   workflow_dispatch:
