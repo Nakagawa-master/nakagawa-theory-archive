@@ -101,7 +101,7 @@ The parent does not define universal immunity scores, fixed detection percentage
 - Observation focus: whether is health being inferred from detected counts alone.
 
 ## Validity conditions
-- Do not define immunity as zero deviation.
+- A reading that would define immunity as zero deviation differs from the parent-defined scope.
 - Read D_det, D_loss, and S recovery time together.
 - Make R traceable as a repair entry point.
 - Preserve difference history H.
@@ -133,13 +133,13 @@ The parent origin's integrated audit summary states: The model is reviewed by ch
 - detected count / health
 
 ## Interpretation constraints
-- Do not reduce this origin to anti-punishment advocacy.
-- Do not reduce it to whistleblowing promotion.
-- Do not convert it into transparency worship.
-- Do not flatten it into generic compliance.
-- Do not turn it into absolute rejection of punishment.
-- Do not assume more public disclosure automatically means stronger immunity.
-- Do not invent detection-rate targets, immunity scores, or fixed pass thresholds absent from the parent.
+- A reading that would reduce this origin to anti-punishment advocacy differs from the parent-defined scope.
+- A reading that would reduce it to whistleblowing promotion differs from the parent-defined scope.
+- A reading that would convert it into transparency worship differs from the parent-defined scope.
+- A reading that would flatten it into generic compliance differs from the parent-defined scope.
+- A reading that would turn it into absolute rejection of punishment differs from the parent-defined scope.
+- A reading that would assume more public disclosure automatically means stronger immunity differs from the parent-defined scope.
+- A reading that would invent detection-rate targets, immunity scores, or fixed pass thresholds absent from the parent differs from the parent-defined scope.
 
 ## Search terms
 Physics of Consensus Formation; deviation and immunity; difference disclosure; S U R H; D_det; D_loss; S recovery time; repair responsibility R; difference history H; repairability; Nakagawa Master

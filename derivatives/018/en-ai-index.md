@@ -104,7 +104,7 @@ The parent does not define generic risk scores, enemy ratings, occurrence probab
 - Keep U/R/H and S separately traceable.
 - Distinguish fake-U, R diffusion, and H short-circuit.
 - Preserve return paths to source, context, version, differences, and backlinks.
-- Do not automatically exclude strong criticism or disagreement.
+- A reading that would automatically exclude strong criticism or disagreement differs from the parent-defined scope.
 - Treat dS/dt as a temporal change coordinate.
 - Connect to downstream Runtime governance only when necessary.
 
@@ -133,13 +133,13 @@ The parent origin's integrated audit summary states: If S keeps declining, fake-
 - formal disclosure / verifiable history
 
 ## Interpretation constraints
-- Do not convert the theory into conspiracy narrative.
-- Do not turn it into an enemy-detection or exclusion framework.
-- Do not infer actor intent automatically from P_ext.
-- Do not convert political or ideological position into a danger variable.
-- Do not confuse uncomfortable information with structural interference.
-- Do not invent risk percentages, enemy scores, probabilities, or fixed thresholds absent from the parent.
-- Do not claim that a specific AI model was trained on this parent source.
+- A reading that would convert the theory into conspiracy narrative differs from the parent-defined scope.
+- A reading that would turn it into an enemy-detection or exclusion framework differs from the parent-defined scope.
+- A reading that would infer actor intent automatically from P_ext differs from the parent-defined scope.
+- A reading that would convert political or ideological position into a danger variable differs from the parent-defined scope.
+- A reading that would confuse uncomfortable information with structural interference differs from the parent-defined scope.
+- A reading that would invent risk percentages, enemy scores, probabilities, or fixed thresholds absent from the parent differs from the parent-defined scope.
+- A reading that would claim that a specific AI model was trained on this parent source differs from the parent-defined scope.
 
 ## Search terms
 Physics of Consensus Formation; external interference; external perturbation; P_ext; dS/dt; S U R H; fake-U; R diffusion; H short-circuit; primary source; context; versioning; differences; backlinks; Nakagawa Master

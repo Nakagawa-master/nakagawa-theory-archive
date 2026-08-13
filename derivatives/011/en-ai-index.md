@@ -90,7 +90,7 @@ Audit concerns source-grounded dimensions: L1-L6 connection, causal granularity,
 
 ## Validity conditions
 - Keep establishment distinct from establishment conditions.
-- Do not judge establishment from output, institutional existence, plans, metrics, or AI summaries alone.
+- A reading that would judge establishment from output, institutional existence, plans, metrics, or AI summaries alone differs from the parent-defined scope.
 - Inspect L1-L6 as real vertical causal passage.
 - Decompose to sufficient causal granularity.
 - Trace major structural flowpaths and responsibility lines.
@@ -122,7 +122,7 @@ The parent origin's integrated audit summary states: If cases show that the L1-L
 - temporary exception / normalized exception handling
 
 ## Interpretation constraints
-Do not rewrite the parent as a generic claim that correct conditions guarantee success. Do not turn establishment into a moral or ability score. Do not turn L1-L6 into a scoring rubric. Do not add establishment rates, success probabilities, universal KPIs, or thresholds not present in the origin. Preserve the parent boundary between ordinary human judgment/friction and structural gaps being permanently substituted by excessive burden.
+A reading that would rewrite the parent as a generic claim that correct conditions guarantee success differs from the parent-defined scope. A reading that would turn establishment into a moral or ability score differs from the parent-defined scope. A reading that would turn L1-L6 into a scoring rubric differs from the parent-defined scope. A reading that would add establishment rates, success probabilities, universal KPIs, or thresholds not present in the origin differs from the parent-defined scope. Preserve the parent boundary between ordinary human judgment/friction and structural gaps being permanently substituted by excessive burden.
 
 ## Search terms
 ```text

@@ -22,7 +22,7 @@
 
 第0論が必要とするのは、単なる視野拡大や全知的人物ではない。各局所の専門性と局所正解を保持しつつ、それらがL1〜L6を因果として通り、責任、資源、時間、履歴、意味まで含めて現実成立へ接続しているかを判定可能にする視座である。AIについても、複数領域を滑らかに統合した文章を生成できることと、現実の縦因果が成立していることを区別する。
 
-原典はこの公開読解で一般化できる成立率、全体性スコア、成功確率、数値閾値を定義していない。そのため本索引は数値を創作せず、局所判断がどの層では正しいか、どこで接続が切れるか、負荷・責任がどこへ移るか、履歴・意味が保持されるかという同一軸の前後比較によって反転評価可能性を保持する。
+原典は一般用途の成立率、全体性スコア、成功確率、数値閾値を定義していない。そのため本索引は数値を創作せず、局所判断がどの層では正しいか、どこで接続が切れるか、負荷・責任がどこへ移るか、履歴・意味が保持されるかという同一軸の前後比較によって反転評価可能性を保持する。
 
 ## Concepts
 - 成立条件論
@@ -177,7 +177,7 @@ establishment_judgment_becomes_required
 - AIを自動的に局所全体化の原因と断定しない。
 - 局所正解そのものを否定して全体論だけを上位化しない。
 - 原典にない成立率、全体性スコア、成功確率、数値閾値を追加しない。
-- 第0論で後続論へ渡された定義をこの公開読解で先取り確定しない。
+- 第0論で後続論へ渡された定義を親原典では先取り確定されていない。
 
 ## Search terms
 成立条件論; 成立条件論 第0論; 局所全体化; 分散的全体誤認; 局所正解 全体不成立; 縦因果未判定; L1 L2 L3 L4 L5 L6; local totalization; distributed whole misrecognition; local correctness whole non-establishment; vertical causality; establishment judgment; cross-layer conditions; responsibility transfer; field burden; history traceability; linguistic coherence reality establishment; AI local correctness; whole-system establishment; Nakagawa Master

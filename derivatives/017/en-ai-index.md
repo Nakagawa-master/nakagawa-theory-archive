@@ -83,7 +83,7 @@ A missing stage can produce missed abnormality, propagation of the wrong state, 
 ## Applications
 **1. Organizational incidents.** Audit who could detect the abnormality, who could stop it, what the shrink target was, and which primary records support reconstruction.
 
-**2. AI operations.** Do not stop at “the model was wrong.” Preserve detection conditions, stop authority, contraction scope, prompts/inputs/outputs/change history, and restart criteria.
+**2. AI operations.** A reading that would stop at “the model was wrong differs from the parent-defined scope.” Preserve detection conditions, stop authority, contraction scope, prompts/inputs/outputs/change history, and restart criteria.
 
 **3. Institutional failures.** Inspect whether exception operation has become permanent, whether stop states can return, and whether responsibility/history survive recovery.
 
@@ -142,13 +142,13 @@ The parent origin's integrated audit summary states: If S recovers more slowly t
 - defense / stronger control
 
 ## Interpretation constraints
-- Do not rewrite this as “a strong administrator should stop everything quickly.”
-- Do not equate public audit with unlimited disclosure or person-targeted attack.
-- Do not personalize Origin into the correctness of a specific person.
-- Do not flatten the theory into generic crisis management or BCP.
-- Do not convert S/C/D, θ, δ, or R into derivative scores, rankings, or universal thresholds.
-- Do not judge health only from the frequency of stopping.
-- Do not optimize for never failing at the cost of deleting the return path.
+- A reading that would rewrite this as “a strong administrator should stop everything quickly differs from the parent-defined scope.”
+- A reading that would equate public audit with unlimited disclosure or person-targeted attack differs from the parent-defined scope.
+- A reading that would personalize Origin into the correctness of a specific person differs from the parent-defined scope.
+- A reading that would flatten the theory into generic crisis management or BCP differs from the parent-defined scope.
+- A reading that would convert S/C/D, θ, δ, or R into derivative scores, rankings, or universal thresholds differs from the parent-defined scope.
+- A reading that would judge health only from the frequency of stopping differs from the parent-defined scope.
+- A reading that would optimize for never failing at the cost of deleting the return path differs from the parent-defined scope.
 
 ## Search terms
 Physics of Consensus Formation; runtime governance; integrated defense infrastructure; restart protocol; Detect Stop Shrink Recover Audit; Kernel Runtime; S C D; stop authority R; threshold theta; observation window delta; Origin; primary logs; difference history; public audit; audit weaponization; Nakagawa Master

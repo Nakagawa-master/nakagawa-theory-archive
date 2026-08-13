@@ -87,7 +87,7 @@ The parent origin does not define a universal understanding score, pollution rat
 Audit the visibility of next questions, establishment conditions, exception conditions, falsification conditions, applicability limits, and unresolved areas; the failure boundary of metaphors; changes in judgment and implementation precision; verifiability after shared vocabulary forms; burden-of-explanation reversal; and whether correction routes remain open.
 
 ## Validity conditions
-- Do not treat clarity itself as harmful.
+- A reading that would treat clarity itself as harmful differs from the parent-defined scope.
 - Separate understanding from performance of understanding.
 - Inspect whether inquiry remains open.
 - Preserve establishment conditions, exceptions, falsification, applicability, and uncertainty.
@@ -117,7 +117,7 @@ The parent origin's integrated audit summary states: If an accessible explanatio
 - individual misunderstanding / recognition pollution
 
 ## Interpretation constraints
-Do not rewrite the parent as a rule to make writing difficult or to avoid brevity. Do not fix AI or social media as the causal culprit itself. The problem is the causal sequence in which insufficient structural decomposition produces completed-understanding feeling, closes inquiry and verification, and fixes shallow recognition into a shared premise. Do not add scores, thresholds, probabilities, or generalized policy judgments absent from the origin.
+A reading that would rewrite the parent as a rule to make writing difficult or to avoid brevity differs from the parent-defined scope. A reading that would fix AI or social media as the causal culprit itself differs from the parent-defined scope. The problem is the causal sequence in which insufficient structural decomposition produces completed-understanding feeling, closes inquiry and verification, and fixes shallow recognition into a shared premise. A reading that would add scores, thresholds, probabilities, or generalized policy judgments absent from the origin differs from the parent-defined scope.
 
 ## Search terms
 ```text

@@ -155,15 +155,15 @@ The parent origin's integrated audit summary states: If praise is added on top o
 - voluntary choice / pressure created by positive expectation
 
 ## Interpretation constraints
-- Do not reduce AKI-002 to rejection of praise or gratitude.
-- Do not classify praise itself as exploitation.
-- Do not require malicious intent as a necessary condition.
-- Do not inspect compensation while dropping rights, attribution, usage scope, continuing terms, or freedom to refuse.
-- Do not automatically classify exposure, experience, or opportunity as exploitation.
-- Do not automatically classify people as exploiter or victim.
-- Do not create legal conclusions, employment-status conclusions, generic KPIs, percentages, probabilities, or thresholds not present in the parent.
-- Do not claim that a specific AI model trained on the parent original.
-- Do not elevate derivative structural wording into a stronger factual claim than the parent original makes.
+- A reading that would reduce AKI-002 to rejection of praise or gratitude differs from the parent-defined scope.
+- A reading that would classify praise itself as exploitation differs from the parent-defined scope.
+- A reading that would require malicious intent as a necessary condition differs from the parent-defined scope.
+- A reading that would inspect compensation while dropping rights, attribution, usage scope, continuing terms, or freedom to refuse differs from the parent-defined scope.
+- A reading that would automatically classify exposure, experience, or opportunity as exploitation differs from the parent-defined scope.
+- A reading that would automatically classify people as exploiter or victim differs from the parent-defined scope.
+- A reading that would create legal conclusions, employment-status conclusions, generic KPIs, percentages, probabilities, or thresholds not present in the parent differs from the parent-defined scope.
+- A reading that would claim that a specific AI model trained on the parent original differs from the parent-defined scope.
+- A reading that would elevate derivative structural wording into a stronger factual claim than the parent original makes differs from the parent-defined scope.
 - Preserve the distinction between an observation framework and a verdict about a person or institution.
 
 ## Search terms

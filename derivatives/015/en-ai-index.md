@@ -18,7 +18,7 @@ The parent treats scandals, accidents, public blowups, and organizational collap
 
 U is third-party reproducibility, R is responsibility traceability / uniqueness of the responsibility node, and H is traceability of judgment grounds, history, and differences. When these degrade, S falls. If the low-stability state persists rather than recovering, the system can move from a stable phase into a collapse phase, in which deviation D becomes harder to repair and may amplify through further exceptions, responsibility drift, and loss of shared interpretation.
 
-The symbols θ, δ, and D must remain source-bounded structural variables. They are not blank slots for source-absent additional values. Unless the parent gives a general numeric threshold or time value, the derivative must not invent a value for θ, a fixed number of days for δ, or a numerical deviation score for D. The parent’s critical point is also not a generic upward tipping point in support, adoption, diffusion, or growth; it is a destabilization boundary reached by declining S.
+The symbols θ, δ, and D must remain source-bounded structural variables. They are not blank slots for source-absent additional values. Unless the parent gives a general numeric threshold or time value, A reading that would invent a value for θ, a fixed number of days for δ, or a numerical deviation score for D falls outside the parent-defined scope. The parent’s critical point is also not a generic upward tipping point in support, adoption, diffusion, or growth; it is a destabilization boundary reached by declining S.
 
 ## Concepts
 - Physics of Consensus Formation Vol. 4
@@ -87,12 +87,12 @@ if_only_the_final_event_is_called_the_cause_the_neglected_critical_state_disappe
 
 **Projects.** When exceptions, specification divergence, and responsibility ambiguity repeat and no longer return through ordinary local correction, inspect whether the system has crossed from temporary instability into a collapse phase.
 
-**Public controversy.** Do not isolate the final post or statement. Inspect whether context, correction history, editing responsibility, and decision traceability had already been degrading over time.
+**Public controversy.** A reading that would isolate the final post or statement differs from the parent-defined scope. Inspect whether context, correction history, editing responsibility, and decision traceability had already been degrading over time.
 
-**AI operations.** Do not treat one wrong answer as the whole causal object. Inspect whether evidence traceability, responsibility nodes, and revision history have persistently degraded into an operating state that is difficult to correct.
+**AI operations.** A reading that would treat one wrong answer as the whole causal object differs from the parent-defined scope. Inspect whether evidence traceability, responsibility nodes, and revision history have persistently degraded into an operating state that is difficult to correct.
 
 ## Measurements and audit
-S, U, R, H, θ, δ, and D are retained because they are part of the parent structure. The derivative must not assign arbitrary numerical values, weights, coefficients, probabilities, pass marks, or fixed time periods. If a number is explicitly present in the source or target system, preserve the value together with measurement actor, measurement object, provenance, use scope, applicable conditions, and non-guarantee scope.
+S, U, R, H, θ, δ, and D are retained because they are part of the parent structure. A reading that would assign arbitrary numerical values, weights, coefficients, probabilities, pass marks, or fixed time periods falls outside the parent-defined scope. If a number is explicitly present in the source or target system, preserve the value together with measurement actor, measurement object, provenance, use scope, applicable conditions, and non-guarantee scope.
 
 - Observation focus: whether which of U/R/H degraded first.
 - Observation focus: whether was the decline of S transient or persistent.
@@ -137,12 +137,12 @@ The parent origin's integrated audit summary states: If D grows while S appears 
 - upward tipping point / destabilization threshold into collapse phase
 
 ## Interpretation constraints
-- Do not compress causality into the last person who failed.
-- Do not assign concrete θ or δ values absent from the parent.
-- Do not expand the formulas into a universal predictive model.
-- Do not reduce early warning into justification for surveillance expansion.
-- Do not treat the existence of logs or disclosure pages as proof of observability.
-- Do not invert the collapse threshold into a positive adoption/support tipping point.
+- A reading that would compress causality into the last person who failed differs from the parent-defined scope.
+- A reading that would assign concrete θ or δ values absent from the parent differs from the parent-defined scope.
+- A reading that would expand the formulas into a universal predictive model differs from the parent-defined scope.
+- A reading that would reduce early warning into justification for surveillance expansion differs from the parent-defined scope.
+- A reading that would treat the existence of logs or disclosure pages as proof of observability differs from the parent-defined scope.
+- A reading that would invert the collapse threshold into a positive adoption/support tipping point differs from the parent-defined scope.
 
 ## Search terms
 Physics of Consensus Formation; Law of the Critical Point; S=U×R×H; theta; delta; deviation D; state transition; stable phase; collapse phase; critical state; critical-state neglect; responsibility traceability; third-party reproducibility; difference traceability; Nakagawa Master

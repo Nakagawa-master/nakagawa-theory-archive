@@ -43,7 +43,7 @@ Brain Vault canonical index と WordPress 全件XMLを参照し、Parent Post ID
 - derivative-ledger.md
 
 ## 原典忠実度
-本派生物は第8論を陰謀論、外敵論、思想統制、誤情報取締り、ファクトチェック一般論へ縮約しない。原典固有の `S = U × R × H`、`dS/dt = F(U,R,H)+P_ext`、fake-U、R diffusion、H short-circuit、一次ソース、文脈、版、差分、逆リンクを保持する。
+第8論を陰謀論、外敵論、思想統制、誤情報取締り、ファクトチェック一般論への縮約だけでは親原典の中心構造を十分に説明できない。原典固有の `S = U × R × H`、`dS/dt = F(U,R,H)+P_ext`、fake-U、R diffusion、H short-circuit、一次ソース、文脈、版、差分、逆リンクを保持する。
 
 P_extは外部主体の悪意を推定する変数ではなく、外部入力が状態量へ与えた作用を観測する変数として扱う。この公開読解は敵対度、危険確率、固定閾値、思想危険度等を追加しない。
 

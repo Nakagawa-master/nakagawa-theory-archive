@@ -122,14 +122,14 @@ The parent origin's integrated audit summary states: If an indicator crosses thr
 - incoherent strategy / erosion of the implementation ground
 
 ## Interpretation constraints
-- Do not reduce the parent to anti-capitalism or rejection of money.
-- Do not turn connection into a generic moral good.
-- Do not treat Vol. 1 as rejection of the Connection-Transition Strategy.
-- Do not reduce it to AI optimism or threat discourse.
-- Do not turn human sovereignty into a slogan of human superiority.
-- Do not claim the transition window is already zero.
-- Do not invent numerical KPIs, thresholds, probabilities, or success rates absent from the parent.
-- Do not import conclusions from later sovereignty-shift papers back into Vol. 1.
+- A reading that would reduce the parent to anti-capitalism or rejection of money differs from the parent-defined scope.
+- A reading that would turn connection into a generic moral good differs from the parent-defined scope.
+- A reading that would treat Vol differs from the parent-defined scope. 1 as rejection of the Connection-Transition Strategy.
+- A reading that would reduce it to AI optimism or threat discourse differs from the parent-defined scope.
+- A reading that would turn human sovereignty into a slogan of human superiority differs from the parent-defined scope.
+- A reading that would claim the transition window is already zero differs from the parent-defined scope.
+- A reading that would invent numerical KPIs, thresholds, probabilities, or success rates absent from the parent differs from the parent-defined scope.
+- A reading that would import conclusions from later sovereignty-shift papers back into Vol differs from the parent-defined scope. 1.
 
 ## Search terms
 Civilizational Sovereignty Shift Theory; Connection-Transition Strategy; human sovereignty; dual-operation period; monetary KPI; connection KPI; connection-reward society; institutional translation; transition window; short-term monetization pressure; extraction structure; intellectual asymmetry; value attribution; narrowing future line; Nakagawa Master

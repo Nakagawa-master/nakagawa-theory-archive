@@ -53,7 +53,7 @@ Use this model in AI adoption, DX programs, enterprise knowledge systems, RAG/se
 Before AI use, identify the business-establishment conditions and the actor responsible for connecting them across functions. Before generated content becomes canonical knowledge, audit its premises, evidence, differences, and cross-functional meaning. When correcting a premise, trace all downstream documents, prompts, knowledge stores, search indexes, and decision templates that may re-reference it.
 
 ## Measurements and audit
-Do not create a generic AI maturity score, contamination percentage, confidence probability, or fixed threshold that the parent origin does not define. Audit observable connection and repairability instead:
+A reading that would create a generic AI maturity score, contamination percentage, confidence probability, or fixed threshold that the parent origin does not define differs from the parent-defined scope. Audit observable connection and repairability instead:
 
 - Observation focus: whether can a third party reproduce the line from business value to customer judgment and functional execution.
 - Observation focus: whether can each output be traced to its premises, evidence, version, differences, and responsible actor.
@@ -94,9 +94,9 @@ The parent origin's integrated audit summary states: If a company treats structu
 - data volume ≠ premise coherence
 
 ## Interpretation constraints
-Do not reduce this origin to anti-AI discourse, DX criticism, consultant criticism, expert criticism, prompt engineering, or generic hallucination analysis. AI and experts can be effective implementation actors when connective responsibility is present. The core mechanism is the absence of responsibility for connecting establishment conditions, followed by normalization, storage, re-reference, and recursive self-contamination.
+A reading that would reduce this origin to anti-AI discourse, DX criticism, consultant criticism, expert criticism, prompt engineering, or generic hallucination analysis differs from the parent-defined scope. AI and experts can be effective implementation actors when connective responsibility is present. The core mechanism is the absence of responsibility for connecting establishment conditions, followed by normalization, storage, re-reference, and recursive self-contamination.
 
-Do not treat AI as the only repair target. If human business self-recognition, information assets, responsibility lines, and reference systems are already disconnected, AI can formalize and amplify that disconnection.
+A reading that would treat AI as the only repair target differs from the parent-defined scope. If human business self-recognition, information assets, responsibility lines, and reference systems are already disconnected, AI can formalize and amplify that disconnection.
 
 ## Search terms
 AKI-014, structural-understanding performance, connective responsibility, connective layer, business OS, business self-recognition, domain optimization, normalization of misalignment, internal knowledge canonicalization, AI re-reference, recursive contamination, formal coherence, semantic coherence

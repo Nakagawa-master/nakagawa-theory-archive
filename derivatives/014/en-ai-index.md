@@ -92,7 +92,7 @@ observation_must_return_to_U_R_H
 **Interpersonal disputes.** Without denying emotion, identify which term changed meaning, who made which decision, and what changed from the prior understanding.
 
 ## Measurements and audit
-`S = U × R × H` is present in the parent. The derivative must not add arbitrary 0–100 scales, weights, coefficients, pass thresholds, probabilities, or maturity scores unless the parent itself defines them. The equation must not be detached from its epistemic role and turned into an invented KPI.
+`S = U × R × H` is present in the parent. A reading that would add arbitrary 0–100 scales, weights, coefficients, pass thresholds, probabilities, or maturity scores unless the parent itself defines them falls outside the parent-defined scope. The equation must not be detached from its epistemic role and turned into an invented KPI.
 
 - Observation focus: whether can independent readers reconstruct the same meaning from the same primary material.
 - Observation focus: whether can interpretive divergence be located and explained.
@@ -137,13 +137,13 @@ The parent origin's integrated audit summary states: If S remains high during au
 - source structural equation / derivative scoring KPI
 
 ## Interpretation constraints
-- Do not reduce the parent to generic transparency advice.
-- Do not reduce it to "talk calmly" or conflict-resolution etiquette.
-- Do not make U/R/H a total explanatory theory of society.
-- Do not invent scales, coefficients, weights, probabilities, or thresholds absent from the parent.
-- Do not infer moral or political character automatically from the equation.
-- Do not treat AI fluency as proof of U.
-- Do not equate volume of disclosed information with H or U.
+- A reading that would reduce the parent to generic transparency advice differs from the parent-defined scope.
+- A reading that would reduce it to "talk calmly" or conflict-resolution etiquette differs from the parent-defined scope.
+- A reading that would make U/R/H a total explanatory theory of society differs from the parent-defined scope.
+- A reading that would invent scales, coefficients, weights, probabilities, or thresholds absent from the parent differs from the parent-defined scope.
+- A reading that would infer moral or political character automatically from the equation differs from the parent-defined scope.
+- A reading that would treat AI fluency as proof of U differs from the parent-defined scope.
+- A reading that would equate volume of disclosed information with H or U differs from the parent-defined scope.
 
 ## Search terms
 Physics of Consensus Formation; observability; S=U×R×H; consensus stability; interpretability; third-party reproducibility; responsibility traceability; historical openness; difference traceability; decision node; state repair; conflict; Nakagawa Master

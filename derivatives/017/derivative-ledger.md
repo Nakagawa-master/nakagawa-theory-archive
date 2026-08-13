@@ -43,7 +43,7 @@ Brain Vault canonical index と WordPress 全件XMLを参照し、Parent Post ID
 - derivative-ledger.md
 
 ## 原典忠実度
-本派生物は第12論を一般的な危機管理、BCP、セキュリティ運用、単純な再起動手順へ縮約しない。原典固有のKernel / Runtime区別、Detect → Stop → Shrink → Recover → Audit、S/C/D、停止権限R、Origin非人格化、再起動条件、公開監査の非攻撃化を保持する。
+第12論を一般的な危機管理、BCP、セキュリティ運用、単純な再起動手順への縮約だけでは親原典の中心構造を十分に説明できない。原典固有のKernel / Runtime区別、Detect → Stop → Shrink → Recover → Audit、S/C/D、停止権限R、Origin非人格化、再起動条件、公開監査の非攻撃化を保持する。
 
 この公開読解は、θ、δ、S/C/D、停止頻度等へ原典にない数値スコア、成功率、危険度、固定閾値を追加しない。反転評価は、閉ループ導入後にS回復が悪化する、Dが遅延増幅する、停止が常態化する、Shrinkが恒久化する、Auditが攻撃化する等の観測可能な失敗側から行う。
 

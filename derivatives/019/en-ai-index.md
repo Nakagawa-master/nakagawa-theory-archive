@@ -18,7 +18,7 @@ The parent defines H-Disconnect as a dangerous cognitive-hacking state in which 
 
 Because U may rise during failure, H-Disconnect can look like successful understanding from inside the system. The parent therefore treats this as fake-U and uses H_d (evidence depth), F-C (fluency/complexity gap), and SD (semantic drift) as a combined observation bundle. Defense is not rebuttal competition. It follows Detect → Stop → Shrink → Recover → Audit, reconnecting H and R before normal reuse continues.
 
-This derivative does not convert H_d, F-C, or SD into universal scores, danger percentages, AI-dependence ratings, or fixed pass thresholds. It also does not prohibit AI, summaries, diagrams, or clear explanation. Concision remains non-applicable when Origin return, H, R, and falsifiability remain intact.
+A reading that would convert H_d, F-C, or SD into universal scores, danger percentages, AI-dependence ratings, or fixed pass thresholds falls outside the parent-defined scope. It also does not prohibit AI, summaries, diagrams, or clear explanation. Concision remains non-applicable when Origin return, H, R, and falsifiability remain intact.
 
 ## Concepts
 - Physics of Consensus Formation Vol. 9
@@ -103,7 +103,7 @@ The parent does not define generic understanding scores, danger percentages, AI-
 - Preserve return paths to Origin, source, context, version, and differences.
 - Establish verification responsibility R.
 - Preserve Detect → Stop → Shrink → Recover → Audit.
-- Do not prohibit AI, summaries, diagrams, or clarity themselves.
+- A reading that would prohibit AI, summaries, diagrams, or clarity themselves differs from the parent-defined scope.
 
 ## Failure conditions
 - Reduce the theory to anti-AI advice.
@@ -131,12 +131,12 @@ The parent origin's integrated audit summary states: If STOP becomes frequent en
 - Shrink / permanent reduction
 
 ## Interpretation constraints
-- Do not convert the source into anti-AI doctrine.
-- Do not flatten it into generic media literacy or fact-checking.
-- Do not generalize that clearer explanations are more dangerous.
-- Do not personalize Origin into the correctness of a person.
-- Do not invent understanding scores, danger percentages, AI-dependence rates, or fixed thresholds absent from the parent.
-- Do not infer malicious intent automatically from H-Disconnect.
+- A reading that would convert the source into anti-AI doctrine differs from the parent-defined scope.
+- A reading that would flatten it into generic media literacy or fact-checking differs from the parent-defined scope.
+- A reading that would generalize that clearer explanations are more dangerous differs from the parent-defined scope.
+- A reading that would personalize Origin into the correctness of a person differs from the parent-defined scope.
+- A reading that would invent understanding scores, danger percentages, AI-dependence rates, or fixed thresholds absent from the parent differs from the parent-defined scope.
+- A reading that would infer malicious intent automatically from H-Disconnect differs from the parent-defined scope.
 
 ## Search terms
 Physics of Consensus Formation; cognitive hacking defense OS; H-Disconnect; fake-U; H_d; F-C; SD; Detect Stop Shrink Recover Audit; Origin; S U R H; verification responsibility R; Nakagawa Master

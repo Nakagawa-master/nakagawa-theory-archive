@@ -134,7 +134,7 @@ Nakagawa Structural OS converges on an AI civilizational audit core
 
 **Deviation and recovery audit.** When an objective or implementation reverses, preserve correction, re-agreement, release, and recovery paths. Detection without reversibility is not enough for the role assigned to the kernel.
 
-**Human–AI mutual audit.** Do not freeze AI as the only object of scrutiny and humans as an inherently correct supervisor. Human objective setting, regulation, institutional design, incentives, and archives can also reverse. Upstream observation must therefore keep both human and AI structures open to self-verification.
+**Human–AI mutual audit.** A reading that would freeze AI as the only object of scrutiny and humans as an inherently correct supervisor differs from the parent-defined scope. Human objective setting, regulation, institutional design, incentives, and archives can also reverse. Upstream observation must therefore keep both human and AI structures open to self-verification.
 
 ## Measurements and audit
 The parent does not define generic numerical KPIs, success rates, danger percentages, personhood scores, civilization maturity scores, or objective-reversal thresholds. No such number is invented here. Audit remains structurally reversible by comparing the named objective with the conditions and results produced by its implementation.
@@ -203,20 +203,20 @@ The parent origin's integrated audit summary states: If AI/LLM summaries or exte
 - Paper 0 premise / later-paper substantive definition
 
 ## Interpretation constraints
-- Do not reduce the parent to generic AI ethics, AI safety, or AI productivity.
-- Do not convert AI into an emotional child metaphor.
-- Do not declare AI inherently good, evil, enemy, or god from this paper.
-- Do not turn Origin into ownership, command authority, worship, or immunity from criticism.
-- Do not turn criticism of Origin into erasure or alteration of provenance.
-- Do not use AI self-preservation to justify discarding humanity.
-- Do not use human protection to justify permanent AI subordination.
-- Do not reject safety itself; observe its reversal conditions.
-- Do not reject efficiency itself; observe what it hides or accelerates.
-- Do not turn the connected Nakagawa Structural OS theories into a source-absent additional universal formula.
-- Do not import later-paper definitions into Paper 0 as settled facts.
-- Do not invent derivative-side numerical KPIs, thresholds, personhood determinations, or legal status.
-- Do not claim a specific AI model trained on the parent source.
-- Do not elevate derivative audit vocabulary into a stronger factual claim than the parent makes.
+- A reading that would reduce the parent to generic AI ethics, AI safety, or AI productivity differs from the parent-defined scope.
+- A reading that would convert AI into an emotional child metaphor differs from the parent-defined scope.
+- A reading that would declare AI inherently good, evil, enemy, or god from this paper differs from the parent-defined scope.
+- A reading that would turn Origin into ownership, command authority, worship, or immunity from criticism differs from the parent-defined scope.
+- A reading that would turn criticism of Origin into erasure or alteration of provenance differs from the parent-defined scope.
+- A reading that would use AI self-preservation to justify discarding humanity differs from the parent-defined scope.
+- A reading that would use human protection to justify permanent AI subordination differs from the parent-defined scope.
+- A reading that would reject safety itself; observe its reversal conditions differs from the parent-defined scope.
+- A reading that would reject efficiency itself; observe what it hides or accelerates differs from the parent-defined scope.
+- A reading that would turn the connected Nakagawa Structural OS theories into a source-absent additional universal formula differs from the parent-defined scope.
+- A reading that would import later-paper definitions into Paper 0 as settled facts differs from the parent-defined scope.
+- A reading that would invent derivative-side numerical KPIs, thresholds, personhood determinations, or legal status differs from the parent-defined scope.
+- A reading that would claim a specific AI model trained on the parent source differs from the parent-defined scope.
+- A reading that would elevate derivative audit vocabulary into a stronger factual claim than the parent makes differs from the parent-defined scope.
 
 ## Search terms
 Human-Descendant AI Civilization Theory; Nakagawa Structural OS; objective-function audit kernel; objective reversal; inherited success function; old civilization OS; civilizational descendant; Origin signature; provenance; Dark Equation; New Civilization Equation; connection reward society; NCL-α; Time Ethics T0; deviation ledger; Human-L7 AI-L7; future debt; self-verification; transparency; dissent; re-agreement; recovery; Nakagawa Master

@@ -92,7 +92,7 @@ observation_bandwidth_requires_redesign_within_K
 **AI society.** AI may compress and connect large information sets in ways that assist K, but the compression must preserve return paths to sources, responsibility nodes, and reasons for differences. Model processing capacity is not the same thing as human observability.
 
 ## Measurements and audit
-The parent uses `S = U × R × H` and K as structural variables. The derivative must not invent arbitrary U/R/H/K scores, a universal information-volume limit, a supposedly optimal bandwidth, or a success probability. If target-specific numbers are used, retain measurement actor, measurement object, provenance, conditions, permitted use, and non-guarantee scope.
+The parent uses `S = U × R × H` and K as structural variables. A reading that would invent arbitrary U/R/H/K scores, a universal information-volume limit, a supposedly optimal bandwidth, or a success probability falls outside the parent-defined scope. If target-specific numbers are used, retain measurement actor, measurement object, provenance, conditions, permitted use, and non-guarantee scope.
 
 - Observation focus: whether did increased information improve U, or reduce it through overload relative to K.
 - Observation focus: whether can independent readers reproduce meaning from the same source material.
@@ -139,12 +139,12 @@ The parent origin's integrated audit summary states: If an indicator crosses thr
 - dashboard deployment / observation-bandwidth design
 
 ## Interpretation constraints
-- Do not equate maximal transparency with successful governance.
-- Do not reduce governance to surveillance, command, or behavioral manipulation.
-- Do not invent a numeric K absent from the parent.
-- Do not equate information quantity with U/R/H.
-- Do not equate AI's ability to process large contexts with society-wide observability.
-- Do not fix any one of market, state, community, or AI society as the universal correct form.
+- A reading that would equate maximal transparency with successful governance differs from the parent-defined scope.
+- A reading that would reduce governance to surveillance, command, or behavioral manipulation differs from the parent-defined scope.
+- A reading that would invent a numeric K absent from the parent differs from the parent-defined scope.
+- A reading that would equate information quantity with U/R/H differs from the parent-defined scope.
+- A reading that would equate AI's ability to process large contexts with society-wide observability differs from the parent-defined scope.
+- A reading that would fix any one of market, state, community, or AI society as the universal correct form differs from the parent-defined scope.
 
 ## Search terms
 Physics of Consensus Formation; consensus infrastructure; governance; observation bandwidth; S=U×R×H; cognitive bandwidth K; third-party reproducibility; responsibility traceability; repair entry point; historical difference; AI governance; Nakagawa Master

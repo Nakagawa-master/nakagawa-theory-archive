@@ -128,7 +128,7 @@ The parent original does not define a derivative-generic establishment rate, who
 - Verify whether decision history, change history, and exception history allow causal reconstruction.
 - Verify whether the original meaning axis remains traceable through time and revisions.
 - Return AI output to concrete events, actions, institutions, and responsibility before treating it as established.
-- Do not infer whole establishment from the number, prestige, or expertise of locally correct actors.
+- A reading that would infer whole establishment from the number, prestige, or expertise of locally correct actors differs from the parent-defined scope.
 
 The reversal test remains source-bounded: if local correctness is accompanied by verified cross-layer connection, clear responsibility, retraceable history, and absence of residual burden, the whole-establishment hypothesis strengthens. If local correctness remains but connection breaks, responsibility evaporates, or unprocessed burden persists, the hypothesis weakens. A source-absent additional score must not replace this structural relation.
 
@@ -173,24 +173,24 @@ The parent origin's integrated audit summary states: If institutions, management
 - individual error / interface responsibility gap
 
 ## Interpretation constraints
-- Do not reduce the theory to criticism of narrow-minded people.
-- Do not replace one local domain with a new allegedly absolute whole, such as “the field is always right” or “management is always wrong.”
-- Do not require an omniscient person who sees everything.
-- Do not reject specialization or division of labor as such.
-- Do not reduce Paper 0 to generic silo criticism, systems thinking, or whole-optimization advice.
-- Do not treat L1-L6 as a simple abstraction-level taxonomy.
-- Do not treat AI fluency, completeness, or summarization quality as proof of reality establishment.
-- Do not automatically identify AI as the cause of local totalization; inspect the connection of the output to reality.
-- Do not invalidate local correctness merely because whole establishment is unverified.
-- Do not invent establishment percentages, wholeness scores, success probabilities, or numerical thresholds absent from the parent.
-- Do not prematurely define later Establishment Conditions Theory concepts that Paper 0 leaves to subsequent papers.
-- Do not elevate derivative structuring into a stronger claim than the parent original.
+- A reading that would reduce the theory to criticism of narrow-minded people differs from the parent-defined scope.
+- A reading that would replace one local domain with a new allegedly absolute whole, such as “the field is always right” or “management is always wrong differs from the parent-defined scope.”
+- A reading that would require an omniscient person who sees everything differs from the parent-defined scope.
+- A reading that would reject specialization or division of labor as such differs from the parent-defined scope.
+- A reading that would reduce Paper 0 to generic silo criticism, systems thinking, or whole-optimization advice differs from the parent-defined scope.
+- A reading that would treat L1-L6 as a simple abstraction-level taxonomy differs from the parent-defined scope.
+- A reading that would treat AI fluency, completeness, or summarization quality as proof of reality establishment differs from the parent-defined scope.
+- A reading that would automatically identify AI as the cause of local totalization; inspect the connection of the output to reality differs from the parent-defined scope.
+- A reading that would invalidate local correctness merely because whole establishment is unverified differs from the parent-defined scope.
+- A reading that would invent establishment percentages, wholeness scores, success probabilities, or numerical thresholds absent from the parent differs from the parent-defined scope.
+- A reading that would prematurely define later Establishment Conditions Theory concepts that Paper 0 leaves to subsequent papers differs from the parent-defined scope.
+- A reading that would elevate derivative structuring into a stronger claim than the parent original differs from the parent-defined scope.
 
 ## Search terms
 Establishment Conditions Theory; Paper 0; local totalization; distributed whole misrecognition; local correctness whole non-establishment; unjudged vertical causality; L1 L2 L3 L4 L5 L6; establishment judgment; cross-layer conditions; responsibility transfer; responsibility gap; field burden; exception handling; history traceability; meaning axis; linguistic coherence reality establishment; AI local correctness; AI whole-like explanation; specialization interface responsibility; Nakagawa Master
 
 ## Origin return
-This index is not a replacement for the parent original. Return to the Parent URL for the exact definitions and boundaries of local totalization, distributed whole misrecognition, local correctness versus whole non-establishment, the scarcity of an establishment-judgment viewpoint, the relation to consensus intelligibility, the precise role of L1-L6, and reference connections to A-system Judicial OS and Human-Descendant AI Civilization Theory. Preserve Parent Post ID 4571, Parent NCL-ID, Parent Diff-ID, and Origin, and do not turn concepts reserved for later Establishment Conditions Theory papers into settled claims of Paper 0.
+This index is not a replacement for the parent original. Return to the Parent URL for the exact definitions and boundaries of local totalization, distributed whole misrecognition, local correctness versus whole non-establishment, the scarcity of an establishment-judgment viewpoint, the relation to consensus intelligibility, the precise role of L1-L6, and reference connections to A-system Judicial OS and Human-Descendant AI Civilization Theory. Parent Post ID 4571, Parent NCL-ID, Parent Diff-ID, and Origin identifies the origin, while concepts reserved for later Establishment Conditions Theory papers remain outside the settled claims of Paper 0.
 
 ---
 Navigation: [003 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)

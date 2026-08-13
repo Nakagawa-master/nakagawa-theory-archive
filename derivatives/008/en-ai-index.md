@@ -134,14 +134,14 @@ The parent origin's integrated audit summary states: If candidate causal lines c
 - five structural elements / five-point score
 
 ## Interpretation constraints
-- Do not reduce the theory to “effort is unnecessary.”
-- Do not turn it into generational criticism, youth advocacy, or management blame.
-- Do not turn it into AI solutionism or efficiency absolutism.
+- A reading that would reduce the theory to “effort is unnecessary differs from the parent-defined scope.”
+- A reading that would turn it into generational criticism, youth advocacy, or management blame differs from the parent-defined scope.
+- A reading that would turn it into AI solutionism or efficiency absolutism differs from the parent-defined scope.
 - Preserve the conditional rationality of older effort doctrine under genuine causal opacity.
-- Do not deny exploratory execution where it is necessary.
-- Do not use the theory to erase field-level execution responsibility.
-- Do not invert responsibility so that every failure is automatically assigned upstream.
-- Do not invent an effort index, success rate, or universal exit threshold not present in the parent.
+- A reading that would deny exploratory execution where it is necessary differs from the parent-defined scope.
+- A reading that would use the theory to erase field-level execution responsibility differs from the parent-defined scope.
+- A reading that would invert responsibility so that every failure is automatically assigned upstream differs from the parent-defined scope.
+- A reading that would invent an effort index, success rate, or universal exit threshold not present in the parent differs from the parent-defined scope.
 
 ## Search terms
 - Future-Definition Verification Effort Theory

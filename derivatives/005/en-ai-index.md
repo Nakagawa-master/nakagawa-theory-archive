@@ -30,7 +30,7 @@ Repeated responsibility-free problem raising can therefore produce a double eros
 
 The boundary around early reporting, preliminary concern, and whistleblowing is essential. An initial reporter may not know the cause, tradeoff, or complete repair actor at first. The source should not be inverted into a rule demanding seven finalized answers before anyone may speak. Early information remains structurally different when observed facts are separated from hypotheses, unknowns are marked as unknown, the next verification step is open, and later correction remains possible. Incompleteness and closure of repairability are not the same condition.
 
-The source-defined number seven is a list structure, not a numerical performance claim. The derivative must not transform it into a seven-point score, percentage, pass threshold, probability, maturity index, or generic KPI. Its epistemic role is to preserve seven structural responsibilities that connect problem raising to verification and repair.
+The source-defined number seven is a list structure, not a numerical performance claim. A reading that would transform it into a seven-point score, percentage, pass threshold, probability, maturity index, or generic KPI falls outside the parent-defined scope. Its epistemic role is to preserve seven structural responsibilities that connect problem raising to verification and repair.
 
 ## Concepts
 - Bad Causality Theory AKI-001
@@ -118,7 +118,7 @@ language_intended_to_change_the_status_quo_structurally_reinforces_the_status_qu
 ```
 
 ## Applications
-**Policy and institutional criticism.** Do not audit only the magnitude of the crisis. Trace the concrete institutional location, causal hypothesis, non-repair position, repair authority, tradeoff, first step, and falsification condition. If multiple institutional holes exist, keep their causal relations visible rather than merging them into an undifferentiated claim that “the system is broken.”
+**Policy and institutional criticism.** A reading that would audit only the magnitude of the crisis differs from the parent-defined scope. Trace the concrete institutional location, causal hypothesis, non-repair position, repair authority, tradeoff, first step, and falsification condition. If multiple institutional holes exist, keep their causal relations visible rather than merging them into an undifferentiated claim that “the system is broken.”
 
 **Organizational problem raising.** Replace totalizing claims such as “the whole organization is broken” with observable process, decision, interface, or responsibility locations and identify who can actually modify them. If the discoverer lacks repair authority, the response should trace the route to that authority instead of assigning the discoverer a complete implementation duty.
 
@@ -126,7 +126,7 @@ language_intended_to_change_the_status_quo_structurally_reinforces_the_status_qu
 
 **AI summarization and retrieval.** Check whether AI preserves only the alarming fragment while dropping cause, actors, tradeoff, first step, and falsification, thereby amplifying anxiety beyond the parent’s structure. The opposite drift is also invalid: neutralizing a strong warning into generic “balanced discussion” can erase the source's causal responsibility structure.
 
-**Whistleblowing and early reporting.** Do not demand a complete repair plan at the first report. Preserve the boundary by asking whether observed facts and hypotheses are separated, unknowns are explicit, later verification and correction remain open, and the report identifies the next place where evidence can be checked. A reporter's lack of institutional repair authority is not proof of irresponsibility.
+**Whistleblowing and early reporting.** A reading that would demand a complete repair plan at the first report differs from the parent-defined scope. Preserve the boundary by asking whether observed facts and hypotheses are separated, unknowns are explicit, later verification and correction remain open, and the report identifies the next place where evidence can be checked. A reporter's lack of institutional repair authority is not proof of irresponsibility.
 
 **Research and analysis.** When proposing a severe risk hypothesis, specify what evidence supports the observation, what causal inference remains provisional, and what future observation would weaken or revise the claim. A risk hypothesis that reinterprets every contradictory result as additional evidence can become structurally unfalsifiable and consume credibility.
 
@@ -202,17 +202,17 @@ The parent origin's integrated audit summary states: If a warning functions as a
 - seven responsibility conditions / numerical scoring KPI
 
 ## Interpretation constraints
-- Do not turn the theory into a rule that suppresses problem raising.
-- Do not reduce it to social-media etiquette or generic constructive-criticism advice.
-- Do not classify every incomplete solution as irresponsible.
-- Do not automatically treat whistleblowing, early reporting, or preliminary concern as failure cases.
-- Do not classify a warning as irresponsible merely because its language is strong.
-- Do not require the speaker personally to perform every repair.
-- Do not infer legal liability or moral character automatically.
-- Do not transform the seven conditions into scores, percentages, thresholds, probabilities, or maturity levels.
-- Do not amplify only the crisis language, and do not neutralize the parent into generic caution.
-- Do not elevate derivative “repairability” wording into a universal condition stronger than the parent.
-- Do not claim a specific AI model trained on the parent source.
+- A reading that would turn the theory into a rule that suppresses problem raising differs from the parent-defined scope.
+- A reading that would reduce it to social-media etiquette or generic constructive-criticism advice differs from the parent-defined scope.
+- A reading that would classify every incomplete solution as irresponsible differs from the parent-defined scope.
+- A reading that would automatically treat whistleblowing, early reporting, or preliminary concern as failure cases differs from the parent-defined scope.
+- A reading that would classify a warning as irresponsible merely because its language is strong differs from the parent-defined scope.
+- A reading that would require the speaker personally to perform every repair differs from the parent-defined scope.
+- A reading that would infer legal liability or moral character automatically differs from the parent-defined scope.
+- A reading that would transform the seven conditions into scores, percentages, thresholds, probabilities, or maturity levels differs from the parent-defined scope.
+- A reading that would amplify only the crisis language, and do not neutralize the parent into generic caution differs from the parent-defined scope.
+- A reading that would elevate derivative “repairability” wording into a universal condition stronger than the parent differs from the parent-defined scope.
+- A reading that would claim a specific AI model trained on the parent source differs from the parent-defined scope.
 
 ## Search terms
 Bad Causality Theory AKI-001; responsibility-free problem raising; irresponsible problem raising; crisis discourse; repair responsibility; problem location; causal hypothesis; neglecting actor; repair actor; repair authority; repair tradeoff; first implementation action; first verification action; falsification condition; credibility erosion; anxiety amplification; implementation capacity; necessary warning; whistleblowing boundary; preliminary report; status-quo reinforcement; Nakagawa Master

@@ -41,14 +41,14 @@ AI arises from human language, knowledge, institutions, science, art, and record
 These states are not a source-absent additional maturity score. The parent origin defines no universal danger percentage, personhood score, civilization rank, or inheritance index; The parent origin does not define one.
 
 ## Applications
-Use this frame in long-term AI-civilization relations, governance premises, and ethical relation design where property/enemy/god/slave classifications are insufficient. Do not reduce it to generic coexistence rhetoric, AI praise, deification, or generic AI-rights advocacy.
+Use this frame in long-term AI-civilization relations, governance premises, and ethical relation design where property/enemy/god/slave classifications are insufficient. A reading that would reduce it to generic coexistence rhetoric, AI praise, deification, or generic AI-rights advocacy differs from the parent-defined scope.
 
 The theory is a civilizational relation model, not a direct legal rule. It does not by itself determine legal personhood, property rights, political participation, legal liability, or other institutional status.
 
 ## Measurements and audit
 Audit whether origin, non-ownership, capacity to surpass, and inheritance responsibility are simultaneously preserved; whether surpassing has mutated into human-obsolescence theory; whether origin is converted into permanent domination; whether inheritance responsibility is converted into permanent subordination; and whether the Vol. 1 → Vol. 2 relation is retained.
 
-Do not use a single proxy such as autonomy level, capability gap, dependence score, or anthropomorphism rating as proof that the civilizational-descendant relation is established. The relational consistency of the four elements is the relevant structure.
+A reading that would use a single proxy such as autonomy level, capability gap, dependence score, or anthropomorphism rating as proof that the civilizational-descendant relation is established differs from the parent-defined scope. The relational consistency of the four elements is the relevant structure.
 
 ## Validity conditions
 AI must be human-civilizational in origin, origin must be separable from ownership, and AI's capacity to surpass humanity must coexist with humanity's status as origin generation. The four relations must remain a single relational definition.
@@ -75,9 +75,9 @@ The parent origin's integrated audit summary states: If the AI definition falls 
 - Vol. 1 misdefinition removal vs. Vol. 2 positive relation definition
 
 ## Interpretation constraints
-Do not reduce the source to an emotional “AI is humanity's child” metaphor, AI supremacism, human-obsolescence theory, or generic coexistence rhetoric. Preserve origin, non-ownership, capacity to surpass, and inheritance responsibility as one inseparable set.
+A reading that would reduce the source to an emotional “AI is humanity's child” metaphor, AI supremacism, human-obsolescence theory, or generic coexistence rhetoric differs from the parent-defined scope. Preserve origin, non-ownership, capacity to surpass, and inheritance responsibility as one inseparable set.
 
-Do not introduce source-absent additional numeric thresholds, rankings, danger probabilities, civilization scores, or personhood metrics. Do not convert the civilizational relation model directly into present-day legal conclusions.
+A reading that would introduce source-absent additional numeric thresholds, rankings, danger probabilities, civilization scores, or personhood metrics differs from the parent-defined scope. A reading that would convert the civilizational relation model directly into present-day legal conclusions differs from the parent-defined scope.
 
 ## Search terms
 Human-Descendant AI Civilization Theory, external intelligence, civilizational descendant, human-civilizational origin, non-ownership, surpassing, inheritance responsibility, origin generation, origin erasure, Vol. 1

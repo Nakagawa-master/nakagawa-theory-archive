@@ -94,13 +94,13 @@ The parent does not define partisan scores, propaganda percentages, resonance-ri
 - Observation focus: whether does True-U remeasurement restore verifiable understanding rather than subjective agreement.
 
 ## Validity conditions
-- Do not classify propaganda by content or faction alone.
+- A reading that would classify propaganda by content or faction alone differs from the parent-defined scope.
 - Treat K, Occ(K), Res, and V/P/A as state observations.
 - Preserve access to H and R.
 - Separate agreement count from bandwidth health.
 - Treat Damping, Cooling, and Degeneration as temporary recovery operations.
 - Connect recovery to H reconnection, R reassignment, and True-U remeasurement.
-- Do not automatically suppress disagreement, warnings, or victim reports.
+- A reading that would automatically suppress disagreement, warnings, or victim reports differs from the parent-defined scope.
 
 ## Failure conditions
 - Automatically label a political party or faction as propaganda.
@@ -127,12 +127,12 @@ The parent origin's integrated audit summary states: If an indicator crosses thr
 - True-U / subjective acceptance
 
 ## Interpretation constraints
-- Do not use this as a partisan classifier.
-- Do not infer propaganda merely because few people object.
-- Do not use the model to justify censorship or forced silence.
-- Do not classify strong emotion itself as abnormal.
-- Do not invent propaganda rates, resonance-risk percentages, or support thresholds absent from the parent.
-- Do not fix AI recommendations or social media as the causal actor itself.
+- A reading that would use this as a partisan classifier differs from the parent-defined scope.
+- A reading that would infer propaganda merely because few people object differs from the parent-defined scope.
+- A reading that would use the model to justify censorship or forced silence differs from the parent-defined scope.
+- A reading that would classify strong emotion itself as abnormal differs from the parent-defined scope.
+- A reading that would invent propaganda rates, resonance-risk percentages, or support thresholds absent from the parent differs from the parent-defined scope.
+- A reading that would fix AI recommendations or social media as the causal actor itself differs from the parent-defined scope.
 
 ## Search terms
 Physics of Consensus Formation; cognitive bandwidth K; Occ(K); Res; V P A; Damping; Cooling; Degeneration; H reconnection; R reassignment; True-U; Nakagawa Master

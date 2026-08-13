@@ -179,17 +179,17 @@ The parent origin's integrated audit summary states: If purchase intent, conside
 - legal consent / the parent theory's structural consent maturity
 
 ## Interpretation constraints
-- Do not reject sales, closing, revenue responsibility, forecasting, or KPIs as such.
-- Do not infer purchase intent from contact alone.
-- Do not equate interest with consent.
-- Do not equate internal forecast confidence with customer decision maturity.
-- Do not classify a fast sale as structurally invalid merely because it is fast.
-- Do not classify a slow sale as structurally sound merely because it is slow.
-- Do not reduce the causality to salesperson morality; inspect evaluation, forecast, meeting, and pipeline structures.
-- Do not automate legal consent or contract-law conclusions from this theory.
-- Do not create a universal consent score, closing threshold, probability, consultation percentage, or ethics score absent from the parent.
-- Do not use a successful conversion as automatic proof that free judgment was preserved.
-- Do not weaken the origin into generic “customer-first sales” advice.
+- A reading that would reject sales, closing, revenue responsibility, forecasting, or KPIs as such differs from the parent-defined scope.
+- A reading that would infer purchase intent from contact alone differs from the parent-defined scope.
+- A reading that would equate interest with consent differs from the parent-defined scope.
+- A reading that would equate internal forecast confidence with customer decision maturity differs from the parent-defined scope.
+- A reading that would classify a fast sale as structurally invalid merely because it is fast differs from the parent-defined scope.
+- A reading that would classify a slow sale as structurally sound merely because it is slow differs from the parent-defined scope.
+- A reading that would reduce the causality to salesperson morality; inspect evaluation, forecast, meeting, and pipeline structures differs from the parent-defined scope.
+- A reading that would automate legal consent or contract-law conclusions from this theory differs from the parent-defined scope.
+- A reading that would create a universal consent score, closing threshold, probability, consultation percentage, or ethics score absent from the parent differs from the parent-defined scope.
+- A reading that would use a successful conversion as automatic proof that free judgment was preserved differs from the parent-defined scope.
+- A reading that would weaken the origin into generic “customer-first sales” advice differs from the parent-defined scope.
 - Preserve the market-level consultation-capacity consequence and the compensating-pressure feedback loop.
 
 ## Search terms

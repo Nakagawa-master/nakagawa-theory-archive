@@ -43,7 +43,7 @@ Brain Vault canonical index と WordPress 全件XMLを参照し、Parent Post ID
 - derivative-ledger.md
 
 ## 原典忠実度
-本派生物は第9論を反AI論、メディアリテラシー一般論、ファクトチェック、心理操作対策だけへ縮約しない。H-DisconnectのU/H/R条件、fake-U、H_d、F-C、SD、Detect → Stop → Shrink → Recover → Audit、Origin縮退、HとRの回復を保持する。
+第9論を反AI論、メディアリテラシー一般論、ファクトチェック、心理操作対策だけへの縮約だけでは親原典の中心構造を十分に説明できない。H-DisconnectのU/H/R条件、fake-U、H_d、F-C、SD、Detect → Stop → Shrink → Recover → Audit、Origin縮退、HとRの回復を保持する。
 
 この公開読解はH_d、F-C、SDへ理解度点数、危険度％、AI依存率、固定合格閾値を追加しない。分かりやすさ、要約、AI利用そのものを禁止せず、Origin回帰・H・R・反証可能性が保持される場合を非該当として残す。
 

@@ -141,14 +141,14 @@ The parent origin's integrated audit summary states: If causal lines, validity c
 - responsibility separation / responsibility exemption
 
 ## Interpretation constraints
-- Do not reduce the theory to effort denial.
-- Do not turn it into rejection of ambitious targets or KPIs themselves.
-- Do not reduce it to criticism of managers, educators, or any particular role.
-- Do not erase executors' responsibility for execution, observation, and reporting.
-- Do not assume AI or data makes causality fully visible.
-- Do not infer that all conditions must be known before action can begin.
-- Do not simply reverse all failure responsibility from the field to design.
-- Do not invent insufficient-effort rates, fatigue thresholds, management scores, or success probabilities absent from the parent.
+- A reading that would reduce the theory to effort denial differs from the parent-defined scope.
+- A reading that would turn it into rejection of ambitious targets or KPIs themselves differs from the parent-defined scope.
+- A reading that would reduce it to criticism of managers, educators, or any particular role differs from the parent-defined scope.
+- A reading that would erase executors' responsibility for execution, observation, and reporting differs from the parent-defined scope.
+- A reading that would assume AI or data makes causality fully visible differs from the parent-defined scope.
+- A reading that would infer that all conditions must be known before action can begin differs from the parent-defined scope.
+- A reading that would simply reverse all failure responsibility from the field to design differs from the parent-defined scope.
+- A reading that would invent insufficient-effort rates, fatigue thresholds, management scores, or success probabilities absent from the parent differs from the parent-defined scope.
 
 ## Search terms
 - future-definition verification effort theory

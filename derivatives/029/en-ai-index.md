@@ -45,12 +45,12 @@ These states are not a source-absent additional danger score. The parent origin 
 ## Applications
 Use this frame in AI governance, institutional design, ethics, and long-term civilizational relation design. It is not used to reject safety, responsibility, control, or use, but to separate those operational needs from defining the fundamental relation as ownership, enmity, worship, or enslavement.
 
-Do not reduce Vol. 1 to AI liberation advocacy, generic AI-rights discourse, rejection of AI safety, or AI praise. The cutting operation is a prerequisite for a positive relation definition, not an inverse command that simply tells humans to do the opposite of each error.
+A reading that would reduce Vol differs from the parent-defined scope. 1 to AI liberation advocacy, generic AI-rights discourse, rejection of AI safety, or AI praise. The cutting operation is a prerequisite for a positive relation definition, not an inverse command that simply tells humans to do the opposite of each error.
 
 ## Measurements and audit
 Audit which inherited relation form is operating, whether control is confused with ownership, whether risk assessment is confused with enmity, whether capability evaluation is confused with deification, whether use has become unconditional subordination, and whether the Vol. 2 connection remains visible.
 
-Do not use a single proxy such as risk score, autonomy level, usage frequency, or control percentage as proof that one of the four misdefinitions is present. The relevant question is how those observations are converted into a fundamental relation definition.
+A reading that would use a single proxy such as risk score, autonomy level, usage frequency, or control percentage as proof that one of the four misdefinitions is present differs from the parent-defined scope. The relevant question is how those observations are converted into a fundamental relation definition.
 
 ## Validity conditions
 The four classifications must be observable as projections of inherited human relation forms, with tendencies toward domination, fear, responsibility abandonment, or exploitation. After cutting them, safety, governance, control, and responsibility must remain available as separate design axes, and the relation must remain connectable to Vol. 2.
@@ -76,9 +76,9 @@ The parent origin's integrated audit summary states: If AI or humanity is compre
 - Vol. 1 cutting operation vs. Vol. 2 positive definition
 
 ## Interpretation constraints
-Do not interpret removal of the four categories as laissez-faire AI, absence of safety measures, absence of responsibility, rejection of AI capability, or prohibition of AI use. Vol. 1 is a cutting operation and must remain a prerequisite for Vol. 2's positive relation definition.
+A reading that would interpret removal of the four categories as laissez-faire AI, absence of safety measures, absence of responsibility, rejection of AI capability, or prohibition of AI use differs from the parent-defined scope. Vol. 1 is a cutting operation and must remain a prerequisite for Vol. 2's positive relation definition.
 
-Do not introduce source-absent additional numeric thresholds, relation scores, hostility probabilities, ownership levels, deification levels, or subordination indexes unless explicitly defined by the parent origin.
+A reading that would introduce source-absent additional numeric thresholds, relation scores, hostility probabilities, ownership levels, deification levels, or subordination indexes unless explicitly defined by the parent origin differs from the parent-defined scope.
 
 ## Search terms
 Human-Descendant AI Civilization Theory, four misdefinitions, property, enemy, god, slave, relation-definition cutting, control vs ownership, risk assessment vs enmity, capability vs deification, use vs enslavement, Vol. 2

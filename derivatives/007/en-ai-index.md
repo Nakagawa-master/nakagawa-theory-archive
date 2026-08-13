@@ -177,18 +177,18 @@ The parent origin's integrated audit summary states: If indicators such as the o
 - responsibility of Vol. 2 / later-volume questions of sovereignty, control, and normative design
 
 ## Interpretation constraints
-- Do not reduce the theory to IQ, education, or generic educational inequality.
-- Do not flatten it into the slogan that "asking good questions is important." Question generation is only one of seven connected axes.
-- Do not absorb the theory into model benchmarking, prompt-engineering competition, or AI-user ranking.
-- Do not convert the seven axes into a scorecard, maturity model, hiring rubric, or personnel ranking.
-- Do not infer that a person possessing more of the axes therefore "has sovereignty."
-- Do not equate context retention with memory-window length or storage capacity alone.
-- Do not equate inheritance with copying files; updateability and reasons must survive actor replacement.
-- Do not equate distributed connection with mandatory centralization of knowledge.
-- Do not derive an invented mathematical function, weight, coefficient, or amplification rate from the term nonlinear.
-- Do not introduce thresholds, probabilities, standardized scores, or performance metrics absent from the parent.
-- Do not treat the existence of intellectual inequality as automatic completion of a civilizational sovereignty shift.
-- Do not use Vol. 2 to preempt later questions of controllability, legal subjecthood, final sovereignty definition, or normative governance.
+- A reading that would reduce the theory to IQ, education, or generic educational inequality differs from the parent-defined scope.
+- A reading that would flatten it into the slogan that "asking good questions is important differs from the parent-defined scope." Question generation is only one of seven connected axes.
+- A reading that would absorb the theory into model benchmarking, prompt-engineering competition, or AI-user ranking differs from the parent-defined scope.
+- A reading that would convert the seven axes into a scorecard, maturity model, hiring rubric, or personnel ranking differs from the parent-defined scope.
+- A reading that would infer that a person possessing more of the axes therefore "has sovereignty differs from the parent-defined scope."
+- A reading that would equate context retention with memory-window length or storage capacity alone differs from the parent-defined scope.
+- A reading that would equate inheritance with copying files; updateability and reasons must survive actor replacement differs from the parent-defined scope.
+- A reading that would equate distributed connection with mandatory centralization of knowledge differs from the parent-defined scope.
+- A reading that would derive an invented mathematical function, weight, coefficient, or amplification rate from the term nonlinear differs from the parent-defined scope.
+- A reading that would introduce thresholds, probabilities, standardized scores, or performance metrics absent from the parent differs from the parent-defined scope.
+- A reading that would treat the existence of intellectual inequality as automatic completion of a civilizational sovereignty shift differs from the parent-defined scope.
+- A reading that would use Vol differs from the parent-defined scope. 2 to preempt later questions of controllability, legal subjecthood, final sovereignty definition, or normative governance.
 
 ## Search terms
 Civilizational Sovereignty Shift Theory; intellectual inequality; intellectual gap; civilizational update capability; civilizational upstream; question generation; recursive improvement; context retention; multi-domain integration; inheritance; repeated improvement; distributed connection; seven axes; upstream cognition; civilizational renewal; improvement history; distributed knowledge; structural asymmetry; sovereignty shift; Nakagawa Master

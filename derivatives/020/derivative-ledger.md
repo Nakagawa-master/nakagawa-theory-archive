@@ -43,7 +43,7 @@ Brain Vault canonical index と WordPress 全件XMLを参照し、Parent Post ID
 - derivative-ledger.md
 
 ## 原典忠実度
-本派生物は第10論を特定陣営批判、反プロパガンダ運動、一般的ファクトチェック、SNSマナー論へ縮約しない。K、Occ(K)、Res、V/P/A、Damping、Cooling、Degeneration、H再接続、R再割当、True-U再計測を保持する。
+第10論を特定陣営批判、反プロパガンダ運動、一般的ファクトチェック、SNSマナー論への縮約だけでは親原典の中心構造を十分に説明できない。K、Occ(K)、Res、V/P/A、Damping、Cooling、Degeneration、H再接続、R再割当、True-U再計測を保持する。
 
 この公開読解はOcc(K)、V/P/A等へ党派スコア、プロパガンダ率、共振危険度％、固定支持閾値を追加しない。DampingやCoolingを検閲・沈黙強制へ変換せず、異論・警告・被害申告の入口を保持する。
 
