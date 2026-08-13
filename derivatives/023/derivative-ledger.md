@@ -23,18 +23,6 @@ zh_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-HUB-ZH-0023-0002
 zh_diff_id: DDIFF-20260813-DNCL-023-0002-0010
 ```
 
-## Factory
-```yaml
-quality_contract: OD134_OD135_LITERAL_SURFACE_BENCHMARK
-source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
-production_standard: LITERAL_SEVEN_SURFACE_REAUDIT
-manual_meaning_normalization: PROHIBITED
-assistant_safety_reframing_as_parent_meaning: PROHIBITED
-invented_fixed_sections: PROHIBITED
-surface_role_mixing: PROHIBITED
-footer_navigation_must_follow_benchmark: true
-```
-
 ## Retrieval evidence
 ```yaml
 parent_post_id: 4490
@@ -45,45 +33,30 @@ source_meaning_return: Parent_URL
 ```
 
 ## Seven surfaces
-```yaml
-README.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-human-entry.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-faq.md: REAUDITED_LITERAL_SOURCE_FAITHFUL_Q1_Q30
-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-en-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-zh-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-derivative-ledger.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-```
+- README.md: 第三者向け公開入口。
+- human-entry.md: 第三者人間向け要約。
+- faq.md: Q1〜Q30の第三者向けFAQ。
+- ai-index.md: 第三者AI向け日本語索引。
+- en-ai-index.md: 第三者AI向け英語索引。
+- zh-ai-index.md: 第三者AI向け中国語索引。
+- derivative-ledger.md: 親原典・派生ID・由来・意味境界を確認する台帳。
 
-## Source-fidelity findings repaired
-```yaml
-prior_drift:
-  - SURFACE_SPECIFIC_DERIVATIVE_ID_PATTERN_DIVERGED_FROM_OD134_OD135
-  - LEDGER_STRUCTURE_DIVERGED_FROM_OD134_OD135_LITERAL_LEDGER
-restored:
-  - PARENT_TITLE_URL_POST_ID_NCL_ID_DIFF_ID_ORIGIN
-  - SHARED_JA_HUB_DERIVATIVE_IDENTITY_ACROSS_JA_PUBLIC_SURFACES
-  - LANGUAGE_HUB_IDS_FOR_EN_AND_ZH
-  - COMMUNITY_FUND_DEFENSE_VALUE_CORE
-  - PURPOSE_BOUND_COMMUNAL_FUND_AND_REAL_REPAIR_CAPACITY_DISTINCTION
-  - NOMINAL_BALANCE_AND_YIELD_REVERSAL_EVALUATION
-  - PUBLIC_DECONSTRUCTION_META_LAYER
-  - THIRD_PARTY_HUMAN_AND_AI_PUBLIC_READER_AXIS
-  - PARENT_ORIGIN_RETURN
-```
+## Meaning boundary
+親原典は、修繕積立金を個人の余裕資金ではなく、将来修繕実行可能性を守る目的拘束された共同体資金として扱う。名目残高と実質修繕能力を区別し、元本保全、必要時流動性、制度適合、説明可能性、合意形成を同時に見る。
 
-## Semantic rule
-派生物はFundsの商品紹介、投資助言、商品ランキング、企業・外部媒体の公式見解へ縮約しない。修繕積立金を目的拘束された共同体資金として扱い、名目残高と実質修繕能力を区別し、元本保全・流動性・制度適合・説明可能性・合意形成を束で保持する。名目残高増加や高利回りを単独成功指標にせず、工事費上昇や流動性・元本・合意条件との反転評価可能性を保持する。親原典がなぜ「共同体資金防衛」を外部記事の価値核として採用したかという公開解体のメタ層を落とさない。
+名目残高が増えても工事費上昇がそれを上回れば実質修繕能力は低下し得る。高い利回りも、元本・流動性・制度・合意条件を弱める場合は共同体資金防衛の改善を意味しない。
 
-## Navigation and closure
-```yaml
-literal_surface_structure_check: PASSED
-footer_navigation_check: PASSED
-third_party_public_reader_axis_check: PASSED
-internal_instruction_leak_check: PASSED_NONE
-self_reference_dialogue_check: PASSED_NONE
-source_fidelity_reaudit: PASSED
-```
+親原典は期待利回り、推奨配分、元本保証確率、安全スコア、商品ランキングを一般的な評価値として定義していない。親原典には、Nakagawa Masterが外部記事でなぜ「共同体資金防衛」を価値核として採用したかを公開解体する層も含まれる。
+
+## Required distinctions
+- 投資商品 / 共同体資金防衛
+- 個人余裕資金 / 目的拘束された共同体資金
+- 名目残高 / 実質修繕能力
+- 高利回り / 良い共同体資金運用
+- 商品選択 / 将来修繕実行可能性の設計
+
+## Origin return
+共同体資金防衛、目的拘束資金、実質修繕能力、元本・流動性・制度・説明・合意の関係、および公開解体層の厳密な意味はParent URL、Parent Post ID 4490、Parent NCL-ID、Parent Diff-IDで確認できる。
 
 ---
 導線: [公式派生物023トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
