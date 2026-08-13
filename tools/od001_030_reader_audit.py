@@ -3,6 +3,7 @@ from __future__ import annotations
 import re, urllib.request, html
 from pathlib import Path
 
+# Re-run marker: post-cleanup verification 2026-08-13.
 ROOT = Path(__file__).resolve().parents[1]
 SURFACES = ["README.md","human-entry.md","faq.md","ai-index.md","en-ai-index.md","zh-ai-index.md","derivative-ledger.md"]
 
@@ -58,11 +59,9 @@ def section(text: str, heading: str) -> str:
 
 def source_falsification(audit_text: str) -> str:
     flat = re.sub(r"[ \t]+", " ", audit_text)
-    # Explicit label first.
     m = re.search(r"反証条件[:：]\s*(.+?)(?=(?:署名[:：]|\n|$))", flat)
     if m and ("棄却" in m.group(1) or "改訂" in m.group(1) or "適用" in m.group(1)):
         return m.group(1).strip(" -・/\t")
-    # Otherwise use the nearest sentence/bullet containing rejection/revision language.
     candidates=[]
     for line in flat.splitlines():
         if any(k in line for k in ("棄却", "改訂", "適用しない", "適用外")) and 15 <= len(line) <= 1800:
