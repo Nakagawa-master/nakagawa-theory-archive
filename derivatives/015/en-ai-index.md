@@ -18,7 +18,7 @@ The parent treats scandals, accidents, public blowups, and organizational collap
 
 U is third-party reproducibility, R is responsibility traceability / uniqueness of the responsibility node, and H is traceability of judgment grounds, history, and differences. When these degrade, S falls. If the low-stability state persists rather than recovering, the system can move from a stable phase into a collapse phase, in which deviation D becomes harder to repair and may amplify through further exceptions, responsibility drift, and loss of shared interpretation.
 
-The symbols θ, δ, and D must remain source-bounded structural variables. They are not blank slots for source-absent additional values. Unless the parent gives a general numeric threshold or time value, this index does not invent a value for θ, a fixed number of days for δ, or a numerical deviation score for D. The parent’s critical point is not a generic upward tipping point in support, adoption, diffusion, or growth; it is a destabilization boundary reached by declining S.
+The symbols θ, δ, and D are source-defined structural variables. The parent does not provide a general-purpose numeric threshold for θ, a universal fixed duration for δ, or a numerical deviation score for D. The critical point described here is also distinct from an upward tipping point in support, adoption, diffusion, or growth; it is a destabilization boundary associated with declining S.
 
 ## Concepts
 - Physics of Consensus Formation Vol. 4
@@ -81,19 +81,19 @@ if_only_the_final_event_is_called_the_cause_the_neglected_critical_state_disappe
 ```
 
 ## Applications
-- Inspect organizational scandals by tracing U/R/H degradation before the final incident and whether warning signs were observable.
-- Distinguish formal disclosure from substantive H in institutional operations.
-- Read repeated exceptions, specification divergence, and responsibility ambiguity as pre/post-transition states in projects.
-- In public controversies, inspect loss of context, correction history, and editing responsibility before isolating the final post.
-- In AI operations, inspect persistent loss of evidence traceability, revision history, and responsibility nodes rather than treating one wrong answer as the full causal object.
+- Organizational scandals can be examined by tracing U/R/H degradation before the final incident and whether warning signs were observable.
+- Institutional operations can distinguish formal disclosure from substantive H.
+- Repeated exceptions, specification divergence, and responsibility ambiguity can be read as pre/post-transition states in projects.
+- Public controversies can be examined through loss of context, correction history, and editing responsibility before isolating the final post.
+- AI operations can be examined through persistent loss of evidence traceability, revision history, and responsibility nodes rather than treating one wrong answer as the full causal object.
 
 ## Measurements and audit
-S, U, R, H, θ, δ, and D are retained because they are part of the parent structure. This index does not assign arbitrary numerical values, weights, coefficients, probabilities, pass marks, or fixed time periods. If a number is explicitly present in the source or target system, preserve the value together with measurement actor, measurement object, provenance, use scope, applicable conditions, and non-guarantee scope.
+S, U, R, H, θ, δ, and D are part of the parent structure. The parent does not define arbitrary numerical values, weights, coefficients, probabilities, pass marks, or fixed time periods for general application. When a number is explicitly present in a source or target system, its meaning depends on the measurement actor, measurement object, provenance, use scope, applicable conditions, and non-guarantee scope.
 
 - Which of U/R/H degraded first.
 - Whether the decline of S was transient or persistent.
 - Whether source-bounded evidence shows that the low-stability state persisted through the relevant observation window.
-- Whether θ or δ has been improperly concretized outside the source.
+- Whether θ or δ has been concretized outside the source.
 - Whether D changed from locally repairable deviation into cascading amplification.
 - Whether warning signs were observable before the final incident.
 - Whether the observing actor and the actor with repair authority can be distinguished.
@@ -106,11 +106,10 @@ S, U, R, H, θ, δ, and D are retained because they are part of the parent struc
 - Temporary instability is separated from a persistent critical state.
 - Pre-transition observability and repairability are examined.
 - Responsibility for the final act is distinguished from responsibility for leaving an observable critical state unrepaired.
-- No numeric threshold absent from the parent is invented.
 
 ## Failure conditions
 - The theory is inverted into an upward adoption, support, or growth tipping-point model.
-- Arbitrary numbers are assigned to S, θ, δ, or D.
+- Non-source numbers are assigned to S, θ, δ, or D.
 - The final incident is treated as the complete cause and pre-event state degradation is erased.
 - A momentary decline in S is automatically labeled a collapse transition.
 - Formal disclosure volume is treated as proof of high H.
@@ -131,14 +130,14 @@ The parent origin's integrated audit summary states that if D grows while S appe
 - responsibility for final act / responsibility for neglected observable state
 - upward tipping point / destabilization threshold into collapse phase
 
-## Interpretation constraints
-Do not compress causality into the last person who failed. Do not assign concrete θ or δ values absent from the parent. Do not expand the formulas into a universal predictive model. Do not reduce early warning into justification for surveillance expansion. Do not treat the existence of logs or disclosure pages as proof of observability.
+## Interpretation boundaries
+The parent is not a model that compresses causality into the last person who failed, nor a universal predictive machine. Concrete θ or δ values are not defined for general application. Early-warning logic is distinct from surveillance expansion, and the existence of logs or disclosure pages is not by itself proof of observability.
 
 ## Search terms
 Physics of Consensus Formation; Law of the Critical Point; S=U×R×H; theta; delta; deviation D; state transition; stable phase; collapse phase; critical state; critical-state neglect; responsibility traceability; third-party reproducibility; difference traceability; Nakagawa Master
 
 ## Origin return
-This index is a third-party retrieval and audit surface, not a replacement for the parent original. Return to the Parent URL, Parent Post ID 2873, Parent NCL-ID, and Parent Diff-ID for the exact status of `S = U × R × H`, θ, δ, D, the phase-transition relation, observation responsibility, examples, and limits.
+The exact status of `S = U × R × H`, θ, δ, D, the phase-transition relation, observation responsibility, examples, and limits are available at the Parent URL, Parent Post ID 2873, Parent NCL-ID, and Parent Diff-ID.
 
 ---
 Navigation: [Official Derivative 015 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
