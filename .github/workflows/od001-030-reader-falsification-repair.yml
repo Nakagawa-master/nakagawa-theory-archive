@@ -1,0 +1,412 @@
+name: OD001-030 reader-facing falsification repair
+
+on:
+  push:
+    paths:
+      - '.github/workflows/od001-030-reader-falsification-repair.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    env:
+      TARGET_BRANCH: reaudit/od001-030-reader-falsification-20260813
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Reaudit OD001-030 against parent integrated audit summaries
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from html.parser import HTMLParser
+          import html, json, re, time, urllib.request
+
+          ROOT = Path('derivatives')
+          SURFACES = [
+              'README.md','human-entry.md','faq.md','ai-index.md',
+              'en-ai-index.md','zh-ai-index.md','derivative-ledger.md'
+          ]
+
+          # Canonical identities verified from Brain Vault canonical indexes / WordPress XML map.
+          CANONICAL = {
+              1:(1786,'NCL-α-20251124-e4c70c','DIFF-20251124-0012','https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/'),
+              2:(4062,'NCL-α-20260517-b80e39','DIFF-20260517-0012','https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/'),
+              3:(4571,'NCL-α-20260627-aea14a','DIFF-20260630-0003','https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/'),
+              4:(4453,'NCL-α-20260617-d0b342','DIFF-20260623-0020','https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/'),
+              5:(3931,'NCL-α-20260511-e243be','DIFF-20260511-0009','https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/'),
+              6:(3718,'NCL-α-20260416-0b1b93','DIFF-20260423-0060','https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-01/'),
+              7:(3766,'NCL-α-20260418-11c3d8','DIFF-20260424-0041','https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-02/'),
+              8:(4366,'NCL-α-20260607-7e87f5','DIFF-20260610-0017','https://master.ricette.jp/theory/nakagawa-master-causal-opacity-effort-theory/'),
+              9:(4393,'NCL-α-20260608-5a13aa','DIFF-20260612-0018','https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-bad-causality/'),
+              10:(3954,'NCL-α-20260512-1202e0','DIFF-20260519-0016','https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/'),
+              11:(4593,'NCL-α-20260629-766f34','DIFF-20260718-0004','https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/'),
+              12:(4075,'NCL-α-20260517-fe6641','DIFF-20260517-0013','https://master.ricette.jp/society/nakagawa-master-aki-011-recognition-pollution-by-performance-of-understanding/'),
+              13:(4094,'NCL-α-20260518-f38a1e','DIFF-20260518-0015','https://master.ricette.jp/society/nakagawa-master-aki-012-consentless-closing-demand/'),
+              14:(2788,'NCL-α-20260211-051ce0','DIFF-20260213-0030','https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/'),
+              15:(2873,'NCL-α-20260214-40c1de','DIFF-20260215-0025','https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol4-law-of-critical-point/'),
+              16:(2941,'NCL-α-20260215-198686','DIFF-20260222-0022','https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol7-infrastructure-of-governance/'),
+              17:(3077,'NCL-α-20260227-4ecc69','DIFF-20260228-0025','https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol12-runtime-governance/'),
+              18:(2962,'NCL-α-20260222-482bdb','DIFF-20260222-0024','https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol8-external-interference-physics/'),
+              19:(2994,'NCL-α-20260223-e7e1c4','DIFF-20260225-0019','https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol9-cognitive-hacking-defense-os/'),
+              20:(3027,'NCL-α-20260225-1f258d','DIFF-20260226-0020','https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda/'),
+              21:(2919,'NCL-α-20260215-71cedd','DIFF-20260215-0021','https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity/'),
+              22:(4470,'NCL-α-20260618-52a7c0','DIFF-20260618-0016','https://master.ricette.jp/society/nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss/'),
+              23:(4490,'NCL-α-20260618-af3eb5','DIFF-20260618-0007','https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-funds-structural-reading-community-fund-defense/'),
+              24:(4413,'NCL-α-20260611-2a95fb','DIFF-20260618-0005','https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-valuetope-structural-reading-mobility-supply-os/'),
+              25:(4351,'NCL-α-20260604-6c3cfc','DIFF-20260604-0004','https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-milly-structural-reading-market-connection/'),
+              26:(4358,'NCL-α-20260605-c39481','DIFF-20260605-0005','https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-algalex-structural-reading-food-system-entry/'),
+              27:(4386,'NCL-α-20260607-898d28','DIFF-20260607-0004','https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-invax-structural-reading-civil-engineering-material-os/'),
+              28:(4543,'NCL-α-20260624-a7595e','DIFF-20260719-0003','https://master.ricette.jp/theory/nakagawa-master-ai-as-human-origin-external-intelligence-civilizational-descendant/'),
+              29:(4504,'NCL-α-20260619-ac740f','DIFF-20260624-0017','https://master.ricette.jp/theory/nakagawa-master-ai-is-not-human-property-enemy-god-or-slave/'),
+              30:(4609,'NCL-α-20260629-f16938','DIFF-20260629-0001','https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mota-structural-reading-price-formation-design/'),
+          }
+
+          INTERNAL_LINE_TOKENS = [
+              'PENDING','TO_BE_RECORDED','READY_TO_RECORD','next_cursor',
+              'branch_fresh_read_required','main_publish_required','COMPLETE_CONTENT_PENDING',
+              'owner_review','PASS_PENDING','public_pr','public_rebuild_pr','merge_commit',
+              'FACTORY_V2','Golden master','closure_status','Repository-side synchronization',
+              'Updated at JST','source_result','source gate receipt','PASS_SOURCE_VERIFIED_AFTER_REPAIR'
+          ]
+          INTERNAL_PHRASES = [
+              '内部制作過程','内部制作説明','制作工程','記事化判断','ZEROICHI',
+              'internal production','production process','article-construction decision',
+              'article-structure translation','inward-facing','文章化判断','文章结构翻译'
+          ]
+          META_JA_SUBJECT = r'(?:この公開読解|本公開読解|公式派生物|本派生物|この派生物|派生物側|派生側|派生文|公開派生)'
+          META_JA_ACTION = r'(?:数値を作|数値を創作|創作|追加|生成|新設|置換|改変|保持|削除|限定|再掲|前景化|補完|推定|固定|同期|記載|記録|制作|記事化)'
+
+          class TextExtractor(HTMLParser):
+              BLOCK = {'p','li','h1','h2','h3','h4','h5','h6','br','div','section','blockquote','tr','td','th'}
+              def __init__(self):
+                  super().__init__(); self.parts=[]
+              def handle_starttag(self, tag, attrs):
+                  if tag in self.BLOCK: self.parts.append('\n')
+              def handle_endtag(self, tag):
+                  if tag in self.BLOCK: self.parts.append('\n')
+              def handle_data(self, data): self.parts.append(data)
+              def text(self): return html.unescape(''.join(self.parts))
+
+          def fetch_parent_audit(post_id, parent_url):
+              urls = [
+                  f'https://master.ricette.jp/wp-json/wp/v2/posts/{post_id}?_fields=content,title,link',
+                  parent_url,
+              ]
+              last = None
+              for url in urls:
+                  for attempt in range(3):
+                      try:
+                          req = urllib.request.Request(url, headers={'User-Agent':'OD-reader-falsification-reaudit/2.0'})
+                          with urllib.request.urlopen(req, timeout=35) as r:
+                              raw = r.read().decode('utf-8','replace')
+                          rendered = json.loads(raw)['content']['rendered'] if '/wp-json/' in url else raw
+                          p = TextExtractor(); p.feed(rendered); txt = p.text().replace('\r','')
+                          m = re.search(r'統合監査要旨\s*(.*?)(?=\s*局所監査要旨|\s*署名[：:]|\Z)', txt, re.S)
+                          if not m:
+                              raise RuntimeError('integrated audit summary not found')
+                          summary = re.sub(r'[ \t]+',' ',m.group(1))
+                          summary = re.sub(r'\n+','\n',summary).strip()
+                          c = re.search(r'反証条件(?:としては)?\s*[：:、]?\s*(.*?)(?=\n?署名\s*[：:]|\Z)', summary, re.S)
+                          clause = (c.group(1) if c else summary).strip(' \n-*・')
+                          clause = re.sub(r'\s+',' ',clause).strip()
+                          if len(clause) < 20:
+                              raise RuntimeError('falsification clause too short')
+                          return clause, summary
+                      except Exception as e:
+                          last = e
+                          time.sleep(1.5*(attempt+1))
+              raise RuntimeError(f'failed source audit fetch post={post_id}: {last}')
+
+          def ja_source_fact(clause):
+              clause = clause.rstrip('。.!')
+              return f'親原典の統合監査要旨では、{clause}。'
+
+          def en_source_fact(clause):
+              clause = clause.rstrip('。.!')
+              return (
+                  "The parent origin's integrated audit summary states the following falsification/revision condition. "
+                  f'Parent-source clause (Japanese): {clause}。'
+              )
+
+          def zh_source_fact(clause):
+              clause = clause.rstrip('。.!')
+              return (
+                  '父原典的综合审计摘要记载了以下反证／修订条件。'
+                  f'父原典条款（日文原文）：{clause}。'
+              )
+
+          def replace_section(text, headings, body, canonical_heading):
+              heads = '|'.join(re.escape(h) for h in headings)
+              pat = re.compile(r'(?ms)^## (?:'+heads+r')\s*\n.*?(?=^## |\Z)')
+              repl = f'## {canonical_heading}\n{body.strip()}\n\n'
+              if pat.search(text):
+                  return pat.sub(repl, text, count=1)
+              return text
+
+          def replace_faq_falsification_answers(text, body):
+              pat = re.compile(r'(?ms)(^### Q\d+\.[^\n]*\n)(.*?)(?=^### Q\d+\.|^---\s*$|\Z)')
+              def sub(m):
+                  head, ans = m.group(1), m.group(2)
+                  target = ('反証' in head or '改訂' in head or '反証条件' in ans or '改訂条件' in ans)
+                  if not target:
+                      return m.group(0)
+                  return head + '\n' + body.strip() + '\n\n'
+              return pat.sub(sub, text)
+
+          def replace_inline_source_audit(text, body, filename):
+              if filename in ('README.md','faq.md','ai-index.md','en-ai-index.md','zh-ai-index.md'):
+                  return text
+              paras = text.split('\n\n')
+              out=[]
+              for p in paras:
+                  if ('反証条件' in p or '反証・改訂条件' in p or '改訂条件' in p) and any(x in p for x in ('派生','追加し','創作','生成','独自','限定する','置換')):
+                      out.append(body)
+                  else:
+                      out.append(p)
+              return '\n\n'.join(out)
+
+          def remove_authoring_meta(text):
+              # Internal state / workflow lines have no role in public reader surfaces.
+              lines=[]
+              for line in text.splitlines():
+                  if any(tok in line for tok in INTERNAL_LINE_TOKENS):
+                      continue
+                  lines.append(line)
+              text='\n'.join(lines)
+
+              # Explicit internal-production wording is removed rather than turned into a public policy sentence.
+              ja_patterns = [
+                  r'[^。\n]*(?:内部制作過程|内部制作説明|制作工程)[^。\n]*。?',
+                  r'[^。\n]*派生物側で[^。\n]*。?',
+                  r'[^。\n]*派生側で独自[^。\n]*。?',
+                  r'[^。\n]*派生側の(?:整理|構造化|説明)[^。\n]*。?',
+                  r'[^。\n]*この公開読解[^。\n]*(?:数値を作|創作|追加|生成|限定|保持|置換|改変)[^。\n]*。?',
+                  r'[^。\n]*(?:原典|親原典)に(?:は)?(?:存在し)?ない[^。\n]*(?:数値|割合|確率|閾値|KPI|スコア|反証条件|指標)[^。\n]*(?:追加しない|創作しない|生成しない|作らない|新設しない|設定しない|補完しない)[^。\n]*。?',
+                  r'[^。\n]*派生物の説明上の便宜[^。\n]*。?',
+              ]
+              for pat in ja_patterns:
+                  text = re.sub(pat, '', text)
+
+              # More general derivative-authoring sentence: requires BOTH derivative subject and authoring action.
+              text = re.sub(r'[^。\n]*'+META_JA_SUBJECT+r'[^。\n]*'+META_JA_ACTION+r'[^。\n]*。?', '', text)
+
+              en_patterns = [
+                  r'(?i)[^.!?\n]*(?:internal production|production process|inward-facing)[^.!?\n]*[.!?]?',
+                  r'(?i)[^.!?\n]*(?:this derivative|the derivative|this public reading|derivative-side)[^.!?\n]*(?:must|should|do not|does not|avoid|preserve|retain|introduce|invent|create|add|replace|rewrite|limit)[^.!?\n]*[.!?]?',
+                  r'(?i)[^.!?\n]*(?:not present in the parent|absent from the parent)[^.!?\n]*(?:do not|must not|should not|not add|not invent|not create)[^.!?\n]*[.!?]?',
+              ]
+              for pat in en_patterns:
+                  text = re.sub(pat, '', text)
+
+              zh_patterns = [
+                  r'[^。！？\n]*(?:内部制作|制作流程|派生物侧|派生侧|本公开读解)[^。！？\n]*(?:不得|不要|不添加|不创造|不生成|保持|限定|替换|改写|避免)[^。！？\n]*[。！？]?',
+                  r'[^。！？\n]*(?:父原典|原典)中不存在[^。！？\n]*(?:数值|比例|概率|阈值|KPI|评分|反证条件|指标)[^。！？\n]*(?:不添加|不创造|不生成|不设置)[^。！？\n]*[。！？]?',
+              ]
+              for pat in zh_patterns:
+                  text = re.sub(pat, '', text)
+
+              # Public structural-reading terminology.
+              text = text.replace('記事化判断','公開解体のメタ視点')
+              text = text.replace('article-construction decision','public-deconstruction perspective')
+              text = text.replace('article-structure translation','public-deconstruction perspective')
+              text = text.replace('文章化判断','公开解体的元视角')
+              text = text.replace('文章结构翻译','公开解体的元视角')
+              text = text.replace('ZEROICHI','外部媒体')
+
+              text = re.sub(r'[ \t]+\n','\n',text)
+              text = re.sub(r'\n{3,}','\n\n',text)
+              return text.strip()+'\n'
+
+          def convert_nonfaq_questions(text):
+              out=[]
+              in_code=False
+              for line in text.splitlines():
+                  if line.strip().startswith('```'):
+                      in_code = not in_code
+                      out.append(line); continue
+                  if in_code or line.startswith('#'):
+                      out.append(line); continue
+                  if line.startswith('- ') and (line.endswith('か。') or line.endswith('か？') or line.endswith('か?')):
+                      stem = re.sub(r'(か。|か？|か\?)$','',line[2:]).rstrip('？?')
+                      line = '- 読解上の確認点: '+stem+'。'
+                  line = re.sub(r'([^。\n]+)でしょうか。', r'\1が確認点となる。', line)
+                  line = re.sub(r'([^。\n]+)だろうか。', r'\1が検討対象となる。', line)
+                  out.append(line)
+              return '\n'.join(out)+'\n'
+
+          def bump_diff_id(text):
+              m = re.search(r'(?m)^- derivative_diff_id: (DDIFF-[^\n]+)$', text)
+              if not m:
+                  return text, None, None
+              old = m.group(1).strip()
+              vm = re.match(r'(.+-)(\d{4})$', old)
+              if not vm:
+                  return text, old, old
+              new = vm.group(1)+f'{int(vm.group(2))+1:04d}'
+              text = text[:m.start(1)]+new+text[m.end(1):]
+              sm = re.search(r'(?m)^- supersedes: .*$', text)
+              if sm:
+                  text = text[:sm.start()]+'- supersedes: '+old+text[sm.end():]
+              else:
+                  dm = re.search(r'(?m)^- derivative_diff_id: .*$', text)
+                  if dm:
+                      text = text[:dm.end()]+'\n- supersedes: '+old+text[dm.end():]
+              return text, new, old
+
+          def validate_identity(n, readme):
+              post,ncl,diff,url = CANONICAL[n]
+              checks = [
+                  f'Parent Post ID: {post}',
+                  f'Parent NCL-ID: {ncl}',
+                  f'Parent Diff-ID: {diff}',
+                  f'Parent URL: {url}',
+              ]
+              missing=[x for x in checks if x not in readme]
+              if missing:
+                  raise RuntimeError(f'OD{n:03d} canonical identity mismatch: {missing}')
+
+          parent={}
+          for n in range(1,31):
+              d=ROOT/f'{n:03d}'
+              readme=(d/'README.md').read_text(encoding='utf-8')
+              validate_identity(n,readme)
+              post,_,_,url=CANONICAL[n]
+              clause,summary=fetch_parent_audit(post,url)
+              parent[n]=(clause,summary)
+              print(f'OD{n:03d} source falsification: {clause[:220]}')
+
+          changed=[]
+          for n in range(1,31):
+              d=ROOT/f'{n:03d}'
+              clause=parent[n][0]
+              ja=ja_source_fact(clause)
+              en=en_source_fact(clause)
+              zh=zh_source_fact(clause)
+              for name in SURFACES:
+                  p=d/name
+                  if not p.exists():
+                      raise RuntimeError(f'missing surface {p}')
+                  old=p.read_text(encoding='utf-8')
+                  new=old
+                  if name=='README.md':
+                      new=replace_section(new,['反証・改訂条件','反証条件'],ja,'反証・改訂条件')
+                  elif name=='faq.md':
+                      new=replace_faq_falsification_answers(new,ja)
+                  elif name=='ai-index.md':
+                      new=replace_section(new,['Falsification conditions','反証・改訂条件','反証条件'],ja,'Falsification conditions')
+                  elif name=='en-ai-index.md':
+                      new=replace_section(new,['Falsification conditions'],en,'Falsification conditions')
+                  elif name=='zh-ai-index.md':
+                      new=replace_section(new,['Falsification conditions'],zh,'Falsification conditions')
+                  else:
+                      new=replace_inline_source_audit(new,ja,name)
+
+                  new=remove_authoring_meta(new)
+                  if name!='faq.md':
+                      new=convert_nonfaq_questions(new)
+
+                  if new!=old:
+                      new,_,_=bump_diff_id(new)
+                      p.write_text(new,encoding='utf-8')
+                      changed.append(str(p))
+
+          # Synchronize public ledgers to actual surface derivative IDs.
+          for n in range(1,31):
+              d=ROOT/f'{n:03d}'
+              p=d/'derivative-ledger.md'
+              old=p.read_text(encoding='utf-8')
+              new=old
+              for name in SURFACES[:-1]:
+                  txt=(d/name).read_text(encoding='utf-8')
+                  mm=re.search(r'(?m)^- derivative_diff_id: (DDIFF-[^\n]+)$',txt)
+                  if not mm: continue
+                  did=mm.group(1)
+                  rowpat=re.compile(r'(?m)^(\|[^\n]*\|\s*'+re.escape(name)+r'\s*\|[^\n]*\|\s*)(DDIFF-[^|\s]+)(\s*\|.*)$')
+                  new=rowpat.sub(lambda m:m.group(1)+did+m.group(3),new)
+              if new!=old:
+                  new,ledgerid,_=bump_diff_id(new)
+                  if ledgerid:
+                      rowpat=re.compile(r'(?m)^(\|[^\n]*\|\s*derivative-ledger\.md\s*\|[^\n]*\|\s*)(DDIFF-[^|\s]+)(\s*\|.*)$')
+                      new=rowpat.sub(lambda m:m.group(1)+ledgerid+m.group(3),new)
+                  p.write_text(new,encoding='utf-8')
+                  changed.append(str(p))
+
+          # Final 210-surface reader-facing validation.
+          bad=[]
+          faq_bad=[]
+          ai_bad=[]
+          footer_bad=[]
+          meta_regexes = [
+              re.compile(r'この公開読解[^。\n]*(?:数値を作|創作|追加|生成|限定|保持|置換|改変)'),
+              re.compile(r'派生物側で|派生側で独自|派生側の(?:整理|構造化|説明)'),
+              re.compile(r'(?:原典|親原典)に(?:は)?(?:存在し)?ない[^。\n]*(?:数値|割合|確率|閾値|KPI|スコア|反証条件|指標)[^。\n]*(?:追加しない|創作しない|生成しない|作らない|新設しない|設定しない)'),
+              re.compile(r'(?i)(?:this derivative|the derivative|this public reading|derivative-side)[^.!?\n]*(?:must|should|do not|does not|avoid|preserve|retain|introduce|invent|create|add|replace|rewrite|limit)'),
+              re.compile(r'(?:派生物侧|派生侧|本公开读解)[^。！？\n]*(?:不得|不要|不添加|不创造|不生成|保持|限定|替换|改写|避免)'),
+          ]
+          ai_sections=['Summary','Concepts','Causal chain','State model','Applications','Measurements and audit','Validity conditions','Failure conditions','Falsification conditions','Required distinctions','Interpretation constraints','Search terms','Origin return']
+          footer_terms=['README.md','human-entry.md','faq.md','ai-index.md','en-ai-index.md','zh-ai-index.md','derivative-ledger.md']
+
+          for n in range(1,31):
+              clause=parent[n][0].rstrip('。.!')
+              d=ROOT/f'{n:03d}'
+              for name in SURFACES:
+                  p=d/name
+                  t=p.read_text(encoding='utf-8')
+                  for phrase in INTERNAL_PHRASES:
+                      if phrase.lower() in t.lower(): bad.append((str(p),phrase))
+                  for tok in INTERNAL_LINE_TOKENS:
+                      if tok in t: bad.append((str(p),tok))
+                  for rg in meta_regexes:
+                      if rg.search(t): bad.append((str(p),'authoring-meta:'+rg.pattern))
+                  if any(term not in t for term in footer_terms):
+                      footer_bad.append(str(p))
+
+              faq=(d/'faq.md').read_text(encoding='utf-8')
+              qs=[int(x) for x in re.findall(r'(?m)^### Q(\d+)\.',faq)]
+              if qs != list(range(1,31)):
+                  faq_bad.append((n,qs))
+
+              for name in ['ai-index.md','en-ai-index.md','zh-ai-index.md']:
+                  t=(d/name).read_text(encoding='utf-8')
+                  missing=[s for s in ai_sections if not re.search(r'(?m)^## '+re.escape(s)+r'\s*$',t)]
+                  if missing: ai_bad.append((n,name,missing))
+                  # exact parent-source clause must be present in every AI falsification section.
+                  if clause not in t:
+                      ai_bad.append((n,name,['exact parent falsification clause missing']))
+
+              readme=(d/'README.md').read_text(encoding='utf-8')
+              if clause not in readme:
+                  bad.append((str(d/'README.md'),'exact parent falsification clause missing'))
+
+          if bad:
+              raise RuntimeError('reader-facing validation failed: '+repr(bad[:80]))
+          if faq_bad:
+              raise RuntimeError('FAQ structure failed: '+repr(faq_bad))
+          if ai_bad:
+              raise RuntimeError('AI-index structure/source failed: '+repr(ai_bad[:80]))
+          if footer_bad:
+              raise RuntimeError('footer/navigation failed: '+repr(footer_bad[:80]))
+
+          print('Changed files:',len(set(changed)))
+          for x in sorted(set(changed)):
+              print(x)
+          PY
+
+      - name: Commit repaired public surfaces and remove one-shot workflow
+        shell: bash
+        run: |
+          git config user.name 'Nakagawa-master'
+          git config user.email 'karyu.owner@gmail.com'
+          git rm -- '.github/workflows/od001-030-reader-falsification-repair.yml'
+          git add -- derivatives/001 derivatives/002 derivatives/003 derivatives/004 derivatives/005 derivatives/006 derivatives/007 derivatives/008 derivatives/009 derivatives/010 derivatives/011 derivatives/012 derivatives/013 derivatives/014 derivatives/015 derivatives/016 derivatives/017 derivatives/018 derivatives/019 derivatives/020 derivatives/021 derivatives/022 derivatives/023 derivatives/024 derivatives/025 derivatives/026 derivatives/027 derivatives/028 derivatives/029 derivatives/030
+          if git diff --cached --quiet; then
+            echo 'No changes produced.'
+            exit 1
+          fi
+          git commit -m 'Reaudit OD001-030 reader-facing falsification conditions'
+          git push origin HEAD:"${TARGET_BRANCH}"
