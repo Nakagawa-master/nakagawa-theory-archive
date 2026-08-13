@@ -99,7 +99,7 @@ The parent does not define generic understanding scores, danger percentages, AI-
 ## Validity conditions
 - Source interpretation: H-Disconnect as a U/H/R combination.
 - Required distinction: fake-U from substantive understanding.
-- Use H_d, F-C, and SD as a bundle, not universal single scores.
+- H_d, F-C, and SD form a bundled observation set rather than universal single scores.
 - Source element: return paths to Origin, source, context, version, and differences.
 - Establish verification responsibility R.
 - Source element: Detect → Stop → Shrink → Recover → Audit.

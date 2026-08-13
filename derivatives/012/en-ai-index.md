@@ -101,7 +101,7 @@ Audit the visibility of next questions, establishment conditions, exception cond
 - Categorically prohibit AI summaries, metaphors, or concise explanation.
 - Reduce the problem to information quantity alone.
 - Remove shared-vocabulary fixation, burden-of-explanation reversal, and recognition pollution from the causal chain.
-- Add political, medical, legal, or universal scoring claims absent from the origin.
+- Failure-side addition: political, medical, legal, or universal scoring claims absent from the origin.
 
 ## Falsification conditions
 The parent origin's integrated audit summary states: If an accessible explanation leads readers to the next questions, states validity, exception, falsification, scope, and unresolved conditions, and actually improves judgment accuracy or implementation possibility, hypothesis A does not apply to that case.

@@ -48,7 +48,7 @@ State D: those outputs become canonical internal knowledge and are re-referenced
 State E: the organization loses business self-recognition: it cannot consistently explain why the product creates value, how customers decide, which premise changed, who owns the connection, or what must be repaired.
 
 ## Applications
-Use this model in AI adoption, DX programs, enterprise knowledge systems, RAG/search layers, cross-functional strategy, sales-marketing alignment, brand systems, expert-led transformation, internal FAQ systems, and AI agent deployments.
+This model is applicable to AI adoption, DX programs, enterprise knowledge systems, RAG/search layers, cross-functional strategy, sales-marketing alignment, brand systems, expert-led transformation, internal FAQ systems, and AI agent deployments.
 
 Before AI use, identify the business-establishment conditions and the actor responsible for connecting them across functions. Before generated content becomes canonical knowledge, audit its premises, evidence, differences, and cross-functional meaning. When correcting a premise, trace all downstream documents, prompts, knowledge stores, search indexes, and decision templates that may re-reference it.
 

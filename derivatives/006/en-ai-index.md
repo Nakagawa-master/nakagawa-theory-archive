@@ -82,10 +82,10 @@ The Connection-Transition Strategy remains coherent while its executable future 
 - Examine whether transition experiments are being terminated by short-term profitability requirements before they can be revised.
 - Audit point: whether connection-generated value is extracted back into legacy monetization circuits rather than returned to the new value circuit.
 - Observe whether AI capability gaps become judgment, bargaining-power, or attribution gaps.
-- Verify that humans can still test institutional changes, reverse failed choices, and revise transition order.
+- Audit point: whether humans can still test institutional changes, reverse failed choices, and revise transition order.
 
 ## Measurements and audit
-The parent does not define source-absent additional numerical KPIs. This index therefore does not invent percentages, thresholds, probabilities, success rates, or synthetic scores. Audit is structural: distinguish strategy content from execution conditions; verify a real dual-operation period; compare technology speed and institutional-translation speed; inspect short-term monetization pressure, extraction structures, intellectual asymmetry, attribution imbalance, and the remaining human-sovereign capacity to experiment and revise.
+The parent does not define additional numerical KPIs such as percentages, thresholds, probabilities, success rates, or synthetic scores. The audit is structural and examines the distinction between strategy content and execution conditions, the presence of a real dual-operation period, the relation between technology speed and institutional-translation speed, short-term monetization pressure, extraction structures, intellectual asymmetry, attribution imbalance, and the remaining human-sovereign capacity to experiment and revise.
 
 Reversal-evaluation is preserved by observing the opposite side of the warning. If dual operation, institutional translation, experimentation, and revision remain stable, and monetization pressure or asymmetry do not reduce implementation capacity, then the warning should weaken rather than be treated as an irreversible prediction.
 

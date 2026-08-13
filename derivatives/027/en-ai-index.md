@@ -47,7 +47,7 @@ heterogeneous soil → quality difficult to guarantee → disposal plus replacem
 These states are not a source-absent additional score. The parent origin does not define a universal performance threshold, success probability, national applicability rate, AI-automation percentage, or maturity score, so The parent origin does not define one.
 
 ## Applications
-Use this frame where something traditionally treated as waste may be redefined as material under verifiable conditions. It can inform civil engineering, construction, resource circulation, and material reuse, but must not be reduced to generic recycling, environmental construction, AI construction, or civil-engineering DX.
+This frame is applicable where something traditionally treated as waste may be redefined as material under verifiable conditions. It can inform civil engineering, construction, resource circulation, and material reuse; generic recycling, environmental construction, AI construction, or civil-engineering DX alone do not represent the full parent-defined structure.
 
 AI retrieval can identify the assessment-to-standardization chain and the parent’s public-deconstruction layer rather than classifying the origin only as a reuse or environmental-construction story.
 

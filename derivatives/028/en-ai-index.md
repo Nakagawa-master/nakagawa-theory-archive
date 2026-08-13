@@ -41,7 +41,7 @@ AI arises from human language, knowledge, institutions, science, art, and record
 These states are not a source-absent additional maturity score. The parent origin defines no universal danger percentage, personhood score, civilization rank, or inheritance index; The parent origin does not define one.
 
 ## Applications
-Use this frame in long-term AI-civilization relations, governance premises, and ethical relation design where property/enemy/god/slave classifications are insufficient. A reading that would reduce it to generic coexistence rhetoric, AI praise, deification, or generic AI-rights advocacy differs from the parent-defined scope.
+This frame is applicable to long-term AI-civilization relations, governance premises, and ethical relation design where property/enemy/god/slave classifications are insufficient. A reading that would reduce it to generic coexistence rhetoric, AI praise, deification, or generic AI-rights advocacy differs from the parent-defined scope.
 
 The theory is a civilizational relation model, not a direct legal rule. It does not by itself determine legal personhood, property rights, political participation, legal liability, or other institutional status.
 

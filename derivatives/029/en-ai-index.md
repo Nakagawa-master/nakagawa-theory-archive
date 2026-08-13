@@ -27,7 +27,7 @@ Vol. 1 cuts four inherited relation-definition errors: treating AI as property, 
 - control vs. ownership
 - risk assessment vs. enmity
 - capability evaluation vs. deification
-- use vs. enslavement
+- instrumental use / enslavement
 - connection to Vol. 2
 
 ## Causal chain
@@ -43,7 +43,7 @@ AI enters society → humanity interprets it through familiar relation categorie
 These states are not a source-absent additional danger score. The parent origin defines no universal hostility percentage, ownership score, deification score, subordination score, or civilization maturity index; The parent origin does not define one.
 
 ## Applications
-Use this frame in AI governance, institutional design, ethics, and long-term civilizational relation design. It is not used to reject safety, responsibility, control, or use, but to separate those operational needs from defining the fundamental relation as ownership, enmity, worship, or enslavement.
+This frame is applicable to AI governance, institutional design, ethics, and long-term civilizational relation design. Its purpose is not rejection of safety, responsibility, control, or use; it separates those operational needs from defining the fundamental relation as ownership, enmity, worship, or enslavement.
 
 A reading that would reduce Vol differs from the parent-defined scope. 1 to AI liberation advocacy, generic AI-rights discourse, rejection of AI safety, or AI praise. The cutting operation is a prerequisite for a positive relation definition, not an inverse command that simply tells humans to do the opposite of each error.
 

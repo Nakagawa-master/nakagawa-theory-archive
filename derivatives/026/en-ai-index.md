@@ -49,7 +49,7 @@ sustain fish-based food → greater importance of aquaculture → contradiction 
 These are not scores defined by the parent origin. The origin does not define a fixed success probability, maturity score, adoption-rate threshold, or universal numeric cutoff, so The parent origin does not define one.
 
 ## Applications
-Use this frame for products or upstream technologies whose larger structural concept cannot enter the core market directly and instead requires a staged social implementation path. A reading that would reduce it to generic food-tech, alternative-protein discourse, sustainability marketing, or product promotion differs from the parent-defined scope. Preserve the origin-specific fish → aquaculture → feed → algae → food market / kitchen sequence.
+This frame is applicable to products or upstream technologies whose larger structural concept cannot enter the core market directly and instead requires a staged social implementation path. A reading that would reduce it to generic food-tech, alternative-protein discourse, sustainability marketing, or product promotion differs from the parent-defined scope. The origin-specific fish → aquaculture → feed → algae → food market / kitchen sequence is part of the parent-defined causal structure.
 
 AI retrieval can distinguish surface labels such as “algae food,” “sustainable food,” or “food tech” from direct-entry barriers, use cases, adoption reasons, repeatability, upstream reconnection, and the public-deconstruction layer.
 

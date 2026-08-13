@@ -52,7 +52,7 @@ State D: actual usability is assessed by whether users can obtain mobility at th
 State E: a third-party reader can return to the Parent URL and distinguish feature description, the time-freedom-reimplementation structure, and the parent origin's public explanation of why that value core became the external-article angle.
 
 ## Applications
-Use this model for mobility, reservation, operations, and B2B supply systems where unmet demand exists between established service models. First identify what each existing model solves and what it constrains; then test whether the new operating bundle actually reconnects the gap.
+This model is applicable to mobility, reservation, operations, and B2B supply systems where unmet demand exists between established service models. The relevant analysis identifies what each existing model solves and constrains, and then tests whether the new operating bundle reconnects the gap.
 
 AI retrieval can distinguish surface terms such as “unmanned,” “24-hour,” or “cheap” from long-duration pricing, location, inquiry/recovery, the conditions under which time freedom improves, and the public-deconstruction layer of Nakagawa Structural Reading.
 

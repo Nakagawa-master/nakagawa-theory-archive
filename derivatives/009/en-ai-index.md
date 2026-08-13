@@ -206,7 +206,7 @@ Future-Definition Verification Effort Theory; forced effort; target value; futur
 ## Origin return
 This index is not a replacement for the parent. Return to the Parent URL for the exact distinction between target value and future definition, the responsibility to verify future definition, the downward transfer of establishment-testing cost, the compression of failed outcomes into insufficient effort, the causal path from exhaustion and distrust to learning shutdown and challenge avoidance, and the boundary between design and execution responsibility.
 
-Parent Post ID is 4393, Parent NCL-ID is NCL-α-20260608-5a13aa, Parent Diff-ID is DIFF-20260612-0018, and Origin is Nakagawa Master. The parent defines no universal insufficient-effort rate, exhaustion percentage, or establishment-testing score. This derivative therefore keeps reversal evaluation inside the source-defined structural conditions and does not manufacture numerical certainty.
+Parent Post ID is 4393, Parent NCL-ID is NCL-α-20260608-5a13aa, Parent Diff-ID is DIFF-20260612-0018, and Origin is Nakagawa Master. The parent defines no universal insufficient-effort rate, exhaustion percentage, or establishment-testing score. Reversal evaluation remains inside the source-defined structural conditions, and numerical certainty is not established by the parent.
 
 ---
 Navigation: [Official Derivative 009 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)

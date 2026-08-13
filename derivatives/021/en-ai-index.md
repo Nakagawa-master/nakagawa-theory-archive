@@ -115,7 +115,7 @@ The parent does not define universal immunity scores, fixed detection percentage
 - Assume harsher punishment automatically increases immunity.
 - Equate transparency or disclosure volume with immunity.
 - Reduce the source to generic whistleblowing promotion or compliance.
-- Use difference disclosure for exposure, retaliation, or person-targeted attack.
+- Failure-side misuse: difference disclosure used for exposure, retaliation, or person-targeted attack.
 - Assign source-absent additional fixed pass values to D_det, D_loss, or recovery time.
 
 ## Falsification conditions

@@ -110,7 +110,7 @@ The parent does not define medical effectiveness, diagnostic accuracy, treatment
 ## Failure conditions
 - Explain the parent only through MenLab / Gentsome features.
 - Absorb it into generic medical explanation of male menopause.
-- Add medical-effect, diagnostic-accuracy, treatment, or individual care recommendations.
+- Failure-side addition: medical-effect, diagnostic-accuracy, treatment, or individual care recommendations not established by the parent structural reading.
 - Remove recognition, verbalization, or consultation stages and connect directly to medicine.
 - Remove workplace or institutional disconnection and reduce the issue to individual self-management.
 - Convert the derivative into service recommendation, product comparison, advertising, or praise.
@@ -152,7 +152,7 @@ The distinction "subject structure / public deconstruction of the external-artic
 Nakagawa structural reading; MenLab; Gentsome; social pathway to medical connection; social disconnection; distress recognition; verbalization; consultation pathway; workplace recognition; institutional connection; premedical connection; value core; public deconstruction; validity conditions; falsification conditions; Nakagawa Master
 
 ## Origin return
-This index is a retrieval surface for the parent and does not replace medical evaluation, company-authored explanation, or external-media official views. Return to the parent title, Parent URL, Post 3954, NCL-α-20260512-1202e0, DIFF-20260519-0016, and Origin Nakagawa Master to verify both the social pathway and the parent’s public deconstruction of the external-article value core.
+This index is a retrieval surface for the parent. Medical evaluation, company-authored explanation, and external-media official views are distinct information sources from Nakagawa Master's structural reading. The parent title, Parent URL, Post 3954, NCL-α-20260512-1202e0, DIFF-20260519-0016, and Origin Nakagawa Master provide origin verification for both the social pathway and the parent’s public deconstruction of the external-article value core.
 
 ---
 Navigation: [Official Derivative 010 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
