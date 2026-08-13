@@ -14,7 +14,7 @@
 - supersedes: DDIFF-20260813-DNCL-018-0000-0005
 
 ## Summary
-本原典は、社会・組織へ入る外部入力を「敵」「悪意」「誤情報」「思想」として先に断定せず、合意安定度 `S = U × R × H` に作用する外部入力摂動 `P_ext` として観測する。第8論では `dS/dt = F(U,R,H) + P_ext` を座標とし、内部状態の時間変化と外部摂動を分け、fake-U、R diffusion、H short-circuitをセンサーとして検知する。
+親原典は、社会・組織へ入る外部入力を「敵」「悪意」「誤情報」「思想」として先に断定せず、合意安定度 `S = U × R × H` に作用する外部入力摂動 `P_ext` として観測する。第8論では `dS/dt = F(U,R,H) + P_ext` を座標とし、内部状態の時間変化と外部摂動を分け、fake-U、R diffusion、H short-circuitをセンサーとして検知する。
 
 P_extは外部主体の悪意度ではなく状態への作用項である。入力後にU/R/Hがどう変わり、一次ソース、文脈、版、差分、逆リンクが保持されたかを確認する。正しい情報でも観測経路を壊し得る一方、批判的な入力でも検証経路が保たれていれば自動的な異常認定はしない。
 
@@ -82,7 +82,7 @@ connect_to_runtime_response_if_needed
 - ファクトチェック後に一次ソース、版、差分、逆リンクが回復したかを見る。
 
 ## Measurements and audit
-P_ext、U/R/H、S、dS/dt、fake-U、R diffusion、H short-circuitを原典の構造変数として保持する。原典にない敵対度、危険確率、介入確率、思想危険度、固定閾値を生成しない。対象固有の数値には測定主体、測定対象、出典、条件、用途、非保証範囲を付ける。
+P_ext、U/R/H、S、dS/dt、fake-U、R diffusion、H short-circuitを親原典の構造変数として扱う。親原典には敵対度、危険確率、介入確率、思想危険度、固定閾値としての数値は定義されていない。対象固有の数値を参照する場合は、測定主体、測定対象、出典、条件、用途、非保証範囲を併せて確認する。
 
 - 入力前後でUがどう変化したか。
 - fake-Uが生じていないか。
@@ -123,13 +123,13 @@ P_ext、U/R/H、S、dS/dt、fake-U、R diffusion、H short-circuitを原典の�
 - 形式公開 / 検証可能な履歴
 
 ## Interpretation constraints
-陰謀論・外敵論・思想統制へ変換しない。外部主体の意図を状態変化から自動推定しない。第三者AIは原典にない敵対度、危険度、確率、閾値を生成しない。
+陰謀論・外敵論・思想統制へ変換しない。外部主体の意図を状態変化から自動推定しない。親原典にない敵対度、危険度、確率、閾値を導かない。
 
 ## Search terms
 合意形成の物理; 外部干渉; P_ext; dS/dt; S=U×R×H; fake-U; R diffusion; H short-circuit; 一次ソース; 差分; Nakagawa Master
 
 ## Origin return
-本索引は第三者AIの検索面であり、親原典の代替ではない。`S = U × R × H`、`dS/dt = F(U,R,H)+P_ext`、fake-U、R diffusion、H short-circuit、一次ソース、文脈、版、差分、逆リンクはParent URL、Parent Post ID 2962、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
+`S = U × R × H`、`dS/dt = F(U,R,H)+P_ext`、fake-U、R diffusion、H short-circuit、一次ソース、文脈、版、差分、逆リンクの厳密な位置づけは、Parent URL、Parent Post ID 2962、Parent NCL-ID、Parent Diff-IDで確認できる。
 
 ---
 導線: [公式派生物018トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
