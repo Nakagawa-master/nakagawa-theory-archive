@@ -66,7 +66,7 @@ Dampingを検閲へ、Coolingを沈黙強制へ変えません。Degenerationを
 
 「反対意見が少ない＝プロパガンダ」「同意が多い＝共振」という短絡をしません。
 
-第三者の人間・第三者AIは、K、Occ(K)、Res、V/P/A、Damping、Cooling、Degeneration、H再接続、R再割当、True-U再計測をParent URLへ戻って確認します。
+K、Occ(K)、Res、V/P/A、Damping、Cooling、Degeneration、H再接続、R再割当、True-U再計測はParent URLで第三者が確認できます。
 
 ---
 導線: [公式派生物020トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
