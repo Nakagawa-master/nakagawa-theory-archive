@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-HUMAN-SUMMARY-JA-0021-0001
-- derivative_diff_id: DDIFF-20260813-DNCL-021-0001-0004
-- supersedes: DDIFF-20260813-DNCL-021-0001-0003
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-HUB-JA-0021-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-021-0000-0007
+- supersedes: DDIFF-20260813-DNCL-021-0000-0006
 
 ## 15秒説明
 この原典は、「問題を起こさない組織」より「問題が見えたときに速く直せる組織」を免疫のある系として読みます。逸脱をゼロにすることではなく、逸脱Dが差分として見え、責任Rと履歴Hが修復入口へ接続し、S = U × R × H を早く回復できることが中心です。
