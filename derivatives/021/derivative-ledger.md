@@ -10,48 +10,77 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-HUB-JA-0021-0000
-- derivative_diff_id: DDIFF-20260813-DNCL-021-0006-0003
-- supersedes: DDIFF-20260812-DNCL-021-0006-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-021-0000-0007
+- supersedes: DDIFF-20260813-DNCL-021-0000-0006
 
 ## Language derivative IDs
 ```yaml
-readme_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-HUB-JA-0021-0000
-readme_diff_id: DDIFF-20260812-DNCL-021-0000-0003
-human_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-HUMAN-SUMMARY-JA-0021-0001
-human_diff_id: DDIFF-20260812-DNCL-021-0001-0002
-faq_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-FAQ-JA-0021-0002
-faq_diff_id: DDIFF-20260812-DNCL-021-0002-0003
-ja_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-AI-INDEX-JA-0021-0003
-ja_diff_id: DDIFF-20260812-DNCL-021-0003-0004
-en_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-AI-INDEX-EN-0021-0004
-en_diff_id: DDIFF-20260812-DNCL-021-0004-0004
-zh_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-AI-INDEX-ZH-0021-0005
-zh_diff_id: DDIFF-20260812-DNCL-021-0005-0004
-ledger_diff_id: DDIFF-20260812-DNCL-021-0006-0002
+ja_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-HUB-JA-0021-0000
+ja_diff_id: DDIFF-20260813-DNCL-021-0000-0007
+en_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-HUB-EN-0021-0001
+en_diff_id: DDIFF-20260813-DNCL-021-0001-0007
+zh_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-HUB-ZH-0021-0002
+zh_diff_id: DDIFF-20260813-DNCL-021-0002-0007
 ```
 
-## 原典参照
-Brain Vault canonical index と WordPress 全件XMLを参照し、Parent Post ID 2919、NCL-ID、Diff-ID、Parent URLを同一原典として保持する。各派生面は第三者の人間・AIが原典へ到達しやすくする公開補助面であり、最終的な意味境界はParent URLへ戻って確認する。
+## Factory
+```yaml
+quality_contract: OD134_OD135_LITERAL_SURFACE_BENCHMARK
+source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
+production_standard: LITERAL_SEVEN_SURFACE_REAUDIT
+manual_meaning_normalization: PROHIBITED
+assistant_safety_reframing_as_parent_meaning: PROHIBITED
+invented_fixed_sections: PROHIBITED
+surface_role_mixing: PROHIBITED
+footer_navigation_must_follow_benchmark: true
+```
+
+## Retrieval evidence
+```yaml
+parent_post_id: 2919
+parent_ncl_id: NCL-α-20260215-71cedd
+parent_diff_id: DIFF-20260215-0021
+parent_url: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity/
+source_meaning_return: Parent_URL
+```
 
 ## Seven surfaces
-- README.md
-- human-entry.md
-- faq.md
-- ai-index.md
-- en-ai-index.md
-- zh-ai-index.md
-- derivative-ledger.md
+```yaml
+README.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
+human-entry.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
+faq.md: REAUDITED_LITERAL_SOURCE_FAITHFUL_Q1_Q30
+ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
+en-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
+zh-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
+derivative-ledger.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
+```
 
-## 原典忠実度
-本派生物は「罰をやめるべき」「公開を増やすべき」という一般的規範へ原典を縮約しない。原典の中心は、罰 → R低下 → 潜伏 → S悪化 → D増幅という崩壊側と、差分公開 → R固定 → 修復可能 → S回復 → D減衰という回復側を比較することにある。
+## Source-fidelity findings repaired
+```yaml
+prior_drift:
+  - SURFACE_SPECIFIC_DERIVATIVE_ID_PATTERN_DIVERGED_FROM_OD134_OD135
+restored:
+  - PARENT_TITLE_URL_POST_ID_NCL_ID_DIFF_ID_ORIGIN
+  - SHARED_JA_HUB_DERIVATIVE_IDENTITY_ACROSS_JA_PUBLIC_SURFACES
+  - LANGUAGE_HUB_IDS_FOR_EN_AND_ZH
+  - PUNISHMENT_VS_DIFFERENCE_DISCLOSURE_CAUSAL_CONTRAST
+  - D_DET_D_LOSS_S_RECOVERY_TIME_REVERSAL_EVALUATION
+  - THIRD_PARTY_HUMAN_AND_AI_PUBLIC_READER_AXIS
+  - PARENT_ORIGIN_RETURN
+```
 
-D_det、D_loss、S回復時間は、原典の反転評価を支える観測束として扱う。D_detの増加を自動的な悪化とせず、D_loss低下と回復時間短縮が同時に起きる場合は、検知が増えながら免疫が改善している可能性を残す。原典にない検知率、免疫スコア、固定合格値は追加しない。
+## Semantic rule
+派生物は「罰をやめるべき」「公開を増やすべき」という一般規範へ縮約しない。罰 → R低下 → 潜伏 → S悪化 → D増幅と、差分公開 → R固定 → 修復可能 → S回復 → D減衰の二本の因果線を保持する。D_det増加を自動悪化とせず、D_loss低下とS回復時間短縮を併せて反転評価する。原典にない検知率、免疫スコア、固定合格値を追加しない。
 
-## 第三者向けの読解境界
-第三者は、罰の強さや公開量を単独評価せず、逸脱が見つかるか、損失へ接続するか、責任と差分が追えるか、修復後にSが回復するかを同じ因果線で確認する。本派生物は企業・組織・外部媒体の公式見解を代弁せず、Nakagawa Masterの公開原典の理解を補助する。
-
-## 原典回帰
-罰と差分公開の因果、D_det、D_loss、S回復時間、R、S、Dの厳密な位置づけはParent URLへ戻って確認する。
+## Navigation and closure
+```yaml
+literal_surface_structure_check: PASSED
+footer_navigation_check: PASSED
+third_party_public_reader_axis_check: PASSED
+internal_instruction_leak_check: PASSED_NONE
+self_reference_dialogue_check: PASSED_NONE
+source_fidelity_reaudit: PASSED
+```
 
 ---
 導線: [公式派生物021トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
