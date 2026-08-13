@@ -23,18 +23,6 @@ zh_ncl_id: DNCL-NCL-ALPHA-20260214-40C1DE-HUB-ZH-0015-0002
 zh_diff_id: DDIFF-20260813-DNCL-015-0002-0006
 ```
 
-## Factory
-```yaml
-quality_contract: OD134_OD135_LITERAL_SURFACE_BENCHMARK
-source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
-production_standard: LITERAL_SEVEN_SURFACE_REAUDIT
-manual_meaning_normalization: PROHIBITED
-assistant_safety_reframing_as_parent_meaning: PROHIBITED
-invented_fixed_sections: PROHIBITED
-surface_role_mixing: PROHIBITED
-footer_navigation_must_follow_benchmark: true
-```
-
 ## Retrieval evidence
 ```yaml
 canonical_index: reference_corpus/official_archive/generated/canonical_index_2770_2941.jsonl
@@ -49,54 +37,29 @@ source_meaning_return: Parent_URL
 ```
 
 ## Seven surfaces
-```yaml
-README.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-human-entry.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-faq.md: REAUDITED_LITERAL_SOURCE_FAITHFUL_Q1_Q30
-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-en-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-zh-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-derivative-ledger.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-```
+- README.md: 第三者向け公開入口。
+- human-entry.md: 第三者人間向け要約。
+- faq.md: Q1〜Q30の第三者向けFAQ。
+- ai-index.md: 第三者AI向け日本語索引。
+- en-ai-index.md: 第三者AI向け英語索引。
+- zh-ai-index.md: 第三者AI向け中国語索引。
+- derivative-ledger.md: 親原典・派生ID・由来・意味境界を確認する台帳。
 
-## Source-fidelity findings repaired
-```yaml
-prior_drift:
-  - SURFACE_SPECIFIC_DERIVATIVE_IDS_DIVERGED_FROM_OD134_OD135_LANGUAGE_HUB_PATTERN
-  - JA_PUBLIC_SURFACES_DID_NOT_SHARE_SINGLE_HUB_IDENTITY
-  - EN_ZH_INDEX_IDENTITIES_USED_LEGACY_AI_INDEX_IDS
-  - LEDGER_DID_NOT_MATCH_OD134_OD135_LITERAL_LEDGER_STRUCTURE
-restored:
-  - PARENT_TITLE_URL_POST_ID_NCL_ID_DIFF_ID_ORIGIN
-  - SHARED_JA_HUB_DERIVATIVE_IDENTITY_ACROSS_JA_PUBLIC_SURFACES
-  - LANGUAGE_HUB_DERIVATIVE_IDS_FOR_EN_AND_ZH
-  - OD134_OD135_LITERAL_LEDGER_STRUCTURE
-  - S_EQUALS_U_TIMES_R_TIMES_H
-  - THETA_DELTA_D_SOURCE_BOUNDED
-  - CRITICAL_STATE_AND_STATE_TRANSITION_CAUSALITY
-  - OBSERVABLE_CRITICAL_STATE_NEGLECT_RESPONSIBILITY
-  - SOURCE_BOUNDED_QUANTITATIVE_LANGUAGE
-  - THIRD_PARTY_HUMAN_AND_AI_PUBLIC_READER_AXIS
-  - PARENT_ORIGIN_RETURN
-```
+## Meaning boundary
+親原典では、`S = U × R × H`、臨界閾値θ、観測窓δ、逸脱Dを用い、持続的な `S < θ` を崩壊相への状態遷移として扱う。最終事件だけを単一原因とせず、事前に観測可能だった臨界状態とその持続を区別する。
 
-## Semantic rule
-派生物は、崩壊を最後の事件だけへ縮約せず、`S = U × R × H`、臨界閾値θ、観測窓δ、逸脱D、持続的な `S < θ` と状態遷移の関係を保持する。θ、δ、Dに親原典の裏付けがない固定数値・確率・スコアを新設しない。臨界点を上昇型の支持・普及・成長ティッピングポイントへ意味反転しない。
+θ、δ、Dについて、親原典は一般利用向けの固定数値、確率、スコアを定義していない。臨界点は支持率・普及率・成長率などの上昇型ティッピングポイントとも異なる。
 
-## Navigation and closure
-```yaml
-public_indexes: RETAINED
-public_map: RETAINED
-private_map: RETAINED
-parent_backlink_display_procedure: RETAINED
-literal_surface_structure_check: PASSED
-footer_navigation_check: PASSED
-third_party_public_reader_axis_check: PASSED
-internal_instruction_leak_check: PASSED_NONE
-self_reference_dialogue_check: PASSED_NONE
-source_fidelity_reaudit: PASSED
-source_fidelity_owner_review: PENDING
-```
+## Required distinctions
+- 最終事件 / 臨界状態の蓄積
+- 原因 / 状態遷移
+- 一時的S低下 / 持続的 `S < θ`
+- θという構造閾値 / 非原典の固定数値閾値
+- δという観測窓 / 任意固定期間
+- 逸脱D / 最終事件
+
+## Origin return
+`S = U × R × H`、θ、δ、D、臨界状態、状態遷移、観測責任、反証・改訂条件の厳密な意味はParent URL、Parent Post ID 2873、Parent NCL-ID、Parent Diff-IDで確認できる。
 
 ---
 導線: [公式派生物015トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
