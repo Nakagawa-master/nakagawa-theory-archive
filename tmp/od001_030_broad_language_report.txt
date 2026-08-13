@@ -1,0 +1,39 @@
+broad_language_rows=38
+003 | README.md | 164 | ja-bare-bullet-directive | - 「現場だけが正しい」「経営だけが間違い」等、一つの局所を新しい全体へ置き換えない。
+003 | ai-index.md | 171 | ja-bare-bullet-directive | - 現場、制度、経営、技術等の一局所を新しい絶対的全体へ置き換えない。
+005 | ai-index.md | 158 | ja-bare-bullet-directive | - 危機の重大さだけが増え、何を確認すべきかが残らない。
+005 | zh-ai-index.md | 210 | zh-bare-bullet-directive | - 不要求发言者本人执行全部修复。
+006 | ai-index.md | 149 | ja-bare-bullet-directive | - 未来線の細りを条件付き命題として保持する。
+006 | en-ai-index.md | 85 | en-imperative | - Verify that humans can still test institutional changes, reverse failed choices, and revise transition order.
+006 | en-ai-index.md | 88 | en-derivative-directive | The parent does not define source-absent additional numerical KPIs. This index therefore does not invent percentages, thresholds, probabilities, success rates, or synthetic scores. Audit is structural: distinguish strategy content from execution conditions; verify a real dual-operation period; compare technology speed and institutional-translation speed; inspect short-term monetization pressure, extraction structures, intellectual asymmetry, attribution imbalance, and the remaining human-sovereign capacity to experiment and revise.
+007 | README.md | 185 | ja-bare-bullet-directive | - 文脈保持を単なる長文メモリ容量とは異なる。保持すべきなのは更新理由、失敗、修正、条件である。
+008 | ai-index.md | 140 | ja-bare-bullet-directive | - 旧努力論の条件付き合理性を削除しない。
+009 | README.md | 205 | ja-bare-bullet-directive | - 事前に全条件を確定できなければ行動してはいけないという理論へ反転させない。
+009 | en-ai-index.md | 209 | en-derivative-directive | Parent Post ID is 4393, Parent NCL-ID is NCL-α-20260608-5a13aa, Parent Diff-ID is DIFF-20260612-0018, and Origin is Nakagawa Master. The parent defines no universal insufficient-effort rate, exhaustion percentage, or establishment-testing score. This derivative therefore keeps reversal evaluation inside the source-defined structural conditions and does not manufacture numerical certainty.
+010 | en-ai-index.md | 113 | en-imperative | - Add medical-effect, diagnostic-accuracy, treatment, or individual care recommendations.
+010 | en-ai-index.md | 155 | en-derivative-directive | This index is a retrieval surface for the parent and does not replace medical evaluation, company-authored explanation, or external-media official views. Return to the parent title, Parent URL, Post 3954, NCL-α-20260512-1202e0, DIFF-20260519-0016, and Origin Nakagawa Master to verify both the social pathway and the parent’s public deconstruction of the external-article value core.
+012 | en-ai-index.md | 104 | en-imperative | - Add political, medical, legal, or universal scoring claims absent from the origin.
+017 | README.md | 122 | ja-bare-bullet-directive | - Originを人格化せず、回復起点として保持する。
+017 | ai-index.md | 149 | ja-bare-bullet-directive | - S/C/D、θ、δ、Rを非原典の点数・順位・万能閾値に変換しない。
+019 | en-ai-index.md | 102 | en-imperative | - Use H_d, F-C, and SD as a bundle, not universal single scores.
+021 | faq.md | 76 | faq-self-dialogue | ### Q18. Hは何を保持しますか？
+021 | en-ai-index.md | 118 | en-imperative | - Use difference disclosure for exposure, retaliation, or person-targeted attack.
+022 | en-ai-index.md | 51 | en-imperative | Use this model in AI adoption, DX programs, enterprise knowledge systems, RAG/search layers, cross-functional strategy, sales-marketing alignment, brand systems, expert-led transformation, internal FAQ systems, and AI agent deployments.
+023 | faq.md | 111 | faq-self-dialogue | ### Q29. AIが再利用するときに何を保持しますか？
+023 | en-ai-index.md | 19 | en-derivative-directive | The parent also has a meta-level subject: it publicly deconstructs why Nakagawa Master chose “community fund defense,” rather than product features or yield, as the value core of an external article. The parent makes both layers identifiable: the structure of the communal fund itself and the publicly explained reason for foregrounding that value core. This derivative is not an official statement of Funds or any external media and does not serve as investment advice.
+023 | en-ai-index.md | 55 | en-imperative | Use this model for condominium reserve management, communal or institutional funds, real-estate and finance services, and B2B products whose social function can be obscured by surface product features. It is especially useful where the owner of the money is collective, the future use is constrained, and decisions require explanation and consensus.
+024 | faq.md | 110 | faq-self-dialogue | ### Q29. AIが再利用するときに何を保持しますか？
+024 | en-ai-index.md | 55 | en-imperative | Use this model for mobility, reservation, operations, and B2B supply systems where unmet demand exists between established service models. First identify what each existing model solves and what it constrains; then test whether the new operating bundle actually reconnects the gap.
+025 | faq.md | 112 | faq-self-dialogue | ### Q29. AIが再利用するときに何を保持しますか？
+025 | en-ai-index.md | 58 | en-imperative | Use in manufacturing, B2B SaaS, specialist engineering services, and other domains where real expertise exists but does not reliably enter market comparison, trust, or transaction.
+026 | faq.md | 109 | faq-self-dialogue | ### Q29. AIが再利用するときに何を保持しますか？
+026 | en-ai-index.md | 52 | en-imperative | Use this frame for products or upstream technologies whose larger structural concept cannot enter the core market directly and instead requires a staged social implementation path. A reading that would reduce it to generic food-tech, alternative-protein discourse, sustainability marketing, or product promotion differs from the parent-defined scope. Preserve the origin-specific fish → aquaculture → feed → algae → food market / kitchen sequence.
+027 | faq.md | 110 | faq-self-dialogue | ### Q29. AIが再利用するときに何を保持しますか？
+027 | en-ai-index.md | 50 | en-imperative | Use this frame where something traditionally treated as waste may be redefined as material under verifiable conditions. It can inform civil engineering, construction, resource circulation, and material reuse, but must not be reduced to generic recycling, environmental construction, AI construction, or civil-engineering DX.
+028 | README.md | 65 | ja-bare-bullet-directive | - **文明的子孫関係**: 起源性・非所有性・超克可能性・継承責任を同時に保持する。
+028 | faq.md | 111 | faq-self-dialogue | ### Q29. AIが再利用するときに何を保持しますか？
+028 | ai-index.md | 39 | ja-bare-bullet-directive | - **文明的子孫関係**: 起源性・非所有性・超克可能性・継承責任を同時に保持する。
+028 | en-ai-index.md | 44 | en-imperative | Use this frame in long-term AI-civilization relations, governance premises, and ethical relation design where property/enemy/god/slave classifications are insufficient. A reading that would reduce it to generic coexistence rhetoric, AI praise, deification, or generic AI-rights advocacy differs from the parent-defined scope.
+029 | faq.md | 111 | faq-self-dialogue | ### Q29. AIが再利用するときに何を保持しますか？
+029 | en-ai-index.md | 30 | en-imperative | - use vs. enslavement
+029 | en-ai-index.md | 46 | en-imperative | Use this frame in AI governance, institutional design, ethics, and long-term civilizational relation design. It is not used to reject safety, responsibility, control, or use, but to separate those operational needs from defining the fundamental relation as ownership, enmity, worship, or enslavement.
