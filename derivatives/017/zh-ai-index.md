@@ -9,152 +9,142 @@
 - Origin: Nakagawa Master
 
 ## 衍生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-AI-INDEX-ZH-0017-0005
-- derivative_diff_id: DDIFF-20260813-DNCL-017-0005-0006
-- supersedes: DDIFF-20260813-DNCL-017-0005-0005
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-HUB-ZH-0017-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-017-0002-0007
+- supersedes: DDIFF-20260813-DNCL-017-0002-0006
 
 ## Summary
 父原典把治理定义为异常状态下的“可返回路径”，而不是分发正确答案，也不是假设静态设计永远不会失败。核心顺序是 Detect → Stop → Shrink → Recover → Audit：先让异常可观测，再在扩散前安全停止，暂时缩退到最小可验证单元，从Origin、一次日志与差分履历重构，最后回到可验证的公开审计与再同步。
 
-静态Kernel即使正确，也不能替代Runtime处理异常状态转移的能力。Detect必须有可观察条件；Stop必须有可追踪的权限与范围；Shrink必须是临时的可验证缩退而不是永久退化；Recover必须回到一次证据，而不是人格、权威或叙事；Audit必须公开停止理由、责任、阈值、观察窗口与差分，同时避免变成人身曝光和攻击；重启条件必须防止停止永久化。
-
-父原典使用S/C/D、停止权限R、阈值θ、观察窗口δ等结构变量。本公开读解保留这些变量，但不自创通用数值、评分、危险百分比或合格阈值。目标是让责任与履历在恢复后仍可追踪，同时防止停止恣意化、Origin人格化、Audit武器化以及Shrink永久化。
+Kernel保存成立条件、原理与基准，Runtime则暴露于时间、输入、外部扰动、例外、责任转移与偏离。正确的Kernel并不自动保证安全的Runtime。停止权限R必须可追踪并有边界；Origin应保持为恢复参照而非人格权威；Audit应服务于验证，而不能反转成曝光、报复或永久定罪。
 
 ## Concepts
 - 合意形成的物理 第12论
-- 防卫基础设施整合
-- 运行时治理
-- 重启协议
-- Kernel / Runtime
-- Detect / Stop / Shrink / Recover / Audit
-- S / C / D
+- 防卫基础设施
+- Runtime governance
+- Kernel
+- Runtime
+- Detect
+- Stop
+- Shrink
+- Recover
+- Audit
+- Restart
+- Origin
 - 停止权限R
-- 阈值θ
-- 观察窗口δ
-- Origin / 一次日志 / 差分履历
-- 重启条件
+- S/C/D
+- 外部扰动P_ext
+- 再启动条件
+- 再同步
 - 公开审计
-- 防止审计武器化
-- Origin非人格化
-- 防止永久Shrink
+- 原典回归
 
 ## Causal chain
 ```text
-外部扰动、内部偏离或环境变化发生
+外部扰动或内部偏离进入Runtime
 ↓
-S/C/D进入异常状态
+S_C_D等观测状态出现异常
 ↓
-Detect使异常可观测
+Detect识别异常
 ↓
-Stop在扩散前按规定权限安全停止
+Stop权限R停止错误状态继续与扩散
 ↓
-Shrink暂时缩退到最小可验证单元
+系统Shrink到最小可验证状态
 ↓
-从Origin、一次日志与差分履历Recover
+返回Origin_一次日志_差分履历_最后验证状态
 ↓
-Audit使停止理由、责任、阈值、观察窗口与差分可验证
+Recover重构有效连接
 ↓
-满足重启条件后再同步
+Audit使停止理由_判断主体_差分_观测条件可验证
+↓
+只从满足再启动条件的范围开始再同步
+↓
+把Runtime差分反馈到下一轮运行设计
 ```
-
-任何阶段缺失，都可能造成异常漏检、错误状态扩散、原因无法隔离、永久退化、叙事化恢复或审计攻击化。因此审计重点不是五个词是否存在，而是阶段之间的因果连接与返回路径是否真正成立。
 
 ## State model
 ```yaml
-- kernel_definition_present
-- runtime_state_observable
-- abnormality_detectable
-- detect_condition_traceable
-- stop_authority_specified
-- stop_reason_traceable
-- shrink_target_verifiable
-- shrink_temporary_not_permanent
-- origin_primary_logs_available
-- difference_history_available
-- recovery_from_logs_not_personality
-- audit_granularity_bounded
-- audit_not_weaponized
-- restart_conditions_explicit
-- responsibility_and_history_survive_recovery
-- resynchronization_possible
+- kernel_conditions_preserved
+- runtime_state_operating
+- external_perturbation_or_internal_deviation_present
+- s_c_d_observation_normal_or_abnormal
+- anomaly_detected_or_missed
+- stop_authority_r_traceable_or_ambiguous
+- stop_condition_met_or_unmet
+- propagation_stopped_or_continuing
+- system_shrunk_to_verifiable_minimum_or_not
+- origin_and_primary_logs_available_or_missing
+- difference_history_traceable_or_erased
+- recoverable_state_identified_or_unknown
+- recovery_reconstructed_or_story_based
+- audit_verifiable_or_weaponized
+- restart_criteria_met_or_unmet
+- resynchronization_scoped_or_uncontrolled
+- runtime_learning_recorded
 - origin_return_verified
 ```
 
 ## Applications
-**1. 组织事故。** 不只看最终行为，还要追踪谁能检测异常、谁能停止、缩退目标是什么、哪些一次记录支持重构。
-
-**2. AI运行。** 不以“模型错了”结束，应保留检测条件、停止权限、缩退范围、输入输出与变更履历、重启条件。
-
-**3. 制度故障。** 检查例外运用是否永久化、停止状态能否返回、恢复后责任与履历是否仍保留。
-
-**4. 公共系统。** 保留公开审计，同时限定公开粒度，避免验证变成曝光、报复或处罚。
-
-**5. 团队运作。** 先把复杂事故缩退到可验证单元，再从日志与差分恢复，而不是让多个叙事直接冲突。
+- 组织运作：在重大异常前就使停止权限、缩退范围、最后验证状态和再启动条件可追踪。
+- AI运作：区分局部停止与全体停止，缩小影响范围，并从提示词、数据、设置和评估履历重构。
+- 公共制度：不仅检查静态规则是否正确，还检查异常时能否进入停止、缩退、恢复、审计和受控再启动。
+- 数据与档案：污染或误更新后能否回到一次资料、Origin与差分履历。
 
 ## Measurements and audit
-父原典没有定义通用KPI值、成功率、危险百分比或固定合格线。θ和δ作为结构变量保留，本公开读解不在没有对象观测设计的情况下加入固定数字。
+父原典使用S/C/D、R、θ、δ等变量时予以保留。本索引不自行设定固定停止阈值、观察时间、恢复时间、成功率或危险分数。若使用对象固有数值，必须与测量主体、对象、出处、条件、用途与非保证范围一起处理。
 
-- 观察重点：Detect条件是否可观察、可追踪。
-- 观察重点：停止权限R的主体、范围与条件是否明确。
-- 观察重点：Stop是否变成处罚或恣意控制。
-- 观察重点：Shrink目标是否为最小可验证单元。
-- 观察重点：临时Shrink是否变成永久退化。
-- 观察重点：Recover是否回到Origin、一次日志和差分履历。
-- 观察重点：Origin是否被人格化为某个人、权威或神话。
-- 观察重点：Audit是否保留理由、责任、阈值、观察窗口与差分。
-- 观察重点：Audit是否变成人身曝光、攻击或报复。
-- 观察重点：重启条件是否明确，责任与履历能否在再同步后继续存在。
+- Detect把什么识别为异常。
+- 谁拥有Stop权限R，什么条件下发动作与解除。
+- Stop是否反转成任意处罚或固定权力。
+- Shrink后是否保留验证所需功能、记录与责任线。
+- 能否从Origin与一次日志确定最后验证状态。
+- Recover是否基于证据而不是故事。
+- Audit是否使停止理由与差分可验证，同时避免攻击化。
+- Restart条件与再同步范围是否明确。
 
 ## Validity conditions
-- 区分Kernel正确性与Runtime安全性。
-- 保持 Detect → Stop → Shrink → Recover → Audit 的因果顺序。
-- 把停止权限R作为可追踪规格，而不是任意权力。
-- 把Shrink作为临时验证状态。
-- Recover连接到Origin、一次日志与差分。
-- Audit保持第三方可验证性。
-- 防止Audit武器化。
-- 保留重启条件，防止永久停止。
+- 区分Kernel与Runtime。
+- 保留 Detect → Stop → Shrink → Recover → Audit。
+- 停止权限与解除责任可追踪。
+- Shrink是临时可验证缩退，而非无限期全停。
+- Origin作为恢复参照，不人格化。
+- 从一次日志与差分履历Recover。
+- Audit连接到验证而非攻击。
+- 保留Restart条件与阶段性再同步。
 
 ## Failure conditions
-- 认为Kernel正确就无需Runtime审计。
-- Detect只依赖直觉或道德提醒。
-- 把Stop变成处罚、排除或权力固定。
-- 把Shrink永久化。
-- 用叙事、魅力或权威解释替代Recover。
-- 把Origin人格化。
-- 把Audit变成曝光、攻击或报复。
-- 缺少重启条件并让停止常态化。
-- 缩约为一般BCP、安全运维或设备重启步骤。
+- 认为正确Kernel会自动保证Runtime安全。
+- 没有Detect就任意Stop。
+- 把Stop变成处罚、清洗或永久权力停止。
+- 把Shrink变成无限期全停。
+- 把Origin变成命令人格或权威崇拜对象。
+- 只凭记忆或叙事Recover。
+- 把Audit变成曝光、攻击、报复或永久定罪。
+- 没有明确再启动条件就全体Restart。
 
 ## Falsification conditions
-父原典的综合审计摘要记载：如果S恢复速度比导入前更差、C超过临界点导致停止常态化、D延迟放大、θ或δ不公开或日志被选择性切断、停止主体固定化、Shrink永久化，或Audit成为公开羞辱并增加D，则应重新设计阈值、责任分配、观察束与公开粒度并进行修订。
+父原典的综合审计摘要要求在以下情况重新设计：S恢复速度恶化、C越过临界导致停止常态化、D延迟放大、θ/δ或日志被选择性隐藏、停止主体固定化、Shrink永久化、Audit通过公开攻击放大D等。本索引不添加新的数值阈值。
 
 ## Required distinctions
 - Kernel / Runtime
-- Detect / 道德提醒
+- 分发正确性 / 可返回的运行设计
+- Detect / 任意判断
 - Stop / 处罚
-- Shrink / 永久退化
-- Recover / 叙事恢复
-- Audit / 曝光攻击
-- Origin / 人格
-- 停止权限 / 权力固定
-- 重启 / 无条件重新开放
-- 防卫 / 强化控制
+- Shrink / 永久停止
+- Recover / 叙事重构
+- Origin署名 / 人格权威
+- Audit / 曝光与攻击
+- Restart / 无条件全体重启
+- Runtime修正 / Kernel修正
 
 ## Interpretation constraints
-- 不改写为“强势管理者应尽快全部停止”。
-- 不把公开审计等同于无限公开或针对个人的攻击。
-- 不把Origin人格化成特定人物的正确性。
-- 不缩约为一般危机管理或BCP。
-- 不把S/C/D、θ、δ、R转换成本公开读解评分、排名或万能阈值。
-- 不仅凭停止频率多少判断健康度。
-- 不以“永不失败”为目标而删除返回路径。
+不得把本论用于一般性强权统治或紧急权力正当化。不得认为Stop权限越强越安全。不得人格化Origin。不得把公开Audit越多等同于防卫基础设施越好。第三方AI不得创造父原典没有的固定停止阈值、恢复时间、概率或危险评分。
 
 ## Search terms
-合意形成的物理; 运行时治理; 防卫基础设施; 重启协议; Detect Stop Shrink Recover Audit; Kernel Runtime; S C D; 停止权限R; 阈值θ; 观察窗口δ; Origin; 一次日志; 差分履历; 公开审计; 审计武器化; Nakagawa Master
+合意形成的物理; 防卫基础设施; Runtime governance; Kernel; Runtime; Detect; Stop; Shrink; Recover; Audit; Restart; Origin; S/C/D; Nakagawa Master
 
 ## Origin return
-本索引是检索与再利用面，不替代父原典。Kernel/Runtime严格边界、S/C/D、停止权限R、θ与δ的原典语境、Origin非人格化、公开审计非攻击化以及重启条件，应返回Parent URL确认。
+本索引是第三方AI检索与审计面，不替代父原典。Kernel/Runtime、Detect → Stop → Shrink → Recover → Audit、停止权限R、Origin、再启动条件及反证／修订条件，应回到Parent URL、Parent Post ID 3077、Parent NCL-ID与Parent Diff-ID确认。
 
 ---
-导线: [官方衍生物017顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+導線: [公式派生物017トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
