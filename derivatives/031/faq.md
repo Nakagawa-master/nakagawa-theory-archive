@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260623-CFAA58-HUB-JA-0031-0000
-- derivative_diff_id: DDIFF-20260813-DNCL-031-0000-0003
-- supersedes: DDIFF-20260813-DNCL-031-0000-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-031-0000-0004
+- supersedes: DDIFF-20260813-DNCL-031-0000-0003
 
 ## 初心者向け｜Q1〜Q10
 ### Q1. この原典はAshiraseの製品紹介ですか？
