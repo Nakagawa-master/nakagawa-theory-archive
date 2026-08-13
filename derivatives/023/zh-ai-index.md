@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## Derivative identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-AI-INDEX-ZH-0023-0005
-- derivative_diff_id: DDIFF-20260813-DNCL-023-0005-0005
-- supersedes: DDIFF-20260813-DNCL-023-0005-0004
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-HUB-ZH-0023-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-023-0002-0010
+- supersedes: DDIFF-20260813-DNCL-023-0005-0005
 
 ## Summary
 父原典把修缮储备金理解为具有明确未来用途的共同体资金，而不是个人可自由追求收益最大化的投资资本。其核心功能是维持未来修缮执行能力、共同生活基础、住民合意与可说明性。中心问题不是追求最高收益：即使名义余额没有减少，建筑费、人工费、材料费和修缮费上涨也可能使相同资金无法完成原计划中的修缮；与此同时，共同体资金又不能像个人余裕资金一样自由承担高风险，因为本金、必要时流动性、制度适合、说明责任和共同决策都会限制可接受的运用方式。
