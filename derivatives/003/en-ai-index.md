@@ -154,9 +154,7 @@ The reversal test remains source-bounded: if local correctness is accompanied by
 Specialization, local expertise, and division of labor therefore do not themselves satisfy the theory's failure mode. The relevant question is whether local correctness is mistaken for whole establishment while connection remains unjudged.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): AI照応型確認の整合）により、局所的正しさが全体成立を保証しているかを継続的に検証・見直す。反証条件として、L1〜L6の縦因果判定を行わなくても、制度・経営・教育・言論・AI出力・現場判断が長期的に安定し、現場負荷、責任転嫁、制度疲労、例外処理、履歴喪失、意味軸の細りが観測窓δ期間において反復確認されない場合、または局所理解だけで理解可能性・責任特定可能性・履歴公開度が安定維持される現象Mが広範に確認された場合、本論の仮説Aは棄却または改訂される。
+The parent origin's integrated audit summary states: If institutions, management, education, discourse, AI outputs, and frontline decisions remain stable without L1-L6 vertical-causal judgment, with no recurring frontline burden, responsibility transfer, institutional fatigue, exception handling, history loss, or thinning of the meaning axis during window δ, or if local understanding alone stably preserves comprehensibility, responsibility traceability, and history disclosure across broad phenomenon M, hypothesis A is rejected or revised.
 
 ## Required distinctions
 - local correctness / whole establishment

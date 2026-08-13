@@ -73,9 +73,7 @@ It also fails if intermediary metrics are treated as upstream outcomes—for exa
 Presenting the derivative as an AlgaleX or external-media official statement, or preserving only the subject structure while dropping the parent’s public deconstruction of why “social implementation entry” was foregrounded in the external article, is also failure.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): 公開情報と矛盾する記述、AlgaleX・外部媒体・polyphonyの公式見解に見える表現、公開記事の転載・要約化、または観測窓δ期間内に「珍しい食材紹介」「実食レビュー」「サステナブル食品紹介」へ読解が回収される現象Mが確認された場合は、仮説Aを棄却・改訂。
+The parent origin's integrated audit summary states: If statements conflict with public information, appear to represent the official view of the target company, external media, or an affiliated organization, reproduce or summarize an external article, or if reader understanding collapses during window δ into a novel-food profile, tasting review, or sustainable-food profile, hypothesis A is rejected or revised.
 
 ## Required distinctions
 - delicious algae vs. social implementation entry

@@ -119,9 +119,7 @@ knowledge is divided into horizontal domains
 - Lose parent identity or origin traceability.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): 指標値が閾値 θ を下回る／上回る、または観測窓 δ において構造的乖離 M が確認された場合に、仮説 A（現行仕様）を棄却・改訂する。
+The parent origin's integrated audit summary states: If an indicator crosses its threshold θ, or structural divergence M is observed within observation window δ, hypothesis A (the current specification) is rejected or revised.
 
 ## Required distinctions
 - horizontal domain / vertical depth

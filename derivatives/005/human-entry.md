@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260511-E243BE-HUMAN-SUMMARY-JA-0001
-- derivative_diff_id: DDIFF-20260812-DNCL-005-0001-0005
-- supersedes: DDIFF-20260707-DNCL-005-0001-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-005-0001-0006
+- supersedes: DDIFF-20260812-DNCL-005-0001-0005
 
 ## 15秒説明
 AKI-001は「問題を言うな」という理論ではありません。問題提起が社会を修復へ動かすために、危機の強さだけではなく、**穴の位置・原因・放置主体・修復主体・代償・実装の初手・反証条件**へ開かれているかを見る理論です。

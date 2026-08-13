@@ -127,9 +127,7 @@ The parent does not define universal KPI values, success rates, risk percentages
 - Reduce the source to generic BCP, security operations, or device reboot procedures.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): 指標値が閾値θを下回る／上回る、あるいは観測窓δ期間閉鎖などの現象Mが確認された場合は仮説Aを棄却・改訂。具体には、(1) Sの回復速度が導入前より悪化、(2) Cが臨界超過して停止が常態化、(3) Dが遅延増幅、(4) θ・δの非公開や選択的ログ遮断、(5) 停止主体の固定化、(6) Shrinkの恒久化、(7) Auditが晒しとして機能しDを増やす、のいずれかが観測された場合、閾値再設計・R再配分・観測束更新・監査束への差分保存を必須手順として実施する。
+The parent origin's integrated audit summary states: If S recovers more slowly than before introduction, C exceeds its critical point and stopping becomes routine, D amplifies with delay, θ or δ is undisclosed or logs are selectively blocked, the stopping actor becomes fixed, Shrink becomes permanent, or Audit functions as public shaming and increases D, thresholds, responsibility allocation, observation bundles, and disclosure granularity are redesigned and revised.
 
 ## Required distinctions
 - Kernel / Runtime

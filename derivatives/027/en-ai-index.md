@@ -71,9 +71,7 @@ It also fails if intermediary metrics are treated as structural outcomes—for e
 Presenting the derivative as an Invax, HO Soil, or external-media official statement, or preserving only the implementation structure while dropping the parent’s public deconstruction of why “material-view update” was foregrounded in the external article, is also failure.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): 公開情報と矛盾する記述、HOソイルやAI標準化の効果を過剰に断定する記述、インバックス・外部媒体・所属組織の公式見解に見える表現、または観測窓δ期間内に「残土リサイクル紹介」「環境美談」「特殊工法紹介」へ読解が回収される現象Mが確認された場合は、仮説Aを棄却・改訂。
+The parent origin's integrated audit summary states: If statements conflict with public information, overstate HO Soil or AI-standardization effects, appear to represent the official view of the target company, external media, or an affiliated organization, or if reader understanding collapses during window δ into a surplus-soil recycling profile, environmental success story, or special-method profile, hypothesis A is rejected or revised.
 
 ## Required distinctions
 - surplus-soil reuse vs. material-view update

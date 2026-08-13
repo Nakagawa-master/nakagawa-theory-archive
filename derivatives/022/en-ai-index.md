@@ -80,9 +80,7 @@ Production speed, document count, AI usage rate, and stylistic consistency are r
 - Treating higher speed, document volume, or usage as proof of stronger business understanding.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): の運用）で検証・見直しを行う。反証条件として、企業が構造を図解や整理ではなく生成原理として扱い、専門家同士の判断衝突を連結層で再判定し、AI生成物の保存・再利用前に事業価値、顧客判断、社内認識、情報資産、価値関数の整合性を監査している場合、本記事の仮説A「連結責任なきAI活用は構造把握ごっこ化し、事業自己認識を失わせる」は棄却または適用外とする。また、観測窓δ期間において、AI活用量の増加と同時に顧客判断、営業成立、部門間照応、意思決定精度、現場実装力が改善し、かつAI性能への責任転嫁ではなく人間側の参照構造が継続検証されている場合も、仮説Aを改訂対象とする。
+The parent origin's integrated audit summary states: If a company treats structure as a generative principle, resolves expert conflicts at the connective layer, and audits alignment among business value, customer judgment, organizational recognition, information assets, and value functions before AI outputs are stored or reused, hypothesis A is rejected or treated as inapplicable. It is also revised if, during window δ, greater AI use coincides with improved customer judgment, sales establishment, cross-department correspondence, decision accuracy, and frontline implementation while the human reference structure remains under continuous verification.
 
 ## Required distinctions
 - AI use ≠ connective responsibility

@@ -127,9 +127,7 @@ The parent defines no universal insufficient-effort rate, fatigue rate, trust ra
 - Exhaustion, silence, or learning shutdown appears while targets, assumptions, and conditions remain unchanged.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): 因果線、成立条件、検証条件が明示され、現場に検証権限と修正条件が与えられ、成果不成立時に努力量ではなく仮説・資源・時間・主体条件が検証される場合は、仮説Aを棄却・改訂。
+The parent origin's integrated audit summary states: If causal lines, validity conditions, and verification conditions are explicit, frontline actors have verification authority and revision conditions, and failed outcomes trigger examination of hypotheses, resources, time, and actor conditions rather than effort volume, hypothesis A is rejected or revised.
 
 ## Required distinctions
 - target value / future definition

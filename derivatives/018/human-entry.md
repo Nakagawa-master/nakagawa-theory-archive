@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260222-482BDB-HUMAN-SUMMARY-JA-0018-0001
-- derivative_diff_id: DDIFF-20260812-DNCL-018-0001-0002
-- supersedes: DDIFF-20260707-DNCL-018-0001-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-018-0001-0003
+- supersedes: DDIFF-20260812-DNCL-018-0001-0002
 
 ## 15秒説明
 この原典は、社会が揺れる理由を「誰が悪いか」「どの情報が正しいか」ではなく、合意安定度 S=U×R×H に外部入力 P_ext が作用した結果として読む論です。人は混乱が起きると、すぐに敵、善悪、思想、嘘、扇動、正義、悪意を探します。しかし中川マスターは、その入力がU/R/Hのどこを揺らし、Sの時間変化dS/dtへ何が起きたかを先に見ます。

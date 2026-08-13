@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260223-E7E1C4-HUMAN-SUMMARY-JA-0019-0001
-- derivative_diff_id: DDIFF-20260812-DNCL-019-0001-0002
-- supersedes: DDIFF-20260707-DNCL-019-0001-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-019-0001-0003
+- supersedes: DDIFF-20260812-DNCL-019-0001-0002
 
 ## 15秒説明
 この原典は、「分かった気がする」こと自体が、合意形成を壊す危険相になり得ることを定義した論です。嘘かどうか以前に、検証経路Hが切れたまま納得感Uだけが上がり、誰が検証責任Rを持つかも曖昧になる状態をH-Disconnectとして扱います。

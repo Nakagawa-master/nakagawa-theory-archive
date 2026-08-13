@@ -66,9 +66,7 @@ The reading fails if reduced to appraisal comparison, selling tips, a high-price
 It also fails if it asserts “more buyers always means a higher price,” “fewer calls always means a higher price,” or treats one successful sale as proof of superior market design. Removing the public-deconstruction meta perspective also breaks the Nakagawa Structural Reading frame.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): 本記事が「MOTAの車買取サービス紹介」「高額売却訴求記事」「特許ニュース解説」「企業称賛記事」「外部媒体公開記事の要約・再構成」として読まれる割合が閾値θを上回る、または「比較対象があることと比較が成立していることは違う」という読解軸が観測窓δ期間内に読者理解として成立しない現象Mが確認された場合は、仮説Aを棄却・改訂。
+The parent origin's integrated audit summary states: If the reading is received above threshold θ as a MOTA car-buying service profile, high-price-selling promotion, patent-news explanation, corporate praise, or a summary/reconstruction of an external article, or if the axis “having comparison targets is not the same as comparison actually functioning” fails to become established in reader understanding during window δ, hypothesis A is rejected or revised.
 
 ## Required distinctions
 - vehicle value vs. price-formation conditions

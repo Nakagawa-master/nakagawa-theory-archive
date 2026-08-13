@@ -11,7 +11,6 @@
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-HUMAN-SUMMARY-JA-0017-0001
 - derivative_diff_id: DDIFF-20260813-DNCL-017-0001-0002
-- supersedes: DDIFF-20260707-DNCL-017-0001-0001
 
 ## 15秒説明
 この原典は、統治を「正しさを配ること」ではなく、「異常が起きたときに戻れる経路を仕様化すること」と捉えます。静的なルールやKernelが正しくても、Runtimeで外部摂動や逸脱が起きたときに検知・停止・縮退・回復・監査できなければ、誤状態は拡散します。

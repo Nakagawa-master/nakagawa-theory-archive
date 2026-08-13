@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260225-1F258D-HUMAN-SUMMARY-JA-0020-0001
-- derivative_diff_id: DDIFF-20260812-DNCL-020-0001-0004
-- supersedes: DDIFF-20260710-DNCL-020-0001-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-020-0001-0005
+- supersedes: DDIFF-20260812-DNCL-020-0001-0004
 
 ## 15秒説明
 この親原典は、プロパガンダや扇動を「嘘か本当か」「善か悪か」だけで判定する論ではありません。集団が同時に保持できる認知帯域Kが、一つの話題、一つの感情、一つの敵、一つの物語、一つの反応速度によって占有され、検証・責任・履歴への参照が働かなくなる共振現象として扱います。

@@ -94,9 +94,7 @@ Counts are reversal-evaluable. More inquiries can mean worse connection if most 
 - preserving only the market-connection structure while dropping the parent’s public deconstruction of why that value core was foregrounded in the external article.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): 公開情報と矛盾する記述、Millyを公式見解として代弁しているように見える表現、公開記事の転載・要約化、または観測窓δ期間内に「AI機能紹介」に読解が回収される現象Mが確認された場合は、仮説Aを棄却・改訂。
+The parent origin's integrated audit summary states: If statements conflict with public information, appear to speak for the target company as its official view, reproduce or summarize an external article, or if reader understanding collapses during window δ into an AI-feature profile, hypothesis A is rejected or revised.
 
 ## Required distinctions
 - sales AI ≠ market-connection mechanism

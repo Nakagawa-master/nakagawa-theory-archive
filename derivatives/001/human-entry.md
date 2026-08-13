@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-JA-0001-0000
-- derivative_diff_id: DDIFF-20260812-DNCL-001-0000-0004
-- supersedes: DDIFF-20260812-DNCL-001-0000-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-001-0000-0005
+- supersedes: DDIFF-20260812-DNCL-001-0000-0004
 
 ## 15秒説明
 Nakagawa OS L1-L7は、世界を営業・経営・AIなどの分野別ではなく、L1現象からL7最上位構造・価値関数までの「抽象深度」で読む七層仕様です。原典は、この七層を人間・社会・文明・AIを共通座標で扱う最小完全セットと位置づけ、深度の違う問題・原因・対策を誤接続する構造的ノイズを減らすための正規OSとして提示します。

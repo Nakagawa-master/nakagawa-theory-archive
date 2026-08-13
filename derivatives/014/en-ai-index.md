@@ -123,9 +123,7 @@ observation_must_return_to_U_R_H
 - The equation is inverted into a surveillance or punishment mechanism.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): を提供し、一次ログ（同一ログ／差分ログ／決定ノード記録）の形式を要求することで運用側の説明負荷と透明負荷を増やす。一方で運用側は、現場制約（認知帯域K、時間コストC、政治圧、権力距離）によりU/R/Hの実装帯域を規定し、設計側の定義が「現場で測れる形」に落ちているかを逆に検証する。両者は、観測可能性を共有するほど予測誤差分散Eが縮み、逸脱発生率D（改竄・握り潰し・暴露）の実害を下げる方向に同調するが、公開が攻撃化した場合はHが逆機能しDが跳ねるため、監査束の設計（差分の粒度・公開範囲・保護手続）が相互依存となる。 再合意─条件Z（監査周期・三原理T/S/R・公開監査束の整合）で検証・見直し／反証条件：指標値が閾値θを下回る／上回る、あるいは観測窓δ期間閉鎖などの現象Mが確認された場合は仮説Aを棄却・改訂。Zとして、(1)監査周期δを固定し、(2)三原理＝U（第三者再現）/R（決定ノード一意）/H（差分追跡）を同一ログ上で測定し、(3)公開監査束（版管理・差分・変更理由・署名）を整合させる。反証条件として、δ期間においてSが高いにもかかわらずD（実害）が増幅し続ける、またはHを上げてもEが縮まらない、あるいは「ログはあるが差分が追えない」「決定ノードが恒常的に消える」「第三者再現が系統的に失敗する」等の現象Mが確認された場合、A（定義・測定・束化）の欠落を示すため棄却・改訂する。
+The parent origin's integrated audit summary states: If S remains high during audit window δ while actual harm D continues to grow, if increasing H does not reduce prediction-error dispersion E, or if phenomenon M such as untraceable differences, persistent disappearance of decision nodes, or systematic failure of third-party reproduction is observed, hypothesis A is rejected or revised as evidence of a gap in definition, measurement, or bundling.
 
 ## Required distinctions
 - consensus / opinion agreement

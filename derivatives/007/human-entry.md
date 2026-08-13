@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260418-11C3D8-HUMAN-SUMMARY-JA-0007-0001
-- derivative_diff_id: DDIFF-20260812-DNCL-007-0001-0006
-- supersedes: DDIFF-20260812-DNCL-007-0001-0005
+- derivative_diff_id: DDIFF-20260813-DNCL-007-0001-0007
+- supersedes: DDIFF-20260812-DNCL-007-0001-0006
 
 ## 15秒説明
 この第2論は、AI時代の知的格差を「誰がたくさん知っているか」「誰が速く正答できるか」という差ではなく、文明を更新する上流回路を誰が作り、保ち、次へ渡し、改善できるかという差として読みます。

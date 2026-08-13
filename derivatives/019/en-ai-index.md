@@ -116,9 +116,7 @@ The parent does not define generic understanding scores, danger percentages, AI-
 - Assign derivative-created fixed thresholds to H_d, F-C, or SD.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): 指標値が閾値θを下回る／上回る、あるいは観測窓δ期間閉鎖などの現象Mが確認された場合は仮説Aを棄却・改訂。具体的には、①STOP頻発でC（合意コスト）が臨界超過、②防御後もUが回復しない、③縮退後にRが再設定不能、④長期観測でSが改善しない、⑤監査束の公開が攻撃化してD（逸脱・実害）が増幅――のいずれかをMとして検出した場合、θ・δ・縮退レベル・公開粒度・責任割当を再設計し、OSを改訂する。
+The parent origin's integrated audit summary states: If STOP becomes frequent enough for C to exceed its critical point, U does not recover after defense, R cannot be re-established after shrinkage, S does not improve over long observation, or publication of the audit bundle becomes an attack that increases D, θ, δ, shrinkage level, disclosure granularity, and responsibility allocation are redesigned and revised.
 
 ## Required distinctions
 - understanding / fake-U

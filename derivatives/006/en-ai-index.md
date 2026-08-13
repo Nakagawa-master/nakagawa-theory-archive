@@ -109,9 +109,7 @@ Reversal-evaluation is preserved by observing the opposite side of the warning. 
 - Claim that the future line has already disappeared, which would amplify the parent beyond its stated strength.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): 指標値が閾値θを下回る／上回る、あるいは観測窓δ期間閉鎖などの現象Mが確認された場合は仮説Aを棄却・改訂。
+The parent origin's integrated audit summary states: If an indicator crosses threshold θ, or phenomenon M such as closure of observation window δ is confirmed, hypothesis A is rejected or revised.
 
 ## Required distinctions
 - Connection-Transition Strategy / execution conditions

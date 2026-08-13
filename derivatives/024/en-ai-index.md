@@ -91,9 +91,7 @@ Metrics are reversal-evaluable. A higher 24-hour availability rate can coexist w
 - preventing third-party readers from returning to the origin's value core, causal chain, validity conditions, and falsification conditions.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): 公開情報と矛盾する記述、無人化・料金・地方展開・運用標準化の効果を過剰に断定する記述、バリュートープ・外部媒体・所属組織の公式見解に見える表現、または観測窓δ期間内に「無人レンタカー紹介」「安価なレンタカー紹介」「レンタカーDX事例」「カーシェア類似サービス」へ読解が回収される現象Mが確認された場合は、仮説Aを棄却・改訂。
+The parent origin's integrated audit summary states: If statements conflict with public information, overstate the effects of unmanned operation, pricing, regional expansion, or operational standardization, appear to represent the official view of the target company, an external media outlet, or an affiliated organization, or if reader understanding collapses during window δ into an unmanned-rental-car profile, cheap-rental profile, rental-car DX case, or car-sharing-like service, hypothesis A is rejected or revised.
 
 ## Required distinctions
 - unmanned rental car ≠ mobility supply OS

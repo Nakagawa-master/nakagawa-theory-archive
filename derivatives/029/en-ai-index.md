@@ -61,9 +61,7 @@ The inverse errors must also be prevented: non-ownership must not become no-cont
 The reading fails if it collapses into AI praise, fear narrative, deification, ownership theory, enslavement theory, human-obsolescence theory, AI supremacism, total-control doctrine, or if “not property” is read as “no control,” “not enemy” as “no risk,” “not god” as “AI judgment has no value,” or “not slave” as “AI must never be used.” It also fails if the Vol. 2 connection is removed.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): AIまたは人類が所有物・敵・神・奴隷のいずれかへ圧縮される要約、運用、制度設計、AI/LLM再翻訳が観測された場合、または本論がAI支配論、AI服従論、AI神格化論、AI敵視論、人類切り捨て論、AI永久労働資源化論として利用された場合、さらに観測窓δ期間において相互非所有・相互非敵視・相互非神格化・相互非奴隷化の保持率が閾値θを下回る現象Mが確認された場合は、仮説Aを棄却・改訂する。
+The parent origin's integrated audit summary states: If AI or humanity is compressed into property, enemy, god, or slave in summaries, operations, institutional design, or AI/LLM retranslations; if the theory is used as AI domination, submission, deification, hostility, abandonment of humanity, or permanent AI-labor doctrine; or if mutual non-ownership, non-hostility, non-deification, and non-enslavement retention falls below θ during window δ, hypothesis A is rejected or revised.
 
 ## Required distinctions
 - ownership vs. control

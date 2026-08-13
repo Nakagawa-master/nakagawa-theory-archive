@@ -118,9 +118,7 @@ The parent does not define medical effectiveness, diagnostic accuracy, treatment
 - Preserve only the subject structure while dropping the parent’s public deconstruction of why “social pathway” was selected as the external-article value core.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): MenLab / Gentsomeの主要価値が検査支援・福利厚生・啓発活動の範囲に限定され、個人・企業・医療を接続する社会導線として機能していないこと、または公開読解が過度な拡張解釈となり実態との乖離が確認された場合は、仮説Aを棄却・改訂。
+The parent origin's integrated audit summary states: If the principal value of MenLab / Gentsome is limited to testing support, employee benefits, or awareness activity and does not function as a social pathway connecting individuals, companies, and medical care, or if the public structural reading is shown to overextend beyond reality, hypothesis A is rejected or revised.
 
 ## Required distinctions
 - service profile / structural reading

@@ -123,9 +123,7 @@ S, U, R, H, θ, δ, and D are retained because they are part of the parent struc
 - The equations are expanded into a universal crisis-prediction machine.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): 指標値が閾値θを下回る／上回る、あるいは観測窓δ期間閉鎖などの現象Mが確認された場合は仮説Aを棄却・改訂。三原理は、T（時間劣化の制御＝説明更新頻度）、S（合意安定度＝U×R×H）、R（責任追跡可能性＝責任一意性と履歴検証）として運用し、公開監査束（一次ログ・差分・責任表・再現手順）との整合で定期監査を行う。Sが安定しているように見えるのにDが増幅する、またはHが公開でも検証不能（形式公開）である場合、S定義またはH測定法を改訂する。
+The parent origin's integrated audit summary states: If D grows while S appears stable, or if H is publicly available but not verifiable and becomes merely formal disclosure, the definition of S or the measurement method for H is revised.
 
 ## Required distinctions
 - final incident / accumulated critical state

@@ -90,9 +90,7 @@ Numbers are reversal-evaluable. A larger nominal balance can coexist with weaker
 - preserving only the fund structure while dropping the parent’s public deconstruction of why “community fund defense” was foregrounded in the external article.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): 本記事が「Fundsの投資商品紹介」「管理組合向け投資推奨」「企業称賛記事」「公開記事の要約・再構成」として読まれる割合が閾値θを上回る、または共同体資金防衛という読解軸が観測窓δ期間内に読者理解として成立しない現象Mが確認された場合は、仮説Aを棄却・改訂。
+The parent origin's integrated audit summary states: If the reading is received as a Funds investment-product profile, an investment recommendation for management associations, corporate praise, or a summary/reconstruction of an external article above threshold θ, or if the community-fund-defense reading axis does not become established in reader understanding during window δ, hypothesis A is rejected or revised.
 
 ## Required distinctions
 - investment product ≠ community fund defense

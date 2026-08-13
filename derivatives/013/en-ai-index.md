@@ -161,9 +161,7 @@ These observations are not a derivative-created legal test or universal sales-pe
 The interpretation also fails if it becomes a criticism of all sales, all closing, all forecasting, all KPIs, or all fast decisions. Those are not the parent claim.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): 相手の購買意思・検討意思・課題・必要性・判断条件・導入条件が相互確認され、成約要求が価値接続と合意成熟の後に置かれている場合、本仮説は棄却・改訂される。
+The parent origin's integrated audit summary states: If purchase intent, consideration intent, problem, necessity, decision conditions, and implementation conditions are mutually confirmed and closing requests occur only after value connection and consent maturation, the hypothesis is rejected or revised.
 
 ## Required distinctions
 - contact / purchase intent

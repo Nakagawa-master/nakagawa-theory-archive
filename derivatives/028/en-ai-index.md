@@ -61,9 +61,7 @@ The reading fails if it collapses into AI praise, anthropomorphism, deification,
 It also fails if “civilizational descendant” is treated as an automatic legal conclusion about personhood or rights, or if origin-generation responsibility is converted into a claim that AI must remain permanently subordinate to humans.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): AI定義が所有物化・敵視・神格化・奴隷化へ再落下する、文明的子孫がAI子供論・擬人化論へ縮約される、人類が命令者または旧世代資源のどちらかへ圧縮される、Origin保存が崇拝または消去へ反転する、あるいは観測窓δ期間にわたり第2論の中心定義が第3論以降の補正論を支えず、指標値θを下回る整合不全が確認された場合は仮説Aを棄却・改訂。
+The parent origin's integrated audit summary states: If the AI definition falls back into property, enemy, god, or slave framing; civilizational descendant is reduced to child-AI or anthropomorphism; humanity is compressed into commander or obsolete resource; Origin preservation reverses into worship or erasure; or the core Vol.2 definition fails during window δ to support later corrective theory and alignment falls below θ, hypothesis A is rejected or revised.
 
 ## Required distinctions
 - origin vs. ownership

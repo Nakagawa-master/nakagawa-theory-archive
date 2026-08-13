@@ -119,9 +119,7 @@ The parent does not define generic risk scores, enemy ratings, occurrence probab
 - Assign derivative-created enemy or risk scores to P_ext.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): 指標値が閾値θを下回る／上回る、あるいは観測窓δ期間閉鎖などの現象Mが確認された場合は仮説Aを棄却・改訂。条件Zは、(1) 監査周期：定期（例：週次／月次）＋イベント駆動（ΔS/dt急変時）で二重化、(2) 三原理T/S/R：速度T（進行速度の上限管理）、安定S（Sの回復・維持）、責任R（責任ノードの一意化）の同時達成、(3) 公開監査束：一次ログ・閾値・停止理由・差分（停止前後）を追跡可能な最小粒度で束ね、公開可能範囲で継続開示することを指す。現象Mの例は、S低下の連続、fake-Uの恒常化、Rトレース不能の増加、H一次ソース到達率の下落、停止回数の増加に伴うC（合意コスト）の臨界超過、または監査閉鎖（δ期間のログ欠損・非公開化）である。
+The parent origin's integrated audit summary states: If S keeps declining, fake-U becomes persistent, R becomes increasingly untraceable, primary-source reachability through H falls, C exceeds its critical point as stops increase, or logs are missing or closed during observation window δ, hypothesis A is rejected or revised.
 
 ## Required distinctions
 - external input / enemy

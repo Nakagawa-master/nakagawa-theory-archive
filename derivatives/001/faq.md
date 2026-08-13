@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-JA-0001-0000
-- derivative_diff_id: DDIFF-20260812-DNCL-001-0000-0004
-- supersedes: DDIFF-20260812-DNCL-001-0000-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-001-0000-0005
+- supersedes: DDIFF-20260812-DNCL-001-0000-0004
 
 ## 初心者向け｜Q1〜Q10
 ### Q1. Nakagawa OS L1-L7とは何ですか？

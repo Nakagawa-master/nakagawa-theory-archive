@@ -107,9 +107,7 @@ Audit concerns source-grounded dimensions: L1-L6 connection, causal granularity,
 - Normalize excessive pressure or permanent personal workaround as ordinary operation.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): として、L1〜L6の縦因果が通らない事例、因果粒度不足、圧力依存、非物質構造設計図不在、AI要約による成立錯覚、または観測窓δ期間において成立判定が機能しない現象Mが確認された場合は、本論の運用仮説Aを棄却・改訂する。
+The parent origin's integrated audit summary states: If cases show that the L1-L6 vertical causal chain does not pass, causal granularity is insufficient, pressure dependence substitutes for structure, the non-material structural blueprint is absent, AI summarization creates an illusion of establishment, or establishment judgment fails during observation window δ, operational hypothesis A is rejected or revised.
 
 ## Required distinctions
 - establishment / establishment conditions

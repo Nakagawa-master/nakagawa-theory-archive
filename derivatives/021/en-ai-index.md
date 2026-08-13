@@ -119,9 +119,7 @@ The parent does not define universal immunity scores, fixed detection percentage
 - Assign derivative-created fixed pass values to D_det, D_loss, or recovery time.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): 指標値が閾値θを下回る／上回る、あるいは観測窓δ期間閉鎖などの現象Mが確認された場合は仮説Aを棄却・改訂。具体には、①D_det↑と同時にD_loss↓およびS回復時間↓が成立しているか（免疫の健康条件）、②D_det↓かつD_loss不明/↑が継続していないか（潜伏条件）、③差分公開の増加にも関わらずU/Rが低下する・形式公開化する・K超過でノイズ化する等が起きていないか（反証条件）を周期監査し、必要に応じて公開帯域（距離/粒度/索引）を再設計する。
+The parent origin's integrated audit summary states: The model is reviewed by checking whether rising D_det coincides with lower D_loss and shorter S recovery time; if D_det falls while D_loss remains unknown or rises, or increased difference disclosure is accompanied by falling U/R, formal disclosure, or K-overload noise, the distance, granularity, and indexing of the disclosure bandwidth are redesigned.
 
 ## Required distinctions
 - deviation occurrence / immune failure

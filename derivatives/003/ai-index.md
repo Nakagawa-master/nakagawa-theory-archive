@@ -149,9 +149,7 @@ establishment_judgment_becomes_required
 - AIや文書の統合的説明が現実条件へ戻って検証されている。
 
 ## Falsification conditions
-親原典の統合監査要旨に記載された反証・改訂条件は次の内容である。AI照応型確認の整合）により、局所的正しさが全体成立を保証しているかを継続的に検証・見直す。反証条件として、L1〜L6の縦因果判定を行わなくても、制度・経営・教育・言論・AI出力・現場判断が長期的に安定し、現場負荷、責任転嫁、制度疲労、例外処理、履歴喪失、意味軸の細りが観測窓δ期間において反復確認されない場合、または局所理解だけで理解可能性・責任特定可能性・履歴公開度が安定維持される現象Mが広範に確認された場合、本論の仮説Aは棄却または改訂される。
-
-この条件は親原典の公開監査要旨に属し、第三者の人間・AIはParent URLで因果・関係・再合意の記述と一体で確認できる。
+親原典の統合監査要旨では、L1〜L6の縦因果判定を行わなくても制度・経営・教育・言論・AI出力・現場判断が長期的に安定し、現場負荷、責任転嫁、制度疲労、例外処理、履歴喪失、意味軸の細りが観測窓δで反復確認されない場合、または局所理解だけで理解可能性・責任特定可能性・履歴公開度が安定維持される現象Mが広範に確認された場合、本論の仮説Aを棄却または改訂する。
 
 ## Required distinctions
 - 局所的正しさ / 全体成立
@@ -180,7 +178,6 @@ establishment_judgment_becomes_required
 - 局所正解そのものを否定して全体論だけを上位化しない。
 - 原典にない成立率、全体性スコア、成功確率、数値閾値を追加しない。
 - 第0論で後続論へ渡された定義を派生側で先取り確定しない。
-- 派生側の構造化を親原典以上の確定主張へ昇格させない。
 
 ## Search terms
 成立条件論; 成立条件論 第0論; 局所全体化; 分散的全体誤認; 局所正解 全体不成立; 縦因果未判定; L1 L2 L3 L4 L5 L6; local totalization; distributed whole misrecognition; local correctness whole non-establishment; vertical causality; establishment judgment; cross-layer conditions; responsibility transfer; field burden; history traceability; linguistic coherence reality establishment; AI local correctness; whole-system establishment; Nakagawa Master

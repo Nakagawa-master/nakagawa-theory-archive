@@ -159,9 +159,7 @@ The term "nonlinear" is not converted here into an invented mathematical functio
 - Observation of an intellectual gap is treated as automatic proof that civilizational sovereignty has shifted.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): 問いの起点、候補空間形成主体、改善ループ、継承、分散接続、更新速度主導等の観測指標が所定の閾値θを継続的に下回る／上回る、あるいは観測窓δ期間において構造差の兆候不在・逆転・閉鎖などの現象Mが確認された場合は仮説Aを棄却・改訂。
+The parent origin's integrated audit summary states: If indicators such as the origin of questions, who forms the option space, improvement loops, succession, distributed connection, and update-speed leadership remain beyond the specified threshold θ, or if absence, reversal, or closure of structural differences is observed during window δ, hypothesis A is rejected or revised.
 
 ## Required distinctions
 - answer capability / civilizational update capability

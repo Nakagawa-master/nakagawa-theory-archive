@@ -124,9 +124,7 @@ The parent uses `S = U × R × H` and K as structural variables. The derivative 
 - One institutional form is declared universally superior beyond the parent.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): 指標値が閾値θを下回る／上回る、あるいは観測窓δ期間閉鎖などの現象Mが確認された場合は仮説Aを棄却・改訂。
+The parent origin's integrated audit summary states: If an indicator crosses threshold θ, or phenomenon M such as closure of observation window δ is confirmed, hypothesis A is rejected or revised.
 
 ## Required distinctions
 - governance / behavior control

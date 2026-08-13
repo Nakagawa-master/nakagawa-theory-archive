@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260608-5A13AA-HUMAN-SUMMARY-JA-0009-0001
-- derivative_diff_id: DDIFF-20260812-DNCL-009-0001-0004
-- supersedes: DDIFF-20260707-DNCL-009-0001-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-009-0001-0005
+- supersedes: DDIFF-20260812-DNCL-009-0001-0004
 
 ## 15秒説明
 この第2論は、努力や高い目標を否定する理論ではありません。問題にしているのは、目標値を置いただけで未来定義が成立したと扱い、成立条件・因果線・検証条件・修正条件・責任配置を検査しないまま、現場に努力だけを要求する構造です。

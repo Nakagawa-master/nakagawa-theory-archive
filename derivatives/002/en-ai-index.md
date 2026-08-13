@@ -137,9 +137,7 @@ These observations are not derivative-created legal tests or generic labor KPIs.
 Praise alone is therefore not evidence that AKI-002 applies. Rejecting all appreciation, gratitude, opportunity, or voluntary contribution would also fall outside the parent theory because it removes the required distinction between value recognition and the substitution of recognition for conditions.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): 称賛が対価の代替ではなく、明示された条件の上に追加されている場合、または双方が十分な判断材料と交渉余地を持ち、価値移転の不均衡が確認されない場合は、本論の適用を棄却・限定・改訂する。
+The parent origin's integrated audit summary states: If praise is added on top of explicit compensation and rights rather than substituting for them, or both sides have sufficient information and room to negotiate and no imbalance in value transfer is observed, the theory is rejected, limited, or revised for that case.
 
 ## Required distinctions
 - praise / exploitation

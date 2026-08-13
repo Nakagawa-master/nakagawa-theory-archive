@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260607-7E87F5-FAQ-JA-0008-0002
-- derivative_diff_id: DDIFF-20260812-DNCL-008-0002-0006
-- supersedes: DDIFF-20260812-DNCL-008-0002-0005
+- derivative_diff_id: DDIFF-20260813-DNCL-008-0002-0007
+- supersedes: DDIFF-20260812-DNCL-008-0002-0006
 
 ## 初心者向け｜Q1〜Q10
 ### Q1. この論は努力しなくてよいという話ですか？

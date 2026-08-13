@@ -120,9 +120,7 @@ The parent defines no universal effort-volume KPI, success probability, or numer
 - Failure is explained only as insufficient effort while plan and conditions are exempted from inspection.
 
 ## Falsification conditions
-The parent origin's integrated audit summary defines the falsification/revision condition in the source clause below. It is presented here as public source information for third-party readers and AIs, with its exact scope anchored to the Parent URL.
-
-Parent audit clause (Japanese original): 因果線候補の事前把握可能性が対象領域で確認できない、検証条件つきの実行要求まで努力押し付けとして誤分類される、または観測窓δ期間において読者理解が一貫して努力不要論・世代批判・AI万能論へ逸脱するなどの現象Mが確認された場合は、仮説Aを棄却・改訂する。
+The parent origin's integrated audit summary states: If candidate causal lines cannot be known in advance in the target domain, if execution requests with verification conditions are misclassified as effort coercion, or if reader understanding consistently drifts into effort-is-unnecessary, generational criticism, or AI-omnipotence during window δ, hypothesis A is rejected or revised.
 
 ## Required distinctions
 - effort denial / redefining conditions for valid effort
