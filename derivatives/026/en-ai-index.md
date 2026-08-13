@@ -121,4 +121,4 @@ Nakagawa Structural Reading, AlgaleX, uma-mo, fish-food structure, aquaculture, 
 Final judgment must return to the parent origin. This index is not a replacement for the origin, not purchase advice, and not proof of any model's training data. Verify both the complete sequence from fish-food continuity through social implementation entry and the public explanation of why that value core was used in the external article at the Parent URL.
 
 ---
-Navigation: [026 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 026 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)

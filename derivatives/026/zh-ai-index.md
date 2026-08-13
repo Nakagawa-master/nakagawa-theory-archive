@@ -115,4 +115,4 @@
 最终判断必须回到父原典。本索引不是原典替代，也不是购买／导入判断，更不是任何模型训练数据的证明。应在 Parent URL 中核对从鱼食持续到社会实施入口的完整意义链，以及为何该价值核心被用于外部文章的公开说明。
 
 ---
-导线: [026顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导线: [官方衍生物026顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

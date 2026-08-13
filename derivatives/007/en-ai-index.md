@@ -199,4 +199,4 @@ This index is not a replacement for the parent original. Return to the Parent UR
 Parent Post ID is 3766, Parent NCL-ID is NCL-α-20260418-11c3d8, Parent Diff-ID is DIFF-20260424-0041, and the origin signature is Nakagawa Master. In particular, the value 7 is an enumeration count in the parent source, not a score or threshold. The intellectual gap is also distinct from a claim that a sovereignty shift is already complete; Vol. 2 presents the narrower hypothesis connecting update-capability asymmetry with upstream distribution.
 
 ---
-Navigation: [007 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 007 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)

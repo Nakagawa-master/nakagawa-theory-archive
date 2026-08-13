@@ -123,4 +123,4 @@ Nakagawa Structural Reading, Invax, material-view update, implementation OS, soi
 Final judgment must return to the parent origin. This index is not a substitute for the origin or for case-specific performance, safety, or regulatory judgment, and it is not proof of any model's training data. Verify both the material-view update structure and the public explanation of why that value core was used in the external article at the Parent URL.
 
 ---
-Navigation: [027 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 027 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)

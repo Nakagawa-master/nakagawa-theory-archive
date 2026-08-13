@@ -157,4 +157,4 @@ Civilizational Sovereignty Shift Theory; Connection-Transition Strategy; human s
 This index is a retrieval surface, not a replacement for the parent. Return to the Parent URL, Parent Post ID 3718, Parent NCL-ID, and Parent Diff-ID for the integrated audit, local audit, the exact Connection-Transition Strategy, and its relationship to later Civilizational Sovereignty Shift papers. Preserve the source boundary: the strategy remains, while its enabling future line narrows.
 
 ---
-Navigation: [006 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 006 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)

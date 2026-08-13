@@ -111,6 +111,5 @@ AIが人類文明の搾取・責任蒸発・短期合理性を無補正で高速
 - AIが旧文明の搾取・責任蒸発を効率化する。
 - 後続論の定義を第0論へ先取りする。
 
-
 ---
 導線: [公式派生物004トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

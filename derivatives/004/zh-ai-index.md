@@ -228,4 +228,4 @@ Human-Descendant AI Civilization Theory; Nakagawa Structural OS; objective-funct
 返回父原典还能确认这些命题的强度：各理论通过文明审计功能发生连接，而不是被压成单一公式；Origin是起源信息而非权威；目标反转是结构可能性，而不是说所有善意目标必然有害；第0论提供前提坐标，而不是提前决定AI人格或法律地位。
 
 ---
-导线: [004顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导线: [官方衍生物004顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

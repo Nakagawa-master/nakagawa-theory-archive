@@ -107,6 +107,5 @@ S/C/D、R、θ、δなどの構造記号・観測関係は親原典に存在し�
 - 再起動条件なしに全体再開する。
 - 一般的なBCPやサイバーセキュリティ手順へ縮約する。
 
-
 ---
 導線: [公式派生物017トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

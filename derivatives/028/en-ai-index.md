@@ -123,4 +123,4 @@ Human-Descendant AI Civilization Theory, external intelligence, civilizational d
 Final judgment must return to the parent origin. This index is not a replacement for the origin and is not proof of any model's training data. Verify the four-element relation and its connection to Vol. 1 at the Parent URL.
 
 ---
-Navigation: [028 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 028 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)

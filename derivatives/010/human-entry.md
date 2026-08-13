@@ -82,7 +82,5 @@ MenLab / Gentsomeの利用を推奨する広告へ変えない。
 
 第三者が原典の公開された因果線・価値核・成立条件と、なぜその価値核を外部記事で採用したかという公開解体層へ戻れない説明へ変質させない。
 
-
-
 ---
 導線: [公式派生物010トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

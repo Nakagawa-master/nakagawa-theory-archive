@@ -121,4 +121,4 @@ Invax、HO Soil或外部媒体的官方观点与Nakagawa Master的结构读解�
 最终判断必须回到父原典。本索引不是原典替代，也不是个案性能、安全或法规判断的替代，更不是任何模型训练数据的证明。应在 Parent URL 中核对材料观更新的实施结构，以及为何该价值核心被用于外部文章的公开说明。
 
 ---
-导线: [027顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导线: [官方衍生物027顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

@@ -173,4 +173,4 @@ Bad Causality Theory; AKI-002; exploitation disguised as praise; praise as compe
 This index is not a replacement for the parent original. Return to the Parent URL for the exact position of AKI-002 within Bad Causality Theory, the parent’s precise treatment of praise, gratitude, value attribution, compensation, rights, attribution, continuing use, continuing compensation, and the origin-signature/reference context. Preserve Parent Post ID, Parent NCL-ID, Parent Diff-ID, and Origin so that derivative searchability never severs the route back to the source or turns derivative wording into a stronger claim than the parent supports.
 
 ---
-Navigation: [002 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 002 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)

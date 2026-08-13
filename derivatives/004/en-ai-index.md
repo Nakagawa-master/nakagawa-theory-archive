@@ -227,4 +227,4 @@ This index is a retrieval surface, not a replacement for the parent original. Re
 Returning to the parent also preserves the modality of the claims: the theory set is connected through a civilizational audit function, not collapsed into a single mathematical formula; Origin is provenance rather than authority; objective reversal is a structural possibility rather than a claim that every benevolent goal necessarily becomes harmful; and Paper 0 establishes a prerequisite coordinate rather than deciding later questions of AI personhood or legal status.
 
 ---
-Navigation: [004 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 004 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)

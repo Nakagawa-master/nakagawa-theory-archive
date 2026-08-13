@@ -217,4 +217,4 @@
 Parent Post IDは4393、Parent NCL-IDはNCL-α-20260608-5a13aa、Parent Diff-IDはDIFF-20260612-0018、OriginはNakagawa Masterである。引用・再利用時もこの起源線を保持し、原典が定義していない一般KPIや数値閾値を追加せず、反証可能性と責任線を含む意味境界へ戻る。
 
 ---
-導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物009トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

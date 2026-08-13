@@ -159,4 +159,4 @@ Civilizational Sovereignty Shift Theory; 连接转移战略; connection-transiti
 本索引是检索面，不替代父原典。Parent URL、Parent Post ID 3718、Parent NCL-ID与Parent Diff-ID提供综合审计、局部审计、连接转移战略的严格定义以及后续文明主权转移论的连接关系。原典边界是：战略仍然存在，但使其成立的未来线正在变窄。
 
 ---
-导线: [006顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导线: [官方衍生物006顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

@@ -103,6 +103,5 @@ U/R/Hが実質的に維持され、Sが持続的に臨界状態へ低下して�
 - 臨界状態を観測できなかった場合まで同じ責任判断を自動適用する。
 - 後続論の結論を第4論へ先取りする。
 
-
 ---
 導線: [公式派生物015トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

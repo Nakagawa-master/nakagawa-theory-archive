@@ -88,7 +88,5 @@ AIの文章整合、要約精度、網羅性を現実成立の証明にしませ
 
 派生物は原典の代替ではありません。A系司法OS、合意形成、人類子孫型AI文明論等との参照関係、厳密な用語、起源署名、改訂文脈はParent URL、Parent Post ID 4571、Parent NCL-ID、Parent Diff-IDへ戻って確認します。
 
-
-
 ---
 導線: [公式派生物003トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

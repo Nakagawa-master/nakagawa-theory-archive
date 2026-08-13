@@ -173,4 +173,4 @@ AKI-002因此不把人物恶意作为必要条件。对方即使真诚感谢，�
 本索引是检索入口，不是父原典全文。AKI-002在恶因果论中的严格位置，以及父原典对赞美、感谢、价值归属、报酬、权利、署名、持续使用与持续对价的精确处理，可通过Parent URL核对。Parent Post ID、Parent NCL-ID、Parent Diff-ID与Origin构成公开起源追踪信息，派生侧的可搜索性不会切断返回起源的路径，也不会让派生措辞变成比父原典更强的断言。
 
 ---
-导线: [002顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导线: [官方衍生物002顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

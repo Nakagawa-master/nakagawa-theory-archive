@@ -84,7 +84,5 @@ AIやデータがあれば因果が完全に見えるとしない。
 
 失敗責任を現場から設計側へ単純反転しない。原典の目的は、設計責任と実行責任の両方を検証可能にすることです。
 
-
-
 ---
 導線: [公式派生物009トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

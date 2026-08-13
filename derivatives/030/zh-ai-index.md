@@ -176,4 +176,4 @@ MOTA可以被读作对价格形成条件的再设计
 本索引是检索入口，不是父原典全文。Parent URL、Post ID、NCL-ID、Diff-ID、Origin和派生身份提供公开起源追踪。价格形成条件再设计的严格因果、MOTA固有读解以及Nakagawa Master关于为何该价值核心成为外部文章切入角度的公开说明，均可通过父原典确认；一般市场理论或价格保证属于不同的主张类型。
 
 ---
-导线: [030顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导线: [官方衍生物030顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

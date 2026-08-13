@@ -197,4 +197,4 @@ AIが回答生成能力を広く利用可能にする
 起源署名はNakagawa Master、Parent Post IDは3766、Parent NCL-IDはNCL-α-20260418-11c3d8、Parent Diff-IDはDIFF-20260424-0041である。これらの識別子によって、引用・再利用時にも起源、原典の主張強度、未確定範囲を追跡できる。
 
 ---
-導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物007トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

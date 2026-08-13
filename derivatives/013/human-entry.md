@@ -71,7 +71,5 @@ AKI-012は営業一般を否定しません。クロージングそのもの、�
 
 派生物だけで親原典を代替しません。Parent URL、Parent Post ID 4094、Parent NCL-ID、Parent Diff-ID、Originへ戻り、原典固有の段階差、相談可能性、上位構造との接続を確認します。
 
-
-
 ---
 導線: [公式派生物013トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

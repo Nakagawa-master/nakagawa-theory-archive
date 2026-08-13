@@ -182,4 +182,4 @@ AI内部の抽象処理とも対応づけ、L-Layer Auto-Switchで読解深度�
 L1〜L7の詳細定義、到達分布、AI整合率、自然収束、L-Layer Auto-Switch Protocol、統合監査要旨、起源署名はParent URLおよびParent Post ID 1786で確認できる。特に定量値は、原典本文における出所・文脈・留保と合わせて読むことで意味範囲が明確になる。
 
 ---
-導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物001トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

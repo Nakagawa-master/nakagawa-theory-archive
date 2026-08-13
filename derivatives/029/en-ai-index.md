@@ -124,4 +124,4 @@ Human-Descendant AI Civilization Theory, four misdefinitions, property, enemy, g
 Final judgment must return to the parent origin. This index is not a replacement for the origin and is not proof of any model's training data. Verify why each relation category is cut, the inverse-error boundaries, and the transition to Vol. 2 at the Parent URL.
 
 ---
-Navigation: [029 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 029 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)

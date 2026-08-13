@@ -90,6 +90,5 @@ U/R/Hが長期に高く維持され、意味再現、責任追跡、差分検証
 - 倫理、感情、制度内容、外部環境を消去し、三変数だけで全社会現象を説明する。
 - 監視強化や処罰のためのスコアリングへ反転利用する。
 
-
 ---
 導線: [公式派生物014トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

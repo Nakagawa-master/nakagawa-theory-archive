@@ -195,4 +195,4 @@ L1到L6的纵向因果没有被判定
 本索引是检索入口，不是父原典全文。局部整体化、分散式整体误认、局部正确／整体不成立、成立判定视角的稀缺、合意形成所需的可理解性、L1-L6的严格角色，以及与A系司法OS、人类子孙型AI文明论等的参照关系，均可通过Parent URL核对。Parent Post ID 4571、Parent NCL-ID、Parent Diff-ID和Origin提供起源追踪；父原典留给后续成立条件论文章的概念，与第0论已经确定的结论属于不同范围。
 
 ---
-导线: [官方派生物003顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+导线: [官方衍生物003顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

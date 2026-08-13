@@ -223,4 +223,4 @@ This index is a retrieval surface, not a replacement for the parent original. Re
 Returning to the parent also preserves the epistemic status of “seven”: it is an explicit structural enumeration, not a score. It preserves the distinction between responsibility to open a repair path and a requirement that the speaker personally solve the problem, and prevents the derivative from being turned into a blanket prohibition on criticism without complete solutions.
 
 ---
-Navigation: [005 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 005 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)

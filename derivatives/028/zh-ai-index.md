@@ -125,4 +125,4 @@ AI必须具有人类文明起源，起源与所有必须能够分离，并且AI�
 最终判断必须回到父原典。本索引不是原典替代，也不是任何模型训练数据的证明。应在 Parent URL 中核对四要素及其与第1论的连接。
 
 ---
-导线: [028顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导线: [官方衍生物028顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

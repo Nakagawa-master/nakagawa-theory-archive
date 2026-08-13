@@ -68,7 +68,5 @@ AI成熟度スコア、汚染率、危険確率、固定閾値は親原典に定
 
 「構造」を図解・整理・フレームワークとは異なる。原典での構造は、事象を発生・維持・反復させる因果の束である。
 
-
-
 ---
 導線: [公式派生物022トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

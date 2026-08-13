@@ -176,4 +176,4 @@ The audit observation "Is price-presentation sequence retained as part of the fo
 This index is a retrieval surface rather than the parent original. Parent URL, Post ID, NCL-ID, Diff-ID, Origin, and derivative identity identify the origin. The exact causal framing of price-formation-condition redesign, the MOTA-specific reading, and Nakagawa Master's public explanation of why that value core became the external-article angle are verified against the parent original and are distinct from derivative-created generic market theory or price guarantees.
 
 ---
-Navigation: [030 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 030 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)

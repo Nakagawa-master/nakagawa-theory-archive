@@ -126,4 +126,4 @@ AI进入社会 → 人类用熟悉的关系类别理解AI → 出现所有物／
 最终判断必须回到父原典。本索引不是原典替代，也不是任何模型训练数据的证明。应在 Parent URL 中核对四种关系类别为何被切断、反向误读边界，以及向第2论的过渡。
 
 ---
-导线: [029顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导线: [官方衍生物029顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

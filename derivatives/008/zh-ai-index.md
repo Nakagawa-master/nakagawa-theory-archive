@@ -181,4 +181,4 @@ AI、数据、日志、既有案例等扩大执行前的因果观察范围
 本索引是检索入口，不是父原典全文。因果不透明性、旧努力论的条件性合理性、因果可视范围扩大、未来定义成立检验、五项结构要素、现代实务OS，以及向第2论所转交的成立检验成本问题，均可通过Parent URL核对。
 
 ---
-导线: [官方派生物008顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+导线: [官方衍生物008顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

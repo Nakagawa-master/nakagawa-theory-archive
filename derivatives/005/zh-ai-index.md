@@ -223,4 +223,4 @@ Bad Causality Theory AKI-001; responsibility-free problem raising; irresponsible
 返回父原典还可以重新确认“七”这一数值的知识地位：它是明确列举的结构条件数，不是评分；“责任”是打开修复路径，不是要求发言者亲自解决全部问题；强烈警告与无责任问题提出不能只按语气区分；派生物不得把理论反转成“没有完整解决方案就禁止批评”的规则。
 
 ---
-导线: [005顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导线: [官方衍生物005顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

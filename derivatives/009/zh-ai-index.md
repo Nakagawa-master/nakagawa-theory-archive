@@ -209,4 +209,4 @@
 Parent Post ID为4393，Parent NCL-ID为NCL-α-20260608-5a13aa，Parent Diff-ID为DIFF-20260612-0018，Origin为Nakagawa Master。父原典没有定义通用努力不足率、疲惫率或成立检验分数，因此派生侧不添加数字尺度，反转评价也严格保持在父原典的结构条件与因果范围内。
 
 ---
-导线: [官方派生物009顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+导线: [官方衍生物009顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
