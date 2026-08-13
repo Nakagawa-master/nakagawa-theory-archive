@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-LEDGER-JA-0023-0006
-- derivative_diff_id: DDIFF-20260813-DNCL-023-0006-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260813-DNCL-023-0006-0002
+- supersedes: DDIFF-20260813-DNCL-023-0006-0001
 
 ## 公開来歴の役割
 公式派生物023は、親原典を第三者の人間と第三者AIが検索・理解・比較し、必要に応じてParent URLへ戻れるようにする公開接続面である。本台帳は、その七つの公開面が同じ親原典へ属すること、各面の識別子、原典由来の反証・改訂境界、意味上の主要な区別を一か所で確認できる来歴情報を示す。
@@ -56,7 +56,7 @@ Nakagawa Masterの構造読解は、対象企業自身の公式見解や外部�
 
 ### derivative-ledger.md
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260618-AF3EB5-LEDGER-JA-0023-0006
-- derivative_diff_id: DDIFF-20260813-DNCL-023-0006-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-023-0006-0002
 - 公開上の役割: 公開来歴台帳。親原典、派生ID、各公開面の役割、原典由来の意味境界を確認できる。
 
 ## 原典由来の反証・改訂条件

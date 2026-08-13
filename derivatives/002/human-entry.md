@@ -77,5 +77,6 @@ AKI-002は、称賛があるだけで搾取を認定する理論ではありま�
 派生物だけで原典を代替しません。AKI-002の厳密な語彙、悪因果論全体での位置づけ、起源署名、参照束、改訂文脈はParent URL、Parent NCL-ID、Parent Diff-IDへ戻って確認します。
 
 
+
 ---
 導線: [公式派生物002トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

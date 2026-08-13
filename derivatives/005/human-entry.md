@@ -110,5 +110,6 @@ AKI-001は「問題を言うな」という理論ではありません。問題�
 - 人物の善悪や法的責任の自動判定へ置き換える。
 - 原典の七条件を採点表や一般KPIへ変換する。
 
+
 ---
 導線: [公式派生物005トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

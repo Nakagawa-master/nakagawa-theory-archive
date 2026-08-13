@@ -85,5 +85,6 @@ P_extと悪意を同一視しない。
 親原典では、S=U×R×Hを時間発展する状態量として扱い、`dS/dt = F(U,R,H) + P_ext`、fake-U、R diffusion、H short-circuit、一次ソース、文脈、版、差分、逆リンクまで一つのセンサー層として接続します。外部干渉を敵意物語へ変えない厳密な境界はParent URLへ戻って確認する必要があります。
 
 
+
 ---
 導線: [公式派生物018トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

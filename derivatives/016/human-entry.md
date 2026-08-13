@@ -93,5 +93,6 @@ Kに配慮して情報を整理し、原資料・責任・差分への接続を�
 - AIが処理できる情報量を、人間のKと同一視する。
 - 市場・国家・共同体・AI社会の一つを原典以上に理想統治として断定する。
 
+
 ---
 導線: [公式派生物016トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

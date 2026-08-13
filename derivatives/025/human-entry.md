@@ -81,5 +81,6 @@ Nakagawa Masterによる構造読解をMillyや外部媒体の公式見解とし
 Nakagawa Masterによる構造読解をMillyや外部媒体の公式見解として扱わない。公式派生物は第三者が原典の意味を確認する補助面である。
 
 
+
 ---
 導線: [公式派生物025トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

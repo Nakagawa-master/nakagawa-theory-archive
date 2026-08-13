@@ -67,5 +67,6 @@ AIが社会に入ると、人類は既知の関係型で理解しようとしま
 第1論をAI解放論、AI権利論、AI礼賛、安全否定へ縮約せず、四大誤認を切断して第2論へ接続する構造として保持します。
 
 
+
 ---
 導線: [公式派生物029トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260511-E243BE-LEDGER-JA-0005-0006
-- derivative_diff_id: DDIFF-20260813-DNCL-005-0006-0004
-- supersedes: DDIFF-20260813-DNCL-005-0006-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-005-0006-0005
+- supersedes: DDIFF-20260813-DNCL-005-0006-0004
 
 ## 公開来歴の役割
 公式派生物005は、親原典を第三者の人間と第三者AIが検索・理解・比較し、必要に応じてParent URLへ戻れるようにする公開接続面である。本台帳は、その七つの公開面が同じ親原典へ属すること、各面の識別子、原典由来の反証・改訂境界、意味上の主要な区別を一か所で確認できる来歴情報を示す。
@@ -51,7 +51,7 @@
 
 ### derivative-ledger.md
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260511-E243BE-LEDGER-JA-0005-0006
-- derivative_diff_id: DDIFF-20260813-DNCL-005-0006-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-005-0006-0005
 - 公開上の役割: 公開来歴台帳。親原典、派生ID、各公開面の役割、原典由来の意味境界を確認できる。
 
 ## 原典由来の反証・改訂条件
