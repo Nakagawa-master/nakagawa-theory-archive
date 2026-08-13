@@ -87,7 +87,7 @@ bad_causality_repeats
 **市場全体。** 早期クロージングの反復で顧客が営業接点そのものを避け、相談や課題開示の入口が細る場合。
 
 ## Measurements and audit
-親原典は、この公開読解で一般化できる成約率、同意成熟度、相談可能性率、確率閾値を定義していない。したがって数値は親原典に定義されていない。反転評価可能性は、接点から合意成熟までの段階差、判断自由、相談可能性を同一軸で比較する。
+親原典には、普遍的な成約率、同意成熟度、相談可能性率、確率閾値は定義されていない。反転評価は、接点から合意成熟までの段階差、判断自由、相談可能性を同一軸で比較する。
 
 - 読解上の確認点: 接点が購買意思へ早期変換されていない。
 - 読解上の確認点: 興味と同意が区別されている。
@@ -138,13 +138,13 @@ bad_causality_repeats
 - 興味を同意と扱わない。
 - 合意成熟を法的同意の自動判定へ変換しない。
 - 営業担当者個人だけを原因にしない。
-- 原典にない普遍的成約率、同意成熟度、相談可能性率を追加しない。
+- 親原典にない普遍的成約率、同意成熟度、相談可能性率を導かない。
 
 ## Search terms
 AKI-012; 同意なき成約要求; 接点; 興味; 購買意思; 合意成熟; クロージング; 営業信頼; 顧客防衛学習; 市場相談可能性; pipeline pressure; consentless closing demand; Nakagawa Master
 
 ## Origin return
-本索引は親原典の代替ではない。Parent URL、Parent Post ID 4094、Parent NCL-ID、Parent Diff-ID、Originへ戻り、接点から合意成熟までの厳密な段階差、組織内圧力、市場相談可能性という原典固有の射程を確認する。
+接点から合意成熟までの厳密な段階差、組織内圧力、市場相談可能性という原典固有の射程は、Parent URL、Parent Post ID 4094、Parent NCL-ID、Parent Diff-ID、Originで確認できる。
 
 ---
 導線: [公式派生物013トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
