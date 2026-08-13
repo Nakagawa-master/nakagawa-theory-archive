@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-AI-INDEX-EN-0021-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-021-0004-0006
-- supersedes: DDIFF-20260813-DNCL-021-0004-0005
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-HUB-EN-0021-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-021-0001-0007
+- supersedes: DDIFF-20260813-DNCL-021-0004-0006
 
 ## Summary
 The parent treats deviation not primarily as a violation to punish, but as a difference D between design and operation that must become observable so understanding U, repair responsibility R, and history H can recover and restore S = U × R × H. Immunity is therefore not the absence of deviation. It is the ability to expose a difference, fix a repair entry point, preserve history, and return the system to a repairable stable state quickly.
