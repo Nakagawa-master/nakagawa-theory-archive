@@ -1,0 +1,18 @@
+name: OD001-030 final validation
+on:
+  push:
+    branches:
+      - audit/od001-030-reader-falsification-20260813
+    paths:
+      - tools/od001_030_final_validate.py
+      - .github/workflows/od001-030-final-validate.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate all 210 public surfaces
+        run: python tools/od001_030_final_validate.py
