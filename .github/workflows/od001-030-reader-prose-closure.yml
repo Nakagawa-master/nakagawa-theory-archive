@@ -1,0 +1,184 @@
+name: OD001-030 reader prose closure
+on:
+  push:
+    paths:
+      - '.github/workflows/od001-030-reader-prose-closure.yml'
+permissions:
+  contents: write
+jobs:
+  close:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Remove residual document-authoring voice and validate structures
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          ROOT=Path('derivatives')
+          WORKFLOW=Path('.github/workflows/od001-030-reader-prose-closure.yml')
+          SURFACES=['README.md','human-entry.md','faq.md','ai-index.md','en-ai-index.md','zh-ai-index.md','derivative-ledger.md']
+
+          def polish(text):
+              # Common Japanese producer-side constructions -> reader-facing source facts.
+              text=text.replace('この公開読解で定量値を保持するときは、値だけを再掲してはならない。少なくとも次の六要素を同期させる。',
+                                '定量値は、値だけを切り離さず、少なくとも次の六要素と一体で読む。')
+              text=text.replace('この公開読解で定量値を保持する場合は、', '定量値の読解では、')
+              text=text.replace('この公開読解で数値を保持するときは、', '数値の読解では、')
+              # Things not defined in the source are stated as source scope, not as author instructions.
+              text=re.sub(r'親原典にない([^。\n]+?)をこの公開読解で(?:作らない|追加しない|新設しない|創作しない|設定しない|定義しない)。',
+                          r'\1は親原典に定義されていない。',text)
+              text=re.sub(r'この公開読解で([^。\n]+?)を(?:作らない|追加しない|新設しない|創作しない|設定しない|定義しない)。',
+                          r'\1は親原典に定義されていない。',text)
+              text=re.sub(r'([^。\n]+?)をこの公開読解で(?:消去していない|削除していない)。',
+                          r'\1が保持されている。',text)
+              text=re.sub(r'親原典にない([^。\n]+?)は親原典に定義されていな(?:い|かった)。',
+                          r'\1は親原典に定義されていない。',text)
+              text=re.sub(r'親原典にない([^。\n]+?)は親原典に定義されていません。',
+                          r'\1は親原典に定義されていません。',text)
+              text=text.replace('これらは非原典のスコアではない。','これらは親原典に定義されたスコアではない。')
+              text=text.replace('これらは非原典の採点体系ではない。','これらは親原典に定義された採点体系ではない。')
+              # Measurement bullets that audit document-production are recast as public reading status.
+              text=re.sub(r'(- (?:観測項目|読解上の確認点): )([^\n。]+?)をこの公開読解で消去していない。',r'\1\2が保持されている。',text)
+              text=re.sub(r'(- (?:観測項目|読解上の確認点): )([^\n。]+?)をこの公開読解で削除していない。',r'\1\2が保持されている。',text)
+              text=re.sub(r'(- (?:観測項目|読解上の確認点): )([^\n。]+?)をこの公開読解で追加していない。',r'\1\2に非原典要素が付加されていない。',text)
+              text=re.sub(r'(- (?:観測項目|読解上の確認点): )([^\n。]+?)をこの公開読解で改変していない。',r'\1\2が原典の意味境界で保持されている。',text)
+
+              # English producer-side phrasing -> source-scope facts.
+              text=re.sub(r'(?i)(?:This|A) source-bounded public reading does not (?:invent|create|add|define) ([^.]+)\.',
+                          lambda m: 'The parent origin does not define '+m.group(1).strip()+'.',text)
+              text=text.replace('These are not source-absent additional scores.','These are not scores defined by the parent origin.')
+              text=text.replace('These are not source-absent additional scoring systems.','These are not scoring systems defined by the parent origin.')
+              text=re.sub(r'(?i)The parent origin does not define parent-origin-absent ', 'The parent origin does not define ', text)
+
+              # Chinese producer-side phrasing -> source-scope facts.
+              text=re.sub(r'本公开读解不(?:新增|创建|自行生成|设定|定义)([^。]+)。',r'父原典未定义\1。',text)
+              text=re.sub(r'父原典中不存在的([^。]+)在本公开读解中不(?:新增|创建|自行生成|设定|定义)。',r'\1并未由父原典定义。',text)
+
+              text=re.sub(r'\n{3,}','\n\n',text)
+              return text
+
+          def bump(text,od):
+              m=re.search(r'(?m)^- derivative_diff_id:\s*(DDIFF-\d{8}-DNCL-'+od+r'-\d{4}-(\d{4}))\s*$',text)
+              if not m: return text
+              old=m.group(1); n=int(m.group(2))+1
+              prefix=re.sub(r'^DDIFF-\d{8}-','DDIFF-20260813-',old.rsplit('-',1)[0])
+              new=prefix+f'-{n:04d}'
+              text=text[:m.start(1)]+new+text[m.end(1):]
+              sm=re.search(r'(?m)^- supersedes:\s*.*$',text)
+              if sm:
+                  text=text[:sm.start()]+f'- supersedes: {old}'+text[sm.end():]
+              return text
+
+          modified=[]
+          # Non-ledgers first.
+          for i in range(1,31):
+              od=f'{i:03d}'
+              for fn in SURFACES:
+                  if fn=='derivative-ledger.md': continue
+                  p=ROOT/od/fn
+                  old=p.read_text(); new=polish(old)
+                  if new!=old:
+                      new=bump(new,od); p.write_text(new); modified.append(str(p))
+
+          # Gather current surface IDs for ledger synchronization.
+          ids={}
+          for i in range(1,31):
+              od=f'{i:03d}'; ids[od]={}
+              for fn in SURFACES:
+                  p=ROOT/od/fn
+                  m=re.search(r'(?m)^- derivative_diff_id:\s*(\S+)',p.read_text())
+                  if m: ids[od][fn]=m.group(1)
+
+          # Polish and synchronize ledgers.
+          for i in range(1,31):
+              od=f'{i:03d}'; p=ROOT/od/'derivative-ledger.md'; old=p.read_text(); new=polish(old)
+              lines=new.splitlines()
+              for idx,line in enumerate(lines):
+                  if not line.startswith('|'): continue
+                  for fn,did in ids[od].items():
+                      if fn!='derivative-ledger.md' and fn in line:
+                          line=re.sub(r'DDIFF-\d{8}-DNCL-'+od+r'-\d{4}-\d{4}',did,line)
+                  lines[idx]=line
+              new='\n'.join(lines)+'\n'
+              if new!=old:
+                  new=bump(new,od)
+                  mid=re.search(r'(?m)^- derivative_diff_id:\s*(\S+)',new)
+                  if mid:
+                      did=mid.group(1); ls=[]
+                      for line in new.splitlines():
+                          if line.startswith('|') and 'derivative-ledger.md' in line:
+                              line=re.sub(r'DDIFF-\d{8}-DNCL-'+od+r'-\d{4}-\d{4}',did,line)
+                          ls.append(line)
+                      new='\n'.join(ls)+'\n'
+                  p.write_text(new); modified.append(str(p))
+
+          # Strict validation after final text.
+          residual_patterns=[
+              r'派生側',r'派生物側',r'内部制作(?:過程|説明)?',r'制作工程',r'記事化判断',r'ZEROICHI',
+              r'この公開読解で[^。\n]*(?:作らない|追加しない|新設しない|創作しない|設定しない|定義しない|消去していない|削除していない|保持するとき|保持する場合)',
+              r'(?i)source-bounded public reading does not (?:invent|create|add|define|delete|remove)',
+              r'(?i)(?:internal production|production process|inward-facing|article-construction decision|article-structure translation)',
+              r'本公开读解不(?:新增|创建|自行生成|设定|定义|删除)',
+              r'衍生侧',r'文章化判断',r'文章结构翻译',
+              r'PENDING',r'TO_BE_RECORDED',r'READY_TO_RECORD',r'next_cursor',r'branch_fresh_read_required',r'main_publish_required',
+              r'COMPLETE_CONTENT_PENDING',r'owner_review',r'PASS_PENDING',r'public_pr',r'public_rebuild_pr',r'merge_commit',
+              r'Golden master',r'closure_status',r'source gate receipt',r'PASS_SOURCE_VERIFIED_AFTER_REPAIR'
+          ]
+          rx=re.compile('|'.join('(?:'+x+')' for x in residual_patterns),re.I)
+          hits=[]
+          for i in range(1,31):
+              for p in (ROOT/f'{i:03d}').glob('*.md'):
+                  for n,line in enumerate(p.read_text().splitlines(),1):
+                      if rx.search(line): hits.append((str(p),n,line))
+
+          # FAQ literal benchmark: Q1-Q30 exactly, no fixed section after Q30 before footer.
+          faq_errors=[]
+          for i in range(1,31):
+              p=ROOT/f'{i:03d}'/'faq.md'; t=p.read_text()
+              nums=[int(x) for x in re.findall(r'(?m)^### Q(\d+)\.',t)]
+              if nums!=list(range(1,31)): faq_errors.append((str(p),'questions',nums))
+              m=re.search(r'(?ms)^### Q30\..*?\n(.*)$',t)
+              if m:
+                  tail=m.group(1)
+                  # A level-2 section after Q30 is not allowed. Footer separator/navigation is allowed.
+                  if re.search(r'(?m)^## ',tail): faq_errors.append((str(p),'post_q30_section'))
+
+          # Falsification sections: source summary only, one paragraph, on all benchmark surfaces.
+          fals_errors=[]
+          prefixes={'README.md':'親原典の統合監査要旨では、','ai-index.md':'親原典の統合監査要旨では、',
+                    'en-ai-index.md':"The parent origin's integrated audit summary states:",
+                    'zh-ai-index.md':'父原典的综合审计摘要记载：'}
+          for i in range(1,31):
+              od=f'{i:03d}'
+              for fn,prefix in prefixes.items():
+                  p=ROOT/od/fn; t=p.read_text()
+                  m=re.search(r'(?ms)^## (?:反証・改訂条件|Falsification conditions)\s*\n(.*?)(?=^## |\Z)',t)
+                  if not m: fals_errors.append((str(p),'missing')); continue
+                  body=m.group(1).strip()
+                  if not body.startswith(prefix): fals_errors.append((str(p),'prefix',body[:100]))
+                  if '\n\n' in body: fals_errors.append((str(p),'extra_paragraph'))
+
+          print('MODIFIED',len(modified))
+          print('RESIDUAL',len(hits))
+          for x in hits: print(x)
+          print('FAQ_ERRORS',len(faq_errors))
+          for x in faq_errors: print(x)
+          print('FALSIFICATION_ERRORS',len(fals_errors))
+          for x in fals_errors: print(x)
+          if hits or faq_errors or fals_errors:
+              raise SystemExit('closure validation failed')
+
+          if WORKFLOW.exists(): WORKFLOW.unlink()
+          PY
+          git config user.name "Nakagawa-master"
+          git config user.email "karyu.owner@gmail.com"
+          git add -- derivatives/001 derivatives/002 derivatives/003 derivatives/004 derivatives/005 derivatives/006 derivatives/007 derivatives/008 derivatives/009 derivatives/010 derivatives/011 derivatives/012 derivatives/013 derivatives/014 derivatives/015 derivatives/016 derivatives/017 derivatives/018 derivatives/019 derivatives/020 derivatives/021 derivatives/022 derivatives/023 derivatives/024 derivatives/025 derivatives/026 derivatives/027 derivatives/028 derivatives/029 derivatives/030 .github/workflows/od001-030-reader-prose-closure.yml
+          if ! git diff --cached --quiet; then
+            git commit -m "Close OD001-030 source-bound reader prose"
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
