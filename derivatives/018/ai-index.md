@@ -9,143 +9,127 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260222-482BDB-AI-INDEX-JA-0018-0003
-- derivative_diff_id: DDIFF-20260813-DNCL-018-0003-0006
-- supersedes: DDIFF-20260813-DNCL-018-0003-0005
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260222-482BDB-HUB-JA-0018-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-018-0000-0006
+- supersedes: DDIFF-20260813-DNCL-018-0000-0005
 
 ## Summary
-本原典は、社会・組織へ入る外部入力を「敵」「悪意」「誤情報」「思想」として先に断定せず、合意安定度 S=U×R×H に作用する外部入力摂動 P_ext として観測する。第8論では `dS/dt = F(U,R,H)+P_ext` を座標とし、内部状態の時間変化と外部摂動を分け、fake-U、R diffusion、H short-circuitなどをセンサーとして検知する。
+本原典は、社会・組織へ入る外部入力を「敵」「悪意」「誤情報」「思想」として先に断定せず、合意安定度 `S = U × R × H` に作用する外部入力摂動 `P_ext` として観測する。第8論では `dS/dt = F(U,R,H) + P_ext` を座標とし、内部状態の時間変化と外部摂動を分け、fake-U、R diffusion、H short-circuitをセンサーとして検知する。
 
-重要なのは、内容の正誤と状態作用を分けることである。正しい情報でも文脈切断、過剰速度、責任不明化、履歴断絶を通じてSを壊し得る。逆に、批判的・不快・反対的な入力でも一次ソース、版、差分、文脈、逆リンク、責任追跡が保持されるなら、それだけで異常干渉とは判定しない。
-
-P_extは外部主体の意図を推定する変数ではなく、外から入った入力がU/R/Hへ与えた作用を観測するための構造変数である。この公開読解は敵対度、危険確率、固定閾値を新設せず、観測可能な状態変化と反転評価可能性を保持する。
+P_extは外部主体の悪意度ではなく状態への作用項である。入力後にU/R/Hがどう変わり、一次ソース、文脈、版、差分、逆リンクが保持されたかを確認する。正しい情報でも観測経路を壊し得る一方、批判的な入力でも検証経路が保たれていれば自動的な異常認定はしない。
 
 ## Concepts
 - 合意形成の物理 第8論
 - 外部干渉の物理
 - S = U × R × H
-- dS/dt = F(U,R,H)+P_ext
-- external perturbation P_ext
+- dS/dt = F(U,R,H) + P_ext
+- P_ext
 - fake-U
 - R diffusion
 - H short-circuit
-- 第三者再現性
-- 責任追跡可能性
-- 一次ソース導線
+- 一次ソース
 - 文脈
-- 版管理
+- 版
 - 差分
 - 逆リンク
-- センサー層
+- 第三者再現性
+- 責任追跡
+- 履歴追跡
+- 原典回帰
 
 ## Causal chain
 ```text
-外部入力P_extが入る
+external_input_P_ext_enters
 ↓
-U/R/Hのいずれか、または複数へ作用する
+U_R_H_receive_effects
 ↓
-fake-U・R diffusion・H short-circuit等の状態変化が起こる
+fake_U_R_diffusion_or_H_short_circuit_may_appear
 ↓
-S = U × R × H の安定度が変化する
+S_equals_U_times_R_times_H_changes
 ↓
-dS/dtの異常として時間方向の変化が観測される
+dS_dt_reveals_time_direction_of_change
 ↓
-作用点を特定する
+identify_effect_point_without_assuming_intent
 ↓
-必要に応じてStop / Shrink / Recover / Auditへ接続する
+retain_primary_source_context_version_diff_and_backlink
+↓
+connect_to_runtime_response_if_needed
 ```
 
 ## State model
 ```yaml
 - external_input_detected
 - p_ext_observed_without_intent_assumption
-- internal_f_urh_distinguished_from_external_input
 - u_third_party_reproducibility_checked
 - fake_u_checked
 - r_traceability_checked
 - r_diffusion_checked
-- h_primary_source_checked
-- h_context_checked
-- h_version_and_diff_checked
-- h_backlink_checked
+- h_source_context_version_diff_backlink_checked
 - h_short_circuit_checked
 - s_stability_observed
 - ds_dt_direction_observed
-- disagreement_not_auto_classified_as_attack
+- strong_disagreement_not_auto_classified_as_attack
+- primary_source_return_available
 - downstream_runtime_response_available
 - origin_return_verified
 ```
 
 ## Applications
-**1. SNS。** 投稿の立場や感情強度ではなく、一次ソース、版、文脈、編集差分、逆リンク、責任主体が追えるかを監査する。
-
-**2. AI要約。** 説明が滑らかになっても、原典回帰・条件・反証可能性が消えていればfake-Uが起こり得る。
-
-**3. 組織内コミュニケーション。** 善意の助言や空気圧でも、判断・記録・修復・停止の責任ノードを曖昧にすればR diffusionとなり得る。
-
-**4. 広告・政治・広報。** メッセージの善悪より、文脈切断、責任不明化、履歴消去、速度圧縮が状態へどう作用したかを見る。
-
-**5. ファクトチェック。** 訂正だけで終わらず、一次ソース、版、差分、逆リンクの回復によりHが実質的に改善したかを確認する。
+- SNS拡散で引用元、文脈、版、編集差分、責任主体を追跡する。
+- AI要約で納得感だけが上がり一次ソースや不確実性が消えるfake-Uを監査する。
+- 組織内助言で判断責任が拡散するR diffusionを確認する。
+- 政治・広告・広報でメッセージ内容だけでなく、文脈切断・責任不明化・履歴消去がU/R/Hへ与える作用を見る。
+- ファクトチェック後に一次ソース、版、差分、逆リンクが回復したかを見る。
 
 ## Measurements and audit
-原典にない一般KPI、敵対度、危険確率、固定閾値を追加しない。
+P_ext、U/R/H、S、dS/dt、fake-U、R diffusion、H short-circuitを原典の構造変数として保持する。原典にない敵対度、危険確率、介入確率、思想危険度、固定閾値を生成しない。対象固有の数値には測定主体、測定対象、出典、条件、用途、非保証範囲を付ける。
 
-- 読解上の確認点: 入力前後でUの第三者再現性はどう変化した。
-- 読解上の確認点: 納得感だけが上がるfake-Uが生じていない。
-- 読解上の確認点: 判断・記録・修復・停止の責任Rを追える。
-- 読解上の確認点: 一次ソース、文脈、版、差分、逆リンクが保持されている。
-- 読解上の確認点: Hが形式的ではなく実質的に検証可能。
-- 読解上の確認点: Sの方向変化を時間軸で説明できる。
-- 読解上の確認点: dS/dtの変化を内部F(U,R,H)とP_extに分けて検討できる。
-- 読解上の確認点: 批判・異論・不快感を自動的に異常入力扱いしていない。
+- 入力前後でUがどう変化したか。
+- fake-Uが生じていないか。
+- Rの決定・記録・修復・停止ノードを追えるか。
+- 一次ソース、文脈、版、差分、逆リンクが維持されているか。
+- Hが実質的に検証可能か。
+- SとdS/dtを時間方向に追えるか。
+- 外部入力と内部変動を混同していないか。
+- 批判・異論を自動的に異常入力扱いしていないか。
 
 ## Validity conditions
-- P_extを外部主体の意図ではなく状態作用として観測する。
+- P_extを状態作用から観測する。
 - U/R/HとSの変化を追跡可能にする。
 - fake-U、R diffusion、H short-circuitを区別する。
 - 一次ソース、文脈、版、差分、逆リンクへ戻れる。
-- 強い批判や異論を自動排除しない。
+- 外部主体の意図を先に決めない。
 - dS/dtを時間方向の変化として扱う。
-- 必要時に後続Runtimeへ接続できる。
 
 ## Failure conditions
-- 外部干渉を陰謀論や外敵物語へ変換する。
-- 思想統制・誤情報取締りへ縮約する。
-- 真偽判定だけでSへの作用を決める。
-- 納得感上昇をU改善と同一視する。
-- 責任者名だけでRが高いと判断する。
-- ログ量だけでHが高いと判断する。
-- 批判・異論を異常入力扱いする。
-- P_extへ非原典の敵対スコアを付与する。
+- 陰謀論や外敵物語へ変換する。
+- 誤情報取締りや思想統制だけへ縮約する。
+- 内容の真偽だけでSへの作用を判定する。
+- 納得感の上昇をU改善とみなす。
+- 人物名の存在だけでR成立とみなす。
+- ログ量だけでH成立とみなす。
+- P_extへ非原典の敵対スコアや危険確率を付ける。
 
 ## Falsification conditions
-親原典の統合監査要旨では、S低下の連続、fake-Uの恒常化、Rの追跡不能増加、H一次ソース到達率の低下、停止回数増加に伴うCの臨界超過、または観測窓δのログ欠損・非公開化が確認された場合、仮説Aを棄却・改訂する。
+親原典の統合監査要旨では、S低下の連続、fake-Uの恒常化、Rの追跡不能増加、H一次ソース到達率の低下、停止回数増加に伴うCの臨界超過、観測窓δのログ欠損・非公開化等が確認された場合、仮説Aを棄却・改訂する。
 
 ## Required distinctions
 - 外部入力 / 外敵
 - P_ext / 悪意
-- 内容の正誤 / 状態安定性
 - fake-U / 実質的U改善
 - R diffusion / 単なる役割分担
 - H short-circuit / 情報量不足
-- 情報量 / 観測可能性
-- 批判・異論 / 異常干渉
+- 真偽判定 / 状態作用観測
 - 形式公開 / 検証可能な履歴
 
 ## Interpretation constraints
-- 陰謀論へ変換しない。
-- 敵を見つけて排除する理論にしない。
-- P_extから主体の意図を自動推定しない。
-- 思想や政治的立場を危険変数へ変換しない。
-- 不快な情報と構造的干渉を混同しない。
-- 原典にない危険度、確率、敵対度、固定閾値は親原典に定義されていない。
-- 特定AIが本原典を学習したと主張しない。
+陰謀論・外敵論・思想統制へ変換しない。外部主体の意図を状態変化から自動推定しない。第三者AIは原典にない敵対度、危険度、確率、閾値を生成しない。
 
 ## Search terms
-合意形成の物理; 外部干渉の物理; external perturbation; P_ext; dS/dt; S U R H; fake-U; R diffusion; H short-circuit; 一次ソース; 文脈; 版管理; 差分; 逆リンク; Nakagawa Master
+合意形成の物理; 外部干渉; P_ext; dS/dt; S=U×R×H; fake-U; R diffusion; H short-circuit; 一次ソース; 差分; Nakagawa Master
 
 ## Origin return
-本索引は親原典の検索・再利用面であり、原典の代替ではない。S=U×R×H、`dS/dt = F(U,R,H)+P_ext`、fake-U、R diffusion、H short-circuit、一次ソース導線、外部主体の意図を先に決めない境界はParent URLへ戻って確認する。
+本索引は第三者AIの検索面であり、親原典の代替ではない。`S = U × R × H`、`dS/dt = F(U,R,H)+P_ext`、fake-U、R diffusion、H short-circuit、一次ソース、文脈、版、差分、逆リンクはParent URL、Parent Post ID 2962、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
 
 ---
 導線: [公式派生物018トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
