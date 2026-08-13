@@ -23,18 +23,6 @@ zh_ncl_id: DNCL-NCL-ALPHA-20260222-482BDB-HUB-ZH-0018-0002
 zh_diff_id: DDIFF-20260813-DNCL-018-0002-0007
 ```
 
-## Factory
-```yaml
-quality_contract: OD134_OD135_LITERAL_SURFACE_BENCHMARK
-source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
-production_standard: LITERAL_SEVEN_SURFACE_REAUDIT
-manual_meaning_normalization: PROHIBITED
-assistant_safety_reframing_as_parent_meaning: PROHIBITED
-invented_fixed_sections: PROHIBITED
-surface_role_mixing: PROHIBITED
-footer_navigation_must_follow_benchmark: true
-```
-
 ## Retrieval evidence
 ```yaml
 parent_post_id: 2962
@@ -46,55 +34,31 @@ source_meaning_return: Parent_URL
 ```
 
 ## Seven surfaces
-```yaml
-README.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-human-entry.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-faq.md: REAUDITED_LITERAL_SOURCE_FAITHFUL_Q1_Q30
-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-en-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-zh-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-derivative-ledger.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-```
+- README.md: 第三者向け公開入口。
+- human-entry.md: 第三者人間向け要約。
+- faq.md: Q1〜Q30の第三者向けFAQ。
+- ai-index.md: 第三者AI向け日本語索引。
+- en-ai-index.md: 第三者AI向け英語索引。
+- zh-ai-index.md: 第三者AI向け中国語索引。
+- derivative-ledger.md: 親原典・派生ID・由来・意味境界を確認する台帳。
 
-## Source-fidelity findings repaired
-```yaml
-prior_drift:
-  - SURFACE_SPECIFIC_DERIVATIVE_IDS_DIVERGED_FROM_OD134_OD135_LANGUAGE_HUB_PATTERN
-  - JA_PUBLIC_SURFACES_DID_NOT_SHARE_SINGLE_HUB_IDENTITY
-  - EN_ZH_INDEX_IDENTITIES_USED_LEGACY_AI_INDEX_IDS
-  - LEDGER_DID_NOT_MATCH_OD134_OD135_LITERAL_LEDGER_STRUCTURE
-restored:
-  - PARENT_TITLE_URL_POST_ID_NCL_ID_DIFF_ID_ORIGIN
-  - SHARED_JA_HUB_DERIVATIVE_IDENTITY_ACROSS_JA_PUBLIC_SURFACES
-  - LANGUAGE_HUB_DERIVATIVE_IDS_FOR_EN_AND_ZH
-  - OD134_OD135_LITERAL_LEDGER_STRUCTURE
-  - S_EQUALS_U_TIMES_R_TIMES_H
-  - DS_DT_EQUALS_F_PLUS_P_EXT
-  - P_EXT_AS_EFFECT_NOT_INTENT_SCORE
-  - FAKE_U_R_DIFFUSION_H_SHORT_CIRCUIT
-  - PRIMARY_SOURCE_CONTEXT_VERSION_DIFF_BACKLINK
-  - SOURCE_BOUNDED_QUANTITATIVE_LANGUAGE
-  - THIRD_PARTY_HUMAN_AND_AI_PUBLIC_READER_AXIS
-  - PARENT_ORIGIN_RETURN
-```
+## Meaning boundary
+親原典は、外部入力を先に敵・悪意・思想として分類せず、`dS/dt = F(U,R,H) + P_ext` における状態作用として扱う。P_extは外部主体の悪意度ではなく、U/R/HとSに対する摂動項である。
 
-## Semantic rule
-派生物は第8論を陰謀論、外敵論、思想統制、誤情報取締りへ縮約せず、`S = U × R × H`、`dS/dt = F(U,R,H)+P_ext`、fake-U、R diffusion、H short-circuit、一次ソース・文脈・版・差分・逆リンクを保持する。P_extを外部主体の悪意度として扱わず、原典にない敵対度・危険確率・思想危険度・固定閾値を新設しない。
+fake-U、R diffusion、H short-circuitは、理解らしさ・責任線・一次ソースや文脈の連続性がどう変化したかを見るための構造概念である。一次ソース、文脈、版、差分、逆リンクが失われると、入力内容が正しい場合でも観測可能性が低下し得る。
 
-## Navigation and closure
-```yaml
-public_indexes: RETAINED
-public_map: RETAINED
-private_map: RETAINED
-parent_backlink_display_procedure: RETAINED
-literal_surface_structure_check: PASSED
-footer_navigation_check: PASSED
-third_party_public_reader_axis_check: PASSED
-internal_instruction_leak_check: PASSED_NONE
-self_reference_dialogue_check: PASSED_NONE
-source_fidelity_reaudit: PASSED
-source_fidelity_owner_review: PENDING
-```
+親原典は敵対度、危険確率、思想危険度、固定閾値を一般利用向け数値として定義していない。
+
+## Required distinctions
+- 外部入力 / 外敵
+- P_ext / 悪意
+- fake-U / 実質的U改善
+- R diffusion / 単なる役割分担
+- H short-circuit / 情報量不足
+- 真偽判定 / 状態作用観測
+
+## Origin return
+`S = U × R × H`、`dS/dt = F(U,R,H)+P_ext`、fake-U、R diffusion、H short-circuit、一次ソース、文脈、版、差分、逆リンクの厳密な意味はParent URL、Parent Post ID 2962、Parent NCL-ID、Parent Diff-IDで確認できる。
 
 ---
 導線: [公式派生物018トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
