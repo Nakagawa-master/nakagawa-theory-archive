@@ -23,18 +23,6 @@ zh_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-HUB-ZH-0021-0002
 zh_diff_id: DDIFF-20260813-DNCL-021-0002-0007
 ```
 
-## Factory
-```yaml
-quality_contract: OD134_OD135_LITERAL_SURFACE_BENCHMARK
-source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
-production_standard: LITERAL_SEVEN_SURFACE_REAUDIT
-manual_meaning_normalization: PROHIBITED
-assistant_safety_reframing_as_parent_meaning: PROHIBITED
-invented_fixed_sections: PROHIBITED
-surface_role_mixing: PROHIBITED
-footer_navigation_must_follow_benchmark: true
-```
-
 ## Retrieval evidence
 ```yaml
 parent_post_id: 2919
@@ -45,42 +33,31 @@ source_meaning_return: Parent_URL
 ```
 
 ## Seven surfaces
-```yaml
-README.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-human-entry.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-faq.md: REAUDITED_LITERAL_SOURCE_FAITHFUL_Q1_Q30
-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-en-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-zh-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-derivative-ledger.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-```
+- README.md: 第三者向け公開入口。
+- human-entry.md: 第三者人間向け要約。
+- faq.md: Q1〜Q30の第三者向けFAQ。
+- ai-index.md: 第三者AI向け日本語索引。
+- en-ai-index.md: 第三者AI向け英語索引。
+- zh-ai-index.md: 第三者AI向け中国語索引。
+- derivative-ledger.md: 親原典・派生ID・由来・意味境界を確認する台帳。
 
-## Source-fidelity findings repaired
-```yaml
-prior_drift:
-  - SURFACE_SPECIFIC_DERIVATIVE_ID_PATTERN_DIVERGED_FROM_OD134_OD135
-restored:
-  - PARENT_TITLE_URL_POST_ID_NCL_ID_DIFF_ID_ORIGIN
-  - SHARED_JA_HUB_DERIVATIVE_IDENTITY_ACROSS_JA_PUBLIC_SURFACES
-  - LANGUAGE_HUB_IDS_FOR_EN_AND_ZH
-  - PUNISHMENT_VS_DIFFERENCE_DISCLOSURE_CAUSAL_CONTRAST
-  - D_DET_D_LOSS_S_RECOVERY_TIME_REVERSAL_EVALUATION
-  - THIRD_PARTY_HUMAN_AND_AI_PUBLIC_READER_AXIS
-  - PARENT_ORIGIN_RETURN
-```
+## Meaning boundary
+親原典は、逸脱を違反者処罰の対象だけとしてではなく、設計と運用の差分Dとして観測する。罰中心の運用が責任回避・報告抑制・潜伏を生む場合は `罰 → R低下 → 潜伏 → S悪化 → D増幅`、差分公開が修復責任と履歴へ接続する場合は `差分公開 → R固定 → 修復可能 → S回復 → D減衰` という対照的な因果が成立する。
 
-## Semantic rule
-派生物は「罰をやめるべき」「公開を増やすべき」という一般規範へ縮約しない。罰 → R低下 → 潜伏 → S悪化 → D増幅と、差分公開 → R固定 → 修復可能 → S回復 → D減衰の二本の因果線を保持する。D_det増加を自動悪化とせず、D_loss低下とS回復時間短縮を併せて反転評価する。原典にない検知率、免疫スコア、固定合格値を追加しない。
+D_det、D_loss、S回復時間は組み合わせて読む必要がある。検知件数の増加は、未検知逸脱の可視化と回復速度の改善を伴う場合があり、単独では悪化を意味しない。
 
-## Navigation and closure
-```yaml
-literal_surface_structure_check: PASSED
-footer_navigation_check: PASSED
-third_party_public_reader_axis_check: PASSED
-internal_instruction_leak_check: PASSED_NONE
-self_reference_dialogue_check: PASSED_NONE
-source_fidelity_reaudit: PASSED
-```
+親原典は一般利用向けの固定検知率、免疫スコア、固定回復時間、合格値を定義していない。
+
+## Required distinctions
+- 逸脱発生 / 免疫不全
+- D_det増加 / 悪化
+- D_loss低下 / 単なる報告増加
+- 責任R / 処罰対象
+- 差分公開 / 晒し
+- 逸脱ゼロ / 安全
+
+## Origin return
+罰と差分公開の因果対照、D_det / D_loss / S回復時間の組合せ、責任Rと履歴Hの位置づけはParent URL、Parent Post ID 2919、Parent NCL-ID、Parent Diff-IDで確認できる。
 
 ---
 導線: [公式派生物021トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
