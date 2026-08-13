@@ -1,0 +1,31 @@
+name: OD001-030 semantic density expansion
+on:
+  push:
+    branches:
+      - audit/od001-030-reader-falsification-20260813
+    paths:
+      - tools/od001_030_semantic_expand.py
+      - tools/od001_030_reader_cleanup_pass4.py
+      - .github/workflows/od001-030-semantic-expand.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  expand:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Remove residual reader-axis instructions
+        run: python tools/od001_030_reader_cleanup_pass4.py
+      - name: Expand under-floor surfaces with source-structure relations
+        run: python tools/od001_030_semantic_expand.py
+      - name: Recheck targeted reader-axis wording after expansion
+        run: python tools/od001_030_reader_cleanup_pass4.py
+      - name: Commit semantic expansion
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add derivatives/001 derivatives/002 derivatives/003 derivatives/004 derivatives/005 derivatives/006 derivatives/007 derivatives/008 derivatives/009 derivatives/010 derivatives/011 derivatives/012 derivatives/013 derivatives/014 derivatives/015 derivatives/016 derivatives/017 derivatives/018 derivatives/019 derivatives/020 derivatives/021 derivatives/022 derivatives/023 derivatives/024 derivatives/025 derivatives/026 derivatives/027 derivatives/028 derivatives/029 derivatives/030
+          if git diff --cached --quiet; then echo "No derivative changes"; else git commit -m "Expand OD001-030 semantic density and remove residual reader instructions" && git push origin HEAD:audit/od001-030-reader-falsification-20260813; fi
+      - name: Validate all 210 public surfaces
+        run: python tools/od001_030_final_validate.py
