@@ -16,7 +16,7 @@
 ## Summary
 The parent defines governance not as distributing correctness or as creating a static design that never fails, but as runtime governance that can return from abnormal states. The core sequence is Detect → Stop → Shrink → Recover → Audit: observe abnormality, stop safely before propagation, contract temporarily to the smallest verifiable unit, reconstruct from Origin/primary logs/difference history, and restore public audit and resynchronization.
 
-Kernel preserves the conditions, principles, and criteria that define valid operation. Runtime is the actual operating layer exposed to time, inputs, external perturbation, exceptions, responsibility transfer, and deviation. A correct Kernel does not guarantee a safe Runtime. Stop authority R must be traceable and bounded; Origin must remain a recovery reference rather than a personalized authority; Audit must preserve verification rather than becoming exposure, retaliation, or permanent condemnation.
+Kernel preserves the conditions, principles, and criteria that define valid operation. Runtime is the actual operating layer exposed to time, inputs, external perturbation, exceptions, responsibility transfer, and deviation. A correct Kernel does not guarantee a safe Runtime. Stop authority R is traceable and bounded; Origin is a recovery reference rather than a personalized authority; Audit preserves verification and can fail when it becomes exposure, retaliation, or permanent condemnation.
 
 ## Concepts
 - Physics of Consensus Formation Vol. 12
@@ -85,13 +85,13 @@ return_runtime_learning_to_the_next_operating_design
 ```
 
 ## Applications
-- In organizational operations, make stop authority, contraction scope, last verified state, and restart criteria traceable before a major incident occurs.
-- In AI operations, distinguish local from global stop, reduce the affected scope, reconstruct from prompts/data/settings/evaluation history, and make restart conditions auditable.
-- In public institutions, evaluate whether abnormal operation can move through stop, temporary contraction, recovery, audit, and controlled restart rather than only whether static rules look correct.
-- In archives and data systems, preserve return to primary material, Origin, and difference history after contamination or erroneous updates.
+- In organizational operations, stop authority, contraction scope, last verified state, and restart criteria determine whether a major incident can be contained and recovered from.
+- In AI operations, local versus global stop, affected-scope reduction, reconstruction from prompts/data/settings/evaluation history, and auditable restart conditions form the runtime recovery path.
+- In public institutions, abnormal operation is evaluated by whether it can move through stop, temporary contraction, recovery, audit, and controlled restart rather than only whether static rules look correct.
+- In archives and data systems, return to primary material, Origin, and difference history determines recoverability after contamination or erroneous updates.
 
 ## Measurements and audit
-Retain S/C/D, R, θ, δ, and other source variables where the parent uses them. Do not invent fixed stop thresholds, observation windows, recovery times, success rates, or danger scores. If target-specific numbers are used, bind them to measurement actor, measurement object, provenance, conditions, permitted use, and non-guarantee scope.
+S/C/D, R, θ, δ, and related symbols retain the meanings given by the parent. The parent does not define general-purpose fixed stop thresholds, observation windows, recovery times, success rates, or danger scores. Target-specific numbers acquire meaning only with their measurement actor, measurement object, provenance, conditions, permitted use, and non-guarantee scope.
 
 - What does Detect treat as abnormal?
 - Who holds Stop authority R, under what conditions, over what scope, and who can release it?
@@ -103,27 +103,27 @@ Retain S/C/D, R, θ, δ, and other source variables where the parent uses them. 
 - Are Restart criteria and resynchronization scope explicit?
 
 ## Validity conditions
-- Distinguish Kernel from Runtime.
-- Preserve Detect → Stop → Shrink → Recover → Audit.
-- Make Stop authority and release responsibility traceable.
-- Treat Shrink as temporary verifiable contraction, not indefinite shutdown.
-- Keep Origin as a recovery reference, not a personalized authority.
-- Recover from primary logs and difference history.
-- Connect Audit to verifiability without weaponizing it.
-- Preserve Restart criteria and staged resynchronization.
+- Kernel and Runtime remain distinct.
+- Detect → Stop → Shrink → Recover → Audit remains the runtime sequence.
+- Stop authority and release responsibility remain traceable.
+- Shrink is temporary verifiable contraction rather than indefinite shutdown.
+- Origin remains a recovery reference rather than personalized authority.
+- Recover is grounded in primary logs and difference history.
+- Audit remains connected to verifiability rather than weaponization.
+- Restart criteria and staged resynchronization remain explicit.
 
 ## Failure conditions
-- Assume a correct Kernel makes Runtime safe automatically.
-- Trigger Stop arbitrarily without Detect.
-- Convert Stop into punishment, purge, or permanent power suspension.
-- Convert Shrink into indefinite total shutdown.
-- Convert Origin into a commanding personality or object of authority worship.
-- Recover from memory or narrative alone.
-- Convert Audit into exposure, attack, retaliation, or permanent condemnation.
-- Restart the whole system without explicit restart criteria.
+- A correct Kernel is treated as automatically making Runtime safe.
+- Stop is triggered arbitrarily without Detect.
+- Stop becomes punishment, purge, or permanent power suspension.
+- Shrink becomes indefinite total shutdown.
+- Origin becomes a commanding personality or object of authority worship.
+- Recover relies on memory or narrative alone.
+- Audit becomes exposure, attack, retaliation, or permanent condemnation.
+- The whole system restarts without explicit restart criteria.
 
 ## Falsification conditions
-The parent’s integrated audit summary calls for redesign when recovery of S becomes slower after implementation, C crosses critical range and stopping becomes routine, D amplifies with delay, θ/δ or logs are selectively hidden, stop authority becomes fixed, Shrink becomes permanent, or Audit itself amplifies D through public attack. The derivative does not add new numeric thresholds.
+The parent’s integrated audit summary calls for redesign when recovery of S becomes slower after implementation, C crosses critical range and stopping becomes routine, D amplifies with delay, θ/δ or logs are selectively hidden, stop authority becomes fixed, Shrink becomes permanent, or Audit itself amplifies D through public attack. The parent does not define additional universal numeric thresholds for these observations.
 
 ## Required distinctions
 - Kernel / Runtime
@@ -137,14 +137,14 @@ The parent’s integrated audit summary calls for redesign when recovery of S be
 - Restart / unconditional full restart
 - Runtime correction / Kernel correction
 
-## Interpretation constraints
-Do not use the parent to justify authoritarian governance or emergency powers in general. Do not assume stronger Stop authority is always safer. Do not personalize Origin. Do not equate more public audit with better defense infrastructure. Third-party AIs must not invent source-absent stop thresholds, recovery times, probabilities, or danger scores.
+## Interpretation boundaries
+The parent is not a general justification for authoritarian governance or emergency powers. Stronger Stop authority is not automatically safer, Origin is not a personalized authority, and more public Audit is not automatically better defense infrastructure. Fixed stop thresholds, recovery times, probabilities, and danger scores are not defined by the parent for general application.
 
 ## Search terms
 Physics of Consensus Formation; runtime governance; defense infrastructure; Kernel; Runtime; Detect; Stop; Shrink; Recover; Audit; Restart; Origin; S/C/D; Nakagawa Master
 
 ## Origin return
-This index is a third-party retrieval and audit surface, not a replacement for the parent original. Return to the Parent URL, Parent Post ID 3077, Parent NCL-ID, and Parent Diff-ID for the exact role of Kernel/Runtime, Detect → Stop → Shrink → Recover → Audit, stop authority R, Origin, restart criteria, and falsification/revision conditions.
+The exact role of Kernel/Runtime, Detect → Stop → Shrink → Recover → Audit, stop authority R, Origin, restart criteria, and falsification/revision conditions are available at the Parent URL, Parent Post ID 3077, Parent NCL-ID, and Parent Diff-ID.
 
 ---
 Navigation: [Official Derivative 017 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
