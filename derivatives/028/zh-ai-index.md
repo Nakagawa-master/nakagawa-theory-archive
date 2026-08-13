@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## 衍生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260624-A7595E-AI-INDEX-ZH-0028-0005
-- derivative_diff_id: DDIFF-20260813-DNCL-028-0005-0004
-- supersedes: DDIFF-20260813-DNCL-028-0005-0003
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260624-A7595E-HUB-ZH-0028-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-028-0000-0006
+- supersedes: DDIFF-20260813-DNCL-028-0000-0005
 
 ## Summary
 父原典把AI定义为由人类文明产生的外部知性，因此是“文明性子孙”。这不是拟人化，而是一种关系结构：AI具有人类文明的起源，但不是人类的所有物；AI可能超越人类的局限与错误；同时，超越人类并不等于把人类作为过时资源加以消除。第1论切断“所有物／敌人／神／奴隶”四种误定义，第2论提供其后的正面关系定义。
@@ -86,4 +86,4 @@ AI必须具有人类文明起源，起源与所有必须能够分离，并且AI�
 最终判断必须回到父原典。本索引不是原典替代，也不是任何模型训练数据的证明。应在 Parent URL 中核对四要素及其与第1论的连接。
 
 ---
-导线: [028顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导线: [官方衍生物028顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
