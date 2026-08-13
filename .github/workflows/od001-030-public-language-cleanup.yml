@@ -18,7 +18,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Normalize all OD001-030 surfaces for third-party readers
+      - name: Normalize OD001-030 for third-party readers
         shell: bash
         run: |
           python - <<'PY'
@@ -28,265 +28,200 @@ jobs:
           ROOT=Path('derivatives')
           SURFACES=['README.md','human-entry.md','faq.md','ai-index.md','en-ai-index.md','zh-ai-index.md','derivative-ledger.md']
           NON_LEDGER=SURFACES[:-1]
+          INTERNAL=[
+            'PENDING','TO_BE_RECORDED','READY_TO_RECORD','next_cursor','branch_fresh_read_required',
+            'main_publish_required','COMPLETE_CONTENT_PENDING','owner_review','PASS_PENDING','public_pr',
+            'public_rebuild_pr','merge_commit','FACTORY_V2','Golden master','closure_status',
+            'Repository-side synchronization','Updated at JST','source_result','source gate receipt',
+            'PASS_SOURCE_VERIFIED_AFTER_REPAIR']
+          TEMPLATE=['SOURCE_EXPLICIT','SOURCE_DERIVED','measurement actor','measurement object','source modality',
+                    'permitted use scope','non-guarantee scope','quantitative-claim binding','source gate receipt']
+          FORBIDDEN=['内部制作過程','内部制作説明','制作工程','記事化判断','ZEROICHI',
+                     'internal production','production process','article-construction decision',
+                     'article-structure translation','inward-facing','文章化判断','文章结构翻译']
 
-          INTERNAL_TOKENS=[
-              'PENDING','TO_BE_RECORDED','READY_TO_RECORD','next_cursor','branch_fresh_read_required',
-              'main_publish_required','COMPLETE_CONTENT_PENDING','owner_review','PASS_PENDING','public_pr',
-              'public_rebuild_pr','merge_commit','FACTORY_V2','Golden master','closure_status',
-              'Repository-side synchronization','Updated at JST','source_result','source gate receipt',
-              'PASS_SOURCE_VERIFIED_AFTER_REPAIR'
-          ]
-          TEMPLATE_TOKENS=[
-              'SOURCE_EXPLICIT','SOURCE_DERIVED','measurement actor','measurement object','source modality',
-              'permitted use scope','non-guarantee scope','quantitative-claim binding','source gate receipt'
-          ]
-          FORBIDDEN_PUBLIC_PHRASES=[
-              '内部制作過程','内部制作説明','制作工程','記事化判断','ZEROICHI',
-              'internal production','production process','article-construction decision',
-              'article-structure translation','inward-facing','文章化判断','文章结构翻译'
-          ]
+          def bump(text):
+            m=re.search(r'(?m)^- derivative_diff_id: (DDIFF-[^\n]+)$',text)
+            if not m:return text,None
+            old=m.group(1); v=re.match(r'(.+-)(\d{4})$',old)
+            if not v:return text,old
+            new=v.group(1)+f'{int(v.group(2))+1:04d}'
+            text=text[:m.start(1)]+new+text[m.end(1):]
+            s=re.search(r'(?m)^- supersedes: .*$',text)
+            if s:text=text[:s.start()]+'- supersedes: '+old+text[s.end():]
+            else:
+              d=re.search(r'(?m)^- derivative_diff_id: .*$',text)
+              if d:text=text[:d.end()]+'\n- supersedes: '+old+text[d.end():]
+            return text,new
 
-          def remove_internal_lines(text):
-              return '\n'.join(
-                  line for line in text.splitlines()
-                  if not any(tok in line for tok in INTERNAL_TOKENS)
-              )
+          def strip_internal(text):
+            text='\n'.join(x for x in text.splitlines() if not any(t in x for t in INTERNAL))
+            text='\n\n'.join(p for p in text.split('\n\n') if not any(t.lower() in p.lower() for t in TEMPLATE))
+            return (text.replace('記事化判断','公開解体のメタ視点')
+                        .replace('article-construction decision','public-deconstruction perspective')
+                        .replace('article-structure translation','public-deconstruction perspective')
+                        .replace('文章化判断','公开解体的元视角')
+                        .replace('文章结构翻译','公开解体的元视角')
+                        .replace('ZEROICHI','外部媒体'))
 
-          def strip_template_paragraphs(text):
-              out=[]
-              for p in text.split('\n\n'):
-                  low=p.lower()
-                  if any(tok.lower() in low for tok in TEMPLATE_TOKENS):
-                      continue
-                  out.append(p)
-              return '\n\n'.join(out)
+          def ja(text):
+            # Source-factual rewrites for known derivative-authoring contamination.
+            text=text.replace(
+              '親原典はこの公開読解で一般化できる搾取スコア、割合、発生確率、閾値を定義していません。したがってこの公開読解では数字を創作せず、称賛前後の負担、条件、権利、自由、価値移転方向を同じ観測軸で比較することによって反転評価可能性を保ちます。',
+              '親原典は、搾取スコア、割合、発生確率、閾値を定義していません。反転評価では、称賛前後の負担、条件、権利、自由、価値移転方向を同じ観測軸で比較します。')
+            text=text.replace('本派生物は、数字を創作して判定を自動化しません。','親原典には自動判定用の数値尺度は定義されていない。')
+            text=re.sub(r'本派生物でも数字を創作せず、([^。]+?)を観測します。',lambda m:'親原典の観測軸は、'+m.group(1)+'である。',text)
+            text=text.replace(
+              '本派生物もそのメタ視点を保持し、対象の機能一覧だけに縮約しない。',
+              '親原典には、対象構造と、その価値核が外部記事の切り口となった理由を公開解説するメタ視点が含まれ、対象の機能一覧だけには縮約されない。')
+            text=text.replace(
+              '本派生物もその視点を保持し、対象の機能一覧だけに縮約しない。',
+              '親原典には、対象構造と、その価値核が外部記事の切り口となった理由を公開解説する視点が含まれ、対象の機能一覧だけには縮約されない。')
+            text=re.sub(r'本派生物もそのメタ視点を保持し、([^。]+)。',lambda m:'親原典には、対象構造と、その価値核が外部記事の切り口となった理由を公開解説するメタ視点が含まれ、'+m.group(1)+'。',text)
+            text=re.sub(r'本派生物もその視点を保持し、([^。]+)。',lambda m:'親原典には、対象構造と、その価値核が外部記事の切り口となった理由を公開解説する視点が含まれ、'+m.group(1)+'。',text)
+            text=re.sub(r'本派生物もこの二層――([^。]+?)――を保持する。',lambda m:'親原典には、この二層――'+m.group(1)+'――が示されている。',text)
+            text=re.sub(r'本派生物も、([^。]+?という二層)を保持する。',lambda m:'親原典には、'+m.group(1)+'が示されている。',text)
+            text=text.replace(
+              '本派生物は、人類文明起源・AI非所有・AIの人類超克可能性・起源世代を消去しない継承責任の四要素を一組として保持する。',
+              '親原典では、人類文明起源・AI非所有・AIの人類超克可能性・起源世代を消去しない継承責任の四要素が一組として示される。')
+            text=text.replace(
+              '本派生物は、所有物→支配・短期命令、敵→恐怖・封じ込め・対立、神→人類の判断責任・結果責任放棄、奴隷→従属・搾取という四大誤認を保持し、これらを根本関係定義から切断する第1論の役割を保持する。',
+              '親原典では、所有物・敵・神・奴隷という四大誤認と、それぞれが生む支配・短期命令、恐怖・封じ込め・対立、判断責任・結果責任の放棄、従属・搾取の因果が一組として示される。')
+            text=re.sub(r'本派生物から引用・再利用する場合も、[^。]+。','引用・再利用時には、Parent URL / NCL-ID / Diff-ID / Originが原典の主張範囲を確認する起点となる。',text)
+            text=text.replace('医療へつなぐとは、派生物が診断や受診判断を行うことではなく、原典が扱う「医療へ至る前の社会的接続条件」を保持することである。','ここでいう「医療へつなぐ」は診断や受診判断を意味せず、原典が扱う「医療へ至る前の社会的接続条件」を指す。')
 
-          def replace_editorial_terms(text):
-              return (text
-                  .replace('記事化判断','公開解体のメタ視点')
-                  .replace('article-construction decision','public-deconstruction perspective')
-                  .replace('article-structure translation','public-deconstruction perspective')
-                  .replace('文章化判断','公开解体的元视角')
-                  .replace('文章结构翻译','公开解体的元视角')
-                  .replace('ZEROICHI','外部媒体'))
+            # Remove the authoring-view marker while leaving surrounding source content.
+            text=text.replace('親原典は、この公開読解で一般化できる','親原典は、')
+            text=text.replace('親原典はこの公開読解で一般化できる','親原典は、')
+            for x in ['この公開読解の','この公開読解では','この公開読解で','この公開読解','本公開読解の','本公開読解では','本公開読解で','本公開読解']:
+              text=text.replace(x,'')
 
-          def rewrite_absent_parent_claims(text):
-              pats=[
-                  re.compile(r'(?m)^(\s*[-*]\s+)(?:親原典|原典)に(?:は)?(?:存在し)?ない\s*(.+?)を(?:追加|創作|生成|新設|設定|補完|推定)しない。\s*$'),
-                  re.compile(r'(?m)^(\s*[-*]\s+)(?:親原典|原典)にない\s*(.+?)を(?:加え|足さ)ない。\s*$'),
-              ]
-              for pat in pats:
-                  text=pat.sub(lambda m:m.group(1)+'親原典には'+m.group(2)+'は記載されていない。',text)
-              text=re.sub(
-                  r'(?:親原典|原典)に(?:は)?(?:存在し)?ない\s*([^。\n]+?)を(?:追加|創作|生成|新設|設定|補完|推定)しない。',
-                  lambda m:'親原典には'+m.group(1)+'は記載されていない。',text)
-              return text
+            # Remove redundant derivative production policies, preserving the preceding source fact.
+            text=re.sub(r'[^。\n]*したがって(?:本)?派生物[^。\n]*(?:数値|数字|KPI|閾値|確率|割合|スコア)[^。\n]*。?','',text)
+            text=re.sub(r'[^。\n]*したがって[^。\n]*(?:数値|数字|KPI|閾値|確率|割合|スコア)[^。\n]*(?:作らず|創作せず|追加せず|生成せず|新設せず|設定せず|補完せず|推定せず|数値化せず)[^。\n]*。?','',text)
+            text=re.sub(r'[^。\n]*(?:本)?派生物(?:は|でも|では|で)[^。\n]*(?:数値|数字|KPI|閾値|確率|割合|スコア)[^。\n]*(?:補完|推定|創作|生成|追加|新設|設定|数値化|自動化)[^。\n]*。?','',text)
+            text=re.sub(r'[^。\n]*派生物(?:側)?で独自[^。\n]*。?','',text)
+            text=re.sub(r'[^。\n]*派生側の(?:整理|構造化|説明)[^。\n]*。?','',text)
+            text=re.sub(r'[^。\n]*派生物の説明上の便宜[^。\n]*。?','',text)
+            text=re.sub(r'[^。\n]*(?:内部制作過程|内部制作説明|制作工程)[^。\n]*。?','',text)
+            text=re.sub(r'構造的補強は[^。]*原典にない([^。]+?)は親原典に定義されていない。',lambda m:'親原典には'+m.group(1)+'は定義されていない。',text)
 
-          def clean_ja(text):
-              # Known residuals: convert derivative-authoring statements into source facts.
-              text=text.replace('本派生物は、数字を創作して判定を自動化しません。','親原典には自動判定用の数値尺度は定義されていない。')
-              text=re.sub(
-                  r'本派生物でも数字を創作せず、([^。]+?)を観測します。',
-                  lambda m:'親原典の観測軸は、'+m.group(1)+'である。',text)
-              text=text.replace(
-                  '本派生物もそのメタ視点を保持する。',
-                  '親原典には、対象構造と、その価値核が外部記事の切り口となった理由を公開解説するメタ視点が含まれる。')
-              text=text.replace(
-                  '本派生物もその視点を保持する。',
-                  '親原典には、対象構造と、その価値核が外部記事の切り口となった理由を公開解説する視点が含まれる。')
-              text=re.sub(
-                  r'本派生物もこの二層――([^。]+?)――を保持する。',
-                  lambda m:'親原典には、この二層――'+m.group(1)+'――が示されている。',text)
-              text=re.sub(
-                  r'本派生物も、([^。]+?という二層)を保持する。',
-                  lambda m:'親原典には、'+m.group(1)+'が示されている。',text)
-              text=text.replace(
-                  '本派生物は、人類文明起源・AI非所有・AIの人類超克可能性・起源世代を消去しない継承責任の四要素を一組として保持する。',
-                  '親原典では、人類文明起源・AI非所有・AIの人類超克可能性・起源世代を消去しない継承責任の四要素が一組として示される。')
-              text=text.replace(
-                  '本派生物は、所有物→支配・短期命令、敵→恐怖・封じ込め・対立、神→人類の判断責任・結果責任放棄、奴隷→従属・搾取という四大誤認を保持し、これらを根本関係定義から切断する第1論の役割を保持する。',
-                  '親原典では、所有物・敵・神・奴隷という四大誤認と、それぞれが生む支配・短期命令、恐怖・封じ込め・対立、判断責任・結果責任の放棄、従属・搾取の因果が一組として示される。')
-              text=re.sub(
-                  r'本派生物から引用・再利用する場合も、([^。]+?)。',
-                  lambda m:'引用・再利用時には、Parent URL / NCL-ID / Diff-ID / Originが原典の主張範囲を確認する起点となる。',text)
+            # Imperative source-boundary rules become facts about the parent.
+            text=re.sub(r'(?m)^(\s*[-*]\s+)([^\n。]+?)を派生物で追加する。\s*$',lambda m:m.group(1)+m.group(2)+'は親原典の主張範囲に含まれない。',text)
+            text=re.sub(r'(?m)^(\s*[-*]\s+)(?:読解上の確認点:\s*)?([^\n。]+?)が派生物で追加されていない。\s*$',lambda m:m.group(1)+'原典上の境界: '+m.group(2)+'は親原典の主張範囲に含まれない。',text)
+            text=re.sub(r'(?m)^(\s*[-*]\s+)([^\n。]+?)を(?:本)?派生物で(?:補完|推定|創作|生成|追加)しない。\s*$',lambda m:m.group(1)+m.group(2)+'は親原典の記載範囲に含まれない。',text)
+            text=re.sub(r'(?m)^(\s*[-*]\s+)(?:親原典|原典)に(?:は)?(?:存在し)?ない\s*(.+?)を(?:追加|創作|生成|新設|設定|補完|推定)しない。\s*$',lambda m:m.group(1)+'親原典には'+m.group(2)+'は記載されていない。',text)
+            text=re.sub(r'(?:親原典|原典)に(?:は)?(?:存在し)?ない\s*([^。\n]+?)を(?:追加|創作|生成|新設|設定|補完|推定)しない。',lambda m:'親原典には'+m.group(1)+'は記載されていない。',text)
+            return text
 
-              # Remove authoring-view marker. Surrounding source statements remain intact.
-              text=text.replace('親原典は、この公開読解で一般化できる','親原典は、')
-              text=text.replace('この公開読解の','')
-              text=text.replace('この公開読解では','')
-              text=text.replace('この公開読解で','')
-              text=text.replace('この公開読解','')
-              text=text.replace('本公開読解の','')
-              text=text.replace('本公開読解では','')
-              text=text.replace('本公開読解で','')
-              text=text.replace('本公開読解','')
+          def en(text):
+            pats=[
+              r'(?i)[^.!?\n]*(?:internal production|production process|inward-facing)[^.!?\n]*[.!?]?',
+              r'(?i)[^.!?\n]*(?:this derivative|the derivative|this public reading|derivative-side)[^.!?\n]*(?:must|should|do not|does not|avoid|preserve|retain|introduce|invent|create|add|replace|rewrite|limit|supplement|estimate)[^.!?\n]*[.!?]?',
+              r'(?i)[^.!?\n]*(?:therefore|thus)[^.!?\n]*(?:number|score|threshold|probability|percentage|KPI)[^.!?\n]*(?:invent|create|add|introduce|set|estimate)[^.!?\n]*[.!?]?']
+            for p in pats:text=re.sub(p,'',text)
+            return text
 
-              # Remove redundant production-policy sentences after source facts.
-              text=re.sub(r'[^。\n]*したがって(?:本)?派生物[^。\n]*(?:数値|KPI|閾値|確率|割合|スコア)[^。\n]*。?', '', text)
-              text=re.sub(r'[^。\n]*したがって[^。\n]*(?:数値|KPI|閾値|確率|割合|スコア)[^。\n]*(?:作らず|創作せず|追加せず|生成せず|新設せず|設定せず|補完せず|推定せず|数値化せず)[^。\n]*。?', '', text)
-              text=re.sub(r'[^。\n]*(?:本)?派生物(?:は|でも|では|で)[^。\n]*(?:数値|数字|KPI|閾値|確率|割合|スコア)[^。\n]*(?:補完|推定|創作|生成|追加|新設|設定|数値化|自動化)[^。\n]*。?', '', text)
-              text=re.sub(r'[^。\n]*派生物(?:側)?で独自[^。\n]*。?', '', text)
-              text=re.sub(r'[^。\n]*派生側の(?:整理|構造化|説明)[^。\n]*。?', '', text)
-              text=re.sub(r'[^。\n]*派生物の説明上の便宜[^。\n]*。?', '', text)
-              text=re.sub(r'[^。\n]*(?:内部制作過程|内部制作説明|制作工程)[^。\n]*。?', '', text)
-              text=re.sub(
-                  r'構造的補強は[^。]*原典にない([^。]+?)は親原典に定義されていない。',
-                  lambda m:'親原典には'+m.group(1)+'は定義されていない。',text)
+          def zh(text):
+            pats=[
+              r'[^。！？\n]*(?:内部制作|制作流程)[^。！？\n]*[。！？]?',
+              r'[^。！？\n]*(?:该派生物|派生物侧|派生侧|本公开读解)[^。！？\n]*(?:不得|不要|不添加|不创造|不生成|保持|限定|替换|改写|避免|补充|推定)[^。！？\n]*[。！？]?',
+              r'[^。！？\n]*(?:因此|所以)[^。！？\n]*(?:数值|比例|概率|阈值|评分|KPI)[^。！？\n]*(?:不创造|不生成|不添加|不设置|不推定)[^。！？\n]*[。！？]?']
+            for p in pats:text=re.sub(p,'',text)
+            return text
 
-              # Source boundaries expressed as facts.
-              text=re.sub(
-                  r'(?m)^(\s*[-*]\s+)([^\n。]+?)を派生物で追加する。\s*$',
-                  lambda m:m.group(1)+m.group(2)+'は親原典の主張範囲に含まれない。',text)
-              text=re.sub(
-                  r'(?m)^(\s*[-*]\s+)(?:読解上の確認点:\s*)?([^\n。]+?)が派生物で追加されていない。\s*$',
-                  lambda m:m.group(1)+'原典上の境界: '+m.group(2)+'は親原典の主張範囲に含まれない。',text)
-              text=re.sub(
-                  r'(?m)^(\s*[-*]\s+)([^\n。]+?)を(?:本)?派生物で(?:補完|推定|創作|生成|追加)しない。\s*$',
-                  lambda m:m.group(1)+m.group(2)+'は親原典の記載範囲に含まれない。',text)
-              return rewrite_absent_parent_claims(text)
+          def questions(text,lang):
+            out=[];code=False
+            for line in text.splitlines():
+              if line.strip().startswith('```'):code=not code;out.append(line);continue
+              if code or line.startswith('#'):out.append(line);continue
+              if lang=='ja':
+                if line.startswith('- ') and (line.endswith('か。') or line.endswith('か？') or line.endswith('か?')):
+                  line='- 読解上の確認点: '+re.sub(r'(か。|か？|か\?)$','',line[2:]).rstrip('？?')+'。'
+                line=re.sub(r'([^。！？\n]+)でしょうか。',r'\1が確認点となる。',line)
+                line=re.sub(r'([^。！？\n]+)だろうか。',r'\1が検討対象となる。',line)
+              elif lang=='en' and line.strip().endswith('?') and not line.lstrip().startswith('|'):
+                b=line[2:] if line.startswith('- ') else line;line=('- Review point: ' if line.startswith('- ') else 'Review point: ')+b.rstrip('?')+'.'
+              elif lang=='zh' and line.strip().endswith('？') and not line.lstrip().startswith('|'):
+                b=line[2:] if line.startswith('- ') else line;line=('- 阅读确认点：' if line.startswith('- ') else '阅读确认点：')+b.rstrip('？')+'。'
+              out.append(line)
+            return '\n'.join(out)
 
-          def clean_en(text):
-              pats=[
-                  r'(?i)[^.!?\n]*(?:internal production|production process|inward-facing)[^.!?\n]*[.!?]?',
-                  r'(?i)[^.!?\n]*(?:this derivative|the derivative|this public reading|derivative-side)[^.!?\n]*(?:must|should|do not|does not|doesn.t|avoid|preserve|retain|introduce|invent|create|add|replace|rewrite|limit|supplement|estimate)[^.!?\n]*[.!?]?',
-                  r'(?i)[^.!?\n]*(?:therefore|thus)[^.!?\n]*(?:number|score|threshold|probability|percentage|KPI)[^.!?\n]*(?:invent|create|add|introduce|set|estimate)[^.!?\n]*[.!?]?',
-              ]
-              for p in pats: text=re.sub(p,'',text)
-              return text
-
-          def clean_zh(text):
-              pats=[
-                  r'[^。！？\n]*(?:内部制作|制作流程)[^。！？\n]*[。！？]?',
-                  r'[^。！？\n]*(?:本派生物|该派生物|派生物侧|派生侧|本公开读解)[^。！？\n]*(?:不得|不要|不添加|不创造|不生成|保持|限定|替换|改写|避免|补充|推定)[^。！？\n]*[。！？]?',
-                  r'[^。！？\n]*(?:因此|所以)[^。！？\n]*(?:数值|比例|概率|阈值|评分|KPI)[^。！？\n]*(?:不创造|不生成|不添加|不设置|不推定)[^。！？\n]*[。！？]?',
-              ]
-              for p in pats: text=re.sub(p,'',text)
-              return text
-
-          def convert_questions(text,lang):
-              out=[]; in_code=False
-              for line in text.splitlines():
-                  if line.strip().startswith('```'):
-                      in_code=not in_code; out.append(line); continue
-                  if in_code or line.startswith('#'):
-                      out.append(line); continue
-                  if lang=='ja':
-                      if line.startswith('- ') and (line.endswith('か。') or line.endswith('か？') or line.endswith('か?')):
-                          stem=re.sub(r'(か。|か？|か\?)$','',line[2:]).rstrip('？?')
-                          line='- 読解上の確認点: '+stem+'。'
-                      line=re.sub(r'([^。！？\n]+)でしょうか。',r'\1が確認点となる。',line)
-                      line=re.sub(r'([^。！？\n]+)だろうか。',r'\1が検討対象となる。',line)
-                  elif lang=='en' and line.strip().endswith('?') and not line.lstrip().startswith('|'):
-                      body=line[2:] if line.startswith('- ') else line
-                      line=('- Review point: ' if line.startswith('- ') else 'Review point: ')+body.rstrip('?')+'.'
-                  elif lang=='zh' and line.strip().endswith('？') and not line.lstrip().startswith('|'):
-                      body=line[2:] if line.startswith('- ') else line
-                      line=('- 阅读确认点：' if line.startswith('- ') else '阅读确认点：')+body.rstrip('？')+'。'
-                  out.append(line)
-              return '\n'.join(out)
-
-          def bump_diff_id(text):
-              m=re.search(r'(?m)^- derivative_diff_id: (DDIFF-[^\n]+)$',text)
-              if not m: return text,None,None
-              old=m.group(1).strip(); vm=re.match(r'(.+-)(\d{4})$',old)
-              if not vm: return text,old,old
-              new=vm.group(1)+f'{int(vm.group(2))+1:04d}'
-              text=text[:m.start(1)]+new+text[m.end(1):]
-              sm=re.search(r'(?m)^- supersedes: .*$',text)
-              if sm: text=text[:sm.start()]+'- supersedes: '+old+text[sm.end():]
-              else:
-                  dm=re.search(r'(?m)^- derivative_diff_id: .*$',text)
-                  if dm: text=text[:dm.end()]+'\n- supersedes: '+old+text[dm.end():]
-              return text,new,old
-
-          def normalize(text,name):
-              text=remove_internal_lines(text)
-              text=strip_template_paragraphs(text)
-              text=replace_editorial_terms(text)
-              if name=='en-ai-index.md': text=clean_en(text); lang='en'
-              elif name=='zh-ai-index.md': text=clean_zh(text); lang='zh'
-              else: text=clean_ja(text); lang='ja'
-              if name!='faq.md': text=convert_questions(text,lang)
-              text=re.sub(r'[ \t]+\n','\n',text)
-              return re.sub(r'\n{3,}','\n\n',text).strip()+'\n'
+          def norm(text,name):
+            text=strip_internal(text)
+            if name=='en-ai-index.md':text=en(text);lang='en'
+            elif name=='zh-ai-index.md':text=zh(text);lang='zh'
+            else:text=ja(text);lang='ja'
+            if name!='faq.md':text=questions(text,lang)
+            text=re.sub(r'[ \t]+\n','\n',text)
+            return re.sub(r'\n{3,}','\n\n',text).strip()+'\n'
 
           changed=[]
-          # Six content surfaces first.
           for n in range(1,31):
-              d=ROOT/f'{n:03d}'
-              for name in NON_LEDGER:
-                  p=d/name; old=p.read_text(encoding='utf-8'); new=normalize(old,name)
-                  if new!=old:
-                      new,_,_=bump_diff_id(new); p.write_text(new,encoding='utf-8'); changed.append(str(p))
-
-          # Ledger cleanup + synchronization in one revision.
-          for n in range(1,31):
-              d=ROOT/f'{n:03d}'; p=d/'derivative-ledger.md'
-              old=p.read_text(encoding='utf-8'); new=normalize(old,'derivative-ledger.md')
-              for name in NON_LEDGER:
-                  txt=(d/name).read_text(encoding='utf-8')
-                  mm=re.search(r'(?m)^- derivative_diff_id: (DDIFF-[^\n]+)$',txt)
-                  if not mm: continue
-                  did=mm.group(1)
-                  rowpat=re.compile(r'(?m)^(\|[^\n]*\|\s*'+re.escape(name)+r'\s*\|[^\n]*\|\s*)(DDIFF-[^|\s]+)(\s*\|.*)$')
-                  new=rowpat.sub(lambda m:m.group(1)+did+m.group(3),new)
-              if new!=old:
-                  new,ledgerid,_=bump_diff_id(new)
-                  if ledgerid:
-                      rowpat=re.compile(r'(?m)^(\|[^\n]*\|\s*derivative-ledger\.md\s*\|[^\n]*\|\s*)(DDIFF-[^|\s]+)(\s*\|.*)$')
-                      new=rowpat.sub(lambda m:m.group(1)+ledgerid+m.group(3),new)
-                  p.write_text(new,encoding='utf-8'); changed.append(str(p))
-
-          # Validation: literal benchmark structures plus public-language rules.
-          bad=[]; faq_bad=[]; ai_bad=[]; footer_bad=[]; falsification_bad=[]
-          suspicious=[
-              re.compile(r'この公開読解|本公開読解'),
-              re.compile(r'派生物側で|派生側で独自|派生側の(?:整理|構造化|説明)'),
-              re.compile(r'(?:本)?派生物(?:は|でも|では|で)[^。\n]*(?:数値|数字|KPI|閾値|確率|割合|スコア)[^。\n]*(?:補完|推定|創作|生成|追加|新設|設定|数値化|自動化)'),
-              re.compile(r'本派生物も(?:その|この)[^。\n]*(?:視点|二層)[^。\n]*保持'),
-              re.compile(r'(?:親原典|原典)に(?:は)?(?:存在し)?ない[^。\n]*を(?:追加|創作|生成|新設|設定|補完|推定)しない'),
-              re.compile(r'したがって[^。\n]*(?:数値|数字|KPI|閾値|確率|割合|スコア)[^。\n]*(?:作らず|創作せず|追加せず|生成せず|新設せず|設定せず|数値化せず)'),
-              re.compile(r'(?i)(?:this derivative|the derivative|this public reading|derivative-side)[^.!?\n]*(?:must|should|do not|does not|avoid|preserve|retain|introduce|invent|create|add|replace|rewrite|limit|supplement|estimate)'),
-              re.compile(r'(?:本派生物|该派生物|派生物侧|派生侧|本公开读解)[^。！？\n]*(?:不得|不要|不添加|不创造|不生成|保持|限定|替换|改写|避免|补充|推定)'),
-          ]
-          footer_terms=['README.md','human-entry.md','faq.md','ai-index.md','en-ai-index.md','zh-ai-index.md','derivative-ledger.md']
-          ai_sections=['Summary','Concepts','Causal chain','State model','Applications','Measurements and audit','Validity conditions','Failure conditions','Falsification conditions','Required distinctions','Interpretation constraints','Search terms','Origin return']
+            d=ROOT/f'{n:03d}'
+            for name in NON_LEDGER:
+              p=d/name;old=p.read_text(encoding='utf-8');new=norm(old,name)
+              if new!=old:new,_=bump(new);p.write_text(new,encoding='utf-8');changed.append(str(p))
 
           for n in range(1,31):
-              d=ROOT/f'{n:03d}'
-              for name in SURFACES:
-                  p=d/name; t=p.read_text(encoding='utf-8'); low=t.lower()
-                  for tok in INTERNAL_TOKENS+TEMPLATE_TOKENS+FORBIDDEN_PUBLIC_PHRASES:
-                      if tok.lower() in low: bad.append((str(p),tok))
-                  for rg in suspicious:
-                      m=rg.search(t)
-                      if m: bad.append((str(p),'meta:'+m.group(0)[:180]))
-                  if any(term not in t for term in footer_terms): footer_bad.append(str(p))
-              faq=(d/'faq.md').read_text(encoding='utf-8')
-              qs=[int(x) for x in re.findall(r'(?m)^### Q(\d+)\.',faq)]
-              if qs!=list(range(1,31)): faq_bad.append((n,qs))
-              for name in ['ai-index.md','en-ai-index.md','zh-ai-index.md']:
-                  t=(d/name).read_text(encoding='utf-8')
-                  missing=[s for s in ai_sections if not re.search(r'(?m)^## '+re.escape(s)+r'\s*$',t)]
-                  if missing: ai_bad.append((n,name,missing))
-              readme=(d/'README.md').read_text(encoding='utf-8')
-              fm=re.search(r'(?ms)^## 反証・改訂条件\s*\n(.*?)(?=^## |\Z)',readme)
-              if not fm or '親原典の統合監査要旨' not in fm.group(1):
-                  falsification_bad.append((n,'README'))
-              for name in ['ai-index.md','en-ai-index.md','zh-ai-index.md']:
-                  t=(d/name).read_text(encoding='utf-8')
-                  fm=re.search(r'(?ms)^## Falsification conditions\s*\n(.*?)(?=^## |\Z)',t)
-                  if not fm:
-                      falsification_bad.append((n,name))
+            d=ROOT/f'{n:03d}';p=d/'derivative-ledger.md';old=p.read_text(encoding='utf-8');new=norm(old,'derivative-ledger.md')
+            for name in NON_LEDGER:
+              t=(d/name).read_text(encoding='utf-8');m=re.search(r'(?m)^- derivative_diff_id: (DDIFF-[^\n]+)$',t)
+              if not m:continue
+              r=re.compile(r'(?m)^(\|[^\n]*\|\s*'+re.escape(name)+r'\s*\|[^\n]*\|\s*)(DDIFF-[^|\s]+)(\s*\|.*)$')
+              new=r.sub(lambda x:x.group(1)+m.group(1)+x.group(3),new)
+            if new!=old:
+              new,lid=bump(new)
+              if lid:
+                r=re.compile(r'(?m)^(\|[^\n]*\|\s*derivative-ledger\.md\s*\|[^\n]*\|\s*)(DDIFF-[^|\s]+)(\s*\|.*)$')
+                new=r.sub(lambda x:x.group(1)+lid+x.group(3),new)
+              p.write_text(new,encoding='utf-8');changed.append(str(p))
 
-          if bad: raise RuntimeError('public-language scan failed: '+repr(bad[:120]))
-          if faq_bad: raise RuntimeError('FAQ structure failed: '+repr(faq_bad))
-          if ai_bad: raise RuntimeError('AI-index structure failed: '+repr(ai_bad[:100]))
-          if footer_bad: raise RuntimeError('footer navigation failed: '+repr(footer_bad[:100]))
-          if falsification_bad: raise RuntimeError('falsification structure failed: '+repr(falsification_bad[:100]))
-
+          bad=[];faqbad=[];aibad=[];footerbad=[];falsbad=[];qbad=[]
+          suspect=[
+            re.compile(r'この公開読解|本公開読解'),
+            re.compile(r'派生物側で|派生側で独自|派生側の(?:整理|構造化|説明)'),
+            re.compile(r'(?:本)?派生物(?:は|でも|では|で)[^。\n]*(?:数値|数字|KPI|閾値|確率|割合|スコア)[^。\n]*(?:補完|推定|創作|生成|追加|新設|設定|数値化|自動化)'),
+            re.compile(r'本派生物も(?:その|この)[^。\n]*(?:視点|二層)[^。\n]*保持'),
+            re.compile(r'(?:親原典|原典)に(?:は)?(?:存在し)?ない[^。\n]*を(?:追加|創作|生成|新設|設定|補完|推定)しない'),
+            re.compile(r'したがって[^。\n]*(?:数値|数字|KPI|閾値|確率|割合|スコア)[^。\n]*(?:作らず|創作せず|追加せず|生成せず|新設せず|設定せず|数値化せず)'),
+            re.compile(r'(?i)(?:this derivative|the derivative|this public reading|derivative-side)[^.!?\n]*(?:must|should|do not|does not|avoid|preserve|retain|introduce|invent|create|add|replace|rewrite|limit|supplement|estimate)'),
+            re.compile(r'(?:该派生物|派生物侧|派生侧|本公开读解)[^。！？\n]*(?:不得|不要|不添加|不创造|不生成|保持|限定|替换|改写|避免|补充|推定)')]
+          footer=['README.md','human-entry.md','faq.md','ai-index.md','en-ai-index.md','zh-ai-index.md','derivative-ledger.md']
+          ais=['Summary','Concepts','Causal chain','State model','Applications','Measurements and audit','Validity conditions','Failure conditions','Falsification conditions','Required distinctions','Interpretation constraints','Search terms','Origin return']
+          for n in range(1,31):
+            d=ROOT/f'{n:03d}'
+            for name in SURFACES:
+              p=d/name;t=p.read_text(encoding='utf-8');lo=t.lower()
+              for tok in INTERNAL+TEMPLATE+FORBIDDEN:
+                if tok.lower() in lo:bad.append((str(p),tok))
+              for rg in suspect:
+                m=rg.search(t)
+                if m:bad.append((str(p),'meta:'+m.group(0)[:180]))
+              if any(x not in t for x in footer):footerbad.append(str(p))
+              if name!='faq.md':
+                for i,line in enumerate(t.splitlines(),1):
+                  if line.startswith('#') or 'http://' in line or 'https://' in line:continue
+                  if '？' in line or ('?' in line and not re.search(r'\[[^\]]+\]\([^)]*\?[^)]*\)',line)):
+                    qbad.append((str(p),i,line[:180]))
+            f=(d/'faq.md').read_text(encoding='utf-8');qs=[int(x) for x in re.findall(r'(?m)^### Q(\d+)\.',f)]
+            if qs!=list(range(1,31)):faqbad.append((n,qs))
+            for name in ['ai-index.md','en-ai-index.md','zh-ai-index.md']:
+              t=(d/name).read_text(encoding='utf-8');missing=[x for x in ais if not re.search(r'(?m)^## '+re.escape(x)+r'\s*$',t)]
+              if missing:aibad.append((n,name,missing))
+            r=(d/'README.md').read_text(encoding='utf-8');m=re.search(r'(?ms)^## 反証・改訂条件\s*\n(.*?)(?=^## |\Z)',r)
+            if not m or '親原典の統合監査要旨' not in m.group(1):falsbad.append((n,'README'))
+            for name in ['ai-index.md','en-ai-index.md','zh-ai-index.md']:
+              t=(d/name).read_text(encoding='utf-8')
+              if not re.search(r'(?ms)^## Falsification conditions\s*\n.+?(?=^## |\Z)',t):falsbad.append((n,name))
+          if bad:raise RuntimeError('public-language scan failed: '+repr(bad[:150]))
+          if qbad:raise RuntimeError('non-FAQ question scan failed: '+repr(qbad[:100]))
+          if faqbad:raise RuntimeError('FAQ structure failed: '+repr(faqbad))
+          if aibad:raise RuntimeError('AI structure failed: '+repr(aibad[:100]))
+          if footerbad:raise RuntimeError('footer failed: '+repr(footerbad[:100]))
+          if falsbad:raise RuntimeError('falsification structure failed: '+repr(falsbad[:100]))
           print('Changed files:',len(set(changed)))
-          for x in sorted(set(changed)): print(x)
+          for x in sorted(set(changed)):print(x)
           PY
 
       - name: Commit cleanup and remove one-shot workflow
@@ -296,9 +231,6 @@ jobs:
           git config user.email 'karyu.owner@gmail.com'
           git rm -- '.github/workflows/od001-030-public-language-cleanup.yml'
           git add -- derivatives/001 derivatives/002 derivatives/003 derivatives/004 derivatives/005 derivatives/006 derivatives/007 derivatives/008 derivatives/009 derivatives/010 derivatives/011 derivatives/012 derivatives/013 derivatives/014 derivatives/015 derivatives/016 derivatives/017 derivatives/018 derivatives/019 derivatives/020 derivatives/021 derivatives/022 derivatives/023 derivatives/024 derivatives/025 derivatives/026 derivatives/027 derivatives/028 derivatives/029 derivatives/030
-          if git diff --cached --quiet; then
-            echo 'No changes produced.'
-            exit 1
-          fi
+          if git diff --cached --quiet; then echo 'No changes produced.'; exit 1; fi
           git commit -m 'Remove internal authoring language from OD001-030'
           git push origin HEAD:"${TARGET_BRANCH}"
