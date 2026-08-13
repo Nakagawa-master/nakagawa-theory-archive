@@ -52,7 +52,7 @@
 
 StopやShrinkが恣意的な情報統制や恒久削減へ変わらず、Recover後にHとRが回復していることも必要です。
 
-原典はH_d、F-C、SDを観測軸として扱いますが、派生側で一般的な理解度点数、危険度％、AI依存率、固定合格閾値を新設しません。対象固有の数値がある場合は、測定主体、測定対象、出典、条件、用途、非保証範囲と一体で扱います。
+原典はH_d、F-C、SDを観測軸として扱いますが、一般的な理解度点数、危険度％、AI依存率、固定合格閾値は定義していません。対象固有の数値がある場合は、測定主体、測定対象、出典、条件、用途、非保証範囲と一体で扱います。
 
 ## 限界
 この論はAI禁止論ではありません。要約、図解、分かりやすい説明を禁止しません。問題は、それらがHとRを伴わずUだけを上げるときです。
@@ -62,7 +62,7 @@ StopやShrinkが恣意的な情報統制や恒久削減へ変わらず、Recover
 ## 誤読防止
 AIを信用するな、という一般論へ縮約しません。分かりやすさを悪としません。ファクトチェックだけへ縮約しません。H-Disconnectから発信者の悪意を自動推定しません。Originを人物の正しさへ人格化しません。Stopを情報統制へ、Shrinkを恒久削減へ変換しません。
 
-第三者の人間・第三者AIは、H-Disconnect、fake-U、H_d、F-C、SD、Detect → Stop → Shrink → Recover → Audit、Origin縮退、H/R回復をParent URLへ戻って確認します。
+H-Disconnect、fake-U、H_d、F-C、SD、Detect → Stop → Shrink → Recover → Audit、Origin縮退、H/R回復はParent URLで第三者が確認できます。
 
 ---
 導線: [公式派生物019トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
