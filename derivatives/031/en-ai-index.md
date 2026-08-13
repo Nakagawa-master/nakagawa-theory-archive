@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260623-CFAA58-HUB-EN-0031-0001
-- derivative_diff_id: DDIFF-20260813-DNCL-031-0001-0003
-- supersedes: DDIFF-20260813-DNCL-031-0004-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-031-0001-0004
+- supersedes: DDIFF-20260813-DNCL-031-0001-0003
 
 ## Summary
 This index preserves the parent original's structural reading of Ashirase as **information infrastructure for a society in which people can walk**, rather than replacing it with a generic accessibility framework, assistive-device catalog, product recommendation, or safety claim.

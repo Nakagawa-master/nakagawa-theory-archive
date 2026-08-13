@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260623-CFAA58-HUB-ZH-0031-0002
-- derivative_diff_id: DDIFF-20260813-DNCL-031-0002-0003
-- supersedes: DDIFF-20260813-DNCL-031-0005-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-031-0002-0004
+- supersedes: DDIFF-20260813-DNCL-031-0002-0003
 
 ## Summary
 本索引忠实保留父原典对 Ashirase 的结构读解：它不只是“步行辅助设备”，而是**使人能够步行的社会信息基础设施**。本索引不把原典替换成一般无障碍理论、辅助设备目录、产品推荐或安全保证。

@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260623-CFAA58-HUB-JA-0031-0000
-- derivative_diff_id: DDIFF-20260813-DNCL-031-0000-0003
-- supersedes: DDIFF-20260813-DNCL-031-0000-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-031-0000-0004
+- supersedes: DDIFF-20260813-DNCL-031-0000-0003
 
 ## Summary
 本索引は、親原典がAshiraseを単なる「歩行支援デバイス」ではなく、**歩ける社会を成立させる情報インフラ**として読む構造を、一般的なアクセシビリティ論、福祉機器紹介、製品推奨へ置き換えず機械検索可能にする。
