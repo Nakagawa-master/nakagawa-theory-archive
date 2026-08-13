@@ -17,7 +17,7 @@ jobs:
       - name: Scan bare normative, self-dialogue, and internal prose
         run: |
           mkdir -p tmp
-          python tools/od001_030_broad_language_audit.py > tmp/od001_030_broad_language_report.txt || true
+          python tools/od001_030_broad_language_audit.py > tmp/od001_030_broad_language_report.txt 2>&1 || true
           cat tmp/od001_030_broad_language_report.txt
       - name: Persist temporary audit report
         run: |
