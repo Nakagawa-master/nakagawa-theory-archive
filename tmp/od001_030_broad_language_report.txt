@@ -1,2 +1,1 @@
-broad_language_rows=1
-009 | README.md | 205 | ja-bare-bullet-directive | - 「事前に全条件を確定できなければ行動してはいけない」という読み方は、親原典の条件検証論とは異なる。
+broad_language_rows=0
