@@ -1,0 +1,26 @@
+name: OD001-030 public ledger rebuild
+on:
+  push:
+    branches:
+      - audit/od001-030-reader-falsification-20260813
+    paths:
+      - tools/od001_030_rebuild_ledgers.py
+      - .github/workflows/od001-030-rebuild-ledgers.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rebuild all public ledgers
+        run: python tools/od001_030_rebuild_ledgers.py
+      - name: Commit public ledgers
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add derivatives/*/derivative-ledger.md
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Rebuild OD001-030 ledgers as public provenance surfaces"
+          git push origin HEAD:audit/od001-030-reader-falsification-20260813
