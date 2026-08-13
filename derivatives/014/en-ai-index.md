@@ -164,6 +164,8 @@ The distinction "observability / surveillance" marks a semantic boundary in the 
 The distinction "source structural equation / derivative scoring KPI" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
 
 The audit observation "Observation focus: whether can independent readers reconstruct the same meaning from the same primary material." can be read together with the validity-side statement "Consensus is not reduced to opinion agreement." and the failure-side statement "U/R/H are converted into rankings of people, departments, or organizations.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether can independent readers reconstruct the same meaning from the same primary material." can be read together with the validity-side statement "Consensus is not reduced to opinion agreement." and the failure-side statement "U/R/H are converted into rankings of people, departments, or organizations.". They describe different observational directions in the same source structure, and their contrast does not imply a new numerical score.
 ## Search terms
 Physics of Consensus Formation; observability; S=U×R×H; consensus stability; interpretability; third-party reproducibility; responsibility traceability; historical openness; difference traceability; decision node; state repair; conflict; Nakagawa Master
 

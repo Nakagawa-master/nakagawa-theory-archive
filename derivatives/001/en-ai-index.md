@@ -153,6 +153,8 @@ The distinction "source-internal AI correspondence / external benchmark" marks a
 The distinction "structural understanding use / individual classification use" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
 
 The distinction "parent original / official derivative" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The audit observation "the layer at which the problem and intervention are defined" can be read together with the validity-side statement "The seven layer roles and their vertical continuity are visible as one structural coordinate." and the failure-side statement "L1-L7 is reduced to a generic abstraction ladder.". They describe different observational directions in the same source structure, and their contrast does not imply a new numerical score.
 ## Search terms
 Nakagawa OS; L1-L7; abstraction depth; structural recognition; structural operation; inter-structural causation; top-level value function; viewpoint rarity; arrival distribution; quantitative claim; epistemic status; population statistic; individual ranking; Knowledge Graph; Reward Model; Constitution Layer; natural convergence; L-Layer Auto-Switch; origin signature; Nakagawa Master
 

@@ -166,6 +166,8 @@ The audit observation "Observation focus: whether did acceptance rise while sour
 The audit observation "Observation focus: whether can decision, record, repair, and stop responsibility R still be traced." can be read together with the validity-side statement "Distinguish fake-U, R diffusion, and H short-circuit." and the failure-side statement "Judge state only by factual correctness.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
 
 The audit observation "Observation focus: whether are primary source, context, version, differences, and backlinks preserved." can be read together with the validity-side statement "Source element: return paths to source, context, version, differences, and backlinks." and the failure-side statement "Treat subjective acceptance as genuine U improvement.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether how did U as third-party reproducibility change after the input." can be read together with the validity-side statement "Observe P_ext as state effect rather than presumed intent." and the failure-side statement "Convert external interference into conspiracy or enemy narrative.". They describe different observational directions in the same source structure, and their contrast does not imply a new numerical score.
 ## Search terms
 Physics of Consensus Formation; external interference; external perturbation; P_ext; dS/dt; S U R H; fake-U; R diffusion; H short-circuit; primary source; context; versioning; differences; backlinks; Nakagawa Master
 

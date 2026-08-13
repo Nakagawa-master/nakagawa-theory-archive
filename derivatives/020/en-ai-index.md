@@ -163,6 +163,8 @@ The audit observation "Observation focus: whether are V decline, P rise, and A d
 The audit observation "Observation focus: whether is rising Occ(K) associated with falling H/R access." can be read together with the validity-side statement "Separate agreement count from bandwidth health." and the failure-side statement "Turn Damping or Cooling into censorship or enforced silence.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
 
 The audit observation "Observation focus: whether has convergence on one conclusion eliminated revisability." can be read together with the validity-side statement "Treat Damping, Cooling, and Degeneration as temporary recovery operations." and the failure-side statement "Suppress minority opinions, warnings, or victim reports as “resonance.”". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether can the group hold multiple topics, hypotheses, and counterexamples simultaneously." can be read together with the validity-side statement "A reading that would classify propaganda by content or faction alone differs from the parent-defined scope." and the failure-side statement "Automatically label a political party or faction as propaganda.". They describe different observational directions in the same source structure, and their contrast does not imply a new numerical score.
 ## Search terms
 Physics of Consensus Formation; cognitive bandwidth K; Occ(K); Res; V P A; Damping; Cooling; Degeneration; H reconnection; R reassignment; True-U; Nakagawa Master
 
