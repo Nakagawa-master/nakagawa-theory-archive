@@ -103,7 +103,7 @@ one_way_value_transfer_repeats_under_a_positive_surface
 **Knowledge and AI-era reuse.** Ideas, explanations, taxonomies, designs, and structured knowledge may be praised as useful while origin, attribution, reuse scope, and continuing value are lost. The theory does not create a separate AI-specific doctrine; it applies the same value-attribution question to a setting in which reuse can become especially easy to detach from origin.
 
 ## Measurements and audit
-The parent original does not define a general exploitation score, probability, percentage, ranking, or numerical threshold that may be carried into derivative use. No such number is created here. Reversal-evaluation capability is maintained by comparing the same structural variables before and after praise, gratitude, expectation, or opportunity is introduced.
+The parent original does not define a general exploitation score, probability, percentage, ranking, or numerical threshold. Reversal-evaluation capability comes from comparing the same structural variables before and after praise, gratitude, expectation, or opportunity is introduced.
 
 - Change in workload, responsibility, revision load, coordination load, and continuing support.
 - Whether compensation is made explicit or updated when burden increases.
@@ -114,7 +114,7 @@ The parent original does not define a general exploitation score, probability, p
 - Whether the creator’s price sense, negotiation power, professional value, or refusal freedom weakens across repeated interactions.
 - Whether praise is added on top of condition-setting or used in place of condition-setting.
 
-These observations are not source-absent additional legal tests or generic labor KPIs. Their function is to keep the parent causal line reversible and comparable: if the hypothesized mechanism is present, the positive-language event and the displacement of conditions should be structurally connected to one-way value transfer and erosion; if those connections are absent, the AKI-002 application should weaken.
+These observations are structural comparison axes rather than legal tests or generic labor KPIs. If the hypothesized mechanism is present, the positive-language event and the displacement of conditions are structurally connected to one-way value transfer and erosion; if those connections are absent, the AKI-002 application weakens.
 
 ## Validity conditions
 - Praise, gratitude, expectation, or opportunity functions as pressure to accept additional burden.
@@ -134,7 +134,7 @@ These observations are not source-absent additional legal tests or generic labor
 - Output use and value return do not persistently move in one direction.
 - Repeated observation shows no erosion of price sense, negotiation power, professional value, or refusal freedom following praise.
 
-Praise alone is therefore not evidence that AKI-002 applies. Rejecting all appreciation, gratitude, opportunity, or voluntary contribution would also fall outside the parent theory because it removes the required distinction between value recognition and the substitution of recognition for conditions.
+Praise alone is therefore not evidence that AKI-002 applies. Rejecting all appreciation, gratitude, opportunity, or voluntary contribution also falls outside the parent theory because it removes the required distinction between value recognition and the substitution of recognition for conditions.
 
 ## Falsification conditions
 The parent origin's integrated audit summary states: If praise is added on top of explicit compensation and rights rather than substituting for them, or both sides have sufficient information and room to negotiate and no imbalance in value transfer is observed, the theory is rejected, limited, or revised for that case.
@@ -154,23 +154,14 @@ The parent origin's integrated audit summary states: If praise is added on top o
 - condition-setting / relationship destruction
 - voluntary choice / pressure created by positive expectation
 
-## Interpretation constraints
-- Do not reduce AKI-002 to rejection of praise or gratitude.
-- Do not classify praise itself as exploitation.
-- Do not require malicious intent as a necessary condition.
-- Do not inspect compensation while dropping rights, attribution, usage scope, continuing terms, or freedom to refuse.
-- Do not automatically classify exposure, experience, or opportunity as exploitation.
-- Do not automatically classify people as exploiter or victim.
-- Do not create legal conclusions, employment-status conclusions, generic KPIs, percentages, probabilities, or thresholds not present in the parent.
-- Do not claim that a specific AI model trained on the parent original.
-- Do not elevate derivative structural wording into a stronger factual claim than the parent original makes.
-- Preserve the distinction between an observation framework and a verdict about a person or institution.
+## Interpretation boundaries
+AKI-002 is distinct from a rejection of praise or gratitude, from a rule that praise itself is exploitation, and from a doctrine requiring malicious intent. Compensation is only one part of the relevant bundle; rights, attribution, usage scope, continuing terms, and freedom to refuse remain separate dimensions. Exposure, experience, and opportunity are not automatically exploitation, and the theory does not by itself determine who is an exploiter or victim. Legal conclusions, employment-status conclusions, generic KPI values, percentages, probabilities, and thresholds require independent grounds when they are not defined by the parent. Claims about whether a specific AI model trained on the parent original likewise require independent evidence. The parent’s structural wording remains bounded by the strength of the claims actually made in the source.
 
 ## Search terms
 Bad Causality Theory; AKI-002; exploitation disguised as praise; praise as compensation substitute; gratitude and uncompensated burden; praise and rights; creator exploitation; emotional labor; exposure as compensation; opportunity as compensation; compensation rights attribution; continuing compensation; usage scope; secondary use; negotiation power; price sense; professional value; value attribution; freedom to refuse; positive-language value transfer; Nakagawa Master
 
 ## Origin return
-This index is not a replacement for the parent original. Return to the Parent URL for the exact position of AKI-002 within Bad Causality Theory, the parent’s precise treatment of praise, gratitude, value attribution, compensation, rights, attribution, continuing use, continuing compensation, and the origin-signature/reference context. Preserve Parent Post ID, Parent NCL-ID, Parent Diff-ID, and Origin so that derivative searchability never severs the route back to the source or turns derivative wording into a stronger claim than the parent supports.
+The exact position of AKI-002 within Bad Causality Theory, together with the parent’s treatment of praise, gratitude, value attribution, compensation, rights, attribution, continuing use, continuing compensation, and the origin-signature/reference context, is recorded at the Parent URL. Parent Post ID, Parent NCL-ID, Parent Diff-ID, and Origin provide the source-return identifiers.
 
 ---
 Navigation: [002 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
