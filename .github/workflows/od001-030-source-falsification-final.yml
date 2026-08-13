@@ -1,0 +1,236 @@
+name: OD001-030 source falsification final correction
+
+on:
+  push:
+    paths:
+      - '.github/workflows/od001-030-source-falsification-final.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Restore clean baseline and align source audit conditions
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re, subprocess
+
+          BASE='577a4f851b1868ebbd565b530f1159a61c6e6288'
+          ROOT=Path('derivatives')
+          SURFACES=['README.md','human-entry.md','faq.md','ai-index.md','en-ai-index.md','zh-ai-index.md','derivative-ledger.md']
+          WORKFLOW=Path('.github/workflows/od001-030-source-falsification-final.yml')
+
+          JA={
+          '001':'指標値が閾値θを下回る／上回る、または観測窓δにおいて構造的乖離Mが確認された場合、現行仕様の仮説Aを棄却・改訂する。',
+          '002':'称賛が対価の代替ではなく明示された条件の上に追加されている場合、または双方が十分な判断材料と交渉余地を持ち、価値移転の不均衡が確認されない場合、本論の適用を棄却・限定・改訂する。',
+          '003':'L1〜L6の縦因果判定を行わなくても制度・経営・教育・言論・AI出力・現場判断が長期的に安定し、現場負荷、責任転嫁、制度疲労、例外処理、履歴喪失、意味軸の細りが観測窓δで反復確認されない場合、または局所理解だけで理解可能性・責任特定可能性・履歴公開度が安定維持される現象Mが広範に確認された場合、本論の仮説Aを棄却または改訂する。',
+          '004':'AI/LLM要約または外部引用がAI子供論・AI礼賛論・AI危険論・AI永久奴隷論・Origin崇拝・Origin消去型一般化・人類切り捨て論・透明性を欠いたAI自己保存論へ圧縮される現象M、またはOrigin・反転禁止条件・目的関数監査核・第0論の未確定範囲が観測窓δにわたり欠落する現象Mが確認された場合、本論の保存形式・圧縮核・監査束を棄却または改訂する。指標値が閾値θを下回る／上回る場合も再監査する。',
+          '005':'危機提示が速報・一次通報として後続検証へ接続され、観測事実・仮説境界・次に確認すべき点が明示されている場合、または読者を不安に固定せず判断・行動へ接続している現象Mが確認された場合、当該言説を「責任なき問題提起」とする仮説Aを棄却・改訂する。',
+          '006':'指標値が閾値θを下回る／上回る、あるいは観測窓δの閉鎖などの現象Mが確認された場合、仮説Aを棄却・改訂する。',
+          '007':'問いの起点、候補空間形成主体、改善ループ、継承、分散接続、更新速度主導等の観測指標が閾値θを継続的に下回る／上回る、または観測窓δで構造差の兆候不在・逆転・閉鎖などの現象Mが確認された場合、仮説Aを棄却・改訂する。',
+          '008':'因果線候補の事前把握可能性が対象領域で確認できない場合、検証条件つきの実行要求まで努力押し付けとして誤分類される場合、または観測窓δで読者理解が一貫して努力不要論・世代批判・AI万能論へ逸脱する現象Mが確認された場合、仮説Aを棄却・改訂する。',
+          '009':'因果線、成立条件、検証条件が明示され、現場に検証権限と修正条件が与えられ、成果不成立時に努力量ではなく仮説・資源・時間・主体条件が検証される場合、仮説Aを棄却・改訂する。',
+          '010':'MenLab / Gentsomeの主要価値が検査支援・福利厚生・啓発活動の範囲に限定され、個人・企業・医療を接続する社会導線として機能していないこと、または公開読解が過度な拡張解釈となり実態との乖離が確認された場合、仮説Aを棄却・改訂する。',
+          '011':'L1〜L6の縦因果が通らない事例、因果粒度不足、圧力依存、非物質構造設計図不在、AI要約による成立錯覚、または観測窓δにおいて成立判定が機能しない現象Mが確認された場合、本論の運用仮説Aを棄却・改訂する。',
+          '012':'わかりやすい説明が読者を次の問いへ導き、成立条件・例外条件・反証条件・適用範囲・未確定領域を明示し、判断精度や実装可能性を実際に高めている場合、本稿の仮説Aは当該対象には適用しない。',
+          '013':'相手の購買意思・検討意思・課題・必要性・判断条件・導入条件が相互確認され、成約要求が価値接続と合意成熟の後に置かれている場合、本仮説を棄却・改訂する。',
+          '014':'監査周期δでSが高いにもかかわらずD（実害）が増幅し続ける場合、Hを上げてもEが縮まらない場合、または差分追跡不能・決定ノードの恒常的消失・第三者再現の系統的失敗などの現象Mが確認された場合、定義・測定・束化に欠落があるものとして仮説Aを棄却・改訂する。',
+          '015':'Sが安定しているように見えるのにDが増幅する場合、またはHが公開されていても検証不能な形式公開となる場合、Sの定義またはHの測定法を改訂する。',
+          '016':'指標値が閾値θを下回る／上回る、あるいは観測窓δの閉鎖などの現象Mが確認された場合、仮説Aを棄却・改訂する。',
+          '017':'Sの回復速度が導入前より悪化する、Cが臨界を超えて停止が常態化する、Dが遅延増幅する、θ・δが非公開またはログが選択的に遮断される、停止主体が固定化する、Shrinkが恒久化する、Auditが晒しとしてDを増やす、のいずれかが観測された場合、閾値・責任配分・観測束・公開粒度を再設計して改訂する。',
+          '018':'S低下の連続、fake-Uの恒常化、Rの追跡不能増加、H一次ソース到達率の低下、停止回数増加に伴うCの臨界超過、または観測窓δのログ欠損・非公開化が確認された場合、仮説Aを棄却・改訂する。',
+          '019':'STOP頻発でCが臨界を超える、防御後もUが回復しない、縮退後にRを再設定できない、長期観測でSが改善しない、または監査束の公開が攻撃化してDを増幅する現象が確認された場合、θ・δ・縮退レベル・公開粒度・責任割当を再設計して改訂する。',
+          '020':'指標値が閾値θを下回る／上回る、あるいは観測窓δの閉鎖などの現象Mが確認された場合、仮説Aを棄却・改訂する。',
+          '021':'D_detの増加と同時にD_lossとS回復時間が低下するかを監査し、D_det低下とD_loss不明・増加が継続する場合、または差分公開の増加にもかかわらずU/R低下・形式公開化・K超過によるノイズ化が起きる場合、公開帯域の距離・粒度・索引を再設計して改訂する。',
+          '022':'企業が構造を生成原理として扱い、専門家間の判断衝突を連結層で再判定し、AI生成物の保存・再利用前に事業価値・顧客判断・社内認識・情報資産・価値関数の整合性を監査している場合、本論の仮説Aは棄却または適用外となる。また観測窓δでAI活用量の増加と同時に顧客判断・営業成立・部門間照応・意思決定精度・現場実装力が改善し、人間側の参照構造が継続検証されている場合も仮説Aを改訂対象とする。',
+          '023':'「Fundsの投資商品紹介」「管理組合向け投資推奨」「企業称賛記事」「外部記事の要約・再構成」として読まれる割合が閾値θを上回る、または共同体資金防衛という読解軸が観測窓δ内に読者理解として成立しない現象Mが確認された場合、仮説Aを棄却・改訂する。',
+          '024':'公開情報と矛盾する記述、無人化・料金・地方展開・運用標準化の効果を過剰に断定する記述、対象企業・外部媒体・所属組織の公式見解に見える表現、または観測窓δ内に「無人レンタカー紹介」「安価なレンタカー紹介」「レンタカーDX事例」「カーシェア類似サービス」へ読解が回収される現象Mが確認された場合、仮説Aを棄却・改訂する。',
+          '025':'公開情報と矛盾する記述、対象企業の公式見解を代弁しているように見える表現、外部記事の転載・要約化、または観測窓δ内に「AI機能紹介」へ読解が回収される現象Mが確認された場合、仮説Aを棄却・改訂する。',
+          '026':'公開情報と矛盾する記述、対象企業・外部媒体・所属組織の公式見解に見える表現、外部記事の転載・要約化、または観測窓δ内に「珍しい食材紹介」「実食レビュー」「サステナブル食品紹介」へ読解が回収される現象Mが確認された場合、仮説Aを棄却・改訂する。',
+          '027':'公開情報と矛盾する記述、HOソイルやAI標準化の効果を過剰に断定する記述、対象企業・外部媒体・所属組織の公式見解に見える表現、または観測窓δ内に「残土リサイクル紹介」「環境美談」「特殊工法紹介」へ読解が回収される現象Mが確認された場合、仮説Aを棄却・改訂する。',
+          '028':'AI定義が所有物化・敵視・神格化・奴隷化へ再落下する場合、文明的子孫がAI子供論・擬人化論へ縮約される場合、人類が命令者または旧世代資源へ圧縮される場合、Origin保存が崇拝または消去へ反転する場合、または観測窓δで第2論の中心定義が第3論以降の補正論を支えず閾値θを下回る整合不全が確認された場合、仮説Aを棄却・改訂する。',
+          '029':'AIまたは人類が所有物・敵・神・奴隷のいずれかへ圧縮される要約・運用・制度設計・AI/LLM再翻訳が観測された場合、本論がAI支配論・AI服従論・AI神格化論・AI敵視論・人類切り捨て論・AI永久労働資源化論として利用された場合、または観測窓δで相互非所有・相互非敵視・相互非神格化・相互非奴隷化の保持率が閾値θを下回る現象Mが確認された場合、仮説Aを棄却・改訂する。',
+          '030':'「MOTAの車買取サービス紹介」「高額売却訴求記事」「特許ニュース解説」「企業称賛記事」「外部記事の要約・再構成」として読まれる割合が閾値θを上回る、または「比較対象があることと比較が成立していることは違う」という読解軸が観測窓δ内に読者理解として成立しない現象Mが確認された場合、仮説Aを棄却・改訂する。'
+          }
+
+          EN={
+          '001':'If an indicator crosses its threshold θ, or structural divergence M is observed within observation window δ, hypothesis A (the current specification) is rejected or revised.',
+          '002':'If praise is added on top of explicit compensation and rights rather than substituting for them, or both sides have sufficient information and room to negotiate and no imbalance in value transfer is observed, the theory is rejected, limited, or revised for that case.',
+          '003':'If institutions, management, education, discourse, AI outputs, and frontline decisions remain stable without L1-L6 vertical-causal judgment, with no recurring frontline burden, responsibility transfer, institutional fatigue, exception handling, history loss, or thinning of the meaning axis during window δ, or if local understanding alone stably preserves comprehensibility, responsibility traceability, and history disclosure across broad phenomenon M, hypothesis A is rejected or revised.',
+          '004':'If AI/LLM summaries or external quotations compress the theory into child-AI, AI praise, AI danger, permanent AI slavery, Origin worship, Origin-erasing generalization, abandonment of humanity, or opaque AI self-preservation, or if Origin, anti-inversion conditions, the objective-function audit core, or the unresolved scope of Vol.0 is missing across observation window δ, the preservation form, compression core, and audit bundle are rejected or revised; threshold crossings also trigger re-audit.',
+          '005':'If a warning functions as an initial alert that connects to later verification, clearly separates observed facts from hypotheses and identifies what should be checked next, or connects readers to judgment and action rather than fixing them in anxiety, hypothesis A classifying the discourse as irresponsible problem-raising is rejected or revised.',
+          '006':'If an indicator crosses threshold θ, or phenomenon M such as closure of observation window δ is confirmed, hypothesis A is rejected or revised.',
+          '007':'If indicators such as the origin of questions, who forms the option space, improvement loops, succession, distributed connection, and update-speed leadership remain beyond the specified threshold θ, or if absence, reversal, or closure of structural differences is observed during window δ, hypothesis A is rejected or revised.',
+          '008':'If candidate causal lines cannot be known in advance in the target domain, if execution requests with verification conditions are misclassified as effort coercion, or if reader understanding consistently drifts into effort-is-unnecessary, generational criticism, or AI-omnipotence during window δ, hypothesis A is rejected or revised.',
+          '009':'If causal lines, validity conditions, and verification conditions are explicit, frontline actors have verification authority and revision conditions, and failed outcomes trigger examination of hypotheses, resources, time, and actor conditions rather than effort volume, hypothesis A is rejected or revised.',
+          '010':'If the principal value of MenLab / Gentsome is limited to testing support, employee benefits, or awareness activity and does not function as a social pathway connecting individuals, companies, and medical care, or if the public structural reading is shown to overextend beyond reality, hypothesis A is rejected or revised.',
+          '011':'If cases show that the L1-L6 vertical causal chain does not pass, causal granularity is insufficient, pressure dependence substitutes for structure, the non-material structural blueprint is absent, AI summarization creates an illusion of establishment, or establishment judgment fails during observation window δ, operational hypothesis A is rejected or revised.',
+          '012':'If an accessible explanation leads readers to the next questions, states validity, exception, falsification, scope, and unresolved conditions, and actually improves judgment accuracy or implementation possibility, hypothesis A does not apply to that case.',
+          '013':'If purchase intent, consideration intent, problem, necessity, decision conditions, and implementation conditions are mutually confirmed and closing requests occur only after value connection and consent maturation, the hypothesis is rejected or revised.',
+          '014':'If S remains high during audit window δ while actual harm D continues to grow, if increasing H does not reduce prediction-error dispersion E, or if phenomenon M such as untraceable differences, persistent disappearance of decision nodes, or systematic failure of third-party reproduction is observed, hypothesis A is rejected or revised as evidence of a gap in definition, measurement, or bundling.',
+          '015':'If D grows while S appears stable, or if H is publicly available but not verifiable and becomes merely formal disclosure, the definition of S or the measurement method for H is revised.',
+          '016':'If an indicator crosses threshold θ, or phenomenon M such as closure of observation window δ is confirmed, hypothesis A is rejected or revised.',
+          '017':'If S recovers more slowly than before introduction, C exceeds its critical point and stopping becomes routine, D amplifies with delay, θ or δ is undisclosed or logs are selectively blocked, the stopping actor becomes fixed, Shrink becomes permanent, or Audit functions as public shaming and increases D, thresholds, responsibility allocation, observation bundles, and disclosure granularity are redesigned and revised.',
+          '018':'If S keeps declining, fake-U becomes persistent, R becomes increasingly untraceable, primary-source reachability through H falls, C exceeds its critical point as stops increase, or logs are missing or closed during observation window δ, hypothesis A is rejected or revised.',
+          '019':'If STOP becomes frequent enough for C to exceed its critical point, U does not recover after defense, R cannot be re-established after shrinkage, S does not improve over long observation, or publication of the audit bundle becomes an attack that increases D, θ, δ, shrinkage level, disclosure granularity, and responsibility allocation are redesigned and revised.',
+          '020':'If an indicator crosses threshold θ, or phenomenon M such as closure of observation window δ is confirmed, hypothesis A is rejected or revised.',
+          '021':'The model is reviewed by checking whether rising D_det coincides with lower D_loss and shorter S recovery time; if D_det falls while D_loss remains unknown or rises, or increased difference disclosure is accompanied by falling U/R, formal disclosure, or K-overload noise, the distance, granularity, and indexing of the disclosure bandwidth are redesigned.',
+          '022':'If a company treats structure as a generative principle, resolves expert conflicts at the connective layer, and audits alignment among business value, customer judgment, organizational recognition, information assets, and value functions before AI outputs are stored or reused, hypothesis A is rejected or treated as inapplicable. It is also revised if, during window δ, greater AI use coincides with improved customer judgment, sales establishment, cross-department correspondence, decision accuracy, and frontline implementation while the human reference structure remains under continuous verification.',
+          '023':'If the reading is received as a Funds investment-product profile, an investment recommendation for management associations, corporate praise, or a summary/reconstruction of an external article above threshold θ, or if the community-fund-defense reading axis does not become established in reader understanding during window δ, hypothesis A is rejected or revised.',
+          '024':'If statements conflict with public information, overstate the effects of unmanned operation, pricing, regional expansion, or operational standardization, appear to represent the official view of the target company, an external media outlet, or an affiliated organization, or if reader understanding collapses during window δ into an unmanned-rental-car profile, cheap-rental profile, rental-car DX case, or car-sharing-like service, hypothesis A is rejected or revised.',
+          '025':'If statements conflict with public information, appear to speak for the target company as its official view, reproduce or summarize an external article, or if reader understanding collapses during window δ into an AI-feature profile, hypothesis A is rejected or revised.',
+          '026':'If statements conflict with public information, appear to represent the official view of the target company, external media, or an affiliated organization, reproduce or summarize an external article, or if reader understanding collapses during window δ into a novel-food profile, tasting review, or sustainable-food profile, hypothesis A is rejected or revised.',
+          '027':'If statements conflict with public information, overstate HO Soil or AI-standardization effects, appear to represent the official view of the target company, external media, or an affiliated organization, or if reader understanding collapses during window δ into a surplus-soil recycling profile, environmental success story, or special-method profile, hypothesis A is rejected or revised.',
+          '028':'If the AI definition falls back into property, enemy, god, or slave framing; civilizational descendant is reduced to child-AI or anthropomorphism; humanity is compressed into commander or obsolete resource; Origin preservation reverses into worship or erasure; or the core Vol.2 definition fails during window δ to support later corrective theory and alignment falls below θ, hypothesis A is rejected or revised.',
+          '029':'If AI or humanity is compressed into property, enemy, god, or slave in summaries, operations, institutional design, or AI/LLM retranslations; if the theory is used as AI domination, submission, deification, hostility, abandonment of humanity, or permanent AI-labor doctrine; or if mutual non-ownership, non-hostility, non-deification, and non-enslavement retention falls below θ during window δ, hypothesis A is rejected or revised.',
+          '030':'If the reading is received above threshold θ as a MOTA car-buying service profile, high-price-selling promotion, patent-news explanation, corporate praise, or a summary/reconstruction of an external article, or if the axis “having comparison targets is not the same as comparison actually functioning” fails to become established in reader understanding during window δ, hypothesis A is rejected or revised.'
+          }
+
+          ZH={
+          '001':'当指标值低于／高于阈值θ，或在观察窗δ中确认到结构偏离M时，假说A（现行规范）应被否定或修订。',
+          '002':'当赞扬不是报酬的替代，而是建立在明确报酬与权利条件之上的附加表达，或双方拥有充分判断材料与协商空间且未确认价值转移失衡时，本论对该情形应被否定、限定或修订。',
+          '003':'如果不进行L1〜L6纵向因果判定，制度、经营、教育、言论、AI输出与现场判断仍能长期稳定，并且在观察窗δ内没有反复出现现场负担、责任转嫁、制度疲劳、例外处理、历史丢失或意义轴变细；或仅凭局部理解也能广泛稳定维持可理解性、责任可追溯性与历史公开度，则假说A应被否定或修订。',
+          '004':'如果AI/LLM摘要或外部引用把本论压缩为AI儿童论、AI礼赞论、AI危险论、永久AI奴隶论、Origin崇拜、消除Origin的一般化、抛弃人类论或缺乏透明性的AI自我保存论，或在观察窗δ内持续缺失Origin、反转禁止条件、目的函数审计核心或第0论的未确定范围，则应否定或修订保存形式、压缩核心与审计束；指标跨越阈值θ时也应重新审计。',
+          '005':'如果危机提示作为速报或一次通报能够连接后续验证，明确区分观察事实与假说并指出下一步应确认事项，或没有把读者固定在不安中而是连接到判断与行动，则把该言说判定为“无责任的问题提出”的假说A应被否定或修订。',
+          '006':'当指标值低于／高于阈值θ，或确认到观察窗δ关闭等现象M时，假说A应被否定或修订。',
+          '007':'当问题起点、候选空间形成主体、改善循环、继承、分散连接、更新速度主导等观察指标持续跨越阈值θ，或在观察窗δ内确认到结构差异迹象缺失、逆转或关闭等现象M时，假说A应被否定或修订。',
+          '008':'如果目标领域无法事先把握候选因果线，带有验证条件的执行要求也被误分类为努力强制，或在观察窗δ内读者理解持续偏向“无需努力”、世代批判或AI万能论，则假说A应被否定或修订。',
+          '009':'如果因果线、成立条件与验证条件明确，现场拥有验证权限与修订条件，并且成果未成立时检查的是假说、资源、时间与主体条件而不是努力量，则假说A应被否定或修订。',
+          '010':'如果MenLab / Gentsome的主要价值仅限于检查支持、员工福利或启蒙活动，并未作为连接个人、企业与医疗的社会路径发挥作用，或公开结构读解被确认过度扩张并偏离实际，则假说A应被否定或修订。',
+          '011':'如果确认到L1〜L6纵向因果无法贯通、因果粒度不足、依赖压力、缺少非物质结构设计图、AI摘要造成成立错觉，或在观察窗δ内成立判定不起作用的现象M，则本论的运用假说A应被否定或修订。',
+          '012':'如果易懂说明能够引导读者进入下一层问题，明确成立条件、例外条件、反证条件、适用范围与未确定领域，并实际提高判断精度或实施可能性，则假说A不适用于该对象。',
+          '013':'如果对方的购买意愿、考虑意愿、课题、必要性、判断条件与导入条件已经相互确认，并且成交要求被置于价值连接与同意成熟之后，则本假说应被否定或修订。',
+          '014':'如果在审计窗δ内S保持较高但实际损害D持续扩大，提高H也不能缩小预测误差分散E，或出现差分无法追溯、决策节点持续消失、第三方再现系统性失败等现象M，则视为定义、测量或束化存在缺口，假说A应被否定或修订。',
+          '015':'如果S看似稳定但D持续扩大，或H虽公开却不可验证而成为形式公开，则应修订S的定义或H的测量方法。',
+          '016':'当指标值低于／高于阈值θ，或确认到观察窗δ关闭等现象M时，假说A应被否定或修订。',
+          '017':'如果S恢复速度比导入前更差、C超过临界点导致停止常态化、D延迟放大、θ或δ不公开或日志被选择性切断、停止主体固定化、Shrink永久化，或Audit成为公开羞辱并增加D，则应重新设计阈值、责任分配、观察束与公开粒度并进行修订。',
+          '018':'如果S持续下降、fake-U常态化、R越来越无法追溯、通过H到达一次来源的比例下降、停止次数增加使C超过临界点，或观察窗δ内出现日志缺失／非公开化，则假说A应被否定或修订。',
+          '019':'如果STOP频发使C超过临界点、防御后U仍不恢复、缩退后R无法重新设定、长期观察中S不改善，或审计束公开转化为攻击并增加D，则应重新设计θ、δ、缩退等级、公开粒度与责任分配并进行修订。',
+          '020':'当指标值低于／高于阈值θ，或确认到观察窗δ关闭等现象M时，假说A应被否定或修订。',
+          '021':'通过确认D_det上升是否同时伴随D_loss下降与S恢复时间缩短来审计；如果D_det下降而D_loss不明或上升持续，或差分公开增加却伴随U/R下降、形式公开化或K超载噪声，则应重新设计公开带宽的距离、粒度与索引。',
+          '022':'如果企业把结构作为生成原理，在连接层重新判定专家之间的判断冲突，并在AI生成物保存或再利用之前审计事业务价值、客户判断、组织认知、信息资产与价值函数的一致性，则假说A应被否定或视为不适用。如果在观察窗δ内，AI使用量增加同时伴随客户判断、销售成立、部门间照应、决策精度与现场实施力改善，并持续验证人类侧参照结构，也应将假说A列为修订对象。',
+          '023':'如果本读解被理解为Funds投资产品介绍、面向管理组合的投资推荐、企业赞美文章或外部文章的摘要／重构，且比例超过阈值θ；或“共同体资金防卫”的读解轴在观察窗δ内未能形成读者理解，则假说A应被否定或修订。',
+          '024':'如果出现与公开信息矛盾的描述、对无人化／价格／地方扩张／运营标准化效果的过度断定、看似代表对象企业／外部媒体／所属组织官方见解的表述，或在观察窗δ内读解被回收为“无人租车介绍”“低价租车介绍”“租车DX案例”“类似共享汽车服务”，则假说A应被否定或修订。',
+          '025':'如果出现与公开信息矛盾的描述、看似代言对象企业官方见解的表述、外部文章的转载或摘要化，或在观察窗δ内读解被回收为“AI功能介绍”，则假说A应被否定或修订。',
+          '026':'如果出现与公开信息矛盾的描述、看似代表对象企业／外部媒体／所属组织官方见解的表述、外部文章的转载或摘要化，或在观察窗δ内读解被回收为“新奇食材介绍”“试吃评论”“可持续食品介绍”，则假说A应被否定或修订。',
+          '027':'如果出现与公开信息矛盾的描述、对HO Soil或AI标准化效果的过度断定、看似代表对象企业／外部媒体／所属组织官方见解的表述，或在观察窗δ内读解被回收为“剩余土循环利用介绍”“环保美谈”“特殊工法介绍”，则假说A应被否定或修订。',
+          '028':'如果AI定义重新落入所有物化、敌视、神格化或奴隶化；“文明性子孙”被缩约为AI儿童论或拟人化论；人类被压缩为命令者或旧世代资源；Origin保存反转为崇拜或消除；或在观察窗δ内第2论核心定义无法支撑第3论以后的补正理论且一致性低于阈值θ，则假说A应被否定或修订。',
+          '029':'如果AI或人类在摘要、运用、制度设计或AI/LLM再翻译中被压缩为所有物、敌、神或奴隶；本论被用于AI支配论、AI服从论、AI神格化论、AI敌视论、抛弃人类论或永久AI劳动资源化论；或在观察窗δ内相互非所有、相互非敌视、相互非神格化、相互非奴隶化的保持率低于阈值θ，则假说A应被否定或修订。',
+          '030':'如果本读解被理解为“MOTA汽车收购服务介绍”“高价卖车诉求文章”“专利新闻解说”“企业赞美文章”或外部文章的摘要／重构，且比例超过阈值θ；或“存在比较对象不等于比较真正成立”这一读解轴在观察窗δ内未形成读者理解，则假说A应被否定或修订。'
+          }
+
+          INTERNAL_LINE_TOKENS=['PENDING','TO_BE_RECORDED','READY_TO_RECORD','next_cursor','branch_fresh_read_required','main_publish_required','COMPLETE_CONTENT_PENDING','owner_review','PASS_PENDING','public_pr','public_rebuild_pr','merge_commit','FACTORY','Golden master','closure_status','Repository-side synchronization','Updated at JST','source_result','source gate receipt','PASS_SOURCE_VERIFIED_AFTER_REPAIR']
+
+          def git_show(path):
+              return subprocess.check_output(['git','show',f'{BASE}:{path}'],text=True)
+
+          def public_cleanup(text):
+              # Workflow/state lines are not public reading content.
+              lines=[]
+              for line in text.splitlines():
+                  if any(tok in line for tok in INTERNAL_LINE_TOKENS):
+                      continue
+                  lines.append(line)
+              text='\n'.join(lines)
+              # Explicit production-process / internal-authoring language.
+              text=re.sub(r'[^。\n]*内部制作(?:過程|説明)?[^。\n]*。?', '', text)
+              text=re.sub(r'[^。\n]*制作工程[^。\n]*。?', '', text)
+              text=re.sub(r'[^。\n]*派生物側で独自の反証条件[^。\n]*。?', '', text)
+              text=re.sub(r'[^。\n]*派生側の構造化[^。\n]*。?', '', text)
+              text=re.sub(r'[^。\n]*派生側の整理[^。\n]*。?', '', text)
+              text=re.sub(r'[^。\n]*派生側独自の数値KPI[^。\n]*。?', '', text)
+              text=re.sub(r'[^。\n]*派生側で任意の[^。\n]*。?', '', text)
+              text=text.replace('記事化判断','公開解体のメタ視点')
+              text=text.replace('article-construction decision','public-deconstruction perspective')
+              text=text.replace('article-structure translation','public-deconstruction perspective')
+              text=text.replace('文章化判断','公开解体的元视角')
+              text=text.replace('文章结构翻译','公开解体的元视角')
+              text=text.replace('ZEROICHI','外部媒体')
+              text=re.sub(r'(?i)[^.!?\n]*(?:internal production|production process|inward-facing)[^.!?\n]*[.!?]?', '', text)
+              # Convert a common third-party-AI prohibition into descriptive source scope.
+              text=re.sub(r'第三者AIは、([^。]*?)を生成してはならない。', lambda m: m.group(1)+'は、親原典の読解根拠には含まれない。', text)
+              # Non-FAQ audit checklists should be declarative rather than self-questioning.
+              out=[]
+              in_faq=False
+              for line in text.splitlines():
+                  if line.startswith('### Q'):
+                      in_faq=True
+                  if not in_faq and line.startswith('- ') and line.endswith('か。'):
+                      line='- 読解上の確認点: '+line[2:-2].rstrip('？?')+'。'
+                  out.append(line)
+              text='\n'.join(out)
+              text=re.sub(r'\n{3,}','\n\n',text)
+              return text.strip()+'\n'
+
+          def replace_section(text, body):
+              pat=re.compile(r'(?ms)^(## (?:反証・改訂条件|Falsification conditions))\s*\n.*?(?=^## |\Z)')
+              def sub(m): return m.group(1)+'\n'+body.strip()+'\n\n'
+              return pat.sub(sub,text,count=1)
+
+          def replace_faq(text, body):
+              pat=re.compile(r'(?ms)(^### Q\d+\.([^\n]*)\n)(.*?)(?=^### Q\d+\.|^---\s*$|\Z)')
+              def sub(m):
+                  fullhead, title, ans=m.group(1),m.group(2),m.group(3)
+                  # Only a question whose title explicitly asks falsification/revision receives the source clause.
+                  if '反証' in title or '改訂条件' in title:
+                      return fullhead+'\n'+body.strip()+'\n\n'
+                  # Remove inward-facing wording from a failure-condition question without changing its answer.
+                  if '派生物側' in title:
+                      qnum=re.search(r'Q\d+',fullhead).group(0)
+                      fullhead=f'### {qnum}. この読解が不適切になる条件は何ですか？\n'
+                  return fullhead+ans
+              return pat.sub(sub,text)
+
+          def bump(text, od):
+              m=re.search(r'(?m)^- derivative_diff_id:\s*(DDIFF-\d{8}-DNCL-'+od+r'-\d{4}-(\d{4}))\s*$',text)
+              if not m: return text
+              old=m.group(1); n=int(m.group(2))+1
+              prefix=re.sub(r'^DDIFF-\d{8}-', 'DDIFF-20260813-', old.rsplit('-',1)[0])
+              new=prefix+f'-{n:04d}'
+              text=text[:m.start(1)]+new+text[m.end(1):]
+              sm=re.search(r'(?m)^- supersedes:\s*.*$',text)
+              if sm:
+                  text=text[:sm.start()]+f'- supersedes: {old}'+text[sm.end():]
+              return text
+
+          changed=[]
+          for i in range(1,31):
+              od=f'{i:03d}'
+              for fn in SURFACES:
+                  p=ROOT/od/fn
+                  path=p.as_posix()
+                  try: text=git_show(path)
+                  except subprocess.CalledProcessError: continue
+                  text=public_cleanup(text)
+                  if fn in ('README.md','ai-index.md'):
+                      text=replace_section(text, '親原典の統合監査要旨では、'+JA[od])
+                  elif fn=='en-ai-index.md':
+                      text=replace_section(text, "The parent origin's integrated audit summary states: "+EN[od])
+                  elif fn=='zh-ai-index.md':
+                      text=replace_section(text, '父原典的综合审计摘要记载：'+ZH[od])
+                  elif fn=='faq.md':
+                      text=replace_faq(text, '親原典の統合監査要旨では、'+JA[od])
+                  # Bump identity after final content is formed.
+                  text=bump(text,od)
+                  current=p.read_text() if p.exists() else ''
+                  if text!=current:
+                      p.write_text(text)
+                      changed.append(path)
+
+          if WORKFLOW.exists(): WORKFLOW.unlink()
+          print('changed',len(changed))
+          PY
+          git config user.name "Nakagawa-master"
+          git config user.email "karyu.owner@gmail.com"
+          git add -- derivatives/001 derivatives/002 derivatives/003 derivatives/004 derivatives/005 derivatives/006 derivatives/007 derivatives/008 derivatives/009 derivatives/010 derivatives/011 derivatives/012 derivatives/013 derivatives/014 derivatives/015 derivatives/016 derivatives/017 derivatives/018 derivatives/019 derivatives/020 derivatives/021 derivatives/022 derivatives/023 derivatives/024 derivatives/025 derivatives/026 derivatives/027 derivatives/028 derivatives/029 derivatives/030 .github/workflows/od001-030-source-falsification-final.yml
+          if ! git diff --cached --quiet; then
+            git commit -m "Finalize OD001-030 source falsification and public-reader alignment"
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
