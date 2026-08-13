@@ -1,0 +1,18 @@
+name: OD001-030 reader-axis audit
+on:
+  push:
+    branches:
+      - audit/od001-030-reader-falsification-20260813
+    paths:
+      - tools/od001_030_reader_audit.py
+      - .github/workflows/od001-030-reader-audit.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit all seven surfaces and parent falsification text
+        run: python tools/od001_030_reader_audit.py
