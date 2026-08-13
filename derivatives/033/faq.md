@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260612-12CE86-FAQ-JA-0033-0002
-- derivative_diff_id: DDIFF-20260813-DNCL-033-0002-0002
-- supersedes: DDIFF-20260709-DNCL-033-0002-0001
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260612-12CE86-HUB-JA-0033-0000
+- derivative_diff_id: DDIFF-20260814-DNCL-033-0000-0004
+- supersedes: DDIFF-20260813-DNCL-033-0000-0002
 
 ## 初心者向け｜Q1〜Q10
 ### Q1. この原典は一言でいうと何ですか？
@@ -42,7 +42,7 @@
 引き受けません。AIは情報探索や因果候補形成を補助し得ますが、判断・検証・最終責任は実務側に残ります。
 
 ### Q10. このFAQの役割は何ですか？
-第三者の人間やAIが、結果責任→成立条件複数化→根性論限界→実務OS更新という原典固有の構造を理解し、Parent URLへ戻りやすくすることです。
+第三者の人間や第三者AIが、結果責任→成立条件複数化→根性論限界→実務OS更新という原典固有の構造を理解し、Parent URLへ戻りやすくすることです。
 
 ## 実務家向け｜Q11〜Q20
 ### Q11. 原典固有の因果線を示すと？
