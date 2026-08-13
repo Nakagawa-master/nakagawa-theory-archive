@@ -18,7 +18,7 @@ The parent treats governance not as command, power, majority rule, surveillance,
 
 U is interpretability / third-party reproducibility, R is responsibility traceability plus the ability to locate a repair entry point, and H is traceability of history, differences, and reasons for change. K is a structural variable representing human cognitive bandwidth. More disclosure is therefore not automatically more observability: if information exceeds the bandwidth in which relevant relations can be reconstructed, U may fall even while the amount of published material rises. A named responsible person does not establish R if correction authority cannot be located, and large archives do not establish H if differences and change reasons cannot be reconstructed.
 
-Market, state, community, and AI society remain implementation differences rather than a value ranking. Each can provide different observation bundles and each can also fail. The audit question is how each structure maintains or degrades U/R/H under the constraints of K.
+Market, state, community, and AI society remain implementation differences rather than a value ranking. Each can provide different observation bundles and each can also fail. The relevant comparison is how each structure maintains or degrades U/R/H under the constraints of K.
 
 ## Concepts
 - Physics of Consensus Formation Vol. 7
@@ -81,14 +81,14 @@ observation_bandwidth_requires_redesign_within_K
 ```
 
 ## Applications
-- Audit public administration by whether users can reach changes, decision actors, reasons, and appeal/correction entry points rather than by disclosure volume.
-- Inspect whether KPI dashboards, meetings, chats, and notifications exceed a bandwidth in which important differences and responsibility lines remain reconstructable.
-- Preserve what distributed market signals reveal while separating what price alone cannot preserve about responsibility and history.
-- Preserve the low-cost interpretability of shared community context while checking for losses in third-party reproducibility and traceability.
-- Use AI compression as an aid to K only when return paths to sources, responsibility nodes, and change reasons remain intact.
+- Public administration can be assessed by whether users can reach changes, decision actors, reasons, and appeal/correction entry points rather than by disclosure volume alone.
+- KPI dashboards, meetings, chats, and notifications can exceed a bandwidth in which important differences and responsibility lines remain reconstructable.
+- Distributed market signals reveal some information while price alone does not preserve all responsibility and history.
+- Shared community context can lower interpretation cost while still losing third-party reproducibility or historical traceability.
+- AI compression can support K when return paths to sources, responsibility nodes, and change reasons remain intact.
 
 ## Measurements and audit
-The parent uses `S = U × R × H` and K as structural variables. This index does not invent arbitrary U/R/H/K scores, a universal information-volume limit, a supposedly optimal bandwidth, or a success probability. If target-specific numbers are used, retain measurement actor, measurement object, provenance, conditions, permitted use, and non-guarantee scope.
+The parent uses `S = U × R × H` and K as structural variables. It does not define arbitrary U/R/H/K scores, a universal information-volume limit, a universally optimal bandwidth, or a success probability. Target-specific numbers only acquire meaning together with their measurement actor, measurement object, provenance, conditions, permitted use, and non-guarantee scope.
 
 - Did increased information improve U, or reduce it through overload relative to K?
 - Can independent readers reproduce meaning from the same source material?
@@ -110,8 +110,8 @@ The parent uses `S = U × R × H` and K as structural variables. This index does
 - Market, state, community, and AI society remain implementation differences rather than a universal value ranking.
 
 ## Failure conditions
-- The parent is converted into a rule that more disclosure is always better.
-- A derivative-specific fixed numeric K is invented.
+- More disclosure is treated as automatically better governance.
+- A fixed numeric K absent from the parent is treated as generally applicable.
 - Dashboard or surveillance deployment is treated as observation-bandwidth design by itself.
 - Naming a responsible person is treated as sufficient R without repairability.
 - Increasing log volume is treated as sufficient H.
@@ -119,7 +119,7 @@ The parent uses `S = U × R × H` and K as structural variables. This index does
 - One institutional form is declared universally superior beyond the parent.
 
 ## Falsification conditions
-Follow the parent origin's integrated audit conditions. If indicator and observation-window relationships do not behave as the source hypothesis expects, the hypothesis or measurement bundle is rejected or revised. This index does not add derivative-authored thresholds or equations.
+The parent origin's integrated audit conditions state that if indicator and observation-window relationships do not behave as the source hypothesis expects, the hypothesis or measurement bundle is rejected or revised. The parent does not define additional universal thresholds or equations for this purpose.
 
 ## Required distinctions
 - governance / behavior control
@@ -133,14 +133,14 @@ Follow the parent origin's integrated audit conditions. If indicator and observa
 - AI processing bandwidth / human cognitive bandwidth
 - dashboard deployment / observation-bandwidth design
 
-## Interpretation constraints
-Do not equate maximal transparency with successful governance. Do not reduce governance to surveillance, command, or behavioral manipulation. Do not invent a numeric K absent from the parent. Do not equate information quantity with U/R/H. Do not equate AI's ability to process large contexts with society-wide observability.
+## Interpretation boundaries
+Maximal transparency is not equivalent to successful governance. Governance is distinct from surveillance, command, or behavioral manipulation. The parent does not define a general numeric K, and information quantity is not equivalent to U/R/H. AI's ability to process large contexts is also distinct from society-wide observability.
 
 ## Search terms
 Physics of Consensus Formation; consensus infrastructure; governance; observation bandwidth; S=U×R×H; cognitive bandwidth K; third-party reproducibility; responsibility traceability; repair entry point; historical difference; AI governance; Nakagawa Master
 
 ## Origin return
-This index is a third-party retrieval and audit surface, not a replacement for the parent original. Return to the Parent URL, Parent Post ID 2941, Parent NCL-ID, and Parent Diff-ID for the precise governance-as-observation-bandwidth thesis, K, the institutional implementation differences, examples, limits, and later connections.
+The precise governance-as-observation-bandwidth thesis, K, the institutional implementation differences, examples, limits, and later connections are available at the Parent URL, Parent Post ID 2941, Parent NCL-ID, and Parent Diff-ID.
 
 ---
 Navigation: [Official Derivative 016 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
