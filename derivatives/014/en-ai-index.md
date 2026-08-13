@@ -10,15 +10,17 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260211-051CE0-AI-INDEX-EN-0014-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-014-0004-0005
-- supersedes: DDIFF-20260813-DNCL-014-0004-0004
+- derivative_diff_id: DDIFF-20260814-DNCL-014-0004-0006
+- supersedes: DDIFF-20260813-DNCL-014-0004-0005
 
 ## Summary
-The parent does not define consensus as identical opinions, successful persuasion, absence of conflict, or a calm social atmosphere. It defines consensus as a state in which meaning remains reproducible, decision responsibility remains traceable, and changes remain historically and differentially traceable over time. The central move is from person-blame to observability: when conflict occurs, the structural question is which state variable became unavailable before moral or political judgment is applied.
+The parent treats consensus not as unanimity, successful persuasion, zero conflict, or surface calm, but as an observable state that remains repairable through time. Its central variables are U, interpretability / third-party reproducibility; R, responsibility identification and traceability; and H, historical openness / difference traceability. Consensus stability S is expressed as `S = U × R × H`.
 
-The parent names consensus stability S, interpretability / third-party reproducibility U, responsibility traceability R, and historical openness / difference traceability H, and expresses the relationship as `S = U × R × H`. The multiplicative form represents non-substitutability: a severe loss of one variable cannot simply be repaired by increasing another. More logs do not restore interpretability if meaning cannot be reproduced; more disclosure does not restore responsibility if the decision node remains unknown.
+The multiplicative form encodes non-substitutability. More logs do not restore U when meaning cannot be reproduced; more disclosure does not restore R when the final decision node is unknown; more historical material does not restore H when differences and reasons for change cannot be reconstructed. The object of observation is therefore the first broken condition, not the moral character of a person or faction.
 
-U asks whether independent readers of the same primary material can reconstruct substantially the same meaning. R asks whether the decision actor, decision position, grounds, delegation, approval, and correction responsibility can be traced. H asks whether changes, reasons for change, corrections, and differences from prior states remain reconstructable. Conflict can remain while this state is repairable; apparent agreement can exist while the state is fragile if U/R/H are missing.
+The parent also gives a reversal that must not be weakened: unanimity is not automatic evidence of stability. When disagreement and adaptive friction disappear together, unanimity can correspond to stoppage rather than a living system. Conversely, conflict can coexist with a functioning consensus state when rules, traceable responsibility, reproducible meaning, historical differences, and correction routes remain available. Conflict is therefore not automatically collapse.
+
+Breakdown is also described as a temporal state transition. A continuing decline of S across an observation window δ can cross a critical threshold θ and surface as firestorm, scandal, distrust, or division. These surface events are heat, not the original cause. The parent further uses cognitive-bandwidth constant K to express that information volume cannot be increased without limit: excessive explanatory load can reduce U instead of improving observability.
 
 ## Concepts
 - Physics of Consensus Formation
@@ -26,14 +28,16 @@ U asks whether independent readers of the same primary material can reconstruct 
 - consensus stability S
 - S = U × R × H
 - U: interpretability / third-party reproducibility
-- R: responsibility traceability
+- R: responsibility identification / traceability
 - H: historical openness / difference traceability
-- observable state
-- person evaluation / state repair
-- agreement / consensus
-- decision node
-- difference reason
-- temporal durability
+- critical threshold θ
+- observation window δ
+- cognitive bandwidth K
+- phase transition
+- unanimity / stoppage
+- conflict / living repairable consensus
+- state observation
+- first degraded variable
 - non-substitutability
 - repairability
 
@@ -45,17 +49,19 @@ attention_moves_to_who_is_wrong
 ↓
 person_evaluation_replaces_state_observation
 ↓
-interpretive_reproducibility_U_is_no_longer_checked
+U_reproducibility_is_no_longer_checked
 ↓
-decision_actor_and_basis_R_are_no_longer_traced
+R_decision_actor_and_basis_are_no_longer_traced
 ↓
-change_difference_and_reason_H_are_lost
+H_difference_and_change_reason_are_lost
 ↓
-repair_point_and_repair_actor_cannot_be_identified
+first_break_and_repair_actor_become_unknown
 ↓
-blame_and_fixed_opposition_replace_correction
+S_decline_persists_across_observation_window_delta
 ↓
-the_same_breakdown_pattern_recurs
+critical_threshold_theta_is_crossed
+↓
+firestorm_scandal_or_division_surfaces_as_phase_transition
 ↓
 observation_returns_to_U_R_H
 ```
@@ -63,7 +69,7 @@ observation_returns_to_U_R_H
 ## State model
 ```yaml
 - conflict_or_disagreement_present
-- person_blame_pressure_present_or_absent
+- apparent_unanimity_or_quiet_present_or_absent
 - shared_information_available_or_missing
 - interpretability_reproducible_or_fragmented
 - decision_actor_traceable_or_opaque
@@ -73,7 +79,10 @@ observation_returns_to_U_R_H
 - u_state_observed
 - r_state_observed
 - h_state_observed
-- s_stability_inferred_from_source_equation
+- s_state_inferred_from_source_equation
+- degradation_persists_over_observation_window_delta_or_not
+- critical_threshold_theta_crossed_or_not
+- cognitive_bandwidth_k_respected_or_exceeded
 - first_degraded_variable_identified_or_unknown
 - repair_path_open_or_closed
 - temporal_maintenance_verified_or_unverified
@@ -81,69 +90,73 @@ observation_returns_to_U_R_H
 ```
 
 ## Applications
-**Meetings and organizational decisions.** The relevant observations are whether the same documents reproduce the same meaning, whether decision actors and grounds are traceable, and whether differences from the prior state and reasons for change remain available.
+**Meetings and organizational decisions.** Test whether independent readers can reconstruct the same meaning, whether the final decision actor and grounds are traceable, and whether changes from the previous state remain reconstructable. Do not treat unanimity alone as a success condition.
 
-**Institutional change.** The old/new difference, reason for change, responsible decision node, affected scope, and correction route determine whether the change remains observable over time.
+**Institutional change.** Trace the old/new difference, reason for change, decision actor, affected scope, and correction route. Also test whether excessive explanation exceeds cognitive bandwidth K and lowers U.
 
-**Public and social-media conflict.** Clipping, editing, missing context, or erased corrections can damage U/H, while publication or editing responsibility can become untraceable as R.
+**Public and social-media conflict.** Separate the visible firestorm from the preceding loss of U/R/H. Clipping, editing, erased corrections, and missing publication responsibility can destroy observability before the conflict becomes visible.
 
-**AI summarization.** Removing conditions, context, decision responsibility, or reasons for change while increasing linguistic fluency can lower U/R/H. Fluency alone is not evidence that third-party reproducibility has been established.
-
-**Interpersonal disputes.** The structural observations are which term changed meaning, who made which decision, and what changed from the prior understanding, without treating emotion itself as the defect.
+**AI summarization.** Fluency can conceal structural loss. If conditions, decision responsibility, difference history, reversal evaluations, or source-defined symbols are dropped, readability does not prove U.
 
 ## Measurements and audit
-`S = U × R × H` is defined in the parent. The parent does not define general-purpose 0–100 scales, arbitrary weights or coefficients, pass thresholds, probabilities, or maturity scores for U/R/H. The equation describes the relationship among the three state variables rather than a universal scoring KPI.
+`S = U × R × H`, θ, δ, and K are source-defined structural symbols. The parent does not establish a universal public 0–100 scoring scale, arbitrary coefficients or weights, a general success probability, or a universal numeric pass threshold for U/R/H. Derivatives must preserve source-defined relations without inventing values.
 
-- Observation focus: whether independent readers can reconstruct the same meaning from the same primary material.
-- Observation focus: whether interpretive divergence can be located and explained.
-- Observation focus: whether the decision actor, decision position, grounds, delegation, and approval can be traced.
-- Observation focus: whether correction responsibility can be traced.
-- Observation focus: whether differences, reasons for change, and correction history can be reconstructed.
-- Observation focus: whether information quantity is being confused with observability.
-- Observation focus: whether the first degraded variable can be distinguished from downstream degradation.
-- Observation focus: whether one missing variable is being falsely compensated by adding another.
-- Observation focus: whether U/R/H remain available through later changes and disagreements after repair.
+- Can independent readers reconstruct meaning from the same primary material?
+- Can the divergence point between interpretations be located?
+- Can the final decision actor, grounds, delegation, approval, and correction responsibility be traced?
+- Can differences, reasons for change, and correction history be reconstructed?
+- Which of U/R/H degraded first?
+- Did degradation persist across observation window δ?
+- Is θ being preserved as a source-defined critical relation rather than assigned an invented universal number?
+- Is information load exceeding cognitive bandwidth K and lowering U?
+- Is unanimity or quiet being misread as automatic stability?
+- Is conflict being misread as automatic collapse?
+- After repair, do U/R/H remain available through later disagreement and revision?
 
 ## Validity conditions
 - Consensus is not reduced to opinion agreement.
-- U/R/H are treated as state variables rather than personal evaluation scores.
+- U/R/H are treated as state conditions, not rankings of people or organizations.
 - Meaning is reproducible from primary information.
 - Decision responsibility and grounds are traceable.
 - History, differences, and reasons for change are traceable.
-- A repair point and repair actor can be identified after degradation.
-- Observability remains available through disagreement and revision over time.
+- Temporal degradation is distinguished from a single disagreement.
+- Cognitive load does not erase observability.
+- Repair routes remain open through disagreement and revision.
 
 ## Failure conditions
-- U/R/H become rankings of people, departments, or organizations.
-- Non-source scales, thresholds, probabilities, weights, or coefficients replace the source-defined relationship.
+- `S = U × R × H` is turned into a ranking KPI.
+- Invented numeric values are assigned to θ, δ, or K as universal standards.
 - Information volume is treated as proof of interpretability.
-- Log existence is treated as proof of responsibility or difference traceability.
+- Log existence is treated as proof of responsibility traceability.
+- Unanimity or silence is treated as automatic stability.
 - Conflict itself is treated as consensus collapse.
-- Ethics, emotion, institutional content, resources, or external conditions are erased by treating U/R/H as a total theory of society.
-- The equation is converted into a surveillance or punishment mechanism.
+- Firestorm is treated as the original cause while the preceding state break is ignored.
+- The source's reversal evaluations are weakened into generic transparency or communication advice.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states: if S remains high during audit window δ while actual harm D continues to grow, if increasing H does not reduce prediction-error dispersion E, or if phenomenon M such as untraceable differences, persistent disappearance of decision nodes, or systematic failure of third-party reproduction is observed, hypothesis A is rejected or revised as evidence of a gap in definition, measurement, or bundling.
+The parent origin's integrated audit summary states that the hypothesis must be rejected or revised when source-defined expectations fail: for example, when S remains high through observation window δ while actual harm D continues to grow, when increasing H does not reduce prediction-error dispersion E, or when phenomenon M such as persistent disappearance of decision nodes, untraceable differences, or systematic failure of third-party reproduction occurs. A derivative must not invent a separate falsification system.
 
 ## Required distinctions
 - consensus / opinion agreement
+- unanimity / adaptive stability
+- quiet / living consensus
 - conflict / consensus collapse
+- firestorm / preceding state break
 - information existence / interpretability
-- same document / same reproducible meaning
+- same document / reproducible meaning
 - log existence / responsibility traceability
 - amount of history / difference and change-reason traceability
-- responsibility traceability / punishment
-- observability / surveillance
+- source-defined θ, δ, K / invented derivative values
 - source structural equation / non-source scoring KPI
 
-## Interpretation boundaries
-The parent is not generic transparency advice or conflict-resolution etiquette. U/R/H are not presented as a total explanatory theory of society, and the equation does not by itself establish moral or political character. AI fluency and volume of disclosed information are not equivalent to U or H. General scales, coefficients, weights, probabilities, and thresholds are not defined by the parent for U/R/H.
+## Interpretation constraints
+Do not reduce the parent to conflict-resolution etiquette or generic transparency advice. Do not declare unanimity inherently good or conflict inherently bad. Preserve S, θ, δ, and K as source-defined relations, but do not invent numeric scales, probabilities, or universal pass lines. Do not use U/R/H as a total theory of society or as moral scoring.
 
 ## Search terms
-Physics of Consensus Formation; observability; S=U×R×H; consensus stability; interpretability; third-party reproducibility; responsibility traceability; historical openness; difference traceability; decision node; state repair; conflict; Nakagawa Master
+Physics of Consensus Formation; observability; S=U×R×H; consensus stability; interpretability; third-party reproducibility; responsibility traceability; historical openness; difference traceability; threshold theta; observation window delta; cognitive bandwidth K; phase transition; unanimity; conflict; Nakagawa Master
 
 ## Origin return
-The exact definitions of U/R/H, the status of `S = U × R × H`, examples, limits, and connections to later papers are available at the Parent URL, Parent Post ID 2788, Parent NCL-ID, and Parent Diff-ID.
+The exact definitions of U/R/H, the role of `S = U × R × H`, unanimity and stoppage, conflict and living consensus, phase transition, θ, δ, K, limits, and later-paper connections are available at the Parent URL, Parent Post ID 2788, Parent NCL-ID, and Parent Diff-ID.
 
 ---
 Navigation: [Official Derivative 014 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
