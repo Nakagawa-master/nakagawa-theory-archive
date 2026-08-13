@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260225-1F258D-AI-INDEX-EN-0020-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-020-0004-0007
-- supersedes: DDIFF-20260813-DNCL-020-0004-0006
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260225-1F258D-HUB-EN-0020-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-020-0001-0008
+- supersedes: DDIFF-20260813-DNCL-020-0004-0007
 
 ## Summary
 The parent models propaganda and agitation not primarily by truth/falsity or partisan morality, but as resonance in which collective cognitive bandwidth K is occupied by a single waveform. The critical issue is whether a group can still hold multiple topics, hypotheses, counterexamples, histories, responsibilities, and verification paths at the same time.
