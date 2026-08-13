@@ -23,18 +23,6 @@ zh_ncl_id: DNCL-NCL-ALPHA-20260215-198686-HUB-ZH-0016-0002
 zh_diff_id: DDIFF-20260813-DNCL-016-0002-0006
 ```
 
-## Factory
-```yaml
-quality_contract: OD134_OD135_LITERAL_SURFACE_BENCHMARK
-source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
-production_standard: LITERAL_SEVEN_SURFACE_REAUDIT
-manual_meaning_normalization: PROHIBITED
-assistant_safety_reframing_as_parent_meaning: PROHIBITED
-invented_fixed_sections: PROHIBITED
-surface_role_mixing: PROHIBITED
-footer_navigation_must_follow_benchmark: true
-```
-
 ## Retrieval evidence
 ```yaml
 canonical_index: reference_corpus/official_archive/generated/canonical_index_2770_2941.jsonl
@@ -49,54 +37,29 @@ source_meaning_return: Parent_URL
 ```
 
 ## Seven surfaces
-```yaml
-README.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-human-entry.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-faq.md: REAUDITED_LITERAL_SOURCE_FAITHFUL_Q1_Q30
-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-en-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-zh-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-derivative-ledger.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-```
+- README.md: 第三者向け公開入口。
+- human-entry.md: 第三者人間向け要約。
+- faq.md: Q1〜Q30の第三者向けFAQ。
+- ai-index.md: 第三者AI向け日本語索引。
+- en-ai-index.md: 第三者AI向け英語索引。
+- zh-ai-index.md: 第三者AI向け中国語索引。
+- derivative-ledger.md: 親原典・派生ID・由来・意味境界を確認する台帳。
 
-## Source-fidelity findings repaired
-```yaml
-prior_drift:
-  - SURFACE_SPECIFIC_DERIVATIVE_IDS_DIVERGED_FROM_OD134_OD135_LANGUAGE_HUB_PATTERN
-  - JA_PUBLIC_SURFACES_DID_NOT_SHARE_SINGLE_HUB_IDENTITY
-  - EN_ZH_INDEX_IDENTITIES_USED_LEGACY_AI_INDEX_IDS
-  - LEDGER_DID_NOT_MATCH_OD134_OD135_LITERAL_LEDGER_STRUCTURE
-restored:
-  - PARENT_TITLE_URL_POST_ID_NCL_ID_DIFF_ID_ORIGIN
-  - SHARED_JA_HUB_DERIVATIVE_IDENTITY_ACROSS_JA_PUBLIC_SURFACES
-  - LANGUAGE_HUB_DERIVATIVE_IDS_FOR_EN_AND_ZH
-  - OD134_OD135_LITERAL_LEDGER_STRUCTURE
-  - S_EQUALS_U_TIMES_R_TIMES_H
-  - K_AS_SOURCE_BOUNDED_COGNITIVE_BANDWIDTH
-  - GOVERNANCE_AS_OBSERVATION_BANDWIDTH_DESIGN
-  - INFORMATION_VOLUME_VS_OBSERVABILITY_DISTINCTION
-  - REPAIR_ENTRY_AND_SOURCE_RETURN
-  - THIRD_PARTY_HUMAN_AND_AI_PUBLIC_READER_AXIS
-  - PARENT_ORIGIN_RETURN
-```
+## Meaning boundary
+親原典では、統治を命令・監視・情報公開量の増加ではなく、`S = U × R × H` を維持するための観測帯域設計として扱う。Kは人間の認知帯域を表す構造変数であり、情報量が増えてもKを超えて重要な意味関係が埋没すればU/R/Hは低下し得る。
 
-## Semantic rule
-派生物は、統治を命令・監視・情報公開量の増加へ縮約せず、`S = U × R × H` と人間認知帯域Kを保持する。Kへ親原典にない固定件数・文字数・時間・確率・合格値を追加しない。市場・国家・共同体・AI社会を価値順位ではなく実装差として扱い、要約・圧縮後も原資料、責任線、差分、修復入口への回帰可能性を保持する。
+Kについて、親原典は一般利用向けの固定件数・文字数・時間・確率・合格値を定義していない。市場・国家・共同体・AI社会は価値順位ではなく、観測帯域の実装差として比較される。
 
-## Navigation and closure
-```yaml
-public_indexes: RETAINED
-public_map: RETAINED
-private_map: RETAINED
-parent_backlink_display_procedure: RETAINED
-literal_surface_structure_check: PASSED
-footer_navigation_check: PASSED
-third_party_public_reader_axis_check: PASSED
-internal_instruction_leak_check: PASSED_NONE
-self_reference_dialogue_check: PASSED_NONE
-source_fidelity_reaudit: PASSED
-source_fidelity_owner_review: PENDING
-```
+## Required distinctions
+- 統治 / 行動統制
+- 観測可能性 / 情報量
+- K / 固定情報量上限
+- 責任表示 / 修復可能なR
+- 履歴量 / 検証可能なH
+- AI処理帯域 / 人間認知帯域
+
+## Origin return
+統治＝観測帯域設計、`S = U × R × H`、K、市場・国家・共同体・AI社会の実装差、反例と限界はParent URL、Parent Post ID 2941、Parent NCL-ID、Parent Diff-IDで確認できる。
 
 ---
 導線: [公式派生物016トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
