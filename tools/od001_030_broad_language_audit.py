@@ -12,7 +12,7 @@ FAQ_SELF=re.compile(r"^### Q\d+\..*(?:して(?:も)?よいですか|すべきで
 EN_IMP=re.compile(r"^\s*(?:[-*]\s*)?(?:Preserve|Keep|Retain|Return|Avoid|Do not|Don't|Never|Always|Check|Verify|Use|Treat|Distinguish|Separate|Limit|Add|Generate)\b",re.I)
 EN_CREATOR=re.compile(r"\b(?:this|the) (?:official )?(?:derivative|index|public reading)\b.{0,200}\b(?:must|should|shall|must not|should not|do not|does not|preserve|retain|keep|add|generate|limit)\b",re.I)
 EN_AI=re.compile(r"\b(?:third[- ]party )?AI(?:s)?\s+(?:must|should|shall|must not|should not|do not|don't)\b",re.I)
-ZH_BULLET=re.compile(r"^[-*]\s*(?:不得|必须|应该|应当|不应|应保留|应保持|应返回|应同时|不要)\b?")
+ZH_BULLET=re.compile(r"^[-*]\s*(?:不得|必须|应该|应当|不应|应保留|应保持|应返回|应同时|不要)")
 ZH_CREATOR=re.compile(r"(?:本公开读解|本衍生物|官方衍生物|本索引|第三方AI).{0,200}(?:不得|必须|应该|应当|不应|应保留|应保持|生成|添加|限定|删除)")
 
 def main():
