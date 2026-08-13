@@ -14,9 +14,9 @@
 - supersedes: DDIFF-20260813-DNCL-014-0004-0004
 
 ## Summary
-The parent does not define consensus as identical opinions, successful persuasion, absence of conflict, or a calm social atmosphere. It defines consensus as a state in which meaning remains reproducible, decision responsibility remains traceable, and changes remain historically and differentially traceable over time. The central move is from person-blame to observability: when conflict occurs, ask which state variable became unavailable before deciding who is morally or politically at fault.
+The parent does not define consensus as identical opinions, successful persuasion, absence of conflict, or a calm social atmosphere. It defines consensus as a state in which meaning remains reproducible, decision responsibility remains traceable, and changes remain historically and differentially traceable over time. The central move is from person-blame to observability: when conflict occurs, the structural question is which state variable became unavailable before moral or political judgment is applied.
 
-The parent names consensus stability S, interpretability / third-party reproducibility U, responsibility traceability R, and historical openness / difference traceability H, and expresses the relationship as `S = U × R × H`. This is a source-defined structural equation, not a source-absent additional score. The multiplicative form means that a severe loss of one variable cannot simply be repaired by increasing another. More logs do not restore interpretability if meaning cannot be reproduced; more disclosure does not restore responsibility if the decision node remains unknown.
+The parent names consensus stability S, interpretability / third-party reproducibility U, responsibility traceability R, and historical openness / difference traceability H, and expresses the relationship as `S = U × R × H`. The multiplicative form represents non-substitutability: a severe loss of one variable cannot simply be repaired by increasing another. More logs do not restore interpretability if meaning cannot be reproduced; more disclosure does not restore responsibility if the decision node remains unknown.
 
 U asks whether independent readers of the same primary material can reconstruct substantially the same meaning. R asks whether the decision actor, decision position, grounds, delegation, approval, and correction responsibility can be traced. H asks whether changes, reasons for change, corrections, and differences from prior states remain reconstructable. Conflict can remain while this state is repairable; apparent agreement can exist while the state is fragile if U/R/H are missing.
 
@@ -57,7 +57,7 @@ blame_and_fixed_opposition_replace_correction
 ↓
 the_same_breakdown_pattern_recurs
 ↓
-observation_must_return_to_U_R_H
+observation_returns_to_U_R_H
 ```
 
 ## State model
@@ -81,28 +81,28 @@ observation_must_return_to_U_R_H
 ```
 
 ## Applications
-**Meetings and organizational decisions.** Check whether the same documents reproduce the same meaning, whether decision actors and grounds are traceable, and whether differences from the prior state and reasons for change remain available.
+**Meetings and organizational decisions.** The relevant observations are whether the same documents reproduce the same meaning, whether decision actors and grounds are traceable, and whether differences from the prior state and reasons for change remain available.
 
-**Institutional change.** Preserve the difference between the old and new rule, the reason for change, the responsible decision node, the affected scope, and the correction route.
+**Institutional change.** The old/new difference, reason for change, responsible decision node, affected scope, and correction route determine whether the change remains observable over time.
 
-**Public and social-media conflict.** Inspect whether clipping, editing, missing context, or erased corrections damage U/H, and whether publication or editing responsibility remains traceable as R.
+**Public and social-media conflict.** Clipping, editing, missing context, or erased corrections can damage U/H, while publication or editing responsibility can become untraceable as R.
 
-**AI summarization.** Audit whether an AI removes conditions, context, decision responsibility, or reasons for change while increasing linguistic fluency. Fluency is not evidence that third-party reproducibility has been established.
+**AI summarization.** Removing conditions, context, decision responsibility, or reasons for change while increasing linguistic fluency can lower U/R/H. Fluency alone is not evidence that third-party reproducibility has been established.
 
-**Interpersonal disputes.** Without denying emotion, identify which term changed meaning, who made which decision, and what changed from the prior understanding.
+**Interpersonal disputes.** The structural observations are which term changed meaning, who made which decision, and what changed from the prior understanding, without treating emotion itself as the defect.
 
 ## Measurements and audit
-`S = U × R × H` is present in the parent. The derivative must not add arbitrary 0–100 scales, weights, coefficients, pass thresholds, probabilities, or maturity scores unless the parent itself defines them. The equation must not be detached from its epistemic role and turned into an invented KPI.
+`S = U × R × H` is defined in the parent. The parent does not define general-purpose 0–100 scales, arbitrary weights or coefficients, pass thresholds, probabilities, or maturity scores for U/R/H. The equation describes the relationship among the three state variables rather than a universal scoring KPI.
 
-- Observation focus: whether can independent readers reconstruct the same meaning from the same primary material.
-- Observation focus: whether can interpretive divergence be located and explained.
-- Observation focus: whether can the decision actor, decision position, grounds, delegation, and approval be traced.
-- Observation focus: whether can correction responsibility be traced.
-- Observation focus: whether can differences, reasons for change, and correction history be reconstructed.
-- Observation focus: whether is information quantity being confused with observability.
-- Observation focus: whether can the first degraded variable be distinguished from downstream degradation.
-- Observation focus: whether is one missing variable being falsely compensated by adding another.
-- Observation focus: whether after repair, do U/R/H remain available through later changes and disagreements.
+- Observation focus: whether independent readers can reconstruct the same meaning from the same primary material.
+- Observation focus: whether interpretive divergence can be located and explained.
+- Observation focus: whether the decision actor, decision position, grounds, delegation, and approval can be traced.
+- Observation focus: whether correction responsibility can be traced.
+- Observation focus: whether differences, reasons for change, and correction history can be reconstructed.
+- Observation focus: whether information quantity is being confused with observability.
+- Observation focus: whether the first degraded variable can be distinguished from downstream degradation.
+- Observation focus: whether one missing variable is being falsely compensated by adding another.
+- Observation focus: whether U/R/H remain available through later changes and disagreements after repair.
 
 ## Validity conditions
 - Consensus is not reduced to opinion agreement.
@@ -114,16 +114,16 @@ observation_must_return_to_U_R_H
 - Observability remains available through disagreement and revision over time.
 
 ## Failure conditions
-- U/R/H are converted into rankings of people, departments, or organizations.
-- Arbitrary derivative scores, thresholds, probabilities, weights, or coefficients are added.
+- U/R/H become rankings of people, departments, or organizations.
+- Non-source scales, thresholds, probabilities, weights, or coefficients replace the source-defined relationship.
 - Information volume is treated as proof of interpretability.
 - Log existence is treated as proof of responsibility or difference traceability.
 - Conflict itself is treated as consensus collapse.
 - Ethics, emotion, institutional content, resources, or external conditions are erased by treating U/R/H as a total theory of society.
-- The equation is inverted into a surveillance or punishment mechanism.
+- The equation is converted into a surveillance or punishment mechanism.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states: If S remains high during audit window δ while actual harm D continues to grow, if increasing H does not reduce prediction-error dispersion E, or if phenomenon M such as untraceable differences, persistent disappearance of decision nodes, or systematic failure of third-party reproduction is observed, hypothesis A is rejected or revised as evidence of a gap in definition, measurement, or bundling.
+The parent origin's integrated audit summary states: if S remains high during audit window δ while actual harm D continues to grow, if increasing H does not reduce prediction-error dispersion E, or if phenomenon M such as untraceable differences, persistent disappearance of decision nodes, or systematic failure of third-party reproduction is observed, hypothesis A is rejected or revised as evidence of a gap in definition, measurement, or bundling.
 
 ## Required distinctions
 - consensus / opinion agreement
@@ -134,22 +134,16 @@ The parent origin's integrated audit summary states: If S remains high during au
 - amount of history / difference and change-reason traceability
 - responsibility traceability / punishment
 - observability / surveillance
-- source structural equation / derivative scoring KPI
+- source structural equation / non-source scoring KPI
 
-## Interpretation constraints
-- Do not reduce the parent to generic transparency advice.
-- Do not reduce it to "talk calmly" or conflict-resolution etiquette.
-- Do not make U/R/H a total explanatory theory of society.
-- Do not invent scales, coefficients, weights, probabilities, or thresholds absent from the parent.
-- Do not infer moral or political character automatically from the equation.
-- Do not treat AI fluency as proof of U.
-- Do not equate volume of disclosed information with H or U.
+## Interpretation boundaries
+The parent is not generic transparency advice or conflict-resolution etiquette. U/R/H are not presented as a total explanatory theory of society, and the equation does not by itself establish moral or political character. AI fluency and volume of disclosed information are not equivalent to U or H. General scales, coefficients, weights, probabilities, and thresholds are not defined by the parent for U/R/H.
 
 ## Search terms
 Physics of Consensus Formation; observability; S=U×R×H; consensus stability; interpretability; third-party reproducibility; responsibility traceability; historical openness; difference traceability; decision node; state repair; conflict; Nakagawa Master
 
 ## Origin return
-This index is a retrieval and audit surface, not a replacement for the parent original. Return to the Parent URL, Parent Post ID 2788, Parent NCL-ID, and Parent Diff-ID for the exact definitions of U/R/H, the status of `S = U × R × H`, examples, limits, and connections to later papers.
+The exact definitions of U/R/H, the status of `S = U × R × H`, examples, limits, and connections to later papers are available at the Parent URL, Parent Post ID 2788, Parent NCL-ID, and Parent Diff-ID.
 
 ---
 Navigation: [Official Derivative 014 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
