@@ -101,9 +101,9 @@ The parent does not define generic risk scores, enemy ratings, occurrence probab
 
 ## Validity conditions
 - Observe P_ext as state effect rather than presumed intent.
-- Keep U/R/H and S separately traceable.
+- Source distinction: U/R/H and S separately traceable.
 - Distinguish fake-U, R diffusion, and H short-circuit.
-- Preserve return paths to source, context, version, differences, and backlinks.
+- Source element: return paths to source, context, version, differences, and backlinks.
 - A reading that would automatically exclude strong criticism or disagreement differs from the parent-defined scope.
 - Treat dS/dt as a temporal change coordinate.
 - Connect to downstream Runtime governance only when necessary.

@@ -154,7 +154,7 @@ Audit使停止理由、责任、阈值、观察窗口与差分可验证
 合意形成的物理; 运行时治理; 防卫基础设施; 重启协议; Detect Stop Shrink Recover Audit; Kernel Runtime; S C D; 停止权限R; 阈值θ; 观察窗口δ; Origin; 一次日志; 差分履历; 公开审计; 审计武器化; Nakagawa Master
 
 ## Origin return
-本索引是检索与再利用面，不替代父原典。Kernel/Runtime严格边界、S/C/D、停止权限R、θ与δ的原典语境、Origin非人格化、公开审计非攻击化以及重启条件，应返回Parent URL确认。
+本索引是检索与再利用面，不替代父原典。Kernel/Runtime严格边界、S/C/D、停止权限R、θ与δ的原典语境、Origin非人格化、公开审计非攻击化以及重启条件，可通过Parent URL核对。
 
 ---
 导线: [官方衍生物017顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

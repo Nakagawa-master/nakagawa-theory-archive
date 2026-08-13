@@ -80,7 +80,7 @@ H and R are restored and verifiable understanding resumes
 - Audit AI answers for return paths to citations, versions, conditions, and differences rather than fluency alone.
 - Audit organizational summaries for whether one-page syntheses replace source records and change reasons.
 - Audit social-media excerpts for access to the original statement, surrounding context, and edit differences.
-- Preserve clear teaching while retaining paths to origin, exceptions, falsification, and next questions.
+- Source element: clear teaching while retaining paths to origin, exceptions, falsification, and next questions.
 - Audit research and policy summaries for semantic drift across repeated summarization.
 
 ## Measurements and audit
@@ -100,9 +100,9 @@ The parent does not define generic understanding scores, danger percentages, AI-
 - Treat H-Disconnect as a U/H/R combination.
 - Separate fake-U from substantive understanding.
 - Use H_d, F-C, and SD as a bundle, not universal single scores.
-- Preserve return paths to Origin, source, context, version, and differences.
+- Source element: return paths to Origin, source, context, version, and differences.
 - Establish verification responsibility R.
-- Preserve Detect → Stop → Shrink → Recover → Audit.
+- Source element: Detect → Stop → Shrink → Recover → Audit.
 - A reading that would prohibit AI, summaries, diagrams, or clarity themselves differs from the parent-defined scope.
 
 ## Failure conditions

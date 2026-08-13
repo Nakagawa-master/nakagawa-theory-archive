@@ -127,7 +127,7 @@ The parent original does not define a derivative-generic establishment rate, who
 - Compare linguistic coherence with reality establishment.
 - Verify whether decision history, change history, and exception history allow causal reconstruction.
 - Verify whether the original meaning axis remains traceable through time and revisions.
-- Return AI output to concrete events, actions, institutions, and responsibility before treating it as established.
+- Origin return: AI output to concrete events, actions, institutions, and responsibility before treating it as established.
 - A reading that would infer whole establishment from the number, prestige, or expertise of locally correct actors differs from the parent-defined scope.
 
 The reversal test remains source-bounded: if local correctness is accompanied by verified cross-layer connection, clear responsibility, retraceable history, and absence of residual burden, the whole-establishment hypothesis strengthens. If local correctness remains but connection breaks, responsibility evaporates, or unprocessed burden persists, the hypothesis weakens. A source-absent additional score must not replace this structural relation.

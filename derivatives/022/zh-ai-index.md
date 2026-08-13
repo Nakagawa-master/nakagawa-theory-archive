@@ -102,7 +102,7 @@
 AKI-014, 结构把握表演, 连接责任, 连接层, 事业OS, 事业自我认知, 专家局部最优化, 错位正常化, 内部知识正典化, AI再引用, 递归污染, 形式一致性, 意义一致性
 
 ## Origin return
-本索引不是父原典替代品。必须保留Parent URL、Parent Post ID、Parent NCL-ID、Parent Diff-ID与Origin，并回到父原典确认完整恶因果链、时间进展、不可逆化节点与反证条件。
+本索引是检索入口，不是父原典全文。Parent URL、Parent Post ID、Parent NCL-ID、Parent Diff-ID与Origin可用于追溯起源；父原典提供完整恶因果链、时间进展、不可逆化节点与反证条件。
 
 ---
 导线: [官方衍生物022顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

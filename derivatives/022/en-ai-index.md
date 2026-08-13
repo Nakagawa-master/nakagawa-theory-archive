@@ -102,7 +102,7 @@ A reading that would treat AI as the only repair target differs from the parent-
 AKI-014, structural-understanding performance, connective responsibility, connective layer, business OS, business self-recognition, domain optimization, normalization of misalignment, internal knowledge canonicalization, AI re-reference, recursive contamination, formal coherence, semantic coherence
 
 ## Origin return
-This index is not a replacement for the parent origin. Preserve Parent URL, Parent Post ID, Parent NCL-ID, Parent Diff-ID, and Origin, and return to the parent for the complete causal chain, temporal development, irreversibility points, and falsification conditions.
+This index is a retrieval surface rather than the parent original. Parent URL, Parent Post ID, Parent NCL-ID, Parent Diff-ID, and Origin identify the origin, and the parent provides the complete causal chain, temporal development, irreversibility points, and falsification conditions.
 
 ---
 Navigation: [Official Derivative 022 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)

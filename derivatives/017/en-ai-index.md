@@ -107,13 +107,13 @@ The parent does not define universal KPI values, success rates, risk percentages
 
 ## Validity conditions
 - Separate Kernel correctness from Runtime safety.
-- Preserve the causal order Detect → Stop → Shrink → Recover → Audit.
+- Source element: the causal order Detect → Stop → Shrink → Recover → Audit.
 - Make stop authority R traceable as a specification, not discretionary power.
 - Treat Shrink as temporary verification state.
 - Connect Recover to Origin, primary logs, and differences.
-- Preserve third-party verifiability through Audit.
+- Source element: third-party verifiability through Audit.
 - Prevent weaponization of Audit.
-- Preserve restart criteria and avoid permanent stop states.
+- Source element: restart criteria and avoid permanent stop states.
 
 ## Failure conditions
 - Assume a correct Kernel makes Runtime audit unnecessary.

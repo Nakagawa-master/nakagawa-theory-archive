@@ -89,7 +89,7 @@ The parent does not convert establishment into one universal score, establishmen
 Audit concerns source-grounded dimensions: L1-L6 connection, causal granularity, responsibility placement, major pathways, friction, exceptions, personal dependence, pressure dependence, history, reproducibility, and the presence of a non-material structural blueprint. If a source or target system contains numeric metrics, their measurement actor, object, provenance, permitted use, and non-guarantee scope must be kept explicit; a number alone is not proof of establishment.
 
 ## Validity conditions
-- Keep establishment distinct from establishment conditions.
+- Source distinction: establishment distinct from establishment conditions.
 - A reading that would judge establishment from output, institutional existence, plans, metrics, or AI summaries alone differs from the parent-defined scope.
 - Inspect L1-L6 as real vertical causal passage.
 - Decompose to sufficient causal granularity.

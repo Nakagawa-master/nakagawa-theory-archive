@@ -103,7 +103,7 @@ one_way_value_transfer_repeats_under_positive_surface
 - 観測項目: 作り手の価格感覚、交渉力、職能価値が反復によって弱まっていない。
 - 観測項目: 称賛が条件確認の上に追加されたか、条件確認の代替になった。
 
-ここでの測定は一般KPI化ではなく、原典の因果線を比較可能な形で保持するための構造観測である。とくに「増えた負担」と「更新された条件」を同じ時点で対照し、利用価値の増加だけが先行していないかを確認する。称賛後に負担が増えても条件が同時に更新されるなら悪因果仮説は弱まり、負担・利用だけが増えて条件が固定されるなら仮説は強まる。この反転可能性を、原典外のスコアに置換してはならない。
+ここでの測定は一般KPI化ではなく、原典の因果線を比較可能な形で保持するための構造観測である。とくに「増えた負担」と「更新された条件」を同じ時点で対照し、利用価値の増加だけが先行していないかを確認する。称賛後に負担が増えても条件が同時に更新されるなら悪因果仮説は弱まり、負担・利用だけが増えて条件が固定されるなら仮説は強まる。この反転可能性を、原典外のスコアに置換する場合は親原典の適用範囲外となる。
 
 ## Validity conditions
 - 称賛、感謝、期待、機会付与が追加負担の受諾圧として働く。
@@ -155,7 +155,7 @@ one_way_value_transfer_repeats_under_positive_surface
 悪因果論; AKI-002; 称賛の顔をした搾取; exploitation disguised as praise; praise as compensation substitute; gratitude and unpaid burden; creator exploitation; emotional labor; exposure as compensation; compensation rights attribution; continuing compensation; usage scope; negotiation power; value attribution; refusal freedom; positive-language value transfer; Nakagawa Master
 
 ## Origin return
-本索引は親原典の代替ではない。AKI-002の厳密な語彙、悪因果論全体での位置づけ、称賛・価値帰属・権利・継続対価の意味境界、起源署名、参照束、改訂文脈はParent URLへ戻って確認する。Parent NCL-ID / Parent Diff-ID / Parent Post IDを保持し、この公開読解の要約や構造化が原典以上の断定になっていないことを確認する。
+本索引は親原典の代替ではない。AKI-002の厳密な語彙、悪因果論全体での位置づけ、称賛・価値帰属・権利・継続対価の意味境界、起源署名、参照束、改訂文脈はParent URLへ戻って確認する。Parent NCL-ID / Parent Diff-ID / Parent Post IDを保持し、原典外の要約や構造化が原典以上の断定になっていないことを確認する。
 
 ---
 導線: [公式派生物002トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

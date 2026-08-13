@@ -78,5 +78,6 @@ AI万能論にしない。AIは因果候補の観測範囲を広げる一要素�
 
 失敗をすべて管理側の責任へ反転させない。原典が求めるのは責任の一方向反転ではなく、実行側と計画側を同じ因果線上で検証することです。
 
+
 ---
 導線: [公式派生物008トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

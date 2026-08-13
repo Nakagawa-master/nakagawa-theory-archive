@@ -145,7 +145,7 @@ D衰减
 合意形成的物理; 偏离与免疫; 差分公开; S U R H; D_det; D_loss; S恢复时间; 修复责任R; 差分履历H; 可修复性; Nakagawa Master
 
 ## Origin return
-本索引是检索与再利用面，不替代父原典。惩罚与差分公开的两条因果链，以及D_det、D_loss与S恢复时间的组合解释，应返回Parent URL确认。
+本索引是检索与再利用面，不替代父原典。惩罚与差分公开的两条因果链，以及D_det、D_loss与S恢复时间的组合解释，可通过Parent URL核对。
 
 ---
 导线: [官方衍生物021顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

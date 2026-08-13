@@ -190,7 +190,7 @@ The parent origin's integrated audit summary states: If purchase intent, conside
 - A reading that would create a universal consent score, closing threshold, probability, consultation percentage, or ethics score absent from the parent differs from the parent-defined scope.
 - A reading that would use a successful conversion as automatic proof that free judgment was preserved differs from the parent-defined scope.
 - A reading that would weaken the origin into generic “customer-first sales” advice differs from the parent-defined scope.
-- Preserve the market-level consultation-capacity consequence and the compensating-pressure feedback loop.
+- Source element: the market-level consultation-capacity consequence and the compensating-pressure feedback loop.
 
 ## Search terms
 Bad Causality Theory AKI-012; consentless closing demand; contact versus purchase intent; interest versus consent; consent maturity; judgment conditions; implementation conditions; value connection; market consultation capacity; defensive learning; sales distrust; consultation avoidance; pipeline management; forecast pressure; closing pressure; internal reporting pressure; post-contract recognition gap; Nakagawa Master

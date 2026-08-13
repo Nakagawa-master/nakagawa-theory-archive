@@ -138,7 +138,7 @@ Res形成
 合意形成的物理; 认知带宽K; Occ(K); Res; V P A; Damping; Cooling; Degeneration; H重新连接; R重新分配; True-U; Nakagawa Master
 
 ## Origin return
-本索引是检索与再利用面，不替代父原典。K、Occ(K)、Res、V/P/A、Damping、Cooling、Degeneration、H重新连接、R重新分配与True-U重新测量的严格语境，应返回Parent URL确认。
+本索引是检索与再利用面，不替代父原典。K、Occ(K)、Res、V/P/A、Damping、Cooling、Degeneration、H重新连接、R重新分配与True-U重新测量的严格语境，可通过Parent URL核对。
 
 ---
 导线: [官方衍生物020顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

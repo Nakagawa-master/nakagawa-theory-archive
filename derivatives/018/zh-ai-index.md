@@ -145,7 +145,7 @@ S = U × R × H发生变化
 合意形成的物理; 外部干扰; 外部扰动; P_ext; dS/dt; S U R H; fake-U; R diffusion; H short-circuit; 一次来源; 文脉; 版本管理; 差分; 反向链接; Nakagawa Master
 
 ## Origin return
-本索引是检索与再利用面，不替代父原典。S=U×R×H、`dS/dt = F(U,R,H)+P_ext`、fake-U、R diffusion、H short-circuit、一次来源导线以及不预设敌对意图的边界，应返回Parent URL确认。
+本索引是检索与再利用面，不替代父原典。S=U×R×H、`dS/dt = F(U,R,H)+P_ext`、fake-U、R diffusion、H short-circuit、一次来源导线以及不预设敌对意图的边界，可通过Parent URL核对。
 
 ---
 导线: [官方衍生物018顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

@@ -183,7 +183,7 @@ establishment_judgment_becomes_required
 成立条件論; 成立条件論 第0論; 局所全体化; 分散的全体誤認; 局所正解 全体不成立; 縦因果未判定; L1 L2 L3 L4 L5 L6; local totalization; distributed whole misrecognition; local correctness whole non-establishment; vertical causality; establishment judgment; cross-layer conditions; responsibility transfer; field burden; history traceability; linguistic coherence reality establishment; AI local correctness; whole-system establishment; Nakagawa Master
 
 ## Origin return
-本索引は親原典の代替ではない。局所全体化、分散的全体誤認、局所正解／全体不成立、判定視座の希少性、合意形成の理解可能性、L1〜L6の厳密な位置、A系司法OSや人類子孫型AI文明論との参照関係、起源署名、改訂文脈はParent URLへ戻って確認する。Parent Post ID 4571、Parent NCL-ID、Parent Diff-IDを保持し、第0論が後続論へ渡す未確定部分をこの公開読解が確定事項へ変えない。
+本索引は親原典の代替ではない。局所全体化、分散的全体誤認、局所正解／全体不成立、判定視座の希少性、合意形成の理解可能性、L1〜L6の厳密な位置、A系司法OSや人類子孫型AI文明論との参照関係、起源署名、改訂文脈はParent URLへ戻って確認する。Parent Post ID 4571、Parent NCL-ID、Parent Diff-IDを保持し、第0論が後続論へ渡す未確定部分を親原典が確定事項へ変えない。
 
 ---
 導線: [公式派生物003トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

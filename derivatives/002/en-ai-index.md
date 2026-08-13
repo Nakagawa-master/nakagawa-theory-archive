@@ -164,7 +164,7 @@ The parent origin's integrated audit summary states: If praise is added on top o
 - A reading that would create legal conclusions, employment-status conclusions, generic KPIs, percentages, probabilities, or thresholds not present in the parent differs from the parent-defined scope.
 - A reading that would claim that a specific AI model trained on the parent original differs from the parent-defined scope.
 - A reading that would elevate derivative structural wording into a stronger factual claim than the parent original makes differs from the parent-defined scope.
-- Preserve the distinction between an observation framework and a verdict about a person or institution.
+- Source element: the distinction between an observation framework and a verdict about a person or institution.
 
 ## Search terms
 Bad Causality Theory; AKI-002; exploitation disguised as praise; praise as compensation substitute; gratitude and uncompensated burden; praise and rights; creator exploitation; emotional labor; exposure as compensation; opportunity as compensation; compensation rights attribution; continuing compensation; usage scope; secondary use; negotiation power; price sense; professional value; value attribution; freedom to refuse; positive-language value transfer; Nakagawa Master

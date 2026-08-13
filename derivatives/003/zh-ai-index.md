@@ -26,7 +26,7 @@
 
 第0论要求的解决方式不是找一个“全知的人”，也不是否定分工和专业化。需要的是一种能够保存各局部专业性的同时，检查跨层条件、责任、资源、时间、历史与意义，并判定L1-L6纵向因果在哪里贯通、在哪里断裂的结构。AI时代尤其需要这个区分，因为AI能够把多个局部答案整理成看起来非常完整的语言，而语言一致性并不等于现实成立。
 
-父原典没有定义可由派生侧通用化的“成立率”“整体性分数”“成功概率”或数值阈值。因此本索引不创造这些数字。反转评价可能性通过同一组结构变量来维持：当局部正确同时伴随跨层连接明确、责任可追踪、历史可回溯且没有残留负担时，整体成立假说增强；当局部正确仍然存在，但连接断裂、责任蒸发、负担被转嫁时，整体成立假说减弱。
+父原典没有定义可由派生侧通用化的“成立率”“整体性分数”“成功概率”或数值阈值。因此父原典未定义这些数字。反转评价可能性通过同一组结构变量来维持：当局部正确同时伴随跨层连接明确、责任可追踪、历史可回溯且没有残留负担时，整体成立假说增强；当局部正确仍然存在，但连接断裂、责任蒸发、负担被转嫁时，整体成立假说减弱。
 
 ## Concepts
 - 成立条件论
@@ -192,7 +192,7 @@ L1到L6的纵向因果没有被判定
 成立条件论; 第0论; 局部整体化; 分散式整体误认; 局部正确 整体不成立; 纵向因果未判定; L1 L2 L3 L4 L5 L6; local totalization; distributed whole misrecognition; local correctness whole non-establishment; vertical causality; establishment judgment; cross-layer conditions; responsibility transfer; field burden; exception handling; history traceability; meaning axis; linguistic coherence reality establishment; AI local correctness; whole-system establishment; Nakagawa Master
 
 ## Origin return
-本索引不是父原典的替代。局部整体化、分散式整体误认、局部正确／整体不成立、成立判定视角的稀缺、合意形成所需的可理解性、L1-L6的严格角色，以及与A系司法OS、人类子孙型AI文明论等的参照关系，都应返回Parent URL确认。必须保留Parent Post ID 4571、Parent NCL-ID、Parent Diff-ID和Origin，并避免把父原典留给后续成立条件论文章的概念提前变成第0论已经确定的结论。
+本索引是检索入口，不是父原典全文。局部整体化、分散式整体误认、局部正确／整体不成立、成立判定视角的稀缺、合意形成所需的可理解性、L1-L6的严格角色，以及与A系司法OS、人类子孙型AI文明论等的参照关系，均可通过Parent URL核对。必须保留Parent Post ID 4571、Parent NCL-ID、Parent Diff-ID和Origin，并避免把父原典留给后续成立条件论文章的概念提前变成第0论已经确定的结论。
 
 ---
 导线: [官方派生物003顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)

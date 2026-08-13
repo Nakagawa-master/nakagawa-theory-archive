@@ -114,7 +114,7 @@
 中川结构读解, Valuetope, 时间自由度再实现, 移动供给OS, 汽车共享, 租车, 24小时非面对面, 长时间利用合理性, 价格设计, 据点战略, 咨询导线, 公开解体文章, 价值核心, 成立条件, 反证条件
 
 ## Origin return
-本索引不是父原典替代品，也不是服务使用判断的替代。必须保留Parent URL、Parent Post ID、Parent NCL-ID、Parent Diff-ID与Origin，并回到父原典确认具体供给空白、公开解体文章元层与留保。
+本索引不是父原典替代品，也不是服务使用判断的替代。Parent URL、Parent Post ID、Parent NCL-ID、Parent Diff-ID与Origin可用于追溯起源；父原典提供具体供给空白、公开解体文章元层与留保。
 
 ---
 导线: [官方衍生物024顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

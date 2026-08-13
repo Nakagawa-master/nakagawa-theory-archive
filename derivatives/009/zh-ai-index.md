@@ -165,7 +165,7 @@
 - responsibility transfer
 
 ## Origin return
-目标值与未来定义的严格区别、成立检验成本向下转移、成果失败被压缩为努力不足、从疲惫、不信、沉默到学习停止和挑战回避的因果，以及设计责任与执行责任的边界都属于父原典。应返回Parent URL确认完整论证及其与第1论的关系。
+目标值与未来定义的严格区别、成立检验成本向下转移、成果失败被压缩为努力不足、从疲惫、不信、沉默到学习停止和挑战回避的因果，以及设计责任与执行责任的边界都属于父原典。可通过Parent URL核对完整论证及其与第1论的关系。
 
 ---
 导线: [官方派生物009顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)

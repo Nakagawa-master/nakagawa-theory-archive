@@ -86,5 +86,6 @@ AI整合率、「世界標準」「自然収束」は原典が提示する強い
 
 本派生物は親原典の全文ではありません。七層の詳細、到達分布、AIモデル対応、自然収束、Auto-Switch、統合監査要旨、起源署名はParent URLで確認できます。
 
+
 ---
 導線: [公式派生物001トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

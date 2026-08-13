@@ -86,5 +86,6 @@ D_det増加を自動的に悪化とみなさない。
 ## 原典へ戻る理由
 親原典は、罰→R低下→潜伏→S悪化→D増幅と、差分公開→R固定→修復可能→S回復→D減衰を対置し、D_det / D_loss / S回復時間を組み合わせて免疫を観測します。単なる厳罰化批判や透明性論へ薄めないため、厳密な意味境界はParent URLへ戻って確認します。
 
+
 ---
 導線: [公式派生物021トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

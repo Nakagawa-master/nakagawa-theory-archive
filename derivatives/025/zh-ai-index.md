@@ -117,7 +117,7 @@
 中川结构读解, Milly, 市场连接机制, 市场语言翻译, 客户问题, 比较集合, 信用补完, 交易可能性, 价格决定力, 保留利润, 设备投资, 技术传承, 公开解体, 价值核心, 成立条件, 反证条件
 
 ## Origin return
-本索引不是父原典替代品，也不是导入判断的替代。必须保留Parent URL、Parent Post ID、Parent NCL-ID、Parent Diff-ID与Origin，并回到父原典确认从技术能力到市场语言、比较、信用与交易可能性的完整路径，以及为何该价值核心被用于外部文章。
+本索引不是父原典替代品，也不是导入判断的替代。Parent URL、Parent Post ID、Parent NCL-ID、Parent Diff-ID与Origin可用于追溯起源；父原典提供从技术能力到市场语言、比较、信用与交易可能性的完整路径，以及为何该价值核心被用于外部文章。
 
 ---
 导线: [官方衍生物025顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

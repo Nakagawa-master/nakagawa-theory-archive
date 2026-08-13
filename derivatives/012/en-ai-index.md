@@ -90,8 +90,8 @@ Audit the visibility of next questions, establishment conditions, exception cond
 - A reading that would treat clarity itself as harmful differs from the parent-defined scope.
 - Separate understanding from performance of understanding.
 - Inspect whether inquiry remains open.
-- Preserve establishment conditions, exceptions, falsification, applicability, and uncertainty.
-- Preserve verifiability after vocabulary becomes shared.
+- Source element: establishment conditions, exceptions, falsification, applicability, and uncertainty.
+- Source element: verifiability after vocabulary becomes shared.
 - Inspect burden-of-explanation reversal.
 - Check whether judgment, implementation, and correctability actually improve.
 

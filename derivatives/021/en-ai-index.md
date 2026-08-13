@@ -104,7 +104,7 @@ The parent does not define universal immunity scores, fixed detection percentage
 - A reading that would define immunity as zero deviation differs from the parent-defined scope.
 - Read D_det, D_loss, and S recovery time together.
 - Make R traceable as a repair entry point.
-- Preserve difference history H.
+- Source element: difference history H.
 - Connect disclosure to repairability.
 - Audit concealment and reporting suppression created by punishment-centered operation.
 - Prevent disclosure from becoming exposure or retaliation.

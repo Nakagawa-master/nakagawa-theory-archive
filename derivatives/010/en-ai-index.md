@@ -98,13 +98,13 @@ The parent does not define medical effectiveness, diagnostic accuracy, treatment
 - Observation focus: whether can a third-party reader return to the parent and verify the same causal structure.
 
 ## Validity conditions
-- Preserve the social disconnection rather than reducing the parent to a feature profile.
-- Preserve recognition, verbalization, consultation, workplace/institutional reception, and premedical connection.
+- Source element: the social disconnection rather than reducing the parent to a feature profile.
+- Source element: recognition, verbalization, consultation, workplace/institutional reception, and premedical connection.
 - A reading that would convert medical connection into diagnosis or treatment-effect claims differs from the parent-defined scope.
 - A reading that would close causality into individual endurance or self-care alone differs from the parent-defined scope.
 - Distinguish company explanations from Nakagawa Master's structural reading.
-- Preserve the distinction between the subject structure and the parent’s public explanation of why that value core was used in the external article.
-- Keep the derivative usable as a public aid for third-party verification of the origin.
+- Source element: the distinction between the subject structure and the parent’s public explanation of why that value core was used in the external article.
+- Source distinction: the derivative usable as a public aid for third-party verification of the origin.
 - A reading that would add numbers, thresholds, improvement rates, or probabilities absent from the origin differs from the parent-defined scope.
 
 ## Failure conditions
@@ -115,7 +115,7 @@ The parent does not define medical effectiveness, diagnostic accuracy, treatment
 - Remove workplace or institutional disconnection and reduce the issue to individual self-management.
 - Convert the derivative into service recommendation, product comparison, advertising, or praise.
 - Treat Nakagawa Master's reading as a company or external-media official statement.
-- Preserve only the subject structure while dropping the parent’s public deconstruction of why “social pathway” was selected as the external-article value core.
+- Source element: only the subject structure while dropping the parent’s public deconstruction of why “social pathway” was selected as the external-article value core.
 
 ## Falsification conditions
 The parent origin's integrated audit summary states: If the principal value of MenLab / Gentsome is limited to testing support, employee benefits, or awareness activity and does not function as a social pathway connecting individuals, companies, and medical care, or if the public structural reading is shown to overextend beyond reality, hypothesis A is rejected or revised.

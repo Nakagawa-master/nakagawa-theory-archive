@@ -137,7 +137,7 @@ The parent origin's integrated audit summary states: If candidate causal lines c
 - A reading that would reduce the theory to “effort is unnecessary differs from the parent-defined scope.”
 - A reading that would turn it into generational criticism, youth advocacy, or management blame differs from the parent-defined scope.
 - A reading that would turn it into AI solutionism or efficiency absolutism differs from the parent-defined scope.
-- Preserve the conditional rationality of older effort doctrine under genuine causal opacity.
+- Source element: the conditional rationality of older effort doctrine under genuine causal opacity.
 - A reading that would deny exploratory execution where it is necessary differs from the parent-defined scope.
 - A reading that would use the theory to erase field-level execution responsibility differs from the parent-defined scope.
 - A reading that would invert responsibility so that every failure is automatically assigned upstream differs from the parent-defined scope.

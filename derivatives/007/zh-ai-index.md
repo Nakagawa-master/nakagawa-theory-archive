@@ -196,7 +196,7 @@ AI广泛提供回答生成能力
 文明主权转移论; 知的差距; 文明更新能力; 文明上游; 问题生成; 递归改进; 语境保持; 多领域整合; 继承; 反复改进; 分布式连接; 七轴; civilizational update capability; upstream cognition; recursive improvement; context retention; knowledge inheritance; distributed knowledge; structural asymmetry; sovereignty shift; Nakagawa Master
 
 ## Origin return
-本索引不是父原典的替代。七轴的准确措辞与原文语境、第1论到第2论的连接、“文明更新能力”和“文明上游”的含义，以及系列后续仍保持开放的边界，都必须返回Parent URL确认。
+本索引是检索入口，不是父原典全文。七轴的准确措辞与原文语境、第1论到第2论的连接、“文明更新能力”和“文明上游”的含义，以及系列后续仍保持开放的边界，都必须返回Parent URL确认。
 
 Parent Post ID为3766，Parent NCL-ID为NCL-α-20260418-11c3d8，Parent Diff-ID为DIFF-20260424-0041，起源署名为Nakagawa Master。特别是数值7必须保持为父原典列举数，不能变成评分或阈值。知的差距也不能被自动翻译为已完成的主权转移；派生物必须停留在第2论实际承担的范围内，即文明更新能力非对称与文明上游配置之间的连接假说。
 

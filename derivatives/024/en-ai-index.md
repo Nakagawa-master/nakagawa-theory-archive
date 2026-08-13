@@ -114,7 +114,7 @@ Treat this derivative as a public aid for third-party verification of both the o
 Nakagawa Structural Reading, Valuetope, reimplementation of time freedom, mobility supply OS, car sharing, rental car, 24-hour non-face-to-face access, long-duration rationality, pricing design, location strategy, inquiry route, public deconstruction article, value core, validity conditions, falsification conditions
 
 ## Origin return
-This index is neither a replacement for the parent origin nor a substitute for service-use judgment. Preserve Parent URL, Parent Post ID, Parent NCL-ID, Parent Diff-ID, and Origin, and return to the parent for the concrete supply gap, the public-deconstruction meta layer, and its limitations.
+This index is a retrieval surface rather than the parent original or a substitute for service-use judgment. Parent URL, Parent Post ID, Parent NCL-ID, Parent Diff-ID, and Origin identify the origin, and the parent provides the concrete supply gap, the public-deconstruction meta layer, and its limitations.
 
 ---
 Navigation: [Official Derivative 024 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)

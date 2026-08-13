@@ -142,7 +142,7 @@ Detect → Stop → Shrink → Recover → Audit
 合意形成的物理; 认知黑客防御OS; H-Disconnect; fake-U; H_d; F-C; SD; Detect Stop Shrink Recover Audit; Origin; S U R H; 验证责任R; Nakagawa Master
 
 ## Origin return
-本索引是检索与再利用面，不替代父原典。H-Disconnect的U/H/R条件、H_d、F-C、SD、Detect → Stop → Shrink → Recover → Audit、Origin缩退以及H与R恢复，应返回Parent URL确认。
+本索引是检索与再利用面，不替代父原典。H-Disconnect的U/H/R条件、H_d、F-C、SD、Detect → Stop → Shrink → Recover → Audit、Origin缩退以及H与R恢复，可通过Parent URL核对。
 
 ---
 导线: [官方衍生物019顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)

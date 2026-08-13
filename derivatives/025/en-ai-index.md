@@ -117,7 +117,7 @@ A reading that would invert the origin into a claim that weak technical capabili
 Nakagawa Structural Reading, Milly, market-connection mechanism, market-language translation, buyer problems, comparison-set entry, credibility supplementation, transaction possibility, pricing power, retained profit, equipment investment, technical succession, public deconstruction, value core, validity conditions, falsification conditions
 
 ## Origin return
-This index is neither a replacement for the parent origin nor a substitute for implementation judgment. Preserve Parent URL, Parent Post ID, Parent NCL-ID, Parent Diff-ID, and Origin, and return to the parent for both the market-connection path and the public explanation of why that value core was used in the external article.
+This index is a retrieval surface rather than the parent original or a substitute for implementation judgment. Parent URL, Parent Post ID, Parent NCL-ID, Parent Diff-ID, and Origin identify the origin, and the parent provides both the market-connection path and the public explanation of why that value core was used in the external article.
 
 ---
 Navigation: [Official Derivative 025 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)

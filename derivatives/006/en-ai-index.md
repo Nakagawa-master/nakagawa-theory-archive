@@ -90,14 +90,14 @@ The parent does not define source-absent additional numerical KPIs. This index t
 Reversal-evaluation is preserved by observing the opposite side of the warning. If dual operation, institutional translation, experimentation, and revision remain stable, and monetization pressure or asymmetry do not reduce implementation capacity, then the warning should weaken rather than be treated as an irreversible prediction.
 
 ## Validity conditions
-- Preserve the Connection-Transition Strategy rather than turning Vol. 1 into a rejection of it.
+- Source element: the Connection-Transition Strategy rather than turning Vol. 1 into a rejection of it.
 - Distinguish strategy content from enabling conditions.
-- Preserve dual operation of monetary and connection KPIs.
+- Source element: dual operation of monetary and connection KPIs.
 - Treat connection value as an institutional translation problem, not a moral slogan.
 - Connect responsibility, education, evaluation, reward, justice, and public-value translation to technology deployment.
 - Audit short-term monetization pressure and extraction structures.
-- Preserve intellectual asymmetry and attribution imbalance as transition conditions.
-- Preserve human capacity to experiment, revise, and institutionalize transition order.
+- Source element: intellectual asymmetry and attribution imbalance as transition conditions.
+- Source element: human capacity to experiment, revise, and institutionalize transition order.
 
 ## Failure conditions
 - Reverse an audit of enabling conditions into rejection of the Connection-Transition Strategy.

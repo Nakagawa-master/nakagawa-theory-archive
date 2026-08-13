@@ -110,7 +110,7 @@ A reading that would reduce this origin to investment advice, product comparison
 Nakagawa Structural Reading, Funds, repair reserve fund, community fund defense, purpose-bound communal funds, future repair capacity, real repair capacity, consensus formation, explainability, institutional fit, public deconstruction, validity conditions, falsification conditions
 
 ## Origin return
-This index is neither a replacement for the parent origin nor investment advice. Preserve Parent URL, Parent Post ID, Parent NCL-ID, Parent Diff-ID, and Origin, and return to the parent for both the exact communal-fund structure and the public explanation of why that value core was used in the external article.
+This index is a retrieval surface rather than the parent original or investment advice. Parent URL, Parent Post ID, Parent NCL-ID, Parent Diff-ID, and Origin identify the origin, and the parent provides both the exact communal-fund structure and the public explanation of why that value core was used in the external article.
 
 ---
 Navigation: [Official Derivative 023 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
