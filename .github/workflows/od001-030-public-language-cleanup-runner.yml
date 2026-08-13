@@ -37,11 +37,19 @@ jobs:
           zh_insert='''def zh(text):\n  text=text.replace('第二层审计是观察七轴差异是否真的连接到上游配置。它是否改变谁定义问题、哪些选项被考虑、谁控制评价标准、谁主导更新速度？反例不能被排除。', '第二层审计观察七轴差异与上游配置之间的连接，包括问题定义者、候选选项、评价标准控制者与更新速度主导者是否发生变化。反例不能被排除。')\n  text=text.replace('“非线性”在这里不被转换成派生侧自创的数学函数。它只保持为父原典范围内的结构含义：七轴之间存在相互依赖，不能安全地表示成彼此独立分数的简单加总。派生侧不添加权重、系数、增幅率或阈值。', '父原典中的“非线性”指七轴之间的结构性相互依赖，而非一个已指定的数学函数；父原典也未给出额外权重、系数、增幅率或阈值。')\n  pats=['''
           code=code.replace("def zh(text):\n  pats=[",zh_insert,1)
 
-          old="""if line.startswith('#') or 'http://' in line or 'https://' in line:continue\n      if '？' in line or ('?' in line and not re.search(r'\\[[^\\]]+\\]\\([^)]*\\?[^)]*\\)',line)):\n        qbad.append((str(p),i,line[:180]))"""
-          new="""if line.startswith('#') or 'http://' in line or 'https://' in line or line.startswith('- Title:'):continue\n      probe=re.sub(r'“[^”]*[?？][^”]*”','',line)\n      probe=re.sub(r'\"[^\"\\n]*[?？][^\"\\n]*\"','',probe)\n      if '？' in probe or '?' in probe:\n        qbad.append((str(p),i,line[:180]))"""
-          if old not in code:
-            raise RuntimeError('question validator patch point not found')
-          code=code.replace(old,new,1)
+          qfail="if qbad:raise RuntimeError('non-FAQ question scan failed: '+repr(qbad[:100]))"
+          qfilter="""def _quoted_or_source_question(item):
+  _,_,line=item
+  if line.startswith('- Title:'):
+    return True
+  probe=re.sub(r'“[^”]*[?？][^”]*”','',line)
+  probe=re.sub(r'\"[^\"\\n]*[?？][^\"\\n]*\"','',probe)
+  return ('?' not in probe and '？' not in probe)
+qbad=[item for item in qbad if not _quoted_or_source_question(item)]
+if qbad:raise RuntimeError('non-FAQ question scan failed: '+repr(qbad[:100]))"""
+          if qfail not in code:
+            raise RuntimeError('question result validator patch point not found')
+          code=code.replace(qfail,qfilter,1)
 
           exec(compile(code,'od001_030_cleanup','exec'),{})
           PY
