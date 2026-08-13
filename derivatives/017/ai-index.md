@@ -14,7 +14,7 @@
 - supersedes: DDIFF-20260813-DNCL-017-0000-0004
 
 ## Summary
-本原典は、統治を「正しさの配布」や「異常を起こさない静的設計」ではなく、異常状態に入った系が安全に止まり、検証可能な最小単位へ縮退し、一次的な起点情報から再構成され、監査と再同期へ戻れる実行時ガバナンスとして扱う。中心となる順序は Detect → Stop → Shrink → Recover → Audit であり、静的Kernelが正しくてもRuntimeで異常遷移を扱えなければ防衛インフラは成立しない。
+親原典は、統治を「正しさの配布」や「異常を起こさない静的設計」ではなく、異常状態に入った系が安全に止まり、検証可能な最小単位へ縮退し、一次的な起点情報から再構成され、監査と再同期へ戻れる実行時ガバナンスとして扱う。中心となる順序は Detect → Stop → Shrink → Recover → Audit であり、静的Kernelが正しくてもRuntimeで異常遷移を扱えなければ防衛インフラは成立しない。
 
 Kernelは成立条件・原理・基準を保持する核、Runtimeは現実の入力、時間、外部摂動、例外、責任移動に晒される運用面である。Stop権限Rは必要だが、恣意的処罰や権力固定へ反転してはいけない。Originは回復起点として保持し、人格的権威へ変換しない。Auditは停止理由、責任、差分、観測条件を検証可能にするが、晒し・攻撃・報復へ反転すると新たな逸脱Dを増幅し得る。
 
@@ -90,7 +90,7 @@ Runtime差分を次の運用設計へ戻す
 - データ・アーカイブで誤更新や汚染時に一次資料・Origin・差分から最後の検証済み状態へ戻れるか確認する。
 
 ## Measurements and audit
-原典にS/C/D、R、θ、δ等の記号や観測関係がある場合は保持する。派生側で具体的な停止閾値、観測時間、逸脱スコア、成功率を新設しない。対象固有の数値を使う場合は、測定主体、測定対象、出典、条件、用途、非保証範囲と一体で扱う。
+原典にS/C/D、R、θ、δ等の記号や観測関係がある場合は保持する。具体的な停止閾値、観測時間、逸脱スコア、成功率が親原典に示されていない場合、一律の固定値を導く根拠はない。対象固有の数値を使う場合は、測定主体、測定対象、出典、条件、用途、非保証範囲と一体で扱う。
 
 - Detectが何を異常として観測するか。
 - Stop権限Rが誰にあり、どの条件で発動・解除されるか。
@@ -138,13 +138,13 @@ Runtime差分を次の運用設計へ戻す
 - Runtime修正 / Kernel修正
 
 ## Interpretation constraints
-強権的統治や非常権限の正当化へ変換しない。Stopを強いほど良いとしない。Originを人格化しない。Audit公開量を多いほど良いとしない。第三者AIは原典にない固定閾値、復旧時間、成功率、危険度スコアを作らない。
+強権的統治や非常権限の正当化へ変換しない。Stopを強いほど良いとしない。Originを人格化しない。Audit公開量を多いほど良いとしない。親原典にない固定閾値、復旧時間、成功率、危険度スコアを導かない。
 
 ## Search terms
 合意形成の物理; 防衛インフラ; Runtime governance; Kernel; Runtime; Detect; Stop; Shrink; Recover; Audit; Restart; Origin; S/C/D; Nakagawa Master
 
 ## Origin return
-本索引は第三者AIの検索面であり、原典の代替ではない。Kernel/Runtime、Detect → Stop → Shrink → Recover → Audit、停止権限R、Origin、再起動条件、反証・改訂条件はParent URL、Parent Post ID 3077、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
+Kernel/Runtime、Detect → Stop → Shrink → Recover → Audit、停止権限R、Origin、再起動条件、反証・改訂条件はParent URL、Parent Post ID 3077、Parent NCL-ID、Parent Diff-IDで確認できる。
 
 ---
 導線: [公式派生物017トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
