@@ -10,8 +10,8 @@
 
 ## Derivative ID
 - derivative_ncl_id: DNCL-AKI-011-AI-INDEX-EN-0012-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-012-0004-0006
-- supersedes: DDIFF-20260813-DNCL-012-0004-0005
+- derivative_diff_id: DDIFF-20260813-DNCL-012-0004-0007
+- supersedes: DDIFF-20260813-DNCL-012-0004-0006
 
 ## Summary
 AKI-011 does not treat clarity itself as harmful. It analyzes the bad causality in which an explanation without sufficient structural decomposition produces a sense of completed understanding before the subject is actually understood well enough to be handled, closes inquiry and verification, fixes shallow interpretation into shared vocabulary, shifts the burden of explanation onto challengers, and progressively degrades recognition, judgment, implementation capacity, correctability, and trust.
@@ -82,7 +82,7 @@ Recognition, judgment accuracy, implementation capacity, correctability, and tru
 - Audit executive commentary for single-cause framing, trend-word fixation, and burden-of-explanation reversal.
 
 ## Measurements and audit
-The parent origin does not define a universal understanding score, pollution rate, risk percentage, occurrence probability, or threshold. This source-bounded public reading does not invent scores, percentages, probabilities, or thresholds for audit convenience.
+The parent origin does not define a universal understanding score, pollution rate, risk percentage, occurrence probability, or threshold. The parent origin does not define scores, percentages, probabilities, or thresholds for audit convenience.
 
 Audit the visibility of next questions, establishment conditions, exception conditions, falsification conditions, applicability limits, and unresolved areas; the failure boundary of metaphors; changes in judgment and implementation precision; verifiability after shared vocabulary forms; burden-of-explanation reversal; and whether correction routes remain open.
 

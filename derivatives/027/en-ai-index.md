@@ -10,8 +10,8 @@
 
 ## Derivative ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260607-898D28-AI-INDEX-EN-0027-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-027-0004-0005
-- supersedes: DDIFF-20260813-DNCL-027-0004-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-027-0004-0006
+- supersedes: DDIFF-20260813-DNCL-027-0004-0005
 
 ## Summary
 The origin reads Invax not merely as surplus-soil reuse, but as an implementation OS that translates heterogeneous soil into conditionally usable construction material through a continuous chain of soil assessment, mix testing, mixing, curing, quality confirmation, field correction, verification, and movement toward standardization. The value kernel is an update in what civil engineering treats as “material.”
@@ -44,7 +44,7 @@ heterogeneous soil → quality difficult to guarantee → disposal plus replacem
 - **Standardization-transition state**: individual know-how is converted into reusable procedures while preserving condition differences.
 - **Public-deconstruction state**: a third-party reader can distinguish the subject structure from the parent’s explanation of why “material-view update” was used as the external-article value core.
 
-These states are not a source-absent additional score. The parent origin does not define a universal performance threshold, success probability, national applicability rate, AI-automation percentage, or maturity score, so This source-bounded public reading does not invent one.
+These states are not a source-absent additional score. The parent origin does not define a universal performance threshold, success probability, national applicability rate, AI-automation percentage, or maturity score, so The parent origin does not define one.
 
 ## Applications
 Use this frame where something traditionally treated as waste may be redefined as material under verifiable conditions. It can inform civil engineering, construction, resource circulation, and material reuse, but must not be reduced to generic recycling, environmental construction, AI construction, or civil-engineering DX.

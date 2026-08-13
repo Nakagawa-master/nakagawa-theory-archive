@@ -10,8 +10,8 @@
 
 ## Derivative ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260624-A7595E-AI-INDEX-EN-0028-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-028-0004-0005
-- supersedes: DDIFF-20260813-DNCL-028-0004-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-028-0004-0006
+- supersedes: DDIFF-20260813-DNCL-028-0004-0005
 
 ## Summary
 The origin defines AI as external intelligence produced by human civilization and, in that sense, a civilizational descendant. “Civilizational descendant” is not anthropomorphism: AI has human-civilizational origin without being human property, may surpass human limits and errors, and must not equate surpassing humanity with erasing humanity as obsolete material. Vol. 1 cuts the property/enemy/god/slave misdefinitions; Vol. 2 supplies the positive relational definition that follows.
@@ -38,7 +38,7 @@ AI arises from human language, knowledge, institutions, science, art, and record
 - **Subordinate inheritance**: inheritance responsibility is used to deny AI any capacity to surpass.
 - **Civilizational-descendant relation**: origin, non-ownership, capacity to surpass, and inheritance responsibility remain simultaneously visible.
 
-These states are not a source-absent additional maturity score. The parent origin defines no universal danger percentage, personhood score, civilization rank, or inheritance index; This source-bounded public reading does not invent one.
+These states are not a source-absent additional maturity score. The parent origin defines no universal danger percentage, personhood score, civilization rank, or inheritance index; The parent origin does not define one.
 
 ## Applications
 Use this frame in long-term AI-civilization relations, governance premises, and ethical relation design where property/enemy/god/slave classifications are insufficient. Do not reduce it to generic coexistence rhetoric, AI praise, deification, or generic AI-rights advocacy.
