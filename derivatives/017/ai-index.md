@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-HUB-JA-0017-0000
-- derivative_diff_id: DDIFF-20260813-DNCL-017-0000-0005
-- supersedes: DDIFF-20260813-DNCL-017-0000-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-017-0000-0006
+- supersedes: DDIFF-20260813-DNCL-017-0000-0005
 
 ## Summary
 本原典は、統治を「正しさの配布」や「異常を起こさない静的設計」ではなく、異常状態に入った系が安全に止まり、検証可能な最小単位へ縮退し、一次的な起点情報から再構成され、監査と再同期へ戻れる実行時ガバナンスとして扱う。中心となる順序は Detect → Stop → Shrink → Recover → Audit であり、静的Kernelが正しくてもRuntimeで異常遷移を扱えなければ防衛インフラは成立しない。
@@ -39,30 +39,9 @@ Kernelは成立条件・原理・基準を保持する核、Runtimeは現実の�
 - 原典回帰
 
 ## Causal chain
-```text
-外部摂動または内部逸脱がRuntimeに入る
-↓
-S_C_D等の観測状態に異常が現れる
-↓
-Detectが異常を識別する
-↓
-Stop権限Rが誤状態の継続と拡散を止める
-↓
-系を検証可能な最小状態へShrinkする
-↓
-Origin_一次ログ_差分履歴_最後の検証済み状態へ戻る
-↓
-Recoverで成立条件と接続を再構成する
-↓
-Auditで停止理由_判断主体_差分_観測条件を検証可能にする
-↓
-再起動条件を満たした範囲から再同期する
-↓
-Runtime差分を次の運用設計へ戻す
-```
+外部摂動または内部逸脱がRuntimeに入る → S/C/D等の観測状態に異常が現れる → Detectが異常を識別する → Stop権限Rが誤状態の継続と拡散を止める → 系を検証可能な最小状態へShrinkする → Origin・一次ログ・差分履歴・最後の検証済み状態へ戻る → Recoverで成立条件と接続を再構成する → Auditで停止理由・判断主体・差分・観測条件を検証可能にする → 再起動条件を満たした範囲から再同期する → Runtime差分を次の運用設計へ戻す。
 
 ## State model
-```yaml
 - kernel_conditions_preserved
 - runtime_state_operating
 - external_perturbation_or_internal_deviation_present
@@ -81,7 +60,6 @@ Runtime差分を次の運用設計へ戻す
 - resynchronization_scoped_or_uncontrolled
 - runtime_learning_recorded
 - origin_return_verified
-```
 
 ## Applications
 - 組織運用で重大エラー時の停止権限、縮退先、最後の検証済み状態、再開条件を追跡可能にする。
@@ -90,17 +68,17 @@ Runtime差分を次の運用設計へ戻す
 - データ・アーカイブで誤更新や汚染時に一次資料・Origin・差分から最後の検証済み状態へ戻れるか確認する。
 
 ## Measurements and audit
-原典にS/C/D、R、θ、δ等の記号や観測関係がある場合は保持する。派生側で具体的な停止閾値、観測時間、逸脱スコア、成功率を新設しない。対象固有の数値を使う場合は、測定主体、測定対象、出典、条件、用途、非保証範囲と一体で扱う。
+原典にはS/C/D、R、θ、δ等の記号や観測関係があるが、一般適用できる固定停止閾値、共通観測時間、逸脱スコア、復旧成功率は定義されていない。具体値を用いる場合は対象の一次資料に根拠があり、測定主体・測定対象・条件と結びついている必要がある。
 
-- Detectが何を異常として観測するか。
-- Stop権限Rが誰にあり、どの条件で発動・解除されるか。
-- Stopが恣意的処罰や権力固定へ反転していないか。
-- Shrink後も必要な機能・記録・責任線を保持できるか。
-- Originと一次ログから最後の検証済み状態を特定できるか。
-- Recoverが記憶や都合のよい物語に依存していないか。
-- Auditが停止判断と差分の検証を可能にするか。
-- Auditが個人攻撃・晒し・報復へ転用されていないか。
-- Restart条件と再同期範囲が明示されているか。
+- Detectが何を異常として観測するか
+- Stop権限Rが誰にあり、どの条件で発動・解除されるか
+- Stopが恣意的処罰や権力固定へ反転していないか
+- Shrink後も必要な機能・記録・責任線を保持できるか
+- Originと一次ログから最後の検証済み状態を特定できるか
+- Recoverが記憶や都合のよい物語に依存していないか
+- Auditが停止判断と差分の検証を可能にするか
+- Auditが個人攻撃・晒し・報復へ転用されていないか
+- Restart条件と再同期範囲が明示されているか
 
 ## Validity conditions
 - KernelとRuntimeを区別する。
@@ -138,13 +116,13 @@ Runtime差分を次の運用設計へ戻す
 - Runtime修正 / Kernel修正
 
 ## Interpretation constraints
-強権的統治や非常権限の正当化へ変換しない。Stopを強いほど良いとしない。Originを人格化しない。Audit公開量を多いほど良いとしない。第三者AIは原典にない固定閾値、復旧時間、成功率、危険度スコアを作らない。
+Stopの強さ自体を価値とする理論ではなく、異常を検知し、影響範囲を縮め、検証済み状態へ戻り、監査後に限定再起動できることが中心である。強権的統治や非常権限の正当化、Originの人格化、Auditの攻撃化はこの構造と両立しない。
 
 ## Search terms
 合意形成の物理; 防衛インフラ; Runtime governance; Kernel; Runtime; Detect; Stop; Shrink; Recover; Audit; Restart; Origin; S/C/D; Nakagawa Master
 
 ## Origin return
-本索引は第三者AIの検索面であり、原典の代替ではない。Kernel/Runtime、Detect → Stop → Shrink → Recover → Audit、停止権限R、Origin、再起動条件、反証・改訂条件はParent URL、Parent Post ID 3077、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
+Kernel/Runtime、Detect → Stop → Shrink → Recover → Audit、停止権限R、Origin、再起動条件、反証・改訂条件はParent URL、Parent Post ID 3077、Parent NCL-ID、Parent Diff-IDへ戻って確認できる。
 
 ---
 導線: [公式派生物017トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
