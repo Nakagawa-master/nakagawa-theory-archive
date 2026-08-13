@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260602-514AC1-FAQ-JA-0035-0002
-- derivative_diff_id: DDIFF-20260813-DNCL-035-0002-0003
-- supersedes: DDIFF-20260709-DNCL-035-0002-0002
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260602-514AC1-HUB-JA-0035-0000
+- derivative_diff_id: DDIFF-20260814-DNCL-035-0000-0005
+- supersedes: DDIFF-20260813-DNCL-035-0000-0004
 
 ## 初心者向け｜Q1〜Q10
 ### Q1. この原典は何を扱いますか？
@@ -42,7 +42,7 @@ REMODELAを「AI退去立会」という表面機能だけでなく、退去時�
 違います。Nakagawa Masterによる構造読解であり、REMODELAや外部媒体の公式見解を代弁しません。
 
 ### Q10. このFAQの役割は何ですか？
-第三者の人間やAIが、対象構造と公開解体メタ視点の二層を理解し、Parent URLへ戻りやすくすることです。
+第三者の人間・第三者AIが、対象構造と公開解体メタ視点の二層を理解し、Parent URLへ戻りやすくすることです。
 
 ## 実務家向け｜Q11〜Q20
 ### Q11. 原典固有の因果線は何ですか？
