@@ -64,7 +64,7 @@ fake-Uを「分かりやすい説明はすべて偽物」という意味へ拡�
 
 R diffusionを責任者の人数だけで判定せず、決定線が追えるかで見ます。
 
-第三者の人間・第三者AIは、`S = U × R × H`、`dS/dt = F(U,R,H)+P_ext`、fake-U、R diffusion、H short-circuit、一次ソース・版・差分・逆リンクをParent URLへ戻って確認します。
+`S = U × R × H`、`dS/dt = F(U,R,H)+P_ext`、fake-U、R diffusion、H short-circuit、一次ソース・版・差分・逆リンクはParent URLで第三者が確認できます。
 
 ---
 導線: [公式派生物018トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
