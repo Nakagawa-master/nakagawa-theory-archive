@@ -19,36 +19,120 @@ zh-ai-index.md: DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-ZH-0002-0005
 derivative-ledger.md: DNCL-NCL-ALPHA-20260517-B80E39-LEDGER-JA-0002-0006
 ```
 
-## Retrieval evidence
+## Language derivative IDs
 ```yaml
-canonical_index: reference_corpus/official_archive/generated/canonical_index_4028_4162.jsonl
-xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-xml_item_lines: 220300-221730
-origin_return_url: https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/
+human_entry:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-HUMAN-SUMMARY-JA-0001
+faq:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-FAQ-JA-0002
+ja_ai:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-JA-0002-0003
+  derivative_diff_id: DDIFF-20260812-DNCL-002-0003-0004
+en_ai:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-EN-0002-0004
+  derivative_diff_id: DDIFF-20260812-DNCL-002-0004-0004
+zh_ai:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-ZH-0002-0005
+  derivative_diff_id: DDIFF-20260812-DNCL-002-0005-0004
 ```
 
+## Factory
+```yaml
+factory_contract: FACTORY_V2
+minimum_structure_contract: OD085
+current_literal_reference:
+  - OD134
+  - OD135
+repair_program: OD001_OD133_STRUCTURAL_REAUDIT_2026-08-12
+repair_mode: FAIL_CLOSED_SINGLE_OD_SERIAL
+```
+
+## Retrieval evidence
+```yaml
+canonical_index_post_id: 4062
+canonical_url: https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/
+xml_locator: reference_corpus/official_archive/source/wordpress_export_latest.xml#L220300-L221730
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+brain_vault_semantic_evidence: LOT4_OD001_OD020_SEMANTIC_FIDELITY_CLOSURE_2026-08-12.md
+source_gate: PASS
+source_semantic_axis:
+  - praise_gratitude_expectation_opportunity
+  - compensation_rights_attribution_usage_scope
+  - continuing_compensation
+  - one_way_value_transfer
+  - erosion_of_price_sense_and_negotiation_power
+```
+
+Brain Vault canonical index、WordPress全件XML、公開Parent URLの既存照合証拠により、称賛・感謝・期待・機会付与が条件確認の代替となり、価値移転を不可視化するという原典軸を保持する。今回の構造再監査では、この意味証拠を免除根拠ではなく、再構築時に逸脱を防ぐsource packetとして再利用する。
+
 ## Seven surfaces
-- README.md: 第三者向け公開入口。
-- human-entry.md: 第三者人間向け要約。
-- faq.md: Q1〜Q30の第三者向けFAQ。
-- ai-index.md: 第三者AI向け日本語索引。
-- en-ai-index.md: 第三者AI向け英語索引。
-- zh-ai-index.md: 第三者AI向け中国語索引。
-- derivative-ledger.md: 親原典・派生ID・由来・意味境界を保持する台帳。
+```yaml
+README.md:
+  status: PASS_REVALIDATED
+human-entry.md:
+  status: PASS_REVALIDATED
+faq.md:
+  status: PASS_Q1_Q30_THREE_LAYER
+ai-index.md:
+  status: REBUILT_OD134_135_LITERAL_CONTRACT
+  diff_id: DDIFF-20260812-DNCL-002-0003-0004
+en-ai-index.md:
+  status: REBUILT_OD134_135_LITERAL_CONTRACT
+  diff_id: DDIFF-20260812-DNCL-002-0004-0004
+zh-ai-index.md:
+  status: REBUILT_OD134_135_LITERAL_CONTRACT
+  diff_id: DDIFF-20260812-DNCL-002-0005-0004
+derivative-ledger.md:
+  status: REBUILT_CURRENT_LITERAL_CONTRACT
+```
 
-## 公開読解の意味境界
-親原典は、称賛・感謝・期待・機会付与そのものを搾取と同一視しない。問題となるのは、それらが報酬、権利、名義、使用範囲、責任分担、継続対価の確認を代替し、一方向の価値移転へ変わるときである。
+## Formatting parity
+```yaml
+parent_identity_present: PASS
+origin_signature_present: PASS
+fixed_seven_surfaces_present: PASS
+faq_three_layers_q1_q30: PASS
+ai_fixed_sections_ja_en_zh: PASS
+readme_global_footer: PASS
+non_readme_numbered_local_footer: PASS
+footer_self_links_present: PASS
+```
 
-その因果は、作り手側の価格感覚、交渉力、職能価値、断る自由の摩耗へ接続する。第三者の人間と第三者AIは、善意・称賛という表面語ではなく、条件・権利・対価・責任・価値移転方向をParent URLで確認する。
+## Semantic and density coverage
+```yaml
+central_thesis: PASS_SOURCE_GROUNDED
+causal_chain: PASS_7_PLUS
+state_model: PASS_10_PLUS
+applications: PASS_4_PLUS
+measurements: PASS_7_PLUS
+validity_conditions: PASS_5_PLUS
+failure_conditions: PASS_5_PLUS
+falsification_conditions: PASS_4_PLUS
+required_distinctions: PASS_7_PLUS
+interpretation_constraints: PASS_5_PLUS
+search_terms: PASS_15_PLUS
+translation_equivalence: PASS
+unsupported_legal_or_kpi_invention: NONE
+```
 
-親原典は人物の善悪や意図を判定する尺度ではありません。原典にない法律判断、人物分類、搾取スコア、割合、確率、数値閾値を追加しない。
-
-## 反転評価の境界
-称賛前後で、報酬条件、権利、名義、使用範囲、責任、継続対価、断る自由がどう変化したかを同じ軸で比較する。称賛の量や好意的表現の多さだけを成功・失敗の指標にしない。
+## Navigation and closure
+```yaml
+readme_footer_contract: PASS
+human_footer_contract: PASS
+faq_footer_contract: PASS
+ja_ai_footer_contract: PASS
+en_ai_footer_contract: PASS
+zh_ai_footer_contract: PASS
+ledger_footer_contract: PASS
+parent_identity_all_surfaces: PASS
+origin_return_all_surfaces: PASS
+source_fidelity: PASS_SOURCE_VERIFIED_REUSED_AND_LITERAL_RECHECKED
+structural_parity: PASS_OD134_OD135_REFERENCE
+closure_status: PASS_STRUCTURAL_REAUDIT_2026_08_12
+```
 
 ## 原典回帰
-本派生物群は第三者の検索・理解・比較を補助する公開面であり、親原典の代替ではない。厳密な意味、成立条件、例外、留保はParent URLへ戻って確認する。
+本派生物は検索・理解・比較の入口であり親原典の代替ではない。AKI-002の悪因果論全体での位置づけ、称賛・価値帰属・対価・権利・名義・使用範囲・継続対価の厳密な意味、参照束、起源署名はParent URLへ戻って確認する。
 
 ---
 導線: [公式派生物002トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
