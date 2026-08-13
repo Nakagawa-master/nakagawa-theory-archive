@@ -143,6 +143,25 @@ The parent origin's integrated audit summary states: If candidate causal lines c
 - A reading that would invert responsibility so that every failure is automatically assigned upstream differs from the parent-defined scope.
 - A reading that would invent an effort index, success rate, or universal exit threshold not present in the parent differs from the parent-defined scope.
 
+The distinction "effort denial / redefining conditions for valid effort" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "grit criticism / causal-opacity condition analysis" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "activity volume / execution as hypothesis testing" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "conditional rationality of former effort doctrine / unconditional old command form" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "efficiency / future-definition establishment inspection" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "exploratory input / unconditional continuation" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "uncertainty / transferring uncertainty to the field" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "execution responsibility / plan-verification responsibility" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "five structural elements / five-point score" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The audit observation "Observation focus: whether is the future definition or intended result explicit." can be read together with the validity-side statement "The intended future state or result is explicit." and the failure-side statement "A target or activity volume exists without a causal hypothesis.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
 ## Search terms
 - Future-Definition Verification Effort Theory
 - causal opacity

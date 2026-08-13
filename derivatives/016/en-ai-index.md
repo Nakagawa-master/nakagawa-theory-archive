@@ -146,6 +146,25 @@ The parent origin's integrated audit summary states: If an indicator crosses thr
 - A reading that would equate AI's ability to process large contexts with society-wide observability differs from the parent-defined scope.
 - A reading that would fix any one of market, state, community, or AI society as the universal correct form differs from the parent-defined scope.
 
+The distinction "governance / behavior control" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "observability / information volume" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "transparency / cognitively usable verifiability" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "K / source-absent additional fixed information limit" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "responsibility naming / repairable R" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "history volume / verifiable H" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "summary / compression with no return path" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "market, state, community, AI society / value ranking" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "AI processing bandwidth / human cognitive bandwidth" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "dashboard deployment / observation-bandwidth design" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
 ## Search terms
 Physics of Consensus Formation; consensus infrastructure; governance; observation bandwidth; S=U×R×H; cognitive bandwidth K; third-party reproducibility; responsibility traceability; repair entry point; historical difference; AI governance; Nakagawa Master
 

@@ -141,6 +141,33 @@ The parent origin's integrated audit summary states: The model is reviewed by ch
 - A reading that would assume more public disclosure automatically means stronger immunity differs from the parent-defined scope.
 - A reading that would invent detection-rate targets, immunity scores, or fixed pass thresholds absent from the parent differs from the parent-defined scope.
 
+The distinction "deviation occurrence / immune failure" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "higher D_det / deterioration" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "lower D_loss / merely more reporting" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "responsibility R / punishment target" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "difference disclosure / transparency advocacy" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "difference disclosure / exposure" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "punishment / repair" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "zero deviation / safety" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "detected count / health" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The audit observation "Observation focus: whether does higher D_det coexist with lower D_loss." can be read together with the validity-side statement "A reading that would define immunity as zero deviation differs from the parent-defined scope." and the failure-side statement "Infer that fewer deviations automatically means greater safety.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether does lower D_det reflect fewer deviations or reporting suppression." can be read together with the validity-side statement "Read D_det, D_loss, and S recovery time together." and the failure-side statement "Treat higher D_det automatically as deterioration.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether after difference disclosure, is R fixed as a repair entry point." can be read together with the validity-side statement "Make R traceable as a repair entry point." and the failure-side statement "Assume harsher punishment automatically increases immunity.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether is H preserved as differences, change reasons, and repair history." can be read together with the validity-side statement "Source element: difference history H." and the failure-side statement "Equate transparency or disclosure volume with immunity.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether is S recovery time becoming shorter." can be read together with the validity-side statement "Connect disclosure to repairability." and the failure-side statement "Reduce the source to generic whistleblowing promotion or compliance.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
 ## Search terms
 Physics of Consensus Formation; deviation and immunity; difference disclosure; S U R H; D_det; D_loss; S recovery time; repair responsibility R; difference history H; repairability; Nakagawa Master
 

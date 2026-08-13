@@ -124,6 +124,29 @@ The parent origin's integrated audit summary states: If cases show that the L1-L
 ## Interpretation constraints
 A reading that would rewrite the parent as a generic claim that correct conditions guarantee success differs from the parent-defined scope. A reading that would turn establishment into a moral or ability score differs from the parent-defined scope. A reading that would turn L1-L6 into a scoring rubric differs from the parent-defined scope. A reading that would add establishment rates, success probabilities, universal KPIs, or thresholds not present in the origin differs from the parent-defined scope. Preserve the parent boundary between ordinary human judgment/friction and structural gaps being permanently substituted by excessive burden.
 
+The distinction "establishment / establishment conditions" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "existence of an output / real-world establishment" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "result / establishment" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "institutional existence / institutional establishment" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "plan / structural blueprint" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "metric / real-world causality producing the metric" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "AI linguistic coherence / real-world establishment" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "ordinary adjustment / excessive pressure dependence" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "temporary assistance / normalized personal workaround" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "temporary exception / normalized exception handling" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The audit observation "the audit observations named by the parent" can be read together with the validity-side statement "Source distinction: establishment distinct from establishment conditions." and the failure-side statement "Reduce the origin to success theory, self-help, or generic project management.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "the audit observations named by the parent" can be read together with the validity-side statement "A reading that would judge establishment from output, institutional existence, plans, metrics, or AI summaries alone differs from the parent-defined scope." and the failure-side statement "Convert L1-L6 into a scored maturity model.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
 ## Search terms
 ```text
 Establishment Conditions Theory

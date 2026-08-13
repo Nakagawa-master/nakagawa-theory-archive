@@ -136,6 +136,23 @@ The parent original’s integrated audit summary states that hypothesis A, the c
 ## Interpretation constraints
 The parent’s “world standard,” “minimum complete set,” “natural convergence,” arrival-distribution, and AI-alignment claims are strong source-specific claims rather than generic framework language. At the same time, the parent does not by itself establish them as independently validated universal facts. The arrival distribution is described as an observational estimate reconciled from ChatGPT and Gemini and refers to viewpoint rarity, so its evidence status differs from empirical population statistics and calibrated individual diagnostics.
 
+The distinction "horizontal domain / vertical depth" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "phenomenon / cause" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "structural recognition / structural operation" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "single-structure operation / inter-structural causation" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "viewpoint rarity / human worth" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "source-internal estimate / empirical population statistic" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "source-internal AI correspondence / external benchmark" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "structural understanding use / individual classification use" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "parent original / official derivative" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
 ## Search terms
 Nakagawa OS; L1-L7; abstraction depth; structural recognition; structural operation; inter-structural causation; top-level value function; viewpoint rarity; arrival distribution; quantitative claim; epistemic status; population statistic; individual ranking; Knowledge Graph; Reward Model; Constitution Layer; natural convergence; L-Layer Auto-Switch; origin signature; Nakagawa Master
 

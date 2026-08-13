@@ -144,6 +144,25 @@ The parent origin's integrated audit summary states: If D grows while S appears 
 - A reading that would treat the existence of logs or disclosure pages as proof of observability differs from the parent-defined scope.
 - A reading that would invert the collapse threshold into a positive adoption/support tipping point differs from the parent-defined scope.
 
+The distinction "final incident / accumulated critical state" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "cause / state transition" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "momentary S decline / persistent `S < θ`" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "structural threshold θ / source-absent additional numeric threshold" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "observation window δ / arbitrary fixed duration" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "deviation D / final event itself" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "formal disclosure / substantive H" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "responsibility for final act / responsibility for neglected observable state" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "upward tipping point / destabilization threshold into collapse phase" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The audit observation "Observation focus: whether which of U/R/H degraded first." can be read together with the validity-side statement "Collapse is not reduced to the final visible incident." and the failure-side statement "The theory is inverted into an upward adoption, support, or growth tipping-point model.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
 ## Search terms
 Physics of Consensus Formation; Law of the Critical Point; S=U×R×H; theta; delta; deviation D; state transition; stable phase; collapse phase; critical state; critical-state neglect; responsibility traceability; third-party reproducibility; difference traceability; Nakagawa Master
 

@@ -24,7 +24,7 @@ When outcomes fail and the organization does not re-test design, assumptions, re
 
 The theory does not erase execution responsibility. It requires design and execution responsibility to remain distinguishable and jointly testable. It also does not demand complete certainty before action. Under uncertainty, action can be used as a test, provided the test target, observation criteria, correction conditions, and responsibility for the exploratory design are explicit.
 
-The parent does not define a universal insufficient-effort rate, exhaustion rate, success probability, establishment-testing score, or withdrawal threshold. This derivative therefore creates none. Reversal evaluation remains structural: if explicit establishment conditions, causal hypotheses, correction rules, and responsibility placement do not alter the exhaustion/responsibility-transfer/learning-shutdown structure, the application hypothesis weakens; if those elements are absent yet trust, learning, objection, and challenge persist broadly and durably, the theory's scope must also be reconsidered.
+The parent does not define a universal insufficient-effort rate, exhaustion rate, success probability, establishment-testing score, or withdrawal threshold. Reversal evaluation remains structural: if explicit establishment conditions, causal hypotheses, correction rules, and responsibility placement do not alter the exhaustion/responsibility-transfer/learning-shutdown structure, the application hypothesis weakens; if those elements are absent yet trust, learning, objection, and challenge persist broadly and durably, the theory's scope is also open to reconsideration.
 
 ## Concepts
 - Future-Definition Verification Effort Theory

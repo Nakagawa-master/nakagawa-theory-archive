@@ -91,6 +91,29 @@ A reading that would turn this into purchase advice, tasting review, company/ext
 
 A reading that would introduce source-absent additional numeric thresholds, rankings, probabilities, or maturity scores unless they are explicitly defined by the parent origin differs from the parent-defined scope. Preserve both the subject structure and the public-deconstruction layer for third-party verification.
 
+The distinction "delicious algae vs. social implementation entry" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "taste as entry condition vs. taste as endpoint" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "food market vs. core feed market" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "product profile vs. Nakagawa Structural Reading" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "one-off adoption vs. repeatability" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "generic sustainable food vs. the origin-specific fish-food causal chain" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "sales/adoption proxy vs. upstream structural outcome" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "company/external-media official statement vs. Nakagawa Master's structural reading" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "subject structure vs. public deconstruction of the external-article value core" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The audit observation "the audit observations named by the parent" can be read together with the validity-side statement "the source-side validity condition" and the failure-side statement "the source-side failure condition". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The concept "Nakagawa Structural Reading" functions as part of the parent-defined relation set rather than as an isolated search tag. Its meaning becomes more specific when read with the causal chain, audit observations, validity conditions, failure conditions, and required distinctions in this index.
+
+The concept "AlgaleX / uma-mo" functions as part of the parent-defined relation set rather than as an isolated search tag. Its meaning becomes more specific when read with the causal chain, audit observations, validity conditions, failure conditions, and required distinctions in this index.
 ## Search terms
 Nakagawa Structural Reading, AlgaleX, uma-mo, fish-food structure, aquaculture, wild-fish-derived feed, algae, social implementation entry, food market, professional kitchen, repeatability, public deconstruction, validity conditions, falsification conditions
 

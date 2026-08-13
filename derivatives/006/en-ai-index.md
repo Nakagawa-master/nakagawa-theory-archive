@@ -131,6 +131,25 @@ The parent origin's integrated audit summary states: If an indicator crosses thr
 - A reading that would invent numerical KPIs, thresholds, probabilities, or success rates absent from the parent differs from the parent-defined scope.
 - A reading that would import conclusions from later sovereignty-shift papers back into Vol differs from the parent-defined scope. 1.
 
+The distinction "Connection-Transition Strategy / execution conditions" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "rejection of money / dual operation of monetary and connection KPIs" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "moral praise of connection / institutional translation of connection value" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "AI crisis discourse / transition-window audit" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "AI optimism / human-sovereign co-design" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "technology speed / institutional-translation speed" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "disappearance of the future line / narrowing of the future line" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "incoherent strategy / erosion of the implementation ground" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The audit observation "the audit observations named by the parent" can be read together with the validity-side statement "Source element: the Connection-Transition Strategy rather than turning Vol. 1 into a rejection of it." and the failure-side statement "Reverse an audit of enabling conditions into rejection of the Connection-Transition Strategy.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "the audit observations named by the parent" can be read together with the validity-side statement "Distinguish strategy content from enabling conditions." and the failure-side statement "Convert dual operation into immediate rejection of money.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
 ## Search terms
 Civilizational Sovereignty Shift Theory; Connection-Transition Strategy; human sovereignty; dual-operation period; monetary KPI; connection KPI; connection-reward society; institutional translation; transition window; short-term monetization pressure; extraction structure; intellectual asymmetry; value attribution; narrowing future line; Nakagawa Master
 

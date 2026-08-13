@@ -138,6 +138,35 @@ The parent origin's integrated audit summary states: If STOP becomes frequent en
 - A reading that would invent understanding scores, danger percentages, AI-dependence rates, or fixed thresholds absent from the parent differs from the parent-defined scope.
 - A reading that would infer malicious intent automatically from H-Disconnect differs from the parent-defined scope.
 
+The distinction "understanding / fake-U" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "fluency / verifiability" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "rising U / H-Disconnect" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "summary / replacement of Origin" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "AI answer / cognitive hack" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "H_d / information volume" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "F-C / criticism of clarity" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "SD / ordinary rephrasing" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "Stop / information control" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "Shrink / permanent reduction" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The audit observation "Observation focus: whether does rising U coexist with a return path to primary evidence." can be read together with the validity-side statement "Treat H-Disconnect as a U/H/R combination." and the failure-side statement "Reduce the theory to anti-AI advice.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether can Origin, source, context, version, and differences be reached." can be read together with the validity-side statement "Separate fake-U from substantive understanding." and the failure-side statement "Ban clear explanation, summaries, or diagrams categorically.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether is verification responsibility R explicit." can be read together with the validity-side statement "Use H_d, F-C, and SD as a bundle, not universal single scores." and the failure-side statement "Judge H-Disconnect only by truth or falsity of content.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether does H_d reflect actual evidence depth rather than information volume." can be read together with the validity-side statement "Source element: return paths to Origin, source, context, version, and differences." and the failure-side statement "Equate high acceptance with substantive understanding.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether does F-C indicate a gap that is causing verification to stop." can be read together with the validity-side statement "Establish verification responsibility R." and the failure-side statement "Replace Origin with personality or authority.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
 ## Search terms
 Physics of Consensus Formation; cognitive hacking defense OS; H-Disconnect; fake-U; H_d; F-C; SD; Detect Stop Shrink Recover Audit; Origin; S U R H; verification responsibility R; Nakagawa Master
 

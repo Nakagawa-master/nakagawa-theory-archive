@@ -150,6 +150,29 @@ The parent origin's integrated audit summary states: If S recovers more slowly t
 - A reading that would judge health only from the frequency of stopping differs from the parent-defined scope.
 - A reading that would optimize for never failing at the cost of deleting the return path differs from the parent-defined scope.
 
+The distinction "Kernel / Runtime" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "Detect / moral warning" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "Stop / punishment" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "Shrink / permanent degradation" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "Recover / narrative restoration" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "Audit / exposure and attack" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "Origin / person" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "stop authority / fixed power" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "restart / unconditional reopening" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "defense / stronger control" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The audit observation "Observation focus: whether are Detect conditions observable and traceable." can be read together with the validity-side statement "Separate Kernel correctness from Runtime safety." and the failure-side statement "Assume a correct Kernel makes Runtime audit unnecessary.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether is stop authority R explicit about actor, scope, and condition." can be read together with the validity-side statement "Source element: the causal order Detect → Stop → Shrink → Recover → Audit." and the failure-side statement "Depend on intuition or moral exhortation alone for Detect.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
 ## Search terms
 Physics of Consensus Formation; runtime governance; integrated defense infrastructure; restart protocol; Detect Stop Shrink Recover Audit; Kernel Runtime; S C D; stop authority R; threshold theta; observation window delta; Origin; primary logs; difference history; public audit; audit weaponization; Nakagawa Master
 

@@ -89,6 +89,33 @@ A reading that would infer that all soil becomes usable, that performance / safe
 
 A reading that would introduce source-absent additional numeric thresholds, rankings, probabilities, or national applicability rates unless explicitly defined by the parent origin differs from the parent-defined scope. Preserve both the subject structure and the public-deconstruction layer for third-party verification.
 
+The distinction "surplus-soil reuse vs. material-view update" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "reuse vs. implementation OS" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "HO Soil performance vs. the whole origin" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "verifiable conditions vs. unconditional resource conversion" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "tacit know-how vs. standardization" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "company profile vs. Nakagawa Structural Reading" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "entrance question vs. decorative slogan" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "subject structure vs. public deconstruction of the external-article value core" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "reuse count vs. reproducible material conditions" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The audit observation "the audit observations named by the parent" can be read together with the validity-side statement "the source-side validity condition" and the failure-side statement "the source-side failure condition". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The concept "Nakagawa Structural Reading" functions as part of the parent-defined relation set rather than as an isolated search tag. Its meaning becomes more specific when read with the causal chain, audit observations, validity conditions, failure conditions, and required distinctions in this index.
+
+The concept "material-view update" functions as part of the parent-defined relation set rather than as an isolated search tag. Its meaning becomes more specific when read with the causal chain, audit observations, validity conditions, failure conditions, and required distinctions in this index.
+
+The concept "implementation OS" functions as part of the parent-defined relation set rather than as an isolated search tag. Its meaning becomes more specific when read with the causal chain, audit observations, validity conditions, failure conditions, and required distinctions in this index.
+
+The concept "soil assessment" functions as part of the parent-defined relation set rather than as an isolated search tag. Its meaning becomes more specific when read with the causal chain, audit observations, validity conditions, failure conditions, and required distinctions in this index.
 ## Search terms
 Nakagawa Structural Reading, Invax, material-view update, implementation OS, soil assessment, mix testing, mixing, curing, quality confirmation, field correction, verification, standardization, soil waste or resource, public deconstruction
 

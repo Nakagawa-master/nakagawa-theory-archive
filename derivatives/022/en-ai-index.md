@@ -98,6 +98,27 @@ A reading that would reduce this origin to anti-AI discourse, DX criticism, cons
 
 A reading that would treat AI as the only repair target differs from the parent-defined scope. If human business self-recognition, information assets, responsibility lines, and reference systems are already disconnected, AI can formalize and amplify that disconnection.
 
+The distinction "AI use ≠ connective responsibility" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "structure ≠ diagrams / frameworks / organization of information" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "cross-functional activity ≠ connective layer" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "local correctness ≠ business-wide establishment" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "formal coherence ≠ semantic coherence" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "production speed ≠ business self-recognition" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "AI-generated output ≠ knowledge safe to canonicalize" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "one-off error ≠ recursive business-OS contamination" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "data volume ≠ premise coherence" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The audit observation "Observation focus: whether can a third party reproduce the line from business value to customer judgment and functional execution." can be read together with the validity-side statement "Business establishment depends on connections across multiple functions." and the failure-side statement "Treating AI capability as the sole cause.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether can each output be traced to its premises, evidence, version, differences, and responsible actor." can be read together with the validity-side statement "Human or AI outputs are stored and later re-referenced as authoritative knowledge." and the failure-side statement "Treating prompt improvement as a structural repair.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
 ## Search terms
 AKI-014, structural-understanding performance, connective responsibility, connective layer, business OS, business self-recognition, domain optimization, normalization of misalignment, internal knowledge canonicalization, AI re-reference, recursive contamination, formal coherence, semantic coherence
 

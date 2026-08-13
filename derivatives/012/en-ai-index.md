@@ -119,6 +119,33 @@ The parent origin's integrated audit summary states: If an accessible explanatio
 ## Interpretation constraints
 A reading that would rewrite the parent as a rule to make writing difficult or to avoid brevity differs from the parent-defined scope. A reading that would fix AI or social media as the causal culprit itself differs from the parent-defined scope. The problem is the causal sequence in which insufficient structural decomposition produces completed-understanding feeling, closes inquiry and verification, and fixes shallow recognition into a shared premise. A reading that would add scores, thresholds, probabilities, or generalized policy judgments absent from the origin differs from the parent-defined scope.
 
+The distinction "understanding / performance of understanding" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "clarity / completed-understanding feeling" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "explanation as entry / explanation as endpoint" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "shared vocabulary / unverifiable shared premise" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "concision / deletion of conditions" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "summary / closure of inquiry" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "ignorance / update-stop caused by feeling already informed" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "individual misunderstanding / recognition pollution" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The audit observation "the audit observations named by the parent" can be read together with the validity-side statement "A reading that would treat clarity itself as harmful differs from the parent-defined scope." and the failure-side statement "Reduce the origin to criticism of lying, pretended expertise, communication style, or individual comprehension deficits.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "the audit observations named by the parent" can be read together with the validity-side statement "Separate understanding from performance of understanding." and the failure-side statement "Convert it into praise of difficult writing.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "the audit observations named by the parent" can be read together with the validity-side statement "Inspect whether inquiry remains open." and the failure-side statement "Categorically prohibit AI summaries, metaphors, or concise explanation.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "the audit observations named by the parent" can be read together with the validity-side statement "Source element: establishment conditions, exceptions, falsification, applicability, and uncertainty." and the failure-side statement "Reduce the problem to information quantity alone.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "the audit observations named by the parent" can be read together with the validity-side statement "Source element: verifiability after vocabulary becomes shared." and the failure-side statement "Remove shared-vocabulary fixation, burden-of-explanation reversal, and recognition pollution from the causal chain.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "the audit observations named by the parent" can be read together with the validity-side statement "Inspect burden-of-explanation reversal." and the failure-side statement "Add political, medical, legal, or universal scoring claims absent from the origin.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
 ## Search terms
 ```text
 Bad Causality Theory AKI-011

@@ -106,6 +106,27 @@ The parent origin's integrated audit summary states: If the reading is received 
 ## Interpretation constraints
 A reading that would reduce this origin to investment advice, product comparison, yield evaluation, safety assurance, condominium-management instructions, or an official Funds statement differs from the parent-defined scope. A reading that would invert it into “deposits are bad” or “investment is required differs from the parent-defined scope.” Preserve both the communal-fund structure and the parent’s public-deconstruction layer for third-party verification.
 
+The distinction "investment product ≠ community fund defense" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "discretionary individual assets ≠ purpose-bound communal funds" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "nominal balance ≠ real repair capacity" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "high yield ≠ good communal-fund operation" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "principal preservation ≠ automatically choosing deposits forever" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "Funds explanation ≠ Nakagawa structural reading" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "company/external-media official statement ≠ Nakagawa Master's reading" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "product selection ≠ design for future repair execution" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "subject structure ≠ public deconstruction of the external-article value core" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The audit observation "relation between current reserves and future planned repair costs;" can be read together with the validity-side statement "the money is meaningfully purpose-bound communal money rather than discretionary individual capital;" and the failure-side statement "collapsing the origin into a Funds product profile;". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "date and assumptions of the latest cost-plan update;" can be read together with the validity-side statement "future repair/maintenance is the protected function;" and the failure-side statement "turning it into yield comparison or product ranking;". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
 ## Search terms
 Nakagawa Structural Reading, Funds, repair reserve fund, community fund defense, purpose-bound communal funds, future repair capacity, real repair capacity, consensus formation, explainability, institutional fit, public deconstruction, validity conditions, falsification conditions
 

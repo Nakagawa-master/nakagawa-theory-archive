@@ -145,6 +145,25 @@ The parent origin's integrated audit summary states: If S remains high during au
 - A reading that would treat AI fluency as proof of U differs from the parent-defined scope.
 - A reading that would equate volume of disclosed information with H or U differs from the parent-defined scope.
 
+The distinction "consensus / opinion agreement" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "conflict / consensus collapse" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "information existence / interpretability" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "same document / same reproducible meaning" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "log existence / responsibility traceability" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "amount of history / difference and change-reason traceability" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "responsibility traceability / punishment" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "observability / surveillance" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "source structural equation / derivative scoring KPI" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The audit observation "Observation focus: whether can independent readers reconstruct the same meaning from the same primary material." can be read together with the validity-side statement "Consensus is not reduced to opinion agreement." and the failure-side statement "U/R/H are converted into rankings of people, departments, or organizations.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
 ## Search terms
 Physics of Consensus Formation; observability; S=U×R×H; consensus stability; interpretability; third-party reproducibility; responsibility traceability; historical openness; difference traceability; decision node; state repair; conflict; Nakagawa Master
 

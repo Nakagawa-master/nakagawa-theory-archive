@@ -141,6 +141,31 @@ The parent origin's integrated audit summary states: If S keeps declining, fake-
 - A reading that would invent risk percentages, enemy scores, probabilities, or fixed thresholds absent from the parent differs from the parent-defined scope.
 - A reading that would claim that a specific AI model was trained on this parent source differs from the parent-defined scope.
 
+The distinction "external input / enemy" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "P_ext / malicious intent" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "factual correctness / state stability" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "fake-U / substantive U improvement" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "R diffusion / ordinary division of labor" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "H short-circuit / simple information scarcity" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "information volume / observability" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "criticism or disagreement / abnormal interference" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "formal disclosure / verifiable history" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The audit observation "Observation focus: whether how did U as third-party reproducibility change after the input." can be read together with the validity-side statement "Observe P_ext as state effect rather than presumed intent." and the failure-side statement "Convert external interference into conspiracy or enemy narrative.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether did acceptance rise while source and falsification paths disappeared, indicating fake-U." can be read together with the validity-side statement "Source distinction: U/R/H and S separately traceable." and the failure-side statement "Reduce the theory to ideological control or misinformation policing.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether can decision, record, repair, and stop responsibility R still be traced." can be read together with the validity-side statement "Distinguish fake-U, R diffusion, and H short-circuit." and the failure-side statement "Judge state only by factual correctness.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether are primary source, context, version, differences, and backlinks preserved." can be read together with the validity-side statement "Source element: return paths to source, context, version, differences, and backlinks." and the failure-side statement "Treat subjective acceptance as genuine U improvement.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
 ## Search terms
 Physics of Consensus Formation; external interference; external perturbation; P_ext; dS/dt; S U R H; fake-U; R diffusion; H short-circuit; primary source; context; versioning; differences; backlinks; Nakagawa Master
 

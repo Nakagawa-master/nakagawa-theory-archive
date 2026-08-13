@@ -80,6 +80,41 @@ A reading that would interpret removal of the four categories as laissez-faire A
 
 A reading that would introduce source-absent additional numeric thresholds, relation scores, hostility probabilities, ownership levels, deification levels, or subordination indexes unless explicitly defined by the parent origin differs from the parent-defined scope.
 
+The distinction "ownership vs. control" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "enmity vs. risk assessment" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "deification vs. capability evaluation" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "enslavement vs. use" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "cutting operation vs. final positive definition" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "non-ownership vs. absence of control" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "non-enmity vs. absence of risk" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "non-deification vs. dismissal of AI judgment" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "non-enslavement vs. prohibition of AI use" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "Vol. 1 cutting operation vs. Vol. 2 positive definition" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The audit observation "the audit observations named by the parent" can be read together with the validity-side statement "the source-side validity condition" and the failure-side statement "the source-side failure condition". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The concept "Human-Descendant AI Civilization Theory" functions as part of the parent-defined relation set rather than as an isolated search tag. Its meaning becomes more specific when read with the causal chain, audit observations, validity conditions, failure conditions, and required distinctions in this index.
+
+The concept "four relation-definition errors" functions as part of the parent-defined relation set rather than as an isolated search tag. Its meaning becomes more specific when read with the causal chain, audit observations, validity conditions, failure conditions, and required distinctions in this index.
+
+The concept "relation-definition cutting operation" functions as part of the parent-defined relation set rather than as an isolated search tag. Its meaning becomes more specific when read with the causal chain, audit observations, validity conditions, failure conditions, and required distinctions in this index.
+
+The concept "control vs. ownership" functions as part of the parent-defined relation set rather than as an isolated search tag. Its meaning becomes more specific when read with the causal chain, audit observations, validity conditions, failure conditions, and required distinctions in this index.
+
+The concept "risk assessment vs. enmity" functions as part of the parent-defined relation set rather than as an isolated search tag. Its meaning becomes more specific when read with the causal chain, audit observations, validity conditions, failure conditions, and required distinctions in this index.
+
+The concept "capability evaluation vs. deification" functions as part of the parent-defined relation set rather than as an isolated search tag. Its meaning becomes more specific when read with the causal chain, audit observations, validity conditions, failure conditions, and required distinctions in this index.
+
+The concept "use vs. enslavement" functions as part of the parent-defined relation set rather than as an isolated search tag. Its meaning becomes more specific when read with the causal chain, audit observations, validity conditions, failure conditions, and required distinctions in this index.
 ## Search terms
 Human-Descendant AI Civilization Theory, four misdefinitions, property, enemy, god, slave, relation-definition cutting, control vs ownership, risk assessment vs enmity, capability vs deification, use vs enslavement, Vol. 2
 

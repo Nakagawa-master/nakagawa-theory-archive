@@ -110,6 +110,25 @@ A reading that would reduce this origin to service promotion, rental-car compari
 
 Treat this derivative as a public aid for third-party verification of both the origin's structural reading and its public explanation of why that value core was chosen as the external-article angle.
 
+The distinction "unmanned rental car ≠ mobility supply OS" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "unmanned operation ≠ time freedom" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "24-hour access ≠ long-duration rationality" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "low price ≠ supply success" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "location count ≠ actual usability" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "feature introduction ≠ social function" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "Valuetope explanation ≠ Nakagawa Structural Reading" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "company/external-media official statement ≠ Nakagawa Master's reading" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "service-structure explanation ≠ the parent origin's public-deconstruction meta layer" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "generic MaaS ≠ the origin-specific supply gap" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
 ## Search terms
 Nakagawa Structural Reading, Valuetope, reimplementation of time freedom, mobility supply OS, car sharing, rental car, 24-hour non-face-to-face access, long-duration rationality, pricing design, location strategy, inquiry route, public deconstruction article, value core, validity conditions, falsification conditions
 

@@ -132,6 +132,27 @@ The parent origin's integrated audit summary states: If the reading is received 
 - A reading that would present the reading as MOTA's or the publisher's own official self-definition differs from the parent-defined scope.
 - A reading that would remove Nakagawa Master's public explanation of why that value core became the external-article angle differs from the parent-defined scope.
 
+The distinction "vehicle value / price-formation conditions" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "single appraisal / competition established" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "number of appraisers / effective competition" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "fewer calls as convenience / seller-burden design" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "higher-price result / conditions for higher-price formation" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "MOTA business analysis / Nakagawa Structural Reading" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "feature listing / value-core extraction" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "parent claim / derivative generalization" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The audit observation "Is information asymmetry preserved as a starting condition?" can be read together with the validity-side statement "Sellers face information asymmetry relative to the market and buyers." and the failure-side statement "Reduce the source to used-car appraisal comparison.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Is the distinction between single-buyer connection and multi-buyer competition preserved?" can be read together with the validity-side statement "Single-buyer connection can produce weaker competition." and the failure-side statement "Treat the number of appraisers as the full value core.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Is price-presentation sequence retained as part of the formation conditions?" can be read together with the validity-side statement "Multi-buyer connection can create competitive conditions." and the failure-side statement "Treat fewer phone calls as the full value core.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
 ## Search terms
 - Nakagawa Structural Reading
 - MOTA

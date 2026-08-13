@@ -134,6 +134,35 @@ The parent origin's integrated audit summary states: If an indicator crosses thr
 - A reading that would invent propaganda rates, resonance-risk percentages, or support thresholds absent from the parent differs from the parent-defined scope.
 - A reading that would fix AI recommendations or social media as the causal actor itself differs from the parent-defined scope.
 
+The distinction "agreement / Res" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "majority / bandwidth occupation" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "factual truth / verification bandwidth" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "Occ(K) / support rate" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "lower V / mere agreement" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "higher P / strong emotion generally" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "lower A / simply fewer objections" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "Damping / censorship" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "Cooling / suppression of victim reports" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "True-U / subjective acceptance" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The audit observation "Observation focus: whether can the group hold multiple topics, hypotheses, and counterexamples simultaneously." can be read together with the validity-side statement "A reading that would classify propaganda by content or faction alone differs from the parent-defined scope." and the failure-side statement "Automatically label a political party or faction as propaganda.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether can participants return to primary sources, history, differences, and responsibility." can be read together with the validity-side statement "Treat K, Occ(K), Res, and V/P/A as state observations." and the failure-side statement "Reduce the model to truth-checking alone.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether are V decline, P rise, and A decline occurring together." can be read together with the validity-side statement "Source element: access to H and R." and the failure-side statement "Flatten it into generic media literacy or social-media etiquette.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether is rising Occ(K) associated with falling H/R access." can be read together with the validity-side statement "Separate agreement count from bandwidth health." and the failure-side statement "Turn Damping or Cooling into censorship or enforced silence.". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
+
+The audit observation "Observation focus: whether has convergence on one conclusion eliminated revisability." can be read together with the validity-side statement "Treat Damping, Cooling, and Degeneration as temporary recovery operations." and the failure-side statement "Suppress minority opinions, warnings, or victim reports as “resonance.”". These describe different observational directions in the same source structure; their contrast does not imply a new numerical score.
 ## Search terms
 Physics of Consensus Formation; cognitive bandwidth K; Occ(K); Res; V P A; Damping; Cooling; Degeneration; H reconnection; R reassignment; True-U; Nakagawa Master
 

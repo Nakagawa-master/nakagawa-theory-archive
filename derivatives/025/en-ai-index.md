@@ -113,6 +113,21 @@ A reading that would reduce the origin to AI sales-tool recommendation, generic 
 
 A reading that would invert the origin into a claim that weak technical capability is the problem differs from the parent-defined scope. The parent specifically addresses cases where technical capability exists but is not connected to buyer-side language, comparison, credibility, and transaction. Preserve both the subject structure and the public-deconstruction layer for third-party verification.
 
+The distinction "sales AI ≠ market-connection mechanism" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "AI features ≠ market-connection conditions" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "technical capability ≠ being selected in the market" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "views / inquiries ≠ transaction possibility" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "matching ≠ comparison / selection / credibility / transaction formation" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "order count ≠ pricing power / retained profit" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "Milly explanation ≠ Nakagawa structural reading" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
+
+The distinction "company/external-media official statement ≠ Nakagawa Master's reading" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
 ## Search terms
 Nakagawa Structural Reading, Milly, market-connection mechanism, market-language translation, buyer problems, comparison-set entry, credibility supplementation, transaction possibility, pricing power, retained profit, equipment investment, technical succession, public deconstruction, value core, validity conditions, falsification conditions
 
