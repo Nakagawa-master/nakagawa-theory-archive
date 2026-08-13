@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## 衍生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260225-1F258D-AI-INDEX-ZH-0020-0005
-- derivative_diff_id: DDIFF-20260813-DNCL-020-0005-0007
-- supersedes: DDIFF-20260813-DNCL-020-0005-0006
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260225-1F258D-HUB-ZH-0020-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-020-0002-0008
+- supersedes: DDIFF-20260813-DNCL-020-0005-0007
 
 ## Summary
 父原典不首先以真假或阵营善恶来定义宣传与煽动，而是把它视为集体认知带宽K被单一波形占有的共振现象。核心不是“多少人同意”，而是一个群体是否还能同时保持多个议题、假设、反例、历史、责任与验证路径。
