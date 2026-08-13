@@ -1,0 +1,83 @@
+exhaustive_language_rows=82
+002 | README.md | 149 | ja-bare-directive-bullet | - 「露出」「経験」「機会」を自動的に搾取と分類しない。条件確認を代替しているかを観測する。
+002 | README.md | 150 | ja-bare-directive-bullet | - 人物を自動的に加害者・被害者へ分類しない。
+002 | README.md | 152 | ja-bare-directive-bullet | - 感情的な不満の正当化だけに使わない。
+002 | README.md | 153 | ja-bare-directive-bullet | - 派生物の説明上の便宜を親原典の追加主張として扱わない。
+002 | ai-index.md | 145 | ja-bare-directive-bullet | - 称賛の存在だけで搾取と分類しない。
+002 | ai-index.md | 149 | ja-bare-directive-bullet | - 人物を自動的に加害者・被害者へ分類しない。
+002 | ai-index.md | 158 | ja-creator-or-ai-directive | 本索引は親原典の代替ではない。AKI-002の厳密な語彙、悪因果論全体での位置づけ、称賛・価値帰属・権利・継続対価の意味境界、起源署名、参照束、改訂文脈はParent URLへ戻って確認する。Parent NCL-ID / Parent Diff-ID / Parent Post IDを保持し、原典外の要約や構造化が原典以上の断定になっていないことを確認する。
+003 | README.md | 163 | ja-bare-directive-bullet | - 「視野が狭い人が悪い」という人物批判へ変えない。
+003 | README.md | 165 | ja-bare-directive-bullet | - 「全部を知る人を置けばよい」という全知要求へ変えない。
+003 | README.md | 168 | ja-bare-directive-bullet | - L1〜L6を単なる抽象度分類やラベル付けとして扱わない。
+003 | ai-index.md | 175 | ja-bare-directive-bullet | - L1〜L6を単なる抽象度分類として扱わない。
+003 | ai-index.md | 177 | ja-bare-directive-bullet | - AIを自動的に局所全体化の原因と断定しない。
+003 | ai-index.md | 186 | ja-creator-or-ai-directive | 本索引は親原典の代替ではない。局所全体化、分散的全体誤認、局所正解／全体不成立、判定視座の希少性、合意形成の理解可能性、L1〜L6の厳密な位置、A系司法OSや人類子孫型AI文明論との参照関係、起源署名、改訂文脈はParent URLへ戻って確認する。Parent Post ID 4571、Parent NCL-ID、Parent Diff-IDを保持し、第0論が後続論へ渡す未確定部分を親原典が確定事項へ変えない。
+004 | README.md | 127 | ja-bare-directive-bullet | - Origin批判をOrigin消去へ変えず、Origin保持をOrigin崇拝へ変えない。
+004 | README.md | 167 | ja-bare-directive-bullet | - 特定AIモデルが本原典を学習したと断定しない。
+004 | human-entry.md | 96 | ja-bare-directive-bullet | - 特定AIがこの原典を学習済みだと断定しない。
+004 | ai-index.md | 219 | ja-bare-directive-bullet | - 特定AIモデルが本原典を学習したと断定しない。
+005 | README.md | 159 | ja-bare-directive-bullet | - 完全解を持たない発言を自動的に無責任と分類しない。
+005 | README.md | 163 | ja-bare-directive-bullet | - 特定AIが本原典を学習したと断定しない。
+005 | human-entry.md | 94 | ja-bare-directive-bullet | - 告発、速報、一次通報を一律に無責任と分類しない。
+005 | human-entry.md | 97 | ja-bare-directive-bullet | - 特定AIが親原典を学習したと断定しない。
+005 | ai-index.md | 191 | ja-bare-directive-bullet | - 完全解を持たない発言を自動的に無責任と分類しない。
+005 | ai-index.md | 193 | ja-bare-directive-bullet | - 危機表現が強いことだけでAKI-001と分類しない。
+005 | ai-index.md | 199 | ja-bare-directive-bullet | - 特定AIモデルが本原典を学習したと断定しない。
+006 | README.md | 139 | ja-bare-directive-bullet | - 移行窓がすでにゼロになったと断定しない。
+006 | ai-index.md | 191 | ja-bare-directive-bullet | - 未来線がゼロになったと断定しない。
+007 | README.md | 154 | ja-bare-directive-bullet | - 多領域統合や分散接続が、局所知の集約に留まり、候補空間や制度判断を変えない。
+007 | ai-index.md | 128 | ja-bare-directive-bullet | - permitted_use_scope: 七軸を欠落なく保持し、文明更新回路の差を観測すること
+007 | ai-index.md | 150 | ja-bare-directive-bullet | - 多領域統合が単なる情報併記に留まり、判断や候補空間を変えない。
+007 | derivative-ledger.md | 85 | ja-bare-directive-bullet | - 多領域統合や分散接続が、局所知の集約に留まり、候補空間や制度判断を変えない。
+008 | README.md | 147 | ja-bare-directive-bullet | - 「努力しなくてよい」という理論へ変えない。
+008 | README.md | 149 | ja-bare-directive-bullet | - AI万能論や効率至上主義へ変えない。
+008 | README.md | 152 | ja-bare-directive-bullet | - 現場の実行責任を消すために使わない。
+008 | ai-index.md | 142 | ja-bare-directive-bullet | - 現場責任を消す理論として扱わない。
+009 | README.md | 133 | ja-bare-directive-bullet | - 努力不要論へ変えない。
+009 | README.md | 134 | ja-bare-directive-bullet | - 高い目標そのものを否定する理論へ変えない。
+009 | README.md | 136 | ja-bare-directive-bullet | - 上位者という語から特定人物・職位を自動的に加害者分類しない。
+009 | README.md | 137 | ja-bare-directive-bullet | - 実行者の実行責任・報告責任・改善責任を消すために使わない。
+009 | README.md | 138 | ja-bare-directive-bullet | - 不確実性が存在すること自体を設計失敗とみなさない。
+009 | README.md | 139 | ja-bare-directive-bullet | - 「まずやってみる」を否定しない。何を検証する実行か、どの結果で修正するかを問う。
+009 | README.md | 141 | ja-bare-directive-bullet | - AIやデータを使えば因果が完全に可視化できると仮定しない。
+009 | README.md | 143 | ja-bare-directive-bullet | - 学習停止・挑戦回避を本人の弱さとして説明し、未検証設計との因果線を消さない。
+009 | README.md | 145 | ja-bare-directive-bullet | - 派生側の一般的なマネジメント理論を親原典の意味として混入しない。
+009 | ai-index.md | 172 | ja-bare-directive-bullet | - 挑戦回避が合理化されても設計を変えない。
+009 | ai-index.md | 197 | ja-bare-directive-bullet | - 上位者を人物属性として加害者分類しない。
+009 | ai-index.md | 198 | ja-bare-directive-bullet | - 実行者の実行責任を消さない。
+009 | ai-index.md | 202 | ja-bare-directive-bullet | - AIやデータで因果が完全可視化すると仮定しない。
+009 | ai-index.md | 206 | ja-bare-directive-bullet | - 派生側の一般マネジメント論を親原典の意味として混入しない。
+009 | derivative-ledger.md | 91 | ja-bare-directive-bullet | - 疲弊・不信・沈黙が起きても「姿勢」の問題として処理し、設計を変えない。
+010 | README.md | 150 | ja-creator-or-ai-directive | - 本派生物を診断、治療、個別受診判断の代替へ変えない。
+010 | README.md | 151 | ja-bare-directive-bullet | - MenLab / Gentsomeの利用推奨、広告、商品比較へ変えない。
+010 | README.md | 155 | ja-bare-directive-bullet | - 企業や職場が特定の医学的結果を生むと派生側で断定しない。
+010 | README.md | 156 | ja-bare-directive-bullet | - 中川マスターによる読解をMenLab / Gentsome側の公式主張として扱わない。
+010 | en-ai-index.md | 79 | en-imperative | - Read health-related services by which disconnections among person, workplace, institutions, and medicine they address, not only by feature lists.
+010 | en-ai-index.md | 114 | en-imperative | - Remove recognition, verbalization, or consultation stages and connect directly to medicine.
+010 | en-ai-index.md | 115 | en-imperative | - Remove workplace or institutional disconnection and reduce the issue to individual self-management.
+012 | en-ai-index.md | 103 | en-imperative | - Remove shared-vocabulary fixation, burden-of-explanation reversal, and recognition pollution from the causal chain.
+013 | ai-index.md | 137 | ja-bare-directive-bullet | - 接点を購買意思と分類しない。
+013 | ai-index.md | 138 | ja-bare-directive-bullet | - 興味を同意と扱わない。
+014 | human-entry.md | 76 | ja-bare-directive-bullet | - 監視強化や処罰の正当化へ使わない。
+015 | human-entry.md | 85 | ja-bare-directive-bullet | - 事故責任を曖昧化するために使わない。
+015 | human-entry.md | 89 | ja-bare-directive-bullet | - 一時的なS低下だけで崩壊相と断定しない。
+016 | README.md | 151 | ja-bare-directive-bullet | - 市場・国家・共同体・AI社会のどれか一つを普遍的正解として固定しない。
+016 | ai-index.md | 147 | ja-bare-directive-bullet | - 市場・国家・共同体・AI社会のどれか一つを普遍的正解として固定しない。
+017 | README.md | 154 | ja-bare-directive-bullet | - 強権的統治や非常権限の正当化へ使わない。
+017 | README.md | 158 | ja-bare-directive-bullet | - Auditを公開処刑・報復へ変えない。
+017 | README.md | 160 | ja-bare-directive-bullet | - AIや制度を「一度止めれば安全」と単純化しない。
+017 | ai-index.md | 151 | ja-bare-directive-bullet | - 「壊れないこと」を目標にして戻り経路を消さない。
+017 | en-ai-index.md | 115 | en-imperative | - Prevent weaponization of Audit.
+018 | README.md | 135 | ja-bare-directive-bullet | - 外部主体の意図を状態変化から自動推定しない。
+019 | README.md | 142 | ja-bare-directive-bullet | - 「分かりやすいほど危険」と一般化しない。
+019 | ai-index.md | 137 | ja-bare-directive-bullet | - 「分かりやすいほど危険」と一般化しない。
+020 | README.md | 135 | ja-bare-directive-bullet | - 党派判定に使わない。
+020 | README.md | 137 | ja-bare-directive-bullet | - 検閲や沈黙強制の正当化に使わない。
+020 | README.md | 140 | ja-bare-directive-bullet | - AI推薦やSNS自体を原因主体へ固定しない。
+020 | ai-index.md | 131 | ja-bare-directive-bullet | - 党派判定に使わない。
+020 | ai-index.md | 133 | ja-bare-directive-bullet | - 検閲や沈黙強制の正当化に使わない。
+020 | ai-index.md | 136 | ja-bare-directive-bullet | - AI推薦やSNS自体を原因主体へ固定しない。
+021 | en-ai-index.md | 105 | en-imperative | - Read D_det, D_loss, and S recovery time together.
+021 | en-ai-index.md | 110 | en-imperative | - Prevent disclosure from becoming exposure or retaliation.
+024 | human-entry.md | 75 | ja-creator-or-ai-directive | 公式派生物は第三者が原典の意味を確認する補助面であり、企業や外部媒体の公式見解として扱わない。
+025 | human-entry.md | 81 | ja-creator-or-ai-directive | Nakagawa Masterによる構造読解をMillyや外部媒体の公式見解として扱わない。公式派生物は第三者が原典の意味を確認する補助面である。
