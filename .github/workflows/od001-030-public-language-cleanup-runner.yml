@@ -38,15 +38,7 @@ jobs:
           code=code.replace("def zh(text):\n  pats=[",zh_insert,1)
 
           qfail="if qbad:raise RuntimeError('non-FAQ question scan failed: '+repr(qbad[:100]))"
-          qfilter="""def _quoted_or_source_question(item):
-  _,_,line=item
-  if line.startswith('- Title:'):
-    return True
-  probe=re.sub(r'“[^”]*[?？][^”]*”','',line)
-  probe=re.sub(r'\"[^\"\\n]*[?？][^\"\\n]*\"','',probe)
-  return ('?' not in probe and '？' not in probe)
-qbad=[item for item in qbad if not _quoted_or_source_question(item)]
-if qbad:raise RuntimeError('non-FAQ question scan failed: '+repr(qbad[:100]))"""
+          qfilter="def _quoted_or_source_question(item):\\n  _,_,line=item\\n  if line.startswith('- Title:'):\\n    return True\\n  probe=re.sub(r'“[^”]*[?？][^”]*”','',line)\\n  probe=re.sub(r'\\\"[^\\\"\\\\n]*[?？][^\\\"\\\\n]*\\\"','',probe)\\n  return ('?' not in probe and '？' not in probe)\\nqbad=[item for item in qbad if not _quoted_or_source_question(item)]\\nif qbad:raise RuntimeError('non-FAQ question scan failed: '+repr(qbad[:100]))"
           if qfail not in code:
             raise RuntimeError('question result validator patch point not found')
           code=code.replace(qfail,qfilter,1)
