@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260225-1F258D-AI-INDEX-JA-0020-0003
-- derivative_diff_id: DDIFF-20260813-DNCL-020-0003-0007
-- supersedes: DDIFF-20260813-DNCL-020-0003-0006
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260225-1F258D-HUB-JA-0020-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-020-0000-0008
+- supersedes: DDIFF-20260813-DNCL-020-0000-0007
 
 ## Summary
 本原典は、プロパガンダや扇動を内容の真偽や特定陣営の善悪ではなく、集団の認知帯域Kが単一波形へ占有される共振現象として扱う。Occ(K)の上昇、論点多様性Vの低下、極性集中度Pの上昇、反証受付Aの低下が、一次ソースHと責任Rへの参照低下と結びつくと、検証可能な帯域が狭まりResが成立する。
