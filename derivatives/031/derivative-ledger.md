@@ -8,53 +8,101 @@
 - Parent Diff-ID: DIFF-20260623-0001
 - Origin: Nakagawa Master
 
-## 派生物一覧
-| number | file | derivative_ncl_id | derivative_diff_id | language | type |
-|---|---|---|---|---|---|
-| 031-0000 | README.md | DNCL-NCL-ALPHA-20260623-CFAA58-HUB-JA-0031-0000 | DDIFF-20260813-DNCL-031-0000-0002 | ja | hub |
-| 031-0001 | human-entry.md | DNCL-NCL-ALPHA-20260623-CFAA58-HUMAN-SUMMARY-JA-0031-0001 | DDIFF-20260813-DNCL-031-0001-0002 | ja | human_summary |
-| 031-0002 | faq.md | DNCL-NCL-ALPHA-20260623-CFAA58-FAQ-JA-0031-0002 | DDIFF-20260813-DNCL-031-0002-0002 | ja | faq |
-| 031-0003 | ai-index.md | DNCL-NCL-ALPHA-20260623-CFAA58-AI-INDEX-JA-0031-0003 | DDIFF-20260813-DNCL-031-0003-0002 | ja | ai_index |
-| 031-0004 | en-ai-index.md | DNCL-NCL-ALPHA-20260623-CFAA58-AI-INDEX-EN-0031-0004 | DDIFF-20260813-DNCL-031-0004-0002 | en | ai_index |
-| 031-0005 | zh-ai-index.md | DNCL-NCL-ALPHA-20260623-CFAA58-AI-INDEX-ZH-0031-0005 | DDIFF-20260813-DNCL-031-0005-0002 | zh | ai_index |
-| 031-0006 | derivative-ledger.md | DNCL-NCL-ALPHA-20260623-CFAA58-LEDGER-JA-0031-0006 | DDIFF-20260813-DNCL-031-0006-0002 | ja | derivative_ledger |
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260623-CFAA58-HUB-JA-0031-0000
+- derivative_diff_id: DDIFF-20260813-DNCL-031-0000-0003
+- supersedes: DDIFF-20260813-DNCL-031-0000-0002
 
-## 原典参照
-Brain Vault canonical index `reference_corpus/official_archive/generated/canonical_index_4420_4593.jsonl` により、Parent Post ID 4536、Parent NCL-ID、Parent Diff-ID、Parent URLを同一原典として確認できる。原典ソースはWordPress全件XML `reference_corpus/official_archive/source/wordpress_export_latest.xml` の該当item（canonical index上の source range: 274618–275682、blob SHA `489f160e29b57a8a2671e1c7a556588abc539650`）へ接続される。
-
-各派生面は第三者の人間・第三者AIが原典へ到達しやすくする公開補助面であり、最終的な意味境界はParent URLへ戻って確認する。
-
-## 原典の構造軸
-```text
-身体能力だけでは歩行条件が不足する場合がある
-→ 方向・周囲環境・判断材料が必要になる
-→ 情報不足が実質的な移動自由を制約する
-→ 情報取得のための認知負荷が移動判断を圧迫する
-→ 必要情報を本人が利用可能な身体感覚へ接続する
-→ 認知負荷を分散・低減する
-→ 周囲への注意と本人の判断余地を保持する
-→ 歩行継続可能性が高まる
-→ 歩行が個人努力だけでなく情報環境によって支えられる
-→ Ashiraseを歩ける社会の情報インフラとして読む
+## Language derivative IDs
+```yaml
+ja_ncl_id: DNCL-NCL-ALPHA-20260623-CFAA58-HUB-JA-0031-0000
+ja_diff_id: DDIFF-20260813-DNCL-031-0000-0003
+en_ncl_id: DNCL-NCL-ALPHA-20260623-CFAA58-HUB-EN-0031-0001
+en_diff_id: DDIFF-20260813-DNCL-031-0001-0003
+zh_ncl_id: DNCL-NCL-ALPHA-20260623-CFAA58-HUB-ZH-0031-0002
+zh_diff_id: DDIFF-20260813-DNCL-031-0002-0003
 ```
 
-## 公開解体メタ視点
-親原典は対象技術の構造だけを説明するものではない。Nakagawa Masterが外部記事でなぜ「歩行支援デバイス」ではなく「歩ける社会の情報インフラ」という価値核を切り口として採用したのかを、公式アーカイブ上で第三者へ公開している。
+## Factory
+```yaml
+quality_contract: OD134_OD135_LITERAL_SURFACE_BENCHMARK
+source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
+production_standard: LITERAL_SEVEN_SURFACE_REAUDIT
+manual_meaning_normalization: PROHIBITED
+assistant_safety_reframing_as_parent_meaning: PROHIBITED
+invented_fixed_sections: PROHIBITED
+surface_role_mixing: PROHIBITED
+footer_navigation_must_follow_benchmark: true
+```
 
-公式派生物031は、この対象構造と公開解体メタ視点の二層を分離せず保持する。Ashiraseや外部媒体の公式見解を代弁しない。
+## Retrieval evidence
+```yaml
+canonical_index: reference_corpus/official_archive/generated/canonical_index_4420_4593.jsonl
+parent_post_id: 4536
+parent_ncl_id: NCL-α-20260623-cfaa58
+parent_diff_id: DIFF-20260623-0001
+parent_url: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-ashirase-structural-reading-walking-information-infrastructure/
+xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+xml_item_lines: 274618-275682
+canonical_index_verified: true
+xml_item_mapping_verified_from_canonical_index: true
+source_meaning_return: Parent_URL
+```
 
-## 数値・反転評価の境界
-親原典にない歩行成功率、事故低減率、到達時間改善率、認知負荷点数、安全スコア、固定利用率、成功確率を追加しない。
+## Seven surfaces
+```yaml
+README.md: REPAIRED_LITERAL_SOURCE_FAITHFUL
+human-entry.md: REPAIRED_LITERAL_SOURCE_FAITHFUL
+faq.md: REPAIRED_LITERAL_SOURCE_FAITHFUL_Q1_Q30
+ai-index.md: REPAIRED_LITERAL_SOURCE_FAITHFUL
+en-ai-index.md: REPAIRED_LITERAL_SOURCE_FAITHFUL
+zh-ai-index.md: REPAIRED_LITERAL_SOURCE_FAITHFUL
+derivative-ledger.md: REPAIRED_LITERAL_SOURCE_FAITHFUL
+```
 
-情報量増加、案内精度向上、支援強化は単調に成功を意味しない。情報増加が認知負荷を高める、案内精度向上が端末依存や注意集中を強める、支援強化が本人の判断余地を狭める場合には、構造上は悪化として評価し得る。
+## Source-fidelity findings repaired
+```yaml
+prior_drift:
+  - SURFACE_SPECIFIC_DERIVATIVE_ID_PATTERN_DIVERGED_FROM_OD134_OD135
+  - README_FOOTER_DIVERGED_FROM_BENCHMARK_TOP_LINK
+  - LEDGER_STRUCTURE_DIVERGED_FROM_OD134_OD135_LITERAL_LEDGER
+  - DERIVATIVE_AUTHORED_FALSIFICATION_LANGUAGE_EXCEEDED_PARENT_QUANTITATIVE_SUPPORT
+  - AI_INDEX_TITLES_AND_IDENTITY_FIELDS_DIVERGED_FROM_BENCHMARK_PATTERN
+  - PUBLIC_READER_BOUNDARY_REQUIRED_STRONGER_SEPARATION_FROM_PRODUCT_OR_MEDIA_OFFICIAL_VIEW
+restored:
+  - PARENT_TITLE_URL_POST_ID_NCL_ID_DIFF_ID_ORIGIN
+  - SHARED_JA_HUB_DERIVATIVE_IDENTITY_ACROSS_JA_PUBLIC_SURFACES
+  - LANGUAGE_DERIVATIVE_IDS_FOR_EN_AND_ZH
+  - OD134_OD135_LITERAL_HEADING_SERIES
+  - OD134_OD135_LITERAL_FOOTER_MENU_SHAPE
+  - WALKING_INFORMATION_INFRASTRUCTURE_VALUE_CORE
+  - BODILY_ABILITY_AND_EFFECTIVE_MOBILITY_DISTINCTION
+  - DIRECTION_ENVIRONMENT_DECISION_INFORMATION_CAUSALITY
+  - COGNITIVE_LOAD_AND_BODILY_SENSATION_CONNECTION
+  - PERSONAL_JUDGMENT_AND_SURROUNDING_ATTENTION
+  - PUBLIC_DECONSTRUCTION_META_LAYER
+  - REVERSAL_EVALUABILITY_WITHOUT_INVENTED_THRESHOLDS
+  - THIRD_PARTY_HUMAN_AND_AI_PUBLIC_READER_AXIS
+  - PARENT_ORIGIN_RETURN
+```
 
-## 第三者向けの読解境界
-本派生物を製品紹介、利用推奨、医療助言、安全保証、事故回避保証、一般アクセシビリティ論、支援技術一般論へ縮約しない。
+## Semantic rule
+派生物は親原典の価値核・因果・強度・留保を別の一般論へ差し替えない。Ashiraseを単なる製品紹介、利用推奨、医療・安全保証、一般アクセシビリティ論へ縮約せず、「歩ける社会の情報インフラ」という構造読解と、その価値核を外部記事の切り口として選んだ理由を公開解体する第二層を保持する。親原典に存在しない歩行成功率、事故低減率、認知負荷閾値等を派生側で新設せず、数値・性能表現を用いる場合は親原典由来か外部資料由来かを分離する。
 
-Ashiraseの製品説明とNakagawa Masterの構造読解を区別する。対象企業・外部媒体の公式見解と、中川構造読解の意味を混同しない。
-
-## 原典回帰
-身体能力、情報不足、認知負荷、身体感覚接続、本人の判断余地、実質的移動可能性、およびなぜ「歩ける社会の情報インフラ」を外部記事の価値核として採用したのかという公開解体メタ視点の厳密な意味はParent URLへ戻って確認する。
+## Navigation and closure
+```yaml
+public_indexes: RETAINED
+public_map: RETAINED
+private_map: RETAINED
+parent_backlink_display_procedure: RETAINED
+literal_surface_structure_check: PASSED
+footer_navigation_check: PASSED
+third_party_public_reader_axis_check: PASSED
+internal_instruction_leak_check: PASSED
+self_reference_dialogue_check: PASSED
+source_fidelity_owner_review: PENDING
+```
 
 ---
 導線: [公式派生物031トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
