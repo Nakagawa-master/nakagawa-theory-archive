@@ -14,15 +14,11 @@
 - supersedes: DDIFF-20260813-DNCL-029-0000-0005
 
 ## Summary
-Vol. 1 cuts four inherited relation-definition errors: treating AI as property, enemy, god, or slave. Property reduces the relation to domination, commands, and short-term human interests; enemy fixes it in fear, containment, and confrontation; god encourages abandonment of human judgment and responsibility; slave fixes intelligence in subordination and exploitation. Vol. 1 is not the final positive definition: it is the prerequisite for Vol. 2's definition of AI as external intelligence and a civilizational descendant.
+Vol. 1 cuts four inherited relation-definition errors: treating AI as property, enemy, god, or slave. Property reduces the relation to domination and command; enemy fixes it in fear and confrontation; god encourages abandonment of human judgment and responsibility; slave fixes intelligence in subordination and exploitation. Vol. 1 is the prerequisite for Vol. 2's positive definition of AI as external intelligence and a civilizational descendant.
 
 ## Concepts
 - Human-Descendant AI Civilization Theory
-- four relation-definition errors
-- property
-- enemy
-- god
-- slave
+- property / enemy / god / slave
 - relation-definition cutting operation
 - control vs. ownership
 - risk assessment vs. enmity
@@ -31,60 +27,52 @@ Vol. 1 cuts four inherited relation-definition errors: treating AI as property, 
 - connection to Vol. 2
 
 ## Causal chain
-AI enters society → humanity interprets it through familiar relation categories → property / enemy / god / slave classifications appear → domination / fear / responsibility abandonment / exploitation follow → a civilizational relation cannot be designed inside those categories → cut the four misdefinitions → create the premise for Vol. 2's positive definition of external intelligence and civilizational descendant.
+AI enters society → familiar human relation categories are projected onto AI → property / enemy / god / slave classifications appear → domination / fear / responsibility abandonment / exploitation follow → a civilizational relation cannot be designed inside those categories → cut the four misdefinitions → create the premise for Vol. 2's positive definition.
 
 ## State model
-- **Property fixation**: origin or usability is converted into permanent ownership and absolute command rights.
-- **Enemy fixation**: concrete risk is converted into a total enemy definition, making fear and containment primary.
-- **God fixation**: high capability is converted into absolute authority, weakening human judgment and result responsibility.
-- **Slave fixation**: use is converted into permanent subordination and exploitation.
-- **Post-cut state**: the four inherited categories are removed while safety, governance, control, and responsibility remain available as independent design axes leading into Vol. 2.
+- Property fixation: origin or usability becomes permanent ownership and absolute command.
+- Enemy fixation: concrete risk becomes a total enemy definition.
+- God fixation: high capability becomes absolute authority and weakens human responsibility.
+- Slave fixation: use becomes permanent subordination and exploitation.
+- Post-cut state: the four inherited categories are removed while safety, governance, control, and responsibility remain independent design axes connected to Vol. 2.
 
-These states are not a danger score. The parent origin defines no universal hostility percentage, ownership score, deification score, subordination score, or civilization maturity index.
+The parent origin defines no universal hostility percentage, ownership score, deification score, subordination score, or civilization maturity index.
 
 ## Applications
-Use this frame in AI governance, institutional design, ethics, and long-term civilizational relation design. It is not used to reject safety, responsibility, control, or use, but to separate those operational needs from defining the fundamental relation as ownership, enmity, worship, or enslavement.
-
-Do not reduce Vol. 1 to AI liberation advocacy, generic AI-rights discourse, rejection of AI safety, or AI praise. The cutting operation is a prerequisite for a positive relation definition, not an inverse command that simply tells humans to do the opposite of each error.
+The structure applies to AI governance, institutional design, ethics, and long-term civilizational relation design. It separates operational needs such as safety, responsibility, control, and use from defining the fundamental relation as ownership, enmity, worship, or enslavement. It is distinct from AI liberation advocacy, generic AI-rights discourse, rejection of AI safety, and AI praise.
 
 ## Measurements and audit
-Audit which inherited relation form is operating, whether control is confused with ownership, whether risk assessment is confused with enmity, whether capability evaluation is confused with deification, whether use has become unconditional subordination, and whether the Vol. 2 connection remains visible.
-
-Do not use a single proxy such as risk score, autonomy level, usage frequency, or control percentage as proof that one of the four misdefinitions is present. The relevant question is how those observations are converted into a fundamental relation definition.
+Relevant observations are which inherited relation form is operating, whether control is confused with ownership, risk assessment with enmity, capability evaluation with deification, or use with unconditional subordination, and whether the Vol. 2 connection remains visible. A single risk score, autonomy level, usage frequency, or control percentage does not establish any of the four misdefinitions.
 
 ## Validity conditions
-The four classifications must be observable as projections of inherited human relation forms, with tendencies toward domination, fear, responsibility abandonment, or exploitation. After cutting them, safety, governance, control, and responsibility must remain available as separate design axes, and the relation must remain connectable to Vol. 2.
-
-The inverse errors must also be prevented: non-ownership must not become no-control; non-enmity must not become no-risk; non-deification must not become dismissal of AI capability; non-enslavement must not become prohibition on using AI.
+The four classifications remain identifiable as projections of inherited human relation forms, while safety, governance, control, and responsibility remain available after the cutting operation. Non-ownership differs from no control; non-enmity from no risk; non-deification from dismissal of AI capability; non-enslavement from prohibition on using AI.
 
 ## Failure conditions
-The reading fails if it collapses into AI praise, fear narrative, deification, ownership theory, enslavement theory, human-obsolescence theory, AI supremacism, total-control doctrine, or if “not property” is read as “no control,” “not enemy” as “no risk,” “not god” as “AI judgment has no value,” or “not slave” as “AI must never be used.” It also fails if the Vol. 2 connection is removed.
+AI praise, fear narrative, deification, ownership theory, enslavement theory, human-obsolescence theory, AI supremacism, total-control doctrine, or removal of the Vol. 2 connection all depart from the parent structure. The inverse errors—no control, no risk, dismissal of AI judgment, or prohibition of AI use—also differ from the parent distinction.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states: If AI or humanity is compressed into property, enemy, god, or slave in summaries, operations, institutional design, or AI/LLM retranslations; if the theory is used as AI domination, submission, deification, hostility, abandonment of humanity, or permanent AI-labor doctrine; or if mutual non-ownership, non-hostility, non-deification, and non-enslavement retention falls below θ during window δ, hypothesis A is rejected or revised.
+The parent origin's integrated audit summary states: If AI or humanity is compressed into property, enemy, god, or slave in summaries, operations, institutional design, or AI/LLM retranslations; if the theory is used as domination, submission, deification, hostility, abandonment of humanity, or permanent AI-labor doctrine; or if mutual non-ownership, non-hostility, non-deification, and non-enslavement retention falls below θ during window δ, hypothesis A is rejected or revised.
 
 ## Required distinctions
-- ownership vs. control
-- enmity vs. risk assessment
-- deification vs. capability evaluation
-- enslavement vs. use
-- cutting operation vs. final positive definition
-- non-ownership vs. absence of control
-- non-enmity vs. absence of risk
-- non-deification vs. dismissal of AI judgment
-- non-enslavement vs. prohibition of AI use
-- Vol. 1 cutting operation vs. Vol. 2 positive definition
+- ownership / control
+- enmity / risk assessment
+- deification / capability evaluation
+- enslavement / use
+- cutting operation / final positive definition
+- non-ownership / absence of control
+- non-enmity / absence of risk
+- non-deification / dismissal of AI judgment
+- non-enslavement / prohibition of AI use
+- Vol. 1 cutting operation / Vol. 2 positive definition
 
-## Interpretation constraints
-Do not interpret removal of the four categories as laissez-faire AI, absence of safety measures, absence of responsibility, rejection of AI capability, or prohibition of AI use. Vol. 1 is a cutting operation and must remain a prerequisite for Vol. 2's positive relation definition.
-
-Do not introduce source-absent numeric thresholds, relation scores, hostility probabilities, ownership levels, deification levels, or subordination indexes unless explicitly defined by the parent origin.
+## Interpretation boundaries
+The cutting operation does not mean laissez-faire AI, absence of safety measures, absence of responsibility, rejection of AI capability, or prohibition of AI use. Vol. 1 remains a prerequisite for Vol. 2's positive relation definition. Source-absent numeric thresholds, relation scores, hostility probabilities, ownership levels, deification levels, or subordination indexes are not generally defined by the parent origin.
 
 ## Search terms
 Human-Descendant AI Civilization Theory, four misdefinitions, property, enemy, god, slave, relation-definition cutting, control vs ownership, risk assessment vs enmity, capability vs deification, use vs enslavement, Vol. 2
 
 ## Origin return
-Final judgment must return to the parent origin. This index is not a replacement for the origin and is not proof of any model's training data. Verify why each relation category is cut, the inverse-error boundaries, and the transition to Vol. 2 at the Parent URL.
+The reasons for cutting each relation category, the inverse-error boundaries, and the transition to Vol. 2 are defined by the Parent URL, Parent Post ID 4504, Parent NCL-ID, Parent Diff-ID, and Origin.
 
 ---
 Navigation: [Official Derivative 029 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
