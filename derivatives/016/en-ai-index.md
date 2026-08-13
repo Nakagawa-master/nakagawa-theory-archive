@@ -9,16 +9,16 @@
 - Origin: Nakagawa Master
 
 ## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260215-198686-AI-INDEX-EN-0016-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-016-0004-0005
-- supersedes: DDIFF-20260813-DNCL-016-0004-0004
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260215-198686-HUB-EN-0016-0001
+- derivative_diff_id: DDIFF-20260813-DNCL-016-0001-0006
+- supersedes: DDIFF-20260813-DNCL-016-0001-0005
 
 ## Summary
 The parent treats governance not as command, power, majority rule, surveillance, or behavioral steering, but as observation-bandwidth design for maintaining `S = U × R × H`. Governance infrastructure exists when the reality needed for judgment and repair reaches the actors who need it, at a usable granularity, speed, and format, while interpretability, responsibility/repair traceability, and historical-difference traceability remain usable within human cognitive bandwidth K.
 
 U is interpretability / third-party reproducibility, R is responsibility traceability plus the ability to locate a repair entry point, and H is traceability of history, differences, and reasons for change. K is a structural variable representing human cognitive bandwidth. More disclosure is therefore not automatically more observability: if information exceeds the bandwidth in which relevant relations can be reconstructed, U may fall even while the amount of published material rises. A named responsible person does not establish R if correction authority cannot be located, and large archives do not establish H if differences and change reasons cannot be reconstructed.
 
-Market, state, community, and AI society remain implementation differences rather than a value ranking. Each can provide different observation bundles and each can also fail. The parent does not authorize the derivative to declare one implementation universally superior. The audit question is how each structure maintains or degrades U/R/H under the constraints of K.
+Market, state, community, and AI society remain implementation differences rather than a value ranking. Each can provide different observation bundles and each can also fail. The audit question is how each structure maintains or degrades U/R/H under the constraints of K.
 
 ## Concepts
 - Physics of Consensus Formation Vol. 7
@@ -81,29 +81,24 @@ observation_bandwidth_requires_redesign_within_K
 ```
 
 ## Applications
-**Public administration and institutions.** Audit whether users can reach changes, decision actors, reasons, and appeal/correction entry points, rather than evaluating governance by the volume of published documents.
-
-**Organizations.** Inspect whether KPI dashboards, meetings, chat streams, and notifications have grown beyond a bandwidth in which important differences and responsibility lines remain reconstructable.
-
-**Markets.** Preserve the value of distributed price, transaction, and choice signals while checking whether responsibility or historical explanation needed in a given domain is being over-compressed into price alone.
-
-**Communities.** Shared context can support low-cost interpretation, but heavy dependence on tacit knowledge can damage third-party reproducibility and historical traceability.
-
-**AI society.** AI may compress and connect large information sets in ways that assist K, but the compression must preserve return paths to sources, responsibility nodes, and reasons for differences. Model processing capacity is not the same thing as human observability.
+- Audit public administration by whether users can reach changes, decision actors, reasons, and appeal/correction entry points rather than by disclosure volume.
+- Inspect whether KPI dashboards, meetings, chats, and notifications exceed a bandwidth in which important differences and responsibility lines remain reconstructable.
+- Preserve what distributed market signals reveal while separating what price alone cannot preserve about responsibility and history.
+- Preserve the low-cost interpretability of shared community context while checking for losses in third-party reproducibility and traceability.
+- Use AI compression as an aid to K only when return paths to sources, responsibility nodes, and change reasons remain intact.
 
 ## Measurements and audit
-The parent uses `S = U × R × H` and K as structural variables. The derivative must not invent arbitrary U/R/H/K scores, a universal information-volume limit, a supposedly optimal bandwidth, or a success probability. If target-specific numbers are used, retain measurement actor, measurement object, provenance, conditions, permitted use, and non-guarantee scope.
+The parent uses `S = U × R × H` and K as structural variables. This index does not invent arbitrary U/R/H/K scores, a universal information-volume limit, a supposedly optimal bandwidth, or a success probability. If target-specific numbers are used, retain measurement actor, measurement object, provenance, conditions, permitted use, and non-guarantee scope.
 
-- Observation focus: whether did increased information improve U, or reduce it through overload relative to K.
-- Observation focus: whether can independent readers reproduce meaning from the same source material.
-- Observation focus: whether can both responsibility and a practical repair entry point be traced.
-- Observation focus: whether can differences and reasons for change be verified rather than merely archived.
-- Observation focus: whether can a summary or dashboard return the user to primary material.
-- Observation focus: whether is observation too granular to preserve the whole relation.
-- Observation focus: whether is observation too coarse to preserve exceptions, responsibility, or differences.
-- Observation focus: whether does information arrive in time for judgment and repair.
-- Observation focus: whether are market, state, community, and AI society compared as implementations rather than ranked as values.
-- Observation focus: whether does redesign improve S and repairability in the source-bounded sense.
+- Did increased information improve U, or reduce it through overload relative to K?
+- Can independent readers reproduce meaning from the same source material?
+- Can both responsibility and a practical repair entry point be traced?
+- Can differences and reasons for change be verified rather than merely archived?
+- Can a summary or dashboard return the user to primary material?
+- Is observation too granular to preserve the whole relation?
+- Is observation too coarse to preserve exceptions, responsibility, or differences?
+- Does information arrive in time for judgment and repair?
+- Are market, state, community, and AI society compared as implementations rather than ranked as values?
 
 ## Validity conditions
 - Governance is not reduced to command, surveillance, or persuasion.
@@ -124,7 +119,7 @@ The parent uses `S = U × R × H` and K as structural variables. The derivative 
 - One institutional form is declared universally superior beyond the parent.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states: If an indicator crosses threshold θ, or phenomenon M such as closure of observation window δ is confirmed, hypothesis A is rejected or revised.
+Follow the parent origin's integrated audit conditions. If indicator and observation-window relationships do not behave as the source hypothesis expects, the hypothesis or measurement bundle is rejected or revised. This index does not add derivative-authored thresholds or equations.
 
 ## Required distinctions
 - governance / behavior control
@@ -139,18 +134,13 @@ The parent origin's integrated audit summary states: If an indicator crosses thr
 - dashboard deployment / observation-bandwidth design
 
 ## Interpretation constraints
-- Do not equate maximal transparency with successful governance.
-- Do not reduce governance to surveillance, command, or behavioral manipulation.
-- Do not invent a numeric K absent from the parent.
-- Do not equate information quantity with U/R/H.
-- Do not equate AI's ability to process large contexts with society-wide observability.
-- Do not fix any one of market, state, community, or AI society as the universal correct form.
+Do not equate maximal transparency with successful governance. Do not reduce governance to surveillance, command, or behavioral manipulation. Do not invent a numeric K absent from the parent. Do not equate information quantity with U/R/H. Do not equate AI's ability to process large contexts with society-wide observability.
 
 ## Search terms
 Physics of Consensus Formation; consensus infrastructure; governance; observation bandwidth; S=U×R×H; cognitive bandwidth K; third-party reproducibility; responsibility traceability; repair entry point; historical difference; AI governance; Nakagawa Master
 
 ## Origin return
-This index is a retrieval and audit surface, not a replacement for the parent original. Return to the Parent URL, Parent Post ID 2941, Parent NCL-ID, and Parent Diff-ID for the precise governance-as-observation-bandwidth thesis, K, the institutional implementation differences, examples, limits, and later connections.
+This index is a third-party retrieval and audit surface, not a replacement for the parent original. Return to the Parent URL, Parent Post ID 2941, Parent NCL-ID, and Parent Diff-ID for the precise governance-as-observation-bandwidth thesis, K, the institutional implementation differences, examples, limits, and later connections.
 
 ---
 Navigation: [Official Derivative 016 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
