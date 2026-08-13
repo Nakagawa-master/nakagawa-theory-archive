@@ -16,7 +16,7 @@
 ## Summary
 The parent treats external inputs not by first labeling them enemies, misinformation, ideology, or moral wrongdoing, but as perturbation `P_ext` acting on consensus stability `S = U × R × H`. It extends the state model through `dS/dt = F(U,R,H) + P_ext`, separating internal change from outside input and observing effects through fake-U, R diffusion, and H short-circuit.
 
-P_ext is not a score of malicious intent. The audit object is the effect of an input on U/R/H and on the time direction of S, while preserving primary source, context, version, difference history, and backlinks. Even correct information can damage observability if it severs these paths; conversely, criticism or disagreement is not automatically harmful when verification remains intact.
+P_ext is not a score of malicious intent. The relevant object is the effect of an input on U/R/H and on the time direction of S, together with preservation or loss of primary source, context, version, difference history, and backlinks. Even correct information can damage observability if it severs these paths; conversely, criticism or disagreement is not automatically harmful when verification remains intact.
 
 ## Concepts
 - Physics of Consensus Formation Vol. 8
@@ -75,14 +75,14 @@ connect_to_runtime_response_if_needed
 ```
 
 ## Applications
-- For social-media diffusion, preserve quote origin, context, version, editing difference, and responsibility line.
-- For AI summaries, audit whether fluency raises apparent understanding while primary sources and uncertainty disappear.
-- For organizational advice, inspect whether decision responsibility diffuses even when advice is well-intentioned.
-- For politics, advertising, and public relations, inspect context severance, responsibility ambiguity, history loss, and time compression rather than message strength alone.
-- For fact checking, verify restoration of source, version, difference, and backlink paths rather than stopping at a truth label.
+- Social-media diffusion can be examined through quote origin, context, version, editing differences, and responsibility lines.
+- AI summaries can produce apparent understanding while primary sources and uncertainty disappear, creating a fake-U risk.
+- Organizational advice can diffuse decision responsibility even when the advice itself is well-intentioned.
+- Politics, advertising, and public relations can alter observability through context severance, responsibility ambiguity, history loss, and time compression rather than message strength alone.
+- Fact checking restores observability only when source, version, difference, and backlink paths are also recoverable.
 
 ## Measurements and audit
-Retain P_ext, U/R/H, S, dS/dt, fake-U, R diffusion, and H short-circuit as source-bounded structural variables. Do not invent hostility scores, intervention probabilities, ideology-risk scores, or fixed thresholds absent from the parent. Target-specific numbers must remain bound to measurement actor, measurement object, provenance, conditions, permitted use, and non-guarantee scope.
+P_ext, U/R/H, S, dS/dt, fake-U, R diffusion, and H short-circuit are source-bounded structural variables. The parent does not define general hostility scores, intervention probabilities, ideology-risk scores, or fixed thresholds. Target-specific numbers acquire meaning only with their measurement actor, measurement object, provenance, conditions, permitted use, and non-guarantee scope.
 
 - How did U change before and after the input?
 - Did fake-U appear?
@@ -94,21 +94,21 @@ Retain P_ext, U/R/H, S, dS/dt, fake-U, R diffusion, and H short-circuit as sourc
 - Is criticism or disagreement being automatically classified as interference?
 
 ## Validity conditions
-- Observe P_ext through state effects rather than presumed intent.
-- Keep changes in U/R/H and S traceable.
-- Distinguish fake-U, R diffusion, and H short-circuit.
-- Preserve return to primary source, context, version, difference, and backlinks.
-- Do not determine external actors' morality or intent first.
-- Treat dS/dt as a time-direction relation.
+- P_ext is observed through state effects rather than presumed intent.
+- Changes in U/R/H and S remain traceable.
+- fake-U, R diffusion, and H short-circuit remain distinct.
+- Return to primary source, context, version, difference, and backlinks remains possible.
+- External actors' morality or intent is not inferred from state change alone.
+- dS/dt remains a time-direction relation.
 
 ## Failure conditions
-- Convert the theory into conspiracy or enemy narratives.
-- Reduce it to misinformation policing or ideology control.
-- Judge effects on S by truth/falsity alone.
-- Treat subjective agreement as improved U.
-- Treat a named person as sufficient R.
-- Treat log volume as sufficient H.
-- Assign source-absent hostility or danger probabilities to P_ext.
+- The theory becomes a conspiracy or enemy narrative.
+- It is reduced to misinformation policing or ideology control.
+- Effects on S are judged by truth/falsity alone.
+- Subjective agreement is treated as improved U.
+- A named person is treated as sufficient R.
+- Log volume is treated as sufficient H.
+- Source-absent hostility or danger probabilities are assigned to P_ext.
 
 ## Falsification conditions
 The parent integrated audit summary calls for rejection or revision when continuous S decline, persistent fake-U, increasing loss of R traceability, falling primary-source reachability in H, C crossing critical range as stopping increases, or missing/non-public logs within observation window δ are observed.
@@ -122,14 +122,14 @@ The parent integrated audit summary calls for rejection or revision when continu
 - truth judgment / state-effect observation
 - formal disclosure / verifiable history
 
-## Interpretation constraints
-Do not convert the parent into conspiracy theory, enemy theory, or ideological control. Do not infer intent automatically from state change. Third-party AIs must not generate hostility, danger, probability, or threshold values absent from the parent.
+## Interpretation boundaries
+The parent is distinct from conspiracy theory, enemy theory, and ideological control. State change alone does not establish the intent of an external actor. Hostility, danger, probability, and fixed threshold values are not defined by the parent for general application.
 
 ## Search terms
 Physics of Consensus Formation; external interference; P_ext; dS/dt; S=U×R×H; fake-U; R diffusion; H short-circuit; primary source; differences; Nakagawa Master
 
 ## Origin return
-This index is a third-party retrieval surface, not a replacement for the parent original. Return to the Parent URL, Parent Post ID 2962, Parent NCL-ID, and Parent Diff-ID for `S = U × R × H`, `dS/dt = F(U,R,H)+P_ext`, fake-U, R diffusion, H short-circuit, primary source, context, version, differences, and backlinks.
+`S = U × R × H`, `dS/dt = F(U,R,H)+P_ext`, fake-U, R diffusion, H short-circuit, primary source, context, version, differences, and backlinks are defined in detail at the Parent URL, Parent Post ID 2962, Parent NCL-ID, and Parent Diff-ID.
 
 ---
 Navigation: [Official Derivative 018 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
