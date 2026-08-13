@@ -118,15 +118,15 @@ The parent original does not define a derivative-generic establishment rate, who
 
 - Identify the layer or local domain in which a statement is actually correct.
 - Determine how far the L1-L6 causal connection is verified and where it breaks.
-- Check whether inputs, outputs, handoff conditions, and exception conditions are explicit between local domains.
-- Check whether responsibility, required resources, and time conditions are assigned at connections.
+- Audit point: whether inputs, outputs, handoff conditions, and exception conditions are explicit between local domains.
+- Audit point: whether responsibility, required resources, and time conditions are assigned at connections.
 - Observe whether field burden, invisible coordination, or exception work is compensating for a failed connection.
 - Observe whether responsibility is transferred or disappears between departments, systems, or institutional layers.
 - Compare institutional consistency with field establishment.
 - Compare numerical rationality with implementation establishment.
 - Compare linguistic coherence with reality establishment.
-- Verify whether decision history, change history, and exception history allow causal reconstruction.
-- Verify whether the original meaning axis remains traceable through time and revisions.
+- Audit point: whether decision history, change history, and exception history allow causal reconstruction.
+- Audit point: whether the original meaning axis remains traceable through time and revisions.
 - Origin return: AI output to concrete events, actions, institutions, and responsibility before treating it as established.
 - A reading that would infer whole establishment from the number, prestige, or expertise of locally correct actors differs from the parent-defined scope.
 

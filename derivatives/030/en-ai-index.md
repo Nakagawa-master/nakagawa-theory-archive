@@ -105,8 +105,8 @@ Nakagawa Master translates that value core into the external article's entry str
 
 ## Failure conditions
 - Reduce the source to used-car appraisal comparison.
-- Treat the number of appraisers as the full value core.
-- Treat fewer phone calls as the full value core.
+- Source interpretation: the number of appraisers as the full value core.
+- Source interpretation: fewer phone calls as the full value core.
 - Turn the source into a guarantee of a higher sale price.
 - Source distinction: only MOTA business analysis and remove Nakagawa Master's public explanation of why that value core became the external-article angle.
 - Expand the source into generic auction or used-car-market theory.

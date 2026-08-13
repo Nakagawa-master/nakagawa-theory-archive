@@ -88,12 +88,12 @@ Audit the visibility of next questions, establishment conditions, exception cond
 
 ## Validity conditions
 - A reading that would treat clarity itself as harmful differs from the parent-defined scope.
-- Separate understanding from performance of understanding.
+- Required distinction: understanding from performance of understanding.
 - Inspect whether inquiry remains open.
 - Source element: establishment conditions, exceptions, falsification, applicability, and uncertainty.
 - Source element: verifiability after vocabulary becomes shared.
 - Inspect burden-of-explanation reversal.
-- Check whether judgment, implementation, and correctability actually improve.
+- Audit point: whether judgment, implementation, and correctability actually improve.
 
 ## Failure conditions
 - Reduce the origin to criticism of lying, pretended expertise, communication style, or individual comprehension deficits.

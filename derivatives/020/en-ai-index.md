@@ -95,10 +95,10 @@ The parent does not define partisan scores, propaganda percentages, resonance-ri
 
 ## Validity conditions
 - A reading that would classify propaganda by content or faction alone differs from the parent-defined scope.
-- Treat K, Occ(K), Res, and V/P/A as state observations.
+- Source interpretation: K, Occ(K), Res, and V/P/A as state observations.
 - Source element: access to H and R.
-- Separate agreement count from bandwidth health.
-- Treat Damping, Cooling, and Degeneration as temporary recovery operations.
+- Required distinction: agreement count from bandwidth health.
+- Source interpretation: Damping, Cooling, and Degeneration as temporary recovery operations.
 - Connect recovery to H reconnection, R reassignment, and True-U remeasurement.
 - A reading that would automatically suppress disagreement, warnings, or victim reports differs from the parent-defined scope.
 

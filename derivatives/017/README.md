@@ -116,13 +116,13 @@ S/C/D、R、θ、δ等の記号や観測関係は親原典に存在する一方�
 
 ## 成立条件
 - KernelとRuntimeを区別する。
-- Detect → Stop → Shrink → Recover → Audit の順序を保持する。
+- Detect → Stop → Shrink → Recover → Audit の順序は親原典上の確認要素である。
 - Stop権限と解除責任を追跡可能にする。
 - Shrinkを恒久停止ではなく検証可能な縮退として設計する。
 - Originを人格化せず、回復起点として保持する。
 - 一次ログと差分履歴からRecoverできる。
 - Auditを検証可能性へ接続し、攻撃化させない。
-- Restart条件と段階的再同期を保持する。
+- Restart条件と段階的再同期は親原典上の確認要素である。
 
 ## 失敗条件
 - 正しいKernelを配布すればRuntimeも安全だとみなす。

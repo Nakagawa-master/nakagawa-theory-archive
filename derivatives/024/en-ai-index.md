@@ -108,7 +108,7 @@ The parent origin's integrated audit summary states: If statements conflict with
 ## Interpretation constraints
 A reading that would reduce this origin to service promotion, rental-car comparison, generic MaaS, generic regional mobility, nationwide deployment claims, or a company/external-media official statement differs from the parent-defined scope. A reading that would simplify it into “unmanned is better differs from the parent-defined scope.” Non-face-to-face operation is only one component of the supply OS and must connect with long-duration pricing, location, and recovery routes.
 
-Treat this derivative as a public aid for third-party verification of both the origin's structural reading and its public explanation of why that value core was chosen as the external-article angle.
+Source interpretation: this derivative as a public aid for third-party verification of both the origin's structural reading and its public explanation of why that value core was chosen as the external-article angle.
 
 The distinction "unmanned rental car ≠ mobility supply OS" marks a semantic boundary in the parent reading. The two sides occupy different causal or evidentiary roles, so surface similarity alone does not make them equivalent within the structure summarized here.
 

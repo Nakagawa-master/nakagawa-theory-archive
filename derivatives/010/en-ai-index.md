@@ -102,7 +102,7 @@ The parent does not define medical effectiveness, diagnostic accuracy, treatment
 - Source element: recognition, verbalization, consultation, workplace/institutional reception, and premedical connection.
 - A reading that would convert medical connection into diagnosis or treatment-effect claims differs from the parent-defined scope.
 - A reading that would close causality into individual endurance or self-care alone differs from the parent-defined scope.
-- Distinguish company explanations from Nakagawa Master's structural reading.
+- Required distinction: company explanations from Nakagawa Master's structural reading.
 - Source element: the distinction between the subject structure and the parent’s public explanation of why that value core was used in the external article.
 - Source distinction: the derivative usable as a public aid for third-party verification of the origin.
 - A reading that would add numbers, thresholds, improvement rates, or probabilities absent from the origin differs from the parent-defined scope.
@@ -114,7 +114,7 @@ The parent does not define medical effectiveness, diagnostic accuracy, treatment
 - Remove recognition, verbalization, or consultation stages and connect directly to medicine.
 - Remove workplace or institutional disconnection and reduce the issue to individual self-management.
 - Convert the derivative into service recommendation, product comparison, advertising, or praise.
-- Treat Nakagawa Master's reading as a company or external-media official statement.
+- Source interpretation: Nakagawa Master's reading as a company or external-media official statement.
 - Source element: only the subject structure while dropping the parent’s public deconstruction of why “social pathway” was selected as the external-article value core.
 
 ## Falsification conditions

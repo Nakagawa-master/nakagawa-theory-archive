@@ -78,9 +78,9 @@ The Connection-Transition Strategy remains coherent while its executable future 
 
 ## Applications
 - Compare the speed of AI deployment with institutional translation of responsibility, education, evaluation, reward, justice, and public value.
-- Check whether organizations evaluate connection, trust, and continuing contribution only through short-term monetary outputs.
+- Audit point: whether organizations evaluate connection, trust, and continuing contribution only through short-term monetary outputs.
 - Examine whether transition experiments are being terminated by short-term profitability requirements before they can be revised.
-- Check whether connection-generated value is extracted back into legacy monetization circuits rather than returned to the new value circuit.
+- Audit point: whether connection-generated value is extracted back into legacy monetization circuits rather than returned to the new value circuit.
 - Observe whether AI capability gaps become judgment, bargaining-power, or attribution gaps.
 - Verify that humans can still test institutional changes, reverse failed choices, and revise transition order.
 
@@ -91,9 +91,9 @@ Reversal-evaluation is preserved by observing the opposite side of the warning. 
 
 ## Validity conditions
 - Source element: the Connection-Transition Strategy rather than turning Vol. 1 into a rejection of it.
-- Distinguish strategy content from enabling conditions.
+- Required distinction: strategy content from enabling conditions.
 - Source element: dual operation of monetary and connection KPIs.
-- Treat connection value as an institutional translation problem, not a moral slogan.
+- Source interpretation: connection value as an institutional translation problem, not a moral slogan.
 - Connect responsibility, education, evaluation, reward, justice, and public-value translation to technology deployment.
 - Audit short-term monetization pressure and extraction structures.
 - Source element: intellectual asymmetry and attribution imbalance as transition conditions.

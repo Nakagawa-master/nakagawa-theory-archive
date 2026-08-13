@@ -97,8 +97,8 @@ The parent does not define generic understanding scores, danger percentages, AI-
 - Observation focus: whether has Audit turned into exposure, attack, or censorship.
 
 ## Validity conditions
-- Treat H-Disconnect as a U/H/R combination.
-- Separate fake-U from substantive understanding.
+- Source interpretation: H-Disconnect as a U/H/R combination.
+- Required distinction: fake-U from substantive understanding.
 - Use H_d, F-C, and SD as a bundle, not universal single scores.
 - Source element: return paths to Origin, source, context, version, and differences.
 - Establish verification responsibility R.

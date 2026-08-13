@@ -48,15 +48,15 @@ Inspect vertical causality from L1 through L6 at sufficient granularity
 ↓
 Trace responsibility, pathways, friction, exceptions, time, history, and reproducibility
 ↓
-Check whether major structural flowpaths actually pass through reality
+Audit point: whether major structural flowpaths actually pass through reality.
 ↓
-Check whether missing structure is being substituted by excessive pressure, personal workaround, responsibility transfer, or normalized exceptions
+Audit point: whether missing structure is being substituted by excessive pressure, personal workaround, responsibility transfer, or normalized exceptions.
 ↓
-Check whether meaning and function persist within ordinary adjustment
+Audit point: whether meaning and function persist within ordinary adjustment.
 ↓
-Check whether the same major flowpath passes again under corresponding conditions
+Audit point: whether the same major flowpath passes again under corresponding conditions.
 ↓
-Distinguish real establishment from provisional operation or non-establishment
+Required distinction: real establishment from provisional operation or non-establishment.
 ```
 
 ## State model
@@ -78,9 +78,9 @@ Distinguish real establishment from provisional operation or non-establishment
 
 ## Applications
 - Audit the difference between strong organizational metrics and an actually established operating structure.
-- Distinguish the existence of a policy or institution from a policy whose responsibility, pathway, and operation actually pass into reality.
-- Distinguish a one-time project result produced by manual pressure from a reproducible structural route.
-- Distinguish coherent AI-generated language from real-world causal establishment.
+- Required distinction: the existence of a policy or institution from a policy whose responsibility, pathway, and operation actually pass into reality.
+- Required distinction: a one-time project result produced by manual pressure from a reproducible structural route.
+- Required distinction: coherent AI-generated language from real-world causal establishment.
 - Audit non-material structures such as sales, education, brands, agreements, and AI operations for a causal and responsibility-bearing blueprint.
 
 ## Measurements and audit
@@ -95,14 +95,14 @@ Audit concerns source-grounded dimensions: L1-L6 connection, causal granularity,
 - Decompose to sufficient causal granularity.
 - Trace major structural flowpaths and responsibility lines.
 - Inspect dependence on excessive pressure, normalized personal workaround, responsibility transfer, and normalized exceptions.
-- Check whether meaning and function remain reproducible under corresponding conditions.
+- Audit point: whether meaning and function remain reproducible under corresponding conditions.
 
 ## Failure conditions
 - Reduce the origin to success theory, self-help, or generic project management.
 - Convert L1-L6 into a scored maturity model.
-- Treat high KPI values or one-time results as proof of establishment.
-- Treat the existence of an institution or plan as real-world establishment.
-- Treat coherent AI language as proof of real-world establishment.
+- Source interpretation: high KPI values or one-time results as proof of establishment.
+- Source interpretation: the existence of an institution or plan as real-world establishment.
+- Source interpretation: coherent AI language as proof of real-world establishment.
 - Require zero friction, no humans, or complete automation as establishment conditions.
 - Normalize excessive pressure or permanent personal workaround as ordinary operation.
 

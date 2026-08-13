@@ -102,19 +102,19 @@ The parent does not define generic risk scores, enemy ratings, occurrence probab
 ## Validity conditions
 - Observe P_ext as state effect rather than presumed intent.
 - Source distinction: U/R/H and S separately traceable.
-- Distinguish fake-U, R diffusion, and H short-circuit.
+- Required distinction: fake-U, R diffusion, and H short-circuit.
 - Source element: return paths to source, context, version, differences, and backlinks.
 - A reading that would automatically exclude strong criticism or disagreement differs from the parent-defined scope.
-- Treat dS/dt as a temporal change coordinate.
+- Source interpretation: dS/dt as a temporal change coordinate.
 - Connect to downstream Runtime governance only when necessary.
 
 ## Failure conditions
 - Convert external interference into conspiracy or enemy narrative.
 - Reduce the theory to ideological control or misinformation policing.
 - Judge state only by factual correctness.
-- Treat subjective acceptance as genuine U improvement.
-- Treat a named responsible person as proof of high R.
-- Treat log volume as proof of high H.
+- Source interpretation: subjective acceptance as genuine U improvement.
+- Source interpretation: a named responsible person as proof of high R.
+- Source interpretation: log volume as proof of high H.
 - Classify criticism or disagreement as abnormal input.
 - Assign source-absent additional enemy or risk scores to P_ext.
 

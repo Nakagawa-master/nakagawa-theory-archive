@@ -111,7 +111,7 @@ The parent does not define universal immunity scores, fixed detection percentage
 
 ## Failure conditions
 - Infer that fewer deviations automatically means greater safety.
-- Treat higher D_det automatically as deterioration.
+- Source interpretation: higher D_det automatically as deterioration.
 - Assume harsher punishment automatically increases immunity.
 - Equate transparency or disclosure volume with immunity.
 - Reduce the source to generic whistleblowing promotion or compliance.
