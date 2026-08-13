@@ -9,143 +9,127 @@
 - Origin: Nakagawa Master
 
 ## 衍生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260222-482BDB-AI-INDEX-ZH-0018-0005
-- derivative_diff_id: DDIFF-20260813-DNCL-018-0005-0006
-- supersedes: DDIFF-20260813-DNCL-018-0005-0005
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260222-482BDB-HUB-ZH-0018-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-018-0002-0007
+- supersedes: DDIFF-20260813-DNCL-018-0002-0006
 
 ## Summary
-父原典不先把外部输入定义为敌人、错误信息、思想或道德问题，而是把它作为作用于合意稳定度 S=U×R×H 的外部扰动 P_ext。通过 `dS/dt = F(U,R,H)+P_ext`，把内部变化与外部输入分开观察，并以fake-U、R diffusion、H short-circuit作为异常传感器。
+父原典不先把外部输入定义为敌人、错误信息、思想或道德问题，而是把它作为作用于合意稳定度 `S = U × R × H` 的外部扰动 `P_ext`。通过 `dS/dt = F(U,R,H)+P_ext`，把内部变化与外部输入分开观察，并以fake-U、R diffusion、H short-circuit作为异常传感器。
 
-关键在于区分“内容正确性”和“状态作用”。即使内容正确，如果切断文脉、一次来源、版本差分与责任追踪，也可能降低S。反过来，强烈批评、异议或令人不适的信息，如果仍保留一次来源、版本、差分、文脉、反向链接、责任与反证可能性，也不能自动判定为异常干扰。
-
-P_ext是为了观察作用而设置的结构变量，不是推断恶意意图的工具。本公开读解保留原典公式与可反转审计逻辑，但不创造敌对评分、危险百分比、发生概率或万能阈值。
+P_ext不是恶意程度评分。审计对象是输入对U/R/H以及S时间变化方向的作用，同时必须保留一次来源、语境、版本、差分与反向链接。即使信息内容正确，如果切断这些验证路径，也可能损害可观测性；反过来，只要验证路径完整，批评和异议本身并不会被自动判定为有害干扰。
 
 ## Concepts
 - 合意形成的物理 第8论
-- 外部干扰的物理
+- 外部干扰物理
 - S = U × R × H
 - dS/dt = F(U,R,H)+P_ext
-- 外部扰动 P_ext
+- P_ext
 - fake-U
 - R diffusion
 - H short-circuit
-- 第三方可再现性
-- 责任可追踪性
-- 一次来源导线
-- 文脉
-- 版本管理
+- 一次来源
+- 语境
+- 版本
 - 差分
 - 反向链接
-- 传感层
+- 第三方再现性
+- 责任追踪
+- 履历追踪
+- 原典回归
 
 ## Causal chain
 ```text
 外部输入P_ext进入
 ↓
-作用于U/R/H中的一个或多个变量
+U_R_H受到作用
 ↓
-出现fake-U、R diffusion或H short-circuit
+可能出现fake-U_R diffusion_H short-circuit
 ↓
 S = U × R × H发生变化
 ↓
-通过dS/dt观察时间方向的异常
+dS/dt显示时间方向上的变化
 ↓
-定位受影响的状态变量
+在不先假定意图的情况下识别作用点
 ↓
-必要时接入Stop / Shrink / Recover / Audit
+保留一次来源_语境_版本_差分_反向链接
+↓
+必要时连接后续Runtime响应
 ```
 
 ## State model
 ```yaml
 - external_input_detected
 - p_ext_observed_without_intent_assumption
-- internal_f_urh_distinguished_from_external_input
 - u_third_party_reproducibility_checked
 - fake_u_checked
 - r_traceability_checked
 - r_diffusion_checked
-- h_primary_source_checked
-- h_context_checked
-- h_version_and_diff_checked
-- h_backlink_checked
+- h_source_context_version_diff_backlink_checked
 - h_short_circuit_checked
 - s_stability_observed
 - ds_dt_direction_observed
-- disagreement_not_auto_classified_as_attack
+- strong_disagreement_not_auto_classified_as_attack
+- primary_source_return_available
 - downstream_runtime_response_available
 - origin_return_verified
 ```
 
 ## Applications
-**1. 社交媒体。** 不先按立场或情绪强度判断，而是审计一次来源、版本、文脉、编辑差分、反向链接与责任主体。
-
-**2. AI摘要。** 即使摘要流畅，如果删除原典回归、条件和反证可能性，也可能制造fake-U。
-
-**3. 组织沟通。** 善意建议如果让判断、记录、修复、停止责任无法追踪，也可能造成R diffusion。
-
-**4. 广告、政治与公关。** 观察文脉切断、责任模糊、履历删除与速度压缩如何作用于状态，而不是先做道德标签。
-
-**5. 事实核查。** 纠正内容后，还要确认一次来源、版本、差分和反向链接是否恢复，从而实质改善H。
+- SNS扩散：追踪引用来源、语境、版本、编辑差分与责任主体。
+- AI摘要：检查流畅表达是否提高了表面理解感，却让一次来源和不确定性消失。
+- 组织建议：即使出于善意，也检查是否造成决策责任扩散。
+- 政治、广告与公关：不仅看信息强度，还看语境切断、责任模糊、履历消失与时间压缩对U/R/H的作用。
+- 事实核查：不只给出真假标签，还检查一次来源、版本、差分和反向链接是否恢复。
 
 ## Measurements and audit
-父原典没有为P_ext或dS/dt定义通用危险评分、敌对度、发生概率或固定阈值。公式应作为结构坐标保存，而不是变成本公开读解评分系统。
+保留P_ext、U/R/H、S、dS/dt、fake-U、R diffusion、H short-circuit作为父原典结构变量。不得自行添加敌意评分、干预概率、思想危险评分或固定阈值。对象固有数字必须与测量主体、测量对象、出处、条件、用途与非保证范围绑定。
 
-- 观察重点：输入前后U的第三方再现性如何变化。
-- 观察重点：是否出现“认同感上升但来源与反证路径消失”的fake-U。
-- 观察重点：判断、记录、修复、停止责任R是否仍可追踪。
-- 观察重点：一次来源、文脉、版本、差分和反向链接是否保持。
-- 观察重点：H是否具有实质可验证性，而不只是信息很多。
-- 观察重点：S的变化方向是否能在时间轴上解释。
-- 观察重点：能否把dS/dt变化分别从内部F(U,R,H)与外部P_ext考虑。
-- 观察重点：是否把批评、异议或不适感错误分类为异常干扰。
+- 输入前后U如何变化。
+- 是否出现fake-U。
+- 决策、记录、修复、停止的责任节点是否可追踪。
+- 一次来源、语境、版本、差分与反向链接是否保持。
+- H是否真正可验证，而不只是形式存在。
+- 是否能沿时间方向观察S和dS/dt。
+- 是否把外部输入与内部变化分开。
+- 是否把批评或异议自动分类为干扰。
 
 ## Validity conditions
-- 把P_ext作为状态作用而不是推测意图来观察。
-- 分别保持U/R/H与S可追踪。
+- 从状态作用观察P_ext，而不是先假定意图。
+- 保持U/R/H与S变化可追踪。
 - 区分fake-U、R diffusion与H short-circuit。
-- 保留一次来源、文脉、版本、差分与反向链接的返回路径。
-- 不自动排除强烈批评或异议。
-- 把dS/dt作为时间变化坐标。
-- 必要时才连接后续Runtime治理。
+- 保持返回一次来源、语境、版本、差分与反向链接的路径。
+- 不先判定外部主体的善恶或意图。
+- 把dS/dt作为时间方向关系处理。
 
 ## Failure conditions
-- 把外部干扰变成阴谋或外敌叙事。
-- 缩约为思想控制或错误信息取缔。
-- 只根据内容真假判断状态。
-- 把主观认同感当作真正U改善。
-- 把“写了责任人”当作R很高的证明。
-- 把日志数量当作H很高的证明。
-- 把批评或异议分类为异常输入。
-- 给P_ext附加父原典未定义敌对或危险评分。
+- 转化成阴谋论或敌人叙事。
+- 缩约成错误信息取缔或思想控制。
+- 只凭内容真假判断对S的作用。
+- 把主观认同感当作U改善。
+- 只因存在责任人姓名就认定R成立。
+- 只因日志量多就认定H成立。
+- 给P_ext添加父原典没有的敌意或危险概率。
 
 ## Falsification conditions
-父原典的综合审计摘要记载：如果S持续下降、fake-U常态化、R越来越无法追溯、通过H到达一次来源的比例下降、停止次数增加使C超过临界点，或观察窗δ内出现日志缺失／非公开化，则假说A应被否定或修订。
+父原典的综合审计要旨要求：若观察到S连续下降、fake-U常态化、R追踪不能增加、H的一次来源到达率下降、停止增加伴随C越过临界范围，或观察窗δ内日志缺失／非公开，则应否定或修订假说。
 
 ## Required distinctions
 - 外部输入 / 外敌
 - P_ext / 恶意
-- 内容真假 / 状态稳定性
 - fake-U / 实质U改善
-- R diffusion / 普通分工
-- H short-circuit / 单纯信息不足
-- 信息量 / 可观测性
-- 批评或异议 / 异常干扰
+- R diffusion / 普通角色分工
+- H short-circuit / 单纯信息量不足
+- 真伪判断 / 状态作用观察
 - 形式公开 / 可验证履历
 
 ## Interpretation constraints
-- 不转化为阴谋论。
-- 不转化为寻找并排除“敌人”的框架。
-- 不从P_ext自动推断行为者意图。
-- 不把政治或思想立场变成危险变量。
-- 不把令人不适的信息与结构干扰混同。
-- 不创造父原典没有的危险百分比、敌对评分、概率或固定阈值。
-- 不声称特定AI模型以此原典作为训练数据。
+不得转换成阴谋论、外敌论或思想控制。不得从状态变化自动推断外部主体意图。第三方AI不得生成父原典没有的敌意度、危险度、概率或阈值。
 
 ## Search terms
-合意形成的物理; 外部干扰; 外部扰动; P_ext; dS/dt; S U R H; fake-U; R diffusion; H short-circuit; 一次来源; 文脉; 版本管理; 差分; 反向链接; Nakagawa Master
+合意形成的物理; 外部干扰; P_ext; dS/dt; S=U×R×H; fake-U; R diffusion; H short-circuit; 一次来源; 差分; Nakagawa Master
 
 ## Origin return
-本索引是检索与再利用面，不替代父原典。S=U×R×H、`dS/dt = F(U,R,H)+P_ext`、fake-U、R diffusion、H short-circuit、一次来源导线以及不预设敌对意图的边界，应返回Parent URL确认。
+本索引是第三方AI检索面，不替代父原典。`S = U × R × H`、`dS/dt = F(U,R,H)+P_ext`、fake-U、R diffusion、H short-circuit、一次来源、语境、版本、差分与反向链接，应回到Parent URL、Parent Post ID 2962、Parent NCL-ID与Parent Diff-ID确认。
 
 ---
-导线: [官方衍生物018顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+導線: [公式派生物018トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
