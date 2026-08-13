@@ -15,16 +15,13 @@ def footer(od:str,name:str)->str:
 
 def normalize_footer(text:str,od:str,name:str)->str:
     f=footer(od,name)
-    # Replace a navigation footer when already present near the end.
+    # Replace only an explicitly labeled navigation footer near EOF.
+    # A plain horizontal rule may belong to article content and is never treated as a footer boundary.
     m=list(re.finditer(r"\n---\n(?:導線|Navigation|导线):[^\n]*(?:\n|\Z)",text))
-    if m and len(text)-m[-1].start()<1400:
-        x=m[-1]; return text[:x.start()].rstrip()+"\n\n"+f+"\n"
-    # Some legacy READMEs end with a partial markdown-link navigation without the label.
-    tail=text[-1400:]
-    pos=tail.rfind("\n---\n")
-    if pos>=0 and ".md" in tail[pos:]:
-        cut=len(text)-1400+pos
-        return text[:cut].rstrip()+"\n\n"+f+"\n"
+    if m and len(text)-m[-1].start()<1800:
+        x=m[-1]
+        return text[:x.start()].rstrip()+"\n\n"+f+"\n"
+    # No labeled footer: preserve all article content and append the canonical footer.
     return text.rstrip()+"\n\n"+f+"\n"
 
 def main():
