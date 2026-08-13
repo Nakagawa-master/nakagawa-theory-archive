@@ -1,0 +1,30 @@
+name: OD001-030 exhaustive reader language audit
+on:
+  push:
+    branches:
+      - audit/od001-030-reader-falsification-20260813
+    paths:
+      - derivatives/**
+      - tools/od001_030_exhaustive_language_audit.py
+      - .github/workflows/od001-030-exhaustive-language-audit.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan all 210 surfaces for reader-facing directives
+        run: |
+          mkdir -p tmp
+          python tools/od001_030_exhaustive_language_audit.py > tmp/od001_030_exhaustive_language_report.txt 2>&1 || true
+          cat tmp/od001_030_exhaustive_language_report.txt
+      - name: Persist temporary report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tmp/od001_030_exhaustive_language_report.txt
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Record temporary exhaustive OD001-030 language audit"
+          git push origin HEAD:audit/od001-030-reader-falsification-20260813
