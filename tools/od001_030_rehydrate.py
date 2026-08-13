@@ -11,16 +11,27 @@ def candidates_for(od: str):
     n=int(od)
     refs=[
         "origin/repair/od001-133-structural-rebuild-20260812",
+        "origin/od002-od133-reaudit-repair-20260812",
         f"origin/repair/p0-od{od}-golden-master",
         f"origin/reaudit/od{od}-full-rebuild-20260812",
         f"origin/repair/lot3-od{od}-semantic-fidelity",
     ]
     if od=="001": refs += ["origin/audit-rebuild-od001"]
-    if od=="002": refs += ["origin/repair/p0-od002-golden-master-v2","origin/fix/od002-benchmark-parity-final-20260812"]
+    if od=="002": refs += [
+        "origin/repair/p0-od002-golden-master-v2",
+        "origin/fix/od002-benchmark-parity-final-20260812",
+        "origin/fix/od002-benchmark-parity-v2-20260812",
+        "origin/repair/od002-literal-134-135-structure-20260812",
+        "origin/repair/od002-004-structure-reset-20260812",
+    ]
+    if od=="003": refs += ["origin/repair/od003-literal-134-135-structure-20260812b","origin/repair/od002-004-structure-reset-20260812"]
+    if od=="004": refs += ["origin/reaudit/od004-reapply-current-main-20260812","origin/repair/od002-004-structure-reset-20260812"]
+    if od=="005": refs += ["origin/reaudit/od005-current-main-full-rebuild-20260812"]
+    if od=="007": refs += ["origin/reaudit/od007-literal-volume-closure-20260812"]
+    if od=="009": refs += ["origin/reaudit/od009-literal-full-rebuild-20260812","origin/reaudit/od009-full-rebuild-rebased-20260812"]
     if 2 <= n <= 10: refs += ["origin/repair/p0-od002-010-golden-master"]
     if 2 <= n <= 13: refs += [f"origin/reaudit/od{od}-full-rebuild-20260812"]
     if 22 <= n <= 30: refs += [f"origin/repair/lot3-od{od}-semantic-fidelity"]
-    # Remove duplicates while retaining order.
     return list(dict.fromkeys(refs))
 
 def sec(text,h):
@@ -41,14 +52,12 @@ def git_show(ref,path):
         return None
 
 def preserve_sections(current,candidate,name):
-    # Keep branch-current source identity and source-derived falsification sections.
     headings=["親原典","派生ID"]
     if name=="README.md": headings.append("反証・改訂条件")
     elif name in ("ai-index.md","en-ai-index.md","zh-ai-index.md"): headings.append("Falsification conditions")
     for h in headings:
         c=sec(current,h)
         if c and sec(candidate,h): candidate=replace_sec(candidate,h,c[2])
-    # Keep current navigation footer, which is already seven-link verified.
     m=re.search(r"\n---\n(?:導線|Navigation|导线):.*\Z",current,re.S)
     if m:
         candidate=re.sub(r"\n---\n(?:導線|Navigation|导线):.*\Z",m.group(0),candidate,flags=re.S)
