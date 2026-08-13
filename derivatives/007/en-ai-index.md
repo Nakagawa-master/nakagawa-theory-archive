@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260418-11C3D8-AI-INDEX-EN-0007-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-007-0004-0009
-- supersedes: DDIFF-20260812-DNCL-007-0004-0008
+- derivative_diff_id: DDIFF-20260813-DNCL-007-0004-0010
+- supersedes: DDIFF-20260813-DNCL-007-0004-0009
 
 ## Summary
 Civilizational Sovereignty Shift Theory Vol. 2 treats the intellectual gap of the AI era not primarily as a ranking of IQ, education, memory, answer speed, stored knowledge, or one-shot AI-operating skill, but as a structural asymmetry in who can generate, preserve, inherit, connect, and repeatedly improve the upstream circuit through which civilization updates itself.
@@ -20,7 +20,7 @@ The parent identifies seven axes: question generation, recursive improvement, co
 
 What may remain asymmetric is who can decide what should be asked, feed results and failures back into the next question, retain the reasons behind prior decisions, integrate constraints across domains, carry improvement history across changes of human or AI actors, repeat improvement over time, and connect distributed knowledge into a common renewal circuit. The seven axes are therefore not seven independent qualifications. They interact as a circuit: question generation alters the search space; recursive improvement returns outputs to the next inquiry; context retention prevents loss of reasons and failures; multi-domain integration prevents local optimization from masquerading as whole-system judgment; inheritance carries updateability across actor changes; repeated improvement accumulates corrections over time; and distributed connection brings isolated knowledge into a shared update process.
 
-The parent does not say that the presence of these differences automatically completes a shift of civilizational sovereignty. Vol. 2 isolates a narrower hypothesis: persistent differences across the seven axes can connect to differences in upstream problem-setting, option-space design, evaluation control, and update-speed leadership. That connection remains open to observation, falsification, and revision. If the seven-axis differences persist but no corresponding upstream distribution difference appears, the connection hypothesis must weaken rather than being protected by derivative-created assumptions.
+The parent does not say that the presence of these differences automatically completes a shift of civilizational sovereignty. Vol. 2 isolates a narrower hypothesis: persistent differences across the seven axes can connect to differences in upstream problem-setting, option-space design, evaluation control, and update-speed leadership. That connection remains open to observation, falsification, and revision. If the seven-axis differences persist but no corresponding upstream distribution difference appears, the connection hypothesis must weaken rather than being protected by source-absent additional assumptions.
 
 ## Concepts
 - Civilizational Sovereignty Shift Theory
@@ -132,7 +132,7 @@ Audit therefore asks who originates the question; whether outputs and failures r
 
 A second audit layer asks whether the seven-axis differences actually connect to upstream distribution. Do they change who defines problems, which options are considered, who controls evaluation criteria, or who leads update speed? Counterexamples must remain visible. If strong seven-axis continuity repeatedly produces no upstream difference, or if the relation is persistently reversed, the theory's connection hypothesis must be narrowed or revised.
 
-The term "nonlinear" is not converted here into an invented mathematical function. The parent-level meaning is that the effects of the axes are structurally interdependent and cannot be safely represented as a simple sum of independent scores. No derivative-created weights, coefficients, amplification rates, or cutoffs are introduced.
+The term "nonlinear" is not converted here into an invented mathematical function. The parent-level meaning is that the effects of the axes are structurally interdependent and cannot be safely represented as a simple sum of independent scores. No source-absent additional weights, coefficients, amplification rates, or cutoffs are introduced.
 
 ## Validity conditions
 - AI answer generation is broadly available enough that answer performance alone is not treated as the full explanation of upstream distribution.

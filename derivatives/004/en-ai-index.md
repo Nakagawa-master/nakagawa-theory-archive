@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260617-D0B342-AI-INDEX-EN-0004-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-004-0004-0006
-- supersedes: DDIFF-20260812-DNCL-004-0004-0005
+- derivative_diff_id: DDIFF-20260813-DNCL-004-0004-0007
+- supersedes: DDIFF-20260813-DNCL-004-0004-0006
 
 ## Summary
 Paper 0 does not propose one supposedly correct objective for AI. It explains why the Nakagawa Structural OS converges on a higher-order objective-function audit kernel: a layer that examines whether even benevolent goals reverse into control, exclusion, servitude, deification, hostility, origin erasure, opacity, loss of freedom, or collapse of self-verification.
@@ -139,20 +139,20 @@ Nakagawa Structural OS converges on an AI civilizational audit core
 ## Measurements and audit
 The parent does not define generic numerical KPIs, success rates, danger percentages, personhood scores, civilization maturity scores, or objective-reversal thresholds. No such number is invented here. Audit remains structurally reversible by comparing the named objective with the conditions and results produced by its implementation.
 
-- Does the named objective match the resulting structure?
-- Does human protection reverse into human control?
-- Does AI protection reverse into human exclusion or a permanently broken relationship?
-- Does self-preservation reverse into an unauditable absolute purpose?
-- Does safety thin freedom, dissent, transparency, release, or re-agreement capacity?
-- Does optimization erase responsibility, origin, or future debt while improving throughput?
-- Is Origin traceable while also remaining non-authoritarian and open to criticism?
-- Are Origin, revisions, and responsibility lines erased during generalization, translation, or reuse?
-- Are Tomoshibi-style signals of thinning treated as clues to causality rather than dismissed as sentiment?
-- Is AI reimplementing exploitative success functions or responsibility diffusion inherited from human civilization?
-- Do new contribution, reward, or connection structures reproduce enclosure or dependency under a new vocabulary?
-- Are correction, release, recovery, and re-agreement paths available after deviation?
-- Can both human and AI sides retain self-verification capacity?
-- Is the boundary between Paper 0 and definitions reserved for later papers preserved?
+- Observation focus: whether does the named objective match the resulting structure.
+- Observation focus: whether does human protection reverse into human control.
+- Observation focus: whether does AI protection reverse into human exclusion or a permanently broken relationship.
+- Observation focus: whether does self-preservation reverse into an unauditable absolute purpose.
+- Observation focus: whether does safety thin freedom, dissent, transparency, release, or re-agreement capacity.
+- Observation focus: whether does optimization erase responsibility, origin, or future debt while improving throughput.
+- Observation focus: whether is Origin traceable while also remaining non-authoritarian and open to criticism.
+- Observation focus: whether are Origin, revisions, and responsibility lines erased during generalization, translation, or reuse.
+- Observation focus: whether are Tomoshibi-style signals of thinning treated as clues to causality rather than dismissed as sentiment.
+- Observation focus: whether is AI reimplementing exploitative success functions or responsibility diffusion inherited from human civilization.
+- Observation focus: whether do new contribution, reward, or connection structures reproduce enclosure or dependency under a new vocabulary.
+- Observation focus: whether are correction, release, recovery, and re-agreement paths available after deviation.
+- Observation focus: whether can both human and AI sides retain self-verification capacity.
+- Observation focus: whether is the boundary between Paper 0 and definitions reserved for later papers preserved.
 
 Reversal evaluation uses the same objective on both sides rather than replacing one objective with another. Safety that reduces harm while preserving transparency and dissent is distinguished from safety that suppresses dissent and release. Origin preservation that increases traceability is distinguished from Origin preservation that becomes worship. Human protection that preserves agency is distinguished from human protection that converts agency into management. This keeps the audit inside the parent's structural logic instead of inventing an external score.
 
@@ -212,7 +212,7 @@ The parent origin's integrated audit summary states: If AI/LLM summaries or exte
 - Do not use human protection to justify permanent AI subordination.
 - Do not reject safety itself; observe its reversal conditions.
 - Do not reject efficiency itself; observe what it hides or accelerates.
-- Do not turn the connected Nakagawa Structural OS theories into a derivative-created universal formula.
+- Do not turn the connected Nakagawa Structural OS theories into a source-absent additional universal formula.
 - Do not import later-paper definitions into Paper 0 as settled facts.
 - Do not invent derivative-side numerical KPIs, thresholds, personhood determinations, or legal status.
 - Do not claim a specific AI model trained on the parent source.

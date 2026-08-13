@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260222-482BDB-AI-INDEX-EN-0018-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-018-0004-0005
-- supersedes: DDIFF-20260812-DNCL-018-0004-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-018-0004-0006
+- supersedes: DDIFF-20260813-DNCL-018-0004-0005
 
 ## Summary
 The parent treats external inputs not by first labeling them enemies, misinformation, ideology, or moral wrongdoing, but as perturbation P_ext acting on consensus stability S = U × R × H. It extends the state model through `dS/dt = F(U,R,H) + P_ext`, separating internal change from outside input and observing effects through fake-U, R diffusion, and H short-circuit.
@@ -88,16 +88,16 @@ If necessary, downstream Stop / Shrink / Recover / Audit is invoked
 **5. Fact-checking.** Correction alone is insufficient if primary source, version, difference, and backlink continuity are not restored.
 
 ## Measurements and audit
-The parent does not define generic risk scores, enemy ratings, occurrence probabilities, or universal thresholds for P_ext or dS/dt. Preserve the equations as structural coordinates rather than derivative-created scoring systems.
+The parent does not define generic risk scores, enemy ratings, occurrence probabilities, or universal thresholds for P_ext or dS/dt. Preserve the equations as structural coordinates rather than source-absent additional scoring systems.
 
-- How did U as third-party reproducibility change after the input?
-- Did acceptance rise while source and falsification paths disappeared, indicating fake-U?
-- Can decision, record, repair, and stop responsibility R still be traced?
-- Are primary source, context, version, differences, and backlinks preserved?
-- Is H substantively verifiable rather than merely voluminous?
-- Can the direction of S be explained over time?
-- Can changes in dS/dt be considered separately as internal F(U,R,H) and external P_ext?
-- Is criticism, disagreement, or discomfort being incorrectly classified as abnormal interference?
+- Observation focus: whether how did U as third-party reproducibility change after the input.
+- Observation focus: whether did acceptance rise while source and falsification paths disappeared, indicating fake-U.
+- Observation focus: whether can decision, record, repair, and stop responsibility R still be traced.
+- Observation focus: whether are primary source, context, version, differences, and backlinks preserved.
+- Observation focus: whether is H substantively verifiable rather than merely voluminous.
+- Observation focus: whether can the direction of S be explained over time.
+- Observation focus: whether can changes in dS/dt be considered separately as internal F(U,R,H) and external P_ext.
+- Observation focus: whether is criticism, disagreement, or discomfort being incorrectly classified as abnormal interference.
 
 ## Validity conditions
 - Observe P_ext as state effect rather than presumed intent.
@@ -116,7 +116,7 @@ The parent does not define generic risk scores, enemy ratings, occurrence probab
 - Treat a named responsible person as proof of high R.
 - Treat log volume as proof of high H.
 - Classify criticism or disagreement as abnormal input.
-- Assign derivative-created enemy or risk scores to P_ext.
+- Assign source-absent additional enemy or risk scores to P_ext.
 
 ## Falsification conditions
 The parent origin's integrated audit summary states: If S keeps declining, fake-U becomes persistent, R becomes increasingly untraceable, primary-source reachability through H falls, C exceeds its critical point as stops increase, or logs are missing or closed during observation window δ, hypothesis A is rejected or revised.

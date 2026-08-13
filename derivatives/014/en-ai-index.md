@@ -10,13 +10,13 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260211-051CE0-AI-INDEX-EN-0014-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-014-0004-0004
-- supersedes: DDIFF-20260812-DNCL-014-0004-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-014-0004-0005
+- supersedes: DDIFF-20260813-DNCL-014-0004-0004
 
 ## Summary
 The parent does not define consensus as identical opinions, successful persuasion, absence of conflict, or a calm social atmosphere. It defines consensus as a state in which meaning remains reproducible, decision responsibility remains traceable, and changes remain historically and differentially traceable over time. The central move is from person-blame to observability: when conflict occurs, ask which state variable became unavailable before deciding who is morally or politically at fault.
 
-The parent names consensus stability S, interpretability / third-party reproducibility U, responsibility traceability R, and historical openness / difference traceability H, and expresses the relationship as `S = U × R × H`. This is a source-defined structural equation, not a derivative-created score. The multiplicative form means that a severe loss of one variable cannot simply be repaired by increasing another. More logs do not restore interpretability if meaning cannot be reproduced; more disclosure does not restore responsibility if the decision node remains unknown.
+The parent names consensus stability S, interpretability / third-party reproducibility U, responsibility traceability R, and historical openness / difference traceability H, and expresses the relationship as `S = U × R × H`. This is a source-defined structural equation, not a source-absent additional score. The multiplicative form means that a severe loss of one variable cannot simply be repaired by increasing another. More logs do not restore interpretability if meaning cannot be reproduced; more disclosure does not restore responsibility if the decision node remains unknown.
 
 U asks whether independent readers of the same primary material can reconstruct substantially the same meaning. R asks whether the decision actor, decision position, grounds, delegation, approval, and correction responsibility can be traced. H asks whether changes, reasons for change, corrections, and differences from prior states remain reconstructable. Conflict can remain while this state is repairable; apparent agreement can exist while the state is fragile if U/R/H are missing.
 
@@ -94,15 +94,15 @@ observation_must_return_to_U_R_H
 ## Measurements and audit
 `S = U × R × H` is present in the parent. The derivative must not add arbitrary 0–100 scales, weights, coefficients, pass thresholds, probabilities, or maturity scores unless the parent itself defines them. The equation must not be detached from its epistemic role and turned into an invented KPI.
 
-- Can independent readers reconstruct the same meaning from the same primary material?
-- Can interpretive divergence be located and explained?
-- Can the decision actor, decision position, grounds, delegation, and approval be traced?
-- Can correction responsibility be traced?
-- Can differences, reasons for change, and correction history be reconstructed?
-- Is information quantity being confused with observability?
-- Can the first degraded variable be distinguished from downstream degradation?
-- Is one missing variable being falsely compensated by adding another?
-- After repair, do U/R/H remain available through later changes and disagreements?
+- Observation focus: whether can independent readers reconstruct the same meaning from the same primary material.
+- Observation focus: whether can interpretive divergence be located and explained.
+- Observation focus: whether can the decision actor, decision position, grounds, delegation, and approval be traced.
+- Observation focus: whether can correction responsibility be traced.
+- Observation focus: whether can differences, reasons for change, and correction history be reconstructed.
+- Observation focus: whether is information quantity being confused with observability.
+- Observation focus: whether can the first degraded variable be distinguished from downstream degradation.
+- Observation focus: whether is one missing variable being falsely compensated by adding another.
+- Observation focus: whether after repair, do U/R/H remain available through later changes and disagreements.
 
 ## Validity conditions
 - Consensus is not reduced to opinion agreement.

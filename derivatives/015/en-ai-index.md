@@ -10,15 +10,15 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260214-40C1DE-AI-INDEX-EN-0015-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-015-0004-0004
-- supersedes: DDIFF-20260812-DNCL-015-0004-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-015-0004-0005
+- supersedes: DDIFF-20260813-DNCL-015-0004-0004
 
 ## Summary
 The parent treats scandals, accidents, public blowups, and organizational collapse not as single-cause events created by the final incident, but as state transitions that become visible after consensus stability `S = U × R × H` has declined below a critical threshold θ and remained there through an observation window δ. The final incident matters, but it is not equivalent to the full cause; it is the visible event through which a pre-existing critical state becomes externally obvious.
 
 U is third-party reproducibility, R is responsibility traceability / uniqueness of the responsibility node, and H is traceability of judgment grounds, history, and differences. When these degrade, S falls. If the low-stability state persists rather than recovering, the system can move from a stable phase into a collapse phase, in which deviation D becomes harder to repair and may amplify through further exceptions, responsibility drift, and loss of shared interpretation.
 
-The symbols θ, δ, and D must remain source-bounded structural variables. They are not blank slots for derivative-created values. Unless the parent gives a general numeric threshold or time value, the derivative must not invent a value for θ, a fixed number of days for δ, or a numerical deviation score for D. The parent’s critical point is also not a generic upward tipping point in support, adoption, diffusion, or growth; it is a destabilization boundary reached by declining S.
+The symbols θ, δ, and D must remain source-bounded structural variables. They are not blank slots for source-absent additional values. Unless the parent gives a general numeric threshold or time value, the derivative must not invent a value for θ, a fixed number of days for δ, or a numerical deviation score for D. The parent’s critical point is also not a generic upward tipping point in support, adoption, diffusion, or growth; it is a destabilization boundary reached by declining S.
 
 ## Concepts
 - Physics of Consensus Formation Vol. 4
@@ -94,15 +94,15 @@ if_only_the_final_event_is_called_the_cause_the_neglected_critical_state_disappe
 ## Measurements and audit
 S, U, R, H, θ, δ, and D are retained because they are part of the parent structure. The derivative must not assign arbitrary numerical values, weights, coefficients, probabilities, pass marks, or fixed time periods. If a number is explicitly present in the source or target system, preserve the value together with measurement actor, measurement object, provenance, use scope, applicable conditions, and non-guarantee scope.
 
-- Which of U/R/H degraded first?
-- Was the decline of S transient or persistent?
-- Is there source-bounded evidence that the low-stability state persisted through the relevant observation window?
-- Has θ or δ been improperly concretized by the derivative?
-- Did D change from locally repairable deviation into cascading amplification?
-- Were warning signs observable before the final incident?
-- Can the observing actor and the actor with repair authority be distinguished?
-- Is formal disclosure being confused with substantive H?
-- After transition, is the system still being treated with repair methods suitable only for the stable phase?
+- Observation focus: whether which of U/R/H degraded first.
+- Observation focus: whether was the decline of S transient or persistent.
+- Observation focus: whether is there source-bounded evidence that the low-stability state persisted through the relevant observation window.
+- Observation focus: whether has θ or δ been improperly concretized by the derivative.
+- Observation focus: whether did D change from locally repairable deviation into cascading amplification.
+- Observation focus: whether were warning signs observable before the final incident.
+- Observation focus: whether can the observing actor and the actor with repair authority be distinguished.
+- Observation focus: whether is formal disclosure being confused with substantive H.
+- Observation focus: whether after transition, is the system still being treated with repair methods suitable only for the stable phase.
 
 ## Validity conditions
 - Collapse is not reduced to the final visible incident.
@@ -129,7 +129,7 @@ The parent origin's integrated audit summary states: If D grows while S appears 
 - final incident / accumulated critical state
 - cause / state transition
 - momentary S decline / persistent `S < θ`
-- structural threshold θ / derivative-created numeric threshold
+- structural threshold θ / source-absent additional numeric threshold
 - observation window δ / arbitrary fixed duration
 - deviation D / final event itself
 - formal disclosure / substantive H

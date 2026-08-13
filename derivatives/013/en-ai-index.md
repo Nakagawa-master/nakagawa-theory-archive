@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-AKI-012-AI-INDEX-EN-0013-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-013-0004-0005
-- supersedes: DDIFF-20260812-DNCL-013-0004-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-013-0004-0006
+- supersedes: DDIFF-20260813-DNCL-013-0004-0005
 
 ## Summary
 AKI-012 does not reject sales, closing, revenue responsibility, pipeline management, or KPIs as such. It analyzes the bad causality produced when a mere contact or expression of interest is substituted for purchase intent or mature consent, so closing pressure is introduced before the other party has enough conditions to judge. The parent keeps contact, interest, problem recognition, consideration intent, purchase intent, judgment conditions, value connection, implementation conditions, consent maturity, and closing confirmation distinct.
@@ -121,21 +121,21 @@ Any derivative ordering labels are ordering aids only. They are not source-defin
 ## Measurements and audit
 The parent does not define a universal conversion threshold, consent score, closing probability, consultation-capacity percentage, optimum KPI, or numerical maturity threshold. No such number is created here. Reversal-evaluation remains source-bounded by comparing the same structural variables on both sides of the hypothesized sequence.
 
-- Is contact distinguishable from purchase intent?
-- Is interest distinguishable from consent?
-- Is problem recognition distinguishable from implementation intent?
-- Are need, value, alternatives, cost, timing, and implementation conditions available to the customer before closing is demanded?
-- Is internal pipeline probability visibly separate from consent maturity?
-- Does an internal closing date change the customer's actual decision conditions, or merely management's expectation?
-- Can the customer refuse, defer, compare, ask more questions, or leave without the relationship being treated as failed compliance?
-- Does the salesperson retain attention for customer understanding, or does internal reporting dominate the interaction?
-- Do inquiries or disclosures decline after repeated early-closing experiences?
-- Do customers describe sales contact as a pressure entrance rather than a consultation entrance?
-- Do post-contract recognition gaps increase when closing precedes mature judgment conditions?
-- Does market consultation capacity remain available to people who have not yet decided to buy?
-- Does organizational compensation for lower consultation take the form of more contact volume, stronger probability demands, or earlier closing, thereby reinforcing the causal loop?
+- Observation focus: whether is contact distinguishable from purchase intent.
+- Observation focus: whether is interest distinguishable from consent.
+- Observation focus: whether is problem recognition distinguishable from implementation intent.
+- Observation focus: whether are need, value, alternatives, cost, timing, and implementation conditions available to the customer before closing is demanded.
+- Observation focus: whether is internal pipeline probability visibly separate from consent maturity.
+- Observation focus: whether does an internal closing date change the customer's actual decision conditions, or merely management's expectation.
+- Observation focus: whether can the customer refuse, defer, compare, ask more questions, or leave without the relationship being treated as failed compliance.
+- Observation focus: whether does the salesperson retain attention for customer understanding, or does internal reporting dominate the interaction.
+- Observation focus: whether do inquiries or disclosures decline after repeated early-closing experiences.
+- Observation focus: whether do customers describe sales contact as a pressure entrance rather than a consultation entrance.
+- Observation focus: whether do post-contract recognition gaps increase when closing precedes mature judgment conditions.
+- Observation focus: whether does market consultation capacity remain available to people who have not yet decided to buy.
+- Observation focus: whether does organizational compensation for lower consultation take the form of more contact volume, stronger probability demands, or earlier closing, thereby reinforcing the causal loop.
 
-These observations are not a derivative-created legal test or universal sales-performance KPI. If a source-provided number is ever used, it must remain attached to its source, measurement actor, measurement object, source modality, permitted use scope, and non-guarantee scope. A number cannot travel alone as proof of consent or proof of the theory.
+These observations are not a source-absent additional legal test or universal sales-performance KPI. If a source-provided number is ever used, it must remain attached to its source, measurement actor, measurement object, source modality, permitted use scope, and non-guarantee scope. A number cannot travel alone as proof of consent or proof of the theory.
 
 ## Validity conditions
 - Contact or interest is being treated as if it were purchase intent or mature consent.

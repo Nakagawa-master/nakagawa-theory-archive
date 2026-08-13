@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260627-AEA14A-AI-INDEX-EN-0003-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-003-0004-0006
-- supersedes: DDIFF-20260812-DNCL-003-0004-0005
+- derivative_diff_id: DDIFF-20260813-DNCL-003-0004-0007
+- supersedes: DDIFF-20260813-DNCL-003-0004-0006
 
 ## Summary
 Establishment Conditions Theory, Paper 0 explains why a theory for judging establishment becomes necessary when a society contains many locally correct understandings but no verified whole. The parent original is not a claim that people see nothing or know nothing. Field operators, institutional actors, management, technical specialists, theorists, and AI systems can each perceive a real portion of the situation and can be correct within that portion. The problem begins when the locally valid view is treated internally as the whole problem, the whole cause, or the whole reality.
@@ -130,7 +130,7 @@ The parent original does not define a derivative-generic establishment rate, who
 - Return AI output to concrete events, actions, institutions, and responsibility before treating it as established.
 - Do not infer whole establishment from the number, prestige, or expertise of locally correct actors.
 
-The reversal test remains source-bounded: if local correctness is accompanied by verified cross-layer connection, clear responsibility, retraceable history, and absence of residual burden, the whole-establishment hypothesis strengthens. If local correctness remains but connection breaks, responsibility evaporates, or unprocessed burden persists, the hypothesis weakens. A derivative-created score must not replace this structural relation.
+The reversal test remains source-bounded: if local correctness is accompanied by verified cross-layer connection, clear responsibility, retraceable history, and absence of residual burden, the whole-establishment hypothesis strengthens. If local correctness remains but connection breaks, responsibility evaporates, or unprocessed burden persists, the hypothesis weakens. A source-absent additional score must not replace this structural relation.
 
 ## Validity conditions
 - Local actors possess observations or explanations that are partly correct within their domain.

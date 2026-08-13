@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260225-1F258D-HUB-JA-0020-0000
-- derivative_diff_id: DDIFF-20260813-DNCL-020-0006-0003
-- supersedes: DDIFF-20260812-DNCL-020-0006-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-020-0006-0004
+- supersedes: DDIFF-20260813-DNCL-020-0006-0003
 
 ## Language derivative IDs
 ```yaml
@@ -45,7 +45,7 @@ Brain Vault canonical index と WordPress 全件XMLを参照し、Parent Post ID
 ## 原典忠実度
 本派生物は第10論を特定陣営批判、反プロパガンダ運動、一般的ファクトチェック、SNSマナー論へ縮約しない。K、Occ(K)、Res、V/P/A、Damping、Cooling、Degeneration、H再接続、R再割当、True-U再計測を保持する。
 
-派生側はOcc(K)、V/P/A等へ党派スコア、プロパガンダ率、共振危険度％、固定支持閾値を追加しない。DampingやCoolingを検閲・沈黙強制へ変換せず、異論・警告・被害申告の入口を保持する。
+この公開読解はOcc(K)、V/P/A等へ党派スコア、プロパガンダ率、共振危険度％、固定支持閾値を追加しない。DampingやCoolingを検閲・沈黙強制へ変換せず、異論・警告・被害申告の入口を保持する。
 
 ## 第三者向けの読解境界
 第三者は、特定の立場や人物を先に「プロパガンダ」と分類するのではなく、帯域占有、共振、速度・反復・情動、H/Rの切断、True-Uの再計測という状態変化を確認する。本派生物は企業・組織・外部媒体の公式見解を代弁せず、Nakagawa Masterの公開原典の理解を補助する。

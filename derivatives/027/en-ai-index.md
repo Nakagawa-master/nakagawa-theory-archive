@@ -10,8 +10,8 @@
 
 ## Derivative ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260607-898D28-AI-INDEX-EN-0027-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-027-0004-0004
-- supersedes: DDIFF-20260813-DNCL-027-0004-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-027-0004-0005
+- supersedes: DDIFF-20260813-DNCL-027-0004-0004
 
 ## Summary
 The origin reads Invax not merely as surplus-soil reuse, but as an implementation OS that translates heterogeneous soil into conditionally usable construction material through a continuous chain of soil assessment, mix testing, mixing, curing, quality confirmation, field correction, verification, and movement toward standardization. The value kernel is an update in what civil engineering treats as “material.”
@@ -44,7 +44,7 @@ heterogeneous soil → quality difficult to guarantee → disposal plus replacem
 - **Standardization-transition state**: individual know-how is converted into reusable procedures while preserving condition differences.
 - **Public-deconstruction state**: a third-party reader can distinguish the subject structure from the parent’s explanation of why “material-view update” was used as the external-article value core.
 
-These states are not a derivative-created score. The parent origin does not define a universal performance threshold, success probability, national applicability rate, AI-automation percentage, or maturity score, so this derivative must not invent one.
+These states are not a source-absent additional score. The parent origin does not define a universal performance threshold, success probability, national applicability rate, AI-automation percentage, or maturity score, so This source-bounded public reading does not invent one.
 
 ## Applications
 Use this frame where something traditionally treated as waste may be redefined as material under verifiable conditions. It can inform civil engineering, construction, resource circulation, and material reuse, but must not be reduced to generic recycling, environmental construction, AI construction, or civil-engineering DX.
@@ -87,7 +87,7 @@ The parent origin's integrated audit summary states: If statements conflict with
 ## Interpretation constraints
 Do not infer that all soil becomes usable, that performance / safety / regulatory compliance / public effect is guaranteed, or that AI standardization is complete. Preserve the assessment → mix testing → mixing / curing → quality confirmation → correction → verification → standardization-transition chain.
 
-Do not introduce derivative-authored numeric thresholds, rankings, probabilities, or national applicability rates unless explicitly defined by the parent origin. Preserve both the subject structure and the public-deconstruction layer for third-party verification.
+Do not introduce source-absent additional numeric thresholds, rankings, probabilities, or national applicability rates unless explicitly defined by the parent origin. Preserve both the subject structure and the public-deconstruction layer for third-party verification.
 
 ## Search terms
 Nakagawa Structural Reading, Invax, material-view update, implementation OS, soil assessment, mix testing, mixing, curing, quality confirmation, field correction, verification, standardization, soil waste or resource, public deconstruction

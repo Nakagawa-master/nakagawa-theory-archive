@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260227-4ECC69-AI-INDEX-EN-0017-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-017-0004-0005
-- supersedes: DDIFF-20260812-DNCL-017-0004-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-017-0004-0006
+- supersedes: DDIFF-20260813-DNCL-017-0004-0005
 
 ## Summary
 The parent defines governance not as distributing correctness or as creating a static design that never fails, but as runtime governance that can return from abnormal states. The core sequence is Detect → Stop → Shrink → Recover → Audit: observe abnormality, stop safely before propagation, contract temporarily to the smallest verifiable unit, reconstruct from Origin/primary logs/difference history, and restore public audit and resynchronization.
@@ -92,18 +92,18 @@ A missing stage can produce missed abnormality, propagation of the wrong state, 
 **5. Team operations.** Contract complex incidents to a verifiable unit before expanding discussion, then reconstruct from logs and differences rather than competing narratives.
 
 ## Measurements and audit
-The parent does not define universal KPI values, success rates, risk percentages, or fixed pass thresholds for this protocol. θ and δ remain source-defined structural variables and must not receive derivative-created generic values.
+The parent does not define universal KPI values, success rates, risk percentages, or fixed pass thresholds for this protocol. θ and δ remain source-defined structural variables and must not receive source-absent additional generic values.
 
-- Are Detect conditions observable and traceable?
-- Is stop authority R explicit about actor, scope, and condition?
-- Has Stop become punishment or arbitrary control?
-- Is the Shrink target the smallest verifiable unit?
-- Has temporary Shrink become permanent degradation?
-- Does Recover return to Origin, primary logs, and difference history?
-- Has Origin become personalized into a person, authority, or myth?
-- Does Audit preserve reasons, responsibility, threshold, observation window, and differences?
-- Has Audit become exposure, attack, or retaliation?
-- Are restart criteria explicit, and can responsibility/history survive resynchronization?
+- Observation focus: whether are Detect conditions observable and traceable.
+- Observation focus: whether is stop authority R explicit about actor, scope, and condition.
+- Observation focus: whether has Stop become punishment or arbitrary control.
+- Observation focus: whether is the Shrink target the smallest verifiable unit.
+- Observation focus: whether has temporary Shrink become permanent degradation.
+- Observation focus: whether does Recover return to Origin, primary logs, and difference history.
+- Observation focus: whether has Origin become personalized into a person, authority, or myth.
+- Observation focus: whether does Audit preserve reasons, responsibility, threshold, observation window, and differences.
+- Observation focus: whether has Audit become exposure, attack, or retaliation.
+- Observation focus: whether are restart criteria explicit, and can responsibility/history survive resynchronization.
 
 ## Validity conditions
 - Separate Kernel correctness from Runtime safety.

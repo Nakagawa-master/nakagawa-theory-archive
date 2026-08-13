@@ -135,23 +135,23 @@ language_intended_to_change_the_status_quo_structurally_reinforces_the_status_qu
 ## Measurements and audit
 The parent does not define a percentage, score, threshold, probability, or pass mark for the seven responsibility conditions. The derivative therefore preserves structurally reversible audit axes without inventing numbers.
 
-- As crisis language intensifies, do problem location and causal clarity also increase?
-- When anxiety increases, do audience judgment, verification, and implementation capacity also increase?
-- Are observed facts separated from causal hypotheses?
-- Are unknowns labeled as unknown rather than filled with rhetorical certainty?
-- Are the actor that caused the issue, the position through which non-repair persisted, and the actor who can now repair distinguished when necessary?
-- Is repair authority traceable rather than replaced by diffuse calls for “someone” to act?
-- Are repair costs, tradeoffs, timing, and authority changes visible rather than hidden?
-- Even without a complete solution, is an initial verification or implementation step open?
-- Is that first step treated as a testable beginning rather than falsely presented as a complete repair?
-- Is the claim open to falsification and correction?
-- Is there a known condition under which the causal interpretation should be weakened or revised?
-- After repeated problem raising, does field implementation capacity increase, or only explanation and coordination burden?
-- Does unallocated responsibility migrate downward to people without the authority to repair?
-- Is trust in problem raising, including the reach of genuinely necessary warnings, preserved?
-- Do audiences begin discounting warnings because previous alarms failed to open a repair path?
-- Are preliminary reports and whistleblowing allowed to remain incomplete while verification is still open?
-- Is AKI-001 being inverted into a rule that suppresses criticism or demands complete solutions from whistleblowers?
+- Observation focus: whether as crisis language intensifies, do problem location and causal clarity also increase.
+- Observation focus: whether when anxiety increases, do audience judgment, verification, and implementation capacity also increase.
+- Observation focus: whether are observed facts separated from causal hypotheses.
+- Observation focus: whether are unknowns labeled as unknown rather than filled with rhetorical certainty.
+- Observation focus: whether are the actor that caused the issue, the position through which non-repair persisted, and the actor who can now repair distinguished when necessary.
+- Observation focus: whether is repair authority traceable rather than replaced by diffuse calls for “someone” to act.
+- Observation focus: whether are repair costs, tradeoffs, timing, and authority changes visible rather than hidden.
+- Observation focus: whether even without a complete solution, is an initial verification or implementation step open.
+- Observation focus: whether is that first step treated as a testable beginning rather than falsely presented as a complete repair.
+- Observation focus: whether is the claim open to falsification and correction.
+- Observation focus: whether is there a known condition under which the causal interpretation should be weakened or revised.
+- Observation focus: whether after repeated problem raising, does field implementation capacity increase, or only explanation and coordination burden.
+- Observation focus: whether does unallocated responsibility migrate downward to people without the authority to repair.
+- Observation focus: whether is trust in problem raising, including the reach of genuinely necessary warnings, preserved.
+- Observation focus: whether do audiences begin discounting warnings because previous alarms failed to open a repair path.
+- Observation focus: whether are preliminary reports and whistleblowing allowed to remain incomplete while verification is still open.
+- Observation focus: whether is AKI-001 being inverted into a rule that suppresses criticism or demands complete solutions from whistleblowers.
 
 Reversal evaluation does not count how many of the seven items are present. It compares whether opening the relevant conditions increases judgment, verification, repairability, implementation capacity, and credibility relative to leaving them closed. If opening those conditions consistently adds no repair value or instead blocks legitimate early detection, the timing and scope of the conditions must remain revisable. No derivative numerical threshold is introduced.
 
@@ -180,7 +180,7 @@ Reversal evaluation does not count how many of the seven items are present. It c
 - Problem raising does not convert into implementation and only explanation burden grows.
 - Trust in problem raising erodes until necessary warnings are discounted.
 - The theory is used to suppress criticism, early reporting, preliminary concern, or whistleblowing.
-- The seven conditions are converted into a derivative-created scoring KPI.
+- The seven conditions are converted into a source-absent additional scoring KPI.
 
 ## Falsification conditions
 The parent origin's integrated audit summary states: If a warning functions as an initial alert that connects to later verification, clearly separates observed facts from hypotheses and identifies what should be checked next, or connects readers to judgment and action rather than fixing them in anxiety, hypothesis A classifying the discourse as irresponsible problem-raising is rejected or revised.

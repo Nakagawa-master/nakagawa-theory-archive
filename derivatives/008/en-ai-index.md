@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260607-7E87F5-AI-INDEX-EN-0008-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-008-0004-0008
-- supersedes: DDIFF-20260812-DNCL-008-0004-0007
+- derivative_diff_id: DDIFF-20260813-DNCL-008-0004-0009
+- supersedes: DDIFF-20260813-DNCL-008-0004-0008
 
 ## Summary
 The parent does not reject effort. It preserves the conditional rationality of persistence, volume, and endurance when causal opacity is high and execution itself is required to learn what happens. It then argues that the environment has changed: AI, data, logs, prior cases, reviews, comparisons, and field observation make more causal candidates inspectable before execution. Under those conditions, retaining only the old command form—“just do it,” “do more,” “finish no matter what”—can become structurally inconsistent.
@@ -92,15 +92,15 @@ Observed results return to hypothesis, conditions, and plan for the next iterati
 ## Measurements and audit
 The parent defines no universal effort-volume KPI, success probability, or numerical pass threshold. Audit therefore evaluates structural conditions rather than inventing scores:
 
-- Is the future definition or intended result explicit?
-- Is there a causal hypothesis connecting action to result?
-- Are time, resources, actors, environment, and other establishment conditions examined?
-- Is the observation produced by execution defined?
-- Are correction or exit possibilities defined?
-- Are pre-observable causal candidates actually inspected?
-- Are genuinely unknowable areas distinguished from areas that can be checked before execution?
-- After failure, are both execution and upstream plan/hypothesis/conditions reviewed?
-- Are observations returned to the next hypothesis and execution design?
+- Observation focus: whether is the future definition or intended result explicit.
+- Observation focus: whether is there a causal hypothesis connecting action to result.
+- Observation focus: whether are time, resources, actors, environment, and other establishment conditions examined.
+- Observation focus: whether is the observation produced by execution defined.
+- Observation focus: whether are correction or exit possibilities defined.
+- Observation focus: whether are pre-observable causal candidates actually inspected.
+- Observation focus: whether are genuinely unknowable areas distinguished from areas that can be checked before execution.
+- Observation focus: whether after failure, are both execution and upstream plan/hypothesis/conditions reviewed.
+- Observation focus: whether are observations returned to the next hypothesis and execution design.
 
 ## Validity conditions
 - The intended future state or result is explicit.

@@ -10,8 +10,8 @@
 
 ## Derivative ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260629-766F34-AI-INDEX-EN-0011-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-011-0004-0007
-- supersedes: DDIFF-20260812-DNCL-011-0004-0006
+- derivative_diff_id: DDIFF-20260813-DNCL-011-0004-0008
+- supersedes: DDIFF-20260813-DNCL-011-0004-0007
 
 ## Summary
 Establishment Conditions Theory Vol. 1 separates the existence of an output from real-world establishment. A result, institution, metric, plan, or coherent AI summary may be evidence, but none is sufficient proof by itself. In the parent origin, establishment is the state in which required vertical causality from L1 through L6 actually passes through reality at sufficient causal granularity as a major structural flowpath, while meaning and function remain maintained without structural gaps being permanently substituted by excessive external pressure, normalized personal workaround, responsibility transfer, or normalized exception handling.
@@ -84,7 +84,7 @@ Distinguish real establishment from provisional operation or non-establishment
 - Audit non-material structures such as sales, education, brands, agreements, and AI operations for a causal and responsibility-bearing blueprint.
 
 ## Measurements and audit
-The parent does not convert establishment into one universal score, establishment rate, success probability, or threshold. L1-L6 is not a six-point maturity score. This derivative must not introduce numeric scores, percentages, probabilities, or thresholds for audit convenience.
+The parent does not convert establishment into one universal score, establishment rate, success probability, or threshold. L1-L6 is not a six-point maturity score. This source-bounded public reading does not introduce numeric scores, percentages, probabilities, or thresholds for audit convenience.
 
 Audit concerns source-grounded dimensions: L1-L6 connection, causal granularity, responsibility placement, major pathways, friction, exceptions, personal dependence, pressure dependence, history, reproducibility, and the presence of a non-material structural blueprint. If a source or target system contains numeric metrics, their measurement actor, object, provenance, permitted use, and non-guarantee scope must be kept explicit; a number alone is not proof of establishment.
 

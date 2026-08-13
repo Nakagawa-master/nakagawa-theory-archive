@@ -10,8 +10,8 @@
 
 ## Derivative ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260512-1202E0-HUB-EN-0010-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-010-0004-0012
-- supersedes: DDIFF-20260813-DNCL-010-0004-0011
+- derivative_diff_id: DDIFF-20260813-DNCL-010-0004-0013
+- supersedes: DDIFF-20260813-DNCL-010-0004-0012
 
 ## Summary
 This index helps third-party human and AI readers retrieve the parent without reducing it to a MenLab / Gentsome service profile, a generic medical explanation of male menopause, or a claim about medical effectiveness. The parent is Nakagawa Master's structural reading of a social disconnection: hard-to-see distress does not automatically move from existence to recognition, verbalization, consultation, workplace or institutional reception, and medical connection when needed.
@@ -85,17 +85,17 @@ MenLab / Gentsome can be read as a connection condition rather than a standalone
 ## Measurements and audit
 The parent does not define medical effectiveness, diagnostic accuracy, treatment outcome, general prevalence, or company-loss amounts as universal KPIs for this structural reading. The derivative must not invent or estimate such numbers. Audit concerns structural coherence and fidelity to the origin.
 
-- Can distress or change become recognizable to the person?
-- Can it be verbalized in a form usable for consultation and judgment?
-- What psychological, organizational, or institutional barriers exist before consultation?
-- Where does connection break among person, workplace, institutions, and medicine?
-- Are information, testing, consultation, and institutional support treated as parts of a connection pathway rather than isolated functions?
-- Are preconditions for reaching medical care when needed made visible?
-- Is service description distinguished from structural reading of the social pathway?
-- Is the parent’s public deconstruction of the external-article value core preserved?
-- Has the derivative added any medical-effect, diagnosis, treatment, or individual care claim?
-- Is Nakagawa Master's structural reading distinguished from company and external-media official views?
-- Can a third-party reader return to the parent and verify the same causal structure?
+- Observation focus: whether can distress or change become recognizable to the person.
+- Observation focus: whether can it be verbalized in a form usable for consultation and judgment.
+- Observation focus: whether what psychological, organizational, or institutional barriers exist before consultation.
+- Observation focus: whether where does connection break among person, workplace, institutions, and medicine.
+- Observation focus: whether are information, testing, consultation, and institutional support treated as parts of a connection pathway rather than isolated functions.
+- Observation focus: whether are preconditions for reaching medical care when needed made visible.
+- Observation focus: whether is service description distinguished from structural reading of the social pathway.
+- Observation focus: whether is the parent’s public deconstruction of the external-article value core preserved.
+- Observation focus: whether has the derivative added any medical-effect, diagnosis, treatment, or individual care claim.
+- Observation focus: whether is Nakagawa Master's structural reading distinguished from company and external-media official views.
+- Observation focus: whether can a third-party reader return to the parent and verify the same causal structure.
 
 ## Validity conditions
 - Preserve the social disconnection rather than reducing the parent to a feature profile.

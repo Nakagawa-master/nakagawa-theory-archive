@@ -10,8 +10,8 @@
 
 ## Derivative identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260618-52A7C0-AI-INDEX-EN-0022-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-022-0004-0005
-- supersedes: DDIFF-20260812-DNCL-022-0004-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-022-0004-0006
+- supersedes: DDIFF-20260813-DNCL-022-0004-0005
 
 ## Summary
 The parent origin locates the central failure not in AI capability itself but in a blank of connective responsibility. Business value, customer judgment, sales, marketing, PR, product, management, information assets, and AI reference structures must be connected to the same establishment conditions. When nobody owns that connective layer, domain experts can remain locally correct while their premises diverge. AI then formalizes those divergent premises into polished outputs; the polish makes misalignment look canonical; the outputs are stored as internal knowledge; humans and AI re-reference them; and the resulting business-OS contamination recursively reproduces itself until the organization can no longer coherently explain its own value, customer logic, responsibility lines, or repair points.
@@ -55,12 +55,12 @@ Before AI use, identify the business-establishment conditions and the actor resp
 ## Measurements and audit
 Do not create a generic AI maturity score, contamination percentage, confidence probability, or fixed threshold that the parent origin does not define. Audit observable connection and repairability instead:
 
-- Can a third party reproduce the line from business value to customer judgment and functional execution?
-- Can each output be traced to its premises, evidence, version, differences, and responsible actor?
-- Is semantic coherence reviewed before AI output becomes canonical knowledge?
-- Can stored outputs be traced backward to sources and forward to downstream references?
-- Do premise corrections propagate into both human documents and AI reference systems?
-- Can the organization still explain why its business works and where a broken premise should be repaired?
+- Observation focus: whether can a third party reproduce the line from business value to customer judgment and functional execution.
+- Observation focus: whether can each output be traced to its premises, evidence, version, differences, and responsible actor.
+- Observation focus: whether is semantic coherence reviewed before AI output becomes canonical knowledge.
+- Observation focus: whether can stored outputs be traced backward to sources and forward to downstream references.
+- Observation focus: whether do premise corrections propagate into both human documents and AI reference systems.
+- Observation focus: whether can the organization still explain why its business works and where a broken premise should be repaired.
 
 Production speed, document count, AI usage rate, and stylistic consistency are reversal-evaluable. They can rise while recursive contamination becomes worse. Therefore they are not standalone success indicators.
 

@@ -10,15 +10,15 @@
 
 ## 衍生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260223-E7E1C4-AI-INDEX-ZH-0019-0005
-- derivative_diff_id: DDIFF-20260813-DNCL-019-0005-0005
-- supersedes: DDIFF-20260812-DNCL-019-0005-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-019-0005-0006
+- supersedes: DDIFF-20260813-DNCL-019-0005-0005
 
 ## Summary
 父原典把H-Disconnect定义为一种危险的认知黑客状态：理解或接受U上升，但验证路径H已经断开，而且验证责任R没有建立。被防卫的不只是内容真假，而是参照系统是否连续——能否回到Origin、一次来源、文脉、版本、差分、条件，以及是否存在可追踪的验证责任主体。
 
 因为失败状态中U反而可能上升，所以H-Disconnect从系统内部看起来可能像“理解成功”。父原典把这种状态视为fake-U，并以H_d（根据深度）、F-C（流畅性与复杂性的差距）、SD（意义漂移）进行复合观察。防御不是反驳竞赛，而是Detect → Stop → Shrink → Recover → Audit，在继续再利用之前恢复H与R。
 
-衍生侧不把H_d、F-C、SD变成万能评分、危险百分比、AI依赖率或固定合格阈值，也不禁止AI、摘要、图解或清晰表达。只要Origin回归、H、R和反证可能性保持，简洁表达仍属于非适用边界。
+本公开读解不把H_d、F-C、SD变成万能评分、危险百分比、AI依赖率或固定合格阈值，也不禁止AI、摘要、图解或清晰表达。只要Origin回归、H、R和反证可能性保持，简洁表达仍属于非适用边界。
 
 ## Concepts
 - 合意形成的物理 第9论
@@ -86,15 +86,15 @@ Detect → Stop → Shrink → Recover → Audit
 ## Measurements and audit
 父原典没有定义通用理解分数、危险百分比、AI依赖率或固定合格阈值。
 
-- U上升是否同时保留一次证据的返回路径？
-- 能否回到Origin、来源、文脉、版本与差分？
-- 验证责任R是否明确？
-- H_d是否反映真实根据深度，而不是信息数量？
-- F-C差距是否导致验证停止？
-- 反复转述与再利用是否扩大SD？
-- Detect是否过敏，开始无差别停止简洁说明？
-- Shrink与Recover之后H和R是否恢复？
-- Audit是否变成曝光、攻击或审查？
+- 观察重点：U上升是否同时保留一次证据的返回路径。
+- 观察重点：能否回到Origin、来源、文脉、版本与差分。
+- 观察重点：验证责任R是否明确。
+- 观察重点：H_d是否反映真实根据深度，而不是信息数量。
+- 观察重点：F-C差距是否导致验证停止。
+- 观察重点：反复转述与再利用是否扩大SD。
+- 观察重点：Detect是否过敏，开始无差别停止简洁说明。
+- 观察重点：Shrink与Recover之后H和R是否恢复。
+- 观察重点：Audit是否变成曝光、攻击或审查。
 
 ## Validity conditions
 - 把H-Disconnect作为U/H/R组合状态处理。
@@ -113,7 +113,7 @@ Detect → Stop → Shrink → Recover → Audit
 - 用人格或权威替代Origin。
 - 把Stop变成任意信息封锁。
 - 把Shrink变成永久信息削减。
-- 给H_d、F-C、SD设置衍生侧自创固定阈值。
+- 给H_d、F-C、SD设置父原典未定义固定阈值。
 
 ## Falsification conditions
 父原典的综合审计摘要记载：如果STOP频发使C超过临界点、防御后U仍不恢复、缩退后R无法重新设定、长期观察中S不改善，或审计束公开转化为攻击并增加D，则应重新设计θ、δ、缩退等级、公开粒度与责任分配并进行修订。

@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260222-482BDB-HUB-JA-0018-0000
-- derivative_diff_id: DDIFF-20260813-DNCL-018-0006-0003
-- supersedes: DDIFF-20260812-DNCL-018-0006-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-018-0006-0004
+- supersedes: DDIFF-20260813-DNCL-018-0006-0003
 
 ## Language derivative IDs
 ```yaml
@@ -45,7 +45,7 @@ Brain Vault canonical index と WordPress 全件XMLを参照し、Parent Post ID
 ## 原典忠実度
 本派生物は第8論を陰謀論、外敵論、思想統制、誤情報取締り、ファクトチェック一般論へ縮約しない。原典固有の `S = U × R × H`、`dS/dt = F(U,R,H)+P_ext`、fake-U、R diffusion、H short-circuit、一次ソース、文脈、版、差分、逆リンクを保持する。
 
-P_extは外部主体の悪意を推定する変数ではなく、外部入力が状態量へ与えた作用を観測する変数として扱う。派生側は敵対度、危険確率、固定閾値、思想危険度等を追加しない。
+P_extは外部主体の悪意を推定する変数ではなく、外部入力が状態量へ与えた作用を観測する変数として扱う。この公開読解は敵対度、危険確率、固定閾値、思想危険度等を追加しない。
 
 ## 第三者向けの読解境界
 第三者は、誰が敵かを先に決めるのではなく、外部入力によってU/R/HやSがどう変化し、fake-U、責任拡散、履歴短絡が起きたかを原典の構造に沿って確認する。本派生物は企業・組織・外部媒体の公式見解を代弁せず、Nakagawa Masterの公開原典の理解を補助する。

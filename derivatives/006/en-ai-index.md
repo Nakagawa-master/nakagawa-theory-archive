@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260416-0B1B93-AI-INDEX-EN-0006-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-006-0004-0008
-- supersedes: DDIFF-20260812-DNCL-006-0004-0007
+- derivative_diff_id: DDIFF-20260813-DNCL-006-0004-0009
+- supersedes: DDIFF-20260813-DNCL-006-0004-0008
 
 ## Summary
 Civilizational Sovereignty Shift Theory Vol. 1 does not reject the Connection-Transition Strategy. It examines the narrowing conditions under which humans can still implement that strategy while retaining sovereignty. The parent separates the coherence of the strategy from the conditions that allow it to remain executable.
@@ -85,7 +85,7 @@ The Connection-Transition Strategy remains coherent while its executable future 
 - Verify that humans can still test institutional changes, reverse failed choices, and revise transition order.
 
 ## Measurements and audit
-The parent does not define derivative-created numerical KPIs. This index therefore does not invent percentages, thresholds, probabilities, success rates, or synthetic scores. Audit is structural: distinguish strategy content from execution conditions; verify a real dual-operation period; compare technology speed and institutional-translation speed; inspect short-term monetization pressure, extraction structures, intellectual asymmetry, attribution imbalance, and the remaining human-sovereign capacity to experiment and revise.
+The parent does not define source-absent additional numerical KPIs. This index therefore does not invent percentages, thresholds, probabilities, success rates, or synthetic scores. Audit is structural: distinguish strategy content from execution conditions; verify a real dual-operation period; compare technology speed and institutional-translation speed; inspect short-term monetization pressure, extraction structures, intellectual asymmetry, attribution imbalance, and the remaining human-sovereign capacity to experiment and revise.
 
 Reversal-evaluation is preserved by observing the opposite side of the warning. If dual operation, institutional translation, experimentation, and revision remain stable, and monetization pressure or asymmetry do not reduce implementation capacity, then the warning should weaken rather than be treated as an irreversible prediction.
 

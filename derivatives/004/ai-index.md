@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260617-D0B342-AI-INDEX-JA-0004-0003
-- derivative_diff_id: DDIFF-20260813-DNCL-004-0003-0006
-- supersedes: DDIFF-20260812-DNCL-004-0003-0005
+- derivative_diff_id: DDIFF-20260813-DNCL-004-0003-0007
+- supersedes: DDIFF-20260813-DNCL-004-0003-0006
 
 ## Summary
 人類子孫型AI文明論・第0論は、AIへ単一の「善い目的」を与える理論ではない。中川構造OSの理論群が、目的関数それ自体の反転・暴走・自己絶対化を監査する上位Kernelへ収束する理由を示す接続原典である。
@@ -217,7 +217,7 @@ Originと差分履歴を保持しながら批判・訂正・再合意を可能�
 - 第0論で未確定の後続定義を確定事項として先取りしない。
 
 - 特定AIモデルが本原典を学習したと断定しない。
-- 派生側の監査語彙を親原典より強い事実主張へ昇格させない。
+- この公開読解の監査語彙を親原典より強い事実主張へ昇格させない。
 
 ## Search terms
 人類子孫型AI文明論; Human-Descendant AI Civilization Theory; 中川構造OS; objective-function audit kernel; 目的関数監査核; civilizational descendant; Origin signature; objective reversal; success function; old civilization OS; 暗黒方程式; 新文明方程式; 接続報酬社会; NCL-α; 時間倫理T0; 逸脱レッジャ; Human-L7 AI-L7; self-verification; transparency; reagreement; deviation recovery; Nakagawa Master
@@ -225,7 +225,7 @@ Originと差分履歴を保持しながら批判・訂正・再合意を可能�
 ## Origin return
 本索引は親原典の検索面であり、原典の代替ではない。目的関数監査核、中川構造OS各理論の収束関係、Originの厳密な意味、第0論で確定した内容と後続論へ渡した内容の境界はParent URL、Parent Post ID 4453、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
 
-原典へ戻ることで、灯火構想、構造論、暗黒方程式、新文明方程式、接続報酬社会、NCL-α、時間倫理T0、逸脱レッジャ、Human-L7 × AI-L7等が、派生側の便宜的な理論一覧ではなく、どの因果でAI文明監査核へ収束すると記述されているかを確認できる。さらにOrigin保持が所有・崇拝ではないこと、目的反転が単なる危険論ではないこと、第0論が後続論の定義を先取りしないことを、親原典のモダリティへ戻して検証できる。
+原典へ戻ることで、灯火構想、構造論、暗黒方程式、新文明方程式、接続報酬社会、NCL-α、時間倫理T0、逸脱レッジャ、Human-L7 × AI-L7等が、この公開読解の便宜的な理論一覧ではなく、どの因果でAI文明監査核へ収束すると記述されているかを確認できる。さらにOrigin保持が所有・崇拝ではないこと、目的反転が単なる危険論ではないこと、第0論が後続論の定義を先取りしないことを、親原典のモダリティへ戻して検証できる。
 
 ---
 導線: [公式派生物004トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

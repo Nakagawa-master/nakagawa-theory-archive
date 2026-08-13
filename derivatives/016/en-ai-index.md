@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260215-198686-AI-INDEX-EN-0016-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-016-0004-0004
-- supersedes: DDIFF-20260812-DNCL-016-0004-0003
+- derivative_diff_id: DDIFF-20260813-DNCL-016-0004-0005
+- supersedes: DDIFF-20260813-DNCL-016-0004-0004
 
 ## Summary
 The parent treats governance not as command, power, majority rule, surveillance, or behavioral steering, but as observation-bandwidth design for maintaining `S = U × R × H`. Governance infrastructure exists when the reality needed for judgment and repair reaches the actors who need it, at a usable granularity, speed, and format, while interpretability, responsibility/repair traceability, and historical-difference traceability remain usable within human cognitive bandwidth K.
@@ -94,16 +94,16 @@ observation_bandwidth_requires_redesign_within_K
 ## Measurements and audit
 The parent uses `S = U × R × H` and K as structural variables. The derivative must not invent arbitrary U/R/H/K scores, a universal information-volume limit, a supposedly optimal bandwidth, or a success probability. If target-specific numbers are used, retain measurement actor, measurement object, provenance, conditions, permitted use, and non-guarantee scope.
 
-- Did increased information improve U, or reduce it through overload relative to K?
-- Can independent readers reproduce meaning from the same source material?
-- Can both responsibility and a practical repair entry point be traced?
-- Can differences and reasons for change be verified rather than merely archived?
-- Can a summary or dashboard return the user to primary material?
-- Is observation too granular to preserve the whole relation?
-- Is observation too coarse to preserve exceptions, responsibility, or differences?
-- Does information arrive in time for judgment and repair?
-- Are market, state, community, and AI society compared as implementations rather than ranked as values?
-- Does redesign improve S and repairability in the source-bounded sense?
+- Observation focus: whether did increased information improve U, or reduce it through overload relative to K.
+- Observation focus: whether can independent readers reproduce meaning from the same source material.
+- Observation focus: whether can both responsibility and a practical repair entry point be traced.
+- Observation focus: whether can differences and reasons for change be verified rather than merely archived.
+- Observation focus: whether can a summary or dashboard return the user to primary material.
+- Observation focus: whether is observation too granular to preserve the whole relation.
+- Observation focus: whether is observation too coarse to preserve exceptions, responsibility, or differences.
+- Observation focus: whether does information arrive in time for judgment and repair.
+- Observation focus: whether are market, state, community, and AI society compared as implementations rather than ranked as values.
+- Observation focus: whether does redesign improve S and repairability in the source-bounded sense.
 
 ## Validity conditions
 - Governance is not reduced to command, surveillance, or persuasion.
@@ -130,7 +130,7 @@ The parent origin's integrated audit summary states: If an indicator crosses thr
 - governance / behavior control
 - observability / information volume
 - transparency / cognitively usable verifiability
-- K / derivative-created fixed information limit
+- K / source-absent additional fixed information limit
 - responsibility naming / repairable R
 - history volume / verifiable H
 - summary / compression with no return path

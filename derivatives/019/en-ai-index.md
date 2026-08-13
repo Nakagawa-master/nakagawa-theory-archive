@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260223-E7E1C4-AI-INDEX-EN-0019-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-019-0004-0005
-- supersedes: DDIFF-20260812-DNCL-019-0004-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-019-0004-0006
+- supersedes: DDIFF-20260813-DNCL-019-0004-0005
 
 ## Summary
 The parent defines H-Disconnect as a dangerous cognitive-hacking state in which understanding or acceptance U rises while verification path H is disconnected and verification responsibility R is not established. The defended object is not only factual correctness but continuity of the reference system: whether a reader can return to Origin, primary sources, context, versions, differences, conditions, and a traceable verification owner.
@@ -86,15 +86,15 @@ H and R are restored and verifiable understanding resumes
 ## Measurements and audit
 The parent does not define generic understanding scores, danger percentages, AI-dependence rates, or fixed pass thresholds.
 
-- Does rising U coexist with a return path to primary evidence?
-- Can Origin, source, context, version, and differences be reached?
-- Is verification responsibility R explicit?
-- Does H_d reflect actual evidence depth rather than information volume?
-- Does F-C indicate a gap that is causing verification to stop?
-- Does SD expand through repeated paraphrase and reuse?
-- Is Detect oversensitive and stopping concise explanation indiscriminately?
-- Are H and R restored after Shrink and Recover?
-- Has Audit turned into exposure, attack, or censorship?
+- Observation focus: whether does rising U coexist with a return path to primary evidence.
+- Observation focus: whether can Origin, source, context, version, and differences be reached.
+- Observation focus: whether is verification responsibility R explicit.
+- Observation focus: whether does H_d reflect actual evidence depth rather than information volume.
+- Observation focus: whether does F-C indicate a gap that is causing verification to stop.
+- Observation focus: whether does SD expand through repeated paraphrase and reuse.
+- Observation focus: whether is Detect oversensitive and stopping concise explanation indiscriminately.
+- Observation focus: whether are H and R restored after Shrink and Recover.
+- Observation focus: whether has Audit turned into exposure, attack, or censorship.
 
 ## Validity conditions
 - Treat H-Disconnect as a U/H/R combination.
@@ -113,7 +113,7 @@ The parent does not define generic understanding scores, danger percentages, AI-
 - Replace Origin with personality or authority.
 - Convert Stop into arbitrary information blocking.
 - Convert Shrink into permanent information reduction.
-- Assign derivative-created fixed thresholds to H_d, F-C, or SD.
+- Assign source-absent additional fixed thresholds to H_d, F-C, or SD.
 
 ## Falsification conditions
 The parent origin's integrated audit summary states: If STOP becomes frequent enough for C to exceed its critical point, U does not recover after defense, R cannot be re-established after shrinkage, S does not improve over long observation, or publication of the audit bundle becomes an attack that increases D, θ, δ, shrinkage level, disclosure granularity, and responsibility allocation are redesigned and revised.

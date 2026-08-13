@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260517-B80E39-AI-INDEX-EN-0002-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-002-0004-0005
-- supersedes: DDIFF-20260812-DNCL-002-0004-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-002-0004-0006
+- supersedes: DDIFF-20260813-DNCL-002-0004-0005
 
 ## Summary
 AKI-002 analyzes a form of bad causality in which praise, gratitude, expectation, or opportunity substitutes for explicit confirmation of compensation, rights, attribution, usage scope, responsibility allocation, continuing compensation, and the freedom to refuse. The parent original does not reject praise. Its concern is the structural reversal that occurs when language that appears to recognize value stops the process of determining where that value belongs and under what conditions it may be used.
@@ -114,7 +114,7 @@ The parent original does not define a general exploitation score, probability, p
 - Whether the creator’s price sense, negotiation power, professional value, or refusal freedom weakens across repeated interactions.
 - Whether praise is added on top of condition-setting or used in place of condition-setting.
 
-These observations are not derivative-created legal tests or generic labor KPIs. Their function is to keep the parent causal line reversible and comparable: if the hypothesized mechanism is present, the positive-language event and the displacement of conditions should be structurally connected to one-way value transfer and erosion; if those connections are absent, the AKI-002 application should weaken.
+These observations are not source-absent additional legal tests or generic labor KPIs. Their function is to keep the parent causal line reversible and comparable: if the hypothesized mechanism is present, the positive-language event and the displacement of conditions should be structurally connected to one-way value transfer and erosion; if those connections are absent, the AKI-002 application should weaken.
 
 ## Validity conditions
 - Praise, gratitude, expectation, or opportunity functions as pressure to accept additional burden.

@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260223-E7E1C4-HUB-JA-0019-0000
-- derivative_diff_id: DDIFF-20260813-DNCL-019-0006-0003
-- supersedes: DDIFF-20260812-DNCL-019-0006-0002
+- derivative_diff_id: DDIFF-20260813-DNCL-019-0006-0004
+- supersedes: DDIFF-20260813-DNCL-019-0006-0003
 
 ## Language derivative IDs
 ```yaml
@@ -45,7 +45,7 @@ Brain Vault canonical index と WordPress 全件XMLを参照し、Parent Post ID
 ## 原典忠実度
 本派生物は第9論を反AI論、メディアリテラシー一般論、ファクトチェック、心理操作対策だけへ縮約しない。H-DisconnectのU/H/R条件、fake-U、H_d、F-C、SD、Detect → Stop → Shrink → Recover → Audit、Origin縮退、HとRの回復を保持する。
 
-派生側はH_d、F-C、SDへ理解度点数、危険度％、AI依存率、固定合格閾値を追加しない。分かりやすさ、要約、AI利用そのものを禁止せず、Origin回帰・H・R・反証可能性が保持される場合を非該当として残す。
+この公開読解はH_d、F-C、SDへ理解度点数、危険度％、AI依存率、固定合格閾値を追加しない。分かりやすさ、要約、AI利用そのものを禁止せず、Origin回帰・H・R・反証可能性が保持される場合を非該当として残す。
 
 ## 第三者向けの読解境界
 第三者は、AIや要約の使用有無そのものではなく、理解感だけが先行してHとRが切断されていないか、Originへ戻れるか、反証可能性が残っているかを確認する。本派生物は企業・組織・外部媒体の公式見解を代弁せず、Nakagawa Masterの公開原典の理解を補助する。

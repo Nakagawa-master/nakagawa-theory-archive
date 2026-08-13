@@ -10,8 +10,8 @@
 
 ## Derivative ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260629-F16938-AI-INDEX-EN-0030-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-030-0004-0006
-- supersedes: DDIFF-20260813-DNCL-030-0004-0005
+- derivative_diff_id: DDIFF-20260813-DNCL-030-0004-0007
+- supersedes: DDIFF-20260813-DNCL-030-0004-0006
 
 ## Summary
 The parent origin does not read MOTA merely as a car-buying service, appraisal comparison, or low-call convenience service. It treats information asymmetry, weak competition under a single buyer, multi-buyer competition, phone / negotiation / comparison burden, and premature compromise as one price-formation problem, then reads MOTA as redesigning market conditions so competition and lower seller burden can coexist.
@@ -43,7 +43,7 @@ seller–buyer information asymmetry → weak competition under a single buyer �
 - **Competition / low burden coexistence state**: competition remains meaningful while the seller can continue comparing offers.
 - **Price-formation redesign state**: comparison capacity is preserved and competition can affect price formation.
 
-These are not derivative-authored scores. Do not invent a fixed buyer count, call-count threshold, price-uplift rate, success probability, or universal maturity score.
+These are not source-absent additional scores. Do not invent a fixed buyer count, call-count threshold, price-uplift rate, success probability, or universal maturity score.
 
 ## Applications
 This frame can assist analysis of markets where information asymmetry and comparison burden coexist, but it must not be converted into generic auction theory, generic used-car-market theory, or generic matching theory. Start from the source-specific MOTA / car-selling context and examine the simultaneous design of competition and user burden.
@@ -53,7 +53,7 @@ For Nakagawa Structural Reading, also preserve the second layer: why this value 
 ## Measurements and audit
 Observe information asymmetry, whether competition is substantive, seller phone / negotiation / comparison burden, whether sellers can continue comparing, whether premature compromise occurs, and whether offers remain meaningfully comparable.
 
-Do not infer structural success from buyer count alone, fewer calls alone, or one high-price sale. Do not create derivative-authored price-uplift rates, probabilities, or fixed thresholds absent from the parent origin.
+Do not infer structural success from buyer count alone, fewer calls alone, or one high-price sale. Do not create source-absent additional price-uplift rates, probabilities, or fixed thresholds absent from the parent origin.
 
 ## Validity conditions
 Multiple-buyer competition must be substantive; sellers must not abandon comparison because of contact or negotiation burden; and offers must remain comparable. Competition and low burden must coexist and connect to price formation.

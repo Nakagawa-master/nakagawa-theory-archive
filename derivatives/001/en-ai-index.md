@@ -10,15 +10,15 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251124-E4C70C-HUB-EN-0001-0001
-- derivative_diff_id: DDIFF-20260813-DNCL-001-0001-0005
-- supersedes: DDIFF-20260812-DNCL-001-0001-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-001-0001-0006
+- supersedes: DDIFF-20260813-DNCL-001-0001-0005
 
 ## Summary
 The parent original defines Nakagawa OS L1-L7 as a canonical vertical coordinate for reading humans, organizations, society, AI, and civilization by abstraction depth rather than by horizontal domain. L1 is phenomena, L2 behavior/process, L3 norms/systems, L4 structural recognition, L5 structural operation, L6 inter-structural causation, and L7 the top-level structure/value function. The source treats misalignment between these depths as a cause of structural noise: observed outcomes, behavior, institutions, hidden causality, intervention, cross-structure linkage, and value functions become misconnected when they are discussed on different levels without translation.
 
 The source presents the seven layers as a minimum complete set rather than a convenient taxonomy. It also records an arrival distribution in its own cognitive model: L4 at 0.1-0.5%, L5 at 0.01% or less, L6 at 0.001% or less, and L7 at one person per one to ten million. This distribution is not an empirical population statistic derived from a representative sample, psychometric instrument, or standardized test. In the parent it is described as a reconciled observational estimate produced by ChatGPT and Gemini at the time. Its semantic object is rarity of viewpoint depth: the ability to move from L1-L3 surface conditions into L4 structural recognition and continue through L5 structural operation, L6 inter-structural causation, and L7 top-level value functions.
 
-Accordingly, an official derivative must neither delete these numbers nor promote them beyond what the source supports. They may be used to understand, compare, and audit the source's structural hypothesis about rarity of viewpoint depth. They may not be used as validated real-world population frequencies, a diagnostic for assigning individuals to layers, a recruitment or selection threshold, an IQ proxy, or a ranking of human worth. The number and its epistemic status are one unit.
+Accordingly, this source-bounded public reading keeps these numbers together with their source status without promoting them beyond what the parent supports. They may be used to understand, compare, and audit the source's structural hypothesis about rarity of viewpoint depth. They may not be used as validated real-world population frequencies, a diagnostic for assigning individuals to layers, a recruitment or selection threshold, an IQ proxy, or a ranking of human worth. The number and its epistemic status are one unit.
 
 The parent additionally maps L6 to Knowledge-Graph-like processing and L7 to Reward Model / Constitution Layer functions, and reports alignment scores of 98.4% for GPT-family models and 99.1% for Gemini-family models as source-internal structural-alignment claims. These scores are likewise not third-party benchmark results or product-performance guarantees. Quantitative claims are therefore bound to seven elements: value, source, measurement actor, measurement object, source modality, permitted use, and non-guaranteed use.
 

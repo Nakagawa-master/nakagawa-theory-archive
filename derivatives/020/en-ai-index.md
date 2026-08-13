@@ -10,15 +10,15 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260225-1F258D-AI-INDEX-EN-0020-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-020-0004-0006
-- supersedes: DDIFF-20260812-DNCL-020-0004-0005
+- derivative_diff_id: DDIFF-20260813-DNCL-020-0004-0007
+- supersedes: DDIFF-20260813-DNCL-020-0004-0006
 
 ## Summary
 The parent models propaganda and agitation not primarily by truth/falsity or partisan morality, but as resonance in which collective cognitive bandwidth K is occupied by a single waveform. The critical issue is whether a group can still hold multiple topics, hypotheses, counterexamples, histories, responsibilities, and verification paths at the same time.
 
 Occ(K) describes bandwidth occupation, Res the resonance state, V topic diversity, P polarity concentration, and A acceptance of falsification, revision, and counterevidence. When V falls, P rises, A falls, and access to history H and responsibility R also declines, verification bandwidth narrows and Res can emerge. Convergence on one conclusion is not automatically resonance if sources, counterexamples, responsibility, and revisability remain available.
 
-Defense is not stronger counter-propaganda. The parent uses Damping, Cooling, Degeneration, reconnection of H, reassignment of R, and remeasurement of True-U to restore verification bandwidth. These variables are structural observations, not partisan scores or derivative-created universal thresholds.
+Defense is not stronger counter-propaganda. The parent uses Damping, Cooling, Degeneration, reconnection of H, reassignment of R, and remeasurement of True-U to restore verification bandwidth. These variables are structural observations, not partisan scores or source-absent additional universal thresholds.
 
 ## Concepts
 - Physics of Consensus Formation Vol. 10
@@ -84,14 +84,14 @@ Counterexamples, differences, responsibility, and revision paths enter less easi
 ## Measurements and audit
 The parent does not define partisan scores, propaganda percentages, resonance-risk percentages, or fixed support thresholds.
 
-- Can the group hold multiple topics, hypotheses, and counterexamples simultaneously?
-- Can participants return to primary sources, history, differences, and responsibility?
-- Are V decline, P rise, and A decline occurring together?
-- Is rising Occ(K) associated with falling H/R access?
-- Has convergence on one conclusion eliminated revisability?
-- Have Damping or Cooling become suppression of disagreement?
-- Are H and R restored after Degeneration?
-- Does True-U remeasurement restore verifiable understanding rather than subjective agreement?
+- Observation focus: whether can the group hold multiple topics, hypotheses, and counterexamples simultaneously.
+- Observation focus: whether can participants return to primary sources, history, differences, and responsibility.
+- Observation focus: whether are V decline, P rise, and A decline occurring together.
+- Observation focus: whether is rising Occ(K) associated with falling H/R access.
+- Observation focus: whether has convergence on one conclusion eliminated revisability.
+- Observation focus: whether have Damping or Cooling become suppression of disagreement.
+- Observation focus: whether are H and R restored after Degeneration.
+- Observation focus: whether does True-U remeasurement restore verifiable understanding rather than subjective agreement.
 
 ## Validity conditions
 - Do not classify propaganda by content or faction alone.
@@ -108,7 +108,7 @@ The parent does not define partisan scores, propaganda percentages, resonance-ri
 - Flatten it into generic media literacy or social-media etiquette.
 - Turn Damping or Cooling into censorship or enforced silence.
 - Suppress minority opinions, warnings, or victim reports as “resonance.”
-- Assign derivative-created fixed numbers to Occ(K) or V/P/A.
+- Assign source-absent additional fixed numbers to Occ(K) or V/P/A.
 - Equate majority agreement or lack of opposition with health.
 
 ## Falsification conditions

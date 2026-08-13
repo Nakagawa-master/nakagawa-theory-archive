@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260215-71CEDD-AI-INDEX-EN-0021-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-021-0004-0005
-- supersedes: DDIFF-20260812-DNCL-021-0004-0004
+- derivative_diff_id: DDIFF-20260813-DNCL-021-0004-0006
+- supersedes: DDIFF-20260813-DNCL-021-0004-0005
 
 ## Summary
 The parent treats deviation not primarily as a violation to punish, but as a difference D between design and operation that must become observable so understanding U, repair responsibility R, and history H can recover and restore S = U × R × H. Immunity is therefore not the absence of deviation. It is the ability to expose a difference, fix a repair entry point, preserve history, and return the system to a repairable stable state quickly.
@@ -91,14 +91,14 @@ D is damped
 ## Measurements and audit
 The parent does not define universal immunity scores, fixed detection percentages, or fixed recovery-time pass thresholds.
 
-- Does higher D_det coexist with lower D_loss?
-- Does lower D_det reflect fewer deviations or reporting suppression?
-- After difference disclosure, is R fixed as a repair entry point?
-- Is H preserved as differences, change reasons, and repair history?
-- Is S recovery time becoming shorter?
-- Does stronger punishment increase reporting suppression, concealment, or responsibility avoidance?
-- Has difference disclosure become exposure, retaliation, or person-targeted attack?
-- Is health being inferred from detected counts alone?
+- Observation focus: whether does higher D_det coexist with lower D_loss.
+- Observation focus: whether does lower D_det reflect fewer deviations or reporting suppression.
+- Observation focus: whether after difference disclosure, is R fixed as a repair entry point.
+- Observation focus: whether is H preserved as differences, change reasons, and repair history.
+- Observation focus: whether is S recovery time becoming shorter.
+- Observation focus: whether does stronger punishment increase reporting suppression, concealment, or responsibility avoidance.
+- Observation focus: whether has difference disclosure become exposure, retaliation, or person-targeted attack.
+- Observation focus: whether is health being inferred from detected counts alone.
 
 ## Validity conditions
 - Do not define immunity as zero deviation.
@@ -116,7 +116,7 @@ The parent does not define universal immunity scores, fixed detection percentage
 - Equate transparency or disclosure volume with immunity.
 - Reduce the source to generic whistleblowing promotion or compliance.
 - Use difference disclosure for exposure, retaliation, or person-targeted attack.
-- Assign derivative-created fixed pass values to D_det, D_loss, or recovery time.
+- Assign source-absent additional fixed pass values to D_det, D_loss, or recovery time.
 
 ## Falsification conditions
 The parent origin's integrated audit summary states: The model is reviewed by checking whether rising D_det coincides with lower D_loss and shorter S recovery time; if D_det falls while D_loss remains unknown or rises, or increased difference disclosure is accompanied by falling U/R, formal disclosure, or K-overload noise, the distance, granularity, and indexing of the disclosure bandwidth are redesigned.

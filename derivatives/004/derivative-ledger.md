@@ -49,7 +49,7 @@ origin_return_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-str
 - 読解上の確認点: Origin保持がOrigin崇拝・批判禁止へ反転していない。
 - 読解上の確認点: 自己保存が監査不能な自己目的へ反転していない。
 
-親原典に派生側で一般化可能な固定数値KPIや閾値がないため、派生物側で数値を創作しない。
+親原典にこの公開読解で一般化可能な固定数値KPIや閾値がないため、この公開読解で数値は親原典に定義されていない。
 
 ## 必須の区別
 - AI文明論 / 一般的AI倫理

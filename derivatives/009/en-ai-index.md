@@ -10,8 +10,8 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260608-5A13AA-AI-INDEX-EN-0009-0004
-- derivative_diff_id: DDIFF-20260813-DNCL-009-0004-0006
-- supersedes: DDIFF-20260812-DNCL-009-0004-0005
+- derivative_diff_id: DDIFF-20260813-DNCL-009-0004-0007
+- supersedes: DDIFF-20260813-DNCL-009-0004-0006
 
 ## Summary
 The parent analyzes a bad-causality structure in which a target value is mistaken for an established future definition and effort is demanded before establishment conditions, causal lines, verification conditions, correction conditions, and responsibility placement have been sufficiently designed. The theory does not reject effort, ambitious targets, or KPIs themselves. It distinguishes a verifiable effort demand from forced effort that makes the field absorb an unverified design.
@@ -97,16 +97,16 @@ The effort demand stabilizes as a responsibility-transfer device
 ## Measurements and audit
 The parent defines no universal insufficient-effort rate, fatigue rate, trust rate, management score, or success probability. Audit therefore remains structural rather than inventing derivative metrics:
 
-- Are target value and future definition explicitly distinguished?
-- Are establishment conditions examined and shared upstream?
-- Is the causal line from present action to future result expressed as a hypothesis?
-- Is it defined what each execution step is testing?
-- Are correction or exit possibilities open when observations contradict the design?
-- Are design responsibility, resource responsibility, execution responsibility, observation/reporting responsibility, and evaluation responsibility distinguished?
-- Are ambiguous target interpretation and resource gaps being silently transferred to the field?
-- When outcomes fail, are hypotheses, conditions, resources, and design re-examined as well as execution?
-- Are exhaustion, distrust, and silence treated as information about the structure rather than automatically as personal weakness?
-- Does failure information return to the next design so that learning and challenge-taking remain possible?
+- Observation focus: whether are target value and future definition explicitly distinguished.
+- Observation focus: whether are establishment conditions examined and shared upstream.
+- Observation focus: whether is the causal line from present action to future result expressed as a hypothesis.
+- Observation focus: whether is it defined what each execution step is testing.
+- Observation focus: whether are correction or exit possibilities open when observations contradict the design.
+- Observation focus: whether are design responsibility, resource responsibility, execution responsibility, observation/reporting responsibility, and evaluation responsibility distinguished.
+- Observation focus: whether are ambiguous target interpretation and resource gaps being silently transferred to the field.
+- Observation focus: whether when outcomes fail, are hypotheses, conditions, resources, and design re-examined as well as execution.
+- Observation focus: whether are exhaustion, distrust, and silence treated as information about the structure rather than automatically as personal weakness.
+- Observation focus: whether does failure information return to the next design so that learning and challenge-taking remain possible.
 
 ## Validity conditions
 - Target value and future definition are distinguished.
