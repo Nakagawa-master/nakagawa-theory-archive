@@ -54,7 +54,7 @@ Kernelが正しいことと、Runtimeが安全に運用できることは同じ�
 ## 成功判定
 成功は「停止できた」「再開できた」だけでは判定しません。Detectが異常を拾い、Stopが誤状態の拡散を止め、Shrinkが検証可能性を保持し、RecoverがOriginと一次ログに基づき、Auditが攻撃化せず、再起動条件が明示されていることが必要です。
 
-S/C/D、R、θ、δ等に親原典由来の記号・関係がある場合は保持しますが、派生側で固定停止閾値、成功率、復旧時間、危険度スコアを新設しません。対象固有の数値は測定主体、対象、出典、条件、用途、非保証範囲と一体で扱います。
+S/C/D、R、θ、δ等に親原典由来の記号・関係がある場合は保持します。固定停止閾値、成功率、復旧時間、危険度スコアは親原典に定義されていません。対象固有の数値は測定主体、対象、出典、条件、用途、非保証範囲と一体で扱います。
 
 ## 限界
 本論を一般的なBCP、障害復旧、サイバーセキュリティ手順へ縮約しません。接点はあっても、Kernel/Runtime、停止権限、Origin、再起動条件、Auditの非攻撃化まで統合した実行時ガバナンスが中心です。
@@ -68,7 +68,7 @@ Stopを恣意的処罰へ、Originを人格的権威へ、Auditを晒しへ、Sh
 
 「公開監査は多いほどよい」ともしません。Auditが攻撃化してDを増幅するなら防衛インフラとして失敗します。
 
-第三者の人間・第三者AIは、Kernel/Runtime、`Detect → Stop → Shrink → Recover → Audit`、停止権限R、Origin、再起動条件、反証・改訂条件をParent URLへ戻って確認します。
+Kernel/Runtime、`Detect → Stop → Shrink → Recover → Audit`、停止権限R、Origin、再起動条件、反証・改訂条件はParent URLで第三者が確認できます。
 
 ---
 導線: [公式派生物017トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
