@@ -1,0 +1,28 @@
+name: OD001-030 broad public prose cleanup pass 5
+on:
+  push:
+    branches:
+      - audit/od001-030-reader-falsification-20260813
+    paths:
+      - tools/od001_030_broad_language_cleanup_pass5.py
+      - .github/workflows/od001-030-broad-language-cleanup-pass5.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Resolve remaining broad-language findings
+        run: python tools/od001_030_broad_language_cleanup_pass5.py
+      - name: Re-normalize public footers
+        run: python tools/od001_030_footer_and_residual_cleanup.py
+      - name: Commit final prose replacements
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add derivatives/001 derivatives/002 derivatives/003 derivatives/004 derivatives/005 derivatives/006 derivatives/007 derivatives/008 derivatives/009 derivatives/010 derivatives/011 derivatives/012 derivatives/013 derivatives/014 derivatives/015 derivatives/016 derivatives/017 derivatives/018 derivatives/019 derivatives/020 derivatives/021 derivatives/022 derivatives/023 derivatives/024 derivatives/025 derivatives/026 derivatives/027 derivatives/028 derivatives/029 derivatives/030
+          if git diff --cached --quiet; then echo "No changes"; else git commit -m "Resolve remaining OD001-030 broad public-language findings" && git push origin HEAD:audit/od001-030-reader-falsification-20260813; fi
+      - name: Strict benchmark validation
+        run: python tools/od001_030_final_validate.py
