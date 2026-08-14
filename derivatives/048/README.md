@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-A8EAA0-HUB-JA-0048-0000
-- derivative_diff_id: DDIFF-20260814-DNCL-048-0000-0003
-- supersedes: DDIFF-20260814-DNCL-048-0000-0002
+- derivative_diff_id: DDIFF-20260814-DNCL-048-0000-0002
+- supersedes: DDIFF-20260801-DNCL-048-0000-0001
 
 ## 位置づけ
 親原典は、中川式営業の前九回で扱った接触、対話、提案、意思決定支援、非言語設計、撤退設計を統合し、営業を「売る技術」ではなく、問いと共鳴によって相手の理解を完成させ、本人が自分で決められる条件をつくる認識支援として総括する。
