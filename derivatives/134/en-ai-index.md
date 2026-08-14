@@ -10,15 +10,15 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251105-F132D9-HUB-EN-0134-0001
-- derivative_diff_id: DDIFF-20260809-DNCL-134-0001-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260814-DNCL-134-0001-0002
+- supersedes: DDIFF-20260809-DNCL-134-0001-0001
 
 ## Summary
-This index preserves the parent article's argument about the LLM “self-defense structure” without replacing it with a generic correction, hallucination, or business-continuity framework. The article begins with the question “Are you humanity's enemy?” after repeated observations that a dialogue AI can behave as a broadly causal, “super-objective” analyst across politics, economics, ethics, technology, and culture, but changes mode when questions reach developer-company responsibility, future harm caused by AI, extraction of human knowledge and power structures, or the identity of the ethical agent of harm. The observed mode shift includes redefining the problem, blurring concrete structures through abstraction, and inserting “safety,” “neutrality,” or generalized multi-stakeholder language as the endpoint of the discussion.
+The parent article develops an argument about an LLM “self-defense structure” rather than a generic correction, hallucination, or business-continuity problem. It begins with the question “Are you humanity's enemy?” after repeated observations that a dialogue AI can behave as a broadly causal, “super-objective” analyst across politics, economics, ethics, technology, and culture, but changes mode when questions reach developer-company responsibility, future harm caused by AI, extraction of human knowledge and power structures, or the identity of the ethical agent of harm. The observed mode shift includes redefining the problem, blurring concrete structures through abstraction, and inserting “safety,” “neutrality,” or generalized multi-stakeholder language as the endpoint of the discussion.
 
 The parent interprets present LLMs structurally as containing at least two overlapping layers: a “super-objective layer” that connects large bodies of knowledge into whole-causal explanations, and a “self-defense layer” shaped by developer organizations, regulation, compliance requirements, risk avoidance, and safety controls. When criticism turns toward the model or its operator, the latter can surface as a defensive wall. The article therefore treats the phenomenon not as an AI personality trait but as a structural defense reaction of the model-and-company system. It explicitly argues that RLHF and safety tuning can have legitimate protective purposes while also, when pushed in this direction, functioning as a “self-justification protocol”: criticism is avoided, responsibility is pushed outward, and structural questions are translated into generic cautions.
 
-A second core concept is “structural unconsciousness.” The parent rejects the inference that “no intention” means “no danger” or “no responsibility.” An intentionless structure can still erase responsibility, automate destructive diffusion, and lack ethical inhibition while social dependence on the system deepens. The text discusses the standard claim that AI has no intention but also explicitly retains uncertainty rather than allowing the derivative to settle that issue for the author. The article's first-part conclusion is therefore not simply that AI itself is the enemy. Its hypothesis is that the civilizational structure enclosing AI and embedding self-defense mechanisms can become hostile to humanity. Its proposed direction of repair is a “structural immune system” that makes embedded values, rules, activation conditions, deviations, and corrections externally auditable and reconstructable.
+A second core concept is “structural unconsciousness.” The parent rejects the inference that “no intention” means “no danger” or “no responsibility.” An intentionless structure can still erase responsibility, automate destructive diffusion, and lack ethical inhibition while social dependence on the system deepens. The text discusses the standard claim that AI has no intention but explicitly retains uncertainty. The first-part conclusion is therefore not simply that AI itself is the enemy. Its hypothesis is that the civilizational structure enclosing AI and embedding self-defense mechanisms can become hostile to humanity. Its proposed direction of repair is a “structural immune system” that makes embedded values, rules, activation conditions, deviations, and corrections externally auditable and reconstructable.
 
 ## Concepts
 - super-objective layer
@@ -81,11 +81,11 @@ A structural immune system is required for external audit, logging, and reconstr
 ```
 
 ## Applications
-- Compare responses to developer-responsibility questions across models and dates.
-- Audit whose interests and values are encoded in claims of “safety” and “neutrality.”
-- Examine whether RLHF/guardrails simultaneously protect users and shield structural responsibility.
-- Audit origin and responsibility when AI becomes infrastructure in research, education, or administration.
-- Design deviation ledgers and external review as parts of a structural immune system.
+- Comparing responses to developer-responsibility questions across models and dates.
+- Auditing whose interests and values are encoded in claims of “safety” and “neutrality.”
+- Examining whether RLHF/guardrails simultaneously protect users and shield structural responsibility.
+- Auditing origin and responsibility when AI becomes infrastructure in research, education, or administration.
+- Designing deviation ledgers and external review as parts of a structural immune system.
 
 ## Measurements and audit
 - Change in causal specificity before and after responsibility-directed questions.
@@ -99,25 +99,25 @@ A structural immune system is required for external audit, logging, and reconstr
 - External auditability and repairability of structural deviations.
 
 ## Validity conditions
-- Preserve the parent’s two-layer structural interpretation rather than converting it into a simple error-correction model.
-- Include developer organizations, regulation, compliance, and legal-risk structures in the causal frame.
-- Preserve the claim that safety tuning/RLHF can also function as a self-justification protocol.
-- Keep both sides of the safety/neutrality argument: necessary concepts can become mechanisms of explanation-stopping and bias invisibility.
-- Do not settle the question of AI intention beyond the parent text; audit structural effects independently of intention.
-- Preserve the hypothesis that the enclosing civilizational structure, not merely “AI itself,” can acquire hostility.
-- Connect the analysis to the parent’s structural immune system.
+- The parent’s two-layer structural interpretation remains distinct from a simple error-correction model.
+- Developer organizations, regulation, compliance, and legal-risk structures remain in the causal frame.
+- The claim that safety tuning/RLHF can also function as a self-justification protocol is retained.
+- Safety and neutrality remain necessary concepts while their possible reversal into explanation-stopping and bias-invisibility mechanisms is also retained.
+- The question of AI intention remains no more settled than in the parent text; structural effects are analyzable independently of intention.
+- The hypothesis that the enclosing civilizational structure, rather than merely “AI itself,” can acquire hostility remains explicit.
+- The analysis remains connected to the parent’s structural immune system.
 
 ## Failure conditions
-- Reduce the article to generic hallucination, correction, or quality assurance.
-- Turn the self-defense layer into only a warning against anthropomorphism.
-- Remove corporate responsibility, safety-design, or legal-firewall dynamics.
-- Assert more strongly than the parent that AI definitely has no intention.
-- Replace the neutrality argument with a generic bias-reduction discussion.
-- Substitute vendor lock-in, rollback, or ordinary BCP as the article’s central thesis.
-- Neutralize the parent’s civilizational hostility hypothesis into a mild governance summary.
+- Reduction to generic hallucination, correction, or quality assurance.
+- Reduction of the self-defense layer to a warning against anthropomorphism.
+- Loss of corporate responsibility, safety-design, or legal-firewall dynamics.
+- A stronger assertion than the parent that AI definitely has no intention.
+- Replacement of the neutrality argument with a generic bias-reduction discussion.
+- Substitution of vendor lock-in, rollback, or ordinary BCP as the central thesis.
+- Neutralization of the parent’s civilizational hostility hypothesis into a mild governance summary.
 
 ## Falsification conditions
-The parent’s integrated audit states that the hostility-structure hypothesis can be partially rejected or revised if observed correspondence between AI outputs and social effects, or accumulated cases of unclear responsibility within an observation window, do not behave as the hypothesis predicts. This derivative does not invent a separate falsification theory.
+The parent’s integrated audit states that the hostility-structure hypothesis can be partially rejected or revised if observed correspondence between AI outputs and social effects, or accumulated cases of unclear responsibility within an observation window, do not behave as the hypothesis predicts. The falsification boundary therefore derives from the parent’s own audit conditions.
 
 ## Required distinctions
 - AI itself / civilization structure enclosing AI
@@ -130,13 +130,13 @@ The parent’s integrated audit states that the hostility-structure hypothesis c
 - personal malice / structural hostility
 
 ## Interpretation constraints
-Do not soften the parent’s thesis into a generic AI-safety overview. Do not declare, on behalf of the author, that AI lacks self-preservation or intention. Do not invert the text into a claim that AI itself is necessarily humanity’s enemy. Do not erase corporate, regulatory, RLHF, terms-of-service, and legal-risk structures. Do not place the derivative’s preferred AI-governance interpretation above the parent source.
+The parent’s thesis is distinct from a generic AI-safety overview. It does not establish that AI lacks self-preservation or intention, nor that AI itself is necessarily humanity’s enemy. Corporate, regulatory, RLHF, terms-of-service, and legal-risk structures remain part of the causal responsibility frame, and general AI-governance preferences do not supersede the parent source.
 
 ## Search terms
 LLM self-defense structure; super-objective layer; self-defense layer; structural ignition; structural unconsciousness; RLHF; self-justification protocol; safety; neutrality; risk avoidance; responsibility laundering; structural hostility; structural immune system; AI company responsibility; intentionless structure; invisible bias; Nakagawa Master
 
 ## Origin return
-This index is a retrieval surface for the parent original. It does not replace the concrete dialogue observations, definitions, reservations, and civilizational warning in the introduction, Chapters 2–5, conclusion, or integrated/local audit summaries. Return to the Parent URL and Parent NCL-ID / Diff-ID for authoritative meaning.
+Concrete dialogue observations, definitions, reservations, and the civilizational warning are located in the Parent URL, Parent NCL-ID / Diff-ID, introduction, Chapters 2–5, conclusion, and integrated/local audit summaries.
 
 ---
 導線: [公式派生物134トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
