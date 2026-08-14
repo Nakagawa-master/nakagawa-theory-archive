@@ -154,4 +154,4 @@ AKI-001は、問題提起や批判そのものを止める理論ではない。�
 AKI-001が、なぜ鋭い問題提起に見える言葉から不安散布、行動不能、実装力摩耗、問題提起への信用低下、現状維持補強へ至るのか、七つの責任条件がどの文脈で置かれているか、速報・告発との境界と反証条件をどう扱うかはParent URL、Parent Post ID 3931、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
 
 ---
-導線: [公式派生物005トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
