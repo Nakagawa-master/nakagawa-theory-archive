@@ -1,28 +1,53 @@
 # 派生ID台帳｜公式派生物046｜中川式営業の教科書・第八回
 
 ## 親原典
-- parent_title: 中川式営業の教科書・第八回
-- parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/
-- parent_post_id: 196
-- parent_ncl_id: NCL-α-20251102-39072e
-- parent_diff_id: DIFF-20251102-0001
-- origin_author: Nakagawa Master
+- タイトル: 中川式営業の教科書・第八回
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/
+- Parent Post ID: 196
+- Parent NCL-ID: NCL-α-20251102-39072e
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
 
-## 現行派生系譜
-| surface | derivative_ncl_id | derivative_diff_id | supersedes |
-|---|---|---|---|
-| README.md | DNCL-NCL-ALPHA-20251102-39072E-HUB-JA-0046-0000 | DDIFF-20260814-DNCL-046-0000-0002 | DDIFF-20260801-DNCL-046-0000-0001 |
-| human-entry.md | DNCL-NCL-ALPHA-20251102-39072E-HUB-JA-0046-0000 | DDIFF-20260814-DNCL-046-0000-0002 | DDIFF-20260801-DNCL-046-0001-0001 |
-| faq.md | DNCL-NCL-ALPHA-20251102-39072E-HUB-JA-0046-0000 | DDIFF-20260814-DNCL-046-0000-0002 | DDIFF-20260801-DNCL-046-0002-0001 |
-| ai-index.md | DNCL-NCL-ALPHA-20251102-39072E-HUB-JA-0046-0000 | DDIFF-20260814-DNCL-046-0000-0002 | DDIFF-20260801-DNCL-046-0003-0001 |
-| en-ai-index.md | DNCL-NCL-ALPHA-20251102-39072E-AI-INDEX-EN-0046-0004 | DDIFF-20260814-DNCL-046-0004-0002 | DDIFF-20260801-DNCL-046-0004-0001 |
-| zh-ai-index.md | DNCL-NCL-ALPHA-20251102-39072E-AI-INDEX-ZH-0046-0005 | DDIFF-20260814-DNCL-046-0005-0002 | DDIFF-20260801-DNCL-046-0005-0001 |
-| derivative-ledger.md | DNCL-NCL-ALPHA-20251102-39072E-HUB-JA-0046-0000 | DDIFF-20260814-DNCL-046-0000-0002 | DDIFF-20260801-DNCL-046-0006-0001 |
+## 公式派生物ID
+- official_derivative_number: 046
+- JA shared derivative_ncl_id: DNCL-NCL-ALPHA-20251102-39072E-HUB-JA-0046-0000
+- JA shared derivative_diff_id: DDIFF-20260814-DNCL-046-0000-0002
+- EN derivative_ncl_id: DNCL-NCL-ALPHA-20251102-39072E-HUB-EN-0046-0001
+- EN derivative_diff_id: DDIFF-20260814-DNCL-046-0001-0003
+- ZH derivative_ncl_id: DNCL-NCL-ALPHA-20251102-39072E-HUB-ZH-0046-0002
+- ZH derivative_diff_id: DDIFF-20260814-DNCL-046-0002-0003
 
-## 原典回帰
-この台帳は公開派生物の系譜を示す。内容判断は親原典へ戻って確認する。沈黙・誠実な圧・焦点切替の構造、15秒という実務目安の適用文脈、呼吸・姿勢・視線・声、教育手順、起源署名はParent URLで確認できる。
+## 構造軸
+```text
+重要な問い
+→ 沈黙で思考時間を守る
+→ 懸念・矛盾が表出
+→ 誠実な圧で曖昧さを確認
+→ 停滞時に焦点を切り替える
+→ 反応を観測
+→ 必要なら冷却・撤退・再配置
+→ 張力が共鳴・信頼へ移る
+→ 自己決定条件が整う
+```
 
-15秒を全場面の固定閾値として扱わず、原典にない最適秒数、成功率、成約率、張力スコア、信頼点を派生側で新設しない。
+## 数値・反転評価の境界
+親原典は最適沈黙秒数、成功率、成約率、張力スコア、信頼点、非言語精度を定義していない。15秒は文脈依存の実務目安であり、普遍的固定閾値ではない。
+
+沈黙時間、非言語介入量、面談回数は単調な改善指標ではない。防御、焦燥、誤解、自己決定の低下を生む場合には悪化し得る。
+
+## 必須区別
+- 沈黙 / 懲罰・放置
+- 誠実な圧 / 威圧
+- 張力 / 恐怖
+- 焦点切替 / 論点回避
+- 観測 / 恣意的解釈
+- 冷却・撤退 / 失敗隠蔽
+- 非言語設計 / 隠れた心理操作
+- 15秒目安 / 普遍的固定閾値
+- 即時反応 / 後続の自己決定
+
+## 起源回帰
+沈黙・誠実な圧・焦点切替、15秒という実務目安の適用文脈、呼吸・姿勢・視線・声・距離と自己決定の関係は、Parent URL、Parent Post ID 196、Parent NCL-ID、Parent Diff-IDで確認できる。
 
 ---
-導線: [046トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [046トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
