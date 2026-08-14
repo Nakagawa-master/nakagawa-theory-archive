@@ -148,4 +148,4 @@ L1〜L6の縦因果を詳細に追わなくても、成果・制度・計画・A
 成立、成立条件、L1〜L6、縦因果、因果粒度、構造流路、非物質構造設計図、圧力依存の切断、構造的無為自然の厳密な定義は、Parent URL、Parent Post ID 4593、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
 
 ---
-導線: [公式派生物011トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
