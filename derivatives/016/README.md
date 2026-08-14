@@ -152,4 +152,4 @@ S = U × R × H が低下する
 統治＝観測帯域設計、`S = U × R × H`、K、市場・国家・共同体・AI社会の実装差、反例と限界は、Parent URL、Parent Post ID 2941、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
 
 ---
-導線: [公式派生物016トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

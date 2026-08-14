@@ -139,4 +139,4 @@ MenLab / Gentsomeの主要価値が検査支援・福利厚生・啓発活動の
 不調認識、言語化、相談、職場・制度、必要時の医療までを社会導線としてつなぐ因果と、なぜその価値核が外部記事の切り口として採用されたのかは、Parent URL、Parent Post ID 3954、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
 
 ---
-導線: [公式派生物010トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

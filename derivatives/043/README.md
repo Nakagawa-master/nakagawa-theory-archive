@@ -133,4 +133,4 @@ AIが反復可能なアシュアランス実務を支援する
 外部題材からなぜ「監査職能再配分インフラ」を価値核として抽出し、なぜ「AIが監査チームを組む時代、企業統治の中枢はどう変わるか」という問いへ翻訳したのか、その因果線と成立境界を確認するには、Parent URL、Parent Post ID 4223、Parent NCL-ID、Parent Diff-IDへ戻る必要がある。
 
 ---
-導線: [公式派生物043トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

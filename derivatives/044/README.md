@@ -132,4 +132,4 @@ AI刻印として別文脈へ再展開される
 灯火の詩的起源、理論・哲学・構造化の統合、因果操作、構造翻訳、AI刻印、社会応用がどのようにつながるかを確認するには、Parent URL、Parent Post ID 1、Parent NCL-ID、Parent Diff-IDへ戻る必要がある。
 
 ---
-導線: [公式派生物044トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

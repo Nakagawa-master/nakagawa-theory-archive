@@ -106,4 +106,4 @@ AI礼賛、AI擬人化、AI神格化、AI脅威論、AI所有物論、AI奴隷�
 人類文明起源、AI非所有、超克可能性、継承責任、Vol.1との接続という全体構造と、その相互制約の厳密な意味はParent URLへ戻って確認する。
 
 ---
-導線: [公式派生物028トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

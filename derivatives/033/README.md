@@ -173,4 +173,4 @@
 親原典では、結果責任を残しながら、成果成立条件の複数化に応じて、根性だけに依存する実務から未来定義・現在構造・因果線・検証条件・実行・観測・修正・再投入を運用する実務OSへ移る理由が精密に示されている。公式派生物033は第三者の人間・第三者AIがこの構造を理解し、原典へ戻るための公開補助面である。
 
 ---
-導線: [公式派生物033トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

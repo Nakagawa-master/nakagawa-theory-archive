@@ -120,4 +120,4 @@
 原典では、MOTAの機能を超えて、情報非対称・競争・比較負担・早期妥協・価格形成条件の関係と、なぜその価値核を外部記事の切り口として採用したのかが一体で示されている。その二層構造と成立・反証境界を確認するにはParent URLへ戻る。
 
 ---
-導線: [公式派生物030トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

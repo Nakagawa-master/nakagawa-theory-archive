@@ -141,4 +141,4 @@ dS/dtの異常として時間方向の変化が観測される
 `S = U × R × H`、`dS/dt = F(U,R,H) + P_ext`、fake-U、R diffusion、H short-circuit、一次ソース、文脈、版、差分、逆リンクの厳密な位置づけは、Parent URL、Parent Post ID 2962、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
 
 ---
-導線: [公式派生物018トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

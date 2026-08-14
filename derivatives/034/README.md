@@ -152,4 +152,4 @@
 固定性、予測可能性、更新知性、観測、再判断、修正、更新規則、責任接続というAKI-013固有の意味境界はParent URL、Parent Post ID 4334、Parent NCL-ID、Parent Diff-IDへ戻って確認できる。
 
 ---
-導線: [公式派生物034トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

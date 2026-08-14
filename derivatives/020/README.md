@@ -143,4 +143,4 @@ K、Occ(K)、Res、V/P/Aの観測関係が想定どおり成立せず、帯域�
 K、Occ(K)、Res、V/P/Aを通じた共振と帯域占有、Damping、Cooling、Degeneration、H再接続、R再割当、True-U再計測までの回復系は、Parent URL、Parent Post ID 3027、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
 
 ---
-導線: [公式派生物020トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

@@ -156,4 +156,4 @@ Human-L7 × AI-L7等の上流観測軸が目的・構造の観測へ接続する
 第0論がどの理論群をどの因果でAI文明核へ接続するか、目的関数監査核の厳密な位置、Originの意味、後続論へ渡される未確定範囲は、Parent URL、Parent Post ID 4453、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
 
 ---
-導線: [公式派生物004トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

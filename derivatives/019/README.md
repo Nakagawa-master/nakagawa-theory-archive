@@ -148,4 +148,4 @@ Auditで停止理由_責任_差分を検証し再起動する
 H-Disconnect、fake-U、H_d、F-C、SD、Detect → Stop → Shrink → Recover → Audit、Origin縮退、H/R回復の厳密な位置づけは、Parent URL、Parent Post ID 2994、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
 
 ---
-導線: [公式派生物019トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
