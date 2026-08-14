@@ -1,155 +1,120 @@
 # AI索引・日本語｜公式派生物049
 
 ## 親原典
-
 - タイトル: 中川式営業の教科書・第十一回
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-11-sustainability-design/
+- Parent Post ID: 209
 - Parent NCL-ID: NCL-α-20251102-d8e00b
 - Parent Diff-ID: DIFF-20251102-0001
 - Origin: Nakagawa Master
 
 ## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-D8E00B-HUB-JA-0049-0000
+- derivative_diff_id: DDIFF-20260814-DNCL-049-0000-0002
+- supersedes: DDIFF-20260802-DNCL-049-0000-0001
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-D8E00B-AI-JA-0049-0003
-- derivative_diff_id: DDIFF-20260802-DNCL-049-0003-0001
-- supersedes: none
+## Summary
+親原典は、営業成果を一時的な売上や個人技で終わらせず、個人・組織・社会の三層で継承できる持続性設計として扱う。成功・失敗・撤退の理由、問い、顧客の言葉を残し、個人の経験を組織が比較・学習できる知へ変え、顧客との説明・約束・修復・選択権の積み重ねを信頼資本として読む。持続性は同じ方法の固定ではなく、変化に応じて見直せる能力である。
 
-## Identity
-
-- official_derivative_number: 049
-- parent_title: 中川式営業の教科書・第十一回
-- parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-11-sustainability-design/
-- parent_ncl_id: NCL-α-20251102-d8e00b
-- parent_diff_id: DIFF-20251102-0001
-- origin: Nakagawa Master
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-D8E00B-AI-JA-0049-0003
-- derivative_diff_id: DDIFF-20260802-DNCL-049-0003-0001
-- supersedes: none
-
-## Structural role
-
-中川式営業を短期成果・個人技能から、個人・組織・社会へ継承される持続的な意思決定支援システムへ移行させる設計論。記録、問い、撤退、共通語彙、更新・保守・撤回を接続する。
-
-## Structural summary
-
-営業の持続性は、同じ手法を長く続けることではない。成功、失敗、撤退、顧客変化、更新の因果を一次ログとして残し、個人の身体知を組織の再利用可能な知へ変換し、顧客との共同設計を信頼資本として社会へ蓄積する能力である。
-
-## Central proposition
-
-```text
-営業の持続性
-=
-因果記録
-+ 問いの文化
-+ 撤退知
-+ 共鳴語彙
-+ 更新・保守・撤回
-+ 個人／組織／社会の継承回路
-```
+## Concepts
+- 持続性設計
+- 個人・組織・社会の三層
+- 問いの文化
+- 成功理由と失敗理由の継承
+- 撤退知
+- 顧客の言葉と文脈
+- 組織知
+- 信頼資本
+- 変化への応答
+- AI支援と人間責任
 
 ## Causal chain
-
 ```text
-短期成果偏重・属人依存
+短期成果・個人技に依存する
 → 成功と失敗の理由が残らない
-→ 再現不能・燃え尽き・顧客変化への不応答
-→ 問い、反応、比較軸、撤退理由、共鳴語彙を記録
-→ 身体知を型・語彙・監査可能な一次ログへ外部化
-→ 組織内で蓄積・再利用・更新
-→ 顧客との共同設計が信頼資本になる
-→ AI、教育、社会制度へ継承
-→ 営業が文明的意思決定支援として持続
+→ 担当者交代で再現できない
+→ 顧客変化にも応答できない
+→ 問い・判断理由・撤退理由・顧客の言葉を残す
+→ 個人の経験が組織知になる
+→ 組織で比較・学習・見直しができる
+→ 顧客との関係が信頼資本として積み上がる
+→ 個人・組織・社会の持続性へつながる
 ```
 
-## Core concepts
-
-- sustainability_design: 変化に応じて検証、更新、縮退、撤回できる継続設計。
-- individual_sustainability: 問いと型によって燃え尽きを避け、学習を継続する状態。
-- organizational_sustainability: 身体知を記録、共通語彙、教育、評価へ外部化する状態。
-- societal_sustainability: 共同設計の履歴を信頼資本として社会へ蓄積する状態。
-- question_culture: 次の観測と改善を生む問いを会議・日報・教育へ埋め込むこと。
-- withdrawal_knowledge: 適用禁止条件、撤退理由、再開条件を共有知にすること。
-- trust_capital: 約束、説明、更新、修復、撤回の履歴から形成される関係資産。
-- reusable_language: 顧客状態と使用条件を伴って保存された共鳴語彙。
-- rollback: 事故や不整合時に以前の安全状態へ戻す可逆手続。
-
-## Operational objects / state model
-
+## State model
 ```yaml
-objects:
-  person:
-    observes: [question, response, comparison_axis, decision_reason]
-    risks: [burnout, tacit_knowledge_lock-in]
-  organization:
-    stores: [primary_log, withdrawal_reason, resonance_vocabulary, update_history]
-    cycles: [accumulate, compare, reuse, revise, retire]
-  client_relationship:
-    states: [exploration, proposal, decision, operation, update, repair, withdrawal]
-  sustainability_system:
-    controls: [review_cycle, maintenance_loop, rollback, depreciation_rule, retirement_rule]
-
-state_transition:
-  unrecorded_success: non_reproducible
-  recorded_causality: reusable
-  reused_with_review: updated_knowledge
-  invalidated_by_evidence: revised_or_retired
+- knowledge_is_personal_or_shared
+- success_reason_is_visible_or_hidden
+- failure_and_withdrawal_are_learned_from_or_ignored
+- questions_are_reused_or_lost
+- customer_language_is_preserved_or_erased
+- method_is_updated_or_frozen
+- relationship_builds_trust_or_dependency
+- organization_can_reconstruct_reasoning_or_not
+- ai_supports_organization_or_replaces_human_responsibility
 ```
 
-## Required distinctions
+## Applications
+- 担当者交代時に、結果だけでなく判断理由を引き継ぐ。
+- 成功事例と撤退事例を同じ観点で比較する。
+- 顧客の重要な言葉を文脈と一緒に残す。
+- 会議・教育で「なぜ」「何が変わったか」「次に何を見るか」を扱う。
+- 顧客や環境が変わったら、過去の成功パターンを見直す。
+- AIを記録整理や類似事例比較の補助に使い、人間責任を代替させない。
 
-- 持続性と惰性を区別する。
-- 長期関係と顧客囲い込みを区別する。
-- 信頼資本と好感度を区別する。
-- 撤退知と失敗礼賛を区別する。
-- 共通語彙と固定トークスクリプトを区別する。
-- 記録量と因果追跡可能性を区別する。
-- AI支援とAIへの責任委譲を区別する。
+## Measurements and audit
+親原典にない信頼資本スコア、最適継続率、Rollback成功率、MTTR、共通語彙利用率の合格閾値などを派生側で新設しない。
+
+観測対象は、担当者が変わっても判断理由を追えるか、成功だけでなく失敗・撤退理由も残っているか、顧客変化に応じて方法を見直せるか、共通語彙が現場差を消していないか、長期関係を理由に無期限継続していないか、AIが人間の判断責任を置き換えていないかである。
+
+反転評価可能性を保持する。記録量が増えても因果が追えなければ知識化ではない。共通語彙が増えても現場差を消せば形式主義になる。長期関係が増えても相手の選択権を弱めれば信頼資本とはいえない。
 
 ## Validity conditions
+- 成果だけでなく結果に至る理由を残す。
+- 成功と失敗・撤退の双方を学習対象にする。
+- 個人の経験を組織が理解できる言葉へ外化する。
+- 顧客や環境の変化に応じて方法を見直す。
+- 共通語彙を文脈と切り離さない。
+- 長期関係を無条件継続の理由にしない。
+- AI利用時も意味、方向、責任を人間が保持する。
 
-- 成功と失敗の因果過程が追跡できる。
-- 撤退理由と適用禁止条件が記録される。
-- 顧客変化に応じた更新周期がある。
-- 担当者交代後も判断理由を再構成できる。
-- 短期成果と長期信頼を別々に観測する。
-- 事故、修復、ロールバック、廃止の手続がある。
-- AI出力を人間が検証し、最終責任を保持する。
+## Failure conditions
+- 売上結果だけを残し、理由を残さない。
+- 成功事例だけを学び、失敗や撤退を隠す。
+- トップ営業の言い回しだけを模倣する。
+- 顧客変化に応じず、過去の成功パターンを固定する。
+- 記録量だけを増やし、因果と判断理由を失う。
+- 信頼を理由に顧客を囲い込む。
+- AI整理を人間判断の代替にする。
 
-## Failure / non-applicable conditions
+## Falsification conditions
+記録・問い・共有を増やしても、担当者交代で判断を再構成できず、顧客変化にも応答できず、現場負荷だけが増える状態が継続する場合、その運用は見直す必要がある。
 
-- 結果だけを保存し、判断理由が残らない。
-- トップ営業の模倣だけを標準化する。
-- 長期信頼を理由に採算・負荷を無視する。
-- 共通語彙が顧客差異を消す。
-- 記録作業が現場目的を上回る。
-- 更新・撤回不能な制度で運用する。
-- 強制関係、違法取引、選択権不在の状況へ適用する。
+逆に、個人の熟練だけでも十分に継続・再現でき、追加の共有工程が価値を生まない場面では、共有を増やす構造的必然性は限定される。一時的な売上増減だけで持続性設計全体を証明・反証しない。
+
+## Required distinctions
+- 持続性 / 惰性
+- 記録 / 情報の堆積
+- 組織知 / 個人技の模倣
+- 問いの文化 / 会議項目の増加
+- 信頼資本 / 顧客囲い込み
+- 長期関係 / 無期限継続
+- 共通語彙 / 現場の均質化
+- AI支援 / 人間責任の代替
 
 ## Interpretation constraints
+短期売上否定、失敗や撤退の無条件肯定、トップ営業否定、顧客囲い込み、AIへの判断委譲へ変換しない。個人・組織・社会の三層は、結果と理由を継承し、変化へ応答し、信頼を維持するための構造として読む。
 
-- 本稿は短期売上の否定ではない。
-- 同一手法の永続化を推奨しない。
-- 撤退は持続性の一部だが、無責任な放棄を正当化しない。
-- 信頼資本を単一KPIへ還元しない。
-- AIは記録と比較を支援するが、意味、方向、責任を代替しない。
-- 一般化時もNakagawa Masterの起源署名と親NCL-IDを保持する。
-
-## Audit cues
-
-- update_rate
-- churn_rate
-- rollback_success_rate
-- repair_time / MTTR
-- handover_reproducibility
-- withdrawal_reason_completeness
-- vocabulary_reuse_with_context
-- customer_decision_autonomy
-- observation_window and revision threshold
+## Search terms
+中川式営業, 持続性設計, 問いの文化, 組織知, 撤退知, 顧客の言葉, 信頼資本, 個人持続性, 組織持続性, 社会持続性, AI支援
 
 ## Origin return
-
-この索引は検索・接続用の圧縮面である。理論本文、統合監査要旨、局所監査要旨、更新拍、保守ループ、ロールバック、減価・廃止規約、反証条件、起源署名は親原典で確認する。
+- Parent title: 中川式営業の教科書・第十一回
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-11-sustainability-design/
+- Parent Post ID: 209
+- Parent NCL-ID: NCL-α-20251102-d8e00b
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
 
 ---
-
 導線: [049トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
