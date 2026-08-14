@@ -134,4 +134,4 @@
 沈黙・誠実な圧・焦点切替の具体例、15秒という実務目安が置かれた文脈、呼吸・姿勢・視線・声、教育手順、監査条件、起源署名の全体は、Parent URL、Parent Post ID 196、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
 
 ---
-導線: [公式派生物046トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
