@@ -157,4 +157,4 @@ Sの低下が時間方向に継続する
 U/R/H、`S = U × R × H`、全会一致と停止、対立と生存、相転移、θ、δ、K、後続論との接続は、Parent URL、Parent Post ID 2788、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
 
 ---
-導線: [公式派生物014トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
