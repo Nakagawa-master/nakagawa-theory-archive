@@ -1,136 +1,125 @@
-# AI Index — English | Official Derivative 046
+# English AI Index | Official Derivative 046 | Nakagawa-Style Sales Textbook, Part VIII
 
-## Parent origin
-
-- タイトル: 中川式営業の教科書・第八回
-- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/
-- Parent NCL-ID: NCL-α-20251102-39072e
-- Parent Diff-ID: DIFF-20251102-0001
-- Origin: Nakagawa Master
-
-## Derivative ID
-
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-39072E-AI-INDEX-EN-0046-0004
-- derivative_diff_id: DDIFF-20260801-DNCL-046-0004-0001
-- supersedes: none
-
-## Identity
-- title: Nakagawa-Style Sales Textbook, Part VIII
+## Parent Origin
+- parent_title: 中川式営業の教科書・第八回
 - parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/
+- parent_post_id: 196
 - parent_ncl_id: NCL-α-20251102-39072e
 - parent_diff_id: DIFF-20251102-0001
-- derivative_number: 046
-- origin: Nakagawa Master
-- role: official connection surface / AI retrieval derivative
+- origin_author: Nakagawa Master
+
+## Derivative ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-39072E-AI-INDEX-EN-0046-0004
-- derivative_diff_id: DDIFF-20260801-DNCL-046-0004-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260814-DNCL-046-0004-0002
+- supersedes: DDIFF-20260801-DNCL-046-0004-0001
 
-## Structural role
-This surface preserves the parent theory’s causal chain, operational dimensions, boundaries, training objects, and origin identity when an AI retrieves, summarizes, compares, or reuses the article. It does not replace the parent source.
+## Summary
+The parent source treats silence, breathing, posture, gaze, voice, distance, and focus shifts as a nonverbal structure for regulating tension, resonance, and trust in sales dialogue. An important question is followed by protected thinking time; avoided contradictions are faced through honest pressure; stalled dialogue is moved to another valid axis; and pressure can be cooled, withdrawn, or repositioned when it becomes defensive.
 
-## Structural summary
-The parent source treats nonverbal tension as an observable and trainable control resource rather than an accidental by-product of persuasion. Silence, posture, breathing, gaze, voice, spatial arrangement, and focus shifts are decomposed into operational elements. A question is followed by protected silence so the client’s thought can mature; an avoided contradiction is then faced through honest pressure; when thinking stalls, focus is shifted to another valid axis. The goal is not obedience but the movement of tension toward resonance, trust, and self-owned decision.
+The source's fifteen-second expression is a practical guideline for not filling the space after an important question out of salesperson anxiety. It must not be converted into a universal optimum, fixed success threshold, or guaranteed closing rule.
 
-## Central proposition
-```text
-nonverbal communication ≠ background atmosphere around words
-
-nonverbal design = an observable and reversible system for regulating dialogue tension through questions, silence, breathing, posture, gaze, voice, space and focus
-```
+## Concepts
+- nonverbal design
+- silence
+- honest pressure
+- focus shifting
+- tension architecture
+- breathing, posture, gaze, voice, distance
+- resonance
+- trust
+- cooling, withdrawal, repositioning
+- reversibility
+- observability
+- self-owned decision
 
 ## Causal chain
 ```text
 important question
-→ silence protected
-→ client thought and concern surface
-→ contradiction faced with honest pressure
-→ focus shifted when cognition stalls
-→ response observed
-→ cooling, rollback or repositioning if needed
+→ silence protects thinking time
+→ concerns and contradictions surface
+→ ambiguity is faced with honest pressure
+→ focus shifts when dialogue stalls
+→ response is observed
+→ cooling, withdrawal or repositioning if needed
 → tension moves toward resonance and trust
 → conditions for self-owned decision emerge
 ```
 
-## Core concepts
-- nonverbal design
-- structured silence
-- honest pressure
-- focus shifting
-- tension architecture
-- breath synchronization
-- posture, gaze, voice and spatial arrangement
-- cooling, rollback and repositioning
-- reversibility
-- observability
+## State model
+```yaml
+- question_is_placed_or_not
+- silence_protects_thought_or_becomes_pressure
+- concern_is_hidden_or_articulated
+- honest_pressure_is_clarifying_or_intimidating
+- focus_is_stalled_or_productively_shifted
+- refusal_correction_and_stop_are_possible_or_blocked
+- tension_moves_toward_resonance_or_defense
+- cooling_and_withdrawal_are_available_or_blocked
+- self_decision_is_preserved_or_eroded
+- origin_return_is_available
+```
 
-## Operational dimensions
-### Silence
-- do not immediately fill the space after an important question
-- protect the client’s time for thought and wording
-- treat time guidelines as context-dependent, not universal laws
+## Applications
+- Do not immediately fill the space after an important question.
+- Surface contradictions without attack or intimidation.
+- Shift from past to future, numbers to people/culture, or the whole problem to the first step when the current axis stalls.
+- Reduce pressure, rephrase, explain again, or withdraw when the client becomes defensive.
+- Judge success by later understanding, trust, and self-owned decision rather than immediate compliance.
 
-### Honest pressure
-- do not leave an avoided contradiction vague
-- use clarity rather than volume, status or intimidation
-- preserve the client’s ability to refuse, correct or stop
+## Measurements and audit
+Do not invent an optimal silence duration, conversion rate, trust score, tension score, nonverbal accuracy metric, or guaranteed close rate that is not established by the parent source.
 
-### Focus shift
-- past → future
-- numbers → people or culture
-- whole problem → first step
-- surface objection → underlying concern
-- present burden → cost of non-action
+Observe whether thinking time is protected, silence remains non-punitive, refusal and correction are possible, pressure can be cooled, focus shifts remain connected to the original issue, and later understanding, trust, and self-decision remain intact.
 
-### Cooling and rollback
-- reduce pressure when tension becomes defensive
-- withdraw or rephrase the question
-- reposition the dialogue on another axis
-- preserve a route back to the original issue
-
-## Training objects
-- measured silence intervals
-- breathing and pacing role-play
-- posture, gaze and voice observation
-- pressure/cooling switching drills
-- focus-shift exercises
-- post-dialogue primary logs
-- comparison between immediate reaction and later action
-
-## Required distinctions
-- pressure is not intimidation
-- silence is not punishment, neglect or anxiety induction
-- focus shifting is not topic avoidance
-- tension is not fear
-- nonverbal design is not covert manipulation
-- observation is not arbitrary interpretation
-- rollback is not concealment of failure
+Treat fifteen seconds as context-dependent guidance, not a standalone success metric.
 
 ## Validity conditions
-- the client’s thought time is protected
-- refusal, correction and stopping remain possible
-- the salesperson can cool or withdraw pressure
-- a focus shift remains connected to the original decision
-- nonverbal changes can be observed and logged
-- success is judged by understanding, trust and self-decision, not immediate compliance
+- Protect the client's thinking time.
+- Do not use silence as punishment, neglect, or anxiety induction.
+- Do not convert honest pressure into intimidation.
+- Preserve refusal, correction, and stopping.
+- Keep focus shifts connected to the original issue.
+- Make cooling, withdrawal, and repositioning possible.
+- Judge outcomes beyond immediate reaction.
+- Preserve Origin and parent identity.
 
 ## Failure conditions
-- silence is used as punishment
-- volume, status or distance is used to produce submission
-- focus changes to escape an inconvenient issue
-- a fifteen-second guideline becomes an absolute rule
-- fear or positional weakness is exploited
-- nonverbal technique is used to compensate for weak substance
-- origin, NCL-ID or Diff-ID is erased
+- Enforce fifteen seconds as a universal rule.
+- Use fear, status, volume, or distance to produce submission.
+- Use silence to induce anxiety.
+- Shift focus to escape an inconvenient issue.
+- Use nonverbal technique to compensate for weak substance.
+- Treat immediate agreement as proof of self-decision.
+- Remove the route to cooling or withdrawal.
+
+## Falsification conditions
+If silence, honest pressure, and focus shifting repeatedly increase defensiveness, anxiety, or misunderstanding without improving understanding, trust, or self-owned decision, the operation should be revised.
+
+Where verbal explanation alone produces equal or better thinking time, clarity, trust, and self-decision, adding more nonverbal intervention may be unnecessary. No single duration or single reaction proves or falsifies the whole structure.
+
+## Required distinctions
+- silence / punishment or neglect
+- honest pressure / intimidation
+- tension / fear
+- focus shift / topic avoidance
+- observation / arbitrary interpretation
+- cooling or withdrawal / concealment of failure
+- nonverbal design / covert manipulation
+- fifteen-second guideline / universal fixed threshold
+- immediate reaction / later self-owned decision
 
 ## Interpretation constraints
-Do not add claims of mind control, obedience production, universal silence timing, or guaranteed closing through nonverbal technique. Preserve dignity, reversibility, observability, and self-decision. Return to the parent source for detailed silence categories, body variables, training methods, audit indicators, primary logs, and origin signature.
+Do not turn the source into a mind-control manual, obedience-production method, universal silence-timing rule, or claim that nonverbal technique alone guarantees a sale. Do not optimize fifteen seconds outside its source context. Preserve dignity, refusal, reversibility, observability, and self-owned decision.
+
+## Search terms
+Nakagawa-style sales, Part VIII, nonverbal sales, silence, fifteen seconds, honest pressure, focus shift, tension architecture, resonance, trust, self-owned decision, reversibility
 
 ## Origin return
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/
+- Parent Post ID: 196
 - Parent NCL-ID: NCL-α-20251102-39072e
 - Parent Diff-ID: DIFF-20251102-0001
 - Origin: Nakagawa Master
 
 ---
-Navigation: [046 hub](README.md) / [human entry](human-entry.md) / [FAQ](faq.md) / [JA](ai-index.md) / [ZH](zh-ai-index.md) / [ledger](derivative-ledger.md)
+Navigation: [046 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
