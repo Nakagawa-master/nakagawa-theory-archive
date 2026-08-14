@@ -146,4 +146,4 @@
 未来定義、現在構造との接続、因果線候補、検証条件、労力投下、観測、修正、再投入の厳密な意味と適用範囲は、Parent URL、Parent Post ID 4436、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
 
 ---
-導線: [公式派生物032トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
