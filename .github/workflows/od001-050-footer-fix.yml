@@ -17,28 +17,28 @@ jobs:
         with:
           ref: od001-050-footer-lock-20260814
           fetch-depth: 0
-      - name: Normalize README footer only
+      - name: Rebuild each README from main and replace footer only
         shell: bash
         run: |
+          git fetch origin main
           python - <<'PY'
           from pathlib import Path
-          import re
+          import re, subprocess
 
           expected = '導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)'
           pattern = re.compile(r'^導線: .*$', re.MULTILINE)
           for n in range(1, 51):
-              p = Path(f'derivatives/{n:03d}/README.md')
-              text = p.read_text(encoding='utf-8')
-              matches = pattern.findall(text)
+              p = f'derivatives/{n:03d}/README.md'
+              base = subprocess.check_output(['git','show',f'origin/main:{p}'], text=True)
+              matches = pattern.findall(base)
               if len(matches) != 1:
-                  raise SystemExit(f'{p}: expected exactly one footer line, found {len(matches)}')
-              new = pattern.sub(expected, text)
-              p.write_text(new, encoding='utf-8')
+                  raise SystemExit(f'{p}: main must contain exactly one footer line, found {len(matches)}')
+              new = pattern.sub(expected, base)
+              Path(p).write_text(new, encoding='utf-8')
           PY
-      - name: Verify only footer lines differ from main
+      - name: Verify exact OD134/135 footer and footer-only diff
         shell: bash
         run: |
-          git fetch origin main
           python - <<'PY'
           import subprocess
           from pathlib import Path
@@ -47,14 +47,17 @@ jobs:
           for n in range(1, 51):
               p = f'derivatives/{n:03d}/README.md'
               cur = Path(p).read_text(encoding='utf-8')
+              base = subprocess.check_output(['git','show',f'origin/main:{p}'], text=True)
               if cur.splitlines()[-1] != expected:
                   raise SystemExit(f'{p}: footer mismatch')
-              base = subprocess.check_output(['git','show',f'origin/main:{p}'], text=True)
-              def strip_footer(s):
-                  lines=s.splitlines()
-                  return '\n'.join(lines[:-1])
-              if strip_footer(cur) != strip_footer(base):
+              cur_lines = cur.splitlines()
+              base_lines = base.splitlines()
+              if cur_lines[:-1] != base_lines[:-1]:
                   raise SystemExit(f'{p}: non-footer content differs from main')
+          changed = subprocess.check_output(['git','diff','--name-only','origin/main','--','derivatives'], text=True).splitlines()
+          expected_paths = [f'derivatives/{n:03d}/README.md' for n in range(1,51)]
+          if changed != expected_paths:
+              raise SystemExit(f'unexpected changed paths: {changed}')
           PY
       - name: Remove temporary workflow and commit
         shell: bash
