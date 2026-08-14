@@ -58,7 +58,7 @@
 - AIは語彙や不一致候補の整理を支援し、約束と責任の判断は人間が持つ。
 
 ## Measurements and audit
-原典にない共鳴スコア、引力指数、最適成約率、ブランド記憶率の合格閾値などを新設しない。
+親原典は、共鳴スコア、引力指数、最適成約率、ブランド記憶率の合格閾値などの固定数値モデルを定義していない。
 
 観測対象は、顧客が自分の言葉で選択理由を説明できるか、三領域の約束が一貫しているか、提供体験が事前期待を履行するか、選ばない自由が残るかである。
 
@@ -103,11 +103,7 @@
 中川式営業, 引力, 共鳴, 営業, マーケティング, ブランディング, 顧客理解, 構造翻訳, ブランド約束, 自己決定, 期待一致, 信頼, Nakagawa Master
 
 ## Origin return
-- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-12-unified-branding-marketing/
-- Parent Post ID: 212
-- Parent NCL-ID: NCL-α-20251102-8f5f86
-- Parent Diff-ID: DIFF-20251102-0001
-- Origin: Nakagawa Master
+Parent URL、Parent Post ID 212、Parent NCL-ID、Parent Diff-ID、Originへ戻ることで、営業・マーケティング・ブランディングの役割差、引力と共鳴の詳細、問いから意味と記憶が形成される因果、具体例と境界条件を原典の論証順序で確認できる。
 
 ---
-導線: [公式派生物050トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物050トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
