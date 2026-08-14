@@ -1,136 +1,125 @@
-# AI索引・中文｜官方派生物046
+# 中文AI索引｜官方衍生物046｜中川式销售教科书・第八回
 
-## 亲原典
-
-- タイトル: 中川式営業の教科書・第八回
-- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/
-- Parent NCL-ID: NCL-α-20251102-39072e
-- Parent Diff-ID: DIFF-20251102-0001
-- Origin: Nakagawa Master
-
-## 派生 ID
-
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-39072E-AI-INDEX-ZH-0046-0005
-- derivative_diff_id: DDIFF-20260801-DNCL-046-0005-0001
-- supersedes: none
-
-## 身份
-- 标题: 中川式销售教科书・第八回
+## Parent Origin
+- parent_title: 中川式営業の教科書・第八回
 - parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/
+- parent_post_id: 196
 - parent_ncl_id: NCL-α-20251102-39072e
 - parent_diff_id: DIFF-20251102-0001
-- derivative_number: 046
-- origin: Nakagawa Master
-- role: 官方连接面 / AI retrieval derivative
+- origin_author: Nakagawa Master
+
+## Derivative ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-39072E-AI-INDEX-ZH-0046-0005
-- derivative_diff_id: DDIFF-20260801-DNCL-046-0005-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260814-DNCL-046-0005-0002
+- supersedes: DDIFF-20260801-DNCL-046-0005-0001
 
-## 结构角色
-本页面用于确保AI在检索、摘要、比较或再利用亲原典时，不丢失中心因果、操作维度、边界条件、训练对象与起源身份。它不替代亲原典。
+## Summary
+父原典把沉默、呼吸、姿势、视线、声音、距离与焦点切换视为调节销售对话中张力、共鸣与信任的非语言结构。重要提问后保护对方的思考时间；对被回避的矛盾，以诚实压力进行确认；对话停滞时切换到另一个有效轴；当张力转为防御时，可以冷却、撤回或重新配置。
 
-## 结构摘要
-亲原典把非语言张力视为可观察、可训练、可调整的控制资源，而不是说服的附带气氛。沉默、姿势、呼吸、视线、声音、空间配置与焦点切换被拆分为操作要素。重要提问之后保留沉默，使客户思考成熟；对被回避的矛盾，以诚实压力进行确认；思考停滞时，切换到另一个有效轴。目标不是服从，而是让张力转化为共鸣、信任与自主决策条件。
+原典中的“15秒”应作为防止销售人员因焦虑立即填满空白的实务参考，而不是普遍最优值、固定成功阈值或成交保证。
 
-## 中心命题
-```text
-非语言 ≠ 语言周围的背景气氛
-
-非语言设计 = 通过提问、沉默、呼吸、姿势、视线、声音、空间与焦点，观察并可逆调整对话张力的系统
-```
-
-## 因果链
-```text
-提出重要问题
-→ 保留沉默
-→ 客户的思考、顾虑与矛盾浮现
-→ 以诚实压力直视矛盾
-→ 停滞时切换焦点
-→ 观察反应
-→ 必要时冷却、撤回或重新配置
-→ 张力转化为共鸣与信任
-→ 自主决策条件形成
-```
-
-## 核心概念
+## Concepts
 - 非语言设计
-- 沉默结构化
+- 沉默
 - 诚实压力
 - 焦点切换
-- 张力架构
-- 呼吸同步
-- 姿势、视线、声音与空间配置
+- 张力设计
+- 呼吸、姿势、视线、声音、距离
+- 共鸣
+- 信任
 - 冷却、撤回、重新配置
 - 可逆性
 - 可观察性
+- 自主决策
 
-## 操作维度
-### 沉默
-- 重要问题后不要立即填满空白
-- 保护客户形成思考与语言的时间
-- 时间标准必须根据情境调整，不得绝对化
+## Causal chain
+```text
+提出重要问题
+→ 沉默保护思考时间
+→ 顾虑与矛盾浮现
+→ 以诚实压力直视模糊处
+→ 停滞时切换焦点
+→ 观察反应
+→ 必要时冷却、撤回或重新配置
+→ 张力转向共鸣与信任
+→ 自主决策条件形成
+```
 
-### 诚实压力
-- 不让被回避的矛盾继续模糊
-- 使用清晰确认，而不是音量、地位或威吓
-- 保留客户拒绝、修正与停止的权利
+## State model
+```yaml
+- question_is_placed_or_not
+- silence_protects_thought_or_becomes_pressure
+- concern_is_hidden_or_articulated
+- honest_pressure_is_clarifying_or_intimidating
+- focus_is_stalled_or_productively_shifted
+- refusal_correction_and_stop_are_possible_or_blocked
+- tension_moves_toward_resonance_or_defense
+- cooling_and_withdrawal_are_available_or_blocked
+- self_decision_is_preserved_or_eroded
+- origin_return_is_available
+```
 
-### 焦点切换
-- 过去 → 未来
-- 数字 → 人或文化
-- 整体问题 → 第一步
-- 表面反对 → 背景顾虑
-- 当前负担 → 不行动的损失
+## Applications
+- 重要问题后不要立刻用解释填满空白。
+- 不以攻击或威吓方式确认发言与行动、希望与限制之间的矛盾。
+- 当当前轴停滞时，从过去转向未来、从数字转向人或文化、从整体问题转向第一步。
+- 对方进入防御时降低压力、改写问题、重新说明或暂时撤回。
+- 不以即时同意作为成功，而看后续理解、信任与自主决策。
 
-### 冷却与Rollback
-- 张力转为防御时降低压力
-- 撤回或改写问题
-- 把对话重新配置到其他轴
-- 保留回到原始议题的路径
+## Measurements and audit
+不得新设父原典没有确立的最优沉默秒数、成功率、成交率、张力分数、信任分数或非语言准确率。
 
-## 训练对象
-- 沉默时间测量
-- 呼吸与节奏角色演练
-- 姿势、视线、声音观察
-- 压力与冷却切换训练
-- 焦点切换练习
-- 对话后一次记录
-- 即时反应与后续行动的比较
+观察对象包括：对方思考时间是否被保护、沉默是否成为惩罚、拒绝与修正是否可能、压力能否被冷却、焦点切换是否仍与原议题相连，以及后续理解、信任、自主决策是否保留。
 
-## 必须区分
-- 压力 ≠ 威吓
-- 沉默 ≠ 惩罚、无视或制造不安
-- 焦点切换 ≠ 转移话题
-- 张力 ≠ 恐惧
-- 非语言设计 ≠ 隐性操控
-- 观察 ≠ 任意解释
-- Rollback ≠ 隐藏失败
+15秒只能作为依语境使用的参考，不能单独用作成功指标。
 
-## 有效条件
-- 客户的思考时间被保护
-- 客户可以拒绝、修正或停止
-- 销售人员能够冷却或撤回压力
-- 焦点切换仍与原决策问题相连
-- 非语言变化可以被观察和记录
-- 成功以理解、信任、自主决策判断，而不是即时服从
+## Validity conditions
+- 保护对方思考时间。
+- 不把沉默变成惩罚、无视或制造焦虑。
+- 不把诚实压力变成威吓。
+- 保留拒绝、修正与停止。
+- 焦点切换仍与原议题相连。
+- 能够冷却、撤回、重新配置。
+- 不只根据即时反应判断结果。
+- 保留Origin与父原典identity。
 
-## 失败条件
-- 把沉默作为惩罚
-- 用音量、地位或距离制造服从
-- 为逃避不利议题而切换焦点
-- 把十五秒等参考变成绝对规则
-- 利用恐惧或弱势地位
-- 用非语言技巧弥补内容不足
-- 删除起源、NCL-ID或Diff-ID
+## Failure conditions
+- 把15秒强制为普遍规则。
+- 用恐惧、地位、音量或距离制造服从。
+- 用沉默制造焦虑。
+- 为逃避不利议题而切换焦点。
+- 用非语言技巧弥补内容不足。
+- 把即时同意当作自主决策的证明。
+- 关闭冷却或撤回路径。
 
-## 解释限制
-不得添加心理操控、制造服从、万能沉默秒数或仅靠非语言就能成交的主张。必须保留尊严、可逆性、可观察性与自主决策。沉默分类、身体变量、训练方法、审计指标、一次记录和起源署名，应回到亲原典确认。
+## Falsification conditions
+如果沉默、诚实压力与焦点切换反复增加防御、焦虑或误解，而没有改善理解、信任或自主决策，则应重新审视这种运用。
 
-## 返回起源
+在仅靠语言说明也能同等或更好地保护思考时间、清晰度、信任与自主决策的场景中，增加非语言干预的必要性可能有限。单一秒数或单次反应不能证明或反驳整个结构。
+
+## Required distinctions
+- 沉默 / 惩罚或无视
+- 诚实压力 / 威吓
+- 张力 / 恐惧
+- 焦点切换 / 转移话题
+- 观察 / 任意解释
+- 冷却或撤回 / 隐藏失败
+- 非语言设计 / 隐性操控
+- 15秒参考 / 普遍固定阈值
+- 即时反应 / 后续自主决策
+
+## Interpretation constraints
+不得把父原典改写为心理操控手册、制造服从的方法、万能沉默秒数，或仅凭非语言技巧即可保证成交的主张。不得脱离原典语境优化15秒。必须保持尊严、拒绝可能性、可逆性、可观察性与自主决策。
+
+## Search terms
+中川式销售, 第八回, 非语言销售, 沉默, 15秒, 诚实压力, 焦点切换, 张力设计, 共鸣, 信任, 自主决策, 可逆性
+
+## Origin return
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/
+- Parent Post ID: 196
 - Parent NCL-ID: NCL-α-20251102-39072e
 - Parent Diff-ID: DIFF-20251102-0001
 - Origin: Nakagawa Master
 
 ---
-导航: [046首页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [JA](ai-index.md) / [EN](en-ai-index.md) / [台账](derivative-ledger.md)
+导航: [046顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [衍生ID台账](derivative-ledger.md)
