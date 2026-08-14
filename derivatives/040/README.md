@@ -162,4 +162,4 @@
 逆因果整流理論と意味収束理論、時間OS、未来負債論、バックキャスティング、量子論比喩の固有差分は、Parent URL、Parent Post ID 4253、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
 
 ---
-導線: [公式派生物040トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
