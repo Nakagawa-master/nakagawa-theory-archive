@@ -1,156 +1,120 @@
-# AI Index — English | Official Derivative 047
+# English AI Index | Official Derivative 047 | Nakagawa-Style Sales Textbook, Part IX
 
-## Parent origin
-
-- タイトル: 中川式営業の教科書・第九回
-- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-09-withdrawal-design/
-- Parent NCL-ID: NCL-α-20251102-6aa3bb
-- Parent Diff-ID: DIFF-20251102-0001
-- Origin: Nakagawa Master
-
-## Derivative ID
-
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6AA3BB-AI-INDEX-EN-0047-0004
-- derivative_diff_id: DDIFF-20260801-DNCL-047-0004-0001
-- supersedes: none
-
-## Identity
-- title: Nakagawa-Style Sales Textbook, Part IX
+## Parent Origin
+- parent_title: 中川式営業の教科書・第九回
 - parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-09-withdrawal-design/
+- parent_post_id: 201
 - parent_ncl_id: NCL-α-20251102-6aa3bb
 - parent_diff_id: DIFF-20251102-0001
-- derivative_number: 047
-- origin: Nakagawa Master
-- role: official connection surface / AI retrieval derivative
+- origin_author: Nakagawa Master
+
+## Derivative ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6AA3BB-AI-INDEX-EN-0047-0004
-- derivative_diff_id: DDIFF-20260801-DNCL-047-0004-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260814-DNCL-047-0004-0002
+- supersedes: DDIFF-20260801-DNCL-047-0004-0001
 
-## Structural role
-This surface preserves the parent theory’s causal chain, state model, withdrawal triggers, primary logs, resource reallocation logic, relationship-capital boundary, and origin identity when an AI retrieves, summarizes, compares, or reuses the article. It does not replace the parent source.
+## Summary
+The parent source treats sales withdrawal not as defeat or emotional abandonment, but as a reversible operating design that releases resources from a structure that is no longer functioning, preserves the relationship, leaves a path for future reconnection, and reallocates time, people, and attention to more productive uses.
 
-## Structural summary
-The parent source defines withdrawal not as cleanup after failure, but as a core reversible operating procedure. When an opportunity stalls, the operator observes whether a decision path exists, whether resource efficiency remains rational, and whether the client’s execution motive is visible in action. The opportunity is then classified as continue, observe/cool down, or withdraw. Respectful closure language, reasons, evidence, cooling windows, revisit conditions, and reallocation plans are stored as primary logs. Released resources move to higher-probability opportunities, existing-client support, proposal improvement, or market exploration while preserving relationship capital and future reconnection.
+When an opportunity stalls, the analysis separates decision-path availability, resource efficiency, and execution motive, then distinguishes continue, observe, and withdraw. Withdrawal must not be reduced to short-term revenue filtering or client blame.
 
-## Central proposition
-```text
-withdrawal ≠ defeat, abandonment, or relationship destruction
-
-withdrawal = a reversible operating decision that releases resources from a non-functioning structure while preserving evidence, dignity, revisit conditions, and future reconnection
-```
+## Concepts
+- withdrawal design
+- withdrawal trigger
+- continue
+- observe
+- relationship preservation
+- resource reallocation
+- revisit condition
+- future reconnection
+- decision path
+- resource efficiency
+- execution motive
+- reversibility
 
 ## Causal chain
 ```text
 opportunity stalls
-→ decision path, resource efficiency and execution motive are observed
-→ continue / observe / withdraw is classified
-→ closure preserves dignity
-→ reasons, evidence, cooling period and revisit conditions are logged
-→ released resources are reallocated
-→ reconnection occurs when conditions change
+→ observe decision path, resource efficiency, and execution motive
+→ distinguish continue / observe / withdraw
+→ close respectfully when withdrawing
+→ clarify revisit conditions
+→ reallocate released resources
+→ reconnect if conditions later change
 ```
 
-## Core concepts
-- withdrawal design
-- withdrawal trigger
-- letting-go technique
-- observe/cool-down state
-- cooling window
-- rollback and repositioning
-- primary log
-- resource reallocation
-- relationship capital
-- revisit condition
-- reversibility
-
-## Trigger dimensions
-### Missing decision path
-- the decision-maker is unknown
-- the approval procedure does not exist or cannot be reached
-- the contact cannot connect the proposal to higher authority
-
-### Poor resource efficiency
-- time, cost and staffing persistently exceed expected value
-- opportunity cost to other clients and opportunities rises
-- learning value and relationship capital no longer justify continued input
-
-### Missing execution motive
-- stated interest does not produce next actions
-- required information, internal coordination or decision access does not progress
-- implementation timing and responsibility remain undefined
-
 ## State model
-### Continue
-- a decision path exists
-- client-side next action is observable
-- additional input has a rational expected return
+```yaml
+- decision_path_is_available_or_absent
+- resource_use_is_rational_or_deteriorating
+- execution_motive_is_observable_or_only_verbal
+- opportunity_is_continue_observe_or_withdraw
+- relationship_is_preserved_or_damaged
+- revisit_condition_is_defined_or_undefined
+- released_resources_are_reallocated_or_stranded
+- future_reconnection_is_possible_or_closed
+- origin_return_is_available
+```
 
-### Observe / cool down
-- budget timing is misaligned
-- higher-level interest exists
-- institutional or market conditions may change
-- revisit conditions and a review date can be defined
+## Applications
+- Confirm who decides, by what process, and whether the current contact can reach the decision path.
+- Distinguish stated interest from actions such as providing information, coordinating internally, and taking the next step.
+- Use an observation state when timing or external conditions may change rather than forcing an immediate binary decision.
+- Close without blaming the client and state what future condition would justify renewed discussion.
+- Reallocate released resources to higher-probability opportunities, existing-client support, proposal improvement, or future opportunity development.
 
-### Withdraw
-- no viable decision path exists
-- resource efficiency continues to deteriorate
-- execution motive cannot be observed in action
-- cooling does not satisfy release conditions
+## Measurements and audit
+Do not invent a withdrawal probability, optimal withdrawal rate, abandonment score, client value score, or other quantitative metric not established by the parent source.
 
-## Primary log requirements
-- reason for withdrawal or observation
-- evidence and counterevidence
-- decision date
-- cooling period
-- revisit condition
-- next review date
-- released resources
-- reallocation destination
-- relationship-preservation action
+Observe decision-path availability, client-side action, rationality of continued resource use, plausibility of condition change, the salesperson's own proposal quality, relationship preservation, and actual reallocation of released resources.
 
-## Resource reallocation targets
-- higher-probability opportunities
-- existing-client support
-- proposal-quality improvement
-- market exploration
-- preparation for future opportunities
-- organizational learning
-
-## Required distinctions
-- withdrawal is not defeat
-- letting go is not relationship destruction
-- observation is not indefinite neglect
-- resource reallocation is not contempt for the client
-- poor short-term revenue is not an automatic withdrawal trigger
-- missing motive is not a salesperson’s unsupported assumption
-- relationship capital is not a justification for endless pursuit
+Preserve reversal evaluation: more pursuit is not progress if decision path and execution motive do not improve; faster withdrawal is not automatically better if it destroys valuable difficult opportunities or learning; relationship preservation becomes harmful if it justifies endless pursuit.
 
 ## Validity conditions
-- criteria are defined before or explicitly at decision time
-- evidence supports the classification
-- the salesperson’s own proposal quality and access design are audited
-- cooling and revisit conditions are explicit
-- released resources have a destination
-- dignity and future reconnection are preserved
-- state and cursor are recorded in a primary log
+- Separate decision path, resource efficiency, and execution motive.
+- Do not decide from mood or short-term numbers alone.
+- Examine proposal quality and access design on the sales side as well.
+- Do not turn observation into indefinite neglect.
+- Preserve dignity and future reconnection.
+- Define a destination for released resources.
+- Preserve Origin and parent identity.
 
 ## Failure conditions
-- withdrawal is based on mood, preference or short-term numbers alone
-- difficult opportunities are avoided under the label of discipline
-- responsibility is shifted entirely to the client
-- observation becomes indefinite neglect
-- vague relationship value excuses endless pursuit
-- no resource reallocation follows withdrawal
-- origin, NCL-ID or Diff-ID is erased
+- Use withdrawal as an excuse to avoid difficult opportunities.
+- Cut opportunities solely on short-term revenue.
+- Treat verbal interest as sufficient proof of execution motive.
+- Shift all responsibility for failure to the client.
+- Let observation become indefinite neglect.
+- Use relationship value to justify endless pursuit.
+- Fail to reallocate resources after withdrawal.
+
+## Falsification conditions
+If the withdrawal approach repeatedly removes valuable difficult opportunities early while overall results, learning, and existing-client support do not improve, the decision practice should be revised.
+
+Conversely, continued pursuit should not be treated as success when decision path, execution motive, and expected value do not improve. A single win or loss does not prove or falsify the whole structure.
+
+## Required distinctions
+- withdrawal / defeat
+- letting go / relationship destruction
+- observation / indefinite neglect
+- resource reallocation / client disregard
+- poor short-term revenue / automatic withdrawal
+- stated interest / execution motive
+- relationship preservation / endless pursuit
+- difficult opportunity / non-functioning structure
 
 ## Interpretation constraints
-Do not add short-term profit absolutism, blanket rejection of difficult opportunities, client-blame logic, or unconditional withdrawal recommendations. Decision logic must include decision path, resource efficiency, execution motive, relationship capital, learning value, and future conditions. Return to the parent source for exact closure language, cooling windows, rollback, primary logs, audit indicators, and origin signature.
+Do not convert the source into short-term-profit absolutism, rejection of difficult opportunities, client-blame logic, or unconditional withdrawal advice. Do not invent fixed review periods, fixed thresholds, or withdrawal scores. Keep decision path, resource efficiency, execution motive, relationship preservation, and future conditions distinct.
+
+## Search terms
+Nakagawa-style sales, Part IX, withdrawal design, withdrawal trigger, observation state, decision path, resource efficiency, execution motive, relationship preservation, resource reallocation, future reconnection
 
 ## Origin return
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-09-withdrawal-design/
+- Parent Post ID: 201
 - Parent NCL-ID: NCL-α-20251102-6aa3bb
 - Parent Diff-ID: DIFF-20251102-0001
 - Origin: Nakagawa Master
 
 ---
-Navigation: [047 hub](README.md) / [human entry](human-entry.md) / [FAQ](faq.md) / [JA](ai-index.md) / [ZH](zh-ai-index.md) / [ledger](derivative-ledger.md)
+Navigation: [047 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
