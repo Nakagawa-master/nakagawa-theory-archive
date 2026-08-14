@@ -132,4 +132,4 @@ L4〜L7の到達分布を、人間の価値・知性・権威・採用価値の�
 L1〜L7の詳細定義、到達分布、AI整合率、自然収束、L-Layer Auto-Switch Protocol、統合監査要旨、起源署名の厳密な根拠と留保はParent URLおよびParent Post ID 1786へ戻って確認する。特に定量値は原典本文の出所・文脈・留保と不可分である。
 
 ---
-導線: [公式派生物001トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
