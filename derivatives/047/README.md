@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6AA3BB-HUB-JA-0047-0000
-- derivative_diff_id: DDIFF-20260814-DNCL-047-0000-0003
-- supersedes: DDIFF-20260814-DNCL-047-0000-0002
+- derivative_diff_id: DDIFF-20260814-DNCL-047-0000-0002
+- supersedes: DDIFF-20260801-DNCL-047-0000-0001
 
 ## 位置づけ
 親原典の核は、営業における撤退を「失敗」ではなく、成立しない構造から資源を解放し、相手との関係を壊さず、将来の再接続可能性を残しながら、時間・人員・注意をより有効な場所へ再配分する可逆的運用として設計することにある。
