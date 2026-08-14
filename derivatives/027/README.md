@@ -106,4 +106,4 @@
 親原典では、異質な土から評価・配合・混合・養生・品質確認・現場補正・検証・標準化への移行・材料観更新という連続性とともに、中川マスターがなぜ「材料観更新」という切り口を外部記事で採用したのかが示されている。材料として扱える条件の厳密な意味と、対象技術の説明と公開解体の二層構造を確認するにはParent URLへ戻る。
 
 ---
-導線: [公式派生物027トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
