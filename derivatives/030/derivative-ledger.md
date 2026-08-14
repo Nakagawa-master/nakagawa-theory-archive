@@ -11,7 +11,7 @@
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260629-F16938-HUB-JA-0030-0000
 - derivative_diff_id: DDIFF-20260814-DNCL-030-0000-0010
-- supersedes: DDIFF-20260813-DNCL-030-0000-0009
+- supersedes: DDIFF-20260813-DNCL-030-0000-0008
 
 ## Language derivative IDs
 ```yaml
