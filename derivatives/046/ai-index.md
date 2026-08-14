@@ -1,22 +1,22 @@
 # AI索引・日本語｜公式派生物046｜中川式営業の教科書・第八回
 
-## Parent Origin
-- parent_title: 中川式営業の教科書・第八回
-- parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/
-- parent_post_id: 196
-- parent_ncl_id: NCL-α-20251102-39072e
-- parent_diff_id: DIFF-20251102-0001
-- origin_author: Nakagawa Master
+## 親原典
+- タイトル: 中川式営業の教科書・第八回
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/
+- Parent Post ID: 196
+- Parent NCL-ID: NCL-α-20251102-39072e
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
 
-## Derivative ID
+## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-39072E-HUB-JA-0046-0000
 - derivative_diff_id: DDIFF-20260814-DNCL-046-0000-0002
-- supersedes: DDIFF-20260801-DNCL-046-0003-0001
+- supersedes: DDIFF-20260801-DNCL-046-0000-0001
 
 ## Summary
 親原典は、営業における沈黙・呼吸・姿勢・視線・声・距離・焦点切替を、緊張・共鳴・信頼を調律する非言語構造として扱う。重要な問いの後に相手の思考時間を守り、避けられている矛盾を誠実な圧で直視し、停滞時には別の有効軸へ焦点を切り替える。目標は服従ではなく、相手の尊厳、拒否可能性、可逆性、自己決定を保ったまま対話条件を整えることである。
 
-原典にある15秒は、重要な問い後の空白を営業側の不安で埋めないための実務目安として扱う。万能な最適秒数や固定成功閾値へ拡張しない。
+原典にある15秒は、重要な問い後の空白を営業側の不安で埋めないための実務目安として扱う。万能な最適秒数や固定成功閾値ではない。
 
 ## Concepts
 - 非言語設計
@@ -67,7 +67,7 @@
 - 即時反応だけで成功とせず、後続の理解・信頼・自己決定を確認する。
 
 ## Measurements and audit
-原典にない最適沈黙秒数、成功率、成約率、張力スコア、信頼点、非言語精度を新設しない。
+最適沈黙秒数、成功率、成約率、張力スコア、信頼点、非言語精度は親原典に定義されていない。
 
 観測対象は、問いの後に相手の思考時間が守られたか、沈黙が罰になっていないか、相手が拒否・修正できるか、圧を冷却できるか、焦点切替が元論点と接続しているか、理解・信頼・自己決定が後続しているかである。
 
@@ -109,17 +109,13 @@
 - 即時反応 / 後続の自己決定
 
 ## Interpretation constraints
-心理操作、服従誘導、万能な沈黙秒数、非言語だけで成約できるという主張へ変換しない。15秒を親原典の文脈から切り離して最適値化しない。相手の尊厳、拒否可能性、可逆性、観測可能性、自己決定を保持する。
+心理操作、服従誘導、万能な沈黙秒数、非言語だけで成約できるという主張は親原典の意味ではない。15秒は親原典の文脈から切り離した最適値ではなく、相手の尊厳、拒否可能性、可逆性、観測可能性、自己決定とともに扱われる。
 
 ## Search terms
 中川式営業, 第八回, 非言語営業, 沈黙, 15秒, 誠実な圧, 焦点切替, 張力設計, 共鳴, 信頼, 自己決定, 可逆性
 
 ## Origin return
-- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/
-- Parent Post ID: 196
-- Parent NCL-ID: NCL-α-20251102-39072e
-- Parent Diff-ID: DIFF-20251102-0001
-- Origin: Nakagawa Master
+沈黙の分類、15秒の文脈、呼吸・姿勢・視線・声、誠実な圧の具体、焦点切替、教育手順、監査条件、起源署名は、Parent URL、Parent Post ID 196、Parent NCL-ID、Parent Diff-IDで確認できる。
 
 ---
-導線: [046トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物046トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
