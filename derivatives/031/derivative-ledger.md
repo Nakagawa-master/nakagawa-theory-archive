@@ -10,104 +10,36 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260623-CFAA58-HUB-JA-0031-0000
-- derivative_diff_id: DDIFF-20260813-DNCL-031-0000-0004
-- supersedes: DDIFF-20260813-DNCL-031-0000-0003
+- derivative_diff_id: DDIFF-20260814-DNCL-031-0000-0005
+- supersedes: DDIFF-20260813-DNCL-031-0000-0004
 
 ## Language derivative IDs
 ```yaml
 ja_ncl_id: DNCL-NCL-ALPHA-20260623-CFAA58-HUB-JA-0031-0000
-ja_diff_id: DDIFF-20260813-DNCL-031-0000-0004
+ja_diff_id: DDIFF-20260814-DNCL-031-0000-0005
 en_ncl_id: DNCL-NCL-ALPHA-20260623-CFAA58-HUB-EN-0031-0001
-en_diff_id: DDIFF-20260813-DNCL-031-0001-0004
+en_diff_id: DDIFF-20260814-DNCL-031-0001-0005
 zh_ncl_id: DNCL-NCL-ALPHA-20260623-CFAA58-HUB-ZH-0031-0002
-zh_diff_id: DDIFF-20260813-DNCL-031-0002-0004
+zh_diff_id: DDIFF-20260814-DNCL-031-0002-0005
 ```
 
-## Factory
-```yaml
-quality_contract: OD134_OD135_LITERAL_SURFACE_BENCHMARK
-source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
-production_standard: LITERAL_SEVEN_SURFACE_REAUDIT
-manual_meaning_normalization: PROHIBITED
-assistant_safety_reframing_as_parent_meaning: PROHIBITED
-invented_fixed_sections: PROHIBITED
-surface_role_mixing: PROHIBITED
-footer_navigation_must_follow_benchmark: true
-```
+## Meaning boundary
+親原典はAshiraseを単なる歩行支援デバイスではなく、歩行成立に必要な方向・環境・判断情報を本人が利用可能な形で受け取り、認知負荷を抑えながら自律的移動を継続できる「歩ける社会の情報インフラ」として読む。
 
-## Retrieval evidence
-```yaml
-canonical_index: reference_corpus/official_archive/generated/canonical_index_4420_4593.jsonl
-parent_post_id: 4536
-parent_ncl_id: NCL-α-20260623-cfaa58
-parent_diff_id: DIFF-20260623-0001
-parent_url: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-ashirase-structural-reading-walking-information-infrastructure/
-xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-xml_item_lines: 274618-275682
-canonical_index_verified: true
-xml_item_mapping_verified_from_canonical_index: true
-source_meaning_return: Parent_URL
-```
+身体能力と実質的移動可能性、情報の存在と利用可能な情報、情報量と判断に使える情報、認知負荷低減と判断の全面委任を区別する。対象技術の構造に加え、Nakagawa Masterがなぜ「歩ける社会の情報インフラ」を外部記事の価値核として採用したのかという公開解体層も親原典に含まれる。
 
-## Seven surfaces
-```yaml
-README.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-human-entry.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-faq.md: REAUDITED_LITERAL_SOURCE_FAITHFUL_Q1_Q30
-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-en-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-zh-ai-index.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-derivative-ledger.md: REAUDITED_LITERAL_SOURCE_FAITHFUL
-```
+## Required distinctions
+- 身体能力 / 実質的移動可能性
+- 情報の存在 / 利用可能な情報
+- 情報量 / 判断に使える情報
+- 案内提供 / 本人の判断余地
+- 認知負荷低減 / 判断の全面委任
+- 歩行支援デバイス / 歩ける社会の情報インフラ
+- Ashiraseの製品説明 / Nakagawa Masterによる構造読解
+- 対象技術の構造 / 公開解体記事としてのメタ視点
 
-## Source-fidelity findings repaired
-```yaml
-prior_drift:
-  - SURFACE_SPECIFIC_DERIVATIVE_ID_PATTERN_DIVERGED_FROM_OD134_OD135
-  - README_FOOTER_DIVERGED_FROM_BENCHMARK_TOP_LINK
-  - LEDGER_STRUCTURE_DIVERGED_FROM_OD134_OD135_LITERAL_LEDGER
-  - DERIVATIVE_AUTHORED_FALSIFICATION_LANGUAGE_EXCEEDED_PARENT_QUANTITATIVE_SUPPORT
-  - AI_INDEX_TITLES_AND_IDENTITY_FIELDS_DIVERGED_FROM_BENCHMARK_PATTERN
-  - PUBLIC_READER_BOUNDARY_REQUIRED_STRONGER_SEPARATION_FROM_PRODUCT_OR_MEDIA_OFFICIAL_VIEW
-retired_surface_diff_ids:
-  - DDIFF-20260813-DNCL-031-0000-0003
-  - DDIFF-20260813-DNCL-031-0001-0003
-  - DDIFF-20260813-DNCL-031-0002-0003
-restored:
-  - PARENT_TITLE_URL_POST_ID_NCL_ID_DIFF_ID_ORIGIN
-  - SHARED_JA_HUB_DERIVATIVE_IDENTITY_ACROSS_JA_PUBLIC_SURFACES
-  - LANGUAGE_DERIVATIVE_IDS_FOR_EN_AND_ZH
-  - OD134_OD135_LITERAL_HEADING_SERIES
-  - OD134_OD135_LITERAL_FOOTER_MENU_SHAPE
-  - WALKING_INFORMATION_INFRASTRUCTURE_VALUE_CORE
-  - BODILY_ABILITY_AND_EFFECTIVE_MOBILITY_DISTINCTION
-  - DIRECTION_ENVIRONMENT_DECISION_INFORMATION_CAUSALITY
-  - COGNITIVE_LOAD_AND_BODILY_SENSATION_CONNECTION
-  - PERSONAL_JUDGMENT_AND_SURROUNDING_ATTENTION
-  - PUBLIC_DECONSTRUCTION_META_LAYER
-  - REVERSAL_EVALUABILITY_WITHOUT_INVENTED_THRESHOLDS
-  - THIRD_PARTY_HUMAN_AND_AI_PUBLIC_READER_AXIS
-  - PARENT_ORIGIN_RETURN
-```
-
-## Semantic rule
-派生物は親原典の価値核・因果・強度・留保を別の一般論へ差し替えない。Ashiraseを単なる製品紹介、利用推奨、医療・安全保証、一般アクセシビリティ論へ縮約せず、「歩ける社会の情報インフラ」という構造読解と、その価値核を外部記事の切り口として選んだ理由を公開解体する第二層を保持する。親原典に存在しない歩行成功率、事故低減率、認知負荷閾値等を派生側で新設せず、数値・性能表現を用いる場合は親原典由来か外部資料由来かを分離する。
-
-## Navigation and closure
-```yaml
-public_indexes: RETAINED
-public_map: RETAINED
-private_map: RETAINED
-parent_backlink_display_procedure: RETAINED
-literal_surface_structure_check: PASSED
-footer_navigation_check: PASSED
-third_party_public_reader_axis_check: PASSED
-internal_instruction_leak_check: PASSED
-self_reference_dialogue_check: PASSED
-source_fidelity_reaudit: PASSED
-source_fidelity_owner_review: PENDING
-```
+## Origin return
+身体能力、情報不足、認知負荷、身体感覚接続、本人の判断余地、実質的移動可能性の関係と、なぜ「歩ける社会の情報インフラ」という価値核が外部記事の切り口として採用されたのかは、Parent URL、Parent Post ID 4536、Parent NCL-ID、Parent Diff-ID、Originで確認できる。
 
 ---
 導線: [公式派生物031トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
