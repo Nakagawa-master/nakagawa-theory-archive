@@ -9,9 +9,9 @@
 - Origin: Nakagawa Master
 
 ## Derivative identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-A8EAA0-AI-INDEX-EN-0048-0001
-- derivative_diff_id: DDIFF-20260814-DNCL-048-0001-0002
-- supersedes: DDIFF-20260801-DNCL-048-0004-0001
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-A8EAA0-HUB-EN-0048-0001
+- derivative_diff_id: DDIFF-20260814-DNCL-048-0001-0003
+- supersedes: DDIFF-20260814-DNCL-048-0001-0002
 
 ## Summary
 The parent article integrates the preceding nine installments of Nakagawa-style sales and reframes sales not as a technique for pushing a purchase, but as recognition support: questions and resonance externalize the other party’s decision structure so that understanding can become coherent and the person can choose to decide, pause, or withdraw. As customers gain direct access to information, the salesperson’s role shifts from information delivery toward clarifying criteria, concerns, future images, and implementation conditions. AI may support organization and comparison, while meaning, direction, ethics, and final responsibility remain human.
@@ -55,39 +55,23 @@ customers gain independent access to information
 ```
 
 ## Applications
-- distinguish missing information from missing decision structure
-- use questions to surface criteria, decision makers and implementation barriers
-- summarize the client’s words without turning seller interpretation into fact
-- use silence to protect thinking time rather than create pressure
-- improve reproducibility through shared vocabulary, example comparison and training
-- use AI for organizing dialogue, issues and comparison candidates without delegating judgment
+The structure applies to distinguishing missing information from missing decision structure, using questions to surface criteria and implementation barriers, preserving client language separately from seller interpretation, using silence as thinking space rather than pressure, and improving reproducibility through shared vocabulary and example comparison. AI can organize dialogue, issues, and comparison candidates while human judgment remains responsible for meaning, direction, and ethics.
 
 ## Measurements and audit
-Do not invent parent-unsupported understanding rates, optimal agreement times, success probabilities, philosophy scores, rollback success rates, or other fixed metrics.
+The parent article does not establish understanding rates, optimal agreement times, success probabilities, philosophy scores, rollback success rates, or other fixed metrics.
 
-Observe whether the other party can explain their reasoning in their own words, whether questions narrow choices, whether criteria and concerns are separated, whether silence becomes pressure, whether pause and withdrawal remain legitimate options, and whether AI replaces human judgment.
+Relevant observations include whether the other party can explain their reasoning in their own words, whether questions narrow choices, whether criteria and concerns are separated, whether silence becomes pressure, whether pause and withdrawal remain legitimate options, and whether AI replaces human judgment.
 
-Preserve reversal evaluability. More questions are not better if steering increases. More information is not better if comparison remains confused. A higher close rate is not necessarily structural success if self-determination or trust deteriorates.
+Reversal remains possible. More questions are not better if steering increases. More information is not better if comparison remains confused. A higher close rate is not necessarily structural success if self-determination or trust deteriorates.
 
 ## Validity conditions
-- refusal, pause and withdrawal remain possible
-- questions are not scripted paths to yes
-- client language remains distinct from seller interpretation
-- criteria, concerns and uncertainty are explicit
-- nonverbal design does not become intimidation
-- short-term closing is not the only success condition
-- humans retain meaning, direction, ethics and responsibility when AI is used
+Refusal, pause, and withdrawal remain possible. Questions remain distinct from scripted paths to yes. Client language remains distinct from seller interpretation. Criteria, concerns, and uncertainty are explicit. Nonverbal design remains distinct from intimidation, short-term closing is not the only success condition, and humans retain meaning, direction, ethics, and responsibility when AI is used.
 
 ## Failure conditions
-- only yes counts as success
-- questions intentionally narrow alternatives
-- silence or tension is used to create fear or urgency
-- “philosophy” is used to avoid evidence or accountability
-- AI output is adopted without checking its basis
-- cross-domain applicability is presented as automatically proven effectiveness
+The structure is distorted when only yes counts as success, questions intentionally narrow alternatives, silence or tension creates fear or urgency, “philosophy” avoids evidence or accountability, AI output is adopted without checking its basis, or cross-domain applicability is presented as automatically proven effectiveness.
 
 ## Falsification conditions
-If question-and-resonance practices repeatedly increase steering or decision burden without improving understanding, self-determination, or trust, the operating form should be revised.
+If question-and-resonance practices repeatedly increase steering or decision burden without improving understanding, self-determination, or trust, the operating form is subject to revision.
 
 Conversely, where clear information alone already supports comparison, understanding, and self-decision, adding more questioning or nonverbal design has limited structural necessity. A single close or loss does not prove or disprove the entire framework.
 
@@ -103,7 +87,7 @@ Conversely, where clear information alone already supports comparison, understan
 - information volume / completed understanding
 
 ## Interpretation constraints
-Do not convert the parent article into psychological manipulation, advanced persuasion, intimidation through silence, rejection of revenue, justification for fully automated AI selling, or a model of social domination through sales. Applications to policy, education, culture, and AI are structural possibilities, not externally proven universal laws.
+The parent article is not psychological manipulation, advanced persuasion, intimidation through silence, rejection of revenue, justification for fully automated AI selling, or a model of social domination through sales. Applications to policy, education, culture, and AI are structural possibilities rather than externally proven universal laws.
 
 ## Search terms
 Nakagawa-style sales, sales philosophy, recognition support, emergent decision, questions and resonance, completed understanding, nonverbal communication, self-determination, hold, withdrawal, AI support, structural translation
@@ -117,4 +101,4 @@ Nakagawa-style sales, sales philosophy, recognition support, emergent decision, 
 - Origin: Nakagawa Master
 
 ---
-Navigation: [048 hub](README.md) / [human summary](human-entry.md) / [FAQ](faq.md) / [JA](ai-index.md) / [ZH](zh-ai-index.md) / [ledger](derivative-ledger.md)
+Navigation: [048 hub](README.md) / [human summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [English AI index](en-ai-index.md) / [Chinese AI index](zh-ai-index.md) / [derivative ledger](derivative-ledger.md)

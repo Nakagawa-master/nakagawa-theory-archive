@@ -63,7 +63,7 @@
 - AIを会話・論点・比較候補の整理補助として使い、人間判断を代替させない。
 
 ## Measurements and audit
-親原典にない理解率、合意到達時間の最適値、成功確率、営業思想スコア、Rollback成功率などを派生側で新設しない。
+親原典は、理解率、合意到達時間の最適値、成功確率、営業思想スコア、Rollback成功率などの固定数値モデルを定義していない。
 
 観測対象は、相手が自分の言葉で判断理由を説明できるか、問いが誘導になっていないか、比較軸・懸念・未確定事項が分離されているか、沈黙が威圧になっていないか、保留・撤退が正当な選択肢として残るか、AIが人間判断を置き換えていないかである。
 
@@ -109,12 +109,7 @@
 中川式営業, 営業思想, 認識支援, 決めさせず決まる, 問いと共鳴, 理解の完成, 非言語, 自己決定, 保留, 撤退, AI支援, 構造翻訳
 
 ## Origin return
-- Parent title: 中川式営業の教科書・第十回
-- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-10-sales-as-thought/
-- Parent Post ID: 205
-- Parent NCL-ID: NCL-α-20251102-a8eaa0
-- Parent Diff-ID: DIFF-20251102-0001
-- Origin: Nakagawa Master
+Parent URL、Parent Post ID 205、Parent NCL-ID、Parent Diff-ID、Originへ戻ることで、前九回との接続、問いと共鳴、非言語、組織展開、社会応用、AIとの役割分担を原典の論証順序で確認できる。
 
 ---
-導線: [048トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [EN](en-ai-index.md) / [ZH](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物048トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

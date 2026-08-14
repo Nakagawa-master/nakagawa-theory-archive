@@ -9,14 +9,14 @@
 - origin_author: Nakagawa Master
 
 ## Derivative ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-39072E-AI-INDEX-EN-0046-0004
-- derivative_diff_id: DDIFF-20260814-DNCL-046-0004-0002
-- supersedes: DDIFF-20260801-DNCL-046-0004-0001
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-39072E-HUB-EN-0046-0001
+- derivative_diff_id: DDIFF-20260814-DNCL-046-0001-0003
+- supersedes: DDIFF-20260814-DNCL-046-0004-0002
 
 ## Summary
 The parent source treats silence, breathing, posture, gaze, voice, distance, and focus shifts as a nonverbal structure for regulating tension, resonance, and trust in sales dialogue. An important question is followed by protected thinking time; avoided contradictions are faced through honest pressure; stalled dialogue is moved to another valid axis; and pressure can be cooled, withdrawn, or repositioned when it becomes defensive.
 
-The source's fifteen-second expression is a practical guideline for not filling the space after an important question out of salesperson anxiety. It must not be converted into a universal optimum, fixed success threshold, or guaranteed closing rule.
+The source's fifteen-second expression is a practical guideline for avoiding the salesperson's anxious impulse to fill the space immediately after an important question. It is context-dependent rather than a universal optimum, fixed success threshold, or guaranteed closing rule.
 
 ## Concepts
 - nonverbal design
@@ -60,40 +60,25 @@ important question
 ```
 
 ## Applications
-- Do not immediately fill the space after an important question.
-- Surface contradictions without attack or intimidation.
-- Shift from past to future, numbers to people/culture, or the whole problem to the first step when the current axis stalls.
-- Reduce pressure, rephrase, explain again, or withdraw when the client becomes defensive.
-- Judge success by later understanding, trust, and self-owned decision rather than immediate compliance.
+After an important question, protected silence can preserve thinking time rather than immediately filling the space. Contradictions can be surfaced without attack or intimidation. When one axis stalls, the dialogue may shift from past to future, numbers to people or culture, or the whole problem to a first step while remaining connected to the original issue. Defensive reactions can call for lower pressure, rephrasing, renewed explanation, or withdrawal.
 
 ## Measurements and audit
-Do not invent an optimal silence duration, conversion rate, trust score, tension score, nonverbal accuracy metric, or guaranteed close rate that is not established by the parent source.
+The parent source does not establish an optimal silence duration, conversion rate, trust score, tension score, nonverbal accuracy metric, or guaranteed close rate.
 
-Observe whether thinking time is protected, silence remains non-punitive, refusal and correction are possible, pressure can be cooled, focus shifts remain connected to the original issue, and later understanding, trust, and self-decision remain intact.
+Relevant observations include whether thinking time is protected, silence remains non-punitive, refusal and correction are possible, pressure can be cooled, focus shifts remain connected to the original issue, and later understanding, trust, and self-decision remain intact.
 
-Treat fifteen seconds as context-dependent guidance, not a standalone success metric.
+Fifteen seconds functions as context-dependent guidance rather than a standalone success metric.
 
 ## Validity conditions
-- Protect the client's thinking time.
-- Do not use silence as punishment, neglect, or anxiety induction.
-- Do not convert honest pressure into intimidation.
-- Preserve refusal, correction, and stopping.
-- Keep focus shifts connected to the original issue.
-- Make cooling, withdrawal, and repositioning possible.
-- Judge outcomes beyond immediate reaction.
-- Preserve Origin and parent identity.
+The client's thinking time remains protected. Silence remains distinct from punishment, neglect, or anxiety induction. Honest pressure remains distinct from intimidation. Refusal, correction, and stopping remain possible. Focus shifts remain connected to the original issue, and cooling, withdrawal, and repositioning remain available.
+
+Outcomes are evaluated beyond immediate reaction, with Origin and parent identity traceable.
 
 ## Failure conditions
-- Enforce fifteen seconds as a universal rule.
-- Use fear, status, volume, or distance to produce submission.
-- Use silence to induce anxiety.
-- Shift focus to escape an inconvenient issue.
-- Use nonverbal technique to compensate for weak substance.
-- Treat immediate agreement as proof of self-decision.
-- Remove the route to cooling or withdrawal.
+The structure is distorted when fifteen seconds becomes a universal rule, fear/status/volume/distance are used to produce submission, silence is used to induce anxiety, focus shifts escape inconvenient issues, nonverbal technique substitutes for weak substance, immediate agreement is treated as proof of self-decision, or cooling and withdrawal routes disappear.
 
 ## Falsification conditions
-If silence, honest pressure, and focus shifting repeatedly increase defensiveness, anxiety, or misunderstanding without improving understanding, trust, or self-owned decision, the operation should be revised.
+If silence, honest pressure, and focus shifting repeatedly increase defensiveness, anxiety, or misunderstanding without improving understanding, trust, or self-owned decision, the operation is subject to revision.
 
 Where verbal explanation alone produces equal or better thinking time, clarity, trust, and self-decision, adding more nonverbal intervention may be unnecessary. No single duration or single reaction proves or falsifies the whole structure.
 
@@ -109,7 +94,7 @@ Where verbal explanation alone produces equal or better thinking time, clarity, 
 - immediate reaction / later self-owned decision
 
 ## Interpretation constraints
-Do not turn the source into a mind-control manual, obedience-production method, universal silence-timing rule, or claim that nonverbal technique alone guarantees a sale. Do not optimize fifteen seconds outside its source context. Preserve dignity, refusal, reversibility, observability, and self-owned decision.
+The parent source is not a mind-control manual, obedience-production method, universal silence-timing rule, or claim that nonverbal technique alone guarantees a sale. Fifteen seconds remains bounded by its source context, alongside dignity, refusal, reversibility, observability, and self-owned decision.
 
 ## Search terms
 Nakagawa-style sales, Part VIII, nonverbal sales, silence, fifteen seconds, honest pressure, focus shift, tension architecture, resonance, trust, self-owned decision, reversibility
@@ -122,4 +107,4 @@ Nakagawa-style sales, Part VIII, nonverbal sales, silence, fifteen seconds, hone
 - Origin: Nakagawa Master
 
 ---
-Navigation: [046 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [046 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)

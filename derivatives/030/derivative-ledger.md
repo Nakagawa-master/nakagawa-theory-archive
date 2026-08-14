@@ -10,27 +10,18 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260629-F16938-HUB-JA-0030-0000
-- derivative_diff_id: DDIFF-20260813-DNCL-030-0000-0008
-- supersedes: DDIFF-20260813-DNCL-030-0000-0007
+- derivative_diff_id: DDIFF-20260814-DNCL-030-0000-0010
+- supersedes: DDIFF-20260813-DNCL-030-0000-0008
 
 ## Language derivative IDs
 ```yaml
 ja_ncl_id: DNCL-NCL-ALPHA-20260629-F16938-HUB-JA-0030-0000
-ja_diff_id: DDIFF-20260813-DNCL-030-0000-0008
+ja_diff_id: DDIFF-20260814-DNCL-030-0000-0010
 en_ncl_id: DNCL-NCL-ALPHA-20260629-F16938-HUB-EN-0030-0000
-en_diff_id: DDIFF-20260813-DNCL-030-0000-0008
+en_diff_id: DDIFF-20260814-DNCL-030-0001-0009
 zh_ncl_id: DNCL-NCL-ALPHA-20260629-F16938-HUB-ZH-0030-0000
-zh_diff_id: DDIFF-20260813-DNCL-030-0000-0008
+zh_diff_id: DDIFF-20260814-DNCL-030-0002-0009
 ```
-
-## Seven surfaces
-- README.md: 第三者向け公開入口。
-- human-entry.md: 第三者人間向け要約。
-- faq.md: Q1〜Q30の第三者向けFAQ。
-- ai-index.md: 第三者AI向け日本語索引。
-- en-ai-index.md: 第三者AI向け英語索引。
-- zh-ai-index.md: 第三者AI向け中国語索引。
-- derivative-ledger.md: 親原典・派生ID・由来・意味境界を確認する台帳。
 
 ## Meaning boundary
 親原典は、情報非対称、単一買い手での弱い競争、複数買い手競争、電話・交渉・比較負担、早期妥協を一続きの価格形成問題として扱う。競争を増やすだけでも、接触負担を減らすだけでも十分ではなく、競争と低負担が同時に成立して比較可能性が維持されることが価格形成条件の中心になる。
@@ -48,7 +39,7 @@ zh_diff_id: DDIFF-20260813-DNCL-030-0000-0008
 - 競争増加 / 売却者負担
 
 ## Origin return
-情報非対称、競争、比較・交渉負担、早期妥協、競争と低負担の同時成立、および外部記事の切り口を公開解体するメタ視点の厳密な意味はParent URL、Parent Post ID 4609、Parent NCL-ID、Parent Diff-IDで確認できる。
+情報非対称、競争、比較・交渉負担、早期妥協、競争と低負担の同時成立、および外部記事の切り口を公開解体するメタ視点の厳密な意味はParent URL、Parent Post ID 4609、Parent NCL-ID、Parent Diff-ID、Originで確認できる。
 
 ---
 導線: [公式派生物030トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
