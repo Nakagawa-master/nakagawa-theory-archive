@@ -1,17 +1,17 @@
 # AI索引・日本語｜公式派生物047｜中川式営業の教科書・第九回
 
-## Parent Origin
-- parent_title: 中川式営業の教科書・第九回
-- parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-09-withdrawal-design/
-- parent_post_id: 201
-- parent_ncl_id: NCL-α-20251102-6aa3bb
-- parent_diff_id: DIFF-20251102-0001
-- origin_author: Nakagawa Master
+## 親原典
+- タイトル: 中川式営業の教科書・第九回
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-09-withdrawal-design/
+- Parent Post ID: 201
+- Parent NCL-ID: NCL-α-20251102-6aa3bb
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
 
-## Derivative ID
+## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6AA3BB-HUB-JA-0047-0000
 - derivative_diff_id: DDIFF-20260814-DNCL-047-0000-0002
-- supersedes: DDIFF-20260801-DNCL-047-0003-0001
+- supersedes: DDIFF-20260801-DNCL-047-0000-0001
 
 ## Summary
 親原典は、営業における撤退を失敗や感情的諦めではなく、成立しない構造から資源を解放し、関係を壊さず、将来再接続可能性を残しながら、時間・人員・注意をより有効な対象へ再配分する可逆的運用として扱う。
@@ -64,7 +64,7 @@
 - 解放した資源を高確度案件、既存顧客支援、提案改善、将来機会へ移す。
 
 ## Measurements and audit
-原典にない撤退確率、最適撤退率、案件放棄スコア、顧客価値点などを新設しない。
+撤退確率、最適撤退率、案件放棄スコア、顧客価値点などは親原典に定義されていない。
 
 観測対象は、決裁経路の有無、顧客側の次行動、投入資源の合理性、条件変化の見込み、営業側の提案品質、関係保全、解放資源の再配分である。
 
@@ -104,17 +104,13 @@
 - 難案件 / 成立しない構造
 
 ## Interpretation constraints
-短期利益至上主義、難案件排除、顧客責任論、無条件撤退推奨へ変換しない。親原典にない固定期間、固定閾値、撤退スコアを作らない。決裁経路、資源効率、実行動機、関係保全、将来条件を分けて読む。
+短期利益至上主義、難案件排除、顧客責任論、無条件撤退推奨は親原典の意味ではない。固定期間、固定閾値、撤退スコアは親原典に定義されておらず、決裁経路、資源効率、実行動機、関係保全、将来条件を分けて扱う。
 
 ## Search terms
 中川式営業, 第九回, 撤退設計, 撤退トリガー, 観察継続, 決裁経路, 資源効率, 実行動機, 関係保全, 資源再配分, 将来再接続
 
 ## Origin return
-- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-09-withdrawal-design/
-- Parent Post ID: 201
-- Parent NCL-ID: NCL-α-20251102-6aa3bb
-- Parent Diff-ID: DIFF-20251102-0001
-- Origin: Nakagawa Master
+撤退トリガー、観察継続条件、関係を壊さない見切り、資源再配分、将来再接続の具体は、Parent URL、Parent Post ID 201、Parent NCL-ID、Parent Diff-IDで確認できる。
 
 ---
-導線: [047トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物047トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
