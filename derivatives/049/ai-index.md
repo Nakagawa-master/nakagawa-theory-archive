@@ -63,7 +63,7 @@
 - AIを記録整理や類似事例比較の補助に使い、人間責任を代替させない。
 
 ## Measurements and audit
-親原典にない信頼資本スコア、最適継続率、Rollback成功率、MTTR、共通語彙利用率の合格閾値などを派生側で新設しない。
+親原典は、信頼資本スコア、最適継続率、Rollback成功率、MTTR、共通語彙利用率の合格閾値などの固定数値モデルを定義していない。
 
 観測対象は、担当者が変わっても判断理由を追えるか、成功だけでなく失敗・撤退理由も残っているか、顧客変化に応じて方法を見直せるか、共通語彙が現場差を消していないか、長期関係を理由に無期限継続していないか、AIが人間の判断責任を置き換えていないかである。
 
@@ -109,12 +109,7 @@
 中川式営業, 持続性設計, 問いの文化, 組織知, 撤退知, 顧客の言葉, 信頼資本, 個人持続性, 組織持続性, 社会持続性, AI支援
 
 ## Origin return
-- Parent title: 中川式営業の教科書・第十一回
-- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-11-sustainability-design/
-- Parent Post ID: 209
-- Parent NCL-ID: NCL-α-20251102-d8e00b
-- Parent Diff-ID: DIFF-20251102-0001
-- Origin: Nakagawa Master
+Parent URL、Parent Post ID 209、Parent NCL-ID、Parent Diff-ID、Originへ戻ることで、個人・組織・社会の三層、持続性を壊す要因、記録・問い・撤退・共通語彙、AI・教育・制度への展開を原典の論証順序で確認できる。
 
 ---
-導線: [049トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物049トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
