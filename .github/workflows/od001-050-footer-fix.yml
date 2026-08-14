@@ -1,0 +1,68 @@
+name: OD001-050 footer normalization
+
+on:
+  push:
+    branches:
+      - od001-050-footer-lock-20260814
+
+permissions:
+  contents: write
+
+jobs:
+  normalize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: od001-050-footer-lock-20260814
+          fetch-depth: 0
+      - name: Normalize README footer only
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          expected = '導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)'
+          pattern = re.compile(r'^導線: .*$', re.MULTILINE)
+          for n in range(1, 51):
+              p = Path(f'derivatives/{n:03d}/README.md')
+              text = p.read_text(encoding='utf-8')
+              matches = pattern.findall(text)
+              if len(matches) != 1:
+                  raise SystemExit(f'{p}: expected exactly one footer line, found {len(matches)}')
+              new = pattern.sub(expected, text)
+              p.write_text(new, encoding='utf-8')
+          PY
+      - name: Verify only footer lines differ from main
+        shell: bash
+        run: |
+          git fetch origin main
+          python - <<'PY'
+          import subprocess
+          from pathlib import Path
+
+          expected = '導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)'
+          for n in range(1, 51):
+              p = f'derivatives/{n:03d}/README.md'
+              cur = Path(p).read_text(encoding='utf-8')
+              if cur.splitlines()[-1] != expected:
+                  raise SystemExit(f'{p}: footer mismatch')
+              base = subprocess.check_output(['git','show',f'origin/main:{p}'], text=True)
+              def strip_footer(s):
+                  lines=s.splitlines()
+                  return '\n'.join(lines[:-1])
+              if strip_footer(cur) != strip_footer(base):
+                  raise SystemExit(f'{p}: non-footer content differs from main')
+          PY
+      - name: Remove temporary workflow and commit
+        shell: bash
+        run: |
+          rm .github/workflows/od001-050-footer-fix.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add derivatives/{001..050}/README.md .github/workflows/od001-050-footer-fix.yml
+          git diff --cached --quiet && exit 0
+          git commit -m 'Normalize OD001-050 README footer to OD134/135 benchmark'
+          git push origin HEAD:od001-050-footer-lock-20260814
