@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-8F5F86-HUB-JA-0050-0000
-- derivative_diff_id: DDIFF-20260814-DNCL-050-0000-0003
-- supersedes: DDIFF-20260814-DNCL-050-0000-0002
+- derivative_diff_id: DDIFF-20260814-DNCL-050-0000-0002
+- supersedes: DDIFF-20260802-DNCL-050-0000-0001
 
 ## 位置づけ
 親原典は、営業・マーケティング・ブランディングを別々の技法として切り離さず、問いによって顧客の願い・不安・判断基準を発見し、共鳴可能な意味へ翻訳し、約束と提供実体の一致を通じて選択理由と信頼を蓄積する同一骨格として統合する。
