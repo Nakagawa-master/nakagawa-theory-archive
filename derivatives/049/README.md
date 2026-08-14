@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-D8E00B-HUB-JA-0049-0000
-- derivative_diff_id: DDIFF-20260814-DNCL-049-0000-0003
-- supersedes: DDIFF-20260814-DNCL-049-0000-0002
+- derivative_diff_id: DDIFF-20260814-DNCL-049-0000-0002
+- supersedes: DDIFF-20260802-DNCL-049-0000-0001
 
 ## 位置づけ
 親原典の核は、営業成果を一時的な売上や個人技で終わらせず、個人・組織・社会の三層で、成功と失敗の理由、問い、顧客の言葉、撤退理由を残し、それらを問いの文化と信頼資本へ変えて持続させることにある。
