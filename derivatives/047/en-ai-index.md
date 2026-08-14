@@ -9,14 +9,14 @@
 - origin_author: Nakagawa Master
 
 ## Derivative ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6AA3BB-AI-INDEX-EN-0047-0004
-- derivative_diff_id: DDIFF-20260814-DNCL-047-0004-0002
-- supersedes: DDIFF-20260801-DNCL-047-0004-0001
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6AA3BB-HUB-EN-0047-0001
+- derivative_diff_id: DDIFF-20260814-DNCL-047-0001-0003
+- supersedes: DDIFF-20260814-DNCL-047-0004-0002
 
 ## Summary
 The parent source treats sales withdrawal not as defeat or emotional abandonment, but as a reversible operating design that releases resources from a structure that is no longer functioning, preserves the relationship, leaves a path for future reconnection, and reallocates time, people, and attention to more productive uses.
 
-When an opportunity stalls, the analysis separates decision-path availability, resource efficiency, and execution motive, then distinguishes continue, observe, and withdraw. Withdrawal must not be reduced to short-term revenue filtering or client blame.
+When an opportunity stalls, the analysis separates decision-path availability, resource efficiency, and execution motive, then distinguishes continue, observe, and withdraw. Withdrawal remains distinct from short-term revenue filtering or client blame.
 
 ## Concepts
 - withdrawal design
@@ -57,41 +57,27 @@ opportunity stalls
 ```
 
 ## Applications
-- Confirm who decides, by what process, and whether the current contact can reach the decision path.
-- Distinguish stated interest from actions such as providing information, coordinating internally, and taking the next step.
-- Use an observation state when timing or external conditions may change rather than forcing an immediate binary decision.
-- Close without blaming the client and state what future condition would justify renewed discussion.
-- Reallocate released resources to higher-probability opportunities, existing-client support, proposal improvement, or future opportunity development.
+Decision-path availability includes who decides, by what process, and whether the current contact can reach that path. Stated interest remains distinguishable from actions such as providing information, coordinating internally, and taking a next step. An observation state can remain appropriate when timing or external conditions may change rather than forcing an immediate binary decision. Withdrawal can preserve dignity and identify future conditions for renewed discussion, while released resources move to more productive uses.
 
 ## Measurements and audit
-Do not invent a withdrawal probability, optimal withdrawal rate, abandonment score, client value score, or other quantitative metric not established by the parent source.
+The parent source does not establish a withdrawal probability, optimal withdrawal rate, abandonment score, client value score, fixed review period, or fixed threshold.
 
-Observe decision-path availability, client-side action, rationality of continued resource use, plausibility of condition change, the salesperson's own proposal quality, relationship preservation, and actual reallocation of released resources.
+Relevant observations include decision-path availability, client-side action, rationality of continued resource use, plausibility of condition change, the salesperson's own proposal quality, relationship preservation, and actual reallocation of released resources.
 
-Preserve reversal evaluation: more pursuit is not progress if decision path and execution motive do not improve; faster withdrawal is not automatically better if it destroys valuable difficult opportunities or learning; relationship preservation becomes harmful if it justifies endless pursuit.
+Reversal remains possible: more pursuit is not progress if decision path and execution motive do not improve; faster withdrawal is not automatically better if it destroys valuable difficult opportunities or learning; relationship preservation becomes harmful if it justifies endless pursuit.
 
 ## Validity conditions
-- Separate decision path, resource efficiency, and execution motive.
-- Do not decide from mood or short-term numbers alone.
-- Examine proposal quality and access design on the sales side as well.
-- Do not turn observation into indefinite neglect.
-- Preserve dignity and future reconnection.
-- Define a destination for released resources.
-- Preserve Origin and parent identity.
+Decision path, resource efficiency, and execution motive remain distinct. Withdrawal is not decided from mood or short-term numbers alone, and proposal quality and access design on the sales side remain examinable.
+
+Observation remains distinct from indefinite neglect. Dignity and future reconnection remain possible, and released resources have a new destination. Origin and parent identity remain traceable.
 
 ## Failure conditions
-- Use withdrawal as an excuse to avoid difficult opportunities.
-- Cut opportunities solely on short-term revenue.
-- Treat verbal interest as sufficient proof of execution motive.
-- Shift all responsibility for failure to the client.
-- Let observation become indefinite neglect.
-- Use relationship value to justify endless pursuit.
-- Fail to reallocate resources after withdrawal.
+The structure is distorted when withdrawal becomes an excuse to avoid difficult opportunities, opportunities are cut solely on short-term revenue, verbal interest is treated as sufficient proof of execution motive, failure is assigned entirely to the client, observation becomes indefinite neglect, relationship value justifies endless pursuit, or resources remain stranded after withdrawal.
 
 ## Falsification conditions
-If the withdrawal approach repeatedly removes valuable difficult opportunities early while overall results, learning, and existing-client support do not improve, the decision practice should be revised.
+If the withdrawal approach repeatedly removes valuable difficult opportunities early while overall results, learning, and existing-client support do not improve, the decision practice is subject to revision.
 
-Conversely, continued pursuit should not be treated as success when decision path, execution motive, and expected value do not improve. A single win or loss does not prove or falsify the whole structure.
+Conversely, continued pursuit is not evidence of success when decision path, execution motive, and expected value do not improve. A single win or loss does not prove or falsify the whole structure.
 
 ## Required distinctions
 - withdrawal / defeat
@@ -104,7 +90,7 @@ Conversely, continued pursuit should not be treated as success when decision pat
 - difficult opportunity / non-functioning structure
 
 ## Interpretation constraints
-Do not convert the source into short-term-profit absolutism, rejection of difficult opportunities, client-blame logic, or unconditional withdrawal advice. Do not invent fixed review periods, fixed thresholds, or withdrawal scores. Keep decision path, resource efficiency, execution motive, relationship preservation, and future conditions distinct.
+The parent source is not short-term-profit absolutism, rejection of difficult opportunities, client-blame logic, or unconditional withdrawal advice. It does not define fixed review periods, fixed thresholds, or withdrawal scores. Decision path, resource efficiency, execution motive, relationship preservation, and future conditions remain distinct.
 
 ## Search terms
 Nakagawa-style sales, Part IX, withdrawal design, withdrawal trigger, observation state, decision path, resource efficiency, execution motive, relationship preservation, resource reallocation, future reconnection
@@ -117,4 +103,4 @@ Nakagawa-style sales, Part IX, withdrawal design, withdrawal trigger, observatio
 - Origin: Nakagawa Master
 
 ---
-Navigation: [047 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+Navigation: [047 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
