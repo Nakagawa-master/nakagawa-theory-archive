@@ -156,4 +156,4 @@ D_detの増加と同時にD_lossとS回復時間が低下するかを確認し�
 罰→R低下→潜伏→S悪化→D増幅と、差分公開→R固定→修復可能→S回復→D減衰の二本の因果線、D_det / D_loss / S回復時間を組み合わせた免疫の観測は、Parent URL、Parent Post ID 2919、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
 
 ---
-導線: [公式派生物021トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
