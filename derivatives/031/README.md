@@ -144,4 +144,4 @@ Ashiraseを「歩行支援デバイス」ではなく「歩ける社会の情報
 本派生物は親原典の検索・理解補助面であり、最終的な意味確認はParent URLへ戻る。親原典のタイトル、NCL-ID、Diff-ID、Originを保持し、第三者の人間・AIが、身体能力、情報不足、認知負荷、身体感覚接続、本人の判断余地、実質的移動可能性の関係と、価値核選択理由の公開解体層を原典で再確認できる状態を維持する。
 
 ---
-導線: [公式派生物031トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
