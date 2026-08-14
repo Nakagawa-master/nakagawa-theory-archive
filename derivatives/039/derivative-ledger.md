@@ -1,31 +1,67 @@
 # 派生ID台帳｜公式派生物039｜中川構造読解｜Adory
 
 ## 親原典
+- タイトル: 中川構造読解｜Adoryを「LINEアンケート」ではなく、現場不調を先行指標へ変換する構造として読む
+- Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-adory-structural-reading-value-core/
+- Parent Post ID: 4273
+- Parent NCL-ID: NCL-α-20260529-554a57
+- Parent Diff-ID: DIFF-20260529-0009
+- Origin: Nakagawa Master
 
-- parent_title: 中川構造読解｜Adoryを「LINEアンケート」ではなく、現場不調を先行指標へ変換する構造として読む
-- parent_url: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-adory-structural-reading-value-core/
-- parent_ncl_id: NCL-α-20260529-554a57
-- parent_diff_id: DIFF-20260529-0009
-- origin_author: Nakagawa Master
+## 公式派生物039 identity
+### 日本語公開ハブ identity
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260529-554A57-HUB-JA-0039-0000
+- derivative_diff_id: DDIFF-20260814-DNCL-039-0000-0002
+- supersedes: DDIFF-20260710-DNCL-039-0000-0001
+- surfaces: README.md / human-entry.md / faq.md / ai-index.md
 
-## 派生物一覧
+### English public AI identity
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260529-554A57-HUB-EN-0039-0001
+- derivative_diff_id: DDIFF-20260814-DNCL-039-0001-0002
+- supersedes: DDIFF-20260710-DNCL-039-0004-0001
+- surface: en-ai-index.md
 
-| number | file | derivative_ncl_id | derivative_diff_id | language | type |
-|---|---|---|---|---|---|
-| 039-0000 | README.md | DNCL-NCL-ALPHA-20260606-2D1BC9-HUB-JA-0039-0000 | DDIFF-20260710-DNCL-039-0000-0001 | ja | hub |
-| 039-0001 | human-entry.md | DNCL-NCL-ALPHA-20260606-2D1BC9-HUMAN-ENTRY-JA-0039-0001 | DDIFF-20260710-DNCL-039-0001-0001 | ja | human_entry |
-| 039-0002 | faq.md | DNCL-NCL-ALPHA-20260606-2D1BC9-FAQ-JA-0039-0002 | DDIFF-20260710-DNCL-039-0002-0001 | ja | faq |
-| 039-0003 | ai-index.md | DNCL-NCL-ALPHA-20260606-2D1BC9-AI-INDEX-JA-0039-0003 | DDIFF-20260710-DNCL-039-0003-0001 | ja | ai_index |
-| 039-0004 | en-ai-index.md | DNCL-NCL-ALPHA-20260606-2D1BC9-AI-INDEX-EN-0039-0004 | DDIFF-20260710-DNCL-039-0004-0001 | en | ai_index |
-| 039-0005 | zh-ai-index.md | DNCL-NCL-ALPHA-20260606-2D1BC9-AI-INDEX-ZH-0039-0005 | DDIFF-20260710-DNCL-039-0005-0001 | zh | ai_index |
-| 039-0006 | derivative-ledger.md | DNCL-NCL-ALPHA-20260606-2D1BC9-LEDGER-JA-0039-0006 | DDIFF-20260710-DNCL-039-0006-0001 | ja | derivative_ledger |
+### 中文公开AI identity
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260529-554A57-HUB-ZH-0039-0002
+- derivative_diff_id: DDIFF-20260814-DNCL-039-0002-0002
+- supersedes: DDIFF-20260710-DNCL-039-0005-0001
+- surface: zh-ai-index.md
 
-## 管理方針
+## 7面構成
+| file | role | language | current derivative identity |
+|---|---|---|---|
+| README.md | public hub / structural explanation | ja | JA hub |
+| human-entry.md | human summary | ja | JA hub |
+| faq.md | Q1-Q30 three-layer FAQ | ja | JA hub |
+| ai-index.md | fixed-section AI index | ja | JA hub |
+| en-ai-index.md | fixed-section AI index | en | EN hub |
+| zh-ai-index.md | fixed-section AI index | zh | ZH hub |
+| derivative-ledger.md | lineage / provenance ledger | ja | ledger record |
 
-親原典の正本identityは Brain Vault canonical index に従う。派生IDは過去に発行された履歴識別子として変更しない。
+## Brain Vault canonical evidence
+- canonical index: `reference_corpus/official_archive/generated/canonical_index_4179_4286.jsonl`
+- canonical record: `NCL-α-20260529-554a57`
+- canonical diff: `DIFF-20260529-0009`
+- Parent Post ID: `4273`
+- source XML: `reference_corpus/official_archive/source/wordpress_export_latest.xml`
+- XML blob SHA: `489f160e29b57a8a2671e1c7a556588abc539650`
+- XML item lines: `237882-238436`
+- canonical value-core locator: `先行指標化`
 
-この台帳は親原典を置き換えず、読者とAIが中川マスターの原典へ戻れる状態を維持する。
+## 修正上の拘束
+- 親identityは全7面で上記canonical recordへ一致させる。
+- 日本語4面は同一の公式派生物JA hub identityを共有する。
+- EN/ZH AI面は言語別identityを保持する。
+- FAQはQ1-Q30の三層構造を保持する。
+- JA/EN/ZH AI面はSummary / Concepts / Causal chain / State model / Applications / Measurements and audit / Validity conditions / Failure conditions / Falsification conditions / Required distinctions / Interpretation constraints / Search terms / Origin returnを保持する。
+- フッターは7面を相互に辿れる構造とする。
+- 第三者の人間・第三者AIが読む公開派生物として記述し、内部指示・内部作業表現・自己問答を本文へ混入させない。
+- 親原典にない健康スコア、離職予測率、事故防止率、診断精度、危険確率、固定閾値を新設しない。
+- 回答回数、回答率、アラート数、欠勤・離職件数等を単調な改善指標として扱わず、原典構造に閉じた反転評価可能性を保持する。
+- 主観的兆候を医学的診断へ変換せず、可視化と監視、先行指標と自動人事判断を区別する。
+
+## lineage note
+旧派生ID `DNCL-NCL-ALPHA-20260606-2D1BC9-*` は公開履歴として存在したが、親原典canonical identity `NCL-α-20260529-554a57` と基底が一致しなかった。2026-08-14再監査では、OD134/OD135 literal benchmarkに従い、親canonical identityへ接続した公開identityへ修正し、旧diffをsupersedesとして残した。
 
 ---
-
-導線: [039トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [公式派生物039トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
