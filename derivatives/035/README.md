@@ -139,4 +139,4 @@ REMODELAの製品説明、利用推奨、個別見積査定、法律助言、費
 退去時の状態観測・記録・判断材料化・関係者間比較・理由追跡がどのように原状回復判断の妥当性基盤へ接続するかと、なぜその価値核を外部記事の切り口として採用したのかは、Parent URL、Parent Post ID 4327、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
 
 ---
-導線: [公式派生物035トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
