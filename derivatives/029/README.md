@@ -118,4 +118,4 @@ AI所有物論、AI敵視、AI神格化、AI奴隷化を否定することを、
 所有物・敵・神・奴隷の四大誤認、その切断理由、非所有≠無制御・非敵対≠無危険という境界、Vol.2への接続はParent URLへ戻って確認する。
 
 ---
-導線: [公式派生物029トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
