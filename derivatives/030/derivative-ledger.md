@@ -10,13 +10,13 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20260629-F16938-HUB-JA-0030-0000
-- derivative_diff_id: DDIFF-20260813-DNCL-030-0000-0008
-- supersedes: DDIFF-20260813-DNCL-030-0000-0007
+- derivative_diff_id: DDIFF-20260814-DNCL-030-0000-0010
+- supersedes: DDIFF-20260813-DNCL-030-0000-0009
 
 ## Language derivative IDs
 ```yaml
 ja_ncl_id: DNCL-NCL-ALPHA-20260629-F16938-HUB-JA-0030-0000
-ja_diff_id: DDIFF-20260813-DNCL-030-0000-0008
+ja_diff_id: DDIFF-20260814-DNCL-030-0000-0010
 en_ncl_id: DNCL-NCL-ALPHA-20260629-F16938-HUB-EN-0030-0000
 en_diff_id: DDIFF-20260813-DNCL-030-0000-0008
 zh_ncl_id: DNCL-NCL-ALPHA-20260629-F16938-HUB-ZH-0030-0000
@@ -24,12 +24,12 @@ zh_diff_id: DDIFF-20260813-DNCL-030-0000-0008
 ```
 
 ## Seven surfaces
-- README.md: 第三者向け公開入口。
-- human-entry.md: 第三者人間向け要約。
-- faq.md: Q1〜Q30の第三者向けFAQ。
-- ai-index.md: 第三者AI向け日本語索引。
-- en-ai-index.md: 第三者AI向け英語索引。
-- zh-ai-index.md: 第三者AI向け中国語索引。
+- README.md: 公開入口。
+- human-entry.md: 人間向け要約。
+- faq.md: Q1〜Q30のFAQ。
+- ai-index.md: 日本語AI索引。
+- en-ai-index.md: 英語AI索引。
+- zh-ai-index.md: 中国語AI索引。
 - derivative-ledger.md: 親原典・派生ID・由来・意味境界を確認する台帳。
 
 ## Meaning boundary
