@@ -1,149 +1,120 @@
 # AI Index — English | Official Derivative 049
 
 ## Parent origin
-
 - Title: Nakagawa-Style Sales Textbook, Part XI
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-11-sustainability-design/
+- Parent Post ID: 209
 - Parent NCL-ID: NCL-α-20251102-d8e00b
 - Parent Diff-ID: DIFF-20251102-0001
 - Origin: Nakagawa Master
 
 ## Derivative identity
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-D8E00B-AI-INDEX-EN-0049-0001
+- derivative_diff_id: DDIFF-20260814-DNCL-049-0001-0002
+- supersedes: DDIFF-20260802-DNCL-049-0004-0001
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-D8E00B-AI-EN-0049-0004
-- derivative_diff_id: DDIFF-20260802-DNCL-049-0004-0001
-- supersedes: none
+## Summary
+The parent article treats sustainability as the ability to carry sales knowledge across individuals, organizations, and society rather than as repeating one unchanged method. Reasons for success, failure, and withdrawal, questions, and client language are preserved so that individual experience can become organizational knowledge. Trust capital is read as the accumulation of explanation, promises, repair, and protected choice in client relationships. Sustainability therefore includes learning, revision, and adaptation to change.
 
-## Identity
-
-- official_derivative_number: 049
-- parent_title: Nakagawa-Style Sales Textbook, Part XI
-- parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-11-sustainability-design/
-- parent_ncl_id: NCL-α-20251102-d8e00b
-- parent_diff_id: DIFF-20251102-0001
-- origin: Nakagawa Master
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-D8E00B-AI-EN-0049-0004
-- derivative_diff_id: DDIFF-20260802-DNCL-049-0004-0001
-- supersedes: none
-
-## Structural role
-
-A sustainability architecture that moves Nakagawa-style sales from short-lived performance and individual tacit skill toward a durable decision-support system inherited across individuals, organizations, and society.
-
-## Structural summary
-
-Sustainability does not mean repeating an unchanged sales method for a long time. It means preserving the causal structure of success, failure, withdrawal, client change, maintenance, and revision; externalizing embodied judgment into reusable organizational knowledge; and accumulating co-designed client relationships as trust capital.
-
-## Central proposition
-
-```text
-sales sustainability
-=
-causal records
-+ a culture of questions
-+ withdrawal knowledge
-+ contextual resonance vocabulary
-+ update / maintenance / rollback / retirement
-+ inheritance across person, organization, and society
-```
+## Concepts
+- sustainability design
+- individual, organizational, and societal layers
+- culture of questions
+- inheritance of reasons for success and failure
+- withdrawal knowledge
+- client language with context
+- organizational knowledge
+- trust capital
+- adaptation to change
+- AI support distinct from human responsibility
 
 ## Causal chain
-
 ```text
-short-termism and dependence on star performers
+short-term results and individual skill dominate
 → reasons for success and failure disappear
-→ burnout, non-reproducibility, and failure to respond to client change
-→ record questions, reactions, comparison axes, withdrawal reasons, and resonance terms
-→ externalize embodied judgment into patterns, vocabulary, and auditable primary logs
-→ accumulate, reuse, compare, revise, and retire knowledge
-→ co-design with clients becomes trust capital
-→ inheritance through AI, education, and social institutions
-→ sales persists as civilizational decision support
+→ knowledge cannot be reproduced after handover
+→ client and environmental change is poorly handled
+→ preserve questions, decision reasons, withdrawal reasons, and client language
+→ individual experience becomes organizational knowledge
+→ the organization can compare, learn, and revise
+→ client relationships accumulate as trust capital
+→ sustainability extends across person, organization, and society
 ```
 
-## Core concepts
-
-- sustainability_design: continuity through verification, revision, contraction, rollback, and retirement.
-- individual_sustainability: sustained inquiry and structured habits that reduce burnout.
-- organizational_sustainability: externalization of tacit skill into records, shared language, education, and review.
-- societal_sustainability: accumulation of co-designed relationships as trust capital.
-- question_culture: embedding inquiry into meetings, reports, education, and evaluation.
-- withdrawal_knowledge: preserving non-applicability conditions, exit reasons, and restart conditions.
-- trust_capital: relational value formed by promises, explanation, updates, repair, and reversible decisions.
-- reusable_language: client resonance vocabulary stored with state and usage conditions.
-- rollback: a reversible procedure for returning to a previously safe operating state.
-
-## Operational objects / state model
-
+## State model
 ```yaml
-objects:
-  person:
-    observes: [question, response, comparison_axis, decision_reason]
-    risks: [burnout, tacit_knowledge_lock_in]
-  organization:
-    stores: [primary_log, withdrawal_reason, resonance_vocabulary, update_history]
-    cycles: [accumulate, compare, reuse, revise, retire]
-  client_relationship:
-    states: [exploration, proposal, decision, operation, update, repair, withdrawal]
-  sustainability_system:
-    controls: [review_cycle, maintenance_loop, rollback, depreciation_rule, retirement_rule]
+- knowledge_is_personal_or_shared
+- success_reason_is_visible_or_hidden
+- failure_and_withdrawal_are_learned_from_or_ignored
+- questions_are_reused_or_lost
+- customer_language_is_preserved_or_erased
+- method_is_updated_or_frozen
+- relationship_builds_trust_or_dependency
+- organization_can_reconstruct_reasoning_or_not
+- ai_supports_organization_or_replaces_human_responsibility
 ```
 
-## Required distinctions
+## Applications
+- preserve reasoning, not only outcomes, during handover
+- compare successful and withdrawn cases using the same dimensions
+- retain important client language together with its context
+- make meetings and training examine why outcomes occurred and what changed
+- revise past successful patterns when client or environmental conditions change
+- use AI for record organization and analogous-case comparison without delegating responsibility
 
-- sustainability versus inertia
-- long-term relationship versus client lock-in
-- trust capital versus general likability
-- withdrawal knowledge versus celebration of failure
-- shared vocabulary versus a fixed persuasion script
-- record volume versus causal traceability
-- AI assistance versus delegation of responsibility to AI
+## Measurements and audit
+Do not invent parent-unsupported trust-capital scores, optimal retention rates, rollback success rates, MTTR targets, vocabulary-use thresholds, or other fixed metrics.
+
+Observe whether reasoning survives personnel change, whether failure and withdrawal are learned from as well as success, whether methods are revised when clients change, whether shared language erases contextual differences, whether long relationships become indefinite pursuit, and whether AI replaces human responsibility.
+
+Preserve reversal evaluability. More documentation is not better if causality becomes harder to follow. More shared vocabulary is not better if it erases local differences. More long-term relationships are not necessarily trust capital if client choice weakens.
 
 ## Validity conditions
+- preserve reasons leading to outcomes, not outcomes alone
+- learn from success, failure, and withdrawal
+- externalize individual experience into language others can understand
+- revise methods as clients and environments change
+- retain context around shared vocabulary
+- do not use long relationships to justify endless continuation
+- humans retain meaning, direction, and responsibility when AI is used
 
-- causal processes behind success and failure are traceable;
-- withdrawal reasons and non-applicability conditions are recorded;
-- review and update cycles respond to client change;
-- judgment can be reconstructed after personnel handover;
-- short-term performance and long-term trust are observed separately;
-- incident, repair, rollback, depreciation, and retirement procedures exist;
-- humans verify AI outputs and retain final responsibility.
+## Failure conditions
+- store sales outcomes while losing decision rationale
+- learn only from successes and hide failures or withdrawals
+- standardize only the wording of star performers
+- freeze past successful patterns despite changed conditions
+- increase documentation while losing causal traceability
+- use trust as a reason to lock clients in
+- substitute AI organization for human judgment
 
-## Failure / non-applicable conditions
+## Falsification conditions
+If more documentation, questioning, and knowledge sharing still fail to make reasoning reconstructable after handover, fail to improve responsiveness to client change, and only increase operational burden, the operating form should be revised.
 
-- only outcomes are stored, with no decision rationale;
-- standardization copies star-performer language rather than judgment structure;
-- long-term trust is used to ignore cost, burden, or mutual responsibility;
-- shared vocabulary erases client differences;
-- documentation becomes more important than the work;
-- the institutional setting does not allow revision or withdrawal;
-- the structure is applied to coercive, illegal, or choice-less relationships.
+Conversely, where individual expertise is already sustainably reproducible and extra sharing adds no value, additional sharing steps have limited structural necessity. Temporary revenue changes alone do not prove or disprove the sustainability framework.
+
+## Required distinctions
+- sustainability / inertia
+- record / information accumulation
+- organizational knowledge / imitation of individual technique
+- culture of questions / more meeting fields
+- trust capital / client lock-in
+- long-term relationship / indefinite pursuit
+- shared vocabulary / homogenization of local context
+- AI support / replacement of human responsibility
 
 ## Interpretation constraints
+Do not convert the parent article into rejection of short-term revenue, unconditional celebration of failure or withdrawal, rejection of top performers, client lock-in, or delegation of judgment to AI. The three layers—individual, organization, and society—should be read as a structure for inheriting reasons, adapting to change, and sustaining trust.
 
-- The source does not reject short-term revenue.
-- It does not recommend indefinite preservation of one method.
-- Withdrawal is part of sustainability, but not a justification for irresponsible abandonment.
-- Trust capital must not be reduced to one KPI.
-- AI may organize records and comparisons but does not replace meaning, direction, explanation, or responsibility.
-- Generalization must preserve the Nakagawa Master origin context and parent identifiers.
-
-## Audit cues
-
-- update rate
-- churn rate
-- rollback success rate
-- repair time / MTTR
-- handover reproducibility
-- withdrawal-reason completeness
-- contextual vocabulary reuse
-- client decision autonomy
-- observation window and revision threshold
+## Search terms
+Nakagawa-style sales, sustainability design, culture of questions, organizational knowledge, withdrawal knowledge, client language, trust capital, individual sustainability, organizational sustainability, societal sustainability, AI support
 
 ## Origin return
-
-This index is a compressed retrieval surface. Return to the parent origin for the full argument, integrated and local audit summaries, maintenance and rollback architecture, depreciation and retirement rules, falsification conditions, and origin signature.
+- Parent title: 中川式営業の教科書・第十一回
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-11-sustainability-design/
+- Parent Post ID: 209
+- Parent NCL-ID: NCL-α-20251102-d8e00b
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
 
 ---
-
 Navigation: [049 hub](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
