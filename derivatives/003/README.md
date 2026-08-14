@@ -138,4 +138,4 @@ L1〜L6の縦因果判定を行わなくても、制度・経営・教育・言�
 局所全体化、分散的全体誤認、局所正解／全体不成立、縦因果未判定がどのように成立条件論の必要性へ接続するか、また第0論がどこまでを確定し後続論へ何を渡すかはParent URL、Parent Post ID 4571、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
 
 ---
-導線: [公式派生物003トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
