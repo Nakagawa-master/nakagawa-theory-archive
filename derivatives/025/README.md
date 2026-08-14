@@ -146,4 +146,4 @@ Millyの公開された提供構造が、技術能力を市場語へ翻訳し、
 技術能力から市場言語化、比較対象入り、選定、信用補完、取引可能性形成までの接続線と、なぜ「市場接続機構」という価値核が採用されたのかは、Parent URL、Parent Post ID 4351、Parent NCL-ID、Parent Diff-IDへ戻って確認する。
 
 ---
-導線: [公式派生物025トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
