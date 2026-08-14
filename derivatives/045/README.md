@@ -10,8 +10,8 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-D52234-HUB-JA-0045-0000
-- derivative_diff_id: DDIFF-20260814-DNCL-045-0000-0003
-- supersedes: DDIFF-20260814-DNCL-045-0000-0002
+- derivative_diff_id: DDIFF-20260814-DNCL-045-0000-0002
+- supersedes: DDIFF-20260801-DNCL-045-0000-0001
 
 ## 位置づけ
 親原典の中心は、意思決定支援を「賛成理由を積み上げること」ではなく、「選ばれない理由を構造的に消去し、顧客が自分で比較・説明・判断できる状態を作ること」として読む点にある。
