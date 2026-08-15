@@ -1,7 +1,6 @@
 # 派生ID台帳｜公式派生物086
 
 ## 親原典
-
 - タイトル: 核点探索学──唯一の因果支点を見抜く方法（公開安全版）
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-core-point-discovery/
 - Parent Post ID: 380
@@ -10,65 +9,38 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9FA0D4-HUB-JA-0086-0000
-- derivative_diff_id: DDIFF-20260811-DNCL-086-0000-0002
-- supersedes: DDIFF-20260806-DNCL-086-0000-0001
+- derivative_diff_id: DDIFF-20260815-DNCL-086-0000-0003
+- supersedes: DDIFF-20260811-DNCL-086-0000-0002
 
-## Source verification
-
+## Language derivative IDs
 ```yaml
-verification_date_jst: 2026-08-11
-canonical_index: reference_corpus/official_archive/generated/canonical_index_0351_0425.jsonl
-xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-xml_item_range: 74759-75011
-xml_content_range: 74766-74913
-canonical_url: https://master.ricette.jp/theory/nakagawa-master-core-point-discovery/
-canonical_identity: PASS
-source_retrieval: PASS
-six_surface_comparison: COMPLETE
-translation_equivalence: PASS
-fresh_read: PASS
-semantic_result: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
+ja_ncl_id: DNCL-NCL-ALPHA-20251102-9FA0D4-HUB-JA-0086-0000
+ja_diff_id: DDIFF-20260815-DNCL-086-0000-0003
+en_ncl_id: DNCL-NCL-ALPHA-20251102-9FA0D4-HUB-EN-0086-0001
+en_diff_id: DDIFF-20260815-DNCL-086-0001-0001
+zh_ncl_id: DNCL-NCL-ALPHA-20251102-9FA0D4-HUB-ZH-0086-0002
+zh_diff_id: DDIFF-20260815-DNCL-086-0002-0001
 ```
 
-## Source-specific coverage
+## 公開系譜
+核点探索学は、KGIを必達させる唯一の因果支点を、因果展開と反事例ふるいによって発見・検証する方法論を扱う親原典から派生する。核点は恣意的に一本化して選ぶのではなく、KGIから因果を逆算し、候補を最大3点へ絞り、反事例を当てて1〜2点を残し、一因子介入等で検証する。
 
-- 核点を唯一の因果支点として探索する方法論: PASS
-- KGI定義、因果逆展開、反事例ふるい、必要作動、一因子介入、安定化試験: PASS
-- 自由度・誘導監査・反証時の再探索を保持する: PASS
-- 活動量、人物評価、命令、社会信用点へ置換しない: PASS
-- JA / EN / ZH semantic equivalence: PASS
-- navigation and parent return: PASS
+親原典は公開安全版として、必要作用、A/B’検証、3サイクル定常化、自由度テスト、誘導検査、核点キャンバス6要素、3問チェック等を明示する。各数値は原典内の手順・例・プロトコルとして意味を保持し、一般スコアへ変換しない。
 
-## Current seven surfaces
-
+## 7面対応
 ```yaml
-README.md: PASS_SOURCE_VERIFIED
-human-entry.md: PASS_SOURCE_VERIFIED
-faq.md: PASS_SOURCE_VERIFIED
-ai-index.md: PASS_SOURCE_VERIFIED
-en-ai-index.md: PASS_SOURCE_VERIFIED
-zh-ai-index.md: PASS_SOURCE_VERIFIED
-derivative-ledger.md: PASS_SOURCE_VERIFIED
-```
-
-## Closure
-
-```yaml
-public_fresh_read: PASS
-public_indexes: PASS
-brain_vault_return: READY_FOR_STATE_RECORD
-parent_backlink: RETAIN_EXISTING_OWNER_VISUAL_STATE
-closure_status: PASS_SOURCE_VERIFIED
-next_cursor: OD087
+README.md: JA_HUB
+human-entry.md: JA_HUMAN_ENTRY
+faq.md: JA_FAQ_Q1_Q30
+ai-index.md: JA_AI_INDEX
+en-ai-index.md: EN_AI_INDEX
+zh-ai-index.md: ZH_AI_INDEX
+derivative-ledger.md: PUBLIC_LINEAGE
 ```
 
 ## 原典回帰
-
-本派生物は検索・理解・接続面であり、親原典の代替ではない。核点探索、KGI、因果逆展開、反事例、一因子介入、Reference Cluster、起源署名は親原典へ戻って確認する。
+唯一の因果支点、KGI、必要作用、事前観測3項、5ステップ、候補最大3点、反事例後の1〜2点、一因子A/B’検証、3サイクル定常化、自由度・誘導検査、核点キャンバス6要素、3問チェック、100%作用という原典の強い主張と起源署名は親原典へ戻って確認する。
 
 ---
-
-導線: [086トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物086トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
