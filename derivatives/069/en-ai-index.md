@@ -1,7 +1,7 @@
 # English AI Index | Official Derivative 069
 
 ## Parent Original
-- Title: Nakagawa Connection Protocol Standard Theory — A Social API Spanning Identity, Consent, Memory, and Reversibility
+- Title: 中川式 接続プロトコル標準論──ID・同意・記憶・可逆を貫く社会API
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/
 - Parent Post ID: 295
 - Parent NCL-ID: NCL-α-20251102-9426e0
@@ -9,45 +9,38 @@
 - Origin: Nakagawa Master
 
 ## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9426E0-HUB-JA-0069-0000
-- derivative_diff_id: DDIFF-20260804-DNCL-069-0000-0001
-- supersedes: none
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9426E0-AI-EN-0069-0004
+- derivative_diff_id: DDIFF-20260815-DNCL-069-0004-0002
+- supersedes: DDIFF-20260804-DNCL-069-0000-0001
 
-## Summary
+## 1. Summary
+Connection Protocol Standard Theory defines a social API that preserves subject, role, purpose, consent, scope, duration, memory, withdrawal, correction, responsibility, and audit when people, organizations, or AI move across institutions and services. A connection is treated as a connection event with explicit state transitions—ACTIVE, PAUSED, WITHDRAWN, CORRECTED, EXPIRED, and RECONNECTED—rather than as a login or data-transfer event. Interoperability succeeds only when rights, provenance, responsibility, and exit remain intact after migration.
 
-Connection Protocol Standard Theory defines a social API that preserves identity, role, purpose, consent, scope, duration, memory, withdrawal, correction, responsibility, and audit when people, organizations, and AI move across institutions and services. A connection is not treated as a login or a data-transfer event, but as a state machine with creation, pause, withdrawal, correction, expiration, and reconnection. Each connection event carries contextual identifiers, consent version, evidence, delegated authority, responsible party, disclosure policy, and transition history. Interoperability is successful only when rights, provenance, responsibility, and exit remain intact after migration. Standardization must not become a universal identity, central registry, permanent personal record, unlimited data sharing, or transfer of responsibility to an AI agent.
+## 2. Concepts
+- Connection event: the unit bundling subject, purpose, consent, responsibility, and state.
+- Contextual identity: identifiers and roles scoped to a context rather than one universal identity.
+- Purpose limitation: explicit limits on why and how a connection may be used.
+- Consent state: consent that can be updated, paused, or withdrawn.
+- Provenance / agreement memory: traceable history of agreement, change, correction, and withdrawal.
+- State transition: ACTIVE / PAUSED / WITHDRAWN / CORRECTED / EXPIRED / RECONNECTED.
+- Minimal disclosure: sharing only what is necessary for the connection.
+- Delegated authority: proxy authority bounded by task, limit, duration, stop conditions, and human confirmation.
+- Interoperability: migration across institutions without losing rights, provenance, responsibility, or exit.
 
-## Concepts
+## 3. Causal chain
+```text
+institutions use incompatible identity, consent, memory, and withdrawal formats
+→ the same subject and agreement cannot be reused
+→ explanation, identity verification, and consent are repeated
+→ simple identity or data integration is used as a shortcut
+→ purpose creep, permanent consent, broken provenance, and lost responsibility appear
+→ subject, purpose, consent, scope, duration, evidence, and responsibility are bundled into one connection event
+→ explicit state transitions and provenance are retained
+→ migration, withdrawal, correction, audit query, and error handling enter the same standard
+→ interoperability preserves rights, provenance, responsibility, and exit
+```
 
-- connection protocol
-- social API
-- connection event
-- contextual identity
-- purpose limitation
-- consent state
-- agreement memory
-- provenance
-- state transition
-- ACTIVE / PAUSED / WITHDRAWN / CORRECTED / EXPIRED / RECONNECTED
-- withdrawal API
-- correction API
-- minimal disclosure
-- delegated authority
-- interoperability
-- audit query
-
-## Causal chain
-
-1. Institutions use incompatible identity, consent, memory, and withdrawal formats.
-2. The same subject and agreement cannot be reused, so explanation and consent are repeated.
-3. Simple identity merging creates purpose creep, permanent consent, and lost responsibility.
-4. Subject, purpose, consent, scope, duration, evidence, and responsibility are bundled into one connection event.
-5. Creation, pause, withdrawal, correction, expiration, and reconnection are recorded as state transitions.
-6. Migration, audit query, withdrawal, correction, and error handling become part of the same standard.
-7. A connection can be reused across institutions without losing rights, provenance, responsibility, or exit.
-
-## State model
-
+## 4. State model
 ```yaml
 connection_event:
   connection_id: []
@@ -72,59 +65,94 @@ connection_event:
   transition_reason: []
   transition_timestamp: []
 ```
+The state set classifies the current connection-event state; it is not a trust, maturity, or personality score.
 
-## Applications
+## 5. Applications
+- Inter-organizational collaboration: preserve purpose, role, authority, result use, and termination conditions with provenance.
+- AI agents: bind delegated authority to task, operational limit, duration, stop conditions, and human confirmation.
+- Research and data sharing: migrate purpose, anonymization, reuse, attribution, retention, and withdrawal state with provenance.
+- Public services: track application, delegation, review, objection, correction, and remedy as state transitions understandable to the person affected.
 
-- Inter-organizational work: preserve purpose, role, authority, result use, and termination conditions.
-- AI agents: bind delegated authority to task, limit, duration, stop condition, and human confirmation.
-- Research and data sharing: migrate purpose, anonymization, reuse, attribution, retention, and withdrawal provenance.
-- Public services: track application, delegation, review, objection, and remedy as one state transition.
+## 6. Measurements and audit
+```yaml
+- value: ACTIVE / PAUSED / WITHDRAWN / CORRECTED / EXPIRED / RECONNECTED
+  source: parent original
+  measurement_actor: NOT_A_SCORE
+  measurement_object: connection-event state
+  source_modality: SOURCE_EXPLICIT_STATE_SET
+  permitted_use_scope: distinguish creation, pause, withdrawal, correction, expiration, and reconnection
+  non_guarantee_scope: not a trust score or maturity ranking
+- value: renewed-agreement time / number of explanations
+  source: parent original
+  measurement_actor: actors operating or auditing connections
+  measurement_object: repeated explanation and consent friction during institutional migration
+  source_modality: SOURCE_DEFINED_OBSERVATION_SET
+  permitted_use_scope: test whether interoperability reduces avoidable friction
+  non_guarantee_scope: shorter is not always better; do not shorten by omitting explanation or weakening consent
+- value: propagation delay for withdrawal / correction / expiration; remaining ghost connections and obsolete authority
+  source: parent original
+  measurement_actor: connected services, auditors, and affected parties
+  measurement_object: practical reversibility and state synchronization
+  source_modality: SOURCE_DEFINED_OPERATIONAL_OBSERVATION
+  permitted_use_scope: verify that state changes propagate across connection endpoints
+  non_guarantee_scope: no universal passing threshold and no isolated optimization target
+- value: AI/proxy authority violations / stop time / preservation of purpose, provenance, and responsibility after migration
+  source: parent original
+  measurement_actor: operators, auditors, and accountable parties
+  measurement_object: delegated-authority boundaries and rights/responsibility preservation
+  source_modality: SOURCE_DEFINED_AUDIT_OBSERVATION
+  permitted_use_scope: detect authority drift, lost responsibility, and purpose creep
+  non_guarantee_scope: a low violation count alone does not certify safety
+```
+Reversible evaluation means shorter renewed-agreement time or fewer explanations do not count as success when achieved by omitting explanation, inheriting consent automatically, or making withdrawal harder. Broader interoperability is not improvement when it increases purpose creep, data concentration, authority expansion, or ghost connections. Fewer recorded errors are not evidence of safety when detection or audit is weak.
 
-## Measurements and audit
+## 7. Validity conditions
+- Purpose, scope, duration, and responsible party are both human-readable and machine-readable.
+- Consent is managed as updateable, pausable, and withdrawable state.
+- State transitions include objection, correction, expiration, and reconnection.
+- Minimal disclosure and auditability coexist.
+- Rights, provenance, and responsible parties survive institutional migration.
+- AI/proxy authority is limited by task, ceiling, duration, and stop conditions.
+- Standard change, compatibility, deprecation, and remedy procedures are traceable.
 
-- time and repetition required for renewed agreement
-- detected and stopped use outside consent scope
-- propagation delay for withdrawal, correction, and expiration
-- preservation of purpose, provenance, and responsibility after migration
-- remaining ghost connections and obsolete authority
-- AI or proxy authority violations and stop time
-- human-readable explanation in response to audit queries
-- rights loss, duplicate execution, and state mismatch caused by compatibility errors
+## 8. Failure conditions
+- Identity federation or SSO alone is presented as the full protocol.
+- Consent is made permanent by a one-time checkbox.
+- History becomes an undeletable personality record.
+- Withdrawal, correction, or expiration cannot propagate to connected services.
+- All data and authority are centralized in one registry.
+- Interoperability is used to expand purpose beyond consent.
+- AI receives broad or indefinite proxy authority.
+- Responsibility and remedy are undefined when errors occur.
 
-## Validity conditions
+## 9. Falsification conditions
+- Renewed-agreement time and explanation friction do not decline after adoption.
+- Withdrawal, correction, or expiration fail to propagate across services.
+- Recorded state diverges from reality and ghost connections or obsolete authority remain.
+- Interoperability increases surveillance, capture, or purpose creep.
+- AI/proxy authority violations cannot be detected, stopped, and explained.
+- Standard upgrades repeatedly erase rights, provenance, or accountable responsibility.
 
-Purpose, scope, duration, and responsible party must be human-readable and machine-readable. Consent must be managed as an updateable, pausable, withdrawable state. State transitions must include objection, correction, expiration, and reconnection. Minimal disclosure and auditability must coexist, and rights and provenance must survive movement across institutions.
+## 10. Required distinctions
+- connection protocol / universal identity
+- consent / one-time checkbox
+- memory / permanent retention
+- state set / trust or personality score
+- interoperability / unlimited data sharing
+- standardization / centralization
+- delegated authority / transfer of responsibility
+- reversibility / unconditional deletion of all history
+- compatibility / automatic safety guarantee
+- standards compliance / market-entry barrier
 
-## Failure conditions
+## 11. Interpretation constraints
+Do not reduce this theory to blockchain deployment, SSO, identity matching, or customer-data integration. Do not turn consent into a waiver ritual, retain every connection forever, convert interoperability into unlimited sharing or central aggregation, or convert AI delegation into transferred responsibility. Do not turn the state set into a trust score.
 
-The design fails when identity federation alone is called a protocol, consent becomes permanent, history becomes an undeletable personality record, withdrawal has no API, all data and authority are centralized, interoperability expands purpose, AI receives broad permanent authority, or error responsibility is undefined.
+## 12. Search terms
+Nakagawa connection protocol / social API / connection event / contextual identity / consent state / agreement memory / ACTIVE / PAUSED / WITHDRAWN / CORRECTED / EXPIRED / RECONNECTED / withdrawal API / correction API / minimal disclosure / interoperability / delegated authority / audit query
 
-## Falsification conditions
-
-Revise or reject the theory if renewed-agreement time does not decline, withdrawal and correction fail to propagate, ghost connections remain, interoperability increases surveillance or capture, AI authority violations cannot be stopped and explained, or standard upgrades erase rights and provenance.
-
-## Required distinctions
-
-- connection protocol is not universal identity
-- consent is not a one-time checkbox
-- memory is not permanent retention
-- interoperability is not unlimited data sharing
-- standardization is not centralization
-- delegated authority is not transferred responsibility
-- reversibility is not unconditional deletion of all history
-
-## Interpretation constraints
-
-Do not reduce this theory to blockchain adoption, SSO, identity matching, or customer-data integration. Consent must not become a waiver ritual. Connections must not be retained forever. Compatibility must not justify data consolidation, and compliance must not be treated as automatic safety or a market-entry barrier.
-
-## Search terms
-
-connection protocol / social API / connection ID / consent state / agreement memory / reversibility / state transition / withdrawal API / correction API / interoperability / minimal disclosure / provenance / delegated authority / audit query / reconnection
-
-## Origin return
-
-This index supports machine retrieval and structural comparison; it does not replace the parent original. Return to the original for the complete connection-event fields, signatures, compatibility rules, error handling, audit queries, responsibility boundaries, references, and origin signature.
+## 13. Origin return
+The parent original records the full connection-event fields, state transitions, signatures, minimal disclosure, audit queries, compatibility, error handling, delegated authority, responsibility boundaries, standard change, and Reference Cluster as one connected structure. Return to the Parent URL / Post ID 295 / NCL-ID / Diff-ID for the complete definitions and observation modality.
 
 ---
-
-導線: [069トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Navigation: [Official Derivative 069 hub](README.md) / [Human entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [English AI index](en-ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
