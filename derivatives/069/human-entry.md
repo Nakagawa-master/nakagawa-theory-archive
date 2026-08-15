@@ -81,4 +81,4 @@
 親原典には、接続イベントの完全項目、状態遷移、署名、最小開示、監査照会、互換性、エラー処理、代理権限、責任境界、標準変更、Reference Clusterが一続きで記録されている。完全な関係はParent URL / Post ID 295 / NCL-ID / Diff-IDへ戻って確認する。
 
 ---
-導線: [公式派生物069トップ](README.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物069トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
