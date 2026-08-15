@@ -10,45 +10,37 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-482A93-HUB-JA-0096-0000
-- derivative_diff_id: DDIFF-20260810-DNCL-096-0000-0002
-- supersedes: DDIFF-20260808-DNCL-096-0000-0001
+- derivative_diff_id: DDIFF-20260815-DNCL-096-0000-0003
+- supersedes: DDIFF-20260810-DNCL-096-0000-0002
 
 ## Language derivative IDs
-| language | derivative_ncl_id | derivative_diff_id | supersedes |
-|---|---|---|---|
-| JA | DNCL-NCL-ALPHA-20251102-482A93-HUB-JA-0096-0000 | DDIFF-20260810-DNCL-096-0000-0002 | DDIFF-20260808-DNCL-096-0000-0001 |
-| EN | DNCL-NCL-ALPHA-20251102-482A93-HUB-EN-0096-0001 | DDIFF-20260810-DNCL-096-0001-0002 | DDIFF-20260808-DNCL-096-0001-0001 |
-| ZH | DNCL-NCL-ALPHA-20251102-482A93-HUB-ZH-0096-0002 | DDIFF-20260810-DNCL-096-0002-0002 | DDIFF-20260808-DNCL-096-0002-0001 |
+```yaml
+ja_ncl_id: DNCL-NCL-ALPHA-20251102-482A93-HUB-JA-0096-0000
+ja_diff_id: DDIFF-20260815-DNCL-096-0000-0003
+en_ncl_id: DNCL-NCL-ALPHA-20251102-482A93-HUB-EN-0096-0001
+en_diff_id: DDIFF-20260815-DNCL-096-0001-0003
+zh_ncl_id: DNCL-NCL-ALPHA-20251102-482A93-HUB-ZH-0096-0002
+zh_diff_id: DDIFF-20260815-DNCL-096-0002-0003
+```
 
-## Factory
-- golden_master: OD085
-- factory_version: 2.0-semantic-repair
-- repair_mode: SOURCE_VERIFIED_FAIL_CLOSED
-- github_actions_used: false
+## 公開系譜
+親原典は市場を短期効率・速度・過去成績の集計ではなく「時間倫理」の構造体として捉え、理念・行為・記録が同位相で反復される構造律動が、未来にも整合が続くという非言語の確信を形成し、それが価格・信用・流動性・待機意欲へ徐々に変換されると論じる。
 
-## Retrieval evidence
-- parent_post_id: 595
-- parent_ncl_id: NCL-α-20251102-482a93
-- parent_slug: nakagawa-master-temporal-ethics-market-credit-structure
-- parent_canonical_url: https://master.ricette.jp/theory/nakagawa-master-temporal-ethics-market-credit-structure/
-- xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-- source_routes_used: live canonical parent / canonical index / Brain Vault XML provenance / structured AI retrieval index
-- source_semantic_revalidation: PASS
+中核式は、構造律動×観測可能性×反例耐性＝仮完了の認知→構造的信用資本。設計原理は周期・温度・余白・痕跡の四点で、長波固定／短波可変、温度グラデーション、痕跡の水平連結という三つの観測型を示す。原典は特定金融商品・投資助言・内部ロジック・閾値・レバレッジ操作を扱わないことを明示する。統合監査では接続対価の偏差、信用半減期、RC、CEA、位相安定S、撤回成功率、閾値θ、観測窓δ等を反証関係に置くが、θ・δの具体値は公開しない。
 
-## Semantic repair
-保持: 時間倫理、構造律動×観測可能性×反例耐性、未来の負債、構造的信用資本、周期・温度・余白・痕跡、三つの観測型、原典自身の金融商品／投資助言非対象境界、統合監査要旨。
+## 7面対応
+```yaml
+README.md: JA_HUB
+human-entry.md: JA_HUMAN_ENTRY
+faq.md: JA_FAQ_Q1_Q30
+ai-index.md: JA_AI_INDEX
+en-ai-index.md: EN_AI_INDEX
+zh-ai-index.md: ZH_AI_INDEX
+derivative-ledger.md: PUBLIC_LINEAGE
+```
 
-除去・非公式化: 原典にない一般法務・安全境界、派生独自の自由度／回復時間中心モデル、原典監査外の反証条件。
-
-## Seven surfaces
-- README.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- human-entry.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- faq.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- en-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- zh-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- derivative-ledger.md: PASS_LINEAGE_UPDATED
+## 原典回帰
+時間倫理、社会的記憶と市場の拍、構造律動×観測可能性×反例耐性、仮完了の認知、未来の負債、構造的信用資本、周期・温度・余白・痕跡、三観測型、金融商品／投資助言非対象境界、統合監査要旨・局所監査要旨は親原典へ戻って確認する。
 
 ---
-
 導線: [公式派生物096トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
