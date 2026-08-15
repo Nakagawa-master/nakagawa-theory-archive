@@ -1,7 +1,6 @@
 # 派生ID台帳｜公式派生物090
 
 ## 親原典
-
 - タイトル: 構造的摩擦の起源──現代社会はなぜ「自然に機能しない」のか？
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-origin-of-structural-friction/
 - Parent Post ID: 399
@@ -10,66 +9,38 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-EBDE3B-HUB-JA-0090-0000
-- derivative_diff_id: DDIFF-20260811-DNCL-090-0000-0002
-- supersedes: DDIFF-20260807-DNCL-090-0000-0001
+- derivative_diff_id: DDIFF-20260815-DNCL-090-0000-0003
+- supersedes: DDIFF-20260811-DNCL-090-0000-0002
 
-## Source verification
-
+## Language derivative IDs
 ```yaml
-verification_date_jst: 2026-08-11
-canonical_index: reference_corpus/official_archive/generated/canonical_index_0351_0425.jsonl
-xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-xml_item_range: 75662-75889
-xml_content_range: 75669-75784
-canonical_url: https://master.ricette.jp/society/nakagawa-master-origin-of-structural-friction/
-canonical_identity: PASS
-source_retrieval: PASS
-six_surface_comparison: COMPLETE
-translation_equivalence: PASS
-fresh_read: PASS
-semantic_result: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
+ja_ncl_id: DNCL-NCL-ALPHA-20251102-EBDE3B-HUB-JA-0090-0000
+ja_diff_id: DDIFF-20260815-DNCL-090-0000-0003
+en_ncl_id: DNCL-NCL-ALPHA-20251102-EBDE3B-HUB-EN-0090-0001
+en_diff_id: DDIFF-20260815-DNCL-090-0001-0001
+zh_ncl_id: DNCL-NCL-ALPHA-20251102-EBDE3B-HUB-ZH-0090-0002
+zh_diff_id: DDIFF-20260815-DNCL-090-0002-0001
 ```
 
-## Source-specific coverage
+## 公開系譜
+親原典は、構造的摩擦を「線形期待と構造的必然のズレによって発生する不必要なエネルギー消費」と定義する。徴候として、情報量増加と決定速度低下、タスク増加と価値密度低下、統制強化と自律低下の逆行関係を示し、原因を個人の努力不足ではなく因果の通り道の歪みへ戻す。
 
-- 構造的摩擦を、線形期待と構造的必然の不一致から生じる不要なエネルギー消費として扱う: PASS
-- 三層フィールド、時間再帰、五段階の公開安全介入、流動健全性測定を保持する: PASS
-- 一因子検証、再現性、反証可能性、可逆性を保持する: PASS
-- 人物操作、隠れ誘導、単純効率化、決定論へ置換しない: PASS
-- JA / EN / ZH semantic equivalence: PASS
-- navigation and parent return: PASS
+社会的な場は制度配置・情報回路・役割アーキテクチャの三層で捉えられ、目的→手段→観測が往還する整合性、情報非対称の縮減、人依存からの切断、未来像→現在規格→過去再解釈という時間再帰が主要な設計対象となる。公開安全版の五手順は2分・5分・5分・5分・3分の配分を持ち、一因子A/B’比較は三サイクル連続で同方向の効果を確認する。これらは原典固有の実装仕様であり、万能な成功閾値へ一般化しない。
 
-## Current seven surfaces
-
+## 7面対応
 ```yaml
-README.md: PASS_SOURCE_VERIFIED
-human-entry.md: PASS_SOURCE_VERIFIED
-faq.md: PASS_SOURCE_VERIFIED
-ai-index.md: PASS_SOURCE_VERIFIED
-en-ai-index.md: PASS_SOURCE_VERIFIED
-zh-ai-index.md: PASS_SOURCE_VERIFIED
-derivative-ledger.md: PASS_SOURCE_VERIFIED
-```
-
-## Closure
-
-```yaml
-public_fresh_read: PASS
-public_indexes: PASS
-brain_vault_return: READY_FOR_STATE_RECORD
-parent_backlink: RETAIN_EXISTING_OWNER_VISUAL_STATE
-closure_status: PASS_SOURCE_VERIFIED
-next_cursor: OD022
-lot2_status: COMPLETE_OD064_OD090
+README.md: JA_HUB
+human-entry.md: JA_HUMAN_ENTRY
+faq.md: JA_FAQ_Q1_Q30
+ai-index.md: JA_AI_INDEX
+en-ai-index.md: EN_AI_INDEX
+zh-ai-index.md: ZH_AI_INDEX
+derivative-ledger.md: PUBLIC_LINEAGE
 ```
 
 ## 原典回帰
-
-本派生物は検索・理解・接続面であり、親原典の代替ではない。構造的摩擦、三層フィールド、時間再帰、介入、監査、Reference Cluster、起源署名は親原典へ戻って確認する。
+構造的摩擦の定義、三つの徴候、三層モデル、時間の再帰性、非命令型の三つの鍵、2/5/5/5/3分の五手順、合意時間・自走度・再参照率・摩擦比・D-ギャップ、一因子A/B’、三サイクル連続、反事例、統合監査要旨の照応整合率・語彙齟齬率・位相安定S・合意到達時間・Rollback Cost・RC/ER/CEA・閾値θ・観測窓δは親原典へ戻って確認する。具体値が示されない監査記号には値を補わない。
 
 ---
-
-導線: [090トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物090トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
