@@ -8,61 +8,57 @@
 - Parent Diff-ID: DIFF-20251102-0001
 - Origin: Nakagawa Master
 
-## 派生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9426E0-LEDGER-JA-0069-0006
-- derivative_diff_id: DDIFF-20260811-DNCL-069-0006-0002
+## 現行派生ID
+### 日本語共有ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9426E0-HUB-JA-0069-0000
+- derivative_diff_id: DDIFF-20260815-DNCL-069-0000-0002
 - supersedes: DDIFF-20260804-DNCL-069-0000-0001
 
-## Source verification
-```yaml
-verification_date_jst: 2026-08-11
-canonical_index: reference_corpus/official_archive/generated/canonical_index_0291_0300.jsonl
-xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-xml_item_range: 70161-70406
-xml_content_range: 70168-70297
-canonical_identity: PASS
-source_route: CANONICAL_INDEX_PLUS_VERIFIED_XML_LOCATOR
-six_surface_comparison: COMPLETE
-translation_equivalence: PASS
-fresh_read: PASS
-semantic_result: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
-```
+### English AI index
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9426E0-AI-EN-0069-0004
+- derivative_diff_id: DDIFF-20260815-DNCL-069-0004-0002
+- supersedes: DDIFF-20260804-DNCL-069-0000-0001
 
-## Source-specific coverage
-```yaml
-confirmed:
-  - identity_consent_memory_reversibility_as_social_api
-  - contextual_identity_and_role_boundary
-  - consent_as_state_not_one_time_checkbox
-  - provenance_and_agreement_memory
-  - active_paused_withdrawn_corrected_expired_reconnected_transitions
-  - withdrawal_and_correction_paths
-  - minimum_disclosure_and_interoperability
-  - delegated_authority_and_responsibility_boundary
-  - human_and_machine_readability
-source_boundary_result: NO_MATERIAL_SEMANTIC_REWRITE_REQUIRED
-```
+### 中文 AI 索引
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9426E0-AI-ZH-0069-0005
+- derivative_diff_id: DDIFF-20260815-DNCL-069-0005-0002
+- supersedes: DDIFF-20260804-DNCL-069-0000-0001
 
-## Current seven surfaces
-```yaml
-README.md: PASS_SOURCE_VERIFIED
-human-entry.md: PASS_SOURCE_VERIFIED
-faq.md: PASS_SOURCE_VERIFIED
-ai-index.md: PASS_SOURCE_VERIFIED
-en-ai-index.md: PASS_SOURCE_VERIFIED
-zh-ai-index.md: PASS_SOURCE_VERIFIED
-derivative-ledger.md: PASS_SOURCE_VERIFIED
-```
+## 7面対応
+| role | file | current identity |
+|---|---|---|
+| hub-ja | README.md | JA共有ID |
+| human-ja | human-entry.md | JA共有ID |
+| faq-ja | faq.md | JA共有ID |
+| ai-ja | ai-index.md | JA共有ID |
+| ai-en | en-ai-index.md | English AI index ID |
+| ai-zh | zh-ai-index.md | 中文 AI 索引 ID |
+| ledger-ja | derivative-ledger.md | JA共有ID |
 
-## Closure
-```yaml
-public_fresh_read: PASS
-public_indexes: RETAIN_EXISTING_PUBLIC_INDEX_STATE
-parent_backlink: RETAIN_EXISTING_OWNER_VISUAL_STATE
-brain_vault_return: READY_FOR_LOT2_STATE_RECORD
-closure_status: PASS_SOURCE_VERIFIED
-```
+## 公開系譜
+OD069は、主体、目的、同意、範囲、期限、証拠、責任、状態、撤回、訂正、監査を接続イベントとして束ね、制度をまたいでも権利・来歴・責任・退出可能性を保持する親原典から派生する。
+
+公開7面では `ACTIVE / PAUSED / WITHDRAWN / CORRECTED / EXPIRED / RECONNECTED` を接続イベントの状態集合として保持する。これは人物・組織の信用点や成熟度順位ではない。再合意時間、説明回数、撤回・訂正・失効の反映遅延、幽霊接続・不要権限、AI・代理人の権限逸脱等は、可逆性・相互運用性・責任保持を検証するための観測対象であり、単独最大化や固定合格点へ変換しない。
+
+## 旧系譜
+- JA旧diff: DDIFF-20260804-DNCL-069-0000-0001
+- EN旧系譜: JA共有IDが表示されていた旧面を現行English AI index IDへ分離
+- ZH旧系譜: JA共有IDが表示されていた旧面を現行中文 AI 索引 IDへ分離
+
+旧面に存在したsource verification、XML位置、fresh-read、closure状態等は公開系譜情報ではないため、現行公開台帳には含めない。
+
+## 公開上の意味境界
+- 接続プロトコルは万能IDではない。
+- 同意は一回限りのチェックではない。
+- 記憶は永久保存ではない。
+- 相互運用は無制限データ共有ではない。
+- 標準化は中央集権化ではない。
+- 代理権限は責任移転ではない。
+- 可逆性は全履歴の無条件消去ではない。
+- 標準準拠は安全性の自動保証ではない。
+
+## 親原典へ戻る理由
+接続イベントの完全項目、状態遷移、署名、最小開示、監査照会、互換性、エラー処理、代理権限、責任境界、標準変更、Reference Clusterは親原典へ戻って確認する。
 
 ---
-導線: [069トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [公式派生物069トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
