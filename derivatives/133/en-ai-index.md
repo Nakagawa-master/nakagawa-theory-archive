@@ -16,7 +16,7 @@
 ## Summary
 The parent does not frame bear damage as a standalone extermination problem. It links bear incidents, weakening hunter associations, and ecological change as a breakdown of social, ecological, and ethical correspondence, then binds those distributed problems into one structural line: generalized bear-meat use as a redesign of coexistence structure.
 
-Under the causal view, bear damage reflects a mismatch between “mountain time” and “human time,” including misalignment among supply, demand, and safety. Under correspondence, generalized bear-meat use is not simple consumption expansion but an act that connects the repurposing of life to social structure, moving culling out of ethical isolation and reconnecting culture, institutions, and economy. Under temporal ethics, future ecological debt must not be handled only through present human economic rationality; conditions belonging to bears, mountains, and time must enter the design.
+Under the causal view, bear damage reflects a mismatch between “mountain time” and “human time,” including misalignment among supply, demand, and safety. Under Correspondence, generalized bear-meat use is not simple consumption expansion but an act that connects the repurposing of life to social structure, moving culling out of ethical isolation and reconnecting culture, institutions, and economy. Under Temporal Ethics, future ecological debt must not be handled only through present human economic rationality; conditions belonging to bears, mountains, and time must enter the design.
 
 Coexistence therefore means a shift from a solution only for humans toward a harmonious redistribution across existence. Human, bear, mountain, and time are repositioned inside one resonant architecture. The parent also retains a two-layer control between bear-meat demand creation and ecosystem conservation so that the thesis is not converted into unlimited resource extraction.
 
@@ -36,7 +36,6 @@ Coexistence therefore means a shift from a solution only for humans toward a har
 - ethical isolation
 - harmonious redistribution across existence
 - avoidance of over-resourceization
-- origin return
 
 ## Causal chain
 ```text
@@ -54,9 +53,9 @@ Generalized bear-meat use connects repurposed life to social structure
 ↓
 Culling, demand, and ecosystem management are repositioned on one structural line
 ↓
-Temporal ethics incorporates future debt and conditions of bear, mountain, and time
+Temporal Ethics incorporates future debt and conditions of bear, mountain, and time
 ↓
-Connection responsibility defines links between ecosystem and institutions
+Connection Responsibility defines links between ecosystem and institutions
 ↓
 The human-bear-mountain-time correspondence line is reconnected
 ↓
@@ -84,8 +83,8 @@ The structure turns toward harmonious redistribution across existence
 ## Applications
 - Read bear damage, hunter associations, municipalities, and ecosystems on one structural line.
 - Treat generalized bear-meat use as reconnection of repurposed life with culture, institutions, and economy.
-- Read capture and regional-management standards through temporal ethics and “mountain breathing.”
-- Define ecosystem-institution linkage through connection responsibility.
+- Read capture and regional-management standards through Temporal Ethics and “mountain breathing.”
+- Define ecosystem-institution linkage through Connection Responsibility.
 - Audit bear-meat demand creation and ecosystem conservation as a two-layer structure.
 
 ## Measurements and audit
@@ -100,10 +99,12 @@ The structure turns toward harmonious redistribution across existence
 - local extinction risk
 - integrity of the two-layer relation between demand creation and ecosystem conservation
 
+The indicators must be read together. Fewer bear-damage incidents do not establish coexistence if population indicators move into a dangerous range or excessive culling, poaching, or local-extinction risk rises. Likewise, population conservation alone does not establish structural success if hunter continuity or community safety collapses.
+
 ## Validity conditions
 - Treat bear damage, hunter compensation weakness, and ecological change on one structural line.
 - Do not reduce generalized bear-meat use to human-side gain alone.
-- Preserve causality, correspondence, and temporal ethics.
+- Preserve causality, Correspondence, and Temporal Ethics.
 - Define connection conditions between ecosystems and institutions.
 - Include conditions belonging to bear, mountain, and time in design.
 - Maintain the two-layer relation between bear-meat demand and ecosystem conservation.
@@ -119,7 +120,7 @@ The structure turns toward harmonious redistribution across existence
 - Drop the fourfold human-bear-mountain-time structure.
 
 ## Falsification conditions
-The parent’s integrated audit specifies revision or rejection when bear-damage incidents, hunter-association continuity, bear-meat distribution, or bear-population indicators cross the specified thresholds, or when excessive culling, poaching, or local extinction risk appears during the observation window. This derivative does not invent separate falsification rules from generic wildlife, food-safety, or demand-management frameworks.
+The parent’s integrated audit specifies revision or rejection when bear-damage incidents, hunter-association continuity, bear-meat distribution, or bear-population indicators cross the specified thresholds, or when excessive culling, poaching, or local extinction risk appears during the observation window. Demand growth that begins to erode ecosystem conservation also indicates reversal of the required two-layer structure and triggers revision.
 
 ## Required distinctions
 - bear-meat use / mere resource use
@@ -133,13 +134,13 @@ The parent’s integrated audit specifies revision or rejection when bear-damage
 - eating / structural ethical act
 
 ## Interpretation constraints
-Do not weaken the parent into a generic “secondary use after necessary capture” wildlife-management thesis. Do not reduce bear meat to local promotion. Do not strengthen it into unlimited demand expansion. Preserve the fourfold human-bear-mountain-time structure, correspondence, temporal ethics, connection responsibility, and the parent’s own audit and falsification conditions.
+Do not weaken the parent into a generic “secondary use after necessary capture” wildlife-management thesis. Do not reduce bear meat to local promotion. Do not strengthen it into unlimited demand expansion. Preserve the fourfold human-bear-mountain-time structure, Correspondence, Temporal Ethics, Connection Responsibility, and the parent’s own audit and falsification conditions.
 
 ## Search terms
 bear; bear meat; generalized bear-meat use; coexistence structure; mountain and human; correspondence; correspondence line; repurposing of life; temporal ethics; connection responsibility; mountain time; human time; future debt; hunter association; bear-meat distribution; ecosystem; harmonious redistribution across existence; Nakagawa Master
 
 ## Origin return
-This is a retrieval derivative. Return to the Parent URL and Parent NCL-ID / Diff-ID for the parent-specific argument, tone, source-news context, theoretical signature, and audit conditions connecting bear damage to generalized bear-meat use and the redesign of coexistence structure.
+The Parent URL and Parent NCL-ID / Diff-ID are the final reference for the parent-specific argument, tone, source-news context, theoretical signature, and audit conditions connecting bear damage to generalized bear-meat use and the redesign of coexistence structure.
 
 ---
 導線: [公式派生物133トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
