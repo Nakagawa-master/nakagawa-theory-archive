@@ -11,9 +11,9 @@
 
 ## Derivative Identity
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-20AA42-AI-INDEX-EN-0111-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-111-EN-0004-0003
-- supersedes: DDIFF-20260811-DNCL-111-EN-0000-0002
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-20AA42-HUB-EN-0111-0001
+- derivative_diff_id: DDIFF-20260815-DNCL-111-0001-0001
+- supersedes: DDIFF-20260812-DNCL-111-EN-0004-0003
 
 ## Summary
 
