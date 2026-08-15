@@ -110,4 +110,4 @@
 指標名や段階だけを抜き出すと、貨幣換算禁止、退出・異議、反発吸収、権限分散、ロールバックという条件が失われるためです。Parent URL、Parent Post ID 303、Parent NCL-ID、Parent Diff-IDが意味確認の起点です。
 
 ---
-導線: [071トップ](README.md) / [人間向け要約](human-entry.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物071トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
