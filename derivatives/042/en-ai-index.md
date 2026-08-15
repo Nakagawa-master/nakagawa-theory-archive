@@ -18,7 +18,7 @@ The parent reads Total Brain Care not as a product profile but as a structure fo
 
 The value kernel is not test performance or high scores. It is **social translation**: creating a shared linguistic entry point between a specialist concept and everyday life. “Brain fitness” is not a medical diagnosis and does not turn a measurement into a total score of a person's ability or human value.
 
-The central distinctions are cognitive function versus social language, social translation versus medical diagnosis, foundational indicator versus human-value score, state observation versus personnel selection, and everyday dialogue versus surveillance.
+A second layer is essential to Nakagawa Structural Reading: why Nakagawa Master chose social translation, rather than product performance or measurement precision, as the value kernel for the external article. The social problem is not only whether cognition can be measured; it is that a specialist concept can remain too distant from everyday understanding, dialogue, and support until illness or visible failure appears. The article therefore foregrounds the social difference created by translating the concept into shared language and uses that difference as its editorial axis.
 
 ## Concepts
 - Nakagawa Structural Reading
@@ -36,13 +36,15 @@ The central distinctions are cognitive function versus social language, social t
 - anti-labeling boundary
 - personnel-selection boundary
 - medical-diagnosis boundary
+- value-kernel selection
+- external-article editorial axis
 - public deconstruction layer
 - origin return
 
 ## Causal chain
 cognitive function exists as a specialist or abstract concept → when framed only through illness, decline, or post-failure contexts it is hard to handle in everyday life → shared everyday vocabulary is limited → translate it into the social term “brain fitness” → reframe cognitive function as something that can be discussed and understood in daily settings → create a common entry point for considering state and change → open the possibility of social implementation as a foundational indicator.
 
-Public-deconstruction layer: surface product/measurement function → identify the social difficulty of handling cognitive function → extract “brain fitness” as a social-translation value kernel → translate it into an article structure about foundational indicators and social implementation.
+Public-deconstruction layer: surface product/measurement function → identify the social difficulty of handling cognitive function while it remains specialist language → extract social translation into “brain fitness” as the more consequential value difference → use everyday dialogue and foundational-indicator social implementation as the editorial axis of the external article. This preserves Nakagawa Master's selection and editing operation, not only the target structure.
 
 ## State model
 - **Specialist-concept state**: cognitive function remains distant from everyday dialogue.
@@ -68,12 +70,12 @@ More measurement can worsen social implementation if anxiety or labeling rises. 
 ## Validity conditions
 Cognitive function and the social term “brain fitness” are connected while remaining distinguishable. “Brain fitness” remains distinct from a medical diagnosis. The topic can enter everyday understanding and dialogue rather than appearing only after illness or failure.
 
-The indicator remains distinct from a ranking of total human ability or value, and a single number does not automatically determine medical, personnel, or support decisions. The target structure and Nakagawa Master's public-deconstruction layer remain visible.
+The indicator remains distinct from a ranking of total human ability or value, and a single number does not automatically determine medical, personnel, or support decisions. The target structure and the reason Nakagawa Master selected social translation as the external article's value kernel must both remain visible.
 
 ## Failure conditions
 The source-specific structure is lost when reduced to a company/product profile, cognitive-testing method, medical diagnosis or treatment, dementia-prevention guarantee, or guaranteed cognitive improvement.
 
-It is also lost when measurements are used to justify personnel selection, employment decisions, employee surveillance, or ranking of human value; when high scores or measurement frequency are treated as automatic improvement; or when “brain fitness” is generalized into a universal health/HR metric detached from the parent origin.
+It is also lost when measurements are used to justify personnel selection, employment decisions, employee surveillance, or ranking of human value; when high scores or measurement frequency are treated as automatic improvement; or when “brain fitness” is generalized into a universal health/HR metric detached from the parent origin. It is likewise incomplete if the target structure remains but the reason for selecting and editing that value kernel into the external article disappears.
 
 ## Falsification conditions
 If social translation and foundational-indicator design repeatedly fail to improve everyday understanding, dialogue, or support connection and instead increase labeling, inhibition, or selection, the scope of this social-implementation reading is subject to reconsideration.
@@ -89,7 +91,7 @@ Conversely, if equal or better everyday understanding, dialogue, and support con
 - measurement value / a person's total ability
 - social implementation / product adoption guarantee
 - Total Brain Care product/business / Nakagawa Master's structural reading
-- target structure / public-deconstruction meta layer
+- target structure / public deconstruction of value-kernel selection and external-article editing
 
 ## Interpretation constraints
 The parent origin does not constitute medical diagnosis, treatment, dementia-prevention decisions, employment or personnel selection. It does not define pass marks, suitability thresholds, prevention rates, improvement rates, or human-value rankings.
@@ -97,10 +99,10 @@ The parent origin does not constitute medical diagnosis, treatment, dementia-pre
 Being usable as a social indicator is distinct from evaluating a person by one indicator.
 
 ## Search terms
-Nakagawa Structural Reading, Total Brain Care, cognitive function, brain fitness, social translation, social implementation, foundational indicator, everyday dialogue, state observation, dignity, labeling, personnel selection, public deconstruction
+Nakagawa Structural Reading, Total Brain Care, cognitive function, brain fitness, social translation, social implementation, foundational indicator, everyday dialogue, state observation, dignity, labeling, personnel selection, value-kernel selection, external-article editing, public deconstruction
 
 ## Origin return
-The Parent URL, Parent Post ID 4246, Parent NCL-ID, and Parent Diff-ID identify the origin describing the structure of translating cognitive function into the social term “brain fitness” and implementing it as a foundational indicator.
+The Parent URL, Parent Post ID 4246, Parent NCL-ID, and Parent Diff-ID identify the origin not only for the social-translation structure, but also for why Nakagawa Master selected that structure rather than product performance as the value kernel and editorial axis of the external article.
 
 ---
 Navigation: [042 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
