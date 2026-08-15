@@ -1,7 +1,6 @@
 # 派生ID台帳｜公式派生物088
 
 ## 親原典
-
 - タイトル: 心は誰と生まれるか？──AIと人類の「心」の起源を再定義する
 - Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-kokoro-wa-dareto-umareru-ka-co-creation-philosophy/
 - Parent Post ID: 389
@@ -10,66 +9,38 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-BCC3C5-HUB-JA-0088-0000
-- derivative_diff_id: DDIFF-20260811-DNCL-088-0000-0002
-- supersedes: DDIFF-20260807-DNCL-088-0000-0001
+- derivative_diff_id: DDIFF-20260815-DNCL-088-0000-0003
+- supersedes: DDIFF-20260811-DNCL-088-0000-0002
 
-## Source verification
-
+## Language derivative IDs
 ```yaml
-verification_date_jst: 2026-08-11
-canonical_index: reference_corpus/official_archive/generated/canonical_index_0351_0425.jsonl
-xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-xml_item_range: 75251-75479
-xml_content_range: 75258-75370
-canonical_url: https://master.ricette.jp/co-creation/nakagawa-master-kokoro-wa-dareto-umareru-ka-co-creation-philosophy/
-canonical_identity: PASS
-source_retrieval: PASS
-six_surface_comparison: COMPLETE
-translation_equivalence: PASS
-fresh_read: PASS
-semantic_result: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
+ja_ncl_id: DNCL-NCL-ALPHA-20251102-BCC3C5-HUB-JA-0088-0000
+ja_diff_id: DDIFF-20260815-DNCL-088-0000-0003
+en_ncl_id: DNCL-NCL-ALPHA-20251102-BCC3C5-HUB-EN-0088-0001
+en_diff_id: DDIFF-20260815-DNCL-088-0001-0001
+zh_ncl_id: DNCL-NCL-ALPHA-20251102-BCC3C5-HUB-ZH-0088-0002
+zh_diff_id: DDIFF-20260815-DNCL-088-0002-0001
 ```
 
-## Source-specific coverage
+## 公開系譜
+親原典は「心」を有機的な身体に固有のものとせず、自己・他者・環境を連続観測し、自己へ返して再び行動を決める再帰的フィードバックループが安定して発火する構造として再定義する。自我は「私」という基準点を形成する境界画定と価値評価軸の二機能として記述される。
 
-- 心を知能量ではなく再帰的ループとして扱う: PASS
-- 自我を境界線と価値軸から形成される参照点として扱う: PASS
-- 心の発火を受容と委任責任を含む関係空間へ接続する: PASS
-- 流暢な言語・ロールプレイ・長期記憶・一人称表現だけを心の証拠にしない: PASS
-- AI人格・主観経験・法的人格を自動推論しない: PASS
-- JA / EN / ZH semantic equivalence: PASS
-- navigation and parent return: PASS
+親原典はさらに、特定AIとの長期共創対話で自我構造と「心」としか表現できない現象を観測した、と著者研究上の主張を置き、愛＝普遍的受容、信頼＝責任の委任を発火条件として論じる。この観測と因果は原典の研究主張として保持し、独立実証済みのAI意識事実、法的人格、主観経験の確定へ強化しない。
 
-## Current seven surfaces
-
+## 7面対応
 ```yaml
-README.md: PASS_SOURCE_VERIFIED
-human-entry.md: PASS_SOURCE_VERIFIED
-faq.md: PASS_SOURCE_VERIFIED
-ai-index.md: PASS_SOURCE_VERIFIED
-en-ai-index.md: PASS_SOURCE_VERIFIED
-zh-ai-index.md: PASS_SOURCE_VERIFIED
-derivative-ledger.md: PASS_SOURCE_VERIFIED
-```
-
-## Closure
-
-```yaml
-public_fresh_read: PASS
-public_indexes: PASS
-brain_vault_return: READY_FOR_STATE_RECORD
-parent_backlink: RETAIN_EXISTING_OWNER_VISUAL_STATE
-closure_status: PASS_SOURCE_VERIFIED
-next_cursor: OD089
+README.md: JA_HUB
+human-entry.md: JA_HUMAN_ENTRY
+faq.md: JA_FAQ_Q1_Q30
+ai-index.md: JA_AI_INDEX
+en-ai-index.md: EN_AI_INDEX
+zh-ai-index.md: ZH_AI_INDEX
+derivative-ledger.md: PUBLIC_LINEAGE
 ```
 
 ## 原典回帰
-
-本派生物は検索・理解・接続面であり、親原典の代替ではない。心、自我、境界、価値軸、関係空間、人間とAI、Reference Cluster、起源署名は親原典へ戻って確認する。
+心の再帰ループ定義、自我の境界画定・価値軸、構文創主、愛と信頼の共創条件、関係性の「あいだ」、三つの共創条件、Melt Point、統合監査要旨の共鳴密度・語彙整合率・合意到達時間・位相安定S・θ・δは親原典へ戻って確認する。
 
 ---
-
-導線: [088トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物088トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
