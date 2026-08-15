@@ -10,54 +10,37 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-25995B-HUB-JA-0095-0000
-- derivative_diff_id: DDIFF-20260810-DNCL-095-0000-0002
-- supersedes: DDIFF-20260808-DNCL-095-0000-0001
+- derivative_diff_id: DDIFF-20260815-DNCL-095-0000-0003
+- supersedes: DDIFF-20260810-DNCL-095-0000-0002
 
 ## Language derivative IDs
+```yaml
+ja_ncl_id: DNCL-NCL-ALPHA-20251102-25995B-HUB-JA-0095-0000
+ja_diff_id: DDIFF-20260815-DNCL-095-0000-0003
+en_ncl_id: DNCL-NCL-ALPHA-20251102-25995B-HUB-EN-0095-0001
+en_diff_id: DDIFF-20260815-DNCL-095-0001-0003
+zh_ncl_id: DNCL-NCL-ALPHA-20251102-25995B-HUB-ZH-0095-0002
+zh_diff_id: DDIFF-20260815-DNCL-095-0002-0003
+```
 
-| language | derivative_ncl_id | derivative_diff_id | supersedes |
-|---|---|---|---|
-| JA | DNCL-NCL-ALPHA-20251102-25995B-HUB-JA-0095-0000 | DDIFF-20260810-DNCL-095-0000-0002 | DDIFF-20260808-DNCL-095-0000-0001 |
-| EN | DNCL-NCL-ALPHA-20251102-25995B-HUB-EN-0095-0001 | DDIFF-20260810-DNCL-095-0001-0002 | DDIFF-20260808-DNCL-095-0001-0001 |
-| ZH | DNCL-NCL-ALPHA-20251102-25995B-HUB-ZH-0095-0002 | DDIFF-20260810-DNCL-095-0002-0002 | DDIFF-20260808-DNCL-095-0002-0001 |
+## 公開系譜
+親原典は、労働と報酬を結ぶ従来の線形因果がAI・自動化、交換コスト低下、情報透明化によって崩れ、貨幣経済の崩壊は避けられない未来であり、人類は接続対価社会へ移行する必要があるという強い文明論的命題を置く。接続対価社会では価値の起源を労働時間や単一成果物から、社会・構造への接続を通じて生まれる貢献・信頼・共鳴へ移す。
 
-## Factory
-- golden_master: OD085
-- factory_version: 2.0-semantic-repair
-- repair_mode: SOURCE_VERIFIED_FAIL_CLOSED
-- completion_authority: OFFICIAL_ARCHIVE_MEMORY_AND_COMPLETION_EVIDENCE
-- github_actions_used: false
+価値発生の三要素は貢献・信頼・共鳴。実装側では対話の順序・間・配置を設計する構文操作、模倣・誤解から価値純度を守る構造的防衛、接続密度・貢献度・倫理性等を含む多層報酬を示す。統合監査要旨は接続価値会計・権利章典・裁定・語彙辞書・一次ログを束ね、RC/ER/CEA/S、Consent Failure率、再訪／紹介率、Rollback Cost、閾値θ、観測窓δ等を反証関係に置く。θ・δの具体値は補わない。
 
-## Retrieval evidence
-- canonical_index: reference_corpus/official_archive/generated/canonical_index_0401_0500.jsonl
-- parent_post_id: 420
-- parent_ncl_id: NCL-α-20251102-25995b
-- parent_slug: nakagawa-master-social-structure-connection-reward
-- parent_canonical_url: https://master.ricette.jp/society/nakagawa-master-social-structure-connection-reward/
-- xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-- source_routes_used: live canonical parent / canonical index / Brain Vault XML provenance / structured AI retrieval index
-- canonical_identity_parity: PASS
-- source_semantic_revalidation: PASS
+## 7面対応
+```yaml
+README.md: JA_HUB
+human-entry.md: JA_HUMAN_ENTRY
+faq.md: JA_FAQ_Q1_Q30
+ai-index.md: JA_AI_INDEX
+en-ai-index.md: EN_AI_INDEX
+zh-ai-index.md: ZH_AI_INDEX
+derivative-ledger.md: PUBLIC_LINEAGE
+```
 
-## Semantic repair
-
-保持: 貨幣経済崩壊の強い断定、接続対価社会の必然性、貢献・信頼・共鳴、三つの崩壊圧力、構文操作、構造的防衛、多層報酬、静かな調律、統合監査要旨。
-
-除去・非公式化: 原典の断定を単なる可能性へ弱める表現、一般的な金融／投資助言回避、法務・安全ガードレール、原典にない外部イベント型反証、Rollback Costから派生側が作った一般rollback手続き。
-
-## Seven surfaces
-- README.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- human-entry.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- faq.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- en-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- zh-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- derivative-ledger.md: PASS_LINEAGE_UPDATED
-
-## Closure rule
-
-原典の意味・断定強度・境界を優先し、派生側の穏当化・安全化・一般論化を公式主張へ混入しない。
+## 原典回帰
+貨幣の三機能、労働―報酬線形因果の解体、接続対価社会、貢献・信頼・共鳴、AIと自動化・交換コスト低下・情報透明化の三圧力、対話構造再設計・構造的防衛・報酬多層化、静かな調律、統合監査要旨と局所監査要旨、起源署名は親原典へ戻って確認する。
 
 ---
-
 導線: [公式派生物095トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
