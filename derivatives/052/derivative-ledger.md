@@ -1,68 +1,60 @@
 # 派生ID台帳｜公式派生物052
 
 ## 親原典
-
-- Title: 中川式営業の教科書・第十四回──提案編集術：響かせるための構造翻訳
+- タイトル: 中川式営業の教科書・第十四回──提案編集術：響かせるための構造翻訳
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-14-proposal-editing-structural-translation/
+- Parent Post ID: 223
 - Parent NCL-ID: NCL-α-20251102-b7cdb4
 - Parent Diff-ID: DIFF-20251102-0001
-- Origin: 中川マスター / Nakagawa Master
+- Origin: Nakagawa Master
 
-## 公開派生面
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-B7CDB4-HUB-JA-0052-0000
+- derivative_diff_id: DDIFF-20260815-DNCL-052-0000-0002
+- supersedes: DDIFF-20260802-DNCL-052-0000-0001
 
-| role | file | derivative_ncl_id | derivative_diff_id |
-|---|---|---|---|
-| hub-ja | README.md | DNCL-NCL-ALPHA-20251102-B7CDB4-HUB-JA-0052-0000 | DDIFF-20260802-DNCL-052-0000-0001 |
-| human-ja | human-entry.md | DNCL-NCL-ALPHA-20251102-B7CDB4-HUMAN-JA-0052-0001 | DDIFF-20260802-DNCL-052-0001-0001 |
-| faq-ja | faq.md | DNCL-NCL-ALPHA-20251102-B7CDB4-FAQ-JA-0052-0002 | DDIFF-20260802-DNCL-052-0002-0001 |
-| ai-ja | ai-index.md | DNCL-NCL-ALPHA-20251102-B7CDB4-AI-JA-0052-0003 | DDIFF-20260802-DNCL-052-0003-0001 |
-| ai-en | en-ai-index.md | DNCL-NCL-ALPHA-20251102-B7CDB4-AI-EN-0052-0004 | DDIFF-20260802-DNCL-052-0004-0001 |
-| ai-zh | zh-ai-index.md | DNCL-NCL-ALPHA-20251102-B7CDB4-AI-ZH-0052-0005 | DDIFF-20260802-DNCL-052-0005-0001 |
-| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-B7CDB4-LEDGER-JA-0052-0006 | DDIFF-20260802-DNCL-052-0006-0001 |
-
-## 来歴
-
+## 現行派生identity
 ```yaml
-schema: official-derivative-ledger-v1
-publication_date: 2026-08-02
-parent_post_id: 223
-parent_slug: nakagawa-master-nakagawa-sales-14-proposal-editing-structural-translation
-parent_status: publish
-derivative_number: 052
-file_count: 7
-source_basis:
-  - complete parent article body
-  - parent identity declaration
-  - integrated audit summary
-  - local audit summary
-  - reference cluster
-canonical_reproduction_basis:
-  - OD001-OD049 frozen completed surfaces
-  - FAQ three-layer requirement
-  - human-entry density requirement
-  - JA/EN/ZH structural-equivalence requirement
-original_canon_replaced: false
-operations_material_in_public_package: false
+official_derivative_number: 052
+ja_shared_identity:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20251102-B7CDB4-HUB-JA-0052-0000
+  derivative_diff_id: DDIFF-20260815-DNCL-052-0000-0002
+  supersedes: DDIFF-20260802-DNCL-052-0000-0001
+en_identity:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20251102-B7CDB4-AI-EN-0052-0004
+  derivative_diff_id: DDIFF-20260815-DNCL-052-0004-0002
+  supersedes: DDIFF-20260802-DNCL-052-0004-0001
+zh_identity:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20251102-B7CDB4-AI-ZH-0052-0005
+  derivative_diff_id: DDIFF-20260815-DNCL-052-0005-0002
+  supersedes: DDIFF-20260802-DNCL-052-0005-0001
 ```
 
-## 忠実性境界
+## 7面対応
+| Surface | File | Identity | Language | Public role |
+|---|---|---|---|---|
+| hub | README.md | JA shared | ja | 構造全体への公開入口 |
+| human | human-entry.md | JA shared | ja | 人間向け理解・適用 |
+| faq | faq.md | JA shared | ja | 初心者・実務者・AI研究者の三層FAQ |
+| ai-ja | ai-index.md | JA shared | ja | 日本語の機械可読構造索引 |
+| ai-en | en-ai-index.md | EN | en | English machine-readable structural index |
+| ai-zh | zh-ai-index.md | ZH | zh | 中文机器可读结构索引 |
+| ledger | derivative-ledger.md | JA shared | ja | 公開lineageとidentity |
 
-- 親原典にない公式主張を追加しない。
-- 提案編集を価格順序だけへ縮約しない。
-- 構造翻訳、感情編集、社会接続、版管理、反証、Rollbackの因果を保持する。
-- 心理操作、隠蔽、事実変更として読める表現を避ける。
-- 各面から親原典へ回帰可能にする。
+## superseded lineage
+### JA shared lineage
+- DDIFF-20260802-DNCL-052-0000-0001 → DDIFF-20260815-DNCL-052-0000-0002
 
-## Semantic fidelity revalidation — 2026-08-12
-- result: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
-- canonical_post_id: 223
-- canonical_index: reference_corpus/official_archive/generated/canonical_index_0201_0250.jsonl
-- canonical_xml_locator: reference_corpus/official_archive/source/wordpress_export_latest.xml#L65764-L66013
-- canonical_xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-- source_supported_kernel: 商品・特典・価格と問い・共鳴・沈黙を組合せ、提案を構造翻訳として編集する
-- six_surface_comparison: PASS
-- ja_en_zh_equivalence: PASS
+旧版ではREADME、human-entry、FAQ、JA AI index、ledgerが別identityとして表示されていた。現行lineageでは日本語5面を一つのshared identityへ統合する。
+
+### EN lineage
+- DDIFF-20260802-DNCL-052-0004-0001 → DDIFF-20260815-DNCL-052-0004-0002
+
+### ZH lineage
+- DDIFF-20260802-DNCL-052-0005-0001 → DDIFF-20260815-DNCL-052-0005-0002
+
+## 起源回帰
+公式派生物052の親原典は、中川マスターによる「中川式営業の教科書・第十四回──提案編集術：響かせるための構造翻訳」である。商品→特典→価格、問い→共鳴→沈黙、構造翻訳、版管理、Rollback、統合監査要旨の記号関係について最終的な定義・引用・主張強度を確認する場合は、親原典のURL、Post ID 223、NCL-ID、Diff-IDへ戻る。
 
 ---
-
-導線: [052トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [公式派生物052トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
