@@ -12,8 +12,8 @@
 ## 派生ID
 
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-20AA42-HUB-JA-0111-0000
-- derivative_diff_id: DDIFF-20260812-DNCL-111-0000-0003
-- supersedes: DDIFF-20260811-DNCL-111-0000-0002
+- derivative_diff_id: DDIFF-20260815-DNCL-111-0000-0004
+- supersedes: DDIFF-20260812-DNCL-111-0000-0003
 
 ## 15秒説明
 
