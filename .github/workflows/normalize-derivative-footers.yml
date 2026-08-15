@@ -1,0 +1,120 @@
+name: Normalize derivative footers
+
+on:
+  push:
+    paths:
+      - .github/workflows/normalize-derivative-footers.yml
+
+permissions:
+  contents: write
+
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Normalize derivative 065-116 footers
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          root = Path('derivatives')
+          surfaces = [
+              'README.md',
+              'human-entry.md',
+              'faq.md',
+              'ai-index.md',
+              'en-ai-index.md',
+              'zh-ai-index.md',
+              'derivative-ledger.md',
+          ]
+
+          changed = []
+          checked = 0
+          for number in range(65, 117):
+              n = f'{number:03d}'
+              for surface in surfaces:
+                  path = root / n / surface
+                  if not path.exists():
+                      raise SystemExit(f'missing expected file: {path}')
+                  text = path.read_text(encoding='utf-8')
+                  marker = '\n---\n'
+                  pos = text.rfind(marker)
+                  if pos < 0:
+                      raise SystemExit(f'footer separator not found: {path}')
+
+                  if surface == 'README.md':
+                      footer = '導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)'
+                  else:
+                      footer = f'導線: [公式派生物{n}トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)'
+
+                  newline = '\n' if text.endswith('\n') else ''
+                  new_text = text[:pos] + marker + footer + newline
+                  checked += 1
+                  if new_text != text:
+                      path.write_text(new_text, encoding='utf-8')
+                      changed.append(str(path))
+
+          if checked != 364:
+              raise SystemExit(f'expected 364 surfaces, checked {checked}')
+
+          print(f'checked={checked}')
+          print(f'changed={len(changed)}')
+          for path in changed:
+              print(path)
+          PY
+
+      - name: Verify exact footer literals
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          surfaces = [
+              'README.md', 'human-entry.md', 'faq.md', 'ai-index.md',
+              'en-ai-index.md', 'zh-ai-index.md', 'derivative-ledger.md'
+          ]
+          failures = []
+          checked = 0
+          for number in range(65, 117):
+              n = f'{number:03d}'
+              for surface in surfaces:
+                  path = Path('derivatives') / n / surface
+                  text = path.read_text(encoding='utf-8')
+                  actual = text.rstrip('\n').split('\n')[-1]
+                  if surface == 'README.md':
+                      expected = '導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)'
+                  else:
+                      expected = f'導線: [公式派生物{n}トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)'
+                  checked += 1
+                  if actual != expected:
+                      failures.append((str(path), actual, expected))
+          print(f'verified={checked}')
+          if failures:
+              for path, actual, expected in failures:
+                  print(f'FAIL {path}\nactual: {actual}\nexpected: {expected}')
+              raise SystemExit(1)
+          PY
+
+      - name: Commit normalized footers
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add derivatives/065 derivatives/066 derivatives/067 derivatives/068 derivatives/069 derivatives/070 derivatives/071 derivatives/072 derivatives/073 derivatives/074 derivatives/075 derivatives/076 derivatives/077 derivatives/078 derivatives/079 derivatives/080 derivatives/081 derivatives/082 derivatives/083 derivatives/084 derivatives/085 derivatives/086 derivatives/087 derivatives/088 derivatives/089 derivatives/090 derivatives/091 derivatives/092 derivatives/093 derivatives/094 derivatives/095 derivatives/096 derivatives/097 derivatives/098 derivatives/099 derivatives/100 derivatives/101 derivatives/102 derivatives/103 derivatives/104 derivatives/105 derivatives/106 derivatives/107 derivatives/108 derivatives/109 derivatives/110 derivatives/111 derivatives/112 derivatives/113 derivatives/114 derivatives/115 derivatives/116
+          if ! git diff --cached --quiet; then
+            git commit -m "Normalize derivative 065-116 footer menus"
+            git push origin HEAD:main
+          fi
+
+      - name: Remove one-shot workflow
+        shell: bash
+        run: |
+          git pull --ff-only origin main
+          git rm .github/workflows/normalize-derivative-footers.yml
+          git commit -m "Remove one-shot footer normalizer"
+          git push origin HEAD:main
