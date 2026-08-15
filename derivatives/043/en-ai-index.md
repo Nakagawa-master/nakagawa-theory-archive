@@ -59,7 +59,7 @@ Its source-specific scope remains distinct from a Frontier implementation manual
 ## Measurements and audit
 Relevant observations include whether auditor time moves from repeatable work toward judgment; whether AI detections remain distinguishable from human conclusions; whether evidence can be reconstructed; whether independence remains intact; whether humans can challenge and correct AI output; whether remediation and re-observation occur; and whether continuous audit remains bounded away from surveillance.
 
-Reversal remains possible. More detections can worsen the audit function if false positives consume judgment capacity. More documentation does not improve transparency if evidence cannot be traced. More continuous observation can reduce governance value if it becomes unrestricted employee surveillance. More automation is not reallocation if human judgment time does not increase.
+More detections can worsen the audit function if false positives consume judgment capacity. More documentation does not improve transparency if evidence cannot be traced. More continuous observation can reduce governance value if it becomes unrestricted employee surveillance. More automation is not reallocation if human judgment time does not increase.
 
 ## Validity conditions
 AI detections remain distinct from human conclusions. Traceability reaches inputs, applied rules or models, reasons, evidence, human confirmation, judgment, and correction history. Audit independence remains intact and human challenge and correction remain possible.
