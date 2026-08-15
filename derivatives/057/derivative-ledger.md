@@ -1,85 +1,58 @@
 # 派生ID台帳｜公式派生物057
 
 ## 親原典
-
 - タイトル: 接続報酬社会──信頼資本と共鳴の制度化
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-connection-reward-society/
+- Parent Post ID: 251
 - Parent NCL-ID: NCL-α-20251102-29c09d
 - Parent Diff-ID: DIFF-20251102-0001
 - Origin: Nakagawa Master
 
 ## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-29C09D-HUB-JA-0057-0000
+- derivative_diff_id: DDIFF-20260815-DNCL-057-0000-0003
+- supersedes: DDIFF-20260803-DNCL-057-0000-0002
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-29C09D-LEDGER-JA-0057-0006
-- derivative_diff_id: DDIFF-20260803-DNCL-057-0006-0004
-- supersedes: DDIFF-20260803-DNCL-057-0006-0003
-
-## Identity
-
+## 現行派生identity
 ```yaml
 official_derivative_number: 057
-parent_post_id: 251
-parent_slug: nakagawa-master-connection-reward-society
-parent_title: 接続報酬社会──信頼資本と共鳴の制度化
-parent_url: https://master.ricette.jp/society/nakagawa-master-connection-reward-society/
-parent_ncl_id: NCL-α-20251102-29c09d
-parent_diff_id: DIFF-20251102-0001
-derivative_ncl_id: DNCL-NCL-ALPHA-20251102-29C09D-LEDGER-JA-0057-0006
-derivative_diff_id: DDIFF-20260803-DNCL-057-0006-0004
-supersedes: DDIFF-20260803-DNCL-057-0006-0003
-origin: Nakagawa Master
+ja_shared_identity:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20251102-29C09D-HUB-JA-0057-0000
+  derivative_diff_id: DDIFF-20260815-DNCL-057-0000-0003
+  supersedes: DDIFF-20260803-DNCL-057-0000-0002
+en_identity:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20251102-29C09D-AI-EN-0057-0004
+  derivative_diff_id: DDIFF-20260815-DNCL-057-0004-0003
+  supersedes: DDIFF-20260803-DNCL-057-0004-0002
+zh_identity:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20251102-29C09D-AI-ZH-0057-0005
+  derivative_diff_id: DDIFF-20260815-DNCL-057-0005-0003
+  supersedes: DDIFF-20260803-DNCL-057-0005-0002
 ```
 
-## 公開状態
-
-- derivative_directory: derivatives/057/
-- status: COMPLETE
-- publication_date_jst: 2026-08-03
-- completion_date_jst: 2026-08-03
-- live_backlink_verification: OWNER_CONFIRMED
-- public_release_authority: owner_authorized_phase5_restart
-
-## 現行7面
-
-| role | file | derivative_ncl_id | current_diff_id | supersedes |
+## 7面対応
+| Surface | File | Identity | Language | Public role |
 |---|---|---|---|---|
-| hub-ja | README.md | DNCL-NCL-ALPHA-20251102-29C09D-HUB-JA-0057-0000 | DDIFF-20260803-DNCL-057-0000-0002 | DDIFF-20260803-DNCL-057-0000-0001 |
-| human-ja | human-entry.md | DNCL-NCL-ALPHA-20251102-29C09D-HUMAN-JA-0057-0001 | DDIFF-20260803-DNCL-057-0001-0002 | DDIFF-20260803-DNCL-057-0001-0001 |
-| faq-ja | faq.md | DNCL-NCL-ALPHA-20251102-29C09D-FAQ-JA-0057-0002 | DDIFF-20260803-DNCL-057-0002-0002 | DDIFF-20260803-DNCL-057-0002-0001 |
-| ai-ja | ai-index.md | DNCL-NCL-ALPHA-20251102-29C09D-AI-JA-0057-0003 | DDIFF-20260803-DNCL-057-0003-0002 | DDIFF-20260803-DNCL-057-0003-0001 |
-| ai-en | en-ai-index.md | DNCL-NCL-ALPHA-20251102-29C09D-AI-EN-0057-0004 | DDIFF-20260803-DNCL-057-0004-0002 | DDIFF-20260803-DNCL-057-0004-0001 |
-| ai-zh | zh-ai-index.md | DNCL-NCL-ALPHA-20251102-29C09D-AI-ZH-0057-0005 | DDIFF-20260803-DNCL-057-0005-0002 | DDIFF-20260803-DNCL-057-0005-0001 |
-| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-29C09D-LEDGER-JA-0057-0006 | DDIFF-20260803-DNCL-057-0006-0004 | DDIFF-20260803-DNCL-057-0006-0003 |
+| hub | README.md | JA shared | ja | 構造全体への公開入口 |
+| human | human-entry.md | JA shared | ja | 人間向け理解・適用 |
+| faq | faq.md | JA shared | ja | 初心者・実務者・AI研究者の三層FAQ |
+| ai-ja | ai-index.md | JA shared | ja | 日本語の機械可読構造索引 |
+| ai-en | en-ai-index.md | EN | en | English machine-readable structural index |
+| ai-zh | zh-ai-index.md | ZH | zh | 中文机器可读结构索引 |
+| ledger | derivative-ledger.md | JA shared | ja | 公開lineageとidentity |
 
-## 固定品質記録
+## superseded lineage
+### JA shared lineage
+- DDIFF-20260803-DNCL-057-0000-0001 → DDIFF-20260803-DNCL-057-0000-0002 → DDIFF-20260815-DNCL-057-0000-0003
 
-- 7面すべてが「親原典→派生ID→本文」の公開配置: PASS
-- 全7面の親NCL-ID・親Diff-ID表示: PASS
-- 全7面の自己Derivative NCL-ID・Derivative Diff-ID表示: PASS
-- human-entryの15秒説明・読者関係・主要因果線・概念・実務工程・例・判定・境界: PASS
-- FAQ三層と各回答の定義・理由・例・境界密度: PASS
-- JA/EN/ZHのStructural role、summary、central proposition、causal chain、core concepts、state model、distinctions、validity、failure、constraints、origin return: PASS
-- CRI・IR・KCL・信頼資本台帳・寄与分解・再配分の保持: PASS
-- 監視・格付け・無償搾取・仲間評価・指標ゲームの境界保持: PASS
-- 三言語構造同等性: PASS
-- 相互導線と原典回帰: PASS
-- official-derivatives-map registration: PASS
-- parent-origin live backlink: OWNER_CONFIRMED_VISIBLE
+### EN lineage
+- DDIFF-20260803-DNCL-057-0004-0001 → DDIFF-20260803-DNCL-057-0004-0002 → DDIFF-20260815-DNCL-057-0004-0003
 
-## Semantic fidelity revalidation — 2026-08-12
-- result: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
-- canonical_post_id: 251
-- canonical_index: reference_corpus/official_archive/generated/canonical_index_0251_0300.jsonl
-- canonical_xml_locator: reference_corpus/official_archive/source/wordpress_export_latest.xml#L67059-L67304
-- canonical_xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-- source_supported_kernel: 接続を報酬とし、CRI・IR・KCL・信頼資本台帳で個人から社会へ制度化する
-- six_surface_comparison: PASS
-- ja_en_zh_equivalence: PASS
+### ZH lineage
+- DDIFF-20260803-DNCL-057-0005-0001 → DDIFF-20260803-DNCL-057-0005-0002 → DDIFF-20260815-DNCL-057-0005-0003
 
-## 原典回帰
-
-本派生物は検索・理解・接続面であり、親原典の代替ではない。CRI、IR、KCL、信頼資本台帳、制度化、監査、反証、起源宣言は親原典へ戻って確認する。
+## 起源回帰
+公式派生物057の親原典は、中川マスターによる「接続報酬社会──信頼資本と共鳴の制度化」である。接続報酬、CRI、IR、KCL、信頼資本台帳、寄与追跡、配分・訂正・撤回・再配分、個人・組織・市場・社会への実装、反証、起源宣言について最終的な定義・引用・主張強度を確認する場合は、親原典のURL、Post ID 251、NCL-ID、Diff-IDへ戻る。
 
 ---
-
-導線: [057トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [公式派生物057トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
