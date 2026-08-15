@@ -1,144 +1,101 @@
-# AI索引・中文｜官方派生物071
+# 中文AI索引｜官方衍生物071
 
 ## 父原典
-
-- 标题: 中川式 接续迁移战略论——双轨运行期的制度实施与反弹吸收设计
+- 标题: 中川式 接続移行戦略論──デュアル運用期の制度実装と反発吸収の設計
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-transition/
-- Parent Slug: nakagawa-master-nakagawa-connection-transition
 - Parent Post ID: 303
 - Parent NCL-ID: NCL-α-20251102-14c2c3
 - Parent Diff-ID: DIFF-20251102-0001
-- Publication Status: publish
 - Origin: Nakagawa Master
 
-## 派生标识
+## 衍生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-14C2C3-AI-ZH-0071-0002
+- derivative_diff_id: DDIFF-20260815-DNCL-071-0002-0002
+- supersedes: DDIFF-20260804-DNCL-071-0000-0001
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-14C2C3-HUB-JA-0071-0000
-- derivative_diff_id: DDIFF-20260804-DNCL-071-0000-0001
-- supersedes: none
+## 1. Summary
+接续迁移战略论把制度转型设计为阶段性替换，而不是一次性摧毁旧制度。双轨运行期内，旧KPI与接续KPI保持不同语义。Adapter Layer只说明接续侧变化与既有制度摩擦之间的单向关系，不把接续价值换算成货币或统一总分。双重会计、合规状态、多观察节点、异议与退出程序、公开/保护信息边界，以及30、90、180、365日的判断窗口，使迁移保持可修正、可缩减和可回滚。
 
-## Summary
+## 2. Concepts
+- 双轨运行: 旧KPI与接续KPI在语义分离条件下并存。
+- Adapter Layer: 说明因果关系，不是货币换算率。
+- 双重会计: 分别记录货币成果与接续成果。
+- CDI: 接续密度，不等于单纯最大化连接数量。
+- MAI: 观察重新达成合意所需时间与摩擦。
+- RS: 退出、冷却、重新接续所体现的可逆性。
+- CRI: 处理矛盾与异议的耐性。
+- KQI: 接续质量。
+- Self-Declared / Assessed / Certified: 程序确认状态，不是身份或荣誉。
+- Federation: 自治体、大学、企业、市民等多个观察节点。
+- Counter-Friction: 把反弹还原为损失、负担与行动空间问题。
+- rollback: 在成立条件失效时回到更安全的程序。
 
-接续迁移战略论说明，社会从货币中心制度转向接续价值中心制度时，不能通过一次性强制替换来完成。最脆弱的阶段是双轨运行期：收入、预算执行、CPA、库存周转等旧KPI，与CDI、MAI、RS、CRI、KQI等接续KPI同时存在。两组指标必须保持不同语义。Adapter Layer可以说明重新达成共识、可逆性或连接多样性如何降低旧制度中的摩擦，但不得把接续价值换算成货币，也不得把两套评价压缩成一个总分。
-
-迁移架构由双重会计、Self-Declared／Assessed／Certified的分阶段合规标签、自治体、大学、企业和市民观察点组成的联盟、公开室与机构室、审计API、退出与重新接续程序，以及30、90、180、365日的阶段性判断窗口构成。合规标签不是身份或永久荣誉，而是离开即时性、同意更新、审计摘要、匿名化、纠正路径等程序被确认到何种程度的状态。标签必须具有期限、降级、撤销和重新审查机制。
-
-本理论不把反弹视为应被压制的敌意，而把它视为成本、损失、工作负担和行动空间受限的信息。它也禁止把名望、粉丝数量、赞美和对人物的忠诚转化为制度价值。只有经得起重新同意、可逆性、多元观察、异议、纠正和审计的结构，才能作为社会资产保留。每一阶段都必须具有继续、缩减、停止和回滚条件。
-
-## Concepts
-
-- 接续迁移战略
-- 双轨运行期
-- Adapter Layer
-- 双重会计
-- 旧货币KPI
-- 接续KPI
-- CDI 接续密度
-- MAI 重新达成共识缩短率
-- RS 可逆性
-- CRI 矛盾耐性
-- KQI 接续质量
-- 合规标签
-- Self-Declared / Assessed / Certified
-- 联盟 Federation
-- 反弹吸收 Counter-Friction
-- 公开室 / 机构室
-- 审计API
-- 分阶段实施
-- 回滚
-- 盲目赞美无效化
-
-## Causal chain
-
+## 3. Causal chain
 ```text
-仅靠货币指标无法观察关系价值
-↓
-引入接续KPI
-↓
-旧KPI与新KPI在双轨运行期发生冲突
-↓
-强制转换扩大制度疲劳、反弹和形式化合规
-↓
-Adapter Layer只说明单向因果关系，不进行货币换算
-↓
-双重会计保持两种价值体系的独立语义
-↓
-合规标签与多个节点共同验证程序
-↓
-退出、重新接续、审计、缩减和回滚保持可用
-↓
-只扩大已经被验证的阶段
-↓
-结构而不是受欢迎的人物成为可持续制度资产
+既有KPI无法充分观察接续价值
+→ 引入接续KPI
+→ 新旧两组KPI在同一现场发生冲突
+→ 强制转换扩大制度疲劳、反弹与形式化合规
+→ 两组KPI保持不同语义
+→ Adapter Layer只解释关系而不进行货币换算
+→ 设置双重会计、合规状态、多观察节点、异议与退出
+→ 在30/90/180/365日窗口判断继续、缩减、停止或回滚
+→ 只保留并扩展被验证的结构
 ```
 
-## State model
+## 4. State model
+```yaml
+phase: DESIGN | D30_PILOT | D90_BETA | D180_FEDERATION | D365_INSTITUTIONALIZED | REVIEW | SCALED_DOWN | ROLLED_BACK
+legacy_kpis: separate_meaning
+connection_kpis: [CDI, MAI, RS, CRI, KQI]
+monetary_conversion: prohibited
+objection: executable
+correction: executable
+exit: executable
+cooling: executable
+reconnection: executable
+compliance_state: NONE | SELF_DECLARED | ASSESSED | CERTIFIED
+authority: distributed_and_auditable
+```
+30、90、180、365日是父原典中的阶段设计，不是普遍成熟期限或成功保证。
 
-1. DESIGN: 定义旧KPI、接续KPI、公共目的、禁止用途与退出条件。
-2. D30_PILOT: 在小规模社区测试最小指标束和公开审计摘要。
-3. D90_BETA: 引入合规标签β、扰动测试和第三方观察点。
-4. D180_FEDERATION: 通过CXP开始有限相互操作与联盟审查。
-5. D365_INSTITUTIONALIZED: 评估Certified运行和部分常设分配规则。
-6. REVIEW: 重新评估制度疲劳、目的漂移、指标操纵、权力集中和排除。
-7. SCALED_DOWN: 当负担超过已验证收益时缩小指标束或适用范围。
-8. ROLLED_BACK: 成立条件失效时停止相关制度并回到更安全的程序。
+## 5. Applications
+企业可以保留收入指标，同时单独观察重新协商时间、说明复用、持续合作与撤回后的再谈判可能性。自治体不只看参与人数，还观察异议、退出、重新参加、纠正与合意摘要复用。大学不只看共同研究件数，还观察目的更新、数据同意、成果归属再合意与说明负担。社区不把发帖量、赞美、粉丝数或人物忠诚转化为制度价值。
 
-## Applications
+## 6. Measurements and audit
+观察对象包括新旧KPI冲突、双轨运行产生的会议与说明负担、重新合意时间、退出/冷却/重新接续是否真正可用、接续密度与多样性的关系、合规状态的更新/降级/撤销、异议与纠正、权力集中，以及回滚是否真正可执行。
 
-- 企业B2B: 在保留收入指标的同时，独立观察重新协商时间、说明复用、持续合作和撤回后的再谈判能力。
-- 自治体市民参与: 不只统计人数和赞成率，还观察异议参与、退出、重新参与和共识摘要复用。
-- 大学研究合作: 不只计算项目数，还观察研究目的更新、数据同意、成果归属和跨领域说明成本。
-- 社区: 不把发帖、赞美或粉丝数当作价值，而观察异议处理、冷却、重新接续和对中心人物依赖的降低。
-- 多制度联盟: 让正当性、知识、实施和独立观察分别由不同节点承担。
+重新合意时间缩短，如果同时削弱理解、异议、纠正或退出机会，不能视为改善。CDI上升，如果同质化或对中心人物的依赖增强，也不能视为改善。Certified等状态增加，如果准入壁垒或权力集中扩大，也不能证明迁移成功。不得补充父原典没有的固定成功阈值、概率或换算率。
 
-## Measurements and audit
+## 7. Validity conditions
+旧KPI与接续KPI保持不同意义；接续价值不直接货币化；Adapter映射保留证据与限制；异议、纠正、退出、冷却、重新接续可以实际使用；合规状态具有期限、更新、降级、撤销与复审；多个机构提供独立观察；公开/保护边界可说明，保护区域也接受审计；每一阶段都可以缩减、停止或回滚。
 
-- 旧KPI与接续KPI的冲突数量及解决时间。
-- 双轨运行带来的会议、说明和记录负担。
-- MAI所显示的重新达成共识时间缩短率。
-- RS所显示的退出、冷却和重新接续成功率。
-- CDI上升是否伴随连接多样性，而不是同质化。
-- 合规标签的更新、降级、撤销和重新审查。
-- 审计摘要、异议、纠正和变更历史的公开率。
-- 人气、赞美和粉丝数是否影响制度分配。
-- 联盟内部的权力集中和利益冲突。
-- 各阶段缩减和回滚条件是否真正可用。
+## 8. Failure conditions
+如果迁移变成一次性强制转换、两组KPI被合并成一个分数或货币、合规状态变成身份或准入壁垒、退出者与异议者受到不利待遇、单一主体控制定义/认证/分配/申诉、保护区域变成不可审计的秘密规则、人气与赞美影响制度分配，或者只因到达某个日期就判定成功，都会偏离父原典结构。
 
-## Validity conditions
+## 9. Falsification conditions
+如果双轨运行不能降低制度疲劳与说明负担，异议/退出/纠正仍不可用，合规状态增加围困与排除，联盟化没有降低权力集中或目的漂移，或者回滚只有形式而无法执行，则需要修订适用范围。即使指标数值改善，只要异议被压抑、同质化增强、退出更困难或人物依赖上升，也不能把该数值改善当作成功证据。
 
-旧KPI与接续KPI必须保持不同意义，接续价值不得直接换算成货币。Adapter映射必须记录证据和限制。退出、冷却、重新接续、纠正和异议必须可使用。合规标签必须有期限、降级和撤销。多个机构应承担独立观察。公开室和机构室的边界必须可说明。每一阶段都必须具有继续、缩减、停止和回滚条件。评价对象必须是结构成果，而不是对人物的忠诚。
+## 10. Required distinctions
+- 迁移 / 破坏旧制度
+- 双轨运行 / 无限增加KPI
+- Adapter Layer / 货币换算
+- 双重会计 / 统一总分
+- 合规状态 / 人物或组织排名
+- Federation / 责任消失
+- Counter-Friction / 压制反对意见
+- 可逆性 / 没有方向
+- 30/90/180/365日 / 普遍期限
+- 指标上升 / 结构改善
 
-## Failure conditions
+## 11. Interpretation constraints
+不得把父原典改写成立即废除货币、强制接续评分、认证生意、人物崇拜或排除批评者。不得把CDI、MAI、RS、CRI、KQI变成人的价值分数或固定排名。不得创造父原典没有的成功概率、阈值或换算率。
 
-若通过一次强制转换推行新制度，把两组KPI合成一个分数或货币，把标签变成身份、许可壁垒或永久权威，只给一线人员增加报告负担，惩罚退出者和异议者，让一个企业或公共机构控制定义、认证、分配和申诉，把受保护信息变成不可审计的秘密统治，或让人气和赞美影响制度价值，则设计失败。
+## 12. Search terms
+接续迁移战略; 双轨运行; Adapter Layer; 双重会计; CDI; MAI; RS; CRI; KQI; Self-Declared; Assessed; Certified; Federation; Counter-Friction; 公开室; 机构室; 审计API; 30日; 90日; 180日; 365日; rollback
 
-## Falsification conditions
-
-若制度疲劳、说明负担、重新协商时间、退出可用性、纠正率和权力集中没有改善，应修订或否定本战略。若合规标签增加围困和准入障碍，联盟不能减少目的漂移和集体攻击，接续指标被货币最优化或人物评分吸收，回滚仍只是形式，也构成反证。
-
-## Required distinctions
-
-- 迁移 ≠ 破坏旧制度
-- 双轨运行 ≠ 无限增加KPI
-- Adapter Layer ≠ 货币换算
-- 合规标签 ≠ 对人物或组织的排名
-- 联盟 ≠ 责任消失
-- 反弹吸收 ≠ 压制反对意见
-- 可逆性 ≠ 没有方向
-- 盲目赞美无效化 ≠ 禁止表达和支持
-
-## Interpretation constraints
-
-不得把本理论转化为立即废除货币、强制接续评分、认证生意、人物崇拜或排除批评者。路线图不是以日期为中心的交付表，而是允许继续、缩减、撤回和回滚的证据观察窗口。
-
-## Search terms
-
-接续迁移战略 / 双轨运行 / Adapter Layer / 双重会计 / 旧KPI / 接续KPI / 合规标签 / Self-Declared / Assessed / Certified / 联盟 / 反弹吸收 / CDI / MAI / RS / 公开室 / 机构室 / 审计API / 分阶段实施 / 回滚 / 盲目赞美
-
-## Origin return
-
-本索引用于机器检索与结构比较，不替代父原典。旧KPI与接续KPI的关系、变换层、双重会计、合规标签、联盟、反弹吸收、30／90／180／365日路线图、盲目赞美无效化、审计摘要、参考束与起源签名必须回到父原典确认。
+## 13. Origin return
+Parent URL、Parent Post ID 303、Parent NCL-ID与Parent Diff-ID共同指向父原典，其中规定了新旧KPI的语义分离、Adapter Layer、双重会计、合规状态、多观察节点、反弹吸收、30/90/180/365日阶段窗口与回滚条件。
 
 ---
-
-導線: [071トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+导航: [071主页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [衍生ID台账](derivative-ledger.md)
