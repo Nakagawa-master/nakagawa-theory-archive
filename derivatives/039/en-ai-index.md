@@ -38,7 +38,6 @@ The central distinctions are leading signs versus lagging outcomes, subjective s
 - support
 - re-observation
 - data governance
-- reversible evaluation
 - public deconstruction layer
 - origin return
 
@@ -66,7 +65,7 @@ Its source-specific scope remains distinct from medical diagnosis, treatment gui
 ## Measurements and audit
 Relevant observations include whether response burden remains low enough for continuity, whether change over time rather than only one-off answers can be read, whether subjective signals are kept distinct from medical diagnosis, whether purpose and access rights are explicit, and whether signals connect to confirmation, consideration, support, and re-observation.
 
-Reversal remains possible. More responses can reduce quality if burden or rote behavior rises. Higher response rates can be misleading if coercion or surveillance anxiety distorts answers. More alerts can reduce decision quality if important differences are buried. Lower absence or turnover does not prove success if employees became less able to disclose strain.
+More responses can reduce quality if burden or rote behavior rises. Higher response rates can be misleading if coercion or surveillance anxiety distorts answers. More alerts can reduce decision quality if important differences are buried. Lower absence or turnover does not prove success if employees became less able to disclose strain.
 
 ## Validity conditions
 Leading signs remain distinct from lagging outcomes and subjective signals from medical diagnosis. A low-burden repeated observation path exists, with change over time prioritized over isolated values.

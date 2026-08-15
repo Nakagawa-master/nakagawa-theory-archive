@@ -63,7 +63,7 @@ Its source-specific scope remains distinct from medical diagnosis, treatment, de
 ## Measurements and audit
 Relevant observations include whether social translation makes everyday understanding and dialogue easier, whether measurements are being short-circuited into diagnosis or personnel selection, whether context and dignity are being compressed into a single number, and whether the indicator opens dialogue or support rather than closing judgment.
 
-Reversal remains possible. More measurement can worsen social implementation if anxiety or labeling rises. More detailed indicators can undermine the foundation if repurposed for selection or surveillance. More high scores do not prove success when everyday dialogue and support connection remain weak.
+More measurement can worsen social implementation if anxiety or labeling rises. More detailed indicators can undermine the foundation if repurposed for selection or surveillance. More high scores do not prove success when everyday dialogue and support connection remain weak.
 
 ## Validity conditions
 Cognitive function and the social term “brain fitness” are connected while remaining distinguishable. “Brain fitness” remains distinct from a medical diagnosis. The topic can enter everyday understanding and dialogue rather than appearing only after illness or failure.

@@ -37,7 +37,6 @@ The central distinctions are institutional existence versus practical reachabili
 - accompanying support
 - statement, confirmation, and revision
 - forward possibility
-- reversible evaluation
 - public deconstruction layer
 - origin return
 
@@ -65,7 +64,7 @@ Its source-specific scope remains distinct from generic consensus theory, judici
 ## Measurements and audit
 Relevant observations include whether parties can actually reach the discussion entry point, whether direct contact enables or blocks progress, whether procedure reduces or raises entry burden, whether neutrality is preserved, whether proposals/confirmations/revisions are traceable, and whether the re-entry path actually reconnects to discussion.
 
-Reversal remains possible. More contact can worsen the structure if it reignites conflict. More procedure can worsen it if it raises entry burden. More documentation can reduce forward movement if essential confirmation points become buried. More completed cases or faster processing do not automatically prove structural health if party understanding and revision capacity weaken.
+More contact can worsen the structure if it reignites conflict. More procedure can worsen it if it raises entry burden. More documentation can reduce forward movement if essential confirmation points become buried. More completed cases or faster processing do not automatically prove structural health if party understanding and revision capacity weaken.
 
 ## Validity conditions
 Consensus stoppage is identified. Institutional existence is distinguishable from actual reachability. Direct contact is evaluated as either a progress condition or a stoppage condition. Non-face-to-face interaction functions as a conditional distance adjustment rather than universal convenience.

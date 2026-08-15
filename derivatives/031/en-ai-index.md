@@ -95,7 +95,7 @@ Observable relations include which missing direction, environmental, or decision
 
 The parent original does not define walking-success rates, accident-reduction rates, arrival-time improvement rates, cognitive-load scores, safety scores, fixed adoption rates, probabilities, or thresholds. Numbers from other materials remain external facts rather than quantitative claims of this parent original.
 
-Reversal evaluability remains part of the structure. More information can be structurally worse if processing burden rises and attention to surroundings falls. More accurate guidance can still fail if it is not usable through the relevant sensory channel. Stronger assistance is not automatically better if it narrows room for personal judgment.
+More information can be structurally worse if processing burden rises and attention to surroundings falls. More accurate guidance can still fail if it is not usable through the relevant sensory channel. Stronger assistance is not automatically better if it narrows room for personal judgment.
 
 ## Validity conditions
 - Walking is not reduced to bodily ability alone.
