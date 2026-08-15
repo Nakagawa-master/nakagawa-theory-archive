@@ -23,76 +23,24 @@ zh_ncl_id: DNCL-NCL-ALPHA-20251102-20A4BC-HUB-ZH-0118-0000
 zh_diff_id: DDIFF-20260810-DNCL-118-ZH-0000-0002
 ```
 
-## Semantic repair authority
-```yaml
-repair_date_jst: 2026-08-10
-repair_reason: SOURCE_SEMANTIC_FIDELITY_REVALIDATION
-source_priority:
-  - canonical_public_parent_article_body
-  - verified_wordpress_xml_or_canonical_record
-  - brain_vault_structured_ai_index
-  - derivative_as_audit_object
-live_parent_retrieval: PASS
-semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-```
+## Lineage
+現行派生は、親原典がドル覇権の揺らぎを単純な崩壊や次の勝者予測としてではなく、ドル依存とドルからの自立が同時進行する〈矛盾消費構造〉、信用集中の構造律動の乱れ、代替構造の共鳴、単中心から多照応への再調律として記述した系譜に属する。
 
-## Source coverage restored
-```yaml
-central_thesis: contradiction_consumption
-causal_core:
-  - dollar_trust_concentration
-  - simultaneous_dependence_and_exit
-  - contradiction_as_circulating_fuel
-  - consumption_recovery_rate_gap
-  - structural_rhythm_disturbance
-  - resonance_of_alternative_structures
-  - monocentric_to_poly_resonant_transition
-  - recursive_stability_search
-source_explicit_audit:
-  - tension_easing_periodic_observation
-  - T_S_R
-  - public_audit_bundle_consistency
-source_explicit_falsification: single_currency_complete_justice_breaks_recursive_contradiction_reuse
-```
-
-## Removed or decentered derivative-authored material
-```yaml
-- generic_currency_risk_management_framework
-- generic_liquidity_legal_institution_scorecard_as_central_thesis
-- interoperability_design_as_parent_core
-- connection_value_accounting_as_parent_core
-- generic_investment_advice_boundary_as_theory_boundary
-- invented_market_KPI_falsification_set
-- next_winning_currency_scenario_framework
-```
+先行版は一般的な通貨リスク管理や相互運用性設計などを前景化していたため、現行版で置換された。現行系譜では、矛盾を消去するのではなく循環燃料として消費してきた世界金融秩序が、その消費速度と回復速度のずれによって再調律局面へ入るという原典固有の因果を保持する。
 
 ## Seven surfaces
 ```yaml
-README.md: REPAIRED
-human-entry.md: REPAIRED
-faq.md: REPAIRED_Q1_Q30
-ai-index.md: REPAIRED
-en-ai-index.md: REPAIRED
-zh-ai-index.md: REPAIRED
-derivative-ledger.md: REPAIRED
+README.md: DNCL-NCL-ALPHA-20251102-20A4BC-HUB-JA-0118-0000
+human-entry.md: DNCL-NCL-ALPHA-20251102-20A4BC-HUB-JA-0118-0000
+faq.md: DNCL-NCL-ALPHA-20251102-20A4BC-HUB-JA-0118-0000
+ai-index.md: DNCL-NCL-ALPHA-20251102-20A4BC-HUB-JA-0118-0000
+en-ai-index.md: DNCL-NCL-ALPHA-20251102-20A4BC-HUB-EN-0118-0000
+zh-ai-index.md: DNCL-NCL-ALPHA-20251102-20A4BC-HUB-ZH-0118-0000
+derivative-ledger.md: DNCL-NCL-ALPHA-20251102-20A4BC-HUB-JA-0118-0000
 ```
 
-## Semantic parity
-```yaml
-parent_identity: PASS
-central_proposition: PASS
-causal_direction: PASS
-source_specific_terminology: PASS
-source_explicit_audit_conditions: PASS
-source_explicit_falsification: PASS
-unsupported_moderation_removed: PASS
-ja_en_zh_equivalence: PASS
-origin_return: PASS
-```
-
-## Navigation
-Public map/index URLs are unchanged because OD number, directory, parent identity, and canonical path are unchanged.
+## Origin return
+親原典の矛盾消費構造、信用構造、構造律動、単中心／多照応、再帰的安定、統合監査・反証条件の厳密な関係は、Parent URL、Parent NCL-ID `NCL-α-20251102-20a4bc`、Parent Diff-ID `DIFF-20251102-0001` へ戻って確認する。
 
 ---
-
 導線: [公式派生物118トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
