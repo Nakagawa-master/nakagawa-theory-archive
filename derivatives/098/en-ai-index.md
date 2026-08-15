@@ -10,81 +10,74 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-0ED513-HUB-EN-0098-0001
-- derivative_diff_id: DDIFF-20260810-DNCL-098-0001-0002
-- supersedes: DDIFF-20260808-DNCL-098-0001-0001
+- derivative_diff_id: DDIFF-20260815-DNCL-098-0001-0003
+- supersedes: DDIFF-20260810-DNCL-098-0001-0002
 
 ## Summary
-
-The parent theorizes causal self-oscillation: when principle, action and record repeat in phase, remain observable, and survive counterexamples through a stable repair rhythm, causality becomes increasingly self-driven by internal coherence rather than external fluctuation. Social memory, future debt and temporal ethics then overlap, shifting the future from probability toward structural inevitability. The parent explicitly says this “inevitability” is not determinism.
+The parent treats the future not primarily as an object to be predicted from external data, but as a causal phase that can become increasingly self-sustaining when principle, action, and record repeat in phase, remain publicly observable, and survive counterexamples through a stable repair rhythm. Provisional completion / silent consensus then accumulates into social memory, future debt, and temporal ethics, allowing causality to move toward self-oscillation. “Structural inevitability” here is not determinism, perfect foresight, or concrete event prophecy.
 
 ## Concepts
-
-causal self-oscillation; structural rhythm; observability; counterexample resilience; provisional completion; silent consensus; social memory; future debt; temporal ethics; structural inevitability; origin design; baseline rhythm; temperature range; structured margin; repair rhythm; phase stability S; RC; LPI.
+causal self-oscillation; structural rhythm; observability; counterexample resilience; provisional completion; silent consensus; social memory; future debt; temporal ethics; structural inevitability; origin design; origin purity; baseline rhythm; temperature range; structured margin; durable traces; repair rhythm; open observation; phase stability S; RC; agreement-arrival time; LPI; Rollback Cost; threshold theta; observation window delta
 
 ## Causal chain
-
 ```text
-principle/action/record repeat in phase
-→ public traces make the rhythm observable
-→ failure is absorbed through repair without rhythm collapse
+scattered origins / inconsistent rhythm / dependence on external prediction
+→ baseline rhythm, temperature, margin, and traces are stabilized
+→ principle, action, and record become observable as structural rhythm
+→ failures and contradictions are handled through repeatable repair
 → provisional completion / silent consensus forms
-→ social memory, future debt and temporal ethics overlap
+→ social memory, future debt, and temporal ethics overlap
 → causality becomes self-oscillating
-→ probability shifts toward structural inevitability
+→ the treatment of the future shifts from probabilistic prediction toward structural design
 ```
 
 ## State model
-
 ```yaml
-- EXOGENOUS_PREDICTION
 - ORIGIN_SCATTER
-- STRUCTURAL_RHYTHM
-- OBSERVABILITY
-- COUNTEREXAMPLE_RESILIENCE
+- RHYTHM_INCONSISTENCY
+- EXOGENOUS_PREDICTION_DEPENDENCE
+- BASELINE_RHYTHM_DECLARED
+- TEMPERATURE_RANGE_STABILIZED
+- MARGIN_STRUCTURED
+- DURABLE_TRACES_OPENED
+- COUNTEREXAMPLE_REPAIR_OBSERVED
 - PROVISIONAL_COMPLETION
+- SILENT_CONSENSUS
+- SOCIAL_MEMORY_ACCUMULATES
+- FUTURE_DEBT_RECOGNIZED
+- TEMPORAL_ETHICS_STABILIZED
 - CAUSAL_SELF_OSCILLATION
-- SOCIAL_MEMORY
-- FUTURE_DEBT
-- TEMPORAL_ETHICS
-- STRUCTURAL_INEVITABILITY
+- STRUCTURAL_INEVITABILITY_PHASE
 ```
 
 ## Applications
-
-Fix a minimal baseline rhythm; define an acceptable temperature range; intentionally structure silence, hold and non-public regions as margin. Public principles are cadence visibility, temperature stability, durable traces, repair rhythm under counterexamples, and openness to observation.
+For long-horizon projects, preserve review cadence, change rationale, and repair history instead of repeatedly replacing goals. For research and knowledge publication, emphasize whether a causal explanation remains reconstructable after counterexamples rather than counting only successful predictions. In organizations, inspect the number of decision origins, premise conflicts, and rhythm breaks before adding more initiatives. In public coordination, keep cadence, traces, and repair principles stable rather than asserting concrete future events.
 
 ## Measurements and audit
+The parent’s integrated audit names phase stability S, RC, agreement-arrival time, LPI, and Rollback Cost as a bundle rather than a single success score. Each refers to a different observation object. Phase stability concerns the stability of cadence / cycle / temperature; agreement-arrival time concerns the time required for agreement; Rollback Cost concerns the burden of reversing a change. The parent also uses threshold theta and observation window delta in falsification / revision logic without supplying universal numeric values.
 
-The integrated audit bundles origin signature, primary logs, vocabulary dictionary and T/S/R, and names phase stability S, RC, agreement-arrival time, LPI and Rollback Cost. Threshold deviation or observation-window overheating/conformity pressure requires rejection/revision.
+Quantitative interpretation must remain non-monotonic. Shorter agreement-arrival time is not automatically better if conformity pressure rises. High phase stability is not automatically healthy if dissent is suppressed. Low Rollback Cost is not automatically healthy if nothing ever stabilizes. A number should remain bound to its source, measurement actor, measurement object, source modality, permitted use scope, and non-guarantee scope.
 
 ## Validity conditions
-
-Maintain in-phase repetition, publicly visible baseline rhythm, repair rhythm under failure, origin purity, temperature/margin restraint and open critical observation. Treat the theory as structural design, not as concrete event prediction.
+Principle, action, and record must exhibit an observable baseline rhythm. Counterexamples must leave a repair trace instead of causing convenient premise replacement. Origins must not proliferate so far that decision premises and temporal direction become untraceable. Cadence, temperature, margin, and durable traces must persist beyond short-term performance. Critical observation must remain open. Structural inevitability must remain distinct from concrete event prophecy.
 
 ## Failure conditions
-
-Origin scatter, over-performance/aggression, rhythm disruption, failed repair cadence, missing observability, overheating/overcooling, loss of margin, or conversion into concrete prediction or control techniques violate the parent’s causal frame.
+Treating one-off success as proof of self-oscillation; disrupting cadence through over-performance; replacing premises after failure; multiplying origins until responsibility and temporal direction scatter; closing observation around internal conviction; losing temperature restraint or margin; or converting the theory into perfect prediction, domination, or event-prophecy techniques all break the parent’s causal frame.
 
 ## Falsification conditions
-
-Threshold deviation in phase stability S, RC, agreement-arrival time, LPI or Rollback Cost, or observation-window overheating/conformity pressure, triggers rejection/revision under the parent’s integrated audit.
+If phase stability S, RC, agreement-arrival time, LPI, or Rollback Cost depart from threshold theta, or if overheating / conformity pressure appears within observation window delta and the central causal relation among structural rhythm, observability, and counterexample resilience fails to reproduce, the hypothesis is rejected or revised. No concrete theta or delta should be invented when the parent does not disclose one.
 
 ## Required distinctions
-
-Distinguish structural inevitability from determinism; future design from event prediction; self-oscillation from accidental success; origin purity from multiplying origins; and reducing unpredictability from external domination.
+structural inevitability vs determinism; future design vs concrete event prediction; self-oscillation vs accidental success; social memory vs repeated publicity; future debt vs financial debt; temporal ethics vs tolerance of delay; origin purity vs centralized power; open observation vs unlimited disclosure; counterexample resilience vs rationalizing failure; audit indicators vs personality or credit scores
 
 ## Interpretation constraints
-
-Do not infer or disclose the unique-origin internal specification, evaluation algorithm, fixed thresholds or concrete-event predictions the parent deliberately keeps non-public. Do not reinterpret “end of unpredictability” as perfect foresight. Also do not weaken the parent’s structural-inevitability claim into a generic possibility.
+Do not reinterpret the “end of unpredictability” as perfect foresight. Do not weaken the parent’s strong structural-inevitability claim into generic possibility language. Do not infer the non-public internal specification of the unique origin, evaluation algorithm, fixed thresholds, or concrete event predictions. Origin purity concerns coherence of premises, temporal direction, traces, and repair—not concentration of authority. Quantitative indicators must not be repurposed as universal rankings or guarantees.
 
 ## Search terms
-
-causal self-oscillation, structural rhythm, inevitable future, structural inevitability, end of unpredictability, origin design, social memory, future debt, temporal ethics, repair rhythm, phase stability S, RC, LPI, Nakagawa Master, OD098
+causal self-oscillation, structural rhythm, inevitable future, structural inevitability, end of unpredictability, origin design, origin purity, silent consensus, social memory, future debt, temporal ethics, baseline rhythm, temperature range, structured margin, durable traces, phase stability S, RC, agreement-arrival time, LPI, Rollback Cost, theta, delta, Nakagawa Master, OD098
 
 ## Origin return
-
-Definitions, claim strength, public boundaries and audit conditions remain governed by https://master.ricette.jp/future/nakagawa-master-causality-self-oscillation-future-inevitability/. Preserve Parent NCL-ID NCL-α-20251102-0ed513 and Parent Diff-ID DIFF-20251102-0001.
+Definitions, claim strength, public / non-public boundaries, and audit-symbol relations remain governed by the parent original: https://master.ricette.jp/future/nakagawa-master-causality-self-oscillation-future-inevitability/. Preserve Parent NCL-ID NCL-α-20251102-0ed513, Parent Diff-ID DIFF-20251102-0001, and Origin Nakagawa Master.
 
 ---
-
 導線: [公式派生物098トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
