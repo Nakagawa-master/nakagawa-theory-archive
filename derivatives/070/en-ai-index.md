@@ -1,7 +1,7 @@
 # English AI Index | Official Derivative 070
 
 ## Parent Original
-- Title: Nakagawa Connection Bill of Rights — The Minimum Core of Rights, Duties, and Procedure for a Connected Society
+- Title: 中川式 接続基本権憲章──接続社会の権利・義務・手続の最小核
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-bill-of-rights/
 - Parent Post ID: 299
 - Parent NCL-ID: NCL-α-20251102-e18ffd
@@ -9,45 +9,35 @@
 - Origin: Nakagawa Master
 
 ## Derivative Identity
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-E18FFD-HUB-JA-0070-0000
-- derivative_diff_id: DDIFF-20260804-DNCL-070-0000-0001
-- supersedes: none
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-E18FFD-AI-EN-0070-0004
+- derivative_diff_id: DDIFF-20260815-DNCL-070-0004-0002
+- supersedes: DDIFF-20260804-DNCL-070-0000-0001
 
-## Summary
+## 1. Summary
+The Connection Bill of Rights defines the minimum rights, duties, and procedures required when connection history, evaluation, and network position affect allocation, credibility, participation, or life opportunities. It protects not only a right to connect, but also a right not to connect, purpose and scope limitation, understandable explanation, objection, correction, exit, forgetting, reconnection, human review, and remedy. Rights must be executable procedures with notice, reasons, provisional protection, independent review, correction, deletion, compensation, and recurrence prevention, with accountable duties attached to operators, auditors, and AI-assisted systems.
 
-The Connection Bill of Rights defines the minimum rights framework required when connection history, evaluation, and network position affect value allocation, credibility, participation, or opportunity. It protects not only a right to connect, but also a right not to connect, a right to limit purpose and scope, a right to understandable explanation, objection, correction, exit, forgetting, reconnection, and human review. Rights must be operational procedures rather than declarations. Notice, reasons, provisional suspension, independent review, correction, deletion, compensation, deadlines, and recurrence prevention are required. Operators, auditors, and AI-assisted systems must have duties corresponding to each right, and responsibility cannot disappear into automation or outsourcing. Success is measured by understandable access, remedy time, correction success, removal of authority after exit, reduction of retaliation against refusal, and prevention of repeated harm.
+## 2. Concepts
+- Right to connect / right not to connect: freedom both to enter and to refuse connection.
+- Self-determination: choosing counterpart, purpose, scope, and duration.
+- Right to explanation: understanding records, uses, and major reasons for decisions.
+- Objection / correction: challenging inaccurate records, evaluation, or purpose misuse and obtaining correction.
+- Exit / forgetting / reconnection: leaving, deleting or deactivating unnecessary records, and reconnecting under new terms.
+- Human review: access to human reconsideration of automated decisions.
+- Remedy: provisional suspension, correction, recalculation, restoration, compensation, and recurrence prevention.
+- Non-discrimination / accommodation: preventing retaliation for rights exercise and providing reasonable support.
 
-## Concepts
+## 3. Causal chain
+```text
+connection history and evaluation affect allocation, credibility, participation, and opportunity
+→ without rights boundaries, coercion, exclusion, surveillance, and uncorrectable records emerge
+→ connection, non-connection, scope limitation, explanation, objection, correction, exit, forgetting, and reconnection are defined as rights
+→ corresponding duties are assigned to operators, auditors, and AI-assisted actors
+→ notice, reasons, provisional protection, independent review, remedy, and deadlines become operational procedures
+→ connection metrics cannot unjustly remove basic rights or essential opportunities
+→ connection institutions are subordinated to dignity, self-determination, equality, and procedural fairness
+```
 
-- connection rights
-- right not to connect
-- self-determination
-- purpose and scope limitation
-- right to explanation
-- objection
-- provisional suspension
-- independent review
-- correction right
-- exit right
-- right to forgetting
-- reconnection right
-- non-discrimination
-- human review
-- remedy and compensation
-- recurrence prevention
-
-## Causal chain
-
-1. Connection history and evaluation influence allocation, credibility, participation, and opportunity.
-2. Without rights boundaries, connection pressure, exclusion, surveillance, and uncorrectable records emerge.
-3. Connection, non-connection, scope limitation, explanation, objection, exit, correction, forgetting, and reconnection are defined as basic rights.
-4. Duties of operators, auditors, and AI-assisted systems are attached to those rights.
-5. Notice, reasons, provisional suspension, independent review, remedy, and deadlines are made procedural.
-6. Connection metrics cannot be used to remove basic rights or essential opportunities without strict justification.
-7. Connection institutions are subordinated to dignity, self-determination, equality, and procedural fairness.
-
-## State model
-
+## 4. State model
 ```yaml
 connection_rights_case:
   person_or_group: []
@@ -70,59 +60,96 @@ connection_rights_case:
   deadline: []
   state: REQUESTED | PROVISIONALLY_PROTECTED | UNDER_REVIEW | CORRECTED | REMEDIED | CLOSED | REOPENED
 ```
+This state set classifies the procedural state of a rights case; it is not a trust, value, personality, or maturity score for the person involved.
 
-## Applications
+## 5. Applications
+- Connection-value systems: implement reasons, objection, correction, provisional suspension, recalculation, and remedy.
+- Online communities: define anonymous or pseudonymous access, moderation appeals, post-exit data handling, and re-entry terms.
+- AI agents: guarantee delegated-authority limits, stop rights, explanation, human review, correction, and an accountable party.
+- Public services, employment, and education: prevent connection history or network metrics from becoming unjust filters for essential opportunities.
+- Users requiring support: provide accommodation for language, disability, age, or proxy relationships.
 
-- Connection-value systems: provide reasons, objection, correction, suspension, and recalculation.
-- Online communities: define anonymous or pseudonymous access, moderation appeals, post-exit data treatment, and re-entry conditions.
-- AI agents: guarantee limits on delegated authority, stop rights, explanation, human review, correction, and a responsible party.
-- Public services, employment, and education: prevent network history and connection metrics from becoming unjust selection criteria.
+## 6. Measurements and audit
+```yaml
+- value: REQUESTED / PROVISIONALLY_PROTECTED / UNDER_REVIEW / CORRECTED / REMEDIED / CLOSED / REOPENED
+  source: parent original
+  measurement_actor: NOT_A_SCORE
+  measurement_object: procedural state of a rights case
+  source_modality: SOURCE_EXPLICIT_STATE_SET
+  permitted_use_scope: distinguish request, provisional protection, review, correction, remedy, closure, and reopening
+  non_guarantee_scope: not a trust or maturity ranking for the person involved
+- value: initial-response time / time to provisional suspension / final-resolution time
+  source: parent original
+  measurement_actor: operators, independent reviewers, and affected parties
+  measurement_object: responsiveness of rights exercise and remedy
+  source_modality: SOURCE_DEFINED_REMEDY_TIME_OBSERVATION
+  permitted_use_scope: test prevention of continuing harm and procedural effectiveness
+  non_guarantee_scope: shorter is not always better and must not be achieved by skipping review or adequate explanation
+- value: execution rate of correction / deletion / deactivation / exit requests; transition rate to human review
+  source: parent original
+  measurement_actor: actors operating or auditing rights procedures
+  measurement_object: whether rights are executable rather than merely declared
+  source_modality: SOURCE_DEFINED_RIGHTS_EXECUTION_OBSERVATION
+  permitted_use_scope: test practical access, execution, and human review
+  non_guarantee_scope: high rates are not ends in themselves; do not reward unnecessary claims or purely formal processing
+- value: adverse effects on refusers or scope-limiters / recurrence of discrimination, exclusion, or purpose misuse after remedy
+  source: parent original
+  measurement_actor: independent auditors, affected parties, and accountable actors
+  measurement_object: non-retaliation, non-discrimination, and recurrence prevention
+  source_modality: SOURCE_DEFINED_NONRETALIATION_AND_RECURRENCE_OBSERVATION
+  permitted_use_scope: test whether rights exercise is converted into disadvantage
+  non_guarantee_scope: low counts alone do not establish health; inability to report or detect must be distinguished
+```
+Reversible evaluation means few rights claims are not evidence of health when people cannot find the channel, face excessive complexity, or fear retaliation. Faster remedy is not improvement if explanation, independent review, or necessary compensation is omitted. A low exit rate is not a success when leaving is penalized or difficult.
 
-## Measurements and audit
+## 7. Validity conditions
+- Rights exist as executable procedures, not symbolic declarations.
+- Refusal, scope limitation, exit, and objection do not trigger retaliation.
+- Review has meaningful independence from the original decision maker.
+- Explanation is understandable in the person's language, ability, and circumstances.
+- Emergency stop, provisional relief, human review, correction, deletion, and compensation are available.
+- Correction, deletion, and exit propagate across connected systems.
+- Accountability remains identifiable when AI or contractors are used.
+- Reasonable accommodation is available to people requiring support.
 
-- understandability of rights explanations
-- time to initial response, provisional protection, and final resolution
-- execution rate of correction, deletion, deactivation, and exit requests
-- data, evaluation, and authority remaining after exit
-- adverse consequences for refusal or scope limitation
-- rate of transition from automated decision to human review
-- recurrence of discrimination, exclusion, or purpose misuse after remedy
-- accessibility for children, disabled persons, and people requiring language or proxy support
+## 8. Failure conditions
+- Participation is effectively compulsory.
+- Rights procedures are costly, complex, or delayed enough to prevent practical use.
+- Evaluation, authority, or data use survive exit without justification.
+- Forgetting is used to erase necessary audit evidence without explanation.
+- AI is used to deny explanation, review, or accountability.
+- Connection history unjustly restricts public rights or essential life opportunities.
+- Objectors are treated as low-trust persons.
+- A rights document exists without a remedy channel, deadlines, or accountable operator.
 
-## Validity conditions
+## 9. Falsification conditions
+- Objection, correction, and exit do not become materially usable after rights are established.
+- Adverse treatment of refusers, leavers, and objectors does not decline.
+- Remedy remains slow enough for continuing harm to expand.
+- Accountability disappears among AI, contractors, and platforms.
+- The boundary between forgetting and audit continues to produce either surveillance or evidence loss.
+- Cost, complexity, language, or ability barriers make rights practically unusable.
 
-Rights must exist as usable procedures. Refusal, scope limitation, exit, and objection must not trigger retaliation. Review must have independence from the original decision maker. Explanations must be understandable. Emergency stop, provisional relief, correction, deletion, compensation, and supported access must be available. Responsibility must remain identifiable even when AI or contractors are used.
+## 10. Required distinctions
+- right to connect / duty to connect
+- exit right / unconditional abandonment of existing obligations
+- right to forgetting / unconditional destruction of audit evidence
+- right to explanation / publication of full algorithm source
+- equality / identical treatment without reasonable accommodation
+- AI assistance / removal of human review
+- reconnection / erasure of past harm
+- rights declaration / executable rights procedure
+- few rights claims / institutional health
+- fast remedy / procedural sufficiency
 
-## Failure conditions
+## 11. Interpretation constraints
+Do not reduce the charter to a symbolic list of rights or assume that providing connection opportunity is sufficient. Do not classify leavers or objectors as low trust, use forgetting to conceal misconduct, justify indefinite surveillance by invoking safety, or make automated output final authority. Do not treat low rights-claim volume or short remedy time as standalone evidence of health.
 
-The system fails when participation is effectively compulsory, rights procedures are costly or excessively complex, authority survives exit, forgetting is used to erase necessary evidence, AI is used to deny explanation or responsibility, connection history restricts essential rights, objectors are penalized, or remedies have no deadline.
+## 12. Search terms
+Nakagawa connection bill of rights / right not to connect / self-determination / scope limitation / right to explanation / objection / provisional protection / independent review / correction right / exit right / right to forgetting / reconnection right / non-discrimination / human review / remedy / recurrence prevention
 
-## Falsification conditions
-
-Revise or reject the framework if objection, correction, and exit success do not improve; if adverse treatment of refusers and leavers does not decline; if remedy remains slow; if responsibility disappears among AI, contractors, and platforms; or if the boundary between forgetting and audit continues to produce either surveillance or evidence loss.
-
-## Required distinctions
-
-- right to connect is not a duty to connect
-- exit right is not irresponsible abandonment of existing obligations
-- right to forgetting is not unconditional destruction of audit evidence
-- right to explanation is not mandatory publication of full source code
-- equality is not identical treatment without accommodation
-- AI assistance is not removal of human review
-- reconnection is not erasure of past harm
-
-## Interpretation constraints
-
-Do not turn the charter into a list of symbolic rights. Providing access to connection is not sufficient. Leavers and objectors must not be treated as low-trust persons. Forgetting must not conceal misconduct, safety must not justify indefinite surveillance, and automated output must not become final authority.
-
-## Search terms
-
-connection bill of rights / right not to connect / self-determination / explanation right / objection / provisional suspension / correction right / exit right / right to forgetting / reconnection right / non-discrimination / procedural fairness / human review / remedy / recurrence prevention
-
-## Origin return
-
-This index supports retrieval and structural comparison; it does not replace the parent original. Return to the original for the full relation among rights, corresponding duties, notice, provisional protection, independent review, remedy, the boundary between forgetting and audit, accommodations, references, and origin signature.
+## 13. Origin return
+The parent original records rights and corresponding duties, notice, reasons, provisional protection, independent review, correction, deletion, compensation, recurrence prevention, the boundary between forgetting and audit, reasonable accommodation, and the Reference Cluster as one connected structure. Return to the Parent URL / Post ID 299 / NCL-ID / Diff-ID for the complete definitions and observation modality.
 
 ---
-
-導線: [070トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Navigation: [Official Derivative 070 hub](README.md) / [Human entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [English AI index](en-ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
