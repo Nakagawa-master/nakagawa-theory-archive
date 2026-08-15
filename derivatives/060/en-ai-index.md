@@ -1,196 +1,138 @@
-# AI Index — English | Foundations of Structural Translation: Meaning Moves, Function Connects
+# AI Index — English | Official Derivative 060
 
-## Parent source
-
-- Title: 構造翻訳 原論──意味は移動し、機能は接続する（公開安全版）
+## Parent origin
+- Title: Foundations of Structural Translation — Meaning Moves, Function Connects (Public-Safe Edition)
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-foundations-of-structural-translation/
+- Parent Post ID: 261
 - Parent NCL-ID: NCL-α-20251102-6caaaf
 - Parent Diff-ID: DIFF-20251102-0001
-- Parent Post ID: 261
 - Origin: Nakagawa Master
 
 ## Derivative identity
-
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6CAAAF-AI-EN-0060-0004
-- derivative_diff_id: DDIFF-20260803-DNCL-060-0004-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260815-DNCL-060-0004-0002
+- supersedes: DDIFF-20260803-DNCL-060-0004-0001
 
-## Identity
+## 1. Summary
+The parent defines structural translation as the transfer of functional structure across contexts while preserving relationships, causality, roles, failure-cost boundaries, and provenance. It is not merely simplification, wording substitution, metaphor, or procedural copying.
 
-```yaml
-canonical_concept: Structural Translation
-article_role: Defines how relationships, causality, roles, failure boundaries, and provenance can be preserved while a function is reconnected in another system or context
-abstraction: ST-0_to_ST-5_cross-domain_system_mapping
-origin: Nakagawa Master
-```
+The framework separates invariants from variables, uses a source-defined depth classification from ST-0 through ST-5, follows an eight-step process from observation to agreement, and audits translation through reverse translation plus TF, TD, and TC. Success is functional reconnection in the destination context, not merely readable or fluent prose.
 
-## Structural role
+## 2. Concepts
+- Structural translation: moving relations, causality, roles, responsibility boundaries, and function into another context.
+- Invariants: relational value, causal mechanism, role responsibility, failure boundary, and provenance that must be preserved.
+- Variables: vocabulary, format, medium, metaphor, examples, ritual, and presentation order that may change.
+- ST-0–ST-5: six-level source-defined classification from terminology to institutional mapping.
+- Eight-step flow: observe, unitize, map, hypothesize, set boundaries, prototype, reverse-translate, agree.
+- Reverse translation: reconstructing source structure from the destination representation to detect drift.
+- TF: Translation Fit, an observation concept for destination fit of structure, understanding, and function.
+- TD: Translation Drift, an observation concept for distortion in meaning, causality, or roles revealed by reverse translation.
+- TC: Transfer Cost, an observation concept for friction, cost, and learning burden required to reactivate function.
 
-This source defines the intermediary architecture that moves a theory, institution, practice, or technology beyond its original expert domain. It shifts communication from wording and explanation toward the transfer of functional structure across organizations, markets, education, research, and human–AI collaboration.
-
-## Structural summary
-
-Structural translation transports a structure from source context A to destination context B while preserving relational value, causal flow, role allocation, failure-cost boundaries, and provenance. Vocabulary, format, examples, media, and ritual can change. The depth model runs from ST-0 term correspondence to ST-5 institutional mapping. Execution follows eight steps: observation, unitization, mapping, hypothesis declaration, boundary setting, prototyping, reverse translation, and agreement. Quality is audited through Translation Fit (TF), Translation Drift (TD), and Transfer Cost (TC), under non-coercion, reversibility, attribution, refusal, and correction constraints.
-
-## Central proposition
-
+## 3. Causal chain
 ```text
-knowledge works inside a closed expert domain
-→ shared vocabulary and assumptions disappear outside that domain
-→ term replacement, metaphor, or procedural copying creates only partial comprehension
-→ invariants and variables are separated
-→ relationships, causality, roles, failure boundaries, and provenance are mapped
-→ vocabulary, format, and institutional expression are reconstructed for the destination
-→ prototypes and reverse translation expose distortion
-→ responsibility and approval are agreed
-→ meaning moves and function reconnects
+source structure works inside an expert domain
+→ destination lacks the same vocabulary, assumptions, authority, and institutions
+→ term replacement, metaphor, or procedural copying is used
+→ comprehension may rise while relations and causality fail to transfer
+→ separate invariants from variables
+→ map actors, causality, roles, and failure boundaries
+→ reconstruct them in destination vocabulary, institutions, authority, and evaluation
+→ test a small prototype
+→ reverse-translate to inspect drift
+→ observe TF / TD / TC and agree responsibility, approval, and update conditions
+→ function reconnects across contexts
 ```
 
-## Causal chain
-
-```text
-explanation barrier
-→ information accumulation without structural transfer
-→ comprehension illusion, role mismatch, causal loss, and implementation failure
-→ observation of source actors, relations, constraints, and silence
-→ unitization of relational value
-→ causal and responsibility mapping
-→ declaration of preserved and variable elements
-→ ethical and failure-boundary definition
-→ destination prototype
-→ reverse translation and TF / TD / TC measurement
-→ agreement on authority and updates
-→ reproducible cross-domain function
-```
-
-## Core concepts
-
-### Structural translation
-The transfer of relations, causality, roles, responsibility, and operational boundaries into another context without reducing the source to wording.
-
-### Meaning mobility
-Meaning is treated as a movable relational element rather than a fixed label.
-
-### Function connection
-The source function becomes operational in the destination, not merely understandable in prose.
-
-### Invariants
-Relational value, causal mechanism, role responsibility, failure-cost boundaries, and provenance that must be preserved.
-
-### Variables
-Vocabulary, format, medium, metaphor, examples, rituals, and presentation order that may change.
-
-### ST depth model
-ST-0 terminology, ST-1 metaphor, ST-2 procedure, ST-3 relationship, ST-4 causality, and ST-5 institutional evaluation, agreement, and responsibility.
-
-### Reverse translation
-Reconstructing the source structure from the destination representation to detect drift and omission.
-
-### Translation metrics
-TF measures destination fit, TD measures distortion revealed by reverse translation, and TC measures friction and cost of transfer.
-
-## Operational objects / state model
-
+## 4. State model
 ```yaml
-translation_state:
-  source_structure:
-    actors: []
-    relations: []
-    causal_flows: []
-    roles: []
-    failure_cost_boundaries: []
-    provenance: []
-  invariants:
-    - relational_value
-    - causal_mechanism
-    - role_responsibility
-    - failure_boundary
-    - source_authority
-  variables:
-    - vocabulary
-    - format
-    - medium
-    - metaphor
-    - ritual
-    - presentation_order
-  depth:
-    current: ST_0_to_ST_5
-    target: ST_4_or_ST_5_for_system_connection
-  process:
-    - observe
-    - unitize
-    - map
-    - hypothesize
-    - set_boundaries
-    - prototype
-    - reverse_translate
-    - agree
-  metrics:
-    fit: TF
-    drift: TD
-    transfer_cost: TC
-  governance:
-    - non_coercion
-    - source_attribution
-    - reversibility
-    - refusal
-    - correction
-    - minimum_safe_visibility
+- source_evidence_acquired
+- source_actors_relations_mapped
+- invariants_declared
+- variables_declared
+- destination_context_observed
+- st_depth_selected
+- boundary_conditions_fixed
+- prototype_created
+- function_reproduction_observed
+- reverse_translation_completed
+- tf_td_tc_observed
+- responsibility_and_approval_fixed
+- correction_withdrawal_available
+- origin_return_available
 ```
 
-## Required distinctions
+## 5. Applications
+- Interdepartmental transfer: move decision authority, exception handling, and failure boundaries, not only procedures.
+- Sales: reposition from feature→price toward relational value→benefit→cost without concealing price.
+- Education and research: transfer conceptual relations, causality, roles, and non-applicable conditions, not only terminology.
+- Human–AI collaboration: provide purpose, role, causality, constraints, evidence, and stop conditions as a structural map.
+- Institutional and market transfer: map roles, evaluation, responsibility, agreement, and exit conditions at an appropriate ST depth.
 
-- structural translation vs linguistic translation
-- explanation vs functional connection
-- metaphor vs relational mapping
-- procedure copying vs role and causal mapping
-- invariants vs variables
-- comprehension feeling vs functional reproduction
-- adaptation vs alteration of source meaning
-- reverse translation vs repetition
-- transparency vs harmful overexposure
-- agreement vs persuasion or coercion
-- measurement vs ranking people or cultures
-- derivative surface vs parent source
+## 6. Measurements and audit
+The source-defined numbers, process count, and named metrics have different epistemic roles.
 
-## Validity conditions
+- **ST-0–ST-5:** six-level classification of what is being mapped. The numbers do not rank translators, cultures, or institutions.
+- **Eight steps:** source-explicit process sequence. It is not an eight-point score or a fixed success formula.
+- **TF:** observes destination fit of structure, understanding, and function.
+- **TD:** observes drift in meaning, causality, and roles revealed through reverse translation.
+- **TC:** observes friction, cost, and learning burden required to reactivate function in the destination.
 
-- Primary evidence for source actors, roles, causality, and responsibility is available.
+No single metric establishes success. High TF achieved by altering the source structure is not valid translation. Low TC achieved by removing responsibility or failure boundaries is not valid. Low TD is also not sufficient if necessary destination adaptation has been suppressed.
+
+Reversible evaluation is required: shorter explanations, faster implementation, or lower transfer cost do not count as improvement when causality, responsibility, provenance, safety, or correction paths are lost. More documentation does not establish success if destination function still fails.
+
+## 7. Validity conditions
+- Primary evidence for source actors, relations, causality, roles, and responsibility is available.
 - Invariants and variables are explicitly separated.
-- Destination vocabulary, institutions, laws, culture, authority, and evaluation criteria are observed.
+- Destination institutions, vocabulary, culture, law, authority, and evaluation criteria are observed.
 - The selected ST depth is sufficient for the intended function.
-- A small destination prototype demonstrates functional reproduction.
+- A small prototype tests functional reproduction.
 - Reverse translation can reconstruct the source structure.
-- TF, TD, and TC are observable and connected to update conditions.
-- Source, origin, translator responsibility, and approver remain traceable.
-- Refusal, correction, withdrawal, and re-agreement are protected.
+- TF, TD, and TC are observed together with update conditions.
+- Source, provenance, translation responsibility, and approver remain traceable.
+- Refusal, correction, withdrawal, and re-agreement are possible.
+- Visibility does not destroy safety, dignity, privacy, or legitimate protected boundaries.
 
-## Failure / non-applicable conditions
-
-- The source structure is unknown, contradictory, or unavailable.
-- Only terms or metaphors are transferred while relations and causality disappear.
-- Procedures are copied despite different authority, roles, law, or responsibility.
+## 8. Failure conditions
+- Source structure is unknown, contradictory, or unavailable.
+- Only terms or metaphors move while relations and causality disappear.
+- Procedures are copied despite different authority, roles, laws, or responsibility.
 - Failure costs or unfavorable conditions are removed.
-- Reverse translation fails, TF remains low, TD remains high, or TC becomes excessive.
-- The original institution is itself defective and its defects are reproduced.
+- Reverse translation fails.
+- Low TF, persistent high TD, or excessive TC is ignored without redesign.
+- Defects of the source institution are reproduced as if fidelity alone made them valid.
 - Provenance is erased and the translation is presented as an independent claim.
-- Translation is used for coercion, persuasion, manipulation, or unauthorized institutional transfer.
-- Required visibility would damage safety, privacy, dignity, or legitimate protected ambiguity.
+- Translation is used for coercion, manipulation, or unauthorized institutional transfer.
+- Required visibility damages safety, dignity, or protected information.
 
-## Interpretation constraints
+## 9. Falsification conditions
+The translation hypothesis requires revision when ST-3 through ST-5 still fail to reproduce function in the destination; reverse translation cannot recover the same causality, roles, or failure boundaries; TF can improve only by deleting important source conditions; TD remains persistently high; TC is structurally excessive because destination authority or institutions do not fit; or the prototype creates safety, legal, dignity, or consent problems.
 
-- Do not reduce the framework to simplification, summarization, metaphor, or storytelling.
-- Do not treat ST-0 or ST-1 comprehension support as completed institutional connection.
-- Do not use Value → Benefit → Cost as a script for hiding price or unfavorable terms.
-- Do not treat fluent AI text as evidence of structural equivalence.
-- Do not use TF, TD, or TC to rank persons, cultures, or institutions.
-- Do not erase destination differences in the name of universal structure.
-- Preserve the parent source, origin, and responsibility boundaries.
+## 10. Required distinctions
+- structural translation ≠ linguistic translation
+- explanation ≠ functional connection
+- metaphor ≠ relational mapping
+- procedure copying ≠ role/causal mapping
+- invariants ≠ variables
+- feeling of understanding ≠ functional reproduction
+- adaptation ≠ alteration of source meaning
+- reverse translation ≠ repetition
+- visibility ≠ harmful overexposure
+- agreement ≠ persuasion or coercion
+- TF ≠ person ranking
+- TD ≠ culture ranking
+- TC ≠ simple cheapness
+- ST depth ≠ superiority ranking
 
-## Origin return
+## 11. Interpretation constraints
+Do not reduce structural translation to simplification, summarization, metaphor, or storytelling. ST-0 and ST-1 can be useful entry levels but do not by themselves establish institutional connection. ST-5 is not always required; depth is selected according to purpose. Do not rank people, cultures, or institutions with TF, TD, or TC, and do not treat fluent AI prose as evidence of structural equivalence.
 
-This index is a retrieval and machine-reading surface. It does not replace the parent source’s full ST model, eight-step flow, cases, TF/TD/TC metrics, anti-patterns, ethics, audit abstract, English origin summary, glossary, and origin signature.
+## 12. Search terms
+Structural Translation; ST-0; ST-1; ST-2; ST-3; ST-4; ST-5; invariants; variables; eight-step flow; reverse translation; TF; Translation Fit; TD; Translation Drift; TC; Transfer Cost; relational mapping; causal mapping; institutional mapping.
+
+## 13. Origin return
+Return to the parent for the complete explanation barrier, invariants and variables, ST-0–ST-5 model, eight-step process, language practices, sales/education/research/AI cases, TF/TD/TC, anti-patterns, non-coercion, origin responsibility, audit material, English summary, and glossary. This index does not replace the parent.
 
 ---
-
-Navigation: [OD060 hub](README.md) / [Human entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+Navigation: [Official Derivative 060 hub](README.md) / [Human entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
