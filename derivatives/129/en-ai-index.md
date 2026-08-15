@@ -119,7 +119,7 @@ Structural refinement restores care in the public sphere
 - Equate harsher punishment with structural improvement.
 
 ## Falsification conditions
-Under the parent’s integrated audit, the active hypothesis is revised or rejected when monitored indicators such as misallocation signals, correction completion, and affected-party satisfaction persistently cross their configured thresholds, or when the verification/correction observation window closes for the specified period. T/S/R and the public audit bundle remain the parent’s re-agreement conditions; this derivative does not invent a separate recommendation/ranking causal model.
+Under the parent’s integrated audit, the active hypothesis is revised or rejected when monitored indicators such as misallocation signals, correction completion, and affected-party satisfaction persistently cross their configured thresholds, or when the verification/correction observation window closes for the specified period. T/S/R and the public audit bundle remain the re-agreement conditions.
 
 ## Required distinctions
 - speech / actual harm
@@ -139,7 +139,7 @@ Do not replace the parent with a generic recommendation-algorithm audit, moderat
 online public sphere; words as institutions; correspondence; temporal ethics; ethical lag; observation window; synchronization; speech; actual harm; personality; act; terminology; operation; public correction; versioning; reversibility; audit bundle; structural refinement; Nakagawa Master
 
 ## Origin return
-This index reorganizes the parent for retrieval and machine reading. Return to the Parent URL and Parent NCL-ID / Diff-ID for the parent’s definitions of Correspondence and Temporal Ethics, the three design tasks, integrated/local audit abstracts, and the structural signature concerning speech velocity and ethical lag.
+The Parent URL and Parent NCL-ID / Diff-ID are the final reference for the parent’s definitions of Correspondence and Temporal Ethics, the three design tasks, integrated/local audit abstracts, and the structural signature concerning speech velocity and ethical lag.
 
 ---
 導線: [公式派生物129トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
