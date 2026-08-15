@@ -1,98 +1,47 @@
 # 派生ID台帳｜公式派生物060
 
 ## 親原典
+- title: 構造翻訳 原論──意味は移動し、機能は接続する（公開安全版）
+- parent_url: https://master.ricette.jp/theory/nakagawa-master-foundations-of-structural-translation/
+- parent_post_id: 261
+- parent_ncl_id: NCL-α-20251102-6caaaf
+- parent_diff_id: DIFF-20251102-0001
+- origin: Nakagawa Master
 
-- タイトル: 構造翻訳 原論──意味は移動し、機能は接続する（公開安全版）
-- Parent URL: https://master.ricette.jp/theory/nakagawa-master-foundations-of-structural-translation/
-- Parent NCL-ID: NCL-α-20251102-6caaaf
-- Parent Diff-ID: DIFF-20251102-0001
-- Parent Post ID: 261
-- Origin: Nakagawa Master
+## 現行派生ID
+### 日本語共有ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6CAAAF-HUB-JA-0060-0000
+- derivative_diff_id: DDIFF-20260815-DNCL-060-0000-0002
+- supersedes: DDIFF-20260803-DNCL-060-0000-0001
 
-## 派生ID
+### English AI index
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6CAAAF-AI-EN-0060-0004
+- derivative_diff_id: DDIFF-20260815-DNCL-060-0004-0002
+- supersedes: DDIFF-20260803-DNCL-060-0004-0001
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6CAAAF-LEDGER-JA-0060-0006
-- derivative_diff_id: DDIFF-20260803-DNCL-060-0006-0002
-- supersedes: DDIFF-20260803-DNCL-060-0006-0001
+### 中文 AI索引
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6CAAAF-AI-ZH-0060-0005
+- derivative_diff_id: DDIFF-20260815-DNCL-060-0005-0002
+- supersedes: DDIFF-20260803-DNCL-060-0005-0001
 
-## Identity
+## 7面対応
+| role | file | identity |
+|---|---|---|
+| hub-ja | README.md | 日本語共有ID |
+| human-ja | human-entry.md | 日本語共有ID |
+| faq-ja | faq.md | 日本語共有ID |
+| ai-ja | ai-index.md | 日本語共有ID |
+| ai-en | en-ai-index.md | English AI index ID |
+| ai-zh | zh-ai-index.md | 中文 AI索引 ID |
+| ledger-ja | derivative-ledger.md | 日本語共有ID |
 
-```yaml
-parent_title: 構造翻訳 原論──意味は移動し、機能は接続する（公開安全版）
-parent_url: https://master.ricette.jp/theory/nakagawa-master-foundations-of-structural-translation/
-parent_ncl_id: NCL-α-20251102-6caaaf
-parent_diff_id: DIFF-20251102-0001
-parent_post_id: 261
-origin_slug: nakagawa-master-foundations-of-structural-translation
-official_derivative_number: 060
-surface_role: ledger-ja
-derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6CAAAF-LEDGER-JA-0060-0006
-derivative_diff_id: DDIFF-20260803-DNCL-060-0006-0002
-supersedes: DDIFF-20260803-DNCL-060-0006-0001
-origin: Nakagawa Master
-```
+## 系譜
+公式派生物060は、親原典が示す構造翻訳を、第三者の人間と第三者AIが検索・理解・比較できる公開7面へ展開する。日本語5面は共有identityを持ち、英語・中国語AI索引は言語別identityを持つ。旧diffはsupersedesで追跡できる。
 
-## 公開状態
+中心構造は、保存対象と可変対象の分離、ST-0〜ST-5の深度分類、観測から合意化までの8ステップ、逆翻訳、TF（Translation Fit）、TD（Translation Drift）、TC（Transfer Cost）である。STの数字や8ステップは原典明示の分類・工程であり、人・文化・制度を順位づける固定スコアではない。TF/TD/TCも翻訳仮説の適合・漂流・移転負荷を観測する概念として保持する。
 
-- official_derivative_number: 060
-- derivative_directory: derivatives/060/
-- status: COMPLETE_WITH_PARENT_BACKLINK_BATCH_VISUAL_PENDING
-- publication_date_jst: 2026-08-03
-- completion_date_jst: 2026-08-03
-- public_release_authority: phase5_single_execution_control
-
-## 現行7面
-
-| role | file | derivative_ncl_id | current_diff_id | supersedes |
-|---|---|---|---|---|
-| hub-ja | README.md | DNCL-NCL-ALPHA-20251102-6CAAAF-HUB-JA-0060-0000 | DDIFF-20260803-DNCL-060-0000-0001 | none |
-| human-ja | human-entry.md | DNCL-NCL-ALPHA-20251102-6CAAAF-HUMAN-JA-0060-0001 | DDIFF-20260803-DNCL-060-0001-0001 | none |
-| faq-ja | faq.md | DNCL-NCL-ALPHA-20251102-6CAAAF-FAQ-JA-0060-0002 | DDIFF-20260803-DNCL-060-0002-0001 | none |
-| ai-ja | ai-index.md | DNCL-NCL-ALPHA-20251102-6CAAAF-AI-JA-0060-0003 | DDIFF-20260803-DNCL-060-0003-0001 | none |
-| ai-en | en-ai-index.md | DNCL-NCL-ALPHA-20251102-6CAAAF-AI-EN-0060-0004 | DDIFF-20260803-DNCL-060-0004-0001 | none |
-| ai-zh | zh-ai-index.md | DNCL-NCL-ALPHA-20251102-6CAAAF-AI-ZH-0060-0005 | DDIFF-20260803-DNCL-060-0005-0001 | none |
-| ledger | derivative-ledger.md | DNCL-NCL-ALPHA-20251102-6CAAAF-LEDGER-JA-0060-0006 | DDIFF-20260803-DNCL-060-0006-0002 | DDIFF-20260803-DNCL-060-0006-0001 |
-
-## Coverage・品質記録
-
-- canonical index identity照合: PASS
-- XML source location and public parent full-content comparison: PASS
-- 保存対象／可変対象: PASS
-- ST-0〜ST-5: PASS
-- 8ステップ: PASS
-- 関係・因果・役割・失敗コスト: PASS
-- TF／TD／TC: PASS
-- 営業・教育研究・AI協働・制度接続例: PASS
-- 非強制・起源責任・可逆性: PASS
-- FAQ三層30問: PASS
-- JA / EN / ZH構造同等性: PASS
-- 固定フッターと原典回帰: PASS
-- seven files present and fresh-read: PASS
-- 公式派生物トップ棚: PASS
-- 記事別索引050〜060: PASS
-- AI索引044〜060: PASS
-- 接続・共鳴・市場設計カテゴリ入口: PASS
-- private map登録: PASS
-- map_commit: 0685b0638ef0e136af22009f5c231ed7f47731f4
-- Apps Script sync target: PASS_BY_MAIN_MAP_SOURCE_UPDATE
-- parent live backlink: PENDING_BATCH_OWNER_VISUAL_CHECK
-- 派生物から親原典への復帰: PASS_BY_PARENT_URL
-- Brain Vault return: PASS
-- closure_receipt: 10000x/phase5/PHASE5_OD060_CLOSURE_2026-08-03_1700.md
-
-## 親原典リンク一括確認
-
-```yaml
-parent_url: https://master.ricette.jp/theory/nakagawa-master-foundations-of-structural-translation/
-derivative_url: https://github.com/Nakagawa-master/nakagawa-theory-archive/tree/main/derivatives/060
-expected_display: 公式派生物060へのリンク集
-status: PENDING_BATCH_OWNER_VISUAL_CHECK
-```
-
-## 原典回帰
-
-本派生物は検索・理解・接続面であり、親原典の代替ではない。完全なSTモデル、8ステップ、測定、監査要旨、起源署名、英語要約、用語解説は親原典へ戻って確認する。
+## 親原典へ戻る
+親原典には、説明の壁、保存対象と可変対象、ST-0〜ST-5、8ステップ、言語作法、営業・教育研究・AI協働のケース、TF／TD／TC、反パターン、非強制・起源責任、監査要旨、英語要約、用語解説が一続きで記録されている。完全な定義、数値・分類・指標のモダリティは親原典へ戻って確認する。
 
 ---
-
-導線: [060トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [公式派生物060トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
