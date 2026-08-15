@@ -1,69 +1,60 @@
 # 派生ID台帳｜公式派生物053
 
-## Parent identity
+## 親原典
+- タイトル: 中川式営業の教科書・第十五回──営業の思想化：身体知の外部化と学問としての確立
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-15-externalizing-embodied-knowledge-sales-as-academic-discipline/
+- Parent Post ID: 229
+- Parent NCL-ID: NCL-α-20251102-9895c9
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
 
-- title: 中川式営業の教科書・第十五回──営業の思想化：身体知の外部化と学問としての確立
-- parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-15-externalizing-embodied-knowledge-sales-as-academic-discipline/
-- parent_ncl_id: NCL-α-20251102-9895c9
-- parent_diff_id: DIFF-20251102-0001
-- parent_post_id: 229
-- origin_slug: nakagawa-master-nakagawa-sales-15-externalizing-embodied-knowledge-sales-as-academic-discipline
-- origin: Nakagawa Master
-
-## Derivative identity
-
-- official_derivative_number: 053
-- derivative_directory: derivatives/053/
+## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9895C9-HUB-JA-0053-0000
-- derivative_diff_id: DDIFF-20260802-DNCL-053-0000-0001
-- status: published
+- derivative_diff_id: DDIFF-20260815-DNCL-053-0000-0002
+- supersedes: DDIFF-20260802-DNCL-053-0000-0001
 
-## Seven public surfaces
+## 現行派生identity
+```yaml
+official_derivative_number: 053
+ja_shared_identity:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9895C9-HUB-JA-0053-0000
+  derivative_diff_id: DDIFF-20260815-DNCL-053-0000-0002
+  supersedes: DDIFF-20260802-DNCL-053-0000-0001
+en_identity:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9895C9-AI-EN-0053-0004
+  derivative_diff_id: DDIFF-20260815-DNCL-053-0004-0002
+  supersedes: DDIFF-20260802-DNCL-053-0004-0001
+zh_identity:
+  derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9895C9-AI-ZH-0053-0005
+  derivative_diff_id: DDIFF-20260815-DNCL-053-0005-0002
+  supersedes: DDIFF-20260802-DNCL-053-0005-0001
+```
 
-| role | file |
-|---|---|
-| hub | README.md |
-| human entry | human-entry.md |
-| FAQ | faq.md |
-| AI index Japanese | ai-index.md |
-| AI index English | en-ai-index.md |
-| AI index Chinese | zh-ai-index.md |
-| derivative ledger | derivative-ledger.md |
+## 7面対応
+| Surface | File | Identity | Language | Public role |
+|---|---|---|---|---|
+| hub | README.md | JA shared | ja | 構造全体への公開入口 |
+| human | human-entry.md | JA shared | ja | 人間向け理解・適用 |
+| faq | faq.md | JA shared | ja | 初心者・実務者・AI研究者の三層FAQ |
+| ai-ja | ai-index.md | JA shared | ja | 日本語の機械可読構造索引 |
+| ai-en | en-ai-index.md | EN | en | English machine-readable structural index |
+| ai-zh | zh-ai-index.md | ZH | zh | 中文机器可读结构索引 |
+| ledger | derivative-ledger.md | JA shared | ja | 公開lineageとidentity |
 
-## Provenance
+## superseded lineage
+### JA shared lineage
+- DDIFF-20260802-DNCL-053-0000-0001 → DDIFF-20260815-DNCL-053-0000-0002
 
-- source basis: complete public parent article, canonical identity index, integrated/local audit summaries, and origin signature
-- reproduction baseline: completed OD001-OD049, with completed sales-series derivatives used for density comparison
-- existing completed derivatives modified: no
-- GitHub Actions used: no
-- authorial claims added beyond parent: no
-- human judgment and responsibility retained: yes
+旧版ではREADME、human-entry、FAQ、JA AI indexが面別identityを表示していた。現行lineageでは日本語5面を一つのshared identityへ統合する。
 
-## Quality record
+### EN lineage
+- DDIFF-20260802-DNCL-053-0004-0001 → DDIFF-20260815-DNCL-053-0004-0002
 
-- seven files present: PASS
-- FAQ three layers: PASS
-- human-entry required functions: PASS
-- JA/EN/ZH structural equivalence: PASS
-- causal line preserved: PASS
-- boundaries and failure conditions preserved: PASS
-- origin return and mutual navigation: PASS
-- density against same-type completed derivatives: PASS
+### ZH lineage
+- DDIFF-20260802-DNCL-053-0005-0001 → DDIFF-20260815-DNCL-053-0005-0002
 
-## Semantic fidelity revalidation — 2026-08-12
-- result: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
-- canonical_post_id: 229
-- canonical_index: reference_corpus/official_archive/generated/canonical_index_0201_0250.jsonl
-- canonical_xml_locator: reference_corpus/official_archive/source/wordpress_export_latest.xml#L66014-L66270
-- canonical_xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-- source_supported_kernel: 身体知を言語化・可視化・制度化し、中川式営業を思想と営業学として確立する
-- six_surface_comparison: PASS
-- ja_en_zh_equivalence: PASS
-
-## Origin return
-
-The derivative is a retrieval and reading surface, not a replacement for the parent. Return to the parent for the complete fifteen-lecture trajectory, examples, audit summaries, falsification conditions, and origin declaration.
+## 起源回帰
+公式派生物053の親原典は、中川マスターによる「中川式営業の教科書・第十五回──営業の思想化：身体知の外部化と学問としての確立」である。全15回の体系、身体知の外部化、思想化・学問化の定義、再演・移植・反証条件、起源署名について最終的な定義・引用・主張強度を確認する場合は、親原典のURL、Post ID 229、NCL-ID、Diff-IDへ戻る。
 
 ---
-
-導線: [053トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [公式派生物053トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
