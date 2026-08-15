@@ -36,7 +36,6 @@ The parent also contains a public-deconstruction layer explaining why Nakagawa M
 - prioritization
 - investment decisions
 - information volume versus decision value
-- reversible evaluation
 - public deconstruction
 - origin return
 
@@ -64,7 +63,7 @@ The source-specific scope remains distinct from a company profile, generic FinOp
 ## Measurements and audit
 Relevant observations include whether operational information is retained, differences are comparable, the decision layer can reconstruct operational meaning, decision relevance is explicit, important differences are not buried by information volume, material connects to improvement / evaluation / investment decisions, and decision outcomes can be traced afterward.
 
-Reversal remains possible. More dashboards or metrics can worsen the structure if decision time rises and important differences disappear. More reporting can reduce value if decision connection weakens. Larger cost reductions are not automatically better if necessary operating capability is damaged. More decisions do not strengthen the basis if their grounds become thinner.
+More dashboards or metrics can worsen the structure if decision time rises and important differences disappear. More reporting can reduce value if decision connection weakens. Larger cost reductions are not automatically better if necessary operating capability is damaged. More decisions do not strengthen the basis if their grounds become thinner.
 
 ## Validity conditions
 Field operations are observable; states, differences, and changes remain reviewable. Raw data is distinguishable from judgment material. Field language is transformed into decision language without burying important differences, and the relevance of the material to a decision is explainable.
