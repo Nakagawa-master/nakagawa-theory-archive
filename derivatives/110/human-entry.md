@@ -84,5 +84,4 @@
 恒常署名は権威化のためではなく起源の蒸発を防ぐためにあり、再帰的開放性は排他的所有を強めるためではなく、理論を自己更新する公共財として持続させるためにあります。
 
 ---
-
 導線: [公式派生物110トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

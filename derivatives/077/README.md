@@ -122,4 +122,4 @@ sourceは親原典。measurement actorは構造ログ・監査要旨・束指標
 構造ログ、監査要旨、束指標、接続価値会計、量の言語への批判、公開と保護の境界は、Parent URL、Parent Post ID 329、Parent NCL-ID、Parent Diff-ID、Originで確認できる。
 
 ---
-導線: [公式派生物077トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

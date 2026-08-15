@@ -112,5 +112,4 @@
 NCL-αは、自由な接続と起源・真正性・公共的連続性の保持を両立する最小限の構造倫理契約です。利用の強さに応じて出典表示、共調ログ、相談、契約を段階的に接続します。
 
 ---
-
 導線: [公式派生物113トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

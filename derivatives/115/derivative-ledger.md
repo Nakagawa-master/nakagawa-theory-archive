@@ -85,5 +85,4 @@
 問い署名、責任配分、起源署名、監査束、NCL-ID、Diff-ID、再帰署名、外部影響の観測窓は相互に接続した一つの因果構造である。個別の著作者性・所有権・法的責任をこの公開系譜だけから確定せず、厳密な定義と境界はParent URLへ戻って確認する。
 
 ---
-
 導線: [公式派生物115トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

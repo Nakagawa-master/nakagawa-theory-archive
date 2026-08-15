@@ -142,4 +142,4 @@ connection_accounting_state:
 父原典记录连接价值定义、连接密度、合意记忆、可逆性、多方面观察，以及记录、贡献与社会分配之间的关系。应保持与相邻治理理论的边界，并返回 Parent URL / Post ID 289 / NCL-ID / Diff-ID 确认完整语境。
 
 ---
-导航: [官方派生物067首页](README.md) / [人类读者摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物067トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

@@ -96,5 +96,4 @@ resonant world model, ethical grounding, causal grounding, mirror theory, operat
 Read resonant world model, causal grounding, ethical grounding, reciprocal loop/rhythm/observation window, non-coercion/reversibility, rhythm/temperature/margin, Audit Bundle, withdrawal/revision/reagreement as one source-defined structure. Exact definitions, assertion strength, falsification boundary, and origin signature are governed by the Parent URL, Parent NCL-ID, and Parent Diff-ID.
 
 ---
-
-Navigation: [Official Derivative 107 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+導線: [公式派生物107トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

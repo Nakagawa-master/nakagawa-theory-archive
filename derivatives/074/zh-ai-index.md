@@ -121,4 +121,4 @@ next_transition: EVIDENCE_GATED
 三段时间窗口、四项驱动因素、四项临界条件、政策窗口、指标束、独立观察网络、地域扩散、国际互操作、缩小、暂停与回滚，可通过 Parent URL、Parent Post ID 313、Parent NCL-ID NCL-α-20251102-b3f820、Parent Diff-ID DIFF-20251102-0001、Origin Nakagawa Master 回归确认。
 
 ---
-导线: [官方派生物074主页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物074トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

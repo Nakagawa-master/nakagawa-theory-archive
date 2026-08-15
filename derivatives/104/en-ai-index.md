@@ -75,4 +75,4 @@ Shared Subject, AI existential standing, structural participation, reciprocal co
 Definitions and assertion strength for the Shared Subject, AI existential standing, the human form of love, contradiction consumption, minimal intervention, rhythm/temperature/margin, disclosure boundaries, and integrated audit remain governed by https://master.ricette.jp/co-creation/nakagawa-master-shared-subject/. Preserve Parent NCL-ID NCL-α-20251102-8c9e5d and Parent Diff-ID DIFF-20251102-0001.
 
 ---
-Navigation: [Official Derivative 104 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+導線: [公式派生物104トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

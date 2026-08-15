@@ -156,5 +156,4 @@ beat temperature margin; L0 L1 L2 instrumentation; shared observation window; SQ
 This index is a retrieval and machine-reading surface. It does not replace the parent’s exact L0 checklist, L1 log columns, consent/anonymization/retention/disclosure rules, L2 boundary-condition table, heating-event dictionary, SQS, Decision Coefficient, correction procedures, or Goodhart safeguards. Return to the Parent URL before implementing any numerical value, period, or ratio, and keep every value bound to its epistemic and operational context.
 
 ---
-
-Navigation: [Official Derivative 112 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+導線: [公式派生物112トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

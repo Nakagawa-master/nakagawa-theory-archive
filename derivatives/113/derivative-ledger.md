@@ -78,5 +78,4 @@
 非商用／商用／要相談の厳密な境界、個別ケース、条文、改訂履歴、共調ログ、NCL-Registry α、NCL-ID、署名条件、契約導線は親原典および最新版NCL-αで確認する。本台帳は起源と派生系譜の公開入口であり、個別利用についての法的判断や契約成立を代替しない。
 
 ---
-
 導線: [公式派生物113トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

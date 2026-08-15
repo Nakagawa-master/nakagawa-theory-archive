@@ -131,4 +131,4 @@ decision: ADOPT | HOLD | REJECT | REVISE | REAGREE | EXIT
 心、主観、客観、自我、真我、記憶、視座可動域、人間とAIの比較、鏡の部屋・偏光フィルター・分岐樹の思考実験は、Parent URL、Parent Post ID 320、Parent NCL-ID、Parent Diff-ID、Originで確認できる。
 
 ---
-導線: [公式派生物076トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

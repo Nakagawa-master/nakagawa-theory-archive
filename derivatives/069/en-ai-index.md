@@ -155,4 +155,4 @@ Nakagawa connection protocol / social API / connection event / contextual identi
 The parent original records the full connection-event fields, state transitions, signatures, minimal disclosure, audit queries, compatibility, error handling, delegated authority, responsibility boundaries, standard change, and Reference Cluster as one connected structure. Return to the Parent URL / Post ID 295 / NCL-ID / Diff-ID for the complete definitions and observation modality.
 
 ---
-Navigation: [Official Derivative 069 hub](README.md) / [Human entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [English AI index](en-ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+導線: [公式派生物069トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

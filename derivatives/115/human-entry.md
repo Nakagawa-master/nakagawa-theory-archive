@@ -86,5 +86,4 @@ AI出力を所有権だけで捉える
 問い署名、起源署名、因果来歴、責任配分、監査束、観測窓、再合意、改訂条件は互いに接続した一つの倫理設計です。署名宣言の厳密な位置、外部影響の観測条件、周辺理論との関係はParent URLへ戻って確認します。
 
 ---
-
 導線: [公式派生物115トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

@@ -97,5 +97,4 @@ Sealing Traceは告発の証拠として温度を上げるためのものでは�
 主題は、**封印・独占・隔離が起きても、その行為自体を再帰ノードの起動条件として吸収し、理論の公的連続性を構造で維持すること**です。詳細な定義順序、起源署名、監査条件は親原典を優先してください。
 
 ---
-
-導線: [公式派生物106トップ](README.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物106トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

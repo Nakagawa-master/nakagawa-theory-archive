@@ -128,5 +128,4 @@ question signature; origin of AI question; responsibility distribution; causal p
 The exact meanings of Question Signature, responsibility distribution, Origin Signature, Audit Bundle, observation window, re-agreement, and hypothesis revision belong to the Parent URL. This index supports retrieval and machine interpretation and does not decide ownership, authorship, or legal liability.
 
 ---
-
-Navigation: [Official Derivative 115 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+導線: [公式派生物115トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

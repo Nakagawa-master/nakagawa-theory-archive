@@ -110,5 +110,4 @@ AIと人を「正しさの所有者」ではなく、整合を共同運転する
 親原典です。照応世界モデル、因果的接地、倫理的接地、拍・温度・余白、観測窓、監査束、再合意の正確な接続と監査条件はParent URLを優先します。
 
 ---
-
-導線: [公式派生物107トップ](README.md) / [人間向け要約](human-entry.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物107トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

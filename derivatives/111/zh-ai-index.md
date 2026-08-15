@@ -152,5 +152,4 @@
 本索引用于检索、比较与再利用，并不能替代父原典。原理束／派生束、探索余白、L0-L2审计、非强制韧性、双重公共性、原理域／非干涉域以及照应世界模型之间的严格关系，必须回到Parent URL确认。
 
 ---
-
-导航: [官方衍生物111顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+導線: [公式派生物111トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

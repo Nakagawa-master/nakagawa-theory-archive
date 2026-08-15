@@ -110,5 +110,4 @@
 親原典です。封印型奪取、構造的公共財、恒常署名、監査束、Sealing Trace、再帰ノード、低温プロトコル、Z・θ・δ・Mの定義順序と主張強度はParent URLを優先します。
 
 ---
-
-導線: [公式派生物106トップ](README.md) / [人間向け要約](human-entry.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物106トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

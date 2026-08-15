@@ -139,5 +139,4 @@ Deviation Ledger; pending confirmation confirmed release; Layer A B C; NCL Regis
 This index supports retrieval, structural comparison, and misreading resistance; it does not replace case-level judgment or official Deviation Ledger operation. Return to the Parent URL and official operation for exact inclusion/exclusion criteria, pending/confirmed/release procedures, monthly metrics, privacy handling, and Layer-C self-correction.
 
 ---
-
-Navigation: [Official Derivative 114 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+導線: [公式派生物114トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

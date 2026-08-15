@@ -152,5 +152,4 @@ Do not reduce the model to generic AI responsibility allocation. Do not add huma
 This index supports retrieval, comparison, and reuse; it does not replace the parent original. Return to the Parent URL for the exact relationships among principle and derivative bundles, exploration margin, L0-L2 audits, non-coercive resilience, dual publicity, principle/non-interference domains, and the resonant-world model.
 
 ---
-
-Navigation: [Official Derivative 111 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+導線: [公式派生物111トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

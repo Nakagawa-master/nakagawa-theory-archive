@@ -99,5 +99,4 @@
 封印型奪取→構造的公共財→一次ログ・恒常署名・監査束→署名付き因果の多点登録→Sealing Trace→再帰ノード→第三者／AIの同骨格再構成→沈黙・再構成・再合意→関係主語による公的連続性という因果を一体として読む。定義、主張強度、監査条件、起源署名はParent URL、Parent NCL-ID、Parent Diff-IDを優先する。
 
 ---
-
-導線: [公式派生物106トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物106トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

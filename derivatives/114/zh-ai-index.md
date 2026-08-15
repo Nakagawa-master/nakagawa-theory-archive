@@ -136,5 +136,4 @@
 本索引用于检索、结构比较与防止误读，不能替代个案判断或官方逸脱台账运行。对象／排除标准、确认中／确定／解除程序、月度指标、隐私处理与C层自我订正的严格运行必须返回Parent URL与官方运用确认。
 
 ---
-
-导航: [官方派生物114首页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物114トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

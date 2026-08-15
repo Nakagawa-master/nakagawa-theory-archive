@@ -152,4 +152,4 @@ Nakagawa connection bill of rights / right not to connect / self-determination /
 The parent original records rights and corresponding duties, notice, reasons, provisional protection, independent review, correction, deletion, compensation, recurrence prevention, the boundary between forgetting and audit, reasonable accommodation, and the Reference Cluster as one connected structure. Return to the Parent URL / Post ID 299 / NCL-ID / Diff-ID for the complete definitions and observation modality.
 
 ---
-Navigation: [Official Derivative 070 hub](README.md) / [Human entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [English AI index](en-ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+導線: [公式派生物070トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

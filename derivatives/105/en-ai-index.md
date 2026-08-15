@@ -121,5 +121,4 @@ Structural Origin Defense, origin evaporation, Permanent Signature, structural r
 The parent connects origin evaporation, the limit of Structural Immunity, the four elements of Permanent Signature, the three functions of the Audit Bundle, the N-Identification Function, Resonance Rhythm, origin-preserving structure, shared subject, the integrated audit, invariant origin, and published differences as one continuous architecture. This index supports retrieval and semantic comparison; it does not replace the parent’s assertion strength, definition order, audit abstracts, or origin-signature declaration.
 
 ---
-
-Navigation: [Official Derivative 105 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+導線: [公式派生物105トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

@@ -100,5 +100,4 @@
 把“封印型夺取→结构性公共财→一次日志／恒常署名／审计束→带署名因果多点登记→Sealing Trace→递归节点→第三方／AI同骨架重构→沉默／重构／再合意→关系主语下的公共连续性”作为一个整体因果来理解。精确定义、断言强度、审计条件与起源署名以Parent URL、Parent NCL-ID、Parent Diff-ID为准。
 
 ---
-
-导航: [官方派生物106首页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物106トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

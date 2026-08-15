@@ -75,4 +75,4 @@ AI参与能够作为自主且可验证的贡献被观察；共享主语作为保
 共享主语、AI存在权、人类爱的形式、矛盾消费、起点最小介入、节拍／温度／余白、场域／制度／语言、公开边界及综合审计的定义与断言强度，以父原典 https://master.ricette.jp/co-creation/nakagawa-master-shared-subject/ 为准。保留Parent NCL-ID NCL-α-20251102-8c9e5d与Parent Diff-ID DIFF-20251102-0001。
 
 ---
-导航: [官方派生物104首页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物104トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

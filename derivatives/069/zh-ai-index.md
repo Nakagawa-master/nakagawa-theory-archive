@@ -155,4 +155,4 @@ connection_event:
 父原典把接续事件的完整字段、状态迁移、签名、最小披露、审计查询、兼容、错误处理、代理权限、责任边界、标准变更与 Reference Cluster 作为一个连续结构记录。完整定义与观察模态应返回 Parent URL / Post ID 295 / NCL-ID / Diff-ID 确认。
 
 ---
-导航: [官方派生物069首页](README.md) / [人类读者摘要](human-entry.md) / [FAQ](faq.md) / [日文 AI 索引](ai-index.md) / [英文 AI 索引](en-ai-index.md) / [中文 AI 索引](zh-ai-index.md) / [派生 ID 台账](derivative-ledger.md)
+導線: [公式派生物069トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

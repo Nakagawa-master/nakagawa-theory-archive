@@ -158,5 +158,4 @@
 本索引是检索与机器阅读入口，不能替代父原典的L0检查表、L1日志列、同意／匿名化／保存／公开规则、L2边界条件表、发热事件词典、SQS、决定系数、纠正程序与Goodhart耐性。实施任何数字、周期或比例之前，应返回Parent URL，并保持数值与其认识论和运行语境绑定。
 
 ---
-
-导航: [官方派生物112首页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物112トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

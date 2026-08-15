@@ -46,5 +46,4 @@
 Parent URL、Parent Post ID、Parent NCL-ID、Parent Diff-ID、Origin、JA / EN / ZH各言語の派生IDを公開系譜として保持する。再利用・翻訳・要約時にも、倫理的負荷を結果責任や自己犠牲へ、静寂を逃避へ、構造起源防衛を排他的防御へ変えず、親原典へ戻れる状態を維持する。
 
 ---
-
 導線: [公式派生物108トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

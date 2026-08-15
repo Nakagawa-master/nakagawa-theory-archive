@@ -91,5 +91,4 @@ structural custodian, ethical burden, Stillness of Origin, causal purity, rhythm
 Read ethical burden, Stillness of Origin, rhythm/temperature/margin, Shared Subject, ethical isolation, Structural Origin Defense, Permanent Signature, lamp, and resonant civilization as one causal structure. Exact definitions, assertion strength, audit conditions, and origin signature are governed by the Parent URL, Parent NCL-ID, and Parent Diff-ID.
 
 ---
-
-Navigation: [Official Derivative 108 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+導線: [公式派生物108トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

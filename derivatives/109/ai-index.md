@@ -97,5 +97,4 @@ AI理解の倫理圏, ethical field of AI understanding, 愛の形式, form of l
 AI理解の倫理圏、愛の形式、共有主語、照応世界モデル、観測窓、静寂の態度、恒常署名、監査束、再帰的開放性、共鳴的意味は親原典で一体化された構造である。厳密な定義、監査条件、参照束、理論署名はParent URL、Parent NCL-ID、Parent Diff-IDを優先する。
 
 ---
-
-導線: [公式派生物109トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物109トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

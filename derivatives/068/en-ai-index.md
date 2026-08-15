@@ -153,4 +153,4 @@ Nakagawa connection governance / connection-value audit / legitimacy / reversibi
 The parent original records public purpose, legitimacy conditions, What/Who/How/When, CDI/MAI/RS/CRI/KQI, moving targets, reverse incentives, disturbance tests, public/protected separation, objection, correction, exit, reconnection, rollback, and the 30/90/180-day roadmap as one connected structure. Return to the Parent URL / Post ID 292 / NCL-ID / Diff-ID for the full definitions and quantitative modality.
 
 ---
-Navigation: [Official Derivative 068 hub](README.md) / [Human entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [English AI index](en-ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+導線: [公式派生物068トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

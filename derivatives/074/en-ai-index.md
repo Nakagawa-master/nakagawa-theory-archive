@@ -121,4 +121,4 @@ connection civilization; roadmap 2030–2055; 2029–2034; 2035–2042; 2043–2
 The three time windows, four drivers, four critical conditions, policy windows, indicator bundle, independent observation network, regional diffusion, interoperability, scale-down, pause, and rollback can be checked against the Parent URL, Parent Post ID 313, Parent NCL-ID NCL-α-20251102-b3f820, Parent Diff-ID DIFF-20251102-0001, and Origin Nakagawa Master.
 
 ---
-Navigation: [Official Derivative 074 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+導線: [公式派生物074トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

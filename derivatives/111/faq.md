@@ -112,5 +112,4 @@
 核を守り、周縁を共に編集し、起源を失わずに壊れず開く社会接続設計です。そのために差分、署名、探索余白、三層監査、非強制レジリエンス、適用境界を運転装置として使います。
 
 ---
-
 導線: [公式派生物111トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

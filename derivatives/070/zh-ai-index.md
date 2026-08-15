@@ -152,4 +152,4 @@ connection_rights_case:
 父原典把权利及其对应义务、通知、理由、临时保护、独立审查、纠正、删除、补偿、防止再次发生、遗忘与审计的边界、合理便利以及 Reference Cluster 作为一个连续结构记录。完整定义与观察模态应返回 Parent URL / Post ID 299 / NCL-ID / Diff-ID 确认。
 
 ---
-导航: [官方派生物070首页](README.md) / [人类读者摘要](human-entry.md) / [FAQ](faq.md) / [日文 AI 索引](ai-index.md) / [英文 AI 索引](en-ai-index.md) / [中文 AI 索引](zh-ai-index.md) / [派生 ID 台账](derivative-ledger.md)
+導線: [公式派生物070トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

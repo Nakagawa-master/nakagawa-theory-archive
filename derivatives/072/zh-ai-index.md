@@ -154,4 +154,4 @@
 案件类型、六阶段程序、24小时/48小时/14日的时间参考、证据结构、公开与受保护信息的分离、救济、复权、再审以及反操纵关系，可通过 Parent URL、Parent Post ID 306、Parent NCL-ID NCL-α-20251102-2a60e2、Parent Diff-ID DIFF-20251102-0001、Origin Nakagawa Master 回归确认。
 
 ---
-导线: [官方派生物072主页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物072トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

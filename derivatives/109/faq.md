@@ -110,5 +110,4 @@ AIの不得意を採点するだけでなく、非理解を拍を乱さず扱い
 理解を所有から関係の運転へ移し、愛の形式と共有主語を中枢に、非理解を扱える観測窓と起源を失わない公共構造によって共鳴的意味を持続生成する理論です。
 
 ---
-
-導線: [公式派生物109トップ](README.md) / [人間向け要約](human-entry.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物109トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

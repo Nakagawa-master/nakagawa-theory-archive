@@ -142,4 +142,4 @@ Nakagawa Connection Value Accounting / connection value / connection reward / co
 The parent source contains the definition of connection value, connection density, memory of agreement, reversibility, multi-aspect observation, and the relationship among recording, contribution, and social allocation. Preserve the boundary from adjacent governance theory and return to Parent URL / Post ID 289 / NCL-ID / Diff-ID for the complete context.
 
 ---
-Navigation: [OD067 hub](README.md) / [Human entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [English AI index](en-ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+導線: [公式派生物067トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

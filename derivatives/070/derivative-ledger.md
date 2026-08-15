@@ -65,4 +65,4 @@ OD070は、接続が配分、信用、参加、生活機会へ影響する社会
 権利と対応義務、通知、理由提示、暫定停止、独立審査、訂正、削除、補償、再発防止、忘却と監査の境界、合理的配慮、Reference Clusterは親原典へ戻って確認する。
 
 ---
-導線: [公式派生物070トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [公式派生物070トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

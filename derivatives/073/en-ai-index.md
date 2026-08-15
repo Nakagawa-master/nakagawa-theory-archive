@@ -159,4 +159,4 @@ connection public sphere OS; public good; CXP; connection accounting; connection
 The relations among CXP, accounting, governance, adjudication, basic rights, the municipal/university/corporate/citizen federation, CDI/MAI/RS, Self-Declared/Assessed/Certified, the D+90/D+180/D+365/D+730 staged reviews, and scale-down/suspension/rollback can be checked against the Parent URL, Parent Post ID 309, Parent NCL-ID NCL-α-20251102-737c51, Parent Diff-ID DIFF-20251102-0001, and Origin Nakagawa Master.
 
 ---
-Navigation: [Official Derivative 073 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+導線: [公式派生物073トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

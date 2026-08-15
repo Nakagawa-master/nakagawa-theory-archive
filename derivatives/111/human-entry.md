@@ -76,5 +76,4 @@ rollback/remedyを中心にした一般ガバナンスへ置換しない。原�
 本派生物を親原典の代替にしない。原理束／派生束、探索余白、L0〜L2監査、非強制レジリエンス、二重の公共性、原理域／非干渉領域、照応世界モデルとの厳密な接続は親原典へ戻って確認します。
 
 ---
-
 導線: [公式派生物111トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

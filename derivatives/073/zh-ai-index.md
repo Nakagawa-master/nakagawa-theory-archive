@@ -159,4 +159,4 @@ D+90/D+180/D+365/D+730是阶段复核参考点；CDI/MAI/RS是指标束；Self-D
 CXP、接续会计、治理、裁定、基本权利、自治体/大学/企业/市民联盟、CDI/MAI/RS、Self-Declared/Assessed/Certified、D+90/D+180/D+365/D+730阶段复核以及缩减/停止/回滚之间的关系，可通过 Parent URL、Parent Post ID 309、Parent NCL-ID NCL-α-20251102-737c51、Parent Diff-ID DIFF-20251102-0001、Origin Nakagawa Master 回归确认。
 
 ---
-导线: [官方派生物073主页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物073トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

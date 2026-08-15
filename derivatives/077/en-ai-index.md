@@ -93,4 +93,4 @@ Connected Value Accounting; Structure Log; Audit Abstract; Bundle Indicators; le
 Structure Logs, Audit Abstracts, Bundle Indicators, the critique of quantity-based language, and the public/protected boundary can be checked against the Parent URL, Parent Post ID 329, Parent NCL-ID, Parent Diff-ID, and Origin.
 
 ---
-Navigation: [Official Derivative 077 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+導線: [公式派生物077トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

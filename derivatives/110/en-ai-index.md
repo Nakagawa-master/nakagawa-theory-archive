@@ -178,4 +178,4 @@ Do not reduce the Third Layer to generic change management, rollback governance,
 The parent connects ethical rigidity, ethical-weight recalibration, observation/attunement phases, structural-necessity/emergent-freedom domains, non-intervention, translation transparency, dual-door audit, structural elitism, Permanent Signature, Audit Bundle, Recursive Openness, and open reagreement/falsification windows as one Third-Layer design. Return to the Parent URL for exact boundaries, tags, audit conditions, and reference bundles.
 
 ---
-Navigation: [Official Derivative 110 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [English AI index](en-ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+導線: [公式派生物110トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

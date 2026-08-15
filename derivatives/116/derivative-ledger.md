@@ -69,5 +69,4 @@ derivative-ledger.md:
 問いの墓標化、署名なき記憶、照応波形、問いの再署名、構造律動、未来配分、信用単位、地域固有の拍・温度・余白、統合監査・局所監査の厳密な意味は親原典に依存する。派生面から判断を確定せず、Parent URL、Parent NCL-ID、Parent Diff-ID、Originへ戻って確認する。
 
 ---
-
 導線: [公式派生物116トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

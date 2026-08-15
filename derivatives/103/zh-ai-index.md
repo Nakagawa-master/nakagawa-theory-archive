@@ -74,4 +74,4 @@
 “起点的寂静”、最小介入、最大涌现、多点照应、摩擦正置换、语言／制度／场域、公开边界以及综合审计A→B／T/S/R／θ／δ／M的定义与断言强度，以父原典 https://master.ricette.jp/tomoshibi/nakagawa-master-stillness-of-origin-and-minimal-intervention/ 为准。保留Parent NCL-ID NCL-α-20251102-16f66d与Parent Diff-ID DIFF-20251102-0001。
 
 ---
-导航: [官方派生物103首页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物103トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

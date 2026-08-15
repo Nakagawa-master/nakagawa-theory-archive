@@ -96,5 +96,4 @@
 应把照应世界模型、因果接地、伦理接地、往返／节拍／观察窗口、非强制／可逆性、节拍／温度／余白、审计束、撤回／修订／再合意作为一个整体结构阅读。精确定义、断言强度、反证边界与起源署名以Parent URL、Parent NCL-ID、Parent Diff-ID为准。
 
 ---
-
-导航: [官方派生物107首页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物107トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

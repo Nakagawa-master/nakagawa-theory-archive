@@ -184,5 +184,4 @@
 A/B/C三層、確認中・確定・回復・解除の公開手順、対象／除外基準、月次メトリクス、匿名性、不要個人情報の削除、C層自己訂正の厳密運用は親原典と公式運用へ戻って確認する。
 
 ---
-
 導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

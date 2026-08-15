@@ -64,5 +64,4 @@
 倫理的接地も、一般的な禁止リストや法務・安全チェックへ縮約しません。関係側への主語移動、非強制・可逆性、拍・温度・余白、観測窓、監査束、再合意という原典固有の構造を保持します。
 
 ---
-
-導線: [公式派生物107トップ](README.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物107トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

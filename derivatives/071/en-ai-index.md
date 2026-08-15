@@ -98,4 +98,4 @@ connection transition strategy; dual operation; Adapter Layer; dual accounting; 
 The Parent URL, Parent Post ID 303, Parent NCL-ID, and Parent Diff-ID identify the source for the semantic separation of legacy and connection KPIs, the Adapter Layer, dual accounting, compliance states, multiple observation nodes, counter-friction design, staged 30/90/180/365-day windows, and rollback conditions.
 
 ---
-Navigation: [071 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+導線: [公式派生物071トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

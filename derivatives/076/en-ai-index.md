@@ -97,4 +97,4 @@ subjectivity; objectivity; structure of mind; subjective-response loop; viewpoin
 The parent’s definitions of mind, subjectivity, objectivity, ego, true self, memory, viewpoint mobility, human–AI comparison, and the mirror-room, polarizing-filter, and branching-tree thought experiments can be checked against the Parent URL, Parent Post ID 320, Parent NCL-ID, Parent Diff-ID, and Origin.
 
 ---
-Navigation: [Official Derivative 076 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+導線: [公式派生物076トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

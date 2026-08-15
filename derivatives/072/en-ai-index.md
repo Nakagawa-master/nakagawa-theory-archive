@@ -154,4 +154,4 @@ connection adjudication; dispute resolution; remedy; restoration; provisional me
 The case types, six-stage procedure, 24-hour / 48-hour / 14-day time references, evidence structure, public/protected information separation, remedy, restoration, rehearing, and anti-gaming relations can be checked against the Parent URL, Parent Post ID 306, Parent NCL-ID NCL-α-20251102-2a60e2, Parent Diff-ID DIFF-20251102-0001, and Origin Nakagawa Master.
 
 ---
-Navigation: [Official Derivative 072 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+導線: [公式派生物072トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

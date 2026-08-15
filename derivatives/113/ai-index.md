@@ -128,5 +128,4 @@ NCL-α; NCL alpha practical guide; 非商用 商用; 構造倫理契約; 倫理�
 本索引は検索・一次判定・誤読防止の入口であり、NCL-α本文や個別契約判断を置換しない。条文、最新改訂、共調ログ、NCL-ID、契約導線、非商用／商用／要相談の厳密な条件はParent URLおよび最新版公式NCL-αへ戻って確認する。
 
 ---
-
 導線: [公式派生物113トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

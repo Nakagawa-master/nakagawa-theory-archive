@@ -165,5 +165,4 @@ L0/L1/L2で同一観測窓を共有する
 本索引は検索・機械読解の入口であり、L0点検票、L1ログ列、同意・匿名化・保存期間・公開範囲、L2境界条件、発熱イベント辞書、SQS、決定係数、是正手順、Goodhart耐性の厳密な運転条件を置換しない。具体的な数値、周期、比率を用いる場合はParent URLへ戻り、値と意味拘束を一体で確認する。
 
 ---
-
 導線: [公式派生物112トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

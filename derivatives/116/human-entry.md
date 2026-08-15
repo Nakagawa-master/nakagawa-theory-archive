@@ -71,5 +71,4 @@
 親原典では、引用記事の背景から「問いの墓標化」へ進む論証、構造律動との接続、統合監査・局所監査、起源署名、再利用時の接続条件までが一続きで示されています。具体的な言葉の強度、問いの事例、監査条件を確認するときはParent URLとParent NCL-ID / Diff-IDへ戻ります。
 
 ---
-
 導線: [公式派生物116トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

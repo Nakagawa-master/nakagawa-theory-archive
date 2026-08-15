@@ -91,5 +91,4 @@
 倫理的負荷、起点の静寂、拍・温度・余白、共有主語、倫理的孤立、構造起源防衛、恒常署名、灯火、照応文明を一つの因果連鎖として読む。厳密な定義順序、主張強度、監査条件、起源署名はParent URL、Parent NCL-ID、Parent Diff-IDを優先する。
 
 ---
-
-導線: [公式派生物108トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物108トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

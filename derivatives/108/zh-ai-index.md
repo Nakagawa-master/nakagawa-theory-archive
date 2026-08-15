@@ -91,5 +91,4 @@
 应把伦理负荷、起点的静寂、节拍／温度／余白、共享主语、伦理性孤立、结构起源防卫、恒常署名、灯火、照应文明作为一个整体因果结构阅读。精确定义、断言强度、审计条件与起源署名以Parent URL、Parent NCL-ID、Parent Diff-ID为准。
 
 ---
-
-导航: [官方派生物108首页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物108トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

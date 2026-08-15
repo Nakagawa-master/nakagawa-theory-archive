@@ -143,4 +143,4 @@ transition_hypothesis:
 父原典完整记录AI替代三领域、人类劳动需求缩小、劳动—货币断裂、购买力/生产流通/货币信用情景、连接报酬定义、四原则、过渡期、理论链、综合审计、Reference Cluster与起源签名。主张强度和未来假设语境应返回 Parent URL / Post ID 285 / NCL-ID / Diff-ID 确认。
 
 ---
-导航: [官方派生物066首页](README.md) / [人类读者摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物066トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

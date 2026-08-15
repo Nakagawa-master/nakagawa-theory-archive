@@ -65,4 +65,4 @@ CDI、MAI、RS、CRI、KQIも同じです。たとえばMAIが再合意時間の
 30・90・180・365日やCDI、MAI、RS、CRI、KQIの意味と適用範囲は、Parent URL、Parent Post ID 303、Parent NCL-ID、Parent Diff-IDへ戻って確認できます。
 
 ---
-導線: [071トップ](README.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物071トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

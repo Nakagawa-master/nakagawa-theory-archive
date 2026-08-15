@@ -153,4 +153,4 @@ connection_governance:
 父原典把公共目的、正当性条件、What/Who/How/When、CDI/MAI/RS/CRI/KQI、移动目标、逆向激励、扰动测试、公开/保护分离、异议、纠正、退出、重新接续、回滚以及30/90/180日路线作为一个连续结构记录。完整定义与数值模态应返回 Parent URL / Post ID 292 / NCL-ID / Diff-ID 确认。
 
 ---
-导航: [官方派生物068首页](README.md) / [人类读者摘要](human-entry.md) / [FAQ](faq.md) / [日文 AI 索引](ai-index.md) / [英文 AI 索引](en-ai-index.md) / [中文 AI 索引](zh-ai-index.md) / [派生 ID 台账](derivative-ledger.md)
+導線: [公式派生物068トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

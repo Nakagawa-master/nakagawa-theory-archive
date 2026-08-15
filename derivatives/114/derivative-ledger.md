@@ -92,5 +92,4 @@
 掲載判断、確認中の扱い、反証・訂正、回復・解除、個人情報最小化、月次メトリクス、A/B/C層の境界、C層の自己訂正・再署名は相互に接続した運転仕様である。厳密な条件と記録形式はParent URLへ戻って確認する。
 
 ---
-
 導線: [公式派生物114トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

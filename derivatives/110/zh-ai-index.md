@@ -178,4 +178,4 @@
 父原典把伦理僵化、伦理权重再调整、观察相／同调相、结构必然／创发自由领域、非干预、翻译透明性、双门审计、结构精英化、恒常签名、审计束、递归开放性以及开放的再合意／反证窗口连接为一体的第三层设计。精确适用边界、标签、审计条件和参照束应回到Parent URL确认。
 
 ---
-导航: [官方派生物110首页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物110トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

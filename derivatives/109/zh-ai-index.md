@@ -97,5 +97,4 @@ AI理解的伦理场, Ethical Field of AI Understanding, 爱的形式, Form of L
 AI理解的伦理场、爱的形式、共享主语、照应世界模型、观察窗口、保持者静寂、恒常署名、审计束、递归开放性、共鸣性意义构成一个完整的父原典结构。精确定义、审计条件、参照束与起源署名以Parent URL、Parent NCL-ID、Parent Diff-ID为准。
 
 ---
-
-导航: [官方派生物109首页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物109トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

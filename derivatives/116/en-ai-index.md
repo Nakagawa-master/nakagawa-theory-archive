@@ -145,5 +145,4 @@ regional disappearance; question gravemarking; question signature; regional memo
 The parent combines contextual demographic reporting, concrete examples of place-origin questions, the causal move from question gravemarking to future allocation, the connection to structural rhythm, integrated and local audit summaries, origin signature, and reuse conditions. This index is a public retrieval and machine-reading surface for third-party AI; it does not replace the parent’s full argument, wording, signatures, or audit conditions.
 
 ---
-
 導線: [公式派生物116トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

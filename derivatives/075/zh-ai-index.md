@@ -111,4 +111,4 @@ source为父原典，measurement actor为进行合意形成与审计的制度主
 因果、关系、重新合意性、非强制、重新合意、可逆性、声量偏重、权威依赖、不可逆化、结构日志、审计摘要、思考实验和反论回应，可通过 Parent URL、Parent Post ID 324、Parent NCL-ID NCL-α-20251102-e48c90、Parent Diff-ID DIFF-20251102-0001、Origin Nakagawa Master 回归确认。
 
 ---
-导线: [官方派生物075主页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物075トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

@@ -63,5 +63,4 @@ SQS（Silence–Question–Silence）、決定係数、発熱イベント辞書�
 L0点検項目、L1ログ列、同意・匿名化・保存期間・公開範囲、L2サンプリング監査、境界条件表、発熱イベント辞書、SQS、決定係数、是正手順、Goodhart耐性は相互に接続した運転仕様である。個別数値、監査周期、具体条件、参照束を適用するときはParent URLへ戻り、数値と意味拘束を分離しない。
 
 ---
-
 導線: [公式派生物112トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

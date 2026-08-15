@@ -143,4 +143,4 @@ Nakagawa monetary society limits / AI labor substitution / labor-money decouplin
 The parent contains the three substitution domains, contraction of labor demand, labor-money break, purchasing-power/production/distribution/monetary-credibility scenario, definition of connection reward, four principles, transition phase, theoretical sequence, integrated audit, Reference Cluster, and origin signature. Return to Parent URL / Post ID 285 / NCL-ID / Diff-ID for full claim strength and forecast context.
 
 ---
-Navigation: [OD066 hub](README.md) / [Human entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [English AI index](en-ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+導線: [公式派生物066トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

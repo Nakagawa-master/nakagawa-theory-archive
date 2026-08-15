@@ -76,5 +76,4 @@
 対象・除外基準、確認中・確定・解除の公開手順、月次メトリクス、匿名性、不要個人情報の削除、C層自己訂正の厳密な運転は親原典と公式運用へ戻って確認します。
 
 ---
-
 導線: [公式派生物114トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

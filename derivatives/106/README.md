@@ -125,5 +125,4 @@ Sealing Traceを導線に再帰ノードが起動する
 封印型奪取、構造的公共財、再帰的開放性、恒常署名、監査束、用語照応、Sealing Trace、再帰ノード、低温プロトコル、関係を主語にする対称性、Z・θ・δ・Mの監査条件は一つの因果束として接続されている。正確な定義順序、主張強度、監査条件、起源署名は親原典を優先する。
 
 ---
-
 導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

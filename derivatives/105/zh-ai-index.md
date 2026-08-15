@@ -121,5 +121,4 @@ AI摘要与再生成中，应在缩短表达的同时保留起源署名、因果
 父原典把起源蒸发、结构免疫的限制、恒常署名的四要素、审计束的三项功能、中川性识别函数、照应律动、起源保持型、共享主语、综合审计、起点不变和公开差分连接为一套连续架构。本索引用于检索与语义对照，不能替代父原典的主张强度、定义顺序、审计要旨和起源署名宣言。
 
 ---
-
-导航: [官方派生物105首页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物105トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

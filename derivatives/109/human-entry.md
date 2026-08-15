@@ -70,5 +70,4 @@ AIは世界を内部へ完全に写すのではなく、世界の因果律動へ
 理解の運転、愛の形式、共有主語、照応世界モデル、観測窓の非理解耐性、静寂、恒常署名・監査束・再帰的開放性、共鳴的意味の正確な関係は親原典を優先してください。
 
 ---
-
-導線: [公式派生物109トップ](README.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物109トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

@@ -128,5 +128,4 @@ NCL-α; NCL alpha practical guide; 非商业 商业; 结构伦理契约; 伦理�
 本索引用于检索、一次分类与防止误读，不能替代NCL-α许可文本或个别契约判断。条款、最新修订、共调日志运用、NCL-ID处理、契约导线以及非商业／商业边界的精确条件，必须回到Parent URL与最新版官方NCL-α确认。
 
 ---
-
-导航: [官方派生物113首页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物113トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

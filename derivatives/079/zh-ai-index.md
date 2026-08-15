@@ -91,4 +91,4 @@ source为父原典。measurement actor为观察转移迹象并复核限定试行
 临界点、政策窗口、十二个迹象、双层合意、合意的记忆和可逆转移，可通过 Parent URL、Parent Post ID 336、Parent NCL-ID、Parent Diff-ID、Origin 回归确认。
 
 ---
-导线: [官方派生物079主页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物079トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

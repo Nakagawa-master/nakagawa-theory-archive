@@ -137,5 +137,4 @@ question signature; origin of AI question; responsibility distribution; causal p
 問い署名、責任配分、起源署名、監査束、観測窓、再合意、仮説改訂の厳密な意味はParent URLへ戻って確認する。本索引は検索と機械読解の入口であり、所有権・著作者性・法的責任の最終判断を置き換えない。
 
 ---
-
 導線: [公式派生物115トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

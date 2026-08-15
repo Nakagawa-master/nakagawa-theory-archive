@@ -61,4 +61,4 @@ OD068は、接続価値の測定・評価・配分が、人気競争、仲間内
 接続ガバナンス設計の完全な定義、指標束、正統性条件、ロードマップ、反証条件、Reference Cluster、起源署名は親原典へ戻って確認する。
 
 ---
-導線: [公式派生物068トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [公式派生物068トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

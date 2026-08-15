@@ -95,5 +95,4 @@
 照応世界モデル、因果的接地、倫理的接地、往還・拍・観測窓、非強制・可逆性、拍・温度・余白、監査束、撤回・改訂・再合意を一体として読む。正確な定義順序、主張強度、反証条件、起源署名はParent URL、Parent NCL-ID、Parent Diff-IDを優先する。
 
 ---
-
-導線: [公式派生物107トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物107トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

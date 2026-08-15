@@ -142,5 +142,4 @@ Silence–Question–Silenceです。短い沈黙、検証可能な問い、再�
 拍・温度・余白を共有観測窓で測り、逸脱を人ではなく事象として捉え、最小介入で戻し、その履歴を検証可能にする構造倫理の運転プロトコルです。
 
 ---
-
 導線: [公式派生物112トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
