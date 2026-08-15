@@ -10,45 +10,37 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-0ED513-HUB-JA-0098-0000
-- derivative_diff_id: DDIFF-20260810-DNCL-098-0000-0002
-- supersedes: DDIFF-20260808-DNCL-098-0000-0001
+- derivative_diff_id: DDIFF-20260815-DNCL-098-0000-0003
+- supersedes: DDIFF-20260810-DNCL-098-0000-0002
 
 ## Language derivative IDs
-| language | derivative_ncl_id | derivative_diff_id | supersedes |
-|---|---|---|---|
-| JA | DNCL-NCL-ALPHA-20251102-0ED513-HUB-JA-0098-0000 | DDIFF-20260810-DNCL-098-0000-0002 | DDIFF-20260808-DNCL-098-0000-0001 |
-| EN | DNCL-NCL-ALPHA-20251102-0ED513-HUB-EN-0098-0001 | DDIFF-20260810-DNCL-098-0001-0002 | DDIFF-20260808-DNCL-098-0001-0001 |
-| ZH | DNCL-NCL-ALPHA-20251102-0ED513-HUB-ZH-0098-0002 | DDIFF-20260810-DNCL-098-0002-0002 | DDIFF-20260808-DNCL-098-0002-0001 |
+```yaml
+ja_ncl_id: DNCL-NCL-ALPHA-20251102-0ED513-HUB-JA-0098-0000
+ja_diff_id: DDIFF-20260815-DNCL-098-0000-0003
+en_ncl_id: DNCL-NCL-ALPHA-20251102-0ED513-HUB-EN-0098-0001
+en_diff_id: DDIFF-20260815-DNCL-098-0001-0003
+zh_ncl_id: DNCL-NCL-ALPHA-20251102-0ED513-HUB-ZH-0098-0002
+zh_diff_id: DDIFF-20260815-DNCL-098-0002-0003
+```
 
-## Factory
-- golden_master: OD085
-- factory_version: 2.0-semantic-repair
-- repair_mode: SOURCE_VERIFIED_FAIL_CLOSED
-- github_actions_used: false
+## 公開系譜
+親原典は、未来を外部から当てる予測対象としてではなく、構造律動が自己維持・自己増幅することで因果が自励振動し、一定の方向性が「構造的必然」として立ち上がる過程を論じる。中心には、社会的記憶、未来の負債、時間倫理、起点設計があり、現在の反復が将来条件を形成し、その将来条件が現在の選択を再び拘束する再帰構造が置かれる。
 
-## Retrieval evidence
-- parent_post_id: 605
-- parent_ncl_id: NCL-α-20251102-0ed513
-- parent_slug: nakagawa-master-causality-self-oscillation-future-inevitability
-- parent_canonical_url: https://master.ricette.jp/future/nakagawa-master-causality-self-oscillation-future-inevitability/
-- xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-- source_routes_used: live canonical parent / canonical index / Brain Vault XML provenance / structured AI retrieval index
-- source_semantic_revalidation: PASS
+ただし原典の「必然」は完全予知や決定論ではない。位相、振幅、外乱、反例、修復可能性を残したまま、どの未来が生じやすい構造になっているかを読む。起点設計の三原則、公開五準則、秘匿境界、統合監査要旨を通じて、未来の設計と予測不能性の縮減を、不可逆な支配や万能予測へ変換しない。
 
-## Semantic repair
-保持: 自励振動準構文、構造的必然と非決定論の両方、社会的記憶・未来の負債・時間倫理、起点設計三原則、公開五準則、秘匿境界、統合監査要旨。
+## 7面対応
+```yaml
+README.md: JA_HUB
+human-entry.md: JA_HUMAN_ENTRY
+faq.md: JA_FAQ_Q1_Q30
+ai-index.md: JA_AI_INDEX
+en-ai-index.md: EN_AI_INDEX
+zh-ai-index.md: ZH_AI_INDEX
+derivative-ledger.md: PUBLIC_LINEAGE
+```
 
-除去・非公式化: 完全予知への読み替え、原典にない一般安全・法務条件、派生独自の反証条件、非公開アルゴリズム・閾値のAI補完。
-
-## Seven surfaces
-- README.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- human-entry.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- faq.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- en-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- zh-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- derivative-ledger.md: PASS_LINEAGE_UPDATED
+## 原典回帰
+因果律の自励振動、構造律動、構造的必然、社会的記憶、未来の負債、時間倫理、起点設計三原則、公開五準則、秘匿境界、統合監査要旨の記号・閾値・観測窓は親原典へ戻って確認する。原典が具体値を示さない閾値・観測窓・非公開アルゴリズムを派生側で補完しない。
 
 ---
-
 導線: [公式派生物098トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
