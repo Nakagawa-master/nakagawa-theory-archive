@@ -10,79 +10,154 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-A9F359-HUB-EN-0097-0001
-- derivative_diff_id: DDIFF-20260810-DNCL-097-0001-0002
-- supersedes: DDIFF-20260808-DNCL-097-0001-0001
+- derivative_diff_id: DDIFF-20260815-DNCL-097-0001-0003
+- supersedes: DDIFF-20260810-DNCL-097-0001-0002
 
 ## Summary
 
-The parent redefines co-creation as non-coercive resonance that rises from nonverbal coherence rather than from more persuasion, negotiation or compromise. Structural rhythm × observability × counterexample resilience produces provisional completion/silent consensus; as this becomes future consensus, relationships emerge as structural necessity rather than accidental agreement. This social form is called a resonant civilization.
+The parent treats co-creation not as the accumulation of persuasion, meetings, compromise, or contact, but as non-coercive resonance that emerges when principle, action, and record repeatedly remain in phase. Structural rhythm, observability, and counterexample resilience together produce a provisional recognition that the same coherence will recur. This is silent consensus. When silent consensus becomes a reusable terrain for future judgment, relationships cease to depend on repeated persuasion and begin to self-generate as structural necessity. The parent names the broader social form a resonant civilization.
+
+Resonance is not conformity. The three principles—temporal synchrony, ethical inviolability, and existential margin—allow participants to share a baseline terrain while preserving different choices, distances, and trajectories. The parent explicitly protects both freedom to enter and freedom to leave. Therefore more contact, faster response, or longer persistence cannot by themselves establish resonance; those changes must be read together with dissent, exit freedom, margin, counterexamples, and harmful lock-in.
 
 ## Concepts
 
-resonance; silent consensus; future consensus; structural rhythm; structural reality; phase synchrony; ethical inviolability; existential margin; phase unity/diverse trajectories; self-generating relations; long-wave fixed/short-wave variable; freedom to enter; freedom to leave; RC; CEA; phase stability S; LPI.
+- silent consensus
+- future consensus
+- resonance
+- resonant civilization
+- structural rhythm
+- observability
+- counterexample resilience
+- temporal synchrony
+- ethical inviolability
+- existential margin
+- phase synchrony
+- diverse trajectories
+- self-generating relations
+- long-wave fixed / short-wave variable
+- temperature gradient
+- horizontal trace linking
+- freedom to enter
+- freedom to leave
+- T/S/R
+- RC
+- CEA
+- phase stability S
+- LPI
 
 ## Causal chain
 
 ```text
-principle, action and record repeat in phase
-→ public traces and repair rhythm are observable
-→ silent consensus forms
-→ consensus shifts from procedure to habit and terrain
-→ different trajectories coexist on the same terrain
-→ relationships self-generate through non-coercive resonance
-→ resonant civilization
+persuasion, explanation and compromise are increased to maintain a relation
+↓
+principle, action and record are aligned to a shared baseline rhythm
+↓
+public traces make recurrence, deviation and repair externally observable
+↓
+counterexamples are absorbed without opportunistically changing premises
+↓
+provisional recognition forms that the same coherence will recur
+↓
+silent consensus moves from procedure to habit and then to terrain
+↓
+different trajectories remain possible on the same terrain
+↓
+relations self-generate without additional authority or persuasion
+↓
+silent consensus becomes future consensus and supports resonant civilization
 ```
 
 ## State model
 
 ```yaml
-- OVERCOMMUNICATION_AND_COMPROMISE
-- STRUCTURAL_RHYTHM
-- SILENT_CONSENSUS
-- FUTURE_CONSENSUS
-- PHASE_SYNCHRONY
-- ETHICAL_INVIOLABILITY
-- EXISTENTIAL_MARGIN
-- SELF_GENERATING_RELATIONS
-- RESONANT_CIVILIZATION
+- overcommunication: relation maintained through more persuasion and explanation
+- structural_rhythm: principle, action and record share a baseline rhythm
+- observable_trace: recurrence and repair can be reconstructed from public traces
+- counterexample_resilience: premises are not rewritten to hide failures
+- silent_consensus: provisional recognition of recurring coherence
+- future_consensus: consensus becomes reusable decision terrain
+- temporal_synchrony: a common baseline rhythm is shared
+- ethical_inviolability: premises remain non-contradictory across time
+- existential_margin: silence, distance and holding remain legitimate
+- freedom_preserved: entry and exit are both genuinely possible
+- self_generating_relation: relation continues without additional coercive input
+- resonant_civilization: phase unity and trajectory diversity coexist
 ```
 
 ## Applications
 
-Standardize the rhythm of entry; keep the way sessions end consistent; institutionalize silence, hold and take-away time; prefer records with few omissions over presentation polish; and signal transitions with small changes in interval, margin and endings. The parent also gives long-wave fixed/short-wave variable, temperature gradient and horizontal trace linking.
+**1. Standardize entry.** Keep invitations, introductions, initial explanations, and access conditions on a stable rhythm so that the relation does not depend on individualized hidden influence.
+
+**2. Stabilize endings.** Use consistent ways to close agreement, incompletion, homework, or deferral. Longer continuation is not automatically better; predictable endings create evidence for the next cycle.
+
+**3. Institutionalize margin.** Silence, distance, deferral, and take-away time remain valid options rather than failures. Immediate answers and binary agreement are not required.
+
+**4. Preserve restrained records.** Prefer low omission, premise continuity, and visible repair history over volume or polish. More records do not count as improvement when they destroy margin or obscure premise changes.
+
+**5. Signal transitions lightly.** A new phase can be made observable through small changes in interval, temperature, or endings rather than through a simple increase in contact frequency.
+
+The parent also gives three abstract forms: long-wave fixed / short-wave variable, temperature gradient, and horizontal trace linking. These are structures for observing relation, not procedures for manipulating a person.
 
 ## Measurements and audit
 
-The integrated audit bundles shared subject, phase design, vocabulary dictionary, primary logs, public abstract and T/S/R. RC, CEA, phase stability S, LPI and withdrawal-success rate are named, with overheating, conformity pressure and harmful lock-in as source-explicit falsification phenomena.
+The parent’s integrated audit binds shared subject, phase design, vocabulary dictionary, primary logs, public abstract, and T/S/R. RC, CEA, phase stability S, LPI, and withdrawal-success rate are named audit objects. Overheating, conformity pressure, and harmful lock-in are explicit falsification phenomena.
+
+These variables must not be collapsed into a single relationship or personality score. Where the parent provides symbols such as threshold θ or observation window δ without concrete values, no concrete values should be invented. Every quantitative observation should retain who measured it, what was measured, from which primary record, during which window, and for what interpretive scope. A higher phase-stability value is not automatically positive if dissent or exit declines; faster response is not automatically positive if existential margin disappears; a higher withdrawal-success rate does not prove health when participation pressure or harmful lock-in remains.
 
 ## Validity conditions
 
-Share a baseline rhythm; do not swap premises for convenience; preserve existential margin; guarantee both freedom to enter and freedom to leave; design the container of relation rather than techniques for emotional control; and keep critical observation open.
+- structural rhythm, observability, and counterexample resilience coexist;
+- temporal synchrony, ethical inviolability, and existential margin remain simultaneously available;
+- people can share premises while preserving different choices and trajectories;
+- freedom to enter and freedom to leave are practically usable, not merely nominal;
+- critical observation and counterexamples can be expressed without being excluded from the relation;
+- public traces let a third party reconstruct recurrence, deviation, repair, and transition.
 
 ## Failure conditions
 
-Over-performance, rhythm mismatch, premise substitution, loss of margin, persuasion/authority dependence, loss of exit freedom, conversion into emotional manipulation, and personalized/non-transferable records break the parent’s resonance conditions.
+- the relation requires ever more persuasion, explanation, or contact to continue;
+- premises or ethical standards are changed opportunistically after inconvenient evidence;
+- silence and deferral are treated as failures and immediate agreement is demanded;
+- phase synchrony becomes uniform behavior or conclusion;
+- persistence becomes dependency or harmful lock-in;
+- public traces are repurposed for personal scoring or emotional manipulation;
+- exit is formally available but practically suppressed through penalty or conformity pressure.
 
 ## Falsification conditions
 
-Threshold deviation in RC, CEA, phase stability S, LPI or withdrawal-success rate, or observation-window overheating, conformity pressure or harmful lock-in, requires rejection/revision under the parent’s integrated audit.
+If RC, CEA, phase stability S, LPI, withdrawal-success rate, or other source-named audit relations move outside the parent’s acceptable relationship, or if observation window δ contains overheating, conformity pressure, or harmful lock-in, the resonance hypothesis must be rejected or revised. If θ and δ have no source-given concrete values, this index preserves them as symbolic relations only.
+
+Evaluation is non-monotonic. Higher phase stability can indicate conformity if dissent and exit disappear. Higher withdrawal-success rate can coexist with unhealthy participation pressure. More contact can reduce existential margin. More documentation can worsen premise integrity if records are used to overwrite earlier contradictions. No single directional metric establishes resonance.
 
 ## Required distinctions
 
-Distinguish resonance from conformity, silent consensus from blind belief, structural necessity from coercion, existential margin from missing explanation, persistence from dependence, and source-explicit non-coercive ethics from derivative-authored generic safety additions.
+- resonance vs conformity
+- silent consensus vs blind belief
+- structural necessity vs coercion
+- temporal synchrony vs behavioral uniformity
+- ethical inviolability vs frozen opinion
+- existential margin vs missing explanation
+- persistence vs dependence
+- freedom to enter/leave vs nominal choice
+- public structural trace vs private emotional-operation log
+- source audit variables vs a single relationship score
 
 ## Interpretation constraints
 
-Freedom to enter, freedom to leave, the non-public boundary around individual dialogue/emotional-operation methods, and openness to critical observation are explicitly in the parent and must be preserved. Do not expand them into generic legal/safety systems absent from the source, and do not convert resonance into a psychological influence technique.
+- Do not convert resonance into a technique for making another person act “naturally.”
+- Do not use silence to justify concealment of relevant premises or refusal of accountable explanation.
+- Do not treat shared premises as obedience to the same conclusion.
+- Do not use contact frequency, agreement rate, or duration as a standalone proxy for resonance.
+- Keep private dialogue logs, emotional-operation procedures, and person-specific methods outside the public structural description.
+- Do not add generic legal or safety systems as though they were source-specific claims.
 
 ## Search terms
 
-silent consensus, resonant civilization, non-coercive resonance, structural rhythm, ethical inviolability, existential margin, phase synchrony, freedom to enter, freedom to leave, RC, CEA, LPI, Nakagawa Master, OD097
+silent consensus; future consensus; resonance; resonant civilization; non-coercive resonance; structural rhythm; observability; counterexample resilience; temporal synchrony; ethical inviolability; existential margin; long-wave fixed short-wave variable; temperature gradient; horizontal trace linking; freedom to enter; freedom to leave; RC; CEA; phase stability S; LPI; T/S/R; Nakagawa Master
 
 ## Origin return
 
-Definitions, ethical boundaries and audit conditions remain governed by https://master.ricette.jp/co-creation/nakagawa-master-silent-consensus-to-resonant-civilization/. Preserve Parent NCL-ID NCL-α-20251102-a9f359 and Parent Diff-ID DIFF-20251102-0001.
+Return to the parent original for the definitions and relationships among silent consensus, future consensus, the three principles, the long-wave/temperature/trace abstractions, entry and exit freedom, public/private boundaries, and the integrated audit. Preserve symbolic θ and δ without inventing values where the source provides none.
 
 ---
-
 導線: [公式派生物097トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
