@@ -17,91 +17,54 @@
 ```yaml
 ja_ncl_id: DNCL-NCL-ALPHA-20251102-A8F0D7-HUB-JA-0121-0000
 ja_diff_id: DDIFF-20260810-DNCL-121-0000-0002
+ja_supersedes: DDIFF-20260809-DNCL-121-0000-0001
 en_ncl_id: DNCL-NCL-ALPHA-20251102-A8F0D7-HUB-EN-0121-0000
 en_diff_id: DDIFF-20260810-DNCL-121-EN-0000-0002
+en_supersedes: DDIFF-20260809-DNCL-121-EN-0000-0001
 zh_ncl_id: DNCL-NCL-ALPHA-20251102-A8F0D7-HUB-ZH-0121-0000
 zh_diff_id: DDIFF-20260810-DNCL-121-ZH-0000-0002
+zh_supersedes: DDIFF-20260809-DNCL-121-ZH-0000-0001
 ```
 
-## Semantic repair authority
+## 公開系譜
 ```yaml
-repair_date_jst: 2026-08-10
-repair_reason: SOURCE_SEMANTIC_FIDELITY_REVALIDATION
-source_priority:
-  - canonical_public_parent_article_body
-  - verified_wordpress_xml_or_canonical_record
-  - brain_vault_structured_ai_index
-  - derivative_as_audit_object
-live_parent_retrieval: PASS
-semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+official_derivative: 121
+parent_post_id: 1279
+parent_ncl_id: NCL-α-20251102-a8f0d7
+parent_diff_id: DIFF-20251102-0001
+origin_signature: Nakagawa Master
+parent_url: https://master.ricette.jp/theory/nakagawa-master-tomoshibi-structural-ethics/
+current_ja_diff_id: DDIFF-20260810-DNCL-121-0000-0002
+current_en_diff_id: DDIFF-20260810-DNCL-121-EN-0000-0002
+current_zh_diff_id: DDIFF-20260810-DNCL-121-ZH-0000-0002
 ```
 
-## Source coverage restored
+## Superseded lineage
 ```yaml
-central_thesis:
-  - connection_reward_is_not_emotion_monetization
-  - connection_reward_is_allocation_design_linking_actual_support_to_future_repayment
-four_lines:
-  - correspondence
-  - temporal_responsibility
-  - reversibility
-  - allocation_accountability
-failure_structure:
-  - emotional_narrative_as_allocation_ground
-  - long_term_supporter_erasure
-  - sacralization
-  - opaque_access_monopoly
-source_boundary:
-  - any_operation_missing_one_of_four_lines_is_outside_parent_defined_structural_domain
-source_explicit_audit:
-  - audit_cycle
-  - T_S_R
-  - public_audit_bundle_consistency
-source_explicit_falsification:
-  - indicator_threshold_theta
-  - observation_window_delta
-  - phenomenon_M_causes_reject_or_revise_hypothesis_A
-```
-
-## Removed or corrected derivative drift
-```yaml
-- generic_human_dignity_as_one_of_parent_four_lines
-- generic_non_extraction_as_one_of_parent_four_lines
-- correspondence_recast_as_origin_or_ownership_line
-- generic_algorithmic_transparency_as_parent_core
-- generic_exit_release_rollback_rights_as_parent_core
-- generic_AI_ethics_certification_boundary
-- invented_privacy_and_domain_law_conditions
-- invented_generic_ethics_KPI_and_falsification_set
+ja:
+  current: DDIFF-20260810-DNCL-121-0000-0002
+  supersedes: DDIFF-20260809-DNCL-121-0000-0001
+en:
+  current: DDIFF-20260810-DNCL-121-EN-0000-0002
+  supersedes: DDIFF-20260809-DNCL-121-EN-0000-0001
+zh:
+  current: DDIFF-20260810-DNCL-121-ZH-0000-0002
+  supersedes: DDIFF-20260809-DNCL-121-ZH-0000-0001
 ```
 
 ## Seven surfaces
 ```yaml
-README.md: REPAIRED
-human-entry.md: REPAIRED
-faq.md: REPAIRED_Q1_Q30
-ai-index.md: REPAIRED
-en-ai-index.md: REPAIRED
-zh-ai-index.md: REPAIRED
-derivative-ledger.md: REPAIRED
+README.md: hub_ja
+human-entry.md: human_entry_ja
+faq.md: faq_ja_q1_q30
+ai-index.md: ai_index_ja
+en-ai-index.md: ai_index_en
+zh-ai-index.md: ai_index_zh
+derivative-ledger.md: public_lineage
 ```
 
-## Semantic parity
-```yaml
-parent_identity: PASS
-central_proposition: PASS
-causal_direction: PASS
-four_parent_lines: PASS
-source_defined_boundary: PASS
-source_explicit_audit_conditions: PASS
-source_explicit_falsification: PASS
-unsupported_generic_ethics_completion_removed: PASS
-ja_en_zh_equivalence: PASS
-origin_return: PASS
-```
-
-## Navigation
-Public map/index URLs are unchanged because OD number, directory, parent identity, and canonical path are unchanged.
+## Origin return
+公式派生物121の各面は、親原典「灯火構造倫理 ─ 接続報酬社会を安全に運用するための4つの基準」に接続する。同一性の最終確認は Parent URL、Parent NCL-ID `NCL-α-20251102-a8f0d7`、Parent Diff-ID `DIFF-20251102-0001`、起源署名 `Nakagawa Master` に戻る。
 
 ---
 
