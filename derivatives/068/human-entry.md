@@ -70,4 +70,4 @@ CDI、MAI、RS、CRI、KQIは、接続制度の異なる側面を観測するた
 親原典には、正統性条件、What/Who/How/When、複合指標束、移動標的、逆インセンティブ、外乱テスト、公開・保護分離、異議・訂正・退出・再接続・ロールバック、30/90/180日の段階的ロードマップが一続きで記録されている。完全な関係と定義はParent URL / Post ID 292 / NCL-ID / Diff-IDへ戻って確認する。
 
 ---
-導線: [公式派生物068トップ](README.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物068トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
