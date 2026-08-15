@@ -10,63 +10,37 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-16F66D-HUB-JA-0103-0000
-- derivative_diff_id: DDIFF-20260811-DNCL-103-0000-0002
-- supersedes: DDIFF-20260808-DNCL-103-0000-0001
+- derivative_diff_id: DDIFF-20260815-DNCL-103-0000-0003
+- supersedes: DDIFF-20260811-DNCL-103-0000-0002
 
 ## Language derivative IDs
-| language | derivative_ncl_id | derivative_diff_id | supersedes |
-|---|---|---|---|
-| JA | DNCL-NCL-ALPHA-20251102-16F66D-HUB-JA-0103-0000 | DDIFF-20260811-DNCL-103-0000-0002 | DDIFF-20260808-DNCL-103-0000-0001 |
-| EN | DNCL-NCL-ALPHA-20251102-16F66D-HUB-EN-0103-0000 | DDIFF-20260811-DNCL-103-EN-0000-0002 | DDIFF-20260808-DNCL-103-EN-0000-0001 |
-| ZH | DNCL-NCL-ALPHA-20251102-16F66D-HUB-ZH-0103-0000 | DDIFF-20260811-DNCL-103-ZH-0000-0002 | DDIFF-20260808-DNCL-103-ZH-0000-0001 |
+```yaml
+ja_ncl_id: DNCL-NCL-ALPHA-20251102-16F66D-HUB-JA-0103-0000
+ja_diff_id: DDIFF-20260815-DNCL-103-0000-0003
+en_ncl_id: DNCL-NCL-ALPHA-20251102-16F66D-HUB-EN-0103-0001
+en_diff_id: DDIFF-20260815-DNCL-103-0001-0003
+zh_ncl_id: DNCL-NCL-ALPHA-20251102-16F66D-HUB-ZH-0103-0002
+zh_diff_id: DDIFF-20260815-DNCL-103-0002-0003
+```
 
-## Factory
-- golden_master: OD085
-- factory_version: 2.0-semantic-repair
-- repair_mode: SOURCE_VERIFIED_FAIL_CLOSED
-- github_actions_used: false
+## 公開系譜
+親原典は「起点」を、出来事が起きた後の操作点ではなく、出来事の手前にある初期条件、すなわち「寂静の一瞬」として捉える。最大創発は介入量の増加から生じるのではなく、余白を壊さず、確率分布をそっと偏らせる最小介入によって、構造自身が反復可能性・多点照応・摩擦の正置換を獲得するときに成立する。
 
-## Retrieval evidence
-- canonical_index: reference_corpus/official_archive/generated/canonical_index_0595_0917.jsonl
-- parent_post_id: 637
-- parent_ncl_id: NCL-α-20251102-16f66d
-- parent_slug: nakagawa-master-stillness-of-origin-and-minimal-intervention
-- parent_canonical_url: https://master.ricette.jp/tomoshibi/nakagawa-master-stillness-of-origin-and-minimal-intervention/
-- xml_item_range: 86079-86313
-- xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-- source_routes_used: canonical live parent / canonical index / Brain Vault XML provenance / structured archive terminology
-- source_semantic_revalidation: PASS
+拍・温度・余白は互いを補正し、介入は可逆的な微調整として置かれる。言語・制度・場の三層が同期し、謙抑・整合・継続を保つことで、支配ではなく照応が生じる。公開範囲は原理・作法・倫理に限定され、個別の内部手順を普遍原理へ昇格させない。統合監査ではA→B、T/S/R、閾値θ、観測窓δ、現象Mを通じて棄却・改訂可能性を保持し、具体値が公開されないθ・δを補完しない。
 
-## Semantic repair
-保持・復元:
-- 起点＝出来事の手前にある初期条件・寂静の一瞬という原典定義
-- 最小介入＝余白を壊さず確率分布をそっと偏らせる設計的所作
-- 拍・温度・余白の相互補正と可逆微調整
-- 反復可能性・多点照応・摩擦の正置換という最大創発の三条件
-- 言語・制度・場の三層同期
-- 謙抑・整合・継続、支配ではなく照応という倫理
-- 公開範囲を原理・作法・倫理に限定する境界
-- 原典の統合監査A→B、T/S/R、θ、δ、M、棄却・改訂条件
+## 7面対応
+```yaml
+README.md: JA_HUB
+human-entry.md: JA_HUMAN_ENTRY
+faq.md: JA_FAQ_Q1_Q30
+ai-index.md: JA_AI_INDEX
+en-ai-index.md: EN_AI_INDEX
+zh-ai-index.md: ZH_AI_INDEX
+derivative-ledger.md: PUBLIC_LINEAGE
+```
 
-除去・非公式化:
-- 一因子変更をOD103固有の必須手順とする補完
-- 自走度・異議率・自由度・命令量等の独自KPI束を原典監査へ置換する補完
-- 生命・重大事故・法的義務等の一般ガードレールをOD103固有主張として追加する補完
-- AI運用・公共政策等の派生側具体手順を原典中心命題へ昇格する補完
-- 原典の「確率分布をそっと偏らせる」「最大創発」を一般的な安全運用論へ弱める説明
-
-## Seven surfaces
-- README.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- human-entry.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- faq.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- en-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- zh-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- derivative-ledger.md: PASS_LINEAGE_UPDATED
-
-## Closure rule
-このPASSは形式・密度ではなく、公開親原典の中心命題・因果・境界・監査条件へのsemantic parityを条件とする。安全・実務的という理由だけで、親原典にない一般ガードレールやKPIを公式主張へ追加しない。
+## 原典回帰
+起点、寂静、最小介入、確率分布をそっと偏らせる設計、拍・温度・余白、可逆微調整、反復可能性、多点照応、摩擦の正置換、言語・制度・場の三層同期、謙抑・整合・継続、支配ではなく照応、公開境界、統合監査A→B・T/S/R・θ・δ・Mは親原典へ戻って確認する。独自KPI、一因子変更、一般事故・法務・安全ガードレールを原典固有条件として追加しない。
 
 ---
-
 導線: [公式派生物103トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
