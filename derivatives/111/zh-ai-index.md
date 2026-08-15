@@ -11,9 +11,9 @@
 
 ## 衍生身份
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-20AA42-AI-INDEX-ZH-0111-0005
-- derivative_diff_id: DDIFF-20260812-DNCL-111-ZH-0005-0003
-- supersedes: DDIFF-20260811-DNCL-111-ZH-0000-0002
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-20AA42-HUB-ZH-0111-0002
+- derivative_diff_id: DDIFF-20260815-DNCL-111-0002-0001
+- supersedes: DDIFF-20260812-DNCL-111-ZH-0005-0003
 
 ## Summary
 
@@ -153,4 +153,4 @@
 
 ---
 
-导线: [官方衍生物111顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导航: [官方衍生物111顶页](README.md) / [面向人的摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
