@@ -123,4 +123,4 @@ Nakagawa co-creation philosophy / mind / self / human standpoint / human and AI 
 The parent source contains the philosophical development of mind, self, the human standpoint, human-AI difference, dialogue, resonance, co-creation, reconsideration of human centrality, and a new relationship. Return to Parent URL / Post ID 280 / NCL-ID / Diff-ID without substituting scientific claims about AI consciousness or governance structures from other works.
 
 ---
-Navigation: [OD065 hub](README.md) / [Human entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [English AI index](en-ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+導線: [公式派生物065トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
