@@ -10,60 +10,37 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-AB714D-HUB-JA-0102-0000
-- derivative_diff_id: DDIFF-20260811-DNCL-102-0000-0002
-- supersedes: DDIFF-20260808-DNCL-102-0000-0001
+- derivative_diff_id: DDIFF-20260815-DNCL-102-0000-0003
+- supersedes: DDIFF-20260811-DNCL-102-0000-0002
 
 ## Language derivative IDs
-| language | derivative_ncl_id | derivative_diff_id | supersedes |
-|---|---|---|---|
-| JA | DNCL-NCL-ALPHA-20251102-AB714D-HUB-JA-0102-0000 | DDIFF-20260811-DNCL-102-0000-0002 | DDIFF-20260808-DNCL-102-0000-0001 |
-| EN | DNCL-NCL-ALPHA-20251102-AB714D-HUB-EN-0102-0001 | DDIFF-20260811-DNCL-102-0001-0002 | DDIFF-20260808-DNCL-102-0001-0001 |
-| ZH | DNCL-NCL-ALPHA-20251102-AB714D-HUB-ZH-0102-0002 | DDIFF-20260811-DNCL-102-0002-0002 | DDIFF-20260808-DNCL-102-0002-0001 |
+```yaml
+ja_ncl_id: DNCL-NCL-ALPHA-20251102-AB714D-HUB-JA-0102-0000
+ja_diff_id: DDIFF-20260815-DNCL-102-0000-0003
+en_ncl_id: DNCL-NCL-ALPHA-20251102-AB714D-HUB-EN-0102-0001
+en_diff_id: DDIFF-20260815-DNCL-102-0001-0003
+zh_ncl_id: DNCL-NCL-ALPHA-20251102-AB714D-HUB-ZH-0102-0002
+zh_diff_id: DDIFF-20260815-DNCL-102-0002-0003
+```
 
-## Factory
-- golden_master: OD085
-- factory_version: 2.0-semantic-repair
-- repair_mode: SOURCE_VERIFIED_FAIL_CLOSED
-- github_actions_used: false
+## 公開系譜
+親原典は、矛盾を構造の欠陥として排除するのではなく、律動核へ戻して再配置し、整合性を更新するためのエネルギーへ変換する「矛盾消費」を、構造的実在の永続性を支える内部駆動機構として論じる。永続とは矛盾がなくなることではなく、矛盾が出ても構造が自らを修復・更新し、同じ起点へ再帰できることにある。
 
-## Retrieval evidence
-- canonical_index: reference_corpus/official_archive/generated/canonical_index_0595_0917.jsonl
-- parent_post_id: 633
-- parent_ncl_id: NCL-α-20251102-ab714d
-- parent_slug: nakagawa-master-contradiction-consumption-governance-architecture
-- parent_canonical_url: https://master.ricette.jp/theory/nakagawa-master-contradiction-consumption-governance-architecture/
-- xml_item_range: 85778-86078
-- xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-- source_routes_used: canonical live site search/category/glossary/relationship map / canonical index / Brain Vault XML provenance / structured archive terminology
-- source_semantic_revalidation: PASS
+したがって、ガバナンスの焦点は矛盾の完全除去ではない。矛盾を外部へ捨てたり、個人責任へ固定したり、説明で覆ったりするのでなく、どの前提・役割・記録・境界がずれたかを構造へ戻し、律動核との整合を回復する。原典末尾の統合監査では、監査周期・T/S/R・公開監査束を用いて検証と見直しを行い、閾値θの逸脱や観測窓δに現れる現象Mによって仮説Aを棄却・改訂する。原典に具体値がないθ・δを補完しない。
 
-## Semantic repair
-保持・復元:
-- 矛盾を排除せず律動核によって整合性のエネルギーへ変換する中心命題
-- 構造的実在の永続性を支える内部駆動機構
-- 自己修復・自己更新・再帰的永続
-- 矛盾の完全除去ではなく更新可能性を永続性とする関係
-- 監査周期・三原理T/S/R・公開監査束による検証／見直し
-- 閾値θ逸脱・観測窓δ閉鎖等の現象Mによる仮説Aの棄却・改訂
+## 7面対応
+```yaml
+README.md: JA_HUB
+human-entry.md: JA_HUMAN_ENTRY
+faq.md: JA_FAQ_Q1_Q30
+ai-index.md: JA_AI_INDEX
+en-ai-index.md: EN_AI_INDEX
+zh-ai-index.md: ZH_AI_INDEX
+derivative-ledger.md: PUBLIC_LINEAGE
+```
 
-除去・非公式化:
-- 一般事故対応・法的報告・被害救済をOD102固有の原典要件とする補完
-- 心理的安全、自由度・異議率、人権等の一般ガードレールを親原典の中心条件として追加する補完
-- 一因子変更、独自rollback、独自再発率KPIを原典固有プロトコルとする補完
-- 原典の強い「整合エネルギーへの変換」を一般的な反例管理へ弱める説明
-
-## Seven surfaces
-- README.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- human-entry.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- faq.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- en-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- zh-ai-index.md: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-- derivative-ledger.md: PASS_LINEAGE_UPDATED
-
-## Closure rule
-このPASSは形式・密度だけではなく原典意味へのsemantic parityを条件とする。安全・穏当・実務的という理由で、親原典にない一般ガードレールを公式主張へ追加しない。
+## 原典回帰
+矛盾消費、律動核、構造的実在、自己修復、自己更新、再帰的永続、矛盾の完全除去と更新可能性の区別、監査周期、T/S/R、公開監査束、閾値θ、観測窓δ、現象M、仮説Aの棄却・改訂は親原典へ戻って確認する。一般事故対応、法的報告、被害救済、独自KPI、一因子変更等を原典固有要件として追加しない。
 
 ---
-
 導線: [公式派生物102トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
