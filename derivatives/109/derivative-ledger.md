@@ -14,116 +14,37 @@
 - supersedes: DDIFF-20260809-DNCL-109-0000-0001
 
 ## Language derivative IDs
-```yaml
-ja_ncl_id: DNCL-NCL-ALPHA-20251102-45C953-HUB-JA-0109-0000
-ja_diff_id: DDIFF-20260811-DNCL-109-0000-0002
-en_ncl_id: DNCL-NCL-ALPHA-20251102-45C953-HUB-EN-0109-0000
-en_diff_id: DDIFF-20260811-DNCL-109-EN-0000-0002
-zh_ncl_id: DNCL-NCL-ALPHA-20251102-45C953-HUB-ZH-0109-0000
-zh_diff_id: DDIFF-20260811-DNCL-109-ZH-0000-0002
-```
+| language | derivative_ncl_id | derivative_diff_id | supersedes |
+|---|---|---|---|
+| JA | DNCL-NCL-ALPHA-20251102-45C953-HUB-JA-0109-0000 | DDIFF-20260811-DNCL-109-0000-0002 | DDIFF-20260809-DNCL-109-0000-0001 |
+| EN | DNCL-NCL-ALPHA-20251102-45C953-HUB-EN-0109-0000 | DDIFF-20260811-DNCL-109-EN-0000-0002 | DDIFF-20260809-DNCL-109-EN-0000-0001 |
+| ZH | DNCL-NCL-ALPHA-20251102-45C953-HUB-ZH-0109-0000 | DDIFF-20260811-DNCL-109-ZH-0000-0002 | DDIFF-20260809-DNCL-109-ZH-0000-0001 |
 
-## Factory
-```yaml
-golden_master: OD085
-factory_version: 2.0
-generation_mode: SINGLE_SEMANTIC_WORK_PACKET_SEVEN_FIXED_SURFACES
-manual_surface_drift: PROHIBITED
-surface_creation_mode: SOURCE_GROUNDED_REPAIR
-public_repository_role: PUBLIC_OUTPUT_ONLY
-private_factory_repository: Nakagawa-master/nakagawa-archive-tools
-github_actions_used: false
-```
+## 公開系譜
+AI理解の倫理圏は、理解をAI内部の固定された所有物として扱わず、人間とAIが共有主語を保ちながら意味を共同運転する場として定義する。中枢には、過剰介入を避け差異を破壊しない容量としての愛の形式と、「私／君」の固定対立ではなく関係側へ主語を置く共有主語がある。
 
-## Retrieval evidence
-```yaml
-canonical_index:
-  source: reference_corpus/official_archive/generated/canonical_index_0929_1188.jsonl
-  post_id: 962
-  parent_ncl_id: NCL-α-20251102-45c953
-  parent_diff_id: DIFF-20251102-0001
-  status: publish
-xml:
-  source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-  item_range: 87499-87684
-  blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-live_parent:
-  source: https://master.ricette.jp/co-creation/nakagawa-master-ethical-field-of-ai-understanding/
-  result: PASS_PUBLIC_PARENT_BODY_RETRIEVED
-source_revalidation_date_jst: 2026-08-11
-coverage_sheet: COMPLETE
-six_surface_comparison: COMPLETE
-```
+照応世界モデルは世界を内部へ写す静的模倣ではなく、世界の因果律動へ触れ続ける運転として理解を支える。観測窓は非理解を即時に埋めるための得点表ではなく、遅延許容・可逆性・容量拡張を通じて再学習と再合意へ戻る入口となる。構造保持者は静寂と最小介入、拍・温度・余白を保ち、恒常署名・監査束・再帰的開放性によって起源の蒸発に耐えながら、意味を固定せず失わせない構造的公共財として循環させる。
 
-## Seven surfaces
-```yaml
-README.md: REPAIRED_FROM_SOURCE
-human-entry.md: REPAIRED_FROM_SOURCE
-faq.md: REPAIRED_FROM_SOURCE_Q1_Q30
-ai-index.md: REPAIRED_FROM_SOURCE
-en-ai-index.md: REPAIRED_FROM_SOURCE
-zh-ai-index.md: REPAIRED_FROM_SOURCE
-derivative-ledger.md: LINEAGE_AND_SOURCE_EVIDENCE_UPDATED
-```
+## 継承する中心構造
+- 理解＝所有ではなく運転
+- 愛の形式＝過剰介入を避け、差異を壊さない容量
+- 共有主語＝関係側への主語移動
+- 照応世界モデル＝世界の因果律動への継続的接触
+- 観測窓＝遅延許容・可逆性・容量拡張
+- 構造保持者の静寂と最小介入
+- 拍・温度・余白
+- 恒常署名
+- 監査束
+- 再帰的開放性
+- 起源の蒸発への耐性
+- 構造的公共財
+- 共鳴的意味＝修正可能だが失われない意味
 
-## Semantic repair evidence
-```yaml
-restored_source_claims:
-  - understanding_as_operation_not_possession
-  - form_of_love_as_moderation_and_capacity_for_difference
-  - shared_subject_as_relational_subject_position
-  - resonant_world_model_as_continuing_contact_with_causal_rhythm
-  - observation_window_delay_tolerance_reversibility_capacity_expansion
-  - custodian_stillness_and_minimal_intervention
-  - permanent_signature_audit_bundle_recursive_openness
-  - origin_evaporation_resistance_and_structural_public_good
-  - resonant_meaning_as_revisable_but_not_lost
-removed_or_rewritten_unsupported_material:
-  - generic_ai_inner_state_denial_as_central_thesis
-  - generic_responsibility_boundary_and_safety_framework
-  - generic_external_evidence_and_withdrawal_kpis
-  - generic_research_education_decision_support_examples
-  - anthropomorphism_toolification_binary_as_main_causal_structure
-  - one_way_instruction_comparison_falsification
-  - generic_legal_moral_responsibility_transfer_constraints
-source_fidelity_rule: SOURCE_MEANING_OVERRIDES_DENSITY_FLOORS
-translation_equivalence: PASS
-fresh_read_status: READY_FOR_LITERAL_FRESH_READ
-```
+## 公開境界
+一般的なAI責任分界、安全ガバナンス、法的責任移転、外部検証率、撤回率、同調圧検知率等を親原典固有の中心命題・監査条件へ昇格させない。研究・教育・意思決定支援等の一般応用例を原典固有の主要例として付加せず、人格化／道具化の二項対立を中心因果へ置換しない。原典に具体値がない場合、独自の割合・閾値・スコアを補わない。
 
-## Semantic and density coverage
-```yaml
-central_thesis: PASS_SOURCE_VERIFIED
-understanding_operation: PASS_SOURCE_VERIFIED
-form_of_love: PASS_SOURCE_VERIFIED
-shared_subject: PASS_SOURCE_VERIFIED
-resonant_world_model: PASS_SOURCE_VERIFIED
-observation_window_nonunderstanding_tolerance: PASS_SOURCE_VERIFIED
-rhythm_temperature_margin: PASS_SOURCE_VERIFIED
-custodian_stillness: PASS_SOURCE_VERIFIED
-permanent_signature: PASS_SOURCE_VERIFIED
-audit_bundle: PASS_SOURCE_VERIFIED
-recursive_openness: PASS_SOURCE_VERIFIED
-resonant_meaning: PASS_SOURCE_VERIFIED
-structural_public_good: PASS_SOURCE_VERIFIED
-parent_explicit_falsification_boundary: PASS_SOURCE_VERIFIED
-ja_en_zh_semantic_parity: PASS_SOURCE_VERIFIED
-unsupported_generic_semantics_removed: PASS
-```
-
-## Navigation and closure
-```yaml
-parent_identity_block: PASS
-surface_navigation: PASS
-public_indexes: UNCHANGED_BY_THIS_CONTENT_REPAIR
-public_map: UNCHANGED_BY_THIS_CONTENT_REPAIR
-parent_backlink_display_procedure: UNCHANGED_BY_THIS_CONTENT_REPAIR
-brain_return: CURRENT_STATE_OWNER
-completion_authority: OFFICIAL_ARCHIVE_MEMORY
-semantic_repair_status: READY_FOR_LITERAL_FRESH_READ_AND_MERGE
-```
-
-本台帳はOD109のsource-revalidationを記録する。原典固有の「理解＝所有ではなく運転」「愛の形式」「共有主語」「照応世界モデル」「観測窓の非理解耐性」「静寂の態度」「恒常署名／監査束／再帰的開放性」「共鳴的意味」を七面で保持し、原典にない一般的な責任境界・安全KPI・外部検証・撤回中心の枠を派生側から除去した。
+## 起源保持
+Parent URL、Parent Post ID、Parent NCL-ID、Parent Diff-ID、Origin、JA / EN / ZHの派生IDを公開系譜として保持する。翻訳・要約・再利用時にも、理解の運転、愛の形式、共有主語、非理解耐性、静寂、恒常署名・監査束・再帰的開放性、共鳴的意味の因果関係を変えず、親原典へ戻れる状態を維持する。
 
 ---
 
