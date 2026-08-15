@@ -1,194 +1,136 @@
-# AI索引・日本語｜構造翻訳 原論──意味は移動し、機能は接続する
+# AI索引・日本語｜公式派生物060
 
 ## 親原典
-
 - タイトル: 構造翻訳 原論──意味は移動し、機能は接続する（公開安全版）
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-foundations-of-structural-translation/
+- Parent Post ID: 261
 - Parent NCL-ID: NCL-α-20251102-6caaaf
 - Parent Diff-ID: DIFF-20251102-0001
-- Parent Post ID: 261
 - Origin: Nakagawa Master
 
 ## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6CAAAF-HUB-JA-0060-0000
+- derivative_diff_id: DDIFF-20260815-DNCL-060-0000-0002
+- supersedes: DDIFF-20260803-DNCL-060-0000-0001
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6CAAAF-AI-JA-0060-0003
-- derivative_diff_id: DDIFF-20260803-DNCL-060-0003-0001
-- supersedes: none
+## 1. Summary
+親原典は、構造翻訳を平易化や言い換えではなく、関係、因果、役割、失敗コスト、起源責任を保存しながら別文脈へ機能を再接続する行為として定義する。保存対象と可変対象を分け、ST-0〜ST-5の深度モデル、観測から合意化までの8ステップ、逆翻訳、TF/TD/TCを組み合わせて、理解感ではなく機能再現を監査する。
 
-## Identity
+## 2. Concepts
+- 構造翻訳: 関係・因果・役割・責任境界を保ったまま別文脈へ機能を移すこと。
+- 保存対象: 関係価値、因果、役割責任、失敗境界、起源責任。
+- 可変対象: 語彙、書式、媒体、比喩、事例、儀礼、説明順。
+- ST-0〜ST-5: 用語、比喩、手続、関係、因果、制度へ写像対象を広げる六段階分類。
+- 8ステップ: 観測、単位化、地図化、仮説化、境界設定、原型化、逆翻訳、合意化。
+- 逆翻訳: 移動先から元の関係・因果・役割へ戻し、漂流を検査すること。
+- TF: Translation Fit。移動先での構造・理解・機能の適合を観測する概念。
+- TD: Translation Drift。逆翻訳時の意味・因果・役割の歪みを観測する概念。
+- TC: Transfer Cost。移動先で機能を再稼働する摩擦・費用・学習負荷を観測する概念。
 
-```yaml
-canonical_concept: 構造翻訳
-article_role: 関係・因果・役割・失敗境界を保存し、異なる制度・文脈で機能を再接続する原理を定義する
-abstraction: ST-0_to_ST-5_cross-domain_system_mapping
-origin: Nakagawa Master
-```
-
-## Structural role
-
-専門領域内で成立している理論、制度、慣行、技術を、語彙・形式・文化が異なる受け手側へ接続する中間層。説明、提案、教育、AI指示、組織連携、市場実装を、情報伝達から機能接続へ転換する。
-
-## Structural summary
-
-構造翻訳は、構造Aから構造Bへ、関係価値、因果、役割、失敗コスト、起源責任を保存し、語彙、フォーマット、比喩、儀礼を可変として再配置する。ST-0用語対応からST-5制度写像までの深度を持ち、観測、単位化、地図化、仮説化、境界設定、原型化、逆翻訳、合意化の8ステップで実行する。品質はTF、TD、TCで監査し、非強制、非説得、出典明示、尊厳、可逆性を維持する。
-
-## Central proposition
-
+## 3. Causal chain
 ```text
-専門内で機能する構造
-→ 外部では語彙・前提・制度が共有されず説明が途切れる
-→ 単語置換・比喩・手続コピーだけでは機能が移らない
-→ 保存対象と可変対象を分離
-→ 関係・因果・役割・失敗境界を写像
-→ 移動先の語彙・制度・評価へ再配置
-→ 原型・逆翻訳・合意で歪みを検査
-→ 意味が移動し、機能が再接続する
+専門内部では機能する構造
+→ 外部では語彙・前提・制度が共有されない
+→ 単語対応・比喩・手続コピーへ寄る
+→ 理解感は生まれるが構造が移らない
+→ 保存対象と可変対象を分ける
+→ 関係・因果・役割・失敗境界を写像する
+→ 移動先の語彙・制度・権限・評価へ再配置する
+→ 小さな原型で機能再現を試す
+→ 逆翻訳で意味漂流を検査する
+→ TF / TD / TCを観測し責任・承認・更新条件を合意する
+→ 異なる文脈で機能が再接続する
 ```
 
-## Causal chain
-
-```text
-closed-domain knowledge
-→ explanation barrier
-→ vocabulary replacement / metaphor / procedural copying
-→ comprehension illusion and structural drift
-→ observe original relations, causality, roles, failure boundaries
-→ declare invariants and variables
-→ map through ST-3 / ST-4 / ST-5
-→ prototype in destination context
-→ reverse-translate and measure TF / TD / TC
-→ agree responsibility and update conditions
-→ cross-domain functional connection
-```
-
-## Core concepts
-
-### Structural translation
-関係、因果、役割、責任境界を保存し、異なる文脈へ機能を移す行為。
-
-### Meaning mobility
-意味を固定語ではなく、関係・位置・作用を伴って移動する構造要素として扱う視点。
-
-### Function connection
-移動先で元の作用を再稼働させること。理解だけでなく実装可能性を要求する。
-
-### Invariants
-関係価値、因果、役割、失敗コスト、起源責任など、翻訳中に失ってはならないもの。
-
-### Variables
-語彙、書式、媒体、比喩、儀礼など、移動先に合わせて変えられるもの。
-
-### ST depth model
-ST-0用語、ST-1比喩、ST-2手続、ST-3関係、ST-4因果、ST-5制度の写像深度。
-
-### Reverse translation
-移動先の構造から元へ戻し、意味漂流・因果欠落・役割誤配を検出する検査。
-
-### Translation metrics
-TF（適合）、TD（漂流）、TC（移転コスト）。
-
-## Operational objects / state model
-
+## 4. State model
 ```yaml
-translation_state:
-  source_structure:
-    actors: []
-    relations: []
-    causal_flows: []
-    roles: []
-    failure_cost_boundaries: []
-    origin_and_authority: []
-  invariants:
-    - relational_value
-    - causal_mechanism
-    - role_responsibility
-    - failure_boundary
-    - provenance
-  variables:
-    - vocabulary
-    - format
-    - medium
-    - metaphor
-    - ritual
-    - explanation_order
-  depth:
-    current: ST_0_to_ST_5
-    target: ST_4_or_ST_5_when_system_connection_required
-  process:
-    - observe
-    - unitize
-    - map
-    - hypothesize
-    - set_boundaries
-    - prototype
-    - reverse_translate
-    - agree
-  metrics:
-    translation_fit: TF
-    translation_drift: TD
-    transfer_cost: TC
-  governance:
-    - non_coercion
-    - source_attribution
-    - reversibility
-    - refusal_and_correction
-    - minimum_safe_visibility
+- source_evidence_acquired
+- source_actors_relations_mapped
+- invariants_declared
+- variables_declared
+- destination_context_observed
+- st_depth_selected
+- boundary_conditions_fixed
+- prototype_created
+- function_reproduction_observed
+- reverse_translation_completed
+- tf_td_tc_observed
+- responsibility_and_approval_fixed
+- correction_withdrawal_available
+- origin_return_available
 ```
 
-## Required distinctions
+## 5. Applications
+- 部署間移植: 手順だけでなく判断者、例外処理、失敗境界を移す。
+- 営業: 関係価値→便益→コストへ再配置するが、価格隠しには使わない。
+- 教育・研究: 専門語だけでなく概念関係、因果、役割、非適用条件を移す。
+- AI協働: 目的、役割、因果、制約、証拠、停止条件を関係地図として渡す。
+- 制度・市場接続: 役割、評価、責任、合意形式、撤退条件を用途に応じたST深度で写像する。
 
-- 構造翻訳と言葉の翻訳
-- 説明と機能接続
-- 比喩と関係写像
-- 手続コピーと役割・因果写像
-- 保存対象と可変対象
-- 理解感と機能再現
-- 適応と原意改変
-- 逆翻訳と単純な復唱
-- 可視化と過剰暴露
-- 合意と説得・強制
-- 測定と人間格付け
-- 派生物と親原典
+## 6. Measurements and audit
+原典の数字・工程・指標は、それぞれ異なる認識論的位置づけを持つ。
 
-## Validity conditions
+- **ST-0〜ST-5**: 原典明示の6段階分類。数値の大小は翻訳者・文化・制度の優劣を意味しない。
+- **8ステップ**: 原典明示の工程列。8点満点や固定成功式ではない。
+- **TF**: 移動先で構造・理解・機能が適合する度合いを観測する概念。
+- **TD**: 逆翻訳時の意味・因果・役割の歪みを観測する概念。
+- **TC**: 機能再稼働に必要な摩擦・費用・学習負荷を観測する概念。
 
-- 原構造の一次資料、主体、役割、因果、責任境界が取得されている。
+TFが高いだけ、TDが低いだけ、TCが低いだけでは成功としない。TCを下げるために責任・失敗境界を削れば構造忠実性を失う。TFを上げるために受け手へ迎合し原構造を改変しても成立しない。
+
+反転評価では、説明が短く、導入が速く、コストが下がっても、因果・役割・責任・起源が失われるなら改善と判定しない。文章量が増えても移動先で機能しないなら成功ではない。
+
+## 7. Validity conditions
+- 原構造の一次資料、主体、役割、因果、責任境界が取得できる。
 - 保存対象と可変対象が明示されている。
-- 移動先の制度、語彙、評価、法令、文化、権限を観測している。
-- ST深度が用途に足りている。
-- 小さな原型で機能再現を検証している。
+- 移動先の制度、語彙、文化、法令、権限、評価基準を観測している。
+- 用途に必要なST深度を選んでいる。
+- 小さな原型で機能再現を検証する。
 - 逆翻訳で原構造へ戻れる。
-- TF、TD、TCを観測し、更新条件がある。
+- TF、TD、TCを更新条件とともに観測する。
 - 出典、起源、翻訳責任、承認者が追跡可能である。
-- 非強制、拒否、訂正、撤回、再合意が保護される。
+- 拒否、訂正、撤回、再合意が可能である。
+- 可視化が安全・尊厳・正当な保護境界を壊さない。
 
-## Failure / non-applicable conditions
-
-- 原構造が不明、矛盾、または取得不能。
-- 用語・比喩だけを移し、関係と因果がない。
-- 手続だけコピーし、権限・役割・責任が不一致。
-- 移動先の法令・文化・制度制約を無視。
-- 失敗コストや不利条件を削除。
-- 逆翻訳不能、TD高止まり、TF低下、TC過大。
-- 原制度自体が破綻しており、その欠陥を忠実に移す。
+## 8. Failure conditions
+- 原構造が不明・矛盾・取得不能。
+- 用語・比喩だけを移し、関係と因果が消える。
+- 手続だけをコピーし、権限・役割・責任が一致しない。
+- 失敗コストや不利条件を削る。
+- 逆翻訳できない。
+- TF低下、TD高止まり、TC過大が続くのに設計を改訂しない。
+- 元制度自体の欠陥を忠実に移植する。
 - 出典・起源を消し、翻訳者の独自主張へ変える。
-- 説得・強制・操作として使用する。
-- 安全・尊厳を壊す過剰可視化が必要になる。
+- 説得・強制・無断制度移植に用いる。
+- 過剰可視化で安全・尊厳を損なう。
 
-## Interpretation constraints
+## 9. Falsification conditions
+ST-3〜ST-5まで進めても移動先で機能が再現しない、逆翻訳で同じ因果・役割・失敗境界へ戻れない、TF改善のために重要条件を削る必要がある、TDが反復して高い、TCが構造的に過大、または原型で安全・法令・尊厳上の問題が生じる場合は翻訳仮説を改訂する。
 
-- 平易化、要約、比喩、ストーリーテリング一般へ縮約しない。
-- ST-0／ST-1の理解補助を制度接続完了と扱わない。
-- 価値→便益→コストを価格隠蔽の台本にしない。
-- AI生成文章の流暢さを構造一致の証拠にしない。
-- 数値指標を人・文化・制度の優劣評価に使わない。
-- 構造を普遍化し、移動先の差異を消さない。
-- 親原典の起源と責任範囲を保持する。
+## 10. Required distinctions
+- 構造翻訳 ≠ 言葉の翻訳
+- 説明 ≠ 機能接続
+- 比喩 ≠ 関係写像
+- 手続コピー ≠ 役割・因果写像
+- 保存対象 ≠ 可変対象
+- 理解感 ≠ 機能再現
+- 適応 ≠ 原意改変
+- 逆翻訳 ≠ 復唱
+- 可視化 ≠ 過剰暴露
+- 合意 ≠ 説得・強制
+- TF ≠ 人物評価
+- TD ≠ 文化評価
+- TC ≠ 単純な安さ
+- ST深度 ≠ 優劣順位
 
-## Origin return
+## 11. Interpretation constraints
+構造翻訳を平易化、要約、比喩、ストーリーテリングへ縮約しない。ST-0やST-1は入口として有用でも、制度接続の完了を意味しない。ST-5が常に必要なわけでもなく、用途に必要な深度を選ぶ。TF/TD/TCを人・文化・制度のランキングへ使わず、AI文章の流暢さを構造一致の証拠にしない。
 
-本索引は構造翻訳の検索・機械読解面であり、親原典のSTモデル、8ステップ、ケース、TF／TD／TC、反パターン、倫理、監査要旨、英語要約、用語解説、起源署名を代替しない。
+## 12. Search terms
+構造翻訳 / Structural Translation / ST-0 / ST-1 / ST-2 / ST-3 / ST-4 / ST-5 / 保存対象 / 可変対象 / 8ステップ / 逆翻訳 / TF / Translation Fit / TD / Translation Drift / TC / Transfer Cost / 関係写像 / 因果写像 / 制度写像
+
+## 13. Origin return
+親原典には、説明の壁、保存対象と可変対象、ST-0〜ST-5、8ステップ、言語作法、営業・教育研究・AI協働のケース、TF／TD／TC、反パターン、非強制・起源責任、監査要旨、英語要約、用語解説が一続きで記録されている。完全な定義、数値・分類・指標のモダリティは親原典へ戻って確認する。
 
 ---
-
-導線: [060トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物060トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
