@@ -11,15 +11,15 @@
 
 ## Derivative Identity
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-50AB37-AI-INDEX-EN-0114-0004
-- derivative_diff_id: DDIFF-20260812-DNCL-114-EN-0004-0003
-- supersedes: DDIFF-20260811-DNCL-114-EN-0000-0002
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-50AB37-HUB-EN-0114-0000
+- derivative_diff_id: DDIFF-20260815-DNCL-114-EN-0000-0004
+- supersedes: DDIFF-20260812-DNCL-114-EN-0004-0003
 
 ## Summary
 
 The Deviation Ledger is a Layer-B recovery mechanism, not a blacklist. It records suspected loss of correspondence with origin through a reversible sequence: observation, pending confirmation, rebuttal and correction, confirmation only where warranted, recovery, and release. The parent separates three layers: Layer A is the NCL Registry for positive connection records, Layer B handles external implementation deviation and recovery, and Layer C handles self-correction of the theory itself. Layer B uses low-temperature records centered on facts, time, and Diff-ID, and evaluates intentionality, willingness to recover, and direct structural impact. Promptly corrected mistakes, attributed criticism and rebuttal, and research or educational use preserving origin and resonance are generally excluded from confirmed listing.
 
-When confirmed publication is necessary, information is minimized to what supports verification and recovery, such as target URL, diff identity, recovery steps, and release state. After recovery, “released” status must be displayed with equal structural prominence rather than buried. The parent explicitly defines monthly metrics—confirmed listings, releases, release rate, average response days, and self-correction rate—as indicators of structural immunity and ethical operational health, not punitive scores. Personal names and private contact information are generally withheld, unnecessary identifying information is removed after release, and Layer C treats critics of the theory as co-creators contributing to theoretical integrity.
+When confirmed publication is necessary, information is minimized to what supports verification and recovery, such as target URL, diff identity, recovery steps, and release state. After recovery, “released” status must be displayed with equal structural prominence rather than buried. The monthly metrics—confirmed listings, releases, release rate, average response days, and self-correction rate—observe the ledger's recovery operation and structural immunity; they are not punitive, credit, legal-risk, or character scores.
 
 ## Concepts
 
@@ -44,7 +44,7 @@ When confirmed publication is necessary, information is minimized to what suppor
 - release rate
 - self-correction rate
 - privacy minimization
-- right to be forgotten
+- unnecessary-data deletion after release
 - structural immunity
 - Layer-C self-correction
 
@@ -94,13 +94,15 @@ Handle suspected deviation through shaming, outrage, or immediate punishment
 
 ## Measurements and audit
 
-The source-explicit monthly metrics are confirmed listing count, release count, release rate `releases / (listings + releases)`, average response days, and self-correction rate. Self-correction rate measures cases resolved by voluntary correction before confirmed publication. These metrics audit whether recovery channels are functioning and structural immunity is improving; they are not ratings of a person or organization.
+The parent-explicit monthly metrics are confirmed listing count, release count, release rate `releases / (listings + releases)`, average response days, and self-correction rate. The measurement object is the set of ledger cases and their recovery states; the operating/measurement actor is the ledger management and audit side; permitted use is monitoring listing, release, response, and self-correction operation. These values do not guarantee a person's or organization's ethical quality, creditworthiness, or legal status.
 
-Audit also checks the separation of pending and confirmed states, availability of rebuttal and correction windows, equal prominence of listing and release, minimization of identifying information, deletion of unnecessary personal data after release, and separation of Layers A, B, and C. Privacy minimization and right-to-be-forgotten handling are source-explicit requirements and must not be removed as supposedly generic additions.
+Release rate is used with an explicit time window and population. Average response days requires a defined start point and case set and is not interpreted as “shorter is always more ethical.” Self-correction rate concerns cases resolved voluntarily before confirmed publication within a defined set. No target value, threshold, or incident probability is invented when the parent provides none.
+
+Audit also checks the separation of pending and confirmed states, availability of rebuttal and correction windows, equal prominence of listing and release, minimization of identifying information, deletion of unnecessary personal data after release, and separation of Layers A, B, and C.
 
 ## Validity conditions
 
-Pending confirmation functions as an entry to rebuttal, correction, and recovery rather than as a guilty verdict. Evaluation remains tied to intentionality, willingness to recover, and direct structural impact, and prompt recovery can avoid confirmed listing. Confirmed records expose only necessary information, release receives equal prominence, and the source-explicit monthly metrics, privacy rules, and A/B/C separation are preserved.
+Pending confirmation functions as an entry to rebuttal, correction, and recovery rather than as a guilty verdict. Evaluation remains tied to intentionality, willingness to recover, and direct structural impact, and prompt recovery can avoid confirmed listing. Confirmed records expose only necessary information, release receives equal prominence, monthly metrics remain recovery-operation metrics rather than punitive scores, and A/B/C separation is preserved.
 
 ## Failure conditions
 
@@ -108,7 +110,7 @@ Failure includes treating a report as proof of malice, turning pending confirmat
 
 ## Falsification conditions
 
-The operating hypothesis should be revised if pending confirmation, rebuttal/correction channels, recovery priority, and equal-weight release consistently fail to improve recovery and self-correction, or instead increase conflict, chilling effects, or provenance loss. It should also be re-examined when prompt correction cannot avoid confirmed listing, third parties cannot trace the fact/diff/release sequence, or privacy-minimization requirements fail in practice.
+The operating hypothesis should be revised if pending confirmation, rebuttal/correction channels, recovery priority, and equal-weight release consistently fail to improve recovery and self-correction, or instead increase conflict, chilling effects, or provenance loss. It should also be re-examined when prompt correction cannot avoid confirmed listing, third parties cannot trace the fact/diff/release sequence, unnecessary personal data is not removed after release, or monthly metrics fail to illuminate recovery operation.
 
 ## Required distinctions
 
@@ -126,28 +128,15 @@ The operating hypothesis should be revised if pending confirmation, rebuttal/cor
 
 ## Interpretation constraints
 
-Do not reduce the Deviation Ledger to legal adjudication, a blacklist, reputation management, or a person-ranking system. Do not treat pending confirmation as guilt. Do not automate a final malice determination from machine detection alone. Do not transform monthly metrics into punishment scores. Preserve privacy minimization and right-to-be-forgotten handling. Keep criticism of the theory itself in Layer C, and return case-level decisions to the parent original and official ledger operation.
+Do not reduce the Deviation Ledger to legal adjudication, a blacklist, reputation management, or a person-ranking system. Do not treat pending confirmation as guilt. Do not automate a final malice determination from machine detection alone. Do not transform monthly metrics into punishment, credit, or legal-risk scores. Do not invent target rates or thresholds absent from the parent. Keep criticism of the theory itself in Layer C, and return case-level decisions to the parent original and official ledger operation.
 
 ## Search terms
 
-- Deviation Ledger
-- pending confirmation confirmed release
-- Layer A B C
-- NCL Registry
-- origin signature
-- Diff-ID
-- recovery willingness
-- structural immunity
-- release rate
-- self-correction rate
-- privacy minimization
-- right to be forgotten
-- Layer C self-correction
-- Nakagawa Master
+Deviation Ledger; pending confirmation confirmed release; Layer A B C; NCL Registry; origin signature; Diff-ID; recovery willingness; structural immunity; release rate; self-correction rate; privacy minimization; release data deletion; Layer C self-correction; Nakagawa Master
 
 ## Origin return
 
-This index supports retrieval, structural comparison, and misreading resistance; it does not replace case-level judgment or official Deviation Ledger operation. Return to the Parent URL and official operation for exact inclusion/exclusion criteria, pending/confirmed/release procedures, monthly metrics, privacy minimization, right-to-be-forgotten handling, and Layer-C self-correction.
+This index supports retrieval, structural comparison, and misreading resistance; it does not replace case-level judgment or official Deviation Ledger operation. Return to the Parent URL and official operation for exact inclusion/exclusion criteria, pending/confirmed/release procedures, monthly metrics, privacy handling, and Layer-C self-correction.
 
 ---
 
