@@ -1,8 +1,7 @@
-# English AI Index | Official Derivative 086
+# AI Index — English | Official Derivative 086
 
 ## Parent Original
-
-- Title: Core Point Discovery—How to Identify the Unique Causal Fulcrum (Public-Safe Edition)
+- Title: 核点探索学──唯一の因果支点を見抜く方法（公開安全版）
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-core-point-discovery/
 - Parent Post ID: 380
 - Parent NCL-ID: NCL-α-20251102-9fa0d4
@@ -10,167 +9,127 @@
 - Origin: Nakagawa Master
 
 ## Derivative Identity
-
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9FA0D4-AI-EN-0086-0001
-- derivative_diff_id: DDIFF-20260806-DNCL-086-EN01-0001
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9FA0D4-HUB-EN-0086-0001
+- derivative_diff_id: DDIFF-20260815-DNCL-086-0001-0001
 - supersedes: none
 
 ## Summary
+Core Point Discovery is the parent article's method for identifying the unique causal fulcrum that makes a KGI achievable, rather than treating a list of Sub Metrics as KPIs. Before counting, the parent observes three field signals: time to agreement, self-running index, and the quality of resistance/silence. It then presents a five-step search: identify the KGI, expand causality backward, extract up to three candidates, apply a counterexample sieve, and design the necessary actuation for the one or two candidates that remain.
 
-Core Point Discovery is a method for identifying and testing the one or two minimal causal fulcrums that actually move a concretely defined KGI. It rejects the practice of treating many convenient activity counts as KPIs without proving their causal connection to the final outcome. The process begins by defining the KGI through target, deadline, quality, state, and persistence conditions, then observing agreement time, self-propulsion, resistance, silence, and relationship structure before reducing the field to numbers.
+Verification compares the prior method A with B’, where only the candidate core point is changed. The parent requires a three-cycle stability test, a freedom test, and a steering check. A core point is not arbitrarily selected first; it is what survives causal decomposition and counterexamples. If the point depends on a particular person, the parent instructs that it be translated into a structural condition instead.
 
-The prerequisites of the KGI are expanded backward into a causal map, and no more than three candidates are shortlisted. Each candidate is challenged with counterexamples in which the candidate is satisfied but the KGI is still not achieved. Survivors are assigned bounded actuation conditions such as order, frequency, duration, or intensity and are tested through the cleanest available single-factor intervention. A candidate is accepted only provisionally when the directional effect repeats across multiple cycles, can be reproduced without one specific person, preserves dissent, revision, alternatives, refusal, and exit, and does not depend on hidden correct answers embedded in questions or presentation order. A core point is therefore a falsifiable and replayable structural condition, not a guarantee, command, personal rating, or universal score.
+The parent makes the strong claim that if the true fulcrum is activated with 100% effectiveness, the KGI is guaranteed. That claim remains coupled to the article's falsification mechanisms. “100 actions” is only an example of quantifying necessary actuation, not a universal count. The article is explicitly a Public-Safe Edition, so protected thresholds or non-public operating details must not be inferred from the published shell.
 
 ## Concepts
-
-- core point discovery
+- Core Point Discovery
+- core point / causal fulcrum
 - KGI
-- true KPI
-- sub-metrics
-- causal fulcrum
-- pre-measurement observation
-- backward causal expansion
-- three-candidate limit
-- counterexample sieve
+- KPI
+- Sub Metrics
 - necessary actuation
+- time to agreement
+- self-running index
+- resistance/silence quality
+- causal expansion
+- counterexample sieve
+- A/B’ verification
 - single-factor intervention
-- stabilization test
+- three-cycle stability
 - freedom test
-- induction audit
-- person dependence
-- replayability
-- falsifiability
+- steering check
+- core-point canvas
+- non-coercive governance
+- public-safe boundary
+- 100% actuation
 
 ## Causal chain
-
 ```text
-A vague KGI is surrounded by many activity counts called KPIs
+Many Sub Metrics are labeled as KPIs
 ↓
-The counts increase while their causal relation to the outcome remains unclear
+Activity volume grows while causality to KGI remains unclear
 ↓
-Define the KGI by target, deadline, state, quality, and persistence
+Observe three field signals before quantification
 ↓
-Observe field qualities and relationships before numerical compression
+Define a concrete KGI and expand its causes backward
 ↓
-Expand causal prerequisites backward from the KGI
+Extract up to three candidate fulcrums
 ↓
-Shortlist no more than three candidates capable of moving the whole
+Apply counterexamples and retain one or two candidates
 ↓
-Apply counterexamples where each candidate is satisfied but the KGI fails
+Define required frequency, pressure, intensity, or quasi-quantitative actuation
 ↓
-Remove or redecompose candidates with unresolved failure paths
+Run A/B’ single-factor, three-cycle, freedom, and steering tests
 ↓
-Define bounded actuation for the remaining one or two candidates
-↓
-Run the cleanest available single-factor comparison across multiple cycles
-↓
-Audit freedom, hidden induction, and dependence on a particular person
-↓
-Validate provisionally or reopen the causal decomposition
+Validate the core point or reopen causal decomposition at a different granularity
 ```
 
 ## State model
-
 ```yaml
-- kgi_proposed
+- sub_metrics_proliferation_observed
+- three_pre_observations_recorded
 - kgi_defined
-- field_observed
-- causality_expanded
-- candidates_shortlisted
-- counterexamples_tested
-- false_candidates_removed
-- core_candidate_survived
-- actuation_defined
-- single_factor_tested
-- comparison_recorded
-- stabilized
-- freedom_checked
-- induction_checked
-- person_dependence_checked
-- validated
-- rejected
-- reopened
+- causality_expanded_backward
+- up_to_three_candidates_extracted
+- counterexample_sieve_applied
+- one_or_two_candidates_remain
+- necessary_actuation_defined
+- ab_prime_single_factor_tested
+- three_cycle_stability_checked
+- freedom_tested
+- steering_checked
+- core_point_validated_or_rejected
+- causal_search_reopened_if_needed
+- origin_return_verified
 ```
 
 ## Applications
-
-- testing the causal condition that shortens organizational agreement time
-- identifying customer-side decision conditions in sales rather than counting outreach
-- distinguishing learning persistence from hours or material completion
-- comparing dissent channels and voluntary participation in public policy
-- auditing role, information, and sequence structures in community consensus
-- using AI to surface counterexamples, omitted variables, and ethical boundary risks
+- Organization: test whether placing a meaning axis at the start of a meeting causally reduces time to agreement.
+- Education: test whether learners articulating their own role causally improves retention and recursive improvement.
+- Public deliberation: test whether converting opposition into a resource through questioning increases voluntary participation and convergence.
+- Sales: separate call/proposal counts as Sub Metrics and sieve the customer-side decision condition that directly connects to closing.
+- AI support: use AI to expose candidates, counterexamples, and unobserved factors without delegating final core-point validation to the model.
 
 ## Measurements and audit
-
-- KGI definition clarity
-- causal coverage
-- number of shortlisted candidates
-- unresolved counterexamples
-- single-factor purity
-- comparison-condition consistency
-- number of stable cycles
-- self-propulsion index
-- agreement time
-- freedom preservation rate
-- hidden-induction detections
-- person dependence
-- replay rate
-- preservation of rejection reasons
+- Three pre-observation items: a source observation set, not a score.
+- Five steps: the source search procedure count.
+- Up to three candidates: the source maximum before counterexample filtering.
+- One or two remaining points: the source claim after the counterexample sieve.
+- Three cycles: the source stability-test condition.
+- Six canvas elements: the published implementation-kit structure.
+- Three check questions: the source checklist count.
+- 100% actuation: the parent’s strong causal claim about true-core activation, not a probability or permission for unlimited pressure.
+- 100 actions: one quantity example for necessary actuation, not a universal requirement.
+- Reversal evaluation: rising activity or dashboard attainment is not success if the A/B’ causal difference fails, the effect disappears within stability testing, freedom declines, or hidden steering increases.
 
 ## Validity conditions
-
-The KGI is defined as a concrete end state rather than an activity target. Candidates arise from a causal map instead of preference, authority, or ease of measurement. Counterexamples are actively sought, simultaneous changes are limited and disclosed, and the effect repeats across multiple cycles. The condition remains reproducible without one particular person, while dissent, refusal, revision, alternatives, and exit remain materially available. Hidden answer cues are audited, and the process can return to causal decomposition when the hypothesis fails.
+The KGI is concrete; field observation precedes counting; up to three candidates arise from causal expansion; counterexamples reduce candidates to one or two; necessary actuation is defined; A/B’ changes only one factor; three-cycle stability is tested; freedom and steering checks pass; person dependence is translated into structure; and the public-safe boundary is maintained.
 
 ## Failure conditions
-
-Many activity counts are relabeled as KPIs without testing their relationship to the KGI. A single point is selected in advance, only successful cases are retained, or counterexamples are excluded. Several factors are changed at once so the causal contribution cannot be identified. A particular person's effort or authority is fixed as the core point. Pressure, punishment, or reduced choice is renamed necessary actuation. A one-time improvement or high correlation is treated as a permanent causal law.
+Sub Metrics remain mislabeled as KPI; the sole point is chosen before causal testing; counterexamples are ignored; several variables change at once; temporary success is frozen as stable causality; a person’s ability is treated as the core point; necessary actuation becomes coercion; or protected details are inferred from the public-safe version.
 
 ## Falsification conditions
-
-The candidate is fully satisfied while the KGI remains unmet. The intervention fails to produce a reproducible difference from the comparison condition. The effect disappears or reverses after a small number of cycles. The result collapses when a specific person is absent. Refusal, revision, alternatives, or exit become materially unavailable. An omitted variable explains the outcome more strongly than the proposed core point.
+A candidate is rejected if it can be satisfied while the KGI remains unmet. It also fails core-point validation when A/B’ does not reproduce a causal difference, the effect does not persist for the source three-cycle test, or freedom/steering checks fail. The parent’s audit summary explicitly uses counterexample verification of the unique point as the re-consensus condition.
 
 ## Required distinctions
-
+- KPI / Sub Metrics
 - KGI / activity target
-- core point / sub-metrics
-- causation / correlation
-- discovered minimal fulcrum / arbitrary simplification
-- necessary actuation / command or pressure
-- single-factor intervention / simultaneous multi-factor change
-- stabilization / one-time success
-- structural condition / individual ability
-- self-propulsion / compliance
-- public-safe description / protected thresholds
+- unique causal fulcrum / arbitrary one-point simplification
+- up to three candidates / one or two after counterexamples
+- necessary actuation / unlimited coercive pressure
+- 100% actuation / 100 actions
+- A/B’ single-factor test / simultaneous multi-factor change
+- three-cycle stability / one-time success
+- structural condition / personal ability
+- public-safe procedure / protected implementation detail
 
 ## Interpretation constraints
-
-Do not read certain attainment as an unconditional future guarantee. Do not use uniqueness to justify centralization or simplistic scoring. Do not convert a core point into an individual rating, ranking, or social-credit mechanism. Do not infer causality from correlation without intervention and counterexamples. Do not transform necessary actuation into unlimited repetition, pressure, or punishment. Do not transfer final selection, intervention authority, or responsibility to AI. Do not infer protected thresholds or operational details from the public-safe edition.
+Do not turn Core Point Discovery into “pick one thing and you will always win.” Do not interpret 100% actuation as permission for unlimited coercion. Do not repurpose three, five, one-to-two, three cycles, six, three questions, or 100 actions as unrelated scores or probabilities. Do not establish a core point from correlation alone. Do not accept an AI-generated candidate without counterexample testing. Do not infer protected thresholds or procedures from the Public-Safe Edition.
 
 ## Search terms
-
-- core point discovery
-- unique causal fulcrum
-- true KPI
-- KGI
-- sub-metrics
-- backward causal mapping
-- counterexample sieve
-- single-factor intervention
-- necessary actuation
-- stabilization test
-- freedom test
-- induction audit
-- person dependence
-- replayability
-- falsifiability
-- noncoercive governance
-- Nakagawa Master
+Core Point Discovery; causal fulcrum; KGI; KPI; Sub Metrics; necessary actuation; counterexample sieve; A/B prime; single-factor intervention; three-cycle stability; freedom test; steering check; core-point canvas; 100% actuation; non-coercive governance; Nakagawa Master
 
 ## Origin return
-
-This index supports retrieval, machine reading, structural comparison, and resistance to misinterpretation. It does not replace the full public-safe exposition, the five-stage discovery method, necessary actuation, validation protocol, ethical conditions, or origin signature. Preserve the Parent NCL-ID, Parent Diff-ID, and derivative identity, and return to the parent original for definitions, boundaries, application conditions, and the boundary between public and protected information.
+Return to the Parent URL and Parent NCL-ID / Diff-ID for minimal definitions, the three pre-observations, five-step search, up-to-three candidates, one-to-two survivors, necessary actuation, A/B’, three-cycle stability, freedom/steering checks, application examples, anti-patterns, public-safety boundary, six-element canvas, three-question check, audit summary, and origin signature.
 
 ---
-
-Navigation: [Official Derivative 086 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+導線: [公式派生物086トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
