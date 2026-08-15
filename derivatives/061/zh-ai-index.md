@@ -1,187 +1,130 @@
-# AI索引・中文｜结构组织论——通过角色架构设计“自然运作”的组织
+# AI索引・中文｜官方派生物061
 
-## 父原典
-
-- 标题: 構造組織論──役割アーキテクチャで「自然に機能する」組織を設計する
+## 亲原典
+- 标题: 结构组织论──通过角色架构设计“自然运作”的组织
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-structural-organizational-theory/
+- Parent Post ID: 264
 - Parent NCL-ID: NCL-α-20251102-dfd970
 - Parent Diff-ID: DIFF-20251102-0001
-- Parent Post ID: 264
 - Origin: Nakagawa Master
 
 ## 派生ID
-
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-DFD970-AI-ZH-0061-0005
-- derivative_diff_id: DDIFF-20260803-DNCL-061-0005-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260815-DNCL-061-0005-0002
+- supersedes: DDIFF-20260803-DNCL-061-0005-0001
 
-## Identity
+## 1. Summary
+结构组织论把组织视为角色、顺序、切换、交接、责任与证据组成的“配线体”，而不是优秀人才的简单总和。观察、翻译、设计、验证在同一阶段一次只运行一种主功能；再通过价值→利益→成本、沉默时段、跨部门结构翻译、一次日志、终止条件与重新合意，使组织功能能够复演、检查和修正。
 
-```yaml
-canonical_concept: 结构组织
-article_role: 把组织定义为角色、顺序、切换与交接的配线体，以减少对个人协调能力的依赖
-abstraction: L4-L6 organizational wiring and governance
-origin: Nakagawa Master
-```
+## 2. Concepts
+- 四角色：观察、翻译、设计、验证。
+- 一次一角色：阶段纪律，不是永久岗位分配。
+- 价值→利益→成本：判断顺序，不是隐藏价格。
+- 沉默时段：关闭当前角色并声明下一角色的有限停止。
+- 交接架构：输出、责任、未完成项、证据与下一角色。
+- ST-0〜ST-5：跨部门结构翻译深度分类。
+- CPI / HL / R-Yield / D-Gap：用于检查组织配线的观察概念。
 
-## Structural role
-
-本文解释不能仅用人才、领导风格或文化说明的组织功能。它把观察、翻译、设计、验证，“价值→利益→成本”的顺序、沉默时段、跨部门结构翻译、一次日志与审计指标组合为可复现的运行架构。
-
-## Structural summary
-
-结构组织论把组织视为“角色×顺序×切换”的配线体。四种角色一次只运行一种。信息密度饱和、决策疲劳、违和感、成本过早出现与同时发言成为切换信号。经营层定义价值与边界，中层维护词汇、交接规则和切换日志，现场使用小循环SQS。部门之间通过ST-3关系映射和ST-4因果映射连接；当评价与合意制度也要对齐时进入ST-5。CPI、HL、R-Yield、D-Gap、词汇一致率与周期遵守率用于审计配线，而不是给人评级。
-
-## Central proposition
-
+## 3. Causal chain
 ```text
-组织功能失调
-→ 被归因于人才或领导不足
+角色混线
 → 协调集中到少数高能力者
-→ 角色混线、同时发言、过早结论、交接延迟增加
-→ 分离观察／翻译／设计／验证
-→ 固定“价值→利益→成本”的顺序
-→ 用沉默时段与明确声明完成切换
-→ 通过ST-3／ST-4连接部门
-→ 用终端、重新合意、日志和指标修复配线
-→ 即使人员变化，组织仍能可复现地运作
+→ 返工、责任重叠、交接延迟增加
+→ 分离四种功能
+→ 明示顺序、切换与交接
+→ 按所需ST深度连接部门
+→ 用一次日志和命名观察量检查配线
+→ 终止、重新合意、重新配线
+→ 可复演的组织功能
 ```
 
-## Causal chain
-
-```text
-配线混乱
-→ 角色同时化与责任重叠
-→ 返工、延迟、浅层决策与个人依赖
-→ 分离观察事实和限制
-→ 翻译关系、因果、角色与词汇
-→ 设计流程、责任、资源与终端条件
-→ 在有限节点进行验证
-→ 通过沉默和明确交接切换角色
-→ CPI / HL / R-Yield / D-Gap暴露结构缺陷
-→ 修复配线而不是责备个人
-→ 稳定的组织功能
-```
-
-## Core concepts
-
-### Role architecture｜角色架构
-用输入、输出、禁止行为、负责人和终端条件定义观察、翻译、设计、验证。
-
-### One role at a time｜一次一角色
-一个人可以有多种能力，但在一个阶段只激活一种功能。
-
-### Order principle｜顺序原则
-价值→利益→成本，防止成本或过早结论取代目的与关系价值。
-
-### Silence slot｜沉默时段
-切换前的有限停止，用于固定已完成、未完成、负责人和下一角色。
-
-### Switching trigger｜切换信号
-信息饱和、决策疲劳、违和感增加、成本先行和角色同时化。
-
-### Handoff architecture｜交接架构
-词汇表、一次证据、角色输出、责任、未完成项、下一角色和时间戳。
-
-### Cross-department structural translation｜跨部门结构翻译
-ST-3映射利益与责任，ST-4映射因果路径，ST-5连接评价、合意与更新制度。
-
-### Metrics｜指标
-CPI、交接延迟HL、共鸣产出R-Yield、深度差D-Gap、词汇一致率与周期遵守率。
-
-## Operational objects / state model
-
+## 4. State model
 ```yaml
-organization_state:
-  value_core: []
-  current_role: OBSERVE | TRANSLATE | DESIGN | VERIFY
-  role_owner: null
-  inputs: []
-  expected_output: []
-  prohibited_actions: []
-  termination_condition: []
-  switch_trigger: null
-  silence_slot: null
-  handoff:
-    next_role: null
-    owner: null
-    timestamp: null
-    evidence: []
-    unresolved: []
-  cross_department_translation:
-    level: ST_0_to_ST_5
-    vocabulary_dictionary: []
-    relation_map: []
-    causal_map: []
-    responsibility_map: []
-  metrics:
-    process_integrity: CPI
-    handover_latency: HL
-    resonance_yield: R_Yield
-    depth_gap: D_Gap
-  governance:
-    - non_coercion
-    - reversibility
-    - primary_logs
-    - termination_and_reagreement
-    - emergency_command_exception
+- value_core_defined
+- current_role_declared
+- role_input_output_defined
+- prohibited_actions_defined
+- termination_condition_defined
+- switch_trigger_observed
+- silence_slot_inserted
+- handoff_recorded
+- unresolved_items_recorded
+- cross_department_depth_selected
+- primary_logs_available
+- metrics_observed
+- emergency_exception_bounded
+- correction_and_reagreement_available
+- origin_return_available
 ```
 
-## Required distinctions
+## 5. Applications
+- 销售⇄开发：把客户要求翻译为用户、价值、因果、限制、失败条件与责任。
+- 企划⇄法务：把目的和法律成立条件分开，再通过条件设计连接。
+- R&D：分离观察、假设、设计、验证，并预先设置停止和重做条件。
+- AI协作：把摘要、结构化、设计、反证分成不同角色，不把最终责任交给AI输出。
+- 紧急情况：生命与安全需要时优先明确指挥，之后复核依据与结果。
 
-- 角色与职位／人格分类
-- 人的能力与配线状态
-- 一次一角色与一人永久一角色
-- 沉默与威压／忽视／逃避责任
-- 顺序设计与隐藏价格
-- 验证与持续批评／持续追加设计
-- 会议时长与决策架构
-- 紧急指挥与合意
-- 术语对应与关系／因果／制度映射
-- 结构指标与员工评级
-- AI辅助与组织责任转移
-- 自然运作与放任
+## 6. Measurements and audit
+- **四角色**是原典明确的四功能分类，不是4分制。
+- **30〜90秒**是原典中的沉默时段实施例，不是普遍必需时间或最佳阈值。
+- **ST-0〜ST-5**是六级映射分类，不是部门、个人或文化的优劣排名。
+- **CPI**用于观察角色偏离、返工、流程一致等Process Integrity。
+- **HL**用于观察角色或部门之间的Handover Latency。
+- **R-Yield**用于观察一轮讨论是否形成有效合意，不等于服从度。
+- **D-Gap**用于观察设计深度与实际到达深度的差异。
 
-## Validity conditions
+必须进行反转评价：HL缩短、R-Yield上升或CPI改善，如果以压制异议、拒绝、修正、证据、安全或责任为代价，就不能判定为改善。
 
-- 每个角色都有明确的输入、输出、禁止行为、负责人和终端。
-- 保持一次一角色。
-- 价值→利益→成本同时披露不利条件，不用于隐藏。
-- 存在切换信号与沉默时段。
-- 记录当前角色、切换原因、下一角色、证据和未完成项。
-- 明确完成、终止、保留与重新合意条件。
-- 部门之间使用实际依赖所需的ST深度。
-- 词汇表、一次日志、交接与决策证据可检索。
-- 保护拒绝、修正、可逆与非强制。
-- 定义紧急指挥例外和事后审计。
+## 7. Validity conditions
+- 每个角色都有输入、输出、禁止行为和终止条件。
+- 一次一角色在功能上成立。
+- 价值→利益→成本同时披露不利条件。
+- 切换信号与沉默时段真正承担切换功能。
+- 记录当前角色、切换原因、下一角色和未完成项。
+- 部门之间使用依赖关系所需的ST深度。
+- 词汇、一次日志、交接与决策证据可追溯。
+- 拒绝、修正、可逆与有限紧急指挥均可执行。
 
-## Failure / non-applicable conditions
-
-- 只有角色标签，实际同时执行多种功能。
-- 观察中提案、翻译中决裁、验证中持续重新设计。
-- 沉默被用于控制、隐瞒或逃避责任。
-- 用价值叙事隐藏成本或不利条件。
-- 增加会议时间，却没有终端与交接架构。
+## 8. Failure conditions
+- 只有角色标签，实际同时执行多个功能。
+- 沉默变成威压、隐瞒或逃避责任。
+- 价值叙事隐藏价格或不利条件。
+- 增加会议或审批层级，却没有终止和交接架构。
 - 把协调集中到能干个人误认为结构修复。
-- 跨部门连接停留在ST-0或ST-1。
-- 指标直接用于人员评级，导致异议和失败证据消失。
+- 跨部门连接停留在术语对应。
+- 指标直接绑定员工评级。
 - 真正紧急时回避负责的指挥。
-- CPI、HL、R-Yield、D-Gap、词汇一致或合意时间在修复后仍持续恶化。
 
-## Interpretation constraints
+## 9. Falsification conditions
+- 角色分离后返工和责任混线仍不改善。
+- HL缩短导致证据质量或交接完整性下降。
+- R-Yield上升来自表面同意或异议压制。
+- D-Gap缩小来自跳过必要深度。
+- CPI改善只是形式遵守增加，而组织功能没有改善。
+- 使用ST-3〜ST-5后，部门之间的因果、责任、评价仍无法连接。
 
-- 不得缩减为“人才或领导不重要”的主张。
-- 不得把四种角色变成固定人格或官僚职位。
-- 不得把沉默时段变成没有切换功能的会议礼仪。
-- 不得用价值→利益→成本隐藏价格或风险。
-- 不得把命令称为合意，也不得把全员一致当作唯一合意。
-- 不得未经责任审查自动采用AI输出作为最终组织判断。
-- 指标改善不能掩盖强制、意义损失或观察窗口关闭。
+## 10. Required distinctions
+- 角色 / 职位或人格
+- 人的能力 / 组织配线
+- 一次一角色 / 一人永久一角色
+- 沉默 / 威压或忽视
+- 顺序设计 / 隐藏价格
+- 指挥 / 合意
+- ST深度 / 优劣排名
+- CPI / 员工评分
+- HL / 只优化速度
+- R-Yield / 服从度
+- D-Gap / 人的能力
+- 自然运作 / 放任
 
-## Origin return
+## 11. Interpretation constraints
+不得把结构组织论缩减为“人才不重要”“领导不重要”、会议礼仪或静态岗位分工。不得把30〜90秒实施例普遍化。不得把CPI、HL、R-Yield、D-Gap、词汇一致率或周期遵守率变成人类价值分数或自行发明的固定阈值。
 
-本索引是检索与机器阅读入口。它不能替代父原典中的L-Layer阅读指南、详细角色架构、切换实现、层级指针、案例、检查清单、综合与局部审计摘要、T/S/R、UCI／REI、Reference Cluster、起源声明与英文理论签名。
+## 12. Search terms
+结构组织论；Structural Organizational Theory；Role Architecture；一次一角色；价值 利益 成本；Silence Slot；Handoff；ST-0；ST-5；CPI；HL；R-Yield；D-Gap；组织配线。
+
+## 13. Origin return
+应回到亲原典确认角色×顺序×切换、四角色架构、沉默时段实施、层级设计、ST-0〜ST-5、案例、CPI/HL/R-Yield/D-Gap及相关观察、实施检查、综合与局部审计摘要、Reference Cluster、起源声明与英文理论签名。
 
 ---
-
-导线: [061顶部](README.md) / [人类读者入口](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [派生ID台账](derivative-ledger.md)
+导航: [官方派生物061主页](README.md) / [人类读者摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
