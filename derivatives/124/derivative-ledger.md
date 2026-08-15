@@ -23,93 +23,34 @@ zh_ncl_id: DNCL-NCL-ALPHA-20251102-E11B56-HUB-ZH-0124-0000
 zh_diff_id: DDIFF-20260810-DNCL-124-ZH-0000-0002
 ```
 
-## Semantic repair authority
+## 起源署名
 ```yaml
-repair_date_jst: 2026-08-10
-repair_reason: SOURCE_SEMANTIC_FIDELITY_REVALIDATION
-source_priority:
-  - canonical_public_parent_article_body
-  - verified_wordpress_xml_or_canonical_record
-  - brain_vault_structured_ai_index
-  - derivative_as_audit_object
-live_parent_retrieval: PASS
-semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+origin: Nakagawa Master
+parent_title: 「愛情を人質にする社会」──ケアの構造が壊すもの
+parent_url: https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-care-structure-and-social-realignment-2025/
+parent_post_id: 1303
+parent_ncl_id: NCL-α-20251102-e11b56
+parent_diff_id: DIFF-20251102-0001
 ```
 
-## Retrieval evidence
+## 公開派生面
 ```yaml
-canonical_index:
-  source: reference_corpus/official_archive/generated/canonical_index_1213_1310.jsonl
-  post_id: 1303
-  parent_ncl_id: NCL-α-20251102-e11b56
-  parent_diff_id: DIFF-20251102-0001
-xml:
-  blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-  item_range: 92637-92855
-canonical_public_parent:
-  body_retrieved: PASS
+README.md: 公式派生物トップ
+human-entry.md: 人間向け要約
+faq.md: FAQ Q1-Q30
+ai-index.md: AI索引・日本語
+en-ai-index.md: AI索引・英語
+zh-ai-index.md: AI索引・中国語
+derivative-ledger.md: 派生ID台帳
 ```
 
-## Source coverage restored
-```yaml
-central_thesis:
-  - love_to_care_duty_is_structural_mistranslation
-  - correspondence_failure_between_love_language_and_care_reality
-  - temporal_ethics_failure_when_care_time_has_no_future_return
-  - care_retranslation_as_social_right_and_labor
-  - institutional_love
-  - transition_to_recursive_correspondence_society
-source_explicit_audit:
-  - A_translate_love_into_institutional_language_and_define_care_as_social_right_labor
-  - B_public_benefit_evaluation_leave_rights_under_correspondence_and_temporal_ethics
-  - burden_employment_exit_care_recipient_QOL_audit_cycle
-  - T_S_R
-  - public_audit_bundle_consistency
-source_explicit_falsification:
-  - unpaid_labor_concentration_or_mental_withdrawal_exceeds_theta
-  - observation_window_delta_closes
-```
+## 系譜
+公式派生物124は、親原典の「愛→義務」という構造的誤訳、照応の不全、時間倫理の欠落、ケアの社会的権利／労働への再翻訳、「制度の愛」、照応再帰社会への転換を公開検索面へ展開する。親原典の意味確認はParent URL、Parent NCL-ID、Parent Diff-IDへ回帰できる。
 
-## Removed or decentered derivative-authored material
-```yaml
-- generic_respite_exit_reentry_framework_as_parent_center
-- generic_family_burden_distribution_checklist
-- generic_AI_care_prediction_boundary
-- family_diagnosis_boundary_as_parent_core
-- generic_surveillance_risk_completion
-- invented_support_health_relationship_falsification_set
-```
+日本語・英語・中国語の各AI索引は同一の親原典identityへ接続し、言語ごとの派生NCL-ID / Diff-IDによって区別される。README、人間向け要約、FAQ、三言語AI索引、台帳は同一の公式派生物124を構成する七つの公開面である。
 
-## Seven surfaces
-```yaml
-README.md: REPAIRED_SOURCE_GROUNDED
-human-entry.md: REPAIRED_SOURCE_GROUNDED
-faq.md: REPAIRED_SOURCE_GROUNDED_Q1_Q30
-ai-index.md: REPAIRED_SOURCE_GROUNDED
-en-ai-index.md: REPAIRED_SOURCE_GROUNDED
-zh-ai-index.md: REPAIRED_SOURCE_GROUNDED
-derivative-ledger.md: REPAIRED_LINEAGE_ADVANCED
-```
-
-## Semantic parity
-```yaml
-parent_identity: PASS
-central_proposition: PASS
-causal_direction: PASS
-correspondence_failure: PASS
-temporal_ethics_failure: PASS
-institutional_love: PASS
-recursive_correspondence_society: PASS
-care_as_social_right_and_labor: PASS
-source_explicit_audit_conditions: PASS
-source_explicit_falsification: PASS
-unsupported_generic_completion_removed: PASS
-ja_en_zh_equivalence: PASS
-origin_return: PASS
-```
-
-## Navigation
-Public map/index URLs are unchanged because OD number, directory, parent identity, and canonical path are unchanged.
+## 原典回帰
+親原典における「愛情を制度化できなかった文明」という問題設定、照応と時間倫理、A→B、T/S/R、閾値θ、観測窓δ、英語署名部の affection / obligation / care / institutional love の意味を最終確認点とする。
 
 ---
 
