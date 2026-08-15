@@ -23,98 +23,34 @@ zh_ncl_id: DNCL-NCL-ALPHA-20251102-1019C0-HUB-ZH-0127-0002
 zh_diff_id: DDIFF-20260810-DNCL-127-0002-0002
 ```
 
-## Semantic repair authority
+## 起源署名
 ```yaml
-repair_date: 2026-08-10_JST
-parent_body: CANONICAL_PUBLIC_PARENT_BODY_VERIFIED
-canonical_record: NCL-α-20251102-1019c0
+origin: Nakagawa Master
+parent_title: 記憶構造論 ─ 再構成される真実と「照応の倫理」
+parent_url: https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/
 parent_post_id: 1325
-xml_locator: 93348-93607
-brain_vault_repair_plan: OD001_OD133_SEMANTIC_FIDELITY_REPAIR_PLAN_2026-08-10.md
-repair_rule: SOURCE_EXPLICIT_OR_STRUCTURAL_NECESSITY_ONLY
+parent_ncl_id: NCL-α-20251102-1019c0
+parent_diff_id: DIFF-20251102-0001
 ```
 
-## Source coverage
+## 公開派生面
 ```yaml
-central_thesis: memory_and_generation_are_reconstruction_systems_requiring_correspondence_recovery
-source_explicit_memory_model:
-  - indexed_fragments
-  - causal_recomposition
-  - completion
-  - selection
-  - relabeling
-source_explicit_AI_homology:
-  - statistical_reconstruction
-  - reference_line_absence
-  - missing_correspondence_check
-  - missing_reversibility
-source_explicit_failure_state: correspondence_disconnection
-source_explicit_four_lines:
-  - correspondence
-  - temporal_ethics
-  - reversibility
-  - responsibility_allocation
-source_explicit_recovery_loop:
-  - reference_cluster_first
-  - correspondence_visualization
-  - cadence_contract
-  - reversible_operation
-source_explicit_target: recoverable_coherence_not_zero_falsehood
+README.md: 公式派生物トップ
+human-entry.md: 人間向け要約
+faq.md: FAQ Q1-Q30
+ai-index.md: AI索引・日本語
+en-ai-index.md: AI索引・英語
+zh-ai-index.md: AI索引・中国語
+derivative-ledger.md: 派生ID台帳
 ```
 
-## Removed / corrected derivative drift
-```yaml
-removed_or_decentered:
-  - generic_testimony_factfinding_framework_as_primary_thesis
-  - majority_witness_and_confidence_rules_not_central_to_parent
-  - generic_legal_and_clinical_disclaimers_as_theory_boundaries
-  - derivative_created_fixed_memory_falsification_program
-corrected_to_parent:
-  - correspondence_reconstruction_system
-  - coherence_first_editing
-  - structural_homology_with_AI
-  - correspondence_disconnection
-  - four_structural_ethics_lines
-  - reference_cluster_to_correspondence_to_cadence_to_reversibility
-  - recoverable_coherence
-```
+## 系譜
+公式派生物127は、親原典の記憶を固定保存物ではなく、断片の索引化・因果再構成・補完・選択・再ラベル化によって成立する再構成系として扱う構造を公開検索面へ展開する。人間記憶とAI生成の構造同型、参照線の欠落による照応断絶、照応・時間倫理・可逆性・配分責任の四線、参照束→照応可視化→拍の契約→可逆運用という回復線を同一の親原典identityへ接続する。
 
-## Seven surfaces
-```yaml
-README.md: SEMANTIC_REPAIR_COMPLETE
-human-entry.md: SEMANTIC_REPAIR_COMPLETE
-faq.md: SEMANTIC_REPAIR_COMPLETE
-ai-index.md: SEMANTIC_REPAIR_COMPLETE
-en-ai-index.md: SEMANTIC_REPAIR_COMPLETE
-zh-ai-index.md: SEMANTIC_REPAIR_COMPLETE
-derivative-ledger.md: SEMANTIC_REPAIR_COMPLETE
-```
+日本語・英語・中国語のAI索引は言語ごとの派生NCL-ID / Diff-IDで区別される。七つの公開面は同一の公式派生物127を構成し、最終意味確認は親原典URL、Parent NCL-ID、Parent Diff-IDへ回帰する。
 
-## Semantic parity
-```yaml
-parent_thesis_preserved: PASS
-causal_direction_preserved: PASS
-human_AI_structural_homology_preserved: PASS
-correspondence_disconnection_preserved: PASS
-four_lines_preserved: PASS
-recovery_loop_preserved: PASS
-presentation_order_and_AI_imprinting_not_overgeneralized: PASS
-ja_en_zh_equivalence: PASS
-unsupported_generic_factfinding_removed: PASS
-unsupported_legal_clinical_boundaries_removed_as_theory_claims: PASS
-```
-
-## Navigation and closure
-```yaml
-identity_or_route_change: false
-public_map_change_required: false
-private_map_change_required: false
-parent_backlink_route_change_required: false
-brain_return: REQUIRED_AFTER_PUBLIC_MERGE
-semantic_disposition_target: PASS_SOURCE_VERIFIED
-```
-
-本台帳はOD127を親原典本文から再導出した意味忠実性修復を記録する。旧版で中心化されていた一般的な「記憶と事実認定」論から、原典固有の照応再構成システム、整合優先編集、人間記憶とAI生成の構造同型、照応断絶、四線、参照束→照応→拍→可逆の回復ループ、回復可能な整合へ中心を戻した。
+## 原典回帰
+原典が目標とするのは「誤りゼロ」ではなく、参照線を回復し、後から検証・修正可能な**回復可能な整合**を形成することである。記憶再構成、AI生成との構造同型、照応断絶、四線、回復ループの意味は親原典本文を最終確認点とする。
 
 ---
 導線: [公式派生物127トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
