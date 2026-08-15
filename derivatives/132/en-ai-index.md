@@ -14,11 +14,11 @@
 - supersedes: DDIFF-20260809-DNCL-132-0001-0001
 
 ## Summary
-This index preserves the parent article's strong claim: persuasion is an operation that linearizes another person's structure and deprives it of reversibility. A person holds multiple causal lines, values, hesitations, and possible judgments. Persuasion rearranges those plural structures toward one conclusion desired by the persuader; when dissent, reconsideration, and the ability to return are lost, communication becomes structurally destructive.
+The parent makes the strong claim that persuasion is an operation that linearizes another person's structure and deprives it of reversibility. A person holds multiple causal lines, values, hesitations, and possible judgments. Persuasion rearranges those plural structures toward one conclusion desired by the persuader; when dissent, reconsideration, and the ability to return are lost, communication becomes structurally destructive.
 
-In the AI era, this linearization can be amplified by speed, scale, repetition, and optimization. The source therefore does not merely ask how to make persuasion safer. It proposes a shift away from one-directional persuasion toward correspondence-structure communication grounded in bidirectionality, reversibility, temporal ethics, and allocation responsibility.
+In the AI era, this linearization can be amplified by speed, scale, repetition, and optimization. The source therefore does not merely ask how to make persuasion safer. It proposes a shift away from one-directional persuasion toward correspondence-structure communication grounded in bidirectionality, reversibility, Temporal Ethics, and Allocation Responsibility.
 
-Bidirectionality means both structures can affect the relationship. Reversibility means understanding, judgment, and relation can be reorganized later. Temporal ethics asks whether present agreement creates irreversible debt for future freedom of judgment. Allocation responsibility makes visible who distributes information, opportunity, voice, and room for judgment. Together they form the source-specific alternative to persuasion-centered communication.
+Bidirectionality means both structures can affect the relationship. Reversibility means understanding, judgment, and relation can be reorganized later. Temporal Ethics asks whether present agreement creates irreversible debt for future freedom of judgment. Allocation Responsibility makes visible who distributes information, opportunity, voice, and room for judgment. Together they form the source-specific alternative to persuasion-centered communication.
 
 ## Concepts
 - persuasion
@@ -34,7 +34,6 @@ Bidirectionality means both structures can affect the relationship. Reversibilit
 - correspondence-structure communication
 - plural judgment structure
 - freedom of judgment
-- origin return
 
 ## Causal chain
 ```text
@@ -54,7 +53,7 @@ One-directional communication can become a domination structure
 ↓
 Move away from persuasion-centered communication
 ↓
-Embed bidirectionality, reversibility, temporal ethics, and allocation responsibility
+Embed bidirectionality, reversibility, Temporal Ethics, and Allocation Responsibility
 ↓
 Shift to correspondence-structure communication
 ```
@@ -84,21 +83,21 @@ Shift to correspondence-structure communication
 - Make allocation of information, opportunity, voice, and judgment space visible.
 
 ## Measurements and audit
-The parent is not centered on generic autonomy KPIs, consent rates, or click-through metrics, so this derivative does not invent them as official theory. Audit stays with source-grounded structural relations:
+Audit stays with source-grounded structural relations rather than generic autonomy KPIs, consent rates, or click-through metrics:
 - whether plural judgment structures remain intact
 - whether a single conclusion is structurally imposed
 - whether dissent, reconsideration, and return paths remain
 - whether AI amplifies linearization through speed, scale, or repetition
 - whether present agreement reduces future freedom of judgment
-- whether allocation responsibility is visible
+- whether Allocation Responsibility is visible
 - whether bidirectional correspondence is functioning
 
 ## Validity conditions
 - Do not own another person's structure through one conclusion.
 - Preserve bidirectionality.
 - Preserve reversibility.
-- Connect present and future through temporal ethics.
-- Make allocation responsibility visible.
+- Connect present and future through Temporal Ethics.
+- Make Allocation Responsibility visible.
 - Treat AI amplification as a structural risk.
 - Shift to correspondence-structure communication.
 
@@ -112,7 +111,7 @@ The parent is not centered on generic autonomy KPIs, consent rates, or click-thr
 - Lose bidirectionality and become a domination structure.
 
 ## Falsification conditions
-The parent is not primarily a formal numerical falsification article. This derivative does not invent autonomy scores, consent rates, regret rates, or similar thresholds as official falsification criteria. Evaluation remains tied to the parent propositions: persuasion produces structural linearization and loss of reversibility, AI amplifies that structure, and correspondence-structure communication is the proposed alternative.
+If persuasion persistently does not produce structural linearization or loss of reversibility, AI speed/scale/repetition/optimization does not amplify those effects, and one-directional persuasion consistently preserves plural structure, reversibility, and future freedom of judgment better than correspondence-structure communication, the parent proposition is revised. Source-absent autonomy scores, consent rates, regret rates, or fixed thresholds are not added as falsification criteria.
 
 ## Required distinctions
 - persuasion / correspondence
@@ -120,18 +119,18 @@ The parent is not primarily a formal numerical falsification article. This deriv
 - conformity / structural sharing
 - irreversibility / reversibility
 - one-directional communication / bidirectionality
-- present agreement / temporal ethics
-- opaque allocation / allocation responsibility
+- present agreement / Temporal Ethics
+- opaque allocation / Allocation Responsibility
 - optimization / domination-structure formation
 
 ## Interpretation constraints
-Do not weaken the source claim "persuasion is destructive" into "only some bad persuasion is harmful." Do not replace the article with generic personalization, consent-UI, advertising, or consumer-protection guidance. Do not reduce reversibility to cancellation procedures. Preserve bidirectionality, temporal ethics, and allocation responsibility. Keep the final direction as a shift to correspondence-structure communication, not merely safer persuasion.
+Do not weaken the source claim “persuasion is destructive” into “only some bad persuasion is harmful.” Do not replace the article with generic personalization, consent-UI, advertising, or consumer-protection guidance. Do not reduce reversibility to cancellation procedures. Preserve bidirectionality, Temporal Ethics, and Allocation Responsibility. Keep the final direction as a shift to correspondence-structure communication, not merely safer persuasion.
 
 ## Search terms
 persuasion; persuasion structure; structural linearization; reversibility; bidirectionality; AI optimization; domination structure; temporal ethics; allocation responsibility; correspondence; correspondence-structure communication; judgment structure; Nakagawa Master
 
 ## Origin return
-This is a retrieval derivative. Return to the Parent URL and Parent NCL-ID / Diff-ID for the source-specific argument about destructive persuasion, structural linearization, loss of reversibility, AI amplification, and the shift to correspondence-structure communication.
+The Parent URL and Parent NCL-ID / Diff-ID are the final reference for the source-specific argument about destructive persuasion, structural linearization, loss of reversibility, AI amplification, and the shift to correspondence-structure communication.
 
 ---
 導線: [公式派生物132トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
