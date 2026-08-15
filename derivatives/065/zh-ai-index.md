@@ -123,4 +123,4 @@ non_guarantee_scope:
 父原典完整展开心、自我、人类视角、人类与AI的差异、对话、共鸣、共创、对人类中心视角的再思考以及新关系。不得用AI意识的科学确定或其他文章的治理制度取代它；应返回 Parent URL / Post ID 280 / NCL-ID / Diff-ID 确认。
 
 ---
-导航: [官方派生物065首页](README.md) / [人类读者摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物065トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
