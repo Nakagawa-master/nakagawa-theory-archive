@@ -1,8 +1,7 @@
-# English AI Index | Official Derivative 085
+# AI Index — English | Official Derivative 085
 
 ## Parent Original
-
-- Title: Funding? — How Shallow Questions Produced Thirty Years of Political Farce
+- Title: 財源は？──問いの浅さが30年の茶番を生んだ構造
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-shallow-questions-political-farce/
 - Parent Post ID: 372
 - Parent NCL-ID: NCL-α-20251102-a37faa
@@ -10,147 +9,125 @@
 - Origin: Nakagawa Master
 
 ## Derivative Identity
-
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-A37FAA-HUB-EN-0085-0001
-- derivative_diff_id: DDIFF-20260806-DNCL-085-0001-0001
+- derivative_diff_id: DDIFF-20260815-DNCL-085-0001-0001
 - supersedes: none
 
 ## Summary
+The parent article treats “Where is the funding?” as a D1 question that is too shallow to resolve the sustainability problem of institutions under an inverted population pyramid. It argues for moving to D3 — “which causal structure must change for the institution to become sustainable?” — and D4 — “what institutional design can remain viable under an inverted pyramid?” D1, D3, and D4 are Question Depth labels inside the parent framework, not numerical scores or equally spaced measurements.
 
-This theory does not reject the question “How will it be funded?” It explains that the question becomes structurally shallow when it is used as the final veto before the institutional outcome, population structure, cost of inaction, real-resource capacity, causal leverage point, and withdrawal conditions have been defined. In an inverted population pyramid, preserving the current arrangement is not costless. Labor shortages, care burdens, regional decline, lost opportunities, and delayed infrastructure renewal accumulate over time and must be compared with the costs and risks of intervention.
+The parent places a structural mismatch between demographic conditions and inherited institutional assumptions at the center of the problem. It describes politicians, media, and citizens as a three-part structure that reproduces shallow questions. It then proposes defining a KGI such as sustainable social-security and tax systems and examining causal-core KPI candidates including changes to elderly medical-cost burden, institutional extension of labor participation age, and restructuring of asset/consumption taxation.
 
-Funding must therefore be separated from implementation capacity. Taxation, insurance contributions, borrowing, and reallocation concern payment and distribution, while personnel, facilities, technology, supply capacity, and administrative capability determine whether a program can actually operate. A core-point KPI is not an easily counted activity metric; it is one or two testable causal levers expected to move the KGI. The theory also examines how politics, media, and citizens can jointly compress structural questions into short-term burden, conflict headlines, and household-budget metaphors. It is a method for symmetric comparison and falsifiable institutional design, not an automatic defense of a policy, party, or fiscal doctrine.
+The parent’s “30 years / more than 30 years” and “1980s” expressions are retained as the author’s historical framing rather than upgraded into independently established statistics. The integrated audit summary tracks subject-coherence rate, volume-cluster influence, Consent Failure rate, time to re-consensus, RC/ER/CEA/S, threshold θ, observation window δ, and phenomena such as agitation or early-win fixation, without publishing universal fixed values for those quantities.
 
 ## Concepts
-
-- depth of question
-- funding frame
+- Question Depth / PQ
+- D1
+- D3
+- D4
+- funding question
 - inverted population pyramid
-- baseline cost
-- cost of inaction
-- real-resource constraint
+- institutional design
+- three-part reproduction structure
+- politicians / media / citizens
 - KGI
-- core-point KPI
-- symmetric comparison
-- time consistency
-- distributional impact
-- implementation capacity
-- reversibility
-- politics-media-citizen triad
-- institutional conditions
+- causal-core KPI
+- status-quo cost
+- non-action cost
+- real-resource constraints
+- subject-coherence rate
+- volume-cluster influence
+- Consent Failure rate
+- time to re-consensus
+- RC / ER / CEA / S
+- threshold θ
+- observation window δ
 
 ## Causal chain
-
 ```text
-Undefined institutional outcome
+Debate is fixed at D1: “Is funding available now?”
 ↓
-Funding question placed first
+Tax, burden, and benefit adjustments repeat inside the existing institutional frame
 ↓
-Existing allocation treated as neutral
+The mismatch between population structure and institutional assumptions stays upstream and unexamined
 ↓
-Proof burden concentrated on new proposals
+Politicians, media, and citizens reproduce the shallow question
 ↓
-Costs of inaction left unmeasured
+D3 asks which causal structure must change
 ↓
-Debate compressed into annual amounts and activity counts
+D4 asks what institutional design works under the inverted pyramid
 ↓
-Population, supply, and distributional deterioration continues
+A sustainable-system KGI is defined and causal-core KPI candidates are tested
 ↓
-Define KGI, baseline loss, time horizon, and real constraints
+Institutional redesign is compared together with status-quo and non-action costs
 ↓
-Select causal leverage and compare intervention, alternative, and inaction
-↓
-Pilot, audit, revise, scale, or withdraw
+Audit, falsification, reversibility, and re-consensus keep the design revisable
 ```
 
 ## State model
-
 ```yaml
-- issue_named
-- shallow_question_detected
-- outcome_defined
-- population_modelled
-- baseline_costed
-- resources_mapped
-- causal_leverage_selected
-- alternatives_compared
-- distribution_checked
-- implementation_bounded
-- piloted
-- contested
-- revised_or_stopped
-- audited
+- d1_question_dominant
+- population_institution_mismatch_unexamined
+- triple_reproduction_structure_active
+- d3_causal_question_opened
+- d4_design_question_opened
+- kgi_defined
+- core_kpi_candidates_identified
+- institutional_options_compared
+- status_quo_cost_compared
+- consent_and_reversibility_checked
+- audit_bundle_active
+- agitation_or_early_win_fixation_detected
+- redesign_or_reconsensus_required
+- origin_return_verified
 ```
 
 ## Applications
-
-- family and fertility policy
-- health and long-term care design
-- regional mobility and service access
-- education investment evaluation
-- climate and infrastructure renewal
+- Social security: compare sustainable benefit/burden/participation designs rather than only asking for an additional funding amount.
+- Elderly medical costs: test burden-structure change as a causal-core candidate rather than an automatically correct policy.
+- Labor participation: test institutional extension of participation age as a candidate causal link between demography and sustainability.
+- Tax design: examine restructuring between asset and consumption taxation as institutional design rather than a simple tax-up/tax-down binary.
+- Political and media questioning: move from the D1 funding question toward D3/D4 causal and institutional-design questions.
 
 ## Measurements and audit
-
-- question-depth coverage
-- cost-of-inaction visibility
-- core-KPI contribution to KGI
-- real-resource sufficiency
-- distributional transparency
-- time-horizon consistency
-- alternative-comparison rate
-- reversibility
-- explanation reproducibility
+- “30 years / more than 30 years”: the parent author’s historical framing, not a derivative-verified statistical estimate.
+- “1980s”: the parent’s historical reference for the claimed foreseeability of demographic change.
+- D1/D3/D4: Question Depth labels, not numerical scores.
+- Three-part structure: politicians, media, citizens — a source structural enumeration.
+- Three missing dimensions: depth of question, absence of causal-core KPI, absence of institutional-design thinking — a source theoretical enumeration.
+- Integrated audit: subject-coherence rate, volume-cluster influence, Consent Failure rate, time to re-consensus, RC/ER/CEA/S, and related measures are connected to threshold θ; agitation/early-win fixation or phenomenon M within observation window δ is connected to rejection or revision.
+- The parent does not publish universal fixed θ, δ, or audit-bundle values here.
+- Reversal evaluation: higher revenue, support, or decision speed does not establish improvement if institutional sustainability, consent, reversibility, real-resource fit, or causal coherence deteriorate.
 
 ## Validity conditions
-
-The intended outcome, target population, KGI, and time horizon are defined before funding is used as a decision gate. Inaction is treated as an alternative with measurable costs. Monetary and real constraints are separated. The causal KPI is limited and testable, while distributional effects, alternatives, objections, and withdrawal conditions remain visible.
+The analysis does not stop at D1; demographic structure and institutional assumptions are treated causally; the three-part reproduction structure is not reduced to personal blame; KGI and core-KPI candidates are causally connected; institutional redesign includes comparison with status-quo/non-action costs; and consent, reversibility, audit, and re-consensus remain available.
 
 ## Failure conditions
-
-Only new proposals must explain costs, while the existing arrangement is treated as free. Monetary amounts substitute for staffing and supply analysis. Spending rates, service counts, or popularity become proxies for outcomes. Long-term benefits are exaggerated, and uncertainty, side effects, distribution, or stopping rules are hidden.
+The article is converted into “funding does not matter”; D1 is dismissed so completely that resource constraints disappear; one tax-rate adjustment is treated as sufficient institutional redesign; the three-part structure becomes partisan or personal attack; core-KPI candidates become untested policy certainties; or one side of status-quo versus change costs is omitted.
 
 ## Falsification conditions
-
-Deeper questioning does not improve decision transparency or outcomes. The selected leverage KPI remains unrelated to the KGI across settings. Once inaction costs are included, the alternative or baseline remains superior. Real-resource constraints repeatedly prevent implementation, or distributional harms remain larger than benefits after attempted repair.
+The integrated audit permits rejection or revision when subject coherence, volume-cluster influence, Consent Failure, time to re-consensus, RC/ER/CEA/S, or related measures depart from θ, or when agitation/early-win fixation appears within δ. If a D4 institutional design and its proposed causal core do not reproduce improved sustainability under the stated demographic conditions, that design or core-point hypothesis should also be revised.
 
 ## Required distinctions
-
-- funding verification / funding-only veto
-- monetary constraint / real-resource constraint
-- initial cost / total long-term cost
-- intervention cost / cost of inaction
-- KGI / core-point KPI
-- policy outcome / budget execution
-- accountability / conclusion steering
-- deeper inquiry / automatic policy approval
+- funding availability / institutional sustainability
+- D1 / D3 / D4
+- question depth / policy preference
+- demographic structure / one-year accounting
+- three-part structure / personal blame of three groups
+- KGI / causal-core KPI
+- candidate core point / automatically correct policy
+- institutional design / simple tax-rate adjustment
+- status-quo cost / change cost
+- author’s historical evaluation / independently verified statistic
 
 ## Interpretation constraints
-
-Do not interpret this as permission to ignore funding. Do not convert it into a claim of unlimited public spending. Do not reduce it to an evaluation of a party or politician. Do not label all objections shallow. Do not treat one KPI as universally sufficient. Do not present long-run projections as certainty.
+Do not turn the parent into a doctrine that funding questions are forbidden or resources do not matter. Do not score D1/D3/D4 numerically. Do not strengthen “30 years” or “1980s” into derivative-verified empirical findings. Do not convert the politicians/media/citizens structure into partisan attack. Do not make example core KPIs into automatic policy answers. Do not assign invented fixed values to θ, δ, or the audit bundle.
 
 ## Search terms
-
-- funding question
-- shallow political question
-- depth of inquiry
-- inverted population pyramid
-- institutional design failure
-- cost of inaction
-- baseline cost
-- core-point KPI
-- KGI
-- real-resource constraint
-- public policy evaluation
-- fiscal framing
-- distributional impact
-- reversibility
-- Nakagawa Master
+funding question; Question Depth; PQ; D1; D3; D4; inverted population pyramid; institutional design; three-part structure; KGI; causal-core KPI; status-quo cost; non-action cost; real-resource constraints; subject coherence; volume-cluster influence; Consent Failure; RC ER CEA S; threshold θ; observation window δ; Nakagawa Master
 
 ## Origin return
-
-This index supports retrieval, machine reading, structural comparison, and misreading resistance. It does not replace the original narrative, the politics-media-citizen structure, the hierarchy of questions, or the original reference cluster. Preserve the Parent NCL-ID and Diff-ID and return to the parent original for definitions, boundaries, and provenance.
+Return to the Parent URL and Parent NCL-ID / Diff-ID for D1/D3/D4, the demographic/institutional mismatch argument, the three-part reproduction structure, KGI/core-KPI examples, institutional-design alternatives, the three missing dimensions, integrated/local audit summaries, Reference Cluster, and origin signature.
 
 ---
-
-Navigation: [Official Derivative 085 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
+導線: [公式派生物085トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
