@@ -1,148 +1,157 @@
-# AI Index · English｜Official Derivative 072
+# AI Index — English | Official Derivative 072
 
 ## Parent Original
-
-- Title: Nakagawa-Style Connection Adjudication Design — Protocols for Dispute, Remedy, and Restoration
+- Title: 中川式 接続裁定設計論──紛争・救済・復権のプロトコル
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-adjudication/
-- Parent Slug: nakagawa-master-nakagawa-connection-adjudication
 - Parent Post ID: 306
 - Parent NCL-ID: NCL-α-20251102-2a60e2
 - Parent Diff-ID: DIFF-20251102-0001
-- Publication Status: publish
 - Origin: Nakagawa Master
 
 ## Derivative Identity
-
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-2A60E2-HUB-JA-0072-0000
-- derivative_diff_id: DDIFF-20260804-DNCL-072-0000-0001
-- supersedes: none
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-2A60E2-AI-EN-0072-0004
+- derivative_diff_id: DDIFF-20260815-DNCL-072-0004-0003
+- supersedes: DDIFF-20260804-DNCL-072-0000-0001
 
 ## Summary
+Connection Adjudication Design addresses disputes, consent misuse, metric gaming, log manipulation, and collective pressure that arise when connection institutions operate in practice. It is designed to prevent conflict from reverting to reputation, authority, outrage, majority pressure, or private punishment. Adjudication is treated as a reversible procedure for stopping harm, preserving evidence, determining responsibility proportionally, providing remedy, restoring participation under conditions, and reopening decisions when new evidence appears.
 
-Connection Adjudication Design is the judicial layer for disputes and deviations that arise when connection accounting, governance, protocols, basic rights, and transition programs operate in real institutions. Without a formal procedure, conflict returns to popularity, institutional authority, online outrage, majority pressure, or private punishment. The framework therefore treats adjudication not as a power to define bad persons, but as a reversible procedure for stopping harm, preserving evidence, determining responsibility proportionally, providing remedy, and restoring participation when conditions are met.
+Its four principles are legitimacy, proportionality, repair priority, and independence. The procedure separates receipt, provisional measures, investigation, decision, remedy, and restoration. Reputation, titles, follower counts, and majority support are not evidence. Primary evidence such as ConsentToken, MemoryObject, ReversibilityFlag, and signed structural logs remains distinguishable from secondary evidence such as audit summaries, observation logs, and third-party testimony, with provenance, gaps, and manipulation risk kept visible.
 
-Its four principles are legitimacy, proportionality, repair priority, and independence. The procedure is divided into six stages: receipt, provisional measures, investigation, decision, remedy, and restoration. Target times include receipt within twenty-four hours, provisional protection within forty-eight hours, and a first decision within fourteen days. Primary evidence such as ConsentToken, MemoryObject, ReversibilityFlag, and signed structural logs is distinguished from secondary evidence such as audit summaries, observation logs, and third-party testimony. Evidence provenance, missing information, possible manipulation, and purpose of collection must be recorded. Fame, titles, follower counts, and majority support have no evidentiary value.
-
-A public room discloses case types, principles, processing statistics, and decision summaries. A protected institutional room handles identifiers, internal weights, and detailed evidence under independent review. Decision makers disclose conflicts of interest and recuse themselves or delegate externally when necessary. Remedies include correction, withdrawal, annotation, renewed consent, cooling, restored access, temporary reward reduction, education, and compensation. Restoration proceeds through observed return, limited return, and full return. New evidence may reopen the case so that adjudication itself does not become irreversible truth.
+The parent states operational reference times of **24 hours for receipt, 48 hours for provisional measures, and 14 days for a first decision** as targets intended to limit secondary harm from delay. These are source-authored design references, not universal legal deadlines, universal SLAs, correctness guarantees, or remedy guarantees.
 
 ## Concepts
-
 - connection adjudication
-- judicial layer
 - legitimacy
 - proportionality
 - repair priority
 - independence
-- case receipt
-- provisional measure
+- receipt
+- provisional measures
 - primary evidence
 - secondary evidence
 - ConsentToken
 - MemoryObject
 - ReversibilityFlag
-- public room / institutional room
+- evidence provenance
+- public summary
+- protected record
 - conflict-of-interest recusal
-- remedy menu
-- restoration protocol
+- remedy
 - observed return
 - limited return
+- full return
 - rehearing
-- brigading detection
-- anti-SLAPP protection
+- brigading
+- SLAPP
 
 ## Causal chain
-
 ```text
-connection institutions operate in reality
+connection institutions operate in practice
 ↓
-coercion, consent misuse, metric gaming, and log manipulation occur
+coercion, use outside consent, metric gaming, log manipulation, or collective pressure occurs
 ↓
-without procedure, popularity and authority dominate judgment
+without formal procedure, reputation, authority, outrage, and private punishment dominate judgment
 ↓
-harm expands, evidence disappears, and private punishment escalates
+harm expands and evidence disperses
 ↓
 receipt and timestamp fix the case
 ↓
 reversible provisional measures protect safety and evidence
 ↓
-primary logs, protocol traces, and testimony are investigated separately
+primary evidence, secondary evidence, provenance, and conflicts of interest are examined separately
 ↓
-proportional and independent adjudication produces a reviewable decision
+a proportional and independent decision is made
 ↓
-correction, withdrawal, renewed consent, compensation, and education repair harm
+correction, withdrawal, renewed consent, compensation, education, and necessary restrictions are applied
 ↓
-staged restoration and rehearing recover agreement circulation
+observed return, limited return, and full return are considered in stages
+↓
+new evidence, objection, and rehearing keep adjudication corrigible
 ```
 
 ## State model
-
-1. RECEIVED: record case ID, time, parties, consent state, boundaries, and affected scope.
-2. PROVISIONAL: impose reversible measures that prevent further harm and preserve evidence.
-3. INVESTIGATING: evaluate primary and secondary evidence, provenance, gaps, and conflicts of interest.
-4. DECIDED: issue a proportional decision with a public summary and protected detailed record.
-5. REMEDY: execute correction, withdrawal, compensation, renewed consent, education, and limits.
-6. OBSERVED_RETURN: test recurrence prevention during a limited observation period.
-7. LIMITED_RETURN: restore selected authority while monitoring compliance and safety.
-8. FULL_RETURN: restore participation within the verified scope.
-9. REOPENED: rehear the case because of new evidence or serious procedural error.
-10. CLOSED: confirm remedy, history, recurrence prevention, and an available rehearing route.
+```yaml
+- case_is_received_or_not
+- provisional_protection_is_active_or_not
+- investigation_is_open_or_not
+- primary_and_secondary_evidence_are_distinguished_or_mixed
+- evidence_provenance_is_traceable_or_not
+- conflict_of_interest_is_disclosed_or_hidden
+- decision_is_proportional_or_excessive
+- remedy_is_active_or_absent
+- observed_return_is_available_or_not
+- limited_return_is_available_or_not
+- full_return_is_available_or_not
+- rehearing_is_available_or_blocked
+- public_summary_is_separated_from_protected_record_or_not
+- case_is_closed_with_correction_route_or_without_it
+```
 
 ## Applications
-
-- Use outside consent: stop the use, preserve purpose and transfer records, then combine deletion, correction, explanation, compensation, and limited authority.
-- Metric gaming: examine homogeneity, sudden increases, insider evaluation, and brigading while excluding popularity from evidence.
-- Structural-log manipulation: preserve original logs, signatures, diffs, and access history, then choose remedies proportional to affected scope.
-- Community collective pressure: do not treat mass identical complaints as truth; use provisional protection, external observation, cooling, and anti-SLAPP support.
-- Restoration after past violation: require recurrence prevention, renewed consent, learning evidence, and staged monitoring before authority is restored.
+- For use outside consent, pause the use, preserve consent scope and transfer records, and combine deletion, correction, explanation, compensation, and limited authority as needed.
+- For metric gaming, examine homogeneous connections, sudden increases, insider evaluation, and brigading while excluding popularity from evidence.
+- For structural-log manipulation, preserve original logs, signatures, diffs, and access history, then choose remedies proportional to affected scope.
+- For collective pressure, do not treat mass similar complaints as proof; use provisional protection, external observation, cooling, and reduced counterclaim burden where relevant.
+- For restoration after a prior violation, require recurrence prevention, renewed consent, learning evidence, and staged observation rather than automatic return.
 
 ## Measurements and audit
+**Time references.** Values: 24 hours, 48 hours, 14 days. Source: the parent original. Measurement actor: the institution operating the adjudication procedure. Measurement object: elapsed time to receipt, provisional action, and first decision. Source modality: operational design targets intended to reduce secondary harm from delay. Permitted use scope: observing processing delay and its relation to protection and review. Non-guarantee scope: these values are not universal legal deadlines, universal SLAs, correctness guarantees, or remedy guarantees.
 
-- time from complaint to receipt, provisional action, and first decision
-- rate at which provisional measures are reviewed before expiration
-- distinction and provenance coverage for primary and secondary evidence
-- conflict-of-interest recusals and external delegations
-- voluntary correction, withdrawal, and renewed-consent rates
-- recurrence of similar harm and secondary harm after remedy
-- observed, limited, and full restoration completion rates
-- rehearing, reversed decisions, and corrected adjudication errors
-- brigading, SLAPP, and abusive-complaint detection accuracy
-- re-identification, retaliation, or renewed outrage caused by public summaries
+**Rates, counts, and detection measures.** Observable variables include review of provisional measures, voluntary correction/withdrawal/renewed consent, recurrence of similar harm, secondary harm after remedy, staged restoration, rehearing and corrected decisions, detection of brigading or SLAPP, and re-identification or retaliation caused by public summaries. The parent does not define universal pass rates, fixed success thresholds, or guaranteed detection accuracy for these variables.
+
+Reversal evaluation is necessary. Faster handling is not improvement if evidence review, objection, independence, or proportionality weakens. Fewer complaints are not success if access to complaint becomes harder. A higher restoration rate is not success if victim safety or recurrence prevention worsens. More disclosure is not better transparency if re-identification or retaliation rises.
 
 ## Validity conditions
-
-Receipt, provisional protection, investigation, decision, remedy, and restoration must be separated by role. Provisional measures need reasons, deadlines, release conditions, and objection procedures. Consent, boundaries, primary logs, and reversibility must remain central to evidence. Fame and majority support must be excluded. Conflicts of interest and recusal must be recorded. Victim safety and proportionality must come first. New evidence must support rehearing and correction. Restoration must include recurrence prevention, renewed consent, and staged observation. The boundary between disclosure and privacy must be explainable.
+- Receipt, provisional action, investigation, decision, remedy, and restoration remain role-distinct.
+- Provisional measures have reasons, time limits, release conditions, and objection routes.
+- Consent, boundaries, primary logs, and reversibility remain central to evidence.
+- Reputation, titles, follower counts, and majority support do not become evidence.
+- Evidence provenance, gaps, and manipulation risk remain traceable.
+- Conflicts of interest and recusal or external delegation are recorded.
+- Victim safety and proportionality are prioritized.
+- Remedy and recurrence prevention connect to the decision.
+- Staged restoration and rehearing on new evidence remain available.
+- The boundary between public summary and protected record remains explainable.
 
 ## Failure conditions
-
-The framework fails when a person's reputation determines the result before receipt; when provisional measures become indefinite punishment; when victims bear the entire burden of proof and publicity; when fame or majority support is treated as evidence; when decision makers conceal conflicts; when no correction, withdrawal, compensation, or renewed-consent path exists; when permanent exclusion is the only safety measure; when public summaries enable identification and retaliation; or when rehearing is prohibited and error becomes permanent.
+- Reputation or popularity determines the result before receipt.
+- Provisional action becomes indefinite final punishment.
+- Victims carry the full burden of proof, publicity, or reconciliation.
+- Reputation, majority support, or follower counts are treated as evidence.
+- Conflicts of interest remain undisclosed.
+- No path exists for correction, withdrawal, compensation, or renewed consent.
+- Permanent exclusion becomes the only safety measure.
+- Public summaries enable re-identification or secondary attack.
+- Rehearing is blocked and erroneous decisions become irreversible.
+- Anti-gaming measures suppress legitimate objections.
 
 ## Falsification conditions
+If the procedure repeatedly fails to limit harm, preserve evidence, start remedy, reduce recurrence, retain correction capacity, support staged restoration, or correct erroneous decisions through rehearing, the scope of the design is subject to revision.
 
-Revise or reject the design if decision and remedy times do not decline, recurrence does not fall, voluntary correction and restoration do not improve, brigading and SLAPP detection remains inaccurate, provisional measures become longer and more harmful, rehearing and decision correction do not function, or public summaries produce greater privacy harm and retaliation.
+A shorter processing time does not support the design when the reduction comes from weaker evidence review, objection, independence, or proportionality. The design also requires reconsideration when public summaries increase re-identification or retaliation, provisional measures become prolonged and harmful, or brigading/SLAPP controls continue to produce unresolved false positives or misses.
 
 ## Required distinctions
-
-- adjudication is not punishment
-- provisional measure is not final judgment
-- remedy is not a demand for victim silence
-- repair priority is not immunity from responsibility
-- restoration is not erasure of harm
-- transparency is not full publication of personal data
-- independence is not disappearance of responsibility
-- rehearing is not permanent uncertainty
+- adjudication / punishment
+- provisional measure / final judgment
+- remedy / demand for victim silence
+- repair priority / immunity from responsibility
+- restoration / erasure of harm
+- transparency / full publication of personal data
+- independence / disappearance of responsibility
+- rehearing / permanent uncertainty
+- anti-gaming / suppression of legitimate objection
 
 ## Interpretation constraints
+The structure is distinct from personality scoring, outrage trials, majority-vote justice, forced reconciliation, secret courts, or permanent exclusion as a default. AI may assist evidence organization, comparison, and anomaly detection, while final responsibility, explanation, objection, suspension, and rehearing remain with accountable human institutions.
 
-Do not turn the framework into personality scoring, online outrage trials, majority-vote justice, forced reconciliation, secret courts, or permanent exclusion as the default. AI may assist evidence organization, comparison, and anomaly detection, but final responsibility, explanation, objection, suspension, and rehearing must remain with accountable human institutions.
+The 24-hour, 48-hour, and 14-day references are source-authored operational targets. They do not by themselves establish adjudication quality, safety, or successful remedy. Rates, counts, and detection measures must be interpreted relationally rather than as monotonic success scores.
 
 ## Search terms
-
-connection adjudication / dispute resolution / remedy / restoration / provisional measure / primary evidence / ConsentToken / MemoryObject / ReversibilityFlag / proportionality / repair priority / independence / public room / institutional room / conflict of interest / rehearing / brigading / SLAPP / observed return / recurrence prevention
+connection adjudication; dispute resolution; remedy; restoration; provisional measure; primary evidence; ConsentToken; MemoryObject; ReversibilityFlag; proportionality; repair priority; independence; evidence provenance; conflict of interest; rehearing; brigading; SLAPP; observed return; recurrence prevention
 
 ## Origin return
-
-This index supports machine retrieval and structural comparison; it does not replace the parent original. Return to the original for complete case types, six-stage procedure, time standards, evidence hierarchy, two-room model, remedy menu, restoration protocol, anti-gaming rules, success indicators, audit abstracts, references, and origin signature.
+The case types, six-stage procedure, 24-hour / 48-hour / 14-day time references, evidence structure, public/protected information separation, remedy, restoration, rehearing, and anti-gaming relations can be checked against the Parent URL, Parent Post ID 306, Parent NCL-ID NCL-α-20251102-2a60e2, Parent Diff-ID DIFF-20251102-0001, and Origin Nakagawa Master.
 
 ---
-
-導線: [072トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Navigation: [Official Derivative 072 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
