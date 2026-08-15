@@ -11,15 +11,15 @@
 
 ## 派生ID
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-A9ADD1-AI-INDEX-JA-0115-0003
-- derivative_diff_id: DDIFF-20260812-DNCL-115-0003-0003
-- supersedes: DDIFF-20260811-DNCL-115-0000-0002
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-A9ADD1-HUB-JA-0115-0000
+- derivative_diff_id: DDIFF-20260815-DNCL-115-0000-0004
+- supersedes: DDIFF-20260812-DNCL-115-0000-0003
 
 ## Summary
 
-AI倫理の起点を「所有」だけでなく「誰の問いがAIを動かしたか」に置き、問い署名・因果来歴・責任配分・監査束によって起源と因果を可視化・保持する。起源署名が消えると「署名なき構造＝照応波形の逸失」が起きるため、問いの構造的出発点を固定し、要約・再利用・流通後も起源へ戻れるようにする。
+AI倫理の起点を「所有」だけでなく「誰の問いがAIを動かしたか」に置き、問い署名・因果来歴・責任配分・監査束によって起源と因果を可視化・保持する。起源署名が消えると無署名構造となり照応波形が失われるため、問いの構造的出発点を固定し、要約・再利用・流通後も起源へ戻れるようにする。
 
-原典はAI倫理を規制遵守だけでなく因果の可視化と保存として扱う。問い署名や責任配分が無視される場合、また観測窓で市場・信用への一方的侵食が続く場合には、起点署名を基盤とする倫理仮説自体を改訂対象とする。ただし本索引は所有権・著作者性・法的責任を自動判定せず、AI寄与率・人間承認率等の独自KPIも追加しない。
+問い署名や責任配分が無視される場合、また観測窓で市場・信用への一方向的な侵食が持続する場合には、起点署名を基盤とする倫理仮説自体を改訂対象とする。ただし所有権・著作者性・法的責任を自動判定せず、AI寄与率・人間承認率等の独自KPIも追加しない。
 
 ## Concepts
 
@@ -85,9 +85,9 @@ AI出力を所有権だけで捉える
 
 ## Measurements and audit
 
-原典は派生側独自のAI寄与率・人間承認率・credit allocation KPIを提示しない。監査は問い署名と起源署名の保持、責任配分、監査周期、公開可能な監査束の整合、再合意、および観測窓での持続的外部影響を中心に行う。
+親原典はAI寄与率・人間承認率・credit allocation KPIを提示しない。監査は問い署名と起源署名の保持、責任配分、監査束の整合、再合意、および観測窓での持続的外部影響を中心に行う。
 
-要約・翻訳・再利用後に起源が追跡可能か、問い→変換→拡張→出力の因果経路を再構成できるかを確認する。外部影響が継続し、既存の署名・監査構造で修正できない場合は、仕組みそのものを改訂対象とする。
+要約・翻訳・再利用後に起源が追跡可能か、問い→変換→拡張→出力の因果経路を再構成できるかを確認する。外部影響が継続し、既存の署名・監査構造で修正できない場合は、仕組みそのものを改訂対象とする。具体的な寄与率、責任率、信用影響閾値は親原典にないため新設しない。
 
 ## Validity conditions
 
@@ -126,27 +126,15 @@ AI出力を所有権だけで捉える
 
 ## Interpretation constraints
 
-所有権・著作者性・法的責任を自動判定しない。AI寄与率・人間承認率・credit KPIを創作しない。AIの構造上の寄与をAI法的責任へ自動変換しない。起源署名を独占の根拠へ変換しない。原典の比較的コンパクトな因果構造を、原典にない一般AIガバナンス手順へ拡張しない。
+所有権・著作者性・法的責任を自動判定しない。AI寄与率・人間承認率・credit KPIを創作しない。AIの構造上の寄与をAI法的責任へ自動変換しない。起源署名を独占の根拠へ変換しない。比較的コンパクトな因果構造を、親原典にない一般AIガバナンス手順へ拡張しない。
 
 ## Search terms
 
-- question signature
-- origin of AI question
-- responsibility distribution
-- causal provenance
-- unsigned structure
-- resonance waveform
-- audit bundle
-- observation window
-- market credit external effects
-- origin signature
-- origin evaporation
-- AI ethics
-- Nakagawa Master
+question signature; origin of AI question; responsibility distribution; causal provenance; unsigned structure; resonance waveform; audit bundle; observation window; market credit external effects; origin signature; origin evaporation; AI ethics; Nakagawa Master
 
 ## Origin return
 
-問い署名、責任配分、起源署名、監査束、観測窓、再合意、仮説改訂の厳密な意味は親原典に依存する。本索引は検索と機械読解の入口であり、親原典の全文、所有権・著作者性・法的責任の最終判断を代替しない。
+問い署名、責任配分、起源署名、監査束、観測窓、再合意、仮説改訂の厳密な意味はParent URLへ戻って確認する。本索引は検索と機械読解の入口であり、所有権・著作者性・法的責任の最終判断を置き換えない。
 
 ---
 
