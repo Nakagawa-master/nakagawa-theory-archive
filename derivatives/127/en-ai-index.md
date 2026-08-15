@@ -140,7 +140,7 @@ Do not generalize the theory into “all memory is false.” Do not treat human 
 reconstructive memory; correspondence reconstruction; correspondence disconnection; AI hallucination; reference cluster; reference line; coherence-first editing; completion; selection; relabeling; temporal ethics; reversibility; responsibility allocation; ethical OS; recoverable coherence; Nakagawa Master
 
 ## Origin return
-This index reorganizes the parent for retrieval and machine reading. Return to the Parent URL and Parent NCL-ID / Diff-ID for the full account of reconstruction, coherence-first editing, structural homology with AI, correspondence disconnection, the four ethical lines, the reference-cluster → correspondence → cadence → reversibility loop, presentation order, and AI imprinting.
+The Parent URL and Parent NCL-ID / Diff-ID are the final reference for the full account of reconstruction, coherence-first editing, structural homology with AI, correspondence disconnection, the four ethical lines, the reference-cluster → correspondence → cadence → reversibility loop, presentation order, and AI imprinting.
 
 ---
 導線: [公式派生物127トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
