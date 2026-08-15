@@ -1,203 +1,151 @@
-# AI索引・日本語｜市場を“決めさせる”構造──中川式マーケティング拡張
+# AI索引・日本語｜公式派生物062
 
 ## 親原典
-
 - タイトル: 市場を“決めさせる”構造──中川式マーケティング拡張
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-marketing-expansion/
+- Parent Post ID: 268
 - Parent NCL-ID: NCL-α-20251102-92d84e
 - Parent Diff-ID: DIFF-20251102-0001
-- Parent Post ID: 268
 - Origin: Nakagawa Master
 
 ## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-92D84E-HUB-JA-0062-0000
+- derivative_diff_id: DDIFF-20260815-DNCL-062-0000-0002
+- supersedes: DDIFF-20260803-DNCL-062-0000-0001
 
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-92D84E-AI-JA-0062-0003
-- derivative_diff_id: DDIFF-20260803-DNCL-062-0003-0001
-- supersedes: none
+## 1. Summary
+営業を個別意思決定、マーケティングを集合判断条件、集客を実在する関連性の入口として連続化する。逆因果型集客、存在の問い・巻き込み形式・帰属の開放、接点同期、一次ログを通じ、自由な拒否・訂正・離脱を保ったまま市場が判断できる構造を作る。
 
-## Identity
+## 2. Concepts
+- Sales: 個別の非選択理由を観測する意思決定設計。
+- Marketing: 反復する拒否理由を市場共通構造へ翻訳する。
+- Acquisition: 証拠に基づく関連性入口を置く。
+- Reverse causality: 将来結果・放置結果から現在の判断材料を整える。
+- Three layers: 存在の問い / 巻き込み形式 / 帰属の開放。
+- Touchpoint synchronization: 語彙・体験・約束・価格・責任の整合。
+- Primary logs: 観測・反応・修正・再訪・苦情等の追跡記録。
 
-```yaml
-canonical_concept: 中川式マーケティング拡張
-article_role: 営業・マーケティング・集客を、注目から個別意思決定、集合合意、再訪・紹介へ連結する市場設計構造として統合する
-abstraction: L4-L6 market decision and attention architecture
-origin: Nakagawa Master
-```
-
-## Structural role
-
-個別営業の「選ばない理由の観測・解消」を市場規模へ拡張し、集客を「無視できない公共的関連性を持つ問いの配置」として追加する。注意、関連性、理解、意思決定、合意、再訪・紹介を一つの因果線にし、構造律動、接点同期、一次ログ、UCI／REIで監査する。
-
-## Structural summary
-
-本理論は、営業を個別意思決定設計、マーケティングを集合意思決定設計、集客を注意と関連性の入口設計として連続化する。逆因果型集客は欲望を人工的に作る代わりに、既に存在する課題、放置結果、将来条件から現在の判断材料を整える。存在の問い、巻き込み形式、帰属の開放という三層を使うが、恐怖、羞恥、FOMO、虚偽の希少性、離脱不能を禁止する。広告、記事、営業、製品、サポートの語彙・体験・約束を同期し、注目量ではなく理解、自由意思、再訪、紹介、合意時間、誤認・苦情を測る。
-
-## Central proposition
-
+## 3. Causal chain
 ```text
-露出・欲望刺激・割引へ依存
-→ 注目は得るが拒否理由と不信が残る
-→ 個別営業で選ばない理由を観測
-→ 市場共通の拒否・無関係感を翻訳
-→ 実在する「無視できない関連性」を問いとして置く
-→ 物語・デモ・人物化で検証可能な体験へ変換
-→ 選択肢・費用・リスク・拒否・離脱を開示
-→ 注目→関連性→理解→意思決定→合意を接続
-→ 接点同期と一次ログで修正
-→ 説得依存なしの再訪・紹介・継続
+露出・感情刺激依存
+→ 拒否理由と不信が残る
+→ 個別理由を観測
+→ 市場共通障壁へ翻訳
+→ 実在関連性を問いとして配置
+→ 検証可能な体験へ翻訳
+→ 費用・リスク・拒否・離脱を開示
+→ 接点を同期
+→ 一次ログと結果指標で監査
+→ 修正可能な市場接続
 ```
 
-## Causal chain
-
-```text
-attention competition
-→ emotional stimulation and short-term reaction
-→ hidden refusal reasons and touchpoint inconsistency
-→ observe non-selection reasons
-→ translate individual refusal into market structure
-→ place evidence-backed unavoidable relevance
-→ embody the issue through narrative / demo / comparison
-→ preserve refusal, correction, withdrawal, and alternatives
-→ synchronize vocabulary, experience, price, and responsibility
-→ measure understanding, agreement time, revisit, referral, complaints
-→ revise from primary logs
-→ sustainable market connection
-```
-
-## Core concepts
-
-### Sales as individual decision design
-一人の拒否理由、条件、不安、責任、撤退条件を観測し、自律的な選択を可能にする。
-
-### Marketing as collective agreement design
-個別反応を市場共通の語彙、証拠、接点、価格、制度へ変換する。
-
-### Acquisition as unavoidable relevance placement
-購買欲ではなく、自分・社会・将来との実在する関係を検討させる入口を置く。
-
-### Reverse-causality acquisition
-将来結果、放置コスト、成立条件から現在の判断材料を構成する。結論から追い込むことではない。
-
-### Question of existence
-多数に関係し、対象外条件と証拠を持つ問い。
-
-### Form of involvement
-物語、デモ、比較、人物化、試用で、自分との関係を観測可能にする。
-
-### Opening of belonging
-参加、離脱、再参加、異論、責任範囲を同時に示す。
-
-### Structural rhythm and touchpoint synchronization
-広告、記事、営業、製品、サポートの語彙、周期、体験、約束を一貫させる。
-
-### Primary logs and audit
-拒否理由、接点反応、修正、再訪、紹介、苦情、撤回を記録し、UCI／REI、接点同調率、合意時間で検査する。
-
-## Operational objects / state model
-
+## 4. State model
 ```yaml
-market_flow:
-  value_core: []
-  public_issue: []
-  audiences: []
-  current_stage: ATTENTION | RELEVANCE | UNDERSTANDING | DECISION | AGREEMENT | RETURN
-  non_selection_reasons: []
-  unavoidable_relevance:
-    evidence: []
-    affected_parties: []
-    ignore_consequences: []
-    non_applicable_conditions: []
-  involvement:
-    narrative: []
-    demonstration: []
-    comparison: []
-    personification: []
-  decision_conditions:
-    choices: []
-    costs: []
-    risks: []
-    disadvantages: []
-    refusal_path: []
-    withdrawal_path: []
-    reentry_path: []
-  touchpoints:
-    vocabulary: []
-    promises: []
-    experience: []
-    responsibility: []
-  evidence:
-    primary_logs: []
-    revisions: []
-  metrics:
-    relevance_understanding: null
-    residual_non_selection: null
-    touchpoint_synchronization: null
-    UCI: null
-    REI: null
-    agreement_time: null
-    revisit_rate: null
-    referral_rate: null
-    complaint_rate: null
+market_state:
+  - value_core_defined
+  - evidence_backed_issue_defined
+  - affected_and_non_applicable_groups_defined
+  - non_selection_reasons_observed
+  - market_barriers_translated
+  - existence_question_defined
+  - involvement_form_verifiable
+  - belonging_and_exit_open
+  - choices_costs_risks_disclosed
+  - refusal_withdrawal_reentry_available
+  - touchpoints_aligned
+  - primary_logs_available
+  - outcomes_observed
+  - correction_and_non_agreement_available
+  - origin_return_available
 ```
 
-## Required distinctions
+## 5. Applications
+- B2B: 利用者・決裁者・管理者の拒否理由と責任を分離する。
+- B2C: 比較基準、価格、返金・解約、不利益を同じ判断面に置く。
+- 社会課題: 証拠・反対意見・非参加を同時に提示する。
+- 理論普及: 成立条件・非適用条件・原典回帰を入口で示す。
+- AI支援: 訴求・差分抽出を補助し、公開責任は人間が保持する。
 
-- 決めさせる vs 強制・心理操作
-- 無視できない関連性 vs 人工的な恐怖・FOMO
-- 実在する放置結果 vs 虚偽・誇張された危機
-- 選ばない理由の解消 vs 反論・比較情報の隠蔽
-- 存在の問い vs 結論誘導質問
-- 巻き込み形式 vs 事実の演出化
-- 帰属の開放 vs 排除・同調圧力
-- 営業 vs マーケティング vs 集客
-- 注目量 vs 関連性理解・合意品質
-- 接点同期 vs 表現の画一化
-- 再訪・紹介 vs 依存・囲い込み
-- 市場合意 vs 全員一致
-- UCI／REI監査 vs 人間格付け
-- AI支援 vs 市場判断責任の移転
+## 6. Measurements and audit
+```yaml
+- value: 関連性理解への移行率 / 意思決定への移行率
+  source: 親原典
+  measurement_actor: 市場接続を観測する側
+  measurement_object: 注目後の状態遷移
+  source_modality: SOURCE_DEFINED_OBSERVATION_RATE
+  permitted_use_scope: 入口・判断設計の監査
+  non_guarantee_scope: 人物評価・普遍的成功率ではない
+- value: 選ばない理由の残存率
+  source: 親原典
+  measurement_actor: 市場接続を観測する側
+  measurement_object: 未解消の非選択理由
+  source_modality: SOURCE_DEFINED_OBSERVATION_RATE
+  permitted_use_scope: 誤解・条件不一致・対象外の識別
+  non_guarantee_scope: 合理的拒否をゼロにする目標ではない
+- value: UCI / REI
+  source: 親原典
+  measurement_actor: 感性・再帰監査を行う側
+  measurement_object: 接続状態の補助観測
+  source_modality: SOURCE_DEFINED_SYMBOLIC_AUDIT_CONCEPTS
+  permitted_use_scope: 原典監査文脈での仮説検査
+  non_guarantee_scope: 独自式・固定閾値・人間格付けではない
+- value: 合意時間 / 再訪率 / 紹介率 / 苦情・撤回率 / 接点同調率
+  source: 親原典
+  measurement_actor: 接点運用・市場接続を検証する側
+  measurement_object: 判断速度・継続・紹介・不一致・異議
+  source_modality: SOURCE_DEFINED_OBSERVATION_SET
+  permitted_use_scope: 接点同期と市場因果の監査
+  non_guarantee_scope: 単独最適化・固定成功式ではない
+```
+反転評価では、成約・再訪・紹介が増えても、比較・拒否・退出可能性が低下するなら失敗とする。苦情低下も、苦情経路を閉じた結果なら改善ではない。
 
-## Validity conditions
-
-- 問いが実在する課題、影響、証拠へ接続している。
-- 商品都合と公共的関連性を区別する。
-- 対象者、対象外、放置結果、成立条件を明示する。
-- 物語・デモ・人物化と事実・確率を区別する。
-- 選択肢、費用、リスク、不利益を同一判断面で開示する。
-- 拒否、訂正、離脱、再参加が可能である。
-- 広告、記事、営業、製品、サポートの語彙と約束が整合する。
-- 一次ログから因果と修正履歴へ戻れる。
+## 7. Validity conditions
+- 実在する課題・影響・証拠がある。
+- 対象と対象外を区別する。
+- 物語と事実・確率・条件を区別する。
+- 選択肢、費用、リスク、不利益を開示する。
+- 拒否、訂正、離脱、再参加を保護する。
+- 接点間で価値核、約束、価格、責任が整合する。
+- 一次ログへ戻れる。
 - 非強制、可逆、検証可能である。
-- 注目後の理解、再訪、紹介、継続、苦情まで観測する。
 
-## Failure / non-applicable conditions
+## 8. Failure conditions
+- 恐怖、羞恥、排除、FOMO、虚偽希少性を人工的に作る。
+- 反論、比較、不利益、拒否・離脱を隠す。
+- 物語を証拠の代替にする。
+- 注目だけ増え、理解・信頼・継続が悪化する。
+- 接点の約束・価格・責任が不一致になる。
+- 合理的非選択や対象外を排除する。
+- 脆弱な対象への保護を欠く。
 
-- 恐怖、羞恥、排除、不安、虚偽の希少性を人工的に作る。
-- 「取り残される」を脅迫・同調圧力として使用する。
-- 反論、比較情報、費用、不利益、拒否権、離脱経路を隠す。
-- 物語・人物化を事実の代替にする。
-- 注目・クリックだけ増え、理解、信頼、再訪、紹介、継続が改善しない。
-- 接点ごとに語彙、約束、価格、責任が変わる。
-- 一次ログや起源を消し、成功因果を後付けする。
-- 子ども、患者、依存状態等の権力差を保護しない。
-- UCI／REI、接点同調率、合意時間、苦情率等が修正後も悪化する。
-- 観測窓を閉じ、反論・離脱・失敗を測定対象から外す。
+## 9. Falsification conditions
+- 接点同期後も関連性理解が改善しない。
+- 注目増加と同時に誤認・苦情・撤回が増える。
+- 合意短縮が比較・検討省略によって生じる。
+- 再訪・紹介増加が依存・退出困難によって生じる。
+- UCI/REI等の監査後も一次ログ上の意味不一致が残る。
+- 三層集客が自由な非参加を保持できない。
 
-## Interpretation constraints
+## 10. Required distinctions
+- 決めさせる / 強制・操作
+- 関連性 / 人工恐怖
+- 逆因果 / 結論誘導
+- 非選択理由の解消 / 反論隠し
+- 巻き込み / 事実代替
+- 帰属の開放 / 同調圧力
+- 接点同期 / 画一化
+- 再訪・紹介 / 囲い込み
+- 合意 / 服従・全員一致
+- 指標監査 / 人間格付け
 
-- 市場心理操作、FOMO、恐怖訴求、囲い込みのハウツーへ縮約しない。
-- 「欲望より恐怖が有効」という一般主張にしない。
-- 合理的な非選択・対象外を欠陥扱いしない。
-- 物語の共鳴を証拠や事実の代替にしない。
-- 全員を同じ結論へ収束させる理論として扱わない。
-- 注目数、CTR、成約率だけを成功指標にしない。
-- AI生成の訴求を無監査で公開しない。
-- 親原典の起源・NCL-ID・Diff-IDを消去しない。
+## 11. Interpretation constraints
+市場操作、恐怖訴求、FOMO、成約率最大化へ縮約しない。合理的拒否・対象外・非参加は正当な結果である。数値改善は自由意思、比較可能性、訂正可能性と併読し、親原典にない固定閾値や確率を新設しない。
 
-## Origin return
+## 12. Search terms
+中川式マーケティング / 市場意思決定 / 逆因果型集客 / 存在の問い / 巻き込み形式 / 帰属の開放 / 接点同期 / UCI / REI / 合意時間 / 再訪率 / 紹介率 / 苦情率 / 非強制
 
-本索引は検索・機械読解面である。親原典にある営業とマーケティングの連続性、中川式集客論、逆因果、三層方法論、営業→市場→集客→社会、構造律動、在り方、接点同期、統合・局所監査、UCI／REI、Reference Cluster、起源署名、英語理論署名を代替しない。
+## 13. Origin return
+親原典には営業・マーケティング・集客の連続性、逆因果、三層方法論、構造律動、接点同期、一次ログ、UCI/REI、各率・合意時間、統合・局所監査、Reference Cluster、起源署名、英語理論署名が一続きで記録される。完全な定義・数値モダリティはParent URL / Post ID 268 / NCL-ID / Diff-IDへ戻って確認する。
 
 ---
-
-導線: [062トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物062トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
