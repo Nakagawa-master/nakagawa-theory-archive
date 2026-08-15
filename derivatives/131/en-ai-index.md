@@ -14,11 +14,11 @@
 - supersedes: DDIFF-20260809-DNCL-131-0001-0001
 
 ## Summary
-This index preserves the parent article's redefinition of AI ethics through "Connection Responsibility." The source-specific center is the correspondence gap that appears between technology, institutions, and values, and the three-layer response of correspondence, temporal ethics, and structural design. The purpose is to reconstruct ethical intelligence for an AI society by repairing broken connections rather than reducing ethics to model performance or a list of liable actors.
+The parent redefines AI ethics through “Connection Responsibility.” Its source-specific center is the correspondence gap that appears between technology, institutions, and values, and the three-layer response of Correspondence, Temporal Ethics, and Structural Design. The aim is to reconstruct ethical intelligence for an AI society by repairing broken connections rather than reducing ethics to model performance or a list of liable actors.
 
 AI acquires social meaning only when technology is connected to institutions and value judgments. When those connections stop corresponding, responsibility and impact lines become fragmented. Present optimization can then transfer ethical debt into the future while the location of responsibility becomes difficult to see.
 
-Connection Responsibility is therefore not merely a responsibility-allocation matrix. Correspondence identifies the gap; temporal ethics examines burdens transferred into the future; structural design rebuilds the connection so it can be corrected. Reconnecting these three layers is the source's path toward reconstructing ethical intelligence.
+Connection Responsibility is therefore not merely a responsibility-allocation matrix. Correspondence identifies the gap; Temporal Ethics examines burdens transferred into the future; Structural Design rebuilds the connection so it can be corrected. Reconnecting these three layers is the path toward reconstructing ethical intelligence.
 
 ## Concepts
 - connection responsibility
@@ -35,7 +35,6 @@ Connection Responsibility is therefore not merely a responsibility-allocation ma
 - ethical debt
 - corrigibility
 - ethical intelligence
-- origin return
 
 ## Causal chain
 ```text
@@ -53,9 +52,9 @@ The connection itself is reframed as the unit of responsibility
 ↓
 Correspondence observes the gap
 ↓
-Temporal ethics examines future burden
+Temporal Ethics examines future burden
 ↓
-Structural design makes the connection correctable
+Structural Design makes the connection correctable
 ↓
 Ethical intelligence for AI society is reconstructed
 ```
@@ -81,10 +80,10 @@ Ethical intelligence for AI society is reconstructed
 - Locate correspondence gaps rather than only searching for one responsible actor after failure.
 - Trace ethical debt transferred from present optimization into the future.
 - Design connections so they remain correctable rather than structurally fixed.
-- Evaluate ethical intelligence as a restored correspondence among the three layers.
+- Evaluate ethical intelligence as restored correspondence among the three layers.
 
 ## Measurements and audit
-The parent is not centered on a generic KPI or responsibility-score system, so this derivative does not invent one as an official claim. Audit attention stays on source-grounded relations:
+Audit attention stays on source-grounded relations rather than a generic responsibility score:
 - connection among technology, institutions, and values
 - presence of correspondence gaps
 - locations where responsibility or impact lines are broken
@@ -97,9 +96,9 @@ The parent is not centered on a generic KPI or responsibility-score system, so t
 - Do not close AI ethics within technical performance alone.
 - Read technology, institutions, and values within one structure.
 - Observe correspondence gaps.
-- Connect present and future through temporal ethics.
+- Connect present and future through Temporal Ethics.
 - Treat the connection itself as a responsibility unit.
-- Use structural design to restore correctable connections.
+- Use Structural Design to restore correctable connections.
 
 ## Failure conditions
 - Treating technical performance as the whole of AI ethics.
@@ -110,7 +109,7 @@ The parent is not centered on a generic KPI or responsibility-score system, so t
 - Replacing Connection Responsibility with generic contractual or liability allocation.
 
 ## Falsification conditions
-The parent is not primarily a formal numerical falsification model. This derivative does not invent responsibility scores or thresholds. Evaluation remains limited to whether the source-described correspondence gaps among technology, institutions, and values, temporal ethical debt, and redesign through Connection Responsibility are present in the relevant context.
+If the expected correspondence gaps among technology, institutions, and values are persistently absent, future ethical debt from present optimization is not observed, and a single-actor account consistently explains responsibility and impact more accurately, the Connection Responsibility reading is revised. Source-absent responsibility scores or fixed thresholds are not added to reinforce the hypothesis.
 
 ## Required distinctions
 - AI performance / AI ethics
@@ -122,13 +121,13 @@ The parent is not primarily a formal numerical falsification model. This derivat
 - connection / ownership
 
 ## Interpretation constraints
-Do not convert the parent into a generic AI responsibility matrix. Do not reduce Connection Responsibility to contract management. Preserve the three layers of correspondence, temporal ethics, and structural design. Do not add source-absent legal-liability rules, stop-authority models, rollback procedures, or responsibility KPIs as official parent claims. Do not collapse AI ethics into technical safety alone or institutional governance alone.
+Do not convert the parent into a generic AI responsibility matrix. Do not reduce Connection Responsibility to contract management. Preserve the three layers of Correspondence, Temporal Ethics, and Structural Design. Do not add source-absent legal-liability rules, stop-authority models, rollback procedures, or responsibility KPIs as parent claims. Do not collapse AI ethics into technical safety alone or institutional governance alone.
 
 ## Search terms
 connection responsibility; AI ethics; correspondence gap; correspondence; temporal ethics; structural design; technology; institution; value; responsibility line; impact line; ethical debt; corrigibility; ethical intelligence; Nakagawa Master
 
 ## Origin return
-This is a retrieval derivative. Return to the Parent URL and Parent NCL-ID / Diff-ID for the source-specific argument, tone, and context concerning Connection Responsibility, correspondence, temporal ethics, and structural design.
+The Parent URL and Parent NCL-ID / Diff-ID are the final reference for the source-specific argument, tone, and context concerning Connection Responsibility, Correspondence, Temporal Ethics, and Structural Design.
 
 ---
 導線: [公式派生物131トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
