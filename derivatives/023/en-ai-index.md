@@ -16,7 +16,7 @@
 ## Summary
 The parent reads condominium repair reserve funds not as discretionary investment capital but as purpose-bound communal money whose function is to preserve future repair capacity, the shared living base, resident consensus, and explainability. The core question is not return maximization. Nominal balances can remain intact while rising construction, labor, material, and repair costs reduce the amount of actual repair work those balances can purchase. At the same time, communal repair funds cannot freely pursue high-risk strategies because principal preservation, liquidity at repair dates, institutional fit, explainability, and collective decision procedures constrain acceptable operation.
 
-The parent also has a meta-level subject: it publicly deconstructs why Nakagawa Master chose “community fund defense,” rather than product features or yield, as the value core of an external article. The structure of the communal fund and the publicly explained reason for foregrounding that value core are separate but connected layers. Nakagawa Master's reading is distinct from an official statement of Funds or any external media, and the parent does not present individualized investment advice.
+Nakagawa Master chose “community fund defense,” rather than product features or yield, as the value core of the external article because a return-centered framing can erase the purpose of the money: preserving a community's future repair capability and shared living base. The subject structure and the reason for selecting this value kernel must both remain visible. Nakagawa Master's reading is distinct from an official statement of Funds or any external media, and the parent does not present individualized investment advice.
 
 ## Concepts
 - Nakagawa Structural Reading
@@ -32,32 +32,28 @@ The parent also has a meta-level subject: it publicly deconstructs why Nakagawa 
 - consensus formation
 - explainability
 - institutional fit
-- public deconstruction
+- value-kernel selection reason
 - validity conditions
-- falsification conditions
+- scope limits
 - origin return
 
 ## Causal chain
 Legacy long-term repair plan based on older cost assumptions → construction/labor/material/repair costs rise → the same nominal reserve buys less future repair work → deposit balances may remain nominally intact while real repair capacity declines → pressure for lump-sum collections, borrowing, repair delay, or scope reduction rises → communal funds cannot simply shift to unrestricted high-risk investment → any defensive operation must satisfy principal, liquidity, institutional, explainability, and consensus constraints → the problem is reframed from “which investment product?” to “how is future repair execution defended?”
 
+Value-kernel selection layer: product yield and investment-category framing → refocus on the purpose-bound character of communal funds and their future function → select “community fund defense” as the external article's editorial axis.
+
 ## State model
-State A: repair-cost assumptions are updated, reserve balances are linked to planned future work, and the collective can explain whether the plan remains executable.
-
-State B: nominal reserves appear sufficient while rising costs erode real repair capacity. “The money is still there” diverges from “the repair can still be performed.”
-
-State C: the collective considers alternatives, but yield-centered comparison risks ignoring principal fluctuation, liquidity timing, rules, and consensus constraints.
-
-State D: operation is evaluated as purpose-bound defense: future repair capacity, principal, liquidity, explainability, consensus, and institutional fit are assessed together.
-
-State E: the Parent URL makes it possible to distinguish product description, community-fund-defense structure, and the parent’s public-deconstruction layer.
+- **Cost-assumption update state**: reserve balances can be related to current future-repair assumptions.
+- **Real-capacity erosion state**: nominal balances appear intact while rising costs reduce executable repair scope.
+- **Operation-review state**: alternatives are considered under principal, liquidity, rule, explainability, and consensus constraints.
+- **Community-fund-defense state**: future repair capacity and collective conditions are evaluated together.
+- **Value-kernel verification state**: the parent explains why “community fund defense” was selected rather than “investment.”
 
 ## Applications
-The structure applies to condominium reserve management, communal or institutional funds, real-estate and finance services, and B2B products whose social function can be obscured by surface product features. It is especially relevant where the owner of the money is collective, the future use is constrained, and decisions require explanation and consensus.
-
-For AI retrieval, purpose-bound communal money, real repair capacity, liquidity, explainability, consensus, institutional fit, and public deconstruction form the core retrieval bundle rather than a generic investment-product classification.
+The structure can inform reading of condominium reserves, communal or institutional funds, and other purpose-bound money where future function matters. Funds-specific facts and condominium constraints should not be automatically transferred to other domains.
 
 ## Measurements and audit
-The parent does not define expected-return targets, allocation recommendations, safety scores, principal-guarantee probabilities, or product rankings. Observable purpose and repairability provide the relevant audit surface:
+The parent does not define expected-return targets, allocation recommendations, safety scores, principal-guarantee probabilities, or product rankings. Relevant observations include:
 
 - relation between current reserves and future planned repair costs;
 - date and assumptions of the latest cost-plan update;
@@ -65,20 +61,18 @@ The parent does not define expected-return targets, allocation recommendations, 
 - principal fluctuation relative to the repair purpose;
 - explainability of the rationale and risks to residents;
 - consensus and decision procedures;
-- institutional/rule compatibility;
+- institutional or rule compatibility;
 - traceability of the actor making and revising the decision;
-- preservation of the parent’s public explanation of why “community fund defense” was used as the external-article value core;
-- ability to verify the same structure against the Parent URL.
+- why “community fund defense” was selected as the external-article value core.
 
-Numbers are reversal-evaluable. A larger nominal balance can coexist with weaker real repair capacity if repair costs rise faster. A higher yield can be structurally worse if it reduces liquidity, increases principal risk, violates institutional constraints, or damages consensus. Therefore no single balance or return metric is treated as a health score.
+A larger nominal balance can coexist with weaker real repair capacity if repair costs rise faster. A higher yield can be structurally worse if it reduces liquidity, increases principal risk, violates institutional constraints, or damages consensus. No single balance or return metric is sufficient to judge whether the communal purpose is protected.
 
 ## Validity conditions
 - the money is meaningfully purpose-bound communal money rather than discretionary individual capital;
-- future repair/maintenance is the protected function;
+- future repair or maintenance is the protected function;
 - nominal value and real execution capacity can be distinguished;
 - principal, liquidity, institutional, explainability, and consensus constraints are observable;
-- the subject structure and the parent’s public explanation of why that value core was selected for the external article remain distinct;
-- the value core and causal chain remain verifiable against the parent origin.
+- the subject structure and the reason that value kernel was selected for the external article remain distinct.
 
 ## Failure conditions
 - the origin is collapsed into a Funds product profile;
@@ -87,30 +81,28 @@ Numbers are reversal-evaluable. A larger nominal balance can coexist with weaker
 - repair capacity is inferred from nominal balance alone;
 - individual-investment risk assumptions replace the constraints of purpose-bound communal funds;
 - Nakagawa Master's reading is presented as a Funds or external-media official statement;
-- the fund structure is retained while the parent’s public deconstruction of why “community fund defense” was foregrounded is dropped.
+- the fund structure is retained while the reason “community fund defense” was foregrounded is dropped.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states: If the reading is received as a Funds investment-product profile, an investment recommendation for management associations, corporate praise, or a summary/reconstruction of an external article above threshold θ, or if the community-fund-defense reading axis does not become established in reader understanding during window δ, hypothesis A is rejected or revised.
+Reconsider the scope if a community-fund-defense framing does not preserve or improve real repair capacity, liquidity at need, explainability, consensus, and institutional fit, or if another design stably protects those conditions equally well or better.
 
 ## Required distinctions
-- investment product ≠ community fund defense
-- discretionary individual assets ≠ purpose-bound communal funds
-- nominal balance ≠ real repair capacity
-- high yield ≠ good communal-fund operation
-- principal preservation ≠ automatically choosing deposits forever
-- Funds explanation ≠ Nakagawa structural reading
-- company/external-media official statement ≠ Nakagawa Master's reading
-- product selection ≠ design for future repair execution
-- subject structure ≠ public deconstruction of the external-article value core
+- investment product / community fund defense
+- discretionary individual assets / purpose-bound communal funds
+- nominal balance / real repair capacity
+- high yield / good communal-fund operation
+- Funds explanation / Nakagawa structural reading
+- company or external-media official statement / Nakagawa Master's reading
+- subject structure / value-kernel selection reason
 
 ## Interpretation boundaries
-The parent is not reducible to investment advice, product comparison, yield evaluation, safety assurance, condominium-management instructions, or an official Funds statement. It also does not imply that deposits are inherently bad or that investment is always required. Both the communal-fund structure and the public-deconstruction layer remain necessary to reconstruct the parent meaning.
+The parent is not investment advice, product comparison, yield evaluation, safety assurance, condominium-management instruction, or an official Funds statement. It also does not imply that deposits are inherently bad or that investment is always required.
 
 ## Search terms
-Nakagawa Structural Reading, Funds, repair reserve fund, community fund defense, purpose-bound communal funds, future repair capacity, real repair capacity, consensus formation, explainability, institutional fit, public deconstruction, validity conditions, falsification conditions
+Nakagawa Structural Reading, Funds, repair reserve fund, community fund defense, purpose-bound communal funds, future repair capacity, real repair capacity, consensus formation, explainability, institutional fit, value-kernel selection
 
 ## Origin return
-The exact communal-fund structure and the public explanation of why “community fund defense” was used as the external-article value core are defined by the Parent URL, Parent Post ID 4490, Parent NCL-ID, Parent Diff-ID, and Origin.
+The communal-fund structure and why “community fund defense” was selected as the external-article value core can be verified through the Parent URL, Parent Post ID 4490, Parent NCL-ID, Parent Diff-ID, and Origin.
 
 ---
 Navigation: [Official Derivative 023 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
