@@ -23,103 +23,36 @@ zh_ncl_id: DNCL-NCL-ALPHA-20251102-7082C1-HUB-ZH-0128-0002
 zh_diff_id: DDIFF-20260810-DNCL-128-0002-0002
 ```
 
-## Semantic repair authority
+## 起源署名
 ```yaml
-repair_date: 2026-08-10_JST
-parent_body: CANONICAL_PUBLIC_PARENT_BODY_VERIFIED
-canonical_record: NCL-α-20251102-7082c1
+origin: Nakagawa Master
+parent_title: 時間倫理の構造──将来負債を「信用資本」へ転換する社会設計
+parent_url: https://master.ricette.jp/society/nakagawa-master-temporal-structural-ethics-credit-conversion/
 parent_post_id: 1332
-xml_locator: 93608-93855
-brain_vault_repair_plan: OD001_OD133_SEMANTIC_FIDELITY_REPAIR_PLAN_2026-08-10.md
-repair_rule: SOURCE_EXPLICIT_OR_STRUCTURAL_NECESSITY_ONLY
+parent_ncl_id: NCL-α-20251102-7082c1
+parent_diff_id: DIFF-20251102-0001
 ```
 
-## Source coverage
+## 公開派生面
 ```yaml
-central_problem: structural_temporal_blind_spot_overvalues_present_benefit_and_undervalues_future_burden
-source_explicit_temporal_ethics:
-  short_beat: reversibility_and_early_warning
-  medium_beat: allocation_responsibility_roles_access
-  long_beat: correspondence_and_reagreement
-source_explicit_structural_rhythm:
-  - rhythm_bundle
-  - repayment_rhythm
-  - redistribution_loop
-source_explicit_future_debt: unimplemented_periodic_commitment
-source_explicit_conversion:
-  - Detection
-  - Binding
-  - Conversion
-  - Audit
-source_explicit_credit_basis: correspondence_across_time_not_popularity_or_volume
-source_explicit_institutional_principles:
-  - reference_cluster_first
-  - rhythm_contract
-  - institutionalized_reversibility
-  - visible_allocation_responsibility
-  - standardized_vocabulary
-source_explicit_bridge: correspondence_disconnection_becomes_temporal_disconnection
-source_explicit_evaluation_shift: result_to_beat_adherence
-source_explicit_target: incorporate_future_to_strengthen_present
+README.md: 公式派生物トップ
+human-entry.md: 人間向け要約
+faq.md: FAQ Q1-Q30
+ai-index.md: AI索引・日本語
+en-ai-index.md: AI索引・英語
+zh-ai-index.md: AI索引・中国語
+derivative-ledger.md: 派生ID台帳
 ```
 
-## Removed / corrected derivative drift
-```yaml
-removed_or_decentered:
-  - generic_fiscal_environmental_technical_debt_taxonomy_as_parent_definition
-  - generic_intergenerational_fairness_framework
-  - multiple_scenario_and_sensitivity_analysis_as_parent_core
-  - generic_present_rights_balancing_doctrine
-  - ESG_or_reputation_style_credit_capital_interpretation
-  - derivative_created_falsification_program
-corrected_to_parent:
-  - beat_based_temporal_ethics
-  - structural_rhythm_three_patterns
-  - future_debt_as_unimplemented_periodic_commitment
-  - four_stage_conversion_process
-  - credit_from_correspondence_across_time
-  - five_institutional_principles
-  - reference_cluster_correspondence_beat_reversibility
-  - result_to_beat_adherence
-```
+## 系譜
+公式派生物128は、親原典が示す「時間に対する構造的盲点」を、短・中・長の拍で評価する時間倫理、周期束・返済リズム・再配分ループからなる構造律動、周期的コミットメントの未実装として定義される将来負債、そして将来負債を信用へ変換する Detection → Binding → Conversion → Audit の四段階へ接続する。
 
-## Seven surfaces
-```yaml
-README.md: SEMANTIC_REPAIR_COMPLETE
-human-entry.md: SEMANTIC_REPAIR_COMPLETE
-faq.md: SEMANTIC_REPAIR_COMPLETE
-ai-index.md: SEMANTIC_REPAIR_COMPLETE
-en-ai-index.md: SEMANTIC_REPAIR_COMPLETE
-zh-ai-index.md: SEMANTIC_REPAIR_COMPLETE
-derivative-ledger.md: SEMANTIC_REPAIR_COMPLETE
-```
+信用の根拠は人気や声量ではなく、時間を貫いて支援・負担・返済が対応する照応に置かれる。参照束の先出し、周期契約、可逆性、配分責任、標準語彙という制度原則と、単発成果から拍の遵守へ評価軸を移す構造も同一の親原典identityへ結び付く。
 
-## Semantic parity
-```yaml
-parent_thesis_preserved: PASS
-short_medium_long_beats_preserved: PASS
-structural_rhythm_preserved: PASS
-future_debt_definition_preserved: PASS
-four_stage_conversion_preserved: PASS
-credit_basis_preserved: PASS
-five_principles_preserved: PASS
-AI_governance_connection_preserved: PASS
-audit_falsification_route_preserved: PASS
-ja_en_zh_equivalence: PASS
-unsupported_generic_intergenerational_framework_removed: PASS
-```
+日本語・英語・中国語のAI索引は言語ごとの派生NCL-ID / Diff-IDで区別される。七つの公開面は同一の公式派生物128を構成し、最終意味確認は親原典URL、Parent NCL-ID、Parent Diff-IDへ回帰する。
 
-## Navigation and closure
-```yaml
-identity_or_route_change: false
-public_map_change_required: false
-private_map_change_required: false
-parent_backlink_route_change_required: false
-brain_return: REQUIRED_AFTER_PUBLIC_MERGE
-semantic_disposition_target: PASS_SOURCE_VERIFIED
-```
-
-本台帳はOD128を親原典本文から再導出した意味忠実性修復を記録する。旧版で中心化されていた一般的な将来コスト・世代間公平・複数シナリオ論から、原典固有の拍による時間倫理、構造律動、周期的コミットメントとしての将来負債、四段階信用転換、時間を貫く照応、五原則、成果→拍遵守の評価転換へ中心を戻した。
+## 原典回帰
+時間倫理の短・中・長の拍、構造律動、将来負債の定義、四段階の信用転換、五つの制度原則、AI・ガバナンスへの接続、監査・反証条件は親原典本文を最終確認点とする。
 
 ---
 導線: [公式派生物128トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
