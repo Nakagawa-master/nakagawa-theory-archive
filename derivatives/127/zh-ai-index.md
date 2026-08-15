@@ -140,7 +140,7 @@
 重构记忆；照应重构系统；照应断绝；AI幻觉；参照束；参照线；整合优先；补全；选择；重新标记；时间伦理；可逆性；责任分配；伦理OS；可恢复的整合；中川マスター
 
 ## Origin return
-本索引只是为检索与机器阅读重新组织原典。关于重构、整合优先编辑、与AI的结构同型、照应断绝、四条伦理线、“参照束→照应→节拍→可逆”恢复循环、提示顺序与AI刻印，应回到Parent URL和Parent NCL-ID / Diff-ID确认。
+关于重构、整合优先编辑、与AI的结构同型、照应断绝、四条伦理线、“参照束→照应→节拍→可逆”恢复循环、提示顺序与AI刻印，应回到Parent URL和Parent NCL-ID / Diff-ID所确定的亲原典正文确认。
 
 ---
 導線: [公式派生物127トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
