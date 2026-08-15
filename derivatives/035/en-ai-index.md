@@ -87,7 +87,7 @@ The parent does not define a universal validity score, AI accuracy rate, dispute
 
 Observable relations include whether the observation target and time are explicit, records remain verifiable, records connect to judgment material, relevant actors can compare the same material, recognition gaps can be explained, judgment reasons can be traced, and AI output has not become unquestioned authority.
 
-Reversal evaluability remains important. More records can be structurally worse when important differences are buried in volume. Faster AI processing can be worse when the reasoning path becomes less traceable. More explanation fields do not improve explainability if evidence and conclusion become more weakly connected. Fewer disputes are not automatically proof of better validity if disagreement is merely suppressed or claims become harder to raise.
+More records can be structurally worse when important differences are buried in volume. Faster AI processing can be worse when the reasoning path becomes less traceable. More explanation fields do not improve explainability if evidence and conclusion become more weakly connected. Fewer disputes are not automatically proof of better validity if disagreement is merely suppressed or claims become harder to raise.
 
 ## Validity conditions
 - The move-out condition is observed rather than assumed.

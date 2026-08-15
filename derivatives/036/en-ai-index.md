@@ -56,7 +56,7 @@ Public-deconstruction chain: surface label “FinOps company” → identify the
 The parent origin does not define maturity scores, decision-quality scores, FinOps achievement rates, investment-success probabilities, or fixed KPI thresholds for these states.
 
 ## Applications
-Operational reviews, cloud / IT / facility operations, investment decisions, and AI summarization can be examined by asking whether information is merely present or whether differences and decision relevance have been transformed into material whose meaning can be reconstructed.
+Operational reviews, cloud / IT / facility operations, investment decisions, and large-log summarization can be examined by asking whether information is merely present or whether differences and decision relevance have been transformed into material whose meaning can be reconstructed.
 
 The source-specific scope remains distinct from a company profile, generic FinOps theory, generic visualization theory, or an efficiency playbook. The relevant structure is the move from invisible operations to decision transformation together with the public-deconstruction layer.
 
