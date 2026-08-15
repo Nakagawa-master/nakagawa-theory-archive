@@ -1,127 +1,152 @@
-# AI Index — English | Institutional Design of Sales: Civilizing Trust Capital
+# AI Index — English | Official Derivative 051
 
-## Parent origin
-
-- Title: Nakagawa Sales Textbook, Part 13 — Institutional Design of Sales: Civilizing Trust Capital
+## Parent Original
+- Title: 中川式営業の教科書・第十三回──営業の制度設計：信頼資本を文明化する
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-13-institutional-design-trust-capital/
+- Parent Post ID: 217
 - Parent NCL-ID: NCL-α-20251102-260b6b
 - Parent Diff-ID: DIFF-20251102-0001
 - Origin: Nakagawa Master
 
-## Derivative identity
-
+## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-260B6B-AI-EN-0051-0004
-- derivative_diff_id: DDIFF-20260802-DNCL-051-0004-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260815-DNCL-051-0004-0002
+- supersedes: DDIFF-20260802-DNCL-051-0004-0001
 
-## Identity
+## Summary
+The parent original develops sales from person-dependent craft into an institution that handles trust capital across individual, organizational, and societal layers. Individual experience and tacit judgment are externalized into reproducible forms; resonance, continuity, and referral are treated as traces of trust capital; and those traces are connected to evaluation, incentives, and social transparency. Institutionalization is not rigid scripting or total quantification. Its stated limit is that trust cannot be fully reduced to numbers, and institutions can become rigid or create counterproductive incentives.
 
-```yaml
-official_derivative_number: 051
-parent_title: 中川式営業の教科書・第十三回──営業の制度設計：信頼資本を文明化する
-parent_url: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-13-institutional-design-trust-capital/
-parent_ncl_id: NCL-α-20251102-260b6b
-parent_diff_id: DIFF-20251102-0001
-derivative_ncl_id: DNCL-NCL-ALPHA-20251102-260B6B-AI-EN-0051-0004
-derivative_diff_id: DDIFF-20260802-DNCL-051-0004-0001
-origin: Nakagawa Master
-supersedes: none
-language: en
-```
-
-## Structural role
-
-This origin extends Nakagawa Sales from individual craft into an institutional system for accumulating, preserving, and circulating trust capital across individual, organizational, and societal layers.
-
-## Structural summary
-
-Dependence on individual talent can produce strong results but weakens reproducibility and succession. The origin externalizes experience, sequencing, questioning, silence, and nonverbal judgment into teachable forms; observes resonance, continuity, and referral as traces of trust capital; and links those observations to evaluation, incentives, and social transparency. Institutionalization is not total quantification or rigid scripting. It is an updateable framework that makes trust-producing and trust-damaging structures visible.
-
-## Central proposition
-
-```text
-sustainable sales
-= externalized judgment structure
-+ multi-signal observation of trust capital
-+ evaluation aligned with long-term trust
-+ revisable institutions
-```
+## Concepts
+- Person dependency: results and their causes remain concentrated in individual experience and tacit judgment.
+- Reproducible form: shared sequencing and observation points, including product → benefit → price and question → silence → resonance.
+- Trust capital: relational resources accumulated as resonance, continuity, and referral.
+- Resonance: the reassurance by which the counterpart feels able to entrust a decision or relationship.
+- Continuity: repeated contact rather than a one-off transaction.
+- Referral: trust or satisfaction strong enough to be conveyed to a third party.
+- Institutional design: the connection of shared forms, observation, evaluation, incentives, and social verification.
+- Transparency: making the basis and effects of trust-related decisions inspectable without claiming total control.
 
 ## Causal chain
-
 ```text
 person-dependent sales
-→ causes of success remain private
-→ judgment processes are externalized
-→ resonance, continuity, and referral become observable
-→ evaluation and incentives are redesigned
-→ the organization learns long-term trust
-→ trust operations become socially inspectable
+→ causes of success are difficult to inherit
+→ judgment sequence and observation points are externalized as reproducible forms
+→ resonance, continuity, and referral are distinguished as trust capital
+→ renewal/repeat rates, referral counts, and post-meeting feedback are used as observable proxies
+→ evaluation and incentives shift from short-term revenue toward long-term trust
+→ individual forms become organizational education and evaluation structures
+→ trust indicators and inspectable dialogue extend to the societal level
 → sales functions as an institution of social-capital formation
 ```
 
-## Core concepts
-
-- Personal dependency: experience and judgment remain inside one person.
-- Trust capital: relational resources accumulated as resonance, continuity, and referral.
-- Institutional design: shared structures for judgment, observation, evaluation, and revision.
-- Form: a reproducible skeleton of sequence, observation, and judgment, not a fixed script.
-- Transparency: making the basis of trust formation and evaluation inspectable.
-- Sales as civilizational practice: sales as a system that circulates trust through society.
-
-## Operational objects / state model
-
+## State model
 ```yaml
-individual_layer:
-  inputs: experience, observation, questions, silence, presentation order
-  outputs: teachable forms, judgment records
-organization_layer:
-  observed_signals: renewal, continuity, referral, understanding, reassurance, recovery
-  controls: evaluation, incentives, review, exception reporting
-societal_layer:
-  objects: shared indicators, disclosure standards, inspectability, social dialogue
+person_dependent_sales: true
+judgment_structure_externalized: conditional
+trust_capital_components:
+  - resonance
+  - continuity
+  - referral
+observable_proxies:
+  - renewal_rate
+  - repeat_rate
+  - referral_count
+  - post_meeting_emotional_feedback
+evaluation_axis_shift: short_term_sales_to_long_term_trust
+societal_extension:
+  - public_trust_indicators
+  - social_value_measure
+  - inspectable_social_dialogue
 risk_states:
-  - metric gaming
-  - institutional rigidity
-  - return to short-termism
-  - loss of context
+  - over_quantification
+  - institutional_rigidity
+  - incentive_reversal
+terminal_design_principle: transparency_not_total_control
 ```
 
-## Required distinctions
+## Applications
+- Sales education: transfer judgment sequence and observation points rather than copying successful wording.
+- Organizational evaluation: read revenue and contract counts alongside continuity, referral, and resonance traces.
+- Incentive design: test whether strong rewards for short-term acquisition damage long-term trust.
+- Social evaluation: when public trust indicators are used, preserve context and inspectability rather than reducing trust to one score.
+- Institutional revision: if metrics rise while relationship quality deteriorates, treat the divergence as a reason to re-examine the institution rather than as automatic success.
 
-- Revenue outcomes versus trust-forming processes.
-- Reproducible form versus fixed script.
-- Observable indicators versus trust itself.
-- Long-term relationship versus unconditional continuation.
-- Transparency versus excessive monitoring.
-- Institutional support versus replacement of human judgment.
+## Measurements and audit
+The parent text gives the following observation examples.
+
+```yaml
+- value: renewal rate / repeat rate
+  source: parent section on visualization of trust capital
+  measurement_actor: institution-operating organization
+  measurement_object: continuity of transactions and contact
+  source_modality: example called a continuity-trust index
+  permitted_use_scope: proxy observation of continuing trust
+  non_guarantee_scope: not a fixed pass rate and not trust itself
+- value: referral count
+  source: parent section on visualization of trust capital
+  measurement_actor: institution-operating organization
+  measurement_object: transmission of trust to third parties
+  source_modality: example called an external-propagation trust index
+  permitted_use_scope: proxy observation of propagated trust
+  non_guarantee_scope: count alone does not determine total trust
+- value: post-meeting emotional feedback
+  source: parent section on visualization of trust capital
+  measurement_actor: organization recording the interaction
+  measurement_object: post-meeting emotion, reassurance, understanding, and related states
+  source_modality: example of qualitative recording through simple surveys or AI analysis
+  permitted_use_scope: supplementary observation of relational change such as resonance
+  non_guarantee_scope: not a mandate for a single score or complete measurement
+```
+
+The parent’s integrated audit abstract also uses `g` (trust accumulation rate), `C` (cancellation rate), `A` (SLA compliance rate), `R` (rollback success rate), MTTR, `S` (phase stability), threshold `θ`, observation window `δ`, and phenomenon `M` as a falsification/revision notation set. The parent gives no concrete numerical values for `θ` or `δ`.
+
+Reversible evaluation: higher renewal or referral figures do not by themselves establish improvement if long-term trust, dialogue transparency, counterpart freedom, or relationship quality deteriorates.
 
 ## Validity conditions
+- Person-dependent skill is externalized as a judgment structure.
+- Resonance, continuity, and referral remain distinct from revenue outcomes.
+- Indicators are treated as proxies rather than trust itself.
+- Evaluation and incentives align with long-term trust.
+- Societal extension preserves public inspectability.
+- The parent’s reservation that trust cannot be fully quantified remains intact.
+- Institutional rigidity and counterproductive incentives remain revisable.
 
-- Judgment processes are externalized.
-- Multiple quantitative and qualitative traces are used.
-- Evaluation aligns with long-term trust.
-- Local exception judgment remains possible.
-- Metrics and institutions are revisable.
-- Customer rights, consent, and context are protected.
+## Failure conditions
+- Institutionalization is reduced to rigid scripts.
+- Revenue KPIs are merely renamed as “trust” without changing the structure.
+- Renewal or referral measures become a single credit score.
+- Rising metrics are treated as success despite trust damage.
+- Short-term rewards undermine long-term trust.
+- Institutional rigidity removes flexibility and creativity.
+- Social trust indicators become uniform centralized ranking rather than inspectable dialogue.
 
-## Failure / non-applicable conditions
+## Falsification conditions
+- Incorporating trust-capital observations does not improve long-term relationships or social trust circulation.
+- Institutionalization persistently damages flexibility or creativity and revision does not recover them.
+- Metric improvement repeatedly moves in the opposite direction from relationship quality.
+- In the integrated audit abstract, `g`, `C`, `A`, `R`, MTTR, or `S` enters a falsifying relation to defined `θ`, or opacity, coercion, norm capture, or another `M` is observed during `δ`.
+- Because the parent specifies no concrete `θ` or `δ`, fixed values are not inferred from the notation.
 
-- Renaming revenue KPIs without changing incentives.
-- Reducing trust to one score.
-- Treating script compliance as institutionalization.
-- Treating every referral or continuation as inherently good.
-- Eliminating local exceptions and disagreement.
-- Disclosure that harms customer protection.
+## Required distinctions
+- person-dependent success / reproducible institution
+- reproducible form / fixed script
+- revenue and contracts / trust-forming process
+- trust capital / mere favorability
+- observable indicator / trust itself
+- continuity / unconditional continuation
+- referral count / referral quality
+- transparency / total quantification
+- long-term-trust incentives / short-term-result bias
+- social trust circulation / single credit rating
 
 ## Interpretation constraints
+The parent does not claim that institutions automatically create integrity. Institutions support living dialogue rather than replacing human judgment. Visualizing trust capital does not mean reducing it to a single score. The observation examples in the main text and the symbolic notation in the integrated audit abstract have different modalities; symbols without concrete values do not establish fixed KPIs or thresholds.
 
-The origin does not propose a credit-rating system, emotional surveillance, or centralized control of salespeople. It does not claim that trust can be completely quantified. Institutions support living dialogue and retain human judgment and accountability.
+## Search terms
+Nakagawa Sales / institutional design of sales / trust capital / resonance / continuity / referral / continuity trust index / external propagation trust index / renewal rate / repeat rate / post-meeting emotional feedback / reproducible form / incentives / social-capital formation / transparency / institutional rigidity / reversible evaluation / SLA / rollback / MTTR
 
 ## Origin return
-
-Return to the parent origin for the full position in the series, examples, original English summary, terminology, origin signature, and the complete discussion of institutional limits.
+The parent original contains the institutional-design argument, concrete observation examples, the three-layer model, limitations, the integrated and local audit abstracts, and the origin signature in one context. For metric meaning, symbolic notation, or claim strength, return to the Parent URL, Post ID 217, NCL-ID, and Diff-ID.
 
 ---
-
-Navigation: [051 hub](README.md) / [Human entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 051 hub](README.md) / [Human entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [English AI index](en-ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
