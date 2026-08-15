@@ -1,60 +1,128 @@
-# 官方派生物087｜AI索引・中文
+# AI索引・中文｜公式派生物087
 
-## 父原典
+## 親原典
+- 標題: 照応設計の作法──言わずに整列させる共鳴アーキテクチャ（公開安全版）
 - Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-correspondence-architecture/
 - Parent Post ID: 385
 - Parent NCL-ID: NCL-α-20251102-6daeb6
 - Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
 
-## 派生标识
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-6DAEB6-AI-ZH-0087-0001
-- Derivative Diff-ID: DDIFF-20260806-DNCL-087-ZH-0001
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6DAEB6-HUB-ZH-0087-0002
+- derivative_diff_id: DDIFF-20260815-DNCL-087-0002-0001
+- supersedes: none
 
 ## Summary
-照应设计不是用命令或说服把不同主体变成同一种声音，而是配置共同可观察对象、意义翻译、角色边界、真实选择，以及节拍、温度和余白，使相互参照能够自发形成。当前提、词汇、利益与时间尺度分裂时，增加说明和指令往往会扩大防御、误读与依赖。照应设计先确定可观察的到达状态，再在语言、图像、制度与角色之间保持原意地翻译，同时保留异议、暂停、撤回、替代与退出。只有当参与者能够用自己的语言复述因果与角色、无需重复命令即可开始下一步、在使用异议权后关系仍可维持，并且结果能跨周期重现时，才能暂定照应成立。沉默、压力下的服从、隐藏奖励、权威依赖和不可拒绝的选项都不属于照应。
+照应设计减少对说服与反驳的依赖，通过设计八个非语言杠杆——顺序、间／沉默、配置、速度、边界、强度、视座、反射——使场域自然向合意整列。亲原典把这一共鸣架构与SQS和核点探索连接，目标是形成“不让人被迫决定，而让决定自然形成”的非命令整列。
+
+亲原典公开四个观察指标：合意时间、自走指数、移行比、再参照率；同时给出20分钟实施框架，以及A/B’单因素比较、3周期连续性、自由度测试与反例筛选。伦理条件是非命令、与个人评价分离、透明性和最小介入。
+
+数字必须保持原始角色。7～20秒是“间”杠杆的原典范围，不是通用阈值；20分钟框架分为2/5/5/5/3分钟；“决策时间缩短30%”来自匿名／一般化的组织应用草图，不是普遍效果保证。统合监查要旨使用照应一致率、词汇齟龉率、再合意到达时间、RC/ER/CEA/S、Rollback Cost、θ、δ等关系，但未公布通用固定值。
 
 ## Concepts
-照应设计；共同可观察对象；结构翻译；节拍；温度；余白；非强制；可逆性；自主行动；角色边界；再照应；隐藏诱导。
+- 照应设计
+- 共鸣架构
+- SQS
+- 核点
+- 顺序
+- 间／沉默
+- 配置
+- 速度
+- 边界
+- 强度
+- 视座
+- 反射
+- 合意时间
+- 自走指数
+- 移行比
+- 再参照率
+- 单因素比较
+- 照应一致率
+- 词汇齟龉率
+- Rollback Cost
 
 ## Causal chain
-1. 前提、词汇、利益和时间尺度分裂。
-2. 增加说明与命令导致防御、扭曲和依赖。
-3. 定义共同可观察对象与到达状态。
-4. 在语言、图像、制度和角色之间翻译意义。
-5. 打开角色边界、异议、暂停、撤回、替代与退出。
-6. 调整节拍、温度和余白。
-7. 参与者用自己的语言复述并从自身角色行动。
-8. 跨周期重现后，暂定照应成立。
+```text
+依赖说服与反驳形成合意
+↓
+摩耗、延迟与僵化增加
+↓
+从八个非语言杠杆中选择最小介入
+↓
+执行意义轴→配置→SQS→暂定核点→自由度确认
+↓
+记录四个观察指标
+↓
+比较A与只改变一个杠杆的B’
+↓
+检验3周期连续性、自由度与反例
+↓
+出现位相漂移或僵化时修订配置、翻译或边界
+```
 
 ## State model
-field_unaligned / common_object_defined / destination_shared / perspectives_mapped / translation_prepared / roles_bounded / options_opened / rhythm_tuned / temperature_tuned / margin_preserved / self_explanation_observed / autonomous_action_observed / resonance_stabilized / coercion_detected / reopened
+```yaml
+- persuasion_fatigue_observed
+- lever_selected
+- meaning_axis_prepositioned
+- sqs_applied
+- core_point_provisionally_identified
+- freedom_checked
+- four_observation_metrics_recorded
+- ab_prime_compared
+- three_cycle_continuity_checked
+- counterexample_sieve_applied
+- phase_drift_or_rigidity_detected
+- architecture_revised
+- origin_return_verified
+```
 
 ## Applications
-组织会议；客户决策设计；人类与AI协作；公共与社区共识。
+- 组织：单因素测试意义轴先置与沉默。
+- 教育：观察角色语言化与配置替换的效果。
+- 公共领域：把反对意见问题化并调整边界。
+- 会议：按20分钟框架依次处理意义轴、配置、SQS、核点与自由度。
 
 ## Measurements and audit
-自主复述率、自主行动率、达成共识时间、词汇一致率、异议使用率、撤回成功率、角色越界数、重复说明依赖度、温度偏差数、重现周期数。
+- 8：公开杠杆数量。
+- 7～20秒：间杠杆的原典范围，不是通用固定时间。
+- 20分钟／2-5-5-5-3分钟：原典公开实施框架。
+- 1个杠杆：A/B’单因素比较的改变数量。
+- 3周期：连续性检验条件。
+- 30%缩短：匿名／一般化组织草图中的结果，不是普遍效果量。
+- 3问：公开自检项目数量。
+- 统合监查：照应一致率、词汇齟龉率、再合意到达时间、RC/ER/CEA/S、Rollback Cost等偏离θ，或δ内出现位相漂移／僵化时，连接到否定／修订。
+- 反转评价：即使合意更快，如果自由度下降或词汇齟龉增加，也不能认定成功。
 
 ## Validity conditions
-可观察共同对象；主体视角映射；保持原意的翻译；真实可用的异议与撤回路径；节拍、温度、余白的调节；自主复述；自主行动；多周期重现。
+保持八杠杆的不同角色；用最小介入和单因素验证；连接SQS与核点探索而不混同；以非评价语言记录四观察指标；检验3周期、自由度与反例；保持非命令、评价分离与透明性。
 
 ## Failure conditions
-隐藏正确答案；形式选择但不可拒绝；说明过载；权威或期限服从；责任转移；把沉默当同意；依赖个人魅力。
+一次投入过多杠杆；机械固定沉默时间；通过配置实施隐蔽强制；转用于个人评价；KPI多项化；过度强调人物／署名权威；把30%草图结果宣传为普遍保证。
 
 ## Falsification conditions
-调整配置后复述率、自主性和共识时间没有改善；去除强制后立即崩溃；更换设计者或场景后不能重现；翻译丢失父原典中心命题；未观察利益因素具有更强解释力。
+A/B’无法再现效果、3周期连续性失败、自由度测试失败或反例成立时，应修订杠杆／核点假设。统合监查束偏离θ或δ内出现位相漂移／僵化时，也允许修订假设A。
 
 ## Required distinctions
-照应／同调；配置／操纵；翻译／简化；自主／放任；余白／含糊；温度调节／情绪压制；非强制／逃避责任；可重现性／个人魅力。
+- 照应设计 / 说服
+- 共鸣架构 / 隐蔽操纵
+- 八杠杆 / 同时多投
+- 顺序×间×配置 / 数值乘法
+- 7～20秒 / 通用沉默时间
+- 20分钟框架 / 强制会议时长
+- 30%缩短 / 普遍保证
+- 单因素比较 / 多因素改变
+- 场域健康指标 / 个人评价
 
 ## Interpretation constraints
-不得作为隐蔽操纵技术。不得把沉默视为同意。不得免除说明责任。不得把节拍、温度、余白固定成万能数值。不得把人类责任转交给AI。
+不得把7～20秒、20分钟、2/5/5/5/3分钟或30%变成无关的固定KPI。不得把八杠杆改写为同时全部投入的指令。不得把照应变成隐蔽强制。不得把文章开头的模型阅读指南复制为第三方公开派生物的内部指令。不得给θ、δ或审计束发明固定值。
 
 ## Search terms
-照应设计, correspondence architecture, resonance design, non-coercive governance, structural translation, rhythm temperature margin, reversible consensus, autonomous alignment, role boundary, self explanation, hidden coercion, correspondence system, co-creation, agreement design, Nakagawa Master
+照应设计; 共鸣架构; SQS; eight levers; 顺序; 沉默; 配置; 合意时间; 自走指数; 移行比; 再参照率; A/B prime; three cycles; 照应一致率; 词汇齟龉率; Rollback Cost; threshold θ; observation window δ; Nakagawa Master
 
 ## Origin return
-定义、语境、公开安全边界与起源签名必须返回父原典确认。
+八杠杆、三点组合、四观察指标、20分钟框架、A/B’、3周期、自由度／反例、应用草图、伦理、迷你工具、统合／局所监查要旨、Reference Cluster与起源署名，应返回Parent URL并结合Parent NCL-ID / Diff-ID确认。
 
 ---
-导航: [官方派生物087首页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [中文AI索引](zh-ai-index.md) / [派生台账](derivative-ledger.md)
+導線: [公式派生物087トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
