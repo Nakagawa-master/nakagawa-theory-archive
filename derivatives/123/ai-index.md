@@ -13,129 +13,138 @@
 - derivative_diff_id: DDIFF-20260810-DNCL-123-0000-0002
 - supersedes: DDIFF-20260809-DNCL-123-0000-0001
 
-## Structural role
-集合的な不快・嫌悪・恐怖が公権力へ短絡する回路を、《照応の原理》と《時間倫理理論》によって検査・遅延・整流する構造翻訳ログ。
+## Summary
+親原典は、社会の不快・嫌悪・恐怖がそのまま刑罰権へ接続される回路を問題にし、《照応》と《時間倫理》を二重の検査線として置く。不快は立法議論の契機になり得るが、それが「危険」という言葉へ変換されたとき、語られる危険と実際の法益侵害・重大な侵害リスクが対応しているかを照応で検証する必要がある。さらに、怒りや恐怖を即時の公的制裁へ渡さず、反復性、被害の蓄積、非刑罰手段の尽否、比例性、持続的整合を時間の拍の中で検証するのが時間倫理である。
 
-## Structural summary
-不快は立法議論の引き金になり得るが、それ自体を刑罰権の十分条件にしてはならない。原典は、不快が「危険」という物語へ翻訳されたとき、その物語が実際の法益侵害・構造的害と対応しているかを照応で検査し、怒り・恐怖を即時に公的制裁へ渡さず、反復性・被害の蓄積・代替手段・比例性を持続の拍の中で測る時間倫理を置く。照応と時間倫理の二重統合は英語署名部で Delayed Justice Architecture と呼ばれ、二つのフィルターを欠くと public emotion が punitive action を直接起動する ethical short-circuiting が生じる。
+原典英語署名部は、この二重フィルターを **Delayed Justice Architecture** と呼ぶ。対応検証と時間的調律が省略され、公共感情が直接 punitive action を起動する状態は **ethical short-circuiting** と定義される。中心命題は「不快を無視する」ことでも「犯罪化を全面否定する」ことでもなく、感情と公権力の間に構造的検証と時間的遅延を挿入し、公的介入を情動反応から構造的必要性へ戻すことである。
 
-## Central proposition
-```text
-感情の即時要求をそのまま正義として公権力へ渡さず、
-「本当に危険か」を照応で検査し、
-「いつ制裁へ変換してよいか」を時間倫理で調律する。
-```
-
-## Causal chain
-```text
-不快・恐怖・嫌悪
-↓
-「危険」という物語へ翻訳
-↓
-実構造との照応が失われる
-↓
-即時禁止・処罰要求
-↓
-時間倫理と検証の余白が失われる
-↓
-感情が刑罰装置を直結的に起動
-↓
-ethical short-circuiting
-↓
-刑法が群衆感情の代行機関へ変質
-↓
-Correspondential Verification
-↓
-Temporal Calibration
-↓
-Delayed Justice Architecture
-↓
-持続的な社会の自己調整へ戻す
-```
-
-## Core concepts
-- 不快
-- 公的強制力
+## Concepts
+- 不快・嫌悪・恐怖
+- 公権力
+- 刑罰権
+- 法益侵害
+- 重大な侵害リスク
 - 照応の原理
 - 時間倫理理論
 - Correspondential Verification
 - Temporal Calibration
 - Delayed Justice Architecture
 - ethical short-circuiting
-- 法益侵害
-- 検証の余白
+- 反復性
+- 被害の蓄積
+- 非刑罰手段
+- 比例性
 - 持続的整合性
-- T/S/R
 - 監査周期
+- T/S/R
 - 公開監査束
 - 閾値θ
 - 観測窓δ
 - 現象M
 
-## Operational objects / state model
+## Causal chain
+```text
+社会に不快・嫌悪・恐怖が生じる
+↓
+感情が「危険」という物語へ翻訳される
+↓
+実際の法益侵害・構造的害との照応検証が省略される
+↓
+即時禁止・即時処罰の要求が生じる
+↓
+時間倫理と検証の余白が失われる
+↓
+感情が公権力・刑罰権を直接起動する
+↓
+ethical short-circuiting が発生する
+↓
+刑法が集合感情の代行機関へ変質する
+↓
+Correspondential Verification で実構造との対応を確認する
+↓
+Temporal Calibration で反復性・蓄積性・代替手段・比例性を測る
+↓
+Delayed Justice Architecture として二重フィルターを統合する
+↓
+公的介入を構造的必要性と持続的整合へ戻す
+```
+
+## State model
 ```yaml
-- discomfort_or_fear_observed
+- discomfort_fear_or_disgust_observed
 - danger_narrative_identified
-- actual_structural_harm_checked
-- correspondence_verified_or_failed
+- protected_interest_harm_checked
+- structural_harm_correspondence_checked
 - immediate_punitive_demand_detected
-- repetition_and_accumulation_checked
-- alternative_means_checked
+- repetition_checked
+- harm_accumulation_checked
+- non_penal_alternatives_checked
+- proportionality_checked
 - temporal_calibration_applied
-- ethical_short_circuit_checked
+- ethical_short_circuiting_checked
+- delayed_justice_architecture_applied
 - intervention_reason_explainable
-- audit_cycle_applied
-- T_S_R_checked
+- audit_cycle_active
+- T_S_R_consistent
+- public_audit_bundle_consistent
 - threshold_theta_observed
-- observation_window_delta_observed
+- observation_window_delta_preserved
 - hypothesis_A_revised_if_M
 - origin_return_verified
 ```
 
-## Required distinctions
-- 不快 / 実際の構造的害
-- 脅かされ感 / 法益侵害・侵害リスク
-- 感情の速度 / 正義の整合
-- 即時排除 / 持続の拍
-- 社会感情 / 公権力の正当性
-- 法律という感情の鏡 / 構造的調整装置
-- 照応的検証 / 時間的調律
-- legal caution / civilization-level structural integrity
+## Applications
+**1. 犯罪化要求の構造監査。** 不快・恐怖・嫌悪が「危険」という表現へ変換されたとき、その危険が実際の法益侵害や重大な侵害リスクと対応しているかを見る。
+
+**2. 即時禁止要求の時間監査。** 反復性、被害蓄積、非刑罰手段、比例性を検証する余白が残っているかを確認し、怒りの速度と制度の速度を同一化しない。
+
+**3. 公的介入の説明可能性。** なぜ刑罰・取締が必要なのかを、集合感情ではなく構造的必要性と持続的整合の言葉で説明できるかを確認する。
+
+**4. 情報社会の短絡監査。** 感情伝播が熟議・検証より速い環境で、ethical short-circuiting が制度反応を先取りしていないかを観測する。
+
+## Measurements and audit
+原典の統合監査要旨では、感情要求を照応と時間倫理で構造化することをA、公的介入を情動反応ではなく構造的必要性・持続的整合性へ整列させることをBとする。再合意条件Zは監査周期、T/S/R、公開監査束の整合である。
+
+反転評価可能性は、原典が置く閾値θ・観測窓δ・現象Mに閉じる。「不快」が直接の立法・取締根拠になる頻度が閾値θを超え、検証の余白である観測窓δが閉じる現象Mが確認された場合、「感情要求は構造的に減衰・整流できる」という仮説Aを棄却または改訂する。
 
 ## Validity conditions
-原典の構造では、感情要求を法制度の言語へ翻訳する際に、照応と時間倫理が二本の検査・遅延線として機能し、介入根拠が説明可能であることが必要である。引用記事の法的起点として、法益侵害・重大な危険と非刑罰手段の尽否が置かれる。
+- 不快・嫌悪・恐怖を立法議論の契機として扱いつつ、それ自体を刑罰権の十分条件にしない。
+- 「危険」という物語と実際の法益侵害・構造的害の対応を照応で検証する。
+- 即時の怒り・恐怖と公的制裁の間に時間倫理を置く。
+- 反復性・蓄積性・非刑罰手段・比例性を持続の拍で確認する。
+- Delayed Justice Architecture と ethical short-circuiting を中心構造として保持する。
+- 監査周期、T/S/R、公開監査束、θ、δ、Mを原典の範囲で保持する。
 
-## Failure / non-applicable conditions
-不快が「危険」と同一視され、照応検証なしに処罰が要求される、または「いまの怒り」が時間的検証なしに公的制裁へ変換される場合、原典が警戒する短絡が生じる。原典を一般的な刑法チェックリスト、AI法的助言境界、少数者KPIだけへ縮約しない。
+## Failure conditions
+- 原典を「刑法は最後の手段」という一般論だけへ縮約する。
+- 不快をそのまま危険と同一視する。
+- 照応を法益確認の単純チェックだけへ薄める。
+- 時間倫理を一般的な慎重論やsunset制度へ置き換える。
+- 感情が即時に公権力へ接続する短絡を見落とす。
+- 原典にないAI法的助言境界、独自KPI、独自反証条件を公式要素として追加する。
 
-## Falsification / revision boundary
-統合監査要旨では、監査周期、T/S/R、公開監査束の整合を条件Zとする。閾値θを超える頻度で「不快」が直接の立法・取締根拠となり、観測窓δ＝検証の余白が閉じる現象Mが認められた場合、「感情要求は構造的に減衰・整流できる」という仮説Aを棄却または改訂する。
+## Falsification conditions
+監査周期、T/S/R、公開監査束の整合を継続し、「不快」が直接の立法・取締根拠となる頻度が閾値θを超え、観測窓δ＝検証の余白が閉じる現象Mが発生した場合、仮説Aを棄却または改訂する。反証条件はこの原典明示範囲を越えて拡張しない。
+
+## Required distinctions
+- 不快 / 実際の構造的害
+- 脅かされ感 / 法益侵害・重大な侵害リスク
+- 感情の速度 / 正義の整合
+- 即時禁止 / 時間的調律
+- 集合感情 / 公権力の正当性
+- 法律という感情の鏡 / 構造的自己調整装置
+- Correspondential Verification / Temporal Calibration
+- 慎重論 / Delayed Justice Architecture
+- 一般的法技術 / 文明的構造整合
 
 ## Interpretation constraints
-- 「刑法は最後の手段」という一般論だけへ薄めない。
-- 照応を法益確認だけへ縮約しない。
-- 時間倫理を単なる慎重論・sunset制度へ置換しない。
-- Delayed Justice Architecture と ethical short-circuiting を落とさない。
-- 派生側で独自の法的助言・AI判断・萎縮効果KPIを公式理論へ追加しない。
-- 「不快は無価値」「犯罪化は常に誤り」という極端化をしない。
+原典を「不快は無価値」「犯罪化は常に誤り」と極端化しない。逆に、多数の不快や道徳的嫌悪を独立した処罰理由へ変換しない。照応は感情の物語と実構造の対応検証、時間倫理は感情と制裁の間に検証の拍を置く原理として保持する。原典にない制度・AI・KPIを中心条件へ追加しない。
 
-## Retrieval keys
-- 不快 犯罪化
-- 照応の原理
-- 時間倫理
-- Correspondential Verification
-- Temporal Calibration
-- Delayed Justice Architecture
-- ethical short-circuiting
-- emotional immediacy
-- public coercion
-- criminalization boundary
-- structural harm
-- T/S/R
-- theta delta phenomenon M
+## Search terms
+不快 犯罪化; 照応の原理; 時間倫理; Correspondential Verification; Temporal Calibration; Delayed Justice Architecture; ethical short-circuiting; public coercion; structural harm; protected interest; criminalization boundary; T/S/R; threshold theta; observation window delta; Nakagawa Master
 
 ## Origin return
-中川理論的見解、理論構造の端的説明、統合・局所監査要旨、英語署名部の Delayed Justice Architecture と ethical short-circuiting は親原典本文へ戻って確認する。
+親原典の中川理論的見解、理論構造の端的説明、統合・局所監査要旨、英語署名部へ戻り、照応・時間倫理・Delayed Justice Architecture・ethical short-circuiting・θ/δ/Mの意味を確認する。
 
 ---
 
