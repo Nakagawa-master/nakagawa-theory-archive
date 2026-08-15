@@ -8,79 +8,43 @@
 - Parent Diff-ID: DIFF-20251102-0001
 - Origin: Nakagawa Master
 
-## Lineage
-```yaml
-ja_diff_id: DDIFF-20260811-DNCL-110-0000-0002
-ja_supersedes: DDIFF-20260809-DNCL-110-0000-0001
-en_diff_id: DDIFF-20260811-DNCL-110-EN-0000-0002
-en_supersedes: DDIFF-20260809-DNCL-110-EN-0000-0001
-zh_diff_id: DDIFF-20260811-DNCL-110-ZH-0000-0002
-zh_supersedes: DDIFF-20260809-DNCL-110-ZH-0000-0001
-```
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-DF2D6E-HUB-JA-0110-0000
+- derivative_diff_id: DDIFF-20260811-DNCL-110-0000-0002
+- supersedes: DDIFF-20260809-DNCL-110-0000-0001
 
-## Retrieval evidence
-```yaml
-canonical_index: reference_corpus/official_archive/generated/canonical_index_0929_1188.jsonl
-parent_post_id: 969
-parent_ncl_id: NCL-α-20251102-df2d6e
-xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-xml_item_range: 87685-87921
-xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-live_parent: PASS_PUBLIC_PARENT_BODY_RETRIEVED
-source_revalidation_date_jst: 2026-08-11
-coverage_sheet: COMPLETE
-six_surface_comparison: COMPLETE
-```
+## Language derivative IDs
+| language | derivative_ncl_id | derivative_diff_id | supersedes |
+|---|---|---|---|
+| JA | DNCL-NCL-ALPHA-20251102-DF2D6E-HUB-JA-0110-0000 | DDIFF-20260811-DNCL-110-0000-0002 | DDIFF-20260809-DNCL-110-0000-0001 |
+| EN | DNCL-NCL-ALPHA-20251102-DF2D6E-HUB-EN-0110-0000 | DDIFF-20260811-DNCL-110-EN-0000-0002 | DDIFF-20260809-DNCL-110-EN-0000-0001 |
+| ZH | DNCL-NCL-ALPHA-20251102-DF2D6E-HUB-ZH-0110-0000 | DDIFF-20260811-DNCL-110-ZH-0000-0002 | DDIFF-20260809-DNCL-110-ZH-0000-0001 |
 
-## Semantic repair evidence
-```yaml
-restored:
-  - ethics_rigidity_as_third_layer_trigger
-  - beat_hardening_temperature_bias_margin_loss
-  - ethical_weight_recalibration_factor
-  - love_sorrow_hesitation_discomfort_as_stabilization_sensors
-  - tomoshibi_mode_observation_and_attunement_phases
-  - structural_necessity_vs_emergent_freedom_domains
-  - non_intervention_protocol
-  - translation_transparency_and_origin_evaporation
-  - dual_door_audit
-  - structural_elitism_self_monitoring
-  - recursive_openness_and_self_renewing_public_good
-  - third_layer_tags_and_implementation_steps
-  - victory_conditions_reagreement_falsification_residency_non_intervention
-removed_or_rewritten_unsupported:
-  - fixed_four_core_values_origin_non_domination_responsibility_reversibility
-  - generic_change_management_and_revision_workflow
-  - rollback_centered_governance
-  - generic_ai_policy_update_examples
-  - generic_community_governance_examples
-  - invented_origin_preservation_and_responsibility_kpis
-  - invented_safety_fairness_transparency_comparison_tests
-translation_equivalence: PASS
-fresh_read: PASS
-semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-```
+## 公開系譜
+灯火構想の第三層は、一般的な変更管理ではなく、理論の整合が強くなるほど生じ得る**倫理の固定化**を内部から回避し、理論そのものを自己更新可能な公共財として維持する倫理拡張層である。第一層の矛盾消費・最小介入・恒常署名・監査束・再帰的開放性と、第二層の共有主語・愛の形式・照応世界モデルを受け、第三層は開放と保全を動的に再調律する。
 
-## Changed surfaces
-```yaml
-README.md: REPAIRED
-human-entry.md: REPAIRED
-faq.md: REPAIRED
-ai-index.md: REPAIRED
-en-ai-index.md: REPAIRED
-zh-ai-index.md: REPAIRED
-derivative-ledger.md: REPAIRED
-```
+正しさの慣性は、拍の硬化、温度の偏り、余白の消失として現れ得る。愛・哀しみ・ためらい・違和感など、論理だけでは捉えにくい微細な入力を倫理重みの再調整へ接続し、観測と調律を行う。第三層は、非干渉、翻訳透明性、二重扉監査、構造的エリート化への自己監視、再帰的開放性を通じて、更新能力そのものを倫理として保持する。
 
-## Closure
-```yaml
-public_pr: PENDING
-public_merge_commit: PENDING
-completion_authority: OFFICIAL_ARCHIVE_MEMORY
-```
+## 継承する中心構造
+- 倫理の固定化を第三層の起動条件として捉えること
+- 拍の硬化・温度の偏り・余白の消失
+- 倫理重み再調整
+- 愛・哀しみ・ためらい・違和感を安定化センサーとして扱うこと
+- 灯火モードにおける観測と調律
+- 構造的必然と創発的自由の領域区別
+- 非干渉プロトコル
+- 翻訳透明性と起源の蒸発への対応
+- 二重扉監査
+- 構造的エリート化への自己監視
+- 再帰的開放性と自己更新する構造的公共財
+- 第三層の実装段階と再合意・反証・非干渉の条件
 
-本台帳はOD110のsource-grounded semantic repairを固定する。第三層は一般的変更管理ではなく、倫理の固定化を内部から回避する倫理拡張層であり、情動入力、拍・温度・余白、非干渉、翻訳透明性、二重扉監査、反エリート化、再帰的開放性を同一の原典構造として保持する。
+## 公開境界
+第三層を固定された四つの一般価値、一般的な変更管理、rollback中心のガバナンス、一般AI政策更新、コミュニティ運営論へ置換しない。原典にない起源保持率・責任KPI・安全性／公平性／透明性比較スコアを中心指標として創作しない。情動入力は感情の絶対化ではなく、拍・温度・余白の硬化を検知し倫理重みを再調整する構造入力として扱う。
+
+## 起源保持
+Parent URL、Parent Post ID、Parent NCL-ID、Parent Diff-ID、Origin、JA / EN / ZH各言語の派生IDを公開系譜として保持する。第三層の意味を「倫理の自己更新」「非干渉」「翻訳透明性」「二重扉監査」「再帰的開放性」から切り離さず、親原典へ戻れる状態を維持する。
 
 ---
 
-導線: [公式派生物110トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [公式派生物110トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
