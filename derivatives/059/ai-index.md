@@ -1,107 +1,135 @@
-# AI索引・日本語｜共創秩序論──役割と沈黙の哲学
+# AI索引・日本語｜公式派生物059
 
 ## 親原典
 - タイトル: 共創秩序論──役割と沈黙の哲学（公開安全版）
 - Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-co-creation-order-philosophy/
+- Parent Post ID: 258
 - Parent NCL-ID: NCL-α-20251102-82774b
 - Parent Diff-ID: DIFF-20251102-0001
-- Parent Post ID: 258
 - Origin: Nakagawa Master
 
 ## 派生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-82774B-AI-JA-0059-0003
-- derivative_diff_id: DDIFF-20260803-DNCL-059-0003-0001
-- supersedes: none
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-82774B-HUB-JA-0059-0000
+- derivative_diff_id: DDIFF-20260815-DNCL-059-0000-0002
+- supersedes: DDIFF-20260803-DNCL-059-0000-0001
 
-## Identity
-```yaml
-canonical_concept: 共創秩序
-article_role: 共創を再現可能な役割・沈黙・順序・切替プロトコルとして定義する原典
-abstraction: L4-L7 structural architecture
-origin: Nakagawa Master
-```
+## 1. Summary
+親原典は、共創の失敗を能力不足だけで説明せず、観測・翻訳・設計・検証の役割混線、SQSの欠落、切替規律の不在、価値→便益→コストの順序崩壊、終端条件の不在として捉える。四役を「一度に一役」で運用し、沈黙→問い→沈黙で前提・問い・合意を位相化し、切替理由、一次ログ、責任、未確定事項を追跡可能にすることで、共創を再演・反証・訂正可能な秩序へ変える。
 
-## Structural role
-構造、制度、市場へ接続する前段として、複数主体が意味を観測・翻訳・設計・検証し、強制や役割混線を避けながら合意へ到達する運用層を定義する。
+## 2. Concepts
+- 観測者: 事実、沈黙、違和感、制約を採取する役割。
+- 翻訳者: 観測事実を関係、因果、役割、構造へ写像する役割。
+- 設計者: 価値→便益→コストの順で制度・提案・配線を構成する役割。
+- 検証者: 反証、終端、更新条件を固定する役割。
+- 一度に一役: 同一位相で主要機能を混在させない原則。
+- SQS: Silence–Question–Silence。問いの前後に観測・定着の位相を置く。
+- D0〜D5: 問いの深度を区別する六段階分類。
+- D-Gap: 設計深度と実到達深度の差。
+- 切替規律: 違和感、情報飽和、決定疲労等を役割切替のサインとして扱う。
+- 終端条件: 一旦の合意、責任、未確定、再検討条件を固定する。
+- 一次ログ: 観測、翻訳、設計、検証の来歴を保持する原記録。
 
-## Structural summary
-共創の失敗を才能不足ではなく秩序欠落として捉え、四役、一度に一役、SQS、問いの深度D0〜D5、価値→便益→コスト、切替サイン、沈黙スロット、終端条件、一次ログ、T/S/R監査を組み合わせる。結果として誤配・再作業・強制力学を減衰させ、営業、研究、制作、AI協働、組織、市場へ再演可能な共創を接続する。
-
-## Central proposition
+## 3. Causal chain
 ```text
-役割混線と順序欠落
-→ 早熟な結論・価格先行・同時発話・決定疲労
-→ 四役分離＋SQS＋切替規律
-→ 共有主語・語彙・一次ログ・終端条件の固定
-→ 誤配減衰・再演可能性・合意品質の上昇
-→ 構造から制度・市場へ接続できる共創秩序
+役割混線・同時発話
+→ 事実と解釈、設計と検証が混ざる
+→ 価格先行・早熟な結論・決定疲労・再作業
+→ 四役を一度に一役へ分離
+→ SQSで前提観測・問い・合意固定
+→ 切替理由と次役割を明示
+→ 価値→便益→コストの順序を保持
+→ 終端条件・責任・未確定・再検討条件を記録
+→ 一次ログへ戻れる再演・反証・訂正可能な共創秩序
 ```
 
-## Core concepts
-- Role: 観測、翻訳、設計、検証の四機能。
-- Persona: 役割遂行の視座・発話様式。固定身分ではない。
-- State: S→Q→Sの位相遷移。
-- SQS: 前提観測、深度化する問い、合意固定の沈黙。
-- D0-D5: 問いの深度。
-- Value→Benefit→Cost: 関係切断を避ける提示・設計順序。
-- Switch discipline: 違和感、飽和、決定疲労を切替サインとする規律。
-- Terminal condition: 一旦の合意、責任、未確定、再検討条件。
-- Primary log: 対話、翻訳、配置、更新の証跡。
-- D-Gap: 設計深度と到達深度の差。
-
-## Operational state model
+## 4. State model
 ```yaml
-states:
-  - OBSERVE
-  - TRANSLATE
-  - DESIGN
-  - VERIFY
-transition_gate:
-  - role output complete
-  - mismatch or saturation observed
-  - silence slot inserted
-  - next role declared
-termination:
-  - agreement object fixed
-  - responsibility fixed
-  - unresolved items fixed
-  - review condition fixed
+- shared_subject_defined
+- purpose_defined
+- observe_active
+- facts_constraints_fixed
+- translate_active
+- causal_map_fixed
+- design_active
+- value_benefit_cost_order_preserved
+- verify_active
+- falsification_terminal_conditions_fixed
+- switch_reason_recorded
+- primary_log_preserved
+- agreement_object_fixed
+- responsibility_fixed
+- unresolved_items_fixed
+- review_condition_fixed
+- origin_return_available
 ```
 
-## Required distinctions
-- 沈黙 vs 拒絶・威圧・無視
-- 役割 vs 固定職位・人格評価
-- 合意 vs 指示・服従・全員一致
-- 順序設計 vs 価格隠し・営業誘導
-- 検証 vs 追加設計
-- 再演可能性 vs 画一化
-- 指標監査 vs 人間格付け
-- 非強制 vs 無責任・無決定
+## 5. Applications
+- 会議: 発散、構造化、選択、検証を位相分離する。
+- 営業: 価格へ直行せず価値・便益・コストの順で理解を形成するが、価格隠しには使わない。
+- 研究・制作: 収集、意味づけ、設計、レビューを分離する。
+- AI協働: 原典確認、構造抽出、設計、反証、統合を役割分担する。
+- 緊急時: 長い沈黙を必須とせず、責任・判断対象・終端条件を短く固定し、後から検証する。
 
-## Validity conditions
+## 6. Measurements and audit
+原典に現れる数字・指標・記号は、それぞれの認識論的位置づけを保持する。
+
+- **四役**: 原典明示の4機能の列挙。4点満点や品質スコアではない。
+- **D0〜D5**: 問いの深度を区別する6段階分類。数値の大小を優劣へ変換しない。
+- **合意到達率**: 秩序設計下で合意が形成される度合いを観測する候補。指示・服従・表面的同意を含めない。
+- **再作業率**: 戻り作業の発生を観測する候補。低値だけで成功とはせず、必要な訂正抑止を併読する。
+- **切替遅延**: 切替サイン発生後の遅れを観測する候補。速度のみで良否を決めない。
+- **D-Gap**: 設計深度と実到達深度の差。差が小さいことだけで妥当性を保証しない。
+- **照応成功率 / 語彙整合率**: 共創構造の整合を観測する候補であり、人間の能力格付けではない。
+- **位相安定S / 合意到達時間T / T/S/R**: 原典監査文脈の記号・観測語。具体値がない場合は固定閾値を発明しない。
+
+反転評価では、合意率の上昇、会議時間の短縮、再作業率の低下が見えても、異論・拒否・訂正が出にくくなり、沈黙が圧力として機能するなら改善と判定しない。
+
+## 7. Validity conditions
 - 共有主語、目的、対象、役割境界が明示される。
-- 一度に一役が守られる。
+- 一度に一役が実質的に守られる。
 - 切替理由と次役割が記録される。
-- 一次ログ、語彙辞書、証拠へ戻れる。
+- 一次ログ、語彙、証拠へ戻れる。
+- 価値→便益→コストの順序が理解のために使われる。
+- 拒否、訂正、非合意、再合意が可能である。
+- 終端条件、責任、未確定、再検討条件が明示される。
+- 緊急時は即時責任を明示し、後から検証できる。
 - 非強制・可逆・検証可能である。
-- 拒否、訂正、再合意が可能である。
-- 終端条件と更新条件がある。
-- 速度より整合性を優先すべき局面を判定できる。
 
-## Failure / non-applicable conditions
-- 沈黙を支配や情報隠しに用いる。
-- 役割ラベルだけ付け、複数役を同時遂行する。
-- 価格・結論・決裁が観測や翻訳を上書きする。
-- 目的・共有主語が根本的に一致せず、非合意終端も許されない。
+## 8. Failure conditions
+- 役割ラベルだけあり、複数機能を同時遂行する。
+- 沈黙を威圧、無視、情報隠し、同意圧力へ使う。
+- 観測・翻訳より先に価格・結論・決裁を固定する。
+- 価値→便益→コストを価格先延ばしや誘導へ転用する。
+- 検証中に設計対象を変え続ける。
+- 指示・服従を合意と呼ぶ。
 - 一次ログがなく再演・反証・訂正できない。
-- 指標改善のみを成功とし、強制力学や意味減少を監査しない。
-- 緊急時に必要な即時責任をSQS名目で回避する。
+- 指標改善だけで成功とし、尊厳・自発性・可逆性の悪化を見ない。
 
-## Interpretation constraints
-この理論を会議マナー、沈黙術、営業心理、役職分担だけへ縮約しない。中核は、意味と責任が生成・固定・更新される位相を設計し、非強制・可逆・検証可能な共創を構造から制度・市場へ接続することにある。
+## 9. Falsification conditions
+四役分離、SQS、切替規律を導入しても再作業・混線・強制力学が反復して改善しない場合、設計仮説は改訂対象となる。SQS導入後に異論・拒否が減り、沈黙が実質的圧力として働く場合も成立しない。切替規律が必要以上に意思決定を遅らせる、D-Gapや合意時間の最適化で合意内容の妥当性が下がる、緊急判断を不当に妨げる場合も再設計が必要である。
 
-## Origin return
-詳細なD0〜D5、測定、統合監査要旨、T/S/R、Reference Cluster、英語要約、起源署名は親原典を参照する。本索引は検索・構造把握用であり原典を代替しない。
+## 10. Required distinctions
+- 役割 ≠ 固定身分。
+- 一度に一役 ≠ 一人一職。
+- 沈黙 ≠ 拒絶・威圧・無視。
+- SQS ≠ 心理的追い込み。
+- 合意 ≠ 指示・服従・全員一致。
+- 価値→便益→コスト ≠ 価格隠し。
+- 検証 ≠ 追加設計。
+- 再演可能性 ≠ 画一化。
+- 指標監査 ≠ 人間格付け。
+- 非強制 ≠ 無責任。
+- 終端 ≠ 永久確定。
+- 速度 ≠ 妥当性。
+
+## 11. Interpretation constraints
+共創秩序論を会議マナー、沈黙術、営業心理、静的な職務分担へ縮約しない。中心は、意味・責任・合意・訂正がどの位相で生成・固定・更新されるかを設計することである。沈黙や順序を支配技法へ転用せず、役割を人格評価へ変えず、数値指標を人間価値のランキングへ変換しない。
+
+## 12. Search terms
+共創秩序 / 観測者 / 翻訳者 / 設計者 / 検証者 / 一度に一役 / SQS / Silence Question Silence / D0-D5 / D-Gap / 価値→便益→コスト / 切替規律 / 終端条件 / 一次ログ / 合意到達率 / 再作業率 / 切替遅延 / 位相安定S / 合意到達時間T / T/S/R
+
+## 13. Origin return
+親原典には、四役、一度に一役、SQS、D0〜D5、価値→便益→コスト、切替規律、営業・研究・AI協働の例、倫理境界、測定指標、T/S/Rを含む統合監査要旨、Reference Cluster、英語要約、起源署名が一続きで記録されている。完全な定義、数値、記号のモダリティは親原典へ戻って確認する。
 
 ---
-導線: [059トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物059トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
