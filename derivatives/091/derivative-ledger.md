@@ -10,58 +10,37 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-B0A800-HUB-JA-0091-0000
-- derivative_diff_id: DDIFF-20260810-DNCL-091-0000-0002
-- supersedes: DDIFF-20260808-DNCL-091-0000-0001
+- derivative_diff_id: DDIFF-20260815-DNCL-091-0000-0003
+- supersedes: DDIFF-20260810-DNCL-091-0000-0002
 
 ## Language derivative IDs
 ```yaml
 ja_ncl_id: DNCL-NCL-ALPHA-20251102-B0A800-HUB-JA-0091-0000
-ja_diff_id: DDIFF-20260810-DNCL-091-0000-0002
+ja_diff_id: DDIFF-20260815-DNCL-091-0000-0003
 en_ncl_id: DNCL-NCL-ALPHA-20251102-B0A800-HUB-EN-0091-0001
-en_diff_id: DDIFF-20260810-DNCL-091-0001-0002
+en_diff_id: DDIFF-20260815-DNCL-091-0001-0003
 zh_ncl_id: DNCL-NCL-ALPHA-20251102-B0A800-HUB-ZH-0091-0002
-zh_diff_id: DDIFF-20260810-DNCL-091-0002-0002
+zh_diff_id: DDIFF-20260815-DNCL-091-0002-0003
 ```
 
-## Source coverage
+## 公開系譜
+親原典は、未来を既存データの単純外挿として予測するのではなく、現在の構造が孕む矛盾と摩擦から「どの位相転換が構造的に生じやすいか」を読む。再編成を駆動する三つの欠陥として、情報非対称性の硬化、役割アーキテクチャの破壊、時間の再帰性の停止を示し、統制増強が観測コスト・例外処理・短期指標への過剰適応を通じて再編成を加速させる因果を論じる。
+
+一方で、再編成後の位相は一つに固定されない。親原典は硬化進行位相、部分調律位相、全体調律位相の三分岐を示し、調律を「説得や強制ではなく、場の整合性を回復し因果の流路を短縮する設計行為」と位置づける。公開安全フレームは2/5/5/5/3分の20分型、一因子A/B’は三サイクル継続で同方向効果を確認する。これらの数値は原典固有の実装仕様であり、文明転換の時期・確率・成功保証へ拡張しない。
+
+## 7面対応
 ```yaml
-canonical_index: reference_corpus/official_archive/generated/canonical_index_0351_0425.jsonl
-xml_item_range: 75890-76121
-xml_content_range: 75897-76003
-live_parent: https://master.ricette.jp/future/nakagawa-master-futures-as-structural-necessity/
-source_verified: true
-central_thesis: three_defects__control_amplification__tuning__selectable_phase
-source_explicit_measurements: agreement_time__autonomy__re_reference_rate__friction_ratio__D_gap
-source_explicit_test: one_factor_A_B_prime__three_cycles__freedom_side_effect
-source_explicit_ethics: no_direct_individual_appraisal__pre_share_scope__no_secret_techniques
-source_explicit_falsification: integrated_audit_threshold_and_observation_window
+README.md: JA_HUB
+human-entry.md: JA_HUMAN_ENTRY
+faq.md: JA_FAQ_Q1_Q30
+ai-index.md: JA_AI_INDEX
+en-ai-index.md: EN_AI_INDEX
+zh-ai-index.md: ZH_AI_INDEX
+derivative-ledger.md: PUBLIC_LINEAGE
 ```
 
-## Semantic repair
-```yaml
-repair_date_jst: 2026-08-10
-repair_reason: strict_parent_fidelity_revalidation
-changed_surfaces:
-  - README.md
-  - human-entry.md
-  - faq.md
-  - ai-index.md
-  - en-ai-index.md
-  - zh-ai-index.md
-  - derivative-ledger.md
-removed_or_decentered:
-  - derivative_authored_emergency_and_legal_limits
-  - generic_rescue_or_safety_boundaries_not_stated_by_parent
-  - generic_operational_requirements_presented_as_parent_claims
-  - expanded_falsification_beyond_parent_integrated_audit
-semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-```
-
-## Seven surfaces
-All seven surfaces preserve the same parent thesis and parent identity. JA/EN/ZH AI indexes are translations of the same source-grounded packet rather than independent reinterpretations.
-
-## Navigation and origin return
-Parent URL, Parent NCL-ID, Parent Diff-ID and Origin are preserved. Route/map identity is unchanged, so public/private map updates are not required by this semantic content repair.
+## 原典回帰
+三つの構造的欠陥、統制増強の自己加速、調律の四原理、2/5/5/5/3分の20分型、三つの未来位相、合意時間・自走度・再参照率・摩擦比・Dギャップ、一因子A/B’、三サイクル、副作用としての自由度、統合監査要旨の合意時間・再参照率・摩擦比・境界再設計整合性・RC/ER/CEA/S・Rollback Cost・閾値θ・観測窓δは親原典へ戻って確認する。θ・δに具体値は補わない。
 
 ---
 導線: [公式派生物091トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
