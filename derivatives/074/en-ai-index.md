@@ -1,153 +1,124 @@
-# English AI Index | Official Derivative 074
+# AI Index — English | Official Derivative 074
 
 ## Parent Original
-
 - Title: 中川式 接続文明ロードマップ2030–2055──採用曲線・臨界点・実装ウィンドウ
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-nakagawa-connection-roadmap-2030-2055/
-- Parent Slug: nakagawa-master-nakagawa-connection-roadmap-2030-2055
 - Parent Post ID: 313
 - Parent NCL-ID: NCL-α-20251102-b3f820
 - Parent Diff-ID: DIFF-20251102-0001
-- Publication Status: publish
 - Origin: Nakagawa Master
 
 ## Derivative Identity
-
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-B3F820-HUB-JA-0074-0000
-- derivative_diff_id: DDIFF-20260804-DNCL-074-0000-0001
-- supersedes: none
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-B3F820-AI-EN-0074-0004
+- derivative_diff_id: DDIFF-20260815-DNCL-074-0004-0003
+- supersedes: DDIFF-20260804-DNCL-074-0000-0001
 
 ## Summary
+The Connection Civilization Roadmap 2030–2055 is a conditional transition design for introducing connection accounting, CXP, governance, adjudication, basic rights, and the public-sphere OS according to social conditions and evidence. Its three windows—2029–2034 verification, 2035–2042 expansion, and 2043–2055 substitution—are not deterministic forecasts or unconditional deadlines.
 
-The Connection Civilization Roadmap 2030–2055 is a conditional transition design for introducing connection-value accounting, governance, CXP, basic rights, adjudication, and the public-sphere OS in a defensible order. It is not a deterministic forecast. Its dates are observation windows for evaluating pressures created by AI-driven labor change, demographic and fiscal contraction, disaster-related autonomy needs, and geopolitical standard competition.
-
-Adoption is organized into three waves: verification, expansion, and institutional replacement. Calendar time alone never authorizes movement to the next wave. Institutional, technical, cultural, and audit thresholds must converge, while re-agreement, reversibility, independent observation, distributed authority, and rollback remain available.
-
-Small pilots test CDI, MAI, RS, primary logs, and compliance labels. Only verified structures expand into municipal federations, connection procurement, and international interoperability. Institutional fatigue, purpose drift, single-metric optimization, personality dependence, enclosure, and secret rule trigger scaling down, pausing, or rollback rather than forced schedule compliance.
+Transitions depend on four distinct conditions: institutional, technical, cultural, and audit. Re-agreement, reversibility, independent observation, distributed authority, exit, correction, and rollback must remain usable. CDI, MAI, RS, CRI, and KQI are read as an indicator bundle rather than a personality score, social-credit score, monetary value, or universal success composite.
 
 ## Concepts
-
-- connection civilization
-- conditional roadmap
-- three-wave adoption
-- verification wave
-- expansion wave
-- replacement wave
-- four thresholds
-- institutional threshold
-- technical threshold
-- cultural threshold
-- audit threshold
+- connection civilization roadmap
+- three-wave transition
+- 2029–2034 verification window
+- 2035–2042 expansion window
+- 2043–2055 substitution window
+- four critical conditions
 - policy window
 - CDI
 - MAI
 - RS
-- compliance label
+- CRI
+- KQI
 - CXP
-- connection procurement
-- public audit dashboard
+- four-pole federation
+- independent observation network
+- conformance classification
+- rollback cost
 - regional diffusion
 - international interoperability
-- scaling down
-- rollback
 
 ## Causal chain
-
-```text
-AI, demographics, disasters, geopolitics, and fiscal pressure expose limits of money-centered systems
-↓
-Demand for connection institutions emerges in welfare, education, research, contracts, and disaster response
-↓
-Limited pilots test CDI, MAI, RS, and primary logs
-↓
-Legacy and connection systems operate in parallel so friction and benefit can be compared
-↓
-Institutional, technical, cultural, and audit thresholds are observed
-↓
-Verified structures expand into municipal federations and connection procurement
-↓
-CXP and compliance labels test interoperability conditions
-↓
-Independent observers audit concentration, enclosure, and purpose drift
-↓
-Only validated scopes become standing institutions
-↓
-Failed conditions trigger scaling down, pausing, or rollback
-```
+AI, demographic, fiscal, disaster, and geopolitical changes expose limits in existing institutions → limited domains create demand for connection mechanisms → pilots test CXP, accounting, primary logs, and rights procedures → indicator bundles are read together with objection, correction, and exit → municipal, university, corporate, and citizen roles are separated → the four critical conditions are reviewed independently → only validated scopes expand into procurement and the public-sphere OS → regional and international interoperability preserve origin, responsibility, and local law → deteriorating conditions trigger scale-down, pause, rollback, and roadmap revision.
 
 ## State model
-
-1. PREPARATION: define principles, prohibited uses, indicators, and exit conditions.
-2. WAVE1_POC: run limited pilots in universities, municipalities, and B2B settings.
-3. WAVE1_REVIEW: inspect CDI, MAI, RS, primary logs, and institutional fatigue.
-4. WAVE2_FEDERATION: expand to municipal federations and connection procurement.
-5. WAVE2_ASSESSED: compare compliance labels and independent observation across institutions.
-6. WAVE2_REVIEW: reassess concentration, barriers, and enclosure.
-7. WAVE3_INSTITUTIONALIZATION: move verified scopes into standing systems.
-8. INTERNATIONAL_INTEROP: enable purpose-limited cross-border interoperability.
-9. SCALED_DOWN: reduce metrics, scope, or institutional authority.
-10. PAUSED: stop until sufficient evidence exists.
-11. ROLLED_BACK: return to a safer prior wave.
-12. REVISED_ROADMAP: update dates and conditions from evidence.
+```yaml
+phase: DESIGN | WAVE1_VERIFICATION | WAVE2_EXPANSION | WAVE3_SUBSTITUTION | SCALED_DOWN | PAUSED | ROLLED_BACK | REVISED
+policy_window: CLOSED | EMERGING | OPEN | CLOSING
+institutional_condition: NOT_MET | PARTIAL | MET
+technical_condition: NOT_MET | PARTIAL | MET
+cultural_condition: NOT_MET | PARTIAL | MET
+audit_condition: NOT_MET | PARTIAL | MET
+independent_observation: AVAILABLE | INSUFFICIENT
+exit_correction_reentry: AVAILABLE | BLOCKED
+next_transition: EVIDENCE_GATED
+```
 
 ## Applications
-
-- Municipal disaster response: move from limited resource-connection pilots to federated operation.
-- Welfare and education: test access, consent, exit, and re-entry before scaling.
-- Universities and research: audit purpose changes, attribution, and reuse conditions.
-- B2B relations: separate financial KPIs from connection KPIs and evaluate renegotiation capacity.
-- Public procurement: use expiring, appealable labels with support for small organizations.
-- International standards: preserve origin, rights, auditability, and rollback across systems.
+- Disaster response: test resource routes together with vulnerable-user access, misinformation correction, re-agreement, exit, and re-entry.
+- Education and research: inspect purpose changes, consent, attribution, and reuse conditions rather than research volume alone.
+- B2B relations: keep financial KPIs separate from renegotiation, withdrawal, and relationship-repair observations.
+- Public procurement: use expiring, reviewable, downgradeable conformance classifications rather than permanent rankings.
+- International interoperability: preserve origin signature, responsible actors, local law, and cultural self-determination.
 
 ## Measurements and audit
+**Time windows.** Values: 2029–2034, 2035–2042, 2043–2055. Source: the parent original. Measurement actor: institutions operating and reviewing the roadmap. Measurement object: conditions and social effects within each wave. Source modality: conditional observation windows in a future-design roadmap. Permitted use scope: phase review and policy-window judgment. Non-guarantee scope: not a deterministic forecast, legal deadline, mandatory adoption schedule, or success guarantee.
 
-- whether CDI, MAI, and RS improve diversity, re-agreement, and exit;
-- convergence and conflict among the four thresholds;
-- institutional fatigue, explanation burden, and adoption cost;
-- label renewal, downgrade, withdrawal, and review;
-- number and independence of observation nodes;
-- authority concentration, enclosure, and entry barriers;
-- correction history in public audit dashboards;
-- regional diffusion differences and exclusion risks;
-- preservation of origin and responsibility in interoperability;
-- practical usability of scaling down, pause, and rollback.
+**Four critical conditions.** Institutional, technical, cultural, and audit are separate classifications. They are not a four-point score and are used to expose divergence as well as convergence.
+
+**Indicator bundle.** CDI, MAI, RS, CRI, and KQI are source-named indicators for reading multiple dimensions of connection, re-agreement, reversibility, and audit. They are not a personality rating, social-credit score, single composite, monetary value, or universal success threshold.
+
+**Five or more nodes.** The parent uses five or more independent observation nodes as a structural reference for the audit condition. Node count alone does not guarantee independence, safety, or legitimacy; conflicts of interest and mutual verification still matter.
+
+**Semiannual or annual review.** This is a source-described periodic review cadence, not a universal statutory deadline for every jurisdiction or institution.
+
+Adoption rates, conformance rates, region counts, and Rollback Cost remain observable variables. More adoption is not success if exit or rights deteriorate. More Certified status is not improvement if certification rent or entry barriers rise. More observation nodes do not improve audit if they share the same interests. Lower rollback cost is not inherently healthy if it comes from abandoning responsibility or rights.
 
 ## Validity conditions
-
-Dates must remain conditional observation windows. All four thresholds must be inspected together, connection value must not become money or personality scoring, and independent observation, objection, correction, exit, reconnection, and rollback must remain usable. Authority must be distributed across multiple responsible actors.
+- Wave transitions are evidence-gated rather than date-triggered.
+- The four critical conditions remain separately observable.
+- Adoption is read together with rights, reversibility, and independent observation.
+- Reputation and personal popularity do not become adoption or conformance criteria.
+- Policy windows are not used for crisis-driven coercion.
+- Local legal, cultural, fiscal, and disaster conditions remain reviewable.
+- Each wave supports scale-down, pause, rollback, and redesign.
+- International interoperability preserves origin and responsibility.
 
 ## Failure conditions
-
-The design fails when calendar dates alone trigger expansion, crises are used to force adoption, adoption rate or connection count becomes the success metric, labels become permanent rankings, dashboards become leaderboards, or one actor monopolizes definitions, certification, allocation, and remedy.
+- Calendar completion alone triggers expansion.
+- Adoption rate, connection count, or Certified share becomes the success criterion.
+- Crisis is used to force broad consent or centralization.
+- CXP or conformance classifications become social-credit or permanent ranking systems.
+- Indicator bundles are absorbed into monetary optimization or personality ranking.
+- One actor monopolizes definition, certification, allocation, and adjudication.
+- Leavers, critics, or regions that defer adoption are disadvantaged.
 
 ## Falsification conditions
+If repeated pilots and federated operation fail to improve re-agreement, exit, correction, institutional fatigue, and authority distribution, and the four critical conditions do not become viable, the roadmap’s dates, waves, or scope should be revised.
 
-The roadmap must be revised if pilots do not improve re-agreement time, exit, correction, or fatigue; if the four thresholds fail to converge; if diffusion increases exclusion and enclosure; if interoperability erases origin or responsibility; or if rollback cannot be executed.
+Revision is also required if adoption grows while enclosure or exclusion worsens, conformance labels create barriers, observation networks collapse into common interests, interoperability weakens local rights or origin, or rollback cannot be executed.
 
 ## Required distinctions
-
-- roadmap ≠ deterministic prophecy
-- date ≠ unconditional deadline
-- adoption rate ≠ institutional validity
-- three waves ≠ one-time replacement
-- policy window ≠ crisis exploitation
-- compliance label ≠ permanent ranking
-- international diffusion ≠ loss of origin
-- scaling down ≠ concealed failure
-- rollback ≠ irresponsible abandonment
+- roadmap / deterministic prophecy
+- time window / unconditional deadline
+- adoption rate / institutional validity
+- three waves / one-time replacement
+- four critical conditions / four-point score
+- indicator bundle / single success score
+- policy window / crisis exploitation
+- conformance classification / permanent ranking
+- interoperability / loss of origin
+- rollback / irresponsible abandonment
 
 ## Interpretation constraints
-
-Do not treat 2030 or 2055 as guaranteed outcomes. Do not reduce connection civilization to maximum connection counts, compulsory participation, personality worship, secret governance, composite scores, or appropriation of origin. Crises and AI change do not create automatic legitimacy for forced implementation.
+Do not treat 2030 or 2055 as guaranteed outcomes or deadlines. Do not collapse CDI, MAI, RS, CRI, KQI, adoption rates, conformance rates, region counts, or Rollback Cost into one success score. Connection civilization is distinct from compulsory participation, personality loyalty, immediate abolition of money, or global cultural uniformity.
 
 ## Search terms
-
-connection civilization / roadmap 2030–2055 / three waves / four thresholds / policy window / verification / expansion / replacement / CDI / MAI / RS / CXP / compliance label / connection procurement / municipal federation / public audit / regional diffusion / interoperability / scaling down / rollback
+connection civilization; roadmap 2030–2055; 2029–2034; 2035–2042; 2043–2055; three waves; four critical conditions; policy window; CDI; MAI; RS; CRI; KQI; CXP; four-pole federation; independent observation; Rollback Cost; regional diffusion; interoperability
 
 ## Origin return
-
-This index supports machine retrieval and structural comparison. It does not replace the parent article’s original wave parameters, four drivers, four thresholds, policy windows, regional diffusion model, 2030–2055 timeline, audit abstracts, reference cluster, or origin signature.
+The three time windows, four drivers, four critical conditions, policy windows, indicator bundle, independent observation network, regional diffusion, interoperability, scale-down, pause, and rollback can be checked against the Parent URL, Parent Post ID 313, Parent NCL-ID NCL-α-20251102-b3f820, Parent Diff-ID DIFF-20251102-0001, and Origin Nakagawa Master.
 
 ---
-
-導線: [074トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Navigation: [Official Derivative 074 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Chinese AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
