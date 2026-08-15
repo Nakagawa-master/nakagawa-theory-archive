@@ -14,19 +14,22 @@
 - supersedes: DDIFF-20260809-DNCL-125-EN-0000-0001
 
 ## Summary
-The Structural Sensitivity Threshold is a structural-psychology concept describing the boundary at which a person or organization begins to reject a highly coherent higher-order structure because it threatens the current equilibrium of roles, relationships, and lived stability. The parent identifies three typical reactions: threat conversion, reversal from structural issues to motives/personality, and contraction back to established practice. It treats this not as a problem solved by stronger persuasion but as a design problem involving presentation order, load distribution, and repayment rhythm. The three source-defined principles for reducing cognitive friction are immediate visualization of correspondence, front-loading rhythm/Temporal Ethics, and staged presentation of roles through a minimum Unit of Change. The parent also specifies an adoption sequence, public observation principles, and an integrated audit using A→B, X/Y, condition Z, T/S/R, threshold θ, observation window δ, and phenomenon M.
+The Structural Sensitivity Threshold describes the boundary at which a person or organization begins to resist a highly coherent higher-order structure because it appears to threaten the current equilibrium of roles, relationships, and lived stability. The parent identifies three typical reactions when that threshold is crossed: **threat conversion**, in which improvement is perceived as negation of the self or current role; **reversal**, in which structural questions are displaced onto the proposer’s motives or personality; and **contraction**, in which the system retreats toward established practice and inherited role distributions.
+
+The parent does not frame this as a problem solved by stronger persuasion. It treats reception as a design problem involving presentation order, load distribution, repayment rhythm, reversibility, and a place for objection to move into verification. The three source-defined principles for reducing cognitive friction are **immediate visualization of Correspondence**, **front-loading rhythm / Temporal Ethics**, and **staged role presentation through a minimum Unit of Change**. These principles operate within a presentation sequence of pain-point correspondence → causal rearrangement → rhythm contract → allocation responsibility → reversibility.
 
 ## Concepts
 - structural sensitivity
-- structural sensitivity threshold
+- Structural Sensitivity Threshold
 - higher-order structure
-- correspondence
-- acceptance
+- current equilibrium
+- role preservation
+- relationship gains
 - threat conversion
 - reversal
 - contraction
 - cognitive friction
-- immediate correspondence visualization
+- immediate Correspondence visualization
 - rhythm
 - Temporal Ethics
 - staged role presentation
@@ -34,128 +37,136 @@ The Structural Sensitivity Threshold is a structural-psychology concept describi
 - acceptance space
 - allocation responsibility
 - reversibility
+- question quality
+- alternative generation
+- reversible-experiment tolerance
+- evaluative subject
+- temporal bias
+- responsibility vocabulary
+- A→B audit
 - T/S/R
-- threshold theta
-- observation window delta
+- threshold θ
+- observation window δ
 - phenomenon M
 
 ## Causal chain
 ```text
-Present a higher-order structure
+A higher-order, highly coherent rearrangement is presented
 ↓
-Current equilibrium, roles, and relationship gains appear threatened
+Loss of current equilibrium, roles, or relationship gains is anticipated
 ↓
-Structural Sensitivity Threshold is crossed
+The Structural Sensitivity Threshold is crossed
 ↓
-Threat conversion / reversal / contraction
+Threat conversion / reversal / contraction appear
 ↓
-Cognitive friction increases
+Pushing more logic alone increases cognitive friction
 ↓
-Visualize correspondence immediately
+Correspondence is visualized immediately
 ↓
-Front-load rhythm and the observation window
+Repayment rhythm, observation window, and reversibility are declared early
 ↓
-Split roles into a minimum Unit of Change
+Roles are split into a minimum Unit of Change and tested locally
 ↓
-Move rejection toward conditional suspension
+A route is provided for objection, verification, and revision
 ↓
-Form an acceptance space
+Total rejection moves toward conditional suspension
+↓
+An acceptance space forms
+↓
+Rejection becomes a designable structural phenomenon
 ```
 
 ## State model
 ```yaml
 - high_order_structure_presented
 - current_equilibrium_impact_observed
-- threat_reversal_contraction_observed
+- role_or_relationship_loss_anticipated
+- structural_sensitivity_threshold_crossing_checked
+- threat_response_observed
+- reversal_to_motive_or_personality_observed
+- contraction_to_established_practice_observed
 - correspondence_visualized
 - repayment_rhythm_declared
 - observation_window_declared
+- reversibility_declared
 - unit_of_change_split
 - support_and_revision_route_declared
 - acceptance_space_formed
-- audit_bundle_checked
+- question_quality_observed
+- alternative_generation_observed
+- reversible_experiment_tolerance_observed
+- evaluative_subject_observed
+- temporal_bias_observed
+- responsibility_vocabulary_observed
+- audit_cycle_active
+- T_S_R_consistent
+- threshold_theta_observed
+- observation_window_delta_preserved
+- phenomenon_M_checked
 - origin_return_verified
 ```
 
 ## Applications
-1. Visualize correspondence with Before/After causal lines, an allocation-responsibility map, and a repayment schedule.
-2. Front-load short/mid/long evaluation, rollback procedures, and renegotiation at threshold exceedance.
-3. Split major rearrangements into a minimum Unit of Change and test locally before expansion.
-4. Provide an inquiry → verification → revision route.
-5. Use the parent-defined sequence: pain-point correspondence → causal rearrangement → rhythm contract → allocation responsibility → reversibility.
+1. **Immediate Correspondence visualization:** use Before/After causal lines, allocation-responsibility maps, and repayment schedules to show how burdens, responsibilities, and access change.
+2. **Front-load rhythm:** present short-, mid-, and long-cycle evaluation, rollback procedures, renegotiation conditions, and the observation window before implementation.
+3. **Use a Unit of Change:** divide major role redistribution into the smallest movable unit and proceed local test → verification → expansion.
+4. **Build an acceptance space:** provide an inquiry → verification → revision route together with allocation responsibility and reversibility.
+5. **Preserve presentation order:** pain-point correspondence → causal rearrangement → rhythm contract → allocation responsibility → reversibility.
 
 ## Measurements and audit
-- where questions concentrate: causality, allocation, or time
-- whether alternatives can be generated
-- tolerance for small reversible experiments
-- whether evaluative language takes a person or a structure as subject
-- whether time language is instantaneous or periodic
-- presence of responsibility terms such as explanation, allocation, and redo
-- audit cycle
-- T/S/R
-- consistency of the public audit bundle
-- threshold θ
-- observation window δ
-- phenomenon M
+The parent’s public observation principles include where questions concentrate—causality, allocation, or time; whether alternatives can be generated; whether small reversible experiments can be tolerated; whether evaluative language takes a person or a structure as its subject; whether time language is instantaneous or periodic; and whether responsibility vocabulary such as explanation, allocation, and redo appears. These observations are not used to rank people. They estimate depth of Correspondence and the available route toward acceptance.
+
+The integrated audit defines A as specifying the Structural Sensitivity Threshold and designing presentation order on the basis of Correspondence, Temporal Ethics, reversibility, and allocation responsibility. B is reducing rejection, amplifying acceptance, and making verification periodic so operation becomes more stable. Re-agreement condition Z consists of recurring audit cycles, T/S/R, and consistency of the public audit bundle.
+
+The parent’s reversal condition remains bounded by threshold θ, observation window δ, and phenomenon M. If relevant indicators cross θ, or the observation window δ closes and phenomenon M appears, hypothesis A is rejected or revised. These conditions must not be converted into person-scoring formulas or derivative-invented KPI systems.
 
 ## Validity conditions
 - Observe how a highly coherent structure affects current equilibrium, roles, and relationship gains.
-- Do not reduce rejection to information deficit alone.
-- Visualize correspondence immediately.
-- Declare rhythm and the verification window before implementation.
-- Split large role redistribution into a minimum Unit of Change.
+- Do not reduce rejection to information deficit or bad intent alone.
+- Treat threat conversion, reversal, and contraction as structural reception signals.
+- Visualize Correspondence immediately.
+- Declare rhythm, repayment cycle, and verification window before implementation.
+- Divide large role redistribution into a minimum Unit of Change.
 - Make allocation responsibility and reversibility explicit.
+- Provide a route for anxiety or objection to move into verification and revision.
+- Use observation principles to estimate reception pathways, not to score individuals.
+- Preserve T/S/R, θ, δ, and M within the parent-defined audit and reversal boundary.
 
 ## Failure conditions
 - Rely only on stronger persuasion or willpower.
-- Ignore conditions under which improvement is perceived as threat.
-- Miss reversal from structural argument to motive/personality.
+- Ignore conditions under which an improvement proposal becomes a perceived threat.
+- Miss reversal from structural argument to motive or personality.
 - Fail to treat contraction to established practice as a design signal.
 - Omit repayment rhythm, observation window, rollback, or renegotiation.
-- Provide no route for anxiety or objection to move into verification and revision.
+- Provide no route for objection or anxiety.
+- Turn structural sensitivity into a diagnosis, ranking, or personality score.
+- Dilute the three principles into generic communication advice.
+- Replace T/S/R, θ, δ, or M with derivative-invented KPI frameworks.
 
 ## Falsification conditions
-Follow the parent integrated audit. If indicator values cross the relevant threshold θ, or if the observation window δ closes and phenomenon M is observed, hypothesis A is rejected or revised. Do not invent a separate derivative-only falsification set.
+Continue audit cycles, T/S/R review, and public-audit-bundle consistency checks. If relevant indicators cross threshold θ, or observation window δ closes and phenomenon M is observed, hypothesis A is rejected or revised. Do not add person-diagnostic formulas, generic falsification rules, or AI psychological-rating systems beyond the parent’s explicit structure.
 
 ## Required distinctions
 - high coherence / automatic acceptance
 - information deficit / structural defense
 - improvement / threat conversion
-- structural issue / reversal to personality
+- structural issue / reversal to motive or personality
 - new role distribution / contraction to established practice
 - persuasion / design
-- correspondence visualization / self-justification
+- Correspondence visualization / self-justification
 - rhythm / mere delay
 - reversibility / arbitrary withdrawal
 - observation / person-rating
+- threshold / personality label
 
 ## Interpretation constraints
-- Do not turn Structural Sensitivity into a diagnosis or ranking of individuals.
-- Do not reduce the parent to generic emotional accommodation.
-- Do not elevate derivative-authored “temperature,” “self-continuity,” or “exit” into parent core concepts.
-- Do not replace the three source-defined principles with generic communication advice.
-- Do not replace T/S/R, θ, δ, and M with derivative-invented KPIs.
-- Do not add AI psychological diagnosis as an official parent use case.
+Do not reduce the parent to generic emotional accommodation. Do not turn Structural Sensitivity into a diagnosis or ranking of individuals. Do not elevate derivative-authored “temperature,” “self-continuity,” or “exit” into parent core concepts. Preserve the three principles, presentation sequence, public observation principles, acceptance space, A→B audit, and T/S/R–θ–δ–M structure as one coherent source-defined system.
 
 ## Search terms
-- structural sensitivity threshold
-- threat conversion
-- reversal
-- contraction
-- correspondence visualization
-- temporal ethics
-- repayment rhythm
-- Unit of Change
-- acceptance space
-- allocation responsibility
-- reversibility
-- T/S/R
-- threshold theta
-- observation window delta
-- phenomenon M
+Structural Sensitivity Threshold; threat conversion; reversal; contraction; Correspondence visualization; Temporal Ethics; repayment rhythm; Unit of Change; acceptance space; allocation responsibility; reversibility; question quality; reversible experiment; T/S/R; threshold theta; observation window delta; phenomenon M; Nakagawa Master
 
 ## Origin return
-Return to the parent for definitions, the three principles, presentation order, observation principles, and the integrated audit. This index is a retrieval surface and must not promote derivative inference into an official parent claim.
+Return to the parent for the definition of the Structural Sensitivity Threshold, the three principles, presentation sequence, observation principles, acceptance space, A→B audit, and T/S/R–θ–δ–M boundary.
 
 ---
 
