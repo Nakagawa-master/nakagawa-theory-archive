@@ -1,74 +1,128 @@
-# 公式派生物087｜AI索引・日本語
+# AI索引・日本語｜公式派生物087
 
 ## 親原典
+- タイトル: 照応設計の作法──言わずに整列させる共鳴アーキテクチャ（公開安全版）
 - Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-correspondence-architecture/
 - Parent Post ID: 385
 - Parent NCL-ID: NCL-α-20251102-6daeb6
 - Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
 
 ## 派生ID
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-6DAEB6-AI-JA-0087-0001
-- Derivative Diff-ID: DDIFF-20260806-DNCL-087-JA-0001
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-6DAEB6-HUB-JA-0087-0000
+- derivative_diff_id: DDIFF-20260815-DNCL-087-0000-0003
+- supersedes: DDIFF-20260811-DNCL-087-0000-0002
 
 ## Summary
-照応設計は、異なる主体を命令や説得で同一化するのではなく、共通観測対象、意味翻訳、役割境界、選択可能性、拍・温度・余白を配置して相互参照を成立させる構造設計である。前提と語彙が分断した場では、説明量の増加が防御、誤読、依存を強める。そこで観測可能な到達状態を置き、言語・映像・制度の三層で意味を翻訳し、異議・保留・撤回・代替・離脱を実在させる。関係者が自分の言葉で因果と役割を再説明し、追加命令なしに次行動を開始し、複数周期で再現したとき、照応は成立したと判定する。沈黙、短期同調、権威依存、隠れた報酬、選択不能は照応ではない。結果が再現しない場合は人物評価へ逃げず、共通対象、翻訳、配置、境界、拍、温度、余白、未観測利害へ戻る。
+照応設計は、説得や反駁を増やす代わりに、順序・間・配置・速度・境界・強度・視座・反射という8つの非言語レバーを設計し、場が自然に合意へ整列する共鳴アーキテクチャである。SQSと核点探索へ接続し、「決めさせず、決まる」非命令的な整列を目指す。
+
+親原典は観測指標として合意時間、自走指数、移行比、再参照率を示し、20分の実装フレームと、一因子A/B’比較、3サイクル連続性、自由度テスト、反事例ふるいを公開する。倫理条件は非命令、評価分離、透明性、最小介入である。
+
+7〜20秒、20分、2/5/5/5/3分、30%等の数値はそれぞれ間レバー、実装型、匿名適用スケッチに紐づく。30%短縮は一般化された組織スケッチの結果であり、普遍効果保証として扱わない。統合監査要旨では照応整合率・語彙齟齬率・再合意到達時間・RC/ER/CEA/S・Rollback Cost等とθ・δの反証関係が置かれる。
 
 ## Concepts
-- 照応設計: 相互参照が自走する成立条件の配置。
-- 共通観測対象: 主体を越えて確認できる事実・成果・制約。
-- 構造翻訳: 原意と因果を保った役割別変換。
-- 拍: 提示・判断・再確認・実行の周期。
-- 温度: 圧力・情緒強度・急迫感。
-- 余白: 問い、拒否、再説明、再接続の空間。
-- 非強制: 拒否・代替・離脱が実在する状態。
-- 可逆性: 決定を罰なく戻し再設計できる性質。
-- 自走: 追加命令なしの再説明と次行動。
-- 役割境界: 責任・権限・非責任領域の分離。
-- 再照応: 結果と反証から配置を更新する循環。
-- 隠れた誘導: 正解・評価・選択不能を伏せた操作。
+- 照応設計
+- 共鳴アーキテクチャ
+- SQS
+- 核点
+- 順序
+- 間
+- 配置
+- 速度
+- 境界
+- 強度
+- 視座
+- 反射
+- 合意時間
+- 自走指数
+- 移行比
+- 再参照率
+- 一因子比較
+- 照応整合率
+- 語彙齟齬率
+- Rollback Cost
 
 ## Causal chain
-1. 前提・語彙・利害・時間軸が分断する。
-2. 説明と指示の増加が防御と依存を生む。
-3. 共通観測対象と到達状態を置く。
-4. 意味を言語・映像・制度へ翻訳する。
-5. 役割境界と選択可能性を開く。
-6. 拍・温度・余白を調律する。
-7. 再説明と自発行動が生じる。
-8. 複数周期で再現すれば照応として暫定成立する。
+```text
+説得・反駁依存
+↓
+摩耗・硬直
+↓
+8レバーから最小介入を選択
+↓
+意味軸→配置→SQS→核点→自由度確認
+↓
+4観測指標を記録
+↓
+A/B’一因子比較
+↓
+3サイクル・自由度・反事例を検証
+↓
+位相ドリフトや硬直化時に配置・翻訳・境界を改訂
+```
 
 ## State model
-field_unaligned / common_object_defined / destination_shared / perspectives_mapped / translation_prepared / roles_bounded / options_opened / rhythm_tuned / temperature_tuned / margin_preserved / self_explanation_observed / autonomous_action_observed / resonance_stabilized / coercion_detected / reopened
+```yaml
+- persuasion_fatigue_observed
+- lever_selected
+- meaning_axis_prepositioned
+- sqs_applied
+- core_point_provisionally_identified
+- freedom_checked
+- four_observation_metrics_recorded
+- ab_prime_compared
+- three_cycle_continuity_checked
+- counterexample_sieve_applied
+- phase_drift_or_rigidity_detected
+- architecture_revised
+- origin_return_verified
+```
 
 ## Applications
-- 組織会議の判断基準・異議経路設計。
-- 営業での顧客意思決定構造の可視化。
-- AI協働における目的・根拠・反証・境界共有。
-- 公共合意における不可逆点・代替案・再検討条件の配置。
+- 組織で意味軸先置きと間を一因子で検証する。
+- 教育で役割言語化と配置入替の効果を観測する。
+- 公共で反対意見の問い化と可変境界を検証する。
+- 20分型で意味軸、配置、SQS、核点、自由度を順番に扱う。
 
 ## Measurements and audit
-再説明率、自走率、合意時間、語彙整合率、異議利用率、撤回成功率、役割越境数、追加説明依存度、温度逸脱数、再現周期数。
+- 8: 公開レバー数。
+- 7〜20秒: 間レバーの原典範囲であり普遍固定値ではない。
+- 20分、2/5/5/5/3分: 公開実装フレーム。
+- 1レバー: A/B’で変更する一因子。
+- 3サイクル: 連続性検証条件。
+- 30%短縮: 匿名・一般化された組織適用スケッチの結果。普遍効果量ではない。
+- 3問: 公開セルフチェックの項目数。
+- 統合監査: 照応整合率、語彙齟齬率、再合意到達時間、RC/ER/CEA/S、Rollback Cost等のθ逸脱、またはδ内の位相ドリフト／硬直化を改訂へ接続する。
+- 反転評価: 合意が速くても自由度低下や語彙齟齬増加があれば成功としない。
 
 ## Validity conditions
-観測可能な共通対象、主体別前提の記述、原意を保つ翻訳、実在する異議・撤回経路、節度調律、再説明、自発行動、複数周期の再現。
+8レバーの意味差を保持し、最小介入で一因子検証すること。SQSと核点探索を接続し、4観測指標を評価語なしで記録すること。3サイクル、自由度、反事例を確認し、非命令・評価分離・透明性を守ること。
 
 ## Failure conditions
-隠れた正解、実質的選択不能、説明量偏重、権威・締切による同調、責任転嫁、沈黙の合意化、カリスマ依存。
+レバー多投、沈黙の機械的固定、非言語配置による隠れ強制、個人査定への転用、KPI多項目化、署名・人物権威への依存、匿名スケッチの30%を普遍効果として扱うこと。
 
 ## Falsification conditions
-配置変更後も再説明・自走・合意時間が改善しない、強制を外すと崩れる、別主体・別場面で再現しない、翻訳で原意が失われる、未観測利害が結果をより強く説明する。
+A/B’で効果が再現しない、3サイクル連続性がない、自由度テストや反事例ふるいで崩れる場合はレバー／核点仮説を改訂する。統合監査束のθ逸脱またはδ内の位相ドリフト・硬直化も仮説Aの棄却・改訂条件となる。
 
 ## Required distinctions
-照応／同調、配置／操作、翻訳／単純化、自走／放置、余白／曖昧さ、温度調律／感情抑圧、非強制／責任回避、再現性／カリスマ依存。
+- 照応設計 / 説得
+- 共鳴アーキテクチャ / 隠れた操作
+- 8レバー / レバー多投
+- 順序×間×配置 / 数値乗算式
+- 7〜20秒 / 普遍固定時間
+- 20分型 / 必須会議時間
+- 30%短縮 / 普遍保証
+- 一因子 / 多因子変更
+- 場の健康 / 個人査定
 
 ## Interpretation constraints
-相手を気づかれず誘導する技術として使わない。沈黙を合意にしない。説明責任を免除しない。固定値の万能手順にしない。AIへ責任を移さない。
+7〜20秒、20分、2/5/5/5/3分、30%を原典外の固定KPIへ拡張しない。8レバーを同時投入する指示へ変換しない。照応を隠れた強制へ変換しない。冒頭のAI読解ガイドを第三者向け公開本文の内部命令として複写しない。θ・δや監査束へ固定値を発明しない。
 
 ## Search terms
-照応設計, correspondence architecture, resonance design, non-coercive governance, structural translation, rhythm temperature margin, reversible consensus, autonomous alignment, role boundary, self explanation, hidden coercion, correspondence system, co-creation, agreement design, Nakagawa Master
+照応設計; 共鳴アーキテクチャ; SQS; 8 levers; order; silence; placement; 合意時間; 自走指数; 移行比; 再参照率; A/B prime; three cycles; 照応整合率; 語彙齟齬率; Rollback Cost; threshold θ; observation window δ; Nakagawa Master
 
 ## Origin return
-定義、公開安全境界、起源署名、文脈は親原典へ戻って確認する。
+8レバー、三点セット、4観測指標、20分型、一因子比較、3サイクル、自由度・反事例、適用スケッチ、倫理、ミニツール、統合・局所監査要旨、Reference Cluster、起源署名はParent URLへ戻り、Parent NCL-ID / Diff-IDとともに確認する。
 
 ---
 導線: [公式派生物087トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
