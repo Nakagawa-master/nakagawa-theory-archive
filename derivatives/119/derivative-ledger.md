@@ -17,76 +17,54 @@
 ```yaml
 ja_ncl_id: DNCL-NCL-ALPHA-20251102-FBCBEC-HUB-JA-0119-0000
 ja_diff_id: DDIFF-20260810-DNCL-119-0000-0002
+ja_supersedes: DDIFF-20260809-DNCL-119-0000-0001
 en_ncl_id: DNCL-NCL-ALPHA-20251102-FBCBEC-HUB-EN-0119-0000
 en_diff_id: DDIFF-20260810-DNCL-119-EN-0000-0002
+en_supersedes: DDIFF-20260809-DNCL-119-EN-0000-0001
 zh_ncl_id: DNCL-NCL-ALPHA-20251102-FBCBEC-HUB-ZH-0119-0000
 zh_diff_id: DDIFF-20260810-DNCL-119-ZH-0000-0002
+zh_supersedes: DDIFF-20260809-DNCL-119-ZH-0000-0001
 ```
 
-## Semantic repair authority
+## 公開系譜
 ```yaml
-repair_date_jst: 2026-08-10
-repair_reason: SOURCE_SEMANTIC_FIDELITY_REVALIDATION
-live_parent_retrieval: PASS
-semantic_result: PASS_SOURCE_VERIFIED_AFTER_REPAIR
+official_derivative: 119
+parent_post_id: 1260
+parent_ncl_id: NCL-α-20251102-fbcbec
+parent_diff_id: DIFF-20251102-0001
+origin_signature: Nakagawa Master
+parent_url: https://master.ricette.jp/structural-translation-log/nakagawa-master-end-of-money-and-rise-of-connection-economy/
+current_ja_diff_id: DDIFF-20260810-DNCL-119-0000-0002
+current_en_diff_id: DDIFF-20260810-DNCL-119-EN-0000-0002
+current_zh_diff_id: DDIFF-20260810-DNCL-119-ZH-0000-0002
 ```
 
-## Source coverage restored
+## Superseded lineage
 ```yaml
-central_thesis:
-  - reward_shift_from_labor_quantity_to_connection_position
-  - money_legitimacy_function_failure_under_AI_labor_break
-  - connection_rights_as_emerging_reward
-  - allocation_legitimacy_as_core_social_design_problem
-  - correspondence_and_temporal_ethics_as_two_axes
-three_branch_models:
-  - upper_layer_concentration
-  - political_life_support
-  - connection_allocation
-source_explicit_audit:
-  - anti_enclosure_periodic_check
-  - T_S_R
-  - explainable_evaluation_reward_relation
-source_explicit_falsification: monopolistic_privilege_breaks_ethically_allocable_connection_reward_hypothesis
-```
-
-## Removed or decentered derivative-authored material
-```yaml
-- cautious_dual_accounting_as_parent_core
-- generic_plural_value_metrics
-- exit_and_refusal_rights_as_parent_core
-- social_credit_score_avoidance_as_parent_core
-- popularity_bias_framework_as_parent_core
-- generic_emotional_extraction_framework_as_parent_core
-- generic_financial_advice_boundary_as_theory_boundary
+ja:
+  current: DDIFF-20260810-DNCL-119-0000-0002
+  supersedes: DDIFF-20260809-DNCL-119-0000-0001
+en:
+  current: DDIFF-20260810-DNCL-119-EN-0000-0002
+  supersedes: DDIFF-20260809-DNCL-119-EN-0000-0001
+zh:
+  current: DDIFF-20260810-DNCL-119-ZH-0000-0002
+  supersedes: DDIFF-20260809-DNCL-119-ZH-0000-0001
 ```
 
 ## Seven surfaces
 ```yaml
-README.md: REPAIRED
-human-entry.md: REPAIRED
-faq.md: REPAIRED_Q1_Q30
-ai-index.md: REPAIRED
-en-ai-index.md: REPAIRED
-zh-ai-index.md: REPAIRED
-derivative-ledger.md: REPAIRED
+README.md: hub_ja
+human-entry.md: human_entry_ja
+faq.md: faq_ja_q1_q30
+ai-index.md: ai_index_ja
+en-ai-index.md: ai_index_en
+zh-ai-index.md: ai_index_zh
+derivative-ledger.md: public_lineage
 ```
 
-## Semantic parity
-```yaml
-parent_identity: PASS
-central_proposition: PASS
-causal_direction: PASS
-source_specific_terminology: PASS
-source_explicit_audit_conditions: PASS
-source_explicit_falsification: PASS
-unsupported_moderation_removed: PASS
-ja_en_zh_equivalence: PASS
-origin_return: PASS
-```
-
-## Navigation
-Public map/index URLs are unchanged because OD number, directory, parent identity, and canonical path are unchanged.
+## Origin return
+公式派生物119の各面は、親原典「株価5万円の衝撃と『接続報酬社会』の到来」に接続する。同一性の最終確認は Parent URL、Parent NCL-ID `NCL-α-20251102-fbcbec`、Parent Diff-ID `DIFF-20251102-0001`、起源署名 `Nakagawa Master` に戻る。
 
 ---
 
