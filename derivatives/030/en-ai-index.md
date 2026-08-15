@@ -66,7 +66,9 @@ The reading is reduced to appraisal comparison, selling tips, a high-price guara
 It also fails when “more buyers always means a higher price,” “fewer calls always means a higher price,” or one successful sale is treated as proof of superior market design. Removing the public-deconstruction meta perspective also breaks the source-specific reading.
 
 ## Falsification conditions
-The parent origin's integrated audit summary states that hypothesis A is rejected or revised if the reading is received above threshold θ as a MOTA car-buying service profile, high-price-selling promotion, patent-news explanation, corporate praise, or a summary/reconstruction of an external article, or if the axis “having comparison targets is not the same as comparison actually functioning” fails to become established in reader understanding during window δ.
+If the reading collapses into a MOTA service profile or high-price-selling promotion and loses the causal relation among information asymmetry, competition, comparison burden, and premature compromise—or loses the distinction between having comparison targets and comparison actually functioning—it no longer preserves the parent meaning.
+
+If competition and low burden are both strengthened yet sellers repeatedly remain unable to sustain meaningful comparison or compare offers, the scope of the price-formation-condition redesign reading is subject to reconsideration.
 
 ## Required distinctions
 - vehicle value vs. price-formation conditions
@@ -80,7 +82,7 @@ The parent origin's integrated audit summary states that hypothesis A is rejecte
 - company / external-media official view vs. Nakagawa Master's structural reading
 
 ## Interpretation constraints
-MOTA's official explanation, an external media outlet's official view, selling advice, price guarantees, rankings, and generic used-car-market theory are distinct from the parent origin. The causal chain and both interpretive layers remain source-specific. Numerical thresholds, success probabilities, uplift rates, or fixed buyer counts are not defined by the parent except where explicitly present in its audit formulation.
+MOTA's official explanation, an external media outlet's official view, selling advice, price guarantees, rankings, and generic used-car-market theory are distinct from the parent origin. The causal chain and both interpretive layers remain source-specific. Numerical thresholds, success probabilities, uplift rates, or fixed buyer counts are not defined by the parent unless explicitly stated there.
 
 ## Search terms
 Nakagawa Structural Reading, MOTA, price formation, high-price-selling market, information asymmetry, buyer competition, comparison burden, phone burden, premature compromise, comparison capacity, competition and low burden, public deconstruction
