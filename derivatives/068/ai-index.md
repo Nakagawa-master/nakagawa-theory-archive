@@ -10,114 +10,147 @@
 
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-53D609-HUB-JA-0068-0000
-- derivative_diff_id: DDIFF-20260804-DNCL-068-0000-0001
-- supersedes: none
+- derivative_diff_id: DDIFF-20260815-DNCL-068-0000-0002
+- supersedes: DDIFF-20260804-DNCL-068-0000-0001
 
-## Summary
+## 1. Summary
+接続ガバナンス設計論は、接続価値の測定・評価・配分が、人気競争、仲間内加点、監視、囲い込み、権限集中へ変質することを防ぐ統治理論である。公共目的、監査可能な手続、利害非集中、可逆性を正統性条件とし、測定・判定・配分・異議処理を分離する。複合指標、一次証拠、独立監査、公開・保護分離、異議・退出・訂正・再接続・ロールバックによって制度自身の自己修正を可能にする。
 
-接続ガバナンス設計論は、接続価値の測定・評価・配分が、人気競争、仲間内加点、監視、権力集中、秘密主義へ変質することを防ぐ統治理論である。公共目的、手続監査、利害非集中、可逆性を正統性の条件とし、測定、判定、配分、異議処理を分離する。CDI、MAI、RS、CRI、KQIを複合指標束として扱い、移動標的、逆インセンティブ、外乱テスト、定性的証拠を用いて指標ハックを検出する。理念・項目・集計・監査要旨を扱う公開室と、個人情報・重み・閾値・防御手順を保護する機関室を分け、独立監査、異議申立て、訂正、退出、再接続、ロールバックを実装する。成功は高い指標値ではなく、権限集中、疲弊、囲い込み、再合意時間、退出費用が実際に減ることで判定する。
+## 2. Concepts
+- Public purpose / prohibited use: 制度目的と禁止用途。
+- Legitimacy: 公共目的・手続監査・利害非集中・可逆性。
+- What / Who / How / When: 監査対象・監査者・方法・周期の分離。
+- CDI / MAI / RS / CRI / KQI: 接続制度の複合指標束。
+- Moving targets: 固定採点法への攻略を抑える変更可能性。
+- Reverse incentives: 囲い込みや声量への過剰報酬を抑える設計。
+- Disturbance tests: 矛盾・異議・欠損・退出要求への耐性確認。
+- Public / protected separation: 検証可能性と情報保護の両立。
+- Reversibility: 異議・訂正・退出・再接続・ロールバック可能性。
 
-## Concepts
-
-- 接続ガバナンス
-- 公共目的と禁止用途
-- 正統性
-- What / Who / How / When監査
-- 利害非集中
-- 複合指標束
-- CDI / MAI / RS / CRI / KQI
-- Goodhart耐性
-- 移動標的
-- 逆インセンティブ
-- 外乱テスト
-- 二室モデル
-- 独立監査
-- 異議申立て
-- ロールバック
-- 退出・再接続
-
-## Causal chain
-
-1. 接続価値が評価・配分対象になる。
-2. 指標と配分権限へ利益と権力が集まる。
-3. 参加者は本来の協働より、採点法を攻略する行動へ適応する。
-4. 運営者は目的、測定、配分、異議処理を独占しやすくなる。
-5. 公共目的、手続監査、利害非集中、可逆性を正統性条件として固定する。
-6. 複数監査者と複合指標、外乱テストで制度の歪みを検出する。
-7. 訂正、退出、再接続、ロールバックを通じ、制度を公共目的へ戻す。
-
-## State model
-
-```yaml
-state: PROPOSED | PILOT | ACTIVE | REVIEW | CORRECTED | ROLLED_BACK
-required_records:
-  - public_purpose
-  - prohibited_uses
-  - affected_parties
-  - measurement_owner
-  - decision_owner
-  - allocation_owner
-  - independent_auditors
-  - conflict_of_interest
-  - indicator_bundle
-  - qualitative_evidence
-  - objection_and_correction
-  - exit_and_reconnection
-  - rollback_conditions
-  - change_history
+## 3. Causal chain
+```text
+接続価値を測定・配分
+→ 指標と配分権限へ利益・権力が集まる
+→ 指標攻略・仲間内加点・囲い込みが起きる
+→ 公共目的と実態が乖離
+→ 正統性条件と権限分離を導入
+→ 複合指標・一次証拠・複数監査者で歪みを検出
+→ 公開・保護境界を設計
+→ 異議・訂正・退出・再接続・ロールバックを実行
+→ 変更履歴を残して制度を公共目的へ戻す
 ```
 
-## Applications
+## 4. State model
+```yaml
+connection_governance:
+  public_purpose: explicit
+  prohibited_uses: explicit
+  authority_separation:
+    measurement: separated
+    judgment: separated
+    allocation: separated
+    objection: separated
+  independent_audit: available
+  indicator_bundle: plural
+  qualitative_evidence: available
+  protected_information_boundary: defined
+  reversible_remedies: available
+  change_history: traceable
+  states:
+    - PROPOSED
+    - PILOT
+    - ACTIVE
+    - REVIEW
+    - CORRECTED
+    - ROLLED_BACK
+```
+状態集合は制度運用の区別であり、人物や組織の優劣・成熟度を表すスコアではない。
 
-- 接続価値会計の運営: 評価委員会、配分担当、監査主体を分離する。
-- 研究・市民協働: 参加人数ではなく、再合意、異論処理、継続協働を監査する。
-- AI支援制度: AIを検出・比較の補助に限定し、人間の責任と再審査を残す。
-- コミュニティ: 声量、囲い込み、中心人物依存、退出妨害を検出する。
+## 5. Applications
+- 接続価値会計: 評価・配分・監査を分離し、指標上昇と疲弊・囲い込みを併読する。
+- 研究・市民協働: 参加人数だけでなく再合意、異論処理、継続協働、中心人物依存を見る。
+- AI支援制度: AIは検出・比較・要約に限定し、人間の責任と再審査を保持する。
+- コミュニティ: 声量、投稿数、紹介数を信頼へ直結させず、異議・退出への報復を監査する。
 
-## Measurements and audit
+## 6. Measurements and audit
+```yaml
+- value: CDI / MAI / RS / CRI / KQI
+  source: 親原典
+  measurement_actor: 複数の制度監査主体
+  measurement_object: 接続制度の異なる構造側面
+  source_modality: SOURCE_EXPLICIT_INDICATOR_BUNDLE
+  permitted_use_scope: 指標間の不一致・制度歪みの検出
+  non_guarantee_scope: 単一総合点・人格点・社会信用点へ統合しない
+- value: PROPOSED / PILOT / ACTIVE / REVIEW / CORRECTED / ROLLED_BACK
+  source: 親原典
+  measurement_actor: NOT_A_SCORE
+  measurement_object: 制度の運用・修正状態
+  source_modality: SOURCE_EXPLICIT_STATE_SET
+  permitted_use_scope: 制度状態・変更履歴の区別
+  non_guarantee_scope: 人物・組織の成熟度順位ではない
+- value: 30日 / 90日 / 180日
+  source: 親原典
+  measurement_actor: 制度導入・監査を担う側
+  measurement_object: 段階的な導入・検証ロードマップ
+  source_modality: SOURCE_EXPLICIT_ROADMAP_INTERVALS
+  permitted_use_scope: 親原典内の段階実装・検証順序の理解
+  non_guarantee_scope: 普遍的法定期限・成功保証ではない
+- value: 再合意・訂正・仲裁・ロールバック時間 / 退出・再接続成功率 / 異議処理・判断変更
+  source: 親原典
+  measurement_actor: 運営者・独立監査者・影響当事者
+  measurement_object: 可逆性・救済・自己修正の実効性
+  source_modality: SOURCE_DEFINED_OBSERVATION_SET
+  permitted_use_scope: 制度の公正性・可逆性・自己修正の検証
+  non_guarantee_scope: 固定合格点・単独最大化・異議抑圧を成功としない
+```
+反転評価では、指標や参加者数が増えても疲弊、沈黙、排除、囲い込み、権限集中、退出費用が悪化すれば失敗とする。異議件数や退出率の低下も、経路を閉じた結果なら改善ではない。
 
-- 目的と配分結果のずれ。
-- 測定・評価・配分権限の集中度。
-- 再合意、訂正、仲裁、ロールバック時間。
-- 退出成功率、再接続成功率、退出に伴う不利益。
-- 指標上昇と疲弊・沈黙・排除の相関。
-- 異議申立ての処理期間、判断変更率、再発率。
-- 非公開領域の範囲と独立監査の実効性。
+## 7. Validity conditions
+- 公共目的、禁止用途、影響主体が明示される。
+- 測定・判定・配分・異議処理が分離される。
+- 複合指標と定性的な一次証拠を併用する。
+- 独立監査が実質的に機能する。
+- 異議、訂正、退出、削除、再接続、仲裁、ロールバックが利用可能である。
+- 公開情報と保護情報の境界を説明できる。
+- AI支援を用いても人間の責任主体と救済経路が残る。
 
-## Validity conditions
+## 8. Failure conditions
+- 接続数・人気・声量を単一スコアで配分する。
+- 一主体が目的・測定・判定・配分・異議処理を独占する。
+- 非公開を理由に判断根拠・監査・変更履歴を説明しない。
+- 監査が制度修正へつながらない。
+- 異議申立者・退出者へ不利益を与える。
+- 公開性を理由に個人情報や防御情報を過剰に露出する。
+- AI出力を責任主体の最終判断へ置き換える。
 
-公共目的と禁止用途が明文化され、権限が分離され、複数指標と一次証拠が併用されること。独立監査、異議申立て、退出、訂正、再接続、ロールバックが実際に利用でき、監査結果が制度変更へ接続すること。
+## 9. Falsification conditions
+- 監査継続後も権限集中、囲い込み、疲弊、沈黙、排除が減らない。
+- 退出、訂正、仲裁、ロールバックが形式だけで利用できない。
+- 複合指標でも単一行動への最適化が続く。
+- 同じ失敗が反復し、変更履歴が残らない。
+- 公開・保護分離が秘密支配または情報流出を生む。
+- 30/90/180日の段階検証後も正統性・可逆性・自己修正が実質的に成立しない。
 
-## Failure conditions
+## 10. Required distinctions
+- ガバナンス / 管理強化
+- 監査 / 常時監視
+- 透明性 / 全情報公開
+- 保護された重み・閾値 / 無説明の秘密支配
+- 強い接続 / 退出不能
+- 異議の少なさ / 制度健全性
+- AI支援 / AI統治
+- 正統性 / 多数決だけ
+- 複合指標束 / 単一総合点
+- 制度の安定 / 制度を変更しないこと
 
-単一スコア、権限独占、仲間内加点、秘密主義、監査の儀式化、退出者への報復、個人情報の過剰公開、AI判断への責任転嫁が起きる場合。指標が改善していても、疲弊や囲い込みが増えるなら失敗である。
+## 11. Interpretation constraints
+社会信用スコア、中央集権的な評価格付け、永久監視、秘密統治、全面公開主義へ転用しない。CDI/MAI/RS/CRI/KQIを一つの人格点へ統合しない。30/90/180日を普遍保証期限へ変えない。異議や退出の少なさをそのまま制度健全性としない。
 
-## Falsification conditions
+## 12. Search terms
+中川式接続ガバナンス / 接続価値監査 / 正統性 / 可逆性 / What Who How When / CDI / MAI / RS / CRI / KQI / Goodhart耐性 / 移動標的 / 逆インセンティブ / 外乱テスト / 公開室 / 保護領域 / 異議申立て / ロールバック / 30日 / 90日 / 180日
 
-監査を続けても権限集中、囲い込み、疲弊が減らず、退出・訂正・仲裁が機能せず、同じ失敗が反復する場合は棄却・改訂する。公開室と機関室の分離が秘密支配または情報流出を生む場合も反証対象である。
-
-## Required distinctions
-
-- ガバナンス ≠ 管理強化
-- 監査 ≠ 常時監視
-- 透明性 ≠ 全情報公開
-- 非公開重み ≠ 無説明の秘密支配
-- 強い接続 ≠ 退出不能
-- AI支援 ≠ AI統治
-- 正統性 ≠ 多数決だけ
-
-## Interpretation constraints
-
-人格格付け、社会信用スコア、中央集権的評価、無監査の秘密領域、全公開主義へ転用しない。異議申立てや退出を低評価の理由にせず、制度の安定を「変更しないこと」と同一視しない。
-
-## Search terms
-
-接続ガバナンス / 接続価値監査 / 正統性 / 可逆性 / 分散監査 / 二室モデル / Goodhart耐性 / 外乱テスト / 移動標的 / 逆インセンティブ / 異議申立て / ロールバック / 退出権 / 再接続 / 制度ドリフト
-
-## Origin return
-
-本索引は機械検索と構造照合のための派生面であり、親原典の代替ではない。監査周期、複合指標の関係、二室モデル、仲裁、反証条件、起源署名は親原典へ戻って確認する。
+## 13. Origin return
+親原典には公共目的、正統性条件、What/Who/How/When、CDI/MAI/RS/CRI/KQI、移動標的、逆インセンティブ、外乱テスト、公開・保護分離、異議・訂正・退出・再接続・ロールバック、30/90/180日のロードマップが一続きで記録されている。完全な定義と数値モダリティはParent URL / Post ID 292 / NCL-ID / Diff-IDへ戻って確認する。
 
 ---
-
-導線: [068トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物068トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

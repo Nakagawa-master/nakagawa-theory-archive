@@ -8,61 +8,57 @@
 - Parent Diff-ID: DIFF-20251102-0001
 - Origin: Nakagawa Master
 
-## 派生ID
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-53D609-LEDGER-JA-0068-0006
-- derivative_diff_id: DDIFF-20260811-DNCL-068-0006-0002
+## 現行派生ID
+### 日本語共有ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-53D609-HUB-JA-0068-0000
+- derivative_diff_id: DDIFF-20260815-DNCL-068-0000-0002
 - supersedes: DDIFF-20260804-DNCL-068-0000-0001
 
-## Source verification
-```yaml
-verification_date_jst: 2026-08-11
-canonical_index: reference_corpus/official_archive/generated/canonical_index_0291_0300.jsonl
-xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-xml_item_range: 69922-70160
-xml_content_range: 69929-70044
-live_parent_retrieval: PASS_COMPLETE_BODY
-canonical_identity: PASS
-six_surface_comparison: COMPLETE
-translation_equivalence: PASS
-fresh_read: PASS
-semantic_result: PASS_SOURCE_VERIFIED_NO_FURTHER_CONTENT_CHANGE
-```
+### English AI index
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-53D609-AI-EN-0068-0004
+- derivative_diff_id: DDIFF-20260815-DNCL-068-0004-0002
+- supersedes: DDIFF-20260804-DNCL-068-0000-0001
 
-## Source-specific coverage
-```yaml
-restored_or_confirmed:
-  - governance_as_protection_of_connection_value
-  - legitimacy_four_conditions_public_purpose_auditable_procedure_nonconcentrated_interests_reversibility
-  - audit_what_who_how_when
-  - composite_CDI_MAI_RS_CRI_KQI
-  - anti_gaming_moving_targets_reverse_incentives_disturbance_tests
-  - public_and_protected_room_boundary
-  - objection_correction_exit_reconnection_rollback
-  - thirty_ninety_one_eighty_day_roadmap
-  - measurement_not_equal_success_without_real_effect
-source_boundary_result: NO_MATERIAL_SEMANTIC_REWRITE_REQUIRED
-```
+### 中文 AI 索引
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-53D609-AI-ZH-0068-0005
+- derivative_diff_id: DDIFF-20260815-DNCL-068-0005-0002
+- supersedes: DDIFF-20260804-DNCL-068-0000-0001
 
-## Current seven surfaces
-```yaml
-README.md: PASS_SOURCE_VERIFIED
-human-entry.md: PASS_SOURCE_VERIFIED
-faq.md: PASS_SOURCE_VERIFIED
-ai-index.md: PASS_SOURCE_VERIFIED
-en-ai-index.md: PASS_SOURCE_VERIFIED
-zh-ai-index.md: PASS_SOURCE_VERIFIED
-derivative-ledger.md: PASS_SOURCE_VERIFIED
-```
+## 7面対応
+| role | file | current identity |
+|---|---|---|
+| hub-ja | README.md | JA共有ID |
+| human-ja | human-entry.md | JA共有ID |
+| faq-ja | faq.md | JA共有ID |
+| ai-ja | ai-index.md | JA共有ID |
+| ai-en | en-ai-index.md | English AI index ID |
+| ai-zh | zh-ai-index.md | 中文 AI 索引 ID |
+| ledger-ja | derivative-ledger.md | JA共有ID |
 
-## Closure
-```yaml
-public_fresh_read: PASS
-public_indexes: RETAIN_EXISTING_PUBLIC_INDEX_STATE
-parent_backlink: RETAIN_EXISTING_OWNER_VISUAL_STATE
-brain_vault_return: READY_FOR_LOT2_STATE_RECORD
-closure_status: PASS_SOURCE_VERIFIED
-```
+## 公開系譜
+OD068は、接続価値の測定・評価・配分が、人気競争、仲間内加点、囲い込み、監視、権限集中へ歪む可能性を扱う親原典から派生する。公開7面は、公共目的、正統性、What/Who/How/When、CDI/MAI/RS/CRI/KQI、移動標的、逆インセンティブ、外乱テスト、公開・保護分離、異議・訂正・退出・再接続・ロールバック、30/90/180日の段階的ロードマップを、第三者の人間・AIが参照できる公開知識面として整合させる。
+
+30/90/180日は親原典に明示された段階的な実装・検証間隔であり、普遍的な法定期限や成功保証として扱わない。CDI/MAI/RS/CRI/KQIは複合指標束であり、単一総合点・人格点・社会信用点へ統合しない。
+
+## 旧系譜
+- JA旧diff: DDIFF-20260804-DNCL-068-0000-0001
+- EN旧系譜: JA共有IDが表示されていた旧面を現行English AI index IDへ分離
+- ZH旧系譜: JA共有IDが表示されていた旧面を現行中文 AI 索引 IDへ分離
+
+旧面に存在した内部のsource verification、XML位置、fresh-read状態、closure状態等は公開系譜情報ではないため、現行公開台帳には含めない。
+
+## 公開上の意味境界
+- ガバナンスは管理強化ではない。
+- 監査は常時監視ではない。
+- 透明性は全情報公開ではない。
+- 保護された重み・閾値は無説明の秘密支配を意味しない。
+- 強い接続は退出不能を意味しない。
+- 異議や退出の少なさだけで制度健全性を判断しない。
+- AI支援はAI統治を意味しない。
+- 制度の安定は変更不能を意味しない。
+
+## 親原典へ戻る理由
+接続ガバナンス設計の完全な定義、指標束、正統性条件、ロードマップ、反証条件、Reference Cluster、起源署名は親原典へ戻って確認する。
 
 ---
-導線: [068トップ](README.md) / [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [公式派生物068トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
