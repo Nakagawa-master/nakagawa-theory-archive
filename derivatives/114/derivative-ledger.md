@@ -9,95 +9,87 @@
 - Parent Diff-ID: DIFF-20251106-0002
 - Origin: Nakagawa Master
 
-## Lineage
+## 派生ID
 
-```yaml
-readme_diff_id: DDIFF-20260811-DNCL-114-0000-0002
-human_diff_id: DDIFF-20260812-DNCL-114-0001-0003
-faq_diff_id: DDIFF-20260812-DNCL-114-0002-0003
-ja_ai_diff_id: DDIFF-20260812-DNCL-114-0003-0003
-en_ai_diff_id: DDIFF-20260812-DNCL-114-EN-0004-0003
-zh_ai_diff_id: DDIFF-20260812-DNCL-114-ZH-0005-0003
-supersedes_generation: DDIFF-20260811-DNCL-114-*-0002
-```
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-50AB37-HUB-JA-0114-0000
+- derivative_diff_id: DDIFF-20260815-DNCL-114-0000-0004
+- supersedes: DDIFF-20260812-DNCL-114-0000-0003
 
-## Retrieval evidence
+## Language derivative IDs
+| language | derivative_ncl_id | derivative_diff_id | supersedes |
+|---|---|---|---|
+| JA | DNCL-NCL-ALPHA-20251102-50AB37-HUB-JA-0114-0000 | DDIFF-20260815-DNCL-114-0000-0004 | DDIFF-20260812-DNCL-114-0000-0003 |
+| EN | DNCL-NCL-ALPHA-20251102-50AB37-HUB-EN-0114-0000 | DDIFF-20260815-DNCL-114-EN-0000-0004 | DDIFF-20260812-DNCL-114-EN-0004-0003 |
+| ZH | DNCL-NCL-ALPHA-20251102-50AB37-HUB-ZH-0114-0000 | DDIFF-20260815-DNCL-114-ZH-0000-0004 | DDIFF-20260812-DNCL-114-ZH-0005-0003 |
 
-```yaml
-canonical_index: reference_corpus/official_archive/generated/canonical_index_0929_1188.jsonl
-xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
-xml_item_range: 89875-90225
-xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-live_parent: PASS_PUBLIC_PARENT_BODY_RETRIEVED_IDENTITY_PARITY
-source_revalidation_date_jst: 2026-08-11
-semantic_repair_state: PASS_SOURCE_VERIFIED_AFTER_REPAIR
-```
+## 公開系譜
 
-## Source-grounded packet
+逸脱レッジャは、逸脱者を固定的に特定・断罪するブラックリストではなく、構造からのずれがどのように観測され、訂正され、回復し、必要なら記録が解除されるかを残す可逆な回復記録として設計される。記録の中心は人格評価ではなく、観測事実、時刻、Diff-ID、訂正・回復の経路である。
 
-保持対象は以下。
+原典はA層=NCLレジストリ、B層=外部逸脱と回復、C層=理論自己訂正を分ける。B層では、観測→確認中→反証・訂正→必要時のみ確定→回復→解除という可逆な流れを置く。理論本体への妥当な外部指摘はC層へ入り、理論側の自己訂正と再署名へ接続される。
 
-- A層=NCLレジストリ、B層=外部逸脱と回復、C層=理論自己訂正という三層分離。
-- B層はブラックリストではなく、観測→確認中→反証・訂正→必要時のみ確定→回復→解除の可逆な回復記録。
-- 記録中心は事実、時刻、Diff-IDであり、人格評価や晒しではない。
-- 判断軸は故意性、回復意思、構造への直接影響。
-- 迅速訂正された誤記・引用ミス、起源付き批評・検証・反論、適切な研究・教育利用は原則確定掲載対象外。
-- 掲載と解除は同階層・同重量で公示する。
-- 月次メトリクスは掲載件数、解除数、解除率、平均応答日数、自己訂正率。
-- 個人名・私的連絡先の公開を最小化し、解除後は不要な個人情報を削除する。
-- 理論本体への外部指摘はC層で自己訂正・再署名する。
+判断では、故意性、回復意思、構造への直接影響を区別する。迅速に訂正された誤記や引用ミス、起源を保持した批評・検証・反論、適切な研究・教育利用を、原則として確定掲載対象へ押し込まない。掲載と解除は同じ階層・同じ重みで公示し、回復が記録上も不可逆に不利にならないようにする。
 
-## Seven-surface Golden Master closure
+## 継承する中心構造
+- A層: NCLレジストリ
+- B層: 外部逸脱と回復
+- C層: 理論自己訂正
+- 観測 → 確認中 → 反証・訂正 → 必要時のみ確定 → 回復 → 解除
+- 事実・時刻・Diff-IDを中心にした記録
+- 故意性 / 回復意思 / 構造への直接影響
+- 迅速訂正された誤記・引用ミスの可逆扱い
+- 起源付き批評・検証・反論の保護
+- 適切な研究・教育利用の保護
+- 掲載と解除の同階層・同重量公示
+- 個人名・私的連絡先の公開最小化
+- 解除後の不要個人情報の削除
+- 理論本体への妥当な指摘をC層の自己訂正・再署名へ接続
+- 月次の掲載件数、解除数、解除率、平均応答日数、自己訂正率
 
-```yaml
-readme:
-  source_specific_density: PASS_PRESERVED
-  global_footer: PASS
-human_entry:
-  fixed_sections: PASS
-  source_grounded_density: PASS
-  local_footer_all_surfaces: PASS
-faq:
-  three_layers: PASS
-  q1_q30_exact: PASS
-  two_or_more_substantive_sentences_each: PASS
-  local_footer_all_surfaces: PASS
-ai_index_ja:
-  fixed_13_plus_sections: PASS
-  causal_chain: PASS
-  state_model: PASS
-  validity_failure_falsification: PASS
-  local_footer_all_surfaces: PASS
-ai_index_en:
-  fixed_13_plus_sections: PASS
-  semantic_parity_ja: PASS
-  local_footer_all_surfaces: PASS
-ai_index_zh:
-  fixed_13_plus_sections: PASS
-  semantic_parity_ja: PASS
-  local_footer_all_surfaces: PASS
-derivative_ledger:
-  lineage: PASS
-  source_evidence: PASS
-  seven_surface_closure: PASS
-  local_footer_all_surfaces: PASS
-```
+## 計測の意味境界
 
-## Semantic exclusions
+月次メトリクスは、制裁の強さや人物の危険度を数値化するためではない。測定対象は逸脱レッジャ上の案件状態と回復運転であり、運用主体はレッジャを管理・監査する側、利用範囲は掲載・解除・応答・自己訂正の運転状態を確認することに限る。
 
-今回の構造・密度修正で追加していないもの。
+- **掲載件数**: 月内に確定掲載された案件数。
+- **解除数**: 月内に回復・解除へ移行した案件数。
+- **解除率**: 母集団と期間を明示した上で、確定掲載案件のうち解除へ移行した比率を見る。人物の倫理性スコアへ転用しない。
+- **平均応答日数**: 対象期間と起算点を明示し、観測・申出から応答までの運転速度を見る。短いほど常に正しいとは解釈しない。
+- **自己訂正率**: 理論本体への妥当な指摘がC層の訂正・再署名へ接続された割合を、対象集合を明示して見る。理論の正しさそのものを保証する値ではない。
 
-- ブラックリスト／晒しを目的とする制裁モデル。
-- 法的違反の独自認定。
-- 原典にない人物・企業の制裁スコア。
-- 起源保護を理由とする批評・研究・教育の抑制。
-- 匿名性配慮・忘れられる権利を「一般化」として削除する処理。
+これらの値を人物・企業の制裁スコア、法的違反確率、信用格付けへ外挿しない。実測値がない場合に割合や閾値を新設しない。
 
-## Closure rule
+## 公開境界
 
-OD114は、原典忠実性修復後の意味境界を固定したまま、OD085 Golden Masterの表示構造・密度・フッターメニュー契約へ復旧する。今後の変更は、Parent URL / NCL-ID / Diff-ID / Origin / 各派生IDを保持し、原典にない制裁・法的断定・人格評価を追加しない。
+逸脱レッジャを晒し、報復、人格評価、法的違反の独自認定へ変えない。起源保護を理由に批評・検証・研究・教育を抑制しない。記録に必要な個人情報を最小化し、解除後に不要となった情報を残し続けない。
 
-Repository-side synchronization alone is not proof of current live rendering. Pre-merge and post-merge literal fresh-read are required.
+回復意思と訂正の事実が確認された場合、それを掲載時より軽い扱いで隠さない。解除を同じ可視性で公示することが、逸脱レッジャを制裁台帳ではなく構造的免疫系として機能させる条件になる。
+
+## 7面対応
+| surface | public role | identity |
+|---|---|---|
+| README.md | 三層構造・回復フロー・監査・原典回帰 | JA identity |
+| human-entry.md | 第三者人間向けの理解・運用入口 | JA identity |
+| faq.md | Q1〜Q30の三層FAQ | JA identity |
+| ai-index.md | 日本語AI索引 | JA identity |
+| en-ai-index.md | English AI index | EN identity |
+| zh-ai-index.md | 中文AI索引 | ZH identity |
+| derivative-ledger.md | 公開系譜・言語別派生ID・原典回帰 | JA identity + language lineage |
+
+## 必須の区別
+- 逸脱レッジャ / ブラックリスト
+- 事実記録 / 人格評価
+- 確認中 / 確定
+- 訂正 / 免罪符
+- 回復 / 記録抹消の隠蔽
+- 解除 / 掲載より軽い公示
+- 批評・検証 / 起源破壊
+- 研究・教育利用 / 制裁対象
+- 月次メトリクス / 人物信用スコア
+- 構造的免疫系 / 報復装置
+
+## 親原典へ戻る理由
+
+掲載判断、確認中の扱い、反証・訂正、回復・解除、個人情報最小化、月次メトリクス、A/B/C層の境界、C層の自己訂正・再署名は相互に接続した運転仕様である。厳密な条件と記録形式はParent URLへ戻って確認する。
 
 ---
 
