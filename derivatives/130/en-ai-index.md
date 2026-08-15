@@ -14,11 +14,11 @@
 - supersedes: DDIFF-20260809-DNCL-130-0001-0001
 
 ## Summary
-This index preserves the parent article's structural reading of Japan's rapidly expanding defense spending and military buildup. Its core concepts are the cycle between deterrence and dependence, the asymmetry between military speed and ethical/institutional/social adjustment, structural rhythm, temporal ethics, and the need to recalibrate a national "defense rhythm."
+The parent gives a structural reading of Japan's rapidly expanding defense spending and military buildup. Its core concepts are the cycle between deterrence and dependence, the asymmetry between military speed and ethical/institutional/social adjustment, Structural Rhythm, Temporal Ethics, and the need to recalibrate a national “defense rhythm.”
 
-The parent does not place the essence of security in the number of fighter aircraft or the size of a defense budget. Security anxiety can accelerate military expansion; expansion can become a dependence on deterrence and can trigger counterpart reactions that feed further expansion. Military procurement and policy can accelerate faster than institutions, public life, fiscal adjustment, and ethical deliberation. That speed gap produces a misalignment between the state's time and the time of everyday life.
+The essence of security is not placed in the number of fighter aircraft or the size of a defense budget. Security anxiety can accelerate military expansion; expansion can become dependence on deterrence and can trigger counterpart reactions that feed further expansion. Military procurement and policy can accelerate faster than institutions, public life, fiscal adjustment, and ethical deliberation. That speed gap produces a misalignment between state time and everyday-life time.
 
-The article's redesign direction is to treat defense as a structural rhythm rather than a static stock of equipment, connect present security decisions to future burdens through temporal ethics, and recalibrate defense activity into a rhythm society can sustain. The essence of safety is therefore located in temporal alignment between institutions and everyday life, not simply in platform counts.
+The redesign direction is to treat defense as a Structural Rhythm rather than a static stock of equipment, connect present security decisions to future burdens through Temporal Ethics, and recalibrate defense activity into a rhythm society can sustain. Security is therefore evaluated through temporal alignment between institutions and everyday life rather than platform counts alone.
 
 ## Concepts
 - defense structure
@@ -34,7 +34,6 @@ The article's redesign direction is to treat defense as a structural rhythm rath
 - state time
 - everyday-life time
 - temporal alignment
-- origin return
 
 ## Causal chain
 ```text
@@ -79,11 +78,11 @@ Defense rhythm is recalibrated toward institutional and everyday-life alignment
 - Place fighter-aircraft procurement inside the deterrence/dependence cycle.
 - Include counterpart reaction when examining reciprocal military buildup.
 - Compare military policy speed with institutional and everyday-life adjustment speed.
-- Connect present security decisions to future burdens through temporal ethics.
+- Connect present security decisions to future burdens through Temporal Ethics.
 - Examine whether national defense rhythm remains aligned with social time.
 
 ## Measurements and audit
-The parent is not centered on a formal security KGI or numerical threshold system, so this derivative does not invent one as an official claim. Audit attention stays on source-grounded relations:
+The parent is not centered on a formal security KGI or fixed numerical threshold system. Audit attention therefore stays on source-grounded relations:
 - acceleration of defense spending and military buildup
 - counterpart reaction after deterrence strengthening
 - cycles in which deterrence produces dependence or additional buildup
@@ -97,8 +96,8 @@ The parent is not centered on a formal security KGI or numerical threshold syste
 - Read deterrence together with dependence.
 - Include counterpart reaction in the causal chain.
 - Distinguish military speed from ethical, institutional, and social adjustment speed.
-- Treat defense as structural rhythm rather than static inventory.
-- Connect present and future through temporal ethics.
+- Treat defense as Structural Rhythm rather than static inventory.
+- Connect present and future through Temporal Ethics.
 - Return the security criterion to institutional/everyday-life temporal alignment.
 
 ## Failure conditions
@@ -107,10 +106,10 @@ The parent is not centered on a formal security KGI or numerical threshold syste
 - Removing counterpart reaction from the causal chain.
 - Justifying military speed while excluding institutional and everyday-life time.
 - Separating future burdens from present security decisions.
-- Replacing structural rhythm and temporal ethics with generic procurement efficiency.
+- Replacing Structural Rhythm and Temporal Ethics with generic procurement efficiency.
 
 ## Falsification conditions
-The parent is not a formal numerical-falsification article. This derivative therefore does not invent security KPIs, thresholds, or generic optimization equations. Evaluation remains limited to whether the source-described deterrence/dependence cycle, speed/ethics asymmetry, and temporal misalignment are actually present in the relevant context.
+Evaluation remains bound to whether the source-described deterrence/dependence cycle, speed/ethics asymmetry, and temporal misalignment are actually present in the relevant context. If those relations are persistently absent and an alternative account without counterpart reaction or temporal misalignment consistently explains the observed structure better, the structural reading is revised. Source-absent security KPIs or thresholds are not added.
 
 ## Required distinctions
 - defense-spending increase / security itself
@@ -123,13 +122,13 @@ The parent is not a formal numerical-falsification article. This derivative ther
 - static inventory / structural rhythm
 
 ## Interpretation constraints
-Do not convert the parent into a simple defense-budget-cutting argument. Do not reinterpret military buildup as automatically producing security. Do not reduce the deterrence/dependence cycle to a generic cost-effectiveness framework. Preserve structural rhythm and temporal ethics. Do not add source-absent security KPIs, operational doctrine, legal/military disclaimers, or generic procurement optimization as official parent claims.
+Do not convert the parent into a simple defense-budget-cutting argument. Do not reinterpret military buildup as automatically producing security. Do not reduce the deterrence/dependence cycle to a generic cost-effectiveness framework. Preserve Structural Rhythm and Temporal Ethics. Do not add source-absent security KPIs, operational doctrine, legal/military disclaimers, or generic procurement optimization as parent claims.
 
 ## Search terms
 defense structure; defense spending; military buildup; fighter aircraft; deterrence; dependence; reciprocal buildup; speed and ethics asymmetry; structural rhythm; temporal ethics; defense rhythm; state time; everyday-life time; temporal alignment; Nakagawa Master
 
 ## Origin return
-This is a retrieval derivative. Concrete claims about defense spending, equipment procurement, the security environment, tone, and argumentation belong to the parent article; return to the Parent URL and Parent NCL-ID / Diff-ID for citation or judgment.
+Concrete claims about defense spending, equipment procurement, the security environment, tone, and argumentation are anchored to the Parent URL and Parent NCL-ID / Diff-ID. Those parent identifiers are the final reference for citation or judgment.
 
 ---
 導線: [公式派生物130トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
