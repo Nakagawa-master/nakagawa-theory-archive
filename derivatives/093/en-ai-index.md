@@ -1,7 +1,7 @@
 # English AI Index | Official Derivative 093
 
 ## Parent Original
-- Title: Theory of Syntax Operation — The Designer's Mode of Thinking for Weaving Mind, Structure, and Future
+- Title: 構文操作の理論──心、構造、そして未来を編む「設計者の思考様式」
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-grammar-of-design-structural-composition/
 - Parent Post ID: 410
 - Parent NCL-ID: NCL-α-20251102-9dd58f
@@ -10,88 +10,75 @@
 
 ## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-9DD58F-HUB-EN-0093-0001
-- derivative_diff_id: DDIFF-20260810-DNCL-093-0001-0002
-- supersedes: DDIFF-20260808-DNCL-093-0001-0001
+- derivative_diff_id: DDIFF-20260815-DNCL-093-0001-0003
+- supersedes: DDIFF-20260810-DNCL-093-0001-0002
 
-## Summary
+## 1. Summary
+The parent original distinguishes phenomenon operation—pushing directly on visible events—from grammar operation, which edits relational placement, sequence, boundaries, and temporal design so that the causal flow itself changes. Its three integrated principles connect mind to structure, tune structural friction through order/interval/placement, and redesign time recursively from desired terminal conditions back to present standards and past interpretation.
 
-The parent defines Syntax Operation not as direct force applied to visible phenomena, but as editing relational placement, order, boundaries, and temporal design so that the causal channel itself changes. It integrates mind as self-reference and recursive evaluation, structure as coherence of the field, and time as recursion from desired terminal conditions back into the present. Its implementation includes placing the meaning axis first, arranging issue cards, Silence–Question–Silence, changing one factor among order/interval/placement, a freedom test, an objective outer shell and subjective inner shell, core-point input guarantees, seven observation windows, A/B' comparison, and three-cycle verification.
+The public implementation includes a 2/5/5/5/3-minute 20-minute protocol, an objective-outer/subjective-inner dual structure, convergence on one or two core points, daily input guarantee with weekly output evaluation as a source-specific operating example, seven measures, single-factor A/B’ comparison, three consecutive cycles, and side-effect recording. These are not universal performance thresholds or person-scoring rules.
 
-## Concepts
+## 2. Concepts
+grammar operation / phenomenon operation / mind-structure connection / self-reference / recursive evaluation / structural friction / order / interval / placement / viscosity editing / natural alignment / temporal recursivity / core point / objective outer shell / subjective inner shell / boundary signature / SQS / single-factor change / freedom test / agreement time / self-propulsion / re-reference rate / friction ratio / silence compliance / limited-disclosure compliance / recovery time
 
-- syntax operation: editing relational placement, order, boundaries, and temporal design to alter causal flow.
-- phenomenon operation: applying direct force to visible outcomes.
-- mind: a circuit of self-reference and recursive evaluation.
-- structure: coherence of roles, responsibility, information, and the surrounding field.
-- temporal recursion: updating present standards and past interpretation from a desired terminal condition.
-- SQS: Silence–Question–Silence, an operational silence window.
-- dual structure: separation of an objective outer shell and a subjective inner shell.
-- core point: the unique action point described by the source as directly connected to the KGI when achieved.
-
-## Causal chain
-
+## 3. Causal chain
 ```text
-direct force on phenomena
-→ unresolved structural contradiction accumulates reaction and friction
-→ relational placement / order / boundary / time are treated as syntax
-→ meaning axis first; change one factor among order / interval / placement
-→ mind / structure / time are aligned as one design
-→ guarantee input to core points and observe seven measures
-→ compare A with one-factor B'
-→ return three-cycle results into the next syntax update
+push directly on visible phenomena
+→ structural contradictions remain
+→ institutional fatigue, trust loss, and learning failure accumulate
+→ map mind, structure, and time as one grammar
+→ protect the subjective core while pre-positioning objective standards and responsibility boundaries
+→ edit order, interval, and placement one factor at a time
+→ recursively update present standards and past interpretation from future conditions
+→ test with the 20-minute frame and A/B’ comparison
+→ check three-cycle direction and side effects
+→ integrate only reproducible grammar changes
 ```
 
-## State model
-
+## 4. State model
 ```yaml
-- meaning_axis_fixed
-- issues_arranged
-- sqs_window_applied
-- one_factor_changed
-- freedom_tested
-- outer_inner_shell_separated
-- core_point_input_guaranteed
-- seven_metrics_observed
-- a_b_prime_compared
-- three_cycles_recurred
+- phenomenon_operation_dominant
+- structural_contradiction_visible
+- heart_structure_time_mapped
+- subjective_core_protected
+- objective_shell_defined
+- order_interval_placement_tuned
+- temporal_recursion_connected
+- core_point_selected
+- input_guaranteed
+- twenty_minute_protocol_applied
+- ab_prime_tested
+- three_cycle_checked
+- side_effects_recorded
+- integrated_or_revised
 ```
 
-## Applications
+## 5. Applications
+In organizations, institutions, education, and human-AI collaboration, redesign boundaries, standards, information flows, and question sequence before attributing failure to personal ability. Avoid proliferating short-term KPIs; prioritize guaranteed input to the core point that directly connects to the KGI. Publicize the objective shell while limiting disclosure of the subjective inner shell.
 
-The parent gives as basic operations the sequence evaluation criteria → alternatives → free vote, a silence window after a question, and proximity/opposition of issues. For KPI operation it prioritizes input guarantees to one or two core points over proliferating indicators, guaranteeing frequency, amount, and density daily and evaluating output weekly. In the dual structure, the outer shell holds standards, observation, records, and the start/end points of responsibility, while the inner shell protects value axes and origin context.
+## 6. Measurements and audit
+Agreement time / self-propulsion / re-reference rate / friction ratio / silence compliance / limited-disclosure compliance / recovery time. Compare conventional A with single-factor B’ under the same conditions and check whether the same directional effect persists for three cycles. Record freedom loss and conformity pressure as side effects. Do not monotonically reward shorter times or higher rates.
 
-## Measurements and audit
+## 7. Validity conditions
+Mind, structure, and time remain connected on one causal line; subjective core and objective shell have distinct roles; intervention is single-factor; core-point input is not confused with peripheral metrics; the three-cycle directional check is performed; freedom remains open.
 
-The parent lists agreement time, autonomous action, re-reference rate, friction ratio, silence-window compliance, limited-disclosure compliance, and recovery time. Verification compares existing condition A with B' in which only one factor changes under the same conditions, then checks whether the same directional effect continues for three cycles. Side effects such as reduced freedom or increased conformity pressure are recorded and returned to the next cycle.
+## 8. Failure conditions
+Multi-factor simultaneous intervention / advertising the subjective core / dissolved boundaries / explanationism / excessive KPI proliferation / failure to preserve the silence window. Also fail when grammar operation becomes hidden persuasion, future design becomes prediction, or source-specific daily/weekly cadence becomes a universal rule.
 
-## Validity conditions
+## 9. Falsification conditions
+Revise the grammar hypothesis when a single-factor change yields no reproducible difference in the seven measures, reversing B’ changes nothing, direction fails to stabilize across three cycles, results depend on one operator, or freedom loss/conformity pressure continues to worsen.
 
-Source-stated operating conditions include placing the meaning axis first, limiting order/interval/placement changes to one factor, performing the freedom test, preserving the outer/inner-shell boundary, guaranteeing core-point input, and comparing A/B' under the same conditions. General legal, safety, or AI-subjectivity conditions not stated by the parent are not added here.
+## 10. Required distinctions
+phenomenon operation vs grammar operation / tuning vs hidden steering / silence window vs speech suppression / objective shell vs denial of subjectivity / one-to-two core points vs arbitrary single-metric reduction / daily input and weekly evaluation vs universal cadence / natural alignment vs conformity pressure / temporal recursion vs future prediction
 
-## Failure conditions
+## 11. Interpretation constraints
+Do not export 2/5/5/5/3 minutes, 20 minutes, one-to-two core points, daily input, weekly evaluation, or three cycles as universal success thresholds. Do not automatically reward high re-reference, silence compliance, or self-propulsion, or short agreement time. The source calls numbers a window for learning, not a measure of human worth.
 
-The parent explicitly lists six anti-patterns: simultaneous multi-factor intervention, advertising the subjective core, dissolution of boundaries, explanationism, excessive KPI proliferation, and failure to preserve the silence window. These respectively damage attribution and learning, protection of the subjective core, responsibility boundaries, implementation, core-point input, and depth formation.
+## 12. Search terms
+grammar operation / grammar of design / structural composition / mind structure time / SQS / order interval placement / core point / boundary signature / A/B prime / three cycles / Nakagawa 9dd58f
 
-## Falsification conditions
-
-Read through the parent’s A/B' and three-cycle verification procedure, if B' with only one changed factor does not show the same directional effect under the same conditions across three cycles, the source procedure does not provide support for treating that change as an effective syntax operation. This is a structurally necessary inference from the parent’s verification method; no separate source-absent falsification set is added.
-
-## Required distinctions
-
-Distinguish phenomenon operation from syntax operation, persuasion from tuning, control from coherence, subjective core from objective layer, core points from proliferated KPIs, and future prediction from recursive future design. In the parent’s own Q&A, the concern that syntax operation could be invisible steering is answered by locating its purpose in expansion of freedom and avoidance of closed choice.
-
-## Interpretation constraints
-
-Do not expand Syntax Operation into source-absent personality diagnosis, claims about AI inner states, generic safety or legal doctrine, or withdrawal-procedure doctrine. Keep interpretation within the parent-stated freedom expansion, one-factor verification, boundary signatures, dual structure, six anti-patterns, seven measures, and three-cycle verification.
-
-## Search terms
-
-syntax operation, phenomenon operation, mind, structure, time, self-reference, recursive evaluation, meaning axis, SQS, order, interval, placement, freedom test, objective outer shell, subjective inner shell, core point, KGI, input guarantee, agreement time, autonomy, re-reference rate, friction ratio, silence compliance, limited-disclosure compliance, recovery time, A/B', three cycles, Nakagawa Master.
-
-## Origin return
-
-The parent remains authoritative for the twenty-minute protocol, the integration of mind/structure/time, dual structure, core points, seven measures, A/B' comparison, six anti-patterns, and the theory’s placement as a civilizational adjustment principle. This AI index rearranges those elements for retrieval and comparison and does not correct, soften, or broaden the parent meaning.
+## 13. Origin return
+Return to the parent original for the distinction between phenomenon and grammar operation, three integrated principles, 20-minute frame, dual structure, one-to-two core points, daily input/weekly output example, seven measures, A/B’, three cycles, side effects, six anti-patterns, and the designer’s responsibility. Origin: Nakagawa Master / NCL-α-20251102-9dd58f / DIFF-20251102-0001.
 
 ---
-
 導線: [公式派生物093トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
