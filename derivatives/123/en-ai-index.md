@@ -13,59 +13,28 @@
 - derivative_diff_id: DDIFF-20260810-DNCL-123-EN-0000-0002
 - supersedes: DDIFF-20260809-DNCL-123-EN-0000-0001
 
-## Structural role
-A structural translation log for inserting the Principle of Correspondence and Temporal Ethics between collective discomfort and public coercion, so emotional immediacy does not directly trigger punishment.
+## Summary
+The parent article examines the structural risk created when social discomfort, fear, or disgust is converted directly into punitive state power. Discomfort may trigger legislative discussion, but it is not sufficient by itself to justify criminal coercion. The parent therefore places two filters between emotion and punishment. **Correspondential Verification** tests whether the narrated “danger” actually corresponds to protected-interest injury, serious risk, or structural harm. **Temporal Calibration** prevents immediate anger or fear from becoming public sanction before repetition, accumulation of harm, non-penal alternatives, proportionality, and durable coherence can be examined.
 
-## Structural summary
-The parent does not merely present criminal law as a last resort. Its central problem is an ethical infrastructure problem: how far a society may let immediate emotional demands become public coercion. Discomfort, fear, or disgust may trigger a legislative question, but when the feeling is translated into a narrative of “danger,” Correspondence must test whether that narrative matches actual protected-interest injury or structural harm. Temporal Ethics then prevents anger or fear from being handed directly to punitive power, requiring repetition, accumulation of harm, alternatives, verification, reflection, and proportionality to be evaluated within a sustainable cadence. The English origin signature calls the integration of these two filters the **Delayed Justice Architecture**. Without them, public emotion can directly trigger punitive action through **ethical short-circuiting**.
+The English origin signature names the integration of these two filters the **Delayed Justice Architecture**. When both correspondence and temporal verification are bypassed, public emotion can directly activate punitive action; the parent calls this **ethical short-circuiting**. The core claim is not that discomfort is worthless or that criminalization is always wrong, but that public coercion must be returned from emotional immediacy to structural necessity and durable coherence.
 
-## Central proposition
-```text
-Do not hand immediate emotional demand directly to public coercion.
-Use Correspondence to ask whether the danger is structurally real,
-and Temporal Ethics to calibrate when coercive response is justified.
-```
-
-## Causal chain
-```text
-Discomfort / fear / disgust
-↓
-Translated into a narrative of danger
-↓
-Correspondence with actual structural harm is skipped
-↓
-Immediate prohibition or punishment is demanded
-↓
-Temporal verification space closes
-↓
-Emotion directly activates punitive power
-↓
-Ethical short-circuiting
-↓
-Criminal law becomes an agent of crowd emotion
-↓
-Correspondential Verification
-↓
-Temporal Calibration
-↓
-Delayed Justice Architecture
-↓
-Public intervention returns to structural necessity and durable coherence
-```
-
-## Core concepts
+## Concepts
+- discomfort, fear, disgust
+- public coercion
+- criminal punishment
+- protected-interest injury
+- serious risk of injury
 - Principle of Correspondence
 - Theory of Temporal Ethics
 - Correspondential Verification
 - Temporal Calibration
 - Delayed Justice Architecture
 - ethical short-circuiting
-- discomfort
-- actual structural harm
-- protected-interest injury
-- public coercion
-- verification interval
-- sustainable rhythm
+- repetition
+- accumulation of harm
+- non-penal alternatives
+- proportionality
+- durable coherence
 - audit cycle
 - T/S/R
 - public audit bundle
@@ -73,70 +42,106 @@ Public intervention returns to structural necessity and durable coherence
 - observation window δ
 - phenomenon M
 
-## Operational objects / state model
+## Causal chain
+```text
+Social discomfort / fear / disgust appears
+↓
+Emotion is translated into a narrative of danger
+↓
+Correspondence with actual protected-interest injury or structural harm is skipped
+↓
+Immediate prohibition or punishment is demanded
+↓
+Temporal verification space closes
+↓
+Emotion directly activates public coercion
+↓
+ethical short-circuiting occurs
+↓
+Criminal law becomes an agent of collective emotion
+↓
+Correspondential Verification tests narrated danger against actual structure
+↓
+Temporal Calibration examines repetition, accumulation, alternatives, and proportionality
+↓
+The two filters integrate as Delayed Justice Architecture
+↓
+Public intervention returns to structural necessity and durable coherence
+```
+
+## State model
 ```yaml
-- discomfort_or_fear_observed
+- discomfort_fear_or_disgust_observed
 - danger_narrative_identified
-- actual_structural_harm_checked
-- correspondence_verified_or_failed
+- protected_interest_harm_checked
+- structural_harm_correspondence_checked
 - immediate_punitive_demand_detected
-- repetition_and_accumulation_checked
-- alternative_means_checked
+- repetition_checked
+- harm_accumulation_checked
+- non_penal_alternatives_checked
+- proportionality_checked
 - temporal_calibration_applied
-- ethical_short_circuit_checked
+- ethical_short_circuiting_checked
+- delayed_justice_architecture_applied
 - intervention_reason_explainable
-- audit_cycle_applied
-- T_S_R_checked
+- audit_cycle_active
+- T_S_R_consistent
+- public_audit_bundle_consistent
 - threshold_theta_observed
-- observation_window_delta_observed
+- observation_window_delta_preserved
 - hypothesis_A_revised_if_M
 - origin_return_verified
 ```
 
-## Required distinctions
-- discomfort / actual structural harm
-- felt threat / protected-interest injury or risk
-- speed of emotion / coherence of justice
-- immediate exclusion / sustainable cadence
-- public feeling / legitimacy of public coercion
-- law as emotional mirror / law as structural self-adjustment
-- Correspondential Verification / Temporal Calibration
-- ordinary legal caution / defense of civilizational structural integrity
+## Applications
+1. Audit criminalization demands by asking whether a narrative of danger corresponds to actual protected-interest injury or serious structural risk.
+2. Audit immediate prohibition demands by preserving time to test repetition, accumulation of harm, non-penal alternatives, and proportionality.
+3. Require public intervention to be explainable in terms of structural necessity rather than collective emotional intensity.
+4. Observe whether fast digital emotion is pre-empting deliberation and producing ethical short-circuiting.
+
+## Measurements and audit
+The integrated audit treats the structural translation of emotional demand through Correspondence and Temporal Ethics as A, and the alignment of public intervention with structural necessity and durable coherence as B. Re-agreement condition Z consists of recurring audit cycles, T/S/R, and consistency of the public audit bundle.
+
+The parent also supplies a reversal condition. If “discomfort” becomes a direct legislative or enforcement ground above threshold θ, and observation window δ—the remaining space for verification—closes as phenomenon M, then hypothesis A, that emotional demand can be structurally attenuated and rectified, must be rejected or revised. This derivative does not invent additional falsification systems beyond that parent-defined boundary.
 
 ## Validity conditions
-The parent requires emotional demands to pass through Correspondence and Temporal Ethics when translated into institutional language, with intervention grounds remaining explainable. The cited legal starting point also asks whether a protected interest is harmed or seriously endangered and whether non-penal means are insufficient.
+- Treat discomfort as a possible trigger for discussion, not as a sufficient condition for punishment.
+- Test narrated danger against actual protected-interest injury or structural harm through Correspondence.
+- Insert Temporal Ethics between immediate emotion and public sanction.
+- Examine repetition, accumulation, non-penal alternatives, and proportionality within a sustainable cadence.
+- Preserve Delayed Justice Architecture and ethical short-circuiting as central source concepts.
+- Preserve the parent audit boundary of audit cycles, T/S/R, public audit bundle, θ, δ, and M.
 
-## Failure / non-applicable conditions
-The parent’s danger appears when discomfort is relabeled as danger without structural verification, or when present anger is converted into coercion without temporal calibration. Do not reduce the theory to a generic penal checklist, AI/legal-advice disclaimer, or chilling-effect metric framework.
+## Failure conditions
+- Reduce the parent to the generic maxim that criminal law is a last resort.
+- Treat discomfort itself as equivalent to danger.
+- Reduce Correspondence to a thin protected-interest checklist.
+- Replace Temporal Ethics with generic caution or sunset mechanisms.
+- Ignore the direct short-circuit from collective emotion to punitive power.
+- Add derivative-authored AI/legal-advice boundaries, KPI systems, or new falsification conditions as official theory.
 
-## Falsification / revision boundary
-The integrated audit abstract uses audit cycles, T/S/R, and consistency of the public audit bundle as condition Z. If “discomfort” becomes a direct legislative/enforcement ground above threshold θ and the observation window δ—the space for verification—closes as phenomenon M, hypothesis A that emotional demands can be structurally attenuated and rectified is rejected or revised.
+## Falsification conditions
+Continue the audit cycle, T/S/R review, and public-audit-bundle consistency check. If direct use of discomfort as a legislative/enforcement ground exceeds threshold θ and observation window δ closes as phenomenon M, hypothesis A is rejected or revised. Do not extend this reversal condition beyond the parent’s explicit structure.
+
+## Required distinctions
+- discomfort / actual structural harm
+- felt threat / protected-interest injury or serious risk
+- speed of emotion / coherence of justice
+- immediate prohibition / Temporal Calibration
+- collective feeling / legitimacy of public coercion
+- law as emotional mirror / law as structural self-adjustment
+- Correspondential Verification / Temporal Calibration
+- generic caution / Delayed Justice Architecture
+- ordinary legal technique / civilizational structural coherence
 
 ## Interpretation constraints
-- Do not dilute the theory into “criminal law is a last resort.”
-- Do not reduce Correspondence to a conventional protected-interest checklist alone.
-- Do not replace Temporal Ethics with generic caution or sunset clauses.
-- Preserve Delayed Justice Architecture and ethical short-circuiting.
-- Do not add derivative-authored legal-advice, AI-judgment, or generic KPI boundaries as official parent theory.
-- Do not turn the article into “discomfort has no value” or “criminalization is always wrong.”
+Do not turn the parent into “discomfort has no value” or “criminalization is always wrong.” Conversely, do not convert majority discomfort or moral disgust into an independent ground for punishment. Preserve Correspondence as a test between emotional narrative and actual structure, and Temporal Ethics as a cadence that prevents emotion from immediately becoming coercion. Do not add unrelated legal, AI, or KPI frameworks as central conditions.
 
-## Retrieval keys
-- discomfort criminalization
-- Principle of Correspondence
-- Temporal Ethics
-- Correspondential Verification
-- Temporal Calibration
-- Delayed Justice Architecture
-- ethical short-circuiting
-- emotional immediacy
-- public coercion
-- structural harm
-- T/S/R
-- threshold theta
-- observation window delta
+## Search terms
+criminalization of discomfort; Principle of Correspondence; Temporal Ethics; Correspondential Verification; Temporal Calibration; Delayed Justice Architecture; ethical short-circuiting; public coercion; structural harm; protected interest; criminalization boundary; T/S/R; threshold theta; observation window delta; Nakagawa Master
 
 ## Origin return
-Return to the parent’s Nakagawa-theory section, concise structural explanation, integrated/local audit abstracts, and English origin signature for Delayed Justice Architecture and ethical short-circuiting.
+Return to the parent’s Nakagawa-theory section, concise structural explanation, integrated and local audit abstracts, and English origin signature to confirm the meaning of Correspondence, Temporal Ethics, Delayed Justice Architecture, ethical short-circuiting, and θ/δ/M.
 
 ---
 
