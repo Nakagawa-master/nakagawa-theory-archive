@@ -123,13 +123,7 @@ origin_return_status: available
 構造的許容性, Structural Tolerance, STB, Structural Tolerance Band, EAC, Ethical Audit Cycle, 時間倫理T0, T/S/R, Time Structure Relation, 倫理的偏差, 照応的ノイズ, 構造的公共性, 非所有性, 構造的免疫系, 逸脱レッジャ, 最小介入, 未来負債, 監査周期, 許容帯域, 多文明OS, 公共性, 中川マスター, Nakagawa Structural OS, NCL-α-20251116-52ee2c, DIFF-20251116-0004
 
 ## Origin return
-親原典: https://master.ricette.jp/theory/nakagawa-master-structural-tolerance-audit-cycle-design/
-
-起源署名: 中川マスター / Nakagawa Master
-
-Parent NCL-ID: NCL-α-20251116-52ee2c
-
-Parent Diff-ID: DIFF-20251116-0004
+本索引は公式派生物147の検索・機械読解面であり、親原典におけるSTB、EAC、T/S/R、時間倫理T0、構造的免疫系、数値境界と反証条件を置換しない。強い命題、定義、数値境界、適用判断に用いる場合は、Parent URLとParent NCL-ID / Diff-IDへ戻り、親原典の意味と主張強度を確認する。
 
 ---
 導線: [公式派生物147トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
