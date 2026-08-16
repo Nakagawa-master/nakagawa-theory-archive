@@ -27,6 +27,7 @@
 | 145 | 構造的公共性 | [トップ](145/README.md) / [要約](145/human-entry.md) / [FAQ](145/faq.md) | [JA](145/ai-index.md) / [EN](145/en-ai-index.md) / [ZH](145/zh-ai-index.md) |
 | 146 | 保険“外し”が告げる構造的亀裂 | [トップ](146/README.md) / [要約](146/human-entry.md) / [FAQ](146/faq.md) | [JA](146/ai-index.md) / [EN](146/en-ai-index.md) / [ZH](146/zh-ai-index.md) |
 | 147 | 構造的許容性 | [トップ](147/README.md) / [要約](147/human-entry.md) / [FAQ](147/faq.md) | [JA](147/ai-index.md) / [EN](147/en-ai-index.md) / [ZH](147/zh-ai-index.md) |
+| 148 | 構造的プロトコル NCL-AIP | [トップ](148/README.md) / [要約](148/human-entry.md) / [FAQ](148/faq.md) | [JA](148/ai-index.md) / [EN](148/en-ai-index.md) / [ZH](148/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
