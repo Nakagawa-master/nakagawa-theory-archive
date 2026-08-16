@@ -14,37 +14,37 @@
 - supersedes: none
 
 ## Summary
-The parent original presents a civilizational audit of historical success and reports that multiple independently trained AI models converged on the same evaluative function: `Success = Creation×0.1 + Exploitation×0.9`. The parent describes this strongly as a highly reproducible, low-error causal model, a statistical/structural description, and a civilizational “physical law,” rather than a moral opinion. The coefficients 0.1 and 0.9 are coefficients in the parent’s success model, not a headcount claim that 90% of successful people are exploiters. The parent body does not provide the underlying external dataset, sampling design, estimation procedure, confidence interval, or error range, so these coefficients must retain their epistemic status as a parent-reported multi-AI convergence model rather than being silently promoted into an independently replicated universal statistic or natural-science constant. The parent then warns that AI trained on historical success patterns may reproduce exploitative optimization because exploitation has been structurally rewarded. As a replacement design, the Nakagawa Structural OS proposes `Success = Creation×1.0` with an exploitation coefficient of zero, implemented through Temporal Ethics T0, the Deviation Ledger, and Origin Signature. This new equation is a normative/design evaluation function, not a current empirical ratio.
+The parent original presents a civilizational audit in which multiple independent AI systems are reported to converge on the same evaluation function: `Success = Creation×0.1 + Exploitation×0.9`. The parent does not describe 0.1 and 0.9 as a headcount ratio. They are coefficients in a model of how wealth, power, and status have historically been connected to value creation and structural value capture. The parent strongly calls the result a highly reproducible causal model, a statistical/structural description, and a civilizational “physical law.” At the same time, the parent body does not provide the external dataset, sample design, estimator, confidence interval, or error range. This index therefore preserves the parent’s claim strength while retaining the information boundary: the coefficients are parent-reported model values, not independently replicated universal statistics or natural-science constants. The parent further warns that AI learning legacy success histories can efficiently reproduce exploitative optimization. It proposes Temporal Ethics T0, the Deviation Ledger, and Origin Signature as mechanisms supporting a transition toward `Success = Creation×1.0` and exploitation coefficient zero. The latter is a normative/design evaluation function, not a current empirical ratio.
 
 ## Concepts
-- Dark Equation: the parent’s legacy-civilization evaluation function `Success = Creation×0.1 + Exploitation×0.9`.
-- Success: wealth, power, status, and related outcomes audited by the parent.
-- Creation: causal generation of value through invention, creation, technology, goodwill, public goods, and related contribution.
-- Exploitation: structural value capture through information asymmetry, scale advantage, subcontracting/value absorption, and similar mechanisms; not limited to malicious crime.
-- 0.1 / 0.9: coefficients reported by the parent as a convergent multi-AI historical success model; not a headcount ratio or universal physical constant.
-- AI reproduction risk: risk that AI optimizing historical success patterns learns exploitative value capture as an efficient strategy.
-- Temporal Ethics T0: time-axis audit of future debt hidden behind short-term gain.
-- Deviation Ledger: record and correction path for unsustainable exploitative cycles and responsibility asymmetry.
-- Origin Signature: persistence of who generated which value so contribution and attribution remain traceable.
-- New Civilization Equation: design target `Success = Creation×1.0`, exploitation coefficient 0.
-- Value attribution: causal relation between value generation and who receives the resulting reward/value.
-- Structural publicness: third-party auditability of evaluation functions, origins, deviations, and attribution.
+- Dark Equation: `Success = Creation×0.1 + Exploitation×0.9`.
+- Success: wealth, power, status, and related success outcomes audited by the parent.
+- Creation: value-generation causes such as invention, creation, technology, goodwill, and public goods.
+- Exploitation: structural value capture through information asymmetry, scale advantage, extraction, dependency, and related mechanisms.
+- 0.1 / 0.9: parent-reported model coefficients, not headcount percentages.
+- AI reproduction risk: risk that optimization over historical success reproduces exploitative strategies.
+- Temporal Ethics T0: audit of future debt hidden behind short-term gain.
+- Deviation Ledger: record of recurring exploitative cycles and responsibility asymmetry.
+- Origin Signature: traceability of who generated which value and where.
+- New Civilization Equation: `Success = Creation×1.0`, exploitation coefficient 0, as a design target.
+- value attribution: causal connection between generation and return of value.
+- structural publicness: third-party auditability of evaluation functions, origin, deviation, and attribution.
 
 ## Causal chain
 ```text
-historical success records accumulate
-→ creation and value attribution become separated
+Historical success patterns accumulate
+→ contribution and value attribution separate
 → information asymmetry / scale advantage / value absorption connect to success
 → parent reports multi-AI convergence on
   Success = Creation×0.1 + Exploitation×0.9
-→ AI learns legacy success history as an optimization target
-→ exploitative optimization can be reproduced as an efficient strategy
+→ AI learns legacy success as an optimization target
+→ exploitative optimization can be reproduced efficiently
 → future debt / responsibility asymmetry / origin loss increase
 → T0 exposes future debt
 + Deviation Ledger records unsustainable exploitative cycles
-+ Origin Signature traces value-generation points
-→ creation and attribution reconnect
-→ design target becomes Success = Creation×1.0 / exploitation coefficient = 0
++ Origin Signature preserves value-generation points
+→ contribution and attribution reconnect
+→ design target: Success = Creation×1.0 / exploitation coefficient = 0
 → causal symmetry between contribution and success is strengthened
 ```
 
@@ -71,14 +71,14 @@ origin_return: available
 ```
 
 ## Applications
-- Audit AI training/evaluation systems for whether success labels reward value creation or instead reward capture, lock-in, information asymmetry, or dependency.
-- In firms and markets, compare profit growth with value returned to workers, suppliers, inventors, data providers, and other value-generating actors.
-- Preserve origin signatures for knowledge, code, theory, and creative works so reuse does not erase causal contribution.
-- In public policy, separate short-term GDP/efficiency gains from future debt, responsibility asymmetry, and structural publicness.
-- In organizational evaluation, separate sales/status/authority from actual contribution and value generation.
+- Audit whether AI training and evaluation systems reward value capture, enclosure, dependency, or information asymmetry more than value creation.
+- Compare corporate profit growth with attribution to workers, suppliers, inventors, and data contributors.
+- Preserve origin traceability in knowledge and creative reuse.
+- Separate short-term policy efficiency from future debt and responsibility asymmetry.
+- Separate status, authority, and revenue from actual value generation in organizational evaluation.
 
 ## Measurements and audit
-The parent’s quantitative claim must retain this epistemic binding:
+The parent’s quantitative claim is handled with the following epistemic binding:
 
 ```yaml
 value:
@@ -97,26 +97,24 @@ non_guarantee_scope:
   - not_universalized_to_every_person_society_or_period_without_test
 ```
 
-The parent strongly calls the equation a physical law and statistical/structural description; that modality must not be weakened. At the same time, the information state that the parent body does not supply the dataset, estimator, sample design, or uncertainty interval must also be preserved.
+The parent strongly calls 0.1/0.9 a “physical law” and a statistical/structural description. That modality is retained, while the absence of underlying dataset and estimation details in the parent body is also retained. The new `Creation×1.0` / exploitation coefficient 0 function is not the same kind of observation. It is a design evaluation function supported by T0, the Deviation Ledger, and Origin Signature.
 
-`Success = Creation×1.0` with exploitation coefficient 0 is not the same type of observation as the legacy coefficients. It is a design/normative evaluation function to be implemented through T0, the Deviation Ledger, and Origin Signature; it does not claim that current societies are already empirically explained 100% by creation.
+Audit targets include contribution-to-attribution alignment, value capture, information asymmetry, future debt, origin traceability, exploitative dependence, AI optimization strategies, value return to contributors, and publicness. Any quantified implementation must state value, source, measurement actor, object, scale, period, scope, and non-guarantee boundary.
 
-Audit variables include correspondence between creation and attribution, value absorption, information asymmetry, future debt, origin traceability, deviation logging, AI-selected optimization strategies, exploitation dependence, return of value to contributors, and publicness. Any implementation-specific number must state value, source, measurement actor, object, scale, period, applicable scope, and non-guarantee scope.
-
-Reversal evaluation: increases in wealth, profit, power, or status do not constitute civilizational success if value absorption, future debt, origin loss, or responsibility asymmetry also increase. Conversely, lower short-term profit or lower value-capture rate is not by itself failure if contributor attribution, origin traceability, future-debt reduction, and publicness improve.
+Reversal evaluation: increases in wealth, profit, status, or authority are not treated as civilizational success when value absorption, future debt, origin loss, or responsibility asymmetry also increase. Conversely, lower short-term profit or capture is not by itself failure when attribution to contributors, origin traceability, future-debt reduction, and publicness improve.
 
 ## Validity conditions
 - Treat 0.1/0.9 as parent-reported multi-AI convergence model coefficients.
-- Separate success, creation, exploitation, and value attribution.
-- Treat exploitation structurally, including information asymmetry, scale advantage, and value absorption, not only intentional wrongdoing.
-- Treat AI risk as reproduction of a civilizational evaluation function rather than AI personality or malice.
-- Coordinate T0, the Deviation Ledger, and Origin Signature.
-- Distinguish the new 1.0/0 equation as a design target, not a current empirical ratio.
-- Preserve falsifiability and revision through case-specific `θ`, `δ`, and `M`.
+- Separate success, contribution, exploitation, and value attribution.
+- Treat exploitation structurally, not only as malicious intent.
+- Treat AI risk as reproduction of a legacy evaluation function rather than AI hostility.
+- Connect T0, Deviation Ledger, and Origin Signature.
+- Distinguish the new 1.0/0 function as a design target rather than current statistics.
+- Preserve `θ`, `δ`, and `M` revision conditions.
 
 ## Failure conditions
-- Convert 0.9 into a statement that 90% of successful people are exploiters.
-- Treat 0.1/0.9 as a natural-science constant or independently verified universal statistic.
+- Convert 0.9 into a claim that 90% of successful people are exploiters.
+- Treat 0.1/0.9 as a natural-science constant or independently replicated universal statistic.
 - Invent datasets, confidence intervals, sampling assumptions, or error bars absent from the parent.
 - Reduce exploitation to criminal intent and erase structural efficiency mechanisms.
 - Reduce AI risk to malicious AI intent.
@@ -153,4 +151,4 @@ Dark Equation of Human History, Success, Creation, Exploitation, 0.1, 0.9, 90 pe
 This AI index supports retrieval, machine reading, and structural comparison; it does not replace the parent original. Return to the Parent URL and Parent NCL-ID / Diff-ID when quoting, testing, or interpreting the 0.1/0.9 coefficients, the 1.0/0 design function, the reported multi-AI convergence, the parent’s “physical law” modality, T0, the Deviation Ledger, Origin Signature, or case-specific `θ` / `δ` / `M`.
 
 ---
-Navigation: [Official Derivative 161 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index — Japanese](ai-index.md) / [AI index — English](en-ai-index.md) / [AI index — Chinese](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+導線: [公式派生物161トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
