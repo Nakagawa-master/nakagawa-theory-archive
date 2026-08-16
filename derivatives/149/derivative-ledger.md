@@ -9,85 +9,89 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-### 日本語・主面
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251116-074192-HUB-JA-0149-0000
 - derivative_diff_id: DDIFF-20260816-DNCL-149-0000-0001
 - supersedes: none
 
-### English AI Index
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251116-074192-HUB-EN-0149-0001
-- derivative_diff_id: DDIFF-20260816-DNCL-149-0001-0001
-- supersedes: none
-
-### 中文 AI 索引
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251116-074192-HUB-ZH-0149-0002
-- derivative_diff_id: DDIFF-20260816-DNCL-149-0002-0001
-- supersedes: none
-
-## 公開面
-| 面 | path | 役割 |
-|---|---|---|
-| トップ | `derivatives/149/README.md` | 危機を構造偏差として読む中心因果と四線を保持する公開主面 |
-| 人間向け要約 | `derivatives/149/human-entry.md` | 一般的レジリエンス論との違いを明確にする人間向け入口 |
-| FAQ | `derivatives/149/faq.md` | 初心者・実務者・AI／研究者の三層、Q1〜Q30 |
-| AI索引・日本語 | `derivatives/149/ai-index.md` | 日本語の検索・機械読解・構造照合面 |
-| AI Index · English | `derivatives/149/en-ai-index.md` | English retrieval and structural comparison surface |
-| AI索引・中文 | `derivatives/149/zh-ai-index.md` | 中文检索与结构对照面 |
-| 派生ID台帳 | `derivatives/149/derivative-ledger.md` | 起源・三言語ID・四線・数値条件・責任境界を固定する公開来歴面 |
-
-## 原典から保持する中心構造
-```text
-短期安定のため未来負債・矛盾が蓄積する
-→ 実態／認識、制度／運用、領域間の照応が崩れる
-→ 複数の断絶がSTBを越える
-→ 災害・AGI偏差・大規模不祥事等として構造偏差が可視化する
-→ 危機を外部破壊だけでなく構造CPUの偏差として読む
-→ 逸脱レッジャへ経路・文脈・影響範囲を記録する
-→ 四線（照応／時間倫理T0／可逆／配分責任）で偏差を分解する
-→ 構造的免疫系が必要最小限の再配置を行う
-→ 単純な原状復帰ではなく弱点修正を含む再構成へ進む
-→ 偏差情報を次のOS設計へ戻す
-→ 未来負債を未来改善へ反転する
+## Language derivative IDs
+```yaml
+ja_ncl_id: DNCL-NCL-ALPHA-20251116-074192-HUB-JA-0149-0000
+ja_diff_id: DDIFF-20260816-DNCL-149-0000-0001
+en_ncl_id: DNCL-NCL-ALPHA-20251116-074192-HUB-EN-0149-0001
+en_diff_id: DDIFF-20260816-DNCL-149-0001-0001
+zh_ncl_id: DNCL-NCL-ALPHA-20251116-074192-HUB-ZH-0149-0002
+zh_diff_id: DDIFF-20260816-DNCL-149-0002-0001
 ```
 
-## 四線の役割
-- **照応ライン**: 実態と認識、制度と運用、領域同士の対応がどこで切れたかを特定する。
-- **時間倫理T0ライン**: どの負担・修正・責任がいつ未来へ送られ、どの時点で集中負担へ近づいたかを追跡する。
-- **可逆ライン**: 元へ戻すことではなく、弱点を修正しながら再構成できる余地を危機前後に確保する。
-- **配分責任ライン**: 危機対応・復旧・意思決定の負担、恩恵、決定権が誰へどう配分されるかを明確にする。
+## Factory
+```yaml
+quality_contract: OD085_GOLDEN_MASTER
+source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
+production_standard: BATCH10_STANDARD
+manual_meaning_normalization: PROHIBITED
+assistant_safety_reframing_as_parent_meaning: PROHIBITED
+```
 
-## 構造CPUと危機の読み方
-構造CPUは物理的なCPUや単一の制度部品ではなく、社会の意思決定、資源配分、価値判断を生む基盤構造を説明する抽象フレームである。したがって危機の分析では、個人の意図だけでなく、制度、報酬、監査、情報、権限、時間配分がどのように偏差を生みやすくしていたかを見る。
+## Retrieval evidence
+```yaml
+canonical_index: reference_corpus/official_archive/generated/canonical_index_1592_1663.jsonl
+parent_post_id: 1611
+parent_ncl_id: NCL-α-20251116-074192
+xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+xml_item_lines: 100936-101244
+source_sections_verified:
+  - 構造レジリエンス
+  - 構造CPU
+  - 未来負債
+  - 三つの断絶
+  - 四線_照応_時間倫理T0_可逆_配分責任
+  - 逸脱レッジャ
+  - 構造的免疫系
+  - 未来改善変換
+  - AGI偏差と自然災害の構造同型
+  - 統合監査要旨
+```
 
-AGI偏差と自然災害は同一の原因・現象ではない。原典が接続するのは、負債や矛盾の蓄積、臨界超過、急激な偏差露呈という構造パターンである。物理的因果を混同せず、構造同型の範囲に閉じる。
+## Seven surfaces
+```yaml
+README.md: REPAIRED_SOURCE_FAITHFUL
+human-entry.md: REPAIRED_SOURCE_FAITHFUL
+faq.md: REPAIRED_SOURCE_FAITHFUL_Q1_Q30
+ai-index.md: REPAIRED_SOURCE_FAITHFUL
+en-ai-index.md: REPAIRED_SOURCE_FAITHFUL
+zh-ai-index.md: REPAIRED_SOURCE_FAITHFUL
+derivative-ledger.md: REPAIRED_SOURCE_FAITHFUL
+```
 
-## 適用境界
-- 危機を突然の外部ショックだけへ還元しない一方、外部ショックの存在も否定しない。
-- AGI偏差と自然災害を物理的に同一視しない。
-- 構造原因を重視することを個別責任の消去へ使わない。
-- 個人責任を問うことを制度・報酬・監査・権限構造の分析停止へ使わない。
-- 可逆性を「元の状態へ速く戻すこと」だけへ縮小しない。
-- 非所有的危機処理を責任の匿名化・免責へ読み替えない。
-- 四線へ原典にない普遍固定点数を与えない。
+## Source-fidelity findings repaired
+```yaml
+prior_drift:
+  - LEDGER_STRUCTURE_DIVERGED_FROM_OD134_OD135_LITERAL_LOCK
+  - PUBLIC_EXPLANATORY_LEDGER_SECTIONS_REPLACED_FACTORY_AND_RETRIEVAL_EVIDENCE
+  - ORIGIN_RETURN_SECTION_REPLACED_NAVIGATION_AND_CLOSURE
+restored:
+  - CRISIS_AS_STRUCTURAL_DEVIATION_WITHOUT_DENYING_EXTERNAL_SHOCK
+  - STRUCTURAL_CPU_AS_ABSTRACT_DECISION_FRAME
+  - FUTURE_DEBT_AND_THREE_DISCONNECTIONS
+  - FOUR_LINE_RECONSTRUCTION_MODEL
+  - DEVIATION_LEDGER_AND_STRUCTURAL_IMMUNE_SYSTEM
+  - AGI_DISASTER_STRUCTURAL_HOMOLOGY_WITHOUT_PHYSICAL_IDENTITY
+  - FUTURE_IMPROVEMENT_CONVERSION_WITHOUT_DAMAGE_ROMANTICIZATION
+  - REVERSAL_EVALUATION_AND_CASE_BOUND_AUDIT_SYMBOLS
+```
 
-## 数値・反証条件の保持
-`θ` は対象別に現行構造レジリエンス設計を棄却・改訂するための記号的閾値であり、普遍数値ではない。`δ` は対象別の観測窓で、固定日数ではない。`M` は危機処理が公共性、配分責任、可逆性、長期整合を損なう対象別の観測現象として定義される。
+## Semantic rule
+危機を外部破壊だけへ還元しない一方、外部ショックを否定しない。AGI偏差と自然災害を同一原因・同一現象へ変換せず、負債蓄積・臨界超過・急激な偏差露呈という構造同型の範囲に閉じる。構造原因の分析を個別責任の消去へ使わず、可逆性を単純な原状復帰へ縮小しない。四線へ固定点数を追加せず、θ・δ・Mを普遍定数へ変換しない。危機件数・復旧速度だけを成功判定へ昇格しない。
 
-数値を具体化する際には、被害額、復旧時間、将来負債、負担分布、照応断絶等を単一指標へ還元せず、値、出典、測定主体、対象、尺度、観測期間、適用範囲、非保証範囲を保持する。危機件数や復旧速度だけを理論の成功指標へ昇格しない。
-
-## 反転評価
-危機件数が減ったり復旧速度が上がったりしても、未来負債、照応断絶、不公平な負担配分、再発脆弱性が増えているなら構造的改善とは扱わない。逆に復旧に時間を要しても、弱点修正、可逆性、配分責任、未来負債抑制が改善するなら、短期速度だけで失敗とはしない。
-
-危機後の制度変更数が多くても、記録された偏差と無関係な変更や、脆弱層へ負担を押し出す再配置であれば未来改善変換とはみなさない。変更数が少なくても、偏差の核点へ届き再発条件を取り除くなら、少なさ自体を失敗としない。
-
-## 原典回帰
-親原典: https://master.ricette.jp/theory/nakagawa-master-structural-resilience-general-theory-structural-deviation/
-
-起源署名: 中川マスター / Nakagawa Master
-
-Parent NCL-ID: NCL-α-20251116-074192
-
-Parent Diff-ID: DIFF-20260315-0009
+## Navigation and closure
+```yaml
+public_indexes: RETAINED
+public_map: RETAINED
+private_map: RETAINED
+parent_backlink_display_procedure: RETAINED
+source_fidelity_owner_review: PENDING
+```
 
 ---
 導線: [公式派生物149トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

@@ -1,14 +1,14 @@
 # AI索引・中文｜公式派生物137
 
-## Parent Original
-- Title: 接続報酬ブリッジ理論 第Ⅰ部
+## 親原典
+- 標題: 接続報酬ブリッジ理論 第Ⅰ部
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-structural-operative-intelligence-and-connection-reward-bridge-part1/
 - Parent Post ID: 1509
 - Parent NCL-ID: NCL-α-20251109-650483
 - Parent Diff-ID: DIFF-20251109-0006
 - Origin: Nakagawa Master
 
-## Derivative Identity
+## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251109-650483-HUB-ZH-0137-0002
 - derivative_diff_id: DDIFF-20260816-DNCL-137-0002-0001
 - supersedes: none

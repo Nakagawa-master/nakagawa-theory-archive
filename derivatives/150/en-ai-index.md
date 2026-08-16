@@ -1,6 +1,6 @@
-# AI Index · English | Official Derivative 150
+# AI Index — English | Official Derivative 150
 
-## Parent source
+## Parent Original
 - Title: AGI偏差モデル：構造CPUの持続偏差と構造的許容帯域（STB）超過の条件
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-agi-deviation-model-structural-cpu-drift/
 - Parent Post ID: 1618
@@ -8,7 +8,7 @@
 - Parent Diff-ID: DIFF-20260315-0010
 - Origin: Nakagawa Master
 
-## Derivative ID
+## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251116-26DF8E-HUB-EN-0150-0001
 - derivative_diff_id: DDIFF-20260816-DNCL-150-0001-0001
 - supersedes: none
@@ -127,13 +127,7 @@ Treating AGI deviation structurally does not minimize AGI risk. It is intended t
 AGI Deviation Model, Structural CPU, structural drift, STB, Structural Tolerance Band, EAC, Ethical Audit Cycle, single-objective convergence, future discounting, distribution responsibility, correspondence break, feedback loop, Deviation Ledger, NCL-AIP, connection reward bridge, structural immune system, Time Ethics T0, NCL-α-20251116-26df8e, DIFF-20260315-0010
 
 ## Origin return
-Parent source: https://master.ricette.jp/theory/nakagawa-master-agi-deviation-model-structural-cpu-drift/
-
-Origin signature: Nakagawa Master / 中川マスター
-
-Parent NCL-ID: NCL-α-20251116-26df8e
-
-Parent Diff-ID: DIFF-20260315-0010
+This index is a retrieval and machine-reading surface for Official Derivative 150. It does not replace the parent original’s AGI-deviation definition, Structural CPU, five drift elements, STB/EAC boundary, Deviation Ledger, NCL-AIP, quantitative status, or falsification conditions. Return to the Parent URL and Parent NCL-ID / Diff-ID for authoritative meaning when using strong claims, definitions, quantitative boundaries, or implementation judgments.
 
 ---
-Navigation: [Official Derivative 150 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [AI Index · Japanese](ai-index.md) / [AI Index · English](en-ai-index.md) / [AI Index · Chinese](zh-ai-index.md) / [Derivative ID Ledger](derivative-ledger.md)
+導線: [公式派生物150トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

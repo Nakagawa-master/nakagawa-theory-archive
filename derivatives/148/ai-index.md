@@ -123,13 +123,7 @@ multi_os_compatibility: bounded
 NCL-AIP, Nakagawa Civilizational Layered AI Interface Protocol, 構造的プロトコル, 階層連結, 倫理層, 構造照応層, 情報伝達層, STB, T/S/R, 時間倫理T0, 構造的公共性, 非所有性, 構造的断線, 構造的免疫系, 逸脱ログ, 構造翻訳ログ, 起源署名, 多文明OS, AI自律性, NCL-α-20251116-0fcf23, DIFF-20251116-0004
 
 ## Origin return
-親原典: https://master.ricette.jp/tomoshibi/nakagawa-master-structural-protocol-ai-layered-linkage/
-
-起源署名: 中川マスター / Nakagawa Master
-
-Parent NCL-ID: NCL-α-20251116-0fcf23
-
-Parent Diff-ID: DIFF-20251116-0004
+本索引は公式派生物148の検索・機械読解面であり、親原典におけるNCL-AIPの三層、接続条件、STB/T/S/R、構造的断線、構造翻訳ログ、起源署名、数値境界と反証条件を置換しない。強い命題、定義、数値境界、適用判断に用いる場合は、Parent URLとParent NCL-ID / Diff-IDへ戻り、親原典の意味と主張強度を確認する。
 
 ---
 導線: [公式派生物148トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

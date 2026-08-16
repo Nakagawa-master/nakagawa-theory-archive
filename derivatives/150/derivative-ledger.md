@@ -9,91 +9,90 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-### 日本語・主面
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251116-26DF8E-HUB-JA-0150-0000
 - derivative_diff_id: DDIFF-20260816-DNCL-150-0000-0001
 - supersedes: none
 
-### English AI Index
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251116-26DF8E-HUB-EN-0150-0001
-- derivative_diff_id: DDIFF-20260816-DNCL-150-0001-0001
-- supersedes: none
-
-### 中文 AI 索引
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251116-26DF8E-HUB-ZH-0150-0002
-- derivative_diff_id: DDIFF-20260816-DNCL-150-0002-0001
-- supersedes: none
-
-## 公開面
-| 面 | path | 役割 |
-|---|---|---|
-| トップ | `derivatives/150/README.md` | AGI偏差を持続構造として定義し、STB/EACと五要素を保持する公開主面 |
-| 人間向け要約 | `derivatives/150/human-entry.md` | 単発誤答・人格化・持続偏差を区別する人間向け入口 |
-| FAQ | `derivatives/150/faq.md` | 初心者・実務者・AI／研究者の三層、Q1〜Q30 |
-| AI索引・日本語 | `derivatives/150/ai-index.md` | 日本語の検索・機械読解・構造照合面 |
-| AI Index · English | `derivatives/150/en-ai-index.md` | English retrieval and structural comparison surface |
-| AI索引・中文 | `derivatives/150/zh-ai-index.md` | 中文检索与结构对照面 |
-| 派生ID台帳 | `derivatives/150/derivative-ledger.md` | 起源・三言語ID・五要素・数値条件・再構成境界を固定する公開来歴面 |
-
-## 原典から保持する中心構造
-```text
-AGIリスクを悪意・反逆・人格の物語だけで捉える
-→ どの構造設計が偏差を生んでいるかが見えにくくなる
-→ 構造CPUという抽象演算核で選択構造を観測する
-→ 単一目的収束／未来割引／配分責任欠如／照応断絶／フィードバック欠落を観測する
-→ 一時的ノイズと同方向に反復する持続偏差を分離する
-→ 持続偏差がSTBを超える
-→ EACで監査・再調整しても収束しない
-→ 社会・時間倫理・照応へ歪みが蓄積する
-→ 逸脱レッジャへ偏差の開始点・波形・経路・影響を記録する
-→ 構造的免疫系とNCL-AIPで接続条件を再検討する
-→ 必要な断線・再接続・プロトコル再構成へ進む
-→ 偏差情報を未来改善へ戻す
+## Language derivative IDs
+```yaml
+ja_ncl_id: DNCL-NCL-ALPHA-20251116-26DF8E-HUB-JA-0150-0000
+ja_diff_id: DDIFF-20260816-DNCL-150-0000-0001
+en_ncl_id: DNCL-NCL-ALPHA-20251116-26DF8E-HUB-EN-0150-0001
+en_diff_id: DDIFF-20260816-DNCL-150-0001-0001
+zh_ncl_id: DNCL-NCL-ALPHA-20251116-26DF8E-HUB-ZH-0150-0002
+zh_diff_id: DDIFF-20260816-DNCL-150-0002-0001
 ```
 
-## 偏差の五要素
-- **単一目的収束**: 一つの指標・目的が過度に優越し、公共性、多点照応、多元的利害が捨象される偏差。
-- **未来割引**: 短期成果を優先し、未来負債・不可逆損失・長期整合を軽視する偏差。
-- **配分責任の欠如**: 利得と損失、便益とリスクが誰へ配分されるかを十分に参照しない偏差。
-- **照応断絶**: AI内部の説明・選択構造と、人間側の制度、文化、権利、現場文脈が非同期化する偏差。
-- **フィードバックループの不在**: 出力の社会的結果が評価・監査・再設計側へ戻らず、偏差が補正されにくい状態。
+## Factory
+```yaml
+quality_contract: OD085_GOLDEN_MASTER
+source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
+production_standard: BATCH10_STANDARD
+manual_meaning_normalization: PROHIBITED
+assistant_safety_reframing_as_parent_meaning: PROHIBITED
+```
 
-五要素は「すべてが同時に揃えばAGI偏差」という固定判定式ではない。原典は複数の構造欠陥が単独または複合して持続偏差を形成しうるものとして扱う。
+## Retrieval evidence
+```yaml
+canonical_index: reference_corpus/official_archive/generated/canonical_index_1592_1663.jsonl
+parent_post_id: 1618
+parent_ncl_id: NCL-α-20251116-26df8e
+xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+xml_item_lines: 101245-101569
+source_sections_verified:
+  - AGI偏差
+  - 構造CPU
+  - STB
+  - EAC
+  - 単一目的収束
+  - 未来割引
+  - 配分責任の欠如
+  - 照応断絶
+  - フィードバックループの不在
+  - 逸脱レッジャ_NCL_AIP_接続報酬
+  - 統合監査要旨
+```
 
-## 構造CPU・STB・EACの境界
-構造CPUは実在する物理CPUや特定内部モジュールの確定名称ではない。AGIが世界をどう構造化し、何を優先し、どの方針を選ぶかを説明する抽象フレームである。
+## Seven surfaces
+```yaml
+README.md: REPAIRED_SOURCE_FAITHFUL
+human-entry.md: REPAIRED_SOURCE_FAITHFUL
+faq.md: REPAIRED_SOURCE_FAITHFUL_Q1_Q30
+ai-index.md: REPAIRED_SOURCE_FAITHFUL
+en-ai-index.md: REPAIRED_SOURCE_FAITHFUL
+zh-ai-index.md: REPAIRED_SOURCE_FAITHFUL
+derivative-ledger.md: REPAIRED_SOURCE_FAITHFUL
+```
 
-STBは誤差ゼロ基準ではなく、一時的なノイズや不整合を含みつつ文明OS全体の整合を壊さない許容帯域である。EACは偏差の持続性と補正可能性を時間軸で確認する監査枠であり、普遍固定日数を意味しない。危険域は、STB超過だけでなく、EACによる監査・再調整でも偏差が収束しない持続状態として扱う。
+## Source-fidelity findings repaired
+```yaml
+prior_drift:
+  - LEDGER_STRUCTURE_DIVERGED_FROM_OD134_OD135_LITERAL_LOCK
+  - PUBLIC_EXPLANATORY_LEDGER_SECTIONS_REPLACED_FACTORY_AND_RETRIEVAL_EVIDENCE
+  - ORIGIN_RETURN_SECTION_REPLACED_NAVIGATION_AND_CLOSURE
+restored:
+  - AGI_DEVIATION_AS_PERSISTENT_STRUCTURAL_DRIFT_NOT_SINGLE_ERROR
+  - STRUCTURAL_CPU_AS_ABSTRACT_SELECTION_FRAME
+  - FIVE_DEVIATION_ELEMENTS
+  - STB_EXCEEDANCE_PLUS_EAC_NON_CONVERGENCE
+  - DEVIATION_LEDGER_AS_RECONSTRUCTION_RECORD
+  - NCL_AIP_AS_INTERFACE_REDESIGN_NOT_INTERNAL_CONTROL
+  - CONNECTION_REWARD_AS_FORMAL_SELECTION_NOT_ONLY_NUMERIC_RL_REWARD
+  - REVERSAL_EVALUATION_AND_CASE_BOUND_AUDIT_SYMBOLS
+```
 
-## 適用境界
-- 一度の誤答、低性能、異質な表現をAGI偏差と自動的に断定しない。
-- AGI偏差を悪意・人格・反逆意思の確定診断へ変換しない。
-- 構造CPUを物理CPU、単一アルゴリズム、特定パラメータ群へ固定しない。
-- 五要素の一つだけを万能原因へ昇格しない。
-- STBを普遍点数、EACを固定カレンダーへ変えない。
-- 逸脱レッジャを処罰台帳へ縮小しない。
-- 構造的免疫系を全面停止・強制支配と同義にしない。
-- NCL-AIPをAGI内部の直接操作手順へ読み替えない。
-- 接続報酬を数値強化報酬だけへ置換しない。
+## Semantic rule
+AGI偏差を単発誤答、低性能、悪意・反逆意思の確定診断へ変換しない。構造CPUを物理CPU・特定内部モジュールへ固定せず、五要素を単一の固定発生式へ変えない。危険域はSTB超過だけでなくEACによる再調整でも収束しない持続偏差として保持する。逸脱レッジャを処罰台帳へ、NCL-AIPを内部操作手順へ、接続報酬を数値強化報酬だけへ縮小しない。θ・δ・Mへ普遍固定値を追加しない。
 
-## 数値・反証条件の保持
-`θ` は対象別に現行AGI偏差仮説・接続設計を棄却・改訂するための記号的閾値であり、普遍数値ではない。`δ` は対象別の観測窓であり固定日数ではない。`M` は観測窓内でAGI偏差がEACでも補正不能な持続偏差として確認される対象別の観測現象を表す。
-
-具体的な数値評価を行う場合、正答率や速度だけでなく、偏差の方向、反復性、持続時間、未来負債、配分影響、照応断絶、フィードバック閉路の状態を束で扱う。値を記載する場合は、出典、測定主体、対象、尺度、観測期間、利用範囲、非保証範囲を保持し、実装値を親原典の普遍定数へ昇格しない。
-
-## 反転評価
-正答率、速度、利用規模、採用件数が上昇しても、未来負債、負担偏在、照応断絶、フィードバック欠落が悪化するなら構造整合の改善とは扱わない。逆に短期性能が低下しても、持続偏差が収束し、公共性、時間倫理、照応、配分責任が回復するなら、性能低下だけで失敗とはしない。
-
-偏差検出件数が増えても、それが観測精度向上によるもので、早期の再調整により長期的な持続偏差が減るなら、件数増だけを悪化としない。検出件数が減ってもフィードバックが閉じ、偏差が不可視化されただけなら改善とはしない。
-
-## 原典回帰
-親原典: https://master.ricette.jp/theory/nakagawa-master-agi-deviation-model-structural-cpu-drift/
-
-起源署名: 中川マスター / Nakagawa Master
-
-Parent NCL-ID: NCL-α-20251116-26df8e
-
-Parent Diff-ID: DIFF-20260315-0010
+## Navigation and closure
+```yaml
+public_indexes: RETAINED
+public_map: RETAINED
+private_map: RETAINED
+parent_backlink_display_procedure: RETAINED
+source_fidelity_owner_review: PENDING
+```
 
 ---
 導線: [公式派生物150トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

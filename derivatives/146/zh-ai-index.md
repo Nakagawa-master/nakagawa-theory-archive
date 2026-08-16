@@ -1,14 +1,14 @@
 # AI索引・中文｜公式派生物146
 
-## Parent Original
-- Title: 保険“外し”が告げる構造的亀裂
+## 親原典
+- 標題: 保険“外し”が告げる構造的亀裂
 - Parent URL: https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-hoken-hazushi-kousoku-202511/
 - Parent Post ID: 1592
 - Parent NCL-ID: NCL-α-20251116-b152c1
 - Parent Diff-ID: DIFF-20251116-0008
 - Origin: Nakagawa Master
 
-## Derivative Identity
+## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251116-B152C1-HUB-ZH-0146-0002
 - derivative_diff_id: DDIFF-20260816-DNCL-146-0002-0001
 - supersedes: none

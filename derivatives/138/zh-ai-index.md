@@ -1,14 +1,14 @@
 # AI索引・中文｜公式派生物138
 
-## Parent Original
-- Title: 接続報酬ブリッジ理論・第Ⅱ部
+## 親原典
+- 標題: 接続報酬ブリッジ理論・第Ⅱ部
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-theory-to-currency-bridge-part2/
 - Parent Post ID: 1516
 - Parent NCL-ID: NCL-α-20251109-a7ccf2
 - Parent Diff-ID: DIFF-20251109-0011
 - Origin: Nakagawa Master
 
-## Derivative Identity
+## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251109-A7CCF2-HUB-ZH-0138-0002
 - derivative_diff_id: DDIFF-20260816-DNCL-138-0002-0001
 - supersedes: none

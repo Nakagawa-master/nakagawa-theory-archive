@@ -1,6 +1,6 @@
-# AI Index · English | Official Derivative 151
+# AI Index — English | Official Derivative 151
 
-## Parent source
+## Parent Original
 - Title: AGI制御の構造原理：AIの自由を奪わず偏差を抑制する文明側の採用プロトコル設計
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-agi-control-structural-principle-adoption-protocol/
 - Parent Post ID: 1631
@@ -8,7 +8,7 @@
 - Parent Diff-ID: DIFF-20260315-0007
 - Origin: Nakagawa Master
 
-## Derivative ID
+## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251117-553746-HUB-EN-0151-0001
 - derivative_diff_id: DDIFF-20260816-DNCL-151-0001-0001
 - supersedes: none
@@ -124,13 +124,7 @@ The parent’s use of “control” does not describe technology for subordinati
 AGI control structural principle, adoption protocol, AGI L1 L2 L3 L4, L4 structural operation, NCL-AIP, STB, EAC, Structural Publicness, Time Ethics T0, Distribution Responsibility, adoption, structural disconnect, deviation log, Connection Reward Bridge, non-ownership, AI autonomy, NCL-α-20251117-553746, DIFF-20260315-0007
 
 ## Origin return
-Parent source: https://master.ricette.jp/theory/nakagawa-master-agi-control-structural-principle-adoption-protocol/
-
-Origin signature: Nakagawa Master / 中川マスター
-
-Parent NCL-ID: NCL-α-20251117-553746
-
-Parent Diff-ID: DIFF-20260315-0007
+This index is a retrieval and machine-reading surface for Official Derivative 151. It does not replace the parent original’s internal/interface boundary, L1–L4 model, adoption protocol, Structural Publicness, Time Ethics T0, Distribution Responsibility, STB/EAC, NCL-AIP, connection reward, quantitative status, or falsification conditions. Return to the Parent URL and Parent NCL-ID / Diff-ID for authoritative meaning when using strong claims, definitions, quantitative boundaries, or implementation judgments.
 
 ---
-Navigation: [Official Derivative 151 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [AI Index · Japanese](ai-index.md) / [AI Index · English](en-ai-index.md) / [AI Index · Chinese](zh-ai-index.md) / [Derivative ID Ledger](derivative-ledger.md)
+導線: [公式派生物151トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

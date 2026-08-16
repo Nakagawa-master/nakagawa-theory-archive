@@ -1,14 +1,14 @@
 # AI索引・中文｜公式派生物141
 
-## Parent Original
-- Title: 结构文明OS同步结构论——社会领域的相位整合与时间伦理的周期性
+## 親原典
+- 標題: 结构文明OS同步结构论——社会领域的相位整合与时间伦理的周期性
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-structural-civilization-os-synchronization-theory/
 - Parent Post ID: 1552
 - Parent NCL-ID: NCL-α-20251114-e9e8ca
 - Parent Diff-ID: DIFF-20251114-0010
 - Origin: Nakagawa Master
 
-## Derivative Identity
+## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251114-E9E8CA-HUB-ZH-0141-0002
 - derivative_diff_id: DDIFF-20260816-DNCL-141-0002-0001
 - supersedes: none

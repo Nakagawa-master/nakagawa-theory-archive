@@ -1,6 +1,6 @@
-# AI Index · English | Official Derivative 152
+# AI Index — English | Official Derivative 152
 
-## Parent source
+## Parent Original
 - Title: 自然災害の未来負債モデル：災害は「未来負債の一括徴収」であり、構造偏差の露呈点である
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-natural-disaster-future-debt-model-t0/
 - Parent Post ID: 1638
@@ -8,7 +8,7 @@
 - Parent Diff-ID: DIFF-20260315-0007
 - Origin: Nakagawa Master
 
-## Derivative IDs
+## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251117-6A80D9-HUB-EN-0152-0001
 - derivative_diff_id: DDIFF-20260816-DNCL-152-0001-0001
 - supersedes: none
@@ -126,13 +126,7 @@ Future-improvement conversion does not frame disaster as desirable or necessary.
 natural disaster future debt model, disaster future debt, physical future debt, informational future debt, institutional future debt, temporal ethics T0, T0 beat, temporal compression, correspondence break, STB, Structural Tolerance Band, deviation ledger, future-improvement conversion, disaster recovery, structural resilience, NCL-α-20251117-6a80d9, DIFF-20260315-0007
 
 ## Origin return
-Parent source: https://master.ricette.jp/theory/nakagawa-master-natural-disaster-future-debt-model-t0/
-
-Origin signature: Nakagawa Master / 中川マスター
-
-Parent NCL-ID: NCL-α-20251117-6a80d9
-
-Parent Diff-ID: DIFF-20260315-0007
+This index is a retrieval and machine-reading surface for Official Derivative 152. It does not replace the parent original’s distinction between physical hazard and damage structure, three-layer future-debt model, T0 beat, temporal compression, correspondence break, STB, Deviation Ledger, future-improvement conversion, quantitative status, or falsification conditions. Return to the Parent URL and Parent NCL-ID / Diff-ID for authoritative meaning when using strong claims, definitions, quantitative boundaries, or implementation judgments.
 
 ---
-Navigation: [Official Derivative 152](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI Index · Japanese](ai-index.md) / [AI Index · English](en-ai-index.md) / [AI Index · Chinese](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+導線: [公式派生物152トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

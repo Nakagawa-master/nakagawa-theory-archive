@@ -1,7 +1,7 @@
-# AI索引・中文｜官方派生物148
+# AI索引・中文｜公式派生物148
 
-## 原始来源
-- 标题: 構造的プロトコル：文明OSとAI大規模モデルの階層連結原理（NCL-AIP）
+## 親原典
+- 標題: 構造的プロトコル：文明OSとAI大規模モデルの階層連結原理（NCL-AIP）
 - Parent URL: https://master.ricette.jp/tomoshibi/nakagawa-master-structural-protocol-ai-layered-linkage/
 - Parent Post ID: 1606
 - Parent NCL-ID: NCL-α-20251116-0fcf23
@@ -123,13 +123,7 @@ multi_os_compatibility: bounded
 NCL-AIP, Nakagawa Civilizational Layered AI Interface Protocol, 结构协议, 分层连接, 伦理层, 结构照应层, 信息传输层, STB, T/S/R, 时间伦理T0, 结构公共性, 非所有性, 结构断线, 结构免疫系统, 逸脱日志, 结构翻译日志, 起源签名, 多文明OS, AI自主性, NCL-α-20251116-0fcf23, DIFF-20251116-0004
 
 ## Origin return
-原典: https://master.ricette.jp/tomoshibi/nakagawa-master-structural-protocol-ai-layered-linkage/
-
-起源署名: 中川マスター / Nakagawa Master
-
-Parent NCL-ID: NCL-α-20251116-0fcf23
-
-Parent Diff-ID: DIFF-20251116-0004
+本索引只是公式派生物148的检索与机器阅读面，不替代亲原典对NCL-AIP三层、连接条件、STB/T/S/R、结构断线、结构翻译日志、起源签名、数值边界与反证条件的定义。使用强命题、数值边界或实施判断时，应返回Parent URL并核对Parent NCL-ID / Diff-ID，以亲原典为最终语义依据。
 
 ---
-导航: [官方派生物148首页](README.md) / [人类读者摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物148トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

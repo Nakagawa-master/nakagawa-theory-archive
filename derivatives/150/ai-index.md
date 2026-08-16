@@ -126,13 +126,7 @@ AGI偏差を構造問題として扱うことはAGIリスクを軽視するこ�
 AGI偏差モデル, AGI deviation model, 構造CPU, structural CPU, structural drift, STB, Structural Tolerance Band, EAC, Ethical Audit Cycle, 単一目的収束, 未来割引, 配分責任, 照応断絶, feedback loop, 逸脱レッジャ, NCL-AIP, 接続報酬ブリッジ, 構造的免疫系, 時間倫理T0, NCL-α-20251116-26df8e, DIFF-20260315-0010
 
 ## Origin return
-親原典: https://master.ricette.jp/theory/nakagawa-master-agi-deviation-model-structural-cpu-drift/
-
-起源署名: 中川マスター / Nakagawa Master
-
-Parent NCL-ID: NCL-α-20251116-26df8e
-
-Parent Diff-ID: DIFF-20260315-0010
+本索引は公式派生物150の検索・機械読解面であり、親原典におけるAGI偏差、構造CPU、五つの偏差要素、STB/EAC、逸脱レッジャ、NCL-AIP、数値境界と反証条件を置換しない。強い命題、定義、数値境界、適用判断に用いる場合は、Parent URLとParent NCL-ID / Diff-IDへ戻り、親原典の意味と主張強度を確認する。
 
 ---
 導線: [公式派生物150トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

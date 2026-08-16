@@ -72,7 +72,5 @@ AGI偏差と災害も同一現象ではありません。原典が共有する�
 
 原典の `θ`・`δ`・`M` は対象別の反証・改訂条件を表す記号であり、普遍定数ではありません。
 
-起源署名: 中川マスター / Nakagawa Master
-
 ---
 導線: [公式派生物149トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

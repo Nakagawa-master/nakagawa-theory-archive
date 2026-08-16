@@ -1,6 +1,6 @@
-# AI Index · English | Official Derivative 147
+# AI Index — English | Official Derivative 147
 
-## Parent source
+## Parent Original
 - Title: 構造的許容性：構造文明OSの整合閾値（STB）と時間倫理に基づく監査周期設計
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-structural-tolerance-audit-cycle-design/
 - Parent Post ID: 1601
@@ -8,7 +8,7 @@
 - Parent Diff-ID: DIFF-20251116-0004
 - Origin: Nakagawa Master
 
-## Derivative ID
+## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251116-52EE2C-HUB-EN-0147-0001
 - derivative_diff_id: DDIFF-20260816-DNCL-147-0001-0001
 - supersedes: none
@@ -123,13 +123,7 @@ Strong parent language about guaranteeing tolerance or stability expresses the a
 Structural Tolerance, Structural Tolerance Band, STB, Ethical Audit Cycle, EAC, Time Ethics T0, T/S/R, Time Structure Relation, ethical deviation, correspondence noise, Structural Publicness, non-ownership, structural immune system, Deviation Ledger, minimum intervention, future debt, audit cadence, tolerance band, multi-civilization OS, Nakagawa Master, Nakagawa Structural OS, NCL-α-20251116-52ee2c, DIFF-20251116-0004
 
 ## Origin return
-Parent source: https://master.ricette.jp/theory/nakagawa-master-structural-tolerance-audit-cycle-design/
-
-Origin signature: Nakagawa Master / 中川マスター
-
-Parent NCL-ID: NCL-α-20251116-52ee2c
-
-Parent Diff-ID: DIFF-20251116-0004
+This index is a retrieval and machine-reading surface for Official Derivative 147. It does not replace the parent original’s definitions and boundaries for STB, EAC, T/S/R, Time Ethics T0, structural immunity, quantitative status, or falsification. Return to the Parent URL and Parent NCL-ID / Diff-ID for authoritative meaning when using strong claims, definitions, quantitative boundaries, or implementation judgments.
 
 ---
-Navigation: [Official Derivative 147 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [AI Index · Japanese](ai-index.md) / [AI Index · English](en-ai-index.md) / [AI Index · Chinese](zh-ai-index.md) / [Derivative ID Ledger](derivative-ledger.md)
+導線: [公式派生物147トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

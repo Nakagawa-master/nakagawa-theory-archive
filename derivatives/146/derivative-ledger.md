@@ -23,70 +23,74 @@ zh_ncl_id: DNCL-NCL-ALPHA-20251116-B152C1-HUB-ZH-0146-0002
 zh_diff_id: DDIFF-20260816-DNCL-146-0002-0001
 ```
 
-## 公開7面
+## Factory
 ```yaml
-README.md: JA_SHARED
-human-entry.md: JA_SHARED
-faq.md: JA_SHARED
-ai-index.md: JA_SHARED
-en-ai-index.md: EN_INDEX
-zh-ai-index.md: ZH_INDEX
-derivative-ledger.md: JA_SHARED
+quality_contract: OD085_GOLDEN_MASTER
+source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
+production_standard: BATCH10_STANDARD
+manual_meaning_normalization: PROHIBITED
+assistant_safety_reframing_as_parent_meaning: PROHIBITED
 ```
 
-7面は同じ親原典identityへ接続する。README・human-entry・FAQ・日本語AI索引・ledgerはJA共有派生ID、英語・中国語AI索引は言語別IDを用いる。いずれの面でも、保険適用範囲変更、負担配分、実質アクセス、設計側と運用側の照応ズレ、矛盾消費の反転、構造免疫、構造起源防衛、`θ / δ / M` の未確定モダリティという中心意味を同じ親原典へ回帰させる。
+## Retrieval evidence
+```yaml
+canonical_index: reference_corpus/official_archive/generated/canonical_index_1592_1663.jsonl
+parent_post_id: 1592
+parent_ncl_id: NCL-α-20251116-b152c1
+xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+xml_item_lines: 100081-100247
+source_sections_verified:
+  - 保険外し政策題材
+  - 負担配分と実質アクセス
+  - 設計側と運用側の照応ズレ
+  - 矛盾消費構造論
+  - 構造起源防衛
+  - 構造的亀裂仮説
+  - 医療アクセス格差_自己負担比率_制度信頼
+  - theta_delta_M
+  - 統合監査要旨
+```
 
-## Lineage integrity
-親原典は、引用記事が扱う保険外し政策の評価と、中川理論による構造解釈を接続している。公開系譜では、この二つの証拠階層を混同しない。負担転嫁、格差、混合診療への可能性等の題材を入口としつつ、《矛盾消費構造論》《構造起源防衛》によって制度起源と運用結果の照応を読む部分が親原典固有の理論位置である。
+## Seven surfaces
+```yaml
+README.md: REPAIRED_SOURCE_FAITHFUL
+human-entry.md: REPAIRED_SOURCE_FAITHFUL
+faq.md: REPAIRED_SOURCE_FAITHFUL_Q1_Q30
+ai-index.md: REPAIRED_SOURCE_FAITHFUL
+en-ai-index.md: REPAIRED_SOURCE_FAITHFUL
+zh-ai-index.md: REPAIRED_SOURCE_FAITHFUL
+derivative-ledger.md: REPAIRED_SOURCE_FAITHFUL
+```
 
-保険外化を一律の制度崩壊へ強化せず、同時に原典の「アリの一穴」「免疫の穴」という強い構造警告を一般的な政策注意へ弱めない。連鎖的拡大、実質アクセス、負担、公平性、信頼、長期持続性の観測によって仮説の適用範囲を改訂可能に保つ。
+## Source-fidelity findings repaired
+```yaml
+prior_drift:
+  - LEDGER_STRUCTURE_DIVERGED_FROM_OD134_OD135_LITERAL_LOCK
+  - LINEAGE_BOUNDARY_SECTIONS_REPLACED_FACTORY_AND_RETRIEVAL_EVIDENCE
+  - ORIGIN_RETURN_SECTION_REPLACED_NAVIGATION_AND_CLOSURE
+restored:
+  - SOURCE_ARTICLE_AND_STRUCTURAL_INTERPRETATION_EVIDENCE_BOUNDARY
+  - BURDEN_DISTRIBUTION_AND_EFFECTIVE_ACCESS
+  - DESIGN_OPERATION_CORRESPONDENCE_GAP
+  - CONTRADICTION_CONSUMPTION_REVERSAL
+  - STRUCTURAL_ORIGIN_DEFENSE_WITHOUT_STATUS_QUO_REDUCTION
+  - STRONG_WARNING_WITHOUT_DETERMINISTIC_COLLAPSE_CLAIM
+  - REVERSAL_EVALUATION
+  - CASE_BOUND_THETA_DELTA_M_STATUS
+```
 
-## Semantic lineage
-中心因果は、公共的医療アクセスを支える制度に保険適用範囲の変更が入ることで負担配分が変わり、財力・継続利用条件等による実質アクセス差が生じうること、その結果として設計側の財政・制度保全論理と生活者・医療現場側の負担・アクセスが乖離し、制度起源との照応ズレが拡大しうることにある。
+## Semantic rule
+保険外化を自動的な格差拡大・制度崩壊へ強化せず、同時に親原典の「アリの一穴」「免疫の穴」という構造警告を一般的な政策注意へ弱めない。財政保全と実質医療アクセス、公平性、制度信頼を分離して観測する。引用記事上の評価と中川理論の構造解釈を混同せず、《矛盾消費構造論》《構造起源防衛》を現状維持論へ変えない。θ・δ・Mへ普遍固定値・固定期間・必然条件を追加しない。
 
-制度がその矛盾を吸収できる間は持続可能だが、同方向の変更が連鎖し、アクセス分断や信頼低下が自己修復能力を侵食する場合、矛盾は制度内で消費される対象から制度亀裂の触媒へ反転する。構造起源防衛は現行形を固定するのではなく、公共的医療アクセスという起源目的と実際の結果の再照応を求める。
-
-## Quantitative-status boundary
-親原典の統合監査要旨には医療アクセス格差、自己負担比率、制度への信頼度と、記号的な閾値 `θ`、観測窓 `δ`、現象 `M` が存在する。これらは反証・改訂可能性を持たせるための枠であり、普遍的な具体値は定義されていない。
-
-具体値を運用へ導入する場合、値だけを親原典由来として扱わず、出典、測定主体、測定対象、尺度・定義、観測期間、source modality、使用可能範囲、非保証範囲を一体で保持する。`θ` は対象別閾値、`δ` は対象別観測窓、`M` は仮説再評価を要求する観測事象であり、固定数値・固定期間・必然事象ではない。
-
-## Correspondence boundary
-制度設計側の財政・制度保全と、運用側のアクセス・負担・体感的正義は区別する。財政指標が改善しても実質アクセスや公平性が悪化する場合、単一指標の改善を制度起源との照応改善へ置き換えない。逆に、保険適用変更後もアクセス・公平性・信頼が維持されるなら、構造的亀裂仮説を無条件に維持しない。
-
-引用記事要約にある人物・主体への評価語は、親原典の構造概念と分離する。医師一般、患者一般、制度関係者一般への事実認定へ拡張せず、費用・便益・アクセス・責任がどの主体間でどう移動するかという構造観測へ戻す。
-
-## Validity boundary
-この系列が親原典への忠実な公開系譜として成立するには、少なくとも以下を保つ。
-
-- Parent URL / Post ID / NCL-ID / Diff-ID / Originが全公開面に存在する。
-- JA共有IDとEN/ZH言語IDの対応が一貫する。
-- 保険外しを自動的な制度崩壊へ強化しない。
-- 財政保全と医療アクセス保全を同一視しない。
-- 矛盾消費を矛盾放置の規範へ変えない。
-- 構造起源防衛を現状維持へ変えない。
-- 引用記事と理論解釈の境界を保持する。
-- `θ / δ / M` の具体値を根拠なく固定しない。
-- 反転評価と反証・改訂可能性を保持する。
-
-## Failure boundary
-次の状態は親原典との意味整合を壊す。
-
-- 保険外化が必ず格差拡大・制度崩壊を起こすと断定する。
-- 公費削減を制度全体の成功と同義にする。
-- 形式的な購入可能性を実質アクセスと同義にする。
-- 引用要約上の評価を医療提供者一般へ一般化する。
-- `θ`、`δ`、`M` に普遍固定値・固定期間・必然条件を付与する。
-- 「アリの一穴」を単発変更から全面崩壊へ飛躍する決定論へ変える。
-- 原典の構造警告を一般的な中立政策論へ希薄化する。
-
-## Falsification and revision
-変更後も必要な医療への実質アクセスが維持または改善し、条件別の負担差が継続的なアクセス格差へ接続せず、同方向の保険外化が観測窓で連鎖せず、制度信頼と長期持続性が保たれる場合、構造的亀裂仮説の適用範囲は限定・改訂されるべきである。
-
-反対に、対象別に根拠づけられた指標が閾値 `θ` との関係で悪化し、観測窓 `δ` 内に連鎖的保険外化等の現象 `M` が確認され、制度起源と運用結果の照応が継続的に崩れる場合、現行制度の安定性前提を再評価する根拠が強まる。
-
-## Origin return
-定義、引用記事との境界、主張強度、《矛盾消費構造論》《構造起源防衛》との接続、`θ / δ / M` の認識論的地位の最終確認先は、Parent URL、Post ID 1592、Parent NCL-ID `NCL-α-20251116-b152c1`、Parent Diff-ID `DIFF-20251116-0008`、Origin `Nakagawa Master`である。
+## Navigation and closure
+```yaml
+public_indexes: RETAINED
+public_map: RETAINED
+private_map: RETAINED
+parent_backlink_display_procedure: RETAINED
+source_fidelity_owner_review: PENDING
+```
 
 ---
 導線: [公式派生物146トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

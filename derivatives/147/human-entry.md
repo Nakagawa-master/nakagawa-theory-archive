@@ -76,7 +76,5 @@ T/S/Rに原典が定めていない固定点数を与えない。Tは時間、S�
 
 監査数や介入数が増えたことだけを改善としない。介入が増えて公共性・信頼・長期整合が悪化するなら、原典の目的に照らして反転評価が必要です。
 
-起源署名: 中川マスター / Nakagawa Master
-
 ---
 導線: [公式派生物147トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

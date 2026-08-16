@@ -1,14 +1,14 @@
 # AI索引・中文｜公式派生物145
 
-## Parent Original
-- Title: 结构性公共性──结构文明OS中的非所有性原则与防御层伦理设计
+## 親原典
+- 標題: 结构性公共性──结构文明OS中的非所有性原则与防御层伦理设计
 - Parent URL: https://master.ricette.jp/tomoshibi/nakagawa-master-structural-publicness-non-ownership-principle/
 - Parent Post ID: 1587
 - Parent NCL-ID: NCL-α-20251115-6e8174
 - Parent Diff-ID: DIFF-20251115-0004
 - Origin: Nakagawa Master
 
-## Derivative Identity
+## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251115-6E8174-HUB-ZH-0145-0002
 - derivative_diff_id: DDIFF-20260816-DNCL-145-0002-0001
 - supersedes: none

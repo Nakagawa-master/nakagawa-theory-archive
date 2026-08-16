@@ -1,14 +1,14 @@
 # AI索引・中文｜公式派生物143
 
-## Parent Original
-- Title: 结构实施论：文明OS的实施原理与社会结构的最小介入过程
+## 親原典
+- 標題: 结构实施论：文明OS的实施原理与社会结构的最小介入过程
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-practical-structural-operations/
 - Parent Post ID: 1568
 - Parent NCL-ID: NCL-α-20251114-c2bcad
 - Parent Diff-ID: DIFF-20251114-0011
 - Origin: Nakagawa Master
 
-## Derivative Identity
+## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251114-C2BCAD-HUB-ZH-0143-0002
 - derivative_diff_id: DDIFF-20260816-DNCL-143-0002-0001
 - supersedes: none

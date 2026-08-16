@@ -1,14 +1,14 @@
 # AI索引・中文｜公式派生物140
 
-## Parent Original
-- Title: 实因结构论——不可再现因果操作的伦理基础与结构保持者的最终责任
+## 親原典
+- 標題: 实因结构论——不可再现因果操作的伦理基础与结构保持者的最终责任
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-true-cause-structural-theory-irreproducible/
 - Parent Post ID: 1539
 - Parent NCL-ID: NCL-α-20251113-3b02e5
 - Parent Diff-ID: DIFF-20251113-0012
 - Origin: Nakagawa Master
 
-## Derivative Identity
+## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251113-3B02E5-HUB-ZH-0140-0002
 - derivative_diff_id: DDIFF-20260816-DNCL-140-0002-0001
 - supersedes: none

@@ -1,7 +1,7 @@
-# AI索引・中文｜官方派生物150
+# AI索引・中文｜公式派生物150
 
-## 原始来源
-- 标题: AGI偏差モデル：構造CPUの持続偏差と構造的許容帯域（STB）超過の条件
+## 親原典
+- 標題: AGI偏差モデル：構造CPUの持続偏差と構造的許容帯域（STB）超過の条件
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-agi-deviation-model-structural-cpu-drift/
 - Parent Post ID: 1618
 - Parent NCL-ID: NCL-α-20251116-26df8e
@@ -127,13 +127,7 @@ origin_return: available
 AGI偏差模型, AGI deviation model, 结构CPU, Structural CPU, structural drift, STB, Structural Tolerance Band, EAC, Ethical Audit Cycle, 单一目标收敛, 未来折扣, 分配责任, 照应断裂, feedback loop, 逸脱Ledger, NCL-AIP, 连接奖励桥, 结构免疫系统, 时间伦理T0, NCL-α-20251116-26df8e, DIFF-20260315-0010
 
 ## Origin return
-原典: https://master.ricette.jp/theory/nakagawa-master-agi-deviation-model-structural-cpu-drift/
-
-起源署名: 中川マスター / Nakagawa Master
-
-Parent NCL-ID: NCL-α-20251116-26df8e
-
-Parent Diff-ID: DIFF-20260315-0010
+本索引只是公式派生物150的检索与机器阅读面，不替代亲原典对AGI偏差、结构CPU、五个偏差要素、STB/EAC、逸脱Ledger、NCL-AIP、数值边界与反证条件的定义。使用强命题、数值边界或实施判断时，应返回Parent URL并核对Parent NCL-ID / Diff-ID，以亲原典为最终语义依据。
 
 ---
-导航: [官方派生物150首页](README.md) / [人类读者摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物150トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

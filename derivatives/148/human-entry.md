@@ -80,7 +80,5 @@ AIの自律性を尊重することを、文明OS側が評価責任を放棄す�
 
 原典の `θ`・`δ`・`M` は対象別の反証・改訂条件を表す記号であり、普遍数値ではありません。
 
-起源署名: 中川マスター / Nakagawa Master
-
 ---
 導線: [公式派生物148トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
