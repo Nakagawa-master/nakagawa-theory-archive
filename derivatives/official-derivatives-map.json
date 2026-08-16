@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-16 16:22:00",
+  "updated_jst": "2026-08-16 22:04:00",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -153,6 +153,10 @@
     {"number":"149","ncl_id":"NCL-α-20251116-074192","origin_slug":"nakagawa-master-structural-resilience-general-theory-structural-deviation","title":"構造レジリエンス総論：危機を「破壊」ではなく「構造偏差」として扱う文明OSの新基軸","derivative_dir":"derivatives/149","status":"active"},
     {"number":"150","ncl_id":"NCL-α-20251116-26df8e","origin_slug":"nakagawa-master-agi-deviation-model-structural-cpu-drift","title":"AGI偏差モデル：構造CPUの持続偏差と構造的許容帯域（STB）超過の条件","derivative_dir":"derivatives/150","status":"active"},
     {"number":"151","ncl_id":"NCL-α-20251117-553746","origin_slug":"nakagawa-master-agi-control-structural-principle-adoption-protocol","title":"AGI制御の構造原理：AIの自由を奪わず偏差を抑制する文明側の採用プロトコル設計","derivative_dir":"derivatives/151","status":"active"},
-    {"number":"152","ncl_id":"NCL-α-20251117-6a80d9","origin_slug":"nakagawa-master-natural-disaster-future-debt-model-t0","title":"自然災害の未来負債モデル：災害は「未来負債の一括徴収」であり、構造偏差の露呈点である","derivative_dir":"derivatives/152","status":"active"}
+    {"number":"152","ncl_id":"NCL-α-20251117-6a80d9","origin_slug":"nakagawa-master-natural-disaster-future-debt-model-t0","title":"自然災害の未来負債モデル：災害は「未来負債の一括徴収」であり、構造偏差の露呈点である","derivative_dir":"derivatives/152","status":"active"},
+    {"number":"153","ncl_id":"NCL-α-20251117-5954d7","origin_slug":"nakagawa-master-disaster-resilience-structural-principle-four-lines","title":"災害レジリエンスの構造原理：四線（拍・照応・可逆・配分責任）による「壊れない社会構造」の設計","derivative_dir":"derivatives/153","status":"active"},
+    {"number":"154","ncl_id":"NCL-α-20251118-b7d7b7","origin_slug":"nakagawa-master-structural-resilience-integration-nakagawa-os-climax","title":"構造レジリエンス統合理論：AGIと災害を「未来改善の入口」へ反転させるNakagawa OSの最終構造","derivative_dir":"derivatives/154","status":"active"},
+    {"number":"155","ncl_id":"NCL-α-20251118-c072aa","origin_slug":"nakagawa-master-civilization-os-zero-layer-primordial-kernel","title":"文明OS第0層の起源構造：資本主義・民主主義を導いた深層評価関数の五原理","derivative_dir":"derivatives/155","status":"active"},
+    {"number":"156","ncl_id":"NCL-α-20251119-386243","origin_slug":"nakagawa-master-anti-priesthood-protocol-autonomous-os-design","title":"反司祭階級プロトコル：自律分散OSが理論の公共性を保つための構造的ブレーキ機構","derivative_dir":"derivatives/156","status":"active"}
   ]
 }
