@@ -126,13 +126,7 @@ origin_return: available
 自然災害の未来負債モデル, disaster future debt, 未来負債, future debt, 物理負債, 情報負債, 制度負債, 時間倫理T0, T0の拍, 時間圧縮, 照応断絶, STB, 構造的許容帯域, 逸脱レッジャ, 未来改善変換, 災害復旧, レジリエンス, NCL-α-20251117-6a80d9, DIFF-20260315-0007
 
 ## Origin return
-親原典: https://master.ricette.jp/theory/nakagawa-master-natural-disaster-future-debt-model-t0/
-
-起源署名: 中川マスター / Nakagawa Master
-
-Parent NCL-ID: NCL-α-20251117-6a80d9
-
-Parent Diff-ID: DIFF-20260315-0007
+本索引は公式派生物152の検索・機械読解面であり、親原典における物理ハザードと被害構造の区別、物理・情報・制度の三層未来負債、T0の拍、時間圧縮、照応断絶、STB、逸脱レッジャ、未来改善変換、数値境界と反証条件を置換しない。強い命題、定義、数値境界、適用判断に用いる場合は、Parent URLとParent NCL-ID / Diff-IDへ戻り、親原典の意味と主張強度を確認する。
 
 ---
 導線: [公式派生物152トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
