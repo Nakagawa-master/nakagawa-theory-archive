@@ -15,6 +15,7 @@
 | 133 | 山と人の再照応 | [トップ](133/README.md) / [要約](133/human-entry.md) / [FAQ](133/faq.md) | [JA](133/ai-index.md) / [EN](133/en-ai-index.md) / [ZH](133/zh-ai-index.md) |
 | 134 | 構造文明の臨界 第一部 | [トップ](134/README.md) / [要約](134/human-entry.md) / [FAQ](134/faq.md) | [JA](134/ai-index.md) / [EN](134/en-ai-index.md) / [ZH](134/zh-ai-index.md) |
 | 135 | 構造文明の臨界 第二部 | [トップ](135/README.md) / [要約](135/human-entry.md) / [FAQ](135/faq.md) | [JA](135/ai-index.md) / [EN](135/en-ai-index.md) / [ZH](135/zh-ai-index.md) |
+| 136 | Nakagawa構造OSを実装するAIのためのメタOS設計 | [トップ](136/README.md) / [要約](136/human-entry.md) / [FAQ](136/faq.md) | [JA](136/ai-index.md) / [EN](136/en-ai-index.md) / [ZH](136/zh-ai-index.md) |
 
 ## 原典回帰
 各面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
