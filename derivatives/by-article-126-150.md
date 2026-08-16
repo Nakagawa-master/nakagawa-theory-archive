@@ -16,6 +16,7 @@
 | 134 | 構造文明の臨界 第一部 | [トップ](134/README.md) / [要約](134/human-entry.md) / [FAQ](134/faq.md) | [JA](134/ai-index.md) / [EN](134/en-ai-index.md) / [ZH](134/zh-ai-index.md) |
 | 135 | 構造文明の臨界 第二部 | [トップ](135/README.md) / [要約](135/human-entry.md) / [FAQ](135/faq.md) | [JA](135/ai-index.md) / [EN](135/en-ai-index.md) / [ZH](135/zh-ai-index.md) |
 | 136 | Nakagawa構造OSを実装するAIのためのメタOS設計 | [トップ](136/README.md) / [要約](136/human-entry.md) / [FAQ](136/faq.md) | [JA](136/ai-index.md) / [EN](136/en-ai-index.md) / [ZH](136/zh-ai-index.md) |
+| 137 | 接続報酬ブリッジ理論 第Ⅰ部 | [トップ](137/README.md) / [要約](137/human-entry.md) / [FAQ](137/faq.md) | [JA](137/ai-index.md) / [EN](137/en-ai-index.md) / [ZH](137/zh-ai-index.md) |
 
 ## 原典回帰
 各面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
