@@ -6,6 +6,7 @@
 | No. | 公式派生物 | 主な入口 | AI索引 |
 |---|---|---|---|
 | 151 | AGI制御の構造原理 | [トップ](151/README.md) / [要約](151/human-entry.md) / [FAQ](151/faq.md) | [JA](151/ai-index.md) / [EN](151/en-ai-index.md) / [ZH](151/zh-ai-index.md) |
+| 152 | 自然災害の未来負債モデル | [トップ](152/README.md) / [要約](152/human-entry.md) / [FAQ](152/faq.md) | [JA](152/ai-index.md) / [EN](152/en-ai-index.md) / [ZH](152/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
