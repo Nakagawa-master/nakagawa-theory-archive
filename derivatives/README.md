@@ -24,8 +24,7 @@
 ## 公開範囲
 ```text
 OD001〜OD145
-OD137は既存OD120との重複確認により公開対象から撤回。
-公開中の各ODにつき7面:
+各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
@@ -41,7 +40,7 @@ README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 - [134: 構造文明の臨界 第一部](134/README.md)
 - [135: 構造文明の臨界 第二部](135/README.md)
 - [136: Nakagawa構造OSを実装するAIのためのメタOS設計](136/README.md)
-- 137: 重複撤回（既存[120: 構造操作知性という新しい人間の役割](120/README.md)へ統合）
+- [137: 接続報酬ブリッジ理論 第Ⅰ部](137/README.md)
 - [138: 接続報酬ブリッジ理論・第Ⅱ部](138/README.md)
 - [139: 照応知覚論の原理](139/README.md)
 - [140: 実因構造論](140/README.md)
