@@ -141,12 +141,12 @@ preserved:
 
 ## Navigation and closure
 ```yaml
-public_indexes: UPDATE_REQUIRED_WITH_OD162
-public_map: UPDATE_REQUIRED_WITH_OD162
-private_map: UPDATE_REQUIRED_WITH_OD162_AND_PUBLIC_PRIVATE_IDENTITY
-parent_backlink_display_procedure: REQUIRED
-faq_literal_lock_ci: REQUIRED
-source_fidelity_owner_review: PENDING_UNTIL_FRESH_READ
+public_indexes: UPDATED_THROUGH_OD162
+public_map: UPDATED_THROUGH_OD162
+private_map: UPDATED_THROUGH_OD162_AND_PUBLIC_PRIVATE_IDENTITY
+parent_backlink_display_procedure: INPUT_SYNCED_THROUGH_OD162
+faq_literal_lock_ci: REQUIRED_AND_PENDING_PR_RUN
+source_fidelity_owner_review: FRESH_READ_PENDING
 ```
 
 ---
