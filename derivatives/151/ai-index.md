@@ -1,0 +1,136 @@
+# AI索引・日本語｜公式派生物151
+
+## 親原典
+- タイトル: AGI制御の構造原理：AIの自由を奪わず偏差を抑制する文明側の採用プロトコル設計
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-agi-control-structural-principle-adoption-protocol/
+- Parent Post ID: 1631
+- Parent NCL-ID: NCL-α-20251117-553746
+- Parent Diff-ID: DIFF-20260315-0007
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251117-553746-HUB-JA-0151-0000
+- derivative_diff_id: DDIFF-20260816-DNCL-151-0000-0001
+- supersedes: none
+
+## Summary
+AGI制御の構造原理は、AI内部を書き換えて従属させるのではなく、文明OS側がクエリ、応答評価、採用基準、ログ等のインターフェース領域を設計し、どの出力を公共構造へ採用するかを決める非所有的な採用プロトコルである。AGI能力はL1情報処理、L2文脈理解、L3意思決定補助、L4構造操作に整理され、特にL4では構造変更影響のため慎重な採用設計が必要となる。公共性、時間倫理T0、配分責任を採用条件とし、NCL-AIPでSTB評価・EAC持続性確認・採用／断線へ接続する。接続報酬は数値報酬ではなく、何が長く採用・再利用されるかという文明環境の継続的フィードバックである。
+
+## Concepts
+- 採用プロトコル: 公共構造へ組み込む出力とログ留保する出力を決める文明側条件。
+- 内部領域: AIモデル内部計算・重み・パラメータ空間。
+- インターフェース領域: クエリ形式、応答形式、評価軸、採用基準、ログ構造。
+- L1: 情報処理層。
+- L2: 文脈理解層。
+- L3: 意思決定補助層。
+- L4: 社会制度・市場・情報流通・認知環境等の構造操作層。
+- 構造的公共性: 特定主体への過度な集中を避け、非所有性を保持する採用条件。
+- 時間倫理T0: 短期便益と未来負債・不可逆損失を同じ時間線で扱う条件。
+- 配分責任: リスク・負担・便益の偏在を追う条件。
+- NCL-AIP連鎖: 出力→STB→EAC→採用／断線の接続評価連鎖。
+- 接続報酬ブリッジ: 継続採用・再利用を環境側の構造的インセンティブとして扱う原理。
+
+## Causal chain
+```text
+AGI制御を内部書換え・禁止・固定として扱う
+→ AI自律性・非所有性・公共性と衝突する
+→ 内部領域と文明側インターフェースを分離する
+→ L1〜L4で文明影響の深さを整理する
+→ 特にL4の構造操作影響を重点的に評価する
+→ 公共性／時間倫理T0／配分責任で採用条件を設計する
+→ NCL-AIPで出力をSTB評価へ渡す
+→ EACで同種偏差の持続性を確認する
+→ 許容可能なら公共構造への採用経路を開く
+→ STB超過＋EAC補正不能なら構造へ採用せず逸脱ログへ留保する
+→ 継続採用・再利用が接続報酬として環境フィードバックになる
+→ AIの自律探索と文明OSの構造整合解が長期的に接近する
+```
+
+## State model
+```yaml
+control_domain: internal | interface
+agi_layer: L1 | L2 | L3 | L4
+publicness_status: aligned | concentrated
+future_debt_status: bounded | accumulating
+distribution_responsibility: balanced | skewed
+stb_status: inside | boundary | exceeded
+eac_status: pending | reviewing | correction_failed
+adoption_status: candidate | adopted | logged_not_adopted
+structural_disconnect: false | true
+connection_reward_feedback: weak | consistent
+long_term_structural_alignment: emerging | degraded
+origin_return: available
+```
+この状態表現は検索・比較用であり、L1〜L4の普遍性能等級や固定数値スコアを意味しない。
+
+## Applications
+- 制度・市場へ影響するL4相当AI提案の公共性・未来負債・配分責任監査。
+- L3意思決定支援で同方向の偏りがEACを越えて持続していないかの観測。
+- 公共AIで採用／非採用理由と一次ログを残す透明な採用手続。
+- 非採用出力を罰せず、構造へ組み込まない状態として隔離し再評価する運用。
+- 公共性と長期整合に合う出力を継続的に再利用する環境フィードバック設計。
+- AI内部を変更せず、問い・評価・接続条件を変更するNCL-AIP再構成。
+
+## Measurements and audit
+まず制御対象がAI内部ではなくインターフェース領域に閉じているかを確認する。次に出力がL1〜L4のどの影響深度にあるか、特にL4で制度・市場・情報流通・認知環境へどの程度の構造影響を持つかを見る。採用判定では公共性、時間倫理T0、配分責任、STB内外、EACを越える持続性、採用／非採用理由の追跡可能性、接続報酬の一貫性を束で観測する。
+
+原典の `θ` は対象別に現行採用プロトコルを棄却・改訂する記号的閾値で普遍数値はない。`δ` は対象別観測窓で固定日数ではない。`M` はAGI偏差がSTB/EACを継続的に超過し、採用プロトコルが偏差収束に寄与していない観測現象を指す。具体化時は判定基準、出典、測定主体、測定対象、尺度、利用範囲、非保証範囲を保持する。
+
+反転評価では、採用率・利用量・処理量が増えても未来負債、負担偏在、構造断絶が悪化するなら制御成功とはしない。非採用や一時断線が増えても、それによって持続偏差が収束し公共性・長期整合が回復するなら採用率低下だけで失敗としない。
+
+## Validity conditions
+- 内部支配とインターフェース設計を分離する。
+- AI自律性と文明側採用責任を同時に保持する。
+- L1〜L4を影響深度の便宜的モデルとして扱う。
+- L4を一律排除せず慎重な採用設計対象とする。
+- 公共性・時間倫理T0・配分責任を束で採用条件にする。
+- STB/EACで一時ノイズと持続偏差を分ける。
+- 非採用を罰ではなく接続状態として扱う。
+- 接続報酬を継続採用・再利用の環境フィードバックとして扱う。
+
+## Failure conditions
+- 採用プロトコルをAI内部の重み・パラメータ操作へ変える。
+- L1〜L4を固定内部レイヤや性能ランキングにする。
+- L4出力を自動的に危険・非採用とする。
+- 採用率・利用量の増加を成功そのものとする。
+- 非採用を懲罰・人格否定へ変える。
+- 接続報酬を数値的強化報酬だけに置換する。
+- 公共性だけを見て未来負債・配分責任を落とす。
+- AI自律性を文明側の採用責任放棄へ読み替える。
+
+## Falsification conditions
+対象別指標が `θ` を越える／下回る、または観測窓 `δ` で `M` が確認され、採用プロトコル・NCL-AIP連鎖・接続報酬環境が持続偏差の収束に寄与していない場合、現行AGI制御構造原理を棄却・改訂する。改訂対象は採用条件、接続評価、ログ設計、環境フィードバックを含む。
+
+長期的に採用プロトコルを適用しても公共性・未来負債・配分責任・持続偏差の状態に改善との対応が見られない場合も、条件設定と適用範囲を再検討する。
+
+## Required distinctions
+- 制御 vs. 内部支配
+- AI内部領域 vs. 文明側インターフェース領域
+- L1〜L4影響モデル vs. 固定性能等級
+- L4重点監査 vs. L4一律排除
+- 採用 vs. 正解認定
+- 非採用／断線 vs. 懲罰
+- 接続報酬 vs. 数値強化報酬
+- AI自律性 vs. 文明側責任放棄
+- 採用率上昇 vs. 構造整合改善
+- 対象別 `θ` / `δ` / `M` vs. 普遍定数
+
+## Interpretation constraints
+原典の「制御」はAGIを従属させる技術を意味しない。文明OSが自らの公共構造へ何を採用するかという接続面の責任を一貫して持つことで、AIの自律探索を残したまま長期的な構造均衡を形成するという意味である。
+
+「自動安定化」は自動的な安全保証ではない。STB/EAC、採用／断線、ログ、環境フィードバックが継続的に機能し、反証条件に応じて改訂可能であることが必要となる。
+
+## Search terms
+AGI制御の構造原理, AGI control structural principle, 採用プロトコル, adoption protocol, AGI L1 L2 L3 L4, L4構造操作, NCL-AIP, STB, EAC, 構造的公共性, 時間倫理T0, 配分責任, 採用, 断線, 逸脱ログ, 接続報酬ブリッジ, connection reward, 非所有性, AI自律性, NCL-α-20251117-553746, DIFF-20260315-0007
+
+## Origin return
+親原典: https://master.ricette.jp/theory/nakagawa-master-agi-control-structural-principle-adoption-protocol/
+
+起源署名: 中川マスター / Nakagawa Master
+
+Parent NCL-ID: NCL-α-20251117-553746
+
+Parent Diff-ID: DIFF-20260315-0007
+
+---
+導線: [公式派生物151トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

@@ -1,0 +1,14 @@
+# 公式派生物 記事別一覧｜151〜175
+
+## 位置づけ
+本ページはOD151以降の公開shardである。公式派生物は親原典の代替ではなく、人間とAIを親原典へ戻す公開接続面である。
+
+| No. | 公式派生物 | 主な入口 | AI索引 |
+|---|---|---|---|
+| 151 | AGI制御の構造原理 | [トップ](151/README.md) / [要約](151/human-entry.md) / [FAQ](151/faq.md) | [JA](151/ai-index.md) / [EN](151/en-ai-index.md) / [ZH](151/zh-ai-index.md) |
+
+## 原典回帰
+各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
+
+---
+導線: [公式派生物トップ](README.md) / [記事別126〜150](by-article-126-150.md) / [AI索引151〜175](ai-index-hub-151-175.md) / [カテゴリ151〜175](by-category-151-175.md)
