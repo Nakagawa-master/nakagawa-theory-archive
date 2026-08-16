@@ -98,9 +98,9 @@ restored:
 
 ## Navigation and closure
 ```yaml
-public_indexes: UPDATED_WITH_OD153
-public_map: BACKLOG_REQUIRES_NON_DESTRUCTIVE_FULL_MAP_UPDATE
-private_map: BACKLOG_REQUIRES_PUBLIC_PRIVATE_IDENTITY
+public_indexes: RETAINED
+public_map: RETAINED
+private_map: RETAINED
 parent_backlink_display_procedure: RETAINED
 source_fidelity_owner_review: PENDING
 ```
