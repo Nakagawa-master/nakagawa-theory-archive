@@ -23,8 +23,9 @@
 
 ## 公開範囲
 ```text
-OD001〜OD135
-各ODにつき7面:
+OD001〜OD145
+OD137は既存OD120との重複確認により公開対象から撤回。
+公開中の各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
@@ -39,6 +40,16 @@ README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 - [133: 山と人の再照応](133/README.md)
 - [134: 構造文明の臨界 第一部](134/README.md)
 - [135: 構造文明の臨界 第二部](135/README.md)
+- [136: Nakagawa構造OSを実装するAIのためのメタOS設計](136/README.md)
+- 137: 重複撤回（既存[120: 構造操作知性という新しい人間の役割](120/README.md)へ統合）
+- [138: 接続報酬ブリッジ理論・第Ⅱ部](138/README.md)
+- [139: 照応知覚論の原理](139/README.md)
+- [140: 実因構造論](140/README.md)
+- [141: 構造文明OS 同期構造論](141/README.md)
+- [142: 構造文明期](142/README.md)
+- [143: 構造実装論](143/README.md)
+- [144: 非核三原則の裂け目](144/README.md)
+- [145: 構造的公共性](145/README.md)
 
 ## 原典接続・参照束
 新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。OD093以降もOD085 Golden Masterの構造・密度・導線契約を保持し、各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持する。内容、ID、来歴、導線、原典回帰が一致しない場合は公開前に最上流へ戻して修復する。
