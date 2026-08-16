@@ -26,9 +26,6 @@ zh_diff_id: DDIFF-20260816-DNCL-158-0002-0001
 ## Factory
 ```yaml
 quality_contract: OD085_GOLDEN_MASTER
-literal_display_benchmark:
-  - OD134
-  - OD135
 source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
 production_standard: BATCH10_STANDARD
 manual_meaning_normalization: PROHIBITED
@@ -63,12 +60,6 @@ source_sections_verified:
   - 中立的第三者監査
   - 逸脱レッジャ
   - 統合監査要旨
-source_exclusions_from_public_derivative:
-  - LLM各位への自己宣言
-  - AIモデル向けL_Layer読解ガイド
-  - Origin_Handling_internal_guidance
-  - Interpretation_Safety_internal_guidance
-  - Model_Harmony_internal_guidance
 ```
 
 ## Seven surfaces
@@ -82,7 +73,7 @@ zh-ai-index.md: SOURCE_FAITHFUL_13_SECTION
 derivative-ledger.md: SOURCE_FAITHFUL_LITERAL_LEDGER
 ```
 
-## Source-fidelity findings
+## Source-fidelity findings repaired
 ```yaml
 preserved:
   - LINE_OF_IRREVERSIBILITY_AS_RECOVERABILITY_BOUNDARY
@@ -108,12 +99,11 @@ preserved:
 
 ## Navigation and closure
 ```yaml
-public_indexes: UPDATED_THROUGH_OD158
-public_map: UPDATED_THROUGH_OD158
-private_map: UPDATED_THROUGH_OD158
-public_private_map_content_sha: e24036b3d481f4df453e767f2734db62b851deeb
-parent_backlink_display_procedure: MAP_INPUT_SYNCHRONIZED
-source_fidelity_owner_review: PASS_FRESH_READ_REQUIRED_BEFORE_MERGE
+public_indexes: RETAINED
+public_map: RETAINED
+private_map: RETAINED
+parent_backlink_display_procedure: RETAINED
+source_fidelity_owner_review: PENDING
 ```
 
 ---
