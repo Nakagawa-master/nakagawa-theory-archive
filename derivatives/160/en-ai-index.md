@@ -128,4 +128,4 @@ Structural Wu-Wei, causal attraction, structural density, causal flux, attractor
 This AI index supports retrieval, machine reading, and structural comparison; it does not replace the parent original. Return to the Parent URL and Parent NCL-ID / Diff-ID when deciding the meaning and limits of causal attraction, pressure maturation, STB, phase transition, natural adoption, Phase-β, historical-intellectual correspondences, the epistemic status of the 100°C / 0°C examples, or case-specific `θ` / `δ` / `M`.
 
 ---
-Navigation: [Official Derivative 160 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index — Japanese](ai-index.md) / [AI index — English](en-ai-index.md) / [AI index — Chinese](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+導線: [公式派生物160トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
