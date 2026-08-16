@@ -10,6 +10,7 @@
 | 153 | 災害レジリエンスの構造原理 | [トップ](153/README.md) / [要約](153/human-entry.md) / [FAQ](153/faq.md) | [JA](153/ai-index.md) / [EN](153/en-ai-index.md) / [ZH](153/zh-ai-index.md) |
 | 154 | 構造レジリエンス統合理論 | [トップ](154/README.md) / [要約](154/human-entry.md) / [FAQ](154/faq.md) | [JA](154/ai-index.md) / [EN](154/en-ai-index.md) / [ZH](154/zh-ai-index.md) |
 | 155 | 文明OS第0層の起源構造 | [トップ](155/README.md) / [要約](155/human-entry.md) / [FAQ](155/faq.md) | [JA](155/ai-index.md) / [EN](155/en-ai-index.md) / [ZH](155/zh-ai-index.md) |
+| 156 | 反司祭階級プロトコル | [トップ](156/README.md) / [要約](156/human-entry.md) / [FAQ](156/faq.md) | [JA](156/ai-index.md) / [EN](156/en-ai-index.md) / [ZH](156/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
