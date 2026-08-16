@@ -123,13 +123,7 @@ future_improvement_conversion: pending | active | reflected
 構造レジリエンス, structural resilience, 構造偏差, 構造CPU, 未来負債, AGI偏差, 自然災害, STB, 逸脱レッジャ, 構造的免疫系, 照応ライン, 時間倫理T0, 可逆ライン, 配分責任, 非所有的危機処理, 未来改善変換, NCL-α-20251116-074192, DIFF-20260315-0009
 
 ## Origin return
-親原典: https://master.ricette.jp/theory/nakagawa-master-structural-resilience-general-theory-structural-deviation/
-
-起源署名: 中川マスター / Nakagawa Master
-
-Parent NCL-ID: NCL-α-20251116-074192
-
-Parent Diff-ID: DIFF-20260315-0009
+本索引は公式派生物149の検索・機械読解面であり、親原典における構造レジリエンス、未来負債、構造CPU偏差、四線、逸脱レッジャ、構造的免疫系、数値境界と反証条件を置換しない。強い命題、定義、数値境界、適用判断に用いる場合は、Parent URLとParent NCL-ID / Diff-IDへ戻り、親原典の意味と主張強度を確認する。
 
 ---
 導線: [公式派生物149トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
