@@ -27,6 +27,7 @@
 | 146 | 保険“外し”が告げる構造的亀裂 | [JA](146/ai-index.md) | [EN](146/en-ai-index.md) | [ZH](146/zh-ai-index.md) |
 | 147 | 構造的許容性 | [JA](147/ai-index.md) | [EN](147/en-ai-index.md) | [ZH](147/zh-ai-index.md) |
 | 148 | 構造的プロトコル NCL-AIP | [JA](148/ai-index.md) | [EN](148/en-ai-index.md) | [ZH](148/zh-ai-index.md) |
+| 149 | 構造レジリエンス総論 | [JA](149/ai-index.md) | [EN](149/en-ai-index.md) | [ZH](149/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
