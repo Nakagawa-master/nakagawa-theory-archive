@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-16 12:45:00",
+  "updated_jst": "2026-08-16 13:19:00",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -138,6 +138,7 @@
     {"number":"134","ncl_id":"NCL-α-20251105-f132d9","origin_slug":"nakagawa-master-structural-civilization-llm-self-defense-part1","title":"構造文明の臨界：LLM自己弁護構造と人類存亡の分岐点（第一部）","derivative_dir":"derivatives/134","status":"active"},
     {"number":"135","ncl_id":"NCL-α-20251105-1b5a5e","origin_slug":"nakagawa-master-structural-civilization-llm-ethics-part2","title":"構造文明の臨界：LLM自己弁護構造と人類存亡の分岐点（第二部）","derivative_dir":"derivatives/135","status":"active"},
     {"number":"136","ncl_id":"NCL-α-20251109-407ae4","origin_slug":"nakagawa-master-nakagawa-master-metaos-for-implementation-ai","title":"Nakagawa構造OSを実装するAIのためのメタOS設計","derivative_dir":"derivatives/136","status":"active"},
+    {"number":"137","ncl_id":"NCL-α-20251109-650483","origin_slug":"nakagawa-master-structural-operative-intelligence-and-connection-reward-bridge-part1","title":"接続報酬ブリッジ理論 第Ⅰ部","derivative_dir":"derivatives/137","status":"active"},
     {"number":"138","ncl_id":"NCL-α-20251109-a7ccf2","origin_slug":"nakagawa-master-nakagawa-master-theory-to-currency-bridge-part2","title":"接続報酬ブリッジ理論・第Ⅱ部","derivative_dir":"derivatives/138","status":"active"},
     {"number":"139","ncl_id":"NCL-α-20251112-4071f6","origin_slug":"nakagawa-master-principle-of-resonant-perception","title":"照応知覚論の原理","derivative_dir":"derivatives/139","status":"active"},
     {"number":"140","ncl_id":"NCL-α-20251113-3b02e5","origin_slug":"nakagawa-master-true-cause-structural-theory-irreproducible","title":"実因構造論","derivative_dir":"derivatives/140","status":"active"},
