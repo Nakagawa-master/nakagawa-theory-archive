@@ -1,6 +1,6 @@
 # 公式派生物 AI索引まとめ｜126〜150
 
-各AI索引は親原典の代替ではなく、検索、機械読解、構造照合、誤読防止、原典回帰を支援する。OD137は既存OD120との重複確認により公開対象から撤回されている。
+各AI索引は親原典の代替ではなく、検索、機械読解、構造照合、誤読防止、原典回帰を支援する。
 
 | No. | タイトル | JA | EN | ZH |
 |---|---|---|---|---|
@@ -15,7 +15,7 @@
 | 134 | 構造文明の臨界 第一部 | [JA](134/ai-index.md) | [EN](134/en-ai-index.md) | [ZH](134/zh-ai-index.md) |
 | 135 | 構造文明の臨界 第二部 | [JA](135/ai-index.md) | [EN](135/en-ai-index.md) | [ZH](135/zh-ai-index.md) |
 | 136 | Nakagawa構造OSを実装するAIのためのメタOS設計 | [JA](136/ai-index.md) | [EN](136/en-ai-index.md) | [ZH](136/zh-ai-index.md) |
-| 137 | 重複撤回：構造操作知性 | [OD120 JA](120/ai-index.md) | [EN](120/en-ai-index.md) | [ZH](120/zh-ai-index.md) |
+| 137 | 接続報酬ブリッジ理論 第Ⅰ部 | [JA](137/ai-index.md) | [EN](137/en-ai-index.md) | [ZH](137/zh-ai-index.md) |
 | 138 | 接続報酬ブリッジ理論・第Ⅱ部 | [JA](138/ai-index.md) | [EN](138/en-ai-index.md) | [ZH](138/zh-ai-index.md) |
 | 139 | 照応知覚論の原理 | [JA](139/ai-index.md) | [EN](139/en-ai-index.md) | [ZH](139/zh-ai-index.md) |
 | 140 | 実因構造論 | [JA](140/ai-index.md) | [EN](140/en-ai-index.md) | [ZH](140/zh-ai-index.md) |
@@ -26,7 +26,7 @@
 | 145 | 構造的公共性 | [JA](145/ai-index.md) | [EN](145/en-ai-index.md) | [ZH](145/zh-ai-index.md) |
 
 ## 共通再利用制約
-Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。重複撤回されたOD137の意味境界は既存OD120へ戻って確認する。
+Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
 
 ---
 導線: [公式派生物トップ](README.md) / [AI索引101〜125](ai-index-hub-101-125.md) / [記事別126〜150](by-article-126-150.md) / [カテゴリ126〜150](by-category-126-150.md)
