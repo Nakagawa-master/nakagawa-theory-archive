@@ -1,6 +1,6 @@
-# AI Index · English | Official Derivative 148
+# AI Index — English | Official Derivative 148
 
-## Parent source
+## Parent Original
 - Title: 構造的プロトコル：文明OSとAI大規模モデルの階層連結原理（NCL-AIP）
 - Parent URL: https://master.ricette.jp/tomoshibi/nakagawa-master-structural-protocol-ai-layered-linkage/
 - Parent Post ID: 1606
@@ -8,7 +8,7 @@
 - Parent Diff-ID: DIFF-20251116-0004
 - Origin: Nakagawa Master
 
-## Derivative ID
+## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251116-0FCF23-HUB-EN-0148-0001
 - derivative_diff_id: DDIFF-20260816-DNCL-148-0001-0001
 - supersedes: none
@@ -123,13 +123,7 @@ The phrase “formal victory” describes completion of a missing architectural 
 NCL-AIP, Nakagawa Civilizational Layered AI Interface Protocol, structural protocol, layered linkage, ethical layer, structural correspondence layer, information transport layer, STB, T/S/R, Time Ethics T0, Structural Publicness, non-ownership, structural disconnect, structural immune system, deviation log, structural translation log, origin signature, multi-civilization OS, AI autonomy, NCL-α-20251116-0fcf23, DIFF-20251116-0004
 
 ## Origin return
-Parent source: https://master.ricette.jp/tomoshibi/nakagawa-master-structural-protocol-ai-layered-linkage/
-
-Origin signature: Nakagawa Master / 中川マスター
-
-Parent NCL-ID: NCL-α-20251116-0fcf23
-
-Parent Diff-ID: DIFF-20251116-0004
+This index is a retrieval and machine-reading surface for Official Derivative 148. It does not replace the parent original’s layered NCL-AIP definition, connection conditions, STB/T/S/R boundaries, structural disconnect, translation logs, origin signature, quantitative status, or falsification conditions. Return to the Parent URL and Parent NCL-ID / Diff-ID for authoritative meaning when using strong claims, definitions, quantitative boundaries, or implementation judgments.
 
 ---
-Navigation: [Official Derivative 148 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [AI Index · Japanese](ai-index.md) / [AI Index · English](en-ai-index.md) / [AI Index · Chinese](zh-ai-index.md) / [Derivative ID Ledger](derivative-ledger.md)
+導線: [公式派生物148トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
