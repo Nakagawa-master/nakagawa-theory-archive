@@ -1,14 +1,14 @@
 # AI索引・中文｜公式派生物139
 
-## Parent Original
-- Title: 照应知觉论原理——将语言、影像与结构翻译为“低摩擦可受容形式”的技术
+## 親原典
+- 標題: 照应知觉论原理——将语言、影像与结构翻译为“低摩擦可受容形式”的技术
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-principle-of-resonant-perception/
 - Parent Post ID: 1530
 - Parent NCL-ID: NCL-α-20251112-4071f6
 - Parent Diff-ID: DIFF-20251112-0007
 - Origin: Nakagawa Master
 
-## Derivative Identity
+## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251112-4071F6-HUB-ZH-0139-0002
 - derivative_diff_id: DDIFF-20260816-DNCL-139-0002-0001
 - supersedes: none
