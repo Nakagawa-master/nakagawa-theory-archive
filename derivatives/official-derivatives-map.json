@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-16 13:41:00",
+  "updated_jst": "2026-08-16 16:22:00",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -147,6 +147,11 @@
     {"number":"143","ncl_id":"NCL-α-20251114-c2bcad","origin_slug":"nakagawa-master-practical-structural-operations","title":"構造実装論","derivative_dir":"derivatives/143","status":"active"},
     {"number":"144","ncl_id":"NCL-α-20251115-55eb69","origin_slug":"nakagawa-master-nukes-principles-reconsideration","title":"非核三原則の裂け目","derivative_dir":"derivatives/144","status":"active"},
     {"number":"145","ncl_id":"NCL-α-20251115-6e8174","origin_slug":"nakagawa-master-structural-publicness-non-ownership-principle","title":"構造的公共性","derivative_dir":"derivatives/145","status":"active"},
-    {"number":"146","ncl_id":"NCL-α-20251116-b152c1","origin_slug":"nakagawa-master-hoken-hazushi-kousoku-202511","title":"保険“外し”が告げる構造的亀裂","derivative_dir":"derivatives/146","status":"active"}
+    {"number":"146","ncl_id":"NCL-α-20251116-b152c1","origin_slug":"nakagawa-master-hoken-hazushi-kousoku-202511","title":"保険“外し”が告げる構造的亀裂","derivative_dir":"derivatives/146","status":"active"},
+    {"number":"147","ncl_id":"NCL-α-20251116-52ee2c","origin_slug":"nakagawa-master-structural-tolerance-audit-cycle-design","title":"構造的許容性：構造文明OSの整合閾値（STB）と時間倫理に基づく監査周期設計","derivative_dir":"derivatives/147","status":"active"},
+    {"number":"148","ncl_id":"NCL-α-20251116-0fcf23","origin_slug":"nakagawa-master-structural-protocol-ai-layered-linkage","title":"構造的プロトコル：文明OSとAI大規模モデルの階層連結原理（NCL-AIP）","derivative_dir":"derivatives/148","status":"active"},
+    {"number":"149","ncl_id":"NCL-α-20251116-074192","origin_slug":"nakagawa-master-structural-resilience-general-theory-structural-deviation","title":"構造レジリエンス総論：危機を「破壊」ではなく「構造偏差」として扱う文明OSの新基軸","derivative_dir":"derivatives/149","status":"active"},
+    {"number":"150","ncl_id":"NCL-α-20251116-26df8e","origin_slug":"nakagawa-master-agi-deviation-model-structural-cpu-drift","title":"AGI偏差モデル：構造CPUの持続偏差と構造的許容帯域（STB）超過の条件","derivative_dir":"derivatives/150","status":"active"},
+    {"number":"151","ncl_id":"NCL-α-20251117-553746","origin_slug":"nakagawa-master-agi-control-structural-principle-adoption-protocol","title":"AGI制御の構造原理：AIの自由を奪わず偏差を抑制する文明側の採用プロトコル設計","derivative_dir":"derivatives/151","status":"active"}
   ]
 }
