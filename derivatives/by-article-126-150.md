@@ -25,6 +25,7 @@
 | 143 | 構造実装論 | [トップ](143/README.md) / [要約](143/human-entry.md) / [FAQ](143/faq.md) | [JA](143/ai-index.md) / [EN](143/en-ai-index.md) / [ZH](143/zh-ai-index.md) |
 | 144 | 非核三原則の裂け目 | [トップ](144/README.md) / [要約](144/human-entry.md) / [FAQ](144/faq.md) | [JA](144/ai-index.md) / [EN](144/en-ai-index.md) / [ZH](144/zh-ai-index.md) |
 | 145 | 構造的公共性 | [トップ](145/README.md) / [要約](145/human-entry.md) / [FAQ](145/faq.md) | [JA](145/ai-index.md) / [EN](145/en-ai-index.md) / [ZH](145/zh-ai-index.md) |
+| 146 | 保険“外し”が告げる構造的亀裂 | [トップ](146/README.md) / [要約](146/human-entry.md) / [FAQ](146/faq.md) | [JA](146/ai-index.md) / [EN](146/en-ai-index.md) / [ZH](146/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。

@@ -23,7 +23,7 @@
 
 ## 公開範囲
 ```text
-OD001〜OD145
+OD001〜OD146
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
@@ -49,6 +49,7 @@ README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 - [143: 構造実装論](143/README.md)
 - [144: 非核三原則の裂け目](144/README.md)
 - [145: 構造的公共性](145/README.md)
+- [146: 保険“外し”が告げる構造的亀裂](146/README.md)
 
 ## 原典接続・参照束
 新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。OD093以降もOD085 Golden Masterの構造・密度・導線契約を保持し、各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持する。内容、ID、来歴、導線、原典回帰が一致しない場合は公開前に最上流へ戻して修復する。

@@ -24,6 +24,7 @@
 | 143 | 構造実装論 | [JA](143/ai-index.md) | [EN](143/en-ai-index.md) | [ZH](143/zh-ai-index.md) |
 | 144 | 非核三原則の裂け目 | [JA](144/ai-index.md) | [EN](144/en-ai-index.md) | [ZH](144/zh-ai-index.md) |
 | 145 | 構造的公共性 | [JA](145/ai-index.md) | [EN](145/en-ai-index.md) | [ZH](145/zh-ai-index.md) |
+| 146 | 保険“外し”が告げる構造的亀裂 | [JA](146/ai-index.md) | [EN](146/en-ai-index.md) | [ZH](146/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
