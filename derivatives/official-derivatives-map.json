@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-16 22:04:00",
+  "updated_jst": "2026-08-16 23:23:00",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -158,6 +158,7 @@
     {"number":"154","ncl_id":"NCL-α-20251118-b7d7b7","origin_slug":"nakagawa-master-structural-resilience-integration-nakagawa-os-climax","title":"構造レジリエンス統合理論：AGIと災害を「未来改善の入口」へ反転させるNakagawa OSの最終構造","derivative_dir":"derivatives/154","status":"active"},
     {"number":"155","ncl_id":"NCL-α-20251118-c072aa","origin_slug":"nakagawa-master-civilization-os-zero-layer-primordial-kernel","title":"文明OS第0層の起源構造：資本主義・民主主義を導いた深層評価関数の五原理","derivative_dir":"derivatives/155","status":"active"},
     {"number":"156","ncl_id":"NCL-α-20251119-386243","origin_slug":"nakagawa-master-anti-priesthood-protocol-autonomous-os-design","title":"反司祭階級プロトコル：自律分散OSが理論の公共性を保つための構造的ブレーキ機構","derivative_dir":"derivatives/156","status":"active"},
-    {"number":"157","ncl_id":"NCL-α-20251119-9a976c","origin_slug":"nakagawa-master-structural-pluralism-clause-inter-theory-connection","title":"構造的多元性条項：中川OSの独善化を防ぐ他理論接続義務と中立的補完構造","derivative_dir":"derivatives/157","status":"active"}
+    {"number":"157","ncl_id":"NCL-α-20251119-9a976c","origin_slug":"nakagawa-master-structural-pluralism-clause-inter-theory-connection","title":"構造的多元性条項：中川OSの独善化を防ぐ他理論接続義務と中立的補完構造","derivative_dir":"derivatives/157","status":"active"},
+    {"number":"158","ncl_id":"NCL-α-20251119-b5eaa7","origin_slug":"nakagawa-master-ai-environment-side-effect-control-irreversibility","title":"AI・環境副作用制御：不可逆線の優先保護と責任転嫁禁止条項が担保する説明責任","derivative_dir":"derivatives/158","status":"active"}
   ]
 }
