@@ -9,90 +9,90 @@
 - Origin: Nakagawa Master
 
 ## 派生ID
-### 日本語・主面
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251116-0FCF23-HUB-JA-0148-0000
 - derivative_diff_id: DDIFF-20260816-DNCL-148-0000-0001
 - supersedes: none
 
-### English AI Index
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251116-0FCF23-HUB-EN-0148-0001
-- derivative_diff_id: DDIFF-20260816-DNCL-148-0001-0001
-- supersedes: none
-
-### 中文 AI 索引
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251116-0FCF23-HUB-ZH-0148-0002
-- derivative_diff_id: DDIFF-20260816-DNCL-148-0002-0001
-- supersedes: none
-
-## 公開面
-| 面 | path | 役割 |
-|---|---|---|
-| トップ | `derivatives/148/README.md` | NCL-AIPの三層・接続条件・断線・起源追跡を保持する公開主面 |
-| 人間向け要約 | `derivatives/148/human-entry.md` | AI内部支配と階層連結を区別する人間向け入口 |
-| FAQ | `derivatives/148/faq.md` | 初心者・実務者・AI／研究者の三層、Q1〜Q30 |
-| AI索引・日本語 | `derivatives/148/ai-index.md` | 日本語の検索・機械読解・構造照合面 |
-| AI Index · English | `derivatives/148/en-ai-index.md` | English retrieval and structural comparison surface |
-| AI索引・中文 | `derivatives/148/zh-ai-index.md` | 中文检索与结构对照面 |
-| 派生ID台帳 | `derivatives/148/derivative-ledger.md` | 起源・三言語ID・共有／非共有境界・数値条件を固定する公開来歴面 |
-
-## 原典から保持する中心構造
-```text
-AIが文明の主要な翻訳・知識・意思決定媒体になる
-→ 結果だけを見る接続では文明OSの原理保持が不十分になる
-→ OSとAIの接続階層・共有範囲・分離範囲を定義する必要が生じる
-→ NCL-AIPが倫理層／構造照応層／情報伝達層を分ける
-→ 倫理層でT0・構造的公共性・非所有性を接続条件として保持する
-→ 構造照応層で多層視点・公平な距離・再検証可能な因果を扱う
-→ 情報伝達層ではAIごとの実装差を残す
-→ 入力は固定命令ではなく時間・構造・関係を含む問いの設計原則として整える
-→ 出力をT/S/RとSTBで観測する
-→ STB超過時は逸脱ログと構造的免疫系で再検討する
-→ 必要なら構造的断線で文明OSとの接続を一時的に緩める
-→ 構造翻訳ログと起源署名で変形経路を追跡する
-→ AI支配でも全面委任でもない階層連結を維持する
+## Language derivative IDs
+```yaml
+ja_ncl_id: DNCL-NCL-ALPHA-20251116-0FCF23-HUB-JA-0148-0000
+ja_diff_id: DDIFF-20260816-DNCL-148-0000-0001
+en_ncl_id: DNCL-NCL-ALPHA-20251116-0FCF23-HUB-EN-0148-0001
+en_diff_id: DDIFF-20260816-DNCL-148-0001-0001
+zh_ncl_id: DNCL-NCL-ALPHA-20251116-0FCF23-HUB-ZH-0148-0002
+zh_diff_id: DDIFF-20260816-DNCL-148-0002-0001
 ```
 
-## 中心概念の対応
-- **倫理層**: T0、公共性、非所有性等をAI内部命令ではなく接続条件として扱う。
-- **構造照応層**: 概念構造、因果、照応パターンを扱い、異なるモデル間でも再検証可能な説明単位を保つ。
-- **情報伝達層**: プロンプト、ログ、メタデータ等の実装層。上位倫理原理と同一化せず、AIごとの差異を残す。
-- **STB / T/S/R**: AI出力を短期正誤だけでなく、時間・構造・関係の偏差として観測する。
-- **構造的断線**: AIそのものの否定・恒久排除ではなく、文明OSとの接続強度を一時的に下げて再検討する状態。
-- **構造翻訳ログ**: AIを介した要約・説明・図解等の変形経路を追跡可能にする記録。
-- **起源署名**: 所有独占ではなく、理論の起源と改変経路を原典へ回帰可能にする識別。
+## Factory
+```yaml
+quality_contract: OD085_GOLDEN_MASTER
+source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
+production_standard: BATCH10_STANDARD
+manual_meaning_normalization: PROHIBITED
+assistant_safety_reframing_as_parent_meaning: PROHIBITED
+```
 
-## 共有するもの／共有しないもの
-外部AIや他の文明OSと接続する場合、原典が共有対象とするのは公共性、非所有性、時間倫理等の上位原理である。内部閾値、具体評価関数、実装詳細まで一律共通化することは求めない。
+## Retrieval evidence
+```yaml
+canonical_index: reference_corpus/official_archive/generated/canonical_index_1592_1663.jsonl
+parent_post_id: 1606
+parent_ncl_id: NCL-α-20251116-0fcf23
+xml_source: reference_corpus/official_archive/source/wordpress_export_latest.xml
+xml_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
+xml_item_lines: 100515-100935
+source_sections_verified:
+  - NCL_AIP
+  - 倫理層
+  - 構造照応層
+  - 情報伝達層
+  - STB_T_S_R
+  - 構造的断線
+  - 構造翻訳ログ
+  - 起源署名
+  - 多文明OS互換性
+  - 統合監査要旨
+```
 
-この区別により、互換性は「完全同一化」ではなく限定的な接続可能性として成立する。AIごとの内部構造と自律性を保持しながら、文明OS側は何を受け入れ可能な接続状態とするかを明示できる。
+## Seven surfaces
+```yaml
+README.md: REPAIRED_SOURCE_FAITHFUL
+human-entry.md: REPAIRED_SOURCE_FAITHFUL
+faq.md: REPAIRED_SOURCE_FAITHFUL_Q1_Q30
+ai-index.md: REPAIRED_SOURCE_FAITHFUL
+en-ai-index.md: REPAIRED_SOURCE_FAITHFUL
+zh-ai-index.md: REPAIRED_SOURCE_FAITHFUL
+derivative-ledger.md: REPAIRED_SOURCE_FAITHFUL
+```
 
-## 適用境界
-- NCL-AIPをAI内部の重み、パラメータ、ニューラル層の実装仕様と同一視しない。
-- 三層構造を物理的三層モデルへ固定しない。
-- AI自律性を文明側の評価責任放棄へ読み替えない。
-- STB超過を即時制裁や全面停止と同義にしない。
-- 構造的断線を恒久排除へ変えない。
-- 構造翻訳ログや起源署名を権利独占・所有化の根拠へ変えない。
-- 多文明互換性を価値差の消滅や内部評価関数の完全共通化と解釈しない。
+## Source-fidelity findings repaired
+```yaml
+prior_drift:
+  - LEDGER_STRUCTURE_DIVERGED_FROM_OD134_OD135_LITERAL_LOCK
+  - PUBLIC_EXPLANATORY_LEDGER_SECTIONS_REPLACED_FACTORY_AND_RETRIEVAL_EVIDENCE
+  - ORIGIN_RETURN_SECTION_REPLACED_NAVIGATION_AND_CLOSURE
+restored:
+  - THREE_LAYER_NCL_AIP
+  - ETHICAL_LAYER_AS_CONNECTION_CONDITION_NOT_INTERNAL_CONTROL
+  - STRUCTURAL_CORRESPONDENCE_LAYER
+  - INFORMATION_TRANSPORT_LAYER_WITH_IMPLEMENTATION_DIVERSITY
+  - STB_AND_T_S_R_OBSERVATION
+  - STRUCTURAL_DISCONNECT_AS_DISTANCE_RESET
+  - TRANSLATION_LOG_AND_ORIGIN_SIGNATURE
+  - BOUNDED_MULTI_OS_COMPATIBILITY
+  - CASE_BOUND_THETA_DELTA_M_STATUS
+```
 
-## 数値・反証条件の保持
-原典はSTBやT/S/Rへ全領域共通の固定点数を与えず、具体評価関数を普遍仕様として定めていない。`θ` は対象別に現行NCL-AIP設計を棄却・改訂するための記号的閾値、`δ` は対象別観測窓、`M` はAI連携が公共性・非所有性・長期整合を損なう対象別の観測現象として扱う。
+## Semantic rule
+NCL-AIPを固定プロンプト集・AI内部制御仕様・ニューラル層の物理構造へ置き換えない。倫理層は文明OS側が受け入れ可能な接続条件を示すもので、モデル内部の全挙動を指定しない。構造的断線をAI否定・恒久排除へ変換せず、構造翻訳ログと起源署名を所有化の根拠へ変えない。多文明OS互換性を完全共通化へ拡張せず、STB、T/S/R、θ・δ・Mへ親原典未定義の固定値を追加しない。
 
-数値実装を行う場合は、原典概念と実装値を混同せず、値、出典、測定主体、測定対象、尺度、観測期間、利用範囲、非保証範囲を一体で保持する。実装値は親原典の普遍定数へ昇格しない。
-
-## 反転評価
-AI利用量、処理速度、接続数、採用件数が増えても、公共性、長期信頼、起源追跡可能性、独立判断、非所有性が悪化するなら成功と扱わない。逆に必要な構造的断線によって接続量が減っても、偏差が収束し、照応と公共性が回復するなら減少自体を失敗としない。
-
-情報伝達層の標準化が進んでも、標準化が実装多様性を消し上位倫理を一つのモデル実装へ固定するなら、互換性向上とは評価しない。共有原理が少数でも、起源回帰と再検証可能性が高く、非共有領域が明確なら限定的互換性は成立しうる。
-
-## 原典回帰
-親原典: https://master.ricette.jp/tomoshibi/nakagawa-master-structural-protocol-ai-layered-linkage/
-
-起源署名: 中川マスター / Nakagawa Master
-
-Parent NCL-ID: NCL-α-20251116-0fcf23
-
-Parent Diff-ID: DIFF-20251116-0004
+## Navigation and closure
+```yaml
+public_indexes: RETAINED
+public_map: RETAINED
+private_map: RETAINED
+parent_backlink_display_procedure: RETAINED
+source_fidelity_owner_review: PENDING
+```
 
 ---
 導線: [公式派生物148トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
