@@ -142,8 +142,9 @@ public_indexes: UPDATED_THROUGH_OD161
 public_map: UPDATED_THROUGH_OD161
 private_map: UPDATED_THROUGH_OD161_AND_PUBLIC_PRIVATE_IDENTITY
 parent_backlink_display_procedure: INPUT_SYNCED_THROUGH_OD161
-faq_literal_lock_ci: REQUIRED_AND_PENDING_PR_RUN
-source_fidelity_owner_review: FRESH_READ_PENDING
+faq_literal_lock_ci: PASS
+source_fidelity_owner_review: FRESH_READ_PASS
+public_private_map_content_sha: e1650723a45cb69f845c08dad733a1cb62f6937d
 ```
 
 ---
