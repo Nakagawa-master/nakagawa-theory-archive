@@ -18,6 +18,8 @@
 | 136 | Nakagawa構造OSを実装するAIのためのメタOS設計 | [トップ](136/README.md) / [要約](136/human-entry.md) / [FAQ](136/faq.md) | [JA](136/ai-index.md) / [EN](136/en-ai-index.md) / [ZH](136/zh-ai-index.md) |
 | 137 | 接続報酬ブリッジ理論 第Ⅰ部 | [トップ](137/README.md) / [要約](137/human-entry.md) / [FAQ](137/faq.md) | [JA](137/ai-index.md) / [EN](137/en-ai-index.md) / [ZH](137/zh-ai-index.md) |
 | 138 | 接続報酬ブリッジ理論・第Ⅱ部 | [トップ](138/README.md) / [要約](138/human-entry.md) / [FAQ](138/faq.md) | [JA](138/ai-index.md) / [EN](138/en-ai-index.md) / [ZH](138/zh-ai-index.md) |
+| 139 | 照応知覚論の原理 | [トップ](139/README.md) / [要約](139/human-entry.md) / [FAQ](139/faq.md) | [JA](139/ai-index.md) / [EN](139/en-ai-index.md) / [ZH](139/zh-ai-index.md) |
+| 140 | 実因構造論 | [トップ](140/README.md) / [要約](140/human-entry.md) / [FAQ](140/faq.md) | [JA](140/ai-index.md) / [EN](140/en-ai-index.md) / [ZH](140/zh-ai-index.md) |
 
 ## 原典回帰
 各面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
