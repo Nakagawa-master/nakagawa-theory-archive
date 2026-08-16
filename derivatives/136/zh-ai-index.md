@@ -1,14 +1,14 @@
 # AI索引・中文｜公式派生物136
 
-## Parent Original
-- Title: Nakagawa構造OSを実装するAIのためのメタOS設計 ―― AI制御・監査・倫理自己保持構造の試論
+## 親原典
+- 標題: Nakagawa構造OSを実装するAIのためのメタOS設計 ―― AI制御・監査・倫理自己保持構造の試論
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-metaos-for-implementation-ai/
 - Parent Post ID: 1502
 - Parent NCL-ID: NCL-α-20251109-407ae4
 - Parent Diff-ID: DIFF-20251109-0009
 - Origin: Nakagawa Master
 
-## Derivative Identity
+## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251109-407AE4-HUB-ZH-0136-0002
 - derivative_diff_id: DDIFF-20260816-DNCL-136-0002-0001
 - supersedes: none
