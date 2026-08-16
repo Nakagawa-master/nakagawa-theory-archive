@@ -49,9 +49,17 @@ jobs:
               if all(p >= 0 for p in positions) and positions != sorted(positions):
                   errors.append(f'{path}: FAQ audience sections are out of order')
 
-              qs = [int(x) for x in re.findall(r'^### Q(\d+)\.', text, flags=re.M)]
+              matches = list(re.finditer(r'^### Q(\d+)\..*?\n(.*?)(?=\n### Q\d+\.|\n---\n)', text, flags=re.M | re.S))
+              qs = [int(m.group(1)) for m in matches]
               if qs != list(range(1, 31)):
                   errors.append(f'{path}: Q sequence must be exactly Q1..Q30; got {qs}')
+
+              for m in matches:
+                  qn = m.group(1)
+                  answer = m.group(2).strip()
+                  sentence_marks = answer.count('。') + answer.count('!') + answer.count('！') + answer.count('?') + answer.count('？')
+                  if sentence_marks < 2:
+                      errors.append(f'{path}: Q{qn} answer must contain at least two sentences')
 
               forbidden = ['## 基礎層', '## 実務層', '## 監査・反証層']
               for heading in forbidden:
@@ -61,10 +69,8 @@ jobs:
               q30 = re.search(r'^### Q30\..*?(?=\n---\n)', text, flags=re.M | re.S)
               if not q30:
                   errors.append(f'{path}: footer separator must immediately follow Q30 answer')
-              else:
-                  between = q30.group(0)
-                  if re.search(r'^## ', between, flags=re.M):
-                      errors.append(f'{path}: no H2 section is allowed after Q30 before footer')
+              elif re.search(r'^## ', q30.group(0), flags=re.M):
+                  errors.append(f'{path}: no H2 section is allowed after Q30 before footer')
 
           if errors:
               print('\n'.join(errors))
