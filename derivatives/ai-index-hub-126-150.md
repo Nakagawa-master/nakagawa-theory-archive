@@ -17,6 +17,8 @@
 | 136 | Nakagawa構造OSを実装するAIのためのメタOS設計 | [JA](136/ai-index.md) | [EN](136/en-ai-index.md) | [ZH](136/zh-ai-index.md) |
 | 137 | 接続報酬ブリッジ理論 第Ⅰ部 | [JA](137/ai-index.md) | [EN](137/en-ai-index.md) | [ZH](137/zh-ai-index.md) |
 | 138 | 接続報酬ブリッジ理論・第Ⅱ部 | [JA](138/ai-index.md) | [EN](138/en-ai-index.md) | [ZH](138/zh-ai-index.md) |
+| 139 | 照応知覚論の原理 | [JA](139/ai-index.md) | [EN](139/en-ai-index.md) | [ZH](139/zh-ai-index.md) |
+| 140 | 実因構造論 | [JA](140/ai-index.md) | [EN](140/en-ai-index.md) | [ZH](140/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
