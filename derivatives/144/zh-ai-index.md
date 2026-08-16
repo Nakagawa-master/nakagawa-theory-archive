@@ -1,14 +1,14 @@
 # AI索引・中文｜公式派生物144
 
-## Parent Original
-- Title: 非核三原则的裂缝：日本安全保障结构的照应崩解与时间伦理
+## 親原典
+- 標題: 非核三原则的裂缝：日本安全保障结构的照应崩解与时间伦理
 - Parent URL: https://master.ricette.jp/structural-translation-log/philosophy/nakagawa-master-nukes-principles-reconsideration/
 - Parent Post ID: 1576
 - Parent NCL-ID: NCL-α-20251115-55eb69
 - Parent Diff-ID: DIFF-20251115-0008
 - Origin: Nakagawa Master
 
-## Derivative Identity
+## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251115-55EB69-HUB-ZH-0144-0002
 - derivative_diff_id: DDIFF-20260816-DNCL-144-0002-0001
 - supersedes: none
