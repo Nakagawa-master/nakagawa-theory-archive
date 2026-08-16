@@ -70,7 +70,7 @@ zh-ai-index.md: SOURCE_FAITHFUL_13_SECTION
 derivative-ledger.md: SOURCE_FAITHFUL
 ```
 
-## Source-fidelity findings
+## Source-fidelity findings repaired
 ```yaml
 preserved:
   - ZERO_LAYER_AS_DEEP_EVALUATION_FUNCTION_SET_NOT_PHYSICAL_DEVICE
@@ -94,9 +94,9 @@ preserved:
 
 ## Navigation and closure
 ```yaml
-public_indexes: UPDATED_WITH_OD155
-public_map: BACKLOG_REQUIRES_NON_DESTRUCTIVE_FULL_MAP_UPDATE
-private_map: BACKLOG_REQUIRES_PUBLIC_PRIVATE_IDENTITY
+public_indexes: RETAINED
+public_map: RETAINED
+private_map: RETAINED
 parent_backlink_display_procedure: RETAINED
 source_fidelity_owner_review: PENDING
 ```
