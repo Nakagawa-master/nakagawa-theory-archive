@@ -1,6 +1,6 @@
-# AI Index · English | Official Derivative 149
+# AI Index — English | Official Derivative 149
 
-## Parent source
+## Parent Original
 - Title: 構造レジリエンス総論：危機を「破壊」ではなく「構造偏差」として扱う文明OSの新基軸
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-structural-resilience-general-theory-structural-deviation/
 - Parent Post ID: 1611
@@ -8,7 +8,7 @@
 - Parent Diff-ID: DIFF-20260315-0009
 - Origin: Nakagawa Master
 
-## Derivative ID
+## Derivative Identity
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251116-074192-HUB-EN-0149-0001
 - derivative_diff_id: DDIFF-20260816-DNCL-149-0001-0001
 - supersedes: none
@@ -123,13 +123,7 @@ The parent’s claim that crisis is structural deviation does not deny external 
 Structural Resilience, structural deviation, Structural CPU, future debt, AGI deviation, natural disaster, STB, Deviation Ledger, structural immune system, correspondence line, Time Ethics T0, reversibility line, distribution responsibility, non-ownership crisis handling, future improvement conversion, NCL-α-20251116-074192, DIFF-20260315-0009
 
 ## Origin return
-Parent source: https://master.ricette.jp/theory/nakagawa-master-structural-resilience-general-theory-structural-deviation/
-
-Origin signature: Nakagawa Master / 中川マスター
-
-Parent NCL-ID: NCL-α-20251116-074192
-
-Parent Diff-ID: DIFF-20260315-0009
+This index is a retrieval and machine-reading surface for Official Derivative 149. It does not replace the parent original’s structural-resilience definition, future-debt model, Structural CPU deviation, four reconstruction lines, Deviation Ledger, structural immunity, quantitative status, or falsification conditions. Return to the Parent URL and Parent NCL-ID / Diff-ID for authoritative meaning when using strong claims, definitions, quantitative boundaries, or implementation judgments.
 
 ---
-Navigation: [Official Derivative 149 Top](README.md) / [Human Summary](human-entry.md) / [FAQ](faq.md) / [AI Index · Japanese](ai-index.md) / [AI Index · English](en-ai-index.md) / [AI Index · Chinese](zh-ai-index.md) / [Derivative ID Ledger](derivative-ledger.md)
+導線: [公式派生物149トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
