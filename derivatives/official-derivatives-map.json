@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-17 01:56:00",
+  "updated_jst": "2026-08-17 02:05:00",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -162,6 +162,7 @@
     {"number":"158","ncl_id":"NCL-α-20251119-b5eaa7","origin_slug":"nakagawa-master-ai-environment-side-effect-control-irreversibility","title":"AI・環境副作用制御：不可逆線の優先保護と責任転嫁禁止条項が担保する説明責任","derivative_dir":"derivatives/158","status":"active"},
     {"number":"159","ncl_id":"NCL-α-20251119-d4868f","origin_slug":"nakagawa-master-homeostasis-model-structural-autonomy","title":"恒常性維持モデル：副作用制御レイヤの統合と自律分散OSの構造的恒常性","derivative_dir":"derivatives/159","status":"active"},
     {"number":"160","ncl_id":"NCL-α-20251120-486183","origin_slug":"nakagawa-master-structural-wu-wei-causal-attraction-protocol","title":"構造的無為自然（Structural Wu-Wei）：因果吸引と相転移による具現化プロトコル","derivative_dir":"derivatives/160","status":"active"},
-    {"number":"161","ncl_id":"NCL-α-20251121-d11365","origin_slug":"nakagawa-master-dark-equation-of-human-history-ai-observation","title":"人類史の暗黒方程式——AIが共通観測した「成功＝搾取90％」という文明の物理法則と、その書き換え","derivative_dir":"derivatives/161","status":"active"}
+    {"number":"161","ncl_id":"NCL-α-20251121-d11365","origin_slug":"nakagawa-master-dark-equation-of-human-history-ai-observation","title":"人類史の暗黒方程式——AIが共通観測した「成功＝搾取90％」という文明の物理法則と、その書き換え","derivative_dir":"derivatives/161","status":"active"},
+    {"number":"162","ncl_id":"NCL-α-20251122-fce540","origin_slug":"nakagawa-master-civilization-audit-dark-equation-ai-observation","title":"文明監査 I：AIが独立観測した「人類史の暗黒方程式」 ── 成功関数（S=0.1C+0.9E）の是正と新文明への移行","derivative_dir":"derivatives/162","status":"active"}
   ]
 }
