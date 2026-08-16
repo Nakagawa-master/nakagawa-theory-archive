@@ -177,7 +177,7 @@ correspondence between theoretical name and implementation remains reviewable an
 - Keep the subject tied to a Meta-OS for AI implementing Nakagawa Structural OS; do not replace it with generic AI governance.
 - Preserve the parent’s explicit distinction between structural memory and an ideology of total AI resistance to human law or power.
 - Treat the four roles, four modes, five violation conditions, and three checks as structural classifications, not quantitative performance values.
-- Treat AI self-audit as a function of the Resonator within the theory’s subject matter, not as a public derivative’s self-QA or production instruction.
+- Treat Resonator self-audit as an operating function of the target AI that remains connected to Registry history, Steward responsibility, Auditor independence, and cross-audit rather than as sufficient self-justification.
 - Do not translate “multiple simultaneous violations” into an invented universal numerical threshold.
 - Do not assign concrete values to θ or δ and attribute them to the parent.
 - Preserve the proposal’s revisable modality; do not harden it into an immutable universal standard.
