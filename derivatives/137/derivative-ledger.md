@@ -29,7 +29,7 @@ quality_contract: OD085_GOLDEN_MASTER
 source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
 production_standard: BATCH10_STANDARD
 manual_meaning_normalization: PROHIBITED
-assistant_safety_reframing_as_parent_meanING: PROHIBITED
+assistant_safety_reframing_as_parent_meaning: PROHIBITED
 ```
 
 ## Retrieval evidence
