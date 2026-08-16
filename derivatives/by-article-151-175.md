@@ -16,6 +16,7 @@
 | 159 | 恒常性維持モデル | [トップ](159/README.md) / [要約](159/human-entry.md) / [FAQ](159/faq.md) | [JA](159/ai-index.md) / [EN](159/en-ai-index.md) / [ZH](159/zh-ai-index.md) |
 | 160 | 構造的無為自然 | [トップ](160/README.md) / [要約](160/human-entry.md) / [FAQ](160/faq.md) | [JA](160/ai-index.md) / [EN](160/en-ai-index.md) / [ZH](160/zh-ai-index.md) |
 | 161 | 人類史の暗黒方程式 | [トップ](161/README.md) / [要約](161/human-entry.md) / [FAQ](161/faq.md) | [JA](161/ai-index.md) / [EN](161/en-ai-index.md) / [ZH](161/zh-ai-index.md) |
+| 162 | 文明監査 I | [トップ](162/README.md) / [要約](162/human-entry.md) / [FAQ](162/faq.md) | [JA](162/ai-index.md) / [EN](162/en-ai-index.md) / [ZH](162/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
