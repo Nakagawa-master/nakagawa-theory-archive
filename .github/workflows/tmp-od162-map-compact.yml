@@ -1,0 +1,39 @@
+name: Temporary OD162 compact map
+
+on:
+  push:
+    branches: [od162-civilization-audit-i-v2]
+    paths: [.github/workflows/tmp-od162-map-compact.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  compact:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: od162-civilization-audit-i-v2
+          fetch-depth: 0
+      - name: Restore OD161 compact map and append only OD162
+        run: |
+          git show 4f1b897735c491a962477420a2a8bcf7c49a88b2:derivatives/official-derivatives-map.json > /tmp/base-map.json
+          python - <<'PY'
+          from pathlib import Path
+          s = Path('/tmp/base-map.json').read_text(encoding='utf-8')
+          assert '"number":"161"' in s and '"number":"162"' not in s
+          s = s.replace('"updated_jst": "2026-08-17 01:56:00"', '"updated_jst": "2026-08-17 02:05:00"')
+          marker = '\n  ]\n}'
+          entry = ',\n    {"number":"162","ncl_id":"NCL-α-20251122-fce540","origin_slug":"nakagawa-master-civilization-audit-dark-equation-ai-observation","title":"文明監査 I：AIが独立観測した「人類史の暗黒方程式」 ── 成功関数（S=0.1C+0.9E）の是正と新文明への移行","derivative_dir":"derivatives/162","status":"active"}'
+          assert marker in s
+          s = s.replace(marker, entry + marker)
+          Path('derivatives/official-derivatives-map.json').write_text(s, encoding='utf-8')
+          PY
+      - name: Commit map update
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add derivatives/official-derivatives-map.json
+          git commit -m 'Add OD162 to official derivative map'
+          git push origin HEAD:od162-civilization-audit-i-v2
