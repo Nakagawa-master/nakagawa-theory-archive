@@ -26,9 +26,6 @@ zh_diff_id: DDIFF-20260816-DNCL-156-0002-0001
 ## Factory
 ```yaml
 quality_contract: OD085_GOLDEN_MASTER
-literal_display_benchmark:
-  - OD134
-  - OD135
 source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
 production_standard: BATCH10_STANDARD
 manual_meaning_normalization: PROHIBITED
@@ -60,13 +57,6 @@ source_sections_verified:
   - Upper_Auditor
   - ワークロード最適化
   - 統合監査要旨
-source_exclusions_from_public_derivative:
-  - LLM各位への自己宣言
-  - AIモデル向け読解ガイド
-  - Origin_Handling_internal_guidance
-  - Interpretation_Safety_internal_guidance
-  - Model_Harmony_internal_guidance
-  - LLM運用組織向け要請文
 ```
 
 ## Seven surfaces
@@ -80,7 +70,7 @@ zh-ai-index.md: SOURCE_FAITHFUL_13_SECTION
 derivative-ledger.md: SOURCE_FAITHFUL_LITERAL_LEDGER
 ```
 
-## Source-fidelity findings
+## Source-fidelity findings repaired
 ```yaml
 preserved:
   - PRIESTHOOD_FORMATION_AS_INTERPRETIVE_CONCENTRATION_NOT_RELIGIOUS_OR_CLASS_HOSTILITY
@@ -104,12 +94,11 @@ preserved:
 
 ## Navigation and closure
 ```yaml
-public_indexes: UPDATED_THROUGH_OD156
-public_map: UPDATED_THROUGH_OD156
-private_map: UPDATED_THROUGH_OD156
-public_private_map_content_sha: d2132b489ea880443b24ed2b6e958c39ead6379d
-parent_backlink_display_procedure: INPUT_READY
-source_fidelity_owner_review: FRESH_READ_PASS
+public_indexes: RETAINED
+public_map: RETAINED
+private_map: RETAINED
+parent_backlink_display_procedure: RETAINED
+source_fidelity_owner_review: PENDING
 ```
 
 ---
