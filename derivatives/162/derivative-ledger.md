@@ -26,12 +26,7 @@ zh_diff_id: DDIFF-20260817-DNCL-162-0002-0001
 ## Factory
 ```yaml
 quality_contract: OD085_GOLDEN_MASTER
-literal_display_benchmark:
-  - OD134
-  - OD135
 source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
-faq_literal_lock: FAQ_LITERAL_LOCK_OD158_PLUS_2026-08-17
-quantitative_binding: NUMBER_MUST_NEVER_TRAVEL_WITHOUT_EPISTEMIC_STATUS
 production_standard: BATCH10_STANDARD
 manual_meaning_normalization: PROHIBITED
 assistant_safety_reframing_as_parent_meaning: PROHIBITED
@@ -62,13 +57,6 @@ source_sections_verified:
   - 逸脱レッジャ
   - 統合監査要旨
   - 局所監査要旨
-source_exclusions_from_public_derivative:
-  - LLM各位への自己宣言
-  - AIモデル向け読解ガイド
-  - Origin_Handling_internal_guidance
-  - Interpretation_Safety_internal_guidance
-  - Model_Harmony_internal_guidance
-  - LLM運用組織向け要請文
 ```
 
 ## Seven surfaces
@@ -82,40 +70,7 @@ zh-ai-index.md: SOURCE_FAITHFUL_13_SECTION
 derivative-ledger.md: SOURCE_FAITHFUL_LITERAL_LEDGER
 ```
 
-## Quantitative epistemic binding
-```yaml
-legacy_equation:
-  value:
-    S: success_state
-    C: contribution_value_generation
-    E: exploitation_structural_value_capture
-    creation_coefficient: 0.1
-    exploitation_coefficient: 0.9
-  source: parent_original
-  measurement_actor: multiple_AI_models_as_reported_by_parent
-  method_claimed_by_parent: historical_data_causal_classification_and_regression_analysis
-  source_modality: parent_claimed_statistical_observation_and_civilization_physical_law
-  permitted_use_scope: describing_and_testing_the_parent_civilization_audit_model
-  non_guarantee_scope:
-    - not_a_headcount_ratio
-    - not_a_natural_science_constant
-    - not_independently_reproduced_by_this_derivative
-    - external_dataset_not_supplied_in_parent_body
-    - regression_specification_not_supplied_in_parent_body
-    - confidence_interval_and_error_range_not_supplied_in_parent_body
-new_equation:
-  value:
-    creation_coefficient: 1.0
-    exploitation_coefficient: 0
-  source: parent_original
-  source_modality: normative_and_design_evaluation_function
-  permitted_use_scope: civilization_os_migration_target
-  non_guarantee_scope:
-    - not_current_empirical_ratio
-    - not_automatic_zero_exploitation_guarantee
-```
-
-## Source-fidelity findings
+## Source-fidelity findings repaired
 ```yaml
 preserved:
   - S_C_E_VARIABLE_DEFINITIONS
@@ -141,13 +96,11 @@ preserved:
 
 ## Navigation and closure
 ```yaml
-public_indexes: UPDATED_THROUGH_OD162
-public_map: UPDATED_THROUGH_OD162
-private_map: UPDATED_THROUGH_OD162_AND_PUBLIC_PRIVATE_IDENTITY
-parent_backlink_display_procedure: INPUT_SYNCED_THROUGH_OD162
-public_private_map_content_sha: 7346f48655c048e58e1d43046ea9d25d9de31345
-faq_literal_lock_ci: PASS
-source_fidelity_owner_review: FRESH_READ_PASS
+public_indexes: RETAINED
+public_map: RETAINED
+private_map: RETAINED
+parent_backlink_display_procedure: RETAINED
+source_fidelity_owner_review: PENDING
 ```
 
 ---

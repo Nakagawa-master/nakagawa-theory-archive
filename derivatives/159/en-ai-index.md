@@ -132,4 +132,4 @@ homeostasis maintenance model, structural homeostasis, side-effect control layer
 This AI index supports retrieval, machine reading, and structural comparison; it does not replace the parent original. Return to the Parent URL and Parent NCL-ID / Diff-ID when deciding the distinct roles of the three controls, the definition of homeostasis, deviation bundles, recursive openness, the Upper Auditor responsibility boundary, the evaluation of lower intervention frequency, Phase-β completion, or case-specific `θ` / `δ` / `M`.
 
 ---
-Navigation: [Official Derivative 159 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index — Japanese](ai-index.md) / [AI index — English](en-ai-index.md) / [AI index — Chinese](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+導線: [公式派生物159トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

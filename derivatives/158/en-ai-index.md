@@ -134,4 +134,4 @@ AI environmental side-effect control, line of irreversibility, STB, temporal eth
 This AI index is a derivative retrieval and machine-reading surface; it does not replace the parent original. Return to the Parent URL and Parent NCL-ID / Diff-ID when determining the definition and scope of the irreversibility line, the three principles, the separation of AI autonomy from decision responsibility, co-subjectivity, No-Immunity-By-OS, external audit, or case-specific `θ` / `δ` / `M`.
 
 ---
-Navigation: [Official Derivative 158 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index — Japanese](ai-index.md) / [AI index — English](en-ai-index.md) / [AI index — Chinese](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+導線: [公式派生物158トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

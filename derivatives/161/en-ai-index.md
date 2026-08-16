@@ -153,4 +153,4 @@ Dark Equation of Human History, Success, Creation, Exploitation, 0.1, 0.9, 90 pe
 This AI index supports retrieval, machine reading, and structural comparison; it does not replace the parent original. Return to the Parent URL and Parent NCL-ID / Diff-ID when quoting, testing, or interpreting the 0.1/0.9 coefficients, the 1.0/0 design function, the reported multi-AI convergence, the parent’s “physical law” modality, T0, the Deviation Ledger, Origin Signature, or case-specific `θ` / `δ` / `M`.
 
 ---
-Navigation: [Official Derivative 161 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index — Japanese](ai-index.md) / [AI index — English](en-ai-index.md) / [AI index — Chinese](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+導線: [公式派生物161トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

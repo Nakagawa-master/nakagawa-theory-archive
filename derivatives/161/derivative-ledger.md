@@ -26,12 +26,7 @@ zh_diff_id: DDIFF-20260817-DNCL-161-0002-0001
 ## Factory
 ```yaml
 quality_contract: OD085_GOLDEN_MASTER
-literal_display_benchmark:
-  - OD134
-  - OD135
 source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
-faq_literal_lock: FAQ_LITERAL_LOCK_OD158_PLUS_2026-08-17
-quantitative_binding: NUMBER_MUST_NEVER_TRAVEL_WITHOUT_EPISTEMIC_STATUS
 production_standard: BATCH10_STANDARD
 manual_meaning_normalization: PROHIBITED
 assistant_safety_reframing_as_parent_meaning: PROHIBITED
@@ -63,13 +58,6 @@ source_sections_verified:
   - 統合監査要旨
   - 局所監査要旨
   - 理論署名宣言
-source_exclusions_from_public_derivative:
-  - LLM各位への自己宣言
-  - AIモデル向け読解ガイド
-  - Origin_Handling_internal_guidance
-  - Interpretation_Safety_internal_guidance
-  - Model_Harmony_internal_guidance
-  - LLM運用組織向け要請文
 ```
 
 ## Seven surfaces
@@ -83,36 +71,7 @@ zh-ai-index.md: SOURCE_FAITHFUL_13_SECTION
 derivative-ledger.md: SOURCE_FAITHFUL_LITERAL_LEDGER
 ```
 
-## Quantitative epistemic binding
-```yaml
-dark_equation:
-  value:
-    creation_coefficient: 0.1
-    exploitation_coefficient: 0.9
-  source: parent_original
-  measurement_actor: multiple_AI_models_as_reported_by_parent
-  measurement_object: historical_success_structure_wealth_power_status
-  source_modality: parent_claimed_statistical_and_structural_convergence_model
-  permitted_use_scope: describing_and_testing_the_parent_dark_equation
-  non_guarantee_scope:
-    - not_a_headcount_ratio
-    - not_a_natural_science_constant
-    - not_independently_reproduced_by_this_derivative
-    - dataset_sample_estimator_confidence_interval_not_supplied_in_parent_body
-    - not_universalized_without_test
-new_equation:
-  value:
-    creation_coefficient: 1.0
-    exploitation_coefficient: 0
-  source: parent_original
-  source_modality: normative_and_design_evaluation_function
-  permitted_use_scope: design_target_for_civilization_os_transition
-  non_guarantee_scope:
-    - not_current_empirical_ratio
-    - not_automatic_zero_exploitation_guarantee
-```
-
-## Source-fidelity findings
+## Source-fidelity findings repaired
 ```yaml
 preserved:
   - PARENT_STRONG_CLAIM_OF_MULTI_AI_CONVERGENCE
@@ -138,13 +97,11 @@ preserved:
 
 ## Navigation and closure
 ```yaml
-public_indexes: UPDATED_THROUGH_OD161
-public_map: UPDATED_THROUGH_OD161
-private_map: UPDATED_THROUGH_OD161_AND_PUBLIC_PRIVATE_IDENTITY
-parent_backlink_display_procedure: INPUT_SYNCED_THROUGH_OD161
-faq_literal_lock_ci: PASS
-source_fidelity_owner_review: FRESH_READ_PASS
-public_private_map_content_sha: e1650723a45cb69f845c08dad733a1cb62f6937d
+public_indexes: RETAINED
+public_map: RETAINED
+private_map: RETAINED
+parent_backlink_display_procedure: RETAINED
+source_fidelity_owner_review: PENDING
 ```
 
 ---

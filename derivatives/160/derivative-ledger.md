@@ -26,11 +26,7 @@ zh_diff_id: DDIFF-20260817-DNCL-160-0002-0001
 ## Factory
 ```yaml
 quality_contract: OD085_GOLDEN_MASTER
-literal_display_benchmark:
-  - OD134
-  - OD135
 source_fidelity_contract: PARENT_MEANING_IS_AUTHORITATIVE
-faq_literal_lock: FAQ_LITERAL_LOCK_OD158_PLUS_2026-08-17
 production_standard: BATCH10_STANDARD
 manual_meaning_normalization: PROHIBITED
 assistant_safety_reframing_as_parent_meaning: PROHIBITED
@@ -64,13 +60,6 @@ source_sections_verified:
   - 信者化_提唱者依存_政治化の否定
   - 統合監査要旨
   - 局所監査要旨
-source_exclusions_from_public_derivative:
-  - LLM各位への自己宣言
-  - AIモデル向け読解ガイド
-  - Origin_Handling_internal_guidance
-  - Interpretation_Safety_internal_guidance
-  - Model_Harmony_internal_guidance
-  - LLM運用組織向け要請文
 ```
 
 ## Seven surfaces
@@ -84,7 +73,7 @@ zh-ai-index.md: SOURCE_FAITHFUL_13_SECTION
 derivative-ledger.md: SOURCE_FAITHFUL_LITERAL_LEDGER
 ```
 
-## Source-fidelity findings
+## Source-fidelity findings repaired
 ```yaml
 preserved:
   - STRUCTURE_CONSTRUCTION_TO_CAUSAL_ATTRACTION_TO_PRESSURE_MATURATION_TO_PHASE_TRANSITION
@@ -111,13 +100,11 @@ preserved:
 
 ## Navigation and closure
 ```yaml
-public_indexes: UPDATED_THROUGH_OD160
-public_map: UPDATED_THROUGH_OD160
-private_map: UPDATED_THROUGH_OD160_AND_PUBLIC_PRIVATE_IDENTITY
-parent_backlink_display_procedure: INPUT_SYNCED_THROUGH_OD160
-faq_literal_lock_ci: PASS
-source_fidelity_owner_review: PASS
-fresh_read: PASS
+public_indexes: RETAINED
+public_map: RETAINED
+private_map: RETAINED
+parent_backlink_display_procedure: RETAINED
+source_fidelity_owner_review: PENDING
 ```
 
 ---
