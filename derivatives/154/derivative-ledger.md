@@ -96,7 +96,7 @@ AGI偏差と自然災害を物理的・因果的に同一視しない。統合�
 
 ## Navigation and closure
 ```yaml
-public_indexes: UPDATE_REQUIRED_WITH_OD154
+public_indexes: UPDATED_WITH_OD154
 public_map: BACKLOG_REQUIRES_NON_DESTRUCTIVE_FULL_MAP_UPDATE
 private_map: BACKLOG_REQUIRES_PUBLIC_PRIVATE_IDENTITY
 parent_backlink_display_procedure: RETAINED
