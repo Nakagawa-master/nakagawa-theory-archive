@@ -111,11 +111,12 @@ preserved:
 
 ## Navigation and closure
 ```yaml
-public_indexes: UPDATE_REQUIRED_WITH_OD159
-public_map: UPDATE_REQUIRED_WITH_OD159
-private_map: UPDATE_REQUIRED_WITH_OD159_AND_PUBLIC_PRIVATE_IDENTITY
-parent_backlink_display_procedure: REQUIRED
-source_fidelity_owner_review: PENDING_UNTIL_FRESH_READ
+public_indexes: UPDATED_THROUGH_OD159
+public_map: UPDATED_THROUGH_OD159
+private_map: UPDATED_THROUGH_OD159
+public_private_map_content_sha: 3303411945d440c41538ab4cf34ac359eb7719ed
+parent_backlink_display_procedure: MAP_INPUT_SYNCHRONIZED
+source_fidelity_owner_review: PASS_FRESH_READ_REQUIRED_BEFORE_MERGE
 ```
 
 ---
