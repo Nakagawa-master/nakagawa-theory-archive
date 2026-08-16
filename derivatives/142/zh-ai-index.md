@@ -1,14 +1,14 @@
 # AI索引・中文｜公式派生物142
 
-## Parent Original
-- Title: 结构文明期：基于结构理论的文明阶段理论与OS层时间配置
+## 親原典
+- 標題: 结构文明期：基于结构理论的文明阶段理论与OS层时间配置
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-structural-civilization-phase-theory/
 - Parent Post ID: 1560
 - Parent NCL-ID: NCL-α-20251114-9126b4
 - Parent Diff-ID: DIFF-20251114-0009
 - Origin: Nakagawa Master
 
-## Derivative Identity
+## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251114-9126B4-HUB-ZH-0142-0002
 - derivative_diff_id: DDIFF-20260816-DNCL-142-0002-0001
 - supersedes: none
