@@ -14,6 +14,7 @@
 | 133 | 山と人の再照応 | [JA](133/ai-index.md) | [EN](133/en-ai-index.md) | [ZH](133/zh-ai-index.md) |
 | 134 | 構造文明の臨界 第一部 | [JA](134/ai-index.md) | [EN](134/en-ai-index.md) | [ZH](134/zh-ai-index.md) |
 | 135 | 構造文明の臨界 第二部 | [JA](135/ai-index.md) | [EN](135/en-ai-index.md) | [ZH](135/zh-ai-index.md) |
+| 136 | Nakagawa構造OSを実装するAIのためのメタOS設計 | [JA](136/ai-index.md) | [EN](136/en-ai-index.md) | [ZH](136/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
