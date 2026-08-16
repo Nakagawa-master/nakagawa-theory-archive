@@ -7,6 +7,7 @@
 | 151 | AGI制御の構造原理 | [JA](151/ai-index.md) | [EN](151/en-ai-index.md) | [ZH](151/zh-ai-index.md) |
 | 152 | 自然災害の未来負債モデル | [JA](152/ai-index.md) | [EN](152/en-ai-index.md) | [ZH](152/zh-ai-index.md) |
 | 153 | 災害レジリエンスの構造原理 | [JA](153/ai-index.md) | [EN](153/en-ai-index.md) | [ZH](153/zh-ai-index.md) |
+| 154 | 構造レジリエンス統合理論 | [JA](154/ai-index.md) | [EN](154/en-ai-index.md) | [ZH](154/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
