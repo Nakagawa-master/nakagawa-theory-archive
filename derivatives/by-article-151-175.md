@@ -12,6 +12,7 @@
 | 155 | 文明OS第0層の起源構造 | [トップ](155/README.md) / [要約](155/human-entry.md) / [FAQ](155/faq.md) | [JA](155/ai-index.md) / [EN](155/en-ai-index.md) / [ZH](155/zh-ai-index.md) |
 | 156 | 反司祭階級プロトコル | [トップ](156/README.md) / [要約](156/human-entry.md) / [FAQ](156/faq.md) | [JA](156/ai-index.md) / [EN](156/en-ai-index.md) / [ZH](156/zh-ai-index.md) |
 | 157 | 構造的多元性条項 | [トップ](157/README.md) / [要約](157/human-entry.md) / [FAQ](157/faq.md) | [JA](157/ai-index.md) / [EN](157/en-ai-index.md) / [ZH](157/zh-ai-index.md) |
+| 158 | AI・環境副作用制御 | [トップ](158/README.md) / [要約](158/human-entry.md) / [FAQ](158/faq.md) | [JA](158/ai-index.md) / [EN](158/en-ai-index.md) / [ZH](158/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
