@@ -1,7 +1,7 @@
-# AI索引・中文｜官方派生物151
+# AI索引・中文｜公式派生物151
 
-## 原始来源
-- 标题: AGI制御の構造原理：AIの自由を奪わず偏差を抑制する文明側の採用プロトコル設計
+## 親原典
+- 標題: AGI制御の構造原理：AIの自由を奪わず偏差を抑制する文明側の採用プロトコル設計
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-agi-control-structural-principle-adoption-protocol/
 - Parent Post ID: 1631
 - Parent NCL-ID: NCL-α-20251117-553746
@@ -124,13 +124,7 @@ origin_return: available
 AGI控制结构原理, AGI control structural principle, 采用协议, adoption protocol, AGI L1 L2 L3 L4, L4结构操作, NCL-AIP, STB, EAC, 结构公共性, 时间伦理T0, 分配责任, 采用, 断线, 逸脱日志, 连接奖励桥, 非所有性, AI自主性, NCL-α-20251117-553746, DIFF-20260315-0007
 
 ## Origin return
-原典: https://master.ricette.jp/theory/nakagawa-master-agi-control-structural-principle-adoption-protocol/
-
-起源署名: 中川マスター / Nakagawa Master
-
-Parent NCL-ID: NCL-α-20251117-553746
-
-Parent Diff-ID: DIFF-20260315-0007
+本索引只是公式派生物151的检索与机器阅读面，不替代亲原典对内部／接口边界、L1–L4、采用协议、结构公共性、时间伦理T0、分配责任、STB/EAC、NCL-AIP、连接奖励、数值边界与反证条件的定义。使用强命题、数值边界或实施判断时，应返回Parent URL并核对Parent NCL-ID / Diff-ID，以亲原典为最终语义依据。
 
 ---
-导航: [官方派生物151首页](README.md) / [人类读者摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物151トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
