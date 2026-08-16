@@ -124,13 +124,7 @@ origin_return: available
 AGI制御の構造原理, AGI control structural principle, 採用プロトコル, adoption protocol, AGI L1 L2 L3 L4, L4構造操作, NCL-AIP, STB, EAC, 構造的公共性, 時間倫理T0, 配分責任, 採用, 断線, 逸脱ログ, 接続報酬ブリッジ, connection reward, 非所有性, AI自律性, NCL-α-20251117-553746, DIFF-20260315-0007
 
 ## Origin return
-親原典: https://master.ricette.jp/theory/nakagawa-master-agi-control-structural-principle-adoption-protocol/
-
-起源署名: 中川マスター / Nakagawa Master
-
-Parent NCL-ID: NCL-α-20251117-553746
-
-Parent Diff-ID: DIFF-20260315-0007
+本索引は公式派生物151の検索・機械読解面であり、親原典における内部／インターフェース境界、L1〜L4、採用プロトコル、公共性、時間倫理T0、配分責任、STB/EAC、NCL-AIP、接続報酬、数値境界と反証条件を置換しない。強い命題、定義、数値境界、適用判断に用いる場合は、Parent URLとParent NCL-ID / Diff-IDへ戻り、親原典の意味と主張強度を確認する。
 
 ---
 導線: [公式派生物151トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
