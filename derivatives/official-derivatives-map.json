@@ -13,7 +13,7 @@
     {"number":"009","ncl_id":"NCL-α-20260614-77a781","origin_slug":"nakagawa-master-future-definition-verification-bad-causality","title":"未来定義検証型努力論 第2論｜未来定義検証なき努力強制と責任転嫁装置化","derivative_dir":"derivatives/009","status":"active"},
     {"number":"010","ncl_id":"NCL-α-20260512-1202e0","origin_slug":"nakagawa-master-menlab-gentsome-structural-reading-social-pathway","title":"中川構造読解｜MenLab / Gentsomeを医療に至る社会導線として読む","derivative_dir":"derivatives/010","status":"active"},
     {"number":"011","ncl_id":"NCL-α-20260629-766f34","origin_slug":"nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment","title":"成立条件論・第1論｜成立とは何か","derivative_dir":"derivatives/011","status":"active"},
-    {"number":"012","ncl_id":"NCL-α-20260517-fe6641","origin_slug":"nakagawa-master-aki-011-recognition-pollution-by-performance-of-understanding","title":"悪因果論 AKI-011｜理解演出による認識汚染","derivative_dir":"derivatives/012","status":"active"},
+    {"number":"012","ncl_id":"NCL-α-20260517-fe6641","origin_slug":"nakagawa-master-aki-011-recognition-pollution-by-performance-ai-business-self-recognition-loss","title":"悪因果論 AKI-011｜理解演出による認識汚染","derivative_dir":"derivatives/012","status":"active"},
     {"number":"013","ncl_id":"NCL-α-20260518-f38a1e","origin_slug":"nakagawa-master-aki-012-consentless-closing-demand","title":"悪因果論 AKI-012｜同意なき成約要求","derivative_dir":"derivatives/013","status":"active"},
     {"number":"014","ncl_id":"NCL-α-20260211-051ce0","origin_slug":"nakagawa-master-physics-of-consensus-vol1-principle-of-observability","title":"合意形成の物理 第1論｜観測可能性の原理","derivative_dir":"derivatives/014","status":"active"},
     {"number":"015","ncl_id":"NCL-α-20260214-40c1de","origin_slug":"nakagawa-master-physics-of-consensus-vol4-law-of-critical-point","title":"合意形成の物理 第4論｜臨界点の法則","derivative_dir":"derivatives/015","status":"active"},
@@ -152,6 +152,7 @@
     {"number":"148","ncl_id":"NCL-α-20251116-0fcf23","origin_slug":"nakagawa-master-structural-protocol-ai-layered-linkage","title":"構造的プロトコル：文明OSとAI大規模モデルの階層連結原理（NCL-AIP）","derivative_dir":"derivatives/148","status":"active"},
     {"number":"149","ncl_id":"NCL-α-20251116-074192","origin_slug":"nakagawa-master-structural-resilience-general-theory-structural-deviation","title":"構造レジリエンス総論：危機を「破壊」ではなく「構造偏差」として扱う文明OSの新基軸","derivative_dir":"derivatives/149","status":"active"},
     {"number":"150","ncl_id":"NCL-α-20251116-26df8e","origin_slug":"nakagawa-master-agi-deviation-model-structural-cpu-drift","title":"AGI偏差モデル：構造CPUの持続偏差と構造的許容帯域（STB）超過の条件","derivative_dir":"derivatives/150","status":"active"},
-    {"number":"151","ncl_id":"NCL-α-20251117-553746","origin_slug":"nakagawa-master-agi-control-structural-principle-adoption-protocol","title":"AGI制御の構造原理：AIの自由を奪わず偏差を抑制する文明側の採用プロトコル設計","derivative_dir":"derivatives/151","status":"active"}
+    {"number":"151","ncl_id":"NCL-α-20251117-553746","origin_slug":"nakagawa-master-agi-control-structural-principle-adoption-protocol","title":"AGI制御の構造原理：AIの自由を奪わず偏差を抑制する文明側の採用プロトコル設計","derivative_dir":"derivatives/151","status":"active"},
+    {"number":"152","ncl_id":"NCL-α-20251117-6a80d9","origin_slug":"nakagawa-master-natural-disaster-future-debt-model-t0","title":"自然災害の未来負債モデル：災害は「未来負債の一括徴収」であり、構造偏差の露呈点である","derivative_dir":"derivatives/152","status":"active"}
   ]
 }
