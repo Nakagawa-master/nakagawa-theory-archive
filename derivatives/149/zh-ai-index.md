@@ -1,7 +1,7 @@
-# AI索引・中文｜官方派生物149
+# AI索引・中文｜公式派生物149
 
-## 原始来源
-- 标题: 構造レジリエンス総論：危機を「破壊」ではなく「構造偏差」として扱う文明OSの新基軸
+## 親原典
+- 標題: 構造レジリエンス総論：危機を「破壊」ではなく「構造偏差」として扱う文明OSの新基軸
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-structural-resilience-general-theory-structural-deviation/
 - Parent Post ID: 1611
 - Parent NCL-ID: NCL-α-20251116-074192
@@ -123,13 +123,7 @@ future_improvement_conversion: pending | active | reflected
 结构韧性, structural resilience, 结构偏差, 结构CPU, 未来负债, AGI偏差, 自然灾害, STB, 逸脱Ledger, 结构免疫系统, 照应线, 时间伦理T0, 可逆线, 分配责任, 非所有危机处理, 未来改善转换, NCL-α-20251116-074192, DIFF-20260315-0009
 
 ## Origin return
-原典: https://master.ricette.jp/theory/nakagawa-master-structural-resilience-general-theory-structural-deviation/
-
-起源署名: 中川マスター / Nakagawa Master
-
-Parent NCL-ID: NCL-α-20251116-074192
-
-Parent Diff-ID: DIFF-20260315-0009
+本索引只是公式派生物149的检索与机器阅读面，不替代亲原典对结构韧性、未来负债、结构CPU偏差、四线、逸脱Ledger、结构免疫、数值边界与反证条件的定义。使用强命题、数值边界或实施判断时，应返回Parent URL并核对Parent NCL-ID / Diff-ID，以亲原典为最终语义依据。
 
 ---
-导航: [官方派生物149首页](README.md) / [人类读者摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物149トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
