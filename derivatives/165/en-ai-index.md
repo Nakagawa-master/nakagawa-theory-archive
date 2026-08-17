@@ -153,7 +153,7 @@ The parent integrated audit treats crossing `θ` in exploitation, future debt, e
 - strong necessity wording vs independently replicated universal law
 
 ## Interpretation constraints
-Preserve the parent’s strong wording—physical necessity, Minimum Requirement, lowest-compute/most-consistent world, only fully defined implementation—without converting it into external independent validation that the parent does not provide. Treat comparisons of capitalism, democracy, communism, religion, social-media systems, and other historical OSs as the parent’s structural diagnosis, not as a moral judgment on named contemporary persons or populations. Do not expose production process, internal QA, or self-referential derivative commentary in public knowledge surfaces.
+Preserve the parent’s strong wording—physical necessity, Minimum Requirement, lowest-compute/most-consistent world, only fully defined implementation—without converting it into external independent validation that the parent does not provide. Treat comparisons of capitalism, democracy, communism, religion, social-media systems, and other historical OSs as the parent’s structural diagnosis, not as a moral judgment on named contemporary persons or populations.
 
 ## Search terms
 Civilization OS comparison, Final Appendix, L-Layer, Dark Equation, S=0.1C+0.9E, New Civilization Equation, S=C×1.0, E=0, NCL-α, T0, Deviation Ledger, Connection Reward, publicness, violence zero, low compute, Structural Confluence, Minimum Requirement, theta, delta, condition Z
