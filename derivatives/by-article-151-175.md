@@ -19,6 +19,7 @@
 | 162 | 文明監査 I | [トップ](162/README.md) / [要約](162/human-entry.md) / [FAQ](162/faq.md) | [JA](162/ai-index.md) / [EN](162/en-ai-index.md) / [ZH](162/zh-ai-index.md) |
 | 163 | 文明監査 II | [トップ](163/README.md) / [要約](163/human-entry.md) / [FAQ](163/faq.md) | [JA](163/ai-index.md) / [EN](163/en-ai-index.md) / [ZH](163/zh-ai-index.md) |
 | 164 | 文明監査 III | [トップ](164/README.md) / [要約](164/human-entry.md) / [FAQ](164/faq.md) | [JA](164/ai-index.md) / [EN](164/en-ai-index.md) / [ZH](164/zh-ai-index.md) |
+| 165 | 文明OS比較総覧 | [トップ](165/README.md) / [要約](165/human-entry.md) / [FAQ](165/faq.md) | [JA](165/ai-index.md) / [EN](165/en-ai-index.md) / [ZH](165/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
