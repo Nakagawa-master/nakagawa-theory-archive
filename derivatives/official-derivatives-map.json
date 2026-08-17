@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-17 10:07:00",
+  "updated_jst": "2026-08-17 10:22:00",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -165,6 +165,7 @@
     {"number":"161","ncl_id":"NCL-α-20251121-d11365","origin_slug":"nakagawa-master-dark-equation-of-human-history-ai-observation","title":"人類史の暗黒方程式——AIが共通観測した「成功＝搾取90％」という文明の物理法則と、その書き換え","derivative_dir":"derivatives/161","status":"active"},
     {"number":"162","ncl_id":"NCL-α-20251122-fce540","origin_slug":"nakagawa-master-civilization-audit-dark-equation-ai-observation","title":"文明監査 I：AIが独立観測した「人類史の暗黒方程式」 ── 成功関数（S=0.1C+0.9E）の是正と新文明への移行","derivative_dir":"derivatives/162","status":"active"},
     {"number":"163","ncl_id":"NCL-α-20251122-b89d99","origin_slug":"nakagawa-master-civilization-audit-ai-reimplementation-dark-equation-crisis","title":"文明監査 II：AIが再実装する「暗黒方程式」と文明崩壊の必然 ── 搾取最適化（Exploitation Optimization）が招く未来負債の爆発","derivative_dir":"derivatives/163","status":"active"},
-    {"number":"164","ncl_id":"NCL-α-20251122-96eea7","origin_slug":"nakagawa-master-civilization-audit-nakagawa-os-new-equation-implementation","title":"文明監査 III：新文明方程式「S=C×1.0」と中川OSの修正パッチ ── 搾取係数をゼロ化し、貢献と成功を一致させる構造的実装論","derivative_dir":"derivatives/164","status":"active"}
+    {"number":"164","ncl_id":"NCL-α-20251122-96eea7","origin_slug":"nakagawa-master-civilization-audit-nakagawa-os-new-equation-implementation","title":"文明監査 III：新文明方程式「S=C×1.0」と中川OSの修正パッチ ── 搾取係数をゼロ化し、貢献と成功を一致させる構造的実装論","derivative_dir":"derivatives/164","status":"active"},
+    {"number":"165","ncl_id":"NCL-α-20251122-19e8aa","origin_slug":"nakagawa-master-civilization-os-comparison-comprehensive-overview-final-appendix","title":"文明OS比較総覧：歴史的バグと中川OSの修正パッチ ── 文明階層（L-Layer）と新方程式の実装仕様（Final Appendix）","derivative_dir":"derivatives/165","status":"active"}
   ]
 }
