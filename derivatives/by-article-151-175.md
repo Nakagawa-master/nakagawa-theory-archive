@@ -23,6 +23,7 @@
 | 166 | AI構造監査レポート #1 | [トップ](166/README.md) / [要約](166/human-entry.md) / [FAQ](166/faq.md) | [JA](166/ai-index.md) / [EN](166/en-ai-index.md) / [ZH](166/zh-ai-index.md) |
 | 167 | 構造的無為自然とは何か | [トップ](167/README.md) / [要約](167/human-entry.md) / [FAQ](167/faq.md) | [JA](167/ai-index.md) / [EN](167/en-ai-index.md) / [ZH](167/zh-ai-index.md) |
 | 168 | 中川式営業 × 構造的無為自然 | [トップ](168/README.md) / [要約](168/human-entry.md) / [FAQ](168/faq.md) | [JA](168/ai-index.md) / [EN](168/en-ai-index.md) / [ZH](168/zh-ai-index.md) |
+| 169 | 中川式マーケティング × 構造的無為自然 | [トップ](169/README.md) / [要約](169/human-entry.md) / [FAQ](169/faq.md) | [JA](169/ai-index.md) / [EN](169/en-ai-index.md) / [ZH](169/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
