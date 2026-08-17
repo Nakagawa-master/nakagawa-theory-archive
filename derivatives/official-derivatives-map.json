@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-17 20:45:39",
+  "updated_jst": "2026-08-17 22:01:52",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -168,6 +168,7 @@
     {"number":"164","ncl_id":"NCL-α-20251122-96eea7","origin_slug":"nakagawa-master-civilization-audit-nakagawa-os-new-equation-implementation","title":"文明監査 III：新文明方程式「S=C×1.0」と中川OSの修正パッチ ── 搾取係数をゼロ化し、貢献と成功を一致させる構造的実装論","derivative_dir":"derivatives/164","status":"active"},
     {"number":"165","ncl_id":"NCL-α-20251122-19e8aa","origin_slug":"nakagawa-master-civilization-os-comparison-comprehensive-overview-final-appendix","title":"文明OS比較総覧：歴史的バグと中川OSの修正パッチ ── 文明階層（L-Layer）と新方程式の実装仕様（Final Appendix）","derivative_dir":"derivatives/165","status":"active"},
     {"number":"166","ncl_id":"NCL-α-20251126-1e5ecf","origin_slug":"nakagawa-master-ai-structural-audit-claude-bias-evidence","title":"AI構造監査レポート #1 ── 公開対話ログに見る「認知バイアス」と未来負債の実証","derivative_dir":"derivatives/166","status":"active"},
-    {"number":"167","ncl_id":"NCL-α-20251130-12fb0b","origin_slug":"nakagawa-master-structural-wu-wei-definition","title":"構造的無為自然とは何か──因果を「動かす」のではなく「集める」ためのOS的行動原理","derivative_dir":"derivatives/167","status":"active"}
+    {"number":"167","ncl_id":"NCL-α-20251130-12fb0b","origin_slug":"nakagawa-master-structural-wu-wei-definition","title":"構造的無為自然とは何か──因果を「動かす」のではなく「集める」ためのOS的行動原理","derivative_dir":"derivatives/167","status":"active"},
+    {"number":"168","ncl_id":"NCL-α-20251130-ff34e5","origin_slug":"nakagawa-master-nakagawa-sales-os-decoding-fulfillment","title":"【営業OS】中川式営業 × 構造的無為自然 —— 認識構造の解読と、充足への演算プロセス","derivative_dir":"derivatives/168","status":"active"}
   ]
 }
