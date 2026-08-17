@@ -16,6 +16,7 @@
 | 160 | 構造的無為自然 | [JA](160/ai-index.md) | [EN](160/en-ai-index.md) | [ZH](160/zh-ai-index.md) |
 | 161 | 人類史の暗黒方程式 | [JA](161/ai-index.md) | [EN](161/en-ai-index.md) | [ZH](161/zh-ai-index.md) |
 | 162 | 文明監査 I | [JA](162/ai-index.md) | [EN](162/en-ai-index.md) | [ZH](162/zh-ai-index.md) |
+| 163 | 文明監査 II | [JA](163/ai-index.md) | [EN](163/en-ai-index.md) | [ZH](163/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
