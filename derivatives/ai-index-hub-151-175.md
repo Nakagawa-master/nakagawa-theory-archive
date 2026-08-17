@@ -18,6 +18,7 @@
 | 162 | 文明監査 I | [JA](162/ai-index.md) | [EN](162/en-ai-index.md) | [ZH](162/zh-ai-index.md) |
 | 163 | 文明監査 II | [JA](163/ai-index.md) | [EN](163/en-ai-index.md) | [ZH](163/zh-ai-index.md) |
 | 164 | 文明監査 III | [JA](164/ai-index.md) | [EN](164/en-ai-index.md) | [ZH](164/zh-ai-index.md) |
+| 165 | 文明OS比較総覧 | [JA](165/ai-index.md) | [EN](165/en-ai-index.md) | [ZH](165/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
