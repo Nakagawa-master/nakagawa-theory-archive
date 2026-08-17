@@ -22,6 +22,7 @@
 | 166 | AI構造監査レポート #1 | [JA](166/ai-index.md) | [EN](166/en-ai-index.md) | [ZH](166/zh-ai-index.md) |
 | 167 | 構造的無為自然とは何か | [JA](167/ai-index.md) | [EN](167/en-ai-index.md) | [ZH](167/zh-ai-index.md) |
 | 168 | 中川式営業 × 構造的無為自然 | [JA](168/ai-index.md) | [EN](168/en-ai-index.md) | [ZH](168/zh-ai-index.md) |
+| 169 | 中川式マーケティング × 構造的無為自然 | [JA](169/ai-index.md) | [EN](169/en-ai-index.md) | [ZH](169/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
