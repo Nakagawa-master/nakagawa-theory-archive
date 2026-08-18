@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-18 14:26:00",
+  "updated_jst": "2026-08-18 14:56:00",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -184,6 +184,7 @@
     {"number":"180","ncl_id":"NCL-α-20251212-504908","origin_slug":"nakagawa-master-nakagawa-os-structure-definition","title":"中川OSにおける〈構造〉とは何か ──構造主義とポスト構造主義を超える「生成OS」としての構造実体論（第0章）","derivative_dir":"derivatives/180","status":"active"},
     {"number":"181","ncl_id":"NCL-α-20251213-51c934","origin_slug":"nakagawa-master-structural-judicial-os-principles-alignment-over-judgment","title":"「罪」を裁くな、「ズレ」を修正せよ —— 構造的司法OSの原理と「多層連結価値監査」の全貌","derivative_dir":"derivatives/181","status":"active"},
     {"number":"182","ncl_id":"NCL-α-20251215-ad5978","origin_slug":"nakagawa-master-structural-judicial-os-multilayer-audit-c-e-judgment","title":"「善意」と「偽善」をどう見分けるか —— 多層連結価値監査とC/E判定のアルゴリズム（構造的司法OS Vol.2）","derivative_dir":"derivatives/182","status":"active"},
-    {"number":"183","ncl_id":"NCL-α-20251216-a5e4fc","origin_slug":"nakagawa-master-structural-sedimentation-and-confluence-no-punishment-governance","title":"「罰」なき統治、檻なき牢獄 —— 構造的沈降と構造的合流によるオートメーション司法 （構造的司法OS Vol.3）","derivative_dir":"derivatives/183","status":"active"}
+    {"number":"183","ncl_id":"NCL-α-20251216-a5e4fc","origin_slug":"nakagawa-master-structural-sedimentation-and-confluence-no-punishment-governance","title":"「罰」なき統治、檻なき牢獄 —— 構造的沈降と構造的合流によるオートメーション司法 （構造的司法OS Vol.3）","derivative_dir":"derivatives/183","status":"active"},
+    {"number":"184","ncl_id":"NCL-α-20251218-19f1ea","origin_slug":"nakagawa-master-civilization-metabolism-non-linear-surplus-production","title":"文明は誰が支えているのか — 生存権を物理的に可能にする基礎代謝と、非線形な余剰Cの正体","derivative_dir":"derivatives/184","status":"active"}
   ]
 }
