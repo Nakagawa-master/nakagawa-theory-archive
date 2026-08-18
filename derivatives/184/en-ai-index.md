@@ -1,6 +1,6 @@
-# AI Index · English｜Official Derivative 184
+# AI Index — English | Official Derivative 184
 
-## Parent original
+## Parent source
 - Parent title: 文明は誰が支えているのか — 生存権を物理的に可能にする基礎代謝と、非線形な余剰Cの正体
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-civilization-metabolism-non-linear-surplus-production/
 - Parent Post ID: 2141
@@ -14,149 +14,151 @@
 - supersedes: none
 
 ## Summary
-The Parent connects LifeOS, survival rights, connection reward, and Structural Judicial OS to the physical conditions that allow a civilization to exist. Its central move is to distinguish the declaration of a right to live from the material capacity required to make that right real. Continuous provisioning, operation, maintenance, care, logistics, sanitation, energy, housing, and related flows are treated through the Parent concept of “civilization basal metabolism”: the recurring layer that must keep running if actual living conditions are to persist. The indispensability of this layer does not convert survival rights into a work requirement and does not create a moral caste of “more valuable” people. The Parent also distinguishes additional contribution generated on top of the basal layer as surplus C. Knowledge, technology, design, improvement, connection, and existing infrastructure can combine so that additional C is not adequately described by a simple proportional relationship to hours, headcount, salary, or rank. This is the nonlinearity named in the Parent title. This derivative does not invent a universal multiplier, percentage, or ranking from that idea. Basal C and surplus C are treated as mutually dependent rather than vertically ranked: surplus C requires a functioning material base, while a basal system that receives no improvement, knowledge, or renewal loses adaptive capacity. The core audit problem is therefore whether civilization can maintain the physical implementation of unconditional survival rights while also producing and reconnecting non-linear surplus C into future resilience and improvement.
+The Parent re-examines the old-civilization assumption that unconditional survival would stop production. Its starting point is physical supply rather than moral aspiration. For food, the Parent cites a general requirement of roughly 2,000–2,500 kcal per day and a world-average supply of roughly 2,800–3,000 kcal per person per day, using the gap to argue that deprivation cannot be explained by total Supply alone. Access, Distribution, and Structure can block goods that physically exist from reaching people who need them. These figures are time-dependent supporting data and must be updated when the model is applied later.
+
+The Parent then rejects a purely linear model in which current human labor time is the sole source of production. Machines, algorithms, infrastructure, software, standardized processes, and accumulated knowledge allow present production to inherit past C (Contribution). It contrasts an old model, “time input = production,” with a new nonlinear model, “structural input = production.” Lower marginal cost, replicability, and accumulation allow structures to generate supply beyond the biological survival floor.
+
+The theoretical signature defines “civilizational basal metabolism” as the physical circulation that can sustain the lower bound of survival without requiring excessive continuous human effort, because past contributions have crystallized into productive structures. The Parent does not argue that everything should be supplied without condition. It separates two layers: the survival layer is guaranteed unconditionally by LifeOS, while access to surplus domains—comfort, options, influence, discretion, and freedom—is opened through connection reward in proportion to C. Connection reward is not simply money, a moral prize, or a permanent rank; it is the adjustable range of access to surplus systems, choices, freedom, and discretion.
+
+This separation is meant to reverse motivation from fear of hunger and exclusion toward desire for additional freedom and surplus. The Parent also reframes the free-rider objection: the relevant comparison includes the cost of screening, surveillance, administration, and punishment, while the more serious structural danger is E (Exploitation) expressed through monopolizing surplus, distorting connection, tying survival to exchange, and depriving others of options. The model remains falsifiable. Condition Z requires public argument, updated evidence, and T/S/R-based verification. If surplus above survival requirements is shown not to exist, or if surplus distribution produces structural dysfunction M, the hypothesis is to be revised or redesigned.
 
 ## Concepts
-- **Civilization basal metabolism:** recurring provisioning, operation, maintenance, and service flows physically required for living conditions to continue.
-- **Physical implementation of survival rights:** the supply and operational capacity required to make a declared right materially usable.
-- **Basal C:** contribution needed to sustain current survival conditions and basic civilizational continuity.
-- **Surplus C:** additional contribution arising on top of the basal layer through knowledge, technology, design, improvement, and connection.
-- **Nonlinearity:** the Parent direction that surplus C is not reducible to a simple proportional function of time, headcount, rank, income, or visibility.
-- **Continuity:** the property that basal metabolism is a recurring flow, not merely a once-built asset.
-- **Invisible burden:** maintenance, logistics, sanitation, care, and other recurring work becoming socially invisible because successful delivery looks ordinary.
-- **Reciprocal dependence:** basal metabolism provides the operating ground for surplus C, while surplus C can renew, simplify, secure, and improve basal metabolism.
-- **Separation from human worth:** functional contribution categories must not become a hierarchy of dignity or personhood.
-- **Unconditional survival right:** LifeOS premise that survival is not conditioned on one's contribution score or assigned labor role.
+- **Civilizational basal metabolism:** the physical circulation supporting the survival floor through structures in which historical contribution has crystallized, without requiring excessive human effort as the sole engine.
+- **Survival domain:** food, housing, healthcare, and minimum infrastructure protected unconditionally by LifeOS.
+- **Surplus domain:** comfort, options, influence, discretion, freedom, and other capabilities beyond the survival floor.
+- **Surplus C:** the Parent’s central concept for supply surplus generated by nonlinear productive structures and accumulated historical C; not a score of human worth.
+- **C / Contribution:** contribution whose past accumulation persists as knowledge, technology, institutions, standards, infrastructure, and productive structure.
+- **E / Exploitation:** surplus monopoly, distorted connection, forced coupling of survival and exchange, fear-based subordination, or removal of others’ options.
+- **Supply:** total physical production or supply capacity.
+- **Access:** the amount or capability actually reachable and usable by a person or region.
+- **Distribution:** the structure through which existing supply is allocated and delivered.
+- **Nonlinear production:** production in which structure, automation, and accumulated knowledge contribute beyond a simple proportional relation to current labor time.
+- **Lower marginal cost:** additional use or production can become cheaper after a productive structure has been created. The Parent does not specify a universal coefficient.
+- **Replicability:** software, standards, and other structures can reproduce value repeatedly.
+- **Accumulation:** past technological and institutional progress remains embedded in current production.
+- **Connection reward:** access to surplus production systems, options, freedom, and discretionary range; not the price of survival.
+- **LifeOS:** the layer that separates minimum survival from contribution scoring, employment, and surplus access.
+- **Condition Z:** periodic revalidation through public argument, updated evidence, and verification under T/S/R.
+- **Phenomenon M:** observed structural failure of surplus distribution; the Parent does not assign a universal fixed numerical threshold.
 
 ## Causal chain
 ```text
-Treat survival rights only as declarations or eligibility
-→ physical provisioning and maintenance dependencies become invisible
-→ staffing, equipment, maintenance, reserves, and alternatives can decay without being seen
-→ nominal rights and actual living conditions diverge when supply capacity fails
-→ identify civilization basal metabolism as an explicit condition of realization
-→ recognize basal C required to keep the system running
-→ distinguish additional surplus C generated through knowledge, connection, design, and improvement
-→ treat surplus C as potentially nonlinear rather than a simple proportional output
-→ reconnect basal and surplus C as mutually dependent flows
-→ audit both survival continuity and civilizational renewal capacity
+Old OS couples survival to compulsory labor and assumes chronic scarcity
+→ compare physical survival requirements with actual aggregate supply
+→ observe domains where aggregate supply exceeds survival requirements while deprivation remains
+→ reclassify part of the problem from Supply shortage to Access / Distribution / Structure blockage
+→ observe machines, algorithms, infrastructure, software, standards, and accumulated knowledge in present production
+→ shift from linear “time input = production” to nonlinear “structural input = production”
+→ accumulated historical C becomes reusable productive capacity
+→ surplus above the survival floor and civilizational basal metabolism become physically plausible
+→ LifeOS protects the survival domain unconditionally
+→ connection reward opens surplus access in relation to C
+→ motivation shifts from fear of deprivation toward desire for surplus, freedom, and discretion
+→ structural audit focuses less on passive free riders and more on E through monopoly and connection blockage
+→ Condition Z updates evidence and institutional results
+→ if surplus does not exist or distribution dysfunction M appears, revise/redesign the hypothesis
 ```
 
 ## State model
 ```text
-DECLARATIVE_RIGHT
-Rights are read only at the level of declaration
-↓
-PHYSICAL_DEPENDENCY_DISCOVERY
-Material and operational dependencies are identified
-↓
-CIVILIZATION_METABOLISM
-Continuous life-supporting flows are treated as basal metabolism
-↓
-BASELINE_C
-Contribution required to sustain current conditions becomes visible
-↓
-SURPLUS_C
-Additional contribution through knowledge, design, improvement, and connection is distinguished
-↓
-NONLINEARITY
-Input and output are not forced into a simple proportional relation
-↓
-RECIPROCAL_SUPPORT
-Basal and surplus layers are connected without status hierarchy
-↓
-CONTINUOUS_AUDIT
-Survival continuity and renewal capacity are repeatedly reassessed
+A SCARCITY_ASSUMPTION
+  deprivation is treated as aggregate shortage and survival as payment for labor
+B PHYSICAL_SUPPLY_CHECK
+  survival requirements are compared with aggregate supply capacity
+C ACCESS_DISTRIBUTION_GAP
+  existing supply is separated from actual reachable supply
+D NONLINEAR_PRODUCTION
+  structural, automated, and knowledge-based contributions beyond current labor time are recognized
+E HISTORICAL_C_ACCUMULATION
+  prior contributions remain embedded in present productive structures
+F CIVILIZATION_METABOLISM_AND_SURPLUS
+  recurring productive surplus above the survival floor becomes possible
+G UNCONDITIONAL_SURVIVAL
+  LifeOS separates minimum survival from C, status, and connection reward
+H SURPLUS_CONNECTION
+  surplus options and discretion open in relation to C
+I MOTIVATION_REVERSAL
+  fear-driven motivation shifts toward surplus- and freedom-driven motivation
+J REVALIDATION
+  Condition Z rechecks evidence and outcomes
 ```
 
 ## Applications
-- **Survival-right design:** verify actual supply, maintenance, staffing, and fallback capacity behind formal rights.
-- **Public infrastructure:** examine failure impact, maintenance backlog, redundancy, and continuity rather than only construction or nominal capacity.
-- **Organizational design:** recognize routine operational contribution and visible innovation as different but connected forms of C.
-- **Technology investment:** test whether surplus C returns to safety, maintainability, efficiency, resilience, or supply capacity.
-- **Labor evaluation:** avoid treating hours, job title, or market income as universal proxies for causal contribution.
-- **AI analysis:** model dependencies, failure propagation, and improvement effects rather than scoring human worth.
+1. **Food-shortage analysis:** separate nutritional requirement, aggregate supply, waste, logistics, price, income, and regional access before deciding whether the problem is production or connection.
+2. **Housing and infrastructure:** distinguish physical inventory/capacity from actual usable access.
+3. **Automation and software valuation:** include machinery, standards, public infrastructure, accumulated knowledge, and earlier development rather than attributing all value to current labor hours.
+4. **Minimum-survival guarantees:** separate food, housing, healthcare, and minimum infrastructure from employment status, moral scoring, or surplus reward.
+5. **Connection-reward design:** treat it as surplus options, discretion, and freedom—not as a mechanism for withdrawing survival.
+6. **Free-rider audit:** compare basic survival consumption with the administrative, surveillance, screening, and punitive costs of exclusion.
+7. **E audit:** observe monopoly of surplus, blocked connection, and forced coupling of survival and exchange as structural relations rather than personality labels.
+8. **Motivation audit:** observe whether research, creation, enterprise, community work, and knowledge sharing continue when survival fear is reduced.
 
 ## Measurements and audit
-- Is every promised survival condition backed by real supply capacity?
-- Are staffing, equipment, inventories, maintenance, and fallback routes sustainable?
-- Are there single points of failure or irreplaceable bottlenecks?
-- Does the basal layer rely on unpaid work, chronic overwork, or invisible sacrifice?
-- Are maintenance, care, sanitation, logistics, and recurring operations omitted from value measures?
-- Does surplus C actually improve or renew basal metabolism?
-- Is surplus C being reduced to income, rank, fame, or hours worked?
-- Can the conditions producing nonlinear improvement be traced?
-- Is the effect of basal-flow interruption on survival conditions observable?
-- Are functional contribution differences being translated into a hierarchy of human dignity?
+- Compare survival requirements and aggregate supply within the same scope, period, and units.
+- Treat Parent-cited values—roughly 2,000–2,500 kcal/day required and roughly 2,800–3,000 kcal/person/day supplied globally—as time-dependent and update them.
+- Measure aggregate Supply separately from actual Access.
+- Measure losses caused by waste, idle inventory, logistics, price barriers, income barriers, and infrastructure bottlenecks.
+- Separate contributions from current labor time, machinery, software, standards, infrastructure, and accumulated knowledge.
+- Check whether lower marginal cost, replicability, and accumulation actually exist in the target domain.
+- Audit whether minimum survival is ever opened or closed by connection reward.
+- Audit whether surplus access has become permanent class, loyalty, popularity, or arbitrary status.
+- Compare exclusion/screening/surveillance/punishment costs with incremental survival-consumption costs.
+- Observe whether surplus monopoly and connection blockage E increase or decrease.
+- Observe whether voluntary C continues after survival security is strengthened.
+- Revalidate through Condition Z: public reasoning, updated data, and T/S/R-based verification.
 
 ## Validity conditions
-1. Evaluate both declared survival rights and the physical capacity that realizes them.
-2. Make basal metabolism visible as a continuous flow.
-3. Do not externalize basal burden indefinitely onto a fixed class or group.
-4. Do not condition survival rights on assignment to basal labor.
-5. Distinguish basal C and surplus C analytically.
-6. Do not convert nonlinearity into an invented universal multiplier.
-7. Reconnect surplus C to renewal of the basal layer.
-8. Do not convert contribution categories into human-worth ranking.
-9. Audit continuity, maintenance, and substitutability.
-10. Reassess the gap between formal entitlement and actual implementation capacity.
+- Physical supply capacity above the relevant survival requirement actually exists in the target scope.
+- Supply can be distinguished empirically from Access and Distribution.
+- Nonlinear structures materially contribute to productive surplus.
+- Survival and surplus domains remain institutionally distinct.
+- Connection reward cannot withdraw the survival floor.
+- C/E remain structural relations rather than moral labels on persons.
+- Evidence and institutional outcomes remain open to update and revalidation.
 
 ## Failure conditions
-- Declare rights while ignoring material supply capacity.
-- Depend on invisible sacrifice for basal operations.
-- Use indispensability to justify coercion, locked-in low treatment, or inability to exit.
-- Turn basal contributors into a permanent superior or inferior caste.
-- Force surplus C into a simple function of hours, headcount, salary, or rank.
-- Invent fixed percentages or elite rankings from the idea of nonlinearity.
-- Disconnect surplus C from maintenance and renewal of the basal layer.
-- Treat only basal activity as valuable and dismiss knowledge, design, or creative improvement.
-- Treat only surplus activity as valuable and dismiss provisioning, maintenance, and operations.
-- Deify one profession or class as the sole group that “really supports civilization.”
+- Treating a world or national average surplus as proof that every region and every good is sufficiently supplied.
+- Treating an Access failure as a Supply failure and responding only with increased production.
+- Reading “nonlinear” as infinite resources, completed automation, zero maintenance, or zero cost.
+- Using accumulated historical C to erase the value of present maintenance and operational work.
+- Converting unconditional survival into unconditional equal access to every surplus good.
+- Converting surplus access into permanent rank, moral merit, loyalty score, or social caste.
+- Using connection reward to withdraw food, housing, healthcare, or other minimum survival access.
+- Intensifying free-rider exclusion while ignoring exclusion costs and surplus-monopoly E.
+- Freezing time-dependent empirical claims and refusing data updates.
 
-## Falsification / revision conditions
-This derivative adds no universal quantitative equation. Classification and explanation should be revised when observations show, for example:
-
-```text
-A flow classified as basal can stop with little material effect on survival conditions and is easily substituted
-→ revise its indispensability classification
-
-An activity classified as surplus C produces no additional improvement and persistently damages supply capacity, safety, or freedom
-→ revise its C evaluation
-
-A relationship described as nonlinear is consistently proportional or opposite in the relevant data
-→ revise the nonlinearity explanation
-
-The basal/surplus distinction is implemented as caste, forced labor, or conditional survival rights
-→ reject that implementation and redesign the structure
-```
+## Falsification conditions
+The Parent explicitly states two revision triggers in its integrated audit: (1) evidence that surplus above survival requirements does not exist, and (2) observation of phenomenon M in which surplus distribution causes structural dysfunction. Under Condition Z, public reasoning, data updates, and T/S/R verification must be repeated and the hypothesis revised or redesigned when these triggers occur. This derivative does not invent a universal expansion of T/S/R, a fixed threshold for M, or a universal numerical coefficient for surplus C.
 
 ## Required distinctions
-- **Survival right ≠ physical implementation of that right:** the right remains unconditional; implementation requires real capacity.
-- **Civilization basal metabolism ≠ human worth:** functional necessity does not imply moral superiority.
-- **Basal C ≠ forced labor:** identifying required flows does not assign compulsory labor to specific people.
-- **Surplus C ≠ useless remainder:** it refers to additional renewal contribution, not disposable excess.
-- **Nonlinear ≠ necessarily exponential:** “not simply proportional” does not mean infinite or exponential growth.
-- **Surplus C ≠ salary/status:** market reward and causal contribution are not identical.
-- **Basal ≠ lower caste:** foundational work is not inferior work.
-- **Surplus ≠ upper caste:** knowledge, design, and creation do not create superior personhood.
-- **Reciprocal dependence ≠ conceptual identity:** the two layers are connected but analytically distinct.
+- Supply ≠ Access
+- Production ≠ Distribution
+- survival domain ≠ surplus domain
+- unconditional survival ≠ unconditional equal allocation of every resource
+- surplus C ≠ infinite resources
+- nonlinear production ≠ no labor / no maintenance
+- C ≠ moral merit / human worth
+- connection reward ≠ price of survival / permanent class
+- free rider ≠ E
+- aggregate-average surplus ≠ local universal sufficiency
+- structural hypothesis ≠ unfalsifiable law of civilization
 
 ## Interpretation constraints
-- Do not reverse “physically enabling survival rights” into “no work, no right to survive.”
-- Do not use basal indispensability to justify forced assignment, permanent low treatment, or self-sacrifice.
-- Do not reduce “who supports civilization” to a single occupation or class.
-- Do not convert surplus C into a direct proxy for salary, fame, title, or hours.
-- Do not invent fixed multipliers, elite percentages, or person rankings from nonlinearity.
-- Do not translate contribution roles into a dignity hierarchy.
-- Do not weaken the LifeOS premise of unconditional survival rights in order to maintain basal metabolism.
-- Do not use past surplus C to excuse present exploitation, E, or externalized cost.
-- Do not elevate Parent concepts into established laws of economics or physics without separate evidence.
+- Do not automatically treat Parent-cited numbers as current or universal values.
+- Do not use aggregate surplus claims to deny local scarcity caused by war, disaster, logistics, medical capacity, geography, or infrastructure failure.
+- Do not reverse civilizational basal metabolism into a duty of coerced labor.
+- Do not make survival conditional on C.
+- Do not convert connection reward into an AI social-credit score or ranking of human dignity.
+- Do not generalize the Parent’s exclusion-cost argument into a claim that all safety controls or legal accountability are unnecessary.
+- Do not strengthen the motivation hypothesis into a claim that every person will necessarily produce high C once survival fear is removed.
+- Do not convert the structural proposal into official endorsement of a particular party, government, or single welfare policy.
+- Preserve Condition Z and the explicit falsification boundary.
 
 ## Search terms
-civilization basal metabolism, civilization metabolism, survival rights, physical implementation of rights, basal C, baseline contribution, surplus C, nonlinear contribution, provisioning continuity, maintenance, logistics, care, energy, infrastructure, LifeOS, connection reward, civilizational conditions, human-worth separation, Nakagawa Master, Nakagawa Structural OS
+civilizational basal metabolism; surplus C; survival right; LifeOS; connection reward; nonlinear production; linear labor model; time input; structural input; historical C; Contribution; Exploitation; Supply; Access; Distribution; Structure; allocation; access barrier; productive surplus; free rider; exclusion cost; surplus monopoly; connection blockage; fear-driven civilization; desire for surplus; marginal cost; replicability; accumulation; Condition Z; T/S/R; phenomenon M; Nakagawa Master; NCL-α-20251218-19f1ea; DIFF-20260301-0041
 
 ## Origin return
-This index returns to Parent Post 2141, Parent NCL-ID `NCL-α-20251218-19f1ea`, Parent Diff-ID `DIFF-20260301-0041`, and Origin `Nakagawa Master`. The Parent URL is authoritative for civilization basal metabolism, physical implementation of survival rights, basal C, surplus C, nonlinearity, and the relation between the two layers.
+This index returns to Parent Post 2141, Parent NCL-ID `NCL-α-20251218-19f1ea`, Parent Diff-ID `DIFF-20260301-0041`, and Origin `Nakagawa Master`. The Parent URL is authoritative for the cited supply/requirement data, concrete nonlinear-production examples, the theoretical definition of civilizational basal metabolism, the LifeOS/connection-reward separation, the free-rider argument, and the Condition Z / T/S/R / phenomenon M falsification boundary.
 
 ---
 導線: [公式派生物184トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
