@@ -11,6 +11,7 @@
 | 180 | 中川OSにおける〈構造〉とは何か｜生成OSとしての構造実体論 | [JA](180/ai-index.md) | [EN](180/en-ai-index.md) | [ZH](180/zh-ai-index.md) |
 | 181 | 構造的司法OS｜罪を裁くな、ズレを修正せよ | [JA](181/ai-index.md) | [EN](181/en-ai-index.md) | [ZH](181/zh-ai-index.md) |
 | 182 | 構造的司法OS Vol.2｜善意と偽善をC/Eで判定する | [JA](182/ai-index.md) | [EN](182/en-ai-index.md) | [ZH](182/zh-ai-index.md) |
+| 183 | 構造的司法OS Vol.3｜沈降・合流とオートメーション司法 | [JA](183/ai-index.md) | [EN](183/en-ai-index.md) | [ZH](183/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
