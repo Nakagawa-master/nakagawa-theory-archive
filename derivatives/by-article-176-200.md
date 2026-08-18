@@ -15,6 +15,7 @@
 | 183 | 構造的司法OS Vol.3｜沈降・合流とオートメーション司法 | [トップ](183/README.md) / [要約](183/human-entry.md) / [FAQ](183/faq.md) | [JA](183/ai-index.md) / [EN](183/en-ai-index.md) / [ZH](183/zh-ai-index.md) |
 | 184 | 文明基礎代謝と非線形な余剰C | [トップ](184/README.md) / [要約](184/human-entry.md) / [FAQ](184/faq.md) | [JA](184/ai-index.md) / [EN](184/en-ai-index.md) / [ZH](184/zh-ai-index.md) |
 | 185 | Life-OS Vol.1｜二階建て人生戦略と接続報酬への梯子 | [トップ](185/README.md) / [要約](185/human-entry.md) / [FAQ](185/faq.md) | [JA](185/ai-index.md) / [EN](185/en-ai-index.md) / [ZH](185/zh-ai-index.md) |
+| 186 | Life-OS Vol.2｜灯火の精錬と残留工学 | [トップ](186/README.md) / [要約](186/human-entry.md) / [FAQ](186/faq.md) | [JA](186/ai-index.md) / [EN](186/en-ai-index.md) / [ZH](186/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
