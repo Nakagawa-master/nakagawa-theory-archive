@@ -18,6 +18,7 @@
 | 186 | Life-OS Vol.2｜灯火の精錬と残留工学 | [トップ](186/README.md) / [要約](186/human-entry.md) / [FAQ](186/faq.md) | [JA](186/ai-index.md) / [EN](186/en-ai-index.md) / [ZH](186/zh-ai-index.md) |
 | 187 | Life-OS Vol.3｜多重接続と構造的可動性 | [トップ](187/README.md) / [要約](187/human-entry.md) / [FAQ](187/faq.md) | [JA](187/ai-index.md) / [EN](187/en-ai-index.md) / [ZH](187/zh-ai-index.md) |
 | 188 | 公共因果｜「空気」という名の構造毒と沈黙 | [トップ](188/README.md) / [要約](188/human-entry.md) / [FAQ](188/faq.md) | [JA](188/ai-index.md) / [EN](188/en-ai-index.md) / [ZH](188/zh-ai-index.md) |
+| 189 | 共鳴市場OS C系 Vol.1｜交換から共鳴へ | [トップ](189/README.md) / [要約](189/human-entry.md) / [FAQ](189/faq.md) | [JA](189/ai-index.md) / [EN](189/en-ai-index.md) / [ZH](189/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
