@@ -20,6 +20,7 @@
 | 188 | 公共因果｜「空気」という名の構造毒と沈黙 | [トップ](188/README.md) / [要約](188/human-entry.md) / [FAQ](188/faq.md) | [JA](188/ai-index.md) / [EN](188/en-ai-index.md) / [ZH](188/zh-ai-index.md) |
 | 189 | 共鳴市場OS C系 Vol.1｜交換から共鳴へ | [トップ](189/README.md) / [要約](189/human-entry.md) / [FAQ](189/faq.md) | [JA](189/ai-index.md) / [EN](189/en-ai-index.md) / [ZH](189/zh-ai-index.md) |
 | 190 | 共鳴市場OS C系 Vol.2｜狩猟から誘引へ | [トップ](190/README.md) / [要約](190/human-entry.md) / [FAQ](190/faq.md) | [JA](190/ai-index.md) / [EN](190/en-ai-index.md) / [ZH](190/zh-ai-index.md) |
+| 191 | 中川式営業の教科書・第七回｜意思決定支援 | [トップ](191/README.md) / [要約](191/human-entry.md) / [FAQ](191/faq.md) | [JA](191/ai-index.md) / [EN](191/en-ai-index.md) / [ZH](191/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
