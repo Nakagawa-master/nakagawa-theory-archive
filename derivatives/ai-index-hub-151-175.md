@@ -28,6 +28,7 @@
 | 172 | 中川式組織論 × 構造的無為自然 | [JA](172/ai-index.md) | [EN](172/en-ai-index.md) | [ZH](172/zh-ai-index.md) |
 | 173 | 中川式時間論 × 構造的無為自然 | [JA](173/ai-index.md) | [EN](173/en-ai-index.md) | [ZH](173/zh-ai-index.md) |
 | 174 | 中川式学習論 × 構造的無為自然 | [JA](174/ai-index.md) | [EN](174/en-ai-index.md) | [ZH](174/zh-ai-index.md) |
+| 175 | 中川式認識論 × 構造的無為自然 | [JA](175/ai-index.md) | [EN](175/en-ai-index.md) | [ZH](175/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
