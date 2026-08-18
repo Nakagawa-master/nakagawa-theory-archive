@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-18 21:57:00",
+  "updated_jst": "2026-08-19 00:25:00",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -189,6 +189,7 @@
     {"number":"185","ncl_id":"NCL-α-20251221-9933ea","origin_slug":"life-os-vol1-two-story-strategy-survival-to-freedom","title":"死なない時代の「絶望」と「希望」 —— Life-OSが示す「二階建て」の人生戦略と、接続報酬への梯子","derivative_dir":"derivatives/185","status":"active"},
     {"number":"186","ncl_id":"NCL-α-20251221-fb25ca","origin_slug":"refining-tomoshibi-residual-signal-engineering","title":"構造的熱源としての「灯火」の精錬 —— 欲望（ノイズ）と衝動（シグナル）を分離する残留工学","derivative_dir":"derivatives/186","status":"active"},
     {"number":"187","ncl_id":"NCL-α-20251228-f7cae2","origin_slug":"structural-mobility-poly-connection-capability","title":"構造的可動性の最終形 —— 多重接続（Poly-Connection）という「能力」の完成 （Life-OS Vol.3）","derivative_dir":"derivatives/187","status":"active"},
-    {"number":"188","ncl_id":"NCL-α-20251229-5e14ab","origin_slug":"intermission-public-causality-silence-is-causal","title":"「空気」という名の構造毒 —— 沈黙は中立ではなく、因果である","derivative_dir":"derivatives/188","status":"active"}
+    {"number":"188","ncl_id":"NCL-α-20251229-5e14ab","origin_slug":"intermission-public-causality-silence-is-causal","title":"「空気」という名の構造毒 —— 沈黙は中立ではなく、因果である","derivative_dir":"derivatives/188","status":"active"},
+    {"number":"189","ncl_id":"NCL-α-20251230-2f9949","origin_slug":"redefining-value-physics-exchange-to-resonance-general-theory","title":"価値の物理学の再定義 —— 「交換」から「共鳴」へ 共鳴市場OS 一般理論（C系 Vol.1）","derivative_dir":"derivatives/189","status":"active"}
   ]
 }
