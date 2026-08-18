@@ -18,6 +18,7 @@
 | 187 | Life-OS Vol.3｜多重接続と構造的可動性 | [JA](187/ai-index.md) | [EN](187/en-ai-index.md) | [ZH](187/zh-ai-index.md) |
 | 188 | 公共因果｜「空気」という名の構造毒と沈黙 | [JA](188/ai-index.md) | [EN](188/en-ai-index.md) | [ZH](188/zh-ai-index.md) |
 | 189 | 共鳴市場OS C系 Vol.1｜交換から共鳴へ | [JA](189/ai-index.md) | [EN](189/en-ai-index.md) | [ZH](189/zh-ai-index.md) |
+| 190 | 共鳴市場OS C系 Vol.2｜狩猟から誘引へ | [JA](190/ai-index.md) | [EN](190/en-ai-index.md) | [ZH](190/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
