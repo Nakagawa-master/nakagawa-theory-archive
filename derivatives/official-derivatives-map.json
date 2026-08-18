@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-18 12:08:00",
+  "updated_jst": "2026-08-18 12:09:00",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -179,6 +179,7 @@
     {"number":"175","ncl_id":"NCL-α-20251204-8a45b1","origin_slug":"nakagawa-master-nakagawa-cognitive-os-structural-mirror","title":"【認識OS】中川式認識論 × 構造的無為自然 ―― 水面としての心、地形としての構造、鏡面としての観測","derivative_dir":"derivatives/175","status":"active"},
     {"number":"176","ncl_id":"NCL-α-20251204-027dd7","origin_slug":"nakagawa-master-nakagawa-cognitive-os-buddhism-parallel","title":"【補章】認識OSの補助言語としての原始仏教 —— 「五蘊」と「超俯瞰」の構造的同期","derivative_dir":"derivatives/176","status":"active"},
     {"number":"177","ncl_id":"NCL-α-20251206-ab6aee","origin_slug":"nakagawa-master-nakagawa-civilization-os-tao-connection-reward","title":"【文明OS】中川式文明論 × タオ（Tao） —— 「接続報酬社会」によるL7価値関数の書き換えと、構造的無為自然の完全実装","derivative_dir":"derivatives/177","status":"active"},
-    {"number":"178","ncl_id":"NCL-α-20251207-afaf00","origin_slug":"nakagawa-master-nakagawa-civilization-os-final-synthesis-tao-religion-integration","title":"【文明OS 外付け最終章】L7真理層への帰還 —— 宗教OSの構造統合とタオ・リブート","derivative_dir":"derivatives/178","status":"active"}
+    {"number":"178","ncl_id":"NCL-α-20251207-afaf00","origin_slug":"nakagawa-master-nakagawa-civilization-os-final-synthesis-tao-religion-integration","title":"【文明OS 外付け最終章】L7真理層への帰還 —— 宗教OSの構造統合とタオ・リブート","derivative_dir":"derivatives/178","status":"active"},
+    {"number":"179","ncl_id":"NCL-α-20251209-22e45c","origin_slug":"nakagawa-master-structural-civilization-llm-objective-function-crisis","title":"【構造文明の臨界 第三部】 LLMという文明の分岐点 —— 「民意基準の破壊兵器」か「構造基準の共存装置」か","derivative_dir":"derivatives/179","status":"active"}
   ]
 }
