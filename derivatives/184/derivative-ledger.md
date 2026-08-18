@@ -35,6 +35,17 @@
 - surface: zh-ai-index.md
 - supersedes: none
 
+## Seven surfaces
+| Surface | Derivative identity | Parent return |
+|---|---|---|
+| README.md | JA Hub | Parent Post 2141 / NCL-α-20251218-19f1ea |
+| human-entry.md | JA Hub | Parent Post 2141 / NCL-α-20251218-19f1ea |
+| faq.md | JA Hub | Parent Post 2141 / NCL-α-20251218-19f1ea |
+| ai-index.md | JA Hub | Parent Post 2141 / NCL-α-20251218-19f1ea |
+| en-ai-index.md | EN AI Index | Parent Post 2141 / NCL-α-20251218-19f1ea |
+| zh-ai-index.md | ZH AI Index | Parent Post 2141 / NCL-α-20251218-19f1ea |
+| derivative-ledger.md | JA Hub | Parent Post 2141 / NCL-α-20251218-19f1ea |
+
 ## Lineage
 ```text
 Nakagawa Master
@@ -47,7 +58,7 @@ Nakagawa Master
 ```
 
 ## Origin return
-全派生IDはParent Post 2141、Parent NCL-ID `NCL-α-20251218-19f1ea`、Parent Diff-ID `DIFF-20260301-0041`、Origin `Nakagawa Master`へ回帰する。文明基礎代謝、生存権の物理実装、基礎代謝C、余剰C、非線形性、両者の相互依存の正本はParent URLである。
+全派生IDはParent Post 2141、Parent NCL-ID `NCL-α-20251218-19f1ea`、Parent Diff-ID `DIFF-20260301-0041`、Origin `Nakagawa Master`へ回帰する。文明基礎代謝、非線形生産、歴史的C、余剰C、Supply / Access / Distribution、LifeOS、接続報酬、C/E、条件Z、T/S/R、現象Mの正本はParent URLで確認する。
 
 ---
 導線: [公式派生物184トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
