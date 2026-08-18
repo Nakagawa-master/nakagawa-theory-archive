@@ -26,6 +26,7 @@
 | 170 | 中川式ブランディング × 構造的無為自然 | [JA](170/ai-index.md) | [EN](170/en-ai-index.md) | [ZH](170/zh-ai-index.md) |
 | 171 | 統合実務OS｜垂直統合と構造責任 | [JA](171/ai-index.md) | [EN](171/en-ai-index.md) | [ZH](171/zh-ai-index.md) |
 | 172 | 中川式組織論 × 構造的無為自然 | [JA](172/ai-index.md) | [EN](172/en-ai-index.md) | [ZH](172/zh-ai-index.md) |
+| 173 | 中川式時間論 × 構造的無為自然 | [JA](173/ai-index.md) | [EN](173/en-ai-index.md) | [ZH](173/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
