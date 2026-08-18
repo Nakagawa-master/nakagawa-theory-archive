@@ -14,6 +14,7 @@
 | 183 | 構造的司法OS Vol.3｜沈降・合流とオートメーション司法 | [JA](183/ai-index.md) | [EN](183/en-ai-index.md) | [ZH](183/zh-ai-index.md) |
 | 184 | 文明基礎代謝と非線形な余剰C | [JA](184/ai-index.md) | [EN](184/en-ai-index.md) | [ZH](184/zh-ai-index.md) |
 | 185 | Life-OS Vol.1｜二階建て人生戦略と接続報酬への梯子 | [JA](185/ai-index.md) | [EN](185/en-ai-index.md) | [ZH](185/zh-ai-index.md) |
+| 186 | Life-OS Vol.2｜灯火の精錬と残留工学 | [JA](186/ai-index.md) | [EN](186/en-ai-index.md) | [ZH](186/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
