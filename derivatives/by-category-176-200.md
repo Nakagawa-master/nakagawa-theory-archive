@@ -31,6 +31,7 @@
 | No. | タイトル | 入口 | メタ視点 |
 |---|---|---|---|
 | 189 | 価値の物理学の再定義｜交換から共鳴へ | [189](189/README.md) | 欠乏・情報非対称・限定選択肢に依存するExchange OSの成立条件崩壊から、価値をMagnitude＋DirectionのVectorとして再定義し、L7整合によるResonance、C→S、固有Gravity Zone、Eとしての循環不全、S→CのReflux、自然分離、共鳴的接続人、Flow wealthへ市場像を再構成する。Vol.1は一般理論に閉じ、具体実装を先取りせず、条件Z・T/S/R・θ・δ・現象Mで反証・改訂する |
+| 190 | 重力のエンジニアリング｜狩猟から誘引へ | [190](190/README.md) | Hunting型の追跡・説得から離れ、`F = Mass × Purity`でC蓄積とL7純度を重力条件として捉え、Signalingで対象／非対象を明示、Filtering・検疫・Event Horizon・Priceで境界を保護する。新C供給、内部者C、横断接続、Eへの構造免疫を通じて重力圏を河川型ネットワークとして維持し、Gravity Masterへ主体像を移す。数式・価格・排出は原典範囲に閉じ、Condition Z・T/S/R・θ・δ・現象Mで反証・改訂する |
 
 ## 構造実体論・生成OS・L1〜L7
 | No. | タイトル | 入口 | メタ視点 |
