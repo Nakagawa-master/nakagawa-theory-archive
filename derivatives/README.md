@@ -9,24 +9,27 @@
 - [記事別一覧｜101〜125](by-article-101-125.md)
 - [記事別一覧｜126〜150](by-article-126-150.md)
 - [記事別一覧｜151〜175](by-article-151-175.md)
+- [記事別一覧｜176〜200](by-article-176-200.md)
 - [カテゴリ別一覧](by-category.md)
 - [安定性ロットカテゴリ入口｜093〜102](by-category-093-102.md)
 - [通常量産カテゴリ入口｜103〜125](by-category-103-125.md)
 - [カテゴリ入口｜126〜150](by-category-126-150.md)
 - [カテゴリ入口｜151〜175](by-category-151-175.md)
+- [カテゴリ入口｜176〜200](by-category-176-200.md)
 - [AI索引まとめ｜001〜043](ai-index-hub.md)
 - [AI索引まとめ｜044〜076](ai-index-hub-044-058.md)
 - [AI索引まとめ｜077〜100](ai-index-hub-077-100.md)
 - [AI索引まとめ｜101〜125](ai-index-hub-101-125.md)
 - [AI索引まとめ｜126〜150](ai-index-hub-126-150.md)
 - [AI索引まとめ｜151〜175](ai-index-hub-151-175.md)
+- [AI索引まとめ｜176〜200](ai-index-hub-176-200.md)
 - [構造翻訳カテゴリ](structural-reading-index.md)
 - [接続・共鳴・市場設計入口](connection-resonance-market-index.md)
 - [語彙・理念・移行カテゴリ](value-ideology-transition-index.md)
 
 ## 公開範囲
 ```text
-OD001〜OD175
+OD001〜OD176
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
@@ -82,9 +85,10 @@ README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 - [173: 中川式時間論 × 構造的無為自然](173/README.md)
 - [174: 中川式学習論 × 構造的無為自然](174/README.md)
 - [175: 中川式認識論 × 構造的無為自然](175/README.md)
+- [176: 認識OSの補助言語としての原始仏教](176/README.md)
 
 ## 原典接続・参照束
 新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。OD093以降もOD085 Golden Masterの構造・密度・導線契約を保持し、各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持する。内容、ID、来歴、導線、原典回帰が一致しない場合は公開前に最上流へ戻して修復する。
 
 ---
-導線: [記事別126〜150](by-article-126-150.md) / [記事別151〜175](by-article-151-175.md) / [カテゴリ151〜175](by-category-151-175.md) / [AI索引151〜175](ai-index-hub-151-175.md)
+導線: [記事別151〜175](by-article-151-175.md) / [記事別176〜200](by-article-176-200.md) / [カテゴリ176〜200](by-category-176-200.md) / [AI索引176〜200](ai-index-hub-176-200.md)
