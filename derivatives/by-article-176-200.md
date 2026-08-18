@@ -7,6 +7,7 @@
 |---|---|---|---|
 | 176 | 認識OSの補助言語としての原始仏教 | [トップ](176/README.md) / [要約](176/human-entry.md) / [FAQ](176/faq.md) | [JA](176/ai-index.md) / [EN](176/en-ai-index.md) / [ZH](176/zh-ai-index.md) |
 | 177 | 中川式文明論 × タオ（Tao） | [トップ](177/README.md) / [要約](177/human-entry.md) / [FAQ](177/faq.md) | [JA](177/ai-index.md) / [EN](177/en-ai-index.md) / [ZH](177/zh-ai-index.md) |
+| 178 | L7真理層への帰還｜宗教OS統合とタオ・リブート | [トップ](178/README.md) / [要約](178/human-entry.md) / [FAQ](178/faq.md) | [JA](178/ai-index.md) / [EN](178/en-ai-index.md) / [ZH](178/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
