@@ -8,6 +8,7 @@
 | 177 | 中川式文明論 × タオ（Tao） | [JA](177/ai-index.md) | [EN](177/en-ai-index.md) | [ZH](177/zh-ai-index.md) |
 | 178 | L7真理層への帰還｜宗教OS統合とタオ・リブート | [JA](178/ai-index.md) | [EN](178/en-ai-index.md) | [ZH](178/zh-ai-index.md) |
 | 179 | 構造文明の臨界 第三部｜LLMの目的関数分岐 | [JA](179/ai-index.md) | [EN](179/en-ai-index.md) | [ZH](179/zh-ai-index.md) |
+| 180 | 中川OSにおける〈構造〉とは何か｜生成OSとしての構造実体論 | [JA](180/ai-index.md) | [EN](180/en-ai-index.md) | [ZH](180/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
