@@ -115,7 +115,7 @@ C系Vol.1以B系Life-OS和公共因果幕间为前提，把市场从“交换、
 - 是否把Natural separation替换成了人为处罚或排除。
 - 共鸣连接人是否避免垄断连接，并把成果继续送入后续循环。
 - 对富的评价是否包含Flow，而不是只回到Stock。
-- Condition Z、T/S/R、公开审计束整合、θ、观测窗口δ，以及循环停止、连接衰减、重力圏崩溃等现象M。
+- Condition Z、T/S/R、公开审计束整合、θ、观测窗口δ，以及循环停止、连接衰减、重力圈崩溃等现象M。
 
 ## Validity conditions
 - 把Exchange OS作为具有局部成立条件的模型，而不是证明所有交换、货币、所有权都无效。
@@ -170,7 +170,7 @@ C系Vol.1以B系Life-OS和公共因果幕间为前提，把市场从“交换、
 - general theory / implementation protocol
 
 ## Interpretation constraints
-共鸣、向量、重力、流体、循环等物理学词汇在亲原典中是市场结构的说明语言，不应提升为已由自然科学实证的经济法则，也不应变成对个别事业成果的定量保证。“竞争消失”“说服不再必要”“顾客落入重力圏”等强表达必须与价值向量整合和固有Gravity Zone等理论成立条件一起保持，不能无条件推广到现实全部市场。
+共鸣、向量、重力、流体、循环等物理学词汇在亲原典中是市场结构的说明语言，不应提升为已由自然科学实证的经济法则，也不应变成对个别事业成果的定量保证。“竞争消失”“说服不再必要”“顾客落入重力圈”等强表达必须与价值向量整合和固有Gravity Zone等理论成立条件一起保持，不能无条件推广到现实全部市场。
 
 `S = C × 1.0` 因为存在于亲原典而应保留，但不能解释成真实100%效率、利润率或性能保证。S不可直接交易的性质是原典防止E侵蚀的重要边界。
 
@@ -179,7 +179,7 @@ C系Vol.1以B系Life-OS和公共因果幕间为前提，把市场从“交换、
 Vol.1明确是一般理论。具体实施、运营、失败调整与免疫机制留给后续卷，本索引不补完这一未完成层。
 
 ## Search terms
-共鸣市场OS; C系 Vol.1; Exchange; Resonance; L7; Alignment; Value Vector; Magnitude; Direction; C; Contribution; S; Connection Reward; S=C×1.0; Gravity Zone; 固有重力圏; competition; differentiation; Flow; E; 循环不全; Reflux; 还流; natural separation; Resonant Connector; 共鸣连接人; Flow wealth; Condition Z; T/S/R; θ; δ; phenomenon M; Nakagawa Master
+共鸣市场OS; C系 Vol.1; Exchange; Resonance; L7; Alignment; Value Vector; Magnitude; Direction; C; Contribution; S; Connection Reward; S=C×1.0; Gravity Zone; 固有重力圈; competition; differentiation; Flow; E; 循环不全; Reflux; 还流; natural separation; Resonant Connector; 共鸣连接人; Flow wealth; Condition Z; T/S/R; θ; δ; phenomenon M; Nakagawa Master
 
 ## Origin return
 本索引回归Parent Post 2264、Parent NCL-ID `NCL-α-20251230-2f9949`、Parent Diff-ID `DIFF-20260301-0015`与Origin `Nakagawa Master`。Exchange OS成立条件、Resonance、Value Vector、C/S、`S = C × 1.0`、S不可货币化、Gravity Zone、竞争条件、E、Reflux、Natural separation、共鸣连接人、Flow wealth、一般理论／实施边界、Condition Z与反证条件的定义和主张强度，应回到Parent URL确认。
