@@ -26,6 +26,7 @@
 | 169 | 中川式マーケティング × 構造的無為自然 | [トップ](169/README.md) / [要約](169/human-entry.md) / [FAQ](169/faq.md) | [JA](169/ai-index.md) / [EN](169/en-ai-index.md) / [ZH](169/zh-ai-index.md) |
 | 170 | 中川式ブランディング × 構造的無為自然 | [トップ](170/README.md) / [要約](170/human-entry.md) / [FAQ](170/faq.md) | [JA](170/ai-index.md) / [EN](170/en-ai-index.md) / [ZH](170/zh-ai-index.md) |
 | 171 | 統合実務OS｜垂直統合と構造責任 | [トップ](171/README.md) / [要約](171/human-entry.md) / [FAQ](171/faq.md) | [JA](171/ai-index.md) / [EN](171/en-ai-index.md) / [ZH](171/zh-ai-index.md) |
+| 172 | 中川式組織論 × 構造的無為自然 | [トップ](172/README.md) / [要約](172/human-entry.md) / [FAQ](172/faq.md) | [JA](172/ai-index.md) / [EN](172/en-ai-index.md) / [ZH](172/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
