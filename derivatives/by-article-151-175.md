@@ -28,6 +28,7 @@
 | 171 | 統合実務OS｜垂直統合と構造責任 | [トップ](171/README.md) / [要約](171/human-entry.md) / [FAQ](171/faq.md) | [JA](171/ai-index.md) / [EN](171/en-ai-index.md) / [ZH](171/zh-ai-index.md) |
 | 172 | 中川式組織論 × 構造的無為自然 | [トップ](172/README.md) / [要約](172/human-entry.md) / [FAQ](172/faq.md) | [JA](172/ai-index.md) / [EN](172/en-ai-index.md) / [ZH](172/zh-ai-index.md) |
 | 173 | 中川式時間論 × 構造的無為自然 | [トップ](173/README.md) / [要約](173/human-entry.md) / [FAQ](173/faq.md) | [JA](173/ai-index.md) / [EN](173/en-ai-index.md) / [ZH](173/zh-ai-index.md) |
+| 174 | 中川式学習論 × 構造的無為自然 | [トップ](174/README.md) / [要約](174/human-entry.md) / [FAQ](174/faq.md) | [JA](174/ai-index.md) / [EN](174/en-ai-index.md) / [ZH](174/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
