@@ -156,4 +156,4 @@ E系, Preservation Design, clean initial conditions, New Node, 構造認識欠�
 New Node、汚染の因果方向、過剰注入、Preservation、初期条件、四ノイズ、Firewall、配置、Mini Loop、接続成立報酬、自然起動、Quarantine Gate、D/E対称性、対処／予防、Condition Z・T/S/R・反証条件はParent URLへ戻って確認する。本索引は親原典を置換しない。
 
 ---
-導線: [公式派生物197トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物197トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
