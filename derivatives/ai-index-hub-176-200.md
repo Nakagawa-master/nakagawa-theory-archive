@@ -24,6 +24,7 @@
 | 193 | 構造的翻訳プロトコル｜法・契約・血縁の意味再定義 | [JA](193/ai-index.md) | [EN](193/en-ai-index.md) | [ZH](193/zh-ai-index.md) |
 | 194 | 戦略的異質接続｜旧文明リソースを燃料へ変換するクリーンルーム理論 | [JA](194/ai-index.md) | [EN](194/en-ai-index.md) | [ZH](194/zh-ai-index.md) |
 | 195 | 文明の構造的移行（Migration）戦略｜暗黒方程式から接続報酬社会へ | [JA](195/ai-index.md) | [EN](195/en-ai-index.md) | [ZH](195/zh-ai-index.md) |
+| 196 | 文明はなぜ必ず誤るのか｜易経を外在構造監査として読む | [JA](196/ai-index.md) | [EN](196/en-ai-index.md) | [ZH](196/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
