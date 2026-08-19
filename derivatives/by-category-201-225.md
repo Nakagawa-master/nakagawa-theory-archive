@@ -22,5 +22,10 @@
 |---|---|---|---|
 | 204 | 不動産市場OS Vol.7｜金融・大資本連携と「合意」即「履行」 | [204](204/README.md) | 市場に残る最終摩擦を合意から履行までの時間として定義し、流動性を履行到達時間で再定義する。Real-time Credit、Dynamic LTV、Code-based Agreement、状態遷移、Atomic Settlement、Digital Escrowを接続し、巨大資本を市場仕様に従うUtilityとして配置する。高速化と同時にCircuit Breakerと人間責任を維持し、民間側を行政接続可能な状態へ整える。Condition ZはTransparency / Safety / Responsibility、θ・δ・キャンセル／再交渉／非同期履行／ログ欠損／例外比率等の現象Mで反証・改訂する |
 
+## 不動産市場OS・行政接続・参照束
+| No. | タイトル | 入口 | メタ視点 |
+|---|---|---|---|
+| 205 | 不動産市場OS Vol.8｜行政データ接続と重説参照束 | [205](205/README.md) | 行政摩擦を窓口速度ではなく説明責任の不確実性として捉え、Source / Version / Scope / Exception / Missing State / Stop Condition / Conflict Detection / Responsibility BoundaryをReference Clusterへ束ねる。未確定・要確認・停止を正式状態として扱い、停止には再開条件を付ける。Provider / Explainer / Verifierを分離し、Observed / Estimated / Uncertainを混同せず、更新差分を監査ログへ戻す。Condition ZはTrace / Stop / Responsibility、θ・δ・追加照会／再交渉／説明事故／停止頻度／ログ欠損等の現象Mで反証・改訂する |
+
 ---
 導線: [公式派生物トップ](README.md) / [記事別201〜225](by-article-201-225.md) / [AI索引201〜225](ai-index-hub-201-225.md)
