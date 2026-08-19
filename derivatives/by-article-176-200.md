@@ -24,6 +24,7 @@
 | 192 | 外部界面の設計図｜Legacy-OSとの非汚染接続プロトコル | [トップ](192/README.md) / [要約](192/human-entry.md) / [FAQ](192/faq.md) | [JA](192/ai-index.md) / [EN](192/en-ai-index.md) / [ZH](192/zh-ai-index.md) |
 | 193 | 構造的翻訳プロトコル｜法・契約・血縁の意味再定義 | [トップ](193/README.md) / [要約](193/human-entry.md) / [FAQ](193/faq.md) | [JA](193/ai-index.md) / [EN](193/en-ai-index.md) / [ZH](193/zh-ai-index.md) |
 | 194 | 戦略的異質接続｜旧文明リソースを燃料へ変換するクリーンルーム理論 | [トップ](194/README.md) / [要約](194/human-entry.md) / [FAQ](194/faq.md) | [JA](194/ai-index.md) / [EN](194/en-ai-index.md) / [ZH](194/zh-ai-index.md) |
+| 195 | 文明の構造的移行（Migration）戦略｜暗黒方程式から接続報酬社会へ | [トップ](195/README.md) / [要約](195/human-entry.md) / [FAQ](195/faq.md) | [JA](195/ai-index.md) / [EN](195/en-ai-index.md) / [ZH](195/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
