@@ -21,6 +21,7 @@
 | 189 | 共鳴市場OS C系 Vol.1｜交換から共鳴へ | [トップ](189/README.md) / [要約](189/human-entry.md) / [FAQ](189/faq.md) | [JA](189/ai-index.md) / [EN](189/en-ai-index.md) / [ZH](189/zh-ai-index.md) |
 | 190 | 共鳴市場OS C系 Vol.2｜狩猟から誘引へ | [トップ](190/README.md) / [要約](190/human-entry.md) / [FAQ](190/faq.md) | [JA](190/ai-index.md) / [EN](190/en-ai-index.md) / [ZH](190/zh-ai-index.md) |
 | 191 | 共鳴市場OS C系 Vol.3｜市場の永続化設計 | [トップ](191/README.md) / [要約](191/human-entry.md) / [FAQ](191/faq.md) | [JA](191/ai-index.md) / [EN](191/en-ai-index.md) / [ZH](191/zh-ai-index.md) |
+| 192 | 中川式営業の教科書・第七回｜意思決定支援 | [トップ](192/README.md) / [要約](192/human-entry.md) / [FAQ](192/faq.md) | [JA](192/ai-index.md) / [EN](192/en-ai-index.md) / [ZH](192/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
