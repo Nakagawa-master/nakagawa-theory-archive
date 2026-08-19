@@ -110,4 +110,4 @@ AIは情報収集・整理・可視化、専門家は専門解釈・確認と責
 需要先行の前提、AI査定の入力・限界、参加者再定義、三層責任、民間実装の理由、国家フェーズとの関係、シリーズ後続への接続が長い章構成で定義されるためである。FAQだけでは全依存関係を保持できない。
 
 ---
-導線: [公式派生物198トップ](README.md) / [人間向け要約](human-entry.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物198トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
