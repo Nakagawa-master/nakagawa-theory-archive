@@ -155,4 +155,4 @@ E-series, Preservation Design, clean initial conditions, New Node, structural re
 Return to the Parent URL for the causal direction of contamination, New Node, Over-injection, Preservation, initial conditions, the four proxy functions, Firewall, placement, Mini Loop, connection-established reward, Natural Ignition, Quarantine Gate, D/E symmetry, treatment/prevention, Condition Z, T/S/R, and falsification conditions. This index does not replace the parent original.
 
 ---
-Navigation: [Official Derivative 197 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
+Navigation: [Official Derivative 197 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · English](en-ai-index.md) / [AI index · Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
