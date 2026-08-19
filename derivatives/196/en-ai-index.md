@@ -138,4 +138,4 @@ external structural audit, external causal audit, I Ching, civilization OS, inte
 Return to the Parent URL for the limits of internal judgment, the non-ruling nature of the dual-layer design, the I Ching reframing, dori as pass condition, the integration of structure/dori/causality, Nakagawa OS's stated novelty, Condition Z, T/S/R, θ, δ, and falsification conditions. This index does not replace the parent original.
 
 ---
-Navigation: [Official Derivative 196 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
+Navigation: [Official Derivative 196 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · English](en-ai-index.md) / [AI index · Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
