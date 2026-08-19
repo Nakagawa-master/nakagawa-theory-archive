@@ -110,4 +110,4 @@
 内面判断の批判、二層設計の非支配性、易経から占いラベルを剥がす論証、道理・因果の再定義、中川OSの新規性、条件Zと反証条件が長い依存関係で展開されるためである。FAQだけでは主張強度と境界を完全に保持できない。
 
 ---
-導線: [公式派生物196トップ](README.md) / [人間向け要約](human-entry.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物196トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
