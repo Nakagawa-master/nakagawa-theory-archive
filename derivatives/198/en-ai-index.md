@@ -153,4 +153,4 @@ Real Estate Market OS, Demand-First Market OS, demand-first model, latent demand
 Definitions, causal relations, application limits, and epistemic status for Market OS, demand-first ordering, demand signals, AI valuation, participant roles, three-layer responsibility, private implementation, informed choice, Condition Z, T/S/R, θ, δ, and phenomena M must be checked against the Parent URL. This index does not replace the parent original.
 
 ---
-導線: [公式派生物198トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物198トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
