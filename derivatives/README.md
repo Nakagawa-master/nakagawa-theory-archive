@@ -32,7 +32,7 @@
 
 ## 公開範囲
 ```text
-OD001〜OD201
+OD001〜OD202
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
@@ -114,6 +114,7 @@ README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 - [199: 不動産市場OS Vol.2｜張力均衡とヘイト制御](199/README.md)
 - [200: 不動産市場OS Vol.3｜全分岐×全時点×全主体の数値設計](200/README.md)
 - [201: 不動産市場OS Vol.4｜責任分散アーキテクチャ](201/README.md)
+- [202: 不動産市場OS Vol.5｜市場参加者の再定義とインセンティブ設計](202/README.md)
 
 ## 原典接続・参照束
 新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。OD093以降もOD085 Golden Masterの構造・密度・導線契約を保持し、各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持する。内容、ID、来歴、導線、原典回帰が一致しない場合は公開前に最上流へ戻して修復する。
