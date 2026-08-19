@@ -28,6 +28,7 @@
 | 196 | 文明はなぜ必ず誤るのか｜易経を外在構造監査として読む | [トップ](196/README.md) / [要約](196/human-entry.md) / [FAQ](196/faq.md) | [JA](196/ai-index.md) / [EN](196/en-ai-index.md) / [ZH](196/zh-ai-index.md) |
 | 197 | 教育とは「育てる」ことではない｜初期条件を守るE系保存設計 | [トップ](197/README.md) / [要約](197/human-entry.md) / [FAQ](197/faq.md) | [JA](197/ai-index.md) / [EN](197/en-ai-index.md) / [ZH](197/zh-ai-index.md) |
 | 198 | 不動産市場OS Vol.1｜需要先行型モデルによる不動産循環の再設計 | [トップ](198/README.md) / [要約](198/human-entry.md) / [FAQ](198/faq.md) | [JA](198/ai-index.md) / [EN](198/en-ai-index.md) / [ZH](198/zh-ai-index.md) |
+| 199 | 不動産市場OS Vol.2｜張力均衡とヘイト制御 | [トップ](199/README.md) / [要約](199/human-entry.md) / [FAQ](199/faq.md) | [JA](199/ai-index.md) / [EN](199/en-ai-index.md) / [ZH](199/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
