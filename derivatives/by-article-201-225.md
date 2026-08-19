@@ -10,6 +10,7 @@
 | 203 | 不動産市場OS Vol.6｜炎上・誤用とEthical Shield | [トップ](203/README.md) / [要約](203/human-entry.md) / [FAQ](203/faq.md) | [JA](203/ai-index.md) / [EN](203/en-ai-index.md) / [ZH](203/zh-ai-index.md) |
 | 204 | 不動産市場OS Vol.7｜金融・大資本連携と「合意」即「履行」 | [トップ](204/README.md) / [要約](204/human-entry.md) / [FAQ](204/faq.md) | [JA](204/ai-index.md) / [EN](204/en-ai-index.md) / [ZH](204/zh-ai-index.md) |
 | 205 | 不動産市場OS Vol.8｜行政データ接続と重説参照束 | [トップ](205/README.md) / [要約](205/human-entry.md) / [FAQ](205/faq.md) | [JA](205/ai-index.md) / [EN](205/en-ai-index.md) / [ZH](205/zh-ai-index.md) |
+| 206 | 不動産市場OS Vol.9｜NAOS・国家レイヤーの合意形成OS | [トップ](206/README.md) / [要約](206/human-entry.md) / [FAQ](206/faq.md) | [JA](206/ai-index.md) / [EN](206/en-ai-index.md) / [ZH](206/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
