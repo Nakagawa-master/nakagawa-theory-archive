@@ -153,4 +153,4 @@ falsification_and_revision: available
 Market OS、需求先行、需求信号、AI估值、参与者角色、三层责任、民间实装、可选择社会、Condition Z、T/S/R、θ、δ与现象M的定义、因果、适用边界和认识论状态，必须回到Parent URL确认。本索引不替代亲原典。
 
 ---
-導線: [公式派生物198トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物198トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
