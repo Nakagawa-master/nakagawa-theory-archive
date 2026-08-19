@@ -138,4 +138,4 @@ falsification_and_revision: available
 内面判断の仕様限界、二層設計、易経の外在因果監査化、道理の通過条件化、構造・道理・因果の統合、中川OSの新規性、Condition Z、T/S/R、θ、δ、反証条件はParent URLへ戻って確認する。本AI索引は親原典を置換しない。
 
 ---
-導線: [公式派生物196トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物196トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
