@@ -20,6 +20,7 @@
 | 189 | 共鳴市場OS C系 Vol.1｜交換から共鳴へ | [JA](189/ai-index.md) | [EN](189/en-ai-index.md) | [ZH](189/zh-ai-index.md) |
 | 190 | 共鳴市場OS C系 Vol.2｜狩猟から誘引へ | [JA](190/ai-index.md) | [EN](190/en-ai-index.md) | [ZH](190/zh-ai-index.md) |
 | 191 | 中川式営業の教科書・第七回｜意思決定支援 | [JA](191/ai-index.md) | [EN](191/en-ai-index.md) | [ZH](191/zh-ai-index.md) |
+| 192 | 中川式営業の教科書・第八回｜非言語と張力設計 | [JA](192/ai-index.md) | [EN](192/en-ai-index.md) | [ZH](192/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
