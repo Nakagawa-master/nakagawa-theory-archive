@@ -56,4 +56,4 @@
 また「移行」を革命や強制改宗として読まない。原典の導入は、読む→試す→導入するという局所実装から始まり、末尾では非強制・可逆・検証可能、教育・研究・批評の自由を明示する。
 
 ---
-導線: [公式派生物195トップ](README.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物195トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
