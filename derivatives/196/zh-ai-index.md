@@ -138,4 +138,4 @@ falsification_and_revision: available
 关于内在判断的规格限制、二层设计的非统治性质、易经的外在因果审计化、道理的通行条件定义、结构/道理/因果的整合、中川OS所主张的新意、Condition Z、T/S/R、θ、δ与反证条件，应返回Parent URL核对。本索引不替代亲原典。
 
 ---
-导航: [官方衍生物196主页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导航: [官方衍生物196主页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
