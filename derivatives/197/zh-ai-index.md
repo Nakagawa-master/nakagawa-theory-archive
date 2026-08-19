@@ -155,4 +155,4 @@ E系, Preservation Design, clean initial conditions, New Node, 结构识别缺�
 关于污染的因果方向、New Node、Over-injection、Preservation、初始条件、四种代理函数、Firewall、配置、Mini Loop、连接成立奖励、Natural Ignition、Quarantine Gate、D/E对称性、对处/预防、Condition Z、T/S/R以及反证条件，应返回Parent URL核对。本索引不替代亲原典。
 
 ---
-导航: [官方衍生物197主页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导航: [官方衍生物197主页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
