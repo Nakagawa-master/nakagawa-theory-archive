@@ -157,4 +157,4 @@ verification: required
 关于Dark Equation、新OS价值函数、Tomoshibi、B/C/A/D依赖、连接成立条件、Choke、C/E审计、Colony、三阶段导入、“唯一路线”以及非强制、可逆、可验证原则的完整因果关系，应返回Parent URL确认。本衍生索引不替代亲原典。
 
 ---
-导航: [官方衍生物195主页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [衍生ID台账](derivative-ledger.md)
+导航: [官方衍生物195主页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [衍生ID台账](derivative-ledger.md)
