@@ -60,4 +60,4 @@ E系を「もっと自由な教育」「褒めない教育」「放任教育」�
 また「汚染」という語を人への清浄／不浄判定に使わない。原典での汚染は、構造認識不能を前提に外部代理評価以外で判断できなくなった固定状態を指す。
 
 ---
-導線: [公式派生物197トップ](README.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物197トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
