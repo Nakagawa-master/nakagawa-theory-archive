@@ -59,4 +59,4 @@
 また「易経＝監査装置」は、占いの別名として権威づけすることではない。未来を当てることから切り離し、配置・関係・タイミング・因果の通過条件を見る外在参照として再配置する主張である。
 
 ---
-導線: [公式派生物196トップ](README.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物196トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
