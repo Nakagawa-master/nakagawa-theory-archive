@@ -110,4 +110,4 @@ D系は外部接続時に内部が汚染されない衛生、E系は新規ノー
 新規ノード、過剰注入、四ノイズ、Firewall、配置、Mini Loop、Quarantine Gate、D/E対称性、社会化から合流可能性保全への終端が長い因果順序で定義されるためである。FAQだけでは各概念の方向と境界を完全には保持できない。
 
 ---
-導線: [公式派生物197トップ](README.md) / [人間向け要約](human-entry.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物197トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
