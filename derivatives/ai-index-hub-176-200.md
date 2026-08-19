@@ -26,6 +26,7 @@
 | 195 | 文明の構造的移行（Migration）戦略｜暗黒方程式から接続報酬社会へ | [JA](195/ai-index.md) | [EN](195/en-ai-index.md) | [ZH](195/zh-ai-index.md) |
 | 196 | 文明はなぜ必ず誤るのか｜易経を外在構造監査として読む | [JA](196/ai-index.md) | [EN](196/en-ai-index.md) | [ZH](196/zh-ai-index.md) |
 | 197 | 教育とは「育てる」ことではない｜初期条件を守るE系保存設計 | [JA](197/ai-index.md) | [EN](197/en-ai-index.md) | [ZH](197/zh-ai-index.md) |
+| 198 | 不動産市場OS Vol.1｜需要先行型モデルによる不動産循環の再設計 | [JA](198/ai-index.md) | [EN](198/en-ai-index.md) | [ZH](198/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
