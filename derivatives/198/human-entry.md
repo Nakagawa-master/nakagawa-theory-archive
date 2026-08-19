@@ -61,4 +61,4 @@
 また「AIで全部見えるようにする」を「AIが最適解を決める」と読まない。原典の倫理設計は逆で、AIが情報整理を強く担うほど、最終判断と責任を人間・専門家へ明示的に残す。
 
 ---
-導線: [公式派生物198トップ](README.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物198トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
