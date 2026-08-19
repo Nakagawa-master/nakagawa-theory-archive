@@ -158,4 +158,4 @@ verification: required
 暗黒方程式、新OS価値関数、灯火、B/C/A/Dの依存、接続成立条件、詰まり、C/E監査、コロニー、三段階導入、「唯一解」、非強制・可逆・検証可能性の射程はParent URLへ戻って確認する。本索引は親原典を置換しない。
 
 ---
-導線: [公式派生物195トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物195トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
