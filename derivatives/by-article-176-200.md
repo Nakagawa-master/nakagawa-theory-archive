@@ -26,6 +26,7 @@
 | 194 | 戦略的異質接続｜旧文明リソースを燃料へ変換するクリーンルーム理論 | [トップ](194/README.md) / [要約](194/human-entry.md) / [FAQ](194/faq.md) | [JA](194/ai-index.md) / [EN](194/en-ai-index.md) / [ZH](194/zh-ai-index.md) |
 | 195 | 文明の構造的移行（Migration）戦略｜暗黒方程式から接続報酬社会へ | [トップ](195/README.md) / [要約](195/human-entry.md) / [FAQ](195/faq.md) | [JA](195/ai-index.md) / [EN](195/en-ai-index.md) / [ZH](195/zh-ai-index.md) |
 | 196 | 文明はなぜ必ず誤るのか｜易経を外在構造監査として読む | [トップ](196/README.md) / [要約](196/human-entry.md) / [FAQ](196/faq.md) | [JA](196/ai-index.md) / [EN](196/en-ai-index.md) / [ZH](196/zh-ai-index.md) |
+| 197 | 教育とは「育てる」ことではない｜初期条件を守るE系保存設計 | [トップ](197/README.md) / [要約](197/human-entry.md) / [FAQ](197/faq.md) | [JA](197/ai-index.md) / [EN](197/en-ai-index.md) / [ZH](197/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
