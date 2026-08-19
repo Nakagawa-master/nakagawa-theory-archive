@@ -39,6 +39,7 @@
 |---|---|---|---|
 | 192 | 外部界面の設計図｜Legacy-OSとの非汚染接続プロトコル | [192](192/README.md) | 内部の中川OSと外部のLegacy-OSをDual-OSとして分離し、旧文明を敵でなく環境として扱う。勝利条件をPassへ移し、非敵対・非同化・非対称翻訳、半透膜、接触時間・多数派圧・評価依存による汚染管理、Sanitation、Adapter / Core Recovery、Connection Costを通じて、技術的適合と内部独立・撤退自由を両立する |
 | 193 | 構造的翻訳プロトコル｜法・契約・血縁の意味再定義 | [193](193/README.md) | D系Vol.2として、Legacy-OS摩擦をProtocol Mismatchとして診断し、「行動は変えるな。意味を変えろ」を実務化する。国家・税を環境／利用条件、就労を機能提供、血縁を外交関係へ再定義し、Input→Translate→Outputで精神論・曖昧圧力を機能・数値・責任へ変換する。Connection CostとBreak-evenを会計し、T/S/R・θ・δ・現象Mで監査し、赤字接続ではExit Codeと静かな撤退・再配置へ進む |
+| 194 | 戦略的異質接続｜クリーンルーム理論 | [194](194/README.md) | D系Vol.3として、Legacyが持つ資金・法・信用・インフラを全面拒否も全面同化もせず、Core / Legacy / Bufferを分離したClean Roomで利用可能資源へ変換する。Input SanitizationとOutput Packaging、Translator、Contract API、Decision Rights、Responsibility Boundary、Kill Switchを通じて主権と可逆性を保ち、T/S/R・θ・δでL7侵食・恒常赤字・直接混合を反証条件として監査し、必要時は価値を残して接続解除・資源再配置する |
 
 ## 構造実体論・生成OS・L1〜L7
 | No. | タイトル | 入口 | メタ視点 |
