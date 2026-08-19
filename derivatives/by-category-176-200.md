@@ -34,6 +34,11 @@
 | 190 | 重力のエンジニアリング｜狩猟から誘引へ | [190](190/README.md) | Hunting型の追跡・説得から離れ、`F = Mass × Purity`でC蓄積とL7純度を重力条件として捉え、Signalingで対象／非対象を明示、Filtering・検疫・Event Horizon・Priceで境界を保護する。新C供給、内部者C、横断接続、Eへの構造免疫を通じて重力圏を河川型ネットワークとして維持し、Gravity Masterへ主体像を移す。数式・価格・排出は原典範囲に閉じ、Condition Z・T/S/R・θ・δ・現象Mで反証・改訂する |
 | 191 | 市場の永続化設計｜腐敗に抗う構造的免疫と新陳代謝 | [191](191/README.md) | C系Vol.3として、成功後に接続報酬・固定化・サンクコストが生むL7/出力乖離と擬態状態を、人格判定でなく構造的免疫・Structural Checkpointで識別する。役割終了や不整合を代謝・卒業として循環から外し、最大化でなくOptimal Scaleを選び、必要時のSystole、拡張／収縮の拍動、Dynamic Equilibrium、L7＋実装構造へのStructural Successionによって創始者不在でも市場が生き続ける条件を設計する |
 
+## D系・外部界面・Legacy-OS接続
+| No. | タイトル | 入口 | メタ視点 |
+|---|---|---|---|
+| 192 | 外部界面の設計図｜Legacy-OSとの非汚染接続プロトコル | [192](192/README.md) | 内部の中川OSと外部のLegacy-OSをDual-OSとして分離し、旧文明を敵でなく環境として扱う。勝利条件をPassへ移し、非敵対・非同化・非対称翻訳、半透膜、接触時間・多数派圧・評価依存による汚染管理、Sanitation、Adapter / Core Recovery、Connection Costを通じて、技術的適合と内部独立・撤退自由を両立する |
+
 ## 構造実体論・生成OS・L1〜L7
 | No. | タイトル | 入口 | メタ視点 |
 |---|---|---|---|
