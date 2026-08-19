@@ -110,4 +110,4 @@
 暗黒方程式からB/C/A/D、コロニー、三段階導入、「唯一解」、非強制・可逆・検証可能性までが長い依存関係で記述されている。短い派生面だけでは強い語の条件や射程を失いやすいためである。
 
 ---
-導線: [公式派生物195トップ](README.md) / [人間向け要約](human-entry.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物195トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
