@@ -157,4 +157,4 @@ civilization Migration, Dark Equation, Legacy OS, New OS, Success = Contribution
 Return to the Parent URL for the full causal sequence among the Dark Equation, New OS value function, Tomoshibi, B/C/A/D dependencies, connection conditions, choke, C/E audit, colony design, the three-stage introduction process, the “only route” claim, and the principles of non-coercion, reversibility and verifiability. This derivative index does not replace the parent original.
 
 ---
-Navigation: [Official Derivative 195 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
+Navigation: [Official Derivative 195 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index · Japanese](ai-index.md) / [AI index · English](en-ai-index.md) / [AI index · Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
