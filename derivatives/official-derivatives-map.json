@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-19 11:19:00",
+  "updated_jst": "2026-08-19 12:08:00",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -192,6 +192,7 @@
     {"number":"188","ncl_id":"NCL-α-20251229-5e14ab","origin_slug":"intermission-public-causality-silence-is-causal","title":"「空気」という名の構造毒 —— 沈黙は中立ではなく、因果である","derivative_dir":"derivatives/188","status":"active"},
     {"number":"189","ncl_id":"NCL-α-20251230-2f9949","origin_slug":"redefining-value-physics-exchange-to-resonance-general-theory","title":"価値の物理学の再定義 —— 「交換」から「共鳴」へ 共鳴市場OS 一般理論（C系 Vol.1）","derivative_dir":"derivatives/189","status":"active"},
     {"number":"190","ncl_id":"NCL-α-20251230-3bb8e7","origin_slug":"gravity-engineering-implementation-protocol-hunting-to-signaling","title":"重力のエンジニアリング ——「狩猟（セールス）」から「誘引（シグナリング）」への実装プロトコル（C系 Vol.2）","derivative_dir":"derivatives/190","status":"active"},
-    {"number":"191","ncl_id":"NCL-α-20251230-605c55","origin_slug":"market-perpetuation-structural-immunity-metabolism-protocol","title":"市場の永続化設計 ——「腐敗（エントロピー）」に抗う構造的免疫と、新陳代謝のプロトコル （C系 Vol.3）","derivative_dir":"derivatives/191","status":"active"}
+    {"number":"191","ncl_id":"NCL-α-20251230-605c55","origin_slug":"market-perpetuation-structural-immunity-metabolism-protocol","title":"市場の永続化設計 ——「腐敗（エントロピー）」に抗う構造的免疫と、新陳代謝のプロトコル （C系 Vol.3）","derivative_dir":"derivatives/191","status":"active"},
+    {"number":"192","ncl_id":"NCL-α-20251102-d52234","origin_slug":"nakagawa-master-nakagawa-sales-07-decision-support","title":"中川式営業の教科書・第七回","derivative_dir":"derivatives/192","status":"active"}
   ]
 }
