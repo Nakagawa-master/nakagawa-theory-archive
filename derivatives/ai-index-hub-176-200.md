@@ -22,6 +22,7 @@
 | 191 | 共鳴市場OS C系 Vol.3｜市場の永続化設計 | [JA](191/ai-index.md) | [EN](191/en-ai-index.md) | [ZH](191/zh-ai-index.md) |
 | 192 | 外部界面の設計図｜Legacy-OSとの非汚染接続プロトコル | [JA](192/ai-index.md) | [EN](192/en-ai-index.md) | [ZH](192/zh-ai-index.md) |
 | 193 | 構造的翻訳プロトコル｜法・契約・血縁の意味再定義 | [JA](193/ai-index.md) | [EN](193/en-ai-index.md) | [ZH](193/zh-ai-index.md) |
+| 194 | 戦略的異質接続｜旧文明リソースを燃料へ変換するクリーンルーム理論 | [JA](194/ai-index.md) | [EN](194/en-ai-index.md) | [ZH](194/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
