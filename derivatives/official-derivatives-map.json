@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-20 17:43:00",
+  "updated_jst": "2026-08-20 18:28:00",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -216,6 +216,7 @@
     {"number":"212","ncl_id":"NCL-α-20260306-056522","origin_slug":"endurance-civilization-intro","title":"耐久文明論 序論｜第0論：なぜ今「耐久文明」を記述する必要があるのか","derivative_dir":"derivatives/212","status":"active"},
     {"number":"213","ncl_id":"NCL-α-20260307-f380bf","origin_slug":"definition-of-endurance-civilization","title":"耐久文明論 第一部｜第1論 耐久文明とは何か：再生なき生存の構造定義","derivative_dir":"derivatives/213","status":"active"},
     {"number":"214","ncl_id":"NCL-α-20260308-0b5d91","origin_slug":"engine-of-fear-structural-submission","title":"耐久文明論 第二部｜第2論 恐怖――合意なき従属の基礎代謝","derivative_dir":"derivatives/214","status":"active"},
-    {"number":"215","ncl_id":"NCL-α-20260308-24453f","origin_slug":"engine-of-profit-distribution-as-adhesive","title":"耐久文明論 第二部｜第3論 利益――腐敗を安定に見せる分配装置","derivative_dir":"derivatives/215","status":"active"}
+    {"number":"215","ncl_id":"NCL-α-20260308-24453f","origin_slug":"engine-of-profit-distribution-as-adhesive","title":"耐久文明論 第二部｜第3論 利益――腐敗を安定に見せる分配装置","derivative_dir":"derivatives/215","status":"active"},
+    {"number":"216","ncl_id":"NCL-α-20260309-6acc23","origin_slug":"engine-of-surveillance-order-without-consent","title":"耐久文明論 第二部｜第4論 監視⸻合意の代わりに逸脱を抑える技術","derivative_dir":"derivatives/216","status":"active"}
   ]
 }
