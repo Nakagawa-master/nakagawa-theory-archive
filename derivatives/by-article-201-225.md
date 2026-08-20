@@ -15,6 +15,7 @@
 | 208 | 合意形成の物理 第2論｜制度の意味圧縮 | [トップ](208/README.md) / [要約](208/human-entry.md) / [FAQ](208/faq.md) | [JA](208/ai-index.md) / [EN](208/en-ai-index.md) / [ZH](208/zh-ai-index.md) |
 | 209 | 合意形成の物理 第3論｜信頼の保存則 | [トップ](209/README.md) / [要約](209/human-entry.md) / [FAQ](209/faq.md) | [JA](209/ai-index.md) / [EN](209/en-ai-index.md) / [ZH](209/zh-ai-index.md) |
 | 210 | 合意形成の物理 第5論｜時間劣化と制度寿命 | [トップ](210/README.md) / [要約](210/human-entry.md) / [FAQ](210/faq.md) | [JA](210/ai-index.md) / [EN](210/en-ai-index.md) / [ZH](210/zh-ai-index.md) |
+| 211 | 合意形成の物理 第11論｜誘因の幾何学 | [トップ](211/README.md) / [要約](211/human-entry.md) / [FAQ](211/faq.md) | [JA](211/ai-index.md) / [EN](211/en-ai-index.md) / [ZH](211/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
