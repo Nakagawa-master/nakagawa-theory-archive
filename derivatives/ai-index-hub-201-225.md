@@ -17,6 +17,7 @@
 | 211 | 合意形成の物理 第11論｜誘因の幾何学 | [JA](211/ai-index.md) | [EN](211/en-ai-index.md) | [ZH](211/zh-ai-index.md) |
 | 212 | 耐久文明論 序論｜第0論：なぜ今「耐久文明」を記述する必要があるのか | [JA](212/ai-index.md) | [EN](212/en-ai-index.md) | [ZH](212/zh-ai-index.md) |
 | 213 | 耐久文明論 第一部｜第1論 耐久文明とは何か：再生なき生存の構造定義 | [JA](213/ai-index.md) | [EN](213/en-ai-index.md) | [ZH](213/zh-ai-index.md) |
+| 214 | 耐久文明論 第二部｜第2論 恐怖――合意なき従属の基礎代謝 | [JA](214/ai-index.md) | [EN](214/en-ai-index.md) | [ZH](214/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
