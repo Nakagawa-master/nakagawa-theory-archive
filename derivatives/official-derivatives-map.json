@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-19 11:19:00",
+  "updated_jst": "2026-08-20 16:29:00",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"","title":"Nakagawa OS L1-L7","derivative_dir":"derivatives/001","status":"active"},
     {"number":"002","ncl_id":"NCL-α-20260517-b80e39","origin_slug":"nakagawa-master-aki-002-exploitation-disguised-as-praise","title":"AKI-002｜称賛の顔をした搾取","derivative_dir":"derivatives/002","status":"active"},
@@ -192,6 +192,28 @@
     {"number":"188","ncl_id":"NCL-α-20251229-5e14ab","origin_slug":"intermission-public-causality-silence-is-causal","title":"「空気」という名の構造毒 —— 沈黙は中立ではなく、因果である","derivative_dir":"derivatives/188","status":"active"},
     {"number":"189","ncl_id":"NCL-α-20251230-2f9949","origin_slug":"redefining-value-physics-exchange-to-resonance-general-theory","title":"価値の物理学の再定義 —— 「交換」から「共鳴」へ 共鳴市場OS 一般理論（C系 Vol.1）","derivative_dir":"derivatives/189","status":"active"},
     {"number":"190","ncl_id":"NCL-α-20251230-3bb8e7","origin_slug":"gravity-engineering-implementation-protocol-hunting-to-signaling","title":"重力のエンジニアリング ——「狩猟（セールス）」から「誘引（シグナリング）」への実装プロトコル（C系 Vol.2）","derivative_dir":"derivatives/190","status":"active"},
-    {"number":"191","ncl_id":"NCL-α-20251230-605c55","origin_slug":"market-perpetuation-structural-immunity-metabolism-protocol","title":"市場の永続化設計 ——「腐敗（エントロピー）」に抗う構造的免疫と、新陳代謝のプロトコル （C系 Vol.3）","derivative_dir":"derivatives/191","status":"active"}
+    {"number":"191","ncl_id":"NCL-α-20251230-605c55","origin_slug":"market-perpetuation-structural-immunity-metabolism-protocol","title":"市場の永続化設計 ——「腐敗（エントロピー）」に抗う構造的免疫と、新陳代謝のプロトコル （C系 Vol.3）","derivative_dir":"derivatives/191","status":"active"},
+    {"number":"192","ncl_id":"NCL-α-20251230-9cc764","origin_slug":"external-interface-design-legacy-os-protocol","title":"外部界面の設計図 —— 旧文明（Legacy-OS）との「非汚染」接続プロトコル （D系 Vol.1）","derivative_dir":"derivatives/192","status":"active"},
+    {"number":"193","ncl_id":"NCL-α-20251231-dbebb8","origin_slug":"structural-translation-protocol-law-contract-kinship","title":"構造的翻訳プロトコル —— 法・契約・血縁との「意味再定義」と接続コスト最適化 （D系 Vol.2）","derivative_dir":"derivatives/193","status":"active"},
+    {"number":"194","ncl_id":"NCL-α-20251231-390f2b","origin_slug":"strategic-heterogeneity-connection-resource-conversion-clean-room","title":"戦略的異質接続 —— 旧文明のリソースを「燃料」に変換するクリーンルーム理論 （D系 Vol.3）","derivative_dir":"derivatives/194","status":"active"},
+    {"number":"195","ncl_id":"NCL-α-20260103-857506","origin_slug":"civilization-migration-strategy-dark-equation-to-connected-reward","title":"文明の構造的移行（Migration）戦略 —— 暗黒方程式の破綻から、接続報酬社会への唯一の実装ルート","derivative_dir":"derivatives/195","status":"active"},
+    {"number":"196","ncl_id":"NCL-α-20260103-e96bf7","origin_slug":"external-causal-audit-i-ching-civilization-os","title":"文明はなぜ必ず誤るのか  ── 因果を内在化できない人類のための「外在構造監査」としての易経","derivative_dir":"derivatives/196","status":"active"},
+    {"number":"197","ncl_id":"NCL-α-20260104-d516ab","origin_slug":"e-system-preservation-clean-initial-conditions","title":"教育とは「育てる」ことではない ── 旧文明のノイズから“初期条件”を守り、OSを自然起動させる保存設計（E系）","derivative_dir":"derivatives/197","status":"active"},
+    {"number":"198","ncl_id":"NCL-α-20260131-44d942","origin_slug":"real-estate-market-os-private-implementation","title":"不動産市場OS Vol.1【民間実装編】市場OSの思想と初期構造 ―― 需要先行型モデルによる不動産循環の再設計","derivative_dir":"derivatives/198","status":"active"},
+    {"number":"199","ncl_id":"NCL-α-20260131-8755b3","origin_slug":"market-os-vol2-tension-equilibrium","title":"不動産市場OS Vol.2【理論編】張力均衡（Tension Equilibrium）とヘイト制御 ⸻ 透明化が必ず生む摩擦を、循環の推進力に変換する","derivative_dir":"derivatives/199","status":"active"},
+    {"number":"200","ncl_id":"NCL-α-20260201-12d8de","origin_slug":"market-os-vol3-numerical-design","title":"不動産市場OS Vol.3【数値設計編】「価格」から「構造」へ ―― AI査定・将来収支・リスク係数の完全定義","derivative_dir":"derivatives/200","status":"active"},
+    {"number":"201","ncl_id":"NCL-α-20260202-5df76d","origin_slug":"market-os-vol4-responsibility-architecture","title":"不動産市場OS Vol.4【責任構造編】責任の所在をデザインする ―― AIの「計算」と専門家を接続し、社会的信頼へ変換する","derivative_dir":"derivatives/201","status":"active"},
+    {"number":"202","ncl_id":"NCL-α-20260204-b880a2","origin_slug":"market-os-vol5-participant-redefinition","title":"不動産市場OS Vol.5【参加者編】市場参加者の再定義とインセンティブ設計","derivative_dir":"derivatives/202","status":"active"},
+    {"number":"203","ncl_id":"NCL-α-20260207-4f84a1","origin_slug":"market-os-vol6-risk-and-ethical-shield","title":"不動産市場OS Vol.6【リスク編】炎上・誤用のメカニズムと防御壁（Ethical Shield）","derivative_dir":"derivatives/203","status":"active"},
+    {"number":"204","ncl_id":"NCL-α-20260208-73fbb1","origin_slug":"market-os-vol7-frictionless-execution","title":"不動産市場OS Vol.7【拡張編】金融・大資本連携とスマートコントラクト ――「合意」即「履行」の経済学","derivative_dir":"derivatives/204","status":"active"},
+    {"number":"205","ncl_id":"NCL-α-20260208-0084c8","origin_slug":"market-os-vol8-reference-bundle-governance","title":"不動産市場OS Vol.8【行政編】説明責任を束ねる都市 ―― 行政データ接続と重説参照束による「基準時間」の書き換え","derivative_dir":"derivatives/205","status":"active"},
+    {"number":"206","ncl_id":"NCL-α-20260210-5c74ad","origin_slug":"market-os-vol9-naos-global-standard","title":"不動産市場OS Vol.9【国家編】NAOS――国家を“統制”せず最適化する。世界へ輸出可能な「合意形成OS」の完成","derivative_dir":"derivatives/206","status":"active"},
+    {"number":"207","ncl_id":"NCL-α-20260211-c56f43","origin_slug":"market-os-vol10-origin-declaration-ncl","title":"不動産市場OS Vol.10【原点宣言】NCL倫理固定：合意形成社会を崩壊させないための継承規格と未来責任","derivative_dir":"derivatives/207","status":"active"},
+    {"number":"208","ncl_id":"NCL-α-20260213-f40c51","origin_slug":"physics-of-consensus-vol2-compression-of-meaning","title":"合意形成の物理 第2論 制度の意味圧縮 ― 成功はなぜ理解不能を生むのか","derivative_dir":"derivatives/208","status":"active"},
+    {"number":"209","ncl_id":"NCL-α-20260214-6a7d1c","origin_slug":"physics-of-consensus-vol3-law-of-conservation-of-trust","title":"合意形成の物理 第3論 信頼の保存則 ― 信頼は主体ではなく履歴へ配置される","derivative_dir":"derivatives/209","status":"active"},
+    {"number":"210","ncl_id":"NCL-α-20260215-e2d7e7","origin_slug":"physics-of-consensus-vol5-time-decay-and-system-longevity","title":"合意形成の物理 第5論 時間劣化と制度寿命 ― 説明更新なき制度は必ず死ぬ","derivative_dir":"derivatives/210","status":"active"},
+    {"number":"211","ncl_id":"NCL-α-20260226-623d47","origin_slug":"physics-of-consensus-vol11-geometry-of-incentives","title":"合意形成の物理 第11論 誘因の幾何学 ― 破壊の期待利得を制御せよ","derivative_dir":"derivatives/211","status":"active"},
+    {"number":"212","ncl_id":"NCL-α-20260306-056522","origin_slug":"endurance-civilization-intro","title":"耐久文明論 序論｜第0論：なぜ今「耐久文明」を記述する必要があるのか","derivative_dir":"derivatives/212","status":"active"},
+    {"number":"213","ncl_id":"NCL-α-20260307-f380bf","origin_slug":"definition-of-endurance-civilization","title":"耐久文明論 第一部｜第1論 耐久文明とは何か：再生なき生存の構造定義","derivative_dir":"derivatives/213","status":"active"}
   ]
 }
