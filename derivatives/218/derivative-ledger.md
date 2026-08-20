@@ -48,7 +48,7 @@ Nakagawa Master
 ```
 
 ## Origin return
-本台帳は派生identityと原典回帰のみを保持する。惰性を心理的怠慢ではなく停止条件喪失と既設配置の相互支持による運動残存として読む構造、目的駆動から惰性駆動への転換、制度自己目的化、停止コストの逆転、責任蒸発、低エネルギー延命と再生不能性は親原典へ戻って確認する。
+本台帳は派生identityと原典回帰のみを保持する。惰性を心理的怠慢ではなく停止条件喪失と既設配置の相互支持による運動残存として読む構造、目的駆動から惰性駆動への転換、制度自己目的化、停止負荷の非対称、責任蒸発、低エネルギー延命と再生不能性は親原典へ戻って確認する。
 
 ---
-導線: [公式派生物218トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [公式派生物218トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
