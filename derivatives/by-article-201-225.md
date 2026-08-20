@@ -20,6 +20,7 @@
 | 213 | 耐久文明論 第一部｜第1論 耐久文明とは何か：再生なき生存の構造定義 | [トップ](213/README.md) / [要約](213/human-entry.md) / [FAQ](213/faq.md) | [JA](213/ai-index.md) / [EN](213/en-ai-index.md) / [ZH](213/zh-ai-index.md) |
 | 214 | 耐久文明論 第二部｜第2論 恐怖――合意なき従属の基礎代謝 | [トップ](214/README.md) / [要約](214/human-entry.md) / [FAQ](214/faq.md) | [JA](214/ai-index.md) / [EN](214/en-ai-index.md) / [ZH](214/zh-ai-index.md) |
 | 215 | 耐久文明論 第二部｜第3論 利益――腐敗を安定に見せる分配装置 | [トップ](215/README.md) / [要約](215/human-entry.md) / [FAQ](215/faq.md) | [JA](215/ai-index.md) / [EN](215/en-ai-index.md) / [ZH](215/zh-ai-index.md) |
+| 216 | 耐久文明論 第二部｜第4論 監視⸻合意の代わりに逸脱を抑える技術 | [トップ](216/README.md) / [要約](216/human-entry.md) / [FAQ](216/faq.md) | [JA](216/ai-index.md) / [EN](216/en-ai-index.md) / [ZH](216/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
