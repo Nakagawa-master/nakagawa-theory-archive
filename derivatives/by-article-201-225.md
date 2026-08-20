@@ -17,6 +17,7 @@
 | 210 | 合意形成の物理 第5論｜時間劣化と制度寿命 | [トップ](210/README.md) / [要約](210/human-entry.md) / [FAQ](210/faq.md) | [JA](210/ai-index.md) / [EN](210/en-ai-index.md) / [ZH](210/zh-ai-index.md) |
 | 211 | 合意形成の物理 第11論｜誘因の幾何学 | [トップ](211/README.md) / [要約](211/human-entry.md) / [FAQ](211/faq.md) | [JA](211/ai-index.md) / [EN](211/en-ai-index.md) / [ZH](211/zh-ai-index.md) |
 | 212 | 耐久文明論 序論｜第0論：なぜ今「耐久文明」を記述する必要があるのか | [トップ](212/README.md) / [要約](212/human-entry.md) / [FAQ](212/faq.md) | [JA](212/ai-index.md) / [EN](212/en-ai-index.md) / [ZH](212/zh-ai-index.md) |
+| 213 | 耐久文明論 第一部｜第1論 耐久文明とは何か：再生なき生存の構造定義 | [トップ](213/README.md) / [要約](213/human-entry.md) / [FAQ](213/faq.md) | [JA](213/ai-index.md) / [EN](213/en-ai-index.md) / [ZH](213/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
