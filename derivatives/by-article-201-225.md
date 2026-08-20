@@ -13,6 +13,7 @@
 | 206 | 不動産市場OS Vol.9｜NAOS・国家レイヤーの合意形成OS | [トップ](206/README.md) / [要約](206/human-entry.md) / [FAQ](206/faq.md) | [JA](206/ai-index.md) / [EN](206/en-ai-index.md) / [ZH](206/zh-ai-index.md) |
 | 207 | 不動産市場OS Vol.10｜原点宣言・NCL倫理固定 | [トップ](207/README.md) / [要約](207/human-entry.md) / [FAQ](207/faq.md) | [JA](207/ai-index.md) / [EN](207/en-ai-index.md) / [ZH](207/zh-ai-index.md) |
 | 208 | 合意形成の物理 第2論｜制度の意味圧縮 | [トップ](208/README.md) / [要約](208/human-entry.md) / [FAQ](208/faq.md) | [JA](208/ai-index.md) / [EN](208/en-ai-index.md) / [ZH](208/zh-ai-index.md) |
+| 209 | 合意形成の物理 第3論｜信頼の保存則 | [トップ](209/README.md) / [要約](209/human-entry.md) / [FAQ](209/faq.md) | [JA](209/ai-index.md) / [EN](209/en-ai-index.md) / [ZH](209/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
