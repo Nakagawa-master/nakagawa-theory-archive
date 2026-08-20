@@ -24,6 +24,7 @@
 | 217 | 耐久文明論 第三部｜第5論 神話――恐怖・利益・監視を正当化する意味生成機構 | [トップ](217/README.md) / [要約](217/human-entry.md) / [FAQ](217/faq.md) | [JA](217/ai-index.md) / [EN](217/en-ai-index.md) / [ZH](217/zh-ai-index.md) |
 | 218 | 耐久文明論 第三部｜第6論 惰性――誰も信じていないのに続いてしまう文明 | [トップ](218/README.md) / [要約](218/human-entry.md) / [FAQ](218/faq.md) | [JA](218/ai-index.md) / [EN](218/en-ai-index.md) / [ZH](218/zh-ai-index.md) |
 | 219 | 耐久文明論 第四部｜第7論 共圏――耐久文明が作る閉鎖ブロックの論理 | [トップ](219/README.md) / [要約](219/human-entry.md) / [FAQ](219/faq.md) | [JA](219/ai-index.md) / [EN](219/en-ai-index.md) / [ZH](219/zh-ai-index.md) |
+| 220 | 耐久文明論 第四部｜第8論 相転移⸻耐久文明はどこで崩れるのか | [トップ](220/README.md) / [要約](220/human-entry.md) / [FAQ](220/faq.md) | [JA](220/ai-index.md) / [EN](220/en-ai-index.md) / [ZH](220/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
