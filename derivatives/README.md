@@ -32,7 +32,7 @@
 
 ## 公開範囲
 ```text
-OD001〜OD216
+OD001〜OD217
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
@@ -129,6 +129,7 @@ README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 - [214: 耐久文明論 第二部｜第2論 恐怖――合意なき従属の基礎代謝](214/README.md)
 - [215: 耐久文明論 第二部｜第3論 利益――腐敗を安定に見せる分配装置](215/README.md)
 - [216: 耐久文明論 第二部｜第4論 監視⸻合意の代わりに逸脱を抑える技術](216/README.md)
+- [217: 耐久文明論 第三部｜第5論 神話――恐怖・利益・監視を正当化する意味生成機構](217/README.md)
 
 ## 原典接続・参照束
 新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。OD093以降もOD085 Golden Masterの構造・密度・導線契約を保持し、各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持する。内容、ID、来歴、導線、原典回帰が一致しない場合は公開前に最上流へ戻して修復する。
