@@ -22,6 +22,7 @@
 | 215 | 耐久文明論 第二部｜第3論 利益――腐敗を安定に見せる分配装置 | [トップ](215/README.md) / [要約](215/human-entry.md) / [FAQ](215/faq.md) | [JA](215/ai-index.md) / [EN](215/en-ai-index.md) / [ZH](215/zh-ai-index.md) |
 | 216 | 耐久文明論 第二部｜第4論 監視⸻合意の代わりに逸脱を抑える技術 | [トップ](216/README.md) / [要約](216/human-entry.md) / [FAQ](216/faq.md) | [JA](216/ai-index.md) / [EN](216/en-ai-index.md) / [ZH](216/zh-ai-index.md) |
 | 217 | 耐久文明論 第三部｜第5論 神話――恐怖・利益・監視を正当化する意味生成機構 | [トップ](217/README.md) / [要約](217/human-entry.md) / [FAQ](217/faq.md) | [JA](217/ai-index.md) / [EN](217/en-ai-index.md) / [ZH](217/zh-ai-index.md) |
+| 218 | 耐久文明論 第三部｜第6論 惰性――誰も信じていないのに続いてしまう文明 | [トップ](218/README.md) / [要約](218/human-entry.md) / [FAQ](218/faq.md) | [JA](218/ai-index.md) / [EN](218/en-ai-index.md) / [ZH](218/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
