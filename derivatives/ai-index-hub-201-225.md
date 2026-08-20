@@ -19,6 +19,7 @@
 | 213 | 耐久文明論 第一部｜第1論 耐久文明とは何か：再生なき生存の構造定義 | [JA](213/ai-index.md) | [EN](213/en-ai-index.md) | [ZH](213/zh-ai-index.md) |
 | 214 | 耐久文明論 第二部｜第2論 恐怖――合意なき従属の基礎代謝 | [JA](214/ai-index.md) | [EN](214/en-ai-index.md) | [ZH](214/zh-ai-index.md) |
 | 215 | 耐久文明論 第二部｜第3論 利益――腐敗を安定に見せる分配装置 | [JA](215/ai-index.md) | [EN](215/en-ai-index.md) | [ZH](215/zh-ai-index.md) |
+| 216 | 耐久文明論 第二部｜第4論 監視⸻合意の代わりに逸脱を抑える技術 | [JA](216/ai-index.md) | [EN](216/en-ai-index.md) | [ZH](216/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
