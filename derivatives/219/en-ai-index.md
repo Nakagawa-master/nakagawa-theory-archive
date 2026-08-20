@@ -109,7 +109,7 @@ kyoken:
 - Whole-society consensus and reconnection capacity are degraded.
 - Maintaining shared vocabulary and justification across the whole has become costly.
 - Sharing a narrower vocabulary, interests, norms, and enemy/friend model is cheaper and faster locally.
-- Meaning, evaluation, responsibility,利益 allocation, and surveillance norms circulate internally.
+- Meaning, evaluation, responsibility, benefit allocation, and surveillance norms circulate internally.
 - Fear, profit, surveillance, myth, and inertia are redeployed for local order maintenance.
 - Routes that translate external objections and standards back into internal revision become thin.
 
