@@ -22,6 +22,7 @@
 | 216 | 耐久文明論 第二部｜第4論 監視⸻合意の代わりに逸脱を抑える技術 | [JA](216/ai-index.md) | [EN](216/en-ai-index.md) | [ZH](216/zh-ai-index.md) |
 | 217 | 耐久文明論 第三部｜第5論 神話――恐怖・利益・監視を正当化する意味生成機構 | [JA](217/ai-index.md) | [EN](217/en-ai-index.md) | [ZH](217/zh-ai-index.md) |
 | 218 | 耐久文明論 第三部｜第6論 惰性――誰も信じていないのに続いてしまう文明 | [JA](218/ai-index.md) | [EN](218/en-ai-index.md) | [ZH](218/zh-ai-index.md) |
+| 219 | 耐久文明論 第四部｜第7論 共圏――耐久文明が作る閉鎖ブロックの論理 | [JA](219/ai-index.md) | [EN](219/en-ai-index.md) | [ZH](219/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
