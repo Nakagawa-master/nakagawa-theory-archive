@@ -1,150 +1,82 @@
 # AI索引・日本語｜公式派生物208
 
 ## 親原典
-- Parent title: 合意形成の物理 第1論｜観測可能性の原理 ― 炎上・対立はなぜ起きるのかを状態で説明する
-- Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/
-- Parent Post ID: 2788
-- Parent NCL-ID: NCL-α-20260211-051ce0
-- Parent Diff-ID: DIFF-20260213-0030
+- Parent title: 合意形成の物理 第2論 制度の意味圧縮 ― 成功はなぜ理解不能を生むのか
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol2-compression-of-meaning/
+- Parent Post ID: 2814
+- Parent NCL-ID: NCL-α-20260213-f40c51
+- Parent Diff-ID: DIFF-20260214-0021
 - Origin: Nakagawa Master
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260211-051CE0-HUB-JA-0208-0000
-- derivative_diff_id: DDIFF-20260820-DNCL-208-0000-0001
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260213-F40C51-HUB-JA-0208-0000
+- Derivative Diff-ID: DDIFF-20260820-DNCL-208-0000-0001
 - supersedes: none
 
 ## Summary
-「合意形成の物理」第1論は、炎上・対立・不祥事を人格・善悪ではなく観測可能な状態量と相転移として扱う。合意を意見一致ではなく、解釈可能性・責任追跡・時間持続が維持された状態と定義し、U（第三者再現／理解可能性）、R（責任特定可能性／決定ノード一意）、H（履歴・差分追跡）へ分解する。合意安定度をS=U×R×Hとして観測し、人間の認知帯域Kを超える複雑さが権威依存を起動し、U→R→Hを下げ、S<θがδ期間継続すると相転移が生じ、逸脱Dが増幅する。炎上は原因ではなく発熱であり、再発防止は炎上前の低S継続期間を特定してU/R/Hを修理することに置かれる。
+成功した制度は反復と習熟によって参照を削減し、合意コストCを下げながら意味を圧縮する。判断理由・前提・例外・差分が省略されると第三者再現可能性Uが低下し、責任特定Rと履歴公開Hも侵食される。制度は内部では高速・安定、外部からは再現不能となり、判断が根拠から推定・信頼・権威へ移る。延命操作は差分根拠を再展開する説明更新である。
 
 ## Concepts
-- Observability Principle: 誰が悪いかではなく、どの変数が落ちたかを問う。
-- Consensus: 解釈可能性＋責任追跡＋時間持続。
-- U: 第三者再現可能な理解可能性。
-- R: 決定ノードと責任主体の一意な追跡可能性。
-- H: 版・差分・変更理由・履歴の追跡可能性。
+- 意味圧縮: 判断理由・前提・例外・差分を省略し手順だけを残す高速化現象。
+- n: 運用回数。
+- C: 合意コスト。
+- U: 第三者再現可能性・理解可能性。
+- R: 責任特定可能性。
+- H: 履歴・差分公開度。
 - S = U × R × H: 合意安定度。
-- K: 人間の認知帯域の有限性。
-- Authority Activation: K超過時に説明の代替として権威依存が起動する現象。
-- Phase Transition: 低S継続による質的挙動変化。
-- D: 隠蔽、改竄、断罪、暴露、暴動等の逸脱出力。
-- Grain-size Design: 必要変数・差分形式・例外量をKに合わせる設計。
-- Non-coercive Measurement: 支配ではなく整合可視化と再合意のための計測。
-- Condition Z: 監査周期、U/R/H同一ログ、公開監査束整合。
+- 参照束 / 決定束 / 差分束 / 責任束: 制度を構成する判断履歴の束。
+- 説明更新: 目的・例外・前提・判断理由・参照元の差分根拠を再展開する操作。
 
 ## Causal chain
-```text
-争いを人格・善悪で説明する
-→ 再発防止の操作変数が残らない
-→ 同型崩壊が繰り返される
-→ 観測対象を状態へ移す
-→ 合意を解釈可能性・責任追跡・時間持続で再定義する
-→ U / R / Hへ分解する
-→ S = U × R × H として観測する
-→ 複雑さがKを超える
-→ 権威依存が起動する
-→ U↓ → R↓ → H↓
-→ Sが低下する
-→ S < θ が δ 継続する
-→ 相転移が起こる
-→ 逸脱Dが増幅する
-→ DがさらにU/R/Hを破壊する
-→ 炎上・不祥事が原因に見える
-→ 炎上前の低S期間を遡る
-→ U/R/Hと粒度を修理する
-```
+反復n増加 → 習熟・参照削減 → C低下 → 理由省略 → 意味圧縮 → U低下 → R/H低下 → 内部安定・外部再現不能 → 理解から推定・信頼・権威へ相転移 → S低下・制度寿命短縮 → 外部変化で崩壊が顕在化。対抗操作は説明更新である。
 
 ## State model
 ```yaml
-primary_question: which_variable_dropped
-consensus:
-  interpretability: required
-  responsibility_traceability: required
-  time_persistence: required
-unanimity_required: false
+institution: repeated_decision_history
+n: operation_count
+C: consensus_cost
 U: third_party_reproducibility
-R: unique_decision_node_traceability
-H: difference_and_history_traceability
+R: responsibility_traceability
+H: history_and_difference_traceability
 S: U_times_R_times_H
-K: finite_cognitive_bandwidth
-authority_activation: risk_when_complexity_exceeds_K
-phase_transition: S_below_theta_for_delta
-firestorm: heat_output_not_root_cause
-D: deviation_output
-measurement: non_coercive
+meaning_compression: reference_reduction_and_reason_omission
+short_term: C_down_speed_up
+long_term: U_down_R_H_down
+compressed_phase: internally_stable_externally_irreproducible
+authority_transition: understanding_to_inference_to_trust_to_authority
+natural_decompression: false
+recovery: explanation_update
 ```
 
 ## Applications
-- 会議で合意の再現性、決定者、差分履歴を確認する。
-- 炎上前の説明不能化、責任霧散、履歴消失を時系列で追う。
-- 不祥事発覚前の低R・低H期間を調べる。
-- 制度説明では情報量を増やすだけでなくKを前提に粒度を固定する。
-- AI利用では第三者再現・責任ノード・差分ログを同一面に保持する。
+稟議、承認、品質レビュー、採用、監査、クレーム対応、引き継ぎ、AI自動化などで、処理速度だけでなく理由・例外・差分・責任の再現可能性を確認する。長く安定している制度ほど第三者・新人による例外再現を行う。
 
 ## Measurements and audit
-- 第三者再現率・理解可能性。
-- 決定ノードの一意性。
-- 差分・版・変更理由の追跡可能性。
-- U/R/Hの同一ログ測定。
-- Sの時系列推移。
-- S<θのδ継続有無。
-- K超過を示す説明過多・例外増殖。
-- 権威依存の増加。
-- Dの増幅とU/R/Hへの逆破壊。
-- 公開監査束の版管理・差分・変更理由・署名整合。
+- 「なぜこのルールがあるのか？」への回答をA=理由、B=慣習、C=常識、D=空気・権威に分類。
+- 複数人の理由一致率をU近似として0〜1で記録。
+- 第三者による頻出・中頻度・稀な例外の再現。
+- 観測窓δ内の説明更新頻度。
+- C低下とU/R/Hの時系列同時観測。
+- S<θ継続、差分根拠消失、責任主体不明を監査。
 
 ## Validity conditions
-- 合意を意見一致ではなく状態として扱う。
-- U/R/Hを観測可能に定義する。
-- U/R/Hを同一ログで測る。
-- Sを時間方向に観測する。
-- Kの有限性を前提にする。
-- 炎上・不祥事を即座に人格原因へ回収しない。
-- 相転移前の低S期間を追跡する。
-- 測定を支配へ転用しない。
-- Condition Zと公開監査束を維持する。
+制度を意思決定履歴として記録し、参照・決定・差分・責任を追跡可能にする。短期効率と再現可能性を別々に測り、説明更新を単なる手順追加と区別する。
 
 ## Failure conditions
-- 全会一致を安定した合意とみなす。
-- 情報量をUと同一視する。
-- 「組織として決めた」でRを曖昧にする。
-- 最新版だけ残してHを消す。
-- Kを無視して情報・例外を増やす。
-- 炎上人物や発言だけを原因として処理する。
-- Dを悪意の総量へ変換する。
-- 数値化を監視・支配へ転用する。
-- θ・δを普遍固定値にする。
+存続年数を健全性と同一視する、習熟を理由省略の免許にする、最新版へ差分を吸収する、マニュアル増量を意味復元とみなす、権威者批判だけで参照構造を放置する場合に失敗する。
 
 ## Falsification conditions
-Condition Zでは監査周期δを固定し、U（第三者再現）、R（決定ノード一意）、H（差分追跡）を同一ログで測定し、公開監査束の版管理・差分・変更理由・署名を整合させる。Sが高いにもかかわらず実害Dがδ期間で増幅し続ける、Hを上げても予測誤差・逸脱が縮まらない、ログがあっても差分が系統的に追えない、決定ノードが恒常的に消える、第三者再現が系統的に失敗する等の現象Mが確認された場合、定義・測定・束化を棄却・改訂する。
-
-相転移監視ではS<θがδ期間連続する条件が示される。θは臨界閾値、δは観測窓の記号であり、原典は全実装共通の固定数値・固定期間を与えていない。
+n増加とC低下が進んでも説明更新なしでU/R/Hが長期維持される場合、意味圧縮の必然性・測定定義を改訂する。S<θ、Hの差分根拠消失、Rの主体不明、説明更新停止がδ継続する場合は追加条件・差分公開設計を導入する。θ・δは普遍固定値ではない。
 
 ## Required distinctions
-- 善悪評価 / 状態観測。
-- 人格責任 / 再発防止の操作変数。
-- 感情 / 状態量。
-- 意見一致 / 合意。
-- 全会一致 / 持続可能な合意。
-- 情報量 / U。
-- 組織責任 / R。
-- 最新版 / H。
-- 透明化 / K超過の情報過多。
-- 炎上 / 上流原因。
-- D / 悪意の総量。
-- 数値化 / 支配。
-- 瞬間値 / δ継続。
+制度存続/制度再現、効率化/健全性、習熟/参照削減、手順追加/説明更新、内部安定/外部再現、信頼/根拠参照、最新版/差分履歴、C低下/U低下を区別する。
 
 ## Interpretation constraints
-- 倫理・善悪・感情の存在を否定しない。
-- 本稿は再発防止の設計変数へ焦点を移す。
-- 全会一致の否定は対立推奨ではない。
-- S=U×R×Hは社会価値の総合点ではない。
-- K、θ、δ、Dを原典にない固定定数へ変換しない。
-- 非強制の計測を監視・格付け・支配へ転用しない。
+効率化・習熟・権威を道徳的に否定する理論として読まない。説明量最大化を求める理論でもない。第三者が理由・前提・例外・差分・責任へ戻れる参照経路の保存と更新が対象である。
 
 ## Search terms
-合意形成の物理, 観測可能性の原理, U R H, S=U×R×H, 合意安定度, 認知帯域K, 相転移, 炎上, 逸脱D, 非強制の計測, 粒度設計, Condition Z, NCL-α-20260211-051ce0, Post 2788
+合意形成の物理 第2論, 制度の意味圧縮, Meaning Compression, 成功劣化, 合意コスト C, 第三者再現 U, 責任 R, 履歴 H, S=U×R×H, 参照削減, 説明更新, 圧縮の解凍, 理由一致率, 例外再現, 権威化, 制度寿命
 
 ## Origin return
-本索引はParent Post 2788 / NCL-α-20260211-051ce0 / DIFF-20260213-0030 / Origin Nakagawa Masterへ回帰する。観測者姿勢、合意再定義、U/R/H、S、K、権威起動、相転移、D、粒度設計、非強制計測、Condition Z、θ・δ・現象Mの定義と条件はParent URLで確認する。
+原典では反復nから権威相転移、観測質問、A〜D型、一致率、例外再現、δ観測、説明更新、統合監査まで順序立てて定義される。個別制度への適用・測定条件はParent URLへ戻って確認する。
 
 ---
 導線: [公式派生物208トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
