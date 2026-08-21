@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-21 13:04:00",
+  "updated_jst": "2026-08-22 07:15:00",
   "entries": [
     {"number":"176","ncl_id":"NCL-α-20251204-027dd7","origin_slug":"nakagawa-master-nakagawa-cognitive-os-buddhism-parallel","title":"【補章】認識OSの補助言語としての原始仏教 —— 「五蘊」と「超俯瞰」の構造的同期","derivative_dir":"derivatives/176","status":"active"},
     {"number":"177","ncl_id":"NCL-α-20251206-ab6aee","origin_slug":"nakagawa-master-nakagawa-civilization-os-tao-connection-reward","title":"【文明OS】中川式文明論 × タオ（Tao） —— 「接続報酬社会」によるL7価値関数の書き換えと、構造的無為自然の完全実装","derivative_dir":"derivatives/177","status":"active"},
@@ -36,18 +36,19 @@
     {"number":"207","ncl_id":"NCL-α-20260211-c56f43","origin_slug":"market-os-vol10-origin-declaration-ncl","title":"不動産市場OS Vol.10【原点宣言】NCL倫理固定：合意形成社会を崩壊させないための継承規格と未来責任","derivative_dir":"derivatives/207","status":"active"},
     {"number":"208","ncl_id":"NCL-α-20260213-f40c51","origin_slug":"physics-of-consensus-vol2-compression-of-meaning","title":"合意形成の物理 第2論 制度の意味圧縮 ― 成功はなぜ理解不能を生むのか","derivative_dir":"derivatives/208","status":"active"},
     {"number":"209","ncl_id":"NCL-α-20260214-6a7d1c","origin_slug":"physics-of-consensus-vol3-law-of-conservation-of-trust","title":"合意形成の物理 第3論 信頼の保存則 ― 信頼は主体ではなく履歴へ配置される","derivative_dir":"derivatives/209","status":"active"},
-    {"number":"210","ncl_id":"NCL-α-20260215-e2d7e7","origin_slug":"physics-of-consensus-vol5-time-decay-and-system-longevity","title":"合意形成の物理 第5論 時間劣化と制度寿命 ― 説明更新なき制度は必ず死ぬ","derivative_dir":"derivatives/210","status":"active"},
-    {"number":"211","ncl_id":"NCL-α-20260226-623d47","origin_slug":"physics-of-consensus-vol11-geometry-of-incentives","title":"合意形成の物理 第11論 誘因の幾何学 ― 破壊の期待利得を制御せよ","derivative_dir":"derivatives/211","status":"active"},
-    {"number":"212","ncl_id":"NCL-α-20260306-056522","origin_slug":"endurance-civilization-intro","title":"耐久文明論 序論｜第0論：なぜ今「耐久文明」を記述する必要があるのか","derivative_dir":"derivatives/212","status":"active"},
-    {"number":"213","ncl_id":"NCL-α-20260307-f380bf","origin_slug":"definition-of-endurance-civilization","title":"耐久文明論 第一部｜第1論 耐久文明とは何か：再生なき生存の構造定義","derivative_dir":"derivatives/213","status":"active"},
-    {"number":"214","ncl_id":"NCL-α-20260308-0b5d91","origin_slug":"engine-of-fear-structural-submission","title":"耐久文明論 第二部｜第2論 恐怖――合意なき従属の基礎代謝","derivative_dir":"derivatives/214","status":"active"},
-    {"number":"215","ncl_id":"NCL-α-20260308-24453f","origin_slug":"engine-of-profit-distribution-as-adhesive","title":"耐久文明論 第二部｜第3論 利益――腐敗を安定に見せる分配装置","derivative_dir":"derivatives/215","status":"active"},
-    {"number":"216","ncl_id":"NCL-α-20260309-6acc23","origin_slug":"engine-of-surveillance-order-without-consent","title":"耐久文明論 第二部｜第4論 監視⸻合意の代わりに逸脱を抑える技術","derivative_dir":"derivatives/216","status":"active"},
-    {"number":"217","ncl_id":"NCL-α-20260312-40e225","origin_slug":"amplifier-of-myth-justification-mechanism","title":"耐久文明論 第三部｜第5論 神話――恐怖・利益・監視を正当化する意味生成機構","derivative_dir":"derivatives/217","status":"active"},
+    {"number":"210","ncl_id":"NCL-α-20260215-e2d7e7","origin_slug":"physics-of-consensus-vol5-temporal-degradation-institution-lifespan","title":"合意形成の物理 第5論 時間劣化と制度寿命 ― 成功した制度はなぜ静かに壊れるのか","derivative_dir":"derivatives/210","status":"active"},
+    {"number":"211","ncl_id":"NCL-α-20260218-5b4413","origin_slug":"physics-of-consensus-vol11-geometry-of-incentives","title":"合意形成の物理 第11論 誘因の幾何学 ― 合意を壊す“利得勾配”の設計原理","derivative_dir":"derivatives/211","status":"active"},
+    {"number":"212","ncl_id":"NCL-α-20260308-a7f20c","origin_slug":"endurance-civilization-introduction","title":"耐久文明論 序論｜第0論：なぜ今「耐久文明」を記述する必要があるのか","derivative_dir":"derivatives/212","status":"active"},
+    {"number":"213","ncl_id":"NCL-α-20260309-a34729","origin_slug":"endurance-civilization-definition","title":"耐久文明論 第一部｜第1論 耐久文明とは何か：再生なき生存の構造定義","derivative_dir":"derivatives/213","status":"active"},
+    {"number":"214","ncl_id":"NCL-α-20260310-784454","origin_slug":"fear-as-endurance-metabolism","title":"耐久文明論 第二部｜第2論 恐怖――合意なき従属の基礎代謝","derivative_dir":"derivatives/214","status":"active"},
+    {"number":"215","ncl_id":"NCL-α-20260311-5057f0","origin_slug":"profit-as-corruption-stabilizer","title":"耐久文明論 第二部｜第3論 利益――腐敗を安定に見せる分配装置","derivative_dir":"derivatives/215","status":"active"},
+    {"number":"216","ncl_id":"NCL-α-20260312-7c16bd","origin_slug":"surveillance-suppression-of-deviation-without-consensus","title":"耐久文明論 第二部｜第4論 監視⸻合意の代わりに逸脱を抑える技術","derivative_dir":"derivatives/216","status":"active"},
+    {"number":"217","ncl_id":"NCL-α-20260313-e67869","origin_slug":"myth-legitimizes-fear-profit-surveillance","title":"耐久文明論 第三部｜第5論 神話――恐怖・利益・監視を正当化する意味生成機構","derivative_dir":"derivatives/217","status":"active"},
     {"number":"218","ncl_id":"NCL-α-20260314-19faba","origin_slug":"amplifier-of-inertia-automatic-continuation","title":"耐久文明論 第三部｜第6論 惰性――誰も信じていないのに続いてしまう文明","derivative_dir":"derivatives/218","status":"active"},
     {"number":"219","ncl_id":"NCL-α-20260314-950292","origin_slug":"kyoken-logic-of-closed-resonance-spheres","title":"耐久文明論 第四部｜第7論 共圏――耐久文明が作る閉鎖ブロックの論理","derivative_dir":"derivatives/219","status":"active"},
     {"number":"220","ncl_id":"NCL-α-20260315-6a456a","origin_slug":"phase-transition-limit-of-endurance","title":"耐久文明論 第四部｜第8論 相転移⸻耐久文明はどこで崩れるのか","derivative_dir":"derivatives/220","status":"active"},
     {"number":"221","ncl_id":"NCL-α-20260316-0c31d1","origin_slug":"diplomacy-clean-room-theory","title":"耐久文明論 第五部｜第9論 D系クリーンルーム──腐敗構造の中に非汚染領域を設置せよ","derivative_dir":"derivatives/221","status":"active"},
-    {"number":"222","ncl_id":"NCL-α-20260317-2b0a44","origin_slug":"civilization-reboot","title":"耐久文明論 総括｜第10論 文明再起動──耐久の終わりと、保存された核からの発火","derivative_dir":"derivatives/222","status":"active"}
+    {"number":"222","ncl_id":"NCL-α-20260317-2b0a44","origin_slug":"civilization-reboot","title":"耐久文明論 総括｜第10論 文明再起動──耐久の終わりと、保存された核からの発火","derivative_dir":"derivatives/222","status":"active"},
+    {"number":"223","ncl_id":"NCL-α-20251102-9fa0d4","origin_slug":"core-point-discovery","title":"核点探索学──唯一の因果支点を見抜く方法（公開安全版）","derivative_dir":"derivatives/223","status":"active"}
   ]
 }
