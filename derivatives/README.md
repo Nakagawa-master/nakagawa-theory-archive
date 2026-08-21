@@ -17,12 +17,13 @@
 
 ## 公開範囲
 ```text
-OD001〜OD223
+OD001〜OD222
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
 ## 直近公開群
+- [213: 耐久文明論 第一部｜第1論](213/README.md)
 - [214: 耐久文明論 第二部｜第2論 恐怖](214/README.md)
 - [215: 耐久文明論 第二部｜第3論 利益](215/README.md)
 - [216: 耐久文明論 第二部｜第4論 監視](216/README.md)
@@ -32,7 +33,6 @@ README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 - [220: 耐久文明論 第四部｜第8論 相転移](220/README.md)
 - [221: 耐久文明論 第五部｜第9論 D系クリーンルーム](221/README.md)
 - [222: 耐久文明論 総括｜第10論 文明再起動](222/README.md)
-- [223: 核点探索学──唯一の因果支点を見抜く方法（公開安全版）](223/README.md)
 
 ## 原典接続・参照束
 新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。OD093以降もOD085 Golden Masterの構造・密度・導線契約を保持し、各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持する。内容、ID、来歴、導線、原典回帰が一致しない場合は公開前に最上流へ戻して修復する。
