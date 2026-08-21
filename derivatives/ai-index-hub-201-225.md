@@ -25,6 +25,7 @@
 | 219 | 耐久文明論 第四部｜第7論 共圏――耐久文明が作る閉鎖ブロックの論理 | [JA](219/ai-index.md) | [EN](219/en-ai-index.md) | [ZH](219/zh-ai-index.md) |
 | 220 | 耐久文明論 第四部｜第8論 相転移⸻耐久文明はどこで崩れるのか | [JA](220/ai-index.md) | [EN](220/en-ai-index.md) | [ZH](220/zh-ai-index.md) |
 | 221 | 耐久文明論 第五部｜第9論 D系クリーンルーム──腐敗構造の中に非汚染領域を設置せよ | [JA](221/ai-index.md) | [EN](221/en-ai-index.md) | [ZH](221/zh-ai-index.md) |
+| 222 | 耐久文明論 総括｜第10論 文明再起動──耐久の終わりと、保存された核からの発火 | [JA](222/ai-index.md) | [EN](222/en-ai-index.md) | [ZH](222/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
