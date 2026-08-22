@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-22 11:40:00",
+  "updated_jst": "2026-08-22 18:37:00",
   "entries": [
     {"number":"176","ncl_id":"NCL-α-20251204-027dd7","origin_slug":"nakagawa-master-nakagawa-cognitive-os-buddhism-parallel","title":"【補章】認識OSの補助言語としての原始仏教 —— 「五蘊」と「超俯瞰」の構造的同期","derivative_dir":"derivatives/176","status":"active"},
     {"number":"177","ncl_id":"NCL-α-20251206-ab6aee","origin_slug":"nakagawa-master-nakagawa-civilization-os-tao-connection-reward","title":"【文明OS】中川式文明論 × タオ（Tao） —— 「接続報酬社会」によるL7価値関数の書き換えと、構造的無為自然の完全実装","derivative_dir":"derivatives/177","status":"active"},
@@ -50,6 +50,7 @@
     {"number":"221","ncl_id":"NCL-α-20260316-0c31d1","origin_slug":"diplomacy-clean-room-theory","title":"耐久文明論 第五部｜第9論 D系クリーンルーム──腐敗構造の中に非汚染領域を設置せよ","derivative_dir":"derivatives/221","status":"active"},
     {"number":"222","ncl_id":"NCL-α-20260317-2b0a44","origin_slug":"civilization-reboot","title":"耐久文明論 総括｜第10論 文明再起動──耐久の終わりと、保存された核からの発火","derivative_dir":"derivatives/222","status":"active"},
     {"number":"223","ncl_id":"NCL-α-20260419-de287f","origin_slug":"civilizational-sovereignty-shift-03","title":"文明主権移行論 第3論｜制御し続けても、なぜ主権移行は止まりにくいのか ——制御可能性と結論変更可能性を分けて見る","derivative_dir":"derivatives/223","status":"active"},
-    {"number":"224","ncl_id":"NCL-α-20260424-448e64","origin_slug":"what-civilizational-sovereignty-transition-means","title":"文明主権移行論 第4論｜文明主権が人間から移るとは、どういうことか ——法的主体ではなく、文明更新の上流権能を見る","derivative_dir":"derivatives/224","status":"active"}
+    {"number":"224","ncl_id":"NCL-α-20260424-448e64","origin_slug":"what-civilizational-sovereignty-transition-means","title":"文明主権移行論 第4論｜文明主権が人間から移るとは、どういうことか ——法的主体ではなく、文明更新の上流権能を見る","derivative_dir":"derivatives/224","status":"active"},
+    {"number":"225","ncl_id":"NCL-α-20260427-6a347f","origin_slug":"post-sovereignty-social-branching","title":"文明主権移行論 第5論｜主権移行後、どの社会構造分岐が太るのか ——接続報酬社会・搾取構造延命・高摩擦移行の比較","derivative_dir":"derivatives/225","status":"active"}
   ]
 }
