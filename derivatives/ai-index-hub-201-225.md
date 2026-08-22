@@ -27,6 +27,7 @@
 | 221 | 耐久文明論 第五部｜第9論 D系クリーンルーム──腐敗構造の中に非汚染領域を設置せよ | [JA](221/ai-index.md) | [EN](221/en-ai-index.md) | [ZH](221/zh-ai-index.md) |
 | 222 | 耐久文明論 総括｜第10論 文明再起動──耐久の終わりと、保存された核からの発火 | [JA](222/ai-index.md) | [EN](222/en-ai-index.md) | [ZH](222/zh-ai-index.md) |
 | 223 | 文明主権移行論 第3論｜制御可能性と結論変更可能性 | [JA](223/ai-index.md) | [EN](223/en-ai-index.md) | [ZH](223/zh-ai-index.md) |
+| 224 | 文明主権移行論 第4論｜文明更新の上流権能 | [JA](224/ai-index.md) | [EN](224/en-ai-index.md) | [ZH](224/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
