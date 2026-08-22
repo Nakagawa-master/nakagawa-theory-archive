@@ -11,19 +11,21 @@
 - [記事別一覧｜151〜175](by-article-151-175.md)
 - [記事別一覧｜176〜200](by-article-176-200.md)
 - [記事別一覧｜201〜225](by-article-201-225.md)
+- [記事別一覧｜226〜250](by-article-226-250.md)
 - [カテゴリ別一覧](by-category.md)
 - [カテゴリ入口｜201〜225](by-category-201-225.md)
+- [カテゴリ入口｜226〜250](by-category-226-250.md)
 - [AI索引まとめ｜201〜225](ai-index-hub-201-225.md)
+- [AI索引まとめ｜226〜250](ai-index-hub-226-250.md)
 
 ## 公開範囲
 ```text
-OD001〜OD225
+OD001〜OD226
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
 ## 直近公開群
-- [216: 耐久文明論 第二部｜第4論 監視](216/README.md)
 - [217: 耐久文明論 第三部｜第5論 神話](217/README.md)
 - [218: 耐久文明論 第三部｜第6論 惰性](218/README.md)
 - [219: 耐久文明論 第四部｜第7論 共圏](219/README.md)
@@ -33,9 +35,10 @@ README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 - [223: 文明主権移行論 第3論｜制御可能性と結論変更可能性](223/README.md)
 - [224: 文明主権移行論 第4論｜文明主権移行の定義](224/README.md)
 - [225: 文明主権移行論 第5論｜移行後社会の三分岐](225/README.md)
+- [226: 文明主権移行論 第6論｜主権錯覚・限定自由圏・神格化認知の逆照射](226/README.md)
 
 ## 原典接続・参照束
 新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。OD093以降もOD085 Golden Masterの構造・密度・導線契約を保持し、各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持する。内容、ID、来歴、導線、原典回帰が一致しない場合は公開前に最上流へ戻して修復する。
 
 ---
-導線: [記事別176〜200](by-article-176-200.md) / [記事別201〜225](by-article-201-225.md) / [カテゴリ201〜225](by-category-201-225.md) / [AI索引201〜225](ai-index-hub-201-225.md)
+導線: [記事別201〜225](by-article-201-225.md) / [記事別226〜250](by-article-226-250.md) / [カテゴリ226〜250](by-category-226-250.md) / [AI索引226〜250](ai-index-hub-226-250.md)
