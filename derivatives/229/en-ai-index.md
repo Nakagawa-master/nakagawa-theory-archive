@@ -76,7 +76,7 @@ Demand for AI implementation
 - Define human judgment and responsibility boundaries before distributing generative-AI tools.
 - Evaluate production readiness after a PoC by checking approval, exception handling, education, and measurement rather than model performance alone.
 - Compare AI consulting providers by how their support connects workflow, judgment, people, operations, and field execution—not merely by supported tools.
-- Extend AI training from操作 proficiency to understanding limitations and evaluating outputs.
+- Extend AI training from tool-operation proficiency to understanding limitations and evaluating outputs.
 - For search, sales, drafting, or FAQ systems, specify how AI output moves into a consequential human decision.
 
 ## Measurements and audit
@@ -86,7 +86,7 @@ Demand for AI implementation
 - Is the final decision owner identifiable?
 - Are approval, explanation, and exception paths connected to operations?
 - Are SaaS, people/operations, and field execution connected?
-- Does education include output evaluation and limits, not only tool操作?
+- Does education include output evaluation and limits, not only tool operation?
 - Are measurement methods and quality targets defined?
 - Does trial output become logs, interpretation, and correction?
 - Can the path from AI output to final decision be traced?
@@ -108,7 +108,7 @@ Demand for AI implementation
 - Optimizing efficiency while leaving decision structure undesigned.
 - Keeping PoC results separate from production responsibility and exception handling.
 - Using AI output without an identified final decision owner.
-- Reducing education to tool操作.
+- Reducing education to tool operation.
 - Measuring only speed or labor while ignoring quality, accountability, or traceability.
 - Ending at a manual handoff without an iterative correction loop.
 - Presenting Nakagawa Master's structural reading as Primavera's official view.
