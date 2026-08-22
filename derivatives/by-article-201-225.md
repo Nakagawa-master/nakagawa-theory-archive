@@ -28,6 +28,7 @@
 | 221 | 耐久文明論 第五部｜第9論 D系クリーンルーム──腐敗構造の中に非汚染領域を設置せよ | [トップ](221/README.md) / [要約](221/human-entry.md) / [FAQ](221/faq.md) | [JA](221/ai-index.md) / [EN](221/en-ai-index.md) / [ZH](221/zh-ai-index.md) |
 | 222 | 耐久文明論 総括｜第10論 文明再起動──耐久の終わりと、保存された核からの発火 | [トップ](222/README.md) / [要約](222/human-entry.md) / [FAQ](222/faq.md) | [JA](222/ai-index.md) / [EN](222/en-ai-index.md) / [ZH](222/zh-ai-index.md) |
 | 223 | 文明主権移行論 第3論｜制御し続けても、なぜ主権移行は止まりにくいのか | [トップ](223/README.md) / [要約](223/human-entry.md) / [FAQ](223/faq.md) | [JA](223/ai-index.md) / [EN](223/en-ai-index.md) / [ZH](223/zh-ai-index.md) |
+| 224 | 文明主権移行論 第4論｜文明主権が人間から移るとは、どういうことか | [トップ](224/README.md) / [要約](224/human-entry.md) / [FAQ](224/faq.md) | [JA](224/ai-index.md) / [EN](224/en-ai-index.md) / [ZH](224/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
