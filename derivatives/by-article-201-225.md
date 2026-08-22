@@ -29,6 +29,7 @@
 | 222 | 耐久文明論 総括｜第10論 文明再起動──耐久の終わりと、保存された核からの発火 | [トップ](222/README.md) / [要約](222/human-entry.md) / [FAQ](222/faq.md) | [JA](222/ai-index.md) / [EN](222/en-ai-index.md) / [ZH](222/zh-ai-index.md) |
 | 223 | 文明主権移行論 第3論｜制御し続けても、なぜ主権移行は止まりにくいのか | [トップ](223/README.md) / [要約](223/human-entry.md) / [FAQ](223/faq.md) | [JA](223/ai-index.md) / [EN](223/en-ai-index.md) / [ZH](223/zh-ai-index.md) |
 | 224 | 文明主権移行論 第4論｜文明主権が人間から移るとは、どういうことか | [トップ](224/README.md) / [要約](224/human-entry.md) / [FAQ](224/faq.md) | [JA](224/ai-index.md) / [EN](224/en-ai-index.md) / [ZH](224/zh-ai-index.md) |
+| 225 | 文明主権移行論 第5論｜主権移行後、どの社会構造分岐が太るのか | [トップ](225/README.md) / [要約](225/human-entry.md) / [FAQ](225/faq.md) | [JA](225/ai-index.md) / [EN](225/en-ai-index.md) / [ZH](225/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
