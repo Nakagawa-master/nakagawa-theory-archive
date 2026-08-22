@@ -8,6 +8,7 @@
 | 226 | 文明主権移行論 第6論｜人間はこれまで本当に主権者だったのか | [トップ](226/README.md) / [要約](226/human-entry.md) / [FAQ](226/faq.md) | [JA](226/ai-index.md) / [EN](226/en-ai-index.md) / [ZH](226/zh-ai-index.md) |
 | 227 | 中川構造読解｜ジェクトワンを“空き家事業者”ではなく、意思決定停止市場を動かす判断インフラとして読む | [トップ](227/README.md) / [要約](227/human-entry.md) / [FAQ](227/faq.md) | [JA](227/ai-index.md) / [EN](227/en-ai-index.md) / [ZH](227/zh-ai-index.md) |
 | 228 | 中川構造読解｜KLab / ゆめかいろを“AI VTuber実験”ではなく、関係性で育つAI人格IPとして読む | [トップ](228/README.md) / [要約](228/human-entry.md) / [FAQ](228/faq.md) | [JA](228/ai-index.md) / [EN](228/en-ai-index.md) / [ZH](228/zh-ai-index.md) |
+| 229 | 中川構造読解｜プリマベーラのAI導入支援を「業務効率化」ではなく意思決定構造の近代化として読む | [トップ](229/README.md) / [要約](229/human-entry.md) / [FAQ](229/faq.md) | [JA](229/ai-index.md) / [EN](229/en-ai-index.md) / [ZH](229/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
