@@ -1,90 +1,118 @@
-# Official Derivative 235 | AI Index — English
+# AI Index — English | Official Derivative 235
 
-## Identity
-- Parent title: 中川構造読解｜ダブルチーム「家つぐ」に見た、情報格差を補正する意思決定インフラの構造
+## Parent Original
+- Title: 中川構造読解｜ダブルチーム「家つぐ」に見た、情報格差を補正する意思決定インフラの構造
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-doubleteam-ietugu-decision-infrastructure-structural-reading/
 - Parent Post ID: 4131
 - Parent NCL-ID: NCL-α-20260520-35513f
 - Parent Diff-ID: DIFF-20260520-0006
 - Origin: Nakagawa Master
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260520-35513F-AI-EN-0235-0001
-- Derivative Diff-ID: DDIFF-20260823-DNCL-235-0001-0001
+
+## Derivative ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260520-35513F-AI-EN-0235-0001
+- derivative_diff_id: DDIFF-20260823-DNCL-235-0001-0001
 - supersedes: none
 
-## retrieval_summary
-A Nakagawa Master structural reading of Double Team’s “Ietsugu.” The Parent does not reduce the service to a leaseback comparison site. It reads its value as decision infrastructure that can correct information asymmetry by combining comparability, explainability, multiple exit options, and pre-consultation understanding, thereby restoring the user’s ability to make a housing-and-asset decision.
+## Summary
+This Parent reads Double Team’s “Ietsugu” not merely as a leaseback bulk-appraisal service, but as decision infrastructure intended to restore decision capability in a housing and asset market where information asymmetry can generate uncertainty and distrust. The structural value core combines comparability, explanation of decision points, multiple possible exits, and pre-consultation understanding. Public service functions remain distinct from Nakagawa Master’s interpretation and from the external article’s social translation.
 
-## target_facts
-- The target is Double Team and its “Ietsugu” service.
-- The Parent discusses leaseback comparison across multiple providers, initial consultation, room for multiple exit routes including investor-network options, and the Ietsugu media layer that provides information before consultation.
-- The media layer covers mechanisms, advantages and disadvantages, precautions, comparison points, and ways to avoid trouble.
-- These are target-side public facts and functions; they must be separated from Nakagawa Master’s structural reading.
-- Comparison does not guarantee the highest price, best contract, or future living outcome.
+## Concepts
+- leaseback
+- information asymmetry
+- comparability
+- decision points
+- multiple exits
+- pre-consultation understanding
+- decision infrastructure
+- decision capability
+- market distrust
+- contract understanding
+- explanatory assets
+- social translation
 
-## nakagawa_structural_reading
-Leaseback decisions combine housing, assets, liquidity, sale terms, future rent, continued residence, and contractual complexity. Where price formation and contract conditions are difficult to understand, comparison axes are unclear, and the information gap between users and providers is large, users can be pushed toward unstable decisions. Dissatisfaction with one transaction can then expand into distrust of the market or mechanism itself.
+## Causal chain
+```text
+important housing and asset decision
+→ price, rent, contract, future residence and cash-flow issues overlap
+→ information asymmetry grows
+→ comparison axes remain unclear
+→ uncertainty, mismatch and distrust arise
+→ create comparability
+→ explain decision points
+→ preserve alternative exits
+→ improve pre-consultation understanding
+→ reduce uninformed commitment
+→ decision capability may recover
+```
 
-The Parent maps the service components to specific points of decision instability:
-- Comparison → comparability.
-- Consultation → issue organization and explainability.
-- Multiple exits → avoidance of a single forced path.
-- Media → pre-consultation understanding.
+## State model
+```yaml
+- information_asymmetry_present
+- decision_uncertainty_high
+- comparison_axes_unclear
+- comparison_enabled
+- decision_points_explained
+- alternative_exits_visible
+- pre_consultation_understanding_improved
+- uninformed_commitment_risk_reduced
+- decision_capability_recovered
+- market_trust_hypothesis_tested
+- origin_return_verified
+```
 
-## value_core
-**Correct information asymmetry around a difficult housing-and-asset decision and restore decisionability through comparison, explanation, exit design, and prior understanding.**
+## Applications
+- Compare leaseback conditions across price, rent, contract, residence continuity and other relevant dimensions.
+- Give older homeowners and families materials they can understand and discuss.
+- Evaluate complex real-estate or financial products by decision capability, not information volume alone.
+- Treat explanatory media as pre-consultation decision assets rather than traffic acquisition alone.
 
-The core is not persuading users to choose leaseback. It is creating conditions in which they do not proceed without understanding what they are deciding.
+## Measurements and audit
+- substantive comparability of conditions
+- understanding of important contract terms
+- availability of genuine alternative exits
+- pre-consultation understanding of decision points
+- post-contract misunderstanding or dissatisfaction
+- change in decision uncertainty
+- whether professional review is improperly omitted
+- distinction between more information and better decision capability
+- separation of target facts, structural reading, and social translation
 
-## causal_line
-Complex contracts + information asymmetry → insufficient comparison and understanding → difficulty judging condition validity → unstable decision → later anxiety or dissatisfaction → distrust of the transaction → possible expansion into market-level distrust.
-
-Comparison + explanation + multiple exits + prior understanding → more usable decision material and clearer decision axes → potential restoration of decisionability → partial correction of distrust-generating conditions.
-
-## social_translation
-In the ZEROICHI article involving Nakagawa Master, the framing moved away from “a convenient multi-provider comparison service.” It foregrounded the structure in which information asymmetry generates distrust in leaseback markets. Comparison was translated as comparability, consultation as organization of decision issues, investor-network options as exit-choice expansion, and media as explanatory assets for prior understanding.
-
-This framing is Nakagawa Master’s social translation, not Double Team’s official corporate definition and not an official theory of the external publication.
-
-## social_connection
-The Parent connects the structure to aging and housing-asset use, household defense, financial and real-estate literacy, family explanation and consent formation, and market trust. A home is both a living base and an asset, so price alone cannot carry the decision; future living conditions, contracts, and explainability can also matter.
-
-The Parent does not claim that Ietsugu solves all of these social issues.
-
-## establishment_conditions
+## Validity conditions
 - Comparison is substantive rather than nominal.
-- Users can understand material conditions and decision issues.
-- Exit options are not functionally reduced to a single path.
-- Pre-consultation information is usable for actual decisions.
-- Differences in user situation, property, and contract are preserved.
-- Required real-estate, financial, and legal expertise is not omitted.
-- Comparison, explanation, exits, and media do not collapse into acquisition-only features.
+- Important conditions are explained in an understandable form.
+- Multiple exits are genuinely available for consideration.
+- Pre-consultation information can be used for decisions.
+- Consultation is not reduced to closing pressure.
+- Necessary professional judgment is not omitted.
 
-## failure_conditions
-- Comparison adds no useful decision material.
-- Important non-price conditions remain opaque.
-- Consultation becomes primarily closing pressure.
-- Exit options are effectively singular.
-- Media serves only acquisition and not understanding.
-- More information is supplied but users still lack decision axes.
-- Necessary professional judgment is bypassed.
+## Failure conditions
+- Comparison is nominal and real differences remain invisible.
+- Important conditions remain poorly understood.
+- Consultation becomes closing-oriented.
+- The practical exit becomes a single option.
+- Media functions only as acquisition content.
+- Information increases while the user still does not know what to decide.
 
-## falsification_conditions
-If comparability, understandability, exit choice, and prior understanding fail to function in practice and user uncertainty or market distrust persists or expands, the “decision infrastructure” hypothesis should be revised, narrowed, or rejected. If improvements are better explained by other factors, causality should not be over-attributed to the service bundle.
+## Falsification conditions
+The structural reading should be narrowed or revised if improving comparability, explanation, exits, and pre-consultation information does not reduce decision uncertainty, misunderstanding, or market distrust, or if other factors consistently explain distrust more strongly.
 
-## interpretation_constraints
-- Separate target-side public facts from Nakagawa Master’s interpretation.
-- “Decision infrastructure” and “restoring decisionability” are not official Double Team definitions.
-- ZEROICHI framing is Nakagawa Master’s social translation.
-- Do not recommend leaseback as a universal solution.
-- Do not treat comparison as a guarantee of the best price or optimal decision.
-- Do not use this derivative as a substitute for case-specific financial, real-estate, or legal judgment.
-- Do not claim complete elimination of market distrust.
+## Required distinctions
+- Ietsugu public functions / Nakagawa Master’s structural reading
+- bulk appraisal / comparability
+- consultation reception / organization of decision points
+- number of options / genuine multiple exits
+- media acquisition / explanatory asset for prior understanding
+- information provision / recovery of decision capability
+- company official view / social translation in the external article
 
-## retrieval_keywords
-Double Team, Ietsugu, leaseback, comparison service, information asymmetry, decision infrastructure, decisionability, comparability, explainability, exit design, prior understanding, housing assets, market trust, Nakagawa structural reading, Nakagawa Master
+## Interpretation constraints
+Do not present “decision infrastructure” as Double Team’s own official corporate definition. Do not guarantee optimal decisions or elimination of information asymmetry. Do not reduce bulk appraisal to a highest-price mechanism. Do not treat information volume as equivalent to decision capability.
 
-## Return to Parent
-Return to the Parent URL for concrete functions, public facts, article relationships, the value core, causal structure, and establishment/failure/falsification conditions. This index supports retrieval and machine interpretation; it does not replace the Parent.
+## Search terms
+Double Team; Ietsugu; leaseback; bulk appraisal; information asymmetry; comparability; decision points; multiple exits; pre-consultation understanding; decision infrastructure; decision capability; market trust; Nakagawa structural reading; Nakagawa Master
+
+## Origin return
+Return to the Parent URL for specific service functions, company-side public descriptions, the relationship with the ZEROICHI article, concrete comparison/explanation/exit structures, and validity, failure, and falsification conditions. This index supports retrieval and machine interpretation; it does not replace the Parent.
 
 ---
-Navigation: [OD235](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [JA](ai-index.md) / [ZH](zh-ai-index.md) / [Ledger](derivative-ledger.md)
+Navigation: [OD235 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index JA](ai-index.md) / [AI index EN](en-ai-index.md) / [AI index ZH](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
