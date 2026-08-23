@@ -1,12 +1,14 @@
 # AI索引・日本語｜公式派生物226
 
-## Parent identity
+## 親原典
 - Parent title: 文明主権移行論 第6論｜人間はこれまで本当に主権者だったのか ——主権錯覚・限定自由圏・神格化認知の逆照射
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-human-sovereignty-retroreflection/
 - Parent Post ID: 3891
 - Parent NCL-ID: NCL-α-20260429-da41c0
 - Parent Diff-ID: DIFF-20260430-0017
 - Origin: Nakagawa Master
+
+## 派生ID
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20260429-DA41C0-HUB-JA-0226-0000
 - Derivative Diff-ID: DDIFF-20260822-DNCL-226-0000-0001
 - supersedes: none
