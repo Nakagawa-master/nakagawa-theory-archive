@@ -14,6 +14,7 @@
 | 233 | 中川構造読解｜クラシテク・制度産業の暗黙知と実行資産化 | [JA](233/ai-index.md) | [EN](233/en-ai-index.md) | [ZH](233/zh-ai-index.md) |
 | 234 | 中川構造読解｜HEALTHREE・楽しさで健康習慣を生成する行動設計 | [JA](234/ai-index.md) | [EN](234/en-ai-index.md) | [ZH](234/zh-ai-index.md) |
 | 235 | 中川構造読解｜ダブルチーム「家つぐ」・情報格差と意思決定インフラ | [JA](235/ai-index.md) | [EN](235/en-ai-index.md) | [ZH](235/zh-ai-index.md) |
+| 236 | 中川構造読解｜AlgaleX「うま藻」・味覚起点型上流再設計 | [JA](236/ai-index.md) | [EN](236/en-ai-index.md) | [ZH](236/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。中川構造読解Parentでは、対象企業・サービスの機能、Nakagawa Masterの構造読解、抽出価値核、外部記事での価値核選択理由を混同しない。
