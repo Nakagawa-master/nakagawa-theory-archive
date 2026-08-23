@@ -1,7 +1,7 @@
 # 派生ID台帳｜公式派生物231
 
 ## 親原典
-- タイトル: 中川構造読解｜文賢マスキング機能に見た、AI時代の「情報を渡す責任」の設計
+- Parent title: 中川構造読解｜文賢マスキング機能に見た、AI時代の「情報を渡す責任」の設計
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-bunken-ai-masking-structural-reading/
 - Parent Post ID: 4010
 - Parent NCL-ID: NCL-α-20260515-a3cb43
@@ -10,16 +10,18 @@
 
 ## 現行派生identity
 ### JA hub
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260515-A3CB43-HUB-JA-0231-0000
-- derivative_diff_id: DDIFF-20260823-DNCL-231-0000-0001
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260515-A3CB43-HUB-JA-0231-0000
+- Derivative Diff-ID: DDIFF-20260823-DNCL-231-0000-0001
 - supersedes: none
+
 ### EN AI
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260515-A3CB43-AI-EN-0231-0001
-- derivative_diff_id: DDIFF-20260823-DNCL-231-0001-0001
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260515-A3CB43-AI-EN-0231-0001
+- Derivative Diff-ID: DDIFF-20260823-DNCL-231-0001-0001
 - supersedes: none
+
 ### ZH AI
-- derivative_ncl_id: DNCL-NCL-ALPHA-20260515-A3CB43-AI-ZH-0231-0002
-- derivative_diff_id: DDIFF-20260823-DNCL-231-0002-0001
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260515-A3CB43-AI-ZH-0231-0002
+- Derivative Diff-ID: DDIFF-20260823-DNCL-231-0002-0001
 - supersedes: none
 
 ## 七つの公開面
@@ -32,13 +34,10 @@
 7. derivative-ledger.md
 
 ## lineage
-Parentは中川構造読解。Nakagawa Masterが「情報を渡す責任」を価値核として読み、なぜその価値核を選び、その価値核で外部記事を書いたのかを公開解体する系譜を保持する。
-
-## 境界
-価値核と外部記事執筆理由はNakagawa Masterの読解・構成判断であり、対象企業の公式見解ではない。
+Parent `NCL-α-20260515-a3cb43` からJA hub identityを中心にREADME・human-entry・FAQ・日本語AI索引・本台帳を同一派生系として接続し、EN/ZH AI索引を言語別identityとして派生する。Parentは中川構造読解であり、マスキング等の対象側機能事実と、Nakagawa Masterが抽出した「AI時代の情報を渡す責任の設計」という価値核を分離する。入力判断停止、人間点検、マスキング／置換、確認、説明可能入力の因果と、価値核選択理由・外部記事執筆理由を同一lineageで保持する。
 
 ## 原典回帰
-identityとlineageを示す台帳であり、意味内容はParentへ戻る。
+対象側機能事実、伏せ字・セキュリティ補助という表層、AI入力前の判断停止、人間点検、マスキング／置換、確認、説明可能な入力、価値核、価値核選択理由、外部記事執筆理由、企業公式見解との境界はParent URL本文へ戻って確認する。本台帳はidentityとlineageを示す公開面であり、Parentを置換しない。
 
 ---
 導線: [公式派生物231トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
