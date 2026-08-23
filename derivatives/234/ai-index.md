@@ -14,31 +14,31 @@
 - supersedes: none
 
 ## Summary
-中川構造読解。健康アプリという表層から「正しさでは続かない」人間行動を読み、楽しさ・報酬・ゲーム性・関係性・更新で反復を作り、その先に健康習慣を残す構造を保持する。
+中川構造読解。Nakagawa Masterが健康アプリの表層から「楽しさで健康習慣を生成する行動設計」を読み、なぜその価値核を選び、その価値核で外部記事を書いたのかを公開解体するParentを索引化する。
 ## Concepts
-中川構造読解; 行動設計; 楽しさ; 報酬; ゲーム性; 関係性; 更新; 反復; 習慣; L4/L5
+対象事実; 行動設計; 楽しさ; 報酬; ゲーム性; 関係性; 更新; 反復; 習慣; 外部記事執筆理由
 ## Causal chain
 `知識あり→継続失敗→楽しさで参加→報酬/ゲームで反復→関係性/更新で継続→習慣`
 ## State model
-`facts→surface→meta_gap→kernel→chain→translation→origin`
+`target_facts→surface→owner_gap→value_kernel→why_kernel→why_external_article→causal_chain→origin_return`
 ## Applications
 健康行動、継続学習、習慣形成サービス。
 ## Measurements and audit
-読解主体、四層、要素の役割分離、反復から習慣への接続を監査。
+読解主体、価値核、選択理由、外部記事執筆理由、反復から習慣への接続を監査する。
 ## Validity conditions
-楽しさ・ゲーム性が実際の反復行動を生み、習慣へ接続する。
+楽しさ・ゲーム性が実際の反復行動を生み習慣へ接続する。
 ## Failure conditions
-報酬・Web3へ縮小、短期参加＝習慣化、医学的効果保証。
+報酬・Web3へ縮小、短期参加＝習慣化、外部記事執筆理由の欠落。
 ## Falsification conditions
-楽しさ因果が継続へ結びつかなければ改訂。
+楽しさ因果が継続へ結びつかなければ改訂する。
 ## Required distinctions
-報酬/価値核; 参加/習慣; ゲーム性/医学的効果; 事実/読解。
+報酬/価値核; 参加/習慣; 価値核/執筆理由; 事実/読解。
 ## Interpretation constraints
-健康効果を保証しない。企業公式理論へ誤帰属しない。
+一般的社会翻訳へ置換しない。医学的効果を保証しない。
 ## Search terms
-HEALTHREE; Move-to-Earn; 健康習慣; 行動設計; 楽しさ; 中川構造読解
+HEALTHREE; 健康習慣; 行動設計; 楽しさ; 中川構造読解; Nakagawa Master
 ## Origin return
-価値核と要素の役割はParentへ。
+なぜ価値核を選び、その価値核で外部記事を書いたかはParentへ戻る。
 
 ---
 導線: [公式派生物234トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

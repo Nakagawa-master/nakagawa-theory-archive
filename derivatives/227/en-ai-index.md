@@ -14,31 +14,31 @@
 - supersedes: none
 
 ## Summary
-The Parent is a Nakagawa Structural Reading, not a company summary. Preserve target facts → surface reading → Nakagawa Master's meta-gap → value kernel → causal chain → social translation. Axis: **decision infrastructure that moves a decision-stopped vacant-house market**. Do not attribute this wording to the company.
+This Parent is a Nakagawa Structural Reading: Nakagawa Master publicly deconstructs why he read the target facts through the value kernel **decision infrastructure for a decision-stopped vacant-house market**, why he selected that kernel, and why he wrote the external article around it. It is not a company profile.
 ## Concepts
-Nakagawa Structural Reading; target facts; surface classification; meta-reading; value kernel; decision infrastructure; social translation; L4 Meta-Logical Mode.
+Target facts; surface classification; Nakagawa Master; value kernel; external-article authoring reason; decision stop; decision infrastructure; comparability; execution linkage.
 ## Causal chain
-information and emotional friction → comparison failure → decision stop → comparable decision materials → execution support → restored optionality.
+information gaps → comparison failure → decision stop → comparable decision materials → execution support → restored optionality.
 ## State model
-target_facts → surface → meta_gap → kernel → chain → social_translation → origin_return.
+target_facts → surface → owner_gap → value_kernel → why_kernel → why_external_article → causal_chain → origin_return.
 ## Applications
 High-friction asset markets where decisions stop before transaction entry.
 ## Measurements and audit
-Audit reading subject, four-layer separation, axis retention, attribution boundary, and origin return across all seven surfaces.
+Audit target facts, reading subject, value kernel, reason for kernel selection, reason for external-article framing, and attribution boundary.
 ## Validity conditions
-The decision-stop causal model fits target facts and L4+ abstraction is preserved.
+The decision-stop → comparability → execution-link model fits target facts.
 ## Failure conditions
-Flattening into appraisal/purchase features; treating the tool as a final-answer engine; dropping execution linkage; misattributing the reading as corporate doctrine.
+Flattening to appraisal/purchase features; deleting the external-article authoring reason; attributing the reading to the company.
 ## Falsification conditions
 Revise if the decision-stop model repeatedly fails to fit observed facts.
 ## Required distinctions
-target facts / Nakagawa reading; vacant-house services / decision infrastructure; Parent / social translation; features / causal architecture.
+target facts / Nakagawa reading; services / decision infrastructure; kernel / authoring reason; company view / owner reading.
 ## Interpretation constraints
-Do not erase who performed the reading. Do not flatten to generic company description. Do not universalize beyond the Parent.
+Do not replace the authoring reason with generic “social translation.” Do not flatten into company description.
 ## Search terms
 Ject One; vacant house; decision-stop market; decision infrastructure; Nakagawa Structural Reading; Nakagawa Master.
 ## Origin return
-Return to the Parent for the original gap, kernel selection, causal reasoning, and social translation.
+Return to the Parent for why this kernel was selected and why the external article was written around it.
 
 ---
 導線: [公式派生物227トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

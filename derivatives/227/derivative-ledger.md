@@ -32,13 +32,13 @@
 7. derivative-ledger.md
 
 ## lineage
-Parentは〈中川構造読解〉。固定四層は **対象側事実 / 表層分類 / Nakagawa Masterの構造読解 / 社会翻訳**。表層の空き家買取・AI査定から、**意思決定停止市場を動かす判断インフラ**を読んだメタ工程を同一lineageに保持する。
+Parentは中川構造読解。対象事実からNakagawa Masterが「意思決定停止市場を動かす判断インフラ」を価値核として読み、**なぜその価値核を選び、その価値核で外部記事を書いたのかを公開解体する系譜**を7面で保持する。
 
-## 表示契約
-親原典欄はliteral identity。FAQは3層Q1〜Q30。AI三言語面は13節。footerは7面共通。中川構造読解ParentではL4以上のメタ視点と読解主体を全7面で保持する。
+## 境界
+価値核と外部記事執筆理由はNakagawa Masterの読解・構成判断であり、対象企業の公式見解ではない。
 
 ## 原典回帰
-本台帳はidentityとlineageの正本であり、Parentの意味内容を置換しない。
+identityとlineageを示す台帳であり、意味内容はParentへ戻って確認する。
 
 ---
 導線: [公式派生物227トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

@@ -14,31 +14,31 @@
 - supersedes: none
 
 ## Summary
-Nakagawa Structural Reading: regulatory fixed costs, waiting time and space surplus are read as unrecovered value to be rewired into multiple uses/revenues, not mere lodging operations.
+Nakagawa Structural Reading: Nakagawa Master publicly deconstructs why he selected **revenue rewiring** under regulatory constraints as the value kernel and why he wrote the external article around it, instead of treating the case as ordinary short-stay operation.
 ## Concepts
-regulation; fixed cost; idle time; space surplus; unrecovered value; revenue rewiring; meta-reading; L4/L5.
+Target facts; regulation; fixed cost; waiting time; spatial surplus; unrecovered value; revenue rewiring; external-article authoring reason.
 ## Causal chain
-regulatory fixed cost→small-scale margin failure→surplus discovery→multi-use allocation→multiple revenue sources.
+regulatory fixed cost → small-scale profitability pressure → surplus discovery → multiple uses → multiple revenue sources.
 ## State model
-facts→surface→meta_gap→kernel→chain→translation→origin.
+target_facts → surface → owner_gap → value_kernel → why_kernel → why_external_article → causal_chain → origin_return.
 ## Applications
-Regulated small businesses and underused assets.
+Regulated industries, small-scale lodging, surplus-asset redesign.
 ## Measurements and audit
-Audit reading subject, regulation-vs-evasion distinction, multiple revenue logic, validity conditions.
+Audit reading subject, kernel, selection reason, authoring reason, distinction from regulatory avoidance, and multi-revenue linkage.
 ## Validity conditions
-Multi-use allocation actually contributes to business viability.
+Multiple-use design actually reconnects surplus to business viability.
 ## Failure conditions
-Flattening to multitasking, cost cutting or regulation evasion.
+Flattening to multitasking, cost cutting or regulatory avoidance; deleting the authoring reason.
 ## Falsification conditions
-Revise if complementary revenues do not materialize.
+Revise if complementary revenue does not materialize.
 ## Required distinctions
-regulation evasion/redesign within constraints; multitasking/reallocation; lodging/revenue rewiring.
+avoidance / redesign within rules; multitasking / revenue reallocation; kernel / authoring reason; facts / reading.
 ## Interpretation constraints
-Do not universalize or attribute the reading as company doctrine.
+Do not replace the authoring reason with generic social translation. Do not universalize.
 ## Search terms
-Leaneve; lodging; regulation; unrecovered value; revenue rewiring; Nakagawa Structural Reading.
+Leaneve; short-stay operation; regulation; unrecovered value; revenue rewiring; Nakagawa Structural Reading.
 ## Origin return
-Return to Parent for conditions and social translation.
+Return to Parent for why this kernel was selected and why the external article was written around it.
 
 ---
 導線: [公式派生物230トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

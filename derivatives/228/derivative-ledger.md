@@ -32,13 +32,13 @@
 7. derivative-ledger.md
 
 ## lineage
-Parentは〈中川構造読解〉。対象側事実 / AI VTuberという表層 / Nakagawa Masterが読んだ「関係性で育つAI人格IP」 / 社会翻訳、の四層を同一lineageに固定する。
+Parentは中川構造読解。Nakagawa Masterが「関係性で育つAI人格IP」を価値核として読み、なぜその価値核を選び、その価値核で外部記事を書いたのかを公開解体する系譜を保持する。
 
-## 表示契約
-literal identity、FAQ Q1〜Q30、AI三言語13節、共通footer、L4以上のメタ視点を7面で保持する。
+## 境界
+価値核と外部記事執筆理由はNakagawa Masterの読解・構成判断であり、対象企業の公式見解ではない。
 
 ## 原典回帰
-本台帳はidentityとlineageの正本。意味内容はParentへ戻る。
+identityとlineageを示す台帳であり、意味内容はParentへ戻る。
 
 ---
 導線: [公式派生物228トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

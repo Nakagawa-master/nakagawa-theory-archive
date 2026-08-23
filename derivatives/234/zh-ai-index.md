@@ -14,31 +14,31 @@
 - supersedes: none
 
 ## Summary
-中川结构读解：不是健康应用或Move-to-Earn介绍，而是通过有趣、奖励、游戏性、关系和持续更新设计反复行为，使健康习惯作为结果留下。
+中川结构读解。Nakagawa Master公开解体：为何把“用乐趣生成健康习惯的行为设计”选为价值核，以及为何以该价值核撰写外部文章，而不是把奖励、Web3或健康应用新奇性作为主轴。
 ## Concepts
-行为设计；有趣；奖励；游戏性；关系；更新；反复；习惯；L4/L5。
+对象事实；行为设计；乐趣；奖励；游戏性；关系；更新；反复；习惯；外部文章写作理由。
 ## Causal chain
-知道正确→无法持续→有趣入口→奖励/游戏反复→关系/更新持续→习惯。
+知道健康价值→持续失败→因乐趣参与→奖励/游戏形成反复→关系/更新支持持续→习惯。
 ## State model
-事实→表层→元层→价值核→因果→翻译→原典。
+对象事实→表层→所有者发现的差异→价值核→选择理由→外部文章写作理由→因果→原典回归。
 ## Applications
 健康行为、持续学习、习惯形成服务。
 ## Measurements and audit
-检查读解主体、四层、各元素角色和反复到习惯的连接。
+检查读解主体、价值核、选择理由、写作理由、反复与习惯连接。
 ## Validity conditions
-有趣/游戏性实际产生反复行为并连接到习惯。
+乐趣和游戏性实际产生反复行为并连接习惯。
 ## Failure conditions
-缩成奖励或Web3；短期参与等同习惯；宣称医学效果。
+缩成奖励/Web3，把短期参与当习惯，删除写作理由。
 ## Falsification conditions
-若有趣不能解释持续行为则修订。
+若乐趣不能促进持续行为则修订。
 ## Required distinctions
-奖励/价值核；参与/习惯；游戏性/医学效果；事实/中川读解。
+奖励/价值核；参与/习惯；价值核/写作理由；事实/读解。
 ## Interpretation constraints
-不得保证健康结果或归为企业官方理论。
+不得用一般社会翻译替代写作理由，不得保证医学效果。
 ## Search terms
-HEALTHREE; Move-to-Earn; 行为设计; 健康习惯; 中川结构读解
+HEALTHREE; 健康习惯; 行为设计; 乐趣; 中川结构读解; Nakagawa Master
 ## Origin return
-价值核和元素角色回到Parent。
+价值核选择理由与外部文章写作理由回到Parent确认。
 
 ---
 導線: [公式派生物234トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

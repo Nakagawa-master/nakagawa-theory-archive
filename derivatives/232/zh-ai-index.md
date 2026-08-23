@@ -14,31 +14,31 @@
 - supersedes: none
 
 ## Summary
-中川结构读解：不是单看氢技术，而是读取“跨时间保存电力使用可能性”的新价值定义。
+中川结构读解。Nakagawa Master公开解体：为何把“保存到需要时仍可使用的电力”选为价值核，以及为何以该价值核撰写外部文章，而不是把水素新奇性或规格作为主轴。
 ## Concepts
-氢；燃料电池；保存电源；长期保存；可更换；供应运营；L4/L5。
+对象事实；水素；燃料电池；保存电力；长期保存；可更换性；供给运用；价值核；外部文章写作理由。
 ## Causal chain
-应急需求→时间不确定→长期保存→保存燃料→需要时发电→更换/补给/回收。
+应急需求→发生时间不确定→长期保存→保存燃料→需要时发电→更换/补给/回收。
 ## State model
-事实→表层→元层→价值核→因果→翻译→原典。
+对象事实→表层→所有者发现的差异→价值核→选择理由→外部文章写作理由→因果→原典回归。
 ## Applications
-防灾、BCP、分布式电源。
+防灾、BCP、分散电源。
 ## Measurements and audit
-检查读解主体、保存价值、供应运营、安全制度、四层。
+检查读解主体、价值核、选择理由、写作理由、保存性、供给运用、安全与制度。
 ## Validity conditions
-保存性和运营层适合目标用途。
+保存性与运用层适合目标用途。
 ## Failure conditions
-氢万能论、只看规格、简单比较电池优劣。
+水素万能论、规格比较、删除写作理由。
 ## Falsification conditions
-保存性不产生实际价值则修订。
+若保存性不产生实际价值则修订。
 ## Required distinctions
-氢技术/保存电源定义；容量/跨时间可用性；硬件/运营。
+水素技术/保存电力；容量/跨时间可用性；价值核/写作理由；硬件/运用。
 ## Interpretation constraints
-不得降格成脱碳一般论或企业官方理论。
+不得用一般社会翻译或一般脱碳论替代写作理由。
 ## Search terms
-H2 PowerBox mini; 氢; 保存电源; 中川结构读解
+H2 PowerBox mini; 水素; 保存电力; 防灾; 中川结构读解; Nakagawa Master
 ## Origin return
-价值定义的转换回到Parent。
+价值核选择理由与外部文章写作理由回到Parent确认。
 
 ---
 導線: [公式派生物232トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

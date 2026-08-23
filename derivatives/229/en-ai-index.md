@@ -14,31 +14,31 @@
 - supersedes: none
 
 ## Summary
-Nakagawa Structural Reading: AI adoption is read as an entry point exposing organizational defects in decision, execution, and verification, not merely efficiency.
+Nakagawa Structural Reading: Nakagawa Master publicly deconstructs why he selected **modernizing the decision structure** rather than efficiency as the value kernel, and why he wrote the external article around that kernel.
 ## Concepts
-meta-reading; AI adoption; decision structure; execution; verification; deliverables; operationalization; L4/L5.
+Target facts; AI adoption; Nakagawa Master; value kernel; external-article authoring reason; decision; execution; verification; deliverable; operational system.
 ## Causal chain
-AI adoption→structural defects exposed→roles/responsibility→deliverables→operation→verification→improvement.
+AI adoption → structural weakness exposed → role/responsibility design → deliverable → operation → verification → improvement.
 ## State model
-facts→surface→meta_gap→kernel→chain→translation→origin.
+target_facts → surface → owner_gap → value_kernel → why_kernel → why_external_article → causal_chain → origin_return.
 ## Applications
-AI implementation, organizational transformation, training design.
+AI adoption, work transformation, training design.
 ## Measurements and audit
-Audit reading subject, four layers, human responsibility, deliverable-to-operation loop.
+Audit reading subject, kernel, selection reason, authoring reason, responsibility, deliverables, operation and verification.
 ## Validity conditions
-Operationalization causal model fits the case.
+The systemization causal model fits target facts.
 ## Failure conditions
-Flattening to training, tool count, or speed gains; erasing human responsibility.
+Flattening to training/tools/speed or deleting the authoring reason.
 ## Falsification conditions
 Revise if another causal model consistently explains outcomes better.
 ## Required distinctions
-AI adoption/organizational redesign; learning/deliverable/operation/verification; facts/Nakagawa reading.
+AI adoption / organizational redesign; learning / deliverable / operation / verification; kernel / authoring reason; facts / reading.
 ## Interpretation constraints
-Do not reduce to generic efficiency discourse or corporate doctrine.
+Do not neutralize into generic efficiency or generic social translation. Do not attribute the reading to the company.
 ## Search terms
-Primavera; generative AI; decision structure; operationalization; Nakagawa Structural Reading.
+Primavera; AI adoption; decision structure; systemization; Nakagawa Structural Reading; Nakagawa Master.
 ## Origin return
-Return to Parent for kernel selection and social translation.
+Return to Parent for why this kernel was selected and why the external article was written around it.
 
 ---
 導線: [公式派生物229トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

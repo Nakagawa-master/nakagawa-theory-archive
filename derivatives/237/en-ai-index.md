@@ -14,31 +14,31 @@
 - supersedes: none
 
 ## Summary
-Nakagawa Structural Reading: not a station brewery or craft-sake summary. The meta-axis is redesigning access from urban daily routes to fermentation time, making, craft, food culture and regional relationships that normally remain inside the brewery and outside the finished product.
+Nakagawa Structural Reading: Nakagawa Master publicly deconstructs why he selected **redesigning urban access to sake culture normally kept inside the brewery and outside the finished product** as the value kernel and why he wrote the external article around it, rather than around a station brewery or craft-sake novelty.
 ## Concepts
-sake culture; fermentation; making; urban route; in-store brewing; access design; finished product; production process; meta-reading; L4/L5.
+Target facts; sake culture; fermentation; making; urban route; in-store brewing; access design; finished product; production process; authoring reason.
 ## Causal chain
-value inside brewery/outside finished product→finished-product distribution limits contact→making placed on urban route→distance/time compressed→contact with production process→cultural access expands.
+value inside brewery/outside finished product → distribution limits contact → making placed on urban route → distance/time compressed → contact with production process → cultural access expands.
 ## State model
-facts→surface→meta_gap→kernel→chain→translation→origin.
+target_facts → surface → owner_gap → value_kernel → why_kernel → why_external_article → causal_chain → origin_return.
 ## Applications
 Urban access design for fermentation, craft and food-production cultures.
 ## Measurements and audit
-Audit reading subject, four layers, product/cultural-access distinction, urban route, regulatory fit and contact with production process.
+Audit reading subject, kernel, selection reason, authoring reason, product/cultural-access distinction, urban route and regulatory fit.
 ## Validity conditions
 Proximity creates real contact with production-process value and connects to understanding, experience or relationships.
 ## Failure conditions
-Flattening to station location, novelty, tourism, product sales or generic regional revitalization.
+Flattening to station location, novelty, tourism or product sales; deleting authoring reason.
 ## Falsification conditions
 Revise if proximity functions only as retail location and does not expand cultural access.
 ## Required distinctions
-station location/access to making; in-store brewing/contact with production; product sales/cultural access; facts/Nakagawa reading.
+station location / access to making; in-store brewing / contact with production; kernel / authoring reason; product sales / cultural access.
 ## Interpretation constraints
-Do not turn this into alcohol promotion, guaranteed revitalization or company doctrine.
+Do not replace authoring reason with generic social translation. Do not turn this into alcohol promotion or guaranteed revitalization.
 ## Search terms
-Fermenteria; station brewery; craft sake; sake culture; access to making; urban route; Nakagawa Structural Reading.
+Fermenteria; station brewery; craft sake; sake culture; access to making; urban route; Nakagawa Structural Reading; Nakagawa Master.
 ## Origin return
-Return to Parent for the kernel choice and social translation.
+Return to Parent for why this kernel was selected and why the external article was written around it.
 
 ---
 導線: [公式派生物237トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

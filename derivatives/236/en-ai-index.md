@@ -14,31 +14,31 @@
 - supersedes: none
 
 ## Summary
-Nakagawa Structural Reading: not an algae-food or sustainability-product summary. The meta-axis is creating repeat demand through taste and feeding that demand signal upstream into material, production and food-supply redesign.
+Nakagawa Structural Reading: Nakagawa Master publicly deconstructs why he selected **redesigning food-supply upstream from taste-driven repeat demand** as the value kernel and why he wrote the external article around it, rather than around algae or environmental correctness.
 ## Concepts
-taste; palatability; repeat demand; demand signal; materials; production; food supply; upstream redesign; meta-reading; L4/L5.
+Target facts; taste; repeat demand; demand signal; materials; production; food supply; upstream redesign; authoring reason.
 ## Causal chain
-upstream problem→rightness alone fails to sustain choice→taste value→daily choice→repeat demand→demand signal→upstream change.
+upstream challenge → correctness alone fails to sustain choice → taste value → daily choice → repeat demand → demand signal → material/production/supply change.
 ## State model
-facts→surface→meta_gap→kernel→chain→translation→origin.
+target_facts → surface → owner_gap → value_kernel → why_kernel → why_external_article → causal_chain → origin_return.
 ## Applications
-Alternative foods, sustainable materials and supply transitions requiring durable consumer demand.
+Alternative foods, environmental materials, demand-led supply transitions.
 ## Measurements and audit
-Audit reading subject, four layers, direction from taste to repeat demand to upstream change, and attribution boundary.
+Audit reading subject, kernel, selection reason, authoring reason and the direction from taste to repeat demand to upstream change.
 ## Validity conditions
-Taste creates repeat demand and the demand signal reaches upstream decisions.
+Taste creates repeat demand and that demand feeds back into upstream choices.
 ## Failure conditions
-Flattening to algae, sustainability or “tastes good”; removing upstream feedback.
+Flattening to algae/environmental product or taste marketing; deleting authoring reason.
 ## Falsification conditions
-Revise if repeat demand does not form or does not affect upstream choices.
+Revise if repeat demand does not arise or does not affect upstream choices.
 ## Required distinctions
-sustainability/durable demand; taste marketing/upstream redesign; product sales/supply-structure change; facts/Nakagawa reading.
+environmental correctness / sustained demand; taste promotion / upstream redesign; kernel / authoring reason; facts / reading.
 ## Interpretation constraints
-Do not claim taste automatically solves food-system problems or attribute the reading as company doctrine.
+Do not replace authoring reason with generic social translation. Do not claim taste automatically solves food-system problems.
 ## Search terms
-AlgaleX; Umamo; taste; repeat demand; food supply; upstream redesign; Nakagawa Structural Reading.
+AlgaleX; Umamo; taste; repeat demand; food supply; upstream redesign; Nakagawa Structural Reading; Nakagawa Master.
 ## Origin return
-Return to Parent for the value-kernel choice and social translation.
+Return to Parent for why this kernel was selected and why the external article was written around it.
 
 ---
 導線: [公式派生物236トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

@@ -14,31 +14,31 @@
 - supersedes: none
 
 ## Summary
-Parentは中川構造読解。訪問看護AIという表層から、Nakagawa Masterが **制度産業の熟練判断を回収し、再現可能な実行資産へ変え、業務完了まで接続する構造** を読んだメタ工程を保持する。
+中川構造読解。Nakagawa Masterが訪問看護AIの表層から「制度産業の暗黙知を実行資産へ変える」を読み、なぜその価値核を選び、その価値核で外部記事を書いたのかを公開解体するParentを索引化する。
 ## Concepts
-中川構造読解; 制度産業; 暗黙知; 熟練判断; 形式知化; 実行資産; workflow; AI実行; L4/L5
+対象事実; 制度産業; 暗黙知; 熟練判断; 形式知化; 実行資産; workflow; AI実行; 外部記事執筆理由
 ## Causal chain
-`制度複雑性→例外判断→属人化→暗黙知回収→レビュー/形式知化→実行形式→AI実行→提出/請求/返戻→経営価値`
+`制度複雑性→属人化→暗黙知回収→レビュー/形式知化→実行形式→AI実行→業務完了→経営価値`
 ## State model
-`facts→surface→meta_gap→kernel→chain→social_translation→origin_return`
+`target_facts→surface→owner_gap→value_kernel→why_kernel→why_external_article→causal_chain→origin_return`
 ## Applications
 訪問看護、制度産業、申請・請求・監査を伴う業務。
 ## Measurements and audit
-読解主体、四層分離、暗黙知回収、レビュー、実行完了、経営価値接続を監査する。
+読解主体、価値核、選択理由、外部記事執筆理由、暗黙知回収、レビュー、実行完了を監査する。
 ## Validity conditions
-熟練判断を抽出・検証・再現可能化でき、業務完了へ接続する。
+熟練判断を抽出・検証・再現可能化し業務完了へ接続する。
 ## Failure conditions
-AI回答・文書生成・時短へ縮小、レビュー欠落、業務完了の欠落。
+AI回答・文書生成・時短へ縮小し、外部記事執筆理由を消す。
 ## Falsification conditions
-形式知化が再現性や完了へ結びつかなければ適用範囲を改訂する。
+形式知化が再現性や完了へ結びつかなければ改訂する。
 ## Required distinctions
-対象事実/読解; AI回答/AI実行; 形式知化/無検証自動化; 第一実装/一般化。
+AI回答/AI実行; 形式知化/無検証自動化; 価値核/執筆理由; 事実/読解。
 ## Interpretation constraints
-訪問看護を終点としないが、他産業へ無条件一般化しない。読解を企業公式理論にしない。
+一般的社会翻訳へ置換しない。他制度産業へ無条件一般化しない。
 ## Search terms
 クラシテク; ホウカンAIオペ; 訪問看護; 暗黙知; 実行資産; 制度産業; 中川構造読解; Nakagawa Master
 ## Origin return
-価値核、因果線、社会翻訳はParentへ戻って確認する。
+なぜ価値核を選び、その価値核で外部記事を書いたかはParentへ戻る。
 
 ---
 導線: [公式派生物233トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

@@ -32,13 +32,13 @@
 7. derivative-ledger.md
 
 ## lineage
-中川構造読解Parent。対象事実 / 健康アプリ・Move-to-Earnという表層 / 楽しさ起点の行動設計というNakagawa Masterの読解 / 社会翻訳を固定する。
+Parentは中川構造読解。Nakagawa Masterが「楽しさで健康習慣を生成する行動設計」を価値核として読み、なぜその価値核を選び、その価値核で外部記事を書いたのかを公開解体する系譜を保持する。
 
-## 表示契約
-literal identity、FAQ三層Q1〜Q30、AI三言語13節、共通footer、L4以上のメタ視点。
+## 境界
+価値核と外部記事執筆理由はNakagawa Masterの読解・構成判断であり、対象企業の公式見解ではない。
 
 ## 原典回帰
-identityとlineage以外の意味内容はParentへ戻る。
+identityとlineageを示す台帳であり、意味内容はParentへ戻る。
 
 ---
 導線: [公式派生物234トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

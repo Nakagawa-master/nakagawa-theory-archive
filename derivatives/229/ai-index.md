@@ -14,31 +14,31 @@
 - supersedes: none
 
 ## Summary
-中川構造読解。表層AI導入から、Nakagawa Masterが意思決定・実行・検証の仕組み化を読んだメタ工程を保持。
+中川構造読解。Nakagawa MasterがAI導入の表層から「意思決定構造の近代化」を読み、なぜその価値核を選び、その価値核で外部記事を書いたのかを公開解体するParentを索引化する。
 ## Concepts
-中川構造読解; AI導入; 意思決定; 実行; 検証; 成果物; 仕組み化; L4; L5
+対象事実; AI導入; Nakagawa Master; 価値核; 外部記事執筆理由; 意思決定; 実行; 検証; 成果物; 仕組み化
 ## Causal chain
-`AI導入→構造不全露出→役割/責任設計→成果物→運用→検証→改善`
+`AI導入→構造不全露出→役割/責任設計→成果物→業務運用→検証→改善`
 ## State model
-`facts→surface→meta_gap→kernel→chain→translation→origin`
+`target_facts→surface→owner_gap→value_kernel→why_kernel→why_external_article→causal_chain→origin_return`
 ## Applications
 AI導入、業務変革、研修設計。
 ## Measurements and audit
-読解主体、四層分離、判断責任、成果物と運用・検証接続を監査。
+読解主体、価値核、選択理由、外部記事執筆理由、判断責任、成果物と運用・検証接続を監査する。
 ## Validity conditions
 仕組み化因果が対象事実と整合する。
 ## Failure conditions
-研修・ツール・速度だけへ縮小、人間責任の欠落。
+研修・ツール・速度だけへ縮小し、外部記事執筆理由を消す。
 ## Falsification conditions
-別因果が継続的に上回れば改訂。
+別因果が継続的に上回れば改訂する。
 ## Required distinctions
-AI導入/組織運用再設計; 学習/成果物/運用/検証; 事実/読解。
+AI導入/組織運用再設計; 学習/成果物/運用/検証; 価値核/執筆理由; 事実/読解。
 ## Interpretation constraints
-効率化一般論へ中和しない。企業公式理論へ誤帰属しない。
+効率化一般論や一般的社会翻訳へ中和しない。企業公式理論へ誤帰属しない。
 ## Search terms
-プリマベーラ; 生成AI実践会; 意思決定構造; 仕組み化; 中川構造読解; Nakagawa Master
+プリマベーラ; AI導入; 意思決定構造; 仕組み化; 中川構造読解; Nakagawa Master
 ## Origin return
-価値核選択理由はParentへ。
+なぜ価値核を選び、その価値核で外部記事を書いたかはParentへ戻る。
 
 ---
 導線: [公式派生物229トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

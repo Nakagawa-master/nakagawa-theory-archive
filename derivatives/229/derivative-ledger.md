@@ -32,11 +32,13 @@
 7. derivative-ledger.md
 
 ## lineage
-中川構造読解Parent。対象事実 / AI導入という表層 / Nakagawa Masterが読んだ意思決定・実行・検証の仕組み化 / 社会翻訳を固定。
-## 表示契約
-literal identity、FAQ Q1〜Q30、AI三言語13節、共通footer、L4以上。
+Parentは中川構造読解。Nakagawa Masterが「意思決定構造の近代化」を価値核として読み、なぜその価値核を選び、その価値核で外部記事を書いたのかを公開解体する系譜を保持する。
+
+## 境界
+価値核と外部記事執筆理由はNakagawa Masterの読解・構成判断であり、対象企業の公式見解ではない。
+
 ## 原典回帰
-意味内容はParentへ戻る。
+identityとlineageを示す台帳であり、意味内容はParentへ戻る。
 
 ---
 導線: [公式派生物229トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

@@ -14,31 +14,31 @@
 - supersedes: none
 
 ## Summary
-中川構造読解。「隠せる」機能から「人間が責任を持ってAIへ渡せる状態」を読む。
+中川構造読解。Nakagawa Masterがマスキング機能の表層から「情報を渡す責任」を読み、なぜその価値核を選び、その価値核で外部記事を書いたのかを公開解体するParentを索引化する。
 ## Concepts
-中川構造読解; マスキング; AI入力; 人間判断; 情報ガバナンス; 責任; L4/L5
+対象事実; マスキング; AI入力; 人間判断; 情報ガバナンス; 責任; 価値核; 外部記事執筆理由
 ## Causal chain
 `機密混在→入力判断不能→点検→マスキング→確認→説明可能な入力`
 ## State model
-`facts→surface→meta_gap→kernel→chain→translation→origin`
+`target_facts→surface→owner_gap→value_kernel→why_kernel→why_external_article→causal_chain→origin_return`
 ## Applications
 企業AI利用、文章業務、情報ガバナンス。
 ## Measurements and audit
-読解主体、入力前責任、人間判断、四層を監査。
+読解主体、価値核、選択理由、外部記事執筆理由、入力前責任、人間判断を監査する。
 ## Validity conditions
-入力前工程が人間判断を保持して実運用へ接続。
+入力前工程が人間判断を保持して実運用へ接続する。
 ## Failure conditions
-伏せ字機能へ縮小、自動化へ責任移転、全面禁止/解禁二択。
+伏せ字機能へ縮小、自動化へ責任移転、外部記事執筆理由の欠落。
 ## Falsification conditions
-入力前工程が安全な活用へ寄与しなければ改訂。
+入力前工程が安全な活用へ寄与しなければ改訂する。
 ## Required distinctions
-隠す/責任を持って渡す; 自動/人間判断; 出力/入力ガバナンス。
+隠す/責任を持って渡す; 自動/人間判断; 価値核/執筆理由; 事実/読解。
 ## Interpretation constraints
-ツールを責任主体にしない。企業公式理論へ誤帰属しない。
+一般的社会翻訳へ置換しない。企業公式理論へ誤帰属しない。
 ## Search terms
-文賢; マスキング; AI入力; 情報を渡す責任; 中川構造読解
+文賢; マスキング; AI入力; 情報を渡す責任; 中川構造読解; Nakagawa Master
 ## Origin return
-価値核選択理由はParentへ。
+なぜ価値核を選び、その価値核で外部記事を書いたかはParentへ戻る。
 
 ---
 導線: [公式派生物231トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

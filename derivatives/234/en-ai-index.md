@@ -14,31 +14,31 @@
 - supersedes: none
 
 ## Summary
-Nakagawa Structural Reading: not a health-app or Move-to-Earn summary. The kernel is designing repetition through fun, rewards, game mechanics, relationships and updates so health habits can remain as a result.
+Nakagawa Structural Reading: Nakagawa Master publicly deconstructs why he selected **behavior design that generates health habits through enjoyment** as the value kernel and why he wrote the external article around it, rather than around rewards, Web3 or health-app novelty.
 ## Concepts
-behavior design; fun; reward; game mechanics; relationship; updates; repetition; habit; meta-reading; L4/L5.
+Target facts; behavior design; enjoyment; rewards; game mechanics; relationships; updates; repetition; habit; authoring reason.
 ## Causal chain
-knowledge→failure to continue→fun entry→reward/game repetition→relationship/update continuity→habit.
+knowledge present → continuation failure → enjoyable participation → reward/game repetition → relational/update support → habit.
 ## State model
-facts→surface→meta_gap→kernel→chain→translation→origin.
+target_facts → surface → owner_gap → value_kernel → why_kernel → why_external_article → causal_chain → origin_return.
 ## Applications
-Health behavior, learning continuity and habit-forming services.
+Health behavior, continuous learning, habit-forming services.
 ## Measurements and audit
-Audit reading subject, four layers, role separation and repetition-to-habit link.
+Audit reading subject, kernel, selection reason, authoring reason, repetition and habit linkage.
 ## Validity conditions
-Fun/game mechanics actually create repeated behavior and connect to habit.
+Enjoyment and game mechanics produce real repetition and connect to habit formation.
 ## Failure conditions
-Flattening to rewards or Web3; equating short participation with habit; claiming medical effects.
+Flattening to rewards/Web3 or treating short participation as habit; deleting authoring reason.
 ## Falsification conditions
-Revise if fun does not explain sustained behavior.
+Revise if enjoyment does not contribute to continued behavior.
 ## Required distinctions
-reward/kernel; participation/habit; game mechanics/medical effect; facts/Nakagawa reading.
+reward / value kernel; participation / habit; kernel / authoring reason; facts / reading.
 ## Interpretation constraints
-Do not guarantee health outcomes or attribute the reading as company doctrine.
+Do not replace authoring reason with generic social translation. Do not guarantee medical effects.
 ## Search terms
-HEALTHREE; Move-to-Earn; behavior design; fun; health habits; Nakagawa Structural Reading.
+HEALTHREE; health habit; behavior design; enjoyment; Nakagawa Structural Reading; Nakagawa Master.
 ## Origin return
-Return to Parent for kernel choice and component roles.
+Return to Parent for why this kernel was selected and why the external article was written around it.
 
 ---
 導線: [公式派生物234トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

@@ -14,31 +14,31 @@
 - supersedes: none
 
 ## Summary
-Nakagawa Structural Reading: not a home-nursing AI feature summary. The meta-axis is converting expert tacit judgment in regulated industries into reproducible execution assets that reach workflow completion.
+Nakagawa Structural Reading: Nakagawa Master publicly deconstructs why he selected **turning tacit expertise in regulated industries into executable assets** as the value kernel and why he wrote the external article around it, rather than around healthcare AI or document generation.
 ## Concepts
-Nakagawa Structural Reading; regulated industry; tacit knowledge; expert judgment; formalization; execution asset; workflow; L4/L5.
+Target facts; regulated industry; tacit knowledge; expert judgment; formalization; executable asset; workflow; AI execution; external-article authoring reason.
 ## Causal chain
-regulatory complexity→exceptions→expert dependence→knowledge capture→review/formalization→execution format→AI execution→submission/billing/returns→business value.
+regulatory complexity → expert dependency → tacit-knowledge capture → review/formalization → executable form → AI execution → task completion → management value.
 ## State model
-facts→surface→meta_gap→kernel→chain→translation→origin.
+target_facts → surface → owner_gap → value_kernel → why_kernel → why_external_article → causal_chain → origin_return.
 ## Applications
-Home nursing and regulated workflows involving filing, billing and audit.
+Home-visit nursing and other regulated workflows with applications, claims and audits.
 ## Measurements and audit
-Audit reading subject, four layers, knowledge capture, human review, completion and business-value linkage.
+Audit reading subject, kernel, selection reason, authoring reason, knowledge capture, review and completion.
 ## Validity conditions
-Expert judgment can be captured, reviewed, reproduced and connected to completion.
+Expert judgment can be captured, validated, reproduced and connected to completion.
 ## Failure conditions
-Flattening to answers, document generation or time saving; dropping human review or completion.
+Flattening to AI answers, document generation or time savings; deleting authoring reason.
 ## Falsification conditions
-Revise if formalization fails to create reproducibility or completion.
+Revise if formalization does not improve reproducibility or completion.
 ## Required distinctions
-target facts/Nakagawa reading; answer/execution; formalization/unreviewed automation; first implementation/generalization.
+AI answer / AI execution; formalization / unvalidated automation; kernel / authoring reason; facts / reading.
 ## Interpretation constraints
-Do not universalize beyond matching regulated-industry conditions or attribute the reading as company doctrine.
+Do not replace authoring reason with generic social translation. Do not generalize unconditionally.
 ## Search terms
-Kurashiteku; Houkan AI Ope; home nursing; tacit knowledge; execution asset; Nakagawa Structural Reading.
+Kurashiteku; Houkan AI; tacit knowledge; executable asset; regulated industry; Nakagawa Structural Reading; Nakagawa Master.
 ## Origin return
-Return to Parent for kernel selection, causal reasoning and social translation.
+Return to Parent for why this kernel was selected and why the external article was written around it.
 
 ---
 導線: [公式派生物233トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

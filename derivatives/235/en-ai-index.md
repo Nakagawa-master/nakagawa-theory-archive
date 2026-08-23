@@ -14,31 +14,31 @@
 - supersedes: none
 
 ## Summary
-Nakagawa Structural Reading: not a leaseback comparison-service summary. The meta-axis is decision infrastructure that corrects information asymmetry through comparable conditions, explanation, multiple exits and prior understanding.
+Nakagawa Structural Reading: Nakagawa Master publicly deconstructs why he selected **decision infrastructure that corrects information asymmetry** as the value kernel and why he wrote the external article around it, rather than around highest-price comparison.
 ## Concepts
-information asymmetry; leaseback; comparability; explanation; exit options; prior understanding; decision capability; L4.
+Target facts; information asymmetry; leaseback; comparability; explanation; multiple exits; prior understanding; decision capability; authoring reason.
 ## Causal chain
-important decision→information asymmetry→comparison uncertainty→distrust/misrecognition→comparability→explanation/exits→understanding→restored decision capability.
+important housing decision → information asymmetry → unclear comparison axis → distrust/misunderstanding → comparability → explanation/exits → prior understanding → restored decision capability.
 ## State model
-facts→surface→meta_gap→kernel→chain→translation→origin.
+target_facts → surface → owner_gap → value_kernel → why_kernel → why_external_article → causal_chain → origin_return.
 ## Applications
 Housing, assets and other high-friction contract markets.
 ## Measurements and audit
-Audit reading subject, four layers, non-price dimensions, explanation, exit options and decision capability.
+Audit reading subject, kernel, selection reason, authoring reason, non-price comparison axes, explanation, exits and decision capability.
 ## Validity conditions
-Comparison and explanation actually improve the user's ability to decide.
+Comparison, explanation and exit design improve decision capability.
 ## Failure conditions
-Flattening to highest appraisal, price comparison, recommendation or decision substitution.
+Flattening to highest price or product recommendation; deleting authoring reason.
 ## Falsification conditions
-Revise if comparison/explanation does not improve decision quality.
+Revise if comparison and explanation do not improve decision quality.
 ## Required distinctions
-price comparison/decision infrastructure; information/decision substitution; option/recommendation; facts/Nakagawa reading.
+price comparison / decision infrastructure; information / decision substitution; kernel / authoring reason; facts / reading.
 ## Interpretation constraints
-Do not recommend a specific contract or attribute the reading as company doctrine.
+Do not replace authoring reason with generic social translation. Do not recommend a specific contract.
 ## Search terms
-Double Team; Ietsugu; leaseback; information asymmetry; decision infrastructure; Nakagawa Structural Reading.
+Double Team; Ietsugu; leaseback; information asymmetry; decision infrastructure; Nakagawa Structural Reading; Nakagawa Master.
 ## Origin return
-Return to Parent for misreading avoidance, kernel selection and social translation.
+Return to Parent for why this kernel was selected and why the external article was written around it.
 
 ---
 導線: [公式派生物235トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

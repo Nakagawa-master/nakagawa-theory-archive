@@ -14,31 +14,31 @@
 - supersedes: none
 
 ## Summary
-Nakagawa Structural Reading: not an AI-VTuber technology summary. Preserve the meta-shift from surface technology to **AI personality IP grown through relationships and continuous operation**.
+Nakagawa Structural Reading: Nakagawa Master publicly deconstructs why he selected **AI personality IP that grows through relationships** as the value kernel and why he wrote the external article around that kernel, rather than around AI VTuber novelty.
 ## Concepts
-meta-reading; AI personality; fan participation; relationship history; personality consistency; continuous operation; social translation; L4.
+Target facts; AI VTuber; Nakagawa Master; value kernel; external-article authoring reason; personality consistency; fan participation; relationship history; continuous operation.
 ## Causal chain
-AI response → fan participation → relationship history → consistency → market feedback → operational improvement → IP growth.
+AI response → fan participation → relationship history → personality consistency → market feedback → operational improvement → IP growth.
 ## State model
-facts → surface → meta_gap → kernel → chain → translation → origin.
+target_facts → surface → owner_gap → value_kernel → why_kernel → why_external_article → causal_chain → origin_return.
 ## Applications
-AI characters, conversational IP, community-operated media.
+AI characters, conversational IP, community operations.
 ## Measurements and audit
-Audit reading subject, four-layer separation, personality consistency, feedback loop, attribution boundary.
+Audit reading subject, kernel, kernel-selection reason, authoring reason, consistency and continuous operation.
 ## Validity conditions
-Relationship and continuous-operation causality fits the case.
+Relationship and operation causally connect to durable IP value.
 ## Failure conditions
-Flattening to technical novelty, virality, or one-off fan engagement.
+Flattening to technical novelty or deleting the authoring reason.
 ## Falsification conditions
-Revise if relationship history and operation do not explain durable IP value.
+Revise if relationship history and operational feedback do not contribute to IP value.
 ## Required distinctions
-technology / IP operation; finished character / growth environment; facts / Nakagawa reading; Parent / social translation.
+technology / operation; character / personality IP; kernel / authoring reason; company view / Nakagawa reading.
 ## Interpretation constraints
-Do not equate speaking ability with personality-IP formation. Do not erase Nakagawa Master as reading subject.
+Do not replace the authoring reason with generic social translation. Do not attribute the reading to the company.
 ## Search terms
-KLab; Yumekairo; Yumeminana; AI VTuber; AI personality IP; relationship; Nakagawa Structural Reading.
+KLab; Yumekairo; AI VTuber; AI personality IP; relationship; Nakagawa Structural Reading; Nakagawa Master.
 ## Origin return
-Return to Parent for the original gap and “experiment to operation” framing.
+Return to the Parent for why this kernel was chosen and why the external article was written around it.
 
 ---
 導線: [公式派生物228トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

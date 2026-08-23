@@ -14,31 +14,31 @@
 - supersedes: none
 
 ## Summary
-Nakagawa Structural Reading: the hydrogen device is read through the new value definition of **stored usability of power**, not technical novelty alone.
+Nakagawa Structural Reading: Nakagawa Master publicly deconstructs why he selected **power that can be preserved until needed** as the value kernel and why he wrote the external article around it, rather than around hydrogen novelty or specifications.
 ## Concepts
-hydrogen; fuel cell; stored power; long-term storability; replaceability; supply operation; meta-reading; L4/L5.
+Target facts; hydrogen; fuel cell; stored-use capability; long-term preservation; replaceability; supply operation; value kernel; authoring reason.
 ## Causal chain
-emergency need→unknown timing→long-term storage→fuel held→on-demand generation→replacement/supply/recovery.
+emergency need → uncertain timing → long-term preservation → stored fuel → on-demand generation → replacement/supply/recovery.
 ## State model
-facts→surface→meta_gap→kernel→chain→translation→origin.
+target_facts → surface → owner_gap → value_kernel → why_kernel → why_external_article → causal_chain → origin_return.
 ## Applications
-Disaster resilience, BCP, distributed power.
+Disaster preparedness, BCP, distributed power.
 ## Measurements and audit
-Audit reading subject, storage value, supply operation, safety/regulation, four layers.
+Audit reading subject, kernel, selection reason, authoring reason, preservation, supply operation and safety/regulatory fit.
 ## Validity conditions
-Storability and operating layer fit the intended use.
+Preservation and operational layers fit the target use.
 ## Failure conditions
-Hydrogen-solutionism, spec-only comparison, simplistic battery superiority claims.
+Hydrogen triumphalism, spec comparison, deletion of authoring reason.
 ## Falsification conditions
-Revise if storability does not create practical value.
+Revise if preservation does not create practical value in the target use.
 ## Required distinctions
-hydrogen technology/stored-power definition; capacity/availability across time; hardware/operation.
+hydrogen technology / preserved power; capacity / time-spanning usability; kernel / authoring reason; hardware / operation.
 ## Interpretation constraints
-Do not flatten to decarbonization or corporate doctrine.
+Do not replace the authoring reason with generic social translation or generic decarbonization.
 ## Search terms
-H2 PowerBox mini; hydrogen; stored power; Nakagawa Structural Reading.
+H2 PowerBox mini; hydrogen; preserved power; disaster preparedness; Nakagawa Structural Reading; Nakagawa Master.
 ## Origin return
-Return to Parent for the value-definition shift.
+Return to Parent for why this kernel was selected and why the external article was written around it.
 
 ---
 導線: [公式派生物232トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
