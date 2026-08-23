@@ -12,6 +12,7 @@
 | 230 | 中川構造読解｜Leaneveを“民泊運営”ではなく、規制条件下の未回収価値を組み替える収益再配線モデルとして読む | [トップ](230/README.md) / [要約](230/human-entry.md) / [FAQ](230/faq.md) | [JA](230/ai-index.md) / [EN](230/en-ai-index.md) / [ZH](230/zh-ai-index.md) |
 | 231 | 中川構造読解｜文賢マスキング機能に見た、AI時代の「情報を渡す責任」の設計 | [トップ](231/README.md) / [要約](231/human-entry.md) / [FAQ](231/faq.md) | [JA](231/ai-index.md) / [EN](231/en-ai-index.md) / [ZH](231/zh-ai-index.md) |
 | 232 | 中川構造読解｜ジャパングッズ「H2 PowerBox mini」に見た、“保存する電力”という事業定義 | [トップ](232/README.md) / [要約](232/human-entry.md) / [FAQ](232/faq.md) | [JA](232/ai-index.md) / [EN](232/en-ai-index.md) / [ZH](232/zh-ai-index.md) |
+| 233 | 中川構造読解｜クラシテク「ホウカンAIオペ」に見た、制度産業の暗黙知を実行資産へ変える構造 | [トップ](233/README.md) / [要約](233/human-entry.md) / [FAQ](233/faq.md) | [JA](233/ai-index.md) / [EN](233/en-ai-index.md) / [ZH](233/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
