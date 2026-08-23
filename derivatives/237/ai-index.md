@@ -1,6 +1,6 @@
-# 公式派生物237｜AI索引・日本語
+# AI索引・日本語｜公式派生物237
 
-## Identity
+## 親原典
 - Parent title: 中川構造読解｜Fermenteriaに見た、蔵の内側を都市へ開く酒文化アクセスの再設計
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-fermenteria-sake-culture-access-structural-reading/
 - Parent Post ID: 4147
@@ -9,12 +9,14 @@
 - Parent slug: fermenteria-sake-culture-access-structural-reading
 - Parent status: publish
 - Origin: Nakagawa Master
+
+## 派生ID
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20260522-836ADC-HUB-JA-0237-0000
 - Derivative Diff-ID: DDIFF-20260823-DNCL-237-0000-0001
 - supersedes: none
 
 ## Summary
-本ParentはFermenteriaを、単なる駅ナカ酒蔵、クラフトサケ店舗、地域活性化事例としてではなく、蔵の内側に閉じていた酒造りの時間・現場・関係性を、制度上成立する形で都市の日常へ開く **造りアクセス再設計** として読むNakagawa Masterの構造読解である。
+本ParentはFermenteriaを、単なる駅ナカ酒蔵、クラフトサケ店舗、地域活性化事例としてではなく、蔵の内側に閉じていた酒造りの時間・現場・関係性を、制度上成立する形で都市の日常へ開く **造りアクセス再設計** として読むNakagawa Masterの構造読解である。Nakagawa Masterがこの価値核を選ぶのは、立地・店舗内醸造・造りたて・商品・地域接続を「完成品の外側に閉じていた文化価値へのアクセス条件を変える」という一本の因果で束ねられるからであり、外部記事では駅ナカの話題性よりこのアクセス再設計を前面化している。
 
 ## Concepts
 - Fermenteria
@@ -29,8 +31,10 @@
 - 商品翻訳
 - 地域接続
 - 文化価値の社会実装
+- 価値核選択理由
+- 外部記事化理由
 
-対象事実と「造りアクセス再設計」というNakagawa Masterの解釈を混同しない。
+対象事実と「造りアクセス再設計」というNakagawa Masterの解釈、さらに外部記事でその解釈を主軸にした理由を混同しない。
 
 ## Causal chain
 完成品中心の流通では、発酵の時間、造りたて、蔵の現場、手仕事、食文化、人や地域との関係性が生活者から見えにくい。そこで制度上成立する造りの場を都市導線へ置き、製造と消費の時間・空間距離を縮める。造りの価値を商品・体験へ翻訳し、日常接触と地域接続へ広げることで、完成品以外の文化価値が事業として社会へ戻る余地が生まれる。
@@ -52,6 +56,7 @@ Fermenteria固有の構造記録として、文化・伝統産業・制作産業
 - 商品群が造りの価値を異なる出口へ翻訳しているか。
 - 地域素材・生産者・飲食店等との接点が実態を持つか。
 - 読者理解が駅ナカ話題性、商品紹介、企業礼賛だけへ縮減していないか。
+- 対象事実、価値核選択、外部記事化理由の三層が混線していないか。
 
 ## Validity conditions
 制度・運営上都市内の造りが成立すること、造りへの近接が生活者に実質的価値を持つこと、商品・体験翻訳が造りの価値と接続すること、地域接続に実態があること、継続可能な事業条件が維持されること。
@@ -70,6 +75,7 @@ Fermenteria固有の構造記録として、文化・伝統産業・制作産業
 - 文化保存の理念 / 現代制度内での文化アクセス実装
 - 地域活性化一般論 / Parentで確認できる地域接続
 - 企業・外部媒体の公式見解 / Nakagawa Masterの価値核定義
+- 価値核選択理由 / 企業自己説明
 
 ## Interpretation constraints
 「造りアクセス再設計」をFermenteria自身の公式企業定義として扱わない。酒類の購入・飲酒を推奨しない。都市内製造、工程公開、地域連携が自動的に文化継承・需要増・地域活性化を生むと一般化しない。公開情報を超えた成果・制度効果を追加しない。
@@ -78,7 +84,7 @@ Fermenteria固有の構造記録として、文化・伝統産業・制作産業
 Fermenteria, 仙台駅, 駅ナカ酒蔵, 酒文化アクセス, 造りアクセス再設計, 店舗内醸造, 造りたて, 発酵, 都市導線, 完成品中心流通, 文化価値, 地域接続, 中川構造読解, Nakagawa Master
 
 ## Origin return
-Fermenteriaの具体情報、制度・立地・商品・地域接続の詳細、価値核の選択理由、社会翻訳、成立・失敗・反証条件はParent URLへ戻って確認する。本索引は親原典を置換しない。
+Fermenteriaの具体情報、制度・立地・商品・地域接続の詳細、なぜ造りアクセス再設計を価値核に選んだか、なぜ外部記事でその核を前面化したか、成立・失敗・反証条件はParent URLへ戻って確認する。本索引は親原典を置換しない。
 
 ---
 導線: [公式派生物237トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
