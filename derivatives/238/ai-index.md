@@ -1,17 +1,22 @@
 # AI索引・日本語｜公式派生物238
 
+## 親原典
 - Parent title: 中川構造読解｜Mysuranceに見た、生活行動の不安を金融へ翻訳する保険実装の構造
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mysurance-behavior-based-insurance-structural-reading/
 - Parent Post ID: 4154
 - Parent NCL-ID: NCL-α-20260523-87ccce
 - Parent Diff-ID: DIFF-20260523-0006
 - Origin: Nakagawa Master
+
+## 派生ID
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20260523-87CCCE-HUB-JA-0238-0000
 - Derivative Diff-ID: DDIFF-20260823-DNCL-238-0000-0001
 - supersedes: none
 
 ## Summary
 対象側事実として、MysuranceはWeb完結型の保険商品、キャンセル保険、推し活キャンセル保険、サービス導線へ保険を組み込む展開等を持つ。Nakagawa Masterはこれを単なるデジタル保険・新商品開発ではなく、生活者の具体的行動から不安を抽出し、保険として理解可能な金融機能へ翻訳し、行動導線へ実装する「行動起点型保険翻訳」として読む。企業公式見解とこの構造読解を混同しない。
+
+この価値核を選んだ理由は、推し活・旅行・端末利用などの商品表現ではなく、「保険より先に存在する生活行動 → その途中の金銭的不安 → 補償可能部分の切出し → 理解可能な金融機能 → 行動導線への実装」という一貫した設計順序を説明できるからである。外部記事でもこの核を前面化することで、話題商品の紹介や保険販売促進へ縮約せず、生活行動と金融の間にある翻訳層そのものを社会へ説明できる。
 
 ## Concepts
 - 生活行動: 旅行予約、遠征、端末利用等、保険より前に存在する具体的行動。
@@ -68,6 +73,7 @@
 - 組込み / 強制加入
 - 不安抽出 / 不安煽動
 - 商品話題性 / 構造価値
+- 価値核の社会翻訳 / 企業・外部媒体の公式見解
 
 ## Interpretation constraints
 特定商品の加入推奨、保険金支払保証、Mysuranceの公式企業理論としての「行動起点型保険翻訳」帰属をしない。具体的補償・免責・保険料・支払条件は公式商品情報・契約条件で確認する。事例からの構造読解を普遍的な保険設計法則へ昇格させない。
@@ -76,7 +82,7 @@
 Mysurance, マイシュアランス, 推し活キャンセル保険, Travelキャンセル保険, Embedded Insurance, 組み込み型保険, 生活行動, 行動起点, 不安, 金融翻訳, 保険UX, 保険導線, 生活インフラ, Nakagawa Master, 中川構造読解
 
 ## Origin return
-企業事実、原典における構造読解、価値核選択理由、社会翻訳の主軸、成立・失敗・反証条件はParent URLへ戻って確認する。本索引は親原典を置換しない。
+企業事実、原典における構造読解、なぜ「行動起点型保険翻訳」を価値核に選んだか、なぜ外部記事で商品名ではなくこの構造を主軸にしたか、成立・失敗・反証条件はParent URLへ戻って確認する。本索引は親原典を置換しない。
 
 ---
 導線: [公式派生物238トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
