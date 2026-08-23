@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-23 20:20:00",
+  "updated_jst": "2026-08-23 23:45:00",
   "entries": [
     {"number":"176","ncl_id":"NCL-α-20251204-027dd7","origin_slug":"nakagawa-master-nakagawa-cognitive-os-buddhism-parallel","title":"【補章】認識OSの補助言語としての原始仏教 —— 「五蘊」と「超俯瞰」の構造的同期","derivative_dir":"derivatives/176","status":"active"},
     {"number":"177","ncl_id":"NCL-α-20251206-ab6aee","origin_slug":"nakagawa-master-nakagawa-civilization-os-tao-connection-reward","title":"【文明OS】中川式文明論 × タオ（Tao） —— 「接続報酬社会」によるL7価値関数の書き換えと、構造的無為自然の完全実装","derivative_dir":"derivatives/177","status":"active"},
@@ -63,6 +63,18 @@
     {"number":"234","ncl_id":"NCL-α-20260517-d76d87","origin_slug":"healthree-behavior-design-structural-reading","title":"中川構造読解｜HEALTHREEに見た、楽しさで健康習慣を生成する行動設計の構造","derivative_dir":"derivatives/234","status":"active"},
     {"number":"235","ncl_id":"NCL-α-20260520-35513f","origin_slug":"doubleteam-ietugu-decision-infrastructure-structural-reading","title":"中川構造読解｜ダブルチーム「家つぐ」に見た、情報格差を補正する意思決定インフラの構造","derivative_dir":"derivatives/235","status":"active"},
     {"number":"236","ncl_id":"NCL-α-20260521-7032c3","origin_slug":"algalex-umamo-food-supply-upstream-structural-reading","title":"中川構造読解｜AlgaleX「うま藻」に見た、味覚から食料供給の上流を再設計する構造","derivative_dir":"derivatives/236","status":"active"},
-    {"number":"237","ncl_id":"NCL-α-20260522-836adc","origin_slug":"fermenteria-sake-culture-access-structural-reading","title":"中川構造読解｜Fermenteriaに見た、蔵の内側を都市へ開く酒文化アクセスの再設計","derivative_dir":"derivatives/237","status":"active"}
+    {"number":"237","ncl_id":"NCL-α-20260522-836adc","origin_slug":"fermenteria-sake-culture-access-structural-reading","title":"中川構造読解｜Fermenteriaに見た、蔵の内側を都市へ開く酒文化アクセスの再設計","derivative_dir":"derivatives/237","status":"active"},
+    {"number":"238","ncl_id":"NCL-α-20260523-87ccce","origin_slug":"nakagawa-master-mysurance-behavior-based-insurance-structural-reading","title":"中川構造読解｜Mysuranceに見た、生活行動の不安を金融へ翻訳する保険実装の構造","derivative_dir":"derivatives/238","status":"active"},
+    {"number":"239","ncl_id":"NCL-α-20260523-c29fd9","origin_slug":"nakagawa-master-meaning-convergence-theory-future-definition","title":"意味収束理論・初版⸻ 成立可能な未来定義が、過去・現在ノードの意味ベクトルを再配列する","derivative_dir":"derivatives/239","status":"active"},
+    {"number":"240","ncl_id":"NCL-α-20260524-7d8763","origin_slug":"nakagawa-master-hap-kaidoc-development-ordering-infrastructure-structural-reading","title":"中川構造読解｜HAP「カイドク」に見た、判断不能な発注を論点化する開発発注インフラの構造","derivative_dir":"derivatives/240","status":"active"},
+    {"number":"241","ncl_id":"NCL-α-20260524-8eab51","origin_slug":"nakagawa-master-signaltalk-eat-up-monster-behavior-change-structural-reading","title":"中川構造読解｜シグナルトーク「Eat Up Monster」に見た、遅すぎる健康因果を遊べる速度へ変換する行動変容インフラの構造","derivative_dir":"derivatives/241","status":"active"},
+    {"number":"242","ncl_id":"NCL-α-20260525-62c5b5","origin_slug":"nakagawa-master-mrc-renoplat-decision-continuity-structural-reading","title":"中川構造読解｜MRC「リノプラ」に見た、理事会交代を越えて修繕判断を継承する管理ガバナンスの構造","derivative_dir":"derivatives/242","status":"active"},
+    {"number":"243","ncl_id":"NCL-α-20260526-9e910b","origin_slug":"nakagawa-master-cci-group-regional-financial-infrastructure-structural-reading","title":"中川構造読解｜CCIグループに見た、銀行実務を金融インフラ供給モデルへ変換する地域金融基盤の構造","derivative_dir":"derivatives/243","status":"active"},
+    {"number":"244","ncl_id":"NCL-α-20260527-b4d04d","origin_slug":"nakagawa-master-frontier-ai-audit-governance-structural-reading","title":"中川構造読解｜フロンティアに見た、AI監査を企業統治の実行基盤へ変換する内部監査再設計の構造","derivative_dir":"derivatives/244","status":"active"},
+    {"number":"245","ncl_id":"NCL-α-20260527-7439a8","origin_slug":"nakagawa-master-future-defined-causal-rectification-theory-1","title":"逆因果整流理論・第1論｜未来定義を終端制約とする、意味・時間・行動・構造の再整列プロセス","derivative_dir":"derivatives/245","status":"active"},
+    {"number":"246","ncl_id":"NCL-α-20260528-52c459","origin_slug":"nakagawa-master-total-brain-care-brain-fitness-social-implementation-structural-reading","title":"中川構造読解｜トータルブレインケアに見た、認知機能を“脳体力”として社会実装する基盤指標の構造","derivative_dir":"derivatives/246","status":"active"},
+    {"number":"247","ncl_id":"NCL-α-20260528-775657","origin_slug":"nakagawa-master-future-defined-causal-rectification-theory-2-differences","title":"逆因果整流理論・第2論｜意味収束理論、時間OS、未来負債論、バックキャスティング、量子論比喩との差異","derivative_dir":"derivatives/247","status":"active"},
+    {"number":"248","ncl_id":"NCL-α-20260529-554a57","origin_slug":"nakagawa-master-adory-structural-reading-value-core","title":"中川構造読解｜Adoryを「LINEアンケート」ではなく、現場不調を先行指標へ変換する構造として読む","derivative_dir":"derivatives/248","status":"active"},
+    {"number":"249","ncl_id":"NCL-α-20260531-089ed1","origin_slug":"nakagawa-master-wakai-structural-reading-consensus-flow","title":"中川構造読解｜wakaiを「スマホ調停」ではなく、停止した合意形成を前進可能にする構造として読む","derivative_dir":"derivatives/249","status":"active"}
   ]
 }
