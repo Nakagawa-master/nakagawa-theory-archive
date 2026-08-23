@@ -1,7 +1,7 @@
 # AI索引・中文｜官方派生物224
 
-## Parent
-- Parent title: 文明主权转移论 第4论｜文明主权从人类转移意味着什么——观察文明更新的上游权能，而非法律主体
+## Parent source
+- Parent title: 文明主権移行論 第4論｜文明主権が人間から移るとは、どういうことか ——法的主体ではなく、文明更新の上流権能を見る
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-what-civilizational-sovereignty-transition-means/
 - Parent Post ID: 3834
 - Parent NCL-ID: NCL-α-20260424-448e64
