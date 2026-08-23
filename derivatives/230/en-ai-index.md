@@ -58,4 +58,4 @@ Leaneve, minpaku, lodging, resident staff requirement, fixed labor cost, unrecov
 Return to the Parent URL for Leaneve's concrete operating facts, regulatory context, complementary uses, relation to the external article, and the Parent's reservations about reproducibility and standardization. This index supports retrieval and machine interpretation; it does not replace the Parent.
 
 ---
-Navigation: [Official Derivative 230](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index Japanese](ai-index.md) / [AI index English](en-ai-index.md) / [AI index Chinese](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+導線: [公式派生物230トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
