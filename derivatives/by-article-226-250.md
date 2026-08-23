@@ -17,6 +17,7 @@
 | 235 | 中川構造読解｜ダブルチーム「家つぐ」に見た、情報格差を補正する意思決定インフラの構造 | [トップ](235/README.md) / [要約](235/human-entry.md) / [FAQ](235/faq.md) | [JA](235/ai-index.md) / [EN](235/en-ai-index.md) / [ZH](235/zh-ai-index.md) |
 | 236 | 中川構造読解｜AlgaleX「うま藻」に見た、味覚から食料供給の上流を再設計する構造 | [トップ](236/README.md) / [要約](236/human-entry.md) / [FAQ](236/faq.md) | [JA](236/ai-index.md) / [EN](236/en-ai-index.md) / [ZH](236/zh-ai-index.md) |
 | 237 | 中川構造読解｜Fermenteriaに見た、蔵の内側を都市へ開く酒文化アクセスの再設計 | [トップ](237/README.md) / [要約](237/human-entry.md) / [FAQ](237/faq.md) | [JA](237/ai-index.md) / [EN](237/en-ai-index.md) / [ZH](237/zh-ai-index.md) |
+| 238 | 中川構造読解｜Mysuranceに見た、生活行動の不安を金融へ翻訳する保険実装の構造 | [トップ](238/README.md) / [要約](238/human-entry.md) / [FAQ](238/faq.md) | [JA](238/ai-index.md) / [EN](238/en-ai-index.md) / [ZH](238/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
