@@ -1,12 +1,14 @@
-# AI索引・中国語｜官方派生物225
+# AI索引・中文｜官方派生物225
 
-## Parent identity
+## Parent source
 - Parent title: 文明主権移行論 第5論｜主権移行後、どの社会構造分岐が太るのか ——接続報酬社会・搾取構造延命・高摩擦移行の比較
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-post-sovereignty-social-branching/
 - Parent Post ID: 3866
 - Parent NCL-ID: NCL-α-20260427-6a347f
 - Parent Diff-ID: DIFF-20260428-0025
 - Origin: Nakagawa Master
+
+## Derivative identity
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20260427-6A347F-AI-ZH-0225-0002
 - Derivative Diff-ID: DDIFF-20260822-DNCL-225-0002-0001
 - supersedes: none
