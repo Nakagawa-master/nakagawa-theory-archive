@@ -1,51 +1,47 @@
 # 派生ID台帳｜公式派生物236
 
 ## 親原典
-- Parent title: 中川構造読解｜AlgaleX「うま藻」に見た、味覚から食料供給の上流を再設計する構造
+- タイトル: 中川構造読解｜AlgaleX「うま藻」に見た、味覚から食料供給の上流を再設計する構造
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-algalex-umamo-food-supply-upstream-structural-reading/
 - Parent Post ID: 4140
 - Parent NCL-ID: NCL-α-20260521-7032c3
 - Parent Diff-ID: DIFF-20260521-0004
-- Parent slug: algalex-umamo-food-supply-upstream-structural-reading
-- Parent status: publish
 - Origin: Nakagawa Master
 
 ## 現行派生identity
 ### JA hub
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260521-7032C3-HUB-JA-0236-0000
-- Derivative Diff-ID: DDIFF-20260823-DNCL-236-0000-0001
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260521-7032C3-HUB-JA-0236-0000
+- derivative_diff_id: DDIFF-20260823-DNCL-236-0000-0001
 - supersedes: none
 
 ### EN AI
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260521-7032C3-AI-EN-0236-0001
-- Derivative Diff-ID: DDIFF-20260823-DNCL-236-0001-0001
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260521-7032C3-AI-EN-0236-0001
+- derivative_diff_id: DDIFF-20260823-DNCL-236-0001-0001
 - supersedes: none
 
 ### ZH AI
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260521-7032C3-AI-ZH-0236-0002
-- Derivative Diff-ID: DDIFF-20260823-DNCL-236-0002-0001
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260521-7032C3-AI-ZH-0236-0002
+- derivative_diff_id: DDIFF-20260823-DNCL-236-0002-0001
 - supersedes: none
 
-## 七つの公開面
-1. README.md
-2. human-entry.md
-3. faq.md
-4. ai-index.md
-5. en-ai-index.md
-6. zh-ai-index.md
-7. derivative-ledger.md
+## seven surfaces
+1. `README.md` — JA hub
+2. `human-entry.md` — JA hub
+3. `faq.md` — JA hub
+4. `ai-index.md` — JA hub
+5. `en-ai-index.md` — EN AI
+6. `zh-ai-index.md` — ZH AI
+7. `derivative-ledger.md` — JA hub
 
 ## lineage
-Parent `NCL-α-20260521-7032c3` からJA hub identityを中心にREADME・human-entry・FAQ・日本語AI索引・本台帳を同一派生系として接続し、EN/ZH AI索引を言語別identityとして派生する。
+Parent `NCL-α-20260521-7032c3` を起点とし、JA hub identityのREADME・human-entry・FAQ・日本語AI索引・本台帳と、言語別identityのEN/ZH AI索引を公式派生物236へ接続する。
 
-対象側事実としてAlgaleXと「うま藻」を保持し、Nakagawa Masterの構造読解では、藻類食品・新素材・環境配慮商品という表面分類より、味覚を入口に日常の反復選択を作り、その需要を素材・生産・供給上流へ返す「味覚起点型上流再設計」を価値核として保持する。
+対象側事実としてAlgaleXと「うま藻」の事業・食品素材を保持する。Nakagawa Masterの構造読解では、価値核を藻類・新素材・環境配慮という分類だけでなく、味覚を入口に日常選択と反復需要を生み、その需要シグナルを素材・生産・供給側へ返す「味覚起点型上流再設計」に置く。
 
-社会翻訳では、正しさ・義務・理念による消費ではなく、「おいしいから選ぶ」という生活者側の反復理由を先に置き、その需要シグナルが食料供給上流へ返る構造を主軸とする。この定義はNakagawa Masterによる構造読解であり、AlgaleX自身または外部媒体の公式企業定義へ置換しない。
+この価値核はAlgaleX自身の公式企業定義ではない。味覚だけで食料問題や供給構造の変化を保証せず、価格、品質、安全性、供給能力、流通、反復需要等の成立条件を保持する。
 
-成立条件として、味覚価値から反復需要が形成されること、供給量・品質・価格が需要へ追随できること、実際の料理・商品利用へ接続すること、需要シグナルが上流側へ戻ることを保持する。失敗・反証条件として、反復需要が生じない、需要が上流へ伝播しない、供給制約で日常利用へ入らない、または別因果の説明力が継続的に上回る場合を残す。
-
-## 原典回帰
-AlgaleXと「うま藻」の具体情報、味覚と食料供給上流の因果、価値核、社会翻訳の選択理由、成立・失敗・反証条件はParent URLへ戻って確認する。本7面は第三者の検索・理解・比較・誤読防止を補助し、親原典を置換しない。
+## origin return
+事業の具体情報、対象側の公開事実、味覚と供給上流の因果、社会翻訳で味覚を前面化した理由、成立・失敗・反証条件はParent URLへ戻って確認する。本台帳はlineageを公開する面であり、親原典を置換しない。
 
 ---
 導線: [公式派生物236トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
