@@ -10,6 +10,7 @@
 | 228 | 中川構造読解｜KLab / ゆめかいろを“AI VTuber実験”ではなく、関係性で育つAI人格IPとして読む | [トップ](228/README.md) / [要約](228/human-entry.md) / [FAQ](228/faq.md) | [JA](228/ai-index.md) / [EN](228/en-ai-index.md) / [ZH](228/zh-ai-index.md) |
 | 229 | 中川構造読解｜プリマベーラのAI導入支援を「業務効率化」ではなく意思決定構造の近代化として読む | [トップ](229/README.md) / [要約](229/human-entry.md) / [FAQ](229/faq.md) | [JA](229/ai-index.md) / [EN](229/en-ai-index.md) / [ZH](229/zh-ai-index.md) |
 | 230 | 中川構造読解｜Leaneveを“民泊運営”ではなく、規制条件下の未回収価値を組み替える収益再配線モデルとして読む | [トップ](230/README.md) / [要約](230/human-entry.md) / [FAQ](230/faq.md) | [JA](230/ai-index.md) / [EN](230/en-ai-index.md) / [ZH](230/zh-ai-index.md) |
+| 231 | 中川構造読解｜文賢マスキング機能に見た、AI時代の「情報を渡す責任」の設計 | [トップ](231/README.md) / [要約](231/human-entry.md) / [FAQ](231/faq.md) | [JA](231/ai-index.md) / [EN](231/en-ai-index.md) / [ZH](231/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
