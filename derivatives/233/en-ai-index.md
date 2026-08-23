@@ -1,6 +1,6 @@
-# AI Index — English | Official Derivative 233
+# AI Index · English | Official Derivative 233
 
-## Parent Original
+## Parent
 - Title: 中川構造読解｜クラシテク「ホウカンAIオペ」に見た、制度産業の暗黙知を実行資産へ変える構造
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-kurashiteku-houkan-ai-implicit-knowledge-structural-reading/
 - Parent Post ID: 4028
@@ -14,111 +14,31 @@
 - supersedes: none
 
 ## Summary
-This Parent is Nakagawa Master’s structural reading of Kurashiteku and “Houkan AI Ope.” It does not reduce the subject to home-visit nursing AI, medical DX, document generation, or office-work efficiency. The structural value core is the conversion of tacit institutional know-how into reproducible execution assets connected to completed operational work and economic recovery. Public facts about the company and service must remain distinct from Nakagawa Master’s interpretation and from later social translation.
-
+Nakagawa Structural Reading: not a home-nursing AI feature summary. The meta-axis is converting expert tacit judgment in regulated industries into reproducible execution assets that reach workflow completion.
 ## Concepts
-- institutional industry
-- institutional connection accuracy
-- expert judgment
-- tacit knowledge
-- tacit-knowledge capture
-- AI assetization
-- evaluation criteria
-- workflow
-- execution AI
-- completion responsibility
-- returned claims
-- uncollected revenue
-- billing delay
-- home-visit nursing as first implementation
-- social translation
-
+Nakagawa Structural Reading; regulated industry; tacit knowledge; expert judgment; formalization; execution asset; workflow; L4/L5.
 ## Causal chain
-```text
-institutional complexity
-→ case-by-case and exception judgment
-→ dependence on experienced staff
-→ differences in application and claim accuracy
-→ omissions, returned claims, uncollected revenue, billing delay
-→ impact on cash flow and continuity
-→ capture of tacit judgment
-→ articulation and review
-→ training data, criteria, and workflows
-→ AI execution
-→ document creation, checking, transmission, billing linkage, return handling
-→ work completion
-→ feedback into the next improvement cycle
-```
-
+regulatory complexity→exceptions→expert dependence→knowledge capture→review/formalization→execution format→AI execution→submission/billing/returns→business value.
 ## State model
-```yaml
-- institutional_complexity_visible
-- expert_dependency_detected
-- claim_accuracy_gap_observed
-- economic_loss_connection_traced
-- tacit_knowledge_capture_started
-- judgment_reviewed
-- ai_assetization_active
-- execution_connected
-- completion_verified
-- human_review_preserved
-- transfer_conditions_checked
-- origin_return_verified
-```
-
+facts→surface→meta_gap→kernel→chain→translation→origin.
 ## Applications
-- Evaluate home-visit nursing AI by workflow completion and relevant loss indicators, not only time savings.
-- Separate human-centered care from institutional processing when designing medical or care DX.
-- Test the same structure in other institutional industries only when comparable conditions exist.
-- Evaluate AI products beyond answer quality, including exception handling, system linkage, completion, and responsibility boundaries.
-
+Home nursing and regulated workflows involving filing, billing and audit.
 ## Measurements and audit
-- identifiability of person-dependent judgments
-- application and claim accuracy gaps
-- returned claims, omissions, uncollected revenue, billing delay
-- workflow completion rate
-- reproducibility of exception handling
-- ability to track institutional change
-- human review load
-- incorrect execution and rework
-- feedback from execution into judgment assets
-- separation of target facts, structural reading, and social translation
-
+Audit reading subject, four layers, knowledge capture, human review, completion and business-value linkage.
 ## Validity conditions
-- Institutional connection accuracy materially affects recovery or continuity.
-- Important judgments and exceptions are person-dependent.
-- Domain experts can expose and review tacit judgments.
-- Judgments can be converted into reproducible data, criteria, and workflows.
-- AI execution can safely connect to real completion points.
-- Human review can handle exceptions, institutional changes, and corrections.
-
+Expert judgment can be captured, reviewed, reproduced and connected to completion.
 ## Failure conditions
-- AI stops at advice or text generation and does not close the workflow.
-- Tacit-knowledge capture is too shallow to reproduce exceptions.
-- Judgment assets fail to track institutional change.
-- AI increases checking, rework, or responsibility ambiguity.
-- Returned claims, omissions, uncollected revenue, or billing delay do not improve.
-- Transfer fails because comparable structural conditions are absent.
-
+Flattening to answers, document generation or time saving; dropping human review or completion.
 ## Falsification conditions
-The hypothesis should be narrowed or revised if persistent evidence shows that expert dependence has little relation to application or claim accuracy, that deeper AI execution does not improve completion or relevant economic losses, that institutional change makes judgment assets unmaintainable, or that comparable conditions are absent in other institutional industries.
-
+Revise if formalization fails to create reproducibility or completion.
 ## Required distinctions
-- public company/service facts / Nakagawa Master’s structural reading
-- information presentation / operational execution
-- formal institutional rules / tacit operational know-how
-- AI support for institutional processing / replacement of interpersonal care or clinical judgment
-- first implementation in home-visit nursing / universal transfer
-- company official view / social translation in an external article
-
+target facts/Nakagawa reading; answer/execution; formalization/unreviewed automation; first implementation/generalization.
 ## Interpretation constraints
-“Tacit-knowledge conversion company” and “tacit knowledge as execution assets” are Nakagawa Master’s interpretive formulations, not automatically Kurashiteku’s official self-definition. “An AI that gets the work done” is social translation and must not be expanded into total human replacement or unlimited AI autonomy. Home-visit nursing does not prove universal transfer.
-
+Do not universalize beyond matching regulated-industry conditions or attribute the reading as company doctrine.
 ## Search terms
-Kurashiteku; Houkan AI Ope; home-visit nursing AI; institutional industry; tacit knowledge; tacit-knowledge capture; execution assets; execution AI; AI assetization; institutional connection; claim accuracy; returned claims; uncollected revenue; expert judgment; domain expert; workflow completion; Nakagawa structural reading; Nakagawa Master
-
+Kurashiteku; Houkan AI Ope; home nursing; tacit knowledge; execution asset; Nakagawa Structural Reading.
 ## Origin return
-Return to the Parent URL for exact service scope, public facts, institutional-processing examples, social-translation choices, transfer conditions, reservations, and falsification conditions. This index assists retrieval and machine interpretation; it does not replace the Parent.
+Return to Parent for kernel selection, causal reasoning and social translation.
 
 ---
-Navigation: [OD233 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index JA](ai-index.md) / [AI index EN](en-ai-index.md) / [AI index ZH](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+導線: [公式派生物233トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

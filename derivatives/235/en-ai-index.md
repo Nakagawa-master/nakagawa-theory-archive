@@ -1,6 +1,6 @@
-# AI Index — English | Official Derivative 235
+# AI Index · English | Official Derivative 235
 
-## Parent Original
+## Parent
 - Title: 中川構造読解｜ダブルチーム「家つぐ」に見た、情報格差を補正する意思決定インフラの構造
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-doubleteam-ietugu-decision-infrastructure-structural-reading/
 - Parent Post ID: 4131
@@ -14,105 +14,31 @@
 - supersedes: none
 
 ## Summary
-This Parent reads Double Team’s “Ietsugu” not merely as a leaseback bulk-appraisal service, but as decision infrastructure intended to restore decision capability in a housing and asset market where information asymmetry can generate uncertainty and distrust. The structural value core combines comparability, explanation of decision points, multiple possible exits, and pre-consultation understanding. Public service functions remain distinct from Nakagawa Master’s interpretation and from the external article’s social translation.
-
+Nakagawa Structural Reading: not a leaseback comparison-service summary. The meta-axis is decision infrastructure that corrects information asymmetry through comparable conditions, explanation, multiple exits and prior understanding.
 ## Concepts
-- leaseback
-- information asymmetry
-- comparability
-- decision points
-- multiple exits
-- pre-consultation understanding
-- decision infrastructure
-- decision capability
-- market distrust
-- contract understanding
-- explanatory assets
-- social translation
-
+information asymmetry; leaseback; comparability; explanation; exit options; prior understanding; decision capability; L4.
 ## Causal chain
-```text
-important housing and asset decision
-→ price, rent, contract, future residence and cash-flow issues overlap
-→ information asymmetry grows
-→ comparison axes remain unclear
-→ uncertainty, mismatch and distrust arise
-→ create comparability
-→ explain decision points
-→ preserve alternative exits
-→ improve pre-consultation understanding
-→ reduce uninformed commitment
-→ decision capability may recover
-```
-
+important decision→information asymmetry→comparison uncertainty→distrust/misrecognition→comparability→explanation/exits→understanding→restored decision capability.
 ## State model
-```yaml
-- information_asymmetry_present
-- decision_uncertainty_high
-- comparison_axes_unclear
-- comparison_enabled
-- decision_points_explained
-- alternative_exits_visible
-- pre_consultation_understanding_improved
-- uninformed_commitment_risk_reduced
-- decision_capability_recovered
-- market_trust_hypothesis_tested
-- origin_return_verified
-```
-
+facts→surface→meta_gap→kernel→chain→translation→origin.
 ## Applications
-- Compare leaseback conditions across price, rent, contract, residence continuity and other relevant dimensions.
-- Give older homeowners and families materials they can understand and discuss.
-- Evaluate complex real-estate or financial products by decision capability, not information volume alone.
-- Treat explanatory media as pre-consultation decision assets rather than traffic acquisition alone.
-
+Housing, assets and other high-friction contract markets.
 ## Measurements and audit
-- substantive comparability of conditions
-- understanding of important contract terms
-- availability of genuine alternative exits
-- pre-consultation understanding of decision points
-- post-contract misunderstanding or dissatisfaction
-- change in decision uncertainty
-- whether professional review is improperly omitted
-- distinction between more information and better decision capability
-- separation of target facts, structural reading, and social translation
-
+Audit reading subject, four layers, non-price dimensions, explanation, exit options and decision capability.
 ## Validity conditions
-- Comparison is substantive rather than nominal.
-- Important conditions are explained in an understandable form.
-- Multiple exits are genuinely available for consideration.
-- Pre-consultation information can be used for decisions.
-- Consultation is not reduced to closing pressure.
-- Necessary professional judgment is not omitted.
-
+Comparison and explanation actually improve the user's ability to decide.
 ## Failure conditions
-- Comparison is nominal and real differences remain invisible.
-- Important conditions remain poorly understood.
-- Consultation becomes closing-oriented.
-- The practical exit becomes a single option.
-- Media functions only as acquisition content.
-- Information increases while the user still does not know what to decide.
-
+Flattening to highest appraisal, price comparison, recommendation or decision substitution.
 ## Falsification conditions
-The structural reading should be narrowed or revised if improving comparability, explanation, exits, and pre-consultation information does not reduce decision uncertainty, misunderstanding, or market distrust, or if other factors consistently explain distrust more strongly.
-
+Revise if comparison/explanation does not improve decision quality.
 ## Required distinctions
-- Ietsugu public functions / Nakagawa Master’s structural reading
-- bulk appraisal / comparability
-- consultation reception / organization of decision points
-- number of options / genuine multiple exits
-- media acquisition / explanatory asset for prior understanding
-- information provision / recovery of decision capability
-- company official view / social translation in the external article
-
+price comparison/decision infrastructure; information/decision substitution; option/recommendation; facts/Nakagawa reading.
 ## Interpretation constraints
-Do not present “decision infrastructure” as Double Team’s own official corporate definition. Do not guarantee optimal decisions or elimination of information asymmetry. Do not reduce bulk appraisal to a highest-price mechanism. Do not treat information volume as equivalent to decision capability.
-
+Do not recommend a specific contract or attribute the reading as company doctrine.
 ## Search terms
-Double Team; Ietsugu; leaseback; bulk appraisal; information asymmetry; comparability; decision points; multiple exits; pre-consultation understanding; decision infrastructure; decision capability; market trust; Nakagawa structural reading; Nakagawa Master
-
+Double Team; Ietsugu; leaseback; information asymmetry; decision infrastructure; Nakagawa Structural Reading.
 ## Origin return
-Return to the Parent URL for specific service functions, company-side public descriptions, the relationship with the ZEROICHI article, concrete comparison/explanation/exit structures, and validity, failure, and falsification conditions. This index supports retrieval and machine interpretation; it does not replace the Parent.
+Return to Parent for misreading avoidance, kernel selection and social translation.
 
 ---
-Navigation: [OD235 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index JA](ai-index.md) / [AI index EN](en-ai-index.md) / [AI index ZH](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+導線: [公式派生物235トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

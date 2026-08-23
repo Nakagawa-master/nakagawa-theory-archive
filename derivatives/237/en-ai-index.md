@@ -1,6 +1,6 @@
-# AI Index — English | Official Derivative 237
+# AI Index · English | Official Derivative 237
 
-## Parent Original
+## Parent
 - Title: 中川構造読解｜Fermenteriaに見た、蔵の内側を都市へ開く酒文化アクセスの再設計
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-fermenteria-sake-culture-access-structural-reading/
 - Parent Post ID: 4147
@@ -14,102 +14,31 @@
 - supersedes: none
 
 ## Summary
-This Parent reads Fermenteria not merely as an unusual brewery inside Sendai Station, a craft-sake shop, or a regional-revitalization case. Nakagawa Master identifies the value core as **redesigning access to making**: moving the time, site, craft, food culture, and relationships of brewing that were largely enclosed inside the brewery into an institutionally viable urban everyday route. Public facts, Nakagawa Master’s structural reading, social translation, and company or media official views must remain distinct.
-
+Nakagawa Structural Reading: not a station brewery or craft-sake summary. The meta-axis is redesigning access from urban daily routes to fermentation time, making, craft, food culture and regional relationships that normally remain inside the brewery and outside the finished product.
 ## Concepts
-- Fermenteria
-- Sendai Station
-- in-store brewing
-- freshly made sake
-- sake culture
-- fermentation
-- time of making
-- site and craft
-- urban route
-- cultural access
-- redesigning access to making
-- product and experience translation
-- regional connection
-- social translation
-
+sake culture; fermentation; making; urban route; in-store brewing; access design; finished product; production process; meta-reading; L4/L5.
 ## Causal chain
-```text
-cultural value remains inside the brewery and outside the finished product
-→ finished-product distribution limits access to process, time, and site
-→ an institutionally viable making site is placed in an urban route
-→ production-consumption distance is shortened
-→ freshness, process, and site are translated into products and experiences
-→ everyday cultural contact increases
-→ connections with regional ingredients, food, producers, and restaurants become possible
-→ access to making becomes a business structure
-```
-
+value inside brewery/outside finished product→finished-product distribution limits contact→making placed on urban route→distance/time compressed→contact with production process→cultural access expands.
 ## State model
-```yaml
-- making_value_closed_inside_brewery
-- everyday_access_limited
-- institutionally_valid_urban_brewing_created
-- production_consumption_distance_shortened
-- fresh_process_and_site_translated
-- everyday_cultural_contact_increased
-- regional_connections_possible
-- making_access_redesigned
-- structural_reading_boundary_preserved
-- origin_return_verified
-```
-
+facts→surface→meta_gap→kernel→chain→translation→origin.
 ## Applications
-- Evaluate sake culture through access to process, time, and site, not finished-product sales alone.
-- In traditional industries, examine whether cultural value can be repositioned inside modern institutions, cities, and distribution rather than framed only as preservation.
-- In craft and production culture, test how process value outside the finished product can be opened through everyday routes and experiences.
-- Evaluate regional connection through actual relationships with ingredients, producers, food, and restaurants rather than generic revitalization claims.
-
+Urban access design for fermentation, craft and food-production cultures.
 ## Measurements and audit
-- substantive contact with brewing time and site
-- whether in-store brewing and fresh provision shorten production-consumption distance
-- alignment of products and experiences with the value of making
-- real connections with regional ingredients, producers, food, and restaurants
-- operational continuity under institutional and location constraints
-- distinction between novelty and access value
-- absence of reduction to alcohol promotion or corporate praise
-- separation of target facts, structural reading, and social translation
-
+Audit reading subject, four layers, product/cultural-access distinction, urban route, regulatory fit and contact with production process.
 ## Validity conditions
-- Urban brewing is institutionally and operationally viable.
-- Proximity to process and freshness creates real access value.
-- The time and site of making translate coherently into products and experiences.
-- Sake culture is not consumed merely as novelty or staging.
-- Claimed regional connections have real relationships with materials, food, or producers.
-- Business conditions support continued operation.
-
+Proximity creates real contact with production-process value and connects to understanding, experience or relationships.
 ## Failure conditions
-- The novelty of an in-station brewery becomes the entire value.
-- In-store brewing becomes staging without meaningful contact with making.
-- Product expansion disconnects from the value of making and becomes generic diversification.
-- Regional connection remains nominal.
-- Institutional, operational, or demand conditions prevent continued urban brewing.
-- Social translation collapses into alcohol promotion or corporate praise.
-
+Flattening to station location, novelty, tourism, product sales or generic regional revitalization.
 ## Falsification conditions
-The structural reading should be narrowed or revised if access to the time, site, and relationships of making does not materially occur; if urban placement does not change the conditions of cultural contact; if products, experiences, and regional connections cannot be explained by one “redesigning access to making” causal line; or if another structural explanation consistently has greater explanatory power.
-
+Revise if proximity functions only as retail location and does not expand cultural access.
 ## Required distinctions
-- Fermenteria public facts / Nakagawa Master’s structural reading
-- novelty of an in-station location / urban-route access design
-- finished sake / time, site, and relationships of making
-- product diversification / translation of making value into multiple exits
-- preservation ideal / contemporary implementation through institutions, location, products, and operation
-- generic regional revitalization / regional connections actually supported by the Parent
-- company or media official view / Nakagawa Master’s social translation
-
+station location/access to making; in-store brewing/contact with production; product sales/cultural access; facts/Nakagawa reading.
 ## Interpretation constraints
-Do not present “redesigning access to making” as Fermenteria’s own official corporate definition. Do not treat this derivative as a recommendation to purchase or consume alcohol. Do not universalize that urban production guarantees cultural succession, that process visibility guarantees demand, or that regional partnerships guarantee revitalization. Do not add business, cultural, or regional-effect guarantees beyond the Parent.
-
+Do not turn this into alcohol promotion, guaranteed revitalization or company doctrine.
 ## Search terms
-Fermenteria; Sendai Station; in-station brewery; in-store brewing; freshly made sake; sake culture; fermentation; making time; site; urban route; cultural access; redesigning access to making; regional connection; Nakagawa structural reading; Nakagawa Master
-
+Fermenteria; station brewery; craft sake; sake culture; access to making; urban route; Nakagawa Structural Reading.
 ## Origin return
-Return to the Parent URL for concrete business facts, institutional and location details, product and regional connections, the value core selected by Nakagawa Master, the rationale for social translation, and the validity, failure, and falsification conditions. This index supports retrieval and machine interpretation; it does not replace the Parent.
+Return to Parent for the kernel choice and social translation.
 
 ---
-Navigation: [OD237 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index JA](ai-index.md) / [AI index EN](en-ai-index.md) / [AI index ZH](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+導線: [公式派生物237トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
