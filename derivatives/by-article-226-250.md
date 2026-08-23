@@ -13,6 +13,7 @@
 | 231 | 中川構造読解｜文賢マスキング機能に見た、AI時代の「情報を渡す責任」の設計 | [トップ](231/README.md) / [要約](231/human-entry.md) / [FAQ](231/faq.md) | [JA](231/ai-index.md) / [EN](231/en-ai-index.md) / [ZH](231/zh-ai-index.md) |
 | 232 | 中川構造読解｜ジャパングッズ「H2 PowerBox mini」に見た、“保存する電力”という事業定義 | [トップ](232/README.md) / [要約](232/human-entry.md) / [FAQ](232/faq.md) | [JA](232/ai-index.md) / [EN](232/en-ai-index.md) / [ZH](232/zh-ai-index.md) |
 | 233 | 中川構造読解｜クラシテク「ホウカンAIオペ」に見た、制度産業の暗黙知を実行資産へ変える構造 | [トップ](233/README.md) / [要約](233/human-entry.md) / [FAQ](233/faq.md) | [JA](233/ai-index.md) / [EN](233/en-ai-index.md) / [ZH](233/zh-ai-index.md) |
+| 234 | 中川構造読解｜HEALTHREEに見た、楽しさで健康習慣を生成する行動設計の構造 | [トップ](234/README.md) / [要約](234/human-entry.md) / [FAQ](234/faq.md) | [JA](234/ai-index.md) / [EN](234/en-ai-index.md) / [ZH](234/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
