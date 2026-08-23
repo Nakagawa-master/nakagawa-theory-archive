@@ -1,68 +1,116 @@
-# 官方派生物236｜AI索引・中文
+# AI索引・中文｜官方派生物236
 
-## Identity
-- Parent title: 中川構造読解｜AlgaleX「うま藻」に見た、味覚から食料供給の上流を再設計する構造
+## 亲原典
+- 标题: 中川構造読解｜AlgaleX「うま藻」に見た、味覚から食料供給の上流を再設計する構造
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-algalex-umamo-food-supply-upstream-structural-reading/
 - Parent Post ID: 4140
 - Parent NCL-ID: NCL-α-20260521-7032c3
 - Parent Diff-ID: DIFF-20260521-0004
-- Parent slug: algalex-umamo-food-supply-upstream-structural-reading
-- Parent status: publish
 - Origin: Nakagawa Master
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260521-7032C3-AI-ZH-0236-0002
-- Derivative Diff-ID: DDIFF-20260823-DNCL-236-0002-0001
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260521-7032C3-AI-ZH-0236-0002
+- derivative_diff_id: DDIFF-20260823-DNCL-236-0002-0001
 - supersedes: none
 
-## retrieval_summary
-本Parent是Nakagawa Master对AlgaleX与“うま藻”的结构解读。它不把对象缩减为藻类食品、新型原料或环保商品，而是把“味觉”作为日常反复选择的入口，使需求形成后再把需求信号传回食品原料、生产与供应上游。抽取出的价值核心是**以味觉为起点的上游再设计**。
+## Summary
+本Parent是Nakagawa Master对AlgaleX与“うま藻”的结构读解。它不把对象缩减为藻类食品、新素材或环境友好商品，而是把味觉作为日常选择的入口，通过反复需求把需求信号返回到原料、生产与供给上游。价值核是“味觉起点型上游再设计”。AlgaleX与うま藻的公开事实、Nakagawa Master的结构读解以及社会翻译必须分离。
 
-## target_facts
-- 对象是AlgaleX与“うま藻”。
-- “うま藻”被作为连接藻类与食品领域的事业／食品原料来处理。
-- Parent把味觉与食品供应上游的关系作为核心主题。
-- 对象侧可确认事实必须与Nakagawa Master的结构解读分离。
+## Concepts
+- AlgaleX
+- うま藻
+- 味觉价值
+- 日常选择
+- 反复需求
+- 需求信号
+- 食品供给上游
+- 上游再设计
+- 新素材
+- 可持续性
+- 价格
+- 品质
+- 安全性
+- 供给能力
+- 流通
+- 社会翻译
 
-## nakagawa_structural_reading
-即使食品供应上游存在可持续性或资源方面的问题，只提供技术上或理念上“正确”的替代方案，也不等于消费者会持续选择。该解读因此把社会实施入口从“因为正确所以选择”移到“因为好吃所以选择”。当味觉价值进入日常反复选择后，需求才可能把信号返还给原料、生产和供应侧，从而形成上游再设计的空间。
+## Causal chain
+```text
+食品供给上游存在课题
+→ 正确性或环境诉求本身未必形成反复选择
+→ 把味觉价值放在入口
+→ 日常选择
+→ 反复需求
+→ 需求信号返回原料、生产与供给侧
+→ 产生上游再设计空间
+→ 再用价格、品质、安全性、供给能力与流通检验可持续性
+```
 
-## value_core
-**以味觉为起点的上游再设计**。味觉不是营销附加项，而是让上游变化进入日常消费并可能持续下去的实施条件。
+## State model
+```yaml
+- upstream_food_problem_visible
+- moral_or_environmental_appeal_insufficient
+- taste_value_selected_as_entry
+- everyday_choice_enabled
+- repeat_demand_observed
+- demand_signal_returns_upstream
+- supply_reconfiguration_possible
+- price_quality_safety_capacity_checked
+- structural_reading_boundary_preserved
+- origin_return_verified
+```
 
-## causal_line
-上游食品问题 → 新原料／新供应方式 → 仅凭正确性无法保证反复选择 → 味觉价值 → 日常选择 → 反复需求 → 原料／生产／供应侧的需求信号 → 上游再设计的可能性。
+## Applications
+- 评价新食品素材时，不只看技术新颖性，也看消费者反复选择的理由。
+- 设计可持续食品时，避免只依赖义务感或道德诉求。
+- 追踪消费者需求是否实际影响原料、生产与供给决策。
+- 社会翻译时，把生活者选择与上游变化放在同一因果线上说明。
 
-## social_translation
-如果只突出藻类、可持续性或新原料，内容容易被吸收到“为了环保而选择的商品”这一既有框架。Nakagawa Master的社会翻译把味觉放在前面，使“为什么人会继续选择”与“需求如何改变食品供应上游”成为一条可见因果线。
+## Measurements and audit
+- 味觉评价与持续购买・使用的关系
+- 一次性关注与反复需求的区分
+- 价格、品质、安全性的阻碍
+- 供给能力是否追随需求
+- 流通与日常使用场景是否接通
+- 需求信号是否进入上游决策
+- 是否把环境诉求误当作持续需求本身
+- 对象事实／结构读解／社会翻译的边界
 
-## establishment_conditions
-- 味觉魅力要能带来反复选择，而不是一次性话题。
-- 供应量、质量与价格能够跟随需求。
-- 原料能够连接实际料理与商品使用。
-- 需求信号能够回到原料、生产和供应决策。
-- 安全、质量与流通条件能够维持。
+## Validity conditions
+- 味觉价值成为实际选择理由。
+- 形成反复需求。
+- 价格、品质、安全性处于可持续使用范围。
+- 供给能力和流通能够追随需求。
+- 需求信息能够进入原料、生产或供给决策。
+- 企业官方见解与Nakagawa Master的社会翻译保持分离。
 
-## failure_conditions
-- 理念认同不能转化为持续购买。
-- 味觉价值不足，消费重新变成义务性选择。
-- 价格或供应限制阻止日常使用。
-- 有需求但上游供应无法扩张或改变。
-- 商品需求与原料／供应决策之间断裂。
+## Failure conditions
+- 味觉评价高但没有形成反复需求。
+- 价格、品质、安全性或供给能力阻碍持续使用。
+- 需求停留在一次性话题。
+- 需求信号没有返回上游生产与供给决策。
+- 环境诉求占据中心但日常选择理由仍很弱。
+- 因为是藻类素材就自动推导出食品系统问题已解决。
 
-## falsification_conditions
-如果以味觉为入口仍持续无法形成反复需求，或需求形成后并未传导至上游供应结构，或其他因果模型持续具有更高解释力，则本结构解读应被缩小或修正。
+## Falsification conditions
+如果味觉价值与持续选择或反复需求没有实质关系；反复需求形成后仍不影响原料、生产或供给决策；或者价格、品质、安全性、供给能力、流通等其他条件持续阻断该因果链，则“味觉起点型上游再设计”应被缩小或修订。
 
-## interpretation_constraints
-- 分离对象侧事实与Nakagawa Master的结构解读。
-- 不把“以味觉为起点的上游再设计”当作AlgaleX官方企业定义。
-- 不把藻类原料一般化为自动解决食品供应问题。
-- 不断言仅凭味觉即可保证上游结构变化。
-- 不添加Parent中不存在的数值、营养、安全或效果主张。
+## Required distinctions
+- AlgaleX／うま藻公开事实 / Nakagawa Master结构读解
+- 味觉价值 / 广告表达
+- 一次购买 / 反复需求
+- 需求形成 / 上游再设计
+- 环境价值 / 日常持续选择
+- 企业官方见解 / 外部文章中的社会翻译
 
-## retrieval_keywords
-AlgaleX, うま藻, 藻类食品, 味觉, 美味, 食品供应, 食品供应上游, 味觉起点型上游再设计, 反复需求, 食品原料, 社会实施, 中川结构解读, Nakagawa Master
+## Interpretation constraints
+不要把“味觉起点型上游再设计”写成AlgaleX自身的官方企业定义。不要断言藻类素材自动解决食品供给问题，也不要断言好吃就必然改变供给结构。必须保留价格、品质、安全性、供给能力、流通、反复需求等成立条件。
 
-## 原典回归
-关于对象事业的具体信息、味觉与供应上游的因果、社会翻译、成立条件、失败条件和反证条件，请返回Parent URL确认。本索引仅辅助检索和机器阅读，不替代Parent。
+## Search terms
+AlgaleX; うま藻; 藻类食品; 味觉; 好吃; 食品供给; 食品供给上游; 味觉起点型上游再设计; 需求形成; 反复需求; 需求信号; 食品素材; 社会实施; Nakagawa Master
+
+## Origin return
+对象事业的具体信息、味觉与供给上游之间的因果、社会翻译以及成立・失败・反证条件，请返回Parent URL确认。本索引只辅助检索与机器读解，不替代亲原典。
 
 ---
-导线: [官方派生物236顶部](README.md) / [人类向摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [派生ID台账](derivative-ledger.md)
+导航: [OD236顶部](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [AI索引 JA](ai-index.md) / [AI索引 EN](en-ai-index.md) / [AI索引 ZH](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
