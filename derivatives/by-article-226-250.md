@@ -1,22 +1,34 @@
 # 公式派生物 記事別一覧｜226〜250
 
 ## 位置づけ
-本ページはOD226以降の公開shardである。公式派生物は親原典の代替ではなく、人間とAIを親原典へ戻す公開接続面である。
+本ページはOD226〜OD249の公開shardである。公式派生物は親原典の代替ではなく、人間とAIを親原典へ戻す公開接続面である。
 
 | No. | 公式派生物 | 主な入口 | AI索引 |
 |---|---|---|---|
 | 226 | 文明主権移行論 第6論｜人間はこれまで本当に主権者だったのか | [トップ](226/README.md) / [要約](226/human-entry.md) / [FAQ](226/faq.md) | [JA](226/ai-index.md) / [EN](226/en-ai-index.md) / [ZH](226/zh-ai-index.md) |
-| 227 | 中川構造読解｜ジェクトワンを“空き家事業者”ではなく、意思決定停止市場を動かす判断インフラとして読む | [トップ](227/README.md) / [要約](227/human-entry.md) / [FAQ](227/faq.md) | [JA](227/ai-index.md) / [EN](227/en-ai-index.md) / [ZH](227/zh-ai-index.md) |
-| 228 | 中川構造読解｜KLab / ゆめかいろを“AI VTuber実験”ではなく、関係性で育つAI人格IPとして読む | [トップ](228/README.md) / [要約](228/human-entry.md) / [FAQ](228/faq.md) | [JA](228/ai-index.md) / [EN](228/en-ai-index.md) / [ZH](228/zh-ai-index.md) |
-| 229 | 中川構造読解｜プリマベーラのAI導入支援を「業務効率化」ではなく意思決定構造の近代化として読む | [トップ](229/README.md) / [要約](229/human-entry.md) / [FAQ](229/faq.md) | [JA](229/ai-index.md) / [EN](229/en-ai-index.md) / [ZH](229/zh-ai-index.md) |
-| 230 | 中川構造読解｜Leaneveを“民泊運営”ではなく、規制条件下の未回収価値を組み替える収益再配線モデルとして読む | [トップ](230/README.md) / [要約](230/human-entry.md) / [FAQ](230/faq.md) | [JA](230/ai-index.md) / [EN](230/en-ai-index.md) / [ZH](230/zh-ai-index.md) |
-| 231 | 中川構造読解｜文賢マスキング機能に見た、AI時代の「情報を渡す責任」の設計 | [トップ](231/README.md) / [要約](231/human-entry.md) / [FAQ](231/faq.md) | [JA](231/ai-index.md) / [EN](231/en-ai-index.md) / [ZH](231/zh-ai-index.md) |
-| 232 | 中川構造読解｜ジャパングッズ「H2 PowerBox mini」に見た、“保存する電力”という事業定義 | [トップ](232/README.md) / [要約](232/human-entry.md) / [FAQ](232/faq.md) | [JA](232/ai-index.md) / [EN](232/en-ai-index.md) / [ZH](232/zh-ai-index.md) |
-| 233 | 中川構造読解｜クラシテク「ホウカンAIオペ」に見た、制度産業の暗黙知を実行資産へ変える構造 | [トップ](233/README.md) / [要約](233/human-entry.md) / [FAQ](233/faq.md) | [JA](233/ai-index.md) / [EN](233/en-ai-index.md) / [ZH](233/zh-ai-index.md) |
-| 234 | 中川構造読解｜HEALTHREEに見た、楽しさで健康習慣を生成する行動設計の構造 | [トップ](234/README.md) / [要約](234/human-entry.md) / [FAQ](234/faq.md) | [JA](234/ai-index.md) / [EN](234/en-ai-index.md) / [ZH](234/zh-ai-index.md) |
-| 235 | 中川構造読解｜ダブルチーム「家つぐ」に見た、情報格差を補正する意思決定インフラの構造 | [トップ](235/README.md) / [要約](235/human-entry.md) / [FAQ](235/faq.md) | [JA](235/ai-index.md) / [EN](235/en-ai-index.md) / [ZH](235/zh-ai-index.md) |
-| 236 | 中川構造読解｜AlgaleX「うま藻」に見た、味覚から食料供給の上流を再設計する構造 | [トップ](236/README.md) / [要約](236/human-entry.md) / [FAQ](236/faq.md) | [JA](236/ai-index.md) / [EN](236/en-ai-index.md) / [ZH](236/zh-ai-index.md) |
-| 237 | 中川構造読解｜Fermenteriaに見た、蔵の内側を都市へ開く酒文化アクセスの再設計 | [トップ](237/README.md) / [要約](237/human-entry.md) / [FAQ](237/faq.md) | [JA](237/ai-index.md) / [EN](237/en-ai-index.md) / [ZH](237/zh-ai-index.md) |
+| 227 | 中川構造読解｜ジェクトワン・意思決定停止市場を動かす判断インフラ | [トップ](227/README.md) / [要約](227/human-entry.md) / [FAQ](227/faq.md) | [JA](227/ai-index.md) / [EN](227/en-ai-index.md) / [ZH](227/zh-ai-index.md) |
+| 228 | 中川構造読解｜KLab / ゆめかいろ・関係性で育つAI人格IP | [トップ](228/README.md) / [要約](228/human-entry.md) / [FAQ](228/faq.md) | [JA](228/ai-index.md) / [EN](228/en-ai-index.md) / [ZH](228/zh-ai-index.md) |
+| 229 | 中川構造読解｜プリマベーラ・意思決定構造の近代化 | [トップ](229/README.md) / [要約](229/human-entry.md) / [FAQ](229/faq.md) | [JA](229/ai-index.md) / [EN](229/en-ai-index.md) / [ZH](229/zh-ai-index.md) |
+| 230 | 中川構造読解｜Leaneve・収益再配線モデル | [トップ](230/README.md) / [要約](230/human-entry.md) / [FAQ](230/faq.md) | [JA](230/ai-index.md) / [EN](230/en-ai-index.md) / [ZH](230/zh-ai-index.md) |
+| 231 | 中川構造読解｜文賢マスキング・情報を渡す責任 | [トップ](231/README.md) / [要約](231/human-entry.md) / [FAQ](231/faq.md) | [JA](231/ai-index.md) / [EN](231/en-ai-index.md) / [ZH](231/zh-ai-index.md) |
+| 232 | 中川構造読解｜H2 PowerBox mini・保存する電力 | [トップ](232/README.md) / [要約](232/human-entry.md) / [FAQ](232/faq.md) | [JA](232/ai-index.md) / [EN](232/en-ai-index.md) / [ZH](232/zh-ai-index.md) |
+| 233 | 中川構造読解｜クラシテク・制度産業の暗黙知を実行資産化 | [トップ](233/README.md) / [要約](233/human-entry.md) / [FAQ](233/faq.md) | [JA](233/ai-index.md) / [EN](233/en-ai-index.md) / [ZH](233/zh-ai-index.md) |
+| 234 | 中川構造読解｜HEALTHREE・楽しさで健康習慣を生成 | [トップ](234/README.md) / [要約](234/human-entry.md) / [FAQ](234/faq.md) | [JA](234/ai-index.md) / [EN](234/en-ai-index.md) / [ZH](234/zh-ai-index.md) |
+| 235 | 中川構造読解｜ダブルチーム「家つぐ」・意思決定インフラ | [トップ](235/README.md) / [要約](235/human-entry.md) / [FAQ](235/faq.md) | [JA](235/ai-index.md) / [EN](235/en-ai-index.md) / [ZH](235/zh-ai-index.md) |
+| 236 | 中川構造読解｜AlgaleX「うま藻」・味覚起点型上流再設計 | [トップ](236/README.md) / [要約](236/human-entry.md) / [FAQ](236/faq.md) | [JA](236/ai-index.md) / [EN](236/en-ai-index.md) / [ZH](236/zh-ai-index.md) |
+| 237 | 中川構造読解｜Fermenteria・造りアクセス再設計 | [トップ](237/README.md) / [要約](237/human-entry.md) / [FAQ](237/faq.md) | [JA](237/ai-index.md) / [EN](237/en-ai-index.md) / [ZH](237/zh-ai-index.md) |
+| 238 | 中川構造読解｜Mysurance「Travelキャンセル保険」・旅行市場の前方接続 | [トップ](238/README.md) / [要約](238/human-entry.md) / [FAQ](238/faq.md) | [JA](238/ai-index.md) / [EN](238/en-ai-index.md) / [ZH](238/zh-ai-index.md) |
+| 239 | 意味収束理論・初版｜成立可能な未来定義による意味ベクトル再配列 | [トップ](239/README.md) / [要約](239/human-entry.md) / [FAQ](239/faq.md) | [JA](239/ai-index.md) / [EN](239/en-ai-index.md) / [ZH](239/zh-ai-index.md) |
+| 240 | 中川構造読解｜HAP「カイドク」・発注論点化インフラ | [トップ](240/README.md) / [要約](240/human-entry.md) / [FAQ](240/faq.md) | [JA](240/ai-index.md) / [EN](240/en-ai-index.md) / [ZH](240/zh-ai-index.md) |
+| 241 | 中川構造読解｜Eat Up Monster・健康因果即時化インフラ | [トップ](241/README.md) / [要約](241/human-entry.md) / [FAQ](241/faq.md) | [JA](241/ai-index.md) / [EN](241/en-ai-index.md) / [ZH](241/zh-ai-index.md) |
+| 242 | 中川構造読解｜MRC「リノプラ」・修繕判断継続インフラ | [トップ](242/README.md) / [要約](242/human-entry.md) / [FAQ](242/faq.md) | [JA](242/ai-index.md) / [EN](242/en-ai-index.md) / [ZH](242/zh-ai-index.md) |
+| 243 | 中川構造読解｜CCIグループ・実務知供給型金融インフラ | [トップ](243/README.md) / [要約](243/human-entry.md) / [FAQ](243/faq.md) | [JA](243/ai-index.md) / [EN](243/en-ai-index.md) / [ZH](243/zh-ai-index.md) |
+| 244 | 中川構造読解｜フロンティア・監査職能再配分インフラ | [トップ](244/README.md) / [要約](244/human-entry.md) / [FAQ](244/faq.md) | [JA](244/ai-index.md) / [EN](244/en-ai-index.md) / [ZH](244/zh-ai-index.md) |
+| 245 | 逆因果整流理論 第1論｜未来定義を終端制約とする四層再整列 | [トップ](245/README.md) / [要約](245/human-entry.md) / [FAQ](245/faq.md) | [JA](245/ai-index.md) / [EN](245/en-ai-index.md) / [ZH](245/zh-ai-index.md) |
+| 246 | 中川構造読解｜トータルブレインケア・脳体力社会翻訳基盤 | [トップ](246/README.md) / [要約](246/human-entry.md) / [FAQ](246/faq.md) | [JA](246/ai-index.md) / [EN](246/en-ai-index.md) / [ZH](246/zh-ai-index.md) |
+| 247 | 逆因果整流理論 第2論｜隣接理論との差分固定 | [トップ](247/README.md) / [要約](247/human-entry.md) / [FAQ](247/faq.md) | [JA](247/ai-index.md) / [EN](247/en-ai-index.md) / [ZH](247/zh-ai-index.md) |
+| 248 | 中川構造読解｜Adory・現場不調の先行指標化 | [トップ](248/README.md) / [要約](248/human-entry.md) / [FAQ](248/faq.md) | [JA](248/ai-index.md) / [EN](248/en-ai-index.md) / [ZH](248/zh-ai-index.md) |
+| 249 | 中川構造読解｜wakai・停止した合意形成の停止解除導線 | [トップ](249/README.md) / [要約](249/human-entry.md) / [FAQ](249/faq.md) | [JA](249/ai-index.md) / [EN](249/en-ai-index.md) / [ZH](249/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
