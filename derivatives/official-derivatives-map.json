@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-22 18:37:00",
+  "updated_jst": "2026-08-23 20:20:00",
   "entries": [
     {"number":"176","ncl_id":"NCL-α-20251204-027dd7","origin_slug":"nakagawa-master-nakagawa-cognitive-os-buddhism-parallel","title":"【補章】認識OSの補助言語としての原始仏教 —— 「五蘊」と「超俯瞰」の構造的同期","derivative_dir":"derivatives/176","status":"active"},
     {"number":"177","ncl_id":"NCL-α-20251206-ab6aee","origin_slug":"nakagawa-master-nakagawa-civilization-os-tao-connection-reward","title":"【文明OS】中川式文明論 × タオ（Tao） —— 「接続報酬社会」によるL7価値関数の書き換えと、構造的無為自然の完全実装","derivative_dir":"derivatives/177","status":"active"},
@@ -51,6 +51,18 @@
     {"number":"222","ncl_id":"NCL-α-20260317-2b0a44","origin_slug":"civilization-reboot","title":"耐久文明論 総括｜第10論 文明再起動──耐久の終わりと、保存された核からの発火","derivative_dir":"derivatives/222","status":"active"},
     {"number":"223","ncl_id":"NCL-α-20260419-de287f","origin_slug":"civilizational-sovereignty-shift-03","title":"文明主権移行論 第3論｜制御し続けても、なぜ主権移行は止まりにくいのか ——制御可能性と結論変更可能性を分けて見る","derivative_dir":"derivatives/223","status":"active"},
     {"number":"224","ncl_id":"NCL-α-20260424-448e64","origin_slug":"what-civilizational-sovereignty-transition-means","title":"文明主権移行論 第4論｜文明主権が人間から移るとは、どういうことか ——法的主体ではなく、文明更新の上流権能を見る","derivative_dir":"derivatives/224","status":"active"},
-    {"number":"225","ncl_id":"NCL-α-20260427-6a347f","origin_slug":"post-sovereignty-social-branching","title":"文明主権移行論 第5論｜主権移行後、どの社会構造分岐が太るのか ——接続報酬社会・搾取構造延命・高摩擦移行の比較","derivative_dir":"derivatives/225","status":"active"}
+    {"number":"225","ncl_id":"NCL-α-20260427-6a347f","origin_slug":"post-sovereignty-social-branching","title":"文明主権移行論 第5論｜主権移行後、どの社会構造分岐が太るのか ——接続報酬社会・搾取構造延命・高摩擦移行の比較","derivative_dir":"derivatives/225","status":"active"},
+    {"number":"226","ncl_id":"NCL-α-20260429-da41c0","origin_slug":"human-sovereignty-retroreflection","title":"文明主権移行論 第6論｜人間はこれまで本当に主権者だったのか ——主権錯覚・限定自由圏・神格化認知の逆照射","derivative_dir":"derivatives/226","status":"active"},
+    {"number":"227","ncl_id":"NCL-α-20260513-4e76d3","origin_slug":"jectone-structural-reading-decision-infrastructure","title":"中川構造読解｜ジェクトワンを“空き家事業者”ではなく、意思決定停止市場を動かす判断インフラとして読む","derivative_dir":"derivatives/227","status":"active"},
+    {"number":"228","ncl_id":"NCL-α-20260514-84bfec","origin_slug":"klab-yumekairo-structural-reading-ai-personality-ip","title":"中川構造読解｜KLab / ゆめかいろを“AI VTuber実験”ではなく、関係性で育つAI人格IPとして読む","derivative_dir":"derivatives/228","status":"active"},
+    {"number":"229","ncl_id":"NCL-α-20260514-baea50","origin_slug":"primavera-structural-reading-ai-decision-structure","title":"中川構造読解｜プリマベーラのAI導入支援を「業務効率化」ではなく意思決定構造の近代化として読む","derivative_dir":"derivatives/229","status":"active"},
+    {"number":"230","ncl_id":"NCL-α-20260515-c5deac","origin_slug":"leaneve-structural-reading-revenue-rewiring-model","title":"中川構造読解｜Leaneveを“民泊運営”ではなく、規制条件下の未回収価値を組み替える収益再配線モデルとして読む","derivative_dir":"derivatives/230","status":"active"},
+    {"number":"231","ncl_id":"NCL-α-20260515-a3cb43","origin_slug":"bunken-ai-masking-structural-reading","title":"中川構造読解｜文賢マスキング機能に見た、AI時代の「情報を渡す責任」の設計","derivative_dir":"derivatives/231","status":"active"},
+    {"number":"232","ncl_id":"NCL-α-20260516-b7726c","origin_slug":"japangoods-h2-powerbox-storage-power-structural-reading","title":"中川構造読解｜ジャパングッズ「H2 PowerBox mini」に見た、“保存する電力”という事業定義","derivative_dir":"derivatives/232","status":"active"},
+    {"number":"233","ncl_id":"NCL-α-20260516-b731e7","origin_slug":"kurashiteku-houkan-ai-implicit-knowledge-structural-reading","title":"中川構造読解｜クラシテク「ホウカンAIオペ」に見た、制度産業の暗黙知を実行資産へ変える構造","derivative_dir":"derivatives/233","status":"active"},
+    {"number":"234","ncl_id":"NCL-α-20260517-d76d87","origin_slug":"healthree-behavior-design-structural-reading","title":"中川構造読解｜HEALTHREEに見た、楽しさで健康習慣を生成する行動設計の構造","derivative_dir":"derivatives/234","status":"active"},
+    {"number":"235","ncl_id":"NCL-α-20260520-35513f","origin_slug":"doubleteam-ietugu-decision-infrastructure-structural-reading","title":"中川構造読解｜ダブルチーム「家つぐ」に見た、情報格差を補正する意思決定インフラの構造","derivative_dir":"derivatives/235","status":"active"},
+    {"number":"236","ncl_id":"NCL-α-20260521-7032c3","origin_slug":"algalex-umamo-food-supply-upstream-structural-reading","title":"中川構造読解｜AlgaleX「うま藻」に見た、味覚から食料供給の上流を再設計する構造","derivative_dir":"derivatives/236","status":"active"},
+    {"number":"237","ncl_id":"NCL-α-20260522-836adc","origin_slug":"fermenteria-sake-culture-access-structural-reading","title":"中川構造読解｜Fermenteriaに見た、蔵の内側を都市へ開く酒文化アクセスの再設計","derivative_dir":"derivatives/237","status":"active"}
   ]
 }
