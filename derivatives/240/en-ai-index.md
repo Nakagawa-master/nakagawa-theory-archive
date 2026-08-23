@@ -1,42 +1,46 @@
 # AI Index — English | Official Derivative 240
 
 ## Parent identity
-- Parent title: 中川構造読解｜HAP「カイドク」に見た、判断不能な発注を論点化する開発発注インフラの構造
-- Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-hap-kaidoc-development-ordering-infrastructure-structural-reading/
-- Parent Post ID: 4179
-- Parent NCL-ID: NCL-α-20260524-7d8763
-- Parent Diff-ID: DIFF-20260524-0007
-- Origin: Nakagawa Master
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260524-7D8763-AI-EN-0240-0001
-- Derivative Diff-ID: DDIFF-20260823-DNCL-240-0001-0001
-- supersedes: none
+Parent: 中川構造読解｜HAP「カイドク」に見た、判断不能な発注を論点化する開発発注インフラの構造 | https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-hap-kaidoc-development-ordering-infrastructure-structural-reading/ | Post ID 4179 | NCL-α-20260524-7d8763 | DIFF-20260524-0007 | Origin: Nakagawa Master | DNCL-NCL-ALPHA-20260524-7D8763-AI-EN-0240-0001 | DDIFF-20260823-DNCL-240-0001-0001 | supersedes: none
 
 ## Summary
-A Nakagawa Structural Reading of HAP's Kaidoc as ordering-issue infrastructure: it turns development requests that cannot yet be decided into explicit decision issues, unresolved questions, and comparison criteria so ordering can move forward.
+A Nakagawa structural reading of HAP's Kaidoc as infrastructure that turns an undecidable software-ordering situation into explicit decision issues. The value core is not automatic specification generation or quote comparison but making objectives, unresolved issues, constraints, and comparison axes visible enough for dialogue and agreement.
+
 ## Concepts
-undecidable ordering; issue decomposition; unresolved questions; comparison criteria; shared premises; development-ordering infrastructure.
+decision paralysis; objective/means separation; issue decomposition; decided/unresolved/hypothesis/constraint; comparison axis; premise sharing; adoption rationale; ordering progress.
+
 ## Causal chain
-ambiguous request → no evaluation frame → ordering stalls → issue decomposition → unresolved items exposed → common comparison frame → shared premises → agreement and ordering progress.
+ambiguous desire → mixed objectives and means → no decision units → incomparable proposals → stalled order → issue decomposition → unresolved items exposed → comparison axes formed → shared premises → proposal comparison → agreement or further inquiry → progress.
+
 ## State model
-ambiguity / decision blockage / issue extraction / unresolved-item separation / comparison / dialogue / agreement / order / review.
+ambiguous request / paralysis / objective separation / issue extraction / unresolved visibility / comparison formation / dialogue / agreement or inquiry / progress / post-implementation review.
+
 ## Applications
-Software, DX, and AI development procurement where buyers cannot yet formulate specifications.
+DX, AI adoption, software systems, and web-service procurement when a buyer cannot yet state what should be ordered.
+
 ## Measurements and audit
-Track unresolved issues, comparison criteria, premise gaps, reasons for selection, and whether decision progress occurs.
+Audit separation of objectives and means, explicit unresolved items, understandable comparison axes, traceable premise differences, decision rationales, movement after decomposition, and alternative causes of procurement stall.
+
 ## Validity conditions
-Applies when issue decomposition materially enables comparison and agreement.
+Valid when decomposition creates shared premises and makes proposal, estimate, and priority comparison possible enough to advance a decision.
+
 ## Failure conditions
-Fails if reduced to automatic specification generation, quote comparison, or vendor brokerage.
+Fails when reduced to automated requirements, price comparison, or brokerage while unresolved decisions remain hidden.
+
 ## Falsification conditions
-Revise scope where budget, authority, or procurement rules better explain persistent blockage.
+Revise when budget absence, authority, procurement rules, or other causes explain the stall better, or when issue decomposition does not improve comparison or agreement.
+
 ## Required distinctions
-answer / issue; specification generation / decision enablement; quote comparison / creation of comparison criteria; target facts / Nakagawa Master interpretation.
+requirement generation / issue decomposition; answer / decision material; quote comparison / comparison-axis formation; technical ignorance / procurement decision deficit; target facts / Nakagawa reading.
+
 ## Interpretation constraints
-Do not universalize the framework or attribute the value-kernel wording to the company as its official definition.
+Do not present “ordering issue infrastructure” as HAP's official self-definition or generalize it to all procurement failures. Do not add unsupported fixed KPIs or success rates.
+
 ## Search terms
-HAP, Kaidoc, development procurement, issue decomposition, ordering infrastructure, Nakagawa Master
+HAP, Kaidoc, software procurement, issue decomposition, requirements, comparison axis, decision paralysis, Nakagawa Master
+
 ## Origin return
-Return to the Parent URL for target facts, the selected value kernel, and why Nakagawa Master used that axis in the external article.
+Return to the Parent for target facts, concrete process, why this value core was selected, and boundaries.
 
 ---
 導線: [公式派生物240トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
