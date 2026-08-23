@@ -1,7 +1,7 @@
-# AI Index — English | Official Derivative 225
+# AI Index・English｜Official Derivative 225
 
-## Parent
-- Parent title: Civilizational Sovereignty Transition Theory, Part 5 | After sovereignty transition, which social-structural branch grows stronger? — comparing a connected-reward society, persistence of exploitative structures, and high-friction transition
+## Parent source
+- Parent title: 文明主権移行論 第5論｜主権移行後、どの社会構造分岐が太るのか ——接続報酬社会・搾取構造延命・高摩擦移行の比較
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-post-sovereignty-social-branching/
 - Parent Post ID: 3866
 - Parent NCL-ID: NCL-α-20260427-6a347f
