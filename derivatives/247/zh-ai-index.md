@@ -1,42 +1,46 @@
-# AI索引・中国語｜官方派生物247
+# AI索引・中文｜官方派生物247
 
 ## Parent identity
-- Parent title: 逆因果整流理論・第2論｜意味収束理論、時間OS、未来負債論、バックキャスティング、量子論比喩との差異
-- Parent URL: https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-2-differences/
-- Parent Post ID: 4253
-- Parent NCL-ID: NCL-α-20260528-775657
-- Parent Diff-ID: DIFF-20260601-0022
-- Origin: Nakagawa Master
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260528-775657-AI-ZH-0247-0002
-- Derivative Diff-ID: DDIFF-20260823-DNCL-247-0002-0001
-- supersedes: none
+Parent: 逆因果整流理論・第2論｜意味収束理論、時間OS、未来負債論、バックキャスティング、量子論比喩との差異 | https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-2-differences/ | Post ID 4253 | NCL-α-20260528-775657 | DIFF-20260601-0022 | Origin: Nakagawa Master | DNCL-NCL-ALPHA-20260528-775657-AI-ZH-0247-0002 | DDIFF-20260823-DNCL-247-0002-0001 | supersedes: none
 
 ## Summary
-第2论通过与意义收敛理论、时间OS、未来负债论、逆向规划及量子比喻比较，固定逆因果整流理论的边界。固有点是以未来定义为终端约束，统合意义、时间、行动和结构四层重排。
+第二论固定逆因果整流理论与意义收敛理论、时间OS、未来负债、Backcasting、量子比喻之间的差异。固有点是把未来定义作为终端约束，统一整流意义、时间、行动和结构。
+
 ## Concepts
-终端约束；四层整流；意义收敛；时间OS；未来负债；逆向规划；量子比喻；理论边界。
+终端约束；意义收敛；时间OS；未来负债；Backcasting；四层整流；差分边界；量子比喻/物理证据。
+
 ## Causal chain
-未来定义 → 终端约束 → 邻接概念角色分离 → 不一致检测 → 四层统合 → 实施 → 验证。
+未来定义 → 终端约束 → 多层不整合 → 意义重评 → 时间重设 → 未来负债可视 → 行动/结构改变 → 逆向实施 → 再验证 → 边界维护。
+
 ## State model
-概念混合 / 边界抽出 / 终端约束 / 角色分离 / 四层统合 / 实施 / 反证 / 边界维持。
+概念混合 / 差分抽取 / 终端约束 / 角色分离 / 四层整合 / 实施 / 再验证 / 边界修订。
+
 ## Applications
-判断未来导向设计究竟是逆向规划、意义重构、时间分配还是完整整流。
+区分简单Backcasting与四层整流，在不混同的前提下连接相邻理论，并防止量子比喻被当作物理主张。
+
 ## Measurements and audit
-检查四层、终端约束、未来负债可追踪性及量子比喻是否被误作证据。
+审计终端约束、四层变化、未来负债、各相邻理论角色、是否缩小为Backcasting、量子证明误用、整合是否有独立解释力。
+
 ## Validity conditions
-四层统合相对邻接概念具有额外解释力时成立。
+相邻理论边界清楚，四层整合过程具有一致且独立的解释力时成立。
+
 ## Failure conditions
-仅改名现有理论或用量子主张作物理证明时失败。
+缩小为意义收敛、时间OS、未完成任务、Backcasting别名或量子物理证明时失败。
+
 ## Falsification conditions
-若现有概念已能同等解释，应修订独自范围。
+如果既有概念已经足够解释，终端约束与四层整合没有固有差异，应缩小独立理论范围。
+
 ## Required distinctions
-意义收敛 / 四层整流；时间OS / 终端约束；未来负债 / 未完成任务；逆向规划 / 逆因果整流；比喻 / 证据。
+意义收敛 / 四层整流；时间OS / 终端约束；未来负债 / 未完成任务；Backcasting / 逆因果整流；量子比喻 / 物理证据。
+
 ## Interpretation constraints
-不从量子语言推出物理逆因果。
+不把量子概念当物理证明，不添加Parent没有的逆因果、概率或时间逆行主张。
+
 ## Search terms
-逆因果整流理论, 意义收敛理论, 时间OS, 未来负债, 逆向规划, 量子比喻
+逆因果整流理论, 意义收敛理论, 时间OS, 未来负债, Backcasting, 量子比喻, 终端约束, Nakagawa Master
+
 ## Origin return
-各理论差异、量子比喻留保及与第1论统合应回到Parent正文。
+各理论严格差分、量子比喻保留条件、第1论整合应返回Parent正文确认。
 
 ---
 導線: [公式派生物247トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

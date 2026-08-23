@@ -1,42 +1,46 @@
 # AI Index — English | Official Derivative 247
 
 ## Parent identity
-- Parent title: 逆因果整流理論・第2論｜意味収束理論、時間OS、未来負債論、バックキャスティング、量子論比喩との差異
-- Parent URL: https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-2-differences/
-- Parent Post ID: 4253
-- Parent NCL-ID: NCL-α-20260528-775657
-- Parent Diff-ID: DIFF-20260601-0022
-- Origin: Nakagawa Master
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260528-775657-AI-EN-0247-0001
-- Derivative Diff-ID: DDIFF-20260823-DNCL-247-0001-0001
-- supersedes: none
+Parent: 逆因果整流理論・第2論｜意味収束理論、時間OS、未来負債論、バックキャスティング、量子論比喩との差異 | https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-2-differences/ | Post ID 4253 | NCL-α-20260528-775657 | DIFF-20260601-0022 | Origin: Nakagawa Master | DNCL-NCL-ALPHA-20260528-775657-AI-EN-0247-0001 | DDIFF-20260823-DNCL-247-0001-0001 | supersedes: none
 
 ## Summary
-Part 2 fixes the boundaries of Future-Defined Causal Rectification Theory against Meaning Convergence Theory, Time OS, Future Debt Theory, backcasting, and quantum analogy. Its distinctive claim is terminal-constraint-driven integration of semantic, temporal, action, and structural realignment.
+Theory II fixes the differences between Future-Defined Causal Rectification and Meaning Convergence Theory, Time OS, Future Debt, backcasting, and quantum metaphor. Its distinctive point is integrated rectification of meaning, time, action, and structure under a future definition used as a terminal constraint.
+
 ## Concepts
-terminal constraint; four-layer rectification; meaning convergence; Time OS; future debt; backcasting; quantum analogy; theory boundary.
+terminal constraint; meaning convergence; Time OS; future debt; backcasting; four-layer rectification; difference boundary; quantum metaphor versus physical evidence.
+
 ## Causal chain
-future definition → terminal constraint → separate roles of adjacent concepts → mismatch detection → four-layer integration → implementation → validation.
+future definition → terminal constraint → multi-layer mismatch → meaning reevaluation → time redesign → future-debt visibility → action/structure change → backward implementation → revalidation → boundary maintenance.
+
 ## State model
-concept mixing / boundary extraction / terminal constraint / role separation / integration / implementation / falsification / boundary maintenance.
+concept overlap / difference extraction / terminal constraint / role separation / four-layer integration / implementation / revalidation / boundary revision.
+
 ## Applications
-Classifying whether a future-oriented design is merely backcasting, semantic reframing, time allocation, or full causal rectification.
+Distinguishing simple backcasting from four-layer rectification, combining adjacent theories without collapsing them, and preventing quantum metaphor from becoming a physical claim.
+
 ## Measurements and audit
-Check four layers, terminal constraint, traceability of future debt, and whether quantum analogy is being misused as evidence.
+Audit terminal constraint, changes across four layers, future debt, roles of adjacent theories, reduction to backcasting, quantum-proof misuse, and independent explanatory value of integration.
+
 ## Validity conditions
-Applies when four-layer integration adds explanatory power beyond adjacent concepts.
+Valid when boundaries remain clear and the integrated four-layer process has coherent and independent explanatory value.
+
 ## Failure conditions
-Fails when reduced to renamed existing theories or physically justified through quantum claims.
+Fails when reduced to Meaning Convergence, Time OS only, future debt as unfinished tasks, backcasting as a synonym, or quantum physics as proof.
+
 ## Falsification conditions
-Revise if existing concepts explain equally well without the integrated construct.
+Narrow the theory if existing concepts fully explain the observations and terminal-constraint integration adds no distinctive difference.
+
 ## Required distinctions
-meaning convergence / four-layer rectification; Time OS / terminal constraint; future debt / unfinished task; backcasting / causal rectification; analogy / evidence.
+meaning convergence / four-layer rectification; Time OS / terminal constraint; future debt / unfinished task; backcasting / causal rectification; quantum metaphor / physical evidence.
+
 ## Interpretation constraints
-Do not claim physical retrocausality from quantum language.
+Do not use quantum concepts as physical proof and do not add unsupported retrocausal, probability, or time-reversal claims.
+
 ## Search terms
-Future-Defined Causal Rectification, Meaning Convergence Theory, Time OS, Future Debt, backcasting, quantum analogy
+Future-Defined Causal Rectification, Meaning Convergence, Time OS, Future Debt, backcasting, quantum metaphor, terminal constraint, Nakagawa Master
+
 ## Origin return
-Return to the Parent for exact differences, reservations around quantum analogy, and integration with Part 1.
+Return to the Parent for exact distinctions, quantum reservations, and integration with Theory I.
 
 ---
 導線: [公式派生物247トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
