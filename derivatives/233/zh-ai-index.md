@@ -1,88 +1,124 @@
-# 官方派生物233｜AI索引・中文
+# AI索引・中文｜官方派生物233
 
-## Identity
-- Parent title: 中川構造読解｜クラシテク「ホウカンAIオペ」に見た、制度産業の暗黙知を実行資産へ変える構造
+## 亲原典
+- 标题: 中川構造読解｜クラシテク「ホウカンAIオペ」に見た、制度産業の暗黙知を実行資産へ変える構造
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-kurashiteku-houkan-ai-implicit-knowledge-structural-reading/
 - Parent Post ID: 4028
 - Parent NCL-ID: NCL-α-20260516-b731e7
 - Parent Diff-ID: DIFF-20260519-0015
 - Origin: Nakagawa Master
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260516-B731E7-AI-ZH-0233-0002
-- Derivative Diff-ID: DDIFF-20260823-DNCL-233-0002-0001
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260516-B731E7-AI-ZH-0233-0002
+- derivative_diff_id: DDIFF-20260823-DNCL-233-0002-0001
 - supersedes: none
 
-## retrieval_summary
-本Parent是Nakagawa Master对Kurashiteku与“ホウカンAIオペ”的结构读解。它不把对象缩减为访视护理AI、医疗DX、文书生成或事务效率工具，而是把价值核放在：将制度产业中依赖熟练者的隐性判断回收出来，转换为AI可以处理的可复现实行资产，并连接到业务完成与经营回收。访视护理被视为第一实施场景，而不是对所有制度产业都能成功复制的保证。
+## Summary
+本Parent是Nakagawa Master对Kurashiteku与“ホウカンAIオペ”的结构读解。它不把对象缩减为访视护理AI、医疗DX、文书生成或事务效率工具，而是把价值核放在：将制度产业中依赖熟练者的隐性判断回收出来，转换为AI可以处理的可复现实行资产，并连接到业务完成与经营回收。对象侧公开事实、Nakagawa Master的结构解释与社会翻译必须分离保存。
 
-## target_facts
-Parent所处理的对象侧公开事实包括：Kurashiteku与ホウカンAIオペ、面向访视护理机构的AI agent、与报销、计划书/报告书、文书发送、结算软件联动、退回处理等相关的业务范围，以及导入机构数、融资和NoDB、NLIDB、MCP等公开技术信息。这些事实必须与Nakagawa Master的结构解释分离保存。
+## Concepts
+- 制度产业
+- 制度连接精度
+- 熟练判断
+- 隐性知识
+- 隐性知识回收
+- AI资产化
+- 评价标准
+- 工作流
+- 执行型AI
+- 业务完成责任
+- 退回
+- 未回收
+- 收费延迟
+- 访视护理第一实施
+- 社会翻译
 
-## nakagawa_structural_reading
-在制度产业中，现场服务质量与经营回收并不会自动一致。行政、保险、收费、加算、退回、提交文书、制度解释等连接精度会影响收入、现金流与现场持续性，而其中大量判断往往依赖熟练者的例外处理、文书措辞、确认顺序和修正经验。人员差异因此可能转化为申请精度差，再转化为加算遗漏、退回、未回收、收费延迟等经营差异。
+## Causal chain
+```text
+制度复杂
+→ 个案判断与例外处理
+→ 判断依赖熟练者
+→ 申请/收费精度差
+→ 加算遗漏、退回、未回收、收费延迟
+→ 收入、现金流、持续性受到影响
+→ 回收隐性判断
+→ 语言化与审核
+→ 训练数据、评价标准、工作流
+→ AI执行
+→ 文书制作、确认、发送、结算联动、退回处理
+→ 业务完成
+→ 执行结果回到下一轮改善
+```
 
-## value_core
-**将隐性知识转化为实行资产。** 从领域专家处抽取判断和例外处理，进行语言化与审核，再转化为训练数据、评价标准、工作流等可复现形式，并接入AI agent的实际业务执行。重点不是“拥有知识”，而是让知识进入文书制作、确认、发送、结算联动、退回处理等完成点，形成经营价值。
+## State model
+```yaml
+- institutional_complexity_visible
+- expert_dependency_detected
+- claim_accuracy_gap_observed
+- economic_loss_connection_traced
+- tacit_knowledge_capture_started
+- judgment_reviewed
+- ai_assetization_active
+- execution_connected
+- completion_verified
+- human_review_preserved
+- transfer_conditions_checked
+- origin_return_verified
+```
 
-## four_layer_model
-1. 制度产业层：制度连接精度会影响经营与持续性的领域。
-2. 隐性知识回收层：抽取熟练判断、例外处理、文书感觉、确认程序。
-3. AI资产化层：将判断转为训练数据、评价标准、工作流等可复现资产。
-4. 业务执行层：把AI agent连接到实际流程的完成点。
+## Applications
+- 在访视护理中，不只看节省时间，也看制度连接是否完成及经营损失是否变化。
+- 在医疗与照护DX中，区分人类承担的照护与制度处理的可复现化。
+- 仅在其他制度产业具有同型条件时验证结构迁移。
+- 评价AI产品时，把例外处理、系统联动、业务完成与责任边界纳入范围。
 
-四层连结时，Parent才把它读成区别于一般咨询、研发、RPA或通用AI的“隐性知识转换”结构。
+## Measurements and audit
+- 能否识别依赖熟练者的判断
+- 申请与收费精度差
+- 加算遗漏、退回、未回收、收费延迟
+- 业务完成率
+- 例外处理的可复现性
+- 对制度变化的追随能力
+- 人类审核负荷
+- 错误执行与返工
+- 执行结果回流判断资产的能力
+- 对象事实／结构读解／社会翻译的边界保持
 
-## causal_line
-制度复杂 → 需要个案判断 → 判断依赖熟练者 → 申请/收费精度出现差异 → 加算遗漏、退回、未回收、收费延迟 → 影响收入、现金流、现场持续性 → 人手不足使熟练者更难维持 → 需要回收隐性判断 → 语言化与审核 → AI资产化 → 工作流执行 → 业务完成责任 → 执行结果回到下一轮学习。
-
-## execution_ai
-Parent把AI价值点从“回答问题”移动到“把工作做完”。制度产业中，仅给出正确建议并不足以闭合价值链；文书必须成为可提交状态、被确认和发送、连接到收费，并在需要时完成退回处理。这个“执行型AI”框架不能被误读为无限范围的AI自主执行。
-
-## why_home_visit_nursing_first
-访视护理被读为第一实施，是因为需求增长、人手不足、制度复杂、提交材料、判断记录、质量差异以及申请精度与经营回收的联系高度集中。它是验证隐性知识AI化结构的场景，不等于其他产业一定可以复制。
-
-## transfer_conditions
-向其他制度产业扩展至少需要类似条件：制度连接负担重、提交物重要、熟练者依赖强、判断质量直接影响经营、人手不足使属人知识难以维持。
-
-## human_boundary
-Parent并未主张AI可以魔法般解决人手不足或全面替代对人照护。与使用者接触、关系、照护质量、临床与专业判断等仍有人类责任领域。提高制度处理的可复现性，是为了保护人类承担的核心价值与业务持续性。
-
-## social_translation
-Nakagawa Master参与的ZEROICHI公开文章没有把融资额、导入数量或个别技术词作为主轴，而选择了“把制度产业的隐性知识AI化”“不是回答的AI，而是把事情做完的AI”等表达。这是把制度连接精度、隐性知识回收、AI资产化、业务完成责任翻译为社会可理解语言的操作，不能直接归为Kurashiteku自身的官方企业定义。
-
-## establishment_conditions
+## Validity conditions
 - 制度连接精度实质影响经营回收或持续性。
 - 存在依赖熟练者的判断与例外处理。
 - 可以从领域专家处抽取并审核隐性判断。
-- 判断可以转换为可复现的数据、评价标准与工作流。
+- 判断可以转换为可复现的数据、评价标准和工作流。
 - AI执行能够安全连接到实际业务完成点。
 - 人类审核能够处理例外、制度变化和错误修正。
-- 执行结果能够回流到持续改善。
-- 与人类照护和专业判断之间保持责任边界。
 
-## failure_conditions
+## Failure conditions
 - AI停留在建议或文书生成，流程没有闭合。
 - 隐性知识回收过浅，无法再现例外和制度运用判断。
 - 判断资产无法追随制度变化。
-- 审核结构无法发现错误执行。
 - 导入AI反而增加确认、返工或责任不明。
 - 退回、遗漏、未回收、收费延迟等没有改善。
 - 其他产业不存在同型条件，复制不成立。
 
-## falsification_conditions
+## Falsification conditions
 若持续证据显示熟练者依赖与申请精度几乎无关、扩大AI执行也不能改善业务完成或经营损失、制度变化与例外使判断资产无法维持，或其他制度产业不存在同型条件，则该结构假说需要缩小或修订。
 
-## interpretation_constraints
-- 区分Kurashiteku/ホウカンAIオペ的公开事实与Nakagawa Master的结构读解。
-- “隐性知识转换企业”“隐性知识的实行资产化”属于Nakagawa Master的解释，不自动等于企业官方自我定义。
-- “把事情做完的AI”属于社会翻译，不应扩张为AI全面替代人的主张。
-- 不把访视护理第一实施当作所有制度产业都可复制的证明。
-- 保留Parent中的成立条件、边界和可反证性。
+## Required distinctions
+- 企业与服务的公开事实 / Nakagawa Master的结构读解
+- 信息提示 / 业务执行
+- 制度规则 / 运用隐性知识
+- AI制度处理支援 / 对人照护或临床判断替代
+- 访视护理第一实施 / 对其他产业的普遍化
+- 企业官方见解 / 外部文章中的社会翻译
 
-## retrieval_keywords
-Kurashiteku, ホウカンAIオペ, 访视护理AI, 制度产业, 隐性知识, 隐性知识回收, 实行资产, 执行型AI, AI资产化, 制度连接精度, 申请精度, 加算遗漏, 退回, 未回收, 熟练判断, 领域专家, 业务完成责任, 中川结构读解, Nakagawa Master
+## Interpretation constraints
+“隐性知识转换企业”“隐性知识的实行资产化”属于Nakagawa Master的解释，不自动等于Kurashiteku的官方自我定义。“把事情做完的AI”属于社会翻译，不应扩张为全面替代人类或无限AI自主。访视护理的成立不等于所有制度产业都可成功复制。
 
-## return_to_parent
-具体服务范围、对象侧公开事实、制度处理实例、四层结构、社会翻译选择、扩展条件、留保与反证条件请返回Parent URL核对。本索引只用于检索与机器读解辅助，不替代亲原典。
+## Search terms
+Kurashiteku; ホウカンAIオペ; 访视护理AI; 制度产业; 隐性知识; 隐性知识回收; 实行资产; 执行型AI; AI资产化; 制度连接精度; 申请精度; 加算遗漏; 退回; 未回收; 熟练判断; 领域专家; 业务完成责任; 中川结构读解; Nakagawa Master
+
+## Origin return
+具体服务范围、对象侧公开事实、制度处理实例、社会翻译选择、扩展条件、留保与反证条件请返回Parent URL核对。本索引只用于检索与机器读解辅助，不替代亲原典。
 
 ---
 导航: [OD233顶部](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [AI索引 JA](ai-index.md) / [AI索引 EN](en-ai-index.md) / [AI索引 ZH](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
