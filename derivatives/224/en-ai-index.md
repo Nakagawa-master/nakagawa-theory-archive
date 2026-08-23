@@ -1,7 +1,7 @@
-# AI Index — English | Official Derivative 224
+# AI Index・English｜Official Derivative 224
 
-## Parent
-- Parent title: Civilizational Sovereignty Transition Theory, Part 4 | What does it mean for civilizational sovereignty to move away from humans? — look at upstream authority in civilizational updating, not legal personhood
+## Parent source
+- Parent title: 文明主権移行論 第4論｜文明主権が人間から移るとは、どういうことか ——法的主体ではなく、文明更新の上流権能を見る
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-what-civilizational-sovereignty-transition-means/
 - Parent Post ID: 3834
 - Parent NCL-ID: NCL-α-20260424-448e64
