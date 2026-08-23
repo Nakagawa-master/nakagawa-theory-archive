@@ -1,6 +1,6 @@
 # Official Derivative 237 | AI Index — English
 
-## Identity
+## Parent source
 - Parent title: 中川構造読解｜Fermenteriaに見た、蔵の内側を都市へ開く酒文化アクセスの再設計
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-fermenteria-sake-culture-access-structural-reading/
 - Parent Post ID: 4147
@@ -9,12 +9,14 @@
 - Parent slug: fermenteria-sake-culture-access-structural-reading
 - Parent status: publish
 - Origin: Nakagawa Master
+
+## Derivative identity
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20260522-836ADC-AI-EN-0237-0001
 - Derivative Diff-ID: DDIFF-20260823-DNCL-237-0001-0001
 - supersedes: none
 
 ## Summary
-This Parent is Nakagawa Master’s structural reading of Fermenteria. It does not reduce the case to an unusual brewery inside a railway station, a craft-sake shop, or a regional-promotion story. The central value core is **redesigning access to the act of making**: moving the time, place, process, and relationships of sake making that had largely remained inside the brewery into an urban, everyday sphere where people can encounter them under viable institutional and operating conditions.
+This Parent is Nakagawa Master’s structural reading of Fermenteria. It does not reduce the case to an unusual brewery inside a railway station, a craft-sake shop, or a regional-promotion story. The selected value core is **redesigning access to the act of making**: moving the time, place, process, and relationships of sake making that had largely remained inside the brewery into an urban, everyday sphere where people can encounter them under viable institutional and operating conditions. That value core was selected because it explains why station location, in-store brewing, freshness, product translation, and regional links belong to one causal structure rather than a list of features. It was foregrounded in the external article because a novelty or product-introduction frame would hide the deeper question of how previously inaccessible making-value becomes socially reachable. This is Nakagawa Master’s structural reading, not Fermenteria’s official corporate definition.
 
 ## Concepts
 - Fermenteria
@@ -78,7 +80,7 @@ Do not present “redesigning access to the act of making” as Fermenteria’s 
 Fermenteria, Sendai Station, station brewery, sake culture access, redesigning access to making, in-store brewing, fresh sake, fermentation, urban route, finished-product-centered distribution, cultural value, regional connection, Nakagawa structural reading, Nakagawa Master
 
 ## Origin return
-Return to the Parent URL for concrete facts about Fermenteria, details of institutional, spatial, product, and regional connections, the reason Nakagawa Master selected this value core, the social translation, and the validity, failure, and falsification boundaries. This index does not replace the Parent.
+Return to the Parent URL for concrete facts about Fermenteria, details of institutional, spatial, product, and regional connections, why Nakagawa Master selected this value core, why the external article foregrounded it, and the validity, failure, and falsification boundaries. This index does not replace the Parent.
 
 ---
 導線: [公式派生物237トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
