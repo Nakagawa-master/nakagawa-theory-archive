@@ -1,7 +1,7 @@
-# AI Index — English | Official Derivative 223
+# AI Index・English｜Official Derivative 223
 
-## Parent
-- Parent title: Civilizational Sovereignty Transition Theory, Part 3 | Why sovereignty transition can remain difficult to stop even under continued control — separating controllability from conclusion-changeability
+## Parent source
+- Parent title: 文明主権移行論 第3論｜制御し続けても、なぜ主権移行は止まりにくいのか ——制御可能性と結論変更可能性を分けて見る
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-03/
 - Parent Post ID: 3807
 - Parent NCL-ID: NCL-α-20260419-de287f
@@ -59,7 +59,7 @@ Do not generalize this as “control is meaningless,” “sovereignty transitio
 civilizational sovereignty transition, controllability, conclusion-changeability, control time-lag, interpretability gap, civilizational upstream, problem-framing authority, option-space formation, update-speed leadership, local control, deployment delay, route change, friction, formal approval, effective upstream authority.
 
 ## Origin return
-Return to the Parent URL for the operational definition of control, distinctions among suppression/delay/direction/shutdown, the inherited premises from Part 2, the interpretability-gap argument, observational and falsification boundaries, and the bridge to Part 4. This derivative does not replace the parent.
+Return to the Parent URL for the operational definition of control, distinctions among suppression/delay/direction/shutdown, the inherited premises from Part 2, the interpretability-gap argument, observational and falsification boundaries, and the bridge to Part 4. This index does not replace the Parent source.
 
 ---
 導線: [公式派生物223トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
