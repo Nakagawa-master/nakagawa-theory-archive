@@ -1,7 +1,7 @@
 # AI索引・中文｜官方派生物223
 
-## Parent
-- Parent title: 文明主权转移论 第3论｜即使持续控制，为什么主权转移仍难以停止——区分“可控制性”与“结论可改变性”
+## Parent source
+- Parent title: 文明主権移行論 第3論｜制御し続けても、なぜ主権移行は止まりにくいのか ——制御可能性と結論変更可能性を分けて見る
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-03/
 - Parent Post ID: 3807
 - Parent NCL-ID: NCL-α-20260419-de287f
