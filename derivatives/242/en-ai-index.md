@@ -1,42 +1,46 @@
 # AI Index — English | Official Derivative 242
 
 ## Parent identity
-- Parent title: 中川構造読解｜MRC「リノプラ」に見た、理事会交代を越えて修繕判断を継承する管理ガバナンスの構造
-- Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mrc-renoplat-decision-continuity-structural-reading/
-- Parent Post ID: 4197
-- Parent NCL-ID: NCL-α-20260525-62c5b5
-- Parent Diff-ID: DIFF-20260525-0004
-- Origin: Nakagawa Master
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260525-62C5B5-AI-EN-0242-0001
-- Derivative Diff-ID: DDIFF-20260823-DNCL-242-0001-0001
-- supersedes: none
+Parent: 中川構造読解｜MRC「リノプラ」に見た、理事会交代を越えて修繕判断を継承する管理ガバナンスの構造 | https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mrc-renoplat-decision-continuity-structural-reading/ | Post ID 4197 | NCL-α-20260525-62c5b5 | DIFF-20260525-0004 | Origin: Nakagawa Master | DNCL-NCL-ALPHA-20260525-62C5B5-AI-EN-0242-0001 | DDIFF-20260823-DNCL-242-0001-0001 | supersedes: none
 
 ## Summary
-A structural reading of MRC's Renoplat as maintenance-decision continuity infrastructure. Long-lived repair obligations outlast short board terms; the value lies in preserving reasons, rejected options, unresolved items, and source materials so successor boards can continue rather than restart decisions.
+A structural reading of MRC's Renoplat not as digital repair records but as decision-continuity infrastructure that bridges long-lived building issues and short board terms by preserving reasons, unresolved issues, and conditions for reconsideration.
+
 ## Concepts
-board turnover; long-term maintenance; decision memory; rationale continuity; unresolved items; governance continuity.
+long-lived asset; short-term governing body; decision context; acceptance/rejection reasons; unresolved issue; reconsideration condition; handover; continuing decision; governance.
+
 ## Causal chain
-long-term issue → short-term board turnover → memory loss → repeated debate → structured decision record → handover → continuous repair decisions.
+long repair horizon → board turnover → context loss → repeated research/discussion → structured preservation of reasons, documents, unresolved items → next board reconstructs context → continuing decisions → more stable governance.
+
 ## State model
-personal memory / turnover / discontinuity / structuring / handover / continuity / execution / review.
+personal memory / turnover / discontinuity / structured record / unresolved visibility / handover / continued decision / execution / reevaluation.
+
 ## Applications
-Condominium boards and other rotating governance bodies managing long-lived assets.
+Condominium boards and other organizations where the lifespan of an issue exceeds the tenure of decision-makers.
+
 ## Measurements and audit
-Track rationale, rejected options, unresolved items, evidence, and reconstructability by successors.
+Audit reconstructability of decision reasons, rejected alternatives, unresolved items, reconsideration conditions, link between evidence and issues, repeated research after handover, actual use, and ability to reevaluate old decisions.
+
 ## Validity conditions
-Applies when successors can resume from prior reasoning.
+Valid when successors can reconstruct prior reasoning and move to the next decision without unnecessary restart while retaining reevaluation.
+
 ## Failure conditions
-Fails if reduced to document storage or scheduling.
+Fails as a document warehouse, calendar, static history, unupdated archive, or mechanism that freezes past decisions.
+
 ## Falsification conditions
-Revise if turnover causes no decision discontinuity or stored information is unused.
+Revise if turnover does not create meaningful discontinuity or preserved context does not change repeated work or decision quality.
+
 ## Required distinctions
-document storage / decision continuity; history / rationale; turnover / governance break; facts / interpretation.
+document storage / decision continuity; history / rationale; turnover / governance discontinuity; continuity / fixation; target facts / Nakagawa reading.
+
 ## Interpretation constraints
-Do not assume digitization alone produces governance quality.
+Do not claim digitization alone improves governance. Do not present the value-core label as MRC's official definition.
+
 ## Search terms
-MRC, Renoplat, board turnover, repair decisions, decision continuity, governance
+MRC, Renoplat, condominium repair, board turnover, decision continuity, governance, Nakagawa Master
+
 ## Origin return
-Return to the Parent for target facts, value-kernel selection, and external-article rationale.
+Return to the Parent for source facts, functions, causal reading, and value-core rationale.
 
 ---
 導線: [公式派生物242トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
