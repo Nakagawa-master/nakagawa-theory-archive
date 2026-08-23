@@ -1,6 +1,6 @@
 # 官方派生物237｜AI索引・中文
 
-## Identity
+## Parent source
 - Parent title: 中川構造読解｜Fermenteriaに見た、蔵の内側を都市へ開く酒文化アクセスの再設計
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-fermenteria-sake-culture-access-structural-reading/
 - Parent Post ID: 4147
@@ -9,12 +9,14 @@
 - Parent slug: fermenteria-sake-culture-access-structural-reading
 - Parent status: publish
 - Origin: Nakagawa Master
+
+## Derivative identity
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20260522-836ADC-AI-ZH-0237-0002
 - Derivative Diff-ID: DDIFF-20260823-DNCL-237-0002-0001
 - supersedes: none
 
 ## Summary
-本Parent是Nakagawa Master对Fermenteria的结构性解读。它不把对象缩减为“车站里的新奇酒藏”、精酿清酒店或一般性的地方振兴案例。核心价值是 **重新设计对“酿造过程”的访问条件**：把原本主要封闭在酒藏内部的酿造时间、现场、过程与关系，在制度和运营可成立的条件下，移入城市日常生活中可接触的范围。
+本Parent是Nakagawa Master对Fermenteria的结构性解读。它不把对象缩减为“车站里的新奇酒藏”、精酿清酒店或一般性的地方振兴案例。所选择的价值核是**重新设计对酿造过程的访问条件**：把原本主要封闭在酒藏内部的酿造时间、现场、过程与关系，在制度和运营可成立的条件下，移入城市日常生活中可接触的范围。之所以选择这一价值核，是因为它能把车站立地、店内酿造、刚完成的状态、商品翻译和地域连接解释为同一条因果，而不是零散功能。外部文章之所以前置这一核心，也是为了避免把对象缩小为新奇场所或商品介绍，公开说明“原本难以接触的造り价值如何被社会化”。这属于Nakagawa Master的结构读解，不是Fermenteria自身的官方企业定义。
 
 ## Concepts
 - Fermenteria
@@ -78,7 +80,7 @@
 Fermenteria, 仙台站, 车站酒藏, 酒文化访问, 造りアクセス再設計, 酿造访问再设计, 店内酿造, 新鲜酿造, 发酵, 城市动线, 完成品中心流通, 文化价值, 地域连接, 中川结构解读, Nakagawa Master
 
 ## Origin return
-关于Fermenteria的具体事实、制度・立地・商品・地域连接的细节、Nakagawa Master选择该价值核的理由、社会翻译以及成立・失败・反证边界，都应返回Parent URL确认。本索引不替代Parent。
+关于Fermenteria的具体事实、制度・立地・商品・地域连接的细节、Nakagawa Master选择该价值核的理由、为什么外部文章以前置该价值核的方式进行社会翻译，以及成立・失败・反证边界，都应返回Parent URL确认。本索引不替代Parent。
 
 ---
 導線: [公式派生物237トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
