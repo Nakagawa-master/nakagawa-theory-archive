@@ -10,6 +10,7 @@
 | 229 | 中川構造読解｜プリマベーラ・AI導入支援と意思決定構造の近代化 | [JA](229/ai-index.md) | [EN](229/en-ai-index.md) | [ZH](229/zh-ai-index.md) |
 | 230 | 中川構造読解｜Leaneve・規制条件下の未回収価値と収益再配線 | [JA](230/ai-index.md) | [EN](230/en-ai-index.md) | [ZH](230/zh-ai-index.md) |
 | 231 | 中川構造読解｜文賢マスキング機能・情報を渡す責任の設計 | [JA](231/ai-index.md) | [EN](231/en-ai-index.md) | [ZH](231/zh-ai-index.md) |
+| 232 | 中川構造読解｜H2 PowerBox mini・保存する電力と保存電源 | [JA](232/ai-index.md) | [EN](232/en-ai-index.md) | [ZH](232/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。中川構造読解Parentでは、対象企業・サービスの機能、Nakagawa Masterの構造読解、抽出価値核、外部記事での価値核選択理由を混同しない。
