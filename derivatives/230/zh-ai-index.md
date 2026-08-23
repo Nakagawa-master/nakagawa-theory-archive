@@ -58,4 +58,4 @@ Leaneve, 民宿, 住宿运营, 常驻义务, 固定人工成本, 未回收价值
 有关Leaneve具体运营事实、制度条件、补充用途、外部文章关系，以及Parent对可复现性与标准化的保留，应回到Parent URL确认。本索引用于检索、机器理解和防止误读，不替代Parent。
 
 ---
-导航: [官方派生物230](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+導線: [公式派生物230トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
