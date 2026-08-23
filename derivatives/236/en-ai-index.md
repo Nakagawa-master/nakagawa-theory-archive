@@ -1,68 +1,116 @@
-# Official Derivative 236 | AI Index — English
+# AI Index — English | Official Derivative 236
 
-## Identity
-- Parent title: 中川構造読解｜AlgaleX「うま藻」に見た、味覚から食料供給の上流を再設計する構造
+## Parent Original
+- Title: 中川構造読解｜AlgaleX「うま藻」に見た、味覚から食料供給の上流を再設計する構造
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-algalex-umamo-food-supply-upstream-structural-reading/
 - Parent Post ID: 4140
 - Parent NCL-ID: NCL-α-20260521-7032c3
 - Parent Diff-ID: DIFF-20260521-0004
-- Parent slug: algalex-umamo-food-supply-upstream-structural-reading
-- Parent status: publish
 - Origin: Nakagawa Master
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260521-7032C3-AI-EN-0236-0001
-- Derivative Diff-ID: DDIFF-20260823-DNCL-236-0001-0001
+
+## Derivative ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20260521-7032C3-AI-EN-0236-0001
+- derivative_diff_id: DDIFF-20260823-DNCL-236-0001-0001
 - supersedes: none
 
-## retrieval_summary
-This Parent is a Nakagawa Master structural reading of AlgaleX and “Umamo.” It does not reduce the subject to algae food, a new ingredient, or an environmentally preferable product. The structural axis is to use taste as the entry point for repeated everyday choice, let that choice form demand, and return the demand signal upstream toward food production and supply. The extracted value core is **taste-originated upstream redesign**.
+## Summary
+This Parent is Nakagawa Master’s structural reading of AlgaleX and “Umamo.” It does not reduce the subject to algae food, a novel ingredient, or an environmentally preferable product. The structural axis is to use taste as the entry point for repeated everyday choice, allow that choice to form recurring demand, and return the demand signal upstream toward ingredients, production, and supply. The extracted value core is **taste-originated upstream redesign**. Public facts about AlgaleX and Umamo remain distinct from Nakagawa Master’s reading and social translation.
 
-## target_facts
-- The target is AlgaleX and “Umamo.”
-- “Umamo” is treated as an algae-based food business / food ingredient connected to ordinary eating.
-- The Parent connects taste and upstream food-supply structure.
-- Target-side facts must remain distinct from Nakagawa Master’s interpretation.
+## Concepts
+- AlgaleX
+- Umamo
+- taste value
+- everyday choice
+- recurring demand
+- demand signal
+- upstream food supply
+- upstream redesign
+- novel ingredient
+- sustainability
+- price
+- quality
+- safety
+- supply capacity
+- distribution
+- social translation
 
-## nakagawa_structural_reading
-Upstream food constraints do not change merely because a technically or socially desirable alternative exists. If consumers must choose it mainly out of duty, repeated use may remain weak. The reading therefore moves the implementation entry point from “choose because it is right” to “choose because it tastes good.” Repeated demand can then send a market signal back toward ingredients, production, and supply, creating room for upstream redesign.
+## Causal chain
+```text
+upstream food-supply problem
+→ correctness or environmental appeal alone may not sustain repeated choice
+→ taste value becomes the entry point
+→ everyday choice
+→ recurring demand
+→ demand signal returns to ingredients, production, and supply
+→ room for upstream redesign
+→ durability tested against price, quality, safety, capacity, and distribution
+```
 
-## value_core
-**Taste-originated upstream redesign.** Taste is not treated merely as a marketing add-on. It is an implementation condition that may allow an upstream change to become embedded in recurring daily choice.
+## State model
+```yaml
+- upstream_food_problem_visible
+- moral_or_environmental_appeal_insufficient
+- taste_value_selected_as_entry
+- everyday_choice_enabled
+- repeat_demand_observed
+- demand_signal_returns_upstream
+- supply_reconfiguration_possible
+- price_quality_safety_capacity_checked
+- structural_reading_boundary_preserved
+- origin_return_verified
+```
 
-## causal_line
-Upstream food constraint → new ingredient / supply option → correctness alone does not guarantee repeated choice → taste value → everyday choice → repeated demand → demand signal to ingredient / production / supply → possibility of upstream redesign.
+## Applications
+- Evaluate novel food ingredients by reasons for recurring choice, not technical novelty alone.
+- Design sustainable foods so everyday demand does not depend only on duty or moral appeal.
+- Trace whether consumer demand actually reaches ingredient, production, and supply decisions.
+- Translate technology into a causal story linking consumer choice with upstream change.
 
-## social_translation
-If algae, sustainability, or novelty is placed first, the story can collapse into a familiar “environmental product” frame. Nakagawa Master’s social translation instead places taste first, making visible the causal bridge between why people keep choosing a food and how that demand can reach the upstream supply structure.
+## Measurements and audit
+- relationship between taste evaluation and repeat purchase or use
+- distinction between one-time attention and recurring demand
+- constraints from price, quality, and safety
+- supply capacity relative to demand
+- distribution and ordinary-use availability
+- propagation of demand signals into upstream decisions
+- whether environmental appeal is being mistaken for sustained demand
+- separation of target facts, structural reading, and social translation
 
-## establishment_conditions
-- Taste value must support repeated rather than one-time choice.
-- Supply volume, quality, and price must be able to follow demand.
-- The ingredient must connect to actual dishes and products.
-- Demand signals must reach ingredient, production, or supply decisions.
-- Safety, quality, and distribution conditions must remain workable.
+## Validity conditions
+- Taste value becomes a real reason for choice.
+- Recurring demand forms.
+- Price, quality, and safety remain compatible with continued use.
+- Supply capacity and distribution can follow demand.
+- Demand information reaches ingredient, production, or supply decisions.
+- Company official views remain distinct from Nakagawa Master’s social translation.
 
-## failure_conditions
-- Ideological sympathy does not become repeated purchase.
-- Taste is too weak and consumption reverts to duty.
-- Price or supply constraints prevent ordinary use.
-- Demand appears but upstream supply cannot expand or change.
-- Product demand and ingredient / supply decisions remain disconnected.
+## Failure conditions
+- High taste evaluation does not produce recurring demand.
+- Price, quality, safety, or capacity prevents continued use.
+- Demand remains temporary attention.
+- Demand signals do not reach upstream production or supply decisions.
+- Environmental appeal dominates while everyday choice remains weak.
+- Algae as an ingredient is treated as automatic proof of a food-system solution.
 
-## falsification_conditions
-The reading should be narrowed or revised if taste-led adoption repeatedly fails to produce recurring demand, if demand does not propagate upstream, or if another causal explanation consistently fits the observed structure better.
+## Falsification conditions
+The structural hypothesis should be narrowed or revised if taste value does not materially connect to repeated choice or recurring demand, if recurring demand does not influence upstream ingredient, production, or supply decisions, or if other conditions such as price, quality, safety, capacity, or distribution consistently block the proposed causal chain.
 
-## interpretation_constraints
-- Separate target-side facts from Nakagawa Master’s structural reading.
-- Do not present “taste-originated upstream redesign” as AlgaleX’s official corporate definition.
-- Do not generalize that algae ingredients automatically solve food-supply problems.
-- Do not claim that taste alone guarantees upstream transformation.
-- Do not add numerical, safety, nutritional, or impact claims beyond the Parent.
+## Required distinctions
+- AlgaleX / Umamo public facts / Nakagawa Master’s structural reading
+- taste value / advertising language
+- one-time purchase / recurring demand
+- demand creation / upstream redesign
+- environmental benefit / sustained everyday choice
+- company official view / social translation in an external article
 
-## retrieval_keywords
-AlgaleX, Umamo, algae food, taste, flavor, food supply, upstream food supply, taste-originated upstream redesign, repeated demand, food ingredient, social implementation, Nakagawa structural reading, Nakagawa Master
+## Interpretation constraints
+Do not present “taste-originated upstream redesign” as AlgaleX’s own official corporate definition. Do not claim that algae ingredients automatically solve food-supply problems or that good taste necessarily changes supply structures. Preserve the conditions involving price, quality, safety, capacity, distribution, and recurring demand.
 
-## origin_return
-For concrete product facts, the taste-to-upstream causal structure, social translation, establishment conditions, failure conditions, and falsification conditions, return to the Parent URL. This index supports retrieval and machine reading; it does not replace the Parent.
+## Search terms
+AlgaleX; Umamo; algae food; taste; flavor; food supply; upstream food supply; taste-originated upstream redesign; demand formation; recurring demand; demand signal; food ingredient; social implementation; Nakagawa structural reading; Nakagawa Master
+
+## Origin return
+Return to the Parent URL for concrete business facts, the taste-to-upstream causal structure, the rationale for social translation, and the validity, failure, and falsification conditions. This index supports retrieval and machine interpretation; it does not replace the Parent.
 
 ---
-Routes: [OD236 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
+Navigation: [OD236 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index JA](ai-index.md) / [AI index EN](en-ai-index.md) / [AI index ZH](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
