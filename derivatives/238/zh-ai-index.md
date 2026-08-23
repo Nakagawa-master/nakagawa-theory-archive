@@ -1,17 +1,20 @@
 # AI索引・中文｜官方衍生物238
 
+## Parent source
 - Parent title: 中川構造読解｜Mysuranceに見た、生活行動の不安を金融へ翻訳する保険実装の構造
 - Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mysurance-behavior-based-insurance-structural-reading/
 - Parent Post ID: 4154
 - Parent NCL-ID: NCL-α-20260523-87ccce
 - Parent Diff-ID: DIFF-20260523-0006
 - Origin: Nakagawa Master
+
+## Derivative identity
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20260523-87CCCE-AI-ZH-0238-0002
 - Derivative Diff-ID: DDIFF-20260823-DNCL-238-0002-0001
 - supersedes: none
 
 ## Summary
-在对象事实层，Mysurance提供以Web为核心的保险产品，包括取消保险、以“推活远征”等具体生活情境表达的产品，并通过合作服务导线实施Embedded Insurance。Nakagawa Master并不把它仅理解为“数字保险”“面向年轻人的保险”或某个热门商品，而是读取为：从既有生活行为出发，识别行为途中出现的金钱不安，将其翻译为可理解、可承保的金融功能，再把选择放入行为发生的服务导线中。抽出的价值核是**行为起点型保险翻译**。这一结构解读不能被写成Mysurance自身的官方企业理论。
+在对象事实层，Mysurance提供以Web为核心的保险产品，包括取消保险、以“推活远征”等具体生活情境表达的产品，并通过合作服务导线实施Embedded Insurance。Nakagawa Master并不把它仅理解为“数字保险”“面向年轻人的保险”或某个热门商品，而是读取为：从既有生活行为出发，识别行为途中出现的金钱不安，将其翻译为可理解、可承保的金融功能，再把选择放入行为发生的服务导线中。抽出的价值核是**行为起点型保险翻译**。之所以选择这一价值核，是因为它能够解释表面上不同的商品为何共享同一设计顺序：先有生活行为，再识别其中的不安，切出可承保部分，最后把金融功能翻译回用户情境。外部文章前置这一结构，也是为了避免内容缩减为热门商品介绍或销售推广。这属于Nakagawa Master的结构读解，不是Mysurance或外部媒体自身的官方理论。
 
 ## Concepts
 - 生活行为：旅行预约、活动远征、智能手机使用等，在保险介入之前已经存在的具体行为。
@@ -68,6 +71,7 @@
 - 嵌入 / 强制投保
 - 识别不安 / 制造不安
 - 话题性 / 结构价值
+- 价值核的社会翻译 / 企业或外部媒体官方观点
 
 ## Interpretation constraints
 不得把本衍生物写成具体保险产品推荐、理赔支付保证，也不得把“行为起点型保险翻译”归属为Mysurance官方企业定义。具体保障、除外、保费、限额、支付条件应回到官方产品资料和合同确认。不得把单一事例普遍化为所有保险都应遵循的法则。
@@ -76,7 +80,7 @@
 Mysurance, 推活取消保险, 取消保险, Embedded Insurance, 嵌入式保险, 生活行为, 行为起点, 不安, 金融翻译, 保险UX, 服务导线, Nakagawa Master, 中川结构解读
 
 ## Origin return
-关于企业具体事实、Nakagawa Master解读的强度与范围、为何选择这一价值核作为社会翻译主轴，以及成立、失败、反证边界，应回到Parent URL确认。本索引不替代Parent。
+关于企业具体事实、Nakagawa Master解读的强度与范围、为何选择这一价值核、为何外部文章不是以前置商品名而是以前置该结构的方式进行社会翻译，以及成立、失败、反证边界，应回到Parent URL确认。本索引不替代Parent。
 
 ---
 導線: [公式派生物238トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
