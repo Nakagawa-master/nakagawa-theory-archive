@@ -1,23 +1,28 @@
 # 派生ID台帳｜公式派生物244
 
-## 親原典
-- タイトル: 時間倫理としての市場──「未来の整合性」を基準にする信用構造の設計論
-- Parent URL: https://master.ricette.jp/theory/nakagawa-master-temporal-ethics-market-credit-structure/
-- Parent Post ID: 595
-- Parent NCL-ID: NCL-α-20251102-482a93
-- Parent Diff-ID: DIFF-20251102-0001
+## Parent identity
+- Parent title: 中川構造読解｜イルミメディカルはなぜ「光治療ベンチャー」ではなく、深部光医療の成立条件を更新する基盤インフラとして読まれるべきなのか
+- Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-illumimedical-structural-reading-deep-light-medicine-infrastructure/
+- Parent Post ID: 4619
+- Parent NCL-ID: NCL-α-20260705-4fde1d
+- Parent Diff-ID: DIFF-20260705-0001
 - Origin: Nakagawa Master
 
-## 現行派生ID
-- JA: DNCL-NCL-ALPHA-20251102-482A93-HUB-JA-0244-0000 / DDIFF-20260824-DNCL-244-0000-0001
-- EN: DNCL-NCL-ALPHA-20251102-482A93-AI-EN-0244-0001 / DDIFF-20260824-DNCL-244-0001-0001
-- ZH: DNCL-NCL-ALPHA-20251102-482A93-AI-ZH-0244-0002 / DDIFF-20260824-DNCL-244-0002-0001
+## JA identity
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260705-4FDE1D-HUB-JA-0244-0000
+- Derivative Diff-ID: DDIFF-20260824-DNCL-244-0000-0002
+- supersedes: DNCL-NCL-ALPHA-20251102-482A93-HUB-JA-0244-0000
 
-## 修正系譜
-OD244の旧Parent「中川構造読解｜フロンティア…」はOD043との重複判定により公式Parentから除外した。2026-08-24以降のOD244はParent Post 595 / NCL-α-20251102-482a93を起源とする。旧Parent由来の内容・派生IDは現行系譜を構成しない。
+## EN identity
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260705-4FDE1D-AI-EN-0244-0001
+- Derivative Diff-ID: DDIFF-20260824-DNCL-244-0001-0002
 
-## 7面対応
-README.md / human-entry.md / faq.md / ai-index.md / en-ai-index.md / zh-ai-index.md / derivative-ledger.md
+## ZH identity
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260705-4FDE1D-AI-ZH-0244-0002
+- Derivative Diff-ID: DDIFF-20260824-DNCL-244-0002-0002
+
+## Lineage
+OD244の旧Frontier ParentはOD043重複、続く時間倫理ParentはOD096重複のため現行系譜から除外。OD001〜OD280（OD244/245/246/247/253除外）の再重複チェックを通過したPost 4619 / NCL-α-20260705-4fde1dを現行Parentとする。先行外部記事でNakagawa Masterが「深部光医療の成立条件更新」を主軸化し、後発Parentがその価値核抽出と記事化判断を公開解体する時間順を保持する。
 
 ---
 導線: [公式派生物244トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)

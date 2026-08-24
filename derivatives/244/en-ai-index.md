@@ -1,51 +1,47 @@
-# AI Index | Official Derivative 244
+# AI Index · English | Official Derivative 244
 
-## Parent source
-Temporal Ethics as a Market — Designing Credit Structure Around “Future Consistency”  
-https://master.ricette.jp/theory/nakagawa-master-temporal-ethics-market-credit-structure/  
-Post ID: 595 / NCL-α-20251102-482a93 / DIFF-20251102-0001
-
-## Derivative identity
-DNCL-NCL-ALPHA-20251102-482A93-AI-EN-0244-0001 / DDIFF-20260824-DNCL-244-0001-0001
+## Identity
+Parent: NCL-α-20260705-4fde1d / Post 4619 / https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-illumimedical-structural-reading-deep-light-medicine-infrastructure/  
+Derivative: DNCL-NCL-ALPHA-20260705-4FDE1D-AI-EN-0244-0001 / DDIFF-20260824-DNCL-244-0001-0002
 
 ## Summary
-A market-credit model that refuses to close evaluation at the present transaction. It reconnects current decisions to future burdens, promises, reversibility, and revision. It is not a forecasting doctrine; it is a temporal audit of whether credit remains coherent across time.
+Nakagawa Master first framed the external article around the value core “infrastructure that updates the viability conditions of deep-light medicine,” rather than a generic light-therapy startup profile. The later Parent article publicly dissects why that value core was selected and why it was foregrounded. The chronology must not be reversed.
 
 ## Concepts
-Temporal ethics; future consistency; credit structure; future burden; temporal externalization; promise/actual divergence; reversibility; exit; rollback; observation window; revision lineage.
+source-side facts; deep-light medicine; viability conditions; condition coupling; infrastructure; value core; prior external article; later Parent; public dissection; structural translation.
 
 ## Causal chain
-Present-value bias → delayed burdens become invisible → burdens fall outside credit judgment → future obligations are surfaced → promises and outcomes are compared over time → terms are revised when mismatch grows → revision history informs later credit.
+medical use of light → constraints for deep use → need to connect delivery/effect/control/safety/operation/verification conditions → viability-condition update → expanded implementation possibility → value core foregrounded in the prior external article → later Parent dissects the editorial and structural choice.
 
 ## State model
-S0 present-only judgment → S1 future obligations visible → S2 longitudinal observation → S3 revision on mismatch → S4 learning credit structure. S4 can return to observation when conditions change.
+principle / deep-use constraint / condition separation / condition coupling / implementable state / external social translation / Parent dissection.
 
 ## Applications
-Long-duration contracts, investment, maintenance procurement, public systems, infrastructure, and recurring services where current benefit and future obligation are separated in time.
+Audit medical or deep-tech projects by asking which coupled conditions must change for real-world viability, while preserving source facts separately from Nakagawa Master’s interpretation.
 
 ## Measurements and audit
-Promise/outcome divergence, allocation of future cost, exit feasibility, change authority, rollback cost, revision history, and temporal consistency of explanations. Do not invent universal thresholds.
+fact/interpretation separation; explicit conditions; causal coupling; value-core rationale; external-article rationale; external-first chronology; no attribution to company doctrine; no invented clinical metrics.
 
 ## Validity conditions
-Current decisions and later outcomes must be traceable; multiple observation points must be available; and actors must have legitimate means to revise terms when inconsistency is detected.
+The viability-condition frame explains the implementation bottleneck better than a generic company or product profile.
 
 ## Failure conditions
-Fixing one future as truth; collapsing all dimensions into one score; treating long-term preference as moral superiority; observing without revision rights; hiding future burden allocation.
+Flattening to startup promotion or device performance; attributing the value core to the company; reversing Parent and external-article chronology.
 
 ## Falsification conditions
-If temporal-consistency observation adds no explanatory or corrective power beyond ordinary risk management, the theory’s additional value should be revised.
+Revise if coupled viability conditions do not explain implementation or if another independent factor fully explains it.
 
 ## Required distinctions
-Future consistency vs prediction; temporal ethics vs moral scoring; credit structure vs credit score; future-burden audit vs pessimism; reversibility vs indecision.
+facts / interpretation; novelty / viability; company position / Nakagawa Master value core; prior external article / later Parent.
 
 ## Interpretation constraints
-Do not turn the framework into a population-ranking system. Do not fabricate thresholds. Reference relations indicate adjacency, not identity.
+Do not infer clinical efficacy, safety, or quantitative results absent from the Parent. The Parent is a later public dissection of an earlier external-article framing.
 
 ## Search terms
-Temporal ethics, future consistency, market credit, future burden, temporal externality, reversibility, rollback, observation window.
+Illumimedical, deep-light medicine, light therapy, viability conditions, infrastructure, structural reading, structural translation.
 
 ## Origin return
-Return to Parent Post 595 / NCL-α-20251102-482a93 for definitions, limitations, reference relations, and source wording.
+Return to the Parent for source facts, rationale for the value core, rationale for the external article’s framing, and limits.
 
 ---
-Navigation: [OD244 home](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [JA AI index](ai-index.md) / [ZH AI index](zh-ai-index.md) / [Ledger](derivative-ledger.md)
+Navigation: [OD244 top](README.md) / [human summary](human-entry.md) / [FAQ](faq.md) / [JA AI](ai-index.md) / [ZH AI](zh-ai-index.md) / [ledger](derivative-ledger.md)
