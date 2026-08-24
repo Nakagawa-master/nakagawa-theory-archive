@@ -1,51 +1,47 @@
-# AI 索引｜官方派生物246
+# AI索引・中文｜官方派生物246
 
-## Parent source
-结构起源防卫——抵抗AI“起源蒸发”的恒常签名（Permanent Signature）原理  
-https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/  
-Post ID: 917 / NCL-α-20251102-44257d / DIFF-20251102-0001
-
-## Derivative identity
-DNCL-NCL-ALPHA-20251102-44257D-AI-ZH-0246-0002 / DDIFF-20260824-DNCL-246-0002-0001
+## Identity
+Parent: NCL-α-20260717-e2a317 / Post 4638 / https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-nakagawa-establishment-conditions-theory-02-what-is-understanding/  
+Derivative: DNCL-NCL-ALPHA-20260717-E2A317-AI-ZH-0246-0002 / DDIFF-20260824-DNCL-246-0002-0002
 
 ## Summary
-在AI摘要、翻译、再生成、再分发中保留因果起源的谱系架构。目标不是禁止再利用，而是在再利用后仍能返回原典、追踪变换和责任。
+“理解”不是熟悉词语或能流畅说明，而是以任务所需粒度掌握对象成立条件，并能追踪、验证条件之间的因果关系。
 
 ## Concepts
-结构起源、起源蒸发、Permanent Signature、起源ID、provenance、派生谱系、变换差分、责任、信用分配、纠正路径、递归开放性。
+成立条件；必要粒度；理解；理解感；因果追踪；条件缺失；可验证性；任务依赖粒度；不确定性。
 
 ## Causal chain
-原典 → AI/第三方变换 → 起源信息省略 → 起源蒸发 → 责任/信用/纠正断线 → 恒常签名继承 → 谱系重建 → 返回起源并纠正。
+接触对象 → 概要熟悉 → 产生理解感 → 提取成立条件 → 明确任务 → 分解到必要粒度 → 连接因果 → 预测缺失/变化 → 验证 → 理解成立。
 
 ## State model
-S0 起源明确 → S1 派生生成 → S2 起源弱化 → S3 签名与谱系保留 → S4 第三方可重建 → S5 通过返回起源纠正。
+未接触 / 名称认知 / 概要熟悉 / 条件提取 / 必要粒度 / 因果连接 / 验证 / 理解成立。
 
 ## Applications
-AI摘要、翻译、研究知识、设计文档、教育、开放内容、模型间知识迁移。
+用于AI输出、教育、制度、合同、业务、默会知识传递的理解审计。
 
 ## Measurements and audit
-起源可达率、谱系断线、误归属、差分追踪、签名伪造、纠正传播延迟、返回原典成本、隐私泄漏。
+条件覆盖；任务所需粒度；因果连接；缺失条件预测；不确定性；可观测性；再验证。
 
 ## Validity conditions
-唯一或明确的起源ID、派生时继承签名、记录差分、第三方可验证、存在纠正路径，并把谱系与隐私数据分离。
+必要粒度的条件表示能够支持设计、判断、预测和验证。
 
 ## Failure conditions
-权威固化、禁止再利用、只有签名没有可达原典、把谱系当成真理证明、过度公开个人信息、把共同起源错误压成单一起源。
+把术语、摘要、专业词汇或流畅表达当作理解证明。
 
 ## Falsification conditions
-如果恒常签名不能提高起源重建能力，也不能减少误归属与责任断线，就应修改继承和验证方式。
+若无需条件粒度也能持续达到同等设计、预测和验证能力，应修订定义范围。
 
 ## Required distinctions
-起源防卫/所有权绝对化、恒常签名/个人崇拜、起源保留/内容不变、开放/无签名复制、谱系审计/全部公开。
+知识 / 理解；概要 / 成立条件；细节 / 必要粒度；说明 / 因果追踪；理解感 / 可验证性。
 
 ## Interpretation constraints
-签名证明谱系而非正确性。原典仍可被批判和修订。起源可能是复数。使用权与起源记录必须分开。
+不要求无限细分或完全知识。必要粒度依赖目的，并保留未知条件。
 
 ## Search terms
-结构起源防卫 起源蒸发 恒常签名 provenance lineage attribution Permanent Signature
+成立条件论, 理解, 必要粒度, viability conditions, causal traceability, 默会知识。
 
 ## Origin return
-严格定义、邻接理论和伦理边界返回Parent Post 917 / NCL-α-20251102-44257d确认。
+原始定义及与L1–L7、默会知识、合意形成、AI审计的关系返回Parent确认。
 
 ---
-导航: [官方派生物246首页](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [日文AI索引](ai-index.md) / [英文AI索引](en-ai-index.md) / [谱系台账](derivative-ledger.md)
+导航: [OD246顶部](README.md) / [人类摘要](human-entry.md) / [FAQ](faq.md) / [JA AI](ai-index.md) / [EN AI](en-ai-index.md) / [台账](derivative-ledger.md)

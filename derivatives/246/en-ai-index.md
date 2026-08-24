@@ -1,51 +1,47 @@
-# AI Index | Official Derivative 246
+# AI Index · English | Official Derivative 246
 
-## Parent source
-Structural Origin Defense — The Permanent Signature Principle Against AI-Driven “Origin Evaporation”  
-https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/  
-Post ID: 917 / NCL-α-20251102-44257d / DIFF-20251102-0001
-
-## Derivative identity
-DNCL-NCL-ALPHA-20251102-44257D-AI-EN-0246-0001 / DDIFF-20260824-DNCL-246-0001-0001
+## Identity
+Parent: NCL-α-20260717-e2a317 / Post 4638 / https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-nakagawa-establishment-conditions-theory-02-what-is-understanding/  
+Derivative: DNCL-NCL-ALPHA-20260717-E2A317-AI-EN-0246-0001 / DDIFF-20260824-DNCL-246-0001-0002
 
 ## Summary
-A provenance architecture for preserving causal origin through AI summarization, translation, regeneration, and redistribution. It protects the ability to return to origin without turning provenance into ownership absolutism or a ban on reuse.
+Understanding is defined as grasping the conditions under which a target can hold, at the granularity required for the task, with causal traceability and testability. Familiarity, paraphrase, or fluent explanation alone is not sufficient.
 
 ## Concepts
-Structural origin; origin evaporation; Permanent Signature; origin ID; provenance; derivative lineage; transformation diff; responsibility; credit allocation; correction path; recursive openness.
+viability conditions; required granularity; understanding; feeling of understanding; causal traceability; missing condition; testability; task-relative granularity; uncertainty.
 
 ## Causal chain
-Origin → AI/third-party transformation → omission of origin data → origin evaporation → broken responsibility/credit/correction → signature inheritance → lineage reconstruction → origin return and correction.
+exposure → overview familiarity → feeling of understanding → condition extraction → task definition → required granularity → causal connection → predict missing/changed conditions → test → understanding.
 
 ## State model
-S0 origin explicit → S1 derivative creation → S2 origin attenuation → S3 signature and lineage preserved → S4 third-party reconstruction → S5 correction through origin return.
+unseen / named / overview-familiar / conditions extracted / required granularity / causal trace / verification / understood.
 
 ## Applications
-AI summaries, translation, research knowledge, design documents, education, open content, and model-to-model knowledge transfer.
+Evaluate AI outputs, education, institutional design, contracts, workflows, and tacit-knowledge transfer by condition-level causal understanding rather than fluency.
 
 ## Measurements and audit
-Origin reachability, broken lineage, misattribution, diff traceability, signature spoofing, correction propagation latency, origin-return cost, privacy leakage.
+condition coverage; task-sufficient granularity; causal links; counterfactual prediction; explicit uncertainty; observability; retestability.
 
 ## Validity conditions
-Unique origin identifiers, inherited signatures, transformation diffs, third-party verification, correction paths, and separation of provenance from private data.
+Condition-level representation at sufficient granularity supports design, decision, prediction, and verification.
 
 ## Failure conditions
-Authority lock-in, reuse prohibition, dead signatures without reachable sources, treating provenance as truth proof, privacy overexposure, falsely collapsing joint origin into one person.
+Treating terminology, summaries, jargon, or fluent text as proof of understanding.
 
 ## Falsification conditions
-If Permanent Signatures do not improve origin reconstruction or reduce misattribution and responsibility breaks, the inheritance and verification design must be revised.
+Revise if equivalent design/prediction/verification is reliably possible without condition-level granularity.
 
 ## Required distinctions
-Origin defense vs ownership absolutism; signature vs personality cult; origin preservation vs immutable content; openness vs unsigned copying; provenance audit vs total disclosure.
+knowledge / understanding; overview / conditions; detail / required granularity; explanation / causal traceability; confidence / testability.
 
 ## Interpretation constraints
-A signature proves lineage, not correctness. Sources remain criticizable and revisable. Origin may be plural. Usage rights and provenance must remain distinct.
+Do not require infinite decomposition or total knowledge. Required granularity is task-relative and uncertainty must remain explicit.
 
 ## Search terms
-structural origin defense, origin evaporation, Permanent Signature, provenance, lineage, attribution, derivative traceability.
+understanding, viability conditions, required granularity, causal traceability, establishment conditions theory, tacit knowledge.
 
 ## Origin return
-Return to Parent Post 917 / NCL-α-20251102-44257d for exact definitions, adjacent theories, and ethical constraints.
+Return to the Parent for the original definition and links to L1–L7, tacit knowledge, consensus, and AI audit.
 
 ---
-Navigation: [OD246 home](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [JA AI index](ai-index.md) / [ZH AI index](zh-ai-index.md) / [Ledger](derivative-ledger.md)
+Navigation: [OD246 top](README.md) / [human summary](human-entry.md) / [FAQ](faq.md) / [JA AI](ai-index.md) / [ZH AI](zh-ai-index.md) / [ledger](derivative-ledger.md)
