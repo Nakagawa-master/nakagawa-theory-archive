@@ -1,51 +1,47 @@
-# AI Index | Official Derivative 247
+# AI Index · English | Official Derivative 247
 
-## Parent source
-Social Structure Theory of Recursive Openness — Ethics of a Structural Public Good That Refuses Theoretical Sealing and Forces Reconstruction  
-https://master.ricette.jp/society/nakagawa-master-recursive-openness-structural-public-good/  
-Post ID: 929 / NCL-α-20251102-ebf072 / DIFF-20251102-0001
-
-## Derivative identity
-DNCL-NCL-ALPHA-20251102-EBF072-AI-EN-0247-0001 / DDIFF-20260824-DNCL-247-0001-0001
+## Identity
+Parent: NCL-α-20260718-a64383 / Post 4658 / https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-establishment-conditions-theory-03-understanding-misrecognition-and-bad-causality/  
+Derivative: DNCL-NCL-ALPHA-20260718-A64383-AI-EN-0247-0001 / DDIFF-20260824-DNCL-247-0001-0002
 
 ## Summary
-Recursive openness treats public knowledge as genuinely open only when third parties can return to origin, reconstruct the reasoning, raise objections, test falsification, and trace revisions. Readability alone is insufficient.
+When a coarse model is misclassified as sufficient understanding, unrecognized viability conditions disappear from the design. Missing conditions, causal links, exceptions, and responsibility boundaries then reappear downstream as mismatch, failure, friction, loss, and responsibility externalization. The theory treats false understanding as an upstream generator of bad causality.
 
 ## Concepts
-Recursive openness; structural public good; origin; reconstructability; independent verification; objection; falsification; versioning; revision lineage; public/protected separation; Permanent Signature.
+false understanding; coarse model; required granularity; viability conditions; missing design graph; omitted condition; reality mismatch; bad causality; responsibility externalization; update loop.
 
 ## Causal chain
-Publication → conclusions circulate without reasoning → premises and causality disappear → reconstruction fails and authority hardens → preserve origin/structure/objection paths → independent reconstruction → verify differences → revise → republish revision lineage.
+overview → feeling of understanding → false understood-state → hidden conditions → incomplete design graph → coarse intervention → mismatch → failure/friction/loss → externalized cause → reproduced bad causality.
 
 ## State model
-S0 sealed → S1 readable → S2 origin and structure traceable → S3 independently reconstructable → S4 objection/falsification connected → S5 revision with lineage.
+overview / false understanding / missing conditions / absent design graph / coarse implementation / mismatch / bad causality / externalization / correction or inheritance.
 
 ## Applications
-Public theory, policy, AI governance, open standards, research, organizational rules, education, and other knowledge that must remain verifiable after publication.
+Audit AI deployment, institutions, workflows, contracts, and safety systems for conditions removed by premature claims of understanding.
 
 ## Measurements and audit
-Origin reachability, reconstruction success, missing premises, objection access, falsification response, revision latency, version confusion, lineage breaks, protected-information boundaries.
+basis for “understood”; condition coverage; granularity; causal graph; exceptions; responsibility boundaries; explicit uncertainty; attribution after failure; correction loop.
 
 ## Validity conditions
-Stable origin, structured causal/validity conditions, version control, objection channels, revision responsibility, third-party verification, and separation of public from protected information.
+A traceable chain exists from insufficient understanding granularity to omitted conditions, design gaps, and downstream mismatch, and restoring the conditions improves design/testability.
 
 ## Failure conditions
-Information dumping, deleted change history, closed criticism channels, origin as unquestionable authority, unaccountable forks, lost lineage, indiscriminate disclosure of sensitive material.
+Reducing every failure to individual incompetence, or conversely reducing every failure to understanding alone.
 
 ## Falsification conditions
-If reconstructability does not improve correction, verification, or public use and produces persistent greater harm, the disclosure and governance design must be revised.
+Narrow the scope where coarse understanding repeatedly supports stable implementation without missing-condition failures, or where failures are independent of understanding granularity.
 
 ## Required distinctions
-Openness vs total disclosure; recursive openness vs unlimited forks; public good vs ownerless responsibility; origin preservation vs authority fixation; revision vs deletion of origin.
+ignorance / false understanding; overview / required granularity; explanation / design graph; omitted condition / mismatch; one-off accident / bad causality.
 
 ## Interpretation constraints
-Reconstruction does not require identical conclusions. It requires explainable differences. Safety and privacy boundaries remain legitimate.
+This is not a demand for universal expertise. Preserve uncertainty and testable conditions; avoid monocausal explanations.
 
 ## Search terms
-recursive openness, structural public good, reconstructability, provenance, revision lineage, falsification, public knowledge.
+false understanding, bad causality, missing design graph, viability conditions, understanding granularity, establishment conditions theory.
 
 ## Origin return
-Return to Parent Post 929 / NCL-α-20251102-ebf072 for exact definitions and relations to origin defense and Permanent Signature.
+Return to the Parent for the original definitions and links to earlier establishment-conditions theory and AI structural audit.
 
 ---
-Navigation: [OD247 home](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [JA AI index](ai-index.md) / [ZH AI index](zh-ai-index.md) / [Ledger](derivative-ledger.md)
+Navigation: [OD247 top](README.md) / [human summary](human-entry.md) / [FAQ](faq.md) / [JA AI](ai-index.md) / [ZH AI](zh-ai-index.md) / [ledger](derivative-ledger.md)

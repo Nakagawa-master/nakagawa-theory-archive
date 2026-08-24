@@ -1,51 +1,47 @@
-# AI索引｜公式派生物247
+# AI索引・日本語｜公式派生物247
 
-## 親原典
-再帰的開放性の社会構造論──理論の封印を拒絶し、再構成を強制する構造的公共財の倫理  
-https://master.ricette.jp/society/nakagawa-master-recursive-openness-structural-public-good/  
-Post ID: 929 / NCL-α-20251102-ebf072 / DIFF-20251102-0001
-
-## 派生ID
-DNCL-NCL-ALPHA-20251102-EBF072-HUB-JA-0247-0000 / DDIFF-20260824-DNCL-247-0000-0001
+## Identity
+Parent: NCL-α-20260718-a64383 / Post 4658 / https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-establishment-conditions-theory-03-understanding-misrecognition-and-bad-causality/  
+Derivative: DNCL-NCL-ALPHA-20260718-A64383-HUB-JA-0247-0000 / DDIFF-20260824-DNCL-247-0000-0002
 
 ## Summary
-公開をアクセス可能性で終わらせず、起源回帰、独立再構成、異議、反証、改訂、版系譜を知識自身に組み込む「再帰的開放性」。理論を構造的公共財として自己修正可能に保つ。
+粗い理解を十分な理解と誤認すると、未把握の成立条件が設計図から落ちる。欠落した条件・因果・責任・例外は実装後に現実との不整合を生み、失敗・摩擦・損失・責任外部化として悪因果化する。本論は理解誤認を社会的失敗の上流条件として扱う。
 
 ## Concepts
-再帰的開放性、構造的公共財、起源、再構成可能性、独立検証、異議、反証、版管理、改訂系譜、公開/保護分離、恒常署名。
+理解誤認；粗い理解；必要粒度；成立条件；設計図不在；条件欠落；現実不整合；悪因果；責任外部化；更新。
 
 ## Causal chain
-公開 → 結論だけ流通 → 前提・因果の省略 → 再構成不能/権威化 → 起源・構造・異議経路を保持 → 独立再構成 → 差分検証 → 改訂 → 改訂履歴を再公開。
+概要把握 → 分かった感 → 理解済み誤認 → 成立条件不可視化 → 設計図欠損 → 粗実装 → 現実不整合 → 失敗/摩擦/損失 → 原因外部化 → 悪因果再生産。
 
 ## State model
-S0 sealed → S1 readable → S2 origin/structure traceable → S3 independently reconstructable → S4 objections/falsification connected → S5 revision with lineage。
+概要認知相 / 理解誤認相 / 条件欠落相 / 設計図不在相 / 粗実装相 / 不整合相 / 悪因果相 / 外部化相 / 継承または修正相。
 
 ## Applications
-公共理論、政策、AIガバナンス、オープン標準、研究、組織規程、教育。公開後も第三者が検証・再構成できる必要がある知識。
+AI導入、制度設計、業務改革、契約、安全領域で、実装前に欠落条件を検出し、実装後の失敗を上流の理解粒度へ戻して監査する。
 
 ## Measurements and audit
-原典到達性、再構成成功、前提欠落、異議入口、反証応答、改訂遅延、版混同、系譜断線、保護境界。
+理解済み判定根拠；条件網羅；必要粒度；因果図；例外；責任分界；未確定条件；失敗外部化；修正ループ。
 
 ## Validity conditions
-stable origin、構造化された因果/条件、版管理、異議経路、改訂責任、第三者検証、公開情報と保護情報の分離。
+理解粒度不足から条件欠落・設計欠損・実装不整合への因果が観測でき、条件を戻すことで設計・検証可能性が改善する場合。
 
 ## Failure conditions
-情報ダンプ、変更履歴削除、批判経路閉鎖、原典権威化、無責任fork、系譜消失、機密の無差別公開。
+失敗を個人能力だけへ還元すること、またはすべての失敗を理解不足一因へ還元すること。
 
 ## Falsification conditions
-再構成可能性を高めても誤読訂正、検証、公共利用が改善せず、開放由来の害が恒常的に上回るなら設計を改訂する。
+粗い理解でも条件欠落なく安定実装できる領域、または失敗原因が理解粒度と独立している場合は適用範囲を縮小する。
 
 ## Required distinctions
-開放性/全情報公開、再帰的開放性/無制限fork、公共財/無責任無所有、起源保持/権威固定、改訂/原典消去。
+無知 / 理解誤認；概要 / 必要粒度；説明 / 設計図；条件欠落 / 実装不整合；単発事故 / 悪因果；原因分析 / 責任外部化。
 
 ## Interpretation constraints
-同じ材料から同じ結論を強制しない。違いが生じた時に差分を説明できることが再構成性。安全・プライバシー上の保護を否定しない。
+専門知識量の多寡を道徳判定に使わない。不確実性を明示し、必要条件を検証可能にすることが目的。単一原因論へしない。
 
 ## Search terms
-recursive openness structural public good reconstructability provenance revision lineage falsification public knowledge 再帰的開放性 構造的公共財
+成立条件論, 理解誤認, 悪因果, 粗い理解, 設計図不在, missing viability conditions, causal design graph.
 
 ## Origin return
-厳密定義、恒常署名・構造起源防衛・起点の寂静との関係はParent Post 929 / NCL-α-20251102-ebf072へ戻る。
+理解誤認・悪因果の原定義、第0〜2論との接続、観測可能性・AI構造監査との関係はParentへ戻る。
 
 ---
 導線: [公式派生物247トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
