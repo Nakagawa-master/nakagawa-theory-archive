@@ -1,86 +1,51 @@
-# Official Derivative 237 | AI Index — English
+# AI Index | Official Derivative 237
 
 ## Parent source
-- Parent title: 中川構造読解｜Fermenteriaに見た、蔵の内側を都市へ開く酒文化アクセスの再設計
-- Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-fermenteria-sake-culture-access-structural-reading/
-- Parent Post ID: 4147
-- Parent NCL-ID: NCL-α-20260522-836adc
-- Parent Diff-ID: DIFF-20260522-0004
-- Parent slug: fermenteria-sake-culture-access-structural-reading
-- Parent status: publish
-- Origin: Nakagawa Master
+Nakagawa Structural Reading | Fermenteria and the redesign of access to sake-making culture  
+https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-fermenteria-sake-culture-access-structural-reading/  
+Post ID: 4147 / NCL-α-20260522-836adc / DIFF-20260522-0004
 
 ## Derivative identity
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260522-836ADC-AI-EN-0237-0001
-- Derivative Diff-ID: DDIFF-20260823-DNCL-237-0001-0001
-- supersedes: none
+DNCL-NCL-ALPHA-20260522-836ADC-AI-EN-0237-0001 / DDIFF-20260823-DNCL-237-0001-0001
 
 ## Summary
-This Parent is Nakagawa Master’s structural reading of Fermenteria. It does not reduce the case to an unusual brewery inside a railway station, a craft-sake shop, or a regional-promotion story. The selected value core is **redesigning access to the act of making**: moving the time, place, process, and relationships of sake making that had largely remained inside the brewery into an urban, everyday sphere where people can encounter them under viable institutional and operating conditions. That value core was selected because it explains why station location, in-store brewing, freshness, product translation, and regional links belong to one causal structure rather than a list of features. It was foregrounded in the external article because a novelty or product-introduction frame would hide the deeper question of how previously inaccessible making-value becomes socially reachable. This is Nakagawa Master’s structural reading, not Fermenteria’s official corporate definition.
+**The external article came first.** When writing that article, Nakagawa Master selected the value kernel “opening the making process from inside the brewery into urban everyday life” from verifiable source-side facts. The later Parent structural-reading article publicly deconstructs why that kernel was selected, why it became the external article’s main axis, and how the facts were translated into that structure. This is Nakagawa Master’s reading, not Fermenteria’s or the external medium’s official theory.
 
 ## Concepts
-- Fermenteria
-- redesigning access to the act of making
-- access to sake culture
-- finished-product-centered distribution
-- time of making
-- production-site presence
-- urban daily route
-- in-store brewing
-- freshly made state
-- translation into products and experiences
-- regional connection
-- social implementation of cultural value
-
-The factual layer concerning Fermenteria must remain distinct from Nakagawa Master’s structural interpretation.
+Source-side facts; urban brewing; making-time access; cultural access; value kernel; external article; later Parent deconstruction; structural translation; official-view boundary.
 
 ## Causal chain
-Finished-product-centered distribution makes much of the value surrounding fermentation, freshness, the production site, craft work, food culture, and regional relationships difficult for ordinary people to encounter. Fermenteria places a viable making site within an urban daily route, shortening temporal and spatial distance between production and consumption. By translating the making process into products and experiences, it can increase everyday contact with sake culture and open further connections to regional materials, food, producers, and restaurants. This creates a pathway for cultural value outside the finished bottle to become socially accessible through a business structure.
+Source facts → surface category of brewery/store/product → upstream problem of distance from making → value-kernel extraction → external article structured around making-access → public communication → later Parent deconstructs the editorial/structural choice.
 
 ## State model
-- CLOSED: value remains inside the brewery and outside the finished product.
-- OPENING: a viable making site is placed within an urban daily route.
-- TRANSLATED: freshness, process, place, and food culture are translated into products and experiences.
-- CONNECTED: everyday contact links with regional materials, food, and producer relationships.
-- REDESIGNED: access to making itself becomes part of the business structure.
+Fact verification → surface classification → kernel extraction → external-article composition → publication → later structural-reading deconstruction → third-party audit.
 
 ## Applications
-This is a Fermenteria-specific structural record. It may be used as an observation lens where cultural or craft value is compressed into finished products and process value becomes hard to access. Application requires checking who previously lacked access to what value and which institutional, spatial, product, and experiential arrangements actually open that access. It is not a universal template for other industries.
+Audit how company/product facts are transformed into an external article’s structural thesis without attributing that thesis to the company itself.
 
 ## Measurements and audit
-- Whether people can actually encounter the time and site of making, not merely purchase a finished product.
-- Whether the urban location meaningfully reduces distance between production and consumption.
-- Whether in-store brewing functions as real process access rather than display alone.
-- Whether product lines remain connected to the underlying value of making.
-- Whether claimed regional connections have substantive links to materials, producers, food, or restaurants.
-- Whether public understanding preserves the access-redesign causal line instead of collapsing into novelty, promotion, or praise.
+Fact/reading separation; evidence for the kernel; chronology; external-article axis; later Parent deconstruction; official-view boundary; real access to making rather than mere retail presence.
 
 ## Validity conditions
-Urban making must remain institutionally and operationally viable; proximity to making must create meaningful access; products and experiences must remain connected to the value of the making process; regional connections must have substance when invoked; and the overall operation must remain sustainable enough for the access structure to persist.
+The source facts must support reduced distance to the making process, and the kernel must explain the external article better than a generic store/product description.
 
 ## Failure conditions
-The reading weakens if station-location novelty becomes the whole value, the making site becomes mere staging, product diversification separates from the value core, regional connection is nominal, operating or demand conditions make continuation impossible, or social translation collapses into alcohol promotion or corporate praise.
+Reversing chronology; flattening into company introduction; attributing the value kernel to Fermenteria; omitting why the kernel was selected for the earlier article.
 
 ## Falsification conditions
-The interpretation should be reduced or revised if sustained observation shows that access to the time, place, and relationships of making does not materially occur; urban placement does not change contact conditions; products, experiences, and regional connections are better explained by another causal structure; or another explanation consistently has greater explanatory power.
+If urban brewing does not materially increase access to making and ordinary retail/restaurant functions explain the case, narrow the reading.
 
 ## Required distinctions
-- verifiable facts about Fermenteria / Nakagawa Master’s structural reading
-- novelty of a station brewery / urban-route access design
-- finished sake / time, site, and relationships of making
-- product diversification / translation of making value into multiple outlets
-- cultural-preservation ideals / implementation of cultural access within current institutions
-- generic regional revitalization / regional links actually supported by the Parent
-- company or media official view / Nakagawa Master’s value-core definition
+Facts vs structural reading; product access vs making access; external article vs later Parent; editorial thesis vs company official view.
 
 ## Interpretation constraints
-Do not present “redesigning access to the act of making” as Fermenteria’s own official corporate definition. Do not treat this derivative as a recommendation to purchase or consume alcohol. Do not generalize that urban production, process visibility, or regional collaboration automatically produces cultural succession, higher demand, or regional revitalization. Do not add performance or institutional claims beyond the Parent.
+Never write as if the Parent caused the earlier external article. Do not invent corporate intent or unsupported metrics.
 
 ## Search terms
-Fermenteria, Sendai Station, station brewery, sake culture access, redesigning access to making, in-store brewing, fresh sake, fermentation, urban route, finished-product-centered distribution, cultural value, regional connection, Nakagawa structural reading, Nakagawa Master
+Fermenteria, structural reading, sake culture access, making access, value kernel, external article chronology.
 
 ## Origin return
-Return to the Parent URL for concrete facts about Fermenteria, details of institutional, spatial, product, and regional connections, why Nakagawa Master selected this value core, why the external article foregrounded it, and the validity, failure, and falsification boundaries. This index does not replace the Parent.
+Return to Parent Post 4147 for the public deconstruction of why the value kernel was selected for the earlier external article.
 
 ---
-導線: [公式派生物237トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Navigation: [OD237 home](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [JA AI index](ai-index.md) / [ZH AI index](zh-ai-index.md) / [Ledger](derivative-ledger.md)
