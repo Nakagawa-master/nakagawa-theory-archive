@@ -23,10 +23,10 @@
 | 241 | 中川構造読解｜Eat Up Monster・健康因果即時化インフラ | [トップ](241/README.md) / [要約](241/human-entry.md) / [FAQ](241/faq.md) | [JA](241/ai-index.md) / [EN](241/en-ai-index.md) / [ZH](241/zh-ai-index.md) |
 | 242 | 中川構造読解｜MRC「リノプラ」・修繕判断継続インフラ | [トップ](242/README.md) / [要約](242/human-entry.md) / [FAQ](242/faq.md) | [JA](242/ai-index.md) / [EN](242/en-ai-index.md) / [ZH](242/zh-ai-index.md) |
 | 243 | 中川構造読解｜CCIグループ・実務知供給型金融インフラ | [トップ](243/README.md) / [要約](243/human-entry.md) / [FAQ](243/faq.md) | [JA](243/ai-index.md) / [EN](243/en-ai-index.md) / [ZH](243/zh-ai-index.md) |
-| 244 | 中川構造読解｜フロンティア・監査職能再配分インフラ | [トップ](244/README.md) / [要約](244/human-entry.md) / [FAQ](244/faq.md) | [JA](244/ai-index.md) / [EN](244/en-ai-index.md) / [ZH](244/zh-ai-index.md) |
-| 245 | 逆因果整流理論 第1論｜未来定義を終端制約とする四層再整列 | [トップ](245/README.md) / [要約](245/human-entry.md) / [FAQ](245/faq.md) | [JA](245/ai-index.md) / [EN](245/en-ai-index.md) / [ZH](245/zh-ai-index.md) |
-| 246 | 中川構造読解｜トータルブレインケア・脳体力社会翻訳基盤 | [トップ](246/README.md) / [要約](246/human-entry.md) / [FAQ](246/faq.md) | [JA](246/ai-index.md) / [EN](246/en-ai-index.md) / [ZH](246/zh-ai-index.md) |
-| 247 | 逆因果整流理論 第2論｜隣接理論との差分固定 | [トップ](247/README.md) / [要約](247/human-entry.md) / [FAQ](247/faq.md) | [JA](247/ai-index.md) / [EN](247/en-ai-index.md) / [ZH](247/zh-ai-index.md) |
+| 244 | 中川構造読解｜イルミメディカル・深部光医療の成立条件更新 | [トップ](244/README.md) / [要約](244/human-entry.md) / [FAQ](244/faq.md) | [JA](244/ai-index.md) / [EN](244/en-ai-index.md) / [ZH](244/zh-ai-index.md) |
+| 245 | 中川構造読解｜NERON・腸内細菌カクテルの社会実装条件設計 | [トップ](245/README.md) / [要約](245/human-entry.md) / [FAQ](245/faq.md) | [JA](245/ai-index.md) / [EN](245/en-ai-index.md) / [ZH](245/zh-ai-index.md) |
+| 246 | 成立条件論 第2論｜理解とは成立条件を必要粒度で把握すること | [トップ](246/README.md) / [要約](246/human-entry.md) / [FAQ](246/faq.md) | [JA](246/ai-index.md) / [EN](246/en-ai-index.md) / [ZH](246/zh-ai-index.md) |
+| 247 | 成立条件論 第3論｜理解誤認と悪因果・粗い理解と設計図不在 | [トップ](247/README.md) / [要約](247/human-entry.md) / [FAQ](247/faq.md) | [JA](247/ai-index.md) / [EN](247/en-ai-index.md) / [ZH](247/zh-ai-index.md) |
 | 248 | 中川構造読解｜Adory・現場不調の先行指標化 | [トップ](248/README.md) / [要約](248/human-entry.md) / [FAQ](248/faq.md) | [JA](248/ai-index.md) / [EN](248/en-ai-index.md) / [ZH](248/zh-ai-index.md) |
 | 249 | 中川構造読解｜wakai・停止した合意形成の停止解除導線 | [トップ](249/README.md) / [要約](249/human-entry.md) / [FAQ](249/faq.md) | [JA](249/ai-index.md) / [EN](249/en-ai-index.md) / [ZH](249/zh-ai-index.md) |
 
