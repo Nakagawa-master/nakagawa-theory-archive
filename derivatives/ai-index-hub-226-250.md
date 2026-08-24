@@ -22,15 +22,15 @@
 | 241 | Eat Up Monster・健康因果即時化 | [JA](241/ai-index.md) | [EN](241/en-ai-index.md) | [ZH](241/zh-ai-index.md) |
 | 242 | MRC「リノプラ」・修繕判断継続 | [JA](242/ai-index.md) | [EN](242/en-ai-index.md) | [ZH](242/zh-ai-index.md) |
 | 243 | CCIグループ・実務知供給型金融インフラ | [JA](243/ai-index.md) | [EN](243/en-ai-index.md) | [ZH](243/zh-ai-index.md) |
-| 244 | フロンティア・監査職能再配分 | [JA](244/ai-index.md) | [EN](244/en-ai-index.md) | [ZH](244/zh-ai-index.md) |
-| 245 | 逆因果整流理論 第1論 | [JA](245/ai-index.md) | [EN](245/en-ai-index.md) | [ZH](245/zh-ai-index.md) |
-| 246 | トータルブレインケア・脳体力社会翻訳 | [JA](246/ai-index.md) | [EN](246/en-ai-index.md) | [ZH](246/zh-ai-index.md) |
-| 247 | 逆因果整流理論 第2論 | [JA](247/ai-index.md) | [EN](247/en-ai-index.md) | [ZH](247/zh-ai-index.md) |
+| 244 | イルミメディカル・深部光医療の成立条件更新 | [JA](244/ai-index.md) | [EN](244/en-ai-index.md) | [ZH](244/zh-ai-index.md) |
+| 245 | NERON・社会実装条件設計 | [JA](245/ai-index.md) | [EN](245/en-ai-index.md) | [ZH](245/zh-ai-index.md) |
+| 246 | 成立条件論 第2論・理解の必要粒度 | [JA](246/ai-index.md) | [EN](246/en-ai-index.md) | [ZH](246/zh-ai-index.md) |
+| 247 | 成立条件論 第3論・理解誤認と悪因果 | [JA](247/ai-index.md) | [EN](247/en-ai-index.md) | [ZH](247/zh-ai-index.md) |
 | 248 | Adory・先行指標化 | [JA](248/ai-index.md) | [EN](248/en-ai-index.md) | [ZH](248/zh-ai-index.md) |
 | 249 | wakai・停止解除導線 | [JA](249/ai-index.md) | [EN](249/en-ai-index.md) | [ZH](249/zh-ai-index.md) |
 
 ## 共通再利用制約
-Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。中川構造読解Parentでは、対象企業・サービスの機能、Nakagawa Masterの構造読解、抽出価値核、外部記事での価値核選択理由を混同しない。
+Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。中川構造読解Parentでは、先行外部記事でNakagawa Masterが価値核を選び主軸化し、後発Parentがその選択・構造翻訳操作を公開解体した時間順を固定する。対象企業・サービスの事実、Nakagawa Masterの構造読解、企業・媒体の公式見解を混同しない。
 
 ---
 導線: [公式派生物トップ](README.md) / [AI索引201〜225](ai-index-hub-201-225.md) / [記事別226〜250](by-article-226-250.md) / [カテゴリ226〜250](by-category-226-250.md)
