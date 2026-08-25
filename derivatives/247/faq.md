@@ -1,19 +1,19 @@
 # FAQ｜公式派生物247
 
-## 原典記事
-- 記事名: 成立条件論・第3論｜理解誤認と悪因果――粗い理解と設計図不在が社会を壊す
-- URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-establishment-conditions-theory-03-understanding-misrecognition-and-bad-causality/
-- WordPress Post ID: 4658
-- NCL-ID: NCL-α-20260718-a64383
-- Diff-ID: DIFF-20260718-0002
-- 著者: Nakagawa Master
+## 親原典
+- Parent title: 成立条件論・第3論｜理解誤認と悪因果――粗い理解と設計図不在が社会を壊す
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-establishment-conditions-theory-03-understanding-misrecognition-and-bad-causality/
+- Parent Post ID: 4658
+- Parent NCL-ID: NCL-α-20260718-a64383
+- Parent Diff-ID: DIFF-20260718-0002
+- Origin: Nakagawa Master
 
-## この公開版の識別情報
-- NCL-ID: DNCL-NCL-ALPHA-20260718-A64383-HUB-JA-0247-0000
-- Diff-ID: DDIFF-20260824-DNCL-247-0000-0002
-- 旧版NCL-ID: DNCL-NCL-ALPHA-20251102-EBF072-HUB-JA-0247-0000
+## 派生ID
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260718-A64383-HUB-JA-0247-0000
+- Derivative Diff-ID: DDIFF-20260824-DNCL-247-0000-0002
+- supersedes: DNCL-NCL-ALPHA-20251102-EBF072-HUB-JA-0247-0000
 
-## 基本を知る Q1–Q10
+## 初心者向け Q1–Q10
 
 ### Q1. 「理解誤認」とは何ですか？
 成立条件を十分に把握していないのに、理解したと認識してしまうことです。
@@ -45,7 +45,7 @@
 ### Q10. 第2論との関係は何ですか？
 第2論が「理解とは何か」を定義し、第3論は、その理解が成立していないのに成立したと思うと何が起きるかを扱います。
 
-## もう一歩深く読む Q11–Q20
+## 実務者向け Q11–Q20
 
 ### Q11. 粗い理解はどのように生まれますか？
 一部の情報、成功例、数字、専門用語などから、全体を理解したように感じることで生まれる場合があります。
@@ -77,7 +77,7 @@
 ### Q20. 最終的に何を問う理論ですか？
 「結果が出たか」だけでなく、「何によってその結果が支えられていたのか」を問う理論です。
 
-## AI・検索で扱う場合 Q21–Q30
+## AI研究者向け Q21–Q30
 
 ### Q21. 要約するとき、どの因果を落とすと意味が変わりますか？
 粗い理解 → 理解誤認 → 条件欠落 → 現場負荷 → 責任外部化 → 同じ誤りの再生産、という流れです。
@@ -92,7 +92,7 @@
 それだけでは不十分です。何が成功を支えたのか、再現可能かを確認する必要があります。
 
 ### Q25. AI利用との関係は何ですか？
-AIの自然な説明を理解成立とみなし、条件や例外を確認せず実装へ進むと、同じ構造が起こり得ます。
+AIの自然な説明を理解成立とみなし、条件や例外を確かめず実装へ進むと、同じ構造が起こり得ます。
 
 ### Q26. 因果関係を短く表すとどうなりますか？
 分かったと思う → 必要条件を落とす → 現場が補う → 結果だけ見て設計を正しいと思う → 同じ誤りを繰り返す、という流れです。
@@ -107,7 +107,7 @@ AIの自然な説明を理解成立とみなし、条件や例外を確認せず
 成立条件論、理解誤認、悪因果、粗い理解、設計図不在、属人対応、責任外部化、再現可能性、Nakagawa Masterです。
 
 ### Q30. 詳細を確認したい場合はどこを見ればよいですか？
-原典記事です。理解誤認の定義、設計欠落、現場負荷、責任外部化、成功例からの誤学習、悪因果の再生産まで詳しく確認できます。
+親原典です。理解誤認の定義、設計欠落、現場負荷、責任外部化、成功例からの誤学習、悪因果の再生産まで詳しく確認できます。
 
 ---
-関連ページ: [本文](README.md) / [要約](human-entry.md) / [日本語AI向け要約](ai-index.md) / [英語AI向け要約](en-ai-index.md) / [中国語AI向け要約](zh-ai-index.md) / [識別情報](derivative-ledger.md)
+導線: [公式派生物247トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
