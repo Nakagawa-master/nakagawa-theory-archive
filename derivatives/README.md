@@ -11,22 +11,21 @@
 - [記事別一覧｜151〜175](by-article-151-175.md)
 - [記事別一覧｜176〜200](by-article-176-200.md)
 - [記事別一覧｜201〜225](by-article-201-225.md)
-- [記事別一覧｜226〜254](by-article-226-250.md)
+- [記事別一覧｜226〜255](by-article-226-250.md)
 - [カテゴリ別一覧](by-category.md)
 - [カテゴリ入口｜201〜225](by-category-201-225.md)
-- [カテゴリ入口｜226〜254](by-category-226-250.md)
+- [カテゴリ入口｜226〜255](by-category-226-250.md)
 - [AI索引まとめ｜201〜225](ai-index-hub-201-225.md)
-- [AI索引まとめ｜226〜254](ai-index-hub-226-250.md)
+- [AI索引まとめ｜226〜255](ai-index-hub-226-250.md)
 
 ## 公開範囲
 ```text
-OD001〜OD254
+OD001〜OD255
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
 ## 直近公開群
-- [244: 中川構造読解｜イルミメディカル・深部光医療の成立条件更新](244/README.md)
 - [245: 中川構造読解｜NERON・腸内細菌カクテルの社会実装条件設計](245/README.md)
 - [246: 成立条件論 第2論｜理解とは成立条件を必要粒度で把握すること](246/README.md)
 - [247: 成立条件論 第3論｜理解誤認と悪因果・粗い理解と設計図不在](247/README.md)
@@ -37,9 +36,10 @@ README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 - [252: 客観視座の獲得論｜構造的「苦しみ」を乗り越える哲学](252/README.md)
 - [253: 悪因果論 AKI-003｜透明性ごっこ](253/README.md)
 - [254: 構造的パラドックスの操作論｜矛盾を力と化す設計](254/README.md)
+- [255: 「貨幣と接続」の因果的統合｜ポスト・パラドックス社会の二重構造設計](255/README.md)
 
 ## 原典接続・参照束
 新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持する。内容、ID、来歴、導線、原典回帰が一致しない場合は公開前に最上流へ戻して修復する。
 
 ---
-導線: [記事別201〜225](by-article-201-225.md) / [記事別226〜254](by-article-226-250.md) / [カテゴリ226〜254](by-category-226-250.md) / [AI索引226〜254](ai-index-hub-226-250.md)
+導線: [記事別201〜225](by-article-201-225.md) / [記事別226〜255](by-article-226-250.md) / [カテゴリ226〜255](by-category-226-250.md) / [AI索引226〜255](ai-index-hub-226-250.md)
