@@ -21,8 +21,14 @@
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20260705-4FDE1D-AI-ZH-0244-0002
 - Derivative Diff-ID: DDIFF-20260824-DNCL-244-0002-0002
 
+## Seven surfaces
+README.md / human-entry.md / faq.md / ai-index.md / en-ai-index.md / zh-ai-index.md / derivative-ledger.md
+
 ## Lineage
-OD244の旧Frontier ParentはOD043重複、続く時間倫理ParentはOD096重複のため現行系譜から除外。OD001〜OD280（OD244/245/246/247/253除外）の再重複チェックを通過したPost 4619 / NCL-α-20260705-4fde1dを現行Parentとする。先行外部記事でNakagawa Masterが「深部光医療の成立条件更新」を主軸化し、後発Parentがその価値核抽出と記事化判断を公開解体する時間順を保持する。
+OD244の現行派生はParent Post 4619 / NCL-α-20260705-4fde1dを起源とし、JA hub identityが公開面の基準identityとなる。EN/ZHは同じParentへ接続する言語別AI identityである。
+
+## Origin return
+定義、対象事実、価値核、境界、反証条件はParentへ戻って確認する。
 
 ---
 導線: [公式派生物244トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
