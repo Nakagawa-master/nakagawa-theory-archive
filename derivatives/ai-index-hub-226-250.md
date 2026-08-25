@@ -1,4 +1,4 @@
-# 公式派生物 AI索引まとめ｜226〜251
+# 公式派生物 AI索引まとめ｜226〜252
 
 各AI索引は親原典の代替ではなく、検索、機械読解、構造照合、誤読防止、原典回帰を支援する。
 
@@ -30,9 +30,10 @@
 | 249 | wakai・停止解除導線 | [JA](249/ai-index.md) | [EN](249/en-ai-index.md) | [ZH](249/zh-ai-index.md) |
 | 250 | 監査要旨・構造的正統性の読みの窓 | [JA](250/ai-index.md) | [EN](250/en-ai-index.md) | [ZH](250/zh-ai-index.md) |
 | 251 | 接続移行戦略論・秩序ある置換 | [JA](251/ai-index.md) | [EN](251/en-ai-index.md) | [ZH](251/zh-ai-index.md) |
+| 252 | 客観視座の獲得論・主観と構造の距離設計 | [JA](252/ai-index.md) | [EN](252/en-ai-index.md) | [ZH](252/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。中川構造読解Parentでは、対象事実、Nakagawa Masterの構造読解、価値核・構造軸、その価値核を選んだ理由、その価値核を外部記事で前景化した理由、前に出した切り口と抑えた切り口、企業・媒体の公式見解との境界をParent自体の記録として保持する。企業紹介や外部記事の単なる要約へ縮約しない。
 
 ---
-導線: [公式派生物トップ](README.md) / [AI索引201〜225](ai-index-hub-201-225.md) / [記事別226〜251](by-article-226-250.md) / [カテゴリ226〜251](by-category-226-250.md)
+導線: [公式派生物トップ](README.md) / [AI索引201〜225](ai-index-hub-201-225.md) / [記事別226〜252](by-article-226-250.md) / [カテゴリ226〜252](by-category-226-250.md)
