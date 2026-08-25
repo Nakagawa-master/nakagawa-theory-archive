@@ -1,62 +1,50 @@
-# AI Index・English｜Official Derivative 246
+# English AI Summary | Official Derivative 246
 
-## Parent source
-- Parent title: 成立条件論・第2論｜理解とは何か⸻理解とは成立条件を必要粒度で把握することである
-- Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-nakagawa-establishment-conditions-theory-02-what-is-understanding/
-- Parent Post ID: 4638
-- Parent NCL-ID: NCL-α-20260717-e2a317
-- Parent Diff-ID: DIFF-20260718-0003
-- Origin: Nakagawa Master
+## Source article
+- Title: 成立条件論・第2論｜理解とは何か⸻理解とは成立条件を必要粒度で把握することである
+- URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-nakagawa-establishment-conditions-theory-02-what-is-understanding/
+- WordPress Post ID: 4638
+- NCL-ID: NCL-α-20260717-e2a317
+- Diff-ID: DIFF-20260718-0003
+- Author: Nakagawa Master
 
-## Derivative identity
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260717-E2A317-AI-EN-0246-0001
-- Derivative Diff-ID: DDIFF-20260824-DNCL-246-0001-0002
-- supersedes: DNCL-NCL-ALPHA-20251102-44257D-HUB-JA-0246-0000
+## Public edition identifiers
+- NCL-ID: DNCL-NCL-ALPHA-20260717-E2A317-AI-EN-0246-0001
+- Diff-ID: DDIFF-20260824-DNCL-246-0001-0002
 
 ## Summary
-Establishment Conditions Theory, Part 2 defines understanding not by information volume, fluent explanation, years of experience, or an AI system's ability to summarize, but by whether the subject grasps the conditions under which the target becomes established at the causal range and granularity required by the question. Part 1 concerns establishment on the target side; Part 2 concerns how far those establishment conditions are grasped on the cognition side.
+This essay defines understanding not as the amount of information a person has, the fluency of an explanation, years of experience, or an AI system’s ability to produce a polished summary. Understanding is defined as grasping the conditions required for something to work, at the scope and level of detail needed for the purpose at hand.
 
-## Concepts
-- Information: names, facts, explanations, experience, AI output; material for understanding, not a sufficient condition.
-- Understanding: grasping establishment conditions at the required causal range and granularity and being able to handle condition differences.
-- Vertical causal range: how far across the causal layers the subject must look for the current question.
-- Understanding granularity: how finely condition differences, sequence, exceptions, friction, and responsibility must be distinguished within that range.
-- Explainability: one observable sign of understanding, not understanding itself.
-- Local understanding: valid understanding within a limited causal range.
-- Unknown range: conditions not yet grasped and explicitly retained as unknown.
+Two dimensions matter. The first is **causal scope**: how much of the chain of conditions relevant to the object’s operation is being seen. The second is **resolution of understanding**: how finely differences among conditions, order, exceptions, friction, and dependencies can be distinguished.
 
-## Causal chain
-Acquire information → develop a feeling of familiarity → identify establishment conditions → determine the necessary vertical causal range → separate condition differences at the necessary granularity → connect causality, order, exceptions, and stopping points → judge establishment/non-establishment when conditions change → retain unknown ranges → reuse the model for judgment, design, explanation, or audit.
+A broad view can still be too coarse. A highly detailed local view cannot automatically be generalized to the whole. The scope and resolution required for explanation may differ from what is needed for design, operation, safety review, or decision-making.
 
-## State model
-unexposed / information acquisition / felt understanding / condition identification / causal-range setting / granularity fit / causal connection / observation and falsification / uncertainty retention / reusable understanding.
+## Key concepts
+- Information: material for understanding, not understanding itself.
+- Enabling conditions: conditions required for an object, process, or institution to function.
+- Causal scope: how far across the relevant causal chain the observer can see.
+- Resolution: how finely condition differences can be distinguished.
+- Local understanding: deep understanding within a limited range; not the same as whole-system understanding.
+- Explainability: possible evidence of understanding, but not identical to understanding.
+- Unknown conditions: factors that remain unobserved or uncertain and should not be treated as already understood.
 
-## Applications
-In institutional design, do not stop at explaining purpose; identify actors, sequence, exceptions, friction, responsibility, and condition changes at the granularity required by the decision. In operational improvement, state the valid scope of a local understanding. In AI evaluation, look beyond fluent summaries and ask whether establishment conditions, condition differences, exceptions, and unknown ranges are retained.
+## Causal sequence
+Acquire information → feel familiar with the subject → identify enabling conditions → connect those conditions causally → determine the necessary scope and resolution → consider how outcomes change when conditions change → state what remains unknown → reach an understanding that can support judgment, design, or verification.
 
-## Measurements and audit
-Check whether information volume is being used as a proxy for understanding; whether establishment conditions can be identified; whether the required causal range is explicit; whether granularity fits the purpose; whether changes in conditions lead to coherent changes in judgment; whether exceptions and unknowns remain visible; and whether local understanding is being generalized into whole-system understanding without justification.
+## Where this definition is useful
+It is useful in institutional design, operations, education, safety work, and AI-assisted analysis whenever a fluent explanation must be distinguished from an ability to work with the conditions that actually determine whether something functions.
 
-## Validity conditions
-The definition is useful where grasping establishment conditions at the required range and granularity improves judgment, design, prediction, or verification and reveals establishment/non-establishment differences hidden by coarse information-level understanding.
+## Important distinctions
+Information quantity is not the same as understanding. Fluent explanation is not the same as understanding. Long experience is not automatically understanding. Local depth is not the same as whole-system understanding. AI-generated fluency is not evidence that enabling conditions have been preserved.
 
-## Failure conditions
-Equating knowledge volume, terminology, experience length, explanatory fluency, or AI summarization with understanding; expanding local understanding into whole-system understanding without stating scope; treating finer decomposition itself as understanding; listing conditions without causal connection; deleting unknowns or exceptions.
-
-## Falsification conditions
-If subjects can repeatedly predict establishment/non-establishment and design or verify equally well without grasping establishment conditions at the required range and granularity, narrow or revise the definition. If increased granularity does not improve performance and a coarser model is more stable, revise how required granularity is chosen.
-
-## Required distinctions
-information / understanding; explainability / understanding; experience / condition grasp; AI summary / structural understanding; vertical causal range / understanding granularity; local understanding / whole-system understanding; detail / required granularity; unknown / hidden assumption.
-
-## Interpretation constraints
-Do not turn the theory into a demand for complete knowledge or infinite decomposition. Required range and granularity are question-dependent. For AI, the theory concerns structural handling of establishment conditions, not subjective consciousness. Do not add universal scores or fixed thresholds absent from the Parent.
+## When the definition would need revision
+The scope of this definition should be reconsidered if stable evidence shows that reliable prediction, design, judgment, and verification can be achieved without grasping the relevant enabling conditions at an appropriate scope and resolution.
 
 ## Search terms
-establishment conditions theory, understanding, causal range, understanding granularity, local understanding, whole-system understanding, explainability, AI structural understanding, Nakagawa Master
+establishment conditions theory, understanding, causal scope, resolution of understanding, local understanding, explainability, AI summaries, Nakagawa Master
 
-## Origin return
-Return to the Parent URL for the relation to Part 1, the separation of information from understanding, explainability, vertical causal range, understanding granularity, local versus whole-system understanding, observability, and falsifiability. This derivative does not replace the Parent.
+## What the source article adds
+The source article develops the distinction between knowing and understanding, separates the object’s actual conditions from the observer’s grasp of those conditions, discusses explanation and AI summarization, and develops causal scope and resolution as two distinct dimensions of understanding.
 
 ---
-導線: [公式派生物246トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Related pages: [Main article](README.md) / [Summary](human-entry.md) / [FAQ](faq.md) / [Japanese AI summary](ai-index.md) / [Chinese AI summary](zh-ai-index.md) / [Identifiers](derivative-ledger.md)
