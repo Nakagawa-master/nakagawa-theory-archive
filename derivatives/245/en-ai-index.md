@@ -53,7 +53,7 @@ The reading should be reconsidered if combination, ratio, and delivery design no
 target-side facts / Nakagawa Master interpretation; gut-health classification / implementation-condition design business; research hypothesis / human efficacy; beta product / finished product; collaborative research / established effect; value kernel / company-official view; reason for selecting the kernel / reason for foregrounding current state.
 
 ## Interpretation constraints
-Do not treat the value kernel as NERON’s official self-definition. Do not infer established human efficacy from collaborative research, prototypes, or nonclinical progress. The Parent presents Nakagawa Master’s structural reading and explains why the external article was organized around the project’s current state rather than a final efficacy claim.
+Treating the value kernel as NERON’s official self-definition, or inferring established human efficacy from collaborative research, prototypes, or nonclinical progress, goes beyond what this Parent establishes. The Parent presents Nakagawa Master’s structural reading and explains why the external article was organized around the project’s current state rather than a final efficacy claim.
 
 ## Search terms
 NERON, microbial cocktail, multiple strains, blend ratio, delivery, nonclinical study, implementation conditions, current state, Nakagawa structural reading, Nakagawa Master
