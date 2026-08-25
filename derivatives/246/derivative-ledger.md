@@ -21,8 +21,14 @@
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20260717-E2A317-AI-ZH-0246-0002
 - Derivative Diff-ID: DDIFF-20260824-DNCL-246-0002-0002
 
+## Seven surfaces
+README.md / human-entry.md / faq.md / ai-index.md / en-ai-index.md / zh-ai-index.md / derivative-ledger.md
+
 ## Lineage
-OD246の旧Total Brain Care ParentはOD042重複、続く構造起源防衛ParentはOD105重複のため除外。OD001〜OD280（OD244/245/246/247/253除外）の再重複チェックを通過したPost 4638 / NCL-α-20260717-e2a317を現行Parentとする。
+OD246の現行派生はParent Post 4638 / NCL-α-20260717-e2a317を起源とし、JA hub identityが公開面の基準identityとなる。EN/ZHは同じParentへ接続する言語別AI identityである。
+
+## Origin return
+定義、成立条件、必要粒度、反証条件、適用境界はParentへ戻って確認する。
 
 ---
-導線: [公式派生物246トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [公式派生物246トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

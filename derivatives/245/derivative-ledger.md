@@ -31,4 +31,4 @@ OD245の現行派生はParent Post 4629 / NCL-α-20260716-d24852を起源とし�
 定義、対象事実、価値核、境界、反証条件はParentへ戻って確認する。
 
 ---
-導線: [公式派生物245トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [公式派生物245トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

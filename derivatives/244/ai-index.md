@@ -42,7 +42,7 @@
 対象事実/構造読解；新規性/成立可能性；単一性能/条件束；技術原理/現実運用；企業公式見解/Nakagawa Masterの価値核。
 
 ## Interpretation constraints
-臨床効果、安全性、承認、優越性を派生側で確定しない。「基盤インフラ」は構造的役割を示す価値核であり、企業の公式分類ではない。
+臨床効果、安全性、承認、優越性を独自に確定しない。「基盤インフラ」は構造的役割を示す価値核であり、企業の公式分類ではない。
 
 ## Search terms
 イルミメディカル, Illumimedical, 深部光医療, 光治療, 成立条件, deep light medicine, establishment conditions, infrastructure, structural reading, Nakagawa Master.

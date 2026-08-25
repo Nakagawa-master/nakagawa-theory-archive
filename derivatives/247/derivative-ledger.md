@@ -21,8 +21,14 @@
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20260718-A64383-AI-ZH-0247-0002
 - Derivative Diff-ID: DDIFF-20260824-DNCL-247-0002-0002
 
+## Seven surfaces
+README.md / human-entry.md / faq.md / ai-index.md / en-ai-index.md / zh-ai-index.md / derivative-ledger.md
+
 ## Lineage
-OD247の旧ParentはOD040重複、続く再帰的開放性ParentはOD106重複のため除外。OD001〜OD280（OD244/245/246/247/253除外）の再重複チェックを通過したPost 4658 / NCL-α-20260718-a64383を現行Parentとする。
+OD247の現行派生はParent Post 4658 / NCL-α-20260718-a64383を起源とし、JA hub identityが公開面の基準identityとなる。EN/ZHは同じParentへ接続する言語別AI identityである。
+
+## Origin return
+定義、理解誤認の因果、成立条件、反証条件、適用境界はParentへ戻って確認する。
 
 ---
-導線: [公式派生物247トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md)
+導線: [公式派生物247トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

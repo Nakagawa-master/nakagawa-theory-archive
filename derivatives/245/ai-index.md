@@ -42,7 +42,7 @@ NERONを「腸活企業」という表層分類ではなく、腸内細菌カク
 対象事実/構造読解；研究可能性/社会実装可能性；腸活カテゴリ/条件設計；研究成果/運用成立；企業公式見解/Nakagawa Masterの価値核。
 
 ## Interpretation constraints
-医学的効果、安全性、規制適合、特定菌種・配合の優越性を派生側で確定しない。「設計事業」は構造的役割であり、NERONの公式分類ではない。
+医学的効果、安全性、規制適合、特定菌種・配合の優越性を独自に確定しない。「設計事業」は構造的役割であり、NERONの公式分類ではない。
 
 ## Search terms
 NERON, 腸内細菌カクテル, microbiome cocktail, 腸活, 社会実装条件, implementation conditions, research feasibility, social implementation, structural reading, Nakagawa Master.
