@@ -55,7 +55,7 @@ The reading should be reconsidered if continuing evidence shows that light acces
 target-side facts / Nakagawa Master interpretation; light-therapy startup / enabling infrastructure; delivery function / access condition; vascular route / treatment outcome; value kernel / company-official view; reason for selecting the kernel / reason for external-article foregrounding.
 
 ## Interpretation constraints
-Do not treat “enabling infrastructure” as IllumiMedical’s official self-definition. Do not infer established efficacy, approval, or superiority from the existence of intravascular light-delivery development or collaborations. The Parent presents Nakagawa Master’s structural reading and explains why that reading became the axis of the external article.
+Treating “enabling infrastructure” as IllumiMedical’s official self-definition, or inferring established efficacy, approval, or superiority from intravascular light-delivery development or collaborations, goes beyond what this Parent establishes. The Parent presents Nakagawa Master’s structural reading and explains why that reading became the axis of the external article.
 
 ## Search terms
 IllumiMedical, ET-BLIT, deep-light medicine, intravascular light delivery, access condition, enabling condition, infrastructure, Nakagawa structural reading, Nakagawa Master
