@@ -55,7 +55,7 @@ Parent还公开说明了为什么选择这一价值核，以及为什么在外�
 对象侧事实 / Nakagawa Master结构读解；光治疗创业公司 / 成立条件基础设施；输送功能 / 到达条件；血管路径 / 治疗结果；价值核 / 企业官方见解；选择价值核的理由 / 外部文章前景化理由。
 
 ## Interpretation constraints
-不要把“基础设施”写成IllumiMedical自身的官方定义。也不要仅凭血管内光输送开发或合作研究，就推导出临床有效性、批准或优越性已经成立。Parent呈现的是Nakagawa Master的结构读解，并解释了为什么这一读解成为外部文章的主轴。
+把“基础设施”理解为IllumiMedical自身的官方定义，或仅凭血管内光输送开发与合作研究推导出临床有效性、批准或优越性已经成立，都会超出本Parent所确认的范围。Parent呈现的是Nakagawa Master的结构读解，并解释了为什么这一读解成为外部文章的主轴。
 
 ## Search terms
 IllumiMedical, ET-BLIT, 深部光医疗, 血管内光输送, 到达条件, 成立条件, 基础设施, 中川结构读解, Nakagawa Master
