@@ -11,22 +11,21 @@
 - [記事別一覧｜151〜175](by-article-151-175.md)
 - [記事別一覧｜176〜200](by-article-176-200.md)
 - [記事別一覧｜201〜225](by-article-201-225.md)
-- [記事別一覧｜226〜250](by-article-226-250.md)
+- [記事別一覧｜226〜251](by-article-226-250.md)
 - [カテゴリ別一覧](by-category.md)
 - [カテゴリ入口｜201〜225](by-category-201-225.md)
-- [カテゴリ入口｜226〜250](by-category-226-250.md)
+- [カテゴリ入口｜226〜251](by-category-226-250.md)
 - [AI索引まとめ｜201〜225](ai-index-hub-201-225.md)
-- [AI索引まとめ｜226〜250](ai-index-hub-226-250.md)
+- [AI索引まとめ｜226〜251](ai-index-hub-226-250.md)
 
 ## 公開範囲
 ```text
-OD001〜OD250
+OD001〜OD251
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
 ## 直近公開群
-- [240: 中川構造読解｜HAP「カイドク」・発注論点化インフラ](240/README.md)
 - [241: 中川構造読解｜Eat Up Monster・健康因果即時化インフラ](241/README.md)
 - [242: 中川構造読解｜MRC「リノプラ」・修繕判断継続インフラ](242/README.md)
 - [243: 中川構造読解｜CCIグループ・実務知供給型金融インフラ](243/README.md)
@@ -37,9 +36,10 @@ README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 - [248: 中川構造読解｜Adory・現場不調の先行指標化](248/README.md)
 - [249: 中川構造読解｜wakai・停止した合意形成の停止解除導線](249/README.md)
 - [250: 監査要旨という読みの窓｜構造的正統性の可視化](250/README.md)
+- [251: 接続移行戦略論｜デュアル運用期の秩序ある置換](251/README.md)
 
 ## 原典接続・参照束
 新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持する。内容、ID、来歴、導線、原典回帰が一致しない場合は公開前に最上流へ戻して修復する。
 
 ---
-導線: [記事別201〜225](by-article-201-225.md) / [記事別226〜250](by-article-226-250.md) / [カテゴリ226〜250](by-category-226-250.md) / [AI索引226〜250](ai-index-hub-226-250.md)
+導線: [記事別201〜225](by-article-201-225.md) / [記事別226〜251](by-article-226-250.md) / [カテゴリ226〜251](by-category-226-250.md) / [AI索引226〜251](ai-index-hub-226-250.md)
