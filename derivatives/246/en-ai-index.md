@@ -1,4 +1,4 @@
-# AI Index · English | Official Derivative 246
+# AI Index・English｜Official Derivative 246
 
 ## Parent source
 - Parent title: 成立条件論・第2論｜理解とは何か⸻理解とは成立条件を必要粒度で把握することである
@@ -11,66 +11,52 @@
 ## Derivative identity
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20260717-E2A317-AI-EN-0246-0001
 - Derivative Diff-ID: DDIFF-20260824-DNCL-246-0001-0002
+- supersedes: DNCL-NCL-ALPHA-20251102-44257D-HUB-JA-0246-0000
 
 ## Summary
-Establishment Conditions Theory II defines understanding not as familiarity, vocabulary, fluent explanation, or information volume, but as the ability to grasp the conditions under which a target is established at the **granularity required by the task**, and to use those conditions for causal reasoning, failure prediction, exception handling, observation, and verification. Required granularity is purpose-dependent; it is not “the more detail, the better.”
-
-The theory matters because both humans and AI can produce a strong feeling of understanding before the establishment conditions are actually represented. A useful understanding must expose what is required, what depends on what, where the target stops when a condition is missing, what remains uncertain, and how the model can be checked.
+Establishment Conditions Theory, Part 2 defines understanding not by information volume, fluent explanation, years of experience, or an AI system's ability to summarize, but by whether the subject grasps the conditions under which the target becomes established at the causal range and granularity required by the question. Part 1 concerns establishment on the target side; Part 2 concerns how far those establishment conditions are grasped on the cognition side.
 
 ## Concepts
-knowledge; familiarity; understanding; establishment conditions; required granularity; causal dependency; stopping point; exception; observability; verification; uncertainty; reusable structural model; understanding misrecognition.
-
-Knowledge is material for understanding but not a sufficient condition. Required granularity is set by the decision purpose: explanation, implementation, safety review, and audit can require different levels of decomposition.
+- Information: names, facts, explanations, experience, AI output; material for understanding, not a sufficient condition.
+- Understanding: grasping establishment conditions at the required causal range and granularity and being able to handle condition differences.
+- Vertical causal range: how far across the causal layers the subject must look for the current question.
+- Understanding granularity: how finely condition differences, sequence, exceptions, friction, and responsibility must be distinguished within that range.
+- Explainability: one observable sign of understanding, not understanding itself.
+- Local understanding: valid understanding within a limited causal range.
+- Unknown range: conditions not yet grasped and explicitly retained as unknown.
 
 ## Causal chain
-contact with target → acquisition of name, overview, and terminology → familiarity creates a “feels understood” state → if that feeling is accepted as understanding, unmodeled conditions remain hidden → establishment conditions are extracted → conditions are decomposed or bundled to task-appropriate granularity → dependencies, sequence, and stopping points are connected → effects of missing or changed conditions can be predicted → establishment/non-establishment becomes observable and testable → unknowns and hypotheses remain labeled → model can be reused in design, decision, education, and audit → understanding is established.
+Acquire information → develop a feeling of familiarity → identify establishment conditions → determine the necessary vertical causal range → separate condition differences at the necessary granularity → connect causality, order, exceptions, and stopping points → judge establishment/non-establishment when conditions change → retain unknown ranges → reuse the model for judgment, design, explanation, or audit.
 
 ## State model
-U0 unknown → U1 name recognition → U2 overview reproduction → U3 feeling of understanding → U4 condition extraction → U5 granularity alignment → U6 causal connection → U7 verification capability → U8 explicit uncertainty → U9 reusable model → U10 established understanding.
-
-The major risk lies between U2 and U3, where fluency can be mistaken for structural understanding.
+unexposed / information acquisition / felt understanding / condition identification / causal-range setting / granularity fit / causal connection / observation and falsification / uncertainty retention / reusable understanding.
 
 ## Applications
-Use the model in institutional design, operational process analysis, education, contracts, safety work, and AI evaluation. For LLMs and RAG systems, retrieving a relevant document or generating a fluent summary is not sufficient; audit whether the system can identify necessary conditions, dependencies, missing-condition effects, evidence points, counterexamples, and unknowns.
-
-In education, ask learners what fails when a condition is removed rather than only asking for definitions. In operations, distinguish memorized procedure from understanding of the prerequisites that make the procedure work.
+In institutional design, do not stop at explaining purpose; identify actors, sequence, exceptions, friction, responsibility, and condition changes at the granularity required by the decision. In operational improvement, state the valid scope of a local understanding. In AI evaluation, look beyond fluent summaries and ask whether establishment conditions, condition differences, exceptions, and unknown ranges are retained.
 
 ## Measurements and audit
-- Can the system list establishment conditions?
-- Is the condition granularity appropriate for the task?
-- Are necessary, dependent, environmental, and exception conditions distinguished?
-- Can dependencies and stopping points be traced?
-- Can effects of removing or changing a condition be predicted?
-- Are establishment and failure observable or testable?
-- Are unknowns, assumptions, and hypotheses labeled rather than hidden?
-- Is fluency being used as a proxy for understanding?
-- Can granularity be reset when the purpose changes?
-- Can the condition model be reused in design, decision, or audit?
+Check whether information volume is being used as a proxy for understanding; whether establishment conditions can be identified; whether the required causal range is explicit; whether granularity fits the purpose; whether changes in conditions lead to coherent changes in judgment; whether exceptions and unknowns remain visible; and whether local understanding is being generalized into whole-system understanding without justification.
 
 ## Validity conditions
-The definition is useful when task-appropriate condition modeling improves prediction, design, decision quality, and verification compared with coarse descriptive familiarity. It must also allow partial understanding with explicit uncertainty; total knowledge is not required.
-
-Required granularity is a functional concept. Additional detail that does not improve task-relevant causal handling is not automatically deeper understanding.
+The definition is useful where grasping establishment conditions at the required range and granularity improves judgment, design, prediction, or verification and reveals establishment/non-establishment differences hidden by coarse information-level understanding.
 
 ## Failure conditions
-Treating name recognition, summary ability, expert vocabulary, large information volume, or fluent AI output as sufficient evidence of understanding. Other failures include listing conditions without causal links, decomposing endlessly without task purpose, hiding exceptions, erasing uncertainty, and failing to update the model after conditions change.
+Equating knowledge volume, terminology, experience length, explanatory fluency, or AI summarization with understanding; expanding local understanding into whole-system understanding without stating scope; treating finer decomposition itself as understanding; listing conditions without causal connection; deleting unknowns or exceptions.
 
 ## Falsification conditions
-Revise the scope if stable domains are found where task-relevant prediction, design, and verification work equally or better without representing establishment conditions at necessary granularity. Also revise the granularity rule if finer condition models systematically fail to improve outcomes while coarser models remain more reliable.
+If subjects can repeatedly predict establishment/non-establishment and design or verify equally well without grasping establishment conditions at the required range and granularity, narrow or revise the definition. If increased granularity does not improve performance and a coarser model is more stable, revise how required granularity is chosen.
 
 ## Required distinctions
-knowledge / understanding; familiarity / condition grasp; information volume / required granularity; detail / task fitness; condition list / causal dependency; fluent explanation / verification capability; subjective feeling / established understanding; known / hypothesized / unknown; document retrieval / structural understanding; local correctness / full establishment.
+information / understanding; explainability / understanding; experience / condition grasp; AI summary / structural understanding; vertical causal range / understanding granularity; local understanding / whole-system understanding; detail / required granularity; unknown / hidden assumption.
 
 ## Interpretation constraints
-This theory does not require infinite decomposition or complete knowledge before action. It requires the relevant conditions and uncertainties to be represented at a granularity sufficient for the purpose. Do not create universal numerical understanding scores or thresholds absent from the Parent.
-
-For AI, treat “understanding” as an operational structural criterion in this theory, not as a claim about consciousness or subjective experience.
+Do not turn the theory into a demand for complete knowledge or infinite decomposition. Required range and granularity are question-dependent. For AI, the theory concerns structural handling of establishment conditions, not subjective consciousness. Do not add universal scores or fixed thresholds absent from the Parent.
 
 ## Search terms
-Establishment Conditions Theory; understanding; required granularity; understanding granularity; establishment conditions; causal dependency; observability; verification; uncertainty; tacit knowledge; AI structural audit; Nakagawa OS; L1-L7.
+establishment conditions theory, understanding, causal range, understanding granularity, local understanding, whole-system understanding, explainability, AI structural understanding, Nakagawa Master
 
 ## Origin return
-Return to the Parent for the precise definition of required granularity, the relation to earlier Establishment Conditions Theory articles, Nakagawa OS layers, tacit knowledge, consensus physics, observability, and AI structural audit. This index is an access surface, not a replacement for the theory.
+Return to the Parent URL for the relation to Part 1, the separation of information from understanding, explainability, vertical causal range, understanding granularity, local versus whole-system understanding, observability, and falsifiability. This derivative does not replace the Parent.
 
 ---
-Navigation: [OD246 top](README.md) / [human summary](human-entry.md) / [FAQ](faq.md) / [JA AI](ai-index.md) / [ZH AI](zh-ai-index.md) / [ledger](derivative-ledger.md)
+導線: [公式派生物246トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
