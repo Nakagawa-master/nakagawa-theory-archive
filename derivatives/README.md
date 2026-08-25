@@ -20,13 +20,12 @@
 
 ## 公開範囲
 ```text
-OD001〜OD249
+OD001〜OD250
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
 ## 直近公開群
-- [239: 意味収束理論・初版｜成立可能な未来定義による意味ベクトル再配列](239/README.md)
 - [240: 中川構造読解｜HAP「カイドク」・発注論点化インフラ](240/README.md)
 - [241: 中川構造読解｜Eat Up Monster・健康因果即時化インフラ](241/README.md)
 - [242: 中川構造読解｜MRC「リノプラ」・修繕判断継続インフラ](242/README.md)
@@ -37,6 +36,7 @@ README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 - [247: 成立条件論 第3論｜理解誤認と悪因果・粗い理解と設計図不在](247/README.md)
 - [248: 中川構造読解｜Adory・現場不調の先行指標化](248/README.md)
 - [249: 中川構造読解｜wakai・停止した合意形成の停止解除導線](249/README.md)
+- [250: 監査要旨という読みの窓｜構造的正統性の可視化](250/README.md)
 
 ## 原典接続・参照束
 新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持する。内容、ID、来歴、導線、原典回帰が一致しない場合は公開前に最上流へ戻して修復する。
