@@ -51,7 +51,7 @@ The reading should be reconsidered where no meaningful relationship can be found
 ignorance / misrecognition of understanding; one successful outcome / repeatable establishment; frontline effort / design completeness; individual error / structural omission; visible result / understanding of causal conditions.
 
 ## Interpretation constraints
-Do not read this essay as a theory for blaming people who understand too little. Its focus is the causal structure through which mistaken confidence enters design, missing conditions create real-world burden, and that burden can be misread as proof that the design was sufficient. Other resource, environmental, or accidental causes may exist and should be distinguished from this mechanism.
+Reading this essay as a theory for blaming people who understand too little loses its central focus on how mistaken confidence enters design and how missing conditions create real-world burden. Treating every failure as an instance of this mechanism also exceeds the essay’s scope; resource, environmental, and accidental causes may exist separately.
 
 ## Search terms
 establishment conditions theory, misrecognition of understanding, bad causality, coarse understanding, missing design conditions, tacit workarounds, externalized responsibility, repeatability, Nakagawa Master
