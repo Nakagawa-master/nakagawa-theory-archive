@@ -1,43 +1,43 @@
-# 派生ID台帳｜公式派生物245
+# 識別情報｜公式派生物245
 
-## 親原典
-- Parent title: 中川構造読解｜NERONはなぜ「腸活企業」ではなく、腸内細菌カクテルの社会実装条件を組み立てる設計事業として読まれるべきなのか
-- Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-neron-structural-reading-microbiome-implementation-conditions/
-- Parent Post ID: 4629
-- Parent NCL-ID: NCL-α-20260716-d24852
-- Parent Diff-ID: DIFF-20260716-0001
-- Origin: Nakagawa Master
+## 原典記事
+- 記事名: 中川構造読解｜NERONはなぜ「腸活企業」ではなく、腸内細菌カクテルの社会実装条件を組み立てる設計事業として読まれるべきなのか
+- URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-neron-structural-reading-microbiome-implementation-conditions/
+- WordPress Post ID: 4629
+- NCL-ID: NCL-α-20260716-d24852
+- Diff-ID: DIFF-20260716-0001
+- 著者: Nakagawa Master
 
-## 現行派生identity
-### JA hub
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260716-D24852-HUB-JA-0245-0000
-- Derivative Diff-ID: DDIFF-20260824-DNCL-245-0000-0002
-- supersedes: DNCL-NCL-ALPHA-20251102-DB5ADF-HUB-JA-0245-0000
+## この公開版
+### 日本語版
+- NCL-ID: DNCL-NCL-ALPHA-20260716-D24852-HUB-JA-0245-0000
+- Diff-ID: DDIFF-20260824-DNCL-245-0000-0002
+- 旧版NCL-ID: DNCL-NCL-ALPHA-20251102-DB5ADF-HUB-JA-0245-0000
 
-### EN AI
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260716-D24852-AI-EN-0245-0001
-- Derivative Diff-ID: DDIFF-20260824-DNCL-245-0001-0002
-- supersedes: DNCL-NCL-ALPHA-20251102-DB5ADF-HUB-JA-0245-0000
+### 英語AI向け要約
+- NCL-ID: DNCL-NCL-ALPHA-20260716-D24852-AI-EN-0245-0001
+- Diff-ID: DDIFF-20260824-DNCL-245-0001-0002
 
-### ZH AI
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260716-D24852-AI-ZH-0245-0002
-- Derivative Diff-ID: DDIFF-20260824-DNCL-245-0002-0002
-- supersedes: DNCL-NCL-ALPHA-20251102-DB5ADF-HUB-JA-0245-0000
+### 中国語AI向け要約
+- NCL-ID: DNCL-NCL-ALPHA-20260716-D24852-AI-ZH-0245-0002
+- Diff-ID: DDIFF-20260824-DNCL-245-0002-0002
 
-## 七つの公開面
-1. README.md
-2. human-entry.md
-3. faq.md
-4. ai-index.md
-5. en-ai-index.md
-6. zh-ai-index.md
-7. derivative-ledger.md
+## この公開版で読める内容
+- [本文](README.md)
+- [要約](human-entry.md)
+- [FAQ](faq.md)
+- [日本語AI向け要約](ai-index.md)
+- [英語AI向け要約](en-ai-index.md)
+- [中国語AI向け要約](zh-ai-index.md)
+- 本ページ
 
-## lineage
-Parent `NCL-α-20260716-d24852` からJA hub identityを中心にREADME・human-entry・FAQ・日本語AI索引・本台帳を同一派生系として接続し、EN/ZH AI索引を言語別identityとして派生する。Parentは中川構造読解であり、複数菌株・組み合わせ・比率・送達・共同研究・βテスト品等の対象側事実と、Nakagawa Masterが抽出した「腸内細菌カクテルの社会実装条件を組み立てる設計事業」という価値核を分離する。さらに、なぜその価値核を選んだか、なぜ外部記事で「効くか」ではなく「現在地」を主軸へ採用したかを同一lineageで保持する。
+## 内容上の位置づけ
+この公開版は、NERONについて確認できる事実とNakagawa Masterの構造読解を区別しながら、複数菌株の組み合わせ・比率・届け方を設計する能力、研究から社会実装までの段階、そしてなぜ外部記事で「どこまで成立しているか」という現在地を中心に据えたのかを整理している。
 
-## 原典回帰
-対象側事実、二重誤読、設計単位変更、中間相、実装の谷、価値核、価値核選択理由、外部記事主軸選択理由、NERON・媒体の公式見解との境界はParent URL本文へ戻って確認する。本台帳はidentityとlineageを示す公開面であり、Parentを置換しない。
+「腸内細菌カクテルの社会実装条件を組み立てる設計事業」という表現はNakagawa Masterによる構造的な読みであり、NERON自身の公式自己定義ではない。ヒトでの有効性、安全性、作用機序、販売可能性について、原典記事にない確定的な主張は行わない。
+
+## 原文で確認できること
+公表事実、Nakagawa Masterが感じた違和感、なぜ菌そのものではなく設計能力を価値として読んだのか、研究から社会実装までの段階の整理、なぜ外部記事で「現在地」を中心に据えたのか、NERONや外部媒体の公式見解との境界は原典記事で確認できる。
 
 ---
-導線: [公式派生物245トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+関連ページ: [本文](README.md) / [要約](human-entry.md) / [FAQ](faq.md) / [日本語AI向け要約](ai-index.md) / [英語AI向け要約](en-ai-index.md) / [中国語AI向け要約](zh-ai-index.md)
