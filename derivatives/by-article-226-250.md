@@ -1,7 +1,7 @@
-# 公式派生物 記事別一覧｜226〜250
+# 公式派生物 記事別一覧｜226〜251
 
 ## 位置づけ
-本ページはOD226〜OD250の公開shardである。公式派生物は親原典の代替ではなく、人間とAIを親原典へ戻す公開接続面である。
+本ページはOD226〜OD251の公開shardである。公式派生物は親原典の代替ではなく、人間とAIを親原典へ戻す公開接続面である。
 
 | No. | 公式派生物 | 主な入口 | AI索引 |
 |---|---|---|---|
@@ -30,9 +30,10 @@
 | 248 | 中川構造読解｜Adory・現場不調の先行指標化 | [トップ](248/README.md) / [要約](248/human-entry.md) / [FAQ](248/faq.md) | [JA](248/ai-index.md) / [EN](248/en-ai-index.md) / [ZH](248/zh-ai-index.md) |
 | 249 | 中川構造読解｜wakai・停止した合意形成の停止解除導線 | [トップ](249/README.md) / [要約](249/human-entry.md) / [FAQ](249/faq.md) | [JA](249/ai-index.md) / [EN](249/en-ai-index.md) / [ZH](249/zh-ai-index.md) |
 | 250 | 監査要旨という読みの窓｜構造的正統性を可視化する | [トップ](250/README.md) / [要約](250/human-entry.md) / [FAQ](250/faq.md) | [JA](250/ai-index.md) / [EN](250/en-ai-index.md) / [ZH](250/zh-ai-index.md) |
+| 251 | 接続移行戦略論｜デュアル運用期の秩序ある置換 | [トップ](251/README.md) / [要約](251/human-entry.md) / [FAQ](251/faq.md) | [JA](251/ai-index.md) / [EN](251/en-ai-index.md) / [ZH](251/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
 
 ---
-導線: [公式派生物トップ](README.md) / [記事別201〜225](by-article-201-225.md) / [AI索引226〜250](ai-index-hub-226-250.md) / [カテゴリ226〜250](by-category-226-250.md)
+導線: [公式派生物トップ](README.md) / [記事別201〜225](by-article-201-225.md) / [AI索引226〜251](ai-index-hub-226-250.md) / [カテゴリ226〜251](by-category-226-250.md)
