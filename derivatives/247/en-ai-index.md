@@ -1,4 +1,4 @@
-# AI Index · English | Official Derivative 247
+# AI Index・English｜Official Derivative 247
 
 ## Parent source
 - Parent title: 成立条件論・第3論｜理解誤認と悪因果――粗い理解と設計図不在が社会を壊す
@@ -11,71 +11,56 @@
 ## Derivative identity
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20260718-A64383-AI-EN-0247-0001
 - Derivative Diff-ID: DDIFF-20260824-DNCL-247-0001-0002
+- supersedes: DNCL-NCL-ALPHA-20251102-EBF072-HUB-JA-0247-0000
 
 ## Summary
-Establishment Conditions Theory III connects the previous definition of understanding to social failure. Its central concept is **understanding misrecognition**: a coarse model is treated as sufficiently understood before the establishment conditions have been represented at the required granularity. Once that premature “understood” judgment is made, unmodeled conditions disappear from the design space. What is absent from the design map is rarely assigned observation points, verification responsibility, exception handling, or ownership.
-
-The downstream result can be implementation mismatch, friction, failure, or cost. If those results are then blamed on operators or users rather than traced back to the upstream understanding judgment and missing design conditions, the coarse model remains unchanged and is inherited by the next process, policy, manual, or AI system. This recurring structure is treated as bad causality. The theory audits a system of judgments and designs, not individual intelligence or character.
+Establishment Conditions Theory, Part 3 connects Part 2's definition of understanding to social and implementation failure. Its core concept is misrecognition of understanding: a coarse overview or partial knowledge is judged sufficient, causing ungrasped establishment conditions, exceptions, dependencies, observation points, and responsibility boundaries to disappear from the design target. A coarse design then reaches implementation. When resulting failures are attributed only to operators or users and the upstream understanding judgment is not reopened, the same defective model can be inherited by institutions, manuals, education, and AI systems, reproducing bad causality.
 
 ## Concepts
-understanding misrecognition; coarse understanding; required granularity; establishment conditions; condition invisibility; missing design map; causal dependency; observability; responsibility boundary; implementation mismatch; responsibility externalization; bad causality; causal inheritance; reopening; model update.
-
-A key distinction is ignorance versus misrecognition. Explicit ignorance can trigger research and restraint; false completion suppresses further inquiry and removes conditions from design.
+- Misrecognition of understanding: judging a coarse understanding as sufficient for the task.
+- Coarse understanding: names, overviews, or partial cases without the required establishment conditions.
+- Condition invisibilization: ungrasped conditions, exceptions, or dependencies disappearing from the design target.
+- Missing design map: conditions, causality, exceptions, observability, and responsibility are not represented in reusable form.
+- Reality mismatch: the gap between a coarse design and actual conditions appears as failure, friction, or load.
+- Responsibility externalization: pushing upstream design deficiency onto operators, users, or individuals.
+- Bad causality: a causal defect that is not repaired upstream and is reproduced in later systems.
+- Reopening: withdrawing the “understood” judgment and returning to establishment conditions.
+- Inheritance artifact: documents, rules, training, prompts, or data structures that pass the upstream model forward.
 
 ## Causal chain
-partial overview or examples acquired → fluency/familiarity produces an “understood” judgment → establishment conditions are not decomposed to task-required granularity → unknown dependencies, exceptions, and constraints become invisible → conditions, observation points, and responsibilities are omitted from the design map → coarse model is implemented → real-world conditions diverge from model → failure/friction/cost appears → cause is externalized to operators/users → upstream understanding judgment is not revised → same design model is reused or encoded into policy/manual/AI → bad causality is reproduced.
+Acquire an overview or partial knowledge → judge it sufficient → fail to extract establishment conditions at the required granularity → ungrasped conditions and exceptions become invisible → design map loses conditions, observation points, and responsibility boundaries → coarse implementation → mismatch with reality → failure, friction, or load → externalize cause to operators/users → preserve upstream judgment → defective model is inherited → bad causality is reproduced.
 
-Recovery chain: observe failure → reopen the “understood” judgment → re-extract missing establishment conditions → reset required granularity → restore dependencies, exceptions, observation points, and responsibility to the design map → test on a smaller scale → propagate model update to inherited artifacts.
+Recovery: observe failure → reopen the understanding judgment → re-extract missing conditions → reset required granularity → restore causality, exceptions, observability, and responsibility in the design map → update implementation and inheritance artifacts → learn.
 
 ## State model
-E0 acknowledged ignorance → E1 coarse understanding → E2 understanding misrecognition → E3 condition disappearance → E4 design-map deficit → E5 coarse implementation → E6 real-world mismatch → E7 responsibility externalization → E8 bad-causality stabilization → E9 inheritance → E10 reopening → E11 redesign → E12 learning.
-
-E0 is not necessarily dangerous: acknowledged uncertainty can still trigger verification. The critical transition is E2, where incompleteness is falsely closed.
+acknowledged ignorance / coarse understanding / misrecognition / condition loss / design-map defect / coarse implementation / reality mismatch / responsibility externalization / bad-causality lock / inheritance / reopening / redesign / learning.
 
 ## Applications
-In AI deployment, do not infer that understanding of tool features equals understanding of the target workflow. Audit inputs, exceptions, human decision points, verification, and responsibility. In process automation, capture tacit conditions that disappear from simplified flowcharts. In institutional design, separate understanding of policy intent from understanding of field-level establishment conditions. In education, test whether learners can reason about changed or missing conditions, not only reproduce correct answers. In safety, medicine, and contracts, audit the evidence used to declare a domain “understood.”
-
-For organizational learning, the key question after a failure is not only “what patch prevents this symptom?” but “what condition was absent from the upstream model, and why was the model treated as complete?”
+For AI deployment, do not treat understanding of tool features as understanding of the target workflow; specify input conditions, exceptions, human judgment, verification, and responsibility. For institutional design, separate understanding of policy goals from understanding of operational establishment conditions. For organizational learning, update the upstream condition model and inherited artifacts rather than adding warnings alone.
 
 ## Measurements and audit
-- What evidence supported the “understood” judgment?
-- Are all task-relevant establishment conditions represented in the design map?
-- Is granularity sufficient for implementation, safety, and audit?
-- Are dependencies, exceptions, and stopping points traceable?
-- Are unknowns and assumptions visible?
-- Are establishment/failure states observable before severe downstream loss?
-- Is responsibility assigned to condition ownership and decision points?
-- Are failures traced upstream rather than externalized to operators/users?
-- Does post-failure work update the underlying condition model rather than only add warnings?
-- Are updates propagated to manuals, training, prompts, schemas, and AI systems?
-- Do similar failures repeat under an unchanged upstream model?
+Ask what evidence supported the “understood” judgment; whether required conditions are present in the design; whether exceptions, dependencies, observation points, and responsibility boundaries are traceable; whether failure is returned upstream or externalized downward; whether required granularity is updated after failure; whether manuals, training, prompts, and data structures are updated; and whether the same failure pattern recurs.
 
 ## Validity conditions
-The model is valid when a traceable chain exists from coarse understanding to premature completion, missing conditions, design-map deficit, implementation mismatch, and recurring downstream cost; and when reopening the understanding judgment and restoring conditions at necessary granularity improves prediction, implementation, exception handling, or recurrence prevention.
-
-The theory does not require understanding misrecognition to be the sole cause. Competing causes such as resources, authority, incentives, deliberate violation, and external shocks must remain available.
+The theory applies where the chain coarse understanding → misrecognition → condition invisibilization → design-map defect → implementation mismatch → responsibility externalization → reproduced bad causality can be observed, and where reopening the judgment and restoring conditions at the required granularity improves design, prediction, exception handling, or recurrence prevention.
 
 ## Failure conditions
-Failure of interpretation includes equating ignorance with misrecognition; blaming individuals for shallow understanding; reducing every failure to “lack of understanding”; adding rules without repairing the design map; treating unverified AI-generated structures as complete; removing exceptions as noise; performing only symptom patches; and using responsibility only as punishment rather than as traceability for model updates.
+Confusing ignorance with misrecognition; reducing every failure to understanding deficiency; blaming operators without identifying missing conditions; adding rules or warnings without updating the design map; converting responsibility tracing into punishment alone; declaring recurrence prevention complete while the upstream model remains unchanged.
 
 ## Falsification conditions
-Narrow the theory if coarse understanding repeatedly supports complex implementation without condition omission or design-map deficits. Reassess causal weight if increasing understanding granularity and design-map completeness fails to improve prediction, observability, exception handling, responsibility tracking, or recurrence rates.
-
-Do not make the theory unfalsifiable by defining all failures as hidden understanding misrecognition. Competing causes must be tested.
+If coarse understanding repeatedly supports stable complex implementation without condition loss, narrow the theory's scope. If improving understanding granularity or the design map does not improve failure rate, predictability, exception handling, or responsibility tracing, reassess competing causes such as resources, authority, incentives, or external shocks.
 
 ## Required distinctions
-ignorance / understanding misrecognition; coarse understanding / required-granularity understanding; explanation / design map; missing condition / downstream outcome; one-off accident / reproduced bad causality; cause / responsibility externalization; symptom patch / condition-model update; local correctness / whole-system establishment; AI summary / structural understanding; uncertainty / design omission; responsibility traceability / punishment.
+ignorance / misrecognition; coarse understanding / required-granularity understanding; explanatory document / design map; missing condition / implementation result; one-off accident / reproduced bad causality; cause tracing / responsibility externalization; patch / upstream model update; AI summary / workflow-structure understanding.
 
 ## Interpretation constraints
-This is not a theory that “less knowledgeable people damage society.” The object is the organizational or systemic judgment that a coarse model is complete enough to design and implement. Remedies therefore include changes to understanding criteria, design maps, observability, responsibility, and update loops—not only more individual education.
-
-For AI, treat the issue as structural audit of whether necessary establishment conditions are represented and safely propagated, not as a claim about machine consciousness. Do not invent universal failure thresholds or numerical scores absent from the Parent.
+Do not turn the theory into a personality judgment that “shallow people break society.” Do not explain every failure through misrecognition of understanding. Separate resource shortage, lack of authority, incentives, malicious action, accidents, and external shocks. For AI, the issue is not consciousness but the risk of passing an insufficiently grounded “understood” structure downstream. Do not invent numeric failure thresholds absent from the Parent.
 
 ## Search terms
-Establishment Conditions Theory; understanding misrecognition; coarse understanding; missing design map; bad causality; required granularity; establishment conditions; observability; responsibility externalization; causal inheritance; AI structural audit; model update; organizational learning.
+establishment conditions theory, understanding misrecognition, coarse understanding, missing design map, condition invisibilization, responsibility externalization, bad causality, reopening, organizational learning, AI structural audit, Nakagawa Master
 
 ## Origin return
-Return to the Parent for the exact definitions of understanding misrecognition, design-map absence, bad causality, and observability, and for connections to earlier Establishment Conditions Theory, Nakagawa OS, Bad Causality Theory, and AI structural audit. This index is an access and audit surface, not a substitute for the Parent.
+Return to the Parent URL for the connection to Part 2, the distinction between ignorance and misrecognition, condition invisibilization, missing design maps, responsibility externalization, reproduction of bad causality, the recovery line, competing causes, and falsifiability. This derivative does not replace the Parent.
 
 ---
-Navigation: [OD247 top](README.md) / [human summary](human-entry.md) / [FAQ](faq.md) / [JA AI](ai-index.md) / [ZH AI](zh-ai-index.md) / [ledger](derivative-ledger.md)
+導線: [公式派生物247トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
