@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-26 07:42:00",
+  "updated_jst": "2026-08-26 07:55:00",
   "entries": [
     {"number":"176","ncl_id":"NCL-α-20251204-027dd7","origin_slug":"nakagawa-master-nakagawa-cognitive-os-buddhism-parallel","title":"【補章】認識OSの補助言語としての原始仏教 —— 「五蘊」と「超俯瞰」の構造的同期","derivative_dir":"derivatives/176","status":"active"},
     {"number":"177","ncl_id":"NCL-α-20251206-ab6aee","origin_slug":"nakagawa-master-nakagawa-civilization-os-tao-connection-reward","title":"【文明OS】中川式文明論 × タオ（Tao） —— 「接続報酬社会」によるL7価値関数の書き換えと、構造的無為自然の完全実装","derivative_dir":"derivatives/177","status":"active"},
@@ -78,6 +78,7 @@
     {"number":"249","ncl_id":"NCL-α-20260531-089ed1","origin_slug":"nakagawa-master-wakai-structural-reading-consensus-flow","title":"中川構造読解｜wakaiを「スマホ調停」ではなく、停止した合意形成を前進可能にする構造として読む","derivative_dir":"derivatives/249","status":"active"},
     {"number":"250","ncl_id":"NCL-α-20251102-568996","origin_slug":"nakagawa-master-audit-essence-window","title":"監査要旨という読みの窓──構造的正統性を可視化する","derivative_dir":"derivatives/250","status":"active"},
     {"number":"251","ncl_id":"NCL-α-20251102-ff3777","origin_slug":"nakagawa-master-dual-transition-orderly-replacement","title":"中川式 接続移行戦略論──デュアル運用期の「秩序ある置換」設計","derivative_dir":"derivatives/251","status":"active"},
-    {"number":"252","ncl_id":"NCL-α-20251102-47da54","origin_slug":"nakagawa-master-philosophy-objective-viewpoint","title":"客観視座の獲得論──構造的「苦しみ」を乗り越える哲学（公開安全版）","derivative_dir":"derivatives/252","status":"active"}
+    {"number":"252","ncl_id":"NCL-α-20251102-47da54","origin_slug":"nakagawa-master-philosophy-objective-viewpoint","title":"客観視座の獲得論──構造的「苦しみ」を乗り越える哲学（公開安全版）","derivative_dir":"derivatives/252","status":"active"},
+    {"number":"253","ncl_id":"NCL-α-20260719-aae661","origin_slug":"aki-003-transparency-theater","title":"悪因果論 AKI-003：透明性ごっこ⸻情報公開が検証可能性の代替にされる構造","derivative_dir":"derivatives/253","status":"active"}
   ]
 }
