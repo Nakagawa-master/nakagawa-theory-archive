@@ -30,7 +30,7 @@
 | 249 | wakai・停止解除導線 | [JA](249/ai-index.md) | [EN](249/en-ai-index.md) | [ZH](249/zh-ai-index.md) |
 
 ## 共通再利用制約
-Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。中川構造読解Parentでは、先行外部記事でNakagawa Masterが価値核を選び主軸化し、後発Parentがその選択・構造翻訳操作を公開解体した時間順を固定する。対象企業・サービスの事実、Nakagawa Masterの構造読解、企業・媒体の公式見解を混同しない。
+Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。中川構造読解Parentでは、対象事実、Nakagawa Masterの構造読解、価値核・構造軸、その価値核を選んだ理由、その価値核を外部記事で前景化した理由、前に出した切り口と抑えた切り口、企業・媒体の公式見解との境界をParent自体の記録として保持する。企業紹介や外部記事の単なる要約へ縮約しない。
 
 ---
 導線: [公式派生物トップ](README.md) / [AI索引201〜225](ai-index-hub-201-225.md) / [記事別226〜250](by-article-226-250.md) / [カテゴリ226〜250](by-category-226-250.md)
