@@ -54,7 +54,7 @@ The scope of the definition should be reconsidered if stable evidence shows that
 information quantity / understanding; explanation ability / understanding; experience length / understanding; local understanding / whole-system understanding; causal scope / resolution; AI fluency / grasp of enabling conditions.
 
 ## Interpretation constraints
-Do not reduce understanding to “knowing more detail.” The central idea is to grasp enabling conditions at the scope and resolution needed for the purpose and to reason about them causally. The necessary scope and resolution may change when conditions or purposes change.
+Reducing understanding to “knowing more detail” loses the two-dimensional structure described in this essay. The central idea is to grasp enabling conditions at the scope and resolution needed for the purpose and to reason about them causally. The necessary scope and resolution may change when conditions or purposes change.
 
 ## Search terms
 establishment conditions theory, understanding, causal scope, resolution of understanding, local understanding, explainability, AI summaries, Nakagawa Master
