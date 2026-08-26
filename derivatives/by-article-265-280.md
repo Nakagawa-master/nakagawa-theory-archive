@@ -14,6 +14,7 @@
 | 274 | 接続価値の多層監査設計 | [トップ](274/README.md) / [要約](274/human-entry.md) / [FAQ](274/faq.md) | [JA](274/ai-index.md) / [EN](274/en-ai-index.md) / [ZH](274/zh-ai-index.md) |
 | 275 | 文明の不可逆点 | [トップ](275/README.md) / [要約](275/human-entry.md) / [FAQ](275/faq.md) | [JA](275/ai-index.md) / [EN](275/en-ai-index.md) / [ZH](275/zh-ai-index.md) |
 | 276 | ブランドは設計できても、「律動」は操作できない | [トップ](276/README.md) / [要約](276/human-entry.md) / [FAQ](276/faq.md) | [JA](276/ai-index.md) / [EN](276/en-ai-index.md) / [ZH](276/zh-ai-index.md) |
+| 277 | 営業の構造律動論 | [トップ](277/README.md) / [要約](277/human-entry.md) / [FAQ](277/faq.md) | [JA](277/ai-index.md) / [EN](277/en-ai-index.md) / [ZH](277/zh-ai-index.md) |
 
 ---
 導線: [公式派生物トップ](README.md) / [AI索引265〜280](ai-index-hub-265-280.md) / [カテゴリ265〜280](by-category-265-280.md)
