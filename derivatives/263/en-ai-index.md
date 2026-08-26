@@ -14,7 +14,7 @@
 - supersedes: none
 
 ## Summary
-The Parent does not claim that a technological singularity must occur in 2045. It uses 2045 as a reference point for a structural problem: as AI and automation expand what can be optimized and supplied, society may become less able to answer what should count as good, worth preserving, or worth pursuing. This is the meaning vacuum. Tomoshibi Civilization expands value beyond ownership and functional supply toward reference, resonance, and recontextualization through connection-based value. It keeps an external/universal layer and an internal/particular layer in dual syntax. Humanity is assigned the civilization role of editing and drafting meaning through contradiction holding, narrative creation, boundary translation, acceptance of responsibility, and question design. AI supports structuring, optimization, prediction, consistency, comparison, and amplification. The core loop is human meaning drafting → AI ordering/amplification → human recomposition, acceptance, and responsibility. Threshold/Silence/Reversibility, five implementation layers, M/R/E/A/H relative metrics, primary logs, review, exit, and falsification keep the design auditable and revisable.
+The Parent does not claim that a technological singularity must occur in 2045. It uses 2045 as a reference point for a structural problem: as AI and automation expand what can be optimized and supplied, society may become less able to answer what should count as good, worth preserving, or worth pursuing. This is the meaning vacuum. Tomoshibi Civilization expands value beyond ownership and functional supply toward reference, resonance, and recontextualization through connection-based value. It keeps an external/universal layer and an internal/particular layer in dual syntax. Humanity is assigned the civilization role of editing and drafting meaning through contradiction holding, narrative creation, boundary translation, acceptance of responsibility, and question design. AI supports structuring, optimization, prediction, consistency, comparison, and amplification. The core loop is human meaning drafting → AI ordering/amplification → human recomposition, acceptance, and responsibility. Threshold/Silence/Reversibility, five implementation layers, M/R/E/A/H relative metrics, primary logs, review, and falsification keep the design auditable and revisable.
 
 ## Concepts
 - **Meaning vacuum**: a shortage of normative/value origin even when functional capability is abundant.
@@ -32,7 +32,7 @@ The Parent does not claim that a technological singularity must occur in 2045. I
 - **Reversibility**: sunset, review, exit, rollback, reverse procedures, and compensation.
 
 ## Causal chain
-AI and automation capabilities expand → functional substitutability rises → capability and supply alone become weaker bases for differentiated value → normative origin becomes more important → a meaning vacuum emerges → connection-based value adds reference/resonance/recontextualization to observation → external/universal and internal/particular layers remain distinct but mutually referential → humans provide meaning origin, acceptance, and responsibility while AI provides ordering and amplification → T/S/R constrain escalation, concealment, and irreversible lock-in → normative/institutional/product/education/audit layers implement the design → M/R/E/A/H plus primary logs are audited → deterioration triggers review, rollback, and revision → meaning generation and re-agreement remain possible.
+AI and automation capabilities expand → functional substitutability rises → capability and supply alone become weaker bases for differentiated value → normative origin becomes more important → a meaning vacuum emerges → connection-based value adds reference/resonance/recontextualization to observation → external/universal and internal/particular layers remain distinct but mutually referential → humans provide meaning origin, acceptance, and responsibility while AI provides ordering and amplification → T/S/R constrain escalation, concealment, and irreversible lock-in → normative/institutional/product/education/audit layers implement the design → M/R/E/A/H plus primary logs are audited → deterioration triggers review and revision → meaning generation and re-agreement remain possible.
 
 ## State model
 - ai_automation_capability_expands
@@ -51,29 +51,6 @@ AI and automation capabilities expand → functional substitutability rises → 
 - relative_metrics_and_primary_logs_audited
 - revision_or_reagreement_triggered
 
-## Human / AI role separation
-### Human
-Provides value origin, meaning drafting, contradiction holding, narrative creation, boundary translation, acceptance/rejection, responsibility, and renewal of questions.
-
-### AI
-Provides structuring, ordering, comparison, prediction, optimization, consistency checking, amplification, and reuse support.
-
-### Joint loop
-```text
-human_meaning_drafting
-→ ai_structuring_ordering_amplification
-→ human_recomposition_acceptance_responsibility
-→ observation_falsification
-→ renewed_question_and_meaning_drafting
-```
-
-## Five-layer implementation
-1. **Normative**: accountability, remedy, and appeal.
-2. **Institutional**: staged adoption, time-limited agreements, re-review, and reverse procedures.
-3. **Product**: primary logs of reference, resonance, and recontextualization; separation of viewing and editing permissions.
-4. **Education**: contradiction holding, boundary translation, and question design.
-5. **Audit**: T/S/R compliance, traceable responsibility, practical exit, process health, and falsification conditions.
-
 ## Applications
 1. In AI adoption, explicitly preserve human value-origin, acceptance, and responsibility rather than searching only for tasks AI cannot perform.
 2. In organizations, separate universal legal/audit requirements from particular narratives and trust histories while keeping a translation interface.
@@ -82,13 +59,6 @@ human_meaning_drafting
 5. Audit connection-based value with multiple indicators and primary records rather than reducing it to popularity.
 
 ## Measurements and audit
-- **M / Meaning-generation index**: deep references × resonance duration ÷ total connections.
-- **R / Friction-conversion rate**: share of conflict cases that become generative updates.
-- **E / Exploration-continuation rate**: share of withdrawn trials followed by meaningful retry.
-- **A / Audit-completeness rate**: explicitness of Silence purpose/duration/responsibility, reversible conditions, and remedy procedures.
-- **H / Human-drafting ratio**: share of new concepts/narratives that follow human drafting → AI ordering.
-
-Additional audit questions:
 - Is 2045 treated as a reference point rather than a guaranteed event date?
 - Is human value defined only by residual superiority over AI?
 - Can the human-drafting → AI-ordering → human-recomposition loop be traced in practice?
