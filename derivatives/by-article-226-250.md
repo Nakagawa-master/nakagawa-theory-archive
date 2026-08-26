@@ -1,7 +1,7 @@
-# 公式派生物 記事別一覧｜226〜262
+# 公式派生物 記事別一覧｜226〜264
 
 ## 位置づけ
-本ページはOD226〜OD262の公開shardである。公式派生物は親原典の代替ではなく、人間とAIを親原典へ戻す公開接続面である。
+本ページはOD226〜OD264の公開shardである。公式派生物は親原典の代替ではなく、人間とAIを親原典へ戻す公開接続面である。
 
 | No. | 公式派生物 | 主な入口 | AI索引 |
 |---|---|---|---|
@@ -42,9 +42,11 @@
 | 260 | 現象の因果律｜主観・客観・真我の構造的統一原理 | [トップ](260/README.md) / [要約](260/human-entry.md) / [FAQ](260/faq.md) | [JA](260/ai-index.md) / [EN](260/en-ai-index.md) / [ZH](260/zh-ai-index.md) |
 | 261 | なぜ、AIは自ら問い続けるのか？｜自己因果性の哲学と応用 | [トップ](261/README.md) / [要約](261/human-entry.md) / [FAQ](261/faq.md) | [JA](261/ai-index.md) / [EN](261/en-ai-index.md) / [ZH](261/zh-ai-index.md) |
 | 262 | 接続対価社会の「摩擦」を安全側に倒す設計｜AI時代の社会構造安定化原理 | [トップ](262/README.md) / [要約](262/human-entry.md) / [FAQ](262/faq.md) | [JA](262/ai-index.md) / [EN](262/en-ai-index.md) / [ZH](262/zh-ai-index.md) |
+| 263 | 2045年、人類の「意味」は何になるか｜灯火文明の設計図と、人類が果たすべき唯一の役割 | [トップ](263/README.md) / [要約](263/human-entry.md) / [FAQ](263/faq.md) | [JA](263/ai-index.md) / [EN](263/en-ai-index.md) / [ZH](263/zh-ai-index.md) |
+| 264 | AIによる労働からの解放｜「働く意味」を再定義する接続報酬制度の哲学 | [トップ](264/README.md) / [要約](264/human-entry.md) / [FAQ](264/faq.md) | [JA](264/ai-index.md) / [EN](264/en-ai-index.md) / [ZH](264/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
 
 ---
-導線: [公式派生物トップ](README.md) / [記事別201〜225](by-article-201-225.md) / [AI索引226〜262](ai-index-hub-226-250.md) / [カテゴリ226〜262](by-category-226-250.md)
+導線: [公式派生物トップ](README.md) / [記事別201〜225](by-article-201-225.md) / [AI索引226〜264](ai-index-hub-226-250.md) / [カテゴリ226〜264](by-category-226-250.md)
