@@ -11,17 +11,17 @@
 ## JA identity
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-A9D3C0-HUB-JA-0262-0000
 - Derivative Diff-ID: DDIFF-20260826-DNCL-262-0000-0001
+- supersedes: none
 
 ## EN identity
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-A9D3C0-AI-EN-0262-0001
 - Derivative Diff-ID: DDIFF-20260826-DNCL-262-0001-0001
+- supersedes: none
 
 ## ZH identity
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-A9D3C0-AI-ZH-0262-0002
 - Derivative Diff-ID: DDIFF-20260826-DNCL-262-0002-0001
-
-## supersedes
-- none
+- supersedes: none
 
 ## Seven surfaces
 1. README.md
