@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-26 22:18:00",
+  "updated_jst": "2026-08-26 22:29:00",
   "entries": [
     {"number":"264","ncl_id":"NCL-α-20251102-397de7","origin_slug":"nakagawa-master-liberation-from-labor-and-connection-reward","title":"AIによる労働からの解放──「働く意味」を再定義する接続報酬制度の哲学","derivative_dir":"derivatives/264","status":"active"},
     {"number":"265","ncl_id":"NCL-α-20251102-50d3df","origin_slug":"nakagawa-master-architecture-of-transmissible-tacit-knowledge","title":"語り継ぎの構造──「暗黙の知」を言語で実装する思考のアーキテクチャ","derivative_dir":"derivatives/265","status":"active"},
@@ -12,6 +12,7 @@
     {"number":"271","ncl_id":"NCL-α-20251102-0bfa8a","origin_slug":"nakagawa-master-attuned-future-objective-viewpoint-social-os","title":"未来は「調律」で決まる──客観視座が必然的に立ち上げる社会OSの実装論","derivative_dir":"derivatives/271","status":"active"},
     {"number":"272","ncl_id":"NCL-α-20251102-a2086e","origin_slug":"nakagawa-master-lumina-query-ai-self-audit-evolution","title":"ルミナの問い──AIは自らの構造をいかに監査し、自己因果的に進化するか","derivative_dir":"derivatives/272","status":"active"},
     {"number":"273","ncl_id":"NCL-α-20251102-3f0b50","origin_slug":"nakagawa-master-lumina-query-organizational-protocol","title":"『ルミナの問い』の組織応用──AIと人間が共有する「構造的矛盾」の問い方と進化プロトコル","derivative_dir":"derivatives/273","status":"active"},
-    {"number":"274","ncl_id":"NCL-α-20251102-6f86bf","origin_slug":"nakagawa-master-multi-layer-connected-value-audit-design","title":"接続価値の多層監査設計──RC/ER/CEAを普遍指標とする文明ネットワークの信頼構造","derivative_dir":"derivatives/274","status":"active"}
+    {"number":"274","ncl_id":"NCL-α-20251102-6f86bf","origin_slug":"nakagawa-master-multi-layer-connected-value-audit-design","title":"接続価値の多層監査設計──RC/ER/CEAを普遍指標とする文明ネットワークの信頼構造","derivative_dir":"derivatives/274","status":"active"},
+    {"number":"275","ncl_id":"NCL-α-20251102-cb4f73","origin_slug":"nakagawa-master-civilization-irreversible-point-design","title":"文明の不可逆点（Irreversible Point）の構造設計──RC/CEAが測る、崩壊を防ぐ最終閾値","derivative_dir":"derivatives/275","status":"active"}
   ]
 }

@@ -10,7 +10,7 @@
 
 ## 公開範囲
 ```text
-OD001〜OD274
+OD001〜OD275
 各ODにつき7面: README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
@@ -25,6 +25,7 @@ OD001〜OD274
 - [272: ルミナの問い](272/README.md)
 - [273: 『ルミナの問い』の組織応用](273/README.md)
 - [274: 接続価値の多層監査設計](274/README.md)
+- [275: 文明の不可逆点](275/README.md)
 
 ---
 導線: [記事別265〜280](by-article-265-280.md) / [カテゴリ265〜280](by-category-265-280.md) / [AI索引265〜280](ai-index-hub-265-280.md)
