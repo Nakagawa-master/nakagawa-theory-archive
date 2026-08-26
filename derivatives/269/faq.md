@@ -79,4 +79,4 @@ Parentは人間の複数審級を併置します。
 批判→理解→深化→昇華を因果ごと保持し、批判を削除した成功談へ圧縮せずParentへ戻ってください。
 
 ---
-導線: [公式派生物269トップ](README.md) / [要約](human-entry.md) / [FAQ](faq.md) / [JA](ai-index.md) / [EN](en-ai-index.md) / [ZH](zh-ai-index.md) / [台帳](derivative-ledger.md)
+導線: [公式派生物269トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
