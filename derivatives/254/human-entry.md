@@ -72,8 +72,5 @@
 - rollback可能性は改革放棄ではなく安全な試行条件。
 - 公開安全版と固有ノウハウの境界を守る。
 
-## 原典回帰
-三つの代表パラドックス、軽量指標、SQS、変換層、可逆性テスト、90分プロトコル、構造ログ、倫理ガードレール、アンチパターン、統合監査要旨はParent本文へ戻って確認する。
-
 ---
 導線: [公式派生物254トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
