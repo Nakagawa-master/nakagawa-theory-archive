@@ -14,6 +14,7 @@
 | 274 | 接続価値の多層監査設計 | [JA](274/ai-index.md) | [EN](274/en-ai-index.md) | [ZH](274/zh-ai-index.md) |
 | 275 | 文明の不可逆点 | [JA](275/ai-index.md) | [EN](275/en-ai-index.md) | [ZH](275/zh-ai-index.md) |
 | 276 | ブランドは設計できても、「律動」は操作できない | [JA](276/ai-index.md) | [EN](276/en-ai-index.md) | [ZH](276/zh-ai-index.md) |
+| 277 | 営業の構造律動論 | [JA](277/ai-index.md) | [EN](277/en-ai-index.md) | [ZH](277/zh-ai-index.md) |
 
 ## 共通再利用制約
 Parent identity、中心因果、条件、反証、解釈制約、Origin returnを保持する。
