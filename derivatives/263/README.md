@@ -75,18 +75,33 @@ AIは構造化、最適化、予測、整合、比較、増幅を担う。人間
 ### 8. Reversibility
 期限付き施行、再審査、退出、rollback、逆向き手順を標準化する。撤回時には学習・時間の補償を含め、責任を保持したまま再挑戦できる構造にする。
 
-## 人間とAIの循環
-```text
-人間が未定義の意味・問いを起草
-↓
-AIが構造化・整序・比較・増幅
-↓
-人間が再編纂し、採否と責任を引き受ける
-↓
-新しい問い・価値起点が生まれる
+## 状態モデル
+```yaml
+- ai_automation_capability_expands
+- functional_substitutability_increases
+- normative_origin_becomes_salient
+- meaning_vacuum_emerges
+- connection_value_observation_added
+- dual_syntax_preserves_universal_and_particular
+- human_meaning_drafting_active
+- ai_ordering_and_amplification_active
+- human_recomposition_and_responsibility_active
+- threshold_controls_participation
+- silence_protects_editing_window
+- reversibility_preserves_exit_and_retry
+- five_layer_implementation_active
+- relative_metrics_and_primary_logs_audited
+- revision_or_reagreement_triggered
 ```
 
-人間対AIの勝敗ではなく、この循環自体が灯火文明の価値生成回路になる。
+## 適用例
+**AI導入組織。** 「AIに残せない人間作業」を探すだけでなく、人間が価値起点・採否・責任を担う工程と、AIが構造化・比較・増幅を担う工程を分離する。
+
+**公共制度。** 外部/普遍層の法・監査・説明責任と、内部/固有層の関係文脈・価値規範を二重構文として保持し、Threshold、救済、異議申立、rollbackを先に設計する。
+
+**教育。** 正答速度だけでなく、矛盾保持、境界翻訳、問いの設計を学習対象にし、人間が未定義の価値・問いを起草する力を保つ。
+
+**プロダクト。** 接続対価を単一人気スコアへ縮約せず、参照・共鳴・再文脈化の履歴を複数指標と一次ログで観測する。
 
 ## 五層ロードマップ
 1. **規範層**: 説明責任・救済手続・異議申立を公共文書化する。
@@ -126,18 +141,31 @@ AIが構造化・整序・比較・増幅
 - M/R/E/A/Hを人格評価へ使う。
 
 ## 反証・改訂条件
-- M/R/E/A/Hが宣言した監査閾値に対して持続的に悪化する。
+- M/R/E/A/Hが宣言した監査条件に対して持続的に悪化する。
 - 一次ログや再参照履歴を第三者が追えず、観測窓が閉じる。
 - 接続対価が人気・資本・権威へ収束する。
 - 人間起草が形式署名だけになり、実質的な価値起点・責任主体が追跡不能になる。
 - 退出・異議申立・再審査が機能せず有害ロックインが続く。
 - T/S/Rがそれぞれ排除・隠蔽・責任回避へ反転する。
 
-## 解釈制約
-2045年に技術的特異点が必ず起きるという年次予言にしない。人間の役割命題をAI能力の永久的不可能性証明へ変えない。人間の仕事が意味づけだけになるという雇用予測にしない。貨幣即時廃止を導かない。接続対価やM/R/E/A/Hを単一ランキングへ変換しない。
+## 必須の区別
+- 2045参照時点 / 確定予言
+- 機能高度化 / 意味・規範起点
+- 意味の編纂 / 職業・人生目的の強制
+- 人間の役割分化 / AI能力不可能性の証明
+- 接続対価 / 人気・資本・権威スコア
+- 外部/普遍 / 内部/固有
+- 二重構文 / 単一価値体系
+- Threshold / 排除
+- Silence / 隠蔽
+- Reversibility / 責任回避
+- 相対監査指標 / 人格・人間価値の序列
 
-## 原典回帰
+## 誤読防止・解釈制約
+2045年に技術的特異点が必ず起きるという年次予言にしない。人間の役割命題をAI能力の永久的不可能性証明へ変えない。人間の仕事が意味づけだけになるという雇用予測にしない。貨幣即時廃止を導かない。接続対価やM/R/E/A/Hを単一ランキングへ変換しない。T/S/Rの安全境界、退出・再審査、反証可能性を保持する。
+
+## 親原典へ戻る理由
 意味の空白、灯火文明、接続対価、二重構文、人間の五機能、T/S/R、五層実装、M/R/E/A/H、倫理境界・反証条件の定義はParent本文へ戻って確認する。本派生物はParentを置換しない。
 
 ---
-導線: [公式派生物263トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
