@@ -14,26 +14,20 @@
 - supersedes: none
 
 ## EN identity
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-0BFA8A-AI-EN-0271-0001
-- Derivative Diff-ID: DDIFF-20260826-DNCL-271-0001-0001
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-0BFA8A-HUB-EN-0271-0000
+- Derivative Diff-ID: DDIFF-20260826-DNCL-271-EN-0001
 - supersedes: none
 
 ## ZH identity
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-0BFA8A-AI-ZH-0271-0002
-- Derivative Diff-ID: DDIFF-20260826-DNCL-271-0002-0001
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-0BFA8A-HUB-ZH-0271-0000
+- Derivative Diff-ID: DDIFF-20260826-DNCL-271-ZH-0001
 - supersedes: none
 
 ## Seven surfaces
-- README.md
-- human-entry.md
-- faq.md
-- ai-index.md
-- en-ai-index.md
-- zh-ai-index.md
-- derivative-ledger.md
+README / human-entry / FAQ Q1–30 / AI-JA 13 sections / AI-EN 13 sections / AI-ZH 13 sections / derivative-ledger
 
 ## Lineage
-`NCL-α-20251102-0bfa8a / DIFF-20251102-0001 → OD271 JA hub / EN AI / ZH AI derivatives`
+`NCL-α-20251102-0bfa8a / DIFF-20251102-0001 → OD271 JA / EN / ZH hub derivatives`
 
 ## Origin return
 公式派生物271はParentの検索・理解・再利用導線であり、Parent本文を置換しない。三調律、AI媒介、自己生成原理、公共化三段階、観測変数、T/S/R、反証条件の厳密な関係はParentへ戻って確認する。
