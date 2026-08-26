@@ -85,8 +85,5 @@
 - 原典の監査指標例を固定KPIへ変えない。
 - 張力保持は問題放置ではない。
 
-## 原典回帰
-貨幣因果・接続因果、社会版二重構文、三つの運用原理、非介入的介入、統合監査要旨、監査束・参照束の詳細はParent本文へ戻って確認する。
-
 ---
 導線: [公式派生物255トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
