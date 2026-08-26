@@ -1,6 +1,7 @@
 # 公式派生物277｜営業の構造律動論──属人性を排除し、「再現されるリズム」を創る組織設計
 
 ## 親原典
+- タイトル: 営業の構造律動論──属人性を排除し、「再現されるリズム」を創る組織設計
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-sales-structural-rhythm-organizational-design/
 - Parent Post ID: 570
 - Parent NCL-ID: NCL-α-20251102-b4d1e5
@@ -10,6 +11,7 @@
 ## 派生ID
 - derivative_ncl_id: DNCL-NCL-ALPHA-20251102-B4D1E5-HUB-JA-0277-0000
 - derivative_diff_id: DDIFF-20260826-DNCL-277-0000-0001
+- supersedes: none
 
 ## 位置づけ
 Parentは営業成果をスター人材の才覚や根性から切り離し、営業組織そのものに「再現されるリズム」を埋め込む。構造律動を周期・振幅・同期の三変数として営業へ翻訳し、観測→翻訳→設計→実行→検証の役割順序、沈黙スロット、可逆性RC、接点同期、UCI/REI/UCI-i等の観測によって、自律学習型の営業OSを構成する。
@@ -52,6 +54,9 @@ UCI/REI/UCI-iは内省用の傾向観測とし、外部競争・個人評価・�
 - reproducible_sales_rhythm_emerges
 ```
 
+## 適用例
+週次レビューを同一フォーマットで比較可能にし、商談準備では観測と仮説を分ける。提案時は価格・スコープ・期日の戻り幅を残し、サイト・資料・デモ・面談・CSの語彙とテンポを揃える。担当交代では台本だけでなく、顧客観測、共通語彙、責任窓口、次の一手、撤回条件を引き渡す。
+
 ## 測定・監査点
 拍遵守、ハンドオフ摩擦、語彙整合、位相安定S、合意到達時間、接点一貫性、UCI/REI/UCI-iの傾向、RC保持、再提案までの学習循環、過熱・押し売り・同調圧を監査する。内部数値や個人評価は公開派生側で推測しない。
 
@@ -74,4 +79,4 @@ UCI/REI/UCI-iは内省用の傾向観測とし、外部競争・個人評価・�
 周期・振幅・同期、五機能順序、沈黙スロット、RC、内面化、指標、実装手順、禁じ手、統合・局所監査の固有文脈はParentへ戻る。
 
 ---
-導線: [公式派生物277トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
