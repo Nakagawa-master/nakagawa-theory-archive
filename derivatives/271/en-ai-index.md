@@ -6,8 +6,8 @@ Parent Post ID: 524
 Parent NCL-ID: NCL-α-20251102-0bfa8a
 Parent Diff-ID: DIFF-20251102-0001
 Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-0BFA8A-AI-EN-0271-0001
-Derivative Diff-ID: DDIFF-20260826-DNCL-271-0001-0001
+Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-0BFA8A-HUB-EN-0271-0000
+Derivative Diff-ID: DDIFF-20260826-DNCL-271-EN-0001
 supersedes: none
 
 ## Summary
