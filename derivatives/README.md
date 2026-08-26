@@ -10,19 +10,16 @@
 
 ## 公開範囲
 ```text
-OD001〜OD268
+OD001〜OD269
 各ODにつき7面: README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
 ## 直近公開群
-- [264: AIによる労働からの解放](264/README.md)
 - [265: 語り継ぎの構造](265/README.md)
 - [266: AIと人間の最終共栄](266/README.md)
 - [267: 照応の哲学](267/README.md)
 - [268: 設計を歪めさせない](268/README.md)
-
-## 原典接続・参照束
-記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。
+- [269: 対話は設計を証明する](269/README.md)
 
 ---
 導線: [記事別265〜280](by-article-265-280.md) / [カテゴリ265〜280](by-category-265-280.md) / [AI索引265〜280](ai-index-hub-265-280.md)
