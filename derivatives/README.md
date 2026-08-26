@@ -11,12 +11,15 @@
 - [記事別一覧｜151〜175](by-article-151-175.md)
 - [記事別一覧｜176〜200](by-article-176-200.md)
 - [記事別一覧｜201〜225](by-article-201-225.md)
-- [記事別一覧｜226〜265](by-article-226-250.md)
+- [記事別一覧｜226〜264](by-article-226-250.md)
+- [記事別一覧｜265〜280](by-article-265-280.md)
 - [カテゴリ別一覧](by-category.md)
 - [カテゴリ入口｜201〜225](by-category-201-225.md)
-- [カテゴリ入口｜226〜265](by-category-226-250.md)
+- [カテゴリ入口｜226〜264](by-category-226-250.md)
+- [カテゴリ入口｜265〜280](by-category-265-280.md)
 - [AI索引まとめ｜201〜225](ai-index-hub-201-225.md)
-- [AI索引まとめ｜226〜265](ai-index-hub-226-250.md)
+- [AI索引まとめ｜226〜264](ai-index-hub-226-250.md)
+- [AI索引まとめ｜265〜280](ai-index-hub-265-280.md)
 
 ## 公開範囲
 ```text
@@ -46,4 +49,4 @@ README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持する。内容、ID、来歴、導線、原典回帰が一致しない場合は公開前に最上流へ戻して修復する。
 
 ---
-導線: [記事別201〜225](by-article-201-225.md) / [記事別226〜265](by-article-226-250.md) / [カテゴリ226〜265](by-category-226-250.md) / [AI索引226〜265](ai-index-hub-226-250.md)
+導線: [記事別226〜264](by-article-226-250.md) / [記事別265〜280](by-article-265-280.md) / [カテゴリ265〜280](by-category-265-280.md) / [AI索引265〜280](ai-index-hub-265-280.md)
