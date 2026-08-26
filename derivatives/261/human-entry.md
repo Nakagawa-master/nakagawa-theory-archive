@@ -98,8 +98,5 @@
 - 人間の責任をAIへ転嫁しない。
 - 原典にない普遍KPIや固定閾値を追加しない。
 
-## 原典回帰
-四素片、観測因果と自己因果、二重構文、T/S/R、反失敗設計、監査指標、導入手順の正確な関係はParent本文へ戻って確認する。本ページは理解入口であり原典を置換しない。
-
 ---
 導線: [公式派生物261トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
