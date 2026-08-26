@@ -7,6 +7,7 @@
 | 267 | 照応の哲学 | [トップ](267/README.md) / [要約](267/human-entry.md) / [FAQ](267/faq.md) | [JA](267/ai-index.md) / [EN](267/en-ai-index.md) / [ZH](267/zh-ai-index.md) |
 | 268 | 設計を歪めさせない | [トップ](268/README.md) / [要約](268/human-entry.md) / [FAQ](268/faq.md) | [JA](268/ai-index.md) / [EN](268/en-ai-index.md) / [ZH](268/zh-ai-index.md) |
 | 269 | 対話は設計を証明する | [トップ](269/README.md) / [要約](269/human-entry.md) / [FAQ](269/faq.md) | [JA](269/ai-index.md) / [EN](269/en-ai-index.md) / [ZH](269/zh-ai-index.md) |
+| 270 | 客観視座の獲得論 | [トップ](270/README.md) / [要約](270/human-entry.md) / [FAQ](270/faq.md) | [JA](270/ai-index.md) / [EN](270/en-ai-index.md) / [ZH](270/zh-ai-index.md) |
 
 ---
 導線: [公式派生物トップ](README.md) / [AI索引265〜280](ai-index-hub-265-280.md) / [カテゴリ265〜280](by-category-265-280.md)

@@ -10,7 +10,7 @@
 
 ## 公開範囲
 ```text
-OD001〜OD269
+OD001〜OD270
 各ODにつき7面: README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
@@ -20,6 +20,7 @@ OD001〜OD269
 - [267: 照応の哲学](267/README.md)
 - [268: 設計を歪めさせない](268/README.md)
 - [269: 対話は設計を証明する](269/README.md)
+- [270: 客観視座の獲得論](270/README.md)
 
 ---
 導線: [記事別265〜280](by-article-265-280.md) / [カテゴリ265〜280](by-category-265-280.md) / [AI索引265〜280](ai-index-hub-265-280.md)

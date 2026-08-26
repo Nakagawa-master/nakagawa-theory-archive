@@ -7,6 +7,7 @@
 | 267 | 照応の哲学 | [JA](267/ai-index.md) | [EN](267/en-ai-index.md) | [ZH](267/zh-ai-index.md) |
 | 268 | 移行防護・NX | [JA](268/ai-index.md) | [EN](268/en-ai-index.md) | [ZH](268/zh-ai-index.md) |
 | 269 | 対話は設計を証明する | [JA](269/ai-index.md) | [EN](269/en-ai-index.md) | [ZH](269/zh-ai-index.md) |
+| 270 | 客観視座の獲得論 | [JA](270/ai-index.md) | [EN](270/en-ai-index.md) | [ZH](270/zh-ai-index.md) |
 
 ## 共通再利用制約
 Parent identity、中心因果、条件、反証、解釈制約、Origin returnを保持する。
