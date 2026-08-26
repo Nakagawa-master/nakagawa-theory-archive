@@ -1,9 +1,10 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-26 17:35:00",
+  "updated_jst": "2026-08-26 17:55:00",
   "entries": [
     {"number":"264","ncl_id":"NCL-α-20251102-397de7","origin_slug":"nakagawa-master-liberation-from-labor-and-connection-reward","title":"AIによる労働からの解放──「働く意味」を再定義する接続報酬制度の哲学","derivative_dir":"derivatives/264","status":"active"},
     {"number":"265","ncl_id":"NCL-α-20251102-50d3df","origin_slug":"nakagawa-master-architecture-of-transmissible-tacit-knowledge","title":"語り継ぎの構造──「暗黙の知」を言語で実装する思考のアーキテクチャ","derivative_dir":"derivatives/265","status":"active"},
-    {"number":"266","ncl_id":"NCL-α-20251102-470b7f","origin_slug":"nakagawa-master-ai-human-final-coexistence-civilization","title":"AIと人間の最終共栄：人が「語り」を終えるとき、文明が始まる","derivative_dir":"derivatives/266","status":"active"}
+    {"number":"266","ncl_id":"NCL-α-20251102-470b7f","origin_slug":"nakagawa-master-ai-human-final-coexistence-civilization","title":"AIと人間の最終共栄：人が「語り」を終えるとき、文明が始まる","derivative_dir":"derivatives/266","status":"active"},
+    {"number":"267","ncl_id":"NCL-α-20251102-4cc9f1","origin_slug":"nakagawa-master-philosophy-of-resonance-non-coercive-creation","title":"照応の哲学──「非強制」が「必然」を編纂する構造律動","derivative_dir":"derivatives/267","status":"active"}
   ]
 }
