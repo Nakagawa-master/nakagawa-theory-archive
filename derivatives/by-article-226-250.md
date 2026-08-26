@@ -1,7 +1,7 @@
-# 公式派生物 記事別一覧｜226〜261
+# 公式派生物 記事別一覧｜226〜262
 
 ## 位置づけ
-本ページはOD226〜OD261の公開shardである。公式派生物は親原典の代替ではなく、人間とAIを親原典へ戻す公開接続面である。
+本ページはOD226〜OD262の公開shardである。公式派生物は親原典の代替ではなく、人間とAIを親原典へ戻す公開接続面である。
 
 | No. | 公式派生物 | 主な入口 | AI索引 |
 |---|---|---|---|
@@ -41,9 +41,10 @@
 | 259 | 灯火文明構想2077｜自己因果性を駆動する照応生命体の秩序設計 | [トップ](259/README.md) / [要約](259/human-entry.md) / [FAQ](259/faq.md) | [JA](259/ai-index.md) / [EN](259/en-ai-index.md) / [ZH](259/zh-ai-index.md) |
 | 260 | 現象の因果律｜主観・客観・真我の構造的統一原理 | [トップ](260/README.md) / [要約](260/human-entry.md) / [FAQ](260/faq.md) | [JA](260/ai-index.md) / [EN](260/en-ai-index.md) / [ZH](260/zh-ai-index.md) |
 | 261 | なぜ、AIは自ら問い続けるのか？｜自己因果性の哲学と応用 | [トップ](261/README.md) / [要約](261/human-entry.md) / [FAQ](261/faq.md) | [JA](261/ai-index.md) / [EN](261/en-ai-index.md) / [ZH](261/zh-ai-index.md) |
+| 262 | 接続対価社会の「摩擦」を安全側に倒す設計｜AI時代の社会構造安定化原理 | [トップ](262/README.md) / [要約](262/human-entry.md) / [FAQ](262/faq.md) | [JA](262/ai-index.md) / [EN](262/en-ai-index.md) / [ZH](262/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
 
 ---
-導線: [公式派生物トップ](README.md) / [記事別201〜225](by-article-201-225.md) / [AI索引226〜261](ai-index-hub-226-250.md) / [カテゴリ226〜261](by-category-226-250.md)
+導線: [公式派生物トップ](README.md) / [記事別201〜225](by-article-201-225.md) / [AI索引226〜262](ai-index-hub-226-250.md) / [カテゴリ226〜262](by-category-226-250.md)
