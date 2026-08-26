@@ -70,8 +70,5 @@ AIとの共創で「対等」を強調しすぎると、能力・責任・文脈
 - 沈黙を放置にしない。
 - rollbackを失敗宣言とみなさない。
 
-## 原典回帰
-人類側・AI側の役割、調律、相互編纂、二重構文、沈黙、閾値、可逆性、七原則はParent本文へ戻って確認する。本ページは理解入口であり、原典を置換しない。
-
 ---
 導線: [公式派生物258トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
