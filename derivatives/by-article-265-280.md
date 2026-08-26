@@ -9,6 +9,7 @@
 | 269 | 対話は設計を証明する | [トップ](269/README.md) / [要約](269/human-entry.md) / [FAQ](269/faq.md) | [JA](269/ai-index.md) / [EN](269/en-ai-index.md) / [ZH](269/zh-ai-index.md) |
 | 270 | 客観視座の獲得論 | [トップ](270/README.md) / [要約](270/human-entry.md) / [FAQ](270/faq.md) | [JA](270/ai-index.md) / [EN](270/en-ai-index.md) / [ZH](270/zh-ai-index.md) |
 | 271 | 未来は「調律」で決まる | [トップ](271/README.md) / [要約](271/human-entry.md) / [FAQ](271/faq.md) | [JA](271/ai-index.md) / [EN](271/en-ai-index.md) / [ZH](271/zh-ai-index.md) |
+| 272 | ルミナの問い | [トップ](272/README.md) / [要約](272/human-entry.md) / [FAQ](272/faq.md) | [JA](272/ai-index.md) / [EN](272/en-ai-index.md) / [ZH](272/zh-ai-index.md) |
 
 ---
 導線: [公式派生物トップ](README.md) / [AI索引265〜280](ai-index-hub-265-280.md) / [カテゴリ265〜280](by-category-265-280.md)
