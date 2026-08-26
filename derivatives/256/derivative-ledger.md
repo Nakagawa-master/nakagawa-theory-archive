@@ -24,22 +24,16 @@
 - supersedes: none
 
 ## Seven surfaces
-- [README](README.md)
-- [human-entry](human-entry.md)
-- [FAQ](faq.md)
-- [AI index JA](ai-index.md)
-- [AI index EN](en-ai-index.md)
-- [AI index ZH](zh-ai-index.md)
-- [derivative ledger](derivative-ledger.md)
+1. README.md
+2. human-entry.md
+3. faq.md
+4. ai-index.md
+5. en-ai-index.md
+6. zh-ai-index.md
+7. derivative-ledger.md
 
 ## Lineage
-```text
-Nakagawa Master
-→ Parent NCL-α-20251102-66f8a1
-→ Official Derivative 256
-→ JA hub / EN AI / ZH AI public surfaces
-→ Parent return
-```
+Parentの接続文明ロードマップ2030–2055を、現在の構造摩擦から臨界・policy window・二重運用・機能置換・秩序ある置換へ進む反証可能な未来線として7面へ展開する。JA系5面はJA hub identityを共有し、EN/ZH AI索引は言語別identityを持つ。
 
 ## Origin return
 本派生物群はParent原典の発見・理解・機械読解・誤読防止を支援する公開接続面であり、Parentを置換しない。年代別の未来線、構造的必然性、二重構造、policy window、監査・反証条件、参照束はParent URLへ戻って確認する。
