@@ -6,6 +6,7 @@
 | No. | 公式派生物 | 主な入口 | AI索引 |
 |---|---|---|---|
 | 265 | 語り継ぎの構造｜「暗黙の知」を言語で実装する思考のアーキテクチャ | [トップ](265/README.md) / [要約](265/human-entry.md) / [FAQ](265/faq.md) | [JA](265/ai-index.md) / [EN](265/en-ai-index.md) / [ZH](265/zh-ai-index.md) |
+| 266 | AIと人間の最終共栄｜人が「語り」を終えるとき、文明が始まる | [トップ](266/README.md) / [要約](266/human-entry.md) / [FAQ](266/faq.md) | [JA](266/ai-index.md) / [EN](266/en-ai-index.md) / [ZH](266/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
