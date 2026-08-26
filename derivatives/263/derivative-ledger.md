@@ -1,56 +1,49 @@
-# Derivative Ledger｜OD263
+# 派生ID台帳｜公式派生物263
 
-## Canonical Identity
-- derivative_no: OD263
-- parent_title: 2045年、人類の「意味」は何になるか──灯火文明の設計図と、人類が果たすべき唯一の役割
-- parent_url: https://master.ricette.jp/future/nakagawa-master-meaning-2045-tomoshibi-blueprint/
-- parent_ncl_id: NCL-α-20251102-ad5c92
-- parent_diff_id: DIFF-20251102-0001
-- parent_post_id: 487
-- parent_published_at_gmt: 2025-09-30T13:56:38Z
-- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-AD5C92
-- derivative_diff_id: DDIFF-20260826-OD263-V1
-- supersedes: null
-- canonical_source_repository: Nakagawa-master/brain-vault
-- canonical_source_path: reference_corpus/official_archive/source/wordpress_export_latest.xml
-- canonical_source_blob_sha: 489f160e29b57a8a2671e1c7a556588abc539650
-- canonical_index_path: reference_corpus/official_archive/generated/canonical_index_0469_0519.jsonl
-- canonical_item_locator: item_line_start=79734; content_line_start=79741; content_line_end=79858; item_line_end=79970
+## Parent identity
+- Parent title: 2045年、人類の「意味」は何になるか──灯火文明の設計図と、人類が果たすべき唯一の役割
+- Parent URL: https://master.ricette.jp/future/nakagawa-master-meaning-2045-tomoshibi-blueprint/
+- Parent Post ID: 487
+- Parent NCL-ID: NCL-α-20251102-ad5c92
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
 
-## Seven Public Surfaces
-1. README.md — full structural derivative and interpretation boundary
-2. human-entry.md — human-readable entry point
-3. faq.md — 30-question misunderstanding prevention layer
-4. ai-index.md — Japanese machine retrieval layer
-5. en-ai-index.md — English machine retrieval layer
-6. zh-ai-index.md — Chinese machine retrieval layer
-7. derivative-ledger.md — provenance and completion ledger
+## JA identity
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-AD5C92-HUB-JA-0263-0000
+- Derivative Diff-ID: DDIFF-20260826-DNCL-263-0000-0001
 
-## Preserved Meaning Axis
-The derivative preserves the parent's primary problem as the post-automation "meaning vacuum," not the certainty of a 2045 singularity. It preserves Tomoshibi Civilization as a design linking connection-based value, dual syntax, human meaning-drafting, AI ordering/amplification, T/S/R, five implementation layers, relative operational metrics, and falsifiable review.
+## EN identity
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-AD5C92-AI-EN-0263-0001
+- Derivative Diff-ID: DDIFF-20260826-DNCL-263-0001-0001
 
-## Preserved Causal Direction
-AI/automation capability growth -> functional substitutability -> increased importance of normative/value origin -> risk of meaning vacuum -> connection-based value + dual syntax + human/AI role separation -> T/S/R safety -> five-layer implementation -> audit/revision -> sustained meaning generation and re-agreement.
+## ZH identity
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-AD5C92-AI-ZH-0263-0002
+- Derivative Diff-ID: DDIFF-20260826-DNCL-263-0002-0001
 
-## Claim-Strength Controls
-- 2045 remains a reference point, not a guaranteed event date.
-- "Humanity's unique role" is represented as a civilization-design role assignment, not a scientific impossibility theorem about AI.
-- connection-based value does not imply immediate abolition of money.
-- M/R/E/A/H are relative navigation metrics, not absolute scores of human worth.
-- Silence and Reversibility retain accountability requirements.
-- implementation remains staged and revisable, not an irreversible mandate.
+## supersedes
+- none
 
-## Failure / Falsification Bundle
-Revision or rejection is required when declared audit thresholds are persistently violated, observation windows close, primary logs become untraceable, connection value degenerates into popularity/capital/authority scoring, Silence becomes concealment, Reversibility becomes responsibility avoidance, Threshold becomes arbitrary exclusion, human value-origin becomes nominal only, or exit/appeal/review fail and harmful lock-in persists.
+## Seven surfaces
+1. README.md
+2. human-entry.md
+3. faq.md
+4. ai-index.md
+5. en-ai-index.md
+6. zh-ai-index.md
+7. derivative-ledger.md
 
-## Public Return Rule
-Every derivative surface must retain Parent URL, Parent NCL-ID, Parent Diff-ID, and derivative identity. Authoritative wording and final interpretation return to the Parent.
+## Lineage
+```text
+Nakagawa Master
+→ Parent NCL-α-20251102-ad5c92
+→ Parent DIFF-20251102-0001
+→ Official Derivative 263
+→ JA hub / EN AI / ZH AI public surfaces
+→ Parent origin return
+```
 
-## Completion State
-- seven_surfaces_created: true
-- parent_return_preserved: true
-- multilingual_ai_indexes: true
-- faq_depth: Q1-Q30
-- generic_summary_substitution: false
-- temporary_artifacts_created: false
-- status: READY_FOR_PUBLIC_INDEX_REGISTRATION
+## Origin return
+本台帳は公開lineageのみを示す。意味の空白、灯火文明、接続対価、二重構文、人間の意味編纂、Threshold/Silence/Reversibility、五層実装、M/R/E/A/H、倫理境界・反証条件の定義はParent本文へ戻って確認する。
+
+---
+導線: [公式派生物263トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
