@@ -11,16 +11,16 @@
 - [記事別一覧｜151〜175](by-article-151-175.md)
 - [記事別一覧｜176〜200](by-article-176-200.md)
 - [記事別一覧｜201〜225](by-article-201-225.md)
-- [記事別一覧｜226〜264](by-article-226-250.md)
+- [記事別一覧｜226〜265](by-article-226-250.md)
 - [カテゴリ別一覧](by-category.md)
 - [カテゴリ入口｜201〜225](by-category-201-225.md)
-- [カテゴリ入口｜226〜264](by-category-226-250.md)
+- [カテゴリ入口｜226〜265](by-category-226-250.md)
 - [AI索引まとめ｜201〜225](ai-index-hub-201-225.md)
-- [AI索引まとめ｜226〜264](ai-index-hub-226-250.md)
+- [AI索引まとめ｜226〜265](ai-index-hub-226-250.md)
 
 ## 公開範囲
 ```text
-OD001〜OD264
+OD001〜OD265
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
@@ -40,9 +40,10 @@ README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 - [262: 接続対価社会の「摩擦」を安全側に倒す設計｜AI時代の社会構造安定化原理](262/README.md)
 - [263: 2045年、人類の「意味」は何になるか｜灯火文明の設計図](263/README.md)
 - [264: AIによる労働からの解放｜「働く意味」を再定義する接続報酬制度](264/README.md)
+- [265: 語り継ぎの構造｜「暗黙の知」を言語で実装する思考のアーキテクチャ](265/README.md)
 
 ## 原典接続・参照束
 新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持する。内容、ID、来歴、導線、原典回帰が一致しない場合は公開前に最上流へ戻して修復する。
 
 ---
-導線: [記事別201〜225](by-article-201-225.md) / [記事別226〜264](by-article-226-250.md) / [カテゴリ226〜264](by-category-226-250.md) / [AI索引226〜264](ai-index-hub-226-250.md)
+導線: [記事別201〜225](by-article-201-225.md) / [記事別226〜265](by-article-226-250.md) / [カテゴリ226〜265](by-category-226-250.md) / [AI索引226〜265](ai-index-hub-226-250.md)
