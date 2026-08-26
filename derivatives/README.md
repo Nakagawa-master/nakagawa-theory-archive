@@ -10,7 +10,7 @@
 
 ## 公開範囲
 ```text
-OD001〜OD276
+OD001〜OD277
 各ODにつき7面: README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
@@ -27,6 +27,7 @@ OD001〜OD276
 - [274: 接続価値の多層監査設計](274/README.md)
 - [275: 文明の不可逆点](275/README.md)
 - [276: ブランドは設計できても、「律動」は操作できない](276/README.md)
+- [277: 営業の構造律動論](277/README.md)
 
 ---
 導線: [記事別265〜280](by-article-265-280.md) / [カテゴリ265〜280](by-category-265-280.md) / [AI索引265〜280](ai-index-hub-265-280.md)
