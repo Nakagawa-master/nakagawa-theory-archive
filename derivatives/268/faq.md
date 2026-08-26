@@ -79,4 +79,4 @@ NXを社会信用スコアや反対者排除へ変えることです。
 限定集合、非人格、比例最小、二段審級、反証、時間減衰、反転、監査の監査を必ず一体で保持し、Parentへ戻ってください。
 
 ---
-導線: [公式派生物268トップ](README.md) / [要約](human-entry.md) / [FAQ](faq.md) / [JA](ai-index.md) / [EN](en-ai-index.md) / [ZH](zh-ai-index.md) / [台帳](derivative-ledger.md)
+導線: [公式派生物268トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
