@@ -14,26 +14,20 @@
 - supersedes: none
 
 ## EN identity
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-470B7F-AI-EN-0266-0001
-- Derivative Diff-ID: DDIFF-20260826-DNCL-266-0001-0001
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-470B7F-HUB-EN-0266-0000
+- Derivative Diff-ID: DDIFF-20260826-DNCL-266-EN-0001
 - supersedes: none
 
 ## ZH identity
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-470B7F-AI-ZH-0266-0002
-- Derivative Diff-ID: DDIFF-20260826-DNCL-266-0002-0001
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-470B7F-HUB-ZH-0266-0000
+- Derivative Diff-ID: DDIFF-20260826-DNCL-266-ZH-0001
 - supersedes: none
 
 ## Seven surfaces
-- README.md
-- human-entry.md
-- faq.md
-- ai-index.md
-- en-ai-index.md
-- zh-ai-index.md
-- derivative-ledger.md
+README / human-entry / FAQ Q1–30 / AI-JA 13 sections / AI-EN 13 sections / AI-ZH 13 sections / derivative-ledger
 
 ## Lineage
-`NCL-α-20251102-470b7f / DIFF-20251102-0001 → OD266 JA hub / EN AI / ZH AI derivatives`
+`NCL-α-20251102-470b7f / DIFF-20251102-0001 → OD266 JA / EN / ZH hub derivatives`
 
 ## Origin return
 公式派生物266はParentの検索・理解・再利用導線であり、Parent本文を置換しない。過剰な語り、三つの主語、沈黙と委任、人間・AIの役割分化、監査境界の厳密な文脈を確認する場合はParent URLへ戻る。
