@@ -11,31 +11,43 @@ Derivative Diff-ID: DDIFF-20260826-DNCL-268-0001-0001
 supersedes: none
 
 ## Summary
-A sabotage-resistant transition design in which Negative eXposure (NX) acts only on a limited set of structural destructive actions, never on personality, criticism, ideology, or negotiation. NX is short, reversible, recorded, public in summary, and subject to two-level review, counterevidence, mandatory decay after correction, and audit of auditors.
+The parent addresses the risk that a transition toward connected value can be hollowed out through log tampering, arbitrary thresholds, metric capture, audit interference, and loophole engineering. Its protective response is not punishment of critics, beliefs, or persons. Negative eXposure (NX) applies only to a bounded set of destructive, distorting, appropriative, or obstructive structural actions. NX must be temporary, proportional, recorded, reversible, publicly accountable, subject to two-stage review, cooling and counterevidence, mandatory decay after correction, audit-of-audit, and institutional rollback.
+
 ## Concepts
-NX; destruction; distortion; appropriation; obstruction; notice/restriction/block/isolation; two-level review; cooling window; time decay; audit of audit; ConsentToken; Connection Ledger; Audit API; NX Hook; RC; ER; CEA; S.
+Negative eXposure; NX; structural sabotage; destructive action; distortion; appropriation; obstruction; warning; restriction; blocking; isolation; two-stage review; cooling window; counterevidence; re-consensus; time decay; non-personal treatment; proportional minimum; audit-of-audit; institutional rollback; ConsentToken v2; Connection Ledger; Audit API; NX Hook; Public Summary; RC; ER; CEA; S; detection latency; withdrawal success; phase stability; lock-in health.
+
 ## Causal chain
-Transition → sabotage risk → avoid personality punishment → limit actionable set → proportional layer → first review → cooling/counterevidence → independent second review → correction/re-consensus → NX decay → institutional rollback → transition continues.
+Transition toward connected value → incumbent incentives and short-term capture threaten to hollow out the design → punishment of persons or beliefs creates a surveillance/retaliation regime → constrain scope to a bounded set of structural actions → graduate NX from warning to restriction, blocking, and protocol isolation → first review plus plural auditors → cooling window and counterevidence → independent second review → correction, prevention plan, and re-consensus → mandatory NX decay → action logs decay over time → auditors and models are themselves audited → institutional rollback if the system is wrong → both sabotage and misapplication are reduced while transition remains reversible.
+
 ## State model
-`risk → limited_action_scope → proportional_NX → first_review → cooling_counterevidence → second_review → correction_reconsensus → decay → audit_of_audit → reversible_transition`
+`transition_risk → bounded_action_scope → proportional_nx_layer → first_review → cooling_and_counterevidence → independent_second_review → corrective_action → reconsensus → mandatory_decay → auditor_audit → institutional_rollback → lower_misallocation`
+
 ## Applications
-Bounded translations for public systems, companies, education and AI operations. Policy criticism, ideological expression and negotiation remain outside NX.
+Public governance can combine trial rules, expiry, and re-review while limiting NX to structural circumvention. Organizations can use feature flags, staged deployment, dark launches, and before/after audit. Education can target abusive appropriation while preserving revision and resubmission. AI operations can use layered filters, rollback, and mandatory human two-stage review. These remain architecture translations, not claims of universal deployment.
+
 ## Measurements and audit
-RC, ER, CEA, S, detection delay, withdrawal success, phase stability, time to re-consensus, lock-in health, rumor cascades and normative disruption.
+Audit whether NX scope expands into criticism, negotiation, or belief; whether expiry, records, reversal, cooling, and counterevidence are genuinely usable; whether NX decays after correction; whether personal scores or permanent blacklists emerge; and whether auditor/model uncertainty can be inspected. RC, ER, CEA, S, sabotage-detection latency, withdrawal success, phase stability, time to re-consensus, and lock-in health should be evaluated together. Parent-specific numbers must remain contextual examples.
+
 ## Validity conditions
-Limited action set; non-personal targeting; time limits; records; reversal; two-level review; counterevidence; proportional minimum; audit of auditors; institutional rollback.
+Scope must remain limited to destructive/distorting/appropriative/obstructive structural actions. Belief, policy criticism, satire, negotiation, alternatives, and exit remain outside scope. NX must be temporary, recorded, reversible, and minimally proportional. First and independent second review, cooling, and counterevidence must be available. Personal scoring is prohibited. Correction must trigger decay. Auditors and audit models are audited, and institutional rollback remains possible.
+
 ## Failure conditions
-Opponent suppression, personality scoring, permanent blacklists, blocked appeals, infallible auditors, closed reversal, or treating criticism as sabotage.
+NX becomes retaliation against opposition; identity scores or permanent stigma are created; policy criticism or negotiation is classified as sabotage; cooling is ceremonial and counterevidence is ignored; auditors are treated as infallible; reversal is blocked; intensity becomes unrelated to expected harm; corrected actors remain permanently restricted.
+
 ## Falsification conditions
-Revise if misapplication cannot be repaired, withdrawal falls, phase stability worsens, re-consensus slows, lock-in degrades, or normative disruption rises.
+Revise or reject the protection architecture if misapplication cannot be repaired, scope expands into beliefs or criticism, withdrawal success declines, re-consensus slows, lock-in strengthens, harmful rumor/norm capture worsens across observation windows, or audit-of-audit cannot correct biased models.
+
 ## Required distinctions
-Protection / retaliation; action / person; NX / social credit; cooling / procedural suppression; audit / authority; reversal / immunity; criticism / structural sabotage.
+Protection / retaliation; structural action / person; NX / social credit scoring; temporary restriction / permanent exclusion; cooling / suppression of appeal; audit / infallible authority; reversal / immunity; policy criticism / hollowing out the system; proportional minimum / exemplary punishment; action log / identity history.
+
 ## Interpretation constraints
-Do not generalize the Parent’s strong transition vision into permission for real-world punishment. Do not universalize its numerical examples or formulas.
+Do not convert the parent’s strong transition thesis into a general authorization to sanction real persons or groups. NX is valid only with bounded scope, temporariness, reversibility, public accountability, non-personal targeting, two-stage review, and counterevidence. Concrete time windows or numerical examples remain parent-specific and must not be transplanted as universal thresholds. Future architecture must not be described as already existing social fact.
+
 ## Search terms
-Negative eXposure, NX, sabotage resistance, two-level review, cooling window, reversal, audit of audit, ConsentToken, Connection Ledger, RC, ER, CEA, S.
+NX, Negative eXposure, transition protection, structural sabotage, log tampering, threshold manipulation, metric capture, audit interference, two-stage review, cooling window, counterevidence, proportional minimum, time decay, audit-of-audit, ConsentToken, Connection Ledger, Audit API, NX Hook, rollback, RC, ER, CEA, S.
+
 ## Origin return
-Return to the Parent for target set, procedure, ethics, KPIs and Phase 0–3.
+Return to the Parent for the exact bounded NX action set, four intervention layers, two-stage review, three reversibility principles, Phase 0–3, ethical seals, implementation components, KPI context, and integrated audit. This index does not replace the Parent.
 
 ---
-Navigation: [Top](README.md) / [Human](human-entry.md) / [FAQ](faq.md) / [JA](ai-index.md) / [EN](en-ai-index.md) / [ZH](zh-ai-index.md) / [Ledger](derivative-ledger.md)
+Navigation: [Official Derivative 268 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI Index — Japanese](ai-index.md) / [AI Index — English](en-ai-index.md) / [AI Index — Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
