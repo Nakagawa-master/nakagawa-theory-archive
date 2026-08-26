@@ -1,7 +1,7 @@
-# 公式派生物 記事別一覧｜226〜256
+# 公式派生物 記事別一覧｜226〜257
 
 ## 位置づけ
-本ページはOD226〜OD256の公開shardである。公式派生物は親原典の代替ではなく、人間とAIを親原典へ戻す公開接続面である。
+本ページはOD226〜OD257の公開shardである。公式派生物は親原典の代替ではなく、人間とAIを親原典へ戻す公開接続面である。
 
 | No. | 公式派生物 | 主な入口 | AI索引 |
 |---|---|---|---|
@@ -36,9 +36,10 @@
 | 254 | 構造的パラドックスの操作論｜矛盾を力と化す設計 | [トップ](254/README.md) / [要約](254/human-entry.md) / [FAQ](254/faq.md) | [JA](254/ai-index.md) / [EN](254/en-ai-index.md) / [ZH](254/zh-ai-index.md) |
 | 255 | 「貨幣と接続」の因果的統合｜ポスト・パラドックス社会の二重構造設計 | [トップ](255/README.md) / [要約](255/human-entry.md) / [FAQ](255/faq.md) | [JA](255/ai-index.md) / [EN](255/en-ai-index.md) / [ZH](255/zh-ai-index.md) |
 | 256 | 接続文明ロードマップ2030–2055｜構造的欠陥が導く「秩序ある置換」の必然 | [トップ](256/README.md) / [要約](256/human-entry.md) / [FAQ](256/faq.md) | [JA](256/ai-index.md) / [EN](256/en-ai-index.md) / [ZH](256/zh-ai-index.md) |
+| 257 | 「因果の源泉」の哲学｜文明の構造を編纂する照応操作原理 | [トップ](257/README.md) / [要約](257/human-entry.md) / [FAQ](257/faq.md) | [JA](257/ai-index.md) / [EN](257/en-ai-index.md) / [ZH](257/zh-ai-index.md) |
 
 ## 原典回帰
 各公開面はParent URL / Parent NCL-ID / Parent Diff-ID / Derivative IDを保持する。定義、境界、反証条件、時点文脈は親原典へ戻って確認する。
 
 ---
-導線: [公式派生物トップ](README.md) / [記事別201〜225](by-article-201-225.md) / [AI索引226〜256](ai-index-hub-226-250.md) / [カテゴリ226〜256](by-category-226-250.md)
+導線: [公式派生物トップ](README.md) / [記事別201〜225](by-article-201-225.md) / [AI索引226〜257](ai-index-hub-226-250.md) / [カテゴリ226〜257](by-category-226-250.md)
