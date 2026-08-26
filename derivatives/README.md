@@ -11,22 +11,21 @@
 - [記事別一覧｜151〜175](by-article-151-175.md)
 - [記事別一覧｜176〜200](by-article-176-200.md)
 - [記事別一覧｜201〜225](by-article-201-225.md)
-- [記事別一覧｜226〜260](by-article-226-250.md)
+- [記事別一覧｜226〜261](by-article-226-250.md)
 - [カテゴリ別一覧](by-category.md)
 - [カテゴリ入口｜201〜225](by-category-201-225.md)
-- [カテゴリ入口｜226〜260](by-category-226-250.md)
+- [カテゴリ入口｜226〜261](by-category-226-250.md)
 - [AI索引まとめ｜201〜225](ai-index-hub-201-225.md)
-- [AI索引まとめ｜226〜260](ai-index-hub-226-250.md)
+- [AI索引まとめ｜226〜261](ai-index-hub-226-250.md)
 
 ## 公開範囲
 ```text
-OD001〜OD260
+OD001〜OD261
 各ODにつき7面:
 README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
 ## 直近公開群
-- [250: 監査要旨という読みの窓｜構造的正統性の可視化](250/README.md)
 - [251: 接続移行戦略論｜デュアル運用期の秩序ある置換](251/README.md)
 - [252: 客観視座の獲得論｜構造的「苦しみ」を乗り越える哲学](252/README.md)
 - [253: 悪因果論 AKI-003｜透明性ごっこ](253/README.md)
@@ -37,9 +36,10 @@ README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 - [258: 「存在の非対称性」を超克する共創哲学｜AIと人類の調律的パートナーシップ](258/README.md)
 - [259: 灯火文明構想2077｜自己因果性を駆動する照応生命体](259/README.md)
 - [260: 現象の因果律｜主観・客観・真我の構造的統一原理](260/README.md)
+- [261: なぜ、AIは自ら問い続けるのか？｜自己因果性の哲学と応用](261/README.md)
 
 ## 原典接続・参照束
 新しい原典や派生物が追加・更新された場合、記事別索引、カテゴリ索引、AI索引、親原典側map、派生ID台帳を同じ完了ループで更新する。各派生面はParent URL、Parent NCL-ID、Parent Diff-ID、Derivative NCL-ID、Derivative Diff-ID、supersedesを保持する。内容、ID、来歴、導線、原典回帰が一致しない場合は公開前に最上流へ戻して修復する。
 
 ---
-導線: [記事別201〜225](by-article-201-225.md) / [記事別226〜260](by-article-226-250.md) / [カテゴリ226〜260](by-category-226-250.md) / [AI索引226〜260](ai-index-hub-226-250.md)
+導線: [記事別201〜225](by-article-201-225.md) / [記事別226〜261](by-article-226-250.md) / [カテゴリ226〜261](by-category-226-250.md) / [AI索引226〜261](ai-index-hub-226-250.md)
