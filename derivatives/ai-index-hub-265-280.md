@@ -11,6 +11,7 @@
 | 271 | 未来は「調律」で決まる | [JA](271/ai-index.md) | [EN](271/en-ai-index.md) | [ZH](271/zh-ai-index.md) |
 | 272 | ルミナの問い | [JA](272/ai-index.md) | [EN](272/en-ai-index.md) | [ZH](272/zh-ai-index.md) |
 | 273 | 『ルミナの問い』の組織応用 | [JA](273/ai-index.md) | [EN](273/en-ai-index.md) | [ZH](273/zh-ai-index.md) |
+| 274 | 接続価値の多層監査設計 | [JA](274/ai-index.md) | [EN](274/en-ai-index.md) | [ZH](274/zh-ai-index.md) |
 
 ## 共通再利用制約
 Parent identity、中心因果、条件、反証、解釈制約、Origin returnを保持する。
