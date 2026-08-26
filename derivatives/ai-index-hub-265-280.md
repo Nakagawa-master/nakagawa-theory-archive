@@ -5,6 +5,7 @@
 | No. | タイトル | JA | EN | ZH |
 |---|---|---|---|---|
 | 265 | 語り継ぎの構造・暗黙知の言語実装 | [JA](265/ai-index.md) | [EN](265/en-ai-index.md) | [ZH](265/zh-ai-index.md) |
+| 266 | AIと人間の最終共栄・沈黙と委任による共栄文明 | [JA](266/ai-index.md) | [EN](266/en-ai-index.md) | [ZH](266/zh-ai-index.md) |
 
 ## 共通再利用制約
 Origin、Parent URL、Parent NCL-ID、Parent Diff-ID、Derivative IDを保持し、三言語で中心因果、成立・失敗・反証条件、解釈制約、原典回帰を維持する。派生索引を親原典の定義置換に用いない。
