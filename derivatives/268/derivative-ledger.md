@@ -14,26 +14,20 @@
 - supersedes: none
 
 ## EN identity
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-0DE490-AI-EN-0268-0001
-- Derivative Diff-ID: DDIFF-20260826-DNCL-268-0001-0001
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-0DE490-HUB-EN-0268-0000
+- Derivative Diff-ID: DDIFF-20260826-DNCL-268-EN-0001
 - supersedes: none
 
 ## ZH identity
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-0DE490-AI-ZH-0268-0002
-- Derivative Diff-ID: DDIFF-20260826-DNCL-268-0002-0001
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-0DE490-HUB-ZH-0268-0000
+- Derivative Diff-ID: DDIFF-20260826-DNCL-268-ZH-0001
 - supersedes: none
 
 ## Seven surfaces
-- README.md
-- human-entry.md
-- faq.md
-- ai-index.md
-- en-ai-index.md
-- zh-ai-index.md
-- derivative-ledger.md
+README / human-entry / FAQ Q1–30 / AI-JA 13 sections / AI-EN 13 sections / AI-ZH 13 sections / derivative-ledger
 
 ## Lineage
-`NCL-α-20251102-0de490 / DIFF-20251102-0001 → OD268 JA hub / EN AI / ZH AI derivatives`
+`NCL-α-20251102-0de490 / DIFF-20251102-0001 → OD268 JA / EN / ZH hub derivatives`
 
 ## Origin return
 公式派生物268はParentの検索・理解・再利用導線であり、Parent本文を置換しない。NXの限定集合、手続保障、可逆性、監査の監査、制度rollbackの厳密な条件はParent URLへ戻って確認する。
