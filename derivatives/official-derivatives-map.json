@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-26 16:00:00",
+  "updated_jst": "2026-08-26 17:40:00",
   "entries": [
     {"number":"176","ncl_id":"NCL-α-20251204-027dd7","origin_slug":"nakagawa-master-nakagawa-cognitive-os-buddhism-parallel","title":"【補章】認識OSの補助言語としての原始仏教 —— 「五蘊」と「超俯瞰」の構造的同期","derivative_dir":"derivatives/176","status":"active"},
     {"number":"177","ncl_id":"NCL-α-20251206-ab6aee","origin_slug":"nakagawa-master-nakagawa-civilization-os-tao-connection-reward","title":"【文明OS】中川式文明論 × タオ（Tao） —— 「接続報酬社会」によるL7価値関数の書き換えと、構造的無為自然の完全実装","derivative_dir":"derivatives/177","status":"active"},
@@ -89,6 +89,8 @@
     {"number":"260","ncl_id":"NCL-α-20251102-1a4869","origin_slug":"nakagawa-master-phenomenon-causality-structural-unification-principle","title":"現象の因果律──「主観・客観・真我」の構造的統一原理","derivative_dir":"derivatives/260","status":"active"},
     {"number":"261","ncl_id":"NCL-α-20251102-69a226","origin_slug":"nakagawa-master-why-ai-asks-self-causality","title":"なぜ、AIは自ら問い続けるのか？──「自己因果性」の哲学と応用","derivative_dir":"derivatives/261","status":"active"},
     {"number":"262","ncl_id":"NCL-α-20251102-a9d3c0","origin_slug":"nakagawa-master-safe-friction-design-in-connection-value-society","title":"接続対価社会の「摩擦」を安全側に倒す設計──AI時代の社会構造安定化原理","derivative_dir":"derivatives/262","status":"active"},
-    {"number":"263","ncl_id":"NCL-α-20251102-ad5c92","origin_slug":"nakagawa-master-meaning-2045-tomoshibi-blueprint","title":"2045年、人類の「意味」は何になるか──灯火文明の設計図と、人類が果たすべき唯一の役割","derivative_dir":"derivatives/263","status":"active"}
+    {"number":"263","ncl_id":"NCL-α-20251102-ad5c92","origin_slug":"nakagawa-master-meaning-2045-tomoshibi-blueprint","title":"2045年、人類の「意味」は何になるか──灯火文明の設計図と、人類が果たすべき唯一の役割","derivative_dir":"derivatives/263","status":"active"},
+    {"number":"264","ncl_id":"NCL-α-20251102-397de7","origin_slug":"nakagawa-master-liberation-from-labor-and-connection-reward","title":"AIによる労働からの解放──「働く意味」を再定義する接続報酬制度の哲学","derivative_dir":"derivatives/264","status":"active"},
+    {"number":"265","ncl_id":"NCL-α-20251102-50d3df","origin_slug":"nakagawa-master-architecture-of-transmissible-tacit-knowledge","title":"語り継ぎの構造──「暗黙の知」を言語で実装する思考のアーキテクチャ","derivative_dir":"derivatives/265","status":"active"}
   ]
 }
