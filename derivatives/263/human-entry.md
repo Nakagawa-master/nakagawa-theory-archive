@@ -111,8 +111,5 @@ AIが構造化・整序・増幅
 - M/R/E/A/Hで人格や人間価値を序列化しない。
 - Silenceを隠蔽、Reversibilityを責任逃れ、Thresholdを排除へ変えない。
 
-## 原典回帰
-意味の空白、灯火文明、接続対価、二重構文、人間の五機能、T/S/R、五層実装、M/R/E/A/H、倫理境界・反証条件の厳密な定義はParent本文へ戻って確認する。本ページは原典を置換しない。
-
 ---
 導線: [公式派生物263トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
