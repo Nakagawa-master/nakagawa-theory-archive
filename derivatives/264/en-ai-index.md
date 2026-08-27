@@ -1,16 +1,16 @@
-# AI Index・English｜Official Derivative 264
+# AI Index — English | Official Derivative 264
 
-## Parent source
-- Parent title: AIによる労働からの解放──「働く意味」を再定義する接続報酬制度の哲学
+## Parent Original
+- Title: AIによる労働からの解放──「働く意味」を再定義する接続報酬制度の哲学
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-liberation-from-labor-and-connection-reward/
 - Parent Post ID: 493
 - Parent NCL-ID: NCL-α-20251102-397de7
 - Parent Diff-ID: DIFF-20251102-0001
 - Origin: Nakagawa Master
 
-## Derivative identity
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-397DE7-AI-EN-0264-0001
-- Derivative Diff-ID: DDIFF-20260826-DNCL-264-0001-0001
+## Derivative Identity
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-397DE7-HUB-EN-0264-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-264-EN-0001
 - supersedes: none
 
 ## Summary
@@ -93,4 +93,4 @@ AI liberation from labor, meaning of work, connection reward, income labor separ
 Return to the Parent for authoritative definitions of income-labor dependency, connection reward, dual operation, human/AI role separation, primary logs, audit bundles, T/S/R, reward bundles, boundaries, and falsification conditions. This index does not replace the Parent.
 
 ---
-導線: [公式派生物264トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Navigation: [OD264 Top](README.md) / [Human Entry](human-entry.md) / [FAQ](faq.md) / [JA AI Index](ai-index.md) / [EN AI Index](en-ai-index.md) / [ZH AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
