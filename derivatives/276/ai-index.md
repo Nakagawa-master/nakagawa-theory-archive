@@ -1,14 +1,17 @@
-# 公式派生物276｜AI索引・日本語
+# AI索引・日本語｜公式派生物276
 
-Parent: ブランドは設計できても、「律動」は操作できない──構造的共鳴を生む美学的マーケティング
-Parent URL: https://master.ricette.jp/theory/nakagawa-master-structural-resonance-aesthetic-marketing/
-Parent Post ID: 563
-Parent NCL-ID: NCL-α-20251102-ed39bb
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-ED39BB-HUB-JA-0276-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-276-0000-0001
-supersedes: none
+## 親原典
+- タイトル: ブランドは設計できても、「律動」は操作できない──構造的共鳴を生む美学的マーケティング
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-structural-resonance-aesthetic-marketing/
+- Parent Post ID: 563
+- Parent NCL-ID: NCL-α-20251102-ed39bb
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-ED39BB-HUB-JA-0276-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-276-0000-0001
+- supersedes: none
 
 ## Summary
 Parentは、ブランドをロゴ、広告、コピー、印象操作の集合ではなく、理念・言葉・行為・空間・接点・時間が同じ基調を反復する「存在の律動」として扱う。設計可能なのは自組織側の語彙、接点、役割、空間、記録、周期、振幅、同期、余白であり、市場側に生じる共鳴そのものではない。構造条件が時間を通じて整合すると、説明や刺激に依存せず、再訪、指名、紹介、擁護、自己説明などの自発行為として構造的共鳴が観測される。美学的マーケティングは共鳴を「作る技法」ではなく、共鳴が生じうる非言語的整合を壊さず維持する設計思想である。
