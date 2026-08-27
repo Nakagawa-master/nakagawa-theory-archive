@@ -1,14 +1,17 @@
-# 公式派生物267｜AI索引・日本語
+# AI索引・日本語｜公式派生物267
 
-Parent: 照応の哲学──「非強制」が「必然」を編纂する構造律動
-Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-philosophy-of-resonance-non-coercive-creation/
-Parent Post ID: 504
-Parent NCL-ID: NCL-α-20251102-4cc9f1
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-4CC9F1-HUB-JA-0267-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-267-0000-0001
-supersedes: none
+## 親原典
+- タイトル: 照応の哲学──「非強制」が「必然」を編纂する構造律動
+- Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-philosophy-of-resonance-non-coercive-creation/
+- Parent Post ID: 504
+- Parent NCL-ID: NCL-α-20251102-4cc9f1
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-4CC9F1-HUB-JA-0267-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-267-0000-0001
+- supersedes: none
 
 ## Summary
 親原典は、非強制を単なる寛容や放任ではなく、内部構造の整合を高めることで外部の自発的同調を引き起こす設計原理として扱う。照応は説得・支配・人気獲得ではなく、非強制、沈黙、可逆性、透明性、境界翻訳を組み合わせ、相手が恐れず退出・再考・再合意できる条件を作ることで成立する。短期の賛同ではなく、長期離反の少なさ、撤回可能性、再合意到達、介入コスト、倫理的密度を束で監査する。
