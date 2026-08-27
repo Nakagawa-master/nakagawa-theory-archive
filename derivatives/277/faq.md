@@ -1,14 +1,17 @@
 # 公式派生物277｜FAQ
 
-Parent: 営業の構造律動論──属人性を排除し、「再現されるリズム」を創る組織設計
-Parent URL: https://master.ricette.jp/theory/nakagawa-master-sales-structural-rhythm-organizational-design/
-Parent Post ID: 570
-Parent NCL-ID: NCL-α-20251102-b4d1e5
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-B4D1E5-HUB-JA-0277-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-277-0000-0001
-supersedes: none
+## 親原典
+- タイトル: 営業の構造律動論──属人性を排除し、「再現されるリズム」を創る組織設計
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-sales-structural-rhythm-organizational-design/
+- Parent Post ID: 570
+- Parent NCL-ID: NCL-α-20251102-b4d1e5
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-B4D1E5-HUB-JA-0277-0000
+- Derivative Diff-ID: DDIFF-20260826-DNCL-277-0000-0001
+- supersedes: none
 
 ## 初心者向け Q1–Q10
 ### Q1. 中心命題は？
