@@ -1,14 +1,17 @@
-# Official Derivative 267 | AI Index — English
+# AI Index — English | Official Derivative 267
 
-Parent: Philosophy of Resonance — Structural Rhythm by Which Non-Coercion Composes Necessity
-Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-philosophy-of-resonance-non-coercive-creation/
-Parent Post ID: 504
-Parent NCL-ID: NCL-α-20251102-4cc9f1
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-4CC9F1-HUB-EN-0267-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-267-EN-0001
-supersedes: none
+## Parent Original
+- Title: Philosophy of Resonance — Structural Rhythm by Which Non-Coercion Composes Necessity
+- Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-philosophy-of-resonance-non-coercive-creation/
+- Parent Post ID: 504
+- Parent NCL-ID: NCL-α-20251102-4cc9f1
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## Derivative Identity
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-4CC9F1-HUB-EN-0267-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-267-EN-0001
+- supersedes: none
 
 ## Summary
 The parent treats non-coercion not as passivity but as an operating principle in which internal structural alignment creates conditions for voluntary external resonance. Resonance is not persuasion, domination, or popularity. It depends on silence, reversibility, transparent thresholds, boundary translation, exit, review, and rollback so that another party can choose without fear. Success is audited through durable alignment, reversibility, re-consensus, low long-term defection, and limited intervention cost rather than short-term compliance.
@@ -50,4 +53,4 @@ resonance, non-coercion, structural rhythm, alignment differential, silence slot
 Return to the Parent for the exact definition of resonance, the three structural rhythm laws, media/boundary/circuit design, domain translations, the original context of R-Conv/EDI/S, risk boundaries, and integrated audit. This index supports retrieval and machine reading; it does not replace the Parent.
 
 ---
-Navigation: [Official Derivative 267 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI Index — Japanese](ai-index.md) / [AI Index — English](en-ai-index.md) / [AI Index — Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
+Navigation: [OD267 Top](README.md) / [Human Entry](human-entry.md) / [FAQ](faq.md) / [JA AI Index](ai-index.md) / [EN AI Index](en-ai-index.md) / [ZH AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
