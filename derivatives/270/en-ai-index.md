@@ -1,14 +1,17 @@
-# Official Derivative 270 | AI Index — English
+# AI Index — English | Official Derivative 270
 
-Parent: Acquiring an Objective Viewpoint — A Universal Principle for Escaping the “Prison of Subjectivity” and Resolving Structural Friction
-Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-objective-viewpoint-and-structural-friction/
-Parent Post ID: 519
-Parent NCL-ID: NCL-α-20251102-230eef
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-230EEF-HUB-EN-0270-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-270-EN-0001
-supersedes: none
+## Parent Original
+- Title: Acquiring an Objective Viewpoint — A Universal Principle for Escaping the “Prison of Subjectivity” and Resolving Structural Friction
+- Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-objective-viewpoint-and-structural-friction/
+- Parent Post ID: 519
+- Parent NCL-ID: NCL-α-20251102-230eef
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## Derivative Identity
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-230EEF-HUB-EN-0270-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-270-EN-0001
+- supersedes: none
 
 ## Summary
 The Parent treats delays and misunderstandings caused by mismatched premises, vocabulary, purposes, evaluation axes, roles, time horizons, and responsibility boundaries as structural friction. An objective viewpoint is not emotional coldness, majority opinion, or an all-knowing observer; it is an operation that places oneself, other actors, claims, and contextual conditions back onto one shared map. Emotion remains a sensor. The operating path becomes emotion → observation → translation → structural placement → action. Objectification, absorption of time differences, redefinition of purpose, questions and silence, a one-page map, three-line records, consensus units, vocabulary dictionaries, T/S/R, and withdrawal preserve reversibility and turn personal conflict into inspectable design differences.
@@ -50,4 +53,4 @@ objective viewpoint, prison of subjectivity, structural friction, translation ci
 Return to the Parent for the exact context of the prison of subjectivity, the three objective-viewpoint operations, questions and silence, public observation variables, AI/organization/education transfers, minimum public implementation set, anonymous cases, checklist, and integrated audit. This index does not replace the Parent.
 
 ---
-Navigation: [Official Derivative 270 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI Index — Japanese](ai-index.md) / [AI Index — English](en-ai-index.md) / [AI Index — Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
+Navigation: [OD270 Top](README.md) / [Human Entry](human-entry.md) / [FAQ](faq.md) / [JA AI Index](ai-index.md) / [EN AI Index](en-ai-index.md) / [ZH AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
