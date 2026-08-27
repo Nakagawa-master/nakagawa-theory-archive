@@ -1,14 +1,17 @@
-# 官方派生物275｜AI索引・中文
+# AI索引・中文｜公式派生物275
 
-Parent: 文明的不可逆点（Irreversible Point）结构设计——由RC/CEA判断崩溃前最终临界的框架
-Parent URL: https://master.ricette.jp/future/nakagawa-master-civilization-irreversible-point-design/
-Parent Post ID: 559
-Parent NCL-ID: NCL-α-20251102-cb4f73
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-CB4F73-HUB-ZH-0275-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-275-ZH-0001
-supersedes: none
+## 親原典
+- 標題: 文明的不可逆点（Irreversible Point）结构设计——由RC/CEA判断崩溃前最终临界的框架
+- Parent URL: https://master.ricette.jp/future/nakagawa-master-civilization-irreversible-point-design/
+- Parent Post ID: 559
+- Parent NCL-ID: NCL-α-20251102-cb4f73
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-CB4F73-HUB-ZH-0275-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-275-ZH-0001
+- supersedes: none
 
 ## Summary
 Parent并不把文明崩溃理解为某个突然发生的单一事件，而是把它看成一种恢复能力逐渐消失的过程：局部错误越来越难撤回，因果越来越难重新说明，合意越来越难重新形成。不可逆点（IP）因此不是公开的固定数字，而是一种趋势临界：RC（Reversal Cost，撤回成本）持续超过时间、信任、人力、政治余地等可补充资源，同时CEA（Causal Edit Adaptability，因果编辑适应力）下降，使原本应当局部修正的问题不断扩大为全局回滚。
@@ -56,4 +59,4 @@ Irreversible Point, IP, Reversal Cost, RC, Causal Edit Adaptability, CEA, 可用
 IP的精确定义、概念式A/B/C、RC与CEA的关系、Structural Airbag三原则、匿名案例、公开检查表、观察变量、综合审计、起源署名以及公开/非公开边界，都应返回Parent正文确认。本索引只是检索与机器阅读入口，不替代Parent。
 
 ---
-导线: [官方派生物275首页](README.md) / [人类读者摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
+导航: [官方派生物275首页](README.md) / [人类读者摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
