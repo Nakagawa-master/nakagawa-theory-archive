@@ -1,14 +1,17 @@
-# Official Derivative 275 | AI Index — English
+# AI Index — English | Official Derivative 275
 
-Parent: Structural Design of Civilization’s Irreversible Point — the final threshold at which RC/CEA indicates loss of recoverability
-Parent URL: https://master.ricette.jp/future/nakagawa-master-civilization-irreversible-point-design/
-Parent Post ID: 559
-Parent NCL-ID: NCL-α-20251102-cb4f73
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-CB4F73-HUB-EN-0275-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-275-EN-0001
-supersedes: none
+## Parent Original
+- Title: Structural Design of Civilization’s Irreversible Point — the final threshold at which RC/CEA indicates loss of recoverability
+- Parent URL: https://master.ricette.jp/future/nakagawa-master-civilization-irreversible-point-design/
+- Parent Post ID: 559
+- Parent NCL-ID: NCL-α-20251102-cb4f73
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## Derivative Identity
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-CB4F73-HUB-EN-0275-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-275-EN-0001
+- supersedes: none
 
 ## Summary
 The Parent treats civilizational collapse not as a single dramatic instant but as a progressive loss of the capacity to reverse local errors, reconstruct causal explanations, and form agreement again. The Irreversible Point (IP) is therefore not a disclosed fixed number. It is a trend-critical condition in which Reversal Cost (RC) persistently outruns replenishable resources while Causal Edit Adaptability (CEA) declines, causing what should be local corrections to expand into system-wide rollback.
@@ -56,4 +59,4 @@ Irreversible Point, IP, Reversal Cost, RC, Causal Edit Adaptability, CEA, availa
 Return to the Parent for the precise IP definition, conceptual formulas A/B/C, the RC/CEA relation, the three Structural Airbag principles, anonymous cases, public checklist, observation variables, integrated audit, origin signature, and disclosure boundaries. This index is a retrieval and machine-reading surface; it does not replace the Parent.
 
 ---
-Navigation: [Official Derivative 275 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI index — Japanese](ai-index.md) / [AI index — English](en-ai-index.md) / [AI index — Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
+Navigation: [OD275 Top](README.md) / [Human Entry](human-entry.md) / [FAQ](faq.md) / [JA AI Index](ai-index.md) / [EN AI Index](en-ai-index.md) / [ZH AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
