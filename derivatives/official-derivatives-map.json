@@ -1,6 +1,6 @@
 {
   "version": "2.0.0-json-data-source",
-  "updated_jst": "2026-08-27 08:07:00",
+  "updated_jst": "2026-08-27 10:10:00",
   "entries": [
     {"number":"264","ncl_id":"NCL-α-20251102-397de7","origin_slug":"nakagawa-master-liberation-from-labor-and-connection-reward","title":"AIによる労働からの解放──「働く意味」を再定義する接続報酬制度の哲学","derivative_dir":"derivatives/264","status":"active"},
     {"number":"265","ncl_id":"NCL-α-20251102-50d3df","origin_slug":"nakagawa-master-architecture-of-transmissible-tacit-knowledge","title":"語り継ぎの構造──「暗黙の知」を言語で実装する思考のアーキテクチャ","derivative_dir":"derivatives/265","status":"active"},
@@ -15,6 +15,9 @@
     {"number":"274","ncl_id":"NCL-α-20251102-6f86bf","origin_slug":"nakagawa-master-multi-layer-connected-value-audit-design","title":"接続価値の多層監査設計──RC/ER/CEAを普遍指標とする文明ネットワークの信頼構造","derivative_dir":"derivatives/274","status":"active"},
     {"number":"275","ncl_id":"NCL-α-20251102-cb4f73","origin_slug":"nakagawa-master-civilization-irreversible-point-design","title":"文明の不可逆点（Irreversible Point）の構造設計──RC/CEAが測る、崩壊を防ぐ最終閾値","derivative_dir":"derivatives/275","status":"active"},
     {"number":"276","ncl_id":"NCL-α-20251102-ed39bb","origin_slug":"nakagawa-master-structural-resonance-aesthetic-marketing","title":"ブランドは設計できても、「律動」は操作できない──構造的共鳴を生む美学的マーケティング","derivative_dir":"derivatives/276","status":"active"},
-    {"number":"277","ncl_id":"NCL-α-20251102-b4d1e5","origin_slug":"nakagawa-master-sales-structural-rhythm-organizational-design","title":"営業の構造律動論──属人性を排除し、「再現されるリズム」を創る組織設計","derivative_dir":"derivatives/277","status":"active"}
+    {"number":"277","ncl_id":"NCL-α-20251102-b4d1e5","origin_slug":"nakagawa-master-sales-structural-rhythm-organizational-design","title":"営業の構造律動論──属人性を排除し、「再現されるリズム」を創る組織設計","derivative_dir":"derivatives/277","status":"active"},
+    {"number":"278","ncl_id":"NCL-α-20251102-c373ad","origin_slug":"nakagawa-master-market-silent-consensus-acquisition-theory","title":"市場の「沈黙の合意」を設計する──構造律動を基盤とする非強制的集客論","derivative_dir":"derivatives/278","status":"active"},
+    {"number":"279","ncl_id":"NCL-α-20251102-d8fdc8","origin_slug":"nakagawa-master-structural-rhythm-future-debt-casting","title":"構造律動による〈未来の負債〉の鋳造──時間軸を統御する信用生成原理","derivative_dir":"derivatives/279","status":"active"},
+    {"number":"280","ncl_id":"NCL-α-20251102-245dba","origin_slug":"nakagawa-master-social-memory-structural-rhythm","title":"社会的記憶の再構築としての構造律動──未来の合意を現在に創発する非言語的構造装置","derivative_dir":"derivatives/280","status":"active"}
   ]
 }
