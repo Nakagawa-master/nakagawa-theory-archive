@@ -1,14 +1,17 @@
-# Official Derivative 271 | AI Index — English
+# AI Index — English | Official Derivative 271
 
-Parent: The Future Is Decided by “Attunement” — Implementing the Social OS Necessarily Raised by the Objective Viewpoint
-Parent URL: https://master.ricette.jp/future/nakagawa-master-attuned-future-objective-viewpoint-social-os/
-Parent Post ID: 524
-Parent NCL-ID: NCL-α-20251102-0bfa8a
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-0BFA8A-HUB-EN-0271-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-271-EN-0001
-supersedes: none
+## Parent Original
+- Title: The Future Is Decided by “Attunement” — Implementing the Social OS Necessarily Raised by the Objective Viewpoint
+- Parent URL: https://master.ricette.jp/future/nakagawa-master-attuned-future-objective-viewpoint-social-os/
+- Parent Post ID: 524
+- Parent NCL-ID: NCL-α-20251102-0bfa8a
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## Derivative Identity
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-0BFA8A-HUB-EN-0271-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-271-EN-0001
+- supersedes: none
 
 ## Summary
 The Parent extends the objective viewpoint into a future implementation model called an attuned civilization: social friction is reduced by aligning conditions rather than by victory or domination. The objective viewpoint functions as a posture engine for attuning vocabulary, roles, and time. AI is positioned not as judge or ruler but as a medium that externalizes intent, synchronizes terminology, and preserves condition differences. A minimal reproducible framework—declared consensus unit, explicit sufficient conditions, and a three-line record—can spread through posture sharing, framework transfer, and public habit, forming a social OS that is not tied to one product or institution.
@@ -50,4 +53,4 @@ attuned future, attuned civilization, objective viewpoint, social OS, posture en
 Return to the Parent for the exact context of the three attunements, AI mediation, the self-generating three-part framework, three implementation causal patterns, public-safety boundaries, the three stages from shared posture to public habit, implementation checklist, observable variables, integrated/local audit, and reference cluster. This index does not replace the Parent.
 
 ---
-Navigation: [Official Derivative 271 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI Index — Japanese](ai-index.md) / [AI Index — English](en-ai-index.md) / [AI Index — Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
+Navigation: [OD271 Top](README.md) / [Human Entry](human-entry.md) / [FAQ](faq.md) / [JA AI Index](ai-index.md) / [EN AI Index](en-ai-index.md) / [ZH AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
