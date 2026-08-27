@@ -1,14 +1,17 @@
-# Official Derivative 268 | AI Index — English
+# AI Index — English | Official Derivative 268
 
-Parent: Preventing Design Distortion — Transition Protection Architecture for Limited Negative eXposure
-Parent URL: https://master.ricette.jp/society/nakagawa-master-sabotage-proof-transition-to-connected-value/
-Parent Post ID: 508
-Parent NCL-ID: NCL-α-20251102-0de490
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-0DE490-HUB-EN-0268-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-268-EN-0001
-supersedes: none
+## Parent Original
+- Title: Preventing Design Distortion — Transition Protection Architecture for Limited Negative eXposure
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-sabotage-proof-transition-to-connected-value/
+- Parent Post ID: 508
+- Parent NCL-ID: NCL-α-20251102-0de490
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## Derivative Identity
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-0DE490-HUB-EN-0268-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-268-EN-0001
+- supersedes: none
 
 ## Summary
 The parent addresses the risk that a transition toward connected value can be hollowed out through log tampering, arbitrary thresholds, metric capture, audit interference, and loophole engineering. Its protective response is not punishment of critics, beliefs, or persons. Negative eXposure (NX) applies only to a bounded set of destructive, distorting, appropriative, or obstructive structural actions. NX must be temporary, proportional, recorded, reversible, publicly accountable, subject to two-stage review, cooling and counterevidence, mandatory decay after correction, audit-of-audit, and institutional rollback.
@@ -50,4 +53,4 @@ NX, Negative eXposure, transition protection, structural sabotage, log tampering
 Return to the Parent for the exact bounded NX action set, four intervention layers, two-stage review, three reversibility principles, Phase 0–3, ethical seals, implementation components, KPI context, and integrated audit. This index does not replace the Parent.
 
 ---
-Navigation: [Official Derivative 268 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI Index — Japanese](ai-index.md) / [AI Index — English](en-ai-index.md) / [AI Index — Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
+Navigation: [OD268 Top](README.md) / [Human Entry](human-entry.md) / [FAQ](faq.md) / [JA AI Index](ai-index.md) / [EN AI Index](en-ai-index.md) / [ZH AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
