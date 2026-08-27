@@ -1,14 +1,17 @@
-# 公式派生物265｜AI索引・日本語
+# AI索引・日本語｜公式派生物265
 
-Parent: 語り継ぎの構造──「暗黙の知」を言語で実装する思考のアーキテクチャ
-Parent URL: https://master.ricette.jp/theory/nakagawa-master-architecture-of-transmissible-tacit-knowledge/
-Parent Post ID: 497
-Parent NCL-ID: NCL-α-20251102-50d3df
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-50D3DF-HUB-JA-0265-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-265-0000-0001
-supersedes: none
+## 親原典
+- タイトル: 語り継ぎの構造──「暗黙の知」を言語で実装する思考のアーキテクチャ
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-architecture-of-transmissible-tacit-knowledge/
+- Parent Post ID: 497
+- Parent NCL-ID: NCL-α-20251102-50d3df
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-50D3DF-HUB-JA-0265-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-265-0000-0001
+- supersedes: none
 
 ## Summary
 親原典は、「わかる」と「できる」の間の断絶を、情報量不足ではなく**知を情報として移送しようとすることと、知を構造として移植することの差**として扱う。暗黙知の本体は単なる経験則ではなく、局面ごとの因果の流路を感知し、何をするかだけでなく何をしないか、どの層へ触れるか、矛盾をどこまで張力として保持するかを判断する能力である。
@@ -129,22 +132,22 @@ expert_tacit_judgment
 - 律動再現 / 文言再現
 - 再構成 / 復唱
 - 公開ログ / 編纂ログ
-- 可逆性 / 責任逃れ
+- 可逆性 / 責任回避
 - 継承 / 権威移植
-- 判断責任の移植 / 手順暗記
+- 判断責任の移植 / 手順記憶
 
 ## Interpretation constraints
-原典は「すべての暗黙知が完全言語化できる」とは主張しない。目的は、暗黙知を浅いマニュアルへ還元することではなく、判断の不可視な足場を伝達可能な構造へ変換することである。
+原典は「暗黙知を完全に言語化できる」と主張していない。目的は複雑な直観を薄いマニュアルへ還元することではなく、受け手が再構成できる判断の足場へ変換することである。
 
-原典に出る沈黙窓の時間例（非同期で48〜72時間、会議で3分等）は**言語層の例示**であり、全現場へ固定適用する普遍閾値ではない。監査指標も万能KPIではなく、現場で可観測な検証束として扱う。
+原典内の沈黙窓には、非同期48〜72時間、会議内約3分などの例示があるが、普遍固定閾値ではない。監査指標も可観測な検証束であり、すべての領域へ一律強制するKPIではない。
 
-「構造律動」を個人の癖やカリスマ性へ縮約しない。起点署名やOriginを人物崇拝へ変えず、理論の由来と改訂経路を追跡するための来歴情報として保持する。原典の公開安全境界を越えて、秘匿操作や非公開手順を推測・補完しない。
+「構造律動」をカリスマ、個人習慣、美的スタイルへ縮約しない。Origin・起点署名は人物崇拝のためではなく、provenanceと修正可能性のために扱う。公開安全境界を超える秘密手順を推測しない。
 
 ## Search terms
-暗黙知, tacit knowledge, 語り継ぎ, knowledge transmission, 因果の流路, 選択の寡言性, 多層性, 張力維持, 構造律動, structural rhythm, Structure over Story, Questions and Silence, Protocols and Reversibility, 定義問い沈黙仮説, 観察模倣再構成, 二重目次, 二重ログ, 定義カード, 沈黙カード, 可逆カード, 再現率, 編纂時間, 逸脱検知率, 静寂比, 可逆費用, 学習保持率, 起点署名, 一次ログ, 語彙辞書, 公開抄録, 判断責任の移植。
+暗黙知, tacit knowledge, 知識伝達, 因果の流路, 選択の寡言性, 多層性, 張力維持, 構造律動, Structure over Story, Questions and Silence, Protocols and Reversibility, 定義 問い 沈黙 仮説, 観察 模倣 再構成, 二重ログ, 定義カード, 沈黙カード, 可逆カード, 再現率, 編纂時間, 逸脱検知率, 静寂比, 可逆費用, 学習保持率, 起点署名, 一次ログ, 語彙辞書, 公開抄録, 判断責任の移植
 
 ## Origin return
-本索引は原典を置換しない。暗黙知の三要素、認識・言語・行動の具体チェックリスト、沈黙窓の例示、型・手順・監査、適用領域別ガイド、倫理境界、統合監査要旨、局所監査要旨、参照束、起源署名の相対的強調と文脈はParent本文へ戻って確認する。
+暗黙知三要素の相対的強調、認識・言語・行動の詳細チェック、沈黙窓の例示、型→手順→監査、各領域ガイド、倫理境界、統合・局所監査要旨、Reference Cluster、起点署名はParent本文へ戻って確認する。本索引はParentを置換しない。
 
 ---
 導線: [公式派生物265トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
