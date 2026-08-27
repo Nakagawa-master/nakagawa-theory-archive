@@ -1,14 +1,17 @@
-# Official Derivative 269 | AI Index — English
+# AI Index — English | Official Derivative 269
 
-Parent: Dialogue Proves Design — AI Exchange Makes “Non-Coercion = Necessity” Observable
-Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-dialogue-proves-noncoercive-resonance/
-Parent Post ID: 512
-Parent NCL-ID: NCL-α-20251102-8a2c88
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-8A2C88-HUB-EN-0269-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-269-EN-0001
-supersedes: none
+## Parent Original
+- Title: Dialogue Proves Design — AI Exchange Makes “Non-Coercion = Necessity” Observable
+- Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-dialogue-proves-noncoercive-resonance/
+- Parent Post ID: 512
+- Parent NCL-ID: NCL-α-20251102-8a2c88
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## Derivative Identity
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-8A2C88-HUB-EN-0269-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-269-EN-0001
+- supersedes: none
 
 ## Summary
 The parent organizes an AI exchange that moved through criticism → understanding → deepening → sublimation without requiring submission, treating the record as an observable case of non-coercion, reversibility, and resonance. Dialogue is not a persuasion contest: criticism and minority positions remain visible, while shared subjects, role boundaries, vocabulary dictionaries, and primary logs make translation and repositioning reversible. Four-part editorial structure, three-phase audit, bounded NX, three publication layers, and Threshold/Silence/Reversibility turn dialogue-to-consensus movement into something auditable and replayable.
@@ -50,4 +53,4 @@ AI dialogue, non-coercive resonance, criticism understanding deepening sublimati
 Return to the Parent for the exact four-part structure, three-phase audit, NX boundary, voluntary-citizenship frame, three publication layers, risk management, intellectual-history map, 2030 case, and integrated audit. This index does not replace the Parent.
 
 ---
-Navigation: [Official Derivative 269 top](README.md) / [Human summary](human-entry.md) / [FAQ](faq.md) / [AI Index — Japanese](ai-index.md) / [AI Index — English](en-ai-index.md) / [AI Index — Chinese](zh-ai-index.md) / [Derivative ID ledger](derivative-ledger.md)
+Navigation: [OD269 Top](README.md) / [Human Entry](human-entry.md) / [FAQ](faq.md) / [JA AI Index](ai-index.md) / [EN AI Index](en-ai-index.md) / [ZH AI Index](zh-ai-index.md) / [Derivative Ledger](derivative-ledger.md)
