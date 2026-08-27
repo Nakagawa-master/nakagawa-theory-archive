@@ -1,14 +1,17 @@
-# 公式派生物270｜AI索引・日本語
+# AI索引・日本語｜公式派生物270
 
-Parent: 客観視座の獲得論──「主観の檻」を超え、構造的摩擦をほどく普遍原理
-Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-objective-viewpoint-and-structural-friction/
-Parent Post ID: 519
-Parent NCL-ID: NCL-α-20251102-230eef
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-230EEF-HUB-JA-0270-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-270-0000-0001
-supersedes: none
+## 親原典
+- タイトル: 客観視座の獲得論──「主観の檻」を超え、構造的摩擦をほどく普遍原理
+- Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-objective-viewpoint-and-structural-friction/
+- Parent Post ID: 519
+- Parent NCL-ID: NCL-α-20251102-230eef
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-230EEF-HUB-JA-0270-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-270-0000-0001
+- supersedes: none
 
 ## Summary
 親原典は、前提・語彙・目的・評価軸・役割・時間軸・責任境界の不整合から生じる遅延と誤解を「構造的摩擦」と捉え、客観視座を自分を含む全員・主張・条件を同一図面へ戻す操作として定義する。感情は排除せずセンサーとして保存し、感情→観測→翻訳→構造配置→行動へ回路を延長する。対象化、時間差の吸収、目的の再定義、問いと沈黙、一枚図、三行記録、合意単位、語彙辞書、T/S/R、撤回可能性を束ね、人格対立を設計差分へ変換する。
