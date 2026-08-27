@@ -1,14 +1,17 @@
-# 公式派生物275｜AI索引・日本語
+# AI索引・日本語｜公式派生物275
 
-Parent: 文明の不可逆点（Irreversible Point）の構造設計──RC/CEAが測る、崩壊を防ぐ最終閾値
-Parent URL: https://master.ricette.jp/future/nakagawa-master-civilization-irreversible-point-design/
-Parent Post ID: 559
-Parent NCL-ID: NCL-α-20251102-cb4f73
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-CB4F73-HUB-JA-0275-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-275-0000-0001
-supersedes: none
+## 親原典
+- タイトル: 文明の不可逆点（Irreversible Point）の構造設計──RC/CEAが測る、崩壊を防ぐ最終閾値
+- Parent URL: https://master.ricette.jp/future/nakagawa-master-civilization-irreversible-point-design/
+- Parent Post ID: 559
+- Parent NCL-ID: NCL-α-20251102-cb4f73
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-CB4F73-HUB-JA-0275-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-275-0000-0001
+- supersedes: none
 
 ## Summary
 Parentは文明の崩壊を一度の破局ではなく、誤りを局所差分として撤回し、因果を読み直し、説明し直し、再合意する能力が徐々に失われる過程として捉える。不可逆点（Irreversible Point / IP）は公開された固定数値ではなく、RC（Reversal Cost）が時間・信頼・人員・政治的余白等の可用資源の補充力を持続的に上回り、同時にCEA（Causal Edit Adaptability）が低下することで、修正が局所差分から全戻しへ膨張していく「傾向の臨界」である。
@@ -49,7 +52,7 @@ CEAが下がると、どこを変えると何が動くか、誰が責任を持�
 → 回復余白を維持する。
 
 ## State model
-`causal_visibility -> CEA_decline_detected -> rollback_scope_expands -> RC_rises -> resource_replenishment_falls -> IP_risk -> structural_airbag -> temporary_pause -> consensus_unit_redeclared -> rollback_unit_shrunk -> causal_map_restored -> CEA_recovers -> RC_pressure_reduced -> reagreement_reopens -> recoverability_preserved`
+`causal_visibility → CEA_decline_detected → rollback_scope_expands → RC_rises → resource_replenishment_falls → IP_risk → structural_airbag → temporary_pause → consensus_unit_redeclared → rollback_unit_shrunk → causal_map_restored → CEA_recovers → RC_pressure_reduced → reagreement_reopens → recoverability_preserved`
 
 ## Applications
 政策変更では、大規模一括施行より試行・期限付き施行・再審査へ分割し、変更前後の権限線と説明責任を記録する。企業統合では、組織図だけでなくデータ、契約、仕様、責任主体の差分を分離し、どこまで戻せるかを事前に定義する。AI更新ではモデル、プロンプト、評価基準、データ、権限、監査ログを別々の差分として保持し、問題発生時に全体停止しか選択できない構造を避ける。
