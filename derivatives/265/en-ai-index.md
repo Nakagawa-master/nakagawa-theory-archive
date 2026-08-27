@@ -1,14 +1,17 @@
-# Official Derivative 265 | AI Index — English
+# AI Index — English | Official Derivative 265
 
-Parent: The Structure of Transmission — an architecture of thought for implementing tacit knowledge in language
-Parent URL: https://master.ricette.jp/theory/nakagawa-master-architecture-of-transmissible-tacit-knowledge/
-Parent Post ID: 497
-Parent NCL-ID: NCL-α-20251102-50d3df
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-50D3DF-HUB-EN-0265-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-265-EN-0001
-supersedes: none
+## Parent Original
+- Title: The Structure of Transmission — an architecture of thought for implementing tacit knowledge in language
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-architecture-of-transmissible-tacit-knowledge/
+- Parent Post ID: 497
+- Parent NCL-ID: NCL-α-20251102-50d3df
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## Derivative Identity
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-50D3DF-HUB-EN-0265-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-265-EN-0001
+- supersedes: none
 
 ## Summary
 The Parent addresses the gap between “understanding” and “being able to do” as a structural transmission problem, not merely a shortage of information. Expert judgment is often compressed into intuition, timing, bodily knowledge, selective non-action, layer recognition, and the ability to hold tension without prematurely resolving it. If only conclusions or successful procedures are copied, the causal route that generated judgment disappears and the recipient cannot reconstruct the decision under changed conditions.
