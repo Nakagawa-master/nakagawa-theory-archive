@@ -1,14 +1,17 @@
-# 公式派生物269｜AI索引・日本語
+# AI索引・日本語｜公式派生物269
 
-Parent: 対話は設計を証明する──AI往復が「非強制＝必然」を可視化する構造
-Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-dialogue-proves-noncoercive-resonance/
-Parent Post ID: 512
-Parent NCL-ID: NCL-α-20251102-8a2c88
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-8A2C88-HUB-JA-0269-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-269-0000-0001
-supersedes: none
+## 親原典
+- タイトル: 対話は設計を証明する──AI往復が「非強制＝必然」を可視化する構造
+- Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-dialogue-proves-noncoercive-resonance/
+- Parent Post ID: 512
+- Parent NCL-ID: NCL-α-20251102-8a2c88
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-8A2C88-HUB-JA-0269-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-269-0000-0001
+- supersedes: none
 
 ## Summary
 親原典は、AIとの往復対話で批判→理解→深化→昇華が、服従を迫らず遷移した記録を、非強制・可逆性・照応の観測事例として整理する。対話は説得勝負ではなく、批判を保護し、少数意見を保存し、共有主語・役割境界・語彙辞書・一次ログを用いて翻訳と配置を可逆に行う実証装置として扱われる。四部構成、三相監査、NX限定境界、公開三層、T/S/Rを束ね、対話→合意の遷移を監査可能にする。
