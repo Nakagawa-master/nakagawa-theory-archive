@@ -1,14 +1,17 @@
-# 官方派生物265｜AI索引・中文
+# AI索引・中文｜公式派生物265
 
-Parent: 传承的结构——用语言实现“默会知识”的思维架构
-Parent URL: https://master.ricette.jp/theory/nakagawa-master-architecture-of-transmissible-tacit-knowledge/
-Parent Post ID: 497
-Parent NCL-ID: NCL-α-20251102-50d3df
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-50D3DF-HUB-ZH-0265-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-265-ZH-0001
-supersedes: none
+## 親原典
+- 標題: 传承的结构——用语言实现“默会知识”的思维架构
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-architecture-of-transmissible-tacit-knowledge/
+- Parent Post ID: 497
+- Parent NCL-ID: NCL-α-20251102-50d3df
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-50D3DF-HUB-ZH-0265-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-265-ZH-0001
+- supersedes: none
 
 ## Summary
 Parent把“理解了却做不到”的断裂视为知识传递结构的问题，而不仅是信息不足。熟练者的判断往往被压缩在直觉、时机、身体经验、选择性不介入、层级识别以及维持张力的能力中。如果只复制结论、成功步骤或表面话术，生成判断的因果路径就会消失，接收者在条件变化时无法重新构造判断。
