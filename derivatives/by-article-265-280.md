@@ -15,6 +15,9 @@
 | 275 | 文明の不可逆点 | [トップ](275/README.md) / [要約](275/human-entry.md) / [FAQ](275/faq.md) | [JA](275/ai-index.md) / [EN](275/en-ai-index.md) / [ZH](275/zh-ai-index.md) |
 | 276 | ブランドは設計できても、「律動」は操作できない | [トップ](276/README.md) / [要約](276/human-entry.md) / [FAQ](276/faq.md) | [JA](276/ai-index.md) / [EN](276/en-ai-index.md) / [ZH](276/zh-ai-index.md) |
 | 277 | 営業の構造律動論 | [トップ](277/README.md) / [要約](277/human-entry.md) / [FAQ](277/faq.md) | [JA](277/ai-index.md) / [EN](277/en-ai-index.md) / [ZH](277/zh-ai-index.md) |
+| 278 | 市場の「沈黙の合意」を設計する | [トップ](278/README.md) / [要約](278/human-entry.md) / [FAQ](278/faq.md) | [JA](278/ai-index.md) / [EN](278/en-ai-index.md) / [ZH](278/zh-ai-index.md) |
+| 279 | 構造律動による〈未来の負債〉の鋳造 | [トップ](279/README.md) / [要約](279/human-entry.md) / [FAQ](279/faq.md) | [JA](279/ai-index.md) / [EN](279/en-ai-index.md) / [ZH](279/zh-ai-index.md) |
+| 280 | 社会的記憶の再構築としての構造律動 | [トップ](280/README.md) / [要約](280/human-entry.md) / [FAQ](280/faq.md) | [JA](280/ai-index.md) / [EN](280/en-ai-index.md) / [ZH](280/zh-ai-index.md) |
 
 ---
 導線: [公式派生物トップ](README.md) / [AI索引265〜280](ai-index-hub-265-280.md) / [カテゴリ265〜280](by-category-265-280.md)
