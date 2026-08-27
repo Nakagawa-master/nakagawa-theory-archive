@@ -1,14 +1,17 @@
-# 官方派生物271｜AI索引・中文
+# AI索引・中文｜公式派生物271
 
-Parent: 未来由“调律”决定──客观视座必然启动的社会OS实施论
-Parent URL: https://master.ricette.jp/future/nakagawa-master-attuned-future-objective-viewpoint-social-os/
-Parent Post ID: 524
-Parent NCL-ID: NCL-α-20251102-0bfa8a
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-0BFA8A-HUB-ZH-0271-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-271-ZH-0001
-supersedes: none
+## 親原典
+- 標題: 未来由“调律”决定──客观视座必然启动的社会OS实施论
+- Parent URL: https://master.ricette.jp/future/nakagawa-master-attuned-future-objective-viewpoint-social-os/
+- Parent Post ID: 524
+- Parent NCL-ID: NCL-α-20251102-0bfa8a
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-0BFA8A-HUB-ZH-0271-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-271-ZH-0001
+- supersedes: none
 
 ## Summary
 Parent将客观视座延伸为未来实施模型“调律型文明”：不是靠胜负或支配消除摩擦，而是通过条件整合使摩擦衰减。客观视座作为姿势引擎，对词汇、角色与时间进行调律。AI不是裁决者或统治者，而是调律媒介，帮助声明意图、同步术语并保存条件差分。以共识单位、充分条件、三行记录为最小可再演骨架，通过姿势共享→框架移植→公共化，使设计习惯逐渐承担社会OS功能。
