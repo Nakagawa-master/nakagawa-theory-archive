@@ -1,16 +1,16 @@
-# AI索引・中文｜官方派生物264
+# AI索引・中文｜公式派生物264
 
-## Parent source
-- Parent title: AIによる労働からの解放──「働く意味」を再定義する接続報酬制度の哲学
+## 親原典
+- 標題: AIによる労働からの解放──「働く意味」を再定義する接続報酬制度の哲学
 - Parent URL: https://master.ricette.jp/future/nakagawa-master-liberation-from-labor-and-connection-reward/
 - Parent Post ID: 493
 - Parent NCL-ID: NCL-α-20251102-397de7
 - Parent Diff-ID: DIFF-20251102-0001
 - Origin: Nakagawa Master
 
-## Derivative identity
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-397DE7-AI-ZH-0264-0002
-- Derivative Diff-ID: DDIFF-20260826-DNCL-264-0002-0001
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-397DE7-HUB-ZH-0264-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-264-ZH-0001
 - supersedes: none
 
 ## Summary
@@ -93,4 +93,4 @@ AI 劳动解放, 工作意义, 连接报酬, 收入 劳动 分离, 连接对价,
 关于收入＝劳动结构、连接报酬、双重运行、人类/AI角色分工、一次记录、审计束、T/S/R、报酬束、适用边界与反证条件，应返回Parent正文确认。本索引不替代Parent。
 
 ---
-導線: [公式派生物264トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+导航: [官方派生物264首页](README.md) / [人类向摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
