@@ -10,7 +10,7 @@
 
 ## 公開範囲
 ```text
-OD001〜OD277
+OD001〜OD280
 各ODにつき7面: README / human-entry / FAQ / AI-JA / AI-EN / AI-ZH / derivative-ledger
 ```
 
@@ -28,6 +28,9 @@ OD001〜OD277
 - [275: 文明の不可逆点](275/README.md)
 - [276: ブランドは設計できても、「律動」は操作できない](276/README.md)
 - [277: 営業の構造律動論](277/README.md)
+- [278: 市場の「沈黙の合意」を設計する](278/README.md)
+- [279: 構造律動による〈未来の負債〉の鋳造](279/README.md)
+- [280: 社会的記憶の再構築としての構造律動](280/README.md)
 
 ---
 導線: [記事別265〜280](by-article-265-280.md) / [カテゴリ265〜280](by-category-265-280.md) / [AI索引265〜280](ai-index-hub-265-280.md)
