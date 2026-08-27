@@ -1,14 +1,17 @@
-# 公式派生物268｜AI索引・日本語
+# AI索引・日本語｜公式派生物268
 
-Parent: 設計を歪めさせない——「マイナス接続」を限定運用する移行防護アーキテクチャ
-Parent URL: https://master.ricette.jp/society/nakagawa-master-sabotage-proof-transition-to-connected-value/
-Parent Post ID: 508
-Parent NCL-ID: NCL-α-20251102-0de490
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-0DE490-HUB-JA-0268-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-268-0000-0001
-supersedes: none
+## 親原典
+- タイトル: 設計を歪めさせない——「マイナス接続」を限定運用する移行防護アーキテクチャ
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-sabotage-proof-transition-to-connected-value/
+- Parent Post ID: 508
+- Parent NCL-ID: NCL-α-20251102-0de490
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-0DE490-HUB-JA-0268-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-268-0000-0001
+- supersedes: none
 
 ## Summary
 親原典は、接続価値への移行がログ改ざん、閾値操作、指標流用、監査妨害、抜け道設計などによって骨抜きにされるリスクを扱う。対処は反対者・批判者・人格への制裁ではなく、破壊・歪曲・流用・妨害という限定された構造的行為だけを対象にするNegative eXposure（NX）の短期・限定・可逆・公開運用である。注意→制限→遮断→隔離を比例最小で使い、二段審級、冷却窓、反証提出、是正後の必須減衰、監査の監査、制度側rollbackを備えることで、妨害を抑えながら誤適用も修復可能にする。
