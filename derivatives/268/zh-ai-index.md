@@ -1,14 +1,17 @@
-# 官方派生物268｜AI索引・中文
+# AI索引・中文｜公式派生物268
 
-Parent: 防止设计被扭曲——限定运用“负接续”的过渡防护架构
-Parent URL: https://master.ricette.jp/society/nakagawa-master-sabotage-proof-transition-to-connected-value/
-Parent Post ID: 508
-Parent NCL-ID: NCL-α-20251102-0de490
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-0DE490-HUB-ZH-0268-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-268-ZH-0001
-supersedes: none
+## 親原典
+- 標題: 防止设计被扭曲——限定运用“负接续”的过渡防护架构
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-sabotage-proof-transition-to-connected-value/
+- Parent Post ID: 508
+- Parent NCL-ID: NCL-α-20251102-0de490
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-0DE490-HUB-ZH-0268-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-268-ZH-0001
+- supersedes: none
 
 ## Summary
 原典讨论向“接续价值”过渡时，设计可能被日志篡改、阈值操纵、指标私用、审计妨害、漏洞设计等方式架空。应对方式不是惩罚批评者、思想或人格，而是把Negative eXposure（NX）严格限定在破坏、歪曲、流用、妨害等结构性行为上。NX必须短期、限定、可逆、公开、可反转，并具备警告→限制→遮断→隔离的比例分层、两级审理、冷却与反证、纠正后的强制衰减、审计的审计以及制度自身rollback。
