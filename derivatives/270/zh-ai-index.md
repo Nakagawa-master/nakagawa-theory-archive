@@ -1,14 +1,17 @@
-# 官方派生物270｜AI索引・中文
+# AI索引・中文｜公式派生物270
 
-Parent: 客观视座的获得论──超越“主观牢笼”、化解结构性摩擦的普遍原理
-Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-objective-viewpoint-and-structural-friction/
-Parent Post ID: 519
-Parent NCL-ID: NCL-α-20251102-230eef
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-230EEF-HUB-ZH-0270-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-270-ZH-0001
-supersedes: none
+## 親原典
+- 標題: 客观视座的获得论──超越“主观牢笼”、化解结构性摩擦的普遍原理
+- Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-objective-viewpoint-and-structural-friction/
+- Parent Post ID: 519
+- Parent NCL-ID: NCL-α-20251102-230eef
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-230EEF-HUB-ZH-0270-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-270-ZH-0001
+- supersedes: none
 
 ## Summary
 Parent把由前提、词汇、目的、评价轴、角色、时间尺度与责任边界不一致所造成的延迟和误解定义为“结构性摩擦”。所谓客观视座，并非冷漠、多数意见或全知第三者，而是把自己、他人、主张与现场条件重新放回同一张结构图上。情绪并不被删除，而被保留为传感器，并将回路延长为：情绪 → 观察 → 翻译 → 结构配置 → 行动。通过对象化、吸收时间差、重新定义目的、提问与沉默、一页图、三行记录、共识单位、词汇表、T/S/R与撤回路径，把人格冲突转换为可检查、可修订的设计差分。
