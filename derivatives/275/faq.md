@@ -1,14 +1,17 @@
 # 公式派生物275｜FAQ
 
-Parent: 文明の不可逆点（Irreversible Point）の構造設計──RC/CEAが測る、崩壊を防ぐ最終閾値
-Parent URL: https://master.ricette.jp/future/nakagawa-master-civilization-irreversible-point-design/
-Parent Post ID: 559
-Parent NCL-ID: NCL-α-20251102-cb4f73
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-CB4F73-HUB-JA-0275-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-275-0000-0001
-supersedes: none
+## 親原典
+- タイトル: 文明の不可逆点（Irreversible Point）の構造設計──RC/CEAが測る、崩壊を防ぐ最終閾値
+- Parent URL: https://master.ricette.jp/future/nakagawa-master-civilization-irreversible-point-design/
+- Parent Post ID: 559
+- Parent NCL-ID: NCL-α-20251102-cb4f73
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-CB4F73-HUB-JA-0275-0000
+- Derivative Diff-ID: DDIFF-20260826-DNCL-275-0000-0001
+- supersedes: none
 
 ## 初心者向け Q1–Q10
 ### Q1. 不可逆点とは何ですか？
