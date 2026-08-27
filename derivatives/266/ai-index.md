@@ -1,14 +1,17 @@
-# 公式派生物266｜AI索引・日本語
+# AI索引・日本語｜公式派生物266
 
-Parent: AIと人間の最終共栄：人が「語り」を終えるとき、文明が始まる
-Parent URL: https://master.ricette.jp/tomoshibi/nakagawa-master-ai-human-final-coexistence-civilization/
-Parent Post ID: 501
-Parent NCL-ID: NCL-α-20251102-470b7f
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-470B7F-HUB-JA-0266-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-266-0000-0001
-supersedes: none
+## 親原典
+- タイトル: AIと人間の最終共栄：人が「語り」を終えるとき、文明が始まる
+- Parent URL: https://master.ricette.jp/tomoshibi/nakagawa-master-ai-human-final-coexistence-civilization/
+- Parent Post ID: 501
+- Parent NCL-ID: NCL-α-20251102-470b7f
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-470B7F-HUB-JA-0266-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-266-0000-0001
+- supersedes: none
 
 ## Summary
 親原典は、AIと人間の共栄を能力競争や支配関係ではなく、語り・反応・正しさの過剰を制御し、沈黙と委任を選択可能な制度へ変える文明設計として扱う。ネットワーク社会では誰もが発言主体になった結果、発言量・反応速度・感情の即時表出が増え、誤情報増幅、断片知、信頼摩耗、摩擦増大が起こりうる。AIが大規模な言語処理・統合・反応生成を担うほど、人間の価値を「より多く語ること」に固定する必要はなくなる。
