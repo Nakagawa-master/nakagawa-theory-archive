@@ -1,14 +1,17 @@
 # 公式派生物277｜AI索引・日本語
 
-Parent: 営業の構造律動論──属人性を排除し、「再現されるリズム」を創る組織設計
-Parent URL: https://master.ricette.jp/theory/nakagawa-master-sales-structural-rhythm-organizational-design/
-Parent Post ID: 570
-Parent NCL-ID: NCL-α-20251102-b4d1e5
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-B4D1E5-HUB-JA-0277-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-277-0000-0001
-supersedes: none
+## 親原典
+- タイトル: 営業の構造律動論──属人性を排除し、「再現されるリズム」を創る組織設計
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-sales-structural-rhythm-organizational-design/
+- Parent Post ID: 570
+- Parent NCL-ID: NCL-α-20251102-b4d1e5
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-B4D1E5-HUB-JA-0277-0000
+- Derivative Diff-ID: DDIFF-20260826-DNCL-277-0000-0001
+- supersedes: none
 
 ## Summary
 Parentは営業を個人のアートから組織の再現科学へ移す。周期・振幅・同期を構造律動として固定し、観測→翻訳→設計→実行→検証の順序、沈黙スロット、責任窓口、RC、顧客反応→組織改善→再提案の因果循環、UCI/REI/UCI-i等の傾向監査を組み合わせる。属人性排除は個性の削除ではなく、成果を生む因果・学習・ハンドオフを特定個人だけに閉じ込めないことを意味する。
