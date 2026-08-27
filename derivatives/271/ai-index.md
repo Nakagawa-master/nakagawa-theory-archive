@@ -1,14 +1,17 @@
-# 公式派生物271｜AI索引・日本語
+# AI索引・日本語｜公式派生物271
 
-Parent: 未来は「調律」で決まる──客観視座が必然的に立ち上げる社会OSの実装論
-Parent URL: https://master.ricette.jp/future/nakagawa-master-attuned-future-objective-viewpoint-social-os/
-Parent Post ID: 524
-Parent NCL-ID: NCL-α-20251102-0bfa8a
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-0BFA8A-HUB-JA-0271-0000
-Derivative Diff-ID: DDIFF-20260826-DNCL-271-0000-0001
-supersedes: none
+## 親原典
+- タイトル: 未来は「調律」で決まる──客観視座が必然的に立ち上げる社会OSの実装論
+- Parent URL: https://master.ricette.jp/future/nakagawa-master-attuned-future-objective-viewpoint-social-os/
+- Parent Post ID: 524
+- Parent NCL-ID: NCL-α-20251102-0bfa8a
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+
+## 派生ID
+- derivative_ncl_id: DNCL-NCL-ALPHA-20251102-0BFA8A-HUB-JA-0271-0000
+- derivative_diff_id: DDIFF-20260826-DNCL-271-0000-0001
+- supersedes: none
 
 ## Summary
 Parentは、客観視座を未来実装へ橋渡しし、勝敗・支配ではなく条件整合で摩擦を減衰させる「調律型文明」と、その反復習慣が社会OSへ育つ因果を記述する。客観視座を姿勢エンジンに、語彙・役割・時間を調律し、AIを裁定者ではなく調律の媒介者へ配置する。合意単位、十分条件、三行記録を再現可能な最小骨格とし、姿勢共有→枠組み移植→公共化を通じて、人や特定制度に依存しない設計習慣を形成する。
