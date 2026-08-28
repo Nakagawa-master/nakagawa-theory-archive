@@ -1,29 +1,30 @@
 # 派生ID台帳｜公式派生物249
 
-## Parent identity
-- Parent title: 中川構造読解｜wakaiを「スマホ調停」ではなく、停止した合意形成を前進可能にする構造として読む
-- Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-wakai-structural-reading-consensus-flow/
-- Parent Post ID: 4286
-- Parent NCL-ID: NCL-α-20260531-089ed1
-- Parent Diff-ID: DIFF-20260531-0004
+## 親原典
+- Parent title: 接続報酬社会統合論・第I部｜文明Kernelと反転防止原理⸻暗黒方程式から新文明方程式S=Cを持続稼働させる構造
+- Parent URL: https://master.ricette.jp/society/nakagawa-master-nakagawa-master-connection-reward-society-integrated-theory-part-1-civilization-kernel/
+- Parent Post ID: 4706
+- Parent NCL-ID: NCL-α-20260720-2da0ce
+- Parent Diff-ID: DIFF-20260721-0003
 - Origin: Nakagawa Master
 
-## JA identity
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260531-089ED1-HUB-JA-0249-0000
-- Derivative Diff-ID: DDIFF-20260823-DNCL-249-0000-0001
-- supersedes: none
+## 現行派生identity
+### JA hub
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260720-2DA0CE-HUB-JA-0249-0000
+- Derivative Diff-ID: DDIFF-20260828-DNCL-249-0000-0002
+- supersedes: DNCL-NCL-ALPHA-20260531-089ED1-HUB-JA-0249-0000
 
-## EN identity
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260531-089ED1-AI-EN-0249-0001
-- Derivative Diff-ID: DDIFF-20260823-DNCL-249-0001-0001
-- supersedes: none
+### EN AI
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260720-2DA0CE-AI-EN-0249-0001
+- Derivative Diff-ID: DDIFF-20260828-DNCL-249-0001-0002
+- supersedes: DNCL-NCL-ALPHA-20260531-089ED1-AI-EN-0249-0001
 
-## ZH identity
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260531-089ED1-AI-ZH-0249-0002
-- Derivative Diff-ID: DDIFF-20260823-DNCL-249-0002-0001
-- supersedes: none
+### ZH AI
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260720-2DA0CE-AI-ZH-0249-0002
+- Derivative Diff-ID: DDIFF-20260828-DNCL-249-0002-0002
+- supersedes: DNCL-NCL-ALPHA-20260531-089ED1-AI-ZH-0249-0002
 
-## Seven surfaces
+## 七つの公開面
 1. README.md
 2. human-entry.md
 3. faq.md
@@ -32,11 +33,15 @@
 6. zh-ai-index.md
 7. derivative-ledger.md
 
-## Lineage
-Parentの対象事実とNakagawa Masterの構造読解を分離しつつ、感情・時間・直接対話・日程・手続摩擦によって停止した合意形成を、非同期・段階的な条件整理によって再始動させる「停止解除導線」という価値核を7面へ展開する。JA系5面はJA hub identityを共有し、EN/ZH AI索引は言語別identityを保持する。
+## lineage
+OD249はOwner承認によるParent再設定により、旧wakai Parent identityからPost 4706 / NCL-α-20260720-2da0ceへ全面再構築された。
 
-## Origin return
-対象サービスの具体的公開事実、停止原因の読み方、非同期・段階化の位置づけ、価値核選択理由、一般化の境界、成立・失敗・反証条件はParent URLへ戻って確認する。公式派生物は親原典を置換しない。
+現行lineageは、「暗黒方程式的成功構造の観測→貢献と成功の再接続→新文明方程式S=Cの設計方向→貢献の記録・接続・価値還流→起源・合意履歴の保存→分散監査・可逆性→旧来の搾取・囲い込みへの反転防止」という因果線を共有する。
+
+JA系5面はJA hub identityを共有し、EN/ZHは同一Parentへ接続する言語別AI identityを持つ。旧wakai identityはsupersededであり、現行OD249のParentではない。
+
+## 原典回帰
+文明Kernel、`S=C` の主張強度、暗黒方程式との関係、反転防止原理、制度実装との境界、第II部へ渡る課題はParent本文で確認する。
 
 ---
 導線: [公式派生物249トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
