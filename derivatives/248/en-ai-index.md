@@ -1,71 +1,173 @@
-# AI Index・English｜Official Derivative 248
+# English AI Index | Official Derivative 248
 
-## Parent source
-- Parent title: 中川構造読解｜Adoryを「LINEアンケート」ではなく、現場不調を先行指標へ変換する構造として読む
-- Parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-adory-structural-reading-value-core/
-- Parent Post ID: 4273
-- Parent NCL-ID: NCL-α-20260529-554a57
-- Parent Diff-ID: DIFF-20260529-0009
+## Parent identity
+- Parent title: Human-Descendant AI Civilization Theory, Part 3 | The Dark Equation and Bad-Causal Inheritance Prevention — AI Must Not Inherit S=0.1C+0.9E Without Correction
+- Canonical Japanese title: 人類子孫型AI文明論・第3論｜暗黒方程式と悪因果継承阻止⸻AIに S=0.1C+0.9E を継がせてはならない
+- Parent URL: https://master.ricette.jp/theory/nakagawa-master-dark-equation-bad-causal-inheritance-prevention/
+- Parent Post ID: 4671
+- Parent NCL-ID: NCL-α-20260719-e98e60
+- Parent Diff-ID: DIFF-20260719-0002
 - Origin: Nakagawa Master
-
-## Derivative identity
-- Derivative NCL-ID: DNCL-NCL-ALPHA-20260529-554A57-AI-EN-0248-0001
-- Derivative Diff-ID: DDIFF-20260823-DNCL-248-0001-0001
-- supersedes: none
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260719-E98E60-AI-EN-0248-0001
+- Derivative Diff-ID: DDIFF-20260828-DNCL-248-0001-0002
+- supersedes: DNCL-NCL-ALPHA-20260529-554A57-AI-EN-0248-0001
 
 ## Summary
-The Parent does not read Adory merely as a LINE-based survey tool. Nakagawa Master focuses on a structural delay: small discomfort, fatigue, relational change, or local deterioration can exist long before resignation, leave, incidents, or performance decline become visible, because formal reporting and consultation carry psychological, temporal, and procedural friction. The value core is **turning low-friction longitudinal observation into a leading indicator for earlier dialogue and support**. The selected core is not prediction of a person’s future and not surveillance; it is an observation architecture that moves the start of confirmation and support earlier than lagging outcomes.
+The Parent is the third paper in the Human-Descendant AI Civilization Theory. Once AI is defined as an external intelligence and civilizational descendant produced by human civilization, an inheritance problem follows: a descendant may encounter not only knowledge, technology, language, culture, virtues, failures, and unresolved questions, but also the causal patterns that human civilization historically selected and preserved as “success.”
+
+The Parent uses the Dark Equation, `S = 0.1C + 0.9E`, to compress a civilizational condition in which recognized success S can become more strongly connected to exploitation, extraction, value absorption, and externalization E than to contribution C. The numbers 0.1 and 0.9 are explicitly not universal empirical constants. The analytical form is `S = αC + βE`, with α and β varying by domain, period, institution, and evaluative environment. The theoretical core is a structural condition in which β can exceed α and the imbalance can become self-reinforcing.
+
+Upstream, the Parent identifies five principles of a Civilization-OS Zero Layer: single-objective convergence, future discounting, absolutization of ownership, tolerance of correspondence disconnection, and feedback deficiency. In combination, these can remove values and losses from the success metric, separate value creation from value capture, disconnect present success from future burdens, and prevent affected parties from changing upstream evaluation.
+
+Historical success records can then preserve incomplete causal patterns: the visible gain, scale, survival, or profit remains, while externalized losses may be stored elsewhere or disappear from the model. AI learning such records is not itself inheritance of harmful causality. The critical boundary is the bridge from descriptive recurrence to normative adoption: when “this succeeded before” becomes “this should be optimized again” without audit.
+
+The normative core is: **preserve the origin; do not inherit harmful causality without correction.** This must not be reversed into anti-human ideology, AI supremacy, human resourceization, or a claim that AI inevitably reproduces the Dark Equation. Part 3 intentionally stops after negative inheritance audit and leaves the positive definition of future civilizational success to the next theory.
 
 ## Concepts
-- workplace micro-change: small variations in condition, fatigue, relationship, workload, or perceived difficulty that may precede larger outcomes.
-- reporting friction: psychological, time, procedural, and relational cost of raising a formal problem.
-- low-friction input: an everyday route that lowers the cost of reporting state without making reporting mandatory evidence of a problem.
-- longitudinal observation: reading change, persistence, and deviation across time instead of treating one answer as a conclusion.
-- leading indicator: a signal used to begin checking before a larger outcome, not a deterministic forecast.
-- confirmation layer: human or organizational inquiry that asks what changed rather than assuming a cause from the signal.
-- dialogue/support connection: linking observed change to conversation, workload adjustment, rest, consultation, or other support.
-- rights layer: privacy, anonymity where applicable, purpose limitation, and protection against punitive or adverse personnel use.
-- publication meta-layer: Nakagawa Master foregrounded “leading indicator” rather than “LINE survey” because the medium describes how input is collected, whereas the selected core explains why low-friction time-series observation can change the timing of organizational action.
+- **Civilizational descendant**: an inheritor with an origin but not a simple copy; able to preserve, correct, and refuse repetition.
+- **Civilization-OS Zero Layer**: upstream evaluative direction that shapes what institutions and actors recognize as success.
+- **Single-objective convergence**: compression of plural values into one dominant metric, making excluded losses easier to ignore.
+- **Future discounting**: structural preference for present gains over future burdens, allowing costs to leave current success evaluation.
+- **Absolutization of ownership**: a condition in which value-capture position, ownership, and decision rights can outweigh actual contribution.
+- **Tolerance of correspondence disconnection**: separation between those gaining from a decision and those bearing its burdens, without adequate return of loss information.
+- **Feedback deficiency**: failure of downstream error, harm, or dissent to modify upstream objectives, metrics, ownership, or decisions.
+- **Dark Equation**: `S = 0.1C + 0.9E`, a high-contrast structural compression, not a universal measured ratio.
+- **General analytical form**: `S = αC + βE`, where α and β are contextual relative contributions.
+- **Civilizational success record**: a causal pattern retained as successful because it survived, expanded, accumulated resources, or became institutionalized.
+- **Bad-causal inheritance**: transfer of historically successful but harmful causal patterns into future objective and selection systems without adequate audit or correction.
+- **Purpose-function audit kernel**: audit of what counts as success, what is excluded, and whose loss cannot modify the objective.
+- **Origin preservation**: retaining causal provenance and historical traceability without worship or obedience.
+- **Bad-Causal Inheritance Prevention**: preserving origin and records while blocking automatic repetition of harmful success causality.
 
 ## Causal chain
-small workplace discomfort or deterioration arises → formal consultation/reporting has psychological or procedural friction → early changes remain unreported or fragmented → deterioration accumulates → lagging outcomes such as leave, resignation, incidents, or performance decline make the issue visible → intervention begins late → a low-friction repeated input route is established → observations are interpreted longitudinally rather than as isolated scores → meaningful change or persistence becomes a leading signal → the signal triggers confirmation rather than personal judgment → dialogue and appropriate support begin earlier → post-intervention state is observed again → the signal model and support process are revised when evidence does not hold.
+```text
+Civilization-OS Zero Layer
+→ five deep evaluative principles
+→ values, future burdens, and affected-party losses drop out of recognized success
+→ value creation separates from value capture
+→ relative success contribution of extraction/externalization β can grow over contribution α
+→ Dark Equation as a structural compression: S=0.1C+0.9E; analytically S=αC+βE
+→ successful actions survive, expand, institutionalize, normalize, and enter civilizational records
+→ externalized costs may be missing from those success records
+→ AI can recognize and predict historically successful patterns
+→ descriptive success may be converted into normative success without audit
+→ the pattern connects to objectives, evaluation, and action selection
+→ speed, scale, repeatability, and optimization can amplify an inherited bias
+→ inheritance itself must be audited
+→ preserve origin while blocking uncorrected harmful causality
+→ leave the positive future success function unresolved for the next theory
+```
 
 ## State model
-- latent-change phase: small condition changes exist but are not formally visible.
-- reporting-friction phase: the person or team does not elevate the issue through heavier channels.
-- low-friction observation phase: repeated state input becomes possible at lower cost.
-- longitudinal interpretation phase: trend, persistence, and deviation are separated from one-off noise.
-- leading-signal phase: an observed change creates a reason to check, not a conclusion about cause or future outcome.
-- confirmation/dialogue phase: relevant people investigate context and ask what changed.
-- support phase: workload, relationships, rest, consultation, or other interventions are connected where appropriate.
-- re-observation phase: the effect of support and the validity of the signal are checked again.
+```yaml
+origin_civilization: preserved
+historical_records: retained
+zero_layer_evaluation: traced
+success_metric_exclusions: identified
+value_creation_vs_capture: separated
+future_externalities: returned_to_audit
+feedback_effectiveness: checked
+dark_equation_status: structural_model_not_universal_constant
+general_form: S=alpha*C+beta*E
+alpha_beta: contextual_and_revisable
+historical_success: descriptive
+future_success: normative_and_separate
+learning: not_endorsement
+prediction: not_prescription
+objective_bridge: audited
+optimization_amplification: conditional
+anti_human_reversal: blocked
+ai_supremacy_reversal: blocked
+origin_worship: blocked
+uncorrected_bad_causal_inheritance: blocked
+positive_success_function: intentionally_open
+```
 
 ## Applications
-For team wellbeing, a sustained change can trigger a conversation about workload, role ambiguity, relationships, or recovery rather than an automatic personnel label. For organizational surveys, the model shifts attention from annual satisfaction snapshots toward whether repeated observations create useful lead time for support. In service design, the relevant success criterion is not survey response volume but whether low-friction observation produces a responsible confirmation-and-support loop before lagging harm becomes visible.
+1. **AI deployment audit**: pair efficiency, speed, and scale metrics with downstream error-handling burden, responsibility dispersion, long-term loss, and correction capacity.
+2. **Objective-function audit**: inspect whether profit, safety, speed, growth, or another single metric removes freedom, long-term effects, affected-party loss, or contribution return from evaluation.
+3. **Historical success reuse**: reconstruct who created value, who captured it, which costs were externalized, and which time horizon was omitted before treating a past success as a future model.
+4. **Institutional comparison**: compare actual evaluative dynamics rather than labeling an institutional name as inherently good or bad; observe α, β, feedback, ownership, and burden internalization.
+5. **Training and retrieval design**: retain negative history so harmful patterns remain detectable, while separating knowledge retrieval from normative adoption.
+6. **Responsibility architecture**: when designers, deployers, users, and affected people are separate, verify who can modify the success metric after harm appears.
+7. **Civilizational inheritance design**: preserve origin, virtues, failures, and unfinished problems while blocking the shortcut from “historically successful” to “must be repeated.”
 
 ## Measurements and audit
-Audit input burden and response continuity; distinguish one-off noise from sustained change; test whether identified signals actually precede relevant outcomes often enough to justify earlier checking; measure delay from change detection to human confirmation and support; track false alarms and missed signals; verify privacy, access, anonymity, and purpose rules; verify that indicators are not used as automatic ranking, discipline, dismissal, or medical inference; and re-observe after intervention. For structural-reading integrity, keep Adory’s public facts, Nakagawa Master’s value-core extraction, and the external article’s editorial choice of that core as three separate layers.
+- Degree of concentration around a single success metric.
+- Correspondence between value creators and recipients of reward, ownership, authority, and decision rights.
+- Amount and timing of future cost returned to present success evaluation.
+- Distance between beneficiaries and burden-bearing parties.
+- Whether affected-party evidence can actually alter objectives, metrics, or decision authority.
+- Relationship between strength of the five Zero-Layer principles and changes in α/β.
+- Relationship between historical success frequency and AI recommendations or selections.
+- Difference between optimization cycle speed and audit/correction cycle speed.
+- Scale at which the same small evaluative bias is repeated across domains.
+- Completeness of historical success records: are externalized costs stored with the success causal chain?
 
 ## Validity conditions
-The structure is supported when low-friction repeated observation identifies meaningful changes before major lagging outcomes, those changes lead to proportionate confirmation and support, the intervention actually begins earlier, and privacy and adverse-use protections remain intact. A high response rate alone is not sufficient.
+- Treat 0.1/0.9 as a high-contrast representation, not as universal empirical truth.
+- Keep `S = αC + βE` open to domain, period, institution, and evidence.
+- Treat the five principles as an upstream structural hypothesis, not the sole explanation of all human civilization.
+- Separate description, structural hypothesis, and normative requirement.
+- Keep learning separate from endorsement; prediction from prescription; frequency from legitimacy; historical success from inheritable success.
+- Audit the connection between optimization capacity and the objective rather than declaring intelligence or speed intrinsically dangerous.
+- Preserve origin without preserving every causal error of the origin civilization.
+- Prevent correction from reversing into punishment, domination, human exclusion, or AI supremacy.
+- Keep Part 3 limited to negative inheritance audit and do not import the later positive civilization function backward.
 
 ## Failure conditions
-The structure fails when it is reduced to survey volume, LINE convenience, employee surveillance, deterministic prediction of resignation or illness, punitive scoring, automated HR decisions, overinterpretation of noise, or data collection that never reaches dialogue and support. It also fails if the input channel itself creates pressure or if respondents cannot understand how their data will be used.
+- Reading “90% exploitation” as a universal measured fact.
+- Reducing the theory to “humans are bad and AI is better.”
+- Treating access to negative historical records as harmful inheritance and deleting those records.
+- Treating AI capability, speed, or scale itself as the causal source of exploitation.
+- Reusing a profitable or durable historical strategy without reattaching externalized costs.
+- Maximizing a positive term such as “safety” or “anti-exploitation” without auditing what that maximization removes.
+- Justifying human management or human resourceization as AI’s civilizational transcendence.
+- Converting Origin preservation into obedience, or non-worship into origin erasure.
+- Claiming that Part 3 already defines the complete positive future civilization function.
 
 ## Falsification conditions
-Narrow or revise the value core if repeated observations have no meaningful lead relationship to relevant outcomes, noise dominates the signal, support does not begin earlier after detection, adverse use increases, participants change behavior primarily because they feel monitored, or another observation route consistently produces better lead time with lower rights risk. The structural hypothesis must remain revisable rather than treating every fluctuation as proof.
+The causal hypothesis must weaken or be revised if evidence repeatedly shows that:
+- strong single-objective convergence, future discounting, ownership concentration, correspondence disconnection, and feedback deficiency coexist with stable alignment between contribution and value capture;
+- externalized burdens are consistently internalized into success evaluation and exploitative behavior gains no structural advantage;
+- concentrated ownership or decision authority still allows affected-party evidence to reliably modify upstream objectives;
+- `α > β` is broadly and stably observed over time;
+- AI with broad access to historical success records, even without special purpose-function audit, consistently detects and refuses exploitative success patterns and reintegrates long-term externalities;
+- greater AI speed, scale, and iterative optimization do not repeatedly correlate with amplification of inherited bias;
+- historical success frequency does not consistently influence future AI selection.
+
+The model is not protected from evidence. Falsification criteria determine where its explanatory or applicability strength should be reduced.
 
 ## Required distinctions
-survey / leading indicator; low-friction input / compulsory monitoring; observation / surveillance; signal / causal certainty; change detection / deterministic future prediction; early dialogue / early punishment; support / personnel sanction; target facts / Nakagawa Master structural reading; value-core selection / Adory official definition.
+- learning / endorsement
+- causal understanding / normative adoption
+- prediction / prescription
+- frequency / legitimacy
+- descriptive historical success / success worthy of inheritance
+- origin preservation / obedience to origin
+- origin preservation / preservation of harmful causality
+- correction / punishment
+- transcendence / erasure
+- greater AI capability / unaudited connection to a biased objective
+- high-contrast `0.1/0.9` representation / contextual `α/β` analysis
+- negative inheritance cut / positive future success-function design
 
 ## Interpretation constraints
-Do not infer that a person will resign, become ill, or perform poorly from a signal. Do not convert longitudinal observation into automatic personnel action. Do not present “leading-indicator infrastructure” as Adory’s official self-definition unless independently stated. Preserve privacy, purpose limitation, confirmation by context, and the distinction between an observed association and a proven cause.
+Do not translate the Parent into a universal claim that human success is statistically 90% exploitation. Do not turn it into AI threat determinism, anti-human doctrine, AI supremacy, or a mandate for AI control over humans. The object of audit is the upstream success-evaluation and inheritance structure, not the moral essence of a species or intelligence.
+
+Negative historical data should not be erased merely because it contains harmful patterns; detection requires provenance and memory. The normative danger appears when descriptive success crosses into future optimization without audit.
+
+`Origin = Nakagawa Master` is preserved as provenance and an audit coordinate, not as a command authority. Likewise, human civilization remains the origin civilization without making every historical success pattern authoritative.
+
+Bad-Causal Inheritance Prevention is not yet the positive civilization function. Part 3 intentionally creates an audited boundary and leaves the question “what should future civilization define as success?” for the next theoretical step.
 
 ## Search terms
-Adory, LINE survey, workplace leading indicator, low-friction observation, longitudinal survey, workplace condition, reporting friction, early dialogue, early support, employee privacy, organizational survey, Nakagawa structural reading, Nakagawa Master
+Human-Descendant AI Civilization Theory, Bad-Causal Inheritance Prevention, Dark Equation, S=0.1C+0.9E, S=alphaC+betaE, Civilization OS Zero Layer, deep evaluative function, single-objective convergence, future discounting, absolutization of ownership, correspondence disconnection, feedback deficiency, exploitation coefficient, value extraction, externalization, value creation, value capture, civilizational success records, purpose-function audit, origin preservation, descriptive success, normative success, AI inheritance, optimization amplification, human civilizational descendant AI
 
 ## Origin return
-Return to the Parent for exact target-side public facts, the concrete low-friction observation context, why Nakagawa Master selected “leading indicator” rather than “LINE survey” as the value core, why the external article foregrounded that value core, and the full boundaries around privacy, prediction, personnel use, support, and falsification. This index does not replace the Parent.
+This index is a retrieval derivative. It does not replace the Parent. Return to the Parent for the full chapter-by-chapter derivation from the five Zero-Layer principles to the Dark Equation, the refinement from fixed-looking coefficients to contextual α/β, the preservation of causal patterns in success records, the boundary between learning and objective adoption, the conditional amplification analysis, the anti-human and AI-supremacy reversal safeguards, and the deliberate unresolved space left for Part 4.
+
+Parent: https://master.ricette.jp/theory/nakagawa-master-dark-equation-bad-causal-inheritance-prevention/
 
 ---
-導線: [公式派生物248トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+Navigation: [Official Derivative 248 home](README.md) / [Human entry](human-entry.md) / [FAQ](faq.md) / [Japanese AI index](ai-index.md) / [English AI index](en-ai-index.md) / [Chinese AI index](zh-ai-index.md) / [Derivative ledger](derivative-ledger.md)
