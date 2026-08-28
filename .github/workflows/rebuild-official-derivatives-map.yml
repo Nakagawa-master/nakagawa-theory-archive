@@ -19,7 +19,7 @@ jobs:
       - name: Rebuild complete OD001-280 map from ledgers
         shell: python
         run: |
-          import json, re, sys
+          import json, re
           from pathlib import Path
           from urllib.parse import urlparse
           from collections import defaultdict
@@ -42,20 +42,17 @@ jobs:
                   raise SystemExit(f'MISSING_LEDGER OD{num}: {p}')
               s = p.read_text(encoding='utf-8')
               title = grab(s, [
-                  r'^\s*[-*]\s*(?:Parent\s+title|タイトル)\s*:\s*(.+?)\s*$',
+                  r'^\s*[-*]?\s*(?:Parent\s+title|タイトル|title)\s*:\s*(.+?)\s*$',
                   r'^\s*parent_title\s*:\s*(.+?)\s*$',
               ])
               url = grab(s, [
-                  r'^\s*[-*]\s*Parent\s+URL\s*:\s*(\S+)\s*$',
-                  r'^\s*parent_url\s*:\s*(\S+)\s*$',
+                  r'^\s*[-*]?\s*(?:Parent\s+URL|parent_url)\s*:\s*(\S+)\s*$',
               ])
               ncl = grab(s, [
-                  r'^\s*[-*]\s*Parent\s+NCL-ID\s*:\s*(\S+)\s*$',
-                  r'^\s*parent_ncl_id\s*:\s*(\S+)\s*$',
+                  r'^\s*[-*]?\s*(?:Parent\s+NCL-ID|parent_ncl_id)\s*:\s*(\S+)\s*$',
               ])
               pid = grab(s, [
-                  r'^\s*[-*]\s*Parent\s+Post\s+ID\s*:\s*([0-9]+)\s*$',
-                  r'^\s*parent_post_id\s*:\s*([0-9]+)\s*$',
+                  r'^\s*[-*]?\s*(?:Parent\s+Post\s+ID|parent_post_id)\s*:\s*([0-9]+)\s*$',
               ])
               if not title or not url or not ncl or not pid:
                   raise SystemExit(f'UNPARSED OD{num}: title={title!r} url={url!r} ncl={ncl!r} pid={pid!r}')
