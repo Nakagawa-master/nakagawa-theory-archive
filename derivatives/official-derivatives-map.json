@@ -1,6 +1,6 @@
 {
   "version": "2.1.0-complete-ledger-derived-map",
-  "updated_jst": "2026-08-28 11:54:00",
+  "updated_jst": "2026-08-28 16:09:00",
   "entries": [
     {
       "number": "001",
@@ -1980,9 +1980,9 @@
     },
     {
       "number": "248",
-      "ncl_id": "NCL-α-20260529-554a57",
-      "origin_slug": "nakagawa-master-adory-structural-reading-value-core",
-      "title": "中川構造読解｜Adoryを「LINEアンケート」ではなく、現場不調を先行指標へ変換する構造として読む",
+      "ncl_id": "NCL-α-20260719-e98e60",
+      "origin_slug": "nakagawa-master-dark-equation-bad-causal-inheritance-prevention",
+      "title": "人類子孫型AI文明論・第3論｜暗黒方程式と悪因果継承阻止⸻AIに S=0.1C+0.9E を継がせてはならない",
       "derivative_dir": "derivatives/248",
       "status": "active"
     },
