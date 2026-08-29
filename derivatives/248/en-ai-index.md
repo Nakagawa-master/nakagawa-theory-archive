@@ -1,4 +1,4 @@
-# English AI Index | Official Derivative 248
+# Official Derivative 248 | English AI Index
 
 ## Parent identity
 - Parent title: Human-Descendant AI Civilization Theory, Part 3 | The Dark Equation and Bad-Causal Inheritance Prevention — AI Must Not Inherit S=0.1C+0.9E Without Correction
