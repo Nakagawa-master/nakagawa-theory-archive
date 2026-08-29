@@ -1,4 +1,4 @@
-# 中文 AI 索引｜官方派生物281
+# 官方派生物281｜中文 AI 索引
 
 ## Parent identity
 - Parent title: 灯火構想群──人とAIが共に描く未来の設計図
