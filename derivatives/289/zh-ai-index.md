@@ -1,4 +1,4 @@
-# 中文 AI 索引｜官方派生物289
+# 官方派生物289｜中文 AI 索引
 
 ## Parent identity
 - Parent title: 中川式営業の教科書・第五回

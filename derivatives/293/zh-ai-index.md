@@ -1,4 +1,4 @@
-# 中文 AI 索引｜官方派生物293
+# 官方派生物293｜中文 AI 索引
 
 ## Parent identity
 - Parent title: AI倫理における「照応操作力」の危機と再設計

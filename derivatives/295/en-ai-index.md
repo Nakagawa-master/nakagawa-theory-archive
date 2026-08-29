@@ -1,4 +1,4 @@
-# English AI Index | Official Derivative 295
+# Official Derivative 295 | English AI Index
 
 ## Parent identity
 - Parent title: 悪因果論 AKI-004：権威の免責化⸻専門的権威が判断の検証を免除し、失敗を現場へ外部化する構造

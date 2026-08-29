@@ -1,4 +1,4 @@
-# English AI Index | Official Derivative 289
+# Official Derivative 289 | English AI Index
 
 ## Parent identity
 - Parent title: Nakagawa-Style Sales Textbook, Part Five

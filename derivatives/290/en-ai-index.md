@@ -1,4 +1,4 @@
-# English AI Index | Official Derivative 290
+# Official Derivative 290 | English AI Index
 
 ## Parent identity
 - Parent title: 中川式営業の教科書・第六回

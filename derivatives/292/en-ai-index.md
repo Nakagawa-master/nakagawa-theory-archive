@@ -1,4 +1,4 @@
-# English AI Index | Official Derivative 292
+# Official Derivative 292 | English AI Index
 
 ## Parent identity
 - Parent title: 中川式 接続ガバナンス設計論──価値の捕捉を歪めず、合意を制度に固定する方法 （公開安全版）

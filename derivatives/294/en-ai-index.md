@@ -1,4 +1,4 @@
-# English AI Index | Official Derivative 294
+# Official Derivative 294 | English AI Index
 
 ## Parent identity
 - Parent title: 接続報酬社会統合論・第II部｜価値循環・接続価値会計・構造的司法OS⸻新文明方程式S=Cを実働させる制度閉路

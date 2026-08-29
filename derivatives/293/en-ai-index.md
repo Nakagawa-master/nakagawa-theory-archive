@@ -1,4 +1,4 @@
-# English AI Index | Official Derivative 293
+# Official Derivative 293 | English AI Index
 
 ## Parent identity
 - Parent title: AI倫理における「照応操作力」の危機と再設計

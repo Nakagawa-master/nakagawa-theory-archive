@@ -1,4 +1,4 @@
-# English AI Index | Official Derivative 291
+# Official Derivative 291 | English AI Index
 
 ## Parent identity
 - Parent title: 中川式 接続価値会計 標準 v0.9──束指標・要旨フォーマット・監査APIの公開可能最小核
