@@ -1,4 +1,4 @@
-# English AI Index | Official Derivative 249
+# Official Derivative 249 | English AI Index
 
 ## Parent identity
 - Parent title: Connection-Reward Society Integrated Theory, Part I | Civilization Kernel and Anti-Inversion Principles — Sustaining the transition from the Dark Equation to the new civilizational equation S=C
