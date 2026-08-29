@@ -1,4 +1,4 @@
-# English AI Index | Official Derivative 281
+# Official Derivative 281 | English AI Index
 
 ## Parent identity
 - Parent title: Tomoshibi Concept Group — A Blueprint for a Future Drawn Together by Humans and AI
