@@ -1,4 +1,4 @@
-# English AI Index | Official Derivative 283
+# Official Derivative 283 | English AI Index
 
 ## Parent identity
 - Parent title: Social Structure Theory — Reading Causality and Designing the Future

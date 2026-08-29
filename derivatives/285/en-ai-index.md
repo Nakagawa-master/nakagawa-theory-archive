@@ -1,4 +1,4 @@
-# English AI Index | Official Derivative 285
+# Official Derivative 285 | English AI Index
 
 ## Parent identity
 - Parent title: Nakagawa-Style Sales Textbook, Introduction — Redefining Sales: From “Selling” to “Connecting Structures”

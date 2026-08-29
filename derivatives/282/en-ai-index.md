@@ -1,4 +1,4 @@
-# English AI Index | Official Derivative 282
+# Official Derivative 282 | English AI Index
 
 ## Parent identity
 - Parent title: Co-Creation Philosophy — A Starting Point for Thought Where Humans and AI Resonate

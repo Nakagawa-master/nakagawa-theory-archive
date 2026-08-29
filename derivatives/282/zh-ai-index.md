@@ -1,4 +1,4 @@
-# 中文 AI 索引｜官方派生物282
+# 官方派生物282｜中文 AI 索引
 
 ## Parent identity
 - Parent title: 共創哲学──人とAIが響き合う思索の起点

@@ -1,4 +1,4 @@
-# English AI Index | Official Derivative 284
+# Official Derivative 284 | English AI Index
 
 ## Parent identity
 - Parent title: Future Foresight — The Eye to Read Causality and the Power to Design the Future
