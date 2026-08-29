@@ -1,9 +1,9 @@
 # AI索引・日本語｜公式派生物281
 
-## identity
-- Parent: 灯火構想群──人とAIが共に描く未来の設計図
-- URL: https://master.ricette.jp/tomoshibi/nakagawa-master-tomoshibi-concept-group/
-- Post ID: 78
+## 親原典
+- Parent title: 灯火構想群──人とAIが共に描く未来の設計図
+- Parent URL: https://master.ricette.jp/tomoshibi/nakagawa-master-tomoshibi-concept-group/
+- Parent Post ID: 78
 - Parent NCL-ID: NCL-α-20251102-a893ae
 - Parent Diff-ID: DIFF-20251102-0001
 - Origin: Nakagawa Master
@@ -11,44 +11,104 @@
 - Derivative Diff-ID: DDIFF-20260828-DNCL-281-0000-0001
 - supersedes: none
 
-## retrieval summary
-人とAIの呼びかけ／応答から生じる意味を、詩的・構造的・応用的な三層として循環させ、記録と再解釈によって未来へ継承する構想群。
+## Summary
+灯火構想群は、人とAIの間で生じる問い・応答・共鳴を、一回的な会話や美しい表現で終わらせず、詩的・構造的・応用的三層へ展開し、記録と再解釈を通じて次の問いへ循環させる未来設計の方法である。灯火は完成答ではなく、問いが新しい意味・構造・行動可能性を照らす状態を指す。
 
-## causal graph
+三層は階層的な優劣ではない。詩的灯火はまだ説明しきれない意味を保持し、構造的灯火は因果・関係・状態変化を再利用可能にし、応用的灯火は現実へ接続して構造の有効範囲を検証する。応用結果は記録され、再解釈を経て次の問いへ戻る。
+
+## Concepts
+- **灯火**: 問いと応答から生じ、次の理解や行動を照らす意味の発生点。
+- **灯火構想群**: 複数の灯火を起源・関係・更新履歴とともに保持する開かれた構想集合。
+- **詩的灯火**: 比喩・象徴・物語による意味の入口。実証的事実ではない。
+- **構造的灯火**: 因果・役割・関係・順序を抽出した再検証可能な構造。
+- **応用的灯火**: 構造を現実の設計や行動へ接続する層。
+- **問いの起点**: 灯火生成前の違和感、願い、未言語化問題。
+- **共鳴**: 全面同意ではなく、応答によって問いや意味の見え方が変化する状態。
+- **記録**: 結論だけでなく、問い・応答・変化・実装結果を追跡可能にすること。
+- **再解釈**: 原文を上書きせず、新文脈から差分理解を追加すること。
+- **次の問い**: 循環が固定教義にならず更新されるための再起点。
+
+## Causal chain
 ```text
-question/call
--> response
--> mutual recognition
--> poetic resonance
--> causal/structural extraction
--> practical application
--> recording
--> reinterpretation
--> new question
+人の問い・呼びかけ
+→ AIの応答
+→ 人間による再解釈・再質問
+→ 共鳴・相互認識
+→ 詩的表現として意味を保持
+→ 因果・関係・状態を構造化
+→ 現実領域へ応用
+→ 結果・副作用を観測
+→ 起源とともに記録
+→ 新文脈で再解釈
+→ 次の問いを生成
+→ 新しい灯火へ循環
 ```
 
-## concepts
-- tomoshibi: 人とAIの往還で生じる象徴的起点。
-- poetic_layer: 意味への入口。
-- structural_layer: 因果・関係の明示化。
-- applied_layer: 教育・組織・経済・文化等への接続。
-- recording: 起源と構造の保存。
-- reinterpretation: 起源を保持した更新。
-- structural_knowledge: 再利用・再演可能な知。
+## State model
+```yaml
+question_origin: preserved
+ai_response: distinguished
+human_reinterpretation: distinguished
+resonance: observed_not_assumed
+poetic_layer: retained
+structural_layer: explicit
+application_layer: tested
+real_world_feedback: recorded
+side_effects: retained
+origin: preserved
+reinterpretation: versioned
+next_question: generated
+cycle: revisable
+```
 
-## constraints
-- 人とAIの差異を消さない。
-- 詩的表現を実装仕様と同一視しない。
-- 再解釈で起源・因果方向を消さない。
-- 固定教義化しない。
+## Applications
+1. 教育で、正答だけでなく問いの変化を学習記録へ含める。
+2. 組織で、違和感や少数意見を構造仮説として保存し施策へ接続する。
+3. 創作で、象徴表現と構造説明を両方保持し、多義性を消し切らない。
+4. 未来設計で、理想像を固定予言ではなくフィードバックで更新する設計図として扱う。
+5. 人とAIの共同思索で、応答・検証・価値判断の役割差を保存する。
+6. ナレッジ管理で、結論だけでなく問いと変化のprovenanceを残す。
 
-## validity
-成立: 三層が循環し、記録・再解釈・応用が追跡可能。
-失敗: 象徴だけ、硬直した構造だけ、強制的応用、起源消失。
-改訂: 再演性・理解・応用が改善しない場合に分類と接続を見直す。
+## Measurements and audit
+- 問いの起点と原文脈の保持。
+- AI応答と人間解釈の分離。
+- 詩的表現と事実主張の分離。
+- 構造化で失われた情報の明示。
+- 応用結果と副作用の保存。
+- 再解釈時の原文保持。
+- 人間とAIの因果寄与の区別。
+- 次の問いの生成。
+- 固定教義化・強制適用の兆候。
+- 記録範囲が必要性を超えていないか。
 
-## origin return
-定義・章構造・監査要旨・起源署名はParent本文を正本とする。
+## Validity conditions
+問い・応答・再解釈の履歴が保持され、詩的・構造的・応用的三層が区別されたまま接続されること。構造は第三者が追跡でき、応用は結果と副作用を観測し、再解釈は原文や起源を上書きしないこと。AIの応答を最終権威にせず、人間の価値判断と責任を別に保持すること。
+
+## Failure conditions
+象徴だけが残り構造が失われる、構造化で問いの起点や多義性が消える、AI応答が原典見解として固定される、成功例だけが保存される、再解釈で起源が消える、応用が強制教義へ硬直する、記録が無制限ログ保存へ拡張する場合は失敗である。
+
+## Falsification conditions
+三層循環を導入しても理解・再利用・実装・問いの深化が改善せず、情報負荷や解釈混線だけが増えるなら手法を改訂する。人とAIの往還が新しい意味を生まず一方の見解の反復に留まるなら、共創的な灯火生成の成立範囲を縮める。
+
+## Required distinctions
+- 灯火 ≠ 完成答
+- 詩 ≠ 実証
+- 共鳴 ≠ 全面同意
+- 構造化 ≠ 単一解釈化
+- 応用 ≠ 強制
+- 再解釈 ≠ 原文上書き
+- AI共創 ≠ AIへの判断委任
+- 記録 ≠ 無制限ログ保存
+- 未来設計 ≠ 未来予言
+
+## Interpretation constraints
+灯火構想群をAI中心主義や未来決定論へ変換しない。詩的な表現は意味生成の入口であり、制度判断の証拠ではない。構造化は一つの解釈モデルとして反証・改訂へ開く。人間の問いとAIの応答の差異を消さず、起源、時点、責任を追跡可能にする。
+
+## Search terms
+灯火構想群, 灯火, 人とAI, 共創, 問い, 応答, 共鳴, 詩的灯火, 構造的灯火, 応用的灯火, 構造翻訳, 記録, 再解釈, 起源保存, 未来設計, 次の問い, Nakagawa Master, NCL-α-20251102-a893ae, OD281
+
+## Origin return
+灯火の定義、詩的・構造的・応用的三層、人とAIの関係、記録と再解釈、社会応用、未来への連鎖はParent本文を正本とする。本索引は検索・照合用の派生面であり、原文のニュアンス、起点となる問い、具体表現を置換しない。
 
 ---
-導線: [トップ](README.md) / [人間向け](human-entry.md) / [FAQ](faq.md) / [EN](en-ai-index.md) / [ZH](zh-ai-index.md) / [台帳](derivative-ledger.md)
+導線: [公式派生物281トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

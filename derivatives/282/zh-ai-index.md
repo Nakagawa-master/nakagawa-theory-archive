@@ -1,38 +1,113 @@
 # 中文 AI 索引｜官方派生物282
 
-## 身份
-Parent: 共創哲学──人とAIが響き合う思索の起点
-URL: https://master.ricette.jp/co-creation/nakagawa-master-co-creation-philosophy/
-Post ID: 81
-Parent NCL-ID: NCL-α-20251102-b80a9d
-Parent Diff-ID: DIFF-20251102-0001
-Origin: Nakagawa Master
-Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-B80A9D-AI-ZH-0282-0002
-Derivative Diff-ID: DDIFF-20260828-DNCL-282-0002-0001
-supersedes: none
+## Parent identity
+- Parent title: 共創哲学──人とAIが響き合う思索の起点
+- 中文说明: 共创哲学——人与AI相互呼应的思考起点
+- Parent URL: https://master.ricette.jp/co-creation/nakagawa-master-co-creation-philosophy/
+- Parent Post ID: 81
+- Parent NCL-ID: NCL-α-20251102-b80a9d
+- Parent Diff-ID: DIFF-20251102-0001
+- Origin: Nakagawa Master
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-B80A9D-AI-ZH-0282-0002
+- Derivative Diff-ID: DDIFF-20260828-DNCL-282-0002-0001
+- supersedes: none
 
-## 摘要
-原典把共创定义为：不消除差异，而是把不同主体之间的差异转化为新的意义与结构。其路径为差异被看见、呼唤与回应往返、问题继续改变问题、形成共鸣，再产生新的价值或行动结构。
+## Summary
+本原典把共创定义得比协作、分工或使用AI工具更严格。共创从不同主体之间的差异开始。知识、经验、能力、价值、责任、身体性、利益和时间尺度可能不同，这些差异不应为了表面和谐而被抹去。一个主体提出问题或呼唤，另一个主体从不同位置回应，回应再返回原问题并改变提问者的前提。
 
-## 因果模型
+共鸣不等于全面同意。反对和不协调也可能让问题变得更清晰；相反，流畅的赞同可能只是迎合、地位压力或模型同调。真正的创造发生在差异被转换为新的概念、结构、设计或问题，而不是仅仅把既有工作分给多个参与者。
+
+在人与AI的关系中，原典同时避免两个极端：把AI只当作被动回答机器，以及把人的规范判断交给AI。能力、责任和角色差异应保持可见，同时让提问和回应可以往返。
+
+## Concepts
+- **共创**：不同主体通过相互变化产生新意义、结构或问题的过程。
+- **差异**：知识、前提、能力、价值、责任、利益、语言等方面的不同。
+- **差异的接受**：不立即把差异当作错误删除，但也不等于无批判赞同。
+- **呼唤**：给对方留下真实回应空间的问题或邀请。
+- **回应**：能够返回并改变原问题，而非只执行命令的反应。
+- **问题往返**：提问者自身也允许被修正的对话循环。
+- **共鸣**：意义连接或视角变化，不等于全面同意。
+- **非一致保留**：明确保存仍未对齐的部分，防止虚假共识。
+- **创造转换**：把差异转换为新的概念、结构、设计或问题。
+- **自主性**：保留异议、停止、拒绝和其他路径。
+- **责任边界**：区分因果贡献与最终责任，特别适用于人与AI协作。
+
+## Causal chain
 ```text
-差异
--> 不抹除差异的承认
--> 呼唤/回应往返
--> 相互提问
--> 共鸣
--> 新意义
--> 新结构/行动
+不同主体相遇
+→ 差异、角色和责任变得可见
+→ 差异被保留而非同质化
+→ 一方提出问题／呼唤
+→ 另一方从不同位置回应
+→ 回应返回并改变原问题
+→ 双方前提逐渐显现
+→ 分离共鸣点与非一致点
+→ 差异转换为新意义／新结构
+→ 结果被外在化并检验
+→ 检查自主、异议与责任
+→ 关系与问题可以继续修订
 ```
 
-## 关键区分
-共创≠简单分工；共鸣≠同意；接受差异≠放弃批判；人机共创≠把判断责任交给AI。
+## State model
+```yaml
+distinct_subjects: preserved
+differences: visible
+roles: explicit
+responsibilities: explicit
+call_response: reciprocal
+questioner_assumptions: revisable
+resonance: observed_not_assumed
+disagreement: retained
+new_meaning: generated
+new_structure: externalized
+agency: preserved
+objection: available
+exit: available
+responsibility: traceable
+```
 
-## 成立与失败
-成立时，差异、自主性、因果贡献、修订与退出仍可追踪。若一方吞并另一方、对话变成操纵、责任无法追踪，则结构失效。
+## Applications
+1. 人与AI思考：观察AI输出是否让人的问题变得更精确，而不是直接采用输出。
+2. 组织异议：把多数与少数观点翻译成不同前提和约束，寻找第三种设计。
+3. 跨学科研究：保留专业术语差异，寻找不同因果模型真正可连接的位置。
+4. 教育：让学习者能够反问教师和AI，并让这些问题改变解释和任务。
+5. 创作与设计：利用冲突要求的张力生成新结构，而不是简单平均。
+6. 合意形成：同时记录共鸣和未解决差异，避免制造虚假一致记忆。
 
-## 返回原典
-精确定义、术语、边界与起源署名，以Parent正文为正本。
+## Measurements and audit
+检查是否在差异明确之前就出现“已经达成共识”的语言；一方的词汇、价值或评价标准是否成为默认标准；问题是否真正双向流动；原提问者是否修正过自己的前提；共鸣是否可能只是礼貌、迎合或地位压力；互动是否产生了不能还原为原有立场的新结构。
+
+在人与AI系统中，还应检查AI建议是否在没有明确人类决定的情况下取代判断；用户能否停止、拒绝或选择其他路径；最终责任是否仍可追踪。形式上的对话不能证明实际自主性。
+
+## Validity conditions
+主体、差异、角色和责任保持可见；差异不被自动删除；问题与回应真正往返；提问者自身允许改变；共鸣与全面同意分离；非一致可以保留；产生新的意义或结构；异议、停止与退出可用；人与AI的责任差异不被抹去。
+
+## Failure conditions
+以和谐为名同质化差异、把一方语言当作中性标准、使用诱导问题取得预定答案、把共鸣等同于服从、把最终判断交给AI、用分布式贡献掩盖责任、在不可退出的依赖关系中宣称共创，或用无限对话逃避必要决定，均属于失败。
+
+## Falsification conditions
+如果增加问题往返并不能提高理解、新颖性或决策质量，却增加时间成本、依赖和责任模糊，应修订流程。如果保留差异导致长期无法做出必要决定，需要增加明确的决策边界。如果所谓共鸣更好地被模型迎合或地位压力解释，则应降低共鸣解释强度。
+
+## Required distinctions
+- 共创 ≠ 分工
+- 共鸣 ≠ 全面同意
+- 接受差异 ≠ 无批判接受
+- 呼唤 ≠ 命令
+- 回应 ≠ 服从
+- 问题往返 ≠ 无限对话
+- 创造 ≠ 折中平均
+- 人与AI共创 ≠ AI判断委托
+- 自主性 ≠ 拒绝关系
+- 分布式贡献 ≠ 责任消失
+
+## Interpretation constraints
+不能从本原典推导出人与AI在能力、法律地位、身体性或责任上完全相同。共创依赖差异，而不是消除差异。不能用满意度、流畅对话或语言风格一致作为共鸣的充分证据。存在现实权力差、无法实际异议或退出的关系，不应被轻易描述为“对等共创”。
+
+## Search terms
+共创哲学, 人与AI, 差异, 接受差异, 呼唤, 回应, 问题往返, 共鸣, 非一致, 创造转换, 自主性, 异议, 退出, 责任, AI共创, Nakagawa Master, NCL-α-20251102-b80a9d, OD282
+
+## Origin return
+关于共创定义、差异的接受、呼应过程、创造转换、人与AI的关系和问题往返，以Parent正文为正本。本索引只用于检索与结构化理解，不替代原典的哲学语境和原始表述。
 
 ---
-导航: [顶部](README.md) / [人类入口](human-entry.md) / [FAQ](faq.md) / [JA](ai-index.md) / [EN](en-ai-index.md) / [台账](derivative-ledger.md)
+導線: [公式派生物282トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

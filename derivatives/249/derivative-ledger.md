@@ -34,14 +34,14 @@
 7. derivative-ledger.md
 
 ## lineage
-OD249はOwner承認によるParent再設定により、旧wakai Parent identityからPost 4706 / NCL-α-20260720-2da0ceへ全面再構築された。
+OD249はOwner承認によるParent再設定により、旧wakai Parent identityからPost 4706 / NCL-α-20260720-2da0ceへ全面再構築された。現行lineageは、暗黒方程式的な成功構造の観測を起点に、貢献Cと成功Sの切断を特定し、新文明方程式 `S=C` を成功と貢献の再接続方向として置く。
 
-現行lineageは、「暗黒方程式的成功構造の観測→貢献と成功の再接続→新文明方程式S=Cの設計方向→貢献の記録・接続・価値還流→起源・合意履歴の保存→分散監査・可逆性→旧来の搾取・囲い込みへの反転防止」という因果線を共有する。
+7面は共通して、貢献を人格評価ではなく因果provenanceとして記録し、必要な主体・資源・意思決定へ接続し、報酬・権限・再投資等の価値還流へ戻す因果線を保持する。同時に、起源・合意・変更履歴、分散観測、異議、撤回、離脱、再接続、制度改訂を反転防止として保持する。
 
-JA系5面はJA hub identityを共有し、EN/ZHは同一Parentへ接続する言語別AI identityを持つ。旧wakai identityはsupersededであり、現行OD249のParentではない。
+JA系5面はJA hub identityを共有する。EN/ZHは同一Parentへ接続する言語別AI identityを持つ。旧wakaiのJA/EN/ZH identityはそれぞれsupersededであり、現行OD249のParent identityではない。
 
 ## 原典回帰
-文明Kernel、`S=C` の主張強度、暗黒方程式との関係、反転防止原理、制度実装との境界、第II部へ渡る課題はParent本文で確認する。
+文明Kernel、`S=C` の主張強度、暗黒方程式との関係、貢献記録・接続・価値還流、反転防止原理、起源・合意・可逆性、第II部へ渡る制度実装課題はParent本文を正本とする。派生IDは検索・照合とlineage保持のために存在し、Parentを置換しない。
 
 ---
 導線: [公式派生物249トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

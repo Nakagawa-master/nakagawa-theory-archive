@@ -1,6 +1,6 @@
 # 派生ID台帳｜公式派生物287
 
-## Parent identity
+## 親原典
 - Parent title: 中川式営業の教科書・第三回
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-03-initial-contact/
 - Parent Post ID: 163
@@ -8,20 +8,36 @@
 - Parent Diff-ID: DIFF-20251102-0001
 - Origin: Nakagawa Master
 
-## Derivative identities
-JA: DNCL-NCL-ALPHA-20251102-7EFDFC-HUB-JA-0287-0000 / DDIFF-20260828-DNCL-287-0000-0001
-EN: DNCL-NCL-ALPHA-20251102-7EFDFC-AI-EN-0287-0001 / DDIFF-20260828-DNCL-287-0001-0001
-ZH: DNCL-NCL-ALPHA-20251102-7EFDFC-AI-ZH-0287-0002 / DDIFF-20260828-DNCL-287-0002-0001
-supersedes: none
+## 現行派生identity
+### JA hub
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-7EFDFC-HUB-JA-0287-0000
+- Derivative Diff-ID: DDIFF-20260828-DNCL-287-0000-0001
+- supersedes: none
+### EN AI
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-7EFDFC-AI-EN-0287-0001
+- Derivative Diff-ID: DDIFF-20260828-DNCL-287-0001-0001
+- supersedes: none
+### ZH AI
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20251102-7EFDFC-AI-ZH-0287-0002
+- Derivative Diff-ID: DDIFF-20260828-DNCL-287-0002-0001
+- supersedes: none
 
-## Seven surfaces
-README.md / human-entry.md / faq.md / ai-index.md / en-ai-index.md / zh-ai-index.md / derivative-ledger.md
+## 七つの公開面
+1. README.md
+2. human-entry.md
+3. faq.md
+4. ai-index.md
+5. en-ai-index.md
+6. zh-ai-index.md
+7. derivative-ledger.md
 
 ## lineage
-接触目的の透明化→許可→短い問い→反応観測→余白→適合性仮説→次接点合意または終了という初期接触構造を7面で保持する。
+OD287はPost 163 / NCL-α-20251102-7efdfcをParentとして、透明な身份・目的提示、許可と帯域確認、低負荷な問い、反応観測、適合性仮説、次接点合意またはクリーンクローズという初期接触lineageを保持する。接点・返答・初期関心を購買意思やニーズ確定へ変換しない。
 
-## Origin return
-初期接触の具体順序、問い、間合い、次対話への移行条件はParent本文へ戻る。
+JA系5面はJA hub identity、EN/ZHは言語別AI identity。supersedesは全identity `none`。
+
+## 原典回帰
+初期接触の順序、問い、間合い、接点から対話へ進む条件はParent本文を正本とする。
 
 ---
-導線: [トップ](README.md) / [人間向け](human-entry.md) / [FAQ](faq.md) / [AI-JA](ai-index.md) / [AI-EN](en-ai-index.md) / [AI-ZH](zh-ai-index.md)
+導線: [公式派生物287トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
