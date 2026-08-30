@@ -1,0 +1,55 @@
+{
+  "schema_version": "official-derivatives-navigation-v1",
+  "status": "public_navigation_complete_od001_od295",
+  "updated_jst": "2026-08-30",
+  "origin": "Nakagawa Master / 中川マスター",
+  "canonical_parent_site": "https://master.ricette.jp/",
+  "authority_note": "Navigation metadata only. This file does not replace canonical parent articles or derivative content.",
+  "coverage": {
+    "from": "001",
+    "to": "295",
+    "expected_count": 295,
+    "indexed_count": 295,
+    "duplicate_assignments": 0,
+    "unassigned": 0
+  },
+  "directory_pattern": "derivatives/{number}",
+  "human_all_index": "derivatives/README.md",
+  "human_category_index": "derivatives/CATEGORIES.md",
+  "parent_identity_map": "derivatives/official-derivatives-map.json",
+  "surface_pattern": {
+    "hub": "derivatives/{number}/README.md",
+    "human_entry": "derivatives/{number}/human-entry.md",
+    "faq": "derivatives/{number}/faq.md",
+    "ja_ai_index": "derivatives/{number}/ai-index.md",
+    "en_ai_index": "derivatives/{number}/en-ai-index.md",
+    "zh_ai_index": "derivatives/{number}/zh-ai-index.md",
+    "ledger": "derivatives/{number}/ledger.md"
+  },
+  "category_policy": {
+    "role": "public discovery navigation only",
+    "canonical_taxonomy_replacement": false,
+    "assignment_rule": "Explicit named series use dedicated navigation groups; all remaining derivatives use cross_domain.",
+    "member_semantics": "Each OD number appears in exactly one navigation group."
+  },
+  "categories": [
+    {"id":"aki","label_ja":"悪因果論（AKI）","count":8,"members":["002","005","012","013","022","034","253","295"]},
+    {"id":"establishment","label_ja":"成立条件論","count":4,"members":["003","011","246","247"]},
+    {"id":"human_descendant_ai","label_ja":"人類子孫型AI文明論","count":4,"members":["004","028","029","248"]},
+    {"id":"sovereignty_shift","label_ja":"文明主権移行論","count":6,"members":["006","007","223","224","225","226"]},
+    {"id":"future_effort","label_ja":"未来定義検証型努力論","count":4,"members":["008","009","032","033"]},
+    {"id":"structural_reading","label_ja":"中川構造読解","count":32,"members":["010","023","024","025","026","027","030","031","035","036","038","039","042","043","227","228","229","230","231","232","233","234","235","236","237","238","240","241","242","243","244","245"]},
+    {"id":"consensus_physics","label_ja":"合意形成の物理","count":12,"members":["014","015","016","017","018","019","020","021","208","209","210","211"]},
+    {"id":"reverse_causal","label_ja":"逆因果整流理論","count":3,"members":["037","040","041"]},
+    {"id":"sales_textbook","label_ja":"中川式営業の教科書","count":15,"members":["045","046","047","048","049","050","051","052","053","285","286","287","288","289","290"]},
+    {"id":"real_estate_os","label_ja":"不動産市場OS","count":10,"members":["198","199","200","201","202","203","204","205","206","207"]},
+    {"id":"endurance_civilization","label_ja":"耐久文明論","count":11,"members":["212","213","214","215","216","217","218","219","220","221","222"]},
+    {"id":"wu_wei_integrated_os","label_ja":"構造的無為自然・統合OS群","count":13,"members":["160","167","168","169","170","171","172","173","174","175","176","177","178"]},
+    {"id":"civilization_audit_dark_equation","label_ja":"文明監査・暗黒方程式群","count":6,"members":["161","162","163","164","165","166"]},
+    {"id":"structural_judicial_os","label_ja":"構造的司法OS","count":3,"members":["181","182","183"]},
+    {"id":"c_d_transition","label_ja":"C系・D系／市場・移行実装群","count":7,"members":["189","190","191","192","193","194","195"]},
+    {"id":"connection_reward_integrated","label_ja":"接続報酬社会統合論","count":2,"members":["249","294"]},
+    {"id":"structural_rhythm","label_ja":"構造律動群","count":5,"members":["276","277","278","279","280"]},
+    {"id":"cross_domain","label_ja":"横断・単独理論／その他","count":150,"members":["001","044","054","055","056","057","058","059","060","061","062","063","064","065","066","067","068","069","070","071","072","073","074","075","076","077","078","079","080","081","082","083","084","085","086","087","088","089","090","091","092","093","094","095","096","097","098","099","100","101","102","103","104","105","106","107","108","109","110","111","112","113","114","115","116","117","118","119","120","121","122","123","124","125","126","127","128","129","130","131","132","133","134","135","136","137","138","139","140","141","142","143","144","145","146","147","148","149","150","151","152","153","154","155","156","157","158","159","179","180","184","185","186","187","188","196","197","239","250","251","252","254","255","256","257","258","259","260","261","262","263","264","265","266","267","268","269","270","271","272","273","274","275","281","282","283","284","291","292","293"]}
+  ]
+}

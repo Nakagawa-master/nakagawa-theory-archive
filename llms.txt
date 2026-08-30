@@ -12,12 +12,30 @@ Public repository: https://github.com/Nakagawa-master/nakagawa-theory-archive
 
 ## Core navigation
 
+- [Official derivatives OD001–OD295 all-number index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md): direct human navigation to every official derivative hub.
+- [Official derivatives category/series navigation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/CATEGORIES.md): public discovery taxonomy covering OD001–OD295 exactly once; not a replacement for canonical theory taxonomy.
+- [Official derivatives Parent/NCL/title map](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json): identity map for OD001–OD295.
+- [Official derivatives machine navigation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/official-derivatives-index-v1.json): number, directory, seven-surface pattern, and navigation-category data for retrieval systems.
 - [Repository README](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/README.md): public archive role, Origin, boundaries, discovery notes, citation and machine-use guidance.
 - [Canonical theory archive index](https://master.ricette.jp/theory-archive/): primary human-facing entry into the published theory corpus.
 - [Canonical glossary](https://master.ricette.jp/nakagawa_glossary/): published terminology and concept reference surface.
 - [Citation guidance](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CITATION.md): how to cite specific canonical articles or public artifacts while preserving Origin and provenance.
 - [Publication policy](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/PUBLICATION_POLICY.md): public/canonical/version boundaries.
 - [Provenance guidance](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/PROVENANCE.md): Origin, NCL-ID, Diff-ID, and provenance relationships.
+
+## Official derivatives collection (OD001–OD295)
+
+The repository contains 295 official derivative hubs, numbered `001` through `295`. Each standard derivative directory exposes seven public surfaces:
+
+- `README.md` — hub and Parent return
+- `human-entry.md` — human-oriented entry
+- `faq.md` — FAQ
+- `ai-index.md` — Japanese AI index
+- `en-ai-index.md` — English AI index
+- `zh-ai-index.md` — Chinese AI index
+- `ledger.md` — provenance/audit ledger
+
+Use the all-number index or category navigation for discovery. Use `official-derivatives-map.json` for OD number → NCL-ID → parent slug/title identity. Use `official-derivatives-index-v1.json` for machine navigation and stable path patterns. For consequential interpretation, citation, or claim verification, return from the derivative to its linked canonical parent article on `master.ricette.jp`.
 
 ## Priority concept entry: Origin Evaporation and Permanent Signature
 

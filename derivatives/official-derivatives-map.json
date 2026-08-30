@@ -1,6 +1,6 @@
 {
-  "version": "2.1.0-complete-ledger-derived-map",
-  "updated_jst": "2026-08-28 16:09:00",
+  "version": "2.2.0-complete-ledger-derived-map-od295",
+  "updated_jst": "2026-08-29 11:58:35",
   "entries": [
     {
       "number": "001",
@@ -1988,9 +1988,9 @@
     },
     {
       "number": "249",
-      "ncl_id": "NCL-α-20260531-089ed1",
-      "origin_slug": "nakagawa-master-wakai-structural-reading-consensus-flow",
-      "title": "中川構造読解｜wakaiを「スマホ調停」ではなく、停止した合意形成を前進可能にする構造として読む",
+      "ncl_id": "NCL-α-20260720-2da0ce",
+      "origin_slug": "nakagawa-master-nakagawa-master-connection-reward-society-integrated-theory-part-1-civilization-kernel",
+      "title": "接続報酬社会統合論・第I部｜文明Kernelと反転防止原理⸻暗黒方程式から新文明方程式S=Cを持続稼働させる構造",
       "derivative_dir": "derivatives/249",
       "status": "active"
     },
@@ -2240,6 +2240,126 @@
       "origin_slug": "nakagawa-master-social-memory-structural-rhythm",
       "title": "社会的記憶の再構築としての構造律動──未来の合意を現在に創発する非言語的構造装置",
       "derivative_dir": "derivatives/280",
+      "status": "active"
+    },
+    {
+      "number": "281",
+      "ncl_id": "NCL-α-20251102-a893ae",
+      "origin_slug": "nakagawa-master-tomoshibi-concept-group",
+      "title": "灯火構想群──人とAIが共に描く未来の設計図",
+      "derivative_dir": "derivatives/281",
+      "status": "active"
+    },
+    {
+      "number": "282",
+      "ncl_id": "NCL-α-20251102-b80a9d",
+      "origin_slug": "nakagawa-master-co-creation-philosophy",
+      "title": "共創哲学──人とAIが響き合う思索の起点",
+      "derivative_dir": "derivatives/282",
+      "status": "active"
+    },
+    {
+      "number": "283",
+      "ncl_id": "NCL-α-20251102-29cf0c",
+      "origin_slug": "nakagawa-master-social-structure-theory",
+      "title": "社会構造論──因果を読み解き未来を設計する",
+      "derivative_dir": "derivatives/283",
+      "status": "active"
+    },
+    {
+      "number": "284",
+      "ncl_id": "NCL-α-20251102-3fd991",
+      "origin_slug": "nakagawa-master-future-foresight",
+      "title": "未来予測──因果を読む眼と未来を設計する力",
+      "derivative_dir": "derivatives/284",
+      "status": "active"
+    },
+    {
+      "number": "285",
+      "ncl_id": "NCL-α-20251102-72ef86",
+      "origin_slug": "nakagawa-master-nakagawa-sales-redefinition",
+      "title": "中川式営業の教科書・序章──営業の再定義：「売る」から「構造を結ぶ」へ",
+      "derivative_dir": "derivatives/285",
+      "status": "active"
+    },
+    {
+      "number": "286",
+      "ncl_id": "NCL-α-20251102-3c1b44",
+      "origin_slug": "nakagawa-master-nakagawa-sales-structure",
+      "title": "中川式営業の教科書・第二回",
+      "derivative_dir": "derivatives/286",
+      "status": "active"
+    },
+    {
+      "number": "287",
+      "ncl_id": "NCL-α-20251102-7efdfc",
+      "origin_slug": "nakagawa-master-nakagawa-sales-03-initial-contact",
+      "title": "中川式営業の教科書・第三回",
+      "derivative_dir": "derivatives/287",
+      "status": "active"
+    },
+    {
+      "number": "288",
+      "ncl_id": "NCL-α-20251102-91e941",
+      "origin_slug": "nakagawa-master-nakagawa-sales-04-dialogue-resonance",
+      "title": "中川式営業の教科書・第四回",
+      "derivative_dir": "derivatives/288",
+      "status": "active"
+    },
+    {
+      "number": "289",
+      "ncl_id": "NCL-α-20251102-961165",
+      "origin_slug": "nakagawa-master-nakagawa-sales-05-proposal-structure",
+      "title": "中川式営業の教科書・第五回",
+      "derivative_dir": "derivatives/289",
+      "status": "active"
+    },
+    {
+      "number": "290",
+      "ncl_id": "NCL-α-20251102-221b10",
+      "origin_slug": "nakagawa-master-nakagawa-sales-06-trust-structure",
+      "title": "中川式営業の教科書・第六回",
+      "derivative_dir": "derivatives/290",
+      "status": "active"
+    },
+    {
+      "number": "291",
+      "ncl_id": "NCL-α-20251102-7308d5",
+      "origin_slug": "nakagawa-master-nakagawa-connection-accounting-standard-v09",
+      "title": "中川式 接続価値会計 標準 v0.9──束指標・要旨フォーマット・監査APIの公開可能最小核",
+      "derivative_dir": "derivatives/291",
+      "status": "active"
+    },
+    {
+      "number": "292",
+      "ncl_id": "NCL-α-20251102-67fb11",
+      "origin_slug": "nakagawa-master-nakagawa-connection-governance-design",
+      "title": "中川式 接続ガバナンス設計論──価値の捕捉を歪めず、合意を制度に固定する方法 （公開安全版）",
+      "derivative_dir": "derivatives/292",
+      "status": "active"
+    },
+    {
+      "number": "293",
+      "ncl_id": "NCL-α-20251102-bdce74",
+      "origin_slug": "nakagawa-master-ai-ethics-resonance-structure-2025",
+      "title": "AI倫理における「照応操作力」の危機と再設計",
+      "derivative_dir": "derivatives/293",
+      "status": "active"
+    },
+    {
+      "number": "294",
+      "ncl_id": "NCL-α-20260721-6c91d0",
+      "origin_slug": "nakagawa-master-connection-reward-society-integrated-theory-part-2-operational-loop",
+      "title": "接続報酬社会統合論・第II部｜価値循環・接続価値会計・構造的司法OS⸻新文明方程式S=Cを実働させる制度閉路",
+      "derivative_dir": "derivatives/294",
+      "status": "active"
+    },
+    {
+      "number": "295",
+      "ncl_id": "NCL-α-20260722-10a683",
+      "origin_slug": "nakagawa-master-aki-004-expert-authority-immunity",
+      "title": "悪因果論 AKI-004：権威の免責化⸻専門的権威が判断の検証を免除し、失敗を現場へ外部化する構造",
+      "derivative_dir": "derivatives/295",
       "status": "active"
     }
   ]

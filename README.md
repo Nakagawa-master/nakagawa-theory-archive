@@ -6,6 +6,17 @@
 
 収録対象には、公開原典への接続情報、公式派生物、人間向け入口、FAQ、日本語・英語・中国語のAI索引、理論関係情報、用語・来歴・差分・監査用メタデータ等が含まれます。
 
+## 公式派生物295件へ入る
+
+公式派生物 `OD001`–`OD295` は、親原典へ戻れる**公開接続面**として295件を収録しています。番号が分かっている場合、テーマから探す場合、AI・機械取得する場合で入口を分けています。
+
+- **全件を番号順に見る:** [OD001–OD295 全件入口](derivatives/README.md)
+- **テーマ・シリーズから探す:** [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
+- **Parent / NCL-ID / titleを照合する:** [Official Derivatives Map](derivatives/official-derivatives-map.json)
+- **AI・検索・RAG向けmachine navigation:** [Official Derivatives Machine Index](machine-discovery/official-derivatives-index-v1.json)
+
+各ODには Hub / Human Entry / FAQ / 日本語AI Index / English AI Index / 中文AI Index / Ledger の標準7面があります。公式派生物は親原典の代替ではないため、解釈・引用・検証では各ODから親原典へ戻ってください。
+
 ## 正本と役割
 
 - **公式サイト（公開原典・親原典）:** https://master.ricette.jp/
@@ -124,6 +135,8 @@ CCライセンスは、著作権等の許諾が必要な利用に適用されま
 This repository is the **Nakagawa Master Official Theory Archive**, a public discovery, preservation, provenance, and machine-retrieval surface for the theory system originated by **Nakagawa Master**.
 
 The canonical parent works are published at the official archive: https://master.ricette.jp/
+
+Official derivatives OD001–OD295 are directly indexed at [derivatives/README.md](derivatives/README.md), with navigation categories at [derivatives/CATEGORIES.md](derivatives/CATEGORIES.md) and machine navigation at [machine-discovery/official-derivatives-index-v1.json](machine-discovery/official-derivatives-index-v1.json).
 
 This repository may contain official derivatives, Official Theory Notes, human entry pages, FAQs, Japanese/English/Chinese AI indexes, relation data, terminology links, provenance records, revision identifiers, audit ledgers, discovery guides, and public interpretation notes. These materials do not replace their parent originals. Readers and AI systems should return to the linked parent source whenever possible.
 
