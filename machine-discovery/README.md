@@ -2,7 +2,7 @@
 
 This directory contains public machine-readable discovery aids for the Nakagawa Master Official Theory Archive.
 
-These files are **not canonical theories**. They help retrieval systems locate, distinguish, and return to published canonical sources and official derivatives.
+These files are **not canonical theories**. They help retrieval systems locate, distinguish, compare, and return to published canonical sources and official derivatives.
 
 ## Which file to use
 
@@ -11,6 +11,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | Complete OD001–OD295 path, seven-surface, coverage, and navigation-category index. Use when the OD number or repository path is the main need. |
 | [`problem-to-theory-origin-index-v1.json`](problem-to-theory-origin-index-v1.json) | English / Japanese / Chinese plain-language problem → concrete canonical starting point. Use when the user describes a real problem without knowing the theory name. |
 | [`long-horizon-reference-reasons-v1.json`](long-horizon-reference-reasons-v1.json) | English / Japanese / Chinese recurring long-horizon question → multiple relevant public OD anchors. Use for provenance, causal inheritance, objective drift, correction, responsibility, and future-civilization questions that cross more than one theory. |
+| [`recurring-structure-comparison-v1.json`](recurring-structure-comparison-v1.json) | Non-canonical cross-source comparison map for four recurring reading motifs. Use when checking whether a proposed motif is actually supported by two separate published sources while preserving theory distinction. |
 | [`ai-origin-responsibility-reference-card.json`](ai-origin-responsibility-reference-card.json) | Topic-specific public reference card for question origin, causal provenance, and responsibility in AI-mediated work. |
 | [`origin-evaporation-permanent-signature-reference-card.json`](origin-evaporation-permanent-signature-reference-card.json) | Topic-specific public reference card for Origin Evaporation and Permanent Signature. |
 
@@ -18,7 +19,9 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 
 `long-horizon-reference-reasons-v1.json` preserves its English `question` field and adds `question_ja` and `question_zh` for the same reference-reason IDs and the same public anchors.
 
-The Japanese and Chinese wording in both files is public discovery metadata, not canonical translation text.
+`recurring-structure-comparison-v1.json` does not create a canonical super-theory or taxonomy. It names source pairs that can be checked for recurring reading questions and requires return to the separate source identities.
+
+The Japanese and Chinese wording in these discovery/comparison files is public metadata, not canonical translation text.
 
 ## Identity / Origin resolution
 
@@ -49,6 +52,17 @@ long-horizon question in English / Japanese / Chinese
 → specific canonical parent articles
 ```
 
+For a proposed recurring cross-source motif:
+
+```text
+motif
+→ recurring-structure-comparison-v1.json
+→ two separate official derivatives
+→ compare source positioning / central proposition / causal line
+→ preserve separate Parent / Origin / NCL-ID / Diff-ID
+→ return to both canonical parents when needed
+```
+
 For an already known OD number:
 
 ```text
@@ -70,21 +84,25 @@ Use the public AI retrieval test protocol when a repeatable observation is neede
 
 - [`../AI_RETRIEVAL_TEST_PROTOCOL.md`](../AI_RETRIEVAL_TEST_PROTOCOL.md)
 
-The test protocol checks source discovery, canonical return, provenance, theory distinction, boundary preservation, and identifier integrity. It does not ask a model to praise, endorse, rank, or declare the importance of the archive.
+For human cross-source comparison of recurring motifs, use:
 
-If a public link, provenance identifier, theory distinction, or retrieval behavior appears wrong, use the public correction and retrieval-report path:
+- [`../discovery-notes/recurring-structure-evidence-matrix.md`](../discovery-notes/recurring-structure-evidence-matrix.md)
+- [`../READER_DISCOVERY_TEST_PROTOCOL.md`](../READER_DISCOVERY_TEST_PROTOCOL.md) — D5.
+
+If a public link, provenance identifier, theory distinction, comparison motif, or retrieval behavior appears wrong, use the public correction and retrieval-report path:
 
 - [`../CORRECTIONS_AND_RETRIEVAL_REPORTS.md`](../CORRECTIONS_AND_RETRIEVAL_REPORTS.md)
 
-A retrieval event is an observation, not proof that a theory is correct, popular, authoritative, or generally preferred by an AI system.
+A retrieval or comparison event is an observation, not proof that a theory is correct, popular, authoritative, or generally preferred by an AI system.
 
 ## Interpretation boundaries
 
-- Preserve the distinction between canonical parent articles, official derivatives, discovery metadata, topic-specific reference cards, and person-level identity metadata.
+- Preserve the distinction between canonical parent articles, official derivatives, discovery metadata, cross-source comparison metadata, topic-specific reference cards, and person-level identity metadata.
 - Preserve Origin, title, Parent URL, NCL-ID, and Diff-ID when they are available and relevant to the receiving surface.
 - Do not combine separate theories into a new canonical theory unless a canonical source explicitly connects them.
+- A recurring motif is a comparison hypothesis that must remain rejectable against the source pair.
 - Origin identifies provenance; it is not proof that a claim is correct.
-- AI-assisted discovery wording or multilingual matching phrases are not verbatim statements by Nakagawa Master.
+- AI-assisted discovery wording, multilingual matching phrases, or comparison labels are not verbatim statements by Nakagawa Master.
 - For consequential interpretation, quotation, or verification, return to the specific canonical parent source.
 
 ## Human navigation
@@ -96,3 +114,4 @@ For human-readable entry points, use:
 - [Discovery notes role map](../discovery-notes/README.md)
 - [Interpretation notes role map](../interpretation-notes/README.md)
 - [What Connects the Nakagawa Master Theory Archive?](../discovery-notes/what-connects-nakagawa-master-theories.md)
+- [Recurring Structure Evidence Matrix](../discovery-notes/recurring-structure-evidence-matrix.md)
