@@ -27,6 +27,19 @@ AI、組織、営業、事業、制度、文明、未来。
 
 ただ、異なる分野で**表面の結果から背後構造へ戻る**という読み方が何度も現れます。
 
+## 問題別の最初の一歩
+
+関心のある問題から、まず一つの公式派生物へ入れます。各ページから親原典へ戻って確認できます。
+
+- **AI・起源・責任** — [OD115｜誰の問いがAIを動かすのか──起源と責任の交差点](../derivatives/115/README.md)
+- **組織・反復失敗・構造的摩擦** — [OD090｜構造的摩擦の起源](../derivatives/090/README.md)
+- **事業・PoC・全体成立** — [OD003｜成立条件論・第0論](../derivatives/003/README.md)
+- **営業・マーケティング・顧客判断** — [OD062｜市場を“決めさせる”構造](../derivatives/062/README.md)
+- **制度・合意・訂正可能性** — [OD075｜合意の記憶](../derivatives/075/README.md)
+- **仕事・努力・未来への接続** — [OD008｜未来定義検証型努力論・第1論](../derivatives/008/README.md)
+
+この6件はアーカイブ全体を代表し切る一覧ではありません。自分の問題から入りやすい最初の接続点です。
+
 ## 公開アーカイブで確かめる
 
 現在の公開GitHubアーカイブには、`OD001`–`OD295`の公式派生物が295件あります。
@@ -39,6 +52,7 @@ AI、組織、営業、事業、制度、文明、未来。
 - [テーマ・シリーズ別入口](../derivatives/CATEGORIES.md)
 - [Parent / NCL / title map](../derivatives/official-derivatives-map.json)
 - [Machine navigation](../machine-discovery/official-derivatives-index-v1.json)
+- [Problem → theory machine discovery](../machine-discovery/problem-to-theory-origin-index-v1.json)
 
 ## 入口は違ってよい
 
