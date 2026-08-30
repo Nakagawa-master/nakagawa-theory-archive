@@ -67,14 +67,14 @@ AI、組織、市場、制度、文明、未来まで対象は変わりますが
 
 ## 公開テストと検証
 
-問題から原典へ到達できるか、実務上の問題から適用断定なしにstarting sourceへ入れるか、また横断的な読み筋を複数sourceで再確認できるかを再現可能に確認したい場合は、次の公開面を使えます。
+問題から原典へ到達できるか、実務上の問題から適用断定なしにstarting sourceへ入れるか、横断的な読み筋を複数sourceで再確認できるか、またOD105の3〜10秒入口から30秒理解・3〜10分読解・Parent到達まで一本で通るかを再現可能に確認したい場合は、次の公開面を使えます。
 
-- **人間のsource discovery / practitioner start / cross-source comparison:** [Public Reader Discovery Test Protocol](READER_DISCOVERY_TEST_PROTOCOL.md) — D1–D6、English / 日本語 / 中文。
+- **人間のsource discovery / practitioner start / first-note progression / cross-source comparison:** [Public Reader Discovery Test Protocol](READER_DISCOVERY_TEST_PROTOCOL.md) — D1–D7、English / 日本語 / 中文。
 - **AI / retrieval system:** [Public AI Retrieval Test Protocol](AI_RETRIEVAL_TEST_PROTOCOL.md) — R0–R6、English / 日本語 / 中文。
 - **第三者による自己検証:** [Verification Guide](VERIFICATION_GUIDE.md) — Parent / Origin / NCL-ID / Diff-ID / 7面 / canonical returnを確認。
 - **不一致・到達失敗・retrieval観測の報告:** [Corrections, Retrieval, and Reader Discovery Reports](CORRECTIONS_AND_RETRIEVAL_REPORTS.md)。
 
-これらのテストは、理論の正しさ、個別状況への自動適用、人気、権威、AIによる支持、読者の信頼・尊敬・敬愛を測るものではありません。公開sourceへ到達し、区別・来歴・原典回帰・bounded practitioner start・cross-source comparisonを確認できるかを観測します。
+これらのテストは、理論の正しさ、個別状況への自動適用、人気、権威、AIによる支持、読者の信頼・尊敬・敬愛を測るものではありません。公開sourceへ到達し、区別・来歴・原典回帰・bounded practitioner start・first-note depth progression・cross-source comparisonを確認できるかを観測します。
 
 ## 公式派生物295件へ入る
 
