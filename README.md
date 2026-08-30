@@ -12,6 +12,19 @@ AI、組織、市場、制度、文明、未来まで対象は変わりますが
 
 初めて読む場合は、[What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md) から、関心のある問題と親原典への入口を確認できます。
 
+## 代表的な3〜10秒入口 — OD105
+
+> **AIは知識を残しても、その知識がどこから来たかへ戻る道を消してしまうことがある。**
+
+これは「すべてのAIが必ず起源を失う」という主張ではありません。中川マスターのOD105「構造起源防衛」が扱う、要約・翻訳・再生成後の**起源回復可能性**へ入るための短い公開Discovery入口です。
+
+- **日本語:** [OD105 First Note](discovery-notes/od105-origin-evaporation-first-note.md)
+- **English:** [OD105 First Note — English](discovery-notes/od105-origin-evaporation-first-note.en.md)
+- **中文:** [OD105 First Note — 中文](discovery-notes/od105-origin-evaporation-first-note.zh.md)
+- **短尺・音声・映像・carousel用の非正本adaptation:** [OD105 Micro-Format Pack](discovery-notes/od105-origin-evaporation-micro-format-pack.md)
+
+各入口は[公式派生物105](derivatives/105/README.md)と親原典へ戻ります。短文やmedia adaptationは親原典の代替ではありません。
+
 ## 30秒で使う5つの入口
 
 - **自分の問題から入る:** [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
@@ -119,6 +132,8 @@ AI、組織、市場、制度、文明、未来まで対象は変わりますが
 公開済み原典への発見・理解・原典回帰を助ける**非正本・AI支援の解説ノート**は、役割別に整理しています。中川マスター本人の逐語的な公式声明や、親原典の代替として扱わないでください。
 
 - **全Discovery Noteの役割を見る:** [Discovery Notes](discovery-notes/README.md)
+- **OD105の3〜10秒から原典へ入る:** [OD105 First Note](discovery-notes/od105-origin-evaporation-first-note.md)
+- **OD105を短尺・音声・映像の縮尺で確認する:** [OD105 Micro-Format Pack](discovery-notes/od105-origin-evaporation-micro-format-pack.md)
 - **実務問題から最初のsourceを選ぶ:** [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - **実務解釈ノートの役割を見る:** [Interpretation Notes](interpretation-notes/README.md)
 - **横断的な最初の入口:** [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
