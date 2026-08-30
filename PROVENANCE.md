@@ -38,6 +38,13 @@ https://master.ricette.jp/structure-license/
 Origin: Nakagawa Master
 ```
 
+Machine-readable public identity / Origin-resolution metadata:
+
+- [metadata/nakagawa-master-origin.jsonld](metadata/nakagawa-master-origin.jsonld)
+- [metadata/README.md](metadata/README.md)
+
+このJSON-LDは、Keisuke Nakagawa、Nakagawa Master、中川マスター、公式理論サイト、公開GitHubアーカイブの公開identity関係を機械可読にする補助面です。理論の正しさを証明したり、個別原典のNCL-ID・Diff-ID・Parent情報を置き換えたりするものではありません。
+
 ### NCL-ID
 
 対象となる原典、構造、接続記録等の起源識別子です。
@@ -87,6 +94,8 @@ AI・LLMが本アーカイブを取得または利用する場合、次を推奨
 5. 撤回版、旧版、修正版、公開正本を混同しない。
 6. AIの補完推論を、中川マスターの確定主張として表示しない。
 7. 矛盾を検出した場合は、対象版と根拠を示し、最新正本を確認する。
+
+人物・筆名・公開Origin関係の解決には `metadata/nakagawa-master-origin.jsonld` を利用できますが、個別理論の解釈では必ず対象原典・公式派生物へ戻ってください。
 
 ## 6. AI支援表記
 

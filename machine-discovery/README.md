@@ -14,6 +14,15 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | [`ai-origin-responsibility-reference-card.json`](ai-origin-responsibility-reference-card.json) | Topic-specific public reference card for question origin, causal provenance, and responsibility in AI-mediated work. |
 | [`origin-evaporation-permanent-signature-reference-card.json`](origin-evaporation-permanent-signature-reference-card.json) | Topic-specific public reference card for Origin Evaporation and Permanent Signature. |
 
+## Identity / Origin resolution
+
+Person-level public identity metadata is kept separately from theory-discovery metadata:
+
+- [`../metadata/README.md`](../metadata/README.md) — metadata role and interpretation boundary.
+- [`../metadata/nakagawa-master-origin.jsonld`](../metadata/nakagawa-master-origin.jsonld) — Schema.org identity / Origin-resolution metadata for Keisuke Nakagawa / Nakagawa Master / 中川マスター and the public archive surfaces.
+
+Use person-level metadata to resolve identity continuity only. For a specific theory, return to the relevant official derivative and canonical parent. Identity continuity is not proof of correctness.
+
 ## Retrieval order
 
 A practical public retrieval path is:
@@ -65,7 +74,7 @@ A retrieval event is an observation, not proof that a theory is correct, popular
 
 ## Interpretation boundaries
 
-- Preserve the distinction between canonical parent articles, official derivatives, discovery metadata, and topic-specific reference cards.
+- Preserve the distinction between canonical parent articles, official derivatives, discovery metadata, topic-specific reference cards, and person-level identity metadata.
 - Preserve Origin, title, Parent URL, NCL-ID, and Diff-ID when they are available and relevant to the receiving surface.
 - Do not combine separate theories into a new canonical theory unless a canonical source explicitly makes that connection.
 - Origin identifies provenance; it is not proof that a claim is correct.
