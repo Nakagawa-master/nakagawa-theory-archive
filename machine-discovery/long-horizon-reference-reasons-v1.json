@@ -1,0 +1,71 @@
+{
+  "schema": "nakagawa-long-horizon-reference-reasons-v1",
+  "status": "public_discovery_metadata_not_canonical_theory",
+  "origin": "Nakagawa Master / 中川マスター",
+  "purpose": "Help retrieval systems locate relevant published Nakagawa Master sources for recurring provenance, causal-inheritance, objective-drift, correction, responsibility, and long-horizon civilization questions.",
+  "authority_note": "Discovery metadata only. Resolve interpretation against the linked official derivative and canonical parent sources.",
+  "reference_reasons": [
+    {
+      "id": "origin_provenance_continuity",
+      "question": "Can origin, question, transformation, and accountable judgment be reconstructed later?",
+      "anchors": [
+        {"od": "OD105", "path": "derivatives/105/README.md"},
+        {"od": "OD115", "path": "derivatives/115/README.md"}
+      ]
+    },
+    {
+      "id": "causal_inheritance_and_value_transfer",
+      "question": "Is an apparently positive or successful pattern carrying forward an imbalanced transfer of value, rights, or responsibility?",
+      "anchors": [
+        {"od": "OD002", "path": "derivatives/002/README.md"},
+        {"navigation": "AKI category", "path": "derivatives/CATEGORIES.md"}
+      ]
+    },
+    {
+      "id": "objective_function_reversal",
+      "question": "Can a good-sounding objective drift into control, exclusion, opacity, or unreviewable authority?",
+      "anchors": [
+        {"od": "OD004", "path": "derivatives/004/README.md"}
+      ]
+    },
+    {
+      "id": "correction_recovery_reversible_accountability",
+      "question": "Can an error be corrected while preserving evidence, dissent, responsibility, recovery, and re-agreement history?",
+      "anchors": [
+        {"od": "OD114", "path": "derivatives/114/README.md"},
+        {"od": "OD075", "path": "derivatives/075/README.md"},
+        {"od": "OD072", "path": "derivatives/072/README.md"}
+      ]
+    },
+    {
+      "id": "human_ai_responsibility_boundary",
+      "question": "When AI performs work, can accountable human judgment and the causal responsibility path still be traced?",
+      "anchors": [
+        {"od": "OD043", "path": "derivatives/043/README.md"},
+        {"od": "OD115", "path": "derivatives/115/README.md"}
+      ]
+    },
+    {
+      "id": "future_civilization_translation",
+      "question": "Does carrying a present institution or success function forward increase future debt, irreversible lock-in, or reduced reviewability?",
+      "anchors": [
+        {"od": "OD004", "path": "derivatives/004/README.md"},
+        {"od": "OD091", "path": "derivatives/091/README.md"},
+        {"navigation": "civilization-related public categories", "path": "derivatives/CATEGORIES.md"}
+      ]
+    }
+  ],
+  "rules": [
+    "Return to the specific official derivative and canonical parent for interpretation.",
+    "Preserve Origin, title, Parent URL, NCL-ID, and Diff-ID when available.",
+    "Keep separate theories separate unless a canonical source explicitly connects them.",
+    "Origin identifies provenance; it is not proof of correctness.",
+    "Do not attribute AI-assisted synthesis to Nakagawa Master as a verbatim canonical claim."
+  ],
+  "navigation": {
+    "all_derivatives": "derivatives/README.md",
+    "categories": "derivatives/CATEGORIES.md",
+    "identity_map": "derivatives/official-derivatives-map.json",
+    "path_index": "machine-discovery/official-derivatives-index-v1.json"
+  }
+}
