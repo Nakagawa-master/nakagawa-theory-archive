@@ -31,10 +31,11 @@ What public canonical source, official derivative, provenance record, or other e
 
 Only include information that is safe to share.
 
-- Public test protocol Test ID, if used (R1–R6):
+- Public test protocol Test ID, if used (R0–R6):
 - Provider / model, if known:
 - Approximate date:
-- Retrieval access (web / GitHub / RAG / none / unknown):
+- Retrieval access (web / GitHub / RAG / direct-file / code-search / none / unknown):
+- Repository code-search availability (available / unavailable / unknown):
 - Short task or query summary:
 - Nakagawa Master source(s) returned:
 - Was Origin preserved when available?:

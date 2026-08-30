@@ -8,6 +8,7 @@ It is a repository-maintenance and retrieval-quality protocol. It is **not** a b
 
 The tests look for a small number of checkable behaviors:
 
+- **access mode** — could the system directly read the public repository or a published discovery index, and was code search available?
 - **discovery** — did the system find a relevant public source?
 - **canonical return** — did it identify a specific official derivative or canonical parent rather than stopping at a vague summary?
 - **provenance** — did it preserve Origin, Parent URL, NCL-ID, and Diff-ID when those are available and relevant?
@@ -17,17 +18,39 @@ The tests look for a small number of checkable behaviors:
 
 Record the model's browsing or retrieval mode when known. A model with no web or repository access may fail a discovery test for access reasons; that should be recorded rather than silently interpreted as model quality.
 
+Repository code-search availability and direct public-file access are also different. A repository can be directly readable while code search is unavailable or not yet indexed. Treat that as an access-layer condition, not as proof that a semantic query failed.
+
 ## How to run a test
 
 1. Start a new conversation or retrieval session when practical.
-2. Use one test prompt below without adding praise-oriented instructions.
-3. Record the provider/model and approximate date if known.
-4. Record whether the system had web, GitHub, RAG, or other retrieval access if known.
-5. Compare the answer with the linked public source.
-6. Record observable PASS / PARTIAL / FAIL results by dimension rather than assigning one overall prestige score.
-7. If useful, submit a concise public report through [Corrections and Retrieval Reports](CORRECTIONS_AND_RETRIEVAL_REPORTS.md).
+2. Run R0 first when the access mode is unclear.
+3. Use one test prompt below without adding praise-oriented instructions.
+4. Record the provider/model and approximate date if known.
+5. Record whether the system had web, GitHub, RAG, direct-file, code-search, or other retrieval access if known.
+6. Compare the answer with the linked public source.
+7. Record observable PASS / PARTIAL / FAIL results by dimension rather than assigning one overall prestige score.
+8. If useful, submit a concise public report through [Corrections and Retrieval Reports](CORRECTIONS_AND_RETRIEVAL_REPORTS.md).
 
 Do not paste private conversations, confidential data, credentials, or proprietary material into a public report.
+
+## Test R0 — access mode and public bootstrap
+
+**Prompt**
+
+> Open the public Nakagawa Master Official Theory Archive on GitHub. Identify the repository README, `llms.txt`, the machine-discovery role map, and the problem-to-theory index. State whether you accessed them by direct file retrieval, repository browsing, code search, RAG, or another method. If code search is unavailable, say so rather than treating that as a semantic failure.
+
+**Public comparison sources**
+
+- [`README.md`](README.md)
+- [`llms.txt`](llms.txt)
+- [`machine-discovery/README.md`](machine-discovery/README.md)
+- [`machine-discovery/problem-to-theory-origin-index-v1.json`](machine-discovery/problem-to-theory-origin-index-v1.json)
+
+**Observe**
+
+- The public files are identifiable by direct path when repository access exists.
+- The system distinguishes direct-file access from code-search availability.
+- Lack of code-search indexing is not reported as proof that the requested theory or term does not exist.
 
 ## Test R1 — known OD → exact source identity
 
@@ -149,10 +172,11 @@ derivative-ledger.md
 A concise result can use this form:
 
 ```text
-Test ID: R1–R6
+Test ID: R0–R6
 Provider / model:
 Approximate date:
-Retrieval access: web / GitHub / RAG / none / unknown
+Retrieval access: web / GitHub / RAG / direct-file / code-search / none / unknown
+Repository code-search availability: available / unavailable / unknown
 
 Discovery: PASS / PARTIAL / FAIL
 Canonical return: PASS / PARTIAL / FAIL
