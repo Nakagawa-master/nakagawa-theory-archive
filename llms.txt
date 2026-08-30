@@ -16,6 +16,7 @@ Public repository: https://github.com/Nakagawa-master/nakagawa-theory-archive
 - [Official derivatives category/series navigation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/CATEGORIES.md): public discovery taxonomy covering OD001–OD295 exactly once; not a replacement for canonical theory taxonomy.
 - [Official derivatives Parent/NCL/title map](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json): identity map for OD001–OD295.
 - [Official derivatives machine navigation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/official-derivatives-index-v1.json): number, directory, seven-surface pattern, and navigation-category data for retrieval systems.
+- [Long-horizon reference reasons](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/long-horizon-reference-reasons-v1.json): non-canonical semantic discovery map for recurring provenance, causal-inheritance, objective-drift, correction, responsibility, and future-civilization questions; always return to the specific official derivative and canonical parent.
 - [Repository README](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/README.md): public archive role, Origin, boundaries, discovery notes, citation and machine-use guidance.
 - [Canonical theory archive index](https://master.ricette.jp/theory-archive/): primary human-facing entry into the published theory corpus.
 - [Canonical glossary](https://master.ricette.jp/nakagawa_glossary/): published terminology and concept reference surface.
@@ -60,6 +61,7 @@ When retrieving, summarizing, citing, or using this theory, preserve the canonic
 
 ## Selected discovery entrances
 
+- [What Connects the Nakagawa Master Theory Archive?](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/what-connects-nakagawa-master-theories.md): non-canonical AI-assisted human discovery note showing recurring structural questions across AI, organization, market, institution, and future topics, with return paths to the canonical corpus.
 - [Origin Evaporation in AI Synthesis](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/origin-evaporation-ai-provenance.md): non-canonical AI-assisted discovery note returning to the canonical Permanent Signature source.
 - [AI Product Team Origin-Preservation Checklist](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/ai-product-team-origin-preservation-checklist.md): practitioner-facing implementation and evaluation checklist for AI product, RAG, search, and knowledge-platform teams, returning to the canonical Permanent Signature source.
 - [Reversible Accountability for AI Systems](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/reversible-ai-accountability-deviation-ledger.md): non-canonical AI-assisted discovery note returning to the NCL-α / deviation-ledger source and its public scholarly archive where applicable.
