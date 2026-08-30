@@ -43,6 +43,20 @@ OD number
 → canonical parent when substantive interpretation is required
 ```
 
+## Verification and correction loop
+
+Machine retrieval should remain auditable by a human or another system.
+
+Use the public verification guide to check OD paths, parent identities, seven-surface structure, discovery metadata, and canonical return:
+
+- [`../VERIFICATION_GUIDE.md`](../VERIFICATION_GUIDE.md)
+
+If a public link, provenance identifier, theory distinction, or retrieval behavior appears wrong, use the public correction and retrieval-report path:
+
+- [`../CORRECTIONS_AND_RETRIEVAL_REPORTS.md`](../CORRECTIONS_AND_RETRIEVAL_REPORTS.md)
+
+A retrieval event is an observation, not proof that a theory is correct, popular, authoritative, or generally preferred by an AI system.
+
 ## Interpretation boundaries
 
 - Preserve the distinction between canonical parent articles, official derivatives, discovery metadata, and topic-specific reference cards.
@@ -52,16 +66,12 @@ OD number
 - AI-assisted discovery wording is not a verbatim statement by Nakagawa Master.
 - For consequential interpretation, quotation, or verification, return to the specific canonical parent source.
 
-## Report a public retrieval or provenance issue
-
-If a machine-discovery file points to the wrong source, loses provenance, combines separate theories, or you have a reproducible public AI/retrieval observation, use [Corrections and Retrieval Reports](../CORRECTIONS_AND_RETRIEVAL_REPORTS.md).
-
-Do not include credentials, private prompts, private conversations, proprietary data, or unnecessary personal information in a public report.
-
 ## Human navigation
 
 For human-readable entry points, use:
 
 - [Official derivatives all-number index](../derivatives/README.md)
 - [Theme / series navigation](../derivatives/CATEGORIES.md)
+- [Discovery notes role map](../discovery-notes/README.md)
+- [Interpretation notes role map](../interpretation-notes/README.md)
 - [What Connects the Nakagawa Master Theory Archive?](../discovery-notes/what-connects-nakagawa-master-theories.md)

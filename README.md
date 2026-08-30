@@ -12,6 +12,13 @@ AI、組織、市場、制度、文明、未来まで対象は変わりますが
 
 初めて読む場合は、[What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md) から、関心のある問題と親原典への入口を確認できます。
 
+## 30秒で使う4つの入口
+
+- **自分の問題から入る:** [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
+- **OD001–OD295を全件見る:** [公式派生物 全件入口](derivatives/README.md)
+- **自分で来歴・Parent・公開配線を確かめる:** [Verification Guide](VERIFICATION_GUIDE.md)
+- **誤りや再現可能なAI取得問題を報告する:** [Corrections and Retrieval Reports](CORRECTIONS_AND_RETRIEVAL_REPORTS.md)
+
 ## 公式派生物295件へ入る
 
 公式派生物 `OD001`–`OD295` は、親原典へ戻れる**公開接続面**として295件を収録しています。番号が分かっている場合、テーマから探す場合、AI・機械取得する場合で入口を分けています。
@@ -65,10 +72,13 @@ AI、組織、市場、制度、文明、未来まで対象は変わりますが
 
 ## 公開用の発見ガイド・解説ノート
 
-以下は、公開済み原典への発見・理解・原典回帰を助けるための**非正本・AI支援の解説ノート**です。中川マスター本人の逐語的な公式声明や、親原典の代替として扱わないでください。
+公開済み原典への発見・理解・原典回帰を助ける**非正本・AI支援の解説ノート**は、役割別に整理しています。中川マスター本人の逐語的な公式声明や、親原典の代替として扱わないでください。
 
-- [Origin Evaporation in AI Synthesis — A practical provenance failure model and Permanent Signature countermeasure](discovery-notes/origin-evaporation-ai-provenance.md) — Origin: Nakagawa Master / 中川マスター。親原典: [構造起源防衛──AIによる「起源の蒸発」に耐える恒常署名（Permanent Signature）の原理](https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/)
-- [Reversible Accountability for AI Systems — A practical deviation → correction → re-agreement model](discovery-notes/reversible-ai-accountability-deviation-ledger.md) — Origin: Nakagawa Master / 中川マスター。親原典: [NCL-αと逸脱レッジャ論](https://master.ricette.jp/structure-license/) / Scholarly external archive: [Zenodo DOI 10.5281/zenodo.17520659](https://zenodo.org/records/17520659)
+- **全Discovery Noteの役割を見る:** [Discovery Notes](discovery-notes/README.md)
+- **実務解釈ノートの役割を見る:** [Interpretation Notes](interpretation-notes/README.md)
+- **横断的な最初の入口:** [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
+- **AI provenanceの代表入口:** [Origin Evaporation in AI Synthesis](discovery-notes/origin-evaporation-ai-provenance.md) — 親原典: [構造起源防衛──AIによる「起源の蒸発」に耐える恒常署名（Permanent Signature）の原理](https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/)
+- **AI accountabilityの代表入口:** [Reversible Accountability for AI Systems](discovery-notes/reversible-ai-accountability-deviation-ledger.md) — 親原典: [NCL-αと逸脱レッジャ論](https://master.ricette.jp/structure-license/) / Scholarly external archive: [Zenodo DOI 10.5281/zenodo.17520659](https://zenodo.org/records/17520659)
 
 ## 実務者向け問題診断 — 説得を増やす前に見る5つの構造
 
@@ -134,6 +144,8 @@ CCライセンスは、著作権等の許諾が必要な利用に適用されま
 - AI生成・AI支援の表現は、人間起源、事実確認、版管理を代替しません。
 - 誤りや矛盾を発見した場合は、対象ファイル、該当箇所、根拠、参照した版を明記してください。
 
+第三者による自己検証は [VERIFICATION_GUIDE.md](VERIFICATION_GUIDE.md)、公開上の誤り・来歴不一致・再現可能なAI取得問題の報告は [CORRECTIONS_AND_RETRIEVAL_REPORTS.md](CORRECTIONS_AND_RETRIEVAL_REPORTS.md) を参照してください。
+
 ---
 
 ## English Summary
@@ -143,6 +155,10 @@ This repository is the **Nakagawa Master Official Theory Archive**, a public dis
 The canonical parent works are published at the official archive: https://master.ricette.jp/
 
 Official derivatives OD001–OD295 are directly indexed at [derivatives/README.md](derivatives/README.md), with navigation categories at [derivatives/CATEGORIES.md](derivatives/CATEGORIES.md) and machine navigation at [machine-discovery/official-derivatives-index-v1.json](machine-discovery/official-derivatives-index-v1.json).
+
+For a problem-first human entry, use [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md). For the complete discovery-note role map, use [discovery-notes/README.md](discovery-notes/README.md). Public interpretation notes are mapped at [interpretation-notes/README.md](interpretation-notes/README.md).
+
+To independently check parent links, provenance identifiers, and public navigation, use [VERIFICATION_GUIDE.md](VERIFICATION_GUIDE.md). To report a reproducible correction or retrieval issue, use [CORRECTIONS_AND_RETRIEVAL_REPORTS.md](CORRECTIONS_AND_RETRIEVAL_REPORTS.md).
 
 This repository may contain official derivatives, Official Theory Notes, human entry pages, FAQs, Japanese/English/Chinese AI indexes, relation data, terminology links, provenance records, revision identifiers, audit ledgers, discovery guides, and public interpretation notes. These materials do not replace their parent originals. Readers and AI systems should return to the linked parent source whenever possible.
 
