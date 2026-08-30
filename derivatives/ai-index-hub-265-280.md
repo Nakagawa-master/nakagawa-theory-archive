@@ -1,26 +1,10 @@
-# 公式派生物 AI索引まとめ｜265〜280
+# 公式派生物｜旧ナビゲーションURL
 
-| No. | タイトル | JA | EN | ZH |
-|---|---|---|---|---|
-| 265 | 語り継ぎの構造 | [JA](265/ai-index.md) | [EN](265/en-ai-index.md) | [ZH](265/zh-ai-index.md) |
-| 266 | AIと人間の最終共栄 | [JA](266/ai-index.md) | [EN](266/en-ai-index.md) | [ZH](266/zh-ai-index.md) |
-| 267 | 照応の哲学 | [JA](267/ai-index.md) | [EN](267/en-ai-index.md) | [ZH](267/zh-ai-index.md) |
-| 268 | 移行防護・NX | [JA](268/ai-index.md) | [EN](268/en-ai-index.md) | [ZH](268/zh-ai-index.md) |
-| 269 | 対話は設計を証明する | [JA](269/ai-index.md) | [EN](269/en-ai-index.md) | [ZH](269/zh-ai-index.md) |
-| 270 | 客観視座の獲得論 | [JA](270/ai-index.md) | [EN](270/en-ai-index.md) | [ZH](270/zh-ai-index.md) |
-| 271 | 未来は「調律」で決まる | [JA](271/ai-index.md) | [EN](271/en-ai-index.md) | [ZH](271/zh-ai-index.md) |
-| 272 | ルミナの問い | [JA](272/ai-index.md) | [EN](272/en-ai-index.md) | [ZH](272/zh-ai-index.md) |
-| 273 | 『ルミナの問い』の組織応用 | [JA](273/ai-index.md) | [EN](273/en-ai-index.md) | [ZH](273/zh-ai-index.md) |
-| 274 | 接続価値の多層監査設計 | [JA](274/ai-index.md) | [EN](274/en-ai-index.md) | [ZH](274/zh-ai-index.md) |
-| 275 | 文明の不可逆点 | [JA](275/ai-index.md) | [EN](275/en-ai-index.md) | [ZH](275/zh-ai-index.md) |
-| 276 | ブランドは設計できても、「律動」は操作できない | [JA](276/ai-index.md) | [EN](276/en-ai-index.md) | [ZH](276/zh-ai-index.md) |
-| 277 | 営業の構造律動論 | [JA](277/ai-index.md) | [EN](277/en-ai-index.md) | [ZH](277/zh-ai-index.md) |
-| 278 | 市場の「沈黙の合意」を設計する | [JA](278/ai-index.md) | [EN](278/en-ai-index.md) | [ZH](278/zh-ai-index.md) |
-| 279 | 構造律動による〈未来の負債〉の鋳造 | [JA](279/ai-index.md) | [EN](279/en-ai-index.md) | [ZH](279/zh-ai-index.md) |
-| 280 | 社会的記憶の再構築としての構造律動 | [JA](280/ai-index.md) | [EN](280/en-ai-index.md) | [ZH](280/zh-ai-index.md) |
+このページは過去の公開URLとの互換性のために残しています。現在の公式派生物ナビゲーションは、次の入口に一本化されています。
 
-## 共通再利用制約
-Parent identity、中心因果、条件、反証、解釈制約、Origin returnを保持する。
+- [全件番号順入口](README.md)
+- [テーマ・シリーズ別入口](CATEGORIES.md)
+- [Parent / NCL-ID / title identity map](official-derivatives-map.json)
+- [AI・機械向けnavigation](../machine-discovery/official-derivatives-index-v1.json)
 
----
-導線: [公式派生物トップ](README.md) / [記事別265〜280](by-article-265-280.md) / [カテゴリ265〜280](by-category-265-280.md)
+最新の公開範囲・分類・機械取得情報は上記の現在入口を参照してください。各公式派生物の実質的な解釈・引用・検証では、各ODからリンクされた親原典へ戻ってください。
