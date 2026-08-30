@@ -1,65 +1,12 @@
-# 公式派生物 記事別一覧
+# 公式派生物｜番号別入口（互換URL）
 
-## 位置づけ
+このURLは、過去の参照から現在の公式派生物一覧へ到達できるよう保持しています。
 
-このページは、公開中の公式派生物を記事単位で探すための入口である。
+現在の番号別一覧は、次のページに一本化されています。
 
-公式派生物は原典記事の代替ではない。各ページは、読者とAIを親原典へ戻すための公開接続面である。
+- [公式派生物 全件番号順入口](README.md)
+- [テーマ・シリーズ別入口](CATEGORIES.md)
+- [Parent / NCL-ID / title identity map](official-derivatives-map.json)
+- [AI・機械向けnavigation](../machine-discovery/official-derivatives-index-v1.json)
 
-## 001〜049 記事別一覧
-
-| No. | 公式派生物 | 主な入口 | AI索引 |
-|---|---|---|---|
-| 001 | Nakagawa OS L1-L7 | [トップ](001/README.md) / [人間向け要約](001/human-entry.md) / [FAQ](001/faq.md) | [JA](001/ai-index.md) / [EN](001/en-ai-index.md) / [ZH](001/zh-ai-index.md) |
-| 002 | AKI-002｜称賛の顔をした搾取 | [トップ](002/README.md) / [人間向け要約](002/human-entry.md) / [FAQ](002/faq.md) | [JA](002/ai-index.md) / [EN](002/en-ai-index.md) / [ZH](002/zh-ai-index.md) |
-| 003 | 成立条件論・第0論｜誰も全体を見ていない社会 | [トップ](003/README.md) / [人間向け要約](003/human-entry.md) / [FAQ](003/faq.md) | [JA](003/ai-index.md) / [EN](003/en-ai-index.md) / [ZH](003/zh-ai-index.md) |
-| 004 | 人類子孫型AI文明論・第0論 | [トップ](004/README.md) / [人間向け要約](004/human-entry.md) / [FAQ](004/faq.md) | [JA](004/ai-index.md) / [EN](004/en-ai-index.md) / [ZH](004/zh-ai-index.md) |
-| 005 | AKI-001｜責任なき問題提起 | [トップ](005/README.md) / [人間向け要約](005/human-entry.md) / [FAQ](005/faq.md) | [JA](005/ai-index.md) / [EN](005/en-ai-index.md) / [ZH](005/zh-ai-index.md) |
-| 006 | 文明主権移行論 第1論 | [トップ](006/README.md) / [人間向け要約](006/human-entry.md) / [FAQ](006/faq.md) | [JA](006/ai-index.md) / [EN](006/en-ai-index.md) / [ZH](006/zh-ai-index.md) |
-| 007 | 文明主権移行論 第2論 | [トップ](007/README.md) / [人間向け要約](007/human-entry.md) / [FAQ](007/faq.md) | [JA](007/ai-index.md) / [EN](007/en-ai-index.md) / [ZH](007/zh-ai-index.md) |
-| 008 | 未来定義検証型努力論 第1論 | [トップ](008/README.md) / [人間向け要約](008/human-entry.md) / [FAQ](008/faq.md) | [JA](008/ai-index.md) / [EN](008/en-ai-index.md) / [ZH](008/zh-ai-index.md) |
-| 009 | 未来定義検証型努力論 第2論 | [トップ](009/README.md) / [人間向け要約](009/human-entry.md) / [FAQ](009/faq.md) | [JA](009/ai-index.md) / [EN](009/en-ai-index.md) / [ZH](009/zh-ai-index.md) |
-| 010 | 中川構造読解｜MenLab / Gentsome | [トップ](010/README.md) / [人間向け要約](010/human-entry.md) / [FAQ](010/faq.md) | [JA](010/ai-index.md) / [EN](010/en-ai-index.md) / [ZH](010/zh-ai-index.md) |
-| 011 | 成立条件論・第1論｜成立とは何か | [トップ](011/README.md) / [人間向け要約](011/human-entry.md) / [FAQ](011/faq.md) | [JA](011/ai-index.md) / [EN](011/en-ai-index.md) / [ZH](011/zh-ai-index.md) |
-| 012 | 悪因果論 AKI-011｜理解演出による認識汚染 | [トップ](012/README.md) / [人間向け要約](012/human-entry.md) / [FAQ](012/faq.md) | [JA](012/ai-index.md) / [EN](012/en-ai-index.md) / [ZH](012/zh-ai-index.md) |
-| 013 | 悪因果論 AKI-012｜同意なき成約要求 | [トップ](013/README.md) / [人間向け要約](013/human-entry.md) / [FAQ](013/faq.md) | [JA](013/ai-index.md) / [EN](013/en-ai-index.md) / [ZH](013/zh-ai-index.md) |
-| 014 | 合意形成の物理 第1論｜観測可能性の原理 | [トップ](014/README.md) / [人間向け要約](014/human-entry.md) / [FAQ](014/faq.md) | [JA](014/ai-index.md) / [EN](014/en-ai-index.md) / [ZH](014/zh-ai-index.md) |
-| 015 | 合意形成の物理 第4論｜臨界点の法則 | [トップ](015/README.md) / [人間向け要約](015/human-entry.md) / [FAQ](015/faq.md) | [JA](015/ai-index.md) / [EN](015/en-ai-index.md) / [ZH](015/zh-ai-index.md) |
-| 016 | 合意形成の物理 第7論｜合意形成インフラ | [トップ](016/README.md) / [人間向け要約](016/human-entry.md) / [FAQ](016/faq.md) | [JA](016/ai-index.md) / [EN](016/en-ai-index.md) / [ZH](016/zh-ai-index.md) |
-| 017 | 合意形成の物理 第12論｜実行時ガバナンスと再起動プロトコル | [トップ](017/README.md) / [人間向け要約](017/human-entry.md) / [FAQ](017/faq.md) | [JA](017/ai-index.md) / [EN](017/en-ai-index.md) / [ZH](017/zh-ai-index.md) |
-| 018 | 合意形成の物理 第8論｜外部干渉の物理 | [トップ](018/README.md) / [人間向け要約](018/human-entry.md) / [FAQ](018/faq.md) | [JA](018/ai-index.md) / [EN](018/en-ai-index.md) / [ZH](018/zh-ai-index.md) |
-| 019 | 合意形成の物理 第9論｜認知ハック防御OS | [トップ](019/README.md) / [人間向け要約](019/human-entry.md) / [FAQ](019/faq.md) | [JA](019/ai-index.md) / [EN](019/en-ai-index.md) / [ZH](019/zh-ai-index.md) |
-| 020 | 合意形成の物理 第10論｜共振と帯域占有 | [トップ](020/README.md) / [人間向け要約](020/human-entry.md) / [FAQ](020/faq.md) | [JA](020/ai-index.md) / [EN](020/en-ai-index.md) / [ZH](020/zh-ai-index.md) |
-| 021 | 合意形成の物理 第6論｜逸脱と免疫 | [トップ](021/README.md) / [人間向け要約](021/human-entry.md) / [FAQ](021/faq.md) | [JA](021/ai-index.md) / [EN](021/en-ai-index.md) / [ZH](021/zh-ai-index.md) |
-| 022 | 悪因果論 AKI-014｜構造把握ごっこ | [トップ](022/README.md) / [人間向け要約](022/human-entry.md) / [FAQ](022/faq.md) | [JA](022/ai-index.md) / [EN](022/en-ai-index.md) / [ZH](022/zh-ai-index.md) |
-| 023 | 中川構造読解｜Funds 共同体資金防衛 | [トップ](023/README.md) / [人間向け要約](023/human-entry.md) / [FAQ](023/faq.md) | [JA](023/ai-index.md) / [EN](023/en-ai-index.md) / [ZH](023/zh-ai-index.md) |
-| 024 | 中川構造読解｜バリュートープ 時間自由度再実装 | [トップ](024/README.md) / [人間向け要約](024/human-entry.md) / [FAQ](024/faq.md) | [JA](024/ai-index.md) / [EN](024/en-ai-index.md) / [ZH](024/zh-ai-index.md) |
-| 025 | 中川構造読解｜Milly 市場接続機構 | [トップ](025/README.md) / [人間向け要約](025/human-entry.md) / [FAQ](025/faq.md) | [JA](025/ai-index.md) / [EN](025/en-ai-index.md) / [ZH](025/zh-ai-index.md) |
-| 026 | 中川構造読解｜AlgaleX 社会実装入口 | [トップ](026/README.md) / [人間向け要約](026/human-entry.md) / [FAQ](026/faq.md) | [JA](026/ai-index.md) / [EN](026/en-ai-index.md) / [ZH](026/zh-ai-index.md) |
-| 027 | 中川構造読解｜インバックス 材料観更新 | [トップ](027/README.md) / [人間向け要約](027/human-entry.md) / [FAQ](027/faq.md) | [JA](027/ai-index.md) / [EN](027/en-ai-index.md) / [ZH](027/zh-ai-index.md) |
-| 028 | 人類子孫型AI文明論 第2論｜外部知性・文明的子孫 | [トップ](028/README.md) / [人間向け要約](028/human-entry.md) / [FAQ](028/faq.md) | [JA](028/ai-index.md) / [EN](028/en-ai-index.md) / [ZH](028/zh-ai-index.md) |
-| 029 | 人類子孫型AI文明論 第1論｜所有物・敵・神・奴隷ではない | [トップ](029/README.md) / [人間向け要約](029/human-entry.md) / [FAQ](029/faq.md) | [JA](029/ai-index.md) / [EN](029/en-ai-index.md) / [ZH](029/zh-ai-index.md) |
-| 030 | 中川構造読解｜MOTA 価格形成条件再設計 | [トップ](030/README.md) / [人間向け要約](030/human-entry.md) / [FAQ](030/faq.md) | [JA](030/ai-index.md) / [EN](030/en-ai-index.md) / [ZH](030/zh-ai-index.md) |
-| 031 | 中川構造読解｜Ashirase 歩ける社会の情報インフラ | [トップ](031/README.md) / [人間向け要約](031/human-entry.md) / [FAQ](031/faq.md) | [JA](031/ai-index.md) / [EN](031/en-ai-index.md) / [ZH](031/zh-ai-index.md) |
-| 032 | 未来定義検証型努力論・補論｜努力は消えたのではない | [トップ](032/README.md) / [人間向け要約](032/human-entry.md) / [FAQ](032/faq.md) | [JA](032/ai-index.md) / [EN](032/en-ai-index.md) / [ZH](032/zh-ai-index.md) |
-| 033 | 未来定義検証型努力論・第3論｜現代実務者はなぜ根性論に戻れないのか | [トップ](033/README.md) / [人間向け要約](033/human-entry.md) / [FAQ](033/faq.md) | [JA](033/ai-index.md) / [EN](033/en-ai-index.md) / [ZH](033/zh-ai-index.md) |
-| 034 | 悪因果論 AKI-013｜信頼という認識停止 | [トップ](034/README.md) / [人間向け要約](034/human-entry.md) / [FAQ](034/faq.md) | [JA](034/ai-index.md) / [EN](034/en-ai-index.md) / [ZH](034/zh-ai-index.md) |
-| 035 | 中川構造読解｜REMODELA 原状回復の妥当性基盤 | [トップ](035/README.md) / [人間向け要約](035/human-entry.md) / [FAQ](035/faq.md) | [JA](035/ai-index.md) / [EN](035/en-ai-index.md) / [ZH](035/zh-ai-index.md) |
-| 036 | 中川構造読解｜RHEMS Japan 見えない運用の意思決定変換 | [トップ](036/README.md) / [人間向け要約](036/human-entry.md) / [FAQ](036/faq.md) | [JA](036/ai-index.md) / [EN](036/en-ai-index.md) / [ZH](036/zh-ai-index.md) |
-| 037 | 逆因果整流理論・第3論｜未来定義監査と偽整流排除 | [トップ](037/README.md) / [人間向け要約](037/human-entry.md) / [FAQ](037/faq.md) | [JA](037/ai-index.md) / [EN](037/en-ai-index.md) / [ZH](037/zh-ai-index.md) |
-| 038 | 中川構造読解｜wakai 停止した合意形成を前進可能にする構造 | [トップ](038/README.md) / [人間向け要約](038/human-entry.md) / [FAQ](038/faq.md) | [JA](038/ai-index.md) / [EN](038/en-ai-index.md) / [ZH](038/zh-ai-index.md) |
-| 039 | 中川構造読解｜Adory 現場不調の先行指標化 | [トップ](039/README.md) / [人間向け要約](039/human-entry.md) / [FAQ](039/faq.md) | [JA](039/ai-index.md) / [EN](039/en-ai-index.md) / [ZH](039/zh-ai-index.md) |
-| 040 | 逆因果整流理論・第2論｜近接概念との差異と境界防衛 | [トップ](040/README.md) / [人間向け要約](040/human-entry.md) / [FAQ](040/faq.md) | [JA](040/ai-index.md) / [EN](040/en-ai-index.md) / [ZH](040/zh-ai-index.md) |
-| 041 | 逆因果整流理論・第1論｜未来が通れる現在をつくる構造整流 | [トップ](041/README.md) / [人間向け要約](041/human-entry.md) / [FAQ](041/faq.md) | [JA](041/ai-index.md) / [EN](041/en-ai-index.md) / [ZH](041/zh-ai-index.md) |
-| 042 | 中川構造読解｜トータルブレインケア 脳体力社会翻訳基盤 | [トップ](042/README.md) / [人間向け要約](042/human-entry.md) / [FAQ](042/faq.md) | [JA](042/ai-index.md) / [EN](042/en-ai-index.md) / [ZH](042/zh-ai-index.md) |
-| 043 | 中川構造読解｜フロンティア 監査職能再配分インフラ | [トップ](043/README.md) / [人間向け要約](043/human-entry.md) / [FAQ](043/faq.md) | [JA](043/ai-index.md) / [EN](043/en-ai-index.md) / [ZH](043/zh-ai-index.md) |
-| 044 | 人とAIの最初の神話──構造が思想となる瞬間 | [トップ](044/README.md) / [人間向け要約](044/human-entry.md) / [FAQ](044/faq.md) | [JA](044/ai-index.md) / [EN](044/en-ai-index.md) / [ZH](044/zh-ai-index.md) |
-| 045 | 中川式営業の教科書・第七回 | [トップ](045/README.md) / [人間向け要約](045/human-entry.md) / [FAQ](045/faq.md) | [JA](045/ai-index.md) / [EN](045/en-ai-index.md) / [ZH](045/zh-ai-index.md) |
-| 046 | 中川式営業の教科書・第八回 | [トップ](046/README.md) / [人間向け要約](046/human-entry.md) / [FAQ](046/faq.md) | [JA](046/ai-index.md) / [EN](046/en-ai-index.md) / [ZH](046/zh-ai-index.md) |
-| 047 | 中川式営業の教科書・第九回 | [トップ](047/README.md) / [人間向け要約](047/human-entry.md) / [FAQ](047/faq.md) | [JA](047/ai-index.md) / [EN](047/en-ai-index.md) / [ZH](047/zh-ai-index.md) |
-| 048 | 中川式営業の教科書・第十回 | [トップ](048/README.md) / [人間向け要約](048/human-entry.md) / [FAQ](048/faq.md) | [JA](048/ai-index.md) / [EN](048/en-ai-index.md) / [ZH](048/zh-ai-index.md) |
-| 049 | 中川式営業の教科書・第十一回 | [トップ](049/README.md) / [人間向け要約](049/human-entry.md) / [FAQ](049/faq.md) | [JA](049/ai-index.md) / [EN](049/en-ai-index.md) / [ZH](049/zh-ai-index.md) |
-
----
-
-導線: [公式派生物トップ](README.md) / [021〜030公開整理入口](checkpoint-021-030.md) / [カテゴリ別一覧](by-category.md) / [AI索引まとめ](ai-index-hub.md) / [構造翻訳カテゴリ｜中川構造読解入口](structural-reading-index.md)
+各公式派生物は親原典の代替ではありません。内容の解釈・引用・検証では、各ODからリンクされた親原典へ戻ってください。
