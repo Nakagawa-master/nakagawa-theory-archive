@@ -24,7 +24,7 @@
     "ja_ai_index": "derivatives/{number}/ai-index.md",
     "en_ai_index": "derivatives/{number}/en-ai-index.md",
     "zh_ai_index": "derivatives/{number}/zh-ai-index.md",
-    "ledger": "derivatives/{number}/ledger.md"
+    "ledger": "derivatives/{number}/derivative-ledger.md"
   },
   "category_policy": {
     "role": "public discovery navigation only",
