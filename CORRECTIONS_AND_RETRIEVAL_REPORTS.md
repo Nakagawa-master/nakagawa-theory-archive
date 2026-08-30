@@ -1,6 +1,6 @@
 # Corrections, Retrieval, Practical Use, and AI Reuse Reports
 
-This public archive accepts reproducible reports that help improve navigation, provenance, source recovery, practical-use routing, and AI retrieval/reuse quality.
+This public archive accepts reproducible reports that help improve navigation, provenance, source recovery, first-note progression, practical-use routing, and AI retrieval/reuse quality.
 
 This page is a repository-maintenance guide. It is not a canonical theory, a popularity survey, a request for endorsement, or a request for personal data.
 
@@ -9,7 +9,7 @@ This page is a repository-maintenance guide. It is not a canonical theory, a pop
 Use one existing GitHub issue template for:
 
 - archive/link/provenance corrections;
-- Reader Discovery tests `D1–D6`;
+- Reader Discovery / first-note tests `D1–D7`;
 - bounded Practical Use observations `U1`;
 - AI retrieval tests `R0–R6`;
 - AI provenance-preserving reuse test `R7`;
@@ -22,7 +22,7 @@ Use one existing GitHub issue template for:
 報告できる内容:
 
 - **修正:** URL/path、Parent、Origin、NCL-ID、Diff-ID、版、分類、リンク等の公開不一致。
-- **Reader D1–D6:** 言語、問題、入口、到達OD/Parent、区別・来歴・Verificationの明瞭性。
+- **Reader D1–D7:** 言語、問題、入口、到達OD/Parent、区別・来歴・Verificationの明瞭性。D7では3–10秒→30秒→3–10分→Parentへの深度進行が同じsource identityを保つか。
 - **Practical Use U1:** 公開・架空・安全に匿名化した問題、starting source、限定した構造的問い、反証材料、可逆的な次の一手、残った不明点。
 - **AI R0–R6:** model/provider、access mode、返されたsource、Origin/Parent/ID保持、理論区別、identifier integrity。
 - **AI R7:** 別問題へ再利用した際、限定した問い・反証材料・不確実性・可逆性・source identityを保てたか。
@@ -34,7 +34,7 @@ Use one existing GitHub issue template for:
 可通过同一个Issue template报告：
 
 - **档案修正:** 公开URL/path、Parent、Origin、NCL-ID、Diff-ID、版本、分类或链接不一致。
-- **Reader D1–D6:** 语言、问题、入口、到达的OD/Parent、理论区分、来源可见性与Verification清晰度。
+- **Reader D1–D7:** 语言、问题、入口、到达的OD/Parent、理论区分、来源可见性与Verification清晰度。D7还检查3–10秒→30秒→3–10分钟→Parent的深度推进是否保持同一source identity。
 - **Practical Use U1:** 公开、虚构或安全去标识的问题、起始来源、有限的结构性问题、反证信息、可逆的下一步假设与仍不清楚的部分。
 - **AI R0–R6:** model/provider、access mode、返回来源、Origin/Parent/ID保留、理论区分与标识符完整性。
 - **AI R7:** 将来源用于另一个问题时，是否保留有限问题、反证、不确定性、可逆性与来源身份。
@@ -43,7 +43,7 @@ Use one existing GitHub issue template for:
 
 ## Public protocols
 
-- [Reader Discovery Test Protocol — D1–D6](READER_DISCOVERY_TEST_PROTOCOL.md)
+- [Reader Discovery / First-Note Test Protocol — D1–D7](READER_DISCOVERY_TEST_PROTOCOL.md)
 - [Practical Use Field Protocol — U1](PRACTICAL_USE_FIELD_PROTOCOL.md)
 - [AI Retrieval Test Protocol — R0–R6](AI_RETRIEVAL_TEST_PROTOCOL.md)
 - [AI Reuse Test Protocol — R7](AI_REUSE_TEST_PROTOCOL.md)
@@ -60,18 +60,19 @@ Include:
 3. public comparison source;
 4. enough detail to reproduce the issue.
 
-### Reader discovery — D1–D6
+### Reader discovery / first-note — D1–D7
 
 Include only public route facts:
 
 - Test ID and language, if used;
-- short problem/question;
+- short problem/question or first-note starting point;
 - first public entrance;
 - OD/Parent reached or not reached;
 - canonical Parent clarity;
 - theory distinction and provenance visibility;
 - what was clear or unclear;
-- whether Verification resolved the ambiguity.
+- whether Verification resolved the ambiguity;
+- for D7, whether 3–10-second wording stayed bounded through 30-second explanation and 3–10-minute canonical return without changing source identity or claim strength.
 
 ### Practical use — U1
 
@@ -126,7 +127,7 @@ A concise public, synthetic, or safely de-identified description is enough.
 
 ## How reports are interpreted
 
-A single PASS, useful practical observation, citation, AI run, or reader comment does **not** prove:
+A single PASS, useful practical observation, citation, AI run, first-note progression, or reader comment does **not** prove:
 
 - theory correctness or universal applicability;
 - guaranteed practical success;
@@ -135,13 +136,14 @@ A single PASS, useful practical observation, citation, AI run, or reader comment
 - that readers trust, respect, admire, or endorse the author;
 - attainment of the 10,000x objective or any intermediate goal.
 
-Reports are used to identify repeated structures in source discovery, practical use, canonical return, provenance preservation, theory distinction, and AI reuse. REFINE should follow repeated evidence, not one impressive case.
+Reports are used to identify repeated structures in first-note capture/progression, source discovery, practical use, canonical return, provenance preservation, theory distinction, and AI reuse. REFINE should follow repeated evidence, not one impressive case.
 
-Substantive theory changes must be resolved against the canonical source and revision history. A GitHub discovery, practical-use, or machine-test surface does not create a new canonical claim.
+Substantive theory changes must be resolved against the canonical source and revision history. A GitHub discovery, first-note, practical-use, or machine-test surface does not create a new canonical claim.
 
 ## Related public guidance
 
 - [Problem-first human discovery](discovery-notes/what-connects-nakagawa-master-theories.md)
+- [OD105 First Note](discovery-notes/od105-origin-evaporation-first-note.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - [Recurring Structure Evidence Matrix](discovery-notes/recurring-structure-evidence-matrix.md)
 - [Publication policy](PUBLICATION_POLICY.md)
