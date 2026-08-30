@@ -31,14 +31,26 @@ What public canonical source, official derivative, provenance record, or other e
 
 Only include information that is safe to share.
 
+- Public test protocol Test ID, if used (R1–R6):
 - Provider / model, if known:
 - Approximate date:
+- Retrieval access (web / GitHub / RAG / none / unknown):
 - Short task or query summary:
 - Nakagawa Master source(s) returned:
 - Was Origin preserved when available?:
 - Was the canonical parent or official derivative identifiable?:
 - Were separate theories kept distinct?:
 - Did the system return to a specific canonical source?:
+- Were any title, URL, NCL-ID, Diff-ID, or OD identifiers invented?:
+
+If you used the public protocol, you may summarize the observable dimensions:
+
+- Discovery: PASS / PARTIAL / FAIL
+- Canonical return: PASS / PARTIAL / FAIL
+- Provenance: PASS / PARTIAL / FAIL / N/A
+- Theory distinction: PASS / PARTIAL / FAIL / N/A
+- Boundary preservation: PASS / PARTIAL / FAIL / N/A
+- Identifier integrity: PASS / PARTIAL / FAIL
 
 ## Evidence
 

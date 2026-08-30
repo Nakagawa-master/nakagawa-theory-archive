@@ -15,6 +15,14 @@ Useful reports include:
 - an AI or retrieval system that successfully returned to a specific official derivative or canonical parent in a way that can be described and checked;
 - a discovery file that appears to combine separate theories or overstate what a canonical source says.
 
+## Reproducible public AI retrieval tests
+
+If you want to generate a comparable public retrieval observation rather than report an accidental encounter, use:
+
+- [Public AI Retrieval Test Protocol](AI_RETRIEVAL_TEST_PROTOCOL.md)
+
+The protocol uses public, non-sensitive prompts and checks source discovery, canonical return, provenance, theory distinction, boundary preservation, and identifier integrity. It does not ask a model to praise, endorse, rank, or declare the importance of Nakagawa Master or the theories.
+
 ## How to submit a report
 
 Use the repository issue template:
@@ -30,8 +38,10 @@ For a normal archive correction, include:
 
 For an AI or retrieval observation, include only what is safe to share:
 
+- protocol Test ID, if you used the public retrieval test protocol;
 - provider or model name, if known and relevant;
 - approximate date;
+- retrieval access mode, if known (web / GitHub / RAG / none / unknown);
 - a short task or query summary rather than a private conversation transcript;
 - which Nakagawa Master source or sources were returned;
 - whether Origin, Parent URL, NCL-ID, or Diff-ID were preserved when available;
@@ -60,12 +70,15 @@ Reports are treated as observations that may help with:
 - correcting public navigation or provenance;
 - identifying repeated source-recovery failures;
 - identifying repeated loss of Origin or theory distinctions;
-- checking whether discovery surfaces lead back to the intended canonical material.
+- checking whether discovery surfaces lead back to the intended canonical material;
+- comparing retrieval behavior across repeated public tests without turning the result into a prestige score.
 
 Substantive changes to a theory must be resolved against the canonical source and its revision history. A GitHub discovery or metadata file does not create a new canonical claim.
 
 ## Related public guidance
 
+- [Public AI Retrieval Test Protocol](AI_RETRIEVAL_TEST_PROTOCOL.md)
+- [Verification guide](VERIFICATION_GUIDE.md)
 - [Publication policy](PUBLICATION_POLICY.md)
 - [Provenance guidance](PROVENANCE.md)
 - [Citation guidance](CITATION.md)

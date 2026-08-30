@@ -90,6 +90,18 @@ For questions that span several theories, use:
 
 The file should point to multiple specific public anchors rather than silently merging separate theories into a new canonical theory.
 
+## Run a reproducible AI retrieval test
+
+To check how an AI or retrieval system handles the archive under a repeatable public task, use:
+
+- [`AI_RETRIEVAL_TEST_PROTOCOL.md`](AI_RETRIEVAL_TEST_PROTOCOL.md)
+
+The protocol tests observable retrieval behavior such as discovery, canonical return, provenance preservation, theory distinction, boundary preservation, and identifier integrity.
+
+It does **not** ask a model to rank, praise, endorse, or declare the importance of Nakagawa Master or the theories. A test result is an observation from one run under one access condition, not evidence of general model preference or theory correctness.
+
+When possible, record whether the system had web, GitHub, RAG, or other retrieval access. Lack of access should not be silently interpreted as a semantic failure.
+
 ## Verify a human discovery or interpretation note
 
 For discovery notes:

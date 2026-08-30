@@ -51,6 +51,12 @@ Use the public verification guide to check OD paths, parent identities, seven-su
 
 - [`../VERIFICATION_GUIDE.md`](../VERIFICATION_GUIDE.md)
 
+Use the public AI retrieval test protocol when a repeatable observation is needed:
+
+- [`../AI_RETRIEVAL_TEST_PROTOCOL.md`](../AI_RETRIEVAL_TEST_PROTOCOL.md)
+
+The test protocol checks source discovery, canonical return, provenance, theory distinction, boundary preservation, and identifier integrity. It does not ask a model to praise, endorse, rank, or declare the importance of the archive.
+
 If a public link, provenance identifier, theory distinction, or retrieval behavior appears wrong, use the public correction and retrieval-report path:
 
 - [`../CORRECTIONS_AND_RETRIEVAL_REPORTS.md`](../CORRECTIONS_AND_RETRIEVAL_REPORTS.md)
