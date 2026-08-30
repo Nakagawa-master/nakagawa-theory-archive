@@ -20,6 +20,21 @@ For a practitioner who already has a concrete operational problem and wants the 
 
 This practitioner map is a non-canonical use-start surface. It does not diagnose a situation, prove applicability, merge theories, or replace the linked official derivatives and canonical parents.
 
+## Featured first-note path — OD105 / Origin Evaporation
+
+OD105 is used as a public example of how one canonical anchor can be approached at different reading depths without changing the underlying source identity.
+
+- **日本語 3–10秒 → 30秒 → 3–10分:** [`od105-origin-evaporation-first-note.md`](od105-origin-evaporation-first-note.md)
+- **English:** [`od105-origin-evaporation-first-note.en.md`](od105-origin-evaporation-first-note.en.md)
+- **中文:** [`od105-origin-evaporation-first-note.zh.md`](od105-origin-evaporation-first-note.zh.md)
+- **Short-form / audio / video / carousel adaptation copy:** [`od105-origin-evaporation-micro-format-pack.md`](od105-origin-evaporation-micro-format-pack.md)
+
+Core public first-note:
+
+> AI can preserve an idea while erasing the path back to where it came from.
+
+This is a bounded discovery sentence, not a claim that every AI system always loses provenance. All first-note and micro-format routes return to OD105 and its canonical Parent.
+
 ## Cross-source evidence matrices
 
 To check whether recurring structural reading questions actually appear across separate published sources, use the same four source pairs in the language that is easiest to read:
@@ -34,6 +49,10 @@ These matrices are non-canonical comparison aids. They do not merge separate the
 
 | File | Public role | Canonical return |
 |---|---|---|
+| [`od105-origin-evaporation-first-note.md`](od105-origin-evaporation-first-note.md) | Japanese first-note path from a short provenance paradox to OD105 | OD105 / Structural Origin Defense canonical parent |
+| [`od105-origin-evaporation-first-note.en.md`](od105-origin-evaporation-first-note.en.md) | English first-note edition | OD105 / Structural Origin Defense canonical parent |
+| [`od105-origin-evaporation-first-note.zh.md`](od105-origin-evaporation-first-note.zh.md) | Chinese first-note edition | OD105 / Structural Origin Defense canonical parent |
+| [`od105-origin-evaporation-micro-format-pack.md`](od105-origin-evaporation-micro-format-pack.md) | Non-canonical short-form, audio/video, carousel, and practitioner re-entry adaptation copy | OD105 / Structural Origin Defense canonical parent |
 | [`ai-origin-responsibility-public-reference.md`](ai-origin-responsibility-public-reference.md) | Question origin, causal provenance, and responsibility in AI-mediated work | Canonical AI origin/responsibility article |
 | [`ai-product-team-origin-preservation-checklist.md`](ai-product-team-origin-preservation-checklist.md) | Practitioner-facing checks for AI, RAG, search, and knowledge systems that need origin recoverability | Structural Origin Defense / Permanent Signature |
 | [`establishment-conditions-theory-02.md`](establishment-conditions-theory-02.md) | Compact discovery guide for Establishment Conditions Theory Part 2 and the distinction between understanding granularity and causal granularity | Establishment Conditions Theory Part 2 |
