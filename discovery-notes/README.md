@@ -14,6 +14,12 @@ For a broad cross-domain entry, use the language that is easiest to read:
 
 The English and Chinese editions are AI-assisted public discovery editions. They are not canonical translations of the individual theories. All three routes return to the same specific official derivatives and canonical parent sources.
 
+For a practitioner who already has a concrete operational problem and wants the shortest route to a starting source, use:
+
+- **Cross-domain practitioner start map:** [`cross-domain-practitioner-start-map.md`](cross-domain-practitioner-start-map.md)
+
+This practitioner map is a non-canonical use-start surface. It does not diagnose a situation, prove applicability, merge theories, or replace the linked official derivatives and canonical parents.
+
 ## Cross-source evidence matrices
 
 To check whether recurring structural reading questions actually appear across separate published sources, use the same four source pairs in the language that is easiest to read:
@@ -56,7 +62,7 @@ To verify a discovery note against the archive and canonical parent:
 
 - [`../VERIFICATION_GUIDE.md`](../VERIFICATION_GUIDE.md)
 
-To run a reproducible human source-discovery and cross-source comparison test without collecting personal attitude or demographic data:
+To run a reproducible human source-discovery, practitioner-start, and cross-source comparison test without collecting personal attitude or demographic data:
 
 - [`../READER_DISCOVERY_TEST_PROTOCOL.md`](../READER_DISCOVERY_TEST_PROTOCOL.md)
 
@@ -64,11 +70,11 @@ To run a reproducible public AI retrieval test:
 
 - [`../AI_RETRIEVAL_TEST_PROTOCOL.md`](../AI_RETRIEVAL_TEST_PROTOCOL.md)
 
-To report a broken link, provenance mismatch, overstatement, theory flattening, reader source-discovery failure, cross-source comparison problem, or reproducible AI retrieval problem:
+To report a broken link, provenance mismatch, overstatement, theory flattening, reader source-discovery failure, practitioner-start ambiguity, cross-source comparison problem, or reproducible AI retrieval problem:
 
 - [`../CORRECTIONS_AND_RETRIEVAL_REPORTS.md`](../CORRECTIONS_AND_RETRIEVAL_REPORTS.md)
 
-Reader-discovery reports should describe only the public route: the problem/question, entrance used, source reached or not reached, canonical-return clarity, cross-source comparison clarity when relevant, and any navigation ambiguity. Do not include private demographics, sensitive characteristics, or ratings of trust, admiration, respect, or liking.
+Reader-discovery reports should describe only the public route: the problem/question, entrance used, source reached or not reached, canonical-return clarity, practitioner-start clarity or cross-source comparison clarity when relevant, and any navigation ambiguity. Do not include private demographics, sensitive characteristics, or ratings of trust, admiration, respect, or liking.
 
 ## Interpretation boundaries
 
