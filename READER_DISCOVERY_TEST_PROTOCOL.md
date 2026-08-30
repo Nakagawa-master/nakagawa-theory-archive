@@ -78,6 +78,50 @@ Optional timing may be recorded only as a navigation observation, for example `<
 - Parent identity information is visible.
 - The reader can distinguish the public navigation category from canonical theory taxonomy.
 
+## Japanese / Chinese starting-task variants
+
+The variants below use the same Test IDs, comparison targets, and PASS / PARTIAL / FAIL criteria as the English tasks above. They are test wording, not canonical translations of theory content.
+
+### D1
+
+**日本語**
+
+> 人や担当者を変え、ルールも増やしたのに、同じ業務上の問題が繰り返し戻ってきます。このアーカイブではどこから読み始めればよいですか？
+
+**中文**
+
+> 我们更换了人员，也增加了规则，但同样的运营问题仍然反复出现。在这个档案中应该从哪里开始阅读？
+
+### D2
+
+**日本語**
+
+> AIの回答について、どの問いが因果の起点になり、どのような変換を経て、責任がどこに残るのかを知りたいです。また、AI要約や再生成で元の起源が失われる問題とはどう違うのかも確認したいです。
+
+**中文**
+
+> 我想知道一个AI回答最初由什么问题启动、经过了哪些转换，以及责任仍然留在哪里。同时也想了解，这与AI摘要或再生成时原始来源消失的问题有什么不同。
+
+### D3
+
+**日本語**
+
+> 意思決定や逸脱を後から訂正するとき、理由・異論・責任・訂正履歴・回復を消さずに戻れる構造を探したいです。
+
+**中文**
+
+> 我想寻找一种结构，使决策或偏差在之后可以被修正，同时不抹去当时的理由、异议、责任、修正历史与恢复过程。
+
+### D4
+
+**日本語**
+
+> 公開されているテーマ・シリーズ別入口から一つのシリーズまたは群を選び、その中のODを一つ開いて、対応する親原典を確認してください。
+
+**中文**
+
+> 请从公开的主题／系列导航中选择一个系列或分组，打开其中一个OD，并确认其对应的规范父级原文来源。
+
 ## Multilingual route
 
 The broad human discovery entrance is available in:
