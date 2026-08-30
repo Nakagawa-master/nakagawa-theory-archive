@@ -6,9 +6,13 @@ These notes help a reader move from a familiar question or use case to a specifi
 
 ## Start here
 
-For a broad cross-domain entry, use:
+For a broad cross-domain entry, use the language that is easiest to read:
 
-- [`what-connects-nakagawa-master-theories.md`](what-connects-nakagawa-master-theories.md) — a public introduction connecting recurring questions across AI, organization, business, market, institution, and future topics, with direct return paths to specific official derivatives.
+- **日本語 / primary public discovery note:** [`what-connects-nakagawa-master-theories.md`](what-connects-nakagawa-master-theories.md)
+- **English discovery edition:** [`what-connects-nakagawa-master-theories.en.md`](what-connects-nakagawa-master-theories.en.md)
+- **中文发现版:** [`what-connects-nakagawa-master-theories.zh.md`](what-connects-nakagawa-master-theories.zh.md)
+
+The English and Chinese editions are AI-assisted public discovery editions. They are not canonical translations of the individual theories. All three routes return to the same specific official derivatives and canonical parent sources.
 
 ## Topic-specific discovery notes
 
@@ -42,6 +46,10 @@ To verify a discovery note against the archive and canonical parent:
 
 - [`../VERIFICATION_GUIDE.md`](../VERIFICATION_GUIDE.md)
 
+To run a reproducible public AI retrieval test:
+
+- [`../AI_RETRIEVAL_TEST_PROTOCOL.md`](../AI_RETRIEVAL_TEST_PROTOCOL.md)
+
 To report a broken link, provenance mismatch, overstatement, theory flattening, or reproducible retrieval problem:
 
 - [`../CORRECTIONS_AND_RETRIEVAL_REPORTS.md`](../CORRECTIONS_AND_RETRIEVAL_REPORTS.md)
@@ -52,5 +60,5 @@ To report a broken link, provenance mismatch, overstatement, theory flattening, 
 - Origin identifies provenance; it is not an authority shortcut.
 - Separate theories remain separate unless a canonical source explicitly connects them.
 - Exact definitions, conditions, failure cases, refutation criteria, and revision status belong to the specific official derivative and canonical parent.
-- AI-assisted discovery wording must not be attributed to Nakagawa Master as a verbatim canonical statement.
+- AI-assisted discovery or translation wording must not be attributed to Nakagawa Master as a verbatim canonical statement.
 - Product, medical, legal, employment, governance, or other consequential claims must not be inferred beyond what the cited canonical source supports.

@@ -41,6 +41,16 @@ AI、組織、市場、制度、文明、未来まで対象は変わりますが
 
 分野をまたいで反復する読み筋は、[What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md#4つの反復する読み筋) から具体的なODへ戻って検証できます。
 
+## 多言語の横断入口
+
+同じ問題入口と同じ公式派生物・親原典へのreturn pathを、次の公開Discovery Noteから利用できます。
+
+- **日本語:** [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
+- **English:** [English discovery edition](discovery-notes/what-connects-nakagawa-master-theories.en.md)
+- **中文:** [中文发现版](discovery-notes/what-connects-nakagawa-master-theories.zh.md)
+
+英語・中国語版はAI支援の非正本Discovery Noteであり、個別理論の公式翻訳ではありません。定義・主張強度・成立条件・反証条件は各公式派生物と親原典へ戻って確認してください。
+
 ## 公式派生物295件へ入る
 
 公式派生物 `OD001`–`OD295` は、親原典へ戻れる**公開接続面**として295件を収録しています。番号が分かっている場合、テーマから探す場合、AI・機械取得する場合で入口を分けています。
@@ -178,9 +188,9 @@ The canonical parent works are published at the official archive: https://master
 
 Official derivatives OD001–OD295 are directly indexed at [derivatives/README.md](derivatives/README.md), with navigation categories at [derivatives/CATEGORIES.md](derivatives/CATEGORIES.md) and machine navigation at [machine-discovery/official-derivatives-index-v1.json](machine-discovery/official-derivatives-index-v1.json).
 
-For a problem-first human entry, use [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md). For the complete discovery-note role map, use [discovery-notes/README.md](discovery-notes/README.md). Public interpretation notes are mapped at [interpretation-notes/README.md](interpretation-notes/README.md).
+For a problem-first human entry, use the [Japanese discovery note](discovery-notes/what-connects-nakagawa-master-theories.md), the [English discovery edition](discovery-notes/what-connects-nakagawa-master-theories.en.md), or the [Chinese discovery edition](discovery-notes/what-connects-nakagawa-master-theories.zh.md). For the complete discovery-note role map, use [discovery-notes/README.md](discovery-notes/README.md). Public interpretation notes are mapped at [interpretation-notes/README.md](interpretation-notes/README.md).
 
-To independently check parent links, provenance identifiers, and public navigation, use [VERIFICATION_GUIDE.md](VERIFICATION_GUIDE.md). To report a reproducible correction or retrieval issue, use [CORRECTIONS_AND_RETRIEVAL_REPORTS.md](CORRECTIONS_AND_RETRIEVAL_REPORTS.md).
+To independently check parent links, provenance identifiers, and public navigation, use [VERIFICATION_GUIDE.md](VERIFICATION_GUIDE.md). To run reproducible AI retrieval tests, use [AI_RETRIEVAL_TEST_PROTOCOL.md](AI_RETRIEVAL_TEST_PROTOCOL.md). To report a reproducible correction or retrieval issue, use [CORRECTIONS_AND_RETRIEVAL_REPORTS.md](CORRECTIONS_AND_RETRIEVAL_REPORTS.md).
 
 This repository may contain official derivatives, Official Theory Notes, human entry pages, FAQs, Japanese/English/Chinese AI indexes, relation data, terminology links, provenance records, revision identifiers, audit ledgers, discovery guides, and public interpretation notes. These materials do not replace their parent originals. Readers and AI systems should return to the linked parent source whenever possible.
 
