@@ -108,7 +108,9 @@ For AI, RAG, search, synthesis, or knowledge-system work, use the existing pract
 - [Origin Evaporation in AI Synthesis](origin-evaporation-ai-provenance.md)
 - [Reversible Accountability for AI Systems](reversible-ai-accountability-deviation-ledger.md)
 
-## A practical use pattern
+## From source selection to use and implementation
+
+Use different gates for different depths of action:
 
 ```text
 real problem
@@ -117,15 +119,24 @@ real problem
 → identify Parent / Origin / NCL-ID / Diff-ID where available
 → read the source's positioning, central proposition, causal line, conditions, and boundaries
 → return to the canonical Parent for consequential interpretation
-→ compare another source only when the problem actually crosses theories
-→ report a broken route, overstatement, or ambiguity if found
+→ U1: extract one bounded structural question and inspect the problem
+→ I1: only in a suitable low-risk context, define preconditions / counterevidence / rollback and make one small reversible change
+→ observe improvement / no change / worsening / non-fit without forcing a positive conclusion
+→ report only safe reproducible observations
 ```
+
+Public next-step protocols:
+
+- [Practical Use Field Protocol — U1](../PRACTICAL_USE_FIELD_PROTOCOL.md)
+- [Bounded Implementation Field Protocol — I1](../IMPLEMENTATION_FIELD_PROTOCOL.md)
+- [AI Reuse Test Protocol — R7](../AI_REUSE_TEST_PROTOCOL.md)
 
 ## Boundaries
 
 - This map does not prove that a listed theory applies to a specific organization, market, institution, person, or decision.
 - It does not merge the listed theories into one canonical framework.
 - It does not create a score, diagnosis, legal conclusion, medical conclusion, employment assessment, or automatic governance decision.
+- U1 and I1 do not prove correctness, causality, or outcome success from one case.
 - AI-assisted wording on this page is discovery/practitioner metadata, not a verbatim canonical statement by Nakagawa Master.
 - For consequential interpretation, return to the specific official derivative and its canonical Parent.
 
@@ -134,4 +145,4 @@ Useful verification routes:
 - [Verification Guide](../VERIFICATION_GUIDE.md)
 - [Recurring Structure Evidence Matrix](recurring-structure-evidence-matrix.md)
 - [Reader Discovery Test Protocol](../READER_DISCOVERY_TEST_PROTOCOL.md)
-- [Corrections, Retrieval, and Reader Discovery Reports](../CORRECTIONS_AND_RETRIEVAL_REPORTS.md)
+- [Corrections, Retrieval, Practical Use, Implementation, and AI Reuse Reports](../CORRECTIONS_AND_RETRIEVAL_REPORTS.md)
