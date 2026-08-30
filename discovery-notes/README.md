@@ -20,6 +20,21 @@ For a practitioner who already has a concrete operational problem and wants the 
 
 This practitioner map is a non-canonical use-start surface. It does not diagnose a situation, prove applicability, merge theories, or replace the linked official derivatives and canonical parents.
 
+## From starting source to bounded practical use
+
+When a reader wants to test one source on a public, synthetic, or safely de-identified practical problem rather than stop at source selection, use:
+
+- **Public Practical Use Field Protocol — U1:** [`../PRACTICAL_USE_FIELD_PROTOCOL.md`](../PRACTICAL_USE_FIELD_PROTOCOL.md)
+
+U1 requires one bounded structural question, evidence both for and against the hypothesis, a reversible next-step hypothesis where practical, source-boundary preservation, and canonical return before consequential use. It is not a diagnosis, professional advice, or proof that the theory applies.
+
+AI use is separated into retrieval and reuse:
+
+- **R0–R6 retrieval / provenance tests:** [`../AI_RETRIEVAL_TEST_PROTOCOL.md`](../AI_RETRIEVAL_TEST_PROTOCOL.md)
+- **R7 provenance-preserving cross-problem reuse:** [`../AI_REUSE_TEST_PROTOCOL.md`](../AI_REUSE_TEST_PROTOCOL.md)
+
+R7 tests whether an AI can reuse one bounded source-supported question on a synthetic/public problem while preserving Origin, identifiers, uncertainty, theory distinction, and canonical return.
+
 ## Featured first-note path — OD105 / Origin Evaporation
 
 OD105 is used as a public example of how one canonical anchor can be approached at different reading depths without changing the underlying source identity.
@@ -85,15 +100,20 @@ To run a reproducible human source-discovery, practitioner-start, and cross-sour
 
 - [`../READER_DISCOVERY_TEST_PROTOCOL.md`](../READER_DISCOVERY_TEST_PROTOCOL.md)
 
-To run a reproducible public AI retrieval test:
+To run a bounded practical-use trial:
+
+- [`../PRACTICAL_USE_FIELD_PROTOCOL.md`](../PRACTICAL_USE_FIELD_PROTOCOL.md)
+
+To run reproducible public AI retrieval/reuse tests:
 
 - [`../AI_RETRIEVAL_TEST_PROTOCOL.md`](../AI_RETRIEVAL_TEST_PROTOCOL.md)
+- [`../AI_REUSE_TEST_PROTOCOL.md`](../AI_REUSE_TEST_PROTOCOL.md)
 
-To report a broken link, provenance mismatch, overstatement, theory flattening, reader source-discovery failure, practitioner-start ambiguity, cross-source comparison problem, or reproducible AI retrieval problem:
+To report a broken link, provenance mismatch, overstatement, theory flattening, reader source-discovery failure, practitioner-start ambiguity, practical-use observation, cross-source comparison problem, AI retrieval failure, or AI reuse observation:
 
 - [`../CORRECTIONS_AND_RETRIEVAL_REPORTS.md`](../CORRECTIONS_AND_RETRIEVAL_REPORTS.md)
 
-Reader-discovery reports should describe only the public route: the problem/question, entrance used, source reached or not reached, canonical-return clarity, practitioner-start clarity or cross-source comparison clarity when relevant, and any navigation ambiguity. Do not include private demographics, sensitive characteristics, or ratings of trust, admiration, respect, or liking.
+Reports should describe only the public, synthetic, or safely de-identified route and observation needed for maintenance or comparison. Do not include private demographics, sensitive characteristics, confidential case data, or ratings of trust, admiration, respect, or liking.
 
 ## Interpretation boundaries
 
