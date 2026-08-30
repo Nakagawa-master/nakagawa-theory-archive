@@ -12,6 +12,7 @@ assignees: ""
 - [ ] Title / Origin / Parent / NCL-ID / Diff-ID / revision mismatch / 来歴不一致 / 来源或版本不一致
 - [ ] Navigation or category issue / ナビゲーション・分類問題 / 导航或分类问题
 - [ ] Reader discovery / canonical-return observation / 読者の原典到達観測 / 读者来源发现观察
+- [ ] First-note depth progression (D7) / First-Note深度進行観測 / First-Note深度推进观察
 - [ ] Practical-use observation (U1) / 実務利用観測 / 实践使用观察
 - [ ] AI retrieval observation (R0–R6) / AI取得観測 / AI检索观察
 - [ ] AI reuse observation (R7) / AI再利用観測 / AI再利用观察
@@ -44,7 +45,7 @@ What public canonical source, official derivative, provenance record, or other p
 
 Fill this section only when relevant. Include public, non-sensitive route information only.
 
-- Public reader Test ID, if used (D1–D6) / Test ID（使用時）:
+- Public reader Test ID, if used (D1–D7) / Test ID（使用時）:
 - Short public problem or question / 問題・問い / 问题或提问:
 - First public entrance used / 最初の公開入口 / 最初公开入口:
 - Optional navigation time (<30 sec / 30 sec–2 min / >2 min / not recorded):
@@ -65,6 +66,7 @@ If the public reader protocol was used:
 - Verification usable: PASS / PARTIAL / FAIL / N/A
 - Cross-source motif supported: PASS / PARTIAL / FAIL / N/A
 - Bounded practitioner start preserved: PASS / PARTIAL / FAIL / N/A
+- First-note depth progression: PASS / PARTIAL / FAIL / N/A
 
 Do not include private demographics, sensitive characteristics, unnecessary personal data, or ratings of trust, admiration, respect, liking, or endorsement.
 
