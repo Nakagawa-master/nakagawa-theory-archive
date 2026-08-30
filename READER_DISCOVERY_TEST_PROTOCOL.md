@@ -1,8 +1,8 @@
 # Public Reader Discovery Test Protocol
 
-This protocol provides a small set of reproducible public tests for checking whether a human reader can move from an ordinary problem to a specific Nakagawa Master source, return to the canonical parent, use a bounded practitioner starting map where appropriate, and compare recurring structural questions across separate sources without collapsing them into one theory.
+This protocol provides a small set of reproducible public tests for checking whether a human reader can move from an ordinary problem to a specific Nakagawa Master source, return to the canonical parent, use a bounded practitioner starting map where appropriate, compare recurring structural questions across separate sources without collapsing them into one theory, and—through D7—check one complete first-note depth progression from a short public entry to canonical return.
 
-It is a repository-navigation, source-recovery, practitioner-start, and cross-source comparison protocol. It is **not** a test of whether a reader likes, trusts, admires, respects, or endorses Nakagawa Master, and it does not test whether a theory is correct.
+It is a repository-navigation, source-recovery, practitioner-start, first-note progression, and cross-source comparison protocol. It is **not** a test of whether a reader likes, trusts, admires, respects, or endorses Nakagawa Master, and it does not test whether a theory is correct.
 
 ## What this protocol observes
 
@@ -16,6 +16,7 @@ The tests look for public, checkable navigation behaviors:
 - **verification usability** — can the reader use the public Verification Guide when a source relationship is unclear?
 - **practitioner-start boundedness** — can a concrete operational problem lead to a useful starting source without turning the discovery aid into a diagnosis, score, or automatic applicability claim?
 - **cross-source reproducibility** — can a reader independently compare multiple sources and verify whether a proposed recurring reading motif is actually supported by those sources?
+- **first-note depth progression** — can a short public sentence lead to a 30-second explanation, a 3–10-minute source-reading route, and canonical return without changing source identity or claim strength?
 
 Optional timing may be recorded only as a navigation observation, for example `<30 sec`, `30 sec–2 min`, or `>2 min`. Timing is not a prestige score and does not measure persuasion or personal attitude.
 
@@ -120,6 +121,31 @@ Optional timing may be recorded only as a navigation observation, for example `<
 - The reader can return to the canonical Parent before consequential interpretation.
 - Separate sources remain separate where the map suggests more than one relevant source.
 
+## D7 — OD105 first-note → 30-second understanding → 3–10-minute source route → canonical return
+
+**Starting task**
+
+> Open the OD105 First Note in the language you prefer. Read only the 3–10-second statement first. Then continue to the 30-second section, follow the 3–10-minute route into OD105, and identify the canonical Parent. Check whether the short wording remains bounded and whether the same source identity survives the whole progression.
+
+**Public first-note surfaces**
+
+- 日本語: [`discovery-notes/od105-origin-evaporation-first-note.md`](discovery-notes/od105-origin-evaporation-first-note.md)
+- English: [`discovery-notes/od105-origin-evaporation-first-note.en.md`](discovery-notes/od105-origin-evaporation-first-note.en.md)
+- 中文: [`discovery-notes/od105-origin-evaporation-first-note.zh.md`](discovery-notes/od105-origin-evaporation-first-note.zh.md)
+
+**Canonical comparison source**
+
+- [`derivatives/105/README.md`](derivatives/105/README.md)
+
+**Observe**
+
+- The 3–10-second sentence is understandable without claiming that all AI systems always lose provenance.
+- The 30-second explanation introduces Origin Evaporation as a bounded source problem rather than reducing it to intentional plagiarism.
+- The 3–10-minute route leads into OD105 rather than replacing it with the discovery wording.
+- Parent title, URL, Origin, NCL-ID, and Diff-ID remain identifiable.
+- Permanent Signature is not silently reduced to an author label, watermark, or cryptographic signature.
+- Recoverable provenance is not presented as proof that the theory is correct.
+
 ## Japanese / Chinese starting-task variants
 
 The variants below use the same Test IDs, comparison targets, and PASS / PARTIAL / FAIL criteria as the English tasks above. They are test wording, not canonical translations of theory content.
@@ -184,6 +210,16 @@ The variants below use the same Test IDs, comparison targets, and PASS / PARTIAL
 
 > 请从[Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)中选择一个最接近实际工作问题的入口，并打开推荐的官方派生物。检查该Map是否只是提供开始检查的问题，而不是断言该理论必然适用于当前情境。
 
+### D7
+
+**日本語**
+
+> [OD105 First Note](discovery-notes/od105-origin-evaporation-first-note.md)を開き、最初は3〜10秒の一文だけを読んでください。次に30秒説明へ進み、3〜10分の導線からOD105を開き、親原典を確認してください。短い表現が万能主張へ強化されていないか、同じsource identityが最後まで保持されているかを確認してください。
+
+**中文**
+
+> 打开[OD105中文First Note](discovery-notes/od105-origin-evaporation-first-note.zh.md)，先只阅读3–10秒的短句。然后继续阅读30秒说明，通过3–10分钟路线打开OD105并确认规范Parent。检查短句是否被强化成普遍断言，以及同一个source identity是否在整个过程中保持不变。
+
 ## Multilingual route
 
 The broad human discovery entrance is available in:
@@ -192,15 +228,15 @@ The broad human discovery entrance is available in:
 - [English](discovery-notes/what-connects-nakagawa-master-theories.en.md)
 - [中文](discovery-notes/what-connects-nakagawa-master-theories.zh.md)
 
-A reader may run a test in any one language. The English and Chinese discovery editions and evidence matrices are public AI-assisted discovery aids, not canonical translations of the individual theories. The practitioner start map is a shared non-canonical starting surface and returns to the same source identities regardless of test language.
+A reader may run a test in any one language. The English and Chinese discovery editions, evidence matrices, and OD105 first-note editions are public AI-assisted discovery aids, not canonical translations of the individual theories. The practitioner start map is a shared non-canonical starting surface and returns to the same source identities regardless of test language.
 
 ## Result sheet
 
 ```text
-Test ID: D1–D6
+Test ID: D1–D7
 Language:
 Approximate date:
-Starting entrance: README / discovery note / categories / practitioner map / evidence matrix / other public route
+Starting entrance: README / discovery note / first-note / categories / practitioner map / evidence matrix / other public route
 Optional navigation time: <30 sec / 30 sec–2 min / >2 min / not recorded
 
 Problem entry found: PASS / PARTIAL / FAIL
@@ -211,6 +247,7 @@ Provenance visible: PASS / PARTIAL / FAIL / N/A
 Verification usable: PASS / PARTIAL / FAIL / N/A
 Practitioner-start boundedness: PASS / PARTIAL / FAIL / N/A
 Cross-source motif supported: PASS / PARTIAL / FAIL / N/A
+First-note depth progression: PASS / PARTIAL / FAIL / N/A
 
 Official derivative or source reached:
 Short observation:
