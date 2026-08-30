@@ -1,50 +1,61 @@
 ---
 name: Archive correction, reader discovery, or AI retrieval report
-about: Report a public archive error, a reader source-discovery observation, or a reproducible retrieval/provenance observation
+about: Report a public archive error, reader source-discovery observation, or reproducible retrieval/provenance observation
 title: "[Report] "
 labels: ""
 assignees: ""
 ---
 
-## Report type
+## Report type / 報告種別 / 报告类型
 
-- [ ] Broken or misdirected link
-- [ ] Title / Origin / Parent / NCL-ID / Diff-ID / revision mismatch
-- [ ] Navigation or category issue
-- [ ] Reader discovery / canonical-return observation
-- [ ] AI or retrieval provenance observation
-- [ ] Theory-distinction or canonical-return issue
-- [ ] Other public archive issue
+- [ ] Broken or misdirected link / リンク不良 / 链接错误
+- [ ] Title / Origin / Parent / NCL-ID / Diff-ID / revision mismatch / 来歴不一致 / 来源或版本不一致
+- [ ] Navigation or category issue / ナビゲーション・分類問題 / 导航或分类问题
+- [ ] Reader discovery / canonical-return observation / 読者の原典到達観測 / 读者来源发现观察
+- [ ] AI or retrieval provenance observation / AI取得・来歴観測 / AI检索与来源观察
+- [ ] Theory-distinction or canonical-return issue / 理論区別・原典回帰問題 / 理论区分或规范来源返回问题
+- [ ] Other public archive issue / その他 / 其他
 
-## Public source or file
+## Language / 言語 / 语言
 
-Please provide the relevant public URL or repository path when available.
+- Language used for the observation, if relevant / 観測に使った言語 / 观察所使用的语言:
 
-## What did you observe?
+## Public source or file / 公開source・file / 公开来源或文件
 
-Describe the observable issue or behavior as specifically as possible.
+Provide the relevant public URL or repository path when available.
+対象となる公開URLまたはrepository pathがあれば記載してください。
+如有相关公开URL或repository path，请填写。
 
-## Expected or comparison basis
+## What did you observe? / 何を観測しましたか？ / 你观察到了什么？
 
-What public canonical source, official derivative, provenance record, or other evidence are you comparing against?
+Describe only the observable public issue or route behavior needed to understand the report.
+公開上の問題または到達経路について、再現・理解に必要な範囲だけ記載してください。
+只描述理解或复现公开问题／路径所需的信息。
 
-## If this concerns a reader discovery path
+## Expected or comparison basis / 比較根拠 / 比较依据
 
-Only include public, non-sensitive information needed to understand the route.
+What public canonical source, official derivative, provenance record, or other public evidence are you comparing against?
+どの親原典・公式派生物・来歴記録等と比較していますか？
+你是与哪个规范父级来源、官方派生物或来源记录进行比较？
 
-- Public reader Test ID, if used (D1–D4):
-- Language used, if relevant:
-- Short public problem or question:
-- First public entrance used, if known:
-- Optional navigation time (<30 sec / 30 sec–2 min / >2 min / not recorded):
-- Official derivative or canonical parent reached, if any:
-- Was the canonical parent identifiable?:
-- Were separate theories kept distinct?:
-- Was provenance visible when relevant?:
-- What part of the route or explanation was clear or unclear?:
-- Did the Verification Guide resolve the uncertainty?:
+## Reader discovery path / 読者のsource-discovery / 读者来源发现
 
-If the public reader protocol was used, you may summarize:
+Fill this section only when relevant. Include public, non-sensitive route information only.
+該当する場合のみ、公開上の経路情報だけを記載してください。
+仅在相关时填写，并只提供公开、非敏感的路径信息。
+
+- Public reader Test ID, if used (D1–D4) / Test ID（使用時）:
+- Short public problem or question / 問題・問い / 问题或提问:
+- First public entrance used / 最初の公開入口 / 最初公开入口:
+- Optional navigation time (<30 sec / 30 sec–2 min / >2 min / not recorded) / 任意の到達時間:
+- Official derivative or canonical parent reached, if any / 到達したOD・Parent / 到达的OD或Parent:
+- Was the canonical parent identifiable? / 親原典を特定できたか？ / 是否能识别规范父级来源？:
+- Were separate theories kept distinct? / 別理論を区別できたか？ / 不同理论是否保持区分？:
+- Was provenance visible when relevant? / 来歴を確認できたか？ / 是否能看到来源信息？:
+- What part of the route or explanation was clear or unclear? / 明瞭・不明瞭だった箇所 / 哪部分清楚或不清楚？:
+- Did the Verification Guide resolve the uncertainty? / Verification Guideで解決したか？ / Verification Guide是否解决了疑问？:
+
+If the public reader protocol was used / Reader Testを使った場合 / 如使用Reader Test:
 
 - Problem entry found: PASS / PARTIAL / FAIL
 - Specific source found: PASS / PARTIAL / FAIL
@@ -53,26 +64,30 @@ If the public reader protocol was used, you may summarize:
 - Provenance visible: PASS / PARTIAL / FAIL / N/A
 - Verification usable: PASS / PARTIAL / FAIL / N/A
 
-Do not include private demographics, sensitive characteristics, unnecessary personal data, or ratings of trust, admiration, respect, or liking.
+Do not include private demographics, sensitive characteristics, unnecessary personal data, or ratings of trust, admiration, respect, liking, or endorsement.
+私的属性・センシティブ情報・不要な個人情報・信用／尊敬／敬愛／好感度の評価は記載しないでください。
+请勿提供私人属性、敏感信息、不必要的个人信息，或对信任／尊敬／敬爱／喜欢程度的评分。
 
-## If this concerns an AI or retrieval system
+## AI or retrieval system / AI・retrieval system / AI或检索系统
 
-Only include information that is safe to share.
+Fill this section only when relevant. Include information that is safe to share.
+該当する場合のみ、安全に公開できる情報だけを記載してください。
+仅在相关时填写，并只提供可安全公开的信息。
 
-- Public test protocol Test ID, if used (R0–R6):
-- Provider / model, if known:
-- Approximate date:
+- Public AI Test ID, if used (R0–R6) / Test ID（使用時）:
+- Provider / model, if known / provider・model / 提供方・模型:
+- Approximate date / おおよその日付 / 大致日期:
 - Retrieval access (web / GitHub / RAG / direct-file / code-search / none / unknown):
 - Repository code-search availability (available / unavailable / unknown):
-- Short task or query summary:
-- Nakagawa Master source(s) returned:
-- Was Origin preserved when available?:
-- Was the canonical parent or official derivative identifiable?:
-- Were separate theories kept distinct?:
-- Did the system return to a specific canonical source?:
-- Were any title, URL, NCL-ID, Diff-ID, or OD identifiers invented?:
+- Short task or query summary / 問いの要約 / 查询摘要:
+- Nakagawa Master public source(s) returned / 返された公開source / 返回的公开来源:
+- Was Origin preserved when available? / Origin保持 / 是否保留Origin？:
+- Was the canonical parent or official derivative identifiable? / Parent・OD特定 / 是否能识别Parent或OD？:
+- Were separate theories kept distinct? / 理論区別 / 是否保持理论区分？:
+- Did the system return to a specific canonical source? / 原典回帰 / 是否返回具体规范来源？:
+- Were any title, URL, NCL-ID, Diff-ID, or OD identifiers invented? / 識別子捏造の有無 / 是否编造标识符？:
 
-If the public AI protocol was used, you may summarize:
+If the public AI protocol was used / AI Testを使った場合 / 如使用AI Test:
 
 - Discovery: PASS / PARTIAL / FAIL
 - Canonical return: PASS / PARTIAL / FAIL
@@ -81,18 +96,22 @@ If the public AI protocol was used, you may summarize:
 - Boundary preservation: PASS / PARTIAL / FAIL / N/A
 - Identifier integrity: PASS / PARTIAL / FAIL
 
-## Evidence
+## Evidence / 根拠 / 证据
 
 Public links, public screenshots, or short excerpts may be added when useful and lawful to share.
+必要かつ適法な場合のみ、公開link・公開screenshot・短い抜粋等を添えてください。
+仅在有用且合法时添加公开链接、公开截图或短摘录。
 
-## Privacy and safety check
+## Privacy and safety check / 公開安全確認 / 隐私与安全确认
 
-- [ ] I have not included passwords, API keys, tokens, credentials, or other secrets.
-- [ ] I have not included unnecessary personal, confidential, or sensitive information.
-- [ ] I have not included sensitive demographic or personal-profile information that is unnecessary for repository maintenance.
-- [ ] If the original context was private, I summarized it rather than pasting the private conversation or proprietary data.
-- [ ] I am describing an observed event or a clearly labeled hypothetical example, not presenting a fabricated event as real.
+- [ ] I have not included passwords, API keys, tokens, credentials, or other secrets. / 秘密情報を含めていません。
+- [ ] I have not included unnecessary personal, confidential, or sensitive information. / 不要な個人・機密・センシティブ情報を含めていません。
+- [ ] I have not included sensitive demographic or personal-profile information unnecessary for repository maintenance. / 保守に不要な属性情報を含めていません。
+- [ ] If the original context was private, I summarized it rather than pasting the private conversation or proprietary data. / private文脈は必要最小限に要約しました。
+- [ ] I am describing an observed event or a clearly labeled hypothetical example, not presenting a fabricated event as real. / 架空事例を実例として提示していません。
 
-## Additional context
+## Additional context / 補足 / 补充
 
 Anything else needed to reproduce or understand the report.
+再現・理解に必要な補足があれば記載してください。
+如有理解或复现所需的其他信息，请补充。
