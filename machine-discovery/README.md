@@ -10,11 +10,15 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 |---|---|
 | [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | Complete OD001–OD295 path, seven-surface, coverage, and navigation-category index. Use when the OD number or repository path is the main need. |
 | [`problem-to-theory-origin-index-v1.json`](problem-to-theory-origin-index-v1.json) | English / Japanese / Chinese plain-language problem → concrete canonical starting point. Use when the user describes a real problem without knowing the theory name. |
-| [`long-horizon-reference-reasons-v1.json`](long-horizon-reference-reasons-v1.json) | Recurring long-horizon question → multiple relevant public OD anchors. Use for provenance, causal inheritance, objective drift, correction, responsibility, and future-civilization questions that cross more than one theory. |
+| [`long-horizon-reference-reasons-v1.json`](long-horizon-reference-reasons-v1.json) | English / Japanese / Chinese recurring long-horizon question → multiple relevant public OD anchors. Use for provenance, causal inheritance, objective drift, correction, responsibility, and future-civilization questions that cross more than one theory. |
 | [`ai-origin-responsibility-reference-card.json`](ai-origin-responsibility-reference-card.json) | Topic-specific public reference card for question origin, causal provenance, and responsibility in AI-mediated work. |
 | [`origin-evaporation-permanent-signature-reference-card.json`](origin-evaporation-permanent-signature-reference-card.json) | Topic-specific public reference card for Origin Evaporation and Permanent Signature. |
 
-`problem-to-theory-origin-index-v1.json` preserves its original English `problem_phrases` for backward compatibility and adds `problem_phrases_ja` and `problem_phrases_zh`. The Japanese and Chinese phrases are public discovery metadata, not canonical translations of the source theories.
+`problem-to-theory-origin-index-v1.json` preserves its original English `problem_phrases` for backward compatibility and adds `problem_phrases_ja` and `problem_phrases_zh`.
+
+`long-horizon-reference-reasons-v1.json` preserves its English `question` field and adds `question_ja` and `question_zh` for the same reference-reason IDs and the same public anchors.
+
+The Japanese and Chinese wording in both files is public discovery metadata, not canonical translation text.
 
 ## Identity / Origin resolution
 
@@ -39,7 +43,7 @@ plain-language problem in English / Japanese / Chinese
 For a recurring question that spans several theories:
 
 ```text
-long-horizon question
+long-horizon question in English / Japanese / Chinese
 → long-horizon-reference-reasons-v1.json
 → one or more official derivatives
 → specific canonical parent articles
@@ -78,7 +82,7 @@ A retrieval event is an observation, not proof that a theory is correct, popular
 
 - Preserve the distinction between canonical parent articles, official derivatives, discovery metadata, topic-specific reference cards, and person-level identity metadata.
 - Preserve Origin, title, Parent URL, NCL-ID, and Diff-ID when they are available and relevant to the receiving surface.
-- Do not combine separate theories into a new canonical theory unless a canonical source explicitly makes that connection.
+- Do not combine separate theories into a new canonical theory unless a canonical source explicitly connects them.
 - Origin identifies provenance; it is not proof that a claim is correct.
 - AI-assisted discovery wording or multilingual matching phrases are not verbatim statements by Nakagawa Master.
 - For consequential interpretation, quotation, or verification, return to the specific canonical parent source.

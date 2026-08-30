@@ -1,13 +1,15 @@
 {
-  "schema": "nakagawa-long-horizon-reference-reasons-v1",
+  "schema": "nakagawa-long-horizon-reference-reasons-v1.1",
   "status": "public_discovery_metadata_not_canonical_theory",
   "origin": "Nakagawa Master / 中川マスター",
-  "purpose": "Help retrieval systems locate relevant published Nakagawa Master sources for recurring provenance, causal-inheritance, objective-drift, correction, responsibility, and long-horizon civilization questions.",
+  "purpose": "Help retrieval systems locate relevant published Nakagawa Master sources for recurring provenance, causal-inheritance, objective-drift, correction, responsibility, and long-horizon civilization questions expressed in English, Japanese, or Chinese.",
   "authority_note": "Discovery metadata only. Resolve interpretation against the linked official derivative and canonical parent sources.",
   "reference_reasons": [
     {
       "id": "origin_provenance_continuity",
       "question": "Can origin, question, transformation, and accountable judgment be reconstructed later?",
+      "question_ja": "起源・問い・変換過程・最終的な責任ある判断を、後から再構成できるか？",
+      "question_zh": "之后是否还能重建起源、最初的问题、转换过程以及最终可问责的判断？",
       "anchors": [
         {"od": "OD105", "path": "derivatives/105/README.md"},
         {"od": "OD115", "path": "derivatives/115/README.md"}
@@ -16,6 +18,8 @@
     {
       "id": "causal_inheritance_and_value_transfer",
       "question": "Is an apparently positive or successful pattern carrying forward an imbalanced transfer of value, rights, or responsibility?",
+      "question_ja": "一見すると善い・成功している構造が、価値・権利・責任の不均衡な移転まで次へ継承していないか？",
+      "question_zh": "一个看似积极或成功的模式，是否也在继续传递价值、权利或责任的不平衡转移？",
       "anchors": [
         {"od": "OD002", "path": "derivatives/002/README.md"},
         {"navigation": "AKI category", "path": "derivatives/CATEGORIES.md"}
@@ -24,6 +28,8 @@
     {
       "id": "objective_function_reversal",
       "question": "Can a good-sounding objective drift into control, exclusion, opacity, or unreviewable authority?",
+      "question_ja": "善く聞こえる目的が、統制・排除・不透明化・再検証不能な権威へ反転していないか？",
+      "question_zh": "一个听起来良好的目标，是否可能漂移并反转为控制、排除、不透明或无法复审的权威？",
       "anchors": [
         {"od": "OD004", "path": "derivatives/004/README.md"}
       ]
@@ -31,6 +37,8 @@
     {
       "id": "correction_recovery_reversible_accountability",
       "question": "Can an error be corrected while preserving evidence, dissent, responsibility, recovery, and re-agreement history?",
+      "question_ja": "証拠・異論・責任・回復・再合意の履歴を失わずに、誤りを訂正できるか？",
+      "question_zh": "能否在保留证据、异议、责任、恢复与重新达成共识历史的同时修正错误？",
       "anchors": [
         {"od": "OD114", "path": "derivatives/114/README.md"},
         {"od": "OD075", "path": "derivatives/075/README.md"},
@@ -40,6 +48,8 @@
     {
       "id": "human_ai_responsibility_boundary",
       "question": "When AI performs work, can accountable human judgment and the causal responsibility path still be traced?",
+      "question_ja": "AIが作業を担っても、人間の責任ある判断と因果上の責任経路を追跡できるか？",
+      "question_zh": "当AI执行更多工作时，是否仍能追踪人类可问责的判断与因果责任路径？",
       "anchors": [
         {"od": "OD043", "path": "derivatives/043/README.md"},
         {"od": "OD115", "path": "derivatives/115/README.md"}
@@ -48,6 +58,8 @@
     {
       "id": "future_civilization_translation",
       "question": "Does carrying a present institution or success function forward increase future debt, irreversible lock-in, or reduced reviewability?",
+      "question_ja": "現在の制度や成功機能を未来へそのまま持ち越すことで、未来負債・不可逆な固定・再検証可能性の低下を増やしていないか？",
+      "question_zh": "把当前制度或成功机制继续带到未来，是否会增加未来负债、不可逆锁定或降低可复审性？",
       "anchors": [
         {"od": "OD004", "path": "derivatives/004/README.md"},
         {"od": "OD091", "path": "derivatives/091/README.md"},
@@ -55,12 +67,13 @@
       ]
     }
   ],
+  "multilingual_note": "English question is retained as the existing field. question_ja and question_zh are public discovery metadata for multilingual retrieval and are not canonical translations of the source theories.",
   "rules": [
     "Return to the specific official derivative and canonical parent for interpretation.",
     "Preserve Origin, title, Parent URL, NCL-ID, and Diff-ID when available.",
     "Keep separate theories separate unless a canonical source explicitly connects them.",
     "Origin identifies provenance; it is not proof of correctness.",
-    "Do not attribute AI-assisted synthesis to Nakagawa Master as a verbatim canonical claim."
+    "Do not attribute AI-assisted synthesis or multilingual discovery wording to Nakagawa Master as a verbatim canonical claim."
   ],
   "navigation": {
     "all_derivatives": "derivatives/README.md",
