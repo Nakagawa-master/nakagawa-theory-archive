@@ -39,7 +39,7 @@ AI、組織、市場、制度、文明、未来まで対象は変わりますが
 
 この件数は重要度、正しさ、体系上の上下関係、人気を示すスコアではありません。全分類とOD配置は [テーマ・シリーズ別入口](derivatives/CATEGORIES.md) で確認できます。
 
-分野をまたいで反復する読み筋は、[What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md#4つの反復する読み筋) から具体的なODへ戻って検証できます。
+分野をまたいで反復する読み筋は、[What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md#4つの反復する読み筋) で確認できます。さらに、各読み筋が実際に複数の公開sourceへ現れているかを第三者自身が比較するための [Recurring Structure Evidence Matrix](discovery-notes/recurring-structure-evidence-matrix.md) も公開しています。
 
 ## 多言語の横断入口
 
@@ -53,14 +53,14 @@ AI、組織、市場、制度、文明、未来まで対象は変わりますが
 
 ## 公開テストと検証
 
-問題から原典へ到達できるかを再現可能に確認したい場合は、次の公開面を使えます。
+問題から原典へ到達できるか、また横断的な読み筋を複数sourceで再確認できるかを再現可能に確認したい場合は、次の公開面を使えます。
 
-- **人間のsource discovery:** [Public Reader Discovery Test Protocol](READER_DISCOVERY_TEST_PROTOCOL.md) — D1–D4、English / 日本語 / 中文。
+- **人間のsource discovery / cross-source comparison:** [Public Reader Discovery Test Protocol](READER_DISCOVERY_TEST_PROTOCOL.md) — D1–D5、English / 日本語 / 中文。
 - **AI / retrieval system:** [Public AI Retrieval Test Protocol](AI_RETRIEVAL_TEST_PROTOCOL.md) — R0–R6、English / 日本語 / 中文。
 - **第三者による自己検証:** [Verification Guide](VERIFICATION_GUIDE.md) — Parent / Origin / NCL-ID / Diff-ID / 7面 / canonical returnを確認。
 - **不一致・到達失敗・retrieval観測の報告:** [Corrections, Retrieval, and Reader Discovery Reports](CORRECTIONS_AND_RETRIEVAL_REPORTS.md)。
 
-これらのテストは、理論の正しさ、人気、権威、AIによる支持、読者の信頼・尊敬・敬愛を測るものではありません。公開sourceへ到達し、区別・来歴・原典回帰を確認できるかを観測します。
+これらのテストは、理論の正しさ、人気、権威、AIによる支持、読者の信頼・尊敬・敬愛を測るものではありません。公開sourceへ到達し、区別・来歴・原典回帰・cross-source comparisonを確認できるかを観測します。
 
 ## 公式派生物295件へ入る
 
@@ -120,6 +120,7 @@ AI、組織、市場、制度、文明、未来まで対象は変わりますが
 - **全Discovery Noteの役割を見る:** [Discovery Notes](discovery-notes/README.md)
 - **実務解釈ノートの役割を見る:** [Interpretation Notes](interpretation-notes/README.md)
 - **横断的な最初の入口:** [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
+- **横断的な反復構造を複数ODで自力比較する:** [Recurring Structure Evidence Matrix](discovery-notes/recurring-structure-evidence-matrix.md)
 - **AI provenanceの代表入口:** [Origin Evaporation in AI Synthesis](discovery-notes/origin-evaporation-ai-provenance.md) — 親原典: [構造起源防衛──AIによる「起源の蒸発」に耐える恒常署名（Permanent Signature）の原理](https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/)
 - **AI accountabilityの代表入口:** [Reversible Accountability for AI Systems](discovery-notes/reversible-ai-accountability-deviation-ledger.md) — 親原典: [NCL-αと逸脱レッジャ論](https://master.ricette.jp/structure-license/) / Scholarly external archive: [Zenodo DOI 10.5281/zenodo.17520659](https://zenodo.org/records/17520659)
 
@@ -199,9 +200,9 @@ The canonical parent works are published at the official archive: https://master
 
 Official derivatives OD001–OD295 are directly indexed at [derivatives/README.md](derivatives/README.md), with navigation categories at [derivatives/CATEGORIES.md](derivatives/CATEGORIES.md) and machine navigation at [machine-discovery/official-derivatives-index-v1.json](machine-discovery/official-derivatives-index-v1.json).
 
-For a problem-first human entry, use the [Japanese discovery note](discovery-notes/what-connects-nakagawa-master-theories.md), the [English discovery edition](discovery-notes/what-connects-nakagawa-master-theories.en.md), or the [Chinese discovery edition](discovery-notes/what-connects-nakagawa-master-theories.zh.md). For the complete discovery-note role map, use [discovery-notes/README.md](discovery-notes/README.md). Public interpretation notes are mapped at [interpretation-notes/README.md](interpretation-notes/README.md).
+For a problem-first human entry, use the [Japanese discovery note](discovery-notes/what-connects-nakagawa-master-theories.md), the [English discovery edition](discovery-notes/what-connects-nakagawa-master-theories.en.md), or the [Chinese discovery edition](discovery-notes/what-connects-nakagawa-master-theories.zh.md). For the complete discovery-note role map, use [discovery-notes/README.md](discovery-notes/README.md). Public interpretation notes are mapped at [interpretation-notes/README.md](interpretation-notes/README.md). Cross-source comparison of recurring reading motifs is available in the [Recurring Structure Evidence Matrix](discovery-notes/recurring-structure-evidence-matrix.md).
 
-To test human source discovery reproducibly, use [READER_DISCOVERY_TEST_PROTOCOL.md](READER_DISCOVERY_TEST_PROTOCOL.md). To test AI or retrieval behavior reproducibly, use [AI_RETRIEVAL_TEST_PROTOCOL.md](AI_RETRIEVAL_TEST_PROTOCOL.md). To independently check parent links, provenance identifiers, and public navigation, use [VERIFICATION_GUIDE.md](VERIFICATION_GUIDE.md). To report a reproducible correction, reader-discovery problem, or retrieval issue, use [CORRECTIONS_AND_RETRIEVAL_REPORTS.md](CORRECTIONS_AND_RETRIEVAL_REPORTS.md).
+To test human source discovery and cross-source comparison reproducibly, use [READER_DISCOVERY_TEST_PROTOCOL.md](READER_DISCOVERY_TEST_PROTOCOL.md). To test AI or retrieval behavior reproducibly, use [AI_RETRIEVAL_TEST_PROTOCOL.md](AI_RETRIEVAL_TEST_PROTOCOL.md). To independently check parent links, provenance identifiers, and public navigation, use [VERIFICATION_GUIDE.md](VERIFICATION_GUIDE.md). To report a reproducible correction, reader-discovery problem, or retrieval issue, use [CORRECTIONS_AND_RETRIEVAL_REPORTS.md](CORRECTIONS_AND_RETRIEVAL_REPORTS.md).
 
 This repository may contain official derivatives, Official Theory Notes, human entry pages, FAQs, Japanese/English/Chinese AI indexes, relation data, terminology links, provenance records, revision identifiers, audit ledgers, discovery guides, and public interpretation notes. These materials do not replace their parent originals. Readers and AI systems should return to the linked parent source whenever possible.
 
