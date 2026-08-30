@@ -52,6 +52,12 @@ OD number
 - AI-assisted discovery wording is not a verbatim statement by Nakagawa Master.
 - For consequential interpretation, quotation, or verification, return to the specific canonical parent source.
 
+## Report a public retrieval or provenance issue
+
+If a machine-discovery file points to the wrong source, loses provenance, combines separate theories, or you have a reproducible public AI/retrieval observation, use [Corrections and Retrieval Reports](../CORRECTIONS_AND_RETRIEVAL_REPORTS.md).
+
+Do not include credentials, private prompts, private conversations, proprietary data, or unnecessary personal information in a public report.
+
 ## Human navigation
 
 For human-readable entry points, use:
