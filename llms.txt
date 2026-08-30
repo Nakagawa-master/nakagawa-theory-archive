@@ -33,7 +33,7 @@ The repository contains 295 official derivative hubs, numbered `001` through `29
 - `ai-index.md` — Japanese AI index
 - `en-ai-index.md` — English AI index
 - `zh-ai-index.md` — Chinese AI index
-- `ledger.md` — provenance/audit ledger
+- `derivative-ledger.md` — provenance/audit ledger
 
 Use the all-number index or category navigation for discovery. Use `official-derivatives-map.json` for OD number → NCL-ID → parent slug/title identity. Use `official-derivatives-index-v1.json` for machine navigation and stable path patterns. For consequential interpretation, citation, or claim verification, return from the derivative to its linked canonical parent article on `master.ricette.jp`.
 
