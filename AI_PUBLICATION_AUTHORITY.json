@@ -1,13 +1,16 @@
 {
-  "schema_version": "2.0",
+  "schema_version": "2.1",
   "record_id": "NAKAGAWA-PUBLICATION-POLICY-001",
   "status": "active_public_policy",
   "human_policy": "PUBLICATION_POLICY.md",
   "principles": {
     "official_human_facing_material_uses_identified_public_versions": true,
     "public_metadata_may_describe_already_public_provenance": true,
-    "public_metadata_must_not_add_new_substantive_owner_claims": true,
+    "public_metadata_must_not_add_new_substantive_author_claims": true,
     "public_repository_must_exclude_non_public_operational_material": true,
+    "public_text_must_be_third_party_readable": true,
+    "internal_operational_language_must_be_removed_or_rewritten_for_publication": true,
+    "machine_readable_files_follow_the_same_public_safety_rules": true,
     "public_visibility_does_not_equal_canonical_or_current": true
   },
   "allowed_public_metadata": [
@@ -29,7 +32,18 @@
     "execution, queue, monitoring or review records",
     "credentials, authentication or security information",
     "payment or financial access information",
-    "non-public strategy, experiment procedures, measurement procedures or recovery procedures"
+    "non-public strategy, experiment procedures, measurement procedures or recovery procedures",
+    "actionable guidance for deception or coercion",
+    "actionable guidance for impairing another person's judgment",
+    "actionable guidance for deliberate concealment of material facts",
+    "fabricated evidence, authority or social proof",
+    "actionable dependency optimization or exploitation of vulnerabilities",
+    "actionable circumvention of safeguards"
+  ],
+  "context_rules": [
+    "sensitive or harmful concepts may appear when necessary as theory, history, criticism, risk analysis or ethical analysis",
+    "such concepts must remain contextualized as subjects of analysis and must not be converted into operational instructions",
+    "official theory titles and source identities are preserved even when they contain strong terms"
   ],
   "truth_boundaries": [
     "publicly available does not automatically mean canonical",
