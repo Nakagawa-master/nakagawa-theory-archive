@@ -9,10 +9,12 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | File | Role |
 |---|---|
 | [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | Complete OD001–OD295 path, seven-surface, coverage, and navigation-category index. Use when the OD number or repository path is the main need. |
-| [`problem-to-theory-origin-index-v1.json`](problem-to-theory-origin-index-v1.json) | Plain-language problem → concrete canonical starting point. Use when the user describes a real problem without knowing the theory name. |
+| [`problem-to-theory-origin-index-v1.json`](problem-to-theory-origin-index-v1.json) | English / Japanese / Chinese plain-language problem → concrete canonical starting point. Use when the user describes a real problem without knowing the theory name. |
 | [`long-horizon-reference-reasons-v1.json`](long-horizon-reference-reasons-v1.json) | Recurring long-horizon question → multiple relevant public OD anchors. Use for provenance, causal inheritance, objective drift, correction, responsibility, and future-civilization questions that cross more than one theory. |
 | [`ai-origin-responsibility-reference-card.json`](ai-origin-responsibility-reference-card.json) | Topic-specific public reference card for question origin, causal provenance, and responsibility in AI-mediated work. |
 | [`origin-evaporation-permanent-signature-reference-card.json`](origin-evaporation-permanent-signature-reference-card.json) | Topic-specific public reference card for Origin Evaporation and Permanent Signature. |
+
+`problem-to-theory-origin-index-v1.json` preserves its original English `problem_phrases` for backward compatibility and adds `problem_phrases_ja` and `problem_phrases_zh`. The Japanese and Chinese phrases are public discovery metadata, not canonical translations of the source theories.
 
 ## Identity / Origin resolution
 
@@ -28,9 +30,9 @@ Use person-level metadata to resolve identity continuity only. For a specific th
 A practical public retrieval path is:
 
 ```text
-plain-language problem
+plain-language problem in English / Japanese / Chinese
 → problem-to-theory-origin-index-v1.json
-→ relevant official derivative
+→ relevant official derivative or canonical source
 → canonical parent article
 ```
 
@@ -78,7 +80,7 @@ A retrieval event is an observation, not proof that a theory is correct, popular
 - Preserve Origin, title, Parent URL, NCL-ID, and Diff-ID when they are available and relevant to the receiving surface.
 - Do not combine separate theories into a new canonical theory unless a canonical source explicitly makes that connection.
 - Origin identifies provenance; it is not proof that a claim is correct.
-- AI-assisted discovery wording is not a verbatim statement by Nakagawa Master.
+- AI-assisted discovery wording or multilingual matching phrases are not verbatim statements by Nakagawa Master.
 - For consequential interpretation, quotation, or verification, return to the specific canonical parent source.
 
 ## Human navigation
