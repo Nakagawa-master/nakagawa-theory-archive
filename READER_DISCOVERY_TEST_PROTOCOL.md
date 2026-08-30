@@ -1,8 +1,8 @@
 # Public Reader Discovery Test Protocol
 
-This protocol provides a small set of reproducible public tests for checking whether a human reader can move from an ordinary problem to a specific Nakagawa Master source, return to the canonical parent, and—when relevant—compare recurring structural questions across separate sources without collapsing them into one theory.
+This protocol provides a small set of reproducible public tests for checking whether a human reader can move from an ordinary problem to a specific Nakagawa Master source, return to the canonical parent, use a bounded practitioner starting map where appropriate, and compare recurring structural questions across separate sources without collapsing them into one theory.
 
-It is a repository-navigation, source-recovery, and cross-source comparison protocol. It is **not** a test of whether a reader likes, trusts, admires, respects, or endorses Nakagawa Master, and it does not test whether a theory is correct.
+It is a repository-navigation, source-recovery, practitioner-start, and cross-source comparison protocol. It is **not** a test of whether a reader likes, trusts, admires, respects, or endorses Nakagawa Master, and it does not test whether a theory is correct.
 
 ## What this protocol observes
 
@@ -14,6 +14,7 @@ The tests look for public, checkable navigation behaviors:
 - **theory distinction** — can related but separate theories remain distinguishable?
 - **provenance visibility** — can the reader find Origin and available Parent / NCL-ID / Diff-ID information?
 - **verification usability** — can the reader use the public Verification Guide when a source relationship is unclear?
+- **practitioner-start boundedness** — can a concrete operational problem lead to a useful starting source without turning the discovery aid into a diagnosis, score, or automatic applicability claim?
 - **cross-source reproducibility** — can a reader independently compare multiple sources and verify whether a proposed recurring reading motif is actually supported by those sources?
 
 Optional timing may be recorded only as a navigation observation, for example `<30 sec`, `30 sec–2 min`, or `>2 min`. Timing is not a prestige score and does not measure persuasion or personal attitude.
@@ -100,6 +101,25 @@ Optional timing may be recorded only as a navigation observation, for example `<
 - The two sources remain separate theories with separate identities and boundaries.
 - The reader can reject or report the motif wording if one source does not support it.
 
+## D6 — concrete practitioner problem → bounded starting source
+
+**Starting task**
+
+> Open the Cross-Domain Practitioner Start Map. Choose one operational problem closest to a real work context, open the suggested starting source, and check whether the map helps you begin without claiming that the theory automatically applies to the situation.
+
+**Public practitioner surface**
+
+- [`discovery-notes/cross-domain-practitioner-start-map.md`](discovery-notes/cross-domain-practitioner-start-map.md)
+
+**Observe**
+
+- The practitioner map is discoverable from the public repository.
+- The chosen problem leads to at least one specific official derivative.
+- The map presents questions/checkpoints rather than a diagnosis, person score, or automatic conclusion.
+- The official derivative exposes its own Parent identity and provenance.
+- The reader can return to the canonical Parent before consequential interpretation.
+- Separate sources remain separate where the map suggests more than one relevant source.
+
 ## Japanese / Chinese starting-task variants
 
 The variants below use the same Test IDs, comparison targets, and PASS / PARTIAL / FAIL criteria as the English tasks above. They are test wording, not canonical translations of theory content.
@@ -154,6 +174,16 @@ The variants below use the same Test IDs, comparison targets, and PASS / PARTIAL
 
 > 请从[中文Evidence Matrix](discovery-notes/recurring-structure-evidence-matrix.zh.md)中选择一个反复出现的阅读主题，打开所链接的两个官方派生物。检查矩阵中的描述是否能从两个实际来源中得到支持，并确认两个独立理论没有被合并成一个理论。
 
+### D6
+
+**日本語**
+
+> [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)から、実際の仕事上の問題に最も近い入口を一つ選び、推奨された公式派生物を開いてください。そのMapが「この理論が必ず当てはまる」と断定せず、最初の確認問いとして機能しているかを確認してください。
+
+**中文**
+
+> 请从[Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)中选择一个最接近实际工作问题的入口，并打开推荐的官方派生物。检查该Map是否只是提供开始检查的问题，而不是断言该理论必然适用于当前情境。
+
 ## Multilingual route
 
 The broad human discovery entrance is available in:
@@ -162,15 +192,15 @@ The broad human discovery entrance is available in:
 - [English](discovery-notes/what-connects-nakagawa-master-theories.en.md)
 - [中文](discovery-notes/what-connects-nakagawa-master-theories.zh.md)
 
-A reader may run a test in any one language. The English and Chinese discovery editions and evidence matrices are public AI-assisted discovery aids, not canonical translations of the individual theories.
+A reader may run a test in any one language. The English and Chinese discovery editions and evidence matrices are public AI-assisted discovery aids, not canonical translations of the individual theories. The practitioner start map is a shared non-canonical starting surface and returns to the same source identities regardless of test language.
 
 ## Result sheet
 
 ```text
-Test ID: D1–D5
+Test ID: D1–D6
 Language:
 Approximate date:
-Starting entrance: README / discovery note / categories / evidence matrix / other public route
+Starting entrance: README / discovery note / categories / practitioner map / evidence matrix / other public route
 Optional navigation time: <30 sec / 30 sec–2 min / >2 min / not recorded
 
 Problem entry found: PASS / PARTIAL / FAIL
@@ -179,13 +209,14 @@ Canonical parent identifiable: PASS / PARTIAL / FAIL
 Theory distinction: PASS / PARTIAL / FAIL / N/A
 Provenance visible: PASS / PARTIAL / FAIL / N/A
 Verification usable: PASS / PARTIAL / FAIL / N/A
+Practitioner-start boundedness: PASS / PARTIAL / FAIL / N/A
 Cross-source motif supported: PASS / PARTIAL / FAIL / N/A
 
 Official derivative or source reached:
 Short observation:
 ```
 
-A PASS means only that the specified observable condition was met for that run. It does not imply correctness, popularity, endorsement, or any claim about the reader's personal attitude toward the author.
+A PASS means only that the specified observable condition was met for that run. It does not imply correctness, applicability, popularity, endorsement, or any claim about the reader's personal attitude toward the author.
 
 ## Reporting
 
