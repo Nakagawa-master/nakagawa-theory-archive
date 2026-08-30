@@ -1,6 +1,6 @@
 ---
-name: Archive, reader, practical-use, or AI report
-about: Report a public archive error, source-discovery/practical-use observation, or reproducible AI retrieval/reuse observation
+name: Archive, reader, practical-use, implementation, or AI report
+about: Report a public archive error, source-discovery/use/implementation observation, or reproducible AI retrieval/reuse observation
 title: "[Report] "
 labels: ""
 assignees: ""
@@ -14,6 +14,7 @@ assignees: ""
 - [ ] Reader discovery / canonical-return observation / 読者の原典到達観測 / 读者来源发现观察
 - [ ] First-note depth progression (D7) / First-Note深度進行観測 / First-Note深度推进观察
 - [ ] Practical-use observation (U1) / 実務利用観測 / 实践使用观察
+- [ ] Bounded implementation observation (I1) / 限定実装観測 / 有限实施观察
 - [ ] AI retrieval observation (R0–R6) / AI取得観測 / AI检索观察
 - [ ] AI reuse observation (R7) / AI再利用観測 / AI再利用观察
 - [ ] Theory-distinction or canonical-return issue / 理論区別・原典回帰問題 / 理论区分或规范来源返回问题
@@ -31,9 +32,9 @@ Provide the relevant public URL or repository path when available.
 
 ## What did you observe? / 何を観測しましたか？ / 你观察到了什么？
 
-Describe only the observable public issue, route behavior, or safely shareable practical/reuse observation needed to understand the report.
-公開上の問題・到達経路・安全に共有できる実務／再利用観測について、再現・理解に必要な範囲だけ記載してください。
-只描述理解或复现公开问题、路径或可安全分享的实践／再利用观察所需的信息。
+Describe only the observable public issue, route behavior, or safely shareable use/implementation/reuse observation needed to understand the report.
+公開上の問題・到達経路・安全に共有できる利用／実装／再利用観測について、再現・理解に必要な範囲だけ記載してください。
+只描述理解或复现公开问题、路径或可安全分享的使用／实施／再利用观察所需的信息。
 
 ## Expected or comparison basis / 比較根拠 / 比较依据
 
@@ -89,6 +90,30 @@ Fill this section only for a public/synthetic/safely de-identified U1 observatio
 
 A practical-use report is an observation about bounded use. It is not proof that the theory is correct or that the next step will work.
 
+## Bounded implementation / 限定実装 / 有限实施
+
+Fill this section only for an I1 observation in a public, synthetic, or safely de-identified low-risk context. Do not publish confidential or high-stakes case details.
+
+- Protocol: I1
+- Context type: public / synthetic / safely de-identified low-risk
+- Starting source:
+- Canonical Parent identifiable: PASS / PARTIAL / FAIL
+- Bounded implementation question:
+- Preconditions stated: PASS / PARTIAL / FAIL
+- Non-applicability / counterevidence stated: PASS / PARTIAL / FAIL
+- Rollback / stop condition stated: PASS / PARTIAL / FAIL
+- Baseline recorded: PASS / PARTIAL / FAIL / N/A
+- One bounded reversible change implemented: PASS / PARTIAL / FAIL
+- Outcome observable: PASS / PARTIAL / FAIL / N/A
+- Counterevidence considered: PASS / PARTIAL / FAIL
+- Source boundaries preserved: PASS / PARTIAL / FAIL
+- Canonical return completed: PASS / PARTIAL / FAIL
+- Decision: ROLLBACK / KEEP_FOR_NOW / REVISE_AND_RETEST / STOP_AS_NON_FIT / INSUFFICIENT_EVIDENCE
+- What changed?:
+- What did not change or remained unclear?:
+
+An I1 report does not prove causality, universal applicability, commercial success, organizational superiority, or social impact.
+
 ## AI or retrieval / reuse system / AI取得・再利用 / AI检索与再利用
 
 Fill this section only when relevant. Include information that is safe to share.
@@ -135,7 +160,7 @@ Public links, public screenshots, or short excerpts may be added when useful and
 - [ ] I have not included sensitive demographic or personal-profile information unnecessary for repository maintenance. / 保守に不要な属性情報を含めていません。
 - [ ] If the original context was private, I summarized or safely de-identified it rather than pasting the private conversation or proprietary data. / private文脈は必要最小限に要約・匿名化しました。
 - [ ] I am describing an observed event or a clearly labeled hypothetical example, not presenting a fabricated event as real. / 架空事例を実例として提示していません。
-- [ ] I understand that a PASS or useful observation does not prove correctness, superiority, endorsement, or guaranteed applicability. / PASSや有用観測を正しさ・優越・支持・適用保証とは扱いません。
+- [ ] I understand that a PASS or useful observation does not prove correctness, causality, superiority, endorsement, or guaranteed applicability. / PASSや有用観測を正しさ・因果・優越・支持・適用保証とは扱いません。
 
 ## Additional context / 補足 / 补充
 
