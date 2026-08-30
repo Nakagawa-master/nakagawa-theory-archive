@@ -17,12 +17,21 @@ Useful reports include:
 - an AI or retrieval system that successfully returned to a specific official derivative or canonical parent in a way that can be described and checked;
 - a discovery file that appears to combine separate theories or overstate what a canonical source says.
 
+## Reproducible public reader discovery tests
+
+If you want to generate a comparable human source-discovery observation rather than report an accidental encounter, use:
+
+- [Public Reader Discovery Test Protocol](READER_DISCOVERY_TEST_PROTOCOL.md)
+
+The protocol checks whether a reader can move from an ordinary problem to a specific official derivative and canonical parent, keep related theories distinct, see provenance, and use the Verification Guide when needed. It does not ask for trust, admiration, respect, liking, endorsement, or personal demographic information.
+
 ## Reader discovery observations
 
 A reader-discovery report should describe the public path, not the reader's private profile or attitude toward the author.
 
 Useful fields are:
 
+- public reader Test ID, if the public reader protocol was used;
 - language used, when relevant;
 - a short statement of the public problem or question that brought you to the archive;
 - the first public entrance used, if known;
@@ -57,6 +66,7 @@ For a normal archive correction, include:
 
 For a reader-discovery observation, include only the public path needed to understand the route:
 
+- reader Test ID if used (D1–D4);
 - short problem or question;
 - first public entrance used;
 - source reached or not reached;
@@ -102,12 +112,13 @@ Reports may help with:
 - identifying repeated source-recovery failures in AI systems;
 - identifying repeated loss of Origin or theory distinctions;
 - checking whether discovery surfaces lead back to the intended canonical material;
-- comparing retrieval behavior across repeated public tests without turning the result into a prestige score.
+- comparing repeated reader or AI retrieval tests without turning the result into a prestige score.
 
 Substantive changes to a theory must be resolved against the canonical source and its revision history. A GitHub discovery or metadata file does not create a new canonical claim.
 
 ## Related public guidance
 
+- [Public Reader Discovery Test Protocol](READER_DISCOVERY_TEST_PROTOCOL.md)
 - [Public AI Retrieval Test Protocol](AI_RETRIEVAL_TEST_PROTOCOL.md)
 - [Verification guide](VERIFICATION_GUIDE.md)
 - [Problem-first human discovery](discovery-notes/what-connects-nakagawa-master-theories.md)

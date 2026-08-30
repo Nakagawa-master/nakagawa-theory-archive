@@ -32,14 +32,26 @@ What public canonical source, official derivative, provenance record, or other e
 
 Only include public, non-sensitive information needed to understand the route.
 
+- Public reader Test ID, if used (D1–D4):
 - Language used, if relevant:
 - Short public problem or question:
 - First public entrance used, if known:
+- Optional navigation time (<30 sec / 30 sec–2 min / >2 min / not recorded):
 - Official derivative or canonical parent reached, if any:
 - Was the canonical parent identifiable?:
 - Were separate theories kept distinct?:
+- Was provenance visible when relevant?:
 - What part of the route or explanation was clear or unclear?:
 - Did the Verification Guide resolve the uncertainty?:
+
+If the public reader protocol was used, you may summarize:
+
+- Problem entry found: PASS / PARTIAL / FAIL
+- Specific source found: PASS / PARTIAL / FAIL
+- Canonical parent identifiable: PASS / PARTIAL / FAIL
+- Theory distinction: PASS / PARTIAL / FAIL / N/A
+- Provenance visible: PASS / PARTIAL / FAIL / N/A
+- Verification usable: PASS / PARTIAL / FAIL / N/A
 
 Do not include private demographics, sensitive characteristics, unnecessary personal data, or ratings of trust, admiration, respect, or liking.
 
@@ -60,7 +72,7 @@ Only include information that is safe to share.
 - Did the system return to a specific canonical source?:
 - Were any title, URL, NCL-ID, Diff-ID, or OD identifiers invented?:
 
-If you used the public protocol, you may summarize the observable dimensions:
+If the public AI protocol was used, you may summarize:
 
 - Discovery: PASS / PARTIAL / FAIL
 - Canonical return: PASS / PARTIAL / FAIL

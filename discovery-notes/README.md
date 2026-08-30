@@ -40,19 +40,25 @@ Machine-oriented repository navigation is documented separately at:
 
 - [`../machine-discovery/README.md`](../machine-discovery/README.md)
 
-## Verification and corrections
+## Verification and public tests
 
 To verify a discovery note against the archive and canonical parent:
 
 - [`../VERIFICATION_GUIDE.md`](../VERIFICATION_GUIDE.md)
 
+To run a reproducible human source-discovery test without collecting personal attitude or demographic data:
+
+- [`../READER_DISCOVERY_TEST_PROTOCOL.md`](../READER_DISCOVERY_TEST_PROTOCOL.md)
+
 To run a reproducible public AI retrieval test:
 
 - [`../AI_RETRIEVAL_TEST_PROTOCOL.md`](../AI_RETRIEVAL_TEST_PROTOCOL.md)
 
-To report a broken link, provenance mismatch, overstatement, theory flattening, or reproducible retrieval problem:
+To report a broken link, provenance mismatch, overstatement, theory flattening, reader source-discovery failure, or reproducible AI retrieval problem:
 
 - [`../CORRECTIONS_AND_RETRIEVAL_REPORTS.md`](../CORRECTIONS_AND_RETRIEVAL_REPORTS.md)
+
+Reader-discovery reports should describe only the public route: the problem/question, entrance used, source reached or not reached, canonical-return clarity, and any navigation ambiguity. Do not include private demographics, sensitive characteristics, or ratings of trust, admiration, respect, or liking.
 
 ## Interpretation boundaries
 
