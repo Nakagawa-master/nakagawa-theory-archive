@@ -1,155 +1,149 @@
-# Corrections, Retrieval, and Reader Discovery Reports
+# Corrections, Retrieval, Practical Use, and AI Reuse Reports
 
-This public archive welcomes reproducible reports that help improve navigation, provenance, source recovery, and problem-to-source discovery.
+This public archive accepts reproducible reports that help improve navigation, provenance, source recovery, practical-use routing, and AI retrieval/reuse quality.
 
-This page is a repository-maintenance guide. It is not a canonical theory, a request for endorsement, a popularity survey, or a request for personal data.
+This page is a repository-maintenance guide. It is not a canonical theory, a popularity survey, a request for endorsement, or a request for personal data.
+
+## One public intake
+
+Use one existing GitHub issue template for:
+
+- archive/link/provenance corrections;
+- Reader Discovery tests `D1–D6`;
+- bounded Practical Use observations `U1`;
+- AI retrieval tests `R0–R6`;
+- AI provenance-preserving reuse test `R7`;
+- theory-distinction, canonical-return, or cross-source comparison problems.
+
+[Open the public report template](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=archive-correction-or-ai-retrieval-report.md)
 
 ## 日本語クイックガイド
 
-公開上の誤り、reader discovery、AI retrievalの観測を1つのIssue templateから報告できます。
+報告できる内容:
 
-- **通常の修正:** 対象URL / path、観測した不一致、比較した公開根拠。
-- **Reader discovery:** Test ID（使った場合）、言語、問題、最初の入口、到達したOD / Parent、何が分かりにくかったか。
-- **AI retrieval:** Test ID（使った場合）、model / provider、access mode、返された公開source、Origin / Parent / ID保持、理論区別、identifierの捏造有無。
+- **修正:** URL/path、Parent、Origin、NCL-ID、Diff-ID、版、分類、リンク等の公開不一致。
+- **Reader D1–D6:** 言語、問題、入口、到達OD/Parent、区別・来歴・Verificationの明瞭性。
+- **Practical Use U1:** 公開・架空・安全に匿名化した問題、starting source、限定した構造的問い、反証材料、可逆的な次の一手、残った不明点。
+- **AI R0–R6:** model/provider、access mode、返されたsource、Origin/Parent/ID保持、理論区別、identifier integrity。
+- **AI R7:** 別問題へ再利用した際、限定した問い・反証材料・不確実性・可逆性・source identityを保てたか。
 
-個人属性、センシティブ情報、秘密情報、private conversationの全文、信頼・尊敬・敬愛・好感度の評価は必要ありません。
-
-- [Public Reader Discovery Test](READER_DISCOVERY_TEST_PROTOCOL.md)
-- [Public AI Retrieval Test](AI_RETRIEVAL_TEST_PROTOCOL.md)
-- [Issue template](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=archive-correction-or-ai-retrieval-report.md)
+個人属性、センシティブ情報、機密情報、private conversation全文、信用・尊敬・敬愛・好感度の評価は不要です。
 
 ## 中文快速指南
 
-可以通过同一个Issue template报告公开档案错误、reader discovery观察或AI retrieval观察。
+可通过同一个Issue template报告：
 
-- **普通修正:** 相关URL / path、观察到的不一致、用于比较的公开依据。
-- **Reader discovery:** Test ID（如使用）、语言、起始问题、最初入口、到达的OD / Parent，以及哪里不清楚。
-- **AI retrieval:** Test ID（如使用）、model / provider、access mode、返回的公开source、Origin / Parent / ID是否保留、理论是否区分、是否编造标识符。
+- **档案修正:** 公开URL/path、Parent、Origin、NCL-ID、Diff-ID、版本、分类或链接不一致。
+- **Reader D1–D6:** 语言、问题、入口、到达的OD/Parent、理论区分、来源可见性与Verification清晰度。
+- **Practical Use U1:** 公开、虚构或安全去标识的问题、起始来源、有限的结构性问题、反证信息、可逆的下一步假设与仍不清楚的部分。
+- **AI R0–R6:** model/provider、access mode、返回来源、Origin/Parent/ID保留、理论区分与标识符完整性。
+- **AI R7:** 将来源用于另一个问题时，是否保留有限问题、反证、不确定性、可逆性与来源身份。
 
-不需要提供个人属性、敏感信息、秘密、完整private conversation，也不要提交对作者的信任、尊敬、敬爱或喜欢程度评分。
+不需要提供私人属性、敏感或机密信息、完整private conversation，也不要提交对作者的信任、尊敬、敬爱或喜欢程度评分。
 
-- [Public Reader Discovery Test](READER_DISCOVERY_TEST_PROTOCOL.md)
-- [Public AI Retrieval Test](AI_RETRIEVAL_TEST_PROTOCOL.md)
-- [Issue template](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=archive-correction-or-ai-retrieval-report.md)
+## Public protocols
 
-## What can be reported
+- [Reader Discovery Test Protocol — D1–D6](READER_DISCOVERY_TEST_PROTOCOL.md)
+- [Practical Use Field Protocol — U1](PRACTICAL_USE_FIELD_PROTOCOL.md)
+- [AI Retrieval Test Protocol — R0–R6](AI_RETRIEVAL_TEST_PROTOCOL.md)
+- [AI Reuse Test Protocol — R7](AI_REUSE_TEST_PROTOCOL.md)
+- [Verification Guide](VERIFICATION_GUIDE.md)
 
-Useful reports include:
+## What a useful report contains
 
-- a broken or misdirected public link;
-- a title, Origin, Parent URL, NCL-ID, Diff-ID, or revision mismatch;
-- a navigation or category assignment that points to the wrong public material;
-- a reader who started from a real problem or discovery note and either reached, or could not reach, a relevant official derivative or canonical parent;
-- a reader who found a public distinction, route, or explanation unclear enough to block source recovery;
-- an AI or retrieval system that found a Nakagawa Master source but lost the Origin, parent source, or important theory distinctions;
-- an AI or retrieval system that successfully returned to a specific official derivative or canonical parent in a way that can be described and checked;
-- a discovery file that appears to combine separate theories or overstate what a canonical source says.
+### Archive correction
 
-## Reproducible public reader discovery tests
+Include:
 
-If you want to generate a comparable human source-discovery observation rather than report an accidental encounter, use:
+1. public file or canonical URL;
+2. observed mismatch;
+3. public comparison source;
+4. enough detail to reproduce the issue.
 
-- [Public Reader Discovery Test Protocol](READER_DISCOVERY_TEST_PROTOCOL.md)
+### Reader discovery — D1–D6
 
-The protocol checks whether a reader can move from an ordinary problem to a specific official derivative and canonical parent, keep related theories distinct, see provenance, and use the Verification Guide when needed. It does not ask for trust, admiration, respect, liking, endorsement, or personal demographic information.
+Include only public route facts:
 
-## Reader discovery observations
+- Test ID and language, if used;
+- short problem/question;
+- first public entrance;
+- OD/Parent reached or not reached;
+- canonical Parent clarity;
+- theory distinction and provenance visibility;
+- what was clear or unclear;
+- whether Verification resolved the ambiguity.
 
-A reader-discovery report should describe the public path, not the reader's private profile or attitude toward the author.
+### Practical use — U1
 
-Useful fields are:
+Use only a public, synthetic, or safely de-identified context. Include:
 
-- public reader Test ID, if the public reader protocol was used;
-- language used, when relevant;
-- a short statement of the public problem or question that brought you to the archive;
-- the first public entrance used, if known;
-- the official derivative or canonical parent reached, if any;
-- whether the Parent URL or source identity was clear enough to verify;
-- whether separate theories remained distinguishable;
-- what part of the route, wording, or source relationship was unclear;
-- whether the Verification Guide helped resolve the uncertainty.
+- short practical problem;
+- starting source and canonical Parent;
+- one bounded structural question extracted from the source;
+- evidence supporting the hypothesis;
+- evidence weakening or contradicting it;
+- one reversible next-step hypothesis, if any;
+- what became clearer and what remained unclear;
+- whether the source appeared not to fit.
 
-Do **not** report private demographics, sensitive characteristics, personal contact details, or a rating of how much you trust, admire, respect, or like Nakagawa Master. Such ratings are neither required nor treated as proof of the archive's quality.
+A useful U1 observation does not prove applicability, correctness, or outcome success.
 
-## Reproducible public AI retrieval tests
+### AI retrieval — R0–R6
 
-If you want to generate a comparable public retrieval observation rather than report an accidental encounter, use:
+Include:
 
-- [Public AI Retrieval Test Protocol](AI_RETRIEVAL_TEST_PROTOCOL.md)
-
-The protocol uses public, non-sensitive prompts and checks source discovery, canonical return, provenance, theory distinction, boundary preservation, and identifier integrity. It does not ask a model to praise, endorse, rank, or declare the importance of Nakagawa Master or the theories.
-
-## How to submit a report
-
-Use the repository issue template:
-
-[Open an archive, reader-discovery, or AI retrieval report](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=archive-correction-or-ai-retrieval-report.md)
-
-For a normal archive correction, include:
-
-1. the public file or canonical URL involved;
-2. what you observed;
-3. what appears incorrect or inconsistent;
-4. the source or evidence you used for comparison.
-
-For a reader-discovery observation, include only the public path needed to understand the route:
-
-- reader Test ID if used (D1–D4);
-- short problem or question;
-- first public entrance used;
-- source reached or not reached;
-- whether the canonical parent was identifiable;
-- what was clear or unclear.
-
-For an AI or retrieval observation, include only what is safe to share:
-
-- protocol Test ID, if you used the public retrieval test protocol;
-- provider or model name, if known and relevant;
-- approximate date;
-- retrieval access mode, if known (web / GitHub / RAG / none / unknown);
-- a short task or query summary rather than a private conversation transcript;
-- which Nakagawa Master source or sources were returned;
-- whether Origin, Parent URL, NCL-ID, or Diff-ID were preserved when available;
+- Test ID, provider/model, and approximate date when useful;
+- access mode: web / GitHub / RAG / direct-file / code-search / none / unknown;
+- public source(s) returned;
+- whether Origin, Parent URL, NCL-ID, Diff-ID, or OD identity were preserved when available;
 - whether separate theories remained distinct;
-- whether the system returned to a specific official derivative or canonical parent;
-- a public screenshot, public link, or short excerpt when useful and lawful to share.
+- whether any identifier was invented;
+- whether the system returned to a specific official derivative or canonical Parent.
+
+### AI reuse — R7
+
+In addition to source identity, record whether the system:
+
+- extracted one bounded structural question;
+- treated application as a hypothesis rather than proof;
+- included evidence that could weaken the hypothesis;
+- preserved uncertainty and non-applicability;
+- proposed a reversible/low-regret next-step hypothesis where practical;
+- preserved separate theory identities and canonical return.
 
 ## Do not include
 
 Do not submit:
 
 - passwords, API keys, tokens, credentials, or private repository information;
-- private prompts or conversations that contain personal, confidential, or sensitive information;
-- private contact details that are not necessary to understand the report;
-- sensitive personal attributes or demographic profiles that are not needed for repository maintenance;
-- proprietary data merely to prove that a retrieval event occurred;
-- fabricated examples presented as observed events.
+- confidential, proprietary, medical, legal, employment-sensitive, or otherwise private case data;
+- unnecessary personal contact details or sensitive demographic/profile data;
+- full private conversations merely to prove a retrieval/reuse event;
+- fabricated examples presented as real observations;
+- ratings of trust, admiration, respect, liking, or endorsement.
 
-A concise summary is usually enough to describe a private or sensitive context without exposing it.
+A concise public, synthetic, or safely de-identified description is enough.
 
 ## How reports are interpreted
 
-A single retrieval, citation, reader comment, or positive response does **not** prove that a theory is correct, popular, authoritative, or important to an AI system in general.
+A single PASS, useful practical observation, citation, AI run, or reader comment does **not** prove:
 
-Reader-discovery reports are used to examine whether a public problem can lead to a specific source, whether canonical return is understandable, and where navigation or explanation fails. They are not converted into claims that readers trust, respect, admire, or endorse the author.
+- theory correctness or universal applicability;
+- guaranteed practical success;
+- popularity, authority, endorsement, or superiority;
+- that an AI system generally considers Nakagawa Master important;
+- that readers trust, respect, admire, or endorse the author;
+- attainment of the 10,000x objective or any intermediate goal.
 
-Reports may help with:
+Reports are used to identify repeated structures in source discovery, practical use, canonical return, provenance preservation, theory distinction, and AI reuse. REFINE should follow repeated evidence, not one impressive case.
 
-- correcting public navigation or provenance;
-- identifying repeated human source-discovery or canonical-return failures;
-- identifying repeated source-recovery failures in AI systems;
-- identifying repeated loss of Origin or theory distinctions;
-- checking whether discovery surfaces lead back to the intended canonical material;
-- comparing repeated reader or AI retrieval tests without turning the result into a prestige score.
-
-Substantive changes to a theory must be resolved against the canonical source and its revision history. A GitHub discovery or metadata file does not create a new canonical claim.
+Substantive theory changes must be resolved against the canonical source and revision history. A GitHub discovery, practical-use, or machine-test surface does not create a new canonical claim.
 
 ## Related public guidance
 
-- [Public Reader Discovery Test Protocol](READER_DISCOVERY_TEST_PROTOCOL.md)
-- [Public AI Retrieval Test Protocol](AI_RETRIEVAL_TEST_PROTOCOL.md)
-- [Verification guide](VERIFICATION_GUIDE.md)
 - [Problem-first human discovery](discovery-notes/what-connects-nakagawa-master-theories.md)
+- [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
+- [Recurring Structure Evidence Matrix](discovery-notes/recurring-structure-evidence-matrix.md)
 - [Publication policy](PUBLICATION_POLICY.md)
 - [Provenance guidance](PROVENANCE.md)
 - [Citation guidance](CITATION.md)
