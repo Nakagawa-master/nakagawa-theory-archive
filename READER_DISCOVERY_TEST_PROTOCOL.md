@@ -83,11 +83,13 @@ Optional timing may be recorded only as a navigation observation, for example `<
 
 **Starting task**
 
-> Open the public Recurring Structure Evidence Matrix. Choose one recurring motif, open both linked official derivatives, and check whether the matrix wording is supported by the two source pages while the theories remain separate.
+> Open a public Recurring Structure Evidence Matrix in the language you prefer. Choose one recurring motif, open both linked official derivatives, and check whether the matrix wording is supported by the two source pages while the theories remain separate.
 
-**Public comparison surface**
+**Public comparison surfaces**
 
-- [`discovery-notes/recurring-structure-evidence-matrix.md`](discovery-notes/recurring-structure-evidence-matrix.md)
+- 日本語: [`discovery-notes/recurring-structure-evidence-matrix.md`](discovery-notes/recurring-structure-evidence-matrix.md)
+- English: [`discovery-notes/recurring-structure-evidence-matrix.en.md`](discovery-notes/recurring-structure-evidence-matrix.en.md)
+- 中文: [`discovery-notes/recurring-structure-evidence-matrix.zh.md`](discovery-notes/recurring-structure-evidence-matrix.zh.md)
 
 **Observe**
 
@@ -146,11 +148,11 @@ The variants below use the same Test IDs, comparison targets, and PASS / PARTIAL
 
 **日本語**
 
-> 公開されているRecurring Structure Evidence Matrixから反復する読み筋を一つ選び、リンクされた2つの公式派生物を開いてください。Matrixの説明が実際の2つのsourceで確認できるか、また別々の理論が一つに混ぜられていないかを確認してください。
+> [日本語Evidence Matrix](discovery-notes/recurring-structure-evidence-matrix.md)から反復する読み筋を一つ選び、リンクされた2つの公式派生物を開いてください。Matrixの説明が実際の2つのsourceで確認できるか、また別々の理論が一つに混ぜられていないかを確認してください。
 
 **中文**
 
-> 请从公开的Recurring Structure Evidence Matrix中选择一个反复出现的阅读主题，打开所链接的两个官方派生物。检查矩阵中的描述是否能从两个实际来源中得到支持，并确认两个独立理论没有被合并成一个理论。
+> 请从[中文Evidence Matrix](discovery-notes/recurring-structure-evidence-matrix.zh.md)中选择一个反复出现的阅读主题，打开所链接的两个官方派生物。检查矩阵中的描述是否能从两个实际来源中得到支持，并确认两个独立理论没有被合并成一个理论。
 
 ## Multilingual route
 
@@ -160,7 +162,7 @@ The broad human discovery entrance is available in:
 - [English](discovery-notes/what-connects-nakagawa-master-theories.en.md)
 - [中文](discovery-notes/what-connects-nakagawa-master-theories.zh.md)
 
-A reader may run a test in any one language. The English and Chinese discovery editions are public AI-assisted discovery aids, not canonical translations of the individual theories.
+A reader may run a test in any one language. The English and Chinese discovery editions and evidence matrices are public AI-assisted discovery aids, not canonical translations of the individual theories.
 
 ## Result sheet
 
