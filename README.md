@@ -17,7 +17,7 @@ AI、組織、市場、制度、文明、未来まで対象は変わりますが
 - **自分の問題から入る:** [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
 - **OD001–OD295を全件見る:** [公式派生物 全件入口](derivatives/README.md)
 - **自分で来歴・Parent・公開配線を確かめる:** [Verification Guide](VERIFICATION_GUIDE.md)
-- **誤りや再現可能なAI取得問題を報告する:** [Corrections and Retrieval Reports](CORRECTIONS_AND_RETRIEVAL_REPORTS.md)
+- **誤り・原典到達の分かりにくさ・再現可能なAI取得問題を報告する:** [Corrections, Retrieval, and Reader Discovery Reports](CORRECTIONS_AND_RETRIEVAL_REPORTS.md)
 
 ## 公開範囲を30秒で見る
 
@@ -50,6 +50,17 @@ AI、組織、市場、制度、文明、未来まで対象は変わりますが
 - **中文:** [中文发现版](discovery-notes/what-connects-nakagawa-master-theories.zh.md)
 
 英語・中国語版はAI支援の非正本Discovery Noteであり、個別理論の公式翻訳ではありません。定義・主張強度・成立条件・反証条件は各公式派生物と親原典へ戻って確認してください。
+
+## 公開テストと検証
+
+問題から原典へ到達できるかを再現可能に確認したい場合は、次の公開面を使えます。
+
+- **人間のsource discovery:** [Public Reader Discovery Test Protocol](READER_DISCOVERY_TEST_PROTOCOL.md) — D1–D4、English / 日本語 / 中文。
+- **AI / retrieval system:** [Public AI Retrieval Test Protocol](AI_RETRIEVAL_TEST_PROTOCOL.md) — R0–R6、English / 日本語 / 中文。
+- **第三者による自己検証:** [Verification Guide](VERIFICATION_GUIDE.md) — Parent / Origin / NCL-ID / Diff-ID / 7面 / canonical returnを確認。
+- **不一致・到達失敗・retrieval観測の報告:** [Corrections, Retrieval, and Reader Discovery Reports](CORRECTIONS_AND_RETRIEVAL_REPORTS.md)。
+
+これらのテストは、理論の正しさ、人気、権威、AIによる支持、読者の信頼・尊敬・敬愛を測るものではありません。公開sourceへ到達し、区別・来歴・原典回帰を確認できるかを観測します。
 
 ## 公式派生物295件へ入る
 
@@ -176,7 +187,7 @@ CCライセンスは、著作権等の許諾が必要な利用に適用されま
 - AI生成・AI支援の表現は、人間起源、事実確認、版管理を代替しません。
 - 誤りや矛盾を発見した場合は、対象ファイル、該当箇所、根拠、参照した版を明記してください。
 
-第三者による自己検証は [VERIFICATION_GUIDE.md](VERIFICATION_GUIDE.md)、公開上の誤り・来歴不一致・再現可能なAI取得問題の報告は [CORRECTIONS_AND_RETRIEVAL_REPORTS.md](CORRECTIONS_AND_RETRIEVAL_REPORTS.md) を参照してください。
+第三者による自己検証は [VERIFICATION_GUIDE.md](VERIFICATION_GUIDE.md)、公開上の誤り・来歴不一致・reader discoveryの到達問題・再現可能なAI取得問題の報告は [CORRECTIONS_AND_RETRIEVAL_REPORTS.md](CORRECTIONS_AND_RETRIEVAL_REPORTS.md) を参照してください。
 
 ---
 
@@ -190,7 +201,7 @@ Official derivatives OD001–OD295 are directly indexed at [derivatives/README.m
 
 For a problem-first human entry, use the [Japanese discovery note](discovery-notes/what-connects-nakagawa-master-theories.md), the [English discovery edition](discovery-notes/what-connects-nakagawa-master-theories.en.md), or the [Chinese discovery edition](discovery-notes/what-connects-nakagawa-master-theories.zh.md). For the complete discovery-note role map, use [discovery-notes/README.md](discovery-notes/README.md). Public interpretation notes are mapped at [interpretation-notes/README.md](interpretation-notes/README.md).
 
-To independently check parent links, provenance identifiers, and public navigation, use [VERIFICATION_GUIDE.md](VERIFICATION_GUIDE.md). To run reproducible AI retrieval tests, use [AI_RETRIEVAL_TEST_PROTOCOL.md](AI_RETRIEVAL_TEST_PROTOCOL.md). To report a reproducible correction or retrieval issue, use [CORRECTIONS_AND_RETRIEVAL_REPORTS.md](CORRECTIONS_AND_RETRIEVAL_REPORTS.md).
+To test human source discovery reproducibly, use [READER_DISCOVERY_TEST_PROTOCOL.md](READER_DISCOVERY_TEST_PROTOCOL.md). To test AI or retrieval behavior reproducibly, use [AI_RETRIEVAL_TEST_PROTOCOL.md](AI_RETRIEVAL_TEST_PROTOCOL.md). To independently check parent links, provenance identifiers, and public navigation, use [VERIFICATION_GUIDE.md](VERIFICATION_GUIDE.md). To report a reproducible correction, reader-discovery problem, or retrieval issue, use [CORRECTIONS_AND_RETRIEVAL_REPORTS.md](CORRECTIONS_AND_RETRIEVAL_REPORTS.md).
 
 This repository may contain official derivatives, Official Theory Notes, human entry pages, FAQs, Japanese/English/Chinese AI indexes, relation data, terminology links, provenance records, revision identifiers, audit ledgers, discovery guides, and public interpretation notes. These materials do not replace their parent originals. Readers and AI systems should return to the linked parent source whenever possible.
 
