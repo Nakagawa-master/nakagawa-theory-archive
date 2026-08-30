@@ -14,6 +14,16 @@ For a broad cross-domain entry, use the language that is easiest to read:
 
 The English and Chinese editions are AI-assisted public discovery editions. They are not canonical translations of the individual theories. All three routes return to the same specific official derivatives and canonical parent sources.
 
+## Cross-source evidence matrices
+
+To check whether recurring structural reading questions actually appear across separate published sources, use the same four source pairs in the language that is easiest to read:
+
+- **日本語:** [`recurring-structure-evidence-matrix.md`](recurring-structure-evidence-matrix.md)
+- **English discovery edition:** [`recurring-structure-evidence-matrix.en.md`](recurring-structure-evidence-matrix.en.md)
+- **中文发现版:** [`recurring-structure-evidence-matrix.zh.md`](recurring-structure-evidence-matrix.zh.md)
+
+These matrices are non-canonical comparison aids. They do not merge separate theories or establish a canonical taxonomy, canonical super-theory, correctness claim, endorsement, or author ranking. Each row returns to two separate official derivatives and their canonical parents for direct comparison.
+
 ## Topic-specific discovery notes
 
 | File | Public role | Canonical return |
@@ -46,7 +56,7 @@ To verify a discovery note against the archive and canonical parent:
 
 - [`../VERIFICATION_GUIDE.md`](../VERIFICATION_GUIDE.md)
 
-To run a reproducible human source-discovery test without collecting personal attitude or demographic data:
+To run a reproducible human source-discovery and cross-source comparison test without collecting personal attitude or demographic data:
 
 - [`../READER_DISCOVERY_TEST_PROTOCOL.md`](../READER_DISCOVERY_TEST_PROTOCOL.md)
 
@@ -54,11 +64,11 @@ To run a reproducible public AI retrieval test:
 
 - [`../AI_RETRIEVAL_TEST_PROTOCOL.md`](../AI_RETRIEVAL_TEST_PROTOCOL.md)
 
-To report a broken link, provenance mismatch, overstatement, theory flattening, reader source-discovery failure, or reproducible AI retrieval problem:
+To report a broken link, provenance mismatch, overstatement, theory flattening, reader source-discovery failure, cross-source comparison problem, or reproducible AI retrieval problem:
 
 - [`../CORRECTIONS_AND_RETRIEVAL_REPORTS.md`](../CORRECTIONS_AND_RETRIEVAL_REPORTS.md)
 
-Reader-discovery reports should describe only the public route: the problem/question, entrance used, source reached or not reached, canonical-return clarity, and any navigation ambiguity. Do not include private demographics, sensitive characteristics, or ratings of trust, admiration, respect, or liking.
+Reader-discovery reports should describe only the public route: the problem/question, entrance used, source reached or not reached, canonical-return clarity, cross-source comparison clarity when relevant, and any navigation ambiguity. Do not include private demographics, sensitive characteristics, or ratings of trust, admiration, respect, or liking.
 
 ## Interpretation boundaries
 
