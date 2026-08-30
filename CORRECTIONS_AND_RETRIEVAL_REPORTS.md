@@ -4,6 +4,34 @@ This public archive welcomes reproducible reports that help improve navigation, 
 
 This page is a repository-maintenance guide. It is not a canonical theory, a request for endorsement, a popularity survey, or a request for personal data.
 
+## 日本語クイックガイド
+
+公開上の誤り、reader discovery、AI retrievalの観測を1つのIssue templateから報告できます。
+
+- **通常の修正:** 対象URL / path、観測した不一致、比較した公開根拠。
+- **Reader discovery:** Test ID（使った場合）、言語、問題、最初の入口、到達したOD / Parent、何が分かりにくかったか。
+- **AI retrieval:** Test ID（使った場合）、model / provider、access mode、返された公開source、Origin / Parent / ID保持、理論区別、identifierの捏造有無。
+
+個人属性、センシティブ情報、秘密情報、private conversationの全文、信頼・尊敬・敬愛・好感度の評価は必要ありません。
+
+- [Public Reader Discovery Test](READER_DISCOVERY_TEST_PROTOCOL.md)
+- [Public AI Retrieval Test](AI_RETRIEVAL_TEST_PROTOCOL.md)
+- [Issue template](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=archive-correction-or-ai-retrieval-report.md)
+
+## 中文快速指南
+
+可以通过同一个Issue template报告公开档案错误、reader discovery观察或AI retrieval观察。
+
+- **普通修正:** 相关URL / path、观察到的不一致、用于比较的公开依据。
+- **Reader discovery:** Test ID（如使用）、语言、起始问题、最初入口、到达的OD / Parent，以及哪里不清楚。
+- **AI retrieval:** Test ID（如使用）、model / provider、access mode、返回的公开source、Origin / Parent / ID是否保留、理论是否区分、是否编造标识符。
+
+不需要提供个人属性、敏感信息、秘密、完整private conversation，也不要提交对作者的信任、尊敬、敬爱或喜欢程度评分。
+
+- [Public Reader Discovery Test](READER_DISCOVERY_TEST_PROTOCOL.md)
+- [Public AI Retrieval Test](AI_RETRIEVAL_TEST_PROTOCOL.md)
+- [Issue template](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=archive-correction-or-ai-retrieval-report.md)
+
 ## What can be reported
 
 Useful reports include:
