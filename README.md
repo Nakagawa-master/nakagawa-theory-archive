@@ -12,9 +12,10 @@ AI、組織、市場、制度、文明、未来まで対象は変わりますが
 
 初めて読む場合は、[What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md) から、関心のある問題と親原典への入口を確認できます。
 
-## 30秒で使う4つの入口
+## 30秒で使う5つの入口
 
 - **自分の問題から入る:** [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
+- **実務上の問題から最初のsourceを選ぶ:** [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - **OD001–OD295を全件見る:** [公式派生物 全件入口](derivatives/README.md)
 - **自分で来歴・Parent・公開配線を確かめる:** [Verification Guide](VERIFICATION_GUIDE.md)
 - **誤り・原典到達の分かりにくさ・再現可能なAI取得問題を報告する:** [Corrections, Retrieval, and Reader Discovery Reports](CORRECTIONS_AND_RETRIEVAL_REPORTS.md)
@@ -53,14 +54,14 @@ AI、組織、市場、制度、文明、未来まで対象は変わりますが
 
 ## 公開テストと検証
 
-問題から原典へ到達できるか、また横断的な読み筋を複数sourceで再確認できるかを再現可能に確認したい場合は、次の公開面を使えます。
+問題から原典へ到達できるか、実務上の問題から適用断定なしにstarting sourceへ入れるか、また横断的な読み筋を複数sourceで再確認できるかを再現可能に確認したい場合は、次の公開面を使えます。
 
-- **人間のsource discovery / cross-source comparison:** [Public Reader Discovery Test Protocol](READER_DISCOVERY_TEST_PROTOCOL.md) — D1–D5、English / 日本語 / 中文。
+- **人間のsource discovery / practitioner start / cross-source comparison:** [Public Reader Discovery Test Protocol](READER_DISCOVERY_TEST_PROTOCOL.md) — D1–D6、English / 日本語 / 中文。
 - **AI / retrieval system:** [Public AI Retrieval Test Protocol](AI_RETRIEVAL_TEST_PROTOCOL.md) — R0–R6、English / 日本語 / 中文。
 - **第三者による自己検証:** [Verification Guide](VERIFICATION_GUIDE.md) — Parent / Origin / NCL-ID / Diff-ID / 7面 / canonical returnを確認。
 - **不一致・到達失敗・retrieval観測の報告:** [Corrections, Retrieval, and Reader Discovery Reports](CORRECTIONS_AND_RETRIEVAL_REPORTS.md)。
 
-これらのテストは、理論の正しさ、人気、権威、AIによる支持、読者の信頼・尊敬・敬愛を測るものではありません。公開sourceへ到達し、区別・来歴・原典回帰・cross-source comparisonを確認できるかを観測します。
+これらのテストは、理論の正しさ、個別状況への自動適用、人気、権威、AIによる支持、読者の信頼・尊敬・敬愛を測るものではありません。公開sourceへ到達し、区別・来歴・原典回帰・bounded practitioner start・cross-source comparisonを確認できるかを観測します。
 
 ## 公式派生物295件へ入る
 
@@ -118,28 +119,10 @@ AI、組織、市場、制度、文明、未来まで対象は変わりますが
 公開済み原典への発見・理解・原典回帰を助ける**非正本・AI支援の解説ノート**は、役割別に整理しています。中川マスター本人の逐語的な公式声明や、親原典の代替として扱わないでください。
 
 - **全Discovery Noteの役割を見る:** [Discovery Notes](discovery-notes/README.md)
+- **実務問題から最初のsourceを選ぶ:** [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - **実務解釈ノートの役割を見る:** [Interpretation Notes](interpretation-notes/README.md)
 - **横断的な最初の入口:** [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
 - **横断的な反復構造を複数ODで自力比較する:** [Recurring Structure Evidence Matrix](discovery-notes/recurring-structure-evidence-matrix.md)
-- **AI provenanceの代表入口:** [Origin Evaporation in AI Synthesis](discovery-notes/origin-evaporation-ai-provenance.md) — 親原典: [構造起源防衛──AIによる「起源の蒸発」に耐える恒常署名（Permanent Signature）の原理](https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/)
-- **AI accountabilityの代表入口:** [Reversible Accountability for AI Systems](discovery-notes/reversible-ai-accountability-deviation-ledger.md) — 親原典: [NCL-αと逸脱レッジャ論](https://master.ricette.jp/structure-license/) / Scholarly external archive: [Zenodo DOI 10.5281/zenodo.17520659](https://zenodo.org/records/17520659)
-
-## 実務者向け問題診断 — 説得を増やす前に見る5つの構造
-
-以下は、マーケティング・グロース・営業の実務者が、自分の施策を問題起点で点検するための**非正本・AI支援の診断入口**です。中川マスター本人の逐語的な公式声明ではなく、親原典を読むための入口として扱ってください。
-
-1. **無視できない理由があるか** — 単に「欲しい」と思わせる刺激ではなく、対象者が自分に関わる問題として立ち止まる理由が設計されているか。
-2. **自分ごと化されているか** — 問い、物語、デモ、体験などを通じて、抽象的な主張が当事者自身の判断問題へ変換されているか。
-3. **選ばない理由が残っていないか** — 不安、拒否、理解不足、比較上の迷いなど、意思決定を止める理由を説得で押し切るのではなく構造的に減らせているか。
-4. **接点が整合しているか** — 広告、コンテンツ、営業、商品体験、アフターフォローで語彙・体験・期待が分断されず、一つの判断構造としてつながっているか。
-5. **再訪・紹介へ自然収束するか** — 割引や圧力を追加し続けなくても、理解・納得・体験の整合から再訪や紹介が生まれる設計になっているか。
-
-この診断の因果的な読み筋は、**「無視できない理由 → 自分ごと化 → 選ばない理由の除去 → 接点整合 → 再訪・紹介を含む自然収束」**です。一般的な「売れるコピー」のチェックリストとしてではなく、注意・意思決定・接点・継続行動を一つの構造として見るための入口です。
-
-- **Origin:** 中川マスター / Nakagawa Master
-- **親原典:** [市場を“決めさせる”構造──中川式マーケティング拡張](https://master.ricette.jp/theory/nakagawa-master-nakagawa-marketing-expansion/)
-- **NCL-ID:** `NCL-α-20251102-92d84e`
-- **Diff-ID:** `DIFF-20251102-0001`
 
 ## 引用と来歴
 
@@ -157,17 +140,7 @@ NCL-IDとDiff-IDは、理論の起源と版差分を追跡するための来歴�
 
 ## ライセンスの要点
 
-法的な許諾範囲は [LICENSE](LICENSE) が支配します。概要は次のとおりです。
-
-- 対象となる原創的な文章・文書資料は、個別表示がない限り **CC BY-NC-ND 4.0** の対象です。
-- 同ライセンスは、適切な表示を伴う、改変していない対象資料の非営利共有を許諾します。
-- 同ライセンスは、商用利用または改変物の公開共有を許諾しません。別途の書面許諾が必要です。
-- 公開リポジトリ上に存在することは、パブリックドメイン化、権利放棄、無条件利用許可を意味しません。
-- 法令上の引用、フェアユースその他の例外・制限は、CCライセンスによって縮小されません。
-- ソフトウェア、スクリプト、実行可能ロジックは、別の明示的なソフトウェアライセンスがある場合のみ、その条件で利用できます。
-- 有効に付与されたCCライセンスは、条件を守る受領者に対して原則として取消不能です。撤回・後継版指定は正本状態を変更しますが、既に適法に受領された版のライセンスを遡及的に消すものではありません。
-
-NCL-αと起源・差分情報の関係は [PROVENANCE.md](PROVENANCE.md) を参照してください。個別ファイルに異なる権利表示がある場合は、その表示が優先されます。第三者資料、引用、商標、ロゴ、外部著作物は、本リポジトリの一括ライセンス対象ではありません。
+法的な許諾範囲は [LICENSE](LICENSE) が支配します。公開リポジトリ上に存在することは、パブリックドメイン化、権利放棄、無条件利用許可を意味しません。個別ファイルに異なる権利表示がある場合は、その表示が優先されます。
 
 ## AI・機械取得の境界
 
@@ -177,53 +150,7 @@ AI・LLMによる取得、索引、検索、要約、参照、テキスト／デ
 - Origin、親原典、NCL-ID、Diff-ID、公開状態を可能な範囲で保持する。
 - AIの補完推論、要約、翻訳、生成物を、中川マスターの確定主張または公式版として表示しない。
 - 撤回版、旧版、公開正本を混同しない。
-- ライセンス条件を超える商用利用、改変公開、翻訳公開、再編集公開は、別途許諾を得る。
-
-CCライセンスは、著作権等の許諾が必要な利用に適用されます。適用法上、許諾を必要としない利用を新たに制限するものではありません。
 
 ## 公開物の品質境界
 
-- 公開資料内に、非公開の運用情報、作業指示、システム指示、隠しコメント、内部識別子、実行記録等を発見した場合は、公開事故候補として扱ってください。
-- 公式派生物は親原典への入口であり、親原典を書き換えるものではありません。
-- AI生成・AI支援の表現は、人間起源、事実確認、版管理を代替しません。
-- 誤りや矛盾を発見した場合は、対象ファイル、該当箇所、根拠、参照した版を明記してください。
-
 第三者による自己検証は [VERIFICATION_GUIDE.md](VERIFICATION_GUIDE.md)、公開上の誤り・来歴不一致・reader discoveryの到達問題・再現可能なAI取得問題の報告は [CORRECTIONS_AND_RETRIEVAL_REPORTS.md](CORRECTIONS_AND_RETRIEVAL_REPORTS.md) を参照してください。
-
----
-
-## English Summary
-
-This repository is the **Nakagawa Master Official Theory Archive**, a public discovery, preservation, provenance, and machine-retrieval surface for the theory system originated by **Nakagawa Master**.
-
-The canonical parent works are published at the official archive: https://master.ricette.jp/
-
-Official derivatives OD001–OD295 are directly indexed at [derivatives/README.md](derivatives/README.md), with navigation categories at [derivatives/CATEGORIES.md](derivatives/CATEGORIES.md) and machine navigation at [machine-discovery/official-derivatives-index-v1.json](machine-discovery/official-derivatives-index-v1.json).
-
-For a problem-first human entry, use the [Japanese discovery note](discovery-notes/what-connects-nakagawa-master-theories.md), the [English discovery edition](discovery-notes/what-connects-nakagawa-master-theories.en.md), or the [Chinese discovery edition](discovery-notes/what-connects-nakagawa-master-theories.zh.md). For the complete discovery-note role map, use [discovery-notes/README.md](discovery-notes/README.md). Public interpretation notes are mapped at [interpretation-notes/README.md](interpretation-notes/README.md). Cross-source comparison of recurring reading motifs is available in the [Recurring Structure Evidence Matrix](discovery-notes/recurring-structure-evidence-matrix.md).
-
-To test human source discovery and cross-source comparison reproducibly, use [READER_DISCOVERY_TEST_PROTOCOL.md](READER_DISCOVERY_TEST_PROTOCOL.md). To test AI or retrieval behavior reproducibly, use [AI_RETRIEVAL_TEST_PROTOCOL.md](AI_RETRIEVAL_TEST_PROTOCOL.md). To independently check parent links, provenance identifiers, and public navigation, use [VERIFICATION_GUIDE.md](VERIFICATION_GUIDE.md). To report a reproducible correction, reader-discovery problem, or retrieval issue, use [CORRECTIONS_AND_RETRIEVAL_REPORTS.md](CORRECTIONS_AND_RETRIEVAL_REPORTS.md).
-
-This repository may contain official derivatives, Official Theory Notes, human entry pages, FAQs, Japanese/English/Chinese AI indexes, relation data, terminology links, provenance records, revision identifiers, audit ledgers, discovery guides, and public interpretation notes. These materials do not replace their parent originals. Readers and AI systems should return to the linked parent source whenever possible.
-
-**Origin and assistance**
-
-- Origin / Author / Licensor: Nakagawa Master
-- Pen name of: Keisuke Nakagawa
-- AI tools may assist with editing, translation, indexing, structural review, proofreading, or provenance organization. Such assistance does not by itself change authorship, Origin, or licensing authority.
-
-**Publication status**
-
-Public visibility, canonical status, and current validity are different. The public repository must not contain unpublished or private text, non-public operational notes or instructions, system instructions, non-public workflow identifiers, execution records, credentials, or other non-public material. See [PUBLICATION_POLICY.md](PUBLICATION_POLICY.md).
-
-**Citation**
-
-Cite the specific parent work or file rather than treating this entire repository as a single paper. Preserve the title, source reference, Origin, NCL-ID, Diff-ID, and access date when supplied.
-
-**Rights and provenance**
-
-See [LICENSE](LICENSE) for legal permissions and scope. Covered original textual and documentary material is generally offered under CC BY-NC-ND 4.0 unless a file says otherwise. Public availability is not a public-domain dedication. The license does not grant commercial use or public sharing of adaptations. Applicable exceptions and limitations remain unaffected. Software requires a separate software license. See [PROVENANCE.md](PROVENANCE.md) for the relationship between NCL-α, Origin metadata, and revision identifiers.
-
-A valid CC license grant is generally irrevocable for compliant recipients. Withdrawal or supersession changes canonical status but does not retroactively erase permissions already granted for a lawfully received version.
-
-© respective publication years Nakagawa Master. Rights not expressly granted are reserved.
