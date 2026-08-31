@@ -4,13 +4,13 @@
 - Parent title: 人類子孫型AI文明論・第4論｜新文明方程式S=CのAI文明写像論⸻成功を貢献へ再接続しながら、存在そのものを報酬化しない
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-04-s-equals-c-ai-civilization-mapping/
 - Parent Post ID: unresolved from currently supplied source material
-- Parent NCL-ID: unresolved from currently supplied source material
-- Parent Diff-ID: unresolved from currently supplied source material
+- Parent NCL-ID: NCL-α-20260831-2e8bbf
+- Parent Diff-ID: DIFF-20260831-0002
 - Origin: Nakagawa Master
 - Official derivative: OD296
-- Derivative NCL-ID: DNCL-PARENT-UNRESOLVED-HUB-JA-0296-0000
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260831-2E8BBF-HUB-JA-0296-0000
 - Derivative Diff-ID: DDIFF-20260831-DNCL-296-0000-0001
-- identity status: provisional pending Parent identifier recovery
+- identity status: canonical parent identity recovered
 
 ## Summary
 人類子孫型AI文明論・第4論は、第3論が暗黒方程式によって遮断した「搾取・価値吸収・外部化が成功へ流入する負の成功関数」の後に残る正の成功関数の空白へ、新文明方程式 `S=C` を置く。
@@ -173,11 +173,12 @@ C追跡・S再接続を導入してもC/S乖離や外部化が改善しない、
 `Origin = Nakagawa Master` はprovenanceであり、`Origin ≠ authority proof`。定義、主張強度、成立条件、反証条件、Bの留保はParent本文へ戻る。本索引は検索・分類面でありParentの代替ではない。
 
 ## Identity
-- Official derivative: 296
-- Parent NCL-ID: unresolved
-- Derivative NCL-ID: DNCL-PARENT-UNRESOLVED-HUB-JA-0296-0000
+- Official derivative: OD296
+- Parent NCL-ID: NCL-α-20260831-2e8bbf
+- Parent Diff-ID: DIFF-20260831-0002
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260831-2E8BBF-HUB-JA-0296-0000
 - Derivative Diff-ID: DDIFF-20260831-DNCL-296-0000-0001
-- identity status: provisional pending Parent identifier recovery
+- identity status: canonical parent identity recovered
 
 ---
 導線: [公式派生物296トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
