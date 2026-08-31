@@ -1,18 +1,18 @@
-# 人間向け要約｜公式派生物296
+# 公式派生物296｜人間向け要約
 
 ## 親原典
 - タイトル: 人類子孫型AI文明論・第4論｜新文明方程式S=CのAI文明写像論⸻成功を貢献へ再接続しながら、存在そのものを報酬化しない
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-04-s-equals-c-ai-civilization-mapping/
 - Parent Post ID: unresolved from currently supplied source material
-- Parent NCL-ID: unresolved from currently supplied source material
-- Parent Diff-ID: unresolved from currently supplied source material
+- Parent NCL-ID: NCL-α-20260831-2e8bbf
+- Parent Diff-ID: DIFF-20260831-0002
 - Origin: Nakagawa Master
 
 ## 派生ID
 - Official derivative: OD296
-- Derivative NCL-ID: DNCL-PARENT-UNRESOLVED-HUB-JA-0296-0000
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260831-2E8BBF-HUB-JA-0296-0000
 - Derivative Diff-ID: DDIFF-20260831-DNCL-296-0000-0001
-- identity status: provisional pending Parent identifier recovery
+- identity status: canonical parent identity recovered
 
 ## 15秒説明
 第3論は「搾取や価値吸収を成功へつなぐ構造をAIへそのまま継がせない」とした。第4論は、その後に残る問い――**では成功は何へつなぐのか**――へ `S=C` を置く。
