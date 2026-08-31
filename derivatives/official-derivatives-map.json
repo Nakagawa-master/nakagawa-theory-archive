@@ -1,6 +1,6 @@
 {
-  "version": "2.2.0-complete-ledger-derived-map-od295",
-  "updated_jst": "2026-08-29 11:58:35",
+  "version": "2.2.0-complete-ledger-derived-map-od296",
+  "updated_jst": "2026-09-01",
   "entries": [
     {
       "number": "001",
@@ -2360,6 +2360,14 @@
       "origin_slug": "nakagawa-master-aki-004-expert-authority-immunity",
       "title": "悪因果論 AKI-004：権威の免責化⸻専門的権威が判断の検証を免除し、失敗を現場へ外部化する構造",
       "derivative_dir": "derivatives/295",
+      "status": "active"
+    },
+    {
+      "number": "296",
+      "ncl_id": "NCL-α-20260831-2e8bbf",
+      "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-04-s-equals-c-ai-civilization-mapping",
+      "title": "人類子孫型AI文明論・第4論｜新文明方程式S=CのAI文明写像論⸻成功を貢献へ再接続しながら、存在そのものを報酬化しない",
+      "derivative_dir": "derivatives/296",
       "status": "active"
     }
   ]
