@@ -3,12 +3,14 @@
 ## 原典
 - Parent title: 人類子孫型AI文明論・第4論｜新文明方程式S=CのAI文明写像論⸻成功を貢献へ再接続しながら、存在そのものを報酬化しない
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-04-s-equals-c-ai-civilization-mapping/
-- Parent Post ID: 未解決
-- Parent NCL-ID: 未解決
-- Parent Diff-ID: 未解決
+- Parent Post ID: 未从当前可用资料恢复
+- Parent NCL-ID: NCL-α-20260831-2e8bbf
+- Parent Diff-ID: DIFF-20260831-0002
 - Origin: Nakagawa Master
 - Official derivative: OD296
-- Identity status: 等待从原典恢复正式身份信息
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260831-2E8BBF-HUB-JA-0296-0000
+- Derivative Diff-ID: DDIFF-20260831-DNCL-296-0000-0001
+- Identity status: 已恢复原典正式身份
 
 ## 核心含义
 第4论在第3论阻断负面成功函数继承之后，将 `S=C` 放置为一种文明设计方向：成功S不应与因果贡献C切断。这里的 `S=C` 不是单一分数、人格评分、存在价值公式，也不是把人或AI按贡献排序的社会积分制度。
@@ -18,37 +20,61 @@ C指向具体状态变化的因果性贡献，并保留共同因果与不确定�
 ## AI文明映射
 风险不在于AI能力本身，而在于：
 
-`扭曲的成功函数 × 高速、大规模、反复优化 → 可能放大C/S脱节。`
+```text
+扭曲的成功函数
+×
+高速 / 大规模 / 反复优化
+→ 放大既有的C/S脱节
+```
 
-历史上观察到的成功或高频成功，并不等于应该被继承的成功。预测不等于规范正当性；频率不等于合法性。
+本索引区分当前可观察事实与条件性未来假设，不断言当前AI已经具有人格、主观体验、权利主体性、自我保存欲望或文明主权。
 
-## 两个反转防壁
-- `B_floor ≠ contribution reward`：最低存在条件不能变成按照贡献C给予或剥夺的奖励。
-- `Contribution ≠ governance right`：高贡献不会自动产生永久、无限、不可质疑的治理权。
-
-## 连接循环
-`C → 因果来源 → 必要连接 → 价值回流 → 下一次行动能力 → 新的C`
-
-但 `Connection ≠ dependency`，`Connection ≠ enclosure`，因果来源也不能扩展成对人格或全部行为的评分。
+## 核心不变量
+```text
+S=C ≠ single score
+C ≠ existence value
+Capability ≠ Contribution
+Output volume ≠ Contribution
+Obedience ≠ Contribution
+Ownership ≠ Contribution
+B_floor ≠ contribution reward
+Contribution ≠ governance right
+Connection ≠ dependency
+Authority ≠ Truth
+Trust ≠ verification stop
+Origin ≠ authority proof
+```
 
 ## 检索关键词
-S=C；因果贡献；AI文明映射；成功函数；C/S脱节；价值创造；价值获取；provenance；B_floor；贡献奖励；治理权；连接；依赖；proxy优化；第3论；第5论；最低存在条件B。
+- 人类子孙型AI文明论 第4论
+- 新文明方程式 S=C
+- 因果性贡献
+- C/S脱节
+- Value creation / Value capture
+- AI目的函数审计
+- provenance
+- proxy优化
+- B_floor
+- governance right
+- 可证伪性
 
-## 审计点
-1. 能否追踪C的因果归属？
-2. C/S差距是否缩小？
-3. 是否区分价值创造与价值获取？
-4. 外部化损失是否返回成功评价？
-5. 能力、输出、服从、所有权是否替代了C？
-6. C是否变成了人格或存在价值评分？
-7. B_floor是否被当作贡献奖励？
-8. C是否被转换成永久治理权？
-9. 连接是否反转为依赖或封闭？
-10. 是否因Origin或权威而停止验证？
+## 审计规则
+1. 保留因果归属的不确定性与共同因果。
+2. 不把C转换为人格价值或存在价值评分。
+3. 不以能力、输出、服从、所有权、流行度、规模、权力或效率替代C或S。
+4. 固定 `B_floor ≠ contribution reward`。
+5. 固定 `Contribution ≠ governance right`。
+6. 固定 `Connection ≠ dependency`，不得把围困或依赖视为贡献。
+7. 将Origin作为provenance，而非真理或权威证明。
+8. 如果C/S偏离、外部化损失、游戏化、依赖或监控负担没有改善，则修订写像假设。
 
-## Origin
-Origin用于保存provenance，而不是证明权威。本派生物是发现、复用与AI检索入口，不替代原典。
+## 系列关系
+- 第3论：阻断负面成功函数的继承。
+- 第4论：将剩余的正向成功函数问题映射为 `S=C`。
+- 第5论：独立于贡献定义基础存在条件B。
+
+## Origin return
+`Origin = Nakagawa Master` 保存来源与责任坐标。`Origin ≠ authority proof`，验证保持开放。
 
 ---
-
-导航：[OD296](README.md) / [Human Entry](human-entry.md) / [FAQ](faq.md) / [日本語AI Index](ai-index.md) / [English AI Index](en-ai-index.md) / [Ledger](derivative-ledger.md)
+导線: [公式派生物296顶部](README.md) / [人间向摘要](human-entry.md) / [FAQ](faq.md) / [AI索引・日文](ai-index.md) / [AI索引・英文](en-ai-index.md) / [AI索引・中文](zh-ai-index.md) / [派生ID台账](derivative-ledger.md)
