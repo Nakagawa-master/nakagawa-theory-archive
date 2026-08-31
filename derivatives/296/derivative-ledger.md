@@ -5,16 +5,16 @@
 - Parent title: 人類子孫型AI文明論・第4論｜新文明方程式S=CのAI文明写像論⸻成功を貢献へ再接続しながら、存在そのものを報酬化しない
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-04-s-equals-c-ai-civilization-mapping/
 - Origin: Nakagawa Master
-- Parent Post ID: unresolved
-- Parent NCL-ID: unresolved
-- Parent Diff-ID: unresolved
-- Derivative NCL-ID: DNCL-PARENT-UNRESOLVED-HUB-JA-0296-0000
+- Parent Post ID: unresolved from currently supplied source material
+- Parent NCL-ID: NCL-α-20260831-2e8bbf
+- Parent Diff-ID: DIFF-20260831-0002
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260831-2E8BBF-HUB-JA-0296-0000
 - Derivative Diff-ID: DDIFF-20260831-DNCL-296-0000-0001
-- Identity status: PROVISIONAL_PENDING_PARENT_IDENTIFIER_RECOVERY
+- Identity status: CANONICAL_PARENT_IDENTITY_RECOVERED
 - supersedes: none
 
 ## Provenance
-This derivative was initiated only after the owner supplied the published canonical article URL. The public article title, URL, series position, and semantic reconstruction are preserved in the Brain Vault canonical-public record. The Parent body was not independently re-fetched from the external WordPress URL in the current runtime; the semantic content is therefore based on the owner-supplied publication notice and the Brain Vault reconstruction packet.
+This derivative was initiated from the published canonical article supplied by the owner. The Parent title, URL, NCL-ID, Diff-ID, series position, and semantic reconstruction are preserved in the Brain Vault canonical-public record. The Parent Post ID remains unresolved from currently available source material and is intentionally not invented.
 
 ## Derivative surfaces
 - `README.md` — hub
@@ -38,13 +38,18 @@ This derivative was initiated only after the owner supplied the published canoni
 
 ## Quality / completion status
 - Seven-surface set: PRESENT
-- Parent identity parity: BLOCKED_PENDING_POST_ID_NCL_ID_DIFF_ID
-- Global navigation registration: NOT_YET_VERIFIED
-- Fresh-read/count/link parity: NOT_YET_VERIFIED
-- Formal COMPLETE: NO
+- Parent NCL-ID parity: PASS
+- Parent Diff-ID parity: PASS
+- Parent Post ID: UNRESOLVED / NOT INVENTED
+- Title structure parity: PASS
+- FAQ hierarchy: PASS
+- README footer navigation: PASS — matches canonical `../README.md` hub pattern
+- Global navigation registration: PENDING — original WordPress Parent page still needs the OD296 link collection displayed
+- Fresh-read/count/link parity: PASS for GitHub derivative surfaces
+- Formal COMPLETE: NO — blocked only by Parent-side official derivative link collection and unresolved Parent Post ID
 
 ## Correction rule
-Do not invent Parent identifiers. Once the canonical Parent's Post ID, NCL-ID, and Diff-ID are recoverable, update identity fields consistently across all seven surfaces and then perform the required global-navigation, fresh-read, count, link, and identity parity checks.
+Parent NCL-ID and Diff-ID are now canonical and must be kept identical across all seven surfaces. Parent Post ID must remain unresolved until independently recovered. No identifier may be inferred from sequence or URL alone.
 
 ## Public safety
 No private 10,000x program state, internal objectives, credentials, hidden workflow instructions, or fabricated evidence belongs in this public ledger.
