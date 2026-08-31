@@ -4,18 +4,18 @@
 - Parent title: 人類子孫型AI文明論・第4論｜新文明方程式S=CのAI文明写像論⸻成功を貢献へ再接続しながら、存在そのものを報酬化しない
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-04-s-equals-c-ai-civilization-mapping/
 - Parent Post ID: unresolved from currently supplied source material
-- Parent NCL-ID: unresolved from currently supplied source material
-- Parent Diff-ID: unresolved from currently supplied source material
+- Parent NCL-ID: NCL-α-20260831-2e8bbf
+- Parent Diff-ID: DIFF-20260831-0002
 - Origin: Nakagawa Master
 
 ## 派生ID
 - Official derivative: OD296
-- Derivative NCL-ID: DNCL-PARENT-UNRESOLVED-HUB-JA-0296-0000
+- Derivative NCL-ID: DNCL-NCL-ALPHA-20260831-2E8BBF-HUB-JA-0296-0000
 - Derivative Diff-ID: DDIFF-20260831-DNCL-296-0000-0001
-- identity status: provisional until Parent NCL-ID / Diff-ID are recovered from the canonical Parent
+- identity status: canonical parent identity recovered
 - supersedes: none
 
-> **来歴注意:** Parent本文・タイトル・URL・Originは確認済みだが、Parent Post ID / NCL-ID / Diff-IDは現在取得できていない。存在しないIDを推測生成せず、取得後にlineageのみ補正する。本文の意味内容をこの暫定identityで上書きしない。
+> **来歴:** Parent本文・タイトル・URL・Originに加え、Parent NCL-ID / Diff-IDを確認済み。派生IDはParent NCL-IDを親として再接続されている。
 
 ## 位置づけ
 本派生物は、人類子孫型AI文明論・第4論として、第3論「暗黒方程式と悪因果継承阻止」が遮断した負の成功関数の後に残る、正の成功関数の空白を閉じる理論を整理する。
@@ -205,4 +205,4 @@ S=Cを単一貢献点へ縮約する、能力・出力量・利益・人気・�
 Originは本論の発生点、責任、因果provenance、再翻訳時の照応座標として保存する。ただしOriginは理論妥当性の証明ではなく、検証停止の理由にもならない。定義・主張強度・成立条件・反証条件の最終確認はParent本文へ戻る。
 
 ---
-導線: [公式派生物296トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
