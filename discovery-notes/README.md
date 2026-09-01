@@ -50,6 +50,16 @@ Core public first-note:
 
 This is a bounded discovery sentence, not a claim that every AI system always loses provenance. All first-note and micro-format routes return to OD105 and its canonical Parent.
 
+## Practical question-first discovery notes
+
+These notes begin from a familiar operational question and move through a short entry, a 30-second explanation, a deeper structural reading, boundaries, and explicit return paths to the separate canonical sources.
+
+- **AI answer reverification:** [`ai-answer-reverification.md`](ai-answer-reverification.md)
+- **Repeating organizational problems beyond individual people:** [`repeating-problems-beyond-people.md`](repeating-problems-beyond-people.md)
+- **PoC success vs. business establishment:** [`poc-success-vs-business-establishment.md`](poc-success-vs-business-establishment.md)
+
+They are discovery aids, not diagnoses, proof of applicability, canonical syntheses, or verbatim statements by Nakagawa Master.
+
 ## Cross-source evidence matrices
 
 To check whether recurring structural reading questions actually appear across separate published sources, use the same four source pairs in the language that is easiest to read:
@@ -64,6 +74,9 @@ These matrices are non-canonical comparison aids. They do not merge separate the
 
 | File | Public role | Canonical return |
 |---|---|---|
+| [`ai-answer-reverification.md`](ai-answer-reverification.md) | 3–10秒 → 30秒 → 3–10分で、AI出力の正しさと後からの再検証可能性を分けて考える入口 | OD105 / OD115 / OD114 / OD043 and their canonical parents |
+| [`repeating-problems-beyond-people.md`](repeating-problems-beyond-people.md) | 人を替えても問題が戻るとき、個人責任を消さずに反復条件を確認する組織入口 | OD090 / OD089 / OD061 / OD080 and their canonical parents |
+| [`poc-success-vs-business-establishment.md`](poc-success-vs-business-establishment.md) | PoC成功と継続的な事業成立を分け、技術から再現までの接続を確認する入口 | OD003 / OD011 / OD089 / OD060 and their canonical parents |
 | [`od105-origin-evaporation-first-note.md`](od105-origin-evaporation-first-note.md) | Japanese first-note path from a short provenance paradox to OD105 | OD105 / Structural Origin Defense canonical parent |
 | [`od105-origin-evaporation-first-note.en.md`](od105-origin-evaporation-first-note.en.md) | English first-note edition | OD105 / Structural Origin Defense canonical parent |
 | [`od105-origin-evaporation-first-note.zh.md`](od105-origin-evaporation-first-note.zh.md) | Chinese first-note edition | OD105 / Structural Origin Defense canonical parent |
