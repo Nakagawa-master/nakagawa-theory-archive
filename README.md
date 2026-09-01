@@ -29,15 +29,15 @@ AI、組織、市場、制度、文明、未来まで対象は変わりますが
 
 - **自分の問題から入る:** [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
 - **実務上の問題から最初のsourceを選ぶ:** [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
-- **OD001–OD295を全件見る:** [公式派生物 全件入口](derivatives/README.md)
+- **OD001–OD296を全件見る:** [公式派生物 全件入口](derivatives/README.md)
 - **自分で来歴・Parent・公開配線を確かめる:** [Verification Guide](VERIFICATION_GUIDE.md)
 - **誤り・原典到達の分かりにくさ・再現可能なAI取得問題を報告する:** [Corrections, Retrieval, and Reader Discovery Reports](CORRECTIONS_AND_RETRIEVAL_REPORTS.md)
 
 ## 公開範囲を30秒で見る
 
-現在の公開ナビゲーションでは、`OD001`–`OD295`の295件を重複0・未割当0で配置しています。これはcanonical taxonomyではなく、第三者が迷わず到達するための公開分類です。
+現在の公開ナビゲーションでは、`OD001`–`OD296`の296件を重複0・未割当0で配置しています。これはcanonical taxonomyではなく、第三者が迷わず到達するための公開分類です。
 
-明示シリーズ・群として配置されている17のnavigation groupには合計145件があり、残る150件は意味を無理に固定しない「横断・単独理論／その他」に置かれています。
+明示シリーズ・群として配置されている17のnavigation groupには合計146件があり、残る150件は意味を無理に固定しない「横断・単独理論／その他」に置かれています。
 
 例として、公開分類上は次の広がりがあります。
 
@@ -76,11 +76,11 @@ AI、組織、市場、制度、文明、未来まで対象は変わりますが
 
 これらのテストは、理論の正しさ、個別状況への自動適用、人気、権威、AIによる支持、読者の信頼・尊敬・敬愛を測るものではありません。公開sourceへ到達し、区別・来歴・原典回帰・bounded practitioner start・first-note depth progression・cross-source comparisonを確認できるかを観測します。
 
-## 公式派生物295件へ入る
+## 公式派生物296件へ入る
 
-公式派生物 `OD001`–`OD295` は、親原典へ戻れる**公開接続面**として295件を収録しています。番号が分かっている場合、テーマから探す場合、AI・機械取得する場合で入口を分けています。
+公式派生物 `OD001`–`OD296` は、親原典へ戻れる**公開接続面**として296件を収録しています。番号が分かっている場合、テーマから探す場合、AI・機械取得する場合で入口を分けています。
 
-- **全件を番号順に見る:** [OD001–OD295 全件入口](derivatives/README.md)
+- **全件を番号順に見る:** [OD001–OD296 全件入口](derivatives/README.md)
 - **テーマ・シリーズから探す:** [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
 - **Parent / NCL-ID / titleを照合する:** [Official Derivatives Map](derivatives/official-derivatives-map.json)
 - **AI・検索・RAG向けmachine navigation:** [Official Derivatives Machine Index](machine-discovery/official-derivatives-index-v1.json)
