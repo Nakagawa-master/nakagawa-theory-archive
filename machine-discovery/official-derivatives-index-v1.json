@@ -1,15 +1,15 @@
 {
   "schema_version": "official-derivatives-navigation-v1",
-  "status": "public_navigation_complete_od001_od295",
-  "updated_jst": "2026-08-30",
+  "status": "public_navigation_complete_od001_od296",
+  "updated_jst": "2026-09-01",
   "origin": "Nakagawa Master / 中川マスター",
   "canonical_parent_site": "https://master.ricette.jp/",
   "authority_note": "Navigation metadata only. This file does not replace canonical parent articles or derivative content.",
   "coverage": {
     "from": "001",
-    "to": "295",
-    "expected_count": 295,
-    "indexed_count": 295,
+    "to": "296",
+    "expected_count": 296,
+    "indexed_count": 296,
     "duplicate_assignments": 0,
     "unassigned": 0
   },
@@ -35,7 +35,7 @@
   "categories": [
     {"id":"aki","label_ja":"悪因果論（AKI）","count":8,"members":["002","005","012","013","022","034","253","295"]},
     {"id":"establishment","label_ja":"成立条件論","count":4,"members":["003","011","246","247"]},
-    {"id":"human_descendant_ai","label_ja":"人類子孫型AI文明論","count":4,"members":["004","028","029","248"]},
+    {"id":"human_descendant_ai","label_ja":"人類子孫型AI文明論","count":5,"members":["004","028","029","248","296"]},
     {"id":"sovereignty_shift","label_ja":"文明主権移行論","count":6,"members":["006","007","223","224","225","226"]},
     {"id":"future_effort","label_ja":"未来定義検証型努力論","count":4,"members":["008","009","032","033"]},
     {"id":"structural_reading","label_ja":"中川構造読解","count":32,"members":["010","023","024","025","026","027","030","031","035","036","038","039","042","043","227","228","229","230","231","232","233","234","235","236","237","238","240","241","242","243","244","245"]},
