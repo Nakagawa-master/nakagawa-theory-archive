@@ -12,9 +12,9 @@ Public repository: https://github.com/Nakagawa-master/nakagawa-theory-archive
 
 ## Core navigation
 
-- [Official derivatives OD001–OD295 all-number index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md): direct human navigation to every official derivative hub.
-- [Official derivatives category/series navigation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/CATEGORIES.md): public discovery taxonomy covering OD001–OD295 exactly once; not a replacement for canonical theory taxonomy.
-- [Official derivatives Parent/NCL/title map](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json): identity map for OD001–OD295.
+- [Official derivatives OD001–OD296 all-number index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md): direct human navigation to every official derivative hub.
+- [Official derivatives category/series navigation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/CATEGORIES.md): public discovery taxonomy covering OD001–OD296 exactly once; not a replacement for canonical theory taxonomy.
+- [Official derivatives Parent/NCL/title map](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json): identity map for OD001–OD296.
 - [Official derivatives machine navigation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/official-derivatives-index-v1.json): number, directory, seven-surface pattern, and navigation-category data for retrieval systems.
 - [Machine discovery role map](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/README.md): explains which machine-discovery file to use for OD lookup, multilingual plain-language problem matching, long-horizon questions, cross-source motif comparison, topic-specific reference cards, and public identity metadata.
 - [Problem-to-theory Origin Index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json): non-canonical discovery index mapping commonly expressed English / Japanese / Chinese problems to concrete canonical starting points while preserving Origin and available provenance identifiers.
@@ -51,9 +51,9 @@ Discovery sentence: `AI can preserve an idea while erasing the path back to wher
 
 The micro-format pack is media-adaptation copy, not a claim that audio/video/carousel assets have been externally distributed or produced.
 
-## Official derivatives collection (OD001–OD295)
+## Official derivatives collection (OD001–OD296)
 
-The repository contains 295 official derivative hubs, numbered `001` through `295`. Each standard derivative directory exposes seven public surfaces:
+The repository contains 296 official derivative hubs, numbered `001` through `296`. Each standard derivative directory exposes seven public surfaces:
 
 - `README.md` — hub and Parent return
 - `human-entry.md` — human-oriented entry
