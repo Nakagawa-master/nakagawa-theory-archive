@@ -32,6 +32,8 @@ The first OD297 production pass was corrected because the following were incompl
 
 The correction rebuilds the seven-surface set against the existing canonical production standard rather than creating a new OD number.
 
+The public Parent identity map was then corrected to exact Parent NCL-ID `NCL-α-20260903-85adfa`, while preserving exact origin slug `nakagawa-master-integrated-future-debt-theory` as the fallback identity route.
+
 ## Derivative surfaces
 - `README.md` — full structural hub
 - `human-entry.md` — human-oriented entry with short explanation, two directions, amplification / damping, irreversibility, audit questions, and Parent return
@@ -99,6 +101,21 @@ The corrected seven surfaces use the established literal footer-navigation patte
 
 The hub uses the corresponding all-derivatives top link `../README.md`.
 
+## Parent-side link collection route
+The canonical Parent-side renderer resolves official derivatives by exact Parent NCL-ID first and exact origin slug as fallback. OD297 is registered in the public map with both:
+
+```yaml
+number: "297"
+ncl_id: NCL-α-20260903-85adfa
+origin_slug: nakagawa-master-integrated-future-debt-theory
+derivative_dir: derivatives/297
+status: active
+```
+
+The existing public-map sync route makes this map available to the Parent-side official-derivative renderer. This correction does not require editing the canonical article body itself.
+
+At correction close, the canonical Parent URL could not be independently fetched from the current verification environment because the external fetch path returned a cache miss. Therefore **registration and render routing are complete, while live visual rendering is not falsely recorded as independently observed**.
+
 ## Public navigation status
 - Seven-surface set: PASS
 - Parent title / URL / Origin parity: PASS
@@ -119,9 +136,11 @@ The hub uses the corresponding all-derivatives top link `../README.md`.
 - Category assignment: PASS — exactly once in cross-domain / standalone navigation
 - Machine navigation: PASS — OD001–OD297 / count 297
 - Root range / count entrances: PASS
-- Parent identity public map: CORRECTION_REQUIRED_TO_EXACT_NCL_AT_THIS_LEDGER_WRITE
-- Parent-side official derivative link collection: LIVE_VERIFICATION_PENDING_AFTER_MAP_CORRECTION
-- Formal COMPLETE after correction: PENDING_MAP_AND_LIVE_PARENT_DISPLAY_VERIFICATION
+- Parent identity public map: PASS — exact NCL + exact origin slug
+- Parent-side official derivative link collection registration: PASS — exact-NCL-first renderer route
+- Parent-side live visual observation: UNVERIFIED — external fetch cache miss; not fabricated
+- Fresh-read identity / footer / semantic parity: PASS
+- Formal repository-side correction complete: YES
 
 ## Correction rule
 The Parent NCL-ID and Diff-ID above must remain identical across all seven OD297 surfaces and all active Parent-identity metadata. Parent Post ID and derivative identifiers must not be inferred or fabricated.
