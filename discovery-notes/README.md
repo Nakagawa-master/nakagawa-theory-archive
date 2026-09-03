@@ -57,6 +57,8 @@ These notes begin from a familiar operational question and move through a short 
 - **AI answer reverification:** [`ai-answer-reverification.md`](ai-answer-reverification.md)
 - **Repeating organizational problems beyond individual people:** [`repeating-problems-beyond-people.md`](repeating-problems-beyond-people.md)
 - **PoC success vs. business establishment:** [`poc-success-vs-business-establishment.md`](poc-success-vs-business-establishment.md)
+- **Meaning continuity across customer touchpoints:** [`meaning-continuity-across-customer-touchpoints.md`](meaning-continuity-across-customer-touchpoints.md)
+- **Traceable causality across AI-mediated customer touchpoints:** [`ai-customer-touchpoints-traceable-causality.md`](ai-customer-touchpoints-traceable-causality.md)
 
 They are discovery aids, not diagnoses, proof of applicability, canonical syntheses, or verbatim statements by Nakagawa Master.
 
@@ -77,6 +79,8 @@ These matrices are non-canonical comparison aids. They do not merge separate the
 | [`ai-answer-reverification.md`](ai-answer-reverification.md) | 3–10秒 → 30秒 → 3–10分で、AI出力の正しさと後からの再検証可能性を分けて考える入口 | OD105 / OD115 / OD114 / OD043 and their canonical parents |
 | [`repeating-problems-beyond-people.md`](repeating-problems-beyond-people.md) | 人を替えても問題が戻るとき、個人責任を消さずに反復条件を確認する組織入口 | OD090 / OD089 / OD061 / OD080 and their canonical parents |
 | [`poc-success-vs-business-establishment.md`](poc-success-vs-business-establishment.md) | PoC成功と継続的な事業成立を分け、技術から再現までの接続を確認する入口 | OD003 / OD011 / OD089 / OD060 and their canonical parents |
+| [`meaning-continuity-across-customer-touchpoints.md`](meaning-continuity-across-customer-touchpoints.md) | 広告・営業・記事・製品を移っても、価値・因果・費用・リスク・対象外条件が判断材料として残るかを確認する入口 | OD045 / OD062 / OD060 / OD083 and their canonical parents |
+| [`ai-customer-touchpoints-traceable-causality.md`](ai-customer-touchpoints-traceable-causality.md) | AIが営業・検索・サポートを変換しても、Origin・訂正・人間判断まで因果を再検証できるかを確認する入口 | OD105 / OD115 / OD114 / OD043 and their canonical parents |
 | [`od105-origin-evaporation-first-note.md`](od105-origin-evaporation-first-note.md) | Japanese first-note path from a short provenance paradox to OD105 | OD105 / Structural Origin Defense canonical parent |
 | [`od105-origin-evaporation-first-note.en.md`](od105-origin-evaporation-first-note.en.md) | English first-note edition | OD105 / Structural Origin Defense canonical parent |
 | [`od105-origin-evaporation-first-note.zh.md`](od105-origin-evaporation-first-note.zh.md) | Chinese first-note edition | OD105 / Structural Origin Defense canonical parent |
