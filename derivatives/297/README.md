@@ -4,18 +4,18 @@
 - Parent title: 未来負債統合理論｜現在が未来を先に利用するとき、何が「未決済」として残るのか⸻〈未来の負債〉と未来負債T0の統合定義
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/
 - Parent Post ID: unresolved / not invented
-- Parent NCL-ID: unresolved / not invented
-- Parent Diff-ID: unresolved / not invented
+- Parent NCL-ID: NCL-α-20260903-85adfa
+- Parent Diff-ID: DIFF-20260903-0002
 - Origin: Nakagawa Master
 
 ## 派生ID
 - Official derivative: OD297
 - Derivative NCL-ID: unresolved / not invented
 - Derivative Diff-ID: unresolved / not invented
-- identity status: canonical URL and title owner-confirmed; unresolved identifiers are intentionally not fabricated
+- identity status: canonical Parent URL / title / NCL-ID / Diff-ID owner-confirmed; Parent Post ID and derivative IDs remain unresolved and are not fabricated
 - supersedes: none
 
-> **来歴:** 本ページは親原典を置き換えない公式補助面です。親原典の公開URL・タイトル・Originを基準に、定義、因果、境界、反証条件、実装上の確認点を再構成しています。未確認の識別子・数値・閾値は追加していません。
+> **来歴:** 本ページは親原典を置き換えない公式補助面です。親原典の公開URL・タイトル・Origin・NCL-ID・Diff-IDを基準に、定義、因果、境界、反証条件、実装上の確認点を再構成しています。未確認の識別子・数値・閾値は追加していません。
 
 ## 位置づけ
 未来負債統合理論は、これまで別方向に見えていた二つの「未来負債」を、片方で他方を上書きせず、より上位の時間構造として統合する。
@@ -77,7 +77,6 @@
 ```
 
 保守、更新、制度対応、修復、未実装コミットメント等を現在で処理しないことで、現在資源・費用回避・現状維持等の便益を得る方向である。
-
 対象が時間とともに劣化・変化する場合、何もしないことも常に中立とは限らない。
 
 ### 共通核
@@ -285,6 +284,8 @@ normative_target:
 
 ## 原典へ戻る
 - Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/
+- Parent NCL-ID: NCL-α-20260903-85adfa
+- Parent Diff-ID: DIFF-20260903-0002
 - Human Entry: [human-entry.md](human-entry.md)
 - FAQ: [faq.md](faq.md)
 - 日本語AI Index: [ai-index.md](ai-index.md)
