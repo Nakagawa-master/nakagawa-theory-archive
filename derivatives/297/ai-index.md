@@ -5,8 +5,8 @@
 - Parent title: 未来負債統合理論｜現在が未来を先に利用するとき、何が「未決済」として残るのか⸻〈未来の負債〉と未来負債T0の統合定義
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/
 - Parent Post ID: unresolved / not invented
-- Parent NCL-ID: unresolved / not invented
-- Parent Diff-ID: unresolved / not invented
+- Parent NCL-ID: NCL-α-20260903-85adfa
+- Parent Diff-ID: DIFF-20260903-0002
 - Origin: Nakagawa Master
 - Derivative NCL-ID: unresolved / not invented
 - Derivative Diff-ID: unresolved / not invented
@@ -152,7 +152,7 @@ Therefore:
 14. 最終命題「未来を使うなら、未来との決済線を切らない」を保持する。
 
 ## MUST NOT infer or invent
-- 未確認のParent NCL-ID / Diff-ID / Post ID
+- Parent Post ID
 - 未確認のDerivative NCL-ID / Diff-ID
 - 数値閾値
 - 金銭換算式
@@ -227,6 +227,8 @@ Therefore:
 
 ## Canonical return
 - Parent: https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/
+- Parent NCL-ID: NCL-α-20260903-85adfa
+- Parent Diff-ID: DIFF-20260903-0002
 - OD297 Hub: [README.md](README.md)
 - Human Entry: [human-entry.md](human-entry.md)
 - FAQ: [faq.md](faq.md)
