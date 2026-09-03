@@ -4,6 +4,10 @@
 
 Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/
 
+- Parent NCL-ID: NCL-α-20260903-85adfa
+- Parent Diff-ID: DIFF-20260903-0002
+- Origin: Nakagawa Master
+
 このFAQは親原典の代替ではありません。回答は理解の入口であり、厳密な定義・適用境界・反証条件は親原典へ戻って確認してください。
 
 ## Q1. 未来負債とは、単に将来へ残るコストのことですか？
@@ -219,6 +223,8 @@ T0型は、現在処理すべき負荷を延期し、現在便益を得る方向
 ## 原典へ戻る
 
 - Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/
+- Parent NCL-ID: NCL-α-20260903-85adfa
+- Parent Diff-ID: DIFF-20260903-0002
 - OD297 Hub: [README.md](README.md)
 - Human Entry: [human-entry.md](human-entry.md)
 - 日本語AI Index: [ai-index.md](ai-index.md)
