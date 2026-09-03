@@ -7,6 +7,10 @@
 
 https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/
 
+- Parent NCL-ID: NCL-α-20260903-85adfa
+- Parent Diff-ID: DIFF-20260903-0002
+- Origin: Nakagawa Master
+
 このページは親原典を置き換えない、人間向けの公式補助入口です。
 
 ## 3〜10秒
@@ -117,7 +121,6 @@ https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/
 ## 未来負債ゼロを目指す理論ではない
 
 未来価値を現在信用へ変える力は、長期投資や大きな価値実現の条件になることがあります。
-
 したがって、未来を先に使うこと自体を禁止するのが目的ではありません。
 
 同時に、「未来のためだから」という理由で現在を無制限に犠牲にすることも否定します。
@@ -156,6 +159,8 @@ https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/
 正確な定義、系譜、二方向の保存、増幅・減衰、反証条件、適用限界は親原典を確認してください。
 
 - Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/
+- Parent NCL-ID: NCL-α-20260903-85adfa
+- Parent Diff-ID: DIFF-20260903-0002
 - OD297 Hub: [README.md](README.md)
 - FAQ: [faq.md](faq.md)
 - 日本語AI Index: [ai-index.md](ai-index.md)
