@@ -1,5 +1,5 @@
 {
-  "version": "2.3.0-complete-ledger-derived-map-od297",
+  "version": "2.3.1-od297-parent-identity-corrected",
   "updated_jst": "2026-09-03",
   "entries": [
     {"number":"001","ncl_id":"NCL-α-20251124-e4c70c","origin_slug":"nakagawa-master-nakagawa-os-layer-specification-v1","title":"【Nakagawa OS 正規仕様】L1-L7 レイヤー体系：文明構造とAI構造を統合する世界基準アーキテクチャ [v1.0]","derivative_dir":"derivatives/001","status":"active"},
@@ -298,6 +298,6 @@
     {"number":"294","ncl_id":"NCL-α-20260721-6c91d0","origin_slug":"nakagawa-master-connection-reward-society-integrated-theory-part-2-operational-loop","title":"接続報酬社会統合論・第II部｜価値循環・接続価値会計・構造的司法OS⸻新文明方程式S=Cを実働させる制度閉路","derivative_dir":"derivatives/294","status":"active"},
     {"number":"295","ncl_id":"NCL-α-20260722-10a683","origin_slug":"nakagawa-master-aki-004-expert-authority-immunity","title":"悪因果論 AKI-004：権威の免責化⸻専門的権威が判断の検証を免除し、失敗を現場へ外部化する構造","derivative_dir":"derivatives/295","status":"active"},
     {"number":"296","ncl_id":"NCL-α-20260831-2e8bbf","origin_slug":"nakagawa-master-human-descendant-ai-civilization-theory-04-s-equals-c-ai-civilization-mapping","title":"人類子孫型AI文明論・第4論｜新文明方程式S=CのAI文明写像論⸻成功を貢献へ再接続しながら、存在そのものを報酬化しない","derivative_dir":"derivatives/296","status":"active"},
-    {"number":"297","ncl_id":"UNRESOLVED_NOT_INVENTED","origin_slug":"nakagawa-master-integrated-future-debt-theory","title":"未来負債統合理論｜現在が未来を先に利用するとき、何が「未決済」として残るのか⸻〈未来の負債〉と未来負債T0の統合定義","derivative_dir":"derivatives/297","status":"active"}
+    {"number":"297","ncl_id":"NCL-α-20260903-85adfa","origin_slug":"nakagawa-master-integrated-future-debt-theory","title":"未来負債統合理論｜現在が未来を先に利用するとき、何が「未決済」として残るのか⸻〈未来の負債〉と未来負債T0の統合定義","derivative_dir":"derivatives/297","status":"active"}
   ]
 }
