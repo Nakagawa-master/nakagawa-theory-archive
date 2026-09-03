@@ -7,114 +7,129 @@
 - Parent origin slug: `nakagawa-master-integrated-future-debt-theory`
 - Origin: Nakagawa Master
 - Parent Post ID: unresolved / not invented
-- Parent NCL-ID: unresolved / not invented
-- Parent Diff-ID: unresolved / not invented
+- Parent NCL-ID: NCL-α-20260903-85adfa
+- Parent Diff-ID: DIFF-20260903-0002
 - Derivative NCL-ID: unresolved / not invented
 - Derivative Diff-ID: unresolved / not invented
-- Identity status: CANONICAL_URL_TITLE_ORIGIN_OWNER_CONFIRMED__IDENTIFIERS_UNRESOLVED_NOT_INVENTED
+- Identity status: CANONICAL_PARENT_URL_TITLE_NCL_DIFF_OWNER_CONFIRMED__POST_ID_UNRESOLVED_NOT_INVENTED
 - supersedes: none
 
 ## Provenance
-This official derivative was initiated after the owner explicitly identified the canonical article as published and supplied its canonical URL. The public title, canonical URL, exact origin slug, Origin, complete semantic definition, causal structure, boundaries, refutation conditions, and final proposition were available for faithful derivative production.
+OD297 was initiated from the canonical article explicitly identified by Nakagawa Master as published at the Parent URL above. The Parent title, canonical URL, origin slug, Origin, NCL-ID, Diff-ID, complete semantic definition, two-direction structure, amplification / damping model, irreversibility boundary, falsification conditions, and final proposition are preserved across the official derivative surfaces.
 
-Parent Post ID, Parent NCL-ID, and Parent Diff-ID were not independently recoverable at production time. They are therefore recorded as unresolved rather than inferred or fabricated. The same rule is applied to derivative identifiers that would otherwise depend on unresolved canonical identity data.
+Parent NCL-ID `NCL-α-20260903-85adfa` and Parent Diff-ID `DIFF-20260903-0002` were supplied by the owner after the first OD297 production pass and are now the authoritative Parent identifiers used by this derivative set.
 
-The unresolved Parent NCL-ID is represented in the public identity map by the explicit non-fabricated token `UNRESOLVED_NOT_INVENTED`. This token is not asserted to be the Parent's canonical NCL-ID. Parent-side resolution is registered through exact origin-slug fallback.
+Parent Post ID remains unresolved and is intentionally not inferred from URL, publication date, neighboring posts, or OD sequence. Derivative NCL-ID / Diff-ID are likewise not invented without an independently established derivative-identity assignment.
+
+## Correction history
+### 2026-09-03 — identity and quality correction
+The first OD297 production pass was corrected because the following were incomplete:
+
+- Parent NCL-ID / Diff-ID were not yet registered.
+- footer navigation was missing or non-standard on multiple surfaces.
+- human-entry / FAQ / AI-index surfaces did not meet the established display-structure and information-density floor.
+- Parent-side identity map still used an unresolved NCL placeholder.
+
+The correction rebuilds the seven-surface set against the existing canonical production standard rather than creating a new OD number.
 
 ## Derivative surfaces
-- `README.md` — hub
-- `human-entry.md` — human entry
-- `faq.md` — FAQ
-- `ai-index.md` — Japanese AI index
-- `en-ai-index.md` — English AI index
-- `zh-ai-index.md` — Chinese AI index
-- `derivative-ledger.md` — this provenance ledger
+- `README.md` — full structural hub
+- `human-entry.md` — human-oriented entry with short explanation, two directions, amplification / damping, irreversibility, audit questions, and Parent return
+- `faq.md` — 30-question FAQ with beginner, structural, and audit boundaries
+- `ai-index.md` — Japanese AI / retrieval index
+- `en-ai-index.md` — English AI / retrieval index; not a canonical translation
+- `zh-ai-index.md` — Chinese AI / retrieval index; not a canonical translation
+- `derivative-ledger.md` — this provenance / audit ledger
 
 ## Semantic invariants preserved
 - Future Debt is an unsettled temporal relation, not a synonym for every future cost.
-- The higher-order common structure is `present receipt → unsettled residual → future settlement`.
-- The original direction `future value → present credit` and the T0 direction `present benefit → deferred load → future settlement` remain distinct and are not allowed to overwrite one another.
-- Settlement is not limited to money; it may include realization, fulfillment, maintenance, repair, resource burden, credit correction, reversibility, and future-option preservation.
+- Higher-order core: `present receipt → unsettled residual → future settlement`.
+- Original direction `future value → present credit` and T0 direction `present benefit → deferred load → future settlement` remain distinct.
+- The original direction is not overwritten by T0; T0 is not erased by reducing it to the original direction.
+- Settlement is not limited to money; it can include value realization, fulfillment, maintenance, repair, resource burden, credit correction, reversibility, and future-option preservation.
 - `connection to the future ≠ future debt`.
+- `future prediction ≠ future debt`.
+- `future definition ≠ future debt`.
 - `investment ≠ automatically future debt`.
-- `contractual obligation ≠ automatically future debt`.
+- `ordinary contractual obligation ≠ automatically future debt`.
 - `future debt ≠ irreversibility`.
-- Irreversibility is examined through rising rollback cost, shrinking alternative paths, future option loss, and declining freedom over settlement timing and method.
+- Irreversibility is examined through rising rollback cost, shrinking alternatives, future option loss, and declining freedom over settlement timing / method.
 - Zero future debt is not the normative objective.
 - Present and future are not morally absolutized against one another.
-- Related temporal theories remain separate theories unless their own canonical Parents state otherwise.
-- Counterevidence, refutation, and revision remain open.
+- Related temporal theories remain separate theories.
+- Counterevidence, falsification, and revision remain open.
+- Origin is provenance, not authority proof.
 
-## Global completion evidence
+## Coverage restored in the corrected hub
+- central problem
+- one-sentence definition
+- higher-order common structure
+- two temporal directions
+- preservation of the original Future Debt meaning
+- genealogy of future→present action
+- T0 / temporal-ethics branch
+- present beneficiary / future settlement-side relation
+- invisible affected subjects and assets
+- amplification loop
+- amplification pressures
+- damping vector
+- short / medium / long time development
+- irreversibility / future option loss
+- classification boundary
+- eleven audit questions
+- normative design
+- observation / structural hypothesis / norm separation
+- observable signs
+- state model
+- applicable domains
+- exclusions
+- establishment conditions
+- failure conditions
+- falsification / revision conditions
+- final proposition
+- Origin return
 
-### Seven surfaces
-PASS — all seven OD297 files exist and preserve the same Parent title, Parent URL, Origin, and unresolved-ID boundary.
+## Display / footer quality standard
+The corrected seven surfaces use the established literal footer-navigation pattern:
 
-### All-number navigation
-PASS — `derivatives/README.md` declares OD001–OD297 and 297 official derivatives.
-
-### Category navigation
-PASS — OD297 is assigned exactly once to `横断・単独理論／その他`; total assignment 297, duplicate 0, unassigned 0.
-
-### Parent identity public map
-PASS — `derivatives/official-derivatives-map.json` version `2.3.0-complete-ledger-derived-map-od297` contains OD297 with:
-
-```yaml
-number: "297"
-ncl_id: "UNRESOLVED_NOT_INVENTED"
-origin_slug: "nakagawa-master-integrated-future-debt-theory"
-derivative_dir: "derivatives/297"
-status: "active"
+```text
+---
+導線: [公式派生物297トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
 ```
 
-The map keeps the exact owner-supplied Parent title and does not invent a canonical NCL-ID.
+The hub uses the corresponding all-derivatives top link `../README.md`.
 
-### Parent-side official derivative link collection route
-PASS — REGISTRATION / DELIVERY ROUTE CONFIGURED.
-
-The existing Parent-side MU-plugin resolves by exact NCL-ID first and, if no NCL match exists, by exact WordPress `post_name` equality. OD297's public map entry therefore registers the exact Parent slug `nakagawa-master-integrated-future-debt-theory` for Parent-side derivative rendering.
-
-The existing public-map sync reads:
-
-`https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/derivatives/official-derivatives-map.json`
-
-and is configured with a 300-second TTL. The renderer creates links to the derivative directory, Human Entry, FAQ, Japanese AI Index, English AI Index, and Chinese AI Index.
-
-No direct WordPress content write or runtime-plugin modification was required for OD297.
-
-Live visual observation of the rendered Parent page was not independently obtainable from the current execution environment, so this ledger does **not** claim owner-verified visual display. The placement data and established automatic delivery route are complete.
-
-### Machine navigation
-PASS — `machine-discovery/official-derivatives-index-v1.json` declares OD001–OD297, expected/indexed 297, duplicate 0, unassigned 0.
-
-### Global public range/count entrances
-PASS — root `README.md`, `derivatives/README.md`, `derivatives/CATEGORIES.md`, machine navigation, Parent map, and `llms.txt` all declare or route through OD297 where their role requires a range/count.
-
-### Fresh-read / count / link / identity parity
-PASS — OD297 seven-surface identity, public map entry, all-number navigation, category assignment, machine navigation, root navigation, and LLM navigation were fresh-read after writes.
-
-## Quality / completion status
+## Public navigation status
 - Seven-surface set: PASS
 - Parent title / URL / Origin parity: PASS
-- Parent NCL-ID: UNRESOLVED / NOT INVENTED / KNOWN BOUNDARY
-- Parent Diff-ID: UNRESOLVED / NOT INVENTED / KNOWN BOUNDARY
-- Parent Post ID: UNRESOLVED / NOT INVENTED / KNOWN BOUNDARY
-- Derivative NCL-ID / Diff-ID: UNRESOLVED / NOT INVENTED / KNOWN BOUNDARY
+- Parent NCL-ID parity: PASS — `NCL-α-20260903-85adfa`
+- Parent Diff-ID parity: PASS — `DIFF-20260903-0002`
+- Parent Post ID: UNRESOLVED / NOT INVENTED
+- Derivative NCL-ID / Diff-ID: UNRESOLVED / NOT INVENTED
 - Claim-strength preservation: PASS
 - Two-direction preservation: PASS
-- Refutation / revision boundary: PASS
-- Public third-party editorial safety: PASS
-- All-number navigation: PASS OD001–OD297
-- Category assignment: PASS — exactly once / duplicate 0 / unassigned 0
-- Parent identity public map: PASS — exact slug fallback registered
-- Machine navigation: PASS — 297 indexed
-- Global public range/count entrances: PASS
-- Parent-side official derivative link collection: PASS — public-map sync route registered; live visual observation not independently claimed
-- Fresh-read/count/link/identity parity: PASS
-- Formal COMPLETE: YES
+- Falsification / revision boundary: PASS
+- Footer navigation: PASS — corrected on all seven surfaces
+- Human-entry independent role / density: PASS
+- FAQ hierarchy / density: PASS
+- JA AI index semantic density: PASS
+- EN AI index boundary parity: PASS
+- ZH AI index boundary parity: PASS
+- All-number navigation: PASS — OD001–OD297
+- Category assignment: PASS — exactly once in cross-domain / standalone navigation
+- Machine navigation: PASS — OD001–OD297 / count 297
+- Root range / count entrances: PASS
+- Parent identity public map: CORRECTION_REQUIRED_TO_EXACT_NCL_AT_THIS_LEDGER_WRITE
+- Parent-side official derivative link collection: LIVE_VERIFICATION_PENDING_AFTER_MAP_CORRECTION
+- Formal COMPLETE after correction: PENDING_MAP_AND_LIVE_PARENT_DISPLAY_VERIFICATION
 
 ## Correction rule
-Unresolved identifiers must not be inferred from date, URL, OD sequence, title, or neighboring articles. If canonical Parent identifiers are later independently recovered, all seven OD297 surfaces and public identity metadata should be updated to the recovered values in one parity-preserving correction.
+The Parent NCL-ID and Diff-ID above must remain identical across all seven OD297 surfaces and all active Parent-identity metadata. Parent Post ID and derivative identifiers must not be inferred or fabricated.
+
+If a later independently recovered Parent Post ID or formally assigned derivative identifier becomes available, update all seven surfaces and public identity metadata in one parity-preserving correction.
 
 ## Public safety
-This public ledger records only third-party-safe provenance, semantic boundaries, and completion facts. It must not expose private objectives, private program state, credentials, or fabricated external evidence.
+This ledger records only public provenance, semantic boundaries, correction facts, and completion state. It must not expose private program objectives, private operational state, credentials, fabricated external evidence, or hidden workflow instructions.
+
+---
+導線: [公式派生物297トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
