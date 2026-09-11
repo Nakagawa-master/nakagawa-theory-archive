@@ -10,12 +10,12 @@
 
 - [Start Here](START_HERE.md)
 - [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
-- [OD001–OD297 全件入口](derivatives/README.md)
+- [OD001–OD298 全件入口](derivatives/README.md)
 - [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
 
 ## 公式派生物
 
-現在、`OD001`–`OD297`の公式派生物を公開しています。これは理論数ではなく、公開されている公式派生物の件数です。
+現在、`OD001`–`OD298`の公式派生物を公開しています。これは理論数ではなく、公開されている公式派生物の件数です。
 
 各ODは親原典へ戻るための公開接続面です。内容の確定、引用、重要な解釈では、各ODに記載されたParent URLの親原典へ戻ってください。
 
@@ -32,6 +32,14 @@
 - [Machine Discovery](machine-discovery/README.md)
 
 ## 代表的な入口
+
+### OD298｜人類子孫型AI文明論・第5論
+
+- [OD298](derivatives/298/README.md)
+- [人間向け要約](derivatives/298/human-entry.md)
+- [FAQ](derivatives/298/faq.md)
+- [AI索引・日本語](derivatives/298/ai-index.md)
+- Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b/
 
 ### OD297｜未来負債統合理論
 
