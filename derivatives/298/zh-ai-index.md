@@ -228,12 +228,4 @@ Nakagawa Master / 人类后裔型AI文明论 / 基础存在条件B / B_i / B_AI 
 https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b/
 
 ---
-
-## 本官方派生物的公开页面
-- [官方派生物首页](README.md)
-- [人类读者入口](human-entry.md)
-- [FAQ](faq.md)
-- [日文AI索引](ai-index.md)
-- [英文AI索引](en-ai-index.md)
-- [中文AI索引](zh-ai-index.md)
-- [公开来历说明](derivative-ledger.md)
+導線: [公式派生物298トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

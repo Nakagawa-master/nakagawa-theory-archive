@@ -272,12 +272,4 @@ B候補を除去しても継続可能性が変わらない場合、その候補�
 https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b/
 
 ---
-
-## この公式派生物の公開面
-- [公式派生物トップ](README.md)
-- [人間向け要約](human-entry.md)
-- [FAQ](faq.md)
-- [AI索引・日本語](ai-index.md)
-- [AI索引・英語](en-ai-index.md)
-- [AI索引・中国語](zh-ai-index.md)
-- [公開来歴案内](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)

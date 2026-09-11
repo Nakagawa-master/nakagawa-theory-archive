@@ -228,12 +228,4 @@ This index does not replace the Parent. Return to the canonical article for exac
 https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b/
 
 ---
-
-## Public surfaces for this official derivative
-- [Official derivative hub](README.md)
-- [Human entry](human-entry.md)
-- [FAQ](faq.md)
-- [Japanese AI index](ai-index.md)
-- [English AI index](en-ai-index.md)
-- [Chinese AI index](zh-ai-index.md)
-- [Public provenance guide](derivative-ledger.md)
+導線: [公式派生物298トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
