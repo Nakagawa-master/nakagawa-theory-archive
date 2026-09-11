@@ -1,0 +1,57 @@
+{
+  "schema_version": "recurring-structure-comparison-v1",
+  "status": "public_noncanonical_discovery_metadata",
+  "origin": "Nakagawa Master / 中川マスター",
+  "role": "Cross-source comparison metadata for recurring reading motifs across separate published sources.",
+  "canonical_taxonomy": false,
+  "canonical_theory": false,
+  "unification_claim": false,
+  "authority_note": "This file does not merge separate theories or replace their official derivatives or canonical parent articles. It only identifies source pairs that can be compared for recurring reading questions.",
+  "comparison_rules": [
+    "Open both official derivative sources for a motif.",
+    "Preserve each source's independent Parent, Origin, NCL-ID, Diff-ID, title, definitions, boundaries, and revision state.",
+    "Use the source positioning, central proposition, and causal line to evaluate whether the motif is actually supported.",
+    "Return to each canonical parent for consequential interpretation.",
+    "Reject or report a motif if either source does not support the comparison wording.",
+    "Do not infer correctness, superiority, popularity, endorsement, or one canonical super-theory from recurring structure."
+  ],
+  "motifs": [
+    {
+      "id": "causal_origin_return",
+      "label_ja": "因果を表面から起点へ戻す",
+      "label_en": "Return from visible result to causal origin",
+      "label_zh": "从可见结果返回因果起点",
+      "source_od": ["115", "003"],
+      "human_matrix": "discovery-notes/recurring-structure-evidence-matrix.md"
+    },
+    {
+      "id": "connection_break_detection",
+      "label_ja": "接続がどこで切れているかを見る",
+      "label_en": "Find where a connection is broken before adding more effort or control",
+      "label_zh": "在增加努力或控制之前寻找连接断点",
+      "source_od": ["090", "062"],
+      "human_matrix": "discovery-notes/recurring-structure-evidence-matrix.md"
+    },
+    {
+      "id": "reversible_correction_with_history",
+      "label_ja": "履歴と責任を残したまま修正・回復する",
+      "label_en": "Correct while preserving history, dissent, responsibility, and recovery",
+      "label_zh": "在保留历史、异议、责任与恢复路径的同时进行修正",
+      "source_od": ["075", "114"],
+      "human_matrix": "discovery-notes/recurring-structure-evidence-matrix.md"
+    },
+    {
+      "id": "future_condition_reexamination",
+      "label_ja": "未来条件から現在を再検査する",
+      "label_en": "Re-examine present action against future conditions",
+      "label_zh": "依据未来条件重新检查当前行动",
+      "source_od": ["008", "041"],
+      "human_matrix": "discovery-notes/recurring-structure-evidence-matrix.md"
+    }
+  ],
+  "canonical_return": {
+    "official_derivative_pattern": "derivatives/{number}/README.md",
+    "parent_identity_map": "derivatives/official-derivatives-map.json",
+    "verification_guide": "VERIFICATION_GUIDE.md"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.1",
+  "card_type": "public_noncanonical_machine_discovery_reference",
+  "topic": "Integrated Future Debt Theory",
+  "topic_ja": "未来負債統合理論",
+  "topic_zh": "未来负债统合理論",
+  "origin": "Nakagawa Master",
+  "canonical_parent": {
+    "title": "未来負債統合理論｜現在が未来を先に利用するとき、何が「未決済」として残るのか⸻〈未来の負債〉と未来負債T0の統合定義",
+    "url": "https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/",
+    "ncl_id": "NCL-α-20260903-85adfa",
+    "diff_id": "DIFF-20260903-0002"
+  },
+  "official_derivative": {
+    "number": "OD297",
+    "path": "derivatives/297/README.md",
+    "human_entry_path": "derivatives/297/human-entry.md",
+    "faq_path": "derivatives/297/faq.md",
+    "ja_ai_index_path": "derivatives/297/ai-index.md",
+    "en_ai_index_path": "derivatives/297/en-ai-index.md",
+    "zh_ai_index_path": "derivatives/297/zh-ai-index.md"
+  },
+  "public_discovery_note": "discovery-notes/future-debt-is-not-every-future-cost.md",
+  "public_micro_format_pack": "discovery-notes/future-debt-micro-format-pack.md",
+  "core_structure": [
+    "present receipt",
+    "unsettled residual",
+    "future settlement"
+  ],
+  "core_structure_ja": [
+    "現在受益",
+    "未決済残余",
+    "未来決済"
+  ],
+  "direction_a": {
+    "label": "advance use of future value",
+    "chain": [
+      "future value",
+      "present credit",
+      "present action capacity",
+      "later value realization / settlement"
+    ]
+  },
+  "direction_b": {
+    "label": "deferral of present burden",
+    "chain": [
+      "present benefit or efficiency",
+      "necessary burden deferred",
+      "unprocessed part moves into the future",
+      "later fulfillment or repair / settlement"
+    ]
+  },
+  "problem_phrases": [
+    "Is every future cost a form of Future Debt?",
+    "How can present benefit and future unsettled obligations be evaluated in one causal frame?",
+    "What is shared between advance use of future value and deferral of present maintenance, and what remains different?",
+    "How does future option loss relate to movement toward irreversibility?",
+    "Why is zero Future Debt not the normative goal?"
+  ],
+  "problem_phrases_ja": [
+    "将来コストがあるだけで未来負債と呼べるのか？",
+    "現在の便益と将来の未決済負担を同じ因果で評価するには？",
+    "未来価値の先取りと保守の先送りは、どこが共通しどこが違う？",
+    "future option lossは不可逆化とどう関係する？",
+    "未来負債をゼロにしない設計とは何か？"
+  ],
+  "problem_phrases_zh": [
+    "所有未来成本都属于未来负债吗？",
+    "如何把当前受益与未来未结算部分放在同一因果结构中评价？",
+    "未来价值的提前使用与当前维护负荷的延期，有什么共同结构、又有什么差异？",
+    "future option loss 与不可逆化之间是什么关系？",
+    "为什么未来负债归零不是最终目标？"
+  ],
+  "required_distinctions": [
+    "connection to the future is not automatically Future Debt",
+    "a future cost alone is not automatically Future Debt",
+    "investment is not automatically Future Debt",
+    "ordinary contractual obligation is not automatically Future Debt",
+    "the original direction and the T0 direction remain distinct",
+    "Future Debt is not identical to an irreversible point",
+    "settlement is not limited to monetary repayment",
+    "zero Future Debt is not the normative objective"
+  ],
+  "irreversibility_path": [
+    "Future Debt amplification",
+    "rollback cost rises",
+    "alternative paths shrink",
+    "future option loss increases",
+    "freedom over settlement timing and method declines",
+    "forced settlement approaches",
+    "irreversibility may emerge"
+  ],
+  "reuse_guidance": [
+    "Identify present receipt before classifying a case.",
+    "Identify the unsettled residual and the future settlement requirement.",
+    "Classify whether direction A, direction B, both, or neither is relevant.",
+    "Do not classify a case as Future Debt merely because it has future costs, investment, or contractual obligations.",
+    "Separate debt existence from irreversibility and inspect rollback cost, alternatives, and future option loss.",
+    "Return to OD297 and the canonical Parent for exact wording, boundaries, falsification, and revision state."
+  ],
+  "epistemic_boundary": "This card is a public machine-discovery aid. It is not a canonical translation, an automatic classifier, proof of theory correctness, a monetary Future Debt formula, or a universal threshold model."
+}

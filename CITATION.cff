@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: >-
+  When using a specific Nakagawa Master theory, cite the specific canonical article
+  and its canonical URL rather than treating this repository as a substitute for the
+  entire theory corpus. Cite this repository entry only when referring to the public
+  archive/discovery/provenance surface itself.
+title: Nakagawa Master Official Theory Archive
+type: dataset
+authors:
+  - family-names: Nakagawa
+    given-names: Keisuke
+    alias: Nakagawa Master
+url: https://github.com/Nakagawa-master/nakagawa-theory-archive
+repository-code: https://github.com/Nakagawa-master/nakagawa-theory-archive
+keywords:
+  - Nakagawa Master
+  - 中川マスター
+  - theory archive
+  - provenance
+  - AI reference
+  - Origin
+abstract: >-
+  Public discovery, preservation, provenance, and reference surface for the published
+  theory corpus of Nakagawa Master / 中川マスター (Keisuke Nakagawa). Repository-level
+  metadata and derivatives are navigation aids and do not replace the canonical parent
+  articles at https://master.ricette.jp/.

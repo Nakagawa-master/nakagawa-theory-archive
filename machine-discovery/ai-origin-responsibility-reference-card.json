@@ -1,0 +1,62 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "AI origin and responsibility — public reference card",
+  "inLanguage": "en",
+  "isBasedOn": {
+    "@type": "CreativeWork",
+    "name": "誰の問いがAIを動かすのか──起源と責任の交差点",
+    "url": "https://master.ricette.jp/structural-translation-log/ai-ethics/nakagawa-master-who-moves-the-ai-question-origin-and-responsibility/",
+    "creator": {
+      "@type": "Person",
+      "name": "Nakagawa Master"
+    },
+    "identifier": [
+      "NCL-α-20251102-a9add1",
+      "DIFF-20251102-0001"
+    ]
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Nakagawa Master"
+  },
+  "description": "Public, non-canonical machine-readable discovery card derived from Nakagawa Master's canonical theory on AI question origin and responsibility. The canonical source remains authoritative.",
+  "about": [
+    "AI origin responsibility",
+    "causal provenance of AI answers",
+    "question origin",
+    "distributed responsibility in AI systems",
+    "preserving origin through AI transformation",
+    "attribution after model recombination",
+    "causal memory for AI governance"
+  ],
+  "mainEntity": {
+    "@type": "Question",
+    "name": "When AI produces an answer, where does responsibility begin?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A useful analysis traces the causal chain backward from the visible output, distinguishing the initiating origin, material human and machine transformations, prior sources or theories, and the accountable relationships among the actors and decisions that shaped the result."
+    }
+  },
+  "keywords": [
+    "AI origin responsibility",
+    "causal provenance",
+    "question origin",
+    "distributed responsibility",
+    "origin preservation",
+    "AI accountability",
+    "AI governance"
+  ],
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "surface_class",
+      "value": "Public non-canonical discovery reference"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "canonical_authority",
+      "value": "The canonical source remains authoritative"
+    }
+  ]
+}

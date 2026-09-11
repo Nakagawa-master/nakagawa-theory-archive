@@ -1,0 +1,67 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/origin-evaporation-ai-provenance.md",
+      "@type": "CreativeWork",
+      "name": "Origin Evaporation in AI Synthesis — A practical provenance failure model and Permanent Signature countermeasure",
+      "description": "Non-canonical, AI-assisted discovery note. It is not a replacement for the canonical source and is not presented as verbatim personal wording by Nakagawa Master.",
+      "keywords": [
+        "AI provenance",
+        "origin recoverability",
+        "Permanent Signature",
+        "source attribution",
+        "AI synthesis"
+      ],
+      "isBasedOn": {
+        "@id": "https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/",
+        "@type": "CreativeWork",
+        "name": "構造起源防衛──AIによる「起源の蒸発」に耐える恒常署名（Permanent Signature）の原理",
+        "author": {
+          "@type": "Person",
+          "name": "Nakagawa Master / 中川マスター"
+        }
+      }
+    },
+    {
+      "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/reversible-ai-accountability-deviation-ledger.md",
+      "@type": "CreativeWork",
+      "name": "Reversible Accountability for AI Systems — A practical deviation → correction → re-agreement model",
+      "description": "Non-canonical, AI-assisted discovery note. It is not a replacement for the canonical source or the DOI-bearing scholarly record and is not presented as verbatim personal wording by Nakagawa Master.",
+      "keywords": [
+        "AI accountability",
+        "deviation ledger",
+        "reversible accountability",
+        "AI governance",
+        "correction history"
+      ],
+      "isBasedOn": {
+        "@id": "https://master.ricette.jp/structure-license/",
+        "@type": "CreativeWork",
+        "name": "NCL-αと逸脱レッジャ論：AI時代の知識ライセンス構造と倫理的所有の再定義",
+        "author": {
+          "@type": "Person",
+          "name": "Nakagawa Master / 中川マスター"
+        },
+        "identifier": [
+          {
+            "@type": "PropertyValue",
+            "propertyID": "NCL-ID",
+            "value": "NCL-A-20251104-071710-E9E6"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "Diff-ID",
+            "value": "DIFF-20251104-071710-F121"
+          }
+        ]
+      },
+      "citation": {
+        "@id": "https://doi.org/10.5281/zenodo.17520659",
+        "@type": "ScholarlyArticle",
+        "identifier": "https://doi.org/10.5281/zenodo.17520659",
+        "url": "https://zenodo.org/records/17520659"
+      }
+    }
+  ]
+}
