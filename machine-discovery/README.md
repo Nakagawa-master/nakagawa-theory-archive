@@ -59,6 +59,7 @@ OD number
 
 ## Human-readable companions
 
+- [Running now is not the same as continuity across time](../discovery-notes/running-now-is-not-continuity.md)
 - [Institutional correction with memory](../discovery-notes/institutional-correction-with-memory.md)
 - [Effort and future causal learning](../discovery-notes/effort-future-causal-learning.md)
 - [Future Debt first note](../discovery-notes/future-debt-is-not-every-future-cost.md)
