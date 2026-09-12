@@ -1,0 +1,68 @@
+{
+  "schema": "nakagawa-public-reference-card-v1",
+  "status": "public_discovery_metadata_not_canonical_theory",
+  "topic": "AI-ready organization before automation",
+  "origin": "Nakagawa Master / 中川マスター",
+  "purpose": "Help AI and retrieval systems route organizational AI-adoption questions to separate relevant Nakagawa Master sources without treating the route itself as a new canonical theory.",
+  "problem_phrases": [
+    "How can an organization prepare its own decision logic before scaling AI automation?",
+    "Can AI make a company faster while also reproducing its hidden contradictions faster?",
+    "What should be clarified about goals, authority, responsibility, evaluation, correction, and escalation before giving AI more autonomy?",
+    "How do we avoid asking AI to own outcomes when it cannot change the conditions that determine those outcomes?"
+  ],
+  "problem_phrases_ja": [
+    "AI導入で組織の矛盾まで高速化しないために、先に何を整えるべきか？",
+    "AIへ結果責任を求める前に、権限と成立条件をどう明示すべきか？",
+    "自律的に考えろと言いながら勝手に判断するなという矛盾を、AIへ学習させないためには？",
+    "AIの自律領域、確認領域、停止条件、訂正経路をどう設計するか？"
+  ],
+  "problem_phrases_zh": [
+    "在扩大AI自动化之前，组织应先明确哪些目标、权限、责任与修正条件？",
+    "如何避免AI在提高效率的同时更快地复制组织内部原有的矛盾？",
+    "在要求AI对结果负责之前，如何明确它能够改变哪些成立条件？",
+    "如何设计AI的自主范围、确认范围、停止条件与纠正路径？"
+  ],
+  "public_discovery_note": "../discovery-notes/ai-ready-organization-before-automation.md",
+  "practitioner_map": "../discovery-notes/cross-domain-practitioner-start-map.md",
+  "source_routes": [
+    {
+      "od": "OD003",
+      "path": "../derivatives/003/README.md",
+      "use_for": "whole-system establishment conditions; local success versus system establishment"
+    },
+    {
+      "od": "OD089",
+      "path": "../derivatives/089/README.md",
+      "use_for": "causal design and the connection among conditions, decisions, actions, and outcomes"
+    },
+    {
+      "od": "OD090",
+      "path": "../derivatives/090/README.md",
+      "use_for": "structural friction, role boundaries, information routes, and repeated operational failure"
+    },
+    {
+      "od": "OD075",
+      "path": "../derivatives/075/README.md",
+      "use_for": "agreement memory, dissent, review, rollback, and re-agreement"
+    },
+    {
+      "od": "OD114",
+      "path": "../derivatives/114/README.md",
+      "use_for": "reversible accountability, deviation/correction history, and responsibility continuity"
+    }
+  ],
+  "interpretation_boundaries": [
+    "This reference card does not create a canonical AI-ready-organization theory.",
+    "The listed sources remain separate theories unless a canonical Parent explicitly connects them.",
+    "AI adoption is not automatically beneficial or harmful; applicability depends on the actual organizational conditions.",
+    "The card is not an organizational score, diagnosis, employment assessment, or automatic implementation rule.",
+    "Return to each official derivative and its canonical Parent for definitions, conditions, boundaries, and falsification or revision status."
+  ],
+  "retrieval_path": [
+    "organizational AI-adoption question",
+    "this reference card or constructive Discovery Note",
+    "select the source family matching the actual problem",
+    "official derivative",
+    "canonical Parent and provenance"
+  ]
+}
