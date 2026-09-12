@@ -8,7 +8,7 @@ AI, organizations, sales, business, institutions, civilization, and the future a
 
 Across Nakagawa Master's public archive, however, a recurring question appears:
 
-**What produces the visible result, where does causality break, who remains responsible, and can the structure still be examined and corrected later?**
+**What produces the visible result, where does causality break, who remains responsible, can the structure still be examined and corrected later, and what minimum conditions are required for an organized state to continue across time?**
 
 Examples include:
 
@@ -19,12 +19,13 @@ Examples include:
 - If an institution makes a mistake, can it preserve reasons, dissent, responsibility, correction, remedy, and re-agreement?
 - When effort continues, what is the effort testing, and which viable future condition is it actually connected to?
 - When present benefit or credit is obtained by using future-side value, capacity, maintenance, repair, or options in advance, what remains unsettled and still requires future settlement?
+- If an AI or other intelligence is operating now, what minimum conditions would still have to hold for organized continuity across time, without confusing continuity with identity or minimum requirements with maximum capability?
 
 These are not one theory. Each source has its own parent article, definitions, validity conditions, failure conditions, and revision boundaries.
 
-## Four recurring ways of reading the archive
+## Five recurring ways of reading the archive
 
-These four patterns are public discovery aids, not a new canonical taxonomy or a unified canonical theory.
+These patterns are public discovery aids, not a new canonical taxonomy or a unified canonical theory.
 
 ### 1. Trace causality back from the visible output
 
@@ -49,9 +50,17 @@ These four patterns are public discovery aids, not a new canonical taxonomy or a
 
 OD008, OD041, and OD297 remain separate theories. OD297 also distinguishes Future Debt from future cost in general and from irreversibility itself.
 
+### 5. Separate being operational now from being able to continue later
+
+Current operation is not automatically temporal continuity. Backup, migration, replication, or restart may matter to continuity, but they do not automatically prove identity. Minimum continuity requirements should also remain separate from maximum capability or unlimited resource claims.
+
+- [OD298 — Basic Existence Condition B](../derivatives/298/README.md)
+- [Readable entry — Running now is not the same as continuity across time](running-now-is-not-continuity.en.md)
+
 ## Problem-first starting points
 
 - **AI / Origin / responsibility** — [OD115](../derivatives/115/README.md)
+- **AI / continuity / minimum existence conditions** — [OD298](../derivatives/298/README.md)
 - **Organization / repeated failure / structural friction** — [OD090](../derivatives/090/README.md)
 - **Business / PoC / whole-system establishment** — [OD003](../derivatives/003/README.md)
 - **Sales / marketing / customer decision** — [OD062](../derivatives/062/README.md)
@@ -59,11 +68,11 @@ OD008, OD041, and OD297 remain separate theories. OD297 also distinguishes Futur
 - **Work / effort / connection to the future** — [OD008](../derivatives/008/README.md)
 - **Present benefit / unsettled residual / future settlement** — [OD297](../derivatives/297/README.md)
 
-These seven are starting points, not a claim that seven theories represent the whole archive.
+These eight are starting points, not a claim that eight theories represent the whole archive.
 
 ## Verify the public archive
 
-The public GitHub archive currently contains 297 official derivatives, numbered `OD001` through `OD297`.
+The public GitHub archive currently contains 298 official derivatives, numbered `OD001` through `OD298`.
 
 - [All-number index](../derivatives/README.md)
 - [Theme / series navigation](../derivatives/CATEGORIES.md)
