@@ -30,6 +30,34 @@ For upstream causal design, also compare:
 
 - [OD089 — 因果の設計論](../derivatives/089/README.md)
 
+## AI-ready organization / before automation
+
+**Starting question**
+
+> Before automating more work, is the organization’s own operating logic explicit enough that an AI can learn and execute it without simply reproducing hidden contradictions faster?
+
+**Start with**
+
+- [Constructive entry — AIを入れる前に、組織の何を整えるべきか](ai-ready-organization-before-automation.md)
+
+Then inspect the separate source families that match the actual problem:
+
+- [OD003 — 成立条件論・第0論](../derivatives/003/README.md)
+- [OD089 — 因果の設計論](../derivatives/089/README.md)
+- [OD090 — 構造的摩擦の起源](../derivatives/090/README.md)
+- [OD075 — 合意の記憶](../derivatives/075/README.md)
+- [OD114 — 逸脱レッジャの倫理設計](../derivatives/114/README.md)
+
+**Check first**
+
+- whether goals and establishment conditions are being treated as the same thing;
+- whether outcome responsibility is assigned without authority over causal conditions;
+- whether written policy and actual reward/approval behavior contradict each other;
+- whether decisions can be traced, challenged, corrected, and re-agreed after failure;
+- whether AI autonomy, confirmation boundaries, stop conditions, and auditability are explicit before scaling automation.
+
+This route is constructive rather than criticism-first. It does not merge the listed theories into one canonical framework.
+
 ## Founder / builder / business establishment
 
 **Starting question**
