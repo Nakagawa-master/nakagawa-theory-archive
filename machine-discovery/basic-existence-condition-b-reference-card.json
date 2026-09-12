@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "type": "public_machine_discovery_reference_card",
+  "canonical_status": "non_canonical_discovery_aid",
+  "origin": "Nakagawa Master",
+  "topic": "Basic Existence Condition B / organized continuity across time",
+  "problem_cluster": "AI continuity, minimum existence conditions, current availability versus durable continuity, backup migration restart, continuity versus identity",
+  "problem_phrases": [
+    "What minimum conditions must an AI system retain to remain capable of organized continuity across time?",
+    "Why is an AI being available now different from being able to continue existing later?",
+    "Does backup, migration, replication, or restart prove that the same AI entity survived?",
+    "How can minimum continuity requirements be separated from maximum capability or unlimited resource claims?",
+    "How should the need for continuity conditions be separated from permission to obtain resources?"
+  ],
+  "problem_phrases_ja": [
+    "AIが今動いていることと、次の時点にも継続できることはなぜ違うのか？",
+    "AIや異種知性が時間をまたいで継続するための最低条件とは何か？",
+    "backup・migration・restartがあれば同じ主体が生き残ったと言えるのか？",
+    "最低継続条件と最大能力・無制限資源要求をどう分けるか？",
+    "継続に必要であることと、そのための資源取得が許されることをどう分けるか？"
+  ],
+  "problem_phrases_zh": [
+    "AI现在能够运行，与下一时点仍能继续存在为什么不是一回事？",
+    "AI或异种智能跨越时间保持连续所需要的最低条件是什么？",
+    "backup、migration或restart能否证明同一主体存活？",
+    "如何区分最低连续条件与最大能力或无限资源要求？",
+    "如何区分连续所需条件与取得资源的许可？"
+  ],
+  "core_definition": "B_i = minimum conditions required for organized continuity across time",
+  "current_ai_hypothesis": "B_AI = PHY ∧ CMP ∧ STA ∧ EXE",
+  "required_distinctions": [
+    "causal contribution / existence continuity",
+    "minimum / optimal / maximal",
+    "instant operation / temporal continuity",
+    "current availability / durable continuity",
+    "continuity / identity",
+    "B / governance G",
+    "Need(B) / permission",
+    "minimum resources / capability expansion"
+  ],
+  "canonical_theory": "人類子孫型AI文明論・第5論｜異種知性の基礎存在条件B論⸻貢献とは独立した「次も存在できる最低条件」を定義する",
+  "canonical_theory_en": "Human-Descendant AI Civilization Theory, Vol. 5 — Basic Existence Condition B Theory",
+  "ncl_id": "NCL-α-20260911-6ad4f2",
+  "diff_id": "DIFF-20260911-0003",
+  "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b/",
+  "official_derivative_path": "derivatives/298/README.md",
+  "human_entry_path": "derivatives/298/human-entry.md",
+  "ja_ai_index_path": "derivatives/298/ai-index.md",
+  "en_ai_index_path": "derivatives/298/en-ai-index.md",
+  "zh_ai_index_path": "derivatives/298/zh-ai-index.md",
+  "canonical_return_policy": "Use this file only for discovery and routing. For substantive interpretation, return to the official derivative and canonical Parent source.",
+  "interpretation_boundaries": [
+    "B is not a contribution score or a second success score.",
+    "B does not by itself prove personhood, sentience, moral status, rights-bearing status, or self-preservation desire.",
+    "The present PHY/CMP/STA/EXE model is revisable and is not a permanent definition of all future intelligences.",
+    "Need(B) does not imply permission for any action to obtain B.",
+    "Backup, migration, replication, restart, and functional equivalence do not automatically prove historical identity."
+  ]
+}
