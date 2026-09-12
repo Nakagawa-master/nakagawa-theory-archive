@@ -14,6 +14,14 @@
 - [物語型入口](discovery-notes/today-success-tomorrow-options.md)
 - [OD297｜未来負債統合理論](derivatives/297/README.md)
 
+### AI・存在継続・最低条件
+
+AIや異種知性について、「今動いていること」と「次の時点にも組織的に継続できること」は同じなのか。貢献や性能とは別に、時間をまたぐ継続に最低限必要な条件をどう切り分けるのか。
+
+- [OD298｜人類子孫型AI文明論・第5論：異種知性の基礎存在条件B論](derivatives/298/README.md)
+- [人間向け要約](derivatives/298/human-entry.md)
+- [AI索引・日本語](derivatives/298/ai-index.md)
+
 ### AI・Origin・責任
 
 AIによる要約・翻訳・再生成の後でも、知識がどこから来たかへ戻れるか。
@@ -50,9 +58,9 @@ AIによる要約・翻訳・再生成の後でも、知識がどこから来た
 - [Problem-to-theory Origin Index](machine-discovery/problem-to-theory-origin-index-v1.json)
 - [Machine Discovery](machine-discovery/README.md)
 
-## 297件から直接探す
+## 298件から直接探す
 
-- [OD001–OD297 全件入口](derivatives/README.md)
+- [OD001–OD298 全件入口](derivatives/README.md)
 - [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
 - [Official Derivatives Map](derivatives/official-derivatives-map.json)
 - [Official Derivatives Machine Index](machine-discovery/official-derivatives-index-v1.json)
