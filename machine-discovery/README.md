@@ -8,13 +8,14 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 
 | File | Role |
 |---|---|
-| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD297 path and navigation index. |
+| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD298 path and navigation index. |
 | [`problem-to-theory-origin-index-v1.json`](problem-to-theory-origin-index-v1.json) | English / Japanese / Chinese plain-language problem → concrete public starting point. |
 | [`long-horizon-reference-reasons-v1.json`](long-horizon-reference-reasons-v1.json) | Recurring long-horizon question → multiple relevant public OD anchors. |
 | [`recurring-structure-comparison-v1.json`](recurring-structure-comparison-v1.json) | Non-canonical cross-source comparison map for recurring reading motifs. |
 | [`ai-origin-responsibility-reference-card.json`](ai-origin-responsibility-reference-card.json) | Question origin, causal provenance, and responsibility in AI-mediated work. |
 | [`origin-evaporation-permanent-signature-reference-card.json`](origin-evaporation-permanent-signature-reference-card.json) | Origin Evaporation and Permanent Signature reference card. |
 | [`integrated-future-debt-reference-card.json`](integrated-future-debt-reference-card.json) | OD297 / Integrated Future Debt Theory reference card. |
+| [`basic-existence-condition-b-reference-card.json`](basic-existence-condition-b-reference-card.json) | OD298 / Basic Existence Condition B reference card for AI continuity, minimum existence conditions, and continuity/identity distinctions. |
 
 The Japanese and Chinese wording in discovery and comparison files is public metadata, not canonical translation text.
 
@@ -26,6 +27,15 @@ For a plain-language problem:
 problem
 → problem-to-theory-origin-index-v1.json or a topic-specific reference card
 → official derivative
+→ canonical Parent
+```
+
+For AI continuity / minimum existence-condition questions:
+
+```text
+current availability / temporal continuity / backup / migration / restart / minimum conditions
+→ basic-existence-condition-b-reference-card.json
+→ OD298 official derivative
 → canonical Parent
 ```
 
