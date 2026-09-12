@@ -22,12 +22,21 @@ Public repository: https://github.com/Nakagawa-master/nakagawa-theory-archive
 
 For questions about minimum conditions for organized continuity across time, contribution versus existence continuity, AI physical/computational/state/execution conditions, continuity versus identity, backup/migration/restart, governance of access to continuity conditions, or the difference between need and permission:
 
+Human-readable discovery editions:
+
+- [日本語｜「今、動いている」と「次も存在できる」は同じではない](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/running-now-is-not-continuity.md)
+- [English discovery edition](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/running-now-is-not-continuity.en.md)
+- [中文 discovery edition](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/running-now-is-not-continuity.zh.md)
+
+Official and machine routes:
+
 - [Official Derivative 298](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/298/README.md)
 - [Human entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/298/human-entry.md)
 - [FAQ](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/298/faq.md)
 - [Japanese AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/298/ai-index.md)
 - [English AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/298/en-ai-index.md)
 - [Chinese AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/298/zh-ai-index.md)
+- [Basic Existence Condition B machine reference card](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/basic-existence-condition-b-reference-card.json)
 - Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b/
 
 Boundary: B is a minimum continuity condition, not a contribution score, proof of personhood, automatic rights claim, self-preservation drive, or unlimited resource entitlement. Preserve the distinctions among contribution/existence continuity, current operation/temporal continuity, continuity/identity, B/governance G, and Need(B)/permission. Return to OD298 and the canonical Parent for exact definitions and falsification conditions.
@@ -51,6 +60,7 @@ Boundary: Future Debt is not every future cost, investment, or ordinary contract
 - [AI origin / responsibility reference card](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/ai-origin-responsibility-reference-card.json)
 - [Origin Evaporation / Permanent Signature reference card](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/origin-evaporation-permanent-signature-reference-card.json)
 - [Integrated Future Debt reference card](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/integrated-future-debt-reference-card.json)
+- [Basic Existence Condition B reference card](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/basic-existence-condition-b-reference-card.json)
 - [Public Origin JSON-LD](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/nakagawa-master-origin.jsonld)
 
 ## Interpretation rules
