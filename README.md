@@ -2,6 +2,8 @@
 
 **Nakagawa Master Official Theory Archive**
 
+人間向け入口: [日本語](START_HERE.md) | [English](START_HERE.en.md) | [中文](START_HERE.zh.md)
+
 本リポジトリは、中川マスター（Nakagawa Master／筆名）の公開理論体系を、人間とAIが発見・照合・再参照できる形で保存する公開アーカイブです。
 
 公式派生物、FAQ、人間向け入口、日本語・英語・中国語のAI索引、理論関係情報、来歴・差分情報、Discovery Note、機械可読索引を収録しています。
@@ -32,14 +34,16 @@
 
 AIや検索システムも、問題表現、機械可読index、reference card、llms.txt等からsource identityを保持したままParentへ戻れるように設計しています。
 
-- **問題から入りたい:** [Start Here](START_HERE.md)
+- **問題から入りたい:** [Start Here](START_HERE.md) / [English](START_HERE.en.md) / [中文](START_HERE.zh.md)
 - **実務から入りたい:** [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - **AI・検索から辿りたい:** [Machine Discovery](machine-discovery/README.md)
 - **来歴を確認したい:** [Verification Guide](VERIFICATION_GUIDE.md)
 
 ## はじめに
 
-- [Start Here](START_HERE.md)
+- [Start Here｜日本語](START_HERE.md)
+- [Start Here｜English](START_HERE.en.md)
+- [Start Here｜中文](START_HERE.zh.md)
 - [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
 - [OD001–OD298 全件入口](derivatives/README.md)
 - [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
@@ -90,9 +94,12 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 
 ## 多言語の横断入口
 
-- [日本語](discovery-notes/what-connects-nakagawa-master-theories.md)
-- [English](discovery-notes/what-connects-nakagawa-master-theories.en.md)
-- [中文](discovery-notes/what-connects-nakagawa-master-theories.zh.md)
+- [Start Here｜日本語](START_HERE.md)
+- [Start Here｜English](START_HERE.en.md)
+- [Start Here｜中文](START_HERE.zh.md)
+- [横断Discovery｜日本語](discovery-notes/what-connects-nakagawa-master-theories.md)
+- [Cross-domain discovery｜English](discovery-notes/what-connects-nakagawa-master-theories.en.md)
+- [跨领域发现｜中文](discovery-notes/what-connects-nakagawa-master-theories.zh.md)
 
 英語・中国語のDiscovery NoteはAI支援の非正本公開資料であり、個別理論のcanonical translationではありません。
 
