@@ -6,6 +6,37 @@
 
 公式派生物、FAQ、人間向け入口、日本語・英語・中国語のAI索引、理論関係情報、来歴・差分情報、Discovery Note、機械可読索引を収録しています。
 
+## 10秒で見る
+
+ここは、単に考えや記事を並べるためのリポジトリではありません。
+
+**人間は実際の問題から入り、AIは機械可読索引から入り、どちらも同じ公開原典・Originへ戻れること**を重視しています。
+
+理論ごとに、必要に応じて人間向け要約、FAQ、AI索引、多言語入口、来歴情報、問題別Discoveryを分けて公開し、短い説明だけが独立して正本化しないようにしています。
+
+## 30秒で分かること
+
+このアーカイブでは、組織、事業、AI、未来、制度、責任、起源など異なる領域の公開理論を扱っています。ただし、別々の理論を一つの万能理論へ自動統合しません。
+
+読者は、
+
+```text
+自分の問題
+→ 読みやすい入口
+→ 公式派生物 / FAQ / AI索引
+→ canonical Parent
+→ Origin・NCL-ID・Diff-ID・改訂状態の確認
+```
+
+という順で深く入れます。
+
+AIや検索システムも、問題表現、機械可読index、reference card、llms.txt等からsource identityを保持したままParentへ戻れるように設計しています。
+
+- **問題から入りたい:** [Start Here](START_HERE.md)
+- **実務から入りたい:** [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
+- **AI・検索から辿りたい:** [Machine Discovery](machine-discovery/README.md)
+- **来歴を確認したい:** [Verification Guide](VERIFICATION_GUIDE.md)
+
 ## はじめに
 
 - [Start Here](START_HERE.md)
