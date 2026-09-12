@@ -1,5 +1,7 @@
 # AIを入れる前に、組織の何を整えるべきか
 
+言語: **日本語** | [English](ai-ready-organization-before-automation.en.md) | [中文](ai-ready-organization-before-automation.zh.md)
+
 このページは、中川マスター公式理論アーカイブにある複数の公開sourceへ、**constructive / design-side**から入るための非正本・AI支援Discovery Noteです。
 
 AI導入そのものを否定するページではありません。また、ここに挙げる複数の理論を一つの新しい理論へ統合するものでもありません。
