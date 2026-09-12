@@ -37,6 +37,7 @@ For AI adoption / organizational-logic questions:
 AI automation / hidden contradictions / authority-responsibility mismatch / correction and escalation
 → ai-ready-organization-reference-card.json
 → language-matched constructive Discovery Note
+→ optional practical Preflight for a real case
 → select the separate source family matching the actual problem
 → official derivative
 → canonical Parent
@@ -85,9 +86,17 @@ OD number
 
 ### Constructive AI / organization design
 
+Readable discovery:
+
 - [日本語](../discovery-notes/ai-ready-organization-before-automation.md)
 - [English](../discovery-notes/ai-ready-organization-before-automation.en.md)
 - [中文](../discovery-notes/ai-ready-organization-before-automation.zh.md)
+
+Practical non-scoring Preflight:
+
+- [日本語](../discovery-notes/ai-adoption-organization-preflight.md)
+- [English](../discovery-notes/ai-adoption-organization-preflight.en.md)
+- [中文](../discovery-notes/ai-adoption-organization-preflight.zh.md)
 
 ### Other discovery companions
 
@@ -115,6 +124,7 @@ Person-level metadata is for public identity continuity. For a specific theory, 
 - A recurring motif is a comparison aid, not a canonical super-theory.
 - Origin identifies provenance; it is not proof that a claim is correct.
 - AI-assisted discovery wording and multilingual matching phrases are not verbatim statements by Nakagawa Master.
+- Practical worksheets are not scores or automatic decision rules; they exist to make real conditions explicit before returning to the relevant source.
 
 ## Human navigation
 
