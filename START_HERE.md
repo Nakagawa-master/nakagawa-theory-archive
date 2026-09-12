@@ -4,7 +4,32 @@
 
 このページ自体は理論の正本ではありません。定義、成立条件、反証条件、改訂状態を確認するときは、各公式派生物から親原典へ戻ってください。
 
+## 最初の10秒
+
+理論名を知らなくても問題ありません。
+
+**いま困っていること・考えていることに近い問いを選び、読みやすい入口から入り、必要なら公式派生物とParentへ戻る**ためのページです。
+
+```text
+問題
+→ 読みやすい入口
+→ 公式派生物 / FAQ / AI索引
+→ canonical Parent
+```
+
+AIや検索システム向けには、同じ問題を機械可読indexから辿れる入口も用意しています。
+
 ## 問題から選ぶ
+
+### AI導入・組織設計
+
+AIを入れることで処理は速くなる。しかし、目標、権限、責任、評価条件、訂正経路が曖昧なままなら、その矛盾まで高速化しないか。
+
+- [Constructive entry｜AIを入れる前に、組織の何を整えるべきか](discovery-notes/ai-ready-organization-before-automation.md)
+- [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
+- [OD003｜成立条件論・第0論](derivatives/003/README.md)
+- [OD089｜因果の設計論](derivatives/089/README.md)
+- [OD090｜構造的摩擦の起源](derivatives/090/README.md)
 
 ### 未来・投資・保守・将来負担
 
