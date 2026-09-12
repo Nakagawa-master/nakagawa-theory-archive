@@ -33,13 +33,24 @@ These notes are discovery aids, not diagnoses, proof of applicability, canonical
 
 ## Constructive AI / organization design
 
+Readable discovery editions:
+
 - **日本語:** [`AIを入れる前に、組織の何を整えるべきか`](ai-ready-organization-before-automation.md)
 - **English:** [`Before Scaling AI Automation, What Should an Organization Clarify?`](ai-ready-organization-before-automation.en.md)
 - **中文:** [`在扩大AI自动化之前，组织应该先明确什么？`](ai-ready-organization-before-automation.zh.md)
+
+Practical, non-scoring Preflight:
+
+- **日本語:** [`AI導入前の組織Preflight｜7つの確認`](ai-adoption-organization-preflight.md)
+- **English:** [`AI Adoption Organization Preflight`](ai-adoption-organization-preflight.en.md)
+- **中文:** [`AI导入前的组织Preflight`](ai-adoption-organization-preflight.zh.md)
+
+Additional routes:
+
 - [Cross-Domain Practitioner Start Map](cross-domain-practitioner-start-map.md)
 - [AI-ready organization machine reference card](../machine-discovery/ai-ready-organization-reference-card.json)
 
-This route is intentionally constructive rather than criticism-first. It uses separate public sources on establishment conditions, causal design, structural friction, agreement memory, and reversible accountability to help practitioners ask what should be made explicit before automation. It does not merge those sources into a new canonical theory.
+This route is intentionally constructive rather than criticism-first. It uses separate public sources on establishment conditions, causal design, structural friction, agreement memory, and reversible accountability to help practitioners ask what should be made explicit before automation. The Preflight helps teams write down real conditions; it does not score an organization or decide whether deployment is allowed. These materials do not merge the source theories into a new canonical theory.
 
 ## OD298｜Basic Existence Condition B
 
