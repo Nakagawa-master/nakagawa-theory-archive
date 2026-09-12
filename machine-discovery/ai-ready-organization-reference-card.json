@@ -27,6 +27,12 @@
     "en": "../discovery-notes/ai-ready-organization-before-automation.en.md",
     "zh": "../discovery-notes/ai-ready-organization-before-automation.zh.md"
   },
+  "practical_preflight": {
+    "ja": "../discovery-notes/ai-adoption-organization-preflight.md",
+    "en": "../discovery-notes/ai-adoption-organization-preflight.en.md",
+    "zh": "../discovery-notes/ai-adoption-organization-preflight.zh.md",
+    "boundary": "Non-scoring practitioner worksheet. It helps make conditions, authority, causal paths, correction, and stop boundaries explicit; it does not diagnose an organization or decide whether deployment is permitted."
+  },
   "human_start_pages": {
     "ja": "../START_HERE.md",
     "en": "../START_HERE.en.md",
@@ -64,12 +70,13 @@
     "This reference card does not create a canonical AI-ready-organization theory.",
     "The listed sources remain separate theories unless a canonical Parent explicitly connects them.",
     "AI adoption is not automatically beneficial or harmful; applicability depends on the actual organizational conditions.",
-    "The card is not an organizational score, diagnosis, employment assessment, or automatic implementation rule.",
+    "The card and Preflight are not organizational scores, diagnoses, employment assessments, legal conclusions, or automatic implementation rules.",
     "Return to each official derivative and its canonical Parent for definitions, conditions, boundaries, and falsification or revision status."
   ],
   "retrieval_path": [
     "organizational AI-adoption question",
     "this reference card or language-matched constructive Discovery Note",
+    "optional non-scoring practical Preflight for a real case",
     "select the source family matching the actual problem",
     "official derivative",
     "canonical Parent and provenance"
