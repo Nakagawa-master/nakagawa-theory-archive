@@ -24,8 +24,18 @@ The English and Chinese editions are AI-assisted public discovery editions, not 
 - [`effort-future-causal-learning.md`](effort-future-causal-learning.md)
 - [`future-debt-is-not-every-future-cost.md`](future-debt-is-not-every-future-cost.md)
 - [`three-scale-reentry-organization-business-institution.md`](three-scale-reentry-organization-business-institution.md)
+- [`running-now-is-not-continuity.md`](running-now-is-not-continuity.md)
 
 These notes are discovery aids, not diagnoses, proof of applicability, canonical syntheses, or verbatim statements by Nakagawa Master.
+
+## OD298｜Basic Existence Condition B
+
+- [`running-now-is-not-continuity.md`](running-now-is-not-continuity.md)
+- [OD298 official derivative](../derivatives/298/README.md)
+- [OD298 human entry](../derivatives/298/human-entry.md)
+- [Basic Existence Condition B machine reference card](../machine-discovery/basic-existence-condition-b-reference-card.json)
+
+This route distinguishes current operation from continuity across time, continuity from identity, minimum continuity conditions from capability expansion, and need from permission. It does not by itself establish personhood, rights, sentience, or unlimited resource claims.
 
 ## OD297｜Future Debt
 
