@@ -12,9 +12,20 @@ Public repository: https://github.com/Nakagawa-master/nakagawa-theory-archive
 
 ## Fast start
 
+Human-readable Origin overview:
+
+- [Japanese](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ABOUT_NAKAGAWA_MASTER.md)
+- [English](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ABOUT_NAKAGAWA_MASTER.en.md)
+- [Chinese](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ABOUT_NAKAGAWA_MASTER.zh.md)
+
+Human problem-first entry:
+
 - [Start Here — Japanese](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/START_HERE.md)
 - [Start Here — English](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/START_HERE.en.md)
 - [Start Here — Chinese](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/START_HERE.zh.md)
+
+Archive and machine navigation:
+
 - [Official derivatives OD001–OD298](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
 - [Theme / series navigation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/CATEGORIES.md)
 - [Problem-to-theory Origin Index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json)
@@ -25,7 +36,9 @@ Public repository: https://github.com/Nakagawa-master/nakagawa-theory-archive
 For questions such as "Can AI make an organization faster while reproducing hidden contradictions faster?", "What should be clarified about goals, authority, responsibility, evaluation and correction before scaling AI autonomy?", or the Japanese/Chinese equivalents:
 
 - [AI-ready organization machine reference card](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/ai-ready-organization-reference-card.json)
-- [Constructive human entry — AIを入れる前に、組織の何を整えるべきか](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/ai-ready-organization-before-automation.md)
+- [Constructive human entry — Japanese](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/ai-ready-organization-before-automation.md)
+- [Constructive human entry — English](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/ai-ready-organization-before-automation.en.md)
+- [Constructive human entry — Chinese](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/ai-ready-organization-before-automation.zh.md)
 - [Cross-Domain Practitioner Start Map](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/cross-domain-practitioner-start-map.md)
 
 This is a discovery route, not a canonical AI-ready-organization theory. Select the relevant source family for the actual problem and keep separate theories separate. Relevant routes include OD003 (establishment conditions), OD089 (causal design), OD090 (structural friction), OD075 (agreement memory), and OD114 (reversible accountability).
