@@ -99,6 +99,29 @@ For a stricter establishment definition, continue to the relevant Establishment 
 - whether a viable future definition is being used to re-evaluate current priorities and structure;
 - whether the reading is staying within the source boundary and not turning future definition into prophecy or physical time reversal.
 
+## AI / continuity / minimum operating conditions
+
+**Starting question**
+
+> The AI system is working now. What would have to remain true for it to remain capable of organized continuity across time?
+
+**Start with**
+
+- [Readable entry — 「今、動いている」と「次も存在できる」は同じではない](running-now-is-not-continuity.md)
+- [OD298 — 異種知性の基礎存在条件B論](../derivatives/298/README.md)
+
+**Check first**
+
+- whether current availability is being mistaken for durable continuity;
+- which physical, computational, state, and restart conditions may actually be necessary;
+- whether backup, migration, replication, or restart is being mistaken for proof of identity;
+- whether a minimum continuity requirement is being expanded into maximum capability or unlimited resources;
+- whether a statement of need is being confused with permission to obtain resources by any means.
+
+For machine-oriented discovery:
+
+- [Basic Existence Condition B reference card](../machine-discovery/basic-existence-condition-b-reference-card.json)
+
 ## AI / provenance / accountable judgment
 
 For AI, RAG, search, synthesis, or knowledge-system work, use the existing practitioner-focused public entries:
@@ -108,41 +131,33 @@ For AI, RAG, search, synthesis, or knowledge-system work, use the existing pract
 - [Origin Evaporation in AI Synthesis](origin-evaporation-ai-provenance.md)
 - [Reversible Accountability for AI Systems](reversible-ai-accountability-deviation-ledger.md)
 
-## From source selection to use and implementation
+## From source selection to practical reading
 
-Use different gates for different depths of action:
+A public discovery route should help a practitioner move from a real question to the right source without pretending that one page proves applicability.
 
 ```text
-real problem
-→ choose one starting question
+real question
+→ choose the closest starting point
 → open the specific official derivative
-→ identify Parent / Origin / NCL-ID / Diff-ID where available
-→ read the source's positioning, central proposition, causal line, conditions, and boundaries
-→ return to the canonical Parent for consequential interpretation
-→ U1: extract one bounded structural question and inspect the problem
-→ I1: only in a suitable low-risk context, define preconditions / counterevidence / rollback and make one small reversible change
-→ observe improvement / no change / worsening / non-fit without forcing a positive conclusion
-→ report only safe reproducible observations
+→ identify the canonical Parent and provenance
+→ read the proposition, causal line, conditions, boundaries, and falsification path
+→ compare the source with the actual situation
+→ keep non-fit, uncertainty, and counterevidence visible
 ```
 
-Public next-step protocols:
-
-- [Practical Use Field Protocol — U1](../PRACTICAL_USE_FIELD_PROTOCOL.md)
-- [Bounded Implementation Field Protocol — I1](../IMPLEMENTATION_FIELD_PROTOCOL.md)
-- [AI Reuse Test Protocol — R7](../AI_REUSE_TEST_PROTOCOL.md)
+For consequential decisions, the canonical Parent remains the substantive reference. A discovery aid can improve orientation, but it should not turn a theory into an automatic diagnosis, score, or action rule.
 
 ## Boundaries
 
 - This map does not prove that a listed theory applies to a specific organization, market, institution, person, or decision.
 - It does not merge the listed theories into one canonical framework.
 - It does not create a score, diagnosis, legal conclusion, medical conclusion, employment assessment, or automatic governance decision.
-- U1 and I1 do not prove correctness, causality, or outcome success from one case.
+- One observed use case does not by itself prove correctness or causality.
 - AI-assisted wording on this page is discovery/practitioner metadata, not a verbatim canonical statement by Nakagawa Master.
 - For consequential interpretation, return to the specific official derivative and its canonical Parent.
 
 Useful verification routes:
 
 - [Verification Guide](../VERIFICATION_GUIDE.md)
-- [Recurring Structure Evidence Matrix](recurring-structure-evidence-matrix.md)
-- [Reader Discovery Test Protocol](../READER_DISCOVERY_TEST_PROTOCOL.md)
-- [Corrections, Retrieval, Practical Use, Implementation, and AI Reuse Reports](../CORRECTIONS_AND_RETRIEVAL_REPORTS.md)
+- [Discovery Notes](README.md)
+- [Machine Discovery](../machine-discovery/README.md)
