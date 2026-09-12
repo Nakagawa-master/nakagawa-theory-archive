@@ -25,8 +25,16 @@ The English and Chinese editions are AI-assisted public discovery editions, not 
 - [`future-debt-is-not-every-future-cost.md`](future-debt-is-not-every-future-cost.md)
 - [`three-scale-reentry-organization-business-institution.md`](three-scale-reentry-organization-business-institution.md)
 - [`running-now-is-not-continuity.md`](running-now-is-not-continuity.md)
+- [`ai-ready-organization-before-automation.md`](ai-ready-organization-before-automation.md)
 
 These notes are discovery aids, not diagnoses, proof of applicability, canonical syntheses, or verbatim statements by Nakagawa Master.
+
+## Constructive AI / organization design
+
+- [`AIを入れる前に、組織の何を整えるべきか`](ai-ready-organization-before-automation.md)
+- [Cross-Domain Practitioner Start Map](cross-domain-practitioner-start-map.md)
+
+This route is intentionally constructive rather than criticism-first. It uses separate public sources on establishment conditions, causal design, structural friction, agreement memory, and reversible accountability to help practitioners ask what should be made explicit before automation. It does not merge those sources into a new canonical theory.
 
 ## OD298｜Basic Existence Condition B
 
