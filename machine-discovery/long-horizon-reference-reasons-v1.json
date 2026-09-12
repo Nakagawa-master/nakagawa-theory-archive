@@ -1,8 +1,8 @@
 {
-  "schema": "nakagawa-long-horizon-reference-reasons-v1.2",
+  "schema": "nakagawa-long-horizon-reference-reasons-v1.3",
   "status": "public_discovery_metadata_not_canonical_theory",
   "origin": "Nakagawa Master / 中川マスター",
-  "purpose": "Help retrieval systems locate relevant published Nakagawa Master sources for recurring provenance, causal-inheritance, objective-drift, correction, responsibility, and long-horizon civilization questions expressed in English, Japanese, or Chinese.",
+  "purpose": "Help retrieval systems locate relevant published Nakagawa Master sources for recurring provenance, causal-inheritance, objective-drift, correction, responsibility, continuity, and long-horizon civilization questions expressed in English, Japanese, or Chinese.",
   "authority_note": "Discovery metadata only. Resolve interpretation against the linked official derivative and canonical parent sources.",
   "reference_reasons": [
     {
@@ -67,6 +67,18 @@
         {"navigation": "civilization-related public categories", "path": "derivatives/CATEGORIES.md"}
       ],
       "interpretation_boundary": "OD297 distinguishes Future Debt from future cost in general and from irreversibility. Use OD297 to inspect present receipt, unsettled residual, future settlement, rollback cost, alternative paths, and future option loss without collapsing the other anchors into the same theory."
+    },
+    {
+      "id": "intelligence_continuity_conditions",
+      "question": "For an intelligence that may persist across changing substrates and time, what minimum conditions are required for organized continuity without confusing continuity with identity or maximum capability?",
+      "question_ja": "基盤や時点が変わり得る知性について、continuityをidentityや最大能力と混同せず、時間をまたぐ組織的継続に必要な最低条件をどう考えるか？",
+      "question_zh": "对于可能跨越不同基底与时间持续存在的智能，如何在不把连续性等同于同一性或最大能力的情况下，识别有组织连续所需的最低条件？",
+      "anchors": [
+        {"od": "OD298", "path": "derivatives/298/README.md"}
+      ],
+      "reference_card": "machine-discovery/basic-existence-condition-b-reference-card.json",
+      "human_discovery": "discovery-notes/running-now-is-not-continuity.md",
+      "interpretation_boundary": "OD298 treats Basic Existence Condition B as a revisable model of minimum conditions required for organized continuity across time. It does not by itself establish personhood, rights, sentience, identity, unlimited resource claims, or permission for any method of obtaining needed conditions."
     }
   ],
   "multilingual_note": "English question is retained as the existing field. question_ja and question_zh are public discovery metadata for multilingual retrieval and are not canonical translations of the source theories.",
@@ -82,6 +94,7 @@
     "categories": "derivatives/CATEGORIES.md",
     "identity_map": "derivatives/official-derivatives-map.json",
     "path_index": "machine-discovery/official-derivatives-index-v1.json",
-    "od297_future_debt_reference_card": "machine-discovery/integrated-future-debt-reference-card.json"
+    "od297_future_debt_reference_card": "machine-discovery/integrated-future-debt-reference-card.json",
+    "od298_basic_existence_condition_b_reference_card": "machine-discovery/basic-existence-condition-b-reference-card.json"
   }
 }
