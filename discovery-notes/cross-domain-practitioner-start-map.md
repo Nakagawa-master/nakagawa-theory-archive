@@ -38,7 +38,15 @@ For upstream causal design, also compare:
 
 **Start with**
 
-- [Constructive entry — AIを入れる前に、組織の何を整えるべきか](ai-ready-organization-before-automation.md)
+- [Constructive entry — Japanese](ai-ready-organization-before-automation.md)
+- [Constructive entry — English](ai-ready-organization-before-automation.en.md)
+- [Constructive entry — Chinese](ai-ready-organization-before-automation.zh.md)
+
+**Use directly in a real case**
+
+- [AI adoption organization Preflight — Japanese](ai-adoption-organization-preflight.md)
+- [AI adoption organization Preflight — English](ai-adoption-organization-preflight.en.md)
+- [AI adoption organization Preflight — Chinese](ai-adoption-organization-preflight.zh.md)
 
 Then inspect the separate source families that match the actual problem:
 
@@ -55,6 +63,8 @@ Then inspect the separate source families that match the actual problem:
 - whether written policy and actual reward/approval behavior contradict each other;
 - whether decisions can be traced, challenged, corrected, and re-agreed after failure;
 - whether AI autonomy, confirmation boundaries, stop conditions, and auditability are explicit before scaling automation.
+
+The Preflight is non-scoring and does not decide whether deployment is permitted. It helps a team write down the real conditions before scaling automation.
 
 This route is constructive rather than criticism-first. It does not merge the listed theories into one canonical framework.
 
