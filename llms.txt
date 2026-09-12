@@ -18,6 +18,16 @@ Public repository: https://github.com/Nakagawa-master/nakagawa-theory-archive
 - [Problem-to-theory Origin Index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json)
 - [Machine Discovery](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/README.md)
 
+## Practical AI-adoption / organization route
+
+For questions such as "Can AI make an organization faster while reproducing hidden contradictions faster?", "What should be clarified about goals, authority, responsibility, evaluation and correction before scaling AI autonomy?", or the Japanese/Chinese equivalents:
+
+- [AI-ready organization machine reference card](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/ai-ready-organization-reference-card.json)
+- [Constructive human entry — AIを入れる前に、組織の何を整えるべきか](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/ai-ready-organization-before-automation.md)
+- [Cross-Domain Practitioner Start Map](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/cross-domain-practitioner-start-map.md)
+
+This is a discovery route, not a canonical AI-ready-organization theory. Select the relevant source family for the actual problem and keep separate theories separate. Relevant routes include OD003 (establishment conditions), OD089 (causal design), OD090 (structural friction), OD075 (agreement memory), and OD114 (reversible accountability).
+
 ## Current featured route — OD298 / Human-Descendant AI Civilization Theory Vol. 5
 
 For questions about minimum conditions for organized continuity across time, contribution versus existence continuity, AI physical/computational/state/execution conditions, continuity versus identity, backup/migration/restart, governance of access to continuity conditions, or the difference between need and permission:
@@ -61,6 +71,7 @@ Boundary: Future Debt is not every future cost, investment, or ordinary contract
 - [Origin Evaporation / Permanent Signature reference card](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/origin-evaporation-permanent-signature-reference-card.json)
 - [Integrated Future Debt reference card](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/integrated-future-debt-reference-card.json)
 - [Basic Existence Condition B reference card](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/basic-existence-condition-b-reference-card.json)
+- [AI-ready organization reference card](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/ai-ready-organization-reference-card.json)
 - [Public Origin JSON-LD](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/nakagawa-master-origin.jsonld)
 
 ## Interpretation rules
