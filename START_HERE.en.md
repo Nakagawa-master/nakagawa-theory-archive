@@ -1,6 +1,10 @@
 # Start Here | Nakagawa Master Official Theory Archive
 
+Language: [日本語](START_HERE.md) | **English** | [中文](START_HERE.zh.md)
+
 This page is a public, non-canonical entry point for people and AI systems encountering the Nakagawa Master theory archive for the first time.
+
+- [Who is Nakagawa Master? | Public Origin overview](ABOUT_NAKAGAWA_MASTER.en.md)
 
 You do not need to know the theory names first. Start from the problem closest to what you are trying to understand, then move to the official derivative and canonical Parent when exact definitions, conditions, boundaries, falsification, or revision status matter.
 
@@ -23,7 +27,7 @@ Machine-readable discovery routes are available for AI and retrieval systems as 
 
 AI can make work faster. But if goals, authority, responsibility, evaluation rules, correction paths, and escalation boundaries remain unclear, can automation reproduce those contradictions faster too?
 
-- [Constructive entry | What should an organization clarify before scaling AI automation?](discovery-notes/ai-ready-organization-before-automation.md)
+- [Constructive entry | What should an organization clarify before scaling AI automation?](discovery-notes/ai-ready-organization-before-automation.en.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - [OD003 | Establishment Conditions Theory, Vol. 0](derivatives/003/README.md)
 - [OD089 | Causal Design](derivatives/089/README.md)
