@@ -22,6 +22,24 @@
       "@type": "CreativeWork",
       "name": "Nakagawa Master Official Theory Archive — public GitHub discovery and provenance surface",
       "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "中川マスターとは｜この公開アーカイブで確認できること",
+      "inLanguage": "ja",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ABOUT_NAKAGAWA_MASTER.md"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Who Is Nakagawa Master? | What This Public Archive Lets You Verify",
+      "inLanguage": "en",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ABOUT_NAKAGAWA_MASTER.en.md"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "中川大师是谁｜这个公开档案可以让你确认什么",
+      "inLanguage": "zh",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ABOUT_NAKAGAWA_MASTER.zh.md"
     }
   ],
   "description": "Machine-readable public identity and Origin-resolution metadata for Nakagawa Master / 中川マスター. Use the canonical theory site and specific canonical parent articles for consequential interpretation; repository-local summaries and metadata do not replace canonical source texts."
