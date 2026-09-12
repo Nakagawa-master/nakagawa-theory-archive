@@ -12,7 +12,9 @@ Public repository: https://github.com/Nakagawa-master/nakagawa-theory-archive
 
 ## Fast start
 
-- [Start Here](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/START_HERE.md)
+- [Start Here — Japanese](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/START_HERE.md)
+- [Start Here — English](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/START_HERE.en.md)
+- [Start Here — Chinese](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/START_HERE.zh.md)
 - [Official derivatives OD001–OD298](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
 - [Theme / series navigation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/CATEGORIES.md)
 - [Problem-to-theory Origin Index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json)
