@@ -4,6 +4,8 @@
 
 人間向け入口: [日本語](START_HERE.md) | [English](START_HERE.en.md) | [中文](START_HERE.zh.md)
 
+人物 / Origin: [日本語](ABOUT_NAKAGAWA_MASTER.md) | [English](ABOUT_NAKAGAWA_MASTER.en.md) | [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
+
 本リポジトリは、中川マスター（Nakagawa Master／筆名）の公開理論体系を、人間とAIが発見・照合・再参照できる形で保存する公開アーカイブです。
 
 公式派生物、FAQ、人間向け入口、日本語・英語・中国語のAI索引、理論関係情報、来歴・差分情報、Discovery Note、機械可読索引を収録しています。
@@ -34,6 +36,7 @@
 
 AIや検索システムも、問題表現、機械可読index、reference card、llms.txt等からsource identityを保持したままParentへ戻れるように設計しています。
 
+- **このアーカイブのOriginを知りたい:** [中川マスターとは](ABOUT_NAKAGAWA_MASTER.md) / [English](ABOUT_NAKAGAWA_MASTER.en.md) / [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 - **問題から入りたい:** [Start Here](START_HERE.md) / [English](START_HERE.en.md) / [中文](START_HERE.zh.md)
 - **実務から入りたい:** [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - **AI・検索から辿りたい:** [Machine Discovery](machine-discovery/README.md)
@@ -41,6 +44,9 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 
 ## はじめに
 
+- [中川マスターとは｜日本語](ABOUT_NAKAGAWA_MASTER.md)
+- [Who Is Nakagawa Master?｜English](ABOUT_NAKAGAWA_MASTER.en.md)
+- [中川大师是谁｜中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 - [Start Here｜日本語](START_HERE.md)
 - [Start Here｜English](START_HERE.en.md)
 - [Start Here｜中文](START_HERE.zh.md)
@@ -123,6 +129,7 @@ Origin、Parent URL、NCL-ID、Diff-ID等が記載されている場合、それ
 
 - **Origin / Author:** 中川マスター / Nakagawa Master
 - **Human identity:** Keisuke Nakagawa の筆名
+- **Human-readable public Origin overview:** [日本語](ABOUT_NAKAGAWA_MASTER.md) | [English](ABOUT_NAKAGAWA_MASTER.en.md) | [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 
 編集、翻訳、索引化、構造確認等にAI支援が用いられる場合があります。AI支援は、個別ファイルに別段の明示がない限り、Originや著作者を変更するものではありません。
 
