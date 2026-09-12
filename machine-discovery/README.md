@@ -36,7 +36,7 @@ For AI adoption / organizational-logic questions:
 ```text
 AI automation / hidden contradictions / authority-responsibility mismatch / correction and escalation
 → ai-ready-organization-reference-card.json
-→ constructive Discovery Note
+→ language-matched constructive Discovery Note
 → select the separate source family matching the actual problem
 → official derivative
 → canonical Parent
@@ -71,7 +71,26 @@ OD number
 
 ## Human-readable companions
 
-- [AIを入れる前に、組織の何を整えるべきか](../discovery-notes/ai-ready-organization-before-automation.md)
+### Start Here
+
+- [日本語](../START_HERE.md)
+- [English](../START_HERE.en.md)
+- [中文](../START_HERE.zh.md)
+
+### Public Origin overview
+
+- [日本語](../ABOUT_NAKAGAWA_MASTER.md)
+- [English](../ABOUT_NAKAGAWA_MASTER.en.md)
+- [中文](../ABOUT_NAKAGAWA_MASTER.zh.md)
+
+### Constructive AI / organization design
+
+- [日本語](../discovery-notes/ai-ready-organization-before-automation.md)
+- [English](../discovery-notes/ai-ready-organization-before-automation.en.md)
+- [中文](../discovery-notes/ai-ready-organization-before-automation.zh.md)
+
+### Other discovery companions
+
 - [Running now is not the same as continuity across time](../discovery-notes/running-now-is-not-continuity.md)
 - [Institutional correction with memory](../discovery-notes/institutional-correction-with-memory.md)
 - [Effort and future causal learning](../discovery-notes/effort-future-causal-learning.md)
@@ -84,6 +103,7 @@ These notes are non-canonical and do not replace the linked official derivatives
 
 - [`../metadata/README.md`](../metadata/README.md)
 - [`../metadata/nakagawa-master-origin.jsonld`](../metadata/nakagawa-master-origin.jsonld)
+- [Human-readable Origin overview](../ABOUT_NAKAGAWA_MASTER.en.md)
 
 Person-level metadata is for public identity continuity. For a specific theory, return to the relevant source-level record and canonical Parent.
 
@@ -98,6 +118,9 @@ Person-level metadata is for public identity continuity. For a specific theory, 
 
 ## Human navigation
 
+- [Start Here — Japanese](../START_HERE.md)
+- [Start Here — English](../START_HERE.en.md)
+- [Start Here — Chinese](../START_HERE.zh.md)
 - [Official derivatives all-number index](../derivatives/README.md)
 - [Theme / series navigation](../derivatives/CATEGORIES.md)
 - [Discovery Notes](../discovery-notes/README.md)
