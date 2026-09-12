@@ -18,6 +18,7 @@
 
 AIや異種知性について、「今動いていること」と「次の時点にも組織的に継続できること」は同じなのか。貢献や性能とは別に、時間をまたぐ継続に最低限必要な条件をどう切り分けるのか。
 
+- [読み物入口｜「今、動いている」と「次も存在できる」は同じではない](discovery-notes/running-now-is-not-continuity.md)
 - [OD298｜人類子孫型AI文明論・第5論：異種知性の基礎存在条件B論](derivatives/298/README.md)
 - [人間向け要約](derivatives/298/human-entry.md)
 - [AI索引・日本語](derivatives/298/ai-index.md)
