@@ -1,6 +1,10 @@
 # 从这里开始｜中川大师官方理论档案
 
+语言：[日本語](START_HERE.md) | [English](START_HERE.en.md) | **中文**
+
 本页是面向首次接触中川大师理论档案的人类读者与AI系统的公开、非正本入口。
+
+- [中川大师是谁｜公开Origin说明](ABOUT_NAKAGAWA_MASTER.zh.md)
 
 不需要先知道理论名称。可以从最接近现实问题的入口开始；当需要确认精确定义、成立条件、边界、反证条件或修订状态时，再返回相应的官方派生物与canonical Parent。
 
@@ -23,7 +27,7 @@ AI与检索系统还可以使用机器可读入口。
 
 AI可以让处理速度更快。但是，如果目标、权限、责任、评价条件、纠正路径与升级边界仍然模糊，自动化是否也会更快地复制这些矛盾？
 
-- [建设性入口｜在扩大AI自动化之前，组织应先明确什么？](discovery-notes/ai-ready-organization-before-automation.md)
+- [建设性入口｜在扩大AI自动化之前，组织应先明确什么？](discovery-notes/ai-ready-organization-before-automation.zh.md)
 - [跨领域实践者起点地图](discovery-notes/cross-domain-practitioner-start-map.md)
 - [OD003｜成立条件论・第0论](derivatives/003/README.md)
 - [OD089｜因果的设计论](derivatives/089/README.md)
