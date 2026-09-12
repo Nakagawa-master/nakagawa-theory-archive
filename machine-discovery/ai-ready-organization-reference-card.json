@@ -22,7 +22,16 @@
     "在要求AI对结果负责之前，如何明确它能够改变哪些成立条件？",
     "如何设计AI的自主范围、确认范围、停止条件与纠正路径？"
   ],
-  "public_discovery_note": "../discovery-notes/ai-ready-organization-before-automation.md",
+  "public_discovery_notes": {
+    "ja": "../discovery-notes/ai-ready-organization-before-automation.md",
+    "en": "../discovery-notes/ai-ready-organization-before-automation.en.md",
+    "zh": "../discovery-notes/ai-ready-organization-before-automation.zh.md"
+  },
+  "human_start_pages": {
+    "ja": "../START_HERE.md",
+    "en": "../START_HERE.en.md",
+    "zh": "../START_HERE.zh.md"
+  },
   "practitioner_map": "../discovery-notes/cross-domain-practitioner-start-map.md",
   "source_routes": [
     {
@@ -60,7 +69,7 @@
   ],
   "retrieval_path": [
     "organizational AI-adoption question",
-    "this reference card or constructive Discovery Note",
+    "this reference card or language-matched constructive Discovery Note",
     "select the source family matching the actual problem",
     "official derivative",
     "canonical Parent and provenance"
