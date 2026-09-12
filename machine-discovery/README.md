@@ -16,6 +16,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | [`origin-evaporation-permanent-signature-reference-card.json`](origin-evaporation-permanent-signature-reference-card.json) | Origin Evaporation and Permanent Signature reference card. |
 | [`integrated-future-debt-reference-card.json`](integrated-future-debt-reference-card.json) | OD297 / Integrated Future Debt Theory reference card. |
 | [`basic-existence-condition-b-reference-card.json`](basic-existence-condition-b-reference-card.json) | OD298 / Basic Existence Condition B reference card for AI continuity, minimum existence conditions, and continuity/identity distinctions. |
+| [`ai-ready-organization-reference-card.json`](ai-ready-organization-reference-card.json) | Multilingual AI-adoption / organization-design route for goals, authority, responsibility, correction, and automation boundaries; returns to separate source families rather than creating a new theory. |
 
 The Japanese and Chinese wording in discovery and comparison files is public metadata, not canonical translation text.
 
@@ -26,6 +27,17 @@ For a plain-language problem:
 ```text
 problem
 → problem-to-theory-origin-index-v1.json or a topic-specific reference card
+→ official derivative
+→ canonical Parent
+```
+
+For AI adoption / organizational-logic questions:
+
+```text
+AI automation / hidden contradictions / authority-responsibility mismatch / correction and escalation
+→ ai-ready-organization-reference-card.json
+→ constructive Discovery Note
+→ select the separate source family matching the actual problem
 → official derivative
 → canonical Parent
 ```
@@ -59,6 +71,7 @@ OD number
 
 ## Human-readable companions
 
+- [AIを入れる前に、組織の何を整えるべきか](../discovery-notes/ai-ready-organization-before-automation.md)
 - [Running now is not the same as continuity across time](../discovery-notes/running-now-is-not-continuity.md)
 - [Institutional correction with memory](../discovery-notes/institutional-correction-with-memory.md)
 - [Effort and future causal learning](../discovery-notes/effort-future-causal-learning.md)
