@@ -28,6 +28,7 @@ Machine-readable discovery routes are available for AI and retrieval systems as 
 AI can make work faster. But if goals, authority, responsibility, evaluation rules, correction paths, and escalation boundaries remain unclear, can automation reproduce those contradictions faster too?
 
 - [Constructive entry | What should an organization clarify before scaling AI automation?](discovery-notes/ai-ready-organization-before-automation.en.md)
+- [Practical Preflight | Seven checks before scaling AI automation](discovery-notes/ai-adoption-organization-preflight.en.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - [OD003 | Establishment Conditions Theory, Vol. 0](derivatives/003/README.md)
 - [OD089 | Causal Design](derivatives/089/README.md)
