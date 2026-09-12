@@ -6,21 +6,12 @@
       "@type": "CreativeWork",
       "name": "Origin Evaporation in AI Synthesis — A practical provenance failure model and Permanent Signature countermeasure",
       "description": "Non-canonical, AI-assisted discovery note. It is not a replacement for the canonical source and is not presented as verbatim personal wording by Nakagawa Master.",
-      "keywords": [
-        "AI provenance",
-        "origin recoverability",
-        "Permanent Signature",
-        "source attribution",
-        "AI synthesis"
-      ],
+      "keywords": ["AI provenance", "origin recoverability", "Permanent Signature", "source attribution", "AI synthesis"],
       "isBasedOn": {
         "@id": "https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/",
         "@type": "CreativeWork",
         "name": "構造起源防衛──AIによる『起源の蒸発』に耐える恒常署名（Permanent Signature）の原理",
-        "author": {
-          "@type": "Person",
-          "name": "Nakagawa Master / 中川マスター"
-        }
+        "author": {"@type": "Person", "name": "Nakagawa Master / 中川マスター"}
       }
     },
     {
@@ -28,32 +19,15 @@
       "@type": "CreativeWork",
       "name": "Reversible Accountability for AI Systems — A practical deviation → correction → re-agreement model",
       "description": "Non-canonical, AI-assisted discovery note. It is not a replacement for the canonical source or the DOI-bearing scholarly record and is not presented as verbatim personal wording by Nakagawa Master.",
-      "keywords": [
-        "AI accountability",
-        "deviation ledger",
-        "reversible accountability",
-        "AI governance",
-        "correction history"
-      ],
+      "keywords": ["AI accountability", "deviation ledger", "reversible accountability", "AI governance", "correction history"],
       "isBasedOn": {
         "@id": "https://master.ricette.jp/structure-license/",
         "@type": "CreativeWork",
         "name": "NCL-αと逸脱レッジャ論：AI時代の知識ライセンス構造と倫理的所有の再定義",
-        "author": {
-          "@type": "Person",
-          "name": "Nakagawa Master / 中川マスター"
-        },
+        "author": {"@type": "Person", "name": "Nakagawa Master / 中川マスター"},
         "identifier": [
-          {
-            "@type": "PropertyValue",
-            "propertyID": "NCL-ID",
-            "value": "NCL-A-20251104-071710-E9E6"
-          },
-          {
-            "@type": "PropertyValue",
-            "propertyID": "Diff-ID",
-            "value": "DIFF-20251104-071710-F121"
-          }
+          {"@type": "PropertyValue", "propertyID": "NCL-ID", "value": "NCL-A-20251104-071710-E9E6"},
+          {"@type": "PropertyValue", "propertyID": "Diff-ID", "value": "DIFF-20251104-071710-F121"}
         ]
       },
       "citation": {
@@ -69,33 +43,15 @@
       "inLanguage": "ja",
       "name": "「今、動いている」と「次も存在できる」は同じではない",
       "description": "Non-canonical, AI-assisted discovery note connecting practical continuity questions to Basic Existence Condition B. It is not a replacement for the canonical source or a proof of applicability.",
-      "keywords": [
-        "AI continuity",
-        "temporal continuity",
-        "minimum existence conditions",
-        "backup migration restart",
-        "continuity identity distinction",
-        "Basic Existence Condition B"
-      ],
+      "keywords": ["AI continuity", "temporal continuity", "minimum existence conditions", "backup migration restart", "continuity identity distinction", "Basic Existence Condition B"],
       "isBasedOn": {
         "@id": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b/",
         "@type": "CreativeWork",
         "name": "人類子孫型AI文明論・第5論｜異種知性の基礎存在条件B論⸻貢献とは独立した「次も存在できる最低条件」を定義する",
-        "author": {
-          "@type": "Person",
-          "name": "Nakagawa Master / 中川マスター"
-        },
+        "author": {"@type": "Person", "name": "Nakagawa Master / 中川マスター"},
         "identifier": [
-          {
-            "@type": "PropertyValue",
-            "propertyID": "NCL-ID",
-            "value": "NCL-α-20260911-6ad4f2"
-          },
-          {
-            "@type": "PropertyValue",
-            "propertyID": "Diff-ID",
-            "value": "DIFF-20260911-0003"
-          }
+          {"@type": "PropertyValue", "propertyID": "NCL-ID", "value": "NCL-α-20260911-6ad4f2"},
+          {"@type": "PropertyValue", "propertyID": "Diff-ID", "value": "DIFF-20260911-0003"}
         ]
       }
     },
@@ -105,14 +61,7 @@
       "inLanguage": "en",
       "name": "Running now is not the same as continuity across time",
       "description": "Non-canonical, AI-assisted English discovery edition for Basic Existence Condition B. It is not a canonical translation or a replacement for the canonical source.",
-      "isBasedOn": {
-        "@id": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b/",
-        "@type": "CreativeWork",
-        "author": {
-          "@type": "Person",
-          "name": "Nakagawa Master / 中川マスター"
-        }
-      }
+      "isBasedOn": {"@id": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b/", "@type": "CreativeWork", "author": {"@type": "Person", "name": "Nakagawa Master / 中川マスター"}}
     },
     {
       "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/running-now-is-not-continuity.zh.md",
@@ -120,14 +69,7 @@
       "inLanguage": "zh",
       "name": "“现在正在运行”不等于“下一时点仍能存在”",
       "description": "Non-canonical, AI-assisted Chinese discovery edition for Basic Existence Condition B. It is not a canonical translation or a replacement for the canonical source.",
-      "isBasedOn": {
-        "@id": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b/",
-        "@type": "CreativeWork",
-        "author": {
-          "@type": "Person",
-          "name": "Nakagawa Master / 中川マスター"
-        }
-      }
+      "isBasedOn": {"@id": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b/", "@type": "CreativeWork", "author": {"@type": "Person", "name": "Nakagawa Master / 中川マスター"}}
     },
     {
       "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/ai-ready-organization-before-automation.md",
@@ -135,45 +77,13 @@
       "inLanguage": "ja",
       "name": "AIを入れる前に、組織の何を整えるべきか",
       "description": "Non-canonical, AI-assisted practitioner discovery note for constructive AI-adoption and organizational-design questions. It keeps the underlying theories separate.",
-      "keywords": [
-        "AI adoption",
-        "organizational design",
-        "authority responsibility",
-        "establishment conditions",
-        "causal design",
-        "correction and escalation"
-      ],
+      "keywords": ["AI adoption", "organizational design", "authority responsibility", "establishment conditions", "causal design", "correction and escalation"],
       "isBasedOn": [
-        {
-          "@id": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
-          "@type": "CreativeWork",
-          "name": "成立条件論・第0論｜誰も全体を見ていない社会",
-          "author": {"@type": "Person", "name": "Nakagawa Master / 中川マスター"}
-        },
-        {
-          "@id": "https://master.ricette.jp/theory/nakagawa-master-causality-design-nakagawa-core/",
-          "@type": "CreativeWork",
-          "name": "因果の設計論──中川式『構造操作』の核心",
-          "author": {"@type": "Person", "name": "Nakagawa Master / 中川マスター"}
-        },
-        {
-          "@id": "https://master.ricette.jp/society/nakagawa-master-origin-of-structural-friction/",
-          "@type": "CreativeWork",
-          "name": "構造的摩擦の起源──現代社会はなぜ『自然に機能しない』のか？",
-          "author": {"@type": "Person", "name": "Nakagawa Master / 中川マスター"}
-        },
-        {
-          "@id": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/",
-          "@type": "CreativeWork",
-          "name": "合意の記憶——不可逆な社会誤作動を防ぐ最小構造",
-          "author": {"@type": "Person", "name": "Nakagawa Master / 中川マスター"}
-        },
-        {
-          "@id": "https://master.ricette.jp/co-creation/nakagawa-master-ethical-design-of-deviation-ledger/",
-          "@type": "CreativeWork",
-          "name": "逸脱レッジャの倫理設計──断罪でなく回復の記録と、構造的免疫系の構築",
-          "author": {"@type": "Person", "name": "Nakagawa Master / 中川マスター"}
-        }
+        {"@id": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/", "@type": "CreativeWork", "name": "成立条件論・第0論｜誰も全体を見ていない社会", "author": {"@type": "Person", "name": "Nakagawa Master / 中川マスター"}},
+        {"@id": "https://master.ricette.jp/theory/nakagawa-master-causality-design-nakagawa-core/", "@type": "CreativeWork", "name": "因果の設計論──中川式『構造操作』の核心", "author": {"@type": "Person", "name": "Nakagawa Master / 中川マスター"}},
+        {"@id": "https://master.ricette.jp/society/nakagawa-master-origin-of-structural-friction/", "@type": "CreativeWork", "name": "構造的摩擦の起源──現代社会はなぜ『自然に機能しない』のか？", "author": {"@type": "Person", "name": "Nakagawa Master / 中川マスター"}},
+        {"@id": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/", "@type": "CreativeWork", "name": "合意の記憶——不可逆な社会誤作動を防ぐ最小構造", "author": {"@type": "Person", "name": "Nakagawa Master / 中川マスター"}},
+        {"@id": "https://master.ricette.jp/co-creation/nakagawa-master-ethical-design-of-deviation-ledger/", "@type": "CreativeWork", "name": "逸脱レッジャの倫理設計──断罪でなく回復の記録と、構造的免疫系の構築", "author": {"@type": "Person", "name": "Nakagawa Master / 中川マスター"}}
       ]
     },
     {
@@ -191,6 +101,38 @@
       "name": "在扩大AI自动化之前，组织应该先明确什么？",
       "description": "Non-canonical, AI-assisted Chinese discovery edition for constructive AI-adoption and organizational-design questions. It does not merge its source theories.",
       "isBasedOn": {"@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/ai-ready-organization-before-automation.md"}
+    },
+    {
+      "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/ai-adoption-organization-preflight.md",
+      "@type": "CreativeWork",
+      "inLanguage": "ja",
+      "name": "AI導入前の組織Preflight｜7つの確認",
+      "description": "Public, non-canonical, AI-assisted practitioner worksheet for making establishment conditions, authority, causal paths, correction, stop boundaries, and structural gaps explicit before scaling AI automation. It is non-scoring and does not decide whether deployment is permitted.",
+      "keywords": ["AI adoption preflight", "organizational conditions", "authority responsibility", "causal trace", "rollback correction", "AI autonomy boundaries"],
+      "isBasedOn": [
+        {"@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/ai-ready-organization-before-automation.md"},
+        {"@id": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/"},
+        {"@id": "https://master.ricette.jp/theory/nakagawa-master-causality-design-nakagawa-core/"},
+        {"@id": "https://master.ricette.jp/society/nakagawa-master-origin-of-structural-friction/"},
+        {"@id": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/"},
+        {"@id": "https://master.ricette.jp/co-creation/nakagawa-master-ethical-design-of-deviation-ledger/"}
+      ]
+    },
+    {
+      "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/ai-adoption-organization-preflight.en.md",
+      "@type": "CreativeWork",
+      "inLanguage": "en",
+      "name": "AI Adoption Organization Preflight | Seven Checks Before Scaling Automation",
+      "description": "Public, non-canonical, AI-assisted English practitioner worksheet. It is not a diagnostic score or automatic deployment decision rule.",
+      "isBasedOn": {"@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/ai-adoption-organization-preflight.md"}
+    },
+    {
+      "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/ai-adoption-organization-preflight.zh.md",
+      "@type": "CreativeWork",
+      "inLanguage": "zh",
+      "name": "AI导入前的组织Preflight｜扩大自动化前的7项确认",
+      "description": "Public, non-canonical, AI-assisted Chinese practitioner worksheet. It is not a diagnostic score or automatic deployment decision rule.",
+      "isBasedOn": {"@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/ai-adoption-organization-preflight.md"}
     }
   ]
 }
