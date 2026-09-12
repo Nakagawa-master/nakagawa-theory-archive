@@ -28,6 +28,7 @@ AI与检索系统还可以使用机器可读入口。
 AI可以让处理速度更快。但是，如果目标、权限、责任、评价条件、纠正路径与升级边界仍然模糊，自动化是否也会更快地复制这些矛盾？
 
 - [建设性入口｜在扩大AI自动化之前，组织应先明确什么？](discovery-notes/ai-ready-organization-before-automation.zh.md)
+- [实际案件用Preflight｜扩大自动化前的7项确认](discovery-notes/ai-adoption-organization-preflight.zh.md)
 - [跨领域实践者起点地图](discovery-notes/cross-domain-practitioner-start-map.md)
 - [OD003｜成立条件论・第0论](derivatives/003/README.md)
 - [OD089｜因果的设计论](derivatives/089/README.md)
