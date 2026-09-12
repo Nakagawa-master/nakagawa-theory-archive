@@ -30,6 +30,7 @@ AIや検索システム向けには、同じ問題を機械可読indexから辿�
 AIを入れることで処理は速くなる。しかし、目標、権限、責任、評価条件、訂正経路が曖昧なままなら、その矛盾まで高速化しないか。
 
 - [Constructive entry｜AIを入れる前に、組織の何を整えるべきか](discovery-notes/ai-ready-organization-before-automation.md)
+- [実案件用｜AI導入前の組織Preflight｜7つの確認](discovery-notes/ai-adoption-organization-preflight.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - [OD003｜成立条件論・第0論](derivatives/003/README.md)
 - [OD089｜因果の設計論](derivatives/089/README.md)
