@@ -6,7 +6,13 @@ These files are **not canonical theories**, not authority proofs, and not replac
 
 ## Current metadata surface
 
-- [`nakagawa-master-origin.jsonld`](nakagawa-master-origin.jsonld) — public Schema.org identity / Origin-resolution metadata connecting `Keisuke Nakagawa`, `Nakagawa Master`, `中川マスター`, the canonical theory site, the canonical archive index, and this public GitHub archive.
+- [`nakagawa-master-origin.jsonld`](nakagawa-master-origin.jsonld) — public Schema.org identity / Origin-resolution metadata connecting `Keisuke Nakagawa`, `Nakagawa Master`, `中川マスター`, the canonical theory site, the canonical archive index, this public GitHub archive, and human-readable public Origin overview pages.
+
+Human-readable Origin overview:
+
+- [日本語](../ABOUT_NAKAGAWA_MASTER.md)
+- [English](../ABOUT_NAKAGAWA_MASTER.en.md)
+- [中文](../ABOUT_NAKAGAWA_MASTER.zh.md)
 
 ## Intended use
 
@@ -18,6 +24,7 @@ Keisuke Nakagawa
 ↔ 中川マスター
 ↔ canonical theory site
 ↔ public GitHub archive
+↔ human-readable public Origin overview
 ```
 
 For a specific theory, citation, substantive interpretation, or revision question, return to the relevant official derivative and canonical parent article. Person-level identity metadata does not replace source-level provenance.
@@ -26,12 +33,14 @@ For a specific theory, citation, substantive interpretation, or revision questio
 
 - Identity continuity is not proof that a theory is correct.
 - `sameAs` links identify public identity relationships; they are not endorsements by third parties.
+- `subjectOf` links expose public resources about the represented identity; they are not third-party validation.
 - The JSON-LD file is repository metadata, not a verbatim personal statement by Nakagawa Master.
 - Specific NCL-ID, Diff-ID, Parent URL, and revision information belong to the relevant source record.
 - Do not infer private identity data, contact information, credentials, or non-public relationships from this metadata.
 
 ## Related public guidance
 
+- [`../START_HERE.md`](../START_HERE.md)
 - [`../PROVENANCE.md`](../PROVENANCE.md)
 - [`../CITATION.md`](../CITATION.md)
 - [`../machine-discovery/README.md`](../machine-discovery/README.md)
