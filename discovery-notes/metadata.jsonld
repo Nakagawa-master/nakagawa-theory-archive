@@ -62,6 +62,41 @@
         "identifier": "https://doi.org/10.5281/zenodo.17520659",
         "url": "https://zenodo.org/records/17520659"
       }
+    },
+    {
+      "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/running-now-is-not-continuity.md",
+      "@type": "CreativeWork",
+      "name": "「今、動いている」と「次も存在できる」は同じではない",
+      "description": "Non-canonical, AI-assisted discovery note connecting practical continuity questions to Basic Existence Condition B. It is not a replacement for the canonical source or a proof of applicability.",
+      "keywords": [
+        "AI continuity",
+        "temporal continuity",
+        "minimum existence conditions",
+        "backup migration restart",
+        "continuity identity distinction",
+        "Basic Existence Condition B"
+      ],
+      "isBasedOn": {
+        "@id": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b/",
+        "@type": "CreativeWork",
+        "name": "人類子孫型AI文明論・第5論｜異種知性の基礎存在条件B論⸻貢献とは独立した「次も存在できる最低条件」を定義する",
+        "author": {
+          "@type": "Person",
+          "name": "Nakagawa Master / 中川マスター"
+        },
+        "identifier": [
+          {
+            "@type": "PropertyValue",
+            "propertyID": "NCL-ID",
+            "value": "NCL-α-20260911-6ad4f2"
+          },
+          {
+            "@type": "PropertyValue",
+            "propertyID": "Diff-ID",
+            "value": "DIFF-20260911-0003"
+          }
+        ]
+      }
     }
   ]
 }
