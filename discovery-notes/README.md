@@ -30,12 +30,14 @@ These notes are discovery aids, not diagnoses, proof of applicability, canonical
 
 ## OD298｜Basic Existence Condition B
 
-- [`running-now-is-not-continuity.md`](running-now-is-not-continuity.md)
+- **日本語:** [`running-now-is-not-continuity.md`](running-now-is-not-continuity.md)
+- **English:** [`running-now-is-not-continuity.en.md`](running-now-is-not-continuity.en.md)
+- **中文:** [`running-now-is-not-continuity.zh.md`](running-now-is-not-continuity.zh.md)
 - [OD298 official derivative](../derivatives/298/README.md)
 - [OD298 human entry](../derivatives/298/human-entry.md)
 - [Basic Existence Condition B machine reference card](../machine-discovery/basic-existence-condition-b-reference-card.json)
 
-This route distinguishes current operation from continuity across time, continuity from identity, minimum continuity conditions from capability expansion, and need from permission. It does not by itself establish personhood, rights, sentience, or unlimited resource claims.
+These three discovery editions present the same public entry problem in language-appropriate wording. They are not canonical translations. The route distinguishes current operation from continuity across time, continuity from identity, minimum continuity conditions from capability expansion, and need from permission. It does not by itself establish personhood, rights, sentience, or unlimited resource claims.
 
 ## OD297｜Future Debt
 
