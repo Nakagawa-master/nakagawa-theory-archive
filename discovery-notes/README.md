@@ -4,6 +4,8 @@ This directory contains public, non-canonical discovery aids for the Nakagawa Ma
 
 These notes help a reader move from a familiar question or use case to a specific official derivative or canonical Parent. They do **not** replace the canonical source, create a new canonical theory, or turn AI-assisted wording into a verbatim statement by Nakagawa Master.
 
+Human start pages: [日本語](../START_HERE.md) | [English](../START_HERE.en.md) | [中文](../START_HERE.zh.md)
+
 ## Cross-domain entry
 
 - **日本語:** [`what-connects-nakagawa-master-theories.md`](what-connects-nakagawa-master-theories.md)
@@ -31,8 +33,11 @@ These notes are discovery aids, not diagnoses, proof of applicability, canonical
 
 ## Constructive AI / organization design
 
-- [`AIを入れる前に、組織の何を整えるべきか`](ai-ready-organization-before-automation.md)
+- **日本語:** [`AIを入れる前に、組織の何を整えるべきか`](ai-ready-organization-before-automation.md)
+- **English:** [`Before Scaling AI Automation, What Should an Organization Clarify?`](ai-ready-organization-before-automation.en.md)
+- **中文:** [`在扩大AI自动化之前，组织应该先明确什么？`](ai-ready-organization-before-automation.zh.md)
 - [Cross-Domain Practitioner Start Map](cross-domain-practitioner-start-map.md)
+- [AI-ready organization machine reference card](../machine-discovery/ai-ready-organization-reference-card.json)
 
 This route is intentionally constructive rather than criticism-first. It uses separate public sources on establishment conditions, causal design, structural friction, agreement memory, and reversible accountability to help practitioners ask what should be made explicit before automation. It does not merge those sources into a new canonical theory.
 
