@@ -31,6 +31,8 @@ real problem
 
 The strength of an individual theory should be judged from the source itself: explanatory power, boundaries, counterexamples, internal consistency, and actual applicability—not from the Origin name alone.
 
+If you do not know a theory name and want to start from a real problem, use the [public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399). Do not post confidential, personal, customer, or proprietary information.
+
 ## Representative public routes
 
 ### AI / knowledge / Origin
@@ -38,6 +40,7 @@ The strength of an individual theory should be judged from the source itself: ex
 Can an AI-generated answer still return to the initiating question, source, responsibility, and intellectual Origin after transformation?
 
 - [OD105 | Structural Origin Defense](derivatives/105/README.md)
+- [AI Product Team Origin-Preservation Checklist](discovery-notes/ai-product-team-origin-preservation-checklist.md)
 - [OD115 | Origin of Questions and Responsibility](derivatives/115/README.md)
 
 ### AI / continuity across time
@@ -46,6 +49,7 @@ Separate an AI being operational now from remaining capable of organized continu
 
 - [OD298 | Basic Existence Condition B](derivatives/298/README.md)
 - [Readable English entry](discovery-notes/running-now-is-not-continuity.en.md)
+- [Runtime continuity practitioner Preflight](discovery-notes/ai-runtime-continuity-preflight.md)
 
 ### Organizations / business
 
@@ -74,6 +78,7 @@ These are representative entry points, not a claim that the archive forms one un
 ## Start reading
 
 - [Start Here — English](START_HERE.en.md)
+- [Public dialogue | Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive? — English](discovery-notes/what-connects-nakagawa-master-theories.en.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - [OD001–OD298 index](derivatives/README.md)
