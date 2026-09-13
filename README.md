@@ -38,6 +38,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 
 - **このアーカイブのOriginを知りたい:** [中川マスターとは](ABOUT_NAKAGAWA_MASTER.md) / [English](ABOUT_NAKAGAWA_MASTER.en.md) / [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 - **問題から入りたい:** [Start Here](START_HERE.md) / [English](START_HERE.en.md) / [中文](START_HERE.zh.md)
+- **実際の問題を持ち込みたい:** [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - **実務から入りたい:** [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - **AI・検索から辿りたい:** [Machine Discovery](machine-discovery/README.md)
 - **来歴を確認したい:** [Verification Guide](VERIFICATION_GUIDE.md)
@@ -50,6 +51,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [Start Here｜日本語](START_HERE.md)
 - [Start Here｜English](START_HERE.en.md)
 - [Start Here｜中文](START_HERE.zh.md)
+- [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
 - [OD001–OD298 全件入口](derivatives/README.md)
 - [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
@@ -65,8 +67,9 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 
 ## 問題から探す
 
-理論名を知らない場合は、公開Discovery Noteや機械可読索引から問題に近い入口を選べます。
+理論名を知らない場合は、公開Discovery Noteや機械可読索引から問題に近い入口を選べます。実際の問題からsource案内を受けたい場合は、公開対話入口を利用できます。
 
+- [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [Discovery Notes](discovery-notes/README.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - [Problem-to-theory Origin Index](machine-discovery/problem-to-theory-origin-index-v1.json)
