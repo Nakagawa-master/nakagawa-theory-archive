@@ -6,6 +6,7 @@
 
 - [中川マスターとは｜この公開アーカイブで確認できること](ABOUT_NAKAGAWA_MASTER.md)
 - [4つの場面から入る｜AI・会社・未来・起源](discovery-notes/four-scenes-one-structural-view.md)
+- [実際の問題に使う｜Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [実際の問題を持ち込む｜公開対話入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
 このページ自体は理論の正本ではありません。定義、成立条件、反証条件、改訂状態を確認するときは、各公式派生物から親原典へ戻ってください。
@@ -14,18 +15,19 @@
 
 理論名を知らなくても問題ありません。
 
-**いま困っていること・考えていることに近い問いを選び、読みやすい入口から入り、必要なら公式派生物とParentへ戻る**ためのページです。
+**いま困っていること・考えていることに近い問いを選び、読みやすい入口から入り、必要なら実際に使い、公式派生物とParentへ戻る**ためのページです。
 
 ```text
 問題
-→ 読みやすい入口 / 公開対話
+→ 読みやすい入口
+→ 自分で使う / 公開で質問する / 実装可能性を探る
 → 公式派生物 / FAQ / AI索引
 → canonical Parent
 ```
 
 AIや検索システム向けには、同じ問題を機械可読indexから辿れる入口も用意しています。
 
-理論名からではなく場面から入りたい場合は、[4つの場面から入る中川マスター理論](discovery-notes/four-scenes-one-structural-view.md)を使えます。実際のケースを短く書いてsource案内を受けたい場合は、[公開対話入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)を利用できます。機密情報・個人情報・社外秘は書かないでください。
+理論名からではなく場面から入りたい場合は、[4つの場面から入る中川マスター理論](discovery-notes/four-scenes-one-structural-view.md)を使えます。実務へ落としたい場合は[Practical Use & Collaboration Entry](PRACTICAL_USE.md)、実際のケースを短く書いてsource案内を受けたい場合は[公開対話入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)を利用できます。機密情報・個人情報・社外秘は書かないでください。
 
 ## 問題から選ぶ
 
@@ -91,6 +93,7 @@ AIによる要約・翻訳・再生成の後でも、知識がどこから来た
 
 ## 横断的に探す
 
+- [実際の問題に使う｜Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [4つの場面から入る｜Story-first Discovery](discovery-notes/four-scenes-one-structural-view.md)
 - [公開対話入口｜実際の問題からsourceを探す](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
@@ -115,6 +118,6 @@ AIによる要約・翻訳・再生成の後でも、知識がどこから来た
 
 - 親原典は具体的な理論内容を確認するための主要sourceです。
 - 公式派生物は親原典へ戻るための公開接続面です。
-- Discovery Note、物語型入口、micro-format、machine metadataは発見・理解・参照の補助面であり、新しい正本理論ではありません。
+- Discovery Note、物語型入口、Practical Use、micro-format、machine metadataは発見・理解・実利用・参照の補助面であり、新しい正本理論ではありません。
 - 英語・中国語のAI支援Discovery editionは、個別理論のcanonical translationではありません。
 - 別々の理論は、親原典で明示的に接続されていない限り、一つの新しい理論へ自動統合しません。
