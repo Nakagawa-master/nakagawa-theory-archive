@@ -50,6 +50,12 @@ Before shipping an AI answer, summary, derivative page, retrieved synthesis, or 
 - Is provenance carried as structured metadata where the receiving system supports it?
 - If content is cached or deduplicated, does the cache preserve the correct provenance-bearing identity for the actual input?
 
+A public non-canonical machine-readable implementation aid is available here:
+
+- [Provenance Continuity Record JSON Schema v1](../machine-discovery/provenance-continuity-record-schema-v1.json)
+
+The schema is optional and does not replace the canonical theory. It is one way to make the return path and transformation relationship explicit in software.
+
 ### 5. Content equivalence is not mistaken for source-identity equivalence
 
 Two documents can contain identical or nearly identical content while remaining different sources.
@@ -98,6 +104,7 @@ For an ordinary RAG or data pipeline, the equivalent fields may instead be a sta
 - Not every missing metadata field is automatically an instance of Origin Evaporation.
 - A system may intentionally deduplicate content; the important question is whether source identity required by downstream use remains reconstructable.
 - This checklist does not prescribe a specific database, cache-key algorithm, vector store, citation format, or legal attribution rule.
+- The machine-readable schema is an implementation aid, not an automatic validator that a theory applies.
 - Provider retrieval, search ranking, model-training attribution, copyright, and deliberate removal of attribution are separate questions.
 
 ## Canonical return
