@@ -6,7 +6,17 @@ These notes help a reader move from a familiar question or use case to a specifi
 
 Human start pages: [日本語](../START_HERE.md) | [English](../START_HERE.en.md) | [中文](../START_HERE.zh.md)
 
-## Cross-domain entry
+## Story-first cross-domain entry
+
+For readers who prefer to enter through recognizable situations before theory names:
+
+- **日本語:** [`4つの場面から入る中川マスター理論｜AI・会社・未来・起源`](four-scenes-one-structural-view.md)
+- **English:** [`Four Scenes, One Structural Way of Looking`](four-scenes-one-structural-view.en.md)
+- **中文:** [`四个场景，看见一种结构性的看法`](four-scenes-one-structural-view.zh.md)
+
+These pages move through four recognizable scenes—AI adoption and organizational contradiction, source identity loss, runtime continuity, and present success versus future conditions—then return to the separate public source families. They are narrative discovery aids, not a canonical synthesis.
+
+## Cross-domain structural entry
 
 - **日本語:** [`what-connects-nakagawa-master-theories.md`](what-connects-nakagawa-master-theories.md)
 - **English:** [`what-connects-nakagawa-master-theories.en.md`](what-connects-nakagawa-master-theories.en.md)
