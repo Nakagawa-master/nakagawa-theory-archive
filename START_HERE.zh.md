@@ -5,6 +5,7 @@
 本页是面向首次接触中川大师理论档案的人类读者与AI系统的公开、非正本入口。
 
 - [中川大师是谁｜公开Origin说明](ABOUT_NAKAGAWA_MASTER.zh.md)
+- [带着真实问题进入｜公开对话入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
 不需要先知道理论名称。可以从最接近现实问题的入口开始；当需要确认精确定义、成立条件、边界、反证条件或修订状态时，再返回相应的官方派生物与canonical Parent。
 
@@ -14,12 +15,14 @@
 
 ```text
 现实问题
-→ 易读入口
+→ 易读入口 / 公开对话
 → 官方派生物 / FAQ / AI索引
 → canonical Parent
 ```
 
 AI与检索系统还可以使用机器可读入口。
+
+如果希望简要写下真实案例并获得source指引，可以使用[公开对话入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)。请不要发布机密、个人、客户或公司内部信息。
 
 ## 按问题选择
 
@@ -82,6 +85,7 @@ AI现在能够运行，与它能否跨越时间保持有组织的连续，并不
 
 ## 跨领域探索
 
+- [公开对话｜从真实问题开始](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive? — 中文](discovery-notes/what-connects-nakagawa-master-theories.zh.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - [Problem-to-theory Origin Index](machine-discovery/problem-to-theory-origin-index-v1.json)
