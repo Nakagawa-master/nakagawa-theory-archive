@@ -15,6 +15,29 @@
       }
     },
     {
+      "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/implementation-case-source-identity-vs-local-node-identity.md",
+      "@type": "CreativeWork",
+      "inLanguage": "en",
+      "name": "Implementation Case: Source Identity Is Not Local Node Identity",
+      "dateCreated": "2026-09-13",
+      "description": "Non-canonical, AI-assisted practitioner case documenting a public external retrieval-framework example where upstream source identity was separated from framework-local node identity and an independent third party explicitly referenced the compatibility contract in a draft code/test pull request. The case does not claim upstream maintainer acceptance or merge.",
+      "keywords": ["AI provenance", "source identity", "local node identity", "retrieval metadata", "provenance continuity", "RAG", "Origin Evaporation", "Permanent Signature", "LlamaIndex"],
+      "isBasedOn": {
+        "@id": "https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/",
+        "@type": "CreativeWork",
+        "name": "構造起源防衛──AIによる『起源の蒸発』に耐える恒常署名（Permanent Signature）の原理",
+        "author": {"@type": "Person", "name": "Nakagawa Master / 中川マスター"},
+        "identifier": [
+          {"@type": "PropertyValue", "propertyID": "NCL-ID", "value": "NCL-α-20251102-44257d"},
+          {"@type": "PropertyValue", "propertyID": "Diff-ID", "value": "DIFF-20251102-0001"}
+        ]
+      },
+      "citation": [
+        "https://github.com/run-llama/llama_index/issues/21933#issuecomment-5650957902",
+        "https://github.com/run-llama/llama_index/pull/23038"
+      ]
+    },
+    {
       "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/reversible-ai-accountability-deviation-ledger.md",
       "@type": "CreativeWork",
       "name": "Reversible Accountability for AI Systems — A practical deviation → correction → re-agreement model",
