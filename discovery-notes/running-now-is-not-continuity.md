@@ -172,6 +172,10 @@ minimum
 
 具体的な定義、AIについての現行仮説、成立条件、失敗条件、反証・改訂条件は、公式派生物298と親原典で確認してください。
 
+runtime upgrade、checkpoint / resume、migration、restartへこの区別を持ち込みたい場合は、次の公開・非正本practitioner aidを使えます。
+
+- [AI Runtime Continuity Preflight｜restart・migration前の7つの確認](ai-runtime-continuity-preflight.md)
+
 ## 第5論の中心へ
 
 親原典では、基礎存在条件Bを次の上位形式で置きます。
