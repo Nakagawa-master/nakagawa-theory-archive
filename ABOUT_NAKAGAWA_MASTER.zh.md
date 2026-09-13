@@ -31,6 +31,8 @@
 
 单个理论的强度应从source本身判断：解释力、边界、反例条件、内部一致性与实际适用性，而不是仅凭Origin名称。
 
+如果不知道理论名称，希望从真实问题开始，可以使用[公开对话入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)。请不要发布机密、个人、客户或公司内部信息。
+
 ## 代表性公开入口
 
 ### AI / 知识 / Origin
@@ -38,6 +40,7 @@
 AI对知识进行摘要、重组或再生成之后，是否还能返回最初的问题、source、责任与思想起源？
 
 - [OD105｜结构起源防卫](derivatives/105/README.md)
+- [AI Product Team Origin-Preservation Checklist](discovery-notes/ai-product-team-origin-preservation-checklist.md)
 - [OD115｜问题的起源与责任](derivatives/115/README.md)
 
 ### AI / 跨时间连续
@@ -46,6 +49,7 @@ AI对知识进行摘要、重组或再生成之后，是否还能返回最初的
 
 - [OD298｜基础存在条件B论](derivatives/298/README.md)
 - [中文易读入口](discovery-notes/running-now-is-not-continuity.zh.md)
+- [Runtime continuity practitioner Preflight](discovery-notes/ai-runtime-continuity-preflight.md)
 
 ### 组织 / 商业
 
@@ -74,6 +78,7 @@ AI对知识进行摘要、重组或再生成之后，是否还能返回最初的
 ## 开始阅读
 
 - [Start Here — 中文](START_HERE.zh.md)
+- [公开对话｜从真实问题开始](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive? — 中文](discovery-notes/what-connects-nakagawa-master-theories.zh.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - [OD001–OD298入口](derivatives/README.md)
