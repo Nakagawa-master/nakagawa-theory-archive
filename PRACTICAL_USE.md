@@ -13,7 +13,7 @@
 まず、いま扱っている問題に近い入口を選びます。
 
 - [Start Here](START_HERE.md)
-- [場面から入る｜4つの場面から入る中川マスター理論](discovery-notes/four-scenes-nakagawa-master-story-entry.md)
+- [場面から入る｜4つの場面から入る中川マスター理論](discovery-notes/four-scenes-one-structural-view.md)
 - [実務者向けStart Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - [AI導入前の組織Preflight](discovery-notes/ai-adoption-organization-preflight.md)
 - [AI Runtime Continuity Preflight](discovery-notes/ai-runtime-continuity-preflight.md)
@@ -59,7 +59,7 @@ You do not need to start from a theory name. There are three practical routes.
 Start from the problem closest to your work:
 
 - [Start Here — English](START_HERE.en.md)
-- [Story-first entry — Four scenes](discovery-notes/four-scenes-nakagawa-master-story-entry.en.md)
+- [Story-first entry — Four scenes](discovery-notes/four-scenes-one-structural-view.en.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - [AI Adoption Organization Preflight](discovery-notes/ai-adoption-organization-preflight.en.md)
 - [AI Runtime Continuity Preflight](discovery-notes/ai-runtime-continuity-preflight.md)
@@ -101,7 +101,7 @@ This entry does not guarantee acceptance of a project, a contract, implementatio
 ### 1. 自己使用
 
 - [Start Here — 中文](START_HERE.zh.md)
-- [故事型入口｜四个场景](discovery-notes/four-scenes-nakagawa-master-story-entry.zh.md)
+- [故事型入口｜四个场景](discovery-notes/four-scenes-one-structural-view.zh.md)
 - [跨领域实践者入口](discovery-notes/cross-domain-practitioner-start-map.md)
 - [AI导入前组织Preflight](discovery-notes/ai-adoption-organization-preflight.zh.md)
 - [AI Runtime Continuity Preflight](discovery-notes/ai-runtime-continuity-preflight.md)
