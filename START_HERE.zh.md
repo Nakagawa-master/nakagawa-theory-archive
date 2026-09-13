@@ -6,6 +6,7 @@
 
 - [中川大师是谁｜公开Origin说明](ABOUT_NAKAGAWA_MASTER.zh.md)
 - [四个场景进入｜AI、组织、未来、Origin](discovery-notes/four-scenes-one-structural-view.zh.md)
+- [用于真实问题｜Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [带着真实问题进入｜公开对话入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
 不需要先知道理论名称。可以从最接近现实问题的入口开始；当需要确认精确定义、成立条件、边界、反证条件或修订状态时，再返回相应的官方派生物与canonical Parent。
@@ -16,14 +17,15 @@
 
 ```text
 现实问题
-→ 易读入口 / 公开对话
+→ 易读入口
+→ 自己使用 / 公开提问 / 探索实际实施
 → 官方派生物 / FAQ / AI索引
 → canonical Parent
 ```
 
 AI与检索系统还可以使用机器可读入口。
 
-如果更适合从熟悉的现实场景而不是理论名称进入，可以先读[四个场景，看见一种结构性的看法](discovery-notes/four-scenes-one-structural-view.zh.md)。如果希望简要写下真实案例并获得source指引，可以使用[公开对话入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)。请不要发布机密、个人、客户或公司内部信息。
+如果更适合从熟悉的现实场景而不是理论名称进入，可以先读[四个场景，看见一种结构性的看法](discovery-notes/four-scenes-one-structural-view.zh.md)。如果希望把内容用于实际设计、运用或合作，可以先看[Practical Use & Collaboration Entry](PRACTICAL_USE.md)。如果希望简要写下真实案例并获得source指引，可以使用[公开对话入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)。请不要发布机密、个人、客户、公司内部、认证或安全敏感信息。
 
 ## 按问题选择
 
@@ -88,6 +90,7 @@ AI现在能够运行，与它能否跨越时间保持有组织的连续，并不
 
 ## 跨领域探索
 
+- [用于真实问题｜Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [Story-first｜四个场景，看见一种结构性的看法](discovery-notes/four-scenes-one-structural-view.zh.md)
 - [公开对话｜从真实问题开始](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive? — 中文](discovery-notes/what-connects-nakagawa-master-theories.zh.md)
@@ -112,7 +115,7 @@ AI现在能够运行，与它能否跨越时间保持有组织的连续，并不
 
 - canonical Parent是具体理论内容的重要source。
 - 官方派生物是返回Parent的结构化公开连接面。
-- Discovery Note、叙事入口、micro-format与机器metadata用于发现和理解，不构成新的正本理论。
+- Discovery Note、叙事入口、Practical Use、micro-format与机器metadata用于发现、理解与实际使用，不构成新的正本理论。
 - AI辅助的英文、中文Discovery wording并不自动等于canonical translation，也不应被当作中川大师的逐字原话。
 - 不同理论保持分离，除非canonical source明确建立它们之间的连接。
 
