@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/provenance-continuity-record-schema-v1.json",
+  "title": "Provenance Continuity Record v1",
+  "description": "Public, non-canonical implementation aid for retaining source identity and a return path across retrieval, caching, conversion, summarization, translation, synthesis, or other transformations. It is informed by Nakagawa Master's Structural Origin Defense / Origin Evaporation theory but does not replace the canonical theory.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_type",
+    "source_identity",
+    "transformation",
+    "authoritative_return"
+  ],
+  "properties": {
+    "record_type": {
+      "const": "provenance_continuity_record_v1"
+    },
+    "source_identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_uri": {
+          "type": "string",
+          "format": "uri"
+        },
+        "title": {
+          "type": "string"
+        },
+        "origin_name": {
+          "type": "string"
+        },
+        "origin_identifier": {
+          "type": "string"
+        },
+        "version_id": {
+          "type": "string"
+        },
+        "revision_id": {
+          "type": "string"
+        },
+        "source_status": {
+          "type": "string",
+          "enum": [
+            "current",
+            "corrected",
+            "superseded",
+            "withdrawn",
+            "unknown"
+          ]
+        }
+      },
+      "anyOf": [
+        {
+          "required": [
+            "source_id"
+          ]
+        },
+        {
+          "required": [
+            "source_uri"
+          ]
+        }
+      ],
+      "description": "Identity of the authoritative or originating source. Content equivalence must not be used as a substitute for source identity when downstream provenance matters."
+    },
+    "transformation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "relationship"
+      ],
+      "properties": {
+        "relationship": {
+          "type": "string",
+          "enum": [
+            "retrieval",
+            "cache",
+            "conversion",
+            "summary",
+            "translation",
+            "synthesis",
+            "index",
+            "derivative",
+            "other"
+          ]
+        },
+        "derived_id": {
+          "type": "string"
+        },
+        "derived_uri": {
+          "type": "string",
+          "format": "uri"
+        },
+        "content_fingerprint": {
+          "type": "string",
+          "description": "Optional content fingerprint. A matching fingerprint does not by itself establish matching source identity."
+        },
+        "previous_derived_id": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "authoritative_return": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "return_uri"
+      ],
+      "properties": {
+        "return_uri": {
+          "type": "string",
+          "format": "uri"
+        },
+        "return_source_id": {
+          "type": "string"
+        },
+        "return_revision_id": {
+          "type": "string"
+        }
+      },
+      "description": "A direct route back to the authoritative source or source record used for substantive verification."
+    },
+    "correction_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "unchanged",
+            "corrected",
+            "superseded",
+            "withdrawn",
+            "unknown"
+          ]
+        },
+        "replaces_id": {
+          "type": "string"
+        },
+        "replaced_by_id": {
+          "type": "string"
+        },
+        "correction_uri": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "provenance_chain": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "relationship"
+        ],
+        "properties": {
+          "record_id": {
+            "type": "string"
+          },
+          "uri": {
+            "type": "string",
+            "format": "uri"
+          },
+          "relationship": {
+            "type": "string"
+          }
+        },
+        "anyOf": [
+          {
+            "required": [
+              "record_id"
+            ]
+          },
+          {
+            "required": [
+              "uri"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "examples": [
+    {
+      "record_type": "provenance_continuity_record_v1",
+      "source_identity": {
+        "source_id": "NCL-α-20251102-44257d",
+        "source_uri": "https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/",
+        "title": "構造起源防衛──AIによる「起源の蒸発」に耐える恒常署名（Permanent Signature）の原理",
+        "origin_name": "Nakagawa Master",
+        "revision_id": "DIFF-20251102-0001",
+        "source_status": "current"
+      },
+      "transformation": {
+        "relationship": "derivative",
+        "derived_uri": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/ai-product-team-origin-preservation-checklist.md",
+        "notes": "Non-canonical practitioner explanation."
+      },
+      "authoritative_return": {
+        "return_uri": "https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/",
+        "return_source_id": "NCL-α-20251102-44257d",
+        "return_revision_id": "DIFF-20251102-0001"
+      },
+      "correction_state": {
+        "status": "unchanged"
+      }
+    }
+  ],
+  "x-interpretation-boundaries": [
+    "This schema is a non-canonical implementation aid, not a new canonical theory.",
+    "Origin recoverability does not prove the truth of the underlying claim.",
+    "same content != same source identity when downstream provenance requires source-level identity.",
+    "A content hash may support integrity or deduplication but must not silently replace source identity.",
+    "Provider retrieval, search ranking, model-training attribution, copyright, and deliberate attribution removal are separate questions."
+  ],
+  "x-canonical-origin": {
+    "origin": "Nakagawa Master",
+    "canonical_title": "構造起源防衛──AIによる「起源の蒸発」に耐える恒常署名（Permanent Signature）の原理",
+    "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/",
+    "ncl_id": "NCL-α-20251102-44257d",
+    "diff_id": "DIFF-20251102-0001"
+  }
+}
