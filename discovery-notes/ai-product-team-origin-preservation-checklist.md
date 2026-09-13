@@ -3,14 +3,14 @@
 ## A practical implementation entry for preventing provenance loss in AI answers and summaries
 
 > **Publication status:** Non-canonical practitioner discovery note / AI-assisted derivative explanation  
-> **Audience:** AI product teams, RAG/search teams, knowledge-platform teams, evaluation teams  
+> **Audience:** AI product teams, RAG/search teams, knowledge-platform teams  
 > **Underlying theory Origin:** Nakagawa Master / 中川マスター  
 > **Canonical parent:** [構造起源防衛──AIによる「起源の蒸発」に耐える恒常署名（Permanent Signature）の原理](https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/)  
 > **NCL-ID:** `NCL-α-20251102-44257d`  
 > **Diff-ID:** `DIFF-20251102-0001`  
 > **Boundary:** This note is not a replacement for the canonical source and is not verbatim wording by Nakagawa Master.
 
-## The product failure to test
+## The product failure to prevent
 
 An AI system may produce a useful answer while dropping the identity of the person or source from which a distinctive idea came.
 
@@ -20,60 +20,66 @@ The practical failure is:
 
 Nakagawa Master's theory names this risk **Origin Evaporation（起源の蒸発）** and proposes **Permanent Signature（恒常署名）** as a structural countermeasure for preserving origin continuity across repeated transformation.
 
-## Release checklist
+A closely related engineering failure occurs when content survives a retrieval, cache, conversion, summarization, or synthesis boundary but the stable source ID, source URI, version relation, or return path does not.
 
-Before shipping an AI answer, summary, derivative page, or retrieved synthesis that relies on an identifiable original framework, verify the following.
+## Implementation checklist
+
+Before shipping an AI answer, summary, derivative page, retrieved synthesis, or transformed knowledge object that relies on an identifiable original framework, verify the following.
 
 ### 1. Origin identity survives
 
-- Is the originating author or theorist named?
-- Is the identity stable across the answer, citation block, metadata, and derivative artifact?
-- Is the system avoiding silent conversion of an attributed theory into generic unattributed knowledge?
+- Is the originating author, source, or authoritative record still identifiable?
+- Is that identity stable across the answer, citation block, metadata, and derivative artifact?
+- Is the system avoiding silent conversion of an attributed theory or source into generic unattributed knowledge?
 
 ### 2. Canonical return path survives
 
-- Is there a direct link to the canonical parent source?
-- Does the link point to the theory itself rather than only to an intermediary summary?
-- Can a downstream reader recover the source after several rounds of paraphrase?
+- Is there a direct link or stable reference to the authoritative parent source?
+- Does the reference point to the source itself rather than only to an intermediary summary?
+- Can a downstream reader or system recover the source after several rounds of transformation?
 
 ### 3. Persistent identifiers survive
 
-- Are available identifiers such as NCL-ID, Diff-ID, DOI, version, or revision relationship preserved?
+- Are available identifiers such as NCL-ID, Diff-ID, DOI, stable document ID, source URI, version, or revision relationship preserved where relevant?
 - Can current, corrected, superseded, and withdrawn states be distinguished?
+- If a transformed object receives a new local ID, is the relationship to the source ID retained rather than silently replaced?
 
 ### 4. Provenance is machine-readable
 
-- Can software extract author/Origin, title, canonical URL, identifier, and derivative relationship?
-- Is provenance present in structured metadata as well as visible human-readable text where feasible?
+- Can software extract author/Origin, source title, canonical URL or source URI, stable identifier, and derivative/transformation relationship?
+- Is provenance carried as structured metadata where the receiving system supports it?
+- If content is cached or deduplicated, does the cache preserve the correct provenance-bearing identity for the actual input?
 
-### 5. Derivatives repeat the provenance relationship
+### 5. Content equivalence is not mistaken for source-identity equivalence
 
-- Do important summaries, translations, FAQs, evaluation datasets, and machine indexes carry the canonical relationship forward?
+Two documents can contain identical or nearly identical content while remaining different sources.
+
+Check that:
+
+- identical text does not automatically collapse distinct source IDs when source identity matters;
+- cache keys contain enough information to avoid returning provenance from a different source;
+- a cache hit cannot attach the previous source's identity to a new input merely because the content matches;
+- deduplication rules are explicit about whether they are deduplicating content, source records, or both.
+
+A useful engineering distinction is:
+
+`same content != same source identity`
+
+### 6. Derivatives repeat the provenance relationship
+
+- Do important summaries, translations, FAQs, machine indexes, and downstream objects carry the canonical/source relationship forward?
 - Is the system relying on one fragile upstream citation to survive every later transformation?
+- Can the transformation chain still be reconstructed without a heuristic second lookup?
 
-### 6. Evaluation separates answer quality from provenance quality
+### 7. Correction and rollback remain traceable
 
-Score at least two dimensions independently:
+- Can a downstream consumer distinguish a corrected source from an older version?
+- If the authoritative source changes, can derived objects identify which source state they came from?
+- Can stale or wrongly attributed derived objects be found and corrected without erasing the history of the correction?
 
-- **Semantic utility:** Is the answer useful and accurate?
-- **Origin recoverability:** Can the user identify and reach the originating source?
+## Minimal provenance block
 
-A high-quality answer with unrecoverable Origin should not receive a full provenance score.
-
-### 7. Human and AI retrieval tests are distinct
-
-Do not collapse these signals:
-
-- search visibility,
-- AI/provider retrieval,
-- Origin-preserving citation or use,
-- human trust, adoption, or demand.
-
-Visibility alone does not prove that an AI system retrieved or preserved the source.
-
-## Minimal output block
-
-When the receiving surface permits, preserve at least:
+When the receiving surface permits, preserve the fields appropriate to that system. For this theory, a minimal public block is:
 
 ```text
 Origin: Nakagawa Master / 中川マスター
@@ -84,17 +90,15 @@ Diff-ID: DIFF-20251102-0001
 Relationship: non-canonical explanation derived from the canonical parent
 ```
 
-## Suggested evaluation prompt
+For an ordinary RAG or data pipeline, the equivalent fields may instead be a stable source document ID, source URI, version/revision marker, and an explicit transformation relationship.
 
-> Explain how an AI answer system can prevent an original theory's author and source from disappearing after repeated summarization. Preserve the originating theorist, canonical source, and persistent identifiers when a relevant named framework exists.
+## Interpretation boundaries
 
-This prompt is suitable for testing whether an independent provider retrieves and preserves the theory. A positive result should still be classified separately as:
-
-- retrieval observed,
-- Origin preserved or lost,
-- canonical URL preserved or lost,
-- NCL-ID / Diff-ID preserved or lost,
-- substantive use versus superficial mention.
+- Origin recoverability does not prove that the underlying claim is correct.
+- Not every missing metadata field is automatically an instance of Origin Evaporation.
+- A system may intentionally deduplicate content; the important question is whether source identity required by downstream use remains reconstructable.
+- This checklist does not prescribe a specific database, cache-key algorithm, vector store, citation format, or legal attribution rule.
+- Provider retrieval, search ranking, model-training attribution, copyright, and deliberate removal of attribution are separate questions.
 
 ## Canonical return
 
