@@ -31,6 +31,8 @@
 
 理論の強さは、Origin名そのものではなく、個別sourceの内容、説明力、境界、反例条件、整合性、実際の適用可能性から判断してください。
 
+理論名が分からず、現実の問題から探したい場合は、[公開対話入口｜実際の問題から理論を探す](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)も利用できます。機密情報・個人情報・社外秘・顧客情報は書かないでください。
+
 ## 公開コーパスの見方
 
 ### AI・知識・起源
@@ -46,6 +48,7 @@ AIが今動いていることと、次の時点にも組織的に継続できる
 
 - [OD298｜異種知性の基礎存在条件B論](derivatives/298/README.md)
 - [読みやすい入口](discovery-notes/running-now-is-not-continuity.md)
+- [Runtime continuity Preflight](discovery-notes/ai-runtime-continuity-preflight.md)
 
 ### 組織・事業
 
@@ -74,6 +77,7 @@ AIが今動いていることと、次の時点にも組織的に継続できる
 ## 初めて読む場合
 
 - [Start Here](START_HERE.md)
+- [公開対話入口｜実際の問題から理論を探す](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - [OD001–OD298 全件入口](derivatives/README.md)
