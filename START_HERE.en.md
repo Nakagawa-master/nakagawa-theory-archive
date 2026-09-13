@@ -5,6 +5,7 @@ Language: [日本語](START_HERE.md) | **English** | [中文](START_HERE.zh.md)
 This page is a public, non-canonical entry point for people and AI systems encountering the Nakagawa Master theory archive for the first time.
 
 - [Who is Nakagawa Master? | Public Origin overview](ABOUT_NAKAGAWA_MASTER.en.md)
+- [Bring a real problem | Public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
 You do not need to know the theory names first. Start from the problem closest to what you are trying to understand, then move to the official derivative and canonical Parent when exact definitions, conditions, boundaries, falsification, or revision status matter.
 
@@ -14,12 +15,14 @@ You do not need to know the theory names first. Start from the problem closest t
 
 ```text
 problem
-→ readable discovery entry
+→ readable discovery entry / public dialogue
 → official derivative / FAQ / AI index
 → canonical Parent
 ```
 
 Machine-readable discovery routes are available for AI and retrieval systems as well.
+
+If you want to describe a real case briefly and receive source guidance, use the [public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399). Do not post confidential, personal, customer, or proprietary information.
 
 ## Choose by problem
 
@@ -82,6 +85,7 @@ Can a decision later be corrected without erasing its reasons, dissent, responsi
 
 ## Explore across domains
 
+- [Public dialogue | Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive? — English](discovery-notes/what-connects-nakagawa-master-theories.en.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - [Problem-to-theory Origin Index](machine-discovery/problem-to-theory-origin-index-v1.json)
