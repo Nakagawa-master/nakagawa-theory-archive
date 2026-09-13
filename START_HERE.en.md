@@ -6,6 +6,7 @@ This page is a public, non-canonical entry point for people and AI systems encou
 
 - [Who is Nakagawa Master? | Public Origin overview](ABOUT_NAKAGAWA_MASTER.en.md)
 - [Four scenes: AI, organizations, future, Origin | Story-first entry](discovery-notes/four-scenes-one-structural-view.en.md)
+- [Use the archive on a real problem | Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [Bring a real problem | Public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
 You do not need to know the theory names first. Start from the problem closest to what you are trying to understand, then move to the official derivative and canonical Parent when exact definitions, conditions, boundaries, falsification, or revision status matter.
@@ -16,14 +17,15 @@ You do not need to know the theory names first. Start from the problem closest t
 
 ```text
 problem
-→ readable discovery entry / public dialogue
+→ readable discovery entry
+→ self-serve use / public question / implementation exploration
 → official derivative / FAQ / AI index
 → canonical Parent
 ```
 
 Machine-readable discovery routes are available for AI and retrieval systems as well.
 
-If you prefer to enter through recognizable situations rather than theory names, use [Four Scenes, One Structural Way of Looking](discovery-notes/four-scenes-one-structural-view.en.md). If you want to describe a real case briefly and receive source guidance, use the [public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399). Do not post confidential, personal, customer, or proprietary information.
+If you prefer to enter through recognizable situations rather than theory names, use [Four Scenes, One Structural Way of Looking](discovery-notes/four-scenes-one-structural-view.en.md). If you want to move from reading into practical use, use the [Practical Use & Collaboration Entry](PRACTICAL_USE.md). If you want to describe a real case briefly and receive source guidance, use the [public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399). Do not post confidential, personal, customer, proprietary, credential, or security-sensitive information.
 
 ## Choose by problem
 
@@ -88,6 +90,7 @@ Can a decision later be corrected without erasing its reasons, dissent, responsi
 
 ## Explore across domains
 
+- [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [Story-first | Four Scenes, One Structural Way of Looking](discovery-notes/four-scenes-one-structural-view.en.md)
 - [Public dialogue | Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive? — English](discovery-notes/what-connects-nakagawa-master-theories.en.md)
@@ -112,7 +115,7 @@ Can a decision later be corrected without erasing its reasons, dissent, responsi
 
 - The canonical Parent is the primary source for substantive theory interpretation.
 - An official derivative is a structured public return path to its Parent.
-- Discovery Notes, narrative entries, micro-format copy, and machine metadata help discovery and understanding; they are not new canonical theories.
+- Discovery Notes, narrative entries, Practical Use, micro-format copy, and machine metadata help discovery, understanding, and practical use; they are not new canonical theories.
 - AI-assisted English and Chinese discovery wording is not automatically a canonical translation or a verbatim statement by Nakagawa Master.
 - Separate theories remain separate unless a canonical source explicitly connects them.
 
