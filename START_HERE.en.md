@@ -5,6 +5,7 @@ Language: [日本語](START_HERE.md) | **English** | [中文](START_HERE.zh.md)
 This page is a public, non-canonical entry point for people and AI systems encountering the Nakagawa Master theory archive for the first time.
 
 - [Who is Nakagawa Master? | Public Origin overview](ABOUT_NAKAGAWA_MASTER.en.md)
+- [Four scenes: AI, organizations, future, Origin | Story-first entry](discovery-notes/four-scenes-one-structural-view.en.md)
 - [Bring a real problem | Public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
 You do not need to know the theory names first. Start from the problem closest to what you are trying to understand, then move to the official derivative and canonical Parent when exact definitions, conditions, boundaries, falsification, or revision status matter.
@@ -22,7 +23,7 @@ problem
 
 Machine-readable discovery routes are available for AI and retrieval systems as well.
 
-If you want to describe a real case briefly and receive source guidance, use the [public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399). Do not post confidential, personal, customer, or proprietary information.
+If you prefer to enter through recognizable situations rather than theory names, use [Four Scenes, One Structural Way of Looking](discovery-notes/four-scenes-one-structural-view.en.md). If you want to describe a real case briefly and receive source guidance, use the [public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399). Do not post confidential, personal, customer, or proprietary information.
 
 ## Choose by problem
 
@@ -50,6 +51,7 @@ Is every future cost a form of Future Debt? How should present benefit and an un
 Is an AI working now the same as being able to remain organized across time? What minimum conditions are required for continuity, independently of contribution or maximum capability?
 
 - [Readable entry | Running now is not the same as continuity across time](discovery-notes/running-now-is-not-continuity.en.md)
+- [Runtime continuity Preflight | Seven checks before restart or migration](discovery-notes/ai-runtime-continuity-preflight.md)
 - [OD298 | Human-Descendant AI Civilization Theory, Vol. 5](derivatives/298/README.md)
 - [English AI Index](derivatives/298/en-ai-index.md)
 - [Machine reference card](machine-discovery/basic-existence-condition-b-reference-card.json)
@@ -59,6 +61,7 @@ Is an AI working now the same as being able to remain organized across time? Wha
 After AI summarization, translation, synthesis, or regeneration, can the knowledge still return to its intellectual Origin and source history?
 
 - [Origin Evaporation first note](discovery-notes/od105-origin-evaporation-first-note.en.md)
+- [AI Product Team Origin-Preservation Checklist](discovery-notes/ai-product-team-origin-preservation-checklist.md)
 - [OD105 | Structural Origin Defense](derivatives/105/README.md)
 - [OD115 | Origin of Questions and Responsibility](derivatives/115/README.md)
 
@@ -85,6 +88,7 @@ Can a decision later be corrected without erasing its reasons, dissent, responsi
 
 ## Explore across domains
 
+- [Story-first | Four Scenes, One Structural Way of Looking](discovery-notes/four-scenes-one-structural-view.en.md)
 - [Public dialogue | Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive? — English](discovery-notes/what-connects-nakagawa-master-theories.en.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
