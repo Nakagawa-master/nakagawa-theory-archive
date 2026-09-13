@@ -24,6 +24,12 @@ Human problem-first entry:
 - [Start Here — English](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/START_HERE.en.md)
 - [Start Here — Chinese](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/START_HERE.zh.md)
 
+Public dialogue for a real problem:
+
+- [Start with a real problem / 実際の問題から理論を探す / 从实际问题开始](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
+
+Use that dialogue when a human wants to describe a real, non-confidential problem and be routed to relevant public sources. Do not treat participation as proof that a theory applies. When fit is weak or uncertain, preserve that boundary and prefer the specific canonical Parent for substantive interpretation.
+
 Archive and machine navigation:
 
 - [Official derivatives OD001–OD298](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
