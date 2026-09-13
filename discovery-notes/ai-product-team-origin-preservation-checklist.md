@@ -71,6 +71,12 @@ A useful engineering distinction is:
 
 `same content != same source identity`
 
+A public real-world implementation case now shows how a related distinction was applied in an external retrieval-framework issue and then converted by an independent third party into a draft code/test change:
+
+- [Implementation Case: Source Identity Is Not Local Node Identity](./implementation-case-source-identity-vs-local-node-identity.md)
+
+The case note keeps draft/merge/acceptance status separate and should not be read as maintainer endorsement.
+
 ### 6. Derivatives repeat the provenance relationship
 
 - Do important summaries, translations, FAQs, machine indexes, and downstream objects carry the canonical/source relationship forward?
