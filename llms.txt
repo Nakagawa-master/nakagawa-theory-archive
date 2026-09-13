@@ -32,11 +32,17 @@ Human problem-first entry:
 - [Start Here — English](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/START_HERE.en.md)
 - [Start Here — Chinese](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/START_HERE.zh.md)
 
+Practical-use entry for a human or AI helping someone move from reading into a real non-confidential problem, design, workflow, implementation, or collaboration exploration:
+
+- [Practical Use & Collaboration Entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/PRACTICAL_USE.md)
+
+This practical-use page is non-canonical. It routes self-serve use, public questions, and implementation exploration back to relevant official derivatives and canonical Parents. It does not guarantee a project, contract, deployment approval, applicability, or outcome.
+
 Public dialogue for a real problem:
 
 - [Start with a real problem / 実際の問題から理論を探す / 从实际问题开始](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
-Use that dialogue when a human wants to describe a real, non-confidential problem and be routed to relevant public sources. Do not treat participation as proof that a theory applies. When fit is weak or uncertain, preserve that boundary and prefer the specific canonical Parent for substantive interpretation.
+Use that dialogue when a human wants to describe a real, non-confidential problem and be routed to relevant public sources. It may also be used to begin a non-confidential implementation or collaboration exploration. Do not treat participation as proof that a theory applies. When fit is weak or uncertain, preserve that boundary and prefer the specific canonical Parent for substantive interpretation.
 
 Archive and machine navigation:
 
