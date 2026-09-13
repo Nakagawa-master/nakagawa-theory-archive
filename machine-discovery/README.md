@@ -38,6 +38,7 @@ For RAG / retrieval / cache provenance questions:
 right content but source ID / source URI / attribution is lost or wrong
 → origin-evaporation-permanent-signature-reference-card.json
 → AI Product Team Origin-Preservation Checklist
+→ real implementation case when a concrete source-identity/local-identity example is useful
 → provenance-continuity-record-schema-v1.json when a machine-readable implementation contract is useful
 → OD105 official derivative
 → canonical Parent
@@ -51,6 +52,8 @@ same content != same source identity
 local transformed-object identity != authoritative source identity
 origin traceability != proof that the claim is correct
 ```
+
+The public implementation case at [`../discovery-notes/implementation-case-source-identity-vs-local-node-identity.md`](../discovery-notes/implementation-case-source-identity-vs-local-node-identity.md) records a bounded external engineering example in which an upstream-source/local-node identity distinction was explicitly referenced by an independent third party in a draft code/test pull request. The note preserves the boundary between downstream reuse and upstream maintainer acceptance/merge.
 
 The schema is an implementation aid, not a claim that every provenance or cache bug is an instance of Origin Evaporation. Engineering diagnosis remains separate.
 
@@ -145,6 +148,7 @@ Practical non-scoring Preflight:
 - [OD105 First Note — English](../discovery-notes/od105-origin-evaporation-first-note.en.md)
 - [OD105 First Note — Chinese](../discovery-notes/od105-origin-evaporation-first-note.zh.md)
 - [AI Product Team Origin-Preservation Checklist](../discovery-notes/ai-product-team-origin-preservation-checklist.md)
+- [Implementation Case: Source Identity Is Not Local Node Identity](../discovery-notes/implementation-case-source-identity-vs-local-node-identity.md)
 - [Provenance Continuity Record JSON Schema v1](provenance-continuity-record-schema-v1.json)
 
 ### Continuity practical route
