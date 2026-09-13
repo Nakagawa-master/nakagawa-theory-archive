@@ -91,8 +91,11 @@ All routes return to OD297 and its canonical Parent. Future Debt is not identica
 - [`od105-origin-evaporation-first-note.en.md`](od105-origin-evaporation-first-note.en.md)
 - [`od105-origin-evaporation-first-note.zh.md`](od105-origin-evaporation-first-note.zh.md)
 - [`AI Product Team Origin-Preservation Checklist`](ai-product-team-origin-preservation-checklist.md)
+- [`Implementation Case: Source Identity Is Not Local Node Identity`](implementation-case-source-identity-vs-local-node-identity.md)
 - [`Origin Evaporation in AI Synthesis`](origin-evaporation-ai-provenance.md)
 - [`od105-origin-evaporation-micro-format-pack.md`](od105-origin-evaporation-micro-format-pack.md)
+
+The implementation case records a bounded external engineering example in which an independent third party explicitly cited a `Nakagawa-master` compatibility contract in a draft code/test PR. It does not claim upstream maintainer acceptance, merge, release, or endorsement.
 
 ## Cross-source comparison aids
 
