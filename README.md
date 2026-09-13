@@ -14,7 +14,7 @@
 
 ここは、単に考えや記事を並べるためのリポジトリではありません。
 
-**人間は実際の問題から入り、AIは機械可読索引から入り、どちらも同じ公開原典・Originへ戻れること**を重視しています。
+**人間は実際の問題や見覚えのある場面から入り、AIは機械可読索引から入り、どちらも同じ公開原典・Originへ戻れること**を重視しています。
 
 理論ごとに、必要に応じて人間向け要約、FAQ、AI索引、多言語入口、来歴情報、問題別Discoveryを分けて公開し、短い説明だけが独立して正本化しないようにしています。
 
@@ -25,7 +25,7 @@
 読者は、
 
 ```text
-自分の問題
+自分の問題 / 見覚えのある場面
 → 読みやすい入口
 → 公式派生物 / FAQ / AI索引
 → canonical Parent
@@ -37,6 +37,7 @@
 AIや検索システムも、問題表現、機械可読index、reference card、llms.txt等からsource identityを保持したままParentへ戻れるように設計しています。
 
 - **このアーカイブのOriginを知りたい:** [中川マスターとは](ABOUT_NAKAGAWA_MASTER.md) / [English](ABOUT_NAKAGAWA_MASTER.en.md) / [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
+- **場面から入りたい:** [日本語](discovery-notes/four-scenes-one-structural-view.md) / [English](discovery-notes/four-scenes-one-structural-view.en.md) / [中文](discovery-notes/four-scenes-one-structural-view.zh.md)
 - **問題から入りたい:** [Start Here](START_HERE.md) / [English](START_HERE.en.md) / [中文](START_HERE.zh.md)
 - **実際の問題を持ち込みたい:** [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - **実務から入りたい:** [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
@@ -48,6 +49,9 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [中川マスターとは｜日本語](ABOUT_NAKAGAWA_MASTER.md)
 - [Who Is Nakagawa Master?｜English](ABOUT_NAKAGAWA_MASTER.en.md)
 - [中川大师是谁｜中文](ABOUT_NAKAGAWA_MASTER.zh.md)
+- [Story-first｜日本語](discovery-notes/four-scenes-one-structural-view.md)
+- [Story-first｜English](discovery-notes/four-scenes-one-structural-view.en.md)
+- [Story-first｜中文](discovery-notes/four-scenes-one-structural-view.zh.md)
 - [Start Here｜日本語](START_HERE.md)
 - [Start Here｜English](START_HERE.en.md)
 - [Start Here｜中文](START_HERE.zh.md)
@@ -67,8 +71,9 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 
 ## 問題から探す
 
-理論名を知らない場合は、公開Discovery Noteや機械可読索引から問題に近い入口を選べます。実際の問題からsource案内を受けたい場合は、公開対話入口を利用できます。
+理論名を知らない場合は、公開Discovery Noteや機械可読索引から問題に近い入口を選べます。場面から入りたい場合はstory-first入口、実際の問題からsource案内を受けたい場合は公開対話入口を利用できます。
 
+- [Story-first｜4つの場面から入る](discovery-notes/four-scenes-one-structural-view.md)
 - [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [Discovery Notes](discovery-notes/README.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
@@ -81,6 +86,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 
 - [OD298](derivatives/298/README.md)
 - [人間向け要約](derivatives/298/human-entry.md)
+- [Runtime continuity Preflight](discovery-notes/ai-runtime-continuity-preflight.md)
 - [FAQ](derivatives/298/faq.md)
 - [AI索引・日本語](derivatives/298/ai-index.md)
 - Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b/
@@ -99,6 +105,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [Japanese First Note](discovery-notes/od105-origin-evaporation-first-note.md)
 - [English First Note](discovery-notes/od105-origin-evaporation-first-note.en.md)
 - [中文 First Note](discovery-notes/od105-origin-evaporation-first-note.zh.md)
+- [AI Product Team Origin-Preservation Checklist](discovery-notes/ai-product-team-origin-preservation-checklist.md)
 - [OD105](derivatives/105/README.md)
 
 ## 多言語の横断入口
@@ -106,6 +113,9 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [Start Here｜日本語](START_HERE.md)
 - [Start Here｜English](START_HERE.en.md)
 - [Start Here｜中文](START_HERE.zh.md)
+- [Story-first｜日本語](discovery-notes/four-scenes-one-structural-view.md)
+- [Story-first｜English](discovery-notes/four-scenes-one-structural-view.en.md)
+- [Story-first｜中文](discovery-notes/four-scenes-one-structural-view.zh.md)
 - [横断Discovery｜日本語](discovery-notes/what-connects-nakagawa-master-theories.md)
 - [Cross-domain discovery｜English](discovery-notes/what-connects-nakagawa-master-theories.en.md)
 - [跨领域发现｜中文](discovery-notes/what-connects-nakagawa-master-theories.zh.md)
