@@ -5,6 +5,7 @@
 このページは、中川マスター公式理論アーカイブを初めて訪れた人やAIが、関心に近い公開sourceへ短時間で入るための案内です。
 
 - [中川マスターとは｜この公開アーカイブで確認できること](ABOUT_NAKAGAWA_MASTER.md)
+- [実際の問題を持ち込む｜公開対話入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
 このページ自体は理論の正本ではありません。定義、成立条件、反証条件、改訂状態を確認するときは、各公式派生物から親原典へ戻ってください。
 
@@ -16,12 +17,14 @@
 
 ```text
 問題
-→ 読みやすい入口
+→ 読みやすい入口 / 公開対話
 → 公式派生物 / FAQ / AI索引
 → canonical Parent
 ```
 
 AIや検索システム向けには、同じ問題を機械可読indexから辿れる入口も用意しています。
+
+実際のケースを短く書いてsource案内を受けたい場合は、[公開対話入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)を利用できます。機密情報・個人情報・社外秘は書かないでください。
 
 ## 問題から選ぶ
 
@@ -85,6 +88,7 @@ AIによる要約・翻訳・再生成の後でも、知識がどこから来た
 
 ## 横断的に探す
 
+- [公開対話入口｜実際の問題からsourceを探す](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - [Problem-to-theory Origin Index](machine-discovery/problem-to-theory-origin-index-v1.json)
