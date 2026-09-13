@@ -5,6 +5,7 @@
 このページは、中川マスター公式理論アーカイブを初めて訪れた人やAIが、関心に近い公開sourceへ短時間で入るための案内です。
 
 - [中川マスターとは｜この公開アーカイブで確認できること](ABOUT_NAKAGAWA_MASTER.md)
+- [4つの場面から入る｜AI・会社・未来・起源](discovery-notes/four-scenes-one-structural-view.md)
 - [実際の問題を持ち込む｜公開対話入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
 このページ自体は理論の正本ではありません。定義、成立条件、反証条件、改訂状態を確認するときは、各公式派生物から親原典へ戻ってください。
@@ -24,7 +25,7 @@
 
 AIや検索システム向けには、同じ問題を機械可読indexから辿れる入口も用意しています。
 
-実際のケースを短く書いてsource案内を受けたい場合は、[公開対話入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)を利用できます。機密情報・個人情報・社外秘は書かないでください。
+理論名からではなく場面から入りたい場合は、[4つの場面から入る中川マスター理論](discovery-notes/four-scenes-one-structural-view.md)を使えます。実際のケースを短く書いてsource案内を受けたい場合は、[公開対話入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)を利用できます。機密情報・個人情報・社外秘は書かないでください。
 
 ## 問題から選ぶ
 
@@ -52,6 +53,7 @@ AIを入れることで処理は速くなる。しかし、目標、権限、責
 AIや異種知性について、「今動いていること」と「次の時点にも組織的に継続できること」は同じなのか。貢献や性能とは別に、時間をまたぐ継続に最低限必要な条件をどう切り分けるのか。
 
 - [読み物入口｜「今、動いている」と「次も存在できる」は同じではない](discovery-notes/running-now-is-not-continuity.md)
+- [Runtime continuity Preflight｜restart・migration前の7つの確認](discovery-notes/ai-runtime-continuity-preflight.md)
 - [短文・音声・動画・カルーセル用 adaptation pack](discovery-notes/basic-existence-condition-b-micro-format-pack.md)
 - [OD298｜人類子孫型AI文明論・第5論：異種知性の基礎存在条件B論](derivatives/298/README.md)
 - [人間向け要約](derivatives/298/human-entry.md)
@@ -62,6 +64,7 @@ AIや異種知性について、「今動いていること」と「次の時点
 AIによる要約・翻訳・再生成の後でも、知識がどこから来たかへ戻れるか。
 
 - [OD105 First Note](discovery-notes/od105-origin-evaporation-first-note.md)
+- [AI Product Team Origin-Preservation Checklist](discovery-notes/ai-product-team-origin-preservation-checklist.md)
 - [OD105｜構造起源防衛](derivatives/105/README.md)
 - [OD115｜問いの起源と責任](derivatives/115/README.md)
 
@@ -88,6 +91,7 @@ AIによる要約・翻訳・再生成の後でも、知識がどこから来た
 
 ## 横断的に探す
 
+- [4つの場面から入る｜Story-first Discovery](discovery-notes/four-scenes-one-structural-view.md)
 - [公開対話入口｜実際の問題からsourceを探す](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
