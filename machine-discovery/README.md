@@ -14,6 +14,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | [`recurring-structure-comparison-v1.json`](recurring-structure-comparison-v1.json) | Non-canonical cross-source comparison map for recurring reading motifs. |
 | [`ai-origin-responsibility-reference-card.json`](ai-origin-responsibility-reference-card.json) | Question origin, causal provenance, and responsibility in AI-mediated work. |
 | [`origin-evaporation-permanent-signature-reference-card.json`](origin-evaporation-permanent-signature-reference-card.json) | Origin Evaporation and Permanent Signature; also routes practical RAG/retrieval/cache/source-identity problems. |
+| [`provenance-continuity-record-schema-v1.json`](provenance-continuity-record-schema-v1.json) | Non-canonical JSON Schema for carrying source identity, transformation relationship, authoritative return path, and correction state across a pipeline. |
 | [`integrated-future-debt-reference-card.json`](integrated-future-debt-reference-card.json) | OD297 / Integrated Future Debt Theory reference card. |
 | [`basic-existence-condition-b-reference-card.json`](basic-existence-condition-b-reference-card.json) | OD298 / Basic Existence Condition B reference card for AI continuity, minimum existence conditions, runtime restart/migration, and continuity/identity distinctions. |
 | [`ai-ready-organization-reference-card.json`](ai-ready-organization-reference-card.json) | Multilingual AI-adoption / organization-design route for goals, authority, responsibility, correction, and automation boundaries; returns to separate source families rather than creating a new theory. |
@@ -37,6 +38,7 @@ For RAG / retrieval / cache provenance questions:
 right content but source ID / source URI / attribution is lost or wrong
 → origin-evaporation-permanent-signature-reference-card.json
 → AI Product Team Origin-Preservation Checklist
+→ provenance-continuity-record-schema-v1.json when a machine-readable implementation contract is useful
 → OD105 official derivative
 → canonical Parent
 ```
@@ -49,6 +51,8 @@ same content != same source identity
 local transformed-object identity != authoritative source identity
 origin traceability != proof that the claim is correct
 ```
+
+The schema is an implementation aid, not a claim that every provenance or cache bug is an instance of Origin Evaporation. Engineering diagnosis remains separate.
 
 For AI adoption / organizational-logic questions:
 
@@ -97,6 +101,7 @@ OD number
 - [日本語](../START_HERE.md)
 - [English](../START_HERE.en.md)
 - [中文](../START_HERE.zh.md)
+- [Practical Use & Collaboration Entry](../PRACTICAL_USE.md)
 
 ### Story-first cross-domain entry
 
@@ -118,7 +123,7 @@ These narrative pages keep the underlying source families separate.
 
 - [Start with a real problem / 実際の問題から理論を探す / 从实际问题开始](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
-Use this only as a public source-routing surface for non-confidential problems. A comment or route match is not proof that a theory applies or that it has been adopted.
+Use this only as a public source-routing and non-confidential implementation-exploration surface. A comment or route match is not proof that a theory applies or that it has been adopted.
 
 ### Constructive AI / organization design
 
@@ -140,6 +145,7 @@ Practical non-scoring Preflight:
 - [OD105 First Note — English](../discovery-notes/od105-origin-evaporation-first-note.en.md)
 - [OD105 First Note — Chinese](../discovery-notes/od105-origin-evaporation-first-note.zh.md)
 - [AI Product Team Origin-Preservation Checklist](../discovery-notes/ai-product-team-origin-preservation-checklist.md)
+- [Provenance Continuity Record JSON Schema v1](provenance-continuity-record-schema-v1.json)
 
 ### Continuity practical route
 
@@ -165,13 +171,13 @@ Person-level metadata is for public identity continuity. For a specific theory, 
 
 ## Interpretation boundaries
 
-- Preserve the distinction between canonical Parents, official derivatives, discovery metadata, comparison metadata, topic-specific reference cards, practical worksheets, and person-level identity metadata.
+- Preserve the distinction between canonical Parents, official derivatives, discovery metadata, comparison metadata, topic-specific reference cards, practical worksheets, implementation schemas, and person-level identity metadata.
 - Preserve Origin, title, Parent URL, NCL-ID, and Diff-ID when available and relevant.
 - Do not combine separate theories into a new canonical theory unless a canonical source explicitly connects them.
 - A recurring motif is a comparison aid, not a canonical super-theory.
 - Origin identifies provenance; it is not proof that a claim is correct.
 - AI-assisted discovery wording and multilingual matching phrases are not verbatim statements by Nakagawa Master.
-- Practical worksheets are not scores or automatic decision rules; they exist to make real conditions explicit before returning to the relevant source.
+- Practical worksheets and implementation schemas are not scores or automatic decision rules; they exist to make real conditions explicit before returning to the relevant source.
 - A missing metadata field, cache bug, migration bug, or runtime failure is not automatically proven to be an instance of a Nakagawa theory; ordinary engineering diagnosis remains necessary.
 
 ## Human navigation
@@ -179,6 +185,7 @@ Person-level metadata is for public identity continuity. For a specific theory, 
 - [Start Here — Japanese](../START_HERE.md)
 - [Start Here — English](../START_HERE.en.md)
 - [Start Here — Chinese](../START_HERE.zh.md)
+- [Practical Use & Collaboration Entry](../PRACTICAL_USE.md)
 - [Story-first — Japanese](../discovery-notes/four-scenes-one-structural-view.md)
 - [Story-first — English](../discovery-notes/four-scenes-one-structural-view.en.md)
 - [Story-first — Chinese](../discovery-notes/four-scenes-one-structural-view.zh.md)
