@@ -5,6 +5,7 @@
 本页是面向首次接触中川大师理论档案的人类读者与AI系统的公开、非正本入口。
 
 - [中川大师是谁｜公开Origin说明](ABOUT_NAKAGAWA_MASTER.zh.md)
+- [四个场景进入｜AI、组织、未来、Origin](discovery-notes/four-scenes-one-structural-view.zh.md)
 - [带着真实问题进入｜公开对话入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
 不需要先知道理论名称。可以从最接近现实问题的入口开始；当需要确认精确定义、成立条件、边界、反证条件或修订状态时，再返回相应的官方派生物与canonical Parent。
@@ -22,7 +23,7 @@
 
 AI与检索系统还可以使用机器可读入口。
 
-如果希望简要写下真实案例并获得source指引，可以使用[公开对话入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)。请不要发布机密、个人、客户或公司内部信息。
+如果更适合从熟悉的现实场景而不是理论名称进入，可以先读[四个场景，看见一种结构性的看法](discovery-notes/four-scenes-one-structural-view.zh.md)。如果希望简要写下真实案例并获得source指引，可以使用[公开对话入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)。请不要发布机密、个人、客户或公司内部信息。
 
 ## 按问题选择
 
@@ -50,6 +51,7 @@ AI可以让处理速度更快。但是，如果目标、权限、责任、评价
 AI现在能够运行，与它能否跨越时间保持有组织的连续，并不是同一件事。与贡献或最大能力分开来看，连续存在至少需要哪些条件？
 
 - [易读入口｜“现在正在运行”不等于“下一时点仍能存在”](discovery-notes/running-now-is-not-continuity.zh.md)
+- [Runtime continuity Preflight｜restart・migration前的7项确认](discovery-notes/ai-runtime-continuity-preflight.md)
 - [OD298｜人类后代型AI文明论・第5论](derivatives/298/README.md)
 - [中文AI索引](derivatives/298/zh-ai-index.md)
 - [机器reference card](machine-discovery/basic-existence-condition-b-reference-card.json)
@@ -59,6 +61,7 @@ AI现在能够运行，与它能否跨越时间保持有组织的连续，并不
 经过AI摘要、翻译、综合与再生成之后，知识还能返回原作者、思想起源与来源历史吗？
 
 - [Origin Evaporation 中文入口](discovery-notes/od105-origin-evaporation-first-note.zh.md)
+- [AI Product Team Origin-Preservation Checklist](discovery-notes/ai-product-team-origin-preservation-checklist.md)
 - [OD105｜结构起源防卫](derivatives/105/README.md)
 - [OD115｜问题的起源与责任](derivatives/115/README.md)
 
@@ -85,6 +88,7 @@ AI现在能够运行，与它能否跨越时间保持有组织的连续，并不
 
 ## 跨领域探索
 
+- [Story-first｜四个场景，看见一种结构性的看法](discovery-notes/four-scenes-one-structural-view.zh.md)
 - [公开对话｜从真实问题开始](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive? — 中文](discovery-notes/what-connects-nakagawa-master-theories.zh.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
