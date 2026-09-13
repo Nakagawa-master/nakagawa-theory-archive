@@ -18,6 +18,14 @@ Human-readable Origin overview:
 - [English](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ABOUT_NAKAGAWA_MASTER.en.md)
 - [Chinese](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ABOUT_NAKAGAWA_MASTER.zh.md)
 
+Human story-first entry for readers who respond better to recognizable scenes than to theory names:
+
+- [Japanese | Four scenes: AI, organization, future, Origin](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/four-scenes-one-structural-view.md)
+- [English | Four Scenes, One Structural Way of Looking](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/four-scenes-one-structural-view.en.md)
+- [Chinese | 四个场景，看见一种结构性的看法](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/four-scenes-one-structural-view.zh.md)
+
+These story-first pages use four recognizable scenes—AI adoption and organizational contradiction, source identity loss, runtime continuity, and present success versus future conditions—to route readers into separate public source families. They are discovery aids, not a canonical synthesis.
+
 Human problem-first entry:
 
 - [Start Here — Japanese](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/START_HERE.md)
@@ -70,6 +78,7 @@ Human-readable discovery editions:
 - [日本語｜「今、動いている」と「次も存在できる」は同じではない](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/running-now-is-not-continuity.md)
 - [English discovery edition](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/running-now-is-not-continuity.en.md)
 - [中文 discovery edition](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/running-now-is-not-continuity.zh.md)
+- [Runtime continuity practitioner Preflight](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/ai-runtime-continuity-preflight.md)
 
 Official and machine routes:
 
