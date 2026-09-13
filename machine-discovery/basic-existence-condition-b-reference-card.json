@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "type": "public_machine_discovery_reference_card",
   "canonical_status": "non_canonical_discovery_aid",
   "origin": "Nakagawa Master",
@@ -10,21 +10,24 @@
     "Why is an AI being available now different from being able to continue existing later?",
     "Does backup, migration, replication, or restart prove that the same AI entity survived?",
     "How can minimum continuity requirements be separated from maximum capability or unlimited resource claims?",
-    "How should the need for continuity conditions be separated from permission to obtain resources?"
+    "How should the need for continuity conditions be separated from permission to obtain resources?",
+    "What state should persist or be discarded when an AI or agent runtime is restarted or migrated?"
   ],
   "problem_phrases_ja": [
     "AIが今動いていることと、次の時点にも継続できることはなぜ違うのか？",
     "AIや異種知性が時間をまたいで継続するための最低条件とは何か？",
     "backup・migration・restartがあれば同じ主体が生き残ったと言えるのか？",
     "最低継続条件と最大能力・無制限資源要求をどう分けるか？",
-    "継続に必要であることと、そのための資源取得が許されることをどう分けるか？"
+    "継続に必要であることと、そのための資源取得が許されることをどう分けるか？",
+    "AIやagent runtimeをrestart・migrationするとき、何のstateを残し何を切るべきか？"
   ],
   "problem_phrases_zh": [
     "AI现在能够运行，与下一时点仍能继续存在为什么不是一回事？",
     "AI或异种智能跨越时间保持连续所需要的最低条件是什么？",
     "backup、migration或restart能否证明同一主体存活？",
     "如何区分最低连续条件与最大能力或无限资源要求？",
-    "如何区分连续所需条件与取得资源的许可？"
+    "如何区分连续所需条件与取得资源的许可？",
+    "AI或agent runtime在restart或migration时，哪些state应该保留，哪些不应跨越runtime边界？"
   ],
   "core_definition": "B_i = minimum conditions required for organized continuity across time",
   "current_ai_hypothesis": "B_AI = PHY ∧ CMP ∧ STA ∧ EXE",
@@ -45,6 +48,7 @@
   "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b/",
   "official_derivative_path": "derivatives/298/README.md",
   "human_entry_path": "derivatives/298/human-entry.md",
+  "practitioner_preflight_path": "discovery-notes/ai-runtime-continuity-preflight.md",
   "ja_ai_index_path": "derivatives/298/ai-index.md",
   "en_ai_index_path": "derivatives/298/en-ai-index.md",
   "zh_ai_index_path": "derivatives/298/zh-ai-index.md",
@@ -54,6 +58,7 @@
     "B does not by itself prove personhood, sentience, moral status, rights-bearing status, or self-preservation desire.",
     "The present PHY/CMP/STA/EXE model is revisable and is not a permanent definition of all future intelligences.",
     "Need(B) does not imply permission for any action to obtain B.",
-    "Backup, migration, replication, restart, and functional equivalence do not automatically prove historical identity."
+    "Backup, migration, replication, restart, and functional equivalence do not automatically prove historical identity.",
+    "The practitioner preflight applies these distinctions to bounded software-runtime questions; it is not a claim that a software runtime is a person or subject."
   ]
 }
