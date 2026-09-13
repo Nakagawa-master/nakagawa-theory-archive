@@ -27,6 +27,7 @@
 ```text
 自分の問題 / 見覚えのある場面
 → 読みやすい入口
+→ 実際に使う / 公開で質問する / 実装可能性を探る
 → 公式派生物 / FAQ / AI索引
 → canonical Parent
 → Origin・NCL-ID・Diff-ID・改訂状態の確認
@@ -39,6 +40,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - **このアーカイブのOriginを知りたい:** [中川マスターとは](ABOUT_NAKAGAWA_MASTER.md) / [English](ABOUT_NAKAGAWA_MASTER.en.md) / [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 - **場面から入りたい:** [日本語](discovery-notes/four-scenes-one-structural-view.md) / [English](discovery-notes/four-scenes-one-structural-view.en.md) / [中文](discovery-notes/four-scenes-one-structural-view.zh.md)
 - **問題から入りたい:** [Start Here](START_HERE.md) / [English](START_HERE.en.md) / [中文](START_HERE.zh.md)
+- **実際に使いたい / 実装・協業の可能性を探りたい:** [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - **実際の問題を持ち込みたい:** [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - **実務から入りたい:** [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - **AI・検索から辿りたい:** [Machine Discovery](machine-discovery/README.md)
@@ -55,6 +57,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [Start Here｜日本語](START_HERE.md)
 - [Start Here｜English](START_HERE.en.md)
 - [Start Here｜中文](START_HERE.zh.md)
+- [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
 - [OD001–OD298 全件入口](derivatives/README.md)
@@ -71,8 +74,9 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 
 ## 問題から探す
 
-理論名を知らない場合は、公開Discovery Noteや機械可読索引から問題に近い入口を選べます。場面から入りたい場合はstory-first入口、実際の問題からsource案内を受けたい場合は公開対話入口を利用できます。
+理論名を知らない場合は、公開Discovery Noteや機械可読索引から問題に近い入口を選べます。場面から入りたい場合はstory-first入口、実際の問題からsource案内を受けたい場合は公開対話入口を利用できます。実際の設計・運用へ落としたい場合はPractical Use入口から始められます。
 
+- [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [Story-first｜4つの場面から入る](discovery-notes/four-scenes-one-structural-view.md)
 - [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [Discovery Notes](discovery-notes/README.md)
