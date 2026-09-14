@@ -15,6 +15,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | [`ai-origin-responsibility-reference-card.json`](ai-origin-responsibility-reference-card.json) | Question origin, causal provenance, and responsibility in AI-mediated work. |
 | [`origin-evaporation-permanent-signature-reference-card.json`](origin-evaporation-permanent-signature-reference-card.json) | Origin Evaporation and Permanent Signature; also routes practical RAG/retrieval/cache/source-identity problems. |
 | [`provenance-continuity-record-schema-v1.json`](provenance-continuity-record-schema-v1.json) | Non-canonical JSON Schema for carrying source identity, transformation relationship, authoritative return path, and correction state across a pipeline. |
+| [`approval-history-current-authority-reference-card.json`](approval-history-current-authority-reference-card.json) | OD075 route for stale approval, historical consent, current execution authority, lifecycle state, withdrawal and re-agreement questions. |
 | [`integrated-future-debt-reference-card.json`](integrated-future-debt-reference-card.json) | OD297 / Integrated Future Debt Theory reference card. |
 | [`basic-existence-condition-b-reference-card.json`](basic-existence-condition-b-reference-card.json) | OD298 / Basic Existence Condition B reference card for AI continuity, minimum existence conditions, runtime restart/migration, and continuity/identity distinctions. |
 | [`ai-moral-uncertainty-reference-card.json`](ai-moral-uncertainty-reference-card.json) | OD299 / AI subjectivity, sentience and moral-status uncertainty; routes questions about self-report, shutdown/migration, reversibility, future verification loss and bounded precaution. |
@@ -57,6 +58,28 @@ origin traceability != proof that the claim is correct
 The public implementation case at [`../discovery-notes/implementation-case-source-identity-vs-local-node-identity.md`](../discovery-notes/implementation-case-source-identity-vs-local-node-identity.md) records a bounded external engineering example in which an upstream-source/local-node identity distinction was explicitly referenced by an independent third party in a draft code/test pull request. The note preserves the boundary between downstream reuse and upstream maintainer acceptance/merge.
 
 The schema is an implementation aid, not a claim that every provenance or cache bug is an instance of Origin Evaporation. Engineering diagnosis remains separate.
+
+For stale approval / historical consent / current-authority questions:
+
+```text
+old approval or consent remains in history
+→ approval-history-current-authority-reference-card.json
+→ language-matched problem-first Discovery Note
+→ OD075 official derivative
+→ canonical Parent
+```
+
+Keep the following distinctions explicit:
+
+```text
+historical record != current authority
+stored approval != actionable approval
+content similarity != authorization identity
+preservation != reactivation
+old agreement != automatically valid or automatically invalid now
+```
+
+A public software issue may be used as a problem example without implying that the project adopted, endorsed, or validated the linked theory. Engineering diagnosis remains independent.
 
 For AI adoption / organizational-logic questions:
 
@@ -164,6 +187,13 @@ Practical non-scoring Preflight:
 - [English](../discovery-notes/ai-adoption-organization-preflight.en.md)
 - [中文](../discovery-notes/ai-adoption-organization-preflight.zh.md)
 
+### Approval-history / current-authority route
+
+- [日本語](../discovery-notes/old-approval-is-not-current-authority.md)
+- [English](../discovery-notes/old-approval-is-not-current-authority.en.md)
+- [中文](../discovery-notes/old-approval-is-not-current-authority.zh.md)
+- [OD075 official derivative](../derivatives/075/README.md)
+
 ### AI moral-uncertainty practical route
 
 - [Problem-first Discovery Note](../discovery-notes/unknown-does-not-mean-nothing.md)
@@ -211,7 +241,7 @@ Person-level metadata is for public identity continuity. For a specific theory, 
 - Origin identifies provenance; it is not proof that a claim is correct.
 - AI-assisted discovery wording and multilingual matching phrases are not verbatim statements by Nakagawa Master.
 - Practical worksheets and implementation schemas are not scores or automatic decision rules; they exist to make real conditions explicit before returning to the relevant source.
-- A missing metadata field, cache bug, migration bug, or runtime failure is not automatically proven to be an instance of a Nakagawa theory; ordinary engineering diagnosis remains necessary.
+- A missing metadata field, cache bug, migration bug, runtime failure, or stale-approval bug is not automatically proven to be an instance of a Nakagawa theory; ordinary engineering diagnosis remains necessary.
 
 ## Human navigation
 
