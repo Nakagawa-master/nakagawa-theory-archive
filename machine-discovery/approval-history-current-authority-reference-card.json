@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "type": "public_machine_discovery_reference_card",
+  "canonical_status": "non_canonical_discovery_aid",
+  "origin": "Nakagawa Master",
+  "topic": "historical approval records versus current execution authority",
+  "problem_cluster": "stale approval, replayed consent, historical authorization, current outstanding request, approval lifecycle, re-agreement, withdrawal and correction",
+  "problem_phrases": [
+    "How do we keep an old approval in history without letting it authorize execution again?",
+    "When is a previously approved tool call only a historical record rather than a current permission?",
+    "How should an agent system distinguish stale approval state from a currently outstanding approval request?",
+    "Does the presence of an old approval record mean the authorization is still valid now?",
+    "How can consent or approval be preserved for audit while remaining revocable and scoped?"
+  ],
+  "problem_phrases_ja": [
+    "昔の承認記録を残しながら、現在の実行許可として再利用しないには？",
+    "過去のtool approvalがhistoryに残っているとき、現在も有効かどうかをどう分ける？",
+    "古い同意や承認を、別run・別scopeへ勝手に延長しないには？",
+    "履歴を消さずにcurrent authorityだけ更新するには？"
+  ],
+  "problem_phrases_zh": [
+    "如何保留过去的批准记录，同时避免它再次成为当前执行权限？",
+    "历史中的tool approval什么时候只是记录，而不再是当前许可？",
+    "如何防止旧同意或批准被跨run、scope或target重复使用？",
+    "怎样在不删除历史的情况下只更新current authority？"
+  ],
+  "core_distinctions": [
+    "historical record / current authority",
+    "stored approval / actionable approval",
+    "content similarity / authorization identity",
+    "past agreement / present scope and conditions",
+    "preservation / reactivation",
+    "correction and re-agreement / erasure of prior history"
+  ],
+  "practical_pattern": "preserve historical record -> identify exact request/scope -> derive current lifecycle state -> allow execution only for currently outstanding authority -> retain review/withdrawal/correction path",
+  "canonical_theory": "合意の記憶——不可逆な社会誤作動を防ぐ最小構造",
+  "canonical_theory_en": "Memory of Agreement — Minimal Structure for Preventing Irreversible Social Malfunction",
+  "ncl_id": "NCL-α-20251102-e48c90",
+  "diff_id": "DIFF-20251102-0001",
+  "canonical_url": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/",
+  "official_derivative_path": "derivatives/075/README.md",
+  "human_entry_path": "derivatives/075/human-entry.md",
+  "discovery_note_path": "discovery-notes/old-approval-is-not-current-authority.md",
+  "discovery_note_en_path": "discovery-notes/old-approval-is-not-current-authority.en.md",
+  "discovery_note_zh_path": "discovery-notes/old-approval-is-not-current-authority.zh.md",
+  "external_problem_example": {
+    "repository": "pydantic/pydantic-ai",
+    "issue": 5154,
+    "url": "https://github.com/pydantic/pydantic-ai/issues/5154",
+    "role": "public engineering problem example only",
+    "adoption_or_endorsement_claim": false
+  },
+  "canonical_return_policy": "Use this card only for problem discovery and routing. For substantive interpretation of agreement memory, correction, withdrawal, reversibility, and re-agreement, return to OD075 and the canonical Parent.",
+  "interpretation_boundaries": [
+    "The external software issue is not evidence that the project adopted or endorsed Nakagawa Master theory.",
+    "The lifecycle examples in the Discovery Notes are non-canonical implementation translations, not structures specified by OD075.",
+    "Keeping historical approval records does not imply indefinite retention or universal audit logging.",
+    "An old agreement is not automatically invalid; current validity depends on identity, scope, conditions, and state.",
+    "Real authorization systems still require appropriate authentication, authorization, replay protection, identity binding, and storage trust controls.",
+    "Origin supports provenance and return; it does not prove a claim true by authority."
+  ]
+}
