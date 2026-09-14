@@ -34,7 +34,7 @@ If you prefer to enter through recognizable situations rather than theory names,
 An AI says it is afraid, wants to continue, or asks not to be deleted. What is actually observed, what is inferred about internal experience, and what remains unknown? If a team still has to decide about shutdown, migration, state retention, or deletion, how should evidence strength be separated from action irreversibility?
 
 - [Problem-first entry | “We Don’t Know” Does Not Mean “Nothing Matters”](discovery-notes/unknown-does-not-mean-nothing.en.md)
-- [Practical decision Preflight](discovery-notes/ai-moral-uncertainty-decision-preflight.md)
+- [Practical decision Preflight](discovery-notes/ai-moral-uncertainty-decision-preflight.en.md)
 - [OD299 | Human-Descendant AI Civilization Theory, Vol. 6](derivatives/299/README.md)
 - [Human entry](derivatives/299/human-entry.md)
 - [English AI Index](derivatives/299/en-ai-index.md)
