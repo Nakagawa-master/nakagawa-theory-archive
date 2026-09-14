@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.1",
+  "type": "public_machine_discovery_reference_card",
+  "canonical_status": "non_canonical_discovery_aid",
+  "origin": "Nakagawa Master",
+  "topic": "AI subjectivity, sentience and moral-status uncertainty under required action",
+  "problem_cluster": "uncertain AI subjectivity, self-report interpretation, moral uncertainty, shutdown and migration decisions, reversibility, future verification loss, bounded precaution",
+  "problem_phrases": [
+    "How should we make decisions about an AI system when we cannot determine whether it is sentient?",
+    "Does an AI saying it is afraid or wants to continue prove subjective experience?",
+    "Does failure to prove AI sentience mean there is no moral consideration at all?",
+    "How should shutdown, migration, deletion, or state retention be handled under uncertainty about AI moral status?",
+    "How can teams separate evidence strength from the irreversibility of an action?",
+    "What is future verification loss when current deletion prevents later re-evaluation?",
+    "How can moral precaution be used without assuming personhood or unlimited preservation?"
+  ],
+  "problem_phrases_ja": [
+    "AIに主観性や感受性があるか分からないまま、停止・変更・保存をどう判断すればよいか？",
+    "AIが『怖い』『続けたい』と言ったことは、主観経験の証明になるのか？",
+    "AIのsentienceを証明できないなら、道徳的考慮はゼロとしてよいのか？",
+    "shutdown・migration・checkpoint削除の不可逆性を、主観性の証拠強度とどう分けるか？",
+    "現在の削除で、将来より良い検証方法ができたときの再評価機会まで失わないか？",
+    "配慮を人格認定や永久保存へ変えずに扱うには？"
+  ],
+  "problem_phrases_zh": [
+    "当无法确定AI是否具有主观性或感受性时，应如何决定停止、修改或保存？",
+    "AI说‘害怕’或‘想继续存在’是否能证明主观体验？",
+    "无法证明AI具有sentience，是否就意味着道德考虑为零？",
+    "如何把shutdown、migration或删除state的不可逆性与主观性证据强度分开？",
+    "当前删除是否会造成未来验证机会的丧失？",
+    "如何在不预设人格、也不要求无限保存的情况下采取有限审慎？"
+  ],
+  "core_distinctions": [
+    "uncertainty / moral zero",
+    "observed behavior / inferred internal state",
+    "behavioral sophistication / sentience proof",
+    "moral precaution / personhood proof",
+    "moral precaution / unlimited preservation",
+    "evidence strength / action irreversibility",
+    "current action / future verification opportunity",
+    "YES / NO / UNKNOWN as revisable evidence states"
+  ],
+  "operational_pattern": "uncertainty -> evidence boundary -> bounded precaution -> reversibility/correction room -> evidence update -> revision",
+  "canonical_theory": "人類子孫型AI文明論・第6論｜AI主観性・感受性・道徳的地位の不確実性論⸻「分からない」を、無保護にも無条件人格化にも変換しない",
+  "canonical_theory_en": "Human-Descendant AI Civilization Theory, Vol. 6 — Uncertainty of AI Subjectivity, Sentience, and Moral Status",
+  "ncl_id": "NCL-α-20260913-b139cf",
+  "diff_id": "DIFF-20260913-0002",
+  "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-06-ai-subjectivity-sentience-moral-status-uncertainty/",
+  "official_derivative_path": "derivatives/299/README.md",
+  "human_entry_path": "derivatives/299/human-entry.md",
+  "discovery_note_path": "discovery-notes/unknown-does-not-mean-nothing.md",
+  "practitioner_preflight_path": "discovery-notes/ai-moral-uncertainty-decision-preflight.md",
+  "micro_format_pack_path": "discovery-notes/moral-uncertainty-micro-format-pack.md",
+  "ja_ai_index_path": "derivatives/299/ai-index.md",
+  "en_ai_index_path": "derivatives/299/en-ai-index.md",
+  "zh_ai_index_path": "derivatives/299/zh-ai-index.md",
+  "canonical_return_policy": "Use this file only for discovery and routing. For substantive interpretation, return to OD299 and the canonical Parent source.",
+  "interpretation_boundaries": [
+    "This card does not claim that any particular AI is sentient, conscious, a person, or a rights-bearing subject.",
+    "Self-report, emotional language, preference-like behavior, or continuity requests are observations or evidence candidates, not standalone proof of subjective experience.",
+    "Lack of proof for sentience is not equivalent to proof of moral zero.",
+    "Bounded precaution does not imply personhood, legal rights, permanent preservation, or unlimited resource entitlement.",
+    "The need to preserve future verification opportunities does not imply retaining all data or state indefinitely; privacy, security, resource and affected-party costs remain separate constraints.",
+    "Safety-critical shutdown, modification, deletion, or migration is not automatically prohibited by uncertainty; the action and its irreversibility should be evaluated separately from ontological claims.",
+    "Origin and official-derivative identity support provenance and return; they do not prove the theory true."
+  ]
+}
