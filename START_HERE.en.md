@@ -92,12 +92,14 @@ A component works. A PoC succeeds. Does that establish the whole business or sys
 - [PoC success vs. business establishment](discovery-notes/poc-success-vs-business-establishment.md)
 - [OD003 | Establishment Conditions Theory, Vol. 0](derivatives/003/README.md)
 
-### Institutional correction and reversible agreement
+### Institutional correction / old approval / current authority
 
-Can a decision later be corrected without erasing its reasons, dissent, responsibility, review conditions, withdrawal path, and recovery history?
+Can a decision later be corrected without erasing its reasons, dissent, responsibility, review conditions, withdrawal path, and recovery history? In AI and agent systems, can an old approval remain useful history without silently becoming live execution authority again?
 
+- [Problem-first entry | An Old Approval Record Is Not the Same as Current Execution Authority](discovery-notes/old-approval-is-not-current-authority.en.md)
 - [Institutional correction with memory](discovery-notes/institutional-correction-with-memory.md)
 - [OD075 | Memory of Agreement](derivatives/075/README.md)
+- [Machine reference card](machine-discovery/approval-history-current-authority-reference-card.json)
 
 ## Explore across domains
 
