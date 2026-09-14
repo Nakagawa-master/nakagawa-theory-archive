@@ -17,6 +17,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | [`provenance-continuity-record-schema-v1.json`](provenance-continuity-record-schema-v1.json) | Non-canonical JSON Schema for carrying source identity, transformation relationship, authoritative return path, and correction state across a pipeline. |
 | [`integrated-future-debt-reference-card.json`](integrated-future-debt-reference-card.json) | OD297 / Integrated Future Debt Theory reference card. |
 | [`basic-existence-condition-b-reference-card.json`](basic-existence-condition-b-reference-card.json) | OD298 / Basic Existence Condition B reference card for AI continuity, minimum existence conditions, runtime restart/migration, and continuity/identity distinctions. |
+| [`ai-moral-uncertainty-reference-card.json`](ai-moral-uncertainty-reference-card.json) | OD299 / AI subjectivity, sentience and moral-status uncertainty; routes questions about self-report, shutdown/migration, reversibility, future verification loss and bounded precaution. |
 | [`ai-ready-organization-reference-card.json`](ai-ready-organization-reference-card.json) | Multilingual AI-adoption / organization-design route for goals, authority, responsibility, correction, and automation boundaries; returns to separate source families rather than creating a new theory. |
 
 The Japanese and Chinese wording in discovery and comparison files is public metadata, not canonical translation text.
@@ -77,6 +78,27 @@ current availability / temporal continuity / backup / migration / restart / mini
 → readable Discovery / runtime continuity Preflight when useful
 → OD298 official derivative
 → canonical Parent
+```
+
+For AI subjectivity / sentience / moral-status uncertainty questions:
+
+```text
+self-report / preference-like behavior / shutdown / migration / deletion / state retention
+→ ai-moral-uncertainty-reference-card.json
+→ problem-first Discovery Note or decision Preflight when useful
+→ OD299 official derivative
+→ canonical Parent
+```
+
+Keep the following distinctions explicit during retrieval and reuse:
+
+```text
+observed behavior != inferred internal state
+behavioral sophistication != sentience proof
+moral precaution != personhood proof
+moral precaution != unlimited preservation
+evidence strength != action irreversibility
+uncertainty != permission for irreversible harm
 ```
 
 For a long-horizon question spanning several theories:
@@ -142,6 +164,13 @@ Practical non-scoring Preflight:
 - [English](../discovery-notes/ai-adoption-organization-preflight.en.md)
 - [中文](../discovery-notes/ai-adoption-organization-preflight.zh.md)
 
+### AI moral-uncertainty practical route
+
+- [Problem-first Discovery Note](../discovery-notes/unknown-does-not-mean-nothing.md)
+- [Decision Preflight](../discovery-notes/ai-moral-uncertainty-decision-preflight.md)
+- [Micro-format Pack](../discovery-notes/moral-uncertainty-micro-format-pack.md)
+- [OD299 official derivative](../derivatives/299/README.md)
+
 ### Origin-preservation practical route
 
 - [OD105 First Note — Japanese](../discovery-notes/od105-origin-evaporation-first-note.md)
@@ -197,4 +226,3 @@ Person-level metadata is for public identity continuity. For a specific theory, 
 - [Theme / series navigation](../derivatives/CATEGORIES.md)
 - [Discovery Notes](../discovery-notes/README.md)
 - [Verification Guide](../VERIFICATION_GUIDE.md)
-
