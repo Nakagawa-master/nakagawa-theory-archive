@@ -28,6 +28,8 @@ The English and Chinese editions are AI-assisted public discovery editions, not 
 ## Problem-first notes
 
 - [`unknown-does-not-mean-nothing.md`](unknown-does-not-mean-nothing.md)
+- [`unknown-does-not-mean-nothing.en.md`](unknown-does-not-mean-nothing.en.md)
+- [`unknown-does-not-mean-nothing.zh.md`](unknown-does-not-mean-nothing.zh.md)
 - [`ai-answer-reverification.md`](ai-answer-reverification.md)
 - [`repeating-problems-beyond-people.md`](repeating-problems-beyond-people.md)
 - [`poc-success-vs-business-establishment.md`](poc-success-vs-business-establishment.md)
@@ -65,8 +67,20 @@ This route is intentionally constructive rather than criticism-first. It uses se
 
 ## OD299｜AI Subjectivity, Sentience, and Moral-Status Uncertainty
 
-- **Problem-first Discovery:** [`unknown-does-not-mean-nothing.md`](unknown-does-not-mean-nothing.md)
-- **Decision Preflight:** [`ai-moral-uncertainty-decision-preflight.md`](ai-moral-uncertainty-decision-preflight.md)
+Problem-first Discovery:
+
+- **日本語:** [`unknown-does-not-mean-nothing.md`](unknown-does-not-mean-nothing.md)
+- **English:** [`unknown-does-not-mean-nothing.en.md`](unknown-does-not-mean-nothing.en.md)
+- **中文:** [`unknown-does-not-mean-nothing.zh.md`](unknown-does-not-mean-nothing.zh.md)
+
+Decision Preflight:
+
+- **日本語:** [`ai-moral-uncertainty-decision-preflight.md`](ai-moral-uncertainty-decision-preflight.md)
+- **English:** [`ai-moral-uncertainty-decision-preflight.en.md`](ai-moral-uncertainty-decision-preflight.en.md)
+- **中文:** [`ai-moral-uncertainty-decision-preflight.zh.md`](ai-moral-uncertainty-decision-preflight.zh.md)
+
+Additional transfer / return surfaces:
+
 - **Short-form / audio / video / carousel adaptation:** [`moral-uncertainty-micro-format-pack.md`](moral-uncertainty-micro-format-pack.md)
 - [OD299 official derivative](../derivatives/299/README.md)
 - [OD299 human entry](../derivatives/299/human-entry.md)
