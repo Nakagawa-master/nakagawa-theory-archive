@@ -31,6 +31,18 @@ AIや検索システム向けには、同じ問題を機械可読indexから辿�
 
 ## 問題から選ぶ
 
+### AI・主観性・「分からないまま判断する」
+
+AIが「怖い」「続けたい」と答えたとき、何が観測事実で、どこからが主観経験についての推論なのか。主観性を確定できないままshutdown・migration・削除・保存を判断するとき、証拠強度と不可逆性をどう分けるのか。
+
+- [問題起点Discovery｜「分からない」を「何も考慮しなくてよい」に変えない](discovery-notes/unknown-does-not-mean-nothing.md)
+- [実務用｜AI主観性が分からないまま判断するときのPreflight](discovery-notes/ai-moral-uncertainty-decision-preflight.md)
+- [短文・音声・動画・カルーセル用 adaptation pack](discovery-notes/moral-uncertainty-micro-format-pack.md)
+- [OD299｜人類子孫型AI文明論・第6論：AI主観性・感受性・道徳的地位の不確実性論](derivatives/299/README.md)
+- [人間向け要約](derivatives/299/human-entry.md)
+- [AI索引・日本語](derivatives/299/ai-index.md)
+- [Machine reference card](machine-discovery/ai-moral-uncertainty-reference-card.json)
+
 ### AI導入・組織設計
 
 AIを入れることで処理は速くなる。しかし、目標、権限、責任、評価条件、訂正経路が曖昧なままなら、その矛盾まで高速化しないか。
@@ -121,4 +133,3 @@ AIによる要約・翻訳・再生成の後でも、知識がどこから来た
 - Discovery Note、物語型入口、Practical Use、micro-format、machine metadataは発見・理解・実利用・参照の補助面であり、新しい正本理論ではありません。
 - 英語・中国語のAI支援Discovery editionは、個別理論のcanonical translationではありません。
 - 別々の理論は、親原典で明示的に接続されていない限り、一つの新しい理論へ自動統合しません。
-
