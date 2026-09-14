@@ -29,6 +29,17 @@ AI与检索系统还可以使用机器可读入口。
 
 ## 按问题选择
 
+### AI主观性 / 感受性不确定 / 必须做出行动
+
+AI说“害怕”“想继续存在”或“不想被删除”时，哪些是实际观察，哪些是对内部体验的推论，哪些仍然UNKNOWN？当团队仍必须决定shutdown、migration、state保留或删除时，怎样把证据强度与行动不可逆性分开？
+
+- [问题入口｜“不知道”不等于“什么都不需要考虑”](discovery-notes/unknown-does-not-mean-nothing.zh.md)
+- [实际决策Preflight](discovery-notes/ai-moral-uncertainty-decision-preflight.md)
+- [OD299｜人类子孙型AI文明论・第6论](derivatives/299/README.md)
+- [人类可读入口](derivatives/299/human-entry.md)
+- [中文AI索引](derivatives/299/zh-ai-index.md)
+- [机器reference card](machine-discovery/ai-moral-uncertainty-reference-card.json)
+
 ### AI导入 / 组织设计
 
 AI可以让处理速度更快。但是，如果目标、权限、责任、评价条件、纠正路径与升级边界仍然模糊，自动化是否也会更快地复制这些矛盾？
@@ -120,4 +131,3 @@ AI现在能够运行，与它能否跨越时间保持有组织的连续，并不
 - 不同理论保持分离，除非canonical source明确建立它们之间的连接。
 
 语言：[日本語](START_HERE.md) | [English](START_HERE.en.md) | **中文**
-
