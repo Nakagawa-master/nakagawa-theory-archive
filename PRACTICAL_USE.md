@@ -61,8 +61,8 @@ You do not need to start from a theory name. There are three practical routes.
 Start from the problem closest to your work:
 
 - [Start Here — English](START_HERE.en.md)
-- [AI moral-uncertainty decision Preflight](discovery-notes/ai-moral-uncertainty-decision-preflight.md)
-- [Problem-first OD299 entry — uncertainty does not mean nothing matters](discovery-notes/unknown-does-not-mean-nothing.md)
+- [AI moral-uncertainty decision Preflight](discovery-notes/ai-moral-uncertainty-decision-preflight.en.md)
+- [Problem-first OD299 entry — We Don't Know Does Not Mean Nothing Matters](discovery-notes/unknown-does-not-mean-nothing.en.md)
 - [Story-first entry — Four scenes](discovery-notes/four-scenes-one-structural-view.en.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - [AI Adoption Organization Preflight](discovery-notes/ai-adoption-organization-preflight.en.md)
@@ -105,8 +105,8 @@ This entry does not guarantee acceptance of a project, a contract, implementatio
 ### 1. 自己使用
 
 - [Start Here — 中文](START_HERE.zh.md)
-- [AI主观性不确定时的决策Preflight](discovery-notes/ai-moral-uncertainty-decision-preflight.md)
-- [OD299问题入口｜“不知道”不等于“不需要考虑”](discovery-notes/unknown-does-not-mean-nothing.md)
+- [AI主观性不确定时的决策Preflight](discovery-notes/ai-moral-uncertainty-decision-preflight.zh.md)
+- [OD299问题入口｜“不知道”不等于“什么都不需要考虑”](discovery-notes/unknown-does-not-mean-nothing.zh.md)
 - [故事型入口｜四个场景](discovery-notes/four-scenes-one-structural-view.zh.md)
 - [跨领域实践者入口](discovery-notes/cross-domain-practitioner-start-map.md)
 - [AI导入前组织Preflight](discovery-notes/ai-adoption-organization-preflight.zh.md)
