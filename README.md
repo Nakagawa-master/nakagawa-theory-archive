@@ -60,12 +60,12 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
-- [OD001–OD298 全件入口](derivatives/README.md)
+- [OD001–OD299 全件入口](derivatives/README.md)
 - [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
 
 ## 公式派生物
 
-現在、`OD001`–`OD298`の公式派生物を公開しています。これは理論数ではなく、公開されている公式派生物の件数です。
+現在、`OD001`–`OD299`の公式派生物を公開しています。これは理論数ではなく、公開されている公式派生物の件数です。
 
 各ODは親原典へ戻るための公開接続面です。内容の確定、引用、重要な解釈では、各ODに記載されたParent URLの親原典へ戻ってください。
 
@@ -85,6 +85,19 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [Machine Discovery](machine-discovery/README.md)
 
 ## 代表的な入口
+
+### OD299｜人類子孫型AI文明論・第6論
+
+AI主観性・感受性・道徳的地位が未確定なとき、証拠境界、不可逆性、他主体への影響、判断更新可能性を分けて考える入口です。
+
+- [OD299](derivatives/299/README.md)
+- [人間向け要約](derivatives/299/human-entry.md)
+- [FAQ](derivatives/299/faq.md)
+- [AI索引・日本語](derivatives/299/ai-index.md)
+- [AI索引・英語](derivatives/299/en-ai-index.md)
+- [AI索引・中国語](derivatives/299/zh-ai-index.md)
+- [派生ID台帳](derivatives/299/derivative-ledger.md)
+- Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-06-ai-subjectivity-sentience-moral-status-uncertainty/
 
 ### OD298｜人類子孫型AI文明論・第5論
 
