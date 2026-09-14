@@ -30,6 +30,9 @@ The English and Chinese editions are AI-assisted public discovery editions, not 
 - [`unknown-does-not-mean-nothing.md`](unknown-does-not-mean-nothing.md)
 - [`unknown-does-not-mean-nothing.en.md`](unknown-does-not-mean-nothing.en.md)
 - [`unknown-does-not-mean-nothing.zh.md`](unknown-does-not-mean-nothing.zh.md)
+- [`old-approval-is-not-current-authority.md`](old-approval-is-not-current-authority.md)
+- [`old-approval-is-not-current-authority.en.md`](old-approval-is-not-current-authority.en.md)
+- [`old-approval-is-not-current-authority.zh.md`](old-approval-is-not-current-authority.zh.md)
 - [`ai-answer-reverification.md`](ai-answer-reverification.md)
 - [`repeating-problems-beyond-people.md`](repeating-problems-beyond-people.md)
 - [`poc-success-vs-business-establishment.md`](poc-success-vs-business-establishment.md)
@@ -64,6 +67,22 @@ Additional routes:
 - [AI-ready organization machine reference card](../machine-discovery/ai-ready-organization-reference-card.json)
 
 This route is intentionally constructive rather than criticism-first. It uses separate public sources on establishment conditions, causal design, structural friction, agreement memory, and reversible accountability to help practitioners ask what should be made explicit before automation. The Preflight helps teams write down real conditions; it does not score an organization or decide whether deployment is allowed. These materials do not merge the source theories into a new canonical theory.
+
+## OD075｜Agreement Memory / Historical Approval vs Current Authority
+
+Problem-first Discovery:
+
+- **日本語:** [`old-approval-is-not-current-authority.md`](old-approval-is-not-current-authority.md)
+- **English:** [`old-approval-is-not-current-authority.en.md`](old-approval-is-not-current-authority.en.md)
+- **中文:** [`old-approval-is-not-current-authority.zh.md`](old-approval-is-not-current-authority.zh.md)
+
+Additional return / machine surfaces:
+
+- [OD075 official derivative](../derivatives/075/README.md)
+- [OD075 human entry](../derivatives/075/human-entry.md)
+- [Approval-history current-authority machine reference card](../machine-discovery/approval-history-current-authority-reference-card.json)
+
+This route begins from a practical distinction that appears in real HITL and consent systems: a past approval may remain important history without remaining current execution authority. The public notes use PydanticAI issue #5154 only as a concrete engineering problem example; they do not claim adoption, endorsement, or theory validation. The non-canonical implementation examples distinguish historical record, current pending state, authorization identity, scope, correction, withdrawal, and re-agreement before returning to OD075 and its canonical Parent.
 
 ## OD299｜AI Subjectivity, Sentience, and Moral-Status Uncertainty
 
