@@ -34,7 +34,7 @@ AI与检索系统还可以使用机器可读入口。
 AI说“害怕”“想继续存在”或“不想被删除”时，哪些是实际观察，哪些是对内部体验的推论，哪些仍然UNKNOWN？当团队仍必须决定shutdown、migration、state保留或删除时，怎样把证据强度与行动不可逆性分开？
 
 - [问题入口｜“不知道”不等于“什么都不需要考虑”](discovery-notes/unknown-does-not-mean-nothing.zh.md)
-- [实际决策Preflight](discovery-notes/ai-moral-uncertainty-decision-preflight.md)
+- [实际决策Preflight](discovery-notes/ai-moral-uncertainty-decision-preflight.zh.md)
 - [OD299｜人类子孙型AI文明论・第6论](derivatives/299/README.md)
 - [人类可读入口](derivatives/299/human-entry.md)
 - [中文AI索引](derivatives/299/zh-ai-index.md)
