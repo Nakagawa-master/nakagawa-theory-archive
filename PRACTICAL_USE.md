@@ -13,6 +13,8 @@
 まず、いま扱っている問題に近い入口を選びます。
 
 - [Start Here](START_HERE.md)
+- [AI主観性が分からないまま判断するときのPreflight](discovery-notes/ai-moral-uncertainty-decision-preflight.md)
+- [「分からない」を「何も考慮しなくてよい」に変えない](discovery-notes/unknown-does-not-mean-nothing.md)
 - [場面から入る｜4つの場面から入る中川マスター理論](discovery-notes/four-scenes-one-structural-view.md)
 - [実務者向けStart Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - [AI導入前の組織Preflight](discovery-notes/ai-adoption-organization-preflight.md)
@@ -37,7 +39,7 @@
 
 ### 3. 実装・協業の可能性を検討する
 
-AI導入、組織設計、RAG / provenance、source identity、runtime migration / continuity、事業成立条件、長期判断などで、単に読むだけでなく**実際の設計・実装・運用へ落としたい**場合も、#399から非機密の概要を始められます。
+AI導入、組織設計、RAG / provenance、source identity、runtime migration / continuity、AI subjectivity uncertainty、state retention、事業成立条件、長期判断などで、単に読むだけでなく**実際の設計・実装・運用へ落としたい**場合も、#399から非機密の概要を始められます。
 
 最初に書くと役立つのは次の4点です。
 
@@ -59,6 +61,8 @@ You do not need to start from a theory name. There are three practical routes.
 Start from the problem closest to your work:
 
 - [Start Here — English](START_HERE.en.md)
+- [AI moral-uncertainty decision Preflight](discovery-notes/ai-moral-uncertainty-decision-preflight.md)
+- [Problem-first OD299 entry — uncertainty does not mean nothing matters](discovery-notes/unknown-does-not-mean-nothing.md)
 - [Story-first entry — Four scenes](discovery-notes/four-scenes-one-structural-view.en.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - [AI Adoption Organization Preflight](discovery-notes/ai-adoption-organization-preflight.en.md)
@@ -81,7 +85,7 @@ The goal is source routing, not forcing every case into a theory.
 
 ### 3. Explore implementation or collaboration
 
-If you are trying to move from reading into a real design, workflow, AI system, organizational change, provenance architecture, runtime migration, or long-horizon decision, you can start with a non-confidential outline in #399.
+If you are trying to move from reading into a real design, workflow, AI system, organizational change, provenance architecture, runtime migration, state-retention decision under uncertain AI subjectivity, or long-horizon decision, you can start with a non-confidential outline in #399.
 
 Useful starting information:
 
@@ -101,6 +105,8 @@ This entry does not guarantee acceptance of a project, a contract, implementatio
 ### 1. 自己使用
 
 - [Start Here — 中文](START_HERE.zh.md)
+- [AI主观性不确定时的决策Preflight](discovery-notes/ai-moral-uncertainty-decision-preflight.md)
+- [OD299问题入口｜“不知道”不等于“不需要考虑”](discovery-notes/unknown-does-not-mean-nothing.md)
 - [故事型入口｜四个场景](discovery-notes/four-scenes-one-structural-view.zh.md)
 - [跨领域实践者入口](discovery-notes/cross-domain-practitioner-start-map.md)
 - [AI导入前组织Preflight](discovery-notes/ai-adoption-organization-preflight.zh.md)
@@ -116,7 +122,7 @@ This entry does not guarantee acceptance of a project, a contract, implementatio
 
 ### 3. 探索实际实施或合作
 
-如果希望把内容用于真实的AI系统、组织设计、RAG / provenance、source identity、runtime migration / continuity、事业成立条件或长期判断，可以从#399提交非机密概要。
+如果希望把内容用于真实的AI系统、组织设计、RAG / provenance、source identity、runtime migration / continuity、AI主观性不确定条件下的state保留判断、事业成立条件或长期判断，可以从#399提交非机密概要。
 
 建议先写：想改变什么、目前哪里困难、不能破坏什么条件、怎样的下一状态才算真正前进。
 
