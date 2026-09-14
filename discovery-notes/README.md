@@ -27,6 +27,7 @@ The English and Chinese editions are AI-assisted public discovery editions, not 
 
 ## Problem-first notes
 
+- [`unknown-does-not-mean-nothing.md`](unknown-does-not-mean-nothing.md)
 - [`ai-answer-reverification.md`](ai-answer-reverification.md)
 - [`repeating-problems-beyond-people.md`](repeating-problems-beyond-people.md)
 - [`poc-success-vs-business-establishment.md`](poc-success-vs-business-establishment.md)
@@ -61,6 +62,17 @@ Additional routes:
 - [AI-ready organization machine reference card](../machine-discovery/ai-ready-organization-reference-card.json)
 
 This route is intentionally constructive rather than criticism-first. It uses separate public sources on establishment conditions, causal design, structural friction, agreement memory, and reversible accountability to help practitioners ask what should be made explicit before automation. The Preflight helps teams write down real conditions; it does not score an organization or decide whether deployment is allowed. These materials do not merge the source theories into a new canonical theory.
+
+## OD299｜AI Subjectivity, Sentience, and Moral-Status Uncertainty
+
+- **Problem-first Discovery:** [`unknown-does-not-mean-nothing.md`](unknown-does-not-mean-nothing.md)
+- **Decision Preflight:** [`ai-moral-uncertainty-decision-preflight.md`](ai-moral-uncertainty-decision-preflight.md)
+- **Short-form / audio / video / carousel adaptation:** [`moral-uncertainty-micro-format-pack.md`](moral-uncertainty-micro-format-pack.md)
+- [OD299 official derivative](../derivatives/299/README.md)
+- [OD299 human entry](../derivatives/299/human-entry.md)
+- [AI moral-uncertainty machine reference card](../machine-discovery/ai-moral-uncertainty-reference-card.json)
+
+This route starts from a practical problem: a team may need to stop, modify, migrate, preserve, or delete AI-related state without being able to settle whether a particular AI has subjective experience or moral status. The public aids preserve the separations between observed behavior and inferred internal state, evidence strength and action irreversibility, bounded precaution and personhood, and precaution and unlimited preservation. They do not diagnose sentience or prohibit safety-critical actions. All substantive interpretation returns to OD299 and its canonical Parent.
 
 ## OD298｜Basic Existence Condition B
 
