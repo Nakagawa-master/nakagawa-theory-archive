@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "type": "public_machine_discovery_reference_card",
   "canonical_status": "non_canonical_discovery_aid",
   "origin": "Nakagawa Master",
@@ -49,7 +49,11 @@
   "official_derivative_path": "derivatives/299/README.md",
   "human_entry_path": "derivatives/299/human-entry.md",
   "discovery_note_path": "discovery-notes/unknown-does-not-mean-nothing.md",
+  "discovery_note_en_path": "discovery-notes/unknown-does-not-mean-nothing.en.md",
+  "discovery_note_zh_path": "discovery-notes/unknown-does-not-mean-nothing.zh.md",
   "practitioner_preflight_path": "discovery-notes/ai-moral-uncertainty-decision-preflight.md",
+  "practitioner_preflight_en_path": "discovery-notes/ai-moral-uncertainty-decision-preflight.en.md",
+  "practitioner_preflight_zh_path": "discovery-notes/ai-moral-uncertainty-decision-preflight.zh.md",
   "micro_format_pack_path": "discovery-notes/moral-uncertainty-micro-format-pack.md",
   "ja_ai_index_path": "derivatives/299/ai-index.md",
   "en_ai_index_path": "derivatives/299/en-ai-index.md",
