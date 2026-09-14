@@ -98,10 +98,12 @@ AIによる要約・翻訳・再生成の後でも、知識がどこから来た
 
 ### 制度・合意・訂正可能性
 
-結論だけでなく、根拠、異論、責任、見直し条件を保持しながら再検証・救済・再合意へ進めるか。
+結論だけでなく、根拠、異論、責任、見直し条件を保持しながら再検証・救済・再合意へ進めるか。AI / agent systemでは、過去に残ったapproval historyを現在の実行権限へ勝手に戻していないか。
 
+- [問題起点Discovery｜昔の承認が残っていることと、今も実行を許可していることは同じではない](discovery-notes/old-approval-is-not-current-authority.md)
 - [Institutional correction with memory](discovery-notes/institutional-correction-with-memory.md)
 - [OD075｜合意の記憶](derivatives/075/README.md)
+- [Machine reference card](machine-discovery/approval-history-current-authority-reference-card.json)
 
 ## 横断的に探す
 
