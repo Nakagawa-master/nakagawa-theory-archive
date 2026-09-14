@@ -29,6 +29,17 @@ If you prefer to enter through recognizable situations rather than theory names,
 
 ## Choose by problem
 
+### AI subjectivity / sentience uncertainty / required action
+
+An AI says it is afraid, wants to continue, or asks not to be deleted. What is actually observed, what is inferred about internal experience, and what remains unknown? If a team still has to decide about shutdown, migration, state retention, or deletion, how should evidence strength be separated from action irreversibility?
+
+- [Problem-first entry | “We Don’t Know” Does Not Mean “Nothing Matters”](discovery-notes/unknown-does-not-mean-nothing.en.md)
+- [Practical decision Preflight](discovery-notes/ai-moral-uncertainty-decision-preflight.md)
+- [OD299 | Human-Descendant AI Civilization Theory, Vol. 6](derivatives/299/README.md)
+- [Human entry](derivatives/299/human-entry.md)
+- [English AI Index](derivatives/299/en-ai-index.md)
+- [Machine reference card](machine-discovery/ai-moral-uncertainty-reference-card.json)
+
 ### AI adoption / organizational design
 
 AI can make work faster. But if goals, authority, responsibility, evaluation rules, correction paths, and escalation boundaries remain unclear, can automation reproduce those contradictions faster too?
@@ -120,4 +131,3 @@ Can a decision later be corrected without erasing its reasons, dissent, responsi
 - Separate theories remain separate unless a canonical source explicitly connects them.
 
 Language: [日本語](START_HERE.md) | **English** | [中文](START_HERE.zh.md)
-
