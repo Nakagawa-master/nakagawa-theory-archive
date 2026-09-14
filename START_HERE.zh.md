@@ -92,12 +92,14 @@ AI现在能够运行，与它能否跨越时间保持有组织的连续，并不
 - [PoC success vs. business establishment](discovery-notes/poc-success-vs-business-establishment.md)
 - [OD003｜成立条件论・第0论](derivatives/003/README.md)
 
-### 制度纠正与可逆合意
+### 制度纠正 / 旧批准 / 当前权限
 
-一个决定在之后被证明有问题时，能否在不抹去当初理由、异议、责任、复审条件、撤回路径与恢复历史的情况下被纠正？
+一个决定在之后被证明有问题时，能否在不抹去当初理由、异议、责任、复审条件、撤回路径与恢复历史的情况下被纠正？在AI / agent system里，过去保留下来的approval是否被错误地重新解释成当前仍然有效的执行权限？
 
+- [问题入口｜旧的批准记录，不等于现在仍然有效的执行权限](discovery-notes/old-approval-is-not-current-authority.zh.md)
 - [Institutional correction with memory](discovery-notes/institutional-correction-with-memory.md)
 - [OD075｜合意的记忆](derivatives/075/README.md)
+- [Machine reference card](machine-discovery/approval-history-current-authority-reference-card.json)
 
 ## 跨领域探索
 
