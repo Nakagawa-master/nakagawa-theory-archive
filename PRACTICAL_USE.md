@@ -14,6 +14,7 @@
 
 - [Start Here](START_HERE.md)
 - [AI主観性が分からないまま判断するときのPreflight](discovery-notes/ai-moral-uncertainty-decision-preflight.md)
+- [AI Agent Execution Governance Preflight｜実行前に確認する12問](discovery-notes/ai-agent-execution-governance-preflight.md)
 - [「分からない」を「何も考慮しなくてよい」に変えない](discovery-notes/unknown-does-not-mean-nothing.md)
 - [場面から入る｜4つの場面から入る中川マスター理論](discovery-notes/four-scenes-one-structural-view.md)
 - [実務者向けStart Map](discovery-notes/cross-domain-practitioner-start-map.md)
@@ -63,6 +64,7 @@ Start from the problem closest to your work:
 
 - [Start Here — English](START_HERE.en.md)
 - [AI moral-uncertainty decision Preflight](discovery-notes/ai-moral-uncertainty-decision-preflight.en.md)
+- [AI Agent Execution Governance Preflight — 12 questions before tool execution](discovery-notes/ai-agent-execution-governance-preflight.en.md)
 - [Problem-first OD299 entry — We Don't Know Does Not Mean Nothing Matters](discovery-notes/unknown-does-not-mean-nothing.en.md)
 - [Story-first entry — Four scenes](discovery-notes/four-scenes-one-structural-view.en.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
