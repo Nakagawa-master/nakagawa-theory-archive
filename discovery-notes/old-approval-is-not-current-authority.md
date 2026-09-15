@@ -108,6 +108,26 @@ what was approved
 
 承認内容が似ていることと、承認権限のidentityが同じことを混同しません。
 
+## 独立実装まで進んだ別の公開事例
+
+この「過去に許可された」と「今も許可されている」を分ける考え方には、別の公開engineering caseもあります。
+
+`tushardhara/dream#12`では、`Nakagawa-master` が、declassificationを「一度safeになったbytesの恒久属性」ではなく、recipient・purpose・scope・source lineage・policy stateなどへ結びついたauthorization eventとして扱う案を公開しました。プロジェクト側の独立レビューはこの軸を明示的にENDORSEし、その後PR #28で実装・negative testing・独立reviewを経て、projectの `backend-integration` branchへmergeされています。
+
+この事例では、同じbytesが残っていても、recipientが変わる、sourceがrevoked / supersededされる、policy revisionが変わる、といった条件で古いapproved contextを再利用しないようにします。
+
+```text
+content appears sanitized
+!=
+authorization remains valid
+```
+
+詳しい実装経路・第三者応答・merge status・非主張境界は、次の非正本Implementation Caseに分離しています。
+
+- [Implementation Case: Sanitized Content Is Not Current Authorization](implementation-case-sanitized-content-is-not-current-authorization.md)
+
+この実装事例がOD075全体を採用・証明したという意味ではありません。公開された一つの設計境界が、第三者プロジェクトで独立に検討・実装されたという限定された証拠です。
+
 ## 人間社会にも同じ誤作動がある
 
 これはsoftware approvalだけの問題ではありません。
