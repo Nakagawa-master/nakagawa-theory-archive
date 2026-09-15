@@ -76,13 +76,18 @@ Problem-first Discovery:
 - **English:** [`old-approval-is-not-current-authority.en.md`](old-approval-is-not-current-authority.en.md)
 - **中文:** [`old-approval-is-not-current-authority.zh.md`](old-approval-is-not-current-authority.zh.md)
 
+Publicly verifiable practice / implementation cases:
+
+- [`Practice Case: Historical Consent Is Not Current Processing Authority`](research-consent-is-not-current-processing-authority.md)
+- [`Implementation Case: Sanitized Content Is Not Current Authorization`](implementation-case-sanitized-content-is-not-current-authorization.md)
+
 Additional return / machine surfaces:
 
 - [OD075 official derivative](../derivatives/075/README.md)
 - [OD075 human entry](../derivatives/075/human-entry.md)
 - [Approval-history current-authority machine reference card](../machine-discovery/approval-history-current-authority-reference-card.json)
 
-This route begins from a practical distinction that appears in real HITL and consent systems: a past approval may remain important history without remaining current execution authority. The public notes use PydanticAI issue #5154 only as a concrete engineering problem example; they do not claim adoption, endorsement, or theory validation. The non-canonical implementation examples distinguish historical record, current pending state, authorization identity, scope, correction, withdrawal, and re-agreement before returning to OD075 and its canonical Parent.
+This route begins from a practical distinction that appears in real HITL and consent systems: a past approval may remain important history without remaining current execution authority. The public notes use PydanticAI issue #5154 and separately documented external adoption/implementation cases only as concrete engineering or governance examples; they do not claim endorsement or theory validation. The non-canonical examples distinguish historical record, current pending state, authorization identity, scope, correction, withdrawal, re-agreement, and current processing eligibility before returning to OD075 and its canonical Parent.
 
 ## OD299｜AI Subjectivity, Sentience, and Moral-Status Uncertainty
 
