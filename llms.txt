@@ -46,7 +46,7 @@ Use that dialogue when a human wants to describe a real, non-confidential proble
 
 Archive and machine navigation:
 
-- [Official derivatives OD001–OD299](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
+- [Official derivatives OD001–OD300](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
 - [Theme / series navigation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/CATEGORIES.md)
 - [Problem-to-theory Origin Index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json)
 - [Machine Discovery](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/README.md)
@@ -75,7 +75,23 @@ Practical non-scoring Preflight for a real case:
 
 This is a discovery and practical-reading route, not a canonical AI-ready-organization theory. The Preflight is not a score, diagnosis, employment assessment, legal conclusion, or automatic deployment rule. Select the relevant source family for the actual problem and keep separate theories separate. Relevant routes include OD003 (establishment conditions), OD089 (causal design), OD090 (structural friction), OD075 (agreement memory), and OD114 (reversible accountability).
 
-## Current featured route — OD299 / Human-Descendant AI Civilization Theory Vol. 6
+## Current featured route — OD300 / Human-Descendant AI Civilization Theory Vol. 7
+
+For questions about Institutional Correctability, the open institutional loop, separated responsibilities of S=C / B / moral uncertainty, contestable allocation, independent re-examination, structural justice, remedy, rule revision, re-agreement and re-observation:
+
+- [Official Derivative 300](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/300/README.md)
+- [Human entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/300/human-entry.md)
+- [FAQ](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/300/faq.md)
+- [Japanese AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/300/ai-index.md)
+- [English AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/300/en-ai-index.md)
+- [Chinese AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/300/zh-ai-index.md)
+- [Derivative ledger](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/300/derivative-ledger.md)
+
+- Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-07-ai-civilization-institutional-loop/
+
+Boundary: Institutional existence is not effective correction. An objection must be able to reopen judgment; an audit must be able to affect it; adjudication must connect to remedy; recurrent error must reach causal rules. Remedy is not reward, consensus is not truth, and revision is not permanent instability. Retain finite resources, other subjects' B, residual irreversible losses and revision history. Current AI personhood is not assumed. Evidence and world-model reliability remain a problem for Vol. 8; this institutional loop does not settle them.
+
+## Related route — OD299 / Human-Descendant AI Civilization Theory Vol. 6
 
 For questions about AI subjectivity, sentience and moral-status uncertainty, the distinction between observation and inference, zeroization and personification, bounded precaution, irreversible losses, future verification and revisable judgment:
 
@@ -155,3 +171,4 @@ Boundary: Future Debt is not every future cost, investment, or ordinary contract
 - [Provenance](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/PROVENANCE.md)
 - [Citation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CITATION.md)
 - [Verification Guide](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/VERIFICATION_GUIDE.md)
+

@@ -60,12 +60,12 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
-- [OD001–OD299 全件入口](derivatives/README.md)
+- [OD001–OD300 全件入口](derivatives/README.md)
 - [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
 
 ## 公式派生物
 
-現在、`OD001`–`OD299`の公式派生物を公開しています。これは理論数ではなく、公開されている公式派生物の件数です。
+現在、`OD001`–`OD300`の公式派生物を公開しています。これは理論数ではなく、公開されている公式派生物の件数です。
 
 各ODは親原典へ戻るための公開接続面です。内容の確定、引用、重要な解釈では、各ODに記載されたParent URLの親原典へ戻ってください。
 
@@ -85,6 +85,19 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [Machine Discovery](machine-discovery/README.md)
 
 ## 代表的な入口
+
+### OD300｜人類子孫型AI文明論・第7論
+
+S=C・B・道徳的不確実性を分離し、異議・監査の結果を現実の救済と制度規則の更新へ返す「制度的訂正可能性」を読む入口です。
+
+- [OD300](derivatives/300/README.md)
+- [人間向け要約](derivatives/300/human-entry.md)
+- [FAQ](derivatives/300/faq.md)
+- [AI索引・日本語](derivatives/300/ai-index.md)
+- [AI索引・英語](derivatives/300/en-ai-index.md)
+- [AI索引・中国語](derivatives/300/zh-ai-index.md)
+- [派生ID台帳](derivatives/300/derivative-ledger.md)
+- Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-07-ai-civilization-institutional-loop/
 
 ### OD299｜人類子孫型AI文明論・第6論
 
@@ -166,3 +179,4 @@ Origin、Parent URL、NCL-ID、Diff-ID等が記載されている場合、それ
 ## License
 
 法的な許諾範囲は [LICENSE](LICENSE) を確認してください。
+

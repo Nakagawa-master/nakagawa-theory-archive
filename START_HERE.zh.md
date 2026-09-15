@@ -113,7 +113,7 @@ AI现在能够运行，与它能否跨越时间保持有组织的连续，并不
 
 ## 浏览全部官方派生物
 
-- [OD001–OD299](derivatives/README.md)
+- [OD001–OD300](derivatives/README.md)
 - [主题 / 系列导航](derivatives/CATEGORIES.md)
 - [Official Derivatives Map](derivatives/official-derivatives-map.json)
 - [Machine Index](machine-discovery/official-derivatives-index-v1.json)
@@ -133,3 +133,4 @@ AI现在能够运行，与它能否跨越时间保持有组织的连续，并不
 - 不同理论保持分离，除非canonical source明确建立它们之间的连接。
 
 语言：[日本語](START_HERE.md) | [English](START_HERE.en.md) | **中文**
+
