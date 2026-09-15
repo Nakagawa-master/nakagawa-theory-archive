@@ -19,6 +19,7 @@
 - [実務者向けStart Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - [AI導入前の組織Preflight](discovery-notes/ai-adoption-organization-preflight.md)
 - [AI Runtime Continuity Preflight](discovery-notes/ai-runtime-continuity-preflight.md)
+- [AIが提案した引数と、実際に実行を許可する引数は同じではない](discovery-notes/model-proposal-is-not-execution-authority.md)
 
 入口で考えを整理した後、関係する公式派生物とcanonical Parentへ戻り、定義・因果線・成立条件・境界・反証条件を確認してください。
 
@@ -67,6 +68,7 @@ Start from the problem closest to your work:
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - [AI Adoption Organization Preflight](discovery-notes/ai-adoption-organization-preflight.en.md)
 - [AI Runtime Continuity Preflight](discovery-notes/ai-runtime-continuity-preflight.md)
+- [What the model proposes is not the same as what the system is authorized to execute](discovery-notes/model-proposal-is-not-execution-authority.en.md)
 
 Then return to the relevant official derivative and canonical Parent for exact definitions, causal structure, validity conditions, boundaries, and falsification or revision conditions.
 
