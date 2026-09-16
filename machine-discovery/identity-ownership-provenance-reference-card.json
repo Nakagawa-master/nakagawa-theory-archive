@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "type": "public_machine_discovery_reference_card",
   "canonical_status": "non_canonical_discovery_aid",
   "origin": "Nakagawa Master",
@@ -48,8 +48,13 @@
     "related_pull_request": "https://github.com/MemberJunction/MJ/pull/4524",
     "role": "public engineering implementation and review example only",
     "adoption_or_endorsement_claim": false,
-    "merged_claim": false,
-    "release_claim": false
+    "merged_claim": true,
+    "merged_into": "next",
+    "merged_at_utc": "2026-09-16T18:42:41Z",
+    "merge_commit": "469b25f1bcf51d844396b8a6b8a9f1390b5e1488",
+    "related_pull_request_merged_claim": false,
+    "release_claim": false,
+    "deployment_claim": false
   },
   "reusable_regression_shape": {
     "setup": "Create the same identifier K with deliberately divergent existing content B while canonical/release content is A.",
@@ -62,7 +67,8 @@
     "A matching identifier can establish object identity without establishing who owns authority over its current value.",
     "This card does not claim that overwrite is generally wrong or that operator customization must always win.",
     "The MemberJunction example does not establish that MemberJunction adopted or endorsed Nakagawa Master theory as a whole.",
-    "Open pull requests are not represented as merged, released, or deployed.",
+    "PR #4519 is represented as merged into the next integration branch only; this is not a release or deployment claim.",
+    "PR #4524 remains separate and is not represented as merged here.",
     "OD301 is not a database migration specification; this is a non-canonical engineering translation of one narrow provenance distinction.",
     "Provenance supports inspection and correction paths; it is not a truth or authorization score by itself.",
     "Origin supports provenance and return; it does not prove a claim true by authority."
