@@ -101,6 +101,16 @@ The resulting change made the ownership contract visible in code-facing document
 
 The independent reviewer later recorded `LGTM` on the updated PR.
 
+## The reviewed implementation was merged
+
+PR #4519 was subsequently merged into MemberJunction's `next` branch on 2026-09-16 at 18:42:41 UTC.
+
+- Merge commit: [`469b25f1bcf51d844396b8a6b8a9f1390b5e1488`](https://github.com/MemberJunction/MJ/commit/469b25f1bcf51d844396b8a6b8a9f1390b5e1488)
+
+The merge commit contains the explicit release-owned convergence contract and the regression path described above. This moves the case beyond a reviewed-but-open implementation: the code/test/documentation change entered the project's integration branch.
+
+This still does **not** establish a package release, production deployment, or adoption of Nakagawa theory as a whole.
+
 ## The distinction propagated into a separate work surface
 
 The same independent reviewer also authored a separate migration-layer pull request:
@@ -123,13 +133,14 @@ independent third-party reproduction and restatement: yes
 separate third-party implementation PR carrying the distinction: yes
 external PR-author code/test/documentation change after the review chain: yes
 independent LGTM on PR #4519: yes
-PR #4519 merged: not established here
+PR #4519 merged into MemberJunction next: yes
+PR #4519 merge commit: 469b25f1bcf51d844396b8a6b8a9f1390b5e1488
 PR #4524 merged: not established here
 released or deployed: not established here
 external project's endorsement of Nakagawa theory as a whole: not claimed
 ```
 
-An open PR and a reviewed code change are real evidence, but they are not a merge, release, deployment, or proof of a whole theory.
+A real integration-branch merge is stronger evidence than an open implementation PR, but it is still not the same as a release, deployment, broad adoption, or proof of a whole theory.
 
 ## Why the distinction matters beyond one migration
 
@@ -239,7 +250,8 @@ That is why this case is an entry point to provenance thinking rather than a cla
 - It does not mean release-owned metadata should never overwrite local state.
 - It does not mean operator customization should always win.
 - It does not prescribe one migration framework or one ownership taxonomy.
-- It does not claim PR #4519 or #4524 is merged while they remain open.
+- It does not claim PR #4524 is merged while it remains open.
+- It does not claim the #4519 merge is a release or deployment.
 - It does not claim MemberJunction adopted Nakagawa theory as doctrine.
 - It does not prove OD301 because a software example fits one structural distinction.
 - It does not turn provenance into an automatic truth or authorization score.
