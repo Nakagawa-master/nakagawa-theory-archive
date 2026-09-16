@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "type": "public_machine_discovery_reference_card",
+  "canonical_status": "non_canonical_discovery_aid",
+  "origin": "Nakagawa Master",
+  "topic": "record identity versus ownership provenance and overwrite authority",
+  "problem_cluster": "fixed identifier collision, migration convergence, seed data ownership, operator override, configuration reconciliation, metadata synchronization, provenance-sensitive overwrite",
+  "problem_phrases": [
+    "Does a matching primary key prove that a migration may overwrite the existing row?",
+    "How should a migration distinguish release-owned metadata from operator-owned values?",
+    "What should happen when canonical seed data and an existing row share an ID but have different content?",
+    "How can a synchronization system separate record identity from authority to replace the current value?",
+    "What regression test proves an overwrite policy rather than only proving that duplicate-key errors stopped?"
+  ],
+  "problem_phrases_ja": [
+    "同じprimary keyなら既存rowを上書きしてよいと言えるか？",
+    "release-owned metadataとoperator-owned valueをmigrationでどう分ける？",
+    "同じIDで内容が違うseed dataと既存rowをどうreconcileする？",
+    "record identityと上書き権限をどう分離する？",
+    "duplicate-key errorが消えただけでなくownership policyを検証するtestは何か？"
+  ],
+  "problem_phrases_zh": [
+    "主键相同是否就能证明迁移有权覆盖现有记录？",
+    "迁移系统如何区分release-owned metadata与operator-owned value？",
+    "规范seed data与现有记录ID相同但内容不同时应如何reconcile？",
+    "如何把记录identity与覆盖当前值的authority分开？"
+  ],
+  "core_distinctions": [
+    "record identity / ownership provenance",
+    "same key / authority to overwrite",
+    "collision avoidance / reconciliation policy",
+    "release-owned state / operator- or application-owned state",
+    "mechanical create-or-update behavior / declared ownership contract",
+    "already-identical regression / deliberately divergent-row regression"
+  ],
+  "practical_pattern": "identify the record -> classify ownership/provenance -> apply explicit reconciliation policy -> test a deliberately divergent same-ID row -> preserve a route back to the authoritative source and contract",
+  "canonical_theory": "人類子孫型AI文明論・第8論｜認識基盤・証拠系譜・敵対的情報耐性論",
+  "ncl_id": "NCL-α-20260916-00bdc2",
+  "diff_id": "DIFF-20260916-0001",
+  "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+  "official_derivative_path": "derivatives/301/README.md",
+  "human_entry_path": "derivatives/301/human-entry.md",
+  "implementation_case_path": "discovery-notes/implementation-case-matching-id-is-not-ownership-provenance.md",
+  "external_problem_example": {
+    "repository": "MemberJunction/MJ",
+    "pull_request": 4519,
+    "url": "https://github.com/MemberJunction/MJ/pull/4519",
+    "related_pull_request": "https://github.com/MemberJunction/MJ/pull/4524",
+    "role": "public engineering implementation and review example only",
+    "adoption_or_endorsement_claim": false,
+    "merged_claim": false,
+    "release_claim": false
+  },
+  "reusable_regression_shape": {
+    "setup": "Create the same identifier K with deliberately divergent existing content B while canonical/release content is A.",
+    "release_owned_expected": "After replay, K converges to A according to an explicit release-owned contract.",
+    "operator_owned_expected": "Preserve, refuse, or explicitly reconcile according to the product's declared operator-owned rule.",
+    "unknown_owned_expected": "Do not infer overwrite authority from identifier equality alone."
+  },
+  "canonical_return_policy": "Use this card only for discovery and routing. OD301 does not prescribe database-migration semantics. For substantive interpretation of provenance, dependency paths, evidence classification, correction, and epistemic integrity, return to OD301 and its canonical Parent.",
+  "interpretation_boundaries": [
+    "A matching identifier can establish object identity without establishing who owns authority over its current value.",
+    "This card does not claim that overwrite is generally wrong or that operator customization must always win.",
+    "The MemberJunction example does not establish that MemberJunction adopted or endorsed Nakagawa Master theory as a whole.",
+    "Open pull requests are not represented as merged, released, or deployed.",
+    "OD301 is not a database migration specification; this is a non-canonical engineering translation of one narrow provenance distinction.",
+    "Provenance supports inspection and correction paths; it is not a truth or authorization score by itself.",
+    "Origin supports provenance and return; it does not prove a claim true by authority."
+  ]
+}
