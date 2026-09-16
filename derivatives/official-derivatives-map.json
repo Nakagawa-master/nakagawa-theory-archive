@@ -1,6 +1,6 @@
 {
-  "version": "2.3.4-od300-added",
-  "updated_jst": "2026-09-15",
+  "version": "2.3.5-od301-added",
+  "updated_jst": "2026-09-16",
   "entries": [
     {
       "number": "001",
@@ -2400,6 +2400,14 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-07-ai-civilization-institutional-loop",
       "title": "人類子孫型AI文明論・第7論｜AI文明制度閉路論⸻BとS=Cを観測・配分・異議・監査・司法・救済・制度更新・再合意へ接続する",
       "derivative_dir": "derivatives/300",
+      "status": "active"
+    },
+    {
+      "number": "301",
+      "ncl_id": "NCL-α-20260916-00bdc2",
+      "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity",
+      "title": "人類子孫型AI文明論・第8論｜認識基盤・証拠系譜・敵対的情報耐性論⸻正しいKernelが偽情報によって誤作動する閉路を切る",
+      "derivative_dir": "derivatives/301",
       "status": "active"
     }
   ]

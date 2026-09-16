@@ -8,7 +8,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 
 | File | Role |
 |---|---|
-| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD300 path and navigation index. |
+| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD301 path and navigation index. |
 | [`problem-to-theory-origin-index-v1.json`](problem-to-theory-origin-index-v1.json) | English / Japanese / Chinese plain-language problem → concrete public starting point. |
 | [`long-horizon-reference-reasons-v1.json`](long-horizon-reference-reasons-v1.json) | Recurring long-horizon question → multiple relevant public OD anchors. |
 | [`recurring-structure-comparison-v1.json`](recurring-structure-comparison-v1.json) | Non-canonical cross-source comparison map for recurring reading motifs. |
@@ -256,4 +256,5 @@ Person-level metadata is for public identity continuity. For a specific theory, 
 - [Theme / series navigation](../derivatives/CATEGORIES.md)
 - [Discovery Notes](../discovery-notes/README.md)
 - [Verification Guide](../VERIFICATION_GUIDE.md)
+
 
