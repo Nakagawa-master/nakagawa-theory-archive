@@ -150,6 +150,53 @@ The independent issue author later opened draft PR #23038. Its PR description **
 
 ---
 
+## 6. Replay｜An external owner explicitly adopted and froze a Nakagawa-master boundary
+
+**Surface:** [`aferna6-cell/Replay#67`](https://github.com/aferna6-cell/Replay/issues/67)  
+**Current status:** protocol frozen in the issue / repository implementation not yet verified
+
+A public `Nakagawa-master` contribution separated two states for participant-derived data:
+
+```text
+historical consent
+!=
+current authorization to retain / process / use the captured material
+```
+
+The historical consent event can remain immutable while current eligibility is evaluated separately against purpose, retention, withdrawal or deletion, contract changes, and other superseding events.
+
+- [Nakagawa-master contribution](https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689647722)
+- [External repository owner explicitly adopts and restates the boundary](https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689719035)
+
+The repository owner then explicitly accepted and froze the Nakagawa-master boundary and independently restated it as a protocol: immutable consent history, current eligibility, fail-closed downstream gates, artifact-graph withdrawal/deletion receipts, and adversarial cases.
+
+**Verified effect here:** public judgment → explicit external attribution → independent restatement → protocol adoption/freeze.  
+**Not established here:** repository schema/code/tests implementing the protocol, merge, release, or use with participant data.
+
+**Human meaning:** the distinction was not merely absorbed anonymously. An independent person recognized where it came from and incorporated it into their own plan.
+
+---
+
+## 7. MemberJunction｜A Nakagawa-master finding was carried forward by a different independent reviewer
+
+**Surface:** [`MemberJunction/MJ#4487`](https://github.com/MemberJunction/MJ/pull/4487)  
+**Current status:** open / unmerged
+
+A `Nakagawa-master` review identified a compatibility hole around aliased public re-exports: the public alias and the underlying declaration name can diverge, causing a member used by external consumers to be misclassified as safely auto-renamable.
+
+- [Nakagawa-master review](https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5219601735)
+
+At the next stage, a different independent reviewer, `rkihm-BC`, included the same issue as a required item in their own formal review. They explicitly identified it as the aliased re-export hole Nakagawa-master had reported, re-explained the mechanism, and carried forward the proposed source-name fix and regression test.
+
+- [Independent second-reviewer carry](https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5241419422)
+
+**Verified effect here:** Nakagawa Master public judgment → another person independently rechecks it → named restatement → propagation into a formal changes-requested review.  
+**Not established here:** author code/test changes after this second-hop review, merge, or release.
+
+**Human meaning:** the judgment no longer depends on Nakagawa Master repeating it personally. Another person can remember, reference, and carry it into the next decision.
+
+---
+
 ## What these cases do—and do not—show
 
 The public record establishes at least the following:
@@ -158,7 +205,9 @@ The public record establishes at least the following:
 2. Independent people in multiple external projects have examined, restated, or implemented those distinctions.
 3. Some cases progressed through code / tests / documentation into an integration branch.
 4. One independent third-party PR explicitly cites a `Nakagawa-master` compatibility contract.
-5. In the current PostHog case, a boundary about evidence shown by AI to humans was converted after review into server, UI, and regression-test changes.
+5. In the PostHog case, a boundary about evidence shown by AI to humans was converted after review into server, UI, and regression-test changes.
+6. In Replay, an external repository owner explicitly recognized a Nakagawa-master boundary and adopted it as a frozen protocol.
+7. In MemberJunction #4487, a different independent reviewer carried a Nakagawa-master finding into their own formal review and re-explained it to the next decision-maker.
 
 It does **not** establish that:
 
