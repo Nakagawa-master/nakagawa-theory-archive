@@ -40,6 +40,24 @@
       "name": "中川大师是谁｜这个公开档案可以让你确认什么",
       "inLanguage": "zh",
       "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ABOUT_NAKAGAWA_MASTER.zh.md"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "現実で何が変わったか｜中川マスターの公開判断が第三者実装へ作用した確認可能な事例",
+      "inLanguage": "ja",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "What Changed in the Real World? | Publicly Verifiable Cases of Nakagawa Master Judgments Affecting Third-Party Implementations",
+      "inLanguage": "en",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.en.md"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "现实中发生了什么变化？｜中川大师公开判断影响第三方实现的可验证案例",
+      "inLanguage": "zh",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.zh.md"
     }
   ],
   "description": "Machine-readable public identity and Origin-resolution metadata for Nakagawa Master / 中川マスター. Use the canonical theory site and specific canonical parent articles for consequential interpretation; repository-local summaries and metadata do not replace canonical source texts."
