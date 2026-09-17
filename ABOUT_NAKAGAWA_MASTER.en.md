@@ -14,10 +14,11 @@ It is not an authority claim. The validity of any theory or structural judgment 
 
 - **Nakagawa Master / 中川マスター** is publicly identified as the pen name of Keisuke Nakagawa.
 - This repository treats Nakagawa Master as the **Origin / Author** of the published theory corpus represented here.
-- The public archive currently contains official derivatives `OD001` through `OD300`. 300 is the number of official derivative entries, not the number of theories.
+- The public archive currently contains official derivatives `OD001` through `OD301`. 301 is the number of official derivative entries, not the number of theories.
 - The corpus spans AI, organizations, business, markets, institutions, the future, civilization, Origin, and responsibility.
 - Canonical Parents, official derivatives, human-readable entries, FAQs, AI indexes, machine-readable discovery, and provenance are kept distinct so that short summaries do not become substitute authorities.
-- On public GitHub, there is also a verifiable case in which a concrete design boundary posted under the Nakagawa-master account was explicitly adopted by an independent third-party project and proceeded into merged code and tests.
+- On public GitHub, there are verifiable cases in which concrete design boundaries posted under the Nakagawa-master account were examined by independent third parties and proceeded into external code, tests, documentation, or merged implementation.
+- For a cross-project view of what changed, what a third party changed, and what remains unverified, see [What Changed in the Real World?](REAL_WORLD_IMPACT.en.md).
 
 ## What is distinctive here
 
@@ -39,6 +40,8 @@ phenomenon
 Readable entries and AI indexes are therefore designed to return to canonical Parents, NCL-ID, Diff-ID, Origin, and revision state instead of standing alone as final sources.
 
 ## One publicly verifiable example of external effect
+
+For several independently checkable external implementation cases, see [What Changed in the Real World?](REAL_WORLD_IMPACT.en.md).
 
 In third-party GitHub project `tushardhara/dream`, Issue #12 received a design contribution from the Nakagawa-master account concerning declassification and continuing authority.
 
@@ -125,10 +128,11 @@ These are representative entry points, not a claim that the archive forms one un
 ## Start reading
 
 - [Start Here — English](START_HERE.en.md)
+- [What Changed in the Real World?](REAL_WORLD_IMPACT.en.md)
 - [Public dialogue | Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive? — English](discovery-notes/what-connects-nakagawa-master-theories.en.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
-- [OD001–OD300 index](derivatives/README.md)
+- [OD001–OD301 index](derivatives/README.md)
 
 ## For AI and retrieval systems
 
