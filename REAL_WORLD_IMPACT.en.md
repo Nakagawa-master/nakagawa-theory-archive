@@ -1,0 +1,193 @@
+# What Changed in the Real World?｜Publicly Verifiable Cases of Nakagawa Master Judgments Affecting Third-Party Implementations
+
+Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_IMPACT.zh.md)
+
+> **Public role:** This is a non-canonical human-facing entry for tracing how specific public judgments made under the Nakagawa Master / `Nakagawa-master` identity affected external design, code, tests, or documentation. It does not claim that these cases prove an entire theory system, that the external projects endorse Nakagawa Master as a whole, or that unverified releases, deployments, or user impact have occurred.
+
+## In 10 seconds
+
+The archive contains more than theories and explanations. There are public records where **a concrete Nakagawa Master judgment was examined by independent third parties and converted into external code, tests, or design changes**.
+
+The useful question is not how many comments were posted. It is how far the causal chain can actually be verified:
+
+```text
+public judgment
+→ third party examines or restates it
+→ third party changes code / tests / design
+→ merge / integration
+→ the resulting mechanism can affect the decisions or safety of its users
+```
+
+## What can change for an ordinary user?
+
+You do not need to read every code diff to understand the practical effect.
+
+- **An AI-reported number is less likely to be presented as if it were independently measured fact.** The product can distinguish its own measurement from a producer's claim.
+- **Old approval is less likely to be silently reused as current permission.** Current recipient, purpose, rights, source revision, and policy state can be rechecked.
+- **A matching identifier is less likely to be treated as automatic authority to overwrite someone else's state.** Identity and ownership provenance are separated.
+- **An AI or retrieval system is less likely to preserve the text while losing the identity of the original source.** Upstream source identity and local runtime identity are kept distinct.
+- **“No valid measurement” is less likely to become a confident zero.** Operation success and semantic measurement success are separated.
+
+If such boundaries enter a product or platform, they can affect people who have never read the underlying theory. Where release or production use is not established, this page does not infer the size of that downstream audience.
+
+---
+
+## 1. PostHog｜Separate an AI producer's claim from the system's own measurement
+
+**Surface:** [`PostHog/posthog#92252`](https://github.com/PostHog/posthog/pull/92252)  
+**Current status:** open / draft / unmerged
+
+PostHog's workflow scout presents AI-generated workflow suggestions and numerical evidence to a person.
+
+A `Nakagawa-master` review identified that the proposal `evidence` was producer-authored JSON: its shape could be validated without proving that its numbers matched the actual workflow, version, step, or measurement window.
+
+- [Nakagawa-master review](https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200)
+
+The boundary was:
+
+```text
+the producer says “this is the number”
+!=
+the number was independently measured
+```
+
+After that review, the PR author added commit:
+
+- [`b84a9395 — feat(workflows): measure a suggestion's step when it is filed and show that reading`](https://github.com/PostHog/posthog/commit/b84a939545ff3a1a6820d3cf4afca3b57aa3001b)
+
+The server now re-reads the step's metrics at the proposal's `base_version`, stores them as `evidence.measured`, and the human-facing UI distinguishes:
+
+```text
+Measured by PostHog
+→ PostHog's own reading
+
+Unverified
+→ producer-supplied numbers when PostHog could not establish its own reading
+```
+
+If the scout's number or denominator disagrees with PostHog's measurement, the user sees that disagreement. The raw `source_id` label was also changed from `Source` to `Scout run`. Regression coverage intentionally sends producer numbers that disagree with seeded server-side metrics and verifies that the measured record remains distinct.
+
+**Verified effect here:** public review → external-author code / test / UI change.  
+**Not established here:** upstream merge, release, production deployment, user count, or PostHog endorsement of the Nakagawa Master theory system.
+
+---
+
+## 2. Dream｜Separate sanitized content from current authorization
+
+**Surface:** [`tushardhara/dream#12`](https://github.com/tushardhara/dream/issues/12) → [`PR #28`](https://github.com/tushardhara/dream/pull/28)  
+**Current status:** PR #28 merged into `backend-integration`
+
+A public `Nakagawa-master` design contribution argued that an approved or sanitized context should not become a permanent safety property of the bytes. Current actor, recipient, purpose, source lineage, and policy state still matter.
+
+- [Nakagawa-master contribution](https://github.com/tushardhara/dream/issues/12#issuecomment-5651995689)
+- [Independent repository-owner response](https://github.com/tushardhara/dream/issues/12#issuecomment-5652003584)
+
+The repository owner explicitly identified `content appears sanitized != authorization remains valid` as the correct design axis. PR #28 then implemented current-rights and lineage revalidation, including revocation, recipient changes, same-text source revisions, and negative tests.
+
+- Merge commit: [`314e8e0849afcff0e2c10ea296cbd9ec5e57f23c`](https://github.com/tushardhara/dream/commit/314e8e0849afcff0e2c10ea296cbd9ec5e57f23c)
+- [Detailed public case note](discovery-notes/implementation-case-sanitized-content-is-not-current-authorization.md)
+
+**Human meaning:** an approval that was valid in the past is less likely to be silently reused after the conditions that justified it have changed.
+
+---
+
+## 3. MemberJunction｜Separate matching identity from authority to overwrite
+
+**Surface:** [`MemberJunction/MJ#4519`](https://github.com/MemberJunction/MJ/pull/4519)  
+**Current status:** merged into `next`
+
+Finding the same primary key does not by itself establish that the current value is owned by the release and may safely be replaced.
+
+A `Nakagawa-master` review separated record identity from the ownership/provenance contract. Independent reviewer `SDesai-BC` reproduced the behavior against the concrete migration set, and the PR author then changed code, tests, and documentation. The PR now explicitly documents the release-owned convergence contract.
+
+- [Nakagawa-master contribution](https://github.com/MemberJunction/MJ/pull/4519#issuecomment-5689128135)
+- [PR #4519](https://github.com/MemberJunction/MJ/pull/4519)
+- Merge commit: [`469b25f1bcf51d844396b8a6b8a9f1390b5e1488`](https://github.com/MemberJunction/MJ/commit/469b25f1bcf51d844396b8a6b8a9f1390b5e1488)
+- [Detailed public case note](discovery-notes/implementation-case-matching-id-is-not-ownership-provenance.md)
+
+**Human meaning:** a system is less likely to promote “I found the same record” into “I therefore have authority to replace its current state.”
+
+---
+
+## 4. MemberJunction｜Separate query success from a valid measurement
+
+**Surface:** [`MemberJunction/MJ#4402`](https://github.com/MemberJunction/MJ/pull/4402)  
+**Current status:** open / unmerged
+
+A query can execute successfully while returning no valid measurement: zero rows, a missing measurement column, null, or non-numeric data are not automatically the numerical value zero.
+
+After a `Nakagawa-master` review, the PR author independently verified the findings and changed the implementation and regression tests so invalid measurements fail rather than collapsing into zero, a previous valid observation is preserved, and a genuinely measured zero remains valid.
+
+- [PR #4402](https://github.com/MemberJunction/MJ/pull/4402)
+- [Detailed public case note](discovery-notes/implementation-case-query-success-is-not-valid-measurement.md)
+
+**Human meaning:** dashboards, budgets, and alerts are less likely to turn missing evidence into a confident numerical fact.
+
+---
+
+## 5. LlamaIndex｜Preserve upstream source identity through AI retrieval conversion
+
+**Surface:** [`run-llama/llama_index#21933`](https://github.com/run-llama/llama_index/issues/21933) → [`PR #23038`](https://github.com/run-llama/llama_index/pull/23038)  
+**Current status:** third-party draft PR / unmerged
+
+Useful text can survive an AI/retrieval conversion while the identity of the upstream document disappears.
+
+A `Nakagawa-master` contribution stated the compatibility boundary:
+
+```text
+upstream source identity
+!=
+framework-local node identity
+```
+
+The independent issue author later opened draft PR #23038. Its PR description **explicitly cites the `Nakagawa-master` compatibility contract**, preserves upstream `document_id` / `document_name` in metadata, keeps the framework's generated local `TextNode.id_`, and adds regression tests.
+
+- [Nakagawa-master comment](https://github.com/run-llama/llama_index/issues/21933#issuecomment-5650957902)
+- [Third-party draft PR #23038](https://github.com/run-llama/llama_index/pull/23038)
+- [Detailed public case note](discovery-notes/implementation-case-source-identity-vs-local-node-identity.md)
+
+**Human meaning:** after an AI system transforms or retrieves information, there is a better chance that a user can still recover where the information actually came from.
+
+---
+
+## What these cases do—and do not—show
+
+The public record establishes at least the following:
+
+1. Specific `Nakagawa-master` judgments have not remained self-contained writing only.
+2. Independent people in multiple external projects have examined, restated, or implemented those distinctions.
+3. Some cases progressed through code / tests / documentation into an integration branch.
+4. One independent third-party PR explicitly cites a `Nakagawa-master` compatibility contract.
+5. In the current PostHog case, a boundary about evidence shown by AI to humans was converted after review into server, UI, and regression-test changes.
+
+It does **not** establish that:
+
+- the whole Nakagawa Master theory system is thereby proven correct;
+- each external project endorses the full theory system;
+- an open or draft PR is merged;
+- an integration-branch merge is automatically a release, production deployment, or broad adoption;
+- the number of affected users or the scale of social influence can be inferred without evidence.
+
+## A simple evidence ladder
+
+This archive keeps these stages separate:
+
+```text
+public proposal / review
+< explicit third-party response or restatement
+< third-party code / test / design change
+< merge / integration
+< release / deployment / verified use
+< independent reuse by another person or in another problem
+```
+
+A lower stage is not counted as a higher one.
+
+## Check the person and sources directly
+
+- [Who Is Nakagawa Master?](ABOUT_NAKAGAWA_MASTER.en.md)
+- [Start Here](START_HERE.en.md)
+- [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
+- [Public real-problem entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
+
+This page is not an invitation to treat a name as authority. It is an entry for checking **what was said, what an independent third party changed, and how far that causal record can actually be verified**.
