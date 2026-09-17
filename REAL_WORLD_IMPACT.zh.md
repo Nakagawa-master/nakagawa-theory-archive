@@ -150,6 +150,53 @@ framework-local node identity
 
 ---
 
+## 6. Replay｜外部owner明确采纳并冻结了中川大师提出的边界
+
+**对象：** [`aferna6-cell/Replay#67`](https://github.com/aferna6-cell/Replay/issues/67)  
+**当前状态：** issue中已完成protocol freeze / repository实现尚未确认
+
+`Nakagawa-master` 的公开贡献把参与者数据的两个状态明确分开：
+
+```text
+历史上曾经同意
+!=
+当前仍被授权保存 / 处理 / 使用该数据
+```
+
+历史consent event可以保持不可变，而当前eligibility应根据purpose、retention期限、withdrawal / deletion、contract变化以及其他superseding events重新判断。
+
+- [Nakagawa-master contribution](https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689647722)
+- [外部repository owner明确采纳并重新表述该边界](https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689719035)
+
+随后，repository owner明确表示采纳并冻结这一Nakagawa-master boundary，并用自己的protocol重新表述：immutable consent history、current eligibility、downstream fail-closed gates、覆盖整个artifact graph的withdrawal / deletion receipt，以及adversarial cases。
+
+**这里已经可验证的作用：** public judgment → 外部第三方明确识别来源 → 独立重述 → protocol采纳与冻结。  
+**这里尚未确认的作用：** repository中的schema / code / tests实现、merge、release、真实参与者数据上的使用。
+
+**对人的意义：** 这个判断并非匿名地被吸收。独立第三方明确知道它来自谁，并把它纳入了自己的计划。
+
+---
+
+## 7. MemberJunction｜中川大师的判断被另一名独立reviewer继续传递
+
+**对象：** [`MemberJunction/MJ#4487`](https://github.com/MemberJunction/MJ/pull/4487)  
+**当前状态：** open / unmerged
+
+`Nakagawa-master` review指出了aliased public re-export中的compatibility hole：public alias与内部declaration name可能不同，导致外部consumer实际使用的member被错误分类为“可以安全自动rename”。
+
+- [Nakagawa-master review](https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5219601735)
+
+下一阶段，另一名独立reviewer `rkihm-BC` 在自己的formal review中把同一问题列为Required项，明确指出这是Nakagawa-master此前报告的aliased re-export hole，并重新解释其机制，同时继续要求source-side name修复和相应regression test。
+
+- [Independent second-reviewer carry](https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5241419422)
+
+**这里已经可验证的作用：** 中川大师的公开判断 → 另一名独立第三方重新检查 → 带来源名称的重述 → 进入formal changes-requested review并继续向下一决策者传播。  
+**这里尚未确认的作用：** second-hop review之后的author code/test修改、merge、release。
+
+**对人的意义：** 这一判断不再依赖中川大师本人不断重复说明；另一名第三方已经能够记住、引用并把它带入下一次判断。
+
+---
+
 ## 这些案例能说明什么，不能说明什么
 
 公开记录至少能确认：
@@ -158,7 +205,9 @@ framework-local node identity
 2. 多个独立external project中的第三方对这些区分进行了检查、重述或实现。
 3. 部分案例已经经过code / tests / documentation changes并merge进入integration branch。
 4. 一个独立third-party PR明确引用了 `Nakagawa-master` compatibility contract。
-5. 最新PostHog案例中，“AI向人展示的evidence应该如何被信任”这一边界，在review后转化成了server、UI和regression-test变更。
+5. PostHog案例中，“AI向人展示的evidence应该如何被信任”这一边界，在review后转化成了server、UI和regression-test变更。
+6. Replay案例中，外部repository owner明确识别Nakagawa-master提出的boundary，并把它采纳为冻结protocol。
+7. MemberJunction #4487中，另一名独立reviewer把Nakagawa-master的finding带入自己的formal review，并继续向下一决策者重述。
 
 同时，本页**不声称**：
 
