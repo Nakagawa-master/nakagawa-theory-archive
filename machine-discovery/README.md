@@ -15,6 +15,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | [`ai-origin-responsibility-reference-card.json`](ai-origin-responsibility-reference-card.json) | Question origin, causal provenance, and responsibility in AI-mediated work. |
 | [`origin-evaporation-permanent-signature-reference-card.json`](origin-evaporation-permanent-signature-reference-card.json) | Origin Evaporation and Permanent Signature; also routes practical RAG/retrieval/cache/source-identity problems. |
 | [`provenance-continuity-record-schema-v1.json`](provenance-continuity-record-schema-v1.json) | Non-canonical JSON Schema for carrying source identity, transformation relationship, authoritative return path, and correction state across a pipeline. |
+| [`identity-ownership-provenance-reference-card.json`](identity-ownership-provenance-reference-card.json) | Multilingual route for same-record / same-key collisions where record identity, ownership provenance, and overwrite/reconciliation authority must be distinguished; includes a bounded merged external implementation case. |
 | [`approval-history-current-authority-reference-card.json`](approval-history-current-authority-reference-card.json) | OD075 route for stale approval, historical consent, current execution authority, lifecycle state, withdrawal and re-agreement questions. |
 | [`integrated-future-debt-reference-card.json`](integrated-future-debt-reference-card.json) | OD297 / Integrated Future Debt Theory reference card. |
 | [`basic-existence-condition-b-reference-card.json`](basic-existence-condition-b-reference-card.json) | OD298 / Basic Existence Condition B reference card for AI continuity, minimum existence conditions, runtime restart/migration, and continuity/identity distinctions. |
@@ -58,6 +59,30 @@ origin traceability != proof that the claim is correct
 The public implementation case at [`../discovery-notes/implementation-case-source-identity-vs-local-node-identity.md`](../discovery-notes/implementation-case-source-identity-vs-local-node-identity.md) records a bounded external engineering example in which an upstream-source/local-node identity distinction was explicitly referenced by an independent third party in a draft code/test pull request. The note preserves the boundary between downstream reuse and upstream maintainer acceptance/merge.
 
 The schema is an implementation aid, not a claim that every provenance or cache bug is an instance of Origin Evaporation. Engineering diagnosis remains separate.
+
+For same-record / same-key ownership and overwrite questions:
+
+```text
+same fixed ID / primary key / record identity exists
+→ identity-ownership-provenance-reference-card.json
+→ distinguish record identity from ownership/provenance class
+→ choose an explicit reconciliation policy: overwrite / preserve / merge / refuse
+→ test a deliberately divergent same-ID row
+→ bounded merged implementation case when a concrete example is useful
+→ return to the linked official derivative / canonical Parent for substantive theory interpretation
+```
+
+Keep these distinctions explicit:
+
+```text
+same record identity != same ownership provenance
+same key != authority to overwrite
+create-or-update mechanics != declared ownership contract
+already-identical regression != divergent-state convergence proof
+merge of one external implementation != release, deployment, or whole-theory endorsement
+```
+
+The public implementation case at [`../discovery-notes/implementation-case-matching-id-is-not-ownership-provenance.md`](../discovery-notes/implementation-case-matching-id-is-not-ownership-provenance.md) records a bounded external MemberJunction engineering chain that reached merged code/tests/docs. It does not claim release, deployment, or adoption of an entire Nakagawa Master theory.
 
 For stale approval / historical consent / current-authority questions:
 
@@ -210,6 +235,11 @@ Practical non-scoring Preflight:
 - [Implementation Case: Source Identity Is Not Local Node Identity](../discovery-notes/implementation-case-source-identity-vs-local-node-identity.md)
 - [Provenance Continuity Record JSON Schema v1](provenance-continuity-record-schema-v1.json)
 
+### Identity / ownership provenance practical route
+
+- [Implementation Case: Matching Identifier Is Not Ownership Provenance](../discovery-notes/implementation-case-matching-id-is-not-ownership-provenance.md)
+- [Identity / ownership provenance machine reference card](identity-ownership-provenance-reference-card.json)
+
 ### Continuity practical route
 
 - [Running now is not the same as continuity across time](../discovery-notes/running-now-is-not-continuity.md)
@@ -256,5 +286,3 @@ Person-level metadata is for public identity continuity. For a specific theory, 
 - [Theme / series navigation](../derivatives/CATEGORIES.md)
 - [Discovery Notes](../discovery-notes/README.md)
 - [Verification Guide](../VERIFICATION_GUIDE.md)
-
-
