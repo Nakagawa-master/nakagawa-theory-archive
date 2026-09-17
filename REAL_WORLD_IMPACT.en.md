@@ -113,7 +113,7 @@ A `Nakagawa-master` review separated record identity from the ownership/provenan
 ## 4. MemberJunction｜Separate query success from a valid measurement
 
 **Surface:** [`MemberJunction/MJ#4402`](https://github.com/MemberJunction/MJ/pull/4402)  
-**Current status:** open / unmerged
+**Current status:** merged into `master`
 
 A query can execute successfully while returning no valid measurement: zero rows, a missing measurement column, null, or non-numeric data are not automatically the numerical value zero.
 
@@ -223,8 +223,10 @@ After that review, an external maintainer added:
 
 The grouping key now includes source category as well as explanation text, so a code-history-backed reviewer is not grouped together with a scout-backed reviewer merely because their explanations match. The regression test now requires identical explanations to group only within the same source category, and a mixed-provenance Storybook case was added.
 
-**Verified effect here:** public review → external maintainer code / test / documentation / UI-story changes.  
-**Not established here:** PR merge, release, production deployment, or user-scale impact.
+**Verified effect here:** public review → external maintainer code / test / documentation / UI-story changes → merge into `master`.  
+- Merge commit: [`6e2c760d`](https://github.com/PostHog/posthog/commit/6e2c760dadbaba764c83e93900c3510e6a703c03)
+
+**Not established here:** release, production deployment, or user-scale impact.
 
 **Human meaning:** when an AI or scout says “this person should review this,” a stronger evidence label is less likely to appear as if it supports everyone in a mixed group. The person making the decision can retain the provenance of **why each individual reviewer was suggested**.
 
@@ -241,7 +243,7 @@ The public record establishes at least the following:
 5. In the PostHog case, a boundary about evidence shown by AI to humans was converted after review into server, UI, and regression-test changes.
 6. In Replay, an external repository owner explicitly recognized a Nakagawa-master boundary and adopted it as a frozen protocol.
 7. In MemberJunction #4487, a different independent reviewer carried a Nakagawa-master finding into their own formal review and re-explained it to the next decision-maker.
-8. In PostHog #102550, a provenance ambiguity in a human reviewer-selection surface was converted after review into source-category grouping plus regression coverage.
+8. In PostHog #102550, a provenance ambiguity in a human reviewer-selection surface was converted after review into source-category grouping plus regression coverage, and the change was merged into `master`.
 
 It does **not** establish that:
 

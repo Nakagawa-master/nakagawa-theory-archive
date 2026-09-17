@@ -124,7 +124,7 @@ same ID
 ## 4. MemberJunction｜「処理が成功した」と「有効な測定値が得られた」を分ける
 
 **対象:** [`MemberJunction/MJ#4402`](https://github.com/MemberJunction/MJ/pull/4402)  
-**現在の状態:** open / unmerged
+**現在の状態:** merged into `master`
 
 budget evaluationでquery自体が成功しても、zero rows、missing column、null、non-numeric等なら「有効な測定値を得た」とは限りません。
 
@@ -238,8 +238,10 @@ review後、第三者maintainerによるcommit:
 
 この変更では、group keyに説明文だけでなくsource categoryも含め、同じ説明でも `Code history` とscout由来の推薦を別groupとして扱います。回帰テストも「同じ説明は、同じsource category内でだけgroup化する」条件へ変更され、mixed provenanceのStorybook caseも追加されています。
 
-**ここで確認できる作用:** 公開review → 外部maintainerのcode / test / documentation / UI-story変更。  
-**まだ確認できないもの:** PR merge、release、production deployment、実利用者規模。
+**ここで確認できる作用:** 公開review → 外部maintainerのcode / test / documentation / UI-story変更 → `master` へのmerge。  
+- Merge commit: [`6e2c760d`](https://github.com/PostHog/posthog/commit/6e2c760dadbaba764c83e93900c3510e6a703c03)
+
+**まだ確認できないもの:** release、production deployment、実利用者規模。
 
 **人間側の意味:** AIやscoutが「この人にreviewしてもらうべき」と推薦したとき、より強い根拠ラベルがgroup全員を裏付けているように見える誤認を減らし、**各人を信頼する理由の出所を保ったまま判断できる**方向へ変わります。
 
@@ -256,7 +258,7 @@ review後、第三者maintainerによるcommit:
 5. PostHog caseでは、AIが人へ示すevidenceの信頼境界そのものが、review後のserver / UI / test変更へ変換されている。
 6. Replay caseでは、外部repository ownerが中川マスター起点のboundaryを明示的に認識し、自分のprotocolとして採用・固定している。
 7. MemberJunction #4487では、中川マスターの指摘を別の第三者reviewerが自分のformal reviewへ引き継ぎ、次の人へ再説明している。
-8. PostHog #102550では、人間がreviewerを信頼する根拠のprovenanceが混ざる問題が、review後にsource category別group化とregression testへ変換されている。
+8. PostHog #102550では、人間がreviewerを信頼する根拠のprovenanceが混ざる問題が、review後にsource category別group化とregression testへ変換され、その変更が `master` へmergeされている。
 
 同時に、**まだ言えないこと**も明確です。
 

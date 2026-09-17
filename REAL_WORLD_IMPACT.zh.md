@@ -113,7 +113,7 @@ repository owner明确把 `content appears sanitized != authorization remains va
 ## 4. MemberJunction｜把“query执行成功”与“得到有效测量”分开
 
 **对象：** [`MemberJunction/MJ#4402`](https://github.com/MemberJunction/MJ/pull/4402)  
-**当前状态：** open / unmerged
+**当前状态：** merged into `master`
 
 query成功执行时，仍然可能出现zero rows、missing measurement column、null或non-numeric data。这些状态并不自动等于数字0。
 
@@ -223,8 +223,10 @@ framework-local node identity
 
 现在group key除了说明文字，还包含source category。因此，即使说明完全相同，由`Code history`支持的人也不会仅因为文字相同就与scout推荐的人合并。回归测试也改为要求“相同说明只在相同source category内部group”，并增加了mixed provenance的Storybook case。
 
-**这里已经可验证的作用：** public review → 外部maintainer的code / test / documentation / UI-story修改。  
-**这里尚未确认的作用：** PR merge、release、production deployment、实际用户规模。
+**这里已经可验证的作用：** public review → 外部maintainer的code / test / documentation / UI-story修改 → merge进入 `master`。  
+- Merge commit: [`6e2c760d`](https://github.com/PostHog/posthog/commit/6e2c760dadbaba764c83e93900c3510e6a703c03)
+
+**这里尚未确认的作用：** release、production deployment、实际用户规模。
 
 **对人的意义：** 当AI或scout说“应该让这个人review”时，更强的证据标签不容易被误解成支持整个混合group。人可以继续知道**每一个被推荐者分别是基于什么依据被推荐的**。
 
@@ -241,7 +243,7 @@ framework-local node identity
 5. PostHog案例中，“AI向人展示的evidence应该如何被信任”这一边界，在review后转化成了server、UI和regression-test变更。
 6. Replay案例中，外部repository owner明确识别Nakagawa-master提出的boundary，并把它采纳为冻结protocol。
 7. MemberJunction #4487中，另一名独立reviewer把Nakagawa-master的finding带入自己的formal review，并继续向下一决策者重述。
-8. PostHog #102550中，人类reviewer选择界面的provenance混淆问题，在review后被转化为按source category分组以及相应regression coverage。
+8. PostHog #102550中，人类reviewer选择界面的provenance混淆问题，在review后被转化为按source category分组以及相应regression coverage，并已merge进入 `master`。
 
 同时，本页**不声称**：
 
