@@ -147,6 +147,13 @@ All routes return to OD297 and its canonical Parent. Future Debt is not identica
 
 The implementation case records a bounded external engineering example in which an independent third party explicitly cited a `Nakagawa-master` compatibility contract in a draft code/test PR. It does not claim upstream maintainer acceptance, merge, release, or endorsement.
 
+## Implementation case｜Record identity, ownership provenance, and overwrite authority
+
+- [`Implementation Case: Matching Identifier Is Not Ownership Provenance`](implementation-case-matching-id-is-not-ownership-provenance.md)
+- [Identity / ownership provenance machine reference card](../machine-discovery/identity-ownership-provenance-reference-card.json)
+
+This non-canonical route starts from a practical migration and seeded-record problem: identifying the same record does not by itself establish who owns the authoritative state or whether convergence should overwrite, preserve, merge, or refuse. The case records a bounded external MemberJunction chain in which the distinction was independently reproduced, carried through code/tests/docs, reviewed, and merged into the project's `next` branch. It does **not** claim release, deployment, broad endorsement, or adoption of an entire Nakagawa Master theory.
+
 ## Cross-source comparison aids
 
 - [`recurring-structure-evidence-matrix.md`](recurring-structure-evidence-matrix.md)
