@@ -163,6 +163,53 @@ framework-local node identity
 
 ---
 
+## 6. Replay｜第三者が中川マスター起点の境界を明示的に採用・固定した
+
+**対象:** [`aferna6-cell/Replay#67`](https://github.com/aferna6-cell/Replay/issues/67)  
+**現在の状態:** issue上でprotocol freeze / repository実装は未確認
+
+`Nakagawa-master` の公開コメントは、参加者データについて次の境界を提示しました。
+
+```text
+historical consent
+!=
+current authorization to retain / process / use the captured material
+```
+
+つまり、過去に同意が成立した事実は履歴として保持しつつ、現在そのデータを保持・処理・利用してよいかは、目的、retention期限、withdrawal / deletion、契約変更等を含む現在のeligibilityとして別に判定する、という区別です。
+
+- [Nakagawa-master contribution](https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689647722)
+- [External repository ownerによる明示的な採用・再説明](https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689719035)
+
+その後、repository owner自身が **Nakagawa-master起点のboundaryをaccept / freezeする** と明示し、immutableなconsent eventとcurrent eligibilityの分離、downstreamでのfail-closed gate、withdrawal / deletion receiptのartifact graph、adversarial casesまで自分のprotocolとして再記述しました。
+
+**ここで確認できる作用:** 公開判断 → 外部ownerによる明示的な起点認識 → 独立した再説明 → protocolへの採用・固定。  
+**まだ確認できないもの:** schema / code / testsへのrepository実装、merge、release、実参加者データでの運用。
+
+**人間側の意味:** 判断内容だけが匿名的に吸収されたのではなく、独立した第三者が「誰のどの境界を採用したか」を認識したうえで、自分の計画へ移しています。
+
+---
+
+## 7. MemberJunction｜中川マスターの指摘が、別の第三者reviewerへ再伝播した
+
+**対象:** [`MemberJunction/MJ#4487`](https://github.com/MemberJunction/MJ/pull/4487)  
+**現在の状態:** open / unmerged
+
+`Nakagawa-master` reviewは、aliased re-exportされたpublic typeで、内部declaration名と公開alias名がずれるため、外部consumerが使うmemberを「安全に自動renameできる」と誤分類し得るcompatibility holeを指摘しました。
+
+- [Nakagawa-master review](https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5219601735)
+
+その翌段階で、別の独立reviewer `rkihm-BC` が自分のformal reviewのRequired項目としてこの問題を取り上げ、**Nakagawa-masterが報告したaliased re-export holeがまだ開いている**ことを明示しました。さらに、同じmechanismを自分で再説明し、source-side nameを保持する修正と、Nakagawa-masterが提案したregression testを改めて要求しています。
+
+- [Independent second-reviewer carry](https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5241419422)
+
+**ここで確認できる作用:** 中川マスターの公開判断 → 別人が独立reviewで再確認 → 名前付きで再説明 → formal changes-requested reviewへ再伝播。  
+**まだ確認できないもの:** このsecond-hop review後のauthor code / test変更、merge、release。
+
+**人間側の意味:** 中川マスター本人が同じ説明を繰り返さなくても、別の人がその判断を記憶・参照し、自分の判断材料として次の人へ運ぶ段階が確認できます。
+
+---
+
 ## ここから何を判断できるか
 
 これらのcaseから確認できるのは、少なくとも次です。
@@ -171,7 +218,9 @@ framework-local node identity
 2. 複数の独立した外部projectで、第三者がその判断を検討・再説明・実装へ変換した記録がある。
 3. 一部caseはcode / tests / documentationの変更を経てintegration branchへmergeされている。
 4. 別caseでは、第三者PRが `Nakagawa-master` のcompatibility contractを明示的に引用している。
-5. 最新のPostHog caseでは、AIが人へ示すevidenceの信頼境界そのものが、review後のserver / UI / test変更へ変換されている。
+5. PostHog caseでは、AIが人へ示すevidenceの信頼境界そのものが、review後のserver / UI / test変更へ変換されている。
+6. Replay caseでは、外部repository ownerが中川マスター起点のboundaryを明示的に認識し、自分のprotocolとして採用・固定している。
+7. MemberJunction #4487では、中川マスターの指摘を別の第三者reviewerが自分のformal reviewへ引き継ぎ、次の人へ再説明している。
 
 同時に、**まだ言えないこと**も明確です。
 
