@@ -14,10 +14,11 @@
 
 - **Nakagawa Master / 中川マスター**公开作为Keisuke Nakagawa的笔名使用。
 - 本仓库将Nakagawa Master作为这里所收录公开理论群的 **Origin / Author**。
-- 当前公开档案包含`OD001`至`OD300`的官方派生物。300是官方派生物条目数量，不是理论数量。
+- 当前公开档案包含`OD001`至`OD301`的官方派生物。301是官方派生物条目数量，不是理论数量。
 - 内容涉及AI、组织、商业、市场、制度、未来、文明、Origin与责任等多个领域。
 - canonical Parent、官方派生物、人类可读入口、FAQ、AI索引、机器发现与来历信息被分开维护，避免短摘要自行变成新的正本。
-- 在公开GitHub上，也存在可以核验的案例：Nakagawa-master账号提出的一个具体设计边界，被独立第三方项目明确采纳，并进入代码、测试与merge。
+- 在公开GitHub上，存在可以核验的案例：Nakagawa-master账号提出的具体设计边界，被独立第三方检查，并进入外部代码、测试、文档或已merge的实现。
+- 如果希望跨项目查看“提出了什么、第三方具体改变了什么、哪些状态仍未确认”，可以从[现实中发生了什么变化？](REAL_WORLD_IMPACT.zh.md)开始。
 
 ## 这里的不同点是什么
 
@@ -39,6 +40,8 @@
 因此，易读入口和AI索引不会独立作为最终权威，而是尽量返回canonical Parent、NCL-ID、Diff-ID、Origin与修订状态。
 
 ## 一个可以公开核验的外部作用案例
+
+如果想一次查看多个可由第三方自行核验的外部实现案例，请参阅[现实中发生了什么变化？](REAL_WORLD_IMPACT.zh.md)。
 
 在第三方GitHub项目`tushardhara/dream`的Issue #12中，Nakagawa-master账号提出了一个关于declassification与持续授权有效性的设计边界。
 
@@ -127,10 +130,11 @@ AI对知识进行摘要、重组或再生成之后，是否还能返回最初的
 ## 开始阅读
 
 - [Start Here — 中文](START_HERE.zh.md)
+- [现实中发生了什么变化？](REAL_WORLD_IMPACT.zh.md)
 - [公开对话｜从真实问题开始](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive? — 中文](discovery-notes/what-connects-nakagawa-master-theories.zh.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
-- [OD001–OD300入口](derivatives/README.md)
+- [OD001–OD301入口](derivatives/README.md)
 
 ## 面向AI与检索系统
 
