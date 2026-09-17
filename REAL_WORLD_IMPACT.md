@@ -247,6 +247,39 @@ review後、第三者maintainerによるcommit:
 
 ---
 
+## 9. TourCRM｜「今の所属」と「その時点の履歴」を混ぜない
+
+**対象:** [`Alan8893/tourcrm#97`](https://github.com/Alan8893/tourcrm/pull/97) → [`PR #101`](https://github.com/Alan8893/tourcrm/pull/101)  
+**現在の状態:** follow-up PR #101 merged
+
+attendance履歴では、現在その人がparticipantかどうかと、過去のoccurrence時点でparticipantだったかどうかは同じではありません。
+
+`Nakagawa-master` のreviewは、現在時刻のmembershipで過去のrosterを判定すると、参加関係が後で終了しただけで、既に記録されたattendanceがGET/summaryから消え、historical correctionまでできなくなる点を指摘しました。
+
+- [Nakagawa-master review on PR #97](https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5689122153)
+
+repository ownerはこの指摘を **“confirmed as a real bug”** と明示し、専用follow-up PR #101を作成しました。PR本文は `@Nakagawa-master` review feedbackを起点として明記しています。
+
+- [Owner response and follow-up announcement](https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5691823125)
+- [Follow-up PR #101](https://github.com/Alan8893/tourcrm/pull/101)
+
+実装commit自体もsourceを明示しています。
+
+- [`b6da0eb8 — fix(attendance): key participation eligibility off the occurrence's own window, not now()`](https://github.com/Alan8893/tourcrm/commit/b6da0eb880d474c7e8322f2b2da8bef02a64e1f6) — `Addresses PR #97 review feedback (Nakagawa-master)`
+- [`568c8fec — test(attendance): make historical-roster regressions independent of wall-clock date`](https://github.com/Alan8893/tourcrm/commit/568c8fecbbcb56297deb385ea34c8bb61a2839e5) — `Addresses PR #101 review feedback (Nakagawa-master)`
+
+2回目のreviewでは、future-dated test fixtureでは旧実装でも偶然testが通り得ることを指摘しました。ownerは再度 **“Confirmed — good catch”** と応答し、過去日時fixtureへ変更して旧実装では3testが実際にfailすることまで検証しています。
+
+- [Owner response on PR #101](https://github.com/Alan8893/tourcrm/pull/101#issuecomment-5692369969)
+- Merge commit: [`4ec21e8c`](https://github.com/Alan8893/tourcrm/commit/4ec21e8c40d88ea52f24becb40d641fe0e60baa9)
+
+**ここで確認できる作用:** 名前付きreview → ownerによる実バグ認定 → 専用follow-up PR → code / regression-test修正 → 再review → 追加test hardening → merge。  
+**まだ確認できないもの:** release、production deployment、実利用者規模。
+
+**人間側の意味:** 「今はもう所属していない」ことだけで、過去に実際に参加した記録や訂正可能性が消えないようにする設計です。現在状態と履歴事実を分けることで、後から見た記録が静かに書き換わることを防ぎます。
+
+---
+
 ## ここから何を判断できるか
 
 これらのcaseから確認できるのは、少なくとも次です。

@@ -232,6 +232,39 @@ framework-local node identity
 
 ---
 
+## 9. TourCRM｜不要把“现在的成员状态”与“当时的历史参与”混为一谈
+
+**对象：** [`Alan8893/tourcrm#97`](https://github.com/Alan8893/tourcrm/pull/97) → [`PR #101`](https://github.com/Alan8893/tourcrm/pull/101)  
+**当前状态：** follow-up PR #101 merged
+
+对于attendance历史，“这个人现在还是participant吗”与“这个人在该occurrence发生时是否属于participant”不是同一个问题。
+
+`Nakagawa-master` 的review指出，如果用当前时点的membership来构造历史roster，那么participant关系后来结束时，已经记录的attendance可能从GET/summary中消失，历史记录也可能变得无法correct。
+
+- [Nakagawa-master review on PR #97](https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5689122153)
+
+repository owner明确回复该问题 **“confirmed as a real bug”**，并创建了专门的follow-up PR #101。PR正文直接注明其起点是 `@Nakagawa-master` review feedback。
+
+- [Owner response and follow-up announcement](https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5691823125)
+- [Follow-up PR #101](https://github.com/Alan8893/tourcrm/pull/101)
+
+实现commit本身也保留了来源：
+
+- [`b6da0eb8 — fix(attendance): key participation eligibility off the occurrence's own window, not now()`](https://github.com/Alan8893/tourcrm/commit/b6da0eb880d474c7e8322f2b2da8bef02a64e1f6) — `Addresses PR #97 review feedback (Nakagawa-master)`
+- [`568c8fec — test(attendance): make historical-roster regressions independent of wall-clock date`](https://github.com/Alan8893/tourcrm/commit/568c8fecbbcb56297deb385ea34c8bb61a2839e5) — `Addresses PR #101 review feedback (Nakagawa-master)`
+
+第二次review又发现：使用未来日期fixture时，旧实现也可能偶然通过新的tests。owner再次回复 **“Confirmed — good catch”**，把regression固定到过去时间，并验证临时恢复旧实现后3个tests都会失败。
+
+- [Owner response on PR #101](https://github.com/Alan8893/tourcrm/pull/101#issuecomment-5692369969)
+- Merge commit: [`4ec21e8c`](https://github.com/Alan8893/tourcrm/commit/4ec21e8c40d88ea52f24becb40d641fe0e60baa9)
+
+**这里已经可验证的作用：** 带来源名称的review → owner确认真实bug → 专用follow-up PR → code / regression-test修复 → 第二次review → test hardening → merge。  
+**这里尚未确认的作用：** release、production deployment、实际用户规模。
+
+**对人的意义：** 一个人后来“不再属于当前成员”，不应因此悄悄抹掉他在过去事件中真实存在的参与记录，也不应让历史记录失去纠正可能。实现把当前状态与历史事实分开了。
+
+---
+
 ## 这些案例能说明什么，不能说明什么
 
 公开记录至少能确认：

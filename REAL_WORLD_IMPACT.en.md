@@ -232,6 +232,39 @@ The grouping key now includes source category as well as explanation text, so a 
 
 ---
 
+## 9. TourCRM｜Do not confuse current membership with historical participation
+
+**Surface:** [`Alan8893/tourcrm#97`](https://github.com/Alan8893/tourcrm/pull/97) → [`PR #101`](https://github.com/Alan8893/tourcrm/pull/101)  
+**Current status:** follow-up PR #101 merged
+
+For attendance history, “is this person a participant now?” is not the same question as “was this person part of this occurrence when it happened?”
+
+A `Nakagawa-master` review identified that using current-time membership to build the historical roster could make an already-recorded attendance row disappear from GET/summary after participation later ended, and could also block correction of that historical record.
+
+- [Nakagawa-master review on PR #97](https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5689122153)
+
+The repository owner explicitly replied that this was **“confirmed as a real bug”** and opened dedicated follow-up PR #101. Its PR body names `@Nakagawa-master` review feedback as the reason for the follow-up.
+
+- [Owner response and follow-up announcement](https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5691823125)
+- [Follow-up PR #101](https://github.com/Alan8893/tourcrm/pull/101)
+
+The implementation commits preserve that attribution:
+
+- [`b6da0eb8 — fix(attendance): key participation eligibility off the occurrence's own window, not now()`](https://github.com/Alan8893/tourcrm/commit/b6da0eb880d474c7e8322f2b2da8bef02a64e1f6) — `Addresses PR #97 review feedback (Nakagawa-master)`
+- [`568c8fec — test(attendance): make historical-roster regressions independent of wall-clock date`](https://github.com/Alan8893/tourcrm/commit/568c8fecbbcb56297deb385ea34c8bb61a2839e5) — `Addresses PR #101 review feedback (Nakagawa-master)`
+
+A second Nakagawa review found that future-dated fixtures could let the old implementation pass accidentally. The owner again replied **“Confirmed — good catch”**, moved the regressions to a past-time anchor, and verified that temporarily restoring the old implementation makes all three tests fail.
+
+- [Owner response on PR #101](https://github.com/Alan8893/tourcrm/pull/101#issuecomment-5692369969)
+- Merge commit: [`4ec21e8c`](https://github.com/Alan8893/tourcrm/commit/4ec21e8c40d88ea52f24becb40d641fe0e60baa9)
+
+**Verified effect here:** named review → owner confirms real bug → dedicated follow-up PR → code / regression-test repair → second review → test hardening → merge.  
+**Not established here:** release, production deployment, or user-scale impact.
+
+**Human meaning:** ending a membership later should not silently erase what was true at the time of an event or make that historical record impossible to correct. The implementation separates present status from historical fact.
+
+---
+
 ## What these cases do—and do not—show
 
 The public record establishes at least the following:
