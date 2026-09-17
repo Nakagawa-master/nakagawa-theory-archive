@@ -27,6 +27,7 @@
 - **仅仅ID相同，不再自动等于有权覆盖现有数据。** identity与ownership / provenance被分开。
 - **AI或RAG保留了文本时，也更有机会保留原始source identity。** upstream source identity与local runtime identity被分开。
 - **“没有得到有效测量”不容易被误写成“数值为0”。** operation success与valid measurement被分开。
+- **AI或scout推荐人时，每个人的推荐依据不容易被混在一起。** 即使说明文字相同，也可以继续区分code history与agent/scout来源的推荐依据。
 
 如果这些边界进入产品或平台，它们可以影响从未读过相关理论的用户。但在release或production use尚未确认的案例中，本页不会推测实际影响人数。
 
@@ -197,6 +198,38 @@ framework-local node identity
 
 ---
 
+## 8. PostHog｜说明相同，也不把“谁被推荐”与“为什么被推荐”混在一起
+
+**对象：** [`PostHog/posthog#102550`](https://github.com/PostHog/posthog/pull/102550)  
+**当前状态：** open / unmerged
+
+这个PR修改了PostHog inbox中面向人的reviewer推荐界面：用户会在这里判断“应该由谁review”以及“为什么推荐这个人”。
+
+`Nakagawa-master` 的review指出：如果只按照相同的说明文字把reviewer分组，`Code history`、`Added by scout`等source label会被汇总到整个group上，从而丢失**每个reviewer究竟由哪一种证据支持**的对应关系。
+
+- [Nakagawa-master review](https://github.com/PostHog/posthog/pull/102550#pullrequestreview-5242012853)
+
+核心边界是：
+
+```text
+说明文字相同
+!=
+推荐依据的provenance相同
+```
+
+该review之后，外部maintainer加入commit：
+
+- [`764c347e — fix(signals): separate reviewer groups by source`](https://github.com/PostHog/posthog/commit/764c347e488cb9f8bb155a2d95c5f40a3b92a08c)
+
+现在group key除了说明文字，还包含source category。因此，即使说明完全相同，由`Code history`支持的人也不会仅因为文字相同就与scout推荐的人合并。回归测试也改为要求“相同说明只在相同source category内部group”，并增加了mixed provenance的Storybook case。
+
+**这里已经可验证的作用：** public review → 外部maintainer的code / test / documentation / UI-story修改。  
+**这里尚未确认的作用：** PR merge、release、production deployment、实际用户规模。
+
+**对人的意义：** 当AI或scout说“应该让这个人review”时，更强的证据标签不容易被误解成支持整个混合group。人可以继续知道**每一个被推荐者分别是基于什么依据被推荐的**。
+
+---
+
 ## 这些案例能说明什么，不能说明什么
 
 公开记录至少能确认：
@@ -208,6 +241,7 @@ framework-local node identity
 5. PostHog案例中，“AI向人展示的evidence应该如何被信任”这一边界，在review后转化成了server、UI和regression-test变更。
 6. Replay案例中，外部repository owner明确识别Nakagawa-master提出的boundary，并把它采纳为冻结protocol。
 7. MemberJunction #4487中，另一名独立reviewer把Nakagawa-master的finding带入自己的formal review，并继续向下一决策者重述。
+8. PostHog #102550中，人类reviewer选择界面的provenance混淆问题，在review后被转化为按source category分组以及相应regression coverage。
 
 同时，本页**不声称**：
 

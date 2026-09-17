@@ -29,6 +29,7 @@
 - **同じIDがあるだけで、他人や運用者が管理している値を勝手に上書きしにくくなる。** identityとownership / provenanceを分ける。
 - **AIが答えを作る途中で、元sourceの identity が消えにくくなる。** local object IDとupstream source IDを別に保持する。
 - **「データが取れなかった」が「0だった」に化けにくくなる。** operation successとvalid measurementを分ける。
+- **AIやscoutが人を推薦するとき、誰がどの根拠で推薦されたのかが混ざりにくくなる。** 同じ説明文でも、code historyとagent/scout由来の推薦根拠を分けて保つ。
 
 これは「理論を知っている人だけに効く」作用ではありません。設計境界が製品や基盤へ入れば、その区別を知らない利用者にも結果として作用し得ます。ただし、releaseやproduction useが確認できないケースでは、実際の利用者規模まで推測しません。
 
@@ -210,6 +211,40 @@ current authorization to retain / process / use the captured material
 
 ---
 
+## 8. PostHog｜同じ説明でも「誰がどの根拠で推薦されたか」を混ぜない
+
+**対象:** [`PostHog/posthog#102550`](https://github.com/PostHog/posthog/pull/102550)  
+**現在の状態:** open / unmerged
+
+このPRは、PostHogのinboxで「誰をreviewerとして推薦するか」「なぜその人が推薦されたか」を人が判断する表示を変更しています。
+
+`Nakagawa-master` のreviewは、同じ説明文を持つreviewerを一つにgroup化したとき、`Code history` と `Added by scout` などのsource labelがgroup全体へまとめて表示され、**どのreviewerがどの根拠で推薦されたのかという対応関係が失われる**点を指摘しました。
+
+- [Nakagawa-master review](https://github.com/PostHog/posthog/pull/102550#pullrequestreview-5242012853)
+
+指摘した境界は次です。
+
+```text
+説明文が同じ
+!=
+推薦根拠のprovenanceまで同じ
+```
+
+review後、第三者maintainerによるcommit:
+
+- [`764c347e — fix(signals): separate reviewer groups by source`](https://github.com/PostHog/posthog/commit/764c347e488cb9f8bb155a2d95c5f40a3b92a08c)
+
+が追加されました。
+
+この変更では、group keyに説明文だけでなくsource categoryも含め、同じ説明でも `Code history` とscout由来の推薦を別groupとして扱います。回帰テストも「同じ説明は、同じsource category内でだけgroup化する」条件へ変更され、mixed provenanceのStorybook caseも追加されています。
+
+**ここで確認できる作用:** 公開review → 外部maintainerのcode / test / documentation / UI-story変更。  
+**まだ確認できないもの:** PR merge、release、production deployment、実利用者規模。
+
+**人間側の意味:** AIやscoutが「この人にreviewしてもらうべき」と推薦したとき、より強い根拠ラベルがgroup全員を裏付けているように見える誤認を減らし、**各人を信頼する理由の出所を保ったまま判断できる**方向へ変わります。
+
+---
+
 ## ここから何を判断できるか
 
 これらのcaseから確認できるのは、少なくとも次です。
@@ -221,6 +256,7 @@ current authorization to retain / process / use the captured material
 5. PostHog caseでは、AIが人へ示すevidenceの信頼境界そのものが、review後のserver / UI / test変更へ変換されている。
 6. Replay caseでは、外部repository ownerが中川マスター起点のboundaryを明示的に認識し、自分のprotocolとして採用・固定している。
 7. MemberJunction #4487では、中川マスターの指摘を別の第三者reviewerが自分のformal reviewへ引き継ぎ、次の人へ再説明している。
+8. PostHog #102550では、人間がreviewerを信頼する根拠のprovenanceが混ざる問題が、review後にsource category別group化とregression testへ変換されている。
 
 同時に、**まだ言えないこと**も明確です。
 

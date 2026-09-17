@@ -27,6 +27,7 @@ You do not need to read every code diff to understand the practical effect.
 - **A matching identifier is less likely to be treated as automatic authority to overwrite someone else's state.** Identity and ownership provenance are separated.
 - **An AI or retrieval system is less likely to preserve the text while losing the identity of the original source.** Upstream source identity and local runtime identity are kept distinct.
 - **“No valid measurement” is less likely to become a confident zero.** Operation success and semantic measurement success are separated.
+- **When an AI or scout recommends people, the evidence supporting each recommendation is less likely to be pooled together.** Identical explanation text does not have to erase whether a reviewer was supported by code history or by an agent/scout suggestion.
 
 If such boundaries enter a product or platform, they can affect people who have never read the underlying theory. Where release or production use is not established, this page does not infer the size of that downstream audience.
 
@@ -197,6 +198,38 @@ At the next stage, a different independent reviewer, `rkihm-BC`, included the sa
 
 ---
 
+## 8. PostHog｜Do not collapse who was recommended with why they were recommended
+
+**Surface:** [`PostHog/posthog#102550`](https://github.com/PostHog/posthog/pull/102550)  
+**Current status:** open / unmerged
+
+This PR changes the human-facing PostHog inbox surface that explains who is suggested as a reviewer and why.
+
+A `Nakagawa-master` review identified that grouping reviewers only by identical explanation text pooled source labels such as `Code history` and `Added by scout` at the group level. The UI could therefore stop showing **which source actually justified each individual reviewer**.
+
+- [Nakagawa-master review](https://github.com/PostHog/posthog/pull/102550#pullrequestreview-5242012853)
+
+The boundary was:
+
+```text
+same explanation text
+!=
+same provenance for the recommendation
+```
+
+After that review, an external maintainer added:
+
+- [`764c347e — fix(signals): separate reviewer groups by source`](https://github.com/PostHog/posthog/commit/764c347e488cb9f8bb155a2d95c5f40a3b92a08c)
+
+The grouping key now includes source category as well as explanation text, so a code-history-backed reviewer is not grouped together with a scout-backed reviewer merely because their explanations match. The regression test now requires identical explanations to group only within the same source category, and a mixed-provenance Storybook case was added.
+
+**Verified effect here:** public review → external maintainer code / test / documentation / UI-story changes.  
+**Not established here:** PR merge, release, production deployment, or user-scale impact.
+
+**Human meaning:** when an AI or scout says “this person should review this,” a stronger evidence label is less likely to appear as if it supports everyone in a mixed group. The person making the decision can retain the provenance of **why each individual reviewer was suggested**.
+
+---
+
 ## What these cases do—and do not—show
 
 The public record establishes at least the following:
@@ -208,6 +241,7 @@ The public record establishes at least the following:
 5. In the PostHog case, a boundary about evidence shown by AI to humans was converted after review into server, UI, and regression-test changes.
 6. In Replay, an external repository owner explicitly recognized a Nakagawa-master boundary and adopted it as a frozen protocol.
 7. In MemberJunction #4487, a different independent reviewer carried a Nakagawa-master finding into their own formal review and re-explained it to the next decision-maker.
+8. In PostHog #102550, a provenance ambiguity in a human reviewer-selection surface was converted after review into source-category grouping plus regression coverage.
 
 It does **not** establish that:
 
