@@ -391,6 +391,9 @@ A lower stage is not counted as a higher one.
 
 ## How these cases relate to Nakagawa Structural OS
 
+A newer bounded case also shows explicit source-preserving reuse: [LlamaIndex #23038](https://github.com/run-llama/llama_index/pull/23038) cites a Nakagawa-master issue comment as its compatibility contract and implements source-provenance preservation with tests. The PR is still draft/unmerged, so only implementation/test-stage evidence is claimed.
+
+
 These cases are an applied / verification layer, not a separate theory system. See the [Nakagawa Structural OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md) for bounded links from canonical structural principles to external implementation evidence, and return to https://master.ricette.jp for the canonical theory context.
 
 ## Test, challenge, or reuse a distinction yourself
