@@ -307,6 +307,30 @@ PR正文也明确保留source关系：`@Nakagawa-master identified a real defect
 
 ---
 
+## 11. Cline｜把批准delegation与理解它实际授予的能力分开
+
+**对象：** [`cline/cline#14225`](https://github.com/cline/cline/pull/14225)  
+**当前状态：** base PR merged / 该提案的follow-up实现尚未确认
+
+对于configured subagent，父层可以只批准一次delegation，之后child tool call可以不再逐次请求approval。如果configured agent省略 `tools`，runtime还可能向child提供当前可用的tool集合。
+
+`Nakagawa-master` 的review指出：做出delegation approval的人，应当能够在approval时理解这一批准实际授予的child capability set。
+
+- [Nakagawa-master review](https://github.com/cline/cline/pull/14225#pullrequestreview-5242232355)
+
+外部author明确点名 `@Nakagawa-master`，评价这是 **“a great idea”**、**“definitely a better UX than what we currently have”**，并表示会把它放进后续工作，使agent config成为first-class feature。
+
+- [External author response](https://github.com/cline/cline/pull/14225#issuecomment-5723653394)
+
+base PR #14225本身已经merge，但这并不代表该提案已经被实现。最新确认时，没有发现实现该提案的独立follow-up issue / PR。
+
+**这里已经可验证的作用：** 带来源名称的review → external author明确识别 → 独立评价为更好的UX → 明确表示将其带入follow-up。  
+**这里尚未确认的作用：** follow-up work item、code / test / UI实现、release、production use。
+
+**对人的意义：** 独立第三方明确识别了中川大师起点的判断，保留人物/source关系，并认为它值得进入更好的人类产品体验方向。
+
+---
+
 ## 这些案例能说明什么，不能说明什么
 
 公开记录至少能确认：
@@ -320,6 +344,7 @@ PR正文也明确保留source关系：`@Nakagawa-master identified a real defect
 7. MemberJunction #4487中，另一名独立reviewer把Nakagawa-master的finding带入自己的formal review，并继续向下一决策者重述。
 8. PostHog #102550中，人类reviewer选择界面的provenance混淆问题，在review后被转化为按source category分组以及相应regression coverage，并已merge进入 `master`。
 9. Clientverse #27中，external owner明确把Nakagawa-master的判断称为真实缺陷，在PR正文保留该source关系，并修改state machine / provider contract / tests后完成merge。
+10. Cline #14225中，external author明确点名Nakagawa-master，独立评价该提案是更好的UX，并表示会把它带入follow-up；尚未把该意向当作实现。
 
 同时，本页**不声称**：
 
