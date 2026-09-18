@@ -387,6 +387,10 @@ public proposal / review
 
 较低阶段不会被当成较高阶段。
 
+## 与中川结构OS的关系
+
+这里的外部案例不是独立于中川结构OS的另一套理论。它们是把中川结构OS中的结构原则翻译到具体现实问题中进行验证和实现的 applied / verification layer。具体对应关系可见 [Nakagawa Structural OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)，更完整的原典语境请返回 https://master.ricette.jp 。
+
 ## 在自己的场景中独立验证、反驳或复用
 
 如果你在另一个公开、非机密场景中独立测试、反驳、实现或复用了这些边界，可以使用 [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md) 与 [公开registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)。失败复现、counterexample与non-fit同样有价值，并且不会把较低证据阶段升级成较高阶段。
