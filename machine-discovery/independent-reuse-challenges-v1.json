@@ -108,6 +108,22 @@
       "useful_negative_evidence": [
         "domain contract explicitly defines history in terms of current status"
       ]
+    },
+    {
+      "id": "G-measurement-surface-drift",
+      "distinction": "observed subject movement != subject-caused movement when the measurement surface can drift",
+      "reproduction_kit": "MEASUREMENT_ATTRIBUTION_REUSE_KIT.md",
+      "test": "Measure one subject and a small stable control/reference panel under the same conditions, repeat later, and classify subject-specific movement versus shared environment/provider/model/retrieval drift before investigating causation.",
+      "positive_evidence": [
+        "subject movement while controls remain broadly stable is reported as subject-specific delta without causal overclaim",
+        "shared movement is classified as environment or surface drift",
+        "materially changed observation conditions are marked non-equivalent or trigger a new baseline",
+        "raw evidence and observation conditions remain recheckable"
+      ],
+      "useful_negative_evidence": [
+        "a narrower contract proving the measurement surface is invariant enough that a control panel adds no information",
+        "counterexample showing the proposed control design creates a misleading comparison"
+      ]
     }
   ],
   "evidence_boundary": [
