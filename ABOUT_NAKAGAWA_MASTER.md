@@ -10,6 +10,8 @@
 
 **中川マスターは、AI・組織・事業・制度・未来などの問題を、構造・因果・成立条件・責任の観点からモデル化し、人間とAIの双方が検証・再利用できる公開原典体系として運用しているOrigin / Authorです。**
 
+公開GitHubでは、その具体的な判断が第三者のcode / tests / designへ変換・mergeされた事例や、別surfaceで再利用された事例まで、[Real-World Impact](REAL_WORLD_IMPACT.md)から直接検証できます。
+
 ## 30秒で分かること
 
 - **Nakagawa Master / 中川マスター**は、Keisuke Nakagawa の筆名として公開されています。
