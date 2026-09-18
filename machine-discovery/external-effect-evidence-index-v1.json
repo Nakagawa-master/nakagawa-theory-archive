@@ -411,6 +411,49 @@
         "production use",
         "whole-theory adoption"
       ]
+    },
+    {
+      "case_id": "memberjunction-ownership-provenance-real-upgrade",
+      "topic": "matching identity versus authority to overwrite release-owned metadata",
+      "external_repository": "MemberJunction/MJ",
+      "origin_action": {
+        "type": "pull_request_comment",
+        "url": "https://github.com/MemberJunction/MJ/pull/4519#issuecomment-5689128135",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action"
+      },
+      "third_party_response": {
+        "url": "https://github.com/MemberJunction/MJ/pull/4519",
+        "relationship": "independent reviewer and PR author converted the ownership/provenance distinction into an explicit release-owned convergence contract, code, tests, and documentation"
+      },
+      "merge": {
+        "claimed": true,
+        "target": "next",
+        "commit": "469b25f1bcf51d844396b8a6b8a9f1390b5e1488",
+        "url": "https://github.com/MemberJunction/MJ/commit/469b25f1bcf51d844396b8a6b8a9f1390b5e1488"
+      },
+      "downstream_release": {
+        "version": "v6.1.2",
+        "mechanism": "the guarded migration behavior shipped through the LTS line/backport chain"
+      },
+      "verified_use": {
+        "surface": "https://github.com/MemberJunction/MJ/issues/4475#issuecomment-5715684968",
+        "environment": "Skip production-shaped database upgrade from MJ 5.51.x to 6.1.2",
+        "facts": {
+          "migrations_applied": 65,
+          "failed_migrations": 0,
+          "preexisting_sync_push_rows": true,
+          "reporter_states_no_4503_collisions": true
+        },
+        "relationship": "external consumer reported that the production-shaped database already contained rows created by mj sync push and the 6.1.2 migration run hit no collisions"
+      },
+      "current_stage": "release_deployment_or_verified_use",
+      "not_claimed": [
+        "fleet-wide adoption",
+        "user-scale impact",
+        "nontechnical cross-context reuse",
+        "whole-theory endorsement"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
