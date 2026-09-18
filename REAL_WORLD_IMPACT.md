@@ -209,12 +209,18 @@ current authorization to retain / process / use the captured material
 
 **人間側の意味:** 中川マスター本人が同じ説明を繰り返さなくても、別の人がその判断を記憶・参照し、自分の判断材料として次の人へ運ぶ段階が確認できます。
 
+このsecond-hopは一件だけではありません。別のPR [`MemberJunction/MJ#4524`](https://github.com/MemberJunction/MJ/pull/4524) でも、同じ独立reviewer `rkihm-BC` が自分でcheckerを実行・反証しながら、**“@Nakagawa-master's point about D is confirmed”** と明記しました。さらに、列挙済みのregex形状だけを増やすのではなく、未分類 `spCreate` をfail-closedにするNakagawa-master提案を **“the right fix”** と評価し、自分のformal reviewへ持ち込んでいます。
+
+- [Independent confirmation / carry on MJ #4524](https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5242805347)
+
+これは「別の人物へ広く伝播した」証明ではありません。同じ独立reviewerが、**別PR・別problemでもNakagawa-master起点の判断を再確認し、自分の検証結果とともに次のdecisionへ運んだ**というrepeatability evidenceです。#4524 authorによるその後のimplementationは、現時点ではまだ確認できていません。
+
 ---
 
 ## 8. PostHog｜同じ説明でも「誰がどの根拠で推薦されたか」を混ぜない
 
 **対象:** [`PostHog/posthog#102550`](https://github.com/PostHog/posthog/pull/102550)  
-**現在の状態:** open / unmerged
+**現在の状態:** #102550 merged into `master` / downstream reuse #102686 open / unmerged
 
 このPRは、PostHogのinboxで「誰をreviewerとして推薦するか」「なぜその人が推薦されたか」を人が判断する表示を変更しています。
 
@@ -241,7 +247,18 @@ review後、第三者maintainerによるcommit:
 **ここで確認できる作用:** 公開review → 外部maintainerのcode / test / documentation / UI-story変更 → `master` へのmerge。  
 - Merge commit: [`6e2c760d`](https://github.com/PostHog/posthog/commit/6e2c760dadbaba764c83e93900c3510e6a703c03)
 
-**まだ確認できないもの:** release、production deployment、実利用者規模。
+その後、同じ外部maintainer `mikaylathompson` が、Nakagawa-masterからの新しいpromptなしに別surface [`PostHog/posthog#102686`](https://github.com/PostHog/posthog/pull/102686) へ同じprovenance境界を再利用しました。PR本文は、**同じreasonでも同じsource category内でだけgroup化する**と明記し、Core regressionもscout由来とcode-history由来を分離します。
+
+```text
+Nakagawa-master review
+→ 外部maintainerが#102550で実装・merge
+→ 新しいNakagawa promptなし
+→ 同じmaintainerがDesktop/Coreの別surfaceで同じ境界を再利用
+```
+
+これは別人へのsecond-person propagationではありません。しかし、一回限りの修正ではなく、外部の同じ人が境界を内部化し、別surfaceへ自律的に再利用した証拠です。#102686は現時点でopen / unmergedのため、merge / releaseとしては数えません。
+
+**まだ確認できないもの:** #102686のmerge、release、production deployment、実利用者規模。
 
 **人間側の意味:** AIやscoutが「この人にreviewしてもらうべき」と推薦したとき、より強い根拠ラベルがgroup全員を裏付けているように見える誤認を減らし、**各人を信頼する理由の出所を保ったまま判断できる**方向へ変わります。
 
@@ -356,8 +373,8 @@ base PR #14225 自体はmergeされていますが、そのmergeはこの提案�
 4. 別caseでは、第三者PRが `Nakagawa-master` のcompatibility contractを明示的に引用している。
 5. PostHog caseでは、AIが人へ示すevidenceの信頼境界そのものが、review後のserver / UI / test変更へ変換されている。
 6. Replay caseでは、外部repository ownerが中川マスター起点のboundaryを明示的に認識し、自分のprotocolとして採用・固定している。
-7. MemberJunction #4487では、中川マスターの指摘を別の第三者reviewerが自分のformal reviewへ引き継ぎ、次の人へ再説明している。
-8. PostHog #102550では、人間がreviewerを信頼する根拠のprovenanceが混ざる問題が、review後にsource category別group化とregression testへ変換され、その変更が `master` へmergeされている。
+7. MemberJunction #4487では、中川マスターの指摘を別の第三者reviewerが自分のformal reviewへ引き継ぎ、#4524では同じreviewerが別problemでもNakagawa-master起点のpointを独立検証して再度carryしている。
+8. PostHog #102550では、人間がreviewerを信頼する根拠のprovenanceが混ざる問題が、review後にsource category別group化とregression testへ変換され `master` へmergeされた。さらに同じ外部maintainerが、新しいNakagawa promptなしに#102686の別surfaceへ同じ境界を再利用している（#102686自体は未merge）。
 9. Clientverse #27では、external ownerがNakagawa-masterの指摘を「実欠陥」と明示認定し、そのsource relationをPR本文に残したままstate machine / provider contract / testsを修正してmergeしている。
 10. Cline #14225では、external authorがNakagawa-masterを名指しし、その提案を「現状より良いUX」と独立評価してfollow-upへ含める意思を明示している。実装はまだ数えていない。
 
