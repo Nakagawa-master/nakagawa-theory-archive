@@ -136,7 +136,7 @@ issue comment区分了framework-local node identity与upstream document identity
 ## 6. PostHog｜让推荐理由继续绑定真实source
 
 **对象：** [PostHog/posthog#102550](https://github.com/PostHog/posthog/pull/102550) → [#102686](https://github.com/PostHog/posthog/pull/102686)  
-**当前状态：** #102550 merged / deployed；#102686 open / unmerged
+**当前状态：** #102550 merged / deployed；#102686 open / externally approved / unmerged
 
 `Nakagawa-master` review指出，相同的说明文字不应把 `Code history` 与 `Added by scout` 等不同推荐source合并成看起来相同的依据。
 
@@ -147,9 +147,11 @@ maintainer修改了grouping logic、tests和UI stories；#102550已merge到`mast
 - [merged PR #102550](https://github.com/PostHog/posthog/pull/102550)
 - [deploy status](https://github.com/PostHog/posthog/pull/102550#issuecomment-5722917557)
 
-之后，同一maintainer在#102686的另一个UI surface中也使用了相同的source-category区分。#102686目前仍open。
+之后，同一maintainer在#102686的另一个UI surface中也使用了相同的source-category区分。#102686目前仍为open / unmerged，但current head已经得到独立reviewer `stamphog` 的APPROVED review。
 
-**公开可确认：** review → code/tests/UI change → merge → deployment，并在另一PR中再次使用相同区分。  
+- [#102686 external approval](https://github.com/PostHog/posthog/pull/102686#pullrequestreview-5249196997)
+
+**公开可确认：** review → code/tests/UI change → merge → deployment，并在另一PR中再次使用相同区分；该PR的current head还得到另一reviewer的APPROVED review。  
 **尚未确认：** #102686 merge以及实际用户规模和使用结果。
 
 ---
