@@ -31,6 +31,8 @@
 
 [Practical Boundary Checks](PRACTICAL_BOUNDARY_CHECKS.md) では、承認・上書き・測定・推薦根拠・外部送信・履歴記録の6場面を、実務上の問いとregression例へ変換しています。非技術の業務・研究・制度・教育にも使えます。
 
+AI/search可視性、推薦監視、モデル評価などを時系列で測る場合は、[Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md) で、対象固有の変化とprovider/model/retrieval側のdriftをcontrol/reference panelで分けて検証できます。
+
 ### 3. 実際の問題を公開で聞く
 
 すでに公開sourceを独立に検証・反証・再利用した結果がある場合は、相談入口ではなく [Independent verification & reuse registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) と専用issue formを使えます。成功例だけでなく、non-fit・counterexample・failed reproductionも対象です。
@@ -85,6 +87,8 @@ Start from the problem closest to your work:
 
 Then return to the relevant official derivative and canonical Parent for exact definitions, causal structure, validity conditions, boundaries, and falsification or revision conditions.
 
+For longitudinal AI/search visibility, recommendation monitoring, or model-evaluation measurements, use the [Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md) to separate subject-specific movement from provider/model/retrieval-surface drift before making causal claims.
+
 ### 2. Bring a real problem publicly
 
 Use [Issue #399](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399) for a non-confidential real problem. A useful reply should distinguish:
@@ -128,6 +132,8 @@ This entry does not guarantee acceptance of a project, a contract, implementatio
 - [AI Runtime Continuity Preflight](discovery-notes/ai-runtime-continuity-preflight.md)
 
 之后再返回相关官方派生物与canonical Parent，确认精确定义、因果线、成立条件、边界、反证或修订条件。
+
+对于长期 AI/search 可见性、推荐监测或模型评估，可以使用 [Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md)，先把对象自身变化与 provider/model/retrieval 环境漂移区分开，再讨论因果。
 
 ### 2. 公开提出真实问题
 
