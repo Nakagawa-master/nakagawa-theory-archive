@@ -265,6 +265,48 @@ repository owner明确回复该问题 **“confirmed as a real bug”**，并创
 
 ---
 
+## 10. Clientverse｜不要把“一次approval被消费”与“一次外部副作用”混为一谈
+
+**对象：** [`ebyron357/Clientverse-crm#27`](https://github.com/ebyron357/Clientverse-crm/pull/27)  
+**当前状态：** merged
+
+approval只允许使用一次，并不能自动证明外部provider的副作用也只发生了一次。
+
+`Nakagawa-master` 的review指出：如果provider已经接受message，但response随后丢失，而系统把所有exception都当作普通 `failed`，后续重新approval并retry时可能向客户重复发送。
+
+- [Nakagawa-master review](https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690360136)
+
+核心边界是：
+
+```text
+approval consumed once
+!=
+external communication happened once
+```
+
+repository owner明确回复 **“you're right, and this was a real defect in the state machine as written”**，并在 `c8c82f0` 中实施修复。
+
+- [Owner response](https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690677339)
+
+实现至少加入了：
+
+- 只有provider能证明拒绝时才进入 `DeliveryRejected` → `failed`
+- timeout等结果不确定时进入 `outcome_unknown`，不能直接回到普通重发路径
+- 通过 `reconcile_unknown` 先确认provider侧事实，再确定为 `sent` 或 `failed`
+- provider side effect使用dispatch idempotency key
+- regression test模拟provider先接受、随后response丢失，并确认不会发生第二次外部发送
+
+PR正文也明确保留source关系：`@Nakagawa-master identified a real defect rather than a future caution`。
+
+- Merge commit: [`e8d56789`](https://github.com/ebyron357/Clientverse-crm/commit/e8d56789299cdaeef08b90cb46c01f7128b2d1a0)
+
+**这里已经可验证的作用：** 带来源名称的review → external owner确认真实缺陷 → state machine / provider contract / tests修改 → PR正文保留Origin → merge。  
+**这里尚未确认的作用：** real provider adapter的production deployment、实际用户规模。
+
+**对人的意义：** 系统不能因为“approval只用了一次”就假定“客户只收到了一次消息”。无法观测的外部结果必须保持为独立状态，直到完成reconciliation，从而降低重复联系客户的风险。
+
+---
+
 ## 这些案例能说明什么，不能说明什么
 
 公开记录至少能确认：
@@ -277,6 +319,7 @@ repository owner明确回复该问题 **“confirmed as a real bug”**，并创
 6. Replay案例中，外部repository owner明确识别Nakagawa-master提出的boundary，并把它采纳为冻结protocol。
 7. MemberJunction #4487中，另一名独立reviewer把Nakagawa-master的finding带入自己的formal review，并继续向下一决策者重述。
 8. PostHog #102550中，人类reviewer选择界面的provenance混淆问题，在review后被转化为按source category分组以及相应regression coverage，并已merge进入 `master`。
+9. Clientverse #27中，external owner明确把Nakagawa-master的判断称为真实缺陷，在PR正文保留该source关系，并修改state machine / provider contract / tests后完成merge。
 
 同时，本页**不声称**：
 

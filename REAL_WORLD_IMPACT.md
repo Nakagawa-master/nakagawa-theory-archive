@@ -280,6 +280,48 @@ repository ownerはこの指摘を **“confirmed as a real bug”** と明示�
 
 ---
 
+## 10. Clientverse｜「承認を一度使った」と「外部送信が一度だけ起きた」を混ぜない
+
+**対象:** [`ebyron357/Clientverse-crm#27`](https://github.com/ebyron357/Clientverse-crm/pull/27)  
+**現在の状態:** merged
+
+外部message送信では、approvalがsingle-useでも、providerへの送信結果が常に一意に観測できるとは限りません。
+
+`Nakagawa-master` のreviewは、providerがmessageを受理した後にresponseだけ失われた場合まで通常の `failed` と扱うと、後から再承認・再送して二重送信を起こし得る点を指摘しました。
+
+- [Nakagawa-master review](https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690360136)
+
+指摘した境界は次です。
+
+```text
+approval consumed once
+!=
+external communication happened once
+```
+
+repository ownerはこの指摘に対して **“you're right, and this was a real defect in the state machine as written”** と明示し、`c8c82f0` で修正しました。
+
+- [Owner response](https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690677339)
+
+実装では、少なくとも次が追加されています。
+
+- providerが明確に拒否した場合だけ `DeliveryRejected` → `failed` とする
+- timeout等で受理有無が不明な場合は `outcome_unknown` とし、通常の再送経路へ戻さない
+- `reconcile_unknown` でprovider側の事実を確認してから `sent` / `failed` へ確定する
+- provider side effect用のdispatch idempotency keyを渡す
+- providerが受理した後にresponse lossを起こすregression testで、二度目の外部送信が起きないことを確認する
+
+PR本文自身も、`@Nakagawa-master identified a real defect rather than a future caution` とsourceを明示しています。
+
+- Merge commit: [`e8d56789`](https://github.com/ebyron357/Clientverse-crm/commit/e8d56789299cdaeef08b90cb46c01f7128b2d1a0)
+
+**ここで確認できる作用:** 名前付きreview → external ownerによる実欠陥認定 → state-machine / provider contract / tests変更 → PR本文でOrigin明示 → merge。  
+**まだ確認できないもの:** real provider adapterでのproduction deployment、実利用者規模。
+
+**人間側の意味:** 「ボタンを一度承認したから、相手への送信も一度だけだったはず」と誤認せず、観測できなかった外部結果を別状態として扱うことで、顧客へ同じ連絡を二重送信する危険を減らします。
+
+---
+
 ## ここから何を判断できるか
 
 これらのcaseから確認できるのは、少なくとも次です。
@@ -292,6 +334,7 @@ repository ownerはこの指摘を **“confirmed as a real bug”** と明示�
 6. Replay caseでは、外部repository ownerが中川マスター起点のboundaryを明示的に認識し、自分のprotocolとして採用・固定している。
 7. MemberJunction #4487では、中川マスターの指摘を別の第三者reviewerが自分のformal reviewへ引き継ぎ、次の人へ再説明している。
 8. PostHog #102550では、人間がreviewerを信頼する根拠のprovenanceが混ざる問題が、review後にsource category別group化とregression testへ変換され、その変更が `master` へmergeされている。
+9. Clientverse #27では、external ownerがNakagawa-masterの指摘を「実欠陥」と明示認定し、そのsource relationをPR本文に残したままstate machine / provider contract / testsを修正してmergeしている。
 
 同時に、**まだ言えないこと**も明確です。
 

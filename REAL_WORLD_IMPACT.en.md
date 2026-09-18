@@ -265,6 +265,48 @@ A second Nakagawa review found that future-dated fixtures could let the old impl
 
 ---
 
+## 10. Clientverse｜Do not confuse one consumed approval with one external side effect
+
+**Surface:** [`ebyron357/Clientverse-crm#27`](https://github.com/ebyron357/Clientverse-crm/pull/27)  
+**Current status:** merged
+
+A single-use approval does not by itself prove that an external provider side effect happened exactly once.
+
+A `Nakagawa-master` review identified that if a provider accepts a message and the response is then lost, treating every exception as ordinary `failed` can make a later re-approval/retry send the customer a duplicate message.
+
+- [Nakagawa-master review](https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690360136)
+
+The boundary was:
+
+```text
+approval consumed once
+!=
+external communication happened once
+```
+
+The repository owner explicitly replied **“you're right, and this was a real defect in the state machine as written”** and implemented the repair in `c8c82f0`.
+
+- [Owner response](https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690677339)
+
+The change added, among other things:
+
+- `DeliveryRejected` only for a provider-proven rejection;
+- `outcome_unknown` for timeouts or other ambiguous outcomes, with no normal resend path;
+- `reconcile_unknown` to resolve the provider-side fact before moving to `sent` or `failed`;
+- a dispatch idempotency key for the provider-side effect;
+- a regression where the fake provider accepts and then loses the response, proving a second external send does not occur.
+
+The PR body itself preserves the source relationship: `@Nakagawa-master identified a real defect rather than a future caution`.
+
+- Merge commit: [`e8d56789`](https://github.com/ebyron357/Clientverse-crm/commit/e8d56789299cdaeef08b90cb46c01f7128b2d1a0)
+
+**Verified effect here:** named review → external owner confirms a real defect → state-machine / provider-contract / test changes → source attribution preserved in the PR → merge.  
+**Not established here:** production deployment with a real provider adapter or user-scale impact.
+
+**Human meaning:** a system should not tell itself “the approval was used once, so the customer was contacted once.” An unobserved provider outcome stays a separate state until reconciled, reducing the risk of duplicate external communication.
+
+---
+
 ## What these cases do—and do not—show
 
 The public record establishes at least the following:
@@ -277,6 +319,7 @@ The public record establishes at least the following:
 6. In Replay, an external repository owner explicitly recognized a Nakagawa-master boundary and adopted it as a frozen protocol.
 7. In MemberJunction #4487, a different independent reviewer carried a Nakagawa-master finding into their own formal review and re-explained it to the next decision-maker.
 8. In PostHog #102550, a provenance ambiguity in a human reviewer-selection surface was converted after review into source-category grouping plus regression coverage, and the change was merged into `master`.
+9. In Clientverse #27, the external owner explicitly called the Nakagawa-master finding a real defect, preserved that source relationship in the PR body, changed the state machine / provider contract / tests, and merged the result.
 
 It does **not** establish that:
 
