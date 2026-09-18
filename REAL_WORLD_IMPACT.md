@@ -153,7 +153,7 @@ retrieval処理の途中でtextが保持されていても、upstream document i
 ## 6. PostHog｜推薦理由の文章と、その理由のsourceを混ぜない
 
 **対象:** [PostHog/posthog#102550](https://github.com/PostHog/posthog/pull/102550) → [#102686](https://github.com/PostHog/posthog/pull/102686)  
-**現在状態:** #102550 merged / deployed、#102686 open / unmerged
+**現在状態:** #102550 merged / deployed、#102686 open / externally approved / unmerged
 
 PostHogのreviewer推薦UIでは、同じ説明文を持つreviewerをgroup化すると、`Code history` と `Added by scout` のような異なるsourceが一つに見える可能性がありました。
 
@@ -166,9 +166,11 @@ PostHogのreviewer推薦UIでは、同じ説明文を持つreviewerをgroup化�
 - [merged PR #102550](https://github.com/PostHog/posthog/pull/102550)
 - [deploy status](https://github.com/PostHog/posthog/pull/102550#issuecomment-5722917557)
 
-その後、同じmaintainerが別のUI surfaceを扱う#102686でも、同じreasonであってもsource categoryが異なる場合は分ける設計を使っています。#102686は現時点でopenです。
+その後、同じmaintainerが別のUI surfaceを扱う#102686でも、同じreasonであってもsource categoryが異なる場合は分ける設計を使っています。#102686は現時点でopen / unmergedですが、current headは第三者reviewer `stamphog` からAPPROVEDを受けています。
 
-**公開記録から確認できること:** review → code / tests / UI change → merge → deployment。さらに別PRで同じ設計区別が再利用されていること。  
+- [#102686 external approval](https://github.com/PostHog/posthog/pull/102686#pullrequestreview-5249196997)
+
+**公開記録から確認できること:** review → code / tests / UI change → merge → deployment。さらに別PRで同じ設計区別が再利用され、そのcurrent headが別reviewerからAPPROVEDを受けていること。  
 **まだ確認できないこと:** #102686のmerge、実際の利用者数や利用結果。
 
 ---
