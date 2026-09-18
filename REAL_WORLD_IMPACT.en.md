@@ -136,7 +136,7 @@ On #4524, the same reviewer explicitly wrote that “@Nakagawa-master's point ab
 ## 6. PostHog | Keep recommendation reasons tied to their actual source
 
 **Surface:** [PostHog/posthog#102550](https://github.com/PostHog/posthog/pull/102550) → [#102686](https://github.com/PostHog/posthog/pull/102686)  
-**Current state:** #102550 merged / deployed; #102686 open / unmerged
+**Current state:** #102550 merged / deployed; #102686 open / externally approved / unmerged
 
 A `Nakagawa-master` review identified that identical explanation text should not collapse distinct recommendation sources such as `Code history` and `Added by scout`.
 
@@ -147,9 +147,11 @@ The maintainer changed grouping logic, tests, and UI stories; #102550 merged to 
 - [merged PR #102550](https://github.com/PostHog/posthog/pull/102550)
 - [deploy status](https://github.com/PostHog/posthog/pull/102550#issuecomment-5722917557)
 
-The same maintainer later used the same source-category distinction on #102686, which is currently open.
+The same maintainer later used the same source-category distinction on #102686. It remains open / unmerged, but the current head has received an APPROVED review from the separate `stamphog` reviewer.
 
-**Publicly verifiable here:** review → code/tests/UI change → merge → deployment, plus reuse of the same distinction in another PR.  
+- [#102686 external approval](https://github.com/PostHog/posthog/pull/102686#pullrequestreview-5249196997)
+
+**Publicly verifiable here:** review → code/tests/UI change → merge → deployment, plus reuse of the same distinction in another PR whose current head has received a separate APPROVED review.  
 **Not established here:** #102686 merge or user-scale outcomes.
 
 ---
