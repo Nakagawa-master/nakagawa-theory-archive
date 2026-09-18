@@ -61,7 +61,15 @@
         "release",
         "production deployment",
         "whole-theory endorsement"
-      ]
+      ],
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "historical sanitization/approval != current authority",
+        "canonical_context": [
+          "temporal structural consistency",
+          "origin/state/responsibility separation"
+        ],
+        "canonical_return": "https://master.ricette.jp"
+      }
     },
     {
       "case_id": "replay-consent-event-versus-current-eligibility",
@@ -87,7 +95,15 @@
         "merge",
         "release",
         "participant-data use"
-      ]
+      ],
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "historical consent event != current eligibility to retain/process/use",
+        "canonical_context": [
+          "temporal structural consistency",
+          "responsibility and state integrity"
+        ],
+        "canonical_return": "https://master.ricette.jp"
+      }
     },
     {
       "case_id": "memberjunction-aliased-reexport-second-reviewer-carry",
@@ -217,6 +233,15 @@
           }
         ],
         "workflow": "https://github.com/PostHog/charts/actions/runs/35288588087"
+      },
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "same explanation != same evidence provenance",
+        "canonical_context": [
+          "origin traceability",
+          "context preservation",
+          "structural relationship integrity"
+        ],
+        "canonical_return": "https://master.ricette.jp"
       }
     },
     {
@@ -254,7 +279,15 @@
         "release",
         "production deployment",
         "user-scale impact"
-      ]
+      ],
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "current status != historical fact",
+        "canonical_context": [
+          "temporal integrity",
+          "state relation"
+        ],
+        "canonical_return": "https://master.ricette.jp"
+      }
     },
     {
       "case_id": "clientverse-unknown-provider-outcome",
@@ -287,7 +320,15 @@
       "not_claimed": [
         "real-provider production deployment",
         "user-scale impact"
-      ]
+      ],
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "approval consumed once != external side effect happened once",
+        "canonical_context": [
+          "causal integrity",
+          "responsibility tied to actual external outcome"
+        ],
+        "canonical_return": "https://master.ricette.jp"
+      }
     },
     {
       "case_id": "cline-delegation-capability-envelope",
@@ -317,7 +358,16 @@
         "code/test/UI implementation of the proposal",
         "release",
         "production use"
-      ]
+      ],
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "approval of delegation should correspond to the capability envelope actually granted",
+        "canonical_context": [
+          "responsibility",
+          "structural governance",
+          "authorization semantics"
+        ],
+        "canonical_return": "https://master.ricette.jp"
+      }
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
@@ -328,5 +378,12 @@
     "fresh_prompt_should_be_distinguished_from_prompt_free_reuse": true,
     "minimal_origin": "Nakagawa Master",
     "attribution_guide": "ORIGIN_ATTRIBUTION_FOR_REUSE.md"
+  },
+  "canonical_theory_context": {
+    "system_name": "Nakagawa Structural OS",
+    "canonical_archive": "https://master.ricette.jp",
+    "relationship": "This evidence index is an applied/verification layer for bounded structural distinctions. It is not a separate theory system.",
+    "human_bridge": "STRUCTURAL_OS_TO_EXTERNAL_EFFECTS.md",
+    "applied_evidence_map": "STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md"
   }
 }
