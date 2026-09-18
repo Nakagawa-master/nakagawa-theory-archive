@@ -244,6 +244,8 @@ Nakagawa-master review
 
 This is not second-person propagation to a different human. It is evidence that the external maintainer internalized the distinction and reused it autonomously beyond the original fix. #102686 is currently open / unmerged, so it is not counted as a merge or release.
 
+On the downstream #102686 surface, independent review then found additional provenance-display defects of its own—including a pending manual reviewer add temporarily appearing as an `Agent suggestion`. The external maintainer fixed those findings in subsequent commits. This strengthens the evidence that provenance is being treated as an operational design axis on that surface, but it is **not** counted as explicit Nakagawa-origin second-person attribution.
+
 **Not established here:** merge / release / deployment of #102686, or user-scale usage and outcome for #102550.
 
 **Human meaning:** when an AI or scout says “this person should review this,” a stronger evidence label is less likely to appear as if it supports everyone in a mixed group. The person making the decision can retain the provenance of **why each individual reviewer was suggested**.
