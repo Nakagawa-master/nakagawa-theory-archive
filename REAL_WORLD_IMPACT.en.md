@@ -207,7 +207,7 @@ This is not evidence of broad person-to-person diffusion. It is narrower repeata
 ## 8. PostHog｜Do not collapse who was recommended with why they were recommended
 
 **Surface:** [`PostHog/posthog#102550`](https://github.com/PostHog/posthog/pull/102550)  
-**Current status:** #102550 merged into `master` / downstream reuse #102686 open / unmerged
+**Current status:** #102550 merged into `master` and deployed to dev / prod-us / prod-eu / downstream reuse #102686 open / unmerged
 
 This PR changes the human-facing PostHog inbox surface that explains who is suggested as a reviewer and why.
 
@@ -229,8 +229,9 @@ After that review, an external maintainer added:
 
 The grouping key now includes source category as well as explanation text, so a code-history-backed reviewer is not grouped together with a scout-backed reviewer merely because their explanations match. The regression test now requires identical explanations to group only within the same source category, and a mixed-provenance Storybook case was added.
 
-**Verified effect here:** public review → external maintainer code / test / documentation / UI-story changes → merge into `master`.  
+**Verified effect here:** public review → external maintainer code / test / documentation / UI-story changes → merge into `master` → deployment-status bot confirms deployment to dev / prod-us / prod-eu.  
 - Merge commit: [`6e2c760d`](https://github.com/PostHog/posthog/commit/6e2c760dadbaba764c83e93900c3510e6a703c03)
+- [Deploy status comment](https://github.com/PostHog/posthog/pull/102550#issuecomment-5722917557) — dev: 2026-09-18 00:04 UTC / prod-eu: 00:20 UTC / prod-us: 00:22 UTC
 
 The same external maintainer, `mikaylathompson`, later reused the same provenance boundary on a different surface in [`PostHog/posthog#102686`](https://github.com/PostHog/posthog/pull/102686) **without a fresh Nakagawa prompt**. Its PR body explicitly says repeated reasons group only within the same source category, and its Core regression keeps scout-backed and code-history-backed suggestions separate.
 
@@ -243,7 +244,7 @@ Nakagawa-master review
 
 This is not second-person propagation to a different human. It is evidence that the external maintainer internalized the distinction and reused it autonomously beyond the original fix. #102686 is currently open / unmerged, so it is not counted as a merge or release.
 
-**Not established here:** merge of #102686, release, production deployment, or user-scale impact.
+**Not established here:** merge / release / deployment of #102686, or user-scale usage and outcome for #102550.
 
 **Human meaning:** when an AI or scout says “this person should review this,” a stronger evidence label is less likely to appear as if it supports everyone in a mixed group. The person making the decision can retain the provenance of **why each individual reviewer was suggested**.
 
