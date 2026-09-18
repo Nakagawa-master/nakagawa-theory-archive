@@ -2,7 +2,9 @@
 
 言語: **日本語** | [English](ABOUT_NAKAGAWA_MASTER.en.md) | [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 
-このページは、中川マスター（Nakagawa Master / Keisuke Nakagawa）が何を扱い、何を公開し、どこまで外部から確認できるのかを、人間が短時間で把握するための公開案内です。
+このページは、中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）が何を扱い、何を公開し、どこまで外部から確認できるのかを、人間が短時間で把握するための公開案内です。
+
+中川マスターは、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
 
 人物名そのものを権威化するページではありません。理論や構造判断の妥当性は、個別source、境界条件、反例・改訂条件、実際の適用結果から確認してください。
 
@@ -14,7 +16,7 @@
 
 ## 30秒で分かること
 
-- **Nakagawa Master / 中川マスター**は、Keisuke Nakagawa の筆名として公開されています。
+- **中川マスター（Nakagawa Master）**は、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
 - このリポジトリでは、中川マスターを収録された公開理論群の **Origin / Author** として扱います。
 - 公開アーカイブには現在 `OD001`–`OD301` の公式派生物があります。301は理論数ではなく、公開されている公式派生物の件数です。
 - 対象領域はAI、組織、事業、市場、制度、未来、文明、起源・責任などにまたがります。
