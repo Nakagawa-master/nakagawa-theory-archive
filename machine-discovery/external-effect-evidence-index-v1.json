@@ -1,0 +1,274 @@
+{
+  "schema_version": "1.0",
+  "type": "public_machine_discovery_external_effect_evidence_index",
+  "canonical_status": "non_canonical_evidence_navigation_aid",
+  "origin": "Nakagawa Master",
+  "purpose": "Machine-readable navigation for publicly verifiable cases where a concrete Nakagawa-master judgment received an independent third-party response, implementation, merge, or later reuse. This index is evidence routing, not a truth score or endorsement index.",
+  "human_routes": {
+    "ja": "REAL_WORLD_IMPACT.md",
+    "en": "REAL_WORLD_IMPACT.en.md",
+    "zh": "REAL_WORLD_IMPACT.zh.md",
+    "practical_dialogue": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399"
+  },
+  "claim_policy": {
+    "proposal_is_not_adoption": true,
+    "response_is_not_implementation": true,
+    "implementation_is_not_merge": true,
+    "merge_is_not_release": true,
+    "merge_is_not_production_use": true,
+    "same_maintainer_reuse_is_not_second_person_propagation": true,
+    "whole_theory_endorsement_must_not_be_inferred_from_case": true,
+    "user_scale_must_not_be_inferred_without_evidence": true,
+    "origin_or_provenance_does_not_prove_truth": true
+  },
+  "evidence_stages": [
+    "public_judgment",
+    "explicit_third_party_response_or_restatement",
+    "third_party_code_test_design_or_document_change",
+    "merge_or_integration",
+    "release_deployment_or_verified_use",
+    "independent_or_cross_surface_reuse"
+  ],
+  "cases": [
+    {
+      "case_id": "dream-current-authorization-after-sanitization",
+      "topic": "historical sanitization versus current authorization",
+      "external_repository": "tushardhara/dream",
+      "origin_action": {
+        "type": "issue_comment",
+        "url": "https://github.com/tushardhara/dream/issues/12#issuecomment-5651995689",
+        "summary": "Content that appears sanitized is not automatically still authorized for the current actor, recipient, purpose, policy state, or source lineage."
+      },
+      "third_party_response": {
+        "url": "https://github.com/tushardhara/dream/issues/12#issuecomment-5652003584",
+        "relationship": "repository owner explicitly endorsed the narrow design axis"
+      },
+      "implementation": {
+        "url": "https://github.com/tushardhara/dream/pull/28",
+        "code_tests_present": true
+      },
+      "merge": {
+        "claimed": true,
+        "target": "backend-integration",
+        "commit": "314e8e0849afcff0e2c10ea296cbd9ec5e57f23c",
+        "url": "https://github.com/tushardhara/dream/commit/314e8e0849afcff0e2c10ea296cbd9ec5e57f23c"
+      },
+      "current_stage": "merge_or_integration",
+      "not_claimed": [
+        "main-branch merge",
+        "release",
+        "production deployment",
+        "whole-theory endorsement"
+      ]
+    },
+    {
+      "case_id": "replay-consent-event-versus-current-eligibility",
+      "topic": "historical consent event versus current eligibility to retain/process/use",
+      "external_repository": "aferna6-cell/Replay",
+      "origin_action": {
+        "type": "issue_comment",
+        "url": "https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689647722"
+      },
+      "third_party_response": {
+        "url": "https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689719035",
+        "relationship": "external repository owner explicitly recognized the Nakagawa-master origin and adopted/froze the boundary into the protocol"
+      },
+      "implementation": {
+        "verified": false
+      },
+      "current_stage": "explicit_third_party_response_or_restatement",
+      "not_claimed": [
+        "repository schema implementation",
+        "code/tests",
+        "merge",
+        "release",
+        "participant-data use"
+      ]
+    },
+    {
+      "case_id": "memberjunction-aliased-reexport-second-reviewer-carry",
+      "topic": "public alias identity versus source declaration identity in compatibility analysis",
+      "external_repository": "MemberJunction/MJ",
+      "origin_action": {
+        "type": "pull_request_review",
+        "url": "https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5219601735"
+      },
+      "third_party_response": {
+        "url": "https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5241419422",
+        "relationship": "a different independent reviewer named the Nakagawa-master finding, re-explained it, and carried it into a formal review"
+      },
+      "implementation_after_second_hop": {
+        "verified": false
+      },
+      "current_stage": "explicit_third_party_response_or_restatement",
+      "not_claimed": [
+        "author implementation after carry",
+        "merge",
+        "release"
+      ]
+    },
+    {
+      "case_id": "memberjunction-migration-gate-repeat-confirmation",
+      "topic": "fail-open migration checker versus fail-closed classification",
+      "external_repository": "MemberJunction/MJ",
+      "origin_action": {
+        "type": "pull_request_review_comment",
+        "url": "https://github.com/MemberJunction/MJ/pull/4524"
+      },
+      "third_party_response": {
+        "url": "https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5242805347",
+        "relationship": "the same independent reviewer independently reproduced a fail-open variant, explicitly confirmed a Nakagawa-master point, and called the fail-closed proposal the right fix"
+      },
+      "repeatability_note": "Same independent reviewer, different PR/problem. This is repeat confirmation/carry, not broad person-to-person diffusion.",
+      "implementation_after_second_hop": {
+        "verified": false
+      },
+      "current_stage": "explicit_third_party_response_or_restatement",
+      "not_claimed": [
+        "broad diffusion",
+        "author implementation after carry",
+        "merge",
+        "release"
+      ]
+    },
+    {
+      "case_id": "posthog-reviewer-source-provenance",
+      "topic": "reviewer recommendation explanation versus evidence-source provenance",
+      "external_repository": "PostHog/posthog",
+      "origin_action": {
+        "type": "pull_request_review",
+        "id": "5242012853",
+        "url": "https://github.com/PostHog/posthog/pull/102550#pullrequestreview-5242012853",
+        "summary": "Grouping repeated explanation text must not collapse which evidence source justified each suggested reviewer."
+      },
+      "third_party_implementation": {
+        "commit": "764c347e488cb9f8bb155a2d95c5f40a3b92a08c",
+        "url": "https://github.com/PostHog/posthog/commit/764c347e488cb9f8bb155a2d95c5f40a3b92a08c",
+        "changes": [
+          "group key includes source category",
+          "regression preserves separation across source categories",
+          "mixed-provenance UI/story coverage"
+        ]
+      },
+      "merge": {
+        "claimed": true,
+        "target": "master",
+        "at_utc": "2026-09-17T23:33:50Z",
+        "commit": "6e2c760dadbaba764c83e93900c3510e6a703c03",
+        "url": "https://github.com/PostHog/posthog/commit/6e2c760dadbaba764c83e93900c3510e6a703c03"
+      },
+      "downstream_reuse": {
+        "surface": "https://github.com/PostHog/posthog/pull/102686",
+        "same_external_maintainer": true,
+        "fresh_nakagawa_prompt": false,
+        "downstream_pr_names_nakagawa_origin": false,
+        "exact_reused_rule": "repeat reasons group only within the same source category; scout-backed and code-history-backed suggestions remain separate",
+        "state": "open_unmerged",
+        "classification_boundary": "cross-surface reuse by the same maintainer, not second-person propagation"
+      },
+      "current_stage": "independent_or_cross_surface_reuse",
+      "not_claimed": [
+        "#102686 merge",
+        "release",
+        "production deployment",
+        "user-scale impact",
+        "whole-theory endorsement"
+      ]
+    },
+    {
+      "case_id": "tourcrm-historical-participation",
+      "topic": "current membership versus historical participation and correction",
+      "external_repository": "Alan8893/tourcrm",
+      "origin_action": {
+        "type": "pull_request_comment",
+        "url": "https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5689122153"
+      },
+      "third_party_response": {
+        "url": "https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5691823125",
+        "relationship": "repository owner explicitly confirmed a real bug and opened a dedicated follow-up"
+      },
+      "followup_pull_request": "https://github.com/Alan8893/tourcrm/pull/101",
+      "attributed_commits": [
+        {
+          "commit": "b6da0eb880d474c7e8322f2b2da8bef02a64e1f6",
+          "url": "https://github.com/Alan8893/tourcrm/commit/b6da0eb880d474c7e8322f2b2da8bef02a64e1f6"
+        },
+        {
+          "commit": "568c8fecbbcb56297deb385ea34c8bb61a2839e5",
+          "url": "https://github.com/Alan8893/tourcrm/commit/568c8fecbbcb56297deb385ea34c8bb61a2839e5"
+        }
+      ],
+      "merge": {
+        "claimed": true,
+        "commit": "4ec21e8c40d88ea52f24becb40d641fe0e60baa9",
+        "url": "https://github.com/Alan8893/tourcrm/commit/4ec21e8c40d88ea52f24becb40d641fe0e60baa9"
+      },
+      "current_stage": "merge_or_integration",
+      "not_claimed": [
+        "release",
+        "production deployment",
+        "user-scale impact"
+      ]
+    },
+    {
+      "case_id": "clientverse-unknown-provider-outcome",
+      "topic": "single-use approval versus exactly-once external communication",
+      "external_repository": "ebyron357/Clientverse-crm",
+      "origin_action": {
+        "type": "pull_request_comment",
+        "url": "https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690360136"
+      },
+      "third_party_response": {
+        "url": "https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690677339",
+        "relationship": "external owner explicitly called the finding a real defect"
+      },
+      "implementation": {
+        "changes": [
+          "outcome_unknown for ambiguous provider result",
+          "reconciliation before final sent/failed state",
+          "provider dispatch idempotency key",
+          "regression for accept-then-response-loss without second send"
+        ]
+      },
+      "merge": {
+        "claimed": true,
+        "commit": "e8d56789299cdaeef08b90cb46c01f7128b2d1a0",
+        "url": "https://github.com/ebyron357/Clientverse-crm/commit/e8d56789299cdaeef08b90cb46c01f7128b2d1a0"
+      },
+      "current_stage": "merge_or_integration",
+      "not_claimed": [
+        "real-provider production deployment",
+        "user-scale impact"
+      ]
+    },
+    {
+      "case_id": "cline-delegation-capability-envelope",
+      "topic": "delegation approval versus understanding the runtime capability envelope",
+      "external_repository": "cline/cline",
+      "origin_action": {
+        "type": "pull_request_review",
+        "id": "5242232355",
+        "url": "https://github.com/cline/cline/pull/14225#pullrequestreview-5242232355"
+      },
+      "third_party_response": {
+        "url": "https://github.com/cline/cline/pull/14225#issuecomment-5723653394",
+        "relationship": "external author explicitly named Nakagawa-master, called the proposal a great idea and better UX, and stated intent to include it in follow-up work"
+      },
+      "base_pull_request": {
+        "merged": true,
+        "note": "The base PR merge is not evidence that the Nakagawa-master proposal was implemented."
+      },
+      "followup_implementation": {
+        "verified": false
+      },
+      "current_stage": "explicit_third_party_response_or_restatement",
+      "not_claimed": [
+        "follow-up work item",
+        "code/test/UI implementation of the proposal",
+        "release",
+        "production use"
+      ]
+    }
+  ],
+  "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case."
+}
