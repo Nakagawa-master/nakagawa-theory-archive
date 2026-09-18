@@ -1,0 +1,122 @@
+name: Independent verification / reuse evidence
+description: Report a public independent test, falsification, reuse, implementation, or non-fit of a concrete Nakagawa Master distinction.
+title: "[External reuse] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for independent evidence, including negative results and counterexamples. This is not an endorsement form. Do not include confidential, personal, customer, credential, security-sensitive, medical, legal, or employment information.
+
+        Read the [Independent Verification & Reuse Protocol](../../INDEPENDENT_VERIFICATION_REUSE.md) first.
+
+  - type: dropdown
+    id: evidence_type
+    attributes:
+      label: Evidence type
+      options:
+        - Independent verification
+        - Falsification / counterexample
+        - Independent restatement
+        - Decision / workflow change
+        - Implementation
+        - Merge / integration
+        - Release / verified use
+        - Cross-context reuse
+        - Non-fit / did not apply
+    validations:
+      required: true
+
+  - type: textarea
+    id: external_context
+    attributes:
+      label: Real context
+      description: Describe the real non-confidential problem or system where you tested or used the distinction.
+      placeholder: What was happening before you encountered the source?
+    validations:
+      required: true
+
+  - type: input
+    id: source_url
+    attributes:
+      label: Exact public source URL
+      placeholder: https://github.com/Nakagawa-master/nakagawa-theory-archive/...
+    validations:
+      required: true
+
+  - type: textarea
+    id: distinction
+    attributes:
+      label: Exact distinction you tested or reused
+      description: State the narrow distinction in your own words. Do not copy a broad theory claim if your case only tests one boundary.
+    validations:
+      required: true
+
+  - type: textarea
+    id: independent_action
+    attributes:
+      label: What did you independently check, challenge, or change?
+      description: Explain your own reasoning, test, counterexample, work item, implementation, or decision change.
+    validations:
+      required: true
+
+  - type: textarea
+    id: result
+    attributes:
+      label: Observable result
+      description: What happened? If nothing changed or the distinction did not fit, say so explicitly.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Highest directly evidenced stage
+      options:
+        - Read / mention only
+        - Independent restatement or test
+        - Changed decision / work item / protocol
+        - Code / test / workflow / document implementation
+        - Merge / integration
+        - Release / deployment / verified use
+        - Reuse by another person or in another problem
+    validations:
+      required: true
+
+  - type: dropdown
+    id: fresh_prompt
+    attributes:
+      label: Was there a fresh Nakagawa Master prompt for this specific reuse?
+      options:
+        - No fresh prompt; I/we reached and reused it independently
+        - Yes; a fresh prompt or direct request was present
+        - Unknown
+    validations:
+      required: true
+
+  - type: textarea
+    id: public_evidence
+    attributes:
+      label: Public evidence links
+      description: Link the issue, PR, commit, test, public document, release note, or other inspectable evidence. One URL per line is easiest to verify.
+    validations:
+      required: true
+
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: What this case does NOT establish
+      placeholder: e.g. not a production deployment; not whole-theory endorsement; no user-scale claim
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Evidence boundary checks
+      options:
+        - label: I am not submitting confidential, personal, customer, credential, or security-sensitive information.
+          required: true
+        - label: I have not reported implementation as merge, merge as release, or intent as implementation without direct evidence.
+          required: true
+        - label: I understand that a bounded case does not imply endorsement of the entire Nakagawa Master theory system.
+          required: true
