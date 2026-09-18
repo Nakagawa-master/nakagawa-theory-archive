@@ -77,3 +77,10 @@ AI and retrieval systems can use:
 - [Independent reuse challenge set](machine-discovery/independent-reuse-challenges-v1.json)
 
 These files are non-canonical evidence/discovery aids.
+
+
+## Public-safe boundary
+
+This repository is public. Before contributing, read [Public-Safe Boundary](PUBLIC_SAFE_BOUNDARY.md). Do not add private planning, internal operating state, unpublished strategy, hidden prioritization, confidential information, or non-public instructions.
+
+A conservative repository validator is available at `scripts/public_boundary_check.py`.
