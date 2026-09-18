@@ -59,6 +59,22 @@ You may use any public source in the archive. These six have already produced in
 
 See [Real-World Impact](REAL_WORLD_IMPACT.en.md) for public third-party implementation records and boundaries.
 
+## Non-software examples
+
+You do not need to be a software engineer. The distinctions can be tested in ordinary operations, governance, research, education, and organizational work.
+
+Examples:
+
+- **Policy / operations:** a team approved a process last year, but the recipient, purpose, or policy changed. Does the old approval still authorize the new use?
+- **Membership / attendance:** someone left a group after an event. Can the historical record still answer who participated at that time?
+- **Research / consent:** a participant agreed to one notice version. What happens when the collection purpose or notice materially changes?
+- **Procurement / finance:** a payment or external request was submitted, but the response was lost. Does the process distinguish “rejected” from “outcome unknown” before retrying?
+- **Hiring / review / recommendations:** two people receive the same recommendation text from different evidence sources. Can the reviewer still see what evidence supports each person?
+- **Migration / records:** two records share an identifier but come from different owners or systems. Is matching identity treated as enough authority to overwrite?
+- **Education / assessment:** a report query succeeds but some required measurements are missing. Does the output distinguish successful retrieval from valid measurement?
+
+A useful non-software submission can be a public procedure, checklist, policy revision, meeting decision, training material, research protocol, or documented counterexample. It does not need to involve code.
+
 ## What to submit
 
 Use the repository's **Independent verification / reuse evidence** issue form.
