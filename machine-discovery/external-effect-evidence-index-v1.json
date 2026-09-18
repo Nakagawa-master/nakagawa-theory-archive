@@ -166,14 +166,33 @@
         "state": "open_unmerged",
         "classification_boundary": "cross-surface reuse by the same maintainer, not second-person propagation"
       },
-      "current_stage": "independent_or_cross_surface_reuse",
+      "current_stage": "release_deployment_or_verified_use",
       "not_claimed": [
         "#102686 merge",
         "release",
-        "production deployment",
         "user-scale impact",
-        "whole-theory endorsement"
-      ]
+        "whole-theory endorsement",
+        "user-scale usage or outcome"
+      ],
+      "deployment": {
+        "verified": true,
+        "source": "https://github.com/PostHog/posthog/pull/102550#issuecomment-5722917557",
+        "environments": [
+          {
+            "name": "dev",
+            "deployed_at_utc": "2026-09-18T00:04:00Z"
+          },
+          {
+            "name": "prod-eu",
+            "deployed_at_utc": "2026-09-18T00:20:00Z"
+          },
+          {
+            "name": "prod-us",
+            "deployed_at_utc": "2026-09-18T00:22:00Z"
+          }
+        ],
+        "workflow": "https://github.com/PostHog/charts/actions/runs/35288588087"
+      }
     },
     {
       "case_id": "tourcrm-historical-participation",
