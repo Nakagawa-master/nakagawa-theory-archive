@@ -128,15 +128,20 @@ On #4524, the same reviewer explicitly wrote that “@Nakagawa-master's point ab
 
 - [confirmation on #4524](https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5242805347)
 
-**Publicly verifiable here:** a separate reviewer names, independently checks, and carries the issue into formal review.  
-**Not established here:** author implementation after that review, merge, or release.
+The authors later implemented the relevant fixes. On #4487, named re-exports now retain both the exported alias and the source declaration name, with regressions showing that an aliased published data-shape member remains `warn` while an unre-exported sibling remains `error`. Nakagawa-master re-checked the current head and explicitly closed the original finding in review `5252973190`. On #4524, the direct `[__mj]` fail-open case was fixed, and the same independent reviewer re-ran the probe and verified the transition from false-pass exit 0 to fail-closed exit 1.
+
+- [#4487 closure review](https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5252973190)
+- [#4524 independent re-verification](https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5252195432)
+
+**Publicly verifiable here:** named independent confirmation followed by author implementation/regressions, origin-reviewer closure on #4487, and independent execution re-verification on #4524.  
+**Not established here:** merge or release of either PR.
 
 ---
 
 ## 6. PostHog | Keep recommendation reasons tied to their actual source
 
 **Surface:** [PostHog/posthog#102550](https://github.com/PostHog/posthog/pull/102550) → [#102686](https://github.com/PostHog/posthog/pull/102686)  
-**Current state:** #102550 merged / deployed; #102686 open / externally approved / unmerged
+**Current state:** #102550 merged / deployed; #102686 merged / deployed
 
 A `Nakagawa-master` review identified that identical explanation text should not collapse distinct recommendation sources such as `Code history` and `Added by scout`.
 
@@ -147,12 +152,14 @@ The maintainer changed grouping logic, tests, and UI stories; #102550 merged to 
 - [merged PR #102550](https://github.com/PostHog/posthog/pull/102550)
 - [deploy status](https://github.com/PostHog/posthog/pull/102550#issuecomment-5722917557)
 
-The same maintainer later used the same source-category distinction on #102686. It remains open / unmerged, but the current head has received an APPROVED review from the separate `stamphog` reviewer.
+The same maintainer later used the same source-category distinction on #102686. Its current head received an APPROVED review from the separate `stamphog` reviewer, merged at 2026-09-18T15:49:22Z, and PostHog's deploy-status record shows deployment to dev, prod-us, and prod-eu.
 
 - [#102686 external approval](https://github.com/PostHog/posthog/pull/102686#pullrequestreview-5249196997)
+- [merged PR #102686](https://github.com/PostHog/posthog/pull/102686)
+- [#102686 deploy status](https://github.com/PostHog/posthog/pull/102686#issuecomment-5732760371)
 
-**Publicly verifiable here:** review → code/tests/UI change → merge → deployment, plus reuse of the same distinction in another PR whose current head has received a separate APPROVED review.  
-**Not established here:** #102686 merge or user-scale outcomes.
+**Publicly verifiable here:** the initial review → code/tests/UI change → merge → deployment, followed by reuse of the same distinction on another PR → separate approval → merge → dev/prod-us/prod-eu deployment.  
+**Not established here:** user-scale outcomes or further reuse by a different person/context.
 
 ---
 
