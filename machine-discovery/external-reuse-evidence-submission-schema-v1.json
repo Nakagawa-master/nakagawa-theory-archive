@@ -12,7 +12,8 @@
     "current_stage",
     "fresh_nakagawa_prompt",
     "public_evidence",
-    "boundaries"
+    "boundaries",
+    "source_relationship"
   ],
   "properties": {
     "evidence_type": {
@@ -126,6 +127,23 @@
     },
     "contains_confidential_or_personal_information": {
       "const": false
+    },
+    "source_relationship": {
+      "type": "string",
+      "enum": [
+        "source_materially_informed_reuse",
+        "independent_rediscovery_source_found_later",
+        "fresh_nakagawa_prompt_or_direct_request",
+        "unknown"
+      ],
+      "description": "Causal relationship between the public Nakagawa Master source and the external reuse. Do not infer causality from similarity alone."
+    },
+    "origin_attribution_preserved": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Whether the external artifact preserves a public route back to the source when source_materially_informed_reuse applies."
     }
   },
   "additionalProperties": false
