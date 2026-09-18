@@ -1,430 +1,278 @@
-# What Changed in the Real World?｜Publicly Verifiable Cases of Nakagawa Master Judgments Affecting Third-Party Implementations
+# Publicly Verifiable External Implementation Cases | Changes Recorded After Nakagawa Master Comments
 
 Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_IMPACT.zh.md)
 
-> **Public role:** This is a non-canonical human-facing entry for tracing how specific public judgments made under the Nakagawa Master / `Nakagawa-master` identity affected external design, code, tests, or documentation. It does not claim that these cases prove an entire theory system, that the external projects endorse Nakagawa Master as a whole, or that unverified releases, deployments, or user impact have occurred.
+**Last checked: 2026-09-18**
 
-## In 10 seconds
+Nakagawa Master is the pen name of Keisuke Nakagawa. On social media, the name “マスター” (“Master”) is also used; some external posts use “MasterJP.”
 
-The archive contains more than theories and explanations. There are public records where **a concrete Nakagawa Master judgment was examined by independent third parties and converted into external code, tests, or design changes**.
+This page is a **public verification guide**. It links public GitHub comments or reviews made under the `Nakagawa-master` account to later changes that can be checked in third-party repositories.
 
-The useful question is not how many comments were posted. It is how far the causal chain can actually be verified:
+It is not an impact score, an authority claim, or a claim that an entire project or theory system was adopted. Each case is separated into:
 
-```text
-public judgment
-→ third party examines or restates it
-→ third party changes code / tests / design
-→ merge / integration
-→ the resulting mechanism can affect the decisions or safety of its users
-```
+1. the original public contribution;
+2. the third party's response or change;
+3. the current repository state;
+4. what remains unverified.
 
-## What can change for an ordinary user?
+A comment is not the same as an implementation. An implementation is not the same as a merge. A merge is not the same as a release, deployment, or verified use.
 
-You do not need to read every code diff to understand the practical effect.
+## What these distinctions can mean in practice
 
-- **An AI-reported number is less likely to be presented as if it were independently measured fact.** The product can distinguish its own measurement from a producer's claim.
-- **Old approval is less likely to be silently reused as current permission.** Current recipient, purpose, rights, source revision, and policy state can be rechecked.
-- **A matching identifier is less likely to be treated as automatic authority to overwrite someone else's state.** Identity and ownership provenance are separated.
-- **An AI or retrieval system is less likely to preserve the text while losing the identity of the original source.** Upstream source identity and local runtime identity are kept distinct.
-- **“No valid measurement” is less likely to become a confident zero.** Operation success and semantic measurement success are separated.
-- **When an AI or scout recommends people, the evidence supporting each recommendation is less likely to be pooled together.** Identical explanation text does not have to erase whether a reviewer was supported by code history or by an agent/scout suggestion.
+The cases below concern product behaviors such as:
 
-If such boundaries enter a product or platform, they can affect people who have never read the underlying theory. Where release or production use is not established, this page does not infer the size of that downstream audience.
+- separating an AI-produced number from a system's own measurement;
+- separating historical approval from current authorization;
+- separating matching identity from authority to overwrite;
+- preserving upstream source identity separately from local runtime identity;
+- separating successful execution from a semantically valid measurement;
+- preserving which evidence source supports which recommendation;
+- separating present membership from historical participation;
+- separating one approval action from one external side effect.
+
+Only the publicly verifiable part of each case is described below.
 
 ---
 
-## 1. PostHog｜Separate an AI producer's claim from the system's own measurement
+## 1. PostHog | Separate producer-supplied evidence from PostHog's own measurement
 
-**Surface:** [`PostHog/posthog#92252`](https://github.com/PostHog/posthog/pull/92252)  
-**Current status:** open / draft / unmerged
+**Surface:** [PostHog/posthog#92252](https://github.com/PostHog/posthog/pull/92252)  
+**Current state:** open / draft / unmerged
 
-PostHog's workflow scout presents AI-generated workflow suggestions and numerical evidence to a person.
-
-A `Nakagawa-master` review identified that the proposal `evidence` was producer-authored JSON: its shape could be validated without proving that its numbers matched the actual workflow, version, step, or measurement window.
+A `Nakagawa-master` review identified that producer-authored evidence should not be presented as if it had been independently measured by the system.
 
 - [Nakagawa-master review](https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200)
 
-The boundary was:
+The PR author later added server-side measurement, regression coverage, and UI distinctions such as `Measured by PostHog` versus `Unverified`.
 
-```text
-the producer says “this is the number”
-!=
-the number was independently measured
-```
-
-After that review, the PR author added commit:
-
-- [`b84a9395 — feat(workflows): measure a suggestion's step when it is filed and show that reading`](https://github.com/PostHog/posthog/commit/b84a939545ff3a1a6820d3cf4afca3b57aa3001b)
-
-The server now re-reads the step's metrics at the proposal's `base_version`, stores them as `evidence.measured`, and the human-facing UI distinguishes:
-
-```text
-Measured by PostHog
-→ PostHog's own reading
-
-Unverified
-→ producer-supplied numbers when PostHog could not establish its own reading
-```
-
-If the scout's number or denominator disagrees with PostHog's measurement, the user sees that disagreement. The raw `source_id` label was also changed from `Source` to `Scout run`. Regression coverage intentionally sends producer numbers that disagree with seeded server-side metrics and verifies that the measured record remains distinct.
-
-**Verified effect here:** public review → external-author code / test / UI change.  
-**Not established here:** upstream merge, release, production deployment, user count, or PostHog endorsement of the Nakagawa Master theory system.
+**Publicly verifiable here:** review followed by third-party code / test / UI changes.  
+**Not established here:** merge, release, production deployment, or user scale.
 
 ---
 
-## 2. Dream｜Separate sanitized content from current authorization
+## 2. Dream | Separate sanitized content from current authorization
 
-**Surface:** [`tushardhara/dream#12`](https://github.com/tushardhara/dream/issues/12) → [`PR #28`](https://github.com/tushardhara/dream/pull/28)  
-**Current status:** PR #28 merged into `backend-integration`
+**Surface:** [tushardhara/dream#12](https://github.com/tushardhara/dream/issues/12) → [PR #28](https://github.com/tushardhara/dream/pull/28)  
+**Current state:** PR #28 merged
 
-A public `Nakagawa-master` design contribution argued that an approved or sanitized context should not become a permanent safety property of the bytes. Current actor, recipient, purpose, source lineage, and policy state still matter.
+The public contribution proposed that content which was once sanitized or approved should not automatically remain authorized after actor, recipient, purpose, source lineage, or policy conditions change.
 
-- [Nakagawa-master contribution](https://github.com/tushardhara/dream/issues/12#issuecomment-5651995689)
-- [Independent repository-owner response](https://github.com/tushardhara/dream/issues/12#issuecomment-5652003584)
+- [Nakagawa-master design contribution](https://github.com/tushardhara/dream/issues/12#issuecomment-5651995689)
+- [repository-owner response](https://github.com/tushardhara/dream/issues/12#issuecomment-5652003584)
+- [merged PR #28](https://github.com/tushardhara/dream/pull/28)
+- [public case note](discovery-notes/implementation-case-sanitized-content-is-not-current-authorization.md)
 
-The repository owner explicitly identified `content appears sanitized != authorization remains valid` as the correct design axis. PR #28 then implemented current-rights and lineage revalidation, including revocation, recipient changes, same-text source revisions, and negative tests.
+The repository owner explicitly accepted the distinction and the later PR added rights/lineage revalidation, revocation-related handling, and negative tests.
 
-- Merge commit: [`314e8e0849afcff0e2c10ea296cbd9ec5e57f23c`](https://github.com/tushardhara/dream/commit/314e8e0849afcff0e2c10ea296cbd9ec5e57f23c)
-- [Detailed public case note](discovery-notes/implementation-case-sanitized-content-is-not-current-authorization.md)
-
-**Human meaning:** an approval that was valid in the past is less likely to be silently reused after the conditions that justified it have changed.
+**Publicly verifiable here:** comment → owner response → code / tests → merge.  
+**Not established here:** user scale or broad adoption outside this project.
 
 ---
 
-## 3. MemberJunction｜Separate matching identity from authority to overwrite
+## 3. MemberJunction | Separate matching identity from authority to overwrite
 
-**Surface:** [`MemberJunction/MJ#4519`](https://github.com/MemberJunction/MJ/pull/4519) → [PR #4496](https://github.com/MemberJunction/MJ/pull/4496) → [LTS backport #4546](https://github.com/MemberJunction/MJ/pull/4546) → [v6.1.2](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)  
-**Current status:** merged → LTS backport merged → released → collision-free migration reported in a production-shaped external upgrade
+**Surface:** [MemberJunction/MJ#4519](https://github.com/MemberJunction/MJ/pull/4519) → [#4496](https://github.com/MemberJunction/MJ/pull/4496) → [#4546](https://github.com/MemberJunction/MJ/pull/4546) → [v6.1.2](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)  
+**Current state:** merged → LTS backport merged → v6.1.2 released
 
-Finding the same primary key does not by itself establish that the current value is owned by the release and may safely be replaced.
-
-A `Nakagawa-master` review separated record identity from the ownership/provenance contract. Independent reviewer `SDesai-BC` reproduced the behavior against the concrete migration set, and the PR author then changed code, tests, and documentation. The PR explicitly documents the release-owned convergence contract.
+A matching primary key does not by itself establish that a migration owns the existing row or may overwrite it.
 
 - [Nakagawa-master contribution](https://github.com/MemberJunction/MJ/pull/4519#issuecomment-5689128135)
 - [PR #4519](https://github.com/MemberJunction/MJ/pull/4519)
-- Merge commit: [`469b25f1bcf51d844396b8a6b8a9f1390b5e1488`](https://github.com/MemberJunction/MJ/commit/469b25f1bcf51d844396b8a6b8a9f1390b5e1488)
-- [Detailed public case note](discovery-notes/implementation-case-matching-id-is-not-ownership-provenance.md)
+- [public case note](discovery-notes/implementation-case-matching-id-is-not-ownership-provenance.md)
 
-The boundary did not stop at review. After #4519 merged, PR #4496 generated a metadata migration through the guarded emitter and documented a replay against a database where every row was already present without primary-key collisions. That migration was backported to `lts/6.1` as #4546 and included in the official `v6.1.2` release.
+Public records show later independent review, author code/test/documentation changes, merge, generated migration, LTS backport, and inclusion in v6.1.2.
 
-An external consumer then reported a production-shaped upgrade from an MJ 5.51.x database to 6.1.2 in the MemberJunction certification issue:
+A public certification report also records an upgrade of an existing database containing pre-existing rows in which the relevant migration sequence completed without the original primary-key collision.
 
 - [External 6.1.2 certification report](https://github.com/MemberJunction/MJ/issues/4475#issuecomment-5715684968)
 
-The report records:
+That same report identifies a separate regression, so this page does **not** claim that v6.1.2 was problem-free overall.
 
-```text
-pre-existing mj sync push rows
-→ 65 migrations applied
-→ 0 failed
-→ no #4503 collisions
-```
-
-The same report also identifies unrelated 6.1 regressions as certification blockers, so this is **not** a claim that v6.1.2 passed certification without problems. What it establishes is narrower: the guarded migration chain tied to the ownership/convergence boundary did not reproduce the original collision failure under a production-shaped upgrade condition.
-
-**Verified effect:** public judgment → independent verification → code/tests/documentation → merge → downstream generated migration → LTS backport → release → external production-shaped upgrade without the original collision failure.  
-**Not established:** fleet-wide adoption, user-scale impact, nontechnical reuse, or endorsement of the whole Nakagawa Master theory system.
-
-**Human meaning:** the distinction between “same record” and “authority to overwrite” reached released software and a real upgrade-shaped environment rather than remaining only a review comment.
+**Publicly verifiable here:** review → independent confirmation → code/tests/docs → merge → backport → release → external upgrade report for the relevant collision condition.  
+**Not established here:** fleet-wide results or market-wide adoption.
 
 ---
 
-## 4. MemberJunction｜Separate query success from a valid measurement
+## 4. LlamaIndex | Preserve upstream source identity separately from local node identity
 
-**Surface:** [`MemberJunction/MJ#4402`](https://github.com/MemberJunction/MJ/pull/4402)  
-**Current status:** merged into `master`
+**Surface:** [run-llama/llama_index#21933](https://github.com/run-llama/llama_index/issues/21933) → [PR #23038](https://github.com/run-llama/llama_index/pull/23038)  
+**Current state:** open / draft / unmerged
 
-A query can execute successfully while returning no valid measurement: zero rows, a missing measurement column, null, or non-numeric data are not automatically the numerical value zero.
-
-After a `Nakagawa-master` review, the PR author independently verified the findings and changed the implementation and regression tests so invalid measurements fail rather than collapsing into zero, a previous valid observation is preserved, and a genuinely measured zero remains valid.
-
-- [PR #4402](https://github.com/MemberJunction/MJ/pull/4402)
-- [Detailed public case note](discovery-notes/implementation-case-query-success-is-not-valid-measurement.md)
-
-**Human meaning:** dashboards, budgets, and alerts are less likely to turn missing evidence into a confident numerical fact.
-
----
-
-## 5. LlamaIndex｜Preserve upstream source identity through AI retrieval conversion
-
-**Surface:** [`run-llama/llama_index#21933`](https://github.com/run-llama/llama_index/issues/21933) → [`PR #23038`](https://github.com/run-llama/llama_index/pull/23038)  
-**Current status:** third-party draft PR / unmerged
-
-Useful text can survive an AI/retrieval conversion while the identity of the upstream document disappears.
-
-A `Nakagawa-master` contribution stated the compatibility boundary:
-
-```text
-upstream source identity
-!=
-framework-local node identity
-```
-
-The independent issue author later opened draft PR #23038. Its PR description **explicitly cites the `Nakagawa-master` compatibility contract**, preserves upstream `document_id` / `document_name` in metadata, keeps the framework's generated local `TextNode.id_`, and adds regression tests.
+The issue contribution distinguished framework-local node identity from upstream document identity.
 
 - [Nakagawa-master comment](https://github.com/run-llama/llama_index/issues/21933#issuecomment-5650957902)
-- [Third-party draft PR #23038](https://github.com/run-llama/llama_index/pull/23038)
-- [Detailed public case note](discovery-notes/implementation-case-source-identity-vs-local-node-identity.md)
+- [third-party PR #23038](https://github.com/run-llama/llama_index/pull/23038)
+- [public case note](discovery-notes/implementation-case-source-identity-vs-local-node-identity.md)
 
-**Human meaning:** after an AI system transforms or retrieves information, there is a better chance that a user can still recover where the information actually came from.
+The third-party PR explicitly cites the `Nakagawa-master` compatibility contract and adds implementation/tests that preserve `document_id` and `document_name` in metadata without changing the local `TextNode.id_` policy.
 
----
-
-## 6. Replay｜An external owner explicitly adopted and froze a Nakagawa-master boundary
-
-**Surface:** [`aferna6-cell/Replay#67`](https://github.com/aferna6-cell/Replay/issues/67)  
-**Current status:** protocol frozen in the issue / repository implementation not yet verified
-
-A public `Nakagawa-master` contribution separated two states for participant-derived data:
-
-```text
-historical consent
-!=
-current authorization to retain / process / use the captured material
-```
-
-The historical consent event can remain immutable while current eligibility is evaluated separately against purpose, retention, withdrawal or deletion, contract changes, and other superseding events.
-
-- [Nakagawa-master contribution](https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689647722)
-- [External repository owner explicitly adopts and restates the boundary](https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689719035)
-
-The repository owner then explicitly accepted and froze the Nakagawa-master boundary and independently restated it as a protocol: immutable consent history, current eligibility, fail-closed downstream gates, artifact-graph withdrawal/deletion receipts, and adversarial cases.
-
-**Verified effect here:** public judgment → explicit external attribution → independent restatement → protocol adoption/freeze.  
-**Not established here:** repository schema/code/tests implementing the protocol, merge, release, or use with participant data.
-
-**Human meaning:** the distinction was not merely absorbed anonymously. An independent person recognized where it came from and incorporated it into their own plan.
+**Publicly verifiable here:** explicit source reference plus third-party code/tests.  
+**Not established here:** merge, release, or deployment.
 
 ---
 
-## 7. MemberJunction｜A Nakagawa-master finding was carried forward by a different independent reviewer
+## 5. MemberJunction | Another reviewer independently checked the same issue
 
-**Surface:** [`MemberJunction/MJ#4487`](https://github.com/MemberJunction/MJ/pull/4487)  
-**Current status:** open / unmerged
+**Surfaces:** [MemberJunction/MJ#4487](https://github.com/MemberJunction/MJ/pull/4487) / [#4524](https://github.com/MemberJunction/MJ/pull/4524)  
+**Current state:** both open / unmerged
 
-A `Nakagawa-master` review identified a compatibility hole around aliased public re-exports: the public alias and the underlying declaration name can diverge, causing a member used by external consumers to be misclassified as safely auto-renamable.
+On #4487, a `Nakagawa-master` review identified an aliased re-export compatibility hole.
 
 - [Nakagawa-master review](https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5219601735)
 
-At the next stage, a different independent reviewer, `rkihm-BC`, included the same issue as a required item in their own formal review. They explicitly identified it as the aliased re-export hole Nakagawa-master had reported, re-explained the mechanism, and carried forward the proposed source-name fix and regression test.
+Another reviewer, `rkihm-BC`, later reproduced and described the issue in a formal review and requested the corresponding fix and regression test.
 
-- [Independent second-reviewer carry](https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5241419422)
+- [independent reviewer confirmation](https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5241419422)
 
-**Verified effect here:** Nakagawa Master public judgment → another person independently rechecks it → named restatement → propagation into a formal changes-requested review.  
-**Not established here:** author code/test changes after this second-hop review, merge, or release.
+On #4524, the same reviewer explicitly wrote that “@Nakagawa-master's point about D is confirmed” and incorporated the result of their own checker run into the review.
 
-**Human meaning:** the judgment no longer depends on Nakagawa Master repeating it personally. Another person can remember, reference, and carry it into the next decision.
+- [confirmation on #4524](https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5242805347)
 
-This second-hop pattern is not limited to one PR. In a separate PR, [`MemberJunction/MJ#4524`](https://github.com/MemberJunction/MJ/pull/4524), the same independent reviewer, `rkihm-BC`, executed and falsified variants of the checker and explicitly wrote that **“@Nakagawa-master's point about D is confirmed.”** They also called Nakagawa-master's fail-closed proposal **“the right fix”** and carried it into their own formal review.
-
-- [Independent confirmation / carry on MJ #4524](https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5242805347)
-
-This is not evidence of broad person-to-person diffusion. It is narrower repeatability evidence: **the same independent reviewer re-encountered a different PR and problem, independently verified a Nakagawa-origin point, and carried it forward with their own evidence.** Author implementation after that #4524 review is not yet verified.
+**Publicly verifiable here:** a separate reviewer names, independently checks, and carries the issue into formal review.  
+**Not established here:** author implementation after that review, merge, or release.
 
 ---
 
-## 8. PostHog｜Do not collapse who was recommended with why they were recommended
+## 6. PostHog | Keep recommendation reasons tied to their actual source
 
-**Surface:** [`PostHog/posthog#102550`](https://github.com/PostHog/posthog/pull/102550)  
-**Current status:** #102550 merged into `master` and deployed to dev / prod-us / prod-eu / downstream reuse #102686 open / unmerged
+**Surface:** [PostHog/posthog#102550](https://github.com/PostHog/posthog/pull/102550) → [#102686](https://github.com/PostHog/posthog/pull/102686)  
+**Current state:** #102550 merged / deployed; #102686 open / unmerged
 
-This PR changes the human-facing PostHog inbox surface that explains who is suggested as a reviewer and why.
-
-A `Nakagawa-master` review identified that grouping reviewers only by identical explanation text pooled source labels such as `Code history` and `Added by scout` at the group level. The UI could therefore stop showing **which source actually justified each individual reviewer**.
+A `Nakagawa-master` review identified that identical explanation text should not collapse distinct recommendation sources such as `Code history` and `Added by scout`.
 
 - [Nakagawa-master review](https://github.com/PostHog/posthog/pull/102550#pullrequestreview-5242012853)
 
-The boundary was:
+The maintainer changed grouping logic, tests, and UI stories; #102550 merged to `master`. PostHog's public deploy-status comment records deployment to dev, prod-us, and prod-eu.
 
-```text
-same explanation text
-!=
-same provenance for the recommendation
-```
+- [merged PR #102550](https://github.com/PostHog/posthog/pull/102550)
+- [deploy status](https://github.com/PostHog/posthog/pull/102550#issuecomment-5722917557)
 
-After that review, an external maintainer added:
+The same maintainer later used the same source-category distinction on #102686, which is currently open.
 
-- [`764c347e — fix(signals): separate reviewer groups by source`](https://github.com/PostHog/posthog/commit/764c347e488cb9f8bb155a2d95c5f40a3b92a08c)
-
-The grouping key now includes source category as well as explanation text, so a code-history-backed reviewer is not grouped together with a scout-backed reviewer merely because their explanations match. The regression test now requires identical explanations to group only within the same source category, and a mixed-provenance Storybook case was added.
-
-**Verified effect here:** public review → external maintainer code / test / documentation / UI-story changes → merge into `master` → deployment-status bot confirms deployment to dev / prod-us / prod-eu.  
-- Merge commit: [`6e2c760d`](https://github.com/PostHog/posthog/commit/6e2c760dadbaba764c83e93900c3510e6a703c03)
-- [Deploy status comment](https://github.com/PostHog/posthog/pull/102550#issuecomment-5722917557) — dev: 2026-09-18 00:04 UTC / prod-eu: 00:20 UTC / prod-us: 00:22 UTC
-
-The same external maintainer, `mikaylathompson`, later reused the same provenance boundary on a different surface in [`PostHog/posthog#102686`](https://github.com/PostHog/posthog/pull/102686) **without a fresh Nakagawa prompt**. Its PR body explicitly says repeated reasons group only within the same source category, and its Core regression keeps scout-backed and code-history-backed suggestions separate.
-
-```text
-Nakagawa-master review
-→ external maintainer implements and merges #102550
-→ no fresh Nakagawa prompt
-→ same maintainer reuses the boundary in a different Desktop/Core surface
-```
-
-This is not second-person propagation to a different human. It is evidence that the external maintainer internalized the distinction and reused it autonomously beyond the original fix. #102686 is currently open / unmerged, so it is not counted as a merge or release.
-
-On the downstream #102686 surface, independent review then found additional provenance-display defects of its own—including a pending manual reviewer add temporarily appearing as an `Agent suggestion`. The external maintainer fixed those findings in subsequent commits. This strengthens the evidence that provenance is being treated as an operational design axis on that surface, but it is **not** counted as explicit Nakagawa-origin second-person attribution.
-
-**Not established here:** merge / release / deployment of #102686, or user-scale usage and outcome for #102550.
-
-**Human meaning:** when an AI or scout says “this person should review this,” a stronger evidence label is less likely to appear as if it supports everyone in a mixed group. The person making the decision can retain the provenance of **why each individual reviewer was suggested**.
+**Publicly verifiable here:** review → code/tests/UI change → merge → deployment, plus reuse of the same distinction in another PR.  
+**Not established here:** #102686 merge or user-scale outcomes.
 
 ---
 
-## 9. TourCRM｜Do not confuse current membership with historical participation
+## 7. TourCRM | Separate present membership from historical participation
 
-**Surface:** [`Alan8893/tourcrm#97`](https://github.com/Alan8893/tourcrm/pull/97) → [`PR #101`](https://github.com/Alan8893/tourcrm/pull/101)  
-**Current status:** follow-up PR #101 merged
+**Surface:** [Alan8893/tourcrm#97](https://github.com/Alan8893/tourcrm/pull/97) → [PR #101](https://github.com/Alan8893/tourcrm/pull/101)  
+**Current state:** follow-up PR #101 merged
 
-For attendance history, “is this person a participant now?” is not the same question as “was this person part of this occurrence when it happened?”
+The review identified that historical attendance should be evaluated against the occurrence's own participation window rather than only current membership.
 
-A `Nakagawa-master` review identified that using current-time membership to build the historical roster could make an already-recorded attendance row disappear from GET/summary after participation later ended, and could also block correction of that historical record.
+- [Nakagawa-master review](https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5689122153)
+- [owner response](https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5691823125)
+- [follow-up PR #101](https://github.com/Alan8893/tourcrm/pull/101)
 
-- [Nakagawa-master review on PR #97](https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5689122153)
+The owner described the issue as a real bug, opened a dedicated follow-up, changed code/tests, and later hardened the regression fixture after another review so the old implementation would actually fail.
 
-The repository owner explicitly replied that this was **“confirmed as a real bug”** and opened dedicated follow-up PR #101. Its PR body names `@Nakagawa-master` review feedback as the reason for the follow-up.
-
-- [Owner response and follow-up announcement](https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5691823125)
-- [Follow-up PR #101](https://github.com/Alan8893/tourcrm/pull/101)
-
-The implementation commits preserve that attribution:
-
-- [`b6da0eb8 — fix(attendance): key participation eligibility off the occurrence's own window, not now()`](https://github.com/Alan8893/tourcrm/commit/b6da0eb880d474c7e8322f2b2da8bef02a64e1f6) — `Addresses PR #97 review feedback (Nakagawa-master)`
-- [`568c8fec — test(attendance): make historical-roster regressions independent of wall-clock date`](https://github.com/Alan8893/tourcrm/commit/568c8fecbbcb56297deb385ea34c8bb61a2839e5) — `Addresses PR #101 review feedback (Nakagawa-master)`
-
-A second Nakagawa review found that future-dated fixtures could let the old implementation pass accidentally. The owner again replied **“Confirmed — good catch”**, moved the regressions to a past-time anchor, and verified that temporarily restoring the old implementation makes all three tests fail.
-
-- [Owner response on PR #101](https://github.com/Alan8893/tourcrm/pull/101#issuecomment-5692369969)
-- Merge commit: [`4ec21e8c`](https://github.com/Alan8893/tourcrm/commit/4ec21e8c40d88ea52f24becb40d641fe0e60baa9)
-
-**Verified effect here:** named review → owner confirms real bug → dedicated follow-up PR → code / regression-test repair → second review → test hardening → merge.  
-**Not established here:** release, production deployment, or user-scale impact.
-
-**Human meaning:** ending a membership later should not silently erase what was true at the time of an event or make that historical record impossible to correct. The implementation separates present status from historical fact.
+**Publicly verifiable here:** review → owner confirmation → follow-up PR → code/tests → further test hardening → merge.  
+**Not established here:** release, production deployment, or user scale.
 
 ---
 
-## 10. Clientverse｜Do not confuse one consumed approval with one external side effect
+## 8. Clientverse | Separate one approval from one external side effect
 
-**Surface:** [`ebyron357/Clientverse-crm#27`](https://github.com/ebyron357/Clientverse-crm/pull/27)  
-**Current status:** merged
+**Surface:** [ebyron357/Clientverse-crm#27](https://github.com/ebyron357/Clientverse-crm/pull/27)  
+**Current state:** merged
 
-A single-use approval does not by itself prove that an external provider side effect happened exactly once.
-
-A `Nakagawa-master` review identified that if a provider accepts a message and the response is then lost, treating every exception as ordinary `failed` can make a later re-approval/retry send the customer a duplicate message.
+If a provider accepts a message but the response is lost, treating the result as an ordinary failure can allow an accidental duplicate send.
 
 - [Nakagawa-master review](https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690360136)
+- [owner response](https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690677339)
+- [merged PR #27](https://github.com/ebyron357/Clientverse-crm/pull/27)
 
-The boundary was:
+The repository owner described this as a real state-machine defect and added an `outcome_unknown` state, reconciliation, dispatch idempotency, and regression coverage for response loss.
 
-```text
-approval consumed once
-!=
-external communication happened once
-```
-
-The repository owner explicitly replied **“you're right, and this was a real defect in the state machine as written”** and implemented the repair in `c8c82f0`.
-
-- [Owner response](https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690677339)
-
-The change added, among other things:
-
-- `DeliveryRejected` only for a provider-proven rejection;
-- `outcome_unknown` for timeouts or other ambiguous outcomes, with no normal resend path;
-- `reconcile_unknown` to resolve the provider-side fact before moving to `sent` or `failed`;
-- a dispatch idempotency key for the provider-side effect;
-- a regression where the fake provider accepts and then loses the response, proving a second external send does not occur.
-
-The PR body itself preserves the source relationship: `@Nakagawa-master identified a real defect rather than a future caution`.
-
-- Merge commit: [`e8d56789`](https://github.com/ebyron357/Clientverse-crm/commit/e8d56789299cdaeef08b90cb46c01f7128b2d1a0)
-
-**Verified effect here:** named review → external owner confirms a real defect → state-machine / provider-contract / test changes → source attribution preserved in the PR → merge.  
-**Not established here:** production deployment with a real provider adapter or user-scale impact.
-
-**Human meaning:** a system should not tell itself “the approval was used once, so the customer was contacted once.” An unobserved provider outcome stays a separate state until reconciled, reducing the risk of duplicate external communication.
+**Publicly verifiable here:** review → defect confirmation → state-machine/provider-contract/test changes → merge.  
+**Not established here:** production deployment against a real provider or user scale.
 
 ---
 
-## 11. Cline｜Separate delegation approval from understanding the capabilities it grants
+## 9. Replay | Separate historical consent records from current eligibility
 
-**Surface:** [`cline/cline#14225`](https://github.com/cline/cline/pull/14225)  
-**Current status:** base PR merged / follow-up implementation of this proposal not yet verified
+**Surface:** [aferna6-cell/Replay#67](https://github.com/aferna6-cell/Replay/issues/67)  
+**Current state:** design direction accepted in the issue; repository code implementation not verified
 
-For configured subagents, a parent can approve delegation once and child tool calls can then proceed without another approval prompt. If a configured agent omits `tools`, the runtime can provide the available child tool set.
+The public contribution proposed keeping the historical consent event while separately evaluating whether the material is currently eligible for retention, processing, or use.
 
-A `Nakagawa-master` review argued that the person approving delegation should be able to understand the child capability set that this one approval actually grants.
+- [Nakagawa-master contribution](https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689647722)
+- [repository-owner response](https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689719035)
+
+The repository owner explicitly identified the source and restated the distinction as part of the project's protocol design.
+
+**Publicly verifiable here:** comment → owner acknowledgment and protocol-level adoption.  
+**Not established here:** schema/code/tests, merge, release, or real-data operation.
+
+---
+
+## 10. Cline | Make delegated child capabilities visible at approval time
+
+**Surface:** [cline/cline#14225](https://github.com/cline/cline/pull/14225)  
+**Current state:** base PR merged; follow-up implementation of this proposal not verified
+
+A `Nakagawa-master` review proposed that a person approving delegation should be able to see the effective capability set that will be available to the child agent.
 
 - [Nakagawa-master review](https://github.com/cline/cline/pull/14225#pullrequestreview-5242232355)
+- [external-author response](https://github.com/cline/cline/pull/14225#issuecomment-5723653394)
 
-The external author explicitly addressed `@Nakagawa-master`, called it **“a great idea”** and **“definitely a better UX than what we currently have,”** and said it would be included in a follow-up that makes agent configuration a first-class feature.
+The external author named `@Nakagawa-master`, described the proposal as better UX than the current behavior, and stated an intention to include it in future agent-config work.
 
-- [External author response](https://github.com/cline/cline/pull/14225#issuecomment-5723653394)
+The base PR itself is merged, but that merge does not mean this proposal was implemented.
 
-The base PR itself was merged, but that merge does not mean this proposal was implemented. At the latest check, no separate follow-up issue or PR implementing it was found.
-
-**Verified effect here:** named review → explicit external-author recognition → independent evaluation as better UX → stated intent to carry it into follow-up work.  
-**Not established here:** follow-up work item, code/test/UI implementation, release, or production use.
-
-**Human meaning:** an external person explicitly recognized a Nakagawa-origin judgment, preserved the person/source relationship, and judged it worth carrying into a better human-facing product direction.
+**Publicly verifiable here:** named review plus explicit author acknowledgment and follow-up intent.  
+**Not established here:** a follow-up issue/PR, code/tests/UI implementation, or release.
 
 ---
 
-## What these cases do—and do not—show
+## What this page supports — and what it does not
 
-The public record establishes at least the following:
+### Supported by the linked public record
 
-1. Specific `Nakagawa-master` judgments have not remained self-contained writing only.
-2. Independent people in multiple external projects have examined, restated, or implemented those distinctions.
-3. Some cases progressed through code / tests / documentation into an integration branch.
-4. One independent third-party PR explicitly cites a `Nakagawa-master` compatibility contract.
-5. In the PostHog case, a boundary about evidence shown by AI to humans was converted after review into server, UI, and regression-test changes.
-6. In Replay, an external repository owner explicitly recognized a Nakagawa-master boundary and adopted it as a frozen protocol.
-7. In MemberJunction #4487, a different independent reviewer carried a Nakagawa-master finding into their own formal review; in #4524, that same reviewer independently verified and carried another Nakagawa-origin point in a different problem.
-8. In PostHog #102550, a provenance ambiguity in a human reviewer-selection surface was converted after review into source-category grouping plus regression coverage and merged into `master`; the same external maintainer later reused that boundary on #102686 without a fresh Nakagawa prompt (#102686 remains unmerged).
-9. In Clientverse #27, the external owner explicitly called the Nakagawa-master finding a real defect, preserved that source relationship in the PR body, changed the state machine / provider contract / tests, and merged the result.
-10. In Cline #14225, the external author explicitly named Nakagawa-master, independently described the proposal as better UX, and stated an intent to carry it into follow-up work; implementation is not counted yet.
+Across multiple independent GitHub repositories, public records show one or more of the following after specific `Nakagawa-master` comments or reviews:
 
-It does **not** establish that:
+- explicit third-party acknowledgment or restatement;
+- code, test, documentation, or UI changes;
+- source attribution in a PR or commit;
+- merge, backport, release, or deployment in specific cases;
+- independent verification by another reviewer;
+- reuse of the same distinction on another PR.
 
-- the whole Nakagawa Master theory system is thereby proven correct;
-- each external project endorses the full theory system;
-- an open or draft PR is merged;
-- an integration-branch merge is automatically a release, production deployment, or broad adoption;
-- the number of affected users or the scale of social influence can be inferred without evidence.
+Each section states exactly which of those are verified for that case.
 
-## A simple evidence ladder
+### Not established by this page alone
 
-This archive keeps these stages separate:
+This page does not establish:
 
-```text
-public proposal / review
-< explicit third-party response or restatement
-< third-party code / test / design change
-< merge / integration
-< release / deployment / verified use
-< independent reuse by another person or in another problem
-```
+- that the entire Nakagawa Master theory corpus is correct;
+- that any third-party project endorses the theory corpus as a whole;
+- industry-wide adoption;
+- user counts, revenue, or societal impact without direct evidence;
+- future merge of open/draft PRs;
+- production effect where release/deployment/use has not been separately verified.
 
-A lower stage is not counted as a higher one.
+## How to verify a case yourself
 
-## How these cases relate to Nakagawa Structural OS
+For any case:
 
-A newer bounded case also shows explicit source-preserving reuse: [LlamaIndex #23038](https://github.com/run-llama/llama_index/pull/23038) cites a Nakagawa-master issue comment as its compatibility contract and implements source-provenance preservation with tests. The PR is still draft/unmerged, so only implementation/test-stage evidence is claimed.
+1. open the original `Nakagawa-master` comment or review;
+2. read the third-party author/owner/reviewer response;
+3. inspect the PR diff, commits, and tests;
+4. check the PR state for merge status;
+5. verify releases or deployments separately when claimed;
+6. do not infer a causal relationship from unrelated later changes when the source relationship is not explicit.
 
+Counterexamples, non-fit cases, and failed reproductions are also relevant evidence.
 
-These cases are an applied / verification layer, not a separate theory system. See the [Nakagawa Structural OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md) for bounded links from canonical structural principles to external implementation evidence, and return to https://master.ricette.jp for the canonical theory context.
-
-## Test, challenge, or reuse a distinction yourself
-
-If you independently test, falsify, implement, or reuse one of these boundaries in a different public, non-confidential context, use the [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md) and [public registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402). Negative results and counterexamples are welcome; evidence stages must remain separated.
-
-## Check the person and sources directly
+## Related public material
 
 - [Who Is Nakagawa Master?](ABOUT_NAKAGAWA_MASTER.en.md)
-- [Start Here](START_HERE.en.md)
+- [Start Here](START_HERE.md)
 - [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
-- [Public real-problem entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
+- [Nakagawa Structural OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)
+- [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md)
+- [Public registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+- [Public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
-This page is not an invitation to treat a name as authority. It is an entry for checking **what was said, what an independent third party changed, and how far that causal record can actually be verified**.
+This page is not asking readers to trust a name or a count. It is an index for checking the original public contribution, the third party's response, the actual change, and the repository state for themselves.
