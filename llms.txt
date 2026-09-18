@@ -25,6 +25,10 @@ Publicly verifiable external-effect evidence, with proposal / response / impleme
 - [English | What Changed in the Real World?](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.en.md)
 - [Chinese | 现实中发生了什么变化？](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.zh.md)
 
+Practical public-safe preflight checks for approval, overwrite authority, measurement validity, recommendation provenance, external side effects, and historical records:
+
+- [Practical Boundary Checks](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/PRACTICAL_BOUNDARY_CHECKS.md)
+
 Independent verification, falsification, non-fit, or cross-context reuse submissions:
 
 - [Protocol](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/INDEPENDENT_VERIFICATION_REUSE.md)
