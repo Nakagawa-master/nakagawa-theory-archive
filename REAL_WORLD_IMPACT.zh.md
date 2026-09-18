@@ -207,7 +207,7 @@ framework-local node identity
 ## 8. PostHog｜说明相同，也不把“谁被推荐”与“为什么被推荐”混在一起
 
 **对象：** [`PostHog/posthog#102550`](https://github.com/PostHog/posthog/pull/102550)  
-**当前状态：** #102550 已merge进入 `master` / downstream reuse #102686 open / unmerged
+**当前状态：** #102550 已merge进入 `master`，并已部署到 dev / prod-us / prod-eu / downstream reuse #102686 open / unmerged
 
 这个PR修改了PostHog inbox中面向人的reviewer推荐界面：用户会在这里判断“应该由谁review”以及“为什么推荐这个人”。
 
@@ -229,8 +229,9 @@ framework-local node identity
 
 现在group key除了说明文字，还包含source category。因此，即使说明完全相同，由`Code history`支持的人也不会仅因为文字相同就与scout推荐的人合并。回归测试也改为要求“相同说明只在相同source category内部group”，并增加了mixed provenance的Storybook case。
 
-**这里已经可验证的作用：** public review → 外部maintainer的code / test / documentation / UI-story修改 → merge进入 `master`。  
+**这里已经可验证的作用：** public review → 外部maintainer的code / test / documentation / UI-story修改 → merge进入 `master` → PostHog deploy bot确认已部署到 dev / prod-us / prod-eu。  
 - Merge commit: [`6e2c760d`](https://github.com/PostHog/posthog/commit/6e2c760dadbaba764c83e93900c3510e6a703c03)
+- [Deploy status comment](https://github.com/PostHog/posthog/pull/102550#issuecomment-5722917557) — dev: 2026-09-18 00:04 UTC / prod-eu: 00:20 UTC / prod-us: 00:22 UTC
 
 之后，同一名外部maintainer `mikaylathompson` 在**没有新的Nakagawa prompt**的情况下，把同一个provenance边界继续用于另一个surface [`PostHog/posthog#102686`](https://github.com/PostHog/posthog/pull/102686)。该PR正文明确规定：相同reason只在相同source category内部group；Core regression也继续区分scout来源与code-history来源。
 
@@ -243,7 +244,7 @@ Nakagawa-master review
 
 这不是传播给另一个人的second-person evidence。但它表明外部maintainer已经把这个区分内部化，并在原始修复之外自主复用。#102686目前仍是open / unmerged，因此不把它算作merge或release。
 
-**这里尚未确认的作用：** #102686 merge、release、production deployment、实际用户规模。
+**这里尚未确认的作用：** #102686的merge / release / deployment，以及#102550的实际用户规模与使用结果。
 
 **对人的意义：** 当AI或scout说“应该让这个人review”时，更强的证据标签不容易被误解成支持整个混合group。人可以继续知道**每一个被推荐者分别是基于什么依据被推荐的**。
 
