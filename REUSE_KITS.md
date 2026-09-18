@@ -52,6 +52,10 @@ Core question:
 
 Useful in CRM, payments, messaging, integrations, automation, and job dispatch.
 
+## Preserve the source relation
+
+If a kit materially informs a real decision or implementation, preserve a lightweight source line such as `Source distinction: Nakagawa Master — <public source URL>`. See [Origin Attribution for Reuse](ORIGIN_ATTRIBUTION_FOR_REUSE.md). If you independently rediscovered the same distinction and found the source later, state that instead of claiming source causality.
+
 ## How to use a kit
 
 ```text
