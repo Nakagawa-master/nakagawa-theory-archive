@@ -37,7 +37,9 @@
       "origin_action": {
         "type": "issue_comment",
         "url": "https://github.com/tushardhara/dream/issues/12#issuecomment-5651995689",
-        "summary": "Content that appears sanitized is not automatically still authorized for the current actor, recipient, purpose, policy state, or source lineage."
+        "summary": "Content that appears sanitized is not automatically still authorized for the current actor, recipient, purpose, policy state, or source lineage.",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action"
       },
       "third_party_response": {
         "url": "https://github.com/tushardhara/dream/issues/12#issuecomment-5652003584",
@@ -67,7 +69,9 @@
       "external_repository": "aferna6-cell/Replay",
       "origin_action": {
         "type": "issue_comment",
-        "url": "https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689647722"
+        "url": "https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689647722",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action"
       },
       "third_party_response": {
         "url": "https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689719035",
@@ -91,7 +95,9 @@
       "external_repository": "MemberJunction/MJ",
       "origin_action": {
         "type": "pull_request_review",
-        "url": "https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5219601735"
+        "url": "https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5219601735",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action"
       },
       "third_party_response": {
         "url": "https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5241419422",
@@ -113,7 +119,9 @@
       "external_repository": "MemberJunction/MJ",
       "origin_action": {
         "type": "pull_request_review_comment",
-        "url": "https://github.com/MemberJunction/MJ/pull/4524"
+        "url": "https://github.com/MemberJunction/MJ/pull/4524",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action"
       },
       "third_party_response": {
         "url": "https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5242805347",
@@ -139,7 +147,9 @@
         "type": "pull_request_review",
         "id": "5242012853",
         "url": "https://github.com/PostHog/posthog/pull/102550#pullrequestreview-5242012853",
-        "summary": "Grouping repeated explanation text must not collapse which evidence source justified each suggested reviewer."
+        "summary": "Grouping repeated explanation text must not collapse which evidence source justified each suggested reviewer.",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action"
       },
       "third_party_implementation": {
         "commit": "764c347e488cb9f8bb155a2d95c5f40a3b92a08c",
@@ -215,7 +225,9 @@
       "external_repository": "Alan8893/tourcrm",
       "origin_action": {
         "type": "pull_request_comment",
-        "url": "https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5689122153"
+        "url": "https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5689122153",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action"
       },
       "third_party_response": {
         "url": "https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5691823125",
@@ -250,7 +262,9 @@
       "external_repository": "ebyron357/Clientverse-crm",
       "origin_action": {
         "type": "pull_request_comment",
-        "url": "https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690360136"
+        "url": "https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690360136",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action"
       },
       "third_party_response": {
         "url": "https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690677339",
@@ -282,7 +296,9 @@
       "origin_action": {
         "type": "pull_request_review",
         "id": "5242232355",
-        "url": "https://github.com/cline/cline/pull/14225#pullrequestreview-5242232355"
+        "url": "https://github.com/cline/cline/pull/14225#pullrequestreview-5242232355",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action"
       },
       "third_party_response": {
         "url": "https://github.com/cline/cline/pull/14225#issuecomment-5723653394",
@@ -304,5 +320,13 @@
       ]
     }
   ],
-  "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case."
+  "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
+  "causal_provenance_policy": {
+    "source_similarity_is_not_source_causality": true,
+    "source_informed_reuse_should_preserve_origin_route": true,
+    "independent_rediscovery_should_be_labeled_as_independent_rediscovery": true,
+    "fresh_prompt_should_be_distinguished_from_prompt_free_reuse": true,
+    "minimal_origin": "Nakagawa Master",
+    "attribution_guide": "ORIGIN_ATTRIBUTION_FOR_REUSE.md"
+  }
 }
