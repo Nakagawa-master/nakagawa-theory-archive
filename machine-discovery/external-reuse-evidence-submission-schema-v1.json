@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/external-reuse-evidence-submission-schema-v1.json",
+  "title": "Nakagawa Master external reuse evidence submission",
+  "description": "Non-canonical schema for reporting independent verification, falsification, reuse, implementation, or non-fit of a public Nakagawa Master distinction.",
+  "type": "object",
+  "required": [
+    "evidence_type",
+    "external_context",
+    "source_used",
+    "independent_action",
+    "current_stage",
+    "fresh_nakagawa_prompt",
+    "public_evidence",
+    "boundaries"
+  ],
+  "properties": {
+    "evidence_type": {
+      "type": "string",
+      "enum": [
+        "independent_verification",
+        "falsification_or_counterexample",
+        "independent_restatement",
+        "decision_or_workflow_change",
+        "implementation",
+        "merge_or_integration",
+        "release_or_verified_use",
+        "cross_context_reuse",
+        "non_fit"
+      ]
+    },
+    "external_context": {
+      "type": "string",
+      "minLength": 20
+    },
+    "source_used": {
+      "type": "object",
+      "required": [
+        "url",
+        "distinction"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "distinction": {
+          "type": "string",
+          "minLength": 10
+        }
+      },
+      "additionalProperties": false
+    },
+    "independent_action": {
+      "type": "string",
+      "minLength": 20
+    },
+    "what_changed": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "observable_result": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "current_stage": {
+      "type": "string",
+      "enum": [
+        "read_or_mention",
+        "independent_restatement_or_test",
+        "changed_decision_or_work_item",
+        "implementation",
+        "merge_or_integration",
+        "release_deployment_or_verified_use",
+        "reuse_by_another_person_or_problem"
+      ]
+    },
+    "fresh_nakagawa_prompt": {
+      "type": "string",
+      "enum": [
+        "no_fresh_prompt",
+        "fresh_prompt_was_present",
+        "unknown"
+      ]
+    },
+    "person_chain": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "same_external_person",
+        "different_external_person",
+        "multiple_external_people",
+        "not_applicable",
+        "unknown",
+        null
+      ]
+    },
+    "public_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "minItems": 1
+    },
+    "boundaries": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 5
+      },
+      "minItems": 1,
+      "description": "Explicit statements of what this case does not establish."
+    },
+    "whole_theory_endorsement_claim": {
+      "const": false
+    },
+    "release_claim_without_direct_evidence": {
+      "const": false
+    },
+    "contains_confidential_or_personal_information": {
+      "const": false
+    }
+  },
+  "additionalProperties": false
+}
