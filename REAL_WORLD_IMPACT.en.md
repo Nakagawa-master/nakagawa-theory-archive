@@ -389,6 +389,10 @@ public proposal / review
 
 A lower stage is not counted as a higher one.
 
+## How these cases relate to Nakagawa Structural OS
+
+These cases are an applied / verification layer, not a separate theory system. See the [Nakagawa Structural OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md) for bounded links from canonical structural principles to external implementation evidence, and return to https://master.ricette.jp for the canonical theory context.
+
 ## Test, challenge, or reuse a distinction yourself
 
 If you independently test, falsify, implement, or reuse one of these boundaries in a different public, non-confidential context, use the [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md) and [public registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402). Negative results and counterexamples are welcome; evidence stages must remain separated.
