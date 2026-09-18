@@ -164,7 +164,22 @@
         "downstream_pr_names_nakagawa_origin": false,
         "exact_reused_rule": "repeat reasons group only within the same source category; scout-backed and code-history-backed suggestions remain separate",
         "state": "open_unmerged",
-        "classification_boundary": "cross-surface reuse by the same maintainer, not second-person propagation"
+        "classification_boundary": "cross-surface reuse by the same maintainer, not second-person propagation",
+        "third_party_validation_after_reuse": {
+          "surface": "https://github.com/PostHog/posthog/pull/102686",
+          "note": "Independent review on the downstream surface found additional provenance-display defects, including an optimistic manual reviewer add temporarily labeled as an agent suggestion; the external maintainer fixed those findings.",
+          "fixes": [
+            {
+              "issue": "optimistic manual reviewer add temporarily showed Agent suggestion instead of teammate provenance",
+              "fix_commit": "bd5226385a1b135a70e9d4541e33cc74d0ef17ae"
+            },
+            {
+              "issue": "scout identity tooltip was not keyboard-reachable",
+              "fix_commit": "698842f5a42623443207cfd584475ba209d1aa29"
+            }
+          ],
+          "classification_boundary": "additional independent validation of the downstream provenance surface; not explicit Nakagawa-origin second-person attribution"
+        }
       },
       "current_stage": "release_deployment_or_verified_use",
       "not_claimed": [
