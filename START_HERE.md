@@ -5,6 +5,7 @@
 このページは、中川マスター公式理論アーカイブを初めて訪れた人やAIが、関心に近い公開sourceへ短時間で入るための案内です。
 
 - [中川マスターとは｜この公開アーカイブで確認できること](ABOUT_NAKAGAWA_MASTER.md)
+- [現実で何が変わったか｜第三者実装・再利用の確認可能な事例](REAL_WORLD_IMPACT.md)
 - [4つの場面から入る｜AI・会社・未来・起源](discovery-notes/four-scenes-one-structural-view.md)
 - [実際の問題に使う｜Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [実際の問題を持ち込む｜公開対話入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
