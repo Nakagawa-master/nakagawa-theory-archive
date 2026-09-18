@@ -1,443 +1,302 @@
-# 現実で何が変わったか｜中川マスターの公開判断が第三者実装へ作用した確認可能な事例
+# 公開記録で確認できる外部実装事例｜中川マスターの公開コメント後に第三者プロジェクトで確認された変更
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-> **公開上の位置づけ:** このページは、第三者が検証できる公開記録から「中川マスター / Nakagawa Master 名義の具体的な判断が、外部プロジェクトの設計・コード・テストへどう作用したか」を辿るための非正本・人間向け入口です。理論全体の正しさ、第三者プロジェクトによる理論全体への支持、業界全体での採用、release / production deployment を、確認できる範囲を超えて主張しません。
+**最終確認: 2026-09-18**
 
-## 10秒で分かること
+中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）は、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
 
-このアーカイブには、理論や説明だけでなく、**中川マスター名義で公開された具体的な設計判断が、独立した第三者によって検討され、実際のコード・テスト・設計文書へ変換された履歴**があります。
+このページは、`Nakagawa-master` 名義で公開されたGitHub上のコメントやreviewと、その後に第三者プロジェクトで確認できる変更を、読者が自分で辿れる形にまとめた**公開記録の案内ページ**です。
 
-重要なのは、コメント数ではありません。
+このページの目的は、人物や理論を権威化することでも、影響度を自己採点することでもありません。個々の事例について、
 
-```text
-公開判断
-→ 第三者が検討・再説明する
-→ 第三者がコード / テスト / 設計を変える
-→ merge / integration へ進む
-→ その仕組みを使う人の判断や安全性に作用し得る
-```
+- 何が公開されたのか
+- 第三者が何を確認・変更したのか
+- merge / release / deploymentまで確認できるのか
+- どこから先は未確認なのか
 
-という因果が、どこまで公開記録で確認できるかです。
+を、公開リンクから区別して確認できるようにすることです。
 
-## 普通の人にとって、何が変わるのか
+## このページの読み方
 
-技術的な差分を全部読む必要はありません。以下のような違いとして現れます。
+各事例は、できるだけ次の4点に分けています。
 
-- **AIが示した数字を、そのまま事実だと思い込まなくてよくなる。** システム自身が測った値と、AIが主張した値を分けて表示する。
-- **昔の承認が残っているだけで、今も許可されていることにされにくくなる。** 現在の相手・目的・権限・source revisionを再確認する。
-- **同じIDがあるだけで、他人や運用者が管理している値を勝手に上書きしにくくなる。** identityとownership / provenanceを分ける。
-- **AIが答えを作る途中で、元sourceの identity が消えにくくなる。** local object IDとupstream source IDを別に保持する。
-- **「データが取れなかった」が「0だった」に化けにくくなる。** operation successとvalid measurementを分ける。
-- **AIやscoutが人を推薦するとき、誰がどの根拠で推薦されたのかが混ざりにくくなる。** 同じ説明文でも、code historyとagent/scout由来の推薦根拠を分けて保つ。
+1. **公開起点** — `Nakagawa-master` が第三者repositoryへ書いた具体的なコメントやreview
+2. **第三者側の記録** — repository owner、author、reviewerなどによる応答、実装、テスト、文書変更
+3. **現在状態** — open / merged / released / deployedなど、公開記録で確認できる状態
+4. **確認できない範囲** — 利用者数、広範な採用、理論全体への支持など、証拠がないもの
 
-これは「理論を知っている人だけに効く」作用ではありません。設計境界が製品や基盤へ入れば、その区別を知らない利用者にも結果として作用し得ます。ただし、releaseやproduction useが確認できないケースでは、実際の利用者規模まで推測しません。
+コメントが存在するだけでは、実装されたことにはなりません。実装されたことと、mergeされたことも別です。mergeされたことと、release / deployment /実利用も別です。
+
+## 利用者にとって分かりやすい例
+
+以下の事例で扱われている区別は、たとえば次のような製品挙動につながります。
+
+- AIが提示した数値と、システム自身が測定した数値を区別する
+- 過去に許可された情報でも、現在の条件で利用権限を再確認する
+- 同じIDであることと、そのデータを上書きしてよいことを区別する
+- AI処理中のlocal IDと、元資料のsource identityを区別する
+- データ取得処理の成功と、有効な測定値が得られたことを区別する
+- 推薦理由の文章が同じでも、誰がどの根拠で推薦されたかを保持する
+- 現在の所属状態と、過去時点の履歴事実を区別する
+- 承認操作が一度だったことと、外部送信が一度だけ起きたことを区別する
+
+以下では、公開記録で確認できる範囲だけを記載します。
 
 ---
 
-## 1. PostHog｜AIが出した“証拠”と、システム自身が測った値を分ける
+## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
-**対象:** [`PostHog/posthog#92252`](https://github.com/PostHog/posthog/pull/92252)  
-**現在の状態:** open / draft / unmerged
+**対象:** [PostHog/posthog#92252](https://github.com/PostHog/posthog/pull/92252)  
+**現在状態:** open / draft / unmerged
 
 PostHogのworkflow scoutは、AIがworkflow改善案と数値的なevidenceを人に提示する仕組みです。
 
-`Nakagawa-master` のreviewは、人が判断材料として読む `evidence` がproducer / scout自身のJSONであり、形は検証されても、実際のworkflow / version / stepの測定値と一致する証明がない点を指摘しました。
+`Nakagawa-master` のreviewは、producer / scoutが送った数値と、実際のworkflow・version・stepからPostHog側が測定した数値を同一視しないよう指摘しました。
 
 - [Nakagawa-master review](https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200)
 
-指摘した境界は単純です。
+その後、PR authorはserver側で対象stepのmetricを読み直し、producer由来の値とは別に保持する実装・テスト・表示変更を追加しました。UIでは `Measured by PostHog` と `Unverified` を区別し、producerの値とPostHog側の値が異なる場合も、その差を表示する設計になっています。
 
-```text
-AI / producer が「この数字です」と書いた
-!=
-その数字が実測された
-```
-
-そのreview後、PR authorによるcommit:
-
-- [`b84a9395 — feat(workflows): measure a suggestion's step when it is filed and show that reading`](https://github.com/PostHog/posthog/commit/b84a939545ff3a1a6820d3cf4afca3b57aa3001b)
-
-で、server側が提案時に同じstep / base versionのmetricsを読み直し、`evidence.measured`として保存する実装が追加されました。
-
-現在のPR本文と実装では、人間向け画面が次を分けます。
-
-```text
-Measured by PostHog
-→ PostHog自身が読み直したmeasurement
-
-Unverified
-→ producerの数字はあるが、PostHog側でmeasurementを確立できなかった
-```
-
-producerの数字とPostHogの実測値が違う場合には、その不一致も人に示されます。`source_id`の表示も、provenanceを思わせる `Source` ではなく `Scout run` へ変更されました。回帰テストでは、producerが意図的に異なる値を送った場合でも、seedされたserver-side metricが別に保持されることが確認されています。
-
-**ここで確認できる作用:** 公開review → 外部authorのcode / test / UI変更。  
-**まだ確認できないもの:** upstream merge、release、production deployment、利用者規模、PostHogによる中川マスター理論全体への支持。
+**公開記録から確認できること:** review後に第三者authorがcode / tests / UIを変更したこと。  
+**まだ確認できないこと:** このPRのmerge、release、production deployment、利用者数。
 
 ---
 
-## 2. Dream｜「一度安全化した内容」と「今も利用してよい権限」を分ける
+## 2. Dream｜「内容が安全化されたこと」と「現在も利用してよいこと」を分ける
 
-**対象:** [`tushardhara/dream#12`](https://github.com/tushardhara/dream/issues/12) → [`PR #28`](https://github.com/tushardhara/dream/pull/28)  
-**現在の状態:** PR #28 merged into `backend-integration`
+**対象:** [tushardhara/dream#12](https://github.com/tushardhara/dream/issues/12) → [PR #28](https://github.com/tushardhara/dream/pull/28)  
+**現在状態:** PR #28 merged
 
-`Nakagawa-master` の公開設計コメントは、sanitized / approved contentを「一度許可されたから永久に安全なbytes」と扱わず、現在のactor / recipient / purpose / source lineage / policy stateへ結び直す境界を提案しました。
+`Nakagawa-master` の公開コメントは、内容が一度sanitized / approvedされたことを、将来も無条件に利用できる権限として扱わず、actor、recipient、purpose、source lineage、policy stateなど現在条件を再確認する設計を提案しました。
 
 - [Nakagawa-master design contribution](https://github.com/tushardhara/dream/issues/12#issuecomment-5651995689)
-- [第三者repository ownerによる応答](https://github.com/tushardhara/dream/issues/12#issuecomment-5652003584)
+- [repository owner response](https://github.com/tushardhara/dream/issues/12#issuecomment-5652003584)
+- [merged PR #28](https://github.com/tushardhara/dream/pull/28)
+- [公開case note](discovery-notes/implementation-case-sanitized-content-is-not-current-authorization.md)
 
-repository ownerは `content appears sanitized != authorization remains valid` をticketの正しい軸として明示し、その後PR #28でcurrent rights / lineageのrevalidation、revocation、recipient変更、same-text source revision等を含む実装とnegative testsへ進みました。
+repository ownerはこの区別をissue上で明示的に受け取り、その後のPRでcurrent rights / lineageの再確認、revocation、recipient変更、source revisionなどを扱う実装とnegative testsを追加しました。
 
-- Merge commit: [`314e8e0849afcff0e2c10ea296cbd9ec5e57f23c`](https://github.com/tushardhara/dream/commit/314e8e0849afcff0e2c10ea296cbd9ec5e57f23c)
-- [詳しい公開case note](discovery-notes/implementation-case-sanitized-content-is-not-current-authorization.md)
-
-**人間側の意味:** 過去に許可した情報が、条件が変わった後も黙って再利用される事故を減らす設計へつながります。
+**公開記録から確認できること:** コメント → owner応答 → code / tests → merge。  
+**まだ確認できないこと:** 実利用者数や、この一事例を超えた広範な採用。
 
 ---
 
-## 3. MemberJunction｜「同じID」と「上書きしてよい所有権」を分ける
+## 3. MemberJunction｜同じIDと、上書きしてよい所有権を分ける
 
-**対象:** [`MemberJunction/MJ#4519`](https://github.com/MemberJunction/MJ/pull/4519) → [PR #4496](https://github.com/MemberJunction/MJ/pull/4496) → [LTS backport #4546](https://github.com/MemberJunction/MJ/pull/4546) → [v6.1.2](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)  
-**現在の状態:** merged → LTS backport merged → released → production-shaped upgradeでcollision-free migrationを外部確認
+**対象:** [MemberJunction/MJ#4519](https://github.com/MemberJunction/MJ/pull/4519) → [#4496](https://github.com/MemberJunction/MJ/pull/4496) → [#4546](https://github.com/MemberJunction/MJ/pull/4546) → [v6.1.2](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)  
+**現在状態:** merged → LTS backport merged → v6.1.2 released
 
-migrationで同じprimary keyのrowを見つけたとき、
+migrationで同じprimary keyのrowを見つけても、そのrowを自動的に上書きしてよいとは限りません。
 
-```text
-same ID
-→ therefore safe to overwrite
-```
-
-とは限りません。
-
-`Nakagawa-master` reviewは、identityとownership / provenance contractを分ける必要を提示しました。その後、独立reviewer `SDesai-BC` がA/Bのownership questionを実際のmigrationへ当てて検証し、PR authorがcode / tests / documentationを変更しました。PR本文にもrelease-owned rowのconvergence contractが明示されています。
+`Nakagawa-master` のreviewは、row identityと、そのrowを誰が管理・収束させる権限を持つかを分ける必要を提示しました。
 
 - [Nakagawa-master contribution](https://github.com/MemberJunction/MJ/pull/4519#issuecomment-5689128135)
 - [PR #4519](https://github.com/MemberJunction/MJ/pull/4519)
-- Merge commit: [`469b25f1bcf51d844396b8a6b8a9f1390b5e1488`](https://github.com/MemberJunction/MJ/commit/469b25f1bcf51d844396b8a6b8a9f1390b5e1488)
-- [詳しい公開case note](discovery-notes/implementation-case-matching-id-is-not-ownership-provenance.md)
+- [公開case note](discovery-notes/implementation-case-matching-id-is-not-ownership-provenance.md)
 
-この境界はreviewで止まりませんでした。#4519 merge後、PR #4496はguarded emitterで生成したmetadata migrationを実際に作り、全rowが既に存在するdatabaseへの再実行でもprimary-key collisionなしと記録しています。そのmigrationは#4546として`lts/6.1`へbackportされ、公式release `v6.1.2` に含まれました。
+その後、第三者reviewerによる確認、authorによるcode / tests / documentation変更、merge、metadata migration生成、LTS backport、v6.1.2 releaseまで公開記録で確認できます。
 
-さらにMemberJunctionのcertification issueで、外部consumer `jordanfanapour` はMJ 5.51.x由来のproduction-shaped databaseを6.1.2へupgradeした結果を公開しています。
+さらに、MemberJunctionの公開certification issueには、既存rowを含むdatabaseをv6.1.2へupgradeし、該当migration群がcollisionなしで適用されたという外部報告があります。
 
 - [External 6.1.2 certification report](https://github.com/MemberJunction/MJ/issues/4475#issuecomment-5715684968)
 
-その報告では、
+同じ報告には別のregressionも記載されているため、このページは「v6.1.2全体に問題がない」とは述べません。
 
-```text
-pre-existing mj sync push rows
-→ 65 migrations applied
-→ 0 failed
-→ no #4503 collisions
-```
-
-が確認されています。同じ報告は別の6.1 regressionもcert blockerとして明示しており、**v6.1.2全体が無問題だったという主張ではありません**。ここで確認できるのは、ownership / convergence境界からつながったguarded migrationが、実際のproduction-shaped upgrade条件で元のcollision failureを起こさなかったことです。
-
-**ここで確認できる作用:** 公開判断 → 独立検証 → code / tests / documentation → merge → downstream generated migration → LTS backport → release → 外部production-shaped upgradeで元failureなし。  
-**まだ確認できないもの:** fleet-wide adoption、利用者規模、非技術領域への再利用、中川マスター理論全体への支持。
-
-**人間側の意味:** システムが「同じものを見つけた」ことを、「それを変更する権限がある」ことへ勝手に昇格させない区別が、review上の説明ではなく、releaseと実upgradeの挙動まで到達しています。
+**公開記録から確認できること:** review → 独立確認 → code / tests / docs → merge → backport → release → 該当collisionが発生しなかった外部upgrade report。  
+**まだ確認できないこと:** 全利用環境での結果、利用者規模、一般市場での採用範囲。
 
 ---
 
-## 4. MemberJunction｜「処理が成功した」と「有効な測定値が得られた」を分ける
+## 4. LlamaIndex｜local node identityと、元sourceのidentityを分けて保持する
 
-**対象:** [`MemberJunction/MJ#4402`](https://github.com/MemberJunction/MJ/pull/4402)  
-**現在の状態:** merged into `master`
+**対象:** [run-llama/llama_index#21933](https://github.com/run-llama/llama_index/issues/21933) → [PR #23038](https://github.com/run-llama/llama_index/pull/23038)  
+**現在状態:** open / draft / unmerged
 
-budget evaluationでquery自体が成功しても、zero rows、missing column、null、non-numeric等なら「有効な測定値を得た」とは限りません。
+retrieval処理の途中でtextが保持されていても、upstream document identityが失われれば、後から元sourceへ戻れない場合があります。
 
-`Nakagawa-master` review後、PR authorはfindingsを確認し、invalid measurementを0へ潰さずfailureとして扱い、last known valid observationを保持し、true zeroは有効なzeroとして残すcode / regression testsへ変更しました。
-
-- [PR #4402](https://github.com/MemberJunction/MJ/pull/4402)
-- [詳しい公開case note](discovery-notes/implementation-case-query-success-is-not-valid-measurement.md)
-
-**人間側の意味:** dashboard、budget、alert等で、「分からない」が自信満々の「0」に変換される誤判断を減らす方向です。
-
----
-
-## 5. LlamaIndex｜AIが内容を保持しても、元sourceのidentityを消さない
-
-**対象:** [`run-llama/llama_index#21933`](https://github.com/run-llama/llama_index/issues/21933) → [`PR #23038`](https://github.com/run-llama/llama_index/pull/23038)  
-**現在の状態:** third-party draft PR / unmerged
-
-retrieval framework内でuseful textが残っていても、upstream document identityが変換途中で消えれば、後からsourceへ戻れなくなります。
-
-`Nakagawa-master` contributionは、
-
-```text
-upstream source identity
-!=
-framework-local node identity
-```
-
-として両方を分けて保持するcompatibility contractを提示しました。
-
-その後、独立したissue authorが開いたdraft PR #23038は、PR descriptionでこの `Nakagawa-master` compatibility contractを**明示的に引用**し、upstream `document_id` / `document_name`をmetadataへ保持しながらlocal `TextNode.id_` policyを変えない実装とtestsを追加しています。
+`Nakagawa-master` のissue commentは、framework内部のnode identityと、upstream source identityを別の情報として保持するcompatibility boundaryを提示しました。
 
 - [Nakagawa-master comment](https://github.com/run-llama/llama_index/issues/21933#issuecomment-5650957902)
-- [Third-party draft PR #23038](https://github.com/run-llama/llama_index/pull/23038)
-- [詳しい公開case note](discovery-notes/implementation-case-source-identity-vs-local-node-identity.md)
+- [third-party PR #23038](https://github.com/run-llama/llama_index/pull/23038)
+- [公開case note](discovery-notes/implementation-case-source-identity-vs-local-node-identity.md)
 
-**人間側の意味:** AIやRAGが答えを作った後でも、「その情報はどこから来たか」へ戻れる可能性を保つ設計です。
+第三者が開いたPR #23038は、そのcommentをcompatibility contractとしてPR本文に明示し、`document_id` / `document_name`をmetadataへ保持する実装とtestsを追加しています。
 
----
-
-## 6. Replay｜第三者が中川マスター起点の境界を明示的に採用・固定した
-
-**対象:** [`aferna6-cell/Replay#67`](https://github.com/aferna6-cell/Replay/issues/67)  
-**現在の状態:** issue上でprotocol freeze / repository実装は未確認
-
-`Nakagawa-master` の公開コメントは、参加者データについて次の境界を提示しました。
-
-```text
-historical consent
-!=
-current authorization to retain / process / use the captured material
-```
-
-つまり、過去に同意が成立した事実は履歴として保持しつつ、現在そのデータを保持・処理・利用してよいかは、目的、retention期限、withdrawal / deletion、契約変更等を含む現在のeligibilityとして別に判定する、という区別です。
-
-- [Nakagawa-master contribution](https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689647722)
-- [External repository ownerによる明示的な採用・再説明](https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689719035)
-
-その後、repository owner自身が **Nakagawa-master起点のboundaryをaccept / freezeする** と明示し、immutableなconsent eventとcurrent eligibilityの分離、downstreamでのfail-closed gate、withdrawal / deletion receiptのartifact graph、adversarial casesまで自分のprotocolとして再記述しました。
-
-**ここで確認できる作用:** 公開判断 → 外部ownerによる明示的な起点認識 → 独立した再説明 → protocolへの採用・固定。  
-**まだ確認できないもの:** schema / code / testsへのrepository実装、merge、release、実参加者データでの運用。
-
-**人間側の意味:** 判断内容だけが匿名的に吸収されたのではなく、独立した第三者が「誰のどの境界を採用したか」を認識したうえで、自分の計画へ移しています。
+**公開記録から確認できること:** source commentが明示的に参照され、第三者PRでcode / testsへ反映されていること。  
+**まだ確認できないこと:** merge、release、deployment。
 
 ---
 
-## 7. MemberJunction｜中川マスターの指摘が、別の第三者reviewerへ再伝播した
+## 5. MemberJunction｜別のreviewerが同じ問題を自分で検証した例
 
-**対象:** [`MemberJunction/MJ#4487`](https://github.com/MemberJunction/MJ/pull/4487)  
-**現在の状態:** open / unmerged
+**対象:** [MemberJunction/MJ#4487](https://github.com/MemberJunction/MJ/pull/4487) / [#4524](https://github.com/MemberJunction/MJ/pull/4524)  
+**現在状態:** 両PRとも open / unmerged
 
-`Nakagawa-master` reviewは、aliased re-exportされたpublic typeで、内部declaration名と公開alias名がずれるため、外部consumerが使うmemberを「安全に自動renameできる」と誤分類し得るcompatibility holeを指摘しました。
+#4487では、`Nakagawa-master` がaliased re-exportされたpublic typeについて、内部declaration名と公開alias名を混同するとunsafe renameにつながり得る点を指摘しました。
 
 - [Nakagawa-master review](https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5219601735)
 
-その翌段階で、別の独立reviewer `rkihm-BC` が自分のformal reviewのRequired項目としてこの問題を取り上げ、**Nakagawa-masterが報告したaliased re-export holeがまだ開いている**ことを明示しました。さらに、同じmechanismを自分で再説明し、source-side nameを保持する修正と、Nakagawa-masterが提案したregression testを改めて要求しています。
+その後、別のreviewer `rkihm-BC` が自分のformal reviewで同じ問題を再確認し、source-side nameを保持する修正とregression testを要求しています。
 
-- [Independent second-reviewer carry](https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5241419422)
+- [independent reviewer confirmation](https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5241419422)
 
-**ここで確認できる作用:** 中川マスターの公開判断 → 別人が独立reviewで再確認 → 名前付きで再説明 → formal changes-requested reviewへ再伝播。  
-**まだ確認できないもの:** このsecond-hop review後のauthor code / test変更、merge、release。
+#4524でも同じreviewerが `@Nakagawa-master's point about D is confirmed` と明記し、自分でcheckerを実行した結果とともに修正方針をreviewへ取り込んでいます。
 
-**人間側の意味:** 中川マスター本人が同じ説明を繰り返さなくても、別の人がその判断を記憶・参照し、自分の判断材料として次の人へ運ぶ段階が確認できます。
+- [confirmation on #4524](https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5242805347)
 
-このsecond-hopは一件だけではありません。別のPR [`MemberJunction/MJ#4524`](https://github.com/MemberJunction/MJ/pull/4524) でも、同じ独立reviewer `rkihm-BC` が自分でcheckerを実行・反証しながら、**“@Nakagawa-master's point about D is confirmed”** と明記しました。さらに、列挙済みのregex形状だけを増やすのではなく、未分類 `spCreate` をfail-closedにするNakagawa-master提案を **“the right fix”** と評価し、自分のformal reviewへ持ち込んでいます。
-
-- [Independent confirmation / carry on MJ #4524](https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5242805347)
-
-これは「別の人物へ広く伝播した」証明ではありません。同じ独立reviewerが、**別PR・別problemでもNakagawa-master起点の判断を再確認し、自分の検証結果とともに次のdecisionへ運んだ**というrepeatability evidenceです。#4524 authorによるその後のimplementationは、現時点ではまだ確認できていません。
+**公開記録から確認できること:** 別の第三者reviewerがNakagawa-masterの指摘を名前付きで参照し、自分の検証結果とともにformal reviewへ取り込んだこと。  
+**まだ確認できないこと:** そのreview後のauthor実装、merge、release。
 
 ---
 
-## 8. PostHog｜同じ説明でも「誰がどの根拠で推薦されたか」を混ぜない
+## 6. PostHog｜推薦理由の文章と、その理由のsourceを混ぜない
 
-**対象:** [`PostHog/posthog#102550`](https://github.com/PostHog/posthog/pull/102550)  
-**現在の状態:** #102550 merged into `master` and deployed to dev / prod-us / prod-eu / downstream reuse #102686 open / unmerged
+**対象:** [PostHog/posthog#102550](https://github.com/PostHog/posthog/pull/102550) → [#102686](https://github.com/PostHog/posthog/pull/102686)  
+**現在状態:** #102550 merged / deployed、#102686 open / unmerged
 
-このPRは、PostHogのinboxで「誰をreviewerとして推薦するか」「なぜその人が推薦されたか」を人が判断する表示を変更しています。
+PostHogのreviewer推薦UIでは、同じ説明文を持つreviewerをgroup化すると、`Code history` と `Added by scout` のような異なるsourceが一つに見える可能性がありました。
 
-`Nakagawa-master` のreviewは、同じ説明文を持つreviewerを一つにgroup化したとき、`Code history` と `Added by scout` などのsource labelがgroup全体へまとめて表示され、**どのreviewerがどの根拠で推薦されたのかという対応関係が失われる**点を指摘しました。
+`Nakagawa-master` のreviewは、説明文が同じことと、推薦根拠のsourceが同じことを分けるよう指摘しました。
 
 - [Nakagawa-master review](https://github.com/PostHog/posthog/pull/102550#pullrequestreview-5242012853)
 
-指摘した境界は次です。
+第三者maintainerはsource categoryをgroup keyへ含めるcode / tests / UI story変更を追加し、#102550は`master`へmergeされました。PostHogのdeploy status commentではdev / prod-us / prod-euへのdeploymentも記録されています。
 
-```text
-説明文が同じ
-!=
-推薦根拠のprovenanceまで同じ
-```
+- [merged PR #102550](https://github.com/PostHog/posthog/pull/102550)
+- [deploy status](https://github.com/PostHog/posthog/pull/102550#issuecomment-5722917557)
 
-review後、第三者maintainerによるcommit:
+その後、同じmaintainerが別のUI surfaceを扱う#102686でも、同じreasonであってもsource categoryが異なる場合は分ける設計を使っています。#102686は現時点でopenです。
 
-- [`764c347e — fix(signals): separate reviewer groups by source`](https://github.com/PostHog/posthog/commit/764c347e488cb9f8bb155a2d95c5f40a3b92a08c)
-
-が追加されました。
-
-この変更では、group keyに説明文だけでなくsource categoryも含め、同じ説明でも `Code history` とscout由来の推薦を別groupとして扱います。回帰テストも「同じ説明は、同じsource category内でだけgroup化する」条件へ変更され、mixed provenanceのStorybook caseも追加されています。
-
-**ここで確認できる作用:** 公開review → 外部maintainerのcode / test / documentation / UI-story変更 → `master` へのmerge → PostHogのdeploy botによるdev / prod-us / prod-euへのdeployment確認。  
-- Merge commit: [`6e2c760d`](https://github.com/PostHog/posthog/commit/6e2c760dadbaba764c83e93900c3510e6a703c03)
-- [Deploy status comment](https://github.com/PostHog/posthog/pull/102550#issuecomment-5722917557) — dev: 2026-09-18 00:04 UTC / prod-eu: 00:20 UTC / prod-us: 00:22 UTC
-
-その後、同じ外部maintainer `mikaylathompson` が、Nakagawa-masterからの新しいpromptなしに別surface [`PostHog/posthog#102686`](https://github.com/PostHog/posthog/pull/102686) へ同じprovenance境界を再利用しました。PR本文は、**同じreasonでも同じsource category内でだけgroup化する**と明記し、Core regressionもscout由来とcode-history由来を分離します。
-
-```text
-Nakagawa-master review
-→ 外部maintainerが#102550で実装・merge
-→ 新しいNakagawa promptなし
-→ 同じmaintainerがDesktop/Coreの別surfaceで同じ境界を再利用
-```
-
-これは別人へのsecond-person propagationではありません。しかし、一回限りの修正ではなく、外部の同じ人が境界を内部化し、別surfaceへ自律的に再利用した証拠です。#102686は現時点でopen / unmergedのため、merge / releaseとしては数えません。
-
-**まだ確認できないもの:** #102686のmerge / release / deployment、#102550の実利用者規模や利用結果。
-
-**人間側の意味:** AIやscoutが「この人にreviewしてもらうべき」と推薦したとき、より強い根拠ラベルがgroup全員を裏付けているように見える誤認を減らし、**各人を信頼する理由の出所を保ったまま判断できる**方向へ変わります。
+**公開記録から確認できること:** review → code / tests / UI change → merge → deployment。さらに別PRで同じ設計区別が再利用されていること。  
+**まだ確認できないこと:** #102686のmerge、実際の利用者数や利用結果。
 
 ---
 
-## 9. TourCRM｜「今の所属」と「その時点の履歴」を混ぜない
+## 7. TourCRM｜現在の所属状態と、過去時点の履歴を分ける
 
-**対象:** [`Alan8893/tourcrm#97`](https://github.com/Alan8893/tourcrm/pull/97) → [`PR #101`](https://github.com/Alan8893/tourcrm/pull/101)  
-**現在の状態:** follow-up PR #101 merged
+**対象:** [Alan8893/tourcrm#97](https://github.com/Alan8893/tourcrm/pull/97) → [PR #101](https://github.com/Alan8893/tourcrm/pull/101)  
+**現在状態:** follow-up PR #101 merged
 
-attendance履歴では、現在その人がparticipantかどうかと、過去のoccurrence時点でparticipantだったかどうかは同じではありません。
+attendance履歴では、「今その人がparticipantか」と「そのoccurrence時点でparticipantだったか」は別の条件です。
 
-`Nakagawa-master` のreviewは、現在時刻のmembershipで過去のrosterを判定すると、参加関係が後で終了しただけで、既に記録されたattendanceがGET/summaryから消え、historical correctionまでできなくなる点を指摘しました。
+`Nakagawa-master` のreviewは、現在のmembershipだけで過去のrosterを判定すると、後からmembershipが終了しただけで過去のattendanceが見えなくなったり、訂正できなくなったりする問題を指摘しました。
 
-- [Nakagawa-master review on PR #97](https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5689122153)
+- [Nakagawa-master review](https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5689122153)
+- [owner response](https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5691823125)
+- [follow-up PR #101](https://github.com/Alan8893/tourcrm/pull/101)
 
-repository ownerはこの指摘を **“confirmed as a real bug”** と明示し、専用follow-up PR #101を作成しました。PR本文は `@Nakagawa-master` review feedbackを起点として明記しています。
+repository ownerはこの指摘をreal bugとして認め、専用follow-up PRを作成しました。実装commitにもreview feedbackのsourceが明記されています。さらにtest fixtureについて追加reviewが行われ、旧実装で実際にfailする過去日時fixtureへ修正された後、PR #101はmergeされました。
 
-- [Owner response and follow-up announcement](https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5691823125)
-- [Follow-up PR #101](https://github.com/Alan8893/tourcrm/pull/101)
-
-実装commit自体もsourceを明示しています。
-
-- [`b6da0eb8 — fix(attendance): key participation eligibility off the occurrence's own window, not now()`](https://github.com/Alan8893/tourcrm/commit/b6da0eb880d474c7e8322f2b2da8bef02a64e1f6) — `Addresses PR #97 review feedback (Nakagawa-master)`
-- [`568c8fec — test(attendance): make historical-roster regressions independent of wall-clock date`](https://github.com/Alan8893/tourcrm/commit/568c8fecbbcb56297deb385ea34c8bb61a2839e5) — `Addresses PR #101 review feedback (Nakagawa-master)`
-
-2回目のreviewでは、future-dated test fixtureでは旧実装でも偶然testが通り得ることを指摘しました。ownerは再度 **“Confirmed — good catch”** と応答し、過去日時fixtureへ変更して旧実装では3testが実際にfailすることまで検証しています。
-
-- [Owner response on PR #101](https://github.com/Alan8893/tourcrm/pull/101#issuecomment-5692369969)
-- Merge commit: [`4ec21e8c`](https://github.com/Alan8893/tourcrm/commit/4ec21e8c40d88ea52f24becb40d641fe0e60baa9)
-
-**ここで確認できる作用:** 名前付きreview → ownerによる実バグ認定 → 専用follow-up PR → code / regression-test修正 → 再review → 追加test hardening → merge。  
-**まだ確認できないもの:** release、production deployment、実利用者規模。
-
-**人間側の意味:** 「今はもう所属していない」ことだけで、過去に実際に参加した記録や訂正可能性が消えないようにする設計です。現在状態と履歴事実を分けることで、後から見た記録が静かに書き換わることを防ぎます。
+**公開記録から確認できること:** review → ownerによるbug確認 → follow-up PR → code / tests → 追加test修正 → merge。  
+**まだ確認できないこと:** release、production deployment、利用者規模。
 
 ---
 
-## 10. Clientverse｜「承認を一度使った」と「外部送信が一度だけ起きた」を混ぜない
+## 8. Clientverse｜一度の承認と、一度の外部送信を同一視しない
 
-**対象:** [`ebyron357/Clientverse-crm#27`](https://github.com/ebyron357/Clientverse-crm/pull/27)  
-**現在の状態:** merged
+**対象:** [ebyron357/Clientverse-crm#27](https://github.com/ebyron357/Clientverse-crm/pull/27)  
+**現在状態:** merged
 
-外部message送信では、approvalがsingle-useでも、providerへの送信結果が常に一意に観測できるとは限りません。
+providerがmessageを受理した後にresponseだけ失われた場合、単純に`failed`として再送可能に戻すと、同じmessageを二重送信する可能性があります。
 
-`Nakagawa-master` のreviewは、providerがmessageを受理した後にresponseだけ失われた場合まで通常の `failed` と扱うと、後から再承認・再送して二重送信を起こし得る点を指摘しました。
+`Nakagawa-master` のreviewは、approvalがsingle-useであることと、外部side effectが一度だけ起きたことを分ける必要を指摘しました。
 
 - [Nakagawa-master review](https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690360136)
+- [owner response](https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690677339)
+- [merged PR #27](https://github.com/ebyron357/Clientverse-crm/pull/27)
 
-指摘した境界は次です。
+repository ownerはこれをstate machine上のreal defectとして認め、`outcome_unknown`、reconciliation、dispatch idempotency key、response-loss regression testなどを追加しました。
 
-```text
-approval consumed once
-!=
-external communication happened once
-```
-
-repository ownerはこの指摘に対して **“you're right, and this was a real defect in the state machine as written”** と明示し、`c8c82f0` で修正しました。
-
-- [Owner response](https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690677339)
-
-実装では、少なくとも次が追加されています。
-
-- providerが明確に拒否した場合だけ `DeliveryRejected` → `failed` とする
-- timeout等で受理有無が不明な場合は `outcome_unknown` とし、通常の再送経路へ戻さない
-- `reconcile_unknown` でprovider側の事実を確認してから `sent` / `failed` へ確定する
-- provider side effect用のdispatch idempotency keyを渡す
-- providerが受理した後にresponse lossを起こすregression testで、二度目の外部送信が起きないことを確認する
-
-PR本文自身も、`@Nakagawa-master identified a real defect rather than a future caution` とsourceを明示しています。
-
-- Merge commit: [`e8d56789`](https://github.com/ebyron357/Clientverse-crm/commit/e8d56789299cdaeef08b90cb46c01f7128b2d1a0)
-
-**ここで確認できる作用:** 名前付きreview → external ownerによる実欠陥認定 → state-machine / provider contract / tests変更 → PR本文でOrigin明示 → merge。  
-**まだ確認できないもの:** real provider adapterでのproduction deployment、実利用者規模。
-
-**人間側の意味:** 「ボタンを一度承認したから、相手への送信も一度だけだったはず」と誤認せず、観測できなかった外部結果を別状態として扱うことで、顧客へ同じ連絡を二重送信する危険を減らします。
+**公開記録から確認できること:** review → ownerによるdefect確認 → state-machine / provider contract / tests変更 → merge。  
+**まだ確認できないこと:** real provider環境でのdeploymentや利用者規模。
 
 ---
 
-## 11. Cline｜委任の承認と、委任先へ渡る能力の理解を分ける
+## 9. Replay｜過去のconsent eventと、現在の利用可否を分ける
 
-**対象:** [`cline/cline#14225`](https://github.com/cline/cline/pull/14225)  
-**現在の状態:** base PR merged / この提案のfollow-up実装は未確認
+**対象:** [aferna6-cell/Replay#67](https://github.com/aferna6-cell/Replay/issues/67)  
+**現在状態:** issue上で設計方針の採用を確認 / repository code実装は未確認
 
-configured subagentでは、親側でdelegationを承認した後、子agentのtool callが追加approvalなしで進む設計があります。`tools` が省略されたconfigured agentには、runtimeで利用可能なchild tool群が渡ります。
+`Nakagawa-master` の公開コメントは、historical consentの記録と、現在そのデータを保持・処理・利用してよいかというeligibilityを別に扱う設計を提案しました。
 
-`Nakagawa-master` のreviewは、その一回のdelegation approvalで実際に許可されるchild capability setを、人がapproval時に理解できるようにするべきだと指摘しました。
+- [Nakagawa-master contribution](https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689647722)
+- [repository owner response](https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689719035)
+
+repository ownerは起点を明示したうえで、immutable consent event、current eligibility、withdrawal / deletion receipt、downstream gateなどを自分のprotocolとして再記述しています。
+
+**公開記録から確認できること:** comment → ownerによる明示的な受け取りと設計方針への反映。  
+**まだ確認できないこと:** schema / code / tests実装、merge、release、実データ運用。
+
+---
+
+## 10. Cline｜委任を承認するとき、子agentへ渡る能力範囲を見えるようにする提案
+
+**対象:** [cline/cline#14225](https://github.com/cline/cline/pull/14225)  
+**現在状態:** base PR merged / この提案のfollow-up実装は未確認
+
+configured subagentのdelegationでは、一回のapprovalで子agent側の複数tool callが進む設計があります。
+
+`Nakagawa-master` のreviewは、delegation approval時に、実際に子agentへ渡るcapability setを人が理解できるようにするUXを提案しました。
 
 - [Nakagawa-master review](https://github.com/cline/cline/pull/14225#pullrequestreview-5242232355)
+- [external author response](https://github.com/cline/cline/pull/14225#issuecomment-5723653394)
 
-外部authorは `@Nakagawa-master` を名指しし、**“that's a great idea, definitely a better UX than what we currently have”** と評価し、agent configをfirst-class featureにするfollow-upへ含める意向を明示しました。
+external authorは`@Nakagawa-master`を名指しし、現状より良いUXだと応答し、将来のagent config改善へ含める意向を示しました。
 
-- [External author response](https://github.com/cline/cline/pull/14225#issuecomment-5723653394)
+base PR #14225自体はmerge済みですが、そのmergeはこの提案の実装を意味しません。
 
-base PR #14225 自体はmergeされていますが、そのmergeはこの提案の実装を意味しません。最新確認時点で、この提案を実装する独立follow-up issue / PRは確認できていません。
-
-**ここで確認できる作用:** 名前付きreview → external authorによる明示認識 → 「現状より良いUX」という独立評価 → follow-upへ含める意思表明。  
-**まだ確認できないもの:** follow-up work item、提案内容のcode / test / UI実装、release、production use。
-
-**人間側の意味:** 第三者が中川マスター起点の判断を人物名付きで認識し、より良い人間向けUXとして次のproduct directionへ持ち込む価値があると評価したことを確認できます。
+**公開記録から確認できること:** 名前付きreviewと、authorによる肯定的な応答・follow-up意向。  
+**まだ確認できないこと:** 独立したfollow-up issue / PR、code / tests / UI実装、release。
 
 ---
 
-## ここから何を判断できるか
+## このページから言えること／言えないこと
 
-これらのcaseから確認できるのは、少なくとも次です。
+### 公開記録から確認できること
 
-1. `Nakagawa-master` 名義の公開判断が、自己完結した文章だけで終わっていない。
-2. 複数の独立した外部projectで、第三者がその判断を検討・再説明・実装へ変換した記録がある。
-3. 一部caseはcode / tests / documentationの変更を経てintegration branchへmergeされている。
-4. 別caseでは、第三者PRが `Nakagawa-master` のcompatibility contractを明示的に引用している。
-5. PostHog caseでは、AIが人へ示すevidenceの信頼境界そのものが、review後のserver / UI / test変更へ変換されている。
-6. Replay caseでは、外部repository ownerが中川マスター起点のboundaryを明示的に認識し、自分のprotocolとして採用・固定している。
-7. MemberJunction #4487では、中川マスターの指摘を別の第三者reviewerが自分のformal reviewへ引き継ぎ、#4524では同じreviewerが別problemでもNakagawa-master起点のpointを独立検証して再度carryしている。
-8. PostHog #102550では、人間がreviewerを信頼する根拠のprovenanceが混ざる問題が、review後にsource category別group化とregression testへ変換され `master` へmergeされた。さらに同じ外部maintainerが、新しいNakagawa promptなしに#102686の別surfaceへ同じ境界を再利用している（#102686自体は未merge）。
-9. Clientverse #27では、external ownerがNakagawa-masterの指摘を「実欠陥」と明示認定し、そのsource relationをPR本文に残したままstate machine / provider contract / testsを修正してmergeしている。
-10. Cline #14225では、external authorがNakagawa-masterを名指しし、その提案を「現状より良いUX」と独立評価してfollow-upへ含める意思を明示している。実装はまだ数えていない。
+複数の独立したGitHub repositoryで、`Nakagawa-master` 名義の具体的なコメントやreviewに対して、第三者が次のいずれかを行った公開記録があります。
 
-同時に、**まだ言えないこと**も明確です。
+- 内容を明示的に確認・再説明した
+- code / tests / documentation / UIを変更した
+- source relationをPR本文やcommitで明示した
+- merge、backport、release、deploymentまで進んだ
+- 別のreviewerまたは別のPRで同じ区別を再利用した
 
-- これだけで中川マスターの全理論が正しいとは証明されない。
-- これだけで各external projectが中川マスター理論全体をendorseしたとは言えない。
-- open / draft PRをmerge済みとして扱わない。
-- integration branch mergeをrelease / production deployment / broad user adoptionへ昇格しない。
-- 実際の利用者数や社会全体への影響規模は、証拠がない限り推測しない。
+どの事例がどこまで進んでいるかは、各節に個別に記載しています。
 
-## 外部作用を確認するときの階段
+### このページだけでは言えないこと
 
-このアーカイブでは、次を混同しません。
+- 中川マスターの理論体系全体が正しいこと
+- 各第三者projectが理論体系全体を支持・採用していること
+- ここにないprojectや業界全体への影響
+- 公開記録がない利用者数、売上、社会的効果
+- open / draft PRについて、将来mergeされること
+- merge済み変更について、release / deployment /利用が確認できない場合の実運用効果
 
-```text
-公開提案・review
-< 第三者の明示的応答 / 再説明
-< 第三者のcode / test / design change
-< merge / integration
-< release / deployment / verified use
-< 別の人・別の問題への独立した再利用
-```
+このページは、確認できる範囲を超えて推測しません。
 
-上へ進むほど、現実作用の証拠は強くなります。下の段階を、上の段階として数えません。
+## 自分で確認する方法
 
-## 中川構造OSとの関係
+事例を検証するときは、次の順にリンクを確認してください。
 
-より新しい限定事例として、[LlamaIndex #23038](https://github.com/run-llama/llama_index/pull/23038) は Nakagawa-master のissue commentをcompatibility contractとして明示引用し、source provenance保持を実装・テストしています。PRはdraft / unmergedのため、現時点では実装・テスト段階のみを証拠として扱います。
+1. `Nakagawa-master` の元comment / reviewを開く
+2. third-party author / owner / reviewerの応答を確認する
+3. PR diff、commit、test変更を確認する
+4. merge済みかどうかをPR stateで確認する
+5. releaseやdeploymentを主張する場合は、release pageやdeploy記録を別に確認する
+6. source relationが明示されていない変更は、このページだけを根拠に因果関係を推定しない
 
+反証可能性を残すため、counterexampleや「この事例では適用できない」という結果も重要です。
 
-ここにある外部事例は、中川構造OSとは別の理論体系ではありません。中川構造OSの構造原理を、現実の限定問題へ翻訳して検証・実装した applied / verification layer です。対応関係は [中川構造OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md) で確認でき、より広い原典文脈は https://master.ricette.jp へ戻ります。
-
-## 自分の文脈で検証・反証・再利用する
-
-これらの境界を、別の公開・非機密文脈で独立に検証、反証、実装、再利用した場合は、[Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md) と [公開registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) を使えます。成功例だけでなく、counterexample、non-fit、failed reproductionも対象です。証拠段階は混同しません。
-
-## 中川マスター本人を確認する
+## 関連する公開資料
 
 - [中川マスターとは｜この公開アーカイブで確認できること](ABOUT_NAKAGAWA_MASTER.md)
 - [Start Here](START_HERE.md)
 - [実際の問題に使う｜Practical Use & Collaboration Entry](PRACTICAL_USE.md)
+- [中川構造OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)
+- [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md)
+- [公開registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
 - [公開対話入口｜実際の問題から始める](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
-このページは、人物名を権威の代わりに使うためのものではありません。**何を指摘し、第三者が何を変え、どこまで確認できるかを、自分で追跡するための入口**です。
+このページは、名前や件数だけで評価を求めるためのページではありません。**元の公開コメント、第三者側の応答、実際の変更、現在のrepository状態を読者自身が確認するための案内です。**
