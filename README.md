@@ -42,6 +42,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - **問題から入りたい:** [Start Here](START_HERE.md) / [English](START_HERE.en.md) / [中文](START_HERE.zh.md)
 - **実際に使いたい / 実装・協業の可能性を探りたい:** [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - **すぐ使える実務チェックを見たい:** [Practical Boundary Checks](PRACTICAL_BOUNDARY_CHECKS.md)
+- **別の現場へそのまま持ち込める検証キット:** [Reuse Kits](REUSE_KITS.md)
   - 推薦・rankingの根拠provenanceを別systemで検証する: [Reviewer-Provenance Reuse Kit](POSTHOG_PROVENANCE_REUSE_KIT.md)
   - 過去の承認と現在の権限を検証する: [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
   - 現在状態と履歴事実を分けて検証する: [Historical-Fact Reuse Kit](HISTORICAL_FACT_REUSE_KIT.md)
