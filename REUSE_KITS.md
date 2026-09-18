@@ -55,6 +55,18 @@ Core question:
 
 Useful in CRM, payments, messaging, integrations, automation, and job dispatch.
 
+## 5. Measurement attribution under a drifting surface
+
+[Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md)
+
+Use when the same query, prompt, dashboard, or measurement panel is repeated over time while the provider/model/retrieval environment may also change.
+
+Core question:
+
+> Did the subject move, or did the measurement surface move?
+
+Useful in AI/search visibility, recommendation monitoring, model evaluation, marketing measurement, and longitudinal reporting.
+
 ## Preserve the source relation
 
 If a kit materially informs a real decision or implementation, preserve a lightweight source line such as `Source distinction: Nakagawa Master — <public source URL>`. See [Origin Attribution for Reuse](ORIGIN_ATTRIBUTION_FOR_REUSE.md). If you independently rediscovered the same distinction and found the source later, state that instead of claiming source causality.

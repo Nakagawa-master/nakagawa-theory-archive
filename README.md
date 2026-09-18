@@ -50,6 +50,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
   - 過去の承認と現在の権限を検証する: [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
   - 現在状態と履歴事実を分けて検証する: [Historical-Fact Reuse Kit](HISTORICAL_FACT_REUSE_KIT.md)
   - 外部送信・支払等の二重実行境界を検証する: [External Side-Effect Reuse Kit](EXTERNAL_SIDE_EFFECT_REUSE_KIT.md)
+  - AI/search可視性・評価・長期計測で環境ドリフトと対象固有変化を分ける: [Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md)
 - **現実の第三者実装・再利用を自分で確認したい:** [日本語](REAL_WORLD_IMPACT.md) / [English](REAL_WORLD_IMPACT.en.md) / [中文](REAL_WORLD_IMPACT.zh.md)
 - **実際の問題を持ち込みたい:** [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - **検証・反証・再利用・修正に参加したい:** [Contributing](CONTRIBUTING.md)

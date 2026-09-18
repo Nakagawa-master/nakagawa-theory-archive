@@ -83,6 +83,8 @@ control cohort remains broadly stable
 
 This matters for AI/search visibility, recommendation monitoring, model evaluations, and any longitudinal report where the measurement environment can change underneath a fixed query set. A stable prompt/query library is useful, but it does not by itself prove that an observed delta belongs to the subject rather than the measurement surface.
 
+For a minimal independent test, use the [Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md).
+
 ## 4. Recommendation / ranking provenance
 
 Before grouping recommendations that display the same explanation:
