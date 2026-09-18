@@ -220,7 +220,7 @@ current authorization to retain / process / use the captured material
 ## 8. PostHog｜同じ説明でも「誰がどの根拠で推薦されたか」を混ぜない
 
 **対象:** [`PostHog/posthog#102550`](https://github.com/PostHog/posthog/pull/102550)  
-**現在の状態:** #102550 merged into `master` / downstream reuse #102686 open / unmerged
+**現在の状態:** #102550 merged into `master` and deployed to dev / prod-us / prod-eu / downstream reuse #102686 open / unmerged
 
 このPRは、PostHogのinboxで「誰をreviewerとして推薦するか」「なぜその人が推薦されたか」を人が判断する表示を変更しています。
 
@@ -244,8 +244,9 @@ review後、第三者maintainerによるcommit:
 
 この変更では、group keyに説明文だけでなくsource categoryも含め、同じ説明でも `Code history` とscout由来の推薦を別groupとして扱います。回帰テストも「同じ説明は、同じsource category内でだけgroup化する」条件へ変更され、mixed provenanceのStorybook caseも追加されています。
 
-**ここで確認できる作用:** 公開review → 外部maintainerのcode / test / documentation / UI-story変更 → `master` へのmerge。  
+**ここで確認できる作用:** 公開review → 外部maintainerのcode / test / documentation / UI-story変更 → `master` へのmerge → PostHogのdeploy botによるdev / prod-us / prod-euへのdeployment確認。  
 - Merge commit: [`6e2c760d`](https://github.com/PostHog/posthog/commit/6e2c760dadbaba764c83e93900c3510e6a703c03)
+- [Deploy status comment](https://github.com/PostHog/posthog/pull/102550#issuecomment-5722917557) — dev: 2026-09-18 00:04 UTC / prod-eu: 00:20 UTC / prod-us: 00:22 UTC
 
 その後、同じ外部maintainer `mikaylathompson` が、Nakagawa-masterからの新しいpromptなしに別surface [`PostHog/posthog#102686`](https://github.com/PostHog/posthog/pull/102686) へ同じprovenance境界を再利用しました。PR本文は、**同じreasonでも同じsource category内でだけgroup化する**と明記し、Core regressionもscout由来とcode-history由来を分離します。
 
@@ -258,7 +259,7 @@ Nakagawa-master review
 
 これは別人へのsecond-person propagationではありません。しかし、一回限りの修正ではなく、外部の同じ人が境界を内部化し、別surfaceへ自律的に再利用した証拠です。#102686は現時点でopen / unmergedのため、merge / releaseとしては数えません。
 
-**まだ確認できないもの:** #102686のmerge、release、production deployment、実利用者規模。
+**まだ確認できないもの:** #102686のmerge / release / deployment、#102550の実利用者規模や利用結果。
 
 **人間側の意味:** AIやscoutが「この人にreviewしてもらうべき」と推薦したとき、より強い根拠ラベルがgroup全員を裏付けているように見える誤認を減らし、**各人を信頼する理由の出所を保ったまま判断できる**方向へ変わります。
 
