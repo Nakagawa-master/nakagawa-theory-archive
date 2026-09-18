@@ -386,6 +386,10 @@ public proposal / review
 
 A lower stage is not counted as a higher one.
 
+## Test, challenge, or reuse a distinction yourself
+
+If you independently test, falsify, implement, or reuse one of these boundaries in a different public, non-confidential context, use the [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md) and [public registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402). Negative results and counterexamples are welcome; evidence stages must remain separated.
+
 ## Check the person and sources directly
 
 - [Who Is Nakagawa Master?](ABOUT_NAKAGAWA_MASTER.en.md)
