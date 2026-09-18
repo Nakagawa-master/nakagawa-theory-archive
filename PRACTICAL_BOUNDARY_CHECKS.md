@@ -116,6 +116,23 @@ person valid during past event
 → current membership remains inactive
 ```
 
+## Public implementation example: reviewer recommendation provenance
+
+A concrete external case now reaches beyond review and merge.
+
+In [PostHog #102550](https://github.com/PostHog/posthog/pull/102550), a review identified that grouping reviewer suggestions by identical explanation text could pool different evidence-source labels and obscure which source justified each person. The external maintainer changed the grouping rule and regression coverage so identical reasons group only within the same source category.
+
+Public evidence:
+
+- [Nakagawa-master review](https://github.com/PostHog/posthog/pull/102550#pullrequestreview-5242012853)
+- [Third-party implementation commit](https://github.com/PostHog/posthog/commit/764c347e488cb9f8bb155a2d95c5f40a3b92a08c)
+- [Merge commit](https://github.com/PostHog/posthog/commit/6e2c760dadbaba764c83e93900c3510e6a703c03)
+- [Deployment status](https://github.com/PostHog/posthog/pull/102550#issuecomment-5722917557), showing deployment to dev, prod-eu, and prod-us
+
+The same external maintainer later reused the same distinction on [PostHog #102686](https://github.com/PostHog/posthog/pull/102686) without a fresh Nakagawa prompt. That downstream PR is still open/unmerged, so do not treat it as a second deployment.
+
+This case supports only the bounded statement that a specific provenance distinction changed third-party implementation, merged, deployed, and was later reused on another surface. It does not establish user-scale outcome or whole-system endorsement.
+
 ## What to do with a result
 
 If this checklist changes a public, non-confidential decision, procedure, test, document, or implementation, you can report the bounded result through:
