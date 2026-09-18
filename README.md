@@ -43,6 +43,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - **実際に使いたい / 実装・協業の可能性を探りたい:** [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - **すぐ使える実務チェックを見たい:** [Practical Boundary Checks](PRACTICAL_BOUNDARY_CHECKS.md)
 - **中川構造OSと外部実装・再利用の関係を確認する:** [Structural OS → External Effects](STRUCTURAL_OS_TO_EXTERNAL_EFFECTS.md)
+  - 外部事例がどの原理へ戻るか: [Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)
 - **別の現場へそのまま持ち込める検証キット:** [Reuse Kits](REUSE_KITS.md)
   - 推薦・rankingの根拠provenanceを別systemで検証する: [Reviewer-Provenance Reuse Kit](POSTHOG_PROVENANCE_REUSE_KIT.md)
   - 過去の承認と現在の権限を検証する: [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
