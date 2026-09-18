@@ -94,19 +94,39 @@ repository owner明确把 `content appears sanitized != authorization remains va
 
 ## 3. MemberJunction｜把“同一个ID”与“有权覆盖”分开
 
-**对象：** [`MemberJunction/MJ#4519`](https://github.com/MemberJunction/MJ/pull/4519)  
-**当前状态：** merged into `next`
+**对象：** [`MemberJunction/MJ#4519`](https://github.com/MemberJunction/MJ/pull/4519) → [PR #4496](https://github.com/MemberJunction/MJ/pull/4496) → [LTS backport #4546](https://github.com/MemberJunction/MJ/pull/4546) → [v6.1.2](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)  
+**当前状态：** merged → LTS backport merged → released → 外部production-shaped upgrade中确认migration未出现原collision
 
 发现相同primary key，并不能自动证明当前值属于release、可以安全覆盖。
 
-`Nakagawa-master` review把record identity与ownership / provenance contract分开。独立reviewer `SDesai-BC`随后针对真实migration集合复现并检验该问题，PR author进一步修改了code、tests和documentation。PR正文现在明确写出了release-owned row的convergence contract。
+`Nakagawa-master` review把record identity与ownership / provenance contract分开。独立reviewer `SDesai-BC`随后针对真实migration集合复现并检验该问题，PR author进一步修改了code、tests和documentation。PR正文明确写出了release-owned row的convergence contract。
 
 - [Nakagawa-master contribution](https://github.com/MemberJunction/MJ/pull/4519#issuecomment-5689128135)
 - [PR #4519](https://github.com/MemberJunction/MJ/pull/4519)
 - Merge commit: [`469b25f1bcf51d844396b8a6b8a9f1390b5e1488`](https://github.com/MemberJunction/MJ/commit/469b25f1bcf51d844396b8a6b8a9f1390b5e1488)
 - [详细公开case note](discovery-notes/implementation-case-matching-id-is-not-ownership-provenance.md)
 
-**对人的意义：** 系统不应把“找到了同一个record”偷偷升级成“因此我有权修改它”。
+这个边界没有停留在review层。#4519 merge后，PR #4496通过guarded emitter生成了实际metadata migration，并记录了在所有相关row已经存在的database上重放时没有primary-key collision。该migration随后通过#4546 backport到`lts/6.1`，并进入官方`v6.1.2` release。
+
+之后，一名外部consumer在MemberJunction certification issue中公开了从MJ 5.51.x production-shaped database升级到6.1.2的结果：
+
+- [External 6.1.2 certification report](https://github.com/MemberJunction/MJ/issues/4475#issuecomment-5715684968)
+
+报告记录：
+
+```text
+pre-existing mj sync push rows
+→ 65 migrations applied
+→ 0 failed
+→ no #4503 collisions
+```
+
+同一份报告也明确列出了其他6.1 regression作为cert blocker，因此这**并不表示v6.1.2整体无问题或已完整通过认证**。这里能够确认的范围更窄：与ownership / convergence边界相连的guarded migration chain，在production-shaped upgrade条件下没有复现原来的collision failure。
+
+**这里已经可验证的作用：** 公开判断 → 独立验证 → code / tests / documentation → merge → downstream generated migration → LTS backport → release → 外部production-shaped upgrade中原failure未发生。  
+**这里尚未确认的作用：** fleet-wide adoption、用户规模、非技术领域复用、或对中川マスター整个理论体系的支持。
+
+**对人的意义：** “同一个record”与“有权覆盖”之间的区别，不再只是review中的说明，而是已经进入release并到达真实升级形态的行为。
 
 ---
 
