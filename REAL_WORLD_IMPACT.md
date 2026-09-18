@@ -402,6 +402,10 @@ base PR #14225 自体はmergeされていますが、そのmergeはこの提案�
 
 上へ進むほど、現実作用の証拠は強くなります。下の段階を、上の段階として数えません。
 
+## 中川構造OSとの関係
+
+ここにある外部事例は、中川構造OSとは別の理論体系ではありません。中川構造OSの構造原理を、現実の限定問題へ翻訳して検証・実装した applied / verification layer です。対応関係は [中川構造OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md) で確認でき、より広い原典文脈は https://master.ricette.jp へ戻ります。
+
 ## 自分の文脈で検証・反証・再利用する
 
 これらの境界を、別の公開・非機密文脈で独立に検証、反証、実装、再利用した場合は、[Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md) と [公開registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) を使えます。成功例だけでなく、counterexample、non-fit、failed reproductionも対象です。証拠段階は混同しません。
