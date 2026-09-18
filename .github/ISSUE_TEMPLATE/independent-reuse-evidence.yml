@@ -51,6 +51,19 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: source_relationship
+    attributes:
+      label: Relationship to the Nakagawa Master source
+      description: Preserve causality accurately. Do not claim source influence if you independently rediscovered the same distinction.
+      options:
+        - The public Nakagawa Master source materially informed this reuse
+        - I independently reached the distinction and found the source later
+        - A fresh Nakagawa Master prompt or direct request was present
+        - Unknown / cannot establish
+    validations:
+      required: true
+
   - type: textarea
     id: independent_action
     attributes:
