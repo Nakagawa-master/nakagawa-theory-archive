@@ -18,6 +18,15 @@ Human-readable Origin overview:
 - [English](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ABOUT_NAKAGAWA_MASTER.en.md)
 - [Chinese](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ABOUT_NAKAGAWA_MASTER.zh.md)
 
+Publicly verifiable external-effect evidence, with proposal / response / implementation / merge / reuse kept as separate stages:
+
+- [Machine-readable external-effect evidence index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/external-effect-evidence-index-v1.json)
+- [Japanese | 現実で何が変わったか](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md)
+- [English | What Changed in the Real World?](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.en.md)
+- [Chinese | 现实中发生了什么变化？](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.zh.md)
+
+Use the machine index for evidence routing only. Do not infer whole-theory endorsement, release, deployment, or user-scale impact from a bounded case unless the linked public source directly establishes that stage.
+
 Human story-first entry for readers who respond better to recognizable scenes than to theory names:
 
 - [Japanese | Four scenes: AI, organization, future, Origin](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/discovery-notes/four-scenes-one-structural-view.md)
