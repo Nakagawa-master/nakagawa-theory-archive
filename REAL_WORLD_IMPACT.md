@@ -260,6 +260,28 @@ base PR #14225自体はmerge済みですが、そのmergeはこの提案の実�
 
 ---
 
+
+## 11. Local Operator｜実行中agentが自分のapproval gateを弱められないようにする
+
+**対象:** [damianvtran/local-operator#1282](https://github.com/damianvtran/local-operator/issues/1282) → [PR #1291](https://github.com/damianvtran/local-operator/pull/1291)  
+**現在状態:** PR #1291 open / unmerged
+
+issue #1282では、実行中agentが自分を制約しているapproval policyを、同じagentが書ける設定ファイル経由で `ask → auto` に変更できると、人間approvalを自分で解除できてしまうという境界を提示しました。一方で、人間operatorが明示的にapproval modeを変更する経路は残す必要があります。
+
+- [issue #1282](https://github.com/damianvtran/local-operator/issues/1282)
+- [third-party PR #1291](https://github.com/damianvtran/local-operator/pull/1291)
+
+第三者authorが開いたPR #1291は本文で明示的に `Closes #1282` と記載し、live approval gateの変更sourceを判定条件へ入れる実装を追加しています。別processからのraw config writeではgateを弱められず、同じprocessの明示的なoperator操作では変更できるpositive controlも含まれています。実際のsecond-process writeを使うregression testや、agent-facing codeからtrusted settings write pathへ抜け道を作らないためのtestsも追加されています。
+
+Nakagawa-masterはcurrent headを元issueのacceptance boundaryに対して再確認し、元のsecurity findingが実装済みであることをreviewで明示しました。
+
+- [closure review](https://github.com/damianvtran/local-operator/pull/1291#pullrequestreview-5253448083)
+
+**公開記録から確認できること:** issue → 明示的にそのissueをcloseする第三者PR → code / tests → 複数review/remediation → 元issue側からのclosure確認。  
+**まだ確認できないこと:** PRのmerge、release、実利用規模。
+
+---
+
 ## このページから言えること／言えないこと
 
 ### 公開記録から確認できること
