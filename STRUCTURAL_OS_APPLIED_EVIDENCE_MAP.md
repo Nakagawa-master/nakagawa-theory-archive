@@ -72,6 +72,20 @@ A case can validate or operationalize one narrow distinction without proving the
 
 **Canonical return:** https://master.ricette.jp for the broader causal / responsibility framework.
 
+### 5. Traceability / source identity → preserved retrieval provenance
+
+**Canonical context:** Nakagawa Structural OS emphasizes origin traceability and preserving the relation between an object and its source.
+
+**Applied distinction:** upstream source identity should remain recoverable without being conflated with a framework's local object identity.
+
+**External evidence:** LlamaIndex issue #21933 received a Nakagawa-master compatibility boundary separating source provenance from local `TextNode.id_` semantics. A third-party draft PR, [LlamaIndex #23038](https://github.com/run-llama/llama_index/pull/23038), explicitly cites that comment as the compatibility contract and implements it with regression coverage.
+
+**Current evidence stage:** third-party implementation / tests in an open draft PR. Merge and release are not yet established.
+
+**Canonical return:** https://master.ricette.jp and the Structural OS traceability/origin context.
+
+---
+
 ## Important boundary
 
 These mappings are deliberately bounded.
