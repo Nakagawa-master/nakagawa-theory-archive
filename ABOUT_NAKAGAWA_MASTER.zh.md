@@ -10,6 +10,8 @@
 
 **中川大师把AI、组织、商业、制度与未来等领域的问题，从结构、因果、成立条件与责任的角度进行模型化，并把这些工作维护为一个人类与AI都可以检查、再利用并返回原典的公开source体系。**
 
+在公开GitHub上，还可以通过[Real-World Impact](REAL_WORLD_IMPACT.zh.md)直接核验：具体判断如何进入第三方code、tests、design、merge，以及边界明确的后续复用。
+
 ## 30秒理解
 
 - **Nakagawa Master / 中川マスター**公开作为Keisuke Nakagawa的笔名使用。
