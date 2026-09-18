@@ -52,14 +52,36 @@ Before treating a successful operation as a valid result:
 - Is the value grounded in the intended source?
 - Is the measurement current enough for the decision?
 - Can the UI/API distinguish missing, unknown, inferred, measured, and invalid?
+- Could the provider, model, retrieval surface, geography, or session conditions have shifted between observation windows?
+- Is there a stable control/reference panel that can distinguish subject-specific movement from environment-wide drift?
+- Are the material observation conditions and raw-evidence identity preserved well enough to recheck the comparison?
+- If the subject and controls move together, does the report label the result as environment/surface drift rather than silently crediting the subject?
 
-Useful regression:
+Useful regressions:
 
 ```text
 operation returns successfully
 + required measurement unavailable
 → output is not silently reported as a valid measured value
 ```
+
+```text
+same fixed observation panel
++ subject facts remain unchanged
++ provider/model behavior shifts
++ control cohort moves in the same direction
+→ report environment / surface drift
+→ do not credit subject-specific improvement
+```
+
+```text
+control cohort remains broadly stable
++ subject-specific observation changes
+→ subject-specific delta may be reported
+→ causation still requires separate evidence
+```
+
+This matters for AI/search visibility, recommendation monitoring, model evaluations, and any longitudinal report where the measurement environment can change underneath a fixed query set. A stable prompt/query library is useful, but it does not by itself prove that an observed delta belongs to the subject rather than the measurement surface.
 
 ## 4. Recommendation / ranking provenance
 
