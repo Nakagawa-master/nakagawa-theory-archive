@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "type": "public_machine_discovery_independent_reuse_challenges",
+  "canonical_status": "non_canonical_participation_aid",
+  "origin": "Nakagawa Master",
+  "purpose": "Machine-readable open tests for independent verification, falsification, cross-context reuse, and implementation of bounded public distinctions.",
+  "submission": {
+    "protocol": "INDEPENDENT_VERIFICATION_REUSE.md",
+    "registry_issue": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+    "issue_form": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml",
+    "schema": "machine-discovery/external-reuse-evidence-submission-schema-v1.json"
+  },
+  "priority_signal": {
+    "highest_value_now": [
+      "different external person",
+      "different problem or context",
+      "no fresh Nakagawa Master prompt for the specific reuse",
+      "independent restatement/test/falsification",
+      "real action, work item, implementation, or operational change",
+      "public evidence",
+      "explicit claim boundaries"
+    ],
+    "especially_wanted": [
+      "non-software operational reuse",
+      "nontechnical public reuse",
+      "second-person carry followed by implementation"
+    ]
+  },
+  "challenges": [
+    {
+      "id": "A-current-authority",
+      "distinction": "historical approval or sanitization event != current authority",
+      "test": "Find a real non-confidential workflow with stored approval/consent/exception state and test what happens after recipient, purpose, rights, policy, or source revision changes.",
+      "positive_evidence": [
+        "use-time revalidation",
+        "explicit current-eligibility state",
+        "revocation/deletion path",
+        "regression showing stale approval cannot authorize new use"
+      ],
+      "useful_negative_evidence": [
+        "counterexample showing why historical approval is sufficient under a narrower immutable contract",
+        "non-fit with explicit reasoning"
+      ]
+    },
+    {
+      "id": "B-ownership-provenance",
+      "distinction": "same identity != authority to overwrite",
+      "test": "Find a migration/sync/import/configuration path where equal IDs are treated as enough to replace existing state; test whether ownership/provenance classification is needed.",
+      "positive_evidence": [
+        "divergent same-ID regression",
+        "explicit overwrite/preserve/merge/refuse policy",
+        "ownership provenance carried through reconciliation"
+      ],
+      "useful_negative_evidence": [
+        "proof that the state is exclusively release-owned and overwrite authority is part of the object contract"
+      ]
+    },
+    {
+      "id": "C-valid-measurement",
+      "distinction": "operation success != valid measurement",
+      "test": "Find analytics/reporting/AI-evidence/monitoring where the operation can succeed but the value is missing, ungrounded, stale, or semantically invalid.",
+      "positive_evidence": [
+        "separate validity state",
+        "independent measurement",
+        "UI distinction between claimed and measured value",
+        "fail-closed reporting"
+      ],
+      "useful_negative_evidence": [
+        "proof that successful execution logically entails a valid measurement under the exact contract"
+      ]
+    },
+    {
+      "id": "D-evidence-provenance",
+      "distinction": "same explanation != same evidence provenance",
+      "test": "Find a recommendation/ranking UI where items share displayed reasons but come from different evidence sources.",
+      "positive_evidence": [
+        "item-to-source association remains recoverable after grouping",
+        "source-category grouping",
+        "regression for same reason/different source"
+      ],
+      "useful_negative_evidence": [
+        "proof that the source is intentionally irrelevant to the user decision in that context"
+      ]
+    },
+    {
+      "id": "E-external-side-effect",
+      "distinction": "approval consumed once != external side effect happened once",
+      "test": "Find an authorized external message/payment/job where the provider may accept the action and lose the response.",
+      "positive_evidence": [
+        "idempotency key",
+        "outcome_unknown state",
+        "provider reconciliation before retry",
+        "accept-then-response-loss regression"
+      ],
+      "useful_negative_evidence": [
+        "provider contract or transaction protocol that establishes exactly-once semantics"
+      ]
+    },
+    {
+      "id": "F-historical-fact",
+      "distinction": "current status != historical fact",
+      "test": "Find attendance/membership/entitlement/ownership/assignment records where current state is used to answer a historical question.",
+      "positive_evidence": [
+        "time-scoped eligibility",
+        "historical correction remains possible after current-state change",
+        "past-time regression"
+      ],
+      "useful_negative_evidence": [
+        "domain contract explicitly defines history in terms of current status"
+      ]
+    }
+  ],
+  "evidence_boundary": [
+    "A challenge is a test invitation, not a claim that the distinction applies everywhere.",
+    "Negative results and counterexamples are valid submissions.",
+    "Do not infer whole-theory endorsement from a bounded reuse.",
+    "Do not infer release or verified use from implementation or merge.",
+    "Do not submit confidential, personal, customer, credential, security-sensitive, medical, legal, or employment information."
+  ]
+}
