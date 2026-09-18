@@ -41,6 +41,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - **場面から入りたい:** [日本語](discovery-notes/four-scenes-one-structural-view.md) / [English](discovery-notes/four-scenes-one-structural-view.en.md) / [中文](discovery-notes/four-scenes-one-structural-view.zh.md)
 - **問題から入りたい:** [Start Here](START_HERE.md) / [English](START_HERE.en.md) / [中文](START_HERE.zh.md)
 - **実際に使いたい / 実装・協業の可能性を探りたい:** [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
+- **すぐ使える実務チェックを見たい:** [Practical Boundary Checks](PRACTICAL_BOUNDARY_CHECKS.md)
 - **現実の第三者実装・再利用を自分で確認したい:** [日本語](REAL_WORLD_IMPACT.md) / [English](REAL_WORLD_IMPACT.en.md) / [中文](REAL_WORLD_IMPACT.zh.md)
 - **実際の問題を持ち込みたい:** [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - **検証・反証・再利用・修正に参加したい:** [Contributing](CONTRIBUTING.md)
