@@ -10,6 +10,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 |---|---|
 | [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD301 path and navigation index. |
 | [`problem-to-theory-origin-index-v1.json`](problem-to-theory-origin-index-v1.json) | English / Japanese / Chinese plain-language problem → concrete public starting point. |
+| [`external-effect-evidence-index-v1.json`](external-effect-evidence-index-v1.json) | Public judgment → independent response → implementation → merge → reuse evidence routing; keeps claim stages separate. |
 | [`long-horizon-reference-reasons-v1.json`](long-horizon-reference-reasons-v1.json) | Recurring long-horizon question → multiple relevant public OD anchors. |
 | [`recurring-structure-comparison-v1.json`](recurring-structure-comparison-v1.json) | Non-canonical cross-source comparison map for recurring reading motifs. |
 | [`ai-origin-responsibility-reference-card.json`](ai-origin-responsibility-reference-card.json) | Question origin, causal provenance, and responsibility in AI-mediated work. |
@@ -25,6 +26,18 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 The Japanese and Chinese wording in discovery and comparison files is public metadata, not canonical translation text.
 
 ## Retrieval paths
+
+For publicly verifiable external-effect evidence:
+
+```text
+question about whether a Nakagawa-master judgment changed anything outside this repository
+→ external-effect-evidence-index-v1.json
+→ inspect the exact origin action and independent third-party source
+→ keep response / implementation / merge / release / reuse as separate stages
+→ REAL_WORLD_IMPACT language page when human-readable context is useful
+```
+
+The external-effect index is not a theory-validity score or an endorsement index. A bounded implementation case does not establish whole-theory adoption, and a merge does not establish release or production use.
 
 For a plain-language problem:
 
