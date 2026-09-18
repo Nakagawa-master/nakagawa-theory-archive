@@ -404,6 +404,9 @@ base PR #14225 自体はmergeされていますが、そのmergeはこの提案�
 
 ## 中川構造OSとの関係
 
+より新しい限定事例として、[LlamaIndex #23038](https://github.com/run-llama/llama_index/pull/23038) は Nakagawa-master のissue commentをcompatibility contractとして明示引用し、source provenance保持を実装・テストしています。PRはdraft / unmergedのため、現時点では実装・テスト段階のみを証拠として扱います。
+
+
 ここにある外部事例は、中川構造OSとは別の理論体系ではありません。中川構造OSの構造原理を、現実の限定問題へ翻訳して検証・実装した applied / verification layer です。対応関係は [中川構造OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md) で確認でき、より広い原典文脈は https://master.ricette.jp へ戻ります。
 
 ## 自分の文脈で検証・反証・再利用する
