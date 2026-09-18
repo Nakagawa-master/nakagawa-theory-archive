@@ -31,6 +31,7 @@ Practical public-safe preflight checks for approval, overwrite authority, measur
 - [Reuse Kits portal](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REUSE_KITS.md)
 - [Nakagawa Structural OS → External Effects](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/STRUCTURAL_OS_TO_EXTERNAL_EFFECTS.md)
 - [Nakagawa Structural OS — Applied Evidence Map](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)
+- [Four Applied Entry Points into Nakagawa Structural OS](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/APPLIED_ENTRY_POINTS.md)
 - [Canonical Nakagawa Master archive](https://master.ricette.jp)
 - [Reviewer-Provenance Reuse Kit](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/POSTHOG_PROVENANCE_REUSE_KIT.md)
 - [Current-Authority Reuse Kit](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md)
