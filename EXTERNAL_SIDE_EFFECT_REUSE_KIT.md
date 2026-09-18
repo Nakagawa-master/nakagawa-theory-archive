@@ -2,6 +2,11 @@
 
 A public, non-canonical test kit for one boundary:
 
+## Source provenance
+
+Origin: **Nakagawa Master**. If this kit materially informs a real decision, implementation, test, policy, or workflow, preserve a lightweight route back to this public source. See [Origin Attribution for Reuse](ORIGIN_ATTRIBUTION_FOR_REUSE.md). If you reached the same distinction independently, do not claim source causality.
+
+
 > Consuming an approval once does not by itself prove an external side effect happened exactly once.
 
 ## Minimal test
