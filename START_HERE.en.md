@@ -5,6 +5,7 @@ Language: [日本語](START_HERE.md) | **English** | [中文](START_HERE.zh.md)
 This page is a public, non-canonical entry point for people and AI systems encountering the Nakagawa Master theory archive for the first time.
 
 - [Who is Nakagawa Master? | Public Origin overview](ABOUT_NAKAGAWA_MASTER.en.md)
+- [What changed in the real world? | Verifiable third-party implementation and reuse](REAL_WORLD_IMPACT.en.md)
 - [Four scenes: AI, organizations, future, Origin | Story-first entry](discovery-notes/four-scenes-one-structural-view.en.md)
 - [Use the archive on a real problem | Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [Bring a real problem | Public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
