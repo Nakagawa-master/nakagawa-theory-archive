@@ -196,12 +196,18 @@ At the next stage, a different independent reviewer, `rkihm-BC`, included the sa
 
 **Human meaning:** the judgment no longer depends on Nakagawa Master repeating it personally. Another person can remember, reference, and carry it into the next decision.
 
+This second-hop pattern is not limited to one PR. In a separate PR, [`MemberJunction/MJ#4524`](https://github.com/MemberJunction/MJ/pull/4524), the same independent reviewer, `rkihm-BC`, executed and falsified variants of the checker and explicitly wrote that **“@Nakagawa-master's point about D is confirmed.”** They also called Nakagawa-master's fail-closed proposal **“the right fix”** and carried it into their own formal review.
+
+- [Independent confirmation / carry on MJ #4524](https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5242805347)
+
+This is not evidence of broad person-to-person diffusion. It is narrower repeatability evidence: **the same independent reviewer re-encountered a different PR and problem, independently verified a Nakagawa-origin point, and carried it forward with their own evidence.** Author implementation after that #4524 review is not yet verified.
+
 ---
 
 ## 8. PostHog｜Do not collapse who was recommended with why they were recommended
 
 **Surface:** [`PostHog/posthog#102550`](https://github.com/PostHog/posthog/pull/102550)  
-**Current status:** open / unmerged
+**Current status:** #102550 merged into `master` / downstream reuse #102686 open / unmerged
 
 This PR changes the human-facing PostHog inbox surface that explains who is suggested as a reviewer and why.
 
@@ -226,7 +232,18 @@ The grouping key now includes source category as well as explanation text, so a 
 **Verified effect here:** public review → external maintainer code / test / documentation / UI-story changes → merge into `master`.  
 - Merge commit: [`6e2c760d`](https://github.com/PostHog/posthog/commit/6e2c760dadbaba764c83e93900c3510e6a703c03)
 
-**Not established here:** release, production deployment, or user-scale impact.
+The same external maintainer, `mikaylathompson`, later reused the same provenance boundary on a different surface in [`PostHog/posthog#102686`](https://github.com/PostHog/posthog/pull/102686) **without a fresh Nakagawa prompt**. Its PR body explicitly says repeated reasons group only within the same source category, and its Core regression keeps scout-backed and code-history-backed suggestions separate.
+
+```text
+Nakagawa-master review
+→ external maintainer implements and merges #102550
+→ no fresh Nakagawa prompt
+→ same maintainer reuses the boundary in a different Desktop/Core surface
+```
+
+This is not second-person propagation to a different human. It is evidence that the external maintainer internalized the distinction and reused it autonomously beyond the original fix. #102686 is currently open / unmerged, so it is not counted as a merge or release.
+
+**Not established here:** merge of #102686, release, production deployment, or user-scale impact.
 
 **Human meaning:** when an AI or scout says “this person should review this,” a stronger evidence label is less likely to appear as if it supports everyone in a mixed group. The person making the decision can retain the provenance of **why each individual reviewer was suggested**.
 
@@ -341,8 +358,8 @@ The public record establishes at least the following:
 4. One independent third-party PR explicitly cites a `Nakagawa-master` compatibility contract.
 5. In the PostHog case, a boundary about evidence shown by AI to humans was converted after review into server, UI, and regression-test changes.
 6. In Replay, an external repository owner explicitly recognized a Nakagawa-master boundary and adopted it as a frozen protocol.
-7. In MemberJunction #4487, a different independent reviewer carried a Nakagawa-master finding into their own formal review and re-explained it to the next decision-maker.
-8. In PostHog #102550, a provenance ambiguity in a human reviewer-selection surface was converted after review into source-category grouping plus regression coverage, and the change was merged into `master`.
+7. In MemberJunction #4487, a different independent reviewer carried a Nakagawa-master finding into their own formal review; in #4524, that same reviewer independently verified and carried another Nakagawa-origin point in a different problem.
+8. In PostHog #102550, a provenance ambiguity in a human reviewer-selection surface was converted after review into source-category grouping plus regression coverage and merged into `master`; the same external maintainer later reused that boundary on #102686 without a fresh Nakagawa prompt (#102686 remains unmerged).
 9. In Clientverse #27, the external owner explicitly called the Nakagawa-master finding a real defect, preserved that source relationship in the PR body, changed the state machine / provider contract / tests, and merged the result.
 10. In Cline #14225, the external author explicitly named Nakagawa-master, independently described the proposal as better UX, and stated an intent to carry it into follow-up work; implementation is not counted yet.
 
