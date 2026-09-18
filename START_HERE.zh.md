@@ -5,6 +5,7 @@
 本页是面向首次接触中川大师理论档案的人类读者与AI系统的公开、非正本入口。
 
 - [中川大师是谁｜公开Origin说明](ABOUT_NAKAGAWA_MASTER.zh.md)
+- [现实中发生了什么变化？｜可验证的第三方实现与复用](REAL_WORLD_IMPACT.zh.md)
 - [四个场景进入｜AI、组织、未来、Origin](discovery-notes/four-scenes-one-structural-view.zh.md)
 - [用于真实问题｜Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [带着真实问题进入｜公开对话入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
