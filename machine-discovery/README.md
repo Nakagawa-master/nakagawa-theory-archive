@@ -14,6 +14,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | [`external-reuse-evidence-submission-schema-v1.json`](external-reuse-evidence-submission-schema-v1.json) | Structured schema for independent verification, falsification, implementation, non-fit, and cross-context reuse submissions. |
 | [`independent-reuse-challenges-v1.json`](independent-reuse-challenges-v1.json) | Open falsifiable challenges for fresh-prompt-free, cross-context, and especially nontechnical independent reuse. |
 | [`../POSTHOG_PROVENANCE_REUSE_KIT.md`](../POSTHOG_PROVENANCE_REUSE_KIT.md) | Minimal public reproduction for preserving item-to-evidence provenance when recommendation explanations are grouped. |
+| [`../REUSE_KITS.md`](../REUSE_KITS.md) | Human-readable portal for public, falsifiable cross-context reuse kits. |
 | [`long-horizon-reference-reasons-v1.json`](long-horizon-reference-reasons-v1.json) | Recurring long-horizon question → multiple relevant public OD anchors. |
 | [`recurring-structure-comparison-v1.json`](recurring-structure-comparison-v1.json) | Non-canonical cross-source comparison map for recurring reading motifs. |
 | [`ai-origin-responsibility-reference-card.json`](ai-origin-responsibility-reference-card.json) | Question origin, causal provenance, and responsibility in AI-mediated work. |
