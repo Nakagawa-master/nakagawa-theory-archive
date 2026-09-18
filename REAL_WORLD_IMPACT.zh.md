@@ -196,12 +196,18 @@ framework-local node identity
 
 **对人的意义：** 这一判断不再依赖中川大师本人不断重复说明；另一名第三方已经能够记住、引用并把它带入下一次判断。
 
+这种second-hop并非只出现一次。在另一个PR [`MemberJunction/MJ#4524`](https://github.com/MemberJunction/MJ/pull/4524) 中，同一名独立reviewer `rkihm-BC` 自己执行checker并构造反例，明确写下 **“@Nakagawa-master's point about D is confirmed”**。他还把Nakagawa-master提出的fail-closed方案评价为 **“the right fix”**，并带入自己的formal review。
+
+- [MJ #4524中的独立确认 / carry](https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5242805347)
+
+这并不证明已经广泛传播到很多不同的人。它证明的是更窄的repeatability：**同一名独立reviewer在另一个PR、另一个problem中，再次独立验证Nakagawa-origin判断，并带着自己的证据继续向下传递。** #4524 author在该review之后的implementation目前尚未确认。
+
 ---
 
 ## 8. PostHog｜说明相同，也不把“谁被推荐”与“为什么被推荐”混在一起
 
 **对象：** [`PostHog/posthog#102550`](https://github.com/PostHog/posthog/pull/102550)  
-**当前状态：** open / unmerged
+**当前状态：** #102550 已merge进入 `master` / downstream reuse #102686 open / unmerged
 
 这个PR修改了PostHog inbox中面向人的reviewer推荐界面：用户会在这里判断“应该由谁review”以及“为什么推荐这个人”。
 
@@ -226,7 +232,18 @@ framework-local node identity
 **这里已经可验证的作用：** public review → 外部maintainer的code / test / documentation / UI-story修改 → merge进入 `master`。  
 - Merge commit: [`6e2c760d`](https://github.com/PostHog/posthog/commit/6e2c760dadbaba764c83e93900c3510e6a703c03)
 
-**这里尚未确认的作用：** release、production deployment、实际用户规模。
+之后，同一名外部maintainer `mikaylathompson` 在**没有新的Nakagawa prompt**的情况下，把同一个provenance边界继续用于另一个surface [`PostHog/posthog#102686`](https://github.com/PostHog/posthog/pull/102686)。该PR正文明确规定：相同reason只在相同source category内部group；Core regression也继续区分scout来源与code-history来源。
+
+```text
+Nakagawa-master review
+→ 外部maintainer在#102550实现并merge
+→ 没有新的Nakagawa prompt
+→ 同一maintainer在Desktop/Core另一个surface继续复用该边界
+```
+
+这不是传播给另一个人的second-person evidence。但它表明外部maintainer已经把这个区分内部化，并在原始修复之外自主复用。#102686目前仍是open / unmerged，因此不把它算作merge或release。
+
+**这里尚未确认的作用：** #102686 merge、release、production deployment、实际用户规模。
 
 **对人的意义：** 当AI或scout说“应该让这个人review”时，更强的证据标签不容易被误解成支持整个混合group。人可以继续知道**每一个被推荐者分别是基于什么依据被推荐的**。
 
@@ -341,8 +358,8 @@ base PR #14225本身已经merge，但这并不代表该提案已经被实现。�
 4. 一个独立third-party PR明确引用了 `Nakagawa-master` compatibility contract。
 5. PostHog案例中，“AI向人展示的evidence应该如何被信任”这一边界，在review后转化成了server、UI和regression-test变更。
 6. Replay案例中，外部repository owner明确识别Nakagawa-master提出的boundary，并把它采纳为冻结protocol。
-7. MemberJunction #4487中，另一名独立reviewer把Nakagawa-master的finding带入自己的formal review，并继续向下一决策者重述。
-8. PostHog #102550中，人类reviewer选择界面的provenance混淆问题，在review后被转化为按source category分组以及相应regression coverage，并已merge进入 `master`。
+7. MemberJunction #4487中，另一名独立reviewer把Nakagawa-master的finding带入自己的formal review；在#4524中，同一reviewer又在另一个problem里独立验证并carry了另一个Nakagawa-origin point。
+8. PostHog #102550中，人类reviewer选择界面的provenance混淆问题，在review后被转化为按source category分组和regression coverage并merge进入 `master`；之后同一外部maintainer在没有新的Nakagawa prompt的情况下，把同一边界复用于#102686（#102686尚未merge）。
 9. Clientverse #27中，external owner明确把Nakagawa-master的判断称为真实缺陷，在PR正文保留该source关系，并修改state machine / provider contract / tests后完成merge。
 10. Cline #14225中，external author明确点名Nakagawa-master，独立评价该提案是更好的UX，并表示会把它带入follow-up；尚未把该意向当作实现。
 
