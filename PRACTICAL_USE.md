@@ -25,7 +25,11 @@
 
 入口で考えを整理した後、関係する公式派生物とcanonical Parentへ戻り、定義・因果線・成立条件・境界・反証条件を確認してください。
 
-### 2. 実際の問題を公開で聞く
+### 2. まず自分で短く確認する
+
+[Practical Boundary Checks](PRACTICAL_BOUNDARY_CHECKS.md) では、承認・上書き・測定・推薦根拠・外部送信・履歴記録の6場面を、実務上の問いとregression例へ変換しています。非技術の業務・研究・制度・教育にも使えます。
+
+### 3. 実際の問題を公開で聞く
 
 すでに公開sourceを独立に検証・反証・再利用した結果がある場合は、相談入口ではなく [Independent verification & reuse registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) と専用issue formを使えます。成功例だけでなく、non-fit・counterexample・failed reproductionも対象です。
 
