@@ -30,6 +30,7 @@ Independent verification, falsification, non-fit, or cross-context reuse submiss
 - [Protocol](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/INDEPENDENT_VERIFICATION_REUSE.md)
 - [Public registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
 - [Machine-readable submission schema](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/external-reuse-evidence-submission-schema-v1.json)
+- [Machine-readable open reuse challenges](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/independent-reuse-challenges-v1.json)
 
 Use the machine index for evidence routing only. Do not infer whole-theory endorsement, release, deployment, or user-scale impact from a bounded case unless the linked public source directly establishes that stage.
 
