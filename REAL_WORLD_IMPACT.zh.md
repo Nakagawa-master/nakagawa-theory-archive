@@ -128,15 +128,20 @@ issue comment区分了framework-local node identity与upstream document identity
 
 - [confirmation on #4524](https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5242805347)
 
-**公开可确认：** 另一位第三方reviewer点名引用、独立检查，并把问题纳入formal review。  
-**尚未确认：** 该review之后的author实现、merge、release。
+之后，两项PR中的相关修正都进入了author实现。#4487现在同时记录named re-export的alias名与source declaration名，并加入regression tests：aliased published data-shape member保持`warn`，未re-export的sibling保持`error`。Nakagawa-master重新检查current head，并在review `5252973190` 中明确关闭了原始finding。#4524中direct `[__mj]` fail-open也已修正，同一位独立reviewer重新执行probe，确认它从false-pass exit 0变成fail-closed exit 1。
+
+- [#4487 closure review](https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5252973190)
+- [#4524 independent re-verification](https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5252195432)
+
+**公开可确认：** 点名独立确认之后又出现author实现/regression tests；#4487还有origin reviewer closure，#4524还有独立执行再验证。  
+**尚未确认：** 两个PR的merge与release。
 
 ---
 
 ## 6. PostHog｜让推荐理由继续绑定真实source
 
 **对象：** [PostHog/posthog#102550](https://github.com/PostHog/posthog/pull/102550) → [#102686](https://github.com/PostHog/posthog/pull/102686)  
-**当前状态：** #102550 merged / deployed；#102686 open / externally approved / unmerged
+**当前状态：** #102550 merged / deployed；#102686 merged / deployed
 
 `Nakagawa-master` review指出，相同的说明文字不应把 `Code history` 与 `Added by scout` 等不同推荐source合并成看起来相同的依据。
 
@@ -147,12 +152,14 @@ maintainer修改了grouping logic、tests和UI stories；#102550已merge到`mast
 - [merged PR #102550](https://github.com/PostHog/posthog/pull/102550)
 - [deploy status](https://github.com/PostHog/posthog/pull/102550#issuecomment-5722917557)
 
-之后，同一maintainer在#102686的另一个UI surface中也使用了相同的source-category区分。#102686目前仍为open / unmerged，但current head已经得到独立reviewer `stamphog` 的APPROVED review。
+之后，同一maintainer在#102686的另一个UI surface中也使用了相同的source-category区分。current head得到独立reviewer `stamphog` 的APPROVED review，并于2026-09-18T15:49:22Z merge。PostHog公开deploy-status记录显示它已部署到dev、prod-us与prod-eu。
 
 - [#102686 external approval](https://github.com/PostHog/posthog/pull/102686#pullrequestreview-5249196997)
+- [merged PR #102686](https://github.com/PostHog/posthog/pull/102686)
+- [#102686 deploy status](https://github.com/PostHog/posthog/pull/102686#issuecomment-5732760371)
 
-**公开可确认：** review → code/tests/UI change → merge → deployment，并在另一PR中再次使用相同区分；该PR的current head还得到另一reviewer的APPROVED review。  
-**尚未确认：** #102686 merge以及实际用户规模和使用结果。
+**公开可确认：** 最初的review → code/tests/UI change → merge → deployment；之后相同区分在另一PR中被再次使用，并进一步经过独立approval → merge → dev/prod-us/prod-eu deployment。  
+**尚未确认：** 实际用户规模/结果，以及由不同person或不同context进行的进一步reuse。
 
 ---
 
