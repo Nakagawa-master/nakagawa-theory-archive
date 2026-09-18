@@ -235,6 +235,28 @@ The base PR itself is merged, but that merge does not mean this proposal was imp
 
 ---
 
+
+## 11. Local Operator | Prevent a running agent from weakening its own approval gate
+
+**Surface:** [damianvtran/local-operator#1282](https://github.com/damianvtran/local-operator/issues/1282) → [PR #1291](https://github.com/damianvtran/local-operator/pull/1291)  
+**Current state:** PR #1291 open / unmerged
+
+Issue #1282 described a boundary where a running agent constrained by an approval policy must not be able to lower that same gate from `ask` to `auto` through a configuration path it can write, while explicit human/operator control still needs to remain available.
+
+- [issue #1282](https://github.com/damianvtran/local-operator/issues/1282)
+- [third-party PR #1291](https://github.com/damianvtran/local-operator/pull/1291)
+
+The third-party PR explicitly states `Closes #1282` and makes the source of a live approval-policy transition part of the decision. Raw config writes from another process cannot loosen the running gate, while an explicitly attributed operator action in the process that owns the gate still has a positive-control path. The PR also includes a real second-process regression and tests intended to prevent agent-facing code from manufacturing the trusted settings-write path.
+
+Nakagawa-master re-checked the current head against the original issue boundary and explicitly recorded that the original security finding is implemented.
+
+- [closure review](https://github.com/damianvtran/local-operator/pull/1291#pullrequestreview-5253448083)
+
+**Publicly verifiable here:** issue → dedicated third-party PR explicitly closing that issue → code/tests → multiple review/remediation rounds → origin-side closure review.  
+**Not established here:** merge, release, or user-scale outcomes.
+
+---
+
 ## What this page supports — and what it does not
 
 ### Supported by the linked public record
