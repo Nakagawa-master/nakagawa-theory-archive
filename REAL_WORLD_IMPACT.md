@@ -322,6 +322,30 @@ PR本文自身も、`@Nakagawa-master identified a real defect rather than a fut
 
 ---
 
+## 11. Cline｜委任の承認と、委任先へ渡る能力の理解を分ける
+
+**対象:** [`cline/cline#14225`](https://github.com/cline/cline/pull/14225)  
+**現在の状態:** base PR merged / この提案のfollow-up実装は未確認
+
+configured subagentでは、親側でdelegationを承認した後、子agentのtool callが追加approvalなしで進む設計があります。`tools` が省略されたconfigured agentには、runtimeで利用可能なchild tool群が渡ります。
+
+`Nakagawa-master` のreviewは、その一回のdelegation approvalで実際に許可されるchild capability setを、人がapproval時に理解できるようにするべきだと指摘しました。
+
+- [Nakagawa-master review](https://github.com/cline/cline/pull/14225#pullrequestreview-5242232355)
+
+外部authorは `@Nakagawa-master` を名指しし、**“that's a great idea, definitely a better UX than what we currently have”** と評価し、agent configをfirst-class featureにするfollow-upへ含める意向を明示しました。
+
+- [External author response](https://github.com/cline/cline/pull/14225#issuecomment-5723653394)
+
+base PR #14225 自体はmergeされていますが、そのmergeはこの提案の実装を意味しません。最新確認時点で、この提案を実装する独立follow-up issue / PRは確認できていません。
+
+**ここで確認できる作用:** 名前付きreview → external authorによる明示認識 → 「現状より良いUX」という独立評価 → follow-upへ含める意思表明。  
+**まだ確認できないもの:** follow-up work item、提案内容のcode / test / UI実装、release、production use。
+
+**人間側の意味:** 第三者が中川マスター起点の判断を人物名付きで認識し、より良い人間向けUXとして次のproduct directionへ持ち込む価値があると評価したことを確認できます。
+
+---
+
 ## ここから何を判断できるか
 
 これらのcaseから確認できるのは、少なくとも次です。
@@ -335,6 +359,7 @@ PR本文自身も、`@Nakagawa-master identified a real defect rather than a fut
 7. MemberJunction #4487では、中川マスターの指摘を別の第三者reviewerが自分のformal reviewへ引き継ぎ、次の人へ再説明している。
 8. PostHog #102550では、人間がreviewerを信頼する根拠のprovenanceが混ざる問題が、review後にsource category別group化とregression testへ変換され、その変更が `master` へmergeされている。
 9. Clientverse #27では、external ownerがNakagawa-masterの指摘を「実欠陥」と明示認定し、そのsource relationをPR本文に残したままstate machine / provider contract / testsを修正してmergeしている。
+10. Cline #14225では、external authorがNakagawa-masterを名指しし、その提案を「現状より良いUX」と独立評価してfollow-upへ含める意思を明示している。実装はまだ数えていない。
 
 同時に、**まだ言えないこと**も明確です。
 
