@@ -10,7 +10,7 @@ It is not an authority claim. The validity of any theory or structural judgment 
 
 **Nakagawa Master models problems across AI, organizations, business, institutions, and the future through structure, causality, establishment conditions, and responsibility, and maintains the resulting work as a public source system that both humans and AI can inspect and reuse.**
 
-On public GitHub, specific judgments can also be traced into third-party code, tests, design changes, merges, and bounded downstream reuse through the [Real-World Impact](REAL_WORLD_IMPACT.en.md) evidence map.
+On public GitHub, specific judgments can also be traced into third-party code, tests, design changes, merges, at least one verified production deployment, and bounded downstream reuse through the [Real-World Impact](REAL_WORLD_IMPACT.en.md) evidence map.
 
 ## In 30 seconds
 
