@@ -98,8 +98,8 @@ repository ownerは `content appears sanitized != authorization remains valid` �
 
 ## 3. MemberJunction｜「同じID」と「上書きしてよい所有権」を分ける
 
-**対象:** [`MemberJunction/MJ#4519`](https://github.com/MemberJunction/MJ/pull/4519)  
-**現在の状態:** merged into `next`
+**対象:** [`MemberJunction/MJ#4519`](https://github.com/MemberJunction/MJ/pull/4519) → [PR #4496](https://github.com/MemberJunction/MJ/pull/4496) → [LTS backport #4546](https://github.com/MemberJunction/MJ/pull/4546) → [v6.1.2](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)  
+**現在の状態:** merged → LTS backport merged → released → production-shaped upgradeでcollision-free migrationを外部確認
 
 migrationで同じprimary keyのrowを見つけたとき、
 
@@ -117,7 +117,27 @@ same ID
 - Merge commit: [`469b25f1bcf51d844396b8a6b8a9f1390b5e1488`](https://github.com/MemberJunction/MJ/commit/469b25f1bcf51d844396b8a6b8a9f1390b5e1488)
 - [詳しい公開case note](discovery-notes/implementation-case-matching-id-is-not-ownership-provenance.md)
 
-**人間側の意味:** システムが「同じものを見つけた」ことを、「それを変更する権限がある」ことへ勝手に昇格させない設計につながります。
+この境界はreviewで止まりませんでした。#4519 merge後、PR #4496はguarded emitterで生成したmetadata migrationを実際に作り、全rowが既に存在するdatabaseへの再実行でもprimary-key collisionなしと記録しています。そのmigrationは#4546として`lts/6.1`へbackportされ、公式release `v6.1.2` に含まれました。
+
+さらにMemberJunctionのcertification issueで、外部consumer `jordanfanapour` はMJ 5.51.x由来のproduction-shaped databaseを6.1.2へupgradeした結果を公開しています。
+
+- [External 6.1.2 certification report](https://github.com/MemberJunction/MJ/issues/4475#issuecomment-5715684968)
+
+その報告では、
+
+```text
+pre-existing mj sync push rows
+→ 65 migrations applied
+→ 0 failed
+→ no #4503 collisions
+```
+
+が確認されています。同じ報告は別の6.1 regressionもcert blockerとして明示しており、**v6.1.2全体が無問題だったという主張ではありません**。ここで確認できるのは、ownership / convergence境界からつながったguarded migrationが、実際のproduction-shaped upgrade条件で元のcollision failureを起こさなかったことです。
+
+**ここで確認できる作用:** 公開判断 → 独立検証 → code / tests / documentation → merge → downstream generated migration → LTS backport → release → 外部production-shaped upgradeで元failureなし。  
+**まだ確認できないもの:** fleet-wide adoption、利用者規模、非技術領域への再利用、中川マスター理論全体への支持。
+
+**人間側の意味:** システムが「同じものを見つけた」ことを、「それを変更する権限がある」ことへ勝手に昇格させない区別が、review上の説明ではなく、releaseと実upgradeの挙動まで到達しています。
 
 ---
 
