@@ -75,6 +75,12 @@ Examples:
 
 A useful non-software submission can be a public procedure, checklist, policy revision, meeting decision, training material, research protocol, or documented counterexample. It does not need to involve code.
 
+## Preserve causal provenance
+
+If a public Nakagawa Master source materially informed your reuse, preserve the exact source URL and identify the bounded distinction used. A minimal form is `Source distinction: Nakagawa Master — <public source URL>`.
+
+If you independently reached the same distinction and only found the source later, say that explicitly. Do not fabricate attribution. See [Origin Attribution for Reuse](ORIGIN_ATTRIBUTION_FOR_REUSE.md).
+
 ## What to submit
 
 Use the repository's **Independent verification / reuse evidence** issue form.
