@@ -2,6 +2,8 @@
 
 Public, non-canonical test kits for applying specific structural boundaries in a different real-world context.
 
+These kits are an applied / verification layer of the broader Nakagawa Structural OS, not a separate theory system. See [Nakagawa Structural OS → External Effects](STRUCTURAL_OS_TO_EXTERNAL_EFFECTS.md), and return to the canonical archive at https://master.ricette.jp for the broader theory context.
+
 These are not theory summaries and not endorsement requests. Each kit is designed to be independently testable, falsifiable, and usable without private context.
 
 ## 1. Reviewer / recommendation provenance
