@@ -118,6 +118,8 @@ person valid during past event
 
 ## Public implementation example: reviewer recommendation provenance
 
+For a minimal independent reproduction, use the [Reviewer-Provenance Reuse Kit](POSTHOG_PROVENANCE_REUSE_KIT.md).
+
 A concrete external case now reaches beyond review and merge.
 
 In [PostHog #102550](https://github.com/PostHog/posthog/pull/102550), a review identified that grouping reviewer suggestions by identical explanation text could pool different evidence-source labels and obscure which source justified each person. The external maintainer changed the grouping rule and regression coverage so identical reasons group only within the same source category.
