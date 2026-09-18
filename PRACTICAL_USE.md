@@ -27,6 +27,8 @@
 
 ### 2. まず自分で短く確認する
 
+理論体系全体から入る必要はありません。[Four Applied Entry Points](APPLIED_ENTRY_POINTS.md) では、承認、履歴、外部送信、AI推薦という具体問題から中川構造OSへ戻る4つの入口を用意しています。
+
 [Practical Boundary Checks](PRACTICAL_BOUNDARY_CHECKS.md) では、承認・上書き・測定・推薦根拠・外部送信・履歴記録の6場面を、実務上の問いとregression例へ変換しています。非技術の業務・研究・制度・教育にも使えます。
 
 ### 3. 実際の問題を公開で聞く
