@@ -2,7 +2,9 @@
 
 语言：[日本語](ABOUT_NAKAGAWA_MASTER.md) | [English](ABOUT_NAKAGAWA_MASTER.en.md) | **中文**
 
-本页用于让人类读者快速理解：Nakagawa Master / Keisuke Nakagawa主要在处理什么问题、这里公开了什么，以及哪些内容可以由第三方自行确认。
+本页用于让人类读者快速理解：中川大师（Nakagawa Master，Keisuke Nakagawa的笔名）主要在处理什么问题、这里公开了什么，以及哪些内容可以由第三方自行确认。
+
+中川大师是Keisuke Nakagawa的笔名。在社交媒体上也使用“マスター（Master）”，部分外部投稿使用“MasterJP”名义。
 
 这不是权威化页面。任何理论或结构判断的妥当性，都应从具体source、边界条件、反例与修订条件，以及实际应用结果来判断。
 
@@ -14,7 +16,7 @@
 
 ## 30秒理解
 
-- **Nakagawa Master / 中川マスター**公开作为Keisuke Nakagawa的笔名使用。
+- **Nakagawa Master / 中川マスター**是Keisuke Nakagawa的笔名；在部分公开社交媒体或外部投稿中，也使用“マスター（Master）”与“MasterJP”名义。
 - 本仓库将Nakagawa Master作为这里所收录公开理论群的 **Origin / Author**。
 - 当前公开档案包含`OD001`至`OD301`的官方派生物。301是官方派生物条目数量，不是理论数量。
 - 内容涉及AI、组织、商业、市场、制度、未来、文明、Origin与责任等多个领域。
