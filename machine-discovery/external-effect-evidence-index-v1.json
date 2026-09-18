@@ -368,6 +368,49 @@
         ],
         "canonical_return": "https://master.ricette.jp"
       }
+    },
+    {
+      "case_id": "llamaindex-vertexai-source-provenance-contract",
+      "topic": "upstream source identity versus local framework node identity",
+      "external_repository": "run-llama/llama_index",
+      "origin_action": {
+        "type": "issue_comment",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action",
+        "url": "https://github.com/run-llama/llama_index/issues/21933#issuecomment-5650957902",
+        "summary": "Preserve upstream document identity and metadata as provenance while treating any change to local TextNode.id_ semantics as a separate explicit compatibility decision."
+      },
+      "third_party_implementation": {
+        "pull_request": "https://github.com/run-llama/llama_index/pull/23038",
+        "author": "glaziermag",
+        "explicit_source_citation": true,
+        "cited_as": "compatibility contract",
+        "implementation_summary": [
+          "preserves document_id and document_name in metadata",
+          "preserves struct_data fields",
+          "keeps generated local TextNode identity separate",
+          "adds regression tests for provenance and compatibility"
+        ],
+        "draft": true,
+        "merged": false
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "source identity != local framework object identity",
+        "canonical_context": [
+          "origin traceability",
+          "source provenance",
+          "context preservation"
+        ],
+        "canonical_return": "https://master.ricette.jp"
+      },
+      "not_claimed": [
+        "human maintainer approval",
+        "merge",
+        "release",
+        "production use",
+        "whole-theory adoption"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
