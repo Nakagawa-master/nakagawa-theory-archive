@@ -235,6 +235,28 @@ base PR本身已经merge，但这不表示该提案已经实现。
 
 ---
 
+
+## 11. Local Operator｜防止运行中的agent降低自己的approval gate
+
+**对象：** [damianvtran/local-operator#1282](https://github.com/damianvtran/local-operator/issues/1282) → [PR #1291](https://github.com/damianvtran/local-operator/pull/1291)  
+**当前状态：** PR #1291 open / unmerged
+
+issue #1282提出：如果一个正在被approval policy约束的agent，可以通过自己可写的配置路径把同一个gate从 `ask` 改为 `auto`，它就可能自己解除人类approval；但同时，明确的人类/operator控制路径仍应保留。
+
+- [issue #1282](https://github.com/damianvtran/local-operator/issues/1282)
+- [third-party PR #1291](https://github.com/damianvtran/local-operator/pull/1291)
+
+第三方PR #1291在正文中明确写出 `Closes #1282`，并把live approval-policy变化的source纳入判断。另一个process直接修改config不能降低当前gate，而持有gate的process中的明确operator操作仍有positive-control路径。PR还加入了真实second-process写入regression，以及用于防止agent-facing code伪造trusted settings-write路径的tests。
+
+Nakagawa-master重新按原issue的acceptance boundary检查了current head，并在review中明确记录原security finding已被实现。
+
+- [closure review](https://github.com/damianvtran/local-operator/pull/1291#pullrequestreview-5253448083)
+
+**公开可确认：** issue → 明确close该issue的第三方PR → code/tests → 多轮review/remediation → 原issue侧closure review。  
+**尚未确认：** merge、release、真实用户规模。
+
+---
+
 ## 本页可以支持什么结论，以及不能支持什么结论
 
 ### 公开记录能够支持的内容
