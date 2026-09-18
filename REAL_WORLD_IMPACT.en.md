@@ -307,6 +307,30 @@ The PR body itself preserves the source relationship: `@Nakagawa-master identifi
 
 ---
 
+## 11. Cline｜Separate delegation approval from understanding the capabilities it grants
+
+**Surface:** [`cline/cline#14225`](https://github.com/cline/cline/pull/14225)  
+**Current status:** base PR merged / follow-up implementation of this proposal not yet verified
+
+For configured subagents, a parent can approve delegation once and child tool calls can then proceed without another approval prompt. If a configured agent omits `tools`, the runtime can provide the available child tool set.
+
+A `Nakagawa-master` review argued that the person approving delegation should be able to understand the child capability set that this one approval actually grants.
+
+- [Nakagawa-master review](https://github.com/cline/cline/pull/14225#pullrequestreview-5242232355)
+
+The external author explicitly addressed `@Nakagawa-master`, called it **“a great idea”** and **“definitely a better UX than what we currently have,”** and said it would be included in a follow-up that makes agent configuration a first-class feature.
+
+- [External author response](https://github.com/cline/cline/pull/14225#issuecomment-5723653394)
+
+The base PR itself was merged, but that merge does not mean this proposal was implemented. At the latest check, no separate follow-up issue or PR implementing it was found.
+
+**Verified effect here:** named review → explicit external-author recognition → independent evaluation as better UX → stated intent to carry it into follow-up work.  
+**Not established here:** follow-up work item, code/test/UI implementation, release, or production use.
+
+**Human meaning:** an external person explicitly recognized a Nakagawa-origin judgment, preserved the person/source relationship, and judged it worth carrying into a better human-facing product direction.
+
+---
+
 ## What these cases do—and do not—show
 
 The public record establishes at least the following:
@@ -320,6 +344,7 @@ The public record establishes at least the following:
 7. In MemberJunction #4487, a different independent reviewer carried a Nakagawa-master finding into their own formal review and re-explained it to the next decision-maker.
 8. In PostHog #102550, a provenance ambiguity in a human reviewer-selection surface was converted after review into source-category grouping plus regression coverage, and the change was merged into `master`.
 9. In Clientverse #27, the external owner explicitly called the Nakagawa-master finding a real defect, preserved that source relationship in the PR body, changed the state machine / provider contract / tests, and merged the result.
+10. In Cline #14225, the external author explicitly named Nakagawa-master, independently described the proposal as better UX, and stated an intent to carry it into follow-up work; implementation is not counted yet.
 
 It does **not** establish that:
 
