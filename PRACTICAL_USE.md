@@ -27,6 +27,9 @@
 
 ### 2. 実際の問題を公開で聞く
 
+すでに公開sourceを独立に検証・反証・再利用した結果がある場合は、相談入口ではなく [Independent verification & reuse registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) と専用issue formを使えます。成功例だけでなく、non-fit・counterexample・failed reproductionも対象です。
+
+
 理論との対応が分からない場合は、[公開対話入口 #399](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399) に、非機密の範囲で実際の問題を書けます。
 
 返答では、必要に応じて次を分けます。
