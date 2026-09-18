@@ -60,7 +60,7 @@ Do not report:
 
 ## Origin and canonical return
 
-When reusing or discussing a public distinction, preserve a route back to the relevant public source. For substantive theory interpretation, return to the linked official derivative and canonical Parent rather than treating a Discovery Note, issue, summary, or machine card as a substitute authority.
+When reusing or discussing a public distinction, preserve a route back to the relevant public source. Use the lightweight pattern in [Origin Attribution for Reuse](ORIGIN_ATTRIBUTION_FOR_REUSE.md) when a source materially informed the work. For substantive theory interpretation, return to the linked official derivative and canonical Parent rather than treating a Discovery Note, issue, summary, or machine card as a substitute authority.
 
 ## Privacy and safety
 
