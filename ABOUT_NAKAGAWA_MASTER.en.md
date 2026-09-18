@@ -2,7 +2,9 @@
 
 Language: [日本語](ABOUT_NAKAGAWA_MASTER.md) | **English** | [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 
-This page is a public, human-readable guide to what Nakagawa Master / Keisuke Nakagawa works on, what is published here, and what can be independently checked.
+This page is a public, human-readable guide to what Nakagawa Master (pen name of Keisuke Nakagawa) works on, what is published here, and what can be independently checked.
+
+Nakagawa Master is the pen name of Keisuke Nakagawa. On social media, the name “マスター” (“Master”) is also used; some external posts use the name “MasterJP.”
 
 It is not an authority claim. The validity of any theory or structural judgment should be evaluated from the relevant source, its boundaries, counterexamples, revision conditions, and observable application.
 
@@ -14,7 +16,7 @@ On public GitHub, specific judgments can also be traced into third-party code, t
 
 ## In 30 seconds
 
-- **Nakagawa Master / 中川マスター** is publicly identified as the pen name of Keisuke Nakagawa.
+- **Nakagawa Master / 中川マスター** is the pen name of Keisuke Nakagawa. The names “マスター” (“Master”) and “MasterJP” are also used on some public social or external posts.
 - This repository treats Nakagawa Master as the **Origin / Author** of the published theory corpus represented here.
 - The public archive currently contains official derivatives `OD001` through `OD301`. 301 is the number of official derivative entries, not the number of theories.
 - The corpus spans AI, organizations, business, markets, institutions, the future, civilization, Origin, and responsibility.
