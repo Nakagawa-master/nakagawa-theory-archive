@@ -94,19 +94,39 @@ The repository owner explicitly identified `content appears sanitized != authori
 
 ## 3. MemberJunction｜Separate matching identity from authority to overwrite
 
-**Surface:** [`MemberJunction/MJ#4519`](https://github.com/MemberJunction/MJ/pull/4519)  
-**Current status:** merged into `next`
+**Surface:** [`MemberJunction/MJ#4519`](https://github.com/MemberJunction/MJ/pull/4519) → [PR #4496](https://github.com/MemberJunction/MJ/pull/4496) → [LTS backport #4546](https://github.com/MemberJunction/MJ/pull/4546) → [v6.1.2](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)  
+**Current status:** merged → LTS backport merged → released → collision-free migration reported in a production-shaped external upgrade
 
 Finding the same primary key does not by itself establish that the current value is owned by the release and may safely be replaced.
 
-A `Nakagawa-master` review separated record identity from the ownership/provenance contract. Independent reviewer `SDesai-BC` reproduced the behavior against the concrete migration set, and the PR author then changed code, tests, and documentation. The PR now explicitly documents the release-owned convergence contract.
+A `Nakagawa-master` review separated record identity from the ownership/provenance contract. Independent reviewer `SDesai-BC` reproduced the behavior against the concrete migration set, and the PR author then changed code, tests, and documentation. The PR explicitly documents the release-owned convergence contract.
 
 - [Nakagawa-master contribution](https://github.com/MemberJunction/MJ/pull/4519#issuecomment-5689128135)
 - [PR #4519](https://github.com/MemberJunction/MJ/pull/4519)
 - Merge commit: [`469b25f1bcf51d844396b8a6b8a9f1390b5e1488`](https://github.com/MemberJunction/MJ/commit/469b25f1bcf51d844396b8a6b8a9f1390b5e1488)
 - [Detailed public case note](discovery-notes/implementation-case-matching-id-is-not-ownership-provenance.md)
 
-**Human meaning:** a system is less likely to promote “I found the same record” into “I therefore have authority to replace its current state.”
+The boundary did not stop at review. After #4519 merged, PR #4496 generated a metadata migration through the guarded emitter and documented a replay against a database where every row was already present without primary-key collisions. That migration was backported to `lts/6.1` as #4546 and included in the official `v6.1.2` release.
+
+An external consumer then reported a production-shaped upgrade from an MJ 5.51.x database to 6.1.2 in the MemberJunction certification issue:
+
+- [External 6.1.2 certification report](https://github.com/MemberJunction/MJ/issues/4475#issuecomment-5715684968)
+
+The report records:
+
+```text
+pre-existing mj sync push rows
+→ 65 migrations applied
+→ 0 failed
+→ no #4503 collisions
+```
+
+The same report also identifies unrelated 6.1 regressions as certification blockers, so this is **not** a claim that v6.1.2 passed certification without problems. What it establishes is narrower: the guarded migration chain tied to the ownership/convergence boundary did not reproduce the original collision failure under a production-shaped upgrade condition.
+
+**Verified effect:** public judgment → independent verification → code/tests/documentation → merge → downstream generated migration → LTS backport → release → external production-shaped upgrade without the original collision failure.  
+**Not established:** fleet-wide adoption, user-scale impact, nontechnical reuse, or endorsement of the whole Nakagawa Master theory system.
+
+**Human meaning:** the distinction between “same record” and “authority to overwrite” reached released software and a real upgrade-shaped environment rather than remaining only a review comment.
 
 ---
 
