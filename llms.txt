@@ -28,6 +28,7 @@ Publicly verifiable external-effect evidence, with proposal / response / impleme
 Practical public-safe preflight checks for approval, overwrite authority, measurement validity, recommendation provenance, external side effects, and historical records:
 
 - [Practical Boundary Checks](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/PRACTICAL_BOUNDARY_CHECKS.md)
+- [Reuse Kits portal](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REUSE_KITS.md)
 - [Reviewer-Provenance Reuse Kit](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/POSTHOG_PROVENANCE_REUSE_KIT.md)
 - [Current-Authority Reuse Kit](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md)
 - [Historical-Fact Reuse Kit](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/HISTORICAL_FACT_REUSE_KIT.md)
