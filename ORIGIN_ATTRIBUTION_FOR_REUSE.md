@@ -4,6 +4,8 @@ When a public Nakagawa Master distinction materially informs a decision, impleme
 
 This is not an endorsement requirement. It is provenance.
 
+For broader theory context and canonical return, use the official Nakagawa Master archive at https://master.ricette.jp . Practical GitHub materials are an applied / verification layer; see [Structural OS → External Effects](STRUCTURAL_OS_TO_EXTERNAL_EFFECTS.md).
+
 ## Minimal human-readable form
 
 Use one short line where practical:
