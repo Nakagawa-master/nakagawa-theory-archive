@@ -238,8 +238,8 @@ base PR本身已经merge，但这不表示该提案已经实现。
 
 ## 11. Local Operator｜防止运行中的agent降低自己的approval gate
 
-**对象：** [damianvtran/local-operator#1282](https://github.com/damianvtran/local-operator/issues/1282) → [PR #1291](https://github.com/damianvtran/local-operator/pull/1291)  
-**当前状态：** PR #1291 已于2026-09-19 merge
+**对象：** [damianvtran/local-operator#1282](https://github.com/damianvtran/local-operator/issues/1282) → [PR #1291](https://github.com/damianvtran/local-operator/pull/1291) → [release v0.59.10](https://github.com/damianvtran/local-operator/releases/tag/v0.59.10)  
+**当前状态：** PR #1291已merge；v0.59.10已于2026-09-19 release并publish
 
 issue #1282提出：如果一个正在被approval policy约束的agent，可以通过自己可写的配置路径把同一个gate从 `ask` 改为 `auto`，它就可能自己解除人类approval；但同时，明确的人类/operator控制路径仍应保留。
 
@@ -252,8 +252,13 @@ Nakagawa-master重新按原issue的acceptance boundary检查了current head，�
 
 - [closure review](https://github.com/damianvtran/local-operator/pull/1291#pullrequestreview-5253448083)
 
-**公开可确认：** issue → 明确close该issue的第三方PR → code/tests → 多轮review/remediation → 原issue侧closure review → merge（`b1fc1f42`，2026-09-19T03:44:12Z）。  
-**尚未确认：** 包含#1291的release、真实使用/用户规模或更广泛采用。
+随后#1291被merge，并进入公开release `v0.59.10`。release notes明确列出#1291，并把该变化概括为 **“An agent can no longer weaken the approval gate.”** repository owner还在PR thread记录了publish workflow成功、PyPI提供 `0.59.10`、完成安装，以及在repo外执行 `lop --version` 的smoke check。
+
+- [release v0.59.10](https://github.com/damianvtran/local-operator/releases/tag/v0.59.10)
+- [release / publish / installed-smoke record](https://github.com/damianvtran/local-operator/pull/1291#issuecomment-5745312290)
+
+**公开可确认：** issue → 明确close该issue的第三方PR → code/tests → 多轮review/remediation → 原issue侧closure review → merge（`b1fc1f42`）→ release notes收录 → package publication → installed smoke。  
+**尚未确认：** 更大用户规模下的效果、用户数量，或超出该release的独立downstream reuse。
 
 ---
 
@@ -321,8 +326,8 @@ PR author明确点名 `@Nakagawa-master`，确认delete routes一直没有role e
 
 ## 15. FieldGIS Reference｜把历史PASS记录束成一次性的activation snapshot
 
-**对象：** [lundus88/fieldgis-reference#273](https://github.com/lundus88/fieldgis-reference/issues/273) → [PR #288](https://github.com/lundus88/fieldgis-reference/pull/288) → [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289)  
-**当前状态：** PR #288已merge；PR #289已于2026-09-19 merge
+**对象：** [lundus88/fieldgis-reference#273](https://github.com/lundus88/fieldgis-reference/issues/273) → [PR #288](https://github.com/lundus88/fieldgis-reference/pull/288) → [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289) → [PR #290](https://github.com/lundus88/fieldgis-reference/pull/290) → [PR #291](https://github.com/lundus88/fieldgis-reference/pull/291)  
+**当前状态：** #288 / #289 / #290已merge；#291 open（2026-09-20确认）
 
 `Nakagawa-master` 的公开comment区分了“历史PASS证据存在”和“当前有权activate商业系统”。该comment提出，把exact artifact、review证据、business/licence证据、Preview identity、provider/configuration fingerprint、policy version、decision time以及失效/重新验证规则绑定进一个activation snapshot。
 
@@ -334,14 +339,19 @@ PR author明确点名 `@Nakagawa-master`，确认delete routes一直没有role e
 - [独立review approval](https://github.com/lundus88/fieldgis-reference/pull/288#pullrequestreview-5254772097)
 - [merge commit `f0aeaf7c`](https://github.com/lundus88/fieldgis-reference/commit/f0aeaf7c381488d5a38f21753d2043cf11f235ae)
 
-后续PR #289把同一个activation-snapshot模型扩展到domain/email readiness，并于2026-09-19 merge。不过，merge后重新读取current `main` 仍可确认review指出的三项fail-closed regression尚未恢复：stale-state rejection、ordered activation-sequence validation，以及preview visual/workflow QA validation。因此，PR已merge与这些review finding是否已实现必须分开记录。
+后续公开工作继续把同一个activation-snapshot authority model用于更多商业subcontext。PR #289把domain/email readiness绑定进该模型并merge；PR #290在继续保留明确HOLD边界的同时加入email-provider selection并merge；PR #291记录subscription完成证据，同时仍把DNS、mailbox ownership、Production和public launch放在独立HOLD gate之后。公开记录因此显示，这个current-authority区分并未停留在单一implementation PR。
 
 - [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289)
+- [PR #290](https://github.com/lundus88/fieldgis-reference/pull/290)
+- [PR #291](https://github.com/lundus88/fieldgis-reference/pull/291)
+
+不过，merge后重新读取current `main` 仍可确认#289 review指出的三项旧fail-closed检查尚未恢复：stale-state rejection、ordered activation-sequence validation，以及preview visual/workflow QA validation。因此，model被继续复用/merge与这些review finding是否已经实现必须分开记录。
+
 - [要求恢复被删除fail-closed检查的review](https://github.com/lundus88/fieldgis-reference/pull/289#pullrequestreview-5254935377)
 - [merge后确认current main仍存在三项regression的follow-up](https://github.com/lundus88/fieldgis-reference/issues/289#issuecomment-5740198762)
 
-**公开可确认：** 公开comment → 第三方governance实现 → 独立review approval → merge → 后续domain/email readiness扩展也已merge。  
-**尚未确认：** 唯一因果、本番launch、客户规模效果、行业范围复用、或对更广泛理论体系的整体认可。
+**公开可确认：** 公开comment → 第三方governance实现 → 独立review approval → merge → 同一current-authority model继续用于domain/email readiness、provider selection和subscription evidence。  
+**尚未确认：** 唯一因果、本番launch、客户规模效果、不同person的独立reuse、行业范围复用、或对更广泛理论体系的整体认可。
 
 ---
 
