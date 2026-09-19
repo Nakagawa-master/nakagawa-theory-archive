@@ -21,6 +21,30 @@ The local system represents the outcome as unknown, reconciles or uses provider-
 
 Any exception becomes ordinary failure and a retry can duplicate the external action.
 
+
+## Idempotency-horizon regression
+
+Provider idempotency can be correct and still be too short for the application's retry policy.
+
+Test this separately when both horizons exist:
+
+```text
+provider accepts
+→ local success stamp is lost
+→ provider idempotency TTL expires
+→ application retry window is still open
+→ retry worker wakes
+→ no second side effect without reconciliation
+```
+
+### Pass condition
+
+An ambiguous accepted-at-provider outcome remains durable until it is reconciled, or the application otherwise proves that a retry is still protected. The system must not assume that reusing the same idempotency key is sufficient after the provider's guaranteed dedupe horizon has expired.
+
+### Useful assertion
+
+Inject failure after provider acceptance but before the local success stamp, advance time beyond the provider's idempotency TTL while remaining inside the application's retry window, then run the retry worker and assert zero second external side effects.
+
 ## Useful contexts
 
 - email/SMS;
