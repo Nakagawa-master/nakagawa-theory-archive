@@ -578,11 +578,11 @@
         "issue": "https://github.com/damianvtran/local-operator/issues/1310",
         "relationship": "a distinct same-uid control-plane authority problem remains open and is not claimed as fixed by #1291"
       },
-      "current_stage": "merge_or_integration",
+      "current_stage": "release_deployment_or_verified_use",
       "not_claimed": [
-        "release containing #1291",
-        "deployment",
         "user-scale effect",
+        "user counts",
+        "independent downstream reuse beyond this release",
         "whole-theory endorsement"
       ],
       "nakagawa_structural_os_mapping": {
@@ -594,6 +594,16 @@
           "source/provenance of authority transitions"
         ],
         "canonical_return": "https://master.ricette.jp"
+      },
+      "release": {
+        "verified": true,
+        "version": "v0.59.10",
+        "published_at_utc": "2026-09-19T20:43:43Z",
+        "target_commit": "8bb821d675d052a831c8d451105d99d3181ed9fd",
+        "url": "https://github.com/damianvtran/local-operator/releases/tag/v0.59.10",
+        "contains_merge_commit_verified": true,
+        "release_notes_explicitly_list_pr_1291": true,
+        "owner_publication_and_installed_smoke_record": "https://github.com/damianvtran/local-operator/pull/1291#issuecomment-5745312290"
       }
     },
     {
@@ -711,19 +721,38 @@
         "url": "https://github.com/lundus88/fieldgis-reference/commit/f0aeaf7c381488d5a38f21753d2043cf11f235ae"
       },
       "downstream_extension": {
-        "pull_request": "https://github.com/lundus88/fieldgis-reference/pull/289",
-        "relationship": "The activation-snapshot model is extended to domain/email readiness; this PR remains open and later review identified removed fail-closed checks that still need repair.",
-        "integrity_review": "https://github.com/lundus88/fieldgis-reference/pull/289#pullrequestreview-5254935377"
+        "surfaces": [
+          {
+            "pull_request": "https://github.com/lundus88/fieldgis-reference/pull/289",
+            "state": "merged",
+            "relationship": "Extends the activation-snapshot model to domain/email readiness.",
+            "integrity_review": "https://github.com/lundus88/fieldgis-reference/pull/289#pullrequestreview-5254935377",
+            "post_merge_integrity_followup": "https://github.com/lundus88/fieldgis-reference/issues/289#issuecomment-5740198762",
+            "integrity_limit": "Earlier fail-closed checks identified in review remained missing on current main after merge."
+          },
+          {
+            "pull_request": "https://github.com/lundus88/fieldgis-reference/pull/290",
+            "state": "merged",
+            "relationship": "Continues the same current-authority/HOLD model into email-provider selection."
+          },
+          {
+            "pull_request": "https://github.com/lundus88/fieldgis-reference/pull/291",
+            "state": "open",
+            "relationship": "Continues the same activation model into subscription evidence while keeping DNS, mailbox ownership, Production and public launch behind separate HOLD gates."
+          }
+        ],
+        "classification_boundary": "Cross-surface reuse inside the same external operating context; not different-person propagation."
       },
       "causal_limit": "Strong chronological and semantic match after the public contribution; no claim of sole causation or explicit source attribution in PR #288.",
-      "current_stage": "merge_or_integration",
+      "current_stage": "independent_or_cross_surface_reuse",
       "not_claimed": [
         "sole causation",
         "production launch",
         "customer-scale effect",
+        "different-person independent reuse",
         "industry-wide reuse",
         "whole-theory endorsement",
-        "merge of PR #289"
+        "closure of the post-#289 fail-closed regressions"
       ],
       "nakagawa_structural_os_mapping": {
         "applied_distinction": "historical PASS evidence != current single-use activation authority",
