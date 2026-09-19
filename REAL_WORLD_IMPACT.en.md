@@ -239,7 +239,7 @@ The base PR itself is merged, but that merge does not mean this proposal was imp
 ## 11. Local Operator | Prevent a running agent from weakening its own approval gate
 
 **Surface:** [damianvtran/local-operator#1282](https://github.com/damianvtran/local-operator/issues/1282) → [PR #1291](https://github.com/damianvtran/local-operator/pull/1291)  
-**Current state:** PR #1291 open / unmerged
+**Current state:** PR #1291 merged on 2026-09-19
 
 Issue #1282 described a boundary where a running agent constrained by an approval policy must not be able to lower that same gate from `ask` to `auto` through a configuration path it can write, while explicit human/operator control still needs to remain available.
 
@@ -252,8 +252,8 @@ Nakagawa-master re-checked the current head against the original issue boundary 
 
 - [closure review](https://github.com/damianvtran/local-operator/pull/1291#pullrequestreview-5253448083)
 
-**Publicly verifiable here:** issue → dedicated third-party PR explicitly closing that issue → code/tests → multiple review/remediation rounds → origin-side closure review.  
-**Not established here:** merge, release, or user-scale outcomes.
+**Publicly verifiable here:** issue → dedicated third-party PR explicitly closing that issue → code/tests → multiple review/remediation rounds → origin-side closure review → merge (`b1fc1f42`, 2026-09-19T03:44:12Z).  
+**Not established here:** release containing #1291, deployment/use at user scale, or broader adoption.
 
 ---
 
@@ -277,6 +277,24 @@ A later public contribution on #4610 mapped the follow-up onto MemberJunction's 
 
 **Publicly verifiable here:** review → third-party code/test change → third-party explicit source attribution → second work item carrying the stronger boundary and regression.  
 **Not established here:** row-level policy implementation, merge of #4595, merge/closure of #4610, release, deployment, or user-scale impact.
+
+---
+
+## 13. Waves Customer Portal | Preserve payment proof while removing a newly unsafe estimate CTA
+
+**Surface:** [wavespestcontrolfl/waves-customer-portal#4608](https://github.com/wavespestcontrolfl/waves-customer-portal/pull/4608)  
+**Current state:** merged on 2026-09-19
+
+The PR introduced a delivery-time guard for estimate links and a special rewrite policy for payment receipts: if an estimate CTA is no longer safe to expose, the receipt should still be sent with that CTA removed rather than suppressing proof of payment.
+
+A `Nakagawa-master` review found a vocabulary mismatch in that rewrite path. The refusal guard recognized a short code minted for another entity when its `target_url` resolved to an estimate link, but `rewriteWithheldEstimateLinks()` rewrote only short codes directly typed as `entity_type='estimates'`. The same link form could therefore be classified as unsafe but not transformed, causing the receipt to be refused.
+
+- [Nakagawa-master review](https://github.com/wavespestcontrolfl/waves-customer-portal/pull/4608#pullrequestreview-5254456120)
+
+After that review, commit `029ae44d53` explicitly added the missing `target_url` short-link rewrite path. The current merged implementation resolves both direct estimate short codes and other short codes whose target URL embeds an estimate link, strips the unsafe literal link, preserves the receipt, and records the rewritten estimate id. The PR later merged as `5cecd7627b70d739d7feaf6f45fd784b5741efc3`.
+
+**Publicly verifiable here:** review → matching code/test change for the reported short-link mismatch → merge.  
+**Not established here:** production deployment, user-scale outcomes, or whole-project endorsement of any broader theory.
 
 ---
 
