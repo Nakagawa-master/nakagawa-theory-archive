@@ -604,6 +604,37 @@
         "contains_merge_commit_verified": true,
         "release_notes_explicitly_list_pr_1291": true,
         "owner_publication_and_installed_smoke_record": "https://github.com/damianvtran/local-operator/pull/1291#issuecomment-5745312290"
+      },
+      "control_plane_followup": {
+        "origin_issue": "https://github.com/damianvtran/local-operator/issues/1310",
+        "repository_owner_determination": "https://github.com/damianvtran/local-operator/issues/1310#issuecomment-5740547291",
+        "third_party_implementation_pr": "https://github.com/damianvtran/local-operator/pull/1324",
+        "current_head": "fe2dc9b6464180905a57b47de3cdf0ba043930f4",
+        "origin_closure_review": "https://github.com/damianvtran/local-operator/pull/1324#pullrequestreview-5257968951",
+        "external_restatement": {
+          "independently_reproduced": true,
+          "origin_diagnosis_corrected": true,
+          "stronger_sibling_path_independently_found": true,
+          "correction": "reachable command sink is slash_result rather than the initially named slash",
+          "extension": "approval_answer(approved=True) also answers the constrained subject's parked approval and is guarded by the fix"
+        },
+        "implementation_state": "open_pr__origin_boundary_closed_on_current_head__merge_not_yet",
+        "evidence_stage": [
+          "origin_issue",
+          "independent_third_party_reproduction",
+          "diagnosis_correction",
+          "stronger_sibling_bypass_discovery",
+          "third_party_implementation",
+          "independent_review_qa_design_ux_remediation",
+          "origin_side_closure"
+        ],
+        "not_claimed": [
+          "merge or release of PR #1324",
+          "host-level same-uid memory isolation where the OS cannot provide it",
+          "completion of device-bound phone authority",
+          "independent reuse in another project/person",
+          "broader user-scale effect"
+        ]
       }
     },
     {
