@@ -345,6 +345,32 @@ A later PR extends the same activation-snapshot model to domain and email readin
 
 ---
 
+## 16. LlamaIndex | Do not let a cache hit replace current node identity with historical identity
+
+**Surface:** [run-llama/llama_index#23003](https://github.com/run-llama/llama_index/pull/23003) → [issue #23083](https://github.com/run-llama/llama_index/issues/23083)  
+**Current state:** PR #23003 open; issue #23083 open / maintainer contract decision pending
+
+PR #23003 is a focused fix for an ingestion-cache collision where different documents with identical content could share a cache key and return the wrong `ref_doc_id`.
+
+A `Nakagawa-master` review identified a second, broader contract boundary that remains after that focused fix. For intermediate nodes with a SOURCE relationship, the revised key can intentionally omit the current chunk `id_`, while the cache still returns the entire transformed `BaseNode` list. Two current chunks with the same source/content but different current identities can therefore reuse output carrying identity from an earlier run.
+
+- [Nakagawa-master review](https://github.com/run-llama/llama_index/pull/23003#pullrequestreview-5219816814)
+- [third-party author response](https://github.com/run-llama/llama_index/pull/23003#issuecomment-5694376083)
+- [dedicated follow-up issue #23083](https://github.com/run-llama/llama_index/issues/23083)
+
+The PR author explicitly confirmed the remaining collision in their own words and deferred the generic cache semantics to a deliberate maintainer-level decision rather than choosing unilaterally inside the focused PR. Issue #23083 now preserves the two coherent contract options:
+
+```text
+full-node transformation cache
+vs
+content-stable payload reuse
+```
+
+together with a regenerated-chunk-id regression that makes the choice observable.
+
+**Publicly verifiable here:** review → explicit third-party confirmation/restatement → dedicated maintainer-level work item.  
+**Not established here:** the #23083 contract decision, follow-up code/tests, merge, release, deployment, or user-scale effect.
+
 ## What this page supports — and what it does not
 
 ### Supported by the linked public record
