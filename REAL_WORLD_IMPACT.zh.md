@@ -239,7 +239,7 @@ base PR本身已经merge，但这不表示该提案已经实现。
 ## 11. Local Operator｜防止运行中的agent降低自己的approval gate
 
 **对象：** [damianvtran/local-operator#1282](https://github.com/damianvtran/local-operator/issues/1282) → [PR #1291](https://github.com/damianvtran/local-operator/pull/1291)  
-**当前状态：** PR #1291 open / unmerged
+**当前状态：** PR #1291 已于2026-09-19 merge
 
 issue #1282提出：如果一个正在被approval policy约束的agent，可以通过自己可写的配置路径把同一个gate从 `ask` 改为 `auto`，它就可能自己解除人类approval；但同时，明确的人类/operator控制路径仍应保留。
 
@@ -252,8 +252,8 @@ Nakagawa-master重新按原issue的acceptance boundary检查了current head，�
 
 - [closure review](https://github.com/damianvtran/local-operator/pull/1291#pullrequestreview-5253448083)
 
-**公开可确认：** issue → 明确close该issue的第三方PR → code/tests → 多轮review/remediation → 原issue侧closure review。  
-**尚未确认：** merge、release、真实用户规模。
+**公开可确认：** issue → 明确close该issue的第三方PR → code/tests → 多轮review/remediation → 原issue侧closure review → merge（`b1fc1f42`，2026-09-19T03:44:12Z）。  
+**尚未确认：** 包含#1291的release、真实使用/用户规模或更广泛采用。
 
 ---
 
@@ -277,6 +277,24 @@ PR author明确采用了这一两层拆分：commit `293b9b40` 实现entity-leve
 
 **公开可确认：** review → 第三方code/test变化 → 第三方明确source attribution → 把更强边界与regression继续carry到第二work item。  
 **尚未确认：** row-level policy实现、#4595 merge、#4610关闭/实现、release、deployment或用户规模影响。
+
+---
+
+## 13. Waves Customer Portal｜移除已变得不安全的estimate CTA，同时保留付款凭证
+
+**对象：** [wavespestcontrolfl/waves-customer-portal#4608](https://github.com/wavespestcontrolfl/waves-customer-portal/pull/4608)  
+**当前状态：** merged（2026-09-19）
+
+该PR加入了delivery-time estimate-link guard，以及针对付款receipt的rewrite policy：当estimate CTA已经不应再暴露时，应删除危险CTA，但仍然发送付款凭证本身。
+
+`Nakagawa-master` review发现rewrite路径与refusal guard的link识别词汇不一致。refusal guard会识别这样一种short code：它不是直接属于estimate entity，但其 `target_url` 指向estimate link；而 `rewriteWithheldEstimateLinks()` 当时只rewrite `entity_type='estimates'` 的short code。于是同一种link可能“能被判定为不安全，却不能被安全转换”，最终反而阻断付款receipt。
+
+- [Nakagawa-master review](https://github.com/wavespestcontrolfl/waves-customer-portal/pull/4608#pullrequestreview-5254456120)
+
+该review之后的commit `029ae44d53` 明确补上了 `target_url` short-link rewrite路径。当前已merge的实现同时处理直接estimate short code，以及其他short code whose `target_url` embeds an estimate link；它移除危险literal link、保留receipt，并记录被rewrite的estimate id。PR最终以 `5cecd7627b70d739d7feaf6f45fd784b5741efc3` merge。
+
+**公开可确认：** review → 与该short-link mismatch直接对应的code/test修改 → merge。  
+**尚未确认：** production deployment、用户规模结果或整个project对更广泛理论的认可。
 
 ---
 
