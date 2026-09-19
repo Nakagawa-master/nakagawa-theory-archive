@@ -2,7 +2,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**最終確認: 2026-09-18**
+**最終確認: 2026-09-19**
 
 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）は、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
 
@@ -279,6 +279,29 @@ Nakagawa-masterはcurrent headを元issueのacceptance boundaryに対して再�
 
 **公開記録から確認できること:** issue → 明示的にそのissueをcloseする第三者PR → code / tests → 複数review/remediation → 元issue側からのclosure確認。  
 **まだ確認できないこと:** PRのmerge、release、実利用規模。
+
+---
+
+## 12. MemberJunction｜row内容保護の次に残ったrow identity境界を第二work itemへcarry
+
+**対象:** [MemberJunction/MJ#4595](https://github.com/MemberJunction/MJ/pull/4595) → [issue #4610](https://github.com/MemberJunction/MJ/issues/4610)  
+**現在状態:** PR #4595 open / unmerged、issue #4610 open
+
+PR #4595は、cache-invalidation broadcastでfull row内容をdefaultでは送らないようにしました。その後の `Nakagawa-master` reviewでは、その修正とは別に、`recordData` を消しても他rowのstable primary keyとmutation timingが見えるという残存metadata境界を分離しました。
+
+- [Nakagawa-master row-identity review](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5253531713)
+- [Nakagawa-master 二層分解follow-up](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5737565146)
+- [第三者実装・carry応答](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5737603820)
+- [follow-up issue #4610](https://github.com/MemberJunction/MJ/issues/4610)
+
+PR authorはこの二層分解を明示的に採用し、commit `293b9b40` でentity-level permission filterを実装しました。同時に、row-level disclosureはregressionを弱めて「解決済み」にせず、独立issue #4610へ持ち越しました。#4610本文はframingが主に `@Nakagawa-master` のreview由来であることを明記し、同一entityを読めるがrow visibilityが異なる二人を使う強いacceptance testを維持しています。
+
+さらに#4610では、MemberJunction既存のClassFactory拡張機構へ落とす具体的な実装形を公開し、per-subscriber hot pathをsync / no-I/Oに保つ方向まで具体化しました。
+
+- [#4610 implementation-shape contribution](https://github.com/MemberJunction/MJ/issues/4610#issuecomment-5739586260)
+
+**公開記録から確認できること:** review → 第三者code/test変更 → 第三者による明示的source attribution → より強い境界とregressionを保った第二work item化。  
+**まだ確認できないこと:** row-level policy実装、#4595 merge、#4610 close/merge、release、deployment、実利用規模。
 
 ---
 
