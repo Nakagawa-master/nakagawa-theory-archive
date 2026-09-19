@@ -124,6 +124,30 @@ user is authorized
 
 Visibility of an action is a presentation decision. Permission to perform the consequence is an execution-time authorization decision. Cached UI eligibility should not become a capability merely because the button is still visible.
 
+### 7. A destructive action is authorized by UI state but not by the locked backend state
+
+```text
+UI loads while user has delete authority
+→ target remains visible / batch selection is prepared
+→ role, target state, or usage condition changes
+→ destructive request reaches backend
+→ backend loads/locks current target state and current caller authority
+→ deletion is refused
+→ zero delete/audit/recompute/external-sync side effect
+```
+
+For single and batch APIs, use one backend policy rather than two matching-looking copies. The policy should run against the same transaction/current state that will be mutated. A prior UI permission check, an unlocked pre-read, or a prepared batch selection is evidence about an earlier state, not authority to perform the destructive consequence now.
+
+Useful negative controls include:
+
+- a role that may view but not delete;
+- an object whose state becomes non-deletable after the UI loads;
+- an object that becomes "in use" before deletion;
+- a protected system/global object;
+- a batch containing a mix of allowed, refused, missing, and failed items.
+
+Policy refusals should remain distinguishable from operational failures so callers do not retry or misreport an expected authorization decision as a deletion error.
+
 ## Implementation pattern
 
 Keep two facts separate:
