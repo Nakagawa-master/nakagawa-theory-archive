@@ -298,6 +298,27 @@ After that review, commit `029ae44d53` explicitly added the missing `target_url`
 
 ---
 
+## 14. UpGrade | A UI-only delete rule became a backend-authority work item
+
+**Surface:** [CarnegieLearningWeb/UpGrade#3323](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323) → [issue #3326](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326)  
+**Current state:** #3323 open; #3326 open / implementation pending
+
+A `Nakagawa-master` review found that the product's frontend delete-permission matrix was not enforced by the backend. In the reviewed branch, an authenticated Reader could directly call destructive single/batch APIs even though the UI hid Delete.
+
+- [Nakagawa-master review](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#pullrequestreview-5249193998)
+- [third-party author response](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#issuecomment-5732584639)
+- [follow-up issue #3326](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326)
+- [implementation-shape contribution on #3326](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326#issuecomment-5740003355)
+
+The PR author explicitly named `@Nakagawa-master`, confirmed that the routes had historically lacked role enforcement, and opened #3326 to enforce the role matrix and state rules across both single and batch deletion rather than keeping two inconsistent behaviors.
+
+The later #3326 contribution mapped that work onto the current branch: one shared backend deletion policy, evaluated against current locked target state before mutation, with policy refusals separated from operational deletion failures.
+
+**Publicly verifiable here:** review → author acknowledgment/restatement → dedicated child work item preserving the boundary → source-level implementation guidance.  
+**Not established here:** code/test implementation of #3326, merge, release, deployment, or user-scale effect.
+
+---
+
 ## What this page supports — and what it does not
 
 ### Supported by the linked public record
