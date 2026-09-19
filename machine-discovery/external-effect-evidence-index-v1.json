@@ -544,6 +544,104 @@
         ],
         "canonical_return": "https://master.ricette.jp"
       }
+    },
+    {
+      "case_id": "local-operator-self-approval-gate",
+      "topic": "constrained subject versus authority to weaken its own live approval policy",
+      "external_repository": "damianvtran/local-operator",
+      "origin_action": {
+        "type": "issue",
+        "url": "https://github.com/damianvtran/local-operator/issues/1282",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action",
+        "summary": "A running agent constrained by an approval policy must not be able to lower that same gate through a mutation path it controls, while explicit operator control remains available."
+      },
+      "third_party_implementation": {
+        "pull_request": "https://github.com/damianvtran/local-operator/pull/1291",
+        "explicit_issue_closure": true,
+        "reviewed_head": "6629db2d95f0c1370c6c2ec266c60a850faba13c",
+        "implementation_summary": [
+          "policy-transition source participates in authorization",
+          "raw second-process config writes cannot loosen the live gate",
+          "same-process explicit operator action remains a positive control",
+          "regressions exercise the real gated tool path and trusted-write boundary"
+        ],
+        "origin_closure_review": "https://github.com/damianvtran/local-operator/pull/1291#pullrequestreview-5253448083"
+      },
+      "merge": {
+        "claimed": true,
+        "at_utc": "2026-09-19T03:44:12Z",
+        "commit": "b1fc1f422922da382fa2f8e45361b8ae876c9311",
+        "url": "https://github.com/damianvtran/local-operator/commit/b1fc1f422922da382fa2f8e45361b8ae876c9311"
+      },
+      "downstream_boundary": {
+        "issue": "https://github.com/damianvtran/local-operator/issues/1310",
+        "relationship": "a distinct same-uid control-plane authority problem remains open and is not claimed as fixed by #1291"
+      },
+      "current_stage": "merge_or_integration",
+      "not_claimed": [
+        "release containing #1291",
+        "deployment",
+        "user-scale effect",
+        "whole-theory endorsement"
+      ],
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "subject constrained by a policy != authority to silently weaken that policy",
+        "canonical_context": [
+          "authorization semantics",
+          "responsibility",
+          "control-plane separation",
+          "source/provenance of authority transitions"
+        ],
+        "canonical_return": "https://master.ricette.jp"
+      }
+    },
+    {
+      "case_id": "waves-receipt-proof-versus-unsafe-cta",
+      "topic": "owed payment proof versus authority to expose an estimate call-to-action",
+      "external_repository": "wavespestcontrolfl/waves-customer-portal",
+      "origin_action": {
+        "type": "pull_request_review",
+        "id": "5254456120",
+        "url": "https://github.com/wavespestcontrolfl/waves-customer-portal/pull/4608#pullrequestreview-5254456120",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action",
+        "summary": "The refusal guard recognized target_url-derived estimate short links that the receipt rewrite path could not transform, so payment proof could be suppressed instead of preserving the receipt and removing the unsafe CTA."
+      },
+      "third_party_implementation": {
+        "commit": "029ae44d53b51fd2c373500ceb8d3573038b3645",
+        "url": "https://github.com/wavespestcontrolfl/waves-customer-portal/commit/029ae44d53b51fd2c373500ceb8d3573038b3645",
+        "relationship": "commit landed after the review and adds the missing target_url short-link rewrite path matching the reported mismatch",
+        "implementation_summary": [
+          "rewrite path resolves direct estimate short codes",
+          "rewrite path also resolves other short codes whose target_url embeds an estimate link",
+          "unsafe literal link is removed while the receipt remains sendable",
+          "rewritten estimate ids remain inspectable"
+        ],
+        "tests_present": true
+      },
+      "merge": {
+        "claimed": true,
+        "at_utc": "2026-09-19T05:04:48Z",
+        "commit": "5cecd7627b70d739d7feaf6f45fd784b5741efc3",
+        "url": "https://github.com/wavespestcontrolfl/waves-customer-portal/commit/5cecd7627b70d739d7feaf6f45fd784b5741efc3"
+      },
+      "current_stage": "merge_or_integration",
+      "not_claimed": [
+        "production deployment",
+        "user-scale effect",
+        "whole-project endorsement of the broader theory corpus"
+      ],
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "unsafe offer CTA must be removable without destroying owed payment evidence",
+        "canonical_context": [
+          "customer communication",
+          "evidence preservation",
+          "scope-safe transformation",
+          "consequential delivery integrity"
+        ],
+        "canonical_return": "https://master.ricette.jp"
+      }
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
