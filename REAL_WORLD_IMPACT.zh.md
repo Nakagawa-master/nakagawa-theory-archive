@@ -298,6 +298,27 @@ PR author明确采用了这一两层拆分：commit `293b9b40` 实现entity-leve
 
 ---
 
+## 14. UpGrade｜把仅存在于UI的delete规则carry成backend authority work item
+
+**对象：** [CarnegieLearningWeb/UpGrade#3323](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323) → [issue #3326](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326)  
+**当前状态：** #3323 open；#3326 open / implementation pending
+
+`Nakagawa-master` review确认：frontend的delete permission matrix并没有在backend被作为真正authority强制执行。在被review的branch中，即使UI隐藏Delete，已认证的Reader仍可直接调用single/batch破坏性API。
+
+- [Nakagawa-master review](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#pullrequestreview-5249193998)
+- [第三方author回应](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#issuecomment-5732584639)
+- [follow-up issue #3326](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326)
+- [#3326 implementation-shape contribution](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326#issuecomment-5740003355)
+
+PR author明确点名 `@Nakagawa-master`，确认delete routes一直没有role enforcement，并创建#3326，使single与batch deletion共同执行同一套role matrix和state rules。
+
+随后在#3326中，又把这一work item具体映射到current branch：mutation前对current locked target state执行一个shared backend deletion policy，并把policy refusal与operational deletion failure分开。
+
+**公开可确认：** review → author确认/重述 → 保留该边界的专门child work item → source-level implementation guidance。  
+**尚未确认：** #3326 code/test实现、merge、release、deployment或用户规模影响。
+
+---
+
 ## 本页可以支持什么结论，以及不能支持什么结论
 
 ### 公开记录能够支持的内容
