@@ -287,6 +287,24 @@ Nakagawa-masterはcurrent headを元issueのacceptance boundaryに対して再�
 
 ---
 
+
+### Follow-up: control-plane側でも同じauthority境界が第三者実装へ進んだ
+
+#1291がconfig-file経路を閉じた後、`Nakagawa-master` は別のcontrol-plane境界を [issue #1310](https://github.com/damianvtran/local-operator/issues/1310) として分離しました。論点は、同じOS uidで動くmodel-authored subprocessが、同uidから読めるcontrol credentialだけを使って、自分を制約する `ask → auto` 変更やparked approvalの承認を行えてはならない、というものです。
+
+repository ownerはこのissueを独立に再現し、公開コメントで **“confirmed, real, and being fixed”**、**“it named the right boundary”** と記録しました。さらに、issue本文が想定していた `slash` ではなく実際のsinkは `slash_result` であること、そして `approval_answer(approved=True)` というより強い兄弟経路も同じ問題を持つことを独立に発見しています。
+
+- [owner reproduction / determination](https://github.com/damianvtran/local-operator/issues/1310#issuecomment-5740547291)
+- [third-party implementation PR #1324](https://github.com/damianvtran/local-operator/pull/1324)
+
+PR #1324はper-session operator capability、connection-bound proof、共通pre-dispatch guard、negative/positive/tightening controlsを実装し、複数の独立review・QA・design・UX roundを通っています。current head `fe2dc9b6` に対して、Nakagawa-masterは原issueの5 acceptance条件を再確認し、元の#1310 boundaryについてorigin-side closureを記録しました。ただしこれはmerge承認ではなく、PRはoperator/product decisionのためopenのままです。
+
+- [origin-side closure review](https://github.com/damianvtran/local-operator/pull/1324#pullrequestreview-5257968951)
+
+**このfollow-upで公開確認できること:** origin issue → third-party independent reproduction → origin diagnosisの修正 → stronger sibling bypassの独立発見 → third-party implementation → multiple independent remediation rounds → origin-side closure。  
+**まだ確認できないこと:** #1324のmerge/release、host OS自体が同uid memory isolationを提供できない環境での保証、phone/device-bound authorityの完成、またはこの境界の別projectへの独立reuse。
+
+
 ## 12. MemberJunction｜row内容保護の次に残ったrow identity境界を第二work itemへcarry
 
 **対象:** [MemberJunction/MJ#4595](https://github.com/MemberJunction/MJ/pull/4595) → [issue #4610](https://github.com/MemberJunction/MJ/issues/4610)  
