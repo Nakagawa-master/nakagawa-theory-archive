@@ -263,8 +263,8 @@ base PR #14225自体はmerge済みですが、そのmergeはこの提案の実�
 
 ## 11. Local Operator｜実行中agentが自分のapproval gateを弱められないようにする
 
-**対象:** [damianvtran/local-operator#1282](https://github.com/damianvtran/local-operator/issues/1282) → [PR #1291](https://github.com/damianvtran/local-operator/pull/1291)  
-**現在状態:** PR #1291 merged（2026-09-19）
+**対象:** [damianvtran/local-operator#1282](https://github.com/damianvtran/local-operator/issues/1282) → [PR #1291](https://github.com/damianvtran/local-operator/pull/1291) → [release v0.59.10](https://github.com/damianvtran/local-operator/releases/tag/v0.59.10)  
+**現在状態:** PR #1291 merged / v0.59.10 released・published（2026-09-19）
 
 issue #1282では、実行中agentが自分を制約しているapproval policyを、同じagentが書ける設定ファイル経由で `ask → auto` に変更できると、人間approvalを自分で解除できてしまうという境界を提示しました。一方で、人間operatorが明示的にapproval modeを変更する経路は残す必要があります。
 
@@ -277,8 +277,13 @@ Nakagawa-masterはcurrent headを元issueのacceptance boundaryに対して再�
 
 - [closure review](https://github.com/damianvtran/local-operator/pull/1291#pullrequestreview-5253448083)
 
-**公開記録から確認できること:** issue → 明示的にそのissueをcloseする第三者PR → code / tests → 複数review/remediation → 元issue側からのclosure確認 → merge（`b1fc1f42`、2026-09-19T03:44:12Z）。  
-**まだ確認できないこと:** #1291を含むrelease、実利用・利用規模、より広い採用。
+その後PR #1291はmergeされ、公開release `v0.59.10` に含まれました。release notesは #1291 を明示的に列挙し、変更内容を **“An agent can no longer weaken the approval gate”** と記録しています。repository ownerはPR threadで、publish workflow成功、PyPIでの `0.59.10` 配布、install後の `lop --version` smokeまで記録しています。
+
+- [release v0.59.10](https://github.com/damianvtran/local-operator/releases/tag/v0.59.10)
+- [release / publish / installed-smoke record](https://github.com/damianvtran/local-operator/pull/1291#issuecomment-5745312290)
+
+**公開記録から確認できること:** issue → 明示的にそのissueをcloseする第三者PR → code / tests → 複数review/remediation → 元issue側からのclosure確認 → merge（`b1fc1f42`）→ release notesへの収録 → package publication → installed smoke。  
+**まだ確認できないこと:** より広い利用者規模での効果、利用者数、またはこのreleaseを越えた独立downstream reuse。
 
 ---
 
@@ -346,8 +351,8 @@ PR authorは `@Nakagawa-master` を名指しし、delete routeにrole enforcemen
 
 ## 15. FieldGIS Reference｜過去のPASS記録を、単発のactivation snapshotへ束ねる
 
-**対象:** [lundus88/fieldgis-reference#273](https://github.com/lundus88/fieldgis-reference/issues/273) → [PR #288](https://github.com/lundus88/fieldgis-reference/pull/288) → [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289)  
-**現在状態:** PR #288 merged、PR #289 merged（2026-09-19）
+**対象:** [lundus88/fieldgis-reference#273](https://github.com/lundus88/fieldgis-reference/issues/273) → [PR #288](https://github.com/lundus88/fieldgis-reference/pull/288) → [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289) → [PR #290](https://github.com/lundus88/fieldgis-reference/pull/290) → [PR #291](https://github.com/lundus88/fieldgis-reference/pull/291)  
+**現在状態:** #288 / #289 / #290 merged、#291 open（2026-09-20確認）
 
 `Nakagawa-master` の公開コメントは、過去にPASSした証拠が存在することと、現在その商用システムをactivateしてよいことを分けました。具体的には、exact artifact、review証拠、事業・licence証拠、Preview identity、provider/configuration fingerprint、policy version、decision time、失効・再検証条件を一つのactivation snapshotへ束ねる形を提案しています。
 
@@ -359,14 +364,19 @@ PR authorは `@Nakagawa-master` を名指しし、delete routeにrole enforcemen
 - [独立review approval](https://github.com/lundus88/fieldgis-reference/pull/288#pullrequestreview-5254772097)
 - [merge commit `f0aeaf7c`](https://github.com/lundus88/fieldgis-reference/commit/f0aeaf7c381488d5a38f21753d2043cf11f235ae)
 
-後続のPR #289では、同じactivation snapshotモデルをdomain/email readinessへ拡張し、2026-09-19にmergeされました。ただしmerge後のcurrent `main` を再確認すると、その拡張時に削除された既存fail-closed検証（stale-state rejection、ordered activation sequence、preview visual/workflow QA validation）はまだ復元されていません。merge済みであることと、それらのreview指摘が実装済みであることは分けて扱います。
+後続PR #289は同じactivation-snapshotモデルをdomain/email readinessへ拡張し、#290はemail-provider selectionを同じHOLD/authority modelの下へ追加してmergeされました。さらに#291は、subscription完了の証拠を追加しつつ、DNS、mailbox ownership、Production、public launchを別gateとしてHOLDのまま維持しています。つまり公開記録上、snapshotによるcurrent-authority区分は単発PRだけで終わらず、複数の商用運用subcontextへ継続して使われています。
 
 - [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289)
+- [PR #290](https://github.com/lundus88/fieldgis-reference/pull/290)
+- [PR #291](https://github.com/lundus88/fieldgis-reference/pull/291)
+
+ただし、#289 merge後のcurrent `main` を再確認すると、その拡張時に削除された既存fail-closed検証（stale-state rejection、ordered activation sequence、preview visual/workflow QA validation）はまだ復元されていません。mergeやモデル継承の事実と、それらのreview指摘が実装済みかどうかは分けて扱います。
+
 - [fail-closed検証の復元を求めたreview](https://github.com/lundus88/fieldgis-reference/pull/289#pullrequestreview-5254935377)
 - [merge後のcurrent mainに残る3 regressionを示したfollow-up](https://github.com/lundus88/fieldgis-reference/issues/289#issuecomment-5740198762)
 
-**公開記録で確認できること:** 公開コメント → 第三者によるgovernance実装 → 独立review approval → merge → domain/email readinessへの拡張PRもmerge。  
-**この記録だけでは確認できないこと:** 唯一の原因であること、本番launch、顧客規模の効果、業界全体での再利用、理論体系全体への支持。
+**公開記録で確認できること:** 公開コメント → 第三者governance実装 → 独立review approval → merge → 同じcurrent-authority modelのdomain/email readiness・provider selection・subscription evidenceへの継続利用。  
+**この記録だけでは確認できないこと:** 唯一の原因であること、本番launch、顧客規模の効果、別personによる独立reuse、業界全体での再利用、理論体系全体への支持。
 
 ---
 
