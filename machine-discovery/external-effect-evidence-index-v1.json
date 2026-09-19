@@ -684,6 +684,57 @@
         ],
         "canonical_return": "https://master.ricette.jp"
       }
+    },
+    {
+      "case_id": "fieldgis-current-activation-snapshot",
+      "topic": "historical readiness evidence versus current single-use activation authority",
+      "external_repository": "lundus88/fieldgis-reference",
+      "origin_action": {
+        "type": "issue_comment",
+        "id": "5737805962",
+        "url": "https://github.com/lundus88/fieldgis-reference/issues/273#issuecomment-5737805962",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action",
+        "summary": "Historical PASS evidence is not itself current activation authority; form one explicit current snapshot and invalidate it on material drift."
+      },
+      "third_party_implementation": {
+        "pull_request": "https://github.com/lundus88/fieldgis-reference/pull/288",
+        "head": "12f4a335acd8332bc08dd2404c5d145bb8262e82",
+        "relationship": "A later third-party PR states the same core rule and implements a single-use activation snapshot, fail-closed validator, and dedicated CI.",
+        "independent_review": "https://github.com/lundus88/fieldgis-reference/pull/288#pullrequestreview-5254772097",
+        "explicit_nakagawa_attribution": false
+      },
+      "merge": {
+        "claimed": true,
+        "at_utc": "2026-09-19T05:36:33Z",
+        "commit": "f0aeaf7c381488d5a38f21753d2043cf11f235ae",
+        "url": "https://github.com/lundus88/fieldgis-reference/commit/f0aeaf7c381488d5a38f21753d2043cf11f235ae"
+      },
+      "downstream_extension": {
+        "pull_request": "https://github.com/lundus88/fieldgis-reference/pull/289",
+        "relationship": "The activation-snapshot model is extended to domain/email readiness; this PR remains open and later review identified removed fail-closed checks that still need repair.",
+        "integrity_review": "https://github.com/lundus88/fieldgis-reference/pull/289#pullrequestreview-5254935377"
+      },
+      "causal_limit": "Strong chronological and semantic match after the public contribution; no claim of sole causation or explicit source attribution in PR #288.",
+      "current_stage": "merge_or_integration",
+      "not_claimed": [
+        "sole causation",
+        "production launch",
+        "customer-scale effect",
+        "industry-wide reuse",
+        "whole-theory endorsement",
+        "merge of PR #289"
+      ],
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "historical PASS evidence != current single-use activation authority",
+        "canonical_context": [
+          "temporal structural consistency",
+          "current authority",
+          "evidence provenance",
+          "fail-closed execution boundaries"
+        ],
+        "canonical_return": "https://master.ricette.jp"
+      }
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
