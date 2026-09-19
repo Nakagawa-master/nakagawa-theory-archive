@@ -120,13 +120,20 @@
         "relationship": "a different independent reviewer named the Nakagawa-master finding, re-explained it, and carried it into a formal review"
       },
       "implementation_after_second_hop": {
-        "verified": false
+        "verified": true,
+        "reviewed_head": "69be97e741be38f62280059c12d460b025dcb222",
+        "closure_review": "https://github.com/MemberJunction/MJ/pull/4487#pullrequestreview-5252973190",
+        "changes": [
+          "named re-export records both exported alias and source declaration name",
+          "regression keeps aliased published data-shape member at warn",
+          "unre-exported sibling remains error"
+        ]
       },
-      "current_stage": "explicit_third_party_response_or_restatement",
+      "current_stage": "third_party_code_test_design_or_document_change",
       "not_claimed": [
-        "author implementation after carry",
         "merge",
-        "release"
+        "release",
+        "production use"
       ]
     },
     {
@@ -145,14 +152,20 @@
       },
       "repeatability_note": "Same independent reviewer, different PR/problem. This is repeat confirmation/carry, not broad person-to-person diffusion.",
       "implementation_after_second_hop": {
-        "verified": false
+        "verified": true,
+        "reviewed_head": "eddc735e58f835c280aa045fa2ecdbe60995b85c",
+        "independent_reverification": "https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5252195432",
+        "changes": [
+          "direct [__mj] guarded create syntax is classified rather than silently skipped",
+          "fail-open probe was re-run and verified to fail closed"
+        ]
       },
-      "current_stage": "explicit_third_party_response_or_restatement",
+      "current_stage": "third_party_code_test_design_or_document_change",
       "not_claimed": [
         "broad diffusion",
-        "author implementation after carry",
         "merge",
-        "release"
+        "release",
+        "production use"
       ]
     },
     {
@@ -189,7 +202,7 @@
         "fresh_nakagawa_prompt": false,
         "downstream_pr_names_nakagawa_origin": false,
         "exact_reused_rule": "repeat reasons group only within the same source category; scout-backed and code-history-backed suggestions remain separate",
-        "state": "open_unmerged",
+        "state": "merged_and_multi_environment_deployed",
         "classification_boundary": "cross-surface reuse by the same maintainer, not second-person propagation",
         "third_party_validation_after_reuse": {
           "surface": "https://github.com/PostHog/posthog/pull/102686",
@@ -205,15 +218,37 @@
             }
           ],
           "classification_boundary": "additional independent validation of the downstream provenance surface; not explicit Nakagawa-origin second-person attribution"
+        },
+        "merge": {
+          "claimed": true,
+          "at_utc": "2026-09-18T15:49:22Z",
+          "surface": "https://github.com/PostHog/posthog/pull/102686"
+        },
+        "deployment": {
+          "verified": true,
+          "source": "https://github.com/PostHog/posthog/pull/102686#issuecomment-5732760371",
+          "environments": [
+            {
+              "name": "dev",
+              "deployed_at_utc": "2026-09-18T16:09:00Z"
+            },
+            {
+              "name": "prod-us",
+              "deployed_at_utc": "2026-09-18T16:29:00Z"
+            },
+            {
+              "name": "prod-eu",
+              "deployed_at_utc": "2026-09-18T16:30:00Z"
+            }
+          ]
         }
       },
       "current_stage": "release_deployment_or_verified_use",
       "not_claimed": [
-        "#102686 merge",
-        "release",
         "user-scale impact",
         "whole-theory endorsement",
-        "user-scale usage or outcome"
+        "user-scale usage or outcome",
+        "second-person Nakagawa-origin attribution on #102686"
       ],
       "deployment": {
         "verified": true,
@@ -454,6 +489,61 @@
         "nontechnical cross-context reuse",
         "whole-theory endorsement"
       ]
+    },
+    {
+      "case_id": "memberjunction-cache-invalidation-row-identity-second-hop",
+      "topic": "row contents versus authority to disclose stable row identity and mutation timing on cache-invalidation events",
+      "external_repository": "MemberJunction/MJ",
+      "origin_action": {
+        "type": "pull_request_comment_chain",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action",
+        "urls": [
+          "https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5253531713",
+          "https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5737565146"
+        ],
+        "summary": "Separate the already-fixed row-content leak from the remaining row-identity metadata disclosure; implement the cheap entity-level filter now and carry the stronger row-level boundary separately without weakening its regression."
+      },
+      "third_party_implementation": {
+        "commit": "293b9b40cb363f3a2051507c2f134716780682b1",
+        "surface": "https://github.com/MemberJunction/MJ/pull/4595",
+        "response": "https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5737603820",
+        "changes": [
+          "cacheInvalidation delivery now filters by entity-level read permission",
+          "missing authenticated user fails closed",
+          "tests pin allowed, denied, missing-user and unknown-entity behavior"
+        ]
+      },
+      "second_hop_work_item": {
+        "issue": "https://github.com/MemberJunction/MJ/issues/4610",
+        "explicit_source_attribution": true,
+        "attribution_text_summary": "issue body states the framing is largely from @Nakagawa-master's review",
+        "preserved_regression": "two users with the same entity-level read permission but disjoint row visibility; unauthorized user receives neither row contents nor stable row identity/mutation times",
+        "status": "open"
+      },
+      "origin_followup": {
+        "url": "https://github.com/MemberJunction/MJ/issues/4610#issuecomment-5739586260",
+        "contribution": "mapped the row-disclosure seam onto MJ's existing ClassFactory/@RegisterClass pattern and kept the per-subscriber path synchronous/no-I/O rather than routing it through the async PermissionEngine"
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "not_claimed": [
+        "row-level disclosure policy implementation",
+        "merge of PR #4595",
+        "closure or implementation of issue #4610",
+        "release",
+        "deployment",
+        "user-scale impact"
+      ],
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "row contents protected != authority to disclose stable row identity and mutation cadence",
+        "canonical_context": [
+          "scope integrity",
+          "authorization semantics",
+          "origin/state separation",
+          "minimum necessary disclosure"
+        ],
+        "canonical_return": "https://master.ricette.jp"
+      }
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
