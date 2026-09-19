@@ -238,8 +238,8 @@ The base PR itself is merged, but that merge does not mean this proposal was imp
 
 ## 11. Local Operator | Prevent a running agent from weakening its own approval gate
 
-**Surface:** [damianvtran/local-operator#1282](https://github.com/damianvtran/local-operator/issues/1282) → [PR #1291](https://github.com/damianvtran/local-operator/pull/1291)  
-**Current state:** PR #1291 merged on 2026-09-19
+**Surface:** [damianvtran/local-operator#1282](https://github.com/damianvtran/local-operator/issues/1282) → [PR #1291](https://github.com/damianvtran/local-operator/pull/1291) → [release v0.59.10](https://github.com/damianvtran/local-operator/releases/tag/v0.59.10)  
+**Current state:** PR #1291 merged / v0.59.10 released and published on 2026-09-19
 
 Issue #1282 described a boundary where a running agent constrained by an approval policy must not be able to lower that same gate from `ask` to `auto` through a configuration path it can write, while explicit human/operator control still needs to remain available.
 
@@ -252,8 +252,13 @@ Nakagawa-master re-checked the current head against the original issue boundary 
 
 - [closure review](https://github.com/damianvtran/local-operator/pull/1291#pullrequestreview-5253448083)
 
-**Publicly verifiable here:** issue → dedicated third-party PR explicitly closing that issue → code/tests → multiple review/remediation rounds → origin-side closure review → merge (`b1fc1f42`, 2026-09-19T03:44:12Z).  
-**Not established here:** release containing #1291, deployment/use at user scale, or broader adoption.
+PR #1291 was then merged and included in public release `v0.59.10`. The release notes explicitly list #1291 and summarize the change as **“An agent can no longer weaken the approval gate.”** The repository owner also recorded successful publication, PyPI availability for `0.59.10`, installation, and an out-of-repository `lop --version` smoke check.
+
+- [release v0.59.10](https://github.com/damianvtran/local-operator/releases/tag/v0.59.10)
+- [release / publication / installed-smoke record](https://github.com/damianvtran/local-operator/pull/1291#issuecomment-5745312290)
+
+**Publicly verifiable here:** issue → dedicated third-party PR explicitly closing that issue → code/tests → multiple review/remediation rounds → origin-side closure review → merge (`b1fc1f42`) → release-note inclusion → package publication → installed smoke.  
+**Not established here:** effect at broader user scale, user counts, or independent downstream reuse beyond this release.
 
 ---
 
@@ -321,8 +326,8 @@ The later #3326 contribution mapped that work onto the current branch: one share
 
 ## 15. FieldGIS Reference | Historical PASS records became a single-use activation snapshot
 
-**Surface:** [lundus88/fieldgis-reference#273](https://github.com/lundus88/fieldgis-reference/issues/273) → [PR #288](https://github.com/lundus88/fieldgis-reference/pull/288) → [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289)  
-**Current state:** PR #288 merged; PR #289 merged (2026-09-19)
+**Surface:** [lundus88/fieldgis-reference#273](https://github.com/lundus88/fieldgis-reference/issues/273) → [PR #288](https://github.com/lundus88/fieldgis-reference/pull/288) → [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289) → [PR #290](https://github.com/lundus88/fieldgis-reference/pull/290) → [PR #291](https://github.com/lundus88/fieldgis-reference/pull/291)  
+**Current state:** #288 / #289 / #290 merged; #291 open (checked 2026-09-20)
 
 A `Nakagawa-master` comment separated the existence of historical PASS evidence from current authority to activate a commercial system. It proposed forming one explicit activation snapshot that binds the exact artifact, review evidence, business/licence evidence, Preview identity, provider/configuration fingerprints, policy versions, decision time, and revalidation/expiry rules.
 
@@ -334,14 +339,19 @@ After that comment, third-party PR #288 introduced a single-use `LDS_ACTIVATION_
 - [independent approval](https://github.com/lundus88/fieldgis-reference/pull/288#pullrequestreview-5254772097)
 - [merge commit `f0aeaf7c`](https://github.com/lundus88/fieldgis-reference/commit/f0aeaf7c381488d5a38f21753d2043cf11f235ae)
 
-A later PR extends the same activation-snapshot model to domain and email readiness and merged on 2026-09-19. A fresh read of current `main` after merge still shows three fail-closed regressions from the review are not restored: stale-state rejection, ordered activation-sequence validation, and preview visual/workflow QA validation. Merge status is therefore kept separate from whether those review findings were implemented.
+Later public work continues using the same activation-snapshot authority model across additional commercial subcontexts. PR #289 binds domain/email readiness into the model and merged; PR #290 adds email-provider selection while retaining explicit HOLD boundaries and merged; PR #291 records completed subscription evidence while keeping DNS, mailbox ownership, Production, and public launch behind separate HOLD gates. The public record therefore shows the current-authority distinction being carried beyond a single implementation PR.
 
 - [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289)
+- [PR #290](https://github.com/lundus88/fieldgis-reference/pull/290)
+- [PR #291](https://github.com/lundus88/fieldgis-reference/pull/291)
+
+A fresh read of current `main` after #289 still shows three earlier fail-closed checks from the review are not restored: stale-state rejection, ordered activation-sequence validation, and preview visual/workflow QA validation. Merge and reuse of the model are therefore kept separate from whether those review findings were implemented.
+
 - [review requesting restoration of removed fail-closed checks](https://github.com/lundus88/fieldgis-reference/pull/289#pullrequestreview-5254935377)
 - [post-merge follow-up showing the three remaining regressions on current main](https://github.com/lundus88/fieldgis-reference/issues/289#issuecomment-5740198762)
 
-**Publicly verifiable here:** public contribution → third-party governance implementation → independent approval → merge → a later domain/email readiness extension also merged.  
-**Not established here:** sole causation, production launch, customer-scale effect, industry-wide reuse, or endorsement of the broader theory corpus.
+**Publicly verifiable here:** public contribution → third-party governance implementation → independent approval → merge → continued use of the same current-authority model across domain/email readiness, provider selection, and subscription evidence.  
+**Not established here:** sole causation, production launch, customer-scale effect, independent reuse by a different person, industry-wide reuse, or endorsement of the broader theory corpus.
 
 ---
 
