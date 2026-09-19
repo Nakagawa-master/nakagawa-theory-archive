@@ -642,6 +642,48 @@
         ],
         "canonical_return": "https://master.ricette.jp"
       }
+    },
+    {
+      "case_id": "upgrade-delete-authority-child-work-item",
+      "topic": "UI delete eligibility versus current backend authority for destructive single and batch APIs",
+      "external_repository": "CarnegieLearningWeb/UpGrade",
+      "origin_action": {
+        "type": "pull_request_review",
+        "id": "5249193998",
+        "url": "https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#pullrequestreview-5249193998",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action",
+        "summary": "The frontend role matrix was not enforced by the backend; authenticated roles hidden from Delete in the UI could still call destructive single/batch APIs."
+      },
+      "third_party_carry": {
+        "author_response": "https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#issuecomment-5732584639",
+        "explicit_source_attribution": true,
+        "work_item": "https://github.com/CarnegieLearningWeb/UpGrade/issues/3326",
+        "summary": "The PR author explicitly named @Nakagawa-master, confirmed the historical lack of role enforcement, and opened #3326 to enforce role and state rules across both single and batch deletion."
+      },
+      "origin_followup": {
+        "url": "https://github.com/CarnegieLearningWeb/UpGrade/issues/3326#issuecomment-5740003355",
+        "contribution": "Mapped #3326 onto the current branch with one shared backend deletion policy evaluated against current locked target state before mutation, including Mooclet and batch bypass prevention and distinct policy-refusal reason codes."
+      },
+      "current_stage": "third_party_work_item_or_design_adoption",
+      "not_claimed": [
+        "code implementation of #3326",
+        "tests implementing the policy",
+        "merge",
+        "release",
+        "deployment",
+        "user-scale effect"
+      ],
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "UI presentation of Delete != current backend authority to perform a destructive action",
+        "canonical_context": [
+          "authorization semantics",
+          "current-state validation",
+          "single/batch consistency",
+          "destructive operation governance"
+        ],
+        "canonical_return": "https://master.ricette.jp"
+      }
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
