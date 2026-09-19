@@ -319,6 +319,31 @@ PR author明确点名 `@Nakagawa-master`，确认delete routes一直没有role e
 
 ---
 
+## 15. FieldGIS Reference｜把历史PASS记录束成一次性的activation snapshot
+
+**对象：** [lundus88/fieldgis-reference#273](https://github.com/lundus88/fieldgis-reference/issues/273) → [PR #288](https://github.com/lundus88/fieldgis-reference/pull/288) → [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289)  
+**当前状态：** PR #288已merge；PR #289仍open
+
+`Nakagawa-master` 的公开comment区分了“历史PASS证据存在”和“当前有权activate商业系统”。该comment提出，把exact artifact、review证据、business/licence证据、Preview identity、provider/configuration fingerprint、policy version、decision time以及失效/重新验证规则绑定进一个activation snapshot。
+
+- [Nakagawa-master contribution](https://github.com/lundus88/fieldgis-reference/issues/273#issuecomment-5737805962)
+
+随后，第三方PR #288加入了single-use的 `LDS_ACTIVATION_SNAPSHOT.json`、fail-closed validator和专用CI。PR正文明确写出 **“Evidence existence is not activation authority”**，并要求material input发生变化时使snapshot失效、让launch回到HOLD。
+
+- [PR #288](https://github.com/lundus88/fieldgis-reference/pull/288)
+- [独立review approval](https://github.com/lundus88/fieldgis-reference/pull/288#pullrequestreview-5254772097)
+- [merge commit `f0aeaf7c`](https://github.com/lundus88/fieldgis-reference/commit/f0aeaf7c381488d5a38f21753d2043cf11f235ae)
+
+后续PR #289把同一个activation-snapshot模型扩展到domain/email readiness。该PR目前仍open；后续review指出，扩展时删除了几项既有fail-closed验证，需要修复后才能把这部分视为闭合。
+
+- [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289)
+- [要求恢复被删除fail-closed检查的review](https://github.com/lundus88/fieldgis-reference/pull/289#pullrequestreview-5254935377)
+
+**公开可确认：** 公开comment → 第三方governance实现 → 独立review approval → merge；之后继续扩展到另一个commercial-readiness gate。  
+**尚未确认：** 唯一因果、本番launch、客户规模效果、行业范围复用、或对更广泛理论体系的整体认可。
+
+---
+
 ## 本页可以支持什么结论，以及不能支持什么结论
 
 ### 公开记录能够支持的内容
