@@ -262,6 +262,24 @@ Nakagawa-master重新按原issue的acceptance boundary检查了current head，�
 
 ---
 
+
+### 后续：同一authority边界继续进入独立的control-plane实现
+
+#1291关闭config-file路径后，`Nakagawa-master` 又把剩余的control-plane边界独立成 [issue #1310](https://github.com/damianvtran/local-operator/issues/1310)：同一OS uid下运行的model-authored subprocess，不应仅凭该uid可读的control credential，就把约束自己的gate从 `ask → auto`，或批准自己被park的approval request。
+
+repository owner独立复现了该问题，并公开记录 **“confirmed, real, and being fixed”**、**“it named the right boundary.”** 独立复现还修正了原诊断：真正可达的sink是 `slash_result` 而不是最初issue所写的 `slash`；同时owner独立发现了更强的兄弟路径 `approval_answer(approved=True)`。
+
+- [owner reproduction / determination](https://github.com/damianvtran/local-operator/issues/1310#issuecomment-5740547291)
+- [third-party implementation PR #1324](https://github.com/damianvtran/local-operator/pull/1324)
+
+PR #1324实现per-session operator capability、connection-bound proof、共同pre-dispatch guard，以及明确的negative/positive/tightening controls，并经历多轮独立review、QA、design和UX remediation。对current head `fe2dc9b6`，Nakagawa-master重新核对原issue的5项acceptance条件，并对原#1310边界记录了origin-side closure。该review不是merge建议；PR仍按repository记录等待operator/product decision。
+
+- [origin-side closure review](https://github.com/damianvtran/local-operator/pull/1324#pullrequestreview-5257968951)
+
+**该follow-up公开可确认：** origin issue → 第三方独立复现 → 修正origin诊断 → 独立发现更强sibling bypass → 第三方实现 → 多轮独立remediation → origin-side closure。  
+**尚未确认：** #1324 merge/release、OS本身无法隔离same-uid memory的host配置上的保证、phone/device-bound authority完成、或该边界被其他project独立reuse。
+
+
 ## 12. MemberJunction｜在保护row内容之后，把剩余row identity边界继续推进到第二个work item
 
 **对象：** [MemberJunction/MJ#4595](https://github.com/MemberJunction/MJ/pull/4595) → [issue #4610](https://github.com/MemberJunction/MJ/issues/4610)  
