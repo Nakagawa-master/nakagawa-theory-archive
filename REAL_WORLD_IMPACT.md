@@ -347,7 +347,7 @@ PR authorは `@Nakagawa-master` を名指しし、delete routeにrole enforcemen
 ## 15. FieldGIS Reference｜過去のPASS記録を、単発のactivation snapshotへ束ねる
 
 **対象:** [lundus88/fieldgis-reference#273](https://github.com/lundus88/fieldgis-reference/issues/273) → [PR #288](https://github.com/lundus88/fieldgis-reference/pull/288) → [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289)  
-**現在状態:** PR #288 merged、PR #289 open
+**現在状態:** PR #288 merged、PR #289 merged（2026-09-19）
 
 `Nakagawa-master` の公開コメントは、過去にPASSした証拠が存在することと、現在その商用システムをactivateしてよいことを分けました。具体的には、exact artifact、review証拠、事業・licence証拠、Preview identity、provider/configuration fingerprint、policy version、decision time、失効・再検証条件を一つのactivation snapshotへ束ねる形を提案しています。
 
@@ -359,12 +359,13 @@ PR authorは `@Nakagawa-master` を名指しし、delete routeにrole enforcemen
 - [独立review approval](https://github.com/lundus88/fieldgis-reference/pull/288#pullrequestreview-5254772097)
 - [merge commit `f0aeaf7c`](https://github.com/lundus88/fieldgis-reference/commit/f0aeaf7c381488d5a38f21753d2043cf11f235ae)
 
-後続のPR #289では、同じactivation snapshotモデルをdomain/email readinessへ拡張しています。こちらはまだopenであり、その拡張時に削除された既存fail-closed検証を戻す必要があることがreviewで指摘されています。
+後続のPR #289では、同じactivation snapshotモデルをdomain/email readinessへ拡張し、2026-09-19にmergeされました。ただしmerge後のcurrent `main` を再確認すると、その拡張時に削除された既存fail-closed検証（stale-state rejection、ordered activation sequence、preview visual/workflow QA validation）はまだ復元されていません。merge済みであることと、それらのreview指摘が実装済みであることは分けて扱います。
 
 - [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289)
 - [fail-closed検証の復元を求めたreview](https://github.com/lundus88/fieldgis-reference/pull/289#pullrequestreview-5254935377)
+- [merge後のcurrent mainに残る3 regressionを示したfollow-up](https://github.com/lundus88/fieldgis-reference/issues/289#issuecomment-5740198762)
 
-**公開記録で確認できること:** 公開コメント → 第三者によるgovernance実装 → 独立review approval → merge、その後の別commercial-readiness gateへの拡張。  
+**公開記録で確認できること:** 公開コメント → 第三者によるgovernance実装 → 独立review approval → merge → domain/email readinessへの拡張PRもmerge。  
 **この記録だけでは確認できないこと:** 唯一の原因であること、本番launch、顧客規模の効果、業界全体での再利用、理論体系全体への支持。
 
 ---
