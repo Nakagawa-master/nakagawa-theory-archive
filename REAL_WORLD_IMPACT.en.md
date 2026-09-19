@@ -2,7 +2,7 @@
 
 Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**Last checked: 2026-09-18**
+**Last checked: 2026-09-19**
 
 Nakagawa Master is the pen name of Keisuke Nakagawa. On social media, the name “マスター” (“Master”) is also used; some external posts use “MasterJP.”
 
@@ -254,6 +254,29 @@ Nakagawa-master re-checked the current head against the original issue boundary 
 
 **Publicly verifiable here:** issue → dedicated third-party PR explicitly closing that issue → code/tests → multiple review/remediation rounds → origin-side closure review.  
 **Not established here:** merge, release, or user-scale outcomes.
+
+---
+
+## 12. MemberJunction | Row contents protected, then the remaining row-identity boundary carried into a second work item
+
+**Surface:** [MemberJunction/MJ#4595](https://github.com/MemberJunction/MJ/pull/4595) → [issue #4610](https://github.com/MemberJunction/MJ/issues/4610)  
+**Current state:** PR #4595 open / unmerged; issue #4610 open
+
+PR #4595 stopped full row contents from riding an unfiltered cache-invalidation broadcast by default. A later `Nakagawa-master` review separated that fix from a remaining metadata boundary: even without `recordData`, a session could still learn another row's stable primary key and mutation timing.
+
+- [Nakagawa-master row-identity review](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5253531713)
+- [Nakagawa-master two-layer follow-up](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5737565146)
+- [third-party implementation / carry response](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5737603820)
+- [follow-up issue #4610](https://github.com/MemberJunction/MJ/issues/4610)
+
+The PR author explicitly adopted the two-layer split: an entity-level permission filter was implemented in commit `293b9b40`, and the stronger row-level disclosure question was opened separately as #4610 instead of weakening the regression until it passed. The issue body says its framing is largely from `@Nakagawa-master`'s review and preserves the two-disjoint-row-visibility acceptance test.
+
+A later public contribution on #4610 mapped the follow-up onto MemberJunction's existing ClassFactory extension pattern, keeping the per-subscriber path synchronous and no-I/O rather than routing it through the async permission engine.
+
+- [implementation-shape contribution on #4610](https://github.com/MemberJunction/MJ/issues/4610#issuecomment-5739586260)
+
+**Publicly verifiable here:** review → third-party code/test change → third-party explicit source attribution → second work item carrying the stronger boundary and regression.  
+**Not established here:** row-level policy implementation, merge of #4595, merge/closure of #4610, release, deployment, or user-scale impact.
 
 ---
 
