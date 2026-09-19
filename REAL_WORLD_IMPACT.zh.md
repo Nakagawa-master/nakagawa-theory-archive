@@ -2,7 +2,7 @@
 
 语言: [日本語](REAL_WORLD_IMPACT.md) | [English](REAL_WORLD_IMPACT.en.md) | **中文**
 
-**最后确认：2026-09-18**
+**最后确认：2026-09-19**
 
 中川大师（Nakagawa Master）是Keisuke Nakagawa的笔名。在社交媒体上也使用“マスター（Master）”，部分外部投稿使用“MasterJP”名义。
 
@@ -254,6 +254,29 @@ Nakagawa-master重新按原issue的acceptance boundary检查了current head，�
 
 **公开可确认：** issue → 明确close该issue的第三方PR → code/tests → 多轮review/remediation → 原issue侧closure review。  
 **尚未确认：** merge、release、真实用户规模。
+
+---
+
+## 12. MemberJunction｜在保护row内容之后，把剩余row identity边界继续推进到第二个work item
+
+**对象：** [MemberJunction/MJ#4595](https://github.com/MemberJunction/MJ/pull/4595) → [issue #4610](https://github.com/MemberJunction/MJ/issues/4610)  
+**当前状态：** PR #4595 open / unmerged；issue #4610 open
+
+PR #4595默认停止在cache-invalidation broadcast中携带完整row内容。随后 `Nakagawa-master` 的review进一步区分了另一个尚未关闭的边界：即使没有 `recordData`，session仍可能看到其他row的stable primary key与mutation timing。
+
+- [Nakagawa-master row-identity review](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5253531713)
+- [Nakagawa-master 两层拆分follow-up](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5737565146)
+- [第三方实现/carry回应](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5737603820)
+- [follow-up issue #4610](https://github.com/MemberJunction/MJ/issues/4610)
+
+PR author明确采用了这一两层拆分：commit `293b9b40` 实现entity-level permission filter；同时没有通过弱化regression来假装row-level问题已经解决，而是把更强的row-level disclosure问题单独建立为#4610。#4610正文明确说明其framing主要来自 `@Nakagawa-master` 的review，并保留“同一entity权限、但row visibility互相分离”的强acceptance test。
+
+随后在#4610中，又公开给出了把该边界映射到MemberJunction既有ClassFactory扩展机制的具体实现形状，以保持per-subscriber hot path为同步、无I/O。
+
+- [#4610 implementation-shape contribution](https://github.com/MemberJunction/MJ/issues/4610#issuecomment-5739586260)
+
+**公开可确认：** review → 第三方code/test变化 → 第三方明确source attribution → 把更强边界与regression继续carry到第二work item。  
+**尚未确认：** row-level policy实现、#4595 merge、#4610关闭/实现、release、deployment或用户规模影响。
 
 ---
 
