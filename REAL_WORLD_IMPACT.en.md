@@ -262,6 +262,24 @@ PR #1291 was then merged and included in public release `v0.59.10`. The release 
 
 ---
 
+
+### Follow-up: the same authority boundary advanced into a separate control-plane implementation
+
+After #1291 closed the config-file path, `Nakagawa-master` separated the remaining control-plane boundary into [issue #1310](https://github.com/damianvtran/local-operator/issues/1310): a model-authored subprocess running under the same OS uid must not be able to use a control credential readable under that uid to change its own gate from `ask → auto` or approve its own parked request.
+
+The repository owner independently reproduced the issue and publicly recorded **“confirmed, real, and being fixed”** and **“it named the right boundary.”** That reproduction also corrected the original diagnosis: the reachable sink was `slash_result`, not the initially named `slash`, and the owner independently found the stronger sibling path `approval_answer(approved=True)`.
+
+- [owner reproduction / determination](https://github.com/damianvtran/local-operator/issues/1310#issuecomment-5740547291)
+- [third-party implementation PR #1324](https://github.com/damianvtran/local-operator/pull/1324)
+
+PR #1324 implements a per-session operator capability, connection-bound proofs, a common pre-dispatch guard, and explicit negative, positive, and tightening controls. It has also gone through multiple independent review, QA, design, and UX remediation rounds. On current head `fe2dc9b6`, Nakagawa-master re-checked the five acceptance conditions from the origin issue and recorded origin-side closure of the original #1310 boundary. That review is not a merge recommendation; the PR remains open for the operator/product decision documented by the repository.
+
+- [origin-side closure review](https://github.com/damianvtran/local-operator/pull/1324#pullrequestreview-5257968951)
+
+**Publicly verifiable in this follow-up:** origin issue → independent third-party reproduction → correction of the origin diagnosis → independent discovery of a stronger sibling bypass → third-party implementation → multiple independent remediation rounds → origin-side closure.  
+**Not established yet:** merge/release of #1324, a guarantee on host configurations where the OS itself cannot isolate same-uid memory, completion of device-bound phone authority, or independent reuse of this boundary in another project.
+
+
 ## 12. MemberJunction | Row contents protected, then the remaining row-identity boundary carried into a second work item
 
 **Surface:** [MemberJunction/MJ#4595](https://github.com/MemberJunction/MJ/pull/4595) → [issue #4610](https://github.com/MemberJunction/MJ/issues/4610)  
