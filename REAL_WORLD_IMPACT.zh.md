@@ -322,7 +322,7 @@ PR author明确点名 `@Nakagawa-master`，确认delete routes一直没有role e
 ## 15. FieldGIS Reference｜把历史PASS记录束成一次性的activation snapshot
 
 **对象：** [lundus88/fieldgis-reference#273](https://github.com/lundus88/fieldgis-reference/issues/273) → [PR #288](https://github.com/lundus88/fieldgis-reference/pull/288) → [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289)  
-**当前状态：** PR #288已merge；PR #289仍open
+**当前状态：** PR #288已merge；PR #289已于2026-09-19 merge
 
 `Nakagawa-master` 的公开comment区分了“历史PASS证据存在”和“当前有权activate商业系统”。该comment提出，把exact artifact、review证据、business/licence证据、Preview identity、provider/configuration fingerprint、policy version、decision time以及失效/重新验证规则绑定进一个activation snapshot。
 
@@ -334,12 +334,13 @@ PR author明确点名 `@Nakagawa-master`，确认delete routes一直没有role e
 - [独立review approval](https://github.com/lundus88/fieldgis-reference/pull/288#pullrequestreview-5254772097)
 - [merge commit `f0aeaf7c`](https://github.com/lundus88/fieldgis-reference/commit/f0aeaf7c381488d5a38f21753d2043cf11f235ae)
 
-后续PR #289把同一个activation-snapshot模型扩展到domain/email readiness。该PR目前仍open；后续review指出，扩展时删除了几项既有fail-closed验证，需要修复后才能把这部分视为闭合。
+后续PR #289把同一个activation-snapshot模型扩展到domain/email readiness，并于2026-09-19 merge。不过，merge后重新读取current `main` 仍可确认review指出的三项fail-closed regression尚未恢复：stale-state rejection、ordered activation-sequence validation，以及preview visual/workflow QA validation。因此，PR已merge与这些review finding是否已实现必须分开记录。
 
 - [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289)
 - [要求恢复被删除fail-closed检查的review](https://github.com/lundus88/fieldgis-reference/pull/289#pullrequestreview-5254935377)
+- [merge后确认current main仍存在三项regression的follow-up](https://github.com/lundus88/fieldgis-reference/issues/289#issuecomment-5740198762)
 
-**公开可确认：** 公开comment → 第三方governance实现 → 独立review approval → merge；之后继续扩展到另一个commercial-readiness gate。  
+**公开可确认：** 公开comment → 第三方governance实现 → 独立review approval → merge → 后续domain/email readiness扩展也已merge。  
 **尚未确认：** 唯一因果、本番launch、客户规模效果、行业范围复用、或对更广泛理论体系的整体认可。
 
 ---
