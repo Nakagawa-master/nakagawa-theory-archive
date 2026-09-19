@@ -319,6 +319,31 @@ The later #3326 contribution mapped that work onto the current branch: one share
 
 ---
 
+## 15. FieldGIS Reference | Historical PASS records became a single-use activation snapshot
+
+**Surface:** [lundus88/fieldgis-reference#273](https://github.com/lundus88/fieldgis-reference/issues/273) → [PR #288](https://github.com/lundus88/fieldgis-reference/pull/288) → [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289)  
+**Current state:** PR #288 merged; PR #289 open
+
+A `Nakagawa-master` comment separated the existence of historical PASS evidence from current authority to activate a commercial system. It proposed forming one explicit activation snapshot that binds the exact artifact, review evidence, business/licence evidence, Preview identity, provider/configuration fingerprints, policy versions, decision time, and revalidation/expiry rules.
+
+- [Nakagawa-master contribution](https://github.com/lundus88/fieldgis-reference/issues/273#issuecomment-5737805962)
+
+After that comment, third-party PR #288 introduced a single-use `LDS_ACTIVATION_SNAPSHOT.json`, a fail-closed validator, and dedicated CI. Its PR body states the rule **“Evidence existence is not activation authority”** and requires material drift to invalidate the snapshot and return launch to HOLD.
+
+- [PR #288](https://github.com/lundus88/fieldgis-reference/pull/288)
+- [independent approval](https://github.com/lundus88/fieldgis-reference/pull/288#pullrequestreview-5254772097)
+- [merge commit `f0aeaf7c`](https://github.com/lundus88/fieldgis-reference/commit/f0aeaf7c381488d5a38f21753d2043cf11f235ae)
+
+A later PR extends the same activation-snapshot model to domain and email readiness. It is still open, and a later review identified validator regressions that must be repaired before that extension should be treated as closed.
+
+- [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289)
+- [review requesting restoration of removed fail-closed checks](https://github.com/lundus88/fieldgis-reference/pull/289#pullrequestreview-5254935377)
+
+**Publicly verifiable here:** public contribution → third-party governance implementation → independent approval → merge; later extension into another commercial-readiness gate.  
+**Not established here:** sole causation, production launch, customer-scale effect, industry-wide reuse, or endorsement of the broader theory corpus.
+
+---
+
 ## What this page supports — and what it does not
 
 ### Supported by the linked public record
