@@ -264,7 +264,7 @@ base PR #14225自体はmerge済みですが、そのmergeはこの提案の実�
 ## 11. Local Operator｜実行中agentが自分のapproval gateを弱められないようにする
 
 **対象:** [damianvtran/local-operator#1282](https://github.com/damianvtran/local-operator/issues/1282) → [PR #1291](https://github.com/damianvtran/local-operator/pull/1291)  
-**現在状態:** PR #1291 open / unmerged
+**現在状態:** PR #1291 merged（2026-09-19）
 
 issue #1282では、実行中agentが自分を制約しているapproval policyを、同じagentが書ける設定ファイル経由で `ask → auto` に変更できると、人間approvalを自分で解除できてしまうという境界を提示しました。一方で、人間operatorが明示的にapproval modeを変更する経路は残す必要があります。
 
@@ -277,8 +277,8 @@ Nakagawa-masterはcurrent headを元issueのacceptance boundaryに対して再�
 
 - [closure review](https://github.com/damianvtran/local-operator/pull/1291#pullrequestreview-5253448083)
 
-**公開記録から確認できること:** issue → 明示的にそのissueをcloseする第三者PR → code / tests → 複数review/remediation → 元issue側からのclosure確認。  
-**まだ確認できないこと:** PRのmerge、release、実利用規模。
+**公開記録から確認できること:** issue → 明示的にそのissueをcloseする第三者PR → code / tests → 複数review/remediation → 元issue側からのclosure確認 → merge（`b1fc1f42`、2026-09-19T03:44:12Z）。  
+**まだ確認できないこと:** #1291を含むrelease、実利用・利用規模、より広い採用。
 
 ---
 
@@ -302,6 +302,24 @@ PR authorはこの二層分解を明示的に採用し、commit `293b9b40` でen
 
 **公開記録から確認できること:** review → 第三者code/test変更 → 第三者による明示的source attribution → より強い境界とregressionを保った第二work item化。  
 **まだ確認できないこと:** row-level policy実装、#4595 merge、#4610 close/merge、release、deployment、実利用規模。
+
+---
+
+## 13. Waves Customer Portal｜危険になったestimate CTAを除去しつつ、支払証跡は失わせない
+
+**対象:** [wavespestcontrolfl/waves-customer-portal#4608](https://github.com/wavespestcontrolfl/waves-customer-portal/pull/4608)  
+**現在状態:** merged（2026-09-19）
+
+このPRでは、estimate linkをprovider handoff直前に再評価するguardと、支払receiptだけは危険なCTAを除去してreceipt自体を送るrewrite policyが追加されました。
+
+`Nakagawa-master` reviewは、このrewrite側とrefusal guard側でlink認識語彙がずれている点を指摘しました。refusal guardは、別entity用に発行されたshort codeでも、その `target_url` がestimate linkなら認識します。一方、`rewriteWithheldEstimateLinks()` は `entity_type='estimates'` のshort codeしかrewriteしなかったため、同じlinkを「危険と判定できるのに安全変換できず」、結果として支払receipt全体を拒否し得る状態でした。
+
+- [Nakagawa-master review](https://github.com/wavespestcontrolfl/waves-customer-portal/pull/4608#pullrequestreview-5254456120)
+
+そのreview後のcommit `029ae44d53` で、`target_url` 由来short linkをrewriteする経路が追加されました。merge後の実装は、直接estimateに結び付くshort codeと、別用途short codeの `target_url` 内にestimate linkがある場合の両方を解決し、危険なliteral linkだけを除去してreceiptを維持し、rewrite対象estimate idを記録します。PRは最終的に `5cecd7627b70d739d7feaf6f45fd784b5741efc3` としてmergeされました。
+
+**公開記録から確認できること:** review → 指摘したshort-link mismatchに対応するcode/test変更 → merge。  
+**まだ確認できないこと:** production deployment、利用者規模での効果、project全体によるより広い理論採用。
 
 ---
 
