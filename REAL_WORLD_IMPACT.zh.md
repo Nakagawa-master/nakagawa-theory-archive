@@ -345,6 +345,32 @@ PR author明确点名 `@Nakagawa-master`，确认delete routes一直没有role e
 
 ---
 
+## 16. LlamaIndex｜不要让cache hit用历史node identity替换当前run的identity
+
+**对象：** [run-llama/llama_index#23003](https://github.com/run-llama/llama_index/pull/23003) → [issue #23083](https://github.com/run-llama/llama_index/issues/23083)  
+**当前状态：** PR #23003 open；issue #23083 open / maintainer contract decision pending
+
+PR #23003是一个focused fix，用于修复ingestion cache中“不同document具有相同content时共享cache key并可能返回错误 `ref_doc_id`”的问题。
+
+`Nakagawa-master` review指出，在这个focused fix之后generic transformation cache仍存在更广的contract边界。对于具有SOURCE relationship的intermediate node，新key可以有意忽略当前chunk `id_`，但cache仍会返回完整的transformed `BaseNode` list。因此，两个source/content相同但current identity不同的chunk，可能复用包含早期run identity的output。
+
+- [Nakagawa-master review](https://github.com/run-llama/llama_index/pull/23003#pullrequestreview-5219816814)
+- [第三方author回应](https://github.com/run-llama/llama_index/pull/23003#issuecomment-5694376083)
+- [专门follow-up issue #23083](https://github.com/run-llama/llama_index/issues/23083)
+
+PR author用自己的话明确确认了剩余collision，并认为generic cache semantics不应在这个focused PR里由author单方面决定，而应交给maintainer进行明确contract decision。issue #23083因此保留了两个coherent方向：
+
+```text
+full-node transformation cache
+vs
+content-stable payload reuse
+```
+
+并保留了一个regenerated-chunk-id regression，使该contract选择可以被实际测试。
+
+**公开可确认：** review → 第三方明确确认/重述 → 专门maintainer-level work item。  
+**尚未确认：** #23083 contract决定、follow-up code/tests、merge、release、deployment或用户规模影响。
+
 ## 本页可以支持什么结论，以及不能支持什么结论
 
 ### 公开记录能够支持的内容
