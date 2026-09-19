@@ -96,6 +96,34 @@ resource is authorized for public display
 
 If a cache is used, access should be established before a shared cached value can be returned, or revocation must invalidate the relevant cache safely.
 
+
+### 5. A confirmation link outlives the consent intent that created it
+
+```text
+address is unsubscribed
+→ re-subscribe request creates confirmation intent V1
+→ a newer opt-out / consent revision is recorded
+→ old V1 confirmation link is clicked
+→ V1 must not restore subscription
+→ only the current pending consent intent may authorize re-subscription
+```
+
+A confirmation token is evidence that a particular re-subscribe intent existed. It should not become a durable capability to override a later refusal. Bind it to a single-use intent/version and invalidate older intents when consent state advances.
+
+### 6. A stale screen still shows an action after execution authority is revoked
+
+```text
+user is authorized
+→ UI renders Pay / Publish / Execute
+→ role or account access is revoked elsewhere
+→ stale screen submits the action
+→ server re-checks current authority
+→ zero consequential side effect
+→ client reconciles to the new state
+```
+
+Visibility of an action is a presentation decision. Permission to perform the consequence is an execution-time authorization decision. Cached UI eligibility should not become a capability merely because the button is still visible.
+
 ## Implementation pattern
 
 Keep two facts separate:
@@ -132,6 +160,8 @@ These pairs are deliberately different:
 approved before        != authorized now
 consented before       != consent still current
 queued                 != permitted to execute
+confirmation requested != consent still current
+action rendered         != execution authorized
 prepared               != published
 provider attempt       != provider acceptance
 historical PASS        != current activation authority
