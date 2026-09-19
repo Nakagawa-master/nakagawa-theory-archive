@@ -369,6 +369,32 @@ PR authorは `@Nakagawa-master` を名指しし、delete routeにrole enforcemen
 
 ---
 
+## 16. LlamaIndex｜cache hitで過去node identityを現在runへ持ち込まないためのcontract decision
+
+**対象:** [run-llama/llama_index#23003](https://github.com/run-llama/llama_index/pull/23003) → [issue #23083](https://github.com/run-llama/llama_index/issues/23083)  
+**現在状態:** PR #23003 open、issue #23083 open / maintainer contract decision pending
+
+PR #23003は、ingestion cache keyで異なるdocumentの同一contentが衝突し、別documentの `ref_doc_id` を返し得る問題を修正するfocused PRです。
+
+`Nakagawa-master` のreviewは、その修正後にもgeneric transformation cacheでは別の境界が残ることを指摘しました。SOURCE relationshipを持つintermediate nodeではcurrent chunk `id_` をkeyから外す一方、cacheはtransform済み `BaseNode` 全体を返すため、同じsource/contentでcurrent chunk identityだけが変わると、以前のrunのidentityを含むoutputが再利用され得ます。
+
+- [Nakagawa-master review](https://github.com/run-llama/llama_index/pull/23003#pullrequestreview-5219816814)
+- [third-party author response](https://github.com/run-llama/llama_index/pull/23003#issuecomment-5694376083)
+- [dedicated follow-up issue #23083](https://github.com/run-llama/llama_index/issues/23083)
+
+PR authorは、残るcollisionを自分の言葉で確認し、generic cache semanticsはこのfocused PR内で一方的に決めるべきではないとして、maintainer-level contract decisionへ分離することに同意しました。その後、専用issue #23083で、
+
+```text
+full-node transformation cache
+vs
+content-stable payload reuse
+```
+
+という二つのcoherent contractと、regenerated chunk idを使うacceptance regressionが独立したwork itemとして保持されています。
+
+**公開記録から確認できること:** review → third-party authorによる残存問題の明示的確認・再説明 → maintainer-level専用work item化。  
+**まだ確認できないこと:** #23083のcontract決定、follow-up code/test実装、merge、release、deployment、実利用規模。
+
 ## このページから言えること／言えないこと
 
 ### 公開記録から確認できること
