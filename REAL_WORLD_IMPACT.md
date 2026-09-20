@@ -370,7 +370,7 @@ PR authorは `@Nakagawa-master` を名指しし、delete routeにrole enforcemen
 ## 15. FieldGIS Reference｜過去のPASS記録を、単発のactivation snapshotへ束ねる
 
 **対象:** [lundus88/fieldgis-reference#273](https://github.com/lundus88/fieldgis-reference/issues/273) → [PR #288](https://github.com/lundus88/fieldgis-reference/pull/288) → [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289) → [PR #290](https://github.com/lundus88/fieldgis-reference/pull/290) → [PR #291](https://github.com/lundus88/fieldgis-reference/pull/291)  
-**現在状態:** #288 / #289 / #290 merged、#291 open（2026-09-20確認）
+**現在状態:** #288 / #289 / #290 / #291 merged（2026-09-20確認）
 
 `Nakagawa-master` の公開コメントは、過去にPASSした証拠が存在することと、現在その商用システムをactivateしてよいことを分けました。具体的には、exact artifact、review証拠、事業・licence証拠、Preview identity、provider/configuration fingerprint、policy version、decision time、失効・再検証条件を一つのactivation snapshotへ束ねる形を提案しています。
 
@@ -382,18 +382,20 @@ PR authorは `@Nakagawa-master` を名指しし、delete routeにrole enforcemen
 - [独立review approval](https://github.com/lundus88/fieldgis-reference/pull/288#pullrequestreview-5254772097)
 - [merge commit `f0aeaf7c`](https://github.com/lundus88/fieldgis-reference/commit/f0aeaf7c381488d5a38f21753d2043cf11f235ae)
 
-後続PR #289は同じactivation-snapshotモデルをdomain/email readinessへ拡張し、#290はemail-provider selectionを同じHOLD/authority modelの下へ追加してmergeされました。さらに#291は、subscription完了の証拠を追加しつつ、DNS、mailbox ownership、Production、public launchを別gateとしてHOLDのまま維持しています。つまり公開記録上、snapshotによるcurrent-authority区分は単発PRだけで終わらず、複数の商用運用subcontextへ継続して使われています。
+後続PR #289は同じactivation-snapshotモデルをdomain/email readinessへ拡張し、#290はemail-provider selectionを同じHOLD/authority modelの下へ追加してmergeされました。さらに#291は、subscription完了の証拠を追加しつつ、DNS、mailbox ownership、Production、public launchを別gateとしてHOLDのまま維持しました。#291は第三者reviewer `rnairing123` のAPPROVEを受けた後、2026-09-19T23:15:06Zにmergeされました。つまり公開記録上、snapshotによるcurrent-authority区分は単発PRだけで終わらず、有料契約という実際の商用証拠が追加された段階まで、複数の運用subcontextで継続して使われています。
 
 - [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289)
 - [PR #290](https://github.com/lundus88/fieldgis-reference/pull/290)
 - [PR #291](https://github.com/lundus88/fieldgis-reference/pull/291)
+- [#291 independent approval](https://github.com/lundus88/fieldgis-reference/pull/291#pullrequestreview-5258253534)
+- [#291 merge commit `5772de11`](https://github.com/lundus88/fieldgis-reference/commit/5772de11e7b7262b0272deb7881274cff55438be)
 
 ただし、#289 merge後のcurrent `main` を再確認すると、その拡張時に削除された既存fail-closed検証（stale-state rejection、ordered activation sequence、preview visual/workflow QA validation）はまだ復元されていません。mergeやモデル継承の事実と、それらのreview指摘が実装済みかどうかは分けて扱います。
 
 - [fail-closed検証の復元を求めたreview](https://github.com/lundus88/fieldgis-reference/pull/289#pullrequestreview-5254935377)
 - [merge後のcurrent mainに残る3 regressionを示したfollow-up](https://github.com/lundus88/fieldgis-reference/issues/289#issuecomment-5740198762)
 
-**公開記録で確認できること:** 公開コメント → 第三者governance実装 → 独立review approval → merge → 同じcurrent-authority modelのdomain/email readiness・provider selection・subscription evidenceへの継続利用。  
+**公開記録で確認できること:** 公開コメント → 第三者governance実装 → 独立review approval → merge → 同じcurrent-authority modelのdomain/email readiness・provider selection・有料subscription evidenceへのprompt-freeな継続利用 → #291でも独立review approval → merge。  
 **この記録だけでは確認できないこと:** 唯一の原因であること、本番launch、顧客規模の効果、別personによる独立reuse、業界全体での再利用、理論体系全体への支持。
 
 ---
@@ -423,6 +425,39 @@ content-stable payload reuse
 
 **公開記録から確認できること:** review → third-party authorによる残存問題の明示的確認・再説明 → maintainer-level専用work item化。  
 **まだ確認できないこと:** #23083のcontract決定、follow-up code/test実装、merge、release、deployment、実利用規模。
+
+## 17. Publications｜可逆性とauthority増加を別の設計軸として扱う
+
+**対象:** [kishibashi3/publications#52](https://github.com/kishibashi3/publications/pull/52) → [issue #9](https://github.com/kishibashi3/publications/issues/9)  
+**現在状態:** PR #52 open / issue #9でfollow-up項目を追跡中 / follow-up本文変更は未確認
+
+PR #52では、AI agentの自律実行について「不可逆操作は人間承認へ通す」という条件が提案されていました。 `Nakagawa-master` のreviewは、操作自体を元に戻せるかどうかと、その操作によって主体自身の次の行動可能範囲が広がるかどうかは別の設計軸だと指摘しました。
+
+具体例として、Local Operatorで確認された `ask → auto` のような変更は後から戻せても、戻す前に人間approvalなしの外部作用を可能にします。そのため、
+
+```text
+reversible
+!=
+authority-neutral
+```
+
+として、authority-increasing transitionを通常操作から分離し、制約対象の主体自身を制約解除のauthority sourceにしないこと、tighteningとlooseningを非対称に扱うことを提案しました。
+
+- [Nakagawa-master review](https://github.com/kishibashi3/publications/pull/52#pullrequestreview-5258131687)
+- [third-party author response](https://github.com/kishibashi3/publications/pull/52#issuecomment-5746627251)
+
+repository authorはこの指摘について、**本文に欠けている独立軸だと明示的に認め**、可逆性とは独立して扱う必要があることを自分の言葉で再説明しました。また、Local Operatorのnegative / positive / tightening controlを実装側の裏付けとして参照する意向を示し、この論点を別PRで扱う方針を表明しました。
+
+その後、issue #9に未完了項目として **「第5章 条件5 に authority-increasing transition の軸を追加」** が追加され、外部review由来であることと、条件5の拡張か第6条件化かを理論確認後に決めることが記録されています。
+
+- [issue #9 follow-up backlog](https://github.com/kishibashi3/publications/issues/9#issuecomment-5746628084)
+- [Local Operator origin finding #1310](https://github.com/damianvtran/local-operator/issues/1310)
+- [Local Operator third-party implementation #1324](https://github.com/damianvtran/local-operator/pull/1324)
+
+**公開記録から確認できること:** review → third-party authorによる独立した再説明 → 自分の公開文書backlogへの明示的な取り込み → follow-up PRで扱う意思表明。  
+**まだ確認できないこと:** follow-up PRの作成、本文変更、merge、公開サイトへの反映、その後の読者規模・再利用。
+
+---
 
 ## このページから言えること／言えないこと
 
