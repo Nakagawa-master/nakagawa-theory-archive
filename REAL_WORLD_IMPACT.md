@@ -428,8 +428,8 @@ content-stable payload reuse
 
 ## 17. Publications｜可逆性とauthority増加を別の設計軸として扱う
 
-**対象:** [kishibashi3/publications#52](https://github.com/kishibashi3/publications/pull/52) → [issue #9](https://github.com/kishibashi3/publications/issues/9)  
-**現在状態:** PR #52 open / issue #9でfollow-up項目を追跡中 / follow-up本文変更は未確認
+**対象:** [kishibashi3/publications#52](https://github.com/kishibashi3/publications/pull/52) → [issue #9](https://github.com/kishibashi3/publications/issues/9) → [PR #57](https://github.com/kishibashi3/publications/pull/57)  
+**現在状態:** PR #52 open / follow-up PR #57 open・本文実装済み / merge・公開サイト反映は未確認
 
 PR #52では、AI agentの自律実行について「不可逆操作は人間承認へ通す」という条件が提案されていました。 `Nakagawa-master` のreviewは、操作自体を元に戻せるかどうかと、その操作によって主体自身の次の行動可能範囲が広がるかどうかは別の設計軸だと指摘しました。
 
@@ -448,14 +448,21 @@ authority-neutral
 
 repository authorはこの指摘について、**本文に欠けている独立軸だと明示的に認め**、可逆性とは独立して扱う必要があることを自分の言葉で再説明しました。また、Local Operatorのnegative / positive / tightening controlを実装側の裏付けとして参照する意向を示し、この論点を別PRで扱う方針を表明しました。
 
-その後、issue #9に未完了項目として **「第5章 条件5 に authority-increasing transition の軸を追加」** が追加され、外部review由来であることと、条件5の拡張か第6条件化かを理論確認後に決めることが記録されています。
+その後、issue #9に未完了項目として **「第5章 条件5 に authority-increasing transition の軸を追加」** が追加され、外部review由来であることと、条件5の拡張か第6条件化かを理論確認後に決めることが記録されました。
 
 - [issue #9 follow-up backlog](https://github.com/kishibashi3/publications/issues/9#issuecomment-5746628084)
+
+さらにrepository authorは専用follow-up PR #57を起票しました。PR本文は起点を **“PR #52 の review コメント（@Nakagawa-master）”** と明記し、第5章の条件を5つから6つへ拡張して **「自己権限の固定 ― 制約される側が制約を緩められない」** を追加しています。
+
+#57の本文では、可逆性とauthority増加を独立軸として定義し、承認モード緩和・role昇格・allowlist拡張・新規credential accessを例示しています。また、制約対象の主体自身を制約解除authorityの発行元にしないこと、looseningだけを別approvalへ通しtighteningは通常経路に残す非対称性を明文化しました。第7章の実務チェックリストにもこの条件が追加されています。
+
+- [follow-up PR #57](https://github.com/kishibashi3/publications/pull/57)
+- [Nakagawa-master origin-side scope confirmation on #57](https://github.com/kishibashi3/publications/pull/57#pullrequestreview-5259088490)
 - [Local Operator origin finding #1310](https://github.com/damianvtran/local-operator/issues/1310)
 - [Local Operator third-party implementation #1324](https://github.com/damianvtran/local-operator/pull/1324)
 
-**公開記録から確認できること:** review → third-party authorによる独立した再説明 → 自分の公開文書backlogへの明示的な取り込み → follow-up PRで扱う意思表明。  
-**まだ確認できないこと:** follow-up PRの作成、本文変更、merge、公開サイトへの反映、その後の読者規模・再利用。
+**公開記録から確認できること:** review → third-party authorによる独立した再説明 → 公開文書backlogへの明示的な取り込み → 専用follow-up PR → 本文・CHANGELOG・実務チェックリストへの実装 → origin-side scope確認。  
+**まだ確認できないこと:** #57のmerge、公開サイトへの反映、その後の読者規模・別人による再利用。
 
 ---
 
