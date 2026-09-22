@@ -2,7 +2,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**最終確認: 2026-09-19**
+**最終確認: 2026-09-23**
 
 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）は、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
 
@@ -426,14 +426,12 @@ content-stable payload reuse
 **公開記録から確認できること:** review → third-party authorによる残存問題の明示的確認・再説明 → maintainer-level専用work item化。  
 **まだ確認できないこと:** #23083のcontract決定、follow-up code/test実装、merge、release、deployment、実利用規模。
 
-## 17. Publications｜可逆性とauthority増加を別の設計軸として扱う
+## 17. Publications｜可逆性とauthority増加を別軸として第三者本文へ実装し、別文書へ再利用
 
-**対象:** [kishibashi3/publications#52](https://github.com/kishibashi3/publications/pull/52) → [issue #9](https://github.com/kishibashi3/publications/issues/9) → [PR #57](https://github.com/kishibashi3/publications/pull/57)  
-**現在状態:** PR #52 open / follow-up PR #57 open・本文実装済み / merge・公開サイト反映は未確認
+**対象:** [kishibashi3/publications#52](https://github.com/kishibashi3/publications/pull/52) → [PR #57](https://github.com/kishibashi3/publications/pull/57) → [PR #58](https://github.com/kishibashi3/publications/pull/58)  
+**現在状態:** #57 merged / GitHub Pages反映確認済み、#58 merged / 同一receiver内の別文書へ再利用
 
-PR #52では、AI agentの自律実行について「不可逆操作は人間承認へ通す」という条件が提案されていました。 `Nakagawa-master` のreviewは、操作自体を元に戻せるかどうかと、その操作によって主体自身の次の行動可能範囲が広がるかどうかは別の設計軸だと指摘しました。
-
-具体例として、Local Operatorで確認された `ask → auto` のような変更は後から戻せても、戻す前に人間approvalなしの外部作用を可能にします。そのため、
+PR #52で `Nakagawa-master` のreviewは、操作を元に戻せるかどうかと、その操作が主体自身の将来の行動可能範囲を広げるかどうかを分離しました。
 
 ```text
 reversible
@@ -441,28 +439,27 @@ reversible
 authority-neutral
 ```
 
-として、authority-increasing transitionを通常操作から分離し、制約対象の主体自身を制約解除のauthority sourceにしないこと、tighteningとlooseningを非対称に扱うことを提案しました。
+そのreviewは、制約対象の主体自身を制約解除のauthority sourceにしないこと、looseningとtighteningを非対称に扱うことを提案しました。
 
-- [Nakagawa-master review](https://github.com/kishibashi3/publications/pull/52#pullrequestreview-5258131687)
-- [third-party author response](https://github.com/kishibashi3/publications/pull/52#issuecomment-5746627251)
+- [Nakagawa-master review on #52](https://github.com/kishibashi3/publications/pull/52#pullrequestreview-5258131687)
+- [third-party author restatement](https://github.com/kishibashi3/publications/pull/52#issuecomment-5746627251)
 
-repository authorはこの指摘について、**本文に欠けている独立軸だと明示的に認め**、可逆性とは独立して扱う必要があることを自分の言葉で再説明しました。また、Local Operatorのnegative / positive / tightening controlを実装側の裏付けとして参照する意向を示し、この論点を別PRで扱う方針を表明しました。
+receiverはこの指摘を独立した設計軸として再説明し、専用PR #57を起票しました。PR本文は起点を **PR #52 の @Nakagawa-master review** と明記し、第6条件「自己権限の固定 ― 制約される側が制約を緩められない」を本文・CHANGELOG・実務チェックへ実装しました。
 
-その後、issue #9に未完了項目として **「第5章 条件5 に authority-increasing transition の軸を追加」** が追加され、外部review由来であることと、条件5の拡張か第6条件化かを理論確認後に決めることが記録されました。
+- [PR #57](https://github.com/kishibashi3/publications/pull/57)
+- [merge commit `4d32ec58`](https://github.com/kishibashi3/publications/commit/4d32ec58d5cbf1c904c432552e114c144186c064)
+- [GitHub Pages deployment](https://github.com/kishibashi3/publications/actions/runs/35506196582)
+- [merged reader-facing chapter](https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md)
 
-- [issue #9 follow-up backlog](https://github.com/kishibashi3/publications/issues/9#issuecomment-5746628084)
+さらにPR #58では、receiver側reviewerが#57でmergeされた条件と別の規範文書のD4/D7が衝突することを見つけ、D8「自己権限の固定」を別文書へ追加するよう提案しました。writerが採用し、再reviewでLGTMとなった後、#58もmergeされました。
 
-さらにrepository authorは専用follow-up PR #57を起票しました。PR本文は起点を **“PR #52 の review コメント（@Nakagawa-master）”** と明記し、第5章の条件を5つから6つへ拡張して **「自己権限の固定 ― 制約される側が制約を緩められない」** を追加しています。
+- [#58 reviewer carry into D8](https://github.com/kishibashi3/publications/pull/58#issuecomment-5749116909)
+- [D8 implementation commit](https://github.com/kishibashi3/publications/commit/e524c71d9f01045f4c8dac60a8ee8bb45a3198c4)
+- [#58 re-review](https://github.com/kishibashi3/publications/pull/58#issuecomment-5749456249)
+- [#58 merge commit `36e4c5df`](https://github.com/kishibashi3/publications/commit/36e4c5df963e2b3645c7591d8cb933c4f36e48e0)
 
-#57の本文では、可逆性とauthority増加を独立軸として定義し、承認モード緩和・role昇格・allowlist拡張・新規credential accessを例示しています。また、制約対象の主体自身を制約解除authorityの発行元にしないこと、looseningだけを別approvalへ通しtighteningは通常経路に残す非対称性を明文化しました。第7章の実務チェックリストにもこの条件が追加されています。
-
-- [follow-up PR #57](https://github.com/kishibashi3/publications/pull/57)
-- [Nakagawa-master origin-side scope confirmation on #57](https://github.com/kishibashi3/publications/pull/57#pullrequestreview-5259088490)
-- [Local Operator origin finding #1310](https://github.com/damianvtran/local-operator/issues/1310)
-- [Local Operator third-party implementation #1324](https://github.com/damianvtran/local-operator/pull/1324)
-
-**公開記録から確認できること:** review → third-party authorによる独立した再説明 → 公開文書backlogへの明示的な取り込み → 専用follow-up PR → 本文・CHANGELOG・実務チェックリストへの実装 → origin-side scope確認。  
-**まだ確認できないこと:** #57のmerge、公開サイトへの反映、その後の読者規模・別人による再利用。
+**公開記録から確認できること:** origin-preserved review → third-party restatement → 専用reader-facing本文実装 → merge / Pages反映 → 同じreceiver内の別文書で整合条件として再利用 → merge。  
+**まだ確認できないこと:** #58を別のpublic-site publicationとして数えること、別receiverによる独立carry、大規模読者反応、広範な人間認知、理論体系全体への支持。
 
 ---
 
