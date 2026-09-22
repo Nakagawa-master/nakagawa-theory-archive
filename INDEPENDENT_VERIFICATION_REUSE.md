@@ -111,6 +111,14 @@ A submission does **not** establish:
 - that provenance proves truth;
 - that a theory distinction replaces domain-specific engineering, legal, safety, or professional requirements.
 
+## Theory-to-influence bridge
+
+Before submitting or reusing a case, you can inspect how the archive connects public theory, structural distinctions, external implementation, independent carry, and Origin:
+
+- [From Theory to Real-World Influence](THEORY_TO_REAL_WORLD_INFLUENCE.md)
+
+This route is especially useful when you want to test whether an external case is merely a generic best practice or whether it preserves a specific, inspectable causal connection back to the Nakagawa Master theory corpus.
+
 ## Independent-reuse signal
 
 The strongest signal for the current public research program is not another self-authored explanation. It is a case where:
