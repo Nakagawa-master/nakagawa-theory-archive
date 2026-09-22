@@ -214,6 +214,43 @@ For the related public distinction between historical evidence and current execu
 
 The provenance route matters here because the published article itself intentionally keeps people secondary to the records. The source relationship can still be inspected through the public review thread, while this archive supplies the return path from the external effect to the broader underlying distinction.
 
+### An origin-preserved public publication example
+
+A separate publication chain preserves the source relationship directly in third-party reader-facing text.
+
+In `kishibashi3/publications`, a Nakagawa Master review on PR #52 separated **reversibility** from an **authority-increasing transition**: an operation can be reversible while still increasing what an agent is allowed to do. The receiver then created PR #57 and explicitly identified the Nakagawa review as the origin of the added condition.
+
+PR #57 added a sixth structural condition, summarized as:
+
+```text
+self-authority must remain fixed
+→ the constrained actor must not be able to loosen its own constraints
+```
+
+The merged chapter also links the public `@Nakagawa-master` identity and the external implementation cases used in the review.
+
+Evidence:
+
+- [PR #52, the source review thread](https://github.com/kishibashi3/publications/pull/52)
+- [PR #57, explicitly naming the PR #52 Nakagawa review as its trigger](https://github.com/kishibashi3/publications/pull/57)
+- [Merged reader-facing chapter](https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md)
+- [Merge commit](https://github.com/kishibashi3/publications/commit/4d32ec58d5cbf1c904c432552e114c144186c064)
+- [Successful GitHub Pages deployment for that merge](https://github.com/kishibashi3/publications/actions/runs/35506196582)
+
+The structure then affected another document inside the receiver's publication system. During review of PR #58, the receiver-side reviewer explicitly noticed that the existing D4/D7 wording conflicted with the newly merged condition from PR #57 and proposed a separate D8. The writer adopted that change, a later review marked it LGTM, and PR #58 merged:
+
+- [PR #58 reviewer carry from PR #57 into D8](https://github.com/kishibashi3/publications/pull/58#issuecomment-5749116909)
+- [D8 implementation commit](https://github.com/kishibashi3/publications/commit/e524c71d9f01045f4c8dac60a8ee8bb45a3198c4)
+- [PR #58 re-review](https://github.com/kishibashi3/publications/pull/58#issuecomment-5749456249)
+- [PR #58 merge commit](https://github.com/kishibashi3/publications/commit/36e4c5df963e2b3645c7591d8cb933c4f36e48e0)
+
+The second document remains under the receiver's `drafts/` path, so this page does **not** count it as a second public-site publication or as second-person human carry. What it does show is narrower: a source-attributed distinction was merged and deployed in reader-facing third-party material, then became an internal consistency constraint for another document in the same independent publication system.
+
+For related public boundaries, see:
+
+- [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
+- [Practical Boundary Checks](PRACTICAL_BOUNDARY_CHECKS.md)
+
 ---
 
 ## 5. How this connects back to Nakagawa Master
