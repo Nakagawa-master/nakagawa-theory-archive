@@ -2,7 +2,7 @@
 
 语言: [日本語](REAL_WORLD_IMPACT.md) | [English](REAL_WORLD_IMPACT.en.md) | **中文**
 
-**最后确认：2026-09-19**
+**最后确认：2026-09-23**
 
 中川大师（Nakagawa Master）是Keisuke Nakagawa的笔名。在社交媒体上也使用“マスター（Master）”，部分外部投稿使用“MasterJP”名义。
 
@@ -345,7 +345,7 @@ PR author明确点名 `@Nakagawa-master`，确认delete routes一直没有role e
 ## 15. FieldGIS Reference｜把历史PASS记录束成一次性的activation snapshot
 
 **对象：** [lundus88/fieldgis-reference#273](https://github.com/lundus88/fieldgis-reference/issues/273) → [PR #288](https://github.com/lundus88/fieldgis-reference/pull/288) → [PR #289](https://github.com/lundus88/fieldgis-reference/pull/289) → [PR #290](https://github.com/lundus88/fieldgis-reference/pull/290) → [PR #291](https://github.com/lundus88/fieldgis-reference/pull/291)  
-**当前状态：** #288 / #289 / #290已merge；#291 open（2026-09-20确认）
+**当前状态：** #288 / #289 / #290 / #291均已merge（2026-09-20确认）
 
 `Nakagawa-master` 的公开comment区分了“历史PASS证据存在”和“当前有权activate商业系统”。该comment提出，把exact artifact、review证据、business/licence证据、Preview identity、provider/configuration fingerprint、policy version、decision time以及失效/重新验证规则绑定进一个activation snapshot。
 
@@ -398,6 +398,43 @@ content-stable payload reuse
 
 **公开可确认：** review → 第三方明确确认/重述 → 专门maintainer-level work item。  
 **尚未确认：** #23083 contract决定、follow-up code/tests、merge、release、deployment或用户规模影响。
+
+---
+
+## 17. Publications｜把可逆性与authority增加分开，并在另一份文档中继续复用
+
+**对象：** [kishibashi3/publications#52](https://github.com/kishibashi3/publications/pull/52) → [PR #57](https://github.com/kishibashi3/publications/pull/57) → [PR #58](https://github.com/kishibashi3/publications/pull/58)  
+**当前状态：** #57 merged / 已确认GitHub Pages反映；#58 merged / 在同一receiver的另一份文档中继续复用
+
+PR #52中的 `Nakagawa-master` review区分了“操作可以撤回”与“该操作是否扩大同一主体未来可以做什么”：
+
+```text
+reversible
+!=
+authority-neutral
+```
+
+该review提出：受约束主体本身不应成为放宽自身约束的authority source；loosening与tightening不必使用对称的approval规则。
+
+- [Nakagawa-master review on #52](https://github.com/kishibashi3/publications/pull/52#pullrequestreview-5258131687)
+- [第三方author重述](https://github.com/kishibashi3/publications/pull/52#issuecomment-5746627251)
+
+receiver把这一点重新解释为正文缺失的独立设计轴，并建立PR #57。该PR明确把PR #52的 `@Nakagawa-master` review写为起点，并增加第6个结构条件：**“自己权限固定——受约束的一方不能自行放宽自己的约束。”**
+
+- [PR #57](https://github.com/kishibashi3/publications/pull/57)
+- [merge commit `4d32ec58`](https://github.com/kishibashi3/publications/commit/4d32ec58d5cbf1c904c432552e114c144186c064)
+- [GitHub Pages deployment](https://github.com/kishibashi3/publications/actions/runs/35506196582)
+- [已merge的reader-facing chapter](https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md)
+
+之后，这一区分又成为receiver内部另一份文档的整合条件。在PR #58中，receiver侧reviewer发现原有D4/D7与#57中新merge的条件发生冲突，因此提出独立的D8“自己权限固定”。writer采用该修改，后续review给出LGTM，PR #58随后merge。
+
+- [#58 reviewer carry into D8](https://github.com/kishibashi3/publications/pull/58#issuecomment-5749116909)
+- [D8 implementation commit](https://github.com/kishibashi3/publications/commit/e524c71d9f01045f4c8dac60a8ee8bb45a3198c4)
+- [#58 re-review](https://github.com/kishibashi3/publications/pull/58#issuecomment-5749456249)
+- [#58 merge commit `36e4c5df`](https://github.com/kishibashi3/publications/commit/36e4c5df963e2b3645c7591d8cb933c4f36e48e0)
+
+**公开可确认：** 保留origin的review → 第三方重述 → 专门的reader-facing正文实现 → merge / Pages反映 → 在同一receiver的另一份文档中作为一致性条件继续复用 → merge。  
+**尚未确认：** 把#58计为第二个独立public-site publication、不同receiver的独立carry、大规模reader response、广泛人类认知、或对完整理论体系的认可。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 
