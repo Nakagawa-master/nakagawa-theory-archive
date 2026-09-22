@@ -155,9 +155,9 @@ Public evidence:
 - [Merge commit](https://github.com/PostHog/posthog/commit/6e2c760dadbaba764c83e93900c3510e6a703c03)
 - [Deployment status](https://github.com/PostHog/posthog/pull/102550#issuecomment-5722917557), showing deployment to dev, prod-eu, and prod-us
 
-The same external maintainer later reused the same distinction on [PostHog #102686](https://github.com/PostHog/posthog/pull/102686) without a fresh Nakagawa prompt. That downstream PR is still open/unmerged, so do not treat it as a second deployment.
+The same external maintainer later reused the same distinction on [PostHog #102686](https://github.com/PostHog/posthog/pull/102686) without a fresh Nakagawa prompt. That downstream PR was merged on 2026-09-18 ([merge commit](https://github.com/PostHog/posthog/commit/0d533b34e67923055b6912aca93b6d60eb98bd09)) and its deploy-status record shows deployment to dev, prod-us, and prod-eu.
 
-This case supports only the bounded statement that a specific provenance distinction changed third-party implementation, merged, deployed, and was later reused on another surface. It does not establish user-scale outcome or whole-system endorsement.
+This case supports only the bounded statement that a specific provenance distinction changed third-party implementation, merged and deployed, and was then reused on another merged/deployed surface by the same external maintainer. It does not establish second-person Nakagawa attribution on #102686, user-scale outcome, or whole-system endorsement.
 
 ## What to do with a result
 
