@@ -2,7 +2,7 @@
 
 Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**Last checked: 2026-09-19**
+**Last checked: 2026-09-23**
 
 Nakagawa Master is the pen name of Keisuke Nakagawa. On social media, the name “マスター” (“Master”) is also used; some external posts use “MasterJP.”
 
@@ -398,6 +398,43 @@ together with a regenerated-chunk-id regression that makes the choice observable
 
 **Publicly verifiable here:** review → explicit third-party confirmation/restatement → dedicated maintainer-level work item.  
 **Not established here:** the #23083 contract decision, follow-up code/tests, merge, release, deployment, or user-scale effect.
+
+---
+
+## 17. Publications | Separate reversibility from authority increase, then reuse the boundary in another document
+
+**Surface:** [kishibashi3/publications#52](https://github.com/kishibashi3/publications/pull/52) → [PR #57](https://github.com/kishibashi3/publications/pull/57) → [PR #58](https://github.com/kishibashi3/publications/pull/58)  
+**Current state:** #57 merged / GitHub Pages deployment verified; #58 merged / reused inside the same receiver's separate document
+
+A `Nakagawa-master` review on PR #52 separated whether an operation can be reversed from whether it increases what the same actor is allowed to do next:
+
+```text
+reversible
+!=
+authority-neutral
+```
+
+The review proposed that the constrained actor should not be the authority that loosens its own constraints, and that loosening and tightening do not need symmetric approval rules.
+
+- [Nakagawa-master review on #52](https://github.com/kishibashi3/publications/pull/52#pullrequestreview-5258131687)
+- [third-party author restatement](https://github.com/kishibashi3/publications/pull/52#issuecomment-5746627251)
+
+The receiver restated this as a missing independent design axis and opened PR #57. The PR explicitly names the PR #52 `@Nakagawa-master` review as its trigger and adds a sixth structural condition: **self-authority remains fixed — the constrained actor cannot loosen its own constraints**.
+
+- [PR #57](https://github.com/kishibashi3/publications/pull/57)
+- [merge commit `4d32ec58`](https://github.com/kishibashi3/publications/commit/4d32ec58d5cbf1c904c432552e114c144186c064)
+- [GitHub Pages deployment](https://github.com/kishibashi3/publications/actions/runs/35506196582)
+- [merged reader-facing chapter](https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md)
+
+The boundary then became a consistency constraint inside the receiver's publication system. In PR #58, a receiver-side reviewer identified a conflict with the newly merged condition from #57 and proposed a separate D8 “self-authority fixed” rule. The writer adopted it, a later review marked the revision LGTM, and #58 merged.
+
+- [#58 reviewer carry into D8](https://github.com/kishibashi3/publications/pull/58#issuecomment-5749116909)
+- [D8 implementation commit](https://github.com/kishibashi3/publications/commit/e524c71d9f01045f4c8dac60a8ee8bb45a3198c4)
+- [#58 re-review](https://github.com/kishibashi3/publications/pull/58#issuecomment-5749456249)
+- [#58 merge commit `36e4c5df`](https://github.com/kishibashi3/publications/commit/36e4c5df963e2b3645c7591d8cb933c4f36e48e0)
+
+**Publicly verifiable here:** origin-preserved review → third-party restatement → dedicated reader-facing implementation → merge / Pages deployment → reuse as a consistency rule in another document inside the same receiver → merge.  
+**Not established here:** that #58 is a second independent public-site publication, carry by a different receiver, broad reader response, mass human recognition, or endorsement of the full theory corpus.
 
 ## What this page supports — and what it does not
 
