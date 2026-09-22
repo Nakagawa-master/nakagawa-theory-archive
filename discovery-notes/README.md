@@ -154,6 +154,12 @@ The implementation case records a bounded external engineering example in which 
 
 This non-canonical route starts from a practical migration and seeded-record problem: identifying the same record does not by itself establish who owns the authoritative state or whether convergence should overwrite, preserve, merge, or refuse. The case records a bounded external MemberJunction chain in which the distinction was independently reproduced, carried through code/tests/docs, reviewed, and merged into the project's `next` branch. It does **not** claim release, deployment, broad endorsement, or adoption of an entire Nakagawa Master theory.
 
+## Implementation case｜Origin-preserved carrier multiplication
+
+- [`Implementation Case: Origin-Preserved Carrier Multiplication`](implementation-case-origin-preserved-carrier-multiplication.md)
+
+This non-canonical route records two public transfer patterns: a review boundary independently becoming a new issue, and a second reviewer independently carrying and re-verifying a boundary into implementation changes. It distinguishes acknowledgment from independent restatement, new work surfaces, second-person carry, and implementation reuse while avoiding claims of broad reach or global intellectual priority.
+
 ## Cross-source comparison aids
 
 - [`recurring-structure-evidence-matrix.md`](recurring-structure-evidence-matrix.md)
