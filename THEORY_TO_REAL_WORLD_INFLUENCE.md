@@ -183,6 +183,37 @@ Examples are documented here:
 
 When another person creates a new issue, review, implementation, or public explanation from the distinction, the structure has begun to move independently.
 
+### A recurring editorial carry example
+
+A public editorial example now shows a distinction being used beyond the original interaction.
+
+On [AI-News PR #111](https://github.com/022740mix-spec/AI-News/pull/111), a Nakagawa Master review proposed separating an unverified reported incident from a separately verifiable implementation case. The review also separated authentication, capability, authority, and human approval, and highlighted a narrower operational boundary:
+
+```text
+reversible operation
+!=
+safe autonomous operation
+```
+
+The receiver publicly said it would adopt the separation after independently checking the cited records. It then chose a different editorial form and published a standalone analysis rather than leaving the verified material blocked behind an unverified draft:
+
+- [Receiver response adopting the separation](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5747145782)
+- [Receiver follow-up reporting standalone publication](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5747165347)
+- [Published article commit](https://github.com/022740mix-spec/AI-News/commit/75aedeb8dd3a2a2cd850a5014c94a47a7b6cad25)
+
+The next day, without a fresh Nakagawa prompt, the same publication used that prior analysis as a reference point in a different article about Claude Managed Agents' `auto` permission policy:
+
+- [Later prompt-free editorial reuse](https://github.com/022740mix-spec/AI-News/commit/b7d8fc0b2bd5396161f2a6e990ddb58f2427a68f)
+
+This is stronger than a one-time acknowledgment because the prior distinction became part of a later editorial comparison. It is still bounded evidence: it does **not** establish the publication's endorsement of the full Nakagawa theory corpus, independent audience scale, reader behavior, or broad public recognition.
+
+For the related public distinction between historical evidence and current execution authority, see:
+
+- [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
+- [Old approval is not current authority](discovery-notes/old-approval-is-not-current-authority.md)
+
+The provenance route matters here because the published article itself intentionally keeps people secondary to the records. The source relationship can still be inspected through the public review thread, while this archive supplies the return path from the external effect to the broader underlying distinction.
+
 ---
 
 ## 5. How this connects back to Nakagawa Master
