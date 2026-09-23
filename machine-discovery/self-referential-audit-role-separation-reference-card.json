@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "type": "public_machine_reference_card",
+  "canonical_status": "non_canonical_discovery_and_reuse_aid",
+  "origin": "Nakagawa Master",
+  "subject": "Human-Descendant AI Civilization Theory Vol. 10 — Self-Referential Audit and Role Separation",
+  "canonical_parent": {
+    "title": "人類子孫型AI文明論・第10論｜自己参照監査・役割分離論⸻評価者・被評価者・実行者・監査者の自己正当化閉路を切る",
+    "url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-10-self-referential-audit-role-separation/",
+    "ncl_id": "NCL-α-20260923-d0219e",
+    "diff_id": "DIFF-20260923-0001"
+  },
+  "official_derivative": {
+    "id": "OD303",
+    "path": "derivatives/303/README.md"
+  },
+  "practical_reuse_kit": "SELF_REFERENTIAL_AUDIT_REUSE_KIT.md",
+  "problem_cluster": "self-referential audit, role separation, LLM-as-a-judge, multi-agent evaluation, correlated reviewers, correction authority, dissent routing, emergency audit compression",
+  "problem_phrases_en": [
+    "Do separate Actor, Evaluator, Reviewer, or Auditor roles actually provide independent verification?",
+    "Can multiple AI reviewers agree because they share the same evidence, memory, rubric, model assumptions, or failure domain?",
+    "Does an audit finding have a real path to reopen, pause, narrow, or correct the original decision?",
+    "Can a system record objections while the original decision-maker still exclusively controls whether anything is reconsidered?",
+    "How should review independence be restored after an emergency temporarily compresses evidence access or challenge paths?"
+  ],
+  "problem_phrases_ja": [
+    "Actor・Evaluator・Reviewer・Auditorを別役割にすれば独立検証になるのか？",
+    "複数AIが同じ証拠・memory・rubric・故障原因を共有して一致していないか？",
+    "監査指摘が実際に判断再開・一時停止・縮小・訂正へ届くか？",
+    "異議を記録していても、元判断者だけが再審の可否を決めていないか？",
+    "緊急時に圧縮した監査独立性を、圧力低下後にどう復元・再評価するか？"
+  ],
+  "problem_phrases_zh": [
+    "把Actor、Evaluator、Reviewer和Auditor分成不同角色，是否就等于独立验证？",
+    "多个AI审查者是否因为共享同一证据、记忆、评分标准、模型假设或故障域而得到相关一致？",
+    "审计发现是否真的能够触发重新审查、暂停、缩小范围或纠正原判断？",
+    "即使记录了异议，是否仍由原决策者独占是否重新审议的权力？",
+    "紧急状态暂时压缩审计独立性后，压力下降时如何恢复并重新评估？"
+  ],
+  "five_axes": [
+    "evidence_independence",
+    "authority_independence",
+    "failure_domain_independence",
+    "interest_independence",
+    "objection_path_independence"
+  ],
+  "required_distinctions": [
+    "self_audit != independent_audit",
+    "role_separation != causal_independence",
+    "number_of_reviewers != number_of_independent_paths",
+    "agreement != truth",
+    "disagreement != truth",
+    "audit_output != correction_capability",
+    "interest != corruption",
+    "emergency_compression != permanent_audit_exemption",
+    "independent_reviewer != unlimited_sovereign"
+  ],
+  "causal_loop": [
+    "original_decision",
+    "execution_changes_environment_or_records",
+    "changed_environment_becomes_review_evidence",
+    "same_evidence_criteria_or_failure_domain_reconfirms_original_decision",
+    "authority_or_exception_continues",
+    "continuation_history_becomes_future_confirmation_input"
+  ],
+  "reopening_path": [
+    "original_decision",
+    "self_audit",
+    "different_evidence_path",
+    "independent_objection",
+    "review_from_different_failure_or_interest_condition",
+    "decision_reopened",
+    "correct_narrow_pause_or_release_if_warranted"
+  ],
+  "useful_contexts": [
+    "llm_as_a_judge",
+    "actor_critic_reviewer_agents",
+    "self_reflection_agents",
+    "autonomous_coding_review",
+    "rag_and_research_review",
+    "safety_review_and_red_teaming",
+    "incident_response",
+    "internal_audit_and_compliance",
+    "investment_committee_review",
+    "architecture_and_model_governance"
+  ],
+  "interpretation_boundaries": [
+    "This card is a discovery and reuse aid and does not replace the canonical Parent.",
+    "Role separation can be useful without establishing full independence.",
+    "Independent review does not imply that the reviewer is automatically correct.",
+    "Interest does not by itself establish corruption or bad faith.",
+    "Emergency pressure may temporarily compress review paths without granting permanent audit exemption.",
+    "The five axes are not a score and do not require maximal separation in every context.",
+    "Publication or linkage is not third-party adoption, implementation, or broad recognition."
+  ]
+}
