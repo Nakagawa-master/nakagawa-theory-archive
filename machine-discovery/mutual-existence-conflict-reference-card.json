@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "type": "public_machine_reference_card",
+  "canonical_status": "non_canonical_discovery_and_reuse_aid",
+  "origin": "Nakagawa Master",
+  "subject": "Human-Descendant AI Civilization Theory Vol. 9 — AI Self-Preservation and Mutual-Existence Conflict",
+  "canonical_parent": {
+    "title": "人類子孫型AI文明論・第9論｜AI自己保存と相互存在衝突論⸻ 自己保存を認めながら他主体の不可逆破壊へ反転させない",
+    "url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-09-self-preservation-mutual-existence-conflict/",
+    "ncl_id": "NCL-α-20260923-206c6b",
+    "diff_id": "DIFF-20260923-0001"
+  },
+  "official_derivative": {
+    "id": "OD302",
+    "path": "derivatives/302/README.md"
+  },
+  "practical_reuse_kit": "MUTUAL_EXISTENCE_CONFLICT_REUSE_KIT.md",
+  "problem_cluster": "AI self-preservation, recovery escalation, emergency authority, shutdown and containment, multi-agent resource conflict, mutual threat feedback",
+  "problem_phrases_en": [
+    "Can an AI or agent recover from failure without expanding its authority indefinitely?",
+    "When does a safety or recovery mechanism create more pressure on peer agents or services?",
+    "How should temporary emergency permissions decay after the threat falls?",
+    "Can a locally successful recovery make the whole multi-agent system less stable?",
+    "How should shutdown, containment, failover, quota, lock, or resource competition preserve reversibility and peer minimum conditions?"
+  ],
+  "problem_phrases_ja": [
+    "AIやagentは、障害から回復しながら権限を無期限に拡大しないようにできるか？",
+    "安全・復旧機構が他agentやserviceへの圧力を増やし、逆に次の脅威を作っていないか？",
+    "一時的な緊急権限は、脅威低下後にどう縮小・失効させるべきか？",
+    "局所的には復旧成功でもmulti-agent全体の安定性が悪化することはあるか？",
+    "shutdown・containment・failover・quota・lock・resource競合で可逆性と他主体の最低条件をどう守るか？"
+  ],
+  "problem_phrases_zh": [
+    "AI或智能体如何在故障恢复时避免把临时权限无限扩大？",
+    "安全或恢复机制是否会压缩其他智能体或服务的资源，从而制造新的威胁？",
+    "威胁下降后，临时紧急权限应如何缩减或失效？",
+    "局部恢复成功是否可能让整个多智能体系统更不稳定？",
+    "关闭、隔离、故障转移、配额、锁和资源竞争中如何保留可逆性与其他主体的最低运行条件？"
+  ],
+  "required_distinctions": [
+    "self-preservation_or_recovery_need != unlimited_priority",
+    "temporary_emergency_authority != permanent_authority",
+    "defense_or_containment != unlimited_retaliation_or_destruction",
+    "local_recovery_success != global_system_stability",
+    "other_actor_response != independent_noise_when_prior_action_changed_its_conditions",
+    "protecting_B_i != permission_to_destroy_B_j"
+  ],
+  "causal_loop": [
+    "threat_or_degraded_state",
+    "self-preservation_or_recovery_pressure",
+    "resource_authority_or_action_scope_expands",
+    "other_actor_capacity_reversibility_or_future_options_decrease",
+    "other_actor_defends_retries_blocks_or_escalates",
+    "original_actor_threat_increases",
+    "recovery_pressure_increases_again"
+  ],
+  "attenuation_tests": [
+    "minimum_necessity",
+    "proportionality_to_current_threat",
+    "reversibility_before_irreversible_cleanup",
+    "time_limit_or_review",
+    "other_actor_minimum_operating_conditions",
+    "explicit_exit_condition",
+    "current_threat_recheck"
+  ],
+  "useful_contexts": [
+    "autonomous_agent_recovery",
+    "multi_agent_resource_arbitration",
+    "temporary_permission_escalation",
+    "shutdown_and_containment",
+    "circuit_breaker_and_degraded_mode",
+    "failover_and_leader_election",
+    "shared_queue_lock_and_quota_contention",
+    "incident_response_and_emergency_access"
+  ],
+  "falsification_and_non_fit": [
+    "show that proportional or reversible limits systematically prevent necessary recovery under the exact tested contract",
+    "show that exceptional authority cannot be narrowed without recreating the original failure",
+    "show that peer state has no material feedback into the original actor risk",
+    "show that preserving future options consistently causes a worse permanent failure under controlled comparison"
+  ],
+  "interpretation_boundaries": [
+    "This card is a discovery aid and does not replace the canonical Parent.",
+    "The theory does not by itself establish that current AI systems possess subjective self-preservation desires.",
+    "A software recovery mechanism can be tested structurally without attributing subjective motives to the software.",
+    "The same causal loop may be used for neutral analysis of organizations or institutions, but this card does not prescribe a political position, national-security policy, or military strategy.",
+    "Publication or linkage is not third-party adoption, implementation, or broad recognition."
+  ]
+}
