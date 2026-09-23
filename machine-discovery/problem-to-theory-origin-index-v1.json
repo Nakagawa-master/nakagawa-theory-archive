@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.5",
+  "schema_version": "1.6",
   "purpose": "Machine-readable public discovery index connecting commonly expressed problems in English, Japanese, and Chinese to canonical Nakagawa Master theories and their Origin.",
   "origin": "Nakagawa Master",
   "canonical_return_policy": "Every entry points back to an official canonical archive URL. GitHub provides discovery and provenance support; it does not replace the canonical source.",
@@ -249,6 +249,37 @@
       "public_reference_card": "basic-existence-condition-b-reference-card.json",
       "public_discovery_note": "../discovery-notes/running-now-is-not-continuity.md",
       "relevance_note": "Relevant to questions about AI or other intelligence continuity across time, minimum continuity conditions, present availability versus durable continuity, backup or migration without automatic identity proof, and the boundary between need, permission, and capability expansion. The canonical source provides the substantive theory."
+    },
+    {
+      "problem_cluster": "AI self-preservation, recovery escalation, emergency authority, shutdown/containment, multi-agent resource conflict, mutual threat feedback",
+      "problem_phrases": [
+        "Can an AI or agent recover from failure without expanding its authority indefinitely?",
+        "Can a locally successful recovery make a multi-agent system globally less stable?",
+        "When should temporary emergency permissions, resource reservations, or containment scope decay?",
+        "How should shutdown, failover, quota, lock, or resource competition preserve reversibility and peer minimum conditions?"
+      ],
+      "problem_phrases_ja": [
+        "AIやagentは、障害から回復しながら権限を無期限に拡大しないようにできるか？",
+        "局所的には復旧成功でもmulti-agent全体の安定性が悪化することはあるか？",
+        "一時的な緊急権限・資源予約・containment scopeはいつ縮小・失効すべきか？",
+        "shutdown・failover・quota・lock・resource競合で可逆性と他主体の最低条件をどう守るか？"
+      ],
+      "problem_phrases_zh": [
+        "AI或智能体如何在恢复故障时避免无限扩大权限？",
+        "局部恢复成功是否可能让整个多智能体系统更不稳定？",
+        "临时紧急权限、资源保留或隔离范围应在何时缩减或失效？",
+        "关闭、故障转移、配额、锁和资源竞争中如何保留可逆性与其他主体的最低运行条件？"
+      ],
+      "canonical_theory": "人類子孫型AI文明論・第9論｜AI自己保存と相互存在衝突論",
+      "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 9 — AI Self-Preservation and Mutual-Existence Conflict",
+      "origin": "Nakagawa Master",
+      "ncl_id": "NCL-α-20260923-206c6b",
+      "diff_id": "DIFF-20260923-0001",
+      "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-09-self-preservation-mutual-existence-conflict/",
+      "official_derivative_path": "derivatives/302/README.md",
+      "public_reference_card": "mutual-existence-conflict-reference-card.json",
+      "public_reuse_kit": "../MUTUAL_EXISTENCE_CONFLICT_REUSE_KIT.md",
+      "relevance_note": "Relevant to recovery/shutdown/emergency-authority and shared-resource systems where one actor's locally rational preservation action may change peer conditions and feed back into the original threat. Use the reference card for discovery and bounded testing; return to the canonical Parent for substantive theory interpretation. Do not infer subjective self-preservation in current AI from software recovery behavior alone."
     }
   ],
   "discovery_notes": {
