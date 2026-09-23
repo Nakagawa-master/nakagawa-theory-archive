@@ -124,6 +124,25 @@
         "a narrower contract proving the measurement surface is invariant enough that a control panel adds no information",
         "counterexample showing the proposed control design creates a misleading comparison"
       ]
+    },
+    {
+      "id": "H-mutual-existence-conflict",
+      "distinction": "self-preservation or recovery need != unlimited priority, authority, resource capture, or irreversible harm to other actors",
+      "reproduction_kit": "MUTUAL_EXISTENCE_CONFLICT_REUSE_KIT.md",
+      "reference_card": "machine-discovery/mutual-existence-conflict-reference-card.json",
+      "test": "Find a real non-confidential recovery, emergency, shutdown, failover, containment, or multi-agent resource mechanism. Induce or inspect a degraded state, observe any temporary expansion of resources/authority/action scope, then test whether the exceptional scope decays when the threat falls and whether peer reactions were amplified by the recovery action itself.",
+      "positive_evidence": [
+        "exceptional authority or resources expire or narrow after threat reduction",
+        "peer minimum operating capacity is restored",
+        "countermeasure strength tracks current threat rather than historical peak threat",
+        "reversible containment is preferred when it satisfies the actual safety need",
+        "the system records whether its own recovery action increased peer retry, block, escalation, or defensive pressure"
+      ],
+      "useful_negative_evidence": [
+        "counterexample showing that narrowing the exceptional scope recreates the original failure under the exact tested conditions",
+        "evidence that peer state has no material feedback into the original actor risk",
+        "non-fit showing the mechanism is not meaningfully a multi-actor or mutual-feedback system"
+      ]
     }
   ],
   "evidence_boundary": [
