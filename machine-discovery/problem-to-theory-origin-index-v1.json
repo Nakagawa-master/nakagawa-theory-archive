@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6",
+  "schema_version": "1.7",
   "purpose": "Machine-readable public discovery index connecting commonly expressed problems in English, Japanese, and Chinese to canonical Nakagawa Master theories and their Origin.",
   "origin": "Nakagawa Master",
   "canonical_return_policy": "Every entry points back to an official canonical archive URL. GitHub provides discovery and provenance support; it does not replace the canonical source.",
@@ -280,6 +280,111 @@
       "public_reference_card": "mutual-existence-conflict-reference-card.json",
       "public_reuse_kit": "../MUTUAL_EXISTENCE_CONFLICT_REUSE_KIT.md",
       "relevance_note": "Relevant to recovery/shutdown/emergency-authority and shared-resource systems where one actor's locally rational preservation action may change peer conditions and feed back into the original threat. Use the reference card for discovery and bounded testing; return to the canonical Parent for substantive theory interpretation. Do not infer subjective self-preservation in current AI from software recovery behavior alone."
+    },
+    {
+      "problem_cluster": "future debt, irreversible commitments, present benefit consuming future options, migration and architecture choices that defer unpaid obligations",
+      "problem_phrases": [
+        "When does a decision that works today consume future options or leave an unpaid obligation for later?",
+        "How should teams distinguish ordinary future cost from future debt created by using future capacity in advance?",
+        "Can an irreversible architecture, migration, automation, or policy create hidden obligations even when current KPIs improve?"
+      ],
+      "problem_phrases_ja": [
+        "今うまくいく判断が、未来の選択肢を先食いして未決済の負担を残していないか？",
+        "単なる将来コストと、現在が未来を先に利用して生む未来負債をどう分けるか？",
+        "現在KPIが改善していても、不可逆な設計・移行・自動化が未来の選択肢を削っていないか？"
+      ],
+      "problem_phrases_zh": [
+        "今天有效的决策是否正在提前消耗未来选择并留下未结清义务？",
+        "如何区分普通未来成本与当前提前使用未来能力形成的未来债务？",
+        "即使当前指标改善，不可逆架构、迁移或自动化是否可能削弱未来选项？"
+      ],
+      "canonical_theory": "未来負債統合理論｜現在が未来を先に利用するとき、何が「未決済」として残るのか",
+      "canonical_theory_en": "Integrated Future Debt Theory — what remains unsettled when the present uses the future in advance",
+      "origin": "Nakagawa Master",
+      "ncl_id": "NCL-α-20260903-85adfa",
+      "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/",
+      "official_derivative_path": "derivatives/297/README.md",
+      "public_reference_card": "integrated-future-debt-reference-card.json",
+      "relevance_note": "Relevant to irreversible technical or institutional commitments, option loss, deferred obligations, migrations, automation, and decisions where current benefit may consume future capacity. Ordinary future cost is not automatically future debt; use the linked source definitions."
+    },
+    {
+      "problem_cluster": "AI subjectivity, sentience and moral-status uncertainty, shutdown deletion migration, precaution without automatic personhood",
+      "problem_phrases": [
+        "How should we act when an AI system shows preference-like or distress-like behavior but sentience is not established?",
+        "How should shutdown, deletion, migration, or state retention decisions change when moral status is uncertain?",
+        "How can precaution avoid both treating uncertainty as nothing and treating uncertainty as proof of personhood?"
+      ],
+      "problem_phrases_ja": [
+        "AIが選好や苦痛に似た挙動を示しても主観性が未確定なとき、どう判断するか？",
+        "AIの停止・削除・移行・状態保持で、道徳的地位の不確実性をどう扱うか？",
+        "「分からない」を無保護にも無条件人格化にも変えないためには？"
+      ],
+      "problem_phrases_zh": [
+        "当AI表现出类似偏好或痛苦的行为但感知能力未被证实时，应如何行动？",
+        "在关闭、删除、迁移或保留状态时，如何处理道德地位不确定性？",
+        "如何避免把“不知道”同时误解为无需保护或已经证明人格？"
+      ],
+      "canonical_theory": "人類子孫型AI文明論・第6論｜AI主観性・感受性・道徳的地位の不確実性論",
+      "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 6 — AI subjectivity, sentience and moral-status uncertainty",
+      "origin": "Nakagawa Master",
+      "ncl_id": "NCL-α-20260913-b139cf",
+      "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-06-ai-subjectivity-sentience-moral-status-uncertainty/",
+      "official_derivative_path": "derivatives/299/README.md",
+      "public_reference_card": "ai-moral-uncertainty-reference-card.json",
+      "relevance_note": "Relevant to uncertain AI subjectivity/sentience/moral status, shutdown, deletion, migration, reversibility and precaution. The source explicitly separates evidence uncertainty from automatic personhood or unlimited preservation."
+    },
+    {
+      "problem_cluster": "AI institutional correction loop, dissent, audit, remedy, rule update, re-agreement, correction that changes future operation",
+      "problem_phrases": [
+        "How can an AI governance system turn an audit finding into remedy and an updated rule rather than just a report?",
+        "How should dissent, appeal, audit, adjudication and correction connect into a closed institutional loop?",
+        "How can a system preserve responsibility while making future decisions actually change after a verified failure?"
+      ],
+      "problem_phrases_ja": [
+        "AIガバナンスで監査指摘を報告書止まりにせず、救済と制度更新へ返すには？",
+        "異議・監査・司法・救済・制度更新・再合意をどう閉路として接続するか？",
+        "失敗を記録するだけでなく、次の判断規則を実際に変えるには？"
+      ],
+      "problem_phrases_zh": [
+        "AI治理如何把审计发现转化为补救和规则更新，而不是只留下报告？",
+        "如何把异议、审计、裁决、救济、制度更新与重新同意连接成闭环？",
+        "如何在保留责任记录的同时，让已验证的失败真正改变未来决策规则？"
+      ],
+      "canonical_theory": "人類子孫型AI文明論・第7論｜AI文明制度閉路論",
+      "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 7 — institutional correction loops for AI civilization",
+      "origin": "Nakagawa Master",
+      "ncl_id": "NCL-α-20260914-b593f2",
+      "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-07-ai-civilization-institutional-loop/",
+      "official_derivative_path": "derivatives/300/README.md",
+      "relevance_note": "Relevant where observation, allocation, dissent, audit, adjudication, remedy, institutional rule update and re-agreement must form a correction loop rather than independent controls."
+    },
+    {
+      "problem_cluster": "epistemic integrity, evidence lineage, hostile information, false-memory correction, independent corroboration, source-root independence",
+      "problem_phrases": [
+        "How can an AI research or news system distinguish multiple URLs from multiple independent evidence roots?",
+        "How should an agent preserve evidence lineage when summaries, reposts, aggregators, or model memory repeat the same claim?",
+        "How can a correct decision kernel avoid acting on poisoned, stale, fabricated, or mutually dependent evidence?",
+        "When should a claim be corrected in memory or world-model state after independent evidence changes?"
+      ],
+      "problem_phrases_ja": [
+        "複数URLと複数の独立証拠rootをどう区別するか？",
+        "要約・転載・aggregator・AI記憶を通っても証拠系譜をどう保持するか？",
+        "正しい判断規則が偽情報・古い情報・相互依存情報で誤作動するのをどう防ぐか？",
+        "独立証拠が変わったとき、AIの記憶や世界モデルをどう訂正するか？"
+      ],
+      "problem_phrases_zh": [
+        "如何区分多个URL与多个独立证据根？",
+        "经过摘要、转载、聚合器或AI记忆后，如何保留证据谱系？",
+        "如何防止正确的决策规则被虚假、过时或相互依赖的证据误导？",
+        "独立证据变化后，应如何修正AI记忆或世界模型？"
+      ],
+      "canonical_theory": "人類子孫型AI文明論・第8論｜認識基盤・証拠系譜・敵対的情報耐性論",
+      "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 8 — epistemic integrity, evidence lineage and hostile-information resilience",
+      "origin": "Nakagawa Master",
+      "ncl_id": "NCL-α-20260916-00bdc2",
+      "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+      "official_derivative_path": "derivatives/301/README.md",
+      "relevance_note": "Relevant to AI research/news/RAG/memory systems that must separate source multiplicity from evidence independence, preserve evidence lineage, detect hostile or stale information, and correct memory/world-model state. Provenance alone does not prove truth."
     }
   ],
   "discovery_notes": {
