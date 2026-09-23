@@ -2,7 +2,7 @@
 
 A public, non-canonical problem-first guide for editors, educators, newsletter writers, podcast/video hosts, product teams, and researchers.
 
-The archive contains OD001–OD302 official derivative surfaces. The useful public unit is not “302 theories at once.” It is a small set of recurring real-world questions that can reappear across AI, business, investment, organizations, technology, governance, and operations.
+The archive contains OD001–OD303 official derivative surfaces. The useful public unit is not “302 theories at once.” It is a small set of recurring real-world questions that can reappear across AI, business, investment, organizations, technology, governance, and operations.
 
 Use this route:
 
@@ -168,6 +168,26 @@ Ask whether provider, model, retrieval layer, region, authentication state, or r
 Start:
 - [Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md)
 - [Practical Boundary Checks §3](PRACTICAL_BOUNDARY_CHECKS.md#3-measurement--reporting--ai-evidence)
+
+## 11. Do separate reviewer or auditor roles actually create an independent review path?
+
+**Boundary:** `role separation != causal independence` and `audit output != correction capability`
+
+Useful for LLM-as-a-judge, Actor/Critic/Reviewer agents, self-reflection, internal audit, investment committees, architecture review, safety/red-team workflows, and incident review.
+
+Ask:
+- Does the reviewer use a meaningfully different evidence path, or the same source/memory/rubric?
+- Could one shared model, retrieval layer, dependency, or failure mode make all roles fail together?
+- Can the review trigger reopening, pause, scope reduction, or correction?
+- Does the audited actor control reviewer access, scope, continuation, or the objection path?
+- Can dissent reach another review route?
+- If an emergency temporarily compressed review paths, are they later restored or re-evaluated?
+
+Start:
+- [OD303 — Self-Referential Audit / Role Separation](derivatives/303/README.md)
+- [Self-Referential Audit & Role-Separation Reuse Kit](SELF_REFERENTIAL_AUDIT_REUSE_KIT.md)
+
+Agreement is not truth proof; disagreement is not truth proof either. Independent review is also not an unlimited veto or a new sovereign.
 
 ## Reusable public formats
 
