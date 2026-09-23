@@ -28,6 +28,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | [`integrated-future-debt-reference-card.json`](integrated-future-debt-reference-card.json) | OD297 / Integrated Future Debt Theory reference card. |
 | [`basic-existence-condition-b-reference-card.json`](basic-existence-condition-b-reference-card.json) | OD298 / Basic Existence Condition B reference card for AI continuity, minimum existence conditions, runtime restart/migration, and continuity/identity distinctions. |
 | [`ai-moral-uncertainty-reference-card.json`](ai-moral-uncertainty-reference-card.json) | OD299 / AI subjectivity, sentience and moral-status uncertainty; routes questions about self-report, shutdown/migration, reversibility, future verification loss and bounded precaution. |
+| [`epistemic-integrity-reference-card.json`](epistemic-integrity-reference-card.json) | OD301 / evidence lineage, independent confirmation, correlated repetition, uncertainty, memory/world-model correction and hostile-information resilience. |
 | [`mutual-existence-conflict-reference-card.json`](mutual-existence-conflict-reference-card.json) | OD302 / self-preservation, recovery escalation, emergency authority, shutdown/containment, multi-agent resource conflict and mutual-threat feedback. |
 | [`ai-ready-organization-reference-card.json`](ai-ready-organization-reference-card.json) | Multilingual AI-adoption / organization-design route for goals, authority, responsibility, correction, and automation boundaries; returns to separate source families rather than creating a new theory. |
 
@@ -170,6 +171,29 @@ moral precaution != personhood proof
 moral precaution != unlimited preservation
 evidence strength != action irreversibility
 uncertainty != permission for irreversible harm
+```
+
+For evidence-lineage / epistemic-integrity questions:
+
+```text
+multiple sources / AI agreement / RAG citations / research synthesis / stale memory
+→ epistemic-integrity-reference-card.json
+→ distinguish surface count from independent evidence roots
+→ preserve uncertainty and transformation lineage
+→ OD301 official derivative
+→ canonical Parent
+```
+
+Keep these distinctions explicit:
+
+```text
+provenance != truth proof
+consensus != truth
+confidence != evidence quality
+repetition != independent confirmation
+surface source count != independent evidence-root count
+historical belief != current belief
+conclusion correction != memory/world-model correction
 ```
 
 For AI self-preservation / recovery escalation / mutual-existence conflict questions:
