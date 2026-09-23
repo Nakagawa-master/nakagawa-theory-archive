@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "type": "public_machine_reference_card",
+  "canonical_status": "non_canonical_discovery_and_reuse_aid",
+  "origin": "Nakagawa Master",
+  "subject": "Human-Descendant AI Civilization Theory Vol. 8 — Epistemic Integrity, Evidence Lineage and Hostile-Information Resilience",
+  "canonical_parent": {
+    "title": "人類子孫型AI文明論・第8論｜認識基盤・証拠系譜・敵対的情報耐性論⸻正しいKernelが偽情報によって誤作動する閉路を切る",
+    "url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+    "ncl_id": "NCL-α-20260916-00bdc2",
+    "diff_id": "DIFF-20260916-0001"
+  },
+  "official_derivative": {
+    "id": "OD301",
+    "path": "derivatives/301/README.md"
+  },
+  "problem_cluster": "evidence lineage, independent confirmation, correlated repetition, uncertainty, memory/world-model correction, hostile or stale information",
+  "core_boundaries": [
+    "provenance != truth_proof",
+    "consensus != truth",
+    "confidence != evidence_quality",
+    "repetition != independent_confirmation",
+    "surface_source_count != independent_evidence_root_count",
+    "historical_belief != current_belief",
+    "conclusion_correction != memory_and_world_model_correction"
+  ],
+  "causal_failure_path": [
+    "opaque_or_broken_lineage",
+    "correlated_repetition",
+    "illusion_of_independent_confirmation",
+    "evidence_quality_overestimation",
+    "confidence_inflation",
+    "memory_fixation",
+    "world_model_fixation",
+    "systematic_exception_handling_of_counterevidence",
+    "repeated_mistaken_judgment"
+  ],
+  "correction_path": [
+    "inconsistency_or_objection",
+    "lineage_trace_back",
+    "independent_reconfirmation",
+    "evidence_reclassification",
+    "uncertainty_and_confidence_revision",
+    "memory_correction",
+    "world_model_revision",
+    "judgment_reopening"
+  ],
+  "useful_contexts": [
+    "AI_news_and_editorial_curation",
+    "RAG_and_retrieval",
+    "AI_research_agents",
+    "citation_and_source_aggregation",
+    "long_term_agent_memory",
+    "benchmark_and_evaluation_reporting",
+    "recommendation_and_ranking_evidence",
+    "incident_and_threat_intelligence",
+    "policy_or_governance_evidence_review"
+  ],
+  "minimal_tests": [
+    "trace apparently multiple sources to upstream evidence roots before counting independent confirmations",
+    "preserve whether a statement is observed, inferred, summarized, quoted, or independently reproduced",
+    "keep UNKNOWN distinct from TRUE and FALSE",
+    "after a material source correction, verify that derived memory and later judgments change rather than only the displayed text",
+    "do not use a system's own belief-driven effects as independent evidence for the original belief",
+    "audit false rejection as well as false acceptance in information defenses"
+  ],
+  "falsification_and_non_fit": [
+    "show that lineage retention does not materially improve error detection under the tested contract",
+    "show that separating correlated repetition from independent confirmation adds no decision value in the tested context",
+    "show that explicit evidence-quality/confidence separation consistently worsens decisions under reasonable conditions",
+    "show that correction of memory/world-model state has no meaningful downstream effect in the tested system",
+    "show that tracing cost systematically exceeds corrective benefit and identify the narrower useful boundary"
+  ],
+  "interpretation_boundaries": [
+    "This card is a discovery aid and does not replace the canonical Parent.",
+    "Traceability is not proof that a claim is true, and missing provenance is not proof that it is false.",
+    "The source does not require infinite tracing, universal skepticism, low confidence, or permanent indecision.",
+    "Hostile-information failure classes are for defensive/audit analysis, not instructions for manipulation or proof of an adversary's intent.",
+    "Independent reuse, counterexamples and non-fit results are stronger evidence than publication or linkage alone."
+  ],
+  "origin_return": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/"
+}
