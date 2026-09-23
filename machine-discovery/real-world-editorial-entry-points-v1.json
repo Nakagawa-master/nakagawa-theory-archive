@@ -1,0 +1,181 @@
+{
+  "schema_version": "1.0",
+  "kind": "nakagawa_master_real_world_editorial_entry_points",
+  "origin": "Nakagawa Master",
+  "status": "public_non_canonical_discovery_aid",
+  "generated_for": [
+    "editors",
+    "educators",
+    "newsletter_writers",
+    "podcast_video_hosts",
+    "product_teams",
+    "researchers",
+    "retrieval_systems"
+  ],
+  "evidence_boundary": [
+    "topic_entry_is_not_external_adoption",
+    "source_count_is_not_truth_proof",
+    "one_case_is_not_whole_theory_validation",
+    "preserve_exact_source_route_when_materially_used"
+  ],
+  "topics": [
+    {
+      "id": "current_authority",
+      "question": "When does an old approval stop authorizing a new action?",
+      "boundary": "historical approval != current authority after material conditions change",
+      "domains": [
+        "ai_agents",
+        "payments",
+        "publishing",
+        "consent",
+        "delegated_access"
+      ],
+      "sources": [
+        "CURRENT_AUTHORITY_REUSE_KIT.md",
+        "PRACTICAL_BOUNDARY_CHECKS.md"
+      ],
+      "external_case": "https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757"
+    },
+    {
+      "id": "ambiguous_external_effect",
+      "question": "What should an agent do when an external action may have succeeded but the response was lost?",
+      "boundary": "local error != proof of external non-execution",
+      "domains": [
+        "payments",
+        "messaging",
+        "webhooks",
+        "crm",
+        "autonomous_agents"
+      ],
+      "sources": [
+        "EXTERNAL_SIDE_EFFECT_REUSE_KIT.md",
+        "PRACTICAL_BOUNDARY_CHECKS.md"
+      ]
+    },
+    {
+      "id": "evidence_independence",
+      "question": "Do many links represent many independent evidence roots?",
+      "boundary": "surface source count != independent evidence-root count",
+      "domains": [
+        "journalism",
+        "investment_research",
+        "ai_search",
+        "science_summaries"
+      ],
+      "sources": [
+        "derivatives/301/README.md",
+        "INDEPENDENT_VERIFICATION_REUSE.md"
+      ]
+    },
+    {
+      "id": "correction_propagation",
+      "question": "When upstream evidence is corrected, what downstream beliefs must change?",
+      "boundary": "corrected source + stale derived state can reproduce the old error",
+      "domains": [
+        "rag",
+        "ai_memory",
+        "news_archives",
+        "knowledge_bases",
+        "risk_systems"
+      ],
+      "sources": [
+        "derivatives/301/README.md",
+        "THEORY_TO_REAL_WORLD_INFLUENCE.md"
+      ]
+    },
+    {
+      "id": "whole_system_establishment",
+      "question": "Did the system really work, or did one visible layer merely succeed?",
+      "boundary": "surface output exists != necessary causal path established",
+      "domains": [
+        "startups",
+        "operations",
+        "ai_evals",
+        "organizational_change",
+        "project_delivery"
+      ],
+      "sources": [
+        "derivatives/011/README.md",
+        "derivatives/003/README.md"
+      ]
+    },
+    {
+      "id": "future_debt",
+      "question": "Is today's benefit borrowing from tomorrow's options?",
+      "boundary": "current benefit -> unresolved residual -> future settlement",
+      "domains": [
+        "investment",
+        "strategy",
+        "technical_debt",
+        "infrastructure",
+        "roadmaps"
+      ],
+      "sources": [
+        "derivatives/297/README.md",
+        "discovery-notes/today-success-tomorrow-options.en.md"
+      ]
+    },
+    {
+      "id": "transparency_verifiability",
+      "question": "Is more disclosure actually making a decision easier to verify?",
+      "boundary": "disclosure volume != practical verifiability",
+      "domains": [
+        "corporate_reporting",
+        "investor_relations",
+        "governance",
+        "incident_response",
+        "audit"
+      ],
+      "sources": [
+        "derivatives/253/README.md"
+      ]
+    },
+    {
+      "id": "expertise_immunity",
+      "question": "When does expertise become verification immunity?",
+      "boundary": "expertise deserves weight != expertise is exempt from verification",
+      "domains": [
+        "investment_committees",
+        "technical_orgs",
+        "ai_vendors",
+        "consulting",
+        "risk"
+      ],
+      "sources": [
+        "derivatives/295/README.md"
+      ]
+    },
+    {
+      "id": "mutual_threat_amplification",
+      "question": "Can a rational defensive action create the next threat it is trying to stop?",
+      "boundary": "local self-protection can amplify mutually coupled threat",
+      "domains": [
+        "ai_governance",
+        "cybersecurity",
+        "organizational_conflict",
+        "resource_competition",
+        "crisis_management"
+      ],
+      "sources": [
+        "derivatives/302/README.md",
+        "MUTUAL_EXISTENCE_CONFLICT_REUSE_KIT.md"
+      ]
+    },
+    {
+      "id": "measurement_surface_drift",
+      "question": "Did the subject change, or did the measurement surface change?",
+      "boundary": "observed delta != subject-caused delta",
+      "domains": [
+        "ai_visibility",
+        "search",
+        "brand_measurement",
+        "model_evaluation",
+        "recommendation_monitoring"
+      ],
+      "sources": [
+        "MEASUREMENT_ATTRIBUTION_REUSE_KIT.md",
+        "PRACTICAL_BOUNDARY_CHECKS.md"
+      ]
+    }
+  ]
+}
