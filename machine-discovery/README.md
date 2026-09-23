@@ -28,6 +28,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | [`integrated-future-debt-reference-card.json`](integrated-future-debt-reference-card.json) | OD297 / Integrated Future Debt Theory reference card. |
 | [`basic-existence-condition-b-reference-card.json`](basic-existence-condition-b-reference-card.json) | OD298 / Basic Existence Condition B reference card for AI continuity, minimum existence conditions, runtime restart/migration, and continuity/identity distinctions. |
 | [`ai-moral-uncertainty-reference-card.json`](ai-moral-uncertainty-reference-card.json) | OD299 / AI subjectivity, sentience and moral-status uncertainty; routes questions about self-report, shutdown/migration, reversibility, future verification loss and bounded precaution. |
+| [`mutual-existence-conflict-reference-card.json`](mutual-existence-conflict-reference-card.json) | OD302 / self-preservation, recovery escalation, emergency authority, shutdown/containment, multi-agent resource conflict and mutual-threat feedback. |
 | [`ai-ready-organization-reference-card.json`](ai-ready-organization-reference-card.json) | Multilingual AI-adoption / organization-design route for goals, authority, responsibility, correction, and automation boundaries; returns to separate source families rather than creating a new theory. |
 
 The Japanese and Chinese wording in discovery and comparison files is public metadata, not canonical translation text.
@@ -170,6 +171,28 @@ moral precaution != unlimited preservation
 evidence strength != action irreversibility
 uncertainty != permission for irreversible harm
 ```
+
+For AI self-preservation / recovery escalation / mutual-existence conflict questions:
+
+```text
+recovery / emergency permission / shutdown / containment / failover / shared-resource conflict
+→ mutual-existence-conflict-reference-card.json
+→ Mutual-Existence Conflict Reuse Kit when a falsifiable implementation test is useful
+→ OD302 official derivative
+→ canonical Parent
+```
+
+Keep these distinctions explicit:
+
+```text
+self-preservation or recovery need != unlimited priority
+temporary emergency authority != permanent authority
+local recovery success != global stability
+defense / containment != unlimited retaliation or irreversible destruction
+protecting one actor's minimum conditions != permission to erase another actor's minimum conditions
+```
+
+Do not infer subjective self-preservation in current AI merely from software persistence or recovery logic. The public card can also support neutral institutional analysis, but it is not a political, national-security, or military prescription.
 
 For a long-horizon question spanning several theories:
 
