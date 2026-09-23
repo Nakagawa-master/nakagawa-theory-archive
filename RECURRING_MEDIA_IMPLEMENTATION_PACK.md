@@ -1,8 +1,8 @@
-# Recurring Media Implementation Pack — Four Nakagawa Master Lenses
+# Recurring Media Implementation Pack — Five Nakagawa Master Lenses
 
 Public, non-canonical implementation aid for editors, newsletter writers, video/podcast hosts, educators, researchers, and business/investment media.
 
-This pack turns four repeatable real-world lenses into recurring media units. The goal is not to present hundreds of theory names. The goal is to let a carrier reuse one recognizable distinction across changing current cases.
+This pack turns five repeatable real-world lenses into recurring media units. The goal is not to present hundreds of theory names. The goal is to let a carrier reuse one recognizable distinction across changing current cases.
 
 ## Operating principle
 
@@ -268,6 +268,76 @@ This is not anti-expertise. Complex systems require expertise; the distinction i
 ### Source route
 
 - OD295
+- FOUR_REPEATABLE_REAL_WORLD_LENSES.md
+
+---
+
+# Segment 5 — “Separate reviewer, independent review?”
+
+Core boundary:
+
+```text
+role separation != causal independence
+audit output != correction capability
+```
+
+### 60–90 sec short
+
+Opening:
+
+> A second reviewer was added. But is it actually a second path — or the same evidence, memory, rubric, and failure mode wearing a different role label?
+
+Structure:
+1. identify the original decision;
+2. identify Actor / Evaluator / Reviewer / Auditor roles;
+3. trace evidence roots and shared memory/context;
+4. identify shared dependencies and failure domains;
+5. show what the reviewer can actually change;
+6. show where an objection can go.
+
+Close:
+
+> Count independent causal paths, not role labels.
+
+### 5–15 min case
+
+Use one AI evaluation, internal audit, investment committee, safety review, architecture review, or incident-review workflow.
+
+Required table:
+
+```text
+role | evidence path | shared failure domain | change authority | objection route
+```
+
+Do not convert the table into a single independence score.
+
+### Newsletter box
+
+Title:
+**Independent Review Check**
+
+Fields:
+- original decision:
+- reviewer / auditor:
+- different evidence path:
+- shared failure domain:
+- correction authority:
+- objection route:
+- reopen condition:
+
+### Live format
+
+Audience submits a workflow with multiple reviewers or agents.
+Host traces whether the roles are causally independent in the dimensions that matter, while allowing useful shared evidence and coordination.
+
+### Countercondition
+
+Different roles can be genuinely independent enough for the tested purpose. Shared evidence or infrastructure is not automatically a defect; the question is whether a relevant difference can still enter and change the decision when warranted.
+
+### Source route
+
+- OD303
+- SELF_REFERENTIAL_AUDIT_REUSE_KIT.md
 - FOUR_REPEATABLE_REAL_WORLD_LENSES.md
 
 ---
