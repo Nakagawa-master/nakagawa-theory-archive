@@ -34,7 +34,8 @@
         "CURRENT_AUTHORITY_REUSE_KIT.md",
         "PRACTICAL_BOUNDARY_CHECKS.md"
       ],
-      "external_case": "https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757"
+      "external_case": "https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757",
+      "ja_question": "「前に承認した」は、今も実行してよいという意味か"
     },
     {
       "id": "ambiguous_external_effect",
@@ -50,7 +51,8 @@
       "sources": [
         "EXTERNAL_SIDE_EFFECT_REUSE_KIT.md",
         "PRACTICAL_BOUNDARY_CHECKS.md"
-      ]
+      ],
+      "ja_question": "エラーが出たら、同じ外部操作をもう一度してよいのか"
     },
     {
       "id": "evidence_independence",
@@ -65,7 +67,8 @@
       "sources": [
         "derivatives/301/README.md",
         "INDEPENDENT_VERIFICATION_REUSE.md"
-      ]
+      ],
+      "ja_question": "10本の記事が一致したら、10個の独立証拠なのか"
     },
     {
       "id": "correction_propagation",
@@ -81,7 +84,8 @@
       "sources": [
         "derivatives/301/README.md",
         "THEORY_TO_REAL_WORLD_INFLUENCE.md"
-      ]
+      ],
+      "ja_question": "原資料が訂正されたのに、古い結論だけ残っていないか"
     },
     {
       "id": "whole_system_establishment",
@@ -97,7 +101,8 @@
       "sources": [
         "derivatives/011/README.md",
         "derivatives/003/README.md"
-      ]
+      ],
+      "ja_question": "「動いた」「数字が出た」は、本当に全体が成立したのか"
     },
     {
       "id": "future_debt",
@@ -113,7 +118,8 @@
       "sources": [
         "derivatives/297/README.md",
         "discovery-notes/today-success-tomorrow-options.en.md"
-      ]
+      ],
+      "ja_question": "今日の利益は、明日の選択肢を先に使っていないか"
     },
     {
       "id": "transparency_verifiability",
@@ -128,7 +134,8 @@
       ],
       "sources": [
         "derivatives/253/README.md"
-      ]
+      ],
+      "ja_question": "開示資料が増えたのに、なぜ意思決定を追えないのか"
     },
     {
       "id": "expertise_immunity",
@@ -143,7 +150,8 @@
       ],
       "sources": [
         "derivatives/295/README.md"
-      ]
+      ],
+      "ja_question": "専門家を尊重することと、検証を止めることは同じか"
     },
     {
       "id": "mutual_threat_amplification",
@@ -159,7 +167,8 @@
       "sources": [
         "derivatives/302/README.md",
         "MUTUAL_EXISTENCE_CONFLICT_REUSE_KIT.md"
-      ]
+      ],
+      "ja_question": "合理的な防衛行動が、次の脅威を自分で作っていないか"
     },
     {
       "id": "measurement_surface_drift",
@@ -175,7 +184,9 @@
       "sources": [
         "MEASUREMENT_ATTRIBUTION_REUSE_KIT.md",
         "PRACTICAL_BOUNDARY_CHECKS.md"
-      ]
+      ],
+      "ja_question": "対象が変わったのか、測定面が変わったのか"
     }
-  ]
+  ],
+  "human_entry_ja": "../REAL_WORLD_EDITORIAL_ENTRY_POINTS.ja.md"
 }
