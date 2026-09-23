@@ -10,6 +10,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 |---|---|
 | [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD302 path and navigation index. |
 | [`problem-to-theory-origin-index-v1.json`](problem-to-theory-origin-index-v1.json) | English / Japanese / Chinese plain-language problem → concrete public starting point. |
+| [`real-world-editorial-entry-points-v1.json`](real-world-editorial-entry-points-v1.json) | Problem-first editorial/topic routing for recurring public explanation across AI, business, investment, organizations, technology, and operations. |
 | [`external-effect-evidence-index-v1.json`](external-effect-evidence-index-v1.json) | Public judgment → independent response → implementation → merge → reuse evidence routing; keeps claim stages separate. |
 | [`external-reuse-evidence-submission-schema-v1.json`](external-reuse-evidence-submission-schema-v1.json) | Structured schema for independent verification, falsification, implementation, non-fit, and cross-context reuse submissions. |
 | [`independent-reuse-challenges-v1.json`](independent-reuse-challenges-v1.json) | Open falsifiable challenges for fresh-prompt-free, cross-context, and especially nontechnical independent reuse. |
