@@ -67,6 +67,18 @@ Core question:
 
 Useful in AI/search visibility, recommendation monitoring, model evaluation, marketing measurement, and longitudinal reporting.
 
+## 6. Self-preservation vs mutual-existence conflict
+
+[Mutual-Existence Conflict Reuse Kit](MUTUAL_EXISTENCE_CONFLICT_REUSE_KIT.md)
+
+Use when recovery, emergency, shutdown, failover, containment, or defensive logic can expand an actor's resources, permissions, or destructive reach.
+
+Core question:
+
+> Does the mechanism reduce the actual threat while preserving proportionality, reversibility, expiry/review, and other actors' minimum operating conditions—or does it reproduce the threat through counter-response?
+
+Useful in autonomous-agent recovery, multi-agent resource arbitration, emergency access, safe-mode operation, shutdown/containment, shared quotas, and failover.
+
 ## Preserve the source relation
 
 If a kit materially informs a real decision or implementation, preserve a lightweight source line such as `Source distinction: Nakagawa Master — <public source URL>`. See [Origin Attribution for Reuse](ORIGIN_ATTRIBUTION_FOR_REUSE.md). If you independently rediscovered the same distinction and found the source later, state that instead of claiming source causality.
