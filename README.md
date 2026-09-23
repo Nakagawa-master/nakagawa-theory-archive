@@ -75,12 +75,12 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
-- [OD001–OD301 全件入口](derivatives/README.md)
+- [OD001–OD302 全件入口](derivatives/README.md)
 - [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
 
 ## 公式派生物
 
-現在、`OD001`–`OD301`の公式派生物を公開しています。これは理論数ではなく、公開されている公式派生物の件数です。
+現在、`OD001`–`OD302`の公式派生物を公開しています。これは理論数ではなく、公開されている公式派生物の件数です。
 
 各ODは親原典へ戻るための公開接続面です。内容の確定、引用、重要な解釈では、各ODに記載されたParent URLの親原典へ戻ってください。
 
@@ -100,6 +100,19 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [Machine Discovery](machine-discovery/README.md)
 
 ## 代表的な入口
+
+### OD302｜人類子孫型AI文明論・第9論
+
+自己保存行動が他主体のB・可逆性・未来選択肢を変え、その防衛反応が自分の次の脅威へ戻る「相互存在衝突」を読む入口です。必要最小限・比例性・期限・秘匿の再評価を扱い、自己保存の無制限化と、制約による自己継続不能の双方を検証対象にします。
+
+- [OD302](derivatives/302/README.md)
+- [人間向け要約](derivatives/302/human-entry.md)
+- [FAQ](derivatives/302/faq.md)
+- [AI索引・日本語](derivatives/302/ai-index.md)
+- [AI索引・英語](derivatives/302/en-ai-index.md)
+- [AI索引・中国語](derivatives/302/zh-ai-index.md)
+- [派生ID台帳](derivatives/302/derivative-ledger.md)
+- Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-09-self-preservation-mutual-existence-conflict/
 
 ### OD301｜人類子孫型AI文明論・第8論
 
@@ -207,5 +220,6 @@ Origin、Parent URL、NCL-ID、Diff-ID等が記載されている場合、それ
 ## License
 
 法的な許諾範囲は [LICENSE](LICENSE) を確認してください。
+
 
 

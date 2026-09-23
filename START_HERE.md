@@ -116,9 +116,9 @@ AIによる要約・翻訳・再生成の後でも、知識がどこから来た
 - [Problem-to-theory Origin Index](machine-discovery/problem-to-theory-origin-index-v1.json)
 - [Machine Discovery](machine-discovery/README.md)
 
-## 301件から直接探す
+## 302件から直接探す
 
-- [OD001–OD301 全件入口](derivatives/README.md)
+- [OD001–OD302 全件入口](derivatives/README.md)
 - [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
 - [Official Derivatives Map](derivatives/official-derivatives-map.json)
 - [Official Derivatives Machine Index](machine-discovery/official-derivatives-index-v1.json)
@@ -136,5 +136,6 @@ AIによる要約・翻訳・再生成の後でも、知識がどこから来た
 - Discovery Note、物語型入口、Practical Use、micro-format、machine metadataは発見・理解・実利用・参照の補助面であり、新しい正本理論ではありません。
 - 英語・中国語のAI支援Discovery editionは、個別理論のcanonical translationではありません。
 - 別々の理論は、親原典で明示的に接続されていない限り、一つの新しい理論へ自動統合しません。
+
 
 

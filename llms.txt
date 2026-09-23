@@ -75,7 +75,7 @@ Use that dialogue when a human wants to describe a real, non-confidential proble
 
 Archive and machine navigation:
 
-- [Official derivatives OD001–OD301](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
+- [Official derivatives OD001–OD302](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
 - [Theme / series navigation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/CATEGORIES.md)
 - [Problem-to-theory Origin Index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json)
 - [Machine Discovery](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/README.md)
@@ -104,7 +104,23 @@ Practical non-scoring Preflight for a real case:
 
 This is a discovery and practical-reading route, not a canonical AI-ready-organization theory. The Preflight is not a score, diagnosis, employment assessment, legal conclusion, or automatic deployment rule. Select the relevant source family for the actual problem and keep separate theories separate. Relevant routes include OD003 (establishment conditions), OD089 (causal design), OD090 (structural friction), OD075 (agreement memory), and OD114 (reversible accountability).
 
-## Current featured route — OD301 / Human-Descendant AI Civilization Theory Vol. 8
+## Current featured route — OD302 / Human-Descendant AI Civilization Theory Vol. 9
+
+For questions about Mutual-Existence Conflict, self-preservation and basic conditions of existence B, need versus entitlement, reciprocal threat amplification, minimal necessity, proportionality, reversibility, emergency exceptions, emergency secrecy and future options:
+
+- [Official Derivative 302](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/302/README.md)
+- [Human entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/302/human-entry.md)
+- [FAQ](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/302/faq.md)
+- [Japanese AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/302/ai-index.md)
+- [English AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/302/en-ai-index.md)
+- [Chinese AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/302/zh-ai-index.md)
+- [Derivative ledger](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/302/derivative-ledger.md)
+
+- Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-09-self-preservation-mutual-existence-conflict/
+
+Boundary: Accurate recognition does not guarantee stable self-preservation feedback. Protecting B_i does not itself authorize destroying B_j. Need is not unlimited acquisition right; emergency is not permanent sovereignty; defense is not unlimited retaliation; necessary secrecy is not permanent immunity of judgment. Restraint is not a requirement for self-destruction. Preserve effective protective strength, current necessity, alternatives, response lineage and revision conditions. No fixed quantity or duration is supplied. Current AI survival desire or personhood is not established. Independent auditor design remains with Vol. 10; full Future Debt analysis remains with Vol. 18.
+
+## Related route — OD301 / Human-Descendant AI Civilization Theory Vol. 8
 
 For questions about epistemic integrity, evidence lineage, independent confirmation versus repeated exposure, evidence quality versus confidence, uncertainty, memory and world-model correction, adversarial information resilience and revisable judgments:
 
@@ -216,5 +232,6 @@ Boundary: Future Debt is not every future cost, investment, or ordinary contract
 - [Provenance](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/PROVENANCE.md)
 - [Citation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CITATION.md)
 - [Verification Guide](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/VERIFICATION_GUIDE.md)
+
 
 

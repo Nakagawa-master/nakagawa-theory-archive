@@ -8,7 +8,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 
 | File | Role |
 |---|---|
-| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD301 path and navigation index. |
+| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD302 path and navigation index. |
 | [`problem-to-theory-origin-index-v1.json`](problem-to-theory-origin-index-v1.json) | English / Japanese / Chinese plain-language problem → concrete public starting point. |
 | [`external-effect-evidence-index-v1.json`](external-effect-evidence-index-v1.json) | Public judgment → independent response → implementation → merge → reuse evidence routing; keeps claim stages separate. |
 | [`external-reuse-evidence-submission-schema-v1.json`](external-reuse-evidence-submission-schema-v1.json) | Structured schema for independent verification, falsification, implementation, non-fit, and cross-context reuse submissions. |
@@ -308,3 +308,4 @@ Person-level metadata is for public identity continuity. For a specific theory, 
 - [Theme / series navigation](../derivatives/CATEGORIES.md)
 - [Discovery Notes](../discovery-notes/README.md)
 - [Verification Guide](../VERIFICATION_GUIDE.md)
+
