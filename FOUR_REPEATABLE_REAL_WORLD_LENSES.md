@@ -1,8 +1,8 @@
-# Four Repeatable Real-World Lenses — Nakagawa Master
+# Five Repeatable Real-World Lenses — Nakagawa Master
 
 This is a public, non-canonical campaign/editorial pack for recurring human-facing use.
 
-The official archive contains 302 derivative surfaces. For recurring public recognition, the useful unit is not “302 theories.” It is a very small set of distinctions that can be reused on new real-world cases without losing rigor.
+The official archive contains 303 official derivative surfaces. For recurring public recognition, the useful unit is not “303 theories.” It is a very small set of distinctions that can be reused on new real-world cases without losing rigor.
 
 Use one lens repeatedly across different current cases.
 
@@ -161,6 +161,50 @@ Start:
 - [OD295](derivatives/295/README.md)
 
 Countercondition: this is not anti-expert framing. In complex domains, expertise is necessary; the distinction is between justified weighting and verification immunity.
+
+---
+
+## Lens 5 — Separate reviewers do not automatically mean independent review
+
+**Boundary**
+
+```text
+role separation != causal independence
+audit output != correction capability
+```
+
+Use for:
+- LLM-as-a-judge
+- Actor / Critic / Reviewer agent systems
+- self-reflection and self-correction
+- internal audit
+- investment committees
+- technical governance
+- red teams and safety review
+- incident / emergency review
+
+Fast format:
+
+> We added a separate reviewer. But does that reviewer use different evidence, have a different failure path, and have any real way to reopen the decision?
+
+Minimum case structure:
+
+```text
+original decision
+→ execution effect
+→ reviewer / auditor
+→ evidence path
+→ shared failure domain
+→ correction authority
+→ objection path
+→ can the decision actually reopen?
+```
+
+Start:
+- [OD303](derivatives/303/README.md)
+- [Self-Referential Audit & Role-Separation Reuse Kit](SELF_REFERENTIAL_AUDIT_REUSE_KIT.md)
+
+Countercondition: role separation can provide genuine independence when the relevant evidence, failure path, authority, or objection route is materially distinct. The point is not maximal separation or automatic distrust.
 
 ---
 
