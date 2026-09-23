@@ -386,6 +386,40 @@
       "official_derivative_path": "derivatives/301/README.md",
       "relevance_note": "Relevant to AI research/news/RAG/memory systems that must separate source multiplicity from evidence independence, preserve evidence lineage, detect hostile or stale information, and correct memory/world-model state. Provenance alone does not prove truth.",
       "public_reference_card": "epistemic-integrity-reference-card.json"
+    },
+    {
+      "problem_cluster": "self-referential audit, role separation, LLM-as-a-judge, multi-agent evaluation, correlated reviewers, correction authority, dissent and objection paths",
+      "problem_phrases": [
+        "Do separate Actor, Evaluator, Reviewer, or Auditor roles actually provide independent verification?",
+        "Can several AI reviewers agree because they share the same evidence, memory, rubric, model assumptions, or failure domain?",
+        "Does an audit finding have a real path to reopen, pause, narrow, or correct the original decision?",
+        "Can objections be recorded while the original decision-maker still exclusively controls whether anything is reconsidered?",
+        "How should review independence be restored after an emergency temporarily compresses evidence access or challenge paths?"
+      ],
+      "problem_phrases_ja": [
+        "Actor・Evaluator・Reviewer・Auditorを別役割にすれば独立検証になるのか？",
+        "複数AIが同じ証拠・memory・rubric・故障原因を共有して一致していないか？",
+        "監査指摘が実際に判断再開・一時停止・縮小・訂正へ届くか？",
+        "異議を記録していても、元判断者だけが再審の可否を決めていないか？",
+        "緊急時に圧縮した監査独立性を、圧力低下後にどう復元・再評価するか？"
+      ],
+      "problem_phrases_zh": [
+        "把Actor、Evaluator、Reviewer和Auditor分成不同角色，是否就等于独立验证？",
+        "多个AI审查者是否因为共享同一证据、记忆、评分标准、模型假设或故障域而得到相关一致？",
+        "审计发现是否真的能够触发重新审查、暂停、缩小范围或纠正原判断？",
+        "即使记录了异议，是否仍由原决策者独占是否重新审议的权力？",
+        "紧急状态暂时压缩审计独立性后，压力下降时如何恢复并重新评估？"
+      ],
+      "canonical_theory": "人類子孫型AI文明論・第10論｜自己参照監査・役割分離論",
+      "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 10 — Self-Referential Audit and Role Separation",
+      "origin": "Nakagawa Master",
+      "ncl_id": "NCL-α-20260923-d0219e",
+      "diff_id": "DIFF-20260923-0001",
+      "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-10-self-referential-audit-role-separation/",
+      "official_derivative_path": "derivatives/303/README.md",
+      "public_reference_card": "self-referential-audit-role-separation-reference-card.json",
+      "public_reuse_kit": "../SELF_REFERENTIAL_AUDIT_REUSE_KIT.md",
+      "relevance_note": "Relevant when nominally separate evaluators, reviewers, auditors, or AI agents may still share evidence, memory, criteria, dependencies, failure domains, incentives, or objection routes. Use the five-axis structure to distinguish role separation from causal independence and audit output from real correction capability. Agreement does not prove truth; disagreement does not prove error."
     }
   ],
   "discovery_notes": {
