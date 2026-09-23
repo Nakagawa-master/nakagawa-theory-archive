@@ -42,7 +42,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - **問題から入りたい:** [Start Here](START_HERE.md) / [English](START_HERE.en.md) / [中文](START_HERE.zh.md)
 - **実際に使いたい / 実装・協業の可能性を探りたい:** [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - **すぐ使える実務チェックを見たい:** [Practical Boundary Checks](PRACTICAL_BOUNDARY_CHECKS.md)
-- **編集・動画・ニュースレター・教材向けに現実問題から入りたい:** [Real-World Editorial Entry Points](REAL_WORLD_EDITORIAL_ENTRY_POINTS.md)
+- **編集・動画・ニュースレター・教材向けに現実問題から入りたい:** [日本語](REAL_WORLD_EDITORIAL_ENTRY_POINTS.ja.md) / [English](REAL_WORLD_EDITORIAL_ENTRY_POINTS.md)
 - **中川構造OSと外部実装・再利用の関係を確認する:** [Structural OS → External Effects](STRUCTURAL_OS_TO_EXTERNAL_EFFECTS.md)
 - **実問題から中川構造OSへ入る:** [Four Applied Entry Points](APPLIED_ENTRY_POINTS.md)
   - 外部事例がどの原理へ戻るか: [Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)
