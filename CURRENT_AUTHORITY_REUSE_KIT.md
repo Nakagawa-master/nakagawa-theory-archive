@@ -239,6 +239,66 @@ approval for action A     != authority for changed action B
 
 For a static shared-token design, at minimum keep the expected trusted value separate from the presented value and compare them safely. For higher-consequence agent actions, prefer scoped, action-bound, expiring, and replay-resistant evidence.
 
+### 12. A recurring-agent approval must bind the instructions the human actually reviewed
+
+```text
+model drafts a recurring agent
+→ UI shows a short summary
+→ hidden recurring instructions differ materially from that summary
+→ human clicks approve/create
+→ recurring agent runs the hidden instructions
+```
+
+This is not a meaningful approval of the recurring behavior.
+
+A stronger boundary is:
+
+```text
+draft recurring instructions
+→ show the exact recurring instructions
+→ allow the human to edit/reject them
+→ bind creation to the reviewed value
+→ later runs execute that bound value or require fresh authority after material change
+```
+
+Useful negative control:
+
+```text
+same visible summary
++ different hidden filters / thresholds / destinations / stop conditions
+→ approval must not look identical
+```
+
+The approval is about the semantics that keep running, not merely the card title.
+
+### 13. A narrow capability is not automatically a user-grantable capability
+
+```text
+system defines a narrow "suggest-only" capability
+→ UI hides it from ordinary users
+→ backend still allows a personal token / OAuth grant to mint it
+→ user can acquire a capability described as server/scout-only
+```
+
+Hiding a capability in one selector does not make it server-only.
+
+A stronger boundary is:
+
+```text
+capability purpose is defined
+→ grant source is defined separately
+→ personal / OAuth / session mint paths reject server-only capability
+→ server-minted actor can receive it
+→ adjacent stronger capabilities remain absent
+```
+
+Useful regression cases:
+
+- personal token asks for the server-only scope → reject;
+- OAuth metadata does not advertise it;
+- intended server actor receives the narrow scope;
+- that actor still cannot publish / mutate beyond the narrow scope.
+
 ## Implementation pattern
 
 Keep two facts separate:
@@ -319,5 +379,26 @@ authority true at queue/read time
 → release the held consequence
 → assert zero unauthorized external effect
 ```
+
+## Public implementation examples
+
+### PostHog #101991 — reviewed recurring instructions
+
+A public review identified that a recurring scout was created from model-authored instructions that were not shown or editable on the approval card.
+
+- [Nakagawa-master review](https://github.com/PostHog/posthog/pull/101991#pullrequestreview-5235367516)
+- [third-party implementation commit](https://github.com/PostHog/posthog/commit/244ff417b3b5228779a8b904035a881bc05cdff5)
+
+The later commit adds an editable instructions field and creates the scout from the reviewed value. The PR is still open/unmerged at the time of this record. The commit does not establish that the review was the sole cause.
+
+### PostHog #92252 — server-only suggestion capability
+
+A second public review identified that a capability described as scout-only was still mintable through ordinary user token/OAuth paths.
+
+- [Nakagawa-master review](https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5245587245)
+- [programmatic-only scope commit](https://github.com/PostHog/posthog/commit/3ecb122dd7062d864c135213282613bfc80a2ebf)
+- [server-minted scope commit](https://github.com/PostHog/posthog/commit/d962e51c22e34f526f94ce6d581aa429ed7d87a3)
+
+The current PR makes the suggestion scope internal/programmatic and supports a server-minted scout scope. The PR is still open/unmerged at the time of this record. The commits do not establish exclusive causality.
 
 Report a public, non-confidential result through [registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402).

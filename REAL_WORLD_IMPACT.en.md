@@ -2,7 +2,7 @@
 
 Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**Last checked: 2026-09-23**
+**Last checked: 2026-09-24**
 
 Nakagawa Master is the pen name of Keisuke Nakagawa. On social media, the name “マスター” (“Master”) is also used; some external posts use “MasterJP.”
 
@@ -37,16 +37,25 @@ Only the publicly verifiable part of each case is described below.
 ## 1. PostHog | Separate producer-supplied evidence from PostHog's own measurement
 
 **Surface:** [PostHog/posthog#92252](https://github.com/PostHog/posthog/pull/92252)  
-**Current state:** open / draft / unmerged
+**Current state:** open / unmerged
 
 A `Nakagawa-master` review identified that producer-authored evidence should not be presented as if it had been independently measured by the system.
 
-- [Nakagawa-master review](https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200)
+- [Nakagawa-master evidence review](https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200)
+- [Nakagawa-master capability-boundary review](https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5245587245)
 
 The PR author later added server-side measurement, regression coverage, and UI distinctions such as `Measured by PostHog` versus `Unverified`.
 
-**Publicly verifiable here:** review followed by third-party code / test / UI changes.  
-**Not established here:** merge, release, production deployment, or user scale.
+A second review separated a narrow capability from a user-grantable capability. The current PR also makes `hog_flow_proposal` programmatic/internal, removes it from ordinary personal-key/OAuth/session grant surfaces, and treats it as a server-minted scout scope.
+
+- [server-side measurement commit `721311a9`](https://github.com/PostHog/posthog/commit/721311a97488781dd590708abe697480c5c0e9e8)
+- [programmatic-only scope commit `3ecb122d`](https://github.com/PostHog/posthog/commit/3ecb122dd7062d864c135213282613bfc80a2ebf)
+- [server-minted scope commit `d962e51c`](https://github.com/PostHog/posthog/commit/d962e51c22e34f526f94ce6d581aa429ed7d87a3)
+
+Those commit messages do not identify the `Nakagawa-master` reviews as the sole cause. This page therefore records that matching third-party implementation changes occurred after the reviews, without claiming exclusive causality.
+
+**Publicly verifiable here:** review followed by third-party code / test / UI / scope-boundary changes.  
+**Not established here:** merge, release, production deployment, user scale, or exclusive causality.
 
 ---
 
@@ -435,6 +444,35 @@ The boundary then became a consistency constraint inside the receiver's publicat
 
 **Publicly verifiable here:** origin-preserved review → third-party restatement → dedicated reader-facing implementation → merge / Pages deployment → reuse as a consistency rule in another document inside the same receiver → merge.  
 **Not established here:** that #58 is a second independent public-site publication, carry by a different receiver, broad reader response, mass human recognition, or endorsement of the full theory corpus.
+
+---
+## 18. PostHog | Bind recurring-agent approval to the instructions the human actually reviewed
+
+**Surface:** [PostHog/posthog#101991](https://github.com/PostHog/posthog/pull/101991)  
+**Current state:** open / unmerged
+
+This PR can turn a conversation into a recurring scout such as a weekly agent. In the earlier implementation, the card showed a name, short description, cadence, and destination, while the model-authored `scout.body` that would run on every schedule was not shown or editable before creation.
+
+A `Nakagawa-master` review stated the boundary:
+
+```text
+approval of a summary
+!=
+approval of hidden recurring instructions
+```
+
+- [Nakagawa-master review](https://github.com/PostHog/posthog/pull/101991#pullrequestreview-5235367516)
+
+A later third-party commit, `244ff417`, explicitly says the scheduled agent had been created from instructions the user never saw. It adds an editable instructions field to the card, creates the scout from the reviewed/edited `scoutBody`, and adds regression coverage that binds the edited value to the creation input.
+
+- [implementation commit `244ff417`](https://github.com/PostHog/posthog/commit/244ff417b3b5228779a8b904035a881bc05cdff5)
+
+The commit does not identify the `Nakagawa-master` review as its sole cause. The bounded claim is that a matching third-party implementation change is publicly visible after the review.
+
+**Publicly verifiable here:** review → third-party code / UI / test change; the instructions shown to the human are now the value used to create the recurring agent.  
+**Not established here:** merge, release, production deployment, user scale, or exclusive causality.
+
+---
 
 ## What this page supports — and what it does not
 

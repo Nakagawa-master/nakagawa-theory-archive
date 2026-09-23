@@ -2,7 +2,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**最終確認: 2026-09-23**
+**最終確認: 2026-09-24**
 
 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）は、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
 
@@ -48,18 +48,27 @@
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
 **対象:** [PostHog/posthog#92252](https://github.com/PostHog/posthog/pull/92252)  
-**現在状態:** open / draft / unmerged
+**現在状態:** open / unmerged
 
 PostHogのworkflow scoutは、AIがworkflow改善案と数値的なevidenceを人に提示する仕組みです。
 
 `Nakagawa-master` のreviewは、producer / scoutが送った数値と、実際のworkflow・version・stepからPostHog側が測定した数値を同一視しないよう指摘しました。
 
-- [Nakagawa-master review](https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200)
+- [Nakagawa-master evidence review](https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200)
+- [Nakagawa-master capability-boundary review](https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5245587245)
 
 その後、PR authorはserver側で対象stepのmetricを読み直し、producer由来の値とは別に保持する実装・テスト・表示変更を追加しました。UIでは `Measured by PostHog` と `Unverified` を区別し、producerの値とPostHog側の値が異なる場合も、その差を表示する設計になっています。
 
-**公開記録から確認できること:** review後に第三者authorがcode / tests / UIを変更したこと。  
-**まだ確認できないこと:** このPRのmerge、release、production deployment、利用者数。
+さらに、別のreviewで指摘した「narrow capability と user-grantable capability は同じではない」という境界についても、current PRには `hog_flow_proposal` をprogrammatic / internalにし、通常のpersonal API key / OAuth / session grantから外し、server-minted scout scopeとして扱う変更が入っています。
+
+- [server-side measurement commit `721311a9`](https://github.com/PostHog/posthog/commit/721311a97488781dd590708abe697480c5c0e9e8)
+- [programmatic-only scope commit `3ecb122d`](https://github.com/PostHog/posthog/commit/3ecb122dd7062d864c135213282613bfc80a2ebf)
+- [server-minted scope commit `d962e51c`](https://github.com/PostHog/posthog/commit/d962e51c22e34f526f94ce6d581aa429ed7d87a3)
+
+これらのcommit本文は `Nakagawa-master` reviewを唯一の原因として明示していません。そのため本ページは、**review後に同じ境界へ対応する第三者実装が入ったこと**は記録しますが、唯一因果までは主張しません。
+
+**公開記録から確認できること:** review後に第三者authorがcode / tests / UI / scope境界を変更したこと。  
+**まだ確認できないこと:** このPRのmerge、release、production deployment、利用者数、変更の唯一因果。
 
 ---
 
@@ -460,6 +469,35 @@ receiverはこの指摘を独立した設計軸として再説明し、専用PR 
 
 **公開記録から確認できること:** origin-preserved review → third-party restatement → 専用reader-facing本文実装 → merge / Pages反映 → 同じreceiver内の別文書で整合条件として再利用 → merge。  
 **まだ確認できないこと:** #58を別のpublic-site publicationとして数えること、別receiverによる独立carry、大規模読者反応、広範な人間認知、理論体系全体への支持。
+
+---
+
+---
+## 18. PostHog｜反復agentの「要約承認」と、実際に繰り返し実行されるinstructionsを分ける
+
+**対象:** [PostHog/posthog#101991](https://github.com/PostHog/posthog/pull/101991)  
+**現在状態:** open / unmerged
+
+このPRでは、会話から「毎週実行するscout」などの反復agentを作成できます。初期実装では、card上に名前・短い説明・cadence・送信先は表示される一方、実際に毎回実行されるmodel-authored `scout.body` は人間に表示・編集されないままcreate payloadへ入っていました。
+
+`Nakagawa-master` のreviewは、次の境界を提示しました。
+
+```text
+approval of a summary
+!=
+approval of hidden recurring instructions
+```
+
+- [Nakagawa-master review](https://github.com/PostHog/posthog/pull/101991#pullrequestreview-5235367516)
+
+その後、第三者authorのcommit `244ff417` は、scheduled agentが「user never saw」instructionsから作られていたことをcommit本文で明示し、card上に実際のinstructionsを表示・編集できるfieldを追加しました。create時には、draftされた隠れたbodyではなく、人間が確認・編集した `scoutBody` を送るよう変更され、regression testも追加されています。
+
+- [implementation commit `244ff417`](https://github.com/PostHog/posthog/commit/244ff417b3b5228779a8b904035a881bc05cdff5)
+
+このcommit本文も `Nakagawa-master` reviewを唯一原因として明示していません。そのため、確認できる範囲は「review後に、指摘された同じ承認境界へ対応する第三者実装が入った」までです。
+
+**公開記録から確認できること:** review → 第三者code / UI / test変更。人間が見るinstructionsと、実際に反復実行へ渡すinstructionsが同じreviewed valueへbindされるようになったこと。  
+**まだ確認できないこと:** merge、release、production deployment、利用者規模、変更の唯一因果。
 
 ---
 

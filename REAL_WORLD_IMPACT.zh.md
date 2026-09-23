@@ -2,7 +2,7 @@
 
 语言: [日本語](REAL_WORLD_IMPACT.md) | [English](REAL_WORLD_IMPACT.en.md) | **中文**
 
-**最后确认：2026-09-23**
+**最后确认：2026-09-24**
 
 中川大师（Nakagawa Master）是Keisuke Nakagawa的笔名。在社交媒体上也使用“マスター（Master）”，部分外部投稿使用“MasterJP”名义。
 
@@ -37,16 +37,25 @@
 ## 1. PostHog｜把producer提供的evidence与PostHog自身测量分开
 
 **对象：** [PostHog/posthog#92252](https://github.com/PostHog/posthog/pull/92252)  
-**当前状态：** open / draft / unmerged
+**当前状态：** open / unmerged
 
 `Nakagawa-master` 的review指出，producer自己写入的evidence不应被直接展示成系统独立测量的事实。
 
-- [Nakagawa-master review](https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200)
+- [Nakagawa-master evidence review](https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200)
+- [Nakagawa-master capability-boundary review](https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5245587245)
 
 之后，PR author加入了server-side measurement、回归测试以及 `Measured by PostHog` / `Unverified` 等UI区分。
 
-**公开可确认：** review之后，第三方author修改了code / tests / UI。  
-**尚未确认：** merge、release、production deployment、用户规模。
+第二个review又区分了“窄能力”与“用户可自行授予的能力”。current PR随后也把 `hog_flow_proposal` 设为programmatic / internal，从普通personal API key / OAuth / session grant中移除，并改为server-minted scout scope。
+
+- [server-side measurement commit `721311a9`](https://github.com/PostHog/posthog/commit/721311a97488781dd590708abe697480c5c0e9e8)
+- [programmatic-only scope commit `3ecb122d`](https://github.com/PostHog/posthog/commit/3ecb122dd7062d864c135213282613bfc80a2ebf)
+- [server-minted scope commit `d962e51c`](https://github.com/PostHog/posthog/commit/d962e51c22e34f526f94ce6d581aa429ed7d87a3)
+
+这些commit正文并没有把 `Nakagawa-master` review写成唯一原因。因此本页只记录：review之后出现了与该边界相对应的第三方实现变化，不主张唯一因果。
+
+**公开可确认：** review之后，第三方author修改了code / tests / UI / scope边界。  
+**尚未确认：** merge、release、production deployment、用户规模、唯一因果。
 
 ---
 
@@ -435,6 +444,35 @@ receiver把这一点重新解释为正文缺失的独立设计轴，并建立PR 
 
 **公开可确认：** 保留origin的review → 第三方重述 → 专门的reader-facing正文实现 → merge / Pages反映 → 在同一receiver的另一份文档中作为一致性条件继续复用 → merge。  
 **尚未确认：** 把#58计为第二个独立public-site publication、不同receiver的独立carry、大规模reader response、广泛人类认知、或对完整理论体系的认可。
+
+---
+## 18. PostHog｜把反复agent的批准绑定到人类实际看过的instructions
+
+**对象：** [PostHog/posthog#101991](https://github.com/PostHog/posthog/pull/101991)  
+**当前状态：** open / unmerged
+
+该PR可以把一次对话变成每周运行等反复scout。较早实现中，card会显示名称、短说明、cadence和destination，但每次schedule真正执行的model-authored `scout.body` 在create之前并不会展示给人，也不能编辑。
+
+`Nakagawa-master` review提出了这个边界：
+
+```text
+approval of a summary
+!=
+approval of hidden recurring instructions
+```
+
+- [Nakagawa-master review](https://github.com/PostHog/posthog/pull/101991#pullrequestreview-5235367516)
+
+之后的第三方commit `244ff417` 明确写道，scheduled agent此前是从“user never saw”的instructions创建的。该commit在card中加入可编辑的instructions field，create时使用人类实际review / edit后的 `scoutBody`，并加入regression test保证edited value真正进入creation input。
+
+- [implementation commit `244ff417`](https://github.com/PostHog/posthog/commit/244ff417b3b5228779a8b904035a881bc05cdff5)
+
+该commit没有把 `Nakagawa-master` review写成唯一原因。因此可确认的范围是：review之后，出现了与所指出批准边界相匹配的第三方实现变化。
+
+**公开可确认：** review → 第三方code / UI / test变化；人类看到的instructions现在与创建反复agent时使用的value绑定。  
+**尚未确认：** merge、release、production deployment、用户规模、唯一因果。
+
+---
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 

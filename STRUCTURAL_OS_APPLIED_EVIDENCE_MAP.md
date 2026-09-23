@@ -86,6 +86,36 @@ A case can validate or operationalize one narrow distinction without proving the
 
 ---
 
+### 6. Epistemic integrity → producer claim is not system measurement
+
+**Canonical context:** the theory system separates evidence lineage, independent establishment, and the state of what is actually known.
+
+**Applied distinction:** a producer/scout-supplied metric should not be presented as if the receiving system measured it itself.
+
+**External evidence:** [PostHog #92252](https://github.com/PostHog/posthog/pull/92252) received a public review on this boundary; the current third-party implementation reads the named step/version on the server, stores that reading separately under `evidence.measured`, and exposes disagreement with producer-supplied values. The PR remains open/unmerged.
+
+**Public verification route:** [Real-World Impact](REAL_WORLD_IMPACT.en.md#1-posthog--separate-producer-supplied-evidence-from-posthogs-own-measurement)
+
+**Canonical return:** https://master.ricette.jp and the public epistemic-integrity / evidence-lineage materials linked from the archive.
+
+---
+
+### 7. Authority / approval semantics → summary approval is not hidden recurring-instruction approval
+
+**Canonical context:** authority is meaningful only when it is bound to the actual object, scope, and consequence being authorized.
+
+**Applied distinction:** approving a short summary does not authorize materially different hidden instructions that will keep running on a schedule.
+
+**External evidence:** [PostHog #101991](https://github.com/PostHog/posthog/pull/101991) received a public review identifying this boundary. A later third-party commit shows the recurring instructions on the card, makes them editable, and binds scout creation to the reviewed value. The PR remains open/unmerged.
+
+**Applied kit:** [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
+
+**Public verification route:** [Real-World Impact](REAL_WORLD_IMPACT.en.md#18-posthog--bind-recurring-agent-approval-to-the-instructions-the-human-actually-reviewed)
+
+**Canonical return:** https://master.ricette.jp for the broader current-authority / responsibility context.
+
+---
+
 ## Important boundary
 
 These mappings are deliberately bounded.
