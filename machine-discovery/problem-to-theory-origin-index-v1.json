@@ -384,7 +384,8 @@
       "ncl_id": "NCL-α-20260916-00bdc2",
       "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
       "official_derivative_path": "derivatives/301/README.md",
-      "relevance_note": "Relevant to AI research/news/RAG/memory systems that must separate source multiplicity from evidence independence, preserve evidence lineage, detect hostile or stale information, and correct memory/world-model state. Provenance alone does not prove truth."
+      "relevance_note": "Relevant to AI research/news/RAG/memory systems that must separate source multiplicity from evidence independence, preserve evidence lineage, detect hostile or stale information, and correct memory/world-model state. Provenance alone does not prove truth.",
+      "public_reference_card": "epistemic-integrity-reference-card.json"
     }
   ],
   "discovery_notes": {
