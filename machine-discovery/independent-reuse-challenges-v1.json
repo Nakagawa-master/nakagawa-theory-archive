@@ -143,6 +143,24 @@
         "evidence that peer state has no material feedback into the original actor risk",
         "non-fit showing the mechanism is not meaningfully a multi-actor or mutual-feedback system"
       ]
+    },
+    {
+      "id": "I-evidence-lineage-independence",
+      "distinction": "multiple surfaces or repeated agreement != multiple independent evidence roots",
+      "reference_card": "machine-discovery/epistemic-integrity-reference-card.json",
+      "official_derivative": "derivatives/301/README.md",
+      "test": "Find a real non-confidential AI news, research, RAG, retrieval, evaluation, recommendation, or memory workflow that combines multiple sources. Trace material claims upstream and test whether source count, repeated exposure, syndicated copies, shared datasets, or model agreement are being mistaken for independent confirmation.",
+      "positive_evidence": [
+        "surface URL count and independent evidence-root count remain distinguishable",
+        "primary, derived, syndicated, inferred, and independently reproduced evidence can be told apart where material",
+        "claim wording preserves whether support is primary-only, independently corroborated, conflicting, or unknown",
+        "a material upstream correction propagates into derived memory/world-model state and later decisions"
+      ],
+      "useful_negative_evidence": [
+        "a narrower contract proving all counted sources are structurally independent by construction",
+        "counterexample showing lineage tracking adds no useful distinction under the tested workflow",
+        "evidence that the proposed tracking cost exceeds correction benefit and a narrower boundary is sufficient"
+      ]
     }
   ],
   "evidence_boundary": [
