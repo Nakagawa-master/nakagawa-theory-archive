@@ -171,6 +171,8 @@ Start:
 
 ## Reusable public formats
 
+For a ready-to-adapt short / long / newsletter / live / archive cadence using the same lens across changing cases, see the [Recurring Media Implementation Pack](RECURRING_MEDIA_IMPLEMENTATION_PACK.md).
+
 These lenses can become a 60–90 second short, a 5–15 minute case breakdown, a newsletter item, a system-design/postmortem article, an investment/research checklist, a debate that includes counterconditions, or a regression test.
 
 A strong adaptation preserves:

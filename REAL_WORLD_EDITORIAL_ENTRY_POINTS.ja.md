@@ -196,6 +196,8 @@ AI可視性、検索順位、brand測定、model eval、recommendation monitorin
 
 ## 発信フォーマット
 
+同じ境界を別の時事・企業・AI・投資事例へ反復展開する場合は、[Recurring Media Implementation Pack](RECURRING_MEDIA_IMPLEMENTATION_PACK.md) に short / long / newsletter / live / archive の実装型があります。
+
 各テーマは、次の形式へ変換できます。
 
 - 60–90秒のshort
