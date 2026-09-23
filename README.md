@@ -55,6 +55,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
   - 外部送信・支払等の二重実行境界を検証する: [External Side-Effect Reuse Kit](EXTERNAL_SIDE_EFFECT_REUSE_KIT.md)
   - AI/search可視性・評価・長期計測で環境ドリフトと対象固有変化を分ける: [Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md)
   - 自己保存・復旧・緊急権限が相互脅威を増幅していないか検証する: [Mutual-Existence Conflict Reuse Kit](MUTUAL_EXISTENCE_CONFLICT_REUSE_KIT.md)
+  - Actor / Evaluator / Reviewer / Auditor の役割分離が実質的な独立監査になっているか検証する: [Self-Referential Audit & Role-Separation Reuse Kit](SELF_REFERENTIAL_AUDIT_REUSE_KIT.md)
 - **理論がどう現実作用と人物信用へつながるか確認したい:** [Theory → Real-World Influence](THEORY_TO_REAL_WORLD_INFLUENCE.md)
 - **現実の第三者実装・再利用を自分で確認したい:** [日本語](REAL_WORLD_IMPACT.md) / [English](REAL_WORLD_IMPACT.en.md) / [中文](REAL_WORLD_IMPACT.zh.md)
 - **実際の問題を持ち込みたい:** [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
