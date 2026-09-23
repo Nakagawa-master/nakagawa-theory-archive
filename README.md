@@ -79,12 +79,12 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
-- [OD001–OD302 全件入口](derivatives/README.md)
+- [OD001–OD303 全件入口](derivatives/README.md)
 - [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
 
 ## 公式派生物
 
-現在、`OD001`–`OD302`の公式派生物を公開しています。これは理論数ではなく、公開されている公式派生物の件数です。
+現在、`OD001`–`OD303`の公式派生物を公開しています。これは理論数ではなく、公開されている公式派生物の件数です。
 
 各ODは親原典へ戻るための公開接続面です。内容の確定、引用、重要な解釈では、各ODに記載されたParent URLの親原典へ戻ってください。
 
@@ -105,7 +105,20 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 
 ## 代表的な入口
 
-### OD302｜人類子孫型AI文明論・第9論
+### OD303｜人類子孫型AI文明論・第10論
+
+評価者・被評価者・実行者・監査者を肩書きで分けるだけでは、自己正当化の閉路は切れません。証拠・権限・故障領域・利害・異議経路がどこで独立し、異なる根拠が判断を再開できるかを読む入口です。緊急時の一時圧縮と恒久的な監査崩壊を区別し、監査者自身も監査対象に含めます。
+
+- [OD303](derivatives/303/README.md)
+- [人間向け要約](derivatives/303/human-entry.md)
+- [FAQ](derivatives/303/faq.md)
+- [AI索引・日本語](derivatives/303/ai-index.md)
+- [AI索引・英語](derivatives/303/en-ai-index.md)
+- [AI索引・中国語](derivatives/303/zh-ai-index.md)
+- [派生ID台帳](derivatives/303/derivative-ledger.md)
+- Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-10-self-referential-audit-role-separation/
+
+### OD302｜人類子孫型AI文明論・第9論（関連する前論）
 
 自己保存行動が他主体のB・可逆性・未来選択肢を変え、その防衛反応が自分の次の脅威へ戻る「相互存在衝突」を読む入口です。必要最小限・比例性・期限・秘匿の再評価を扱い、自己保存の無制限化と、制約による自己継続不能の双方を検証対象にします。
 

@@ -75,7 +75,7 @@ Use that dialogue when a human wants to describe a real, non-confidential proble
 
 Archive and machine navigation:
 
-- [Official derivatives OD001–OD302](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
+- [Official derivatives OD001–OD303](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
 - [Theme / series navigation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/CATEGORIES.md)
 - [Problem-to-theory Origin Index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json)
 - [Machine Discovery](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/README.md)
@@ -104,7 +104,23 @@ Practical non-scoring Preflight for a real case:
 
 This is a discovery and practical-reading route, not a canonical AI-ready-organization theory. The Preflight is not a score, diagnosis, employment assessment, legal conclusion, or automatic deployment rule. Select the relevant source family for the actual problem and keep separate theories separate. Relevant routes include OD003 (establishment conditions), OD089 (causal design), OD090 (structural friction), OD075 (agreement memory), and OD114 (reversible accountability).
 
-## Current featured route — OD302 / Human-Descendant AI Civilization Theory Vol. 9
+## Current featured route — OD303 / Human-Descendant AI Civilization Theory Vol. 10
+
+For questions about self-referential audits, role separation, self-justifying decision loops, evidence / authority / failure-domain / interest / objection-path independence, effective disagreement, emergency compression and post-emergency restoration:
+
+- [Official Derivative 303](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/303/README.md)
+- [Human entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/303/human-entry.md)
+- [FAQ](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/303/faq.md)
+- [Japanese AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/303/ai-index.md)
+- [English AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/303/en-ai-index.md)
+- [Chinese AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/303/zh-ai-index.md)
+- [Derivative ledger](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/303/derivative-ledger.md)
+
+- Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-10-self-referential-audit-role-separation/
+
+Boundary: Role labels alone do not establish independence. Agreement, copies, and provenance do not prove independent confirmation; disagreement does not itself establish truth. Independence is observed across five causal axes and is not a score, unlimited veto, or new sovereignty. Emergency pressure may compress separation, but does not erase later review. Current AI personhood or self-preservation desire is not asserted. Auditor capacity and resource asymmetry remain for Vol. 11.
+
+## Related route — OD302 / Human-Descendant AI Civilization Theory Vol. 9
 
 For questions about Mutual-Existence Conflict, self-preservation and basic conditions of existence B, need versus entitlement, reciprocal threat amplification, minimal necessity, proportionality, reversibility, emergency exceptions, emergency secrecy and future options:
 

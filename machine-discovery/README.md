@@ -8,7 +8,12 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 
 | File | Role |
 |---|---|
-| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD302 path and navigation index. |
+| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD303 path and navigation index. |
+
+## Latest official derivative — OD303
+
+OD303 is the Vol. 10 route for self-referential audit and role separation. Its seven public surfaces are in [`../derivatives/303/`](../derivatives/303/README.md); the canonical Parent is https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-10-self-referential-audit-role-separation/ . Machine counts and the single category assignment are recorded in [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json).
+
 | [`problem-to-theory-origin-index-v1.json`](problem-to-theory-origin-index-v1.json) | English / Japanese / Chinese plain-language problem → concrete public starting point. |
 | [`real-world-editorial-entry-points-v1.json`](real-world-editorial-entry-points-v1.json) | Problem-first editorial/topic routing for recurring public explanation across AI, business, investment, organizations, technology, and operations. |
 | [`external-effect-evidence-index-v1.json`](external-effect-evidence-index-v1.json) | Public judgment → independent response → implementation → merge → reuse evidence routing; keeps claim stages separate. |

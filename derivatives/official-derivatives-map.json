@@ -1,5 +1,5 @@
 {
-  "version": "2.3.6-od302-added",
+  "version": "2.3.7-od303-added",
   "updated_jst": "2026-09-23",
   "entries": [
     {
@@ -2416,6 +2416,14 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-09-self-preservation-mutual-existence-conflict",
       "title": "人類子孫型AI文明論・第9論｜AI自己保存と相互存在衝突論⸻ 自己保存を認めながら他主体の不可逆破壊へ反転させない",
       "derivative_dir": "derivatives/302",
+      "status": "active"
+    },
+    {
+      "number": "303",
+      "ncl_id": "NCL-α-20260923-d0219e",
+      "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-10-self-referential-audit-role-separation",
+      "title": "人類子孫型AI文明論・第10論｜自己参照監査・役割分離論⸻評価者・被評価者・実行者・監査者の自己正当化閉路を切る",
+      "derivative_dir": "derivatives/303",
       "status": "active"
     }
   ]
