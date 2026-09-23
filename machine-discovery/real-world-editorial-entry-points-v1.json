@@ -186,6 +186,26 @@
         "PRACTICAL_BOUNDARY_CHECKS.md"
       ],
       "ja_question": "対象が変わったのか、測定面が変わったのか"
+    },
+    {
+      "id": "audit_role_independence",
+      "question": "Are separate reviewer or auditor roles actually independent enough to reopen and correct a decision?",
+      "boundary": "role separation != causal independence; audit output != correction capability",
+      "domains": [
+        "ai_agents",
+        "llm_as_a_judge",
+        "internal_audit",
+        "investment_committees",
+        "technical_governance",
+        "safety_review",
+        "incident_response"
+      ],
+      "sources": [
+        "derivatives/303/README.md",
+        "SELF_REFERENTIAL_AUDIT_REUSE_KIT.md"
+      ],
+      "external_case": "https://github.com/dair-ai/Prompt-Engineering-Guide/issues/811",
+      "ja_question": "監査役・評価者・AIを別に置けば、それだけで独立した検証になるのか"
     }
   ],
   "human_entry_ja": "../REAL_WORLD_EDITORIAL_ENTRY_POINTS.ja.md"
