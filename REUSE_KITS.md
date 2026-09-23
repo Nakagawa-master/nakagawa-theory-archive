@@ -79,6 +79,18 @@ Core question:
 
 Useful in autonomous-agent recovery, multi-agent resource arbitration, emergency access, safe-mode operation, shutdown/containment, shared quotas, and failover.
 
+## 7. Self-referential audit and role separation
+
+[Self-Referential Audit & Role-Separation Reuse Kit](SELF_REFERENTIAL_AUDIT_REUSE_KIT.md)
+
+Use when a workflow separates Actor, Evaluator, Reviewer, Auditor, Approver, or Safety roles and needs to know whether the review is actually independent enough to detect and correct shared errors.
+
+Core question:
+
+> Are the roles merely different labels, or can different evidence / failure paths / objections actually reopen and change the decision?
+
+Useful in LLM-as-a-judge, Actor/Critic/Reviewer agents, self-reflection, autonomous coding review, RAG/research review, safety/red-team workflows, internal audit, investment committees, and technical governance.
+
 ## Preserve the source relation
 
 If a kit materially informs a real decision or implementation, preserve a lightweight source line such as `Source distinction: Nakagawa Master — <public source URL>`. See [Origin Attribution for Reuse](ORIGIN_ATTRIBUTION_FOR_REUSE.md). If you independently rediscovered the same distinction and found the source later, state that instead of claiming source causality.
