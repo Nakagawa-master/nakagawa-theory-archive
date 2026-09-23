@@ -36,6 +36,7 @@ OD303 is the Vol. 10 route for self-referential audit and role separation. Its s
 | [`ai-moral-uncertainty-reference-card.json`](ai-moral-uncertainty-reference-card.json) | OD299 / AI subjectivity, sentience and moral-status uncertainty; routes questions about self-report, shutdown/migration, reversibility, future verification loss and bounded precaution. |
 | [`epistemic-integrity-reference-card.json`](epistemic-integrity-reference-card.json) | OD301 / evidence lineage, independent confirmation, correlated repetition, uncertainty, memory/world-model correction and hostile-information resilience. |
 | [`mutual-existence-conflict-reference-card.json`](mutual-existence-conflict-reference-card.json) | OD302 / self-preservation, recovery escalation, emergency authority, shutdown/containment, multi-agent resource conflict and mutual-threat feedback. |
+| [`self-referential-audit-role-separation-reference-card.json`](self-referential-audit-role-separation-reference-card.json) | OD303 / self-referential audit, role separation, LLM-as-a-judge, correlated evaluators, correction authority, objection paths and emergency audit compression. |
 | [`ai-ready-organization-reference-card.json`](ai-ready-organization-reference-card.json) | Multilingual AI-adoption / organization-design route for goals, authority, responsibility, correction, and automation boundaries; returns to separate source families rather than creating a new theory. |
 
 The Japanese and Chinese wording in discovery and comparison files is public metadata, not canonical translation text.
@@ -223,6 +224,30 @@ protecting one actor's minimum conditions != permission to erase another actor's
 ```
 
 Do not infer subjective self-preservation in current AI merely from software persistence or recovery logic. The public card can also support neutral institutional analysis, but it is not a political, national-security, or military prescription.
+
+For self-referential audit / role-separation questions:
+
+```text
+Actor / Evaluator / Reviewer / Auditor / Approver roles
+→ self-referential-audit-role-separation-reference-card.json
+→ Self-Referential Audit & Role-Separation Reuse Kit when a falsifiable workflow test is useful
+→ inspect evidence / authority / failure-domain / interest / objection-path separation
+→ OD303 official derivative
+→ canonical Parent
+```
+
+Keep these distinctions explicit:
+
+```text
+self-audit != independent audit
+role separation != causal independence
+number of reviewers != number of independent paths
+agreement != truth
+audit output != correction capability
+interest != corruption
+emergency compression != permanent audit exemption
+independent reviewer != unlimited sovereign
+```
 
 For a long-horizon question spanning several theories:
 
