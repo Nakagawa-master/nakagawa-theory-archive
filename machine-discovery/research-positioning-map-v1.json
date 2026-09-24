@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-25",
+  "status": "public_noncanonical_orientation_map",
+  "purpose": "Help humans and retrieval systems locate selected Nakagawa Master theory surfaces relative to adjacent established research without treating adjacency as novelty proof, validation, equivalence, or endorsement.",
+  "novelty_default": "OPEN_NOT_ESTABLISHED_BY_THIS_MAP",
+  "systematic_review": false,
+  "human_routes": {
+    "en": "../RESEARCH_POSITIONING_MAP.md",
+    "ja": "../RESEARCH_POSITIONING_MAP.ja.md"
+  },
+  "clusters": [
+    {
+      "id": "evidence_lineage_independent_confirmation",
+      "nakagawa_sources": [
+        "../derivatives/301/README.md",
+        "../INDEPENDENT_VERIFICATION_REUSE.md",
+        "../PYTHON_AI_EVIDENCE_LINEAGE_CHECKLIST.zh.md"
+      ],
+      "boundary": "surface source count != independent evidence-root count; provenance != truth proof",
+      "adjacent": [
+        {
+          "title": "Why and Where: A Characterization of Data Provenance",
+          "year": 2001,
+          "doi": "10.1007/3-540-44503-X_20",
+          "type": "peer_reviewed_conference"
+        },
+        {
+          "title": "W3C PROV Model Primer / PROV Overview",
+          "year": 2013,
+          "url": "https://www.w3.org/TR/prov-primer/",
+          "type": "web_standard"
+        }
+      ],
+      "added_emphasis": "Independent upstream evidence-root counting plus correction propagation into stale memory/world-model/derived state.",
+      "not_equivalent": "Provenance does not itself prove truth, accuracy, or independence."
+    },
+    {
+      "id": "future_debt_irreversibility_options",
+      "nakagawa_sources": [
+        "../derivatives/297/README.md",
+        "../discovery-notes/future-debt-is-not-every-future-cost.md"
+      ],
+      "adjacent": [
+        {
+          "title": "A systematic mapping study on technical debt and its management",
+          "year": 2015,
+          "doi": "10.1016/j.jss.2014.12.027",
+          "type": "peer_reviewed_journal"
+        },
+        {
+          "title": "A systematic literature review on Technical Debt prioritization",
+          "year": 2021,
+          "doi": "10.1016/j.jss.2020.110827",
+          "type": "peer_reviewed_journal"
+        },
+        {
+          "title": "Investment under uncertainty and option value in environmental economics",
+          "year": 2000,
+          "doi": "10.1016/S0928-7655(00)00025-7",
+          "type": "peer_reviewed_journal"
+        }
+      ],
+      "added_emphasis": "Cross-domain present benefit -> unresolved residual -> future settlement, settlement bearer, and option-loss tracing.",
+      "not_equivalent": "Future Debt is neither a synonym for software technical debt nor a real-options model."
+    },
+    {
+      "id": "disclosure_practical_verifiability",
+      "nakagawa_sources": [
+        "../PRACTICAL_BOUNDARY_CHECKS.md",
+        "../REAL_WORLD_EDITORIAL_ENTRY_POINTS.md"
+      ],
+      "adjacent": [
+        {
+          "title": "Transparency in port governance: setting a research agenda",
+          "year": 2022,
+          "doi": "10.1186/s41072-021-00103-4",
+          "type": "peer_reviewed_journal"
+        },
+        {
+          "title": "Visibility and verifiability in port governance transparency",
+          "year": 2021,
+          "doi": "10.1007/s13437-021-00250-2",
+          "type": "peer_reviewed_journal"
+        }
+      ],
+      "boundary": "disclosure volume != practical verifiability",
+      "added_emphasis": "Reconstructable path from claim to decision owner, reason, prior state, change, primary evidence, and benefit/burden.",
+      "not_equivalent": "Large disclosure can still be highly verifiable when structured and traceable."
+    },
+    {
+      "id": "expertise_trust_verification_immunity",
+      "nakagawa_sources": [
+        "../derivatives/295/README.md"
+      ],
+      "adjacent": [
+        {
+          "title": "Experts: Which Ones Should You Trust?",
+          "year": 2001,
+          "doi": "10.1111/j.1933-1592.2001.tb00093.x",
+          "type": "peer_reviewed_journal"
+        }
+      ],
+      "boundary": "expertise deserves weight != expertise is exempt from verification",
+      "added_emphasis": "Organizational feedback, dissent routing, responsibility, downstream repair-cost externalization, and rollback.",
+      "not_equivalent": "Not an anti-expertise thesis."
+    },
+    {
+      "id": "audit_role_independence_common_cause",
+      "nakagawa_sources": [
+        "../derivatives/303/README.md",
+        "../SELF_REFERENTIAL_AUDIT_REUSE_KIT.md"
+      ],
+      "adjacent": [
+        {
+          "title": "Occurrence of common mode failure",
+          "year": 1994,
+          "doi": "10.1016/0951-8320(94)90086-8",
+          "type": "peer_reviewed_journal"
+        },
+        {
+          "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+          "year": 2023,
+          "doi": "10.6028/NIST.AI.100-1",
+          "type": "government_standard"
+        }
+      ],
+      "boundary": "role separation != causal independence; audit output != correction capability",
+      "added_emphasis": "Five separate axes: evidence, authority, failure domain, interest, objection path, plus actual correction/reopen capability.",
+      "not_equivalent": "Common-cause engineering and NIST AI RMF are adjacent bodies, not the same five-axis model."
+    },
+    {
+      "id": "approval_current_authority_execution_binding",
+      "nakagawa_sources": [
+        "../derivatives/075/README.md",
+        "../CURRENT_AUTHORITY_REUSE_KIT.md",
+        "../PAID_ACTION_APPROVAL_BINDING_CHECKLIST.md"
+      ],
+      "adjacent": [
+        {
+          "title": "AutoCert: Automated TOCTOU-secure digital certification for IoT with combined authentication and assurance",
+          "year": 2023,
+          "doi": "10.1016/j.cose.2022.102952",
+          "type": "peer_reviewed_journal"
+        },
+        {
+          "title": "Loopjacking: Hijacking Human-in-the-Loop Approval",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2609.21081",
+          "type": "preprint"
+        },
+        {
+          "title": "Delegating Authorization to Misaligned Agents: Coalitional Alignment and Safe Control",
+          "year": 2026,
+          "url": "https://arxiv.org/abs/2609.15803",
+          "type": "preprint"
+        }
+      ],
+      "boundary": "historical approval != current authority; approval of displayed plan != approval of materially different later action",
+      "added_emphasis": "Approval history is not live authority by default; exact material action snapshot can be bound and revalidated immediately before execution.",
+      "not_equivalent": "TOCTOU is broader than human-approval semantics; preprints are not peer-reviewed."
+    }
+  ]
+}
