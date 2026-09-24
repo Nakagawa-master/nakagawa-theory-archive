@@ -179,7 +179,7 @@ Whether any of these combinations are novel in a scholarly sense remains open. A
 
 If you know a closer prior work, a conflicting result, an older formulation, or a useful adjacent literature, use the public issue linked below.
 
-Issue: TO_BE_LINKED
+Issue: https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/410
 
 Please include:
 - the Nakagawa theory / OD / public source,
