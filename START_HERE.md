@@ -9,6 +9,7 @@
 - [4つの場面から入る｜AI・会社・未来・起源](discovery-notes/four-scenes-one-structural-view.md)
 - [実際の問題に使う｜Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [実際の問題を持ち込む｜公開対話入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
+- [既存研究との位置関係を見る｜近接研究・差分・未確定新規性](RESEARCH_POSITIONING_MAP.ja.md)
 
 このページ自体は理論の正本ではありません。定義、成立条件、反証条件、改訂状態を確認するときは、各公式派生物から親原典へ戻ってください。
 
