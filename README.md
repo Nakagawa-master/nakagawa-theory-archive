@@ -6,6 +6,10 @@
 
 人物 / Origin: [日本語](ABOUT_NAKAGAWA_MASTER.md) | [English](ABOUT_NAKAGAWA_MASTER.en.md) | [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 
+短い実例 / WordPress.com: [Nakagawa Master](https://nakagawamaster.wordpress.com) — 実世界の問いから公開派生物・原典へ戻る読者向け入口
+
+最初の実例: [10本の記事が同じことを言っていても、独立した証拠が10個あるとは限らない](https://nakagawamaster.wordpress.com/2026/09/24/hello-world/)
+
 本リポジトリは、中川マスター（Nakagawa Master／筆名）の公開理論体系を、人間とAIが発見・照合・再参照できる形で保存する公開アーカイブです。
 
 公式派生物、FAQ、人間向け入口、日本語・英語・中国語のAI索引、理論関係情報、来歴・差分情報、Discovery Note、機械可読索引を収録しています。
