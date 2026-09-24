@@ -656,3 +656,20 @@ receiver commit `dfd4588d` は、export aliasとsource declaration nameの両方
 - [公開対話入口｜実際の問題から始める](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
 このページは、名前や件数だけで評価を求めるためのページではありません。**元の公開コメント、第三者側の応答、実際の変更、現在のrepository状態を読者自身が確認するための案内です。**
+
+---
+
+## 18. Qwen Code｜有料Batch APIの承認境界
+
+**対象:** [QwenLM/qwen-code#12492](https://github.com/QwenLM/qwen-code/pull/12492)  
+**現在状態:** open / proposal acknowledged / product decision pending
+
+[Nakagawa-masterの公開コメント](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552)は、`qwen batch run` の承認と、実際に課金される具体的batch snapshotの承認を分ける境界を提示しました。exact item set、frozen settings、cost estimateをcanonical digestへ束ね、承認後に内容が変わればold approvalを無効にする案です。
+
+その後、第三者developer `yiliang114` はreview closeoutでこの提案をNakagawa-masterの提案として明示的に取り上げ、既存のretry-budget修正とは別のproduct decisionが必要な論点として保持しました。
+
+- [third-party response](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817836928)
+- [bounded follow-up](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817960767)
+
+**確認できること:** 第三者developerによる名前付き認識と、独立したproduct-decision論点としての保持。  
+**まだ確認できないこと:** 採用、code/tests実装、merge、release、実利用。
