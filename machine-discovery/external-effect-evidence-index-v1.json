@@ -795,6 +795,50 @@
         ],
         "canonical_return": "https://master.ricette.jp"
       }
+    },
+    {
+      "case_id": "qwen-code-paid-batch-approval-binding",
+      "topic": "approval of a command or plan reference versus approval of the exact paid batch snapshot",
+      "external_repository": "QwenLM/qwen-code",
+      "origin_action": {
+        "type": "pull_request_comment",
+        "url": "https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552",
+        "summary": "Bind approval for a consequential paid batch to the exact item set and frozen execution snapshot rather than only to the qwen batch run command or plan path.",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action"
+      },
+      "third_party_response": {
+        "actor": "yiliang114",
+        "url": "https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817836928",
+        "relationship": "third-party developer explicitly attributed the proposal to Nakagawa-master and preserved it as a separate product-level decision because it changes the approval flow"
+      },
+      "bounded_followup": {
+        "url": "https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817960767",
+        "summary": "bounded implementation shape: canonical digest of the concrete paid snapshot, human-readable summary, re-hash before upload/create, and fresh approval after material drift"
+      },
+      "implementation": {
+        "verified": false
+      },
+      "current_stage": "explicit_third_party_response_or_restatement",
+      "reusable_check": "PAID_ACTION_APPROVAL_BINDING_CHECKLIST.md",
+      "not_claimed": [
+        "author product decision",
+        "code implementation",
+        "tests implementing the approval-binding proposal",
+        "merge of the proposal",
+        "release",
+        "production use",
+        "whole-theory endorsement"
+      ],
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "approval of command/plan reference != approval of exact consequential paid action",
+        "canonical_context": [
+          "current authority",
+          "consequential action binding",
+          "state drift before execution"
+        ],
+        "canonical_return": "https://master.ricette.jp"
+      }
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
