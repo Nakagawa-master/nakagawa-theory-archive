@@ -8,9 +8,9 @@
 
 短い実例 / WordPress.com: [Nakagawa Master](https://nakagawamaster.wordpress.com/?utm_source=github&utm_medium=referral&utm_campaign=reader_series) — 実世界の問いから公開派生物・原典へ戻る読者向け入口
 
-AI / LLM運用、認可・ガバナンス、計測、履歴、外部APIのretry、migration / syncなど、実務で起きる具体的な問題から入れます。
+AI / LLM運用、認可・ガバナンス、計測、履歴、外部APIのretry、migration / syncに加え、成長・投資・将来の選択肢など、実務で起きる具体的な問題から入れます。
 
-読者向け実例シリーズ: [6つの短い実例 → source → 独立検証](WORDPRESS_READER_SERIES.md)
+読者向け実例シリーズ: [7つの短い実例 → source → 独立検証](WORDPRESS_READER_SERIES.md)
 
 - [10本の記事が同じことを言っていても、独立した証拠が10個あるとは限らない](https://nakagawamaster.wordpress.com/2026/09/24/hello-world/)
 - [「一度承認された」は、今も許可されているという意味ではない](https://nakagawamaster.wordpress.com/2026/09/24/approved-before-not-authorized-now/)
@@ -18,6 +18,7 @@ AI / LLM運用、認可・ガバナンス、計測、履歴、外部APIのretry�
 - [「今いない人」は、「あの時もいなかった人」ではない](https://nakagawamaster.wordpress.com/2026/09/24/current-status-is-not-historical-fact/)
 - [「エラーだから再送」は、二重送信や二重決済を生むことがある](https://nakagawamaster.wordpress.com/2026/09/24/local-error-is-not-external-failure/)
 - [「同じIDだから上書きしてよい」とは限らない](https://nakagawamaster.wordpress.com/2026/09/24/same-id-does-not-mean-safe-overwrite/)
+- [不可逆点とは？ 成長の裏で「未来の選択肢」が減るとき](https://nakagawamaster.wordpress.com/2026/09/25/irreversible-point-future-options/)
 
 本リポジトリは、中川マスター（Nakagawa Master／筆名）の公開理論体系を、人間とAIが発見・照合・再参照できる形で保存する公開アーカイブです。
 
