@@ -629,3 +629,20 @@ counterexample、non-fit与failed reproduction同样是有价值的公开证据�
 - [公开对话入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
 本页不是要求读者相信一个名字或数字。它的用途是让读者自己核对：原始公开comment、第三方回应、实际修改，以及repository当前状态。
+
+---
+
+## 18. Qwen Code｜付费 Batch API 的批准边界
+
+**对象:** [QwenLM/qwen-code#12492](https://github.com/QwenLM/qwen-code/pull/12492)  
+**当前状态:** open / proposal acknowledged / product decision pending
+
+[Nakagawa-master 的公开评论](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552) 区分了批准 `qwen batch run` 与批准实际计费的具体 batch snapshot。该方案把 exact item set、frozen settings 与 cost estimate 绑定到 canonical digest，并把后续实质变化视为旧批准失效。
+
+随后，第三方开发者 `yiliang114` 明确把这一点作为 Nakagawa-master 的提案单独列出，并将其与 retry-budget 修复区分开，保留为 product-level decision。
+
+- [third-party response](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817836928)
+- [bounded follow-up](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817960767)
+
+**公开记录能够确认:** 独立第三方按来源识别该提案，并把它作为独立 product-decision 项保留。  
+**尚不能确认:** 采纳、code/tests、merge、release 或真实使用。
