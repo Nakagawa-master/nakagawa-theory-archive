@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWorkSeries",
+  "name": "Nakagawa Master Official Theory Archive",
+  "alternateName": "中川マスター公式理論アーカイブ",
+  "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
+  "author": {
+    "@type": "Person",
+    "name": "Nakagawa Master",
+    "alternateName": "中川マスター",
+    "url": "https://master.ricette.jp/"
+  },
+  "description": "Public discovery, provenance, comparison, and reference surface for the published Nakagawa Master theory corpus. Canonical theory claims remain at their linked parent sources.",
+  "inLanguage": ["ja", "en", "zh"],
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Nakagawa Master",
+    "url": "https://master.ricette.jp/"
+  },
+  "subjectOf": [
+    {
+      "@type": "CreativeWork",
+      "name": "Research Positioning Map",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/RESEARCH_POSITIONING_MAP.md"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Citation guidance",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CITATION.md"
+    }
+  ],
+  "sameAs": [
+    "https://nakagawamaster.wordpress.com/",
+    "https://github.com/Nakagawa-master"
+  ],
+  "usageInfo": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CITATION.md"
+}
+
