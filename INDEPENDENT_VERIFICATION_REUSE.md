@@ -6,6 +6,15 @@ This is a non-canonical participation and evidence protocol for people who want 
 
 It is not an endorsement form. Agreement is not required. A useful negative result or counterexample is as valuable as a successful reuse.
 
+## Reader-facing Japanese entry
+
+A short Japanese example for the evidence-root distinction is available here:
+
+- [10本の記事が同じことを言っていても、独立した証拠が10個あるとは限らない](https://nakagawamaster.wordpress.com/2026/09/24/hello-world/)
+- [Japanese reader-entry series](WORDPRESS_READER_SERIES.md)
+
+The WordPress entry is an explanatory carrier. Use this protocol and the linked public sources for an independent test or evidence report.
+
 ## What counts as useful external evidence
 
 A submission should start from a concrete problem and make the causal path inspectable:
