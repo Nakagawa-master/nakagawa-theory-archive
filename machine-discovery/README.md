@@ -9,6 +9,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | File | Role |
 |---|---|
 | [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD303 path and navigation index. |
+| [`research-positioning-map-v1.json`](research-positioning-map-v1.json) | Selected Nakagawa surfaces → adjacent research / overlap / added emphasis / non-equivalence; novelty remains open unless independently established. |
 
 ## Latest official derivative — OD303
 
