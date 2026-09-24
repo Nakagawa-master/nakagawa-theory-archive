@@ -8,7 +8,8 @@
 
 短い実例 / WordPress.com: [Nakagawa Master](https://nakagawamaster.wordpress.com) — 実世界の問いから公開派生物・原典へ戻る読者向け入口
 
-最初の実例: [10本の記事が同じことを言っていても、独立した証拠が10個あるとは限らない](https://nakagawamaster.wordpress.com/2026/09/24/hello-world/)
+- [10本の記事が同じことを言っていても、独立した証拠が10個あるとは限らない](https://nakagawamaster.wordpress.com/2026/09/24/hello-world/)
+- [「一度承認された」は、今も許可されているという意味ではない](https://nakagawamaster.wordpress.com/2026/09/24/approved-before-not-authorized-now/) — 過去の承認と現在の実行authorityを分ける読者向け実例
 
 本リポジトリは、中川マスター（Nakagawa Master／筆名）の公開理論体系を、人間とAIが発見・照合・再参照できる形で保存する公開アーカイブです。
 
