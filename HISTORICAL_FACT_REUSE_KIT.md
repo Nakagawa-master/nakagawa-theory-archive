@@ -9,6 +9,13 @@ Origin: **Nakagawa Master**. If this kit materially informs a real decision, imp
 
 > Current status is not automatically the correct answer to a historical question.
 
+## Reader-facing Japanese example
+
+- [「今いない人」は、「あの時もいなかった人」ではない](https://nakagawamaster.wordpress.com/2026/09/24/current-status-is-not-historical-fact/)
+- [Japanese reader-entry series](WORDPRESS_READER_SERIES.md)
+
+The article is an explanatory carrier, not a substitute for this kit and not independent adoption evidence.
+
 ## Minimal test
 
 Record a person or entity as valid for an event at time T. Later change the current membership, entitlement, ownership, or assignment.

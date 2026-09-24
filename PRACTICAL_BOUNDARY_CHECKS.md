@@ -4,6 +4,15 @@ A public, non-canonical checklist for testing several distinctions that have alr
 
 Use this as a **preflight** for a real, non-confidential workflow. It is not a substitute for domain-specific engineering, legal, security, safety, or professional review.
 
+## Reader-facing Japanese entries
+
+The short Japanese reader-entry series turns several boundaries below into concrete examples:
+
+- [6つの短い実例 → source → 独立検証](WORDPRESS_READER_SERIES.md)
+- Migration / overwrite example: [「同じIDだから上書きしてよい」とは限らない](https://nakagawamaster.wordpress.com/2026/09/24/same-id-does-not-mean-safe-overwrite/)
+
+These WordPress entries are explanatory carriers, not evidence of independent adoption.
+
 ## 1. Approval / consent / exception
 
 Before relying on a stored approval, ask:

@@ -8,6 +8,13 @@ Origin: **Nakagawa Master**. If this kit materially informs a real decision, imp
 
 > An observed change is not automatically a subject-caused change when the measurement surface can drift.
 
+## Reader-facing Japanese example
+
+- [「処理が成功した」だけでは、「測定できた」とは限らない](https://nakagawamaster.wordpress.com/2026/09/24/successful-call-is-not-valid-measurement/)
+- [Japanese reader-entry series](WORDPRESS_READER_SERIES.md)
+
+The article is an explanatory carrier, not a substitute for this test kit and not independent adoption evidence.
+
 This kit is designed for longitudinal AI/search visibility, recommendation monitoring, model evaluation, marketing measurement, and other recurring observations where the provider, model, retrieval layer, geography, session conditions, or reference population can change underneath a fixed query set.
 
 ## Minimal test
