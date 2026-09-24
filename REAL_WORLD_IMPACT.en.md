@@ -474,6 +474,41 @@ The commit does not identify the `Nakagawa-master` review as its sole cause. The
 
 ---
 
+## 19. DAIR Prompt Engineering Guide | Separate content classification from action authority
+
+**Surface:** [dair-ai/Prompt-Engineering-Guide#757](https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757)  
+**Current state:** open / unmerged, with a third-party author implementation commit
+
+This PR adds a reader-facing teaching page that classifies posts/comments and maps the classification toward downstream actions such as comment, react, or skip.
+
+A `Nakagawa-master` review identified two boundaries:
+
+```text
+untrusted content
+!=
+instructions the classifier should obey
+
+content classification
+!=
+current authorization to perform the downstream action
+```
+
+- [Nakagawa-master review](https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757#pullrequestreview-5280350258)
+
+The third-party author publicly agreed with both points and pushed follow-up commit `4a5334a`. The commit message itself says **“Two hardenings from @Nakagawa-master's review on #757.”**
+
+- [third-party author response](https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757#issuecomment-5783121174)
+- [implementation commit `4a5334ab`](https://github.com/dair-ai/Prompt-Engineering-Guide/commit/4a5334ab0ea82e97c122d53a78a6162d8e56e6b9)
+
+The commit delimits interpolated fields as untrusted data and adds a separate second-stage action gate plus a regression case so that a content label is not treated as execution authority.
+
+This case is stronger than a mere temporal sequence: the receiver's own commit explicitly attributes the two concrete hardenings to the `@Nakagawa-master` review. That is evidence about this specific artifact change, not a claim of intellectual priority over the general security principle or adoption of the broader theory system.
+
+**Publicly verifiable here:** review → explicit third-party agreement/restatement → implementation commit explicitly naming the review as the source of the two hardenings → concrete reader-facing teaching change.  
+**Not established here:** merge, release/deployment, reader scale, intellectual priority over the general principle, or endorsement of the full theory corpus.
+
+---
+
 ## What this page supports — and what it does not
 
 ### Supported by the linked public record

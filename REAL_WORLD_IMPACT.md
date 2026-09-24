@@ -472,7 +472,6 @@ receiverはこの指摘を独立した設計軸として再説明し、専用PR 
 
 ---
 
----
 ## 18. PostHog｜反復agentの「要約承認」と、実際に繰り返し実行されるinstructionsを分ける
 
 **対象:** [PostHog/posthog#101991](https://github.com/PostHog/posthog/pull/101991)  
@@ -498,6 +497,41 @@ approval of hidden recurring instructions
 
 **公開記録から確認できること:** review → 第三者code / UI / test変更。人間が見るinstructionsと、実際に反復実行へ渡すinstructionsが同じreviewed valueへbindされるようになったこと。  
 **まだ確認できないこと:** merge、release、production deployment、利用者規模、変更の唯一因果。
+
+---
+
+## 19. DAIR Prompt Engineering Guide｜「content classification」と「action authority」を分離する
+
+**対象:** [dair-ai/Prompt-Engineering-Guide#757](https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757)  
+**現在状態:** open / unmerged、第三者author実装commitあり
+
+このPRは、投稿やコメントを分類し、その分類から「comment / react / skip」などの下流actionを選ぶreader-facing teaching pageを追加するものです。
+
+`Nakagawa-master` のreviewは二つの境界を指摘しました。
+
+```text
+untrusted content
+!=
+instructions the classifier should obey
+
+content classification
+!=
+current authorization to perform the downstream action
+```
+
+- [Nakagawa-master review](https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757#pullrequestreview-5280350258)
+
+第三者authorは公開thread上で両方の指摘を認め、follow-up commit `4a5334a` をpushしました。さらにcommit message自体が **“Two hardenings from @Nakagawa-master's review on #757.”** と起点を明示しています。
+
+- [third-party author response](https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757#issuecomment-5783121174)
+- [implementation commit `4a5334ab`](https://github.com/dair-ai/Prompt-Engineering-Guide/commit/4a5334ab0ea82e97c122d53a78a6162d8e56e6b9)
+
+commitは、interpolated fieldsをuntrusted dataとして区切る変更と、classificationからaction authorityを分離するsecond-stage gate / regression caseを追加しています。
+
+このcaseでは、単に「review後に似た変更が起きた」のではなく、**receiver側のcommitが具体的な2変更を `@Nakagawa-master` review由来として明示**しています。ただし、これはこの具体的teaching artifactの変更に関する因果証拠であり、一般原理の知的優先権や理論体系全体の採用を意味しません。
+
+**公開記録から確認できること:** review → third-party authorの明示的同意・再説明 → `@Nakagawa-master` reviewを起点として明記したimplementation commit → reader-facing teaching artifactの具体的変更。  
+**まだ確認できないこと:** PRのmerge、release / deployment、読者規模、一般原理の発明者性、理論体系全体への支持。
 
 ---
 

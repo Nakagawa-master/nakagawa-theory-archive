@@ -116,6 +116,22 @@ A case can validate or operationalize one narrow distinction without proving the
 
 ---
 
+### 8. Responsibility / authority separation → classification is not permission to act
+
+**Canonical context:** structural responsibility requires separating what a system believes about an input from whether it is currently authorized to create an external consequence.
+
+**Applied distinction:** untrusted content may influence a classifier's judgment, but the content and its label must not mint execution authority for comment, react, publish, pay, disclose, or another side effect.
+
+**External evidence:** [DAIR Prompt Engineering Guide #757](https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757) received a public `Nakagawa-master` review on this boundary. The third-party author explicitly agreed, and implementation commit [`4a5334ab`](https://github.com/dair-ai/Prompt-Engineering-Guide/commit/4a5334ab0ea82e97c122d53a78a6162d8e56e6b9) states that two hardenings came from the `@Nakagawa-master` review. The page now treats interpolated content as untrusted data and separates classification from a second-stage action gate. The PR remains open/unmerged.
+
+**Applied kit:** [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
+
+**Public verification route:** [Real-World Impact](REAL_WORLD_IMPACT.en.md#19-dair-prompt-engineering-guide--separate-content-classification-from-action-authority)
+
+**Canonical return:** https://master.ricette.jp for the broader responsibility / authority context.
+
+---
+
 ## Important boundary
 
 These mappings are deliberately bounded.

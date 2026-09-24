@@ -382,6 +382,18 @@ authority true at queue/read time
 
 ## Public implementation examples
 
+### DAIR Prompt Engineering Guide #757 — classification is not authorization
+
+A public review identified two teaching-boundary failures in a reader-facing engagement-classification page: interpolated post content was not explicitly treated as untrusted data, and the content label was mapped directly toward an external action without a separate current-action gate.
+
+- [Nakagawa-master review](https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757#pullrequestreview-5280350258)
+- [third-party author response](https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757#issuecomment-5783121174)
+- [third-party implementation commit](https://github.com/dair-ai/Prompt-Engineering-Guide/commit/4a5334ab0ea82e97c122d53a78a6162d8e56e6b9)
+
+The commit message explicitly states that the two hardenings came from the `@Nakagawa-master` review. The implementation delimits the source content as untrusted data and adds a second-stage current-action gate plus a regression case. The PR remains open/unmerged at the time of this record.
+
+This is evidence of review-to-change causality for the concrete teaching artifact. It is not an intellectual-priority claim over the general security principle.
+
 ### PostHog #101991 — reviewed recurring instructions
 
 A public review identified that a recurring scout was created from model-authored instructions that were not shown or editable on the approval card.

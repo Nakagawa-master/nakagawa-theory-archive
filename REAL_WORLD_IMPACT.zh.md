@@ -474,6 +474,41 @@ approval of hidden recurring instructions
 
 ---
 
+## 19. DAIR Prompt Engineering Guide｜把content classification与action authority分开
+
+**对象：** [dair-ai/Prompt-Engineering-Guide#757](https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757)  
+**当前状态：** open / unmerged；已有第三方author implementation commit
+
+该PR新增一个面向读者的teaching page，对post / comment进行分类，并把分类映射到comment、react或skip等下游action。
+
+`Nakagawa-master` review指出两个边界：
+
+```text
+untrusted content
+!=
+classifier应该服从的instructions
+
+content classification
+!=
+执行下游action的current authorization
+```
+
+- [Nakagawa-master review](https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757#pullrequestreview-5280350258)
+
+第三方author在公开thread中明确同意这两点，并push了follow-up commit `4a5334a`。commit message本身写明 **“Two hardenings from @Nakagawa-master's review on #757.”**
+
+- [third-party author response](https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757#issuecomment-5783121174)
+- [implementation commit `4a5334ab`](https://github.com/dair-ai/Prompt-Engineering-Guide/commit/4a5334ab0ea82e97c122d53a78a6162d8e56e6b9)
+
+该commit把interpolated fields明确隔离为untrusted data，并加入独立的second-stage action gate与regression case，使content label不会直接成为execution authority。
+
+这一case不只是“review之后发生了相似修改”：receiver自己的commit明确把两个具体hardenings归因于 `@Nakagawa-master` review。这个证据只说明该具体teaching artifact的修改因果，不代表对一般security principle的知识优先权，也不代表采用整套理论体系。
+
+**公开可确认：** review → 第三方明确同意/重述 → implementation commit明确把两个hardenings指向该review → reader-facing teaching artifact发生具体修改。  
+**尚未确认：** merge、release / deployment、读者规模、一般原理的发明优先权、整套理论体系的认可。
+
+---
+
 ## 本页可以支持什么结论，以及不能支持什么结论
 
 ### 公开记录能够支持的内容
