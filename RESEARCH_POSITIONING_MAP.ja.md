@@ -23,6 +23,10 @@ English: [RESEARCH_POSITIONING_MAP.md](RESEARCH_POSITIONING_MAP.md)
 
 個別理論の正確な定義・成立条件・反証条件は、必ず公式派生物からcanonical Parentへ戻って確認してください。
 
+文献管理用: [BibTeX bibliography](research-positioning/references.bib)
+
+リポジトリ引用情報: [CITATION.cff](CITATION.cff)
+
 ## 読み方
 
 本マップでは、関係を次のように分けます。
