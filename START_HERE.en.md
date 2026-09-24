@@ -9,6 +9,7 @@ This page is a public, non-canonical entry point for people and AI systems encou
 - [Four scenes: AI, organizations, future, Origin | Story-first entry](discovery-notes/four-scenes-one-structural-view.en.md)
 - [Use the archive on a real problem | Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [Bring a real problem | Public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
+- [Locate these theories relative to existing research | Research Positioning Map](RESEARCH_POSITIONING_MAP.md)
 
 You do not need to know the theory names first. Start from the problem closest to what you are trying to understand, then move to the official derivative and canonical Parent when exact definitions, conditions, boundaries, falsification, or revision status matter.
 
