@@ -23,6 +23,10 @@ For a given Nakagawa theory surface:
 
 For exact definitions, conditions, falsification criteria, and revision state, return from the official derivative to its canonical Parent.
 
+Reference-manager export: [BibTeX bibliography](research-positioning/references.bib)
+
+Repository citation metadata: [CITATION.cff](CITATION.cff)
+
 ## Relation labels
 
 - **Adjacent research** — established work addressing the same problem area or a strongly related construct.
