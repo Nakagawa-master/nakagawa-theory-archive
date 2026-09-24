@@ -817,15 +817,20 @@
         "summary": "bounded implementation shape: canonical digest of the concrete paid snapshot, human-readable summary, re-hash before upload/create, and fresh approval after material drift"
       },
       "implementation": {
-        "verified": false
+        "verified": true,
+        "commit": "3d06e1ad8e749c647a2eb5d447b867fc50955a13",
+        "url": "https://github.com/QwenLM/qwen-code/commit/3d06e1ad8e749c647a2eb5d447b867fc50955a13",
+        "mechanisms": [
+          "qwen batch run <plan> --dry-run previews item count, frozen settings, estimate, and snapshot digest without upload or billing",
+          "qwen batch run <plan> --expect <digest> recomputes the snapshot and refuses material drift before upload",
+          "snapshot digest covers request lines, completion window, and account",
+          "regression tests refuse changes to instructions, item set, output limit, and source files after preview"
+        ]
       },
-      "current_stage": "explicit_third_party_response_or_restatement",
+      "current_stage": "independent_third_party_implementation_in_open_pr",
       "reusable_check": "PAID_ACTION_APPROVAL_BINDING_CHECKLIST.md",
       "not_claimed": [
-        "author product decision",
-        "code implementation",
-        "tests implementing the approval-binding proposal",
-        "merge of the proposal",
+        "pull request merge",
         "release",
         "production use",
         "whole-theory endorsement"
@@ -838,6 +843,11 @@
           "state drift before execution"
         ],
         "canonical_return": "https://master.ricette.jp"
+      },
+      "third_party_adoption": {
+        "actor": "yiliang114",
+        "url": "https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5818159716",
+        "statement": "Adopted in 3d06e1ad8e, in a slightly lighter form than the full digest-binding flow."
       }
     }
   ],
