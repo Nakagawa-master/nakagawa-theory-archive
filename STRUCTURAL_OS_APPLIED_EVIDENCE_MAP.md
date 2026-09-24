@@ -52,7 +52,9 @@ A case can validate or operationalize one narrow distinction without proving the
 
 **Applied distinction:** current membership, entitlement, ownership, or assignment should not silently rewrite historical participation.
 
-**External evidence:** TourCRM carried the distinction into a dedicated follow-up implementation and merge.
+**External evidence:** TourCRM carried the distinction through two merged receiver-side corrections. In [PR #97](https://github.com/Alan8893/tourcrm/pull/97), a `Nakagawa-master` review separated current participation from historical occurrence membership; receiver commit [`b6da0eb8`](https://github.com/Alan8893/tourcrm/commit/b6da0eb880d474c7e8322f2b2da8bef02a64e1f6) changed the implementation to the occurrence's own time window and explicitly says it addresses `Nakagawa-master` review feedback. In [PR #101](https://github.com/Alan8893/tourcrm/pull/101), a second review found that the new regressions were wall-clock dependent; receiver commit [`568c8fec`](https://github.com/Alan8893/tourcrm/commit/568c8fecbbcb56297deb385ea34c8bb61a2839e5) made the tests date-independent, verified the old implementation fails them, and again explicitly attributes the correction to `Nakagawa-master` review feedback. Both PRs merged.
+
+**Public verification route:** [Real-World Impact](REAL_WORLD_IMPACT.en.md#20-tourcrm--do-not-let-current-participation-rewrite-historical-attendance)
 
 **Applied kit:** [Historical-Fact Reuse Kit](HISTORICAL_FACT_REUSE_KIT.md)
 

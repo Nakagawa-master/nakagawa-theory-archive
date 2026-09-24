@@ -509,6 +509,45 @@ content classification
 
 ---
 
+## 20. TourCRM｜不要让当前参与资格改写历史出席事实
+
+**对象：** [Alan8893/tourcrm#97](https://github.com/Alan8893/tourcrm/pull/97) → [PR #101](https://github.com/Alan8893/tourcrm/pull/101)  
+**当前状态：** #97 merged / #101 merged
+
+PR #97中，Attendance row本身虽然会被保留，但read / correction路径仍然用“此人现在是否还是participant”作为条件。因此participation结束以后，已经完成的occurrence可能把该人从历史roster和denominator中移除，已有的historical Attendance row也可能无法继续修正。
+
+`Nakagawa-master` comment明确提出：
+
+```text
+current roster
+!=
+historical occurrence roster
+```
+
+并建议根据occurrence自身发生时的历史时间窗，而不是今天的membership状态来判断participation。
+
+- [Nakagawa-master comment on #97](https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5689122153)
+
+receiver commit `b6da0eb8` 把 `has_participation()` 与 `list_attendance()` 的recurring roster路径从 `now()` 改为occurrence的 `[starts_at, ends_at)` window overlap。commit message明确写出 **“Addresses PR #97 review feedback (Nakagawa-master).”**
+
+- [implementation commit `b6da0eb8`](https://github.com/Alan8893/tourcrm/commit/b6da0eb880d474c7e8322f2b2da8bef02a64e1f6)
+
+之后PR #101为该修复增加regression。第二个 `Nakagawa-master` comment指出，这些新tests本身受wall clock影响：fixture occurrence位于未来，所以在真实日期跨过fixture之前，旧实现也可能通过这些tests。
+
+- [Nakagawa-master regression-evidence comment on #101](https://github.com/Alan8893/tourcrm/pull/101#issuecomment-5691884921)
+
+receiver随后加入 `_PAST_START`，让旧 `now()` predicate与occurrence-overlap predicate无论测试在哪一天运行都确定性地产生不同结果，并验证暂时恢复旧实现会让3个regression全部失败。commit `568c8fec` 同样明确写出 **“Addresses PR #101 review feedback (Nakagawa-master).”**
+
+- [test-evidence commit `568c8fec`](https://github.com/Alan8893/tourcrm/commit/568c8fecbbcb56297deb385ea34c8bb61a2839e5)
+- [Nakagawa-master re-review confirming the wall-clock weakness is resolved](https://github.com/Alan8893/tourcrm/pull/101#pullrequestreview-5219832326)
+
+两个PR均已merge。这个case中，receiver侧commit对具体implementation correction与regression-evidence correction都明确保留了 `Nakagawa-master` review feedback的source relation。
+
+**公开可确认：** historical-state boundary review → receiver implementation commit明确标注review来源 → 第二次review指出proof tests的弱点 → receiver修正test并同样明确标注review来源 → merge。  
+**尚未确认：** production deployment、用户规模效果、一般temporal-data原则的知识优先权、对整套理论体系的认可。
+
+---
+
 ## 本页可以支持什么结论，以及不能支持什么结论
 
 ### 公开记录能够支持的内容

@@ -535,6 +535,45 @@ commitは、interpolated fieldsをuntrusted dataとして区切る変更と、cl
 
 ---
 
+## 20. TourCRM｜現在の参加資格で過去の出席事実を書き換えない
+
+**対象:** [Alan8893/tourcrm#97](https://github.com/Alan8893/tourcrm/pull/97) → [PR #101](https://github.com/Alan8893/tourcrm/pull/101)  
+**現在状態:** #97 merged / #101 merged
+
+PR #97では、終了済みoccurrenceのAttendance row自体は残る一方、read / correction経路が「現在もparticipantか」を見るため、参加終了後に過去の出席記録が一覧・集計から消え、historical correctionもできなくなる境界が残っていました。
+
+`Nakagawa-master` のcommentは、
+
+```text
+current roster
+!=
+historical occurrence roster
+```
+
+を明示し、終了後のcurrent membershipではなく、そのoccurrenceが起きた時間窓におけるparticipationで過去のroster / denominator / correction authorityを判定するよう提案しました。
+
+- [Nakagawa-master comment on #97](https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5689122153)
+
+receiver側のcommit `b6da0eb8` は `has_participation()` と `list_attendance()` を `now()` 基準からoccurrence自身の `[starts_at, ends_at)` window基準へ変更し、commit messageで **“Addresses PR #97 review feedback (Nakagawa-master).”** と明記しています。
+
+- [implementation commit `b6da0eb8`](https://github.com/Alan8893/tourcrm/commit/b6da0eb880d474c7e8322f2b2da8bef02a64e1f6)
+
+その後のPR #101では、この修正を証明するため追加されたregression自体がfuture fixtureとreal wall clockの関係次第で旧実装でも通り得ることを `Nakagawa-master` が指摘しました。
+
+- [Nakagawa-master regression-evidence comment on #101](https://github.com/Alan8893/tourcrm/pull/101#issuecomment-5691884921)
+
+receiverは `_PAST_START` を導入してold `now()` predicateとoccurrence-overlap predicateが常に逆の結果になるようにし、旧実装へ一時的に戻した場合に3本のregressionがすべて失敗することまで確認しました。commit `568c8fec` も **“Addresses PR #101 review feedback (Nakagawa-master).”** と明記しています。
+
+- [test-evidence commit `568c8fec`](https://github.com/Alan8893/tourcrm/commit/568c8fecbbcb56297deb385ea34c8bb61a2839e5)
+- [Nakagawa-master re-review confirming the wall-clock weakness is resolved](https://github.com/Alan8893/tourcrm/pull/101#pullrequestreview-5219832326)
+
+両PRはmerge済みです。このcaseでは、具体的な実装修正と、その修正を証明するregressionの強化の両方について、receiver側commitが `Nakagawa-master` review feedbackを明示しています。
+
+**公開記録から確認できること:** historical-state boundaryの指摘 → receiverが実装変更をreview feedback由来として明記 → regression evidenceの弱点を追加指摘 → receiverがtest設計を修正し同じくreview feedback由来と明記 → merge。  
+**まだ確認できないこと:** production deployment、利用者規模、一般的なtemporal-data原理の知的優先権、理論体系全体への支持。
+
+---
+
 ## このページから言えること／言えないこと
 
 ### 公開記録から確認できること

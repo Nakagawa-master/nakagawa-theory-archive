@@ -509,6 +509,45 @@ This case is stronger than a mere temporal sequence: the receiver's own commit e
 
 ---
 
+## 20. TourCRM | Do not let current participation rewrite historical attendance
+
+**Surface:** [Alan8893/tourcrm#97](https://github.com/Alan8893/tourcrm/pull/97) → [PR #101](https://github.com/Alan8893/tourcrm/pull/101)  
+**Current state:** #97 merged / #101 merged
+
+In PR #97, an Attendance row could remain stored while read/correction paths still asked whether the person was an active participant **now**. After participation ended, a completed occurrence could therefore lose that person from the visible historical roster and denominator, and an existing historical Attendance row could become uncorrectable.
+
+A `Nakagawa-master` comment stated the boundary:
+
+```text
+current roster
+!=
+historical occurrence roster
+```
+
+and proposed evaluating participation against the occurrence's own historical time window rather than today's membership state.
+
+- [Nakagawa-master comment on #97](https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5689122153)
+
+Receiver commit `b6da0eb8` changed `has_participation()` and the recurring roster path in `list_attendance()` from `now()` to overlap with the occurrence's `[starts_at, ends_at)` window. Its commit message explicitly says **“Addresses PR #97 review feedback (Nakagawa-master).”**
+
+- [implementation commit `b6da0eb8`](https://github.com/Alan8893/tourcrm/commit/b6da0eb880d474c7e8322f2b2da8bef02a64e1f6)
+
+PR #101 then added regressions for the fix. A second `Nakagawa-master` comment identified that the new tests were themselves wall-clock dependent: because the fixture occurrence was in the future, the old implementation could still pass the tests before the calendar crossed the fixture date.
+
+- [Nakagawa-master regression-evidence comment on #101](https://github.com/Alan8893/tourcrm/pull/101#issuecomment-5691884921)
+
+The receiver introduced `_PAST_START` so the old `now()` predicate and the occurrence-overlap predicate deterministically diverge, and verified that temporarily restoring the old implementation makes all three regressions fail. Commit `568c8fec` also explicitly says **“Addresses PR #101 review feedback (Nakagawa-master).”**
+
+- [test-evidence commit `568c8fec`](https://github.com/Alan8893/tourcrm/commit/568c8fecbbcb56297deb385ea34c8bb61a2839e5)
+- [Nakagawa-master re-review confirming the wall-clock weakness is resolved](https://github.com/Alan8893/tourcrm/pull/101#pullrequestreview-5219832326)
+
+Both PRs are merged. In this case, receiver-side commits explicitly attribute both the concrete implementation correction and the regression-evidence correction to `Nakagawa-master` review feedback.
+
+**Publicly verifiable here:** historical-state boundary review → receiver implementation commit explicitly naming the review → second review finding a weakness in the proof tests → receiver test correction explicitly naming the review → merge.  
+**Not established here:** production deployment, user-scale effect, intellectual priority over the general temporal-data principle, or endorsement of the full theory corpus.
+
+---
+
 ## What this page supports — and what it does not
 
 ### Supported by the linked public record
