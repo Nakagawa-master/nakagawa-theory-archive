@@ -77,8 +77,10 @@ A concrete discussion of this boundary is visible in Qwen Code's Batch API PR:
 - [Nakagawa-master proposal](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552)
 - [third-party closeout preserving it as a product decision](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817836928)
 - [bounded follow-up](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817960767)
+- [adoption response](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5818159716)
+- [implementation commit `3d06e1ad8e`](https://github.com/QwenLM/qwen-code/commit/3d06e1ad8e749c647a2eb5d447b867fc50955a13)
 
-The public record currently confirms independent recognition of the boundary. It does **not** yet confirm adoption or implementation in Qwen Code.
+The public record now confirms that the boundary was adopted into Qwen Code's PR implementation. The commit adds a non-billing `--dry-run` preview, a snapshot digest, `--expect <digest>` revalidation before submission, and regression tests that refuse material drift after preview. The PR is still open, so merge, release and production use remain separate evidence stages.
 
 ## Reader-friendly Japanese entry
 
