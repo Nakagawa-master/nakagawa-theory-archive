@@ -637,7 +637,7 @@ This page is not asking readers to trust a name or a count. It is an index for c
 ## 18. Qwen Code | Approval boundary for paid Batch API actions
 
 **Target:** [QwenLM/qwen-code#12492](https://github.com/QwenLM/qwen-code/pull/12492)  
-**Current state:** open / proposal acknowledged / product decision pending
+**Current state:** open / proposal adopted in implementation commit / PR not yet merged
 
 [Nakagawa-master's public comment](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552) separated approval of `qwen batch run` from approval of the concrete billed batch snapshot. The proposed contract binds the exact item set, frozen settings and cost estimate to a canonical digest, and treats later drift as stale approval.
 
@@ -645,6 +645,10 @@ A third-party developer, `yiliang114`, later called out the proposal explicitly 
 
 - [third-party response](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817836928)
 - [bounded follow-up](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817960767)
+- [adoption response](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5818159716)
+- [implementation commit `3d06e1ad8e`](https://github.com/QwenLM/qwen-code/commit/3d06e1ad8e749c647a2eb5d447b867fc50955a13)
 
-**Confirmed by the public record:** independent source-attributed recognition and preservation as a separate product-decision item.  
-**Not yet confirmed:** adoption, code/tests, merge, release, or real-world use.
+The third-party developer then explicitly said the boundary was adopted and implemented a `--dry-run` preview, snapshot digest, `--expect <digest>` revalidation immediately before submission, plus regression tests that refuse changes to instructions, item set, output limit, or source files after preview.
+
+**Confirmed by the public record:** independent source-attributed recognition plus implementation of the approval-binding boundary in code and tests.  
+**Not yet confirmed:** PR merge, release, production use, or endorsement of the wider theory system.
