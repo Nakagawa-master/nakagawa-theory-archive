@@ -25,6 +25,14 @@ Canonical theory site: https://master.ricette.jp/
 
 Theory archive index: https://master.ricette.jp/theory-archive/
 
+## Machine-readable and reference-manager routes
+
+- GitHub-native citation metadata: [`CITATION.cff`](CITATION.cff)
+- Reusable BibTeX for the adjacent/prior works used in the positioning map: [`research-positioning/references.bib`](research-positioning/references.bib)
+- Scholarly discovery JSON-LD: [`machine-discovery/scholarly-metadata-v1.jsonld`](machine-discovery/scholarly-metadata-v1.jsonld)
+
+These files lower citation and retrieval friction. They do **not** convert this archive into a peer-reviewed publication, and they do not establish novelty of any theory.
+
 ## Research positioning and related work
 
 For comparison with adjacent academic literature, standards, and prior concepts, use the public non-canonical [Research Positioning Map](RESEARCH_POSITIONING_MAP.md) or [Japanese edition](RESEARCH_POSITIONING_MAP.ja.md). The map separates overlap, additional emphasis, non-equivalence, and unresolved novelty. It is not a systematic review and must not be cited as proof of novelty or scholarly acceptance.
