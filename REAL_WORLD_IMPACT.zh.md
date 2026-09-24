@@ -635,7 +635,7 @@ counterexample、non-fit与failed reproduction同样是有价值的公开证据�
 ## 18. Qwen Code｜付费 Batch API 的批准边界
 
 **对象:** [QwenLM/qwen-code#12492](https://github.com/QwenLM/qwen-code/pull/12492)  
-**当前状态:** open / proposal acknowledged / product decision pending
+**当前状态:** open / proposal adopted in implementation commit / PR not yet merged
 
 [Nakagawa-master 的公开评论](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552) 区分了批准 `qwen batch run` 与批准实际计费的具体 batch snapshot。该方案把 exact item set、frozen settings 与 cost estimate 绑定到 canonical digest，并把后续实质变化视为旧批准失效。
 
@@ -643,6 +643,10 @@ counterexample、non-fit与failed reproduction同样是有价值的公开证据�
 
 - [third-party response](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817836928)
 - [bounded follow-up](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817960767)
+- [adoption response](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5818159716)
+- [implementation commit `3d06e1ad8e`](https://github.com/QwenLM/qwen-code/commit/3d06e1ad8e749c647a2eb5d447b867fc50955a13)
 
-**公开记录能够确认:** 独立第三方按来源识别该提案，并把它作为独立 product-decision 项保留。  
-**尚不能确认:** 采纳、code/tests、merge、release 或真实使用。
+第三方开发者随后明确表示该边界已被“Adopted”，并实现了 `--dry-run` 预览、snapshot digest、提交前的 `--expect <digest>` 重新校验，以及在 preview 之后 instructions、item set、output limit 或 source file 发生变化时拒绝提交的回归测试。
+
+**公开记录能够确认:** 独立第三方按来源识别该提案，并把这一批准绑定边界落实到了 code / tests。  
+**尚不能确认:** PR merge、release、production use，或对更广泛理论体系的认可。
