@@ -148,6 +148,9 @@ A future cost is not automatically future debt when it is funded, reversible, an
 - OD297
 - FOUR_REPEATABLE_REAL_WORLD_LENSES.md
 
+Reader-friendly Japanese entry:
+- [不可逆点とは？ 成長の裏で「未来の選択肢」が減るとき](https://nakagawamaster.wordpress.com/2026/09/25/irreversible-point-future-options/)
+
 ---
 
 # Segment 3 — “Can an outsider actually verify this decision?”
