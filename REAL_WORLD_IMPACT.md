@@ -662,7 +662,7 @@ receiver commit `dfd4588d` は、export aliasとsource declaration nameの両方
 ## 18. Qwen Code｜有料Batch APIの承認境界
 
 **対象:** [QwenLM/qwen-code#12492](https://github.com/QwenLM/qwen-code/pull/12492)  
-**現在状態:** open / proposal acknowledged / product decision pending
+**現在状態:** open / proposal adopted in implementation commit / PR not yet merged
 
 [Nakagawa-masterの公開コメント](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552)は、`qwen batch run` の承認と、実際に課金される具体的batch snapshotの承認を分ける境界を提示しました。exact item set、frozen settings、cost estimateをcanonical digestへ束ね、承認後に内容が変わればold approvalを無効にする案です。
 
@@ -670,6 +670,10 @@ receiver commit `dfd4588d` は、export aliasとsource declaration nameの両方
 
 - [third-party response](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817836928)
 - [bounded follow-up](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817960767)
+- [adoption response](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5818159716)
+- [implementation commit `3d06e1ad8e`](https://github.com/QwenLM/qwen-code/commit/3d06e1ad8e749c647a2eb5d447b867fc50955a13)
 
-**確認できること:** 第三者developerによる名前付き認識と、独立したproduct-decision論点としての保持。  
-**まだ確認できないこと:** 採用、code/tests実装、merge、release、実利用。
+第三者developerはその後、この境界を「Adopted」と明示し、`--dry-run` preview、snapshot digest、`--expect <digest>`による実行直前の再照合、preview後のinstructions / item set / output limit / source file変更を拒否する回帰テストを実装しました。
+
+**確認できること:** 出所付きの第三者認識に加え、提案された承認binding境界がcode / testsへ実装されたこと。  
+**まだ確認できないこと:** PR merge、release、production use、理論体系全体へのendorsement。
