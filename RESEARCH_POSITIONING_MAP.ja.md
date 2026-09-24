@@ -340,7 +340,7 @@ approval
 
 このマップに欠落している先行研究、より近い理論、反例、既存概念との重複を見つけた場合は、公開Issueから報告できます。
 
-Issue: TO_BE_LINKED
+Issue: https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/410
 
 最低限、次を添えてください。
 
