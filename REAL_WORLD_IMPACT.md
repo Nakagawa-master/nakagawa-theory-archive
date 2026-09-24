@@ -574,6 +574,39 @@ receiverは `_PAST_START` を導入してold `now()` predicateとoccurrence-over
 
 ---
 
+## 21. MemberJunction｜export aliasの存在を「外部から触れない宣言」と誤認しない
+
+**対象:** [MemberJunction/MJ#4487](https://github.com/MemberJunction/MJ/pull/4487)  
+**現在状態:** merged（2026-09-24）
+
+PR #4487は、大規模なTypeScript naming-conventions gateを導入し、外部consumerから安全にrenameできるmemberを自動判定・修正する変更です。
+
+`Nakagawa-master` のreviewは、named re-exportでaliasだけをpublic-symbol setへ記録すると、宣言元のtype名が「非公開」と誤判定され得ることを指摘しました。
+
+```ts
+export { ChatParams as PublicChatParams } from "./shape.js"
+```
+
+この場合、外部consumerは `PublicChatParams` 経由で `ChatParams` のmemberを利用できます。しかしfinding側が宣言名 `ChatParams` を持つ一方、collector側がalias `PublicChatParams` しか保持しなければ、そのmemberをsafe-to-renameな `error` と誤分類し、runtime stubを作れないinterface memberを破壊し得ます。
+
+- [Nakagawa-master review](https://github.com/MemberJunction/MJ/pull/4487#issuecomment-5219601735)
+
+別の第三者reviewerは後にこのfindingを独立して再確認し、**“The aliased re-export hole Nakagawa-master reported on 2026-09-16 is still open.”** と明記しました。
+
+- [independent reviewer confirmation](https://github.com/MemberJunction/MJ/pull/4487#issuecomment-5241419422)
+
+receiver commit `dfd4588d` は、export aliasとsource declaration nameの両方をpublic-symbol setへ記録するよう修正し、alias経由で公開されたdata shapeは `warn` のまま、同じfileにあるがre-exportされていないsibling typeは `error` のままであることをregression testで固定しました。commit message自体が **“Reported by Nakagawa-master on 2026-09-16.”** とsource relationを明示しています。
+
+- [implementation commit `dfd4588d`](https://github.com/MemberJunction/MJ/commit/dfd4588d798b68b982f2554295a0d4d3afb005c2)
+- [Nakagawa-master focused re-check](https://github.com/MemberJunction/MJ/pull/4487#issuecomment-5252973190)
+
+後続reviewでもこのfindingの修正が確認され、PR #4487は2026-09-24にmergeされました。
+
+**公開記録から確認できること:** Nakagawa review → 別第三者reviewerによる同じholeの独立再確認 → receiver commitが `Reported by Nakagawa-master` と明示してcode/testを修正 → focused re-check → 後続reviewで修正確認 → merge。  
+**まだ確認できないこと:** `@memberjunction/standards` の別repoでの実利用規模、この具体的fixのrelease / downstream adoption、一般的なAPI互換性原理の知的優先権、理論体系全体への支持。
+
+---
+
 ## このページから言えること／言えないこと
 
 ### 公開記録から確認できること

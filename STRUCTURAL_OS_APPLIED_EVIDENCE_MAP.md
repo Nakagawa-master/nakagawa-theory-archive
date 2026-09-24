@@ -134,6 +134,21 @@ A case can validate or operationalize one narrow distinction without proving the
 
 ---
 
+
+### 9. Public-surface identity / reachability → exported alias is still external reachability
+
+**Canonical context:** structural identity and reachability are relations, not merely local spellings. A declaration can remain externally reachable through another public name.
+
+**Applied distinction:** an exported alias is not evidence that the underlying declaration and its members are safe to treat as private or freely renameable.
+
+**External evidence:** [MemberJunction/MJ #4487](https://github.com/MemberJunction/MJ/pull/4487) received a `Nakagawa-master` review identifying an aliased named re-export that could make a published data-shape member look private to the naming gate. A separate reviewer independently confirmed the finding. Receiver commit [`dfd4588d`](https://github.com/MemberJunction/MJ/commit/dfd4588d798b68b982f2554295a0d4d3afb005c2) fixes the public-symbol collection, adds positive and negative regression controls, and explicitly states `Reported by Nakagawa-master on 2026-09-16.` The PR later merged.
+
+**Public verification route:** [Real-World Impact](REAL_WORLD_IMPACT.en.md#21-memberjunction--an-exported-alias-does-not-make-the-underlying-declaration-unreachable-to-consumers)
+
+**Canonical return:** https://master.ricette.jp for the broader structural identity / reachability context.
+
+---
+
 ## Important boundary
 
 These mappings are deliberately bounded.

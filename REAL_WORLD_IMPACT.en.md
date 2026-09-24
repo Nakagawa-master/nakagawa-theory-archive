@@ -548,6 +548,39 @@ Both PRs are merged. In this case, receiver-side commits explicitly attribute bo
 
 ---
 
+## 21. MemberJunction | An exported alias does not make the underlying declaration unreachable to consumers
+
+**Surface:** [MemberJunction/MJ#4487](https://github.com/MemberJunction/MJ/pull/4487)  
+**Current state:** merged (2026-09-24)
+
+PR #4487 introduces a large TypeScript naming-conventions gate that classifies which members can be renamed without breaking external consumers.
+
+A `Nakagawa-master` review identified a compatibility hole in named re-exports. If the public-symbol collector records only the exported alias in:
+
+```ts
+export { ChatParams as PublicChatParams } from "./shape.js"
+```
+
+while a finding is keyed to the declaration name `ChatParams`, the gate can incorrectly conclude that a member of the data shape is not public. That matters because the rename pass selects `error` type-member findings, while an interface member has no runtime object on which a backward-compatible stub can be installed.
+
+- [Nakagawa-master review](https://github.com/MemberJunction/MJ/pull/4487#issuecomment-5219601735)
+
+A separate third-party reviewer later independently rechecked the issue and explicitly wrote: **“The aliased re-export hole Nakagawa-master reported on 2026-09-16 is still open.”**
+
+- [independent reviewer confirmation](https://github.com/MemberJunction/MJ/pull/4487#issuecomment-5241419422)
+
+Receiver commit `dfd4588d` changed the collector to preserve both sides of a named re-export and added regressions showing that an aliased published data-shape member stays at `warn`, while an unre-exported sibling type in the same file still remains `error`. The receiver's commit message explicitly states **“Reported by Nakagawa-master on 2026-09-16.”**
+
+- [implementation commit `dfd4588d`](https://github.com/MemberJunction/MJ/commit/dfd4588d798b68b982f2554295a0d4d3afb005c2)
+- [Nakagawa-master focused re-check](https://github.com/MemberJunction/MJ/pull/4487#issuecomment-5252973190)
+
+A later reviewer confirmed that this required finding was fixed, and PR #4487 merged on 2026-09-24.
+
+**Publicly verifiable here:** Nakagawa review → independent third-party confirmation of the same hole → receiver code/test commit explicitly attributing the report to Nakagawa-master → focused re-check → later review confirmation → merge.  
+**Not established here:** downstream adoption or user scale of this particular fix, a release of the fix into other repositories using `@memberjunction/standards`, intellectual priority over the general API-compatibility principle, or endorsement of the full theory corpus.
+
+---
+
 ## What this page supports — and what it does not
 
 ### Supported by the linked public record

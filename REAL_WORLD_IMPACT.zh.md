@@ -548,6 +548,39 @@ receiver随后加入 `_PAST_START`，让旧 `now()` predicate与occurrence-overl
 
 ---
 
+## 21. MemberJunction｜export alias并不意味着底层声明对外部consumer不可达
+
+**对象：** [MemberJunction/MJ#4487](https://github.com/MemberJunction/MJ/pull/4487)  
+**当前状态：** merged（2026-09-24）
+
+PR #4487引入大规模TypeScript naming-conventions gate，用于判断哪些member可以在不破坏外部consumer的前提下安全rename。
+
+`Nakagawa-master` review指出named re-export中的一个兼容性边界。假设：
+
+```ts
+export { ChatParams as PublicChatParams } from "./shape.js"
+```
+
+public-symbol collector只记录alias `PublicChatParams`，而finding使用声明名 `ChatParams`。这样gate可能错误地认为该data-shape member不是public，从而把它归入可自动rename的 `error`。但interface member没有runtime object，无法像class member那样留下兼容stub，所以这种误分类可能破坏外部consumer。
+
+- [Nakagawa-master review](https://github.com/MemberJunction/MJ/pull/4487#issuecomment-5219601735)
+
+之后另一位第三方reviewer独立复核并明确写道：**“The aliased re-export hole Nakagawa-master reported on 2026-09-16 is still open.”**
+
+- [independent reviewer confirmation](https://github.com/MemberJunction/MJ/pull/4487#issuecomment-5241419422)
+
+receiver commit `dfd4588d` 修改collector，同时保留named re-export的alias与source declaration name，并加入regression：通过alias发布的data-shape member保持 `warn`；同一文件中并未re-export的sibling type仍保持 `error`。receiver自己的commit message明确写出 **“Reported by Nakagawa-master on 2026-09-16.”**
+
+- [implementation commit `dfd4588d`](https://github.com/MemberJunction/MJ/commit/dfd4588d798b68b982f2554295a0d4d3afb005c2)
+- [Nakagawa-master focused re-check](https://github.com/MemberJunction/MJ/pull/4487#issuecomment-5252973190)
+
+后续review再次确认该required finding已修复，PR #4487于2026-09-24 merge。
+
+**公开可确认：** Nakagawa review → 独立第三方reviewer再次确认同一hole → receiver commit明确以Nakagawa-master为report来源并修改code/test → focused re-check → 后续review确认 → merge。  
+**尚未确认：** 该具体fix在其他使用 `@memberjunction/standards` 的repo中的downstream adoption或用户规模、release范围、一般API兼容性原则的知识优先权、对完整理论体系的认可。
+
+---
+
 ## 本页可以支持什么结论，以及不能支持什么结论
 
 ### 公开记录能够支持的内容
