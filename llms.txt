@@ -37,6 +37,7 @@ Practical public-safe preflight checks for approval, overwrite authority, measur
 - [Current-Authority Reuse Kit](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md)
 - [Historical-Fact Reuse Kit](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/HISTORICAL_FACT_REUSE_KIT.md)
 - [External Side-Effect Reuse Kit](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/EXTERNAL_SIDE_EFFECT_REUSE_KIT.md)
+- [Paid-Action Approval Binding Checklist](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/PAID_ACTION_APPROVAL_BINDING_CHECKLIST.md)
 
 Independent verification, falsification, non-fit, or cross-context reuse submissions:
 
