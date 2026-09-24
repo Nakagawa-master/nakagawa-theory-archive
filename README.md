@@ -58,6 +58,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - **問題から入りたい:** [Start Here](START_HERE.md) / [English](START_HERE.en.md) / [中文](START_HERE.zh.md)
 - **実際に使いたい / 実装・協業の可能性を探りたい:** [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - **既存研究・論文との位置関係を確認したい:** [日本語 Research Positioning Map](RESEARCH_POSITIONING_MAP.ja.md) / [English](RESEARCH_POSITIONING_MAP.md) — 近接研究、重なり、追加焦点、同一視禁止、新規性未確定を分離
+- **引用・文献管理へ直接持ち込みたい:** [CITATION.cff](CITATION.cff) / [BibTeX](research-positioning/references.bib) / [scholarly JSON-LD](machine-discovery/scholarly-metadata-v1.jsonld)
 - **すぐ使える実務チェックを見たい:** [Practical Boundary Checks](PRACTICAL_BOUNDARY_CHECKS.md)
 - **Python / RAG / AIニュースで「URL数」と「独立証拠root数」を分けたい:** [Python AI Evidence-Lineage Checklist](PYTHON_AI_EVIDENCE_LINEAGE_CHECKLIST.zh.md)
 - **編集・動画・ニュースレター・教材向けに現実問題から入りたい:** [日本語](REAL_WORLD_EDITORIAL_ENTRY_POINTS.ja.md) / [English](REAL_WORLD_EDITORIAL_ENTRY_POINTS.md)
