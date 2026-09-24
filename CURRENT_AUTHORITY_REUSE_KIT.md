@@ -8,6 +8,14 @@ Origin: **Nakagawa Master**. If this kit materially informs a real decision, imp
 
 > A historical approval, consent, sanitization, or exception is not automatically current authority after material conditions change.
 
+## Reader-facing Japanese example
+
+A short Japanese reader-facing entry is published on the WordPress carrier:
+
+- [「一度承認された」は、今も許可されているという意味ではない](https://nakagawamaster.wordpress.com/2026/09/24/approved-before-not-authorized-now/)
+
+The WordPress article is an explanatory carrier, not a canonical source and not independent adoption evidence. For the reusable test contract, return to this kit; for canonical claims, follow the exact public archive / derivative source route.
+
 ## Minimal test
 
 Create a record approved under state A. Then change one material condition: recipient, purpose, rights, policy, notice version, source revision, or the exact object being acted on.
