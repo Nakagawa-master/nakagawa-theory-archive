@@ -6,7 +6,9 @@
 
 人物 / Origin: [日本語](ABOUT_NAKAGAWA_MASTER.md) | [English](ABOUT_NAKAGAWA_MASTER.en.md) | [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 
-短い実例 / WordPress.com: [Nakagawa Master](https://nakagawamaster.wordpress.com) — 実世界の問いから公開派生物・原典へ戻る読者向け入口
+短い実例 / WordPress.com: [Nakagawa Master](https://nakagawamaster.wordpress.com/?utm_source=github&utm_medium=referral&utm_campaign=reader_series) — 実世界の問いから公開派生物・原典へ戻る読者向け入口
+
+AI / LLM運用、認可・ガバナンス、計測、履歴、外部APIのretry、migration / syncなど、実務で起きる具体的な問題から入れます。
 
 読者向け実例シリーズ: [6つの短い実例 → source → 独立検証](WORDPRESS_READER_SERIES.md)
 
