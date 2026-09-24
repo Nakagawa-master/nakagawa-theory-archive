@@ -80,6 +80,10 @@ A concrete discussion of this boundary is visible in Qwen Code's Batch API PR:
 
 The public record currently confirms independent recognition of the boundary. It does **not** yet confirm adoption or implementation in Qwen Code.
 
+## Reader-friendly Japanese entry
+
+- [「実行してよい」≠「この有料処理を承認した」— 課金APIで承認を取り違えないために](https://nakagawamaster.wordpress.com/2026/09/25/command-approval-is-not-paid-action-approval/)
+
 ## Related reusable checks
 
 - [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
