@@ -631,3 +631,20 @@ Counterexamples, non-fit cases, and failed reproductions are also relevant evide
 - [Public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
 This page is not asking readers to trust a name or a count. It is an index for checking the original public contribution, the third party's response, the actual change, and the repository state for themselves.
+
+---
+
+## 18. Qwen Code | Approval boundary for paid Batch API actions
+
+**Target:** [QwenLM/qwen-code#12492](https://github.com/QwenLM/qwen-code/pull/12492)  
+**Current state:** open / proposal acknowledged / product decision pending
+
+[Nakagawa-master's public comment](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552) separated approval of `qwen batch run` from approval of the concrete billed batch snapshot. The proposed contract binds the exact item set, frozen settings and cost estimate to a canonical digest, and treats later drift as stale approval.
+
+A third-party developer, `yiliang114`, later called out the proposal explicitly as Nakagawa-master's proposal and kept it separate from retry-budget fixes as a product-level decision.
+
+- [third-party response](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817836928)
+- [bounded follow-up](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817960767)
+
+**Confirmed by the public record:** independent source-attributed recognition and preservation as a separate product-decision item.  
+**Not yet confirmed:** adoption, code/tests, merge, release, or real-world use.
