@@ -67,6 +67,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
   - 過去の承認と現在の権限を検証する: [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
   - 現在状態と履歴事実を分けて検証する: [Historical-Fact Reuse Kit](HISTORICAL_FACT_REUSE_KIT.md)
   - 外部送信・支払等の二重実行境界を検証する: [External Side-Effect Reuse Kit](EXTERNAL_SIDE_EFFECT_REUSE_KIT.md)
+  - 課金・送信・削除などの承認を具体的実行snapshotへ結合する: [Paid-Action Approval Binding Checklist](PAID_ACTION_APPROVAL_BINDING_CHECKLIST.md)
   - AI/search可視性・評価・長期計測で環境ドリフトと対象固有変化を分ける: [Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md)
   - 自己保存・復旧・緊急権限が相互脅威を増幅していないか検証する: [Mutual-Existence Conflict Reuse Kit](MUTUAL_EXISTENCE_CONFLICT_REUSE_KIT.md)
   - Actor / Evaluator / Reviewer / Auditor の役割分離が実質的な独立監査になっているか検証する: [Self-Referential Audit & Role-Separation Reuse Kit](SELF_REFERENTIAL_AUDIT_REUSE_KIT.md)
