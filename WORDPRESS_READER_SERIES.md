@@ -9,10 +9,11 @@ The articles are designed to start from a concrete everyday or technical problem
 - **AI / LLM・ソフトウェア運用:** #2 current authority, #3 measurement validity, #5 uncertain external side effects, #6 migration / overwrite
 - **組織・監査・意思決定:** #1 independent evidence roots, #2 current authority, #4 historical fact
 - **日常の判断・業務運用:** #1 evidence roots, #4 present vs historical state, #5 retry / duplicate action, #6 safe overwrite
+- **事業・投資・戦略:** #7 current benefit / unresolved residual / future options
 
 迷った場合は、自分の現場で今いちばん事故が起きそうな問いから1本だけ読み、必要ならsource / test kitへ進んでください。
 
-## Six short entries
+## Seven short entries
 
 | # | Reader-facing question | WordPress entry | Public source / test kit |
 |---|---|---|---|
@@ -22,6 +23,7 @@ The articles are designed to start from a concrete everyday or technical problem
 | 4 | 今の名簿は、過去の出来事をそのまま答えられるのか？ | [「今いない人」は、「あの時もいなかった人」ではない](https://nakagawamaster.wordpress.com/2026/09/24/current-status-is-not-historical-fact/) | [Historical-Fact Reuse Kit](HISTORICAL_FACT_REUSE_KIT.md) |
 | 5 | localでエラーなら、外部作用も必ず失敗したのか？ | [「エラーだから再送」は、二重送信や二重決済を生むことがある](https://nakagawamaster.wordpress.com/2026/09/24/local-error-is-not-external-failure/) | [External Side-Effect Reuse Kit](EXTERNAL_SIDE_EFFECT_REUSE_KIT.md) |
 | 6 | 同じIDなら、incoming stateで安全に上書きできるのか？ | [「同じIDだから上書きしてよい」とは限らない](https://nakagawamaster.wordpress.com/2026/09/24/same-id-does-not-mean-safe-overwrite/) | [Practical Boundary Checks — migration / synchronization / overwrite](PRACTICAL_BOUNDARY_CHECKS.md#2-migration--synchronization--overwrite) |
+| 7 | 現在の成長が、未来の選択肢や可逆性を削っていないか？ | [不可逆点とは？ 成長の裏で「未来の選択肢」が減るとき](https://nakagawamaster.wordpress.com/2026/09/25/irreversible-point-future-options/) | [OD297 — 未来負債統合理論](derivatives/297/README.md) / [Recurring Media Implementation Pack](RECURRING_MEDIA_IMPLEMENTATION_PACK.md#segment-2--what-did-todays-growth-borrow-from-tomorrow) |
 
 ## Use the series as a test path
 
