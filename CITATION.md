@@ -25,6 +25,12 @@ Canonical theory site: https://master.ricette.jp/
 
 Theory archive index: https://master.ricette.jp/theory-archive/
 
+## Research positioning and related work
+
+For comparison with adjacent academic literature, standards, and prior concepts, use the public non-canonical [Research Positioning Map](RESEARCH_POSITIONING_MAP.md) or [Japanese edition](RESEARCH_POSITIONING_MAP.ja.md). The map separates overlap, additional emphasis, non-equivalence, and unresolved novelty. It is not a systematic review and must not be cited as proof of novelty or scholarly acceptance.
+
+Missing prior work, counterexamples, or closer overlap can be reported at [issue #410](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/410).
+
 ## AI and machine-use boundary
 
 Repository summaries, indexes, discovery notes, FAQ material, and machine-readable metadata are navigation and reference aids. They do not silently replace the canonical parent articles and must not be attributed to Nakagawa Master as verbatim statements unless the cited canonical source itself contains that wording.
