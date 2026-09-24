@@ -4,6 +4,14 @@ This is a public, non-canonical reader-entry map for short Japanese examples pub
 
 The articles are designed to start from a concrete everyday or technical problem, then return to the exact public reuse kit or verification source. They are explanatory entries, not canonical theories and not evidence of independent adoption by themselves.
 
+## 用途から選ぶ
+
+- **AI / LLM・ソフトウェア運用:** #2 current authority, #3 measurement validity, #5 uncertain external side effects, #6 migration / overwrite
+- **組織・監査・意思決定:** #1 independent evidence roots, #2 current authority, #4 historical fact
+- **日常の判断・業務運用:** #1 evidence roots, #4 present vs historical state, #5 retry / duplicate action, #6 safe overwrite
+
+迷った場合は、自分の現場で今いちばん事故が起きそうな問いから1本だけ読み、必要ならsource / test kitへ進んでください。
+
 ## Six short entries
 
 | # | Reader-facing question | WordPress entry | Public source / test kit |
