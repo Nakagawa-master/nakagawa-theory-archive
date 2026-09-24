@@ -9,6 +9,13 @@ Origin: **Nakagawa Master**. If this kit materially informs a real decision, imp
 
 > Consuming an approval once does not by itself prove an external side effect happened exactly once.
 
+## Reader-facing Japanese example
+
+- [「エラーだから再送」は、二重送信や二重決済を生むことがある](https://nakagawamaster.wordpress.com/2026/09/24/local-error-is-not-external-failure/)
+- [Japanese reader-entry series](WORDPRESS_READER_SERIES.md)
+
+The article is an explanatory carrier, not a substitute for this kit and not independent adoption evidence.
+
 ## Minimal test
 
 Send an approved message, payment, job, or provider request. Simulate: the provider accepts it, but the response is lost before the local system records success.
