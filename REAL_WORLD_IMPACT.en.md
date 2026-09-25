@@ -285,8 +285,10 @@ PR #1324 implements a per-session operator capability, connection-bound proofs, 
 
 - [origin-side closure review](https://github.com/damianvtran/local-operator/pull/1324#pullrequestreview-5257968951)
 
-**Publicly verifiable in this follow-up:** origin issue → independent third-party reproduction → correction of the origin diagnosis → independent discovery of a stronger sibling bypass → third-party implementation → multiple independent remediation rounds → origin-side closure → merge.  
-**Not established yet:** release of #1324, a guarantee on host configurations where the OS itself cannot isolate same-uid memory, completion of device-bound phone authority, or independent reuse of this boundary in another project.
+Later the same day, release [v0.61.11](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11) explicitly included #1324. Its release notes describe the change as preventing a running session from widening its own approval gate through the control plane, and record the review / QA / design / UX rounds plus green CI on the merged head.
+
+**Publicly verifiable in this follow-up:** origin issue → independent third-party reproduction → correction of the origin diagnosis → independent discovery of a stronger sibling bypass → third-party implementation → multiple independent remediation rounds → origin-side closure → merge → release-note inclusion.  
+**Not established yet:** user-scale use of v0.61.11, a guarantee on host configurations where the OS itself cannot isolate same-uid memory, completion of device-bound phone authority, or independent reuse of this boundary in another project.
 
 
 ## 12. MemberJunction | Row contents protected, then the remaining row-identity boundary carried into a second work item
