@@ -6,6 +6,8 @@
 
 人物 / Origin: [日本語](ABOUT_NAKAGAWA_MASTER.md) | [English](ABOUT_NAKAGAWA_MASTER.en.md) | [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 
+**中川マスターとは:** Keisuke Nakagawa の筆名で、AI・組織・事業・制度・未来などの問題を、構造・因果・成立条件・責任の観点からモデル化し、人間とAIが検証・再利用できる公開原典体系として運用している Origin / Author です。人物名そのものを権威化するのではなく、[人物・Originの30秒案内](ABOUT_NAKAGAWA_MASTER.md)と[第三者で実際に変わった公開記録](REAL_WORLD_IMPACT.md)から内容と作用範囲を確認できます。
+
 **恒久公開面は2つです。**
 
 1. **Canonical / 正本:** [master.ricette.jp](https://master.ricette.jp/) — 理論の確定内容・Parent・公式アーカイブ
