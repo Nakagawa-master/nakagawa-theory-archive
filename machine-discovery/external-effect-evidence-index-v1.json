@@ -629,7 +629,7 @@
           "correction": "reachable command sink is slash_result rather than the initially named slash",
           "extension": "approval_answer(approved=True) also answers the constrained subject's parked approval and is guarded by the fix"
         },
-        "implementation_state": "merged__origin_boundary_closed_before_merge__release_not_yet_verified",
+        "implementation_state": "released_in_v0_61_11",
         "evidence_stage": [
           "origin_issue",
           "independent_third_party_reproduction",
@@ -638,10 +638,11 @@
           "third_party_implementation",
           "independent_review_qa_design_ux_remediation",
           "origin_side_closure",
-          "merge"
+          "merge",
+          "release_notes_inclusion"
         ],
         "not_claimed": [
-          "release of PR #1324",
+          "user-scale use of v0.61.11",
           "host-level same-uid memory isolation where the OS cannot provide it",
           "completion of device-bound phone authority",
           "independent reuse in another project/person",
@@ -652,6 +653,15 @@
           "at_utc": "2026-09-21T04:59:52Z",
           "commit": "dca24232392ea8d8a06d845a7e6318f08d775a9b",
           "url": "https://github.com/damianvtran/local-operator/commit/dca24232392ea8d8a06d845a7e6318f08d775a9b"
+        },
+        "release": {
+          "verified": true,
+          "version": "v0.61.11",
+          "published_at_utc": "2026-09-21T05:06:42Z",
+          "target_commit": "9d929c68228b4c514938c4a459035b8bda519759",
+          "url": "https://github.com/damianvtran/local-operator/releases/tag/v0.61.11",
+          "release_notes_explicitly_list_pr_1324": true,
+          "release_summary": "A running session can no longer widen its own approval gate through the control plane."
         }
       }
     },
