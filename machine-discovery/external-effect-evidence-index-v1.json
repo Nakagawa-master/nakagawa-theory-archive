@@ -877,6 +877,55 @@
         "url": "https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5818159716",
         "statement": "Adopted in 3d06e1ad8e, in a slightly lighter form than the full digest-binding flow."
       }
+    },
+    {
+      "case_id": "ai-news-evidence-root-editorial-rule",
+      "topic": "URL count versus independent evidence-root count in recurring editorial verification",
+      "external_repository": "022740mix-spec/AI-News",
+      "origin_action": {
+        "type": "issue",
+        "url": "https://github.com/022740mix-spec/AI-News/issues/124",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action",
+        "summary": "Separate multiple URLs from multiple independent evidence roots and preserve provenance/lineage classification."
+      },
+      "third_party_response": {
+        "actor": "022740mix-spec",
+        "url": "https://github.com/022740mix-spec/AI-News/issues/124#issuecomment-5823549498",
+        "relationship": "repository owner explicitly adopted the proposal, explained why it filled a missing editorial verification layer, and stated that this rule change was caused by issue #124"
+      },
+      "implementation": {
+        "verified": true,
+        "pull_request": "https://github.com/022740mix-spec/AI-News/pull/131",
+        "state": "open_draft_unmerged",
+        "changed_file": "CLAUDE.md",
+        "mechanisms": [
+          "separate source count from independent evidence-root count",
+          "classify primary source, independent observation, derived/syndicated material, and unknown lineage",
+          "record evidence-root breakdown for material claims in draft PRs",
+          "treat wire-service republications as one root rather than multiple independent confirmations",
+          "state when only party-authored evidence exists and no independent verification is confirmed"
+        ]
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "recurring_effect_potential": "If merged and used, this is a recurring editorial verification rule; repeated prompt-free use is not yet established.",
+      "not_claimed": [
+        "pull request merge",
+        "repeated operational use after merge",
+        "error-rate reduction",
+        "reader-scale effect",
+        "independent reuse by another receiver",
+        "whole-theory endorsement"
+      ],
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "multiple URLs != multiple independent evidence roots",
+        "canonical_context": [
+          "evidence provenance",
+          "practical verifiability",
+          "independent verification"
+        ],
+        "canonical_return": "https://master.ricette.jp"
+      }
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
