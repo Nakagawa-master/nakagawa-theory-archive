@@ -408,8 +408,10 @@ A public review identified that a recurring scout was created from model-authore
 
 - [Nakagawa-master review](https://github.com/PostHog/posthog/pull/101991#pullrequestreview-5235367516)
 - [third-party implementation commit](https://github.com/PostHog/posthog/commit/244ff417b3b5228779a8b904035a881bc05cdff5)
+- [original PR split notice](https://github.com/PostHog/posthog/pull/101991#issuecomment-5826739764)
+- [current replacement stack layer](https://github.com/PostHog/posthog/pull/106435)
 
-The later commit adds an editable instructions field and creates the scout from the reviewed value. The PR is still open/unmerged at the time of this record. The commit does not establish that the review was the sole cause.
+The later commit adds an editable instructions field and creates the scout from the reviewed value. On 2026-09-25 the author closed #101991 only after splitting the feature into an eight-layer stack. The current card layer, #106435, explicitly retains the editable drafted-instructions approval boundary and is open as a draft. The original commit does not establish that the review was the sole cause.
 
 ### PostHog #92252 — server-only suggestion capability
 
