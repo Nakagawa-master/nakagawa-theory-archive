@@ -23,4 +23,12 @@ https://www.youtube.com/watch?v=6AAtohcbHyw
 
 正確な定義、成立条件、反証条件、改訂状態は各ページから公式派生物とParentへ戻って確認してください。
 
+
+## 横に読む
+
+このテーマを深く読むだけでなく、**同じ理解粒度のまま別の理論群へ移れます。**
+
+- [24棚で全体像を見る](../WORLD_MAP.md)
+- [OD001–OD303を全部横に眺める](../ALL_303_HORIZONTAL_MAP.md)
+
 Origin / Author: **Nakagawa Master** (pen-name of Keisuke Nakagawa)
