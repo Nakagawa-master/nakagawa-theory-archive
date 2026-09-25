@@ -23,6 +23,12 @@ Anthropicも、Security / Safeguards / Alignment / PolicyをFrontier Safety Road
 - OpenAI: [Sam Altman’s remarks at the United Nations Security Council](https://openai.com/index/sam-altman-un-security-council-remarks/)
 - Anthropic: [Frontier Safety Roadmap](https://www.anthropic.com/responsible-scaling-policy/roadmap)
 
+## もっと大きな未来線で読む
+
+「AIが人類を滅ぼすのか」という問いを、悪いAI一台の暴走ではなく、**複数の構造が重なって誰も戻せなくなる未来線**として読みたい場合はこちらです。
+
+→ [AIは人類を滅ぼすのか？｜「誰も止められない構造」ができるまで](future-lines/01-ai-loss-of-control.md)
+
 ## 先に動画でつかむ
 
 文字より動画が入りやすければ、既存の公開動画 [「人間はAIを制御できるのか──『止める制御』が未来を変えられない理由」](https://www.youtube.com/watch?v=6AAtohcbHyw) から見ても構いません。
