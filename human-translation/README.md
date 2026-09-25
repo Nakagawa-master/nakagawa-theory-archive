@@ -75,6 +75,7 @@ Layer 4  高密度source: canonical Parent / AI Index / Ledger
 ### AI文明｜「AIが怖い」の、その次
 
 - [AIが怖いってニュース、結局なにが問題なの？ そして、その次は？](ai-civilization-why-it-matters.md)
+- [AI文明論とは？ 6つの身近な問いから読む](ai-civilization/README.md)
 
 ### 情報・ニュース｜「たくさん見た」=「たくさん確かめた」？
 
