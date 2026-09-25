@@ -45,6 +45,8 @@
 
 **誰も悪くないのに、誰も安全に戻せなくなること**もあります。
 
+→ [映像から入る：人間はAIを制御できるのか](https://www.youtube.com/watch?v=6AAtohcbHyw)
+
 → [物語を読む：AIが悪くなくても、止められなくなる？](future-lines/01-ai-loss-of-control.md)
 
 ---
