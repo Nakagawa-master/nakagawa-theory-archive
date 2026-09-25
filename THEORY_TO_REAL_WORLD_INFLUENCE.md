@@ -220,6 +220,10 @@ A separate publication chain preserves the source relationship directly in third
 
 In `kishibashi3/publications`, a Nakagawa Master review on PR #52 separated **reversibility** from an **authority-increasing transition**: an operation can be reversible while still increasing what an agent is allowed to do. The receiver then created PR #57 and explicitly identified the Nakagawa review as the origin of the added condition.
 
+The receiver later replied directly that the earlier rule had treated reversibility as sufficient safety, that the `ask → auto` counterexample showed this did not hold, and that the distinction was therefore separated as condition 6, “self-authority fixation.” This is an explicit receiver-side restatement of what changed, not merely an inference from the diff:
+
+- [Direct receiver restatement](https://github.com/kishibashi3/publications/pull/57#issuecomment-5749065842)
+
 PR #57 added a sixth structural condition, summarized as:
 
 ```text
