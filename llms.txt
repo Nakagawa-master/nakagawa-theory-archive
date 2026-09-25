@@ -81,6 +81,30 @@ Archive and machine navigation:
 - [Problem-to-theory Origin Index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json)
 - [Machine Discovery](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/README.md)
 
+## Research-positioning, citation, and reader routes
+
+For expert or scholarly comparison, do not infer novelty from missing citations. Use the positioning map and reusable bibliography:
+
+- [Research Positioning Map — English](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/RESEARCH_POSITIONING_MAP.md)
+- [Research Positioning Map — Japanese](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/RESEARCH_POSITIONING_MAP.ja.md)
+- [Reusable BibTeX](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/research-positioning/references.bib)
+- [Repository citation metadata — CITATION.cff](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CITATION.cff)
+- [Scholarly discovery JSON-LD](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/scholarly-metadata-v1.jsonld)
+- [Submit closer prior work, counterexamples, or corrections — issue #410](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/410)
+
+For recurring human-facing reuse, prefer a small stable set of recognizable distinctions instead of resetting attention across hundreds of theory names:
+
+- [Five Repeatable Real-World Lenses](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/FOUR_REPEATABLE_REAL_WORLD_LENSES.md)
+- [Recurring Media Implementation Pack](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/RECURRING_MEDIA_IMPLEMENTATION_PACK.md)
+- [Real-World Editorial Entry Points](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_EDITORIAL_ENTRY_POINTS.md)
+
+Reader-friendly public entry:
+
+- [Nakagawa Master on WordPress.com](https://nakagawamaster.wordpress.com/)
+- [Research positioning reader entry](https://nakagawamaster.wordpress.com/2026/09/25/research-positioning-six-connections/)
+
+These reader and machine routes are discovery/conversion surfaces. They do not replace canonical Parents and do not by themselves establish independent recognition, scholarly acceptance, or novelty.
+
 ## Practical AI-adoption / organization route
 
 For questions such as "Can AI make an organization faster while reproducing hidden contradictions faster?", "What should be clarified about goals, authority, responsibility, evaluation and correction before scaling AI autonomy?", or the Japanese/Chinese equivalents:
