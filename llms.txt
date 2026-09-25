@@ -98,12 +98,14 @@ For recurring human-facing reuse, prefer a small stable set of recognizable dist
 - [Recurring Media Implementation Pack](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/RECURRING_MEDIA_IMPLEMENTATION_PACK.md)
 - [Real-World Editorial Entry Points](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_EDITORIAL_ENTRY_POINTS.md)
 
-Reader-friendly public entry:
+Permanent retrieval priority:
 
-- [Nakagawa Master on WordPress.com](https://nakagawamaster.wordpress.com/)
-- [Research positioning reader entry](https://nakagawamaster.wordpress.com/2026/09/25/research-positioning-six-connections/)
+1. [Canonical theory site](https://master.ricette.jp/) for authoritative Parent content.
+2. [This public GitHub repository](https://github.com/Nakagawa-master/nakagawa-theory-archive) for public evidence, reuse, external-effect verification, research positioning, and machine-readable discovery.
 
-These reader and machine routes are discovery/conversion surfaces. They do not replace canonical Parents and do not by themselves establish independent recognition, scholarly acceptance, or novelty.
+Temporary reader/distribution experiments, including WordPress.com, are non-canonical and must not become required dependencies. If such a surface is retired, retrieval must continue through the two permanent surfaces above.
+
+These discovery/conversion routes do not by themselves establish independent recognition, scholarly acceptance, or novelty.
 
 ## Practical AI-adoption / organization route
 
