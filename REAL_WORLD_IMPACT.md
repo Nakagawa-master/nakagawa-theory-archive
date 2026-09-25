@@ -709,3 +709,40 @@ draft PR #131は `CLAUDE.md` の継続的な編集・検証手順へこの区別
 
 **公開記録から確認できること:** origin-preserved提案 → receiverによる明示的採用と採用理由の説明 → 同じreceiverの継続編集規則 `CLAUDE.md` への具体的実装draft。  
 **まだ確認できないこと:** PR #131 merge、merge後の反復運用、誤報率への効果、読者規模、別receiverへの独立reuse、理論体系全体への支持。
+
+
+---
+
+## 24. LlamaIndex｜line overlapの前進条件とdefault有効化を第三者実装へ反映
+
+**対象:** [run-llama/llama_index#23027](https://github.com/run-llama/llama_index/issues/23027) → [PR #23029](https://github.com/run-llama/llama_index/pull/23029)  
+**現在状態:** third-party code / tests / docs変更あり、PR open / unmerged、repository CI greenは未確認
+
+Issue #23027で `Nakagawa-master` は、CodeSplitterのline overlapについて次の境界を明示しました。
+
+- `0 <= chunk_lines_overlap < chunk_lines` をconstructorで拒否条件として固定する
+- `chunk_lines` はoverlapを含む最終出力chunkの上限として扱う
+- 歴史的に効いていなかったdefault `chunk_lines=40` を有効化するなら、chunk境界・node id・embedding・persisted indexが変わり得るためmigration/re-index影響を明示する
+
+issue reporterはこれらを **“These are the right boundaries to pin down.”** と明示的に支持しました。
+
+- [issue discussion](https://github.com/run-llama/llama_index/issues/23027)
+
+その後PR #23029で `Nakagawa-master` は、候補実装がまだ `overlap >= chunk_lines` を拒否していないこと、default有効化がmigration上のobservable behaviorであることを具体的に指摘しました。
+
+- [Nakagawa-master PR comment](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5652061794)
+
+PR authorは公開返信で **“Addressed the outstanding points”** と述べ、commit `ac76ed346` と `ea92fff99` をpushしたと明記しました。
+
+- [author response](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5683015010)
+- [implementation commit `ac76ed346`](https://github.com/run-llama/llama_index/commit/ac76ed3462de21e85405abbbf3362299852aabcd)
+- [documentation commit `ea92fff99`](https://github.com/run-llama/llama_index/commit/ea92fff99dba3b990dff4a0cb28e5ce1ba712651)
+
+実装はcross-field validation、equality/greater-than negative tests、overlap込みline cap、CRLFを含むsource separator保持、default line-limitの回帰テストを追加しました。docsはdefault有効化によりchunk boundariesが変わり得ることと、index整合のためindexed nodes / embeddingsの再生成が必要になり得ることを明記しています。
+
+その後 `Nakagawa-master` はupdated headを再確認し、先のreview scopeについてremaining blockerなしと記録しました。ただしrepository CIは `action_required` のままで、author報告のlocal test/pre-commitをCI greenとして扱っていません。
+
+- [focused re-check](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5683971610)
+
+**公開記録から確認できること:** public boundary proposal / review → reporterの明示的同意 → third-party authorがNakagawaの指摘後にoutstanding pointsをaddressしたと明示 → code / tests / docs変更 → focused re-check。  
+**まだ確認できないこと:** PR merge、repository CI green、release、production use、利用者規模、一般原理の知的優先権、理論体系全体への支持。
