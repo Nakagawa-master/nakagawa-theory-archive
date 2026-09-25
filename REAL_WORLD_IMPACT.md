@@ -686,3 +686,26 @@ receiver commit `dfd4588d` は、export aliasとsource declaration nameの両方
 
 **確認できること:** 出所付きの第三者認識に加え、提案された承認binding境界がcode / testsへ実装されたこと。  
 **まだ確認できないこと:** PR merge、release、production use、理論体系全体へのendorsement。
+
+
+---
+
+## 23. AI-News｜URL本数と独立した証拠root数を分ける編集規則を明示採用
+
+**対象:** [022740mix-spec/AI-News#124](https://github.com/022740mix-spec/AI-News/issues/124) → [PR #131](https://github.com/022740mix-spec/AI-News/pull/131)  
+**現在状態:** receiverが明示採用 / CLAUDE.md実装draft PR open / unmerged
+
+Issue #124で `Nakagawa-master` は、AIニュースの検証で「URLが複数あること」と「独立した証拠rootが複数あること」を分離するよう提案しました。一次資料、独立観測、派生・転載、不明を分け、`url_count` と `evidence_root_count` を同一視しない境界です。
+
+- [origin issue #124](https://github.com/022740mix-spec/AI-News/issues/124)
+
+repository ownerはその後、**「採用します」** と明示し、この変更がIssue #124を受けたものだと区別しました。既存L2/L3では「その出典に情報があるか」は見ていた一方、出典同士の独立性は見ていなかったこと、過去記事を点検すると「複数媒体の報道が一致」を根拠にした記事が10本あったことも説明しています。
+
+- [receiver adoption / rationale](https://github.com/022740mix-spec/AI-News/issues/124#issuecomment-5823549498)
+
+draft PR #131は `CLAUDE.md` の継続的な編集・検証手順へこの区別を実装しています。分類語彙は可能な範囲でW3C PROV-Oへ寄せ、通信社配信、規制当局への届出、事故直後の報道など、運用で迷いやすいケースも追加されています。diffは **「数えるのは URL ではなく、独立した根」** を規則として明文化し、主要主張ごとの根の内訳をdraft PR本文へ記録する運用まで定義しています。
+
+- [implementation draft PR #131](https://github.com/022740mix-spec/AI-News/pull/131)
+
+**公開記録から確認できること:** origin-preserved提案 → receiverによる明示的採用と採用理由の説明 → 同じreceiverの継続編集規則 `CLAUDE.md` への具体的実装draft。  
+**まだ確認できないこと:** PR #131 merge、merge後の反復運用、誤報率への効果、読者規模、別receiverへの独立reuse、理論体系全体への支持。
