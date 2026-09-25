@@ -285,8 +285,10 @@ PR #1324实现per-session operator capability、connection-bound proof、共同p
 
 - [origin-side closure review](https://github.com/damianvtran/local-operator/pull/1324#pullrequestreview-5257968951)
 
-**该follow-up公开可确认：** origin issue → 第三方独立复现 → 修正origin诊断 → 独立发现更强sibling bypass → 第三方实现 → 多轮独立remediation → origin-side closure → merge。  
-**尚未确认：** #1324的release、OS本身无法隔离same-uid memory的host配置上的保证、phone/device-bound authority完成、或该边界被其他project独立reuse。
+同日稍后，release [v0.61.11](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11) 明确收录#1324。release notes把该变化记录为：运行中的session不能再通过control plane扩大自己的approval gate，并同时记录merged head上的review / QA / design / UX rounds与green CI。
+
+**该follow-up公开可确认：** origin issue → 第三方独立复现 → 修正origin诊断 → 独立发现更强sibling bypass → 第三方实现 → 多轮独立remediation → origin-side closure → merge → release notes收录。  
+**尚未确认：** v0.61.11的用户规模、OS本身无法隔离same-uid memory的host配置上的保证、phone/device-bound authority完成、或该边界被其他project独立reuse。
 
 
 ## 12. MemberJunction｜在保护row内容之后，把剩余row identity边界继续推进到第二个work item
