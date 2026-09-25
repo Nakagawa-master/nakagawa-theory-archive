@@ -93,8 +93,12 @@ Layer 4  高密度source: canonical Parent / AI Index / Ledger
 
 ## いま一番強い入口
 
+**中川マスターの未来線**として、理論名より先に「このままなら何が起きるか」から入れます。
+
 - [未来線から読む｜このままなら何が起き、どこで別の未来へ分岐できるか](FUTURE_LINES.md)
-- [AIは人類を滅ぼすのか？｜「誰も止められない構造」ができるまで](future-lines/01-ai-loss-of-control.md)
+- [未来線 #1｜AIの制御不能リスクを「戻れない構造」から読む](future-lines/01-ai-loss-of-control.md)
+- [未来線 #2｜人間が最後に承認しているのに、人間が決めていない未来](future-lines/02-human-approval-without-human-decision.md)
+- [未来線 #3｜100人が同じことを言っても、根拠は1本かもしれない](future-lines/03-one-root-hundred-voices.md)
 
 ## 最初のシリーズ
 
