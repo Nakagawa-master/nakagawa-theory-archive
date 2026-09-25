@@ -317,8 +317,10 @@ PR #1324はper-session operator capability、connection-bound proof、共通pre-
 
 - [origin-side closure review](https://github.com/damianvtran/local-operator/pull/1324#pullrequestreview-5257968951)
 
-**このfollow-upで公開確認できること:** origin issue → third-party independent reproduction → origin diagnosisの修正 → stronger sibling bypassの独立発見 → third-party implementation → multiple independent remediation rounds → origin-side closure → merge。  
-**まだ確認できないこと:** #1324のrelease、host OS自体が同uid memory isolationを提供できない環境での保証、phone/device-bound authorityの完成、またはこの境界の別projectへの独立reuse。
+さらに同日、release [v0.61.11](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11) に #1324 が明示的に収録されました。release notesはこの変更を、実行中sessionがcontrol plane経由で自分自身のapproval gateを広げられないようにする修正として記録し、merge headでのreview / QA / design / UX各roundとCI greenも記載しています。
+
+**このfollow-upで公開確認できること:** origin issue → third-party independent reproduction → origin diagnosisの修正 → stronger sibling bypassの独立発見 → third-party implementation → multiple independent remediation rounds → origin-side closure → merge → release notes収録。  
+**まだ確認できないこと:** v0.61.11の利用者規模、host OS自体が同uid memory isolationを提供できない環境での保証、phone/device-bound authorityの完成、またはこの境界の別projectへの独立reuse。
 
 
 ## 12. MemberJunction｜row内容保護の次に残ったrow identity境界を第二work itemへcarry
