@@ -68,6 +68,10 @@ AIが画面にこう書いたとします。
 
 そんな問いです。
 
+## 映像で見る
+
+- [AI「消さないで」。それは感情なのか？（YouTube）](https://www.youtube.com/watch?v=74Rh-Q7fITg)
+
 ## 深く読む
 
 - [OD299 Human Entry｜第6論](../../derivatives/299/human-entry.md)
