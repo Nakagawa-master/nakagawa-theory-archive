@@ -974,6 +974,185 @@
         "intellectual priority over the general principle",
         "whole-theory endorsement"
       ]
+    },
+    {
+      "case_id": "posthog-scout-measured-versus-producer-evidence",
+      "topic": "Separate producer-supplied evidence from PostHog-measured evidence and keep narrow internal scout capability non-user-grantable",
+      "external_repository": "PostHog/posthog",
+      "origin_action": {
+        "type": "pull_request_review",
+        "url": "https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action"
+      },
+      "implementation": {
+        "verified": true,
+        "pull_request": "https://github.com/PostHog/posthog/pull/92252",
+        "state": "open_unmerged",
+        "commits": [
+          "721311a97488781dd590708abe697480c5c0e9e8",
+          "3ecb122dd7062d864c135213282613bfc80a2ebf",
+          "d962e51c22e34f526f94ce6d581aa429ed7d87a3"
+        ],
+        "mechanisms": [
+          "re-read workflow step metrics server-side instead of equating producer values with measured values",
+          "display Measured by PostHog separately from Unverified producer evidence",
+          "keep hog_flow_proposal programmatic/internal rather than ordinary user-grantable capability",
+          "mint the narrow scout scope server-side"
+        ]
+      },
+      "attribution_limit": "The receiver commits do not identify Nakagawa-master as the unique cause; only temporal and boundary alignment is claimed.",
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "not_claimed": [
+        "pull request merge",
+        "release",
+        "production deployment",
+        "user-scale effect",
+        "unique causation"
+      ]
+    },
+    {
+      "case_id": "llamaindex-cache-hit-node-identity-contract",
+      "topic": "Do not silently reuse prior-run node identity through a generic transformation cache when current chunk identity changes",
+      "external_repository": "run-llama/llama_index",
+      "origin_action": {
+        "type": "pull_request_review",
+        "url": "https://github.com/run-llama/llama_index/pull/23003#pullrequestreview-5219816814",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action"
+      },
+      "third_party_response": {
+        "url": "https://github.com/run-llama/llama_index/pull/23003#issuecomment-5694376083",
+        "relationship": "PR author explicitly confirmed the remaining collision and agreed it required a maintainer-level cache contract decision rather than an ad hoc focused-PR fix"
+      },
+      "follow_up": {
+        "issue": "https://github.com/run-llama/llama_index/issues/23083",
+        "decision_space": [
+          "full-node transformation cache",
+          "content-stable payload reuse"
+        ],
+        "acceptance_focus": "regenerated chunk identity must not silently inherit stale prior-run identity"
+      },
+      "current_stage": "third_party_work_item_or_design_adoption",
+      "not_claimed": [
+        "maintainer contract decision",
+        "follow-up code/test implementation",
+        "merge",
+        "release",
+        "deployment",
+        "user-scale effect"
+      ]
+    },
+    {
+      "case_id": "publications-self-authority-fixation",
+      "topic": "Treat reversibility and authority increase as independent axes; the constrained subject cannot loosen its own constraint",
+      "external_repository": "kishibashi3/publications",
+      "origin_action": {
+        "type": "pull_request_review",
+        "url": "https://github.com/kishibashi3/publications/pull/52#pullrequestreview-5258131687",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action"
+      },
+      "third_party_response": {
+        "actor": "kishibashi3",
+        "url": "https://github.com/kishibashi3/publications/pull/57#issuecomment-5749065842",
+        "relationship": "repository owner explicitly states that the ask-to-auto counterexample showed reversibility was not a sufficient safety condition"
+      },
+      "implementation": {
+        "verified": true,
+        "pull_request": "https://github.com/kishibashi3/publications/pull/57",
+        "state": "merged",
+        "merge_commit": "4d32ec58d5cbf1c904c432552e114c144186c064",
+        "mechanisms": [
+          "add condition 6: self-authority fixation",
+          "separate reversibility from authority increase",
+          "require separate authority for loosening such as ask-to-auto, role elevation, allowlist expansion, and credential access",
+          "allow tightening asymmetrically"
+        ]
+      },
+      "repeated_receiver_reuse": {
+        "pull_request": "https://github.com/kishibashi3/publications/pull/58",
+        "merge_commit": "36e4c5df963e2b3645c7591d8cb933c4f36e48e0",
+        "relationship": "receiver reviewer carried the merged condition into a separate normative document as D8 and merged it"
+      },
+      "public_delivery": {
+        "github_pages_run": "https://github.com/kishibashi3/publications/actions/runs/35506196582"
+      },
+      "current_stage": "release_deployment_or_verified_use",
+      "not_claimed": [
+        "independent reuse by another receiver",
+        "large-scale reader recognition",
+        "measured incident reduction",
+        "whole-theory endorsement"
+      ]
+    },
+    {
+      "case_id": "posthog-recurring-instruction-approval-binding",
+      "topic": "Approval of a summary is not approval of hidden recurring instructions",
+      "external_repository": "PostHog/posthog",
+      "origin_action": {
+        "type": "pull_request_review",
+        "url": "https://github.com/PostHog/posthog/pull/101991#pullrequestreview-5235367516",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action"
+      },
+      "implementation": {
+        "verified": true,
+        "pull_request": "https://github.com/PostHog/posthog/pull/101991",
+        "state": "open_unmerged",
+        "commit": "244ff417b3b5228779a8b904035a881bc05cdff5",
+        "mechanisms": [
+          "show the actual recurring instructions to the human",
+          "allow editing the instructions before creation",
+          "bind the create payload to the human-reviewed scoutBody",
+          "add regression coverage"
+        ]
+      },
+      "attribution_limit": "The implementation commit does not identify Nakagawa-master as the unique cause.",
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "not_claimed": [
+        "merge",
+        "release",
+        "production deployment",
+        "user-scale effect",
+        "unique causation"
+      ]
+    },
+    {
+      "case_id": "dair-content-classification-versus-action-authority",
+      "topic": "Separate untrusted content classification from current authority to execute a downstream action",
+      "external_repository": "dair-ai/Prompt-Engineering-Guide",
+      "origin_action": {
+        "type": "pull_request_review",
+        "url": "https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757#pullrequestreview-5280350258",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action"
+      },
+      "third_party_response": {
+        "url": "https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757#issuecomment-5783121174",
+        "relationship": "third-party author explicitly accepted and restated both hardening points"
+      },
+      "implementation": {
+        "verified": true,
+        "pull_request": "https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757",
+        "state": "open_unmerged",
+        "commit": "4a5334ab0ea82e97c122d53a78a6162d8e56e6b9",
+        "source_attribution": "commit message explicitly says Two hardenings from @Nakagawa-master's review on #757",
+        "mechanisms": [
+          "treat interpolated fields as untrusted data rather than instructions",
+          "separate classification from downstream action authority with a second-stage gate",
+          "add a regression case for the authority boundary"
+        ]
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "not_claimed": [
+        "merge",
+        "release",
+        "deployment",
+        "reader scale",
+        "intellectual priority over the general principle",
+        "whole-theory endorsement"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
