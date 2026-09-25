@@ -23,6 +23,12 @@ Anthropicも、Security / Safeguards / Alignment / PolicyをFrontier Safety Road
 - OpenAI: [Sam Altman’s remarks at the United Nations Security Council](https://openai.com/index/sam-altman-un-security-council-remarks/)
 - Anthropic: [Frontier Safety Roadmap](https://www.anthropic.com/responsible-scaling-policy/roadmap)
 
+## 先に動画でつかむ
+
+文字より動画が入りやすければ、既存の公開動画 [「人間はAIを制御できるのか──『止める制御』が未来を変えられない理由」](https://www.youtube.com/watch?v=6AAtohcbHyw) から見ても構いません。
+
+この動画は第5〜10論そのものの要約ではありません。「AIを止める・制御する」という現在に近い問いから、その先の問題へ入るための関連入口です。
+
 ## でも、話はそこで終わらない
 
 ここで一度、すごく単純な未来を想像してください。
