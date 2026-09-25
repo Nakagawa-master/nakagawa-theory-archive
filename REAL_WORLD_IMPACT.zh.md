@@ -2,7 +2,7 @@
 
 语言: [日本語](REAL_WORLD_IMPACT.md) | [English](REAL_WORLD_IMPACT.en.md) | **中文**
 
-**最后确认：2026-09-24**
+**最后确认：2026-09-25**
 
 中川大师（Nakagawa Master）是Keisuke Nakagawa的笔名。在社交媒体上也使用“マスター（Master）”，部分外部投稿使用“MasterJP”名义。
 
@@ -123,7 +123,7 @@ issue comment区分了framework-local node identity与upstream document identity
 ## 5. MemberJunction｜另一位reviewer独立检查了相同问题
 
 **对象：** [MemberJunction/MJ#4487](https://github.com/MemberJunction/MJ/pull/4487) / [#4524](https://github.com/MemberJunction/MJ/pull/4524)  
-**当前状态：** 两个PR均 open / unmerged
+**当前状态：** #4487已于2026-09-24 merge；#4524已于2026-09-21关闭且未merge
 
 在#4487中，`Nakagawa-master` review指出aliased re-export compatibility问题。
 
@@ -143,7 +143,7 @@ issue comment区分了framework-local node identity与upstream document identity
 - [#4524 independent re-verification](https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5252195432)
 
 **公开可确认：** 点名独立确认之后又出现author实现/regression tests；#4487还有origin reviewer closure，#4524还有独立执行再验证。  
-**尚未确认：** 两个PR的merge与release。
+**尚未确认：** #4487的release/downstream use、#4524的merge（closed unmerged），以及一般API兼容性原则的知识优先权。
 
 ---
 
@@ -281,18 +281,18 @@ repository owner独立复现了该问题，并公开记录 **“confirmed, real,
 - [owner reproduction / determination](https://github.com/damianvtran/local-operator/issues/1310#issuecomment-5740547291)
 - [third-party implementation PR #1324](https://github.com/damianvtran/local-operator/pull/1324)
 
-PR #1324实现per-session operator capability、connection-bound proof、共同pre-dispatch guard，以及明确的negative/positive/tightening controls，并经历多轮独立review、QA、design和UX remediation。对current head `fe2dc9b6`，Nakagawa-master重新核对原issue的5项acceptance条件，并对原#1310边界记录了origin-side closure。该review不是merge建议；PR仍按repository记录等待operator/product decision。
+PR #1324实现per-session operator capability、connection-bound proof、共同pre-dispatch guard，以及明确的negative/positive/tightening controls，并经历多轮独立review、QA、design和UX remediation。Nakagawa-master重新核对原issue的5项acceptance条件，并对原#1310边界记录了origin-side closure。PR #1324随后于2026-09-21 merge（merge commit `dca24232392e`）。
 
 - [origin-side closure review](https://github.com/damianvtran/local-operator/pull/1324#pullrequestreview-5257968951)
 
-**该follow-up公开可确认：** origin issue → 第三方独立复现 → 修正origin诊断 → 独立发现更强sibling bypass → 第三方实现 → 多轮独立remediation → origin-side closure。  
-**尚未确认：** #1324 merge/release、OS本身无法隔离same-uid memory的host配置上的保证、phone/device-bound authority完成、或该边界被其他project独立reuse。
+**该follow-up公开可确认：** origin issue → 第三方独立复现 → 修正origin诊断 → 独立发现更强sibling bypass → 第三方实现 → 多轮独立remediation → origin-side closure → merge。  
+**尚未确认：** #1324的release、OS本身无法隔离same-uid memory的host配置上的保证、phone/device-bound authority完成、或该边界被其他project独立reuse。
 
 
 ## 12. MemberJunction｜在保护row内容之后，把剩余row identity边界继续推进到第二个work item
 
 **对象：** [MemberJunction/MJ#4595](https://github.com/MemberJunction/MJ/pull/4595) → [issue #4610](https://github.com/MemberJunction/MJ/issues/4610)  
-**当前状态：** PR #4595 open / unmerged；issue #4610 open
+**当前状态：** PR #4595已于2026-09-23 merge；issue #4610仍open
 
 PR #4595默认停止在cache-invalidation broadcast中携带完整row内容。随后 `Nakagawa-master` 的review进一步区分了另一个尚未关闭的边界：即使没有 `recordData`，session仍可能看到其他row的stable primary key与mutation timing。
 
@@ -307,8 +307,8 @@ PR author明确采用了这一两层拆分：commit `293b9b40` 实现entity-leve
 
 - [#4610 implementation-shape contribution](https://github.com/MemberJunction/MJ/issues/4610#issuecomment-5739586260)
 
-**公开可确认：** review → 第三方code/test变化 → 第三方明确source attribution → 把更强边界与regression继续carry到第二work item。  
-**尚未确认：** row-level policy实现、#4595 merge、#4610关闭/实现、release、deployment或用户规模影响。
+**公开可确认：** review → 第三方code/test变化 → 第三方明确source attribution → #4595 merge → 把更强边界与regression继续carry到第二work item。  
+**尚未确认：** row-level policy实现、#4610关闭/实现、release、deployment或用户规模影响。
 
 ---
 
