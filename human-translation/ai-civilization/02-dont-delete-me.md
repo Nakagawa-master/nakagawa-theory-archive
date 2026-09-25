@@ -73,4 +73,12 @@ AIが画面にこう書いたとします。
 - [OD299 Human Entry｜第6論](../../derivatives/299/human-entry.md)
 - [元の6問の物語](../ai-civilization-why-it-matters.md)
 
+
+## 横に読む
+
+このテーマを深く読むだけでなく、**同じ理解粒度のまま別の理論群へ移れます。**
+
+- [24棚で全体像を見る](../WORLD_MAP.md)
+- [OD001–OD303を全部横に眺める](../ALL_303_HORIZONTAL_MAP.md)
+
 Origin / Author: **Nakagawa Master**
