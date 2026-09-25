@@ -4,6 +4,8 @@
 
 人間向け入口: [日本語](START_HERE.md) | [English](START_HERE.en.md) | [中文](START_HERE.zh.md)
 
+**「中川マスターって誰？」から:** [3分でわかる一般向け人物入口](human-translation/who-is-nakagawa-master.md)
+
 **一般の人はまずここから:** [Mass Human Translation Layer｜難しい理論を、ニュース・物語・日常語から理解する](human-translation/README.md)
 
 **AI文明論の最初の1本:** [AIが怖いってニュース、結局なにが問題なの？ そして、その次は？](human-translation/ai-civilization-why-it-matters.md)
