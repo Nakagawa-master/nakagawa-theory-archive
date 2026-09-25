@@ -66,7 +66,9 @@ AI能力が上がる
 
 **全文:** [AIは人類を滅ぼすのか？｜「誰も止められない構造」ができるまで](future-lines/01-ai-loss-of-control.md)
 
-主な接続:
+主な**全文:** [人間が最後に承認しているのに、人間が決めていない未来](future-lines/02-human-approval-without-human-decision.md)
+
+接続:
 - [OD223｜制御可能性と結論変更可能性](../derivatives/223/human-entry.md)
 - [OD301｜証拠系譜・認識完全性](../derivatives/301/human-entry.md)
 - [OD303｜自己参照監査・役割分離](../derivatives/303/human-entry.md)
@@ -149,6 +151,8 @@ AI AもAI Bも同じ答えを返す。
 ここで怖いのは「フェイクニュースがある」ことだけではありません。
 
 **誤りが、社会の世界モデルそのものになって訂正しにくくなること**です。
+
+**全文:** [100人が同じことを言っても、間違いは1個かもしれない](future-lines/03-one-root-hundred-voices.md)
 
 接続:
 - [OD301｜証拠系譜・認識完全性](../derivatives/301/human-entry.md)
