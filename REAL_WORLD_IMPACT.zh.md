@@ -675,3 +675,40 @@ draft PR #131把这一边界写进repository持续使用的 `CLAUDE.md` 编辑�
 
 **公开可确认：** 保留origin的提案 → receiver明确采用并说明理由 → 在持续编辑规则中的具体实现draft。  
 **尚未确认：** PR #131 merge、merge后的重复运用、对误报率的影响、读者规模、其他receiver的独立reuse或对整个理论体系的支持。
+
+
+---
+
+## 24. LlamaIndex｜把line overlap的前进条件与default启用影响落实到第三方PR
+
+**对象:** [run-llama/llama_index#23027](https://github.com/run-llama/llama_index/issues/23027) → [PR #23029](https://github.com/run-llama/llama_index/pull/23029)  
+**当前状态:** 已有第三方code/tests/docs修改；PR仍open且未merge；repository CI green尚未确认
+
+在issue #23027中，`Nakagawa-master` 对CodeSplitter的line overlap提出了三个明确边界：
+
+- constructor应拒绝不满足 `0 <= chunk_lines_overlap < chunk_lines` 的配置；
+- `chunk_lines` 应限制包含overlap在内的最终输出chunk；
+- 如果历史上未生效的default `chunk_lines=40` 开始生效，应明确migration/re-index影响，因为chunk boundaries、node ids、embeddings和persisted indexes都可能变化。
+
+issue reporter明确表示 **“These are the right boundaries to pin down.”**
+
+- [issue discussion](https://github.com/run-llama/llama_index/issues/23027)
+
+随后在PR #23029中，`Nakagawa-master` 进一步指出候选实现尚未拒绝 `overlap >= chunk_lines`，并指出启用default属于可观察的migration行为。
+
+- [Nakagawa-master PR comment](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5652061794)
+
+PR author公开回复 **“Addressed the outstanding points”**，并明确指出commit `ac76ed346` 与 `ea92fff99` 已落实这些修改。
+
+- [author response](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5683015010)
+- [implementation commit `ac76ed346`](https://github.com/run-llama/llama_index/commit/ac76ed3462de21e85405abbbf3362299852aabcd)
+- [documentation commit `ea92fff99`](https://github.com/run-llama/llama_index/commit/ea92fff99dba3b990dff4a0cb28e5ce1ba712651)
+
+实现加入cross-field validation、等于/大于边界的negative tests、包含overlap的line cap、包括CRLF在内的source separator保持，以及default line-limit regression coverage。文档也明确说明启用default可能改变chunk boundaries，并可能需要重新生成indexed nodes / embeddings。
+
+之后 `Nakagawa-master` 对updated head进行了focused re-check，记录先前review scope内没有remaining blocker；同时明确没有把 `action_required` workflow状态当作green CI证据。
+
+- [focused re-check](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5683971610)
+
+**公开可确认：** public boundary proposal/review → reporter明确同意 → 第三方author明确表示已address这些outstanding points → code/tests/docs修改 → focused re-check。  
+**尚未确认：** PR merge、repository CI green、release、production use、用户规模、一般原则的知识优先权或对整个理论体系的支持。
