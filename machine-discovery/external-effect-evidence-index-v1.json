@@ -129,12 +129,18 @@
           "unre-exported sibling remains error"
         ]
       },
-      "current_stage": "third_party_code_test_design_or_document_change",
+      "current_stage": "merge_or_integration",
       "not_claimed": [
-        "merge",
         "release",
-        "production use"
-      ]
+        "production use",
+        "downstream user-scale impact"
+      ],
+      "merge": {
+        "claimed": true,
+        "at_utc": "2026-09-24T03:47:51Z",
+        "commit": "133cdfeb481ec5deddd0fa43c7f7e29bc12df72d",
+        "url": "https://github.com/MemberJunction/MJ/commit/133cdfeb481ec5deddd0fa43c7f7e29bc12df72d"
+      }
     },
     {
       "case_id": "memberjunction-migration-gate-repeat-confirmation",
@@ -525,10 +531,9 @@
         "url": "https://github.com/MemberJunction/MJ/issues/4610#issuecomment-5739586260",
         "contribution": "mapped the row-disclosure seam onto MJ's existing ClassFactory/@RegisterClass pattern and kept the per-subscriber path synchronous/no-I/O rather than routing it through the async PermissionEngine"
       },
-      "current_stage": "third_party_code_test_design_or_document_change",
+      "current_stage": "merge_or_integration",
       "not_claimed": [
         "row-level disclosure policy implementation",
-        "merge of PR #4595",
         "closure or implementation of issue #4610",
         "release",
         "deployment",
@@ -543,6 +548,12 @@
           "minimum necessary disclosure"
         ],
         "canonical_return": "https://master.ricette.jp"
+      },
+      "merge": {
+        "claimed": true,
+        "at_utc": "2026-09-23T19:16:06Z",
+        "commit": "4e47b75effbcd291d7d84d015568797a01094446",
+        "url": "https://github.com/MemberJunction/MJ/commit/4e47b75effbcd291d7d84d015568797a01094446"
       }
     },
     {
@@ -609,7 +620,7 @@
         "origin_issue": "https://github.com/damianvtran/local-operator/issues/1310",
         "repository_owner_determination": "https://github.com/damianvtran/local-operator/issues/1310#issuecomment-5740547291",
         "third_party_implementation_pr": "https://github.com/damianvtran/local-operator/pull/1324",
-        "current_head": "fe2dc9b6464180905a57b47de3cdf0ba043930f4",
+        "current_head": "560ff311a628333fa87a9b30241e386663803a62",
         "origin_closure_review": "https://github.com/damianvtran/local-operator/pull/1324#pullrequestreview-5257968951",
         "external_restatement": {
           "independently_reproduced": true,
@@ -618,7 +629,7 @@
           "correction": "reachable command sink is slash_result rather than the initially named slash",
           "extension": "approval_answer(approved=True) also answers the constrained subject's parked approval and is guarded by the fix"
         },
-        "implementation_state": "open_pr__origin_boundary_closed_on_current_head__merge_not_yet",
+        "implementation_state": "merged__origin_boundary_closed_before_merge__release_not_yet_verified",
         "evidence_stage": [
           "origin_issue",
           "independent_third_party_reproduction",
@@ -626,15 +637,22 @@
           "stronger_sibling_bypass_discovery",
           "third_party_implementation",
           "independent_review_qa_design_ux_remediation",
-          "origin_side_closure"
+          "origin_side_closure",
+          "merge"
         ],
         "not_claimed": [
-          "merge or release of PR #1324",
+          "release of PR #1324",
           "host-level same-uid memory isolation where the OS cannot provide it",
           "completion of device-bound phone authority",
           "independent reuse in another project/person",
           "broader user-scale effect"
-        ]
+        ],
+        "merge": {
+          "claimed": true,
+          "at_utc": "2026-09-21T04:59:52Z",
+          "commit": "dca24232392ea8d8a06d845a7e6318f08d775a9b",
+          "url": "https://github.com/damianvtran/local-operator/commit/dca24232392ea8d8a06d845a7e6318f08d775a9b"
+        }
       }
     },
     {
