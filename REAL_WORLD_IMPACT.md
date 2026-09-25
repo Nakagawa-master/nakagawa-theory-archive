@@ -483,8 +483,9 @@ receiverはこの指摘を独立した設計軸として再説明し、専用PR 
 
 ## 18. PostHog｜反復agentの「要約承認」と、実際に繰り返し実行されるinstructionsを分ける
 
-**対象:** [PostHog/posthog#101991](https://github.com/PostHog/posthog/pull/101991)  
-**現在状態:** open / unmerged
+**起点レビュー対象:** [PostHog/posthog#101991](https://github.com/PostHog/posthog/pull/101991)  
+**現行実装surface:** [PostHog/posthog#106435](https://github.com/PostHog/posthog/pull/106435)  
+**現在状態:** #101991 は2026-09-25に stack 分割のため closed / unmerged。reviewed-instructions UI は replacement stack の #106435（open draft）へ継承
 
 このPRでは、会話から「毎週実行するscout」などの反復agentを作成できます。初期実装では、card上に名前・短い説明・cadence・送信先は表示される一方、実際に毎回実行されるmodel-authored `scout.body` は人間に表示・編集されないままcreate payloadへ入っていました。
 
@@ -501,11 +502,13 @@ approval of hidden recurring instructions
 その後、第三者authorのcommit `244ff417` は、scheduled agentが「user never saw」instructionsから作られていたことをcommit本文で明示し、card上に実際のinstructionsを表示・編集できるfieldを追加しました。create時には、draftされた隠れたbodyではなく、人間が確認・編集した `scoutBody` を送るよう変更され、regression testも追加されています。
 
 - [implementation commit `244ff417`](https://github.com/PostHog/posthog/commit/244ff417b3b5228779a8b904035a881bc05cdff5)
+- [original PR split notice](https://github.com/PostHog/posthog/pull/101991#issuecomment-5826739764)
+- [replacement stack layer #106435](https://github.com/PostHog/posthog/pull/106435)
 
 このcommit本文も `Nakagawa-master` reviewを唯一原因として明示していません。そのため、確認できる範囲は「review後に、指摘された同じ承認境界へ対応する第三者実装が入った」までです。
 
-**公開記録から確認できること:** review → 第三者code / UI / test変更。人間が見るinstructionsと、実際に反復実行へ渡すinstructionsが同じreviewed valueへbindされるようになったこと。  
-**まだ確認できないこと:** merge、release、production deployment、利用者規模、変更の唯一因果。
+**公開記録から確認できること:** review → 第三者code / UI / test変更。人間が見るinstructionsと、実際に反復実行へ渡すinstructionsが同じreviewed valueへbindされるようになったこと。さらに、authorが #101991 を8層stackへ分割した後も、#106435 の公開本文に「drafted instructions を editable field で表示し、userが実際にscoutが実行する内容を承認する」仕様が明記されており、具体的な変更は現行stackへ継承されている。  
+**まだ確認できないこと:** replacement stack #106435 のmerge、release、production deployment、利用者規模、変更の唯一因果。
 
 ---
 
