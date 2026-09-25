@@ -23,6 +23,16 @@
 
 [未来を物語で読む](FUTURE_LINES.md) · [303件をひとつの景色で読む](PANORAMA_STORY.md)
 
+## 文字より動画が楽なら
+
+全部見る必要はありません。まず1本だけで大丈夫です。
+
+- 未来から入る → [AIが支配する未来ではない──3つの未来線分岐](https://www.youtube.com/watch?v=2gWEjEFU1Vg)
+- AIから入る → [「AIは賢くなるのか？」より、誰が問いと選択肢を作るのか](https://www.youtube.com/watch?v=l6c4fIrSViE)
+- 情報から入る → [「分かったつもり」をどう止める？認知防御OS](https://www.youtube.com/watch?v=V4i8rvPK05M)
+
+見終わったら、この24棚へ戻って気になる棚を1つだけ開いてください。
+
 ## 24の棚
 
 ### 1. 人や制度の善意が、なぜ悪い因果へ変わるのか
