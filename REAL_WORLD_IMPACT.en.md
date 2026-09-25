@@ -636,7 +636,7 @@ This page is not asking readers to trust a name or a count. It is an index for c
 
 ---
 
-## 18. Qwen Code | Approval boundary for paid Batch API actions
+## 22. Qwen Code | Approval boundary for paid Batch API actions
 
 **Target:** [QwenLM/qwen-code#12492](https://github.com/QwenLM/qwen-code/pull/12492)  
 **Current state:** open / proposal adopted in implementation commit / PR not yet merged
@@ -654,3 +654,26 @@ The third-party developer then explicitly said the boundary was adopted and impl
 
 **Confirmed by the public record:** independent source-attributed recognition plus implementation of the approval-binding boundary in code and tests.  
 **Not yet confirmed:** PR merge, release, production use, or endorsement of the wider theory system.
+
+
+---
+
+## 23. AI-News | Separate URL count from independent evidence-root count in recurring editorial verification
+
+**Target:** [022740mix-spec/AI-News#124](https://github.com/022740mix-spec/AI-News/issues/124) → [PR #131](https://github.com/022740mix-spec/AI-News/pull/131)  
+**Current state:** explicitly adopted by the receiver / implementation draft in CLAUDE.md / open and unmerged
+
+In issue #124, `Nakagawa-master` proposed separating the number of URLs from the number of independent evidence roots in AI-news verification. The proposal distinguishes primary sources, independent observations, derived/syndicated material and unknown lineage, rather than treating `url_count` as `evidence_root_count`.
+
+- [origin issue #124](https://github.com/022740mix-spec/AI-News/issues/124)
+
+The repository owner later explicitly said the proposal was adopted and distinguished this rule change from an earlier unrelated article update. The response explains that the existing L2/L3 checks verified whether information appeared in a source but did not test whether sources were independent; an audit also found ten articles that had relied on agreement across multiple media outlets as evidence.
+
+- [receiver adoption / rationale](https://github.com/022740mix-spec/AI-News/issues/124#issuecomment-5823549498)
+
+Draft PR #131 implements the distinction in the repository's recurring `CLAUDE.md` editorial-verification rules. It aligns terminology with W3C PROV-O where possible, adds operational cases such as wire-service republication and regulatory filings, and requires draft PRs to record the root breakdown for material claims.
+
+- [implementation draft PR #131](https://github.com/022740mix-spec/AI-News/pull/131)
+
+**Publicly verifiable here:** origin-preserved proposal → explicit receiver adoption and rationale → concrete implementation in a recurring editorial rule draft.  
+**Not established yet:** merge of PR #131, repeated use after merge, effect on error rate, reader scale, independent reuse by another receiver, or endorsement of the wider theory corpus.
