@@ -2,7 +2,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**最終確認: 2026-09-24**
+**最終確認: 2026-09-25**
 
 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）は、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
 
@@ -147,7 +147,7 @@ retrieval処理の途中でtextが保持されていても、upstream document i
 ## 5. MemberJunction｜別のreviewerが同じ問題を自分で検証した例
 
 **対象:** [MemberJunction/MJ#4487](https://github.com/MemberJunction/MJ/pull/4487) / [#4524](https://github.com/MemberJunction/MJ/pull/4524)  
-**現在状態:** 両PRとも open / unmerged
+**現在状態:** #4487 merged（2026-09-24） / #4524 closed unmerged（2026-09-21）
 
 #4487では、`Nakagawa-master` がaliased re-exportされたpublic typeについて、内部declaration名と公開alias名を混同するとunsafe renameにつながり得る点を指摘しました。
 
@@ -167,7 +167,7 @@ retrieval処理の途中でtextが保持されていても、upstream document i
 - [#4524 independent re-verification](https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5252195432)
 
 **公開記録から確認できること:** 別の第三者reviewerによる名前付き確認に加え、author実装とregression tests、#4487でのorigin reviewer closure、#4524での独立再実行検証まで進んだこと。  
-**まだ確認できないこと:** 両PRのmerge、release。
+**まだ確認できないこと:** #4487のrelease / downstream利用、#4524のmerge（closed unmerged）、一般的なAPI互換性原理の知的優先権。
 
 ---
 
@@ -313,18 +313,18 @@ repository ownerはこのissueを独立に再現し、公開コメントで **�
 - [owner reproduction / determination](https://github.com/damianvtran/local-operator/issues/1310#issuecomment-5740547291)
 - [third-party implementation PR #1324](https://github.com/damianvtran/local-operator/pull/1324)
 
-PR #1324はper-session operator capability、connection-bound proof、共通pre-dispatch guard、negative/positive/tightening controlsを実装し、複数の独立review・QA・design・UX roundを通っています。current head `fe2dc9b6` に対して、Nakagawa-masterは原issueの5 acceptance条件を再確認し、元の#1310 boundaryについてorigin-side closureを記録しました。ただしこれはmerge承認ではなく、PRはoperator/product decisionのためopenのままです。
+PR #1324はper-session operator capability、connection-bound proof、共通pre-dispatch guard、negative/positive/tightening controlsを実装し、複数の独立review・QA・design・UX roundを通りました。Nakagawa-masterは原issueの5 acceptance条件を再確認し、元の#1310 boundaryについてorigin-side closureを記録しました。その後PR #1324は2026-09-21にmergeされました（merge commit `dca24232392e`）。
 
 - [origin-side closure review](https://github.com/damianvtran/local-operator/pull/1324#pullrequestreview-5257968951)
 
-**このfollow-upで公開確認できること:** origin issue → third-party independent reproduction → origin diagnosisの修正 → stronger sibling bypassの独立発見 → third-party implementation → multiple independent remediation rounds → origin-side closure。  
-**まだ確認できないこと:** #1324のmerge/release、host OS自体が同uid memory isolationを提供できない環境での保証、phone/device-bound authorityの完成、またはこの境界の別projectへの独立reuse。
+**このfollow-upで公開確認できること:** origin issue → third-party independent reproduction → origin diagnosisの修正 → stronger sibling bypassの独立発見 → third-party implementation → multiple independent remediation rounds → origin-side closure → merge。  
+**まだ確認できないこと:** #1324のrelease、host OS自体が同uid memory isolationを提供できない環境での保証、phone/device-bound authorityの完成、またはこの境界の別projectへの独立reuse。
 
 
 ## 12. MemberJunction｜row内容保護の次に残ったrow identity境界を第二work itemへcarry
 
 **対象:** [MemberJunction/MJ#4595](https://github.com/MemberJunction/MJ/pull/4595) → [issue #4610](https://github.com/MemberJunction/MJ/issues/4610)  
-**現在状態:** PR #4595 open / unmerged、issue #4610 open
+**現在状態:** PR #4595 merged（2026-09-23）、issue #4610 open
 
 PR #4595は、cache-invalidation broadcastでfull row内容をdefaultでは送らないようにしました。その後の `Nakagawa-master` reviewでは、その修正とは別に、`recordData` を消しても他rowのstable primary keyとmutation timingが見えるという残存metadata境界を分離しました。
 
@@ -339,8 +339,8 @@ PR authorはこの二層分解を明示的に採用し、commit `293b9b40` でen
 
 - [#4610 implementation-shape contribution](https://github.com/MemberJunction/MJ/issues/4610#issuecomment-5739586260)
 
-**公開記録から確認できること:** review → 第三者code/test変更 → 第三者による明示的source attribution → より強い境界とregressionを保った第二work item化。  
-**まだ確認できないこと:** row-level policy実装、#4595 merge、#4610 close/merge、release、deployment、実利用規模。
+**公開記録から確認できること:** review → 第三者code/test変更 → 第三者による明示的source attribution → #4595 merge → より強い境界とregressionを保った第二work item化。  
+**まだ確認できないこと:** row-level policy実装、#4610 close/merge、release、deployment、実利用規模。
 
 ---
 
