@@ -63,4 +63,12 @@ AIが一時的な道具ではなく、会社・研究・行政・生活の中で
 - [OD298 Human Entry｜第5論](../../derivatives/298/human-entry.md)
 - [元の6問の物語](../ai-civilization-why-it-matters.md)
 
+
+## 横に読む
+
+このテーマを深く読むだけでなく、**同じ理解粒度のまま別の理論群へ移れます。**
+
+- [24棚で全体像を見る](../WORLD_MAP.md)
+- [OD001–OD303を全部横に眺める](../ALL_303_HORIZONTAL_MAP.md)
+
 Origin / Author: **Nakagawa Master**
