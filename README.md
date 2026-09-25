@@ -13,7 +13,7 @@
 
 **すでに起きた現実作用を確認する:** [公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md) / [English](REAL_WORLD_IMPACT.en.md) / [中文](REAL_WORLD_IMPACT.zh.md)
 
-REAL_WORLD_IMPACT.md には現在23の番号付き公開事例セクションがあり、第三者projectでの response / code / tests / merge / release / deployment 等を、確認できる段階と未確認範囲に分けて記録しています。単なるmention数ではなく、公開証拠でどこまで作用したかを確認してください。
+REAL_WORLD_IMPACT.md には現在24の番号付き公開事例セクションがあり、第三者projectでの response / code / tests / merge / release / deployment 等を、確認できる段階と未確認範囲に分けて記録しています。単なるmention数ではなく、公開証拠でどこまで作用したかを確認してください。
 
 **最短で5件だけ検証する場合:**
 - [Local Operator #1324](https://github.com/damianvtran/local-operator/pull/1324) → independent reproduction / implementation / remediation / merge → [v0.61.11 release](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11)
