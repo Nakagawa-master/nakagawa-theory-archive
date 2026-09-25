@@ -2,7 +2,7 @@
 
 > これは一般読者向けの**非正本・読書ナラティブ**です。303件の理論を一つの新理論へ統合するものではありません。
 
-[24棚の世界地図](WORLD_MAP.md) · [OD001–OD303 全件水平マップ](ALL_303_HORIZONTAL_MAP.md)
+[24棚の世界地図](WORLD_MAP.md) · [OD001–OD303 全件水平マップ](ALL_303_HORIZONTAL_MAP.md) · [未来線から読む](FUTURE_LINES.md)
 
 ## 最初に
 
