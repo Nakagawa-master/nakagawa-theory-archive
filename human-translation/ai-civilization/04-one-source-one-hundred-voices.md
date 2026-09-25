@@ -66,4 +66,12 @@ AI Cも同じ。
 - [OD301 Human Entry｜第8論](../../derivatives/301/human-entry.md)
 - [ニュース10本≠証拠10個](../evidence-roots-story.md)
 
+
+## 横に読む
+
+このテーマを深く読むだけでなく、**同じ理解粒度のまま別の理論群へ移れます。**
+
+- [24棚で全体像を見る](../WORLD_MAP.md)
+- [OD001–OD303を全部横に眺める](../ALL_303_HORIZONTAL_MAP.md)
+
 Origin / Author: **Nakagawa Master**
