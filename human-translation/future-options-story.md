@@ -114,6 +114,14 @@
 - [不可逆点とは？ 成長の裏で「未来の選択肢」が減るとき](https://nakagawamaster.wordpress.com/2026/09/25/irreversible-point-future-options/)
 - [OD297｜未来負債統合理論](../derivatives/297/README.md)
 
+
+## 横に読む
+
+このテーマを深く読むだけでなく、**同じ理解粒度のまま別の理論群へ移れます。**
+
+- [24棚で全体像を見る](WORLD_MAP.md)
+- [OD001–OD303を全部横に眺める](ALL_303_HORIZONTAL_MAP.md)
+
 Origin / Author: **Nakagawa Master** (pen-name of Keisuke Nakagawa)
 
 このページはAI支援で作成された一般向け翻訳であり、canonical theoryそのものではありません。
