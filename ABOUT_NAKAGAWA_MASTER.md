@@ -14,6 +14,8 @@
 
 公開GitHubでは、その具体的な判断が第三者のcode / tests / designへ変換・mergeされた事例、production deploymentまで確認された事例、別surfaceで再利用された事例まで、[Real-World Impact](REAL_WORLD_IMPACT.md)から直接検証できます。
 
+**理論群の全体像を先に知りたい場合:** [24棚で横に読む世界地図](human-translation/WORLD_MAP.md) から、深掘りせず同じ理解粒度でOD001–OD303の全景をたどれます。
+
 ## 30秒で分かること
 
 - **中川マスター（Nakagawa Master）**は、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
