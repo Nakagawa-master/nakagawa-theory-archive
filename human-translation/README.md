@@ -83,7 +83,7 @@ Layer 4  高密度source: canonical Parent / AI Index / Ledger
 
 ### 仕事・会社・人生｜今日の成功が明日の自由を減らす
 
-- [今日うまくいっていることが、明日の自由を減らすことがある](future-options-story.md)
+- [不可逆点とは？ 今日の成功が、明日の自由を減らすことがある](future-options-story.md)
 
 この入口から、必要に応じて人類子孫型AI文明論・第5〜10論のHuman Entry、公式派生物、canonical Parentへ進めます。
 
