@@ -685,6 +685,12 @@ receiver commit `dfd4588d` は、export aliasとsource declaration nameの両方
 - [adoption response](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5818159716)
 - [implementation commit `3d06e1ad8e`](https://github.com/QwenLM/qwen-code/commit/3d06e1ad8e749c647a2eb5d447b867fc50955a13)
 
+2026-09-26 JST、repository maintainerはfollow-up後のhead `8560fe95`を実build / TUI / DashScopeで検証し、実課金Batch 4件の配達、27/27 E2E、承認とsnapshot再照合の境界が保たれることを報告しました。さらに未解決指摘を再現し、R3-7 / R3-3 / R3-10の3点はmerge前修正が必要と判断。証拠tree内の提案パッチは追加テストでRED→GREENですが、**このコメント時点ではPR headに未反映・未merge**です。残りの指摘は後続issue候補として区別されています。
+
+- [maintainer verification at head `8560fe95`](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5835289329)
+- [reproduction and patch evidence](https://github.com/wenshao/qwen-code/tree/357a401455b94feb08aee2774f3d6e4b1605a532/pr-12492)
+
+
 第三者developerはその後、この境界を「Adopted」と明示し、`--dry-run` preview、snapshot digest、`--expect <digest>`による実行直前の再照合、preview後のinstructions / item set / output limit / source file変更を拒否する回帰テストを実装しました。
 
 **確認できること:** 出所付きの第三者認識に加え、提案された承認binding境界がcode / testsへ実装されたこと。  
