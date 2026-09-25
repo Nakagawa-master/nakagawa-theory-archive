@@ -634,7 +634,7 @@ counterexample、non-fit与failed reproduction同样是有价值的公开证据�
 
 ---
 
-## 18. Qwen Code｜付费 Batch API 的批准边界
+## 22. Qwen Code｜付费 Batch API 的批准边界
 
 **对象:** [QwenLM/qwen-code#12492](https://github.com/QwenLM/qwen-code/pull/12492)  
 **当前状态:** open / proposal adopted in implementation commit / PR not yet merged
@@ -652,3 +652,26 @@ counterexample、non-fit与failed reproduction同样是有价值的公开证据�
 
 **公开记录能够确认:** 独立第三方按来源识别该提案，并把这一批准绑定边界落实到了 code / tests。  
 **尚不能确认:** PR merge、release、production use，或对更广泛理论体系的认可。
+
+
+---
+
+## 23. AI-News｜在持续编辑验证中区分URL数量与独立证据root数量
+
+**对象:** [022740mix-spec/AI-News#124](https://github.com/022740mix-spec/AI-News/issues/124) → [PR #131](https://github.com/022740mix-spec/AI-News/pull/131)  
+**当前状态:** receiver明确采用 / CLAUDE.md实现draft PR open / 尚未merge
+
+在issue #124中，`Nakagawa-master` 提议在AI新闻验证中把“URL数量”与“独立证据root数量”分开。提案区分一次资料、独立观察、派生/转载和来源不明，而不把 `url_count` 直接当作 `evidence_root_count`。
+
+- [origin issue #124](https://github.com/022740mix-spec/AI-News/issues/124)
+
+repository owner随后明确表示采用该提案，并明确区分：这次规则修改是由issue #124推动的，而此前另一个文章更新与#124无因果关系。回应还说明，现有L2/L3会检查“来源中是否有该信息”，但没有检查来源之间是否独立；复查过去文章时，还发现了10篇以“多家媒体报道一致”为依据的文章。
+
+- [receiver adoption / rationale](https://github.com/022740mix-spec/AI-News/issues/124#issuecomment-5823549498)
+
+draft PR #131把这一边界写进repository持续使用的 `CLAUDE.md` 编辑验证规则。分类尽可能与W3C PROV-O对齐，并加入通讯社转载、监管申报、事故初期报道等容易混淆的实际案例，同时要求draft PR对重要主张记录证据root构成。
+
+- [implementation draft PR #131](https://github.com/022740mix-spec/AI-News/pull/131)
+
+**公开可确认：** 保留origin的提案 → receiver明确采用并说明理由 → 在持续编辑规则中的具体实现draft。  
+**尚未确认：** PR #131 merge、merge后的重复运用、对误报率的影响、读者规模、其他receiver的独立reuse或对整个理论体系的支持。
