@@ -677,3 +677,40 @@ Draft PR #131 implements the distinction in the repository's recurring `CLAUDE.m
 
 **Publicly verifiable here:** origin-preserved proposal → explicit receiver adoption and rationale → concrete implementation in a recurring editorial rule draft.  
 **Not established yet:** merge of PR #131, repeated use after merge, effect on error rate, reader scale, independent reuse by another receiver, or endorsement of the wider theory corpus.
+
+
+---
+
+## 24. LlamaIndex | Forward-progress overlap rules and default-activation impact implemented in a third-party PR
+
+**Target:** [run-llama/llama_index#23027](https://github.com/run-llama/llama_index/issues/23027) → [PR #23029](https://github.com/run-llama/llama_index/pull/23029)  
+**Current state:** third-party code/tests/docs changes present; PR open and unmerged; repository CI green is not established
+
+In issue #23027, `Nakagawa-master` proposed three explicit boundaries for CodeSplitter line overlap:
+
+- reject configurations unless `0 <= chunk_lines_overlap < chunk_lines`;
+- treat `chunk_lines` as a cap on the final emitted chunk including overlap;
+- if the historically inert default `chunk_lines=40` becomes active, document the migration/re-index implications because chunk boundaries, node ids, embeddings and persisted indexes can change.
+
+The issue reporter explicitly agreed, writing **“These are the right boundaries to pin down.”**
+
+- [issue discussion](https://github.com/run-llama/llama_index/issues/23027)
+
+On PR #23029, `Nakagawa-master` then pointed out that the candidate still did not reject `overlap >= chunk_lines` and that activating the default was observable migration behavior.
+
+- [Nakagawa-master PR comment](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5652061794)
+
+The PR author publicly replied **“Addressed the outstanding points”** and identified commits `ac76ed346` and `ea92fff99`.
+
+- [author response](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5683015010)
+- [implementation commit `ac76ed346`](https://github.com/run-llama/llama_index/commit/ac76ed3462de21e85405abbbf3362299852aabcd)
+- [documentation commit `ea92fff99`](https://github.com/run-llama/llama_index/commit/ea92fff99dba3b990dff4a0cb28e5ce1ba712651)
+
+The changes add cross-field validation, equality/greater-than negative tests, an overlap-inclusive line cap, source-separator preservation including CRLF, and regression coverage for the active default. The documentation now warns that activating the line cap can change chunk boundaries and may require regenerating indexed nodes and embeddings.
+
+A later `Nakagawa-master` re-check recorded no remaining blocker within the earlier review scope, while explicitly refusing to treat the repository's `action_required` workflow state as green CI evidence.
+
+- [focused re-check](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5683971610)
+
+**Publicly verifiable here:** public boundary proposal/review → explicit reporter agreement → third-party author explicitly says the outstanding points were addressed → code/tests/docs changes → focused re-check.  
+**Not established yet:** PR merge, green repository CI, release, production use, user-scale effect, intellectual priority over the general principle, or endorsement of the wider theory corpus.
