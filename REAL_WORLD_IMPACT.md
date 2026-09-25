@@ -43,6 +43,13 @@
 
 以下では、公開記録で確認できる範囲だけを記載します。
 
+### 現在の公開証拠スナップショット
+
+- このページには **22の番号付き外部作用事例**を収録しています。
+- GitHub全体の `Nakagawa-master` comment検索では多数の候補surfaceが返りますが、検索hit自体は第三者反応・採用・実装として数えません。
+- 本ページへ収録するのは、第三者response、独立確認、code / tests / document change、merge、release、deployment等を公開リンクで段階別に確認できる事例です。
+- したがって「mentionが多い」ことではなく、**第三者が何を変え、その変更がどこまで進んだか**を主要証拠として扱います。
+
 ---
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
@@ -659,7 +666,7 @@ receiver commit `dfd4588d` は、export aliasとsource declaration nameの両方
 
 ---
 
-## 18. Qwen Code｜有料Batch APIの承認境界
+## 22. Qwen Code｜有料Batch APIの承認境界
 
 **対象:** [QwenLM/qwen-code#12492](https://github.com/QwenLM/qwen-code/pull/12492)  
 **現在状態:** open / proposal adopted in implementation commit / PR not yet merged
