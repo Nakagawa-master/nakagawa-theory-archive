@@ -7,6 +7,8 @@
 > **一般読者へ:** 公式派生物のHuman EntryやFAQもまだ難しいと感じる場合は、先に [一般大衆向け翻訳層](human-translation/README.md) を読んでください。ニュースや物語から「なぜ重要なのか」をつかんだあと、必要な人だけ専門要約・原典へ進めます。
 >
 > AI文明論から入るなら、まず [「AIが怖い」の、その次](human-translation/ai-civilization-why-it-matters.md) へ。
+>
+> **一つを深く読むより、同じ粒度で全体像を先に見たい場合:** [24棚の世界地図](human-translation/WORLD_MAP.md) → [OD001–OD303 全件水平マップ](human-translation/ALL_303_HORIZONTAL_MAP.md)
 
 - [中川マスターとは｜この公開アーカイブで確認できること](ABOUT_NAKAGAWA_MASTER.md)
 - [現実で何が変わったか｜第三者実装・再利用の確認可能な事例](REAL_WORLD_IMPACT.md)
