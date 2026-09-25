@@ -383,6 +383,12 @@ rollback costが上がり続ける前に観測窓へ入る。
 [AI文明を6つの身近な問いから読む](../ai-civilization/README.md)  
 [24棚の世界地図](../WORLD_MAP.md)
 
+## 反証・別分岐を残す
+
+この因果鎖のどの矢印が最も弱いと思いますか。
+
+賛同は不要です。「ここは成立しない」「この条件なら別の未来になる」「現実に似た例がある」のどれか一つで十分です。短い反例・別分岐はBlueskyの引用・返信で、再現可能な例や出典がある場合は [独立検証・別文脈再利用 registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) へ残せます。
+
 ## 境界
 
 - AIが必ず人類を滅ぼすとは主張しません。
