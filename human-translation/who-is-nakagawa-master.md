@@ -73,6 +73,18 @@ AIが3つの案を出して、人間が1つ選んだ。
 
 → [第三者の返信と変更を読む](https://github.com/kishibashi3/publications/pull/57)
 
+もう一つ、AIニュースサイトに
+
+> **URLの本数と、独立した証拠の本数は別では？**
+
+と提案した例があります。
+
+運営側は「採用します」と返し、自分たちの過去記事を点検。
+検証手順に **「数えるのはURLではなく、独立した根」** という規則を追加し、PRはmergeされました。
+
+→ [採用理由を読む](https://github.com/022740mix-spec/AI-News/issues/124#issuecomment-5823549498)  
+→ [mergeされた変更を見る](https://github.com/022740mix-spec/AI-News/pull/131)
+
 ほかにも、具体的な指摘が第三者のコード・テスト・文章・運用変更につながった事例を公開GitHubで確認できます。
 
 → [Real-World Impact](../REAL_WORLD_IMPACT.md)
