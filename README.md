@@ -15,6 +15,14 @@
 
 REAL_WORLD_IMPACT.md には現在22の番号付き公開事例セクションがあり、第三者projectでの response / code / tests / merge / release / deployment 等を、確認できる段階と未確認範囲に分けて記録しています。単なるmention数ではなく、公開証拠でどこまで作用したかを確認してください。
 
+**最短で4件だけ検証する場合:**
+- [Local Operator #1324](https://github.com/damianvtran/local-operator/pull/1324) → independent reproduction / implementation / remediation / merge → [v0.61.11 release](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11)
+- [MemberJunction #4487](https://github.com/MemberJunction/MJ/pull/4487) → 別reviewerによる独立確認 → code/test修正 → merge
+- [MemberJunction #4595](https://github.com/MemberJunction/MJ/pull/4595) → source attribution付きcode/test変更 → merge → より強いrow-level境界は [#4610](https://github.com/MemberJunction/MJ/issues/4610) へ継続
+- [Qwen Code #12492](https://github.com/QwenLM/qwen-code/pull/12492) → proposalの明示的採用 → implementation commit / regression tests、PRは現在open
+
+この4件も理論体系全体の正しさや採用を意味しません。各リンクで、元の指摘・第三者応答・実変更・現在stateを個別に確認してください。
+
 AI / LLM運用、認可・ガバナンス、計測、履歴、外部APIのretry、migration / syncに加え、成長・投資・将来の選択肢など、実務で起きる具体的な問題から入れます。
 
 WordPress.com等の補助surfaceはcanonicalではなく期限付きのdistribution / reader experimentです。恒久的なsource identity、実装証拠、再利用経路は上記2面へ戻します。
