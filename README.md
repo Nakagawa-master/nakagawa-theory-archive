@@ -27,16 +27,18 @@
 
 **すでに起きた現実作用を確認する:** [公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md) / [English](REAL_WORLD_IMPACT.en.md) / [中文](REAL_WORLD_IMPACT.zh.md)
 
-REAL_WORLD_IMPACT.md には現在24の番号付き公開事例セクションがあり、第三者projectでの response / code / tests / merge / release / deployment 等を、確認できる段階と未確認範囲に分けて記録しています。単なるmention数ではなく、公開証拠でどこまで作用したかを確認してください。
+REAL_WORLD_IMPACT.md には現在25の番号付き公開事例セクションがあり、第三者projectでの response / code / tests / merge / release / deployment 等を、確認できる段階と未確認範囲に分けて記録しています。単なるmention数ではなく、公開証拠でどこまで作用したかを確認してください。
 
 **最短で5件だけ検証する場合:**
 - [Local Operator #1324](https://github.com/damianvtran/local-operator/pull/1324) → independent reproduction / implementation / remediation / merge → [v0.61.11 release](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11)
-- [AI-News #124](https://github.com/022740mix-spec/AI-News/issues/124) → receiverが明示採用 → [draft PR #131](https://github.com/022740mix-spec/AI-News/pull/131) で継続編集ルールへ実装中
+- [AI-News #124](https://github.com/022740mix-spec/AI-News/issues/124) → receiverが明示採用 → [merged PR #131](https://github.com/022740mix-spec/AI-News/pull/131) で継続編集ルールへ実装
 - [MemberJunction #4487](https://github.com/MemberJunction/MJ/pull/4487) → 別reviewerによる独立確認 → code/test修正 → merge
 - [MemberJunction #4595](https://github.com/MemberJunction/MJ/pull/4595) → source attribution付きcode/test変更 → merge → より強いrow-level境界は [#4610](https://github.com/MemberJunction/MJ/issues/4610) へ継続
 - [Qwen Code #12492](https://github.com/QwenLM/qwen-code/pull/12492) → proposalの明示的採用 → implementation commit / regression tests、PRは現在open
 
 この5件も理論体系全体の正しさや採用を意味しません。各リンクで、元の指摘・第三者応答・実変更・現在stateを個別に確認してください。
+
+このアーカイブを後で参照したい場合は [⭐ Star](https://github.com/Nakagawa-master/nakagawa-theory-archive/stargazers) で保存できます。自分で検証・派生実装を始める場合は [Fork](https://github.com/Nakagawa-master/nakagawa-theory-archive/fork) を利用し、第三者事例・反証・再利用の報告は [issue #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) へお寄せください。
 
 AI / LLM運用、認可・ガバナンス、計測、履歴、外部APIのretry、migration / syncに加え、成長・投資・将来の選択肢など、実務で起きる具体的な問題から入れます。
 
