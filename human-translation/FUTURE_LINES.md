@@ -16,6 +16,8 @@
 
 未来の予言ではありません。起こる確率を断定するページでもありません。
 
+[映像で見る：3つの未来線分岐](https://www.youtube.com/watch?v=2gWEjEFU1Vg)
+
 [24棚をぶらぶら見る](WORLD_MAP.md) · [303件をひとつの景色で読む](PANORAMA_STORY.md)
 
 ---
@@ -69,6 +71,8 @@ AIが3校を選び、比較表まで作ってくれた。
 のだとしたら？
 
 **選んだのは自分でも、選択肢を作ったのは自分ではない**かもしれません。
+
+→ [映像から入る：AIが選択肢そのものを作る](https://www.youtube.com/watch?v=HgleXQWSG0c)
 
 → [物語を読む：人間がOKを押していても、人間が決めていない？](future-lines/02-human-approval-without-human-decision.md)
 
