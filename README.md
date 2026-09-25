@@ -8,6 +8,8 @@
 
 **一般の人はまずここから:** [Mass Human Translation Layer｜難しい理論を、ニュース・物語・日常語から理解する](human-translation/README.md)
 
+**全部を同じ粒度で横に見たい:** [24棚の世界地図](human-translation/WORLD_MAP.md) | [OD001–OD303 全件水平マップ](human-translation/ALL_303_HORIZONTAL_MAP.md)
+
 **AI文明論の最初の1本:** [AIが怖いってニュース、結局なにが問題なの？ そして、その次は？](human-translation/ai-civilization-why-it-matters.md)
 
 人物 / Origin: [日本語](ABOUT_NAKAGAWA_MASTER.md) | [English](ABOUT_NAKAGAWA_MASTER.en.md) | [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
