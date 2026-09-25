@@ -45,7 +45,7 @@
 
 ### 現在の公開証拠スナップショット
 
-- このページには **24の番号付き外部作用事例**を収録しています。
+- このページには **25の番号付き外部作用事例**を収録しています。
 - GitHub全体の `Nakagawa-master` comment検索では多数の候補surfaceが返りますが、検索hit自体は第三者反応・採用・実装として数えません。
 - 本ページへ収録するのは、第三者response、独立確認、code / tests / document change、merge、release、deployment等を公開リンクで段階別に確認できる事例です。
 - したがって「mentionが多い」ことではなく、**第三者が何を変え、その変更がどこまで進んだか**を主要証拠として扱います。
@@ -749,3 +749,46 @@ PR authorは公開返信で **“Addressed the outstanding points”** と述べ
 
 **公開記録から確認できること:** public boundary proposal / review → reporterの明示的同意 → third-party authorがNakagawaの指摘後にoutstanding pointsをaddressしたと明示 → code / tests / docs変更 → focused re-check。  
 **まだ確認できないこと:** PR merge、repository CI green、release、production use、利用者規模、一般原理の知的優先権、理論体系全体への支持。
+
+
+---
+
+## 25. Codex Autonomy Runner｜失敗しただけでは「境界を試した証拠」にならない
+
+**対象:** [Innlab-idi/codex-autonomy-runner#59](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59) → [PR #61 merge commit](https://github.com/Innlab-idi/codex-autonomy-runner/commit/aade543103ae7031edcd7a420274685b922ed7b0)  
+**現在状態:** receiver explicit restatement → Research Checkpoint governance adopted → merged into `AGENTS.md`
+
+`Nakagawa-master` の公開コメントは、sandbox / authority-boundary probeについて、
+
+```text
+transport/helper invocation succeeded
+!=
+controlled child operation began
+!=
+target boundary was exercised
+!=
+boundary passed
+```
+
+を分離し、**失敗した操作を「狙った境界が実際に試された証拠」へ昇格させない**ことを提案しました。
+
+- [Nakagawa-master comment](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5775879719)
+
+receiver `Innlab-idi` は後に、現在の実装が実質的に同じevidence-validity ruleへ収束していると説明し、上の区別を **“a useful general invariant”** と呼び、今後のprobe / WorkerExecutorでも明示的に保持する意向を述べています。また、**“Your comment also prompted a broader review on our side.”** として、runtime / external-security semanticsが不確実な場合のResearch Checkpointを工程へ追加すると説明しました。
+
+- [receiver restatement and adoption rationale](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5821543543)
+
+その後、consumer側のgovernance同期PR #61がmergeされ、`AGENTS.md` へ次の規則が入りました。
+
+> A failed operation is not positive evidence that the intended boundary was exercised unless execution is shown to have reached that boundary.
+
+merge commitは `aade543103ae7031edcd7a420274685b922ed7b0` です。Research Checkpointも同じblockへ追加されています。
+
+- [merged governance commit `aade543...`](https://github.com/Innlab-idi/codex-autonomy-runner/commit/aade543103ae7031edcd7a420274685b922ed7b0)
+
+receiverはさらにprior work / papers / implementationsの参照を求めたため、SLSA / in-toto、Capsicum、Confused Deputy、Cedarを「隣接先行研究」として返答しました。この返答自体は新しい外部作用として数えません。receiver側から追加の反応・採用が返った場合にのみ別途評価します。
+
+- [bounded references response](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5834071297)
+
+**公開記録から確認できること:** origin comment → receiverによる一般不変条件としての明示的再叙述 → commentがbroader reviewを促したとのreceiver説明 → Research Checkpointと同じevidence-validity ruleがconsumer `AGENTS.md` へmerge。  
+**まだ確認できないこと:** WorkerExecutor全体への実装完了、実運用での有効性、一般原理の知的優先権、理論体系全体への支持。
