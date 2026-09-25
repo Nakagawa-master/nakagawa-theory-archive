@@ -2,7 +2,7 @@
 
 Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**Last checked: 2026-09-24**
+**Last checked: 2026-09-25**
 
 Nakagawa Master is the pen name of Keisuke Nakagawa. On social media, the name “マスター” (“Master”) is also used; some external posts use “MasterJP.”
 
@@ -123,7 +123,7 @@ The third-party PR explicitly cites the `Nakagawa-master` compatibility contract
 ## 5. MemberJunction | Another reviewer independently checked the same issue
 
 **Surfaces:** [MemberJunction/MJ#4487](https://github.com/MemberJunction/MJ/pull/4487) / [#4524](https://github.com/MemberJunction/MJ/pull/4524)  
-**Current state:** both open / unmerged
+**Current state:** #4487 merged on 2026-09-24 / #4524 closed unmerged on 2026-09-21
 
 On #4487, a `Nakagawa-master` review identified an aliased re-export compatibility hole.
 
@@ -143,7 +143,7 @@ The authors later implemented the relevant fixes. On #4487, named re-exports now
 - [#4524 independent re-verification](https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5252195432)
 
 **Publicly verifiable here:** named independent confirmation followed by author implementation/regressions, origin-reviewer closure on #4487, and independent execution re-verification on #4524.  
-**Not established here:** merge or release of either PR.
+**Not established here:** release/downstream use of #4487, merge of #4524 (closed unmerged), or intellectual priority for the general API-compatibility principle.
 
 ---
 
@@ -281,18 +281,18 @@ The repository owner independently reproduced the issue and publicly recorded **
 - [owner reproduction / determination](https://github.com/damianvtran/local-operator/issues/1310#issuecomment-5740547291)
 - [third-party implementation PR #1324](https://github.com/damianvtran/local-operator/pull/1324)
 
-PR #1324 implements a per-session operator capability, connection-bound proofs, a common pre-dispatch guard, and explicit negative, positive, and tightening controls. It has also gone through multiple independent review, QA, design, and UX remediation rounds. On current head `fe2dc9b6`, Nakagawa-master re-checked the five acceptance conditions from the origin issue and recorded origin-side closure of the original #1310 boundary. That review is not a merge recommendation; the PR remains open for the operator/product decision documented by the repository.
+PR #1324 implements a per-session operator capability, connection-bound proofs, a common pre-dispatch guard, and explicit negative, positive, and tightening controls. It went through multiple independent review, QA, design, and UX remediation rounds. Nakagawa-master re-checked the five acceptance conditions from the origin issue and recorded origin-side closure of the original #1310 boundary. PR #1324 then merged on 2026-09-21 (merge commit `dca24232392e`).
 
 - [origin-side closure review](https://github.com/damianvtran/local-operator/pull/1324#pullrequestreview-5257968951)
 
-**Publicly verifiable in this follow-up:** origin issue → independent third-party reproduction → correction of the origin diagnosis → independent discovery of a stronger sibling bypass → third-party implementation → multiple independent remediation rounds → origin-side closure.  
-**Not established yet:** merge/release of #1324, a guarantee on host configurations where the OS itself cannot isolate same-uid memory, completion of device-bound phone authority, or independent reuse of this boundary in another project.
+**Publicly verifiable in this follow-up:** origin issue → independent third-party reproduction → correction of the origin diagnosis → independent discovery of a stronger sibling bypass → third-party implementation → multiple independent remediation rounds → origin-side closure → merge.  
+**Not established yet:** release of #1324, a guarantee on host configurations where the OS itself cannot isolate same-uid memory, completion of device-bound phone authority, or independent reuse of this boundary in another project.
 
 
 ## 12. MemberJunction | Row contents protected, then the remaining row-identity boundary carried into a second work item
 
 **Surface:** [MemberJunction/MJ#4595](https://github.com/MemberJunction/MJ/pull/4595) → [issue #4610](https://github.com/MemberJunction/MJ/issues/4610)  
-**Current state:** PR #4595 open / unmerged; issue #4610 open
+**Current state:** PR #4595 merged on 2026-09-23; issue #4610 open
 
 PR #4595 stopped full row contents from riding an unfiltered cache-invalidation broadcast by default. A later `Nakagawa-master` review separated that fix from a remaining metadata boundary: even without `recordData`, a session could still learn another row's stable primary key and mutation timing.
 
@@ -307,8 +307,8 @@ A later public contribution on #4610 mapped the follow-up onto MemberJunction's 
 
 - [implementation-shape contribution on #4610](https://github.com/MemberJunction/MJ/issues/4610#issuecomment-5739586260)
 
-**Publicly verifiable here:** review → third-party code/test change → third-party explicit source attribution → second work item carrying the stronger boundary and regression.  
-**Not established here:** row-level policy implementation, merge of #4595, merge/closure of #4610, release, deployment, or user-scale impact.
+**Publicly verifiable here:** review → third-party code/test change → third-party explicit source attribution → #4595 merge → second work item carrying the stronger boundary and regression.  
+**Not established here:** row-level policy implementation, merge/closure of #4610, release, deployment, or user-scale impact.
 
 ---
 
