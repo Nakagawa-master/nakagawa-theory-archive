@@ -450,8 +450,9 @@ receiver把这一点重新解释为正文缺失的独立设计轴，并建立PR 
 ---
 ## 18. PostHog｜把反复agent的批准绑定到人类实际看过的instructions
 
-**对象：** [PostHog/posthog#101991](https://github.com/PostHog/posthog/pull/101991)  
-**当前状态：** open / unmerged
+**起点review对象：** [PostHog/posthog#101991](https://github.com/PostHog/posthog/pull/101991)  
+**当前实现surface：** [PostHog/posthog#106435](https://github.com/PostHog/posthog/pull/106435)  
+**当前状态：** #101991 于2026-09-25因拆分stack而 closed / unmerged；reviewed-instructions UI 已延续到 replacement stack #106435（open draft）
 
 该PR可以把一次对话变成每周运行等反复scout。较早实现中，card会显示名称、短说明、cadence和destination，但每次schedule真正执行的model-authored `scout.body` 在create之前并不会展示给人，也不能编辑。
 
@@ -468,11 +469,13 @@ approval of hidden recurring instructions
 之后的第三方commit `244ff417` 明确写道，scheduled agent此前是从“user never saw”的instructions创建的。该commit在card中加入可编辑的instructions field，create时使用人类实际review / edit后的 `scoutBody`，并加入regression test保证edited value真正进入creation input。
 
 - [implementation commit `244ff417`](https://github.com/PostHog/posthog/commit/244ff417b3b5228779a8b904035a881bc05cdff5)
+- [original PR split notice](https://github.com/PostHog/posthog/pull/101991#issuecomment-5826739764)
+- [replacement stack layer #106435](https://github.com/PostHog/posthog/pull/106435)
 
 该commit没有把 `Nakagawa-master` review写成唯一原因。因此可确认的范围是：review之后，出现了与所指出批准边界相匹配的第三方实现变化。
 
-**公开可确认：** review → 第三方code / UI / test变化；人类看到的instructions现在与创建反复agent时使用的value绑定。  
-**尚未确认：** merge、release、production deployment、用户规模、唯一因果。
+**公开可确认：** review → 第三方code / UI / test变化；人类看到的instructions现在与创建反复agent时使用的value绑定。原PR被拆成8层stack后，#106435 的公开说明仍明确写着：drafted instructions 会在可编辑field中展示，让user批准实际将运行的scout内容，因此具体机制已延续到当前stack。  
+**尚未确认：** replacement stack #106435 的merge、release、production deployment、用户规模、唯一因果。
 
 ---
 
