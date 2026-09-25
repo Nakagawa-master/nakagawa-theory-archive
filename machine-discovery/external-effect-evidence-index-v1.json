@@ -1098,15 +1098,21 @@
       },
       "implementation": {
         "verified": true,
-        "pull_request": "https://github.com/PostHog/posthog/pull/101991",
-        "state": "open_unmerged",
+        "pull_request": "https://github.com/PostHog/posthog/pull/106435",
+        "state": "replacement_stack_open_draft",
         "commit": "244ff417b3b5228779a8b904035a881bc05cdff5",
         "mechanisms": [
           "show the actual recurring instructions to the human",
           "allow editing the instructions before creation",
           "bind the create payload to the human-reviewed scoutBody",
           "add regression coverage"
-        ]
+        ],
+        "original_pull_request": "https://github.com/PostHog/posthog/pull/101991",
+        "continuity_evidence": [
+          "https://github.com/PostHog/posthog/pull/101991#issuecomment-5826739764",
+          "https://github.com/PostHog/posthog/pull/106435"
+        ],
+        "continuity_note": "The original PR was closed only after an eight-layer stack split. Replacement layer #106435 explicitly retains editable drafted scout instructions so the user approves what the scout will run."
       },
       "attribution_limit": "The implementation commit does not identify Nakagawa-master as the unique cause.",
       "current_stage": "third_party_code_test_design_or_document_change",
