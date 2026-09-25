@@ -18,7 +18,7 @@
 
 - **中川マスター（Nakagawa Master）**は、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
 - このリポジトリでは、中川マスターを収録された公開理論群の **Origin / Author** として扱います。
-- 公開アーカイブには現在 `OD001`–`OD301` の公式派生物があります。301は理論数ではなく、公開されている公式派生物の件数です。
+- 公開アーカイブには現在 `OD001`–`OD303` の公式派生物があります。301は理論数ではなく、公開されている公式派生物の件数です。
 - 対象領域はAI、組織、事業、市場、制度、未来、文明、起源・責任などにまたがります。
 - 公開原典、公式派生物、人間向け入口、FAQ、AI索引、機械可読情報、来歴情報を分け、短い要約だけが独立した正本にならないようにしています。
 - 公開GitHub上では、中川マスター名義で提示した具体的な設計境界が、第三者プロジェクトで明示的に採用され、コード・テスト実装とmergeへ進んだ確認可能な例があります。
@@ -141,7 +141,7 @@ AIが今動いていることと、次の時点にも組織的に継続できる
 - [公開対話入口｜実際の問題から理論を探す](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
-- [OD001–OD301 全件入口](derivatives/README.md)
+- [OD001–OD303 全件入口](derivatives/README.md)
 
 ## AI・検索システム向け
 
