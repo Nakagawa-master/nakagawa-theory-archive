@@ -160,5 +160,11 @@
       "added_emphasis": "Approval history is not live authority by default; exact material action snapshot can be bound and revalidated immediately before execution.",
       "not_equivalent": "TOCTOU is broader than human-approval semantics; preprints are not peer-reviewed."
     }
-  ]
+  ],
+  "resources": {
+    "bibliography": "../research-positioning/references.bib",
+    "citation_metadata": "../CITATION.cff",
+    "scholarly_metadata": "scholarly-metadata-v1.jsonld",
+    "corrections_prior_work_counterexamples": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/410"
+  }
 }
