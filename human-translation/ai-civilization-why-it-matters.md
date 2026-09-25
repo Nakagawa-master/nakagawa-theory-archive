@@ -208,6 +208,15 @@ Bも同じ結論でした。
 
 ---
 
+## 6つを一話ずつ読む
+
+- [1｜AIをアップデートしたら、「同じAI」は続いているの？](ai-civilization/01-tomorrow-same-ai.md)
+- [2｜AIが「消さないで」と言ったら、どうすればいい？](ai-civilization/02-dont-delete-me.md)
+- [3｜「間違いでした」で終わっていいの？](ai-civilization/03-sorry-is-not-repair.md)
+- [4｜AIが100回同じことを言ったら、本当になる？](ai-civilization/04-one-source-one-hundred-voices.md)
+- [5｜自分を守るほど、相手も怖くなることがある](ai-civilization/05-defense-creates-defense.md)
+- [6｜AIを別のAIにチェックさせれば安心？](ai-civilization/06-ai-audits-ai.md)
+
 ## ここまでを一言でいうと
 
 今のニュースでは、
