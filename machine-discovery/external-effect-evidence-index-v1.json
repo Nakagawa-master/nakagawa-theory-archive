@@ -926,6 +926,54 @@
         ],
         "canonical_return": "https://master.ricette.jp"
       }
+    },
+    {
+      "case_id": "llamaindex-codesplitter-overlap-forward-progress",
+      "topic": "line-overlap forward progress, final emitted cap semantics, and migration impact of activating an inert default",
+      "external_repository": "run-llama/llama_index",
+      "origin_action": {
+        "type": "issue_and_pr_comment",
+        "issue_url": "https://github.com/run-llama/llama_index/issues/23027",
+        "pr_comment_url": "https://github.com/run-llama/llama_index/pull/23029#issuecomment-5652061794",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action"
+      },
+      "third_party_response": {
+        "actor": "saichowdary007",
+        "url": "https://github.com/run-llama/llama_index/pull/23029#issuecomment-5683015010",
+        "relationship": "PR author explicitly states the outstanding points were addressed and names the implementation/documentation commits"
+      },
+      "implementation": {
+        "verified": true,
+        "pull_request": "https://github.com/run-llama/llama_index/pull/23029",
+        "state": "open_unmerged",
+        "commits": [
+          "ac76ed3462de21e85405abbbf3362299852aabcd",
+          "ea92fff99dba3b990dff4a0cb28e5ce1ba712651"
+        ],
+        "mechanisms": [
+          "reject overlap configurations unless 0 <= chunk_lines_overlap < chunk_lines",
+          "negative tests for overlap equality and greater-than cases",
+          "count overlap within the final emitted chunk line cap",
+          "preserve original source separators including CRLF",
+          "pin default line-limit behavior",
+          "document migration/re-index implications of activating the historically inert default"
+        ]
+      },
+      "origin_recheck": {
+        "url": "https://github.com/run-llama/llama_index/pull/23029#issuecomment-5683971610",
+        "result": "no remaining blocker within the earlier review scope; repository CI green explicitly not claimed"
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "not_claimed": [
+        "pull request merge",
+        "green repository CI",
+        "release",
+        "production use",
+        "user-scale effect",
+        "intellectual priority over the general principle",
+        "whole-theory endorsement"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
