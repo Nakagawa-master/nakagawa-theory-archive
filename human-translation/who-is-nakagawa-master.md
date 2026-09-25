@@ -85,4 +85,12 @@ AI、組織、事業、制度、未来などについて、
 - 「世界唯一」「誰も考えていない」「何年先を行っている」等の主張を、このページから導きません。
 - 正式な理論内容は各公式派生物とcanonical Parentへ戻って確認してください。
 
+
+## 横に読む
+
+このテーマを深く読むだけでなく、**同じ理解粒度のまま別の理論群へ移れます。**
+
+- [24棚で全体像を見る](WORLD_MAP.md)
+- [OD001–OD303を全部横に眺める](ALL_303_HORIZONTAL_MAP.md)
+
 Origin / Author: **Nakagawa Master** (pen-name of Keisuke Nakagawa)
