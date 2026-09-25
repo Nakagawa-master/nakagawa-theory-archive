@@ -6,21 +6,18 @@
 
 人物 / Origin: [日本語](ABOUT_NAKAGAWA_MASTER.md) | [English](ABOUT_NAKAGAWA_MASTER.en.md) | [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 
-短い実例 / WordPress.com: [Nakagawa Master](https://nakagawamaster.wordpress.com/?utm_source=github&utm_medium=referral&utm_campaign=reader_series) — 実世界の問いから公開派生物・原典へ戻る読者向け入口
+**恒久公開面は2つです。**
+
+1. **Canonical / 正本:** [master.ricette.jp](https://master.ricette.jp/) — 理論の確定内容・Parent・公式アーカイブ
+2. **Public evidence / reuse:** このGitHub repository — 第三者実装、検証、再利用、研究位置づけ、機械可読入口
+
+**すでに起きた現実作用を確認する:** [公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md) / [English](REAL_WORLD_IMPACT.en.md) / [中文](REAL_WORLD_IMPACT.zh.md)
+
+REAL_WORLD_IMPACT.md には現在22の番号付き公開事例セクションがあり、第三者projectでの response / code / tests / merge / release / deployment 等を、確認できる段階と未確認範囲に分けて記録しています。単なるmention数ではなく、公開証拠でどこまで作用したかを確認してください。
 
 AI / LLM運用、認可・ガバナンス、計測、履歴、外部APIのretry、migration / syncに加え、成長・投資・将来の選択肢など、実務で起きる具体的な問題から入れます。
 
-読者向け実例シリーズ: [9つの読者入口 → source → 独立検証・既存研究位置づけ](WORDPRESS_READER_SERIES.md)
-
-- [10本の記事が同じことを言っていても、独立した証拠が10個あるとは限らない](https://nakagawamaster.wordpress.com/2026/09/24/hello-world/)
-- [「一度承認された」は、今も許可されているという意味ではない](https://nakagawamaster.wordpress.com/2026/09/24/approved-before-not-authorized-now/)
-- [「処理が成功した」だけでは、「測定できた」とは限らない](https://nakagawamaster.wordpress.com/2026/09/24/successful-call-is-not-valid-measurement/)
-- [「今いない人」は、「あの時もいなかった人」ではない](https://nakagawamaster.wordpress.com/2026/09/24/current-status-is-not-historical-fact/)
-- [「エラーだから再送」は、二重送信や二重決済を生むことがある](https://nakagawamaster.wordpress.com/2026/09/24/local-error-is-not-external-failure/)
-- [「同じIDだから上書きしてよい」とは限らない](https://nakagawamaster.wordpress.com/2026/09/24/same-id-does-not-mean-safe-overwrite/)
-- [不可逆点とは？ 成長の裏で「未来の選択肢」が減るとき](https://nakagawamaster.wordpress.com/2026/09/25/irreversible-point-future-options/)
-- [「実行してよい」≠「この有料処理を承認した」— 課金APIで承認を取り違えないために](https://nakagawamaster.wordpress.com/2026/09/25/command-approval-is-not-paid-action-approval/)
-- [中川マスター理論は既存研究のどこに位置するか｜6つの接続点](https://nakagawamaster.wordpress.com/2026/09/25/research-positioning-six-connections/)
+WordPress.com等の補助surfaceはcanonicalではなく期限付きのdistribution / reader experimentです。恒久的なsource identity、実装証拠、再利用経路は上記2面へ戻します。
 
 本リポジトリは、中川マスター（Nakagawa Master／筆名）の公開理論体系を、人間とAIが発見・照合・再参照できる形で保存する公開アーカイブです。
 
