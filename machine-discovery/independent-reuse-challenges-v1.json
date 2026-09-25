@@ -8,7 +8,8 @@
     "protocol": "INDEPENDENT_VERIFICATION_REUSE.md",
     "registry_issue": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
     "issue_form": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=independent-reuse-evidence.yml",
-    "schema": "machine-discovery/external-reuse-evidence-submission-schema-v1.json"
+    "schema": "machine-discovery/external-reuse-evidence-submission-schema-v1.json",
+    "research_positioning_issue": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/410"
   },
   "priority_signal": {
     "highest_value_now": [
@@ -160,6 +161,26 @@
         "a narrower contract proving all counted sources are structurally independent by construction",
         "counterexample showing lineage tracking adds no useful distinction under the tested workflow",
         "evidence that the proposed tracking cost exceeds correction benefit and a narrower boundary is sufficient"
+      ]
+    },
+    {
+      "id": "J-research-positioning-prior-work",
+      "distinction": "missing citation != novelty proof; useful positioning requires explicit overlap, adjacency, older prior work, counterexamples, and material differences",
+      "positioning_map": "RESEARCH_POSITIONING_MAP.md",
+      "bibliography": "research-positioning/references.bib",
+      "scholarly_metadata": "machine-discovery/scholarly-metadata-v1.jsonld",
+      "submission_issue": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/410",
+      "test": "Choose one public Nakagawa theory or bounded distinction, search for closer or older prior work and counterexamples, then classify the relation as overlap, adjacent, older prior work, counterexample, correction, or non-fit. Preserve source type and material differences rather than using citation presence or absence as a novelty score.",
+      "positive_evidence": [
+        "a DOI or stable source identifies closer or older prior work and the positioning map is corrected",
+        "a counterexample narrows the applicable boundary of a public distinction",
+        "two concepts currently treated as separate are shown to be materially closer, or vice versa",
+        "a scholarly or standards source improves terminology, comparison, or field placement without manufacturing endorsement"
+      ],
+      "useful_negative_evidence": [
+        "systematic search finds no closer work under explicit inclusion and exclusion criteria, while novelty remains open rather than declared",
+        "a candidate source is shown to be only superficially similar after claim-level comparison",
+        "a proposed comparison is rejected because the units, scope, or causal structure are not actually comparable"
       ]
     }
   ],
