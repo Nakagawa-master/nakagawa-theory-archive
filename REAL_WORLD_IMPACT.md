@@ -674,30 +674,27 @@ receiver commit `dfd4588d` は、export aliasとsource declaration nameの両方
 ## 22. Qwen Code｜有料Batch APIの承認境界
 
 **対象:** [QwenLM/qwen-code#12492](https://github.com/QwenLM/qwen-code/pull/12492)  
-**現在状態:** open / proposal adopted in implementation commit / PR not yet merged
+**現在状態:** PR merged / Qwen Code v0.24.6 released（2026-09-26 JST）/ merge commit `c3a4058a0c72`
 
 [Nakagawa-masterの公開コメント](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552)は、`qwen batch run` の承認と、実際に課金される具体的batch snapshotの承認を分ける境界を提示しました。exact item set、frozen settings、cost estimateをcanonical digestへ束ね、承認後に内容が変わればold approvalを無効にする案です。
 
-その後、第三者developer `yiliang114` はreview closeoutでこの提案をNakagawa-masterの提案として明示的に取り上げ、既存のretry-budget修正とは別のproduct decisionが必要な論点として保持しました。
+第三者developer `yiliang114` は提案を出所付きで採用し、commit `3d06e1ad8e` にpreview、snapshot digest、実行直前の再照合と回帰テストを実装しました。これは元の提案をやや軽い形で採用したと本人が説明しています。
 
 - [third-party response](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817836928)
-- [bounded follow-up](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817960767)
 - [adoption response](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5818159716)
 - [implementation commit `3d06e1ad8e`](https://github.com/QwenLM/qwen-code/commit/3d06e1ad8e749c647a2eb5d447b867fc50955a13)
+- [maintainer verification at head `206a444b`](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5836312195)
+- [merge commit](https://github.com/QwenLM/qwen-code/commit/c3a4058a0c7207de7b421e9da0622a9ec890dbad)
+- [Qwen Code v0.24.6 release](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.6)
 
-2026-09-26 JST、repository maintainerはfollow-up後のhead `8560fe95`を実build / TUI / DashScopeで検証し、実課金Batch 4件の配達、27/27 E2E、承認とsnapshot再照合の境界が保たれることを報告しました。さらに未解決指摘を再現し、R3-7 / R3-3 / R3-10の3点はmerge前修正が必要と判断。証拠tree内の提案パッチは追加テストでRED→GREENですが、**このコメント時点ではPR headに未反映・未merge**です。残りの指摘は後続issue候補として区別されています。
+著者は保守担当がmerge前に求めた3点をcommit `56f06075b3` で修正し、追加の2点も `206a444b30` で対処しました。現headのQwen Code CI（run 43130）とTUI parity（run 3993）は成功。保守担当はhead `206a444b` をmerge可能と判断し、PRは2026-09-26 JSTにmerge、同日v0.24.6としてreleaseされました。非ブロッカーのfollow-upは [#12707](https://github.com/QwenLM/qwen-code/issues/12707) に残っています。
 
-- [maintainer verification at head `8560fe95`](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5835289329)
-- [reproduction and patch evidence](https://github.com/wenshao/qwen-code/tree/357a401455b94feb08aee2774f3d6e4b1605a532/pr-12492)
-
-
-第三者developerはその後、この境界を「Adopted」と明示し、`--dry-run` preview、snapshot digest、`--expect <digest>`による実行直前の再照合、preview後のinstructions / item set / output limit / source file変更を拒否する回帰テストを実装しました。
-
-**確認できること:** 出所付きの第三者認識に加え、提案された承認binding境界がcode / testsへ実装されたこと。  
-**まだ確認できないこと:** PR merge、release、production use、理論体系全体へのendorsement。
+**公開記録から確認できること:** 出所付きの第三者採用、提案された承認境界の実装、PR mergeとrelease。先行headでの実課金利用もPR記録にあります。  
+**まだ確認できないこと:** v0.24.6の独立した本番利用、広い読者層への伝播、理論体系全体へのendorsement。PR全体や後続修正・releaseをNakagawa-master単独の成果とはしません。
 
 
 ---
+
 
 ## 23. AI-News｜URL本数と独立した証拠root数を分ける編集規則を明示採用
 
