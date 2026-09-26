@@ -2,6 +2,8 @@
 
 **Nakagawa Master Official Theory Archive**
 
+**SNS・検索から初めて来た方:** [まず、あなたの話から｜6つの短い物語](STORIES.md)
+
 人間向け入口: [日本語](START_HERE.md) | [English](START_HERE.en.md) | [中文](START_HERE.zh.md)
 
 **「中川マスターって誰？」から:** [3分でわかる一般向け人物入口](human-translation/who-is-nakagawa-master.md)
