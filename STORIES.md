@@ -11,10 +11,11 @@ SNSや検索から来た人向けの入口です。
 - [担当者を替えた。なのに、同じ失敗がまた起きた](human-translation/entry-stories/04-same-mistake-new-person.md)
 - [50人が同じことを言っている。でも確認した人は1人かもしれない](human-translation/entry-stories/05-fifty-people-one-rumor.md)
 - [「承認しました」──でも、その後で中身が変わっていたら？](human-translation/entry-stories/06-approved-one-thing-executed-another.md)
+- [専門家を信じる。でも「訂正してはいけない」にしない](human-translation/entry-stories/07-trust-experts-without-making-them-uncorrectable.md)
 
 気になった1本の末尾から、同じ粒度の別の物語、公式派生物、公開source、原典へ進めます。
 
-→ [6本をまとめて見る](human-translation/entry-stories/README.md)  
+→ [7本をまとめて見る](human-translation/entry-stories/README.md)  
 → [24棚の世界地図](human-translation/WORLD_MAP.md)  
 → [中川マスターって何をしている人？](human-translation/who-is-nakagawa-master.md)
 
