@@ -91,6 +91,12 @@ Core question:
 
 Useful in LLM-as-a-judge, Actor/Critic/Reviewer agents, self-reflection, autonomous coding review, RAG/research review, safety/red-team workflows, internal audit, investment committees, and technical governance.
 
+## 8. AI agent execution-boundary regression tests
+
+[AI Agent Execution Boundary Tests](AI_AGENT_EXECUTION_BOUNDARY_TESTS.md) turns common proposal/authority, stale approval, policy modification, ambiguous external outcome, and unverified completion boundaries into five sandboxable regression cases.
+
+Use it when you need implementation tests beyond the 12-question [AI Agent Execution Governance Preflight](discovery-notes/ai-agent-execution-governance-preflight.md). It is a non-canonical starter test plan, not a drop-in security review or certification. A local pass is evidence only for the recorded build and conditions.
+
 ## Preserve the source relation
 
 If a kit materially informs a real decision or implementation, preserve a lightweight source line such as `Source distinction: Nakagawa Master — <public source URL>`. See [Origin Attribution for Reuse](ORIGIN_ATTRIBUTION_FOR_REUSE.md). If you independently rediscovered the same distinction and found the source later, state that instead of claiming source causality.

@@ -13,6 +13,10 @@ The short Japanese reader-entry series turns several boundaries below into concr
 
 These WordPress entries are explanatory carriers, not evidence of independent adoption.
 
+## AI agent execution: run five sandbox regression cases
+
+For a compact, test-by-test starting point, use [AI Agent Execution Boundary Tests](AI_AGENT_EXECUTION_BOUNDARY_TESTS.md). It covers protected target arguments, stale approvals, policy-modified calls, ambiguous provider outcomes, and unverified completion claims. The cases are non-canonical and should be run only in a test environment with synthetic data.
+
 ## 1. Approval / consent / exception
 
 Before relying on a stored approval, ask:
