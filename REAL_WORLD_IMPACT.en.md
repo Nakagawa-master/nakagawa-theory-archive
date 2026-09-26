@@ -639,24 +639,27 @@ This page is not asking readers to trust a name or a count. It is an index for c
 ## 22. Qwen Code | Approval boundary for paid Batch API actions
 
 **Target:** [QwenLM/qwen-code#12492](https://github.com/QwenLM/qwen-code/pull/12492)  
-**Current state:** open / proposal adopted in implementation commit / PR not yet merged
+**Current state:** merged and released in Qwen Code v0.24.6 (2026-09-26 JST) / merge commit `c3a4058a0c72`
 
 [Nakagawa-master's public comment](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552) separated approval of `qwen batch run` from approval of the concrete billed batch snapshot. The proposed contract binds the exact item set, frozen settings and cost estimate to a canonical digest, and treats later drift as stale approval.
 
-A third-party developer, `yiliang114`, later called out the proposal explicitly as Nakagawa-master's proposal and kept it separate from retry-budget fixes as a product-level decision.
+Third-party developer `yiliang114` attributed and adopted the proposal, implementing a preview, snapshot digest, pre-submit revalidation and regression tests in `3d06e1ad8e`. The author described this as a lighter form of the full proposed flow.
 
 - [third-party response](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817836928)
-- [bounded follow-up](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817960767)
 - [adoption response](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5818159716)
 - [implementation commit `3d06e1ad8e`](https://github.com/QwenLM/qwen-code/commit/3d06e1ad8e749c647a2eb5d447b867fc50955a13)
+- [maintainer verification at head `206a444b`](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5836312195)
+- [merge commit](https://github.com/QwenLM/qwen-code/commit/c3a4058a0c7207de7b421e9da0622a9ec890dbad)
+- [Qwen Code v0.24.6 release](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.6)
 
-The third-party developer then explicitly said the boundary was adopted and implemented a `--dry-run` preview, snapshot digest, `--expect <digest>` revalidation immediately before submission, plus regression tests that refuse changes to instructions, item set, output limit, or source files after preview.
+The author fixed the three maintainer-requested pre-merge findings in `56f06075b3` and two additional suggestions in `206a444b30`. Qwen Code CI (run 43130) and TUI parity (run 3993) passed on the current head. The maintainer judged head `206a444b` mergeable; the PR merged on 2026-09-26 JST and shipped in v0.24.6 that day. Non-blocking follow-ups remain in [#12707](https://github.com/QwenLM/qwen-code/issues/12707).
 
-**Confirmed by the public record:** independent source-attributed recognition plus implementation of the approval-binding boundary in code and tests.  
-**Not yet confirmed:** PR merge, release, production use, or endorsement of the wider theory system.
+**Confirmed by the public record:** source-attributed third-party adoption, implementation of the proposed approval boundary, PR merge and release. A real paid use at an earlier PR head is also documented.  
+**Not yet confirmed:** independent production use of v0.24.6, broad reader propagation, or endorsement of the wider theory system. The entire PR, later fixes and release are not attributed to Nakagawa-master alone.
 
 
 ---
+
 
 ## 23. AI-News | Separate URL count from independent evidence-root count in recurring editorial verification
 

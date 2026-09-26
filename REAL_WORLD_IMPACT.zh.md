@@ -640,24 +640,27 @@ counterexample、non-fit与failed reproduction同样是有价值的公开证据�
 ## 22. Qwen Code｜付费 Batch API 的批准边界
 
 **对象:** [QwenLM/qwen-code#12492](https://github.com/QwenLM/qwen-code/pull/12492)  
-**当前状态:** open / proposal adopted in implementation commit / PR not yet merged
+**当前状态:** PR 已合并，并于 2026-09-26 JST 随 Qwen Code v0.24.6 发布 / merge commit `c3a4058a0c72`
 
-[Nakagawa-master 的公开评论](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552) 区分了批准 `qwen batch run` 与批准实际计费的具体 batch snapshot。该方案把 exact item set、frozen settings 与 cost estimate 绑定到 canonical digest，并把后续实质变化视为旧批准失效。
+[Nakagawa-master 的公开评论](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552) 区分了批准 `qwen batch run` 与批准实际计费的具体 batch snapshot。方案把 exact item set、frozen settings 与 cost estimate 绑定到 canonical digest，并把后续实质变化视为旧批准失效。
 
-随后，第三方开发者 `yiliang114` 明确把这一点作为 Nakagawa-master 的提案单独列出，并将其与 retry-budget 修复区分开，保留为 product-level decision。
+第三方开发者 `yiliang114` 按来源采纳了这一提案，并在 `3d06e1ad8e` 中实现 preview、snapshot digest、提交前重新校验和回归测试。作者说明这是对完整提案的较轻量实现。
 
 - [third-party response](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817836928)
-- [bounded follow-up](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817960767)
 - [adoption response](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5818159716)
 - [implementation commit `3d06e1ad8e`](https://github.com/QwenLM/qwen-code/commit/3d06e1ad8e749c647a2eb5d447b867fc50955a13)
+- [maintainer verification at head `206a444b`](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5836312195)
+- [merge commit](https://github.com/QwenLM/qwen-code/commit/c3a4058a0c7207de7b421e9da0622a9ec890dbad)
+- [Qwen Code v0.24.6 release](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.6)
 
-第三方开发者随后明确表示该边界已被“Adopted”，并实现了 `--dry-run` 预览、snapshot digest、提交前的 `--expect <digest>` 重新校验，以及在 preview 之后 instructions、item set、output limit 或 source file 发生变化时拒绝提交的回归测试。
+作者在 `56f06075b3` 修复了维护者要求的三个合并前问题，并在 `206a444b30` 处理另外两个建议。当前 head 的 Qwen Code CI（run 43130）与 TUI parity（run 3993）均通过。维护者判断 `206a444b` 可合并；PR 于 2026-09-26 JST 合并，并于同日随 v0.24.6 发布。非阻塞 follow-up 仍记录在 [#12707](https://github.com/QwenLM/qwen-code/issues/12707)。
 
-**公开记录能够确认:** 独立第三方按来源识别该提案，并把这一批准绑定边界落实到了 code / tests。  
-**尚不能确认:** PR merge、release、production use，或对更广泛理论体系的认可。
+**公开记录可确认:** 有来源归属的第三方采纳、提议的批准边界实现、PR 合并与发布。更早 PR head 上也有真实付费使用记录。  
+**尚不能确认:** 对 v0.24.6 的独立生产使用、广泛读者传播，或对完整理论体系的认可。不会把整个 PR、后续修正或 release 归为 Nakagawa-master 单独成果。
 
 
 ---
+
 
 ## 23. AI-News｜在持续编辑验证中区分URL数量与独立证据root数量
 

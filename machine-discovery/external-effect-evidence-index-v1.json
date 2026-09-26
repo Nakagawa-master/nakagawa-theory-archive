@@ -855,12 +855,22 @@
           "regression tests refuse changes to instructions, item set, output limit, and source files after preview"
         ]
       },
-      "current_stage": "independent_third_party_implementation_in_open_pr",
+      "current_stage": "independent_third_party_implementation_merged_and_released",
+      "merge_release": {
+        "pull_request": "https://github.com/QwenLM/qwen-code/pull/12492",
+        "merged_at": "2026-09-26T03:31:45+09:00",
+        "merge_commit": "c3a4058a0c7207de7b421e9da0622a9ec890dbad",
+        "release": "v0.24.6",
+        "release_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.6",
+        "release_comment": "https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5841635083",
+        "current_head_ci": "success_run_43130",
+        "tui_parity": "success_run_3993",
+        "non_blocking_followup": "https://github.com/QwenLM/qwen-code/issues/12707"
+      },
       "reusable_check": "PAID_ACTION_APPROVAL_BINDING_CHECKLIST.md",
       "not_claimed": [
-        "pull request merge",
-        "release",
-        "production use",
+        "independently verified production use of v0.24.6",
+        "broad human audience effect",
         "whole-theory endorsement"
       ],
       "nakagawa_structural_os_mapping": {
