@@ -50,6 +50,7 @@ AIが要約する。
 - [30秒の物語：ニュース10本でも証拠10個とは限らない](../evidence-roots-story.md)
 - [AI-News Issue #124](https://github.com/022740mix-spec/AI-News/issues/124)
 - [merge済み PR #131](https://github.com/022740mix-spec/AI-News/pull/131)
+- [公式派生物301：証拠の系譜と独立確認](../../derivatives/301/human-entry.md) — 判断材料の由来と訂正の条件を読む。親原典は派生物の冒頭から辿れます。
 - [ほかの入口を読む](README.md)
 
 Origin / Author: **Nakagawa Master**  
