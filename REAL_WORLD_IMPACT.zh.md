@@ -314,7 +314,7 @@ PR #1324实现per-session operator capability、connection-bound proof、共同p
 ## 12. MemberJunction｜在保护row内容之后，把剩余row identity边界继续推进到第二个work item
 
 **对象：** [MemberJunction/MJ#4595](https://github.com/MemberJunction/MJ/pull/4595) → [issue #4610](https://github.com/MemberJunction/MJ/issues/4610)  
-**当前状态：** PR #4595已于2026-09-23 merge；issue #4610仍open
+**当前状态：** PR #4595已于2026-09-23 merge → LTS backport PR #4712已merge → 已收录于release v6.1.4；issue #4610仍open
 
 PR #4595默认停止在cache-invalidation broadcast中携带完整row内容。随后 `Nakagawa-master` 的review进一步区分了另一个尚未关闭的边界：即使没有 `recordData`，session仍可能看到其他row的stable primary key与mutation timing。
 
@@ -329,8 +329,12 @@ PR author明确采用了这一两层拆分：commit `293b9b40` 实现entity-leve
 
 - [#4610 implementation-shape contribution](https://github.com/MemberJunction/MJ/issues/4610#issuecomment-5739586260)
 
-**公开可确认：** review → 第三方code/test变化 → 第三方明确source attribution → #4595 merge → 把更强边界与regression继续carry到第二work item。  
-**尚未确认：** row-level policy实现、#4610关闭/实现、release、deployment或用户规模影响。
+此后，#4595 又以 [PR #4712](https://github.com/MemberJunction/MJ/pull/4712) backport到 `lts/6.1`。#4712正文明确说明它是#4595的backport，并同时带入 `recordData` allowlist与**按entity-level read permission过滤delivery**的实现。公开记录因此可以追到：review之后新增的第一层保护不仅留在开发主线，也进入了LTS release line。
+
+6.1.3 certification把该backport列为security **cert-blocker**。#4712以merge commit `f0baf68415e0` 进入LTS，随后正式 [v6.1.4 release](https://github.com/MemberJunction/MJ/releases/tag/v6.1.4)（draft=false / prerelease=false；2026-09-24 23:53 UTC公开）明确列出#4712。v6.1.4 release notes也记录：cache-invalidation events不再默认把row data发给所有client，需要row内容的consumer改为经signed-in user的read path重新读取。
+
+**公开可确认：** review → 第三方code/test变化 → 第三方明确source attribution → #4595 merge → 把更强边界与regression继续carry到第二work item → LTS backport #4712 merge → v6.1.4 release收录。  
+**尚未确认：** row-level policy实现、#4610关闭/实现、v6.1.4 production deployment或用户规模影响。
 
 ---
 
