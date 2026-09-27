@@ -756,3 +756,24 @@ A later `Nakagawa-master` re-check recorded no remaining blocker within the earl
 
 **Publicly verifiable here:** public boundary proposal/review → explicit reporter agreement → third-party author explicitly says the outstanding points were addressed → code/tests/docs changes → focused re-check.  
 **Not established yet:** PR merge, green repository CI, release, production use, user-scale effect, intellectual priority over the general principle, or endorsement of the wider theory corpus.
+
+---
+
+## 27. n8n | A review triggered runtime verification and a clearer data-boundary model
+
+**Target:** [n8n-io/n8n#37613](https://github.com/n8n-io/n8n/pull/37613)  
+**Current state:** explicit receiver restatement / running-instance verification / clarified PR data model / open draft, unmerged
+
+A `Nakagawa-master` review noted that native `join()` and comparator-less `toSorted()` coerce array elements, so a live object with a custom `toString()` hook could matter **if such an object can actually reach the native-evaluation boundary**.
+
+- [Nakagawa-master review](https://github.com/n8n-io/n8n/pull/37613#pullrequestreview-5325886846)
+
+The PR author explicitly confirmed that the coercion mechanics were correct, then tested the premise on a running n8n instance. The test showed that Code/Set node output is normalized to JSON at the node boundary, so the exotic object shape in question does not reach native evaluation as a live coercible object.
+
+- [receiver re-verification and explanation](https://github.com/n8n-io/n8n/pull/37613#issuecomment-5856928471)
+
+During that investigation, defensive guards were briefly added. After the runtime premise was disproved, the author removed those guards and updated the PR's stated data model. This case is therefore **not** recorded as adoption of Nakagawa's proposed guard. The verified external effect is that the review caused additional receiver-side testing and a more explicit implementation boundary.
+
+**Publicly verifiable:** review → receiver confirms mechanics → independent runtime test → premise rejected at the actual data boundary → unnecessary guard removed → PR model clarified.  
+**Not claimed:** merge, release, production use, user-scale impact, correctness of the original reachability premise, or endorsement of a wider theory system.
+
