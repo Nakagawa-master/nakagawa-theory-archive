@@ -1229,6 +1229,47 @@
         ],
         "canonical_return": "https://master.ricette.jp"
       }
+    },
+    {
+      "case_id": "n8n-native-evaluation-runtime-boundary-verification",
+      "topic": "plausible host-coercion mechanics versus runtime reachability through the actual workflow data boundary",
+      "external_repository": "n8n-io/n8n",
+      "origin_action": {
+        "type": "pull_request_review",
+        "url": "https://github.com/n8n-io/n8n/pull/37613#pullrequestreview-5325886846",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action",
+        "summary": "Review identified that join() and comparator-less toSorted() coerce receiver elements and asked whether live coercion hooks could escape the isolated engine boundary."
+      },
+      "third_party_response": {
+        "url": "https://github.com/n8n-io/n8n/pull/37613#issuecomment-5856928471",
+        "relationship": "PR author explicitly confirmed the coercion mechanics, then independently tested the reachability premise on a running instance."
+      },
+      "receiver_reverification": {
+        "result": "Code/Set node output was observed to normalize exotic values at the node boundary, so the live coercion-hook object premise did not reach native evaluation.",
+        "first_defensive_commit": "f86dc57c73534882e06c4190e7e8dd4be17effdf",
+        "later_state": "guards added for the hypothesized path were removed after runtime verification; the PR data-model explanation was clarified",
+        "current_head": "a8b52c803c5b8392888f4f2b209ba1047746c112"
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "attribution_limit": "The verified effect is receiver-side re-verification and boundary clarification, not persistent adoption of the proposed guard.",
+      "not_claimed": [
+        "pull request merge",
+        "release",
+        "production deployment",
+        "user-scale effect",
+        "correctness of the original reachability premise",
+        "whole-theory endorsement"
+      ],
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "plausible mechanism != demonstrated reachability at the real execution boundary",
+        "canonical_context": [
+          "evidence validity",
+          "runtime boundary verification",
+          "avoid defensive mechanisms without reachable premise"
+        ],
+        "canonical_return": "https://master.ricette.jp"
+      }
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
