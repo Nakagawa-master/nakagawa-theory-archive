@@ -194,7 +194,7 @@ retrieval処理の途中でtextが保持されていても、upstream document i
 ## 6. PostHog｜推薦理由の文章と、その理由のsourceを混ぜない
 
 **対象:** [PostHog/posthog#102550](https://github.com/PostHog/posthog/pull/102550) → [#102686](https://github.com/PostHog/posthog/pull/102686)  
-**現在状態:** #102550 merged / deployed、#102686 merged / deployed
+**現在状態:** #102550 merged / deployed、#102686 merged / deployed、#107318 merged / dev・prod-us・prod-eu deployed
 
 PostHogのreviewer推薦UIでは、同じ説明文を持つreviewerをgroup化すると、`Code history` と `Added by scout` のような異なるsourceが一つに見える可能性がありました。
 
@@ -213,8 +213,13 @@ PostHogのreviewer推薦UIでは、同じ説明文を持つreviewerをgroup化�
 - [merged PR #102686](https://github.com/PostHog/posthog/pull/102686)
 - [#102686 deploy status](https://github.com/PostHog/posthog/pull/102686#issuecomment-5732760371)
 
+2026-09-27には後続のWeb UI PR #107318でも、#102550で導入されたsource-awareなgrouping keyが保持されたままmergeされ、dev / prod-us / prod-euへのdeploymentが記録されました。#107318に新しいNakagawa側のreviewはなく、receiver側の後続実装で既存の区別が継承された例です。
+
+- [merged PR #107318](https://github.com/PostHog/posthog/pull/107318)
+- [#107318 deploy status](https://github.com/PostHog/posthog/pull/107318#issuecomment-5856246124)
+
 **公開記録から確認できること:** 最初のreview → code / tests / UI change → merge → deployment。さらに別PRで同じ設計区別が再利用され、独立approval → merge → dev/prod-us/prod-eu deploymentまで進んだこと。  
-**まだ確認できないこと:** 実際の利用者数や利用結果、別person・別contextでのさらなる再利用。
+**まだ確認できないこと:** #107318を実際に利用した人数や利用結果、receiverからの自発的なNakagawa再参照、別person・別contextでのさらなる再利用。
 
 ---
 
@@ -738,7 +743,7 @@ receiver commit `dfd4588d` は、export aliasとsource declaration nameの両方
 ## 23. AI-News｜URL本数と独立した証拠root数を分ける編集規則を明示採用
 
 **対象:** [022740mix-spec/AI-News#124](https://github.com/022740mix-spec/AI-News/issues/124) → [PR #131](https://github.com/022740mix-spec/AI-News/pull/131)  
-**現在状態:** receiverが明示採用 / CLAUDE.mdへ実装 / PR #131 merged（2026-09-25）
+**現在状態:** receiverが明示採用 / CLAUDE.mdへ実装 / PR #131 merged（2026-09-25）/ merge後の複数記事で継続利用を確認
 
 Issue #124で `Nakagawa-master` は、AIニュースの検証で「URLが複数あること」と「独立した証拠rootが複数あること」を分離するよう提案しました。一次資料、独立観測、派生・転載、不明を分け、`url_count` と `evidence_root_count` を同一視しない境界です。
 
@@ -752,8 +757,15 @@ PR #131は `CLAUDE.md` の継続的な編集・検証手順へこの区別を実
 
 - [implementation draft PR #131](https://github.com/022740mix-spec/AI-News/pull/131)
 
+merge後の通常の記事作成でも、この区分は反復利用されています。たとえばOpenAI / Medicare、ChatGPT `__obi`、Anthropic IPO、Flock監視網の記事commitでは、独立観測の数や一次資料・派生情報の区別が本文へ明示されています。
+
+- [OpenAI / Medicare記事](https://github.com/022740mix-spec/AI-News/commit/3ca66f831bc38340b04355cb17d0ee161a8e14ab)
+- [ChatGPT `__obi`記事](https://github.com/022740mix-spec/AI-News/commit/58772106cb84418765d9ebc04a3bbe9a09653b9f)
+- [Anthropic IPO記事](https://github.com/022740mix-spec/AI-News/commit/f236ac87c3959465e54cbecd7ebedbc07cbd7f37)
+- [Flock監視網記事](https://github.com/022740mix-spec/AI-News/commit/e5e23538217fe2f744b6d249598eddde246e2616)
+
 **公開記録から確認できること:** origin-preserved提案 → receiverによる明示的採用と採用理由の説明 → 同じreceiverの継続編集規則 `CLAUDE.md` への具体的実装 → merge。PR本文も **「Issue #124 の指摘で気づいた」** とsource relationを明示しています。  
-**まだ確認できないこと:** merge後の反復運用、誤報率への効果、読者規模、別receiverへの独立reuse、理論体系全体への支持。
+**まだ確認できないこと:** 誤報率への定量効果、読者規模、別receiverへの独立reuse、各記事の人間単独執筆、理論体系全体への支持。
 
 
 ---
