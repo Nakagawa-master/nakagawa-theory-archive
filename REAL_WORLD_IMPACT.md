@@ -846,3 +846,48 @@ receiverはさらにprior work / papers / implementationsの参照を求めた�
 
 **公開記録から確認できること:** origin comment → receiverによる一般不変条件としての明示的再叙述 → commentがbroader reviewを促したとのreceiver説明 → Research Checkpointと同じevidence-validity ruleがconsumer `AGENTS.md` へmerge。  
 **まだ確認できないこと:** WorkerExecutor全体への実装完了、実運用での有効性、一般原理の知的優先権、理論体系全体への支持。
+
+---
+
+## 26. AI Weekly Reads｜speaker/vendorの主張を編集事実へ変換しない生成規則を実装
+
+**対象:** [sophiamyang/ai-weekly-reads#22](https://github.com/sophiamyang/ai-weekly-reads/pull/22) → [#30](https://github.com/sophiamyang/ai-weekly-reads/pull/30) → [#31](https://github.com/sophiamyang/ai-weekly-reads/pull/31)  
+**現在状態:** 2回のweekly edition修正を確認 / durable generation rule・audit・regression tests merged / 次週runでの自動再利用は未確認
+
+最初のweekly edition #22 では、speaker / vendorが自分の製品について示した測定値と、編集側が独立に確認した結果とが混ざる箇所がありました。Nakagawa-masterのreview後、receiver側commit `4cc034e` で、Mercury・Docusign・SID・Homa等の表現がspeaker/vendor-reportedであることを残す方向へ修正され、そのeditionはmergeされました。
+
+その後、2026-09-26版PR #30で同じ種類の回帰が再発しました。Metaの「engagement hourあたり100x cheaper」、Perceptronの「1/15th cost」、Sarvamの「100x larger modelsをoutperform」、FriendliAIの「up to 7x faster」等が、元speaker/vendorの主張であることを本文中に残さず、flat editorial factのように読める形で生成されていました。
+
+- [Nakagawa-master review on #30](https://github.com/sophiamyang/ai-weekly-reads/pull/30#pullrequestreview-5330097552)
+- [public epistemic-integrity reference card](machine-discovery/epistemic-integrity-reference-card.json)
+
+reviewは、
+
+```text
+speaker/vendor reports a measured result
+!=
+weekly editor independently verified the result
+!=
+independent reproduction/generalization
+```
+
+を分離し、単発の本文修正ではなく、summary prompt・Reading Priority・regression testへ同じ境界を入れることを提案しました。
+
+receiverはその後、**「regression was real and the diagnosis was right」** と明示し、#30のeditionを修正してmergeしました。さらにPR #31で、単発修正をgeneration ruleへ移しました。
+
+- [receiver response](https://github.com/sophiamyang/ai-weekly-reads/pull/30#issuecomment-5856767055)
+- [merged edition #30](https://github.com/sophiamyang/ai-weekly-reads/pull/30)
+- [merged generation-rule PR #31](https://github.com/sophiamyang/ai-weekly-reads/pull/31)
+
+PR #31では少なくとも次が変更されています。
+
+- resource / podcast両方のsummary promptで、自社・自製品・自研究に関する定量・比較結果は、独立評価が明記されない限り同じ文でclaimantを示す
+- `"Our model is 20x faster"` を `"The model is 20x faster"` に変換しないことを明示
+- Reading Priorityの `evidence-backed` 語彙を削除し、Highの条件を `independently verifiable` へ変更
+- `reading_priority.py` から `evidence` / `evidence-backed` / `data-backed` のHigh signalを削除
+- last-run auditで `evidence-backed` / `data-backed` / `proven` / `validated` を検出
+- regression testsでprompt ruleとsignal listを固定
+
+**公開記録から確認できること:** 最初のedition修正 → 次週に同種の回帰が再発 → Nakagawa-masterのreviewが回帰を特定 → receiverが診断を明示的に認める → edition #30を再修正してmerge → さらに同じ境界をgeneration prompt・priority rule・audit・testsへ実装したPR #31をmerge。  
+**まだ確認できないこと:** 次のweekly runで新しいNakagawa-masterの介入なしに同じ規則が自動的に守られること、実読者数、読者行動への影響、receiver responseや修正作業が人間だけで行われたこと。receiver responseにはClaude Code生成表記があるため、人間単独著作とは扱いません。
+
