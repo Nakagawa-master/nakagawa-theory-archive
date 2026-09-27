@@ -777,3 +777,27 @@ During that investigation, defensive guards were briefly added. After the runtim
 **Publicly verifiable:** review → receiver confirms mechanics → independent runtime test → premise rejected at the actual data boundary → unnecessary guard removed → PR model clarified.  
 **Not claimed:** merge, release, production use, user-scale impact, correctness of the original reachability premise, or endorsement of a wider theory system.
 
+---
+
+## 28. LlamaIndex | Defaulted positional parameter + `**kwargs` silent misbinding pinned in code and tests
+
+**Target:** [run-llama/llama_index#23272](https://github.com/run-llama/llama_index/pull/23272)  
+**Current state:** exact regression added to receiver code/tests after review / focused re-check completed / PR open and unmerged / repository CI green not established
+
+PR #23272 repairs single-argument `FunctionTool` dispatch when a custom schema field name differs from the callable's positional parameter name.
+
+The initial patch replaced `inspect.Signature.bind_partial()` with full `bind()`, fixing the case where a **required** positional parameter remained unbound. A `Nakagawa-master` review then identified a quieter variant: if that positional parameter has a default and the callable also accepts `**kwargs`, full binding succeeds while the generated value is swallowed by `kwargs`, leaving the callable to return its default.
+
+- [Nakagawa-master comment](https://github.com/run-llama/llama_index/pull/23272#issuecomment-5330425676)
+
+The next receiver commit, `c15a95233bd7678923828b71f9f4f6b78d6b5ab5`, adds that exact regression directly to the test suite for both sync and async calls, plus reverse-regression cases covering injected partial parameters and field defaults.
+
+The implementation now distinguishes “can these kwargs form a valid call?” from “did the generated field actually bind an explicit callable parameter?”. When a single generated field is accepted only through `**kwargs` and a positional compatibility call is valid, the fallback is preserved.
+
+- [receiver commit `c15a952`](https://github.com/run-llama/llama_index/commit/c15a95233bd7678923828b71f9f4f6b78d6b5ab5)
+- [focused re-check](https://github.com/run-llama/llama_index/pull/23272#issuecomment-5857485429)
+
+**Publicly verifiable:** review identifies the defaulted-positional + `**kwargs` silent misbinding → next commit on the same PR adds the exact regression and reverse-regression tests → focused re-check finds no remaining blocker in that scope.  
+**Not claimed:** merge, release, production use, green repository CI, broad user impact, or explicit receiver attribution to Nakagawa-master. The commit message does not name the source, so causal attribution remains bounded.
+
+
