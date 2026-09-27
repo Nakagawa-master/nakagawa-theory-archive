@@ -26,6 +26,7 @@ SNSや検索から来た人向けの入口です。
 
 → [7本をまとめて見る](human-translation/entry-stories/README.md)  
 → [24棚の世界地図](human-translation/WORLD_MAP.md)  
+→ [公式派生物をテーマから探し、各ページの親原典へ遡る](derivatives/CATEGORIES.md)  
 → [中川マスターって何をしている人？](human-translation/who-is-nakagawa-master.md)
 
 Origin / Author: **Nakagawa Master** (pen-name of Keisuke Nakagawa)
