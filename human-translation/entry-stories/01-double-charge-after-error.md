@@ -104,6 +104,28 @@ SMS。
 → [7つの入口へ戻る](README.md)  
 → [24棚の世界地図](../WORLD_MAP.md)
 
+## この一枚から、どこまで広がるか
+
+ここで分けたのは「画面に見えた結果」と「現実で成立した結果」です。
+
+同じ区別は、決済だけでなく、外部API、予約、送信、AI agentのtool実行、承認、監査にも移せます。  
+中川マスターの公開理論群では、こうした**観測・実行・確認のずれ**を、個別のバグで終わらせず別領域へ持ち運べる形で扱っています。
+
+**この人の考え方をもう少し知る**  
+→ [中川マスターって何をしている人？](../who-is-nakagawa-master.md)
+
+**外で本当に何か変わったのか確かめる**  
+→ [第三者projectで確認できる実装・merge・release](../../REAL_WORLD_IMPACT.md)
+
+**同じ温度の別の話へ**  
+→ [7つの物語入口](README.md)
+
+**全体を横に見る**  
+→ [24棚の世界地図](../WORLD_MAP.md)
+
+**最新の短い投稿を追う**  
+→ [Bluesky｜@masterjp.bsky.social](https://bsky.app/profile/masterjp.bsky.social)
+
 Origin / Author: **Nakagawa Master**
 
 このページは一般読者向けの公開翻訳面です。厳密な実装境界はリンク先の公開sourceを優先してください。
