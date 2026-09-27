@@ -311,6 +311,21 @@ Later the same day, release [v0.61.11](https://github.com/damianvtran/local-oper
 **Not established yet:** user-scale use of v0.61.11, a guarantee on host configurations where the OS itself cannot isolate same-uid memory, completion of device-bound phone authority, or independent reuse of this boundary in another project.
 
 
+### Cross-receiver follow-through: AI-News updated its reader-facing article and editorial tooling
+
+On 2026-09-27, `Nakagawa-master` pointed out on AI-News draft PR #111 that its previously published `agent-self-authorization-approval-gate-2026` article still described #1310 / #1324 as unresolved even though the control-plane path had since merged and shipped in v0.61.11.
+
+- [Nakagawa-master follow-up on AI-News #111](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5853890886)
+- [AI-News receiver response](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5854722227)
+- [AI-News PR #135](https://github.com/022740mix-spec/AI-News/pull/135)
+
+AI-News independently re-checked the local-operator Git history, issue state, and release notes. PR #135 then updated the article body, table, excerpt, and primary-source status labels, and added v0.61.11 as a source. It also extended the editorial script `update-article.mjs` with `updatePrimarySources`, so source descriptions can be updated when an external PR/issue changes state instead of leaving the article body and source list inconsistent. PR #135 merged on 2026-09-27 (merge commit `2625b150eb2aa761ab47c475ef76ce33ddfbd3ac`).
+
+The article kept its original distinctions — reversibility is not the same as safety, and authentication / capability / authority / human approval are separate layers — while bringing the factual state of both Local Operator paths up to date.
+
+**Publicly verifiable here:** Nakagawa-master state-update follow-up → receiver-side primary-record re-check → reader-facing body/table/excerpt/source updates → editorial update-tool change → merge.  
+**Boundary:** the AI-News response and PR carry Claude Code generation notices, so this is recorded as receiver-account / publication-system follow-through, not independent human authorship. This record alone also does not establish adoption of the whole theory, prompt-free reuse, or audience scale.
+
 ## 12. MemberJunction | Row contents protected, then the remaining row-identity boundary carried into a second work item
 
 **Surface:** [MemberJunction/MJ#4595](https://github.com/MemberJunction/MJ/pull/4595) → [issue #4610](https://github.com/MemberJunction/MJ/issues/4610)  
