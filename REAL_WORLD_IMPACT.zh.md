@@ -311,6 +311,21 @@ PR #1324实现per-session operator capability、connection-bound proof、共同p
 **尚未确认：** v0.61.11的用户规模、OS本身无法隔离same-uid memory的host配置上的保证、phone/device-bound authority完成、或该边界被其他project独立reuse。
 
 
+### 跨receiver跟进：AI-News更新了面向读者的文章与编辑工具
+
+2026-09-27，`Nakagawa-master` 在 AI-News 的草稿PR #111中指出：该站此前公开的 `agent-self-authorization-approval-gate-2026` 仍把 #1310 / #1324 写成未解决状态，但control-plane路径已经merge并进入v0.61.11。
+
+- [Nakagawa-master在AI-News #111上的follow-up](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5853890886)
+- [AI-News receiver response](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5854722227)
+- [AI-News PR #135](https://github.com/022740mix-spec/AI-News/pull/135)
+
+AI-News随后自行核对了local-operator的Git历史、Issue状态和release notes。PR #135更新了文章正文、表格、摘要、primary source状态说明，并加入v0.61.11作为出典。同时，它还为编辑脚本 `update-article.mjs` 增加了 `updatePrimarySources`，使外部PR/Issue状态变化时可以同步更新出典说明，避免正文已经更新而出典栏仍保留旧状态。PR #135已于2026-09-27 merge（merge commit `2625b150eb2aa761ab47c475ef76ce33ddfbd3ac`）。
+
+文章保留了原有区分——“可逆”不等于“安全”，authentication / capability / authority / human approval是不同层——同时把两条Local Operator路径的事实状态更新为均已修复并release。
+
+**公开可确认：** Nakagawa-master状态更新follow-up → receiver侧重新核对一次记录 → 面向读者的正文/表格/摘要/出典更新 → editorial update tool变更 → merge。  
+**边界：** AI-News的response与PR正文都带有Claude Code生成说明，因此这里把它记录为receiver account / publication system侧的跟进与实现，不视为独立人类写作。该记录本身也不能证明整个理论被独立采用、prompt-free reuse或读者规模。
+
 ## 12. MemberJunction｜在保护row内容之后，把剩余row identity边界继续推进到第二个work item
 
 **对象：** [MemberJunction/MJ#4595](https://github.com/MemberJunction/MJ/pull/4595) → [issue #4610](https://github.com/MemberJunction/MJ/issues/4610)  
