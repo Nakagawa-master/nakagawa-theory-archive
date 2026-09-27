@@ -346,7 +346,7 @@ PR #1324はper-session operator capability、connection-bound proof、共通pre-
 ## 12. MemberJunction｜row内容保護の次に残ったrow identity境界を第二work itemへcarry
 
 **対象:** [MemberJunction/MJ#4595](https://github.com/MemberJunction/MJ/pull/4595) → [issue #4610](https://github.com/MemberJunction/MJ/issues/4610)  
-**現在状態:** PR #4595 merged（2026-09-23）、issue #4610 open
+**現在状態:** PR #4595 merged（2026-09-23）→ LTS backport PR #4712 merged → release v6.1.4収録、issue #4610 open
 
 PR #4595は、cache-invalidation broadcastでfull row内容をdefaultでは送らないようにしました。その後の `Nakagawa-master` reviewでは、その修正とは別に、`recordData` を消しても他rowのstable primary keyとmutation timingが見えるという残存metadata境界を分離しました。
 
@@ -361,8 +361,12 @@ PR authorはこの二層分解を明示的に採用し、commit `293b9b40` でen
 
 - [#4610 implementation-shape contribution](https://github.com/MemberJunction/MJ/issues/4610#issuecomment-5739586260)
 
-**公開記録から確認できること:** review → 第三者code/test変更 → 第三者による明示的source attribution → #4595 merge → より強い境界とregressionを保った第二work item化。  
-**まだ確認できないこと:** row-level policy実装、#4610 close/merge、release、deployment、実利用規模。
+その後、#4595はLTS `lts/6.1` へ [PR #4712](https://github.com/MemberJunction/MJ/pull/4712) としてbackportされました。#4712本文は #4595 のbackportであることを明記し、`recordData` のallowlistに加えて、**deliveryをentity-level read permissionでfilterする**実装もLTSへ運んでいます。これは上記review後に追加された二層のうち、第一層の実装がrelease lineへ持ち越されたことを公開記録から確認できる範囲です。
+
+6.1.3 certificationではこのbackportがsecurityの **cert-blocker** として扱われ、#4712はmerge commit `f0baf68415e0` でLTSへ入りました。その後、正式release [v6.1.4](https://github.com/MemberJunction/MJ/releases/tag/v6.1.4)（draft=false / prerelease=false、2026-09-24 23:53 UTC公開）が #4712 を明示的に収録しています。v6.1.4 release notesも、cache-invalidation eventsが全clientへrow dataを送らず、allowlistとsigned-in userによる再読込へ切り替わったことを記録しています。
+
+**公開記録から確認できること:** review → 第三者code/test変更 → 第三者による明示的source attribution → #4595 merge → より強い境界とregressionを保った第二work item化 → LTS backport #4712 merge → v6.1.4 release収録。  
+**まだ確認できないこと:** row-level policy実装、#4610 close/merge、v6.1.4のproduction deploymentや実利用規模。
 
 ---
 
