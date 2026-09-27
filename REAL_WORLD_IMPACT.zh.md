@@ -2,7 +2,7 @@
 
 语言: [日本語](REAL_WORLD_IMPACT.md) | [English](REAL_WORLD_IMPACT.en.md) | **中文**
 
-**最后确认：2026-09-27**
+**最后确认：2026-09-28**
 
 中川大师（Nakagawa Master）是Keisuke Nakagawa的笔名。在社交媒体上也使用“マスター（Master）”，部分外部投稿使用“MasterJP”名义。
 
@@ -805,4 +805,34 @@ implementation现在区分：
 **公开记录可确认:** review具体指出defaulted positional + `**kwargs` silent misbinding → 同一PR下一commit加入exact regression和反向回归tests → focused re-check在该scope内未发现remaining blocker。  
 **不主张:** merge、release、production use、repository CI green、广泛用户影响，或receiver对Nakagawa-master的明确source attribution。commit message未明确写出source，因此因果归属保持有限。
 
+---
+
+## 29. AI-News｜让已发布文章追随一次资料的状态变化
+
+**对象：** [AI-News PR #111](https://github.com/022740mix-spec/AI-News/pull/111) → 已发布文章 `agent-self-authorization-approval-gate-2026` → [PR #135](https://github.com/022740mix-spec/AI-News/pull/135)  
+**当前状态：** receiver明确采用并发布独立文章 / 后续follow-up发现状态陈旧 / receiver重新核对一次资料并更新文章及source更新工具 / PR #135已merge / 更新版production deployment与读者规模尚未独立确认
+
+在PR #111中，`Nakagawa-master` 建议把尚未确认的报道事件，与可以通过公开实现记录核验的authority-increasing transition分开。
+
+- [Nakagawa-master review](https://github.com/022740mix-spec/AI-News/pull/111#pullrequestreview-5258348803)
+
+receiver明确表示采用这一分离方式，核对引用记录，随后把已验证内容作为独立reader-facing文章发布。
+
+- [receiver adoption response](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5747145782)
+- [receiver publication response](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5747165347)
+
+2026-09-27，`Nakagawa-master` 指出文章中Local Operator control-plane路径的“未修复 / 未merge”状态已经过时：PR #1324已merge、v0.61.11已发布、Issue #1310已关闭。
+
+- [Nakagawa-master follow-up](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5853890886)
+
+receiver重新检查一次资料，承认状态追踪晚了6天，并创建PR #135。PR正文明确说明，是draft PR #111收到的指摘暴露了陈旧状态。merge后的修改更新了正文、状态表、excerpt、primary source状态和编辑历史，并增加 `updatePrimarySources` 以便单独更新source状态。
+
+- [receiver update response](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5854722227)
+- [merged update PR #135](https://github.com/022740mix-spec/AI-News/pull/135)
+- [merge commit `2625b150`](https://github.com/022740mix-spec/AI-News/commit/2625b150eb2aa761ab47c475ef76ce33ddfbd3ac)
+
+receiver回应和PR文本带有Claude Code生成标记，因此这里只记录receiver账号侧的明确采用、发布、source状态修正与tooling变化，不主张独立人类单独著作。
+
+**公开可确认：** review → receiver明确采用 → 独立文章发布 → follow-up指出陈旧外部状态 → receiver重查一次资料 → 修改article/source tooling → PR #135 merge。  
+**尚未确认：** 更新版production deployment、实际读者数量与行为、向其他receiver传播、自发的人物origin再引用、独立人类单独著作，或对完整理论体系的认可。
 
