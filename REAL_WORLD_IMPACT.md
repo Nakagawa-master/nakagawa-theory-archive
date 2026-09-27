@@ -913,3 +913,32 @@ PR authorは、`join()` と `toSorted()` が要素を文字列化するという
 
 この事例が示すのは、**もっともらしい危険経路でも、実行境界まで本当に到達するかを実データで確かめてから防御を固定する**という検証の作用です。
 
+---
+
+## 28. LlamaIndex｜defaulted positional parameter + `**kwargs` のsilent misbindingをcode/testへ固定
+
+**対象:** [run-llama/llama_index#23272](https://github.com/run-llama/llama_index/pull/23272)  
+**現在状態:** 指摘後にexact regressionをcode/testへ追加 / focused re-check済み / PR open・unmerged / repository CI greenは未確認
+
+PR #23272 は、custom schemaのfield名とcallableのpositional parameter名が異なる場合に、`FunctionTool` のsingle-argument compatibility fallbackを正しく選ぶ修正です。
+
+初期修正は `inspect.Signature.bind_partial()` をfull `bind()` へ変え、**required positional parameterが未bindのケース**を直していました。そこで `Nakagawa-master` は、positional parameterにdefaultがあり、かつcallableが `**kwargs` を受ける場合にはfull bind自体は成功するため、生成された値が `kwargs` に吸収されてdefault値が返るsilent misbindingが残ることを指摘しました。
+
+- [Nakagawa-master comment](https://github.com/run-llama/llama_index/pull/23272#issuecomment-5330425676)
+
+その後のreceiver commit `c15a95233bd7678923828b71f9f4f6b78d6b5ab5` は、このexact shapeを直接testへ追加しました。
+
+- sync: `test_call_tool_uses_positional_arg_for_unbound_defaulted_param`
+- async: 同じdefaulted positional regression
+- partial parameterがすでにpositional slotを埋めている場合にfallbackを誤って使わないtest
+- field defaultを二重にpositional injectionしないtest
+
+implementation側も、「kwargsとしてvalid callを作れるか」だけでなく、「生成されたfieldが明示的callable parameterへ実際にbindしたか」を分け、`**kwargs` にだけ吸収されたsingle generated fieldではpositional compatibility pathへ戻るようになっています。
+
+- [receiver commit `c15a952`](https://github.com/run-llama/llama_index/commit/c15a95233bd7678923828b71f9f4f6b78d6b5ab5)
+- [focused re-check](https://github.com/run-llama/llama_index/pull/23272#issuecomment-5857485429)
+
+**公開記録から確認できること:** reviewでdefaulted positional + `**kwargs` のsilent misbindingを具体化 → 同じPRの次commitでexact regressionと逆回帰testがcode/testへ追加 → focused re-checkで当該scopeのremaining blockerなし。  
+**まだ確認できないこと:** PR merge、release、production use、repository CI green、広い利用者影響、commit authorがNakagawa-masterをsourceとして明示したこと。commit本文には明示的attributionがないため、source relationの強さを過大評価しない。
+
+
