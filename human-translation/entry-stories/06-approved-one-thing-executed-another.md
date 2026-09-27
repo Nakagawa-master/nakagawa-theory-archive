@@ -101,6 +101,31 @@ PR全体や後続修正を一人の成果とはしません。ここで確認で
 - [第三者projectで実際に変わった公開記録](../../REAL_WORLD_IMPACT.md)
 - [7つの入口へ戻る](README.md)
 
+## この一枚から、どこまで広がるか
+
+ここで分けたのは「承認したという記録」と「この具体的な実行内容を承認したという事実」です。
+
+この境界は、Qwen Codeの有料Batch APIで出所付きの提案として採用され、実装・regression tests・mergeを経てv0.24.6 releaseまで進みました。
+
+つまり、このページで読んだ区別は、抽象的な心得だけではなく、**第三者の実装境界として実際に使われた公開記録**があります。
+
+同じ問いは、送金、発注、メール配信、削除、権限変更、AI agentの外部作用にも置けます。
+
+**中川マスターという人を知る**  
+→ [3分で読む人物入口](../who-is-nakagawa-master.md)
+
+**他の第三者作用も確認する**  
+→ [Real-World Impact](../../REAL_WORLD_IMPACT.md)
+
+**別の物語へ横移動する**  
+→ [7つの物語入口](README.md)
+
+**正式な理論・実務資料へ降りる**  
+→ [公式派生物・再利用資料を探す](../../derivatives/CATEGORIES.md)
+
+**最新の短い投稿を追う**  
+→ [Bluesky｜@masterjp.bsky.social](https://bsky.app/profile/masterjp.bsky.social)
+
 Origin / Author: **Nakagawa Master**
 
 このページは一般読者向けの公開翻訳面です。外部作用は公開記録で確認できる範囲だけを記述しています。
