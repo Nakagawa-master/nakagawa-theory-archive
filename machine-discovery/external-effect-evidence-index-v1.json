@@ -1270,6 +1270,43 @@
         ],
         "canonical_return": "https://master.ricette.jp"
       }
+    },
+    {
+      "case_id": "llamaindex-defaulted-positional-kwargs-silent-misbinding",
+      "topic": "single generated schema field accepted only through **kwargs can silently bypass the intended positional compatibility fallback when the positional parameter has a default",
+      "external_repository": "run-llama/llama_index",
+      "origin_action": {
+        "type": "pull_request_comment",
+        "url": "https://github.com/run-llama/llama_index/pull/23272#issuecomment-5330425676",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action",
+        "summary": "Identified the defaulted positional + **kwargs case where full signature binding succeeds but the generated value is swallowed by kwargs and the callable returns its default."
+      },
+      "receiver_change": {
+        "commit": "c15a95233bd7678923828b71f9f4f6b78d6b5ab5",
+        "url": "https://github.com/run-llama/llama_index/commit/c15a95233bd7678923828b71f9f4f6b78d6b5ab5",
+        "changes": [
+          "sync regression for defaulted positional parameter plus custom schema field mismatch and **kwargs",
+          "async regression for the same shape",
+          "dispatch logic checks whether generated fields bound explicit callable parameters rather than only whether kwargs form a valid call",
+          "reverse-regression coverage for partial params and field defaults"
+        ]
+      },
+      "origin_recheck": {
+        "url": "https://github.com/run-llama/llama_index/pull/23272#issuecomment-5857485429",
+        "result": "no remaining blocker within the raised review scope; repository CI green explicitly not claimed"
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "attribution_limit": "The exact regression appeared in the next commit on the same PR after the review, but the receiver commit message does not explicitly name Nakagawa-master as the source.",
+      "not_claimed": [
+        "pull request merge",
+        "green repository CI",
+        "release",
+        "production use",
+        "user-scale effect",
+        "explicit receiver-authored source attribution",
+        "whole-theory endorsement"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
