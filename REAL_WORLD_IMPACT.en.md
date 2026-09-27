@@ -2,7 +2,7 @@
 
 Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**Last checked: 2026-09-27**
+**Last checked: 2026-09-28**
 
 Nakagawa Master is the pen name of Keisuke Nakagawa. On social media, the name “マスター” (“Master”) is also used; some external posts use “MasterJP.”
 
@@ -800,4 +800,34 @@ The implementation now distinguishes “can these kwargs form a valid call?” f
 **Publicly verifiable:** review identifies the defaulted-positional + `**kwargs` silent misbinding → next commit on the same PR adds the exact regression and reverse-regression tests → focused re-check finds no remaining blocker in that scope.  
 **Not claimed:** merge, release, production use, green repository CI, broad user impact, or explicit receiver attribution to Nakagawa-master. The commit message does not name the source, so causal attribution remains bounded.
 
+---
+
+## 29. AI-News | A published article was brought back into sync with changed primary-source state, and the update path itself was hardened
+
+**Surface:** [022740mix-spec/AI-News#111](https://github.com/022740mix-spec/AI-News/pull/111) → published article `agent-self-authorization-approval-gate-2026` → [PR #135](https://github.com/022740mix-spec/AI-News/pull/135)  
+**Current state:** receiver explicitly adopted the separation and published a standalone article / later follow-up caught stale status / receiver re-checked primary records and updated article source state / PR #135 merged / deployment of the updated version and reader scale are not independently verified
+
+On PR #111, `Nakagawa-master` proposed separating unverified reported incidents from a distinct, publicly verifiable implementation example about authority-increasing transitions. The review separated authentication, capability, authority, and human approval, and noted that a transition such as `ask → auto` is not made safe merely because it can later be reversed.
+
+- [Nakagawa-master review](https://github.com/022740mix-spec/AI-News/pull/111#pullrequestreview-5258348803)
+
+The receiver explicitly replied **“切り分けの提案を採用します”** (“we will adopt the separation proposal”), checked the cited records, and then reported that it had published the verified material as a standalone article rather than leaving it inside the still-blocked draft PR.
+
+- [receiver adoption response](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5747145782)
+- [receiver publication response](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5747165347)
+
+On 2026-09-27, `Nakagawa-master` pointed out that the article's “unfixed / unmerged” description of the Local Operator control-plane path had become stale: PR #1324 had merged, v0.61.11 had released it, and Issue #1310 had closed.
+
+- [Nakagawa-master follow-up](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5853890886)
+
+The receiver re-checked the primary records, acknowledged that the promised status tracking had been six days behind, and opened PR #135. The PR body explicitly says feedback on draft PR #111 exposed the stale state. The merged change updated the article body, status table, excerpt, primary-source status, and edit history, and also added an `updatePrimarySources` path so source-status metadata can be updated without leaving the article body and source block inconsistent.
+
+- [receiver update response](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5854722227)
+- [merged update PR #135](https://github.com/022740mix-spec/AI-News/pull/135)
+- [merge commit `2625b150`](https://github.com/022740mix-spec/AI-News/commit/2625b150eb2aa761ab47c475ef76ce33ddfbd3ac)
+
+The receiver responses and PR text are marked as generated with Claude Code. This page therefore records **receiver-account adoption, reader-facing publication, source-state correction, and tooling change**, not unaided human authorship.
+
+**Publicly verifiable:** origin review → explicit receiver adoption → standalone reader-facing publication → later Nakagawa follow-up identifies stale external state → receiver re-checks primary sources → article source state and update tooling change → PR #135 merges.  
+**Not established:** production deployment of the updated #135 version, reader count or behavior, propagation to another receiver, voluntary person-origin re-reference, unaided human authorship, or endorsement of the wider theory corpus.
 
