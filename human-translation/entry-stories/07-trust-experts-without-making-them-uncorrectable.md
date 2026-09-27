@@ -41,6 +41,7 @@
 ## 次に読む
 
 - [映像：「専門家が言ったから」で確認終了──権威が免責に変わる瞬間](https://www.youtube.com/watch?v=20loIGpu8fU)
+- [公式派生物295：権威の免責化](../../derivatives/295/human-entry.md) — 専門性と検証を両立する条件を読む。親原典は派生物の冒頭から辿れます。
 - [ほかの入口を読む](README.md)
 - [24棚の世界地図](../WORLD_MAP.md)
 
