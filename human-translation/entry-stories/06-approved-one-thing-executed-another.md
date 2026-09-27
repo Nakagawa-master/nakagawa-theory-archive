@@ -10,7 +10,7 @@ AIに有料処理をさせる前に、画面へ確認内容が出た。
 
 ここまでは普通です。
 
-でも、実行直前に対象がBへ、設定がYへ変わっていたら？
+でも、そのあと実行直前に対象がBへ、設定がYへ変わっていたら？
 
 システムに残っているのは「承認済み」。
 
@@ -18,29 +18,89 @@ AIに有料処理をさせる前に、画面へ確認内容が出た。
 
 実行されるのはB/Y。
 
-それでも同じ承認を使ってよいでしょうか。
+それでも、同じ承認を使ってよいでしょうか。
 
 ---
 
-大事なのは「一度OKしたか」ではなく、
+## 「誰がOKしたか」だけでは足りない
 
-**何にOKしたか。**
+承認記録には、
 
-そのため、実行内容そのものを固定したスナップショットへ承認を結びつける。
+- 誰が押したか
+- いつ押したか
 
-実行直前にもう一度照合する。
+が残っているかもしれません。
 
-違っていたら古い承認を使わず、止めて見せ直す。
+でも、本当に必要なのはもう一つです。
 
-この境界はQwen Codeの公開PRでも提案後に実装へ入り、previewした内容のdigestと実行時の内容を照合し、ずれたら拒否する仕組みとテストが追加されました。
+**何にOKしたのか。**
 
-「承認済み」と「この実行を承認した」は、同じではありません。
+人間が見た内容と、実際に動く内容が同じでなければ、「人間が承認した」という形式だけが残ります。
 
-## 公開記録と次の入口
+## たった1件の追加でも、意味は変わる
+
+100件の送信先を見てOKした。
+
+そのあとデータが更新され、101件目が増えた。
+
+「一件くらい」と思うかもしれません。
+
+でも、その一件を許す仕組みなら、どこまでが人間の判断だったのか後から分からなくなります。
+
+大事なのは件数ではありません。
+
+**人間が見た具体的な状態と、機械が動かす具体的な状態が結びついているか。**
+
+## どう守るか
+
+一つの方法は、
+
+1. 実行内容を具体的なsnapshotにする
+2. その内容からdigestを作る
+3. 人間の承認をそのdigestへ結びつける
+4. 実行直前にもう一度同じ内容か確認する
+5. 変わっていたら古い承認を使わない
+
+という形です。
+
+「承認した」というラベルではなく、**承認したものそのもの**を固定します。
+
+## これはQwen Codeで実装・merge・releaseまで進んだ
+
+Qwen Code PR #12492で Nakagawa-master は、有料Batch APIについて、
+
+- exact item set
+- frozen settings
+- cost estimate
+
+を具体的なsnapshotへ束ね、承認後に内容が変われば古い承認を無効にする境界を提案しました。
+
+第三者developerは提案を出所付きで採用し、preview、snapshot digest、実行直前の再照合とregression testsを実装しました。
+
+PRは2026-09-26 JSTにmergeされ、同日 Qwen Code v0.24.6 としてreleaseされています。
+
+- [Nakagawa-masterの公開コメント](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552)
+- [第三者developerの採用応答](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5818159716)
+- [implementation commit](https://github.com/QwenLM/qwen-code/commit/3d06e1ad8e749c647a2eb5d447b867fc50955a13)
+- [merged PR #12492](https://github.com/QwenLM/qwen-code/pull/12492)
+- [v0.24.6 release](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.6)
+
+PR全体や後続修正を一人の成果とはしません。ここで確認できるのは、**この承認境界が出所付きで採用され、具体的な実装とtestへ入り、merge/releaseされたこと**です。
+
+## この一文を持って帰る
+
+> 「承認済み」と「この実行内容を承認した」は同じではない。
+
+これはAIだけでなく、送金、発注、配信、削除、権限変更にも置けます。
+
+## 次に読む
 
 - [承認を実行内容へ結びつける公開チェック](../../PAID_ACTION_APPROVAL_BINDING_CHECKLIST.md)
-- [Qwen Code PR #12492](https://github.com/QwenLM/qwen-code/pull/12492)
-- [ほかの入口を読む](README.md)
+- [エラー後の再試行が二重実行を作る話](01-double-charge-after-error.md)
+- [AIが候補を作り、人間が最後に選ぶ話](03-ai-made-the-menu.md)
+- [第三者projectで実際に変わった公開記録](../../REAL_WORLD_IMPACT.md)
+- [7つの入口へ戻る](README.md)
 
-Origin / Author: **Nakagawa Master**  
+Origin / Author: **Nakagawa Master**
+
 このページは一般読者向けの公開翻訳面です。外部作用は公開記録で確認できる範囲だけを記述しています。

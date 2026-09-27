@@ -2,7 +2,7 @@
 
 **Nakagawa Master Official Theory Archive**
 
-**SNS・検索から初めて来た方:** [まず、あなたの話から｜6つの短い物語](STORIES.md)
+**SNS・検索から初めて来た方:** [まず、あなたの話から｜7つの短い物語](STORIES.md)
 
 人間向け入口: [日本語](START_HERE.md) | [English](START_HERE.en.md) | [中文](START_HERE.zh.md)
 
@@ -36,7 +36,7 @@ REAL_WORLD_IMPACT.md には現在25の番号付き公開事例セクションが
 - [AI-News #124](https://github.com/022740mix-spec/AI-News/issues/124) → receiverが明示採用 → [merged PR #131](https://github.com/022740mix-spec/AI-News/pull/131) で継続編集ルールへ実装
 - [MemberJunction #4487](https://github.com/MemberJunction/MJ/pull/4487) → 別reviewerによる独立確認 → code/test修正 → merge
 - [MemberJunction #4595](https://github.com/MemberJunction/MJ/pull/4595) → source attribution付きcode/test変更 → merge → より強いrow-level境界は [#4610](https://github.com/MemberJunction/MJ/issues/4610) へ継続
-- [Qwen Code #12492](https://github.com/QwenLM/qwen-code/pull/12492) → proposalの明示的採用 → implementation commit / regression tests、PRは現在open
+- [Qwen Code #12492](https://github.com/QwenLM/qwen-code/pull/12492) → proposalの明示的採用 → implementation / regression tests → 2026-09-26にmerge → v0.24.6 release
 
 この5件も理論体系全体の正しさや採用を意味しません。各リンクで、元の指摘・第三者応答・実変更・現在stateを個別に確認してください。
 
