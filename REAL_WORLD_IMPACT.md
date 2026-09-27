@@ -891,3 +891,25 @@ PR #31では少なくとも次が変更されています。
 **公開記録から確認できること:** 最初のedition修正 → 次週に同種の回帰が再発 → Nakagawa-masterのreviewが回帰を特定 → receiverが診断を明示的に認める → edition #30を再修正してmerge → さらに同じ境界をgeneration prompt・priority rule・audit・testsへ実装したPR #31をmerge。  
 **まだ確認できないこと:** 次のweekly runで新しいNakagawa-masterの介入なしに同じ規則が自動的に守られること、実読者数、読者行動への影響、receiver responseや修正作業が人間だけで行われたこと。receiver responseにはClaude Code生成表記があるため、人間単独著作とは扱いません。
 
+---
+
+## 27. n8n｜指摘が追加検証を促し、到達不能な前提を切り分けて設計境界を明文化
+
+**対象:** [n8n-io/n8n#37613](https://github.com/n8n-io/n8n/pull/37613)  
+**現在状態:** receiverによる明示的再説明 / 実機再検証 / PRのデータ境界明文化 / PR open draft・unmerged
+
+`Nakagawa-master` のreviewは、native expression evaluationで `join()` / comparatorなし `toSorted()` が配列要素を文字列化する際、もしworkflow値に独自 `toString()` を持つobjectが到達できればhost側でcoercion hookが実行され得る、という境界を指摘しました。
+
+- [Nakagawa-master review](https://github.com/n8n-io/n8n/pull/37613#pullrequestreview-5325886846)
+
+PR authorは、`join()` と `toSorted()` が要素を文字列化するという**mechanics自体は正しい**と明示しました。そのうえでrunning instance上でCode node / Set nodeから次nodeへ渡る値を検証し、RegExpやgetter、function等がnode boundaryでJSON-normalizeされ、問題にしていたcoercion hook付きobjectがnative evaluationへそのまま到達しないことを確認しました。
+
+- [receiver re-verification and explanation](https://github.com/n8n-io/n8n/pull/37613#issuecomment-5856928471)
+
+この再検証の途中では防御guardが一度追加されましたが、実機で前提が成立しないことを確認した後、authorはそのguardを撤去し、PR説明を「workflow dataはnode boundaryでJSON-normalizeされる」という実際のdata modelへ合わせて更新しました。したがって、このcaseを「Nakagawaの提案したguardが採用された」とは記録しません。
+
+**公開記録から確認できること:** Nakagawa review → receiverがmechanicsを明示確認 → running instanceで前提を独立検証 → 到達不能と判断 → 不要guardを撤去 → PRのdata-model説明を現実の境界へ合わせた。  
+**まだ確認できないこと:** PR merge、release、production use、利用者規模、当初のcoercion-path前提そのものの正しさ、理論体系全体への支持。
+
+この事例が示すのは、**もっともらしい危険経路でも、実行境界まで本当に到達するかを実データで確かめてから防御を固定する**という検証の作用です。
+
