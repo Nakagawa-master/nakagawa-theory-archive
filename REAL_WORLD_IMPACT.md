@@ -2,7 +2,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**最終確認: 2026-09-27**
+**最終確認: 2026-09-28**
 
 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）は、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
 
@@ -45,7 +45,7 @@
 
 ### 現在の公開証拠スナップショット
 
-- このページには **25の番号付き外部作用事例**を収録しています。
+- このページには **29の番号付き外部作用事例**を収録しています。
 - GitHub全体の `Nakagawa-master` comment検索では多数の候補surfaceが返りますが、検索hit自体は第三者反応・採用・実装として数えません。
 - 本ページへ収録するのは、第三者response、独立確認、code / tests / document change、merge、release、deployment等を公開リンクで段階別に確認できる事例です。
 - したがって「mentionが多い」ことではなく、**第三者が何を変え、その変更がどこまで進んだか**を主要証拠として扱います。
@@ -941,4 +941,43 @@ implementation側も、「kwargsとしてvalid callを作れるか」だけで�
 **公開記録から確認できること:** reviewでdefaulted positional + `**kwargs` のsilent misbindingを具体化 → 同じPRの次commitでexact regressionと逆回帰testがcode/testへ追加 → focused re-checkで当該scopeのremaining blockerなし。  
 **まだ確認できないこと:** PR merge、release、production use、repository CI green、広い利用者影響、commit authorがNakagawa-masterをsourceとして明示したこと。commit本文には明示的attributionがないため、source relationの強さを過大評価しない。
 
+---
+
+## 29. AI-News｜公開済み記事の外部状態を一次資料へ追随させ、更新手段まで実装
+
+**対象:** [022740mix-spec/AI-News#111](https://github.com/022740mix-spec/AI-News/pull/111) → 公開記事 `agent-self-authorization-approval-gate-2026` → [PR #135](https://github.com/022740mix-spec/AI-News/pull/135)  
+**現在状態:** receiverが提案を採用して独立記事を公開 / 後続follow-upで古い状態表記を検出 / 一次資料を再確認して記事sourceを更新 / PR #135 merged / 更新版のproduction deploymentと読者規模は未確認
+
+PR #111で `Nakagawa-master` は、未確認の報道事案と、公開実装で検証できるauthority-increasing transitionの事例を同じ証拠として混ぜず、別枠で扱うことを提案しました。特に、
+
+```text
+authentication
+capability
+authority
+human approval
+```
+
+を分け、`ask → auto` のようにagent自身の次の行動可能範囲を増やす遷移は、「後で戻せる」ことだけでは安全を意味しない、と整理しました。
+
+- [Nakagawa-master review](https://github.com/022740mix-spec/AI-News/pull/111#pullrequestreview-5258348803)
+
+receiverは **「切り分けの提案を採用します」** と明記し、引用された公開記録を再確認しました。その後、保留中のPR #111へ節を追加するのではなく、検証済みの内容を独立記事 `agent-self-authorization-approval-gate-2026` として公開したと報告しました。
+
+- [receiver adoption response](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5747145782)
+- [receiver publication response](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5747165347)
+
+2026-09-27、`Nakagawa-master` は、記事内で「未修正 / 未マージ」とされていたLocal Operatorのcontrol-plane経路が、その後 #1324 merge、v0.61.11 release、Issue #1310 closeまで進んでいることを一次公開記録から示し、状態表記の更新を提案しました。
+
+- [Nakagawa-master follow-up](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5853890886)
+
+receiverは一次資料を再確認し、「状況が動いたら更新すると書いていたのに6日間反映できていなかった」と明示したうえでPR #135を作成しました。PR本文は、**PR #111に寄せられた指摘で古い状態に気づいた**と記録しています。#135は記事本文、状態表、excerpt、primary source状態、編集履歴を更新し、さらにprimary sourceの状態だけを安全に差し替える `updatePrimarySources` 機能を追加してmergeされました。
+
+- [receiver update response](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5854722227)
+- [merged update PR #135](https://github.com/022740mix-spec/AI-News/pull/135)
+- [merge commit `2625b150`](https://github.com/022740mix-spec/AI-News/commit/2625b150eb2aa761ab47c475ef76ce33ddfbd3ac)
+
+receiver responseとPR本文にはClaude Code生成表記があります。そのため本ページは、これを**receiver account側の明示的採用・記事化・source更新・tooling変更**として記録しますが、独立した人間単独著作とは扱いません。
+
+**公開記録から確認できること:** origin review → receiverが提案を明示的に採用 → reader-facing独立記事を公開 → 後続のNakagawa follow-upが記事内の古い外部状態を特定 → receiverが一次資料を再確認 → reader-facing article sourceとsource-update toolingを変更 → PR #135 merge。  
+**まだ確認できないこと:** #135 merge後の更新版がproduction siteへdeploy済みであること、実読者数、読者行動、別receiverへの伝播、receiverからの自発的な人物origin再参照、独立した人間単独著作、理論体系全体への支持。
 
