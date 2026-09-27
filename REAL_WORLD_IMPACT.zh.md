@@ -778,3 +778,31 @@ PR作者明确确认这一coercion mechanics本身是正确的，随后在runnin
 **公开记录可确认:** review → 接收方确认mechanics → 独立运行验证 → 在真实data boundary上否定前提 → 移除不必要guard → PR模型说明被澄清。  
 **不主张:** merge、release、production use、用户规模影响、原始reachability前提本身正确，或对更广泛理论体系的认可。
 
+---
+
+## 28. LlamaIndex｜将defaulted positional parameter + `**kwargs` 的silent misbinding固定到code/test
+
+**对象:** [run-llama/llama_index#23272](https://github.com/run-llama/llama_index/pull/23272)  
+**当前状态:** review后receiver加入exact regression的code/test / 已focused re-check / PR open、未merge / repository CI green未确认
+
+PR #23272 处理的是：custom schema field名称与callable positional parameter名称不同时，single-argument `FunctionTool` 应如何选择compatibility fallback。
+
+初始patch把 `inspect.Signature.bind_partial()` 改为full `bind()`，从而修复了**required positional parameter未绑定**的情况。随后 `Nakagawa-master` 指出一个更隐蔽的变体：如果该positional parameter有default，同时callable接受 `**kwargs`，full bind会成功，但生成值可能只被 `kwargs` 吸收，函数最终返回default，形成silent misbinding。
+
+- [Nakagawa-master comment](https://github.com/run-llama/llama_index/pull/23272#issuecomment-5330425676)
+
+随后receiver commit `c15a95233bd7678923828b71f9f4f6b78d6b5ab5` 把这个exact regression直接加入sync / async tests，并增加partial parameter与field default的反向回归test，防止positional fallback被过度使用。
+
+implementation现在区分：
+- 这些kwargs是否能组成valid call；
+- 生成field是否真的绑定到了显式callable parameter。
+
+如果single generated field只是被 `**kwargs` 吸收，同时positional compatibility call有效，则保留positional fallback。
+
+- [receiver commit `c15a952`](https://github.com/run-llama/llama_index/commit/c15a95233bd7678923828b71f9f4f6b78d6b5ab5)
+- [focused re-check](https://github.com/run-llama/llama_index/pull/23272#issuecomment-5857485429)
+
+**公开记录可确认:** review具体指出defaulted positional + `**kwargs` silent misbinding → 同一PR下一commit加入exact regression和反向回归tests → focused re-check在该scope内未发现remaining blocker。  
+**不主张:** merge、release、production use、repository CI green、广泛用户影响，或receiver对Nakagawa-master的明确source attribution。commit message未明确写出source，因此因果归属保持有限。
+
+
