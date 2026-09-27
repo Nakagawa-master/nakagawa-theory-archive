@@ -13,7 +13,16 @@ SNSや検索から来た人向けの入口です。
 - [「承認しました」──でも、その後で中身が変わっていたら？](human-translation/entry-stories/06-approved-one-thing-executed-another.md)
 - [専門家を信じる。でも「訂正してはいけない」にしない](human-translation/entry-stories/07-trust-experts-without-making-them-uncorrectable.md)
 
-気になった1本の末尾から、同じ粒度の別の物語、公式派生物、公開source、原典へ進めます。
+気になった1本から、同じ粒度の別の物語へ横に進むか、関係する公式派生物・親原典へ縦に遡れます。題材ごとの行き先を先に示します。
+
+### 「美術は？」から来た方へ
+
+- [進路・仕事の三択をもう一度読む](human-translation/entry-stories/03-ai-made-the-menu.md) — 投稿の問いを、別の生活場面でも考える。
+- [同じ粒度で別の話を読む](human-translation/entry-stories/README.md) — 二重決済、噂、承認、仕事の失敗へ横に進む。
+- [進路から人間の判断力の未来線へ](human-translation/future-lines/02-human-approval-without-human-decision.md) — 3校の物語が仕事やAIの承認へどう伸びるかを読む。
+- [公式派生物223](derivatives/223/human-entry.md) → [親原典](https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-03/) — 条件と限界まで確かめる。
+
+### 別の題材から来た方へ
 
 → [7本をまとめて見る](human-translation/entry-stories/README.md)  
 → [24棚の世界地図](human-translation/WORLD_MAP.md)  
