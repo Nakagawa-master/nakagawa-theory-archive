@@ -58,6 +58,18 @@
 
 画面が教えているのは、現実の結果そのものではなく、**こちらが結果を確認できなかったこと**かもしれません。
 
+## 実際の第三者実装でも、「失敗」と「結果不明」は分けられた
+
+Clientverseの公開PR #27では、外部providerが送信を受け付けたあとでresponseだけ失われた場合、普通の失敗として再試行すると二重送信になり得る境界が扱われました。
+
+`Nakagawa-master` のreview後、repository ownerはこれをreal state-machine defectとして確認し、`outcome_unknown`、reconciliation、dispatch idempotency、response-loss regression coverageを実装しました。PRはその後mergeされています。
+
+- [Nakagawa-master review](https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690360136)
+- [repository owner response](https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690677339)
+- [merged PR #27](https://github.com/ebyron357/Clientverse-crm/pull/27)
+
+つまり公開記録で確認できるのは、「通信上は失敗に見えた」と「外部副作用が起きなかった」を同じ扱いにしない区別が、第三者側のstate machineとtestsへ入ったことです。
+
 覚えておくなら、これだけで十分です。
 
 > エラーが出たことと、処理が失敗したことは同じではない。  
