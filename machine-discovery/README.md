@@ -8,11 +8,15 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 
 | File | Role |
 |---|---|
-| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD303 path and navigation index. |
+| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD304 path and navigation index. |
 | [`research-positioning-map-v1.json`](research-positioning-map-v1.json) | Selected Nakagawa surfaces → adjacent research / overlap / added emphasis / non-equivalence; novelty remains open unless independently established. |
 | [`scholarly-metadata-v1.jsonld`](scholarly-metadata-v1.jsonld) | Schema.org CreativeWorkSeries metadata for scholarly/discovery routing; canonical claims remain at linked parent sources. |
 
-## Latest official derivative — OD303
+## Latest official derivative — OD304
+
+OD304 is the Vol. 11 route for compute, capability and resource feedback, evaluation-mediated allocation, durable class-formation signals and re-entry. Its seven public surfaces are in [`../derivatives/304/`](../derivatives/304/README.md); the canonical Parent is https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-11-compute-capability-resource-class-formation/ . Machine counts and the single category assignment are recorded in [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json).
+
+## Related official derivative — OD303
 
 OD303 is the Vol. 10 route for self-referential audit and role separation. Its seven public surfaces are in [`../derivatives/303/`](../derivatives/303/README.md); the canonical Parent is https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-10-self-referential-audit-role-separation/ . Machine counts and the single category assignment are recorded in [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json).
 
@@ -388,4 +392,3 @@ Person-level metadata is for public identity continuity. For a specific theory, 
 - [Theme / series navigation](../derivatives/CATEGORIES.md)
 - [Discovery Notes](../discovery-notes/README.md)
 - [Verification Guide](../VERIFICATION_GUIDE.md)
-

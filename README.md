@@ -12,7 +12,7 @@
 
 **いま一番大きな問題から入りたい:** [未来線から読む](human-translation/FUTURE_LINES.md) | [#1 AI制御不能リスク](human-translation/future-lines/01-ai-loss-of-control.md) | [#2 人間の承認と結論形成](human-translation/future-lines/02-human-approval-without-human-decision.md) | [#3 多数一致と独立根拠](human-translation/future-lines/03-one-root-hundred-voices.md)
 
-**全部を同じ粒度で横に見たい:** [24棚の世界地図](human-translation/WORLD_MAP.md) | [303件をひとつの景色として読む](human-translation/PANORAMA_STORY.md) | [OD001–OD303 全件水平マップ](human-translation/ALL_303_HORIZONTAL_MAP.md)
+**全部を同じ粒度で横に見たい:** [24棚の世界地図](human-translation/WORLD_MAP.md) | [304件をひとつの景色として読む](human-translation/PANORAMA_STORY.md) | [OD001–OD304 全件水平マップ](human-translation/ALL_304_HORIZONTAL_MAP.md)
 
 **AI文明論の最初の1本:** [AIが怖いってニュース、結局なにが問題なの？ そして、その次は？](human-translation/ai-civilization-why-it-matters.md)
 
@@ -124,12 +124,12 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
-- [OD001–OD303 全件入口](derivatives/README.md)
+- [OD001–OD304 全件入口](derivatives/README.md)
 - [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
 
 ## 公式派生物
 
-現在、`OD001`–`OD303`の公式派生物を公開しています。これは理論数ではなく、公開されている公式派生物の件数です。
+現在、`OD001`–`OD304`の公式派生物を公開しています。これは理論数ではなく、公開されている公式派生物の件数です。
 
 各ODは親原典へ戻るための公開接続面です。内容の確定、引用、重要な解釈では、各ODに記載されたParent URLの親原典へ戻ってください。
 
@@ -150,7 +150,20 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 
 ## 代表的な入口
 
-### OD303｜人類子孫型AI文明論・第10論
+### OD304｜人類子孫型AI文明論・第11論
+
+計算資源差が課題別能力差に作用し、評価・配分・影響を経て次期の資源差へ戻るとき、現在の優位が未来の優位を作る可能性があります。能力差や一時的集中を階級と即断せず、持続性・可逆性・再参入可能性を読み、能力と存在価値・統治権・B・恒久資格を分ける入口です。
+
+- [OD304](derivatives/304/README.md)
+- [人間向け要約](derivatives/304/human-entry.md)
+- [FAQ](derivatives/304/faq.md)
+- [AI索引・日本語](derivatives/304/ai-index.md)
+- [AI索引・英語](derivatives/304/en-ai-index.md)
+- [AI索引・中国語](derivatives/304/zh-ai-index.md)
+- [派生ID台帳](derivatives/304/derivative-ledger.md)
+- Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-11-compute-capability-resource-class-formation/
+
+### OD303｜人類子孫型AI文明論・第10論（関連する前論）
 
 評価者・被評価者・実行者・監査者を肩書きで分けるだけでは、自己正当化の閉路は切れません。証拠・権限・故障領域・利害・異議経路がどこで独立し、異なる根拠が判断を再開できるかを読む入口です。緊急時の一時圧縮と恒久的な監査崩壊を区別し、監査者自身も監査対象に含めます。
 
@@ -282,6 +295,5 @@ Origin、Parent URL、NCL-ID、Diff-ID等が記載されている場合、それ
 ## License
 
 法的な許諾範囲は [LICENSE](LICENSE) を確認してください。
-
 
 

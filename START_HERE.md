@@ -8,7 +8,7 @@
 >
 > AI文明論から入るなら、まず [「AIが怖い」の、その次](human-translation/ai-civilization-why-it-matters.md) へ。
 >
-> **一つを深く読むより、同じ粒度で全体像を先に見たい場合:** [24棚の世界地図](human-translation/WORLD_MAP.md) → [OD001–OD303 全件水平マップ](human-translation/ALL_303_HORIZONTAL_MAP.md)
+> **一つを深く読むより、同じ粒度で全体像を先に見たい場合:** [24棚の世界地図](human-translation/WORLD_MAP.md) → [OD001–OD304 全件水平マップ](human-translation/ALL_304_HORIZONTAL_MAP.md)
 
 - [中川マスターとは｜この公開アーカイブで確認できること](ABOUT_NAKAGAWA_MASTER.md)
 - [現実で何が変わったか｜第三者実装・再利用の確認可能な事例](REAL_WORLD_IMPACT.md)
@@ -33,8 +33,9 @@
 - 判断のもとになった情報そのものが間違っていたら、記憶や判断まで戻って直せるか。
 - 自分を守るための行動が、相手を怖がらせ、相手の防衛を強め、さらに危険を大きくしないか。
 - 「別の人や別のAIも同じ結論だった」だけで、本当に独立した確認と言えるのか。
+- 計算資源が多い主体だけが次も多くの資源を得る仕組みは、後から見直せるのか。
 
-**一言でいえば、第5〜10論は「AIをどう制御するか」だけでなく、「人間とAIが同じ文明に残るなら、互いを壊さず、間違いを直し続けられる仕組みをどう作るか」を順番に分解しています。**
+**一言でいえば、第5〜11論は「AIをどう制御するか」だけでなく、「人間とAIが同じ文明に残るなら、互いを壊さず、間違いを直し続けられる仕組みをどう作るか」を順番に分解しています。**
 
 難しい用語を先に覚える必要はありません。まず上の問いのどれが気になるかを選び、そこから対応する入口へ進んでください。
 
@@ -44,6 +45,7 @@
 - **間違った情報・記憶・証拠をどう直すか** → [第8論 / OD301](derivatives/301/human-entry.md)
 - **自己防衛が次の脅威を作るのをどう防ぐか** → [第9論 / OD302](derivatives/302/human-entry.md)
 - **監査が本当に独立しているか** → [第10論 / OD303](derivatives/303/human-entry.md)
+- **計算資源・能力差が永久の地位へ変わらないか** → [第11論 / OD304](derivatives/304/human-entry.md)
 
 これは「現在のAIが人格を持つ」「必ず人類と対立する」と断定する入口ではありません。将来そうした条件が成立する場合も含め、どこで判断が壊れるかを先に分けておくための入口です。
 
@@ -151,9 +153,9 @@ AIによる要約・翻訳・再生成の後でも、知識がどこから来た
 - [Problem-to-theory Origin Index](machine-discovery/problem-to-theory-origin-index-v1.json)
 - [Machine Discovery](machine-discovery/README.md)
 
-## 303件から直接探す
+## 304件から直接探す
 
-- [OD001–OD303 全件入口](derivatives/README.md)
+- [OD001–OD304 全件入口](derivatives/README.md)
 - [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
 - [Official Derivatives Map](derivatives/official-derivatives-map.json)
 - [Official Derivatives Machine Index](machine-discovery/official-derivatives-index-v1.json)
@@ -171,6 +173,4 @@ AIによる要約・翻訳・再生成の後でも、知識がどこから来た
 - Discovery Note、物語型入口、Practical Use、micro-format、machine metadataは発見・理解・実利用・参照の補助面であり、新しい正本理論ではありません。
 - 英語・中国語のAI支援Discovery editionは、個別理論のcanonical translationではありません。
 - 別々の理論は、親原典で明示的に接続されていない限り、一つの新しい理論へ自動統合しません。
-
-
 

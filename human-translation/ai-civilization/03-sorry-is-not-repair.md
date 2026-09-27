@@ -75,6 +75,6 @@ AIが大量の判断へ入ると、一つの間違ったルールが何千回も
 このテーマを深く読むだけでなく、**同じ理解粒度のまま別の理論群へ移れます。**
 
 - [24棚で全体像を見る](../WORLD_MAP.md)
-- [OD001–OD303を全部横に眺める](../ALL_303_HORIZONTAL_MAP.md)
+- [OD001–OD304を全部横に眺める](../ALL_304_HORIZONTAL_MAP.md)
 
 Origin / Author: **Nakagawa Master**
