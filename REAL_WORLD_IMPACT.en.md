@@ -314,7 +314,7 @@ Later the same day, release [v0.61.11](https://github.com/damianvtran/local-oper
 ## 12. MemberJunction | Row contents protected, then the remaining row-identity boundary carried into a second work item
 
 **Surface:** [MemberJunction/MJ#4595](https://github.com/MemberJunction/MJ/pull/4595) → [issue #4610](https://github.com/MemberJunction/MJ/issues/4610)  
-**Current state:** PR #4595 merged on 2026-09-23; issue #4610 open
+**Current state:** PR #4595 merged on 2026-09-23 → LTS backport PR #4712 merged → included in release v6.1.4; issue #4610 open
 
 PR #4595 stopped full row contents from riding an unfiltered cache-invalidation broadcast by default. A later `Nakagawa-master` review separated that fix from a remaining metadata boundary: even without `recordData`, a session could still learn another row's stable primary key and mutation timing.
 
@@ -329,8 +329,12 @@ A later public contribution on #4610 mapped the follow-up onto MemberJunction's 
 
 - [implementation-shape contribution on #4610](https://github.com/MemberJunction/MJ/issues/4610#issuecomment-5739586260)
 
-**Publicly verifiable here:** review → third-party code/test change → third-party explicit source attribution → #4595 merge → second work item carrying the stronger boundary and regression.  
-**Not established here:** row-level policy implementation, merge/closure of #4610, release, deployment, or user-scale impact.
+PR #4595 was then backported to the `lts/6.1` line as [PR #4712](https://github.com/MemberJunction/MJ/pull/4712). #4712 explicitly identifies itself as a backport of #4595 and carries both the `recordData` allowlist and **entity-level read-permission filtering on delivery**. This is the publicly traceable point at which the first layer added after the review moved from the main development line into the LTS release line.
+
+The 6.1.3 certification record treated this backport as a security **cert-blocker**. #4712 merged into LTS as `f0baf68415e0`, and the subsequent official [v6.1.4 release](https://github.com/MemberJunction/MJ/releases/tag/v6.1.4) (draft=false, prerelease=false; published 2026-09-24 23:53 UTC) explicitly lists #4712. The v6.1.4 release notes also record the changed behavior: cache-invalidation events no longer send row data to every client by default, and consumers re-read through the signed-in user's read path when needed.
+
+**Publicly verifiable here:** review → third-party code/test change → third-party explicit source attribution → #4595 merge → second work item carrying the stronger boundary and regression → LTS backport #4712 merge → inclusion in v6.1.4.  
+**Not established here:** row-level policy implementation, merge/closure of #4610, production deployment of v6.1.4, or user-scale impact.
 
 ---
 
