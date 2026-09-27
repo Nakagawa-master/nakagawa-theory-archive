@@ -757,3 +757,24 @@ PR author公开回复 **“Addressed the outstanding points”**，并明确指�
 
 **公开可确认：** public boundary proposal/review → reporter明确同意 → 第三方author明确表示已address这些outstanding points → code/tests/docs修改 → focused re-check。  
 **尚未确认：** PR merge、repository CI green、release、production use、用户规模、一般原则的知识优先权或对整个理论体系的支持。
+
+---
+
+## 27. n8n｜审查促成运行时验证，并澄清真实的数据边界
+
+**对象:** [n8n-io/n8n#37613](https://github.com/n8n-io/n8n/pull/37613)  
+**当前状态:** 接收方明确复述 / 运行实例验证 / PR数据模型澄清 / PR仍为open draft、未合并
+
+`Nakagawa-master` 的review指出：native `join()` 与无比较器的 `toSorted()` 会对数组元素做字符串转换，因此**如果**带自定义 `toString()` 的live object能够真正到达native-evaluation边界，就可能出现host侧coercion hook执行的问题。
+
+- [Nakagawa-master review](https://github.com/n8n-io/n8n/pull/37613#pullrequestreview-5325886846)
+
+PR作者明确确认这一coercion mechanics本身是正确的，随后在running n8n instance上验证其前提。验证显示，Code / Set node输出会在node boundary被JSON-normalize，因此该类exotic object不会以live coercible object的形式到达native evaluation。
+
+- [receiver re-verification and explanation](https://github.com/n8n-io/n8n/pull/37613#issuecomment-5856928471)
+
+调查过程中曾短暂加入防御guard；在运行时前提被否定后，作者撤掉这些guard，并把PR描述中的data model改为与真实边界一致。因此，本case**不记录为Nakagawa提出的guard被采用**。可验证的外部作用是：review促使第三方进行了额外运行验证，并把设计边界说明得更准确。
+
+**公开记录可确认:** review → 接收方确认mechanics → 独立运行验证 → 在真实data boundary上否定前提 → 移除不必要guard → PR模型说明被澄清。  
+**不主张:** merge、release、production use、用户规模影响、原始reachability前提本身正确，或对更广泛理论体系的认可。
+
