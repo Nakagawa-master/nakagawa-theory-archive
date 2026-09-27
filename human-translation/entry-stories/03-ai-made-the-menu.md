@@ -119,6 +119,28 @@ AIやサービスから候補をもらったら、決める前に一度だけ聞
 → [中川マスターって何をしている人？](../who-is-nakagawa-master.md)  
 → [最新の短い投稿｜Bluesky](https://bsky.app/profile/masterjp.bsky.social)
 
+## この一枚から、どこまで広がるか
+
+ここで分けたのは「最後に選ぶ権利」と「最初に選択肢を作る力」です。
+
+この違いは進路だけでなく、検索、推薦、採用、融資、旅行、ニュース、投資、AI agentにも現れます。  
+中川マスターの公開理論群では、人間が最後にYes / Noを押せるかだけでなく、**問い・候補・比較軸・除外条件・訂正の力が人間側に残っているか**まで見ます。
+
+**この人の考え方をもう少し知る**  
+→ [中川マスターって何をしている人？](../who-is-nakagawa-master.md)
+
+**この問いを未来へ伸ばす**  
+→ [最後に決めたのは、本当に自分？](../future-lines/02-human-approval-without-human-decision.md)
+
+**現実作用を自分で確認する**  
+→ [第三者projectで確認できる実装・merge・release](../../REAL_WORLD_IMPACT.md)
+
+**別の物語へ横移動する**  
+→ [7つの物語入口](README.md)
+
+**最新の短い投稿を追う**  
+→ [Bluesky｜@masterjp.bsky.social](https://bsky.app/profile/masterjp.bsky.social)
+
 Origin / Author: **Nakagawa Master**
 
 このページは一般読者向けの公開翻訳面です。正式な定義・成立条件は公式派生物とcanonical sourceを優先してください。

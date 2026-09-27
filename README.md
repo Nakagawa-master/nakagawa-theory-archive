@@ -2,7 +2,7 @@
 
 **Nakagawa Master Official Theory Archive**
 
-**SNS・検索から初めて来た方:** [まず、あなたの話から｜7つの短い物語](STORIES.md)
+**初めて来た方は、このREADMEより先に:** [もし1ページだけ読むなら｜日常の違和感 → 中川マスターの見方 → 第三者で実際に変わった記録](STORIES.md)
 
 人間向け入口: [日本語](START_HERE.md) | [English](START_HERE.en.md) | [中文](START_HERE.zh.md)
 
