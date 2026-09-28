@@ -886,6 +886,28 @@
         "actor": "yiliang114",
         "url": "https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5818159716",
         "statement": "Adopted in 3d06e1ad8e, in a slightly lighter form than the full digest-binding flow."
+      },
+      "person_origin_return": {
+        "verified_at": "2026-09-28",
+        "stage": "prompt_free_cross_thread_receiver_rereference_with_new_implementation_carry",
+        "followup_pull_request": "https://github.com/QwenLM/qwen-code/pull/12895",
+        "actor": "yiliang114",
+        "source_relation": "The later receiver-owned PR explicitly states that Nakagawa-master pointed out the maxCostUsd semantic failure.",
+        "prompt_free_boundary": "At verification time, PR #12895 contained no new Nakagawa-master comment or review.",
+        "implementation_carry": [
+          "maxCostUsd is enforced against worst-case request caps rather than only forecast cost",
+          "unbounded thinking is refused when a hard maxCostUsd cannot be bounded",
+          "thinking budget is included in the bound when applicable",
+          "user documentation distinguishes forecast from the hard cap",
+          "regression coverage rejects low-forecast/high-cap requests and preserves a low-cap allowed case"
+        ],
+        "current_state": "open_unmerged",
+        "not_claimed": [
+          "merge or release of PR #12895",
+          "meaningful human audience scale",
+          "recurring or broad person-origin rereference",
+          "whole-theory endorsement"
+        ]
       }
     },
     {
