@@ -810,7 +810,7 @@ implementation现在区分：
 ## 29. AI-News｜让已发布文章追随一次资料的状态变化
 
 **对象：** [AI-News PR #111](https://github.com/022740mix-spec/AI-News/pull/111) → 已发布文章 `agent-self-authorization-approval-gate-2026` → [PR #135](https://github.com/022740mix-spec/AI-News/pull/135)  
-**当前状态：** receiver明确采用并发布独立文章 / 后续follow-up发现状态陈旧 / receiver重新核对一次资料并更新文章及source更新工具 / PR #135已merge / 更新版production deployment与读者规模尚未独立确认
+**当前状态：** receiver明确采用并发布独立文章 / 后续follow-up发现状态陈旧 / receiver重新核对一次资料并更新文章及source更新工具 / PR #135已merge / merge commit的GitHub Pages build与deploy均已独立确认成功 / 读者规模尚未确认
 
 在PR #111中，`Nakagawa-master` 建议把尚未确认的报道事件，与可以通过公开实现记录核验的authority-increasing transition分开。
 
@@ -830,9 +830,38 @@ receiver重新检查一次资料，承认状态追踪晚了6天，并创建PR #1
 - [receiver update response](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5854722227)
 - [merged update PR #135](https://github.com/022740mix-spec/AI-News/pull/135)
 - [merge commit `2625b150`](https://github.com/022740mix-spec/AI-News/commit/2625b150eb2aa761ab47c475ef76ce33ddfbd3ac)
+- [GitHub Pages deployment run `36310141967`](https://github.com/022740mix-spec/AI-News/actions/runs/36310141967) — build / deploy均success，environment URL为 `https://022740mix-spec.github.io/AI-News/`
 
 receiver回应和PR文本带有Claude Code生成标记，因此这里只记录receiver账号侧的明确采用、发布、source状态修正与tooling变化，不主张独立人类单独著作。
 
-**公开可确认：** review → receiver明确采用 → 独立文章发布 → follow-up指出陈旧外部状态 → receiver重查一次资料 → 修改article/source tooling → PR #135 merge。  
-**尚未确认：** 更新版production deployment、实际读者数量与行为、向其他receiver传播、自发的人物origin再引用、独立人类单独著作，或对完整理论体系的认可。
+**公开可确认：** review → receiver明确采用 → 独立文章发布 → follow-up指出陈旧外部状态 → receiver重查一次资料 → 修改article/source tooling → PR #135 merge → 同一merge commit的GitHub Pages build / deploy成功。  
+**尚未确认：** 实际读者数量与行为、向其他receiver传播、自发的人物origin再引用、独立人类单独著作，或对完整理论体系的认可。
 
+
+
+---
+
+## 30. LlamaIndex｜修复dict形式MCP非文本content的semantic loss
+
+**对象：** [run-llama/llama_index#23261](https://github.com/run-llama/llama_index/pull/23261)  
+**当前状态：** receiver明确承认serialized-content gap并修改code/test / 已focused re-check / PR open、未merge / broader CI与live MCP验证尚未确认
+
+PR #23261 为MCP `CallToolResult` 到LlamaIndex content blocks增加success-path parsing。object形式已经能够把text / image / audio / embedded resource分别转换为semantic blocks，但dict / wire-format分支只对text做semantic处理，image、audio和resource会退化成dict字符串。
+
+`Nakagawa-master` 的review指出这一非对称性，要求dict形式也保持与object形式相同的semantics，并建议加入dict image、audio、embedded-resource text以及unknown fallback的回归matrix。
+
+- [Nakagawa-master review](https://github.com/run-llama/llama_index/pull/23261#pullrequestreview-5331158205)
+
+PR作者明确回复 **“Thanks for catching the serialized-content gap.”**，并在current head `5164d2b303da645dde2a92527a757a4908707dd3` 中让dict/object内容走同一套structural field-access path。
+
+- [receiver response](https://github.com/run-llama/llama_index/pull/23261#issuecomment-5861650879)
+- [receiver commit `5164d2b`](https://github.com/run-llama/llama_index/commit/5164d2b303da645dde2a92527a757a4908707dd3)
+
+实现会先对dict image / audio payload做base64 decode，再构造 `ImageBlock` / `AudioBlock`；embedded-resource text保留为 `TextBlock`；unknown / malformed shape继续走text fallback。tests同时固定dict/object两种形式下的text / image / audio / resource四类。author报告focused test file为39 passed / 3 skipped，同时明确说明该revision之后没有重新运行broader tools suite、mypy，也没有用live MCP server验证。
+
+随后 `Nakagawa-master` 对current head做focused re-check，并记录在该serialized-content scope内没有remaining blocker。
+
+- [focused re-check](https://github.com/run-llama/llama_index/pull/23261#issuecomment-5861899474)
+
+**公开可确认：** Nakagawa review具体指出dict形式non-text semantic loss → receiver明确承认gap → 同一PR修改parser与dict/object回归matrix → focused re-check。  
+**尚未确认：** PR merge、release、production use、repository全体CI green、broader tools / mypy / live MCP验证、用户规模影响、一般原理的知识优先权，或对完整理论体系的认可。
