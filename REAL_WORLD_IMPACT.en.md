@@ -805,7 +805,7 @@ The implementation now distinguishes “can these kwargs form a valid call?” f
 ## 29. AI-News | A published article was brought back into sync with changed primary-source state, and the update path itself was hardened
 
 **Surface:** [022740mix-spec/AI-News#111](https://github.com/022740mix-spec/AI-News/pull/111) → published article `agent-self-authorization-approval-gate-2026` → [PR #135](https://github.com/022740mix-spec/AI-News/pull/135)  
-**Current state:** receiver explicitly adopted the separation and published a standalone article / later follow-up caught stale status / receiver re-checked primary records and updated article source state / PR #135 merged / deployment of the updated version and reader scale are not independently verified
+**Current state:** receiver explicitly adopted the separation and published a standalone article / later follow-up caught stale status / receiver re-checked primary records and updated article source state / PR #135 merged / GitHub Pages build and deploy for the merge commit independently verified successful / reader scale not established
 
 On PR #111, `Nakagawa-master` proposed separating unverified reported incidents from a distinct, publicly verifiable implementation example about authority-increasing transitions. The review separated authentication, capability, authority, and human approval, and noted that a transition such as `ask → auto` is not made safe merely because it can later be reversed.
 
@@ -825,9 +825,38 @@ The receiver re-checked the primary records, acknowledged that the promised stat
 - [receiver update response](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5854722227)
 - [merged update PR #135](https://github.com/022740mix-spec/AI-News/pull/135)
 - [merge commit `2625b150`](https://github.com/022740mix-spec/AI-News/commit/2625b150eb2aa761ab47c475ef76ce33ddfbd3ac)
+- [GitHub Pages deployment run `36310141967`](https://github.com/022740mix-spec/AI-News/actions/runs/36310141967) — both build and deploy completed successfully; environment URL: `https://022740mix-spec.github.io/AI-News/`
 
 The receiver responses and PR text are marked as generated with Claude Code. This page therefore records **receiver-account adoption, reader-facing publication, source-state correction, and tooling change**, not unaided human authorship.
 
-**Publicly verifiable:** origin review → explicit receiver adoption → standalone reader-facing publication → later Nakagawa follow-up identifies stale external state → receiver re-checks primary sources → article source state and update tooling change → PR #135 merges.  
-**Not established:** production deployment of the updated #135 version, reader count or behavior, propagation to another receiver, voluntary person-origin re-reference, unaided human authorship, or endorsement of the wider theory corpus.
+**Publicly verifiable:** origin review → explicit receiver adoption → standalone reader-facing publication → later Nakagawa follow-up identifies stale external state → receiver re-checks primary sources → article source state and update tooling change → PR #135 merges → GitHub Pages build/deploy for the merge commit succeeds.  
+**Not established:** reader count or behavior, propagation to another receiver, voluntary person-origin re-reference, unaided human authorship, or endorsement of the wider theory corpus.
 
+
+
+---
+
+## 30. LlamaIndex | Dict-form MCP non-text content now preserves semantic blocks
+
+**Target:** [run-llama/llama_index#23261](https://github.com/run-llama/llama_index/pull/23261)  
+**Current state:** receiver explicitly acknowledged the serialized-content gap and changed code/tests / focused re-check completed / PR open and unmerged / broader CI and live-MCP validation not established
+
+PR #23261 adds success-path parsing from MCP `CallToolResult` into LlamaIndex content blocks. Object-shaped results already mapped text, image, audio, and embedded resources semantically, while the dict/wire-format branch only treated text semantically and stringified image, audio, and resource dictionaries.
+
+A `Nakagawa-master` review identified that asymmetry and asked that serialized dict content preserve the same semantics as object content, with regressions for dict image, audio, embedded-resource text, and the unknown-content fallback.
+
+- [Nakagawa-master review](https://github.com/run-llama/llama_index/pull/23261#pullrequestreview-5331158205)
+
+The PR author replied **“Thanks for catching the serialized-content gap.”** and changed current head `5164d2b303da645dde2a92527a757a4908707dd3` so dict and object content use the same structural field-access path.
+
+- [receiver response](https://github.com/run-llama/llama_index/pull/23261#issuecomment-5861650879)
+- [receiver commit `5164d2b`](https://github.com/run-llama/llama_index/commit/5164d2b303da645dde2a92527a757a4908707dd3)
+
+The implementation base64-decodes dict image/audio payloads before constructing `ImageBlock` / `AudioBlock`, preserves embedded-resource text as `TextBlock`, and retains textual fallback for unknown or malformed shapes. Tests pin text/image/audio/resource for both dict and object forms. The author reported 39 passed / 3 skipped in the focused test file, while explicitly noting that the broader tools suite, mypy, and a live MCP server were not rerun/tested after the revision.
+
+A focused re-check then confirmed no remaining blocker within the serialized-content scope.
+
+- [focused re-check](https://github.com/run-llama/llama_index/pull/23261#issuecomment-5861899474)
+
+**Publicly verifiable:** Nakagawa review identifies dict-form non-text semantic loss → receiver explicitly acknowledges the gap → parser and dict/object regression matrix change on the same PR → focused re-check.  
+**Not established:** PR merge, release, production use, green repository-wide CI, broader tools/mypy/live-MCP validation, user-scale impact, intellectual priority over the general principle, or endorsement of the wider theory corpus.
