@@ -1342,10 +1342,9 @@
           "added updatePrimarySources tooling so source-status metadata can be corrected without leaving article text and source state inconsistent"
         ]
       },
-      "current_stage": "merge_or_integration",
-      "next_verification_gate": "verify deployment of the updated article version, reader return, prompt-free reuse in another reader-facing article, or voluntary origin re-reference",
+      "current_stage": "release_deployment_or_verified_use",
+      "next_verification_gate": "verify reader return, prompt-free reuse in another reader-facing article, or voluntary origin re-reference",
       "not_claimed": [
-        "production deployment of the updated PR #135 version",
         "reader scale or reader behavior change",
         "propagation to another receiver",
         "voluntary person-origin re-reference",
@@ -1361,7 +1360,62 @@
           "receiver-owned public carry"
         ],
         "canonical_return": "https://master.ricette.jp"
+      },
+      "deployment": {
+        "verified": true,
+        "workflow_run": "https://github.com/022740mix-spec/AI-News/actions/runs/36310141967",
+        "head_sha": "2625b150eb2aa761ab47c475ef76ce33ddfbd3ac",
+        "build": "success",
+        "deploy": "success",
+        "environment_url": "https://022740mix-spec.github.io/AI-News/",
+        "boundary": "successful GitHub Pages deployment verifies publication of the merge artifact; reader count or behavior is not inferred"
       }
+    },
+    {
+      "case_id": "llamaindex-mcp-dict-nontext-semantic-preservation",
+      "topic": "serialized/dict MCP non-text content should preserve the same semantic blocks as object-shaped content",
+      "external_repository": "run-llama/llama_index",
+      "origin_action": {
+        "type": "pull_request_review",
+        "url": "https://github.com/run-llama/llama_index/pull/23261#pullrequestreview-5331158205",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action",
+        "summary": "Identified that dict/wire-format MCP image, audio, and embedded-resource content were stringified while object-shaped content was semantically parsed."
+      },
+      "third_party_response": {
+        "actor": "feiiiiii5",
+        "url": "https://github.com/run-llama/llama_index/pull/23261#issuecomment-5861650879",
+        "relationship": "PR author explicitly thanked Nakagawa-master for catching the serialized-content gap and described the parser/test changes"
+      },
+      "receiver_change": {
+        "commit": "5164d2b303da645dde2a92527a757a4908707dd3",
+        "url": "https://github.com/run-llama/llama_index/commit/5164d2b303da645dde2a92527a757a4908707dd3",
+        "changes": [
+          "dict-shaped and object-shaped MCP content use one structural field-access path",
+          "dict image and audio payloads preserve semantic ImageBlock and AudioBlock behavior",
+          "dict embedded-resource text becomes TextBlock instead of a stringified dictionary",
+          "unknown or malformed content keeps textual fallback",
+          "dict/object regression matrix covers text, image, audio, and embedded resource"
+        ],
+        "author_reported_validation": "focused test file 39 passed / 3 skipped; broader tools suite, mypy, and live MCP server explicitly not rerun/tested"
+      },
+      "origin_recheck": {
+        "url": "https://github.com/run-llama/llama_index/pull/23261#issuecomment-5861899474",
+        "result": "no remaining blocker within the serialized-content scope; no full-PR approval or broader-validation claim"
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "not_claimed": [
+        "pull request merge",
+        "release",
+        "production use",
+        "green repository-wide CI",
+        "broader tools suite or mypy validation",
+        "live MCP server validation",
+        "user-scale effect",
+        "intellectual priority over the general principle",
+        "whole-theory endorsement"
+      ],
+      "public_human_case": "REAL_WORLD_IMPACT.md#30-llamaindexdict形式mcp非テキストcontentのsemantic-lossをcodetestへ修正"
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
