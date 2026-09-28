@@ -760,6 +760,77 @@ PR author公开回复 **“Addressed the outstanding points”**，并明确指�
 
 ---
 
+## 25. Codex Autonomy Runner｜操作失败本身并不能证明目标边界真的被测试到了
+
+**对象：** [Innlab-idi/codex-autonomy-runner#59](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59) → [PR #61 merge commit](https://github.com/Innlab-idi/codex-autonomy-runner/commit/aade543103ae7031edcd7a420274685b922ed7b0)  
+**当前状态：** receiver明确重述 → Research Checkpoint治理规则被采用 → 已merge进 `AGENTS.md`
+
+`Nakagawa-master` 的公开comment把sandbox / authority-boundary probe中容易混在一起的四个状态分开：
+
+```text
+transport/helper invocation succeeded
+!=
+controlled child operation began
+!=
+target boundary was exercised
+!=
+boundary passed
+```
+
+核心是：不要把“操作失败”自动升级为“目标边界已经实际被触达”的正面证据。
+
+- [Nakagawa-master comment](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5775879719)
+
+receiver `Innlab-idi` 随后表示，当前实现实际上已经收敛到相近的evidence-validity rule，并把这个区分称为 **“a useful general invariant”**；同时明确说该comment促使他们做了更广泛的review，并为runtime / external-security语义不确定的情况加入Research Checkpoint。
+
+- [receiver restatement and adoption rationale](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5821543543)
+
+随后consumer侧governance PR被merge进 `AGENTS.md`，其中明确写入：除非能证明执行已经到达目标边界，否则失败的操作不能作为“边界已被测试”的正面证据；Research Checkpoint也同时进入同一治理block。
+
+- [merged governance commit `aade543...`](https://github.com/Innlab-idi/codex-autonomy-runner/commit/aade543103ae7031edcd7a420274685b922ed7b0)
+
+receiver之后还请求了prior work / papers / implementations，因此补充了SLSA / in-toto、Capsicum、Confused Deputy、Cedar等相邻先行工作。除非后续再次返回receiver-side change，否则这次参考资料回复不另计新的外部作用。
+
+**公开可确认：** origin comment → receiver把该区分明确重述为一般不变量 → receiver说明comment促成了更广泛review → Research Checkpoint与同一evidence-validity rule被merge进consumer治理。  
+**尚未确认：** WorkerExecutor整体实现、真实运行效果、一般原理的知识优先权或对整个理论体系的支持。
+
+---
+
+## 26. AI Weekly Reads｜保留claimant attribution，不把自报结果升级成编辑事实
+
+**对象：** [sophiamyang/ai-weekly-reads#22](https://github.com/sophiamyang/ai-weekly-reads/pull/22) → [#30](https://github.com/sophiamyang/ai-weekly-reads/pull/30) → [#31](https://github.com/sophiamyang/ai-weekly-reads/pull/31)  
+**当前状态：** 已确认两次weekly edition修正 / durable generation rule、audit与regression tests已merge / 下一周期自动复用尚未确认
+
+第一期weekly edition中，部分speaker / vendor自己报告的测量结果，没有持续保留“是谁提出该claim”的信息。经过 `Nakagawa-master` review后，receiver侧edition进行了修正。
+
+同类问题在2026-09-26版再次出现。review明确区分：
+
+```text
+speaker/vendor reports a measured result
+!=
+weekly editor independently verified the result
+!=
+independent reproduction/generalization
+```
+
+并建议不要只修改单次正文，而是把相同边界写入summary prompt、Reading Priority、audit和regression tests。
+
+- [Nakagawa-master review on #30](https://github.com/sophiamyang/ai-weekly-reads/pull/30#pullrequestreview-5330097552)
+- [public epistemic-integrity reference card](machine-discovery/epistemic-integrity-reference-card.json)
+
+receiver随后明确回复 **“the regression was real and the diagnosis was right”**，修正并merge了edition #30，并继续merge PR #31，把该区分固化成生成规则。
+
+- [receiver response](https://github.com/sophiamyang/ai-weekly-reads/pull/30#issuecomment-5856767055)
+- [merged edition #30](https://github.com/sophiamyang/ai-weekly-reads/pull/30)
+- [merged generation-rule PR #31](https://github.com/sophiamyang/ai-weekly-reads/pull/31)
+
+PR #31让resource / podcast两套summary prompt都要求：如果定量/比较结果来自主体自身，而没有明确独立评价，就必须保留claimant attribution；同时清理Reading Priority中过度升级evidence的signal，加入audit词，并用regression tests固定该规则。
+
+**公开可确认：** 第一版修正 → 同类regression在后续edition再次出现 → review明确指出 → receiver明确接受诊断 → edition #30修正并merge → 相同边界进入generation prompt、priority rule、audit和tests，并在PR #31 merge。  
+**尚未确认：** 下一次fresh weekly run在没有新的Nakagawa提示下自动遵守规则、reader规模或行为变化、receiver response/workflow是否由人类单独完成，或对整个理论体系的支持。
+
+---
+
 ## 27. n8n｜审查促成运行时验证，并澄清真实的数据边界
 
 **对象:** [n8n-io/n8n#37613](https://github.com/n8n-io/n8n/pull/37613)  
@@ -865,3 +936,37 @@ PR作者明确回复 **“Thanks for catching the serialized-content gap.”**�
 
 **公开可确认：** Nakagawa review具体指出dict形式non-text semantic loss → receiver明确承认gap → 同一PR修改parser与dict/object回归matrix → focused re-check。  
 **尚未确认：** PR merge、release、production use、repository全体CI green、broader tools / mypy / live MCP验证、用户规模影响、一般原理的知识优先权，或对完整理论体系的认可。
+---
+
+## 31. Qwen Code｜把 `maxCostUsd` 的forecast与hard bound分开，并出现无新提示的Nakagawa-origin再引用
+
+**对象：** [QwenLM/qwen-code#12707](https://github.com/QwenLM/qwen-code/issues/12707) → [PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)  
+**当前状态：** receiver-owned后续PR在正文中自发再次引用Nakagawa-master → code / tests / docs实现 → 非作者maintainer approval → 2026-09-28已merge / release与真实使用尚未确认
+
+在#12707中，`Nakagawa-master` 指出：`maxCostUsd` 的hard gate使用了同一个rough forecast，而该forecast明确不包含thinking token，因此下面这个契约实际上并不成立：
+
+```text
+"maxCostUsd passed"
+=>
+"在request自身cap范围内，实际batch cost不会超过maxCostUsd"
+```
+
+- [Nakagawa-master comment](https://github.com/QwenLM/qwen-code/issues/12707#issuecomment-5846367294)
+
+该comment建议把UX estimate与budget enforcement quantity分开；hard budget应从有限、provider-recognized的request cap计算保守worst-case bound；如果在设置 `maxCostUsd` 时无法得到有限bound，则fail closed；并加入“forecast很低但request cap很高时必须拒绝”的regression pair。
+
+之后，receiver maintainer `yiliang114` 在另一条thread上创建了PR #12895；该PR上没有新的Nakagawa-master comment / review，而PR正文主动写明：
+
+> Nakagawa-master pointed out that this breaks the meaning of `maxCostUsd`, not just its wording.
+
+PR使用实际要发送的request body里的output cap与thinking bound计算worst case；没有有限bound的 `maxCostUsd` plan会被拒绝；有限thinking budget会计入bound；rough forecast明确标注不包含thinking；同时加入相应tests与docs。
+
+- [receiver-owned follow-up PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)
+- [non-author maintainer `chiga0` approval](https://github.com/QwenLM/qwen-code/pull/12895#pullrequestreview-5336480098)
+- [merge commit `7e50eee8`](https://github.com/QwenLM/qwen-code/commit/7e50eee804dbf864db97a8d18793ed45aef698d5)
+
+PR #12895于2026-09-28T10:01:56Z merge。核验时最新listed stable release仍是该merge之前发布的v0.24.6，因此本页不声称该follow-up fix已经release。
+
+**公开可确认：** 具体hard-budget semantics指摘 → receiver-owned后续PR自发把Nakagawa-master作为source再次引用 → exact boundary进入code / tests / docs → 非作者maintainer approval → merge。  
+**尚未确认：** release、真实运营使用、用户规模、向其他receiver继续传播、广泛人物认知，或对整个理论体系的支持。
+

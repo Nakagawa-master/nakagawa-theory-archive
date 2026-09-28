@@ -1438,6 +1438,67 @@
         "whole-theory endorsement"
       ],
       "public_human_case": "REAL_WORLD_IMPACT.md#30-llamaindexdict形式mcp非テキストcontentのsemantic-lossをcodetestへ修正"
+    },
+    {
+      "case_id": "qwen-maxcost-hard-bound-prompt-free-origin-rereference",
+      "topic": "rough cost forecast versus enforceable maxCostUsd hard bound, followed by prompt-free receiver re-reference to Nakagawa Master",
+      "external_repository": "QwenLM/qwen-code",
+      "origin_action": {
+        "type": "issue_comment",
+        "url": "https://github.com/QwenLM/qwen-code/issues/12707#issuecomment-5846367294",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action",
+        "summary": "Separated UX estimated output/cost from the conservative enforcement quantity required for a hard maxCostUsd promise, including fail-closed handling when no finite bound exists."
+      },
+      "receiver_owned_followup": {
+        "pull_request": "https://github.com/QwenLM/qwen-code/pull/12895",
+        "author": "yiliang114",
+        "fresh_nakagawa_prompt_on_followup_pr": false,
+        "explicit_origin_rereference": "PR body states: Nakagawa-master pointed out that this breaks the meaning of maxCostUsd, not just its wording.",
+        "implementation": {
+          "verified": true,
+          "mechanisms": [
+            "enforce maxCostUsd against worst-case request caps rather than the rough forecast",
+            "include finite thinking_budget in the bound",
+            "refuse maxCostUsd plans when a finite bound cannot be established",
+            "label the rough forecast as excluding thinking tokens",
+            "add regression tests and documentation for the boundary"
+          ]
+        }
+      },
+      "independent_validation": {
+        "reviewer": "chiga0",
+        "state": "APPROVED",
+        "url": "https://github.com/QwenLM/qwen-code/pull/12895#pullrequestreview-5336480098",
+        "at_utc": "2026-09-28T09:24:37Z"
+      },
+      "merge": {
+        "claimed": true,
+        "at_utc": "2026-09-28T10:01:56Z",
+        "commit": "7e50eee804dbf864db97a8d18793ed45aef698d5",
+        "url": "https://github.com/QwenLM/qwen-code/commit/7e50eee804dbf864db97a8d18793ed45aef698d5"
+      },
+      "current_stage": "merge_or_integration",
+      "origin_return_classification": "prompt-free receiver-owned cross-thread person-origin re-reference with implementation and merge",
+      "next_verification_gate": "release or operational use, or another prompt-free receiver/reader origin re-reference",
+      "not_claimed": [
+        "release of PR #12895 changes",
+        "operational use",
+        "user-scale impact",
+        "broad person recognition",
+        "cross-receiver repetition beyond this case",
+        "whole-theory endorsement"
+      ],
+      "public_human_case": "REAL_WORLD_IMPACT.md#31-qwen-codemaxcostusd-の予測値とhard-boundを分け後続prでnakagawa-originを自発的に再参照",
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "best estimate != enforceable hard safety/budget boundary",
+        "canonical_context": [
+          "semantic integrity of control fields",
+          "conservative authority/resource boundary",
+          "origin-preserving receiver reuse"
+        ],
+        "canonical_return": "https://master.ricette.jp"
+      }
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",

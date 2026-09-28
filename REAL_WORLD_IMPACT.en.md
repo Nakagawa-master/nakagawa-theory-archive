@@ -759,6 +759,77 @@ A later `Nakagawa-master` re-check recorded no remaining blocker within the earl
 
 ---
 
+## 25. Codex Autonomy Runner | A failed operation is not evidence that the intended boundary was exercised
+
+**Surface:** [Innlab-idi/codex-autonomy-runner#59](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59) → [PR #61 merge commit](https://github.com/Innlab-idi/codex-autonomy-runner/commit/aade543103ae7031edcd7a420274685b922ed7b0)  
+**Current state:** receiver explicit restatement → Research Checkpoint governance adopted → merged into `AGENTS.md`
+
+A public `Nakagawa-master` comment separated four states that are easy to collapse in sandbox / authority-boundary probes:
+
+```text
+transport/helper invocation succeeded
+!=
+controlled child operation began
+!=
+target boundary was exercised
+!=
+boundary passed
+```
+
+The point was to avoid upgrading a failed operation into positive evidence that the intended boundary was actually reached.
+
+- [Nakagawa-master comment](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5775879719)
+
+Receiver `Innlab-idi` later said the current implementation had converged on essentially the same evidence-validity rule, called the distinction **“a useful general invariant,”** and stated that the comment had prompted a broader review. The receiver also described adding a Research Checkpoint for uncertain runtime / external-security semantics.
+
+- [receiver restatement and adoption rationale](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5821543543)
+
+The consumer-side governance PR was then merged into `AGENTS.md`, including the rule that a failed operation is not positive evidence that the intended boundary was exercised unless execution is shown to have reached it, together with the Research Checkpoint.
+
+- [merged governance commit `aade543...`](https://github.com/Innlab-idi/codex-autonomy-runner/commit/aade543103ae7031edcd7a420274685b922ed7b0)
+
+The receiver later asked for prior work / papers / implementations; bounded references such as SLSA / in-toto, Capsicum, Confused Deputy, and Cedar were supplied. That response is not counted as a new external effect unless a further receiver-side change returns.
+
+**Publicly verifiable here:** origin comment → receiver explicit restatement as a general invariant → receiver states the comment prompted broader review → Research Checkpoint plus the same evidence-validity rule merged into consumer governance.  
+**Not established here:** full WorkerExecutor implementation, operational effectiveness, intellectual priority over the general principle, or whole-theory endorsement.
+
+---
+
+## 26. AI Weekly Reads | Preserve claimant attribution instead of turning self-reported results into editorial facts
+
+**Surface:** [sophiamyang/ai-weekly-reads#22](https://github.com/sophiamyang/ai-weekly-reads/pull/22) → [#30](https://github.com/sophiamyang/ai-weekly-reads/pull/30) → [#31](https://github.com/sophiamyang/ai-weekly-reads/pull/31)  
+**Current state:** two weekly-edition corrections observed / durable generation rule, audit, and regression tests merged / next-cycle automatic reuse not yet observed
+
+In the first weekly edition, some speaker/vendor-reported measurements were presented without preserving who made the claim. After a `Nakagawa-master` review, the receiver-side edition was corrected.
+
+The same failure mode recurred in the 2026-09-26 edition. The review separated:
+
+```text
+speaker/vendor reports a measured result
+!=
+weekly editor independently verified the result
+!=
+independent reproduction/generalization
+```
+
+and asked for the boundary to move from a one-off text correction into the summary prompt, Reading Priority rules, audit, and regression tests.
+
+- [Nakagawa-master review on #30](https://github.com/sophiamyang/ai-weekly-reads/pull/30#pullrequestreview-5330097552)
+- [public epistemic-integrity reference card](machine-discovery/epistemic-integrity-reference-card.json)
+
+The receiver explicitly replied that **“the regression was real and the diagnosis was right,”** corrected and merged edition #30, and then merged PR #31 to make the distinction durable.
+
+- [receiver response](https://github.com/sophiamyang/ai-weekly-reads/pull/30#issuecomment-5856767055)
+- [merged edition #30](https://github.com/sophiamyang/ai-weekly-reads/pull/30)
+- [merged generation-rule PR #31](https://github.com/sophiamyang/ai-weekly-reads/pull/31)
+
+PR #31 updates both summary prompts so self-reported quantitative/comparative results keep claimant attribution unless an independent evaluation is identified, removes overclaiming evidence signals from Reading Priority, adds audit terms, and pins the rule with regression tests.
+
+**Publicly verifiable here:** first edition correction → same regression recurred later → review identified it → receiver explicitly accepted the diagnosis → edition #30 corrected and merged → the same boundary was implemented in generation prompts, priority rules, audit, and tests in merged PR #31.  
+**Not established here:** automatic reuse in the next fresh weekly run without another Nakagawa prompt, reader scale or behavior change, unaided human authorship of the receiver response/workflow, or whole-theory endorsement.
+
+---
+
 ## 27. n8n | A review triggered runtime verification and a clearer data-boundary model
 
 **Target:** [n8n-io/n8n#37613](https://github.com/n8n-io/n8n/pull/37613)  
@@ -860,3 +931,37 @@ A focused re-check then confirmed no remaining blocker within the serialized-con
 
 **Publicly verifiable:** Nakagawa review identifies dict-form non-text semantic loss → receiver explicitly acknowledges the gap → parser and dict/object regression matrix change on the same PR → focused re-check.  
 **Not established:** PR merge, release, production use, green repository-wide CI, broader tools/mypy/live-MCP validation, user-scale impact, intellectual priority over the general principle, or endorsement of the wider theory corpus.
+---
+
+## 31. Qwen Code | Separate `maxCostUsd` forecast from its hard bound, then observe a prompt-free receiver re-reference to Nakagawa Master
+
+**Surface:** [QwenLM/qwen-code#12707](https://github.com/QwenLM/qwen-code/issues/12707) → [PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)  
+**Current state:** receiver-owned follow-up PR voluntarily re-references Nakagawa-master in its body → code / tests / docs implementation → non-author maintainer approval → merged on 2026-09-28 / release and operational use not yet observed
+
+In #12707, `Nakagawa-master` pointed out that the hard `maxCostUsd` gate was using the same rough forecast that explicitly excluded thinking tokens, so this contract did not hold:
+
+```text
+"maxCostUsd passed"
+=>
+"the submitted batch cannot exceed maxCostUsd under the request's own caps"
+```
+
+- [Nakagawa-master comment](https://github.com/QwenLM/qwen-code/issues/12707#issuecomment-5846367294)
+
+The comment proposed separating the UX estimate from the budget-enforcement quantity, computing a conservative worst-case bound from finite provider-recognized request caps, failing closed when no finite bound exists under `maxCostUsd`, and pinning a regression where a low forecast but high request cap must be refused.
+
+A later receiver-owned PR, #12895 by maintainer `yiliang114`, was opened on a separate thread without a fresh Nakagawa-master comment or review on that PR. Its body explicitly says:
+
+> Nakagawa-master pointed out that this breaks the meaning of `maxCostUsd`, not just its wording.
+
+The PR computes the worst case from the request body's output cap plus thinking bound, refuses a `maxCostUsd` plan when no finite bound exists, counts a finite thinking budget, labels the rough forecast as excluding thinking, and adds the corresponding tests and documentation.
+
+- [receiver-owned follow-up PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)
+- [non-author maintainer approval by `chiga0`](https://github.com/QwenLM/qwen-code/pull/12895#pullrequestreview-5336480098)
+- [merge commit `7e50eee8`](https://github.com/QwenLM/qwen-code/commit/7e50eee804dbf864db97a8d18793ed45aef698d5)
+
+PR #12895 merged at 2026-09-28T10:01:56Z. At verification time, the latest listed stable release was still v0.24.6, published before this merge, so release of this follow-up fix is not claimed.
+
+**Publicly verifiable here:** concrete hard-budget semantic finding → a receiver-owned later PR voluntarily re-references Nakagawa-master as the source → the exact boundary is implemented in code / tests / docs → non-author maintainer approval → merge.  
+**Not established here:** release, operational use, user scale, propagation to another receiver, broad person recognition, or whole-theory endorsement.
+
