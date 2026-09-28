@@ -736,6 +736,15 @@ receiver commit `dfd4588d` は、export aliasとsource declaration nameの両方
 **公開記録から確認できること:** 出所付きの第三者採用、提案された承認境界の実装、PR mergeとrelease。先行headでの実課金利用もPR記録にあります。  
 **まだ確認できないこと:** v0.24.6の独立した本番利用、広い読者層への伝播、理論体系全体へのendorsement。PR全体や後続修正・releaseをNakagawa-master単独の成果とはしません。
 
+### 後続の自発的Origin再参照（2026-09-28確認）
+
+同じreceiver `yiliang114` が後続の別PR [#12895](https://github.com/QwenLM/qwen-code/pull/12895) を起票し、その本文で **“Nakagawa-master pointed out that this breaks the meaning of maxCostUsd, not just its wording.”** と明示的に再言及しています。2026-09-28の確認時点で、Nakagawa-masterはPR #12895へ新たなcomment/reviewを投稿していません。
+
+PR #12895は、この再言及を説明だけで終わらせず、`maxCostUsd` をforecastではなくrequest caps上のworst-caseへ結び、unbounded thinking時の送信拒否、thinking budgetの算入、docs更新、低forecast／高capを拒否する回帰テストと低capを許可する対照テストを追加しています。
+
+**この後続から確認できること:** 元のreceiverが別thread・別PRでNakagawa-masterを自発的に再参照し、境界を新しいcode/docs/testsへ運んだこと。これはperson-Origin returnの具体例です。  
+**まだ確認できないこと:** PR #12895のmerge/release、独立した利用者への到達規模、継続的・広範なperson-Origin再参照pattern。
+
 
 ---
 
