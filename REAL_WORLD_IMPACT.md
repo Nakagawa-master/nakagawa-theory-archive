@@ -946,7 +946,7 @@ implementation側も、「kwargsとしてvalid callを作れるか」だけで�
 ## 29. AI-News｜公開済み記事の外部状態を一次資料へ追随させ、更新手段まで実装
 
 **対象:** [022740mix-spec/AI-News#111](https://github.com/022740mix-spec/AI-News/pull/111) → 公開記事 `agent-self-authorization-approval-gate-2026` → [PR #135](https://github.com/022740mix-spec/AI-News/pull/135)  
-**現在状態:** receiverが提案を採用して独立記事を公開 / 後続follow-upで古い状態表記を検出 / 一次資料を再確認して記事sourceを更新 / PR #135 merged / 更新版のproduction deploymentと読者規模は未確認
+**現在状態:** receiverが提案を採用して独立記事を公開 / 後続follow-upで古い状態表記を検出 / 一次資料を再確認して記事sourceを更新 / PR #135 merged / merge commitのGitHub Pages build・deploy成功を確認 / 読者規模は未確認
 
 PR #111で `Nakagawa-master` は、未確認の報道事案と、公開実装で検証できるauthority-increasing transitionの事例を同じ証拠として混ぜず、別枠で扱うことを提案しました。特に、
 
@@ -975,9 +975,38 @@ receiverは一次資料を再確認し、「状況が動いたら更新すると
 - [receiver update response](https://github.com/022740mix-spec/AI-News/pull/111#issuecomment-5854722227)
 - [merged update PR #135](https://github.com/022740mix-spec/AI-News/pull/135)
 - [merge commit `2625b150`](https://github.com/022740mix-spec/AI-News/commit/2625b150eb2aa761ab47c475ef76ce33ddfbd3ac)
+- [GitHub Pages deployment run `36310141967`](https://github.com/022740mix-spec/AI-News/actions/runs/36310141967) — `build` / `deploy` ともにsuccess、environment URLは `https://022740mix-spec.github.io/AI-News/`
 
 receiver responseとPR本文にはClaude Code生成表記があります。そのため本ページは、これを**receiver account側の明示的採用・記事化・source更新・tooling変更**として記録しますが、独立した人間単独著作とは扱いません。
 
-**公開記録から確認できること:** origin review → receiverが提案を明示的に採用 → reader-facing独立記事を公開 → 後続のNakagawa follow-upが記事内の古い外部状態を特定 → receiverが一次資料を再確認 → reader-facing article sourceとsource-update toolingを変更 → PR #135 merge。  
-**まだ確認できないこと:** #135 merge後の更新版がproduction siteへdeploy済みであること、実読者数、読者行動、別receiverへの伝播、receiverからの自発的な人物origin再参照、独立した人間単独著作、理論体系全体への支持。
+**公開記録から確認できること:** origin review → receiverが提案を明示的に採用 → reader-facing独立記事を公開 → 後続のNakagawa follow-upが記事内の古い外部状態を特定 → receiverが一次資料を再確認 → reader-facing article sourceとsource-update toolingを変更 → PR #135 merge → 同merge commitのGitHub Pages build / deploy成功。  
+**まだ確認できないこと:** 実読者数、読者行動、別receiverへの伝播、receiverからの自発的な人物origin再参照、独立した人間単独著作、理論体系全体への支持。
 
+
+
+---
+
+## 30. LlamaIndex｜dict形式MCP非テキストcontentのsemantic lossをcode/testへ修正
+
+**対象:** [run-llama/llama_index#23261](https://github.com/run-llama/llama_index/pull/23261)  
+**現在状態:** receiverがserialized-content gapを明示的に認め、code/testを変更 / focused re-check済み / PR open・unmerged / broad CI・live MCP検証は未確認
+
+PR #23261は、MCP `CallToolResult` をLlamaIndexのcontent blockへ変換するsuccess-pathを追加する変更です。object形式ではtext / image / audio / embedded resourceをsemantic blockへ変換していましたが、dict / wire-format形式ではtextだけをsemanticに扱い、image・audio・resourceはdict文字列表現へ落ちる非対称性が残っていました。
+
+`Nakagawa-master` のreviewは、このserialized / dict branchでもobject branchと同じsemanticsを保持するよう指摘し、dict image / audio / embedded-resource textとunknown fallbackの回帰matrixを提案しました。
+
+- [Nakagawa-master review](https://github.com/run-llama/llama_index/pull/23261#pullrequestreview-5331158205)
+
+PR authorは **“Thanks for catching the serialized-content gap.”** と明示的に応答し、current head `5164d2b303da645dde2a92527a757a4908707dd3` でdict/object双方を同じfield-access pathへ通すよう変更しました。
+
+- [receiver response](https://github.com/run-llama/llama_index/pull/23261#issuecomment-5861650879)
+- [receiver commit `5164d2b`](https://github.com/run-llama/llama_index/commit/5164d2b303da645dde2a92527a757a4908707dd3)
+
+実装はdict形式のimage / audioをbase64 decodeして `ImageBlock` / `AudioBlock` へ渡し、embedded-resource textを `TextBlock` として保持します。unknown / malformed shapeは従来のtextual fallbackを残します。testsはtext / image / audio / resourceの4種をdict / objectの両形式で固定しています。authorはfocused test fileについて39 passed / 3 skippedを報告しましたが、broader tools suite、mypy、live MCP serverはこのrevision後に未検証と明示しています。
+
+その後 `Nakagawa-master` はcurrent headを独立に再確認し、当該serialized-content scopeについてremaining blockerなしと記録しました。
+
+- [focused re-check](https://github.com/run-llama/llama_index/pull/23261#issuecomment-5861899474)
+
+**公開記録から確認できること:** Nakagawa reviewがdict形式のnon-text semantic lossを具体化 → receiverがgapを明示的に認める → 同じPRでparserとdict/object回帰matrixを変更 → focused re-check。  
+**まだ確認できないこと:** PR merge、release、production use、repository全体CI green、broader tools / mypy / live MCP検証、利用者規模、一般原理の知的優先権、理論体系全体への支持。
