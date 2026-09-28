@@ -55,20 +55,32 @@ body:
     id: source_relationship
     attributes:
       label: Relationship to the Nakagawa Master source
-      description: Preserve causality accurately. Do not claim source influence if you independently rediscovered the same distinction.
+      description: Preserve provenance accurately. Do not claim source influence if you reached the same distinction independently.
       options:
-        - The public Nakagawa Master source materially informed this reuse
-        - I independently reached the distinction and found the source later
-        - A fresh Nakagawa Master prompt or direct request was present
+        - The public Nakagawa Master source materially informed this work
+        - I reached the distinction independently and found the source later
+        - This work followed a direct request or collaboration with Nakagawa Master
         - Unknown / cannot establish
+    validations:
+      required: true
+
+  - type: dropdown
+    id: initiative
+    attributes:
+      label: How was this specific test or reuse initiated?
+      options:
+        - Independently initiated after encountering the public source
+        - Initiated through a direct request or collaboration with Nakagawa Master
+        - Mixed / other
+        - Unknown
     validations:
       required: true
 
   - type: textarea
     id: independent_action
     attributes:
-      label: What did you independently check, challenge, or change?
-      description: Explain your own reasoning, test, counterexample, work item, implementation, or decision change.
+      label: What did you check, challenge, or change?
+      description: Explain your reasoning, test, counterexample, work item, implementation, or decision change.
     validations:
       required: true
 
@@ -83,7 +95,7 @@ body:
   - type: dropdown
     id: stage
     attributes:
-      label: Highest directly evidenced stage
+      label: What is directly evidenced?
       options:
         - Read / mention only
         - Independent restatement or test
@@ -92,17 +104,6 @@ body:
         - Merge / integration
         - Release / deployment / verified use
         - Reuse by another person or in another problem
-    validations:
-      required: true
-
-  - type: dropdown
-    id: fresh_prompt
-    attributes:
-      label: Was there a fresh Nakagawa Master prompt for this specific reuse?
-      options:
-        - No fresh prompt; I/we reached and reused it independently
-        - Yes; a fresh prompt or direct request was present
-        - Unknown
     validations:
       required: true
 
