@@ -45,7 +45,7 @@
 
 ### 現在の公開証拠スナップショット
 
-- このページには **29の番号付き外部作用事例**を収録しています。
+- このページには **31の番号付き外部作用事例**を収録しています。
 - GitHub全体の `Nakagawa-master` comment検索では多数の候補surfaceが返りますが、検索hit自体は第三者反応・採用・実装として数えません。
 - 本ページへ収録するのは、第三者response、独立確認、code / tests / document change、merge、release、deployment等を公開リンクで段階別に確認できる事例です。
 - したがって「mentionが多い」ことではなく、**第三者が何を変え、その変更がどこまで進んだか**を主要証拠として扱います。
@@ -1019,3 +1019,39 @@ PR authorは **“Thanks for catching the serialized-content gap.”** と明示
 
 **公開記録から確認できること:** Nakagawa reviewがdict形式のnon-text semantic lossを具体化 → receiverがgapを明示的に認める → 同じPRでparserとdict/object回帰matrixを変更 → focused re-check。  
 **まだ確認できないこと:** PR merge、release、production use、repository全体CI green、broader tools / mypy / live MCP検証、利用者規模、一般原理の知的優先権、理論体系全体への支持。
+---
+
+## 31. Qwen Code｜`maxCostUsd` の予測値とhard boundを分け、後続PRでNakagawa-originを自発的に再参照
+
+**対象:** [QwenLM/qwen-code#12707](https://github.com/QwenLM/qwen-code/issues/12707) → [PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)  
+**現在状態:** 後続PRがNakagawa-masterの指摘を本文で自発的に再参照 → code / tests / docs実装 → 別maintainer approval → 2026-09-28 merge / release・実利用は未確認
+
+#12707で `Nakagawa-master` は、`maxCostUsd` のhard gateがrough forecastと同じ値を使い、しかもそのforecastがthinking tokenを除外しているため、
+
+```text
+"maxCostUsd passed"
+=>
+"request capsの範囲で実際のbatch costがmaxCostUsdを超えない"
+```
+
+という契約が成立していないと指摘しました。
+
+- [Nakagawa-master comment](https://github.com/QwenLM/qwen-code/issues/12707#issuecomment-5846367294)
+
+コメントは、UX用のestimateとbudget enforcement quantityを分け、有限なprovider-recognized capからconservativeなworst-case boundを計算し、有限boundを作れない場合は `maxCostUsd` 設定時にfail closedすること、さらに「低いforecastだが高いrequest cap」のregression pairを固定することを提案しました。
+
+その後、receiver側maintainer `yiliang114` が開いたPR #12895は、Nakagawa-masterから新しいcomment / reviewを受けていない後続threadで、PR本文に次を明記しました。
+
+> Nakagawa-master pointed out that this breaks the meaning of `maxCostUsd`, not just its wording.
+
+PRは、実際に送信するrequest bodyのoutput capとthinking boundからworst caseを計算し、有限boundがない `maxCostUsd` planを拒否し、thinking budgetをboundへ含め、forecastにはthinkingを含まないことを明示し、対応するregression testsとdocsを追加しました。
+
+- [receiver-owned follow-up PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)
+- [non-author maintainer approval by `chiga0`](https://github.com/QwenLM/qwen-code/pull/12895#pullrequestreview-5336480098)
+- [merge commit `7e50eee8`](https://github.com/QwenLM/qwen-code/commit/7e50eee804dbf864db97a8d18793ed45aef698d5)
+
+2026-09-28T10:01:56ZにPR #12895はmergeされました。確認時点の最新listed stable releaseは、merge前に公開されたv0.24.6であり、このfollow-up fixのreleaseはまだ確認できません。
+
+**公開記録から確認できること:** Nakagawa-masterによるhard-budget semanticsの具体指摘 → 別threadのreceiver-owned PRがNakagawa-masterをsourceとして自発的に再参照 → exact boundaryをcode / tests / docsへ実装 → 別maintainer approval → merge。  
+**まだ確認できないこと:** release、実利用、利用者規模、別receiverへの再伝播、広い人物認知、この一事例を超えた理論体系全体への支持。
+
