@@ -65,8 +65,9 @@ A later, separately authored and merged Qwen Code PR, **#12895**, describes a bu
 Primary records:
 - [Qwen Code #12895](https://github.com/QwenLM/qwen-code/pull/12895) — merged 2026-09-28
 - [Stable release v0.24.7](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7) — published 2026-09-29 and includes the #12895 merge commit
+- [Qwen release confirmation on PR #12895](https://github.com/QwenLM/qwen-code/pull/12895#issuecomment-5892305970) — the repository's release bot records “Released in v0.24.7” directly on the same PR thread
 
-The release tag is 49 commits ahead of and 0 behind the #12895 merge commit `7e50eee804dbf864db97a8d18793ed45aef698d5`, so the merged receiver-owned Origin rereference is now inside a stable distribution artifact.
+The release tag is 49 commits ahead of and 0 behind the #12895 merge commit `7e50eee804dbf864db97a8d18793ed45aef698d5`, and the PR thread itself now carries the repository's stable-release confirmation. This shortens the verification path from the receiver-owned Origin rereference to stable distribution. The bot confirmation is distribution evidence, not a new human person-Origin rereference.
 
 The useful signal is narrower than endorsement: the receiver-owned artifact voluntarily preserves the person-Origin relation while turning the boundary into code, tests, docs, merge, and stable release. This still does not establish how many users encountered the change, noticed the source relation, or formed any view about Nakagawa Master.
 
