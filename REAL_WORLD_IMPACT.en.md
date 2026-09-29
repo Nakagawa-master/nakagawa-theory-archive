@@ -678,7 +678,7 @@ This page is not asking readers to trust a name or a count. It is an index for c
 ## 22. Qwen Code | Approval boundary for paid Batch API actions
 
 **Target:** [QwenLM/qwen-code#12492](https://github.com/QwenLM/qwen-code/pull/12492)  
-**Current state:** merged and released in Qwen Code v0.24.6 (2026-09-26 JST) / merge commit `c3a4058a0c72`
+**Current state:** merged and released in Qwen Code v0.24.6 (2026-09-26 JST) / real receiver-side Batch use documented in #12825 / merge commit `c3a4058a0c72`
 
 [Nakagawa-master's public comment](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552) separated approval of `qwen batch run` from approval of the concrete billed batch snapshot. The proposed contract binds the exact item set, frozen settings and cost estimate to a canonical digest, and treats later drift as stale approval.
 
@@ -693,8 +693,10 @@ Third-party developer `yiliang114` attributed and adopted the proposal, implemen
 
 The author fixed the three maintainer-requested pre-merge findings in `56f06075b3` and two additional suggestions in `206a444b30`. Qwen Code CI (run 43130) and TUI parity (run 3993) passed on the current head. The maintainer judged head `206a444b` mergeable; the PR merged on 2026-09-26 JST and shipped in v0.24.6 that day. Non-blocking follow-ups remain in [#12707](https://github.com/QwenLM/qwen-code/issues/12707).
 
-**Confirmed by the public record:** source-attributed third-party adoption, implementation of the proposed approval boundary, PR merge and release. A real paid use at an earlier PR head is also documented.  
-**Not yet confirmed:** independent production use of v0.24.6, broad reader propagation, or endorsement of the wider theory system. The entire PR, later fixes and release are not attributed to Nakagawa-master alone.
+After release, the same receiver/collaborator `yiliang114` documented real use in [issue #12825](https://github.com/QwenLM/qwen-code/issues/12825): v0.24.6's `/batch-api` executor was used for a nine-document DashScope Batch translation job, with the dry-run → `--expect` → `collect --wait` path, concrete batch job ids, and repeated output evidence recorded publicly. This confirms **real receiver-side operational use after release**; it is not evidence of independent external-user adoption or user scale.
+
+**Confirmed by the public record:** source-attributed third-party adoption, implementation of the proposed approval boundary, PR merge and release, and real receiver-side operational use of v0.24.6. A real paid use at an earlier PR head is also documented.  
+**Not yet confirmed:** independent external-user production adoption or user scale, broad reader propagation, or endorsement of the wider theory system. The entire PR, later fixes and release are not attributed to Nakagawa-master alone.
 
 
 ---
