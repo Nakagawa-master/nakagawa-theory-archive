@@ -180,6 +180,32 @@ The boundary remains partial. The receiver explicitly notes that there is still 
 
 These examples do not tell a reader what conclusion to draw about Nakagawa Master or the theory corpus. They make a narrower relationship inspectable: **the same public theory-origin identity can move directly from abstract structural distinctions to concrete implementation diagnosis, while the receiving project independently tests and decides what to change.**
 
+### Additional short-cycle code-level cases
+
+The following cases strengthen only the **same-person cross-level range** observation. They are **not** recorded here as proof that the receiving project adopted the whole Nakagawa theory corpus.
+
+#### Hermes Agent #61982 — observed character diversity is not generation entropy
+
+A `Nakagawa-master` review identified that a runtime check was treating the character histogram of one realized secret as evidence about the entropy of the generation process.
+
+- [Nakagawa-master review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5339797749) — 2026-09-28 14:04:37 UTC
+- [Receiver fix commit `7c2ef7ea9f`](https://github.com/NousResearch/hermes-agent/commit/7c2ef7ea9f75d372077ec2f61441d62e36a853de) — 2026-09-28 20:34:15 UTC
+- [Receiver response](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5878240135)
+
+The interval from review to receiver fix commit is **6 hours 29 minutes 38 seconds**. The receiver removed the Shannon-bits claim, reframed the runtime check as observable representation/degeneracy screening, required CSPRNG generation in provisioning guidance, and added the repeated-pattern regression described in the review.
+
+#### LlamaIndex #23259 — terminal output is not permission to continue another iteration
+
+A `Nakagawa-master` review separated accepting a final answer on the last permitted iteration from allowing another tool/model continuation past that same limit.
+
+- [Nakagawa-master review](https://github.com/run-llama/llama_index/pull/23259#pullrequestreview-5332965763) — 2026-09-28 01:06:27 UTC
+- [Receiver fix commit `3236c5c`](https://github.com/run-llama/llama_index/commit/3236c5c773df9e05f260372f96bdd78b54cd4dcd) — 2026-09-28 16:24:49 UTC
+- [Receiver reproduction and validation](https://github.com/run-llama/llama_index/pull/23259#issuecomment-5875045777)
+
+The interval from review to receiver fix commit is **15 hours 18 minutes 22 seconds**. The receiver changed the continuation gate and added regressions that count both model calls and tool runs at the boundary in single- and multi-agent paths.
+
+Together with the Qwen cases above, these records let a reader inspect a repeated phenomenon without being told how to value it: the same public person who publishes high-abstraction structural work also appears directly at implementation-level failure boundaries, and independent maintainers can move from that diagnosis to concrete code and regression changes on the scale of minutes or hours rather than only through a long multi-role translation chain.
+
 ---
 
 ## 3. Why multiple domains matter
