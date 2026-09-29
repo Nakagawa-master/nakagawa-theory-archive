@@ -718,7 +718,7 @@ receiver commit `dfd4588d` は、export aliasとsource declaration nameの両方
 ## 22. Qwen Code｜有料Batch APIの承認境界
 
 **対象:** [QwenLM/qwen-code#12492](https://github.com/QwenLM/qwen-code/pull/12492)  
-**現在状態:** PR merged / Qwen Code v0.24.6 released（2026-09-26 JST）/ merge commit `c3a4058a0c72`
+**現在状態:** PR merged / Qwen Code v0.24.6 released（2026-09-26 JST）/ receiver自身の実Batch運用を #12825 で確認 / merge commit `c3a4058a0c72`
 
 [Nakagawa-masterの公開コメント](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552)は、`qwen batch run` の承認と、実際に課金される具体的batch snapshotの承認を分ける境界を提示しました。exact item set、frozen settings、cost estimateをcanonical digestへ束ね、承認後に内容が変わればold approvalを無効にする案です。
 
@@ -733,8 +733,10 @@ receiver commit `dfd4588d` は、export aliasとsource declaration nameの両方
 
 著者は保守担当がmerge前に求めた3点をcommit `56f06075b3` で修正し、追加の2点も `206a444b30` で対処しました。現headのQwen Code CI（run 43130）とTUI parity（run 3993）は成功。保守担当はhead `206a444b` をmerge可能と判断し、PRは2026-09-26 JSTにmerge、同日v0.24.6としてreleaseされました。非ブロッカーのfollow-upは [#12707](https://github.com/QwenLM/qwen-code/issues/12707) に残っています。
 
-**公開記録から確認できること:** 出所付きの第三者採用、提案された承認境界の実装、PR mergeとrelease。先行headでの実課金利用もPR記録にあります。  
-**まだ確認できないこと:** v0.24.6の独立した本番利用、広い読者層への伝播、理論体系全体へのendorsement。PR全体や後続修正・releaseをNakagawa-master単独の成果とはしません。
+release後、同じreceiver/collaborator `yiliang114` は [issue #12825](https://github.com/QwenLM/qwen-code/issues/12825) で、v0.24.6 の `/batch-api` executorを実際にDashScope Batchへ使い、9本の公開Markdown文書を処理した運用記録を公開しています。dry-run → `--expect` → `collect --wait` の実行形、具体的なbatch job id、出力欠落の再現比較まで記録されています。これは**release後のreceiver実運用**を確認する証拠ですが、独立した外部ユーザーの採用や利用者規模を示すものではありません。
+
+**公開記録から確認できること:** 出所付きの第三者採用、提案された承認境界の実装、PR mergeとrelease、そして同じreceiverによるv0.24.6の実Batch運用。先行headでの実課金利用もPR記録にあります。  
+**まだ確認できないこと:** 独立した外部ユーザーの本番利用や利用者規模、広い読者層への伝播、理論体系全体へのendorsement。PR全体や後続修正・releaseをNakagawa-master単独の成果とはしません。
 
 ### 後続の自発的Origin再参照（2026-09-28確認）
 
