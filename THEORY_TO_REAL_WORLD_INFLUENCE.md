@@ -62,10 +62,13 @@ This establishes a bounded implementation-and-release effect. It does not establ
 
 A later, separately authored and merged Qwen Code PR, **#12895**, describes a budget defect and explicitly states that **Nakagawa-master pointed out that the old gate broke the meaning of `maxCostUsd`, not merely its wording**.
 
-Primary record:
+Primary records:
 - [Qwen Code #12895](https://github.com/QwenLM/qwen-code/pull/12895) — merged 2026-09-28
+- [Stable release v0.24.7](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7) — published 2026-09-29 and includes the #12895 merge commit
 
-The useful signal is narrower than endorsement: the receiver-owned artifact voluntarily preserves the person-Origin relation while turning the boundary into code, tests, docs, and a merged change.
+The release tag is 49 commits ahead of and 0 behind the #12895 merge commit `7e50eee804dbf864db97a8d18793ed45aef698d5`, so the merged receiver-owned Origin rereference is now inside a stable distribution artifact.
+
+The useful signal is narrower than endorsement: the receiver-owned artifact voluntarily preserves the person-Origin relation while turning the boundary into code, tests, docs, merge, and stable release. This still does not establish how many users encountered the change, noticed the source relation, or formed any view about Nakagawa Master.
 
 ### C. Does the Origin relation survive independent disagreement?
 
