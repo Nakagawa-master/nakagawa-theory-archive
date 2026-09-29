@@ -915,7 +915,26 @@
           "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7",
           "published_at": "2026-09-29T14:02:21Z",
           "relation_to_merge": "tag is 49 commits ahead and 0 behind PR #12895 merge commit",
-          "provenance_boundary": "release notes link PR #12895; the explicit Nakagawa-master rereference is in the receiver-owned PR body, not claimed as binary-embedded attribution"
+          "provenance_boundary": "release notes link PR #12895; the explicit Nakagawa-master rereference is in the receiver-owned PR body, not claimed as binary-embedded attribution",
+          "thread_confirmation": {
+            "url": "https://github.com/QwenLM/qwen-code/pull/12895#issuecomment-5892305970",
+            "actor": "qwen-code-ci-bot",
+            "created_at": "2026-09-29T14:28:07Z",
+            "statement": "Released in v0.24.7.",
+            "interpretation": "Repository-owned automated release confirmation on the same receiver-owned PR thread; distribution evidence only, not an additional human person-Origin rereference."
+          },
+          "initial_distribution_snapshot": {
+            "observed_date": "2026-09-29",
+            "stable_binary_asset_download_events": 24,
+            "asset_breakdown": {
+              "qwen-code-darwin-arm64.tar.gz": 3,
+              "qwen-code-darwin-x64.tar.gz": 2,
+              "qwen-code-linux-arm64.tar.gz": 3,
+              "qwen-code-linux-x64.tar.gz": 12,
+              "qwen-code-win-x64.zip": 4
+            },
+            "measurement_boundary": "GitHub asset download events are not unique humans, feature use, source-relation awareness, or person recognition."
+          }
         }
       }
     },
