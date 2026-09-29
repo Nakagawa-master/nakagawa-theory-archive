@@ -128,17 +128,29 @@ same public author identity
 
 The important feature here is not merely that an abstract idea eventually influenced implementation. In the examples below, the public identity that authors the Nakagawa Master theory archive also appears directly in the code-level review, and the receiver independently decides whether and how to change the implementation.
 
+That makes a different property inspectable from a generic long diffusion chain: **role distance and translation time**. The theory-origin identity is not only upstream provenance; the same identity appears at the concrete implementation boundary, without first passing the distinction through a long chain of separate theorists, translators, consultants, and implementers.
+
+A reader can therefore evaluate two questions separately from any self-description:
+
+1. **person-side range:** can the same public person move from high-abstraction structural reasoning to a concrete code-level diagnosis that survives independent technical scrutiny?
+2. **theory-side operational density:** does the abstract distinction remain specific enough that an independent receiver can turn it into code, tests, docs, or product behavior without a long intermediate translation chain?
+
+Neither question is answered by attribution alone. The evidence is the public sequence of source, diagnosis, receiver response, implementation, and—where available—merge or release.
+
 #### Qwen Code #12492 — current authority bound to the concrete paid batch
 
 The public [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md) separates historical approval from current execution authority.
 
 On [QwenLM/qwen-code#12492](https://github.com/QwenLM/qwen-code/pull/12492), the `Nakagawa-master` account applied that boundary to a concrete paid Batch workflow: approving a command or plan path was separated from approving the exact assembled billable request set. The review proposed freezing the concrete request snapshot, showing its digest and summary, and rejecting execution if the snapshot changed after approval.
 
-- [Nakagawa-master review](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552)
+- [Nakagawa-master review](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552) — 2026-09-24 15:57:57 UTC
+- [Receiver implementation commit `3d06e1ad`](https://github.com/QwenLM/qwen-code/commit/3d06e1ad8e749c647a2eb5d447b867fc50955a13) — 2026-09-24 16:35:05 UTC
 - [Receiver closeout identifying the proposal as the concrete-batch approval boundary](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817836928)
 - [Later receiver-side review recording that the digest-binding contract was implemented](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5807577739)
 - [Merged PR #12492](https://github.com/QwenLM/qwen-code/pull/12492)
 - [Stable release v0.24.6](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.6)
+
+The receiver implementation commit landed **37 minutes 8 seconds** after the public Nakagawa review. Its commit message says the change was “Suggested in review” and implements the proposed dry-run snapshot plus expected-digest binding, with regressions that refuse changed instructions, item sets, output limits, and source content before upload.
 
 The shipped workflow uses a dry-run snapshot and an expected digest before the paid submission. This is a bounded implementation case: it does not show that the whole theory corpus was adopted, and it does not establish how many users noticed the source relation.
 
