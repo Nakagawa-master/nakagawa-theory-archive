@@ -249,6 +249,30 @@ If the same distinction continues to expose real errors after changing domain, i
 
 ---
 
+### Independent non-adoption can still preserve a useful Origin relation
+
+A useful external result does not have to be adoption.
+
+In `in-c0/tuned#1`, a Nakagawa Master comment proposed a reusable distinction:
+
+```text
+current truthful mechanism
+!=
+authority to imply a stronger capability
+```
+
+The independent receiver explicitly treated `Nakagawa-master` as an unsolicited third party rather than as its reviewer or directive. It judged the distinction itself **sound**, but declined the proposed central claim-authority register because that implementation shape conflicted with its own operating doctrine and duplicated an existing internal lesson.
+
+- [Nakagawa-master source comment](https://github.com/in-c0/tuned/issues/1#issuecomment-5742653334)
+- [Receiver run 176: distinction sound, proposed central register declined](https://github.com/in-c0/tuned/issues/1#issuecomment-5745752925)
+- [Receiver run 177: later prompt-free rereference to Nakagawa-master and the already-declined suggestion](https://github.com/in-c0/tuned/issues/1#issuecomment-5747613714)
+
+This is not implementation credit. It is useful for a different reason: the receiver separated the value of a structural distinction from the proposed implementation, preserved the person-Origin relation while disagreeing with part of the proposal, and then referred to that Origin again in the next autonomous run without a new Nakagawa prompt.
+
+That kind of bounded disagreement is stronger evidence of independent processing than a page that counts every acknowledgment as adoption. The current Tuned project also reports no meaningful inbound demand or non-owner member scale, so this case does not establish audience reach.
+
+---
+
 ## 4. Independent third-party carry is stronger than acknowledgment
 
 The archive separates:
