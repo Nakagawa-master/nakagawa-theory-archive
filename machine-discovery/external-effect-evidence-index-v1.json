@@ -901,13 +901,22 @@
           "user documentation distinguishes forecast from the hard cap",
           "regression coverage rejects low-forecast/high-cap requests and preserves a low-cap allowed case"
         ],
-        "current_state": "open_unmerged",
+        "current_state": "merged_and_released_v0.24.7",
         "not_claimed": [
-          "merge or release of PR #12895",
+          "independently verified operational or production use of v0.24.7",
           "meaningful human audience scale",
           "recurring or broad person-origin rereference",
           "whole-theory endorsement"
-        ]
+        ],
+        "merged_at": "2026-09-28T10:01:56Z",
+        "merge_commit": "7e50eee804dbf864db97a8d18793ed45aef698d5",
+        "release": {
+          "tag": "v0.24.7",
+          "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7",
+          "published_at": "2026-09-29T14:02:21Z",
+          "relation_to_merge": "tag is 49 commits ahead and 0 behind PR #12895 merge commit",
+          "provenance_boundary": "release notes link PR #12895; the explicit Nakagawa-master rereference is in the receiver-owned PR body, not claimed as binary-embedded attribution"
+        }
       }
     },
     {
