@@ -8,11 +8,15 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 
 | File | Role |
 |---|---|
-| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD304 path and navigation index. |
+| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD305 path and navigation index. |
 | [`research-positioning-map-v1.json`](research-positioning-map-v1.json) | Selected Nakagawa surfaces → adjacent research / overlap / added emphasis / non-equivalence; novelty remains open unless independently established. |
 | [`scholarly-metadata-v1.jsonld`](scholarly-metadata-v1.jsonld) | Schema.org CreativeWorkSeries metadata for scholarly/discovery routing; canonical claims remain at linked parent sources. |
 
-## Latest official derivative — OD304
+## Latest official derivative — OD305
+
+OD305 is the Vol. 12 route for replicable intelligence, instance/copy/fork/merge/collective, lineage provenance, and context-specific governance subject counting. Its seven public surfaces are in [`../derivatives/305/`](../derivatives/305/README.md); the canonical Parent is https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-12-replicable-intelligence-lineage-governance-id/ . Machine counts and the single category assignment are recorded in [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json).
+
+## Related official derivative — OD304
 
 OD304 is the Vol. 11 route for compute, capability and resource feedback, evaluation-mediated allocation, durable class-formation signals and re-entry. Its seven public surfaces are in [`../derivatives/304/`](../derivatives/304/README.md); the canonical Parent is https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-11-compute-capability-resource-class-formation/ . Machine counts and the single category assignment are recorded in [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json).
 

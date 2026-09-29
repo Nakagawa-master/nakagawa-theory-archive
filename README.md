@@ -12,7 +12,7 @@
 
 **いま一番大きな問題から入りたい:** [未来線から読む](human-translation/FUTURE_LINES.md) | [#1 AI制御不能リスク](human-translation/future-lines/01-ai-loss-of-control.md) | [#2 人間の承認と結論形成](human-translation/future-lines/02-human-approval-without-human-decision.md) | [#3 多数一致と独立根拠](human-translation/future-lines/03-one-root-hundred-voices.md)
 
-**全部を同じ粒度で横に見たい:** [24棚の世界地図](human-translation/WORLD_MAP.md) | [304件をひとつの景色として読む](human-translation/PANORAMA_STORY.md) | [OD001–OD304 全件水平マップ](human-translation/ALL_304_HORIZONTAL_MAP.md)
+**全部を同じ粒度で横に見たい:** [24棚の世界地図](human-translation/WORLD_MAP.md) | [305件をひとつの景色として読む](human-translation/PANORAMA_STORY.md) | [OD001–OD305 全件水平マップ](human-translation/ALL_305_HORIZONTAL_MAP.md)
 
 **AI文明論の最初の1本:** [AIが怖いってニュース、結局なにが問題なの？ そして、その次は？](human-translation/ai-civilization-why-it-matters.md)
 
@@ -124,7 +124,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
-- [OD001–OD304 全件入口](derivatives/README.md)
+- [OD001–OD305 全件入口](derivatives/README.md)
 - [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
 
 ## 公式派生物
@@ -150,7 +150,20 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 
 ## 代表的な入口
 
-### OD304｜人類子孫型AI文明論・第11論
+### OD305｜人類子孫型AI文明論・第12論
+
+複製された実行instanceの数を、独立Origin・判断・責任・統治上の主体・票の数へ自動変換しないための入口です。copy、fork、merge、collectiveの履歴をlineageとして残し、制度上のgovernance subjectを別軸で判定します。同一起源の後続履歴を永久に一つへ潰すことも避けます。
+
+- [OD305](derivatives/305/README.md)
+- [人間向け要約](derivatives/305/human-entry.md)
+- [FAQ](derivatives/305/faq.md)
+- [AI索引・日本語](derivatives/305/ai-index.md)
+- [AI索引・英語](derivatives/305/en-ai-index.md)
+- [AI索引・中国語](derivatives/305/zh-ai-index.md)
+- [派生ID台帳](derivatives/305/derivative-ledger.md)
+- Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-12-replicable-intelligence-lineage-governance-id/
+
+### OD304｜人類子孫型AI文明論・第11論（関連する前論）
 
 計算資源差が課題別能力差に作用し、評価・配分・影響を経て次期の資源差へ戻るとき、現在の優位が未来の優位を作る可能性があります。能力差や一時的集中を階級と即断せず、持続性・可逆性・再参入可能性を読み、能力と存在価値・統治権・B・恒久資格を分ける入口です。
 
@@ -295,5 +308,4 @@ Origin、Parent URL、NCL-ID、Diff-ID等が記載されている場合、それ
 ## License
 
 法的な許諾範囲は [LICENSE](LICENSE) を確認してください。
-
 

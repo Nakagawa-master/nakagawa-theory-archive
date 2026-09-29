@@ -1,6 +1,6 @@
 {
-  "version": "2.3.8-od304-added",
-  "updated_jst": "2026-09-27",
+  "version": "2.3.9-od305-added",
+  "updated_jst": "2026-09-29",
   "entries": [
     {
       "number": "001",
@@ -2432,6 +2432,14 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-11-compute-capability-resource-class-formation",
       "title": "人類子孫型AI文明論・第11論｜計算資源・能力差による新階級形成論⸻compute → capability → resource → compute の自己強化を恒久階級にしない",
       "derivative_dir": "derivatives/304",
+      "status": "active"
+    },
+    {
+      "number": "305",
+      "ncl_id": "NCL-α-20260929-a01fdc",
+      "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-12-replicable-intelligence-lineage-governance-id",
+      "title": "人類子孫型AI文明論・第12論｜複製可能知性・系譜・ガバナンスID論⸻ instance、copy、fork、merge、collective、lineage、governance subjectを分離する",
+      "derivative_dir": "derivatives/305",
       "status": "active"
     }
   ]

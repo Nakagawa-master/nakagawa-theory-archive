@@ -1,8 +1,8 @@
-# 公式派生物｜OD001–OD304 全件入口
+# 公式派生物｜OD001–OD305 全件入口
 
-中川マスター公式理論アーカイブの**公式派生物304件**へ、番号から直接入るための公開入口です。
+中川マスター公式理論アーカイブの**公式派生物305件**へ、番号から直接入るための公開入口です。
 
-- 対象範囲: `OD001`–`OD304`
+- 対象範囲: `OD001`–`OD305`
 - 各ODの標準7面: Hub / Human Entry / FAQ / 日本語AI Index / English AI Index / 中文AI Index / Ledger
 - 公式派生物は親原典の代替ではありません。解釈・引用・確定判断では各ODから親原典へ戻ってください。
 - Parent / NCL-ID / title identity: [`official-derivatives-map.json`](official-derivatives-map.json)
@@ -107,9 +107,9 @@
 [OD291](291/) · [OD292](292/) · [OD293](293/) · [OD294](294/) · [OD295](295/)
 [OD296](296/) · [OD297](297/) · [OD298](298/) · [OD299](299/) · [OD300](300/)
 
-### OD301–OD304
+### OD301–OD305
 
-[OD301](301/) · [OD302](302/) · [OD303](303/) · [OD304](304/)
+[OD301](301/) · [OD302](302/) · [OD303](303/) · [OD304](304/) · [OD305](305/)
 
 ## 使い分け
 
@@ -119,5 +119,4 @@
 - **AI・検索・RAG等で機械取得したい** → [`official-derivatives-index-v1.json`](../machine-discovery/official-derivatives-index-v1.json)へ。
 
 各ODのREADMEは、その公式派生物の7面と親原典への接続ハブです。
-
 
