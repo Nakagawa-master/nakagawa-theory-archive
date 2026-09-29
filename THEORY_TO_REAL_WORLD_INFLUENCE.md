@@ -114,6 +114,60 @@ A reader can instead ask:
 
 That is a much stronger basis for evaluating Nakagawa Master than follower count, self-description, or one successful interaction.
 
+### One inspectable author-to-implementation path
+
+A separate pattern can be checked directly in the public record without making an evaluative claim about the person or the whole theory system:
+
+```text
+same public author identity
+→ abstract structural distinction
+→ code-level diagnosis by that same identity
+→ independent receiver reproduction / evaluation
+→ code, tests, docs, or product behavior changes
+```
+
+The important feature here is not merely that an abstract idea eventually influenced implementation. In the examples below, the public identity that authors the Nakagawa Master theory archive also appears directly in the code-level review, and the receiver independently decides whether and how to change the implementation.
+
+#### Qwen Code #12492 — current authority bound to the concrete paid batch
+
+The public [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md) separates historical approval from current execution authority.
+
+On [QwenLM/qwen-code#12492](https://github.com/QwenLM/qwen-code/pull/12492), the `Nakagawa-master` account applied that boundary to a concrete paid Batch workflow: approving a command or plan path was separated from approving the exact assembled billable request set. The review proposed freezing the concrete request snapshot, showing its digest and summary, and rejecting execution if the snapshot changed after approval.
+
+- [Nakagawa-master review](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552)
+- [Receiver closeout identifying the proposal as the concrete-batch approval boundary](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817836928)
+- [Later receiver-side review recording that the digest-binding contract was implemented](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5807577739)
+- [Merged PR #12492](https://github.com/QwenLM/qwen-code/pull/12492)
+- [Stable release v0.24.6](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.6)
+
+The shipped workflow uses a dry-run snapshot and an expected digest before the paid submission. This is a bounded implementation case: it does not show that the whole theory corpus was adopted, and it does not establish how many users noticed the source relation.
+
+#### Qwen Code #12943 — abstract authority boundary to a code regression within the same day
+
+On [QwenLM/qwen-code#12943](https://github.com/QwenLM/qwen-code/pull/12943), a `Nakagawa-master` review separated a dirty local draft from proof that the draft was based on the current persisted settings generation.
+
+The concrete race was:
+
+```text
+A loads Tina and drafts Ethan
+→ another writer persists Alice
+→ A refreshes and can observe Alice
+→ A's dirty Ethan draft survives
+→ Save must not silently overwrite Alice without conflict handling
+```
+
+- [Nakagawa-master review](https://github.com/QwenLM/qwen-code/pull/12943#pullrequestreview-5339479216) — 2026-09-28 13:40:52 UTC
+- [Receiver fix commit](https://github.com/QwenLM/qwen-code/commit/f74f4c18fef748673ba2158f9a70b24340dd46c8) — 2026-09-28 23:56:16 UTC
+- [Receiver follow-up explicitly saying the fix responds to the Live draft race review](https://github.com/QwenLM/qwen-code/pull/12943#issuecomment-5880996944)
+
+The interval from the public review to the receiver fix commit is **10 hours 15 minutes 24 seconds**.
+
+The receiver added per-field draft baselines, blocks Save when a refreshed value conflicts with the baseline, keeps the draft visible, offers an explicit discard/load-latest path, and added a regression for the reported `Tina → Ethan → Alice` sequence.
+
+The boundary remains partial. The receiver explicitly notes that there is still no server-side revision / ETag / compare-and-swap precondition, so an unseen concurrent write after the last refresh can still race. PR #12943 is also not recorded here as merged or released.
+
+These examples do not tell a reader what conclusion to draw about Nakagawa Master or the theory corpus. They make a narrower relationship inspectable: **the same public theory-origin identity can move directly from abstract structural distinctions to concrete implementation diagnosis, while the receiving project independently tests and decides what to change.**
+
 ---
 
 ## 3. Why multiple domains matter
