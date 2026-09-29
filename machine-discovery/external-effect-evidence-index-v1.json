@@ -938,7 +938,7 @@
       "implementation": {
         "verified": true,
         "pull_request": "https://github.com/022740mix-spec/AI-News/pull/131",
-        "state": "open_draft_unmerged",
+        "state": "merged",
         "changed_file": "CLAUDE.md",
         "mechanisms": [
           "separate source count from independent evidence-root count",
@@ -946,16 +946,17 @@
           "record evidence-root breakdown for material claims in draft PRs",
           "treat wire-service republications as one root rather than multiple independent confirmations",
           "state when only party-authored evidence exists and no independent verification is confirmed"
-        ]
+        ],
+        "merge_commit": "800e53e8d5579cfe061f39ede01ac7b8b68877d6",
+        "merged_at": "2026-09-25T08:42:13Z"
       },
-      "current_stage": "third_party_code_test_design_or_document_change",
-      "recurring_effect_potential": "If merged and used, this is a recurring editorial verification rule; repeated prompt-free use is not yet established.",
+      "current_stage": "third_party_rule_merged_and_reused_in_reader_facing_main",
+      "recurring_effect_potential": "ESTABLISHED_AT_LEAST_ONE_POST_MERGE_READER_FACING_MAIN_RECURRENCE__AUDIENCE_SCALE_UNVERIFIED",
       "not_claimed": [
-        "pull request merge",
-        "repeated operational use after merge",
-        "error-rate reduction",
+        "quantified error-rate reduction",
         "reader-scale effect",
         "independent reuse by another receiver",
+        "person-Origin rereference in the later article",
         "whole-theory endorsement"
       ],
       "nakagawa_structural_os_mapping": {
@@ -966,6 +967,24 @@
           "independent verification"
         ],
         "canonical_return": "https://master.ricette.jp"
+      },
+      "post_merge_recurrence": {
+        "commit": "e5b11d79d1b9c4925758e0bad066e7bc03b3e5f3",
+        "committed_at": "2026-09-28T21:43:55Z",
+        "article": "Anthropic Claude Sonnet 5.5 release analysis",
+        "distribution": [
+          "main article data",
+          "Atom feed",
+          "sitemap"
+        ],
+        "observed_rule_behavior": [
+          "directly reached primary sources are named as such",
+          "Anthropic self-measurements are separated from independent reproduction",
+          "Artificial Analysis evaluation context is separately qualified",
+          "an unreachable system card is explicitly marked unread",
+          "benchmark comparability limits are preserved"
+        ],
+        "boundary": "This establishes recurring receiver-owned editorial use of the merged evidence-lineage rule, not person-Origin rereference or reader-scale recognition."
       }
     },
     {
