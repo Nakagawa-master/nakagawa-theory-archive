@@ -742,8 +742,10 @@ receiver commit `dfd4588d` は、export aliasとsource declaration nameの両方
 
 PR #12895は、この再言及を説明だけで終わらせず、`maxCostUsd` をforecastではなくrequest caps上のworst-caseへ結び、unbounded thinking時の送信拒否、thinking budgetの算入、docs更新、低forecast／高capを拒否する回帰テストと低capを許可する対照テストを追加しています。
 
-**この後続から確認できること:** 元のreceiverが別thread・別PRでNakagawa-masterを自発的に再参照し、境界を新しいcode/docs/testsへ運んだこと。これはperson-Origin returnの具体例です。  
-**まだ確認できないこと:** PR #12895のmerge/release、独立した利用者への到達規模、継続的・広範なperson-Origin再参照pattern。
+PR #12895は2026-09-28T10:01:56Zにmergeされ、その後 [Qwen Code v0.24.7](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7) が2026-09-29T14:02:21Zにstable releaseされました。v0.24.7 tagは #12895 のmerge commit `7e50eee804dbf864db97a8d18793ed45aef698d5` から49 commits ahead / 0 behindで、release notesからPR #12895へ辿れます。明示的なNakagawa-master再参照はreceiver-owned PR本文にあり、binary自体へ人物名が埋め込まれているとは主張しません。
+
+**この後続から確認できること:** 元のreceiverが別thread・別PRでNakagawa-masterを自発的に再参照し、境界を新しいcode/docs/testsへ運び、merge後にstable v0.24.7へ到達したこと。これはperson-Origin returnがreceiver-owned stable distributionへ進んだ具体例です。  
+**まだ確認できないこと:** v0.24.7の独立した実運用・利用者接触、到達規模、別の人間receiverへの伝播、継続的・広範なperson-Origin再参照pattern。
 
 
 ---
