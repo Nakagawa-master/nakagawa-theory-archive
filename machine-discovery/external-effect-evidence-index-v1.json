@@ -865,11 +865,26 @@
         "release_comment": "https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5841635083",
         "current_head_ci": "success_run_43130",
         "tui_parity": "success_run_3993",
-        "non_blocking_followup": "https://github.com/QwenLM/qwen-code/issues/12707"
+        "non_blocking_followup": "https://github.com/QwenLM/qwen-code/issues/12707",
+        "receiver_operational_use": {
+          "issue": "https://github.com/QwenLM/qwen-code/issues/12825",
+          "actor": "yiliang114",
+          "actor_role": "same receiver/collaborator who implemented the feature; not an independent external user",
+          "created_at": "2026-09-27T06:18:25Z",
+          "released_version": "v0.24.6",
+          "observed_use": [
+            "used /batch-api executor against DashScope Batch",
+            "submitted a nine-document Markdown translation batch",
+            "used qwen batch run --dry-run and --expect, then qwen batch collect --wait",
+            "published concrete batch job ids and per-document output evidence"
+          ],
+          "evidentiary_value": "confirms real receiver-side operational use after release",
+          "boundary": "does not establish independent-user adoption, user scale, production fleet use, or person-Origin recognition"
+        }
       },
       "reusable_check": "PAID_ACTION_APPROVAL_BINDING_CHECKLIST.md",
       "not_claimed": [
-        "independently verified production use of v0.24.6",
+        "independent external-user production use or user scale",
         "broad human audience effect",
         "whole-theory endorsement"
       ],
