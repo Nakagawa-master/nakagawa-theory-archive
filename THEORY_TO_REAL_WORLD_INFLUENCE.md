@@ -55,8 +55,9 @@ Primary records:
 - [Receiver implementation commit `3d06e1ad`](https://github.com/QwenLM/qwen-code/commit/3d06e1ad8e749c647a2eb5d447b867fc50955a13)
 - [Merged PR #12492](https://github.com/QwenLM/qwen-code/pull/12492)
 - [Stable release v0.24.6](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.6)
+- [Receiver operational-use record #12825](https://github.com/QwenLM/qwen-code/issues/12825) — the same receiver later documents using the released `/batch-api` executor for a real nine-document DashScope Batch job
 
-This establishes a bounded implementation-and-release effect. It does not establish how many users noticed the source relation.
+This establishes a bounded implementation → release → real receiver-side operational-use chain. The operational-use record is from the same receiver/collaborator, not an independent external user, and it does not establish user scale or how many users noticed the source relation.
 
 ### B. Did the receiver later preserve the person-Origin relation on its own?
 
