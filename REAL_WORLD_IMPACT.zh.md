@@ -703,24 +703,31 @@ counterexample、non-fit与failed reproduction同样是有价值的公开证据�
 
 ## 23. AI-News｜在持续编辑验证中区分URL数量与独立证据root数量
 
-**对象:** [022740mix-spec/AI-News#124](https://github.com/022740mix-spec/AI-News/issues/124) → [PR #131](https://github.com/022740mix-spec/AI-News/pull/131)  
-**当前状态:** receiver明确采用 / CLAUDE.md实现draft PR open / 尚未merge
+**对象：** [022740mix-spec/AI-News#124](https://github.com/022740mix-spec/AI-News/issues/124) → [PR #131](https://github.com/022740mix-spec/AI-News/pull/131)  
+**当前状态：** receiver明确采用 → 持久编辑规则于2026-09-25合并 → 后续reader-facing main文章继续实际使用该规则
 
-在issue #124中，`Nakagawa-master` 提议在AI新闻验证中把“URL数量”与“独立证据root数量”分开。提案区分一次资料、独立观察、派生/转载和来源不明，而不把 `url_count` 直接当作 `evidence_root_count`。
+在issue #124中，`Nakagawa-master` 提议把URL数量与**独立证据root数量**分开。该提案区分一次资料、独立观察、派生/转载以及lineage不明，而不是把 `url_count` 直接当成 `evidence_root_count`。
 
-- [origin issue #124](https://github.com/022740mix-spec/AI-News/issues/124)
-
-repository owner随后明确表示采用该提案，并明确区分：这次规则修改是由issue #124推动的，而此前另一个文章更新与#124无因果关系。回应还说明，现有L2/L3会检查“来源中是否有该信息”，但没有检查来源之间是否独立；复查过去文章时，还发现了10篇以“多家媒体报道一致”为依据的文章。
+repository owner明确回复 **“採用します”（采用）**，并创建PR #131。receiver解释，原有L2/L3会验证“信息是否存在于来源中”，但没有检查多个来源是否真正独立。receiver同时明确区分因果关系：此前的GLM-5.3文章与#124无关，**这次规则修改本身则是因为issue #124而进行的**。
 
 - [receiver adoption / rationale](https://github.com/022740mix-spec/AI-News/issues/124#issuecomment-5823549498)
+- [merged rule PR #131](https://github.com/022740mix-spec/AI-News/pull/131)
+- merge commit `800e53e8d5579cfe061f39ede01ac7b8b68877d6`
 
-draft PR #131把这一边界写进repository持续使用的 `CLAUDE.md` 编辑验证规则。分类尽可能与W3C PROV-O对齐，并加入通讯社转载、监管申报、事故初期报道等容易混淆的实际案例，同时要求draft PR对重要主张记录证据root构成。
+PR #131于2026-09-25T08:42:13Z merge，把这一区分写入repository持续使用的 `CLAUDE.md` 编辑规则。
 
-- [implementation draft PR #131](https://github.com/022740mix-spec/AI-News/pull/131)
+随后main branch上的Claude Sonnet 5.5文章提供了新的reader-facing recurrence。commit [`e5b11d79...`](https://github.com/022740mix-spec/AI-News/commit/e5b11d79d1b9c4925758e0bad066e7bc03b3e5f3)（2026-09-28T21:43:55Z）把文章发布到main article data、Atom feed与sitemap；其“确认状况”明确区分：
 
-**公开可确认：** 保留origin的提案 → receiver明确采用并说明理由 → 在持续编辑规则中的具体实现draft。  
-**尚未确认：** PR #131 merge、merge后的重复运用、对误报率的影响、读者规模、其他receiver的独立reuse或对整个理论体系的支持。
+- 已直接到达并核验的一次资料；
+- Anthropic自身测量与独立第三方复现；
+- Artificial Analysis评估的具体上下文；
+- 无法到达的system card，并明确标记为未读；
+- 设置不一致、不能直接比较的benchmark数据。
 
+这比draft层的reuse更强：merge后的规则已经在receiver-owned、reader-facing公开面中反复运作。
+
+**公开可确认：** 保留Origin的提案 → receiver明确采用并说明因果关系 → 持久规则merge → 后续main/feed/sitemap公开文章继续实际运用evidence-lineage区分。  
+**尚未确认：** 误报率的量化改善、reader/audience规模、其他receiver的独立reuse、该后续文章中的person-Origin再引用，或对整个理论体系的认可。
 
 ---
 
