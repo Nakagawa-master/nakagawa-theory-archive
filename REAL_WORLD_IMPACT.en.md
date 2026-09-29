@@ -703,23 +703,30 @@ The author fixed the three maintainer-requested pre-merge findings in `56f06075b
 ## 23. AI-News | Separate URL count from independent evidence-root count in recurring editorial verification
 
 **Target:** [022740mix-spec/AI-News#124](https://github.com/022740mix-spec/AI-News/issues/124) → [PR #131](https://github.com/022740mix-spec/AI-News/pull/131)  
-**Current state:** explicitly adopted by the receiver / implementation draft in CLAUDE.md / open and unmerged
+**Current state:** receiver explicitly adopted the distinction → recurring editorial rule merged on 2026-09-25 → later reader-facing main publication visibly reuses the rule
 
-In issue #124, `Nakagawa-master` proposed separating the number of URLs from the number of independent evidence roots in AI-news verification. The proposal distinguishes primary sources, independent observations, derived/syndicated material and unknown lineage, rather than treating `url_count` as `evidence_root_count`.
+In issue #124, `Nakagawa-master` proposed separating the number of URLs from the number of **independent evidence roots**. The proposal distinguishes primary sources, independent observations, derived/syndicated material, and unknown lineage instead of treating `url_count` as `evidence_root_count`.
 
-- [origin issue #124](https://github.com/022740mix-spec/AI-News/issues/124)
+The repository owner explicitly replied **“採用します” (“We will adopt it”)**, opened PR #131, and explained the missing layer: existing L2/L3 checks verified whether a statement appeared in a source, but did not test whether multiple sources were actually independent. The receiver also explicitly separated causality: an earlier GLM-5.3 article was unrelated to #124, while **the rule change itself was made because of issue #124**.
 
-The repository owner later explicitly said the proposal was adopted and distinguished this rule change from an earlier unrelated article update. The response explains that the existing L2/L3 checks verified whether information appeared in a source but did not test whether sources were independent; an audit also found ten articles that had relied on agreement across multiple media outlets as evidence.
+- [receiver adoption and rationale](https://github.com/022740mix-spec/AI-News/issues/124#issuecomment-5823549498)
+- [merged rule PR #131](https://github.com/022740mix-spec/AI-News/pull/131)
+- merge commit `800e53e8d5579cfe061f39ede01ac7b8b68877d6`
 
-- [receiver adoption / rationale](https://github.com/022740mix-spec/AI-News/issues/124#issuecomment-5823549498)
+PR #131 merged on 2026-09-25T08:42:13Z and placed the distinction in the repository's durable `CLAUDE.md` editorial rules.
 
-Draft PR #131 implements the distinction in the repository's recurring `CLAUDE.md` editorial-verification rules. It aligns terminology with W3C PROV-O where possible, adds operational cases such as wire-service republication and regulatory filings, and requires draft PRs to record the root breakdown for material claims.
+A later main-branch article about Claude Sonnet 5.5 provides a fresh reader-facing recurrence. Commit [`e5b11d79...`](https://github.com/022740mix-spec/AI-News/commit/e5b11d79d1b9c4925758e0bad066e7bc03b3e5f3), dated 2026-09-28T21:43:55Z, publishes the article into the main article data, Atom feed, and sitemap. Its verification note explicitly separates:
 
-- [implementation draft PR #131](https://github.com/022740mix-spec/AI-News/pull/131)
+- primary sources reached directly;
+- Anthropic's own measurements from independent reproduction;
+- the context of Artificial Analysis evaluation;
+- an unreachable system card, marked as unread rather than silently treated as checked;
+- benchmark figures whose settings are not comparable.
 
-**Publicly verifiable here:** origin-preserved proposal → explicit receiver adoption and rationale → concrete implementation in a recurring editorial rule draft.  
-**Not established yet:** merge of PR #131, repeated use after merge, effect on error rate, reader scale, independent reuse by another receiver, or endorsement of the wider theory corpus.
+This is stronger than a draft-only reuse signal: the merged rule is recurring in a receiver-owned, reader-facing publication surface.
 
+**Publicly verifiable here:** Origin-preserved proposal → explicit receiver adoption and causality statement → durable rule merge → later main/feed/sitemap publication that visibly applies the evidence-lineage distinction.  
+**Not established here:** quantified error-rate reduction, reader/audience scale, reuse by another receiver, a later person-Origin rereference in that article, or endorsement of the wider theory corpus.
 
 ---
 
