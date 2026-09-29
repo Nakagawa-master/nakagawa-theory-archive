@@ -33,6 +33,69 @@ That is the causal bridge between theory and influence.
 
 ---
 
+## 90-second verification route
+
+If you only have a minute or two, do not start by asking whether the archive's self-description sounds persuasive. Check three different kinds of receiver behavior.
+
+### A. Did an external receiver actually change implementation?
+
+**Qwen Code #12492** provides a compact source-to-implementation chain:
+
+```text
+public Nakagawa Master authority distinction
+→ concrete code-level review on a paid Batch workflow
+→ receiver implementation 37m 08s later
+→ regression tests
+→ merge
+→ stable v0.24.6 release
+```
+
+Primary records:
+- [Nakagawa-master review](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552)
+- [Receiver implementation commit `3d06e1ad`](https://github.com/QwenLM/qwen-code/commit/3d06e1ad8e749c647a2eb5d447b867fc50955a13)
+- [Merged PR #12492](https://github.com/QwenLM/qwen-code/pull/12492)
+- [Stable release v0.24.6](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.6)
+
+This establishes a bounded implementation-and-release effect. It does not establish how many users noticed the source relation.
+
+### B. Did the receiver later preserve the person-Origin relation on its own?
+
+A later, separately authored and merged Qwen Code PR, **#12895**, describes a budget defect and explicitly states that **Nakagawa-master pointed out that the old gate broke the meaning of `maxCostUsd`, not merely its wording**.
+
+Primary record:
+- [Qwen Code #12895](https://github.com/QwenLM/qwen-code/pull/12895) — merged 2026-09-28
+
+The useful signal is narrower than endorsement: the receiver-owned artifact voluntarily preserves the person-Origin relation while turning the boundary into code, tests, docs, and a merged change.
+
+### C. Does the Origin relation survive independent disagreement?
+
+In **in-c0/tuned#1**, the independent receiver did **not** adopt the proposed central-register implementation. It nevertheless judged the underlying distinction sound, explained why it rejected that implementation shape, and then referred to Nakagawa-master and the already-declined suggestion again in the next autonomous run without a new Nakagawa prompt.
+
+Primary records:
+- [Source comment](https://github.com/in-c0/tuned/issues/1#issuecomment-5742653334)
+- [Receiver run 176: distinction sound, implementation shape declined](https://github.com/in-c0/tuned/issues/1#issuecomment-5745752925)
+- [Receiver run 177: later prompt-free rereference](https://github.com/in-c0/tuned/issues/1#issuecomment-5747613714)
+
+This matters because a credible evidence page should not count only successful adoption. Independent disagreement with preserved Origin is evidence of processing; it is not implementation credit.
+
+### What these three checks do — and do not — show
+
+Together they let a reader independently inspect three different claims:
+
+```text
+implementation effect exists
++
+later receiver-owned Origin rereference exists
++
+Origin can survive disagreement rather than only praise
+```
+
+They still do **not** establish mass recognition, broad audience scale, endorsement of the whole theory corpus, or that every similar engineering idea originated here.
+
+For the fuller evidence chain, continue below.
+
+---
+
 ## 1. A recurring structural style
 
 Across different fields, several Nakagawa Master distinctions repeatedly separate things that are often collapsed together.
