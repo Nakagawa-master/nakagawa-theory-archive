@@ -936,7 +936,7 @@ A focused re-check then confirmed no remaining blocker within the serialized-con
 ## 31. Qwen Code | Separate `maxCostUsd` forecast from its hard bound, then observe a prompt-free receiver re-reference to Nakagawa Master
 
 **Surface:** [QwenLM/qwen-code#12707](https://github.com/QwenLM/qwen-code/issues/12707) → [PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)  
-**Current state:** receiver-owned follow-up PR voluntarily re-references Nakagawa-master in its body → code / tests / docs implementation → non-author maintainer approval → merged on 2026-09-28 / release and operational use not yet observed
+**Current state:** receiver-owned follow-up PR voluntarily re-references Nakagawa-master in its body → code / tests / docs implementation → non-author maintainer approval → merged on 2026-09-28 → shipped in stable Qwen Code v0.24.7 on 2026-09-29 / operational use and user-scale contact not yet observed
 
 In #12707, `Nakagawa-master` pointed out that the hard `maxCostUsd` gate was using the same rough forecast that explicitly excluded thinking tokens, so this contract did not hold:
 
@@ -960,8 +960,8 @@ The PR computes the worst case from the request body's output cap plus thinking 
 - [non-author maintainer approval by `chiga0`](https://github.com/QwenLM/qwen-code/pull/12895#pullrequestreview-5336480098)
 - [merge commit `7e50eee8`](https://github.com/QwenLM/qwen-code/commit/7e50eee804dbf864db97a8d18793ed45aef698d5)
 
-PR #12895 merged at 2026-09-28T10:01:56Z. At verification time, the latest listed stable release was still v0.24.6, published before this merge, so release of this follow-up fix is not claimed.
+PR #12895 merged at 2026-09-28T10:01:56Z. Stable [Qwen Code v0.24.7](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7) was published at 2026-09-29T14:02:21Z. The release tag is 49 commits ahead of and 0 behind merge commit `7e50eee804dbf864db97a8d18793ed45aef698d5`, and the release notes link PR #12895. The explicit Nakagawa-master rereference remains in the receiver-owned PR body; this page does not claim the person name is embedded in the binary itself.
 
-**Publicly verifiable here:** concrete hard-budget semantic finding → a receiver-owned later PR voluntarily re-references Nakagawa-master as the source → the exact boundary is implemented in code / tests / docs → non-author maintainer approval → merge.  
-**Not established here:** release, operational use, user scale, propagation to another receiver, broad person recognition, or whole-theory endorsement.
+**Publicly verifiable here:** concrete hard-budget semantic finding → a receiver-owned later PR voluntarily re-references Nakagawa-master as the source → the exact boundary is implemented in code / tests / docs → non-author maintainer approval → merge → stable v0.24.7 release with a traceable release-notes-to-PR path.  
+**Not established here:** independently verified operational use of v0.24.7, user scale, propagation to another human receiver, broad person recognition, or whole-theory endorsement.
 
