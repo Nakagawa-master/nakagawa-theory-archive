@@ -941,7 +941,7 @@ PR作者明确回复 **“Thanks for catching the serialized-content gap.”**�
 ## 31. Qwen Code｜把 `maxCostUsd` 的forecast与hard bound分开，并出现无新提示的Nakagawa-origin再引用
 
 **对象：** [QwenLM/qwen-code#12707](https://github.com/QwenLM/qwen-code/issues/12707) → [PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)  
-**当前状态：** receiver-owned后续PR在正文中自发再次引用Nakagawa-master → code / tests / docs实现 → 非作者maintainer approval → 2026-09-28已merge / release与真实使用尚未确认
+**当前状态：** receiver-owned后续PR在正文中自发再次引用Nakagawa-master → code / tests / docs实现 → 非作者maintainer approval → 2026-09-28已merge → 2026-09-29进入stable Qwen Code v0.24.7 / 真实运营使用与用户规模尚未确认
 
 在#12707中，`Nakagawa-master` 指出：`maxCostUsd` 的hard gate使用了同一个rough forecast，而该forecast明确不包含thinking token，因此下面这个契约实际上并不成立：
 
@@ -965,8 +965,8 @@ PR使用实际要发送的request body里的output cap与thinking bound计算wor
 - [non-author maintainer `chiga0` approval](https://github.com/QwenLM/qwen-code/pull/12895#pullrequestreview-5336480098)
 - [merge commit `7e50eee8`](https://github.com/QwenLM/qwen-code/commit/7e50eee804dbf864db97a8d18793ed45aef698d5)
 
-PR #12895于2026-09-28T10:01:56Z merge。核验时最新listed stable release仍是该merge之前发布的v0.24.6，因此本页不声称该follow-up fix已经release。
+PR #12895于2026-09-28T10:01:56Z merge。stable [Qwen Code v0.24.7](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7) 于2026-09-29T14:02:21Z发布。该tag相对 #12895 merge commit `7e50eee804dbf864db97a8d18793ed45aef698d5` 为49 commits ahead / 0 behind，release notes也链接PR #12895。明确的Nakagawa-master再引用保留在receiver-owned PR正文中；本页不声称人物名被嵌入binary本身。
 
-**公开可确认：** 具体hard-budget semantics指摘 → receiver-owned后续PR自发把Nakagawa-master作为source再次引用 → exact boundary进入code / tests / docs → 非作者maintainer approval → merge。  
-**尚未确认：** release、真实运营使用、用户规模、向其他receiver继续传播、广泛人物认知，或对整个理论体系的支持。
+**公开可确认：** 具体hard-budget semantics指摘 → receiver-owned后续PR自发把Nakagawa-master作为source再次引用 → exact boundary进入code / tests / docs → 非作者maintainer approval → merge → stable v0.24.7，并且release notes可追溯回PR。  
+**尚未确认：** v0.24.7的独立真实运营使用、用户规模、向其他人类receiver继续传播、广泛人物认知，或对整个理论体系的支持。
 
