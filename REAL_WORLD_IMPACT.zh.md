@@ -679,7 +679,7 @@ counterexample、non-fit与failed reproduction同样是有价值的公开证据�
 ## 22. Qwen Code｜付费 Batch API 的批准边界
 
 **对象:** [QwenLM/qwen-code#12492](https://github.com/QwenLM/qwen-code/pull/12492)  
-**当前状态:** PR 已合并，并于 2026-09-26 JST 随 Qwen Code v0.24.6 发布 / merge commit `c3a4058a0c72`
+**当前状态:** PR 已合并，并于 2026-09-26 JST 随 Qwen Code v0.24.6 发布 / #12825 已记录receiver真实Batch使用 / merge commit `c3a4058a0c72`
 
 [Nakagawa-master 的公开评论](https://github.com/QwenLM/qwen-code/pull/12492#issuecomment-5817569552) 区分了批准 `qwen batch run` 与批准实际计费的具体 batch snapshot。方案把 exact item set、frozen settings 与 cost estimate 绑定到 canonical digest，并把后续实质变化视为旧批准失效。
 
@@ -694,8 +694,10 @@ counterexample、non-fit与failed reproduction同样是有价值的公开证据�
 
 作者在 `56f06075b3` 修复了维护者要求的三个合并前问题，并在 `206a444b30` 处理另外两个建议。当前 head 的 Qwen Code CI（run 43130）与 TUI parity（run 3993）均通过。维护者判断 `206a444b` 可合并；PR 于 2026-09-26 JST 合并，并于同日随 v0.24.6 发布。非阻塞 follow-up 仍记录在 [#12707](https://github.com/QwenLM/qwen-code/issues/12707)。
 
-**公开记录可确认:** 有来源归属的第三方采纳、提议的批准边界实现、PR 合并与发布。更早 PR head 上也有真实付费使用记录。  
-**尚不能确认:** 对 v0.24.6 的独立生产使用、广泛读者传播，或对完整理论体系的认可。不会把整个 PR、后续修正或 release 归为 Nakagawa-master 单独成果。
+发布后，同一receiver/collaborator `yiliang114` 在 [issue #12825](https://github.com/QwenLM/qwen-code/issues/12825) 中公开记录了v0.24.6的真实使用：通过 `/batch-api` executor向DashScope Batch提交9份公开Markdown文档翻译任务，并记录dry-run → `--expect` → `collect --wait` 路径、具体batch job id以及重复输出证据。这确认了**发布后的receiver真实运营使用**，但不代表独立外部用户采用或用户规模。
+
+**公开记录可确认:** 有来源归属的第三方采纳、提议的批准边界实现、PR 合并与发布，以及同一receiver对v0.24.6的真实Batch使用。更早 PR head 上也有真实付费使用记录。  
+**尚不能确认:** 独立外部用户的生产采用或用户规模、广泛读者传播，或对完整理论体系的认可。不会把整个 PR、后续修正或 release 归为 Nakagawa-master 单独成果。
 
 
 ---
