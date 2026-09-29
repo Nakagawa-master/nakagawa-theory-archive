@@ -29,6 +29,10 @@
 
 **すでに起きた現実作用を確認する:** [公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md) / [English](REAL_WORLD_IMPACT.en.md) / [中文](REAL_WORLD_IMPACT.zh.md)
 
+**理論 → 本人の具体的診断 → 第三者実装 → 後日のOrigin再参照までを短時間で検証する:** [Theory → Real-World Influence｜90-second verification route](THEORY_TO_REAL_WORLD_INFLUENCE.md#90-second-verification-route)
+
+この短縮導線は成功例だけを並べません。実装・merge/releaseの事例に加え、第三者が提案した実装形を採用しなかった一方で、構造上の区別自体はsoundと判断し、その後もOriginを再参照した公開記録を同列に置いています。人物評価を先に要求せず、一次証拠から読者自身が判断できる形を優先します。
+
 REAL_WORLD_IMPACT.md には現在25の番号付き公開事例セクションがあり、第三者projectでの response / code / tests / merge / release / deployment 等を、確認できる段階と未確認範囲に分けて記録しています。単なるmention数ではなく、公開証拠でどこまで作用したかを確認してください。
 
 **最短で5件だけ検証する場合:**
