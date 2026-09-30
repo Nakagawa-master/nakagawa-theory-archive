@@ -1,0 +1,124 @@
+# 改訂を始めた。では、最後に確定したのは本当にその改訂版？
+
+ある文書を直すために、「いまから改訂します」と手続きを始めた。
+
+新しい内容を確認し、承認も取った。
+
+ところが、その間に別の古いパソコンから、昔の版がもう一度公開されてしまった。
+
+そのことに気づかないまま、最初の人が「改訂を終了します」と操作したらどうなるでしょう。
+
+**改訂を正しく始めたこと**と、  
+**いま目の前にある状態を正しく確定できること**は、同じではありません。
+
+## 始める時に正しかっただけでは足りない
+
+長い処理では、途中で状態が変わることがあります。
+
+たとえば、
+
+1. Aさんが版2へ改訂を始める
+2. 版2を確認する
+3. 別の古い環境から版1が公開される
+4. Aさんが「改訂終了」を押す
+
+という順番です。
+
+Aさんが最初に改訂を始めた権限は、本物です。  
+版2を確認した記録も、本物です。
+
+でも、4の時点で実際に公開されているのが版1なら、
+
+> 「Aさんは正しく改訂を始めた」
+
+という過去の事実だけで、版1を「改訂完了」としてよいのでしょうか。
+
+ここで必要なのは、終了する直前にもう一度、
+
+**いま確定しようとしている状態は、今回の改訂が確定してよい状態か**
+
+を見ることです。
+
+## 鍵を開けた人が、最後に残っているものまで承認したとは限らない
+
+工事で考えると分かりやすいかもしれません。
+
+責任者が「この図面で工事を始めてよい」と許可した。
+
+工事中に、誰かが古い図面へ差し替えた。
+
+最後に責任者が「工事期間を終了」と記録した。
+
+この終了操作だけを見て、
+
+> 古い図面の内容まで責任者が承認した
+
+とは言えません。
+
+始める権限と、最後の状態を確定する権限の間には、  
+**同じ対象が続いているか**という確認が必要です。
+
+覚えておくなら、
+
+> 改訂を始める権限と、いま存在する状態を確定する権限は同じではない。
+
+という区別です。
+
+## 実際の公開projectでも、似た問題が報告されている
+
+Agent Marketplaceの公開Issue #322では、複数のcheckoutで作業する時、古いcheckoutが新しいexecution planを古い版で上書きできる問題が報告されています。
+
+Issueの再現では、
+
+- 新しいplanとcontract revisionを公開する
+- 別の古いcheckoutが以前のplanを上書きする
+- その古いplanの上でrevision barrierが解除される
+
+という状態まで確認されています。
+
+Issue自身は、古いpublicationを拒否することや、revision barrierの所有を結びつけることを提案しています。
+
+ここからさらに確認できる防御があります。
+
+**改訂を終了する瞬間にも、現在公開されているstateと、今回のrevisionが確定してよいlineageが一致しているかを確認する。**
+
+これはNakagawa-masterの指摘でAgent Marketplace側が変更した、という記録ではありません。  
+Issue #322は第三者が独立に報告した問題です。ここでは、その公開問題を別systemでも試せるcurrent-authority regressionへ変換しています。
+
+- [Agent Marketplace issue #322](https://github.com/agentrof/agent-marketplace/issues/322)
+- [Current-Authority Reuse Kit — revision finalization](../../CURRENT_AUTHORITY_REUSE_KIT.md#15-a-revision-barrier-is-not-authority-to-release-whatever-state-is-current)
+
+## 自分のsystemなら
+
+改訂、承認、release、migration、deploymentなどに「開始」と「終了」があるなら、終了時に次を確認できます。
+
+- 開始時のreceiptは何を対象にしていたか
+- 途中で対象versionやcontractが変わっていないか
+- 現在のstateは、そのrevisionのlineageに属しているか
+- 一致しない時、終了操作がfail-closedになるか
+- barrierやlockを解除せず、そのまま止められるか
+
+過去の正しい承認を消す必要はありません。
+
+**過去の承認を履歴として残しながら、いま行う確定操作の権限をもう一度確かめる。**
+
+それが重要です。
+
+### 1行だけ返すなら
+
+この話に似た場面、反例、「この場合は開始時だけ見れば十分」という条件が一つあれば、1行だけ残せます。
+
+→ [似た場面・反例・違和感を1行で返す](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/416)
+
+実際に再現・実装・反証した場合は、[独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) へ。
+
+### 次に読むなら
+
+- [承認したあとで中身が変わる話](06-approved-one-thing-executed-another.md)
+- [共有したあとで実行場所が変わる話](09-same-share-different-runtime.md)
+- [Current-Authority Reuse Kit](../../CURRENT_AUTHORITY_REUSE_KIT.md)
+- [入口一覧へ戻る](README.md)
+
+Origin / Author: **Nakagawa Master**
+
+このページは一般読者向けの再利用入口です。Agent Marketplace #322は独立した外部問題であり、このページ自体は第三者によるNakagawa Master理論の採用証拠ではありません。
