@@ -2,7 +2,7 @@
 
 A public, non-canonical problem-first guide for editors, educators, newsletter writers, podcast/video hosts, product teams, and researchers.
 
-The archive contains OD001–OD303 official derivative surfaces. The useful public unit is not “302 theories at once.” It is a small set of recurring real-world questions that can reappear across AI, business, investment, organizations, technology, governance, and operations.
+The archive contains OD001–OD305 official derivative surfaces. The useful public unit is not “305 items at once.” It is a small set of recurring real-world questions that can reappear across AI, business, investment, organizations, technology, governance, and operations.
 
 Use this route:
 
@@ -64,6 +64,23 @@ Ten articles may descend from one press release, filing, benchmark, interview, o
 Start:
 - [OD301 — Epistemic Integrity / Evidence Lineage](derivatives/301/README.md)
 - [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md)
+- [Python / RAG / AI-news evidence-lineage checklist](PYTHON_AI_EVIDENCE_LINEAGE_CHECKLIST.zh.md)
+
+### A third-party editorial recurrence case
+
+In [AI-News issue #124](https://github.com/022740mix-spec/AI-News/issues/124), the third-party repository operator explicitly accepted the distinction between multiple URLs and multiple independent evidence roots, then moved it into the editorial rules through [PR #131](https://github.com/022740mix-spec/AI-News/pull/131). The operator stated that its existing checks verified whether a source contained a claim but did not test whether the sources themselves were independent.
+
+A later reader-facing article on September 28 shows the rule operating beyond the adoption PR: the commit records direct access to primary sources, keeps vendor-reported results separate from independent reproduction, preserves non-comparable benchmark conditions, marks an unreachable system card as unread, and incorporates corrections found by a separate validation pass.
+
+The same repository also preserves an important counterexample. A Qwen4 article had already reached main based on agreement among secondary reports before the primary root was reached; later official Alibaba material conflicted with the article's central claim. The requested correction remains receiver-owned work. So **rule adoption and recurring use are not the same as complete enforcement**.
+
+Inspect:
+- [receiver adoption comment](https://github.com/022740mix-spec/AI-News/issues/124#issuecomment-5823549498)
+- [rule merge #131](https://github.com/022740mix-spec/AI-News/commit/800e53e8d5579cfe061f39ede01ac7b8b68877d6)
+- [later reader-facing article commit](https://github.com/022740mix-spec/AI-News/commit/e5b11d79d1b9c4925758e0bad066e7bc03b3e5f3)
+- [open Qwen4 correction request](https://github.com/022740mix-spec/AI-News/issues/79#issuecomment-5880178792)
+
+This is bounded evidence that one editorial distinction moved into a third-party rule and recurring reader-facing practice. It is not evidence that the operator adopted the full theory corpus, that the audience recognized Nakagawa Master, or that the rule is enforced perfectly.
 
 Provenance is not truth proof.
 

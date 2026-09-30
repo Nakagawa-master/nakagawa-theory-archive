@@ -261,7 +261,49 @@ old source
 → dependent summary marked stale / regenerated
 ```
 
-## 7. 最后一个边界：provenance 也不是真理证明
+## 7. 第三方实际运营中，从“规则”走到“下一篇文章”的例子
+
+这个区分并不只存在于本仓库自己写的 checklist 中。
+
+在第三方维护的 [AI-News issue #124](https://github.com/022740mix-spec/AI-News/issues/124) 中，有人提出应把“多个 URL”与“多个独立证据 root”分开。该仓库维护者随后在 [comment](https://github.com/022740mix-spec/AI-News/issues/124#issuecomment-5823549498) 中明确表示采用，并说明：现有验证层会检查来源中是否存在相应信息，但**没有检查这些来源彼此是否独立**。
+
+之后，[PR #131](https://github.com/022740mix-spec/AI-News/pull/131) 被合并，把来源关系分为：
+
+```text
+一次资料
+独立观察
+派生・转载
+不明
+```
+
+并把“如果根只有当事方的一条资料，就应明确写出尚未确认独立验证”等规则加入编辑流程。
+
+更重要的是，这个变化没有停在采用 PR。9 月 28 日的 [后续读者向文章 commit](https://github.com/022740mix-spec/AI-News/commit/e5b11d79d1b9c4925758e0bad066e7bc03b3e5f3) 明确区分了：直接到达的一次资料、提供方自己报告的数值、不可直接比较的 benchmark 条件、无法到达的 system card，以及另一验证模型发现并触发的更正。公开历史因此至少能确认：这套规则被带入了后续 reader-facing output。
+
+但同一仓库也留下了反例。另一篇 Qwen4 文章在回到一次资料 root 之前，依据多家二次报道的一致性进入了 main；之后确认 Alibaba 官方一次资料与文章中心命题不一致。[更正请求](https://github.com/022740mix-spec/AI-News/issues/79#issuecomment-5880178792) 目前仍需要 receiver 侧处理。
+
+因此，这个案例能够支持的结论是有限的：
+
+```text
+提出区分
+→ receiver 明确采用
+→ 转化为 durable editorial rule
+→ 在后续 reader-facing 文章中再次使用
+
+可以从公开记录中确认。
+
+但
+
+rule exists
+!=
+every publication is correctly gated
+```
+
+它说明 evidence lineage 可以进入第三方编辑运营并被再次使用；它不证明整个理论体系被采用，也不证明人物认知、读者规模或完全自动化执行已经成立。
+
+---
+
+## 8. 最后一个边界：provenance 也不是真理证明
 
 把证据链画清楚，只能回答：
 
