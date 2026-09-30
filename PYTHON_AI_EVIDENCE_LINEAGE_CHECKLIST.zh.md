@@ -261,7 +261,51 @@ old source
 → dependent summary marked stale / regenerated
 ```
 
-## 7. 最后一个边界：provenance 也不是真理证明
+## 7. 第三方運用で「規則 → 次の記事」まで進んだ例
+
+この区別は、自分で書いたchecklistの中だけにあるわけではありません。
+
+第三者運営の [AI-News issue #124](https://github.com/022740mix-spec/AI-News/issues/124) で、「複数URL」と「独立した証拠root」を分ける提案が行われ、運営者は [comment](https://github.com/022740mix-spec/AI-News/issues/124#issuecomment-5823549498) で採用を明示しました。運営者は、既存の検証層では出典に情報があるかは確認していた一方、**出典どうしの独立性は確認していなかった**と説明しています。
+
+その後 [PR #131](https://github.com/022740mix-spec/AI-News/pull/131) がmergeされ、
+
+```text
+一次資料
+独立観測
+派生・転載
+不明
+```
+
+を分け、根が当事者1本なら独立検証未確認と書く規則が編集手順へ入りました。
+
+さらに9月28日の [後続記事commit](https://github.com/022740mix-spec/AI-News/commit/e5b11d79d1b9c4925758e0bad066e7bc03b3e5f3) では、一次資料への直接到達、提供元の自己申告値、比較条件の不一致、未到達資料、別モデルの検証による訂正が分離されています。少なくとも、規則が採用PRだけで止まらずreader-facing outputへ再利用されたことは公開履歴から追えます。
+
+ただし、このrepoでは別のQwen4記事が一次rootへ戻る前に二次報道の一致から公開され、後から公式一次資料との中心命題の不一致が見つかりました。[訂正要求](https://github.com/022740mix-spec/AI-News/issues/79#issuecomment-5880178792) は現在もreceiver側の処理待ちです。
+
+このため、ここから言えるのは限定的です。
+
+```text
+区別の提案
+→ receiverが採用を明示
+→ durable editorial ruleへ変換
+→ 後続reader-facing記事で再利用
+
+は確認できる。
+
+一方で
+
+rule exists
+!=
+every publication is correctly gated
+```
+
+です。
+
+この事例は、evidence lineageが第三者の編集運用へ移り得ることの一例です。理論体系全体の採用、人物認知、読者規模、完全な自動執行までは示しません。
+
+---
+
+## 8. 最后一个边界：provenance 也不是真理证明
 
 把证据链画清楚，只能回答：
 
