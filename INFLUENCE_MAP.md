@@ -161,6 +161,26 @@ MemberJunction #4402では、結果0件、列欠落、null、非数値を人工�
 - [MemberJunction PR #4402](https://github.com/MemberJunction/MJ/pull/4402)
 - [修正commit `b11b9877`](https://github.com/MemberJunction/MJ/commit/b11b98777582ce5a8456834eccf77f528236474e)
 
+## 11. 共有が有効でも、あとで実行場所が変わったら同じ意味か
+
+共有が期限内でも、同じagentの能力や実行場所が後から変われば、発行時と利用時で実際の作用範囲が変わることがあります。
+
+```text
+grant still valid
+≠
+authority meaning stayed unchanged
+```
+
+Qwen Code PR #12582では、Nakagawa-masterの指摘後、開発側が @Nakagawa-master へ返答し、既存shareがlocal↔managed runtimeの変更にもlive-policyで追随することをfrozen contractと英語・中国語のshare UIへ明記しました。
+
+この記録時点ではPRはopenです。contract/UI変更までは確認できますが、merge・releaseまでは数えません。
+
+関連資料:
+- [一般向けの入口](human-translation/entry-stories/09-same-share-different-runtime.md)
+- [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
+- [Nakagawa-master review](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5364710354)
+- [receiver response](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5911699280)
+
 ## 関連する索引と資料
 
 - [24のテーマから見る](human-translation/WORLD_MAP.md)
