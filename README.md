@@ -25,18 +25,17 @@
 ## 公式アーカイブと公開リポジトリの役割
 
 - **公式アーカイブ:** https://master.ricette.jp/ — 親原典・正本・確定内容へ戻る場所
-- **公開リポジトリ:** https://github.com/Nakagawa-master/nakagawa-theory-archive — 第三者作用、再利用、発見、機械可読接続、Origin回帰のための公開接続面
+- **公開リポジトリ:** https://github.com/Nakagawa-master/nakagawa-theory-archive — 公開されている実装事例、再利用資料、索引、機械可読資料を確認できる場所
 
-この2つは同じ役割ではありません。公開リポジトリは公式アーカイブの代替ではなく、公式アーカイブへ戻れる形で現実作用と再利用を接続する場所です。
+この2つは同じ役割ではありません。公開リポジトリは公式アーカイブの代替ではありません。理論の確定内容は公式アーカイブを参照してください。
 
 **恒久公開面は2つです。**
 
 1. **Canonical / 正本:** [master.ricette.jp](https://master.ricette.jp/) — 理論の確定内容・Parent・公式アーカイブ
 2. **Public evidence / reuse:** このGitHub repository — 第三者実装、検証、再利用、研究位置づけ、機械可読入口
 
-**問題 → 構造区別 → 第三者作用 → 再利用 → Origin → 次の問題を一周したい:** [Influence Map｜問題から現実作用へ](INFLUENCE_MAP.md)
+**具体的な問題から関連資料を探したい:** [Influence Map｜問題から関連資料を探す](INFLUENCE_MAP.md)
 
-**自分の現場で試したい:** [Influence Mapの実践入口](INFLUENCE_MAP.md#9-ここから先は読むだけで終わらせない) — 問題を一文にし、混同を分け、test / review / checklist / implementation gateへ落とす
 
 **すでに起きた現実作用を確認する:** [公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md) / [English](REAL_WORLD_IMPACT.en.md) / [中文](REAL_WORLD_IMPACT.zh.md)
 
@@ -59,7 +58,7 @@ REAL_WORLD_IMPACT.md には現在25の番号付き公開事例セクションが
 
 AI / LLM運用、認可・ガバナンス、計測、履歴、外部APIのretry、migration / syncに加え、成長・投資・将来の選択肢など、実務で起きる具体的な問題から入れます。
 
-WordPress.com等の補助surfaceはcanonicalではなく期限付きのdistribution / reader experimentです。恒久的なsource identity、実装証拠、再利用経路は上記2面へ戻します。
+外部サービス上の補助ページがある場合も、理論の確定内容は公式アーカイブ、公開資料と実装記録はこのリポジトリを参照してください。
 
 本リポジトリは、中川マスター（Nakagawa Master／筆名）の公開理論体系を、人間とAIが発見・照合・再参照できる形で保存する公開リポジトリです。
 
@@ -67,19 +66,19 @@ WordPress.com等の補助surfaceはcanonicalではなく期限付きのdistribut
 
 ## 10秒で見る
 
-ここは、理論を並べて「読んでください」と置いておく倉庫ではありません。
+このリポジトリでは、理論名だけでなく、具体的な問題から関連資料を探せます。
 
 人はたいてい、理論名から問題に出会いません。**「なぜ承認したのに事故が起きた？」「数字は本当にそのsystemが測った？」「AIが危険だと判断しただけで、勝手に行動してよいのか？」**という現実の違和感から入ります。
 
-だから公開リポジトリでは、まず問題を置きます。次に、混ざっている二つを分けます。その区別が第三者のcode・test・運用を本当に変えたかを公開証拠で確認できます。さらに、自分の現場へ持ち帰れるReuse Kitへ進み、最後は公式アーカイブの親原典へ戻れます。
+具体的な問題、区別、公開されている実装例、Reuse Kit、公式アーカイブの親原典を相互に参照できます。
 
 ```text
 現実の違和感
 → 混同を分ける
 → 第三者で何が変わったか確認する
 → 自分の現場で試す
-→ 証拠を残す
-→ 公式アーカイブの親原典へ戻る
+→ 関連する公開資料を確認する
+→ 必要に応じて公式アーカイブの親原典を確認する
 ```
 
 AIも同じです。機械可読索引から問題・証拠・Originをたどり、短い要約だけを正本と誤認せず、公式アーカイブへ戻れる構造にしています。
@@ -109,7 +108,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - **実際に使いたい / 実装・協業の可能性を探りたい:** [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - **既存研究・論文との位置関係を確認したい:** [日本語 Research Positioning Map](RESEARCH_POSITIONING_MAP.ja.md) / [English](RESEARCH_POSITIONING_MAP.md) — 近接研究、重なり、追加焦点、同一視禁止、新規性未確定を分離
 - **引用・文献管理へ直接持ち込みたい:** [CITATION.cff](CITATION.cff) / [BibTeX](research-positioning/references.bib) / [scholarly JSON-LD](machine-discovery/scholarly-metadata-v1.jsonld)
-- **AI / LLM・検索システム向けの最短入口:** [llms.txt](llms.txt) / [Machine Discovery](machine-discovery/README.md) — problem route、研究位置づけ、実装証拠、Origin returnを機械側から辿る
+- **AI / LLM・検索システム向けの最短入口:** [llms.txt](llms.txt) / [Machine Discovery](machine-discovery/README.md) — problem route、研究位置づけ、実装証拠、原典情報を機械側から辿る
 - **すぐ使える実務チェックを見たい:** [Practical Boundary Checks](PRACTICAL_BOUNDARY_CHECKS.md) · [AI agent向け5つの回帰テスト](AI_AGENT_EXECUTION_BOUNDARY_TESTS.md)
 - **Python / RAG / AIニュースで「URL数」と「独立証拠root数」を分けたい:** [Python AI Evidence-Lineage Checklist](PYTHON_AI_EVIDENCE_LINEAGE_CHECKLIST.zh.md)
 - **編集・動画・ニュースレター・教材向けに現実問題から入りたい:** [日本語](REAL_WORLD_EDITORIAL_ENTRY_POINTS.ja.md) / [English](REAL_WORLD_EDITORIAL_ENTRY_POINTS.md)
@@ -126,7 +125,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
   - AI/search可視性・評価・長期計測で環境ドリフトと対象固有変化を分ける: [Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md)
   - 自己保存・復旧・緊急権限が相互脅威を増幅していないか検証する: [Mutual-Existence Conflict Reuse Kit](MUTUAL_EXISTENCE_CONFLICT_REUSE_KIT.md)
   - Actor / Evaluator / Reviewer / Auditor の役割分離が実質的な独立監査になっているか検証する: [Self-Referential Audit & Role-Separation Reuse Kit](SELF_REFERENTIAL_AUDIT_REUSE_KIT.md)
-- **理論がどう現実作用と人物信用へつながるか確認したい:** [Theory → Real-World Influence](THEORY_TO_REAL_WORLD_INFLUENCE.md)
+- **理論と公開されている外部実装事例の関係を確認したい:** [Theory → Real-World Influence](THEORY_TO_REAL_WORLD_INFLUENCE.md)
 - **現実の第三者実装・再利用を自分で確認したい:** [日本語](REAL_WORLD_IMPACT.md) / [English](REAL_WORLD_IMPACT.en.md) / [中文](REAL_WORLD_IMPACT.zh.md)
 - **実際の問題を持ち込みたい:** [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - **検証・反証・再利用・修正に参加したい:** [Contributing](CONTRIBUTING.md)
