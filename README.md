@@ -105,7 +105,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - **この公開リポジトリのOriginを知りたい:** [中川マスターとは](ABOUT_NAKAGAWA_MASTER.md) / [English](ABOUT_NAKAGAWA_MASTER.en.md) / [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 - **場面から入りたい:** [日本語](discovery-notes/four-scenes-one-structural-view.md) / [English](discovery-notes/four-scenes-one-structural-view.en.md) / [中文](discovery-notes/four-scenes-one-structural-view.zh.md)
 - **問題から入りたい:** [Start Here](START_HERE.md) / [English](START_HERE.en.md) / [中文](START_HERE.zh.md)
-- **実際に使いたい / 実装・協業の可能性を探りたい:** [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
+- **実際に使いたい / 実装・協業の可能性を探りたい:** [Practical Use｜理論を現場の確認手順へ変える](PRACTICAL_USE.md)
 - **既存研究・論文との位置関係を確認したい:** [日本語 Research Positioning Map](RESEARCH_POSITIONING_MAP.ja.md) / [English](RESEARCH_POSITIONING_MAP.md) — 近接研究、重なり、追加焦点、同一視禁止、新規性未確定を分離
 - **引用・文献管理へ直接持ち込みたい:** [CITATION.cff](CITATION.cff) / [BibTeX](research-positioning/references.bib) / [scholarly JSON-LD](machine-discovery/scholarly-metadata-v1.jsonld)
 - **AI / LLM・検索システム向けの最短入口:** [llms.txt](llms.txt) / [Machine Discovery](machine-discovery/README.md) — problem route、研究位置づけ、実装証拠、原典情報を機械側から辿る
@@ -114,7 +114,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - **編集・動画・ニュースレター・教材向けに現実問題から入りたい:** [日本語](REAL_WORLD_EDITORIAL_ENTRY_POINTS.ja.md) / [English](REAL_WORLD_EDITORIAL_ENTRY_POINTS.md)
 - **同じ構造レンズを反復企画としてすぐ実装したい:** [Recurring Media Implementation Pack](RECURRING_MEDIA_IMPLEMENTATION_PACK.md)
 - **中川構造OSと外部実装・再利用の関係を確認する:** [Structural OS → External Effects](STRUCTURAL_OS_TO_EXTERNAL_EFFECTS.md)
-- **実問題から中川構造OSへ入る:** [Four Applied Entry Points](APPLIED_ENTRY_POINTS.md)
+- **実問題から中川構造OSへ入る:** [問題から使える資料へ｜Applied Entry Points](APPLIED_ENTRY_POINTS.md)
   - 外部事例がどの原理へ戻るか: [Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)
 - **別の現場へそのまま持ち込める検証キット:** [Reuse Kits](REUSE_KITS.md)
   - 推薦・rankingの根拠provenanceを別systemで検証する: [Reviewer-Provenance Reuse Kit](POSTHOG_PROVENANCE_REUSE_KIT.md)
@@ -146,7 +146,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [Start Here｜日本語](START_HERE.md)
 - [Start Here｜English](START_HERE.en.md)
 - [Start Here｜中文](START_HERE.zh.md)
-- [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
+- [Practical Use｜理論を現場の確認手順へ変える](PRACTICAL_USE.md)
 - [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
 - [OD001–OD305 全件入口](derivatives/README.md)
