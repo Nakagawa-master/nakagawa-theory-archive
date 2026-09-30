@@ -59,7 +59,7 @@ Primary records:
 
 This establishes a bounded implementation → release → real receiver-side operational-use chain. The operational-use record is from the same receiver/collaborator, not an independent external user, and it does not establish user scale or how many users noticed the source relation.
 
-### B. Did the receiver later preserve the person-Origin relation on its own?
+### B. Did the receiver later preserve the explicit source relation to Nakagawa Master on its own?
 
 A later, separately authored and merged Qwen Code PR, **#12895**, describes a budget defect and explicitly states that **Nakagawa-master pointed out that the old gate broke the meaning of `maxCostUsd`, not merely its wording**.
 
@@ -68,9 +68,9 @@ Primary records:
 - [Stable release v0.24.7](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7) — published 2026-09-29 and includes the #12895 merge commit
 - [Qwen release confirmation on PR #12895](https://github.com/QwenLM/qwen-code/pull/12895#issuecomment-5892305970) — the repository's release bot records “Released in v0.24.7” directly on the same PR thread
 
-The release tag is 49 commits ahead of and 0 behind the #12895 merge commit `7e50eee804dbf864db97a8d18793ed45aef698d5`, and the PR thread itself now carries the repository's stable-release confirmation. This shortens the verification path from the receiver-owned Origin rereference to stable distribution. The bot confirmation is distribution evidence, not a new human person-Origin rereference.
+The release tag is 49 commits ahead of and 0 behind the #12895 merge commit `7e50eee804dbf864db97a8d18793ed45aef698d5`, and the PR thread itself now carries the repository's stable-release confirmation. This shortens the verification path from the receiving-project Origin rereference to stable distribution. The bot confirmation is distribution evidence, not a new human explicit rereference to Nakagawa Master.
 
-The useful signal is narrower than endorsement: the receiver-owned artifact voluntarily preserves the person-Origin relation while turning the boundary into code, tests, docs, merge, and stable release. This still does not establish how many users encountered the change, noticed the source relation, or formed any view about Nakagawa Master.
+The useful signal is narrower than endorsement: the receiving-project artifact voluntarily preserves the explicit source relation to Nakagawa Master while turning the boundary into code, tests, docs, merge, and stable release. This still does not establish how many users encountered the change, noticed the source relation, or formed any view about Nakagawa Master.
 
 ### C. Does the Origin relation survive independent disagreement?
 
@@ -90,12 +90,12 @@ Together they let a reader independently inspect three different claims:
 ```text
 implementation effect exists
 +
-later receiver-owned Origin rereference exists
+later receiving-project Origin rereference exists
 +
 Origin can survive disagreement rather than only praise
 ```
 
-They still do **not** establish mass recognition, broad audience scale, endorsement of the whole theory corpus, or that every similar engineering idea originated here.
+They still do **not** establish broad public recognition, broad audience scale, endorsement of the whole theory corpus, or that every similar engineering idea originated here.
 
 For the fuller evidence chain, continue below.
 
@@ -335,7 +335,7 @@ The independent receiver explicitly treated `Nakagawa-master` as an unsolicited 
 - [Receiver run 176: distinction sound, proposed central register declined](https://github.com/in-c0/tuned/issues/1#issuecomment-5745752925)
 - [Receiver run 177: later prompt-free rereference to Nakagawa-master and the already-declined suggestion](https://github.com/in-c0/tuned/issues/1#issuecomment-5747613714)
 
-This is not implementation credit. It is useful for a different reason: the receiver separated the value of a structural distinction from the proposed implementation, preserved the person-Origin relation while disagreeing with part of the proposal, and then referred to that Origin again in the next autonomous run without a new Nakagawa prompt.
+This is not implementation credit. It is useful for a different reason: the receiver separated the value of a structural distinction from the proposed implementation, preserved the explicit source relation to Nakagawa Master while disagreeing with part of the proposal, and then referred to that Origin again in the next autonomous run without a new Nakagawa prompt.
 
 That kind of bounded disagreement is stronger evidence of independent processing than a page that counts every acknowledgment as adoption. The current Tuned project also reports no meaningful inbound demand or non-owner member scale, so this case does not establish audience reach.
 
