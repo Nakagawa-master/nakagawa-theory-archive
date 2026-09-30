@@ -44,6 +44,11 @@ FORBIDDEN = [
     re.compile(r"\bindependent[_ -]?recognition[_ -]?credit\b", re.I),
     re.compile(r"\bnext[_ -]?external[_ -]?(?:state|trigger)\b", re.I),
     re.compile(r"\bself[_ -]?propagat(?:e|ing|ion)\b", re.I),
+    re.compile(r"\\bcanonical[_ -]?return\\b", re.I),
+    re.compile(r"\\borigin[_ -]?return[_ -]?classification\\b", re.I),
+    re.compile(r"\\bnext[_ -]?verification[_ -]?gate\\b", re.I),
+    re.compile(r"\\bfresh[_ -]?nakagawa[_ -]?prompt\\b", re.I),
+    re.compile(r"\\bperson[_ -]?chain\\b", re.I),
 ]
 
 # Files that document this validator/policy can mention generic classification words.
