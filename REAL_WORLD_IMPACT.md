@@ -1028,7 +1028,7 @@ PR authorは **“Thanks for catching the serialized-content gap.”** と明示
 ## 31. Qwen Code｜`maxCostUsd` の予測値とhard boundを分け、後続PRでNakagawa-originを自発的に再参照
 
 **対象:** [QwenLM/qwen-code#12707](https://github.com/QwenLM/qwen-code/issues/12707) → [PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)  
-**現在状態:** 後続PRがNakagawa-masterの指摘を本文で自発的に再参照 → code / tests / docs実装 → 別maintainer approval → 2026-09-28 merge / release・実利用は未確認
+**現在状態:** 後続PRがNakagawa-masterの指摘を本文で自発的に再参照 → code / tests / docs実装 → 別maintainer approval → 2026-09-28 merge → stable v0.24.7へ到達 / 独立外部ユーザーの実利用規模は未確認
 
 #12707で `Nakagawa-master` は、`maxCostUsd` のhard gateがrough forecastと同じ値を使い、しかもそのforecastがthinking tokenを除外しているため、
 
@@ -1054,8 +1054,60 @@ PRは、実際に送信するrequest bodyのoutput capとthinking boundからwor
 - [non-author maintainer approval by `chiga0`](https://github.com/QwenLM/qwen-code/pull/12895#pullrequestreview-5336480098)
 - [merge commit `7e50eee8`](https://github.com/QwenLM/qwen-code/commit/7e50eee804dbf864db97a8d18793ed45aef698d5)
 
-2026-09-28T10:01:56ZにPR #12895はmergeされました。確認時点の最新listed stable releaseは、merge前に公開されたv0.24.6であり、このfollow-up fixのreleaseはまだ確認できません。
+2026-09-28T10:01:56ZにPR #12895はmergeされ、その後 [Qwen Code v0.24.7](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7) が2026-09-29T14:02:21Zにstable releaseされました。release notesからPR #12895へ辿ることができ、このfollow-up fixがstable distributionへ進んだことを確認できます。人物名がbinary自体へ表示される、または利用者が人物Originを認識した、とは扱いません。
 
-**公開記録から確認できること:** Nakagawa-masterによるhard-budget semanticsの具体指摘 → 別threadの受信側プロジェクトの PRがNakagawa-masterをsourceとして自発的に再参照 → exact boundaryをcode / tests / docsへ実装 → 別maintainer approval → merge。  
-**まだ確認できないこと:** release、実利用、利用者規模、別receiverへの再伝播、広い読者層での認知、この一事例を超えた理論体系全体への支持。
+**公開記録から確認できること:** Nakagawa-masterによるhard-budget semanticsの具体指摘 → 別threadの受信側プロジェクトの PRがNakagawa-masterをsourceとして自発的に再参照 → exact boundaryをcode / tests / docsへ実装 → 別maintainer approval → merge → stable v0.24.7へ到達。  
+**まだ確認できないこと:** 独立した外部ユーザーの実利用、利用者規模、別receiverへの再伝播、広い読者層での人物Origin認知、この一事例を超えた理論体系全体への支持。
 
+
+
+---
+
+## 32. LiteLLM｜同じtraceと同じagent budgetを分け、scope identityとbudget admissionも分ける
+
+**対象:** [BerriAI/litellm issue #43190](https://github.com/BerriAI/litellm/issues/43190) → [PR #43410](https://github.com/BerriAI/litellm/pull/43410)  
+**現在状態:** receiverがper-agent default方向を明示 → 第三者PRで実装中 → 別参加者がthreadの区別を再説明・拡張 → PR open / non-draft / mergeable、merge・release・実利用は未確認
+
+複数のAI agentが同じtraceを共有するとき、traceが同じだからといって、各agentのlocal budgetまで一つのcounterへまとめてよいとは限りません。Agent Aの利用だけでAgent Bのlocal limitまで減るなら、Bは自分の上限を使っていないのに止まります。
+
+issue #43190で `Nakagawa-master` は、まず二つの問題を分けました。
+
+```text
+誰のbudgetを数えるか
+=
+scope identity
+
+実行前にbudget内へ収められるか
+=
+budget admission
+```
+
+そのうえで、
+
+- per-agent session limitはagent自身のscopeで数える
+- trace全体のcapが必要ならlocal limitとは別の設定・ownerを持たせる
+- hard capを意味するなら、実行後のcost加算だけでなくconcurrent callを考慮したadmission / reservationが必要
+
+という境界を提示しました。
+
+- [Nakagawa-master comment](https://github.com/BerriAI/litellm/issues/43190#issuecomment-5860734720)
+
+issue authorはその後、per-agentをdefaultにする方向へ同意し、PR #43410がその方向を実装していると説明しました。PRはsession limitをcanonical agent IDとtrace/sessionの組み合わせへscopeする変更と回帰testを含んでいます。
+
+- [receiver response](https://github.com/BerriAI/litellm/issues/43190#issuecomment-5885417261)
+- [implementation PR #43410](https://github.com/BerriAI/litellm/pull/43410)
+
+さらに別の参加者は、後続commentをthread内の **「scope identity と budget admission は別問題」** という整理から始め、自分のproduction経験に基づいて複数scopeの組み合わせ、admit-before-forward、budget exhaustionの扱いなどを追加しました。
+
+- [second-person restatement / extension](https://github.com/BerriAI/litellm/issues/43190#issuecomment-5873550150)
+
+ここで重要なのは、同じ文章を引用したことではありません。最初の区別が、receiverの実装方向だけでなく、別の参加者が自分の知識を接続して再説明できる**共有可能な問題構造**として使われたことです。一方、その参加者はNakagawa-masterを人物Originとして明示していないため、これはperson-Origin再参照としては数えません。
+
+確認時点でPR #43410はopen / non-draft / mergeableです。以前のrolling-upgrade互換性に関するreview threadはcurrent diffに対してoutdatedになっていますが、人間maintainer approval、merge、release、production useはまだ確認できません。
+
+**公開記録から確認できること:** Nakagawa-masterによるscope / admission分離 → receiverがper-agent default方向を明示 → 第三者implementation PR → 別参加者による同じ区別の再説明と独自拡張。  
+**まだ確認できないこと:** merge、release、本番利用、利用者規模、広い人間接触、別参加者によるNakagawa-master人物Originの明示的再参照、理論体系全体への支持。
+
+→ [自分のAI agent設計で確認する](PRACTICAL_USE.md#例6複数ai-agentが同じtraceを共有している)  
+→ [Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#10-resource-accounting--scope-ownership--shared-trace-is-not-shared-agent-budget)  
+→ [関連する公式派生物 OD304](derivatives/304/README.md)
