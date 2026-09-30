@@ -368,11 +368,29 @@ authority meaning stayed unchanged
 
 Expiry and revocation answer different questions from capability-version binding.
 
-**Public implementation case:** [Qwen Code PR #12851](https://github.com/QwenLM/qwen-code/pull/12851). A Nakagawa-master review raised this boundary for a seven-day A2A share. The receiver later restated the question with explicit @Nakagawa-master attribution, clarified that current behavior follows the live policy, and said the live-policy-vs-bound-grant choice had been raised to maintainers as a product/security decision. The feature PR later merged. This boundary was not changed in code before merge, so the case is evidence of Origin-preserved receiver restatement and decision escalation, not implementation adoption of a bound-grant design.
+**Public implementation chain:** Qwen Code PR #12851 → PR #12582.
 
-- [Nakagawa-master review](https://github.com/QwenLM/qwen-code/pull/12851#pullrequestreview-5340900674)
-- [receiver restatement / escalation](https://github.com/QwenLM/qwen-code/pull/12851#issuecomment-5893346131)
-- [merged PR #12851](https://github.com/QwenLM/qwen-code/pull/12851)
+In [Qwen Code PR #12851](https://github.com/QwenLM/qwen-code/pull/12851), a Nakagawa-master review raised this boundary for a multi-day A2A share. The receiver later restated the question with explicit @Nakagawa-master attribution, clarified that current behavior follows the live-policy contract, and said the alternative had been raised to maintainers as a product/security decision. PR #12851 later merged. That stage established Origin-preserved receiver restatement, not adoption of a bound-grant alternative.
+
+PR #12582 then made execution placement mutable between local and managed runtimes. Nakagawa-master raised the follow-on consequence: an already-issued share can remain valid while later work moves to the agent's currently assigned runtime and workspace.
+
+Receiver `yiliang114` replied with explicit @Nakagawa-master attribution and **“Good catch”**, then changed the receiver branch in commit `74bf55053d`:
+
+- the frozen contract now says execution-placement changes apply to already-issued shares;
+- moving an agent between local and managed execution does not revoke existing grants;
+- later requests use the currently assigned runtime and its workspace;
+- English and Chinese share UI disclose the consequence before a share is created;
+- preserving the earlier boundary requires revoking the share before changing the agent.
+
+The commit does not change authorization behavior. It makes the already-selected live-policy contract explicit for execution placement and visible to the user.
+
+- [Nakagawa-master review on #12582](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5364710354)
+- [receiver response](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5911699280)
+- [receiver commit `74bf55053d`](https://github.com/QwenLM/qwen-code/commit/74bf55053d271595cf5bab8e1fcd91bb3a8188b2)
+- [human-readable entry](human-translation/entry-stories/09-same-share-different-runtime.md)
+
+At this record, PR #12582 is open. The earned evidence is Origin-preserved receiver restatement plus same-receiver reuse and concrete receiver-owned contract/UI change. Merge, release and real-user-contact credit are not yet claimed.
+
 
 ## Implementation pattern
 
