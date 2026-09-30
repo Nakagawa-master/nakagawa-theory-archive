@@ -389,7 +389,57 @@ The commit does not change authorization behavior. It makes the already-selected
 - [receiver commit `74bf55053d`](https://github.com/QwenLM/qwen-code/commit/74bf55053d271595cf5bab8e1fcd91bb3a8188b2)
 - [human-readable entry](human-translation/entry-stories/09-same-share-different-runtime.md)
 
-At this record, PR #12582 is open. The earned evidence is Origin-preserved receiver restatement plus same-receiver reuse and concrete receiver-owned contract/UI change. Merge, release and real-user-contact credit are not yet claimed.
+At this record, PR #12582 is still open. The receiver's contract/UI change commit `74bf55053d` remains in the current branch history. The later current head `7c42221c` is one commit ahead of that point; its delta is limited to config/workspace regression fixes and does not touch the contract/share-UI files changed by `74bf55053d`. The observed current-head workflows (Qwen Live Host CI, Qwen Code CI, Web-shell Visuals, Serve A/B, SDK Java, and tui-parity) are green. A review finding and code-owner human review still remain before merge.
+
+The earned evidence is therefore Origin-preserved receiver restatement plus same-receiver reuse and concrete receiver-owned contract/UI change that remains present at a CI-green current head. Merge, release and real-user-contact credit are still not claimed.
+
+### 15. A revision barrier is not authority to release whatever state is current
+
+A system can correctly require a special revision window and still make the final authority check too weak.
+
+```text
+actor begins revision under barrier epoch E
+→ actor receives a valid begin receipt
+→ intended candidate is reviewed / approved
+→ current published state changes through another path
+→ actor later calls finish(E)
+```
+
+The historical fact that the actor legitimately began epoch E does not by itself authorize releasing the barrier over whatever state happens to exist now.
+
+A stronger contract binds the revision lifecycle end to end:
+
+```text
+begin revision at epoch E
+→ bind the candidate / approval to E
+→ publication under E records the resulting plan / contract lineage
+→ finish(E) re-reads the current barrier and current published state
+→ release only if the state being completed is the state E is authorized to complete
+```
+
+Useful hostile regression:
+
+```text
+A begins revision -> epoch E
+A approves candidate V2
+current published state is moved to stale or unrelated V1 without an E-bound publication
+A calls finish(E)
+→ refuse
+→ keep the revision barrier active
+→ do not make V1 look accepted merely by releasing E
+```
+
+The distinction is:
+
+```text
+authorized to begin a revision before
+!=
+authorized to finalize the state that exists now
+```
+
+This is the same current-authority problem at a later consequence boundary. A begin receipt is historical evidence. Barrier release is a new action whose target lineage and current state still need to match the authority that is being exercised.
+
+**Current external problem surface — not a Nakagawa-effect claim:** [agentrof/agent-marketplace issue #322](https://github.com/agentrof/agent-marketplace/issues/322) independently reports a stale checkout publishing an older execution plan / pinned contract and notes that a later `finish-plan-revision` can release the barrier on top of that stale publication. The issue already proposes blocking stale publication and binding barrier ownership. The regression above isolates an additional defense-in-depth question: whether barrier release itself revalidates the current published lineage. No receiver response, implementation, or adoption of this Nakagawa-derived regression is claimed here.
 
 
 ## Implementation pattern
