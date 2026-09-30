@@ -725,10 +725,10 @@ A later main-branch article about Claude Sonnet 5.5 provides a fresh reader-faci
 - an unreachable system card, marked as unread rather than silently treated as checked;
 - benchmark figures whose settings are not comparable.
 
-This is stronger than a draft-only reuse signal: the merged rule is recurring in a receiver-owned, reader-facing publication surface.
+This is stronger than a draft-only reuse signal: the merged rule is recurring in a receiving-project, reader-facing publication surface.
 
 **Publicly verifiable here:** Origin-preserved proposal → explicit receiver adoption and causality statement → durable rule merge → later main/feed/sitemap publication that visibly applies the evidence-lineage distinction.  
-**Not established here:** quantified error-rate reduction, reader/audience scale, reuse by another receiver, a later person-Origin rereference in that article, or endorsement of the wider theory corpus.
+**Not established here:** quantified error-rate reduction, reader/audience scale, reuse by another receiver, a later explicit source rereference in that article, or endorsement of the wider theory corpus.
 
 ---
 
@@ -910,7 +910,7 @@ The receiver re-checked the primary records, acknowledged that the promised stat
 The receiver responses and PR text are marked as generated with Claude Code. This page therefore records **receiver-account adoption, reader-facing publication, source-state correction, and tooling change**, not unaided human authorship.
 
 **Publicly verifiable:** origin review → explicit receiver adoption → standalone reader-facing publication → later Nakagawa follow-up identifies stale external state → receiver re-checks primary sources → article source state and update tooling change → PR #135 merges → GitHub Pages build/deploy for the merge commit succeeds.  
-**Not established:** reader count or behavior, propagation to another receiver, voluntary person-origin re-reference, unaided human authorship, or endorsement of the wider theory corpus.
+**Not established:** reader count or behavior, propagation to another receiver, voluntary explicit source re-reference, unaided human authorship, or endorsement of the wider theory corpus.
 
 
 
@@ -945,7 +945,7 @@ A focused re-check then confirmed no remaining blocker within the serialized-con
 ## 31. Qwen Code | Separate `maxCostUsd` forecast from its hard bound, then observe a prompt-free receiver re-reference to Nakagawa Master
 
 **Surface:** [QwenLM/qwen-code#12707](https://github.com/QwenLM/qwen-code/issues/12707) → [PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)  
-**Current state:** receiver-owned follow-up PR voluntarily re-references Nakagawa-master in its body → code / tests / docs implementation → non-author maintainer approval → merged on 2026-09-28 → shipped in stable Qwen Code v0.24.7 on 2026-09-29 / operational use and user-scale contact not yet observed
+**Current state:** receiving-project follow-up PR voluntarily re-references Nakagawa-master in its body → code / tests / docs implementation → non-author maintainer approval → merged on 2026-09-28 → shipped in stable Qwen Code v0.24.7 on 2026-09-29 / operational use and user-scale contact not yet observed
 
 In #12707, `Nakagawa-master` pointed out that the hard `maxCostUsd` gate was using the same rough forecast that explicitly excluded thinking tokens, so this contract did not hold:
 
@@ -959,18 +959,18 @@ In #12707, `Nakagawa-master` pointed out that the hard `maxCostUsd` gate was usi
 
 The comment proposed separating the UX estimate from the budget-enforcement quantity, computing a conservative worst-case bound from finite provider-recognized request caps, failing closed when no finite bound exists under `maxCostUsd`, and pinning a regression where a low forecast but high request cap must be refused.
 
-A later receiver-owned PR, #12895 by maintainer `yiliang114`, was opened on a separate thread without a fresh Nakagawa-master comment or review on that PR. Its body explicitly says:
+A later receiving-project PR, #12895 by maintainer `yiliang114`, was opened on a separate thread without a fresh Nakagawa-master comment or review on that PR. Its body explicitly says:
 
 > Nakagawa-master pointed out that this breaks the meaning of `maxCostUsd`, not just its wording.
 
 The PR computes the worst case from the request body's output cap plus thinking bound, refuses a `maxCostUsd` plan when no finite bound exists, counts a finite thinking budget, labels the rough forecast as excluding thinking, and adds the corresponding tests and documentation.
 
-- [receiver-owned follow-up PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)
+- [receiving-project follow-up PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)
 - [non-author maintainer approval by `chiga0`](https://github.com/QwenLM/qwen-code/pull/12895#pullrequestreview-5336480098)
 - [merge commit `7e50eee8`](https://github.com/QwenLM/qwen-code/commit/7e50eee804dbf864db97a8d18793ed45aef698d5)
 
-PR #12895 merged at 2026-09-28T10:01:56Z. Stable [Qwen Code v0.24.7](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7) was published at 2026-09-29T14:02:21Z. The release tag is 49 commits ahead of and 0 behind merge commit `7e50eee804dbf864db97a8d18793ed45aef698d5`, and the release notes link PR #12895. The explicit Nakagawa-master rereference remains in the receiver-owned PR body; this page does not claim the person name is embedded in the binary itself.
+PR #12895 merged at 2026-09-28T10:01:56Z. Stable [Qwen Code v0.24.7](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7) was published at 2026-09-29T14:02:21Z. The release tag is 49 commits ahead of and 0 behind merge commit `7e50eee804dbf864db97a8d18793ed45aef698d5`, and the release notes link PR #12895. The explicit Nakagawa-master rereference remains in the receiving-project PR body; this page does not claim the person name is embedded in the binary itself.
 
-**Publicly verifiable here:** concrete hard-budget semantic finding → a receiver-owned later PR voluntarily re-references Nakagawa-master as the source → the exact boundary is implemented in code / tests / docs → non-author maintainer approval → merge → stable v0.24.7 release with a traceable release-notes-to-PR path.  
+**Publicly verifiable here:** concrete hard-budget semantic finding → a receiving-project later PR voluntarily re-references Nakagawa-master as the source → the exact boundary is implemented in code / tests / docs → non-author maintainer approval → merge → stable v0.24.7 release with a traceable release-notes-to-PR path.  
 **Not established here:** independently verified operational use of v0.24.7, user scale, propagation to another human receiver, broad person recognition, or whole-theory endorsement.
 
