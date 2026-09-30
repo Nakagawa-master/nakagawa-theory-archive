@@ -68,7 +68,7 @@ Start:
 
 ### A third-party editorial recurrence case
 
-In [AI-News issue #124](https://github.com/022740mix-spec/AI-News/issues/124), the independent repository operator explicitly accepted the distinction between multiple URLs and multiple independent evidence roots, then moved it into the editorial rules through [PR #131](https://github.com/022740mix-spec/AI-News/pull/131). The operator stated that its existing checks verified whether a source contained a claim but did not test whether the sources themselves were independent.
+In [AI-News issue #124](https://github.com/022740mix-spec/AI-News/issues/124), the third-party repository operator explicitly accepted the distinction between multiple URLs and multiple independent evidence roots, then moved it into the editorial rules through [PR #131](https://github.com/022740mix-spec/AI-News/pull/131). The operator stated that its existing checks verified whether a source contained a claim but did not test whether the sources themselves were independent.
 
 A later reader-facing article on September 28 shows the rule operating beyond the adoption PR: the commit records direct access to primary sources, keeps vendor-reported results separate from independent reproduction, preserves non-comparable benchmark conditions, marks an unreachable system card as unread, and incorporates corrections found by a separate validation pass.
 
