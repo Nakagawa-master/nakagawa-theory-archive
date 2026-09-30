@@ -261,47 +261,45 @@ old source
 → dependent summary marked stale / regenerated
 ```
 
-## 7. 第三方運用で「規則 → 次の記事」まで進んだ例
+## 7. 第三方实际运营中，从“规则”走到“下一篇文章”的例子
 
-この区別は、自分で書いたchecklistの中だけにあるわけではありません。
+这个区分并不只存在于本仓库自己写的 checklist 中。
 
-第三者運営の [AI-News issue #124](https://github.com/022740mix-spec/AI-News/issues/124) で、「複数URL」と「独立した証拠root」を分ける提案が行われ、運営者は [comment](https://github.com/022740mix-spec/AI-News/issues/124#issuecomment-5823549498) で採用を明示しました。運営者は、既存の検証層では出典に情報があるかは確認していた一方、**出典どうしの独立性は確認していなかった**と説明しています。
+在第三方维护的 [AI-News issue #124](https://github.com/022740mix-spec/AI-News/issues/124) 中，有人提出应把“多个 URL”与“多个独立证据 root”分开。该仓库维护者随后在 [comment](https://github.com/022740mix-spec/AI-News/issues/124#issuecomment-5823549498) 中明确表示采用，并说明：现有验证层会检查来源中是否存在相应信息，但**没有检查这些来源彼此是否独立**。
 
-その後 [PR #131](https://github.com/022740mix-spec/AI-News/pull/131) がmergeされ、
+之后，[PR #131](https://github.com/022740mix-spec/AI-News/pull/131) 被合并，把来源关系分为：
 
 ```text
-一次資料
-独立観測
-派生・転載
+一次资料
+独立观察
+派生・转载
 不明
 ```
 
-を分け、根が当事者1本なら独立検証未確認と書く規則が編集手順へ入りました。
+并把“如果根只有当事方的一条资料，就应明确写出尚未确认独立验证”等规则加入编辑流程。
 
-さらに9月28日の [後続記事commit](https://github.com/022740mix-spec/AI-News/commit/e5b11d79d1b9c4925758e0bad066e7bc03b3e5f3) では、一次資料への直接到達、提供元の自己申告値、比較条件の不一致、未到達資料、別モデルの検証による訂正が分離されています。少なくとも、規則が採用PRだけで止まらずreader-facing outputへ再利用されたことは公開履歴から追えます。
+更重要的是，这个变化没有停在采用 PR。9 月 28 日的 [后续读者向文章 commit](https://github.com/022740mix-spec/AI-News/commit/e5b11d79d1b9c4925758e0bad066e7bc03b3e5f3) 明确区分了：直接到达的一次资料、提供方自己报告的数值、不可直接比较的 benchmark 条件、无法到达的 system card，以及另一验证模型发现并触发的更正。公开历史因此至少能确认：这套规则被带入了后续 reader-facing output。
 
-ただし、このrepoでは別のQwen4記事が一次rootへ戻る前に二次報道の一致から公開され、後から公式一次資料との中心命題の不一致が見つかりました。[訂正要求](https://github.com/022740mix-spec/AI-News/issues/79#issuecomment-5880178792) は現在もreceiver側の処理待ちです。
+但同一仓库也留下了反例。另一篇 Qwen4 文章在回到一次资料 root 之前，依据多家二次报道的一致性进入了 main；之后确认 Alibaba 官方一次资料与文章中心命题不一致。[更正请求](https://github.com/022740mix-spec/AI-News/issues/79#issuecomment-5880178792) 目前仍需要 receiver 侧处理。
 
-このため、ここから言えるのは限定的です。
+因此，这个案例能够支持的结论是有限的：
 
 ```text
-区別の提案
-→ receiverが採用を明示
-→ durable editorial ruleへ変換
-→ 後続reader-facing記事で再利用
+提出区分
+→ receiver 明确采用
+→ 转化为 durable editorial rule
+→ 在后续 reader-facing 文章中再次使用
 
-は確認できる。
+可以从公开记录中确认。
 
-一方で
+但
 
 rule exists
 !=
 every publication is correctly gated
 ```
 
-です。
-
-この事例は、evidence lineageが第三者の編集運用へ移り得ることの一例です。理論体系全体の採用、人物認知、読者規模、完全な自動執行までは示しません。
+它说明 evidence lineage 可以进入第三方编辑运营并被再次使用；它不证明整个理论体系被采用，也不证明人物认知、读者规模或完全自动化执行已经成立。
 
 ---
 
