@@ -223,17 +223,32 @@ export is available
 effective exit is already proven
 ```
 
-Freenet issue #4381 は、この区別を別の文脈で検査できる独立した公開事例です。Issue自身が、public proxy は導入障壁を下げる一方、hosted peer が利用者のprivate delegate dataを扱う trusted centralized intermediary になると明記しています。その後、hosted proxyであることを利用者へ表示するUI、per-user isolation、node側のexport endpoint、browserからの実data exportが実装されています。
+Freenet issue #4381 は、この区別を別の文脈で検査できる独立した公開事例です。Issue自身が、public proxy は導入障壁を下げる一方、hosted peer が利用者のprivate delegate dataを扱う trusted centralized intermediary になると明記しています。その後、hosted proxyであることを利用者へ表示するUI、per-user isolation、node側のexport endpoint、browserからの実data exportが実装されました。
+
+さらに重要なのは、その後の #4592 が「exportできる」だけでは実効的な退出として摩擦が大きいと明示した点です。nodeを止めてCLI importする必要があったため、#4603 ではrunning nodeへlive importする経路がmergeされ、#4724 では自分のpeer側で明示操作すると hosted側から一回限りのmigration dataをpullしてimportするmagic-link経路までmergeされています。#4724には mint → pull → import の統合試験もあります。
+
+したがって、この事例では次の段階を分けて読めます。
+
+```text
+export exists
+→ exit is technically possible
+→ import can run on the receiving peer without stopping it
+→ migration becomes a bounded user path
+→ mint / pull / import is integration-tested
+```
+
+それでも、実際の利用者がhosted依存から自分のpeerへ移り、必要なstateを継続できたという実運用上の退出までを、この公開記録だけから自動的に認定することはしません。設計・実装・統合試験と、現実の利用者移行は別の証拠層です。
 
 ここで再利用できる問いは、「exportボタンがあるか」だけではありません。
 
-1. proxyが利用できなくなっても、export済みdataを自分のpeerへimportして必要なstateを継続できるか。
-2. export・authentication・migrationの入口を同じoperatorが止めた場合、利用者に実行可能な別経路が残るか。
-3. 複数のproxy候補があっても、同じ上流の認証・保存・移行基盤へ依存していないか。
-4. hosted modeの便利さが、不要になった後も恒久的なdependencyへ変わっていないか。
-5. 改善後に、実際のswitching lossとoperator leverageが下がったか。
+1. proxyが利用できなくなっても、dataを自分のpeerへ移し、必要なstateを継続できるか。
+2. exportだけでなく、受け側のimport・認証・復旧まで普通の利用者が実行できるか。
+3. export・authentication・migrationの入口を同じoperatorが止めた場合、利用者に実行可能な別経路が残るか。
+4. 複数のproxy候補があっても、同じ上流の認証・保存・移行基盤へ依存していないか。
+5. hosted modeの便利さが、不要になった後も恒久的なdependencyへ変わっていないか。
+6. 改善後に、実際のswitching lossとoperator leverageが下がったか。
 
-Freenetの実装はNakagawa Master理論の採用証拠ではありません。第三者が独立に扱っている公開問題へ、第13論のaccess-topology / effective-exitの検査軸を再利用できる、という位置づけです。
+Freenetの実装はNakagawa Master理論の採用証拠ではありません。第三者が独立に扱っている公開問題と、その後に実装された退出経路へ、第13論のaccess-topology / effective-exitの検査軸を再利用できる、という位置づけです。
 
 関連資料:
 - [OD306｜非所有と実効権力・非支配論](derivatives/306/README.md)
@@ -244,6 +259,9 @@ Freenetの実装はNakagawa Master理論の採用証拠ではありません。�
 - [hosted proxy disclosure PR #4530](https://github.com/freenet/freenet-core/pull/4530)
 - [node export endpoint PR #4531](https://github.com/freenet/freenet-core/pull/4531)
 - [browser export wiring PR #4562](https://github.com/freenet/freenet-core/pull/4562)
+- [low-friction migration issue #4592](https://github.com/freenet/freenet-core/issues/4592)
+- [live import PR #4603](https://github.com/freenet/freenet-core/pull/4603)
+- [magic-link migration PR #4724](https://github.com/freenet/freenet-core/pull/4724)
 - Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/
 
 ## 関連する索引と資料
