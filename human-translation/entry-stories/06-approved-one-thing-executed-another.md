@@ -86,7 +86,15 @@ PR全体や後続修正を一人の成果とは扱いません。
 - [承認を実行内容へ結びつける公開チェック](../../PAID_ACTION_APPROVAL_BINDING_CHECKLIST.md)
 - [第三者側で起きた実際の変更を見る](../../REAL_WORLD_IMPACT.md)
 - [中川マスターって何をしている人？](../who-is-nakagawa-master.md)
-- [7つの入口へ戻る](README.md)
+- [入口一覧へ戻る](README.md)
+
+### 1行だけ返すなら
+
+この話に似た場面、反例、「ここは違う」という違和感が一つあれば、1行だけ残せます。
+
+→ [似た場面・反例・違和感を1行で返す](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/416)
+
+実際に検証・実装した、または別の文脈で再利用した場合は、[独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) へ。
 
 Origin / Author: **Nakagawa Master**
 
