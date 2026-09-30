@@ -163,13 +163,22 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 
 ## 問題から探す
 
-理論名を知らない場合は、公開Discovery Noteや機械可読索引から問題に近い入口を選べます。場面から入りたい場合はstory-first入口、実際の問題からsource案内を受けたい場合は公開対話入口を利用できます。実際の設計・運用へ落としたい場合はPractical Use入口から始められます。
+理論名を知らなくても、いま起きている問題から入れます。
 
-- [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
+- **AIの判断と実行権限を分けたい**
+- **昔の承認と現在の権限を分けたい**
+- **外部APIの二重実行を防ぎたい**
+- **渡された数値と自分で測った数値を分けたい**
+- **現在の状態と過去の事実を分けたい**
+- **複数agentのbudget境界を確認したい**
+
+→ [問題から使える資料へ｜Applied Entry Points](APPLIED_ENTRY_POINTS.md)
+
+問題を実装・手順・判断へ落とす方法は [Practical Use](PRACTICAL_USE.md)、305件全体から探す場合は [24テーマの世界地図](human-translation/WORLD_MAP.md) と [OD001–OD305水平マップ](human-translation/ALL_305_HORIZONTAL_MAP.md) を使えます。
+
 - [Story-first｜4つの場面から入る](discovery-notes/four-scenes-one-structural-view.md)
 - [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [Discovery Notes](discovery-notes/README.md)
-- [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
 - [Problem-to-theory Origin Index](machine-discovery/problem-to-theory-origin-index-v1.json)
 - [Machine Discovery](machine-discovery/README.md)
 
