@@ -441,56 +441,15 @@ For related public boundaries, see:
 
 ---
 
-## 5. How this connects back to Nakagawa Master
+## 5. Source and interpretation boundary
 
-External usefulness alone is not the full chain.
+For each case, distinguish the public source, the specific distinction discussed, the receiving project's response, and the implementation state that can actually be verified.
 
-The chain closes only when readers can inspect:
-
-1. **what distinction was used;**
-2. **where it came from;**
-3. **what changed in reality;**
-4. **what the case does not prove;**
-5. **where to return for the underlying theory.**
-
-That is why the archive preserves Origin, source URLs, canonical Parents, NCL-ID / Diff-ID where applicable, and explicit interpretation boundaries.
-
-The intended recognition is not:
-
-> “Nakagawa Master comments on many repositories.”
-
-It is closer to:
-
-> “Nakagawa Master has a recurring structural way of seeing problems that repeatedly survives independent use, criticism, and implementation across domains.”
-
-That is a theory-grounded credibility claim.
+Origin, source URLs, canonical Parents, NCL-ID / Diff-ID where applicable, and interpretation boundaries are retained so that readers can inspect provenance without treating attribution as proof of correctness.
 
 ---
 
-## 6. What would make this stronger
-
-The strongest future evidence would be:
-
-```text
-third party reads a public Nakagawa distinction
-→ independently tests or challenges it
-→ uses it in another real problem
-→ publishes or implements the result
-→ another person encounters that result
-→ the structure is reused again
-→ source relation remains inspectable
-```
-
-That is why the archive maintains an independent verification / reuse route:
-
-- [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md)
-- [Independent verification / reuse registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
-
-Agreement is not required. A falsification, counterexample, partial failure, or bounded non-applicability result is also useful.
-
----
-
-## 7. What this page does not claim
+## 6. What this page does not claim
 
 This page does not establish:
 
@@ -503,7 +462,7 @@ This page does not establish:
 
 Those remain separate questions.
 
-The narrower claim is that a growing set of public cases makes the causal path from **theory → structural distinction → real-world effect → independent carry → origin** inspectable.
+The narrower purpose of this page is to document public links between a stated distinction and specific external responses or implementation changes where those links can be inspected.
 
 ---
 
