@@ -94,10 +94,13 @@ A different reviewer, **chiga0**, then independently re-read the relevant execut
 Primary records:
 - [Nakagawa-master review](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5364710354)
 - [PR-author response and receiver change](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5911699280)
-- [Second-reviewer re-check](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368431439)
+- [Second-reviewer Origin re-check at `7c42221c`](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368431439)
+- [Same reviewer current-head APPROVED re-check at `f9922e44`](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368634260)
 - [Qwen Code #12582](https://github.com/QwenLM/qwen-code/pull/12582)
 
-The second review was submitted as an approval at head `7c42221c` and was later dismissed when the PR head moved. It is therefore **not** current approval or merge credit. What remains inspectable is the narrower fact: a second person inside the receiving repository independently reconstructed the Nakagawa-origin boundary and carried the source relation forward.
+The first second-person review was submitted as an approval at head `7c42221c` and was dismissed when the PR head moved. The same reviewer, `chiga0`, then re-read the later delta and submitted a fresh **APPROVED** review at current head `f9922e44`.
+
+That makes the second-person carry stronger than a one-head snapshot: the reviewer independently reconstructed the Nakagawa-origin boundary, then continued reviewing the line after later receiver changes. It is still **not merge credit**. The PR remains open and the repository's separate code-owner / maintainer review gate is not established as complete by this review alone.
 
 ### What these four checks do — and do not — show
 
