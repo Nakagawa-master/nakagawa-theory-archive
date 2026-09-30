@@ -306,6 +306,98 @@ AI / search surface
 
 ---
 
+## 10. すでに現実を動かした3本から、自分の問題へ入る
+
+ここからは理論名ではなく、**実際に第三者の実装や判断が動いた線**から入ります。
+
+### A. 「同じsessionだから、同じ制限を使ってよい」は本当か
+
+LiteLLMでは、複数agentが同じtraceを共有すると、一方の利用がもう一方のsession limitを消費する問題が出ました。
+
+ここで分けるべきなのは、
+
+```text
+同じtraceを共有している
+≠
+同じagent budgetを共有してよい
+```
+
+という点です。
+
+この区別は、receiver側で「per-agentをdefaultにする」方向へ再述され、実装PR #43410へ進みました。まだmerge/releaseは未確定なので、ここで言えるのは**区別がreceiver側の実装方向を変えた**ところまでです。
+
+- [LiteLLM issue #43190](https://github.com/BerriAI/litellm/issues/43190)
+- [Implementation PR #43410](https://github.com/BerriAI/litellm/pull/43410)
+
+自分のsystemで確認するなら、まず問いは一つです。
+
+**共有されている識別子と、制限を負う主体が同じものとして扱われていないか。**
+
+---
+
+### B. 「agentが作ったもの」と「agentが外部へ送ったもの」は同じか
+
+MemberJunctionでは、agentがemail draftを作っても、その経路では送信しません。最終的に送るのは人間です。
+
+```text
+draftを作る
+≠
+外部へ送信する
+```
+
+さらに、agentが作ったlabelだけ見せてrecipientを隠すと、ユーザーは「誰に送るdraftなのか」を確認する前にmail clientを開くことになります。そこでreceiver側はrecipientを見える形にし、長文が途中で切れる場合は送信面へ渡さずfull draftへ戻す構造を作っています。
+
+- [MemberJunction PR #4568](https://github.com/MemberJunction/MJ/pull/4568)
+
+この線から自分のsystemを見るなら、
+
+**生成・承認・外部作用・最終責任が、一つの「実行した」に潰れていないか。**
+
+を確認します。
+
+---
+
+### C. 「予測コスト」と「実際に上限として守れるコスト」は同じか
+
+Qwen Codeでは、batchのforecastがthinking tokenを含まず、見かけ上budget内でも実際には数倍使う可能性がありました。
+
+ここで分けるべきなのは、
+
+```text
+予測値
+≠
+強制可能な上限
+```
+
+です。
+
+receiver側では、上限を本当に計算できないrequestをfail-closedにし、harvest済みかremote cleanup済みかも別stateへ分離しました。その後mergeされ、stable v0.24.7へ入りました。
+
+- [Qwen Code PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)
+
+自分の現場で見るなら、
+
+**表示している予測が、そのまま実行制御に使えるほど強い証拠なのか。それとも単なる見積もりなのか。**
+
+を分けます。
+
+---
+
+この3本は別々の話に見えますが、同じ型があります。
+
+```text
+一つに見える概念
+→ 実際には責任・主体・証拠・外部作用が違う
+→ 混ぜると誤作動する
+→ 分ける
+→ test / review / implementation gateへ落とす
+→ 第三者systemの状態が変わる
+→ 証拠を残す
+→ Originへ戻る
+```
+
+これが、この公開リポジトリで増やしたい循環です。
+
 ## 証拠境界
 
 このページに載る一件の外部実装は、理論体系全体の正しさや外部projectによる全面採用を意味しません。
