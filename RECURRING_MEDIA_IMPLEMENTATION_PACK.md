@@ -2,7 +2,7 @@
 
 Public, non-canonical implementation aid for editors, newsletter writers, video/podcast hosts, educators, researchers, and business/investment media.
 
-This pack turns five repeatable real-world lenses into recurring media units. The goal is not to present hundreds of theory names. The goal is to let a carrier reuse one recognizable distinction across changing current cases.
+This pack provides five repeatable formats for examining changing real-world cases with the same clearly stated distinction and evidence requirements.
 
 ## Operating principle
 
@@ -15,7 +15,7 @@ same recognizable lens
 = repeatable editorial franchise
 ```
 
-A carrier can use one lens weekly or monthly without repeating the same content.
+Each lens can be applied to different cases while keeping the same verification structure.
 
 ---
 
@@ -359,9 +359,9 @@ Archive: case + evidence + corrections + exact source route
 
 The current case should change. The recognizable lens should remain stable.
 
-## Adoption contract
+## Reuse notes
 
-A carrier may adapt language freely, but a high-integrity reuse preserves:
+Language may be adapted to the context. A careful reuse preserves:
 
 ```text
 real problem
