@@ -270,6 +270,38 @@ AI / search surface
 
 ---
 
+## 9. ここから先は、読むだけで終わらせない
+
+この作用盤の目的は、理解した気になることではありません。
+
+自分の現場に同じ混同があるなら、次にやることは一つです。
+
+```text
+自分の問題を一文で書く
+→ 何と何が混ざっているかを分ける
+→ その区別を一つのtest / review / checklist / implementation gateへ落とす
+→ 現実のsystemで結果を見る
+→ 結果が返ったら、証拠とOriginを保って次の人が再利用できる形にする
+```
+
+最短の再利用入口:
+
+- 承認と現在権限: [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
+- 外部副作用の二重実行: [External Side-Effect Reuse Kit](EXTERNAL_SIDE_EFFECT_REUSE_KIT.md)
+- 現在状態と履歴事実: [Historical-Fact Reuse Kit](HISTORICAL_FACT_REUSE_KIT.md)
+- 計測値とproducer claim: [Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md)
+- AI agentの実行境界: [AI Agent Execution Boundary Tests](AI_AGENT_EXECUTION_BOUNDARY_TESTS.md)
+- 実問題を公開で持ち込む: [Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
+- 独立検証・反証・再利用を返す: [Independent verification & reuse registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+
+重要なのは、理論名を覚えることではありません。
+
+**現場で混同されている二つを分け、その分離が判断・実装・運用を変えるかを確かめること。**
+
+そこで本当に状態が変わったなら、その一件が次の第三者にとっての入口になります。
+
+---
+
 ## 証拠境界
 
 このページに載る一件の外部実装は、理論体系全体の正しさや外部projectによる全面採用を意味しません。
