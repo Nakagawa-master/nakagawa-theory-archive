@@ -1,165 +1,102 @@
-# 実際の問題に使う｜Practical Use & Collaboration Entry｜实际问题应用入口
+# Practical Use — 理論を現場の確認手順へ変える
 
-> Public, non-canonical entry for using the Nakagawa Master Official Theory Archive on real problems. This page does not replace any canonical Parent or official derivative.
+理論を実務で使うとき、最初から体系全体を理解する必要はありません。
 
-## 日本語
+まず現場で混ざっている二つを分けます。次に、その区別が実装、手順、判断、記録のどこで崩れているかを確認します。必要なら小さなtestへ落とします。
 
-理論名から探す必要はありません。
-
-この公開アーカイブは、次の3段階で利用できます。
-
-### 1. 自分で使う
-
-まず、いま扱っている問題に近い入口を選びます。
-
-- [Start Here](START_HERE.md)
-- [AI主観性が分からないまま判断するときのPreflight](discovery-notes/ai-moral-uncertainty-decision-preflight.md)
-- [AI Agent Execution Governance Preflight｜実行前に確認する12問](discovery-notes/ai-agent-execution-governance-preflight.md)
-- [「分からない」を「何も考慮しなくてよい」に変えない](discovery-notes/unknown-does-not-mean-nothing.md)
-- [場面から入る｜4つの場面から入る中川マスター理論](discovery-notes/four-scenes-one-structural-view.md)
-- [実務者向けStart Map](discovery-notes/cross-domain-practitioner-start-map.md)
-- [AI導入前の組織Preflight](discovery-notes/ai-adoption-organization-preflight.md)
-- [AI Runtime Continuity Preflight](discovery-notes/ai-runtime-continuity-preflight.md)
-- [AIが提案した引数と、実際に実行を許可する引数は同じではない](discovery-notes/model-proposal-is-not-execution-authority.md)
-- [実装事例｜Sanitized Content Is Not Current Authorization](discovery-notes/implementation-case-sanitized-content-is-not-current-authorization.md)
-
-入口で考えを整理した後、関係する公式派生物とcanonical Parentへ戻り、定義・因果線・成立条件・境界・反証条件を確認してください。
-
-### 2. まず自分で短く確認する
-
-理論体系全体から入る必要はありません。[Four Applied Entry Points](APPLIED_ENTRY_POINTS.md) では、承認、履歴、外部送信、AI推薦という具体問題から中川構造OSへ戻る4つの入口を用意しています。
-
-[Practical Boundary Checks](PRACTICAL_BOUNDARY_CHECKS.md) では、承認・上書き・測定・推薦根拠・外部送信・履歴記録の6場面を、実務上の問いとregression例へ変換しています。非技術の業務・研究・制度・教育にも使えます。
-
-AI/search可視性、推薦監視、モデル評価などを時系列で測る場合は、[Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md) で、対象固有の変化とprovider/model/retrieval側のdriftをcontrol/reference panelで分けて検証できます。
-
-### 3. 実際の問題を公開で聞く
-
-すでに公開sourceを独立に検証・反証・再利用した結果がある場合は、相談入口ではなく [Independent verification & reuse registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) と専用issue formを使えます。成功例だけでなく、non-fit・counterexample・failed reproductionも対象です。
-
-
-理論との対応が分からない場合は、[公開対話入口 #399](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399) に、非機密の範囲で実際の問題を書けます。
-
-返答では、必要に応じて次を分けます。
+## 基本手順
 
 ```text
-問題のどこが関係するか
-→ 関係するDiscovery / 公式派生物
-→ 適用できない・まだ分からない境界
-→ canonical Parent
+困っている現象を書く
+→ 混同されている二つを分ける
+→ どちらを事実として確認できるか調べる
+→ 最小のtestを作る
+→ 結果に応じて実装・手順・判断を直す
+→ 何を確認でき、何をまだ確認できないか記録する
 ```
 
-理論を無理に当てはめるための場所ではありません。
+重要なのは、理論名を当てることではありません。区別によって、確認できなかった因果が確認できるようになることです。
 
-### 3. 実装・協業の可能性を検討する
+## 例1：古い承認が残っている
 
-AI導入、組織設計、RAG / provenance、source identity、runtime migration / continuity、AI subjectivity uncertainty、state retention、事業成立条件、長期判断などで、単に読むだけでなく**実際の設計・実装・運用へ落としたい**場合も、#399から非機密の概要を始められます。
+「以前OKだった」という履歴と、「現在も実行してよい」という権限を分けます。
 
-最初に書くと役立つのは次の4点です。
+確認すること:
 
-1. 何を変えたいか
-2. 現在どこで困っているか
-3. 変えてはいけない条件は何か
-4. どの状態になれば前進と言えるか
+- 承認時と現在で対象は同じか
+- 条件は変わっていないか
+- 実行範囲は広がっていないか
+- 期限や取消しが反映されるか
 
-機密情報、個人情報、顧客情報、社外秘、認証情報は書かないでください。
+→ [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
 
-この入口は、特定の案件受託、採用、契約、成果、導入可否を保証するものではありません。まず問題と公開sourceの適合範囲を確認します。
+## 例2：外部APIを再試行している
 
-## English
+内部で一度だけ承認を消費していても、外部側で一度だけ実行されたとは限りません。
 
-You do not need to start from a theory name. There are three practical routes.
+確認すること:
 
-### 1. Self-serve
+- timeout時に結果をunknownとして保持できるか
+- provider側の状態と照合できるか
+- idempotency keyがあるか
+- 不明なまま同じ副作用を再実行しないか
 
-Start from the problem closest to your work:
+→ [External Side-Effect Reuse Kit](EXTERNAL_SIDE_EFFECT_REUSE_KIT.md)
 
-- [Start Here — English](START_HERE.en.md)
-- [AI moral-uncertainty decision Preflight](discovery-notes/ai-moral-uncertainty-decision-preflight.en.md)
-- [AI Agent Execution Governance Preflight — 12 questions before tool execution](discovery-notes/ai-agent-execution-governance-preflight.en.md)
-- [Problem-first OD299 entry — We Don't Know Does Not Mean Nothing Matters](discovery-notes/unknown-does-not-mean-nothing.en.md)
-- [Story-first entry — Four scenes](discovery-notes/four-scenes-one-structural-view.en.md)
-- [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
-- [AI Adoption Organization Preflight](discovery-notes/ai-adoption-organization-preflight.en.md)
-- [AI Runtime Continuity Preflight](discovery-notes/ai-runtime-continuity-preflight.md)
-- [What the model proposes is not the same as what the system is authorized to execute](discovery-notes/model-proposal-is-not-execution-authority.en.md)
-- [Implementation Case — Sanitized Content Is Not Current Authorization](discovery-notes/implementation-case-sanitized-content-is-not-current-authorization.md)
+## 例3：AIや別systemから数値を受け取る
 
-Then return to the relevant official derivative and canonical Parent for exact definitions, causal structure, validity conditions, boundaries, and falsification or revision conditions.
+渡された値と、自分のsystemが測った値を同じ欄へ入れると、後から証拠の出所を区別できなくなります。
 
-For longitudinal AI/search visibility, recommendation monitoring, or model-evaluation measurements, use the [Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md) to separate subject-specific movement from provider/model/retrieval-surface drift before making causal claims.
+確認すること:
 
-### 2. Bring a real problem publicly
+- producerが渡した値をそのまま保存しているか
+- receiver側の測定値を別に保存できるか
+- 両者が違った場合、その差を確認できるか
 
-Use [Issue #399](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399) for a non-confidential real problem. A useful reply should distinguish:
+→ [Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md)
 
-```text
-what part of the problem appears relevant
-→ relevant Discovery Note / official derivative
-→ where the fit is weak, uncertain, or absent
-→ canonical Parent
-```
+## 例4：現在の状態で過去を判定している
 
-The goal is source routing, not forcing every case into a theory.
+現在のmembershipやassignmentが変わっても、過去のeventで成立していた事実まで変わるわけではありません。
 
-### 3. Explore implementation or collaboration
+確認すること:
 
-If you are trying to move from reading into a real design, workflow, AI system, organizational change, provenance architecture, runtime migration, state-retention decision under uncertain AI subjectivity, or long-horizon decision, you can start with a non-confidential outline in #399.
+- 判定対象の時刻を明示しているか
+- current stateとhistorical recordを分けているか
+- testが現在時刻に依存していないか
 
-Useful starting information:
+→ [Historical-Fact Reuse Kit](HISTORICAL_FACT_REUSE_KIT.md)
 
-1. what you want to change,
-2. where the current difficulty is,
-3. what constraints must remain intact,
-4. what a meaningful next state would look like.
+## 例5：AIが判断した内容をそのまま実行している
 
-Do not post confidential, personal, customer, proprietary, credential, or security-sensitive information.
+分類結果は「どう見えるか」という判断です。外部へ作用する権限は「何をしてよいか」という別の問題です。
 
-This entry does not guarantee acceptance of a project, a contract, implementation approval, or any outcome. It begins by checking problem/source fit and preserving the return path to the relevant public sources.
+確認すること:
 
-## 中文
+- untrusted contentが権限を作っていないか
+- classificationとaction gateが分離されているか
+- 外部副作用の直前にscopeを確認しているか
 
-不需要先知道理论名称。可以从三个层次开始。
+→ [AI Agent Execution Boundary Tests](AI_AGENT_EXECUTION_BOUNDARY_TESTS.md)
 
-### 1. 自己使用
+## 問題から入口を選ぶ
 
-- [Start Here — 中文](START_HERE.zh.md)
-- [AI主观性不确定时的决策Preflight](discovery-notes/ai-moral-uncertainty-decision-preflight.zh.md)
-- [OD299问题入口｜“不知道”不等于“什么都不需要考虑”](discovery-notes/unknown-does-not-mean-nothing.zh.md)
-- [故事型入口｜四个场景](discovery-notes/four-scenes-one-structural-view.zh.md)
-- [跨领域实践者入口](discovery-notes/cross-domain-practitioner-start-map.md)
-- [AI导入前组织Preflight](discovery-notes/ai-adoption-organization-preflight.zh.md)
-- [AI Runtime Continuity Preflight](discovery-notes/ai-runtime-continuity-preflight.md)
+より多くの具体例は [Applied Entry Points](APPLIED_ENTRY_POINTS.md) にまとめています。
 
-之后再返回相关官方派生物与canonical Parent，确认精确定义、因果线、成立条件、边界、反证或修订条件。
+公開された実装事例との対応は [Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)、305件全体から探す場合は [24テーマの世界地図](human-translation/WORLD_MAP.md) と [OD001–OD305水平マップ](human-translation/ALL_305_HORIZONTAL_MAP.md) を使えます。
 
-对于长期 AI/search 可见性、推荐监测或模型评估，可以使用 [Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md)，先把对象自身变化与 provider/model/retrieval 环境漂移区分开，再讨论因果。
+## 証拠の扱い
 
-### 2. 公开提出真实问题
+一つの事例で確認できるのは、その事例で実際に観測できた範囲です。
 
-可以在[公开对话 #399](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)中写下不涉及机密的真实问题。
+mergeされたことはreleaseを意味しません。実装されたことは体系全体の採用を意味しません。関連する考え方が一致したことだけで、因果的な出所まで断定することもできません。
 
-回答应区分：问题中哪些部分可能相关、应查看哪些公开source、哪些部分不适用或仍不确定，以及应返回哪个canonical Parent。
+確認できた範囲と、まだ確認できない範囲を分けて記録してください。
 
-### 3. 探索实际实施或合作
+## 公式アーカイブ
 
-如果希望把内容用于真实的AI系统、组织设计、RAG / provenance、source identity、runtime migration / continuity、AI主观性不确定条件下的state保留判断、事业成立条件或长期判断，可以从#399提交非机密概要。
+理論の確定内容は公式アーカイブを参照してください。
 
-建议先写：想改变什么、目前哪里困难、不能破坏什么条件、怎样的下一状态才算真正前进。
+https://master.ricette.jp
 
-请不要发布机密、个人、客户、公司内部、认证或安全敏感信息。
-
-这个入口不保证项目承接、合同、实施许可或结果。首先确认现实问题与公开source之间的适用范围，并保留返回canonical source的路径。
-
-## Canonical return rule
-
-Practical use does not make a Discovery Note or this page canonical.
-
-```text
-real problem
-→ practical entry
-→ relevant official derivative
-→ canonical Parent
-```
-
-When a practical explanation and a canonical source differ, use the canonical Parent for the theory itself.
+Origin / Author: **Nakagawa Master** (pen-name of Keisuke Nakagawa)
