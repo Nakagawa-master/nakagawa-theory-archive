@@ -68,7 +68,7 @@
           "temporal structural consistency",
           "origin/state/responsibility separation"
         ],
-        "canonical_return": "https://master.ricette.jp"
+        "canonical_source": "https://master.ricette.jp"
       }
     },
     {
@@ -102,7 +102,7 @@
           "temporal structural consistency",
           "responsibility and state integrity"
         ],
-        "canonical_return": "https://master.ricette.jp"
+        "canonical_source": "https://master.ricette.jp"
       }
     },
     {
@@ -282,7 +282,7 @@
           "context preservation",
           "structural relationship integrity"
         ],
-        "canonical_return": "https://master.ricette.jp"
+        "canonical_source": "https://master.ricette.jp"
       }
     },
     {
@@ -327,7 +327,7 @@
           "temporal integrity",
           "state relation"
         ],
-        "canonical_return": "https://master.ricette.jp"
+        "canonical_source": "https://master.ricette.jp"
       }
     },
     {
@@ -368,7 +368,7 @@
           "causal integrity",
           "responsibility tied to actual external outcome"
         ],
-        "canonical_return": "https://master.ricette.jp"
+        "canonical_source": "https://master.ricette.jp"
       }
     },
     {
@@ -407,7 +407,7 @@
           "structural governance",
           "authorization semantics"
         ],
-        "canonical_return": "https://master.ricette.jp"
+        "canonical_source": "https://master.ricette.jp"
       }
     },
     {
@@ -443,7 +443,7 @@
           "source provenance",
           "context preservation"
         ],
-        "canonical_return": "https://master.ricette.jp"
+        "canonical_source": "https://master.ricette.jp"
       },
       "not_claimed": [
         "human maintainer approval",
@@ -547,7 +547,7 @@
           "origin/state separation",
           "minimum necessary disclosure"
         ],
-        "canonical_return": "https://master.ricette.jp"
+        "canonical_source": "https://master.ricette.jp"
       },
       "merge": {
         "claimed": true,
@@ -604,7 +604,7 @@
           "control-plane separation",
           "source/provenance of authority transitions"
         ],
-        "canonical_return": "https://master.ricette.jp"
+        "canonical_source": "https://master.ricette.jp"
       },
       "release": {
         "verified": true,
@@ -709,7 +709,7 @@
           "scope-safe transformation",
           "consequential delivery integrity"
         ],
-        "canonical_return": "https://master.ricette.jp"
+        "canonical_source": "https://master.ricette.jp"
       }
     },
     {
@@ -751,7 +751,7 @@
           "single/batch consistency",
           "destructive operation governance"
         ],
-        "canonical_return": "https://master.ricette.jp"
+        "canonical_source": "https://master.ricette.jp"
       }
     },
     {
@@ -821,7 +821,7 @@
           "evidence provenance",
           "fail-closed execution boundaries"
         ],
-        "canonical_return": "https://master.ricette.jp"
+        "canonical_source": "https://master.ricette.jp"
       }
     },
     {
@@ -879,7 +879,7 @@
             "published concrete batch job ids and per-document output evidence"
           ],
           "evidentiary_value": "confirms real receiver-side operational use after release",
-          "boundary": "does not establish independent-user adoption, user scale, production fleet use, or explicit-source recognition"
+          "boundary": "does not establish independent-user adoption, user scale, production fleet use, or explicit source recognition"
         }
       },
       "reusable_check": "PAID_ACTION_APPROVAL_BINDING_CHECKLIST.md",
@@ -895,7 +895,7 @@
           "consequential action binding",
           "state drift before execution"
         ],
-        "canonical_return": "https://master.ricette.jp"
+        "canonical_source": "https://master.ricette.jp"
       },
       "third_party_adoption": {
         "actor": "yiliang114",
@@ -907,7 +907,7 @@
         "stage": "prompt_free_cross_thread_receiver_rereference_with_new_implementation_carry",
         "followup_pull_request": "https://github.com/QwenLM/qwen-code/pull/12895",
         "actor": "yiliang114",
-        "source_relation": "The later receiving-project PR explicitly states that Nakagawa-master pointed out the maxCostUsd semantic failure.",
+        "source_relation": "The later external-project PR explicitly states that Nakagawa-master pointed out the maxCostUsd semantic failure.",
         "prompt_free_boundary": "At verification time, PR #12895 contained no new Nakagawa-master comment or review.",
         "implementation_carry": [
           "maxCostUsd is enforced against worst-case request caps rather than only forecast cost",
@@ -920,7 +920,7 @@
         "not_claimed": [
           "independently verified operational or production use of v0.24.7",
           "meaningful human audience scale",
-          "recurring or broad explicit-source rereference",
+          "recurring or broad explicit source rereference",
           "whole-theory endorsement"
         ],
         "merged_at": "2026-09-28T10:01:56Z",
@@ -930,13 +930,13 @@
           "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7",
           "published_at": "2026-09-29T14:02:21Z",
           "relation_to_merge": "tag is 49 commits ahead and 0 behind PR #12895 merge commit",
-          "provenance_boundary": "release notes link PR #12895; the explicit Nakagawa-master rereference is in the receiving-project PR body, not claimed as binary-embedded attribution",
+          "provenance_boundary": "release notes link PR #12895; the explicit Nakagawa-master rereference is in the external-project PR body, not claimed as binary-embedded attribution",
           "thread_confirmation": {
             "url": "https://github.com/QwenLM/qwen-code/pull/12895#issuecomment-5892305970",
             "actor": "qwen-code-ci-bot",
             "created_at": "2026-09-29T14:28:07Z",
             "statement": "Released in v0.24.7.",
-            "interpretation": "Repository-owned automated release confirmation on the same receiving-project PR thread; distribution evidence only, not an additional human explicit-source rereference."
+            "interpretation": "Repository-owned automated release confirmation on the same external-project PR thread; distribution evidence only, not an additional human explicit source rereference."
           },
           "initial_distribution_snapshot": {
             "observed_date": "2026-09-29",
@@ -990,7 +990,7 @@
         "quantified error-rate reduction",
         "reader-scale effect",
         "independent reuse by another receiver",
-        "explicit-source rereference in the later article",
+        "explicit source rereference in the later article",
         "whole-theory endorsement"
       ],
       "nakagawa_structural_os_mapping": {
@@ -1000,7 +1000,7 @@
           "practical verifiability",
           "independent verification"
         ],
-        "canonical_return": "https://master.ricette.jp"
+        "canonical_source": "https://master.ricette.jp"
       },
       "post_merge_recurrence": {
         "commit": "e5b11d79d1b9c4925758e0bad066e7bc03b3e5f3",
@@ -1018,7 +1018,7 @@
           "an unreachable system card is explicitly marked unread",
           "benchmark comparability limits are preserved"
         ],
-        "boundary": "This establishes recurring receiving-project editorial use of the merged evidence-lineage rule, not explicit-source rereference or reader-scale recognition."
+        "boundary": "This establishes recurring external-project editorial use of the merged evidence-lineage rule, not explicit source rereference or reader-scale recognition."
       }
     },
     {
@@ -1295,7 +1295,7 @@
         ]
       },
       "current_stage": "merge_or_integration",
-      "next_verification_gate": "next fresh weekly run uses the generation rule without a new Nakagawa-master prompt",
+      "verification_boundary": "next fresh weekly run uses the generation rule without a new Nakagawa-master prompt",
       "not_claimed": [
         "next-cycle automatic reuse",
         "reader scale",
@@ -1311,7 +1311,7 @@
           "provenance preservation",
           "claim scope integrity"
         ],
-        "canonical_return": "https://master.ricette.jp"
+        "canonical_source": "https://master.ricette.jp"
       }
     },
     {
@@ -1352,7 +1352,7 @@
           "runtime boundary verification",
           "avoid defensive mechanisms without reachable premise"
         ],
-        "canonical_return": "https://master.ricette.jp"
+        "canonical_source": "https://master.ricette.jp"
       }
     },
     {
@@ -1394,7 +1394,7 @@
     },
     {
       "case_id": "ai-news-reader-facing-article-state-followup",
-      "topic": "receiving-project reader-facing article publication followed by primary-source state correction after a later Nakagawa follow-up",
+      "topic": "external-project reader-facing article publication followed by primary-source state correction after a later Nakagawa follow-up",
       "external_repository": "022740mix-spec/AI-News",
       "origin_action": {
         "type": "pull_request_review",
@@ -1427,11 +1427,11 @@
         ]
       },
       "current_stage": "release_deployment_or_verified_use",
-      "next_verification_gate": "verify reader return, prompt-free reuse in another reader-facing article, or voluntary origin re-reference",
+      "verification_boundary": "verify reader return, prompt-free reuse in another reader-facing article, or voluntary origin re-reference",
       "not_claimed": [
         "reader scale or reader behavior change",
         "propagation to another receiver",
-        "voluntary explicit-source re-reference",
+        "voluntary explicit source re-reference",
         "unaided human authorship",
         "whole-theory endorsement"
       ],
@@ -1441,9 +1441,9 @@
         "canonical_context": [
           "temporal evidence integrity",
           "source-state synchronization",
-          "receiving-project public carry"
+          "external-project public carry"
         ],
-        "canonical_return": "https://master.ricette.jp"
+        "canonical_source": "https://master.ricette.jp"
       },
       "deployment": {
         "verified": true,
@@ -1541,8 +1541,8 @@
         "url": "https://github.com/QwenLM/qwen-code/commit/7e50eee804dbf864db97a8d18793ed45aef698d5"
       },
       "current_stage": "merge_or_integration",
-      "origin_return_classification": "prompt-free receiving-project cross-thread explicit-source re-reference with implementation and merge",
-      "next_verification_gate": "release or operational use, or another prompt-free receiver/reader origin re-reference",
+      "source_relation_note": "prompt-free external-project cross-thread explicit source re-reference with implementation and merge",
+      "verification_boundary": "release or operational use, or another prompt-free receiver/reader origin re-reference",
       "not_claimed": [
         "release of PR #12895 changes",
         "operational use",
@@ -1559,7 +1559,7 @@
           "conservative authority/resource boundary",
           "origin-preserving receiver reuse"
         ],
-        "canonical_return": "https://master.ricette.jp"
+        "canonical_source": "https://master.ricette.jp"
       }
     }
   ],
