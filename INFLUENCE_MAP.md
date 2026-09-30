@@ -206,7 +206,7 @@ Issue自身のstale-publication対策に加えて、終了時にcurrent publishe
 ## 関連する索引と資料
 
 - [24のテーマから見る](human-translation/WORLD_MAP.md)
-- [OD001–OD305を横断して見る](human-translation/ALL_305_HORIZONTAL_MAP.md)
+- [OD001–OD306を横断して見る](human-translation/ALL_306_HORIZONTAL_MAP.md)
 - [Theory → Real-World Influence](THEORY_TO_REAL_WORLD_INFLUENCE.md)
 - [Reuse Kits](REUSE_KITS.md)
 - [Machine Discovery](machine-discovery/README.md)

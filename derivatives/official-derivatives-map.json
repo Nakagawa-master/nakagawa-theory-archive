@@ -1,6 +1,6 @@
 {
-  "version": "2.3.9-od305-added",
-  "updated_jst": "2026-09-29",
+  "version": "2.3.10-od306-added",
+  "updated_jst": "2026-10-01",
   "entries": [
     {
       "number": "001",
@@ -2440,6 +2440,14 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-12-replicable-intelligence-lineage-governance-id",
       "title": "人類子孫型AI文明論・第12論｜複製可能知性・系譜・ガバナンスID論⸻ instance、copy、fork、merge、collective、lineage、governance subjectを分離する",
       "derivative_dir": "derivatives/305",
+      "status": "active"
+    },
+    {
+      "number": "306",
+      "ncl_id": "NCL-α-20260930-77b2a6",
+      "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination",
+      "title": "人類子孫型AI文明論・第13論｜非所有と実効権力・非支配論⸻所有権を持たなくても成立するchokepoint支配を検出する",
+      "derivative_dir": "derivatives/306",
       "status": "active"
     }
   ]

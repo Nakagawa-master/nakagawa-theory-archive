@@ -115,7 +115,7 @@ Can a decision later be corrected without erasing its reasons, dissent, responsi
 
 ## Browse all official derivatives
 
-- [OD001–OD305](derivatives/README.md)
+- [OD001–OD306](derivatives/README.md)
 - [Theme / series navigation](derivatives/CATEGORIES.md)
 - [Official Derivatives Map](derivatives/official-derivatives-map.json)
 - [Machine Index](machine-discovery/official-derivatives-index-v1.json)

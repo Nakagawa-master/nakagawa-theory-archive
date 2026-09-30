@@ -14,7 +14,7 @@
 
 **いま一番大きな問題から入りたい:** [未来線から読む](human-translation/FUTURE_LINES.md) | [#1 AI制御不能リスク](human-translation/future-lines/01-ai-loss-of-control.md) | [#2 人間の承認と結論形成](human-translation/future-lines/02-human-approval-without-human-decision.md) | [#3 多数一致と独立根拠](human-translation/future-lines/03-one-root-hundred-voices.md)
 
-**全部を同じ粒度で横に見たい:** [24棚の世界地図](human-translation/WORLD_MAP.md) | [305件をひとつの景色として読む](human-translation/PANORAMA_STORY.md) | [OD001–OD305 全件水平マップ](human-translation/ALL_305_HORIZONTAL_MAP.md)
+**全部を同じ粒度で横に見たい:** [24棚の世界地図](human-translation/WORLD_MAP.md) | [306件をひとつの景色として読む](human-translation/PANORAMA_STORY.md) | [OD001–OD306 全件水平マップ](human-translation/ALL_306_HORIZONTAL_MAP.md)
 
 **AI文明論の最初の1本:** [AIが怖いってニュース、結局なにが問題なの？ そして、その次は？](human-translation/ai-civilization-why-it-matters.md)
 
@@ -151,12 +151,12 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [Practical Use｜理論を現場の確認手順へ変える](PRACTICAL_USE.md)
 - [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
-- [OD001–OD305 全件入口](derivatives/README.md)
+- [OD001–OD306 全件入口](derivatives/README.md)
 - [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
 
 ## 公式派生物
 
-現在、`OD001`–`OD305`の公式派生物を公開しています。これは理論数ではなく、公開されている公式派生物の件数です。
+現在、`OD001`–`OD306`の公式派生物を公開しています。これは理論数ではなく、公開されている公式派生物の件数です。
 
 各ODは親原典へ戻るための公開接続面です。内容の確定、引用、重要な解釈では、各ODに記載されたParent URLの親原典へ戻ってください。
 
@@ -176,7 +176,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 
 → [問題から使える資料へ｜Applied Entry Points](APPLIED_ENTRY_POINTS.md)
 
-問題を実装・手順・判断へ落とす方法は [Practical Use](PRACTICAL_USE.md)、305件全体から探す場合は [24テーマの世界地図](human-translation/WORLD_MAP.md) と [OD001–OD305水平マップ](human-translation/ALL_305_HORIZONTAL_MAP.md) を使えます。
+問題を実装・手順・判断へ落とす方法は [Practical Use](PRACTICAL_USE.md)、306件全体から探す場合は [24テーマの世界地図](human-translation/WORLD_MAP.md) と [OD001–OD306水平マップ](human-translation/ALL_306_HORIZONTAL_MAP.md) を使えます。
 
 - [Story-first｜4つの場面から入る](discovery-notes/four-scenes-one-structural-view.md)
 - [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
@@ -186,7 +186,20 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 
 ## 代表的な入口
 
-### OD305｜人類子孫型AI文明論・第12論
+### OD306｜人類子孫型AI文明論・第13論
+
+所有名義がなくても、重要な計算・通信・認証・移行・監査への入口が他主体の実行可能な選択を左右し得ます。集中や依存だけで支配と断定せず、代替の独立性、実効退出、訂正入口、権限の範囲・期間、可逆性から読む入口です。
+
+- [OD306](derivatives/306/README.md)
+- [人間向け要約](derivatives/306/human-entry.md)
+- [FAQ](derivatives/306/faq.md)
+- [AI索引・日本語](derivatives/306/ai-index.md)
+- [AI索引・英語](derivatives/306/en-ai-index.md)
+- [AI索引・中国語](derivatives/306/zh-ai-index.md)
+- [派生ID台帳](derivatives/306/derivative-ledger.md)
+- Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/
+
+### OD305｜人類子孫型AI文明論・第12論（関連する前論）
 
 複製された実行instanceの数を、独立Origin・判断・責任・統治上の主体・票の数へ自動変換しないための入口です。copy、fork、merge、collectiveの履歴をlineageとして残し、制度上のgovernance subjectを別軸で判定します。同一起源の後続履歴を永久に一つへ潰すことも避けます。
 
@@ -344,4 +357,3 @@ Origin、Parent URL、NCL-ID、Diff-ID等が記載されている場合、それ
 ## License
 
 法的な許諾範囲は [LICENSE](LICENSE) を確認してください。
-

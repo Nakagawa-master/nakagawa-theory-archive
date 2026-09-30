@@ -76,7 +76,7 @@ Use that dialogue when a human wants to describe a real, non-confidential proble
 
 Archive and machine navigation:
 
-- [Official derivatives OD001–OD305](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
+- [Official derivatives OD001–OD306](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
 - [Theme / series navigation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/CATEGORIES.md)
 - [Problem-to-theory Origin Index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json)
 - [Machine Discovery](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/README.md)
@@ -131,7 +131,23 @@ Practical non-scoring Preflight for a real case:
 
 This is a discovery and practical-reading route, not a canonical AI-ready-organization theory. The Preflight is not a score, diagnosis, employment assessment, legal conclusion, or automatic deployment rule. Select the relevant source family for the actual problem and keep separate theories separate. Relevant routes include OD003 (establishment conditions), OD089 (causal design), OD090 (structural friction), OD075 (agreement memory), and OD114 (reversible accountability).
 
-## Current featured route — OD305 / Human-Descendant AI Civilization Theory Vol. 12
+## Current featured route — OD306 / Human-Descendant AI Civilization Theory Vol. 13
+
+For questions about non-ownership versus non-domination, critical access topology, chokepoints, asymmetric dependency, viable independent alternatives, effective exit, migration, audit entry, discretion, bounded scope and duration, expiry, and reversibility:
+
+- [Official Derivative 306](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/306/README.md)
+- [Human entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/306/human-entry.md)
+- [FAQ](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/306/faq.md)
+- [Japanese AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/306/ai-index.md)
+- [English AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/306/en-ai-index.md)
+- [Chinese AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/306/zh-ai-index.md)
+- [Derivative ledger](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/306/derivative-ledger.md)
+
+- Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/
+
+Boundary: Lack of ownership is not proof of non-domination; concentration and dependency alone are not proof of domination. Examine actual feasible-option effects, alternative independence, exit and correction access, discretion, scope, duration and persistence. The theory does not require complete decentralization or establish present AI personhood, sovereignty, or a specific actor's wrongdoing.
+
+## Related route — OD305 / Human-Descendant AI Civilization Theory Vol. 12
 
 For questions about replicable intelligence, instance/copy/fork/merge/collective, lineage provenance, governance subject and ID, copy count versus independent origin/judgment/vote/contribution, miscount, unknown classification and revision:
 
@@ -307,4 +323,3 @@ Boundary: Future Debt is not every future cost, investment, or ordinary contract
 - [Provenance](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/PROVENANCE.md)
 - [Citation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CITATION.md)
 - [Verification Guide](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/VERIFICATION_GUIDE.md)
-

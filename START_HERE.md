@@ -8,7 +8,7 @@
 >
 > AI文明論から入るなら、まず [「AIが怖い」の、その次](human-translation/ai-civilization-why-it-matters.md) へ。
 >
-> **一つを深く読むより、同じ粒度で全体像を先に見たい場合:** [24棚の世界地図](human-translation/WORLD_MAP.md) → [OD001–OD305 全件水平マップ](human-translation/ALL_305_HORIZONTAL_MAP.md)
+> **一つを深く読むより、同じ粒度で全体像を先に見たい場合:** [24棚の世界地図](human-translation/WORLD_MAP.md) → [OD001–OD306 全件水平マップ](human-translation/ALL_306_HORIZONTAL_MAP.md)
 
 - [中川マスターとは｜この公開アーカイブで確認できること](ABOUT_NAKAGAWA_MASTER.md)
 - [現実で何が変わったか｜第三者実装・再利用の確認可能な事例](REAL_WORLD_IMPACT.md)
@@ -35,8 +35,9 @@
 - 「別の人や別のAIも同じ結論だった」だけで、本当に独立した確認と言えるのか。
 - 計算資源が多い主体だけが次も多くの資源を得る仕組みは、後から見直せるのか。
 - 一つのAIを複製したとき、何が増え、何を「一主体」として数えるのか。
+- 所有者がいなくても、重要な入口を握る相手から離れたり異議を返したりできるのか。
 
-**一言でいえば、第5〜12論は「AIをどう制御するか」だけでなく、「人間とAIが同じ文明に残るなら、互いを壊さず、間違いを直し続けられる仕組みをどう作るか」を順番に分解しています。**
+**一言でいえば、第5〜13論は「AIをどう制御するか」だけでなく、「人間とAIが同じ文明に残るなら、互いを壊さず、間違いを直し続けられる仕組みをどう作るか」を順番に分解しています。**
 
 難しい用語を先に覚える必要はありません。まず上の問いのどれが気になるかを選び、そこから対応する入口へ進んでください。
 
@@ -48,6 +49,7 @@
 - **監査が本当に独立しているか** → [第10論 / OD303](derivatives/303/human-entry.md)
 - **計算資源・能力差が永久の地位へ変わらないか** → [第11論 / OD304](derivatives/304/human-entry.md)
 - **複製数と制度上の主体数をどう分けるか** → [第12論 / OD305](derivatives/305/human-entry.md)
+- **所有名義の外側に残る実効支配をどう見分けるか** → [第13論 / OD306](derivatives/306/human-entry.md)
 
 これは「現在のAIが人格を持つ」「必ず人類と対立する」と断定する入口ではありません。将来そうした条件が成立する場合も含め、どこで判断が壊れるかを先に分けておくための入口です。
 
@@ -155,9 +157,9 @@ AIによる要約・翻訳・再生成の後でも、知識がどこから来た
 - [Problem-to-theory Origin Index](machine-discovery/problem-to-theory-origin-index-v1.json)
 - [Machine Discovery](machine-discovery/README.md)
 
-## 305件から直接探す
+## 306件から直接探す
 
-- [OD001–OD305 全件入口](derivatives/README.md)
+- [OD001–OD306 全件入口](derivatives/README.md)
 - [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
 - [Official Derivatives Map](derivatives/official-derivatives-map.json)
 - [Official Derivatives Machine Index](machine-discovery/official-derivatives-index-v1.json)

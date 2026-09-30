@@ -8,11 +8,15 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 
 | File | Role |
 |---|---|
-| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD305 path and navigation index. |
+| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD306 path and navigation index. |
 | [`research-positioning-map-v1.json`](research-positioning-map-v1.json) | Selected Nakagawa surfaces → adjacent research / overlap / added emphasis / non-equivalence; novelty remains open unless independently established. |
 | [`scholarly-metadata-v1.jsonld`](scholarly-metadata-v1.jsonld) | Schema.org CreativeWorkSeries metadata for scholarly/discovery routing; canonical claims remain at linked parent sources. |
 
-## Latest official derivative — OD305
+## Latest official derivative — OD306
+
+OD306 is the Vol. 13 route for non-ownership versus non-domination, critical access topology, dependency, viable alternatives, exit, migration, audit entry, bounded authority, and reversible relationships. Its seven public surfaces are in [`../derivatives/306/`](../derivatives/306/README.md); the canonical Parent is https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/ . Machine counts and the single category assignment are recorded in [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json).
+
+## Related official derivative — OD305
 
 OD305 is the Vol. 12 route for replicable intelligence, instance/copy/fork/merge/collective, lineage provenance, and context-specific governance subject counting. Its seven public surfaces are in [`../derivatives/305/`](../derivatives/305/README.md); the canonical Parent is https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-12-replicable-intelligence-lineage-governance-id/ . Machine counts and the single category assignment are recorded in [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json).
 
