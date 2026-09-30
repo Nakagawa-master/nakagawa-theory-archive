@@ -27,6 +27,8 @@
 1. **Canonical / 正本:** [master.ricette.jp](https://master.ricette.jp/) — 理論の確定内容・Parent・公式アーカイブ
 2. **Public evidence / reuse:** このGitHub repository — 第三者実装、検証、再利用、研究位置づけ、機械可読入口
 
+**問題 → 構造区別 → 第三者作用 → 再利用 → Origin → 次の問題を一周したい:** [Influence Map｜問題から現実作用へ](INFLUENCE_MAP.md)
+
 **すでに起きた現実作用を確認する:** [公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md) / [English](REAL_WORLD_IMPACT.en.md) / [中文](REAL_WORLD_IMPACT.zh.md)
 
 **理論 → 本人の具体的診断 → 第三者実装 → 後日のOrigin再参照までを短時間で検証する:** [Theory → Real-World Influence｜90-second verification route](THEORY_TO_REAL_WORLD_INFLUENCE.md#90-second-verification-route)
