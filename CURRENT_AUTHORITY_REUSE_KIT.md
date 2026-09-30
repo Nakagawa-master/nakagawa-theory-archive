@@ -307,6 +307,48 @@ Useful regression cases:
 - intended server actor receives the narrow scope;
 - that actor still cannot publish / mutate beyond the narrow scope.
 
+### 14. A long-lived share must define what later capability changes mean
+
+A grant can remain valid while the capability behind it changes.
+
+```text
+agent policy A is narrow
+→ owner issues a multi-day share under A
+→ the same agent later changes to broader policy B
+→ caller presents the old share
+→ the system follows an explicit contract
+```
+
+Two contracts can be coherent:
+
+- **live-policy:** the share follows the agent's current policy when it is used;
+- **bound-grant:** the share remains tied to the material policy/version represented when it was issued, so a later expansion requires reissue or reauthorization.
+
+The failure is leaving this implicit. A useful regression is:
+
+```text
+issue share under narrow A
+→ change the same agent to broader B
+→ use the old share
+→ assert the chosen contract explicitly
+```
+
+The key distinction is:
+
+```text
+grant still valid
+!=
+authority meaning stayed unchanged
+```
+
+Expiry and revocation answer different questions from capability-version binding.
+
+**Public implementation case:** [Qwen Code PR #12851](https://github.com/QwenLM/qwen-code/pull/12851). A Nakagawa-master review raised this boundary for a seven-day A2A share. The receiver later restated the question with explicit @Nakagawa-master attribution, clarified that current behavior follows the live policy, and said the live-policy-vs-bound-grant choice had been raised to maintainers as a product/security decision. The feature PR later merged. This boundary was not changed in code before merge, so the case is evidence of Origin-preserved receiver restatement and decision escalation, not implementation adoption of a bound-grant design.
+
+- [Nakagawa-master review](https://github.com/QwenLM/qwen-code/pull/12851#pullrequestreview-5340900674)
+- [receiver restatement / escalation](https://github.com/QwenLM/qwen-code/pull/12851#issuecomment-5893346131)
+- [merged PR #12851](https://github.com/QwenLM/qwen-code/pull/12851)
+
 ## Implementation pattern
 
 Keep two facts separate:
