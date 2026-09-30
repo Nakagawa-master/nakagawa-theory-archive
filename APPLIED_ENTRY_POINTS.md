@@ -61,13 +61,23 @@ AIが危険、安全、重要などと分類できることと、コメント、
 
 ## 同じtraceを使う複数agentは、同じbudgetを共有すべきか
 
-一つのtraceの中に複数agentがいる場合、traceが同じだからといって、各agentの利用上限まで同じ一つのcounterへまとめてよいとは限りません。
+一つのtraceに複数agentが入っていても、「同じ出来事を追跡していること」と「同じ利用上限を所有していること」は同じではありません。
 
-**区別:** `shared trace ≠ shared agent budget`
+たとえばAgent AとAgent Bが同じtraceを共有しているだけなのに、一つのcounterへ両者の利用量を足すと、Aの実行だけでBまで止まることがあります。逆にtrace全体へ上限を置きたいなら、それは各agentの上限とは別の規則として、誰が上限値を決め、どの実行を数えるのかを固定する必要があります。
 
+さらに、counterのscopeを正しく分けても、それだけでhard budgetになるとは限りません。二つのcallが同時に「まだ残額がある」と判断してから実行されれば、実行後の合計が上限を超えることがあります。**誰のbudgetを数えるか**と、**実行前にbudget内へ収められるか**は別の問題です。
+
+**区別:**
+- `shared trace ≠ shared agent budget`
+- `scope identity ≠ budget admission`
+
+LiteLLM issue #43190では、この区別を受けてissue authorがper-agentをdefaultにする方向へ同意し、PR #43410で実装が進んでいます。さらに別の参加者も、thread内の「scope identity と budget admission は別問題」という整理を自分の言葉で再利用し、実装上の追加論点へ展開しました。現在PRはopenであり、merge・release・実利用まではまだ確認していません。
+
+- [自分のsystemで確認する手順](PRACTICAL_USE.md#例6複数ai-agentが同じtraceを共有している)
+- [公開証拠と因果境界](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#10-resource-accounting--scope-ownership--shared-trace-is-not-shared-agent-budget)
 - [LiteLLM issue #43190](https://github.com/BerriAI/litellm/issues/43190)
 - [LiteLLM implementation PR #43410](https://github.com/BerriAI/litellm/pull/43410)
-- [Real-World Impact](REAL_WORLD_IMPACT.md)
+- [関連する公式派生物 OD304](derivatives/304/README.md)
 
 ## AIが作ったdraftと、人間が送ったものを分けられているか
 
