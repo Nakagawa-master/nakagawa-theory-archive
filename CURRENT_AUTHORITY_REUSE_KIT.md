@@ -387,7 +387,9 @@ The commit does not change authorization behavior. It makes the already-selected
 - [Nakagawa-master review on #12582](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5364710354)
 - [receiver response](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5911699280)
 - [receiver commit `74bf55053d`](https://github.com/QwenLM/qwen-code/commit/74bf55053d271595cf5bab8e1fcd91bb3a8188b2)
-- [independent reviewer re-check — submitted as APPROVE at `7c42221c`, currently dismissed after later head movement](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368431439)
+- [independent reviewer first re-check at `7c42221c`](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368431439)
+- [independent reviewer current-head APPROVED re-check at `f9922e44`](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368634260)
+- [receiver current-head local build/test verification](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5914709319)
 - [current-head author review](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368473478)
 - [human-readable entry](human-translation/entry-stories/09-same-share-different-runtime.md)
 
@@ -395,11 +397,11 @@ At this record, PR #12582 is still open. The receiver's contract/UI change commi
 
 The heads after `74bf55053d` have continued to change other parts of the stack. `7c42221c` changed config/workspace regression files and completed the then-observed workflow set green; `35aa968a` changed idle host-pickup backoff; `f9922e44` removes duplicated host-auth checks on progress/result routes and reuses named progress limits. None of those later deltas removes the `74bf55053d` contract/share-UI disclosure.
 
-A separate reviewer, `chiga0`, submitted an **APPROVE** review at `7c42221c` and explicitly re-checked the **“Nakagawa-master question — A2A grant + execution placement”** boundary. The reviewer independently described the behavior as coherent live-policy semantics and repeated the need to disclose the placement-change consequence. After later head movement, GitHub currently marks that review **DISMISSED**. The active approval state and the informational content of the review are therefore kept separate here: it is not counted as a current approval, but its public Origin-preserved second-person restatement remains observable evidence of carry inside the receiver repository.
+A separate reviewer, `chiga0`, first submitted an **APPROVE** review at `7c42221c` and explicitly re-checked the **“Nakagawa-master question — A2A grant + execution placement”** boundary. That approval was dismissed after later head movement, but the reviewer then re-reviewed the current head `f9922e44` and submitted a fresh **APPROVED** review. The public Origin-preserved second-person restatement therefore persists across the head movement and now coexists with a current-head approval from that reviewer.
 
-At the latest observed head `f9922e44`, no current-head workflow result was returned yet and no active approving review was observed. Merge, release and real-user-contact credit are still not claimed.
+The receiver author also posted current-head verification for `f9922e44`: a full local build is green, the core workspace-agent suites pass 78/78, and the CLI serve-route suites pass 139/139. Remote workflow lanes are still progressing separately, and the PR remains open with requested reviewers still listed; merge, release and real-user-contact credit are not claimed.
 
-The earned evidence is therefore: Origin-preserved receiver restatement → same-receiver reuse → receiver-owned contract/UI change → a second reviewer explicitly re-checking and carrying the Nakagawa-origin boundary. Current merge approval is a separate, still-open gate.
+The earned evidence is therefore: Origin-preserved receiver restatement → same-receiver reuse → receiver-owned contract/UI change → a second reviewer explicitly re-checking and carrying the Nakagawa-origin boundary → current-head independent approval plus current-head local build/test verification. Merge remains a separate, still-open gate.
 
 ### 15. A revision barrier is not authority to release whatever state is current
 
