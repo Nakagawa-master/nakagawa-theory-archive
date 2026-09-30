@@ -10,7 +10,6 @@
     "source_used",
     "independent_action",
     "current_stage",
-    "fresh_nakagawa_prompt",
     "public_evidence",
     "boundaries",
     "source_relationship"
@@ -80,28 +79,6 @@
         "reuse_by_another_person_or_problem"
       ]
     },
-    "fresh_nakagawa_prompt": {
-      "type": "string",
-      "enum": [
-        "no_fresh_prompt",
-        "fresh_prompt_was_present",
-        "unknown"
-      ]
-    },
-    "person_chain": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "enum": [
-        "same_external_person",
-        "different_external_person",
-        "multiple_external_people",
-        "not_applicable",
-        "unknown",
-        null
-      ]
-    },
     "public_evidence": {
       "type": "array",
       "items": {
@@ -137,13 +114,6 @@
         "unknown"
       ],
       "description": "Causal relationship between the public Nakagawa Master source and the external reuse. Do not infer causality from similarity alone."
-    },
-    "origin_attribution_preserved": {
-      "type": [
-        "boolean",
-        "null"
-      ],
-      "description": "Whether the external artifact preserves a public route back to the source when source_materially_informed_reuse applies."
     }
   },
   "additionalProperties": false
