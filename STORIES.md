@@ -55,6 +55,9 @@ AI、仕事、組織、情報、制度、未来。
 **共有はまだ有効。でも、そのAIが別の場所で動くようになっていたら？**  
 → [「共有が有効」と「共有の意味が同じ」を分ける話](human-translation/entry-stories/09-same-share-different-runtime.md)
 
+**改訂を始めたのは正しい。でも終了時に残っているのが別の版だったら？**  
+→ [「改訂を始める権限」と「現在stateを確定する権限」を分ける話](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)
+
 ---
 
 ## 考えているだけなのか、実際に外でも使われたのか
@@ -139,13 +142,19 @@ AI、仕事、組織、情報、制度、未来。
 
 → [「共有が有効」と「共有の意味が同じ」を分ける話](human-translation/entry-stories/09-same-share-different-runtime.md)
 
+### 10｜改訂を始めた。でも最後のstateが別の版だった
+
+開始時の権限や承認が正しくても、その後に別のstateへ変わっていたら、終了操作まで自動で正当化されるとは限りません。
+
+→ [「改訂開始」と「現在stateの確定」を分ける話](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)
+
 ---
 
-## 9つの話に共通していること
+## 10の話に共通していること
 
 題材は違います。
 
-決済、AI、組織、ニュース、承認、専門家、計測、共有。  
+決済、AI、組織、ニュース、承認、専門家、計測、共有、改訂。  
 でも、どれも「目の前の結果だけを見て終わらない」という点でつながっています。
 
 何が起きたのか。  
