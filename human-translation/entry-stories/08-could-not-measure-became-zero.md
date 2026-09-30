@@ -97,7 +97,7 @@ MemberJunctionの公開PR #4402では、AI利用コストのbudget evaluatorに�
 
 という場合に、`LastObservedAmount = 0` として成功扱いになる経路が指摘されました。
 
-receiver側のmaintainerは両方の問題を確認し、branch上のcommit `b11b9877` で、
+MemberJunctionの開発側は両方の問題を確認し、開発ブランチのcommit `b11b9877` で、
 
 - 測れない状態は失敗として扱う
 - 最後に正しく測れた値を、人工的な0で上書きしない
@@ -107,18 +107,18 @@ receiver側のmaintainerは両方の問題を確認し、branch上のcommit `b11
 
 という修正を入れました。
 
-さらに後のコメントでは、同じmaintainerが別のreviewerへ、`@Nakagawa-master` を明示しながら、このfail-open経路が修正された範囲を説明しています。
+さらに後のコメントでは、同じ開発側の人物が別のreviewerへ、`@Nakagawa-master` を明示しながら、「測れないのに成功扱いになる」経路が修正された範囲を説明しています。
 
 公開記録:
 - [Nakagawa-master review](https://github.com/MemberJunction/MJ/pull/4402#issuecomment-5689277409)
-- [receiverによる検証と修正報告](https://github.com/MemberJunction/MJ/pull/4402#issuecomment-5689338217)
-- [receiver fix commit `b11b9877`](https://github.com/MemberJunction/MJ/commit/b11b98777582ce5a8456834eccf77f528236474e)
-- [後のreceiver-side再説明](https://github.com/MemberJunction/MJ/pull/4402#issuecomment-5770391210)
+- [開発側による検証と修正報告](https://github.com/MemberJunction/MJ/pull/4402#issuecomment-5689338217)
+- [修正commit `b11b9877`](https://github.com/MemberJunction/MJ/commit/b11b98777582ce5a8456834eccf77f528236474e)
+- [後の開発側による再説明](https://github.com/MemberJunction/MJ/pull/4402#issuecomment-5770391210)
 
 ただし、ここには大事な境界があります。
 
 このbudget機能はその後、PR #4402本体から別のfollow-upへ切り出されました。  
-[commit `457d956e`](https://github.com/MemberJunction/MJ/commit/457d956eca1853ce9b64700b92f4f6e729149508) でbudget subsystem自体が外されているため、上の記録から言えるのは **branch上で修正と回帰テストが行われ、後にreceiver側がOrigin付きで内容を再説明した** ところまでです。
+[commit `457d956e`](https://github.com/MemberJunction/MJ/commit/457d956eca1853ce9b64700b92f4f6e729149508) でbudget subsystem自体が外されているため、上の記録から言えるのは **開発ブランチ上で修正と回帰テストが行われ、後に開発側がOrigin付きで内容を再説明した** ところまでです。
 
 最終merge版でこのbudget fixが出荷された、利用者へ届いた、という証拠にはしていません。
 
