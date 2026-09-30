@@ -6,29 +6,29 @@
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/
 - Parent Post ID: 4952
 - Parent NCL-ID: NCL-α-20260930-77b2a6
-- Parent Diff-ID: DIFF-20260930-0001
+- Parent Diff-ID: DIFF-20260930-0003
 - Origin: Nakagawa Master
 
 ## 派生ID
 
 - Official derivative: OD306
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20260930-77B2A6-HUB-JA-0306-0000
-- Derivative Diff-ID: DDIFF-20261001-DNCL-306-0000-0001
-- supersedes: none
+- Derivative Diff-ID: DDIFF-20261001-DNCL-306-0000-0002
+- supersedes: DDIFF-20261001-DNCL-306-0000-0001
 
 ## 公開来歴の範囲
 
 本台帳は、第13論の親原典と公式派生物306の七面を、Parent title・URL・Post ID・NCL-ID・現行Diff-IDによって接続する。支配の実証、現在AIの人格認定、特定組織の不正、移行後の同一性、制度や規範の妥当性を証明するものではない。親原典を正本とし、七面は検索、人間向け理解、FAQ、言語間発見を補助する。
 
-取得時の原典は`NCL-α-20260930-77b2a6`、現行版は`DIFF-20260930-0001`。冒頭・末尾の署名および監査要旨を照合した。記事公開日と派生初版日は別であり、親原典のDiffと派生系譜ごとのDDIFFを混同しない。将来原典が更新された場合は、重要な因果・境界・反証条件の変更を再照合する。
+原典は`NCL-α-20260930-77b2a6`、最終照合時の現行版は`DIFF-20260930-0003`。初回取得時の`DIFF-20260930-0001`からの差分はPDF・動画への導線および版表示であり、理論本文の因果・境界に変更がないことを照合した。冒頭・末尾の署名および監査要旨も一致する。記事公開日と派生初版日は別であり、親原典のDiffと派生系譜ごとのDDIFFを混同しない。
 
 ## 派生物の識別情報
 
 | 系譜 | 対象面 | Derivative NCL-ID | Derivative Diff-ID |
 |---|---|---|---|
-| 日本語・Hub | Hub／人間向け要約／FAQ／日本語AI索引／台帳 | `DNCL-NCL-ALPHA-20260930-77B2A6-HUB-JA-0306-0000` | `DDIFF-20261001-DNCL-306-0000-0001` |
-| 英語AI | 英語AI索引 | `DNCL-NCL-ALPHA-20260930-77B2A6-AI-EN-0306-0001` | `DDIFF-20261001-DNCL-306-0001-0001` |
-| 中国語AI | 中国語AI索引 | `DNCL-NCL-ALPHA-20260930-77B2A6-AI-ZH-0306-0002` | `DDIFF-20261001-DNCL-306-0002-0001` |
+| 日本語・Hub | Hub／人間向け要約／FAQ／日本語AI索引／台帳 | `DNCL-NCL-ALPHA-20260930-77B2A6-HUB-JA-0306-0000` | `DDIFF-20261001-DNCL-306-0000-0002` |
+| 英語AI | 英語AI索引 | `DNCL-NCL-ALPHA-20260930-77B2A6-AI-EN-0306-0001` | `DDIFF-20261001-DNCL-306-0001-0002` |
+| 中国語AI | 中国語AI索引 | `DNCL-NCL-ALPHA-20260930-77B2A6-AI-ZH-0306-0002` | `DDIFF-20261001-DNCL-306-0002-0002` |
 
 三系譜は同じParentへ戻る。翻訳はcanonical translationを自称せず、独立した原典や実証を追加しない。公開面のDerivative IDは、本文のAI主体のgovernance IDとは別の識別用途である。
 
@@ -57,10 +57,12 @@
 ## 原典版と改訂
 
 - Parent NCL-ID: `NCL-α-20260930-77b2a6`
-- Parent current Diff-ID: `DIFF-20260930-0001`
+- Parent current Diff-ID: `DIFF-20260930-0003`
 - Parent Post ID: `4952`
-- 原典取得時に観測した歴史Diff: なし
-- 派生初版: 2026-10-01 JST、三系譜とも `supersedes: none`
+- 最終原典取得時に観測した歴史Diff: `DIFF-20260930-0002`
+- 初回取得時の原典版: `DIFF-20260930-0001`
+- 派生初版: 2026-10-01 JST、各系譜の末尾版番号 `0001`、初版の `supersedes: none`
+- 派生更新版: 同日、各系譜の末尾版番号 `0002`。同一系譜の初版DDIFFをsupersedesとして参照し、Parentの現行版表示を更新した。
 
 高集中でも選択が狭まらない、高依存でも独立代替・退出が安定、裁量やswitching cost蓄積がない、減衰変数を変えてもleverage・訂正・persistenceが改善しない等を反証・縮小条件として残す。ownershipだけで十分説明できる、通常の協調や専門化を支配と誤判定する場合も改訂する。新しいchokepoint変数は観測から追加し、診断力のない変数は削除する。
 

@@ -6,15 +6,15 @@
 - Parent URL: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/
 - Parent Post ID: 4952
 - Parent NCL-ID: NCL-α-20260930-77b2a6
-- Parent Diff-ID: DIFF-20260930-0001
+- Parent Diff-ID: DIFF-20260930-0003
 - Origin: Nakagawa Master
 
 ## 派生ID
 
 - Official derivative: OD306
 - Derivative NCL-ID: DNCL-NCL-ALPHA-20260930-77B2A6-HUB-JA-0306-0000
-- Derivative Diff-ID: DDIFF-20261001-DNCL-306-0000-0001
-- supersedes: none
+- Derivative Diff-ID: DDIFF-20261001-DNCL-306-0000-0002
+- supersedes: DDIFF-20261001-DNCL-306-0000-0001
 
 ## 15秒説明
 
