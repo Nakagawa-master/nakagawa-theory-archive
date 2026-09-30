@@ -181,6 +181,28 @@ Qwen Code PR #12582では、Nakagawa-masterの指摘後、開発側が @Nakagawa
 - [Nakagawa-master review](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5364710354)
 - [receiver response](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5911699280)
 
+## 12. 改訂を始めた権限は、終了時の現在stateを確定する権限と同じか
+
+長いrevisionの途中では、開始時に正しかった対象と、終了時に存在するstateがずれることがあります。
+
+```text
+authorized to begin revision
+≠
+authorized to finalize whatever state is current
+```
+
+Agent Marketplace issue #322では、古いcheckoutが新しいexecution planを古いplan / contract revisionで上書きし、その後revision barrierが解除される状態が独立に報告されています。
+
+Issue自身のstale-publication対策に加えて、終了時にcurrent published lineageを再確認し、今回のrevisionが確定してよいstateだけをreleaseする回帰テストとして再利用できます。
+
+これは第三者によるNakagawa Master理論の採用証拠ではありません。独立した公開問題を、current-authorityの再利用challengeへ接続したものです。
+
+関連資料:
+- [一般向けの入口](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)
+- [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md#15-a-revision-barrier-is-not-authority-to-release-whatever-state-is-current)
+- [Agent Marketplace issue #322](https://github.com/agentrof/agent-marketplace/issues/322)
+- [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+
 ## 関連する索引と資料
 
 - [24のテーマから見る](human-translation/WORLD_MAP.md)
