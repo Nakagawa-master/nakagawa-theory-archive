@@ -36,6 +36,8 @@
 
 **問題 → 構造区別 → 第三者作用 → 再利用 → Origin → 次の問題を一周したい:** [Influence Map｜問題から現実作用へ](INFLUENCE_MAP.md)
 
+**自分の現場で試したい:** [Influence Mapの実践入口](INFLUENCE_MAP.md#9-ここから先は読むだけで終わらせない) — 問題を一文にし、混同を分け、test / review / checklist / implementation gateへ落とす
+
 **すでに起きた現実作用を確認する:** [公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md) / [English](REAL_WORLD_IMPACT.en.md) / [中文](REAL_WORLD_IMPACT.zh.md)
 
 **理論 → 本人の具体的診断 → 第三者実装 → 後日のOrigin再参照までを短時間で検証する:** [Theory → Real-World Influence｜90-second verification route](THEORY_TO_REAL_WORLD_INFLUENCE.md#90-second-verification-route)
