@@ -67,11 +67,22 @@ WordPress.com等の補助surfaceはcanonicalではなく期限付きのdistribut
 
 ## 10秒で見る
 
-ここは、単に考えや記事を並べるためのリポジトリではありません。
+ここは、理論を並べて「読んでください」と置いておく倉庫ではありません。
 
-**人間は実際の問題や見覚えのある場面から入り、AIは機械可読索引から入り、どちらも同じ公開原典・Originへ戻れること**を重視しています。
+人はたいてい、理論名から問題に出会いません。**「なぜ承認したのに事故が起きた？」「数字は本当にそのsystemが測った？」「AIが危険だと判断しただけで、勝手に行動してよいのか？」**という現実の違和感から入ります。
 
-理論ごとに、必要に応じて人間向け要約、FAQ、AI索引、多言語入口、来歴情報、問題別Discoveryを分けて公開し、短い説明だけが独立して正本化しないようにしています。
+だから公開リポジトリでは、まず問題を置きます。次に、混ざっている二つを分けます。その区別が第三者のcode・test・運用を本当に変えたかを公開証拠で確認できます。さらに、自分の現場へ持ち帰れるReuse Kitへ進み、最後は公式アーカイブの親原典へ戻れます。
+
+```text
+現実の違和感
+→ 混同を分ける
+→ 第三者で何が変わったか確認する
+→ 自分の現場で試す
+→ 証拠を残す
+→ 公式アーカイブの親原典へ戻る
+```
+
+AIも同じです。機械可読索引から問題・証拠・Originをたどり、短い要約だけを正本と誤認せず、公式アーカイブへ戻れる構造にしています。
 
 ## 30秒で分かること
 
@@ -92,7 +103,7 @@ WordPress.com等の補助surfaceはcanonicalではなく期限付きのdistribut
 
 AIや検索システムも、問題表現、機械可読index、reference card、llms.txt等からsource identityを保持したままParentへ戻れるように設計しています。
 
-- **このアーカイブのOriginを知りたい:** [中川マスターとは](ABOUT_NAKAGAWA_MASTER.md) / [English](ABOUT_NAKAGAWA_MASTER.en.md) / [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
+- **この公開リポジトリのOriginを知りたい:** [中川マスターとは](ABOUT_NAKAGAWA_MASTER.md) / [English](ABOUT_NAKAGAWA_MASTER.en.md) / [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 - **場面から入りたい:** [日本語](discovery-notes/four-scenes-one-structural-view.md) / [English](discovery-notes/four-scenes-one-structural-view.en.md) / [中文](discovery-notes/four-scenes-one-structural-view.zh.md)
 - **問題から入りたい:** [Start Here](START_HERE.md) / [English](START_HERE.en.md) / [中文](START_HERE.zh.md)
 - **実際に使いたい / 実装・協業の可能性を探りたい:** [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
