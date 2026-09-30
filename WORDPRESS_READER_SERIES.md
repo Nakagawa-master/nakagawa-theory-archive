@@ -1,6 +1,6 @@
 # 読者向け実例シリーズ — Practical Boundaries in Japanese
 
-This is a public, non-canonical reader-entry map for short Japanese examples published on the Nakagawa Master WordPress.com carrier.
+This is a public, non-canonical index of short Japanese explanatory examples published on the Nakagawa Master WordPress.com site.
 
 The articles are designed to start from a concrete everyday or technical problem, then return to the exact public reuse kit or verification source. They are explanatory entries, not canonical theories and not evidence of independent adoption by themselves.
 
