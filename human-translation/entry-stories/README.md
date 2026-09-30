@@ -68,6 +68,12 @@
 
 → [同じ共有のまま。でも、使われる場所が変わっていたら？](09-same-share-different-runtime.md)
 
+## 10｜改訂を始めた。でも最後に残っているのは別の版かもしれない
+
+改訂を正しく始めた記録があっても、終了時点のstateが今回の改訂と同じlineageとは限りません。
+
+→ [改訂を始めた。では、最後に確定したのは本当にその改訂版？](10-started-revision-does-not-authorize-current-state.md)
+
 ---
 
 ## 横に読むと、同じ形が見えてくる
