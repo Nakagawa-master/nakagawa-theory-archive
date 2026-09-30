@@ -182,6 +182,27 @@
         "a candidate source is shown to be only superficially similar after claim-level comparison",
         "a proposed comparison is rejected because the units, scope, or causal structure are not actually comparable"
       ]
+    },
+    {
+      "id": "K-revision-finalization-current-authority",
+      "distinction": "authority to begin or revise before != authority to finalize whatever state is current now",
+      "reproduction_kit": "CURRENT_AUTHORITY_REUSE_KIT.md",
+      "reference_card": "machine-discovery/approval-history-current-authority-reference-card.json",
+      "external_problem_example": "https://github.com/agentrof/agent-marketplace/issues/322",
+      "test": "Find a non-confidential revision, approval, release, publication, migration, or change-window workflow with an explicit begin/barrier/lease epoch and a later finish/close/release action. Change the published or target state after the begin authority is granted but before finalization, then test whether finish revalidates the current state and lineage or merely trusts the historical begin receipt.",
+      "positive_evidence": [
+        "finish or release re-reads the current barrier/lease and current published or target state",
+        "the approved candidate and resulting publication are bound to the same revision epoch or equivalent lineage identity",
+        "an out-of-band or stale state change causes finalization to refuse while preserving the barrier",
+        "the refusal does not silently bless the unexpected current state",
+        "the error distinguishes a superseded publication/lineage from ordinary caller checkout staleness"
+      ],
+      "useful_negative_evidence": [
+        "proof that no other path can move the relevant state while the revision authority is live and that this invariant is mechanically enforced",
+        "proof that finalization is transactionally inseparable from publication so no separate consequence-time revalidation can add information",
+        "counterexample showing that the proposed lineage check rejects a valid workflow without reducing a real stale-state risk"
+      ],
+      "evidence_boundary": "The linked external issue is a problem surface used to derive this portable test. It is not evidence that the external repository adopted or implemented the Nakagawa-derived regression."
     }
   ],
   "evidence_boundary": [
