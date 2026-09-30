@@ -1111,3 +1111,50 @@ issue authorはその後、per-agentをdefaultにする方向へ同意し、PR #
 → [自分のAI agent設計で確認する](PRACTICAL_USE.md#例6複数ai-agentが同じtraceを共有している)  
 → [Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#10-resource-accounting--scope-ownership--shared-trace-is-not-shared-agent-budget)  
 → [関連する公式派生物 OD304](derivatives/304/README.md)
+
+
+---
+
+## 33. Qwen Code｜既発行shareと後から変わるagent policyを分ける
+
+**対象:** [QwenLM/qwen-code PR #12851](https://github.com/QwenLM/qwen-code/pull/12851)  
+**現在状態:** Nakagawa-master review → receiverがOrigin付きで論点を再説明 → product/security decisionとしてmaintainersへエスカレーション → PR #12851は2026-09-30にmerge / 当該policy-versioning論点のcode変更は未採用
+
+PR #12851は、workspace agentを外部clientへ共有するA2A accessとshare flowを追加しました。shareは期限とrevocationを持ちます。
+
+Nakagawa-masterは、shareがまだ有効でも、**share発行後に同じagentの実際のtool policyが広がった場合、古いshareが何をauthorizeするのか**は別問題だと指摘しました。
+
+```text
+narrow policy A
+→ multi-day shareを発行
+→ 同じagentをbroader policy Bへ変更
+→ 古いshareを使用
+→ Bの能力まで使えるのか？
+```
+
+- [Nakagawa-master review](https://github.com/QwenLM/qwen-code/pull/12851#pullrequestreview-5340900674)
+
+reviewは、利用時点のcurrent policyに従う **live-policy** と、発行時のmaterialなpolicy/versionへ結びつける **bound-grant** を分けました。どちらを選ぶかを外から決めつけるのではなく、silent expansionを避けてproductが契約を明示的に選ぶべきだとしました。
+
+receiver `yiliang114` はその後、closeout commentで **`@Nakagawa-master, what an issued share authorizes`** と論点を再説明しました。そして、
+
+- この論点についてcodeはまだ変えていない
+- live-policyかissue-time-bound grantかはproduct/security decision
+- maintainersへ上げた
+- current behaviorはlive-policyで、authorizationはagentのcurrent definitionを読む
+
+と記録しました。
+
+- [receiver restatement / escalation](https://github.com/QwenLM/qwen-code/pull/12851#issuecomment-5893346131)
+
+PRは別maintainer approvalsを受け、2026-09-30T08:17:36Zにmergeされました。merge commitは `356262d8e939d2b016ec35f366b237e04bd931d6` です。
+
+- [merged PR #12851](https://github.com/QwenLM/qwen-code/pull/12851)
+
+このcaseでは、マスターの論点そのものがcodeへ実装されたとは数えません。mergeされたのはA2A sharing機能であり、policy-versioning contractはcurrent live-policyのままです。
+
+**公開記録から確認できること:** Nakagawa-masterが具体的なauthority-versioning境界を提示 → receiverが@Nakagawa-masterを明示して自分の言葉で再説明 → product/security decisionとしてmaintainersへ移管 → feature PR自体はmerge。  
+**まだ確認できないこと:** maintainersが新しいcontractを選んだこと、bound-grant実装、release、実利用者数、一般ユーザーがNakagawa-masterを認識したこと、広い人物Origin return。
+
+→ [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)  
+→ [Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#11-current-authority--capability-versioning--a-valid-share-does-not-define-what-later-policy-expansion-means)

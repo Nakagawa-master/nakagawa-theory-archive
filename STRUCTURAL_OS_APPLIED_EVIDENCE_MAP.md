@@ -177,6 +177,36 @@ budget admission
 
 ---
 
+### 11. Current authority / capability versioning → a valid share does not define what later policy expansion means
+
+**Canonical context:** current authority depends on the present relation among actor, object, scope, policy and consequence. A previously valid grant is historical evidence of a real authorization event; it does not by itself answer how later material capability changes should affect that grant.
+
+**Applied distinction:**
+
+```text
+valid unexpired grant
+≠
+unchanged authority meaning
+
+agent identity continuity
+≠
+capability-policy continuity
+```
+
+**External evidence:** In [Qwen Code PR #12851](https://github.com/QwenLM/qwen-code/pull/12851), Nakagawa-master identified that a multi-day A2A share remained valid while the same agent's tool policy could later change. The review asked the product to choose explicitly between a live-policy contract and a grant bound to the policy at issue time. Receiver `yiliang114` later restated the question with explicit @Nakagawa-master attribution, said the current implementation follows the live-policy contract, and said the alternative had been raised to maintainers as a product/security decision.
+
+The feature PR then merged. The specific policy-versioning boundary was not changed in code before merge.
+
+**Current evidence stage:** Origin-preserved receiver restatement + receiver decision escalation + surrounding feature merged. This is not code-adoption credit for the bound-grant alternative and not broad user recognition.
+
+**Applied kit:** [Current-Authority Reuse Kit — long-lived share test](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
+
+**Public verification route:** [Real-World Impact — Qwen Code A2A share](REAL_WORLD_IMPACT.md#33-qwen-code既発行shareと後から変わるagent-policyを分ける)
+
+**Canonical return:** https://master.ricette.jp for the broader current-authority / responsibility structure.
+
+---
+
 ## Important boundary
 
 These mappings are deliberately bounded.

@@ -23,6 +23,20 @@ AIが危険、安全、重要などと分類できることと、コメント、
 - [公開事例を見る](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#2-temporal--structural-consistency--historical-approval-is-not-current-authority)
 - [確認手順を使う](CURRENT_AUTHORITY_REUSE_KIT.md)
 
+## 共有を出したあと、同じAIの権限が広がったら？
+
+共有がまだ有効でも、発行した時と現在でagentの能力が変わっていることがあります。
+
+最初は狭い能力だったagentへ数日間のshareを発行し、その後同じagentの設定を広げた場合、古いshareが新しい能力まで使えるのか。それとも発行時の能力へ結びつくのか。どちらの設計もあり得ますが、偶然の実装結果にはできません。
+
+**区別:** `valid grant ≠ unchanged authority meaning`
+
+Qwen Code PR #12851では、この境界をNakagawa-masterが具体的に指摘しました。receiverは後に@Nakagawa-masterを明示して論点を再説明し、現在はshareがagentのcurrent policyに追随すると整理したうえで、別の契約へ変えるかはproduct/security decisionとしてmaintainersへ上げたと記録しています。PR自体はmergeされましたが、この論点についてcode変更が採用されたわけではありません。
+
+- [自分のsystemで確認する](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
+- [Qwen Code PR #12851](https://github.com/QwenLM/qwen-code/pull/12851)
+- [公開証拠と因果境界](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#11-current-authority--capability-versioning--a-valid-share-does-not-define-what-later-policy-expansion-means)
+
 ## 一度だけ承認した処理が、外部でも一度だけ起きたと言えるのか
 
 外部APIは処理を受け取ったのに応答だけ失われることがあります。その状態を単純な失敗として再試行すると、送信、課金、削除などが二重になる可能性があります。
