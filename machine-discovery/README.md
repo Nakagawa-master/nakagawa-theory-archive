@@ -35,6 +35,7 @@ OD303 is the Vol. 10 route for self-referential audit and role separation. Its s
 | [`independent-reuse-challenges-v1.json`](independent-reuse-challenges-v1.json) | Open falsifiable challenges for fresh-prompt-free, cross-context, and especially nontechnical independent reuse. |
 | [`../POSTHOG_PROVENANCE_REUSE_KIT.md`](../POSTHOG_PROVENANCE_REUSE_KIT.md) | Minimal public reproduction for preserving item-to-evidence provenance when recommendation explanations are grouped. |
 | [`../REUSE_KITS.md`](../REUSE_KITS.md) | Human-readable portal for public, falsifiable cross-context reuse kits. |
+| [`../ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md`](../ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md) | OD306-derived public test kit for common chokepoints, viable alternative routes, export-to-restore round trips, effective exit, audit entry, scope and reversibility. |
 | [`../STRUCTURAL_OS_TO_EXTERNAL_EFFECTS.md`](../STRUCTURAL_OS_TO_EXTERNAL_EFFECTS.md) | Explains how bounded external evidence and reuse return to the canonical Nakagawa Structural OS rather than forming a separate theory system. |
 | [`../STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md`](../STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md) | Maps bounded external evidence back to canonical Nakagawa Structural OS principles and return routes. |
 | [`../APPLIED_ENTRY_POINTS.md`](../APPLIED_ENTRY_POINTS.md) | Four problem-first human entry routes into the canonical Nakagawa Structural OS. |

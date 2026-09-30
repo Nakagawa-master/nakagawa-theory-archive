@@ -203,6 +203,29 @@
         "counterexample showing that the proposed lineage check rejects a valid workflow without reducing a real stale-state risk"
       ],
       "evidence_boundary": "The linked external issue is a problem surface used to derive this portable test. It is not evidence that the external repository adopted or implemented the Nakagawa-derived regression."
+    },
+    {
+      "id": "L-access-topology-effective-exit",
+      "distinction": "non-ownership != non-domination; nominal alternative != viable independent alternative; export available != effective exit proven",
+      "reproduction_kit": "ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md",
+      "official_derivative": "derivatives/306/README.md",
+      "external_problem_example": "https://github.com/freenet/freenet-core/issues/4381",
+      "test": "Choose a real non-confidential system that claims multiple providers/routes, self-hosting, portability, migration, or independent audit. Name one minimum required capability, map its load-bearing gates and common upstream dependencies, safely remove or simulate failure of the primary/common gate, verify which alternatives still complete the action, then run an export-to-independent-destination-to-import/restart round trip and record what state or function is lost.",
+      "positive_evidence": [
+        "an alternative continues the minimum required action without returning to the failed primary/common gate",
+        "load-bearing authentication, discovery, data, policy, restart, or migration dependencies are explicit rather than hidden behind provider count",
+        "exported state can be restored on an independent destination with the minimum required continuity preserved",
+        "partial portability is reported separately when export works but restore/continuity remains incomplete",
+        "objection/evidence can reach a reviewer through an access path not controlled solely by the disputed decision path",
+        "temporary concentration narrows or expires when the original condition disappears"
+      ],
+      "useful_negative_evidence": [
+        "proof that the claimed alternatives intentionally share a gate and no independence claim is made",
+        "counterexample showing a shared gate does not reduce the feasible action set under the exact tested failure",
+        "non-fit where export is archival only and operational exit is outside the product contract",
+        "evidence that the proposed independence requirement destroys a necessary invariant without improving practical contestability"
+      ],
+      "evidence_boundary": "The linked Freenet material is an independent public problem and implementation history used to exercise the test. It is not evidence that Freenet adopted this Nakagawa-derived kit. Merge/integration-test evidence is also distinct from verified real-user exit at scale."
     }
   ],
   "evidence_boundary": [

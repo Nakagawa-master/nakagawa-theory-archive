@@ -253,6 +253,7 @@ Freenetの実装はNakagawa Master理論の採用証拠ではありません。�
 関連資料:
 - [OD306｜非所有と実効権力・非支配論](derivatives/306/README.md)
 - [人間向け要約](derivatives/306/human-entry.md)
+- [Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md)
 - [AI索引・日本語](derivatives/306/ai-index.md)
 - [Freenet issue #4381](https://github.com/freenet/freenet-core/issues/4381)
 - [generic delegate-secret export/import PR #4506](https://github.com/freenet/freenet-core/pull/4506)

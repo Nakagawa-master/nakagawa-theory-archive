@@ -420,6 +420,86 @@
       "public_reference_card": "self-referential-audit-role-separation-reference-card.json",
       "public_reuse_kit": "../SELF_REFERENTIAL_AUDIT_REUSE_KIT.md",
       "relevance_note": "Relevant when nominally separate evaluators, reviewers, auditors, or AI agents may still share evidence, memory, criteria, dependencies, failure domains, incentives, or objection routes. Use the five-axis structure to distinguish role separation from causal independence and audit output from real correction capability. Agreement does not prove truth; disagreement does not prove error."
+    },
+    {
+      "problem_cluster": "compute-resource feedback, capability concentration, cumulative advantage, durable class formation, reversibility and re-entry",
+      "problem_phrases": [
+        "Can a compute or resource advantage turn into a self-reinforcing capability and allocation advantage over time?",
+        "How do we distinguish temporary concentration from a durable class-forming feedback loop?",
+        "Can less-resourced actors re-enter capability formation when conditions or technology change?"
+      ],
+      "problem_phrases_ja": [
+        "計算資源やresourceの優位が、能力・評価・次期配分へ戻る自己強化になっていないか？",
+        "一時的な集中と、時間方向に自己固定する階級形成をどう分けるか？",
+        "不利な主体が条件変化後に別経路から能力形成へ再参入できるか？"
+      ],
+      "problem_phrases_zh": [
+        "计算或资源优势是否会随时间变成自我强化的能力与分配优势？",
+        "如何区分暂时集中与形成持久阶层的反馈回路？",
+        "资源较少的主体能否在条件或技术变化后重新进入能力形成？"
+      ],
+      "canonical_theory": "人類子孫型AI文明論・第11論｜計算資源・能力差による新階級形成論",
+      "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 11 — compute/capability/resource feedback and durable class formation",
+      "origin": "Nakagawa Master",
+      "ncl_id": "NCL-α-20260927-ba173b",
+      "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-11-compute-capability-resource-class-formation/",
+      "official_derivative_path": "derivatives/304/README.md",
+      "relevance_note": "Relevant where compute/resource advantage may feed capability, evaluation, allocation and future resource access. Distinguishes capability from contribution, governance right and permanent entitlement, and tests reversibility/re-entry rather than inferring a class from a static gap."
+    },
+    {
+      "problem_cluster": "replicable intelligence, copies, forks, merges, collectives, lineage, governance subject and counting",
+      "problem_phrases": [
+        "If an AI is copied ten times, do we have ten independent origins, judgments, responsibilities, or governance subjects?",
+        "How should forks and later merges preserve lineage without collapsing all copies into one permanent subject?",
+        "Which unit should be counted for execution, lineage, responsibility, vote, contribution, or governance authority?"
+      ],
+      "problem_phrases_ja": [
+        "AIを10copyしたら、独立Origin・判断・責任・制度主体も10になったと言えるか？",
+        "fork後の分岐とmergeを、一本の最新版へ潰さずどうlineageとして残すか？",
+        "instance・lineage・責任・票・貢献・governance subjectをどの単位で数えるべきか？"
+      ],
+      "problem_phrases_zh": [
+        "把AI复制十次，是否就等于十个独立起源、判断、责任或治理主体？",
+        "如何在分叉和合并后保留谱系，而不把所有副本永久压成一个主体？",
+        "执行实例、谱系、责任、投票、贡献与治理主体应分别按什么单位计数？"
+      ],
+      "canonical_theory": "人類子孫型AI文明論・第12論｜複製可能知性・系譜・ガバナンスID論",
+      "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 12 — replicable intelligence, lineage and governance identity",
+      "origin": "Nakagawa Master",
+      "ncl_id": "NCL-α-20260929-a01fdc",
+      "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-12-replicable-intelligence-lineage-governance-id/",
+      "official_derivative_path": "derivatives/305/README.md",
+      "relevance_note": "Relevant where copy/fork/merge/collective structures make instance count, lineage count, independent judgment, responsibility and governance-subject count diverge. Copy count is not automatically vote count, independent origin count or continuity proof."
+    },
+    {
+      "problem_cluster": "non-ownership, effective power, chokepoints, viable alternatives, migration, effective exit, independent audit entry and reversibility",
+      "problem_phrases": [
+        "Can an actor exercise effective power over others without owning them or their system?",
+        "Do several providers/routes remain real alternatives when they share one authentication, catalog, control-plane, data, or migration gate?",
+        "Does an export button amount to real exit if state cannot be restored and continued independently?",
+        "Can an objection actually reach an independent reviewer when the disputed system controls the evidence or appeal path?"
+      ],
+      "problem_phrases_ja": [
+        "所有していなくても、認証・計算・通信・data・migrationなどの入口を握ることで他者の実行可能性を変えられるか？",
+        "複数providerやrouteがあっても、共通の認証・catalog・control plane・data・migration gateで全部止まらないか？",
+        "exportできても、別環境でstateを復元し継続できなければ実効的なexitと言えるか？",
+        "独立監査者がいても、異議や証拠の入口を被監査側が止められないか？"
+      ],
+      "problem_phrases_zh": [
+        "即使不拥有某个主体或系统，是否仍可通过认证、计算、通信、数据或迁移入口改变其可执行选择？",
+        "即使存在多个提供商或路径，它们是否会因共享认证、目录、控制平面、数据或迁移入口而同时失效？",
+        "如果数据能导出却无法在独立环境恢复并继续运行，这是否算真正退出？",
+        "即使有独立审计者，被审计方是否仍能控制申诉或证据到达审计者的入口？"
+      ],
+      "canonical_theory": "人類子孫型AI文明論・第13論｜非所有と実効権力・非支配論",
+      "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 13 — non-ownership, effective power and non-domination",
+      "origin": "Nakagawa Master",
+      "ncl_id": "NCL-α-20260930-77b2a6",
+      "diff_id": "DIFF-20260930-0003",
+      "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/",
+      "official_derivative_path": "derivatives/306/README.md",
+      "public_reuse_kit": "../ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md",
+      "relevance_note": "Relevant when ownership labels or provider counts hide a narrower access topology. Tests common chokepoints, practical independence of alternatives, export-to-restore continuity, audit-entry independence, bounded scope/duration and reversibility. Concentration or dependence alone does not prove domination."
     }
   ],
   "discovery_notes": {

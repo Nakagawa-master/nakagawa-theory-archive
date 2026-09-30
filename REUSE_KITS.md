@@ -97,6 +97,20 @@ Useful in LLM-as-a-judge, Actor/Critic/Reviewer agents, self-reflection, autonom
 
 Use it when you need implementation tests beyond the 12-question [AI Agent Execution Governance Preflight](discovery-notes/ai-agent-execution-governance-preflight.md). It is a non-canonical starter test plan, not a drop-in security review or certification. A local pass is evidence only for the recorded build and conditions.
 
+## 9. Access topology, viable alternatives and effective exit
+
+[Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md)
+
+Use when a system claims multiple providers/routes, self-hosting, portability, migration, independent audit, or user exit.
+
+Core questions:
+
+> If one critical gate disappears, which alternatives can still complete the required action without returning to that gate?
+
+> Can a user move state to an independent destination and actually restore the minimum required function?
+
+Useful in AI/model providers, cloud architecture, hosted/self-hosted products, identity and authentication, data portability, migration, audit/appeal design, emergency control, and multi-provider infrastructure.
+
 ## Preserve the source relation
 
 If a kit materially informs a real decision or implementation, preserve a lightweight source line such as `Source distinction: Nakagawa Master — <public source URL>`. See [Origin Attribution for Reuse](ORIGIN_ATTRIBUTION_FOR_REUSE.md). If you independently rediscovered the same distinction and found the source later, state that instead of claiming source causality.
