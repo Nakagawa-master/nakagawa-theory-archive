@@ -79,6 +79,31 @@
 
 → [AI Agent Execution Boundary Tests](AI_AGENT_EXECUTION_BOUNDARY_TESTS.md)
 
+## 例6：複数AI agentが同じtraceを共有している
+
+同じtraceにいることは、同じbudgetを所有していることと同じではありません。
+
+Agent AとAgent Bが一つのtraceを共有しているとします。Aの利用量をBのlocal limitにも足す実装なら、Bは自分では上限を使っていないのに止まります。そこでcounterをagent別に直しても、別の問題が残ります。二つのcallが同時に残額を確認してから実行されれば、どちらも単独では上限内でも、合計では上限を超えることがあります。
+
+確認すること:
+
+- local limitは `agent_id + session_id` など、そのlimitを所有するscopeで数えているか
+- trace全体の上限が必要なら、agent別limitと別の設定・counterになっているか
+- shared trace capの値を誰が決めるかが一つに定まっているか
+- local capを持たないagentの利用も、shared capでは必要に応じて数えられるか
+- 「max budget」をhard capとして扱うなら、実行後の加算だけでなく実行前のadmission / reservationが必要ではないか
+- successだけでなくfailure・cancel・partial usageでも、同じscopeへsettle / refundできるか
+- concurrent callsを使い、単独では通るが合計では残額を超えるcaseをtestしているか
+
+LiteLLM issue #43190では、Nakagawa-masterが **scope identity と budget admissionを分ける** 境界を提示しました。issue authorはper-agentをdefaultにする方向へ同意し、PR #43410で `agent_id + trace/session` を使う実装が進んでいます。別の参加者も後からこのthreadの区別を再説明し、自分の実装経験から別のbudget scopeやadmission上の論点を追加しました。
+
+ここで確認できるのは、区別がreceiverの設計判断・実装と、別参加者の再説明へ進んだことです。現在PRはopenなので、merge、release、本番利用まではまだ確認できません。
+
+→ [LiteLLM issue #43190](https://github.com/BerriAI/litellm/issues/43190)  
+→ [LiteLLM implementation PR #43410](https://github.com/BerriAI/litellm/pull/43410)  
+→ [Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#10-resource-accounting--scope-ownership--shared-trace-is-not-shared-agent-budget)  
+→ [公式派生物 OD304](derivatives/304/README.md)
+
 ## 問題から入口を選ぶ
 
 より多くの具体例は [Applied Entry Points](APPLIED_ENTRY_POINTS.md) にまとめています。
