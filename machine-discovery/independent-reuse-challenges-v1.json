@@ -203,6 +203,25 @@
         "counterexample showing that the proposed lineage check rejects a valid workflow without reducing a real stale-state risk"
       ],
       "evidence_boundary": "The linked external issue is a problem surface used to derive this portable test. It is not evidence that the external repository adopted or implemented the Nakagawa-derived regression."
+    },
+    {
+      "id": "K-revision-barrier-current-state",
+      "distinction": "authorized to begin a revision before != authorized to finalize whatever state is current now",
+      "reproduction_kit": "CURRENT_AUTHORITY_REUSE_KIT.md#15-a-revision-barrier-is-not-authority-to-release-whatever-state-is-current",
+      "external_problem_surface": "https://github.com/agentrof/agent-marketplace/issues/322",
+      "test": "Find a real non-confidential revision, migration, approval, deployment, plan-publication, or barrier lifecycle. Begin revision epoch E, bind or approve candidate V2, change the current published or target state through another path, then attempt to finish or release E. Test whether the system revalidates that the state being finalized is still the state E is authorized to complete.",
+      "positive_evidence": [
+        "finish or release re-reads the current barrier epoch and current target state",
+        "candidate, approval, publication, or target lineage is bound to the revision epoch",
+        "a stale or unrelated current state cannot be legitimized merely by closing an older valid revision",
+        "refusal keeps the barrier or protective state active and produces no unauthorized release side effect"
+      ],
+      "useful_negative_evidence": [
+        "proof that no other path can mutate the finalized target between begin and finish under the exact system contract",
+        "counterexample showing that epoch-to-state lineage adds no protection because the finalizer already holds an equivalent immutable transaction or capability",
+        "non-fit showing the lifecycle has no distinct begin and consequence-time authority boundary"
+      ],
+      "evidence_boundary": "The linked external issue is an independent problem surface, not evidence that this Nakagawa-derived release-boundary regression was adopted there."
     }
   ],
   "evidence_boundary": [
