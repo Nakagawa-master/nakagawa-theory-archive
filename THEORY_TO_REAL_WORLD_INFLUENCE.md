@@ -35,7 +35,7 @@ That is the causal bridge between theory and influence.
 
 ## 90-second verification route
 
-If you only have a minute or two, do not start by asking whether the archive's self-description sounds persuasive. Check three different kinds of receiver behavior.
+If you only have a minute or two, do not start by asking whether the archive's self-description sounds persuasive. Check four different kinds of receiver behavior.
 
 ### A. Did an external receiver actually change implementation?
 
@@ -83,9 +83,25 @@ Primary records:
 
 This matters because a credible evidence page should not count only successful adoption. Independent disagreement with preserved Origin is evidence of processing; it is not implementation credit.
 
-### What these three checks do — and do not — show
+### D. Can the same Origin-boundary survive a second person's independent re-check?
 
-Together they let a reader independently inspect three different claims:
+In **Qwen Code #12582**, Nakagawa-master raised a new current-authority boundary after execution placement became mutable: an already-issued multi-day share can remain valid even after the same agent moves from local execution to a managed runtime.
+
+The PR author replied **“@Nakagawa-master Good catch”** and changed the frozen contract plus the English and Chinese share UI so the live-policy consequence is explicit.
+
+A different reviewer, **chiga0**, then independently re-read the relevant execution and lease paths and explicitly included a section titled **“Nakagawa-master question — A2A grant + execution placement.”** The reviewer reconstructed the same live-policy consequence and said the placement-change surface should be disclosed explicitly.
+
+Primary records:
+- [Nakagawa-master review](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5364710354)
+- [PR-author response and receiver change](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5911699280)
+- [Second-reviewer re-check](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368431439)
+- [Qwen Code #12582](https://github.com/QwenLM/qwen-code/pull/12582)
+
+The second review was submitted as an approval at head `7c42221c` and was later dismissed when the PR head moved. It is therefore **not** current approval or merge credit. What remains inspectable is the narrower fact: a second person inside the receiving repository independently reconstructed the Nakagawa-origin boundary and carried the source relation forward.
+
+### What these four checks do — and do not — show
+
+Together they let a reader independently inspect four different claims:
 
 ```text
 implementation effect exists
@@ -93,6 +109,8 @@ implementation effect exists
 later receiving-project Origin rereference exists
 +
 Origin can survive disagreement rather than only praise
++
+the same Origin-boundary can be independently reconstructed by a second person
 ```
 
 They still do **not** establish broad public recognition, broad audience scale, endorsement of the whole theory corpus, or that every similar engineering idea originated here.
