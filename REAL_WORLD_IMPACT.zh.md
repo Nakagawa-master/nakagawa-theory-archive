@@ -726,10 +726,10 @@ PR #131于2026-09-25T08:42:13Z merge，把这一区分写入repository持续使�
 - 无法到达的system card，并明确标记为未读；
 - 设置不一致、不能直接比较的benchmark数据。
 
-这比draft层的reuse更强：merge后的规则已经在receiver-owned、reader-facing公开面中反复运作。
+这比draft层的reuse更强：merge后的规则已经在接收方项目、reader-facing公开面中反复运作。
 
 **公开可确认：** 保留Origin的提案 → receiver明确采用并说明因果关系 → 持久规则merge → 后续main/feed/sitemap公开文章继续实际运用evidence-lineage区分。  
-**尚未确认：** 误报率的量化改善、reader/audience规模、其他receiver的独立reuse、该后续文章中的person-Origin再引用，或对整个理论体系的认可。
+**尚未确认：** 误报率的量化改善、reader/audience规模、其他receiver的独立reuse、该后续文章中的对Nakagawa-master的明确来源引用再引用，或对整个理论体系的认可。
 
 ---
 
@@ -950,7 +950,7 @@ PR作者明确回复 **“Thanks for catching the serialized-content gap.”**�
 ## 31. Qwen Code｜把 `maxCostUsd` 的forecast与hard bound分开，并出现无新提示的Nakagawa-origin再引用
 
 **对象：** [QwenLM/qwen-code#12707](https://github.com/QwenLM/qwen-code/issues/12707) → [PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)  
-**当前状态：** receiver-owned后续PR在正文中自发再次引用Nakagawa-master → code / tests / docs实现 → 非作者maintainer approval → 2026-09-28已merge → 2026-09-29进入stable Qwen Code v0.24.7 / 真实运营使用与用户规模尚未确认
+**当前状态：** 接收方项目后续PR在正文中自发再次引用Nakagawa-master → code / tests / docs实现 → 非作者maintainer approval → 2026-09-28已merge → 2026-09-29进入stable Qwen Code v0.24.7 / 真实运营使用与用户规模尚未确认
 
 在#12707中，`Nakagawa-master` 指出：`maxCostUsd` 的hard gate使用了同一个rough forecast，而该forecast明确不包含thinking token，因此下面这个契约实际上并不成立：
 
@@ -970,12 +970,12 @@ PR作者明确回复 **“Thanks for catching the serialized-content gap.”**�
 
 PR使用实际要发送的request body里的output cap与thinking bound计算worst case；没有有限bound的 `maxCostUsd` plan会被拒绝；有限thinking budget会计入bound；rough forecast明确标注不包含thinking；同时加入相应tests与docs。
 
-- [receiver-owned follow-up PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)
+- [接收方项目 follow-up PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)
 - [non-author maintainer `chiga0` approval](https://github.com/QwenLM/qwen-code/pull/12895#pullrequestreview-5336480098)
 - [merge commit `7e50eee8`](https://github.com/QwenLM/qwen-code/commit/7e50eee804dbf864db97a8d18793ed45aef698d5)
 
-PR #12895于2026-09-28T10:01:56Z merge。stable [Qwen Code v0.24.7](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7) 于2026-09-29T14:02:21Z发布。该tag相对 #12895 merge commit `7e50eee804dbf864db97a8d18793ed45aef698d5` 为49 commits ahead / 0 behind，release notes也链接PR #12895。明确的Nakagawa-master再引用保留在receiver-owned PR正文中；本页不声称人物名被嵌入binary本身。
+PR #12895于2026-09-28T10:01:56Z merge。stable [Qwen Code v0.24.7](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7) 于2026-09-29T14:02:21Z发布。该tag相对 #12895 merge commit `7e50eee804dbf864db97a8d18793ed45aef698d5` 为49 commits ahead / 0 behind，release notes也链接PR #12895。明确的Nakagawa-master再引用保留在接收方项目 PR正文中；本页不声称人物名被嵌入binary本身。
 
-**公开可确认：** 具体hard-budget semantics指摘 → receiver-owned后续PR自发把Nakagawa-master作为source再次引用 → exact boundary进入code / tests / docs → 非作者maintainer approval → merge → stable v0.24.7，并且release notes可追溯回PR。  
+**公开可确认：** 具体hard-budget semantics指摘 → 接收方项目后续PR自发把Nakagawa-master作为source再次引用 → exact boundary进入code / tests / docs → 非作者maintainer approval → merge → stable v0.24.7，并且release notes可追溯回PR。  
 **尚未确认：** v0.24.7的独立真实运营使用、用户规模、向其他人类receiver继续传播、广泛人物认知，或对整个理论体系的支持。
 
