@@ -156,6 +156,31 @@ Useful negative controls include:
 
 Policy refusals should remain distinguishable from operational failures so callers do not retry or misreport an expected authorization decision as a deletion error.
 
+#### Third-party carry: UpGrade deletion authority
+
+A public review on Carnegie Learning's UpGrade project found a concrete version of this boundary while batch deletion was being added.
+
+The frontend already treated deletion as permission-sensitive, but the backend single and batch delete paths still accepted destructive requests from roles that the UI treated as unable to delete. The review argued that the server should own one current deletion policy for both routes, evaluated against the target state that will actually be mutated.
+
+The maintainer did not fold that policy change into the batch-deletion PR. Instead, they explicitly opened a separate receiver-owned issue to make the rule consistent across both single and batch APIs:
+
+- [Nakagawa-master review on UpGrade #3323](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#pullrequestreview-5249193998)
+- [Maintainer response opening the follow-on work](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#issuecomment-5732584639)
+- [Receiver-owned follow-on issue #3326](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326)
+
+The follow-on issue now specifies the role matrix, non-deletable states, in-use protections, locked-state requirement, and the need to keep policy refusals distinct from execution failures.
+
+That public record establishes a bounded carry:
+
+```text
+concrete backend authority mismatch identified
+→ maintainer independently acknowledges the mismatch
+→ receiver creates a separate policy issue
+→ the boundary is restated in receiver-owned scope and acceptance conditions
+```
+
+It does **not** yet establish implementation, merge, release, or user-facing effect. Until #3326 is implemented, this remains evidence of receiver-owned planning and reuse rather than completed product change.
+
 
 ### 8. Classification of untrusted content does not create action authority
 
