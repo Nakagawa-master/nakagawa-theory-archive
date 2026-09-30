@@ -203,6 +203,49 @@ Issue自身のstale-publication対策に加えて、終了時にcurrent publishe
 - [Agent Marketplace issue #322](https://github.com/agentrof/agent-marketplace/issues/322)
 - [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
 
+## 13. 所有していなければ、重要な入口を握っていても実効的な力はないと言えるか
+
+所有関係と、実際に何を実行できるかを左右する入口の構造は別です。所有していなくても、認証、計算、通信、data、移行、export、監査などの重要な入口を一方が変更でき、その変更で他方の実行可能な選択肢が狭まるなら、実効的な力は残り得ます。
+
+一方で、入口が集中している、依存している、単一providerを使っている、という事実だけで支配や不正を認定することもできません。実際に使える独立代替、退出・移行、異議・訂正、権限の範囲と期間まで分けて確認します。
+
+```text
+non-ownership
+≠
+non-domination
+
+nominal alternative
+≠
+viable independent alternative
+
+export is available
+≠
+effective exit is already proven
+```
+
+Freenet issue #4381 は、この区別を別の文脈で検査できる独立した公開事例です。Issue自身が、public proxy は導入障壁を下げる一方、hosted peer が利用者のprivate delegate dataを扱う trusted centralized intermediary になると明記しています。その後、hosted proxyであることを利用者へ表示するUI、per-user isolation、node側のexport endpoint、browserからの実data exportが実装されています。
+
+ここで再利用できる問いは、「exportボタンがあるか」だけではありません。
+
+1. proxyが利用できなくなっても、export済みdataを自分のpeerへimportして必要なstateを継続できるか。
+2. export・authentication・migrationの入口を同じoperatorが止めた場合、利用者に実行可能な別経路が残るか。
+3. 複数のproxy候補があっても、同じ上流の認証・保存・移行基盤へ依存していないか。
+4. hosted modeの便利さが、不要になった後も恒久的なdependencyへ変わっていないか。
+5. 改善後に、実際のswitching lossとoperator leverageが下がったか。
+
+Freenetの実装はNakagawa Master理論の採用証拠ではありません。第三者が独立に扱っている公開問題へ、第13論のaccess-topology / effective-exitの検査軸を再利用できる、という位置づけです。
+
+関連資料:
+- [OD306｜非所有と実効権力・非支配論](derivatives/306/README.md)
+- [人間向け要約](derivatives/306/human-entry.md)
+- [AI索引・日本語](derivatives/306/ai-index.md)
+- [Freenet issue #4381](https://github.com/freenet/freenet-core/issues/4381)
+- [generic delegate-secret export/import PR #4506](https://github.com/freenet/freenet-core/pull/4506)
+- [hosted proxy disclosure PR #4530](https://github.com/freenet/freenet-core/pull/4530)
+- [node export endpoint PR #4531](https://github.com/freenet/freenet-core/pull/4531)
+- [browser export wiring PR #4562](https://github.com/freenet/freenet-core/pull/4562)
+- Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/
+
 ## 関連する索引と資料
 
 - [24のテーマから見る](human-translation/WORLD_MAP.md)
