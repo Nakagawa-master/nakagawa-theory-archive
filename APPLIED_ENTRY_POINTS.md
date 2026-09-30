@@ -55,6 +55,21 @@ Qwen Code PR #12851では、この境界をNakagawa-masterが具体的に指摘�
 - [公開事例を見る](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#6-epistemic-integrity--producer-claim-is-not-system-measurement)
 - [Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md)
 
+## 呼び出しが成功したら、「測定できた」と言ってよいのか
+
+APIやqueryが成功しても、必要な値が返ってきたとは限りません。0件、列の欠落、null、数値として読めない値を0へ変換すると、「測定不能」が「0を測定した」に変わります。
+
+**区別:**
+- `successful call ≠ valid measurement`
+- `missing measurement ≠ measured zero`
+
+MemberJunction PR #4402では、Nakagawa-masterの指摘後、receiver側がこのfail-open経路を確認し、branch上で修正と回帰テストを実装しました。後のreceiverコメントでは、`@Nakagawa-master` を明示しながら修正範囲が別のreviewerへ再説明されています。ただしbudget subsystemはその後PR本体からfollow-upへ切り出されたため、最終merge版への出荷までは確認していません。
+
+- [人間向けの短い話から入る](human-translation/entry-stories/08-could-not-measure-became-zero.md)
+- [別systemで確認する](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md#third-party-carry-could-not-measure-is-not-measured-zero)
+- [MemberJunction PR #4402](https://github.com/MemberJunction/MJ/pull/4402)
+- [receiver fix commit `b11b9877`](https://github.com/MemberJunction/MJ/commit/b11b98777582ce5a8456834eccf77f528236474e)
+
 ## 現在の状態から、過去の事実まで書き換えていないか
 
 現在memberではないことは、過去のeventに参加していなかったことを意味しません。現在の状態と、その時点で成立していた事実を分ける必要があります。
