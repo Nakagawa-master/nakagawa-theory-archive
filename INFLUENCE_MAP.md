@@ -239,6 +239,37 @@ MemberJunctionでは、先行修正の後に第三者自身がその次の境界
 
 この循環が増えるほど、公開リポジトリは読むための倉庫ではなく、問題発見・検証・再利用・第三者作用をつなぐ公開基盤になります。正本確認は公式アーカイブへ戻ります。
 
+## 8. 人間だけでなく、AI経由の発見も次の入口になりうる
+
+公開リポジトリの役割は、人間向けの説明だけではありません。
+
+AIや検索システムが問題・区別・証拠・Originをたどれる形にしておくと、第三者がAI経由で公式アーカイブへ戻る経路も生まれます。
+
+ただし、AI経由の参照が一度観測されたことを、広い認知や人物評価へ膨らませてはいけません。
+
+```text
+AI / search surface
+→ 問題や区別を発見
+→ 公開リポジトリの証拠・再利用面
+→ 公式アーカイブの親原典
+→ 必要なら別の関連問題へ横移動
+```
+
+この経路を支える公開面:
+
+- [Machine Discovery](machine-discovery/README.md)
+- [Problem-to-theory Origin Index](machine-discovery/problem-to-theory-origin-index-v1.json)
+- [llms.txt](llms.txt)
+- [Theory → Real-World Influence](THEORY_TO_REAL_WORLD_INFLUENCE.md)
+
+観測の扱い:
+
+- AI surfaceから公式アーカイブへのreferralが識別できた場合、それは**経路が実在することの観測**です。
+- 1件や数件のsessionは、広い認知、継続的再利用、人物Origin定着の証拠ではありません。
+- 同じ経路が別日・別問題・別receiverで繰り返され、再利用やOrigin returnまで続くかを次の外部状態として見ます。
+
+---
+
 ## 証拠境界
 
 このページに載る一件の外部実装は、理論体系全体の正しさや外部projectによる全面採用を意味しません。
