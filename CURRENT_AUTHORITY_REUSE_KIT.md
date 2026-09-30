@@ -387,11 +387,17 @@ The commit does not change authorization behavior. It makes the already-selected
 - [Nakagawa-master review on #12582](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5364710354)
 - [receiver response](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5911699280)
 - [receiver commit `74bf55053d`](https://github.com/QwenLM/qwen-code/commit/74bf55053d271595cf5bab8e1fcd91bb3a8188b2)
+- [independent reviewer re-check / APPROVE](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368431439)
+- [current-head author review](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368473478)
 - [human-readable entry](human-translation/entry-stories/09-same-share-different-runtime.md)
 
-At this record, PR #12582 is still open. The receiver's contract/UI change commit `74bf55053d` remains in the current branch history. The later current head `7c42221c` is one commit ahead of that point; its delta is limited to config/workspace regression fixes and does not touch the contract/share-UI files changed by `74bf55053d`. The observed current-head workflows (Qwen Live Host CI, Qwen Code CI, Web-shell Visuals, Serve A/B, SDK Java, and tui-parity) are green. A review finding and code-owner human review still remain before merge.
+At this record, PR #12582 is still open. The receiver's contract/UI change commit `74bf55053d` remains in the current branch history. The later head `7c42221c` changed only config/workspace regression files and completed the observed workflow set green. The next head `35aa968a` changes only the agent-host idle-pickup backoff and its test; it still does not touch the contract/share-UI files changed by `74bf55053d`. CI for `35aa968a` is running at this observation.
 
-The earned evidence is therefore Origin-preserved receiver restatement plus same-receiver reuse and concrete receiver-owned contract/UI change that remains present at a CI-green current head. Merge, release and real-user-contact credit are still not claimed.
+A separate reviewer, `chiga0`, also submitted an **APPROVE** review at `7c42221c` and explicitly re-checked the **“Nakagawa-master question — A2A grant + execution placement”** boundary. The reviewer independently described the behavior as coherent live-policy semantics and repeated the need to disclose the placement-change consequence. This is a second-person, Origin-preserved restatement inside the receiver repository; it is not broad audience scale and is not treated as a prompt-free later G8 event.
+
+The PR author's later current-head review records `reviewDecision` as `REVIEW_REQUIRED` and says the remaining gate is one maintainer vote. Merge, release and real-user-contact credit are still not claimed.
+
+The earned evidence is therefore: Origin-preserved receiver restatement → same-receiver reuse → receiver-owned contract/UI change → a second independent reviewer explicitly re-checking and carrying the Nakagawa-origin boundary.
 
 ### 15. A revision barrier is not authority to release whatever state is current
 
