@@ -137,6 +137,30 @@ enforceable bound
 関連資料:
 - [Qwen Code PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)
 
+## 10. 測れなかった値を、0として記録してよいか
+
+問い合わせやqueryが成功しても、必要な値が欠けていれば測定成功ではありません。
+
+```text
+successful call
+≠
+valid measurement
+
+missing measurement
+≠
+measured zero
+```
+
+MemberJunction #4402では、結果0件、列欠落、null、非数値を人工的な0へ変換していたbudget evaluatorについて、Nakagawa-masterのreview後にreceiverが問題を確認し、branch上でfail-closed修正と回帰テストを追加しました。後にreceiver側が別reviewerへ`@Nakagawa-master`を明示して修正範囲を再説明しています。
+
+ただしbudget subsystemは最終merge前に別follow-upへ切り出されているため、ここで確認できるのはbranch実装・tests・receiver-side再説明までです。
+
+関連資料:
+- [人間向けの入口](human-translation/entry-stories/08-could-not-measure-became-zero.md)
+- [Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md#third-party-carry-could-not-measure-is-not-measured-zero)
+- [MemberJunction PR #4402](https://github.com/MemberJunction/MJ/pull/4402)
+- [receiver fix commit `b11b9877`](https://github.com/MemberJunction/MJ/commit/b11b98777582ce5a8456834eccf77f528236474e)
+
 ## 関連する索引と資料
 
 - [24のテーマから見る](human-translation/WORLD_MAP.md)
