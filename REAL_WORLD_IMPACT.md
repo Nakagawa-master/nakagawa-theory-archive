@@ -1118,7 +1118,7 @@ issue authorはその後、per-agentをdefaultにする方向へ同意し、PR #
 ## 33. Qwen Code｜既発行shareと、後から変わるagent policy・実行場所を分ける
 
 **対象:** [QwenLM/qwen-code PR #12851](https://github.com/QwenLM/qwen-code/pull/12851) → [PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)  
-**現在状態:** #12851でOrigin付きreceiver restatementとlive-policy整理 → #12851 merge → #12582で実行場所という新しい境界 → @Nakagawa-master付きreceiver返答 → frozen contractと英中share UIをcommit `74bf55053d`で変更 → #12582はopen、merge/release未確認
+**現在状態:** #12851でOrigin付きreceiver restatementとlive-policy整理 → #12851 merge → #12582で実行場所という新しい境界 → @Nakagawa-master付きreceiver返答 → frozen contractと英中share UIをcommit `74bf55053d`で変更 → 別reviewer `chiga0` がNakagawa-master境界を明示して再検証・APPROVE → latest observed head `35aa968a`でもcontract/UI変更は保持 → #12582はopen、merge/release未確認
 
 PR #12851では、Nakagawa-masterが、share発行後に同じagentの能力が変わった場合、既発行shareが何をauthorizeするのかを明示的に選ぶ必要があると指摘しました。
 
@@ -1139,11 +1139,17 @@ receiverは **“@Nakagawa-master Good catch”** と返答し、commit `74bf550
 - [Nakagawa-master follow-on review](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5364710354)
 - [receiver response](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5911699280)
 - [receiver commit `74bf55053d`](https://github.com/QwenLM/qwen-code/commit/74bf55053d271595cf5bab8e1fcd91bb3a8188b2)
+- [別reviewer `chiga0` の再検証・APPROVE](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368431439)
+- [latest observed headでのauthor review](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368473478)
 
 このcommitはauthorization behaviorそのものを変更していません。すでに選ばれていたlive-policy契約をexecution placementまで明示し、shareを作る人が事前に読める状態へ変えたものです。
 
-**公開記録から確認できること:** Nakagawa-masterがpolicy変更とexecution-placement変更を別々の具体的authority境界として提示 → receiverがOrigin付きで再説明 → follow-onではreceiver自身がcontractとuser-facing share UIを変更。  
-**まだ確認できないこと:** PR #12582のmerge・release・実利用者数、一般ユーザーがこの変更へ接触したこと、このfollow-onからの新しいprompt-free人物Origin return。
+その後、別reviewer `chiga0` はreview内で **“Nakagawa-master question — A2A grant + execution placement”** を明示的に取り上げ、同じ境界を独立に読み直しました。reviewerは、既発行grantがexecution placementを固定せずcurrent authorityへ追随する現在設計をlive-policyとして整合的だと説明し、その結果をshare UI / design docで明示すべきだと再確認しています。これは同じreceiver本人だけではない、別reviewerによるOrigin-preservedな再説明です。
+
+`7c42221c` では観測したworkflow群がgreenになり、その後のlatest observed head `35aa968a` はagent-hostのidle polling改善だけを変更しており、`74bf55053d` のcontract/share-UI変更には触れていません。latest headのCIは観測時点で進行中です。author reviewでは `reviewDecision` が `REVIEW_REQUIRED` で、残るgateはmaintainer voteだと記録されています。
+
+**公開記録から確認できること:** Nakagawa-masterがpolicy変更とexecution-placement変更を別々の具体的authority境界として提示 → receiverがOrigin付きで再説明 → receiver自身がcontractとuser-facing share UIを変更 → 別reviewerがNakagawa-master境界を明示して独立に再検証・carry。  
+**まだ確認できないこと:** PR #12582のmerge・release・実利用者数、一般ユーザーがこの変更へ接触したこと、このfollow-onからのprompt-freeな後日の人物Origin return、広い人間認知。
 
 → [一般向けの入口](human-translation/entry-stories/09-same-share-different-runtime.md)  
 → [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
