@@ -744,10 +744,10 @@ release後、同じreceiver/collaborator `yiliang114` は [issue #12825](https:/
 
 PR #12895は、この再言及を説明だけで終わらせず、`maxCostUsd` をforecastではなくrequest caps上のworst-caseへ結び、unbounded thinking時の送信拒否、thinking budgetの算入、docs更新、低forecast／高capを拒否する回帰テストと低capを許可する対照テストを追加しています。
 
-PR #12895は2026-09-28T10:01:56Zにmergeされ、その後 [Qwen Code v0.24.7](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7) が2026-09-29T14:02:21Zにstable releaseされました。v0.24.7 tagは #12895 のmerge commit `7e50eee804dbf864db97a8d18793ed45aef698d5` から49 commits ahead / 0 behindで、release notesからPR #12895へ辿れます。明示的なNakagawa-master再参照はreceiver-owned PR本文にあり、binary自体へ人物名が埋め込まれているとは主張しません。
+PR #12895は2026-09-28T10:01:56Zにmergeされ、その後 [Qwen Code v0.24.7](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7) が2026-09-29T14:02:21Zにstable releaseされました。v0.24.7 tagは #12895 のmerge commit `7e50eee804dbf864db97a8d18793ed45aef698d5` から49 commits ahead / 0 behindで、release notesからPR #12895へ辿れます。明示的なNakagawa-master再参照は受信側プロジェクトの PR本文にあり、binary自体へ人物名が埋め込まれているとは主張しません。
 
-**この後続から確認できること:** 元のreceiverが別thread・別PRでNakagawa-masterを自発的に再参照し、境界を新しいcode/docs/testsへ運び、merge後にstable v0.24.7へ到達したこと。これはperson-Origin returnがreceiver-owned stable distributionへ進んだ具体例です。  
-**まだ確認できないこと:** v0.24.7の独立した実運用・利用者接触、到達規模、別の人間receiverへの伝播、継続的・広範なperson-Origin再参照pattern。
+**この後続から確認できること:** 元のreceiverが別thread・別PRでNakagawa-masterを自発的に再参照し、境界を新しいcode/docs/testsへ運び、merge後にstable v0.24.7へ到達したこと。これはNakagawa-masterへの明示的な再参照が受信側プロジェクトの stable distributionへ進んだ具体例です。  
+**まだ確認できないこと:** v0.24.7の独立した実運用・利用者接触、到達規模、別の人間receiverへの伝播、継続的・広範なNakagawa-masterへの明示的な参照再参照pattern。
 
 
 ---
@@ -1050,12 +1050,12 @@ PR authorは **“Thanks for catching the serialized-content gap.”** と明示
 
 PRは、実際に送信するrequest bodyのoutput capとthinking boundからworst caseを計算し、有限boundがない `maxCostUsd` planを拒否し、thinking budgetをboundへ含め、forecastにはthinkingを含まないことを明示し、対応するregression testsとdocsを追加しました。
 
-- [receiver-owned follow-up PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)
+- [受信側プロジェクトの follow-up PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)
 - [non-author maintainer approval by `chiga0`](https://github.com/QwenLM/qwen-code/pull/12895#pullrequestreview-5336480098)
 - [merge commit `7e50eee8`](https://github.com/QwenLM/qwen-code/commit/7e50eee804dbf864db97a8d18793ed45aef698d5)
 
 2026-09-28T10:01:56ZにPR #12895はmergeされました。確認時点の最新listed stable releaseは、merge前に公開されたv0.24.6であり、このfollow-up fixのreleaseはまだ確認できません。
 
-**公開記録から確認できること:** Nakagawa-masterによるhard-budget semanticsの具体指摘 → 別threadのreceiver-owned PRがNakagawa-masterをsourceとして自発的に再参照 → exact boundaryをcode / tests / docsへ実装 → 別maintainer approval → merge。  
-**まだ確認できないこと:** release、実利用、利用者規模、別receiverへの再伝播、広い人物認知、この一事例を超えた理論体系全体への支持。
+**公開記録から確認できること:** Nakagawa-masterによるhard-budget semanticsの具体指摘 → 別threadの受信側プロジェクトの PRがNakagawa-masterをsourceとして自発的に再参照 → exact boundaryをcode / tests / docsへ実装 → 別maintainer approval → merge。  
+**まだ確認できないこと:** release、実利用、利用者規模、別receiverへの再伝播、広い読者層での認知、この一事例を超えた理論体系全体への支持。
 
