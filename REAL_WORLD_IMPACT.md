@@ -1118,7 +1118,7 @@ issue authorはその後、per-agentをdefaultにする方向へ同意し、PR #
 ## 33. Qwen Code｜既発行shareと、後から変わるagent policy・実行場所を分ける
 
 **対象:** [QwenLM/qwen-code PR #12851](https://github.com/QwenLM/qwen-code/pull/12851) → [PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)  
-**現在状態:** #12851でOrigin付きreceiver restatementとlive-policy整理 → #12851 merge → #12582で実行場所という新しい境界 → @Nakagawa-master付きreceiver返答 → frozen contractと英中share UIをcommit `74bf55053d`で変更 → 別reviewer `chiga0` がNakagawa-master境界を明示して再検証（そのreviewは後続head更新後にGitHub上でDISMISSED、active approvalとしては不計上） → latest observed head `f9922e44`でもcontract/UI変更を直接保持確認 → #12582はopen、merge/release未確認
+**現在状態:** #12851でOrigin付きreceiver restatementとlive-policy整理 → #12851 merge → #12582で実行場所という新しい境界 → @Nakagawa-master付きreceiver返答 → frozen contractと英中share UIをcommit `74bf55053d`で変更 → 別reviewer `chiga0` がNakagawa-master境界を明示して再検証 → 後続head更新後にcurrent head `f9922e44`を再reviewしてAPPROVED → authorが同headでfull local build green・core 78/78・CLI serve routes 139/139を公開 → #12582はopen、merge/release未確認
 
 PR #12851では、Nakagawa-masterが、share発行後に同じagentの能力が変わった場合、既発行shareが何をauthorizeするのかを明示的に選ぶ必要があると指摘しました。
 
@@ -1139,16 +1139,18 @@ receiverは **“@Nakagawa-master Good catch”** と返答し、commit `74bf550
 - [Nakagawa-master follow-on review](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5364710354)
 - [receiver response](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5911699280)
 - [receiver commit `74bf55053d`](https://github.com/QwenLM/qwen-code/commit/74bf55053d271595cf5bab8e1fcd91bb3a8188b2)
-- [別reviewer `chiga0` の再検証（`7c42221c`でAPPROVEとして提出、後続head更新後はDISMISSED）](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368431439)
+- [別reviewer `chiga0` の最初の再検証](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368431439)
+- [同reviewerのcurrent-head `f9922e44` APPROVED再review](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368634260)
+- [authorによるcurrent-head local build/test verification](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5914709319)
 - [latest observed headでのauthor review](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368473478)
 
 このcommitはauthorization behaviorそのものを変更していません。すでに選ばれていたlive-policy契約をexecution placementまで明示し、shareを作る人が事前に読める状態へ変えたものです。
 
 その後、別reviewer `chiga0` はreview内で **“Nakagawa-master question — A2A grant + execution placement”** を明示的に取り上げ、同じ境界を独立に読み直しました。reviewerは、既発行grantがexecution placementを固定せずcurrent authorityへ追随する現在設計をlive-policyとして整合的だと説明し、その結果をshare UI / design docで明示すべきだと再確認しています。これは同じreceiver本人だけではない、別reviewerによるOrigin-preservedな再説明です。
 
-このreviewは `7c42221c` でAPPROVEとして提出されましたが、後続head更新後、GitHub上の現在stateは `DISMISSED` です。したがって「現在のapproval」としては数えません。一方、review本文として公開されたOrigin付き再説明は消えていないため、second-person carryの証拠とは分けて扱います。
+最初のreviewは後続head更新で一度DISMISSEDになりましたが、`chiga0` はlatest observed head `f9922e44` を再reviewし、改めてAPPROVEDを提出しました。したがって、Origin-preservedなsecond-person carryだけでなく、current-headでの独立review approvalまで確認できます。ただしPR自体はまだopenで、requested reviewersも残っているため、これをmerge approval完了とは扱いません。
 
-latest observed head `f9922e44` では、`74bf55053d` が変更した英中frozen contract、英中share copy、share dialogを直接再確認し、execution-placement/live-runtimeの説明が保持されていることを確認しました。`f9922e44` 自体の変更はprogress/result routeのhost-auth重複除去とnamed limit再利用で、このcontract/UI境界とは別です。観測時点ではcurrent-head workflow結果とactive approvalはまだ確認できません。
+latest observed head `f9922e44` では、`74bf55053d` が変更した英中frozen contract、英中share copy、share dialogを直接再確認し、execution-placement/live-runtimeの説明が保持されていることを確認しました。さらにauthorは同headについてfull local build green、core workspace-agent tests 78/78、CLI serve-route tests 139/139を公開しています。remote workflow laneは別途進行中で、mergeはまだ確認できません。
 
 **公開記録から確認できること:** Nakagawa-masterがpolicy変更とexecution-placement変更を別々の具体的authority境界として提示 → receiverがOrigin付きで再説明 → receiver自身がcontractとuser-facing share UIを変更 → 別reviewerがNakagawa-master境界を明示して独立に再検証・carry。  
 **まだ確認できないこと:** PR #12582のmerge・release・実利用者数、一般ユーザーがこの変更へ接触したこと、このfollow-onからのprompt-freeな後日の人物Origin return、広い人間認知。
