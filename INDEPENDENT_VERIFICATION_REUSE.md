@@ -44,27 +44,25 @@ read / mention
 
 A lower stage must not be reported as a higher one.
 
-## Six reusable distinctions you can test
+## Current reusable challenges
 
-You may use any public source in the archive. These six have already produced independently checkable external action and are useful starting points:
+You may use any public source in the archive. The current open challenge set is kept in the [public registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) and the [machine-readable challenge set](machine-discovery/independent-reuse-challenges-v1.json). Those live routes should be preferred over a frozen count in this protocol.
 
-1. **Historical approval != current authority**  
-   A past approval, consent, or sanitization event does not automatically prove current permission after recipient, purpose, rights, policy, or source revision changes.
+Current starting points include:
 
-2. **Same identity != authority to overwrite**  
-   Matching IDs or object identity do not by themselves establish ownership provenance or permission to replace current state.
+1. **Historical approval != current authority** — re-check permission after recipient, purpose, rights, policy, object, or source revision changes.
+2. **Same identity != authority to overwrite** — test ownership/provenance before replacing equal-ID state.
+3. **Operation success != valid measurement** — distinguish a successful operation from a valid, grounded measurement.
+4. **Same explanation != same evidence provenance** — preserve which evidence supports which item after grouping.
+5. **Approval consumed once != external side effect happened once** — handle ambiguous provider outcomes before retry.
+6. **Current status != historical fact** — answer past-time questions with historical semantics.
+7. **Subject movement != measurement-surface drift** — use stable controls when the observation environment can also move.
+8. **Local preservation/recovery != mutual-existence safety** — test whether a defensive action reduces the underlying threat or feeds a conflict loop.
+9. **Many surface sources != many independent evidence roots** — trace material claims upstream before counting corroboration.
+10. **Missing citation != novelty proof** — improve research positioning with explicit overlap, adjacency, prior work, counterexamples, and material differences.
+11. **Authority to begin/revise != authority to finalize whatever state is current now** — at finish/release time, revalidate the current state and lineage rather than trusting only the historical begin receipt.
 
-3. **Operation success != valid measurement**  
-   A query or operation can succeed while the resulting value is semantically invalid, missing, ungrounded, or not independently measured.
-
-4. **Same explanation != same evidence provenance**  
-   Two recommendations can display the same reason while being justified by different evidence sources. Grouping must not erase who is supported by what.
-
-5. **Approval consumed once != external side effect happened once**  
-   A single-use approval does not prove that an external provider action occurred exactly once when the provider result is ambiguous.
-
-6. **Current status != historical fact**  
-   A person's state now should not silently rewrite what was true at the time of an earlier event.
+A successful implementation is useful evidence. So is a failing reproduction, a narrower invariant that makes the distinction unnecessary, or a concrete counterexample showing that the proposed test is the wrong model.
 
 See [Real-World Impact](REAL_WORLD_IMPACT.en.md) for public third-party implementation records and boundaries.
 
