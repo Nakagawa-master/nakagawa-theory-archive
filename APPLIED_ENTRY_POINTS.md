@@ -23,19 +23,28 @@ AIが危険、安全、重要などと分類できることと、コメント、
 - [公開事例を見る](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#2-temporal--structural-consistency--historical-approval-is-not-current-authority)
 - [確認手順を使う](CURRENT_AUTHORITY_REUSE_KIT.md)
 
-## 共有を出したあと、同じAIの権限が広がったら？
+## 共有を出したあと、同じAIの能力や実行場所が変わったら？
 
-共有がまだ有効でも、発行した時と現在でagentの能力が変わっていることがあります。
+共有がまだ有効でも、発行した時と現在でagentの能力や実行場所が変わることがあります。
 
-最初は狭い能力だったagentへ数日間のshareを発行し、その後同じagentの設定を広げた場合、古いshareが新しい能力まで使えるのか。それとも発行時の能力へ結びつくのか。どちらの設計もあり得ますが、偶然の実装結果にはできません。
+最初は手元で動いていたagentを共有し、その後同じagentを別の実行環境へ移した場合、古いshareが現在の状態に追随するのか。それとも発行時の状態へ結びつくのか。どちらの設計もあり得ますが、利用者に見えないまま意味だけが変わる状態にはしない方が安全です。
 
 **区別:** `valid grant ≠ unchanged authority meaning`
 
-Qwen Code PR #12851では、この境界をNakagawa-masterが具体的に指摘しました。receiverは後に@Nakagawa-masterを明示して論点を再説明し、現在はshareがagentのcurrent policyに追随すると整理したうえで、別の契約へ変えるかはproduct/security decisionとしてmaintainersへ上げたと記録しています。PR自体はmergeされましたが、この論点についてcode変更が採用されたわけではありません。
+Qwen Code PR #12851では、Nakagawa-masterが「share発行後にagentの能力が変わった時、既発行shareが何を許すのか」を具体的に指摘しました。開発側は後に @Nakagawa-master を明示して論点を再説明し、現在のshareは利用時点のcurrent policyに追随する方式だと整理しました。
 
+続くPR #12582では、agentの実行場所自体をlocalからmanaged runtimeへ移せるようになりました。Nakagawa-masterがこの新しい境界を指摘すると、開発側は **“@Nakagawa-master Good catch”** と返答し、commit `74bf55053d` で英語・中国語の契約文とshare画面を変更しました。
+
+現在の明示契約では、実行場所を変えてもexisting grantは自動失効せず、後の依頼はその時点で割り当てられているruntimeのworkspaceで動きます。これはauthorization方式そのものを変えたのではなく、既に採用されていたlive-policyの意味を実行場所まで明示した変更です。
+
+この記録時点でPR #12582はopenです。したがって、第三者側のcontract/UI変更までは確認できますが、merge・release・実利用者到達はまだ数えません。
+
+- [人間向けの短い話から入る](human-translation/entry-stories/09-same-share-different-runtime.md)
 - [自分のsystemで確認する](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
-- [Qwen Code PR #12851](https://github.com/QwenLM/qwen-code/pull/12851)
-- [公開証拠と因果境界](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#11-current-authority--capability-versioning--a-valid-share-does-not-define-what-later-policy-expansion-means)
+- [Nakagawa-master review](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5364710354)
+- [開発側の返答](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5911699280)
+- [変更commit `74bf55053d`](https://github.com/QwenLM/qwen-code/commit/74bf55053d271595cf5bab8e1fcd91bb3a8188b2)
+
 
 ## 一度だけ承認した処理が、外部でも一度だけ起きたと言えるのか
 
