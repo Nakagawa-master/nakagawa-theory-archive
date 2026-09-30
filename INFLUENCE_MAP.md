@@ -1,34 +1,12 @@
-# Nakagawa Master Influence Map — 問題から現実作用へ
+# Nakagawa Master Influence Map — 問題から関連資料を探す
 
-このページは、公開リポジトリ上で305件の公式派生物を全部読むための一覧ではありません。
+このページは、具体的な問題から関連する理論、検証例、再利用資料を探すための案内です。
 
-**自分がすでに持っている問題から入り、何を混同すると問題が起きるのかを分け、その区別が現実の第三者システムで何を変えたかを確認し、必要なら再利用して、正本と関連理論へ戻るための作用盤です。**
+各項目では、混同しやすい概念を分け、公開されている事例と関連資料を示します。個別事例は、その事例で確認できる範囲を示すものであり、理論体系全体の妥当性や外部プロジェクトによる全面採用を意味しません。
 
-読み方は一つです。
+## 1. 過去の承認は、現在の実行権限と同じか
 
-```text
-問題
-→ 何と何を分けるべきか
-→ 関連する理論 / 公式派生物
-→ 第三者で起きた現実作用
-→ 再利用できる形
-→ Origin / canonical return
-→ 隣接する別問題
-```
-
-この順番を置く理由は単純です。
-
-理論だけ並べても、現実で使われなければ作用は増えません。現実作用だけ並べても、どこから来た区別か分からなければ再利用とOrigin returnが切れます。両方をつなぐと、一つの現実作用が次の問題発見、再利用、第三者carryへ進めます。
-
-## 1. 古い承認が残っている。だから今も実行してよいのか
-
-### 問題
-
-過去に一度承認された処理、設定、例外、指示が残っていると、システムはそれを現在も有効な権限として扱いやすくなります。
-
-しかし、承認した時と現在で対象、条件、責任、影響範囲が変わっていれば、同じ承認をそのまま使うと、過去の判断が現在の実行権限へ勝手に変換されます。
-
-### 分ける
+過去に承認された処理でも、対象、条件、責任、影響範囲が変われば、現在も同じ権限が有効とは限りません。
 
 ```text
 historical approval
@@ -36,32 +14,14 @@ historical approval
 current authority
 ```
 
-### 現実作用
-
-この区別は、外部projectで承認・権限・定期実行の境界を見直す実装へ使われています。
-
+関連資料:
 - [Applied Evidence Map — current authority](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#2-temporal--structural-consistency--historical-approval-is-not-current-authority)
 - [Real-World Impact](REAL_WORLD_IMPACT.md)
-
-### 再利用
-
 - [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
 
-### 次に見る
+## 2. 分類結果は、外部へ作用する権限と同じか
 
-現在権限を分けると、次に出るのは「誰がその実行を許可したのか」「分類結果が実行権限へ変わっていないか」という問題です。
-
----
-
-## 2. AIやシステムが『危険だ』と判断した。だから行動してよいのか
-
-### 問題
-
-分類器やAIが危険・安全・重要と判断することと、外部へ送信、公開、削除、支払、反応する権限を持つことは別です。
-
-ここを一つにすると、入力された文章や分類結果そのものが、外部作用を起こす権限を作ってしまいます。
-
-### 分ける
+分類器やAIが危険・安全・重要などと判定することと、送信、公開、削除、支払いなどを実行する権限は別です。
 
 ```text
 classification
@@ -69,31 +29,13 @@ classification
 permission to act
 ```
 
-### 現実作用
-
-この境界は、DAIR Prompt Engineering Guideの第三者実装で、untrusted contentの分類とaction gateを分離する変更へ進みました。
-
+関連資料:
 - [Applied Evidence Map — classification is not permission](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#8-responsibility--authority-separation--classification-is-not-permission-to-act)
-
-### 再利用
-
 - [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
 
-### 次に見る
+## 3. 一度の承認は、外部処理が一度だけ起きたことを保証するか
 
-実行権限を分けると、次は『実際に外部作用が一度だけ起きたとどう確認するか』が問題になります。
-
----
-
-## 3. 承認は一回。外部処理も一回だけ起きたと言えるのか
-
-### 問題
-
-内部で承認を一度だけ消費しても、外部APIが一度だけ実行されたとは限りません。
-
-timeoutや通信断があると、送れたのか失敗したのか分からない状態が残ります。その状態で再試行すると、送信、課金、削除などが二重に起きる可能性があります。
-
-### 分ける
+通信断やtimeoutがあると、内部で承認を一度だけ処理していても、外部APIの結果が確定しているとは限りません。再試行によって送信、課金、削除などが重複する場合があります。
 
 ```text
 approval consumed once
@@ -101,31 +43,15 @@ approval consumed once
 external effect happened exactly once
 ```
 
-### 現実作用
+Clientverseでは、unknown outcome、reconciliation、idempotency protectionに関する変更が実装されました。
 
-Clientverseでは、この境界からunknown-outcome、reconciliation、idempotency protection、testsが実装され、mergeまで進みました。
-
+関連資料:
 - [Applied Evidence Map — external side effect](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#4-responsibility--causal-integrity--approval-is-not-exactly-once-external-effect)
-
-### 再利用
-
 - [External Side-Effect Reuse Kit](EXTERNAL_SIDE_EFFECT_REUSE_KIT.md)
 
-### 次に見る
+## 4. 渡された数値は、そのシステム自身が測定した値と同じか
 
-外部作用を追うと、今度は『表示されている数字や説明は、本当にそのsystem自身が測ったものか』という証拠問題へ進みます。
-
----
-
-## 4. 数字が表示されている。それは本当にそのsystemが測った値か
-
-### 問題
-
-上流のproducerや別systemから渡された数字を、そのまま受信側systemの測定結果として表示すると、sourceとmeasurementが混ざります。
-
-数字が同じでも、誰がどこで測ったかが違えば、証拠としての意味は変わります。
-
-### 分ける
+上流のproducerから渡された値と、受信側が自ら測定した値では、証拠としての意味が異なります。
 
 ```text
 producer-supplied claim
@@ -133,31 +59,15 @@ producer-supplied claim
 receiver-side measurement
 ```
 
-### 現実作用
+PostHogでは、producer側の値とserver側で取得した値を分離して保存し、不一致を確認できる変更が行われました。
 
-PostHogでは、producer側の値とserver側で読み取った値を分離して保存し、両者の不一致を見える形にする実装へ進みました。
-
+関連資料:
 - [Applied Evidence Map — epistemic integrity](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#6-epistemic-integrity--producer-claim-is-not-system-measurement)
-
-### 再利用
-
 - [Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md)
 
-### 次に見る
+## 5. 現在の状態は、過去の事実と同じか
 
-証拠の出所を分けると、次は『多数の表示や多数の主張が、本当に独立した根拠なのか』という問題へ進みます。
-
----
-
-## 5. 現在見えている状態で、過去の事実まで書き換えてよいのか
-
-### 問題
-
-今その人がmemberではない、今その権限を持っていない、という現在状態から、過去にも参加していなかったことにすると履歴が壊れます。
-
-現在の状態と、ある時点で実際に成立していた事実は別です。
-
-### 分ける
+現在memberではない、現在権限を持っていない、といった状態から、過去の参加や権限まで否定することはできません。
 
 ```text
 current state
@@ -165,31 +75,15 @@ current state
 historical fact
 ```
 
-### 現実作用
+TourCRMでは、この区別に関連する実装とtestが修正され、関連PRがmergeされました。
 
-TourCRMでは、この区別が二度のreceiver-side correctionへつながり、現在時刻依存の実装とtestまで修正され、両PRがmergeされました。
-
+関連資料:
 - [Applied Evidence Map — historical fact](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#3-state-relation--temporal-integrity--current-status-is-not-historical-fact)
-
-### 再利用
-
 - [Historical-Fact Reuse Kit](HISTORICAL_FACT_REUSE_KIT.md)
 
-### 次に見る
+## 6. 名前やaliasが変われば、外部から到達できなくなるか
 
-履歴と現在を分けると、source identity、provenance、Originをどこまで保持するかという問題へ進みます。
-
----
-
-## 6. 名前が変わった。外から届かなくなったと言えるのか
-
-### 問題
-
-内部の名前を変えたりaliasを作ったりしても、外部からまだ同じobjectへ到達できる場合があります。
-
-localな名前だけを見てprivateだと判断すると、実際のpublic reachabilityを消したつもりになってしまいます。
-
-### 分ける
+内部名やaliasを変更しても、別のexport経路などから同じobjectへ到達できる場合があります。
 
 ```text
 local spelling / alias
@@ -197,221 +91,63 @@ local spelling / alias
 external reachability
 ```
 
-### 現実作用
+MemberJunction #4487では、public symbolの収集方法、tests、実装が修正され、mergeされました。
 
-MemberJunction #4487では、この境界を別reviewerも独立確認し、public-symbol collection、tests、実装が修正されてmergeされました。
-
+関連資料:
 - [Applied Evidence Map — public reachability](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#9-public-surface-identity--reachability--exported-alias-is-still-external-reachability)
-
-### 次に見る
-
-reachabilityを追うと、誰が何を知ってよいか、row identityそのものが情報漏えいにならないかという問題へ進みます。
-
-MemberJunctionでは、先行修正の後に第三者自身がその次の境界をissueとして切り出しています。
-
 - [MemberJunction #4610](https://github.com/MemberJunction/MJ/issues/4610)
 
----
+## 7. 同じtraceを共有するagentは、同じbudgetを共有すべきか
 
-## 7. 一つの問題から、305全体へどう戻るか
-
-ここまでの各項目は、305件のすべてを代表しているわけではありません。
-
-役割は逆です。
-
-まず一つの現実問題で、区別が実際に役立つことを確認する。その後で、同じOriginが別領域でどの問題を扱っているかを見るために、横へ移動します。
-
-- [24のテーマから見る](human-translation/WORLD_MAP.md)
-- [OD001–OD305を同じ粒度で横に見る](human-translation/ALL_305_HORIZONTAL_MAP.md)
-- [Theory → Real-World Influence](THEORY_TO_REAL_WORLD_INFLUENCE.md)
-- [Reuse Kits](REUSE_KITS.md)
-- [Machine Discovery](machine-discovery/README.md)
+LiteLLMでは、複数agentが同じtraceを共有する場合のsession limitについて議論と実装が進められています。
 
 ```text
-一つの問題
-→ 一つの区別
-→ 一つの現実作用
-→ 別の現場で再利用
-→ Originへ戻る
-→ 別領域の問題を発見
-→ 次の作用
-```
-
-この循環が増えるほど、公開リポジトリは読むための倉庫ではなく、問題発見・検証・再利用・第三者作用をつなぐ公開基盤になります。正本確認は公式アーカイブへ戻ります。
-
-## 8. 人間だけでなく、AI経由の発見も次の入口になりうる
-
-公開リポジトリの役割は、人間向けの説明だけではありません。
-
-AIや検索システムが問題・区別・証拠・Originをたどれる形にしておくと、第三者がAI経由で公式アーカイブへ戻る経路も生まれます。
-
-ただし、AI経由の参照が一度観測されたことを、広い認知や人物評価へ膨らませてはいけません。
-
-```text
-AI / search surface
-→ 問題や区別を発見
-→ 公開リポジトリの証拠・再利用面
-→ 公式アーカイブの親原典
-→ 必要なら別の関連問題へ横移動
-```
-
-この経路を支える公開面:
-
-- [Machine Discovery](machine-discovery/README.md)
-- [Problem-to-theory Origin Index](machine-discovery/problem-to-theory-origin-index-v1.json)
-- [llms.txt](llms.txt)
-- [Theory → Real-World Influence](THEORY_TO_REAL_WORLD_INFLUENCE.md)
-
-観測の扱い:
-
-- AI surfaceから公式アーカイブへのreferralが識別できた場合、それは**経路が実在することの観測**です。
-- 1件や数件のsessionは、広い認知、継続的再利用、人物Origin定着の証拠ではありません。
-- 同じ経路が別日・別問題・別receiverで繰り返され、再利用やOrigin returnまで続くかを次の外部状態として見ます。
-
-2026-09-30の観測では、`copilot.com / ai-assistant` から公式アーカイブへ6件のengaged sessionが識別され、ホームだけでなく、category、theory、future、structure-licenseの複数ページへ遷移しました。これはAI経由の再入導線が一ページ偶発ではなく複数入口で実在することを示す方向性シグナルです。ただし、人物認識、広域到達、再利用、継続参照を証明するものではありません。
-
-次に見る外部状態は、同じAI経由導線が別日・別問題で反復するか、problem-first entryから具体的なreuse kitやcanonical Parentへ進むか、さらに第三者側の実装・再利用・Origin returnへ接続するかです。
-
----
-
-## 9. ここから先は、読むだけで終わらせない
-
-この作用盤の目的は、理解した気になることではありません。
-
-自分の現場に同じ混同があるなら、次にやることは一つです。
-
-```text
-自分の問題を一文で書く
-→ 何と何が混ざっているかを分ける
-→ その区別を一つのtest / review / checklist / implementation gateへ落とす
-→ 現実のsystemで結果を見る
-→ 結果が返ったら、証拠とOriginを保って次の人が再利用できる形にする
-```
-
-最短の再利用入口:
-
-- 承認と現在権限: [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
-- 外部副作用の二重実行: [External Side-Effect Reuse Kit](EXTERNAL_SIDE_EFFECT_REUSE_KIT.md)
-- 現在状態と履歴事実: [Historical-Fact Reuse Kit](HISTORICAL_FACT_REUSE_KIT.md)
-- 計測値とproducer claim: [Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md)
-- AI agentの実行境界: [AI Agent Execution Boundary Tests](AI_AGENT_EXECUTION_BOUNDARY_TESTS.md)
-- 実問題を公開で持ち込む: [Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
-- 独立検証・反証・再利用を返す: [Independent verification & reuse registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
-
-重要なのは、理論名を覚えることではありません。
-
-**現場で混同されている二つを分け、その分離が判断・実装・運用を変えるかを確かめること。**
-
-そこで本当に状態が変わったなら、その一件が次の第三者にとっての入口になります。
-
----
-
-## 10. すでに現実を動かした3本から、自分の問題へ入る
-
-ここからは理論名ではなく、**実際に第三者の実装や判断が動いた線**から入ります。
-
-### A. 「同じsessionだから、同じ制限を使ってよい」は本当か
-
-LiteLLMでは、複数agentが同じtraceを共有すると、一方の利用がもう一方のsession limitを消費する問題が出ました。
-
-ここで分けるべきなのは、
-
-```text
-同じtraceを共有している
+shared trace
 ≠
-同じagent budgetを共有してよい
+shared agent budget
 ```
 
-という点です。
-
-この区別は、receiver側で「per-agentをdefaultにする」方向へ再述され、実装PR #43410へ進みました。まだmerge/releaseは未確定なので、ここで言えるのは**区別がreceiver側の実装方向を変えた**ところまでです。
-
+関連資料:
 - [LiteLLM issue #43190](https://github.com/BerriAI/litellm/issues/43190)
 - [Implementation PR #43410](https://github.com/BerriAI/litellm/pull/43410)
 
-自分のsystemで確認するなら、まず問いは一つです。
+## 8. draftの生成は、外部送信と同じか
 
-**共有されている識別子と、制限を負う主体が同じものとして扱われていないか。**
-
----
-
-### B. 「agentが作ったもの」と「agentが外部へ送ったもの」は同じか
-
-MemberJunctionでは、agentがemail draftを作っても、その経路では送信しません。最終的に送るのは人間です。
+MemberJunctionでは、agentがemail draftを生成する処理と、人間が最終的に送信する処理が分かれています。recipientの表示や、長文が途中で切れた場合のfallbackも扱われています。
 
 ```text
-draftを作る
+draft creation
 ≠
-外部へ送信する
+external send
 ```
 
-さらに、agentが作ったlabelだけ見せてrecipientを隠すと、ユーザーは「誰に送るdraftなのか」を確認する前にmail clientを開くことになります。そこでreceiver側はrecipientを見える形にし、長文が途中で切れる場合は送信面へ渡さずfull draftへ戻す構造を作っています。
-
+関連資料:
 - [MemberJunction PR #4568](https://github.com/MemberJunction/MJ/pull/4568)
 
-この線から自分のsystemを見るなら、
+## 9. 予測値は、強制可能な上限と同じか
 
-**生成・承認・外部作用・最終責任が、一つの「実行した」に潰れていないか。**
-
-を確認します。
-
----
-
-### C. 「予測コスト」と「実際に上限として守れるコスト」は同じか
-
-Qwen Codeでは、batchのforecastがthinking tokenを含まず、見かけ上budget内でも実際には数倍使う可能性がありました。
-
-ここで分けるべきなのは、
+Qwen Codeでは、batchのforecastと実際のtoken消費の差が問題となり、上限を安全に計算できないrequestの扱いやcleanup stateに関する変更が行われました。
 
 ```text
-予測値
+forecast
 ≠
-強制可能な上限
+enforceable bound
 ```
 
-です。
-
-receiver側では、上限を本当に計算できないrequestをfail-closedにし、harvest済みかremote cleanup済みかも別stateへ分離しました。その後mergeされ、stable v0.24.7へ入りました。
-
+関連資料:
 - [Qwen Code PR #12895](https://github.com/QwenLM/qwen-code/pull/12895)
 
-自分の現場で見るなら、
+## 関連する索引と資料
 
-**表示している予測が、そのまま実行制御に使えるほど強い証拠なのか。それとも単なる見積もりなのか。**
+- [24のテーマから見る](human-translation/WORLD_MAP.md)
+- [OD001–OD305を横断して見る](human-translation/ALL_305_HORIZONTAL_MAP.md)
+- [Theory → Real-World Influence](THEORY_TO_REAL_WORLD_INFLUENCE.md)
+- [Reuse Kits](REUSE_KITS.md)
+- [Machine Discovery](machine-discovery/README.md)
+- [AI Agent Execution Boundary Tests](AI_AGENT_EXECUTION_BOUNDARY_TESTS.md)
 
-を分けます。
+## 記載範囲
 
----
-
-この3本は別々の話に見えますが、同じ型があります。
-
-```text
-一つに見える概念
-→ 実際には責任・主体・証拠・外部作用が違う
-→ 混ぜると誤作動する
-→ 分ける
-→ test / review / implementation gateへ落とす
-→ 第三者systemの状態が変わる
-→ 証拠を残す
-→ Originへ戻る
-```
-
-これが、この公開リポジトリで増やしたい循環です。
-
-## 証拠境界
-
-このページに載る一件の外部実装は、理論体系全体の正しさや外部projectによる全面採用を意味しません。
-
-逆に、一つの外部実装が狭い区別だけを使っているからといって、その区別のOrigin relationが消えるわけでもありません。
-
-確認できる範囲だけを分けます。
-
-```text
-source / theory relation
-→ bounded distinction
-→ external response
-→ code / test / rule / workflow change
-→ merge / release / use where verified
-```
+このページでは、公開情報から確認できる区別、事例、関連資料を案内しています。個別の実装例は、その範囲で確認できる事実を示します。
 
 Origin / Author: **Nakagawa Master** (pen-name of Keisuke Nakagawa)
