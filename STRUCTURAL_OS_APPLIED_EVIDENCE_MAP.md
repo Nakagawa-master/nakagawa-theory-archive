@@ -149,6 +149,34 @@ A case can validate or operationalize one narrow distinction without proving the
 
 ---
 
+### 10. Resource accounting / scope ownership → shared trace is not shared agent budget
+
+**Canonical context:** [OD304](derivatives/304/README.md) separates resource, capability, allocation and the feedback by which current resource conditions change later capability. The implementation case below is narrower: it does not require accepting the whole theory, but it makes resource ownership and next-action capability directly inspectable in code.
+
+**Applied distinction:** a trace groups related execution, but it does not automatically define who owns a local budget. Separately, choosing the correct counter scope does not prove that a budget is enforceable before concurrent calls are admitted.
+
+```text
+shared trace
+≠
+shared agent budget
+
+scope identity
+≠
+budget admission
+```
+
+**External evidence:** In [LiteLLM issue #43190](https://github.com/BerriAI/litellm/issues/43190), `Nakagawa-master` separated per-agent session limits, an optional shared-trace limit, and hard-cap admission semantics. The issue author later agreed that per-agent should be the default and identified [PR #43410](https://github.com/BerriAI/litellm/pull/43410) as implementing that direction. A separate participant then explicitly reused the thread framing that scope identity and budget admission are separate problems and extended it with additional production lessons. This is evidence of second-person restatement/carry of the distinction on the public thread; it is **not** evidence that the participant attributed the distinction to Nakagawa Master personally.
+
+**Current evidence stage:** receiver restatement + receiver implementation in an open, non-draft, mergeable PR + second-person restatement. Merge, release, production use and broad user impact are not yet established.
+
+**Practical route:** [Practical Use — multi-agent shared-trace check](PRACTICAL_USE.md#例6複数ai-agentが同じtraceを共有している)
+
+**Public verification route:** [Real-World Impact — LiteLLM](REAL_WORLD_IMPACT.md#32-litellm同じtraceと同じagent-budgetを分けscope-identityとbudget-admissionも分ける)
+
+**Canonical return:** [OD304](derivatives/304/README.md) → https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-11-compute-capability-resource-class-formation/
+
+---
+
 ## Important boundary
 
 These mappings are deliberately bounded.
