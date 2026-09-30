@@ -63,12 +63,12 @@ APIやqueryが成功しても、必要な値が返ってきたとは限りませ
 - `successful call ≠ valid measurement`
 - `missing measurement ≠ measured zero`
 
-MemberJunction PR #4402では、Nakagawa-masterの指摘後、receiver側がこのfail-open経路を確認し、branch上で修正と回帰テストを実装しました。後のreceiverコメントでは、`@Nakagawa-master` を明示しながら修正範囲が別のreviewerへ再説明されています。ただしbudget subsystemはその後PR本体からfollow-upへ切り出されたため、最終merge版への出荷までは確認していません。
+MemberJunction PR #4402では、Nakagawa-masterの指摘後、開発側が「測れないのに成功扱いになる」経路を確認し、開発ブランチ上で修正と回帰テストを実装しました。後のコメントでは、`@Nakagawa-master` を明示しながら修正範囲が別のreviewerへ再説明されています。ただしbudget subsystemはその後PR本体からfollow-upへ切り出されたため、最終merge版への出荷までは確認していません。
 
 - [人間向けの短い話から入る](human-translation/entry-stories/08-could-not-measure-became-zero.md)
 - [別systemで確認する](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md#third-party-carry-could-not-measure-is-not-measured-zero)
 - [MemberJunction PR #4402](https://github.com/MemberJunction/MJ/pull/4402)
-- [receiver fix commit `b11b9877`](https://github.com/MemberJunction/MJ/commit/b11b98777582ce5a8456834eccf77f528236474e)
+- [修正commit `b11b9877`](https://github.com/MemberJunction/MJ/commit/b11b98777582ce5a8456834eccf77f528236474e)
 
 ## 現在の状態から、過去の事実まで書き換えていないか
 
