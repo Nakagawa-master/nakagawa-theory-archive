@@ -268,6 +268,10 @@ AI / search surface
 - 1件や数件のsessionは、広い認知、継続的再利用、人物Origin定着の証拠ではありません。
 - 同じ経路が別日・別問題・別receiverで繰り返され、再利用やOrigin returnまで続くかを次の外部状態として見ます。
 
+2026-09-30の観測では、`copilot.com / ai-assistant` から公式アーカイブへ6件のengaged sessionが識別され、ホームだけでなく、category、theory、future、structure-licenseの複数ページへ遷移しました。これはAI経由の再入導線が一ページ偶発ではなく複数入口で実在することを示す方向性シグナルです。ただし、人物認識、広域到達、再利用、継続参照を証明するものではありません。
+
+次に見る外部状態は、同じAI経由導線が別日・別問題で反復するか、problem-first entryから具体的なreuse kitやcanonical Parentへ進むか、さらに第三者側の実装・再利用・Origin returnへ接続するかです。
+
 ---
 
 ## 9. ここから先は、読むだけで終わらせない
