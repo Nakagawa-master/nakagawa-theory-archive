@@ -49,6 +49,9 @@ AI、仕事、組織、情報、制度、未来。
 **専門家を信じることと、訂正できなくすることは同じ？**  
 → [長く信頼するための訂正可能性の話](human-translation/entry-stories/07-trust-experts-without-making-them-uncorrectable.md)
 
+**処理は成功した。でも必要な値が取れなかった。それを0として記録していい？**  
+→ [「測れなかった」と「0が測れた」を分ける話](human-translation/entry-stories/08-could-not-measure-became-zero.md)
+
 ---
 
 ## 考えているだけなのか、実際に外でも使われたのか
@@ -119,13 +122,20 @@ AI、仕事、組織、情報、制度、未来。
 
 → [長く信頼するための訂正可能性の話](human-translation/entry-stories/07-trust-experts-without-making-them-uncorrectable.md)
 
+### 8｜測れなかった。なのに「0」と記録された
+
+問い合わせは成功した。  
+でも必要な値は取れていない。それでも0として保存したら、「分からない」が「問題なし」に変わります。
+
+→ [「測れなかった」と「0が測れた」を分ける話](human-translation/entry-stories/08-could-not-measure-became-zero.md)
+
 ---
 
-## 7つの話に共通していること
+## 8つの話に共通していること
 
 題材は違います。
 
-決済、AI、組織、ニュース、承認、専門家。  
+決済、AI、組織、ニュース、承認、専門家、計測。  
 でも、どれも「目の前の結果だけを見て終わらない」という点でつながっています。
 
 何が起きたのか。  
