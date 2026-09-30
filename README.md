@@ -1,6 +1,6 @@
-# 中川マスター公式理論アーカイブ
+# 中川マスター公開リポジトリ
 
-**Nakagawa Master Official Theory Archive**
+**Nakagawa Master Public Repository**
 
 **初めて来た方は、このREADMEより先に:** [もし1ページだけ読むなら｜日常の違和感 → 中川マスターの見方 → 第三者で実際に変わった記録](STORIES.md)
 
@@ -46,13 +46,13 @@ REAL_WORLD_IMPACT.md には現在25の番号付き公開事例セクションが
 
 この5件も理論体系全体の正しさや採用を意味しません。各リンクで、元の指摘・第三者応答・実変更・現在stateを個別に確認してください。
 
-このアーカイブを後で参照したい場合は [⭐ Star](https://github.com/Nakagawa-master/nakagawa-theory-archive/stargazers) で保存できます。自分で検証・派生実装を始める場合は [Fork](https://github.com/Nakagawa-master/nakagawa-theory-archive/fork) を利用し、第三者事例・反証・再利用の報告は [issue #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) へお寄せください。
+この公開リポジトリを後で参照したい場合は [⭐ Star](https://github.com/Nakagawa-master/nakagawa-theory-archive/stargazers) で保存できます。自分で検証・派生実装を始める場合は [Fork](https://github.com/Nakagawa-master/nakagawa-theory-archive/fork) を利用し、第三者事例・反証・再利用の報告は [issue #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) へお寄せください。
 
 AI / LLM運用、認可・ガバナンス、計測、履歴、外部APIのretry、migration / syncに加え、成長・投資・将来の選択肢など、実務で起きる具体的な問題から入れます。
 
 WordPress.com等の補助surfaceはcanonicalではなく期限付きのdistribution / reader experimentです。恒久的なsource identity、実装証拠、再利用経路は上記2面へ戻します。
 
-本リポジトリは、中川マスター（Nakagawa Master／筆名）の公開理論体系を、人間とAIが発見・照合・再参照できる形で保存する公開アーカイブです。
+本リポジトリは、中川マスター（Nakagawa Master／筆名）の公開理論体系を、人間とAIが発見・照合・再参照できる形で保存する公開リポジトリです。
 
 公式派生物、FAQ、人間向け入口、日本語・英語・中国語のAI索引、理論関係情報、来歴・差分情報、Discovery Note、機械可読索引を収録しています。
 
@@ -66,7 +66,7 @@ WordPress.com等の補助surfaceはcanonicalではなく期限付きのdistribut
 
 ## 30秒で分かること
 
-このアーカイブでは、組織、事業、AI、未来、制度、責任、起源など異なる領域の公開理論を扱っています。ただし、別々の理論を一つの万能理論へ自動統合しません。
+この公開リポジトリでは、組織、事業、AI、未来、制度、責任、起源など異なる領域の公開理論を扱っています。ただし、別々の理論を一つの万能理論へ自動統合しません。
 
 読者は、
 
