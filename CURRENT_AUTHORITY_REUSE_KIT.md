@@ -16,6 +16,43 @@ A short Japanese reader-facing entry is published on the WordPress carrier:
 
 The WordPress article is an explanatory carrier, not a canonical source and not independent adoption evidence. For the reusable test contract, return to this kit; for canonical claims, follow the exact public archive / derivative source route.
 
+## Start from the failure you see
+
+You do not need to know the theory name before using this kit. Start with the failure that is already visible in your system.
+
+| What you are seeing | Start with |
+| --- | --- |
+| A queued message, publish, payment, or API call was authorized earlier, but something important changed before the effect happened | Sections 1–7 |
+| A stale screen, cache, token, approval receipt, or old permission is being treated as if it still grants authority | Sections 5–11 |
+| An AI/classifier decided something is worth doing, and that decision is being mistaken for permission to do it | Sections 8–10 |
+| A recurring agent or reviewed action can execute instructions different from what the human actually approved | Sections 9 and 12 |
+| A capability exists internally and may be mintable by users even though it was intended only for a server or narrow actor | Section 13 |
+| A long-lived share remains valid while the agent's policy, runtime, workspace, or execution placement changes | Section 14 |
+| A revision started legitimately, but the state being finalized later may no longer be the state that was reviewed | Section 15 |
+
+The recurring question is not “was this ever approved?” It is:
+
+> **At the moment the consequential effect is about to happen, does the current actor still have authority over this current action, target, scope, and state?**
+
+## Five-step reuse protocol
+
+Use this when converting the distinction into a test, review, policy, or implementation check.
+
+1. **Name the consequence.** Identify the exact external or irreversible effect: send, publish, pay, delete, disclose, execute, release, or equivalent.
+2. **Capture the earlier authority.** Record what was approved, by whom, for which actor, target, scope, version, and time window.
+3. **Change one material condition.** Change a recipient, role, object revision, runtime, policy, consent state, capability, target state, or published lineage.
+4. **Re-check at the consequence boundary.** The system must decide from current authoritative state, not merely from the existence of an old receipt, token, queue entry, UI state, or earlier successful check.
+5. **Assert both sides.** The old approval remains truthful history, while an unauthorized new consequence produces zero side effect and a distinguishable refusal / re-review / hold result.
+
+A useful regression therefore proves two things at once:
+
+```text
+history is preserved
++
+current authority is re-evaluated before consequence
+```
+
+
 ## Minimal test
 
 Create a record approved under state A. Then change one material condition: recipient, purpose, rights, policy, notice version, source revision, or the exact object being acted on.
@@ -51,7 +88,7 @@ authorized at execution time
 
 A queue, cache, approval receipt, earlier read, or prior successful dry run may be useful evidence. None of them should silently become authority for a later consequence after the material state has changed.
 
-## Four portable regression vectors
+## Portable regression vectors
 
 ### 1. Consent changes while a message waits
 
