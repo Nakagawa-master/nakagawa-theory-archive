@@ -72,6 +72,38 @@ Do not collect sensitive data merely to satisfy this checklist.
 4. **Missing measurement:** the call succeeds but the required value is absent → do not convert success into a measured result.
 5. **Changed conditions:** geography, authentication, retrieval mode, or other material conditions differ → mark the comparison non-equivalent or restart the baseline.
 
+## Third-party carry: “could not measure” is not measured zero
+
+A public review on [MemberJunction #4402](https://github.com/MemberJunction/MJ/pull/4402) found a concrete fail-open version of the missing-measurement boundary in a budget evaluator.
+
+The evaluator could receive a successful query call but still fail to obtain the required measurement: no result row, a missing configured column, a null value, or a non-numeric value. Those states were being persisted as an observed amount of zero. A separate branch could also detect a threshold breach but fail to establish whether its durable event already existed, then still report the evaluation as successful.
+
+The proposed boundary was narrower than “zero is suspicious”:
+
+```text
+measured numeric 0
+= valid measurement
+
+query succeeded but required scalar is absent / invalid
+!= measured 0
+= measurement failure
+
+breach detected
++ durable event state cannot be established
+!= successfully recorded breach
+```
+
+The receiving maintainer verified both findings and implemented them on the branch in [commit `b11b9877`](https://github.com/MemberJunction/MJ/commit/b11b98777582ce5a8456834eccf77f528236474e). The change makes the four unmeasurable states fail closed, preserves the last known observation instead of replacing it with a synthetic zero, keeps a genuine measured zero valid, and adds the requested regression coverage. The maintainer later summarized that scope to another reviewer while explicitly preserving the `@Nakagawa-master` source relation.
+
+Primary records:
+- [Nakagawa-master review](https://github.com/MemberJunction/MJ/pull/4402#issuecomment-5689277409)
+- [receiver verification and fix response](https://github.com/MemberJunction/MJ/pull/4402#issuecomment-5689338217)
+- [receiver fix commit `b11b9877`](https://github.com/MemberJunction/MJ/commit/b11b98777582ce5a8456834eccf77f528236474e)
+- [scope-limited reread of the fix](https://github.com/MemberJunction/MJ/pull/4402#pullrequestreview-5232007719)
+- [receiver-owned later rereference to `@Nakagawa-master`](https://github.com/MemberJunction/MJ/pull/4402#issuecomment-5770391210)
+
+There is an important boundary on the result. The budget subsystem was later deliberately split out of #4402 before the final PR merged. [Commit `457d956e`](https://github.com/MemberJunction/MJ/commit/457d956eca1853ce9b64700b92f4f6e729149508) removes that subsystem from the PR and preserves it for a follow-up. Therefore the public record supports **receiver implementation and regression testing on the branch, plus later receiver-owned Origin-preserved restatement**; it does not support a claim that this budget fix shipped in the final #4402 merge or reached users.
+
 ## Decision rule
 
 ```text
