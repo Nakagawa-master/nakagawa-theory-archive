@@ -46,6 +46,23 @@ Qwen Code PR #12851では、Nakagawa-masterが「share発行後にagentの能力
 - [変更commit `74bf55053d`](https://github.com/QwenLM/qwen-code/commit/74bf55053d271595cf5bab8e1fcd91bb3a8188b2)
 
 
+## 改訂を始めた権限で、終了時の現在stateまで確定してよいのか
+
+改訂やreleaseの開始時に正しいreceiptを持っていても、処理の途中でcurrent stateが別のversionへ変わることがあります。
+
+**区別:** `authorized to begin revision ≠ authorized to finalize current state`
+
+Agent Marketplace issue #322では、古いcheckoutが新しいexecution planを古いplan / contract revisionで上書きし、その後revision barrierが解除される状態が独立に報告されています。Issue自身はstale publicationの拒否とbarrier ownershipのbindingを提案しています。
+
+追加で試せる防御は、`finish(E)` の時点でもcurrent published stateを読み直し、そのstateがepoch Eで確定してよいlineageに属している場合だけbarrierを解除することです。
+
+この項目はAgent Marketplace側によるNakagawa Master理論の採用事例ではありません。公開された第三者問題を、別systemでも再利用できるcurrent-authority regressionへ変換した入口です。
+
+- [一般向けの短い話](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)
+- [Current-Authority Reuse Kit — revision finalization](CURRENT_AUTHORITY_REUSE_KIT.md#15-a-revision-barrier-is-not-authority-to-release-whatever-state-is-current)
+- [Agent Marketplace issue #322](https://github.com/agentrof/agent-marketplace/issues/322)
+- [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+
 ## 一度だけ承認した処理が、外部でも一度だけ起きたと言えるのか
 
 外部APIは処理を受け取ったのに応答だけ失われることがあります。その状態を単純な失敗として再試行すると、送信、課金、削除などが二重になる可能性があります。
