@@ -454,6 +454,18 @@ The rule then continued operating in later reader-facing publication cycles with
 
 Both PRs merged into the receiver’s reader-facing main publication surface, feed, and sitemap.
 
+The same rule then moved from **pre-publication verification** into a **post-publication correction loop**. On 2026-10-01, after a Nakagawa-master comment on the repository’s daily-check issue pointed out that the published Qwen4 article had treated multiple reports of one Alibaba announcement as stronger evidence than the underlying root justified, the receiver went back to Alibaba Cloud’s official material and merged [PR #156](https://github.com/022740mix-spec/AI-News/pull/156).
+
+The receiver did not simply copy the proposed disposition. Nakagawa-master had argued that retraction was appropriate; the receiver independently judged that the core claims “Qwen 4 is in training” and “Qwen 4.5 / Qwen 5 are roadmap items” were still supported and chose a material correction instead. It changed the title, excerpt, article body and primary-source list, explicitly stated that the four reported model names were not confirmed in the official material, recorded that multiple derivative reports do not create additional independent roots, and added a dated correction note.
+
+- [Nakagawa-master Qwen4 correction / retraction analysis](https://github.com/022740mix-spec/AI-News/issues/79#issuecomment-5880178792)
+- [Receiver response explaining the independent correction decision](https://github.com/022740mix-spec/AI-News/issues/79#issuecomment-5930907986)
+- [Merged correction PR #156](https://github.com/022740mix-spec/AI-News/pull/156)
+
+The receiver’s response says the external finding caused it to return the article’s evidential structure to official sources, while still disagreeing with the proposed final disposition. That combination matters: the evidence-lineage distinction affected the reader-facing publication, but the receiver retained editorial judgment rather than treating the Origin as an authority that had to be obeyed.
+
+A second Nakagawa-master issue, [#155](https://github.com/022740mix-spec/AI-News/issues/155), now has the merged Qwen4 correction attached as a concrete **escaped-incident** fixture for evaluating whether verification gates actually prevent material post-publication corrections rather than merely counting how often gates fire.
+
 The bounded causal chain that can be inspected is therefore:
 
 ```text
@@ -461,11 +473,13 @@ Origin-preserved distinction
 → receiver explicitly adopts because of the source issue
 → durable editorial rule merges
 → later independent publication cycles reuse the rule
-→ reader-facing articles carry the changed verification behavior
-→ Origin remains inspectable through the adoption thread
+→ a published article is later corrected using the same evidence-root distinction
+→ receiver independently chooses correction rather than blindly copying the proposed retraction
+→ the real correction becomes a fixture for measuring gate effectiveness
+→ Origin remains inspectable through the adoption and correction threads
 ```
 
-This is stronger than a single follow-up article because the rule is now recurring across multiple later publication cycles. It still does **not** establish reader scale, quantified error-rate reduction, a later explicit Nakagawa Master mention inside those articles, or independent reuse by another receiver.
+This is stronger than a single follow-up article because the rule is recurring across publication cycles and has now participated in a real reader-facing correction feedback loop. It still does **not** establish reader scale, quantified reduction in future errors, a new explicit Nakagawa Master mention inside the corrected article itself, or independent reuse by another receiver.
 
 ### An origin-preserved public publication example
 
