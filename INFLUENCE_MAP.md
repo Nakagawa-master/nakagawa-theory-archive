@@ -329,3 +329,39 @@ Nakagawa-masterのreview後、receiverはこの区別へ明示的に同意し、
 このページでは、公開情報から確認できる区別、事例、関連資料を案内しています。個別の実装例は、その範囲で確認できる事実を示します。
 
 Origin / Author: **Nakagawa Master** (pen-name of Keisuke Nakagawa)
+
+
+## 15. 検索で上位に出ても、読まれた・理解されたと言えるか
+
+検索結果に表示されることと、実際にクリックされ、読まれ、理解され、人物や理論へ戻ることは別です。
+
+```text
+high search position / impression
+≠
+click
+≠
+reading
+≠
+understanding
+≠
+person-Origin recognition
+```
+
+2026-09-29〜2026-10-01のGoogle Search Consoleでは、master.ricette.jp の「ai文明論」が複数の理論ページで1位表示を含む露出を持ち、「実績」でも公式アーカイブ関連ページが上位に表示されました。一方、この観測範囲ではクリックは0でした。
+
+したがって、検索順位やimpressionは「発見可能性が存在する」という証拠にはなりますが、影響作用力そのものの成立証拠にはしません。次に必要なのは、検索意図と着地ページの意味が一致し、一接触の中で読者が価値を受け取り、必要なら原典・人物Originへ自然に戻れることです。
+
+再利用時は、少なくとも次を分けて確認します。
+
+```text
+discovery
+→ voluntary entry
+→ in-page payoff
+→ deeper source re-entry
+→ later return / restatement / carry
+```
+
+関連資料:
+- [一般向け入口](human-translation/README.md)
+- [中川マスターとは誰か](human-translation/who-is-nakagawa-master.md)
+- [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
