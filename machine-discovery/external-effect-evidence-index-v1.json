@@ -984,8 +984,8 @@
         "merge_commit": "800e53e8d5579cfe061f39ede01ac7b8b68877d6",
         "merged_at": "2026-09-25T08:42:13Z"
       },
-      "current_stage": "third_party_rule_merged_and_reused_in_reader_facing_main",
-      "recurring_effect_potential": "ESTABLISHED_AT_LEAST_ONE_POST_MERGE_READER_FACING_MAIN_RECURRENCE__AUDIENCE_SCALE_UNVERIFIED",
+      "current_stage": "third_party_rule_merged_and_reused_across_multiple_reader_facing_main_cycles",
+      "recurring_effect_potential": "ESTABLISHED_MULTIPLE_POST_MERGE_READER_FACING_MAIN_RECURRENCES__AUDIENCE_SCALE_UNVERIFIED",
       "not_claimed": [
         "quantified error-rate reduction",
         "reader-scale effect",
@@ -1019,6 +1019,37 @@
           "benchmark comparability limits are preserved"
         ],
         "boundary": "This establishes recurring external-project editorial use of the merged evidence-lineage rule, not explicit source rereference or reader-scale recognition."
+      },
+      "latest_recurrence_2026_10_01": {
+        "observed_at_jst": "2026-10-01",
+        "reader_facing_cycles": [
+          {
+            "pull_request": "https://github.com/022740mix-spec/AI-News/pull/152",
+            "merged_at": "2026-09-30T23:49:05Z",
+            "observed_rule_behavior": [
+              "one primary source root is separated from multiple derivative reports sharing that root",
+              "an unverified version claim is excluded from article fact because the official changelog does not establish it",
+              "unknown scope remains explicitly unknown rather than inferred from derived reports"
+            ]
+          },
+          {
+            "pull_request": "https://github.com/022740mix-spec/AI-News/pull/153",
+            "merged_at": "2026-09-30T23:51:17Z",
+            "observed_rule_behavior": [
+              "primary, independent-observation, and derived-source counts are explicitly separated",
+              "absence of confirmed independent third-party verification is disclosed",
+              "Google-reported benchmark values are distinguished from independent reproduction",
+              "non-comparable benchmark versions are not silently inserted into the global comparison table"
+            ]
+          }
+        ],
+        "distribution": [
+          "main article data",
+          "feed",
+          "sitemap"
+        ],
+        "origin_boundary": "The durable rule has an explicit receiver-side causal link to Nakagawa Master issue #124, but these later articles do not themselves explicitly rereference Nakagawa Master.",
+        "credit_boundary": "Recurring receiver-owned reader-facing rule reuse is established; reader contact scale, quantified error reduction, and a new person-Origin rereference are not established."
       }
     },
     {

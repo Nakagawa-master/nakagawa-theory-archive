@@ -756,7 +756,7 @@ PR #12895は2026-09-28T10:01:56Zにmergeされ、その後 [Qwen Code v0.24.7](h
 ## 23. AI-News｜URL本数と独立した証拠root数を分ける編集規則を明示採用
 
 **対象:** [022740mix-spec/AI-News#124](https://github.com/022740mix-spec/AI-News/issues/124) → [PR #131](https://github.com/022740mix-spec/AI-News/pull/131)  
-**現在状態:** receiverが明示採用 / CLAUDE.mdへ実装 / PR #131 merged（2026-09-25）/ merge後の複数記事で継続利用を確認
+**現在状態:** receiverが明示採用 / CLAUDE.mdへ実装 / PR #131 merged（2026-09-25）/ 複数の後続reader-facing publication cycleで継続利用を確認（2026-10-01 JST時点）
 
 Issue #124で `Nakagawa-master` は、AIニュースの検証で「URLが複数あること」と「独立した証拠rootが複数あること」を分離するよう提案しました。一次資料、独立観測、派生・転載、不明を分け、`url_count` と `evidence_root_count` を同一視しない境界です。
 
@@ -776,6 +776,14 @@ merge後の通常の記事作成でも、この区分は反復利用されてい
 - [ChatGPT `__obi`記事](https://github.com/022740mix-spec/AI-News/commit/58772106cb84418765d9ebc04a3bbe9a09653b9f)
 - [Anthropic IPO記事](https://github.com/022740mix-spec/AI-News/commit/f236ac87c3959465e54cbecd7ebedbc07cbd7f37)
 - [Flock監視網記事](https://github.com/022740mix-spec/AI-News/commit/e5e23538217fe2f744b6d249598eddde246e2616)
+
+さらに2026-10-01 JSTの新しいpublication cycleでも同じ境界がreceiver側で再利用されています。
+
+- [PR #152](https://github.com/022740mix-spec/AI-News/pull/152) は、公式一次資料1rootと、同じrootに依存する複数の二次報道を分け、公式changelogで確認できない `2.1.277以降` というversion claimを本文の事実から外しました。
+- [PR #153](https://github.com/022740mix-spec/AI-News/pull/153) は、主要claimごとに一次資料・独立観測・派生/転載のroot内訳を明示し、独立第三者検証が未確認であることを本文に残しました。またGoogle自身のbenchmark値と独立再現を分け、版・条件が揃わない値を既存model comparisonへ無理に追加していません。
+- 両PRは2026-09-30T23:49Z / 23:51Zにmergeされ、main article data、feed、sitemapへ入っています。
+
+これは、元issueへの一度きりの同意ではなく、**receiverが自分の後続公開工程で同じruleを反復使用している**ことを示します。各後続記事そのものにNakagawa Master名の再言及があるわけではないため、person-Originの新しいG8としては数えません。
 
 **公開記録から確認できること:** origin-preserved提案 → receiverによる明示的採用と採用理由の説明 → 同じreceiverの継続編集規則 `CLAUDE.md` への具体的実装 → merge。PR本文も **「Issue #124 の指摘で気づいた」** とsource relationを明示しています。  
 **まだ確認できないこと:** 誤報率への定量効果、読者規模、別receiverへの独立reuse、各記事の人間単独執筆、理論体系全体への支持。

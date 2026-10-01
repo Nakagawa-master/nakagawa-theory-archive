@@ -419,6 +419,43 @@ For the related public distinction between historical evidence and current execu
 
 The provenance route matters here because the published article itself intentionally keeps people secondary to the records. The source relationship can still be inspected through the public review thread, while this archive supplies the return path from the external effect to the broader underlying distinction.
 
+### A durable evidence-lineage rule that keeps reappearing in new publication cycles
+
+AI-News #124 now provides a second, stronger recurring editorial example because the receiving repository explicitly preserved both the **source relation** and the **operating rule**.
+
+[Nakagawa Master issue #124](https://github.com/022740mix-spec/AI-News/issues/124) proposed one narrow distinction:
+
+```text
+multiple URLs
+!=
+multiple independent evidence roots
+```
+
+The repository owner replied **“採用します” (“We will adopt it”)**, opened [PR #131](https://github.com/022740mix-spec/AI-News/pull/131), and explicitly stated that the rule change itself was caused by issue #124. The receiver also explained why: its previous L2/L3 process checked whether claims appeared in sources, but not whether the sources were actually independent.
+
+- [Receiver adoption and causality statement](https://github.com/022740mix-spec/AI-News/issues/124#issuecomment-5823549498)
+- [Merged durable rule PR #131](https://github.com/022740mix-spec/AI-News/pull/131)
+
+The rule then continued operating in later reader-facing publication cycles without a fresh Nakagawa prompt. Two new merged examples on 2026-09-30 UTC make the recurrence especially easy to inspect:
+
+- [AI-News PR #152](https://github.com/022740mix-spec/AI-News/pull/152) separates one primary source from multiple derived reports that share the same root, and keeps the unverified “2.1.277 or later” version claim out of the article rather than upgrading an automated summary into a fact.
+- [AI-News PR #153](https://github.com/022740mix-spec/AI-News/pull/153) records evidence-root counts explicitly, states that independent third-party verification was not found, distinguishes Google’s own benchmark claims from independent reproduction, and avoids adding incomparable benchmark versions to the site’s model-comparison table.
+
+Both PRs merged into the receiver’s reader-facing main publication surface, feed, and sitemap.
+
+The bounded causal chain that can be inspected is therefore:
+
+```text
+Origin-preserved distinction
+→ receiver explicitly adopts because of the source issue
+→ durable editorial rule merges
+→ later independent publication cycles reuse the rule
+→ reader-facing articles carry the changed verification behavior
+→ Origin remains inspectable through the adoption thread
+```
+
+This is stronger than a single follow-up article because the rule is now recurring across multiple later publication cycles. It still does **not** establish reader scale, quantified error-rate reduction, a later explicit Nakagawa Master mention inside those articles, or independent reuse by another receiver.
+
 ### An origin-preserved public publication example
 
 A separate publication chain preserves the source relationship directly in third-party reader-facing text.

@@ -705,7 +705,7 @@ After release, the same receiver/collaborator `yiliang114` documented real use i
 ## 23. AI-News | Separate URL count from independent evidence-root count in recurring editorial verification
 
 **Target:** [022740mix-spec/AI-News#124](https://github.com/022740mix-spec/AI-News/issues/124) → [PR #131](https://github.com/022740mix-spec/AI-News/pull/131)  
-**Current state:** receiver explicitly adopted the distinction → recurring editorial rule merged on 2026-09-25 → later reader-facing main publication visibly reuses the rule
+**Current state:** receiver explicitly adopted the distinction → recurring editorial rule merged on 2026-09-25 → multiple later reader-facing publication cycles visibly reuse the rule (verified through 2026-10-01 JST)
 
 In issue #124, `Nakagawa-master` proposed separating the number of URLs from the number of **independent evidence roots**. The proposal distinguishes primary sources, independent observations, derived/syndicated material, and unknown lineage instead of treating `url_count` as `evidence_root_count`.
 
@@ -726,6 +726,14 @@ A later main-branch article about Claude Sonnet 5.5 provides a fresh reader-faci
 - benchmark figures whose settings are not comparable.
 
 This is stronger than a draft-only reuse signal: the merged rule is recurring in a receiving-project, reader-facing publication surface.
+
+The recurrence continued in a new publication cycle on 2026-09-30 UTC:
+
+- [PR #152](https://github.com/022740mix-spec/AI-News/pull/152) separates one primary root from multiple derivative reports sharing that root and keeps the unverified `2.1.277 or later` version claim out of the article because the official changelog did not establish it.
+- [PR #153](https://github.com/022740mix-spec/AI-News/pull/153) records primary / independent-observation / derived-source counts, states that independent third-party verification was not found, separates Google-reported benchmark results from independent reproduction, and declines to insert non-comparable benchmark versions into the site-wide comparison table.
+- Both PRs merged into main article data, feed, and sitemap at 2026-09-30T23:49Z / 23:51Z.
+
+This is evidence of the receiver reusing the durable rule in its own later public production cycle, not merely agreeing once in the source issue. The later articles do not explicitly rereference Nakagawa Master, so this is not counted as a new person-Origin rereference.
 
 **Publicly verifiable here:** Origin-preserved proposal → explicit receiver adoption and causality statement → durable rule merge → later main/feed/sitemap publication that visibly applies the evidence-lineage distinction.  
 **Not established here:** quantified error-rate reduction, reader/audience scale, reuse by another receiver, a later explicit source rereference in that article, or endorsement of the wider theory corpus.

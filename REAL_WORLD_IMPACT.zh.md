@@ -706,7 +706,7 @@ counterexample、non-fit与failed reproduction同样是有价值的公开证据�
 ## 23. AI-News｜在持续编辑验证中区分URL数量与独立证据root数量
 
 **对象：** [022740mix-spec/AI-News#124](https://github.com/022740mix-spec/AI-News/issues/124) → [PR #131](https://github.com/022740mix-spec/AI-News/pull/131)  
-**当前状态：** receiver明确采用 → 持久编辑规则于2026-09-25合并 → 后续reader-facing main文章继续实际使用该规则
+**当前状态：** receiver明确采用 → 持久编辑规则于2026-09-25合并 → 多个后续reader-facing publication cycle继续实际使用该规则（确认至2026-10-01 JST）
 
 在issue #124中，`Nakagawa-master` 提议把URL数量与**独立证据root数量**分开。该提案区分一次资料、独立观察、派生/转载以及lineage不明，而不是把 `url_count` 直接当成 `evidence_root_count`。
 
@@ -727,6 +727,14 @@ PR #131于2026-09-25T08:42:13Z merge，把这一区分写入repository持续使�
 - 设置不一致、不能直接比较的benchmark数据。
 
 这比draft层的reuse更强：merge后的规则已经在接收方项目、reader-facing公开面中反复运作。
+
+这一规则在2026-09-30 UTC的新一轮公开文章中继续由receiver自行复用：
+
+- [PR #152](https://github.com/022740mix-spec/AI-News/pull/152) 把一个一次资料root与共享同一root的多个二次报道分开，并因官方changelog无法确认而没有把 `2.1.277以后` 的版本说法写成事实。
+- [PR #153](https://github.com/022740mix-spec/AI-News/pull/153) 明确记录一次资料 / 独立观察 / 派生来源的root数量，保留“未确认独立第三方验证”的边界，把Google自报benchmark与独立复现分开，并没有把版本/条件不可比较的数值强行加入全站model comparison。
+- 两个PR均于2026-09-30T23:49Z / 23:51Z merge进入main article data、feed与sitemap。
+
+这说明receiver不是只在源issue里同意一次，而是在自己的后续公开生产流程中反复使用该规则。后续文章本身没有再次明确写出Nakagawa Master来源，因此这里不把它算作新的person-Origin再引用。
 
 **公开可确认：** 保留Origin的提案 → receiver明确采用并说明因果关系 → 持久规则merge → 后续main/feed/sitemap公开文章继续实际运用evidence-lineage区分。  
 **尚未确认：** 误报率的量化改善、reader/audience规模、其他receiver的独立reuse、该后续文章中的对Nakagawa-master的明确来源引用再引用，或对整个理论体系的认可。
