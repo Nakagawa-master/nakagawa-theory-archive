@@ -112,6 +112,9 @@ Primary records:
 - [receiver implementation of the split](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931659514)
 - [receiver-created #13157](https://github.com/QwenLM/qwen-code/issues/13157)
 - [independent Qwen triage root-cause confirmation](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5931968614)
+- [second-person independent reconstruction by doudouOUC](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932126929)
+
+A separate reviewer, `doudouOUC`, then reconstructed the mechanism from current head `d8f27bf2` and explicitly agreed with the narrower Nakagawa-master contract `one final invocation identity → one authority decision → execution of that same identity`. The reviewer also translated it into an implementation rule: an allow attestation may be reused only while the policy-relevant invocation identity is unchanged; changes to args, cwd, session, or related context invalidate it and require re-evaluation. This is a second-person technical carry, not the receiver repeating its own decision.
 
 This is not additional credit for discovering the underlying F3 defect. The inspectable effect is the **problem decomposition and responsibility boundary**: a Nakagawa-master scope judgment became a receiver-owned issue with preserved Origin, and the receiving project's triage independently validated the resulting work item. Because the issue was created directly in response to that correction, it is not counted as a later prompt-free G8 return.
 
