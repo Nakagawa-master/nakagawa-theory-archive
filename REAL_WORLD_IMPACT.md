@@ -1186,6 +1186,9 @@ receiver `yiliang114` はそのscope correctionを受け、`Session.ts`のpre-pe
 - [receiver-created follow-on issue #13157](https://github.com/QwenLM/qwen-code/issues/13157)
 - [Qwen triage independent root-cause confirmation](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5931968614)
 - [current-head focused recheck](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931989989)
+- [別reviewer `doudouOUC` の独立再構成](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932126929)
+
+さらに別reviewer `doudouOUC` はcurrent head `d8f27bf2` を独立に追い、PLAN mode、permission flow、late guard、host-supplied upstream guardまで行単位で再構成しました。そのうえでNakagawa-masterが#13157で提示した **`one final invocation identity → one authority decision → execution of that same identity`** を明示的に支持し、identityが不変なら後段でallow attestationを再利用し、args / cwd / session等が変われば破棄して再評価する最小実装形まで具体化しています。これはreceiver本人やtriage botとは別のsecond-person technical carryです。
 
 ここで追加して数えるのは、F3 defectそのものの発見creditではありません。公開記録で確認できるのは、**Nakagawa-masterのscope判断がreceiver-ownedな別issueと明示的な責務分離へ変換され、その新surfaceでtriageが問題を独立検証したこと**です。
 
