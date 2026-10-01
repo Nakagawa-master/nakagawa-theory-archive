@@ -457,8 +457,9 @@ The current head `881a2af7` is a merge of current `main` into the branch after `
 - [independent reconstruction by `doudouOUC`](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932126929)
 - [receiver alternative recovery commit `b4a13e44`](https://github.com/QwenLM/qwen-code/commit/b4a13e448a6e79bd766f2a7566155d0afd205362)
 - [Nakagawa-master baseline re-check](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5932820014)
+- [receiver sequencing / contract restatement](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5933053970)
 
-The earned evidence remains bounded: Origin-preserved receiver restatement → receiver-owned contract/UI change → independent second-person re-check → scope decomposition into a receiver-owned follow-on → an ordering-preserving receiver implementation that resolves the fatal recovery symptom. #13157 is still a direct follow-on and is not counted as a later prompt-free Origin return.
+The earned evidence remains bounded: Origin-preserved receiver restatement → receiver-owned contract/UI change → independent second-person re-check → scope decomposition into a receiver-owned follow-on → an ordering-preserving receiver implementation that resolves the fatal recovery symptom → the receiver later explicitly keeps #13157 open and restates the narrowed Nakagawa-master policy-stage contract. This is same-receiver Origin-preserved carry, not a later prompt-free Origin return, and no #13157 implementation is claimed.
 
 ### 15. A revision barrier is not authority to release whatever state is current
 
@@ -575,7 +576,7 @@ If an attestation is used, bind it to the **specific guard component and policy 
 
 **Current external design surface — narrowed after an alternative receiver fix:** Qwen Code issue [#13157](https://github.com/QwenLM/qwen-code/issues/13157). The issue began as the guard-ordering half deliberately split from PR #12582. Qwen triage and a second reviewer independently reconstructed the original failure. Nakagawa-master then narrowed the proposed whole-guard attestation approach because `permissionChecked` changes real containment semantics.
 
-Receiver commit `b4a13e44` subsequently removed the **recovery** reason for changing the ordering: an automatic Agent Host permission refusal is now recoverable without moving the guard. The remaining Section 16 question is therefore more precise:
+Receiver commit `b4a13e44` subsequently removed the **recovery-only** reason for changing the ordering: an automatic Agent Host permission refusal is now recoverable without moving the guard. The receiver later explicitly kept #13157 open as the follow-on home for the guard-ordering half and restated Nakagawa-master's narrowed contract — early boundary = Host confinement only; final boundary = the full effective guard exactly once. The remaining Section 16 question is therefore more precise:
 
 ```text
 does early confinement add an independently necessary policy / diagnostic guarantee
@@ -589,6 +590,7 @@ If yes, the early check should still be a narrow policy component rather than a 
 - [policy-stage narrowing](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932658810)
 - [receiver recovery implementation](https://github.com/QwenLM/qwen-code/commit/b4a13e448a6e79bd766f2a7566155d0afd205362)
 - [baseline re-check](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5932820014)
+- [receiver keeps #13157 open and restates the narrowed contract](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5933053970)
 
 No receiver implementation or adoption of the Section 16 early-confinement shape is claimed. The receiver has instead implemented an ordering-preserving recovery path.
 
