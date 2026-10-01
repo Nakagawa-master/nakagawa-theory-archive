@@ -1730,17 +1730,31 @@
           "add repeated-diverse-block regression"
         ]
       },
-      "latest_pending_review": {
+      "provenance_control_path_origin": {
         "submitted_at_utc": "2026-10-01T08:46:27Z",
         "review_id": "5376987496",
-        "boundary": "authenticated service principal versus caller-chosen durable comment provenance",
-        "receiver_response": "pending",
-        "implementation_credit": false
+        "url": "https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5376987496",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action",
+        "summary": "Separated caller-chosen durable comment author labels from the authenticated service principal when downstream worker control logic trusts author identity."
+      },
+      "provenance_control_path_receiver_change": {
+        "response": "https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5930276480",
+        "fix_commit": "9ebf06e8c2c8882f307a18eda3237d62ba4a84b7",
+        "verified_at_head": "cfbbc912448848d1e74a1a9d9955370e4c24d0f5",
+        "mechanisms": [
+          "remove caller-supplied CommentRequest.author",
+          "reject attempted author overrides through extra-forbid request validation",
+          "derive durable comment author from the verified token principal with a fixed external-api fallback",
+          "derive task created_by from the same actor model",
+          "regression proves a worker-identity forgery is rejected and the legitimate comment is delivered as an operator steer rather than skipped as an own comment"
+        ],
+        "focused_recheck": "https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5930685531"
       },
       "current_pr": {
         "url": "https://github.com/NousResearch/hermes-agent/pull/61982",
         "state": "open_unmerged",
-        "observed_head": "4d2fdd134fd92bc8403a19c1abba3d4073100a7e"
+        "observed_head": "cfbbc912448848d1e74a1a9d9955370e4c24d0f5"
       },
       "current_stage": "third_party_code_test_design_or_document_change",
       "not_claimed": [
@@ -1748,7 +1762,6 @@
         "release",
         "production use",
         "user-scale effect",
-        "adoption of the 2026-10-01 pending review",
         "exclusive causality for the whole PR",
         "whole-theory endorsement"
       ],
