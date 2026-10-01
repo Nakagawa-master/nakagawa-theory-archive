@@ -1743,8 +1743,7 @@
         "release",
         "verified user-scale contact",
         "broad person recognition",
-        "implementation of the early-confinement ordering proposal in issue #13157",
-        "merge of PR #12582"
+        "implementation of the early-confinement ordering proposal in issue #13157"
       ],
       "public_human_case": "REAL_WORLD_IMPACT.md#33-qwen-code既発行shareと後から変わるagent-policy実行場所を分ける"
     },
