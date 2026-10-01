@@ -29,6 +29,7 @@ You do not need to know the theory name before using this kit. Start with the fa
 | A capability exists internally and may be mintable by users even though it was intended only for a server or narrow actor | Section 13 |
 | A long-lived share remains valid while the agent's policy, runtime, workspace, or execution placement changes | Section 14 |
 | A revision started legitimately, but the state being finalized later may no longer be the state that was reviewed | Section 15 |
+| A guard / authorization decision was made earlier, but the later execution boundary asks a materially different policy question | Section 16 |
 
 The recurring question is not “was this ever approved?” It is:
 
@@ -430,15 +431,23 @@ The commit does not change authorization behavior. It makes the already-selected
 - [current-head author review](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368473478)
 - [human-readable entry](human-translation/entry-stories/09-same-share-different-runtime.md)
 
-At this record, PR #12582 is still open. The receiver's contract/UI change commit `74bf55053d` remains in the current branch history and was directly re-checked at the latest observed head `f9922e44`: the English frozen contract still names execution placement and managed-host moves, the Chinese frozen contract still names the same consequence, the English/Chinese share copy still says later runtime moves apply to existing shares, and the share dialog still describes live workspace configuration.
+At this record, PR #12582 is still open at head `d8f27bf2`. The receiver's contract/UI change commit `74bf55053d` remains in branch history, but the later F3 closeout also changed the shape of the work.
 
-The heads after `74bf55053d` have continued to change other parts of the stack. `7c42221c` changed config/workspace regression files and completed the then-observed workflow set green; `35aa968a` changed idle host-pickup backoff; `f9922e44` removes duplicated host-auth checks on progress/result routes and reuses named progress limits. None of those later deltas removes the `74bf55053d` contract/share-UI disclosure.
+Nakagawa-master asked the receiver to keep only the narrow **declared Host capability = runnable read-only capability** half in #12582 and move the wider guard-before-permission ordering change to a separate pass. Receiver `yiliang114` implemented that scope correction: the pre-permission Session branch and its ordering regression were removed from #12582, the Host read-only set was centralized in `AGENT_HOST_TOOL_NAMES`, and the ordering half was moved to receiver-created issue [#13157](https://github.com/QwenLM/qwen-code/issues/13157), whose body explicitly names the **scope correction from Nakagawa-master**.
 
-A separate reviewer, `chiga0`, first submitted an **APPROVE** review at `7c42221c` and explicitly re-checked the **“Nakagawa-master question — A2A grant + execution placement”** boundary. That approval was dismissed after later head movement, but the reviewer then re-reviewed the current head `f9922e44` and submitted a fresh **APPROVED** review. The public Origin-preserved second-person restatement therefore persists across the head movement and now coexists with a current-head approval from that reviewer.
+Qwen triage then independently verified #13157 as an observed bug: 10 of 30 scripted out-of-workspace probes ended the whole Host turn through the auto-rejected permission path, and the late `permissionChecked: true` guard short-circuit explains why containment did not run soon enough. A separate reviewer, `doudouOUC`, independently reconstructed the current-head permission/guard order and carried the narrower authority rule into an implementation discussion.
 
-The receiver author also posted current-head verification for `f9922e44`: a full local build is green, the core workspace-agent suites pass 78/78, and the CLI serve-route suites pass 139/139. Remote workflow lanes are still progressing separately, and the PR remains open with requested reviewers still listed; merge, release and real-user-contact credit are not claimed.
+The current #12582 head after the scope split is only a formatting delta over the split head. Some current-head CI lanes are successful and others are still queued or in progress; requested human/code-owner reviewers remain. Merge, release and real-user-contact credit are not claimed.
 
-The earned evidence is therefore: Origin-preserved receiver restatement → same-receiver reuse → receiver-owned contract/UI change → a second reviewer explicitly re-checking and carrying the Nakagawa-origin boundary → current-head independent approval plus current-head local build/test verification. Merge remains a separate, still-open gate.
+- [F3 split decision](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5929070877)
+- [scope correction](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931180237)
+- [receiver implements the split](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931659514)
+- [focused re-check closing the scope objection](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931989989)
+- [receiver-created follow-on #13157](https://github.com/QwenLM/qwen-code/issues/13157)
+- [Qwen triage root-cause confirmation](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5931968614)
+- [independent reconstruction by `doudouOUC`](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932126929)
+
+The earned evidence is therefore broader than the original share disclosure but still bounded: Origin-preserved receiver restatement → same-receiver contract/UI change → independent second-person re-check → a Nakagawa-master scope decision becoming a receiver-owned follow-on issue → independent root-cause reconstruction. #13157 is a direct response to the scope correction, so it is not counted as a later prompt-free Origin return.
 
 ### 15. A revision barrier is not authority to release whatever state is current
 
@@ -487,6 +496,79 @@ authorized to finalize the state that exists now
 This is the same current-authority problem at a later consequence boundary. A begin receipt is historical evidence. Barrier release is a new action whose target lineage and current state still need to match the authority that is being exercised.
 
 **Current external problem surface — not a Nakagawa-effect claim:** [agentrof/agent-marketplace issue #322](https://github.com/agentrof/agent-marketplace/issues/322) independently reports a stale checkout publishing an older execution plan / pinned contract and notes that a later `finish-plan-revision` can release the barrier on top of that stale publication. The issue already proposes blocking stale publication and binding barrier ownership. The regression above isolates an additional defense-in-depth question: whether barrier release itself revalidates the current published lineage. No receiver response, implementation, or adoption of this Nakagawa-derived regression is claimed here.
+
+
+### 16. The same invocation identity does not make two policy stages the same authority question
+
+A system can evaluate the same apparent operation twice while the **meaning of the policy question changes between stages**.
+
+A concrete shape is:
+
+```text
+tool invocation X is built
+→ early confinement policy asks whether X is inside the assigned boundary
+→ normal permission / approval flow runs
+→ final host policy evaluates X with post-permission semantics
+→ execution begins
+```
+
+It is tempting to cache the first allow and reuse it later because the tool name and arguments still look identical. That is only sound if the attested policy component has the same inputs and semantics at both boundaries.
+
+A stronger distinction is:
+
+```text
+same invocation identity
+!=
+same authority question
+```
+
+If a runtime field, policy stage, current actor context, execution directory, policy revision, or other authority-relevant condition changes the meaning of the guard, a cached allow from the earlier stage must not silently replace the later decision.
+
+A useful implementation pattern is to split the layers:
+
+```text
+early boundary
+→ evaluate only the policy that must run before prompting
+→ deny early when that narrow boundary fails
+
+normal permission flow
+
+final consequence boundary
+→ evaluate the full effective authority once
+→ use final normalized args / cwd / session / invocation context
+→ execute only after that decision allows
+```
+
+This avoids two opposite failures:
+
+- **too late:** a confinement denial happens only after a non-interactive permission path has already killed the whole turn;
+- **too broad a cache:** an early allow suppresses a later guard whose semantics are intentionally different.
+
+Useful regressions:
+
+```text
+outside-boundary call
+→ early narrow guard denies before permission RPC
+→ recoverable tool refusal
+→ zero execution
+```
+
+```text
+allowed call
+→ early narrow guard allows
+→ final full guard runs exactly once on final execution state
+→ final upstream/host denial still prevents execution
+```
+
+If an attestation is used, bind it to the **specific guard component and policy semantics** it represents, not merely to a call ID or argument hash.
+
+**Current external design surface — implementation not yet claimed:** Qwen Code issue [#13157](https://github.com/QwenLM/qwen-code/issues/13157). The issue exists because a guard-ordering change was deliberately split from PR #12582. Qwen triage independently confirmed the observed failure and current ordering. A second reviewer independently reconstructed the mechanism. Nakagawa-master then narrowed the proposed whole-guard attestation approach: because `permissionChecked` changes actual daemon containment semantics, the safer minimal shape is early Host confinement plus one final full guard, rather than reusing a whole-composite allow across the false→true policy transition.
+
+- [single-authority-decision contract](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932013438)
+- [second-person reconstruction](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932126929)
+- [policy-stage narrowing](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932658810)
+
+No receiver implementation or adoption of this final narrowed shape is claimed yet.
 
 
 ## Implementation pattern
