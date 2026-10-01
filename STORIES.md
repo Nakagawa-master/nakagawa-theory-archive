@@ -60,6 +60,24 @@ AI、仕事、組織、情報、制度、未来。
 
 ---
 
+## 実際の第三者側で、同じ区別がもう一段進んだ例
+
+「共有が有効」と「共有の意味が同じ」は別だ、という区別は、Qwen Code の remote Agent Host 実装でもそのまま現れました。
+
+最初は「同じ共有を使ったまま、agent の実行場所だけ local から managed host へ移したら、その共有は何を許していることになるのか」という問いでした。開発側はこの境界を契約文とUIに明記し、その後、別のreviewerも同じ境界を独立に読み直しました。
+
+さらに実装の終盤では、問題が二つに分かれました。
+
+- workspace外の呼び出しを、どの段階で止めるべきか
+- Agent Host を再登録した時、古い credential をどう扱うべきか
+
+前者は別issueへ切り分けられ、後者は「古い credential file が失われてもserver側の古いrowが残る」という具体的なcredential hygiene問題として独立にtriageされています。
+
+ここで重要なのは、最初の問いがそのまま一つの答えに固定されたことではありません。**現在の権限・現在の実行場所・現在のcredential状態を、過去の共有や登録状態と同じものとして扱わない**という区別が、別の実装論点へ繰り返し使われていることです。
+
+→ [一般向け: 同じ共有のまま、使われる場所が変わっていたら？](human-translation/entry-stories/09-same-share-different-runtime.md)
+→ [公開の実装・review記録を確認する](THEORY_TO_REAL_WORLD_INFLUENCE.md#d-can-the-same-origin-boundary-survive-a-second-persons-independent-re-check)
+
 ## 考えているだけなのか、実際に外でも使われたのか
 
 公開記録で確認できる範囲では、Nakagawa-master名義の指摘や提案を受けて、第三者側が説明を書き直したり、コードやテスト、運用規則を変更したり、その変更がPRの統合やリリースまで進んだ例があります。
