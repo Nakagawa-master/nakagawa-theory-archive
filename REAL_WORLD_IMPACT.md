@@ -1137,7 +1137,7 @@ issue authorはその後、per-agentをdefaultにする方向へ同意し、PR #
 ## 33. Qwen Code｜既発行shareと、後から変わるagent policy・実行場所を分ける
 
 **対象:** [QwenLM/qwen-code PR #12851](https://github.com/QwenLM/qwen-code/pull/12851) → [PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)  
-**現在状態:** #12851でOrigin付きreceiver restatementとlive-policy整理 → #12851 merge → #12582で実行場所という新しい境界 → @Nakagawa-master付きreceiver返答 → frozen contractと英中share UIをcommit `74bf55053d`で変更 → 別reviewer `chiga0` がNakagawa-master境界を明示して再検証・approval → その後maintainer-drivenな実機2-host検証でtransport reliability問題を発見 → receiverがcommit `e69ce77221`でF1/F2/F4等を修正 → current head `53b15769` の6 workflowはsuccess → F3のtool/permission契約判断とmerge/releaseは未完了
+**現在状態:** #12851でOrigin付きreceiver restatementとlive-policy整理 → #12851 merge → #12582で実行場所という新しい境界 → @Nakagawa-master付きreceiver返答 → frozen contractと英中share UIをcommit `74bf55053d`で変更 → 別reviewer `chiga0` がNakagawa-master境界を明示して再検証・approval → maintainer-driven実機2-host検証後にreceiverがF1/F2/F4等を修正 → F3ではNakagawa-masterのscope判断に従い「declared=runnable tool filter」を#12582へ残し、guard/permission orderingを新issue #13157へ分離 → receiverが#13157本文でNakagawa-masterのscope correctionを明示 → triageが10/30の実測failureとroot causeを独立確認 → current head `d8f27bf2` / CI進行中 → #12582 merge/release未完了
 
 PR #12851では、Nakagawa-masterが、share発行後に同じagentの能力が変わった場合、既発行shareが何をauthorizeするのかを明示的に選ぶ必要があると指摘しました。
 
@@ -1174,8 +1174,23 @@ receiverは **“@Nakagawa-master Good catch”** と返答し、commit `74bf550
 - [maintainer real two-host verification](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926085407)
 - [receiver round-3 fix response](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926562535)
 
-**公開記録から確認できること:** Nakagawa-masterがpolicy変更とexecution-placement変更を別々の具体的authority境界として提示 → receiverがOrigin付きで再説明 → receiver自身がcontractとuser-facing share UIを変更 → 別reviewerがNakagawa-master境界を明示して独立に再検証・carry。  
-**まだ確認できないこと:** PR #12582のmerge・release・実利用者数、一般ユーザーがこの変更へ接触したこと、このfollow-onからのprompt-freeな後日の人物Origin return、広い人間認知。
+F3ではさらに、問題そのものだけでなく**変更scopeの分解**が外部側の新しい作業単位になりました。receiverは当初、declared-tool filterとguard-before-permission orderingを同じheadへ入れましたが、Nakagawa-masterは「このPRではdeclared capability = runnable read-only capabilityだけを閉じ、session/permission orderingは別passへ分離する」と明示しました。
+
+receiver `yiliang114` はそのscope correctionを受け、`Session.ts`のpre-permission guard変更を#12582から外し、read-only tool setを単一の `AGENT_HOST_TOOL_NAMES` へ集約したうえで、新issue [#13157](https://github.com/QwenLM/qwen-code/issues/13157) を作成しました。issue本文は、この変更が **“removed from #12582 at review's request (scope correction from Nakagawa-master)”** であることを明記しています。
+
+その後Qwenのtriageは#13157を独立に読み、30回のscripted out-of-workspace probeのうち10回でpermission auto-rejectによりturn全体が失敗したこと、late guardが `permissionChecked: true` のためworktree confinement checkをshort-circuitすることをroot causeとして確認しました。triageはこのissueをF3のguard-ordering halfの正式な追跡先として受理しています。
+
+- [Nakagawa-master F3 split decision](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5929070877)
+- [Nakagawa-master scope correction](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931180237)
+- [receiver response implementing the split](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931659514)
+- [receiver-created follow-on issue #13157](https://github.com/QwenLM/qwen-code/issues/13157)
+- [Qwen triage independent root-cause confirmation](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5931968614)
+- [current-head focused recheck](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931989989)
+
+ここで追加して数えるのは、F3 defectそのものの発見creditではありません。公開記録で確認できるのは、**Nakagawa-masterのscope判断がreceiver-ownedな別issueと明示的な責務分離へ変換され、その新surfaceでtriageが問題を独立検証したこと**です。
+
+**公開記録から確認できること:** Nakagawa-masterがpolicy変更とexecution-placement変更を別々の具体的authority境界として提示 → receiverがOrigin付きで再説明 → receiver自身がcontractとuser-facing share UIを変更 → 別reviewerがNakagawa-master境界を明示して独立に再検証・carry → 後続F3 scope判断がreceiver-owned issue #13157としてOriginを保持し、triageで独立root-cause検証されたこと。  
+**まだ確認できないこと:** PR #12582のmerge・release・実利用者数、一般ユーザーがこの変更へ接触したこと、#13157の実装・merge、広い人間認知。#13157はreceiverがscope correctionへの直接応答として作成したため、それ自体をprompt-freeな後日G8とは数えません。
 
 → [一般向けの入口](human-translation/entry-stories/09-same-share-different-runtime.md)  
 → [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
