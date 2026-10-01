@@ -1186,7 +1186,7 @@ receiverは **“@Nakagawa-master Good catch”** と返答し、commit `74bf550
 ## 34. Hermes Agent｜「PATCHが失敗した」と「何も変更されていない」を同じにしない
 
 **対象:** [NousResearch/hermes-agent PR #61982](https://github.com/NousResearch/hermes-agent/pull/61982)  
-**現在状態:** mixed PATCH atomicityの指摘 → receiverがsingle-transaction実装とexact regressionを追加 → focused re-checkで当該scopeを閉じる → 同じreceiverが後にNakagawa-masterへ再reviewを依頼 → 別のsecret-strength境界もreceiverが明示的に同意してcode/tests/docsへ修正 → PR open / merge・release未確認。
+**現在状態:** mixed PATCH atomicityの指摘 → receiverがsingle-transaction実装とexact regressionを追加 → focused re-checkで当該scopeを閉じる → 同じreceiverが後にNakagawa-masterへ再reviewを依頼 → 別のsecret-strength境界もreceiverが明示的に同意してcode/tests/docsへ修正 → さらに2026-10-01のprovenance/control-path境界もreceiverが明示的に同意し、verified principal由来のauthor/created_byと実control-path regressionへ修正 → PR open / merge・release未確認。
 
 外部control planeが一回のPATCHで「担当者」と「タイトル」を同時に変更するとします。もし担当者変更だけ先にcommitされ、その直後に別actorがtaskをcomplete / archiveし、タイトル変更が拒否されたら、APIは409を返しても、実際には一部だけ状態が変わっています。
 
@@ -1207,7 +1207,15 @@ receiverはその後、**“Thanks @Nakagawa-master for re-checking the mixed-PA
 - [Nakagawa-master secret-strength review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5339797749)
 - [receiver response and fix](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5878240135)
 
-2026-10-01には同PRへの新しいreviewも行われていますが、その新しいprovenance findingはreceiver response前です。本ページでは、**既に第三者側のcode / tests / docs変更まで確認できる上記二つだけ**を実装済み事例として扱います。
+2026-10-01の3つ目のreviewでは、Kanban REST commentのcaller-supplied `author` と、token-auth seamが検証したservice principalが別物である点を指摘しました。これは監査表示だけの問題ではありません。live comment bridgeはworker自身のauthor名と一致するcommentを「own comment」としてskipするため、callerがworker名を選べると、本来operator steerとして届くcommentを抑止できました。
 
-**公開記録から確認できること:** concrete atomicity review → receiver code/test change → exact regression → focused re-check → 同receiverからの継続的な再接触 → 別のsecret-strength境界でもreceiverが明示的に同意してcode/tests/docsを変更。  
-**まだ確認できないこと:** PR #61982のmerge・release・production use、利用者規模、2026-10-01の新reviewの採用、広い人物認知、PR全体がNakagawa-masterの指摘だけで作られたという因果。
+receiverは **“Agreed: the authenticated principal and the caller-chosen provenance label were two different things.”** と明示し、commit `9ebf06e8c2` で `CommentRequest.author` を削除、余分なauthor overrideを422で拒否、durable comment authorとtask `created_by` をverified principal由来へ統一しました。回帰testは保存値だけでなく、`author="worker-bot"` 偽装が拒否され、正規commentが `kanban-api` として保存され、実際にoperator steerとしてworkerへ届くことまで固定しています。
+
+- [Nakagawa-master provenance/control-path review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5376987496)
+- [receiver response](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5930276480)
+- [receiver fix commit `9ebf06e8c2`](https://github.com/NousResearch/hermes-agent/commit/9ebf06e8c2c8882f307a18eda3237d62ba4a84b7)
+
+Nakagawa-masterはcurrent head `cfbbc91244` でこのscopeを再確認し、このprovenance/control-path pointにはremaining blockerがないと返しています。
+
+**公開記録から確認できること:** concrete atomicity review → receiver code/test change → exact regression → focused re-check → 同receiverからの継続的な再接触 → secret-strength境界の明示的採用 → さらに別のprovenance/control-path境界でもreceiverが明示的に同意しcode/test変更 → current-head focused re-checkで当該scope close。  
+**まだ確認できないこと:** PR #61982のmerge・release・production use、利用者規模、広い人物認知、PR全体がNakagawa-masterの指摘だけで作られたという因果。

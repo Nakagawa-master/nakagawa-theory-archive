@@ -1069,7 +1069,7 @@ Later, maintainer `wenshao` exercised head `18f576f4` with a macOS coordinator, 
 ## 34. Hermes Agent | A failed PATCH is not the same as “nothing changed”
 
 **Surface:** [NousResearch/hermes-agent PR #61982](https://github.com/NousResearch/hermes-agent/pull/61982)  
-**Current state:** mixed-PATCH atomicity finding → receiver moved the combined update into one transaction and added the exact regression → focused re-check closed that scope → the same receiver later requested Nakagawa-master review again → a separate secret-strength boundary was explicitly accepted and changed in code/tests/docs → PR remains open; merge/release are not verified.
+**Current state:** mixed-PATCH atomicity finding → receiver moved the combined update into one transaction and added the exact regression → focused re-check closed that scope → the same receiver later requested Nakagawa-master review again → a separate secret-strength boundary was explicitly accepted and changed in code/tests/docs → a third 2026-10-01 provenance/control-path boundary was explicitly accepted and changed so durable author/created_by derive from the verified principal with an operational regression → PR remains open; merge/release are not verified.
 
 Imagine an external control plane sends one PATCH that changes both a task's assignee and its title. If the assignee change commits first, another actor completes or archives the task, and the title edit is then rejected, the API can return 409 even though part of the requested mutation already happened.
 
@@ -1090,7 +1090,15 @@ A separate later review on the same receiver line addressed a different boundary
 - [Nakagawa-master secret-strength review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5339797749)
 - [receiver response and fix](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5878240135)
 
-A new review was submitted on 2026-10-01, but that provenance finding has not yet received a receiver response. This page counts only the two boundaries above for which third-party code/tests/docs changes are already public.
+A third review on 2026-10-01 separated a caller-chosen comment `author` from the service principal verified by the token-auth seam. This was operational, not merely cosmetic: the live comment bridge skips comments whose author matches the worker's own identity, so letting the caller choose that identity could suppress a real operator steer.
 
-**Publicly verifiable here:** atomicity review → receiver code/test change → exact regression → focused re-check → continuing return from the same receiver → a separate secret-strength review explicitly accepted and implemented in code/tests/docs.  
-**Not established here:** merge/release of PR #61982, production use, user scale, adoption of the 2026-10-01 review, broad person recognition, or exclusive causality for the whole PR.
+The receiver replied **“Agreed: the authenticated principal and the caller-chosen provenance label were two different things.”** and changed commit `9ebf06e8c2`: `CommentRequest.author` was removed, an attempted override is rejected with 422, durable comment author and task `created_by` derive from the verified principal, and the regression exercises the live control consequence—an `author="worker-bot"` forgery is refused while the legitimate comment is stored as `kanban-api` and delivered as an operator steer.
+
+- [Nakagawa-master provenance/control-path review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5376987496)
+- [receiver response](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5930276480)
+- [receiver fix commit `9ebf06e8c2`](https://github.com/NousResearch/hermes-agent/commit/9ebf06e8c2c8882f307a18eda3237d62ba4a84b7)
+
+Nakagawa-master re-checked current head `cfbbc91244` and reported no remaining blocker on this provenance/control-path point.
+
+**Publicly verifiable here:** atomicity review → receiver code/test change → exact regression → focused re-check → continuing return from the same receiver → secret-strength boundary explicitly accepted and implemented → a third provenance/control-path boundary explicitly accepted and implemented with an operational regression → focused current-head re-check closed that scope.  
+**Not established here:** merge/release of PR #61982, production use, user scale, broad person recognition, or exclusive causality for the whole PR.

@@ -1074,7 +1074,7 @@ receiver回复 **“@Nakagawa-master Good catch”**，并在commit `74bf55053d`
 ## 34. Hermes Agent｜“PATCH失败”不等于“什么都没有改变”
 
 **对象：** [NousResearch/hermes-agent PR #61982](https://github.com/NousResearch/hermes-agent/pull/61982)  
-**当前状态：** mixed PATCH atomicity指摘 → receiver改为single-transaction并加入exact regression → focused re-check关闭该scope → 同一receiver之后再次请求Nakagawa-master review → 另一条secret-strength边界也被receiver明确接受并进入code/tests/docs → PR仍open；merge/release尚未确认。
+**当前状态：** mixed PATCH atomicity指摘 → receiver改为single-transaction并加入exact regression → focused re-check关闭该scope → 同一receiver之后再次请求Nakagawa-master review → 另一条secret-strength边界也被receiver明确接受并进入code/tests/docs → 2026-10-01第三条provenance/control-path边界也被receiver明确接受，并改为由verified principal决定durable author/created_by，同时加入真实control-path regression → PR仍open；merge/release尚未确认。
 
 假设外部control plane用一次PATCH同时修改task的assignee和title。如果assignee先commit，紧接着另一actor把task complete / archive，随后title修改被拒绝，那么API可以返回409，但系统状态实际上已经被改了一部分。
 
@@ -1095,7 +1095,15 @@ receiver随后明确写道 **“Thanks @Nakagawa-master for re-checking the mixe
 - [Nakagawa-master secret-strength review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5339797749)
 - [receiver response and fix](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5878240135)
 
-2026-10-01同PR又收到一条新的review，但新的provenance finding尚未收到receiver response。因此本页只把上面两条已经出现第三方code/tests/docs变化的边界记作已实现案例。
+2026-10-01第三条review区分了caller可自行填写的comment `author` 与token-auth seam实际验证的service principal。这个问题不只是显示归属：live comment bridge会跳过author与worker自身identity相同的comment，因此caller如果能选择worker名，就可能把真正的operator steer伪装成“worker自己的comment”并使其被skip。
 
-**公开可确认：** atomicity review → receiver code/test change → exact regression → focused re-check → 同一receiver持续返回 → 另一条secret-strength review被明确接受并进入code/tests/docs。  
-**尚未确认：** PR #61982 merge/release、production use、用户规模、2026-10-01新review的采用、广泛人物认知，或整个PR都由Nakagawa-master单独造成。
+receiver明确回复 **“Agreed: the authenticated principal and the caller-chosen provenance label were two different things.”**，并在commit `9ebf06e8c2` 中删除 `CommentRequest.author`，把author override变成422，durable comment author与task `created_by` 都改为verified principal派生。回归test也覆盖真实控制后果：`author="worker-bot"` 的伪造被拒绝，正常comment以 `kanban-api` 保存并确实作为operator steer送到worker。
+
+- [Nakagawa-master provenance/control-path review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5376987496)
+- [receiver response](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5930276480)
+- [receiver fix commit `9ebf06e8c2`](https://github.com/NousResearch/hermes-agent/commit/9ebf06e8c2c8882f307a18eda3237d62ba4a84b7)
+
+Nakagawa-master随后在current head `cfbbc91244` 上focused re-check，并确认这一provenance/control-path point没有remaining blocker。
+
+**公开可确认：** atomicity review → receiver code/test change → exact regression → focused re-check → 同一receiver持续返回 → secret-strength边界明确采用并实现 → 第三条provenance/control-path边界再次被明确采用并进入code/test → current-head focused re-check关闭该scope。  
+**尚未确认：** PR #61982 merge/release、production use、用户规模、广泛人物认知，或整个PR都由Nakagawa-master单独造成。
