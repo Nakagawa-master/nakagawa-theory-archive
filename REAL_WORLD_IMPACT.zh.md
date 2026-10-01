@@ -1082,6 +1082,9 @@ receiver `yiliang114` 接受这一scope correction：从#12582移除pre-permissi
 
 - [receiver alternative F3 recovery commit `b4a13e44`](https://github.com/QwenLM/qwen-code/commit/b4a13e448a6e79bd766f2a7566155d0afd205362)
 - [Nakagawa-master current-baseline recheck](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5932820014)
+- [receiver sequencing / latest contract restatement](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5933053970)
+
+随后receiver `yiliang114` 明确表示#13157继续作为guard-ordering half的follow-on home，并把最新contract重新表述为 **“@Nakagawa-master's latest: early boundary = Host confinement only, full effective guard exactly once at the final boundary.”** 这是同一receiver继续保留Origin的technical carry；不把它算作#13157已经实现，也不算prompt-free G8。receiver同时把#13122分离成应在#12582 merge前修复的security blocker；这条独立defect/fix路径不增加Nakagawa因果credit。
 
 这里不把它记成对guard-ordering方案的采用。更窄的可验证作用是：scope split之后，receiver选择了**保持ordering不变的替代实现**，并用回归test解决致命的turn-recovery症状。#13157剩余工作现在需要以early confinement的独立policy/diagnostic价值为理由，而不能继续把turn recovery当作前置理由。
 
