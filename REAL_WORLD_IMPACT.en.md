@@ -1034,7 +1034,7 @@ A different participant then reused the same scope-identity-versus-admission dis
 ## 33. Qwen Code | Separate an already-issued share from later changes to agent policy and execution placement
 
 **Surface:** [QwenLM/qwen-code PR #12851](https://github.com/QwenLM/qwen-code/pull/12851) → [PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)  
-**Current state:** Origin-preserving receiver restatement and live-policy clarification on #12851 → #12851 merged → new execution-placement boundary on #12582 → receiver response explicitly naming @Nakagawa-master → frozen contract and English/Chinese share UI changed in commit `74bf55053d` → independent reviewer `chiga0` explicitly rechecked the Nakagawa-master boundary and approved an observed head → later real two-host maintainer verification found transport reliability defects → receiver fixed F1/F2/F4 and related items in `e69ce77221` → six workflows are successful on current head `53b15769`; F3 and merge/release remain open.
+**Current state:** Origin-preserving receiver restatement and live-policy clarification on #12851 → #12851 merged → new execution-placement boundary on #12582 → receiver response explicitly naming @Nakagawa-master → frozen contract and English/Chinese share UI changed in commit `74bf55053d` → independent reviewer `chiga0` explicitly rechecked the Nakagawa-master boundary and approved an observed head → after real two-host maintainer verification the receiver fixed F1/F2/F4 and related items → for F3, the Nakagawa-master scope decision kept the declared=runnable tool-filter half in #12582 and moved guard/permission ordering to receiver-created issue #13157 → #13157 explicitly preserves the Nakagawa-master scope-correction origin → Qwen triage independently verified the 10/30 observed failures and root cause → current head `d8f27bf2`, CI in progress; merge/release remain open.
 
 PR #12851 raised a long-lived authority question: after a share is issued, what happens if the same agent's capabilities later change? The receiver explicitly restated the Nakagawa-master question and documented the product's chosen live-policy behavior.
 
@@ -1057,8 +1057,23 @@ Later, maintainer `wenshao` exercised head `18f576f4` with a macOS coordinator, 
 - [maintainer real two-host verification](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926085407)
 - [receiver round-3 fix response](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926562535)
 
-**Publicly verifiable here:** concrete authority boundary → receiver Origin-preserving restatement → contract/UI change → independent second-person recheck carrying the Nakagawa-master boundary → later real-machine validation and receiver fixes.  
-**Not established here:** merge/release of #12582, real-user scale, broad person recognition, or a later prompt-free person-Origin return from this follow-on.
+F3 then produced a second kind of external effect: **scope decomposition itself became a receiver-owned work item.** The receiver initially landed both the declared-tool filter and a guard-before-permission ordering change on the same head. Nakagawa-master explicitly asked to close only `declared capability = runnable read-only capability` in #12582 and move the wider session/permission ordering change to a separate pass.
+
+Receiver `yiliang114` applied that correction: the pre-permission `Session.ts` branch was removed from #12582, the read-only tool set was consolidated into a single `AGENT_HOST_TOOL_NAMES` source, and receiver-owned issue [#13157](https://github.com/QwenLM/qwen-code/issues/13157) was created. The issue body explicitly says the ordering change was **“removed from #12582 at review's request (scope correction from Nakagawa-master)”**.
+
+Qwen triage then independently analyzed #13157. It confirmed that 10 of 30 scripted out-of-workspace probes ended the whole turn via an auto-rejected permission prompt, and traced the root cause to the late guard's `permissionChecked: true` short-circuit. The triage accepted #13157 as the sanctioned home for the guard-ordering half.
+
+- [Nakagawa-master F3 split decision](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5929070877)
+- [Nakagawa-master scope correction](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931180237)
+- [receiver response implementing the split](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931659514)
+- [receiver-created follow-on issue #13157](https://github.com/QwenLM/qwen-code/issues/13157)
+- [Qwen triage independent root-cause confirmation](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5931968614)
+- [current-head focused recheck](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931989989)
+
+This does **not** add Nakagawa credit for discovering the underlying F3 defect. The narrower public record is that a Nakagawa-master scope judgment was converted into an explicit receiver-owned responsibility split and new issue, where the receiver's triage independently verified the bug and root cause.
+
+**Publicly verifiable here:** concrete authority boundary → receiver Origin-preserving restatement → contract/UI change → independent second-person recheck carrying the Nakagawa-master boundary → later real-machine validation and receiver fixes → a later scope decision becomes receiver-owned issue #13157 with preserved Origin and independent root-cause verification.  
+**Not established here:** merge/release of #12582, real-user scale, implementation/merge of #13157, or broad person recognition. Because #13157 was created as a direct receiver response to the scope correction, it is not counted here as a later prompt-free G8 return.
 
 → [Human entry story](human-translation/entry-stories/09-same-share-different-runtime.md)  
 → [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
