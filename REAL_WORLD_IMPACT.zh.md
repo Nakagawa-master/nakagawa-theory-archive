@@ -1074,6 +1074,9 @@ receiver `yiliang114` 接受这一scope correction：从#12582移除pre-permissi
 - [receiver-created follow-on issue #13157](https://github.com/QwenLM/qwen-code/issues/13157)
 - [Qwen triage independent root-cause confirmation](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5931968614)
 - [current-head focused recheck](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931989989)
+- [reviewer `doudouOUC` 的独立重构](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932126929)
+
+另一位reviewer `doudouOUC` 随后独立追踪current head `d8f27bf2` 的PLAN mode、permission flow、late guard和host-supplied upstream guard，并明确同意Nakagawa-master在#13157提出的 **`one final invocation identity → one authority decision → execution of that same identity`** 不变式。reviewer进一步给出最小实现：只有invocation identity未变化时才复用allow attestation；如果args、cwd、session或其他policy相关context变化，则丢弃并重新评估。这是独立于receiver与triage bot的second-person technical reconstruction。
 
 这里**不**把F3 defect本身的发现算作新增Nakagawa credit。更窄、可验证的事实是：Nakagawa-master的scope判断被转换成明确的receiver-owned责任分离与新issue，而receiver的triage又在这个新surface上独立验证了bug与root cause。
 
