@@ -1039,7 +1039,7 @@ issue author随后表示per-agent应作为default，并指出PR #43410正在实�
 ## 33. Qwen Code｜区分已经发出的share与之后变化的agent policy / execution placement
 
 **对象：** [QwenLM/qwen-code PR #12851](https://github.com/QwenLM/qwen-code/pull/12851) → [PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)  
-**当前状态：** #12851出现保留Origin的receiver restatement与live-policy整理 → #12851 merge → #12582出现execution-placement新边界 → receiver明确@Nakagawa-master回应 → commit `74bf55053d` 修改frozen contract与英中share UI → 独立reviewer `chiga0` 明确重新检查Nakagawa-master边界并对一个observed head给出approval → maintainer真实双Host验证后receiver修复F1/F2/F4等 → F3按照Nakagawa-master的scope判断，把declared=runnable tool-filter部分留在#12582，把guard/permission ordering移到receiver新建issue #13157 → #13157正文明确保留Nakagawa-master scope-correction Origin → Qwen triage独立确认10/30实测failure与root cause → current head `d8f27bf2`，CI进行中；merge/release仍未完成。
+**当前状态：** #12851出现保留Origin的receiver restatement与live-policy整理 → #12851 merge → #12582出现execution-placement新边界 → receiver明确@Nakagawa-master回应 → commit `74bf55053d` 修改frozen contract与英中share UI → 独立reviewer `chiga0` 明确重新检查Nakagawa-master边界 → maintainer真实双Host验证后receiver修复F1/F2/F4等 → F3按照Nakagawa-master的scope判断，把declared=runnable tool-filter部分留在#12582，把guard/permission ordering移到#13157 → triage与另一reviewer独立重构#13157 → receiver commit `b4a13e44` 在不改变permission/guard ordering的情况下，把Host自动permission拒绝改成可恢复的 `EXECUTION_DENIED` → current head `881a2af7`，CI与新的pickup credential-revocation review finding仍在进行；merge/release未完成。
 
 PR #12851提出了一个长期authority问题：share发出后，如果同一个agent的能力发生变化，旧share到底继续authorize什么？receiver明确重新说明Nakagawa-master提出的问题，并记录产品选择的是按使用时current agent定义工作的live-policy。
 
@@ -1077,6 +1077,13 @@ receiver `yiliang114` 接受这一scope correction：从#12582移除pre-permissi
 - [reviewer `doudouOUC` 的独立重构](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932126929)
 
 另一位reviewer `doudouOUC` 随后独立追踪current head `d8f27bf2` 的PLAN mode、permission flow、late guard和host-supplied upstream guard，并明确同意Nakagawa-master在#13157提出的 **`one final invocation identity → one authority decision → execution of that same identity`** 不变式。reviewer进一步给出最小实现：只有invocation identity未变化时才复用allow attestation；如果args、cwd、session或其他policy相关context变化，则丢弃并重新评估。这是独立于receiver与triage bot的second-person technical reconstruction。
+
+随后receiver在 [`b4a13e44`](https://github.com/QwenLM/qwen-code/commit/b4a13e448a6e79bd766f2a7566155d0afd205362) 选择了另一种scope内解法：不把guard-ordering改动放回#12582，而是把Agent Host自动permission拒绝从terminal user cancel改成可恢复的 `EXECUTION_DENIED`，普通user cancel仍保持terminal。回归test确认被拒绝的read不会执行，而且Host可以继续执行后续允许的read-only tool。Nakagawa-master在current baseline上重新检查后指出，PR正文与#13157仍写着“拒绝会结束run”的旧premise，需要随新实现重置。
+
+- [receiver alternative F3 recovery commit `b4a13e44`](https://github.com/QwenLM/qwen-code/commit/b4a13e448a6e79bd766f2a7566155d0afd205362)
+- [Nakagawa-master current-baseline recheck](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5932820014)
+
+这里不把它记成对guard-ordering方案的采用。更窄的可验证作用是：scope split之后，receiver选择了**保持ordering不变的替代实现**，并用回归test解决致命的turn-recovery症状。#13157剩余工作现在需要以early confinement的独立policy/diagnostic价值为理由，而不能继续把turn recovery当作前置理由。
 
 这里**不**把F3 defect本身的发现算作新增Nakagawa credit。更窄、可验证的事实是：Nakagawa-master的scope判断被转换成明确的receiver-owned责任分离与新issue，而receiver的triage又在这个新surface上独立验证了bug与root cause。
 
