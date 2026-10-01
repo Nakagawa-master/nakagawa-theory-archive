@@ -98,9 +98,22 @@ Primary records:
 - [Same reviewer current-head APPROVED re-check at `f9922e44`](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368634260)
 - [Qwen Code #12582](https://github.com/QwenLM/qwen-code/pull/12582)
 
-The first second-person review was submitted as an approval at head `7c42221c` and was dismissed when the PR head moved. The same reviewer, `chiga0`, then re-read the later delta and submitted a fresh **APPROVED** review at current head `f9922e44`.
+The first second-person review was submitted as an approval at head `7c42221c` and was dismissed when the PR head moved. The same reviewer, `chiga0`, then re-read the later delta and submitted a fresh **APPROVED** review at head `f9922e44`.
 
 That makes the second-person carry stronger than a one-head snapshot: the reviewer independently reconstructed the Nakagawa-origin boundary, then continued reviewing the line after later receiver changes. It is still **not merge credit**. The PR remains open and the repository's separate code-owner / maintainer review gate is not established as complete by this review alone.
+
+A later #12582 closeout produced a different, narrower Origin-preserved effect. When F3 had two separable halves — a declared-tool/runtime mismatch and a wider guard-before-permission ordering change — Nakagawa-master explicitly asked to land only the tool-filter half in #12582 and move the ordering half to a separate pass. Receiver `yiliang114` implemented that scope correction, centralized the Host read-only set in `AGENT_HOST_TOOL_NAMES`, and created [issue #13157](https://github.com/QwenLM/qwen-code/issues/13157). The new issue explicitly names the **“scope correction from Nakagawa-master”** as the reason the ordering change was removed from #12582.
+
+Qwen triage then independently verified the follow-on problem: 10 of 30 scripted out-of-workspace probes had ended the whole Host turn through permission auto-reject, and the late guard's `permissionChecked: true` short-circuit explained why confinement was not re-established. The triage accepted #13157 as the sanctioned home for that half of F3.
+
+Primary records:
+- [F3 split decision](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5929070877)
+- [scope correction](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931180237)
+- [receiver implementation of the split](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931659514)
+- [receiver-created #13157](https://github.com/QwenLM/qwen-code/issues/13157)
+- [independent Qwen triage root-cause confirmation](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5931968614)
+
+This is not additional credit for discovering the underlying F3 defect. The inspectable effect is the **problem decomposition and responsibility boundary**: a Nakagawa-master scope judgment became a receiver-owned issue with preserved Origin, and the receiving project's triage independently validated the resulting work item. Because the issue was created directly in response to that correction, it is not counted as a later prompt-free G8 return.
 
 ### What these four checks do — and do not — show
 
