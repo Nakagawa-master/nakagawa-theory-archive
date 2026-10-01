@@ -1039,7 +1039,7 @@ issue author随后表示per-agent应作为default，并指出PR #43410正在实�
 ## 33. Qwen Code｜区分已经发出的share与之后变化的agent policy / execution placement
 
 **对象：** [QwenLM/qwen-code PR #12851](https://github.com/QwenLM/qwen-code/pull/12851) → [PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)  
-**当前状态：** #12851出现保留Origin的receiver restatement与live-policy整理 → #12851 merge → #12582出现execution-placement新边界 → receiver明确@Nakagawa-master回应 → commit `74bf55053d` 修改frozen contract与英中share UI → 独立reviewer `chiga0` 明确重新检查Nakagawa-master边界并对一个observed head给出approval → 后续maintainer真实双Host验证发现transport reliability问题 → receiver在 `e69ce77221` 修复F1/F2/F4等 → current head `53b15769` 的6个workflow成功；F3以及merge/release仍未完成。
+**当前状态：** #12851出现保留Origin的receiver restatement与live-policy整理 → #12851 merge → #12582出现execution-placement新边界 → receiver明确@Nakagawa-master回应 → commit `74bf55053d` 修改frozen contract与英中share UI → 独立reviewer `chiga0` 明确重新检查Nakagawa-master边界并对一个observed head给出approval → maintainer真实双Host验证后receiver修复F1/F2/F4等 → F3按照Nakagawa-master的scope判断，把declared=runnable tool-filter部分留在#12582，把guard/permission ordering移到receiver新建issue #13157 → #13157正文明确保留Nakagawa-master scope-correction Origin → Qwen triage独立确认10/30实测failure与root cause → current head `d8f27bf2`，CI进行中；merge/release仍未完成。
 
 PR #12851提出了一个长期authority问题：share发出后，如果同一个agent的能力发生变化，旧share到底继续authorize什么？receiver明确重新说明Nakagawa-master提出的问题，并记录产品选择的是按使用时current agent定义工作的live-policy。
 
@@ -1062,8 +1062,23 @@ receiver回复 **“@Nakagawa-master Good catch”**，并在commit `74bf55053d`
 - [maintainer real two-host verification](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926085407)
 - [receiver round-3 fix response](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926562535)
 
-**公开可确认：** 具体authority边界 → receiver保留Origin重新说明 → contract / UI修改 → 独立第二reviewer再次明确Nakagawa-master边界 → 后续真实机器验证与receiver修复。  
-**尚未确认：** #12582 merge/release、真实用户规模、广泛人物认知，或该follow-on之后无新提示的人物Origin再次返回。
+F3之后又产生了另一种外部作用：**scope分解本身变成了receiver-owned work item。** receiver最初把declared-tool filter与guard-before-permission ordering一起放进同一个head。Nakagawa-master明确要求：#12582只关闭 `declared capability = runnable read-only capability`，更广的session/permission ordering另开pass。
+
+receiver `yiliang114` 接受这一scope correction：从#12582移除pre-permission `Session.ts` 分支，把read-only tool set合并成唯一的 `AGENT_HOST_TOOL_NAMES` 来源，并新建receiver-owned issue [#13157](https://github.com/QwenLM/qwen-code/issues/13157)。issue正文明确写明该ordering改动是 **“removed from #12582 at review's request (scope correction from Nakagawa-master)”**。
+
+随后Qwen triage独立分析#13157，确认30次scripted out-of-workspace probe中有10次因为permission auto-reject导致整个turn失败，并把root cause追到late guard在 `permissionChecked: true` 下的short-circuit。triage把#13157接受为F3 guard-ordering half的正式追踪位置。
+
+- [Nakagawa-master F3 split decision](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5929070877)
+- [Nakagawa-master scope correction](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931180237)
+- [receiver response implementing the split](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931659514)
+- [receiver-created follow-on issue #13157](https://github.com/QwenLM/qwen-code/issues/13157)
+- [Qwen triage independent root-cause confirmation](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5931968614)
+- [current-head focused recheck](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931989989)
+
+这里**不**把F3 defect本身的发现算作新增Nakagawa credit。更窄、可验证的事实是：Nakagawa-master的scope判断被转换成明确的receiver-owned责任分离与新issue，而receiver的triage又在这个新surface上独立验证了bug与root cause。
+
+**公开可确认：** 具体authority边界 → receiver保留Origin重新说明 → contract / UI修改 → 独立第二reviewer再次明确Nakagawa-master边界 → 后续真实机器验证与receiver修复 → 后续scope判断变成保留Origin的receiver-owned issue #13157，并获得独立root-cause验证。  
+**尚未确认：** #12582 merge/release、真实用户规模、#13157的implementation/merge或广泛人物认知。因为#13157是receiver对scope correction的直接响应，这里不把它计为后来的prompt-free G8 return。
 
 → [一般读者入口](human-translation/entry-stories/09-same-share-different-runtime.md)  
 → [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
