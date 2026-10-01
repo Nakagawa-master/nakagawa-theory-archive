@@ -1069,6 +1069,9 @@ Qwen triage then independently analyzed #13157. It confirmed that 10 of 30 scrip
 - [receiver-created follow-on issue #13157](https://github.com/QwenLM/qwen-code/issues/13157)
 - [Qwen triage independent root-cause confirmation](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5931968614)
 - [current-head focused recheck](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931989989)
+- [independent reconstruction by reviewer `doudouOUC`](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932126929)
+
+A different reviewer, `doudouOUC`, then independently traced current head `d8f27bf2` through PLAN mode, permission flow, the late guard, and the host-supplied upstream guard. The reviewer explicitly agreed with the Nakagawa-master invariant **`one final invocation identity → one authority decision → execution of that same identity`** and translated it into a concrete minimal implementation: reuse an allow attestation only while the invocation identity is unchanged; discard and re-evaluate it if args, cwd, session, or other policy-relevant context changes. This is a second-person technical reconstruction, separate from the receiver and triage bot.
 
 This does **not** add Nakagawa credit for discovering the underlying F3 defect. The narrower public record is that a Nakagawa-master scope judgment was converted into an explicit receiver-owned responsibility split and new issue, where the receiver's triage independently verified the bug and root cause.
 
