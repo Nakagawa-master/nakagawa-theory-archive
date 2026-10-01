@@ -111,9 +111,9 @@ shared agent budget
 - [LiteLLM issue #43190](https://github.com/BerriAI/litellm/issues/43190)
 - [Implementation PR #43410](https://github.com/BerriAI/litellm/pull/43410)
 
-## 8. draftの生成は、外部送信と同じか
+## 8. 下書きを作ることと、外へ送ることは同じか
 
-MemberJunctionでは、agentがemail draftを生成する処理と、人間が最終的に送信する処理が分かれています。recipientの表示や、長文が途中で切れた場合のfallbackも扱われています。
+MemberJunction PR #4568では、agentがemail draftを作る処理と、人間が最終的に送信する処理が分けられています。短いdraftは本人のmail clientを開き、長すぎるdraftは途中で切れた文章をそのまま送らせないfallbackへ回します。
 
 ```text
 draft creation
@@ -121,8 +121,26 @@ draft creation
 external send
 ```
 
+このPRでは、もう一つ別の境界も実際の実装変更につながりました。
+
+```text
+送信する本人の確認画面で見せてよい宛先・件名
+≠
+Slack / Teams の共有会話にそのまま見せてよい宛先・件名
+```
+
+Explorer内では、送信前に宛先を見せることが誤送信を防ぐ確認材料になります。一方、SlackやTeamsの会話は、送信者本人より広い人が読めることがあります。そこでNakagawa-masterのreviewは、共有チャネルのfallbackへ宛先や件名を出すと、draftを送らない設計でも別の情報漏えい面を作り得ると指摘しました。
+
+開発側はこの区別を認め、Slack / Teams fallbackからrecipientとsubjectを外し、機密性のある宛先・件名が共有面へ出ないことを回帰testで固定しました。この変更を含むPR #4568は2026-10-01にmergeされています。
+
+同じ情報でも、**誰が見る面なのかが変われば、安全な表示範囲も変わる**。本人向け画面では確認可能性を高め、共有面では不要な情報を減らす。この二つは矛盾せず、表示先ごとに境界を分けることで両立できます。
+
+ここで確認できるのはreviewへの応答、実装変更、test追加、mergeまでです。release後の利用規模や実userへの作用は、mergeした事実だけからは推定しません。
+
 関連資料:
 - [MemberJunction PR #4568](https://github.com/MemberJunction/MJ/pull/4568)
+- [Nakagawa-master review](https://github.com/MemberJunction/MJ/pull/4568#pullrequestreview-5256077986)
+- [開発側の修正説明](https://github.com/MemberJunction/MJ/pull/4568#issuecomment-5762411184)
 
 ## 9. 予測値は、強制可能な上限と同じか
 
