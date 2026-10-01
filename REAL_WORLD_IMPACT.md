@@ -1169,7 +1169,7 @@ receiverは **“@Nakagawa-master Good catch”** と返答し、commit `74bf550
 
 最初のreviewは後続head更新で一度DISMISSEDになりましたが、`chiga0` はlatest observed head `f9922e44` を再reviewし、改めてAPPROVEDを提出しました。したがって、Origin-preservedなsecond-person carryだけでなく、current-headでの独立review approvalまで確認できます。ただしPR自体はまだopenで、requested reviewersも残っているため、これをmerge approval完了とは扱いません。
 
-その後、maintainer `wenshao` はhead `18f576f4` をmacOS coordinator、Linux arm64 Host、macOS Host、real model、real Web Shellで検証し、coordinator restart時のcredential loss、busy store時のresult loss / silent rerun、stranding処理などの問題を報告しました。receiver `yiliang114` はcommit `e69ce77221` でF1/F2/F4等を修正し、current head `53b15769` はその後のmain取り込みだけです。current headで確認できた6 workflowはsuccessです。F3のread-only tool / permission契約はreceiver側のdesign decisionとして残っています。これらの実機検証と後続修正はreceiver / maintainer側の独立作業であり、Nakagawa reviewの追加因果creditには含めません。
+その後、maintainer `wenshao` はhead `18f576f4` をmacOS coordinator、Linux arm64 Host、macOS Host、real model、real Web Shellで検証し、coordinator restart時のcredential loss、busy store時のresult loss / silent rerun、stranding処理などの問題を報告しました。receiver `yiliang114` はcommit `e69ce77221` でF1/F2/F4等を修正し、その後の当時head `53b15769` では6 workflowのsuccessが確認されました。F3のread-only tool / permission契約はその時点ではreceiver側のdesign decisionとして残っていました。これらの実機検証と後続修正はreceiver / maintainer側の独立作業であり、Nakagawa reviewの追加因果creditには含めません。
 
 - [maintainer real two-host verification](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926085407)
 - [receiver round-3 fix response](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926562535)
@@ -1188,7 +1188,7 @@ receiver `yiliang114` はそのscope correctionを受け、`Session.ts`のpre-pe
 - [current-head focused recheck](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931989989)
 - [別reviewer `doudouOUC` の独立再構成](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932126929)
 
-さらに別reviewer `doudouOUC` はcurrent head `d8f27bf2` を独立に追い、PLAN mode、permission flow、late guard、host-supplied upstream guardまで行単位で再構成しました。そのうえでNakagawa-masterが#13157で提示した **`one final invocation identity → one authority decision → execution of that same identity`** を明示的に支持し、identityが不変なら後段でallow attestationを再利用し、args / cwd / session等が変われば破棄して再評価する最小実装形まで具体化しています。これはreceiver本人やtriage botとは別のsecond-person technical carryです。
+さらに別reviewer `doudouOUC` は当時head `d8f27bf2` を独立に追い、PLAN mode、permission flow、late guard、host-supplied upstream guardまで行単位で再構成しました。そのうえでNakagawa-masterが#13157で提示した **`one final invocation identity → one authority decision → execution of that same identity`** を明示的に支持し、identityが不変なら後段でallow attestationを再利用し、args / cwd / session等が変われば破棄して再評価する最小実装形まで具体化しています。これはreceiver本人やtriage botとは別のsecond-person technical carryです。
 
 その後receiverはcommit [`b4a13e44`](https://github.com/QwenLM/qwen-code/commit/b4a13e448a6e79bd766f2a7566155d0afd205362) で、#13157のordering変更を#12582へ戻すのではなく、**Hostの自動permission拒否だけをterminal user-cancelからrecoverable execution denialへ変える別解**を追加しました。回帰testは、拒否されたreadが実行されず、Agent Hostではturnを止めずに後続の許可済みread-only toolが実行できること、普通のuser cancelは従来どおりterminalであることを固定します。Nakagawa-masterはcurrent headで、この変更が選択済みscope splitを守りながらrun-ending症状を解くことを再確認し、PR本文と#13157の旧premiseを新baselineへ更新するよう返しています。
 
