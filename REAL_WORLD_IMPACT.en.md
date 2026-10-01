@@ -1077,6 +1077,9 @@ The receiver then chose a different in-scope resolution in [`b4a13e44`](https://
 
 - [receiver alternative F3 recovery commit `b4a13e44`](https://github.com/QwenLM/qwen-code/commit/b4a13e448a6e79bd766f2a7566155d0afd205362)
 - [Nakagawa-master current-baseline recheck](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5932820014)
+- [receiver sequencing / latest contract restatement](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5933053970)
+
+Receiver `yiliang114` then explicitly kept #13157 open as the follow-on home for the guard-ordering half and restated the latest contract as **“@Nakagawa-master's latest: early boundary = Host confinement only, full effective guard exactly once at the final boundary.”** This is same-receiver Origin-preserved technical carry; it is not #13157 implementation and not a prompt-free G8 return. The receiver also separated #13122 as a security blocker that should be fixed in #12582 before merge; that independent defect/fix path is not assigned Nakagawa causal credit.
 
 This is not credit for adoption of the guard-ordering proposal. The narrower inspectable effect is that after the scope split, the receiver selected an **ordering-preserving alternative implementation** that addresses the fatal recovery symptom with a regression. Any remaining #13157 work should now be justified as a separate policy/diagnostic need for early confinement, not as a prerequisite for turn recovery.
 
