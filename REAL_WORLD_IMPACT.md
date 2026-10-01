@@ -1194,6 +1194,9 @@ receiver `yiliang114` はそのscope correctionを受け、`Session.ts`のpre-pe
 
 - [receiver alternative F3 recovery commit `b4a13e44`](https://github.com/QwenLM/qwen-code/commit/b4a13e448a6e79bd766f2a7566155d0afd205362)
 - [Nakagawa-master current-baseline recheck](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5932820014)
+- [receiver sequencing / latest contract restatement](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5933053970)
+
+その後receiver `yiliang114` は、#13157をguard-ordering halfのfollow-on homeとして維持すると明示し、**“@Nakagawa-master's latest: early boundary = Host confinement only, full effective guard exactly once at the final boundary”** と最新contractを自分の言葉で再提示しました。これは同じreceiverによるOrigin-preserved technical carryであり、#13157実装済みやprompt-free G8とは数えません。同時に別issue #13122を#12582 merge前に直す必要があるsecurity blockerとして分離しており、こちらはNakagawa因果creditには含めません。
 
 この追加は「guard ordering案を採用した」creditではありません。公開記録で確認できるのは、scope split後にreceiverが**orderingを保持した別実装**を選び、元の致命症状を回帰test付きで解消する方向へ進んだことです。#13157の残存価値は、recovery correctnessではなくearly confinementを別途必要とするpolicy/diagnostic理由があるかへ再定義されるべき状態です。
 
