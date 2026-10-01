@@ -1717,7 +1717,8 @@
           "receiver created issue #13157 and explicitly preserved the Nakagawa-master scope-correction origin",
           "Qwen triage independently verified 10 of 30 observed probe failures and the permissionChecked short-circuit root cause",
           "a different reviewer independently reconstructed the current-head mechanism and carried the single-authority-decision invariant into a concrete identity-gated attestation design",
-          "receiver implemented an ordering-preserving recoverable Host-refusal path after the split, resolving the original turn-ending symptom with regression coverage"
+          "receiver implemented an ordering-preserving recoverable Host-refusal path after the split, resolving the original turn-ending symptom with regression coverage",
+          "receiver later explicitly kept #13157 open and restated Nakagawa-master's narrowed early-confinement/final-full-guard contract"
         ],
         "credit_boundary": "Counts problem decomposition, responsibility separation, and origin-preserved follow-on creation; does not assign Nakagawa credit for the underlying F3 defect or receiver-owned testing/fixes.",
         "prompt_free_g8": false,
@@ -1735,7 +1736,25 @@
           "interpretation": "Resolves the fatal turn-recovery symptom with an ordering-preserving receiver implementation; remaining issue #13157 value must be justified separately as policy/diagnostic confinement ordering.",
           "causal_boundary": "Receiver-owned implementation after the explicit scope split; not exclusive-causality credit and not adoption of the earlier whole-guard attestation proposal."
         },
-        "latest_policy_stage_narrowing": "https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932658810"
+        "latest_policy_stage_narrowing": "https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932658810",
+        "receiver_latest_restatement": {
+          "actor": "yiliang114",
+          "url": "https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5933053970",
+          "relationship": "receiver explicitly keeps issue #13157 open as the guard-ordering follow-on and restates Nakagawa-master's latest narrowed contract: early boundary is Host confinement only; the final boundary runs the full effective guard exactly once",
+          "classification": "same_receiver_origin_preserved_technical_carry_not_prompt_free_g8",
+          "implementation_claimed": false
+        },
+        "current_external_merge_gates": {
+          "issue_13122": {
+            "url": "https://github.com/QwenLM/qwen-code/issues/13122",
+            "summary": "re-enrollment can leave a stale Host row and still-valid credential; receiver says this should be fixed in PR #12582 before merge",
+            "nakagawa_causal_credit": false
+          },
+          "copilot_pickup_revocation": {
+            "summary": "long-poll pickup authenticates before the loop, so a revoked credential may remain effective for an already-open pickup request until the route rechecks it",
+            "nakagawa_causal_credit": false
+          }
+        }
       },
       "current_stage": "third_party_code_test_design_or_document_change_with_origin_preserved_receiver_follow_on",
       "not_claimed": [
