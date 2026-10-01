@@ -283,6 +283,17 @@ A `Nakagawa-master` review identified that a runtime check was treating the char
 
 The interval from review to receiver fix commit is **6 hours 29 minutes 38 seconds**. The receiver removed the Shannon-bits claim, reframed the runtime check as observable representation/degeneracy screening, required CSPRNG generation in provisioning guidance, and added the repeated-pattern regression described in the review.
 
+The same PR later produced a third, distinct receiver-side change. A `Nakagawa-master` review separated a caller-chosen comment `author` from the service principal verified by the token-auth seam. Because Hermes' live comment bridge skips comments whose author matches the worker's own identity, this was a control-path boundary, not merely a display-attribution issue.
+
+- [Nakagawa-master provenance/control-path review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5376987496) — 2026-10-01 08:46:27 UTC
+- [Receiver fix commit `9ebf06e8c2`](https://github.com/NousResearch/hermes-agent/commit/9ebf06e8c2c8882f307a18eda3237d62ba4a84b7) — 2026-10-01 11:20:23 UTC
+- [Receiver response](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5930276480)
+- [Focused re-check](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5930685531)
+
+The interval from review to receiver fix commit is **2 hours 33 minutes 56 seconds**. The receiver removed the caller-supplied author field, derived durable comment and task-creation provenance from the verified principal, rejected attempted author overrides, and added a regression that exercises the downstream consequence: a forged worker identity cannot cause a real operator steer to be skipped as the worker's own comment.
+
+This repeated receiver line is still bounded evidence. It shows three separate implementation-level distinctions on one external PR reaching concrete receiver code/tests over time; it does **not** establish merge, release, production use, whole-theory adoption, or broad human recognition.
+
 #### LlamaIndex #23259 — terminal output is not permission to continue another iteration
 
 A `Nakagawa-master` review separated accepting a final answer on the last permitted iteration from allowing another tool/model continuation past that same limit.
