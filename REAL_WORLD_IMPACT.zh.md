@@ -1057,7 +1057,7 @@ receiver回复 **“@Nakagawa-master Good catch”**，并在commit `74bf55053d`
 - [receiver commit `74bf55053d`](https://github.com/QwenLM/qwen-code/commit/74bf55053d271595cf5bab8e1fcd91bb3a8188b2)
 - [独立reviewer `chiga0` recheck](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368431439)
 
-之后，maintainer `wenshao` 使用macOS coordinator、Linux arm64 Host、macOS Host、真实model和真实Web Shell对head `18f576f4` 做了双Host实机验证，并发现restart / result lifecycle等问题。receiver `yiliang114` 在 `e69ce77221` 修复F1、F2、F4及相关项；current head `53b15769` 是之后的main merge，观察到的6个workflow均成功。F3仍是receiver侧tool / permission contract的design decision。这里把这些后续验证与修正记为receiver / maintainer自己的进展，不增加Nakagawa因果credit。
+之后，maintainer `wenshao` 使用macOS coordinator、Linux arm64 Host、macOS Host、真实model和真实Web Shell对head `18f576f4` 做了双Host实机验证，并发现restart / result lifecycle等问题。receiver `yiliang114` 在 `e69ce77221` 修复F1、F2、F4及相关项；在之后当时观察到的head `53b15769` 上，6个workflow均成功，F3在那个阶段仍是receiver侧tool / permission contract的design decision。这里把这些后续验证与修正记为receiver / maintainer自己的进展，不增加Nakagawa因果credit。
 
 - [maintainer real two-host verification](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926085407)
 - [receiver round-3 fix response](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926562535)
@@ -1076,7 +1076,7 @@ receiver `yiliang114` 接受这一scope correction：从#12582移除pre-permissi
 - [current-head focused recheck](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931989989)
 - [reviewer `doudouOUC` 的独立重构](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932126929)
 
-另一位reviewer `doudouOUC` 随后独立追踪current head `d8f27bf2` 的PLAN mode、permission flow、late guard和host-supplied upstream guard，并明确同意Nakagawa-master在#13157提出的 **`one final invocation identity → one authority decision → execution of that same identity`** 不变式。reviewer进一步给出最小实现：只有invocation identity未变化时才复用allow attestation；如果args、cwd、session或其他policy相关context变化，则丢弃并重新评估。这是独立于receiver与triage bot的second-person technical reconstruction。
+另一位reviewer `doudouOUC` 随后独立追踪当时head `d8f27bf2` 的PLAN mode、permission flow、late guard和host-supplied upstream guard，并明确同意Nakagawa-master在#13157提出的 **`one final invocation identity → one authority decision → execution of that same identity`** 不变式。reviewer进一步给出最小实现：只有invocation identity未变化时才复用allow attestation；如果args、cwd、session或其他policy相关context变化，则丢弃并重新评估。这是独立于receiver与triage bot的second-person technical reconstruction。
 
 随后receiver在 [`b4a13e44`](https://github.com/QwenLM/qwen-code/commit/b4a13e448a6e79bd766f2a7566155d0afd205362) 选择了另一种scope内解法：不把guard-ordering改动放回#12582，而是把Agent Host自动permission拒绝从terminal user cancel改成可恢复的 `EXECUTION_DENIED`，普通user cancel仍保持terminal。回归test确认被拒绝的read不会执行，而且Host可以继续执行后续允许的read-only tool。Nakagawa-master在current baseline上重新检查后指出，PR正文与#13157仍写着“拒绝会结束run”的旧premise，需要随新实现重置。
 
