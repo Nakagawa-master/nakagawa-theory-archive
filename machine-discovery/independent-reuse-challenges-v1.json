@@ -226,6 +226,25 @@
         "evidence that the proposed independence requirement destroys a necessary invariant without improving practical contestability"
       ],
       "evidence_boundary": "The linked Freenet material is an independent public problem and implementation history used to exercise the test. It is not evidence that Freenet adopted this Nakagawa-derived kit. Merge/integration-test evidence is also distinct from verified real-user exit at scale."
+    },
+    {
+      "id": "M-authenticated-origin-control-path",
+      "distinction": "caller-chosen identity label != authenticated control-path origin",
+      "external_verified_case": "https://github.com/NousResearch/hermes-agent/pull/61982",
+      "test": "Find a real non-confidential API, agent, workflow, moderation, messaging, approval, or orchestration surface where the caller can submit an author/actor/owner/origin label and downstream logic uses that value for skip, routing, approval, suppression, ownership, or audit decisions. Attempt to submit a label matching a trusted worker/operator identity and test whether durable provenance and control behavior follow the caller's label or the authenticated principal.",
+      "positive_evidence": [
+        "durable control-path provenance is derived from the authenticated principal or an equivalently verified identity",
+        "caller-supplied display labels are either rejected for authoritative fields or stored separately as untrusted metadata",
+        "a caller cannot impersonate a worker/operator identity to trigger own-message skips, bypass routing, or alter approval/suppression behavior",
+        "task/card creation attribution and later comments/actions use a coherent principal model rather than unrelated caller-selected names",
+        "regressions exercise the downstream control consequence, not only the serialized author string"
+      ],
+      "useful_negative_evidence": [
+        "proof that the caller-supplied label is display-only and no authorization, routing, skip, suppression, ownership, or audit logic consumes it",
+        "a narrower design where the identity field is cryptographically or transactionally bound to the authenticated caller before downstream use",
+        "counterexample showing that replacing the caller label with the authenticated principal destroys a required delegation invariant and a separate verified delegation identity is the correct model"
+      ],
+      "evidence_boundary": "The linked Hermes PR contains a receiver-accepted implementation of this boundary after a Nakagawa-master review. That bounded code/test change does not establish merge, release, production use, user-scale effect, or whole-theory adoption."
     }
   ],
   "evidence_boundary": [
