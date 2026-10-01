@@ -1112,29 +1112,41 @@
       },
       "implementation": {
         "verified": true,
-        "pull_request": "https://github.com/PostHog/posthog/pull/92252",
-        "state": "open_unmerged",
-        "commits": [
-          "721311a97488781dd590708abe697480c5c0e9e8",
-          "3ecb122dd7062d864c135213282613bfc80a2ebf",
-          "d962e51c22e34f526f94ce6d581aa429ed7d87a3"
-        ],
+        "current_measurement_pull_request": "https://github.com/PostHog/posthog/pull/107795",
+        "current_measurement_state": "open_unmerged",
+        "current_measurement_head": "30a38f7d479feac0526d9846a06f4906ce888ca1",
+        "current_suggestion_action_pull_request": "https://github.com/PostHog/posthog/pull/107802",
+        "current_suggestion_action_state": "open_unmerged",
         "mechanisms": [
-          "re-read workflow step metrics server-side instead of equating producer values with measured values",
-          "display Measured by PostHog separately from Unverified producer evidence",
-          "keep hog_flow_proposal programmatic/internal rather than ordinary user-grantable capability",
-          "mint the narrow scout scope server-side"
+          "re-read relevant workflow/version/step metrics server-side rather than equating producer values with measured values",
+          "display PostHog-established readings as Measured by PostHog and non-established producer values as Unverified",
+          "do not treat producer-supplied measured state as server-attested evidence",
+          "surface disagreement between producer headline/denominator and PostHog's own reading",
+          "measure the metric named by the suggestion rather than silently defaulting to opens",
+          "keep suggestion creation distinct from human approval and later publication on the successor action layer"
+        ],
+        "verification": [
+          "PR #107795 description records a real-browser/local-stack test with deliberately fake producer measured data; stored evidence used PostHog's own reading instead",
+          "PR #107795 reports approve then publish as separate stages; the live workflow changed only at publish"
         ]
       },
-      "attribution_limit": "The receiver commits do not identify Nakagawa-master as the unique cause; only temporal and boundary alignment is claimed.",
-      "current_stage": "third_party_code_test_design_or_document_change",
+      "attribution_limit": "The origin reviews are public and the original author explicitly preserves stack continuity into #107795/#107802. The successor commits do not establish Nakagawa-master as the unique cause of the whole successor stack.",
+      "current_stage": "third_party_code_test_design_or_document_change_on_explicit_successor_stack",
       "not_claimed": [
-        "pull request merge",
-        "release",
-        "production deployment",
+        "merge of #107795 or #107802",
+        "customer rollout",
+        "verified production-user contact",
         "user-scale effect",
-        "unique causation"
-      ]
+        "unique causation for the successor stack",
+        "whole-theory endorsement"
+      ],
+      "original_pull_request": {
+        "url": "https://github.com/PostHog/posthog/pull/92252",
+        "state": "closed_unmerged",
+        "closed_at": "2026-09-28T15:04:49Z",
+        "continuity_comment": "https://github.com/PostHog/posthog/pull/92252#issuecomment-5872695227",
+        "continuity_statement": "Original author states #92252 was replaced by #107802; outcome measurement and evidence surfaces moved into #107795."
+      }
     },
     {
       "case_id": "llamaindex-cache-hit-node-identity-contract",

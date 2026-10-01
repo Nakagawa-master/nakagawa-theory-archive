@@ -56,26 +56,37 @@ This example is included to avoid treating “a response occurred” as equivale
 
 ## 1. PostHog | Separate producer-supplied evidence from PostHog's own measurement
 
-**Surface:** [PostHog/posthog#92252](https://github.com/PostHog/posthog/pull/92252)  
-**Current state:** open / unmerged
+**Origin surface:** the Nakagawa-master review on [PostHog/posthog#92252](https://github.com/PostHog/posthog/pull/92252)  
+**Current state:** original PR #92252 was closed unmerged on 2026-09-28. The author explicitly moved the stack forward: measurement/evidence now lives in [#107795](https://github.com/PostHog/posthog/pull/107795), while the suggestion/action layer continues in [#107802](https://github.com/PostHog/posthog/pull/107802). Both successors are open and unmerged.
 
-A `Nakagawa-master` review identified that producer-authored evidence should not be presented as if it had been independently measured by the system.
+A Nakagawa-master review identified that producer-authored evidence should not be presented as if it had been independently measured by PostHog.
 
 - [Nakagawa-master evidence review](https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200)
+- [Author explanation replacing the original PR with successors](https://github.com/PostHog/posthog/pull/92252#issuecomment-5872695227)
+- [Current measurement successor #107795](https://github.com/PostHog/posthog/pull/107795)
+- [Current suggestion/action successor #107802](https://github.com/PostHog/posthog/pull/107802)
+
+The original author explicitly states that #92252 was replaced by #107802 and that outcome measurement and evidence surfaces moved into #107795. The current implementation therefore has to be checked on the successor stack rather than the closed original head.
+
+Current PR #107795 implements the measurement boundary by:
+
+- re-reading the relevant workflow / version / step metrics on the PostHog side when a suggestion is filed;
+- keeping the producer's claimed numbers separate from PostHog's reading;
+- labeling established server-side readings **Measured by PostHog** and producer values that PostHog cannot establish **Unverified**;
+- refusing to treat producer-supplied measured state as PostHog's own measurement;
+- surfacing disagreement between the producer headline/denominator and PostHog's reading;
+- fixing the metric-selection path so a click suggestion is not silently measured against opens.
+
+The PR description records a real-browser/local-stack check in which deliberately fake producer measurement did not survive as server-attested evidence; the stored evidence carried PostHog's own reading instead.
+
+A separate review also identified the capability boundary **narrow capability != user-grantable capability**:
+
 - [Nakagawa-master capability-boundary review](https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5245587245)
 
-The PR author later added server-side measurement, regression coverage, and UI distinctions such as `Measured by PostHog` versus `Unverified`.
+That suggestion/action layer now continues in successor #107802. Its current scout contract still separates suggestion creation from human approval and later publication. This page does not attribute the whole successor stack to Nakagawa-master alone.
 
-A second review separated a narrow capability from a user-grantable capability. The current PR also makes `hog_flow_proposal` programmatic/internal, removes it from ordinary personal-key/OAuth/session grant surfaces, and treats it as a server-minted scout scope.
-
-- [server-side measurement commit `721311a9`](https://github.com/PostHog/posthog/commit/721311a97488781dd590708abe697480c5c0e9e8)
-- [programmatic-only scope commit `3ecb122d`](https://github.com/PostHog/posthog/commit/3ecb122dd7062d864c135213282613bfc80a2ebf)
-- [server-minted scope commit `d962e51c`](https://github.com/PostHog/posthog/commit/d962e51c22e34f526f94ce6d581aa429ed7d87a3)
-
-Those commit messages do not identify the `Nakagawa-master` reviews as the sole cause. This page therefore records that matching third-party implementation changes occurred after the reviews, without claiming exclusive causality.
-
-**Publicly verifiable here:** review followed by third-party code / test / UI / scope-boundary changes.  
-**Not established here:** merge, release, production deployment, user scale, or exclusive causality.
+**Publicly verifiable here:** origin review → matching third-party implementation → explicit author continuity into successor PRs → current server-side measurement, Measured by PostHog / Unverified, producer-measurement distrust, tests and browser verification.  
+**Not established here:** merge of #107795/#107802, customer rollout, verified production-user contact, exclusive causality for the successor changes, or broad human recognition.
 
 ---
 
