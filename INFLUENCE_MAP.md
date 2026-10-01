@@ -283,6 +283,38 @@ Freenetの実装はNakagawa Master理論の採用証拠ではありません。�
 - [magic-link migration PR #4724](https://github.com/freenet/freenet-core/pull/4724)
 - Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/
 
+## 14. 入力欄に書かれたauthorは、認証された実行Originと同じか
+
+APIのrequest bodyに `author` や `actor` のような文字列があっても、その値をcallerが自由に選べるなら、**認証された主体**とは別物です。表示用のラベルなら許容できる場合でも、downstreamのcontrol logicがその値を信頼するなら境界は変わります。
+
+```text
+caller-chosen identity label
+≠
+authenticated control-path origin
+```
+
+Hermes Agent PR #61982のKanban REST APIでは、commentの `author` をcallerが送信でき、その値がdurable historyへ保存されていました。一方、実際のworker側comment bridgeは、comment authorがworker自身のidentityと一致すると「自分のcomment」としてskipします。
+
+この二つを組み合わせると、service credentialを持つ外部controllerがworker名を `author` に指定し、本来はoperator steerとして届くべきcommentをworker自身のcommentに見せてskipさせることができます。つまり問題は表示上の帰属だけでなく、**callerがdownstreamの制御判定に使われるOriginを選べること**でした。
+
+Nakagawa-masterのreview後、receiverはこの区別へ明示的に同意し、commit `9ebf06e8c2` で次を変更しました。
+
+- `CommentRequest.author` を削除し、余分な `author` を送るrequestは422で拒否する。
+- durable comment authorをtoken-auth seamが検証したprincipalから決める。
+- service tokenがないsurfaceではcaller文字列ではなく固定の `external-api` を使う。
+- taskの `created_by` も同じactor derivationへ揃える。
+- regressionで `author="worker-bot"` の偽装が拒否され、正規commentが `kanban-api` として保存され、実際にoperator steerとしてworkerへ届くことまで確認する。
+
+同じ「誰がやったか」という文字列でも、**UI上の説明**と**認証・制御に使うOrigin**は分ける必要があります。後者をcallerが自由に選べると、監査履歴だけでなく、skip・routing・approval・suppressionなどのcontrol pathまで変わり得ます。
+
+この記録時点でPR #61982はopenです。receiverの明示的な同意、code/test変更、review scopeの再確認までは確認できますが、merge・release・production use・利用者規模はまだ数えません。
+
+関連資料:
+- [Hermes Agent PR #61982](https://github.com/NousResearch/hermes-agent/pull/61982)
+- [Nakagawa-master provenance/control-path review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5376987496)
+- [receiver response](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5930276480)
+- [receiver fix commit `9ebf06e8c2`](https://github.com/NousResearch/hermes-agent/commit/9ebf06e8c2c8882f307a18eda3237d62ba4a84b7)
+
 ## 関連する索引と資料
 
 - [24のテーマから見る](human-translation/WORLD_MAP.md)
