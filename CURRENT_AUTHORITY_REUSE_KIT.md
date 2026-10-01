@@ -431,23 +431,34 @@ The commit does not change authorization behavior. It makes the already-selected
 - [current-head author review](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368473478)
 - [human-readable entry](human-translation/entry-stories/09-same-share-different-runtime.md)
 
-At this record, PR #12582 is still open at head `d8f27bf2`. The receiver's contract/UI change commit `74bf55053d` remains in branch history, but the later F3 closeout also changed the shape of the work.
+At this record, PR #12582 is still open at head `881a2af7`. The receiver's contract/UI change commit `74bf55053d` remains in branch history, and the later F3 closeout has now advanced again.
 
-Nakagawa-master asked the receiver to keep only the narrow **declared Host capability = runnable read-only capability** half in #12582 and move the wider guard-before-permission ordering change to a separate pass. Receiver `yiliang114` implemented that scope correction: the pre-permission Session branch and its ordering regression were removed from #12582, the Host read-only set was centralized in `AGENT_HOST_TOOL_NAMES`, and the ordering half was moved to receiver-created issue [#13157](https://github.com/QwenLM/qwen-code/issues/13157), whose body explicitly names the **scope correction from Nakagawa-master**.
+Nakagawa-master first asked the receiver to keep only **declared Host capability = runnable read-only capability** in #12582 and move the wider guard-before-permission ordering change to a separate pass. Receiver `yiliang114` implemented that split, centralized the Host read-only set in `AGENT_HOST_TOOL_NAMES`, and created [#13157](https://github.com/QwenLM/qwen-code/issues/13157) with explicit scope-correction provenance.
 
-Qwen triage then independently verified #13157 as an observed bug: 10 of 30 scripted out-of-workspace probes ended the whole Host turn through the auto-rejected permission path, and the late `permissionChecked: true` guard short-circuit explains why containment did not run soon enough. A separate reviewer, `doudouOUC`, independently reconstructed the current-head permission/guard order and carried the narrower authority rule into an implementation discussion.
+After triage and an independent reviewer reconstructed the original failure, the receiver chose an alternative fix that stays inside the selected #12582 scope. Commit [`b4a13e44`](https://github.com/QwenLM/qwen-code/commit/b4a13e448a6e79bd766f2a7566155d0afd205362) **preserves permission/guard ordering** and changes only the meaning of an automatic Agent Host permission refusal:
 
-The current #12582 head after the scope split is only a formatting delta over the split head. Some current-head CI lanes are successful and others are still queued or in progress; requested human/code-owner reviewers remain. Merge, release and real-user-contact credit are not claimed.
+```text
+automatic Host reject
+→ recoverable EXECUTION_DENIED
+→ rejected tool does not execute
+→ later allowed read-only tool can continue
+```
+
+Ordinary user cancellation remains terminal. The regression covers both Agent Host and ordinary-session behavior. This means the original #13157 premise that the automatic refusal necessarily kills the whole turn is no longer current on the PR branch.
+
+The current head `881a2af7` is a merge of current `main` into the branch after `b4a13e44`. Current-head CI is still progressing, requested human/code-owner reviewers remain, and Copilot raised a separate long-poll credential-revocation concern. Merge, release, and real-user-contact credit are not claimed.
 
 - [F3 split decision](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5929070877)
 - [scope correction](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931180237)
 - [receiver implements the split](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931659514)
-- [focused re-check closing the scope objection](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931989989)
-- [receiver-created follow-on #13157](https://github.com/QwenLM/qwen-code/issues/13157)
-- [Qwen triage root-cause confirmation](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5931968614)
+- [focused scope re-check](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931989989)
+- [receiver-created #13157](https://github.com/QwenLM/qwen-code/issues/13157)
+- [independent triage root-cause confirmation](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5931968614)
 - [independent reconstruction by `doudouOUC`](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932126929)
+- [receiver alternative recovery commit `b4a13e44`](https://github.com/QwenLM/qwen-code/commit/b4a13e448a6e79bd766f2a7566155d0afd205362)
+- [Nakagawa-master baseline re-check](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5932820014)
 
-The earned evidence is therefore broader than the original share disclosure but still bounded: Origin-preserved receiver restatement → same-receiver contract/UI change → independent second-person re-check → a Nakagawa-master scope decision becoming a receiver-owned follow-on issue → independent root-cause reconstruction. #13157 is a direct response to the scope correction, so it is not counted as a later prompt-free Origin return.
+The earned evidence remains bounded: Origin-preserved receiver restatement → receiver-owned contract/UI change → independent second-person re-check → scope decomposition into a receiver-owned follow-on → an ordering-preserving receiver implementation that resolves the fatal recovery symptom. #13157 is still a direct follow-on and is not counted as a later prompt-free Origin return.
 
 ### 15. A revision barrier is not authority to release whatever state is current
 
@@ -562,13 +573,24 @@ allowed call
 
 If an attestation is used, bind it to the **specific guard component and policy semantics** it represents, not merely to a call ID or argument hash.
 
-**Current external design surface — implementation not yet claimed:** Qwen Code issue [#13157](https://github.com/QwenLM/qwen-code/issues/13157). The issue exists because a guard-ordering change was deliberately split from PR #12582. Qwen triage independently confirmed the observed failure and current ordering. A second reviewer independently reconstructed the mechanism. Nakagawa-master then narrowed the proposed whole-guard attestation approach: because `permissionChecked` changes actual daemon containment semantics, the safer minimal shape is early Host confinement plus one final full guard, rather than reusing a whole-composite allow across the false→true policy transition.
+**Current external design surface — narrowed after an alternative receiver fix:** Qwen Code issue [#13157](https://github.com/QwenLM/qwen-code/issues/13157). The issue began as the guard-ordering half deliberately split from PR #12582. Qwen triage and a second reviewer independently reconstructed the original failure. Nakagawa-master then narrowed the proposed whole-guard attestation approach because `permissionChecked` changes real containment semantics.
+
+Receiver commit `b4a13e44` subsequently removed the **recovery** reason for changing the ordering: an automatic Agent Host permission refusal is now recoverable without moving the guard. The remaining Section 16 question is therefore more precise:
+
+```text
+does early confinement add an independently necessary policy / diagnostic guarantee
+that the recoverable permission refusal does not already provide?
+```
+
+If yes, the early check should still be a narrow policy component rather than a cached whole-composite allow across different policy stages. If no, the simpler ordering-preserving recovery may be the better contract.
 
 - [single-authority-decision contract](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932013438)
 - [second-person reconstruction](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932126929)
 - [policy-stage narrowing](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932658810)
+- [receiver recovery implementation](https://github.com/QwenLM/qwen-code/commit/b4a13e448a6e79bd766f2a7566155d0afd205362)
+- [baseline re-check](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5932820014)
 
-No receiver implementation or adoption of this final narrowed shape is claimed yet.
+No receiver implementation or adoption of the Section 16 early-confinement shape is claimed. The receiver has instead implemented an ordering-preserving recovery path.
 
 
 ## Implementation pattern
