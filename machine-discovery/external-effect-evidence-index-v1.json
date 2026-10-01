@@ -984,7 +984,7 @@
         "merge_commit": "800e53e8d5579cfe061f39ede01ac7b8b68877d6",
         "merged_at": "2026-09-25T08:42:13Z"
       },
-      "current_stage": "third_party_rule_merged_and_reused_across_multiple_reader_facing_main_cycles",
+      "current_stage": "third_party_rule_merged_reused_and_applied_in_reader_facing_material_correction",
       "recurring_effect_potential": "ESTABLISHED_MULTIPLE_POST_MERGE_READER_FACING_MAIN_RECURRENCES__AUDIENCE_SCALE_UNVERIFIED",
       "not_claimed": [
         "quantified error-rate reduction",
@@ -1041,6 +1041,18 @@
               "Google-reported benchmark values are distinguished from independent reproduction",
               "non-comparable benchmark versions are not silently inserted into the global comparison table"
             ]
+          },
+          {
+            "pull_request": "https://github.com/022740mix-spec/AI-News/pull/156",
+            "merged_at": "2026-10-01T12:01:08Z",
+            "trigger_comment": "https://github.com/022740mix-spec/AI-News/issues/79#issuecomment-5880178792",
+            "receiver_response": "https://github.com/022740mix-spec/AI-News/issues/79#issuecomment-5930907986",
+            "observed_rule_behavior": [
+              "a published Qwen4 article was rechecked against Alibaba Cloud primary material",
+              "multiple derivative reports were no longer treated as multiple independent evidence roots",
+              "title excerpt body sources and dated correction history were updated",
+              "the receiver independently chose correction rather than retraction"
+            ]
           }
         ],
         "distribution": [
@@ -1048,8 +1060,13 @@
           "feed",
           "sitemap"
         ],
-        "origin_boundary": "The durable rule has an explicit receiver-side causal link to Nakagawa Master issue #124, but these later articles do not themselves explicitly rereference Nakagawa Master.",
-        "credit_boundary": "Recurring receiver-owned reader-facing rule reuse is established; reader contact scale, quantified error reduction, and a new person-Origin rereference are not established."
+        "measurement_followup": {
+          "issue": "https://github.com/022740mix-spec/AI-News/issues/155",
+          "fixture_comment": "https://github.com/022740mix-spec/AI-News/issues/155#issuecomment-5931243342",
+          "role": "use the merged Qwen4 correction as a concrete post-publication correction fixture when evaluating verification-gate effectiveness"
+        },
+        "origin_boundary": "The durable rule has an explicit receiver-side causal link to Nakagawa Master issue #124. The later Qwen4 correction followed Nakagawa-master comments on issue #79, and the receiver publicly explained its independent correction decision.",
+        "credit_boundary": "Recurring receiver-owned reader-facing rule reuse plus one merged material correction feedback loop is established; reader contact scale, quantified future error reduction, and a new explicit person-Origin rereference inside the article are not established."
       }
     },
     {
