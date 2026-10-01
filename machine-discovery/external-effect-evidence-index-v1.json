@@ -1696,16 +1696,32 @@
         "verification": "https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926085407",
         "fix_response": "https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926562535",
         "fix_commit": "e69ce77221356c2756b79f6a90b38463eb952331",
-        "current_head": "53b15769e822778ff954a7bd9420286a9d40ae23",
+        "current_head": "d8f27bf2fff1dd793b3f7bc5066bda095e635880",
         "boundary": "real two-host transport findings and fixes are receiver/maintainer-owned progress, not additional Nakagawa causal credit"
       },
-      "current_stage": "third_party_code_test_design_or_document_change",
+      "scope_split_follow_on": {
+        "origin_decision": "https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5929070877",
+        "scope_correction": "https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931180237",
+        "receiver_response": "https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931659514",
+        "receiver_owned_issue": "https://github.com/QwenLM/qwen-code/issues/13157",
+        "triage_root_cause_confirmation": "https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5931968614",
+        "focused_recheck": "https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931989989",
+        "observed_effect": [
+          "receiver removed the guard-before-permission ordering half from PR #12582 after the Nakagawa-master scope correction",
+          "declared and runnable Host read-only tools were centralized in one AGENT_HOST_TOOL_NAMES source",
+          "receiver created issue #13157 and explicitly preserved the Nakagawa-master scope-correction origin",
+          "Qwen triage independently verified 10 of 30 observed probe failures and the permissionChecked short-circuit root cause"
+        ],
+        "credit_boundary": "Counts problem decomposition, responsibility separation, and origin-preserved follow-on creation; does not assign Nakagawa credit for the underlying F3 defect or receiver-owned testing/fixes.",
+        "prompt_free_g8": false
+      },
+      "current_stage": "third_party_code_test_design_or_document_change_with_origin_preserved_receiver_follow_on",
       "not_claimed": [
         "merge of PR #12582",
         "release",
         "verified user-scale contact",
         "broad person recognition",
-        "prompt-free later person-origin return from this follow-on"
+        "implementation or merge of issue #13157"
       ],
       "public_human_case": "REAL_WORLD_IMPACT.md#33-qwen-code既発行shareと後から変わるagent-policy実行場所を分ける"
     },
