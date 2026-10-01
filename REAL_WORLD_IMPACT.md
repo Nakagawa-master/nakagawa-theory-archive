@@ -2,7 +2,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**最終確認: 2026-09-28**
+**最終確認: 2026-10-01**
 
 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）は、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
 
@@ -45,7 +45,7 @@
 
 ### 現在の公開証拠スナップショット
 
-- このページには **31の番号付き外部作用事例**を収録しています。
+- このページには **34の番号付き外部作用事例**を収録しています。
 - GitHub全体の `Nakagawa-master` comment検索では多数の候補surfaceが返りますが、検索hit自体は第三者反応・採用・実装として数えません。
 - 本ページへ収録するのは、第三者response、独立確認、code / tests / document change、merge、release、deployment等を公開リンクで段階別に確認できる事例です。
 - したがって「mentionが多い」ことではなく、**第三者が何を変え、その変更がどこまで進んだか**を主要証拠として扱います。
@@ -1137,7 +1137,7 @@ issue authorはその後、per-agentをdefaultにする方向へ同意し、PR #
 ## 33. Qwen Code｜既発行shareと、後から変わるagent policy・実行場所を分ける
 
 **対象:** [QwenLM/qwen-code PR #12851](https://github.com/QwenLM/qwen-code/pull/12851) → [PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)  
-**現在状態:** #12851でOrigin付きreceiver restatementとlive-policy整理 → #12851 merge → #12582で実行場所という新しい境界 → @Nakagawa-master付きreceiver返答 → frozen contractと英中share UIをcommit `74bf55053d`で変更 → 別reviewer `chiga0` がNakagawa-master境界を明示して再検証 → 後続head更新後にcurrent head `f9922e44`を再reviewしてAPPROVED → authorが同headでfull local build green・core 78/78・CLI serve routes 139/139を公開 → #12582はopen、merge/release未確認
+**現在状態:** #12851でOrigin付きreceiver restatementとlive-policy整理 → #12851 merge → #12582で実行場所という新しい境界 → @Nakagawa-master付きreceiver返答 → frozen contractと英中share UIをcommit `74bf55053d`で変更 → 別reviewer `chiga0` がNakagawa-master境界を明示して再検証・approval → その後maintainer-drivenな実機2-host検証でtransport reliability問題を発見 → receiverがcommit `e69ce77221`でF1/F2/F4等を修正 → current head `53b15769` の6 workflowはsuccess → F3のtool/permission契約判断とmerge/releaseは未完了
 
 PR #12851では、Nakagawa-masterが、share発行後に同じagentの能力が変わった場合、既発行shareが何をauthorizeするのかを明示的に選ぶ必要があると指摘しました。
 
@@ -1169,7 +1169,10 @@ receiverは **“@Nakagawa-master Good catch”** と返答し、commit `74bf550
 
 最初のreviewは後続head更新で一度DISMISSEDになりましたが、`chiga0` はlatest observed head `f9922e44` を再reviewし、改めてAPPROVEDを提出しました。したがって、Origin-preservedなsecond-person carryだけでなく、current-headでの独立review approvalまで確認できます。ただしPR自体はまだopenで、requested reviewersも残っているため、これをmerge approval完了とは扱いません。
 
-latest observed head `f9922e44` では、`74bf55053d` が変更した英中frozen contract、英中share copy、share dialogを直接再確認し、execution-placement/live-runtimeの説明が保持されていることを確認しました。さらにauthorは同headについてfull local build green、core workspace-agent tests 78/78、CLI serve-route tests 139/139を公開しています。remote workflow laneは別途進行中で、mergeはまだ確認できません。
+その後、maintainer `wenshao` はhead `18f576f4` をmacOS coordinator、Linux arm64 Host、macOS Host、real model、real Web Shellで検証し、coordinator restart時のcredential loss、busy store時のresult loss / silent rerun、stranding処理などの問題を報告しました。receiver `yiliang114` はcommit `e69ce77221` でF1/F2/F4等を修正し、current head `53b15769` はその後のmain取り込みだけです。current headで確認できた6 workflowはsuccessです。F3のread-only tool / permission契約はreceiver側のdesign decisionとして残っています。これらの実機検証と後続修正はreceiver / maintainer側の独立作業であり、Nakagawa reviewの追加因果creditには含めません。
+
+- [maintainer real two-host verification](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926085407)
+- [receiver round-3 fix response](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926562535)
 
 **公開記録から確認できること:** Nakagawa-masterがpolicy変更とexecution-placement変更を別々の具体的authority境界として提示 → receiverがOrigin付きで再説明 → receiver自身がcontractとuser-facing share UIを変更 → 別reviewerがNakagawa-master境界を明示して独立に再検証・carry。  
 **まだ確認できないこと:** PR #12582のmerge・release・実利用者数、一般ユーザーがこの変更へ接触したこと、このfollow-onからのprompt-freeな後日の人物Origin return、広い人間認知。
@@ -1177,3 +1180,34 @@ latest observed head `f9922e44` では、`74bf55053d` が変更した英中froze
 → [一般向けの入口](human-translation/entry-stories/09-same-share-different-runtime.md)  
 → [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
 
+
+---
+
+## 34. Hermes Agent｜「PATCHが失敗した」と「何も変更されていない」を同じにしない
+
+**対象:** [NousResearch/hermes-agent PR #61982](https://github.com/NousResearch/hermes-agent/pull/61982)  
+**現在状態:** mixed PATCH atomicityの指摘 → receiverがsingle-transaction実装とexact regressionを追加 → focused re-checkで当該scopeを閉じる → 同じreceiverが後にNakagawa-masterへ再reviewを依頼 → 別のsecret-strength境界もreceiverが明示的に同意してcode/tests/docsへ修正 → PR open / merge・release未確認。
+
+外部control planeが一回のPATCHで「担当者」と「タイトル」を同時に変更するとします。もし担当者変更だけ先にcommitされ、その直後に別actorがtaskをcomplete / archiveし、タイトル変更が拒否されたら、APIは409を返しても、実際には一部だけ状態が変わっています。
+
+外部controllerから見ると、**「失敗response」!=「副作用なし」** です。retry時に何を再実行してよいのかも曖昧になります。
+
+2026-09-17、Nakagawa-masterはPR #61982で、このmixed mutationが二つのtransactionに分かれていたためpartial successが起き得ると指摘し、全requested fieldsを一つのstorage-layer transaction / guardで扱うことと、途中にterminal transitionを挿入してall-or-nothingを確認するregressionを提案しました。
+
+- [Nakagawa-master atomicity review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5233352371)
+
+後続headでは、assignee変更とscalar field変更が一つの `write_txn` 内へ入り、後段guardが失敗した場合はassignment/eventもrollbackされる形へ変更されました。さらに `test_patch_mixing_assignee_and_edit_is_all_or_nothing` が、まさに途中でterminal transitionを発生させ、409後にassignee/titleがpartial persistされないことを固定しています。
+
+receiverはその後、**“Thanks @Nakagawa-master for re-checking the mixed-PATCH scope.”** と書き、同じPR上で追加のcompatibility修正を進めました。
+
+- [receiver follow-up](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5865975210)
+
+同じreceiverとの後続reviewでは別の境界も実装へ進みました。shared-secret gateが一つの観測文字列のShannon diversityを「generation entropy」のように扱っていた点について、Nakagawa-masterは **observed character diversity != generation entropy** と指摘しました。receiverは明示的に同意し、commit `7c2ef7ea9f` でShannon-bits判定を削除し、runtime checkをrepresentation / degeneracy screeningへ言い換え、CSPRNGによるprovisioningをdocsへ明記し、repeated diverse blockのregressionを追加しました。
+
+- [Nakagawa-master secret-strength review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5339797749)
+- [receiver response and fix](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5878240135)
+
+2026-10-01には同PRへの新しいreviewも行われていますが、その新しいprovenance findingはreceiver response前です。本ページでは、**既に第三者側のcode / tests / docs変更まで確認できる上記二つだけ**を実装済み事例として扱います。
+
+**公開記録から確認できること:** concrete atomicity review → receiver code/test change → exact regression → focused re-check → 同receiverからの継続的な再接触 → 別のsecret-strength境界でもreceiverが明示的に同意してcode/tests/docsを変更。  
+**まだ確認できないこと:** PR #61982のmerge・release・production use、利用者規模、2026-10-01の新reviewの採用、広い人物認知、PR全体がNakagawa-masterの指摘だけで作られたという因果。

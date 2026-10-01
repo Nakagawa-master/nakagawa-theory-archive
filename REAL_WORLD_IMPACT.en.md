@@ -2,7 +2,7 @@
 
 Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**Last checked: 2026-09-28**
+**Last checked: 2026-10-01**
 
 Nakagawa Master is the pen name of Keisuke Nakagawa. On social media, the name “マスター” (“Master”) is also used; some external posts use “MasterJP.”
 
@@ -993,3 +993,104 @@ PR #12895 merged at 2026-09-28T10:01:56Z. Stable [Qwen Code v0.24.7](https://git
 **Publicly verifiable here:** concrete hard-budget semantic finding → a receiving-project later PR voluntarily re-references Nakagawa-master as the source → the exact boundary is implemented in code / tests / docs → non-author maintainer approval → merge → stable v0.24.7 release with a traceable release-notes-to-PR path.  
 **Not established here:** independently verified operational use of v0.24.7, user scale, propagation to another human receiver, broad person recognition, or whole-theory endorsement.
 
+
+---
+
+## 32. LiteLLM | Separate shared trace identity from per-agent budget ownership, and separate scope identity from budget admission
+
+**Surface:** [BerriAI/litellm issue #43190](https://github.com/BerriAI/litellm/issues/43190) → [PR #43410](https://github.com/BerriAI/litellm/pull/43410)  
+**Current state:** receiver stated the per-agent-default direction → third-party implementation PR open / non-draft / mergeable → another participant restated and extended the distinction → merge, release, and production use not yet verified.
+
+When several AI agents share one trace, the trace being shared does not automatically mean that every agent's local budget should be charged to one counter. If Agent A alone spends the shared counter and Agent B is then stopped, B can lose its own local allowance without having spent it.
+
+In issue #43190, Nakagawa-master separated two questions:
+
+- **scope identity:** whose budget is being counted?
+- **budget admission:** can the next operation be admitted without crossing the limit?
+
+The comment proposed per-agent accounting for a local session limit, a separate owner/configuration for any trace-wide cap, and admission/reservation semantics when a limit is meant to be hard under concurrent calls.
+
+- [Nakagawa-master comment](https://github.com/BerriAI/litellm/issues/43190#issuecomment-5860734720)
+
+The issue author later stated that per-agent should be the default and pointed to PR #43410 as the implementation direction. The PR scopes the session limit to canonical agent identity plus the trace/session context and adds regression coverage.
+
+- [receiver response](https://github.com/BerriAI/litellm/issues/43190#issuecomment-5885417261)
+- [implementation PR #43410](https://github.com/BerriAI/litellm/pull/43410)
+
+A different participant then reused the same scope-identity-versus-admission distinction and extended it with production experience around multiple scopes, admit-before-forward, and exhaustion behavior.
+
+- [second-person restatement / extension](https://github.com/BerriAI/litellm/issues/43190#issuecomment-5873550150)
+
+**Publicly verifiable here:** structural distinction → receiver states the per-agent direction → implementation PR → another participant independently restates and extends the problem structure.  
+**Not established here:** merge, release, production use, user scale, explicit Nakagawa-master person-Origin attribution by the second participant, or endorsement of a wider theory system.
+
+→ [Practical use](PRACTICAL_USE.md#例6複数ai-agentが同じtraceを共有している)  
+→ [Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#10-resource-accounting--scope-ownership--shared-trace-is-not-shared-agent-budget)  
+→ [Official derivative OD304](derivatives/304/README.md)
+
+
+---
+
+## 33. Qwen Code | Separate an already-issued share from later changes to agent policy and execution placement
+
+**Surface:** [QwenLM/qwen-code PR #12851](https://github.com/QwenLM/qwen-code/pull/12851) → [PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)  
+**Current state:** Origin-preserving receiver restatement and live-policy clarification on #12851 → #12851 merged → new execution-placement boundary on #12582 → receiver response explicitly naming @Nakagawa-master → frozen contract and English/Chinese share UI changed in commit `74bf55053d` → independent reviewer `chiga0` explicitly rechecked the Nakagawa-master boundary and approved an observed head → later real two-host maintainer verification found transport reliability defects → receiver fixed F1/F2/F4 and related items in `e69ce77221` → six workflows are successful on current head `53b15769`; F3 and merge/release remain open.
+
+PR #12851 raised a long-lived authority question: after a share is issued, what happens if the same agent's capabilities later change? The receiver explicitly restated the Nakagawa-master question and documented the product's chosen live-policy behavior.
+
+In follow-on PR #12582, execution itself can move from a local runtime to a managed Host. Nakagawa-master pointed out that an already-issued share could remain valid while the machine/workspace/provider executing later requests changes, so that consequence should be part of the share contract visible to the user.
+
+The receiver replied **“@Nakagawa-master Good catch”** and changed the frozen contract and both English and Chinese share UI in commit `74bf55053d`:
+
+- execution-placement changes are explicitly part of the live-policy contract;
+- local ↔ managed runtime movement does not automatically revoke existing grants;
+- later requests run in the currently assigned runtime/workspace;
+- users are told to revoke before changing the agent if they need the previous conditions to stop carrying forward.
+
+- [Nakagawa-master follow-on review](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5364710354)
+- [receiver response](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5911699280)
+- [receiver commit `74bf55053d`](https://github.com/QwenLM/qwen-code/commit/74bf55053d271595cf5bab8e1fcd91bb3a8188b2)
+- [independent reviewer `chiga0` recheck](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368431439)
+
+Later, maintainer `wenshao` exercised head `18f576f4` with a macOS coordinator, Linux arm64 Host, macOS Host, a real model, and the real Web Shell. That independent verification found restart/result-lifecycle defects. Receiver `yiliang114` fixed F1, F2, F4 and related items in `e69ce77221`; current head `53b15769` is a later main merge, and the six observed workflows are successful. F3 remains a receiver-side tool/permission-contract decision. These later findings/fixes are receiver/maintainer-owned progress, not additional Nakagawa causal credit.
+
+- [maintainer real two-host verification](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926085407)
+- [receiver round-3 fix response](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926562535)
+
+**Publicly verifiable here:** concrete authority boundary → receiver Origin-preserving restatement → contract/UI change → independent second-person recheck carrying the Nakagawa-master boundary → later real-machine validation and receiver fixes.  
+**Not established here:** merge/release of #12582, real-user scale, broad person recognition, or a later prompt-free person-Origin return from this follow-on.
+
+→ [Human entry story](human-translation/entry-stories/09-same-share-different-runtime.md)  
+→ [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
+
+
+---
+
+## 34. Hermes Agent | A failed PATCH is not the same as “nothing changed”
+
+**Surface:** [NousResearch/hermes-agent PR #61982](https://github.com/NousResearch/hermes-agent/pull/61982)  
+**Current state:** mixed-PATCH atomicity finding → receiver moved the combined update into one transaction and added the exact regression → focused re-check closed that scope → the same receiver later requested Nakagawa-master review again → a separate secret-strength boundary was explicitly accepted and changed in code/tests/docs → PR remains open; merge/release are not verified.
+
+Imagine an external control plane sends one PATCH that changes both a task's assignee and its title. If the assignee change commits first, another actor completes or archives the task, and the title edit is then rejected, the API can return 409 even though part of the requested mutation already happened.
+
+For the external controller, **“request failed” != “no side effect occurred.”** Retry semantics become ambiguous.
+
+On 2026-09-17, Nakagawa-master identified that PR #61982 split the mixed mutation across two transactions and proposed one storage-layer transaction/guard plus a regression that forces a terminal transition between the two phases.
+
+- [Nakagawa-master atomicity review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5233352371)
+
+A later head moved assignment plus scalar updates into one `write_txn`. If the later guard fails, the assignment/event rolls back too. The regression `test_patch_mixing_assignee_and_edit_is_all_or_nothing` injects the exact terminal-transition race and verifies that a 409 does not leave only the assignee/title partially persisted.
+
+The receiver later wrote **“Thanks @Nakagawa-master for re-checking the mixed-PATCH scope.”** and continued additional compatibility repairs on the same PR.
+
+- [receiver follow-up](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5865975210)
+
+A separate later review on the same receiver line addressed a different boundary. The shared-secret gate treated Shannon diversity of one observed string as if it proved generation entropy. Nakagawa-master stated the narrower invariant **observed character diversity != generation entropy**. The receiver explicitly agreed and, in commit `7c2ef7ea9f`, removed the Shannon-bits claim, reframed the runtime check as representation/degeneracy screening, documented CSPRNG provisioning, and added a repeated-diverse-block regression.
+
+- [Nakagawa-master secret-strength review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5339797749)
+- [receiver response and fix](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5878240135)
+
+A new review was submitted on 2026-10-01, but that provenance finding has not yet received a receiver response. This page counts only the two boundaries above for which third-party code/tests/docs changes are already public.
+
+**Publicly verifiable here:** atomicity review → receiver code/test change → exact regression → focused re-check → continuing return from the same receiver → a separate secret-strength review explicitly accepted and implemented in code/tests/docs.  
+**Not established here:** merge/release of PR #61982, production use, user scale, adoption of the 2026-10-01 review, broad person recognition, or exclusive causality for the whole PR.

@@ -2,7 +2,7 @@
 
 语言: [日本語](REAL_WORLD_IMPACT.md) | [English](REAL_WORLD_IMPACT.en.md) | **中文**
 
-**最后确认：2026-09-28**
+**最后确认：2026-10-01**
 
 中川大师（Nakagawa Master）是Keisuke Nakagawa的笔名。在社交媒体上也使用“マスター（Master）”，部分外部投稿使用“MasterJP”名义。
 
@@ -998,3 +998,104 @@ PR #12895于2026-09-28T10:01:56Z merge。stable [Qwen Code v0.24.7](https://gith
 **公开可确认：** 具体hard-budget semantics指摘 → 接收方项目后续PR自发把Nakagawa-master作为source再次引用 → exact boundary进入code / tests / docs → 非作者maintainer approval → merge → stable v0.24.7，并且release notes可追溯回PR。  
 **尚未确认：** v0.24.7的独立真实运营使用、用户规模、向其他人类receiver继续传播、广泛人物认知，或对整个理论体系的支持。
 
+
+---
+
+## 32. LiteLLM｜区分共享trace与每个agent自己的budget，并区分scope identity与budget admission
+
+**对象：** [BerriAI/litellm issue #43190](https://github.com/BerriAI/litellm/issues/43190) → [PR #43410](https://github.com/BerriAI/litellm/pull/43410)  
+**当前状态：** receiver明确per-agent default方向 → 第三方implementation PR open / non-draft / mergeable → 另一位参与者重新说明并扩展同一区分 → merge、release、production use尚未确认。
+
+多个AI agent共享同一条trace，并不自动意味着每个agent的local budget都应该共用一个counter。若只有Agent A在消耗，但Agent B也因此被停止，B就可能在没有使用自己额度的情况下失去local allowance。
+
+在issue #43190中，Nakagawa-master先把两个问题分开：
+
+- **scope identity：** 到底在计算谁的budget？
+- **budget admission：** 下一次操作能否在不越过上限的情况下被允许执行？
+
+comment建议：local session limit按agent自身scope计数；如果还需要trace-wide cap，应有独立配置和owner；如果上限被称为hard cap，则并发call下还需要admission / reservation，而不能只在执行后累加cost。
+
+- [Nakagawa-master comment](https://github.com/BerriAI/litellm/issues/43190#issuecomment-5860734720)
+
+issue author随后表示per-agent应作为default，并指出PR #43410正在实现该方向。PR把session limit绑定到canonical agent identity与trace/session context，并增加回归test。
+
+- [receiver response](https://github.com/BerriAI/litellm/issues/43190#issuecomment-5885417261)
+- [implementation PR #43410](https://github.com/BerriAI/litellm/pull/43410)
+
+另一位参与者随后从同一个“scope identity 与 budget admission是两件事”的区分出发，结合自己的production经验，继续补充multiple scopes、admit-before-forward和budget exhaustion处理。
+
+- [second-person restatement / extension](https://github.com/BerriAI/litellm/issues/43190#issuecomment-5873550150)
+
+**公开可确认：** 结构区分 → receiver明确per-agent方向 → implementation PR → 另一位参与者独立重新说明并扩展这一问题结构。  
+**尚未确认：** merge、release、production use、用户规模、第二位参与者明确保留Nakagawa-master人物Origin，或对更广泛理论体系的认可。
+
+→ [实践入口](PRACTICAL_USE.md#例6複数ai-agentが同じtraceを共有している)  
+→ [Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#10-resource-accounting--scope-ownership--shared-trace-is-not-shared-agent-budget)  
+→ [官方派生物 OD304](derivatives/304/README.md)
+
+
+---
+
+## 33. Qwen Code｜区分已经发出的share与之后变化的agent policy / execution placement
+
+**对象：** [QwenLM/qwen-code PR #12851](https://github.com/QwenLM/qwen-code/pull/12851) → [PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)  
+**当前状态：** #12851出现保留Origin的receiver restatement与live-policy整理 → #12851 merge → #12582出现execution-placement新边界 → receiver明确@Nakagawa-master回应 → commit `74bf55053d` 修改frozen contract与英中share UI → 独立reviewer `chiga0` 明确重新检查Nakagawa-master边界并对一个observed head给出approval → 后续maintainer真实双Host验证发现transport reliability问题 → receiver在 `e69ce77221` 修复F1/F2/F4等 → current head `53b15769` 的6个workflow成功；F3以及merge/release仍未完成。
+
+PR #12851提出了一个长期authority问题：share发出后，如果同一个agent的能力发生变化，旧share到底继续authorize什么？receiver明确重新说明Nakagawa-master提出的问题，并记录产品选择的是按使用时current agent定义工作的live-policy。
+
+后续PR #12582又允许execution从local runtime移动到managed Host。Nakagawa-master指出：旧share可能继续有效，但真正执行后续request的machine / workspace / provider已经变化，因此这个后果应该进入用户能够在share时读到的contract。
+
+receiver回复 **“@Nakagawa-master Good catch”**，并在commit `74bf55053d` 中修改frozen contract与英中share UI：
+
+- execution-placement变化被明确写入live-policy；
+- local ↔ managed runtime变化不会自动撤销existing grants；
+- later request使用当前分配的runtime/workspace执行；
+- 如果用户希望旧条件停止继续生效，应在修改agent前先revoke share。
+
+- [Nakagawa-master follow-on review](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5364710354)
+- [receiver response](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5911699280)
+- [receiver commit `74bf55053d`](https://github.com/QwenLM/qwen-code/commit/74bf55053d271595cf5bab8e1fcd91bb3a8188b2)
+- [独立reviewer `chiga0` recheck](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368431439)
+
+之后，maintainer `wenshao` 使用macOS coordinator、Linux arm64 Host、macOS Host、真实model和真实Web Shell对head `18f576f4` 做了双Host实机验证，并发现restart / result lifecycle等问题。receiver `yiliang114` 在 `e69ce77221` 修复F1、F2、F4及相关项；current head `53b15769` 是之后的main merge，观察到的6个workflow均成功。F3仍是receiver侧tool / permission contract的design decision。这里把这些后续验证与修正记为receiver / maintainer自己的进展，不增加Nakagawa因果credit。
+
+- [maintainer real two-host verification](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926085407)
+- [receiver round-3 fix response](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926562535)
+
+**公开可确认：** 具体authority边界 → receiver保留Origin重新说明 → contract / UI修改 → 独立第二reviewer再次明确Nakagawa-master边界 → 后续真实机器验证与receiver修复。  
+**尚未确认：** #12582 merge/release、真实用户规模、广泛人物认知，或该follow-on之后无新提示的人物Origin再次返回。
+
+→ [一般读者入口](human-translation/entry-stories/09-same-share-different-runtime.md)  
+→ [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
+
+
+---
+
+## 34. Hermes Agent｜“PATCH失败”不等于“什么都没有改变”
+
+**对象：** [NousResearch/hermes-agent PR #61982](https://github.com/NousResearch/hermes-agent/pull/61982)  
+**当前状态：** mixed PATCH atomicity指摘 → receiver改为single-transaction并加入exact regression → focused re-check关闭该scope → 同一receiver之后再次请求Nakagawa-master review → 另一条secret-strength边界也被receiver明确接受并进入code/tests/docs → PR仍open；merge/release尚未确认。
+
+假设外部control plane用一次PATCH同时修改task的assignee和title。如果assignee先commit，紧接着另一actor把task complete / archive，随后title修改被拒绝，那么API可以返回409，但系统状态实际上已经被改了一部分。
+
+对外部controller来说，**“request失败” != “没有发生副作用”**。下一次retry应该重做什么也会变得不明确。
+
+2026-09-17，Nakagawa-master指出PR #61982把mixed mutation拆成两个transaction，因此可能发生partial success，并建议把全部requested fields放进同一个storage-layer transaction / guard，同时加入“两个阶段之间强制terminal transition”的all-or-nothing regression。
+
+- [Nakagawa-master atomicity review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5233352371)
+
+后续head把assignment与scalar updates放进同一个 `write_txn`。如果后段guard失败，assignment/event也一起rollback。回归test `test_patch_mixing_assignee_and_edit_is_all_or_nothing` 固定了这一精确race，并验证409之后不会只留下assignee/title的partial persist。
+
+receiver随后明确写道 **“Thanks @Nakagawa-master for re-checking the mixed-PATCH scope.”**，并继续在同一PR上进行额外compatibility修正。
+
+- [receiver follow-up](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5865975210)
+
+同一receiver线上的另一条后续review处理了不同边界。shared-secret gate曾把单个已观察字符串的Shannon diversity近似描述成generation entropy。Nakagawa-master指出更窄且可验证的边界：**observed character diversity != generation entropy**。receiver明确同意，并在commit `7c2ef7ea9f` 中删除Shannon-bits判定，把runtime check改述为representation / degeneracy screening，在docs中要求CSPRNG provisioning，并增加repeated-diverse-block regression。
+
+- [Nakagawa-master secret-strength review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5339797749)
+- [receiver response and fix](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5878240135)
+
+2026-10-01同PR又收到一条新的review，但新的provenance finding尚未收到receiver response。因此本页只把上面两条已经出现第三方code/tests/docs变化的边界记作已实现案例。
+
+**公开可确认：** atomicity review → receiver code/test change → exact regression → focused re-check → 同一receiver持续返回 → 另一条secret-strength review被明确接受并进入code/tests/docs。  
+**尚未确认：** PR #61982 merge/release、production use、用户规模、2026-10-01新review的采用、广泛人物认知，或整个PR都由Nakagawa-master单独造成。

@@ -1604,6 +1604,155 @@
         ],
         "canonical_source": "https://master.ricette.jp"
       }
+    },
+    {
+      "case_id": "litellm-agent-budget-scope-versus-admission",
+      "topic": "shared trace identity versus per-agent budget ownership, and scope identity versus budget admission",
+      "external_repository": "BerriAI/litellm",
+      "origin_action": {
+        "type": "issue_comment",
+        "url": "https://github.com/BerriAI/litellm/issues/43190#issuecomment-5860734720",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action",
+        "summary": "Separated whose budget is being counted from whether a hard budget can admit the next concurrent operation without overshoot."
+      },
+      "third_party_response": {
+        "url": "https://github.com/BerriAI/litellm/issues/43190#issuecomment-5885417261",
+        "relationship": "issue author states per-agent should be the default and points to PR #43410 as the implementation direction"
+      },
+      "implementation": {
+        "pull_request": "https://github.com/BerriAI/litellm/pull/43410",
+        "state": "open_unmerged",
+        "mechanisms": [
+          "scope session limits to canonical agent identity plus trace/session context",
+          "add regression coverage around per-agent session accounting"
+        ]
+      },
+      "second_person_carry": {
+        "url": "https://github.com/BerriAI/litellm/issues/43190#issuecomment-5873550150",
+        "person_origin_preserved": false,
+        "relationship": "another participant restated the scope-identity versus admission distinction and extended it with production experience"
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "not_claimed": [
+        "merge",
+        "release",
+        "production use",
+        "user-scale effect",
+        "explicit Nakagawa Master origin attribution by the second participant",
+        "whole-theory endorsement"
+      ],
+      "public_human_case": "REAL_WORLD_IMPACT.md#32-litellm同じtraceと同じagent-budgetを分けscope-identityとbudget-admissionも分ける"
+    },
+    {
+      "case_id": "qwen-issued-share-live-policy-execution-placement",
+      "topic": "already-issued share authority versus later agent-policy and execution-placement changes",
+      "external_repository": "QwenLM/qwen-code",
+      "origin_action": {
+        "type": "pull_request_review",
+        "url": "https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5364710354",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action",
+        "summary": "Asked what an existing share authorizes when execution later moves between local and managed runtimes while the share remains valid."
+      },
+      "third_party_response": {
+        "actor": "yiliang114",
+        "url": "https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5911699280",
+        "relationship": "receiver explicitly replied @Nakagawa-master Good catch and selected the live-policy disclosure contract"
+      },
+      "receiver_change": {
+        "commit": "74bf55053d271595cf5bab8e1fcd91bb3a8188b2",
+        "url": "https://github.com/QwenLM/qwen-code/commit/74bf55053d271595cf5bab8e1fcd91bb3a8188b2",
+        "mechanisms": [
+          "frozen English and Chinese contracts state execution placement follows live policy",
+          "local-to-managed runtime movement does not automatically revoke existing grants",
+          "later requests run in the currently assigned runtime workspace",
+          "English and Chinese share UI discloses the consequence before sharing"
+        ]
+      },
+      "independent_origin_preserved_recheck": {
+        "actor": "chiga0",
+        "url": "https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368431439",
+        "relationship": "independent reviewer explicitly rechecked the Nakagawa-master execution-placement question"
+      },
+      "later_receiver_owned_validation": {
+        "verification": "https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926085407",
+        "fix_response": "https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926562535",
+        "fix_commit": "e69ce77221356c2756b79f6a90b38463eb952331",
+        "current_head": "53b15769e822778ff954a7bd9420286a9d40ae23",
+        "boundary": "real two-host transport findings and fixes are receiver/maintainer-owned progress, not additional Nakagawa causal credit"
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "not_claimed": [
+        "merge of PR #12582",
+        "release",
+        "verified user-scale contact",
+        "broad person recognition",
+        "prompt-free later person-origin return from this follow-on"
+      ],
+      "public_human_case": "REAL_WORLD_IMPACT.md#33-qwen-code既発行shareと後から変わるagent-policy実行場所を分ける"
+    },
+    {
+      "case_id": "hermes-kanban-mixed-patch-atomicity-and-secret-claim-boundaries",
+      "topic": "external-control-plane mixed mutation atomicity and observable secret properties versus generator entropy",
+      "external_repository": "NousResearch/hermes-agent",
+      "atomicity_origin": {
+        "type": "pull_request_review",
+        "url": "https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5233352371",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action",
+        "summary": "Identified that a mixed assignee plus scalar PATCH could return 409 after persisting only the assignee because the mutation was split across transactions."
+      },
+      "atomicity_receiver_change": {
+        "verified_at_head": "522b2c49201abc013153dd4a9e2f1ce12d21e616",
+        "mechanisms": [
+          "assignment and scalar edits share one write transaction",
+          "later guard failure rolls back assignment/event with the rest of the mutation",
+          "observer notification happens only after the combined commit",
+          "exact regression forces a terminal transition between phases and verifies no partial persistence"
+        ],
+        "receiver_followup": "https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5865975210"
+      },
+      "secret_strength_origin": {
+        "type": "pull_request_review",
+        "url": "https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5339797749",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action",
+        "summary": "Separated observable character diversity from unobservable generation entropy."
+      },
+      "secret_strength_receiver_change": {
+        "response": "https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5878240135",
+        "fix_commit": "7c2ef7ea9f",
+        "mechanisms": [
+          "remove Shannon-bits runtime claim",
+          "reframe runtime check as representation/degeneracy screening",
+          "document CSPRNG provisioning",
+          "add repeated-diverse-block regression"
+        ]
+      },
+      "latest_pending_review": {
+        "submitted_at_utc": "2026-10-01T08:46:27Z",
+        "review_id": "5376987496",
+        "boundary": "authenticated service principal versus caller-chosen durable comment provenance",
+        "receiver_response": "pending",
+        "implementation_credit": false
+      },
+      "current_pr": {
+        "url": "https://github.com/NousResearch/hermes-agent/pull/61982",
+        "state": "open_unmerged",
+        "observed_head": "4d2fdd134fd92bc8403a19c1abba3d4073100a7e"
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "not_claimed": [
+        "merge",
+        "release",
+        "production use",
+        "user-scale effect",
+        "adoption of the 2026-10-01 pending review",
+        "exclusive causality for the whole PR",
+        "whole-theory endorsement"
+      ],
+      "public_human_case": "REAL_WORLD_IMPACT.md#34-hermes-agentpatchが失敗したと何も変更されていないを同じにしない"
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
