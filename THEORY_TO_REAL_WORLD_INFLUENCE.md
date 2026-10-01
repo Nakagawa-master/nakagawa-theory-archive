@@ -116,6 +116,15 @@ Primary records:
 
 A separate reviewer, `doudouOUC`, then reconstructed the mechanism from current head `d8f27bf2` and explicitly agreed with the narrower Nakagawa-master contract `one final invocation identity → one authority decision → execution of that same identity`. The reviewer also translated it into an implementation rule: an allow attestation may be reused only while the policy-relevant invocation identity is unchanged; changes to args, cwd, session, or related context invalidate it and require re-evaluation. This is a second-person technical carry, not the receiver repeating its own decision.
 
+The receiver then chose a narrower alternative on the PR branch. Commit [`b4a13e44`](https://github.com/QwenLM/qwen-code/commit/b4a13e448a6e79bd766f2a7566155d0afd205362) preserves the normal permission/final-guard ordering but changes automatic Agent Host refusal into a recoverable `EXECUTION_DENIED`, with regression coverage proving the rejected tool does not execute and a later allowed read-only tool can continue. This resolves the original fatal turn-recovery symptom without pulling the ordering change back into #12582.
+
+Nakagawa-master rechecked that new baseline and explicitly separated the remaining questions: update the now-stale PR description, and re-evaluate #13157 as a policy/diagnostic ordering question rather than treating its original “run dies” premise as still true.
+
+- [receiver alternative recovery commit](https://github.com/QwenLM/qwen-code/commit/b4a13e448a6e79bd766f2a7566155d0afd205362)
+- [current-baseline recheck](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5932820014)
+
+This is useful evidence of a scope constraint producing a different implementation shape, but it is not claimed as exclusive causality or as adoption of the earlier attestation proposal.
+
 This is not additional credit for discovering the underlying F3 defect. The inspectable effect is the **problem decomposition and responsibility boundary**: a Nakagawa-master scope judgment became a receiver-owned issue with preserved Origin, and the receiving project's triage independently validated the resulting work item. Because the issue was created directly in response to that correction, it is not counted as a later prompt-free G8 return.
 
 ### What these four checks do — and do not — show
