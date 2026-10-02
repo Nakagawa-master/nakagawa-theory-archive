@@ -477,19 +477,25 @@
         "Can an actor exercise effective power over others without owning them or their system?",
         "Do several providers/routes remain real alternatives when they share one authentication, catalog, control-plane, data, or migration gate?",
         "Does an export button amount to real exit if state cannot be restored and continued independently?",
-        "Can an objection actually reach an independent reviewer when the disputed system controls the evidence or appeal path?"
+        "Can an objection actually reach an independent reviewer when the disputed system controls the evidence or appeal path?",
+        "Does permission to enroll or create a replacement endpoint also prove which existing endpoint identity may be revoked or superseded?",
+        "Can two devices or hosts share the same name or path without being the same identity for destructive replacement decisions?"
       ],
       "problem_phrases_ja": [
         "所有していなくても、認証・計算・通信・data・migrationなどの入口を握ることで他者の実行可能性を変えられるか？",
         "複数providerやrouteがあっても、共通の認証・catalog・control plane・data・migration gateで全部止まらないか？",
         "exportできても、別環境でstateを復元し継続できなければ実効的なexitと言えるか？",
-        "独立監査者がいても、異議や証拠の入口を被監査側が止められないか？"
+        "独立監査者がいても、異議や証拠の入口を被監査側が止められないか？",
+        "新しいHost・deviceを登録する権限があれば、どの既存identityを失効・置換してよいかまで自動的に決まるのか？",
+        "同じname・hostname・workspace pathを持つ2つのendpointを、破壊的な置換判断で同一identityとして扱ってよいか？"
       ],
       "problem_phrases_zh": [
         "即使不拥有某个主体或系统，是否仍可通过认证、计算、通信、数据或迁移入口改变其可执行选择？",
         "即使存在多个提供商或路径，它们是否会因共享认证、目录、控制平面、数据或迁移入口而同时失效？",
         "如果数据能导出却无法在独立环境恢复并继续运行，这是否算真正退出？",
-        "即使有独立审计者，被审计方是否仍能控制申诉或证据到达审计者的入口？"
+        "即使有独立审计者，被审计方是否仍能控制申诉或证据到达审计者的入口？",
+        "有权注册或创建新的替代端点，是否就能自动证明应撤销或取代哪一个现有端点身份？",
+        "两个设备或主机即使拥有相同名称、主机名或工作路径，在破坏性替换判断中是否仍可能不是同一身份？"
       ],
       "canonical_theory": "人類子孫型AI文明論・第13論｜非所有と実効権力・非支配論",
       "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 13 — non-ownership, effective power and non-domination",
@@ -499,7 +505,7 @@
       "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/",
       "official_derivative_path": "derivatives/306/README.md",
       "public_reuse_kit": "../ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md",
-      "relevance_note": "Relevant when ownership labels or provider counts hide a narrower access topology. Tests common chokepoints, practical independence of alternatives, export-to-restore continuity, audit-entry independence, bounded scope/duration and reversibility. Concentration or dependence alone does not prove domination."
+      "relevance_note": "Relevant when ownership labels, provider counts, enrollment capabilities, or presentation attributes hide a narrower access/identity topology. Tests common chokepoints, practical independence of alternatives, export-to-restore continuity, audit-entry independence, bounded scope/duration and reversibility, and whether authority to create/enroll is being mistaken for authority to revoke or supersede an exact existing identity. Concentration, dependence, matching names, or matching paths alone do not prove domination or identity."
     }
   ],
   "discovery_notes": {
