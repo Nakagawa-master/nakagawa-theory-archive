@@ -62,7 +62,8 @@
     "keep UNKNOWN distinct from TRUE and FALSE",
     "after a material source correction, verify that derived memory and later judgments change rather than only the displayed text",
     "do not use a system's own belief-driven effects as independent evidence for the original belief",
-    "audit false rejection as well as false acceptance in information defenses"
+    "audit false rejection as well as false acceptance in information defenses",
+    "do not treat provider-returned citation source count as a corroboration or confidence score; multiple source objects may depend on the same upstream evidence root"
   ],
   "falsification_and_non_fit": [
     "show that lineage retention does not materially improve error detection under the tested contract",
