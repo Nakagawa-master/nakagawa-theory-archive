@@ -557,7 +557,7 @@ explicit replace
 関連資料:
 - [Qwen Code issue #13122](https://github.com/QwenLM/qwen-code/issues/13122)
 - [explicit supersession proposal](https://github.com/QwenLM/qwen-code/issues/13122#issuecomment-5952715999)
-- [Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md#G-enrollment-authority-is-mistaken-for-replacement-authority)
+- [Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md#g-enrollment-authority-is-mistaken-for-replacement-authority)
 - [machine-readable independent reuse challenges](machine-discovery/independent-reuse-challenges-v1.json)
 - [OD306｜非所有と実効権力・非支配論](derivatives/306/README.md)
 - Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/
