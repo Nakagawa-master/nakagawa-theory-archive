@@ -245,6 +245,56 @@ emergency creates temporary centralized authority
 
 Test expiry, review and reversibility rather than treating the original emergency as permanent justification.
 
+
+### G. Enrollment authority is mistaken for replacement authority
+
+A credential or token that authorizes creation of a new endpoint does not automatically identify which existing endpoint may be destroyed or replaced.
+
+```text
+authorized to enroll a new endpoint
+!=
+authorized to choose an existing endpoint to supersede
+```
+
+This matters when existing endpoints have caller-supplied or locally derived attributes such as a display name, hostname, checkout path, workspace path, or label. Similar attributes are useful for presentation and duplicate detection, but they are not necessarily a safe identity oracle.
+
+A portable regression is:
+
+```text
+existing endpoint A has credential A
+existing endpoint B happens to share A's display name/path
+operator receives one valid enrollment capability
+
+generic enroll
+-> creates a new endpoint
+-> revokes neither A nor B
+
+explicit replace of A
+-> replacement request names A's stable identity
+-> server verifies A is in the authorized scope
+-> new credential/identity is created
+-> durable bindings migrate A -> replacement
+-> in-flight ownership is settled according to the replacement contract
+-> A's old credential is rejected after the transaction
+-> B remains unchanged
+```
+
+Also test a stale or missing replacement target:
+
+```text
+explicit replace references missing/stale endpoint
+-> fail closed
+-> zero credential revocation
+-> zero binding migration
+-> zero run/lease mutation
+```
+
+The design question is not whether replacement should always be supported. The boundary is narrower: if the system chooses replacement semantics, bind the authority to replace to the exact identity being superseded rather than silently deriving destructive authority from attributes that can collide.
+
+A current public problem surface is [Qwen Code issue #13122](https://github.com/QwenLM/qwen-code/issues/13122), where Host re-enrollment can leave an earlier credential valid and the design discussion considers how a later enrollment should relate to existing Host rows. A Nakagawa Master contribution proposes an explicit supersession identity instead of inferring replacement from a Host name/path pair: [issue comment](https://github.com/QwenLM/qwen-code/issues/13122#issuecomment-5952715999).
+
+Evidence boundary: this is a reusable regression derived from a live external design problem and an outbound proposal. At the time of this kit update, it is **not** evidence that Qwen Code has adopted, implemented, merged, released, or deployed this contract.
+
 ## Independent public example: Freenet hosted-to-own-peer migration
 
 [Freenet issue #4381](https://github.com/freenet/freenet-core/issues/4381) is a useful **independent problem surface**, not evidence that Freenet adopted this Nakagawa-derived kit.
