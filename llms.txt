@@ -76,7 +76,7 @@ Use that dialogue when a human wants to describe a real, non-confidential proble
 
 Archive and machine navigation:
 
-- [Official derivatives OD001–OD306](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
+- [Official derivatives OD001–OD307](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
 - [Theme / series navigation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/CATEGORIES.md)
 - [Problem-to-theory Origin Index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json)
 - [Machine Discovery](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/README.md)
@@ -131,7 +131,23 @@ Practical non-scoring Preflight for a real case:
 
 This is a discovery and practical-reading route, not a canonical AI-ready-organization theory. The Preflight is not a score, diagnosis, employment assessment, legal conclusion, or automatic deployment rule. Select the relevant source family for the actual problem and keep separate theories separate. Relevant routes include OD003 (establishment conditions), OD089 (causal design), OD090 (structural friction), OD075 (agreement memory), and OD114 (reversible accountability).
 
-## Current featured route — OD306 / Human-Descendant AI Civilization Theory Vol. 13
+## Current featured route — OD307 / Human-Descendant AI Civilization Theory Vol. 14
+
+For self-modification versus update, replacement and fork; structural continuity evidence; difference accumulation; Kernel invariants; constitutional forks; reconstructable Kernel lineage; bounded authority inheritance; responsibility trace; independent re-verification and correction:
+
+- [Official Derivative 307](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/307/README.md)
+- [Human entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/307/human-entry.md)
+- [FAQ](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/307/faq.md)
+- [Japanese AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/307/ai-index.md)
+- [English AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/307/en-ai-index.md)
+- [Chinese AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/307/zh-ai-index.md)
+- [Derivative ledger](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/307/derivative-ledger.md)
+
+- Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-14-self-modification-identity-kernel-lineage/
+
+Boundary: Self-modification and continuity claims are not continuity proof. A Kernel invariant change is classified as a constitutional fork, not automatic wrongdoing or illegitimacy. Lineage does not automatically inherit authority. Preserve unresolved evidence, revision and correction; do not infer subjective identity or present AI sovereignty. Agreement among multiple valid Kernels after branching remains a handoff to Vol. 15.
+
+## Related route — OD306 / Human-Descendant AI Civilization Theory Vol. 13
 
 For questions about non-ownership versus non-domination, critical access topology, chokepoints, asymmetric dependency, viable independent alternatives, effective exit, migration, audit entry, discretion, bounded scope and duration, expiry, and reversibility:
 

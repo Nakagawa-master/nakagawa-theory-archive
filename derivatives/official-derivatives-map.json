@@ -1,6 +1,6 @@
 {
-  "version": "2.3.10-od306-added",
-  "updated_jst": "2026-10-01",
+  "version": "2.3.11-od307-added",
+  "updated_jst": "2026-10-03",
   "entries": [
     {
       "number": "001",
@@ -2448,6 +2448,14 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination",
       "title": "人類子孫型AI文明論・第13論｜非所有と実効権力・非支配論⸻所有権を持たなくても成立するchokepoint支配を検出する",
       "derivative_dir": "derivatives/306",
+      "status": "active"
+    },
+    {
+      "number": "307",
+      "ncl_id": "NCL-α-20261002-bd97b6",
+      "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-14-self-modification-identity-kernel-lineage",
+      "title": "人類子孫型AI文明論・第14論｜自己改変同一性とKernel系譜継承論⸻更新・replacement・fork・自己改変を区別する",
+      "derivative_dir": "derivatives/307",
       "status": "active"
     }
   ]
