@@ -441,3 +441,65 @@ who authenticated
 - [Nakagawa-master review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5376987496)
 - [receiver fix explanation](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5930276480)
 - [Independent verification & reuse registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+
+
+## 18. ワークフロー全体が古ければ、現在versionの測定も成熟していると言えるか
+
+長く動いているworkflowでも、**いま公開されているversion**が昨日出たばかりなら、そのversionのopens、clicks、bouncesなどはまだ十分に返ってきていない場合があります。
+
+```text
+whole-workflow history age
+≠
+current-version cohort age
+
+old first send
+≠
+current version has had enough time to collect feedback
+```
+
+PostHog PR #107802 の current head `d0a895c5` では、workflow suggestion scout は性能値そのものについては `workflows-version-stats` を使い、versionを分けて読む設計になっています。一方、同じskillの48時間maturity判定では、`workflows-stats` を日次で読み「最初のsend日」をそのversionがliveになった時点として扱う指示が残っています。
+
+ここには測定surfaceのずれがあります。PR内のMCP tool contract自身が、`workflows-stats` はworkflowの**全履歴**を読むと説明しています。そのため、何か月も送信してきたworkflowが昨日v8へpublishされた場合でも、全履歴の最初のsend日を使うとv8を「48時間以上成熟」と誤認できます。すると、新versionのopensやbouncesがまだ到着途中なのに、copyの良し悪しを早すぎる時点で判定する可能性があります。
+
+同じcontractには、この用途のために `workflows-list-versions` があり、各published versionがいつliveになったかを返し、「live versionがどれだけ送信されているかを判断する」ために使うと明記されています。version historyが存在しないlegacy caseだけ、send開始時刻から推定するfallbackが説明されています。
+
+したがって、再利用できる境界は次です。
+
+```text
+measure current-version performance
+→ identify the same version's publication/cohort start
+→ wait for its feedback window
+→ judge that version
+
+not:
+
+measure current-version performance
+→ borrow workflow-wide historical age
+→ treat the new version as mature
+```
+
+最小の回帰fixtureは、例えば次です。
+
+```text
+v7:
+  sends: weeks of history
+
+v8:
+  published: < 48 hours ago
+  sends: today
+
+expected:
+  v8 is immature
+
+must_not:
+  old v7/history rows make v8 pass the 48h gate
+```
+
+この事例は「時間が経ったか」という単純な問題ではなく、**どの対象について時間を測ったか**というmeasurement attributionの問題です。数値をversionごとに分離していても、判定に使う時間軸を別populationの履歴から借りれば、結論は再び混ざります。
+
+この記録時点では、receiver側へこの指摘を書き込む操作はGitHub側で拒否されており、receiverによる採用・修正・再言及は成立していません。したがって、これは公開コードとtool contractから確認した再利用可能な検査例であり、Nakagawa Masterの外部作用creditとしては数えません。
+
+関連資料:
+- [PostHog PR #107802](https://github.com/PostHog/posthog/pull/107802)
+- [Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md)
+- [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
