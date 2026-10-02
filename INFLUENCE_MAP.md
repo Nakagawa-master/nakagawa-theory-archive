@@ -550,6 +550,21 @@ explicit replace
 1. **creation authority** — 新しいendpointを作ってよいか。
 2. **destructive replacement authority** — どの既存endpointを失効・置換してよいか。
 
+OD307はここへ時間方向のもう一段を追加します。新しいcredentialやHostが古いものと関係を持つことは、replacement / continuity / authority inheritanceが同時に成立することを意味しません。
+
+```text
+same operational role
+≠ same identity continuity
+
+same lineage
+≠ same authority scope
+
+inherited credential or binding
+≠ inherited legitimacy
+```
+
+したがって、置換時は「どのidentityをsupersedeするか」だけでなく、旧→新のtransition、保持されたbinding、変更されたauthority scope、失効したcredentialを後から再構成できることも別に検査できます。これはOD306のaccess topologyを置き換えるのではなく、OD307のidentity / Kernel lineage軸を重ねるものです。
+
 置換対象が消えている、古い、scope外である場合は、credential失効・binding移行・run/lease変更を何も起こさずfail closedにする回帰testが有効です。
 
 ここで確認できるのは、公開issueに対してこの明示supersession案が提示されたところまでです。この記録時点では、Qwen Code側による採用、実装、merge、releaseは確認していません。
@@ -559,5 +574,7 @@ explicit replace
 - [explicit supersession proposal](https://github.com/QwenLM/qwen-code/issues/13122#issuecomment-5952715999)
 - [Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md#g-enrollment-authority-is-mistaken-for-replacement-authority)
 - [machine-readable independent reuse challenges](machine-discovery/independent-reuse-challenges-v1.json)
+- [OD307｜自己改変同一性とKernel系譜継承論](derivatives/307/README.md)
 - [OD306｜非所有と実効権力・非支配論](derivatives/306/README.md)
-- Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/
+- Canonical Parent (OD307): https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-14-self-modification-identity-kernel-lineage/
+- Canonical Parent (OD306): https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/
