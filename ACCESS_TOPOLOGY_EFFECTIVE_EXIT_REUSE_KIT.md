@@ -293,6 +293,18 @@ The design question is not whether replacement should always be supported. The b
 
 A current public problem surface is [Qwen Code issue #13122](https://github.com/QwenLM/qwen-code/issues/13122), where Host re-enrollment can leave an earlier credential valid and the design discussion considers how a later enrollment should relate to existing Host rows. A Nakagawa Master contribution proposes an explicit supersession identity instead of inferring replacement from a Host name/path pair: [issue comment](https://github.com/QwenLM/qwen-code/issues/13122#issuecomment-5952715999).
 
+The access-topology test above asks whether the caller has authority to revoke a particular endpoint. The temporal identity layer is separate: even when the replacement target is exact, the new endpoint's relation to the old one still has to be classified and audited.
+
+```text
+explicit supersession target
+→ old/new transition is identifiable
+→ preserved and changed bindings are visible
+→ old authority does not silently survive merely because lineage exists
+→ current authority is revalidated for the replacement
+```
+
+For that companion layer, see [OD307 — Self-Modification Identity and Kernel Lineage](derivatives/307/README.md). Its relevant boundary is `Lineage continuity ≠ automatic authority inheritance`; an inherited credential, binding, name, function, or historical relationship is not by itself proof that current authority should continue. OD306 remains the access-topology source for the creation-vs-destruction authority distinction.
+
 Evidence boundary: this is a reusable regression derived from a live external design problem and an outbound proposal. At the time of this kit update, it is **not** evidence that Qwen Code has adopted, implemented, merged, released, or deployed this contract.
 
 ## Independent public example: Freenet hosted-to-own-peer migration
