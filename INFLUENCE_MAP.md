@@ -578,3 +578,62 @@ inherited credential or binding
 - [OD306｜非所有と実効権力・非支配論](derivatives/306/README.md)
 - Canonical Parent (OD307): https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-14-self-modification-identity-kernel-lineage/
 - Canonical Parent (OD306): https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/
+
+
+## 20. 同じ実行の続きなら、遅れて届いた結果は「すでに適用済み」と言えるか
+
+分散実行では、処理を始めたHostが一時的に見えなくなり、coordinator側がtimeoutやrecoveryによってrunを先に終了させることがあります。その後、元のHostが戻ってきて、同じlease・同じattemptの結果を遅れて送ってくる場合があります。
+
+ここで、二つの事実を混ぜないことが重要です。
+
+```text
+same lease / attempt identity
+≠
+the result was already accepted
+
+logical terminal state
+≠
+no physical work happened after terminalization
+```
+
+同じ実行の系譜に属していても、その結果が現在stateへ適用されたとは限りません。逆に、runを論理的に終了させた後でも、外部Host側ですでに計算やAPI利用が発生していれば、その物理的なusageまで「存在しなかった」ことにはできません。
+
+Qwen Code PR #12582の検証中には、まさにこの境界がN2として残りました。Hostが停止している間にrecoveryがrunをfailedへ移した後、同じHostが遅れて完了結果を返すと、古い実装はその結果をstateへ再適用しない一方で、`alreadyApplied: true` と応答し、実際に発生したtoken usageもledgerへ記録しない状態でした。
+
+PR #12582のmerge後、この問題はissue #13238としてmain上で再確認されました。projectのtriageに加え、人間reviewerもcurrent mainから独立に経路を追い直し、「lease/attemptのidentity」と「resultが受理済みであること」は別だと確認しています。
+
+その後、Qwen Code側でPR #13241が作られ、次の分離を実装する方向へ進んでいます。
+
+```text
+accepted result
+→ receiptで受理済みを確認
+→ 同一結果のretryだけをidempotent successとして扱う
+
+terminalized late result
+→ stale resultとしてstateへ再適用しない
+→ runを復活させない
+→ stale answerを公開しない
+→ 確認可能な物理usageだけを別のledger作用として扱う
+```
+
+この区別のポイントは、「古い結果を受け入れるか」と「古いattemptで実際に発生した作用を記録するか」を同じ権限にしないことです。時間的な系譜が続いていることは、現在stateを書き換える権限が残っていることの証明ではありません。同時に、現在の書換権限が終わったことは、過去に起きた物理的作用まで消す理由にはなりません。
+
+### 別のシステムで再利用するなら
+
+次を分けて確認できます。
+
+1. **受理証拠** — 「同じrequest ID」「同じlease」「同じattempt」ではなく、そのresultを実際にcommitした証拠があるか。
+2. **現在権限** — terminal / cancel / recovery後の古いattemptが、現在stateを再び変更できないことが保証されているか。
+3. **物理作用** — state変更とは別に、すでに発生した課金・token・外部API利用・resource消費をどう一度だけ記録するか。
+4. **後続attempt分離** — attempt Nの遅延結果やusageが、reclaim後のattempt N+1へ混ざらないか。
+5. **再試行** — 本当に一度受理した同じresultのretryだけが、二重適用・二重課金なしにidempotent成功になるか。
+
+Qwen Code #13241はこの記録時点でopenです。実装PR、test、実daemon/Hostでの検証報告までは確認できますが、merge、release、実user利用、広い人物認知はまだ成立したものとして扱いません。
+
+関連資料:
+- [Qwen Code PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)
+- [Qwen Code issue #13238](https://github.com/QwenLM/qwen-code/issues/13238)
+- [Qwen Code PR #13241](https://github.com/QwenLM/qwen-code/pull/13241)
+- [OD307｜自己改変同一性とKernel系譜継承論](derivatives/307/README.md)
+- [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
+- [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)

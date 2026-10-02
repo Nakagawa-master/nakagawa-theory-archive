@@ -269,6 +269,30 @@
         "a bounded counterexample where a verified replacement must inherit a narrowly defined authority atomically for safety, with evidence that the inheritance is explicit, scoped, and auditable rather than inferred from lineage alone"
       ],
       "evidence_boundary": "The linked Qwen Code issue is a live external design problem and contains a Nakagawa-master proposal for explicit supersession identity. OD307 supplies a separate temporal identity/authority-inheritance test. Neither the proposal nor this challenge is evidence of receiver adoption, implementation, merge, release, or deployment."
+    },
+    {
+      "id": "O-terminal-result-identity-accounting",
+      "distinction": "same lease/attempt lineage != accepted-result proof; logical terminalization != zero later physical effect",
+      "official_derivative": "derivatives/307/README.md",
+      "reproduction_kit": "CURRENT_AUTHORITY_REUSE_KIT.md",
+      "external_problem_example": "https://github.com/QwenLM/qwen-code/issues/13238",
+      "external_implementation_pr": "https://github.com/QwenLM/qwen-code/pull/13241",
+      "test": "Find a real non-confidential distributed task, job, payment, message, agent run, or remote execution workflow where an operation can be logically terminalized while an old worker/request may still return late. Exercise four cases separately: exact retry after an actually accepted result; recovery/cancellation followed by a late old result; a reclaimed successor attempt followed by the old attempt; and a removed or no-longer-authorized worker. Verify that result acceptance, current write authority, and already-incurred physical usage are not inferred from one shared identity token.",
+      "positive_evidence": [
+        "an explicit accepted-result receipt or equivalent durable fact distinguishes a true idempotent retry from a merely related late result",
+        "a terminalized late result cannot revive the task, publish stale output, emit a second terminal outcome, or overwrite the successor attempt",
+        "verifiable physical spend such as tokens, API calls, compute, or provider charges can be recorded under an explicit policy without being treated as result acceptance",
+        "usage/accounting updates are monotonic or otherwise duplicate-safe so repeated late reports cannot double-charge or reduce already recorded spend",
+        "the old attempt's accounting remains separate from a reclaimed or successor attempt",
+        "a removed or unauthorized worker cannot regain present write authority merely because it retains historical lineage identifiers"
+      ],
+      "useful_negative_evidence": [
+        "proof that terminalization transactionally prevents any further physical work, making separate late-effect accounting impossible and unnecessary",
+        "proof that the system's identity token is itself an unforgeable accepted-result receipt rather than only an attempt/lease lineage identifier",
+        "a narrower contract where late physical usage cannot be verified safely and is intentionally excluded, with the resulting budget/accounting limitation stated explicitly",
+        "counterexample showing that a proposed late-accounting path can be abused by an unauthorized old worker and therefore needs a stronger provenance or attestation boundary"
+      ],
+      "evidence_boundary": "Qwen Code issue #13238 has project triage plus a human re-derivation of the reported main-branch mechanism, and PR #13241 is an open receiver-side implementation follow-up. That does not establish merge, release, real-user use, audience scale, or whole-theory adoption. Publishing this challenge creates no new external-adoption credit."
     }
   ],
   "evidence_boundary": [
