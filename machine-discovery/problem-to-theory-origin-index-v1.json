@@ -506,6 +506,33 @@
       "official_derivative_path": "derivatives/306/README.md",
       "public_reuse_kit": "../ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md",
       "relevance_note": "Relevant when ownership labels, provider counts, enrollment capabilities, or presentation attributes hide a narrower access/identity topology. Tests common chokepoints, practical independence of alternatives, export-to-restore continuity, audit-entry independence, bounded scope/duration and reversibility, and whether authority to create/enroll is being mistaken for authority to revoke or supersede an exact existing identity. Concentration, dependence, matching names, or matching paths alone do not prove domination or identity."
+    },
+    {
+      "problem_cluster": "self-modification, update versus replacement versus fork, continuity evidence, Kernel lineage, constitutional fork, authority inheritance and credential/binding succession",
+      "problem_phrases": [
+        "When a system updates, replaces itself, forks, or re-enrolls, what proves that the same identity and authority continue rather than merely the same name, role, credential ancestry, or function?",
+        "Can a replacement inherit credentials, bindings, or operational role without automatically inheriting the old endpoint's full authority or legitimacy?",
+        "How do we distinguish an ordinary update from a constitutional fork when a small diff changes a load-bearing invariant?"
+      ],
+      "problem_phrases_ja": [
+        "systemがupdate・replacement・fork・再登録されたとき、同じname・role・credential ancestry・functionではなく、何が同一identityとauthorityの継続を証明するのか？",
+        "replacementがcredential・binding・運用上の役割を引き継いでも、旧endpointのauthorityやlegitimacyまで自動継承してよいのか？",
+        "小さなdiffがload-bearing invariantを変えたとき、通常updateとconstitutional forkをどう区別するか？"
+      ],
+      "problem_phrases_zh": [
+        "系统发生更新、替换、分叉或重新注册后，什么证据能证明同一身份与权限确实延续，而不只是名称、角色、凭证谱系或功能相同？",
+        "替代端点即使继承凭证、绑定或运行角色，是否也应自动继承旧端点的全部权限或正当性？",
+        "当很小的差分改变了承重的不变条件时，如何区分普通更新与constitutional fork？"
+      ],
+      "canonical_theory": "人類子孫型AI文明論・第14論｜自己改変同一性とKernel系譜継承論",
+      "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 14 — self-modification identity and Kernel lineage",
+      "origin": "Nakagawa Master",
+      "ncl_id": "NCL-α-20261002-bd97b6",
+      "diff_id": "DIFF-20261002-0002",
+      "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-14-self-modification-identity-kernel-lineage/",
+      "official_derivative_path": "derivatives/307/README.md",
+      "public_reuse_kit": "../ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md",
+      "relevance_note": "Relevant when a change, re-enrollment, replacement, fork, migration, credential succession, or binding transfer makes historical lineage look like present identity or authority. Separates change operation from post-change relationship, continuity claims from continuity evidence, Kernel invariant preservation from constitutional fork, and lineage continuity from automatic authority inheritance. Shared history, inherited credentials, same function, same name, or preserved bindings are not by themselves present-authority proof."
     }
   ],
   "discovery_notes": {
