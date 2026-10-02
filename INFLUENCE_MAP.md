@@ -503,3 +503,61 @@ must_not:
 - [PostHog PR #107802](https://github.com/PostHog/posthog/pull/107802)
 - [Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md)
 - [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+
+
+## 19. 新しく登録できる権限は、既存identityを置換できる権限と同じか
+
+新しいHost、device、credential、endpointを登録できることと、**どの既存identityを失効・置換してよいか**が決まっていることは別です。
+
+```text
+authority to enroll a new endpoint
+≠
+authority to choose an existing endpoint to revoke or supersede
+```
+
+この違いは、再登録やcredential紛失からの復旧で重要になります。たとえば2台のHostが偶然、
+
+```text
+same name
++
+same hostname
++
+same workspace path
+```
+
+を持っていても、それだけで同じidentityとは限りません。表示用属性を「同一Hostの証明」として使うと、新しい登録tokenを持つ主体が、別のHostのcredentialまで誤って失効させる可能性があります。
+
+Qwen Code issue #13122では、Hostを再登録すると新しい `hostId` とsecretが追加される一方、古いrowとcredentialが残り得る問題が公開されています。receiver側のtriageは、単純なname/path dedupeにも別Hostを誤失効させる危険があると整理しています。
+
+Nakagawa-masterからは、通常のenrollは既存identityを推測して破棄せず、**置換するときだけ対象のstable identityを明示する**案を提示しています。
+
+```text
+generic enroll
+→ new identity
+→ existing identities unchanged
+
+explicit replace
+→ name exact superseded identity
+→ verify it belongs to the authorized scope
+→ create replacement identity / credential
+→ migrate required bindings
+→ revoke old credential
+→ leave any look-alike endpoint unchanged
+```
+
+この形なら、次の2つを分けて検証できます。
+
+1. **creation authority** — 新しいendpointを作ってよいか。
+2. **destructive replacement authority** — どの既存endpointを失効・置換してよいか。
+
+置換対象が消えている、古い、scope外である場合は、credential失効・binding移行・run/lease変更を何も起こさずfail closedにする回帰testが有効です。
+
+ここで確認できるのは、公開issueに対してこの明示supersession案が提示されたところまでです。この記録時点では、Qwen Code側による採用、実装、merge、releaseは確認していません。
+
+関連資料:
+- [Qwen Code issue #13122](https://github.com/QwenLM/qwen-code/issues/13122)
+- [explicit supersession proposal](https://github.com/QwenLM/qwen-code/issues/13122#issuecomment-5952715999)
+- [Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md#G-enrollment-authority-is-mistaken-for-replacement-authority)
+- [machine-readable independent reuse challenges](machine-discovery/independent-reuse-challenges-v1.json)
+- [OD306｜非所有と実効権力・非支配論](derivatives/306/README.md)
+- Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/
