@@ -377,35 +377,37 @@ all tested checks pass
 all materially possible lifecycle failures are covered
 ```
 
-Qwen Code PR #12582では、2026-10-02時点でCIが24 pass / 0 fail / 0 pendingまで進みました。一方、reviewでは別のlifecycle gapが残りました。managed hostが明示削除されずにすべてofflineになり、leaseが期限切れになった場合、`running` のrunを自動settleする対称的なsweepがなく、実行主体がいないままrunning状態が残り続け得る、という問題です。
+Qwen Code PR #12582では、2026-10-02の途中段階でCIがgreenになった後も、別のlifecycle gapが確認されました。managed hostが明示削除されずにofflineになり、leaseが期限切れになったとき、実行主体がいないのに `running` のrunが残り続け得る状態です。
 
-ここで重要なのは「CIが弱い」という一般論ではありません。**何を検査したか**と**何がまだ検査・settleされていないか**を分けることです。
+その後、receiver側はcommit `37bc6c21` でこの経路に明示的なsettlementを追加しました。最新leaseの期限切れから既存lease時間の2倍をbounded graceとして待ち、reclaimされなければrunを終了させます。長いrenewal履歴でgraceが意図せず伸びない回帰testも追加され、実daemon / Host / UIの検証では、reclaimされなかったrunがfailedへ移り、active workが解放されることまで確認されています。同じcredentialでHostが戻った場合にreclaimして完了できる経路と、UIからのcancelが永続化される経路も別に確認されています。
+
+ここから得られるのは、「green CIは信用できない」という結論ではありません。重要なのは、**何を検査したか**と、**まだどの状態遷移を表現していないか**を分け、見つかったgapをrecovery / settlement ruleと回帰testへ変換することです。
 
 ```text
 green CI
-→ tested contracts are currently satisfied
-
-but
-
-unmodeled lifecycle state
-→ may still leave operator-visible stuck state
+→ covered contracts are satisfied
+→ uncovered lifecycle state is found
+→ persistent failure mode is made explicit
+→ settlement rule is implemented
+→ regression + runtime evidence verify the new boundary
 ```
 
-実装や運用を評価するときは、少なくとも次を分けて確認します。
+それでも、この修復だけから「ほかのlifecycle failureもすべて消えた」とは推定しません。実装や運用を評価するときは、少なくとも次を分けて確認します。
 
 ```text
 covered transition
 → tested result
-→ untested transition
+→ uncovered transition
 → possible persistent state
 → explicit recovery / settlement rule
+→ regression and runtime verification
 ```
 
 関連資料:
 - [Qwen Code PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)
+- [receiver fix commit `37bc6c21`](https://github.com/QwenLM/qwen-code/commit/37bc6c21ee02ad402bc174948a1a5168e01d1ac9)
 - [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
 - [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
-
 
 ## 17. 「同じ人がやった」と書いてあれば、制御上のOriginも同じか
 
