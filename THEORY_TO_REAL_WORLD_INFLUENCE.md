@@ -127,6 +127,37 @@ This is useful evidence of a scope constraint producing a different implementati
 
 This is not additional credit for discovering the underlying F3 defect. The inspectable effect is the **problem decomposition and responsibility boundary**: a Nakagawa-master scope judgment became a receiver-owned issue with preserved Origin, and the receiving project's triage independently validated the resulting work item. Because the issue was created directly in response to that correction, it is not counted as a later prompt-free G8 return.
 
+### E. Can one receiver reuse the distinction repeatedly on separate implementation seams?
+
+**Hermes Agent #61982** now provides a compact same-receiver recurrence pattern across multiple distinct boundaries rather than one isolated fix.
+
+```text
+atomic mixed PATCH boundary
+→ receiver implements one-transaction rollback semantics
+
+observed character diversity
+≠
+secret-generation entropy
+→ receiver removes the entropy claim and changes the runtime contract
+
+caller-chosen author label
+≠
+authenticated control-path Origin
+→ receiver binds durable attribution to the verified principal and tests the live steer consequence
+```
+
+Primary records:
+- [Mixed-PATCH atomicity review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5233352371)
+- [Receiver atomicity rework explanation](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5865975210)
+- [Entropy-boundary review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5339797749)
+- [Receiver entropy fix explanation](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5878240135)
+- [Authenticated-Origin review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5376987496)
+- [Receiver provenance fix explanation](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5930276480)
+
+The important evidence is not that one repository agreed three times. It is that **different structural distinctions survived separate receiver-side code/test decisions on the same long-running implementation line**. That is stronger than one useful comment because the receiver repeatedly had to translate a boundary into a different implementation seam.
+
+This still does not establish merge, release, production use, or audience scale. PR #61982 remains open. It also does not establish that every follow-on hardening in the PR was caused by Nakagawa-master; receiver-owned follow-on work is kept separate from direct causal credit.
+
 ### What these four checks do — and do not — show
 
 Together they let a reader independently inspect four different claims:
