@@ -405,3 +405,37 @@ covered transition
 - [Qwen Code PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)
 - [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
 - [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+
+
+## 17. 「同じ人がやった」と書いてあれば、制御上のOriginも同じか
+
+表示上の名前と、認証された実行主体は同じものではありません。とくに、その名前が後続のskip・routing・approval・suppressionに使われる場合、単なる表示ラベルではなく制御入力になります。
+
+```text
+displayed actor label
+≠
+authenticated control-path origin
+```
+
+Hermes Agent PR #61982では、REST APIのcomment bodyにcallerが `author` を指定でき、その値が保存されていました。一方、実行中worker側は、comment authorがworker自身のidentityと一致すると「自分のcomment」とみなしてlive steerから除外します。
+
+そのため、service credentialを持つ外部controllerがworker名をauthorに指定すると、本来は外部operatorから届いた指示なのに、worker自身のcommentとして扱わせる余地がありました。
+
+Nakagawa-masterのreview後、receiverはこの境界を認め、caller指定のauthorを廃止し、durable authorとtask created_byを認証済みprincipalから決めるよう変更しました。回帰testも、worker名の偽装requestを422で拒否し、正規commentが `kanban-api` として保存され、実際にoperator steerとして届くことまで確認しています。
+
+ここから再利用できる問いは、「名前が正しそうか」ではありません。
+
+```text
+who authenticated
+→ what durable Origin is recorded
+→ what downstream control logic consumes that Origin
+→ can the caller choose a label that changes control behavior
+```
+
+という順で確認します。
+
+関連資料:
+- [Hermes Agent PR #61982](https://github.com/NousResearch/hermes-agent/pull/61982)
+- [Nakagawa-master review](https://github.com/NousResearch/hermes-agent/pull/61982#pullrequestreview-5376987496)
+- [receiver fix explanation](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5930276480)
+- [Independent verification & reuse registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
