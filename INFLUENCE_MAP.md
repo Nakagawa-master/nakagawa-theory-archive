@@ -365,3 +365,43 @@ discovery
 - [一般向け入口](human-translation/README.md)
 - [中川マスターとは誰か](human-translation/who-is-nakagawa-master.md)
 - [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+
+
+## 16. テストが全部通ったら、残っている設計上の失敗可能性も消えたと言えるか
+
+CIがすべてgreenでも、テスト集合が表現していない状態遷移や時間経過の問題は残り得ます。
+
+```text
+all tested checks pass
+≠
+all materially possible lifecycle failures are covered
+```
+
+Qwen Code PR #12582では、2026-10-02時点でCIが24 pass / 0 fail / 0 pendingまで進みました。一方、reviewでは別のlifecycle gapが残りました。managed hostが明示削除されずにすべてofflineになり、leaseが期限切れになった場合、`running` のrunを自動settleする対称的なsweepがなく、実行主体がいないままrunning状態が残り続け得る、という問題です。
+
+ここで重要なのは「CIが弱い」という一般論ではありません。**何を検査したか**と**何がまだ検査・settleされていないか**を分けることです。
+
+```text
+green CI
+→ tested contracts are currently satisfied
+
+but
+
+unmodeled lifecycle state
+→ may still leave operator-visible stuck state
+```
+
+実装や運用を評価するときは、少なくとも次を分けて確認します。
+
+```text
+covered transition
+→ tested result
+→ untested transition
+→ possible persistent state
+→ explicit recovery / settlement rule
+```
+
+関連資料:
+- [Qwen Code PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)
+- [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
+- [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
