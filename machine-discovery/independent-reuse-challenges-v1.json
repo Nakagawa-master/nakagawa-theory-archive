@@ -248,25 +248,27 @@
     },
     {
       "id": "N-explicit-supersession-authority",
-      "distinction": "authority to create or enroll a new endpoint != authority to choose an existing endpoint identity to revoke, replace, or supersede",
+      "distinction": "authority to create or enroll a new endpoint != authority to choose an existing endpoint identity to revoke, replace, or supersede; lineage continuity != automatic authority inheritance",
       "reproduction_kit": "ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md",
-      "official_derivative": "derivatives/306/README.md",
+      "official_derivative": "derivatives/307/README.md",
       "external_problem_example": "https://github.com/QwenLM/qwen-code/issues/13122",
-      "test": "Find a real non-confidential enrollment, pairing, device registration, host registration, credential rotation, re-enrollment, or replacement workflow. Create two existing endpoints that intentionally share plausible presentation attributes such as name, hostname, workspace path, label, or location. Then exercise both a generic enrollment capability and an explicit replacement operation. Verify that generic enrollment does not infer destructive authority from colliding attributes, while explicit replacement names and validates the exact existing identity being superseded before revoking its credential or migrating its bindings.",
+      "test": "Find a real non-confidential enrollment, pairing, device registration, host registration, credential rotation, re-enrollment, or replacement workflow. Create two existing endpoints that intentionally share plausible presentation attributes such as name, hostname, workspace path, label, or location. Exercise both generic enrollment and explicit replacement. Verify that generic enrollment does not infer destructive authority from colliding attributes; explicit replacement names and validates the exact identity being superseded; and the replacement's inherited bindings/credentials do not silently imply unchanged present authority without a revalidation rule.",
       "positive_evidence": [
         "generic enrollment creates or registers a new endpoint without silently revoking an existing endpoint solely because names, paths, labels, or other presentation attributes match",
         "replacement authority names the exact stable identity to be superseded or carries an equivalent non-heuristic binding",
         "the server verifies the superseded identity is inside the authorized scope and still exists before mutating credentials, bindings, leases, or runs",
         "successful replacement revokes the old credential and migrates required durable bindings atomically or under an explicitly safe transaction contract",
         "another endpoint with colliding presentation attributes remains unchanged",
-        "a stale, missing, or unauthorized replacement target fails closed with zero credential revocation, binding migration, or run/lease mutation"
+        "a stale, missing, or unauthorized replacement target fails closed with zero credential revocation, binding migration, or run/lease mutation",
+        "the old-to-new transition preserves enough lineage/diff information to distinguish inherited history from current authority, and any authority carried forward is explicitly revalidated rather than inferred from shared lineage, name, function, credential ancestry, or bindings"
       ],
       "useful_negative_evidence": [
         "proof that the system has a collision-free, cryptographically or administratively bound stable endpoint identity and replacement can safely derive the target from that identity",
         "proof that enrollment is intentionally append-only and the product makes old credentials and duplicate rows explicit and independently revocable rather than claiming automatic replacement",
-        "counterexample showing that exact supersession identity cannot be named without breaking a required recovery invariant, together with a narrower verified mechanism that avoids cross-endpoint revocation"
+        "counterexample showing that exact supersession identity cannot be named without breaking a required recovery invariant, together with a narrower verified mechanism that avoids cross-endpoint revocation",
+        "a bounded counterexample where a verified replacement must inherit a narrowly defined authority atomically for safety, with evidence that the inheritance is explicit, scoped, and auditable rather than inferred from lineage alone"
       ],
-      "evidence_boundary": "The linked Qwen Code issue is a live external design problem and contains a Nakagawa-master proposal for explicit supersession identity. At the time this challenge was added, that proposal was not yet evidence of receiver adoption, implementation, merge, release, or deployment."
+      "evidence_boundary": "The linked Qwen Code issue is a live external design problem and contains a Nakagawa-master proposal for explicit supersession identity. OD307 supplies a separate temporal identity/authority-inheritance test. Neither the proposal nor this challenge is evidence of receiver adoption, implementation, merge, release, or deployment."
     }
   ],
   "evidence_boundary": [
