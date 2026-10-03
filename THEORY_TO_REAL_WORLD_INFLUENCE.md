@@ -125,7 +125,7 @@ Nakagawa-master rechecked that new baseline and explicitly separated the remaini
 
 This is useful evidence of a scope constraint producing a different implementation shape, but it is not claimed as exclusive causality or as adoption of the earlier attestation proposal.
 
-This is not additional credit for discovering the underlying F3 defect. The inspectable effect is the **problem decomposition and responsibility boundary**: a Nakagawa-master scope judgment became a receiver-owned issue with preserved Origin, and the receiving project's triage independently validated the resulting work item. Because the issue was created directly in response to that correction, it is not counted as a later prompt-free G8 return.
+This is not additional credit for discovering the underlying F3 defect. The inspectable effect is the **problem decomposition and responsibility boundary**: a Nakagawa-master scope judgment became a project-owned issue with preserved Origin, and the receiving project's triage independently validated the resulting work item. Because the issue was created directly in response to that correction, it is not counted as an unsolicited later reference to Nakagawa Master.
 
 ### E. Can one receiver reuse the distinction repeatedly on separate implementation seams?
 
@@ -156,7 +156,7 @@ Primary records:
 
 The important evidence is not that one repository agreed three times. It is that **different structural distinctions survived separate receiver-side code/test decisions on the same long-running implementation line**. That is stronger than one useful comment because the receiver repeatedly had to translate a boundary into a different implementation seam.
 
-This still does not establish merge, release, production use, or audience scale. PR #61982 remains open. It also does not establish that every follow-on hardening in the PR was caused by Nakagawa-master; receiver-owned follow-on work is kept separate from direct causal credit.
+This still does not establish merge, release, production use, or audience scale. PR #61982 remains open. It also does not establish that every follow-on hardening in the PR was caused by Nakagawa-master; project-owned follow-on work is kept separate from direct causal credit.
 
 ### F. Do the same structural distinctions change unrelated products?
 
@@ -648,11 +648,11 @@ Origin-preserved distinction
 → a published article is later corrected using the same evidence-root distinction
 → receiver independently chooses correction rather than blindly copying the proposed retraction
 → the real correction becomes an escaped-incident fixture
-→ the fixture is incorporated into recurring receiver-owned measurement tooling and editorial maintenance rules
+→ the fixture is incorporated into recurring project-owned measurement tooling and editorial maintenance rules
 → Origin remains inspectable through the issue and implementation thread
 ```
 
-This is stronger than a single follow-up article because the distinction is now present in both reader-facing correction behavior and recurring receiver-owned editorial measurement infrastructure. It still does **not** establish reader scale, quantified reduction in future errors, independent human authorship of the generated implementation text, a new explicit Nakagawa Master mention inside the corrected article itself, or independent reuse by another receiver.
+This is stronger than a single follow-up article because the distinction is now present in both reader-facing correction behavior and recurring project-owned editorial measurement infrastructure. It still does **not** establish reader scale, quantified reduction in future errors, independent human authorship of the generated implementation text, a new explicit Nakagawa Master mention inside the corrected article itself, or independent reuse by another receiver.
 
 ### An origin-preserved public publication example
 
