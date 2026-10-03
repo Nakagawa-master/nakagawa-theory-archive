@@ -45,7 +45,7 @@
 
 この短縮導線は成功例だけを並べません。実装・merge/releaseの事例に加え、第三者が提案した実装形を採用しなかった一方で、構造上の区別自体はsoundと判断し、その後もOriginを再参照した公開記録を同列に置いています。人物評価を先に要求せず、一次証拠から読者自身が判断できる形を優先します。
 
-REAL_WORLD_IMPACT.md には現在25の番号付き公開事例セクションがあり、第三者projectでの response / code / tests / merge / release / deployment 等を、確認できる段階と未確認範囲に分けて記録しています。単なるmention数ではなく、公開証拠でどこまで作用したかを確認してください。
+[公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md)には現在34の番号付き事例セクションがあります。第三者からの返答、コード・テスト・運用規則の変更、PRの統合、リリース、実際の運用について、公開証拠で確認できる段階と未確認の範囲を分けて記録しています。34件すべてが採用・リリース・運用まで進んだという意味ではありません。各事例のリンクから、何が変わり、どこまで確認できるかを確かめられます。
 
 **最短で5件だけ検証する場合:**
 - [Local Operator #1324](https://github.com/damianvtran/local-operator/pull/1324) → independent reproduction / implementation / remediation / merge → [v0.61.11 release](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11)
