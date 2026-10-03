@@ -1067,6 +1067,21 @@
         },
         "origin_boundary": "The durable rule has an explicit receiver-side causal link to Nakagawa Master issue #124. The later Qwen4 correction followed Nakagawa-master comments on issue #79, and the receiver publicly explained its independent correction decision.",
         "credit_boundary": "Recurring project-owned reader-facing rule reuse plus one merged material correction feedback loop is established; reader contact scale, quantified future error reduction, and a new explicit Nakagawa Master source reference inside the article are not established."
+      },
+      "measurement_infrastructure_recurrence_2026_10_03": {
+        "origin_issue": "https://github.com/022740mix-spec/AI-News/issues/155",
+        "receiver_implementation_report": "https://github.com/022740mix-spec/AI-News/issues/155#issuecomment-5961842599",
+        "implementation_pr": "https://github.com/022740mix-spec/AI-News/pull/164",
+        "later_receiver_audit_pr": "https://github.com/022740mix-spec/AI-News/pull/169",
+        "later_receiver_audit_merged_at": "2026-10-02T22:24:42Z",
+        "reuse_commit": "https://github.com/022740mix-spec/AI-News/commit/1cc77209bb5afbc48fa514a82b7ede23a2160a26",
+        "observed_reuse": [
+          "the receiver reused scripts/escaped-incidents.json in a separate editorial audit after PR #164 merged",
+          "eight material corrections or retractions were registered",
+          "unknown attribution was preserved where the responsible gate could not be determined",
+          "PR #169 explicitly names Issue #155 as the escaped-incident registration source"
+        ],
+        "boundary": "This establishes same-receiver operational reuse plus inspectable issue-origin continuity. It does not establish broad reader contact, explicit person-name recognition in the reader-facing articles, or reuse by a different receiver."
       }
     },
     {
