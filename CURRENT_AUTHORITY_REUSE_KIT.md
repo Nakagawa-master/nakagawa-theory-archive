@@ -436,6 +436,21 @@ PR #12582 subsequently merged on 2026-10-02. Its merge commit is [45ee202c](http
 
 The receiver also implemented an ordering-preserving recovery in [b4a13e44](https://github.com/QwenLM/qwen-code/commit/b4a13e448a6e79bd766f2a7566155d0afd205362): an automatic Host permission refusal becomes a recoverable tool refusal while ordinary user cancellation remains terminal. The separate early-confinement question remains [#13157](https://github.com/QwenLM/qwen-code/issues/13157); no adoption of that alternative is claimed.
 
+The merged chain also preserves the scope decision: declared Host capability was aligned with the runnable read-only set, while wider guard ordering was separated into #13157. A reviewer independently reconstructed the failure; the receiver then implemented the narrower recovery and retained the follow-on policy-stage question. This is scoped receiver carry, not prompt-free later recognition.
+
+- [F3 split decision](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5929070877)
+- [scope correction](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931180237)
+- [receiver implements the split](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931659514)
+- [focused scope re-check](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931989989)
+- [receiver-created #13157](https://github.com/QwenLM/qwen-code/issues/13157)
+- [independent triage root-cause confirmation](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5931968614)
+- [independent reconstruction by `doudouOUC`](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932126929)
+- [receiver alternative recovery commit `b4a13e44`](https://github.com/QwenLM/qwen-code/commit/b4a13e448a6e79bd766f2a7566155d0afd205362)
+- [Nakagawa-master baseline re-check](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5932820014)
+- [receiver sequencing / contract restatement](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5933053970)
+
+The earned evidence remains bounded: Origin-preserved receiver restatement → receiver-owned contract/UI change → independent second-person re-check → scope decomposition into a receiver-owned follow-on → an ordering-preserving receiver implementation that resolves the fatal recovery symptom → the receiver later explicitly keeps #13157 open and restates the narrowed Nakagawa-master policy-stage contract. This is same-receiver Origin-preserved carry, not a later prompt-free Origin return, and no #13157 early-confinement implementation is claimed.
+
 ### 15. A revision barrier is not authority to release whatever state is current
 
 A system can correctly require a special revision window and still make the final authority check too weak.
