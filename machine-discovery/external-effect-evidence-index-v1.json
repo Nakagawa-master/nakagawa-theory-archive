@@ -1882,7 +1882,7 @@
       "implementation": {
         "pull_request": "https://github.com/QwenLM/qwen-code/pull/13241",
         "state": "open_unmerged",
-        "observed_head": "bb5c5d74b7368610a7dd20d0af532f36ad335fe2",
+        "observed_head": "2d438dbbcfa5e8fe98846ea6731b13c890ac6573",
         "mechanisms": [
           "Retain accepted-result receipt and exact-retry idempotency.",
           "Reject unaccepted post-terminal results without execution-ledger writes.",
@@ -1891,21 +1891,39 @@
       },
       "verification": {
         "source": "receiver_reported_not_independently_executed_by_this_archive",
-        "url": "https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5967910407",
-        "reported_checks": {
-          "core_tests": 115,
-          "cli_host_tests": 24,
-          "production_http_store_groups": 12,
-          "http_requests": 54
+        "backend_report": {
+          "url": "https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5967910407",
+          "reported_checks": {
+            "core_tests": 115,
+            "cli_host_tests": 24,
+            "production_http_store_groups": 12,
+            "http_requests": 54
+          },
+          "downstream_control": "A real dispatcher budget pass leaves a same-tree sibling running after late reports; genuine current usage above the threshold still cancels it.",
+          "environment_boundary": "Built production code and an isolated owned loopback HTTP server; not live-provider or full daemon/session-log acceptance."
         },
-        "downstream_control": "A real dispatcher budget pass leaves a same-tree sibling running after late reports; genuine current usage above the threshold still cancels it.",
-        "environment_boundary": "Built production code and an isolated owned loopback HTTP server; not live-provider or full daemon/session-log acceptance."
+        "actual_web_shell_native_daemon_report": {
+          "url": "https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5970236028",
+          "head": "2d438dbbcfa5e8fe98846ea6731b13c890ac6573",
+          "reported_cases": [
+            "normal Web Shell completion plus exact accepted-result replay",
+            "browser cancellation followed by a late native Host completion",
+            "natural lease recovery followed by a late native Host completion",
+            "real queued footer Stop click with no later resurrection"
+          ],
+          "observed_boundary": [
+            "post-terminal late native 1050-token results were refused and the terminal record remained at 100 budget-accounted tokens with no late answer",
+            "normal completion and exact receipt replay remained accepted separately",
+            "the public head was built and exercised through real Web Shell, coordinator daemon, enrolled Host, ACP, tools and Host-result routes"
+          ],
+          "environment_boundary": "macOS/Node 22.22.0 with an owned deterministic loopback model gateway; not a live-provider or remote-network acceptance claim. Exact and altered replays are protocol controls rather than a claim that the native Host automatically retransmits them."
+        }
       },
       "authority_boundary": {
         "clarification": "https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172530358",
         "meaning": "External contributor recommendation, not a repository-maintainer ruling; maintainer ratification remains pending."
       },
-      "current_stage": "third_party_code_test_design_or_document_change",
+      "current_stage": "third_party_code_test_design_document_change_with_actual_receiver_ui_and_native_runtime_verification__open_unmerged",
       "reusable_check": "CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work",
       "machine_reuse_challenge": {
         "file": "machine-discovery/independent-reuse-challenges-v1.json",
@@ -1917,6 +1935,7 @@
         "boundary": "Lineage continuity does not automatically inherit present authority; non-canonical implementation translation."
       },
       "not_claimed": [
+        "repository-maintainer ratification of option-A ledger semantics",
         "maintainer ratification",
         "merge",
         "release",
