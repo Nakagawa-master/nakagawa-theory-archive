@@ -158,7 +158,89 @@ The important evidence is not that one repository agreed three times. It is that
 
 This still does not establish merge, release, production use, or audience scale. PR #61982 remains open. It also does not establish that every follow-on hardening in the PR was caused by Nakagawa-master; receiver-owned follow-on work is kept separate from direct causal credit.
 
-### What these four checks do — and do not — show
+### F. Do the same structural distinctions change unrelated products?
+
+A retrospective check of older public review threads found several additional merged cases that were not yet linked from this page. They matter here because they are not repetitions of one product or one failure mode.
+
+**Clientverse CRM #27 — approval consumption is not delivery proof.**  
+A Nakagawa-master review separated an approval being consumed from an external communication being known to have happened. The receiver explicitly called this a **real defect in the state machine**, then added an `outcome_unknown` state, a distinct rejection path, reconciliation for unknown outcomes, and a provider-facing dispatch key before merging the PR.
+
+- [Nakagawa-master review](https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690360136)
+- [Receiver response: “real defect” and implemented state-machine changes](https://github.com/ebyron357/Clientverse-crm/pull/27#issuecomment-5690677339)
+- [Merged PR #27](https://github.com/ebyron357/Clientverse-crm/pull/27)
+
+The bounded distinction is:
+
+```text
+approval consumed once
+!=
+external communication known to have happened once
+```
+
+**TourCRM #97 → #101 — present eligibility is not historical eligibility.**  
+A review pointed out that correcting attendance for a past occurrence must use the participant state that was valid during that occurrence, not today's participant state. The receiver replied that this was a **real bug**, opened #101 as the follow-up because #97 had already merged, changed both affected call sites, and merged the repair.
+
+- [Source review on PR #97](https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5689122153)
+- [Receiver confirmation and follow-up creation](https://github.com/Alan8893/tourcrm/pull/97#issuecomment-5691823125)
+- [Merged repair PR #101](https://github.com/Alan8893/tourcrm/pull/101)
+
+The reusable boundary is:
+
+```text
+may act on this record now
+!=
+was eligible for the historical event being corrected
+```
+
+**MemberJunction #4611 — secret availability is not ambient authority.**  
+The original change made a run's whole API-key list available through generic action context. A Nakagawa-master review separated the narrow need — one action obtaining one needed provider credential — from granting every action ambient access to every runtime credential. The receiver reworked the design into a per-dispatch scoped resolver. An independent reviewer explicitly said the rework answered the Nakagawa review properly, and the PR merged.
+
+- [Nakagawa-master authority-scope review](https://github.com/MemberJunction/MJ/pull/4611#pullrequestreview-5256091058)
+- [Independent re-review of the scoped resolver](https://github.com/MemberJunction/MJ/pull/4611#pullrequestreview-5269354461)
+- [Merged PR #4611](https://github.com/MemberJunction/MJ/pull/4611)
+
+The distinction is:
+
+```text
+a run possesses several credentials
+!=
+every action in that run may read them
+```
+
+**MemberJunction #4402 — missing measurement is not measured zero.**  
+The budget evaluator could successfully query yet silently turn an empty row set, a missing measure column, `null`, or a non-numeric value into observed spend `0`. It could also report a breach as successfully handled when the dedupe lookup needed to create the durable breach event had failed. The receiver verified both findings, changed the evaluator to fail closed, preserved the last known observation on measurement failure, and added the requested regressions. The larger PR later merged.
+
+- [Nakagawa-master budget-evaluation review](https://github.com/MemberJunction/MJ/pull/4402#issuecomment-5689277409)
+- [Receiver verification and implementation response](https://github.com/MemberJunction/MJ/pull/4402#issuecomment-5689338217)
+- [Scoped current-head re-check](https://github.com/MemberJunction/MJ/pull/4402#pullrequestreview-5232007719)
+- [Merged PR #4402](https://github.com/MemberJunction/MJ/pull/4402)
+
+The two boundaries are:
+
+```text
+measurement unavailable
+!=
+measured zero
+
+breach detected
+!=
+breach durably recorded
+```
+
+**Qwen Code #12851 — an old share must have an explicit policy for later capability changes.**  
+A Nakagawa-master review pointed out that a multi-day A2A share was not bound to a definition or capability revision. The receiver therefore had to choose what the share meant after the agent's configuration changed: follow the live policy, or remain bound to the older capability boundary. The merged implementation chose the **live-policy contract** and made that choice explicit rather than leaving silent expansion as accidental behavior. Current main documents that a grant follows the agent's current configuration, the Share UI discloses the consequence, and a regression test pins later-configuration behavior.
+
+- [Nakagawa-master share-authority review](https://github.com/QwenLM/qwen-code/pull/12851#pullrequestreview-5340900674)
+- [Receiver closeout identifying the product/security decision](https://github.com/QwenLM/qwen-code/pull/12851#issuecomment-5893346131)
+- [Receiver record of the decided contract](https://github.com/QwenLM/qwen-code/pull/12851#issuecomment-5911463860)
+- [Merged PR #12851](https://github.com/QwenLM/qwen-code/pull/12851)
+- [Current A2A contract](https://github.com/QwenLM/qwen-code/blob/main/docs/design/2026-09-09-a2a-frozen-contract.md)
+
+This case does not say the live-policy choice is universally preferable. The inspectable effect is that an ambiguous authority boundary became an explicit product contract, user disclosure, and regression instead of an accidental consequence of two independent stores.
+
+These cases add implementation breadth, not audience scale. They show receiver-side code, tests, state-machine rules, or product contracts changing across unrelated systems. They do **not** establish how many end users saw the changes, recognized Nakagawa Master, or adopted the broader theory corpus.
+
+### What these checks do — and do not — show
 
 Together they let a reader independently inspect four different claims:
 
