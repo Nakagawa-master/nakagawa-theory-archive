@@ -192,6 +192,21 @@ may act on this record now
 was eligible for the historical event being corrected
 ```
 
+**MemberJunction #4519 — record existence is not canonical ownership.**  
+A review separated “this row already exists” from “this row is already the release-owned canonical record.” The receiver recorded an explicit ownership contract: the seeded records are release-owned and a divergent existing row converges to the release definition instead of being silently skipped. The PR merged with that convergence behavior documented and tested.
+
+- [Nakagawa-master ownership/convergence review](https://github.com/MemberJunction/MJ/pull/4519#issuecomment-5689128135)
+- [Receiver record of the ownership contract](https://github.com/MemberJunction/MJ/pull/4519#issuecomment-5701857972)
+- [Merged PR #4519](https://github.com/MemberJunction/MJ/pull/4519)
+
+The boundary is:
+
+```text
+record already exists
+!=
+record is already canonical
+```
+
 **MemberJunction #4611 — secret availability is not ambient authority.**  
 The original change made a run's whole API-key list available through generic action context. A Nakagawa-master review separated the narrow need — one action obtaining one needed provider credential — from granting every action ambient access to every runtime credential. The receiver reworked the design into a per-dispatch scoped resolver. An independent reviewer explicitly said the rework answered the Nakagawa review properly, and the PR merged.
 
@@ -206,6 +221,18 @@ a run possesses several credentials
 !=
 every action in that run may read them
 ```
+
+**MemberJunction #4595 → #4610 — hiding row contents is not the same as hiding row identity.**  
+The PR stopped broadcasting row data on an unfiltered cache-invalidation channel, but a Nakagawa-master review pointed out that stable primary keys, entity identity, action and timing could still disclose that an inaccessible row existed. The receiver agreed the residual was real. The merged PR added the cheap entity-level permission filter immediately, while the stronger same-entity / row-level disclosure question was preserved as issue #4610 with the two-disjoint-tenants regression left intact rather than weakened to make the test pass.
+
+- [Nakagawa-master row-identity disclosure review](https://github.com/MemberJunction/MJ/pull/4595#pullrequestreview-5253531713)
+- [Receiver response separating entity-level and row-level scope](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5737556240)
+- [Nakagawa-master two-layer follow-up](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5737565146)
+- [Receiver report: both layers handled, residual tracked](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5737603820)
+- [Merged PR #4595](https://github.com/MemberJunction/MJ/pull/4595)
+- [Open residual issue #4610](https://github.com/MemberJunction/MJ/issues/4610)
+
+The merged effect is a real disclosure reduction, not full row-level closure. #4610 remains open, so this page does not claim that a same-entity subscriber with disjoint row visibility is already protected.
 
 **MemberJunction #4402 — missing measurement is not measured zero.**  
 The budget evaluator could successfully query yet silently turn an empty row set, a missing measure column, `null`, or a non-numeric value into observed spend `0`. It could also report a breach as successfully handled when the dedupe lookup needed to create the durable breach event had failed. The receiver verified both findings, changed the evaluator to fail closed, preserved the last known observation on measurement failure, and added the requested regressions. The larger PR later merged.
