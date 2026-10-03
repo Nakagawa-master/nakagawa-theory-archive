@@ -794,7 +794,7 @@ merge後の通常の記事作成でも、この区分は反復利用されてい
 - [PR #153](https://github.com/022740mix-spec/AI-News/pull/153) は、主要claimごとに一次資料・独立観測・派生/転載のroot内訳を明示し、独立第三者検証が未確認であることを本文に残しました。またGoogle自身のbenchmark値と独立再現を分け、版・条件が揃わない値を既存model comparisonへ無理に追加していません。
 - 両PRは2026-09-30T23:49Z / 23:51Zにmergeされ、main article data、feed、sitemapへ入っています。
 
-これは、元issueへの一度きりの同意ではなく、**receiverが自分の後続公開工程で同じruleを反復使用している**ことを示します。各後続記事そのものにNakagawa Master名の再言及があるわけではないため、person-Originの新しいG8としては数えません。
+これは、元issueへの一度きりの同意ではなく、**receiverが自分の後続公開工程で同じruleを反復使用している**ことを示します。各後続記事そのものにNakagawa Master名の再言及があるわけではないため、Nakagawa Masterへの新たな自発的な再言及は確認できません。
 
 **公開記録から確認できること:** origin-preserved提案 → receiverによる明示的採用と採用理由の説明 → 同じreceiverの継続編集規則 `CLAUDE.md` への具体的実装 → merge。PR本文も **「Issue #124 の指摘で気づいた」** とsource relationを明示しています。  
 **まだ確認できないこと:** 誤報率への定量効果、読者規模、別receiverへの独立reuse、各記事の人間単独執筆、理論体系全体への支持。
@@ -1120,7 +1120,7 @@ issue authorはその後、per-agentをdefaultにする方向へ同意し、PR #
 
 - [second-person restatement / extension](https://github.com/BerriAI/litellm/issues/43190#issuecomment-5873550150)
 
-ここで重要なのは、同じ文章を引用したことではありません。最初の区別が、receiverの実装方向だけでなく、別の参加者が自分の知識を接続して再説明できる**共有可能な問題構造**として使われたことです。一方、その参加者はNakagawa-masterを人物Originとして明示していないため、これはperson-Origin再参照としては数えません。
+ここで重要なのは、同じ文章を引用したことではありません。最初の区別が、receiverの実装方向だけでなく、別の参加者が自分の知識を接続して再説明できる**共有可能な問題構造**として使われたことです。一方、その参加者はNakagawa-masterを人物Originとして明示していないため、これはNakagawa Masterへの再言及は確認できません。
 
 確認時点でPR #43410はopen / non-draft / mergeableです。以前のrolling-upgrade互換性に関するreview threadはcurrent diffに対してoutdatedになっていますが、人間maintainer approval、merge、release、production useはまだ確認できません。
 
@@ -1196,14 +1196,16 @@ receiver `yiliang114` はそのscope correctionを受け、`Session.ts`のpre-pe
 - [Nakagawa-master current-baseline recheck](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5932820014)
 - [receiver sequencing / latest contract restatement](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5933053970)
 
-その後receiver `yiliang114` は、#13157をguard-ordering halfのfollow-on homeとして維持すると明示し、**“@Nakagawa-master's latest: early boundary = Host confinement only, full effective guard exactly once at the final boundary”** と最新contractを自分の言葉で再提示しました。これは同じreceiverによるOrigin-preserved technical carryであり、#13157実装済みやprompt-free G8とは数えません。同時に別issue #13122を#12582 merge前に直す必要があるsecurity blockerとして分離しており、こちらはNakagawa因果creditには含めません。
+その後receiver `yiliang114` は、#13157をguard-ordering halfのfollow-on homeとして維持すると明示し、**“@Nakagawa-master's latest: early boundary = Host confinement only, full effective guard exactly once at the final boundary”** と最新contractを自分の言葉で再提示しました。これは同じreceiverによるOrigin-preserved technical carryであり、#13157実装済みやunsolicited later reference to Nakagawa Masterとは数えません。同時に別issue #13122を#12582 merge前に直す必要があるsecurity blockerとして分離しており、こちらはNakagawa因果creditには含めません。
 
 この追加は「guard ordering案を採用した」creditではありません。公開記録で確認できるのは、scope split後にreceiverが**orderingを保持した別実装**を選び、元の致命症状を回帰test付きで解消する方向へ進んだことです。#13157の残存価値は、recovery correctnessではなくearly confinementを別途必要とするpolicy/diagnostic理由があるかへ再定義されるべき状態です。
 
-ここで追加して数えるのは、F3 defectそのものの発見creditではありません。公開記録で確認できるのは、**Nakagawa-masterのscope判断がreceiver-ownedな別issueと明示的な責務分離へ変換され、その新surfaceでtriageが問題を独立検証したこと**です。
+ここで追加して数えるのは、F3 defectそのものの発見creditではありません。公開記録で確認できるのは、**Nakagawa-masterのscope判断がproject-ownedな別issueと明示的な責務分離へ変換され、その新surfaceでtriageが問題を独立検証したこと**です。
 
-**公開記録から確認できること:** Nakagawa-masterがpolicy変更とexecution-placement変更を別々の具体的authority境界として提示 → receiverがOrigin付きで再説明 → receiver自身がcontractとuser-facing share UIを変更 → 別reviewerがNakagawa-master境界を明示して独立に再検証・carry → 後続F3 scope判断がreceiver-owned issue #13157としてOriginを保持し、triageで独立root-cause検証されたこと。  
-**まだ確認できないこと:** PR #12582のmerge・release・実利用者数、一般ユーザーがこの変更へ接触したこと、#13157の実装・merge、広い人間認知。#13157はreceiverがscope correctionへの直接応答として作成したため、それ自体をprompt-freeな後日G8とは数えません。
+**公開記録から確認できること:** Nakagawa-masterがpolicy変更とexecution-placement変更を別々の具体的authority境界として提示 → receiverがOrigin付きで再説明 → receiver自身がcontractとuser-facing share UIを変更 → 別reviewerがNakagawa-master境界を明示して独立に再検証・carry → 後続F3 scope判断がproject-owned issue #13157としてOriginを保持し、triageで独立root-cause検証されたこと。  
+**現在の統合状態:** [PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)は2026-10-02に[45ee202c](https://github.com/QwenLM/qwen-code/commit/45ee202cb14c171c73185a3dbbd89ed1203f2604)で統合されました。別件の#13157の順序変更提案が実装されたことを意味しません。
+
+**まだ確認できないこと:** 安定版release・実利用者数、一般ユーザーがこの変更へ接触したこと、#13157の実装・merge、広い人間認知。#13157はreceiverがscope correctionへの直接応答として作成したため、それ自体を後日に自発的にNakagawa Masterを再参照したものとは扱いません。
 
 → [一般向けの入口](human-translation/entry-stories/09-same-share-different-runtime.md)  
 → [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
