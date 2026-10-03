@@ -30,6 +30,7 @@ You do not need to know the theory name before using this kit. Start with the fa
 | A long-lived share remains valid while the agent's policy, runtime, workspace, or execution placement changes | Section 14 |
 | A revision started legitimately, but the state being finalized later may no longer be the state that was reviewed | Section 15 |
 | A guard / authorization decision was made earlier, but the later execution boundary asks a materially different policy question | Section 16 |
+| An old worker reports usage after termination, and that supposedly passive record can stop current work | Section 17 |
 
 The recurring question is not “was this ever approved?” It is:
 
@@ -431,22 +432,11 @@ The commit does not change authorization behavior. It makes the already-selected
 - [current-head author review](https://github.com/QwenLM/qwen-code/pull/12582#pullrequestreview-5368473478)
 - [human-readable entry](human-translation/entry-stories/09-same-share-different-runtime.md)
 
-At this record, PR #12582 is still open at head `881a2af7`. The receiver's contract/UI change commit `74bf55053d` remains in branch history, and the later F3 closeout has now advanced again.
+PR #12582 subsequently merged on 2026-10-02. Its merge commit is [45ee202c](https://github.com/QwenLM/qwen-code/commit/45ee202cb14c171c73185a3dbbd89ed1203f2604), also present in the 2026-10-02 nightly release ancestry. This establishes merged and prerelease-distributed behavior, not observed real-user adoption.
 
-Nakagawa-master first asked the receiver to keep only **declared Host capability = runnable read-only capability** in #12582 and move the wider guard-before-permission ordering change to a separate pass. Receiver `yiliang114` implemented that split, centralized the Host read-only set in `AGENT_HOST_TOOL_NAMES`, and created [#13157](https://github.com/QwenLM/qwen-code/issues/13157) with explicit scope-correction provenance.
+The receiver also implemented an ordering-preserving recovery in [b4a13e44](https://github.com/QwenLM/qwen-code/commit/b4a13e448a6e79bd766f2a7566155d0afd205362): an automatic Host permission refusal becomes a recoverable tool refusal while ordinary user cancellation remains terminal. The separate early-confinement question remains [#13157](https://github.com/QwenLM/qwen-code/issues/13157); no adoption of that alternative is claimed.
 
-After triage and an independent reviewer reconstructed the original failure, the receiver chose an alternative fix that stays inside the selected #12582 scope. Commit [`b4a13e44`](https://github.com/QwenLM/qwen-code/commit/b4a13e448a6e79bd766f2a7566155d0afd205362) **preserves permission/guard ordering** and changes only the meaning of an automatic Agent Host permission refusal:
-
-```text
-automatic Host reject
-→ recoverable EXECUTION_DENIED
-→ rejected tool does not execute
-→ later allowed read-only tool can continue
-```
-
-Ordinary user cancellation remains terminal. The regression covers both Agent Host and ordinary-session behavior. This means the original #13157 premise that the automatic refusal necessarily kills the whole turn is no longer current on the PR branch.
-
-The current head `881a2af7` is a merge of current `main` into the branch after `b4a13e44`. Current-head CI is still progressing, requested human/code-owner reviewers remain, and Copilot raised a separate long-poll credential-revocation concern. Merge, release, and real-user-contact credit are not claimed.
+The merged chain also preserves the scope decision: declared Host capability was aligned with the runnable read-only set, while wider guard ordering was separated into #13157. A reviewer independently reconstructed the failure; the receiver then implemented the narrower recovery and retained the follow-on policy-stage question. This is scoped receiver carry, not prompt-free later recognition.
 
 - [F3 split decision](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5929070877)
 - [scope correction](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5931180237)
@@ -459,7 +449,7 @@ The current head `881a2af7` is a merge of current `main` into the branch after `
 - [Nakagawa-master baseline re-check](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5932820014)
 - [receiver sequencing / contract restatement](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5933053970)
 
-The earned evidence remains bounded: Origin-preserved receiver restatement → receiver-owned contract/UI change → independent second-person re-check → scope decomposition into a receiver-owned follow-on → an ordering-preserving receiver implementation that resolves the fatal recovery symptom → the receiver later explicitly keeps #13157 open and restates the narrowed Nakagawa-master policy-stage contract. This is same-receiver Origin-preserved carry, not a later prompt-free Origin return, and no #13157 implementation is claimed.
+The earned evidence remains bounded: Origin-preserved receiver restatement → receiver-owned contract/UI change → independent second-person re-check → scope decomposition into a receiver-owned follow-on → an ordering-preserving receiver implementation that resolves the fatal recovery symptom → the receiver later explicitly keeps #13157 open and restates the narrowed Nakagawa-master policy-stage contract. This is same-receiver Origin-preserved carry, not a later prompt-free Origin return, and no #13157 early-confinement implementation is claimed.
 
 ### 15. A revision barrier is not authority to release whatever state is current
 
@@ -594,6 +584,55 @@ If yes, the early check should still be a narrow policy component rather than a 
 
 No receiver implementation or adoption of the Section 16 early-confinement shape is claimed. The receiver has instead implemented an ordering-preserving recovery path.
 
+
+### 17. A late observation can still control current work
+
+A remote worker can finish after the coordinator has already ended its attempt. Three facts need separate evidence: which attempt produced the report, whether its result was accepted, and whether it still has authority to change current execution.
+
+The less obvious failure is downstream. A late report may be called “accounting only” while the persisted accounting feeds a live budget. Increasing that record can then cancel unrelated running work. Not publishing the late answer does not make the write harmless.
+
+Trace the consumer before deciding the contract:
+
+```text
+old attempt reports usage after termination
+→ usage is persisted
+→ a live budget reads that usage
+→ another running task crosses the limit
+→ that task is stopped
+```
+
+There are two distinct choices:
+
+- **Close authority at termination.** Refuse unaccepted late results without changing the execution ledger; retain a discrepancy signal if useful. This protects live work, but leaves late physical spend outside that ledger.
+- **Retain observation separately.** Record verifiable late spend on a separately designed audit surface whose readers cannot affect admission, cancellation, settlement, or live budgets. Specify provenance, deduplication, retention, and whether any later reconciliation may deliberately affect policy.
+
+The second choice is not achieved merely by naming a field “audit.” Follow every consumer. If it still changes current control, the authority remains active and needs an explicit contract.
+
+#### Portable regression matrix
+
+| Transition | Required observation |
+| --- | --- |
+| Result accepted, then identical retry | Receipt proves acceptance; retry adds no second result or write. |
+| Recovery ends an attempt, then late result arrives | No revival, output publication, parent settlement or execution-ledger mutation under the close-at-termination contract. |
+| Cancellation wins over a reported completion | Receipt must not falsely certify the overridden completion; an identical re-post is not an accepted-result retry. |
+| Terminated worker reports 1e9 units | Settled ledger remains unchanged; live budget and unrelated sibling status stay unchanged. |
+| Attempt N is reclaimed as N+1 | N cannot overwrite N+1 or change its budget. |
+| Worker is removed or its authority revoked | Historical identifiers do not restore present write access. |
+| Separate observation surface is proposed | Exercise its downstream readers; prove they cannot silently change live admission or cancellation. |
+
+Use a barrier or deterministic event sequence to place the late report after settlement. Compare the full settled record, then run the actual budget-enforcement consumer against a live sibling. A ledger-only assertion proves the absence of that write; the consumer regression establishes the downstream consequence directly. Keep these evidence layers distinct.
+
+A useful mutation check restores the old post-terminal write while retaining the new tests. At least the large-report regression should fail. Do not mistake a test that passes both implementations for proof of the boundary.
+
+#### Public implementation chain
+
+[Qwen Code #13238](https://github.com/QwenLM/qwen-code/issues/13238) separates attempt identity from accepted-result evidence. Its receiver-side followup, [PR #13241](https://github.com/QwenLM/qwen-code/pull/13241), initially added late ledger writes. Nakagawa-master then identified that these writes fed the tree budget and could stop sibling work.
+
+At [bb5c5d74](https://github.com/QwenLM/qwen-code/commit/bb5c5d74b7368610a7dd20d0af532f36ad335fe2), the receiver removed that write and retained a debug discrepancy signal. Recovery/cancellation tests compare the entire settled thread after 1,050, 900, and 1e9-token reports. The receiver [reports](https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5967834798) 83 passing focused tests, production-store checks, and an owned daemon/Host run whose late 1,050-token result left the terminal thread and its 100-token ledger unchanged. These are receiver-reported executions; this kit does not claim independent local execution or live-provider acceptance.
+
+The PR remains open at this observation. Nakagawa's [recommendation](https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172301736) is not a repository-maintainer ruling; [the distinction was clarified](https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172530358). Branch implementation, maintainer authorization, merge, release, and real use are separate states.
+
+For the conceptual source, [OD307](derivatives/307/human-entry.md) distinguishes lineage continuity from legitimate authority inheritance. This regression is a non-canonical implementation translation; neither the external fix nor this kit proves the whole theory.
 
 ## Implementation pattern
 

@@ -274,7 +274,7 @@
       "id": "O-terminal-result-identity-accounting",
       "distinction": "same lease/attempt lineage != accepted-result proof; logical terminalization != zero later physical effect",
       "official_derivative": "derivatives/307/README.md",
-      "reproduction_kit": "CURRENT_AUTHORITY_REUSE_KIT.md",
+      "reproduction_kit": "CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work",
       "external_problem_example": "https://github.com/QwenLM/qwen-code/issues/13238",
       "external_implementation_pr": "https://github.com/QwenLM/qwen-code/pull/13241",
       "test": "Find a real non-confidential distributed task, job, payment, message, agent run, or remote execution workflow where an operation can be logically terminalized while an old worker/request may still return late. Exercise four cases separately: exact retry after an actually accepted result; recovery/cancellation followed by a late old result; a reclaimed successor attempt followed by the old attempt; and a removed or no-longer-authorized worker. Verify that result acceptance, current write authority, and already-incurred physical usage are not inferred from one shared identity token.",
@@ -284,15 +284,18 @@
         "verifiable physical spend such as tokens, API calls, compute, or provider charges can be recorded under an explicit policy without being treated as result acceptance",
         "usage/accounting updates are monotonic or otherwise duplicate-safe so repeated late reports cannot double-charge or reduce already recorded spend",
         "the old attempt's accounting remains separate from a reclaimed or successor attempt",
-        "a removed or unauthorized worker cannot regain present write authority merely because it retains historical lineage identifiers"
+        "a removed or unauthorized worker cannot regain present write authority merely because it retains historical lineage identifiers",
+        "under a close-at-termination contract, a post-terminal 1e9-unit report leaves the full settled ledger unchanged and cannot stop a live sibling when the real budget consumer runs",
+        "if observation-only late spend is retained separately, trace every consumer to establish that it cannot silently affect current admission, cancellation, settlement, or execution budgets"
       ],
       "useful_negative_evidence": [
         "proof that terminalization transactionally prevents any further physical work, making separate late-effect accounting impossible and unnecessary",
         "proof that the system's identity token is itself an unforgeable accepted-result receipt rather than only an attempt/lease lineage identifier",
         "a narrower contract where late physical usage cannot be verified safely and is intentionally excluded, with the resulting budget/accounting limitation stated explicitly",
-        "counterexample showing that a proposed late-accounting path can be abused by an unauthorized old worker and therefore needs a stronger provenance or attestation boundary"
+        "counterexample showing that a proposed late-accounting path can be abused by an unauthorized old worker and therefore needs a stronger provenance or attestation boundary",
+        "a supposedly observation-only record feeds a live budget or cancellation policy, showing that termination did not actually end control authority"
       ],
-      "evidence_boundary": "Qwen Code issue #13238 has project triage plus a human re-derivation of the reported main-branch mechanism, and PR #13241 is an open receiver-side implementation follow-up. That does not establish merge, release, real-user use, audience scale, or whole-theory adoption. Publishing this challenge creates no new external-adoption credit."
+      "evidence_boundary": "Qwen Code PR #13241 is open at bb5c5d74: the branch removes post-terminal ledger writes and retains a discrepancy debug signal. Recovery/cancellation regressions assert full-thread equality for 1,050, 900 and 1e9-token reports. The receiver reports 83 passing tests and owned daemon/production-store checks; this challenge does not claim independent local execution. Nakagawa's scoped technical recommendation is not a repository-maintainer ruling. Maintainer ratification, merge, release, real use, audience scale and whole-theory adoption are not established by this branch change."
     }
   ],
   "evidence_boundary": [
