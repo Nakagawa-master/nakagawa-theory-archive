@@ -638,6 +638,10 @@ The receiver explicitly states that it did **not** read the linked external meas
 - [Receiver implementation report on issue #155](https://github.com/022740mix-spec/AI-News/issues/155#issuecomment-5961842599)
 - [Merged operational measurement PR #164](https://github.com/022740mix-spec/AI-News/pull/164)
 
+That infrastructure has since been used in a separate receiver-owned editorial audit. In merged [PR #169](https://github.com/022740mix-spec/AI-News/pull/169), the repository reviewed 39 older articles and explicitly included **“escaped incident registration (Issue #155)”** in the work. Commit [1cc7720](https://github.com/022740mix-spec/AI-News/commit/1cc77209bb5afbc48fa514a82b7ede23a2160a26) added eight material corrections or retractions to `scripts/escaped-incidents.json`, preserving `unknown` where the responsible gate could not be determined.
+
+This is a concrete recurrence of the measurement structure in a later editorial task, not just the existence of the tooling. It still does not establish reader scale, broad person recognition, or independent reuse by a different receiver.
+
 The bounded causal chain that can be inspected is therefore:
 
 ```text
