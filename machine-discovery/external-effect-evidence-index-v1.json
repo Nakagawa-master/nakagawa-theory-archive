@@ -1066,7 +1066,7 @@
           "role": "use the merged Qwen4 correction as a concrete post-publication correction fixture when evaluating verification-gate effectiveness"
         },
         "origin_boundary": "The durable rule has an explicit receiver-side causal link to Nakagawa Master issue #124. The later Qwen4 correction followed Nakagawa-master comments on issue #79, and the receiver publicly explained its independent correction decision.",
-        "credit_boundary": "Recurring receiver-owned reader-facing rule reuse plus one merged material correction feedback loop is established; reader contact scale, quantified future error reduction, and a new explicit person-Origin rereference inside the article are not established."
+        "credit_boundary": "Recurring project-owned reader-facing rule reuse plus one merged material correction feedback loop is established; reader contact scale, quantified future error reduction, and a new explicit Nakagawa Master source reference inside the article are not established."
       }
     },
     {
@@ -1720,7 +1720,7 @@
           "receiver implemented an ordering-preserving recoverable Host-refusal path after the split, resolving the original turn-ending symptom with regression coverage",
           "receiver later explicitly kept #13157 open and restated Nakagawa-master's narrowed early-confinement/final-full-guard contract"
         ],
-        "credit_boundary": "Counts problem decomposition, responsibility separation, and origin-preserved follow-on creation; does not assign Nakagawa credit for the underlying F3 defect or receiver-owned testing/fixes.",
+        "credit_boundary": "Counts problem decomposition, responsibility separation, and origin-preserved follow-on creation; does not assign Nakagawa credit for the underlying F3 defect or project-owned testing/fixes.",
         "prompt_free_g8": false,
         "receiver_alternative_recovery": {
           "commit": "b4a13e448a6e79bd766f2a7566155d0afd205362",
@@ -1734,7 +1734,7 @@
             "keeps ordinary user cancellation terminal"
           ],
           "interpretation": "Resolves the fatal turn-recovery symptom with an ordering-preserving receiver implementation; remaining issue #13157 value must be justified separately as policy/diagnostic confinement ordering.",
-          "causal_boundary": "Receiver-owned implementation after the explicit scope split; not exclusive-causality credit and not adoption of the earlier whole-guard attestation proposal."
+          "causal_boundary": "Project-owned implementation after the explicit scope split; not exclusive-causality credit and not adoption of the earlier whole-guard attestation proposal."
         },
         "latest_policy_stage_narrowing": "https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5932658810",
         "receiver_latest_restatement": {
@@ -1756,15 +1756,21 @@
           }
         }
       },
-      "current_stage": "third_party_code_test_design_or_document_change_with_origin_preserved_receiver_follow_on",
+      "current_stage": "merged_base_implementation_with_open_origin_preserved_follow_on",
       "not_claimed": [
-        "merge of PR #12582",
         "release",
         "verified user-scale contact",
         "broad person recognition",
         "implementation of the early-confinement ordering proposal in issue #13157"
       ],
-      "public_human_case": "REAL_WORLD_IMPACT.md#33-qwen-code既発行shareと後から変わるagent-policy実行場所を分ける"
+      "public_human_case": "REAL_WORLD_IMPACT.md#33-qwen-code既発行shareと後から変わるagent-policy実行場所を分ける",
+      "merge": {
+        "url": "https://github.com/QwenLM/qwen-code/pull/12582",
+        "state": "merged",
+        "merged_at_utc": "2026-10-02",
+        "commit": "45ee202cb14c171c73185a3dbbd89ed1203f2604",
+        "scope": "Base Host implementation merged; follow-on policy-stage ordering proposal in #13157 remains separate and is not claimed implemented."
+      }
     },
     {
       "case_id": "hermes-kanban-mixed-patch-atomicity-and-secret-claim-boundaries",
@@ -1840,6 +1846,73 @@
         "whole-theory endorsement"
       ],
       "public_human_case": "REAL_WORLD_IMPACT.md#34-hermes-agentpatchが失敗したと何も変更されていないを同じにしない"
+    },
+    {
+      "case_id": "qwen-terminal-host-result-receipt-and-live-budget-authority",
+      "topic": "attempt lineage versus accepted-result evidence, and a post-terminal usage observation versus authority over current work",
+      "external_repository": "QwenLM/qwen-code",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "review_thread_comment",
+        "url": "https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172301736",
+        "causal_role": "scoped_technical_recommendation",
+        "summary": "Recommended closing post-terminal budget-affecting write authority while leaving any separate late-spend observation surface to its own semantics review."
+      },
+      "third_party_response": {
+        "actor": "yiliang114",
+        "causal_chain_recheck": "https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172411370",
+        "implementation_report": "https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172433963",
+        "relationship": "Receiver traced the late write through persisted usage to the dispatcher tree budget and reported implementing option A after the recommendation."
+      },
+      "implementation": {
+        "pull_request": "https://github.com/QwenLM/qwen-code/pull/13241",
+        "state": "open_unmerged",
+        "observed_head": "bb5c5d74b7368610a7dd20d0af532f36ad335fe2",
+        "mechanisms": [
+          "Retain accepted-result receipt and exact-retry idempotency.",
+          "Reject unaccepted post-terminal results without execution-ledger writes.",
+          "Keep a debug discrepancy signal; separate persisted observation-only late spend is not implemented."
+        ]
+      },
+      "verification": {
+        "source": "receiver_reported_not_independently_executed_by_this_archive",
+        "url": "https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5967910407",
+        "reported_checks": {
+          "core_tests": 115,
+          "cli_host_tests": 24,
+          "production_http_store_groups": 12,
+          "http_requests": 54
+        },
+        "downstream_control": "A real dispatcher budget pass leaves a same-tree sibling running after late reports; genuine current usage above the threshold still cancels it.",
+        "environment_boundary": "Built production code and an isolated owned loopback HTTP server; not live-provider or full daemon/session-log acceptance."
+      },
+      "authority_boundary": {
+        "clarification": "https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172530358",
+        "meaning": "External contributor recommendation, not a repository-maintainer ruling; maintainer ratification remains pending."
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "reusable_check": "CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work",
+      "machine_reuse_challenge": {
+        "file": "machine-discovery/independent-reuse-challenges-v1.json",
+        "id": "O-terminal-result-identity-accounting"
+      },
+      "public_human_case": "human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md#終了した仕事の報告が別の仕事を止める",
+      "nakagawa_structural_os_mapping": {
+        "official_derivative": "derivatives/307/README.md",
+        "boundary": "Lineage continuity does not automatically inherit present authority; non-canonical implementation translation."
+      },
+      "not_claimed": [
+        "maintainer ratification",
+        "merge",
+        "release",
+        "verified operational use",
+        "late physical-spend accounting completeness",
+        "independent local test execution by this archive",
+        "independent adoption of this reuse kit",
+        "whole-theory adoption",
+        "audience scale",
+        "broad person recognition"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
