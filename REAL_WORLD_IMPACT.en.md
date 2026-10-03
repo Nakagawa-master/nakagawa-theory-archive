@@ -744,7 +744,7 @@ The recurrence continued in a new publication cycle on 2026-09-30 UTC:
 - [PR #153](https://github.com/022740mix-spec/AI-News/pull/153) records primary / independent-observation / derived-source counts, states that independent third-party verification was not found, separates Google-reported benchmark results from independent reproduction, and declines to insert non-comparable benchmark versions into the site-wide comparison table.
 - Both PRs merged into main article data, feed, and sitemap at 2026-09-30T23:49Z / 23:51Z.
 
-This is evidence of the receiver reusing the durable rule in its own later public production cycle, not merely agreeing once in the source issue. The later articles do not explicitly rereference Nakagawa Master, so this is not counted as a new person-Origin rereference.
+This is evidence of the receiver reusing the durable rule in its own later public production cycle, not merely agreeing once in the source issue. The later articles do not explicitly rereference Nakagawa Master, so this is not counted as a new Nakagawa Master source rereference.
 
 **Publicly verifiable here:** Origin-preserved proposal → explicit receiver adoption and causality statement → durable rule merge → later main/feed/sitemap publication that visibly applies the evidence-lineage distinction.  
 **Not established here:** quantified error-rate reduction, reader/audience scale, reuse by another receiver, a later explicit source rereference in that article, or endorsement of the wider theory corpus.
@@ -1022,7 +1022,7 @@ A different participant then reused the same scope-identity-versus-admission dis
 - [second-person restatement / extension](https://github.com/BerriAI/litellm/issues/43190#issuecomment-5873550150)
 
 **Publicly verifiable here:** structural distinction → receiver states the per-agent direction → implementation PR → another participant independently restates and extends the problem structure.  
-**Not established here:** merge, release, production use, user scale, explicit Nakagawa-master person-Origin attribution by the second participant, or endorsement of a wider theory system.
+**Not established here:** merge, release, production use, user scale, explicit Nakagawa-master Nakagawa Master source attribution by the second participant, or endorsement of a wider theory system.
 
 → [Practical use](PRACTICAL_USE.md#例6複数ai-agentが同じtraceを共有している)  
 → [Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#10-resource-accounting--scope-ownership--shared-trace-is-not-shared-agent-budget)  
@@ -1057,9 +1057,9 @@ Later, maintainer `wenshao` exercised head `18f576f4` with a macOS coordinator, 
 - [maintainer real two-host verification](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926085407)
 - [receiver round-3 fix response](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926562535)
 
-F3 then produced a second kind of external effect: **scope decomposition itself became a receiver-owned work item.** The receiver initially landed both the declared-tool filter and a guard-before-permission ordering change on the same head. Nakagawa-master explicitly asked to close only `declared capability = runnable read-only capability` in #12582 and move the wider session/permission ordering change to a separate pass.
+F3 then produced a second kind of external effect: **scope decomposition itself became a project-owned work item.** The receiver initially landed both the declared-tool filter and a guard-before-permission ordering change on the same head. Nakagawa-master explicitly asked to close only `declared capability = runnable read-only capability` in #12582 and move the wider session/permission ordering change to a separate pass.
 
-Receiver `yiliang114` applied that correction: the pre-permission `Session.ts` branch was removed from #12582, the read-only tool set was consolidated into a single `AGENT_HOST_TOOL_NAMES` source, and receiver-owned issue [#13157](https://github.com/QwenLM/qwen-code/issues/13157) was created. The issue body explicitly says the ordering change was **“removed from #12582 at review's request (scope correction from Nakagawa-master)”**.
+Receiver `yiliang114` applied that correction: the pre-permission `Session.ts` branch was removed from #12582, the read-only tool set was consolidated into a single `AGENT_HOST_TOOL_NAMES` source, and project-owned issue [#13157](https://github.com/QwenLM/qwen-code/issues/13157) was created. The issue body explicitly says the ordering change was **“removed from #12582 at review's request (scope correction from Nakagawa-master)”**.
 
 Qwen triage then independently analyzed #13157. It confirmed that 10 of 30 scripted out-of-workspace probes ended the whole turn via an auto-rejected permission prompt, and traced the root cause to the late guard's `permissionChecked: true` short-circuit. The triage accepted #13157 as the sanctioned home for the guard-ordering half.
 
@@ -1079,14 +1079,16 @@ The receiver then chose a different in-scope resolution in [`b4a13e44`](https://
 - [Nakagawa-master current-baseline recheck](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5932820014)
 - [receiver sequencing / latest contract restatement](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5933053970)
 
-Receiver `yiliang114` then explicitly kept #13157 open as the follow-on home for the guard-ordering half and restated the latest contract as **“@Nakagawa-master's latest: early boundary = Host confinement only, full effective guard exactly once at the final boundary.”** This is same-receiver Origin-preserved technical carry; it is not #13157 implementation and not a prompt-free G8 return. The receiver also separated #13122 as a security blocker that should be fixed in #12582 before merge; that independent defect/fix path is not assigned Nakagawa causal credit.
+Receiver `yiliang114` then explicitly kept #13157 open as the follow-on home for the guard-ordering half and restated the latest contract as **“@Nakagawa-master's latest: early boundary = Host confinement only, full effective guard exactly once at the final boundary.”** This is same-receiver Origin-preserved technical carry; it is not #13157 implementation and not an unsolicited later reference to Nakagawa Master. The receiver also separated #13122 as a security blocker that should be fixed in #12582 before merge; that independent defect/fix path is not assigned Nakagawa causal credit.
 
 This is not credit for adoption of the guard-ordering proposal. The narrower inspectable effect is that after the scope split, the receiver selected an **ordering-preserving alternative implementation** that addresses the fatal recovery symptom with a regression. Any remaining #13157 work should now be justified as a separate policy/diagnostic need for early confinement, not as a prerequisite for turn recovery.
 
-This does **not** add Nakagawa credit for discovering the underlying F3 defect. The narrower public record is that a Nakagawa-master scope judgment was converted into an explicit receiver-owned responsibility split and new issue, where the receiver's triage independently verified the bug and root cause.
+This does **not** add Nakagawa credit for discovering the underlying F3 defect. The narrower public record is that a Nakagawa-master scope judgment was converted into an explicit project-owned responsibility split and new issue, where the receiver's triage independently verified the bug and root cause.
 
-**Publicly verifiable here:** concrete authority boundary → receiver Origin-preserving restatement → contract/UI change → independent second-person recheck carrying the Nakagawa-master boundary → later real-machine validation and receiver fixes → a later scope decision becomes receiver-owned issue #13157 with preserved Origin and independent root-cause verification.  
-**Not established here:** merge/release of #12582, real-user scale, implementation/merge of #13157, or broad person recognition. Because #13157 was created as a direct receiver response to the scope correction, it is not counted here as a later prompt-free G8 return.
+**Publicly verifiable here:** concrete authority boundary → receiver Origin-preserving restatement → contract/UI change → independent second-person recheck carrying the Nakagawa-master boundary → later real-machine validation and receiver fixes → a later scope decision becomes project-owned issue #13157 with preserved Origin and independent root-cause verification.  
+**Current merge state:** [#12582](https://github.com/QwenLM/qwen-code/pull/12582) merged on 2026-10-02 at [45ee202c](https://github.com/QwenLM/qwen-code/commit/45ee202cb14c171c73185a3dbbd89ed1203f2604). The separate #13157 ordering proposal is not thereby implemented.
+
+**Not established here:** stable release, real-user scale, implementation/merge of #13157, or broad person recognition. Because #13157 was created as a direct receiver response to the scope correction, it is not counted here as an unsolicited later reference to Nakagawa Master.
 
 → [Human entry story](human-translation/entry-stories/09-same-share-different-runtime.md)  
 → [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
