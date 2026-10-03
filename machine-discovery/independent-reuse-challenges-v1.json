@@ -268,7 +268,13 @@
         "counterexample showing that exact supersession identity cannot be named without breaking a required recovery invariant, together with a narrower verified mechanism that avoids cross-endpoint revocation",
         "a bounded counterexample where a verified replacement must inherit a narrowly defined authority atomically for safety, with evidence that the inheritance is explicit, scoped, and auditable rather than inferred from lineage alone"
       ],
-      "evidence_boundary": "The linked Qwen Code issue is a live external design problem and contains a Nakagawa-master proposal for explicit supersession identity. OD307 supplies a separate temporal identity/authority-inheritance test. Neither the proposal nor this challenge is evidence of receiver adoption, implementation, merge, release, or deployment."
+      "evidence_boundary": "The linked Qwen Code issue is a live external design problem and contains a Nakagawa-master proposal for explicit supersession identity. OD307 supplies a separate temporal identity/authority-inheritance test. Neither the proposal nor this challenge is evidence of receiver adoption, implementation, merge, release, or deployment.",
+      "independent_contrast_example": {
+        "surface": "https://github.com/microsoft/PilotSwarm/issues/27",
+        "status": "INDEPENDENT_PUBLIC_DESIGN__NOT_SOURCE_REUSE__NOT_IMPLEMENTATION_PROOF",
+        "why_it_matters": "The relay design binds authority to exact owner + private session + one-use invitation + Host key, requires a new invitation and local consent for re-enrollment, and specifies that revoked-grant or old-attempt results do not commit. If ordinary enrollment always creates a new exact grant and never claims to replace an existing endpoint inferred from presentation attributes, a separate supersession selector may add no information until a destructive replacement operation actually exists.",
+        "boundary": "EXACT_NEW_GRANT_WITHOUT_INFERRED_REPLACEMENT_IS_A_NON_FIT_CASE__IF_DESTRUCTIVE_REPLACEMENT_IS_ADDED_LATER_THE_TARGET_STILL_NEEDS_EXACT_AUTHORITY_BEARING_IDENTITY"
+      }
     },
     {
       "id": "O-terminal-result-identity-accounting",
