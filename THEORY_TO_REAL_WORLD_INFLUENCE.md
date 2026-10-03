@@ -520,7 +520,14 @@ The receiver did not simply copy the proposed disposition. Nakagawa-master had a
 
 The receiver’s response says the external finding caused it to return the article’s evidential structure to official sources, while still disagreeing with the proposed final disposition. That combination matters: the evidence-lineage distinction affected the reader-facing publication, but the receiver retained editorial judgment rather than treating the Origin as an authority that had to be obeyed.
 
-A second Nakagawa-master issue, [#155](https://github.com/022740mix-spec/AI-News/issues/155), now has the merged Qwen4 correction attached as a concrete **escaped-incident** fixture for evaluating whether verification gates actually prevent material post-publication corrections rather than merely counting how often gates fire.
+A second Nakagawa-master issue, [#155](https://github.com/022740mix-spec/AI-News/issues/155), then moved that real correction from a one-off fixture into recurring measurement infrastructure. The issue proposed separating **gate firing count** from two different outcomes: material errors that escaped publication gates, and the burden of gates that stopped harmless items.
+
+The receiver implemented that proposal in merged [PR #164](https://github.com/022740mix-spec/AI-News/pull/164). The change keeps the existing firing-count report, but adds a persistent escaped-incident registry, a sampled false-positive registry, a checker that preserves `unknown` instead of converting unclassified cases into zero, a passive weekly maintenance-report section, and an editorial rule that material post-publication corrections or retractions should be registered in the same PR. The Qwen4 correction is the first `source_root` candidate fixture, while another correction whose responsible gate cannot be identified remains `unknown`.
+
+The receiver explicitly states that it did **not** read the linked external measurement-boundary material and that the implementation was derived from the text of issue #155 itself. That makes the causal scope inspectable and narrow: the issue text affected the receiver's recurring measurement process, but this record does not claim independent adoption of a broader theory document.
+
+- [Receiver implementation report on issue #155](https://github.com/022740mix-spec/AI-News/issues/155#issuecomment-5961842599)
+- [Merged operational measurement PR #164](https://github.com/022740mix-spec/AI-News/pull/164)
 
 The bounded causal chain that can be inspected is therefore:
 
@@ -531,11 +538,12 @@ Origin-preserved distinction
 → later independent publication cycles reuse the rule
 → a published article is later corrected using the same evidence-root distinction
 → receiver independently chooses correction rather than blindly copying the proposed retraction
-→ the real correction becomes a fixture for measuring gate effectiveness
-→ Origin remains inspectable through the adoption and correction threads
+→ the real correction becomes an escaped-incident fixture
+→ the fixture is incorporated into recurring receiver-owned measurement tooling and editorial maintenance rules
+→ Origin remains inspectable through the issue and implementation thread
 ```
 
-This is stronger than a single follow-up article because the rule is recurring across publication cycles and has now participated in a real reader-facing correction feedback loop. It still does **not** establish reader scale, quantified reduction in future errors, a new explicit Nakagawa Master mention inside the corrected article itself, or independent reuse by another receiver.
+This is stronger than a single follow-up article because the distinction is now present in both reader-facing correction behavior and recurring receiver-owned editorial measurement infrastructure. It still does **not** establish reader scale, quantified reduction in future errors, independent human authorship of the generated implementation text, a new explicit Nakagawa Master mention inside the corrected article itself, or independent reuse by another receiver.
 
 ### An origin-preserved public publication example
 
