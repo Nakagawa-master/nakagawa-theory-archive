@@ -291,6 +291,21 @@ explicit replace references missing/stale endpoint
 
 The design question is not whether replacement should always be supported. The boundary is narrower: if the system chooses replacement semantics, bind the authority to replace to the exact identity being superseded rather than silently deriving destructive authority from attributes that can collide.
 
+A useful independent contrast is [Microsoft PilotSwarm issue #27](https://github.com/microsoft/PilotSwarm/issues/27). Its public relay design does **not** need to identify an old Host by a colliding display attribute in order to make ordinary re-enrollment safe. The proposed authority is already bound to the exact Entra owner + exact private session + one-use invitation + Host key; connection credentials are short-lived, re-enrollment requires a new invitation and new local consent, and old-attempt or revoked-grant results are specified not to commit. Sharing or ownership change ends the binding.
+
+That is a concrete non-fit case for an over-broad reading of this regression:
+
+```text
+fresh enrollment is always a new exact grant
++ old authority cannot be recreated from name/path similarity
++ no API claims to "replace whichever existing endpoint looks like this one"
+→ a separate supersession selector may add no information to ordinary enrollment
+```
+
+If such a system later adds an operation that **does** revoke or migrate an existing endpoint as part of replacement, the destructive target still needs an exact authority-bearing identity. The contrast therefore narrows the test rather than weakening it: challenge inferred replacement authority only where replacement actually exists.
+
+This PilotSwarm issue is independent public design evidence, not evidence that it used this kit, not an implementation result, and not proof that the proposed relay contract has shipped.
+
 A current public problem surface is [Qwen Code issue #13122](https://github.com/QwenLM/qwen-code/issues/13122), where Host re-enrollment can leave an earlier credential valid and the design discussion considers how a later enrollment should relate to existing Host rows. A Nakagawa Master contribution proposes an explicit supersession identity instead of inferring replacement from a Host name/path pair: [issue comment](https://github.com/QwenLM/qwen-code/issues/13122#issuecomment-5952715999).
 
 The access-topology test above asks whether the caller has authority to revoke a particular endpoint. The temporal identity layer is separate: even when the replacement target is exact, the new endpoint's relation to the old one still has to be classified and audited.
