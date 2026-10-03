@@ -344,7 +344,7 @@ reading
 ≠
 understanding
 ≠
-person-Origin recognition
+recognition of Nakagawa Master
 ```
 
 2026-09-29〜2026-10-01のGoogle Search Consoleでは、master.ricette.jp の「ai文明論」が複数の理論ページで1位表示を含む露出を持ち、「実績」でも公式アーカイブ関連ページが上位に表示されました。一方、この観測範囲ではクリックは0でした。
