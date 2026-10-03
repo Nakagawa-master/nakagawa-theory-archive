@@ -281,8 +281,8 @@
       "positive_evidence": [
         "an explicit accepted-result receipt or equivalent durable fact distinguishes a true idempotent retry from a merely related late result",
         "a terminalized late result cannot revive the task, publish stale output, emit a second terminal outcome, or overwrite the successor attempt",
-        "verifiable physical spend such as tokens, API calls, compute, or provider charges can be recorded under an explicit policy without being treated as result acceptance",
-        "usage/accounting updates are monotonic or otherwise duplicate-safe so repeated late reports cannot double-charge or reduce already recorded spend",
+        "If a separately authorized observation-only contract is chosen, verifiable late physical spend can be recorded without implying result acceptance; this is not required under the close-at-termination contract.",
+        "If a late-spend observation surface exists, its accounting is monotonic or otherwise duplicate-safe so repeated reports cannot double-charge or reduce already recorded spend.",
         "the old attempt's accounting remains separate from a reclaimed or successor attempt",
         "a removed or unauthorized worker cannot regain present write authority merely because it retains historical lineage identifiers",
         "under a close-at-termination contract, a post-terminal 1e9-unit report leaves the full settled ledger unchanged and cannot stop a live sibling when the real budget consumer runs",
@@ -295,7 +295,8 @@
         "counterexample showing that a proposed late-accounting path can be abused by an unauthorized old worker and therefore needs a stronger provenance or attestation boundary",
         "a supposedly observation-only record feeds a live budget or cancellation policy, showing that termination did not actually end control authority"
       ],
-      "evidence_boundary": "Qwen Code PR #13241 is open at bb5c5d74: the branch removes post-terminal ledger writes and retains a discrepancy debug signal. Recovery/cancellation regressions assert full-thread equality for 1,050, 900 and 1e9-token reports. The receiver reports 83 passing tests and owned daemon/production-store checks; this challenge does not claim independent local execution. Nakagawa's scoped technical recommendation is not a repository-maintainer ruling. Maintainer ratification, merge, release, real use, audience scale and whole-theory adoption are not established by this branch change."
+      "evidence_boundary": "Qwen Code PR #13241 is open at bb5c5d74. The receiver removed post-terminal ledger writes and retains a discrepancy debug signal. Report 5967910407 describes 115 core tests, 24 CLI Host tests and 12 production HTTP/store scenario groups covering 54 requests, including a real dispatcher budget pass: late reports leave the live sibling running, while genuine current budget excess still cancels it. These are receiver-reported checks on built production code with owned loopback HTTP, not independent local execution by this archive or live-provider/full daemon acceptance. Nakagawa's recommendation is not a repository-maintainer ruling. Maintainer ratification, merge, release, real use, audience scale and whole-theory adoption are not established.",
+      "receiver_verification": "https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5967910407"
     }
   ],
   "evidence_boundary": [

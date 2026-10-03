@@ -201,11 +201,11 @@ A public review on Carnegie Learning's UpGrade project found a concrete version 
 
 The frontend already treated deletion as permission-sensitive, but the backend single and batch delete paths still accepted destructive requests from roles that the UI treated as unable to delete. The review argued that the server should own one current deletion policy for both routes, evaluated against the target state that will actually be mutated.
 
-The maintainer did not fold that policy change into the batch-deletion PR. Instead, they explicitly opened a separate receiver-owned issue to make the rule consistent across both single and batch APIs:
+The maintainer did not fold that policy change into the batch-deletion PR. Instead, they explicitly opened a separate project-owned issue to make the rule consistent across both single and batch APIs:
 
 - [Nakagawa-master review on UpGrade #3323](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#pullrequestreview-5249193998)
 - [Maintainer response opening the follow-on work](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#issuecomment-5732584639)
-- [Receiver-owned follow-on issue #3326](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326)
+- [Project-owned follow-on issue #3326](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326)
 
 The follow-on issue now specifies the role matrix, non-deletable states, in-use protections, locked-state requirement, and the need to keep policy refusals distinct from execution failures.
 
@@ -215,10 +215,10 @@ That public record establishes a bounded carry:
 concrete backend authority mismatch identified
 → maintainer independently acknowledges the mismatch
 → receiver creates a separate policy issue
-→ the boundary is restated in receiver-owned scope and acceptance conditions
+→ the boundary is restated in project-owned scope and acceptance conditions
 ```
 
-It does **not** yet establish implementation, merge, release, or user-facing effect. Until #3326 is implemented, this remains evidence of receiver-owned planning and reuse rather than completed product change.
+It does **not** yet establish implementation, merge, release, or user-facing effect. Until #3326 is implemented, this remains evidence of project-owned planning and reuse rather than completed product change.
 
 
 ### 8. Classification of untrusted content does not create action authority
@@ -449,7 +449,7 @@ The merged chain also preserves the scope decision: declared Host capability was
 - [Nakagawa-master baseline re-check](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5932820014)
 - [receiver sequencing / contract restatement](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5933053970)
 
-The earned evidence remains bounded: Origin-preserved receiver restatement → receiver-owned contract/UI change → independent second-person re-check → scope decomposition into a receiver-owned follow-on → an ordering-preserving receiver implementation that resolves the fatal recovery symptom → the receiver later explicitly keeps #13157 open and restates the narrowed Nakagawa-master policy-stage contract. This is same-receiver Origin-preserved carry, not a later prompt-free Origin return, and no #13157 early-confinement implementation is claimed.
+The earned evidence remains bounded: Origin-preserved receiver restatement → project-owned contract/UI change → independent second-person re-check → scope decomposition into a project-owned follow-on → an ordering-preserving receiver implementation that resolves the fatal recovery symptom → the receiver later explicitly keeps #13157 open and restates the narrowed Nakagawa-master policy-stage contract. This is same-receiver Origin-preserved carry, not a later unsolicited reference back to Nakagawa Master, and no #13157 early-confinement implementation is claimed.
 
 ### 15. A revision barrier is not authority to release whatever state is current
 
@@ -629,6 +629,8 @@ A useful mutation check restores the old post-terminal write while retaining the
 [Qwen Code #13238](https://github.com/QwenLM/qwen-code/issues/13238) separates attempt identity from accepted-result evidence. Its receiver-side followup, [PR #13241](https://github.com/QwenLM/qwen-code/pull/13241), initially added late ledger writes. Nakagawa-master then identified that these writes fed the tree budget and could stop sibling work.
 
 At [bb5c5d74](https://github.com/QwenLM/qwen-code/commit/bb5c5d74b7368610a7dd20d0af532f36ad335fe2), the receiver removed that write and retained a debug discrepancy signal. Recovery/cancellation tests compare the entire settled thread after 1,050, 900, and 1e9-token reports. The receiver [reports](https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5967834798) 83 passing focused tests, production-store checks, and an owned daemon/Host run whose late 1,050-token result left the terminal thread and its 100-token ledger unchanged. These are receiver-reported executions; this kit does not claim independent local execution or live-provider acceptance.
+
+A [later receiver review](https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5967910407) reports 115 core tests, 24 CLI Host tests, and 12 production HTTP/store scenario groups covering 54 requests. It also runs the real dispatcher budget consumer: a same-tree live sibling stays running after a refused late report, while genuine current usage exceeding the budget still moves it to cancelling. This positive control matters; disabling all budget enforcement would also keep the sibling running, but would not establish the intended boundary. These are receiver-reported checks on built production code with an isolated owned loopback HTTP server, not a live provider or a full daemon/session-log acceptance test.
 
 The PR remains open at this observation. Nakagawa's [recommendation](https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172301736) is not a repository-maintainer ruling; [the distinction was clarified](https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172530358). Branch implementation, maintainer authorization, merge, release, and real use are separate states.
 

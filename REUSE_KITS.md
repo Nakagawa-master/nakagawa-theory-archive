@@ -31,6 +31,10 @@ Core question:
 
 Useful in research, data sharing, policy, procurement, delegated access, and AI tool authorization.
 
+For distributed jobs and agents, [section 17: late reports and live budgets](CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work) gives a regression matrix for accepted retries, cancellation, recovery, reclaimed attempts and revoked workers. Run the actual downstream budget consumer against a live sibling and include genuine current usage as a positive control. The linked Qwen implementation is open; it is an inspectable external implementation example, not a released implementation claim.
+
+For a Japanese explanation starting from the human consequence, read [what happens between starting and finishing work](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md#終了した仕事の報告が別の仕事を止める).
+
 ## 3. Current state vs historical fact
 
 [Historical-Fact Reuse Kit](HISTORICAL_FACT_REUSE_KIT.md)
