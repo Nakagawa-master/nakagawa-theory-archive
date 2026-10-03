@@ -1137,7 +1137,7 @@ issue authorはその後、per-agentをdefaultにする方向へ同意し、PR #
 ## 33. Qwen Code｜既発行shareと、後から変わるagent policy・実行場所を分ける
 
 **対象:** [QwenLM/qwen-code PR #12851](https://github.com/QwenLM/qwen-code/pull/12851) → [PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)  
-**現在状態:** #12851でOrigin付きreceiver restatementとlive-policy整理 → #12851 merge → #12582で実行場所という新しい境界 → @Nakagawa-master付きreceiver返答 → frozen contractと英中share UIをcommit `74bf55053d`で変更 → 別reviewer `chiga0` がNakagawa-master境界を明示して再検証・approval → maintainer-driven実機2-host検証後にreceiverがF1/F2/F4等を修正 → F3ではNakagawa-masterのscope判断に従い「declared=runnable tool filter」を#12582へ残し、guard/permission orderingを#13157へ分離 → receiverがそのsplitを明示実装 → triageと別reviewerが#13157を独立再構成 → receiverはcommit `b4a13e44`でorderingを変えずHost自動permission拒否をrecoverable `EXECUTION_DENIED`へ変更 → current head `881a2af7` / CI・新規pickup credential-revocation review進行中 → #12582 merge/release未完了
+**現在状態:** #12851でOrigin付きreceiver restatementとlive-policy整理 → #12851 merge → #12582で実行場所という新しい境界 → @Nakagawa-master付きreceiver返答 → frozen contractと英中share UIをcommit `74bf55053d`で変更 → 別reviewer `chiga0` がNakagawa-master境界を明示して再検証・approval → maintainer-driven実機2-host検証後にreceiverがF1/F2/F4等を修正 → F3ではNakagawa-masterのscope判断に従い「declared=runnable tool filter」を#12582へ残し、guard/permission orderingを#13157へ分離 → receiverがそのsplitを明示実装 → triageと別reviewerが#13157を独立再構成 → receiverはcommit `b4a13e44`でorderingを変えずHost自動permission拒否をrecoverable `EXECUTION_DENIED`へ変更 → #12582は2026-10-02に `45ee202c` でmerge / #13157は別件の未実装提案として継続
 
 PR #12851では、Nakagawa-masterが、share発行後に同じagentの能力が変わった場合、既発行shareが何をauthorizeするのかを明示的に選ぶ必要があると指摘しました。
 
@@ -1196,7 +1196,7 @@ receiver `yiliang114` はそのscope correctionを受け、`Session.ts`のpre-pe
 - [Nakagawa-master current-baseline recheck](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5932820014)
 - [receiver sequencing / latest contract restatement](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5933053970)
 
-その後receiver `yiliang114` は、#13157をguard-ordering halfのfollow-on homeとして維持すると明示し、**“@Nakagawa-master's latest: early boundary = Host confinement only, full effective guard exactly once at the final boundary”** と最新contractを自分の言葉で再提示しました。これは同じreceiverによるOrigin-preserved technical carryであり、#13157実装済みやunsolicited later reference to Nakagawa Masterとは数えません。同時に別issue #13122を#12582 merge前に直す必要があるsecurity blockerとして分離しており、こちらはNakagawa因果creditには含めません。
+その後receiver `yiliang114` は、#13157をguard-ordering halfのfollow-on homeとして維持すると明示し、**“@Nakagawa-master's latest: early boundary = Host confinement only, full effective guard exactly once at the final boundary”** と最新contractを自分の言葉で再提示しました。これは同じreceiverによるOrigin-preserved technical carryであり、#13157実装済みや後日に自発的にNakagawa Masterを再参照したものとは扱いません。同時に別issue #13122を#12582 merge前に直す必要があるsecurity blockerとして分離しており、こちらはNakagawa因果creditには含めません。
 
 この追加は「guard ordering案を採用した」creditではありません。公開記録で確認できるのは、scope split後にreceiverが**orderingを保持した別実装**を選び、元の致命症状を回帰test付きで解消する方向へ進んだことです。#13157の残存価値は、recovery correctnessではなくearly confinementを別途必要とするpolicy/diagnostic理由があるかへ再定義されるべき状態です。
 
