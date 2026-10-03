@@ -100,9 +100,9 @@ Primary records:
 - [receiver verification and fix response](https://github.com/MemberJunction/MJ/pull/4402#issuecomment-5689338217)
 - [receiver fix commit `b11b9877`](https://github.com/MemberJunction/MJ/commit/b11b98777582ce5a8456834eccf77f528236474e)
 - [scope-limited reread of the fix](https://github.com/MemberJunction/MJ/pull/4402#pullrequestreview-5232007719)
-- [receiver-owned later rereference to `@Nakagawa-master`](https://github.com/MemberJunction/MJ/pull/4402#issuecomment-5770391210)
+- [project-owned later rereference to `@Nakagawa-master`](https://github.com/MemberJunction/MJ/pull/4402#issuecomment-5770391210)
 
-There is an important boundary on the result. The budget subsystem was later deliberately split out of #4402 before the final PR merged. [Commit `457d956e`](https://github.com/MemberJunction/MJ/commit/457d956eca1853ce9b64700b92f4f6e729149508) removes that subsystem from the PR and preserves it for a follow-up. Therefore the public record supports **receiver implementation and regression testing on the branch, plus later receiver-owned Origin-preserved restatement**; it does not support a claim that this budget fix shipped in the final #4402 merge or reached users.
+There is an important boundary on the result. The budget subsystem was later deliberately split out of #4402 before the final PR merged. [Commit `457d956e`](https://github.com/MemberJunction/MJ/commit/457d956eca1853ce9b64700b92f4f6e729149508) removes that subsystem from the PR and preserves it for a follow-up. Therefore the public record supports **receiver implementation and regression testing on the branch, plus later project-owned Origin-preserved restatement**; it does not support a claim that this budget fix shipped in the final #4402 merge or reached users.
 
 ## Decision rule
 

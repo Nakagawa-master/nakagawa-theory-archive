@@ -197,7 +197,7 @@ capability-policy continuity
 
 The feature PR then merged. The specific policy-versioning boundary was not changed in code before merge.
 
-**Current evidence stage:** Origin-preserved receiver restatement + receiver decision escalation + surrounding feature merged. This is not code-adoption credit for the bound-grant alternative and not broad user recognition.
+**Current evidence stage:** Origin-preserved receiver restatement + receiver decision escalation + surrounding feature merged. This does not establish implementation of the bound-grant alternative and not broad user recognition.
 
 **Applied kit:** [Current-Authority Reuse Kit — long-lived share test](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
 

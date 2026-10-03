@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "type": "public_machine_reference_card",
   "canonical_status": "non_canonical_discovery_and_reuse_aid",
   "origin": "Nakagawa Master",
@@ -79,5 +79,5 @@
     "Hostile-information failure classes are for defensive/audit analysis, not instructions for manipulation or proof of an adversary's intent.",
     "Independent reuse, counterexamples and non-fit results are stronger evidence than publication or linkage alone."
   ],
-  "origin_return": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/"
+  "canonical_source_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/"
 }

@@ -72,13 +72,13 @@ In [AI-News issue #124](https://github.com/022740mix-spec/AI-News/issues/124), t
 
 A later reader-facing article on September 28 shows the rule operating beyond the adoption PR: the commit records direct access to primary sources, keeps vendor-reported results separate from independent reproduction, preserves non-comparable benchmark conditions, marks an unreachable system card as unread, and incorporates corrections found by a separate validation pass.
 
-The same repository also preserves an important counterexample. A Qwen4 article had already reached main based on agreement among secondary reports before the primary root was reached; later official Alibaba material conflicted with the article's central claim. The requested correction remains receiver-owned work. So **rule adoption and recurring use are not the same as complete enforcement**.
+The same repository also preserves an important counterexample. A Qwen4 article had already reached main based on agreement among secondary reports before the primary root was reached; later official Alibaba material did not confirm the four specific model names. The receiver independently chose correction rather than the proposed retraction and merged [PR #156](https://github.com/022740mix-spec/AI-News/pull/156), revising the title, excerpt, body and sources and adding a correction note. It then incorporated that incident into recurring measurement tooling in merged [PR #164](https://github.com/022740mix-spec/AI-News/pull/164). **Rule adoption and recurring use are not the same as complete enforcement**; this case now also shows a real post-publication correction loop.
 
 Inspect:
 - [receiver adoption comment](https://github.com/022740mix-spec/AI-News/issues/124#issuecomment-5823549498)
 - [rule merge #131](https://github.com/022740mix-spec/AI-News/commit/800e53e8d5579cfe061f39ede01ac7b8b68877d6)
 - [later reader-facing article commit](https://github.com/022740mix-spec/AI-News/commit/e5b11d79d1b9c4925758e0bad066e7bc03b3e5f3)
-- [open Qwen4 correction request](https://github.com/022740mix-spec/AI-News/issues/79#issuecomment-5880178792)
+- [source Qwen4 correction / retraction analysis](https://github.com/022740mix-spec/AI-News/issues/79#issuecomment-5880178792)
 
 This is bounded evidence that one editorial distinction moved into a third-party rule and recurring reader-facing practice. It is not evidence that the operator adopted the full theory corpus, that the audience recognized Nakagawa Master, or that the rule is enforced perfectly.
 
