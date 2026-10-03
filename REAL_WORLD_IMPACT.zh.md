@@ -1039,7 +1039,7 @@ issue author随后表示per-agent应作为default，并指出PR #43410正在实�
 ## 33. Qwen Code｜区分已经发出的share与之后变化的agent policy / execution placement
 
 **对象：** [QwenLM/qwen-code PR #12851](https://github.com/QwenLM/qwen-code/pull/12851) → [PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)  
-**当前状态：** #12851出现保留Origin的receiver restatement与live-policy整理 → #12851 merge → #12582出现execution-placement新边界 → receiver明确@Nakagawa-master回应 → commit `74bf55053d` 修改frozen contract与英中share UI → 独立reviewer `chiga0` 明确重新检查Nakagawa-master边界 → maintainer真实双Host验证后receiver修复F1/F2/F4等 → F3按照Nakagawa-master的scope判断，把declared=runnable tool-filter部分留在#12582，把guard/permission ordering移到#13157 → triage与另一reviewer独立重构#13157 → receiver commit `b4a13e44` 在不改变permission/guard ordering的情况下，把Host自动permission拒绝改成可恢复的 `EXECUTION_DENIED` → current head `881a2af7`，CI与新的pickup credential-revocation review finding仍在进行；merge/release未完成。
+**当前状态：** #12851出现保留Origin的receiver restatement与live-policy整理 → #12851 merge → #12582出现execution-placement新边界 → receiver明确@Nakagawa-master回应 → commit `74bf55053d` 修改frozen contract与英中share UI → 独立reviewer `chiga0` 明确重新检查Nakagawa-master边界 → maintainer真实双Host验证后receiver修复F1/F2/F4等 → F3按照Nakagawa-master的scope判断，把declared=runnable tool-filter部分留在#12582，把guard/permission ordering移到#13157 → triage与另一reviewer独立重构#13157 → receiver commit `b4a13e44` 在不改变permission/guard ordering的情况下，把Host自动permission拒绝改成可恢复的 `EXECUTION_DENIED` → #12582于2026-10-02通过 `45ee202c` 合并；#13157仍是独立、尚未实现的后续方案。
 
 PR #12851提出了一个长期authority问题：share发出后，如果同一个agent的能力发生变化，旧share到底继续authorize什么？receiver明确重新说明Nakagawa-master提出的问题，并记录产品选择的是按使用时current agent定义工作的live-policy。
 
