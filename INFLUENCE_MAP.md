@@ -580,60 +580,38 @@ inherited credential or binding
 - Canonical Parent (OD306): https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/
 
 
-## 20. 同じ実行の続きなら、遅れて届いた結果は「すでに適用済み」と言えるか
+## 20. 終了したAIの「使用量を記録するだけ」が、別の仕事を止める
 
-分散実行では、処理を始めたHostが一時的に見えなくなり、coordinator側がtimeoutやrecoveryによってrunを先に終了させることがあります。その後、元のHostが戻ってきて、同じlease・同じattemptの結果を遅れて送ってくる場合があります。
+あるAIの処理が時間切れになり、管理側は終了したと判断します。ところが、離れた場所のAIはまだ動いていて、後から「完了しました。これだけ使いました」と結果を返してきます。
 
-ここで、二つの事実を混ぜないことが重要です。
+このとき、同じ実行番号が付いているからといって「その結果はすでに受け取りました」と答えると、事実がずれます。管理側が終了させたことと、そのAIの結果を受理したことは別だからです。終了後に届いた答えを採用しない場合でも、実際に計算や課金が発生していた可能性は残ります。
 
-```text
-same lease / attempt identity
-≠
-the result was already accepted
+Qwen Codeでは、この問題が[issue #13238](https://github.com/QwenLM/qwen-code/issues/13238)で確認され、[PR #13241](https://github.com/QwenLM/qwen-code/pull/13241)で受理済みの結果を証明する記録が加えられました。同じ結果の再送か、受理されなかった古い結果かを分ける修正です。
 
-logical terminal state
-≠
-no physical work happened after terminalization
-```
+しかし、次の問題は答えの採用とは別の場所にありました。古いAIの使用量を台帳へ加えると、その台帳を読んでいる全体の予算判定が変わります。終了済みのAIが非常に大きな数字を送れば、予算超過と判定され、**別の稼働中の仕事まで停止し得る**経路でした。
 
-同じ実行の系譜に属していても、その結果が現在stateへ適用されたとは限りません。逆に、runを論理的に終了させた後でも、外部Host側ですでに計算やAPI利用が発生していれば、その物理的なusageまで「存在しなかった」ことにはできません。
+「答えは採用しない。使用量を記録するだけ」という説明では、この作用を見落とします。記録の名前ではなく、記録を読んだ先で何が動くかまで確認する必要があります。
 
-Qwen Code PR #12582の検証中には、まさにこの境界がN2として残りました。Hostが停止している間にrecoveryがrunをfailedへ移した後、同じHostが遅れて完了結果を返すと、古い実装はその結果をstateへ再適用しない一方で、`alreadyApplied: true` と応答し、実際に発生したtoken usageもledgerへ記録しない状態でした。
+中川マスターは、この経路を指摘したうえで、今回の修正では終了後の台帳書き込みを止め、差異を示すログだけにする案を推奨しました。プロジェクト側は[bb5c5d74](https://github.com/QwenLM/qwen-code/commit/bb5c5d74b7368610a7dd20d0af532f36ad335fe2)で実装し、終了後に10億tokenという大きな使用量が届いても、終了時点の記録を変えないテストを加えています。
 
-PR #12582のmerge後、この問題はissue #13238としてmain上で再確認されました。projectのtriageに加え、人間reviewerもcurrent mainから独立に経路を追い直し、「lease/attemptのidentity」と「resultが受理済みであること」は別だと確認しています。
+ここで代償も残ります。台帳への書き込みを止めれば、終了後に本当に発生した費用まで、その台帳で把握できるようになったわけではありません。その観測が必要なら、現在の仕事を止める予算とは分けた記録を設計する必要があります。「監査用」と名付けるだけでは足りず、その記録が再び予算や実行判断へ流れ込まないことまで確かめます。
 
-その後、Qwen Code側でPR #13241が作られ、次の分離を実装する方向へ進んでいます。
+### 自分のシステムで確かめるなら
 
-```text
-accepted result
-→ receiptで受理済みを確認
-→ 同一結果のretryだけをidempotent successとして扱う
+まず、一つの処理を終了させ、その前後の台帳を保存します。別の処理は動かしたままにします。その後、終了した側から大きな使用量を送ります。
 
-terminalized late result
-→ stale resultとしてstateへ再適用しない
-→ runを復活させない
-→ stale answerを公開しない
-→ 確認可能な物理usageだけを別のledger作用として扱う
-```
+見るのは三つです。古い結果が採用されないこと。終了時点の台帳が変わらないこと。そして、実際の予算判定を動かしても、別の処理が停止しないことです。台帳だけを比較したテストと、後続の予算判定まで動かしたテストは、確認できる範囲が違います。
 
-この区別のポイントは、「古い結果を受け入れるか」と「古いattemptで実際に発生した作用を記録するか」を同じ権限にしないことです。時間的な系譜が続いていることは、現在stateを書き換える権限が残っていることの証明ではありません。同時に、現在の書換権限が終わったことは、過去に起きた物理的作用まで消す理由にはなりません。
+受理済みの結果を再送する場合は、反対側も確認します。本当に受理した証拠がある同一結果なら、二重適用せず成功として答えられることが必要です。また、取消によって完了報告が採用されなかった場合に、「完了を受理した証拠」を誤って残してはいけません。
 
-### 別のシステムで再利用するなら
+この判定は、AIだけでなく、遅れて届く決済通知、送信結果、バックグラウンド処理にも応用できます。ただし、外部の費用や結果を無視してよいという意味ではありません。**何が起きたかを知ることと、それを根拠に今の処理を動かすことを分ける**ための確認です。
 
-次を分けて確認できます。
+### 確認できている範囲
 
-1. **受理証拠** — 「同じrequest ID」「同じlease」「同じattempt」ではなく、そのresultを実際にcommitした証拠があるか。
-2. **現在権限** — terminal / cancel / recovery後の古いattemptが、現在stateを再び変更できないことが保証されているか。
-3. **物理作用** — state変更とは別に、すでに発生した課金・token・外部API利用・resource消費をどう一度だけ記録するか。
-4. **後続attempt分離** — attempt Nの遅延結果やusageが、reclaim後のattempt N+1へ混ざらないか。
-5. **再試行** — 本当に一度受理した同じresultのretryだけが、二重適用・二重課金なしにidempotent成功になるか。
+Qwen Code側は[現在のコードでの検証報告](https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5967834798)を公開しています。83件の関連テスト、実際のdaemon/Host、使用量1,050tokenの遅延結果に対して台帳が100tokenのまま変わらなかったことなどが報告されています。ここでは相手の実行報告と、コード・テスト記述から確認できる内容を区別します。
 
-Qwen Code #13241はこの記録時点でopenです。実装PR、test、実daemon/Hostでの検証報告までは確認できますが、merge、release、実user利用、広い人物認知はまだ成立したものとして扱いません。
+PRはこの確認時点で未マージです。中川マスターの技術的推奨はメンテナーの決定ではなく、[その点も返信で明確にしています](https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172530358)。実装されたこと、採用を決める権限、公開版への反映、実利用は同じ状態ではありません。
 
-関連資料:
-- [Qwen Code PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)
-- [Qwen Code issue #13238](https://github.com/QwenLM/qwen-code/issues/13238)
-- [Qwen Code PR #13241](https://github.com/QwenLM/qwen-code/pull/13241)
-- [OD307｜自己改変同一性とKernel系譜継承論](derivatives/307/README.md)
-- [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
-- [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+具体的なテスト条件は[再利用キットの第17節](CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work)へ。過去から続く系譜と、現在の権限の正当性を分ける考え方は、[OD307の人間向け要約](derivatives/307/human-entry.md)と、そこからつながる[親原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-14-self-modification-identity-kernel-lineage/)で確認できます。この事例は非正本の応用例であり、外部プロジェクトが理論全体を採用・証明したという主張ではありません。
+
+隣接する問題には、[同じ共有リンクでも実行場所が変わる話](human-translation/entry-stories/09-same-share-different-runtime.md)と、[送信エラーの後に二重課金が起きる話](human-translation/entry-stories/01-double-charge-after-error.md)があります。別の実装で再利用した結果や反例は、機密を含めず[独立検証・再利用の受付](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)へ記録できます。
