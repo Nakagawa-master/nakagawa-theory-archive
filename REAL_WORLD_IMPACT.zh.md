@@ -1093,7 +1093,7 @@ receiver `yiliang114` 接受这一scope correction：从#12582移除pre-permissi
 **公开可确认：** 具体authority边界 → receiver保留Origin重新说明 → contract / UI修改 → 独立第二reviewer再次明确Nakagawa-master边界 → 后续真实机器验证与receiver修复 → 后续scope判断变成保留Origin的project-owned issue #13157，并获得独立root-cause验证。  
 **当前合并状态：** [#12582](https://github.com/QwenLM/qwen-code/pull/12582)已于2026-10-02通过[45ee202c](https://github.com/QwenLM/qwen-code/commit/45ee202cb14c171c73185a3dbbd89ed1203f2604)合并。这不代表另行提出的#13157 ordering方案已经实现。
 
-**尚未确认：** stable release、真实用户规模、#13157的implementation/merge或广泛人物认知。因为#13157是receiver对scope correction的直接响应，这里不把它计为后来的后来自发再次提及Nakagawa Master。
+**尚未确认：** stable release、真实用户规模、#13157的implementation/merge或广泛人物认知。因为#13157是receiver对scope correction的直接响应，这里不把它当作之后自发再次提及Nakagawa Master的证据。
 
 → [一般读者入口](human-translation/entry-stories/09-same-share-different-runtime.md)  
 → [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
