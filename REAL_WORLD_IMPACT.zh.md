@@ -745,7 +745,7 @@ PR #131于2026-09-25T08:42:13Z merge，把这一区分写入repository持续使�
 - [PR #153](https://github.com/022740mix-spec/AI-News/pull/153) 明确记录一次资料 / 独立观察 / 派生来源的root数量，保留“未确认独立第三方验证”的边界，把Google自报benchmark与独立复现分开，并没有把版本/条件不可比较的数值强行加入全站model comparison。
 - 两个PR均于2026-09-30T23:49Z / 23:51Z merge进入main article data、feed与sitemap。
 
-这说明receiver不是只在源issue里同意一次，而是在自己的后续公开生产流程中反复使用该规则。后续文章本身没有再次明确写出Nakagawa Master来源，因此这里不把它算作新的person-Origin再引用。
+这说明receiver不是只在源issue里同意一次，而是在自己的后续公开生产流程中反复使用该规则。后续文章本身没有再次明确写出Nakagawa Master来源，因此这里不把它算作新的对Nakagawa Master来源的再次明确引用。
 
 **公开可确认：** 保留Origin的提案 → receiver明确采用并说明因果关系 → 持久规则merge → 后续main/feed/sitemap公开文章继续实际运用evidence-lineage区分。  
 **尚未确认：** 误报率的量化改善、reader/audience规模、其他receiver的独立reuse、该后续文章中的对Nakagawa-master的明确来源引用再引用，或对整个理论体系的认可。
@@ -1062,9 +1062,9 @@ receiver回复 **“@Nakagawa-master Good catch”**，并在commit `74bf55053d`
 - [maintainer real two-host verification](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926085407)
 - [receiver round-3 fix response](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5926562535)
 
-F3之后又产生了另一种外部作用：**scope分解本身变成了receiver-owned work item。** receiver最初把declared-tool filter与guard-before-permission ordering一起放进同一个head。Nakagawa-master明确要求：#12582只关闭 `declared capability = runnable read-only capability`，更广的session/permission ordering另开pass。
+F3之后又产生了另一种外部作用：**scope分解本身变成了project-owned work item。** receiver最初把declared-tool filter与guard-before-permission ordering一起放进同一个head。Nakagawa-master明确要求：#12582只关闭 `declared capability = runnable read-only capability`，更广的session/permission ordering另开pass。
 
-receiver `yiliang114` 接受这一scope correction：从#12582移除pre-permission `Session.ts` 分支，把read-only tool set合并成唯一的 `AGENT_HOST_TOOL_NAMES` 来源，并新建receiver-owned issue [#13157](https://github.com/QwenLM/qwen-code/issues/13157)。issue正文明确写明该ordering改动是 **“removed from #12582 at review's request (scope correction from Nakagawa-master)”**。
+receiver `yiliang114` 接受这一scope correction：从#12582移除pre-permission `Session.ts` 分支，把read-only tool set合并成唯一的 `AGENT_HOST_TOOL_NAMES` 来源，并新建project-owned issue [#13157](https://github.com/QwenLM/qwen-code/issues/13157)。issue正文明确写明该ordering改动是 **“removed from #12582 at review's request (scope correction from Nakagawa-master)”**。
 
 随后Qwen triage独立分析#13157，确认30次scripted out-of-workspace probe中有10次因为permission auto-reject导致整个turn失败，并把root cause追到late guard在 `permissionChecked: true` 下的short-circuit。triage把#13157接受为F3 guard-ordering half的正式追踪位置。
 
@@ -1084,14 +1084,16 @@ receiver `yiliang114` 接受这一scope correction：从#12582移除pre-permissi
 - [Nakagawa-master current-baseline recheck](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5932820014)
 - [receiver sequencing / latest contract restatement](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5933053970)
 
-随后receiver `yiliang114` 明确表示#13157继续作为guard-ordering half的follow-on home，并把最新contract重新表述为 **“@Nakagawa-master's latest: early boundary = Host confinement only, full effective guard exactly once at the final boundary.”** 这是同一receiver继续保留Origin的technical carry；不把它算作#13157已经实现，也不算prompt-free G8。receiver同时把#13122分离成应在#12582 merge前修复的security blocker；这条独立defect/fix路径不增加Nakagawa因果credit。
+随后receiver `yiliang114` 明确表示#13157继续作为guard-ordering half的follow-on home，并把最新contract重新表述为 **“@Nakagawa-master's latest: early boundary = Host confinement only, full effective guard exactly once at the final boundary.”** 这是同一receiver继续保留Origin的technical carry；不把它算作#13157已经实现，也不算后来自发再次提及Nakagawa Master。receiver同时把#13122分离成应在#12582 merge前修复的security blocker；这条独立defect/fix路径不增加Nakagawa因果credit。
 
 这里不把它记成对guard-ordering方案的采用。更窄的可验证作用是：scope split之后，receiver选择了**保持ordering不变的替代实现**，并用回归test解决致命的turn-recovery症状。#13157剩余工作现在需要以early confinement的独立policy/diagnostic价值为理由，而不能继续把turn recovery当作前置理由。
 
-这里**不**把F3 defect本身的发现算作新增Nakagawa credit。更窄、可验证的事实是：Nakagawa-master的scope判断被转换成明确的receiver-owned责任分离与新issue，而receiver的triage又在这个新surface上独立验证了bug与root cause。
+这里**不**把F3 defect本身的发现算作新增Nakagawa credit。更窄、可验证的事实是：Nakagawa-master的scope判断被转换成明确的project-owned责任分离与新issue，而receiver的triage又在这个新surface上独立验证了bug与root cause。
 
-**公开可确认：** 具体authority边界 → receiver保留Origin重新说明 → contract / UI修改 → 独立第二reviewer再次明确Nakagawa-master边界 → 后续真实机器验证与receiver修复 → 后续scope判断变成保留Origin的receiver-owned issue #13157，并获得独立root-cause验证。  
-**尚未确认：** #12582 merge/release、真实用户规模、#13157的implementation/merge或广泛人物认知。因为#13157是receiver对scope correction的直接响应，这里不把它计为后来的prompt-free G8 return。
+**公开可确认：** 具体authority边界 → receiver保留Origin重新说明 → contract / UI修改 → 独立第二reviewer再次明确Nakagawa-master边界 → 后续真实机器验证与receiver修复 → 后续scope判断变成保留Origin的project-owned issue #13157，并获得独立root-cause验证。  
+**当前合并状态：** [#12582](https://github.com/QwenLM/qwen-code/pull/12582)已于2026-10-02通过[45ee202c](https://github.com/QwenLM/qwen-code/commit/45ee202cb14c171c73185a3dbbd89ed1203f2604)合并。这不代表另行提出的#13157 ordering方案已经实现。
+
+**尚未确认：** stable release、真实用户规模、#13157的implementation/merge或广泛人物认知。因为#13157是receiver对scope correction的直接响应，这里不把它计为后来的后来自发再次提及Nakagawa Master。
 
 → [一般读者入口](human-translation/entry-stories/09-same-share-different-runtime.md)  
 → [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
