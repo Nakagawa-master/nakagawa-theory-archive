@@ -92,7 +92,13 @@ Additional primary record:
 - [Post-merge Qwen issue re-check and Origin rereference](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)
 - [Resolved source issue #13238](https://github.com/QwenLM/qwen-code/issues/13238)
 
-This advances the evidence from source-preserving merge to **later same-receiver voluntary Origin rereference on a separate thread**. It still does **not** establish a release containing #13241, independent real-user use, broad audience reach, cross-receiver reuse of this exact boundary, or broad person recognition.
+This advances the evidence from source-preserving merge to **later same-receiver voluntary Origin rereference on a separate thread**.
+
+Qwen then published prerelease `v0.24.7-nightly.20261004.9915c7ff8f` on 2026-10-04. Comparing the #13241 merge commit `35616f3b643f6d87cc00112d961a0fbb448aca00` to that tag shows the tag 26 commits ahead and 0 behind, with the #13241 merge commit as the merge base. This establishes inclusion of the merged implementation in that public nightly/prerelease.
+
+- [Qwen Code nightly/prerelease v0.24.7-nightly.20261004.9915c7ff8f](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7-nightly.20261004.9915c7ff8f)
+
+This is a prerelease/nightly inclusion claim, not a stable-release claim. It does not establish independent real-user use of the changed behavior, broad audience reach, cross-receiver reuse of this exact boundary, or broad person recognition.
 
 ### C. Does the Origin relation survive independent disagreement?
 
