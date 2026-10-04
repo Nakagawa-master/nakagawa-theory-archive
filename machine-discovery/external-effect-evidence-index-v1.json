@@ -1881,7 +1881,7 @@
       },
       "implementation": {
         "pull_request": "https://github.com/QwenLM/qwen-code/pull/13241",
-        "state": "open_unmerged",
+        "state": "merged",
         "observed_head": "2d438dbbcfa5e8fe98846ea6731b13c890ac6573",
         "mechanisms": [
           "Retain accepted-result receipt and exact-retry idempotency.",
@@ -1923,7 +1923,7 @@
         "clarification": "https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172530358",
         "meaning": "External contributor recommendation, not a repository-maintainer ruling; maintainer ratification remains pending."
       },
-      "current_stage": "third_party_code_test_design_document_change_with_actual_receiver_ui_and_native_runtime_verification__open_unmerged",
+      "current_stage": "third_party_implementation_merged_with_actual_receiver_ui_and_native_runtime_verification",
       "reusable_check": "CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work",
       "machine_reuse_challenge": {
         "file": "machine-discovery/independent-reuse-challenges-v1.json",
@@ -1935,18 +1935,25 @@
         "boundary": "Lineage continuity does not automatically inherit present authority; non-canonical implementation translation."
       },
       "not_claimed": [
-        "repository-maintainer ratification of option-A ledger semantics",
-        "maintainer ratification",
-        "merge",
-        "release",
-        "verified operational use",
+        "nightly or stable release containing PR #13241",
+        "verified downstream operational or user use",
         "late physical-spend accounting completeness",
-        "independent local test execution by this archive",
+        "explicit maintainer semantic endorsement of every option-A framing beyond the merge itself",
         "independent adoption of this reuse kit",
         "whole-theory adoption",
         "audience scale",
         "broad person recognition"
-      ]
+      ],
+      "merge": {
+        "verified": true,
+        "merged_at_utc": "2026-10-04T05:46:31Z",
+        "merge_commit": "35616f3b643f6d87cc00112d961a0fbb448aca00",
+        "merged_by": "yiliang114",
+        "pull_request": "https://github.com/QwenLM/qwen-code/pull/13241",
+        "head": "2d438dbbcfa5e8fe98846ea6731b13c890ac6573",
+        "claim_boundary": "Repository merge establishes integration of the implementation at the merged head. It is not claimed as a separate explicit maintainer statement endorsing every semantic framing in the review discussion."
+      },
+      "verification_boundary": "nightly/stable release, downstream operational use, same/cross-receiver reuse, or later voluntary person-Origin rereference"
     },
     {
       "case_id": "memberjunction-compose-email-shared-surface-privacy",
