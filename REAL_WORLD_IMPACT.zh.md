@@ -2,7 +2,7 @@
 
 语言: [日本語](REAL_WORLD_IMPACT.md) | [English](REAL_WORLD_IMPACT.en.md) | **中文**
 
-**最后确认：2026-10-01**
+**最后确认：2026-10-04**
 
 中川大师（Nakagawa Master）是Keisuke Nakagawa的笔名。在社交媒体上也使用“マスター（Master）”，部分外部投稿使用“MasterJP”名义。
 
