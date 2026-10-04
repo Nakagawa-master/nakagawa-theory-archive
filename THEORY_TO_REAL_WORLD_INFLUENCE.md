@@ -721,6 +721,40 @@ For related public boundaries, see:
 - [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
 - [Practical Boundary Checks](PRACTICAL_BOUNDARY_CHECKS.md)
 
+### A separate public reproduction carried the current-authority distinction into a reusable artifact
+
+A different chain shows technical carry without explicit person attribution.
+
+In [LangGraph issue #9185](https://github.com/langchain-ai/langgraph/issues/9185), Nakagawa Master separated three things that can otherwise be collapsed during recovery:
+
+```text
+logical action identity
+!=
+execution attempt identity
+!=
+current authority to execute a new external effect
+```
+
+The specific point was that proving a prior ambiguous operation **ABSENT** does not by itself recreate present authorization after a long recovery window; current policy or approval should be checked again before a genuinely new dispatch.
+
+Primary source:
+- [Nakagawa Master comment on LangGraph #9185](https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-5978907038)
+
+Later the same day, participant `1320800521` independently reported reproduction on LangGraph 1.2.11 and 1.2.12, described a reconciliation control, and separately restated that after an operation is proven absent, current authorization should be re-checked before a fresh dispatch:
+
+- [Independent reproduction and control](https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-5981507756)
+- [Later restatement of the recovery boundary](https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-5981790977)
+
+The participant also updated a separate public XBSTACK repository after the Nakagawa comment. Commit `b1697877` adds a network-shaped 1.2.12 fixture, a provider-reconciliation control, recorded PASS results, and a production-interpretation note that replay identity and current authorization are separate concerns:
+
+- [XBSTACK reproduction repository](https://github.com/xbstack/langgraph-timeout-resume-side-effect-repro)
+- [Post-comment repository update](https://github.com/xbstack/langgraph-timeout-resume-side-effect-repro/commit/b169787769dd3b3492b2870cd758bd2dfc7e52f0)
+- [Recorded verification result](https://github.com/xbstack/langgraph-timeout-resume-side-effect-repro/blob/main/results/verification.json)
+
+The reported control keeps LangGraph's replay behavior but uses a stable business-operation key plus provider reconciliation. The recorded fixture shows two Tool attempts while the provider ledger remains at one payment.
+
+The attribution boundary is important: the XBSTACK repository links issue #9185 but does **not** name Nakagawa Master, and the participant did not explicitly state that Nakagawa caused the repository update. The timing and matching technical distinction support a public technical-carry observation; they do not establish unique causation, person-Origin preservation, upstream LangGraph adoption, or endorsement of a broader theory.
+
 ---
 
 ## 5. Source and interpretation boundary
