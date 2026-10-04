@@ -83,6 +83,17 @@ AIが3案を出し、人間が1つ選んだ。
 
 → [公開記録を読む](https://github.com/QwenLM/qwen-code/pull/12492)
 
+同じQwen Codeでも、これ一度だけではありません。
+
+別のPR #13241では、**終了した仕事から遅れて届いた使用量の報告が、いま動いている別の仕事まで止め得る経路**を指摘しました。Nakagawa Masterは、終了後の報告を実行中の予算帳簿へ書き戻さず、必要なら観測記録を別に持つ境界を技術的に提案。受け手側はその書き込みを削除し、PR説明にも **@Nakagawa-master の外部技術提案に基づく実装**であることを記録しています。
+
+その後、テスト、実際のWeb画面とnative Hostを使った確認、人間reviewを経て、PRはmainへ統合されました。
+
+→ [人間向けに経緯を読む](entry-stories/10-started-revision-does-not-authorize-current-state.md)  
+→ [第三者側のPRを確認する](https://github.com/QwenLM/qwen-code/pull/13241)
+
+これは広い利用者への普及や人物認知を証明するものではありません。ですが、**同じ人物Originから、別の具体的問題でも実装・検証・統合まで因果を追える**ことは確認できます。
+
 ### AI-News
 
 「URLが複数ある」ことと「独立した証拠の根が複数ある」ことを分けるよう提案。
