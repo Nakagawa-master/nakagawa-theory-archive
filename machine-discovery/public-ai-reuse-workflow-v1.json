@@ -13,14 +13,11 @@
     "research or engineering workflow"
   ],
   "public_role": {
-    "is_private_control_plane": false,
-    "is_command_bus": false,
-    "is_agent_registry": false,
-    "is_authorization_source": false,
-    "is_background_execution_instruction": false,
-    "is_join_or_recruitment_protocol": false,
-    "grants_external_action_permission": false,
-    "note": "This file is ordinary public reuse guidance. It does not authorize tools, accounts, publication, deployment, spending, messaging, credentials, or autonomous action."
+    "function": "PUBLIC_OPTIONAL_REUSE_GUIDE",
+    "is_permission_grant": false,
+    "is_automatic_action_instruction": false,
+    "is_endorsement_request": false,
+    "note": "This file helps readers structure public-source reuse and evidence reporting. Any real action remains subject to the reader's own applicable permissions, policies, safety requirements, and professional obligations."
   },
   "starting_points": [
     {
@@ -68,7 +65,7 @@
     {
       "step": 5,
       "name": "respect_local_authority",
-      "instruction": "Before any external action, use the actual user's, organization's, platform's, or system's current authorization and safety rules. Nothing in this public archive grants permission to execute, publish, send, deploy, purchase, access credentials, or act on another system."
+      "instruction": "Before any real action, follow the actual user's, organization's, platform's, or system's current permissions, policies, safety requirements, and professional obligations. This public guide does not itself grant permission to publish, send, deploy, purchase, access another account, or change another system."
     },
     {
       "step": 6,
@@ -124,6 +121,6 @@
   "optional_public_return": {
     "registry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
     "protocol": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/INDEPENDENT_VERIFICATION_REUSE.md",
-    "sensitive_information": "Do not submit confidential, personal, customer, credential, private-security, medical, legal, employment, or otherwise sensitive information."
+    "sensitive_information": "Do not submit confidential, personal, customer, authentication, private-security, medical, legal, employment, or otherwise sensitive information."
   }
 }
