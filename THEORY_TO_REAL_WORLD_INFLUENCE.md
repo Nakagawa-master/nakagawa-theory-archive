@@ -72,6 +72,20 @@ The release tag is 49 commits ahead of and 0 behind the #12895 merge commit `7e5
 
 The useful signal is narrower than endorsement: the receiving-project artifact voluntarily preserves the explicit source relation to Nakagawa Master while turning the boundary into code, tests, docs, merge, and stable release. This still does not establish how many users encountered the change, noticed the source relation, or formed any view about Nakagawa Master.
 
+A later, different Qwen defect now provides a second compact source-preserving implementation chain. In **Qwen Code #13241**, a late Host result could no longer change the answer after cancellation/recovery, but its late usage report could still write into the live budget ledger and affect current work. Nakagawa Master proposed the narrower boundary that a terminalized attempt loses budget-affecting write authority; any later physical-spend observation should be separated from the execution budget if the project needs to retain it.
+
+The receiver's own PR description explicitly says that the current revision implements **“the option-A recommendation from @Nakagawa-master”** and separately records that this was an external technical recommendation rather than repository-maintainer authority. The receiver then added code/tests, reported Web Shell and native Host checks, received a human approval from reviewer `qqqys`, and merged the PR on 2026-10-04.
+
+Primary records:
+- [Option-A technical recommendation](https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172301736)
+- [Attribution clarification](https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172530358)
+- [Receiver implementation commit](https://github.com/QwenLM/qwen-code/commit/bb5c5d74b7368610a7dd20d0af532f36ad335fe2)
+- [Receiver Web Shell + native Host verification](https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5970236028)
+- [Merged PR #13241](https://github.com/QwenLM/qwen-code/pull/13241)
+- [Human-readable explanation](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)
+
+This is useful here because the source relation survives **another concrete problem and another implementation path**, rather than only one earlier Qwen case. It establishes source-preserving implementation and merge for this bounded defect. It does **not** yet establish a release containing #13241, independent real-user use, broad audience reach, or a later prompt-free Origin rereference.
+
 ### C. Does the Origin relation survive independent disagreement?
 
 In **in-c0/tuned#1**, the independent receiver did **not** adopt the proposed central-register implementation. It nevertheless judged the underlying distinction sound, explained why it rejected that implementation shape, and then referred to Nakagawa-master and the already-declined suggestion again in the next autonomous run without a new Nakagawa prompt.
