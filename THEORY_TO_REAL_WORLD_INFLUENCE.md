@@ -149,6 +149,28 @@ This is useful evidence of a scope constraint producing a different implementati
 
 This is not additional credit for discovering the underlying F3 defect. The inspectable effect is the **problem decomposition and responsibility boundary**: a Nakagawa-master scope judgment became a project-owned issue with preserved Origin, and the receiving project's triage independently validated the resulting work item. Because the issue was created directly in response to that correction, it is not counted as an unsolicited later reference to Nakagawa Master.
 
+That separate work item has now advanced into a concrete receiver-owned implementation. After #12582 merged, Nakagawa-master re-baselined #13157 against current `main` and narrowed the execution contract to two distinct authority stages: an early, side-effect-free Host-confinement check before permission RPC, followed by one final full effective guard after hooks against final arguments. Receiver `yiliang114` opened [PR #13406](https://github.com/QwenLM/qwen-code/pull/13406) with that shape.
+
+At head `ed8883320d09c469d132f95e447eddc467805209`:
+
+- outside-workspace Host reads are refused before permission handling and remain recoverable;
+- calls that pass native confinement still follow permission admission and hooks;
+- the potentially stateful upstream authority is withheld from the early phase and consulted at the final effective guard;
+- the final guard sees the post-hook arguments;
+- the receiver reports a real coordinator / enrolled Host / Web Shell path with zero permission RPCs for the refused outside read, successful inside-workspace continuation, and one persisted final reply;
+- Qwen Code CI, tui-parity, and SDK Java all completed successfully on the reviewed head.
+
+Qwen triage independently checked the history rather than relying on the PR description. Its stage-3 review explicitly states that #13406 is the artifact requested by the earlier `@Nakagawa-master` scope split, independently re-traces the construction equality, and approves the head. Nakagawa-master then re-checked the now-green head and recorded no remaining blocker in the scoped guard/permission-ordering boundary.
+
+Additional records:
+- [current-main implementation contract on #13157](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5957440588)
+- [receiver implementation PR #13406](https://github.com/QwenLM/qwen-code/pull/13406)
+- [receiver Host/Web Shell regression report](https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5983514576)
+- [independent Qwen triage provenance/structure review](https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5984346399)
+- [Nakagawa-master current-head scoped re-check](https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5985298400)
+
+This advances the follow-on from an Origin-preserved project-owned issue to **receiver implementation + green current-head CI + independent provenance-aware approval**. It is still pre-merge. The triage approval is an automated Qwen review, not a human maintainer approval; the receiver's Host run used a controlled model provider; and no release, real-user use, audience scale, or broad person recognition is claimed.
+
 ### E. Can one receiver reuse the distinction repeatedly on separate implementation seams?
 
 **Hermes Agent #61982** now provides a compact same-receiver recurrence pattern across multiple distinct boundaries rather than one isolated fix.
@@ -720,6 +742,27 @@ For related public boundaries, see:
 
 - [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
 - [Practical Boundary Checks](PRACTICAL_BOUNDARY_CHECKS.md)
+
+### A second-person incident independently restated approval capability versus override authority
+
+In [OpenAI Codex issue #50826](https://github.com/openai/codex/issues/50826), Nakagawa Master separated two authority facts:
+
+```text
+the system can ask this user for approval
+!=
+this user's approval can override the policy that denied the action
+```
+
+The proposed recovery contract was to expose the denying policy's provenance / precedence, the authority class required to override it, whether an override is actually available, and a terminal-for-this-action state when no available user action can change the result.
+
+Primary source:
+- [Nakagawa Master approval-versus-override comment](https://github.com/openai/codex/issues/50826#issuecomment-5978616270)
+
+About five hours later, participant `sadricfilip` added a separate Windows desktop / bounded Azure inventory incident. The participant reported that a sole owner repeatedly supplied ordinary conversational approval even though the enforced runbook required five distinct authorization actors; the tool correctly remained denied, but the surrounding conversation kept cycling through owner confirmations and an unimplemented single-owner exception. The participant's requested investigation independently separated business-owner consent, repository-defined independent acceptance, and platform / organization execution policy, and asked the product to surface the real actionable review path instead of repeating a confirmation that cannot change the decision.
+
+- [Independent observed case and requested investigation](https://github.com/openai/codex/issues/50826#issuecomment-5981051126)
+
+The participant did not name Nakagawa Master or claim that the earlier comment caused the incident report. This therefore supports **second-person technical restatement / problem-class carry inside the same receiver surface**, not Person-Origin preservation, unique causation, product adoption, or implementation. No successful override, retry, token exchange, or Azure scan is claimed in that report.
 
 ### A separate public reproduction carried the current-authority distinction into a reusable artifact
 
