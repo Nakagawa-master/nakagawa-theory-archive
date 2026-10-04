@@ -304,6 +304,26 @@
       "evidence_boundary": "Qwen Code PR #13241 remains open at current head 2d438dbbcfa5e8fe98846ea6731b13c890ac6573. The receiver removed post-terminal execution-ledger writes, retained the accepted-result receipt contract, and later corrected the terminal-usage authority comment without changing runtime behavior. Report 5967910407 describes 115 core tests, 24 CLI Host tests and 12 production HTTP/store scenario groups covering 54 requests, including the real dispatcher budget consumer. A later receiver report, 5970236028, exercises the same public head through actual Web Shell interaction, coordinator daemon, enrolled native Host, ACP/tools/result routes and natural-clock recovery: normal completion plus an exact receipt replay are accepted separately, while cancellation/recovery followed by a late 1,050-token native completion is refused without changing the settled 100-token record or publishing a late answer; an actual queued footer Stop also leaves no resurrection. These are receiver-reported checks with an owned deterministic loopback model gateway, not independent execution by this archive, live-provider acceptance, maintainer ratification, merge, release, real-user use, audience scale or whole-theory adoption. Nakagawa's recommendation remains an external technical recommendation rather than a repository-maintainer ruling.",
       "receiver_verification": "https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5970236028",
       "observed_head": "2d438dbbcfa5e8fe98846ea6731b13c890ac6573"
+    },
+    {
+      "id": "P-durable-relation-vs-probabilistic-suggestion",
+      "distinction": "durable workflow relation != current probabilistic recommendation",
+      "external_verified_case": "https://github.com/zammad/zammad/issues/6418",
+      "origin_discussion": "https://github.com/zammad/zammad/issues/6348#issuecomment-5689266377",
+      "test": "Find a real non-confidential support, knowledge, recommendation, search, triage, retrieval, or assistant workflow where both durable linked/attached/selected items and current suggested/recommended items can appear. Open the zero-query or pre-search state, then independently disable, delay, fail, or change the suggestion system. Verify that durable relations remain available and distinguishable, while probabilistic suggestions may change or disappear without erasing the durable workflow relation.",
+      "positive_evidence": [
+        "durably linked or explicitly attached items remain available when suggestions are disabled, loading, unavailable, or failed",
+        "the interface or API preserves the source class so durable relation and probabilistic suggestion are not flattened into one confidence ranking",
+        "durable linked items can be prioritized before suggestions without claiming the suggestions are equivalent evidence",
+        "typing a new search or changing the recommendation context may replace the suggestion set without mutating the underlying durable links",
+        "a regression independently exercises both the durable-relation path and the suggestion-unavailable path"
+      ],
+      "useful_negative_evidence": [
+        "proof that both item classes are intentionally ephemeral recommendations and no durable relation is claimed",
+        "proof that a durable relation would be misleading in the tested product because every displayed item is recomputed from the same current evidence",
+        "counterexample showing that preserving a historical link after its owning workflow relation is explicitly removed creates stale or harmful state"
+      ],
+      "evidence_boundary": "Zammad issue #6418 is a receiver-owned product specification split from #6348. Its acceptance criteria preserve linked answers before suggested answers and keep linked answers available when suggestions are off, loading, or failed. The earlier #6348 discussion contains a Nakagawa Master contribution articulating this distinction. This bounded chain supports a receiver-owned specification-carry claim; it does not establish implementation, merge, release, broad user effect, explicit person-Origin rereference in #6418, or whole-theory adoption."
     }
   ],
   "evidence_boundary": [
