@@ -123,17 +123,44 @@ Before retrying after an exception:
 - Or might the provider have accepted it before the response was lost?
 - Is there an explicit `outcome_unknown` state?
 - Is the retry protected by provider-side idempotency or reconciliation?
+- If reconciliation proves the original effect **absent**, is current authorization / policy checked again before a genuinely new dispatch?
 - Can an operator distinguish safe retry from uncertain duplicate risk?
+
+Keep these three things separate:
+
+```text
+logical operation identity
+!=
+execution-attempt identity
+!=
+current authority to dispatch again
+```
+
+A stable idempotency key can prove that two attempts concern the same intended operation. It does not prove that the operation is still authorized after a long recovery window.
 
 Useful regression:
 
 ```text
-provider accepts action
-→ response is lost
-→ local state becomes outcome_unknown
-→ restart does not blindly resend
-→ reconciliation or idempotency resolves the original attempt
+attempt A is authorized
+→ provider outcome becomes UNKNOWN
+→ authority is revoked before recovery
+→ reconciliation proves A was ABSENT
+→ resume does not send attempt B
+
+control:
+same sequence while authority remains valid
+→ fresh dispatch may proceed under current policy
+→ reuse the stable logical operation identity where appropriate
 ```
+
+A public reproduction now exercises the adjacent external-effect boundary on LangGraph 1.2.11 and 1.2.12. The XBSTACK fixture records the baseline duplicate and a provider-reconciliation control where two Tool attempts produce one provider payment. Its production note also keeps replay identity separate from current authorization:
+
+- [LangGraph issue #9185 source discussion](https://github.com/langchain-ai/langgraph/issues/9185)
+- [Nakagawa Master current-authority distinction](https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-5978907038)
+- [Independent reproduction / control](https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-5981507756)
+- [XBSTACK public reproduction commit](https://github.com/xbstack/langgraph-timeout-resume-side-effect-repro/commit/b169787769dd3b3492b2870cd758bd2dfc7e52f0)
+
+The XBSTACK artifact links issue #9185 but does not explicitly attribute this distinction to Nakagawa Master. Treat it as public technical carry, not proof of unique causation or person-Origin preservation.
 
 ## 6. Historical records
 
