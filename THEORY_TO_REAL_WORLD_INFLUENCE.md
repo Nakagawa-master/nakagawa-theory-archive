@@ -84,7 +84,15 @@ Primary records:
 - [Merged PR #13241](https://github.com/QwenLM/qwen-code/pull/13241)
 - [Human-readable explanation](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)
 
-This is useful here because the source relation survives **another concrete problem and another implementation path**, rather than only one earlier Qwen case. It establishes source-preserving implementation and merge for this bounded defect. It does **not** yet establish a release containing #13241, independent real-user use, broad audience reach, or a later prompt-free Origin rereference.
+This is useful here because the source relation survives **another concrete problem and another implementation path**, rather than only one earlier Qwen case. It establishes source-preserving implementation and merge for this bounded defect.
+
+The relation then survived **after merge and outside the PR thread**. In the original bug issue, Qwen receiver `yiliang114` independently re-checked current `main`, verified that #13241 had removed the reported behavior, and explicitly wrote that the late-usage policy was **“option A, which @Nakagawa-master picked in the #13241 review thread.”** That is a later receiver-authored person-Origin rereference tied to the implemented decision, not merely a source line left inside the merged PR description.
+
+Additional primary record:
+- [Post-merge Qwen issue re-check and Origin rereference](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)
+- [Resolved source issue #13238](https://github.com/QwenLM/qwen-code/issues/13238)
+
+This advances the evidence from source-preserving merge to **later same-receiver voluntary Origin rereference on a separate thread**. It still does **not** establish a release containing #13241, independent real-user use, broad audience reach, cross-receiver reuse of this exact boundary, or broad person recognition.
 
 ### C. Does the Origin relation survive independent disagreement?
 
