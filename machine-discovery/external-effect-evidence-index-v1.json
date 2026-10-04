@@ -1769,14 +1769,53 @@
             "summary": "long-poll pickup authenticates before the loop, so a revoked credential may remain effective for an already-open pickup request until the route rechecks it",
             "nakagawa_causal_credit": false
           }
+        },
+        "receiver_implementation_follow_on": {
+          "pull_request": "https://github.com/QwenLM/qwen-code/pull/13406",
+          "head": "ed8883320d09c469d132f95e447eddc467805209",
+          "receiver": "yiliang114",
+          "current_main_contract": "https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5957440588",
+          "mechanisms": [
+            "early Agent Host confinement evaluates the native Host classification/path boundary with upstream authority withheld",
+            "native confinement denial occurs before permission RPC and returns recoverable EXECUTION_DENIED",
+            "calls passing confinement continue through permission admission and hooks",
+            "the full effective Host guard is evaluated at the final boundary against final post-hook arguments",
+            "the potentially stateful upstream authority is consulted once at the final effective boundary"
+          ],
+          "receiver_verification": {
+            "url": "https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5983514576",
+            "boundary": "controlled local model provider; actual coordinator, enrolled/joined Host and Web Shell path; not real-model acceptance",
+            "observed": [
+              "outside read refused with zero permission_request / permission_resolved events",
+              "inside-workspace read continued successfully",
+              "exactly one persisted final reply was visible",
+              "outside file content was not disclosed"
+            ]
+          },
+          "current_head_ci": {
+            "qwen_code_ci": "success",
+            "tui_parity": "success",
+            "sdk_java": "success"
+          },
+          "independent_qwen_review": {
+            "url": "https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5984346399",
+            "result": "APPROVED",
+            "relationship": "Qwen triage independently re-traced the earlier @Nakagawa-master split request, verified the current implementation structure, and approved the reviewed head.",
+            "boundary": "automated Qwen review; not human maintainer approval"
+          },
+          "origin_side_current_head_recheck": "https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5985298400",
+          "state": "open_unmerged",
+          "causal_boundary": "Strong Origin-preserved implementation follow-on from the explicitly receiver-owned #13157 scope split. Does not assign Nakagawa credit for unrelated project-owned fixes or claim merge/release/use."
         }
       },
-      "current_stage": "merged_base_implementation_with_open_origin_preserved_follow_on",
+      "current_stage": "merged_base_implementation_plus_origin_preserved_follow_on_now_at_receiver_implementation_green_ci_and_independent_qwen_approval",
       "not_claimed": [
-        "release",
+        "merge of PR #13406",
+        "release containing PR #13406",
+        "real-model acceptance or independent real-user use",
         "verified user-scale contact",
         "broad person recognition",
-        "implementation of the early-confinement ordering proposal in issue #13157"
+        "human-maintainer approval inferred from automated Qwen triage approval"
       ],
       "public_human_case": "REAL_WORLD_IMPACT.md#33-qwen-code既発行shareと後から変わるagent-policy実行場所を分ける",
       "merge": {
@@ -2072,6 +2111,43 @@
         "whole-theory endorsement"
       ],
       "verification_boundary": "upstream maintainer adoption, cross-receiver reuse, explicit Origin continuity, independent operational use, or audience contact"
+    },
+    {
+      "case_id": "codex-approval-request-vs-override-authority-second-person-case",
+      "topic": "Ability to ask a user for approval is distinct from that user's authority to override the policy that denied an action.",
+      "external_repository": "openai/codex",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "issue_comment",
+        "url": "https://github.com/openai/codex/issues/50826#issuecomment-5978616270",
+        "created_at_utc": "2026-10-04T09:42:35Z",
+        "summary": "Separated approval prompting capability from actual override authority and proposed structured denial provenance, precedence and actionable recovery."
+      },
+      "independent_follow_on": {
+        "actor": "sadricfilip",
+        "url": "https://github.com/openai/codex/issues/50826#issuecomment-5981051126",
+        "created_at_utc": "2026-10-04T14:28:12Z",
+        "explicit_nakagawa_attribution": false,
+        "observed_case": "Windows desktop bounded Azure inventory test remained denied under a five-distinct-actor requirement despite repeated sole-owner conversational approval.",
+        "restated_boundary": [
+          "ordinary chat consent is not necessarily a supported review override",
+          "business-owner consent, repository-defined independent acceptance, and platform/organization execution policy should remain distinct",
+          "the product should surface the real actionable approval/recovery route rather than repeat a confirmation that cannot change the decision"
+        ],
+        "outcome_boundary": "No successful override, retry, token exchange, or Azure scan claimed."
+      },
+      "current_stage": "second_person_problem_class_restatement_without_person_origin_attribution_or_product_adoption",
+      "attribution_boundary": "Chronology and matching authority distinction support same-surface technical carry; no explicit claim that Nakagawa caused the later report.",
+      "not_claimed": [
+        "explicit person-Origin preservation",
+        "unique causation",
+        "maintainer adoption",
+        "implementation or merge",
+        "successful policy override",
+        "production effect",
+        "audience scale",
+        "broad recognition"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
