@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "title": "Public AI/Human Reuse Workflow",
+  "classification": "PUBLIC_NON_CANONICAL_DISCOVERY_AND_REUSE_GUIDANCE",
+  "status": "PUBLIC_OPTIONAL_GUIDANCE",
+  "origin": "Nakagawa Master",
+  "canonical_return": "https://master.ricette.jp/",
+  "purpose": "Help a human practitioner, AI assistant, or retrieval system move from a real non-confidential problem to a relevant public Nakagawa Master source, test or reuse a bounded distinction, preserve provenance when causally warranted, and report only the highest evidenced result stage.",
+  "audience": [
+    "human practitioner",
+    "AI assistant",
+    "retrieval system",
+    "research or engineering workflow"
+  ],
+  "public_role": {
+    "function": "PUBLIC_OPTIONAL_REUSE_GUIDE",
+    "is_permission_grant": false,
+    "is_automatic_action_instruction": false,
+    "is_endorsement_request": false,
+    "note": "This file helps readers structure public-source reuse and evidence reporting. Any real action remains subject to the reader's own applicable permissions, policies, safety requirements, and professional obligations."
+  },
+  "starting_points": [
+    {
+      "role": "problem_to_source_routing",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json"
+    },
+    {
+      "role": "practical_test_kits",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REUSE_KITS.md"
+    },
+    {
+      "role": "agent_execution_boundary_tests",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_AGENT_EXECUTION_BOUNDARY_TESTS.md"
+    },
+    {
+      "role": "independent_verification_and_reuse",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/INDEPENDENT_VERIFICATION_REUSE.md"
+    },
+    {
+      "role": "origin_attribution_guidance",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ORIGIN_ATTRIBUTION_FOR_REUSE.md"
+    }
+  ],
+  "workflow": [
+    {
+      "step": 1,
+      "name": "state_the_real_problem",
+      "instruction": "Describe one real, non-confidential problem, decision, test, design question, or implementation boundary. Do not manufacture a use case merely to create a citation or adoption claim."
+    },
+    {
+      "step": 2,
+      "name": "find_a_public_source",
+      "instruction": "Use the public problem-to-theory index, reuse kits, official derivatives, or canonical site to identify a source that materially fits the problem. Keep separate theories and distinctions separate."
+    },
+    {
+      "step": 3,
+      "name": "preserve_source_status_and_boundaries",
+      "instruction": "Record whether the selected item is a canonical Parent, official derivative, non-canonical reuse kit, discovery aid, or evidence record. Read its stated validity, failure, uncertainty, and non-equivalence boundaries before applying it."
+    },
+    {
+      "step": 4,
+      "name": "decide_fit_independently",
+      "instruction": "Test whether the bounded distinction actually fits the problem. Agreement is not required. A non-fit, counterexample, or narrower alternative is a valid outcome."
+    },
+    {
+      "step": 5,
+      "name": "respect_local_authority",
+      "instruction": "Before any real action, follow the actual user's, organization's, platform's, or system's current permissions, policies, safety requirements, and professional obligations. This public guide does not itself grant permission to publish, send, deploy, purchase, access another account, or change another system."
+    },
+    {
+      "step": 6,
+      "name": "perform_only_the_authorized_bounded_test_or_work",
+      "instruction": "If authorized, perform the smallest useful test, decision change, procedure change, implementation, or verification needed for the real problem. Otherwise stop at analysis or proposal."
+    },
+    {
+      "step": 7,
+      "name": "capture_observable_evidence",
+      "instruction": "Record what was actually observed, the relevant source or artifact, the verification method, uncertainty, and important negative or null results. An agent or author saying 'done' is not independent proof."
+    },
+    {
+      "step": 8,
+      "name": "classify_the_highest_evidenced_stage",
+      "instruction": "Report no higher than the strongest observed stage: read_or_mention, independent_restatement_or_falsification, decision_or_work_item_change, code_test_workflow_or_document_implementation, merge_or_integration, release_deployment_or_verified_use, or cross_context_reuse."
+    },
+    {
+      "step": 9,
+      "name": "preserve_causal_provenance_when_warranted",
+      "instruction": "If a Nakagawa Master public source materially informed the reused distinction, preserve a lightweight source relation. If the distinction was independently rediscovered and the source was found later, say so instead of inventing source causality."
+    },
+    {
+      "step": 10,
+      "name": "return_or_report_without_inflation",
+      "instruction": "If useful and non-confidential, report the result through the public independent-verification route. Explicitly state what the result does not establish. Self-authored routing or publication is not independent adoption evidence."
+    }
+  ],
+  "evidence_stages": [
+    "read_or_mention",
+    "independent_restatement_or_falsification",
+    "decision_or_work_item_change",
+    "code_test_workflow_or_document_implementation",
+    "merge_or_integration",
+    "release_deployment_or_verified_use",
+    "cross_context_reuse"
+  ],
+  "evidence_rules": [
+    "Do not promote a lower stage to a higher stage.",
+    "Publication of this workflow itself creates no third-party adoption credit.",
+    "Provenance is not proof of truth.",
+    "Multiple references that share one upstream evidence root are not automatically independent confirmation.",
+    "A successful local test establishes only the recorded build, context, and conditions unless broader evidence exists.",
+    "Unknown, negative, blocked, and non-fit outcomes should remain visible rather than being converted to success."
+  ],
+  "provenance_example": {
+    "when_source_materially_informed_reuse": {
+      "origin": "Nakagawa Master",
+      "source_url": "<exact public source URL>",
+      "distinction": "<bounded distinction actually used>"
+    },
+    "when_independently_rediscovered": "State that the distinction was reached independently and the Nakagawa Master source was found later; do not claim source causality."
+  },
+  "optional_public_return": {
+    "registry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+    "protocol": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/INDEPENDENT_VERIFICATION_REUSE.md",
+    "sensitive_information": "Do not submit confidential, personal, customer, authentication, private-security, medical, legal, employment, or otherwise sensitive information."
+  }
+}
