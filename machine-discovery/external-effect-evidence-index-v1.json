@@ -1947,6 +1947,71 @@
         "audience scale",
         "broad person recognition"
       ]
+    },
+    {
+      "case_id": "memberjunction-compose-email-shared-surface-privacy",
+      "topic": "local compose-user disclosure versus shared Slack/Teams conversation disclosure",
+      "external_repository": "MemberJunction/MJ",
+      "origin_action": {
+        "type": "pull_request_review",
+        "url": "https://github.com/MemberJunction/MJ/pull/4568#pullrequestreview-5256077986",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action",
+        "summary": "Separated metadata that is safe to show beside a local compose action from metadata that is safe to disclose on a shared or retained Slack/Teams conversation surface; proposed default redaction of recipient and subject without an explicit trusted visibility signal."
+      },
+      "third_party_response": {
+        "actor": "cmbrock-BC",
+        "url": "https://github.com/MemberJunction/MJ/pull/4568#issuecomment-5762411184",
+        "relationship": "PR author explicitly agreed that the two surfaces have different audiences and reported implementing the boundary."
+      },
+      "implementation": {
+        "verified": true,
+        "commit": "5a4e67c245",
+        "changes": [
+          "Slack and Teams fallback notes keep the route back to MJ Explorer while omitting recipient and subject",
+          "no private-context metadata exception is inferred where the adapters expose no trusted visibility signal",
+          "regressions use a private recipient and sensitive subject and require both to stay absent on channel rendering"
+        ],
+        "evidence_url": "https://github.com/MemberJunction/MJ/pull/4568#issuecomment-5762411184"
+      },
+      "independent_review": {
+        "actor": "rkihm-BC",
+        "url": "https://github.com/MemberJunction/MJ/pull/4568#pullrequestreview-5359356208",
+        "relationship": "A separate reviewer later marked the Nakagawa-master shared-surface disclosure finding fixed while approving the PR after local build/test and adversarial checks."
+      },
+      "merge": {
+        "claimed": true,
+        "merged_at": "2026-10-01T02:53:30Z",
+        "commit": "f555162ce0b8564fe0bc8eae77a72f18177ba5d3",
+        "pull_request": "https://github.com/MemberJunction/MJ/pull/4568"
+      },
+      "prerelease": {
+        "tag": "v6.2.0-edge.2",
+        "published_at": "2026-10-03T21:35:08Z",
+        "tag_commit": "cc2d1ab3ca89ab6acfc9b2a13c0c41d455c5a54c",
+        "lineage_check": "merge commit is an ancestor of the tag commit; tag is 812 commits ahead and 0 behind",
+        "release_notes_relation": "release notes explicitly list PR #4568 and its compose:email actionable-command title"
+      },
+      "current_stage": "third_party_response_implementation_independent_approval_merge_and_prerelease_inclusion",
+      "not_claimed": [
+        "stable release",
+        "production deployment",
+        "verified end-user use of the changed shared-surface behavior",
+        "independent downstream reuse",
+        "meaningful human audience scale",
+        "prompt-free later person-Origin re-reference",
+        "broad person recognition",
+        "whole-theory endorsement"
+      ],
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "safe disclosure to the composing user != safe disclosure to every participant on a shared messaging surface",
+        "canonical_context": [
+          "audience-bound authority",
+          "information disclosure boundaries",
+          "surface-specific consequence control"
+        ],
+        "canonical_source": "https://master.ricette.jp"
+      }
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
