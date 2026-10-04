@@ -324,6 +324,27 @@
         "counterexample showing that preserving a historical link after its owning workflow relation is explicitly removed creates stale or harmful state"
       ],
       "evidence_boundary": "Zammad issue #6418 is a receiver-owned product specification split from #6348. Its acceptance criteria preserve linked answers before suggested answers and keep linked answers available when suggestions are off, loading, or failed. The earlier #6348 discussion contains a Nakagawa Master contribution articulating this distinction. This bounded chain supports a receiver-owned specification-carry claim; it does not establish implementation, merge, release, broad user effect, explicit person-Origin rereference in #6418, or whole-theory adoption."
+    },
+    {
+      "id": "Q-approval-request-vs-override-authority",
+      "distinction": "ability to ask an actor for approval != that actor's authority to override the policy that denied the action",
+      "external_problem_example": "https://github.com/openai/codex/issues/50826",
+      "origin_intervention": "https://github.com/openai/codex/issues/50826#issuecomment-5978616270",
+      "test": "Find a real non-confidential approval, sandbox, policy, workflow, deployment, data-access, governance, or agent-execution system where an action is denied by one policy source while the interface or agent can still ask a user/operator to approve it. Exercise at least three policy classes: one the requested approver is allowed to override, one only a stronger administrator/platform authority can override, and one whose provenance or precedence is initially unknown. Verify that the system requests approval only when that actor can perform a defined authority transition, and otherwise returns a stable non-looping denial with the actual supported recovery path.",
+      "positive_evidence": [
+        "each denial exposes a stable policy-source class or equivalent provenance sufficient to distinguish repository/user guidance from administrator/platform enforcement",
+        "the decision is bound to a policy version, digest, or other identity so retries can detect that the governing authority surface changed",
+        "when the current approver is authorized to override, approval is scoped to the exact action and material arguments or destination and causes one real state transition rather than another identical prompt",
+        "when the current approver cannot override, the system does not repeatedly solicit the same approval and instead reports the required authority class or supported recovery path",
+        "unknown provenance degrades to an explicit unknown or review-required state rather than being presented as if another conversational confirmation will necessarily unblock execution",
+        "material action mutation after an approval requires a new decision even when the same policy source remains active"
+      ],
+      "useful_negative_evidence": [
+        "proof that every policy surfaced by the approval UI is intentionally user-overridable and the UI itself is the authoritative override mechanism",
+        "proof that all denials are platform-terminal and the product never claims user approval can affect them, making a separate override-authority distinction unnecessary",
+        "counterexample showing that exposing policy provenance would itself create an unacceptable security leak, together with an alternative stable machine-readable recovery class that still prevents repeated unsatisfiable prompts"
+      ],
+      "evidence_boundary": "OpenAI Codex issue #50826 is a live external problem report. Nakagawa Master posted a theory-derived contract on that issue separating approval-prompt availability from override authority and suggesting structured policy provenance/precedence plus regression cases. This challenge is a self-authored portability bridge created from that public problem surface. It is not evidence that OpenAI or another receiver adopted the distinction, implemented it, merged a fix, released it, or attributed any later work to Nakagawa Master."
     }
   ],
   "evidence_boundary": [
