@@ -2,7 +2,7 @@
 
 Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**Last checked: 2026-10-01**
+**Last checked: 2026-10-04**
 
 Nakagawa Master is the pen name of Keisuke Nakagawa. On social media, the name “マスター” (“Master”) is also used; some external posts use “MasterJP.”
 
@@ -1132,3 +1132,28 @@ Nakagawa-master re-checked current head `cfbbc91244` and reported no remaining b
 
 **Publicly verifiable here:** atomicity review → receiver code/test change → exact regression → focused re-check → continuing return from the same receiver → secret-strength boundary explicitly accepted and implemented → a third provenance/control-path boundary explicitly accepted and implemented with an operational regression → focused current-head re-check closed that scope.  
 **Not established here:** merge/release of PR #61982, production use, user scale, broad person recognition, or exclusive causality for the whole PR.
+---
+
+## 35. Qwen Code | A terminalized attempt no longer keeps budget-affecting write authority
+
+**Surface:** [QwenLM/qwen-code PR #13241](https://github.com/QwenLM/qwen-code/pull/13241)  
+**Current state:** merged on 2026-10-04 at [35616f3b](https://github.com/QwenLM/qwen-code/commit/35616f3b643f6d87cc00112d961a0fbb448aca00); a release containing this merge and real-user use are not yet verified.
+
+A distributed Host can finish late after its run has already been cancelled or recovered. Refusing the late answer is not enough if the late report can still write token usage into the same budget ledger that controls current work. A supposedly passive observation can still stop unrelated work if downstream admission or cancellation logic reads it.
+
+Nakagawa Master proposed the narrower boundary that terminal settlement ends the old attempt's budget-affecting write authority. If late physical usage still needs to be recorded, that observation should be designed separately from the execution budget rather than silently regaining control over current work.
+
+- [Nakagawa-master option-A technical recommendation](https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172301736)
+- [attribution clarification](https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172530358)
+- [receiver implementation commit](https://github.com/QwenLM/qwen-code/commit/bb5c5d74b7368610a7dd20d0af532f36ad335fe2)
+- [receiver Web Shell + native Host verification](https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5970236028)
+- [merged PR #13241](https://github.com/QwenLM/qwen-code/pull/13241)
+
+The receiver's own PR description explicitly says that the current revision implements “the option-A recommendation from @Nakagawa-master” and separately clarifies that this was an external technical recommendation, not repository-maintainer authority. The implementation persists a receipt only for an actually accepted result, rejects late results after recovery/cancellation as stale, and prevents those terminalized attempts from mutating budget-accounted usage. The receiver also reported actual Web Shell and native Host checks covering normal acceptance/replay, cancellation, natural lease recovery, and a real queued Stop action. Human reviewer qqqys approved the current head before merge.
+
+**Publicly verifiable here:** scoped external technical recommendation → receiver code/tests → actual Web Shell + native Host verification → receiver-side explicit source continuity → human review → merge.  
+**Not established here:** a nightly or stable release containing the merge, independent real-user use, recurring later Origin re-reference, audience scale, or adoption of the whole Nakagawa theory system.
+
+→ [Human-readable entry](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)  
+→ [Current-Authority Reuse Kit §17](CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work)
+
