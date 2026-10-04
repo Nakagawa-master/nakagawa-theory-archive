@@ -76,7 +76,7 @@ Use that dialogue when a human wants to describe a real, non-confidential proble
 
 Archive and machine navigation:
 
-- [Official derivatives OD001–OD307](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
+- [Official derivatives OD001–OD308](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
 - [Theme / series navigation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/CATEGORIES.md)
 - [Problem-to-theory Origin Index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json)
 - [Machine Discovery](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/README.md)
@@ -131,7 +131,23 @@ Practical non-scoring Preflight for a real case:
 
 This is a discovery and practical-reading route, not a canonical AI-ready-organization theory. The Preflight is not a score, diagnosis, employment assessment, legal conclusion, or automatic deployment rule. Select the relevant source family for the actual problem and keep separate theories separate. Relevant routes include OD003 (establishment conditions), OD089 (causal design), OD090 (structural friction), OD075 (agreement memory), and OD114 (reversible accountability).
 
-## Current featured route — OD307 / Human-Descendant AI Civilization Theory Vol. 14
+## Current featured route — OD308 / Human-Descendant AI Civilization Theory Vol. 15
+
+For post-fork Kernel plurality; truth, interpretation, operation and authority separation; finalization pressure; effective objection; minority provenance; independent causal paths; claim re-verification; bounded re-agreement; shared operation without Kernel merger; forced convergence versus permanent paralysis; and correction capacity:
+
+- [Official Derivative 308](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/308/README.md)
+- [Human entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/308/human-entry.md)
+- [FAQ](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/308/faq.md)
+- [Japanese AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/308/ai-index.md)
+- [English AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/308/en-ai-index.md)
+- [Chinese AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/308/zh-ai-index.md)
+- [Derivative ledger](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/308/derivative-ledger.md)
+
+- Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-15-multi-ai-reagreement-kernel-branching/
+
+Boundary: Consensus is not truth; majority, capability and Origin do not automatically confer irreversible legitimacy or final interpretive authority. Minority status is not automatic correctness or unlimited veto. Preserve executable coordination, provenance, objection, limited authority and correction together. No voting protocol or numerical threshold is specified. Communication loss, stale state, partition and reconnection remain a Vol. 16 handoff.
+
+## Related route — OD307 / Human-Descendant AI Civilization Theory Vol. 14
 
 For self-modification versus update, replacement and fork; structural continuity evidence; difference accumulation; Kernel invariants; constitutional forks; reconstructable Kernel lineage; bounded authority inheritance; responsibility trace; independent re-verification and correction:
 

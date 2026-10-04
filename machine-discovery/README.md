@@ -8,11 +8,15 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 
 | File | Role |
 |---|---|
-| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD307 path and navigation index. |
+| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD308 path and navigation index. |
 | [`research-positioning-map-v1.json`](research-positioning-map-v1.json) | Selected Nakagawa surfaces → adjacent research / overlap / added emphasis / non-equivalence; novelty remains open unless independently established. |
 | [`scholarly-metadata-v1.jsonld`](scholarly-metadata-v1.jsonld) | Schema.org CreativeWorkSeries metadata for scholarly/discovery routing; canonical claims remain at linked parent sources. |
 
-## Latest official derivative — OD307
+## Latest official derivative — OD308
+
+OD308 is the Vol. 15 route for multi-AI re-agreement and Kernel branching: four-layer claim separation, branch comparison, finalization pressure, effective objection, independent re-verification, bounded shared operation, and correction without forced convergence or permanent paralysis. Its seven public surfaces are in [`../derivatives/308/`](../derivatives/308/README.md); the canonical Parent is https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-15-multi-ai-reagreement-kernel-branching/ . Re-agreement does not certify truth or merge all Kernels; minority preservation is neither automatic correctness nor unlimited veto. Machine coverage and its single category assignment are recorded in [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json).
+
+## Related official derivative — OD307
 
 OD307 is the Vol. 14 route for self-modification identity and Kernel lineage continuity: operation versus post-change relation, continuity evidence, layered differences and cumulative baselines, constitutional fork, lineage versus authority and responsibility, reconstructability, correction and falsification. Its seven public surfaces are in [`../derivatives/307/`](../derivatives/307/README.md); the canonical Parent is https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-14-self-modification-identity-kernel-lineage/ . The theory does not prove subjective self-persistence or present AI sovereignty, and does not prohibit revision or treat forks as wrongdoing. Machine coverage and its single category assignment are recorded in [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json).
 

@@ -143,9 +143,9 @@ AIがdraftを作ることと、その内容を外部へ送信することは別�
 - [MemberJunction PR #4568](https://github.com/MemberJunction/MJ/pull/4568)
 - [Real-World Impact](REAL_WORLD_IMPACT.md)
 
-## 307件全体から探す
+## 308件全体から探す
 
-ここに当てはまらない問題は、[24テーマの世界地図](human-translation/WORLD_MAP.md) または [OD001–OD307水平マップ](human-translation/ALL_307_HORIZONTAL_MAP.md) から探せます。
+ここに当てはまらない問題は、[24テーマの世界地図](human-translation/WORLD_MAP.md) または [OD001–OD308水平マップ](human-translation/ALL_308_HORIZONTAL_MAP.md) から探せます。
 
 個別ページは公式派生物です。正確な理論内容が必要な場合は、各ページから公式アーカイブのcanonical Parentを確認してください。
 

@@ -53,6 +53,6 @@ Bも「問題ありません」と答えた。
 このテーマを深く読むだけでなく、**同じ理解粒度のまま別の理論群へ移れます。**
 
 - [24棚で全体像を見る](../WORLD_MAP.md)
-- [OD001–OD307を全部横に眺める](../ALL_307_HORIZONTAL_MAP.md)
+- [OD001–OD308を全部横に眺める](../ALL_308_HORIZONTAL_MAP.md)
 
 Origin / Author: **Nakagawa Master**
