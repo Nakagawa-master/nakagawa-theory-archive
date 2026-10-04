@@ -1962,7 +1962,7 @@
         "clarification": "https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172530358",
         "meaning": "The recommendation was originally scoped as an external technical recommendation rather than a repository-maintainer ruling. Merge integrates the implementation, and the later receiver issue re-check explicitly attributes the implemented option-A decision to @Nakagawa-master; this does not imply repository-wide endorsement of a larger theory."
       },
-      "current_stage": "third_party_implementation_merged_with_actual_receiver_ui_native_runtime_verification_and_later_same_receiver_origin_rereference",
+      "current_stage": "third_party_implementation_merged_with_actual_receiver_ui_native_runtime_verification_later_same_receiver_origin_rereference_and_public_prerelease_distribution",
       "reusable_check": "CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work",
       "machine_reuse_challenge": {
         "file": "machine-discovery/independent-reuse-challenges-v1.json",
@@ -1974,7 +1974,8 @@
         "boundary": "Lineage continuity does not automatically inherit present authority; non-canonical implementation translation."
       },
       "not_claimed": [
-        "nightly or stable release containing PR #13241",
+        "stable release containing PR #13241",
+        "verified downstream operational or independent end-user use from the prerelease",
         "verified downstream operational or user use",
         "late physical-spend accounting completeness",
         "independent adoption of this reuse kit",
@@ -1992,13 +1993,28 @@
         "head": "2d438dbbcfa5e8fe98846ea6731b13c890ac6573",
         "claim_boundary": "Repository merge establishes integration of the implementation at the merged head. It is not claimed as a separate explicit maintainer statement endorsing every semantic framing in the review discussion."
       },
-      "verification_boundary": "nightly/stable release inclusion, downstream operational use, cross-receiver reuse of this exact boundary, independent audience contact, or broader recurring person-Origin return",
+      "verification_boundary": "stable release inclusion, downstream operational or independent user use, cross-receiver reuse of this exact boundary, independent audience contact, or broader recurring person-Origin return",
       "post_merge_origin_rereference": {
         "actor": "yiliang114",
         "url": "https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808",
         "surface": "original_bug_issue_after_pr_merge",
         "relationship": "Receiver independently re-checked current main after merge, verified the fixed receipt and terminal late-usage behavior, and explicitly stated that the implemented late-usage policy was option A picked by @Nakagawa-master in the #13241 review thread.",
         "evidence_class": "later_same_receiver_voluntary_person_origin_rereference_tied_to_implemented_decision"
+      },
+      "distribution": {
+        "type": "public_prerelease_nightly",
+        "release_tag": "v0.24.7-nightly.20261004.9915c7ff8f",
+        "release_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7-nightly.20261004.9915c7ff8f",
+        "published_at_utc": "2026-10-04T22:14:03Z",
+        "github_prerelease": true,
+        "inclusion_proof": {
+          "base_merge_commit": "35616f3b643f6d87cc00112d961a0fbb448aca00",
+          "compare_status": "ahead",
+          "ahead_by": 26,
+          "behind_by": 0,
+          "merge_base_equals_base_merge_commit": true
+        },
+        "evidence_boundary": "Public nightly/prerelease inclusion is established. Stable-release inclusion and independent real-user use are not established."
       }
     },
     {
