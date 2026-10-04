@@ -2026,6 +2026,52 @@
         ],
         "canonical_source": "https://master.ricette.jp"
       }
+    },
+    {
+      "case_id": "langgraph-replay-identity-current-execution-authority",
+      "topic": "A stable logical action identity and a proven-absent prior effect do not automatically authorize a fresh external dispatch after recovery.",
+      "external_repository": "langchain-ai/langgraph",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "issue_comment",
+        "url": "https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-5978907038",
+        "causal_role": "public_source_action",
+        "summary": "Separated logical action identity, execution-attempt identity, and current execution authority; proposed re-checking current authorization after reconciliation proves the prior effect absent."
+      },
+      "third_party_response": {
+        "actor": "1320800521",
+        "first_reproduction": "https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-5981507756",
+        "later_restatement": "https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-5981790977",
+        "relationship": "Participant independently reproduced the duplicate-side-effect boundary and restated that current authorization should be re-checked after an absent result before a genuinely new dispatch.",
+        "explicit_nakagawa_attribution": false
+      },
+      "receiver_owned_public_artifact": {
+        "repository": "https://github.com/xbstack/langgraph-timeout-resume-side-effect-repro",
+        "commit": "https://github.com/xbstack/langgraph-timeout-resume-side-effect-repro/commit/b169787769dd3b3492b2870cd758bd2dfc7e52f0",
+        "commit_sha": "b169787769dd3b3492b2870cd758bd2dfc7e52f0",
+        "committed_at_utc": "2026-10-04T14:39:21Z",
+        "chronology": "The public artifact update occurred after the Nakagawa issue comment at 2026-10-04T10:12:52Z and before the participant's issue responses.",
+        "mechanisms": [
+          "LangGraph 1.2.12 HTTP-provider fixture reproduces one requested payment becoming two provider writes after timeout and same-thread resume.",
+          "Provider-reconciliation control separates Tool attempt count from stable business-operation identity.",
+          "Recorded fixture reports two Tool attempts and one provider payment.",
+          "README production interpretation states that replay identity and current authorization are separate and recommends re-checking current policy or approval after reconciliation proves absence."
+        ],
+        "verification_result": "https://github.com/xbstack/langgraph-timeout-resume-side-effect-repro/blob/main/results/verification.json"
+      },
+      "current_stage": "third_party_reproduction_and_receiver_owned_public_technical_artifact_carry_without_person_origin_attribution",
+      "attribution_boundary": "Chronology, explicit issue #9185 linkage, and matching technical restatement support technical-carry evidence. They do not establish unique causation or explicit person-Origin preservation.",
+      "not_claimed": [
+        "explicit attribution to Nakagawa Master in the XBSTACK artifact",
+        "unique causation of the XBSTACK update",
+        "upstream LangGraph implementation or maintainer adoption",
+        "merge or release in LangGraph",
+        "independent production use",
+        "audience scale",
+        "broad person recognition",
+        "whole-theory endorsement"
+      ],
+      "verification_boundary": "upstream maintainer adoption, cross-receiver reuse, explicit Origin continuity, independent operational use, or audience contact"
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
