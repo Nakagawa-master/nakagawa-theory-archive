@@ -624,7 +624,7 @@ AIに仕事を任せる仕組みでも、似た問題が起きます。
 
 ### Qwen Codeでは、実装と検証まで進んでいる
 
-この境界は、Qwen Codeの公開[issue #13238](https://github.com/QwenLM/qwen-code/issues/13238)で具体的な不具合として確認され、[PR #13241](https://github.com/QwenLM/qwen-code/pull/13241)で修正が進んでいます。
+この境界は、Qwen Codeの公開[issue #13238](https://github.com/QwenLM/qwen-code/issues/13238)で具体的な不具合として確認され、[PR #13241](https://github.com/QwenLM/qwen-code/pull/13241)で修正され、2026年10月4日にmainへ統合されました。
 
 まず、受理済みの結果を示す記録が追加され、**本当に一度受理した結果の再送**と、**終了後に届いた古い結果**を分ける形になりました。
 
@@ -660,9 +660,9 @@ receiver側の[検証報告](https://github.com/QwenLM/qwen-code/pull/13241#issu
 
 ### 確認できている範囲
 
-PR #13241はこの確認時点で未マージです。Nakagawa Masterの技術的推奨はリポジトリのmaintainer判断ではなく、その区別は[公開threadでも明示](https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172530358)されています。
+PR #13241は2026年10月4日に[merge commit 35616f3b](https://github.com/QwenLM/qwen-code/commit/35616f3b643f6d87cc00112d961a0fbb448aca00)でmainへ統合されました。receiver自身のPR説明でも、現在の実装が **@Nakagawa-masterの外部技術提案** に基づくことが明記され、repository maintainerの裁定とは別であることも明確にされています。current headは人間reviewer qqqys のAPPROVEを経ています。
 
-したがって、ここで確認できるのはreceiver側の実装・test・runtime検証までです。merge、release、実利用、利用者規模、Qwen Code全体による理論採用までは主張しません。
+したがって、ここで確認できるのはreceiver側の実装・test・Web Shell / native Host検証・明示的なsource continuity・人間review・mergeまでです。これを含むrelease、独立した実利用、利用者規模、後日の自発的なOrigin再言及、Qwen Code全体による理論採用までは主張しません。
 
 具体的な検証条件は[Current-Authority Reuse Kit 第17節](CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work)へ。過去から続く系譜と現在の権限を分ける考え方は、[OD307の人間向け要約](derivatives/307/human-entry.md)と[親原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-14-self-modification-identity-kernel-lineage/)へ戻れます。
 
