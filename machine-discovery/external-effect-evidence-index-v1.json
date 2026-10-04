@@ -1921,9 +1921,9 @@
       },
       "authority_boundary": {
         "clarification": "https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172530358",
-        "meaning": "External contributor recommendation, not a repository-maintainer ruling; maintainer ratification remains pending."
+        "meaning": "The recommendation was originally scoped as an external technical recommendation rather than a repository-maintainer ruling. Merge integrates the implementation, and the later receiver issue re-check explicitly attributes the implemented option-A decision to @Nakagawa-master; this does not imply repository-wide endorsement of a larger theory."
       },
-      "current_stage": "third_party_implementation_merged_with_actual_receiver_ui_and_native_runtime_verification",
+      "current_stage": "third_party_implementation_merged_with_actual_receiver_ui_native_runtime_verification_and_later_same_receiver_origin_rereference",
       "reusable_check": "CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work",
       "machine_reuse_challenge": {
         "file": "machine-discovery/independent-reuse-challenges-v1.json",
@@ -1938,11 +1938,11 @@
         "nightly or stable release containing PR #13241",
         "verified downstream operational or user use",
         "late physical-spend accounting completeness",
-        "explicit maintainer semantic endorsement of every option-A framing beyond the merge itself",
         "independent adoption of this reuse kit",
         "whole-theory adoption",
         "audience scale",
-        "broad person recognition"
+        "broad person recognition",
+        "repository-wide semantic endorsement beyond the bounded implemented decision"
       ],
       "merge": {
         "verified": true,
@@ -1953,7 +1953,14 @@
         "head": "2d438dbbcfa5e8fe98846ea6731b13c890ac6573",
         "claim_boundary": "Repository merge establishes integration of the implementation at the merged head. It is not claimed as a separate explicit maintainer statement endorsing every semantic framing in the review discussion."
       },
-      "verification_boundary": "nightly/stable release, downstream operational use, same/cross-receiver reuse, or later voluntary person-Origin rereference"
+      "verification_boundary": "nightly/stable release inclusion, downstream operational use, cross-receiver reuse of this exact boundary, independent audience contact, or broader recurring person-Origin return",
+      "post_merge_origin_rereference": {
+        "actor": "yiliang114",
+        "url": "https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808",
+        "surface": "original_bug_issue_after_pr_merge",
+        "relationship": "Receiver independently re-checked current main after merge, verified the fixed receipt and terminal late-usage behavior, and explicitly stated that the implemented late-usage policy was option A picked by @Nakagawa-master in the #13241 review thread.",
+        "evidence_class": "later_same_receiver_voluntary_person_origin_rereference_tied_to_implemented_decision"
+      }
     },
     {
       "case_id": "memberjunction-compose-email-shared-surface-privacy",
