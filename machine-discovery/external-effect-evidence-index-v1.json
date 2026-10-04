@@ -1976,7 +1976,6 @@
       "not_claimed": [
         "stable release containing PR #13241",
         "verified downstream operational or independent end-user use from the prerelease",
-        "verified downstream operational or user use",
         "late physical-spend accounting completeness",
         "independent adoption of this reuse kit",
         "whole-theory adoption",
