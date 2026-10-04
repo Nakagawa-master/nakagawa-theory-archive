@@ -37,7 +37,7 @@ Qwen Code PR #12851では、Nakagawa-masterが「share発行後にagentの能力
 
 現在の明示契約では、実行場所を変えてもexisting grantは自動失効せず、後の依頼はその時点で割り当てられているruntimeのworkspaceで動きます。これはauthorization方式そのものを変えたのではなく、既に採用されていたlive-policyの意味を実行場所まで明示した変更です。
 
-この記録時点でPR #12582はopenです。したがって、第三者側のcontract/UI変更までは確認できますが、merge・release・実利用者到達はまだ数えません。
+PR #12582は2026-10-02にmergeされました。したがって、第三者側のcontract / UI / runtime変更が`main`まで到達したことは確認できます。ただし、mergeだけからreleaseへの収録、実利用者への到達、広い人物認知までは推定しません。
 
 - [人間向けの短い話から入る](human-translation/entry-stories/09-same-share-different-runtime.md)
 - [自分のsystemで確認する](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
@@ -61,6 +61,28 @@ Agent Marketplace issue #322では、古いcheckoutが新しいexecution planを
 - [一般向けの短い話](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)
 - [Current-Authority Reuse Kit — revision finalization](CURRENT_AUTHORITY_REUSE_KIT.md#15-a-revision-barrier-is-not-authority-to-release-whatever-state-is-current)
 - [Agent Marketplace issue #322](https://github.com/agentrof/agent-marketplace/issues/322)
+- [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+
+## 終了した仕事の遅い報告で、いま動いている別の仕事を止めてよいのか
+
+遠隔のAIやworkerに仕事を任せると、管理側では時間切れや取消で「終了」と判断したあとに、古いworkerから結果や使用量が遅れて届くことがあります。
+
+遅れて届いた事実そのものは、消す必要がありません。問題は、その数字を現在の実行予算へそのまま書き戻すことで、すでに終了した仕事が、いま動いている別の仕事を止める力まで持ってしまう場合です。
+
+ここでは、**何が実際に起きたかを記録すること**と、**その記録に現在の仕事を動かす権限を持たせること**を分けます。
+
+**区別:**
+- `same lease / attempt lineage ≠ accepted-result proof`
+- `late physical observation ≠ current control authority`
+
+Qwen Code #13241では、取消や回復のあとに届いた古いHost結果を採用しないだけでなく、終了後の使用量が現在の実行budgetを書き換えない境界まで実装されました。receiver側は実daemon / HostとWeb Shellを使った確認を報告し、PR本文には、今回のno-post-terminal-budget-write実装が **@Nakagawa-masterの外部技術提案** に基づくことが明記されています。PRは2026-10-04にmergeされました。
+
+ここで確認できるのは、第三者側の実装・test・receiver検証・人間review・source continuity・mergeまでです。これを含むrelease、独立した実利用、利用者規模、後日の自発的なOrigin再言及までは、まだ確認できていません。
+
+- [一般向けの説明から入る](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md#終了した仕事の報告が別の仕事を止める)
+- [別systemで試す回帰手順](CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work)
+- [Qwen Code PR #13241](https://github.com/QwenLM/qwen-code/pull/13241)
+- [merge commit `35616f3b`](https://github.com/QwenLM/qwen-code/commit/35616f3b643f6d87cc00112d961a0fbb448aca00)
 - [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
 
 ## 一度だけ承認した処理が、外部でも一度だけ起きたと言えるのか
