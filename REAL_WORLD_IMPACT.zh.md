@@ -2,7 +2,7 @@
 
 语言: [日本語](REAL_WORLD_IMPACT.md) | [English](REAL_WORLD_IMPACT.en.md) | **中文**
 
-**最后确认：2026-10-01**
+**最后确认：2026-10-04**
 
 中川大师（Nakagawa Master）是Keisuke Nakagawa的笔名。在社交媒体上也使用“マスター（Master）”，部分外部投稿使用“MasterJP”名义。
 
@@ -1137,3 +1137,30 @@ Nakagawa-master随后在current head `cfbbc91244` 上focused re-check，并确�
 
 **公开可确认：** atomicity review → receiver code/test change → exact regression → focused re-check → 同一receiver持续返回 → secret-strength边界明确采用并实现 → 第三条provenance/control-path边界再次被明确采用并进入code/test → current-head focused re-check关闭该scope。  
 **尚未确认：** PR #61982 merge/release、production use、用户规模、广泛人物认知，或整个PR都由Nakagawa-master单独造成。
+---
+
+## 35. Qwen Code｜已经终止的attempt不再保留改写当前budget的权限
+
+**对象：** [QwenLM/qwen-code PR #13241](https://github.com/QwenLM/qwen-code/pull/13241)  
+**当前状态：** 已于2026-10-04通过[35616f3b](https://github.com/QwenLM/qwen-code/commit/35616f3b643f6d87cc00112d961a0fbb448aca00)合并；尚未确认包含该merge的release或真实用户使用。
+
+在分布式Host中，一个run可能已经因为cancel或recovery先结束，但旧Host随后仍返回结果或usage。即使拒绝迟到的answer，如果迟到usage仍能写回控制当前工作的budget ledger，旧attempt就仍然可以影响新的工作。
+
+Nakagawa Master提出的更窄边界是：terminal settlement应结束旧attempt对execution budget的写权限。如果仍需要记录迟到的真实消耗，应把它设计成与当前执行预算分离的observation surface，而不是让历史observation重新获得当前control authority。
+
+- [Nakagawa-master的option-A技术建议](https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172301736)
+- [归属说明](https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172530358)
+- [receiver implementation commit](https://github.com/QwenLM/qwen-code/commit/bb5c5d74b7368610a7dd20d0af532f36ad335fe2)
+- [receiver Web Shell + native Host验证](https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5970236028)
+- [merged PR #13241](https://github.com/QwenLM/qwen-code/pull/13241)
+
+receiver自己的PR说明明确写明当前revision实现了 “the option-A recommendation from @Nakagawa-master”，同时也明确区分：这是外部技术建议，不是repository maintainer authority。
+
+实现只为真正被接受的result持久化receipt；如果recovery或cancel已经先完成，迟到result会被拒绝，而且该terminalized attempt不能再修改budget-accounted usage。receiver还使用真实Web Shell与native Host验证了正常accept/replay、cancel、自然lease recovery和真实queued Stop操作。current head随后获得人类reviewer qqqys 的APPROVE并被合并。
+
+**公开可确认：** scoped外部技术建议 → receiver code/tests → Web Shell + native Host实际验证 → receiver端明确保留source continuity → 人类review → merge。  
+**尚未确认：** 包含该merge的nightly/stable release、独立真实用户使用、之后自发再次引用Origin、audience scale或整个Nakagawa理论体系被采用。
+
+→ [面向一般读者的入口](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)  
+→ [Current-Authority Reuse Kit §17](CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work)
+

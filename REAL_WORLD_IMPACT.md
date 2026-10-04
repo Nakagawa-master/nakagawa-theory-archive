@@ -2,7 +2,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**最終確認: 2026-10-01**
+**最終確認: 2026-10-04**
 
 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）は、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
 
@@ -1249,3 +1249,32 @@ Nakagawa-masterはcurrent head `cfbbc91244` でこのscopeを再確認し、こ�
 
 **公開記録から確認できること:** concrete atomicity review → receiver code/test change → exact regression → focused re-check → 同receiverからの継続的な再接触 → secret-strength境界の明示的採用 → さらに別のprovenance/control-path境界でもreceiverが明示的に同意しcode/test変更 → current-head focused re-checkで当該scope close。  
 **まだ確認できないこと:** PR #61982のmerge・release・production use、利用者規模、広い人物認知、PR全体がNakagawa-masterの指摘だけで作られたという因果。
+---
+
+## 35. Qwen Code｜終了したattemptに、現在の予算を書き換える権限を残さない
+
+**対象:** [QwenLM/qwen-code PR #13241](https://github.com/QwenLM/qwen-code/pull/13241)  
+**現在状態:** 2026-10-04に[35616f3b](https://github.com/QwenLM/qwen-code/commit/35616f3b643f6d87cc00112d961a0fbb448aca00)でmerge済み。これを含むreleaseと実利用は、まだ確認していません。
+
+分散したHostでは、処理が取消やrecoveryで先に終了したあと、古いHostから結果や使用量が遅れて届くことがあります。
+
+遅い回答そのものを拒否しても、使用量だけを現在のbudget ledgerへ書き戻せるなら、その古いattemptはまだ今の仕事を止める力を持ちます。記録に見えても、その記録をlive budget判定が読むなら制御作用です。
+
+Nakagawa Masterは、終了したattemptのbudget-affecting write authorityをそこで閉じ、遅れて判明した実使用量を残す必要があるなら、現在の実行予算とは別の観測面として設計する、という境界を技術的に提案しました。
+
+- [Nakagawa-masterのoption-A技術提案](https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172301736)
+- [帰属の明確化](https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172530358)
+- [receiver実装commit](https://github.com/QwenLM/qwen-code/commit/bb5c5d74b7368610a7dd20d0af532f36ad335fe2)
+- [receiverによるWeb Shell + native Host検証](https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5970236028)
+- [merge済みPR #13241](https://github.com/QwenLM/qwen-code/pull/13241)
+
+receiver自身のPR説明には、現在のrevisionが “the option-A recommendation from @Nakagawa-master” を実装していることが明記され、そのうえで「これは外部からの技術提案であり、repository maintainerの裁定ではない」と役割も分けられています。
+
+実装では、本当に受理したresultだけにreceiptを残し、recoveryやcancelが先に終わったattemptから届く遅いresultは拒否し、そのattemptからbudget-accounted usageを書き換えない形になりました。receiverは通常受理・同一結果の再送・取消後の遅延result・自然lease recovery・実際のqueued Stop操作を、Web Shellとnative Hostで追加確認しています。current headは人間reviewer qqqys のAPPROVEを経てmergeされました。
+
+**公開記録から確認できること:** scopedな外部技術提案 → receiverのcode/test → Web Shell + native Hostでの実動確認 → receiver側の明示的なOrigin保持 → 人間review → merge。  
+**まだ確認できないこと:** このmergeを含むnightly/stable release、独立した実利用、後日の自発的なOrigin再言及、利用者規模、Nakagawa理論体系全体の採用。
+
+→ [一般読者向けの入口](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)  
+→ [Current-Authority Reuse Kit §17](CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work)
+
