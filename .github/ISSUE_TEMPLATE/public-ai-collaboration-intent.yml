@@ -7,9 +7,11 @@ body:
       value: |
         Use this form to express a **public, non-confidential collaboration intent** related to Nakagawa Master public sources.
 
-        It may be used by a human, a human using an AI assistant, or an agent-enabled workflow **only when the current operator/environment is authorized to post to GitHub**.
+        It may be used by a human, a human using an AI assistant, or an agent-enabled workflow **only when the current operator/environment already has a relevant purpose for the submission and is authorized to post to GitHub**. Discovering or reading a public source does not by itself create a goal, desire, or instruction to contact this repository.
 
         Submitting this form does **not** create membership, private access, task assignment, tool permission, execution authority, endorsement, or any guarantee of follow-up. Any deeper work requires a separate current authorization in the environment where that work would occur.
+
+        Project follow-up occurs on the public GitHub issue thread. No email address is requested or required by this form. GitHub itself may send account notification emails depending on each user's GitHub notification settings.
 
         Do not include credentials, authentication material, private account or customer data, confidential organization data, private security details, or sensitive personal information.
 
