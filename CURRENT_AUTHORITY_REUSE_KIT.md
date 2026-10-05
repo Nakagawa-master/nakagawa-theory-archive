@@ -31,7 +31,7 @@ You do not need to know the theory name before using this kit. Start with the fa
 | A revision started legitimately, but the state being finalized later may no longer be the state that was reviewed | Section 15 |
 | A guard / authorization decision was made earlier, but the later execution boundary asks a materially different policy question | Section 16 |
 | An old worker reports usage after termination, and that supposedly passive record can stop current work | Section 17 |
-| A user approves work in a parent/control conversation, but a delegated task may never receive or accept that authorization update, or an internal abort is mislabeled as user cancellation | Section 18 |
+| You approve an action in the parent/control conversation, but the delegated task behaves as if the approval never arrived — or reports `user cancelled` when you did not cancel | Section 18 |
 
 The recurring question is not “was this ever approved?” It is:
 
@@ -643,9 +643,11 @@ That establishes implementation, receiver verification, merge, and a later same-
 
 For the conceptual source, [OD307](derivatives/307/human-entry.md) distinguishes lineage continuity from legitimate authority inheritance. This regression is a non-canonical implementation translation; neither the external fix nor this kit proves the whole theory.
 
-### 18. User authorization is not the same as authorization-handoff admission
+### 18. You approved it — but the delegated task still says “user cancelled”
 
-In delegated work, three states should remain distinct:
+A person approves an action in the main conversation. The system delegates the work. Then the child task behaves as if the approval never arrived — or reports that the user cancelled even though the user did not.
+
+That is not one generic “permission problem.” At least three different states can exist:
 
 ```text
 the user authorized the action
@@ -655,9 +657,9 @@ the authorization update was admitted to the delegated task
 the delegated executor can consume that authority for the exact side effect
 ```
 
-A system can therefore fail before the authority decision itself. The parent may have a real user decision while the child never receives a trusted authorization object, or while the handoff fails before a new task turn is admitted.
+The first state can be true while the second or third is false. The parent can hold a real user decision while the child never receives a trusted authorization object, the handoff fails before a new task turn is admitted, or the executor cannot prove that the received authority covers this exact action.
 
-Do not collapse that into a claim about user intent.
+So the system must not turn an internal delivery or execution failure into a statement about what the user decided.
 
 ```text
 internal abort
@@ -718,6 +720,8 @@ genuine user authorization has a verifiable delivery and consumption path
 OpenAI Codex issue [#50769](https://github.com/openai/codex/issues/50769) contains multiple reports where later user approval was followed by different observed outcomes: the forwarded update was absent from child-task read-back, approval evidence was treated as untrusted, or a tool returned `user cancelled MCP tool call` despite the user reporting no cancellation. Nakagawa Master proposed this three-layer separation and explicit failure attribution in [comment 5986370673](https://github.com/openai/codex/issues/50769#issuecomment-5986370673).
 
 This is currently a **problem/contract proposal**, not evidence that Codex has implemented or accepted the design. The independent incident reports predate that Nakagawa comment and therefore are not counted as Nakagawa-derived adoption or recognition.
+
+For the broader conceptual source, [OD307](derivatives/307/human-entry.md) separates continuity of lineage from legitimate inheritance of authority. Section 18 is a practical, non-canonical regression translation of that boundary; the Codex issue does not by itself prove the whole theory.
 
 ## Implementation pattern
 
