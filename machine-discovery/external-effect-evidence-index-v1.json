@@ -1934,18 +1934,44 @@
             "all_review_threads_resolved": true
           },
           "origin_side_current_head_recheck": "https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5987644046",
-          "state": "open_unmerged",
-          "causal_boundary": "Strong Origin-preserved implementation follow-on from the explicitly receiver-owned #13157 scope split. Does not assign Nakagawa credit for unrelated project-owned fixes or claim merge/release/use."
+          "state": "merged",
+          "causal_boundary": "Strong Origin-preserved implementation follow-on from the explicitly receiver-owned #13157 scope split, now merged into Qwen main. Does not assign Nakagawa credit for unrelated project-owned fixes or claim release/use.",
+          "merge": {
+            "verified": true,
+            "merged_at_utc": "2026-10-05T07:26:00Z",
+            "merge_commit": "69d060e24c3d7740e3f526ff4915d9caff031ede",
+            "merged_by": "yiliang114",
+            "current_main_confirmation": "The next observed main commit ba010d392f2791295218aae33488a65cd4ed3db5 has the #13406 merge commit as its direct parent."
+          },
+          "late_approval_reviews": [
+            {
+              "reviewer": "qqqys",
+              "review_url": "https://github.com/QwenLM/qwen-code/pull/13406#pullrequestreview-5411179010",
+              "result": "APPROVED",
+              "boundary": "Independent approval review; collaborator/maintainer role not inferred because repository permission lookup is unavailable to this connector."
+            },
+            {
+              "reviewer": "qwen-code-review-bot",
+              "review_url": "https://github.com/QwenLM/qwen-code/pull/13406#pullrequestreview-5411208284",
+              "result": "APPROVED",
+              "boundary": "Automated Qwen review; re-evaluated the deferred non-read classification probe as non-blocking and did not produce a code change."
+            }
+          ],
+          "post_merge_release_state": {
+            "stable_release_containing_merge": "not_established",
+            "prerelease_containing_merge": "not_established_at_2026-10-05T08:10Z",
+            "real_user_use": "not_established"
+          }
         }
       },
-      "current_stage": "merged_base_implementation_plus_origin_preserved_follow_on_now_at_receiver_implementation_review_feedback_converted_to_regression_coverage_green_ci_and_resolved_threads",
+      "current_stage": "merged_base_implementation_plus_origin_preserved_follow_on_merged_to_current_main",
       "not_claimed": [
-        "merge of PR #13406",
+        "stable or prerelease distribution containing PR #13406",
+        "real-user use of the merged #13406 behavior",
         "release containing PR #13406",
         "real-model acceptance or independent real-user use",
         "verified user-scale contact",
-        "broad person recognition",
-        "human-maintainer approval inferred from automated Qwen triage approval"
+        "broad person recognition"
       ],
       "public_human_case": "REAL_WORLD_IMPACT.md#33-qwen-code既発行shareと後から変わるagent-policy実行場所を分ける",
       "merge": {
