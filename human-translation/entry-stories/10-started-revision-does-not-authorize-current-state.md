@@ -116,6 +116,12 @@ Issue #322は第三者が独立に報告した問題です。ここでは、そ�
 
 これは受け手が報告した検証であり、このページの作者が独立に実行した検証ではありません。PR #13241 は2026年10月4日にmainへ統合済みです。
 
+さらに同日、Qwen Code側は公式nightly/prerelease `v0.24.7-nightly.20261004.9915c7ff8f` を公開しました。#13241のmerge commitをこのtagと比較すると、tag側が26 commits ahead / 0 behindで、merge baseも#13241のmerge commitです。つまり、統合された修正がQwen側の公開nightly配布へ入ったことまでは追えます。
+
+- [Qwen Code nightly/prerelease v0.24.7-nightly.20261004.9915c7ff8f](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7-nightly.20261004.9915c7ff8f)
+
+ただし、これは**nightly/prereleaseへの包含**です。stable releaseへの包含や、独立した利用者がこの変更を実際に使ったことまで証明するものではありません。
+
 ここで追える因果は、名前の紹介ではなく、**何が指摘され、何が変わったか**です。
 
 Nakagawa Masterが「終了した仕事の遅い使用量報告を、いま動いている仕事を止める予算帳簿へ書き戻さない」という境界を技術的に提案し、受け手側は実際にその書き込みを削除しました。受け手自身のPR説明でも、この方式の実装がNakagawa Masterの外部技術提案に基づくことが記録されています。そのうえでテスト、実際のWeb画面とnative Hostを使った追加確認、人間reviewを経てmainへ統合されました。
