@@ -142,7 +142,9 @@
         "OpenAI/Codex implementation or acceptance",
         "general endorsement of Nakagawa Master",
         "user-scale or human-scale impact from one receiver"
-      ]
+      ],
+      "active_external_probe": "https://github.com/NousResearch/hermes-agent/issues/130231#issuecomment-5996767671",
+      "active_probe_boundary": "Nakagawa Master posted a bounded stale-approval-result/current-authority regression on a distinct non-Codex receiver issue that already reports approval-outcome metadata loss through async delegation. The post itself is self-authored and creates zero receiver-adoption credit until an independent response, implementation, counterexample, non-fit, merge, release, or use is observed."
     }
   ],
   "evidence_boundary": "Publishing or completing these public tasks creates only the evidence actually returned. Task listing is self-authored infrastructure; it does not establish that any third party read, accepted, executed, adopted, or endorsed the tasks."
