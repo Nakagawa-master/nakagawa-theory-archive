@@ -1772,7 +1772,7 @@
         },
         "receiver_implementation_follow_on": {
           "pull_request": "https://github.com/QwenLM/qwen-code/pull/13406",
-          "head": "ed8883320d09c469d132f95e447eddc467805209",
+          "head": "2cd92ab8d197b3927bd8198bc07a1c3bfae682f0",
           "receiver": "yiliang114",
           "current_main_contract": "https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5957440588",
           "mechanisms": [
@@ -1803,12 +1803,29 @@
             "relationship": "Qwen triage independently re-traced the earlier @Nakagawa-master split request, verified the current implementation structure, and approved the reviewed head.",
             "boundary": "automated Qwen review; not human maintainer approval"
           },
-          "origin_side_current_head_recheck": "https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5985298400",
+          "review_follow_up": {
+            "r1_1": {
+              "status": "fixed_test_only",
+              "receiver_comment": "https://github.com/QwenLM/qwen-code/pull/13406#discussion_r4180266928",
+              "change": "inside-workspace approval-needed Host regression restores discrimination of automatic Host policy refusal versus user cancellation",
+              "mutation_evidence": "both named Host-refusal mutations fail the targeted test; intact current file passes all 1139 tests"
+            },
+            "r1_2": {
+              "status": "declined_with_current_call_graph_reasoning",
+              "boundary": "early createAgentHostToolInvocationGuard(undefined, ...) path has no current permissionChecked consumer"
+            },
+            "r1_3": {
+              "status": "declined_with_coverage_scope_reasoning",
+              "boundary": "existing parent-abort-during-permission coverage remains; current early guard order checks cancellation before returning confinement denial"
+            },
+            "all_review_threads_resolved": true
+          },
+          "origin_side_current_head_recheck": "https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5987644046",
           "state": "open_unmerged",
           "causal_boundary": "Strong Origin-preserved implementation follow-on from the explicitly receiver-owned #13157 scope split. Does not assign Nakagawa credit for unrelated project-owned fixes or claim merge/release/use."
         }
       },
-      "current_stage": "merged_base_implementation_plus_origin_preserved_follow_on_now_at_receiver_implementation_green_ci_and_independent_qwen_approval",
+      "current_stage": "merged_base_implementation_plus_origin_preserved_follow_on_now_at_receiver_implementation_review_feedback_converted_to_regression_coverage_green_ci_and_resolved_threads",
       "not_claimed": [
         "merge of PR #13406",
         "release containing PR #13406",

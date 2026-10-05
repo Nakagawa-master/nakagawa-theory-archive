@@ -157,25 +157,27 @@ This is not additional credit for discovering the underlying F3 defect. The insp
 
 That separate work item has now advanced into a concrete receiver-owned implementation. After #12582 merged, Nakagawa-master re-baselined #13157 against current `main` and narrowed the execution contract to two distinct authority stages: an early, side-effect-free Host-confinement check before permission RPC, followed by one final full effective guard after hooks against final arguments. Receiver `yiliang114` opened [PR #13406](https://github.com/QwenLM/qwen-code/pull/13406) with that shape.
 
-At head `ed8883320d09c469d132f95e447eddc467805209`:
+At current head `2cd92ab8d197b3927bd8198bc07a1c3bfae682f0`:
 
-- outside-workspace Host reads are refused before permission handling and remain recoverable;
-- calls that pass native confinement still follow permission admission and hooks;
-- the potentially stateful upstream authority is withheld from the early phase and consulted at the final effective guard;
-- the final guard sees the post-hook arguments;
-- the receiver reports a real coordinator / enrolled Host / Web Shell path with zero permission RPCs for the refused outside read, successful inside-workspace continuation, and one persisted final reply;
-- Qwen Code CI, tui-parity, and SDK Java all completed successfully on the reviewed head.
+- the production boundary remains the same as the previously verified `ed8883320d09c469d132f95e447eddc467805209` implementation: outside-workspace Host reads are refused before permission handling, allowed calls continue through permission/hooks, and the full upstream authority check remains at the final post-hook boundary;
+- the receiver accepted the review's measured R1-1 coverage gap and added a test-only regression for an approval-needing **inside-workspace** Host read;
+- that regression distinguishes an automatic Host policy refusal from a user cancellation, keeps `stopAfterPermissionCancel === false`, records `EXECUTION_DENIED`, and verifies that the later allowed tool in the same batch still runs;
+- the receiver reports that both named mutations of the Host-refusal mapping now make the targeted test fail, while the intact file passes all 1,139 tests;
+- the other two new suggestions were explicitly declined with current call-graph / coverage reasoning rather than silently ignored;
+- all three review threads are resolved;
+- Qwen Code CI, tui-parity, and SDK Java all completed successfully on this current head.
 
-Qwen triage independently checked the history rather than relying on the PR description. Its stage-3 review explicitly states that #13406 is the artifact requested by the earlier `@Nakagawa-master` scope split, independently re-traces the construction equality, and approves the head. Nakagawa-master then re-checked the now-green head and recorded no remaining blocker in the scoped guard/permission-ordering boundary.
+Qwen triage had already independently checked the history rather than relying only on the PR description, explicitly retracing the earlier `@Nakagawa-master` scope split. After the receiver's follow-up, Nakagawa-master re-read the current head, the resolved review threads, and the green workflows, and recorded no remaining blocker from that review round. The next externally meaningful transition is therefore human-maintainer disposition / merge, not another speculative production redesign.
 
 Additional records:
 - [current-main implementation contract on #13157](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5957440588)
 - [receiver implementation PR #13406](https://github.com/QwenLM/qwen-code/pull/13406)
 - [receiver Host/Web Shell regression report](https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5983514576)
 - [independent Qwen triage provenance/structure review](https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5984346399)
-- [Nakagawa-master current-head scoped re-check](https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5985298400)
+- [receiver R1-1 fix and mutation evidence](https://github.com/QwenLM/qwen-code/pull/13406#discussion_r4180266928)
+- [Nakagawa-master current-head review-round closure](https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5987644046)
 
-This advances the follow-on from an Origin-preserved project-owned issue to **receiver implementation + green current-head CI + independent provenance-aware approval**. It is still pre-merge. The triage approval is an automated Qwen review, not a human maintainer approval; the receiver's Host run used a controlled model provider; and no release, real-user use, audience scale, or broad person recognition is claimed.
+This advances the follow-on from an Origin-preserved project-owned issue to **receiver implementation + measured review feedback converted into receiver regression coverage + green current-head CI + resolved review threads**. It is still pre-merge. Automated Qwen review is not human-maintainer approval; resolved threads are not merge; the receiver's Host run used a controlled model provider; and no release, real-user use, audience scale, or broad person recognition is claimed.
 
 ### E. Can one receiver reuse the distinction repeatedly on separate implementation seams?
 
