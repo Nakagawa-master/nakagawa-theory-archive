@@ -1166,3 +1166,47 @@ receiver自己的PR说明明确写明当前revision实现了 “the option-A rec
 → [面向一般读者的入口](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)  
 → [Current-Authority Reuse Kit §17](CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work)
 
+---
+
+## 36. OpenAI Codex｜区分“用户已经授权”“授权handoff已被接收”与“委托执行器能为该exact action消费这份authority”
+
+**对象:** [openai/codex issue #50769](https://github.com/openai/codex/issues/50769)  
+**当前状态:** 公开issue上已有多个独立参与者补充真实incident，其中一名第三方明确复用了Nakagawa Master提出的区分。这里尚不能确认OpenAI/Codex maintainer采纳、product实现、修复或release。
+
+在委托式AI任务中，用户在父conversation里批准某项操作，并不自动证明授权已经送达child task、child能够把它作为该exact side effect的authority使用，也不证明后续的“user cancelled”标签真的来自用户取消。
+
+Nakagawa Master把这些incident分为三层：
+
+```text
+user authorized the action
+!=
+authorization handoff was admitted/delivered
+!=
+delegated executor can consume that authority for the exact side effect
+
+internal abort / failed handoff / review rejection
+!=
+user cancellation
+```
+
+- [Nakagawa Master的三层区分与回归建议](https://github.com/openai/codex/issues/50769#issuecomment-5986370673)
+
+随后，参与者 `partialobserver` 报告了另一个private GitHub publication incident，并明确写出 **“Using the distinctions in the comment above”**，把自己的案例分类为 `authority/provenance`，而不是handoff failure或user cancellation。这构成了同一receiver surface上、不同参与者对该区分的有限第三方reuse。
+
+- [第三方明确reuse](https://github.com/openai/codex/issues/50769#issuecomment-5987001957)
+
+之后另一位参与者 `seeton` 又补充了独立incident：用户明确授权后，对同一个private destination已有多次write成功，但后续checkpoint write再次被approval denial阻断。报告中出现把destination判断为public/unverified，以及“automatic approval review was cancelled”等结果，但没有证据表明用户实际发起了取消。
+
+- [seeton的独立incident](https://github.com/openai/codex/issues/50769#issuecomment-5996162016)
+
+基于这个新案例，Nakagawa Master进一步把问题收敛到“reviewer实际使用的authority input是否保持连续”，提出decision trace：authorization scope、destination identity/visibility/ownership、action class、grant-scope match、review outcome以及user-cancel event id。随后形成A/B regression：control中固定destination、action class与authorization receipt；negative case每次只改变一个authority input，并要求reason/trace与该变化一致。
+
+- [authority-input continuity A/B regression](https://github.com/openai/codex/issues/50769#issuecomment-5996528096)
+
+**公开可确认：** Nakagawa Master提出结构区分 → 另一参与者明确用于诊断自己的不同incident → 又有另一独立参与者补充现实案例 → 新案例被进一步转化为更可测试的decision-trace regression。  
+**尚未确认：** OpenAI/Codex maintainer采纳、product实现、merge、release、修复、user-scale影响、广泛人物认知、第二个incident reporter对Nakagawa Master的source attribution，或所有incident共享同一root cause。
+
+→ [面向人的问题入口](APPLIED_ENTRY_POINTS.md)  
+→ [Current-Authority Reuse Kit §18](CURRENT_AUTHORITY_REUSE_KIT.md#18-you-approved-it--but-the-delegated-task-still-says-user-cancelled)  
+→ [machine-readable challenge R](machine-discovery/independent-reuse-challenges-v1.json)
+
