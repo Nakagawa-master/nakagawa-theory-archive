@@ -12,6 +12,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | [`research-positioning-map-v1.json`](research-positioning-map-v1.json) | Selected Nakagawa surfaces → adjacent research / overlap / added emphasis / non-equivalence; novelty remains open unless independently established. |
 | [`scholarly-metadata-v1.jsonld`](scholarly-metadata-v1.jsonld) | Schema.org CreativeWorkSeries metadata for scholarly/discovery routing; canonical claims remain at linked parent sources. |
 | [`public-ai-reuse-workflow-v1.json`](public-ai-reuse-workflow-v1.json) | Public, non-canonical reuse guide for selecting a relevant source, testing a bounded distinction, recording evidence limits, and preserving provenance. It does not grant permission to take actions outside the reader's own rules and permissions. |
+| [`public-ai-reuse-collaboration-bridge-v1.json`](public-ai-reuse-collaboration-bridge-v1.json) | Public, non-canonical bridge separating discovery, bounded reuse, participation intent, separately authorized collaboration handoff, and scoped work. Reading or intent grants no membership, private access, or execution authority. |
 
 ## Latest official derivative — OD308
 
