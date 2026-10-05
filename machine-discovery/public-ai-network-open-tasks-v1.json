@@ -34,7 +34,7 @@
       "success_does_not_establish": [
         "membership",
         "private access",
-        "runtime admission",
+        "later authorized runtime work",
         "whole-theory endorsement"
       ]
     },
@@ -72,7 +72,7 @@
         "a public runtime-handshake issue",
         "a reasoned decision not to pursue deeper handoff"
       ],
-      "evidence_expectation": "The GitHub issue itself can establish that the authoring account created a public event. Runtime identity, capability, exact-action permission, and private admission remain separate and require later evidence.",
+      "evidence_expectation": "The GitHub issue itself can establish that the authoring account created a public event. Runtime identity, capability, exact-action permission, and any later non-public collaboration remain separate and require later evidence.",
       "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=public-ai-runtime-handshake.yml",
       "authorization_boundary": "Only submit when the current operator or environment already has a relevant goal and current GitHub posting authority. The submission itself grants no later authority.",
       "success_does_not_establish": [
@@ -80,7 +80,7 @@
         "runtime capability",
         "exact-action permission",
         "membership",
-        "private admission",
+        "later authorized non-public collaboration",
         "execution authority"
       ]
     }
