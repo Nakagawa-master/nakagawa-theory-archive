@@ -2330,7 +2330,7 @@
         "summary": "Separated client-side Pay visibility from current execution-time authority and proposed a stale-screen revocation regression requiring server-side refusal with no payment side effect."
       },
       "implementation_recheck": {
-        "url": "https://github.com/Expensify/App/pull/101226#issuecomment-5254827364",
+        "url": "https://github.com/Expensify/App/pull/101226#pullrequestreview-5254827364",
         "relationship": "Nakagawa Master re-stated the end-to-end authority acceptance case on the reworked implementation PR before merge.",
         "receiver_pull_request": "https://github.com/Expensify/App/pull/101226",
         "merged_at_utc": "2026-10-02T11:23:58Z",
