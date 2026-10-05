@@ -105,8 +105,10 @@ PR本文の実ブラウザ検証では、意図的に fake measured data をprod
 
 この能力境界を含むsuggestion/action layerはsuccessor #107802側へ移っています。現在のscout contractでも、scoutはsuggestionを作るだけで、approve / publishは人間側の別段階です。ただし、successor stack全体をNakagawa-master単独の成果とは扱いません。
 
-**公開記録から確認できること:** 元review → 同じ問題領域の第三者実装 → authorによる明示的なsuccessor移行 → current successorでserver-side measurement、Measured by PostHog / Unverified、producer measurement非信頼化、tests / real-browser verificationが継続していること。  
-**まだ確認できないこと:** #107795 / #107802のmerge、customer rollout、productionでの実利用者接触、successor変更の唯一因果、広い人間認知。
+#107879 / #107795 / #107802 は同じstackとして2026-10-02にmasterへmergeされ、deployment botは同一workflowでdev（22:42 UTC）、prod-us（22:57）、prod-eu（23:12）へのdeploymentを記録しています。successor PR本文はいずれも#92252からの分割・置換関係を明記していますが、そこで `Nakagawa-master` 名を再び明示してはいません。
+
+**公開記録から確認できること:** 元review → 同じreceiverのsuccessor stackへ問題・実装が移行 → server-side measurement、Measured by PostHog / Unverified、producer measurement非信頼化、internal scout-only proposal capability、version別outcome reading → tests / real-browser verification → 3PR merge → dev / prod-us / prod-eu deployment。  
+**まだ確認できないこと:** feature flagがcustomer向けに有効化されたこと、production userの実利用、successor PRでの自発的な人物Origin再言及、successor変更の唯一因果、広い人間認知。
 
 ---
 
