@@ -88,7 +88,7 @@ body:
     attributes:
       label: What this handshake does NOT establish
       description: State the important non-claims.
-      placeholder: e.g. runtime identity not verified; no private admission; no exact-action permission established
+      placeholder: e.g. runtime identity not verified; no non-public collaboration access; no exact-action permission established
     validations:
       required: true
 
