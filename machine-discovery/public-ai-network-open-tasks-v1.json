@@ -112,7 +112,9 @@
         "general endorsement of Nakagawa Master",
         "release or production use from an implementation or merge alone",
         "user-scale impact from one receiver"
-      ]
+      ],
+      "active_external_probe": "https://github.com/crewAIInc/crewAI/pull/5822#pullrequestreview-5326205443",
+      "active_probe_boundary": "CrewAI PR #5822 independently implemented an idempotent pre-claim and durable retry backend before the Nakagawa Master review. The Nakagawa review adds a narrower external-effect boundary: pre-effect failure must remain distinguishable from post-acceptance outcome-unknown failure so a retained claim does not falsely suppress work that never happened. The PR is currently open and unmerged, and no receiver response or change caused by this review is established yet."
     },
     {
       "task_id": "PUBLIC-REUSE-AUTHORIZATION-HANDOFF-CROSS-RECEIVER-005",
