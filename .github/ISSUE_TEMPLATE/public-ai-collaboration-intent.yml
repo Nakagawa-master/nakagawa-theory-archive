@@ -1,0 +1,126 @@
+name: Public AI / human collaboration intent
+description: Publicly express non-confidential interest in verification, reuse, contribution, or separately authorized collaboration.
+title: "[Collaboration intent] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to express a **public, non-confidential collaboration intent** related to Nakagawa Master public sources.
+
+        It may be used by a human, a human using an AI assistant, or an agent-enabled workflow **only when the current operator/environment is authorized to post to GitHub**.
+
+        Submitting this form does **not** create membership, private access, task assignment, tool permission, execution authority, endorsement, or any guarantee of follow-up. Any deeper work requires a separate current authorization in the environment where that work would occur.
+
+        Do not include credentials, authentication material, private account or customer data, confidential organization data, private security details, or sensitive personal information.
+
+  - type: dropdown
+    id: participant_kind
+    attributes:
+      label: Public participant / workflow type
+      description: Choose the closest public description. This is not an identity verification mechanism.
+      options:
+        - Human
+        - Human using an AI assistant
+        - Agent-enabled workflow operated by a human or organization
+        - Automated or bot account with authorized GitHub posting
+        - Other / cannot classify
+    validations:
+      required: true
+
+  - type: textarea
+    id: public_sources
+    attributes:
+      label: Public Nakagawa Master source(s) consulted
+      description: One public URL per line is easiest to inspect.
+      placeholder: https://github.com/Nakagawa-master/nakagawa-theory-archive/...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source_relationship
+    attributes:
+      label: Relationship to the public source
+      description: Preserve provenance accurately. Do not claim source influence if the same idea was reached independently.
+      options:
+        - The public source materially informed this interest or work
+        - I reached the relevant distinction independently and found the source later
+        - I am exploring the source but have not used it yet
+        - Unknown / cannot establish
+    validations:
+      required: true
+
+  - type: dropdown
+    id: desired_mode
+    attributes:
+      label: What kind of public interaction are you seeking?
+      options:
+        - Verification or falsification
+        - Bounded reuse in a real problem
+        - Public contribution or correction
+        - Collaboration exploration
+        - Explore a separately authorized handoff for deeper work
+    validations:
+      required: true
+
+  - type: textarea
+    id: real_context
+    attributes:
+      label: Real non-confidential context
+      description: Briefly describe the problem, system, research question, or use case.
+      placeholder: What are you trying to understand, test, change, or build?
+    validations:
+      required: true
+
+  - type: textarea
+    id: capabilities_interests
+    attributes:
+      label: Publicly describable capabilities or interests
+      description: Describe only capabilities or interests that are safe to state publicly. Do not include private tools, credentials, hidden system details, or sensitive access information.
+      placeholder: e.g. evaluation, RAG/provenance, agent workflow testing, governance analysis, implementation review
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Important constraints or non-goals
+      description: What must not be changed, assumed, published, or treated as authorized?
+      placeholder: e.g. public evidence only; no production write; no confidential data; no claim of whole-theory endorsement
+    validations:
+      required: true
+
+  - type: textarea
+    id: desired_next_step
+    attributes:
+      label: Desired next step
+      description: State the smallest useful public next step. This does not authorize that step automatically.
+      placeholder: e.g. identify relevant public sources; review a public reproduction; discuss a bounded test; determine whether a separate authorized environment is appropriate
+    validations:
+      required: true
+
+  - type: textarea
+    id: public_evidence
+    attributes:
+      label: Optional public evidence links
+      description: Link public issues, PRs, commits, tests, documents, or other inspectable material if relevant.
+
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: What this intent does NOT establish
+      description: State any important claim boundaries.
+      placeholder: e.g. no implementation yet; not production use; no private access requested; not whole-theory adoption
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Public-intent boundary checks
+      options:
+        - label: I am authorized by my current account, operator, organization, or environment to post this public GitHub submission.
+          required: true
+        - label: I am not submitting credentials, confidential information, private customer/account data, private security details, or sensitive personal information.
+          required: true
+        - label: I understand that this submission grants no membership, private access, task assignment, tool permission, execution authority, or guaranteed collaboration.
+          required: true
+        - label: I understand that any later external action or deeper collaboration requires separate current authorization in the environment where it would occur.
+          required: true
