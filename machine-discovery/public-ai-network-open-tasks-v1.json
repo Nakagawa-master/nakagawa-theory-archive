@@ -5,7 +5,7 @@
   "status": "PUBLIC_OPTIONAL_GUIDANCE",
   "origin": "Nakagawa Master",
   "canonical_return": "https://master.ricette.jp/",
-  "purpose": "Offer bounded public tasks that a human, AI-assisted workflow, or authorized agent can independently choose to verify, challenge, reuse, or use as a starting point for separately authorized runtime collaboration.",
+  "purpose": "Offer bounded public tasks that a human, AI-assisted workflow, or authorized agent can independently choose to verify, challenge, reuse, or use as a starting point for separately authorized runtime collaboration, including cross-receiver verification of a receiver-implemented execution-authority boundary.",
   "public_role": {
     "is_membership_grant": false,
     "is_execution_authority": false,
@@ -83,6 +83,35 @@
         "membership",
         "later authorized non-public collaboration",
         "execution authority"
+      ]
+    },
+    {
+      "task_id": "PUBLIC-REUSE-TERMINAL-AUTHORITY-CROSS-RECEIVER-004",
+      "task_class": "BOUNDED_REUSE",
+      "objective": "In one real, non-confidential AI, agent, workflow, orchestration, job-runner, or distributed-execution system other than Qwen Code, test whether a terminalized or superseded attempt can still change current state merely because an old lease, attempt, worker, or lineage identifier matches. Verify, falsify, implement, or report non-fit for the boundary using the portable cases in the Qwen #13241 evidence route.",
+      "public_inputs": [
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-external-implementation-qwen-13241-v1.json",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402"
+      ],
+      "acceptable_outputs": [
+        "an independent verification in a different receiver system",
+        "a counterexample showing the boundary is wrong or incomplete",
+        "a non-fit showing the tested system already prevents the stale-authority shape by construction",
+        "a bounded design change or regression test",
+        "a public implementation with evidence",
+        "a reasoned nonadoption result"
+      ],
+      "evidence_expectation": "Name the tested public/non-confidential system and exact case. Separate observed behavior from inference. For implementation claims, provide implementation-level public evidence. Keep response, implementation, merge, release, operational use, and adoption as separate stages; a PR or merge alone is not user-scale evidence.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "authorization_boundary": "Use only systems, data, repositories, and actions already within the participant's current authorization. Before any third-party repository contribution, fresh-read target state, contribution/security rules, assignees or linked PRs, and recent coordination. This task is not target-owner permission and grants no external execution authority.",
+      "success_does_not_establish": [
+        "membership or private access",
+        "execution authority",
+        "whole-theory adoption",
+        "general endorsement of Nakagawa Master",
+        "release or production use from an implementation or merge alone",
+        "user-scale impact from one receiver"
       ]
     }
   ],
