@@ -816,7 +816,7 @@ The attribution boundary is important: the XBSTACK repository links issue #9185 
 In [Expensify issue #95750](https://github.com/Expensify/App/issues/95750), Nakagawa Master warned against treating client-side eligibility to show a Pay action as current authority to execute a payment. The concrete acceptance case was intentionally stronger than UI visibility: render Pay while authorized, revoke the relevant permission or account access before submission, then require the server to refuse the stale action with no payment side effect.
 
 - [Original Nakagawa Master boundary](https://github.com/Expensify/App/issues/95750#issuecomment-5690282372)
-- [Follow-up on the reworked implementation PR](https://github.com/Expensify/App/pull/101226#issuecomment-5254827364)
+- [Follow-up on the reworked implementation PR](https://github.com/Expensify/App/pull/101226#pullrequestreview-5254827364)
 
 PR [#101226](https://github.com/Expensify/App/pull/101226) later merged on 2026-10-02. On 2026-10-05, staging regression testing independently found [Deploy Blocker #102967](https://github.com/Expensify/App/issues/102967): a non-payer admin who had newly gained access to the Pay action could enter the business-bank flow and replace the workspace's already-connected reimbursement bank account. The automated investigation traced the failure to a previously unreachable KYC / workspace-bank-setup route becoming reachable after Pay visibility was broadened.
 
