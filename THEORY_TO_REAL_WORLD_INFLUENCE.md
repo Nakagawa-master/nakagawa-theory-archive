@@ -103,6 +103,11 @@ Qwen then published non-prerelease **v0.25.0** on 2026-10-05 at 09:44:40 UTC. Th
 - [Qwen Code stable release v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0)
 - [PR #13241 stable-release receipt](https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5992291549)
 
+Qwen then published **Qwen Code Desktop v0.25.0** at 10:45:59 UTC. Its receiver-owned product release notes explicitly list **#12582, #12851, #13241, and #13406**. At the current audit the downloadable Desktop installer/archive assets show 22 download events. Qwen's TypeScript SDK `v0.1.18`, published at 10:23:32 UTC, also states that it bundles CLI `0.25.0`. This establishes carry from the stable CLI release into additional receiver-owned product/package distribution surfaces. Download counters are not unique users and do not prove use of any specific changed behavior.
+
+- [Qwen Code Desktop v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.0)
+- [Qwen TypeScript SDK v0.1.18](https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.18)
+
 Stable release inclusion is now established. It still does not establish independent real-user use of the changed behavior, broad audience reach, cross-receiver reuse of this exact boundary, or broad person recognition.
 
 ### C. Does the Origin relation survive independent disagreement?
@@ -133,7 +138,7 @@ Primary records:
 
 The first second-person review was submitted as an approval at head `7c42221c` and was dismissed when the PR head moved. The same reviewer, `chiga0`, then re-read the later delta and submitted a fresh **APPROVED** review at head `f9922e44`.
 
-That makes the second-person carry stronger than a one-head snapshot: the reviewer independently reconstructed the Nakagawa-origin boundary, then continued reviewing the line after later receiver changes. That review was not, by itself, merge credit. Since then PR #12582 merged on 2026-10-02, and Qwen's non-prerelease **v0.25.0** release published on 2026-10-05 explicitly lists #12582 in its release notes. Stable distribution is therefore established; independent real-user use and audience scale are not.
+That makes the second-person carry stronger than a one-head snapshot: the reviewer independently reconstructed the Nakagawa-origin boundary, then continued reviewing the line after later receiver changes. That review was not, by itself, merge credit. Since then PR #12582 merged on 2026-10-02, and Qwen's non-prerelease **v0.25.0** release published on 2026-10-05 explicitly lists #12582 in its release notes. Stable CLI distribution and explicit Desktop product-release carry are therefore established; independent real-user use and audience scale are not.
 
 A later #12582 closeout produced a different, narrower Origin-preserved effect. When F3 had two separable halves — a declared-tool/runtime mismatch and a wider guard-before-permission ordering change — Nakagawa-master explicitly asked to land only the tool-filter half in #12582 and move the ordering half to a separate pass. Receiver `yiliang114` implemented that scope correction, centralized the Host read-only set in `AGENT_HOST_TOOL_NAMES`, and created [issue #13157](https://github.com/QwenLM/qwen-code/issues/13157). The new issue explicitly names the **“scope correction from Nakagawa-master”** as the reason the ordering change was removed from #12582.
 
@@ -187,7 +192,7 @@ Additional records:
 - [late Qwen review-bot approval](https://github.com/QwenLM/qwen-code/pull/13406#pullrequestreview-5411208284)
 - [merged implementation commit](https://github.com/QwenLM/qwen-code/commit/69d060e24c3d7740e3f526ff4915d9caff031ede)
 
-This advances the follow-on from an Origin-preserved project-owned issue to **receiver implementation + measured review feedback converted into receiver regression coverage + green current-head CI + two additional approval reviews + merge into current main**. Qwen then published non-prerelease **v0.25.0** on 2026-10-05 at 09:44:40 UTC; the official release notes explicitly list #13406 and the PR thread carries a release receipt. Stable distribution of the merged boundary is therefore established. This still does not establish independent real-user use, audience scale, broad person recognition, or a new prompt-free person-Origin rereference at the release step.
+This advances the follow-on from an Origin-preserved project-owned issue to **receiver implementation + measured review feedback converted into receiver regression coverage + green current-head CI + two additional approval reviews + merge into current main**. Qwen then published non-prerelease **v0.25.0** on 2026-10-05 at 09:44:40 UTC; the official release notes explicitly list #13406 and the PR thread carries a release receipt. Stable CLI distribution and explicit Desktop product-release carry of the merged boundary are therefore established. This still does not establish independent real-user use, audience scale, broad person recognition, or a new prompt-free person-Origin rereference at the release step.
 
 - [Qwen Code stable release v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0)
 - [PR #13406 stable-release receipt](https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5992304028)
@@ -332,7 +337,7 @@ A Nakagawa-master review pointed out that a multi-day A2A share was not bound to
 - [Merged PR #12851](https://github.com/QwenLM/qwen-code/pull/12851)
 - [Current A2A contract](https://github.com/QwenLM/qwen-code/blob/main/docs/design/2026-09-09-a2a-frozen-contract.md)
 
-Qwen's non-prerelease **v0.25.0** release published on 2026-10-05 explicitly lists #12851, so this merged live-policy contract also reached stable distribution.
+Qwen's non-prerelease **v0.25.0** release published on 2026-10-05 explicitly lists #12851, and the later **Desktop v0.25.0** product release also explicitly lists #12851. This merged live-policy contract therefore reached both stable CLI and receiver-owned Desktop product distribution.
 
 - [Qwen Code stable release v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0)
 - [PR #12851 stable-release receipt](https://github.com/QwenLM/qwen-code/pull/12851#issuecomment-5992254667)
