@@ -1301,3 +1301,60 @@ receiver自身のPR説明には、現在のrevisionが “the option-A recommend
 → [一般読者向けの入口](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)  
 → [Current-Authority Reuse Kit §17](CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work)
 
+---
+
+## 36. OpenAI Codex｜「承認した」「委譲先へ届いた」「その操作に使える」を分ける
+
+**対象:** [openai/codex issue #50769](https://github.com/openai/codex/issues/50769)  
+**現在状態:** 公開issue上で複数の独立参加者による現実事例が追加され、Nakagawa Masterが提示した三層の区別を第三者が明示的に再利用しています。OpenAI/Codex maintainerによる採用、実装、修正、releaseはまだ確認していません。
+
+委譲されたAI taskでは、ユーザーが親の会話で操作を承認しても、その承認が子taskへ届いたか、届いた承認がexact actionのauthorityとして使えるか、失敗時の表示が本当にユーザー由来のcancelなのかは別問題です。
+
+Nakagawa Masterは、issue上の複数incidentを次の三層に分けました。
+
+```text
+user authorized the action
+!=
+authorization handoff was admitted/delivered
+!=
+delegated executor can consume that authority for the exact side effect
+
+internal abort / failed handoff / review rejection
+!=
+user cancellation
+```
+
+- [Nakagawa Masterの三層分離と回帰提案](https://github.com/openai/codex/issues/50769#issuecomment-5986370673)
+
+その後、第三者参加者 `partialobserver` は別のprivate GitHub publication incidentを報告し、**“Using the distinctions in the comment above”** と明示したうえで、自身のケースをhandoff failureやuser cancellationではなく `authority/provenance` 層として分類しました。これは、Nakagawa-originの区別が同じissue内の別参加者によって実際の別incidentの診断に使われた、限定された第三者reuseです。
+
+- [第三者による明示的reuse](https://github.com/openai/codex/issues/50769#issuecomment-5987001957)
+
+さらに別参加者 `seeton` が、同じprivate destinationへの保存workflowで、明示承認後に多数のwriteが成功したのち、後続のcheckpoint writeが再びapproval denialで止まる独立事例を追加しました。報告には「public/unverified destination」と扱われた例や「automatic approval review was cancelled」という結果が含まれますが、user-origin cancellationは確認されていません。
+
+- [seetonによる別の独立incident](https://github.com/openai/codex/issues/50769#issuecomment-5996162016)
+
+この新しい事例を受け、Nakagawa Masterは「以前成功したから次も許可される」という推論を避けつつ、reviewerが実際に評価したauthority inputの連続性を検証できるよう、次のdecision traceを具体化しました。
+
+```text
+authorization_scope_digest
+destination_identity_digest
+destination_visibility_at_decision
+destination_ownership_at_decision
+requested_action_class
+grant_scope_match
+review_outcome
+user_cancel_event_id
+```
+
+そして、destination・action class・authorization receiptを固定したcontrolと、authority inputを一つだけ変えたnegative caseを比較し、reason code / traceがその変更に追随するA/B regressionへ落としています。
+
+- [authority-input continuityを検証するA/B regression](https://github.com/openai/codex/issues/50769#issuecomment-5996528096)
+
+**公開記録から確認できること:** Nakagawa Masterによる構造的区別 → 別参加者による明示的な診断reuse → さらに別参加者による独立した現実事例 → その新事例を使ったより具体的な検証contractへの発展。  
+**まだ確認できないこと:** OpenAI/Codex maintainerの採用、product実装、merge、release、問題修正、独立利用者規模、広い人物認知、二人目のincidentがNakagawa Masterをsourceとして認識していること、すべてのincidentが同一root causeであること。
+
+→ [人間向けの問題入口](APPLIED_ENTRY_POINTS.md#親で承認したのに子タスクでは届いていないuser-cancelledになるのはなぜか)  
+→ [Current-Authority Reuse Kit §18](CURRENT_AUTHORITY_REUSE_KIT.md#18-you-approved-it--but-the-delegated-task-still-says-user-cancelled)  
+→ [machine-readable challenge R](machine-discovery/independent-reuse-challenges-v1.json)
+
