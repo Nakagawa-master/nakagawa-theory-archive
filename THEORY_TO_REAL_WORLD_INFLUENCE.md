@@ -167,7 +167,9 @@ At current head `2cd92ab8d197b3927bd8198bc07a1c3bfae682f0`:
 - all three review threads are resolved;
 - Qwen Code CI, tui-parity, and SDK Java all completed successfully on this current head.
 
-Qwen triage had already independently checked the history rather than relying only on the PR description, explicitly retracing the earlier `@Nakagawa-master` scope split. After the receiver's follow-up, Nakagawa-master re-read the current head, the resolved review threads, and the green workflows, and recorded no remaining blocker from that review round. The next externally meaningful transition is therefore human-maintainer disposition / merge, not another speculative production redesign.
+Qwen triage had already independently checked the history rather than relying only on the PR description, explicitly retracing the earlier `@Nakagawa-master` scope split. After the receiver's follow-up, Nakagawa-master re-read the current head, the resolved review threads, and the green workflows, and recorded no remaining blocker from that review round.
+
+On 2026-10-05, the same head then received two additional approval reviews before merge. One separate reviewer verified the production ordering, cleanup path and current green checks. Qwen's review bot separately re-traced the early/late guard split and examined the deferred non-read-tool probe; it treated that residual as a non-blocking dependency on the underlying classification rather than a current production defect. Neither review changed the code. Receiver `yiliang114` then merged PR #13406 at 07:26 UTC as merge commit `69d060e24c3d7740e3f526ff4915d9caff031ede`. The next main-branch commit has that merge as its direct parent, confirming the merged change is on current `main`.
 
 Additional records:
 - [current-main implementation contract on #13157](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5957440588)
@@ -176,8 +178,11 @@ Additional records:
 - [independent Qwen triage provenance/structure review](https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5984346399)
 - [receiver R1-1 fix and mutation evidence](https://github.com/QwenLM/qwen-code/pull/13406#discussion_r4180266928)
 - [Nakagawa-master current-head review-round closure](https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5987644046)
+- [late separate approval review](https://github.com/QwenLM/qwen-code/pull/13406#pullrequestreview-5411179010)
+- [late Qwen review-bot approval](https://github.com/QwenLM/qwen-code/pull/13406#pullrequestreview-5411208284)
+- [merged implementation commit](https://github.com/QwenLM/qwen-code/commit/69d060e24c3d7740e3f526ff4915d9caff031ede)
 
-This advances the follow-on from an Origin-preserved project-owned issue to **receiver implementation + measured review feedback converted into receiver regression coverage + green current-head CI + resolved review threads**. It is still pre-merge. Automated Qwen review is not human-maintainer approval; resolved threads are not merge; the receiver's Host run used a controlled model provider; and no release, real-user use, audience scale, or broad person recognition is claimed.
+This advances the follow-on from an Origin-preserved project-owned issue to **receiver implementation + measured review feedback converted into receiver regression coverage + green current-head CI + two additional approval reviews + merge into current main**. This is stronger receiver-owned operational carry than the earlier open-PR state. It still does not establish release, real-user use, audience scale, broad person recognition, or new prompt-free person-Origin rereference at the merge step.
 
 ### E. Can one receiver reuse the distinction repeatedly on separate implementation seams?
 
