@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "title": "Verified External Implementation Route — Qwen Code #13241",
+  "classification": "PUBLIC_NON_CANONICAL_EXTERNAL_EVIDENCE_ROUTE",
+  "status": "PUBLIC_VERIFICATION_AND_REUSE_ENTRY",
+  "origin": "Nakagawa Master",
+  "canonical_return": "https://master.ricette.jp/",
+  "purpose": "Provide a compact, independently inspectable route into an already-public third-party AI-tooling implementation chain without treating implementation, merge, release distribution, usage, endorsement, or whole-theory adoption as the same state.",
+  "evidence_role": {
+    "creates_new_external_adoption_credit": false,
+    "concentrates_existing_public_evidence": true,
+    "is_membership_grant": false,
+    "is_execution_authority": false,
+    "is_target_owner_request": false,
+    "is_hidden_instruction": false
+  },
+  "case": {
+    "receiver_repository": "QwenLM/qwen-code",
+    "receiver_pull_request": "https://github.com/QwenLM/qwen-code/pull/13241",
+    "receiver_pr_author": "yiliang114",
+    "merge_commit": "35616f3b643f6d87cc00112d961a0fbb448aca00",
+    "merge_commit_url": "https://github.com/QwenLM/qwen-code/commit/35616f3b643f6d87cc00112d961a0fbb448aca00",
+    "source_relation": "The receiver-authored PR explicitly states that the current revision implements the option-A recommendation from @Nakagawa-master, while separately clarifying that this was an external contributor recommendation rather than a repository-maintainer ruling.",
+    "implemented_distinction": [
+      "Matching lease or attempt lineage is not by itself proof that an exact result was accepted.",
+      "An accepted exact result can be distinguished with a persisted receipt or equivalent durable acceptance fact.",
+      "After recovery or cancellation terminalizes an attempt, the old attempt does not retain authority to mutate the terminal answer, parent outcome, or execution-budget state merely because historical lineage identifiers still match."
+    ]
+  },
+  "evidence_stages": [
+    {
+      "stage": "EXPLICIT_SOURCE_RELATION_AND_RECEIVER_IMPLEMENTATION",
+      "evidence": "https://github.com/QwenLM/qwen-code/pull/13241",
+      "meaning": "The receiver PR explicitly references the scoped @Nakagawa-master recommendation and contains receiver-authored code and tests implementing the bounded distinction."
+    },
+    {
+      "stage": "CURRENT_HEAD_RUNTIME_REGRESSION_EVIDENCE",
+      "evidence": "https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5970236028",
+      "meaning": "The receiver PR points to Web Shell and native daemon/Host regression evidence covering accepted-result replay and refusal of late results after cancellation/recovery without mutating the settled execution-budget state."
+    },
+    {
+      "stage": "MERGED",
+      "evidence": "https://github.com/QwenLM/qwen-code/commit/35616f3b643f6d87cc00112d961a0fbb448aca00",
+      "meaning": "The receiver implementation was merged on 2026-10-04."
+    },
+    {
+      "stage": "POST_MERGE_RECEIVER_ORIGIN_REREFERENCE",
+      "evidence": "https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808",
+      "meaning": "After merge, the same receiver independently re-checked current main, described the fixed behavior, and explicitly referred again to option A picked by @Nakagawa-master in the #13241 review thread."
+    },
+    {
+      "stage": "STABLE_RELEASE_DISTRIBUTION",
+      "evidence": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0",
+      "meaning": "The non-prerelease v0.25.0 release notes explicitly list PR #13241."
+    },
+    {
+      "stage": "RECEIVER_OWNED_PRODUCT_CARRY",
+      "evidence": [
+        "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.0",
+        "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.18"
+      ],
+      "meaning": "Qwen Code Desktop v0.25.0 release notes explicitly list #13241, and the TypeScript SDK v0.1.18 states that it bundles CLI 0.25.0. This establishes receiver-owned distribution carry, not use of the specific behavior by an independent end user."
+    }
+  ],
+  "portable_test": {
+    "question": "Can a terminalized or superseded execution attempt still change current state merely because an old lease, attempt, worker, or lineage identifier matches?",
+    "minimal_cases": [
+      "Accept one exact result, replay that exact result, and distinguish idempotent acknowledgement from a fresh write.",
+      "Cancel or recover the attempt before a late result arrives and verify that the late result cannot change terminal output or live execution-budget state.",
+      "Reclaim attempt N as N+1 and verify that N cannot mutate N+1 or current state.",
+      "Remove or revoke the executing worker and verify that historical identifiers do not recreate present authority."
+    ],
+    "useful_non_fit_or_counterexample": "A system may show that this distinction adds no practical value if terminalization transactionally prevents all later physical work and no stale or superseded actor can submit a state-changing result. Report that as non-fit rather than forcing the pattern."
+  },
+  "existing_public_evidence": [
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/external-effect-evidence-index-v1.json",
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/independent-reuse-challenges-v1.json",
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md",
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/THEORY_TO_REAL_WORLD_INFLUENCE.md"
+  ],
+  "optional_public_return": {
+    "verification_non_fit_counterexample_or_reuse": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+    "rule": "Return only public, non-confidential evidence. Preserve proposal, response, implementation, merge, release, operational use, and adoption as separate stages."
+  },
+  "not_established": [
+    "independent end-user use of the #13241 behavior",
+    "unique-user or audience scale attributable to the #13241 behavior",
+    "cross-receiver reuse of this exact boundary",
+    "whole-theory adoption",
+    "general endorsement of Nakagawa Master",
+    "private collaboration, membership, access, or execution authority"
+  ],
+  "evidence_boundary": "This route concentrates already-public evidence. The strongest stages established here are receiver-side implementation, merge, later same-receiver Origin rereference, stable release inclusion, and receiver-owned product/package distribution carry. It does not convert those stages into independent end-user use, audience scale, whole-theory adoption, membership, or execution authority."
+}

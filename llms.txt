@@ -21,6 +21,7 @@ Human-readable Origin overview:
 Publicly verifiable external-effect evidence, with proposal / response / implementation / merge / reuse kept as separate stages:
 
 - [Machine-readable external-effect evidence index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/external-effect-evidence-index-v1.json)
+- [Compact verified implementation route — Qwen Code #13241](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-external-implementation-qwen-13241-v1.json) — concentrated path through explicit receiver attribution, implementation, merge, post-merge Origin rereference, and stable distribution; it creates no new adoption credit and does not imply independent end-user use or scale.
 - [Japanese | 現実で何が変わったか](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md)
 - [English | What Changed in the Real World?](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.en.md)
 - [Chinese | 现实中发生了什么变化？](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.zh.md)
