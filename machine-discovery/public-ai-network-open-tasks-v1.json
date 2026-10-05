@@ -114,7 +114,15 @@
         "user-scale impact from one receiver"
       ],
       "active_external_probe": "https://github.com/crewAIInc/crewAI/pull/5822#pullrequestreview-5326205443",
-      "active_probe_boundary": "CrewAI PR #5822 independently implemented an idempotent pre-claim and durable retry backend before the Nakagawa Master review. The Nakagawa review adds a narrower external-effect boundary: pre-effect failure must remain distinguishable from post-acceptance outcome-unknown failure so a retained claim does not falsely suppress work that never happened. The PR is currently open and unmerged, and no receiver response or change caused by this review is established yet."
+      "active_probe_boundary": "CrewAI PR #5822 independently implemented an idempotent pre-claim and durable retry backend before the Nakagawa Master review. The Nakagawa review adds a narrower external-effect boundary: pre-effect failure must remain distinguishable from post-acceptance outcome-unknown failure so a retained claim does not falsely suppress work that never happened. The PR is currently open and unmerged, and no receiver response or change caused by this review is established yet.",
+      "verified_external_return_example": {
+        "system": "LangGraph",
+        "issue": "https://github.com/langchain-ai/langgraph/issues/9185",
+        "receiver_evidence": "https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-5981507756",
+        "evidence_stage": "CONTEXTUAL_REUSE_WITH_INDEPENDENT_REPRODUCTION",
+        "bounded_result": "Independent receiver reproduced the timeout/resume duplicate-side-effect failure on LangGraph 1.2.11/1.2.12 and published a control that separates logical action identity, execution-attempt identity, and current authorization, re-checking authority only after reconciliation proves the prior external effect absent.",
+        "origin_boundary": "Nakagawa Master introduced the explicit current-authority separation earlier in the same issue. This establishes a causal public-source chain to the later receiver control, but not upstream maintainer acceptance, merge, release, user-scale impact, or whole-theory adoption."
+      }
     },
     {
       "task_id": "PUBLIC-REUSE-AUTHORIZATION-HANDOFF-CROSS-RECEIVER-005",
