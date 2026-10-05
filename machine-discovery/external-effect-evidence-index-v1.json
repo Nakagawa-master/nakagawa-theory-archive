@@ -1948,7 +1948,7 @@
               "reviewer": "qqqys",
               "review_url": "https://github.com/QwenLM/qwen-code/pull/13406#pullrequestreview-5411179010",
               "result": "APPROVED",
-              "boundary": "Independent approval review; collaborator/maintainer role not inferred because repository permission lookup is unavailable to this connector."
+              "boundary": "Separate approval review; collaborator/maintainer role not inferred because repository permission lookup is unavailable to this connector."
             },
             {
               "reviewer": "qwen-code-review-bot",
@@ -1968,8 +1968,6 @@
       "not_claimed": [
         "stable or prerelease distribution containing PR #13406",
         "real-user use of the merged #13406 behavior",
-        "release containing PR #13406",
-        "real-model acceptance or independent real-user use",
         "verified user-scale contact",
         "broad person recognition"
       ],
