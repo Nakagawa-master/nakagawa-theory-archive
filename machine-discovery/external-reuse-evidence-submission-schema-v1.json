@@ -114,6 +114,37 @@
         "unknown"
       ],
       "description": "Causal relationship between the public Nakagawa Master source and the external reuse. Do not infer causality from similarity alone."
+    },
+    "origin_visibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state"
+      ],
+      "properties": {
+        "state": {
+          "type": "string",
+          "enum": [
+            "explicit_person_and_direct_source",
+            "explicit_person_only",
+            "direct_source_route_without_person_name",
+            "lineage_only_without_person_or_direct_source",
+            "not_visible_in_examined_receiver_artifact",
+            "unknown"
+          ]
+        },
+        "evidence_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "receiver_owned_surface": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "description": "Visible Origin/provenance retained in the examined receiver-owned artifact. This is separate from source_relationship, which records causal relation. Missing visible Origin does not establish intent, plagiarism, appropriation, or independent rediscovery."
     }
   },
   "additionalProperties": false
