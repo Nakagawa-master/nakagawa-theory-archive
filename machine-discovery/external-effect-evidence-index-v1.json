@@ -464,6 +464,24 @@
         "origin_follow_up_on_canonical_lane": "https://github.com/run-llama/llama_index/pull/21939#issuecomment-5989147214",
         "duplicate_pr_follow_up": "https://github.com/run-llama/llama_index/pull/23038#issuecomment-5989151512",
         "next_external_transition": "receiver ports the provenance-only metadata approach/tests into #21939 or reopens #23038; then maintainer review/merge"
+      },
+      "origin_visibility": {
+        "current_state": "mixed_across_receiver_artifacts",
+        "observations": [
+          {
+            "surface_url": "https://github.com/run-llama/llama_index/pull/23038",
+            "state": "explicit_person_and_direct_source",
+            "receiver_owned_surface": true,
+            "notes": "The source-informed PR explicitly cited the Nakagawa compatibility contract, but it was closed unmerged as a duplicate."
+          },
+          {
+            "surface_url": "https://github.com/run-llama/llama_index/pull/21939",
+            "state": "not_visible_in_examined_receiver_artifact",
+            "receiver_owned_surface": true,
+            "notes": "The current review lane predates the Nakagawa-origin intervention and is not claimed as source-informed reuse."
+          }
+        ],
+        "interpretation_boundary": "Visible Origin state and causal source relationship are tracked separately; the current lane's missing Origin does not establish deliberate removal."
       }
     },
     {
@@ -1237,6 +1255,30 @@
           "https://github.com/PostHog/posthog/pull/107802#issuecomment-5962626660"
         ],
         "rollout_boundary": "The merged changes are deployed to PostHog environments, but the PRs state the feature remains behind self-optimising-workflows / held-back scout rollout controls; deployment is not verified customer availability or user use."
+      },
+      "origin_visibility": {
+        "current_state": "lineage_only_without_person_or_direct_source",
+        "observations": [
+          {
+            "surface_url": "https://github.com/PostHog/posthog/pull/107879",
+            "state": "lineage_only_without_person_or_direct_source",
+            "receiver_owned_surface": true,
+            "notes": "Successor body states it was cut out of #92252 but does not re-name Nakagawa-master or link the originating review."
+          },
+          {
+            "surface_url": "https://github.com/PostHog/posthog/pull/107795",
+            "state": "lineage_only_without_person_or_direct_source",
+            "receiver_owned_surface": true,
+            "notes": "Successor body preserves #92252 stack lineage but does not re-name Nakagawa-master or link the originating review."
+          },
+          {
+            "surface_url": "https://github.com/PostHog/posthog/pull/107802",
+            "state": "lineage_only_without_person_or_direct_source",
+            "receiver_owned_surface": true,
+            "notes": "Successor body says it replaces #92252 but does not re-name Nakagawa-master or link the originating review."
+          }
+        ],
+        "interpretation_boundary": "Receiver-owned implementation continuity is established. A fresh explicit person-Origin rereference in the successor artifacts is not."
       }
     },
     {
@@ -1694,6 +1736,18 @@
           "origin-preserving receiver reuse"
         ],
         "canonical_source": "https://master.ricette.jp"
+      },
+      "origin_visibility": {
+        "current_state": "explicit_person_and_direct_source",
+        "observations": [
+          {
+            "surface_url": "https://github.com/QwenLM/qwen-code/pull/12895",
+            "state": "explicit_person_and_direct_source",
+            "receiver_owned_surface": true,
+            "notes": "The receiver-owned PR body explicitly re-references Nakagawa-master and the originating maxCostUsd distinction without a fresh Nakagawa prompt on that PR."
+          }
+        ],
+        "interpretation_boundary": "This is a bounded prompt-free person-Origin rereference attached to one receiver-owned implementation, not broad person recognition."
       }
     },
     {
