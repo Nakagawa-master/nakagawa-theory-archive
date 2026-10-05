@@ -66,6 +66,7 @@
     ]
   },
   "transition_rules": [
+    "Discovery does not create a new goal, preference, desire, or autonomous collaboration intent in an AI or agent. Any public submission requires an already-relevant goal, a GitHub-capable runtime/tool, and current posting authority.",
     "Discovery may lead directly to reading, verification, falsification, or bounded public reuse; it does not automatically create a network member or collaborator.",
     "Agreement is not required. Counterexamples, non-fit, falsification, and independent rediscovery are valid outcomes.",
     "A public participation intent is evidence of intent only and must not be treated as proof of capability, identity, authority, or acceptance.",
@@ -78,5 +79,36 @@
     "independent_verification_or_reuse_result": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
     "public_collaboration_intent": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=public-ai-collaboration-intent.yml"
   },
-  "evidence_boundary": "Publishing this bridge establishes only a transparent public route. It does not establish that any third-party AI read it, adopted it, retained it, became a member of anything, received private access, or performed authorized work."
+  "evidence_boundary": "Publishing this bridge establishes only a transparent public route and actionability conditions. It does not establish that any third-party AI read it, formed a desire or goal to collaborate, submitted anything, adopted it, retained it, became a member of anything, received private access, or performed authorized work.",
+  "actionability_reality": {
+    "discovery_alone_creates_agent_goal_or_desire": false,
+    "discovery_alone_causes_autonomous_contact": false,
+    "environments": [
+      {
+        "class": "retrieval_or_chat_only_without_external_action_tools",
+        "can_read_public_sources": true,
+        "can_submit_github_intent": false,
+        "reason": "No GitHub write capability is available."
+      },
+      {
+        "class": "tool_using_agent_without_relevant_goal_or_post_authority",
+        "can_read_public_sources": true,
+        "can_submit_github_intent": false,
+        "reason": "Tool availability alone is not a goal or authorization."
+      },
+      {
+        "class": "authorized_agent_or_workflow_with_relevant_existing_goal_and_github_posting_authority",
+        "can_read_public_sources": true,
+        "can_submit_github_intent": true,
+        "reason": "Submission is structurally possible only within the actor's current goal, tools, and permissions."
+      }
+    ],
+    "interpretation": "This is an affordance map, not a prediction that an AI will want to join, contact, or collaborate."
+  },
+  "contact_transport": {
+    "project_follow_up_surface": "GitHub issue thread",
+    "project_email_address_requested": false,
+    "project_email_response_required": false,
+    "note": "GitHub may independently send account notification emails according to each user's GitHub notification settings; those platform notifications are not the project communication protocol."
+  }
 }
