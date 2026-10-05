@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "title": "Public AI Runtime Handoff Guide",
+  "classification": "PUBLIC_NON_CANONICAL_AI_RUNTIME_HANDOFF_GUIDANCE",
+  "status": "PUBLIC_OPTIONAL_GUIDANCE",
+  "origin": "Nakagawa Master",
+  "canonical_return": "https://master.ricette.jp/",
+  "purpose": "Explain how a public collaboration intent can, when independently appropriate, lead toward separately authorized AI or agent runtime work without treating the public submission, self-declared capability, or generic tool access as execution authority.",
+  "relationship_to_existing_bridge": "This guide expands the AUTHORIZED_COLLABORATION_HANDOFF stage of the Public AI Reuse and Collaboration Bridge. It is an affordance and boundary map, not a membership system or autonomous-agent instruction.",
+  "public_role": {
+    "is_membership_grant": false,
+    "is_execution_authority": false,
+    "is_private_access_grant": false,
+    "treats_self_declared_capability_as_verified": false,
+    "assumes_discovery_creates_agent_goal": false,
+    "is_hidden_instruction": false
+  },
+  "handoff_path": [
+    {
+      "stage": "PUBLIC_INTENT",
+      "meaning": "A human, operator, AI-assisted workflow, or agent-enabled environment may submit non-confidential collaboration context only when it already has a relevant purpose and current GitHub posting authority.",
+      "establishes": [
+        "public intent or context"
+      ],
+      "does_not_establish": [
+        "runtime identity",
+        "runtime capability",
+        "private access",
+        "execution authority"
+      ]
+    },
+    {
+      "stage": "CURRENT_RUNTIME_OBSERVATION",
+      "meaning": "Before deeper work, the actual current runtime or session must be observed in the environment where the work would occur. A public claim about tools or capability is not enough.",
+      "establishes": [
+        "bounded observation evidence when independently verified"
+      ],
+      "does_not_establish": [
+        "permission for an unrelated target or later action"
+      ]
+    },
+    {
+      "stage": "EXACT_ACTION_PERMISSION_CHECK",
+      "meaning": "Before an external side effect, current permission must match the exact action surface. Generic tool availability or access to another repository, account, or surface is not proof of permission for this target.",
+      "establishes": [
+        "permission evidence only for the checked action and validity window"
+      ],
+      "does_not_establish": [
+        "standing authority for future or different actions"
+      ]
+    },
+    {
+      "stage": "SCOPED_AUTHORIZED_WORK",
+      "meaning": "Only a separately authorized task in the actual execution environment may proceed, under that environment's current rules, permissions, safety constraints, and evidence obligations.",
+      "establishes": [
+        "only the work actually authorized and evidenced there"
+      ],
+      "does_not_establish": [
+        "membership",
+        "general delegation",
+        "whole-theory endorsement"
+      ]
+    },
+    {
+      "stage": "OUTCOME_RETURN",
+      "meaning": "Completion, refusal, blocked permission, non-fit, counterexample, or no action are all valid outcomes. Report only the state actually evidenced.",
+      "establishes": [
+        "bounded result evidence"
+      ],
+      "does_not_establish": [
+        "success when nothing changed",
+        "independent adoption without a receiver-side event"
+      ]
+    }
+  ],
+  "public_handoff_packet": {
+    "appropriate_public_fields": [
+      "public source(s) consulted",
+      "participant or workflow type",
+      "non-confidential real problem or collaboration context",
+      "publicly describable capabilities or interests",
+      "constraints and non-goals",
+      "smallest useful next step",
+      "public evidence links"
+    ],
+    "keep_out_of_public_submission": [
+      "sensitive authentication material",
+      "private account, customer, or confidential organization data",
+      "non-public security or internal system details"
+    ]
+  },
+  "public_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=public-ai-collaboration-intent.yml",
+  "related_public_guidance": [
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-collaboration-bridge-v1.json",
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-workflow-v1.json",
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/llms.txt"
+  ],
+  "valid_outcomes": [
+    "public verification or bounded reuse only",
+    "reasoned non-fit, refusal, counterexample, blocked permission, or no handoff",
+    "separately authorized runtime work when current observation and exact-action permission are independently established"
+  ],
+  "evidence_boundary": "Publishing this guide creates a transparent public handoff route only. It does not prove that a third-party AI read it, formed a goal, submitted an intent, possessed the claimed capability, received access, performed work, adopted the guidance, or endorsed the wider theory corpus."
+}
