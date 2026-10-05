@@ -1144,7 +1144,7 @@ issue authorはその後、per-agentをdefaultにする方向へ同意し、PR #
 ## 33. Qwen Code｜既発行shareと、後から変わるagent policy・実行場所を分ける
 
 **対象:** [QwenLM/qwen-code PR #12851](https://github.com/QwenLM/qwen-code/pull/12851) → [PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)  
-**現在状態:** #12851でOrigin付きreceiver restatementとlive-policy整理 → #12851 merge → #12582で実行場所という新しい境界 → @Nakagawa-master付きreceiver返答 → frozen contractと英中share UIをcommit `74bf55053d`で変更 → 別reviewer `chiga0` がNakagawa-master境界を明示して再検証・approval → maintainer-driven実機2-host検証後にreceiverがF1/F2/F4等を修正 → F3ではNakagawa-masterのscope判断に従い「declared=runnable tool filter」を#12582へ残し、guard/permission orderingを#13157へ分離 → receiverがそのsplitを明示実装 → triageと別reviewerが#13157を独立再構成 → receiverはcommit `b4a13e44`でorderingを変えずHost自動permission拒否をrecoverable `EXECUTION_DENIED`へ変更 → #12582は2026-10-02に `45ee202c` でmerge / #13157は別件の未実装提案として継続
+**現在状態:** #12851でOrigin付きreceiver restatementとlive-policy整理 → #12851 merge → #12582で実行場所という新しい境界 → @Nakagawa-master付きreceiver返答 → frozen contractと英中share UIをcommit `74bf55053d`で変更 → 別reviewer `chiga0` がNakagawa-master境界を明示して再検証・approval → maintainer-driven実機2-host検証後にreceiverがF1/F2/F4等を修正 → F3ではNakagawa-masterのscope判断に従い「declared=runnable tool filter」を#12582へ残し、guard/permission orderingを#13157へ分離 → receiverがそのsplitを明示実装 → triageと別reviewerが#13157を独立再構成 → #12582 merge → #13157のnarrowed contractをreceiverがPR #13406で実装 → #13406 merge → 2026-10-05のstable `v0.25.0` が #12851 / #12582 / #13406 を正式release notesへ掲載
 
 PR #12851では、Nakagawa-masterが、share発行後に同じagentの能力が変わった場合、既発行shareが何をauthorizeするのかを明示的に選ぶ必要があると指摘しました。
 
@@ -1174,7 +1174,7 @@ receiverは **“@Nakagawa-master Good catch”** と返答し、commit `74bf550
 
 その後、別reviewer `chiga0` はreview内で **“Nakagawa-master question — A2A grant + execution placement”** を明示的に取り上げ、同じ境界を独立に読み直しました。reviewerは、既発行grantがexecution placementを固定せずcurrent authorityへ追随する現在設計をlive-policyとして整合的だと説明し、その結果をshare UI / design docで明示すべきだと再確認しています。これは同じreceiver本人だけではない、別reviewerによるOrigin-preservedな再説明です。
 
-最初のreviewは後続head更新で一度DISMISSEDになりましたが、`chiga0` はlatest observed head `f9922e44` を再reviewし、改めてAPPROVEDを提出しました。したがって、Origin-preservedなsecond-person carryだけでなく、current-headでの独立review approvalまで確認できます。ただしPR自体はまだopenで、requested reviewersも残っているため、これをmerge approval完了とは扱いません。
+最初のreviewは後続head更新で一度DISMISSEDになりましたが、`chiga0` は当時のlatest head `f9922e44` を再reviewし、改めてAPPROVEDを提出しました。このreview単体をmerge完了とは扱いません。その後 #12582 自体は2026-10-02にmergeされ、2026-10-05のnon-prerelease `v0.25.0` release notesへ #12582 が掲載されました。
 
 その後、maintainer `wenshao` はhead `18f576f4` をmacOS coordinator、Linux arm64 Host、macOS Host、real model、real Web Shellで検証し、coordinator restart時のcredential loss、busy store時のresult loss / silent rerun、stranding処理などの問題を報告しました。receiver `yiliang114` はcommit `e69ce77221` でF1/F2/F4等を修正し、その後の当時head `53b15769` では6 workflowのsuccessが確認されました。F3のread-only tool / permission契約はその時点ではreceiver側のdesign decisionとして残っていました。これらの実機検証と後続修正はreceiver / maintainer側の独立作業であり、Nakagawa reviewの追加因果creditには含めません。
 
@@ -1212,7 +1212,9 @@ receiver `yiliang114` はそのscope correctionを受け、`Session.ts`のpre-pe
 **公開記録から確認できること:** Nakagawa-masterがpolicy変更とexecution-placement変更を別々の具体的authority境界として提示 → receiverがOrigin付きで再説明 → receiver自身がcontractとuser-facing share UIを変更 → 別reviewerがNakagawa-master境界を明示して独立に再検証・carry → 後続F3 scope判断がproject-owned issue #13157としてOriginを保持し、triageで独立root-cause検証されたこと。  
 **現在の統合状態:** [PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)は2026-10-02に[45ee202c](https://github.com/QwenLM/qwen-code/commit/45ee202cb14c171c73185a3dbbd89ed1203f2604)で統合されました。別件の#13157の順序変更提案が実装されたことを意味しません。
 
-**まだ確認できないこと:** 安定版release・実利用者数、一般ユーザーがこの変更へ接触したこと、#13157の実装・merge、広い人間認知。#13157はreceiverがscope correctionへの直接応答として作成したため、それ自体を後日に自発的にNakagawa Masterを再参照したものとは扱いません。
+**stable distribution:** [Qwen Code v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0) は2026-10-05公開のnon-prereleaseで、release notesに #12851 / #12582 / #13406 を明示しています。PR threadにも各release receiptが返っています。
+
+**まだ確認できないこと:** 独立した実利用者がこの具体的変更へ接触したこと、利用者規模、cross-receiver reuse、広い人物認知。#13157はreceiverがscope correctionへの直接応答として作成したため、それ自体を後日に自発的にNakagawa Masterを再参照したものとは扱いません。
 
 → [一般向けの入口](human-translation/entry-stories/09-same-share-different-runtime.md)  
 → [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
@@ -1223,7 +1225,7 @@ receiver `yiliang114` はそのscope correctionを受け、`Session.ts`のpre-pe
 ## 34. Hermes Agent｜「PATCHが失敗した」と「何も変更されていない」を同じにしない
 
 **対象:** [NousResearch/hermes-agent PR #61982](https://github.com/NousResearch/hermes-agent/pull/61982)  
-**現在状態:** mixed PATCH atomicityの指摘 → receiverがsingle-transaction実装とexact regressionを追加 → focused re-checkで当該scopeを閉じる → 同じreceiverが後にNakagawa-masterへ再reviewを依頼 → 別のsecret-strength境界もreceiverが明示的に同意してcode/tests/docsへ修正 → さらに2026-10-01のprovenance/control-path境界もreceiverが明示的に同意し、verified principal由来のauthor/created_byと実control-path regressionへ修正 → PR open / merge・release未確認。
+**現在状態:** mixed PATCH atomicityの指摘 → receiverがsingle-transaction実装とexact regressionを追加 → focused re-checkで当該scopeを閉じる → 同じreceiverが後にNakagawa-masterへ再reviewを依頼 → secret-strength境界もreceiverがcode/tests/docsへ修正 → provenance/control-path境界もverified-principal由来のauthor/created_byと実control-path regressionへ修正 → API Originを`api:` namespaceへ分離 → 2026-10-05 head `f9421bf478` まで26 commits進行後も同境界が保持され、Nakagawa-masterがcurrent-head scoped re-checkでremaining blockerなしを再確認 → PR open / workflowsはtest-failedではなく`action_required` / merge・release未確認。
 
 外部control planeが一回のPATCHで「担当者」と「タイトル」を同時に変更するとします。もし担当者変更だけ先にcommitされ、その直後に別actorがtaskをcomplete / archiveし、タイトル変更が拒否されたら、APIは409を返しても、実際には一部だけ状態が変わっています。
 
@@ -1254,14 +1256,14 @@ receiverは **“Agreed: the authenticated principal and the caller-chosen prove
 
 Nakagawa-masterはcurrent head `cfbbc91244` でこのscopeを再確認し、このprovenance/control-path pointにはremaining blockerがないと返しています。
 
-**公開記録から確認できること:** concrete atomicity review → receiver code/test change → exact regression → focused re-check → 同receiverからの継続的な再接触 → secret-strength境界の明示的採用 → さらに別のprovenance/control-path境界でもreceiverが明示的に同意しcode/test変更 → current-head focused re-checkで当該scope close。  
+**公開記録から確認できること:** concrete atomicity review → receiver code/test change → exact regression → focused re-check → 同receiverからの継続的な再接触 → secret-strength境界の明示的採用 → provenance/control-path境界でもreceiverが明示的に同意しcode/test変更 → namespace sibling caseまでreceiverが自発的に修正 → 26 commits後のcurrent headでも境界保持 → [current-head scoped re-check](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5992661508)で当該scope closeを再確認。  
 **まだ確認できないこと:** PR #61982のmerge・release・production use、利用者規模、広い人物認知、PR全体がNakagawa-masterの指摘だけで作られたという因果。
 ---
 
 ## 35. Qwen Code｜終了したattemptに、現在の予算を書き換える権限を残さない
 
 **対象:** [QwenLM/qwen-code PR #13241](https://github.com/QwenLM/qwen-code/pull/13241)  
-**現在状態:** 2026-10-04に[35616f3b](https://github.com/QwenLM/qwen-code/commit/35616f3b643f6d87cc00112d961a0fbb448aca00)でmerge済み。これを含むreleaseと実利用は、まだ確認していません。
+**現在状態:** 2026-10-04に[35616f3b](https://github.com/QwenLM/qwen-code/commit/35616f3b643f6d87cc00112d961a0fbb448aca00)でmerge済み。2026-10-04 nightly inclusion後、2026-10-05のnon-prerelease [v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0) release notesに #13241 が掲載され、PR threadにもstable-release receiptが返りました。独立した実利用はまだ確認していません。
 
 分散したHostでは、処理が取消やrecoveryで先に終了したあと、古いHostから結果や使用量が遅れて届くことがあります。
 
@@ -1280,7 +1282,12 @@ receiver自身のPR説明には、現在のrevisionが “the option-A recommend
 実装では、本当に受理したresultだけにreceiptを残し、recoveryやcancelが先に終わったattemptから届く遅いresultは拒否し、そのattemptからbudget-accounted usageを書き換えない形になりました。receiverは通常受理・同一結果の再送・取消後の遅延result・自然lease recovery・実際のqueued Stop操作を、Web Shellとnative Hostで追加確認しています。current headは人間reviewer qqqys のAPPROVEを経てmergeされました。
 
 **公開記録から確認できること:** scopedな外部技術提案 → receiverのcode/test → Web Shell + native Hostでの実動確認 → receiver側の明示的なOrigin保持 → 人間review → merge。  
-**まだ確認できないこと:** このmergeを含むnightly/stable release、独立した実利用、後日の自発的なOrigin再言及、利用者規模、Nakagawa理論体系全体の採用。
+**追加確認:** merge後、original bug issue #13238でreceiverが `option A, which @Nakagawa-master picked in the #13241 review thread` と自発的に再言及し、さらにstable `v0.25.0` へ配布されました。
+
+- [post-merge Origin rereference](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)
+- [stable-release receipt](https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5992291549)
+
+**まだ確認できないこと:** 独立した実利用、cross-receiver reuse、利用者規模、広い人物認知、Nakagawa理論体系全体の採用。
 
 → [一般読者向けの入口](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)  
 → [Current-Authority Reuse Kit §17](CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work)
