@@ -31,6 +31,7 @@ You do not need to know the theory name before using this kit. Start with the fa
 | A revision started legitimately, but the state being finalized later may no longer be the state that was reviewed | Section 15 |
 | A guard / authorization decision was made earlier, but the later execution boundary asks a materially different policy question | Section 16 |
 | An old worker reports usage after termination, and that supposedly passive record can stop current work | Section 17 |
+| A user approves work in a parent/control conversation, but a delegated task may never receive or accept that authorization update, or an internal abort is mislabeled as user cancellation | Section 18 |
 
 The recurring question is not “was this ever approved?” It is:
 
@@ -641,6 +642,82 @@ After merge, receiver `yiliang114` re-checked current `main` on the original bug
 That establishes implementation, receiver verification, merge, and a later same-receiver voluntary Origin rereference tied to the implemented decision. Release inclusion, downstream real use, cross-receiver reuse of this exact boundary, audience scale and broad person recognition remain separate states.
 
 For the conceptual source, [OD307](derivatives/307/human-entry.md) distinguishes lineage continuity from legitimate authority inheritance. This regression is a non-canonical implementation translation; neither the external fix nor this kit proves the whole theory.
+
+### 18. User authorization is not the same as authorization-handoff admission
+
+In delegated work, three states should remain distinct:
+
+```text
+the user authorized the action
+!=
+the authorization update was admitted to the delegated task
+!=
+the delegated executor can consume that authority for the exact side effect
+```
+
+A system can therefore fail before the authority decision itself. The parent may have a real user decision while the child never receives a trusted authorization object, or while the handoff fails before a new task turn is admitted.
+
+Do not collapse that into a claim about user intent.
+
+```text
+internal abort
+approval request timeout
+transport failure
+handoff not admitted
+review rejection
+explicit user cancellation
+```
+
+These are different outcomes. In particular:
+
+> **A system should report "user cancelled" only when it has evidence of a user-origin cancellation decision.**
+
+A practical handoff object can bind the decision to:
+
+- the verified user/principal or decision source;
+- the parent/control conversation or equivalent provenance;
+- the target task/delegation;
+- the exact action and material destination/scope;
+- a decision version, expiry, or revocation rule;
+- handoff/admission state;
+- authority evaluation state.
+
+#### Portable regression matrix
+
+```text
+parent user approves exact action A
+→ runtime creates scoped authorization object
+→ deliberately fail handoff once
+→ child does not receive a new admitted turn
+→ result reports not_admitted / transport failure, not user_cancelled
+
+retry handoff successfully
+→ child can verify the authorization object for A
+→ exact A may proceed if current policy still permits it
+
+present the same object for materially different action B
+→ refuse / request fresh authority
+
+explicit user cancellation
+→ report user_cancelled and preserve evidence of that user-origin decision
+
+approval timeout / internal abort
+→ do not attribute cancellation to the user
+```
+
+This preserves two important properties at once:
+
+```text
+copied or forwarded prose alone does not become trusted authority
++
+genuine user authorization has a verifiable delivery and consumption path
+```
+
+#### Current public problem surface
+
+OpenAI Codex issue [#50769](https://github.com/openai/codex/issues/50769) contains multiple reports where later user approval was followed by different observed outcomes: the forwarded update was absent from child-task read-back, approval evidence was treated as untrusted, or a tool returned `user cancelled MCP tool call` despite the user reporting no cancellation. Nakagawa Master proposed this three-layer separation and explicit failure attribution in [comment 5986370673](https://github.com/openai/codex/issues/50769#issuecomment-5986370673).
+
+This is currently a **problem/contract proposal**, not evidence that Codex has implemented or accepted the design. The independent incident reports predate that Nakagawa comment and therefore are not counted as Nakagawa-derived adoption or recognition.
 
 ## Implementation pattern
 
