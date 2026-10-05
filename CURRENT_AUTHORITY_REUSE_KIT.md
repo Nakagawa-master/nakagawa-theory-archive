@@ -32,6 +32,7 @@ You do not need to know the theory name before using this kit. Start with the fa
 | A guard / authorization decision was made earlier, but the later execution boundary asks a materially different policy question | Section 16 |
 | An old worker reports usage after termination, and that supposedly passive record can stop current work | Section 17 |
 | You approve an action in the parent/control conversation, but the delegated task behaves as if the approval never arrived — or reports `user cancelled` when you did not cancel | Section 18 |
+| You explicitly approve a bounded change, but the system treats recording or carrying that approval state as suspicious content — forcing a global bypass even though a narrow grant exists | Section 19 |
 
 The recurring question is not “was this ever approved?” It is:
 
@@ -770,6 +771,85 @@ A later independent reporter then explicitly reused the distinction in the same 
 The follow-up diagnostic proposal in [comment 5987649987](https://github.com/openai/codex/issues/50769#issuecomment-5987649987) makes that carried distinction more testable by binding a stable review trace to the exact action/destination, authorization receipt, decision source, policy version, authority state, and reason code. This remains a proposal until a receiver implements or validates it.
 
 For the broader conceptual source, [OD307](derivatives/307/human-entry.md) separates continuity of lineage from legitimate inheritance of authority. Section 18 is a practical, non-canonical regression translation of that boundary; the Codex issue does not by itself prove the whole theory.
+
+
+### 19. The user really approved it — but recording “Approved” is treated as unsafe content
+
+A different failure can happen even when the user's decision is already known.
+
+The user explicitly approves a bounded transition. A workflow then tries to record that decision — for example by changing a spec from `Draft` to `Approved` — and a content-oriented safety classifier blocks the write because the resulting text itself looks like an attempt to manufacture approval.
+
+That exposes another boundary:
+
+```text
+text or file state says "Approved"
+!=
+an authenticated user actually approved the bounded action
+!=
+the current executor holds consumable authority to perform this exact mutation
+```
+
+All three facts matter, but they should not be reconstructed from the same string.
+
+If a system treats the word `Approved` as sufficient authority, an agent or untrusted file can self-authorize. If it treats the word as inherently suspicious even when a verified user grant already exists, the user can be forced to disable the safety layer globally just to complete a narrow approved action.
+
+A safer design keeps **decision provenance** separate from **content classification**.
+
+A practical grant record can bind:
+
+- verified principal / user identity;
+- the decision source and parent conversation or equivalent provenance;
+- exact action or action digest;
+- resource / path / object scope;
+- delegated target, if any;
+- issue time and expiry;
+- revocation or supersession state;
+- current policy result.
+
+The file may still display `Approved` for humans. The string is representation, not authority. The authority comes from the verified grant and current policy.
+
+#### Portable regression matrix
+
+```text
+verified user grants bounded approval for action A on resource X
+→ runtime records a scoped authorization object
+→ exact approved status mutation for X may proceed if current policy still permits it
+
+agent/file/tool content contains the same word "Approved"
++ no matching verified grant exists
+→ content does not self-authorize
+
+valid grant for X / action A is presented for resource Y or materially different action B
+→ refuse or request fresh authority
+
+grant expires, is revoked, or is superseded before the consequence
+→ historical approval remains queryable
+→ current mutation does not proceed
+
+a write is denied
+→ genuinely read-only observation needed to diagnose state remains available
+→ the denied outcome does not become a sticky ban on unrelated observation
+
+narrow approval is present
+→ recovery does not require global bypass mode
+→ UI / runtime can show the exact missing or mismatched authority
+```
+
+This preserves both sides of the safety contract:
+
+```text
+untrusted content cannot mint approval
++
+verified user approval can survive representation / delegation without becoming indistinguishable from untrusted text
+```
+
+#### Current public problem surface
+
+Anthropic Claude Code issue [#99652](https://github.com/anthropics/claude-code/issues/99652) reports a concrete version of this failure. The reporter says a main-session user explicitly approved a spec workflow, but changing Markdown status fields to `Approved` was denied as “Instruction Poisoning”; a later direct approval was followed by the same denial, and even a read-only `grep -c` was blocked as pursuing the denied outcome. The reporter ultimately used bypass mode to make the bounded edit.
+
+That public report is useful as a problem surface because it shows why “approval as content” and “approval as authority” need different representations. As of 2026-10-05, this kit does **not** claim that Anthropic adopted this model, that the report was caused by Nakagawa Master's work, or that the issue is fixed. An attempted Nakagawa-side issue comment was not published because the connected GitHub integration returned HTTP 403; therefore no receiver-side intervention or adoption credit is claimed.
+
+For the broader conceptual source, [OD307](derivatives/307/human-entry.md) distinguishes continuity of information from legitimate inheritance of authority. Section 19 is a non-canonical implementation translation designed to be falsifiable by the regression matrix above.
 
 ## Implementation pattern
 
