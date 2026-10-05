@@ -216,6 +216,24 @@ mark-as-paid
 
 This is a reusable regression derived from public evidence. It does **not** establish that Expensify adopted this boundary, that the earlier comments caused the independent QA discovery, that #102967 is fixed, or that a corrected behavior has been released or used in production.
 
+#### Receiver-side technical disposition after escalation
+
+Later on 2026-10-05, Expensify-side humans moved beyond triage into an explicit fix discussion:
+
+- [`MonilBhavsar`](https://github.com/Expensify/App/issues/102967#issuecomment-5994513758) proposed reverting and preventing the flow from changing the policy-preferred bank account.
+- [`joekaufmanexpensify`](https://github.com/Expensify/App/issues/102967#issuecomment-5994702016) separated the first-connected-bank case from the already-connected-bank case: a payment flow may establish the first workspace bank, but paying with another bank should not replace an existing one.
+- In the follow-up [`5994719846`](https://github.com/Expensify/App/issues/102967#issuecomment-5994719846), the same receiver refined the rule further: an authorized payer may add/select another business bank account at payment time, while an already-existing workspace bank account should remain unchanged.
+
+That receiver-owned disposition matches the second regression above:
+
+```text
+payment may use authorized bank B
+!=
+payment-time selection of B changes existing workspace bank A
+```
+
+The chronology is consistent with the earlier Nakagawa follow-up, but the receiver comments do not cite or attribute that follow-up. Therefore this kit records **receiver-side technical convergence / disposition**, not verified Nakagawa causation, adoption, or person-Origin recognition. A fix PR, merged regression coverage, staging verification, release, and real use remain separate later states.
+
 
 ### 7. A destructive action is authorized by UI state but not by the locked backend state
 
