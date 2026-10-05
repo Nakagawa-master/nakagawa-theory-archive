@@ -57,7 +57,7 @@ This example is included to avoid treating “a response occurred” as equivale
 ## 1. PostHog | Separate producer-supplied evidence from PostHog's own measurement
 
 **Origin surface:** the Nakagawa-master review on [PostHog/posthog#92252](https://github.com/PostHog/posthog/pull/92252)  
-**Current state:** original PR #92252 was closed unmerged on 2026-09-28. The author explicitly moved the stack forward: measurement/evidence now lives in [#107795](https://github.com/PostHog/posthog/pull/107795), while the suggestion/action layer continues in [#107802](https://github.com/PostHog/posthog/pull/107802). Both successors are open and unmerged.
+**Current state:** original PR #92252 was closed unmerged on 2026-09-28. The author explicitly moved the stack forward: outcome measurement lives in [#107879](https://github.com/PostHog/posthog/pull/107879), measurement/evidence in [#107795](https://github.com/PostHog/posthog/pull/107795), and the suggestion/action layer in [#107802](https://github.com/PostHog/posthog/pull/107802). All three merged to master on 2026-10-02 and deployment is verified in dev, prod-us, and prod-eu. The feature remains behind rollout controls, so customer availability and real use are not established.
 
 A Nakagawa-master review identified that producer-authored evidence should not be presented as if it had been independently measured by PostHog.
 
@@ -85,8 +85,10 @@ A separate review also identified the capability boundary **narrow capability !=
 
 That suggestion/action layer now continues in successor #107802. Its current scout contract still separates suggestion creation from human approval and later publication. This page does not attribute the whole successor stack to Nakagawa-master alone.
 
-**Publicly verifiable here:** origin review → matching third-party implementation → explicit author continuity into successor PRs → current server-side measurement, Measured by PostHog / Unverified, producer-measurement distrust, tests and browser verification.  
-**Not established here:** merge of #107795/#107802, customer rollout, verified production-user contact, exclusive causality for the successor changes, or broad human recognition.
+PRs #107879, #107795, and #107802 merged as one stack on 2026-10-02. PostHog's deployment bot records the same deployment workflow reaching dev at 22:42 UTC, prod-us at 22:57, and prod-eu at 23:12. The successor PR bodies preserve the #92252 stack lineage, but they do not explicitly re-name `Nakagawa-master`.
+
+**Publicly verifiable here:** origin review → receiver-owned successor stack → server-side measurement, Measured by PostHog / Unverified, producer-measurement distrust, internal scout-only proposal capability, per-version outcome reading → tests/browser verification → merge → dev/prod-us/prod-eu deployment.  
+**Not established here:** customer feature-flag rollout, verified production-user use, a fresh voluntary person-Origin rereference in the successor PRs, exclusive causality for the successor changes, or broad human recognition.
 
 ---
 
