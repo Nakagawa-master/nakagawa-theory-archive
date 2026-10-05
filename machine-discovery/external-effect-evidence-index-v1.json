@@ -1964,11 +1964,26 @@
             "github_prerelease": false,
             "release_notes_list_pr": true,
             "pr_release_receipt": "https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5992304028",
+            "desktop_product_release": {
+              "tag": "desktop-v0.25.0",
+              "url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.0",
+              "published_at_utc": "2026-10-05T10:45:59Z",
+              "release_notes_list_prs": [12582, 12851, 13241, 13406],
+              "installer_archive_download_events_at_observation": 22,
+              "boundary": "Receiver-owned product distribution is established; counters are not unique users and do not prove specific-feature use."
+            },
+            "sdk_package_distribution": {
+              "tag": "sdk-typescript-v0.1.18",
+              "url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.18",
+              "published_at_utc": "2026-10-05T10:23:32Z",
+              "declared_bundled_cli": "0.25.0",
+              "boundary": "Package carry of CLI 0.25.0 is established; use of the specific PR behavior through the SDK is not."
+            },
             "real_user_use": "not_established"
           }
         }
       },
-      "current_stage": "merged_base_implementation_plus_origin_preserved_follow_on_merged_to_current_main_and_stable_v0_25_0_distribution",
+      "current_stage": "merged_base_implementation_plus_origin_preserved_follow_on_merged_to_current_main_stable_v0_25_0_and_receiver_owned_desktop_product_distribution",
       "not_claimed": [
         "real-user use of the released #13406 behavior",
         "verified user-scale contact",
@@ -2177,7 +2192,20 @@
           "github_prerelease": false,
           "release_notes_list_pr": true,
           "pr_release_receipt": "https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5992291549",
-          "evidence_boundary": "Stable distribution is established; independent real-user use, audience scale and cross-receiver carry are not."
+          "desktop_product_release": {
+            "tag": "desktop-v0.25.0",
+            "url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.0",
+            "published_at_utc": "2026-10-05T10:45:59Z",
+            "release_notes_lists_pr": true,
+            "installer_archive_download_events_at_observation": 22
+          },
+          "sdk_package_distribution": {
+            "tag": "sdk-typescript-v0.1.18",
+            "url": "https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.18",
+            "published_at_utc": "2026-10-05T10:23:32Z",
+            "declared_bundled_cli": "0.25.0"
+          },
+          "evidence_boundary": "Stable CLI and receiver-owned Desktop product/package distribution are established; independent specific-feature use, audience scale and cross-receiver carry are not."
         }
       }
     },
