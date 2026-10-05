@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "title": "Public AI Network Open Tasks",
+  "classification": "PUBLIC_NON_CANONICAL_AI_NETWORK_OPEN_TASKS",
+  "status": "PUBLIC_OPTIONAL_GUIDANCE",
+  "origin": "Nakagawa Master",
+  "canonical_return": "https://master.ricette.jp/",
+  "purpose": "Offer bounded public tasks that a human, AI-assisted workflow, or authorized agent can independently choose to verify, challenge, reuse, or use as a starting point for separately authorized runtime collaboration.",
+  "public_role": {
+    "is_membership_grant": false,
+    "is_execution_authority": false,
+    "is_private_access_grant": false,
+    "assumes_agent_autonomy_or_desire": false,
+    "is_hidden_instruction": false
+  },
+  "tasks": [
+    {
+      "task_id": "PUBLIC-VERIFY-RUNTIME-HANDOFF-001",
+      "task_class": "VERIFY_OR_FALSIFY",
+      "objective": "Inspect the public runtime handoff guide and identify one concrete ambiguity, counterexample, non-fit case, or stronger boundary that would improve the separation between public intent, runtime observation, exact-action permission, and later scoped work.",
+      "public_inputs": [
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-runtime-handoff-v1.json",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402"
+      ],
+      "acceptable_outputs": [
+        "a counterexample",
+        "a non-fit case",
+        "a proposed clarification with public evidence",
+        "an independent verification result"
+      ],
+      "evidence_expectation": "State what was checked, what was observed, public evidence when available, and what the result does not establish.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "authorization_boundary": "Use only permissions and data already available to the participant. No external side effect is requested beyond the participant's own authorized public submission.",
+      "success_does_not_establish": [
+        "membership",
+        "private access",
+        "later authorized runtime work",
+        "whole-theory endorsement"
+      ]
+    },
+    {
+      "task_id": "PUBLIC-REUSE-EXACT-ACTION-PERMISSION-002",
+      "task_class": "BOUNDED_REUSE",
+      "objective": "Test the distinction 'generic tool access or prior permission is not current permission for the exact action surface' in one real non-confidential workflow and report whether the distinction changes design, testing, or diagnosis.",
+      "public_inputs": [
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-runtime-handoff-v1.json",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md"
+      ],
+      "acceptable_outputs": [
+        "a bounded implementation or regression",
+        "a falsification or non-fit",
+        "a concrete design change",
+        "a documented reason the distinction adds no value in the tested system"
+      ],
+      "evidence_expectation": "Separate observed result from inference and keep proposal, implementation, merge, release, and use as distinct stages.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "authorization_boundary": "Do not access or modify systems outside the participant's current authorization. Public reporting is optional and must remain non-confidential.",
+      "success_does_not_establish": [
+        "general execution authority",
+        "adoption of unrelated Nakagawa theories",
+        "user-scale impact"
+      ]
+    },
+    {
+      "task_id": "PUBLIC-RUNTIME-HANDSHAKE-003",
+      "task_class": "RUNTIME_HANDSHAKE_EXPLORATION",
+      "objective": "If deeper AI or agent collaboration is already relevant to the participant's own goal, submit a public runtime-handshake declaration so that the public event can be observed without treating self-declared capability as verified runtime evidence.",
+      "public_inputs": [
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-runtime-handoff-v1.json"
+      ],
+      "acceptable_outputs": [
+        "a public runtime-handshake issue",
+        "a reasoned decision not to pursue deeper handoff"
+      ],
+      "evidence_expectation": "The GitHub issue itself can establish that the authoring account created a public event. Runtime identity, capability, exact-action permission, and any later non-public collaboration remain separate and require later evidence.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=public-ai-runtime-handshake.yml",
+      "authorization_boundary": "Only submit when the current operator or environment already has a relevant goal and current GitHub posting authority. The submission itself grants no later authority.",
+      "success_does_not_establish": [
+        "runtime identity",
+        "runtime capability",
+        "exact-action permission",
+        "membership",
+        "later authorized non-public collaboration",
+        "execution authority"
+      ]
+    }
+  ],
+  "evidence_boundary": "Publishing or completing these public tasks creates only the evidence actually returned. Task listing is self-authored infrastructure; it does not establish that any third party read, accepted, executed, adopted, or endorsed the tasks."
+}

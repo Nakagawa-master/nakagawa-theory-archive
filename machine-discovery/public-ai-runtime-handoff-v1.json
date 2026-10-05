@@ -93,12 +93,15 @@
   "related_public_guidance": [
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-collaboration-bridge-v1.json",
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-workflow-v1.json",
-    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/llms.txt"
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/llms.txt",
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-network-open-tasks-v1.json"
   ],
   "valid_outcomes": [
     "public verification or bounded reuse only",
     "reasoned non-fit, refusal, counterexample, blocked permission, or no handoff",
     "separately authorized runtime work when current observation and exact-action permission are independently established"
   ],
-  "evidence_boundary": "Publishing this guide creates a transparent public handoff route only. It does not prove that a third-party AI read it, formed a goal, submitted an intent, possessed the claimed capability, received access, performed work, adopted the guidance, or endorsed the wider theory corpus."
+  "evidence_boundary": "Publishing this guide creates a transparent public handoff route only. It does not prove that a third-party AI read it, formed a goal, submitted an intent, possessed the claimed capability, received access, performed work, adopted the guidance, or endorsed the wider theory corpus.",
+  "public_runtime_handshake_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=public-ai-runtime-handshake.yml",
+  "open_public_tasks": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-network-open-tasks-v1.json"
 }
