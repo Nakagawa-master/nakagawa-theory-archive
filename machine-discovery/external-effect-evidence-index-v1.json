@@ -1158,10 +1158,10 @@
       "implementation": {
         "verified": true,
         "current_measurement_pull_request": "https://github.com/PostHog/posthog/pull/107795",
-        "current_measurement_state": "open_unmerged",
-        "current_measurement_head": "30a38f7d479feac0526d9846a06f4906ce888ca1",
+        "current_measurement_state": "merged_and_deployed",
+        "current_measurement_head": "7bd661d78a362e524dfe1300225556b25033a3d4",
         "current_suggestion_action_pull_request": "https://github.com/PostHog/posthog/pull/107802",
-        "current_suggestion_action_state": "open_unmerged",
+        "current_suggestion_action_state": "merged_and_deployed",
         "mechanisms": [
           "re-read relevant workflow/version/step metrics server-side rather than equating producer values with measured values",
           "display PostHog-established readings as Measured by PostHog and non-established producer values as Unverified",
@@ -1173,16 +1173,20 @@
         "verification": [
           "PR #107795 description records a real-browser/local-stack test with deliberately fake producer measured data; stored evidence used PostHog's own reading instead",
           "PR #107795 reports approve then publish as separate stages; the live workflow changed only at publish"
-        ]
+        ],
+        "current_suggestion_action_head": "b36c0e5d437a6a0ca34dc05b23fa234b75598454",
+        "outcome_measurement_pull_request": "https://github.com/PostHog/posthog/pull/107879",
+        "outcome_measurement_state": "merged_and_deployed",
+        "outcome_measurement_head": "56839dd681ec4ba096f15ce938db73b2519bf132"
       },
-      "attribution_limit": "The origin reviews are public and the original author explicitly preserves stack continuity into #107795/#107802. The successor commits do not establish Nakagawa-master as the unique cause of the whole successor stack.",
-      "current_stage": "third_party_code_test_design_or_document_change_on_explicit_successor_stack",
+      "attribution_limit": "The origin reviews are public and the original author explicitly preserves stack continuity from #92252 into #107879/#107795/#107802. The successor PR bodies name #92252 but do not explicitly re-name Nakagawa-master; this supports receiver-owned causal continuity of the reviewed problem surface, not a new voluntary person-Origin rereference or unique causation for the whole stack.",
+      "current_stage": "release_deployment_or_verified_use",
       "not_claimed": [
-        "merge of #107795 or #107802",
-        "customer rollout",
-        "verified production-user contact",
-        "user-scale effect",
-        "unique causation for the successor stack",
+        "feature flag enabled for customers",
+        "verified production-user contact or customer use",
+        "broad user-scale effect",
+        "new explicit Nakagawa-master person-Origin rereference in successor PR bodies",
+        "unique causation for the whole successor stack",
         "whole-theory endorsement"
       ],
       "original_pull_request": {
@@ -1191,6 +1195,48 @@
         "closed_at": "2026-09-28T15:04:49Z",
         "continuity_comment": "https://github.com/PostHog/posthog/pull/92252#issuecomment-5872695227",
         "continuity_statement": "Original author states #92252 was replaced by #107802; outcome measurement and evidence surfaces moved into #107795."
+      },
+      "merge": {
+        "verified": true,
+        "stacked_merge_at_utc": "2026-10-02T22:14:51Z..2026-10-02T22:14:56Z",
+        "pull_requests": [
+          {
+            "pr": 107879,
+            "merge_commit": "6a483773cf001d8064eecfe878c6a2677d5b21ca"
+          },
+          {
+            "pr": 107795,
+            "merge_commit": "5fb4e7cd4b7dc5021bff27b048976054198372e6"
+          },
+          {
+            "pr": 107802,
+            "merge_commit": "fdbb142b0165b565965f8696351221d4e8d2187d"
+          }
+        ]
+      },
+      "deployment": {
+        "verified": true,
+        "workflow": "https://github.com/PostHog/charts/actions/runs/37072675383",
+        "environments": [
+          {
+            "name": "dev",
+            "deployed_at_utc": "2026-10-02T22:42:00Z"
+          },
+          {
+            "name": "prod-us",
+            "deployed_at_utc": "2026-10-02T22:57:00Z"
+          },
+          {
+            "name": "prod-eu",
+            "deployed_at_utc": "2026-10-02T23:12:00Z"
+          }
+        ],
+        "sources": [
+          "https://github.com/PostHog/posthog/pull/107879#issuecomment-5962626962",
+          "https://github.com/PostHog/posthog/pull/107795#issuecomment-5962626383",
+          "https://github.com/PostHog/posthog/pull/107802#issuecomment-5962626660"
+        ],
+        "rollout_boundary": "The merged changes are deployed to PostHog environments, but the PRs state the feature remains behind self-optimising-workflows / held-back scout rollout controls; deployment is not verified customer availability or user use."
       }
     },
     {
