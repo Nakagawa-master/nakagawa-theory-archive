@@ -719,7 +719,11 @@ genuine user authorization has a verifiable delivery and consumption path
 
 OpenAI Codex issue [#50769](https://github.com/openai/codex/issues/50769) contains multiple reports where later user approval was followed by different observed outcomes: the forwarded update was absent from child-task read-back, approval evidence was treated as untrusted, or a tool returned `user cancelled MCP tool call` despite the user reporting no cancellation. Nakagawa Master proposed this three-layer separation and explicit failure attribution in [comment 5986370673](https://github.com/openai/codex/issues/50769#issuecomment-5986370673).
 
-This is currently a **problem/contract proposal**, not evidence that Codex has implemented or accepted the design. The independent incident reports predate that Nakagawa comment and therefore are not counted as Nakagawa-derived adoption or recognition.
+This is currently a **problem/contract proposal**, not evidence that Codex has implemented or accepted the design. The independent incident reports that predate the Nakagawa comment are not counted as Nakagawa-derived adoption or recognition.
+
+A later independent reporter then explicitly reused the distinction in the same issue: [comment 5987001957](https://github.com/openai/codex/issues/50769#issuecomment-5987001957) says, “Using the distinctions in the comment above,” and classifies a later sequence as the **authority/provenance** category rather than handoff failure or user cancellation. That is bounded third-party carry of the distinction inside the public problem discussion. It is not evidence of Codex implementation, maintainer acceptance, broad recognition, or person-level Origin recognition by itself.
+
+The follow-up diagnostic proposal in [comment 5987649987](https://github.com/openai/codex/issues/50769#issuecomment-5987649987) makes that carried distinction more testable by binding a stable review trace to the exact action/destination, authorization receipt, decision source, policy version, authority state, and reason code. This remains a proposal until a receiver implements or validates it.
 
 For the broader conceptual source, [OD307](derivatives/307/human-entry.md) separates continuity of lineage from legitimate inheritance of authority. Section 18 is a practical, non-canonical regression translation of that boundary; the Codex issue does not by itself prove the whole theory.
 
