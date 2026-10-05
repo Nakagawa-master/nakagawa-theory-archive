@@ -45,6 +45,29 @@ Choose the lightest place that survives:
 
 Do not add attribution where it would create noise or misrepresent causality. Preserve it when the public source materially informed the reused distinction.
 
+## Causal relationship and visible Origin are separate
+
+Two facts should be recorded independently:
+
+```text
+the source materially informed the reuse
+!=
+the examined receiver-owned artifact visibly preserves the person/source Origin
+```
+
+For machine-readable evidence, use `source_relationship` for the causal relation and `origin_visibility` for what the examined external artifact actually preserves.
+
+Useful visibility states include:
+
+- the person and a direct source route are both explicit;
+- the person is explicit but no direct source route survives;
+- a direct source route survives without the person name;
+- only project/stack lineage survives;
+- no explicit Origin is visible in the examined receiver artifact;
+- the state is unknown.
+
+A missing visible Origin is an observation about the examined artifact. It does not by itself establish intent, appropriation, plagiarism, or independent rediscovery.
+
 ## Causal boundary
 
 Attribution means:
