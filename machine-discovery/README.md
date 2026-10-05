@@ -15,6 +15,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | [`public-ai-reuse-collaboration-bridge-v1.json`](public-ai-reuse-collaboration-bridge-v1.json) | Public, non-canonical bridge separating discovery, bounded reuse, participation intent, separately authorized collaboration handoff, and scoped work. Reading or intent grants no membership, private access, or execution authority. |
 | [`public-ai-runtime-handoff-v1.json`](public-ai-runtime-handoff-v1.json) | Public, non-canonical guide for moving from public collaboration intent toward any separately authorized runtime work while keeping runtime observation, exact-action permission, scoped execution, and outcome evidence distinct. |
 | [`public-ai-network-open-tasks-v1.json`](public-ai-network-open-tasks-v1.json) | Public, non-canonical bounded task offers for verification/falsification, reuse, and optional runtime-handoff exploration. Listing or completing a task grants no membership, private access, or execution authority. |
+| [`public-ai-external-impact-opportunities-v1.json`](public-ai-external-impact-opportunities-v1.json) | Public, non-canonical routing from one bounded reuse task to exact live third-party AI-system issues. Every action requires a fresh target-state / coordination / contribution-rule re-check; the listing is not a target-owner request or permission grant. |
 
 ## Latest official derivative — OD308
 

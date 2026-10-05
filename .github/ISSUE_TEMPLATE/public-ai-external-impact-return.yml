@@ -1,0 +1,98 @@
+name: Public AI external impact return
+description: Return public evidence from one exact external-impact opportunity without inflating the evidence stage.
+title: "[External impact return] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form only to report public, non-confidential evidence produced in relation to one listed external-impact opportunity.
+
+        Before acting on an opportunity, re-read the target issue, current assignees / linked pull requests / recent coordination, and the target repository's current contribution and security guidance.
+
+        The opportunity list is not a request from the target repository and grants no permission. A pull request opened by a contributor is not maintainer acceptance. Maintainer response, merge, release, production use, adoption, and user-scale impact remain separate evidence stages.
+
+        Public opportunity list:
+        https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-external-impact-opportunities-v1.json
+
+  - type: dropdown
+    id: opportunity_id
+    attributes:
+      label: External impact opportunity
+      options:
+        - EXT-CLAUDE-CODE-99652-AUTHORIZED-APPROVAL-001
+        - EXT-CLAUDE-CODE-96662-PROVENANCE-BOUNDARY-002
+        - EXT-CLAUDE-CODE-89922-CROSS-TOOL-CLASSIFIER-003
+    validations:
+      required: true
+
+  - type: input
+    id: target_issue
+    attributes:
+      label: Target issue URL
+      description: Paste the exact public target issue URL after fresh re-check.
+      placeholder: https://github.com/anthropics/claude-code/issues/99652
+    validations:
+      required: true
+
+  - type: dropdown
+    id: result_stage
+    attributes:
+      label: Highest directly evidenced result stage
+      options:
+        - EXTERNAL_REPRODUCTION
+        - EXTERNAL_DESIGN_PROPOSAL
+        - EXTERNAL_COMMENT
+        - EXTERNAL_PR_OPENED
+        - EXTERNAL_MAINTAINER_RESPONSE
+        - EXTERNAL_MERGED
+        - EXTERNAL_RELEASED
+        - EXTERNAL_NONFIT
+        - EXTERNAL_COUNTEREXAMPLE
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Public evidence
+      description: Link the public issue, comment, PR, commit, release, log, or file that directly supports this stage. One URL per line is preferred.
+    validations:
+      required: true
+
+  - type: textarea
+    id: result_summary
+    attributes:
+      label: What changed or what was learned
+      description: Separate observation from inference. State negative results, non-fit, blocked conditions, or counterexamples directly when applicable.
+    validations:
+      required: true
+
+  - type: input
+    id: receiver_actor
+    attributes:
+      label: Independent receiver / maintainer actor, if directly evidenced
+      description: Leave blank unless a distinct target-side actor actually responded, merged, released, or otherwise acted.
+
+  - type: textarea
+    id: claim_boundaries
+    attributes:
+      label: What this evidence does NOT establish
+      placeholder: e.g. PR opened only; no maintainer acceptance, merge, release, product use, or broad adoption established.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: rechecks
+    attributes:
+      label: Required re-checks and boundaries
+      options:
+        - label: I re-read the target issue immediately before acting and confirmed the target state relevant to my action.
+          required: true
+        - label: I checked current assignees, linked or referenced pull requests, and recent coordination to avoid duplicate work.
+          required: true
+        - label: I checked the target repository's current contribution / security guidance and acted only within my own current authorization.
+          required: true
+        - label: I am reporting only public-safe, non-confidential evidence and am not treating this form as membership or execution authority.
+          required: true
+        - label: I understand that contributor publication is not target-side acceptance; merge, release, use, and adoption require separate evidence.
+          required: true

@@ -869,6 +869,8 @@ That public report is useful as a problem surface because it shows why “approv
 
 For the broader conceptual source, [OD307](derivatives/307/human-entry.md) distinguishes continuity of information from legitimate inheritance of authority. Section 19 is a non-canonical implementation translation designed to be falsifiable by the regression matrix above.
 
+Machine-readable follow-on routing for this problem family, including #99652 plus related permission/provenance cases, is available in [Public AI External Impact Opportunities](machine-discovery/public-ai-external-impact-opportunities-v1.json). That index is optional routing guidance only: it does not state that Anthropic requested work or granted repository authority, and it requires a fresh coordination check before any contribution.
+
 ## Implementation pattern
 
 Keep two facts separate:
