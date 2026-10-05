@@ -1214,12 +1214,14 @@ receiver `yiliang114` はそのscope correctionを受け、`Session.ts`のpre-pe
 
 **stable / product distribution:** [Qwen Code v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0) は2026-10-05公開のnon-prereleaseで、release notesに #12851 / #12582 / #13406 を明示しています。PR threadにも各release receiptが返っています。さらに [Qwen Code Desktop v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.0) が10:45:59 UTCに公開され、release notesは #12851 / #12582 / #13241 / #13406 の4本すべてを明示しています。現監査時点でDesktop installer/archive assetには22 download eventsがあります。また [TypeScript SDK v0.1.18](https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.18) はCLI 0.25.0をbundleすると明記しています。これはreceiver-owned product/package surfaceへのcarryを確立しますが、download数はunique usersでもspecific feature useでもありません。
 
-**post-merge native runtime verification:** 2026-10-05、receiver `yiliang114` はcurrent `main` `544d753229f31feca679a85932437650f359e769` 上で、実coordinator + native Host + ACP + direct `kimi-k3` を使い、mockなしで二つのbounded regressionを追加確認しました。
+**post-merge native runtime verification:** 2026-10-05、receiver `yiliang114` はcurrent `main` `544d753229f31feca679a85932437650f359e769` 上で、実coordinator + native Host + ACP + direct `kimi-k3` を使い、mockなしで複数のbounded regressionを追加確認しました。
 
 - [#13406 containment recovery](https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5995045940): modelが実際にworkspace外の`read_file`を呼び、次のreal model requestでconfinement errorを受け取った後、同じtask内でworkspace内readへ進み、Host `/result` 200・run=`completed`まで到達。
 - [#12582 cancellation / capacity release](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5995313414): running中の実native Host taskをWeb Shell Stopが使うAPIでcancelし、lease期限前にrun=`cancelled`、ACP session close、running/queued capacity=0へ遷移。遅延progress 8件はHTTP 409で拒否され、persisted stateは変化しませんでした。
+- [#12582 idle-Host offline / same-identity recovery](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5995717945): assigned idle Hostを通常停止し、production heartbeat windowで自然にoffline化した後もtaskはqueued・0 attempt・leaseなし・model requestなしを維持し、別のonline local runtimeや別native Hostは引き継ぎませんでした。同じHostをcached credentialで再起動すると同じHost IDを回復し、そのHostだけが元taskをleaseして1 run / 1 attemptで完了しました。
+- [#12582 running-Host controlled loss / coordinator cancellation settlement](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5995929922): real taskのrunning後に所有Host daemon + ACP childだけをSIGSTOPし、production heartbeatで自然にoffline化。Hostを再開・再接続しないままcancelを受け、coordinatorが元lease expiryの1.426秒後にrun=`cancelled`へsettleし、coordinator側running/queued occupancyを0へ戻しました。停止中のphysical Host session自体はその時点で解放されておらず、remote process killの成功は主張されていません。
 
-これは**receiver自身が実runtime経路で該当behaviorを動かした証拠**です。単なるunit test / release-noteだけより一段強い一方、receiver-operated regressionであり、独立した一般ユーザーのproduction useとは分けます。
+これは**receiver自身が実runtime経路で該当behaviorを動かした証拠**です。単なるunit test / release-noteだけより一段強く、containment recovery・running cancel・idle offline recovery・running Host loss後のcoordinator settlementまでreceiver-operated matrixが広がりました。一方、後二つのlifecycle regressionはreceiver/project-owned verificationであり、Nakagawa-masterへの追加因果creditではありません。独立した一般ユーザーのproduction useとも分けます。
 
 **まだ確認できないこと:** 独立した実利用者がこの具体的変更へ接触したこと、利用者規模、cross-receiver reuse、広い人物認知。#13157はreceiverがscope correctionへの直接応答として作成したため、それ自体を後日に自発的にNakagawa Masterを再参照したものとは扱いません。
 
