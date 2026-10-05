@@ -38,7 +38,7 @@
 
 ## Qwen Codeで実際に変わったこと
 
-Qwen Codeの公開PRでは、agentを手元の実行環境から別のmanaged runtimeへ移せる機能が開発されています。
+Qwen Codeの公開PRでは、agentを手元の実行環境から別のmanaged runtimeへ移せる機能が実装されました。
 
 Nakagawa-masterは、すでに発行した共有が残ったまま実行場所だけが変わった場合、その共有が何を意味するのかを明示すべきだと指摘しました。
 
@@ -52,8 +52,15 @@ Nakagawa-masterは、すでに発行した共有が残ったまま実行場所�
 - [開発側の返答](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5911699280)
 - [変更commit 74bf55053d](https://github.com/QwenLM/qwen-code/commit/74bf55053d271595cf5bab8e1fcd91bb3a8188b2)
 
-このページを書いた時点では、PR #12582自体はまだopenです。  
-したがって、ここで確認できるのは、第三者側で契約文と共有画面が実際に変更されたところまでです。merge、release、実利用者への到達までは数えません。
+その後、PR #12582は2026年10月2日にmergeされました。さらに2026年10月5日公開のQwen Code v0.25.0とQwen Code Desktop v0.25.0のrelease notesにも、#12582が明記されています。
+
+つまり、この話は「外から提案された」で止まっていません。第三者側で契約文と共有画面が変わり、その変更が本流へ入り、正式な配布物にも載ったところまで公開記録で確認できます。
+
+- [PR #12582のmerge commit](https://github.com/QwenLM/qwen-code/commit/45ee202cb14c171c73185a3dbbd89ed1203f2604)
+- [Qwen Code v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0)
+- [Qwen Code Desktop v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.0)
+
+ただし、**releaseに入ったことと、独立した利用者がこの具体的な変更を実際に使ったことは同じではありません。** 現時点で後者までは確認していません。
 
 ## 自分のサービスなら
 
