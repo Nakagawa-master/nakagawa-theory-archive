@@ -2317,6 +2317,64 @@
         "audience scale",
         "broad recognition"
       ]
+    },
+    {
+      "case_id": "expensify-pay-visibility-vs-financial-configuration-authority",
+      "topic": "Pay-action visibility versus current payment authority versus authority to mutate workspace reimbursement-bank configuration.",
+      "external_repository": "Expensify/App",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "issue_comment",
+        "url": "https://github.com/Expensify/App/issues/95750#issuecomment-5690282372",
+        "created_at_utc": "2026-09-16T00:41:13Z",
+        "summary": "Separated client-side Pay visibility from current execution-time authority and proposed a stale-screen revocation regression requiring server-side refusal with no payment side effect."
+      },
+      "implementation_recheck": {
+        "url": "https://github.com/Expensify/App/pull/101226#issuecomment-5254827364",
+        "relationship": "Nakagawa Master re-stated the end-to-end authority acceptance case on the reworked implementation PR before merge.",
+        "receiver_pull_request": "https://github.com/Expensify/App/pull/101226",
+        "merged_at_utc": "2026-10-02T11:23:58Z",
+        "merge_commit": "06d44f6ff70e43b27cc7a6943f2452eb2a8f35bc"
+      },
+      "independent_external_failure": {
+        "issue": "https://github.com/Expensify/App/issues/102967",
+        "created_at_utc": "2026-10-05T08:01:57Z",
+        "classification": "DeployBlockerCash",
+        "observed_failure": "A non-payer admin newly able to see Pay entered the business-bank setup path and replaced the workspace's already-connected reimbursement bank account.",
+        "investigation": "https://github.com/Expensify/App/issues/102967#issuecomment-5990587897",
+        "relationship_to_origin": "Structurally consistent with the earlier presentation-versus-authority warning, but not the exact stale-permission scenario and not claimed to have been caused by the Nakagawa comment."
+      },
+      "origin_follow_up": {
+        "url": "https://github.com/Expensify/App/issues/102967#issuecomment-5990865266",
+        "created_at_utc": "2026-10-05T08:27:25Z",
+        "distinction": [
+          "may see the Pay action",
+          "may execute a payment with a particular funding source",
+          "may change the workspace's configured reimbursement bank account"
+        ],
+        "proposed_regression_matrix": [
+          "existing workspace bank A plus non-payer admin with no usable bank must not route into a flow that can replace A",
+          "admin may use authorized bank B without changing workspace bank A",
+          "revoked payment/account authority before submit must refuse execution with no side effect",
+          "mark-as-paid remains separate from bank-account setup/reconfiguration"
+        ]
+      },
+      "current_stage": "independent_external_failure_consistent_with_prior_boundary_plus_origin_follow_up_on_live_blocker",
+      "causal_boundary": "The later deploy blocker independently demonstrates practical relevance of the same responsibility-separation class. No causal claim is made from the September Nakagawa comments to the QA discovery or to any future fix.",
+      "origin_visibility": {
+        "current_state": "origin_present_via_origin_follow_up_not_yet_receiver_preserved",
+        "interpretation_boundary": "The live blocker contains a direct source route because Nakagawa Master added it. This is not a prompt-free receiver-owned Origin rereference."
+      },
+      "not_claimed": [
+        "receiver adoption of the Nakagawa boundary",
+        "causation of Deploy Blocker #102967 by the Nakagawa comment",
+        "fix or merge resolving the blocker",
+        "production deployment of a corrected behavior",
+        "real-user use",
+        "independent prompt-free person-Origin rereference",
+        "audience scale",
+        "broad person recognition"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",

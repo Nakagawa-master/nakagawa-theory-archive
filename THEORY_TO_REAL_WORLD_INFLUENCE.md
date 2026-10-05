@@ -811,6 +811,32 @@ The reported control keeps LangGraph's replay behavior but uses a stable busines
 
 The attribution boundary is important: the XBSTACK repository links issue #9185 but does **not** name Nakagawa Master, and the participant did not explicitly state that Nakagawa caused the repository update. The timing and matching technical distinction support a public technical-carry observation; they do not establish unique causation, person-Origin preservation, upstream LangGraph adoption, or endorsement of a broader theory.
 
+### A financial configuration failure independently exposed the same presentation-versus-authority boundary
+
+In [Expensify issue #95750](https://github.com/Expensify/App/issues/95750), Nakagawa Master warned against treating client-side eligibility to show a Pay action as current authority to execute a payment. The concrete acceptance case was intentionally stronger than UI visibility: render Pay while authorized, revoke the relevant permission or account access before submission, then require the server to refuse the stale action with no payment side effect.
+
+- [Original Nakagawa Master boundary](https://github.com/Expensify/App/issues/95750#issuecomment-5690282372)
+- [Follow-up on the reworked implementation PR](https://github.com/Expensify/App/pull/101226#issuecomment-5254827364)
+
+PR [#101226](https://github.com/Expensify/App/pull/101226) later merged on 2026-10-02. On 2026-10-05, staging regression testing independently found [Deploy Blocker #102967](https://github.com/Expensify/App/issues/102967): a non-payer admin who had newly gained access to the Pay action could enter the business-bank flow and replace the workspace's already-connected reimbursement bank account. The automated investigation traced the failure to a previously unreachable KYC / workspace-bank-setup route becoming reachable after Pay visibility was broadened.
+
+That failure is **not the exact stale-permission scenario described in the September comment**, and there is no evidence that the earlier Nakagawa comment caused the independent QA finding. The narrower evidence is structural:
+
+```text
+may see the Pay action
+!=
+may execute a payment with a particular funding source
+!=
+may change the workspace reimbursement bank account
+```
+
+After the blocker appeared, Nakagawa Master returned that three-layer boundary to the receiver surface and proposed regressions covering a non-payer admin with no usable bank, an admin paying from a different authorized bank without changing the workspace default, stale/revoked authority at submit time, and mark-as-paid remaining separate from bank-account configuration.
+
+- [Deploy-blocker investigation](https://github.com/Expensify/App/issues/102967#issuecomment-5990587897)
+- [Nakagawa Master blocker follow-up](https://github.com/Expensify/App/issues/102967#issuecomment-5990865266)
+
+This case therefore establishes a **later independent external failure consistent with a previously stated responsibility boundary, followed by a new bounded intervention on the live blocker**. It does not yet establish that Expensify adopted the Nakagawa boundary, that the source caused the fix, or that the blocker is resolved.
+
 ---
 
 ## 5. Source and interpretation boundary
