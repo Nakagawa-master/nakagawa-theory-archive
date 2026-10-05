@@ -1958,16 +1958,19 @@
             }
           ],
           "post_merge_release_state": {
-            "stable_release_containing_merge": "not_established",
-            "prerelease_containing_merge": "not_established_at_2026-10-05T08:10Z",
+            "stable_release_containing_merge": "v0.25.0",
+            "release_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0",
+            "published_at_utc": "2026-10-05T09:44:40Z",
+            "github_prerelease": false,
+            "release_notes_list_pr": true,
+            "pr_release_receipt": "https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5992304028",
             "real_user_use": "not_established"
           }
         }
       },
-      "current_stage": "merged_base_implementation_plus_origin_preserved_follow_on_merged_to_current_main",
+      "current_stage": "merged_base_implementation_plus_origin_preserved_follow_on_merged_to_current_main_and_stable_v0_25_0_distribution",
       "not_claimed": [
-        "stable or prerelease distribution containing PR #13406",
-        "real-user use of the merged #13406 behavior",
+        "real-user use of the released #13406 behavior",
         "verified user-scale contact",
         "broad person recognition"
       ],
@@ -1977,7 +1980,7 @@
         "state": "merged",
         "merged_at_utc": "2026-10-02",
         "commit": "45ee202cb14c171c73185a3dbbd89ed1203f2604",
-        "scope": "Base Host implementation merged; follow-on policy-stage ordering proposal in #13157 remains separate and is not claimed implemented."
+        "scope": "Base Host implementation merged. The follow-on policy-stage ordering line later became PR #13406 and is now merged and included in stable v0.25.0; unrelated project-owned changes are not assigned Nakagawa causal credit."
       }
     },
     {
@@ -2116,7 +2119,7 @@
         "clarification": "https://github.com/QwenLM/qwen-code/pull/13241#discussion_r4172530358",
         "meaning": "The recommendation was originally scoped as an external technical recommendation rather than a repository-maintainer ruling. Merge integrates the implementation, and the later receiver issue re-check explicitly attributes the implemented option-A decision to @Nakagawa-master; this does not imply repository-wide endorsement of a larger theory."
       },
-      "current_stage": "third_party_implementation_merged_with_actual_receiver_ui_native_runtime_verification_later_same_receiver_origin_rereference_and_public_prerelease_distribution",
+      "current_stage": "third_party_implementation_merged_with_actual_receiver_ui_native_runtime_verification_later_same_receiver_origin_rereference_and_stable_v0_25_0_distribution",
       "reusable_check": "CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work",
       "machine_reuse_challenge": {
         "file": "machine-discovery/independent-reuse-challenges-v1.json",
@@ -2128,8 +2131,7 @@
         "boundary": "Lineage continuity does not automatically inherit present authority; non-canonical implementation translation."
       },
       "not_claimed": [
-        "stable release containing PR #13241",
-        "verified downstream operational or independent end-user use from the prerelease",
+        "verified downstream operational or independent end-user use from the stable release",
         "late physical-spend accounting completeness",
         "independent adoption of this reuse kit",
         "whole-theory adoption",
@@ -2146,7 +2148,7 @@
         "head": "2d438dbbcfa5e8fe98846ea6731b13c890ac6573",
         "claim_boundary": "Repository merge establishes integration of the implementation at the merged head. It is not claimed as a separate explicit maintainer statement endorsing every semantic framing in the review discussion."
       },
-      "verification_boundary": "stable release inclusion, downstream operational or independent user use, cross-receiver reuse of this exact boundary, independent audience contact, or broader recurring person-Origin return",
+      "verification_boundary": "downstream operational or independent user use, cross-receiver reuse of this exact boundary, independent audience contact, or broader recurring person-Origin return",
       "post_merge_origin_rereference": {
         "actor": "yiliang114",
         "url": "https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808",
@@ -2167,7 +2169,16 @@
           "behind_by": 0,
           "merge_base_equals_base_merge_commit": true
         },
-        "evidence_boundary": "Public nightly/prerelease inclusion is established. Stable-release inclusion and independent real-user use are not established."
+        "evidence_boundary": "Public nightly/prerelease inclusion is established.",
+        "stable_release": {
+          "release_tag": "v0.25.0",
+          "release_url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0",
+          "published_at_utc": "2026-10-05T09:44:40Z",
+          "github_prerelease": false,
+          "release_notes_list_pr": true,
+          "pr_release_receipt": "https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5992291549",
+          "evidence_boundary": "Stable distribution is established; independent real-user use, audience scale and cross-receiver carry are not."
+        }
       }
     },
     {

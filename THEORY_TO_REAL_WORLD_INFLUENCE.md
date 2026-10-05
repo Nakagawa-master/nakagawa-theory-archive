@@ -98,7 +98,12 @@ Qwen then published prerelease `v0.24.7-nightly.20261004.9915c7ff8f` on 2026-10-
 
 - [Qwen Code nightly/prerelease v0.24.7-nightly.20261004.9915c7ff8f](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7-nightly.20261004.9915c7ff8f)
 
-This is a prerelease/nightly inclusion claim, not a stable-release claim. It does not establish independent real-user use of the changed behavior, broad audience reach, cross-receiver reuse of this exact boundary, or broad person recognition.
+Qwen then published non-prerelease **v0.25.0** on 2026-10-05 at 09:44:40 UTC. The official release notes explicitly list PR #13241, and the PR thread itself carries the release receipt. This advances the same receiver-owned implementation from nightly inclusion to stable distribution.
+
+- [Qwen Code stable release v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0)
+- [PR #13241 stable-release receipt](https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5992291549)
+
+Stable release inclusion is now established. It still does not establish independent real-user use of the changed behavior, broad audience reach, cross-receiver reuse of this exact boundary, or broad person recognition.
 
 ### C. Does the Origin relation survive independent disagreement?
 
@@ -128,7 +133,7 @@ Primary records:
 
 The first second-person review was submitted as an approval at head `7c42221c` and was dismissed when the PR head moved. The same reviewer, `chiga0`, then re-read the later delta and submitted a fresh **APPROVED** review at head `f9922e44`.
 
-That makes the second-person carry stronger than a one-head snapshot: the reviewer independently reconstructed the Nakagawa-origin boundary, then continued reviewing the line after later receiver changes. It is still **not merge credit**. The PR remains open and the repository's separate code-owner / maintainer review gate is not established as complete by this review alone.
+That makes the second-person carry stronger than a one-head snapshot: the reviewer independently reconstructed the Nakagawa-origin boundary, then continued reviewing the line after later receiver changes. That review was not, by itself, merge credit. Since then PR #12582 merged on 2026-10-02, and Qwen's non-prerelease **v0.25.0** release published on 2026-10-05 explicitly lists #12582 in its release notes. Stable distribution is therefore established; independent real-user use and audience scale are not.
 
 A later #12582 closeout produced a different, narrower Origin-preserved effect. When F3 had two separable halves — a declared-tool/runtime mismatch and a wider guard-before-permission ordering change — Nakagawa-master explicitly asked to land only the tool-filter half in #12582 and move the ordering half to a separate pass. Receiver `yiliang114` implemented that scope correction, centralized the Host read-only set in `AGENT_HOST_TOOL_NAMES`, and created [issue #13157](https://github.com/QwenLM/qwen-code/issues/13157). The new issue explicitly names the **“scope correction from Nakagawa-master”** as the reason the ordering change was removed from #12582.
 
@@ -182,7 +187,10 @@ Additional records:
 - [late Qwen review-bot approval](https://github.com/QwenLM/qwen-code/pull/13406#pullrequestreview-5411208284)
 - [merged implementation commit](https://github.com/QwenLM/qwen-code/commit/69d060e24c3d7740e3f526ff4915d9caff031ede)
 
-This advances the follow-on from an Origin-preserved project-owned issue to **receiver implementation + measured review feedback converted into receiver regression coverage + green current-head CI + two additional approval reviews + merge into current main**. This is stronger receiver-owned operational carry than the earlier open-PR state. It still does not establish release, real-user use, audience scale, broad person recognition, or new prompt-free person-Origin rereference at the merge step.
+This advances the follow-on from an Origin-preserved project-owned issue to **receiver implementation + measured review feedback converted into receiver regression coverage + green current-head CI + two additional approval reviews + merge into current main**. Qwen then published non-prerelease **v0.25.0** on 2026-10-05 at 09:44:40 UTC; the official release notes explicitly list #13406 and the PR thread carries a release receipt. Stable distribution of the merged boundary is therefore established. This still does not establish independent real-user use, audience scale, broad person recognition, or a new prompt-free person-Origin rereference at the release step.
+
+- [Qwen Code stable release v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0)
+- [PR #13406 stable-release receipt](https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5992304028)
 
 ### E. Can one receiver reuse the distinction repeatedly on separate implementation seams?
 
@@ -212,6 +220,10 @@ Primary records:
 - [Receiver provenance fix explanation](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5930276480)
 
 The important evidence is not that one repository agreed three times. It is that **different structural distinctions survived separate receiver-side code/test decisions on the same long-running implementation line**. That is stronger than one useful comment because the receiver repeatedly had to translate a boundary into a different implementation seam.
+
+On 2026-10-05 the PR advanced another 26 commits beyond the earlier `3b4220a...` scoped check, to head `f9421bf478...`. The durable Origin boundary remains intact there: `_actor(request)` still derives the durable actor from the verified principal with an `api:` namespace, caller-supplied `author` remains forbidden, the profile-name collision regression remains, and the public docs preserve the same contract. Nakagawa-master posted a fresh scoped re-check at that head; GitHub workflows were `action_required` rather than test-failed.
+
+- [Current-head provenance/control-path re-check](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5992661508)
 
 This still does not establish merge, release, production use, or audience scale. PR #61982 remains open. It also does not establish that every follow-on hardening in the PR was caused by Nakagawa-master; project-owned follow-on work is kept separate from direct causal credit.
 
@@ -320,7 +332,12 @@ A Nakagawa-master review pointed out that a multi-day A2A share was not bound to
 - [Merged PR #12851](https://github.com/QwenLM/qwen-code/pull/12851)
 - [Current A2A contract](https://github.com/QwenLM/qwen-code/blob/main/docs/design/2026-09-09-a2a-frozen-contract.md)
 
-This case does not say the live-policy choice is universally preferable. The inspectable effect is that an ambiguous authority boundary became an explicit product contract, user disclosure, and regression instead of an accidental consequence of two independent stores.
+Qwen's non-prerelease **v0.25.0** release published on 2026-10-05 explicitly lists #12851, so this merged live-policy contract also reached stable distribution.
+
+- [Qwen Code stable release v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0)
+- [PR #12851 stable-release receipt](https://github.com/QwenLM/qwen-code/pull/12851#issuecomment-5992254667)
+
+This case does not say the live-policy choice is universally preferable. The inspectable effect is that an ambiguous authority boundary became an explicit product contract, user disclosure, regression, merge, and stable release instead of an accidental consequence of two independent stores.
 
 These cases add implementation breadth, not audience scale. They show receiver-side code, tests, state-machine rules, or product contracts changing across unrelated systems. They do **not** establish how many end users saw the changes, recognized Nakagawa Master, or adopted the broader theory corpus.
 
