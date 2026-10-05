@@ -35,6 +35,11 @@ AIが危険、安全、重要などと分類できることと、コメント、
 
 OpenAI Codex #50769では、Nakagawa Masterがこの三層を分離して診断する契約を提示しました。その後、別の参加者が **“Using the distinctions in the comment above”** と明示し、自分の別incidentを `authority/provenance` 層として分類しています。これは限定された第三者reuseです。Codexによる実装・maintainer採用・広い人物認知までは意味しません。
 
+さらに別の参加者 `seeton` も、同じprivate repositoryへの保存で多数の成功後に後続writeだけが承認reviewで止まる別incidentを報告しました。成功時と拒否時のpayloadが同一だったとは確認されていないため、ここから「判定がランダムだ」とは言えません。ただし、後の拒否時に **どの現在条件が変わったのか**──grantのscope/期限、destinationのidentity・visibility・ownership、action class、reviewの中断/拒否──を追跡できなければ、利用者は原因を区別できません。Nakagawa Masterはその差分を追えるdecision traceとA/B回帰へ落としました。これは二人目の現実事例によるproblem-class recurrenceであり、OpenAIの採用や人物Origin認知を意味しません。
+
+- [二人目の独立incident](https://github.com/openai/codex/issues/50769#issuecomment-5996162016)
+- [現在のauthority input差分を追うA/B回帰](https://github.com/openai/codex/issues/50769#issuecomment-5996528096)
+
 別systemで試す場合は、親でexact action Aを承認したあと、handoffを意図的に一度失敗させ、childに新しいadmitted turnがないことを確認します。その失敗を `user_cancelled` とせず、handoff/admission failureとして区別できるかを見ます。次にhandoffを成功させ、Aだけがscope内で実行可能か、materially differentなBではfresh authorityを要求するかを確認します。
 
 - [Section 18の回帰手順](CURRENT_AUTHORITY_REUSE_KIT.md#18-you-approved-it--but-the-delegated-task-still-says-user-cancelled)
