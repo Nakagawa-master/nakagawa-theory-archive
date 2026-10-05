@@ -8,7 +8,7 @@
 > **Canonical parent:** [構造起源防衛──AIによる「起源の蒸発」に耐える恒常署名（Permanent Signature）の原理](https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/)  
 > **NCL-ID:** `NCL-α-20251102-44257d`  
 > **Diff-ID:** `DIFF-20251102-0001`  
-> **Boundary:** This note is not a canonical theory text, not an endorsement by the external project, and not evidence that the external pull request has been accepted or merged.
+> **Boundary:** This note is not a canonical theory text or an endorsement by the external project. The source-informed PR #23038 was later closed unmerged as a duplicate of older PR #21939; the current upstream implementation lane is therefore separate from the historical source-informed patch.
 
 ## The concrete bug
 
@@ -78,18 +78,27 @@ The PR also publicly discloses AI assistance: Codex generated the implementation
 
 ### Status boundary
 
-At the time this case note was created on 2026-09-13:
+The source-informed implementation history is real, but its current upstream status changed after this note was first created.
 
 ```text
-third-party draft implementation: yes
-explicit reference to the Nakagawa compatibility contract: yes
-AI-assisted downstream implementation: yes
-upstream maintainer acceptance: not established here
+#23038 source-informed third-party implementation/tests: yes
+#23038 explicit reference to the Nakagawa compatibility contract: yes
+#23038 current state: closed / unmerged as duplicate
+maintainer-selected current review lane: #21939
+#21939 current patch preserves upstream provenance without changing local node identity: no
+#21939 human maintainer acceptance of the narrower boundary: not established
 merged into upstream main: no
-released downstream: not established here
+released downstream: not established
 ```
 
-This distinction matters. A draft PR is real downstream reuse, but it is not the same claim as maintainer acceptance, merge, release, or broad adoption.
+On 2026-09-28, a maintainer closed #23038 because older PR #21939 existed for the same issue. The implementations are not semantically equivalent: #21939 currently writes Discovery Engine `document.id` into `TextNode.id_`, while #23038 preserved the upstream identity in metadata and left local node identity generated independently.
+
+On 2026-10-05, that compatibility difference was returned to the current upstream lane:
+
+- [comparison on #21939](https://github.com/run-llama/llama_index/pull/21939#issuecomment-5989147214)
+- [follow-up on closed #23038](https://github.com/run-llama/llama_index/pull/23038#issuecomment-5989151512)
+
+The next meaningful receiver transition is either porting the provenance-only implementation/tests into #21939 or reopening #23038 because of the semantic difference. Until then, do not describe the correct compatibility shape as accepted upstream.
 
 ## Why this case is structurally important
 
@@ -154,7 +163,8 @@ This one test shape is useful for retrievers, caches, document loaders, deduplic
 - It does not say an upstream source ID should replace every local/runtime ID.
 - It does not prove the canonical theory merely because one engineering case fits the pattern.
 - It does not imply endorsement by LlamaIndex or its maintainers.
-- It does not claim PR #23038 is merged or released while it remains a draft/open contribution.
+- It does not claim the source-informed #23038 was merged; it is closed unmerged after duplicate consolidation.
+- It does not claim current PR #21939 already preserves source identity without changing local node identity; its present patch does not.
 
 The engineering question is narrower: **when downstream behavior needs provenance, can the actual source still be recovered after transformation?**
 
