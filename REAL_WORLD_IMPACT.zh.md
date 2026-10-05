@@ -85,8 +85,10 @@ PR说明还记录了真实浏览器/local-stack验证：故意提交伪造produc
 
 对应的suggestion/action层现在继续在#107802中。当前scout contract仍把“创建suggestion”和“人类approve / publish”分成不同阶段。本页不把successor stack整体归因于Nakagawa-master单独造成。
 
-**公开可确认：** 起点review → 同一边界方向的第三方实现 → author明确迁移到successor → 当前successor继续存在server-side measurement、Measured by PostHog / Unverified、不信任producer伪造measurement、tests与browser verification。  
-**尚未确认：** #107795 / #107802 merge、customer rollout、production真实用户接触、successor修改的唯一因果或广泛人类认知。
+#107879 / #107795 / #107802于2026-10-02作为同一stack merge。deployment bot记录同一workflow在22:42 UTC到达dev、22:57到达prod-us、23:12到达prod-eu。successor PR正文保留了#92252的stack lineage，但没有再次明确写出 `Nakagawa-master` 名称。
+
+**公开可确认：** 起点review → receiver-owned successor stack → server-side measurement、Measured by PostHog / Unverified、producer measurement非信任化、internal scout-only proposal capability、按version读取outcome → tests/browser verification → merge → dev/prod-us/prod-eu deployment。  
+**尚未确认：** customer feature-flag rollout、production用户真实使用、successor PR中的新自发人物Origin再引用、successor修改的唯一因果或广泛人类认知。
 
 ---
 
