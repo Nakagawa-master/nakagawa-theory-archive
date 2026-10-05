@@ -432,8 +432,11 @@
           "keeps generated local TextNode identity separate",
           "adds regression tests for provenance and compatibility"
         ],
-        "draft": true,
-        "merged": false
+        "draft": false,
+        "merged": false,
+        "state": "closed_unmerged",
+        "closed_reason": "Maintainer closed #23038 as a duplicate of older open PR #21939 to consolidate review effort.",
+        "closure_url": "https://github.com/run-llama/llama_index/pull/23038#issuecomment-5872867702"
       },
       "current_stage": "third_party_code_test_design_or_document_change",
       "nakagawa_structural_os_mapping": {
@@ -446,12 +449,22 @@
         "canonical_source": "https://master.ricette.jp"
       },
       "not_claimed": [
+        "current #21939 implementation satisfies the source-identity/local-node-identity boundary",
         "human maintainer approval",
         "merge",
         "release",
         "production use",
         "whole-theory adoption"
-      ]
+      ],
+      "current_receiver_lane": {
+        "pull_request": "https://github.com/run-llama/llama_index/pull/21939",
+        "state": "open_unmerged",
+        "relationship_to_origin": "PR predates the Nakagawa-origin intervention and is not claimed as source-informed reuse.",
+        "current_patch_boundary": "Current patch preserves document_name but assigns upstream Discovery Engine document.id directly to TextNode.id_, thereby changing local node-identity semantics instead of keeping source identity separate.",
+        "origin_follow_up_on_canonical_lane": "https://github.com/run-llama/llama_index/pull/21939#issuecomment-5989147214",
+        "duplicate_pr_follow_up": "https://github.com/run-llama/llama_index/pull/23038#issuecomment-5989151512",
+        "next_external_transition": "receiver ports the provenance-only metadata approach/tests into #21939 or reopens #23038; then maintainer review/merge"
+      }
     },
     {
       "case_id": "memberjunction-ownership-provenance-real-upgrade",

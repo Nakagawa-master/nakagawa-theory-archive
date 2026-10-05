@@ -157,21 +157,26 @@ migrationで同じprimary keyのrowを見つけても、そのrowを自動的に
 
 ## 4. LlamaIndex｜local node identityと、元sourceのidentityを分けて保持する
 
-**対象:** [run-llama/llama_index#21933](https://github.com/run-llama/llama_index/issues/21933) → [PR #23038](https://github.com/run-llama/llama_index/pull/23038)  
-**現在状態:** open / draft / unmerged
+**対象:** [run-llama/llama_index#21933](https://github.com/run-llama/llama_index/issues/21933) → [PR #23038](https://github.com/run-llama/llama_index/pull/23038) → [current receiver lane #21939](https://github.com/run-llama/llama_index/pull/21939)  
+**現在状態:** #23038 closed / unmerged（duplicate整理）・#21939 open / unmerged・compatibility差分をcurrent laneへ返却済み
 
 retrieval処理の途中でtextが保持されていても、upstream document identityが失われれば、後から元sourceへ戻れない場合があります。
 
 `Nakagawa-master` のissue commentは、framework内部のnode identityと、upstream source identityを別の情報として保持するcompatibility boundaryを提示しました。
 
 - [Nakagawa-master comment](https://github.com/run-llama/llama_index/issues/21933#issuecomment-5650957902)
-- [third-party PR #23038](https://github.com/run-llama/llama_index/pull/23038)
+- [source-informed PR #23038](https://github.com/run-llama/llama_index/pull/23038)
+- [current receiver lane #21939](https://github.com/run-llama/llama_index/pull/21939)
+- [current-lane compatibility comparison](https://github.com/run-llama/llama_index/pull/21939#issuecomment-5989147214)
+- [#23038 follow-up after duplicate closure](https://github.com/run-llama/llama_index/pull/23038#issuecomment-5989151512)
 - [公開case note](discovery-notes/implementation-case-source-identity-vs-local-node-identity.md)
 
-第三者が開いたPR #23038は、そのcommentをcompatibility contractとしてPR本文に明示し、`document_id` / `document_name`をmetadataへ保持する実装とtestsを追加しています。
+第三者が開いた#23038は、そのcommentをcompatibility contractとして明示し、`document_id` / `document_name`をmetadataへ保持しつつlocal `TextNode.id_`を独立生成のまま保つ実装とtestsを追加しました。ただし2026-09-28、maintainerはreviewを分散させないため、先に開かれていた#21939を残して#23038をduplicateとしてcloseしました。
 
-**公開記録から確認できること:** source commentが明示的に参照され、第三者PRでcode / testsへ反映されていること。  
-**まだ確認できないこと:** merge、release、deployment。
+ここで二つのPRは意味上同一ではありません。current #21939は、upstream `document.id` を直接 `TextNode.id_` に設定しており、source recoverabilityの修正と同時にlocal node identity contractも変更します。そこで2026-10-05、`Nakagawa-master` はcanonical laneとなった#21939へこの差を具体化し、#23038のprovenance-only metadata実装とregression matrixをportするか、意味差を理由に#23038をreopenする形を提案しました。
+
+**公開記録から確認できること:** source-informedな第三者code/test実装#23038が実在したこと、maintainerがduplicate整理で#21939へreviewを集約したこと、そしてcurrent #21939がまだ元compatibility boundaryを満たす実装ではないため差分がreceiver laneへ明示的に返されたこと。  
+**まだ確認できないこと:** #21939での修正採用、#23038 reopen、human maintainer approval、merge、release、deployment。
 
 ---
 
