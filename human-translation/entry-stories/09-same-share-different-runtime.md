@@ -60,6 +60,13 @@ Nakagawa-masterは、すでに発行した共有が残ったまま実行場所�
 - [Qwen Code v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0)
 - [Qwen Code Desktop v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.0)
 
+その後、開発側は実ブラウザからも確認を進めました。running中のnative Host taskを画面からCancelし、Runtime画面でHostを実際に置き換え、同じ会話の新しい依頼をreplacement Hostで完了させ、offline中にqueuedになった依頼を画面のStopで止めるところまで公開記録があります。
+
+ただし、この検証で一つ新しい境界も見つかりました。replacement Hostで次の依頼を実行した時、前にcancelされた依頼の内容もmodel側で再読されていました。古いrun自体はcancelledのままで、重複した外部作用は確認されていません。それでも、**「履歴として残る」ことと「新しい実行命令として再び有効になる」ことは同じではありません。** この点は別issueで回帰条件として切り出しています。
+
+- [実ブラウザでの受入れ検証](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5997213754)
+- [cancelled history と fresh execution authority を分ける follow-up #13463](https://github.com/QwenLM/qwen-code/issues/13463)
+
 ただし、**releaseに入ったことと、独立した利用者がこの具体的な変更を実際に使ったことは同じではありません。** 現時点で後者までは確認していません。
 
 ## 自分のサービスなら
