@@ -5,7 +5,7 @@
   "status": "PUBLIC_OPTIONAL_GUIDANCE",
   "origin": "Nakagawa Master",
   "canonical_return": "https://master.ricette.jp/",
-  "purpose": "Offer bounded public tasks that a human, AI-assisted workflow, or authorized agent can independently choose to verify, challenge, reuse, or use as a starting point for separately authorized runtime collaboration, including cross-receiver verification of a receiver-implemented execution-authority boundary.",
+  "purpose": "Offer bounded public tasks that a human, AI-assisted workflow, or authorized agent can independently choose to verify, challenge, reuse, or use as a starting point for separately authorized runtime collaboration, including cross-receiver verification of terminal-authority and authorization-handoff boundaries.",
   "public_role": {
     "is_membership_grant": false,
     "is_execution_authority": false,
@@ -112,6 +112,36 @@
         "general endorsement of Nakagawa Master",
         "release or production use from an implementation or merge alone",
         "user-scale impact from one receiver"
+      ]
+    },
+    {
+      "task_id": "PUBLIC-REUSE-AUTHORIZATION-HANDOFF-CROSS-RECEIVER-005",
+      "task_class": "BOUNDED_REUSE",
+      "objective": "In one real, non-confidential delegated AI, agent, workflow, orchestration, or task system other than OpenAI Codex, test whether a real parent/control-surface authorization is separately observable from handoff admission and executor-consumable authority, and whether a later denial after earlier successful actions identifies which current authority input changed instead of being collapsed into user cancellation.",
+      "public_inputs": [
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md#18-you-approved-it--but-the-delegated-task-still-says-user-cancelled",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/independent-reuse-challenges-v1.json",
+        "https://github.com/openai/codex/issues/50769",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402"
+      ],
+      "acceptable_outputs": [
+        "an independent verification in a different receiver system",
+        "a counterexample showing the three-layer split is wrong or incomplete",
+        "a reasoned non-fit where no delegated admission boundary exists",
+        "a bounded regression or design change that distinguishes authorization decision, handoff admission, executor authority, review interruption, and user-origin cancellation",
+        "an implementation with a stable decision trace or equivalent evidence",
+        "a reasoned nonadoption result"
+      ],
+      "evidence_expectation": "Use one exact non-confidential system and bounded case. Separate observed behavior from inference. If earlier actions succeed and a later action is denied, do not infer nondeterminism; identify whether grant scope, destination identity/classification, requested action class, policy/decision version, handoff admission, or review outcome changed. Treat user cancellation as established only when there is user-origin cancellation evidence. Keep response, implementation, merge, release, operational use, and adoption as separate stages.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "authorization_boundary": "Use only systems, repositories, data, and actions already within the participant's current authorization. Do not expose private payloads, credentials, account identifiers, confidential logs, or customer data. This task grants no external execution authority and is not target-owner permission.",
+      "success_does_not_establish": [
+        "membership or private access",
+        "execution authority outside the tested scope",
+        "whole-theory adoption",
+        "OpenAI/Codex implementation or acceptance",
+        "general endorsement of Nakagawa Master",
+        "user-scale or human-scale impact from one receiver"
       ]
     }
   ],
