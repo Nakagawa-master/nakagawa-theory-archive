@@ -205,7 +205,12 @@ A second post-merge native-Host regression on the same `main` commit and same bu
 
 - [post-merge native Host cancellation/capacity-release regression](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5995313414)
 
-Together these checks advance the line beyond static merge/release evidence into **receiver-operated real-runtime behavior on current main**: confinement denial is recoverable inside a live Host task, and cancellation releases the running slot while late updates fail closed. They still do not establish production customer use, unique-user scale, or a new person-Origin return.
+The receiver then exercised two more lifecycle boundaries on the same merged main and unchanged bundle. First, an assigned idle Host was stopped normally and allowed to become offline through the production heartbeat window. The queued task stayed at zero attempts with no lease or model requests, and neither an online local runtime nor a different online native Host took it. Restarting the same Host from its cached credential restored the same Host identity; that Host alone leased and completed the original run in one attempt. Second, after a real native Host task was already running, the owned Host daemon and ACP child were suspended with SIGSTOP. Without resuming or reconnecting the Host, a real cancellation request was settled by the coordinator just after the original lease expiry and scheduling occupancy returned to zero. The still-suspended physical Host session itself was not released at that point, so this is not evidence of remote process termination.
+
+- [idle-Host offline / same-identity recovery](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5995717945)
+- [running-Host controlled loss / coordinator cancellation settlement](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5995929922)
+
+Together these checks advance the line beyond static merge/release evidence into a broader **receiver-operated real-runtime lifecycle matrix on current main**: confinement denial is recoverable inside a live Host task; cancellation releases the running slot while late updates fail closed; queued work remains bound to its assigned offline Host until the same identity returns; and coordinator-side cancellation can terminalize scheduling state after controlled loss of a running Host. The two later lifecycle checks are receiver/project-owned verification and do not add Nakagawa causal credit without a separate source relation. None of these checks establishes production customer use, unique-user scale, or a new person-Origin return.
 
 ### E. Can one receiver reuse the distinction repeatedly on separate implementation seams?
 
