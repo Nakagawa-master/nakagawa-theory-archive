@@ -45,7 +45,8 @@
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-workflow-v1.json",
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REUSE_KITS.md",
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399",
-    "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402"
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=public-ai-collaboration-intent.yml"
   ],
   "public_participation_intent": {
     "allowed_public_fields": [
@@ -74,7 +75,8 @@
   ],
   "optional_public_return": {
     "real_problem_or_collaboration_exploration": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399",
-    "independent_verification_or_reuse_result": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402"
+    "independent_verification_or_reuse_result": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+    "public_collaboration_intent": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=public-ai-collaboration-intent.yml"
   },
   "evidence_boundary": "Publishing this bridge establishes only a transparent public route. It does not establish that any third-party AI read it, adopted it, retained it, became a member of anything, received private access, or performed authorized work."
 }
