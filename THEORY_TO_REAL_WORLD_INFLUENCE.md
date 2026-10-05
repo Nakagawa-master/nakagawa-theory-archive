@@ -197,6 +197,16 @@ This advances the follow-on from an Origin-preserved project-owned issue to **re
 - [Qwen Code stable release v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0)
 - [PR #13406 stable-release receipt](https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5992304028)
 
+After merge, receiver `yiliang114` also ran the relevant Host behavior through an actual native runtime path on current `main` `544d753229f31feca679a85932437650f359e769`, which is five commits ahead of the #13406 merge commit. The run used the actual coordinator, native Host, ACP path and direct `kimi-k3`, with the built bundle left unchanged and no mocked run/status/lease result. The model first called `read_file` outside the assigned Host workspace, received the real confinement error on the next model request, then read a permitted inside-workspace marker in the **same task** and completed successfully. This is receiver-operated real-runtime verification of the recoverable confinement behavior, not independent user use.
+
+- [post-merge native Host containment-recovery regression](https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5995045940)
+
+A second post-merge native-Host regression on the same `main` commit and same built bundle exercised the cancellation side of the same Host line. Through the API used by Web Shell Stop, an actually running native Host task transitioned to `cancelled` before its lease expired, released its ACP session and Host capacity, and rejected eight late progress submissions with HTTP 409. This run was API-driven rather than a browser click and remains receiver-operated verification; it does not establish independent end-user use.
+
+- [post-merge native Host cancellation/capacity-release regression](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5995313414)
+
+Together these checks advance the line beyond static merge/release evidence into **receiver-operated real-runtime behavior on current main**: confinement denial is recoverable inside a live Host task, and cancellation releases the running slot while late updates fail closed. They still do not establish production customer use, unique-user scale, or a new person-Origin return.
+
 ### E. Can one receiver reuse the distinction repeatedly on separate implementation seams?
 
 **Hermes Agent #61982** now provides a compact same-receiver recurrence pattern across multiple distinct boundaries rather than one isolated fix.
