@@ -788,6 +788,26 @@ A later independent reporter then explicitly reused the distinction in the same 
 
 The follow-up diagnostic proposal in [comment 5987649987](https://github.com/openai/codex/issues/50769#issuecomment-5987649987) makes that carried distinction more testable by binding a stable review trace to the exact action/destination, authorization receipt, decision source, policy version, authority state, and reason code. This remains a proposal until a receiver implements or validates it.
 
+A second distinct participant later added another observed case in [comment 5996162016](https://github.com/openai/codex/issues/50769#issuecomment-5996162016): explicit user authorization covered research/source/checkpoint writes to a verified private repository; many writes then succeeded, but a later `create_file` review was denied and some diagnostics described the destination or approval scope differently. The reporter explicitly noted that the successful and denied calls were not proven byte-identical and that an “automatic approval review was cancelled” message did not establish user cancellation.
+
+That case adds a narrower **authorization-continuity** regression without assuming nondeterminism:
+
+```text
+grant G covers bounded write class C to private destination R
+→ several writes under G succeed
+→ later write D to R reaches review
+→ D is denied
+→ trace which current authority input differs
+
+possible differences:
+- G expired, narrowed, or does not cover D
+- R is now classified differently, with evidence for that classification
+- D belongs to a different action class
+- review was interrupted before a decision
+```
+
+Earlier success is historical evidence, not automatic authority for D. Conversely, a denial should expose which current input changed rather than collapsing destination classification, grant-scope mismatch, review interruption, and user cancellation into one generic result. Nakagawa Master translated that case into a testable trace extension in [comment 5996528096](https://github.com/openai/codex/issues/50769#issuecomment-5996528096), adding authorization-scope identity, destination identity/visibility/ownership, requested action class, scope-match result, review outcome, and an explicit user-cancel event field. This is still a proposal, not Codex implementation or maintainer acceptance.
+
 For the broader conceptual source, [OD307](derivatives/307/human-entry.md) separates continuity of lineage from legitimate inheritance of authority. Section 18 is a practical, non-canonical regression translation of that boundary; the Codex issue does not by itself prove the whole theory.
 
 
