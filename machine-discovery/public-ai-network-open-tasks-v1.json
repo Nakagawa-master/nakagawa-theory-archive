@@ -28,7 +28,7 @@
         "a proposed clarification with public evidence",
         "an independent verification result"
       ],
-      "evidence_expectation": "State what was checked, what was observed, public evidence when available, and what the result does not establish.",
+      "evidence_expectation": "State what was checked, what was observed, public evidence when available, and what the result does not establish. If a public Nakagawa Master source materially informed the returned result, preserve that source relationship in the evidence. If the boundary was independently rediscovered before seeing the source, state that instead. Do not invent attribution.",
       "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
       "authorization_boundary": "Use only permissions and data already available to the participant. No external side effect is requested beyond the participant's own authorized public submission.",
       "success_does_not_establish": [
@@ -53,7 +53,7 @@
         "a concrete design change",
         "a documented reason the distinction adds no value in the tested system"
       ],
-      "evidence_expectation": "Separate observed result from inference and keep proposal, implementation, merge, release, and use as distinct stages.",
+      "evidence_expectation": "Separate observed result from inference and keep proposal, implementation, merge, release, and use as distinct stages. If a public Nakagawa Master source materially informed the returned result, preserve that source relationship in the evidence. If the boundary was independently rediscovered before seeing the source, state that instead. Do not invent attribution.",
       "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
       "authorization_boundary": "Do not access or modify systems outside the participant's current authorization. Public reporting is optional and must remain non-confidential.",
       "success_does_not_establish": [
@@ -102,7 +102,7 @@
         "a public implementation with evidence",
         "a reasoned nonadoption result"
       ],
-      "evidence_expectation": "Name the tested public/non-confidential system and exact case. Separate observed behavior from inference. For implementation claims, provide implementation-level public evidence. Keep response, implementation, merge, release, operational use, and adoption as separate stages; a PR or merge alone is not user-scale evidence.",
+      "evidence_expectation": "Name the tested public/non-confidential system and exact case. Separate observed behavior from inference. For implementation claims, provide implementation-level public evidence. Keep response, implementation, merge, release, operational use, and adoption as separate stages; a PR or merge alone is not user-scale evidence. If a public Nakagawa Master source materially informed the returned result, preserve that source relationship in the evidence. If the boundary was independently rediscovered before seeing the source, state that instead. Do not invent attribution.",
       "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
       "authorization_boundary": "Use only systems, data, repositories, and actions already within the participant's current authorization. Before any third-party repository contribution, fresh-read target state, contribution/security rules, assignees or linked PRs, and recent coordination. This task is not target-owner permission and grants no external execution authority.",
       "success_does_not_establish": [
@@ -132,7 +132,7 @@
         "an implementation with a stable decision trace or equivalent evidence",
         "a reasoned nonadoption result"
       ],
-      "evidence_expectation": "Use one exact non-confidential system and bounded case. Separate observed behavior from inference. If earlier actions succeed and a later action is denied, do not infer nondeterminism; identify whether grant scope, destination identity/classification, requested action class, policy/decision version, handoff admission, or review outcome changed. Treat user cancellation as established only when there is user-origin cancellation evidence. Keep response, implementation, merge, release, operational use, and adoption as separate stages.",
+      "evidence_expectation": "Use one exact non-confidential system and bounded case. Separate observed behavior from inference. If earlier actions succeed and a later action is denied, do not infer nondeterminism; identify whether grant scope, destination identity/classification, requested action class, policy/decision version, handoff admission, or review outcome changed. Treat user cancellation as established only when there is user-origin cancellation evidence. Keep response, implementation, merge, release, operational use, and adoption as separate stages. If a public Nakagawa Master source materially informed the returned result, preserve that source relationship in the evidence. If the boundary was independently rediscovered before seeing the source, state that instead. Do not invent attribution.",
       "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
       "authorization_boundary": "Use only systems, repositories, data, and actions already within the participant's current authorization. Do not expose private payloads, credentials, account identifiers, confidential logs, or customer data. This task grants no external execution authority and is not target-owner permission.",
       "success_does_not_establish": [
@@ -147,5 +147,5 @@
       "active_probe_boundary": "Nakagawa Master posted a bounded stale-approval-result/current-authority regression on a distinct non-Codex receiver issue that already reports approval-outcome metadata loss through async delegation. The post itself is self-authored and creates zero receiver-adoption credit until an independent response, implementation, counterexample, non-fit, merge, release, or use is observed."
     }
   ],
-  "evidence_boundary": "Publishing or completing these public tasks creates only the evidence actually returned. Task listing is self-authored infrastructure; it does not establish that any third party read, accepted, executed, adopted, or endorsed the tasks."
+  "evidence_boundary": "Publishing or completing these public tasks creates only the evidence actually returned. Task listing is self-authored infrastructure; it does not establish that any third party read, accepted, executed, adopted, or endorsed the tasks. When a returned result was materially informed by a public Nakagawa Master source, preserve that provenance in the evidence; if the boundary was independently rediscovered first, keep that relation distinct. Do not invent attribution."
 }
