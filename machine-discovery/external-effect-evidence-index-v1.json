@@ -2004,11 +2004,32 @@
                 "eight late progress submissions were refused with HTTP 409 and persisted terminal state remained unchanged"
               ]
             },
-            "boundary": "This establishes receiver-operated real-runtime behavior on current main, not independent end-user production use, unique-user scale, cross-receiver reuse, or person-Origin recognition."
+            "idle_host_offline_same_identity_recovery": {
+              "url": "https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5995717945",
+              "observed": [
+                "assigned idle Host became offline through the production heartbeat window",
+                "queued work stayed at zero attempts with no lease and no model requests",
+                "an online local runtime and a separate online native Host did not take over the assigned work",
+                "restart with cached credentials restored the same Host id and completed the original task in one run and one attempt"
+              ],
+              "causal_credit_boundary": "Receiver/project-owned lifecycle verification; no additional Nakagawa causal credit is assigned without an explicit source relation."
+            },
+            "running_host_controlled_loss_cancellation_settlement": {
+              "url": "https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5995929922",
+              "observed": [
+                "the owned Host daemon and ACP child were SIGSTOPed only after a real task was running",
+                "production heartbeat naturally marked the Host offline",
+                "without Host resume or reconnect, the coordinator settled cancellation 1.426 seconds after the original lease expired",
+                "coordinator running and queued scheduling occupancy returned to zero",
+                "the suspended physical Host session was not released at settlement, so remote process termination is not established"
+              ],
+              "causal_credit_boundary": "Receiver/project-owned lifecycle verification; no additional Nakagawa causal credit is assigned without an explicit source relation."
+            },
+            "boundary": "This establishes a receiver-operated real-runtime lifecycle matrix on current main, not independent end-user production use, unique-user scale, cross-receiver reuse, or person-Origin recognition."
           }
         }
       },
-      "current_stage": "merged_base_implementation_plus_origin_preserved_follow_on_merged_to_current_main_stable_v0_25_0_receiver_owned_desktop_product_distribution_and_receiver_operated_native_runtime_verification",
+      "current_stage": "merged_base_implementation_plus_origin_preserved_follow_on_merged_to_current_main_stable_v0_25_0_receiver_owned_desktop_product_distribution_and_receiver_operated_native_runtime_lifecycle_matrix",
       "not_claimed": [
         "real-user use of the released #13406 behavior",
         "verified user-scale contact",
