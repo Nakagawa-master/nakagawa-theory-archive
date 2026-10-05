@@ -1969,7 +1969,7 @@
               "url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.0",
               "published_at_utc": "2026-10-05T10:45:59Z",
               "release_notes_list_prs": [12582, 12851, 13241, 13406],
-              "installer_archive_download_events_at_observation": 22,
+              "installer_archive_download_events_at_observation": 29,
               "boundary": "Receiver-owned product distribution is established; counters are not unique users and do not prove specific-feature use."
             },
             "sdk_package_distribution": {
@@ -1980,10 +1980,35 @@
               "boundary": "Package carry of CLI 0.25.0 is established; use of the specific PR behavior through the SDK is not."
             },
             "real_user_use": "not_established"
+          },
+          "post_merge_native_runtime_verification": {
+            "tested_main_commit": "544d753229f31feca679a85932437650f359e769",
+            "relationship_to_13406_merge": "five commits ahead of merge commit 69d060e24c3d7740e3f526ff4915d9caff031ede",
+            "bundle_sha256": "983c58719f89f938043d11528f62462c2773147ed05622f41636334be459e475",
+            "environment": "actual coordinator + native Host + ACP + direct kimi-k3; receiver-operated bounded regression; no mocked run/status/lease result",
+            "containment_recovery": {
+              "url": "https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5995045940",
+              "observed": [
+                "model actually attempted an outside-workspace read_file",
+                "next real model request received the confinement error",
+                "same task continued to a permitted inside-workspace read",
+                "Host result returned HTTP 200 and run completed"
+              ]
+            },
+            "cancellation_capacity_release": {
+              "url": "https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5995313414",
+              "observed": [
+                "running native Host task was cancelled through the API used by Web Shell Stop",
+                "run reached cancelled before lease expiry",
+                "ACP session closed and running/queued Host capacity returned to zero",
+                "eight late progress submissions were refused with HTTP 409 and persisted terminal state remained unchanged"
+              ]
+            },
+            "boundary": "This establishes receiver-operated real-runtime behavior on current main, not independent end-user production use, unique-user scale, cross-receiver reuse, or person-Origin recognition."
           }
         }
       },
-      "current_stage": "merged_base_implementation_plus_origin_preserved_follow_on_merged_to_current_main_stable_v0_25_0_and_receiver_owned_desktop_product_distribution",
+      "current_stage": "merged_base_implementation_plus_origin_preserved_follow_on_merged_to_current_main_stable_v0_25_0_receiver_owned_desktop_product_distribution_and_receiver_operated_native_runtime_verification",
       "not_claimed": [
         "real-user use of the released #13406 behavior",
         "verified user-scale contact",
