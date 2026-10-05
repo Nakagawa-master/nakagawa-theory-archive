@@ -85,8 +85,10 @@ A separate review also identified the capability boundary **narrow capability !=
 
 That suggestion/action layer now continues in successor #107802. Its current scout contract still separates suggestion creation from human approval and later publication. This page does not attribute the whole successor stack to Nakagawa-master alone.
 
-**Publicly verifiable here:** origin review → matching third-party implementation → explicit author continuity into successor PRs → current server-side measurement, Measured by PostHog / Unverified, producer-measurement distrust, tests and browser verification.  
-**Not established here:** merge of #107795/#107802, customer rollout, verified production-user contact, exclusive causality for the successor changes, or broad human recognition.
+PRs #107879, #107795, and #107802 merged as one stack on 2026-10-02. PostHog's deployment bot records the same deployment workflow reaching dev at 22:42 UTC, prod-us at 22:57, and prod-eu at 23:12. The successor PR bodies preserve the #92252 stack lineage, but they do not explicitly re-name `Nakagawa-master`.
+
+**Publicly verifiable here:** origin review → receiver-owned successor stack → server-side measurement, Measured by PostHog / Unverified, producer-measurement distrust, internal scout-only proposal capability, per-version outcome reading → tests/browser verification → merge → dev/prod-us/prod-eu deployment.  
+**Not established here:** customer feature-flag rollout, verified production-user use, a fresh voluntary person-Origin rereference in the successor PRs, exclusive causality for the successor changes, or broad human recognition.
 
 ---
 
