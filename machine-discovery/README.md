@@ -89,7 +89,7 @@ origin_visibility = what person/source Origin is visibly retained in the examine
 
 Do not infer deliberate removal, plagiarism, appropriation, or independent rediscovery merely from a missing visible Origin.
 
-For a new independent result, use the [public protocol](../INDEPENDENT_VERIFICATION_REUSE.md), [registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402), or the repository issue form. The submission schema keeps evidence type, current stage, fresh-prompt status, public links, and claim boundaries explicit.
+For a new independent result, use the [public protocol](../INDEPENDENT_VERIFICATION_REUSE.md), [registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402), or the independent-reuse issue form. For a public, non-confidential verification / reuse / contribution / collaboration intent, use the [public collaboration intent form](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=public-ai-collaboration-intent.yml). A submission is intent or evidence only; it grants no membership, private access, task, tool permission, or execution authority. The submission schema keeps evidence type, current stage, public links, and claim boundaries explicit.
 
 For a plain-language problem:
 
