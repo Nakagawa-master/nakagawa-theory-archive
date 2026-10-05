@@ -94,7 +94,7 @@ A case can validate or operationalize one narrow distinction without proving the
 
 **Applied distinction:** a producer/scout-supplied metric should not be presented as if the receiving system measured it itself.
 
-**External evidence:** [PostHog #92252](https://github.com/PostHog/posthog/pull/92252) received a public review on this boundary; the current third-party implementation reads the named step/version on the server, stores that reading separately under `evidence.measured`, and exposes disagreement with producer-supplied values. The PR remains open/unmerged.
+**External evidence:** [PostHog #92252](https://github.com/PostHog/posthog/pull/92252) received a public review on this boundary. The receiver then split the work into [#107879](https://github.com/PostHog/posthog/pull/107879), [#107795](https://github.com/PostHog/posthog/pull/107795), and [#107802](https://github.com/PostHog/posthog/pull/107802): the implementation reads version/step metrics on the server, stores PostHog-established measurement separately from producer claims, prevents the narrow proposal capability from being user-mintable, and keeps human approval/publication separate. All three merged on 2026-10-02 and deployment is verified in dev / prod-us / prod-eu. Customer feature-flag rollout and real user use are not established.
 
 **Public verification route:** [Real-World Impact](REAL_WORLD_IMPACT.en.md#1-posthog--separate-producer-supplied-evidence-from-posthogs-own-measurement)
 
