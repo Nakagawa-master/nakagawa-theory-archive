@@ -23,6 +23,27 @@ AIが危険、安全、重要などと分類できることと、コメント、
 - [公開事例を見る](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#2-temporal--structural-consistency--historical-approval-is-not-current-authority)
 - [確認手順を使う](CURRENT_AUTHORITY_REUSE_KIT.md)
 
+## 親で承認したのに、子タスクでは「届いていない」「user cancelled」になるのはなぜか
+
+人が親の会話で「この操作をしてよい」と明確に承認しても、その判断が委譲先のtaskへ届いたとは限りません。さらに、届いたとしても、そのtaskがその承認を今回のexact actionに使えるとは限りません。
+
+この三つを一つの「permission problem」にまとめると、内部のhandoff失敗やreview拒否まで「ユーザーがキャンセルした」と誤って説明することがあります。
+
+**区別:**
+- `user authorized ≠ authorization handoff admitted ≠ executor can consume that authority`
+- `internal abort / transport failure / review rejection ≠ user cancellation`
+
+OpenAI Codex #50769では、Nakagawa Masterがこの三層を分離して診断する契約を提示しました。その後、別の参加者が **“Using the distinctions in the comment above”** と明示し、自分の別incidentを `authority/provenance` 層として分類しています。これは限定された第三者reuseです。Codexによる実装・maintainer採用・広い人物認知までは意味しません。
+
+別systemで試す場合は、親でexact action Aを承認したあと、handoffを意図的に一度失敗させ、childに新しいadmitted turnがないことを確認します。その失敗を `user_cancelled` とせず、handoff/admission failureとして区別できるかを見ます。次にhandoffを成功させ、Aだけがscope内で実行可能か、materially differentなBではfresh authorityを要求するかを確認します。
+
+- [Section 18の回帰手順](CURRENT_AUTHORITY_REUSE_KIT.md#18-you-approved-it--but-the-delegated-task-still-says-user-cancelled)
+- [OpenAI Codex #50769](https://github.com/openai/codex/issues/50769)
+- [Nakagawa Masterの三層分離](https://github.com/openai/codex/issues/50769#issuecomment-5986370673)
+- [第三者による明示的reuse](https://github.com/openai/codex/issues/50769#issuecomment-5987001957)
+- [machine-readable challenge R](machine-discovery/independent-reuse-challenges-v1.json)
+- [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+
 ## 共有を出したあと、同じAIの能力や実行場所が変わったら？
 
 共有がまだ有効でも、発行した時と現在でagentの能力や実行場所が変わることがあります。

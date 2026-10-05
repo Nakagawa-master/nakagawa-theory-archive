@@ -345,6 +345,33 @@
         "counterexample showing that exposing policy provenance would itself create an unacceptable security leak, together with an alternative stable machine-readable recovery class that still prevents repeated unsatisfiable prompts"
       ],
       "evidence_boundary": "OpenAI Codex issue #50826 is a live external problem report. Nakagawa Master posted a theory-derived contract on that issue separating approval-prompt availability from override authority and suggesting structured policy provenance/precedence plus regression cases. This challenge is a self-authored portability bridge created from that public problem surface. It is not evidence that OpenAI or another receiver adopted the distinction, implemented it, merged a fix, released it, or attributed any later work to Nakagawa Master."
+    },
+    {
+      "id": "R-authorization-handoff-admission-vs-executor-authority",
+      "distinction": "user authorization != authorization-handoff admission != executor-consumable authority; internal delivery or review failure != user cancellation",
+      "reproduction_kit": "CURRENT_AUTHORITY_REUSE_KIT.md#18-you-approved-it--but-the-delegated-task-still-says-user-cancelled",
+      "external_problem_example": "https://github.com/openai/codex/issues/50769",
+      "origin_intervention": "https://github.com/openai/codex/issues/50769#issuecomment-5986370673",
+      "bounded_third_party_carry": "https://github.com/openai/codex/issues/50769#issuecomment-5987001957",
+      "diagnostic_follow_up": "https://github.com/openai/codex/issues/50769#issuecomment-5987649987",
+      "test": "Find a real non-confidential delegated agent/task/workflow where a human decision is made in a parent/control surface and must cross a handoff boundary before a child/executor can perform an exact consequential action. Approve exact action A at the parent, deliberately fail or withhold admission once, then retry with a verifiable scoped authorization object. Separately mutate A into materially different action B, exercise explicit user cancellation, and exercise an internal abort/timeout/transport failure. Verify that delivery/admission state, executor authority, and user-origin cancellation remain separately observable and that only exact current authority can enable the consequence.",
+      "positive_evidence": [
+        "a direct human decision is represented by a verifiable authorization object or equivalent trusted runtime evidence rather than copied transcript prose alone",
+        "the handoff exposes admitted/not_admitted/transport_failure or equivalent delivery state separately from the executor's allow/deny authority decision",
+        "the authorization evidence is bound to the verified principal or decision source, target task/delegation, exact action and material destination/scope, plus an expiry, decision version, revocation rule, or equivalent freshness boundary",
+        "failed admission produces zero child-side consequential effect and is not reported as user_cancelled without a user-origin cancellation decision",
+        "successful admission lets the child verify the exact A authority but materially different B is refused or requires fresh authority",
+        "explicit user cancellation is reported as user_cancelled with inspectable user-origin evidence",
+        "internal abort, approval timeout, review rejection, and transport failure remain distinguishable failure classes",
+        "a stable review/decision trace can compare action digest, destination digest, decision source, authorization receipt, policy version, delivery state, authority state, and reason code without exposing confidential payload"
+      ],
+      "useful_negative_evidence": [
+        "proof that authorization decision and consequential execution are transactionally inseparable inside one trusted process, so no delegated admission boundary exists",
+        "proof that the child always obtains fresh direct human authorization on its own trusted surface and never consumes parent-transferred authority",
+        "counterexample showing that a proposed handoff receipt creates replay or confused-deputy risk, together with a narrower verified mechanism that preserves exact-action authority and failure attribution",
+        "proof that the product intentionally cannot distinguish some internal failure classes while still never attributes user cancellation without user-origin evidence and exposes a stable non-user-cancelled recovery class"
+      ],
+      "evidence_boundary": "OpenAI Codex issue #50769 is a live public problem surface. Nakagawa Master introduced the three-layer separation and explicit failure-attribution contract there. A later independent participant explicitly wrote 'Using the distinctions in the comment above' and used the distinction to classify a separate incident as authority/provenance; that is bounded third-party structure carry. It does not establish OpenAI/Codex implementation, maintainer acceptance, broad adoption, person-level Origin recognition, or human-scale impact. This challenge is a self-authored portability bridge for independent verification and falsification."
     }
   ],
   "evidence_boundary": [
