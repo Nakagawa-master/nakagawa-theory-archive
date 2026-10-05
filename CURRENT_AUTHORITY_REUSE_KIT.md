@@ -172,6 +172,50 @@ user is authorized
 
 Visibility of an action is a presentation decision. Permission to perform the consequence is an execution-time authorization decision. Cached UI eligibility should not become a capability merely because the button is still visible.
 
+#### Live financial-configuration regression: Pay visibility must not imply workspace-bank mutation authority
+
+A 2026-10-05 Expensify staging deploy blocker adds a concrete adjacent failure to this test shape.
+
+- [Original presentation-versus-execution boundary on Expensify #95750](https://github.com/Expensify/App/issues/95750#issuecomment-5690282372)
+- [Re-check on the implementation PR](https://github.com/Expensify/App/pull/101226#pullrequestreview-5254827364)
+- [Independent deploy blocker #102967](https://github.com/Expensify/App/issues/102967)
+- [Blocker investigation](https://github.com/Expensify/App/issues/102967#issuecomment-5990585979)
+- [Three-layer follow-up and regression matrix](https://github.com/Expensify/App/issues/102967#issuecomment-5990865266)
+
+The staging failure was **not** the exact stale-permission scenario above. The independently reported failure was that broadening Pay visibility for a non-payer workspace admin made a bank-setup path reachable; completing that path could replace the workspace's already-connected reimbursement bank account. That exposes a second boundary:
+
+```text
+may see the Pay action
+!=
+may execute a payment with a particular funding source
+!=
+may change the workspace reimbursement bank configuration
+```
+
+A portable regression set is:
+
+```text
+workspace already uses bank A
++ non-payer admin cannot use A and has no usable bank
+→ business-bank payment must not route into a flow that can replace A
+
+workspace already uses bank A
++ admin may use authorized bank B
+→ payment may use B where product policy allows
+→ workspace bank A remains unchanged
+
+Pay is visible while authority is valid
+→ relevant payment/account authority is revoked before submit
+→ execution is refused
+→ no payment or workspace-bank side effect occurs
+
+mark-as-paid
+→ remains separate from bank-account setup / reconfiguration authority
+```
+
+This is a reusable regression derived from public evidence. It does **not** establish that Expensify adopted this boundary, that the earlier comments caused the independent QA discovery, that #102967 is fixed, or that a corrected behavior has been released or used in production.
+
+
 ### 7. A destructive action is authorized by UI state but not by the locked backend state
 
 ```text
