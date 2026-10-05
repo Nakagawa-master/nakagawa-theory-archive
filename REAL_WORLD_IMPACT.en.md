@@ -57,7 +57,7 @@ This example is included to avoid treating “a response occurred” as equivale
 ## 1. PostHog | Separate producer-supplied evidence from PostHog's own measurement
 
 **Origin surface:** the Nakagawa-master review on [PostHog/posthog#92252](https://github.com/PostHog/posthog/pull/92252)  
-**Current state:** original PR #92252 was closed unmerged on 2026-09-28. The author explicitly moved the stack forward: measurement/evidence now lives in [#107795](https://github.com/PostHog/posthog/pull/107795), while the suggestion/action layer continues in [#107802](https://github.com/PostHog/posthog/pull/107802). Both successors are open and unmerged.
+**Current state:** original PR #92252 was closed unmerged on 2026-09-28. The author explicitly moved the stack forward: outcome measurement lives in [#107879](https://github.com/PostHog/posthog/pull/107879), measurement/evidence in [#107795](https://github.com/PostHog/posthog/pull/107795), and the suggestion/action layer in [#107802](https://github.com/PostHog/posthog/pull/107802). All three merged to master on 2026-10-02 and deployment is verified in dev, prod-us, and prod-eu. The feature remains behind rollout controls, so customer availability and real use are not established.
 
 A Nakagawa-master review identified that producer-authored evidence should not be presented as if it had been independently measured by PostHog.
 
