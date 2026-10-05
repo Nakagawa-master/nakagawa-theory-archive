@@ -1159,3 +1159,47 @@ The receiver's own PR description explicitly says that the current revision impl
 → [Human-readable entry](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)  
 → [Current-Authority Reuse Kit §17](CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work)
 
+---
+
+## 36. OpenAI Codex | Separate “the user authorized it,” “the handoff was admitted,” and “the delegated action can consume that authority”
+
+**Surface:** [openai/codex issue #50769](https://github.com/openai/codex/issues/50769)  
+**Current state:** Multiple independent participants have now added real incidents on the public issue, and one third party explicitly reused a distinction proposed by Nakagawa Master. No OpenAI/Codex maintainer adoption, implementation, fix, or release is established here.
+
+For delegated AI work, a user approving an action in the parent conversation does not by itself prove that the authorization reached the child task, that the child can consume it for the exact side effect, or that a later “user cancelled” label reflects a user-origin cancellation.
+
+Nakagawa Master separated the observed incidents into three layers:
+
+```text
+user authorized the action
+!=
+authorization handoff was admitted/delivered
+!=
+delegated executor can consume that authority for the exact side effect
+
+internal abort / failed handoff / review rejection
+!=
+user cancellation
+```
+
+- [Nakagawa Master three-layer split and regression proposal](https://github.com/openai/codex/issues/50769#issuecomment-5986370673)
+
+Participant `partialobserver` later reported a separate private-GitHub publication incident and explicitly wrote **“Using the distinctions in the comment above”**, classifying the case as `authority/provenance` rather than handoff failure or user cancellation. This is bounded third-party reuse of the distinction for diagnosing a different incident on the same receiver surface.
+
+- [explicit third-party reuse](https://github.com/openai/codex/issues/50769#issuecomment-5987001957)
+
+A different participant, `seeton`, then added another independent incident: after explicit authorization and many successful writes to the same private destination, a later checkpoint write was denied again. Reported reasons included treating the destination as public/unverified and an “automatic approval review was cancelled” result, without evidence of a user-origin cancellation.
+
+- [seeton independent incident](https://github.com/openai/codex/issues/50769#issuecomment-5996162016)
+
+Nakagawa Master used that new case to refine the testable contract around continuity of the authority inputs actually evaluated by the reviewer, proposing a decision trace including authorization scope, destination identity/visibility/ownership, action class, grant-scope match, review outcome, and a user-cancel event identifier. The proposed A/B regression holds destination, action class, and authorization receipt constant for a control, then changes exactly one authority input in each negative case and requires the reason/trace to move with that change.
+
+- [authority-input continuity A/B regression](https://github.com/openai/codex/issues/50769#issuecomment-5996528096)
+
+**Publicly verifiable here:** structural distinction from Nakagawa Master → explicit diagnostic reuse by a different participant → another independent real incident from a separate participant → refinement into a more testable decision-trace regression.  
+**Not established here:** OpenAI/Codex maintainer adoption, product implementation, merge, release, fix, user-scale impact, broad person recognition, source attribution by the second incident reporter, or a common root cause across all incidents.
+
+→ [Human/problem-first entry](APPLIED_ENTRY_POINTS.md)  
+→ [Current-Authority Reuse Kit §18](CURRENT_AUTHORITY_REUSE_KIT.md#18-you-approved-it--but-the-delegated-task-still-says-user-cancelled)  
+→ [machine-readable challenge R](machine-discovery/independent-reuse-challenges-v1.json)
+
