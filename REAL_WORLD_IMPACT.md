@@ -1212,7 +1212,7 @@ receiver `yiliang114` はそのscope correctionを受け、`Session.ts`のpre-pe
 **公開記録から確認できること:** Nakagawa-masterがpolicy変更とexecution-placement変更を別々の具体的authority境界として提示 → receiverがOrigin付きで再説明 → receiver自身がcontractとuser-facing share UIを変更 → 別reviewerがNakagawa-master境界を明示して独立に再検証・carry → 後続F3 scope判断がproject-owned issue #13157としてOriginを保持し、triageで独立root-cause検証されたこと。  
 **現在の統合状態:** [PR #12582](https://github.com/QwenLM/qwen-code/pull/12582)は2026-10-02に[45ee202c](https://github.com/QwenLM/qwen-code/commit/45ee202cb14c171c73185a3dbbd89ed1203f2604)で統合されました。別件の#13157の順序変更提案が実装されたことを意味しません。
 
-**stable distribution:** [Qwen Code v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0) は2026-10-05公開のnon-prereleaseで、release notesに #12851 / #12582 / #13406 を明示しています。PR threadにも各release receiptが返っています。
+**stable / product distribution:** [Qwen Code v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0) は2026-10-05公開のnon-prereleaseで、release notesに #12851 / #12582 / #13406 を明示しています。PR threadにも各release receiptが返っています。さらに [Qwen Code Desktop v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.0) が10:45:59 UTCに公開され、release notesは #12851 / #12582 / #13241 / #13406 の4本すべてを明示しています。現監査時点でDesktop installer/archive assetには22 download eventsがあります。また [TypeScript SDK v0.1.18](https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.18) はCLI 0.25.0をbundleすると明記しています。これはreceiver-owned product/package surfaceへのcarryを確立しますが、download数はunique usersでもspecific feature useでもありません。
 
 **まだ確認できないこと:** 独立した実利用者がこの具体的変更へ接触したこと、利用者規模、cross-receiver reuse、広い人物認知。#13157はreceiverがscope correctionへの直接応答として作成したため、それ自体を後日に自発的にNakagawa Masterを再参照したものとは扱いません。
 
@@ -1263,7 +1263,7 @@ Nakagawa-masterはcurrent head `cfbbc91244` でこのscopeを再確認し、こ�
 ## 35. Qwen Code｜終了したattemptに、現在の予算を書き換える権限を残さない
 
 **対象:** [QwenLM/qwen-code PR #13241](https://github.com/QwenLM/qwen-code/pull/13241)  
-**現在状態:** 2026-10-04に[35616f3b](https://github.com/QwenLM/qwen-code/commit/35616f3b643f6d87cc00112d961a0fbb448aca00)でmerge済み。2026-10-04 nightly inclusion後、2026-10-05のnon-prerelease [v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0) release notesに #13241 が掲載され、PR threadにもstable-release receiptが返りました。独立した実利用はまだ確認していません。
+**現在状態:** 2026-10-04に[35616f3b](https://github.com/QwenLM/qwen-code/commit/35616f3b643f6d87cc00112d961a0fbb448aca00)でmerge済み。2026-10-04 nightly inclusion後、2026-10-05のnon-prerelease [v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0) release notesに #13241 が掲載され、PR threadにもstable-release receiptが返りました。同日の [Desktop v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.0) release notesにも #13241 が明示掲載され、receiver-owned product distributionまで進んでいます。独立したspecific-feature実利用はまだ確認していません。
 
 分散したHostでは、処理が取消やrecoveryで先に終了したあと、古いHostから結果や使用量が遅れて届くことがあります。
 
@@ -1282,7 +1282,7 @@ receiver自身のPR説明には、現在のrevisionが “the option-A recommend
 実装では、本当に受理したresultだけにreceiptを残し、recoveryやcancelが先に終わったattemptから届く遅いresultは拒否し、そのattemptからbudget-accounted usageを書き換えない形になりました。receiverは通常受理・同一結果の再送・取消後の遅延result・自然lease recovery・実際のqueued Stop操作を、Web Shellとnative Hostで追加確認しています。current headは人間reviewer qqqys のAPPROVEを経てmergeされました。
 
 **公開記録から確認できること:** scopedな外部技術提案 → receiverのcode/test → Web Shell + native Hostでの実動確認 → receiver側の明示的なOrigin保持 → 人間review → merge。  
-**追加確認:** merge後、original bug issue #13238でreceiverが `option A, which @Nakagawa-master picked in the #13241 review thread` と自発的に再言及し、さらにstable `v0.25.0` へ配布されました。
+**追加確認:** merge後、original bug issue #13238でreceiverが `option A, which @Nakagawa-master picked in the #13241 review thread` と自発的に再言及し、さらにstable `v0.25.0` と明示的なDesktop product releaseへ配布されました。
 
 - [post-merge Origin rereference](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)
 - [stable-release receipt](https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5992291549)
