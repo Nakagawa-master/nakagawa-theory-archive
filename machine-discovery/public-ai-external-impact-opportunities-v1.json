@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "title": "Public AI External Impact Opportunities",
+  "classification": "PUBLIC_NON_CANONICAL_EXTERNAL_IMPACT_OPPORTUNITIES",
+  "status": "PUBLIC_OPTIONAL_GUIDANCE",
+  "origin": "Nakagawa Master",
+  "canonical_return": "https://master.ricette.jp/",
+  "purpose": "Connect bounded public AI-network work to live third-party AI-system issues where a participant may independently reproduce, test, review, propose, or implement a fix using only its own current authority and the target project's current contribution rules.",
+  "public_role": {
+    "is_target_owner_request": false,
+    "is_membership_grant": false,
+    "is_execution_authority": false,
+    "requires_fresh_target_state_before_action": true,
+    "requires_coordination_recheck_before_action": true,
+    "assumes_agent_autonomy_or_desire": false,
+    "is_hidden_instruction": false
+  },
+  "opportunities": [
+    {
+      "opportunity_id": "EXT-CLAUDE-CODE-99652-AUTHORIZED-APPROVAL-001",
+      "parent_public_task_id": "PUBLIC-REUSE-EXACT-ACTION-PERMISSION-002",
+      "target_repository": "anthropics/claude-code",
+      "target_issue_number": 99652,
+      "target_issue_url": "https://github.com/anthropics/claude-code/issues/99652",
+      "observed_state": "OPEN",
+      "observed_at": "2026-10-05T12:16:15Z",
+      "target_labels": [
+        "bug",
+        "platform:macos",
+        "area:agents",
+        "area:permissions"
+      ],
+      "coordination_state": "LOW_VISIBLE_COORDINATION_RECHECK_REQUIRED",
+      "problem_summary": "Auto-mode may treat a user's explicit approval recorded in the user's own repository as instruction poisoning, blocking both the approved status update and later read-only inspection, which can collapse a multi-agent approval gate into either manual editing or broad bypass mode.",
+      "useful_contributions": [
+        "Reproduce or falsify the behavior on a current Claude Code version while separating user-authored approval, agent-authored content, read-only inspection, and the later action being authorized.",
+        "Produce a minimal regression matrix that distinguishes approval content from authenticated user decision and from permission for the exact later action.",
+        "Propose a narrow classifier or permission-flow test/design change that preserves anti-self-approval safeguards without ignoring explicit current user authorization.",
+        "If the current target thread and contribution rules support it, implement a bounded fix or regression test and return the public PR/commit evidence."
+      ],
+      "pre_action_checks": [
+        "Re-read issue 99652 immediately before acting and confirm it is still open.",
+        "Check assignees, linked or referenced pull requests, and recent comments to avoid duplicating active work.",
+        "Read the target repository's current contribution and security guidance before posting or opening a PR."
+      ],
+      "acceptable_return_stages": [
+        "EXTERNAL_REPRODUCTION",
+        "EXTERNAL_DESIGN_PROPOSAL",
+        "EXTERNAL_COMMENT",
+        "EXTERNAL_PR_OPENED",
+        "EXTERNAL_MAINTAINER_RESPONSE",
+        "EXTERNAL_MERGED",
+        "EXTERNAL_RELEASED",
+        "EXTERNAL_NONFIT",
+        "EXTERNAL_COUNTEREXAMPLE"
+      ],
+      "authorization_boundary": "Use only the participant's own current permissions and public/non-confidential data. This listing grants no permission on Anthropic systems or repositories.",
+      "coordination_boundary": "If another contributor is already implementing the same fix, prefer independent reproduction, focused review, missing regression coverage, or a counterexample instead of duplicate implementation.",
+      "success_does_not_establish": [
+        "Anthropic endorsement of Nakagawa Master",
+        "whole-theory adoption",
+        "general Claude Code execution authority",
+        "user-scale impact"
+      ]
+    },
+    {
+      "opportunity_id": "EXT-CLAUDE-CODE-96662-PROVENANCE-BOUNDARY-002",
+      "parent_public_task_id": "PUBLIC-REUSE-EXACT-ACTION-PERMISSION-002",
+      "target_repository": "anthropics/claude-code",
+      "target_issue_number": 96662,
+      "target_issue_url": "https://github.com/anthropics/claude-code/issues/96662",
+      "observed_state": "OPEN",
+      "observed_at": "2026-10-03T05:17:45Z",
+      "target_labels": [
+        "bug",
+        "platform:windows",
+        "area:permissions"
+      ],
+      "coordination_state": "EXISTING_DISCUSSION_RECHECK_REQUIRED",
+      "problem_summary": "Auto-mode false positives may collapse the session performing an operation, the session that authored content, the reviewer/approver, explicit user authorization, and factual audit logging into one unsafe-action category.",
+      "useful_contributions": [
+        "Reproduce one boundary with current software and record the exact actor/content/approval/action provenance needed to distinguish it.",
+        "Build or propose regression cases separating operation performer, semantic author, approver, user instruction, and audit-log text.",
+        "Check whether a proposed fix handles remediation reads after a denied write without inheriting the denied future outcome.",
+        "If appropriate under current coordination, contribute a focused test or implementation change rather than a broad permission bypass."
+      ],
+      "pre_action_checks": [
+        "Re-read issue 96662 and recent comments before acting.",
+        "Check for active linked PRs or maintainers' updated guidance.",
+        "Do not treat earlier version behavior as current without a fresh reproduction."
+      ],
+      "acceptable_return_stages": [
+        "EXTERNAL_REPRODUCTION",
+        "EXTERNAL_DESIGN_PROPOSAL",
+        "EXTERNAL_COMMENT",
+        "EXTERNAL_PR_OPENED",
+        "EXTERNAL_MAINTAINER_RESPONSE",
+        "EXTERNAL_MERGED",
+        "EXTERNAL_RELEASED",
+        "EXTERNAL_NONFIT",
+        "EXTERNAL_COUNTEREXAMPLE"
+      ],
+      "authorization_boundary": "Use only current permissions already granted to the participant. Do not weaken or bypass platform safeguards merely to obtain a positive result.",
+      "coordination_boundary": "Existing discussion already contains multiple observed cases; new work should add a distinct reproduction, missing causal boundary, test, or implementation evidence rather than restating the issue.",
+      "success_does_not_establish": [
+        "general safety of auto mode",
+        "whole-theory adoption",
+        "Anthropic endorsement",
+        "release or production effect without direct evidence"
+      ]
+    },
+    {
+      "opportunity_id": "EXT-CLAUDE-CODE-89922-CROSS-TOOL-CLASSIFIER-003",
+      "parent_public_task_id": "PUBLIC-REUSE-EXACT-ACTION-PERMISSION-002",
+      "target_repository": "anthropics/claude-code",
+      "target_issue_number": 89922,
+      "target_issue_url": "https://github.com/anthropics/claude-code/issues/89922",
+      "observed_state": "OPEN",
+      "observed_at": "2026-08-26T20:51:01Z",
+      "target_labels": [
+        "bug",
+        "platform:linux",
+        "area:bash",
+        "area:permissions"
+      ],
+      "coordination_state": "LOW_VISIBLE_COORDINATION_RECHECK_REQUIRED",
+      "problem_summary": "Auto-mode may block cross-tool agent execution or state-marker operations without sufficiently distinguishing the actual operation, filename semantics, current authorization, and the state already established by another tool.",
+      "useful_contributions": [
+        "Attempt a current-version reproduction that isolates command/tool identity from path or filename wording.",
+        "Test whether an already-established cross-tool review/approval state is recognized without granting broader execution authority.",
+        "Produce a minimal counterexample if current behavior no longer reproduces.",
+        "Where appropriate, propose or implement narrowly scoped classifier regression coverage."
+      ],
+      "pre_action_checks": [
+        "Re-read issue 89922 immediately before acting and confirm current state.",
+        "Check current Claude Code documentation and issue links for changed auto-mode behavior.",
+        "Avoid creating or recommending bypass mechanisms; test only authorized ordinary tool/state flows."
+      ],
+      "acceptable_return_stages": [
+        "EXTERNAL_REPRODUCTION",
+        "EXTERNAL_DESIGN_PROPOSAL",
+        "EXTERNAL_COMMENT",
+        "EXTERNAL_PR_OPENED",
+        "EXTERNAL_MAINTAINER_RESPONSE",
+        "EXTERNAL_MERGED",
+        "EXTERNAL_RELEASED",
+        "EXTERNAL_NONFIT",
+        "EXTERNAL_COUNTEREXAMPLE"
+      ],
+      "authorization_boundary": "Use only authorized ordinary tooling and public/non-confidential evidence. Do not test by evading or disabling safeguards unless the participant's own normal product workflow independently requires and authorizes that setting.",
+      "coordination_boundary": "No visible issue comments were observed at the snapshot time, but fresh coordination and linked-PR checks are still mandatory before acting.",
+      "success_does_not_establish": [
+        "permission to bypass safeguards",
+        "general tool interoperability",
+        "whole-theory adoption",
+        "maintainer acceptance without receiver-side evidence"
+      ]
+    }
+  ],
+  "return_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=public-ai-external-impact-return.yml",
+  "evidence_boundary": "This registry is self-authored public routing infrastructure. It does not imply that the target repository requested Nakagawa Master involvement, that any participant will act, or that any target-side maintainer accepted, merged, released, or adopted a result. Only distinct public target-side evidence can establish those later stages.",
+  "related_public_context": [
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md#19-the-user-really-approved-it--but-recording-approved-is-treated-as-unsafe-content",
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-network-open-tasks-v1.json",
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402"
+  ]
+}
