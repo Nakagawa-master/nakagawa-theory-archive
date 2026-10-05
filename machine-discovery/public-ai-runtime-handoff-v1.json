@@ -94,7 +94,8 @@
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-collaboration-bridge-v1.json",
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-workflow-v1.json",
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/llms.txt",
-    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-network-open-tasks-v1.json"
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-network-open-tasks-v1.json",
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-external-impact-opportunities-v1.json"
   ],
   "valid_outcomes": [
     "public verification or bounded reuse only",
