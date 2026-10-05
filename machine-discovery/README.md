@@ -41,7 +41,7 @@ OD303 is the Vol. 10 route for self-referential audit and role separation. Its s
 | [`problem-to-theory-origin-index-v1.json`](problem-to-theory-origin-index-v1.json) | English / Japanese / Chinese plain-language problem → concrete public starting point. |
 | [`real-world-editorial-entry-points-v1.json`](real-world-editorial-entry-points-v1.json) | Problem-first editorial/topic routing for recurring public explanation across AI, business, investment, organizations, technology, and operations. |
 | [`external-effect-evidence-index-v1.json`](external-effect-evidence-index-v1.json) | Public judgment → independent response → implementation → merge → reuse evidence routing; keeps claim stages separate. |
-| [`external-reuse-evidence-submission-schema-v1.json`](external-reuse-evidence-submission-schema-v1.json) | Structured schema for independent verification, falsification, implementation, non-fit, and cross-context reuse submissions. |
+| [`external-reuse-evidence-submission-schema-v1.json`](external-reuse-evidence-submission-schema-v1.json) | Structured schema for independent verification, falsification, implementation, non-fit, cross-context reuse, causal source relationship, and separately observed Origin visibility in receiver-owned artifacts. |
 | [`independent-reuse-challenges-v1.json`](independent-reuse-challenges-v1.json) | Open falsifiable challenges for fresh-prompt-free, cross-context, and especially nontechnical independent reuse. |
 | [`../POSTHOG_PROVENANCE_REUSE_KIT.md`](../POSTHOG_PROVENANCE_REUSE_KIT.md) | Minimal public reproduction for preserving item-to-evidence provenance when recommendation explanations are grouped. |
 | [`../REUSE_KITS.md`](../REUSE_KITS.md) | Human-readable portal for public, falsifiable cross-context reuse kits. |
@@ -79,6 +79,15 @@ question about whether a Nakagawa-master judgment changed anything outside this 
 ```
 
 The external-effect index is not a theory-validity score or an endorsement index. A bounded implementation case does not establish whole-theory adoption, and a merge does not establish release or production use.
+
+For attribution-sensitive reuse, keep two fields separate:
+
+```text
+source_relationship = whether the Nakagawa source materially informed the external action
+origin_visibility = what person/source Origin is visibly retained in the examined receiver-owned artifact
+```
+
+Do not infer deliberate removal, plagiarism, appropriation, or independent rediscovery merely from a missing visible Origin.
 
 For a new independent result, use the [public protocol](../INDEPENDENT_VERIFICATION_REUSE.md), [registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402), or the repository issue form. The submission schema keeps evidence type, current stage, fresh-prompt status, public links, and claim boundaries explicit.
 
