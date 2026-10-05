@@ -169,7 +169,7 @@ At current head `2cd92ab8d197b3927bd8198bc07a1c3bfae682f0`:
 
 Qwen triage had already independently checked the history rather than relying only on the PR description, explicitly retracing the earlier `@Nakagawa-master` scope split. After the receiver's follow-up, Nakagawa-master re-read the current head, the resolved review threads, and the green workflows, and recorded no remaining blocker from that review round.
 
-On 2026-10-05, the same head then received two additional approval reviews before merge. One independent reviewer verified the production ordering, cleanup path and current green checks. Qwen's review bot separately re-traced the early/late guard split and examined the deferred non-read-tool probe; it treated that residual as a non-blocking dependency on the underlying classification rather than a current production defect. Neither review changed the code. Receiver `yiliang114` then merged PR #13406 at 07:26 UTC as merge commit `69d060e24c3d7740e3f526ff4915d9caff031ede`. The next main-branch commit has that merge as its direct parent, confirming the merged change is on current `main`.
+On 2026-10-05, the same head then received two additional approval reviews before merge. One separate reviewer verified the production ordering, cleanup path and current green checks. Qwen's review bot separately re-traced the early/late guard split and examined the deferred non-read-tool probe; it treated that residual as a non-blocking dependency on the underlying classification rather than a current production defect. Neither review changed the code. Receiver `yiliang114` then merged PR #13406 at 07:26 UTC as merge commit `69d060e24c3d7740e3f526ff4915d9caff031ede`. The next main-branch commit has that merge as its direct parent, confirming the merged change is on current `main`.
 
 Additional records:
 - [current-main implementation contract on #13157](https://github.com/QwenLM/qwen-code/issues/13157#issuecomment-5957440588)
@@ -178,7 +178,7 @@ Additional records:
 - [independent Qwen triage provenance/structure review](https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5984346399)
 - [receiver R1-1 fix and mutation evidence](https://github.com/QwenLM/qwen-code/pull/13406#discussion_r4180266928)
 - [Nakagawa-master current-head review-round closure](https://github.com/QwenLM/qwen-code/pull/13406#issuecomment-5987644046)
-- [late independent approval review](https://github.com/QwenLM/qwen-code/pull/13406#pullrequestreview-5411179010)
+- [late separate approval review](https://github.com/QwenLM/qwen-code/pull/13406#pullrequestreview-5411179010)
 - [late Qwen review-bot approval](https://github.com/QwenLM/qwen-code/pull/13406#pullrequestreview-5411208284)
 - [merged implementation commit](https://github.com/QwenLM/qwen-code/commit/69d060e24c3d7740e3f526ff4915d9caff031ede)
 
