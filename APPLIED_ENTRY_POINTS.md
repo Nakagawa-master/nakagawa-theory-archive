@@ -42,9 +42,11 @@ Replay #67では、Nakagawa Masterがこの境界を提示したあと、reposit
 - [理論内容の正本｜合意の記憶](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)
 
 
-## キャンセルした仕事が、次の新しい仕事に「続き」として混ざってよいのか
+## AIに「この処理は中止」と伝えたのに、次の依頼で中止済みの指示がまた混ざるのはなぜか
 
-キャンセルした指示を履歴から消す必要はありません。問題は、あとで別の新しい仕事を始めたとき、その古い指示が「以前こういうことがあった」という記録ではなく、いま実行すべき仕事として普通の会話文脈へ戻ってくる場合です。
+これは、人間の仕事予定が勝手に復活するという話ではありません。AIエージェントが過去の会話やtool実行履歴を、次のmodel入力へ組み直すときに起きる実装上の問題です。
+
+中止済みの指示は、監査や履歴のために残してよい。しかし、次の無関係な依頼で「いま実行すべき指示」として再びmodelへ渡してはいけない。この二つは別です。
 
 **区別:** `durable / audit history ≠ fresh-turn context ≠ current execution authority`
 
@@ -52,7 +54,7 @@ Qwen Codeでは、この境界が二つの別経路で確認されています�
 
 これは「Qwenが解決策を採用した」という意味ではありません。現在確認できるのは、**同じ問題境界が別々の実装経路で再現し、receiver側でも実バグとして扱われている**ところまでです。修正PR・merge・releaseはまだ別段階です。
 
-別systemで試す場合は、cancelled turn Aを履歴には残しつつ、無関係なfresh turn Bの通常contextにはAの命令やtool transcriptを戻さないことを確認します。Aを本当にやり直すなら、明示的なRetry / resubmitを新しい実行意思として扱います。
+別のAI agent systemで確認するなら、cancelled turn Aを履歴には残しつつ、無関係なfresh turn Bの通常contextにはAの命令やtool transcriptを戻さないことを確認します。Aを本当にやり直すなら、明示的なRetry / resubmitを新しい実行意思として扱います。
 
 - [Section 20の回帰手順](CURRENT_AUTHORITY_REUSE_KIT.md#20-cancelled-history-is-not-fresh-execution-authority)
 - [Qwen #13463](https://github.com/QwenLM/qwen-code/issues/13463)
