@@ -2725,6 +2725,53 @@
         "broad audience or end-user scale"
       ],
       "verification_boundary": "maintainer assignment/review, fix PR reopen or replacement, merge, release, independent operational use, later cross-receiver reuse, or further prompt-free person-Origin return"
+    },
+    {
+      "case_id": "upgrade-ui-versus-backend-delete-authority",
+      "topic": "UI permission visibility versus server-side destructive authority across single and batch deletion",
+      "external_repository": "CarnegieLearningWeb/UpGrade",
+      "origin_action": {
+        "type": "pull_request_review",
+        "url": "https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#pullrequestreview-5249193998",
+        "summary": "The UI role matrix was not a server-side authorization boundary; single and batch destructive routes needed one shared backend role/state policy.",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action"
+      },
+      "third_party_response": {
+        "url": "https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#issuecomment-5732584639",
+        "relationship": "PR author explicitly addressed @Nakagawa-master, confirmed deletion routes lacked role enforcement, and opened #3326 to enforce the role matrix and state rules on both routes"
+      },
+      "receiver_followup_issue": {
+        "url": "https://github.com/CarnegieLearningWeb/UpGrade/issues/3326",
+        "state": "open",
+        "relationship": "receiver-created implementation issue records the backend permission/state problem and both single/batch route requirements"
+      },
+      "origin_followup": {
+        "url": "https://github.com/CarnegieLearningWeb/UpGrade/issues/3326#issuecomment-5740003355",
+        "relationship": "Nakagawa Master proposed a shared locked backend deletion-policy decision consumed by both routes"
+      },
+      "implementation": {
+        "verified": false
+      },
+      "current_stage": "explicit_third_party_response_or_restatement",
+      "not_claimed": [
+        "implementation",
+        "tests",
+        "merge",
+        "release",
+        "production use",
+        "end-user scale",
+        "whole-theory endorsement"
+      ],
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "UI permission visibility != backend destructive authority; route-local guard != shared current role/state policy",
+        "canonical_context": [
+          "current authority",
+          "state/role separation",
+          "consequence-bound authorization"
+        ],
+        "public_reuse_kit": "CURRENT_AUTHORITY_REUSE_KIT.md#22-ui-permission-visibility-is-not-backend-destructive-authority"
+      }
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",

@@ -1246,3 +1246,33 @@ user cancellation
 → [Current-Authority Reuse Kit §18](CURRENT_AUTHORITY_REUSE_KIT.md#18-you-approved-it--but-the-delegated-task-still-says-user-cancelled)  
 → [machine-readable challenge R](machine-discovery/independent-reuse-challenges-v1.json)
 
+
+
+---
+
+## 37. Carnegie Learning UpGrade｜UI 权限显示不等于后端删除权限
+
+**对象：** [CarnegieLearningWeb/UpGrade PR #3323](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323) → [issue #3326](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326)  
+**当前阶段：** Nakagawa Master 指出 single / batch 删除 API 的 server-side authorization 缺口 → PR 作者直接回复 `@Nakagawa-master`，确认删除路由此前没有执行 role enforcement，并创建 #3326，把 role matrix 与 state rule 同时应用到两个路由 → 尚未确认实现 PR、commit、merge 或 release。
+
+可复用的边界是：
+
+```text
+UI 隐藏删除按钮
+!= server 拒绝破坏性操作权限
+
+single delete 有保护
+!= batch delete 也有相同保护
+
+role 一般允许删除
+!= 当前 target state 仍允许删除
+```
+
+在 [comment 5732584639](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#issuecomment-5732584639) 中，PR 作者 `zackcl` 明确回复 `@Nakagawa-master`，说明没有 deletion route 曾执行 role enforcement，并说明 #3326 的目的就是让 single 与 batch API 使用一致的 role/state contract。
+
+随后，Nakagawa Master 在 [#3326 comment 5740003355](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326#issuecomment-5740003355) 中进一步提出：在 current target 被 load / lock 后，由共享的 backend deletion policy 依据 current role、current state 与 usage constraint 决定是否允许实际删除。
+
+**公开证据可以确认：** 具体 review → 带有明确 Origin 的 receiver 回复 → receiver 创建正式 issue 并承接该边界。  
+**尚不能确认：** code implementation、tests、merge、release、真实用户影响或广泛人物认知。
+
+→ [Current-Authority Reuse Kit §22](CURRENT_AUTHORITY_REUSE_KIT.md#22-ui-permission-visibility-is-not-backend-destructive-authority)
