@@ -1207,8 +1207,15 @@ indeterminate historical attempt
 
 Proffera PR [#937](https://github.com/ibboabdoli-ai/Proffera/pull/937) implements CI Autofix strategy history so unchanged exact-head failure evidence and the same strategy do not repeatedly invoke the model.
 
-On the public head reviewed in the linked Nakagawa Master comment (`c62116efac87bc9cbac2ba81bd3687a8f7d3e974`), the implementation records starts and durable outcomes and has a narrow pre-model orphan recovery path. A model-launched attempt without a durable terminal outcome can remain unresolved, while admission treats any unresolved attempt as PR-wide suppression.
+On the public head reviewed in the linked Nakagawa Master comment (`c62116efac87bc9cbac2ba81bd3687a8f7d3e974`), a model-launched attempt without a durable terminal outcome could remain unresolved and suppress later PR-scoped repair.
 
 Nakagawa Master identified the narrower post-model liveness boundary in [comment 6011643787](https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6011643787): preserve the exact old evidence as non-replayable while allowing materially changed current evidence once the old execution is authenticated as terminal and no longer live.
 
-This is a proposed regression against an active third-party implementation. It is not evidence that Proffera has accepted, implemented, merged, released, or attributed this distinction to Nakagawa Master.
+The receiver subsequently added this distinction to the PR implementation. Current head `ba897b2c04b6847e0624d1e8b695a636e33af814` can classify a terminal post-model orphan as outcome `unknown`, preserves suppression for the same historical evidence, and adds a regression where materially changed head evidence receives `ALLOW_MATERIAL_REENTRY`.
+
+Relevant receiver commits:
+- [bound post-model recovery](https://github.com/ibboabdoli-ai/Proffera/commit/6ae7a9e4afeb04ea914958affbec9f9bb3c00bda)
+- [recover indeterminate attempts](https://github.com/ibboabdoli-ai/Proffera/commit/ec9d91f4085fed1a8fc7e1005d2d61a9997cae3c)
+- [regression coverage](https://github.com/ibboabdoli-ai/Proffera/commit/ba897b2c04b6847e0624d1e8b695a636e33af814)
+
+The commits were authored after the public Nakagawa Master comment and implement the same bounded distinction, but no receiver comment explicitly attributes these commits to Nakagawa Master. The PR remains open and unmerged, so this is receiver-owned implementation/test evidence, not merge, release, use, whole-theory adoption, or person-Origin return.
