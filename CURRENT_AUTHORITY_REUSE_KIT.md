@@ -740,7 +740,7 @@ the delegated executor can consume that authority for the exact side effect
 the user can reach the exact action-time approval request if fresh authority is required
 ```
 
-The first state can be true while the second or third is false. The parent can hold a real user decision while the child never receives a trusted authorization object, the handoff fails before a new task turn is admitted, or the executor cannot prove that the received authority covers this exact action.
+The first state can be true while the second, third, or fourth is false. The parent can hold a real user decision while the child never receives a trusted authorization object, the handoff fails before a new task turn is admitted, the executor cannot prove that the received authority covers this exact action, or the product provides no user-reachable route for a required fresh approval.
 
 So the system must not turn an internal delivery or execution failure into a statement about what the user decided.
 
