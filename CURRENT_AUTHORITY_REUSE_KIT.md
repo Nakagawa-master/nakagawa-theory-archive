@@ -825,6 +825,28 @@ possible differences:
 
 Earlier success is historical evidence, not automatic authority for D. Conversely, a denial should expose which current input changed rather than collapsing destination classification, grant-scope mismatch, review interruption, and user cancellation into one generic result. Nakagawa Master translated that case into a testable trace extension in [comment 5996528096](https://github.com/openai/codex/issues/50769#issuecomment-5996528096), adding authorization-scope identity, destination identity/visibility/ownership, requested action class, scope-match result, review outcome, and an explicit user-cancel event field. This is still a proposal, not Codex implementation or maintainer acceptance.
 
+#### Implementation-adjacent evidence — sender provenance now exists, authorization handoff still does not
+
+A newer Codex report, [#50887](https://github.com/openai/codex/issues/50887), exercises the same boundary on a native Dot → delegated task → existing local Codex thread route. A second independent participant reproduced the failure in [comment 6005901416](https://github.com/openai/codex/issues/50887#issuecomment-6005901416).
+
+This case is more specific because Codex PR [#49951](https://github.com/openai/codex/pull/49951) had already merged support for `cloud_threads.send_message` sender-context capture. That implementation deliberately describes the captured source-thread material as **partial historical context, not a transfer of permission**.
+
+So the remaining gap is now sharper:
+
+```text
+verified evidence about what the human said in the source thread
+!=
+a current scoped authorization grant consumable across the delegation boundary
+!=
+the reviewer decision for this exact destination/action
+```
+
+Nakagawa Master therefore proposed in [comment 6007196069](https://github.com/openai/codex/issues/50887#issuecomment-6007196069) a host-verifiable bounded authorization receipt tied to the source user/thread, exact destination, action class, message intent/content digest, expiry and retry policy. The suggested regression requires an exact approved message to succeed once while changed destination/content or excess retry requires renewed authority.
+
+This is an application of **current-authority / exact-action binding** to the **multi-AI re-agreement** problem: agreement about intent may travel between agents, but current authority to execute the consequence must be re-established in a form the receiving boundary can verify.
+
+Evidence boundary: PR #49951 is real merged receiver implementation of sender-context provenance, not of this proposed authorization-handoff object. Issue #50887 currently provides independent reproduction plus a Nakagawa design proposal. No Codex maintainer adoption, implementation of the grant object, release, operational success, or person-Origin rereference is claimed.
+
 For the broader conceptual source, [OD307](derivatives/307/human-entry.md) separates continuity of lineage from legitimate inheritance of authority. Section 18 is a practical, non-canonical regression translation of that boundary; the Codex issue does not by itself prove the whole theory.
 
 
