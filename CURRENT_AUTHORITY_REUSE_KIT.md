@@ -1123,3 +1123,91 @@ A second public review identified that a capability described as scout-only was 
 The current PR makes the suggestion scope internal/programmatic and supports a server-minted scout scope. The PR is still open/unmerged at the time of this record. The commits do not establish exclusive causality.
 
 Report a public, non-confidential result through [registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402).
+### 21. An indeterminate old attempt is not permanent authority to block new work
+
+An automated repair system starts attempt A against one exact code state. The model really begins work, but the runner or bookkeeping path fails before a durable final outcome is recorded.
+
+Later the repository moves to a different head and presents materially different failure evidence.
+
+The system now has three facts that must not be collapsed:
+
+```text
+A has no known durable outcome
+!=
+A is still currently executing
+!=
+A may suppress every future repair for this PR forever
+```
+
+The conservative part should remain:
+
+> **Unknown outcome is not proof that nothing happened.**
+
+So do not automatically replay the same exact evidence/strategy merely because the terminal receipt is missing.
+
+But the inverse is also important:
+
+> **Historical uncertainty is not durable current authority.**
+
+If authenticated execution evidence shows the old workflow attempt is terminal and no matching worker/model job is still running, then a later materially different current head/evidence should not remain blocked solely because A lacks a final receipt.
+
+#### Portable regression matrix
+
+```text
+start A on exact head H1
+→ model step actually launches
+→ terminal bookkeeping is lost
+→ authenticated workflow run later becomes terminal
+→ preserve A as outcome_unknown / indeterminate
+
+same H1 + same deterministic failure evidence
+→ suppress exact replay
+→ do not infer that A failed or had no side effects
+
+current head advances to H2
+→ deterministic failure evidence changes materially
+→ verify no A execution path is still live
+→ admit the H2 repair under a fresh attempt identity
+
+late evidence about A arrives later
+→ attach it to A's historical record
+→ do not retroactively grant A authority over H2
+```
+
+Useful implementation fields may include:
+
+- exact admitted head;
+- exact deterministic evidence fingerprint;
+- strategy fingerprint;
+- run ID and run attempt;
+- whether the model definitely launched;
+- authenticated workflow terminal state;
+- current head at re-entry;
+- whether any matching execution is still live;
+- terminal classification such as `succeeded | failed | no_change | cancelled | indeterminate`.
+
+The key rule is not to manufacture certainty:
+
+```text
+indeterminate
+!= failed
+!= succeeded
+!= safe to replay identical work
+```
+
+At the same time:
+
+```text
+indeterminate historical attempt
+!= current lease on all future repair
+```
+
+#### Current public problem surface
+
+Proffera PR [#937](https://github.com/ibboabdoli-ai/Proffera/pull/937) implements CI Autofix strategy history so unchanged exact-head failure evidence and the same strategy do not repeatedly invoke the model.
+
+On current public head `c62116efac87bc9cbac2ba81bd3687a8f7d3e974`, the implementation records starts and durable outcomes and has a narrow pre-model orphan recovery path. A model-launched attempt without a durable terminal outcome can remain unresolved, while admission treats any unresolved attempt as PR-wide suppression.
+
+Nakagawa Master identified the narrower post-model liveness boundary in [comment 6011643787](https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6011643787): preserve the exact old evidence as non-replayable while allowing materially changed current evidence once the old execution is authenticated as terminal and no longer live.
+
+This is a proposed regression against an active third-party implementation. It is not evidence that Proffera has accepted, implemented, merged, released, or attributed this distinction to Nakagawa Master.
