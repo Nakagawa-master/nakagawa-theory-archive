@@ -2536,6 +2536,56 @@
         "exclusive causation beyond the explicitly addressed review points"
       ],
       "verification_boundary": "maintainer workflow approval or review, merge, release, later operational use, cross-receiver reuse, or prompt-free person-Origin rereference"
+    },
+    {
+      "case_id": "proffera-indeterminate-old-attempt-current-authority",
+      "topic": "An indeterminate historical repair attempt is not permanent current authority to suppress materially changed new repair work.",
+      "external_repository": "ibboabdoli-ai/Proffera",
+      "theory_relation": {
+        "scope": "Nakagawa Structural OS current-authority concept",
+        "boundary": "This case operationalizes one bounded Current Authority distinction; it does not establish adoption of the whole theory system."
+      },
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "pull_request_comment",
+        "url": "https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6011643787",
+        "created_at_utc": "2026-10-06T07:36:48Z",
+        "summary": "Separated an unknown historical post-model outcome from a currently executing attempt and from authority to suppress all future PR-scoped repair; proposed preserving exact old evidence while admitting materially changed current evidence after the old run is terminal."
+      },
+      "receiver_implementation": {
+        "pull_request": "https://github.com/ibboabdoli-ai/Proffera/pull/937",
+        "current_head_sha": "ba897b2c04b6847e0624d1e8b695a636e33af814",
+        "commits": [
+          {
+            "sha": "6ae7a9e4afeb04ea914958affbec9f9bb3c00bda",
+            "url": "https://github.com/ibboabdoli-ai/Proffera/commit/6ae7a9e4afeb04ea914958affbec9f9bb3c00bda",
+            "effect": "Adds outcome unknown and authenticated post-model indeterminate-recovery proof."
+          },
+          {
+            "sha": "ec9d91f4085fed1a8fc7e1005d2d61a9997cae3c",
+            "url": "https://github.com/ibboabdoli-ai/Proffera/commit/ec9d91f4085fed1a8fc7e1005d2d61a9997cae3c",
+            "effect": "Records terminal post-model attempts as historical unknown rather than leaving them as permanently unresolved live blockers."
+          },
+          {
+            "sha": "ba897b2c04b6847e0624d1e8b695a636e33af814",
+            "url": "https://github.com/ibboabdoli-ai/Proffera/commit/ba897b2c04b6847e0624d1e8b695a636e33af814",
+            "effect": "Adds regression coverage: same historical evidence remains suppressed while materially changed head evidence may re-enter."
+          }
+        ],
+        "current_state": "open_unmerged"
+      },
+      "current_stage": "receiver_owned_code_and_regression_change_after_origin_comment_without_explicit_receiver_origin_attribution",
+      "causal_boundary": "The receiver commits were authored after the public Nakagawa Master comment and implement the same narrow distinction. No receiver statement explicitly says the commits were caused by or adopted from Nakagawa Master, so exclusive causation and person-Origin return are not claimed.",
+      "not_claimed": [
+        "explicit receiver attribution to Nakagawa Master",
+        "exclusive causation",
+        "merge",
+        "release or deployment",
+        "production or end-user use",
+        "whole-theory adoption",
+        "broad person recognition"
+      ],
+      "verification_boundary": "receiver review, merge, release, operational use, cross-receiver reuse, or explicit prompt-free person-Origin rereference"
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
