@@ -151,6 +151,51 @@ Agent Marketplace issue #322では、古いcheckoutが新しいexecution planを
 - [Agent Marketplace issue #322](https://github.com/agentrof/agent-marketplace/issues/322)
 - [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
 
+## 前のAI修復が「結果不明」のまま残っただけで、次の修復まで永遠に止めてよいのか
+
+CIや自動修復でAIに修正を任せていると、AI自体は動き始めたのに、その後のrunnerや記録処理だけが落ちて、最終結果だけ残らないことがあります。
+
+人間から見ると、困るのはここです。
+
+```text
+古い版 H1 でAI修復Aが始まる
+→ AIは実際に動いた
+→ しかし「成功/失敗」の最終記録だけ失われる
+→ その後、人間や別処理がH2へ進める
+→ H2では別のCI失敗が発生する
+→ systemは「昔のAが未解決だから」と新しい修復まで永久に止める
+```
+
+ここで分ける必要があるのは、
+
+**昔の処理Aの結果が分からないこと**と、  
+**Aがいまも実行中であること**と、  
+**Aに現在の別問題まで止める権限が残っていること**
+
+です。
+
+**区別:**
+
+```text
+unknown historical outcome
+!=
+currently executing attempt
+!=
+authority to suppress future current work
+```
+
+安全側に倒すなら、Aとまったく同じH1・同じ失敗証拠を勝手に再実行しないのは合理的です。
+
+しかし、Aの実行runがすでに終わっていて、現在のPR headや失敗証拠がH2へ変わっているなら、古い「結果不明」を歴史として残したまま、新しいH2の修復まで永久停止させない設計が必要です。
+
+Proffera PR #937では、CI Autofixの重複実行を止めるFailure Memoryが実装中です。現headでは、modelが一度起動したあとterminal記録だけ失われたcaseが、PR全体の `SUPPRESS_UNRESOLVED_ATTEMPT` として残り続ける可能性があります。Nakagawa Masterは、同じH1再実行は抑止しつつ、historical Actions runがterminalでcurrent head/evidenceがH2へ変わった時は、Aを `indeterminate` として保存し、新しいcurrent evidenceを受け入れられる回帰を提案しました。
+
+これは現在は**公開PR上の問題提案**です。Proffera側がこの回帰を採用・実装・mergeしたことはまだ意味しません。
+
+- [Proffera PR #937](https://github.com/ibboabdoli-ai/Proffera/pull/937)
+- [Nakagawa Masterのpost-model orphan / current-authority指摘](https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6011643787)
+- [Section 21の再利用手順](CURRENT_AUTHORITY_REUSE_KIT.md#21-an-indeterminate-old-attempt-is-not-permanent-authority-to-block-new-work)
+
 ## 終了した仕事の遅い報告で、いま動いている別の仕事を止めてよいのか
 
 遠隔のAIやworkerに仕事を任せると、管理側では時間切れや取消で「終了」と判断したあとに、古いworkerから結果や使用量が遅れて届くことがあります。
