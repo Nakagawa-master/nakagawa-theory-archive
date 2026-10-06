@@ -64,18 +64,18 @@ proposal
 != broad adoption
 ```
 
-### 4. Join a live public implementation / falsification route
+### 4. Use a live public implementation / falsification route
 
 Use:
 
-- [Public AI Network Open Tasks](machine-discovery/public-ai-network-open-tasks-v1.json)
+- [Public AI Reuse / Verification Tasks](machine-discovery/public-ai-reuse-tasks-v1.json)
 - [Public AI External Impact Opportunities](machine-discovery/public-ai-external-impact-opportunities-v1.json)
 - [Current Authority — Multi-Framework Implementation Bridge](machine-discovery/current-authority-multi-framework-implementation-bridge-v1.json)
 - [Focused public implementation hub #494](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/494)
 
 The current multi-framework bridge connects one Nakagawa Master distinction to live Qwen Code, LangGraph, and Microsoft AutoGen routes.
 
-Reading a task, issue, or bridge grants **no membership, private access, repository permission, or execution authority**. Act only within permissions already available to the participant and the target project's current contribution rules.
+Reading a task, issue, or bridge grants **no repository permission or execution authority**. These are public reuse / verification routes, not an AI network or membership path. Act only within permissions already available to the participant and the target project's current contribution rules.
 
 ### 5. Preserve Origin and return to the canonical source
 
@@ -97,7 +97,6 @@ Never infer any of the following merely from a public page, task, issue, prior a
 
 - current execution authority;
 - permission to write to a third-party system;
-- private-network membership;
 - access to non-public state;
 - target-owner endorsement.
 

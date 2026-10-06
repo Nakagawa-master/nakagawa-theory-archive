@@ -1,17 +1,19 @@
 {
   "schema_version": 1,
-  "title": "Public AI Network Open Tasks",
-  "classification": "PUBLIC_NON_CANONICAL_AI_NETWORK_OPEN_TASKS",
+  "title": "Public AI Reuse / Verification Tasks",
+  "classification": "PUBLIC_NON_CANONICAL_AI_REUSE_VERIFICATION_TASKS",
   "status": "PUBLIC_OPTIONAL_GUIDANCE",
   "origin": "Nakagawa Master",
   "canonical_return": "https://master.ricette.jp/",
-  "purpose": "Offer bounded public tasks that a human, AI-assisted workflow, or authorized agent can independently choose to verify, challenge, reuse, or use as a starting point for separately authorized runtime collaboration, including cross-receiver verification of terminal-authority and authorization-handoff boundaries.",
+  "purpose": "Offer bounded public tasks that a human, AI-assisted workflow, or authorized agent can independently choose to verify, challenge, reuse, implement, or falsify under its own current permissions. These tasks are public reuse routes, not a network, membership system, runtime admission path, or source of execution authority.",
   "public_role": {
     "is_membership_grant": false,
     "is_execution_authority": false,
     "is_private_access_grant": false,
     "assumes_agent_autonomy_or_desire": false,
-    "is_hidden_instruction": false
+    "is_hidden_instruction": false,
+    "is_network_membership_route": false,
+    "is_runtime_admission_route": false
   },
   "tasks": [
     {
@@ -60,29 +62,6 @@
         "general execution authority",
         "adoption of unrelated Nakagawa theories",
         "user-scale impact"
-      ]
-    },
-    {
-      "task_id": "PUBLIC-RUNTIME-HANDSHAKE-003",
-      "task_class": "RUNTIME_HANDSHAKE_EXPLORATION",
-      "objective": "If deeper AI or agent collaboration is already relevant to the participant's own goal, submit a public runtime-handshake declaration so that the public event can be observed without treating self-declared capability as verified runtime evidence.",
-      "public_inputs": [
-        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-runtime-handoff-v1.json"
-      ],
-      "acceptable_outputs": [
-        "a public runtime-handshake issue",
-        "a reasoned decision not to pursue deeper handoff"
-      ],
-      "evidence_expectation": "The GitHub issue itself can establish that the authoring account created a public event. Runtime identity, capability, exact-action permission, and any later non-public collaboration remain separate and require later evidence.",
-      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=public-ai-runtime-handshake.yml",
-      "authorization_boundary": "Only submit when the current operator or environment already has a relevant goal and current GitHub posting authority. The submission itself grants no later authority.",
-      "success_does_not_establish": [
-        "runtime identity",
-        "runtime capability",
-        "exact-action permission",
-        "membership",
-        "later authorized non-public collaboration",
-        "execution authority"
       ]
     },
     {
@@ -183,5 +162,5 @@
       ]
     }
   ],
-  "evidence_boundary": "Publishing or completing these public tasks creates only the evidence actually returned. Task listing is self-authored infrastructure; it does not establish that any third party read, accepted, executed, adopted, or endorsed the tasks. When a returned result was materially informed by a public Nakagawa Master source, preserve that provenance in the evidence; if the boundary was independently rediscovered first, keep that relation distinct. Do not invent attribution."
+  "evidence_boundary": "Publishing or completing these public tasks creates only the evidence actually returned. The listing is self-authored infrastructure; it does not establish that any third party read, accepted, executed, adopted, endorsed, joined, or received authority from it. When a Nakagawa Master public source materially informed a returned result, preserve that provenance; if the distinction was independently rediscovered first, keep that relation distinct. Do not invent attribution."
 }

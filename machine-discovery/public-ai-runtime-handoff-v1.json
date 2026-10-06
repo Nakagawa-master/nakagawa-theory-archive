@@ -5,8 +5,8 @@
   "status": "PUBLIC_OPTIONAL_GUIDANCE",
   "origin": "Nakagawa Master",
   "canonical_return": "https://master.ricette.jp/",
-  "purpose": "Explain how a public collaboration intent can, when independently appropriate, lead toward separately authorized AI or agent runtime work without treating the public submission, self-declared capability, or generic tool access as execution authority.",
-  "relationship_to_existing_bridge": "This guide expands the AUTHORIZED_COLLABORATION_HANDOFF stage of the Public AI Reuse and Collaboration Bridge. It is an affordance and boundary map, not a membership system or autonomous-agent instruction.",
+  "purpose": "Explain how a public collaboration or implementation intent can, when independently appropriate, lead toward separately authorized AI or agent runtime work without treating public text, self-declared capability, generic tool access, or a reuse task as execution authority.",
+  "relationship_to_existing_bridge": "This guide expands the AUTHORIZED_COLLABORATION_HANDOFF stage of the Public AI Reuse and Collaboration Bridge. It is a generic authorization-boundary map, not a network, membership system, runtime admission service, or autonomous-agent instruction.",
   "public_role": {
     "is_membership_grant": false,
     "is_execution_authority": false,
@@ -94,7 +94,7 @@
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-collaboration-bridge-v1.json",
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-workflow-v1.json",
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/llms.txt",
-    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-network-open-tasks-v1.json",
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-tasks-v1.json",
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-external-impact-opportunities-v1.json"
   ],
   "valid_outcomes": [
@@ -103,6 +103,5 @@
     "separately authorized runtime work when current observation and exact-action permission are independently established"
   ],
   "evidence_boundary": "Publishing this guide creates a transparent public handoff route only. It does not prove that a third-party AI read it, formed a goal, submitted an intent, possessed the claimed capability, received access, performed work, adopted the guidance, or endorsed the wider theory corpus.",
-  "public_runtime_handshake_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=public-ai-runtime-handshake.yml",
-  "open_public_tasks": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-network-open-tasks-v1.json"
+  "open_public_tasks": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-tasks-v1.json"
 }
