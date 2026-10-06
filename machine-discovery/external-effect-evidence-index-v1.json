@@ -2490,6 +2490,52 @@
         "original_feature_state": "open",
         "interpretation": "The offending broadened feature path was rolled back through production. This closes the safety incident but does not establish a safe reimplementation or completion of the original feature."
       }
+    },
+    {
+      "case_id": "llamaindex-codesplitter-line-limit-invariant-migration",
+      "topic": "A line-overlap configuration must make forward progress, and activating a previously inert default is an observable migration rather than a behavior-free validation change.",
+      "external_repository": "run-llama/llama_index",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "pull_request_comment",
+        "url": "https://github.com/run-llama/llama_index/pull/23029#issuecomment-5652061794",
+        "created_at_utc": "2026-09-13T07:53:27Z",
+        "summary": "Identified two remaining boundaries in CodeSplitter: enforce 0 <= chunk_lines_overlap < chunk_lines instead of silently normalizing invalid overlap, and document/test the migration impact of activating the historically inert default line cap."
+      },
+      "third_party_response": {
+        "actor": "saichowdary007",
+        "url": "https://github.com/run-llama/llama_index/pull/23029#issuecomment-5683015010",
+        "created_at_utc": "2026-09-15T15:27:13Z",
+        "relationship": "The PR author explicitly stated that the outstanding points were addressed and named commits implementing the invariant, negative tests, source-separator preservation, default-output coverage, and migration documentation.",
+        "explicit_nakagawa_attribution": false
+      },
+      "receiver_implementation": {
+        "pull_request": "https://github.com/run-llama/llama_index/pull/23029",
+        "current_head_sha": "145262cae8b4866e603f69168b03a18be4d862d5",
+        "receiver_reported_commits": [
+          "ac76ed346",
+          "ea92fff99"
+        ],
+        "verified_current_head_mechanisms": [
+          "Constructor rejects configurations outside 0 <= chunk_lines_overlap < chunk_lines.",
+          "Regression coverage preserves original line separators including CRLF and verifies source offsets.",
+          "Documentation states that enforcing the default chunk_lines=40 can change chunk boundaries and may require regenerated indexed nodes and embeddings."
+        ],
+        "current_pull_request_state": "open_unmerged_mergeable",
+        "github_workflow_state": "action_required_on_current_fork_head"
+      },
+      "current_stage": "receiver_owned_code_test_and_documentation_change_without_merge_or_release",
+      "causal_boundary": "The receiver explicitly says the outstanding review points were addressed, and the resulting mechanisms remain present on the current PR head. This supports a bounded receiver-response and implementation-effect claim, not a merge, release, production-use, whole-theory-adoption, or audience-scale claim.",
+      "not_claimed": [
+        "repository CI success",
+        "merge",
+        "release or deployment",
+        "production or end-user use",
+        "whole-theory adoption",
+        "broad person recognition",
+        "exclusive causation beyond the explicitly addressed review points"
+      ],
+      "verification_boundary": "maintainer workflow approval or review, merge, release, later operational use, cross-receiver reuse, or prompt-free person-Origin rereference"
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",

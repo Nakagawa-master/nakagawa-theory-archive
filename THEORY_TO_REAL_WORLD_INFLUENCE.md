@@ -566,6 +566,18 @@ A `Nakagawa-master` review separated accepting a final answer on the last permit
 
 The interval from review to receiver fix commit is **15 hours 18 minutes 22 seconds**. The receiver changed the continuation gate and added regressions that count both model calls and tool runs at the boundary in single- and multi-agent paths.
 
+#### LlamaIndex #23029 — invalid overlap configuration and default activation were corrected in code, tests, and upgrade guidance
+
+A separate `Nakagawa-master` review on the open CodeSplitter fix identified two concrete gaps: an overlap configuration that could not make forward progress was being silently normalized instead of rejected, and activating the historically inert default line cap could change chunk boundaries, node IDs, embeddings, and persisted index contents without an explicit migration warning.
+
+- [Nakagawa-master review](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5652061794)
+- [Receiver response](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5683015010) — the author explicitly says the outstanding points were addressed
+- [Current PR #23029](https://github.com/run-llama/llama_index/pull/23029)
+
+The receiver reports commits `ac76ed346` and `ea92fff99` for the changes. A fresh read of the current PR head `145262cae8b4866e603f69168b03a18be4d862d5` confirms that the implementation now rejects configurations outside `0 <= chunk_lines_overlap < chunk_lines`, tests preserve source separators including CRLF while checking source offsets, and the documentation warns that enforcing the default line limit can change chunk boundaries and require regenerated indexed nodes and embeddings.
+
+The PR remains open and unmerged. Its current GitHub workflow runs are `action_required` on the fork head, so this record does **not** claim repository CI success, merge, release, production use, or broad adoption. The bounded effect established here is narrower: an external receiver explicitly responded to the review and carried the two identified boundaries into current code, regression coverage, and migration documentation.
+
 Together with the Qwen cases above, these records let a reader inspect a repeated phenomenon without being told how to value it: the same public person who publishes high-abstraction structural work also appears directly at implementation-level failure boundaries, and independent maintainers can move from that diagnosis to concrete code and regression changes on the scale of minutes or hours rather than only through a long multi-role translation chain.
 
 ---
