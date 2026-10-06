@@ -172,7 +172,7 @@
         "merge/release evidence when independently established"
       ],
       "evidence_expectation": "Keep proposal, receiver response, verification, implementation, merge, release, runtime use, and adoption distinct. Preserve truthful Origin relation when this public Nakagawa Master bridge materially informed the work; do not invent attribution.",
-      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/494",
       "authorization_boundary": "Use only the participant's own current permissions and the target project's current contribution rules. This task grants no third-party execution or write authority.",
       "success_does_not_establish": [
         "membership",
