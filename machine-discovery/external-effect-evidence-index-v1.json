@@ -2587,6 +2587,88 @@
         "broad person recognition"
       ],
       "verification_boundary": "receiver review, merge, release, operational use, cross-receiver reuse, or explicit prompt-free person-Origin rereference"
+    },
+    {
+      "case_id": "innlab-codex-autonomy-runner-evidence-validity-stage-separation",
+      "topic": "A failed operation is not positive evidence that the intended execution boundary was reached; each evidence stage needs its own positive proof.",
+      "external_repository": "Innlab-idi/codex-autonomy-runner",
+      "theory_relation": {
+        "canonical_theory": "人類子孫型AI文明論・第8論｜認識基盤・証拠系譜・敵対的情報耐性論",
+        "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+        "public_derivative_path": "derivatives/301/README.md",
+        "scope": "Applied evidence-lineage and evidence-validity stage separation.",
+        "boundary": "This case is a bounded applied connection. It does not establish receiver adoption of the whole theory."
+      },
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "issue_comment",
+        "url": "https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5775879719",
+        "summary": "Separated helper invocation, child start, target-boundary attempt and boundary pass; required positive evidence before a failed operation can count as evidence that the intended boundary was exercised."
+      },
+      "receiver_explicit_adoption": {
+        "restatement_url": "https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5821543543",
+        "preservation_commitment_url": "https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5871384250",
+        "summary": "Receiver explicitly called the distinction a useful general invariant, said it would be preserved for future probes and WorkerExecutor, said the Nakagawa comment prompted broader review, and later committed to a durable stage-by-stage evidence contract."
+      },
+      "durable_contract": {
+        "mapping": "https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5913106705",
+        "formal_review": "https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5913132794",
+        "gate_transition": "https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5913352453",
+        "stages": [
+          "invocation_bound",
+          "authority_designated",
+          "child_started",
+          "target_boundary_attempted",
+          "policy_result",
+          "forbidden_effect_observed",
+          "cleanup_proven",
+          "verdict"
+        ],
+        "state": "ContainmentGate VERIFIED on separately reviewed frozen evidence."
+      },
+      "receiver_implementation": {
+        "governance_merge": {
+          "pull_request": "https://github.com/Innlab-idi/codex-autonomy-runner/pull/61",
+          "merge_commit": "aade543103ae7031edcd7a420274685b922ed7b0"
+        },
+        "worker_executor": {
+          "pull_request": "https://github.com/Innlab-idi/codex-autonomy-runner/pull/62",
+          "merge_commit": "d8aa78006a3c0ba6c3da8f4a0177cf0a15287f2a"
+        },
+        "live_transport": {
+          "pull_request": "https://github.com/Innlab-idi/codex-autonomy-runner/pull/63",
+          "merge_commit": "5923a4461f1e2bcfa8d945f3ddf6acd9d27e8ad7"
+        },
+        "contained_check_executor": {
+          "pull_request": "https://github.com/Innlab-idi/codex-autonomy-runner/pull/64",
+          "merge_commit": "6a4d5dcd9de63c9d52ae0211fc01afdc308bee96"
+        }
+      },
+      "operational_use": {
+        "first_real_worker": "https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013365402",
+        "result": "One authorized real worker completed reliably, reached the declared publication check, then failed closed before staging/commit/push/PR because the check was unsatisfied. No publication mutation was attempted.",
+        "post_worker_diagnosis": "https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013640426",
+        "repair_authorization": "https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013944031",
+        "repair_contract": "https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013945634",
+        "current_repair": "CHECK-EXECUTOR-01B-RUNNER: trusted fixed GIT_OPTIONAL_LOCKS=0 at the contained CheckExecutor boundary, with HOST override denied and existing authority/containment limits preserved."
+      },
+      "current_stage": "receiver_explicit_adoption_to_durable_contract_to_gate_transition_to_merged_implementation_to_real_worker_operational_use_with_fail_closed_follow_up_repair_authorized",
+      "causal_boundary": "The receiver explicitly attributes the general invariant and broader-review prompt to the Nakagawa comment, and later materialized the promised evidence contract. Downstream runner implementation is project-owned; this record does not claim that every later code change was exclusively caused by Nakagawa Master.",
+      "origin_visibility": {
+        "current_state": "explicit_same_thread_receiver_origin_response",
+        "interpretation_boundary": "Strong source continuity exists in the adoption thread, but a later prompt-free person-Origin rereference after the operational-use stage has not been established."
+      },
+      "not_claimed": [
+        "whole-runner or whole-theory adoption",
+        "exclusive causation of all downstream implementation",
+        "second post-repair real-worker verification",
+        "production adoption",
+        "broad independent end-user use",
+        "prompt-free later person-Origin rereference",
+        "audience scale",
+        "broad person recognition"
+      ],
+      "verification_boundary": "receiver implementation/review/merge of CHECK-EXECUTOR-01B, any separately authorized later real-worker verification, cross-receiver reuse, independent human carry, or later prompt-free person-Origin rereference"
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
