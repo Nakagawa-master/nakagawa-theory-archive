@@ -175,13 +175,17 @@ Visibility of an action is a presentation decision. Permission to perform the co
 
 #### Live financial-configuration regression: Pay visibility must not imply workspace-bank mutation authority
 
-A 2026-10-05 Expensify staging deploy blocker adds a concrete adjacent failure to this test shape.
+A 2026-10-05 Expensify deploy blocker adds a concrete adjacent failure to this test shape. The safety response subsequently progressed from staging rollback verification to a production rollback in v9.5.2-4, while the original feature request remained open.
 
 - [Original presentation-versus-execution boundary on Expensify #95750](https://github.com/Expensify/App/issues/95750#issuecomment-5690282372)
 - [Re-check on the implementation PR](https://github.com/Expensify/App/pull/101226#pullrequestreview-5254827364)
 - [Independent deploy blocker #102967](https://github.com/Expensify/App/issues/102967)
 - [Blocker investigation](https://github.com/Expensify/App/issues/102967#issuecomment-5990585979)
 - [Three-layer follow-up and regression matrix](https://github.com/Expensify/App/issues/102967#issuecomment-5990865266)
+- [Rollback PR #103057](https://github.com/Expensify/App/pull/103057)
+- [Staging rollback PR #103069](https://github.com/Expensify/App/pull/103069)
+- [Staging QA: non-payer admin has no Pay button](https://github.com/Expensify/App/issues/102967#issuecomment-6003646991)
+- [Production deployment notice for the rollback solution](https://github.com/Expensify/App/issues/102967#issuecomment-6005584555)
 
 The staging failure was **not** the exact stale-permission scenario above. The independently reported failure was that broadening Pay visibility for a non-payer workspace admin made a bank-setup path reachable; completing that path could replace the workspace's already-connected reimbursement bank account. That exposes a second boundary:
 
@@ -214,7 +218,7 @@ mark-as-paid
 → remains separate from bank-account setup / reconfiguration authority
 ```
 
-This is a reusable regression derived from public evidence. It does **not** establish that Expensify adopted this boundary, that the earlier comments caused the independent QA discovery, that #102967 is fixed, or that a corrected behavior has been released or used in production.
+This is a reusable regression derived from public evidence. The later public record establishes a narrower operational fact: Expensify reverted the offending feature path, verified the reverted behavior on staging, and reported that rollback deployed to production in v9.5.2-4. That is a **safety closure**, not completion of the original #95750 feature. It does **not** establish that Expensify adopted the full Nakagawa regression matrix, that the earlier comments caused the independent QA discovery, that broader admin Pay eligibility has been safely reimplemented, or that the intended feature has been used successfully in production.
 
 #### Receiver-side technical disposition after escalation
 
@@ -232,7 +236,20 @@ payment may use authorized bank B
 payment-time selection of B changes existing workspace bank A
 ```
 
-The chronology is consistent with the earlier Nakagawa follow-up, but the receiver comments do not cite or attribute that follow-up. Therefore this kit records **receiver-side technical convergence / disposition**, not verified Nakagawa causation, adoption, or person-Origin recognition. A fix PR, merged regression coverage, staging verification, release, and real use remain separate later states.
+The chronology is consistent with the earlier Nakagawa follow-up, but the receiver comments do not cite or attribute that follow-up. Therefore this kit records **receiver-side technical convergence / disposition**, not verified Nakagawa causation, adoption, or person-Origin recognition.
+
+The next public state is now also bounded clearly:
+
+```text
+unsafe broadened feature
+→ rollback
+→ staging verification of the safe baseline
+→ production rollback
+!=
+safe reimplementation of the original feature
+```
+
+Issue #102967 is closed after the rollback path, while #95750 remains open. A future reimplementation still has to prove that broader Pay eligibility can coexist with existing-bank preservation and current execution-time authority checks. A new implementation, its regression coverage, review, staging verification, production release, and real use remain separate evidence stages.
 
 
 ### 7. A destructive action is authorized by UI state but not by the locked backend state

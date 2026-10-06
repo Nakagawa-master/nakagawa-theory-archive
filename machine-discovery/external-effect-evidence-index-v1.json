@@ -1968,7 +1968,12 @@
               "tag": "desktop-v0.25.0",
               "url": "https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.0",
               "published_at_utc": "2026-10-05T10:45:59Z",
-              "release_notes_list_prs": [12582, 12851, 13241, 13406],
+              "release_notes_list_prs": [
+                12582,
+                12851,
+                13241,
+                13406
+              ],
               "installer_archive_download_events_at_observation": 29,
               "boundary": "Receiver-owned product distribution is established; counters are not unique users and do not prove specific-feature use."
             },
@@ -2444,22 +2449,47 @@
           "mark-as-paid remains separate from bank-account setup/reconfiguration"
         ]
       },
-      "current_stage": "independent_external_failure_consistent_with_prior_boundary_plus_origin_follow_up_on_live_blocker",
-      "causal_boundary": "The later deploy blocker independently demonstrates practical relevance of the same responsibility-separation class. No causal claim is made from the September Nakagawa comments to the QA discovery or to any future fix.",
+      "current_stage": "receiver_side_technical_convergence_plus_rollback_safety_closure_through_production__original_feature_reimplementation_open",
+      "causal_boundary": "The later deploy blocker independently demonstrates practical relevance of the same responsibility-separation class. Receiver-side discussion converged on an existing-bank preservation boundary and the unsafe path was rolled back through production, but no causal claim is made from the earlier Nakagawa comments to the QA discovery, rollback decision, or receiver convergence.",
       "origin_visibility": {
-        "current_state": "origin_present_via_origin_follow_up_not_yet_receiver_preserved",
-        "interpretation_boundary": "The live blocker contains a direct source route because Nakagawa Master added it. This is not a prompt-free receiver-owned Origin rereference."
+        "current_state": "origin_present_via_origin_follow_up_not_receiver_preserved",
+        "interpretation_boundary": "Nakagawa Master is inspectable in the public blocker because of the follow-up comment, but the receiver-owned rollback/disposition comments do not cite that source. This is not prompt-free receiver-owned Origin rereference."
       },
       "not_claimed": [
-        "receiver adoption of the Nakagawa boundary",
+        "receiver attribution to or adoption of the Nakagawa boundary",
         "causation of Deploy Blocker #102967 by the Nakagawa comment",
-        "fix or merge resolving the blocker",
-        "production deployment of a corrected behavior",
-        "real-user use",
+        "safe reimplementation of the original #95750 feature",
+        "production deployment of broader admin Pay eligibility with the preservation contract",
+        "real-user use of a corrected broadened feature",
         "independent prompt-free person-Origin rereference",
         "audience scale",
         "broad person recognition"
-      ]
+      ],
+      "receiver_disposition": {
+        "observed_on": "2026-10-05",
+        "sources": [
+          "https://github.com/Expensify/App/issues/102967#issuecomment-5994513758",
+          "https://github.com/Expensify/App/issues/102967#issuecomment-5994702016",
+          "https://github.com/Expensify/App/issues/102967#issuecomment-5994719846",
+          "https://github.com/Expensify/App/issues/102967#issuecomment-5996991774"
+        ],
+        "summary": "Receiver-side discussion converged on allowing an authorized admin to add or use another bank for payment without replacing an already configured workspace-preferred bank account.",
+        "attribution_boundary": "The receiver comments do not cite Nakagawa Master, so this is technical convergence/disposition, not verified adoption or person-Origin return."
+      },
+      "safety_closure": {
+        "rollback_pull_requests": [
+          "https://github.com/Expensify/App/pull/103057",
+          "https://github.com/Expensify/App/pull/103069"
+        ],
+        "staging_verification": "https://github.com/Expensify/App/issues/102967#issuecomment-6003646991",
+        "receiver_confirmation": "https://github.com/Expensify/App/issues/102967#issuecomment-6003667795",
+        "production_deployment_notice": "https://github.com/Expensify/App/issues/102967#issuecomment-6005584555",
+        "production_version": "9.5.2-4",
+        "blocker_state": "closed_completed",
+        "original_feature_issue": "https://github.com/Expensify/App/issues/95750",
+        "original_feature_state": "open",
+        "interpretation": "The offending broadened feature path was rolled back through production. This closes the safety incident but does not establish a safe reimplementation or completion of the original feature."
+      }
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
