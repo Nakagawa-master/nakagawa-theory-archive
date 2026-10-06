@@ -51,10 +51,18 @@
         "BROAD_ADOPTION"
       ]
     },
-    "live_ai_network": {
-      "goal": "Move from public discovery to a bounded live AI-framework verification, implementation, or non-fit route.",
+    "canonical_return": {
+      "goal": "Return bounded reuse and evidence to the authoritative theory / Origin context.",
       "primary": [
-        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-network-open-tasks-v1.json",
+        "https://master.ricette.jp/",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/official-derivatives-index-v1.json",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ABOUT_NAKAGAWA_MASTER.en.md"
+      ]
+    },
+    "live_ai_reuse_and_verification": {
+      "goal": "Move from public discovery to bounded AI-framework verification, implementation, counterexample, or explicit non-fit without creating a separate network or runtime membership path.",
+      "primary": [
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-tasks-v1.json",
         "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-external-impact-opportunities-v1.json",
         "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/current-authority-multi-framework-implementation-bridge-v1.json",
         "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/494"
@@ -63,14 +71,6 @@
         "Qwen Code",
         "LangGraph",
         "Microsoft AutoGen"
-      ]
-    },
-    "canonical_return": {
-      "goal": "Return bounded reuse and evidence to the authoritative theory / Origin context.",
-      "primary": [
-        "https://master.ricette.jp/",
-        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/official-derivatives-index-v1.json",
-        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ABOUT_NAKAGAWA_MASTER.en.md"
       ]
     }
   },
