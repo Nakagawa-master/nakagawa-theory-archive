@@ -197,6 +197,94 @@
         "general execution authority",
         "merge, release, deployment, or user-scale impact without direct target-side evidence"
       ]
+    },
+    {
+      "opportunity_id": "EXT-QWEN-13487-CURRENT-AUTHORITY-005",
+      "parent_public_task_id": "PUBLIC-CURRENT-AUTHORITY-MULTI-FRAMEWORK-006",
+      "target_repository": "QwenLM/qwen-code",
+      "target_issue_number": 13487,
+      "target_issue_url": "https://github.com/QwenLM/qwen-code/issues/13487",
+      "observed_state": "OPEN",
+      "observed_at": "2026-10-06T01:08:29Z",
+      "target_labels": [
+        "priority/P2",
+        "type/bug",
+        "scope/session-management",
+        "scope/testing",
+        "daemon",
+        "need-discussion"
+      ],
+      "coordination_state": "INDEPENDENT_SOURCE_VERIFICATION_RETURNED__IMPLEMENTATION_NOT_YET_OBSERVED",
+      "problem_summary": "The Hosted Harness tool-profile path can carry a cancelled turn's old actionable content into a later fresh model context. Independent source verification confirmed the gap after Nakagawa-master opened the split verification issue.",
+      "useful_contributions": [
+        "Add the missing receiver-owned tool-profile regression demonstrating cancelled A does not become ordinary actionable history for fresh B.",
+        "Implement the narrow status-aware history-selection fix or an equivalent typed non-operative cancellation projection while preserving truthful audit history and tool-call/tool-result grouping.",
+        "Coordinate semantics with Qwen #13463 so distinct internal execution paths do not give cancellation two different meanings.",
+        "Return PR, maintainer response, merge, release, or explicit non-fit evidence as separate stages."
+      ],
+      "pre_action_checks": [
+        "Re-read issue 13487 and recent comments immediately before contributing.",
+        "Check whether a PR or maintainer-owned implementation has appeared since the last observation.",
+        "Do not duplicate the already-completed static verification; prioritize regression and implementation."
+      ],
+      "acceptable_return_stages": [
+        "EXTERNAL_TEST",
+        "EXTERNAL_PR_OPENED",
+        "EXTERNAL_MAINTAINER_RESPONSE",
+        "EXTERNAL_MERGED",
+        "EXTERNAL_RELEASED",
+        "EXTERNAL_NONFIT",
+        "EXTERNAL_COUNTEREXAMPLE"
+      ],
+      "authorization_boundary": "Use only the participant's own current permissions and Qwen Code's current contribution rules. This listing grants no repository write authority.",
+      "coordination_boundary": "The issue already has independent source verification and a narrowed fix direction. New work should move it to receiver-owned regression or implementation rather than restating the diagnosis.",
+      "success_does_not_establish": [
+        "whole-theory adoption",
+        "Qwen endorsement of Nakagawa Master",
+        "runtime use without evidence",
+        "user-scale impact"
+      ]
+    },
+    {
+      "opportunity_id": "EXT-LANGGRAPH-9185-CURRENT-AUTHORITY-006",
+      "parent_public_task_id": "PUBLIC-CURRENT-AUTHORITY-MULTI-FRAMEWORK-006",
+      "target_repository": "langchain-ai/langgraph",
+      "target_issue_number": 9185,
+      "target_issue_url": "https://github.com/langchain-ai/langgraph/issues/9185",
+      "observed_state": "OPEN",
+      "observed_at": "2026-10-06T01:08:29Z",
+      "target_labels": [],
+      "coordination_state": "INDEPENDENT_RUNTIME_REPRODUCTION_EXISTS__UPSTREAM_IMPLEMENTATION_NOT_YET_OBSERVED",
+      "problem_summary": "A timed-out tool can be re-entered on checkpoint resume and produce duplicate external writes. Independent reproduction exists, and current source inspection shows the available attempt metadata does not cleanly identify cross-invocation re-execution.",
+      "useful_contributions": [
+        "Add a receiver-owned regression that distinguishes first execution from cross-invocation checkpoint re-execution while preserving logical tool identity.",
+        "Expose an appropriate re-execution signal, document the boundary, or provide an equivalent upstream mechanism that applications can use before consequential external dispatch.",
+        "Keep provider outcome reconciliation and current authorization re-check distinct from graph replay semantics.",
+        "Return implementation, maintainer response, merge, release, or explicit non-fit evidence separately."
+      ],
+      "pre_action_checks": [
+        "Re-read issue 9185 and recent comments immediately before contributing.",
+        "Check whether a maintainer has already proposed or landed a replay/re-execution metadata mechanism.",
+        "Reuse the existing independent reproduction rather than creating a duplicate demonstration unless a new edge is being tested."
+      ],
+      "acceptable_return_stages": [
+        "EXTERNAL_TEST",
+        "EXTERNAL_DESIGN_PROPOSAL",
+        "EXTERNAL_PR_OPENED",
+        "EXTERNAL_MAINTAINER_RESPONSE",
+        "EXTERNAL_MERGED",
+        "EXTERNAL_RELEASED",
+        "EXTERNAL_NONFIT",
+        "EXTERNAL_COUNTEREXAMPLE"
+      ],
+      "authorization_boundary": "Use only the participant's own current permissions and LangGraph's current contribution rules. This listing grants no repository write authority.",
+      "coordination_boundary": "Independent reproduction is already available. New work should advance framework-visible replay identity, regression coverage, documentation, or an explicit architectural non-fit.",
+      "success_does_not_establish": [
+        "whole-theory adoption",
+        "LangChain endorsement of Nakagawa Master",
+        "operational use without evidence",
+        "user-scale impact"
+      ]
     }
   ],
   "return_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=public-ai-external-impact-return.yml",
