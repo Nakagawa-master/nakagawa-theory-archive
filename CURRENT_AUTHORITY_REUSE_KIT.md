@@ -1211,7 +1211,7 @@ On the public head reviewed in the linked Nakagawa Master comment (`c62116efac87
 
 Nakagawa Master identified the narrower post-model liveness boundary in [comment 6011643787](https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6011643787): preserve the exact old evidence as non-replayable while allowing materially changed current evidence once the old execution is authenticated as terminal and no longer live.
 
-The receiver subsequently added this distinction to the PR implementation. Current head `ba897b2c04b6847e0624d1e8b695a636e33af814` can classify a terminal post-model orphan as outcome `unknown`, preserves suppression for the same historical evidence, and adds a regression where materially changed head evidence receives `ALLOW_MATERIAL_REENTRY`.
+The receiver subsequently added this distinction to the PR implementation. The effect remains present on current head `a17034d433acc47ecd0888de38ab4a3a34b0085b`: a terminal post-model orphan can be classified as outcome `unknown`, the same historical evidence remains suppressed, and materially changed head evidence can receive `ALLOW_MATERIAL_REENTRY`.
 
 Relevant receiver commits:
 - [bound post-model recovery](https://github.com/ibboabdoli-ai/Proffera/commit/6ae7a9e4afeb04ea914958affbec9f9bb3c00bda)
