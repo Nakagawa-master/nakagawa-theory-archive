@@ -889,6 +889,57 @@ After the blocker appeared, Nakagawa Master returned that three-layer boundary t
 
 This case therefore establishes a **later independent external failure consistent with a previously stated responsibility boundary, followed by a new bounded intervention on the live blocker**. It does not yet establish that Expensify adopted the Nakagawa boundary, that the source caused the fix, or that the blocker is resolved.
 
+
+### Innlab codex-autonomy-runner #59 — a Nakagawa evidence-validity distinction became the receiver's durable gate contract
+
+In [Innlab-idi/codex-autonomy-runner issue #59](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59), Nakagawa Master separated evidence stages that autonomous-agent containment tests can otherwise collapse:
+
+```text
+invocation succeeded
+!=
+child execution actually started
+!=
+the target boundary was actually attempted
+!=
+the boundary passed
+```
+
+The point was that a downstream failure must not be used to back-fill proof that an earlier stage was ever reached. Each stage needs its own positive evidence.
+
+- [Nakagawa Master evidence-validity comment](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5775879719)
+
+The receiver later replied explicitly that the formulation was a useful general invariant, that its current implementation had converged on the same rule, and that it intended to preserve the distinction for future probes and the WorkerExecutor:
+
+- [Receiver explicit response](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5821543543)
+
+Nakagawa Master then added a more complete authority-and-evidence sequence, including `authority_designated`, `child_started`, `target_boundary_attempted`, policy result, observed forbidden effect, and cleanup proof, while carefully distinguishing adjacent prior work from the receiver's own model:
+
+- [Nakagawa Master authority/evidence separation comment](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5834071297)
+
+The receiver subsequently thanked Nakagawa Master, restated nearly the same durable contract, and said it planned to make that contract explicit before the formal containment transition:
+
+- [Receiver restatement and planned durable contract](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5871384250)
+
+That contract was later materialized in the receiver's durable evidence record for the first complete E1–E9 pass:
+
+```text
+invocation_bound
+authority_designated
+child_started
+target_boundary_attempted
+policy_result
+forbidden_effect_observed
+cleanup_proven
+verdict
+```
+
+- [Durable evidence contract used on the real E1–E9 evidence](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5913106705)
+- [Formal ContainmentGate evidence review using that contract](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5913132794)
+
+This is stronger than independent technical resemblance: the receiver explicitly responded to Nakagawa Master's formulation, said it intended to preserve it, later materialized the same staged evidence contract, and used that contract in a real formal gate review.
+
+The attribution boundary remains narrow. This does **not** mean every later PILOT-02 result, worker implementation, or repository decision was caused by Nakagawa Master. It establishes receiver-owned adoption and operational use of the bounded evidence-validity / authority-stage distinction, with explicit same-thread Origin acknowledgement. It is not yet a later prompt-free person-Origin rereference or broad human-scale effect.
+
 ---
 
 ## 5. Source and interpretation boundary
