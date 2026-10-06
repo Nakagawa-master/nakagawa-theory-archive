@@ -889,6 +889,60 @@ After the blocker appeared, Nakagawa Master returned that three-layer boundary t
 
 This case therefore establishes a **later independent external failure consistent with a previously stated responsibility boundary, followed by a new bounded intervention on the live blocker**. It does not yet establish that Expensify adopted the Nakagawa boundary, that the source caused the fix, or that the blocker is resolved.
 
+### Proffera #937 — Current Authority moved twice from review boundary into receiver code
+
+A live CI-autofix implementation in [Proffera PR #937](https://github.com/ibboabdoli-ai/Proffera/pull/937) produced two successive receiver-side changes around the same Nakagawa Structural OS **Current Authority** concept.
+
+First, Nakagawa Master separated an old post-model attempt whose result is unknown from a currently running attempt and from authority to suppress unrelated future repair:
+
+- [Nakagawa Master post-model recovery comment](https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6011643787)
+
+The receiver then added code and regression coverage so that the old attempt can remain historically `unknown`, exact old evidence stays suppressed, and materially changed current evidence can re-enter rather than being blocked forever.
+
+A later review exposed a second version of the same structural problem: old attempts were still being reconstructed under the **current** strategy identity. Nakagawa Master separated:
+
+```text
+historical attempt identity
+!=
+current execution strategy identity
+```
+
+and proposed preserving the strategy lineage that actually governed each historical attempt:
+
+- [Nakagawa Master strategy-lineage comment](https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6014334260)
+
+Within minutes, receiver commits added that mechanism:
+
+- [preserve CI autofix strategy lineage](https://github.com/ibboabdoli-ai/Proffera/commit/e2861f0ead7235ab18eef15806155107177fcc52)
+- [recover historical CI autofix strategy lineage](https://github.com/ibboabdoli-ai/Proffera/commit/aed3e4962397c74ab8f37e0bfcaedb707758fbdf)
+- [regression coverage](https://github.com/ibboabdoli-ai/Proffera/commit/c951139cd70959e1f342d0a61633f14884559714)
+- [bounded Nakagawa Master re-check on current head](https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6015074173)
+
+The bounded result is receiver-owned code and tests moving in the same Current Authority direction twice on the same live implementation. The PR remains open and unmerged. No explicit receiver statement attributes either implementation to Nakagawa Master, so this page does **not** claim exclusive causation, person-Origin return, merge, release, production use, or whole-theory adoption.
+
+### Zammad #6348 → #6418 — human-linked knowledge stays distinct from AI-suggested knowledge
+
+In [Zammad issue #6348](https://github.com/zammad/zammad/issues/6348), Nakagawa Master identified a human-facing provenance distinction in the ticket Knowledge Base experience:
+
+```text
+answer explicitly linked to the ticket
+!=
+answer currently suggested by AI
+```
+
+The review proposed keeping the two evidence classes visibly separate, showing linked answers first, AI suggestions second, and ensuring unavailable or failed suggestions do not hide durable linked knowledge:
+
+- [Nakagawa Master provenance/evidence-class comment](https://github.com/zammad/zammad/issues/6348#issuecomment-5689266377)
+
+The receiver later split the zero-state behavior into [issue #6418](https://github.com/zammad/zammad/issues/6418). Its current acceptance criteria specify that opening the knowledge insertion UI without typing shows **linked answers first, then suggested answers**, and that if suggestions are disabled, loading, or fail, the linked answers still remain available.
+
+Receiver-owned transition evidence:
+
+- [receiver split from #6348 to #6418](https://github.com/zammad/zammad/issues/6348#issuecomment-5973164153)
+- [current #6418 product story](https://github.com/zammad/zammad/issues/6418)
+
+This is a human-product design carry: a distinction between durable human/workflow context and probabilistic AI recommendation is now present in the receiver's own acceptance criteria. The story is still open and no implementation PR was found at the time of this check. The receiver does not explicitly attribute the design to Nakagawa Master, so exclusive causation, implementation, release, end-user use, and person-Origin return are not claimed.
+
 ---
 
 ## 5. Source and interpretation boundary
