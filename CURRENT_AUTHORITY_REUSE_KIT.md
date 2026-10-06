@@ -1006,6 +1006,36 @@ The next meaningful receiver-owned proof is a failing regression plus a narrow s
 Evidence boundary: the existence of two accepted Qwen bugs does not by itself prove whole-theory adoption or broad user impact. The stronger claim is narrower: the same current-authority distinction has independently survived contact with two separate product paths and is now represented in receiver-owned triage state.
 
 
+#### LangGraph nested-resume / current-authority evidence
+
+[LangGraph #9106](https://github.com/langchain-ai/langgraph/issues/9106) exposes a sharper version of the same boundary. A completed sibling node can be re-entered when a later sibling interrupt is resumed, even though the final graph state is correct.
+
+Nakagawa Master separated the safety question in [comment 5981994895](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-5981994895):
+
+```text
+approval receipt for execution A
+!=
+fresh authority to execute A again during a later sibling resume
+```
+
+A separate participant, `gomission`, then explicitly returned to Nakagawa Master with an executed extension in [comment 6016877416](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416). The fixture varied whether A's application-owned authority remained unchanged, was revoked, or changed policy version before B resumed. Across 36 fresh-process scenarios, current main re-entered the already-completed sibling; the existing #9113 candidate prevented the second post-interrupt dispatch attempt in every tested candidate case.
+
+The useful separation is therefore:
+
+```text
+historical approval receipt
+!= current authority
+!= fresh dispatch attempt
+!= external effect
+```
+
+A downstream application guard can reject stale authority after revocation or rotation, but that is not the same as preventing a completed action from being redispatched. The candidate evidence is stronger because it closes the re-entry before the application-owned authority check is reached a second time.
+
+Evidence boundary: this is explicit Origin-preserved third-party test reuse of the bounded Nakagawa current-authority distinction. PR #9113 remains closed and unmerged behind the repository assignment gate. No LangGraph maintainer adoption, merge, release, built-in authorization guarantee, production use, or audience scale is established.
+
+A distinct future extension was proposed in [Nakagawa comment 6017114024](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6017114024): simulate a real partition/reconnection case where one branch retains only a last-known approval state while another disconnected branch revokes or rotates authority, then reconnect without silently promoting either local/stale view to universal current authority. That extension connects to [Human-Descendant AI Civilization Theory Vol. 16 / OD309](derivatives/309/README.md). It is a proposed next regression, not evidence that #9106 or its participants adopted the whole theory.
+
+
 ## Implementation pattern
 
 Keep two facts separate:
