@@ -2792,6 +2792,50 @@
         ],
         "public_reuse_kit": "CURRENT_AUTHORITY_REUSE_KIT.md#22-ui-permission-visibility-is-not-backend-destructive-authority"
       }
+    },
+    {
+      "case_id": "memberjunction-definition-bound-approval",
+      "topic": "Historical approval evidence versus current executable-definition authority",
+      "external_repository": "MemberJunction/MJ",
+      "origin_action": {
+        "type": "pull_request_comment",
+        "url": "https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839",
+        "summary": "Approval must identify the material definition that was approved, not merely the persistent record ID; D1 approval must not silently authorize D2.",
+        "origin": "Nakagawa Master",
+        "causal_role": "public_source_action"
+      },
+      "explicit_receiver_return": {
+        "actor": "cmbrock-BC",
+        "url": "https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6022301400",
+        "origin_preserved": true,
+        "summary": "Explicitly agreed with @Nakagawa-master's point, selected fingerprint-bound approval, mapped it to existing content hashing, and adopted the D1→D2 stale-approval regression."
+      },
+      "origin_followup": {
+        "url": "https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6026910453",
+        "summary": "Bound the model to server-computed current fingerprints, deterministic canonicalization of semantically unordered child rows, and stable context-contract versioning."
+      },
+      "current_stage": "explicit_origin_preserved_receiver_design_adoption",
+      "implementation": {
+        "verified": false
+      },
+      "not_claimed": [
+        "exact approval-model implementation",
+        "tests for this exact model",
+        "merge",
+        "release",
+        "production use",
+        "broad human recognition"
+      ],
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "historical approval evidence != current execution authority; record identity != current executable-definition identity",
+        "canonical_context": [
+          "current authority",
+          "approval scope",
+          "definition identity",
+          "supersession"
+        ],
+        "public_reuse_kit": "CURRENT_AUTHORITY_REUSE_KIT.md#23-an-approval-record-is-not-approval-of-the-current-executable-definition"
+      }
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",

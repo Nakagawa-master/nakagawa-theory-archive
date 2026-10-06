@@ -1424,3 +1424,33 @@ Nakagawa Masterはさらに[#3326のcomment](https://github.com/CarnegieLearning
 
 → [一般向けの問題入口](APPLIED_ENTRY_POINTS.md#削除ボタンが見えないのにapiからは削除できるのはなぜか)  
 → [Current-Authority Reuse Kit §22](CURRENT_AUTHORITY_REUSE_KIT.md#22-ui-permission-visibility-is-not-backend-destructive-authority)
+
+
+---
+
+## 38. MemberJunction｜recordへの承認を、current executable definitionへの承認と混同しない
+
+**対象:** [MemberJunction PR #4789](https://github.com/MemberJunction/MJ/pull/4789)  
+**現在段階:** Nakagawa Masterがstale approval境界を提示 → receiver設計担当が明示的に “@Nakagawa-master's point” に同意し、fingerprint-bound approval modelを選択 → exact implementation / mergeは未確認
+
+同じquery recordでも、SQL、parameter contract、context contractなどが変われば、実際に実行される定義は別物になり得ます。
+
+Nakagawa Masterは[comment 5882464839](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839)で、
+
+```text
+historical approval evidence
+!=
+current execution authority
+```
+
+をapproval設計へ適用し、承認対象をrecord IDではなく**その時点のmaterial definition**へ束縛する必要を示しました。
+
+その後、receiver `cmbrock-BC` は[comment 6022301400](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6022301400)で、Nakagawa Masterのpointに明示的に同意し、MemberJunction既存の `ComputeContentHashAsync` を使うfingerprint-bound modelを採用方向として提示しました。D1を承認後にD2へ変更した場合、`RequireApproved` callerを拒否する回帰もその設計へ含めています。
+
+Nakagawa Masterはさらに[comment 6026910453](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6026910453)で、server側が承認時・実行時の両方でauthoritative fingerprintを計算すること、semantically unorderedなchild rowsをdeterministicに並べること、global context semanticsが変わり得るならcontext-contract versionもfingerprintへ含めることを確認しました。
+
+**公開証拠から確認できること:** 具体的な境界提示 → receiverがOriginを明示して設計を採用方向へ変更。  
+**まだ確認できないこと:** exact approval-model code、tests、merge、release、production use、広い人物認知。
+
+→ [一般向け問題入口](APPLIED_ENTRY_POINTS.md#承認したあと中身が変わったのにまだ承認済みで実行してよいのか)  
+→ [Current-Authority Reuse Kit §23](CURRENT_AUTHORITY_REUSE_KIT.md#23-an-approval-record-is-not-approval-of-the-current-executable-definition)

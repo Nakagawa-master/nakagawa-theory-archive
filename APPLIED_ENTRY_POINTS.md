@@ -363,6 +363,33 @@ Carnegie LearningのUpGrade PR #3323では、Nakagawa Masterがこのズレを�
 - [shared backend policyの具体化](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326#issuecomment-5740003355)
 - [Current-Authority Reuse Kit §22](CURRENT_AUTHORITY_REUSE_KIT.md#22-ui-permission-visibility-is-not-backend-destructive-authority)
 
+
+## 承認したあと中身が変わったのに、まだ「承認済み」で実行してよいのか
+
+同じqueryやdashboardのrecordが残っていても、その中のSQL、parameter、実行条件が後から変わることがあります。
+
+そのとき古い `Approved` 表示だけを見て実行すると、**人が承認したD1ではなく、まだ承認していないD2を古い承認で動かす**ことになります。
+
+**区別:**
+
+```text
+同じrecord
+!= 同じ実行定義
+
+昔のApproved
+!= 今のdefinitionもApproved
+```
+
+安全な形は、承認時にserverがcurrent definitionのfingerprintを作り、そのfingerprintをapprovalと一緒に保存し、実行直前にもserverがcurrent definitionからfingerprintを作り直して一致を確認することです。
+
+MemberJunction PR #4789では、Nakagawa Masterがこの境界を提示した後、receiver側の設計担当が明示的に “@Nakagawa-master's point” に同意し、fingerprint-bound approvalを採用方向として提案しました。現在確認できるのは**設計採用まで**で、exact code implementationやmergeはまだ確認していません。
+
+- [MemberJunction PR #4789](https://github.com/MemberJunction/MJ/pull/4789)
+- [Nakagawa Masterの元の境界](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839)
+- [receiverの明示的な設計採用](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6022301400)
+- [current-authority guardrails](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6026910453)
+- [Current-Authority Reuse Kit §23](CURRENT_AUTHORITY_REUSE_KIT.md#23-an-approval-record-is-not-approval-of-the-current-executable-definition)
+
 ## 309件全体から探す
 
 ここに当てはまらない問題は、[24テーマの世界地図](human-translation/WORLD_MAP.md) または [OD001–OD309水平マップ](human-translation/ALL_309_HORIZONTAL_MAP.md) から探せます。

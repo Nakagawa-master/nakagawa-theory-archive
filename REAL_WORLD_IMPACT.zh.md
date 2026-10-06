@@ -1276,3 +1276,28 @@ role 一般允许删除
 **尚不能确认：** code implementation、tests、merge、release、真实用户影响或广泛人物认知。
 
 → [Current-Authority Reuse Kit §22](CURRENT_AUTHORITY_REUSE_KIT.md#22-ui-permission-visibility-is-not-backend-destructive-authority)
+
+
+---
+
+## 38. MemberJunction｜对 record 的批准不等于对当前可执行定义的批准
+
+**对象：** [MemberJunction PR #4789](https://github.com/MemberJunction/MJ/pull/4789)  
+**当前阶段：** Nakagawa Master 提出 stale approval 边界 → receiver 明确同意 “@Nakagawa-master's point” 并选择 fingerprint-bound approval model → 尚未确认该模型的完整实现或 merge。
+
+同一个 record ID 可以保持不变，但 SQL、parameter contract 或 context semantics 已经改变。Nakagawa Master 在 [comment 5882464839](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839) 中把边界写成：
+
+```text
+historical approval evidence
+!=
+current execution authority
+```
+
+随后，receiver `cmbrock-BC` 在 [comment 6022301400](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6022301400) 中明确采用这个方向，选择基于现有 hashing 机制的 definition fingerprint，并把 D1 被批准后变为 D2 时必须拒绝执行的 regression 放进设计。
+
+Nakagawa Master 又在 [comment 6026910453](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6026910453) 中补充了边界：批准时和执行时都由 server 计算 authoritative fingerprint；语义上无顺序的 child rows 必须 deterministic canonicalization；如果 global context semantics 会变化，还应绑定稳定的 context-contract version。
+
+**公开证据可以确认：** 具体边界 → receiver 带有明确 Origin 的设计采用。  
+**尚不能确认：** exact code implementation、tests、merge、release、production use 或广泛人物认知。
+
+→ [Current-Authority Reuse Kit §23](CURRENT_AUTHORITY_REUSE_KIT.md#23-an-approval-record-is-not-approval-of-the-current-executable-definition)
