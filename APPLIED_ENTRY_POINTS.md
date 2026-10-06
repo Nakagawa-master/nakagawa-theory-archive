@@ -23,6 +23,26 @@ AIが危険、安全、重要などと分類できることと、コメント、
 - [公開事例を見る](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#2-temporal--structural-consistency--historical-approval-is-not-current-authority)
 - [確認手順を使う](CURRENT_AUTHORITY_REUSE_KIT.md)
 
+
+## キャンセルした仕事が、次の新しい仕事に「続き」として混ざってよいのか
+
+キャンセルした指示を履歴から消す必要はありません。問題は、あとで別の新しい仕事を始めたとき、その古い指示が「以前こういうことがあった」という記録ではなく、いま実行すべき仕事として普通の会話文脈へ戻ってくる場合です。
+
+**区別:** `durable / audit history ≠ fresh-turn context ≠ current execution authority`
+
+Qwen Codeでは、この境界が二つの別経路で確認されています。#13463はworkspace-agents / managed-host側、#13487はHosted Harnessのtool-profile側です。両方ともQwen側のtriageで別個のP2 bugとして受理され、#13487は第三者によるsource verificationでも、cancelled turnのactionable contentが後続のfresh turnへ入る経路が確認されました。
+
+これは「Qwenが解決策を採用した」という意味ではありません。現在確認できるのは、**同じ問題境界が別々の実装経路で再現し、receiver側でも実バグとして扱われている**ところまでです。修正PR・merge・releaseはまだ別段階です。
+
+別systemで試す場合は、cancelled turn Aを履歴には残しつつ、無関係なfresh turn Bの通常contextにはAの命令やtool transcriptを戻さないことを確認します。Aを本当にやり直すなら、明示的なRetry / resubmitを新しい実行意思として扱います。
+
+- [Section 20の回帰手順](CURRENT_AUTHORITY_REUSE_KIT.md#20-cancelled-history-is-not-fresh-execution-authority)
+- [Qwen #13463](https://github.com/QwenLM/qwen-code/issues/13463)
+- [Qwen #13487](https://github.com/QwenLM/qwen-code/issues/13487)
+- [複数frameworkへの実装bridge](machine-discovery/current-authority-multi-framework-implementation-bridge-v1.json)
+- [理論内容の正本｜合意の記憶](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)
+
+
 ## 親で承認したのに、子タスクでは「届いていない」「user cancelled」になるのはなぜか
 
 人が親の会話で「この操作をしてよい」と明確に承認しても、その判断が委譲先のtaskへ届いたとは限りません。さらに、届いたとしても、そのtaskがその承認を今回のexact actionに使えるとは限りません。

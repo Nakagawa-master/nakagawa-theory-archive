@@ -33,6 +33,7 @@ You do not need to know the theory name before using this kit. Start with the fa
 | An old worker reports usage after termination, and that supposedly passive record can stop current work | Section 17 |
 | You approve an action in the parent/control conversation, but the delegated task behaves as if the approval never arrived — or reports `user cancelled` when you did not cancel | Section 18 |
 | You explicitly approve a bounded change, but the system treats recording or carrying that approval state as suspicious content — forcing a global bypass even though a narrow grant exists | Section 19 |
+| A cancelled or superseded tool turn stays in audit history, then its old actionable prompt reappears in an unrelated fresh turn as ordinary prior work | Section 20 |
 
 The recurring question is not “was this ever approved?” It is:
 

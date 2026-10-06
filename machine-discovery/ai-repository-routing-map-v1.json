@@ -18,11 +18,19 @@
     "test_or_implement": {
       "goal": "Convert one bounded distinction into a test, review, workflow, implementation, or falsification.",
       "primary": [
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/APPLIED_ENTRY_POINTS.md",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md",
         "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/PRACTICAL_USE.md",
         "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/PRACTICAL_BOUNDARY_CHECKS.md",
         "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REUSE_KITS.md",
         "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_AGENT_EXECUTION_BOUNDARY_TESTS.md"
-      ]
+      ],
+      "current_authority_specialized_route": {
+        "problem_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/APPLIED_ENTRY_POINTS.md",
+        "reusable_test": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md",
+        "framework_bridge": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/current-authority-multi-framework-implementation-bridge-v1.json",
+        "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/"
+      }
     },
     "verify_external_effect": {
       "goal": "Check what independently changed outside the repository without inflating evidence stages.",
