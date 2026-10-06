@@ -68,11 +68,11 @@
 
 → [同じ共有のまま。でも、使われる場所が変わっていたら？](09-same-share-different-runtime.md)
 
-## 10｜改訂を始めた。でも最後に残っているのは別の版かもしれない
+## 10｜AIに修正を任せた。でも最後の「完了」は別の状態かもしれない
 
-改訂を正しく始めた記録があっても、終了時点のstateが今回の改訂と同じlineageとは限りません。
+AIが正しく作業を始めても、途中で別のAI処理や古い作業コピーが以前の状態を書き戻せば、終了時に見ているものは別物かもしれません。
 
-→ [改訂を始めた。では、最後に確定したのは本当にその改訂版？](10-started-revision-does-not-authorize-current-state.md)
+→ [AIに修正を任せた。最後の「完了」は、本当にいま確認した状態？](10-started-revision-does-not-authorize-current-state.md)
 
 ---
 
