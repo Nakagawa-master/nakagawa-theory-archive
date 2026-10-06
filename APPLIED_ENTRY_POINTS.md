@@ -218,6 +218,36 @@ Qwen Code #13241では、取消や回復のあとに届いた古いHost結果を
 - [merge commit `35616f3b`](https://github.com/QwenLM/qwen-code/commit/35616f3b643f6d87cc00112d961a0fbb448aca00)
 - [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
 
+## 「失敗した」だけで、安全境界を本当に試せたと言ってよいのか
+
+AI agentやsandboxの安全testでは、commandが失敗すると「危険な操作を止められた」と見えます。
+
+しかし、失敗した場所がもっと手前なら、そのtestは狙った境界を一度も通っていないかもしれません。
+
+```text
+helperを呼べた
+!=
+child processが始まった
+!=
+狙ったboundaryへ到達した
+!=
+boundaryが正しく拒否した
+```
+
+必要なのは、後ろで失敗したという一つの結果ではなく、**各段階へ本当に到達したことを、その段階自身の証拠で確認すること**です。
+
+Codex Autonomy Runner #59では、Nakagawa Masterがこの区別を公開した後、receiverがそれを “a useful general invariant” と明示し、future probes / WorkerExecutorへ保持すると回答しました。その後、この区別はdurable evidence contractへ入り、formal ContainmentGate reviewで使われ、WorkerExecutor / live transport / contained CheckExecutorがmergeされ、human ownerが一度だけ許可したreal workerまで実行されました。
+
+そのreal workerはpublication checkで止まりましたが、systemはそこで無理に先へ進まず、publication前にfail closedしました。さらにread-only診断から、worker contentではなくcontained CheckExecutor側のGit optional-index-write条件が次の修復対象として切り出されています。
+
+これは「失敗したから安全だった」という話ではありません。**どこまで到達したかを証拠で分けたから、失敗を次の正確な修復へ変えられた**事例です。
+
+- [公開された実作用の証拠](REAL_WORLD_IMPACT.md#25-codex-autonomy-runner失敗しただけでは境界を試した証拠にならない)
+- [第三者のdurable evidence thread](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59)
+- [canonical source: 人類子孫型AI文明論・第8論](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)
+- [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+
+
 ## 一度だけ承認した処理が、外部でも一度だけ起きたと言えるのか
 
 外部APIは処理を受け取ったのに応答だけ失われることがあります。その状態を単純な失敗として再試行すると、送信、課金、削除などが二重になる可能性があります。

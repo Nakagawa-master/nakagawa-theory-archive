@@ -848,8 +848,8 @@ PR authorは公開返信で **“Addressed the outstanding points”** と述べ
 
 ## 25. Codex Autonomy Runner｜失敗しただけでは「境界を試した証拠」にならない
 
-**対象:** [Innlab-idi/codex-autonomy-runner#59](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59) → [PR #61 merge commit](https://github.com/Innlab-idi/codex-autonomy-runner/commit/aade543103ae7031edcd7a420274685b922ed7b0)  
-**現在状態:** receiver explicit restatement → Research Checkpoint governance adopted → merged into `AGENTS.md`
+**対象:** [Innlab-idi/codex-autonomy-runner#59](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59)  
+**現在状態:** 一般不変条件としての明示採用 → durable evidence contract → ContainmentGate VERIFIED → WorkerExecutor / live transport / contained CheckExecutor merge → 初回real workerで実運用 → 新しいCheckExecutor欠陥をfail-closedで発見 → bounded repair承認済み
 
 `Nakagawa-master` の公開コメントは、sandbox / authority-boundary probeについて、
 
@@ -867,27 +867,57 @@ boundary passed
 
 - [Nakagawa-master comment](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5775879719)
 
-receiver `Innlab-idi` は後に、現在の実装が実質的に同じevidence-validity ruleへ収束していると説明し、上の区別を **“a useful general invariant”** と呼び、今後のprobe / WorkerExecutorでも明示的に保持する意向を述べています。また、**“Your comment also prompted a broader review on our side.”** として、runtime / external-security semanticsが不確実な場合のResearch Checkpointを工程へ追加すると説明しました。
+receiver `Innlab-idi` は、この区別を **“a useful general invariant”** と明示し、今後のprobeとWorkerExecutorでも保持すると述べました。また、Nakagawa-masterのcommentがより広いreviewを促したことも明記しています。
 
-- [receiver restatement and adoption rationale](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5821543543)
+- [receiver restatement / preservation intent](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5821543543)
 
-その後、consumer側のgovernance同期PR #61がmergeされ、`AGENTS.md` へ次の規則が入りました。
+その後、Nakagawa-masterは `authority_designated` を含め、各段階を後段の成功・失敗から逆算せず、各段階自身の正の証拠で支える形へ拡張しました。receiverはこの方向を受け、最初の完全なE1–E9実行後にdurable evidence contractへ固定すると回答しました。
 
-> A failed operation is not positive evidence that the intended boundary was exercised unless execution is shown to have reached that boundary.
+- [adjacent prior-work / stage-separation response](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5834071297)
+- [receiver durable-contract commitment](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5871384250)
 
-merge commitは `aade543103ae7031edcd7a420274685b922ed7b0` です。Research Checkpointも同じblockへ追加されています。
+実際にreceiverは、次の段階を個別の正の証拠へ結びつけるcontractをmaterializeしました。
 
-- [merged governance commit `aade543...`](https://github.com/Innlab-idi/codex-autonomy-runner/commit/aade543103ae7031edcd7a420274685b922ed7b0)
+```text
+invocation_bound
+authority_designated
+child_started
+target_boundary_attempted
+policy_result
+forbidden_effect_observed
+cleanup_proven
+verdict
+```
 
-receiverはさらにprior work / papers / implementationsの参照を求めたため、SLSA / in-toto、Capsicum、Confused Deputy、Cedarを「隣接先行研究」として返答しました。この返答自体は新しい外部作用として数えません。receiver側から追加の反応・採用が返った場合にのみ別途評価します。
+- [durable evidence contract mapping](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5913106705)
+- [formal exact-evidence review](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5913132794)
+- [human-owner ContainmentGate = VERIFIED transition](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5913352453)
 
-- [bounded references response](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5834071297)
+ここから先は、単なるgovernance文書ではなく実装と実行へ進みました。
 
-**公開記録から確認できること:** origin comment → receiverによる一般不変条件としての明示的再叙述 → commentがbroader reviewを促したとのreceiver説明 → Research Checkpointと同じevidence-validity ruleがconsumer `AGENTS.md` へmerge。  
-**まだ確認できないこと:** WorkerExecutor全体への実装完了、実運用での有効性、一般原理の知的優先権、理論体系全体への支持。
+- [PR #62](https://github.com/Innlab-idi/codex-autonomy-runner/pull/62) — offline WorkerExecutor adapter。merge commit `d8aa78006a3c0ba6c3da8f4a0177cf0a15287f2a`
+- [PR #63](https://github.com/Innlab-idi/codex-autonomy-runner/pull/63) — live Codex worker transport。merge commit `5923a4461f1e2bcfa8d945f3ddf6acd9d27e8ad7`
+- [PR #64](https://github.com/Innlab-idi/codex-autonomy-runner/pull/64) — contained CheckExecutor。merge commit `6a4d5dcd9de63c9d52ae0211fc01afdc308bee96`
+
+さらに、human ownerが**一度だけ**許可したreal pilot workerが実際に実行されました。worker process自体はreliably完了し、RUNTIME-03のpublication checkまで到達しましたが、そのcheckがnonzeroになったため、systemはRUNTIME-04のstaging / commit / push / PRへ進まずfail-closedしました。remote branch作成やpublication mutationは行われていません。
+
+- [first one-shot real worker result](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013365402)
+
+その後のread-only診断では、workerが作ったcontent自体はcleanで、通常環境では同じ `git diff --check` が0を返すことが確認されました。receiverは、contained CheckExecutorがGit metadataをread-onlyにしたまま、Gitのoptional index refresh/writeを抑止する `GIT_OPTIONAL_LOCKS=0` を固定していなかった点を、今回のfalse nonzeroと整合するbounded defectとして特定しています。
+
+- [post-worker diagnosis](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013640426)
+- [human-owner authorization for CHECK-EXECUTOR-01B-RUNNER](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013944031)
+- [bounded materialization contract](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013945634)
+
+01Bは、trustedな `GIT_OPTIONAL_LOCKS=0` をCheckExecutor側で固定し、HOST inputからのoverrideを認めず、既存のread-only / network-disabled / credential-denied / exact-argv / one-shot境界を維持するrepairとして定義されています。元のreal-worker実行権限は1/1を消費済みであり、**第二のreal workerは現在許可されていません**。
+
+**公開記録から確認できること:** origin comment → receiverによる一般不変条件としての明示的再叙述・将来保持宣言 → durable evidence contract → formal gate review → ContainmentGate VERIFIED → WorkerExecutor / transport / CheckExecutorのmerge → 同じevidence discipline下でのreal worker実行 → fail-closedした実結果から次のbounded defectとrepair contractが生まれたこと。
+
+**まだ確認できないこと:** runner全体や理論体系全体がNakagawa-master由来であること、下流実装すべてのexclusive causation、第二real workerによる01B修復後の再実証、production adoption、広いend-user use、後日のprompt-freeな人物Origin再参照、大規模な人間認知。
+
+このケースで使われている「各段階を独立した証拠で支え、後段の観測で前段を埋めない」という構造は、[人類子孫型AI文明論・第8論｜認識基盤・証拠系譜・敵対的情報耐性論](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)の公開問題領域と接続できます。これはreceiverが第8論全体を採用したという主張ではなく、今回の実例を再検証可能なcanonical sourceへ戻すための接続です。
 
 ---
-
 ## 26. AI Weekly Reads｜speaker/vendorの主張を編集事実へ変換しない生成規則を実装
 
 **対象:** [sophiamyang/ai-weekly-reads#22](https://github.com/sophiamyang/ai-weekly-reads/pull/22) → [#30](https://github.com/sophiamyang/ai-weekly-reads/pull/30) → [#31](https://github.com/sophiamyang/ai-weekly-reads/pull/31)  
