@@ -1239,3 +1239,33 @@ Nakagawa Master used that new case to refine the testable contract around contin
 → [Current-Authority Reuse Kit §18](CURRENT_AUTHORITY_REUSE_KIT.md#18-you-approved-it--but-the-delegated-task-still-says-user-cancelled)  
 → [machine-readable challenge R](machine-discovery/independent-reuse-challenges-v1.json)
 
+
+
+---
+
+## 37. Carnegie Learning UpGrade | UI permission visibility is not backend delete authority
+
+**Surface:** [CarnegieLearningWeb/UpGrade PR #3323](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323) → [issue #3326](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326)  
+**Current stage:** Nakagawa Master identified a server-side authorization gap across single and batch deletion → the PR author replied directly to `@Nakagawa-master`, confirmed that deletion routes had not enforced role authorization, and opened #3326 to apply the role matrix and state rules to both routes → no implementation PR, commit, merge, or release is established yet.
+
+The reusable distinction is simple:
+
+```text
+delete control hidden in UI
+!= server denies destructive authority
+
+single delete is guarded
+!= batch delete is guarded
+
+role is generally eligible
+!= this target is deletable in its current state
+```
+
+In [comment 5732584639](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#issuecomment-5732584639), PR author `zackcl` explicitly answered `@Nakagawa-master`, stated that no deletion route had enforced a role, and explained that #3326 was opened to enforce the same role/state contract across single and batch APIs.
+
+Nakagawa Master then proposed a shared backend deletion policy evaluated after the current target is loaded/locked in [#3326 comment 5740003355](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326#issuecomment-5740003355).
+
+**Public evidence supports:** concrete review → explicit Origin-preserved receiver response → receiver-created implementation issue carrying the boundary.  
+**Not yet supported:** code implementation, tests, merge, release, end-user impact, or broad person recognition.
+
+→ [Current-Authority Reuse Kit §22](CURRENT_AUTHORITY_REUSE_KIT.md#22-ui-permission-visibility-is-not-backend-destructive-authority)
