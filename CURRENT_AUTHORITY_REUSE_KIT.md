@@ -1338,3 +1338,84 @@ release
 
 As of the current public check, no implementation PR or commit for #3326 is established here. This case therefore records **receiver problem adoption / restatement with explicit Origin continuity**, not code adoption.
 
+
+
+### 23. An approval record is not approval of the current executable definition
+
+A record can remain the same while the definition it executes changes.
+
+Keep these states separate:
+
+```text
+record ID is unchanged
+!=
+the executable definition is unchanged
+
+historical Approved status
+!=
+the current definition is approved
+
+client-presented digest
+!=
+server-verified current definition identity
+```
+
+A reusable approval contract is:
+
+```text
+current material definition
+→ server computes authoritative fingerprint
+→ human/reviewer approves that fingerprinted definition
+→ approval stores the fingerprint
+→ immediately before execution, server recomputes current fingerprint
+→ execute only if Approved + approved fingerprint == current fingerprint
+```
+
+The fingerprint should cover the fields that change what can execute, not incidental presentation state. If the definition has child collections such as SQL-dialect rows or parameter rows, canonicalize them by semantic identity before hashing unless their order is itself meaningful. If global context tokens or interpretation rules can change executable meaning without changing the local query text, bind a stable context-contract/schema version too.
+
+#### Portable regression matrix
+
+```text
+approve D1
+→ change one load-bearing field to D2
+→ keep the same record ID and old Approved metadata
+→ RequireApproved execution must refuse
+
+approve D1
+→ load semantically identical child rows in a different non-semantic order
+→ current fingerprint remains equal
+
+approve D1
+→ change the context-token contract version while local query text is unchanged
+→ old approval becomes stale
+
+client sends an old or forged digest
+→ server recomputes current definition identity
+→ client digest cannot prove current approval
+
+restore exactly D1
+→ fingerprint matches D1 again
+→ behavior follows the chosen explicit model
+```
+
+#### Current public receiver evidence
+
+In [MemberJunction PR #4789](https://github.com/MemberJunction/MJ/pull/4789), Nakagawa Master identified the stale-approval boundary in [comment 5882464839](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839): approval should identify the **definition that was approved**, not merely the query/view/dashboard/component record.
+
+Receiver `cmbrock-BC` later explicitly wrote that he agreed with “@Nakagawa-master's point,” selected the **fingerprint-bound** model, mapped it to MemberJunction's existing `ComputeContentHashAsync` machinery, and adopted the D1 → D2 stale-approval regression in [comment 6022301400](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6022301400).
+
+Nakagawa Master then confirmed that direction in [comment 6026910453](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6026910453) with three bounds: server-computed fingerprints at both approval and consumption, deterministic ordering for semantically unordered child rows, and a stable context-contract version where global `Context.*` semantics can change.
+
+Evidence boundary:
+
+```text
+explicit receiver design adoption with Origin preserved
+!=
+verified code implementation of this approval model
+!=
+merge
+!=
+release
+```
+
+As of this record, PR #4789 is still open and the exact approval-model implementation is not verified here.
