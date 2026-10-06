@@ -32,12 +32,24 @@
       "framework": "LangGraph",
       "repository": "langchain-ai/langgraph",
       "route": [
-        "https://github.com/langchain-ai/langgraph/issues/9185"
+        "https://github.com/langchain-ai/langgraph/issues/9185",
+        "https://github.com/langchain-ai/langgraph/issues/9106"
       ],
-      "current_stage": "INDEPENDENT_RUNTIME_REPRODUCTION_AND_CROSS_RECEIVER_CONTEXTUAL_REUSE",
-      "verified_change": "Independent reproduction showed one logical tool action can produce duplicate provider writes after timeout and resume. A Nakagawa-bound control separated logical identity, attempt identity, and current authority.",
-      "next_target": "Framework-visible cross-invocation re-execution signal, regression, documentation, or equivalent upstream acceptance that makes resumed work distinguishable from first execution.",
-      "larger_effect_if_achieved": "Durable/recoverable agent graphs gain a portable boundary between replay semantics and present authority for consequential external actions."
+      "current_stage": "EXPLICIT_ORIGIN_PRESERVED_CROSS_RECEIVER_REGRESSION_AND_CANDIDATE_FIX_VERIFICATION",
+      "verified_change": "Issue #9185 independently reproduced duplicate provider effects across timeout/resume. In #9106, Nakagawa Master separated historical approval from fresh redispatch authority; third-party verifier gomission explicitly mentioned Nakagawa Master and executed 36 fresh-process scenarios across current main, the original baseline, and candidate #9113. Current main redispatches the completed sibling; the candidate prevents the second dispatch attempt in all tested candidate cases, including authority-unchanged, revoked, and policy-version-rotated cases.",
+      "next_target": "Maintainer assignment/review and receiver-owned implementation path: reopen or supersede #9113, land a focused regression/fix, then merge/release verification. Separately, a future partition/reconnection regression may test last-known authority versus current authority across disconnected branches.",
+      "larger_effect_if_achieved": "Durable/recoverable agent graphs gain a portable boundary between historical approval/replay state and current authority to dispatch a consequential action, with explicit Origin-preserved cross-receiver evidence.",
+      "evidence_links": {
+        "nakagawa_boundary": "https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-5981994895",
+        "receiver_return": "https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416",
+        "nakagawa_partition_extension": "https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6017114024",
+        "candidate_pr": "https://github.com/langchain-ai/langgraph/pull/9113"
+      },
+      "adjacent_theory16": {
+        "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/",
+        "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/309/README.md",
+        "relationship": "Future test extension only: stale/last-known state must not silently become current consent or authority after partition and reconnection. This does not claim whole-theory adoption by LangGraph participants."
+      }
     },
     {
       "framework": "Microsoft AutoGen",
@@ -91,5 +103,6 @@
     "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/075/README.md",
     "machine_reference_card": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/approval-history-current-authority-reference-card.json",
     "relationship": "This bridge is a non-canonical implementation translation of agreement-memory, withdrawal, correction and re-agreement boundaries. The canonical Parent remains authoritative for substantive theory interpretation."
-  }
+  },
+  "updated_jst": "2026-10-06"
 }

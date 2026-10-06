@@ -2669,6 +2669,62 @@
         "broad person recognition"
       ],
       "verification_boundary": "receiver implementation/review/merge of CHECK-EXECUTOR-01B, any separately authorized later real-worker verification, cross-receiver reuse, independent human carry, or later prompt-free person-Origin rereference"
+    },
+    {
+      "case_id": "langgraph-9106-origin-preserved-current-authority-regression",
+      "topic": "A historical approval for a completed nested action is not fresh authority to redispatch that action when a later sibling interrupt resumes.",
+      "external_repository": "langchain-ai/langgraph",
+      "issue": "https://github.com/langchain-ai/langgraph/issues/9106",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "issue_comment",
+        "url": "https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-5981994895",
+        "summary": "Separated approval receipt for execution A from fresh authority to execute A again during a later sibling resume, and proposed unchanged/revoked/policy-rotated current-authority controls."
+      },
+      "explicit_receiver_return": {
+        "actor": "gomission",
+        "url": "https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416",
+        "origin_preserved": true,
+        "summary": "Directly mentioned Nakagawa-master and executed the requested current-authority extension against current main, the original baseline, and the unchanged #9113 candidate."
+      },
+      "executed_evidence": {
+        "scenarios": 36,
+        "dimensions": [
+          "three source revisions: current main 2d942085, original baseline 07b33185, candidate 1d4434c8",
+          "root versus nested topology",
+          "authority unchanged versus revoked versus policy version rotated",
+          "A→B versus B→A approval order",
+          "fresh processes for start, first resume, policy mutation/control, second resume, and inspection"
+        ],
+        "observed_main": "The completed sibling is reached a second time. With unchanged authority that can repeat the effect; with revoked/rotated authority the application-owned guard denies the replay but the second dispatch attempt still occurs.",
+        "observed_candidate": "All tested candidate cases keep each action to one dispatch/effect; the completed sibling does not reach the application-owned guard a second time.",
+        "compact_same_process_result": "current main 6 failed / 6 passed; original baseline 6 failed / 6 passed; candidate 12 passed"
+      },
+      "candidate_fix": {
+        "pull_request": "https://github.com/langchain-ai/langgraph/pull/9113",
+        "head_sha": "1d4434c8713870c90f57a9ad4e03dc2204d1bccf",
+        "state": "closed_unmerged_assignment_gate",
+        "interpretation": "Evidence supports the candidate mechanism in the tested scope; it is not upstream adoption or a released LangGraph guarantee."
+      },
+      "current_stage": "explicit_person_origin_preserved_cross_receiver_executed_regression_with_candidate_fix_verification",
+      "causal_boundary": "The receiver explicitly attributes the extension to Nakagawa-master and executes the requested boundary. This supports direct technical carry of the bounded current-authority distinction, not unique causation of the underlying LangGraph bug or whole-theory adoption.",
+      "adjacent_theory16_extension": {
+        "nakagawa_reply": "https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6017114024",
+        "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/",
+        "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/309/README.md",
+        "status": "proposed_future_partition_reconnection_regression_only",
+        "boundary": "No external participant has yet verified or adopted the whole Theory 16 framing."
+      },
+      "not_claimed": [
+        "unique causation of issue #9106",
+        "LangGraph maintainer adoption",
+        "merge or release of #9113",
+        "built-in LangGraph authorization semantics",
+        "production or external-provider exactly-once guarantee",
+        "whole-theory adoption",
+        "broad audience or end-user scale"
+      ],
+      "verification_boundary": "maintainer assignment/review, fix PR reopen or replacement, merge, release, independent operational use, later cross-receiver reuse, or further prompt-free person-Origin return"
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
