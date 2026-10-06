@@ -2554,7 +2554,7 @@
       },
       "receiver_implementation": {
         "pull_request": "https://github.com/ibboabdoli-ai/Proffera/pull/937",
-        "current_head_sha": "cf20c31732c07767328c1107926075502ba85679",
+        "current_head_sha": "c951139cd70959e1f342d0a61633f14884559714",
         "commits": [
           {
             "sha": "6ae7a9e4afeb04ea914958affbec9f9bb3c00bda",
@@ -2572,10 +2572,10 @@
             "effect": "Adds regression coverage: same historical evidence remains suppressed while materially changed head evidence may re-enter."
           }
         ],
-        "current_state": "open_draft_unmerged",
-        "current_head_verification": "Fresh read of the current PR head confirms the Nakagawa Current Authority distinction and its regressions remain present after later receiver updates."
+        "current_state": "open_draft_unmerged_mergeable",
+        "current_head_verification": "The original post-model indeterminate-recovery distinction remains present, and a second receiver change now preserves historical strategy lineage across backfill and orphan recovery."
       },
-      "current_stage": "receiver_owned_code_and_regression_change_after_origin_comment_without_explicit_receiver_origin_attribution",
+      "current_stage": "receiver_owned_code_and_regression_changes_after_two_current_authority_comments_without_explicit_receiver_origin_attribution",
       "causal_boundary": "The receiver commits were authored after the public Nakagawa Master comment and implement the same narrow distinction. No receiver statement explicitly says the commits were caused by or adopted from Nakagawa Master, so exclusive causation and person-Origin return are not claimed.",
       "not_claimed": [
         "explicit receiver attribution to Nakagawa Master",
@@ -2586,7 +2586,80 @@
         "whole-theory adoption",
         "broad person recognition"
       ],
-      "verification_boundary": "receiver review, merge, release, operational use, cross-receiver reuse, or explicit prompt-free person-Origin rereference"
+      "verification_boundary": "normal repository review, merge, release, operational use, cross-receiver reuse, or explicit prompt-free person-Origin rereference",
+      "strategy_lineage_extension": {
+        "origin_action": {
+          "origin": "Nakagawa Master",
+          "type": "pull_request_comment",
+          "url": "https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6014334260",
+          "created_at_utc": "2026-10-06T10:29:35Z",
+          "summary": "Separated historical attempt identity from current execution strategy identity and proposed preserving the strategy fingerprint that governed each old attempt while current admission compares against the current strategy."
+        },
+        "receiver_commits": [
+          {
+            "sha": "e2861f0ead7235ab18eef15806155107177fcc52",
+            "url": "https://github.com/ibboabdoli-ai/Proffera/commit/e2861f0ead7235ab18eef15806155107177fcc52",
+            "created_at_utc": "2026-10-06T10:38:44Z",
+            "effect": "Preserves the historical strategy identity during terminal backfill and terminal reconstruction."
+          },
+          {
+            "sha": "aed3e4962397c74ab8f37e0bfcaedb707758fbdf",
+            "url": "https://github.com/ibboabdoli-ai/Proffera/commit/aed3e4962397c74ab8f37e0bfcaedb707758fbdf",
+            "created_at_utc": "2026-10-06T10:39:08Z",
+            "effect": "Recovers indeterminate historical attempts using the strategy identity carried by the historical start rather than the current strategy."
+          },
+          {
+            "sha": "c951139cd70959e1f342d0a61633f14884559714",
+            "url": "https://github.com/ibboabdoli-ai/Proffera/commit/c951139cd70959e1f342d0a61633f14884559714",
+            "created_at_utc": "2026-10-06T10:39:52Z",
+            "effect": "Adds regression coverage proving historical strategy preservation while materially changed current strategy remains separately eligible for re-entry."
+          }
+        ],
+        "origin_recheck": {
+          "url": "https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6015074173",
+          "relationship": "Nakagawa Master re-checked the receiver implementation on the current head and closed this bounded strategy-lineage concern without requesting further changes."
+        },
+        "attribution_boundary": "The receiver commits follow the public Nakagawa comment and implement the same narrow strategy-lineage distinction, but the receiver has not explicitly attributed the change to Nakagawa Master."
+      }
+    },
+    {
+      "case_id": "zammad-linked-vs-ai-suggested-knowledge-provenance",
+      "topic": "Durable human/workflow-linked knowledge is a different evidence class from probabilistic AI-suggested knowledge and should remain separately visible.",
+      "external_repository": "zammad/zammad",
+      "theory_relation": {
+        "scope": "Nakagawa structural provenance / evidence-class separation concept",
+        "boundary": "This is a bounded structural concept application, not adoption of a whole named theory."
+      },
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "issue_comment",
+        "url": "https://github.com/zammad/zammad/issues/6348#issuecomment-5689266377",
+        "summary": "Proposed keeping linked answers and AI suggestions visibly separate, with linked answers first and suggestion failure unable to hide linked knowledge."
+      },
+      "receiver_design_carry": {
+        "split_comment": "https://github.com/zammad/zammad/issues/6348#issuecomment-5973164153",
+        "receiver_story": "https://github.com/zammad/zammad/issues/6418",
+        "mechanisms": [
+          "Current acceptance criteria list linked answers first and suggested answers second.",
+          "If suggestions are switched off, loading, or fail, linked answers remain available.",
+          "Typing replaces the zero-state with ordinary search rather than collapsing the two evidence classes."
+        ],
+        "current_state": "open_assigned_no_implementation_pr_found"
+      },
+      "current_stage": "receiver_owned_human_product_design_spec_without_implementation_or_explicit_origin_attribution",
+      "causal_boundary": "The receiver-owned story was split after the Nakagawa comment and preserves the same ordered evidence-class distinction. No explicit receiver statement attributes the story change to Nakagawa Master, so exclusive causation is not claimed.",
+      "not_claimed": [
+        "explicit receiver attribution to Nakagawa Master",
+        "exclusive causation",
+        "implementation PR",
+        "merge",
+        "release or deployment",
+        "verified end-user use",
+        "person-Origin return",
+        "audience scale",
+        "whole-theory adoption"
+      ],
+      "verification_boundary": "implementation PR, merge, release, agent use, independent reuse, or prompt-free person-Origin rereference"
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
