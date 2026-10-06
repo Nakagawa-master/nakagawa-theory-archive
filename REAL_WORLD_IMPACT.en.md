@@ -791,8 +791,8 @@ A later `Nakagawa-master` re-check recorded no remaining blocker within the earl
 
 ## 25. Codex Autonomy Runner | A failed operation is not evidence that the intended boundary was exercised
 
-**Surface:** [Innlab-idi/codex-autonomy-runner#59](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59) → [PR #61 merge commit](https://github.com/Innlab-idi/codex-autonomy-runner/commit/aade543103ae7031edcd7a420274685b922ed7b0)  
-**Current state:** receiver explicit restatement → Research Checkpoint governance adopted → merged into `AGENTS.md`
+**Surface:** [Innlab-idi/codex-autonomy-runner#59](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59)  
+**Current state:** explicit adoption as a general invariant → durable evidence contract → ContainmentGate VERIFIED → WorkerExecutor / live transport / contained CheckExecutor merged → first real worker exercised → a new CheckExecutor defect surfaced fail-closed → bounded repair authorized
 
 A public `Nakagawa-master` comment separated four states that are easy to collapse in sandbox / authority-boundary probes:
 
@@ -806,25 +806,61 @@ target boundary was exercised
 boundary passed
 ```
 
-The point was to avoid upgrading a failed operation into positive evidence that the intended boundary was actually reached.
+The point was to prevent a failed operation from being upgraded into positive evidence that the intended boundary was actually reached.
 
 - [Nakagawa-master comment](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5775879719)
 
-Receiver `Innlab-idi` later said the current implementation had converged on essentially the same evidence-validity rule, called the distinction **“a useful general invariant,”** and stated that the comment had prompted a broader review. The receiver also described adding a Research Checkpoint for uncertain runtime / external-security semantics.
+Receiver `Innlab-idi` explicitly called this distinction **“a useful general invariant,”** said it should be preserved for future probes and the WorkerExecutor, and stated that the Nakagawa-master comment had prompted a broader review.
 
-- [receiver restatement and adoption rationale](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5821543543)
+- [receiver restatement / preservation intent](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5821543543)
 
-The consumer-side governance PR was then merged into `AGENTS.md`, including the rule that a failed operation is not positive evidence that the intended boundary was exercised unless execution is shown to have reached it, together with the Research Checkpoint.
+Nakagawa-master then extended the structure with `authority_designated`: later success or failure should not back-fill an earlier stage; each stage should have its own positive evidence. The receiver answered that this direction would be made explicit as a durable evidence contract after the first complete E1–E9 run.
 
-- [merged governance commit `aade543...`](https://github.com/Innlab-idi/codex-autonomy-runner/commit/aade543103ae7031edcd7a420274685b922ed7b0)
+- [adjacent prior-work / stage-separation response](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5834071297)
+- [receiver durable-contract commitment](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5871384250)
 
-The receiver later asked for prior work / papers / implementations; bounded references such as SLSA / in-toto, Capsicum, Confused Deputy, and Cedar were supplied. That response is not counted as a new external effect unless a further receiver-side change returns.
+The receiver then materialized a contract that binds each stage to separate positive evidence:
 
-**Publicly verifiable here:** origin comment → receiver explicit restatement as a general invariant → receiver states the comment prompted broader review → Research Checkpoint plus the same evidence-validity rule merged into consumer governance.  
-**Not established here:** full WorkerExecutor implementation, operational effectiveness, intellectual priority over the general principle, or whole-theory endorsement.
+```text
+invocation_bound
+authority_designated
+child_started
+target_boundary_attempted
+policy_result
+forbidden_effect_observed
+cleanup_proven
+verdict
+```
+
+- [durable evidence contract mapping](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5913106705)
+- [formal exact-evidence review](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5913132794)
+- [human-owner ContainmentGate = VERIFIED transition](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5913352453)
+
+The line then moved from governance text into implementation and execution:
+
+- [PR #62](https://github.com/Innlab-idi/codex-autonomy-runner/pull/62) — offline WorkerExecutor adapter, merged as `d8aa78006a3c0ba6c3da8f4a0177cf0a15287f2a`
+- [PR #63](https://github.com/Innlab-idi/codex-autonomy-runner/pull/63) — live Codex worker transport, merged as `5923a4461f1e2bcfa8d945f3ddf6acd9d27e8ad7`
+- [PR #64](https://github.com/Innlab-idi/codex-autonomy-runner/pull/64) — contained CheckExecutor, merged as `6a4d5dcd9de63c9d52ae0211fc01afdc308bee96`
+
+A human owner then authorized **one** real pilot worker. The worker process completed reliably and reached the RUNTIME-03 publication check, but that declared check returned nonzero. The system failed closed before RUNTIME-04 staging / commit / push / PR. No remote branch or publication mutation was attempted.
+
+- [first one-shot real worker result](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013365402)
+
+Read-only diagnosis then established that the worker-created content itself was clean and that the same `git diff --check` returned 0 outside the contained check. The receiver identified a bounded mechanism consistent with the false nonzero: the contained CheckExecutor made repository/Git metadata read-only but did not fix `GIT_OPTIONAL_LOCKS=0`, while Git porcelain may attempt optional index refresh/locking even for a read-only diff.
+
+- [post-worker diagnosis](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013640426)
+- [human-owner authorization for CHECK-EXECUTOR-01B-RUNNER](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013944031)
+- [bounded materialization contract](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013945634)
+
+The 01B repair is defined to inject a trusted fixed `GIT_OPTIONAL_LOCKS=0` at the CheckExecutor boundary, reject HOST override, and preserve the existing read-only / network-disabled / credential-denied / exact-argv / one-shot boundaries. The original real-worker authorization has been consumed 1/1; **a second real worker is not currently authorized**.
+
+**Publicly verifiable here:** origin comment → receiver explicit restatement and preservation of the general invariant → durable evidence contract → formal gate review → ContainmentGate VERIFIED → merged WorkerExecutor / transport / CheckExecutor → real worker execution under that evidence discipline → a fail-closed real result exposing the next bounded defect and repair contract.
+
+**Not established here:** that the whole runner or theory system originates from Nakagawa-master, exclusive causation of all downstream code, a second post-repair real-worker verification, production adoption, broad end-user use, later prompt-free person-Origin rereference, or mass human recognition.
+
+The “each stage needs its own evidence; later observations must not back-fill earlier stages” structure connects to the public problem domain of [Human-Descendant AI Civilization Theory Vol. 8 — epistemic integrity, evidence lineage and hostile-information resilience](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/). This link is a reusable canonical return path, not a claim that the receiver adopted the whole theory.
 
 ---
-
 ## 26. AI Weekly Reads | Preserve claimant attribution instead of turning self-reported results into editorial facts
 
 **Surface:** [sophiamyang/ai-weekly-reads#22](https://github.com/sophiamyang/ai-weekly-reads/pull/22) → [#30](https://github.com/sophiamyang/ai-weekly-reads/pull/30) → [#31](https://github.com/sophiamyang/ai-weekly-reads/pull/31)  
