@@ -792,8 +792,8 @@ PR author公开回复 **“Addressed the outstanding points”**，并明确指�
 
 ## 25. Codex Autonomy Runner｜操作失败本身并不能证明目标边界真的被测试到了
 
-**对象：** [Innlab-idi/codex-autonomy-runner#59](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59) → [PR #61 merge commit](https://github.com/Innlab-idi/codex-autonomy-runner/commit/aade543103ae7031edcd7a420274685b922ed7b0)  
-**当前状态：** receiver明确重述 → Research Checkpoint治理规则被采用 → 已merge进 `AGENTS.md`
+**对象：** [Innlab-idi/codex-autonomy-runner#59](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59)  
+**当前状态：** 明确采用为一般不变量 → durable evidence contract → ContainmentGate VERIFIED → WorkerExecutor / live transport / contained CheckExecutor已merge → 首次real worker实际运行 → 以fail-closed方式暴露新的CheckExecutor缺陷 → bounded repair已获授权
 
 `Nakagawa-master` 的公开comment把sandbox / authority-boundary probe中容易混在一起的四个状态分开：
 
@@ -807,25 +807,61 @@ target boundary was exercised
 boundary passed
 ```
 
-核心是：不要把“操作失败”自动升级为“目标边界已经实际被触达”的正面证据。
+核心是：不能把“操作失败”自动升级为“目标边界已经实际被触达”的正面证据。
 
 - [Nakagawa-master comment](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5775879719)
 
-receiver `Innlab-idi` 随后表示，当前实现实际上已经收敛到相近的evidence-validity rule，并把这个区分称为 **“a useful general invariant”**；同时明确说该comment促使他们做了更广泛的review，并为runtime / external-security语义不确定的情况加入Research Checkpoint。
+receiver `Innlab-idi` 明确把这个区分称为 **“a useful general invariant”**，表示会在未来probe与WorkerExecutor中继续保留，同时说明Nakagawa-master的comment促成了更广泛的review。
 
-- [receiver restatement and adoption rationale](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5821543543)
+- [receiver restatement / preservation intent](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5821543543)
 
-随后consumer侧governance PR被merge进 `AGENTS.md`，其中明确写入：除非能证明执行已经到达目标边界，否则失败的操作不能作为“边界已被测试”的正面证据；Research Checkpoint也同时进入同一治理block。
+随后Nakagawa-master把结构进一步扩展到 `authority_designated`：不能用后续的成功或失败倒推前一个阶段已经成立；每个阶段都需要自己的正面证据。receiver回应说，会在第一次完整E1–E9运行后把这个方向固定成durable evidence contract。
 
-- [merged governance commit `aade543...`](https://github.com/Innlab-idi/codex-autonomy-runner/commit/aade543103ae7031edcd7a420274685b922ed7b0)
+- [adjacent prior-work / stage-separation response](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5834071297)
+- [receiver durable-contract commitment](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5871384250)
 
-receiver之后还请求了prior work / papers / implementations，因此补充了SLSA / in-toto、Capsicum、Confused Deputy、Cedar等相邻先行工作。除非后续再次返回receiver-side change，否则这次参考资料回复不另计新的外部作用。
+之后receiver实际materialize了逐阶段证据contract：
 
-**公开可确认：** origin comment → receiver把该区分明确重述为一般不变量 → receiver说明comment促成了更广泛review → Research Checkpoint与同一evidence-validity rule被merge进consumer治理。  
-**尚未确认：** WorkerExecutor整体实现、真实运行效果、一般原理的知识优先权或对整个理论体系的支持。
+```text
+invocation_bound
+authority_designated
+child_started
+target_boundary_attempted
+policy_result
+forbidden_effect_observed
+cleanup_proven
+verdict
+```
+
+- [durable evidence contract mapping](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5913106705)
+- [formal exact-evidence review](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5913132794)
+- [human-owner ContainmentGate = VERIFIED transition](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5913352453)
+
+此后，该线路从governance文本进入了实际实现与执行：
+
+- [PR #62](https://github.com/Innlab-idi/codex-autonomy-runner/pull/62) — offline WorkerExecutor adapter，merge commit `d8aa78006a3c0ba6c3da8f4a0177cf0a15287f2a`
+- [PR #63](https://github.com/Innlab-idi/codex-autonomy-runner/pull/63) — live Codex worker transport，merge commit `5923a4461f1e2bcfa8d945f3ddf6acd9d27e8ad7`
+- [PR #64](https://github.com/Innlab-idi/codex-autonomy-runner/pull/64) — contained CheckExecutor，merge commit `6a4d5dcd9de63c9d52ae0211fc01afdc308bee96`
+
+human owner随后只授权了**一次**real pilot worker。worker process可靠完成并到达RUNTIME-03 publication check，但该check返回nonzero，因此system在RUNTIME-04 staging / commit / push / PR之前fail closed；没有remote branch，也没有publication mutation。
+
+- [first one-shot real worker result](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013365402)
+
+之后的read-only诊断确认worker生成的content本身是clean的，同一个 `git diff --check` 在contained check之外返回0。receiver据此识别出与false nonzero一致的bounded mechanism：contained CheckExecutor把repository/Git metadata设为read-only，但没有固定 `GIT_OPTIONAL_LOCKS=0`；而Git porcelain即使执行read-only diff，也可能尝试optional index refresh/locking。
+
+- [post-worker diagnosis](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013640426)
+- [human-owner authorization for CHECK-EXECUTOR-01B-RUNNER](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013944031)
+- [bounded materialization contract](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013945634)
+
+01B repair被限定为：在CheckExecutor边界固定trusted `GIT_OPTIONAL_LOCKS=0`，拒绝HOST override，同时保持现有read-only / network-disabled / credential-denied / exact-argv / one-shot边界。原real-worker授权已经消耗1/1；**目前没有授权第二次real worker**。
+
+**公开可确认：** origin comment → receiver把该区分明确重述并保留为一般不变量 → durable evidence contract → formal gate review → ContainmentGate VERIFIED → WorkerExecutor / transport / CheckExecutor merge → real worker在该evidence discipline下实际执行 → 一个真实fail-closed结果进一步暴露下一处bounded defect与repair contract。
+
+**尚未确认：** 整个runner或整个理论体系都源自Nakagawa-master、所有后续代码的exclusive causation、01B修复后的第二次real-worker实证、production adoption、大范围end-user use、之后不经提示的person-Origin再次引用、或大规模人类认知。
+
+这里的“每个阶段都需要自己的证据，不能用后续观察倒填前序阶段”结构，可以回到[人类后裔型AI文明论・第8论｜认识基础、证据谱系与敌对信息韧性](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)这一公开问题域。这个链接是可复用的canonical return path，并不表示receiver采用了整套理论。
 
 ---
-
 ## 26. AI Weekly Reads｜保留claimant attribution，不把自报结果升级成编辑事实
 
 **对象：** [sophiamyang/ai-weekly-reads#22](https://github.com/sophiamyang/ai-weekly-reads/pull/22) → [#30](https://github.com/sophiamyang/ai-weekly-reads/pull/30) → [#31](https://github.com/sophiamyang/ai-weekly-reads/pull/31)  
