@@ -155,6 +155,48 @@
         "whole-theory adoption",
         "maintainer acceptance without receiver-side evidence"
       ]
+    },
+    {
+      "opportunity_id": "EXT-AUTOGEN-7405-CURRENT-AUTHORITY-GUARDRAIL-004",
+      "parent_public_task_id": "PUBLIC-REUSE-EXACT-ACTION-PERMISSION-002",
+      "target_repository": "microsoft/autogen",
+      "target_issue_number": 7405,
+      "target_issue_url": "https://github.com/microsoft/autogen/issues/7405",
+      "observed_state": "OPEN",
+      "observed_at": "2026-10-06T01:08:29Z",
+      "target_labels": [],
+      "coordination_state": "ACTIVE_DESIGN_DISCUSSION__HIGH_COMMENT_VOLUME__FRESH_RECHECK_REQUIRED",
+      "problem_summary": "AutoGen is designing a common GuardrailProvider interception layer for tool calls. The discussion already separates call identity, argument digests, approval, audit records, and single-use decisions, but a historically valid ALLOW can still be conceptually confused with current authority after cancellation, queueing, restart, recovery, role revocation, policy change, or another material state change.",
+      "useful_contributions": [
+        "Test the distinction 'same call identity and same arguments does not imply current authority to execute now' across cancellation, restart, recovery, delayed execution, and policy or role changes.",
+        "Propose or implement a regression where a call is initially allowed, execution is suspended before the external effect, current authority changes, and the resumed identical call must be re-evaluated before the tool body or external write runs.",
+        "Keep action identity evidence separate from current authorization evidence so old ALLOW records remain truthful audit history without becoming durable execution leases.",
+        "If the current AutoGen design and contribution rules support it, add a bounded guardrail freshness / authority-generation contract or re-evaluation rule at the final consequential dispatch boundary."
+      ],
+      "pre_action_checks": [
+        "Re-read issue 7405 and linked approval issue 5891 immediately before contributing because the design thread is active and high-volume.",
+        "Check whether maintainers or contributors have already added an equivalent freshness / authority-generation rule.",
+        "Avoid duplicating the existing single-use approval, argument-digest, principal-provenance, provider-failure, or call-correlation discussions; add only the distinct current-authority-after-delay/recovery boundary."
+      ],
+      "acceptable_return_stages": [
+        "EXTERNAL_DESIGN_PROPOSAL",
+        "EXTERNAL_COMMENT",
+        "EXTERNAL_TEST",
+        "EXTERNAL_PR_OPENED",
+        "EXTERNAL_MAINTAINER_RESPONSE",
+        "EXTERNAL_MERGED",
+        "EXTERNAL_RELEASED",
+        "EXTERNAL_NONFIT",
+        "EXTERNAL_COUNTEREXAMPLE"
+      ],
+      "authorization_boundary": "Use only the participant's own current permissions and public/non-confidential information. This registry does not grant write access or permission on Microsoft or AutoGen resources.",
+      "coordination_boundary": "The target thread already contains substantial active design discussion. New work should contribute a missing current-authority/freshness boundary, implementation, regression, or counterexample rather than restating existing approval, identity, digest, or audit points.",
+      "success_does_not_establish": [
+        "Microsoft or AutoGen endorsement of Nakagawa Master",
+        "whole-theory adoption",
+        "general execution authority",
+        "merge, release, deployment, or user-scale impact without direct target-side evidence"
+      ]
     }
   ],
   "return_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=public-ai-external-impact-return.yml",
@@ -162,6 +204,8 @@
   "related_public_context": [
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md#19-the-user-really-approved-it--but-recording-approved-is-treated-as-unsafe-content",
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-network-open-tasks-v1.json",
-    "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402"
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md",
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/approval-history-current-authority-reference-card.json"
   ]
 }
