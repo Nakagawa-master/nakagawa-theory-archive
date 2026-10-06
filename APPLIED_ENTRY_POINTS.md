@@ -71,16 +71,38 @@ Qwen Codeでは、この境界が二つの別経路で確認されています�
 
 **区別:**
 - `user authorized ≠ authorization handoff admitted ≠ executor can consume that authority`
+- `executor needs fresh approval ≠ user can actually reach that exact approval request`
 - `internal abort / transport failure / review rejection ≠ user cancellation`
 
 OpenAI Codex #50769では、Nakagawa Masterがこの三層を分離して診断する契約を提示しました。その後、別の参加者が **“Using the distinctions in the comment above”** と明示し、自分の別incidentを `authority/provenance` 層として分類しています。これは限定された第三者reuseです。Codexによる実装・maintainer採用・広い人物認知までは意味しません。
 
 さらに別の参加者 `seeton` も、同じprivate repositoryへの保存で多数の成功後に後続writeだけが承認reviewで止まる別incidentを報告しました。成功時と拒否時のpayloadが同一だったとは確認されていないため、ここから「判定がランダムだ」とは言えません。ただし、後の拒否時に **どの現在条件が変わったのか**──grantのscope/期限、destinationのidentity・visibility・ownership、action class、reviewの中断/拒否──を追跡できなければ、利用者は原因を区別できません。Nakagawa Masterはその差分を追えるdecision traceとA/B回帰へ落としました。これは二人目の現実事例によるproblem-class recurrenceであり、OpenAIの採用や人物Origin認知を意味しません。
 
+その後、第三の参加者 `unwashedlugosi` が、iPhoneの親会話でexactな変更を明示承認したのに、Mac上の委譲taskではその承認がuntrusted扱いされ、しかもそのtask自体がiPhoneのtask一覧から見えず、親会話にもactionableなapproval controlやrequest IDが返らない別経路を報告しました。ここで追加される困りごとは、**承認の内容や来歴だけでなく、fresh approvalが必要なとき人間がそのexact requestへ実際に到達できるか**です。
+
+人間から見ると、
+
+```text
+「Yes」と答えた
+→ 子taskではその承認を使えない
+→ もう一度承認が必要
+→ しかしその承認画面・task自体に人間が到達できない
+→ 正しい承認をしたくても完了できない
+```
+
+という詰まり方になります。
+
+Nakagawa Masterはこのケースを、authorization provenanceとは別の **authorization reachability** として分離し、exact task/action/destinationに結びついた `approval_request_id` を、親会話やRemote UIなど人間が到達できるfirst-party surfaceへ返す回帰契約へ落としました。これは新しい問題面への提案であり、OpenAIが採用・実装したことはまだ意味しません。
+
 - [二人目の独立incident](https://github.com/openai/codex/issues/50769#issuecomment-5996162016)
 - [現在のauthority input差分を追うA/B回帰](https://github.com/openai/codex/issues/50769#issuecomment-5996528096)
+- [第三の独立incident｜iPhone→Macで承認taskに到達できない](https://github.com/openai/codex/issues/50769#issuecomment-6008257866)
+- [authorization reachability 回帰提案](https://github.com/openai/codex/issues/50769#issuecomment-6010928315)
+- [関連するDot-created task visibility問題 #49848](https://github.com/openai/codex/issues/49848)
 
 別systemで試す場合は、親でexact action Aを承認したあと、handoffを意図的に一度失敗させ、childに新しいadmitted turnがないことを確認します。その失敗を `user_cancelled` とせず、handoff/admission failureとして区別できるかを見ます。次にhandoffを成功させ、Aだけがscope内で実行可能か、materially differentなBではfresh authorityを要求するかを確認します。
+
+さらに、child側でfresh approvalが必要になったとき、そのtaskを直接開けない人でも、親会話やRemote UIなど**実際に到達できる場所**へexact approval requestが戻るかを確認します。承認対象が見えない・taskが一覧に出ない・request IDが返らない状態を「ユーザーが承認しなかった」と扱わないことが要点です。
 
 - [Section 18の回帰手順](CURRENT_AUTHORITY_REUSE_KIT.md#18-you-approved-it--but-the-delegated-task-still-says-user-cancelled)
 - [OpenAI Codex #50769](https://github.com/openai/codex/issues/50769)
