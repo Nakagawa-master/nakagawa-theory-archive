@@ -328,6 +328,41 @@ AIがdraftを作ることと、その内容を外部へ送信することは別�
 - [MemberJunction PR #4568](https://github.com/MemberJunction/MJ/pull/4568)
 - [Real-World Impact](REAL_WORLD_IMPACT.md)
 
+
+## 削除ボタンが見えないのに、APIからは削除できるのはなぜか
+
+管理画面で「この権限では削除できない」と表示されていても、server側のAPIが同じ利用者からの削除requestを受け入れるなら、権限はまだ守られていません。
+
+人間から見ると画面上は安全でも、直接APIを呼べば消せるからです。
+
+**区別:**
+
+```text
+UIで削除ボタンを隠す
+!=
+serverが削除権限を拒否する
+
+single deleteが守られている
+!=
+batch deleteも同じ規則を守っている
+
+role上は削除可能
+!=
+現在の対象stateでも削除可能
+```
+
+Carnegie LearningのUpGrade PR #3323では、Nakagawa Masterがこのズレを指摘しました。PR authorはその後 `@Nakagawa-master` へ直接返答し、既存のsingle routeを含めて削除routeにrole enforcementが無かったことを確認し、single/batchの両方へrole matrixとstate ruleを入れるため [#3326](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326) を作成しました。
+
+現在確認できるのは、**第三者が問題境界を認め、正式な実装issueへ移したところまで**です。#3326の実装PR・merge・releaseはまだ確認していません。
+
+別systemで試すなら、UIを経由せずに同じactorでsingle deleteとbatch deleteを直接呼びます。さらに、画面表示後に対象のstateを変更し、mutation直前のcurrent stateでserverが再判定するかを確認します。安全な設計では、single/batchが別々のpermissionロジックを持つのではなく、current role・current target state・usage constraintを一つのshared backend policyで判定します。
+
+- [UpGrade PR #3323](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323)
+- [receiverの @Nakagawa-master 返答](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#issuecomment-5732584639)
+- [receiverが作成した実装issue #3326](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326)
+- [shared backend policyの具体化](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326#issuecomment-5740003355)
+- [Current-Authority Reuse Kit §22](CURRENT_AUTHORITY_REUSE_KIT.md#22-ui-permission-visibility-is-not-backend-destructive-authority)
+
 ## 309件全体から探す
 
 ここに当てはまらない問題は、[24テーマの世界地図](human-translation/WORLD_MAP.md) または [OD001–OD309水平マップ](human-translation/ALL_309_HORIZONTAL_MAP.md) から探せます。
