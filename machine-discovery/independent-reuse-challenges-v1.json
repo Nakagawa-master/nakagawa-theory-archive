@@ -374,9 +374,18 @@
         "counterexample showing that a proposed handoff receipt creates replay or confused-deputy risk, together with a narrower verified mechanism that preserves exact-action authority and failure attribution",
         "proof that the product intentionally cannot distinguish some internal failure classes while still never attributes user cancellation without user-origin evidence and exposes a stable non-user-cancelled recovery class"
       ],
-      "evidence_boundary": "OpenAI Codex issue #50769 is a live public problem surface. Nakagawa Master introduced the three-layer separation and explicit failure-attribution contract there. One later independent participant explicitly wrote 'Using the distinctions in the comment above' and used the distinction to classify a separate incident as authority/provenance; a second distinct participant later reported another observed authorization-review incident after explicit permission and multiple successful private-repository writes. Nakagawa Master translated that second case into an authorization-continuity trace regression. These are bounded public problem/carry signals; they do not establish OpenAI/Codex implementation, maintainer acceptance, broad adoption, person-level Origin recognition, or human-scale impact. This challenge is a self-authored portability bridge for independent verification and falsification.",
+      "evidence_boundary": "OpenAI Codex issue #50769 is a live public problem surface. Nakagawa Master introduced the three-layer separation and explicit failure-attribution contract there. One later independent participant explicitly wrote 'Using the distinctions in the comment above' and used the distinction to classify a separate incident as authority/provenance; a second distinct participant later reported another observed authorization-review incident after explicit permission and multiple successful private-repository writes. Nakagawa Master translated that second case into an authorization-continuity trace regression. These are bounded public problem/carry signals; they do not establish OpenAI/Codex implementation, maintainer acceptance, broad adoption, person-level Origin recognition, or human-scale impact. This challenge is a self-authored portability bridge for independent verification and falsification. Codex issue #50887 adds a second public problem surface where sender provenance plumbing already exists through merged PR #49951, but that implementation explicitly does not transfer permission. Nakagawa Master proposed a scoped authorization receipt on #50887. This does not establish maintainer adoption or implementation of that receipt.",
       "second_independent_incident": "https://github.com/openai/codex/issues/50769#issuecomment-5996162016",
-      "authorization_continuity_follow_up": "https://github.com/openai/codex/issues/50769#issuecomment-5996528096"
+      "authorization_continuity_follow_up": "https://github.com/openai/codex/issues/50769#issuecomment-5996528096",
+      "additional_external_problem_example": "https://github.com/openai/codex/issues/50887",
+      "additional_receiver_implementation_context": {
+        "pull_request": "https://github.com/openai/codex/pull/49951",
+        "state": "merged",
+        "established_boundary": "Codex merged sender-context provenance for cloud_threads.send_message, while explicitly keeping that captured context non-authoritative and not a transfer of permission.",
+        "missing_boundary": "A current, scoped, host-verifiable authorization grant that can be consumed across the delegation boundary for the exact destination/action."
+      },
+      "additional_origin_intervention": "https://github.com/openai/codex/issues/50887#issuecomment-6007196069",
+      "additional_independent_reproduction": "https://github.com/openai/codex/issues/50887#issuecomment-6005901416"
     }
   ],
   "evidence_boundary": [
