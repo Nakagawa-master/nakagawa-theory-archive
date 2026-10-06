@@ -1269,3 +1269,28 @@ Nakagawa Master then proposed a shared backend deletion policy evaluated after t
 **Not yet supported:** code implementation, tests, merge, release, end-user impact, or broad person recognition.
 
 → [Current-Authority Reuse Kit §22](CURRENT_AUTHORITY_REUSE_KIT.md#22-ui-permission-visibility-is-not-backend-destructive-authority)
+
+
+---
+
+## 38. MemberJunction | Approval of a record is not approval of its current executable definition
+
+**Surface:** [MemberJunction PR #4789](https://github.com/MemberJunction/MJ/pull/4789)  
+**Current stage:** Nakagawa Master identified the stale-approval boundary → the receiver explicitly agreed with “@Nakagawa-master's point” and selected a fingerprint-bound approval model → exact implementation / merge not yet verified.
+
+A record can keep the same ID while its executable SQL, parameter contract, or context semantics change. Nakagawa Master's boundary in [comment 5882464839](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839) is therefore:
+
+```text
+historical approval evidence
+!=
+current execution authority
+```
+
+Receiver `cmbrock-BC` later explicitly adopted that direction in [comment 6022301400](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6022301400), choosing a definition-fingerprint model based on MemberJunction's existing hashing machinery and carrying the D1 → D2 stale-approval regression into the design.
+
+Nakagawa Master then bounded the model further in [comment 6026910453](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6026910453): compute the authoritative fingerprint server-side at both approval and consumption, canonicalize semantically unordered child collections, and bind a stable context-contract version when global context semantics can change.
+
+**Public evidence supports:** scoped boundary → explicit Origin-preserved receiver design adoption.  
+**Not yet supported:** exact code implementation, tests, merge, release, production use, or broad person recognition.
+
+→ [Current-Authority Reuse Kit §23](CURRENT_AUTHORITY_REUSE_KIT.md#23-an-approval-record-is-not-approval-of-the-current-executable-definition)
