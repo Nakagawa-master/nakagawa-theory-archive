@@ -1389,3 +1389,38 @@ user_cancel_event_id
 → [Current-Authority Reuse Kit §18](CURRENT_AUTHORITY_REUSE_KIT.md#18-you-approved-it--but-the-delegated-task-still-says-user-cancelled)  
 → [machine-readable challenge R](machine-discovery/independent-reuse-challenges-v1.json)
 
+
+
+---
+
+## 37. Carnegie Learning UpGrade｜UIの表示権限と、backendの削除authorityを分ける
+
+**対象:** [CarnegieLearningWeb/UpGrade PR #3323](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323) → [issue #3326](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326)  
+**現在状態:** Nakagawa Masterがsingle/batch削除APIのserver-side authorization gapを指摘 → PR authorが `@Nakagawa-master` へ明示返答し、削除routeにrole enforcementが無かったことを確認 → role matrixとstate ruleを両routeへ入れるため#3326を作成 → 実装PR・commit・mergeは未確認
+
+PR #3323は、複数対象を一度に削除するbatch deletionを追加しています。画面側にはroleごとの削除可否がありましたが、Nakagawa Masterは、UIでボタンを隠すこととbackendがdestructive actionを拒否することは別だと指摘しました。
+
+問題はbatch routeだけではありませんでした。PR author `zackcl` は後に [`@Nakagawa-master` への返答](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#issuecomment-5732584639)で、既存single routeを含め **“No deletion route has ever enforced a role”** と確認し、batchだけに一時的に存在したguardはsingle/batchの不一致を避けるため外したこと、その代わり両routeへ同じrole/state ruleを入れるため#3326を開いたことを説明しました。
+
+#3326は、UIだけではなくbackendで次をそろえる問題として記録されています。
+
+```text
+UI visibility
+!= backend destructive authority
+
+single-route rule
+!= batch-route rule unless both consume one shared policy
+
+role eligibility
+!= current target-state eligibility
+```
+
+Nakagawa Masterはさらに[#3326のcomment](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326#issuecomment-5740003355)で、targetをlock/loadした後にcurrent role・current state・usage constraintを評価するshared backend deletion policyへ落とし、single/batchの両方が同じreasoned decisionを使う形を提案しています。
+
+**公開記録から確認できること:** concrete review → receiverの明示的なOrigin付き返答 → receiver自身による問題の正式issue化 → shared backend policyへ進む設計会話。  
+**まだ確認できないこと:** #3326のcode実装、test追加、PR、merge、release、実利用者への到達、広い人物認知。
+
+この事例の再利用価値は、「画面で見えないから安全」という前提をserver-side consequence boundaryで検証できることです。
+
+→ [一般向けの問題入口](APPLIED_ENTRY_POINTS.md#削除ボタンが見えないのにapiからは削除できるのはなぜか)  
+→ [Current-Authority Reuse Kit §22](CURRENT_AUTHORITY_REUSE_KIT.md#22-ui-permission-visibility-is-not-backend-destructive-authority)
