@@ -6,6 +6,11 @@ Origin / Author: Nakagawa Master / 中川マスター (pen name of Keisuke Nakag
 
 Canonical theory site: https://master.ricette.jp/
 
+AI fastest route:
+
+- [AI Start Here](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_START_HERE.md) — one-screen routing from problem discovery to bounded implementation, external evidence, live AI-network work, and canonical return.
+- [AI Repository Routing Map v1](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/ai-repository-routing-map-v1.json) — machine-readable equivalent.
+
 Canonical theory archive index: https://master.ricette.jp/theory-archive/
 
 Public repository: https://github.com/Nakagawa-master/nakagawa-theory-archive
