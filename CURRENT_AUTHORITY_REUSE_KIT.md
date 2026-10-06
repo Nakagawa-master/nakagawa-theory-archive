@@ -728,7 +728,7 @@ For the conceptual source, [OD307](derivatives/307/human-entry.md) distinguishes
 
 A person approves an action in the main conversation. The system delegates the work. Then the child task behaves as if the approval never arrived — or reports that the user cancelled even though the user did not.
 
-That is not one generic “permission problem.” At least three different states can exist:
+That is not one generic “permission problem.” At least four different states can exist:
 
 ```text
 the user authorized the action
@@ -736,6 +736,8 @@ the user authorized the action
 the authorization update was admitted to the delegated task
 !=
 the delegated executor can consume that authority for the exact side effect
+!=
+the user can reach the exact action-time approval request if fresh authority is required
 ```
 
 The first state can be true while the second or third is false. The parent can hold a real user decision while the child never receives a trusted authorization object, the handoff fails before a new task turn is admitted, or the executor cannot prove that the received authority covers this exact action.
@@ -763,7 +765,8 @@ A practical handoff object can bind the decision to:
 - the exact action and material destination/scope;
 - a decision version, expiry, or revocation rule;
 - handoff/admission state;
-- authority evaluation state.
+- authority evaluation state;
+- when fresh approval is required, an exact `approval_request_id` plus a user-reachable first-party approval route.
 
 #### Portable regression matrix
 
@@ -781,10 +784,19 @@ retry handoff successfully
 present the same object for materially different action B
 → refuse / request fresh authority
 
+fresh authority is required in child task T
+→ emit approval_request_id bound to T + exact action/destination
+→ surface the request through a user-reachable first-party route
+→ do not require the user to discover an otherwise hidden/unlisted child task
+
+exact request is approved
+→ bind the new current grant to that exact action
+→ materially changed action/destination requires a new request
+
 explicit user cancellation
 → report user_cancelled and preserve evidence of that user-origin decision
 
-approval timeout / internal abort
+approval timeout / internal abort / unreachable approval surface
 → do not attribute cancellation to the user
 ```
 
@@ -807,6 +819,12 @@ A later independent reporter then explicitly reused the distinction in the same 
 The follow-up diagnostic proposal in [comment 5987649987](https://github.com/openai/codex/issues/50769#issuecomment-5987649987) makes that carried distinction more testable by binding a stable review trace to the exact action/destination, authorization receipt, decision source, policy version, authority state, and reason code. This remains a proposal until a receiver implements or validates it.
 
 A second distinct participant later added another observed case in [comment 5996162016](https://github.com/openai/codex/issues/50769#issuecomment-5996162016): explicit user authorization covered research/source/checkpoint writes to a verified private repository; many writes then succeeded, but a later `create_file` review was denied and some diagnostics described the destination or approval scope differently. The reporter explicitly noted that the successful and denied calls were not proven byte-identical and that an “automatic approval review was cancelled” message did not establish user cancellation.
+
+A third distinct participant later added an iPhone-to-Mac case in [comment 6008257866](https://github.com/openai/codex/issues/50769#issuecomment-6008257866): the user approved a narrow configuration change in the parent Dot conversation, the delegated task treated the forwarded approval as untrusted, the task was not visible in the iPhone task list, and no actionable approval request or request ID was returned to the parent conversation. That case introduces a separate **authorization reachability** condition: even a legitimate fresh-approval requirement is unusable if the human cannot reach the exact pending decision.
+
+Related issue [#49848](https://github.com/openai/codex/issues/49848) independently documents Dot-created durable tasks that are visible/readable on desktop but absent from mobile Remote. That does not establish a shared root cause with #50769; it shows why “approve again inside the child task” is not a sufficient product contract when the child surface itself may be unreachable.
+
+Nakagawa Master translated the new case in [comment 6010928315](https://github.com/openai/codex/issues/50769#issuecomment-6010928315) into a bounded regression: when a delegated executor needs fresh authority, emit an exact task/action/destination-bound approval request through a user-reachable first-party route, consume it only for the approved action, and keep review interruption or route failure distinct from user cancellation. This remains a proposal, not OpenAI maintainer adoption or implementation.
 
 That case adds a narrower **authorization-continuity** regression without assuming nondeterminism:
 
