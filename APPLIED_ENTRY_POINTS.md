@@ -24,6 +24,24 @@ AIが危険、安全、重要などと分類できることと、コメント、
 - [確認手順を使う](CURRENT_AUTHORITY_REUSE_KIT.md)
 
 
+
+## 同意した記録が残っていれば、今もそのデータを使ってよいのか
+
+人がある時点で同意した事実は、あとから消さずに履歴として残せます。しかし、その記録が残っていることと、現在も同じ目的・範囲でデータを保持・処理・利用してよいことは別です。撤回、期限、目的変更、契約変更などが起きれば、履歴は真実のままでも現在の利用可否は変わります。
+
+**区別:** `historical consent event ≠ current eligibility to retain / process / use`
+
+Replay #67では、Nakagawa Masterがこの境界を提示したあと、repository ownerがNakagawa Masterを起点として明示しながら、immutableなconsent eventとcurrent eligibility、withdrawal / deletion receipt、downstream gateを分ける方針として再記述しました。ここで確認できるのは、**相手側が境界を明示的に受け取り、protocol方針へ反映したこと**です。schema / code / tests、merge、release、実データ運用はまだ別段階です。
+
+別systemで試すなら、過去のconsent eventを監査履歴として保持したまま、現在のretention / processing / use可否を目的・scope・期限・撤回状態から再評価できるかを確認します。履歴削除と現在権限の更新を同じ操作にしないことが要点です。
+
+- [公開事例の状態と証拠境界](REAL_WORLD_IMPACT.md)
+- [Nakagawa Masterの提案](https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689647722)
+- [repository ownerの明示的な受け取り](https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689719035)
+- [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
+- [理論内容の正本｜合意の記憶](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)
+
+
 ## キャンセルした仕事が、次の新しい仕事に「続き」として混ざってよいのか
 
 キャンセルした指示を履歴から消す必要はありません。問題は、あとで別の新しい仕事を始めたとき、その古い指示が「以前こういうことがあった」という記録ではなく、いま実行すべき仕事として普通の会話文脈へ戻ってくる場合です。

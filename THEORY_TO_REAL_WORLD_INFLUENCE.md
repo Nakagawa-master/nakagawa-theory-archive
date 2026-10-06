@@ -401,6 +401,9 @@ Real-world routes:
 - [Practice Case: Historical Consent Is Not Current Processing Authority](discovery-notes/research-consent-is-not-current-processing-authority.md)
 - [Implementation Case: Sanitized Content Is Not Current Authorization](discovery-notes/implementation-case-sanitized-content-is-not-current-authorization.md)
 
+
+Replay #67 provides an Origin-preserved receiver example for the same boundary. After [Nakagawa Master's contribution](https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689647722), the repository owner [named the Nakagawa source and adopted the distinction as a protocol design rule](https://github.com/aferna6-cell/Replay/issues/67#issuecomment-5689719035). This establishes receiver-authored design adoption for the bounded distinction; code implementation, merge, release, and operational use remain unverified. See [Real-World Impact](REAL_WORLD_IMPACT.md).
+
 ### Same identity ≠ ownership provenance
 
 Matching an identifier is not enough to prove who owns the authoritative state or who is allowed to overwrite it.
