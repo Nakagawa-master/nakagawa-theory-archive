@@ -75,11 +75,21 @@
     "CROSS_FRAMEWORK_REUSE"
   ],
   "related_sources": [
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/APPLIED_ENTRY_POINTS.md",
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md",
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/approval-history-current-authority-reference-card.json",
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-external-impact-opportunities-v1.json",
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-network-open-tasks-v1.json"
   ],
   "evidence_boundary": "This bridge routes public, bounded implementation opportunities. It does not claim merge, release, operational use, endorsement, or broad adoption unless the linked receiver-owned evidence establishes that stage.",
-  "coordination_hub": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/494"
+  "coordination_hub": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/494",
+  "canonical_source": {
+    "theory": "合意の記憶——不可逆な社会誤作動を防ぐ最小構造",
+    "ncl_id": "NCL-α-20251102-e48c90",
+    "diff_id": "DIFF-20251102-0001",
+    "canonical_url": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/",
+    "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/075/README.md",
+    "machine_reference_card": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/approval-history-current-authority-reference-card.json",
+    "relationship": "This bridge is a non-canonical implementation translation of agreement-memory, withdrawal, correction and re-agreement boundaries. The canonical Parent remains authoritative for substantive theory interpretation."
+  }
 }
