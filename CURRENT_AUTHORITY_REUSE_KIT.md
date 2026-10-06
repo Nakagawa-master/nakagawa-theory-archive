@@ -930,6 +930,63 @@ For the broader conceptual source, [OD307](derivatives/307/human-entry.md) disti
 
 Machine-readable follow-on routing for this problem family, including #99652 plus related permission/provenance cases, is available in [Public AI External Impact Opportunities](machine-discovery/public-ai-external-impact-opportunities-v1.json). That index is optional routing guidance only: it does not state that Anthropic requested work or granted repository authority, and it requires a fresh coordination check before any contribution.
 
+
+### 20. Cancelled history is not fresh execution authority
+
+A cancelled request can remain in truthful human/audit history without remaining ordinary actionable context for a later fresh turn.
+
+The portable distinction is:
+
+```text
+durable historical record
+!=
+model-visible context for a fresh turn
+!=
+current authority to execute work
+```
+
+A safe contract can preserve all three:
+
+```text
+turn A is cancelled
+→ A remains visible in durable/audit history
+→ unrelated fresh turn B does not receive A's original imperative/tool transcript as ordinary prior work
+→ an explicit Retry/resubmit of A creates fresh attributable authority
+```
+
+If conversational continuity requires B to know that A existed, a typed non-operative cancellation marker can carry the fact of cancellation without silently carrying the old instruction as executable context.
+
+#### Qwen cross-path evidence
+
+Qwen Code now exposes the same boundary on two disjoint internal execution paths:
+
+- [#13463](https://github.com/QwenLM/qwen-code/issues/13463) — workspace-agents / managed-host path. Independent source verification re-derived the status-blind history mechanism, and Qwen triage classified it as an admissible non-duplicate P2 bug. Nakagawa Master then proposed separating audit history, fresh-turn model context, and current execution authority.
+- [#13487](https://github.com/QwenLM/qwen-code/issues/13487) — Hosted Harness tool-profile path. Qwen triage explicitly accepted this as a separate P2 bug rather than a duplicate, and independent verifier `doudouOUC` confirmed on current main that cancelled tool-profile turns can reach a later fresh model call as ordinary prior history.
+
+This is stronger than a single-path bug report because the same authority boundary reappears across two disjoint implementations inside one major agent runtime.
+
+Current evidence stage:
+
+```text
+theory-derived boundary
+→ two disjoint receiver paths
+→ independent source verification
+→ receiver triage acceptance as real bugs
+!=
+fix implementation
+!=
+merge
+!=
+release
+!=
+independent end-user use
+```
+
+The next meaningful receiver-owned proof is a failing regression plus a narrow status-aware history-selection fix that preserves completed history and tool-call/tool-result grouping while excluding cancelled actionable history from unrelated fresh turns.
+
+Evidence boundary: the existence of two accepted Qwen bugs does not by itself prove whole-theory adoption or broad user impact. The stronger claim is narrower: the same current-authority distinction has independently survived contact with two separate product paths and is now represented in receiver-owned triage state.
+
+
 ## Implementation pattern
 
 Keep two facts separate:
