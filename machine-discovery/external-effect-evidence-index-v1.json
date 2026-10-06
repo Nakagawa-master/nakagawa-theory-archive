@@ -2587,6 +2587,68 @@
         "broad person recognition"
       ],
       "verification_boundary": "receiver review, merge, release, operational use, cross-receiver reuse, or explicit prompt-free person-Origin rereference"
+    },
+    {
+      "case_id": "innlab-agent-evidence-validity-stage-contract",
+      "topic": "Evidence for an autonomous-agent safety boundary must prove each stage separately; later failure or success cannot retroactively prove invocation binding, authority designation, child start, or boundary attempt.",
+      "external_repository": "Innlab-idi/codex-autonomy-runner",
+      "theory_relation": {
+        "scope": "Nakagawa Structural OS — bounded evidence/authority stage-separation concept",
+        "boundary": "This case demonstrates adoption of one structural distinction, not adoption of the whole theory system."
+      },
+      "origin_actions": [
+        {
+          "origin": "Nakagawa Master",
+          "type": "issue_comment",
+          "url": "https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5775879719",
+          "summary": "Separated invocation success, child start, target-boundary attempt, and boundary pass; required positive evidence for each stage."
+        },
+        {
+          "origin": "Nakagawa Master",
+          "type": "issue_comment",
+          "url": "https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5834071297",
+          "summary": "Extended the model to authority designation and provenance/execution/effect separation while identifying adjacent prior work as neighboring precedents rather than direct implementations."
+        }
+      ],
+      "receiver_response": {
+        "actor": "Innlab-idi",
+        "sources": [
+          "https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5821543543",
+          "https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5871384250"
+        ],
+        "explicit_origin_acknowledgement": true,
+        "relationship": "The receiver explicitly called Nakagawa Master's formulation a useful general invariant, said it intended to preserve it, later thanked Nakagawa Master, and restated a durable contract close to the proposed staged evidence model."
+      },
+      "receiver_operational_use": {
+        "durable_contract_source": "https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5913106705",
+        "formal_gate_review_source": "https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-5913132794",
+        "durable_fields": [
+          "invocation_bound",
+          "authority_designated",
+          "child_started",
+          "target_boundary_attempted",
+          "policy_result",
+          "forbidden_effect_observed",
+          "cleanup_proven",
+          "verdict"
+        ],
+        "use": "The receiver materialized the staged evidence contract for a real E1-E9 result and then used it as evidence-validity/provenance input in the formal ContainmentGate sufficiency review."
+      },
+      "current_stage": "explicit_receiver_origin_acknowledgement_plus_receiver_owned_durable_protocol_and_operational_gate_use",
+      "causal_boundary": "The same-thread receiver responses explicitly connect Nakagawa Master's formulation to the receiver's intended durable evidence model, and the later durable contract closely materializes that model. This supports bounded causal adoption of the evidence-stage distinction. It does not attribute all later pilot engineering, containment outcomes, or repository progress to Nakagawa Master.",
+      "origin_visibility": {
+        "current_state": "explicit_same_thread_receiver_acknowledgement",
+        "interpretation_boundary": "This is explicit receiver acknowledgement of Nakagawa Master's contribution in the same thread, but not a later prompt-free person-Origin rereference."
+      },
+      "not_claimed": [
+        "causation of every later PILOT-02 result",
+        "whole-theory adoption",
+        "repository-wide or product-wide adoption beyond the bounded evidence contract",
+        "later prompt-free person-Origin rereference",
+        "broad audience scale",
+        "mass human recognition"
+      ],
+      "verification_boundary": "later prompt-free person-Origin rereference, independent cross-receiver reuse, durable repository-document/code incorporation, or broader operational reuse"
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
