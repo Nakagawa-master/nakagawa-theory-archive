@@ -2,6 +2,8 @@
 
 **Nakagawa Master Public Repository**
 
+**AI / LLM / agent向け最短入口:** [AI Start Here](AI_START_HERE.md) | [llms.txt](llms.txt) | [Machine Discovery](machine-discovery/README.md) | [AI Routing Map](machine-discovery/ai-repository-routing-map-v1.json)
+
 **初めて来た方は、このREADMEより先に:** [もし1ページだけ読むなら｜日常の違和感 → 中川マスターの見方 → 第三者で実際に変わった記録](STORIES.md)
 
 **読んだあと1行だけ返すなら:** [似た場面・反例・「ここは違う」を1つ](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/416) — 賛同や理論名の理解は不要です。実際に検証・実装・別文脈再利用まで行った場合は [独立検証・再利用registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) へ。
