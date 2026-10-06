@@ -34,6 +34,7 @@ You do not need to know the theory name before using this kit. Start with the fa
 | You approve an action in the parent/control conversation, but the delegated task behaves as if the approval never arrived — or reports `user cancelled` when you did not cancel | Section 18 |
 | You explicitly approve a bounded change, but the system treats recording or carrying that approval state as suspicious content — forcing a global bypass even though a narrow grant exists | Section 19 |
 | A cancelled or superseded tool turn stays in audit history, then its old actionable prompt reappears in an unrelated fresh turn as ordinary prior work | Section 20 |
+| A delete button is hidden for a role, but the single or batch API still accepts the destructive request | Section 22 |
 
 The recurring question is not “was this ever approved?” It is:
 
@@ -1249,3 +1250,89 @@ Relevant receiver commits:
 - [regression coverage](https://github.com/ibboabdoli-ai/Proffera/commit/ba897b2c04b6847e0624d1e8b695a636e33af814)
 
 The commits were authored after the public Nakagawa Master comment and implement the same bounded distinction, but no receiver comment explicitly attributes these commits to Nakagawa Master. The PR remains open and unmerged, so this is receiver-owned implementation/test evidence, not merge, release, use, whole-theory adoption, or person-Origin return.
+
+
+### 22. UI permission visibility is not backend destructive authority
+
+A product can hide a destructive control for one role and still remain unsafe if the server accepts the same operation when called directly.
+
+Keep these states separate:
+
+```text
+button hidden in the UI
+!=
+server-side authority denied
+
+one delete route enforces the rule
+!=
+every destructive route enforces the same rule
+
+role is allowed in general
+!=
+this current target state is deletable now
+```
+
+For destructive operations, the reusable boundary is:
+
+```text
+request arrives
+→ authenticate actor
+→ load the current target under the appropriate lock / transaction boundary
+→ evaluate one shared server-side deletion policy from current role + current target state + current usage constraints
+→ mutate only if that policy allows this exact consequence
+→ single and batch paths consume the same policy result
+```
+
+This avoids two common drifts:
+
+1. **presentation drift** — the UI knows the role matrix, but the API does not;
+2. **route drift** — a newer batch endpoint gets a guard that the older single endpoint lacks, or vice versa.
+
+#### Portable regression matrix
+
+```text
+role that must not delete
+→ direct single-delete request
+→ denied with zero deletion
+
+same role
+→ direct batch-delete request
+→ same policy denial
+
+role that may delete only in state S
+→ target is S when screen is rendered
+→ target changes to forbidden state T before mutation
+→ server evaluates current locked T
+→ denied with zero deletion
+
+single route and batch route target the same object/state
+→ policy reason and allow/deny result stay semantically aligned
+
+one item in a batch is not currently deletable
+→ batch behavior follows an explicit atomic/partial contract
+→ it must not silently bypass the per-target policy
+```
+
+#### Current public receiver evidence
+
+[Carnegie Learning UpGrade PR #3323](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323) adds batch deletion. Nakagawa Master reviewed the destructive boundary and identified that the UI role matrix was not a backend authorization boundary for either the existing single-delete route or the new batch route.
+
+The PR author later replied directly to `@Nakagawa-master` in [comment 5732584639](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#issuecomment-5732584639), confirmed that no deletion route had enforced a role, explained that an earlier batch-only guard had been removed to avoid single/batch inconsistency, and opened [issue #3326](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326) to enforce the role matrix and state rules on both routes.
+
+Issue #3326 now records the backend problem, role matrix, target-state restrictions and implementation seams. Nakagawa Master then proposed a shared locked backend deletion-policy service in [comment 5740003355](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326#issuecomment-5740003355).
+
+Evidence boundary:
+
+```text
+explicit receiver response
++ receiver-created issue carrying the boundary
+!=
+implementation
+!=
+merge
+!=
+release
+```
+
+As of the current public check, no implementation PR or commit for #3326 is established here. This case therefore records **receiver problem adoption / restatement with explicit Origin continuity**, not code adoption.
+
