@@ -1123,6 +1123,7 @@ A second public review identified that a capability described as scout-only was 
 The current PR makes the suggestion scope internal/programmatic and supports a server-minted scout scope. The PR is still open/unmerged at the time of this record. The commits do not establish exclusive causality.
 
 Report a public, non-confidential result through [registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402).
+
 ### 21. An indeterminate old attempt is not permanent authority to block new work
 
 An automated repair system starts attempt A against one exact code state. The model really begins work, but the runner or bookkeeping path fails before a durable final outcome is recorded.
@@ -1206,7 +1207,7 @@ indeterminate historical attempt
 
 Proffera PR [#937](https://github.com/ibboabdoli-ai/Proffera/pull/937) implements CI Autofix strategy history so unchanged exact-head failure evidence and the same strategy do not repeatedly invoke the model.
 
-On current public head `c62116efac87bc9cbac2ba81bd3687a8f7d3e974`, the implementation records starts and durable outcomes and has a narrow pre-model orphan recovery path. A model-launched attempt without a durable terminal outcome can remain unresolved, while admission treats any unresolved attempt as PR-wide suppression.
+On the public head reviewed in the linked Nakagawa Master comment (`c62116efac87bc9cbac2ba81bd3687a8f7d3e974`), the implementation records starts and durable outcomes and has a narrow pre-model orphan recovery path. A model-launched attempt without a durable terminal outcome can remain unresolved, while admission treats any unresolved attempt as PR-wide suppression.
 
 Nakagawa Master identified the narrower post-model liveness boundary in [comment 6011643787](https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6011643787): preserve the exact old evidence as non-replayable while allowing materially changed current evidence once the old execution is authenticated as terminal and no longer live.
 
