@@ -188,9 +188,9 @@ authority to suppress future current work
 
 しかし、Aの実行runがすでに終わっていて、現在のPR headや失敗証拠がH2へ変わっているなら、古い「結果不明」を歴史として残したまま、新しいH2の修復まで永久停止させない設計が必要です。
 
-Proffera PR #937では、CI Autofixの重複実行を止めるFailure Memoryが実装中です。現headでは、modelが一度起動したあとterminal記録だけ失われたcaseが、PR全体の `SUPPRESS_UNRESOLVED_ATTEMPT` として残り続ける可能性があります。Nakagawa Masterは、同じH1再実行は抑止しつつ、historical Actions runがterminalでcurrent head/evidenceがH2へ変わった時は、Aを `indeterminate` として保存し、新しいcurrent evidenceを受け入れられる回帰を提案しました。
+Proffera PR #937では、Nakagawa Masterがこの境界を指摘した後、receiver側の実装が前に進みました。古いmodel-launched attemptは、結果を勝手に「失敗」や「成功」と決めず `unknown` として残せるようになり、**同じ古いhead・同じ失敗証拠は引き続き抑止しつつ、headや失敗証拠が実質的に変わった新しい修復は再び入れる**回帰testが追加されています。
 
-これは現在は**公開PR上の問題提案**です。Proffera側がこの回帰を採用・実装・mergeしたことはまだ意味しません。
+これで状態は「問題提案」から**receiver-owned code + regression test**へ進みました。PRはまだopenで、merge・release・実利用は未確認です。またreceiverから「Nakagawa Masterの指摘を採用した」という明示的なOrigin attributionは確認できていないため、exclusive causationやperson-Origin returnはclaimしません。
 
 - [Proffera PR #937](https://github.com/ibboabdoli-ai/Proffera/pull/937)
 - [Nakagawa Masterのpost-model orphan / current-authority指摘](https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6011643787)
