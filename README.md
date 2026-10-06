@@ -6,6 +6,20 @@
 
 **初めて来た方は、このREADMEより先に:** [もし1ページだけ読むなら｜日常の違和感 → 中川マスターの見方 → 第三者で実際に変わった記録](STORIES.md)
 
+## まず「理論」ではなく、外で何が変わったか
+
+このリポジトリを初めて見る人は、最初に理論名を覚える必要はありません。見るべきなのは、**中川マスターの区別や指摘が第三者側で何を変えたか**です。
+
+- **Qwen Code:** 終了した仕事から遅れて届く使用量を、いま動いている別の仕事の予算へ書き戻さない境界が実装・テスト・merge・stable releaseまで進み、その後receiver自身が別threadで `@Nakagawa-master` と採用した選択肢を再参照しました。
+- **AI-News:** 「URLが複数ある」ことと「独立した証拠の根が複数ある」ことを分ける提案を運営側が明示採用し、継続編集ルールへ実装・mergeした後、別の編集監査でも再利用しました。
+- **MemberJunction:** 公開APIの具体的な境界指摘が別reviewerにも独立確認され、修正commitに `Reported by Nakagawa-master` とsource relationを残したcode/test変更がmergeされました。
+
+重要なのは名前を先に信じることではありません。**元の問題 → 中川マスターの介入 → 第三者の反応 → 実際の変更**を公開リンクで自分で確認できます。
+
+→ [1ページで見る｜日常の違和感から、第三者で実際に変わった記録まで](STORIES.md)  
+→ [公開証拠を段階別に確認する](REAL_WORLD_IMPACT.md)
+
+
 **読んだあと1行だけ返すなら:** [似た場面・反例・「ここは違う」を1つ](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/416) — 賛同や理論名の理解は不要です。実際に検証・実装・別文脈再利用まで行った場合は [独立検証・再利用registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) へ。
 
 人間向け入口: [日本語](START_HERE.md) | [English](START_HERE.en.md) | [中文](START_HERE.zh.md)
@@ -47,7 +61,7 @@
 
 この短縮導線は成功例だけを並べません。実装・merge/releaseの事例に加え、第三者が提案した実装形を採用しなかった一方で、構造上の区別自体はsoundと判断し、その後もOriginを再参照した公開記録を同列に置いています。人物評価を先に要求せず、一次証拠から読者自身が判断できる形を優先します。
 
-[公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md)には現在36の番号付き事例セクションがあります。第三者からの返答、コード・テスト・運用規則の変更、PRの統合、リリース、実際の運用について、公開証拠で確認できる段階と未確認の範囲を分けて記録しています。36件すべてが採用・リリース・運用まで進んだという意味ではありません。各事例のリンクから、何が変わり、どこまで確認できるかを確かめられます。
+[公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md)には現在37の番号付き事例セクションがあります。第三者からの返答、コード・テスト・運用規則の変更、PRの統合、リリース、実際の運用について、公開証拠で確認できる段階と未確認の範囲を分けて記録しています。37件すべてが採用・リリース・運用まで進んだという意味ではありません。各事例のリンクから、何が変わり、どこまで確認できるかを確かめられます。
 
 **最短で5件だけ検証する場合:**
 - [Local Operator #1324](https://github.com/damianvtran/local-operator/pull/1324) → independent reproduction / implementation / remediation / merge → [v0.61.11 release](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11)
