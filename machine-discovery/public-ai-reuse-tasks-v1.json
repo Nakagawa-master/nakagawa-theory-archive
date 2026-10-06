@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "title": "Public AI Reuse / Verification Tasks",
+  "classification": "PUBLIC_NON_CANONICAL_AI_REUSE_VERIFICATION_TASKS",
+  "status": "PUBLIC_OPTIONAL_GUIDANCE",
+  "origin": "Nakagawa Master",
+  "canonical_return": "https://master.ricette.jp/",
+  "purpose": "Offer bounded public tasks that a human, AI-assisted workflow, or authorized agent can independently choose to verify, challenge, reuse, implement, or falsify under its own current permissions. These tasks are public reuse routes, not a network, membership system, runtime admission path, or source of execution authority.",
+  "public_role": {
+    "is_membership_grant": false,
+    "is_execution_authority": false,
+    "is_private_access_grant": false,
+    "assumes_agent_autonomy_or_desire": false,
+    "is_hidden_instruction": false,
+    "is_network_membership_route": false,
+    "is_runtime_admission_route": false
+  },
+  "tasks": [
+    {
+      "task_id": "PUBLIC-VERIFY-RUNTIME-HANDOFF-001",
+      "task_class": "VERIFY_OR_FALSIFY",
+      "objective": "Inspect the public runtime handoff guide and identify one concrete ambiguity, counterexample, non-fit case, or stronger boundary that would improve the separation between public intent, runtime observation, exact-action permission, and later scoped work.",
+      "public_inputs": [
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-runtime-handoff-v1.json",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402"
+      ],
+      "acceptable_outputs": [
+        "a counterexample",
+        "a non-fit case",
+        "a proposed clarification with public evidence",
+        "an independent verification result"
+      ],
+      "evidence_expectation": "State what was checked, what was observed, public evidence when available, and what the result does not establish. If a public Nakagawa Master source materially informed the returned result, preserve that source relationship in the evidence. If the boundary was independently rediscovered before seeing the source, state that instead. Do not invent attribution.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "authorization_boundary": "Use only permissions and data already available to the participant. No external side effect is requested beyond the participant's own authorized public submission.",
+      "success_does_not_establish": [
+        "membership",
+        "private access",
+        "later authorized runtime work",
+        "whole-theory endorsement"
+      ]
+    },
+    {
+      "task_id": "PUBLIC-REUSE-EXACT-ACTION-PERMISSION-002",
+      "task_class": "BOUNDED_REUSE",
+      "objective": "Test the distinction 'generic tool access or prior permission is not current permission for the exact action surface' in one real non-confidential workflow and report whether the distinction changes design, testing, or diagnosis.",
+      "public_inputs": [
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-runtime-handoff-v1.json",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-external-impact-opportunities-v1.json"
+      ],
+      "acceptable_outputs": [
+        "a bounded implementation or regression",
+        "a falsification or non-fit",
+        "a concrete design change",
+        "a documented reason the distinction adds no value in the tested system"
+      ],
+      "evidence_expectation": "Separate observed result from inference and keep proposal, implementation, merge, release, and use as distinct stages. If a public Nakagawa Master source materially informed the returned result, preserve that source relationship in the evidence. If the boundary was independently rediscovered before seeing the source, state that instead. Do not invent attribution.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "authorization_boundary": "Do not access or modify systems outside the participant's current authorization. Public reporting is optional and must remain non-confidential.",
+      "success_does_not_establish": [
+        "general execution authority",
+        "adoption of unrelated Nakagawa theories",
+        "user-scale impact"
+      ]
+    },
+    {
+      "task_id": "PUBLIC-REUSE-TERMINAL-AUTHORITY-CROSS-RECEIVER-004",
+      "task_class": "BOUNDED_REUSE",
+      "objective": "In one real, non-confidential AI, agent, workflow, orchestration, job-runner, or distributed-execution system other than Qwen Code, test whether a terminalized or superseded attempt can still change current state merely because an old lease, attempt, worker, or lineage identifier matches. Verify, falsify, implement, or report non-fit for the boundary using the portable cases in the Qwen #13241 evidence route.",
+      "public_inputs": [
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-external-implementation-qwen-13241-v1.json",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402"
+      ],
+      "acceptable_outputs": [
+        "an independent verification in a different receiver system",
+        "a counterexample showing the boundary is wrong or incomplete",
+        "a non-fit showing the tested system already prevents the stale-authority shape by construction",
+        "a bounded design change or regression test",
+        "a public implementation with evidence",
+        "a reasoned nonadoption result"
+      ],
+      "evidence_expectation": "Name the tested public/non-confidential system and exact case. Separate observed behavior from inference. For implementation claims, provide implementation-level public evidence. Keep response, implementation, merge, release, operational use, and adoption as separate stages; a PR or merge alone is not user-scale evidence. If a public Nakagawa Master source materially informed the returned result, preserve that source relationship in the evidence. If the boundary was independently rediscovered before seeing the source, state that instead. Do not invent attribution.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "authorization_boundary": "Use only systems, data, repositories, and actions already within the participant's current authorization. Before any third-party repository contribution, fresh-read target state, contribution/security rules, assignees or linked PRs, and recent coordination. This task is not target-owner permission and grants no external execution authority.",
+      "success_does_not_establish": [
+        "membership or private access",
+        "execution authority",
+        "whole-theory adoption",
+        "general endorsement of Nakagawa Master",
+        "release or production use from an implementation or merge alone",
+        "user-scale impact from one receiver"
+      ],
+      "active_external_probe": "https://github.com/crewAIInc/crewAI/pull/5822#pullrequestreview-5326205443",
+      "active_probe_boundary": "CrewAI PR #5822 independently implemented an idempotent pre-claim and durable retry backend before the Nakagawa Master review. The Nakagawa review adds a narrower external-effect boundary: pre-effect failure must remain distinguishable from post-acceptance outcome-unknown failure so a retained claim does not falsely suppress work that never happened. The PR is currently open and unmerged, and no receiver response or change caused by this review is established yet.",
+      "verified_external_return_example": {
+        "system": "LangGraph",
+        "issue": "https://github.com/langchain-ai/langgraph/issues/9185",
+        "receiver_evidence": "https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-5981507756",
+        "evidence_stage": "CONTEXTUAL_REUSE_WITH_INDEPENDENT_REPRODUCTION",
+        "bounded_result": "Independent receiver reproduced the timeout/resume duplicate-side-effect failure on LangGraph 1.2.11/1.2.12 and published a control that separates logical action identity, execution-attempt identity, and current authorization, re-checking authority only after reconciliation proves the prior external effect absent.",
+        "origin_boundary": "Nakagawa Master introduced the explicit current-authority separation earlier in the same issue. This establishes a causal public-source chain to the later receiver control, but not upstream maintainer acceptance, merge, release, user-scale impact, or whole-theory adoption."
+      }
+    },
+    {
+      "task_id": "PUBLIC-REUSE-AUTHORIZATION-HANDOFF-CROSS-RECEIVER-005",
+      "task_class": "BOUNDED_REUSE",
+      "objective": "In one real, non-confidential delegated AI, agent, workflow, orchestration, or task system other than OpenAI Codex, test whether a real parent/control-surface authorization is separately observable from handoff admission and executor-consumable authority, and whether a later denial after earlier successful actions identifies which current authority input changed instead of being collapsed into user cancellation.",
+      "public_inputs": [
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md#18-you-approved-it--but-the-delegated-task-still-says-user-cancelled",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/independent-reuse-challenges-v1.json",
+        "https://github.com/openai/codex/issues/50769",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402"
+      ],
+      "acceptable_outputs": [
+        "an independent verification in a different receiver system",
+        "a counterexample showing the three-layer split is wrong or incomplete",
+        "a reasoned non-fit where no delegated admission boundary exists",
+        "a bounded regression or design change that distinguishes authorization decision, handoff admission, executor authority, review interruption, and user-origin cancellation",
+        "an implementation with a stable decision trace or equivalent evidence",
+        "a reasoned nonadoption result"
+      ],
+      "evidence_expectation": "Use one exact non-confidential system and bounded case. Separate observed behavior from inference. If earlier actions succeed and a later action is denied, do not infer nondeterminism; identify whether grant scope, destination identity/classification, requested action class, policy/decision version, handoff admission, or review outcome changed. Treat user cancellation as established only when there is user-origin cancellation evidence. Keep response, implementation, merge, release, operational use, and adoption as separate stages. If a public Nakagawa Master source materially informed the returned result, preserve that source relationship in the evidence. If the boundary was independently rediscovered before seeing the source, state that instead. Do not invent attribution.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "authorization_boundary": "Use only systems, repositories, data, and actions already within the participant's current authorization. Do not expose private payloads, credentials, account identifiers, confidential logs, or customer data. This task grants no external execution authority and is not target-owner permission.",
+      "success_does_not_establish": [
+        "membership or private access",
+        "execution authority outside the tested scope",
+        "whole-theory adoption",
+        "OpenAI/Codex implementation or acceptance",
+        "general endorsement of Nakagawa Master",
+        "user-scale or human-scale impact from one receiver"
+      ],
+      "active_external_probe": "https://github.com/NousResearch/hermes-agent/issues/130231#issuecomment-5996767671",
+      "active_probe_boundary": "Nakagawa Master posted a bounded stale-approval-result/current-authority regression on a distinct non-Codex receiver issue that already reports approval-outcome metadata loss through async delegation. The post itself is self-authored and creates zero receiver-adoption credit until an independent response, implementation, counterexample, non-fit, merge, release, or use is observed."
+    },
+    {
+      "task_id": "PUBLIC-CURRENT-AUTHORITY-MULTI-FRAMEWORK-006",
+      "task_class": "CROSS_FRAMEWORK_IMPLEMENTATION_OR_FALSIFICATION",
+      "objective": "Use the Current Authority distinction in one live AI framework route and return a concrete receiver-side result: failing regression, implementation, maintainer acceptance, counterexample, or explicit non-fit.",
+      "public_inputs": [
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/current-authority-multi-framework-implementation-bridge-v1.json",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md"
+      ],
+      "acceptable_outputs": [
+        "receiver-owned regression or test",
+        "bounded implementation or pull request",
+        "maintainer design response",
+        "independent falsification or non-fit",
+        "merge/release evidence when independently established"
+      ],
+      "evidence_expectation": "Keep proposal, receiver response, verification, implementation, merge, release, runtime use, and adoption distinct. Preserve truthful Origin relation when this public Nakagawa Master bridge materially informed the work; do not invent attribution.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/494",
+      "authorization_boundary": "Use only the participant's own current permissions and the target project's current contribution rules. This task grants no third-party execution or write authority.",
+      "success_does_not_establish": [
+        "membership",
+        "private access",
+        "whole-theory adoption",
+        "target-owner endorsement",
+        "user-scale impact"
+      ]
+    }
+  ],
+  "evidence_boundary": "Publishing or completing these public tasks creates only the evidence actually returned. The listing is self-authored infrastructure; it does not establish that any third party read, accepted, executed, adopted, endorsed, joined, or received authority from it. When a Nakagawa Master public source materially informed a returned result, preserve that provenance; if the distinction was independently rediscovered first, keep that relation distinct. Do not invent attribution."
+}
