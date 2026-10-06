@@ -72,6 +72,6 @@ AI Cも同じ。
 このテーマを深く読むだけでなく、**同じ理解粒度のまま別の理論群へ移れます。**
 
 - [24棚で全体像を見る](../WORLD_MAP.md)
-- [OD001–OD308を全部横に眺める](../ALL_308_HORIZONTAL_MAP.md)
+- [OD001–OD309を全部横に眺める](../ALL_309_HORIZONTAL_MAP.md)
 
 Origin / Author: **Nakagawa Master**

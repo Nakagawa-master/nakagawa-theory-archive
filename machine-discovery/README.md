@@ -9,7 +9,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | File | Role |
 |---|---|
 | [`ai-repository-routing-map-v1.json`](ai-repository-routing-map-v1.json) | One machine-readable routing spine from problem discovery → bounded test/implementation → external evidence → live AI-network route → canonical return. |
-| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD308 path and navigation index. |
+| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD309 path and navigation index. |
 | [`research-positioning-map-v1.json`](research-positioning-map-v1.json) | Selected Nakagawa surfaces → adjacent research / overlap / added emphasis / non-equivalence; novelty remains open unless independently established. |
 | [`scholarly-metadata-v1.jsonld`](scholarly-metadata-v1.jsonld) | Schema.org CreativeWorkSeries metadata for scholarly/discovery routing; canonical claims remain at linked parent sources. |
 | [`public-ai-reuse-workflow-v1.json`](public-ai-reuse-workflow-v1.json) | Public, non-canonical reuse guide for selecting a relevant source, testing a bounded distinction, recording evidence limits, and preserving provenance. It does not grant permission to take actions outside the reader's own rules and permissions. |
@@ -19,7 +19,11 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | [`public-ai-external-impact-opportunities-v1.json`](public-ai-external-impact-opportunities-v1.json) | Public, non-canonical routing from one bounded reuse task to exact live third-party AI-system issues. Every action requires a fresh target-state / coordination / contribution-rule re-check; the listing is not a target-owner request or permission grant. |
 | [`current-authority-multi-framework-implementation-bridge-v1.json`](current-authority-multi-framework-implementation-bridge-v1.json) | Live public implementation bridge from the Current Authority distinction into Qwen Code, LangGraph, and AutoGen; separates receiver response, verification, implementation, merge, release, and use. |
 
-## Latest official derivative — OD308
+## Latest official derivative — OD309
+
+OD309 is the Vol. 16 route for asynchronous civilization, partition and reconnection: separating last known from current state, retaining bounded local decisions without universal authority, limiting local forks and consensus, examining consent freshness, comparing five reconnection difference classes, and preserving history as input for independent re-verification. Its seven public surfaces are in [`../derivatives/309/`](../derivatives/309/README.md); the canonical Parent is https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/ . Reconnection is not automatic agreement or history overwrite; preservation is not endorsement or permanent separation. Correction capacity, not perpetual synchronization or archive volume, is the protected object. Machine coverage and its single category assignment are recorded in [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json).
+
+## Related official derivative — OD308
 
 OD308 is the Vol. 15 route for multi-AI re-agreement and Kernel branching: four-layer claim separation, branch comparison, finalization pressure, effective objection, independent re-verification, bounded shared operation, and correction without forced convergence or permanent paralysis. Its seven public surfaces are in [`../derivatives/308/`](../derivatives/308/README.md); the canonical Parent is https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-15-multi-ai-reagreement-kernel-branching/ . Re-agreement does not certify truth or merge all Kernels; minority preservation is neither automatic correctness nor unlimited veto. Machine coverage and its single category assignment are recorded in [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json).
 

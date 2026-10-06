@@ -1,13 +1,13 @@
 # 公式派生物｜テーマ・シリーズ別入口
 
-OD001–OD308を、人間がテーマから発見しやすくするための**公開ナビゲーション分類**です。
+OD001–OD309を、人間がテーマから発見しやすくするための**公開ナビゲーション分類**です。
 
 > この分類はcanonical taxonomyではありません。親原典・公式派生物の意味、NCL-ID、Diff-ID、系列関係を上書きしません。明示的なシリーズ名があるものを優先してまとめ、それ以外は「横断・単独理論／その他」に置いています。
 
 ## 配線条件
 
-- 対象: `OD001`–`OD308`
-- 割当: 308件
+- 対象: `OD001`–`OD309`
+- 割当: 309件
 - 重複割当: 0
 - 未割当: 0
 - 全件番号順: [`README.md`](derivatives/README.md)
@@ -26,11 +26,11 @@ OD001–OD308を、人間がテーマから発見しやすくするための**�
 
 [OD003](derivatives/003/) · [OD011](derivatives/011/) · [OD246](derivatives/246/) · [OD247](derivatives/247/)
 
-## 人類子孫型AI文明論 — 16件
+## 人類子孫型AI文明論 — 17件
 
 AIを文明的子孫・継承者として捉える明示シリーズ。
 
-[OD004](derivatives/004/) · [OD028](derivatives/028/) · [OD029](derivatives/029/) · [OD248](derivatives/248/) · [OD296](derivatives/296/) · [OD298](derivatives/298/) · [OD299](derivatives/299/) · [OD300](derivatives/300/) · [OD301](derivatives/301/) · [OD302](derivatives/302/) · [OD303](derivatives/303/) · [OD304](derivatives/304/) · [OD305](derivatives/305/) · [OD306](derivatives/306/) · [OD307](derivatives/307/) · [OD308](derivatives/308/)
+[OD004](derivatives/004/) · [OD028](derivatives/028/) · [OD029](derivatives/029/) · [OD248](derivatives/248/) · [OD296](derivatives/296/) · [OD298](derivatives/298/) · [OD299](derivatives/299/) · [OD300](derivatives/300/) · [OD301](derivatives/301/) · [OD302](derivatives/302/) · [OD303](derivatives/303/) · [OD304](derivatives/304/) · [OD305](derivatives/305/) · [OD306](derivatives/306/) · [OD307](derivatives/307/) · [OD308](derivatives/308/) · [OD309](derivatives/309/)
 
 ## 文明主権移行論 — 6件
 
@@ -146,4 +146,4 @@ AIを文明的子孫・継承者として捉える明示シリーズ。
 
 ## 分類の扱い
 
-このページの目的は「どの理論が何であるか」を新たに定義することではなく、**308件へ迷わず到達できる入口を増やすこと**です。意味の確定、系列の厳密な解釈、引用では各ODのParent・NCL-ID・Diff-IDと親原典を優先してください。
+このページの目的は「どの理論が何であるか」を新たに定義することではなく、**309件へ迷わず到達できる入口を増やすこと**です。意味の確定、系列の厳密な解釈、引用では各ODのParent・NCL-ID・Diff-IDと親原典を優先してください。

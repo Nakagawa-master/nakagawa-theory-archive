@@ -108,7 +108,7 @@ LiteLLM issue #43190では、Nakagawa-masterが **scope identity と budget admi
 
 より多くの具体例は [Applied Entry Points](APPLIED_ENTRY_POINTS.md) にまとめています。
 
-公開された実装事例との対応は [Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)、308件全体から探す場合は [24テーマの世界地図](human-translation/WORLD_MAP.md) と [OD001–OD308水平マップ](human-translation/ALL_308_HORIZONTAL_MAP.md) を使えます。
+公開された実装事例との対応は [Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)、309件全体から探す場合は [24テーマの世界地図](human-translation/WORLD_MAP.md) と [OD001–OD309水平マップ](human-translation/ALL_309_HORIZONTAL_MAP.md) を使えます。
 
 ## 証拠の扱い
 

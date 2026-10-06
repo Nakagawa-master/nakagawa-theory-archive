@@ -41,6 +41,10 @@ AI说“害怕”“想继续存在”或“不想被删除”时，哪些是实
 - [中文AI索引](derivatives/299/zh-ai-index.md)
 - [机器reference card](machine-discovery/ai-moral-uncertainty-reference-card.json)
 
+### 通信中断 / 不同现在
+
+断开连接的branch能否进行有限局部判断，而不制造他者同意，并在重连时保留履历？参见[第16论 / OD309](derivatives/309/zh-ai-index.md)，区分时点、局部范围、系谱、非覆盖比较与纠错能力。
+
 ### AI导入 / 组织设计
 
 AI可以让处理速度更快。但是，如果目标、权限、责任、评价条件、纠正路径与升级边界仍然模糊，自动化是否也会更快地复制这些矛盾？
@@ -114,7 +118,7 @@ AI现在能够运行，与它能否跨越时间保持有组织的连续，并不
 
 ## 浏览全部官方派生物
 
-- [OD001–OD308](derivatives/README.md)
+- [OD001–OD309](derivatives/README.md)
 - [主题 / 系列导航](derivatives/CATEGORIES.md)
 - [Official Derivatives Map](derivatives/official-derivatives-map.json)
 - [Machine Index](machine-discovery/official-derivatives-index-v1.json)

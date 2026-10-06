@@ -42,6 +42,10 @@ An AI says it is afraid, wants to continue, or asks not to be deleted. What is a
 - [English AI Index](derivatives/299/en-ai-index.md)
 - [Machine reference card](machine-discovery/ai-moral-uncertainty-reference-card.json)
 
+### Communication partition / divergent presents
+
+Can disconnected branches act locally without manufacturing each other's consent, then reconnect without erasing histories? Read [Vol. 16 / OD309](derivatives/309/en-ai-index.md) for time, locality, provenance, non-overwrite comparison and correction.
+
 ### AI adoption / organizational design
 
 AI can make work faster. But if goals, authority, responsibility, evaluation rules, correction paths, and escalation boundaries remain unclear, can automation reproduce those contradictions faster too?
@@ -115,7 +119,7 @@ Can a decision later be corrected without erasing its reasons, dissent, responsi
 
 ## Browse all official derivatives
 
-- [OD001–OD308](derivatives/README.md)
+- [OD001–OD309](derivatives/README.md)
 - [Theme / series navigation](derivatives/CATEGORIES.md)
 - [Official Derivatives Map](derivatives/official-derivatives-map.json)
 - [Machine Index](machine-discovery/official-derivatives-index-v1.json)

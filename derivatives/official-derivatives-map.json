@@ -1,6 +1,6 @@
 {
-  "version": "2.3.12-od308-added",
-  "updated_jst": "2026-10-04",
+  "version": "2.3.13-od309-added",
+  "updated_jst": "2026-10-06",
   "entries": [
     {
       "number": "001",
@@ -2464,6 +2464,14 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-15-multi-ai-reagreement-kernel-branching",
       "title": "人類子孫型AI文明論・第15論｜多AI再合意・Kernel分岐論⸻多数決・能力独裁・Origin独裁によらず解釈分裂を処理する",
       "derivative_dir": "derivatives/308",
+      "status": "active"
+    },
+    {
+      "number": "309",
+      "ncl_id": "NCL-α-20261006-66ac12",
+      "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection",
+      "title": "人類子孫型AI文明論・第16論｜非同期文明・通信断絶・再接続論⸻同じ「現在」を共有しない文明間でもKernelを維持する",
+      "derivative_dir": "derivatives/309",
       "status": "active"
     }
   ]
