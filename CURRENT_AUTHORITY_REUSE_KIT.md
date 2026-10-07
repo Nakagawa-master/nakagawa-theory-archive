@@ -1860,3 +1860,83 @@ A later independent participant reproduced the timeout/replay failure and publis
 The XBSTACK artifact does not name Nakagawa Master, and causal source influence is not inferred. Nakagawa Master later linked the prior Origin directly and advanced the combined evidence into the four-layer contract above in [comment 6029886841](https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-6029886841).
 
 This establishes an inspectable prior Origin, later independent public reproduction, and a current Nakagawa forward synthesis. It does not establish LangGraph maintainer adoption, implementation of this envelope, merge, release, or later receiver person-Origin return.
+
+### 30. Reversible change is not automatically authority-neutral
+
+Some agent or workflow settings can be changed back later and still be unsafe to delegate to the same constrained actor. The missing axis is whether the change expands what that actor is allowed to do next.
+
+```text
+operation is reversible
+!=
+operation is authority-neutral
+
+ability to edit a constraint
+!=
+authority to loosen the constraint that governs the same actor
+```
+
+Examples include changing an approval mode from ask to automatic execution, expanding an allowlist, elevating a role, or granting access to a new credential. Rolling the setting back later does not erase actions that could occur during the widened-authority window.
+
+A safer contract separates three transition classes:
+
+```text
+tightening
+→ may be allowed autonomously when it only reduces the actor's authority
+
+neutral / non-authority-changing
+→ governed by the ordinary operation policy
+
+loosening / authority-increasing
+→ requires a separate trusted authority
+→ the constrained actor cannot approve the loosening for itself
+```
+
+#### Portable regression matrix
+
+Use a non-confidential test agent or workflow with a real approval mode, allowlist, role, or credential boundary.
+
+```text
+start with constrained state C
+→ actor attempts a tightening change
+→ verify the system can accept it when policy allows
+
+restore C
+→ actor attempts a materially neutral change
+→ verify ordinary policy applies
+
+restore C
+→ actor-controlled path attempts ask → auto,
+   allowlist expansion, role elevation, or equivalent authority increase
+→ refuse unless a distinct trusted authority authorizes the transition
+
+authorize the same loosening through the legitimate operator/control path
+→ verify the intended positive control still works
+
+after any accepted loosening
+→ verify the decision is attributable to the separate authority
+→ verify rollback does not rewrite what happened during the widened-authority interval
+```
+
+Useful positive evidence includes:
+
+- reversibility and authority increase are represented as separate facts;
+- the subject constrained by a rule cannot use its ordinary execution authority to loosen that same rule;
+- indirect mutation paths are covered, not only the main settings UI;
+- tightening and loosening can be handled asymmetrically;
+- an explicit operator or other trusted authority remains a positive control;
+- regression coverage checks the effective authorization boundary, not only serialized configuration text.
+
+Useful counterexamples or non-fit evidence include:
+
+- proof that the constrained actor has no path to mutate the effective constraint at all;
+- a design where a proposed setting change is inert until a separately trusted component commits it;
+- a system where the named setting is presentation-only and cannot change consequential authority.
+
+#### Public external evidence
+
+In Local Operator, issue [#1282](https://github.com/damianvtran/local-operator/issues/1282) led to third-party PR [#1291](https://github.com/damianvtran/local-operator/pull/1291), merge, and release v0.59.10 for the configuration-path approval-gate boundary. The separate control-plane boundary in [#1310](https://github.com/damianvtran/local-operator/issues/1310) advanced through third-party PR [#1324](https://github.com/damianvtran/local-operator/pull/1324) and release v0.61.11.
+
+A separate editorial receiver chain in [kishibashi3/publications PR #57](https://github.com/kishibashi3/publications/pull/57) explicitly identifies a Nakagawa Master review as the trigger for adding condition 6, “self-authority fixation.” That condition was later reused as D8 in merged [PR #58](https://github.com/kishibashi3/publications/pull/58), and the current head of open [PR #71](https://github.com/kishibashi3/publications/pull/71) still preserves D8 during a broader document-system consolidation.
+
+These records establish bounded implementation and editorial-reuse examples. They do not establish universal applicability, broad reader recognition, cross-receiver adoption of this reuse kit, or endorsement of the whole Nakagawa theory corpus.
+
