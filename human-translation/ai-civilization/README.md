@@ -47,3 +47,5 @@ https://www.youtube.com/watch?v=6AAtohcbHyw
 - [OD001–OD309を全部横に眺める](../ALL_309_HORIZONTAL_MAP.md)
 
 Origin / Author: **Nakagawa Master** (pen-name of Keisuke Nakagawa)
+
+→ [中川マスターって何をしている人？](../who-is-nakagawa-master.md)
