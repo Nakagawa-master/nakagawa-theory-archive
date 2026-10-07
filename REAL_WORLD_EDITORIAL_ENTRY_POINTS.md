@@ -2,7 +2,7 @@
 
 A public, non-canonical problem-first guide for editors, educators, newsletter writers, podcast/video hosts, product teams, and researchers.
 
-The archive contains OD001–OD309 official derivative surfaces. The useful public unit is not “306 items at once.” It is a small set of recurring real-world questions that can reappear across AI, business, investment, organizations, technology, governance, and operations.
+The archive contains OD001–OD310 official derivative surfaces. The useful public unit is not “306 items at once.” It is a small set of recurring real-world questions that can reappear across AI, business, investment, organizations, technology, governance, and operations.
 
 Use this route:
 

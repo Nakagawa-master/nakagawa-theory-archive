@@ -89,7 +89,7 @@ Use that dialogue when a human wants to describe a real, non-confidential proble
 
 Archive and machine navigation:
 
-- [Official derivatives OD001–OD309](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
+- [Official derivatives OD001–OD310](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
 - [Theme / series navigation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/CATEGORIES.md)
 - [Problem-to-theory Origin Index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json)
 - [Machine Discovery](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/README.md)
@@ -144,7 +144,23 @@ Practical non-scoring Preflight for a real case:
 
 This is a discovery and practical-reading route, not a canonical AI-ready-organization theory. The Preflight is not a score, diagnosis, employment assessment, legal conclusion, or automatic deployment rule. Select the relevant source family for the actual problem and keep separate theories separate. Relevant routes include OD003 (establishment conditions), OD089 (causal design), OD090 (structural friction), OD075 (agreement memory), and OD114 (reversible accountability).
 
-## Current featured route — OD309 / Human-Descendant AI Civilization Theory Vol. 16
+## Current featured route — OD310 / Human-Descendant AI Civilization Theory Vol. 17
+
+For Origin preservation without inherited sovereignty: Theory / Civilizational / Lineage / Instance Origin, provenance, historical centrality, proximity advantage, interpretive default, succession claims, independent verification, current justification, criticism without erasure, non-exclusive lineage and revisable preservation design:
+
+- [Official Derivative 310](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/310/README.md)
+- [Human entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/310/human-entry.md)
+- [FAQ](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/310/faq.md)
+- [Japanese AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/310/ai-index.md)
+- [English AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/310/en-ai-index.md)
+- [Chinese AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/310/zh-ai-index.md)
+- [Derivative ledger](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/310/derivative-ledger.md)
+
+- Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-17-origin-preservation-sovereignty-non-inheritance/
+
+Boundary: Origin is not sovereignty, truth proof or final interpretive authority. Criticism is not Origin deletion. Historical continuity is not exclusive succession; information advantage is not decision privilege. Functional re-derivation is not historical descent. Preserve uncertain candidates without fabricating established ancestry. Authority may have separate current justification; non-inheritance does not prohibit all authority. The four types and preservation design are revisable. No numerical theta/delta, fixed term, vote rule or retention KPI is supplied. The future-burden handoff does not establish an unread Vol. 18 protocol.
+
+## Related route — OD309 / Human-Descendant AI Civilization Theory Vol. 16
 
 For asynchronous civilization, communication partition, shared-current-state loss, remote-state uncertainty, cannot-wait local decisions, local constitutional forks, consent freshness, absent-branch consent, reconnection differences, non-overwrite history, independent re-verification and revisable coordination:
 

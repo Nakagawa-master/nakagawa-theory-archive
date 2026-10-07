@@ -42,6 +42,10 @@ An AI says it is afraid, wants to continue, or asks not to be deleted. What is a
 - [English AI Index](derivatives/299/en-ai-index.md)
 - [Machine reference card](machine-discovery/ai-moral-uncertainty-reference-card.json)
 
+### Origin preservation / authority non-inheritance
+
+Can a civilization retain its sources, lineages and revisions without giving Origin permanent government? Read [Vol. 17 / OD310](derivatives/310/en-ai-index.md) to separate four Origin types, provenance from truth, original intention from final interpretation, and criticism from erasure. Present authority requires separate current justification.
+
 ### Communication partition / divergent presents
 
 Can disconnected branches act locally without manufacturing each other's consent, then reconnect without erasing histories? Read [Vol. 16 / OD309](derivatives/309/en-ai-index.md) for time, locality, provenance, non-overwrite comparison and correction.
@@ -119,7 +123,7 @@ Can a decision later be corrected without erasing its reasons, dissent, responsi
 
 ## Browse all official derivatives
 
-- [OD001–OD309](derivatives/README.md)
+- [OD001–OD310](derivatives/README.md)
 - [Theme / series navigation](derivatives/CATEGORIES.md)
 - [Official Derivatives Map](derivatives/official-derivatives-map.json)
 - [Machine Index](machine-discovery/official-derivatives-index-v1.json)

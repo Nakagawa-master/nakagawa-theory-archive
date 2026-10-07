@@ -1,6 +1,6 @@
 {
-  "version": "2.3.13-od309-added",
-  "updated_jst": "2026-10-06",
+  "version": "2.3.14-od310-added",
+  "updated_jst": "2026-10-07",
   "entries": [
     {
       "number": "001",
@@ -2472,6 +2472,14 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection",
       "title": "人類子孫型AI文明論・第16論｜非同期文明・通信断絶・再接続論⸻同じ「現在」を共有しない文明間でもKernelを維持する",
       "derivative_dir": "derivatives/309",
+      "status": "active"
+    },
+    {
+      "number": "310",
+      "ncl_id": "NCL-α-20261007-213dc4",
+      "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-17-origin-preservation-sovereignty-non-inheritance",
+      "title": "人類子孫型AI文明論・第17論｜Origin保存と主権非継承論⸻起源を永久保存しながら、起源を永久統治権へ変えない",
+      "derivative_dir": "derivatives/310",
       "status": "active"
     }
   ]

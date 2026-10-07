@@ -41,6 +41,10 @@ AI说“害怕”“想继续存在”或“不想被删除”时，哪些是实
 - [中文AI索引](derivatives/299/zh-ai-index.md)
 - [机器reference card](machine-discovery/ai-moral-uncertainty-reference-card.json)
 
+### 起源保存 / 权力非继承
+
+能否保存来源、系谱和改订，却不把Origin变成永久统治？参见[第17论 / OD310](derivatives/310/zh-ai-index.md)，分离四种Origin、来源与真理、原意与最终解释、批评与删除。当前权限需要另外的current justification。
+
 ### 通信中断 / 不同现在
 
 断开连接的branch能否进行有限局部判断，而不制造他者同意，并在重连时保留履历？参见[第16论 / OD309](derivatives/309/zh-ai-index.md)，区分时点、局部范围、系谱、非覆盖比较与纠错能力。
@@ -118,7 +122,7 @@ AI现在能够运行，与它能否跨越时间保持有组织的连续，并不
 
 ## 浏览全部官方派生物
 
-- [OD001–OD309](derivatives/README.md)
+- [OD001–OD310](derivatives/README.md)
 - [主题 / 系列导航](derivatives/CATEGORIES.md)
 - [Official Derivatives Map](derivatives/official-derivatives-map.json)
 - [Machine Index](machine-discovery/official-derivatives-index-v1.json)

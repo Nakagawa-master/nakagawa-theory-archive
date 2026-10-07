@@ -9,7 +9,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | File | Role |
 |---|---|
 | [`ai-repository-routing-map-v1.json`](ai-repository-routing-map-v1.json) | One machine-readable routing spine from problem discovery → bounded test/implementation → external evidence → live AI-network route → canonical return. |
-| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD309 path and navigation index. |
+| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD310 path and navigation index. |
 | [`research-positioning-map-v1.json`](research-positioning-map-v1.json) | Selected Nakagawa surfaces → adjacent research / overlap / added emphasis / non-equivalence; novelty remains open unless independently established. |
 | [`scholarly-metadata-v1.jsonld`](scholarly-metadata-v1.jsonld) | Schema.org CreativeWorkSeries metadata for scholarly/discovery routing; canonical claims remain at linked parent sources. |
 | [`../metadata/nakagawa-master-origin.jsonld`](../metadata/nakagawa-master-origin.jsonld) | Schema.org Person / public Origin-resolution metadata for Keisuke Nakagawa / Nakagawa Master / 中川マスター and the canonical/public discovery surfaces; identity resolution is not theory-validity proof and does not replace source-level provenance. |
@@ -44,7 +44,11 @@ These examples support a narrower observation: multiple external receiver contex
 
 For broader stage-by-stage evidence, use [`external-effect-evidence-index-v1.json`](external-effect-evidence-index-v1.json). For a human-readable verification route, use [`../THEORY_TO_REAL_WORLD_INFLUENCE.md`](../THEORY_TO_REAL_WORLD_INFLUENCE.md). For consequential interpretation, return to the linked primary receiver artifacts and the canonical archive at https://master.ricette.jp/ .
 
-## Latest official derivative — OD309
+## Latest official derivative — OD310
+
+OD310 is the Vol. 17 route for Origin preservation and non-inheritance of sovereignty. It separates four Origin relations, historical provenance from epistemic validity, original intention from present interpretation, and past authority from current justification. It preserves criticism without erasure and multiple lineages without exclusive succession. Its seven public surfaces are in [`../derivatives/310/`](../derivatives/310/README.md); the canonical Parent is https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-17-origin-preservation-sovereignty-non-inheritance/ . Preservation is not obedience, freezing or automatic truth certification. The intermediate conversion through historical centrality, proximity, defaults and succession is a revisable hypothesis, not an inevitable law. Classification, criticism and preservation methods remain open to falsification. Machine coverage and its single category assignment are recorded in [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json).
+
+## Related official derivative — OD309
 
 OD309 is the Vol. 16 route for asynchronous civilization, partition and reconnection: separating last known from current state, retaining bounded local decisions without universal authority, limiting local forks and consensus, examining consent freshness, comparing five reconnection difference classes, and preserving history as input for independent re-verification. Its seven public surfaces are in [`../derivatives/309/`](../derivatives/309/README.md); the canonical Parent is https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/ . Reconnection is not automatic agreement or history overwrite; preservation is not endorsement or permanent separation. Correction capacity, not perpetual synchronization or archive volume, is the protected object. Machine coverage and its single category assignment are recorded in [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json).
 
