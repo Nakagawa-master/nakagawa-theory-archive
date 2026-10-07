@@ -91,6 +91,27 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: prior_public_origin_url
+    attributes:
+      label: Earlier public Nakagawa Master source, if one predates this result
+      description: Optional. Use only when a specific earlier public source materially states the same bounded distinction. A prior date does not by itself prove causal influence.
+      placeholder: https://github.com/... or https://master.ricette.jp/...
+
+  - type: textarea
+    id: chronology_relationship
+    attributes:
+      label: Chronology / relationship to the earlier source
+      description: Optional. State whether the source informed the work, was found later after independent rediscovery, or simply predates a materially similar later artifact with causality unknown.
+      placeholder: e.g. The earlier source predates this receiver finding; I cannot establish whether the receiver saw it.
+
+  - type: textarea
+    id: forward_advance
+    attributes:
+      label: Did the Origin recovery also advance the current problem?
+      description: Optional. If the prior Origin was reconnected on an active receiver surface, describe any genuinely newer synthesis, regression, implementation boundary, or design contract added beyond the bare chronology. Write "none" if no such advance was appropriate.
+      placeholder: e.g. Integrated three current-head findings into one server-validated transition-context regression contract.
+
   - type: textarea
     id: independent_action
     attributes:
