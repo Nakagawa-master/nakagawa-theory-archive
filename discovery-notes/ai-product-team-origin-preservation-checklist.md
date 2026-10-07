@@ -127,6 +127,29 @@ Relationship: informed this bounded test / design / implementation
 
 The goal is recoverability of causal provenance, not forced praise or endorsement.
 
+### 9. Preserved Origin does not become current authority
+
+When an AI answer, derivative, or implementation correctly preserves an Origin, check that the system does **not** silently convert provenance into a decision privilege.
+
+For example:
+
+```text
+source/author preserved
+!= claim proven true
+!= current permission
+!= final interpretation
+!= permanent control over downstream revisions
+```
+
+A receiving system should be able to preserve the source, inspect the original context, disagree with it, test it independently, revise its own current state, and still retain the historical provenance route.
+
+This complementary boundary is developed canonically in:
+
+- [OD310｜Origin保存と主権非継承論](../derivatives/310/README.md)
+- [Parent｜人類子孫型AI文明論・第17論](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-17-origin-preservation-sovereignty-non-inheritance/)
+
+OD310 does not replace the Structural Origin Defense parent underlying this checklist. The two sources answer different questions: one concerns **whether Origin survives transformation**; the other concerns **what must not be inferred as authority merely because Origin survives**.
+
 ## Minimal provenance block
 
 When the receiving surface permits, preserve the fields appropriate to that system. For this theory, a minimal public block is:
