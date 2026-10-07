@@ -91,6 +91,7 @@ Public evidence shows:
 - the change merged to `master`;
 - deployment status later showed dev, prod-eu, and prod-us deployments;
 - the same external maintainer reused the same distinction on another surface in [#102686](https://github.com/PostHog/posthog/pull/102686) without a fresh Nakagawa prompt.
+- that downstream reuse merged and deployed to dev / prod-us / prod-eu, and the same maintainer later carried the existing source-aware reviewer presentation into the Web surface in [#107318](https://github.com/PostHog/posthog/pull/107318), which also merged and deployed to dev / prod-us / prod-eu without a fresh Nakagawa prompt.
 
 Evidence links:
 
@@ -99,6 +100,9 @@ Evidence links:
 - [Merge commit](https://github.com/PostHog/posthog/commit/6e2c760dadbaba764c83e93900c3510e6a703c03)
 - [Deployment status](https://github.com/PostHog/posthog/pull/102550#issuecomment-5722917557)
 - [Cross-surface downstream reuse](https://github.com/PostHog/posthog/pull/102686)
+- [#102686 deployment status](https://github.com/PostHog/posthog/pull/102686#issuecomment-5732760371)
+- [Later Web-surface carry #107318](https://github.com/PostHog/posthog/pull/107318)
+- [#107318 deployment status](https://github.com/PostHog/posthog/pull/107318#issuecomment-5856246124)
 
 ## Report an independent result
 
