@@ -163,9 +163,15 @@ The three discovery editions present the same public entry problem in language-a
 
 All routes return to OD297 and its canonical Parent. Future Debt is not identical to future cost in general, investment, ordinary contractual obligation, or irreversibility itself.
 
-## OD105｜Origin Evaporation / Structural Origin Defense
+## OD115｜Question Origin and Responsibility
 
 - [AI origin and responsibility — public discovery note](ai-origin-responsibility-public-reference.md)
+- [OD115 official derivative](../derivatives/115/README.md)
+
+This discovery note is a non-canonical public entry for the OD115 source family. It keeps question origin, causal provenance, transformation, and responsibility connected to the matching canonical Parent rather than folding them into OD105.
+
+## OD105｜Origin Evaporation / Structural Origin Defense
+
 - [`od105-origin-evaporation-first-note.md`](od105-origin-evaporation-first-note.md)
 - [`od105-origin-evaporation-first-note.en.md`](od105-origin-evaporation-first-note.en.md)
 - [`od105-origin-evaporation-first-note.zh.md`](od105-origin-evaporation-first-note.zh.md)
