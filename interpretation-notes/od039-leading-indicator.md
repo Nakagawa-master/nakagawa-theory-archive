@@ -27,8 +27,8 @@ It is not a product endorsement, medical recommendation, diagnostic method, empl
 - Origin: Nakagawa Master
 - Canonical parent title: 中川構造読解｜Adoryを「LINEアンケート」ではなく、現場不調を先行指標へ変換する構造として読む
 - Canonical parent URL: https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-adory-structural-reading-value-core/
-- Parent NCL-ID: `NCL-α-20260606-2d1bc9`
-- Parent Diff-ID: `DIFF-20260606-0001`
+- Parent NCL-ID: `NCL-α-20260529-554a57`
+- Parent Diff-ID: `DIFF-20260529-0009`
 - Official derivative: `derivatives/039/README.md`
 - Human-readable official entry: `derivatives/039/human-entry.md`
 
