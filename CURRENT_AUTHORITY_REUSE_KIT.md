@@ -1449,3 +1449,88 @@ release
 ```
 
 As of this record, PR #4789 is still open and the exact approval-model implementation is not verified here.
+
+
+### 24. An account-switch confirmation must bind the same identities the backend will validate
+
+An account-switch flow can show a confirmation modal and still fail the authority boundary if the identity shown to the human is not derived from the same trusted state the backend validates.
+
+Keep three states separate:
+
+```text
+pre-transition authenticated identity
+!= post-teardown/public-page session state
+
+URL- or caller-supplied display label
+!= server-validated transition target identity
+
+confirmation UI shown
+!= exact account transition authorized
+```
+
+A robust transition should preserve the identity that is authoritative **before** the old session is torn down, then bind the server-side transition decision to that identity and to the server-validated target. The confirmation copy should describe those same identities rather than reconstructing them later from caller-controlled navigation data.
+
+#### Portable regression matrix
+
+```text
+Account A is currently authenticated
+→ user initiates a transition intended for Account B
+→ before A is torn down, bind A's current authenticated session/identity to the transition request
+→ backend validates the exact A → B transition
+→ confirmation displays the same server-validated B identity
+→ confirm
+→ exactly B becomes the resulting account
+
+same starting state
+→ URL/display label is changed to look-alike B′ while the signed transition still identifies B
+→ confirmation must not present B′ as the trusted target
+→ server-validated target identity remains B
+
+Account A is authenticated
+→ transition page does not mount until A's protected session is already gone
+→ page-local `session?.authToken` is absent
+→ this absence must not be misinterpreted as proof that no pre-transition session existed
+→ capture/bind the authority earlier or use another authenticated transition receipt
+
+fresh browser with no existing session
+→ no pre-transition identity binding exists
+→ use the explicitly sessionless/public transition path
+→ do not fabricate a prior identity
+```
+
+The useful invariant is:
+
+```text
+pre-transition authenticated identity
+= backend validation input for the source side of the switch
+
+server-validated transition target identity
+= identity presented to the human for confirmation
+```
+
+The exact transport can differ by product. It may be a current-session token, a server-minted transition receipt, or another authenticated binding. The reusable requirement is that the source identity and target identity are established from trusted state before the consequence, not inferred after teardown from a public page or untrusted label.
+
+#### Current public receiver evidence
+
+[Expensify PR #101561](https://github.com/Expensify/App/pull/101561) adds a confirmation step and a `currentAuthToken` validation input for short-lived-token account transitions.
+
+Nakagawa Master raised the pre-transition session-binding risk in the [Sep 18 review](https://github.com/Expensify/App/pull/101561#pullrequestreview-5249394612): the non-SAML flow could run before SESSION hydration and send `currentAuthToken: undefined`, even when the device had an existing authenticated session.
+
+On 2026-10-07, an independent receiver reviewer identified a stronger current-head manifestation in [discussion_r4201618037](https://github.com/Expensify/App/pull/101561#discussion_r4201618037): this page mounts only when there is no session, so `session?.authToken` is always undefined and the intended backend current-session check never runs from this surface. A separate receiver review in [discussion_r4201393985](https://github.com/Expensify/App/pull/101561#discussion_r4201393985) also identified that the displayed email is URL-controlled and can diverge from the identity the security decision is meant to represent.
+
+Nakagawa Master then returned the bounded current-head contract in [discussion_r4201791035](https://github.com/Expensify/App/pull/101561#discussion_r4201791035): capture the authoritative source identity at the last layer where it still exists, derive the displayed target from server-validated transition identity, and make the confirmation identity and backend validation identity agree.
+
+Evidence boundary:
+
+```text
+earlier Nakagawa boundary
++ independent receiver current-head re-identification of the same class
++ one bounded follow-up contract
+!= receiver attribution to Nakagawa
+!= verified fix
+!= merge
+!= release
+!= production-safe account switching
+```
+
+This case is useful because it moves the abstract current-authority rule into a common human-facing security flow: the user should be confirming the same identity transition the server is actually authorizing.
