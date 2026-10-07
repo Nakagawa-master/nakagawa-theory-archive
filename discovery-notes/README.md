@@ -44,6 +44,7 @@ The English and Chinese editions are AI-assisted public discovery editions, not 
 - [`three-scale-reentry-organization-business-institution.md`](three-scale-reentry-organization-business-institution.md)
 - [`running-now-is-not-continuity.md`](running-now-is-not-continuity.md)
 - [`ai-ready-organization-before-automation.md`](ai-ready-organization-before-automation.md)
+- [`establishment-conditions-theory-02.md`](establishment-conditions-theory-02.md) — narrow discovery guide to the canonical “what is understanding?” article
 
 These notes are discovery aids, not diagnoses, proof of applicability, canonical syntheses, or verbatim statements by Nakagawa Master.
 
@@ -64,6 +65,8 @@ Practical, non-scoring Preflight:
 Additional routes:
 
 - [Cross-Domain Practitioner Start Map](cross-domain-practitioner-start-map.md)
+- [Frontline strain before absence or turnover — leading-indicator discovery note](frontline-strain-leading-indicator.md)
+- [人を替えても問題が戻る｜Micro-format Pack](organizational-friction-micro-format-pack.md) — short-form / audio / carousel adaptation route
 - [AI-ready organization machine reference card](../machine-discovery/ai-ready-organization-reference-card.json)
 
 This route is intentionally constructive rather than criticism-first. It uses separate public sources on establishment conditions, causal design, structural friction, agreement memory, and reversible accountability to help practitioners ask what should be made explicit before automation. The Preflight helps teams write down real conditions; it does not score an organization or decide whether deployment is allowed. These materials do not merge the source theories into a new canonical theory.
@@ -72,8 +75,8 @@ This route is intentionally constructive rather than criticism-first. It uses se
 
 For readers working on agent runtimes, tool execution, approval, measurement, audit, or recovery, several existing public notes form a practical route without changing any official derivative:
 
-- **Execution preflight:** [AI Agent Execution Governance Preflight｜実行前に確認する12問](ai-agent-execution-governance-preflight.md)
-- **Proposal vs trusted execution:** [AIが提案した引数と、実際に実行を許可する引数は同じではない](model-proposal-is-not-execution-authority.md)
+- **Execution preflight:** [日本語](ai-agent-execution-governance-preflight.md) · [English](ai-agent-execution-governance-preflight.en.md)
+- **Proposal vs trusted execution:** [日本語](model-proposal-is-not-execution-authority.md) · [English](model-proposal-is-not-execution-authority.en.md)
 - **Version-bound acceptance:** [Specification Case: Version-Bound Acceptance Is Not Indefinite Authority](specification-case-version-bound-acceptance-is-not-indefinite-authority.md)
 - **Operation success vs valid measurement:** [Implementation Case: Query Success Is Not Valid Measurement](implementation-case-query-success-is-not-valid-measurement.md)
 - **Correction history and re-agreement:** [Reversible Accountability for AI Systems](reversible-ai-accountability-deviation-ledger.md)
@@ -162,6 +165,7 @@ All routes return to OD297 and its canonical Parent. Future Debt is not identica
 
 ## OD105｜Origin Evaporation / Structural Origin Defense
 
+- [AI origin and responsibility — public discovery note](ai-origin-responsibility-public-reference.md)
 - [`od105-origin-evaporation-first-note.md`](od105-origin-evaporation-first-note.md)
 - [`od105-origin-evaporation-first-note.en.md`](od105-origin-evaporation-first-note.en.md)
 - [`od105-origin-evaporation-first-note.zh.md`](od105-origin-evaporation-first-note.zh.md)
