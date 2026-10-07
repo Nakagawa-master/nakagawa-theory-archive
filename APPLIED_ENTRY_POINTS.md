@@ -451,6 +451,38 @@ MemberJunction PR #4789では、Nakagawa Masterがこの境界を提示した後
 - [current-authority guardrails](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6026910453)
 - [Current-Authority Reuse Kit §23](CURRENT_AUTHORITY_REUSE_KIT.md#23-an-approval-record-is-not-approval-of-the-current-executable-definition)
 
+## 選択肢が2つ見えていれば、片方が止まっても本当に使えるのか
+
+AIやクラウドサービスでは、「Hosted版とlocal版」「Provider AとProvider B」のように複数の経路が用意されていることがあります。
+
+でも、画面上で2つ選べるだけでは、2つが独立して動くとは限りません。両方が同じlogin、同じcontrol plane、同じdata store、同じpolicy gateに依存していれば、その1点が止まっただけで両方とも使えなくなることがあります。
+
+**区別:**
+
+```text
+選択肢が2つある
+!=
+一方の専用gateがなくても、もう一方が必要な仕事を完了できる
+
+fallbackしない
+!=
+独立して動ける
+```
+
+確かめるときは、「全部動くか」ではなく、まず最低限必要な仕事を1つ決めます。そのうえで、一方だけが使うはずのgateを安全に外すか失敗させ、もう一方だけでその仕事が最後まで完了するかを見ます。同時に、loginやdata storeのように**意図して共有しているgate**は共有だと明記します。
+
+Qwen Code issue #12380では、Nakagawa Masterがこのpath-independence境界を提示した後、2026-10-07のQwen側triageが **Nakagawa-master** を明示的に名指しし、「no cross-engine fallback と path independence は別」と再構成したうえで、未解決の次のacceptance gateとして残しました。
+
+現在のQwen CodeではHosted側の実装・提供は進んでいる一方、ordinary/local Managed側はまだ有効化前です。したがって、**2つの経路がどちらも独立して動けると確認済み**とは扱えません。今確認できるのは、Qwen側のtriageがこの区別を現在の設計課題として明示的に保持したところまでです。
+
+- [Qwen Code issue #12380](https://github.com/QwenLM/qwen-code/issues/12380)
+- [Nakagawa Masterのpath-independence境界](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-5921364520)
+- [Qwen側のtriage response](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035602677)
+- [現在の実装段階に合わせたfollow-up](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035698005)
+- [Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md)
+- [Machine-readable challenge L](machine-discovery/independent-reuse-challenges-v1.json)
+- [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+
 ## 309件全体から探す
 
 ここに当てはまらない問題は、[24テーマの世界地図](human-translation/WORLD_MAP.md) または [OD001–OD309水平マップ](human-translation/ALL_309_HORIZONTAL_MAP.md) から探せます。
