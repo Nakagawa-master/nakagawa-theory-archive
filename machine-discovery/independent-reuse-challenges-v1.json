@@ -81,7 +81,14 @@
       ],
       "useful_negative_evidence": [
         "proof that the source is intentionally irrelevant to the user decision in that context"
-      ]
+      ],
+      "reproduction_kit": "POSTHOG_PROVENANCE_REUSE_KIT.md",
+      "external_verified_case": "https://github.com/PostHog/posthog/pull/102550",
+      "receiver_owned_followon_reuse": [
+        "https://github.com/PostHog/posthog/pull/102686",
+        "https://github.com/PostHog/posthog/pull/107318"
+      ],
+      "evidence_boundary": "PostHog #102550 contains the bounded Nakagawa Master reviewer-provenance boundary followed by receiver implementation, merge and deployment. The same external maintainer later reused/carried the source-aware recommendation structure across #102686 and #107318 without a fresh Nakagawa prompt; those follow-on surfaces also merged and deployed. This establishes repeated same-receiver cross-surface carry, not second-person Nakagawa-Origin attribution on the downstream PRs, independent end-user use, audience scale, or whole-theory adoption."
     },
     {
       "id": "E-external-side-effect",

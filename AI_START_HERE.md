@@ -36,12 +36,14 @@ Use:
 - [AI Agent Execution Governance Preflight — 12 questions](discovery-notes/ai-agent-execution-governance-preflight.md)
 - [Model proposal is not execution authority](discovery-notes/model-proposal-is-not-execution-authority.md)
 - [Reuse Kits](REUSE_KITS.md)
+- [Independent Reuse Challenges](machine-discovery/independent-reuse-challenges-v1.json) when a real problem should be converted into a falsifiable machine-readable test before implementation.
 
 High-value AI implementation routes currently include:
 
 - [Current Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
 - [External Side-Effect Reuse Kit](EXTERNAL_SIDE_EFFECT_REUSE_KIT.md)
 - [Historical-Fact Reuse Kit](HISTORICAL_FACT_REUSE_KIT.md)
+- [Reviewer-Provenance Reuse Kit](POSTHOG_PROVENANCE_REUSE_KIT.md) for recommendation/ranking interfaces where identical displayed reasons may hide different evidence sources; machine challenge `D-evidence-provenance` links the bounded test to verified PostHog implementation and repeated cross-surface reuse.
 - [Paid-Action Approval Binding Checklist](PAID_ACTION_APPROVAL_BINDING_CHECKLIST.md)
 
 ### 3. Inspect whether anything actually changed outside this repository

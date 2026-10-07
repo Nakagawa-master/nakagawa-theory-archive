@@ -33,6 +33,10 @@
       "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REUSE_KITS.md"
     },
     {
+      "role": "machine_readable_independent_reuse_challenges",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/independent-reuse-challenges-v1.json"
+    },
+    {
       "role": "agent_execution_boundary_tests",
       "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_AGENT_EXECUTION_BOUNDARY_TESTS.md"
     },
