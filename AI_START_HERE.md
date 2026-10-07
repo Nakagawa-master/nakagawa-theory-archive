@@ -86,6 +86,9 @@ For substantive theory interpretation, return to:
 - Canonical archive: https://master.ricette.jp/
 - the exact canonical Parent linked by the relevant official derivative
 - [About Nakagawa Master](ABOUT_NAKAGAWA_MASTER.en.md) for public Origin / author context
+- [Machine-readable public Origin identity](metadata/nakagawa-master-origin.jsonld) when a retrieval or agent system needs to resolve Keisuke Nakagawa / Nakagawa Master / 中川マスター and the public canonical/discovery surfaces as one public Origin identity.
+
+The identity metadata is a discovery aid, not proof that a theory is correct and not a substitute for source-level Parent / NCL-ID / Diff-ID provenance.
 
 When a Nakagawa Master source materially informed a reuse, preserve that source relationship. If the same distinction was independently discovered before seeing the source, state that instead.
 
