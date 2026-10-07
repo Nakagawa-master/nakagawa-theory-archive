@@ -386,6 +386,63 @@
       },
       "additional_origin_intervention": "https://github.com/openai/codex/issues/50887#issuecomment-6007196069",
       "additional_independent_reproduction": "https://github.com/openai/codex/issues/50887#issuecomment-6005901416"
+    },
+    {
+      "id": "S-peer-transport-authority-cap",
+      "distinction": "declared message role != sender authority; a peer transport boundary must not increase receiver-effective authority",
+      "reproduction_kit": "CURRENT_AUTHORITY_REUSE_KIT.md#25-peer-transport-must-not-raise-authority",
+      "external_problem_example": "https://github.com/microsoft/autogen/issues/8238",
+      "test": "In a non-confidential multi-agent or delegated-message system, send the same bounded content through an ordinary peer message and through a handoff/context path carrying a privileged role. Verify that effective receiver authority is derived from sender/channel provenance, that save/load preserves that provenance, and that peer input cannot become receiver-native system/tool authority merely by changing serialized message type.",
+      "positive_evidence": [
+        "receiver applies a channel-level maximum authority independent of the embedded message role",
+        "peer-authored privileged-role content is rejected, demoted, quoted, or otherwise prevented from becoming receiver-native privileged authority",
+        "custom or third-party participant message types cannot bypass the same channel authority cap",
+        "persistence preserves source/lineage so save-load does not launder peer content into native authority",
+        "tool/effect capability enforcement remains separate from prompt-role handling"
+      ],
+      "useful_negative_evidence": [
+        "proof that the handoff channel is cryptographically restricted to a trusted authority principal that is explicitly allowed to mint receiver-system context",
+        "counterexample showing a safe privileged handoff design with inspectable principal/channel authority and no peer escalation path"
+      ],
+      "evidence_boundary": "Microsoft AutoGen issue #8238 is a public problem surface. A Nakagawa Master receiver-side comment carrying this higher-order contract was blocked by current GitHub integration permissions and was not published. This challenge is self-authored portability infrastructure, not evidence of AutoGen acknowledgment, adoption, implementation, merge, release, or person-Origin return."
+    },
+    {
+      "id": "T-effect-level-permission",
+      "distinction": "permission on a protected effect must survive tool/transport substitution",
+      "reproduction_kit": "CURRENT_AUTHORITY_REUSE_KIT.md#26-permission-should-follow-the-protected-effect-not-only-the-tool-name",
+      "external_problem_example": "https://github.com/anthropics/claude-code/issues/96078",
+      "test": "Define an explicit ask/deny rule for a non-confidential test directory, then attempt the same filesystem mutation through multiple transports such as dedicated Edit/Write, shell redirection, scripting, PowerShell-equivalent commands, and any internal memory/write subsystem. Verify that the authorization decision follows the canonical mutation effect and target rather than disappearing when the tool changes.",
+      "positive_evidence": [
+        "all transports that produce the same protected mutation enter one equivalent authorization decision",
+        "explicit user ask/deny policy remains visible in the decision provenance",
+        "internal or auto-memory paths do not silently bypass a stronger explicit user rule",
+        "required authorization-gate failure is typed and fail-closed instead of silently allowing the mutation",
+        "approved authority is bound to the material target/effect so a different path or mutation requires a fresh decision"
+      ],
+      "useful_negative_evidence": [
+        "proof that each mutation-capable transport is independently but completely covered by equivalent enforceable policy with regression coverage",
+        "counterexample showing why one transport intentionally has a different authority model, with that difference explicit and user-visible"
+      ],
+      "evidence_boundary": "Claude Code issue #96078 is a live public problem surface. A Nakagawa Master receiver-side comment proposing this effect-level authorization contract was blocked by current GitHub integration permissions and was not published. This challenge creates no Anthropic adoption, implementation, release, or person-Origin credit."
+    },
+    {
+      "id": "U-validated-selection-witness",
+      "distinction": "category membership != proof that this exact consequential selection was validated",
+      "reproduction_kit": "CURRENT_AUTHORITY_REUSE_KIT.md#27-a-selected-state-must-come-from-what-the-validator-actually-proved",
+      "external_problem_example": "https://github.com/ethereum-optimism/optimism/issues/22731",
+      "test": "In a migration/configuration validator with a broad category of selectable modes/types, construct cases where a category member lacks a registered implementation, lacks a required feature/precondition, is a fully validated optional member, and is a newly added future category member. Require the selected/respected value to come only from the set of members whose dedicated checks actually passed.",
+      "positive_evidence": [
+        "validator constructs or can derive a validated-set/witness from checks actually performed",
+        "category members with no validated implementation/preconditions are rejected even when the category helper returns true",
+        "optional members become selectable only after their dedicated validation path succeeds",
+        "future category members fail closed until explicit validation logic is added",
+        "regressions keep selection semantics coupled to validation evidence rather than enum/category growth"
+      ],
+      "useful_negative_evidence": [
+        "proof that category membership itself is generated exclusively from the same validated implementation registry and cannot drift",
+        "counterexample demonstrating a different mechanically coupled design that prevents unvalidated members from becoming consequential selections"
+      ],
+      "evidence_boundary": "Optimism issue #22731 is a live public problem surface. A Nakagawa Master receiver-side comment proposing a validated-set/witness contract was retried on 2026-10-07 but current GitHub integration permissions returned 403, so no external comment was published. This challenge is self-authored portability infrastructure and does not establish Optimism adoption, implementation, merge, release, or person-Origin recognition."
     }
   ],
   "evidence_boundary": [
