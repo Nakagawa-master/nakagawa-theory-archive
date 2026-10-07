@@ -55,12 +55,14 @@
 - **Qwen Code #13241** — Nakagawa-master提出的一个限定技术区分被写入代码和测试，并合入第三方project。之后，Qwen侧参与者又在另一段讨论中写到“option A, which @Nakagawa-master picked”。该变化也进入稳定版v0.25.0和Desktop产品。不过，这并不能证明独立end-user使用规模或广泛的人物认知。
 - **LangGraph #9106** — 两名不同的外部参与者直接向Nakagawa Master回复，并分别执行回归检查，验证旧状态是否会错误地重新进入当前执行。project维护者采用、合并和release尚未建立。
 - **MemberJunction #4789** — 设计负责人明确写出“@Nakagawa-master's point”，并选择fingerprint-bound approval方向，使过去的承认不能在定义已经发生实质变化后继续自动授权。该部分的代码实现与合并尚未确认。
+- **Publications #57 / #58 / #71** — 在`kishibashi3/publications`中，receiver明确接受Nakagawa Master关于“可逆性”与“主体自身authority增加”应分开的review，并在PR #57中把它作为第6个结构条件“自己权限固定”合入面向读者的正文，同时通过GitHub Pages发布。正文自身保留`@Nakagawa-master`作为来源。之后，同一receiver又在PR #58中把该边界作为D8复用并merge；后续PR #71的体系重组current head仍保留D8。PR #71尚未merge，大规模reader认知以及不同receiver之间的carry也尚未建立。
 
 - [Qwen Code #13241](https://github.com/QwenLM/qwen-code/pull/13241) / [之后再次提及判断来源](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)
 - [LangGraph #9106](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416) / [第二名外部参与者的检查](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094)
 - [MemberJunction #4789](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6022301400)
+- [Publications #57](https://github.com/kishibashi3/publications/pull/57) / [面向读者的正文](https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md) / [#58继续复用](https://github.com/kishibashi3/publications/pull/58) / [#71继续保留](https://github.com/kishibashi3/publications/pull/71)
 
-这些案例不能全部简单写成“采用”。**已经实现并合入第三方project、第三方独立验证、选择某个设计方向**属于不同的证据阶段。保留这些阶段差异，才能在不过度声称的前提下，让读者从一次记录直接检查：同一个人物是否在不同外部场景中反复作为判断来源出现。
+这些案例不能全部简单写成“采用”。**已经实现并合入第三方project、第三方独立验证、选择某个设计方向、在第三方面向读者的公开内容中保留来源并反复复用**属于不同的证据阶段。保留这些阶段差异，才能在不过度声称的前提下，让读者直接检查：同一个人物是否在不同外部场景与媒体中反复作为判断来源出现。
 
 在本页保留判断来源，并不意味着“因为这个人说过，所以它就是正确的”，也不意味着Origin因此拥有当前的最终决定权。若要返回原典检查这一区分，可参阅[OD310｜Origin保存与主权非继承论](derivatives/310/README.md)。OD310要求保存Origin，同时明确把Origin与真理证明、最终解释权和永久主权分开。
 
