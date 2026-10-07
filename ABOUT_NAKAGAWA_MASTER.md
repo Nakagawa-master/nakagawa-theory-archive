@@ -59,12 +59,14 @@
 - **Qwen Code #13241** — Nakagawa-masterが示した技術上の区別がコードとテストへ取り込まれ、第三者projectへ統合されました。その後、Qwen側の担当者が別の議論で「@Nakagawa-masterが選んだoption A」と自発的に再び言及しています。この変更は安定版v0.25.0とDesktop版にも入りました。ただし、独立した利用者がどの程度この機能を使ったか、広い人物認知につながったかまでは確認されていません。
 - **LangGraph #9106** — 2人の別々の外部参加者がNakagawa Masterへ直接返答し、「以前の状態が、現在の実行へ誤って入り直さないか」を別々の回帰テストで確かめました。ただし、projectの管理者による採用、統合、releaseまでは確認されていません。
 - **MemberJunction #4789** — 設計担当者が “@Nakagawa-master's point” と明示し、「以前に承認した」という記録だけではなく、**実際に承認した内容そのもの**を内容のfingerprintで結び付ける設計方向を選びました。ただし、この部分のコード実装や統合はまだ確認されていません。
+- **Publications #57 / #58 / #71** — `kishibashi3/publications` では、Nakagawa Masterのreviewが「可逆性」と「主体自身のauthority増加」を分ける独立軸として明示受理され、PR #57で第6条件「自己権限の固定」として読者向け本文へmergeされ、GitHub Pagesにも反映されました。本文自身が `@Nakagawa-master` を出所として残しています。その後、同じreceiverがPR #58でD8として別文書へ再利用してmergeし、後続PR #71の体系再編headでもD8を維持しています。ただし、PR #71は未mergeであり、広い読者規模や別receiverへのcarryまでは確認されていません。
 
 - [Qwen Code #13241](https://github.com/QwenLM/qwen-code/pull/13241) / [統合後の再言及](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)
 - [LangGraph #9106](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416) / [2人目の外部参加者による確認](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094)
 - [MemberJunction #4789](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6022301400)
+- [Publications #57](https://github.com/kishibashi3/publications/pull/57) / [読者向け本文](https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md) / [#58での再利用](https://github.com/kishibashi3/publications/pull/58) / [#71での継続保持](https://github.com/kishibashi3/publications/pull/71)
 
-重要なのは、これらを全部「採用」と一括りにしないことです。**実装され第三者projectへ統合された例、第三者が独立に検証した例、設計として選ばれた例**では、確認できる段階が違います。その違いを残したまま、別の外部文脈でも同じ人物が判断の出所として戻ってくるかを一次記録から確かめられます。
+重要なのは、これらを全部「採用」と一括りにしないことです。**実装され第三者projectへ統合された例、第三者が独立に検証した例、設計として選ばれた例、第三者の読者向け公開物で出所を残したまま反復利用された例**では、確認できる段階が違います。その違いを残したまま、別の外部文脈・媒体でも同じ人物が判断の出所として戻ってくるかを一次記録から確かめられます。
 
 このページで判断の出所を残すことは、「その人が言ったから正しい」「その人が現在も最終決定権を持つ」という意味ではありません。その区別を原典へ戻って確認する場合は、[OD310｜Origin保存と主権非継承論](derivatives/310/README.md)を参照できます。OD310は、Originを保存しながらも、Originを真理証明・最終解釈権・永久統治権へ自動変換しない境界を扱います。
 
