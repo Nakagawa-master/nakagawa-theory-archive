@@ -253,6 +253,36 @@ safe reimplementation of the original feature
 
 Issue #102967 is closed after the rollback path, while #95750 remains open. A future reimplementation still has to prove that broader Pay eligibility can coexist with existing-bank preservation and current execution-time authority checks. A new implementation, its regression coverage, review, staging verification, production release, and real use remain separate evidence stages.
 
+#### Receiver-owned reimplementation after rollback — current open state
+
+A receiver-owned rework is now public as [Expensify PR #103239](https://github.com/Expensify/App/pull/103239). At the current Draft head `a20750b8bab9d6749167cc926fe6f1cceaa25d11`, the implementation and tests directly address the bank-replacement failure that forced the earlier rollback: when a workspace already has reimbursement bank A, a non-payer admin who adds or selects another funding source is kept outside the workspace-bank setup path, and the existing workspace bank remains A.
+
+That advances the public state from **rollback-only safety closure** to a bounded **receiver-owned reimplementation in code and tests**. It still leaves a separate current-authority acceptance question:
+
+```text
+Pay is rendered while permission / account access is current
+→ that authority is revoked while the screen remains open
+→ stale screen submits
+→ server refuses the consequential action
+→ no payment occurs
+→ no workspace-bank configuration changes
+→ client reconciles to current state
+```
+
+The [current rework review](https://github.com/Expensify/App/pull/103239#issuecomment-6026912662) records that separation explicitly: the existing-bank replacement regression is addressed by the Draft rework, while execution-time stale-authority refusal still needs direct acceptance evidence (an existing server/API regression or a reproducible result is sufficient).
+
+Current bounded state:
+
+```text
+unsafe broadened feature
+→ production rollback / safe baseline
+→ receiver-owned bounded reimplementation with bank-A preservation tests
+→ current-authority refusal evidence still pending
+→ Ready / review / merge / staging / production-safe use still pending
+```
+
+This does **not** establish that the receiver adopted the Nakagawa framing, that the earlier Nakagawa comments caused the reimplementation, that the Draft is ready or merged, that stale-screen revocation is already proven, that the corrected feature is deployed or used in production, or that any person-Origin / audience-scale effect has occurred.
+
 
 ### 7. A destructive action is authorized by UI state but not by the locked backend state
 
