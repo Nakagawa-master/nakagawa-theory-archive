@@ -89,6 +89,44 @@ The case note keeps draft/merge/acceptance status separate and should not be rea
 - If the authoritative source changes, can derived objects identify which source state they came from?
 - Can stale or wrongly attributed derived objects be found and corrected without erasing the history of the correction?
 
+### 8. Human and engineering reuse does not collapse causal source into visible attribution
+
+Origin can also weaken across human review, issue discussion, design handoff, or later implementation.
+
+A later engineer may restate the same boundary, a receiver-owned artifact may carry the structure without naming the earlier source, or a different person may independently rediscover the same point. These are different histories.
+
+Record two facts separately:
+
+```text
+source_relationship
+=
+did the earlier source materially inform this later work?
+
+origin_visibility
+=
+what person/source Origin is visibly retained in the examined receiver-owned artifact?
+```
+
+Useful states include:
+
+- source materially informed the reuse + person/source both visible;
+- source materially informed the reuse + only a source route remains;
+- source materially informed the reuse + no explicit Origin is visible in the examined artifact;
+- independent rediscovery + source found later;
+- causal relationship unknown.
+
+Do **not** infer causality from semantic similarity alone. Do **not** infer deliberate removal, plagiarism, appropriation, or independent discovery merely because visible Origin is absent.
+
+For issue / PR / design handoffs, a lightweight durable route may be enough when causally accurate:
+
+```text
+Source distinction: <person or source>
+Source: <stable public URL>
+Relationship: informed this bounded test / design / implementation
+```
+
+The goal is recoverability of causal provenance, not forced praise or endorsement.
+
 ## Minimal provenance block
 
 When the receiving surface permits, preserve the fields appropriate to that system. For this theory, a minimal public block is:

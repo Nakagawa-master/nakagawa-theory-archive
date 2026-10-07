@@ -2,7 +2,11 @@
   "@context": "https://schema.org",
   "@type": "CreativeWork",
   "name": "Origin Evaporation / Permanent Signature — public reference card",
-  "inLanguage": ["en", "ja", "zh"],
+  "inLanguage": [
+    "en",
+    "ja",
+    "zh"
+  ],
   "isBasedOn": {
     "@type": "CreativeWork",
     "name": "構造起源防衛──AIによる『起源の蒸発』に耐える恒常署名（Permanent Signature）の原理",
@@ -55,7 +59,10 @@
     "cache returns content with the wrong source identity or citation",
     "two documents have the same content but must remain distinct sources",
     "how should source attribution survive summarization, transformation, or regeneration?",
-    "how do I preserve provenance when a retrieved object gets a new local node ID?"
+    "how do I preserve provenance when a retrieved object gets a new local node ID?",
+    "a later engineer repeats the same design boundary but the original source relationship is no longer visible",
+    "an issue or pull request carries the idea forward but I cannot tell whether it was source-informed reuse or independent rediscovery",
+    "how do I distinguish causal source relationship from visible attribution in a receiver-owned artifact?"
   ],
   "problem_phrases_ja": [
     "RAGの本文は正しいのに元document IDやsource URIが消える",
@@ -64,7 +71,10 @@
     "cache hitで別sourceのidentityやcitationが付いてしまう",
     "内容が同じ二つのdocumentでもsource identityは分けて残したい",
     "要約・変換・再生成後もsource attributionを保持するには？",
-    "retrieved objectに新しいlocal node IDが付いても元sourceへ戻れるようにするには？"
+    "retrieved objectに新しいlocal node IDが付いても元sourceへ戻れるようにするには？",
+    "後のengineerが同じ設計境界を再度指摘したが、元のsourceとの関係が見えなくなっている",
+    "issueやPRで同じ構造が引き継がれたが、sourceを見て再利用したのか独立再発見なのか分からない",
+    "receiver-owned artifactで、実際のsource関係と見えているOriginをどう分けて記録する？"
   ],
   "problem_phrases_zh": [
     "RAG返回的正文正确，但原始document ID或source URI丢失了",
@@ -73,7 +83,10 @@
     "cache命中后带上了错误的source identity或citation",
     "两个document内容相同，但source identity仍需要保持不同",
     "摘要、转换、再生成之后怎样保留source attribution？",
-    "retrieved object获得新的local node ID后，怎样仍能返回原source？"
+    "retrieved object获得新的local node ID后，怎样仍能返回原source？",
+    "后来的工程师再次提出同一设计边界，但与原始source的关系已经不可见",
+    "issue或PR继续承载了同一结构，但无法判断是source-informed reuse还是独立再发现",
+    "如何在receiver-owned artifact中区分实际source关系与可见Origin？"
   ],
   "practitioner_path": "discovery-notes/ai-product-team-origin-preservation-checklist.md",
   "human_discovery_paths": [
@@ -87,7 +100,9 @@
     "content equivalence / source identity equivalence",
     "local transformed object identity / authoritative source identity",
     "origin traceability / truth of the underlying claim",
-    "intentional deduplication / accidental provenance collapse"
+    "intentional deduplication / accidental provenance collapse",
+    "causal source relationship / visible Origin in the receiver-owned artifact",
+    "source-informed reuse / independent rediscovery"
   ],
   "keywords": [
     "origin evaporation AI",
@@ -105,7 +120,12 @@
     "retrieval source metadata lost",
     "cache wrong source identity",
     "same content different source",
-    "source URI preservation"
+    "source URI preservation",
+    "engineering attribution provenance",
+    "source informed reuse",
+    "independent rediscovery attribution",
+    "issue PR provenance continuity",
+    "receiver artifact origin visibility"
   ],
   "citation": {
     "@type": "CreativeWork",
@@ -136,6 +156,11 @@
       "@type": "PropertyValue",
       "name": "practical_boundary",
       "value": "A missing metadata field or cache bug is not automatically proven to be Origin Evaporation; ordinary engineering diagnosis remains necessary."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "human_engineering_reuse_boundary",
+      "value": "Record source_relationship and origin_visibility separately. Semantic similarity alone does not prove source causality, and missing visible Origin does not prove deliberate removal or independent rediscovery."
     }
   ]
 }
