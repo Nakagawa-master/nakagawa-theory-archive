@@ -322,6 +322,34 @@ For that companion layer, see [OD307 — Self-Modification Identity and Kernel L
 
 Evidence boundary: this is a reusable regression derived from a live external design problem and an outbound proposal. At the time of this kit update, it is **not** evidence that Qwen Code has adopted, implemented, merged, released, or deployed this contract.
 
+## Receiver return: Qwen dual-path independence gate
+
+[Qwen Code issue #12380](https://github.com/QwenLM/qwen-code/issues/12380) now contains a bounded receiver-side return on the path-independence distinction.
+
+Nakagawa Master first separated:
+
+```text
+two configured paths
+!=
+two viable independent alternatives
+```
+
+and proposed an A/B/C/D acceptance shape that removes the other path's exclusive gate, inventories intentionally shared gates, and keeps independence separate from failover: [origin comment](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-5921364520).
+
+On 2026-10-07, Qwen's collaborator-owned triage explicitly re-read that comment, named **Nakagawa-master**, and kept the path-independence gate as one of the issue's unresolved next decisions. The triage distinguished:
+
+```text
+no cross-engine fallback
+!=
+path independence
+```
+
+and recommended either adopting the A/B matrix or explicitly recording which gates the two paths intentionally share: [receiver triage return](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035602677).
+
+A bounded follow-up then adapted the test to the repository's current asymmetry: Hosted delivery is active while ordinary/local Managed M6 activation remains deferred, so the acceptance record should allow Hosted independence to be proven for its current scope without pretending the local half already passes: [follow-up](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035698005).
+
+**Evidence boundary:** the Qwen triage comment is a receiver-owned automated/collaborator project return with explicit Person-Origin continuity and a concrete design disposition. It is not human-maintainer approval, implementation of the matrix, a passing independence test, a release claim, broad user use, or broad human recognition.
+
 ## Independent public example: Freenet hosted-to-own-peer migration
 
 [Freenet issue #4381](https://github.com/freenet/freenet-core/issues/4381) is a useful **independent problem surface**, not evidence that Freenet adopted this Nakagawa-derived kit.
