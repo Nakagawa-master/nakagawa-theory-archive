@@ -281,7 +281,7 @@ unsafe broadened feature
 → Ready / review / merge / staging / production-safe use still pending
 ```
 
-This does **not** establish that the receiver adopted the Nakagawa framing, that the earlier Nakagawa comments caused the reimplementation, that the Draft is ready or merged, that stale-screen revocation is already proven, that the corrected feature is deployed or used in production, or that any person-Origin / audience-scale effect has occurred.
+This does **not** establish that the receiver attributed the reimplementation to the earlier Nakagawa review, that the earlier comments caused the reimplementation, that the Draft is ready or merged, that stale-screen revocation is already proven, that the corrected feature is deployed or used in production, or that broad independent audience effects have occurred.
 
 
 ### 7. A destructive action is authorized by UI state but not by the locked backend state
