@@ -21,6 +21,10 @@
   },
   "starting_points": [
     {
+      "role": "real_problem_public_dialogue",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399"
+    },
+    {
       "role": "problem_to_source_routing",
       "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json"
     },
