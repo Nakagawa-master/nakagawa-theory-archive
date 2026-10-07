@@ -114,8 +114,14 @@
 ## 使い分け
 
 - **番号が分かっている** → このページから該当ODへ。
-- **テーマから探したい** → [`CATEGORIES.md`](CATEGORIES.md)へ。
+- **テーマ・シリーズから探したい** → [`CATEGORIES.md`](CATEGORIES.md)へ。
+- **日常の場面・物語から入りたい** → [一般読者向け翻訳層](../human-translation/README.md) または [まず1ページだけ読む](../STORIES.md)へ。
+- **具体的な問題・実務課題から探したい** → [Discovery Notes](../discovery-notes/README.md) または [Influence Map](../INFLUENCE_MAP.md)へ。
 - **Parent / NCL-ID / titleを照合したい** → [`official-derivatives-map.json`](official-derivatives-map.json)へ。
 - **AI・検索・RAG等で機械取得したい** → [`official-derivatives-index-v1.json`](../machine-discovery/official-derivatives-index-v1.json)へ。
 
-各ODのREADMEは、その公式派生物の7面と親原典への接続ハブです。
+各ODのREADMEは、その公式派生物の7面と親原典への接続ハブです。上記の外側ナビゲーションは、OD001–OD309の各7面の内容やParent identityを変更しません。
+
+### 旧ナビゲーションURLについて
+
+このディレクトリには `by-article-*`、`by-category-*`、`ai-index-hub-*`、`checkpoint-*` などの旧URLが残っています。これらは過去の参照を壊さないための**互換入口**であり、現在の第二indexではありません。現在の公開ナビゲーションは、このREADME、[`CATEGORIES.md`](CATEGORIES.md)、[`official-derivatives-map.json`](official-derivatives-map.json)、および [machine discovery index](../machine-discovery/official-derivatives-index-v1.json) に集約されています。
