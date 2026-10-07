@@ -56,7 +56,8 @@
       "primary": [
         "https://master.ricette.jp/",
         "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/official-derivatives-index-v1.json",
-        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ABOUT_NAKAGAWA_MASTER.en.md"
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ABOUT_NAKAGAWA_MASTER.en.md",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/nakagawa-master-origin.jsonld"
       ]
     },
     "live_ai_reuse_and_verification": {
