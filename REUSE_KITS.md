@@ -119,6 +119,8 @@ Core questions:
 
 Useful in AI/model providers, cloud architecture, hosted/self-hosted products, identity and authentication, data portability, migration, audit/appeal design, emergency control, and multi-provider infrastructure.
 
+A live Qwen Code architecture thread now contains a receiver-owned AI triage return that explicitly preserves the Nakagawa-master path-independence distinction and keeps it as an unresolved acceptance gate: [issue #12380](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035602677). This is design-level receiver carry, not proof that the independence matrix has been implemented or passed.
+
 ## Preserve the source relation
 
 If a kit materially informs a real decision or implementation, preserve a lightweight source line such as `Source distinction: Nakagawa Master — <public source URL>`. See [Origin Attribution for Reuse](ORIGIN_ATTRIBUTION_FOR_REUSE.md). If you independently rediscovered the same distinction and found the source later, state that instead of claiming source causality.

@@ -2860,6 +2860,47 @@
         ],
         "public_reuse_kit": "CURRENT_AUTHORITY_REUSE_KIT.md#23-an-approval-record-is-not-approval-of-the-current-executable-definition"
       }
+    },
+    {
+      "case_id": "qwen-dual-path-independence-origin-preserved-triage",
+      "topic": "Configured dual paths versus independently operable alternatives under removal of the other path's exclusive gate",
+      "external_repository": "QwenLM/qwen-code",
+      "issue": "https://github.com/QwenLM/qwen-code/issues/12380",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "issue_comment",
+        "url": "https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-5921364520",
+        "summary": "Proposed a path-independence acceptance matrix for local Managed versus Hosted, explicit inventory of shared gates, and separation of independent operability from failover."
+      },
+      "explicit_receiver_return": {
+        "actor": "qwen-code-review-bot",
+        "author_association": "COLLABORATOR",
+        "url": "https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035602677",
+        "origin_preserved": true,
+        "summary": "Qwen project triage explicitly named Nakagawa-master, restated that no cross-engine fallback is not the same claim as path independence, and kept the path-independence gate as a next unresolved issue decision."
+      },
+      "origin_followup": {
+        "url": "https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035698005",
+        "summary": "Adapted the gate to the current repository state: Hosted can be tested for its supported scope while ordinary/local Managed independence remains deferred until M6 activation rather than being prematurely marked PASS."
+      },
+      "current_stage": "receiver_owned_ai_triage_origin_preserved_design_restatement_with_open_acceptance_gate",
+      "causal_boundary": "The receiver-side Qwen triage directly cites and reconstructs the Nakagawa-master distinction and promotes it into the issue's current next-decision set. This supports bounded AI/project-system Origin-preserved design carry. It does not establish human-maintainer approval, implementation, a passing independence test, or product adoption of the broader theory.",
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "configured alternatives != viable independent alternatives; no fallback != path independence; intentional shared gates must be explicit",
+        "public_reuse_kit": "ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md",
+        "machine_challenge": "L-access-topology-effective-exit"
+      },
+      "not_claimed": [
+        "human maintainer approval",
+        "implementation of the A/B matrix",
+        "passing local Managed independence",
+        "passing Hosted independence",
+        "merge or release caused by this gate",
+        "independent end-user use",
+        "broad human recognition",
+        "whole-theory adoption"
+      ],
+      "verification_boundary": "issue-body acceptance criteria updated with the gate, executable A/B/shared-gate tests, maintainer disposition, merge/release of those tests, independent operational use, or later prompt-free Person-Origin rereference"
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
