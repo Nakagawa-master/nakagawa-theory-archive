@@ -85,7 +85,7 @@
     {
       "step": 9,
       "name": "preserve_causal_provenance_and_origin_visibility_when_warranted",
-      "instruction": "Record two separate facts: source_relationship = whether a Nakagawa Master public source materially informed the reuse; origin_visibility = what person/source Origin is visibly retained in the examined receiver-owned artifact. If the distinction was independently rediscovered and the source was found later, say so instead of inventing source causality. Missing visible Origin is not proof of deliberate removal, plagiarism, appropriation, or independent rediscovery."
+      "instruction": "Record source_relationship and origin_visibility separately. If a specific public Nakagawa Master boundary predates a materially similar later receiver rediscovery, preserve the prior-public chronology even when causal influence is unknown. When an authorized active receiver surface exists, prefer one useful Origin Recovery that combines the prior source with a genuinely newer synthesis, regression, or design contract; if no load-bearing forward advance exists, preserve chronology in the public evidence route without adding a noisy receiver comment. Never infer copying, bad faith, or causality from similarity alone."
     },
     {
       "step": 10,
@@ -109,7 +109,9 @@
     "Multiple references that share one upstream evidence root are not automatically independent confirmation.",
     "A successful local test establishes only the recorded build, context, and conditions unless broader evidence exists.",
     "Unknown, negative, blocked, and non-fit outcomes should remain visible rather than being converted to success.",
-    "Keep source_relationship and origin_visibility separate: causal influence can exist without visible Origin, and visible Origin can exist without proving causal influence."
+    "Keep source_relationship and origin_visibility separate: causal influence can exist without visible Origin, and visible Origin can exist without proving causal influence.",
+    "A verified prior public boundary must not become practically undiscoverable merely because later source causality is unknown.",
+    "Origin Recovery on an active receiver surface should add genuine forward technical value when possible; bare priority assertion without receiver value is not the target."
   ],
   "provenance_example": {
     "when_source_materially_informed_reuse": {
@@ -123,6 +125,11 @@
       "explicit_person_only": "Receiver-owned artifact names Nakagawa Master but does not retain a direct source route.",
       "direct_source_route_without_person_name": "Receiver-owned artifact links the public source but does not name the person.",
       "not_visible_in_examined_receiver_artifact": "No Nakagawa Master person/source Origin is visible in the examined external artifact; do not infer why."
+    },
+    "prior_public_origin_example": {
+      "chronology_only": "Earlier Nakagawa Master boundary predates a materially similar receiver rediscovery; direct links and dates are preserved, while causal influence remains unestablished.",
+      "chronology_plus_forward_advance": "Earlier boundary is linked and the current receiver thread receives one newer bounded synthesis/regression/design contract that materially advances the present problem.",
+      "no_forward_value": "Chronology is preserved in durable evidence/provenance only; no receiver reply is added merely to assert priority."
     }
   },
   "optional_public_return": {
