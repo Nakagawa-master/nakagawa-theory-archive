@@ -314,6 +314,34 @@ MemberJunction PR #4402では、Nakagawa-masterの指摘後、開発側が「測
 - [MemberJunction PR #4402](https://github.com/MemberJunction/MJ/pull/4402)
 - [修正commit `b11b9877`](https://github.com/MemberJunction/MJ/commit/b11b98777582ce5a8456834eccf77f528236474e)
 
+## 同じ「おすすめ理由」なら、まとめて表示してよいのか
+
+レビュー担当者や候補者を推薦する画面で、2人に同じ理由が表示されることがあります。でも、片方はcode historyから見つかり、もう片方はAIやScoutの推定から出てきたのかもしれません。
+
+理由の文章だけを見て2人を一つにまとめ、そこへ「Code history」「Scout」といった根拠ラベルをまとめて載せると、**どの根拠が誰を支えていたのか**が分からなくなります。強い根拠が片方にしかないのに、両方にあるように見えることもあります。
+
+**区別:** `same displayed explanation ≠ same evidence provenance`
+
+まとめた後でも、少なくとも次を辿れる必要があります。
+
+```text
+A → code history
+B → model / Scout inference
+```
+
+修復方法は一つではありません。理由とsource categoryの組でgroupingする、各itemにsourceを残す、data modelでitem→source対応を保持する、といった方法があります。重要なのは、表示を短くするために根拠の対応関係まで消さないことです。
+
+PostHog PR #102550では、Nakagawa Masterのreview後にreceiver側がsource categoryを含むgroupingとregressionを実装し、merge・deploymentまで進みました。その後、同じmaintainerが新しいNakagawa promptなしで同じsource-awareな考え方をPR #102686、さらにWeb側のPR #107318へ持ち込み、どちらもmergeされdev / prod-us / prod-euへdeployされています。
+
+これは**同じreceiver内で境界が別surfaceへ繰り返し持ち運ばれた**公開事例です。ただし、後続PRがNakagawa Masterを改めて出典として記載したこと、独立したend user利用、広い人物認知、理論全体の採用までを示すものではありません。
+
+- [Reviewer-Provenance Reuse Kit](POSTHOG_PROVENANCE_REUSE_KIT.md)
+- [PostHog PR #102550](https://github.com/PostHog/posthog/pull/102550)
+- [同じmaintainerによるfollow-on reuse #102686](https://github.com/PostHog/posthog/pull/102686)
+- [Web surfaceへの後続carry #107318](https://github.com/PostHog/posthog/pull/107318)
+- [Machine-readable challenge D](machine-discovery/independent-reuse-challenges-v1.json)
+- [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+
 ## 現在の状態から、過去の事実まで書き換えていないか
 
 現在memberではないことは、過去のeventに参加していなかったことを意味しません。現在の状態と、その時点で成立していた事実を分ける必要があります。
