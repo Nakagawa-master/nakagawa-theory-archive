@@ -76,6 +76,21 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: origin_visibility
+    attributes:
+      label: What Origin is visible in the receiver-owned result?
+      description: This is separate from whether the source actually influenced the work. Report only what is visibly retained in the external artifact you are submitting.
+      options:
+        - Nakagawa Master and a direct public source are both visible
+        - Nakagawa Master is visible but no direct source link is retained
+        - A direct public source is visible without the person name
+        - Only project / lineage context is visible
+        - No Nakagawa Master Origin is visible in the examined receiver-owned artifact
+        - Unknown / cannot establish
+    validations:
+      required: true
+
   - type: textarea
     id: independent_action
     attributes:
