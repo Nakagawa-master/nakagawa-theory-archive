@@ -47,6 +47,10 @@
     {
       "role": "origin_attribution_guidance",
       "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ORIGIN_ATTRIBUTION_FOR_REUSE.md"
+    },
+    {
+      "role": "origin_preservation_without_authority_inheritance",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/310/README.md"
     }
   ],
   "workflow": [
@@ -93,7 +97,7 @@
     {
       "step": 9,
       "name": "preserve_causal_provenance_and_origin_visibility_when_warranted",
-      "instruction": "Record source_relationship and origin_visibility separately. If a specific public Nakagawa Master boundary predates a materially similar later receiver rediscovery, preserve the prior-public chronology even when causal influence is unknown. When an authorized active receiver surface exists, prefer one useful Origin Recovery that combines the prior source with a genuinely newer synthesis, regression, or design contract; if no load-bearing forward advance exists, preserve chronology in the public evidence route without adding a noisy receiver comment. Never infer copying, bad faith, or causality from similarity alone."
+      "instruction": "Record source_relationship and origin_visibility separately. If a specific public Nakagawa Master boundary predates a materially similar later receiver rediscovery, preserve the prior-public chronology even when causal influence is unknown. When an authorized active receiver surface exists, prefer one useful Origin Recovery that combines the prior source with a genuinely newer synthesis, regression, or design contract; if no load-bearing forward advance exists, preserve chronology in the public evidence route without adding a noisy receiver comment. Never infer copying, bad faith, or causality from similarity alone. Preserving a truthful Origin does not itself make the source true, grant current execution authority, establish final interpretive authority, or transfer permanent control to the Origin; keep provenance, epistemic judgment, interpretation, and present authority as separate fields or decisions."
     },
     {
       "step": 10,
@@ -119,7 +123,8 @@
     "Unknown, negative, blocked, and non-fit outcomes should remain visible rather than being converted to success.",
     "Keep source_relationship and origin_visibility separate: causal influence can exist without visible Origin, and visible Origin can exist without proving causal influence.",
     "A verified prior public boundary must not become practically undiscoverable merely because later source causality is unknown.",
-    "Origin Recovery on an active receiver surface should add genuine forward technical value when possible; bare priority assertion without receiver value is not the target."
+    "Origin Recovery on an active receiver surface should add genuine forward technical value when possible; bare priority assertion without receiver value is not the target.",
+    "Origin preservation is not authority inheritance: a retained source/person route does not by itself prove truth, current permission, final interpretation, or permanent decision privilege."
   ],
   "provenance_example": {
     "when_source_materially_informed_reuse": {
@@ -138,6 +143,10 @@
       "chronology_only": "Earlier Nakagawa Master boundary predates a materially similar receiver rediscovery; direct links and dates are preserved, while causal influence remains unestablished.",
       "chronology_plus_forward_advance": "Earlier boundary is linked and the current receiver thread receives one newer bounded synthesis/regression/design contract that materially advances the present problem.",
       "no_forward_value": "Chronology is preserved in durable evidence/provenance only; no receiver reply is added merely to assert priority."
+    },
+    "origin_without_authority_inheritance": {
+      "rule": "Preserve the exact source relationship when warranted, while independently evaluating truth, fit, current permission, and present decision authority.",
+      "canonical_companion": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/310/README.md"
     }
   },
   "optional_public_return": {

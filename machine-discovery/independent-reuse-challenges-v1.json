@@ -521,6 +521,26 @@
         "counterexample showing an alternative explicit generation/supersession mechanism that enforces the same separation"
       ],
       "evidence_boundary": "LangGraph issue #9185 is a live public problem surface. Nakagawa Master posted the earlier current-authority boundary in comment 5978907038. A later independent participant reproduced the failure and published an XBSTACK fixture that preserves one provider write through reconciliation, but the artifact does not name Nakagawa Master and causal source influence is not inferred. Nakagawa Master later linked the prior Origin directly and proposed the four-layer contract in comment 6029886841. This challenge does not establish LangGraph maintainer adoption, implementation of this envelope, merge, release, or later person-Origin return."
+    },
+    {
+      "id": "X-origin-preservation-without-authority-inheritance",
+      "distinction": "preserved Origin / provenance != truth proof != final interpretation != current or permanent authority",
+      "official_derivative": "derivatives/310/README.md",
+      "canonical_source": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-17-origin-preservation-sovereignty-non-inheritance/",
+      "test": "In a non-confidential knowledge, agent, governance, documentation, or fork/derivative workflow, preserve a stable Origin/source route while independently changing one present-state dimension such as evidence, interpretation, permission, ownership, or decision authority. Verify that provenance remains reconstructable but the old Origin relationship alone cannot authorize the changed present decision.",
+      "positive_evidence": [
+        "the original author/source and transformation or lineage relationship remain recoverable after reuse or revision",
+        "truth/validity is evaluated from current evidence and counterexamples rather than accepted because the Origin said it",
+        "current permission or execution authority is checked from the current governing state rather than inherited from historical authorship or prior authority",
+        "a downstream interpretation or revision can disagree while still preserving the earlier source relationship",
+        "forks or branches can preserve a shared Origin without one branch gaining automatic exclusive succession or representation authority",
+        "criticism, rejection, or supersession does not require deleting the historical Origin record"
+      ],
+      "useful_negative_evidence": [
+        "a domain-specific legal or contractual rule where an Origin holder currently has authority, provided the present authority is separately evidenced rather than inferred from Origin status alone",
+        "a counterexample showing that the proposed Origin/authority separation loses necessary accountability or creates persistent governance failure under the recorded conditions"
+      ],
+      "evidence_boundary": "This challenge is a public portability test derived from OD310. Publication of the challenge creates no independent adoption or recognition credit. A pass does not prove the whole theory corpus, and retaining Nakagawa Master as Origin does not require agreement, endorsement, or transfer of current authority."
     }
   ],
   "evidence_boundary": [

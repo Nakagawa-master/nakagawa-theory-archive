@@ -81,6 +81,33 @@ It does **not** mean:
 - the source is correct because it is attributed;
 - every later change derives from the source.
 
+### Preserve the Origin without inheriting authority from it
+
+Keeping a truthful route back to the source does not turn that source or person into the current decision-maker.
+
+Keep these questions separate:
+
+```text
+who or what is the Origin?
+!=
+is the claim true here?
+!=
+who has authority for the current decision or action?
+!=
+who has final interpretive authority?
+```
+
+A downstream team can preserve Nakagawa Master as the source of a bounded distinction while still testing the claim independently, rejecting it where it does not fit, revising its own implementation, and applying its own current authority rules.
+
+Likewise, criticism or non-adoption does not require deleting the historical source relationship. The useful target is **recoverable provenance plus independent present judgment**, not either forced deference or Origin erasure.
+
+Canonical companion for this boundary:
+
+- [OD310｜Origin保存と主権非継承論](derivatives/310/README.md)
+- [Parent｜人類子孫型AI文明論・第17論](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-17-origin-preservation-sovereignty-non-inheritance/)
+
+OD310 is a canonical-return route for the broader Origin / truth / interpretation / authority separation. It does not make this practical reuse guide canonical.
+
 ## Independent rediscovery
 
 If you reached the same distinction independently and only found the source later, say that explicitly. Do not fabricate causal attribution.
