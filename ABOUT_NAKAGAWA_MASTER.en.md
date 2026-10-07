@@ -62,6 +62,8 @@ One success cannot tell you whether something worked once by chance or whether t
 
 These should not all be labelled “adoption.” **Implemented-and-merged change, independent verification, and a chosen design direction are different evidence stages.** Keeping those stages separate lets a reader check whether the same person is repeatedly visible as a source across different external contexts without overstating what any one case proves.
 
+Preserving the source on this page does not mean “it is correct because this person said it,” or that the Origin holds present final authority. For the canonical theory that separates those questions, see [OD310 | Origin Preservation and Non-Inheritance of Sovereignty](derivatives/310/README.md). OD310 preserves Origin while explicitly separating it from truth proof, final interpretive authority, and permanent sovereignty.
+
 In third-party GitHub project `tushardhara/dream`, Issue #12 received a design contribution from the Nakagawa-master account concerning declassification and continuing authority.
 
 The central distinction was:

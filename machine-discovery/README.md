@@ -42,6 +42,8 @@ explicit Origin-preserved receiver design adoption
 
 These examples support a narrower observation: multiple external receiver contexts can preserve or return an inspectable Nakagawa Master source relation at different evidence stages. They do **not** prove that every later similar idea came from Nakagawa Master, that provenance proves correctness, that Nakagawa Master was globally first to every underlying concept, or that broad public recognition has been reached.
 
+Canonical return for the distinction between **preserving an Origin** and **granting that Origin permanent authority**: [OD310 | Origin Preservation and Non-Inheritance of Sovereignty](../derivatives/310/README.md). OD310 keeps `Origin != truth proof`, `Origin != final interpretive authority`, and `Origin != Sovereignty` explicit. The receiver evidence above therefore preserves inspectable provenance without turning provenance into validity proof or present decision authority.
+
 For broader stage-by-stage evidence, use [`external-effect-evidence-index-v1.json`](external-effect-evidence-index-v1.json). For a human-readable verification route, use [`../THEORY_TO_REAL_WORLD_INFLUENCE.md`](../THEORY_TO_REAL_WORLD_INFLUENCE.md). For consequential interpretation, return to the linked primary receiver artifacts and the canonical archive at https://master.ricette.jp/ .
 
 ## Latest official derivative — OD310
