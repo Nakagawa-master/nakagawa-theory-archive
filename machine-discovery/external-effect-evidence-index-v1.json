@@ -247,6 +247,30 @@
               "deployed_at_utc": "2026-09-18T16:30:00Z"
             }
           ]
+        },
+        "continued_cross_surface_reuse": {
+          "surface": "https://github.com/PostHog/posthog/pull/107318",
+          "same_external_maintainer": true,
+          "fresh_nakagawa_prompt": false,
+          "downstream_pr_names_nakagawa_origin": false,
+          "relationship": "The same maintainer carried the existing source-aware suggested-reviewer presentation into the Web surface while aligning it with the Desktop reasons-first layout.",
+          "preserved_boundary": "reviewer reasons remain tied to source-aware reviewer presentation rather than collapsing different evidence provenance into one undifferentiated recommendation group",
+          "state": "merged_and_multi_environment_deployed",
+          "merge": {
+            "claimed": true,
+            "at_utc": "2026-09-27T13:04:52Z",
+            "commit": "09d2ddff2dc0dbd5083d1f5960bcbbc962f1208b"
+          },
+          "deployment": {
+            "verified": true,
+            "source": "https://github.com/PostHog/posthog/pull/107318#issuecomment-5856246124",
+            "environments": [
+              "dev",
+              "prod-us",
+              "prod-eu"
+            ]
+          },
+          "classification_boundary": "repeated same-receiver cross-surface carry and deployment; not second-person Nakagawa-origin attribution, independent end-user use, user-scale impact, or whole-theory adoption"
         }
       },
       "current_stage": "release_deployment_or_verified_use",
