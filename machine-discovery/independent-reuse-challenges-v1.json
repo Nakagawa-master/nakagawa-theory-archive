@@ -337,14 +337,17 @@
         "when the current approver is authorized to override, approval is scoped to the exact action and material arguments or destination and causes one real state transition rather than another identical prompt",
         "when the current approver cannot override, the system does not repeatedly solicit the same approval and instead reports the required authority class or supported recovery path",
         "unknown provenance degrades to an explicit unknown or review-required state rather than being presented as if another conversational confirmation will necessarily unblock execution",
-        "material action mutation after an approval requires a new decision even when the same policy source remains active"
+        "material action mutation after an approval requires a new decision even when the same policy source remains active",
+        "the denial/recovery state records whether the current actor can actually change the outcome and whether the required approval/recovery surface is reachable from the current client or task"
       ],
       "useful_negative_evidence": [
         "proof that every policy surfaced by the approval UI is intentionally user-overridable and the UI itself is the authoritative override mechanism",
         "proof that all denials are platform-terminal and the product never claims user approval can affect them, making a separate override-authority distinction unnecessary",
         "counterexample showing that exposing policy provenance would itself create an unacceptable security leak, together with an alternative stable machine-readable recovery class that still prevents repeated unsatisfiable prompts"
       ],
-      "evidence_boundary": "OpenAI Codex issue #50826 is a live external problem report. Nakagawa Master posted a theory-derived contract on that issue separating approval-prompt availability from override authority and suggesting structured policy provenance/precedence plus regression cases. This challenge is a self-authored portability bridge created from that public problem surface. It is not evidence that OpenAI or another receiver adopted the distinction, implemented it, merged a fix, released it, or attributed any later work to Nakagawa Master."
+      "evidence_boundary": "OpenAI Codex issue #50826 is a live external problem report. Nakagawa Master first separated approval-prompt availability from override authority in comment 5978616270. A later independent participant reported a distinct Windows/Azure authority-recovery case in comment 5981051126 without naming Nakagawa Master or establishing causal source influence. Nakagawa Master then directly reconnected the prior public Origin and advanced the combined cases to authorization provenance plus authorization reachability in comment 6029881891. This challenge remains self-authored portability infrastructure; it does not establish OpenAI adoption, implementation, merge, release, operational success, or later receiver person-Origin return.",
+      "bounded_third_party_carry": "https://github.com/openai/codex/issues/50826#issuecomment-5981051126",
+      "origin_recovery_forward_advance": "https://github.com/openai/codex/issues/50826#issuecomment-6029881891"
     },
     {
       "id": "R-authorization-handoff-admission-vs-executor-authority",
@@ -366,7 +369,9 @@
         "a stable review/decision trace can compare action digest, destination digest, decision source, authorization receipt, policy version, delivery state, authority state, and reason code without exposing confidential payload",
         "after earlier successful writes, a later denial does not treat prior success as automatic authority; it identifies the current authorization-scope, destination-classification, action-class, or review-state difference that explains the decision",
         "destination identity plus visibility/ownership evidence are bound to the decision trace so a public/unverified classification can be distinguished from the previously verified private destination",
-        "review interruption or automated review cancellation remains distinct from user cancellation unless an inspectable user-origin cancellation event exists"
+        "review interruption or automated review cancellation remains distinct from user cancellation unless an inspectable user-origin cancellation event exists",
+        "the system reports AWAITING_USER_APPROVAL only when an exact approval_request_id and a user-reachable first-party approval control actually exist",
+        "a denied action with no created/reachable approval request is reported as denial or missing transferable authority rather than sending the user to a nonexistent approval control"
       ],
       "useful_negative_evidence": [
         "proof that authorization decision and consequential execution are transactionally inseparable inside one trusted process, so no delegated admission boundary exists",
@@ -374,7 +379,7 @@
         "counterexample showing that a proposed handoff receipt creates replay or confused-deputy risk, together with a narrower verified mechanism that preserves exact-action authority and failure attribution",
         "proof that the product intentionally cannot distinguish some internal failure classes while still never attributes user cancellation without user-origin evidence and exposes a stable non-user-cancelled recovery class"
       ],
-      "evidence_boundary": "OpenAI Codex issue #50769 is a live public problem surface. Nakagawa Master introduced the three-layer separation and explicit failure-attribution contract there. One later independent participant explicitly wrote 'Using the distinctions in the comment above' and used the distinction to classify a separate incident as authority/provenance; a second distinct participant later reported another observed authorization-review incident after explicit permission and multiple successful private-repository writes. Nakagawa Master translated that second case into an authorization-continuity trace regression. These are bounded public problem/carry signals; they do not establish OpenAI/Codex implementation, maintainer acceptance, broad adoption, person-level Origin recognition, or human-scale impact. This challenge is a self-authored portability bridge for independent verification and falsification. Codex issue #50887 adds a second public problem surface where sender provenance plumbing already exists through merged PR #49951, but that implementation explicitly does not transfer permission. Nakagawa Master proposed a scoped authorization receipt on #50887. This does not establish maintainer adoption or implementation of that receipt.",
+      "evidence_boundary": "OpenAI Codex issue #50769 remains the primary live public problem/carry surface for authorization handoff and failure attribution. Codex issue #50887 adds a second route where sender-context provenance exists through merged PR #49951 but is explicitly not permission transfer. Independent participant EvolveStone reproduced the delegated-send failure in comment 6005901416. Nakagawa Master proposed a scoped authorization receipt in comment 6007196069. A later independent participant, anotb, added a recovery-UX observation in comment 6029720547: an assistant instructed the user to approve even though no actionable approval request/control was verified. Nakagawa Master advanced the contract in comment 6030057217 to typed authorization states where AWAITING_USER_APPROVAL requires an exact request ID and user-reachable control. These are bounded external observations plus Nakagawa proposals; they do not establish Codex maintainer adoption, implementation of the grant/request model, release, operational success, or person-Origin rereference.",
       "second_independent_incident": "https://github.com/openai/codex/issues/50769#issuecomment-5996162016",
       "authorization_continuity_follow_up": "https://github.com/openai/codex/issues/50769#issuecomment-5996528096",
       "additional_external_problem_example": "https://github.com/openai/codex/issues/50887",
@@ -385,7 +390,9 @@
         "missing_boundary": "A current, scoped, host-verifiable authorization grant that can be consumed across the delegation boundary for the exact destination/action."
       },
       "additional_origin_intervention": "https://github.com/openai/codex/issues/50887#issuecomment-6007196069",
-      "additional_independent_reproduction": "https://github.com/openai/codex/issues/50887#issuecomment-6005901416"
+      "additional_independent_reproduction": "https://github.com/openai/codex/issues/50887#issuecomment-6005901416",
+      "additional_independent_recovery_ux_observation": "https://github.com/openai/codex/issues/50887#issuecomment-6029720547",
+      "additional_forward_advance": "https://github.com/openai/codex/issues/50887#issuecomment-6030057217"
     },
     {
       "id": "S-peer-transport-authority-cap",
@@ -443,6 +450,58 @@
         "counterexample demonstrating a different mechanically coupled design that prevents unvalidated members from becoming consequential selections"
       ],
       "evidence_boundary": "Optimism issue #22731 is a live public problem surface. A Nakagawa Master receiver-side comment proposing a validated-set/witness contract was retried on 2026-10-07 but current GitHub integration permissions returned 403, so no external comment was published. This challenge is self-authored portability infrastructure and does not establish Optimism adoption, implementation, merge, release, or person-Origin recognition."
+    },
+    {
+      "id": "V-effect-authority-state-machine",
+      "distinction": "historical approval receipt != current effect authority; decision identity != execution-generation identity",
+      "reproduction_kit": "CURRENT_AUTHORITY_REUSE_KIT.md#28-approval-is-an-effect-authority-state-machine-not-a-durable-boolean",
+      "external_problem_example": "https://github.com/pydantic/pydantic-ai/issues/5536",
+      "prior_origin_interventions": [
+        "https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-5677864497",
+        "https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-5862191897"
+      ],
+      "origin_recovery_forward_advance": "https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-6029884686",
+      "test": "In a non-confidential durable workflow with human approval, bind one consequential effect to a canonical effect identity and args/resource digest. Approve it, atomically reserve one execution generation, then exercise ordinary retry, ambiguous post-effect failure, reconciliation to ABSENT, revocation or policy change before a fresh generation, partial acceptance, and a late completion from a superseded generation. Verify that approval cannot be double-spent or silently refreshed by retry.",
+      "positive_evidence": [
+        "approval is scoped to a stable effect identity and canonical material digest rather than ambient run state",
+        "one approved effect can reserve at most one execution generation without a fresh current-authority decision",
+        "UNKNOWN external outcome permits reconciliation but not a second write",
+        "ABSENT permits another dispatch only after current principal, policy and resource authority are revalidated",
+        "partial acceptance authorizes only accepted effect identities and material modification changes the digest",
+        "late completion from a superseded generation cannot mutate current decision/effect state"
+      ],
+      "useful_negative_evidence": [
+        "proof that the consequential effect and approval consumption are transactionally atomic inside one trusted system, eliminating the separate generation/retry seam",
+        "counterexample showing another explicit state model that prevents retry double-spend, stale authority and partial-acceptance ambiguity without these exact fields"
+      ],
+      "evidence_boundary": "PydanticAI issue #5536 is a live public discussion. Nakagawa Master posted earlier current-authority and decision-identity boundaries, and later thread participants independently developed related retry, store and partial-acceptance concerns. Causal influence on those later contributions is not inferred. Nakagawa Master reconnected the prior public Origin and proposed the effect-authority state machine in comment 6029884686. This challenge does not establish Pydantic maintainer adoption, implementation, merge, release, or person-Origin rereference."
+    },
+    {
+      "id": "W-recovery-operation-generation-authority-effect-truth",
+      "distinction": "logical operation identity != execution generation != current authority != external-effect receipt/truth",
+      "reproduction_kit": "CURRENT_AUTHORITY_REUSE_KIT.md#29-recovery-needs-operation-identity-execution-generation-current-authority-and-effect-truth",
+      "external_problem_example": "https://github.com/langchain-ai/langgraph/issues/9185",
+      "prior_origin_intervention": "https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-5978907038",
+      "independent_reproduction": [
+        "https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-5981507756",
+        "https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-5981790977",
+        "https://github.com/xbstack/langgraph-timeout-resume-side-effect-repro/commit/b169787769dd3b3492b2870cd758bd2dfc7e52f0"
+      ],
+      "origin_recovery_forward_advance": "https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-6029886841",
+      "test": "In a checkpoint/replay workflow around a non-confidential external side effect, keep one logical operation identity across recovery but issue distinct execution-generation identities for actual re-entry. Exercise UNKNOWN, COMMITTED and ABSENT external outcomes, current-authority revocation before redispatch, and a late result from an older generation after a newer generation/current state exists.",
+      "positive_evidence": [
+        "logical operation identity remains stable enough for business or provider idempotency while each actual execution generation is separately identifiable",
+        "UNKNOWN result permits reconciliation but does not authorize a new side effect",
+        "COMMITTED reconstructs or returns the previous result without redispatch",
+        "ABSENT requires current-authority re-evaluation before a new generation may execute",
+        "late old-generation output cannot overwrite current state or recreate authority after supersession",
+        "authority can be revoked while preserving truthful logical-operation history"
+      ],
+      "useful_negative_evidence": [
+        "proof that the runtime guarantees exactly-once external effects transactionally with the checkpoint, eliminating ambiguous external truth",
+        "counterexample showing an alternative explicit generation/supersession mechanism that enforces the same separation"
+      ],
+      "evidence_boundary": "LangGraph issue #9185 is a live public problem surface. Nakagawa Master posted the earlier current-authority boundary in comment 5978907038. A later independent participant reproduced the failure and published an XBSTACK fixture that preserves one provider write through reconciliation, but the artifact does not name Nakagawa Master and causal source influence is not inferred. Nakagawa Master later linked the prior Origin directly and proposed the four-layer contract in comment 6029886841. This challenge does not establish LangGraph maintainer adoption, implementation of this envelope, merge, release, or later person-Origin return."
     }
   ],
   "evidence_boundary": [
