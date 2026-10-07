@@ -48,6 +48,15 @@ The English and Chinese editions are AI-assisted public discovery editions, not 
 
 These notes are discovery aids, not diagnoses, proof of applicability, canonical syntheses, or verbatim statements by Nakagawa Master.
 
+## Bounded practical interpretation notes
+
+When the question is already narrow and domain-specific, the existing [Interpretation Notes](../interpretation-notes/README.md) provide a shorter route from a practical question back to one matching official derivative and canonical Parent.
+
+- [Workforce strain and leading indicators — OD039 bounded interpretation](../interpretation-notes/od039-leading-indicator.md)
+- [AI-assisted audit and human accountability — OD043 bounded interpretation](../interpretation-notes/od043-ai-audit-responsibility.md)
+
+These are non-canonical interpretations. They do not replace OD039 / OD043, create a new combined theory, diagnose people or organizations, or turn AI-assisted audit into a blanket recommendation.
+
 ## Constructive AI / organization design
 
 Readable discovery editions:
