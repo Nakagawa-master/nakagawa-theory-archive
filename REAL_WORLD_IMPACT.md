@@ -509,7 +509,7 @@ content-stable payload reuse
 ## 17. Publications｜可逆性とauthority増加を別軸として第三者本文へ実装し、別文書へ再利用
 
 **対象:** [kishibashi3/publications#52](https://github.com/kishibashi3/publications/pull/52) → [PR #57](https://github.com/kishibashi3/publications/pull/57) → [PR #58](https://github.com/kishibashi3/publications/pull/58)  
-**現在状態:** #57 merged / GitHub Pages反映確認済み、#58 merged / 同一receiver内の別文書へ再利用
+**現在状態:** #57 merged / GitHub Pages反映確認済み、#58 merged / 同一receiver内の別文書へ再利用、後続PR #71でもD1〜D8を維持した体系再編がopen / mergeable
 
 PR #52で `Nakagawa-master` のreviewは、操作を元に戻せるかどうかと、その操作が主体自身の将来の行動可能範囲を広げるかどうかを分離しました。
 
@@ -538,8 +538,13 @@ receiverはこの指摘を独立した設計軸として再説明し、専用PR 
 - [#58 re-review](https://github.com/kishibashi3/publications/pull/58#issuecomment-5749456249)
 - [#58 merge commit `36e4c5df`](https://github.com/kishibashi3/publications/commit/36e4c5df963e2b3645c7591d8cb933c4f36e48e0)
 
-**公開記録から確認できること:** origin-preserved review → third-party restatement → 専用reader-facing本文実装 → merge / Pages反映 → 同じreceiver内の別文書で整合条件として再利用 → merge。  
-**まだ確認できないこと:** #58を別のpublic-site publicationとして数えること、別receiverによる独立carry、大規模読者反応、広範な人間認知、理論体系全体への支持。
+その後のPR #71では、receiver自身の文書体系再編でAA Principlesを一本化する際に、PR本文が「P1〜P3・D1〜D8の本文は維持」と明記しています。現在head `e06e748` の `drafts/agentic-agile/principles.md` にもD8「自己権限の固定」が残っており、#57/#58で入った境界が後続の体系整理でも脱落していません。PR #71はopen / mergeableであり、merge済みとは扱いません。
+
+- [PR #71｜後続の体系再編](https://github.com/kishibashi3/publications/pull/71)
+- [PR #71 current headのPrinciples](https://github.com/kishibashi3/publications/blob/e06e74828f656796ec38f455efea24d49fcda83f/drafts/agentic-agile/principles.md)
+
+**公開記録から確認できること:** origin-preserved review → third-party restatement → 専用reader-facing本文実装 → merge / Pages反映 → 同じreceiver内の別文書で整合条件として再利用 → merge → 後続の体系再編headでも同じD8を維持。  
+**まだ確認できないこと:** PR #71のmerge、#58/#71を別のpublic-site publicationとして数えること、別receiverによる独立carry、大規模読者反応、広範な人間認知、理論体系全体への支持。
 
 ---
 

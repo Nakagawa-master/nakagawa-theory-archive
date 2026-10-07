@@ -467,7 +467,7 @@ content-stable payload reuse
 ## 17. Publications｜把可逆性与authority增加分开，并在另一份文档中继续复用
 
 **对象：** [kishibashi3/publications#52](https://github.com/kishibashi3/publications/pull/52) → [PR #57](https://github.com/kishibashi3/publications/pull/57) → [PR #58](https://github.com/kishibashi3/publications/pull/58)  
-**当前状态：** #57 merged / 已确认GitHub Pages反映；#58 merged / 在同一receiver的另一份文档中继续复用
+**当前状态：** #57 merged / 已确认GitHub Pages反映；#58 merged / 在同一receiver的另一份文档中继续复用；后续PR #71在更大范围的文档重组中继续保留D1–D8，目前open / mergeable
 
 PR #52中的 `Nakagawa-master` review区分了“操作可以撤回”与“该操作是否扩大同一主体未来可以做什么”：
 
@@ -496,8 +496,13 @@ receiver把这一点重新解释为正文缺失的独立设计轴，并建立PR 
 - [#58 re-review](https://github.com/kishibashi3/publications/pull/58#issuecomment-5749456249)
 - [#58 merge commit `36e4c5df`](https://github.com/kishibashi3/publications/commit/36e4c5df963e2b3645c7591d8cb933c4f36e48e0)
 
-**公开可确认：** 保留origin的review → 第三方重述 → 专门的reader-facing正文实现 → merge / Pages反映 → 在同一receiver的另一份文档中作为一致性条件继续复用 → merge。  
-**尚未确认：** 把#58计为第二个独立public-site publication、不同receiver的独立carry、大规模reader response、广泛人类认知、或对完整理论体系的认可。
+后续PR #71又提供了一个时间上更晚的receiver-owned carry。receiver在统一AA文档体系时，PR正文明确写出“P1〜P3・D1〜D8的正文保持不变”。当前head `e06e748` 的 `drafts/agentic-agile/principles.md` 仍保留D8“自己权限固定”。这说明#57/#58中的边界在后续结构整理中没有消失；但PR #71目前仍是open / mergeable，因此不计为已merge。
+
+- [PR #71｜后续文档体系重组](https://github.com/kishibashi3/publications/pull/71)
+- [PR #71 current head中的Principles](https://github.com/kishibashi3/publications/blob/e06e74828f656796ec38f455efea24d49fcda83f/drafts/agentic-agile/principles.md)
+
+**公开可确认：** 保留origin的review → 第三方重述 → 专门的reader-facing正文实现 → merge / Pages反映 → 在同一receiver的另一份文档中作为一致性条件继续复用 → merge → 在后续receiver-owned文档体系重组head中继续保留同一D8。  
+**尚未确认：** PR #71 merge、把#58/#71计为额外独立public-site publication、不同receiver的独立carry、大规模reader response、广泛人类认知、或对完整理论体系的认可。
 
 ---
 ## 18. PostHog｜把反复agent的批准绑定到人类实际看过的instructions

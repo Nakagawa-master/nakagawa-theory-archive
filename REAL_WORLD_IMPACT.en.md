@@ -467,7 +467,7 @@ together with a regenerated-chunk-id regression that makes the choice observable
 ## 17. Publications | Separate reversibility from authority increase, then reuse the boundary in another document
 
 **Surface:** [kishibashi3/publications#52](https://github.com/kishibashi3/publications/pull/52) → [PR #57](https://github.com/kishibashi3/publications/pull/57) → [PR #58](https://github.com/kishibashi3/publications/pull/58)  
-**Current state:** #57 merged / GitHub Pages deployment verified; #58 merged / reused inside the same receiver's separate document
+**Current state:** #57 merged / GitHub Pages deployment verified; #58 merged / reused inside the same receiver's separate document; later PR #71 keeps D1–D8 through a broader document reorganization and remains open / mergeable
 
 A `Nakagawa-master` review on PR #52 separated whether an operation can be reversed from whether it increases what the same actor is allowed to do next:
 
@@ -496,8 +496,13 @@ The boundary then became a consistency constraint inside the receiver's publicat
 - [#58 re-review](https://github.com/kishibashi3/publications/pull/58#issuecomment-5749456249)
 - [#58 merge commit `36e4c5df`](https://github.com/kishibashi3/publications/commit/36e4c5df963e2b3645c7591d8cb933c4f36e48e0)
 
-**Publicly verifiable here:** origin-preserved review → third-party restatement → dedicated reader-facing implementation → merge / Pages deployment → reuse as a consistency rule in another document inside the same receiver → merge.  
-**Not established here:** that #58 is a second independent public-site publication, carry by a different receiver, broad reader response, mass human recognition, or endorsement of the full theory corpus.
+The carry continues in later PR #71. While consolidating the receiver's AA documents, the PR explicitly says that the P1–P3 and D1–D8 text is preserved. Its current head `e06e748` still contains D8, “self-authority fixation,” in `drafts/agentic-agile/principles.md`. This is evidence of continued receiver-owned preservation across a later structural rewrite; PR #71 is still open / mergeable and is not counted as merged.
+
+- [PR #71 | later document-system consolidation](https://github.com/kishibashi3/publications/pull/71)
+- [Principles at PR #71 current head](https://github.com/kishibashi3/publications/blob/e06e74828f656796ec38f455efea24d49fcda83f/drafts/agentic-agile/principles.md)
+
+**Publicly verifiable here:** origin-preserved review → third-party restatement → dedicated reader-facing implementation → merge / Pages deployment → reuse as a consistency rule in another document inside the same receiver → merge → preservation of the same D8 in a later receiver-owned document-system rewrite head.  
+**Not established here:** merge of PR #71, that #58/#71 are additional independent public-site publications, carry by a different receiver, broad reader response, mass human recognition, or endorsement of the full theory corpus.
 
 ---
 ## 18. PostHog | Bind recurring-agent approval to the instructions the human actually reviewed
