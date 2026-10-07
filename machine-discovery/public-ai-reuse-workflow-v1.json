@@ -84,8 +84,8 @@
     },
     {
       "step": 9,
-      "name": "preserve_causal_provenance_when_warranted",
-      "instruction": "If a Nakagawa Master public source materially informed the reused distinction, preserve a lightweight source relation. If the distinction was independently rediscovered and the source was found later, say so instead of inventing source causality."
+      "name": "preserve_causal_provenance_and_origin_visibility_when_warranted",
+      "instruction": "Record two separate facts: source_relationship = whether a Nakagawa Master public source materially informed the reuse; origin_visibility = what person/source Origin is visibly retained in the examined receiver-owned artifact. If the distinction was independently rediscovered and the source was found later, say so instead of inventing source causality. Missing visible Origin is not proof of deliberate removal, plagiarism, appropriation, or independent rediscovery."
     },
     {
       "step": 10,
@@ -108,7 +108,8 @@
     "Provenance is not proof of truth.",
     "Multiple references that share one upstream evidence root are not automatically independent confirmation.",
     "A successful local test establishes only the recorded build, context, and conditions unless broader evidence exists.",
-    "Unknown, negative, blocked, and non-fit outcomes should remain visible rather than being converted to success."
+    "Unknown, negative, blocked, and non-fit outcomes should remain visible rather than being converted to success.",
+    "Keep source_relationship and origin_visibility separate: causal influence can exist without visible Origin, and visible Origin can exist without proving causal influence."
   ],
   "provenance_example": {
     "when_source_materially_informed_reuse": {
@@ -116,7 +117,13 @@
       "source_url": "<exact public source URL>",
       "distinction": "<bounded distinction actually used>"
     },
-    "when_independently_rediscovered": "State that the distinction was reached independently and the Nakagawa Master source was found later; do not claim source causality."
+    "when_independently_rediscovered": "State that the distinction was reached independently and the Nakagawa Master source was found later; do not claim source causality.",
+    "origin_visibility_example": {
+      "explicit_person_and_direct_source": "Receiver-owned artifact names Nakagawa Master and links the exact public source.",
+      "explicit_person_only": "Receiver-owned artifact names Nakagawa Master but does not retain a direct source route.",
+      "direct_source_route_without_person_name": "Receiver-owned artifact links the public source but does not name the person.",
+      "not_visible_in_examined_receiver_artifact": "No Nakagawa Master person/source Origin is visible in the examined external artifact; do not infer why."
+    }
   },
   "optional_public_return": {
     "registry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
