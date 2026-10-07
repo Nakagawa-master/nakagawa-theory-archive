@@ -4,25 +4,34 @@
   "canonical_status": "non_canonical_discovery_aid",
   "origin": "Nakagawa Master",
   "topic": "historical approval records versus current execution authority",
-  "problem_cluster": "stale approval, replayed consent, historical authorization, current outstanding request, approval lifecycle, re-agreement, withdrawal and correction",
+  "problem_cluster": "stale approval, replayed consent, historical authorization, current outstanding request, approval lifecycle, pre-transition authenticated identity, account/session transition, re-agreement, withdrawal and correction",
   "problem_phrases": [
     "How do we keep an old approval in history without letting it authorize execution again?",
     "When is a previously approved tool call only a historical record rather than a current permission?",
     "How should an agent system distinguish stale approval state from a currently outstanding approval request?",
     "Does the presence of an old approval record mean the authorization is still valid now?",
-    "How can consent or approval be preserved for audit while remaining revocable and scoped?"
+    "How can consent or approval be preserved for audit while remaining revocable and scoped?",
+    "How do we prove that an account-switch confirmation names the same target identity the backend will actually authorize?",
+    "If a transition page mounts only after the old session is gone, where should the pre-transition authenticated identity be bound?",
+    "Can a URL-supplied email or label be treated as the trusted identity shown in a security confirmation?"
   ],
   "problem_phrases_ja": [
     "昔の承認記録を残しながら、現在の実行許可として再利用しないには？",
     "過去のtool approvalがhistoryに残っているとき、現在も有効かどうかをどう分ける？",
     "古い同意や承認を、別run・別scopeへ勝手に延長しないには？",
-    "履歴を消さずにcurrent authorityだけ更新するには？"
+    "履歴を消さずにcurrent authorityだけ更新するには？",
+    "アカウント切替の確認画面に表示するidentityと、backendが実際に許可するtarget identityを一致させるには？",
+    "transition pageが旧session消失後にしかmountしない場合、切替前のauthenticated identityをどの層でbindすべきか？",
+    "URL由来のemailやlabelをsecurity confirmationの信頼済みidentityとして扱ってよいか？"
   ],
   "problem_phrases_zh": [
     "如何保留过去的批准记录，同时避免它再次成为当前执行权限？",
     "历史中的tool approval什么时候只是记录，而不再是当前许可？",
     "如何防止旧同意或批准被跨run、scope或target重复使用？",
-    "怎样在不删除历史的情况下只更新current authority？"
+    "怎样在不删除历史的情况下只更新current authority？",
+    "如何确保账户切换确认界面显示的目标身份，与后端真正授权的目标身份一致？",
+    "如果transition页面只在旧session消失后才挂载，应在哪一层绑定切换前的已认证身份？",
+    "URL提供的email或label能否直接作为安全确认中可信的身份？"
   ],
   "core_distinctions": [
     "historical record / current authority",
@@ -30,9 +39,12 @@
     "content similarity / authorization identity",
     "past agreement / present scope and conditions",
     "preservation / reactivation",
-    "correction and re-agreement / erasure of prior history"
+    "correction and re-agreement / erasure of prior history",
+    "pre-transition authenticated identity / post-teardown public-page state",
+    "displayed target identity / server-validated target identity",
+    "caller-controlled label / authority-bearing identity"
   ],
-  "practical_pattern": "preserve historical record -> identify exact request/scope -> derive current lifecycle state -> allow execution only for currently outstanding authority -> retain review/withdrawal/correction path",
+  "practical_pattern": "preserve historical record -> identify exact request/scope -> for identity transitions, bind the pre-transition authenticated source identity before teardown and derive the target identity from server-validated transition state -> derive current lifecycle state -> allow execution only for currently valid authority -> retain review/withdrawal/correction path",
   "canonical_theory": "合意の記憶——不可逆な社会誤作動を防ぐ最小構造",
   "canonical_theory_en": "Memory of Agreement — Minimal Structure for Preventing Irreversible Social Malfunction",
   "ncl_id": "NCL-α-20251102-e48c90",
@@ -57,6 +69,21 @@
     "Keeping historical approval records does not imply indefinite retention or universal audit logging.",
     "An old agreement is not automatically invalid; current validity depends on identity, scope, conditions, and state.",
     "Real authorization systems still require appropriate authentication, authorization, replay protection, identity binding, and storage trust controls.",
-    "Origin supports provenance and return; it does not prove a claim true by authority."
+    "Origin supports provenance and return; it does not prove a claim true by authority.",
+    "A confirmation modal or displayed account label is not authentication and does not by itself prove which source or target identity the backend authorized.",
+    "A missing session value on a post-teardown public page is not proof that no authenticated pre-transition session existed."
+  ],
+  "additional_external_problem_examples": [
+    {
+      "repository": "Expensify/App",
+      "pull_request": 101561,
+      "url": "https://github.com/Expensify/App/pull/101561",
+      "origin_review": "https://github.com/Expensify/App/pull/101561#pullrequestreview-5249394612",
+      "independent_receiver_recheck": "https://github.com/Expensify/App/pull/101561#discussion_r4201618037",
+      "display_identity_review": "https://github.com/Expensify/App/pull/101561#discussion_r4201393985",
+      "bounded_follow_up": "https://github.com/Expensify/App/pull/101561#discussion_r4201791035",
+      "role": "public engineering problem example showing pre-transition identity binding and displayed-target versus server-validated-target separation",
+      "adoption_or_endorsement_claim": false
+    }
   ]
 }

@@ -173,7 +173,9 @@
         "institutional correction agreement memory dissent rollback re-agreement",
         "How can a cancelled or superseded instruction remain in audit history without becoming actionable context for a fresh run?",
         "When is an old approval or instruction only historical evidence rather than current execution authority?",
-        "When does a past consent record stop being sufficient for a present data-use decision?"
+        "When does a past consent record stop being sufficient for a present data-use decision?",
+        "How should an account-switch flow bind the pre-transition authenticated source identity to the exact server-validated target identity?",
+        "When can a confirmation UI display one account identity while the backend is actually validating a different or absent identity binding?"
       ],
       "problem_phrases_ja": [
         "意思決定を後から訂正するとき、理由や責任を消さずに戻るには？",
@@ -181,7 +183,9 @@
         "暫定判断が不可逆な社会記憶になるのを防ぐには？",
         "キャンセル済みの指示を履歴には残しながら、新しいrunの実行文脈へ戻さないには？",
         "昔の承認や指示が、現在の実行権限ではなく履歴上の証拠になる境界はどこか？",
-        "過去の同意記録が残っていても、現在のデータ利用可否を別に判断すべきなのはいつか？"
+        "過去の同意記録が残っていても、現在のデータ利用可否を別に判断すべきなのはいつか？",
+        "アカウント切替で、切替前のauthenticated source identityとserverが検証するexact target identityをどう結び付ける？",
+        "確認UIに見えているaccount identityと、backendが実際に検証しているidentity bindingがズレるのはどんなときか？"
       ],
       "problem_phrases_zh": [
         "如何在之后修正决策时，不抹去当初理由与责任？",
@@ -189,7 +193,9 @@
         "如何避免临时决定变成不可逆的社会记忆？",
         "如何保留已取消或被取代的指令作为审计历史，同时不让它重新成为新run的可执行上下文？",
         "过去的批准或指令在什么情况下只是历史证据，而不是当前执行权限？",
-        "即使历史同意记录仍然存在，什么时候仍应重新判断当前的数据使用资格？"
+        "即使历史同意记录仍然存在，什么时候仍应重新判断当前的数据使用资格？",
+        "账户切换时，如何把切换前的已认证源身份与后端验证的精确目标身份绑定起来？",
+        "确认界面显示的账户身份与后端实际验证的身份绑定在什么情况下会发生偏离？"
       ],
       "canonical_theory": "合意の記憶——不可逆な社会誤作動を防ぐ最小構造",
       "origin": "Nakagawa Master",
@@ -197,7 +203,7 @@
       "diff_id": "DIFF-20251102-0001",
       "canonical_url": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/",
       "official_derivative_path": "derivatives/075/README.md",
-      "relevance_note": "Relevant to institutions, governance, and agent runtimes that need causal memory, dissent preservation, review, withdrawal, rollback, and re-agreement while keeping historical approval or cancelled instructions distinct from current execution authority. The canonical source provides the agreement-memory structure; software-specific current-authority checks are non-canonical implementation translations."
+      "relevance_note": "Relevant to institutions, governance, and agent runtimes that need causal memory, dissent preservation, review, withdrawal, rollback, and re-agreement while keeping historical approval or cancelled instructions distinct from current execution authority. It also routes software identity transitions where pre-transition authenticated identity, server-validated target identity, and the identity shown for confirmation must remain aligned before the old state is torn down. The canonical source provides the agreement-memory structure; software-specific current-authority and identity-binding checks are non-canonical implementation translations."
     },
     {
       "problem_cluster": "future-oriented effort, causal testing, learning loops, effort quantity versus validated progress",

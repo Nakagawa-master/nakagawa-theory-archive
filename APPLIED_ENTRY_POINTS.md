@@ -24,6 +24,39 @@ AIが危険、安全、重要などと分類できることと、コメント、
 - [確認手順を使う](CURRENT_AUTHORITY_REUSE_KIT.md)
 
 
+## アカウント切替の確認画面に出ている相手と、backendが検証する相手が本当に同じか
+
+「Aとしてログイン中です。Bへ切り替えますか？」という確認画面があっても、その表示だけでは安全性は成立しません。
+
+切替処理の途中でAのsessionを先に失い、あとから開くpublicなtransition pageで現在sessionを読もうとしても、Aのauthenticated identityはもう取得できないことがあります。さらに、画面に表示するBのemailがURLなどcaller側から与えられたlabelなら、**人が確認しているidentity**と**serverが実際に検証・選択するidentity**がズレる余地が残ります。
+
+**区別:** `displayed target identity ≠ server-validated target identity`
+
+もう一つ必要なのは、切替前の本人性です。
+
+**区別:** `pre-transition authenticated identity ≠ post-teardown page state`
+
+Expensify PR #101561では、Nakagawa Masterが2026-09-18に「既存sessionのtoken bindingがtransition時に欠落し得る」境界を指摘しました。2026-10-07には別のreceiver reviewerが、現在のpageがsessionのない状態でmountするため `session?.authToken` が常にundefinedになり、追加したbackend validationが実際には走らないと独立に指摘しています。別のreviewでは、URL由来emailを確認表示へ使うとlook-alike identityを表示できる問題も指摘されました。
+
+安全側の回帰では、切替前のAがまだauthoritativeに分かる層でAのidentity/sessionをbindし、serverが検証したBのidentityと、ユーザーへ表示するBのidentityを一致させます。
+
+```text
+pre-transition authenticated identity A
+= backend validation input for A
+
+server-validated transition target B
+= identity shown to the human as B
+```
+
+- [Current-Authority Reuse Kit — account transition regression](CURRENT_AUTHORITY_REUSE_KIT.md#24-an-account-switch-confirmation-must-bind-the-same-identities-the-backend-will-validate)
+- [Nakagawa Masterの2026-09-18 review](https://github.com/Expensify/App/pull/101561#pullrequestreview-5249394612)
+- [receiverによるcurrent-session gapの再確認](https://github.com/Expensify/App/pull/101561#discussion_r4201618037)
+- [receiverによるdisplay identity gapの指摘](https://github.com/Expensify/App/pull/101561#discussion_r4201393985)
+- [current-headでの境界整理](https://github.com/Expensify/App/pull/101561#discussion_r4201791035)
+- [理論内容の正本｜合意の記憶](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)
+
+ここで確認できるのは、同じreceiver内で問題境界が独立に再確認されたことです。ExpensifyがNakagawa Masterの枠組みを採用した、修正が完了した、merge/releaseされた、ということまでは意味しません。
+
 
 ## 同意した記録が残っていれば、今もそのデータを使ってよいのか
 
