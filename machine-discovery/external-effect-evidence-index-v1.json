@@ -1369,6 +1369,14 @@
         "merge_commit": "36e4c5df963e2b3645c7591d8cb933c4f36e48e0",
         "relationship": "receiver reviewer carried the merged condition into a separate normative document as D8 and merged it"
       },
+      "continued_receiver_carry": {
+        "pull_request": "https://github.com/kishibashi3/publications/pull/71",
+        "state": "open_mergeable",
+        "current_head": "e06e74828f656796ec38f455efea24d49fcda83f",
+        "current_artifact": "https://github.com/kishibashi3/publications/blob/e06e74828f656796ec38f455efea24d49fcda83f/drafts/agentic-agile/principles.md",
+        "relationship": "later receiver-owned document-system consolidation explicitly preserves P1-P3 and D1-D8; current head still carries D8 self-authority fixation",
+        "not_claimed": "merge or additional public-site publication"
+      },
       "public_delivery": {
         "github_pages_run": "https://github.com/kishibashi3/publications/actions/runs/35506196582"
       },
