@@ -145,6 +145,87 @@
         }
       },
       "description": "Visible Origin/provenance retained in the examined receiver-owned artifact. This is separate from source_relationship, which records causal relation. Missing visible Origin does not establish intent, plagiarism, appropriation, or independent rediscovery."
+    },
+    "prior_public_origin": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "later_artifact_url",
+        "relationship",
+        "bounded_overlap"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "later_artifact_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "relationship": {
+          "type": "string",
+          "enum": [
+            "source_informed_later_work",
+            "prior_public_boundary_predates_materially_similar_later_rediscovery_causal_link_unestablished",
+            "independent_rediscovery_source_found_later",
+            "unknown"
+          ]
+        },
+        "bounded_overlap": {
+          "type": "string",
+          "minLength": 20
+        },
+        "chronology_note": {
+          "type": "string"
+        },
+        "causal_influence_claimed": {
+          "type": "boolean"
+        }
+      },
+      "description": "Optional chronology record for a specific prior public Nakagawa Master boundary and a later receiver artifact. Use it to preserve inspectable temporal Origin without inferring causality from similarity."
+    },
+    "forward_advance": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "attempted",
+        "reason"
+      ],
+      "properties": {
+        "attempted": {
+          "type": "boolean"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 10
+        },
+        "receiver_surface_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "advance_type": {
+          "type": "string",
+          "enum": [
+            "higher_order_invariant",
+            "stronger_regression",
+            "integrated_design_contract",
+            "implementation_boundary",
+            "none"
+          ]
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "description": "Whether an authorized Origin-recovery action also advanced the current receiver problem beyond bare chronology. Do not manufacture novelty; use none when no load-bearing forward contribution exists."
     }
   },
   "additionalProperties": false
