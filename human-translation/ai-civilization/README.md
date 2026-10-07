@@ -49,3 +49,13 @@ https://www.youtube.com/watch?v=6AAtohcbHyw
 Origin / Author: **Nakagawa Master** (pen-name of Keisuke Nakagawa)
 
 → [中川マスターって何をしている人？](../who-is-nakagawa-master.md)
+
+## 読んだあと、外へ返すなら
+
+賛同や称賛でなくて構いません。次のどれか一つだけで十分です。
+
+- **似た場面・反例・違和感を1行だけ返す:** [Issue #416](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/416)
+- **いま実際に考えている非機密の問題から関連sourceを探す:** [Issue #399](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
+- **独立に検証・実装・反証・別文脈再利用をした結果を残す:** [Issue #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+
+短い返答やregistry記録そのものを、理論の正しさ・支持・採用の証拠として扱うものではありません。反例、non-fit、失敗した再現も同じように価値があります。
