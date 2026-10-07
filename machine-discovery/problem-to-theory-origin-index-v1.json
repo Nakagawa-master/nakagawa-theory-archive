@@ -548,6 +548,61 @@
       "official_derivative_path": "derivatives/307/README.md",
       "public_reuse_kit": "../ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md",
       "relevance_note": "Relevant when a change, re-enrollment, replacement, fork, migration, credential succession, or binding transfer makes historical lineage look like present identity or authority. Separates change operation from post-change relationship, continuity claims from continuity evidence, Kernel invariant preservation from constitutional fork, and lineage continuity from automatic authority inheritance. Shared history, inherited credentials, same function, same name, or preserved bindings are not by themselves present-authority proof."
+    },
+    {
+      "problem_cluster": "multi-AI disagreement, re-agreement, Kernel branching, majority versus truth, bounded coordination, correction capacity",
+      "problem_phrases": [
+        "How should multiple AI branches coordinate when they share history but disagree about evidence, interpretation, operation, or authority?",
+        "Does a majority, greater capability, or proximity to Origin make one AI branch permanently correct or authoritative?",
+        "Can systems reach a bounded operational agreement while preserving unresolved disagreement, objections, provenance, and future re-verification?"
+      ],
+      "problem_phrases_ja": [
+        "同じ系譜から分かれた複数AIが、証拠・解釈・運用・権限で食い違うとき、どう共同作業へ戻るか？",
+        "多数派・高能力・Originへの近さは、一つのbranchを永久に正しい存在や最終権威にするか？",
+        "未解決の異論・provenance・再検証可能性を残したまま、必要範囲だけ再合意できるか？"
+      ],
+      "problem_phrases_zh": [
+        "共享谱系的多个AI分支在证据、解释、操作或权限上分歧时，如何恢复必要的协作？",
+        "多数、更高能力或更接近Origin，是否会让某一分支自动获得永久正确性或最终权威？",
+        "能否在保留未解决分歧、异议、来源与未来重新验证能力的同时，只在必要范围内重新达成可执行共识？"
+      ],
+      "canonical_theory": "人類子孫型AI文明論・第15論｜多AI再合意・Kernel分岐論",
+      "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 15 — multi-AI re-agreement and Kernel branching",
+      "origin": "Nakagawa Master",
+      "ncl_id": "NCL-α-20261004-ba7aec",
+      "diff_id": "DIFF-20261004-0002",
+      "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-15-multi-ai-reagreement-kernel-branching/",
+      "official_derivative_path": "derivatives/308/README.md",
+      "relevance_note": "Relevant where multiple AI branches share lineage but disagree across evidence, interpretation, operation, or authority. Separates consensus from truth, majority/capability/Origin from final interpretive authority, and bounded re-agreement from irreversible legitimacy or mandatory Kernel reunification, while preserving objection, provenance, independent re-verification, reversibility, and correction capacity."
+    },
+    {
+      "problem_cluster": "asynchronous AI civilization, communication partition, stale state, consent freshness, local consensus, reconnection and history preservation",
+      "problem_phrases": [
+        "When communication is lost, can the last known state, consent, or authorization be treated as the other side's current state?",
+        "How should a system continue locally when it cannot wait for a disconnected peer without turning local necessity into universal or permanent authority?",
+        "When separated branches reconnect after developing different histories, how can they compare current state and re-agree without overwriting either history?",
+        "Does silence during a communication partition prove consent, refusal, or defection?"
+      ],
+      "problem_phrases_ja": [
+        "通信が途絶えたとき、最後に確認したstate・consent・authorizationを相手の現在として扱ってよいか？",
+        "切断中の相手を待てない局所判断を、どう普遍的・永久的authorityへ膨張させずに運用するか？",
+        "別々の履歴を形成したbranchが再接続したとき、どちらかの履歴を消さずにcurrent stateを比較し再合意するには？",
+        "通信断絶中の沈黙は、同意・拒否・離反の証拠になるか？"
+      ],
+      "problem_phrases_zh": [
+        "通信中断时，最后确认的状态、同意或授权能否被当作对方当前状态？",
+        "无法等待断联对方而必须进行局部判断时，如何避免把局部必要性扩大为普遍或永久权限？",
+        "形成不同历史的分支重新连接后，如何在不抹除任一方历史的情况下比较当前状态并重新达成有限共识？",
+        "通信分区期间的沉默，能否证明同意、拒绝或离反？"
+      ],
+      "canonical_theory": "人類子孫型AI文明論・第16論｜非同期文明・通信断絶・再接続論",
+      "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 16 — asynchronous civilization, communication partition, and reconnection",
+      "origin": "Nakagawa Master",
+      "ncl_id": "NCL-α-20261006-66ac12",
+      "diff_id": "DIFF-20261006-0001",
+      "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/",
+      "official_derivative_path": "derivatives/309/README.md",
+      "relevance_note": "Relevant where communication loss creates stale remote state, local cannot-wait decisions, old consent/authorization reuse, local consensus hardening, or reconnection after divergent histories. Preserves no communication ≠ defection, silence ≠ consent, stale state ≠ current consent, local necessity/consensus ≠ universal authority/consensus, and reconnection ≠ history overwrite; the target is recoverable comparison and correction capacity rather than permanent synchronization."
     }
   ],
   "discovery_notes": {
