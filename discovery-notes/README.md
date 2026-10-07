@@ -68,6 +68,31 @@ Additional routes:
 
 This route is intentionally constructive rather than criticism-first. It uses separate public sources on establishment conditions, causal design, structural friction, agreement memory, and reversible accountability to help practitioners ask what should be made explicit before automation. The Preflight helps teams write down real conditions; it does not score an organization or decide whether deployment is allowed. These materials do not merge the source theories into a new canonical theory.
 
+## AI agent execution / authority / evidence
+
+For readers working on agent runtimes, tool execution, approval, measurement, audit, or recovery, several existing public notes form a practical route without changing any official derivative:
+
+- **Execution preflight:** [AI Agent Execution Governance Preflight｜実行前に確認する12問](ai-agent-execution-governance-preflight.md)
+- **Proposal vs trusted execution:** [AIが提案した引数と、実際に実行を許可する引数は同じではない](model-proposal-is-not-execution-authority.md)
+- **Version-bound acceptance:** [Specification Case: Version-Bound Acceptance Is Not Indefinite Authority](specification-case-version-bound-acceptance-is-not-indefinite-authority.md)
+- **Operation success vs valid measurement:** [Implementation Case: Query Success Is Not Valid Measurement](implementation-case-query-success-is-not-valid-measurement.md)
+- **Correction history and re-agreement:** [Reversible Accountability for AI Systems](reversible-ai-accountability-deviation-ledger.md)
+
+These pages cover different stages and must not be collapsed into one claim. A practical preflight is not external adoption; an acknowledged specification boundary is not implementation; a receiver code/test change is not automatically merge or release. Each page preserves its own external-evidence boundary and returns to the relevant official derivative and canonical Parent.
+
+A useful shared reading path is:
+
+```text
+model / human proposal
+→ trusted transformation and current authority
+→ exact execution
+→ semantically valid result
+→ correction / history / re-agreement
+→ canonical return
+```
+
+This is a discovery route, not a new canonical synthesis.
+
 ## OD075｜Agreement Memory / Historical Approval vs Current Authority
 
 Problem-first Discovery:
