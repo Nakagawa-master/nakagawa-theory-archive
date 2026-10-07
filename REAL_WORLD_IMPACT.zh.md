@@ -2,7 +2,7 @@
 
 语言: [日本語](REAL_WORLD_IMPACT.md) | [English](REAL_WORLD_IMPACT.en.md) | **中文**
 
-**最后确认：2026-10-04**
+**最后确认：2026-10-07**
 
 中川大师（Nakagawa Master）是Keisuke Nakagawa的笔名。在社交媒体上也使用“マスター（Master）”，部分外部投稿使用“MasterJP”名义。
 
@@ -1301,3 +1301,48 @@ Nakagawa Master 又在 [comment 6026910453](https://github.com/MemberJunction/MJ
 **尚不能确认：** exact code implementation、tests、merge、release、production use 或广泛人物认知。
 
 → [Current-Authority Reuse Kit §23](CURRENT_AUTHORITY_REUSE_KIT.md#23-an-approval-record-is-not-approval-of-the-current-executable-definition)
+
+---
+
+## 39. Qwen Code｜区分“配置了两条路径”与“其中一条失效时另一条仍能独立运行”
+
+**对象：** [QwenLM/qwen-code issue #12380](https://github.com/QwenLM/qwen-code/issues/12380)  
+**当前阶段：** Nakagawa Master提出path-independence验收gate → 2026-10-07 Qwen的project triage明确点名 **Nakagawa-master**，重新表述 `no cross-engine fallback != path independence`，并把它保留为尚未解决的下一项判断 → 随后的follow-up又根据当前实现阶段把验收条件收窄。尚未确认人类maintainer批准、独立性测试PASS、matrix实现、merge或release。
+
+在AI或云产品里，即使界面上同时存在Hosted路径和local路径，或者Provider A与Provider B，也不能仅凭“有两个选项”就证明它们彼此独立。如果两条路径都依赖同一个identity gate、control plane、storage或policy gate，这个共享点失效时，两条路径可能一起失效。
+
+Nakagawa Master把边界写成：
+
+```text
+two configured paths
+!=
+two viable independent alternatives
+
+no cross-engine fallback
+!=
+path independence
+
+independent operability
+!=
+zero shared infrastructure
+```
+
+- [Nakagawa Master提出的path-independence gate](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-5921364520)
+
+测试重点不是“两个code path是否存在”，而是：让一条路径独有的gate不可达后，另一条路径是否仍能在自己的支持范围内完成一个有界任务；同时，把两条路径有意共享的identity、storage、inference、recovery等依赖明确列为shared gate，而不是把共享依赖误写成独立性。
+
+2026-10-07，Qwen的collaborator-owned triage account明确回到这条comment，并写明 **“Nakagawa-master's 2026-09-30 comment asks for an access-topology matrix”**。它把“没有cross-engine fallback”和“path independence”分成两个不同claim，并把后者保留为当前仍需回答的reviewer gate。
+
+- [Qwen侧triage response](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035602677)
+
+当时Hosted Managed的delivery已经在推进，但ordinary/local Managed仍未启用。Nakagawa Master因此没有把两条路径都写成已PASS，而是提出分阶段记录：Hosted可以先按当前scope验证；local路径在真正启用之前保持 `NOT PASS`。
+
+- [根据当前实现阶段给出的follow-up](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035698005)
+
+**公开可确认：** Nakagawa Master提出具体architecture distinction → Qwen侧project triage保留Origin并用自己的当前issue分析重新说明该区分 → 该区分继续作为未解决acceptance decision存在。  
+**尚未成立：** 人类maintainer批准、A/B/shared-gate matrix实现、任一path的独立性PASS、merge、release、独立end-user使用、广泛人物认知，或Qwen采用整个Nakagawa理论体系。
+
+→ [面向一般读者的问题入口](APPLIED_ENTRY_POINTS.md)  
+→ [Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md)  
+→ [machine-readable challenge L](machine-discovery/independent-reuse-challenges-v1.json)
+
