@@ -47,6 +47,22 @@
 
 如果想一次查看多个可由第三方自行核验的外部实现案例，请参阅[现实中发生了什么变化？](REAL_WORLD_IMPACT.zh.md)。
 
+
+### 不只看一次成功，而是看不同外部场景中是否还能看到同一个Origin
+
+单个成功案例无法说明这是“偶然一次有效”，还是同一个人的结构判断在不同问题中也能被使用。当前公开记录中，至少可以看到以下**不同第三方场景里仍可核验Nakagawa Master / @Nakagawa-master这一Origin**的例子：
+
+- **Qwen Code #13241** — Nakagawa-master提出的限定技术边界被写入code/tests并merge；merge之后，receiver又在另一条thread中主动写到“option A, which @Nakagawa-master picked”。该变化也进入stable v0.25.0和Desktop产品分发。不过，独立end-user使用规模和广泛人物认知尚未建立。
+- **LangGraph #9106** — 两名不同的外部参与者分别直接向Nakagawa Master返回了关于stale/current authority与duplicate-effect的回归验证结果。不过，maintainer采用、merge和release尚未建立。
+- **MemberJunction #4789** — receiver侧设计负责人明确写出“@Nakagawa-master's point”，并选择了fingerprint-bound approval方向，把历史承认记录与当前可执行定义分开。不过，这一approval部分的code实现与merge尚未确认。
+
+- [Qwen Code #13241](https://github.com/QwenLM/qwen-code/pull/13241) / [merge后的Origin再次提及](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)
+- [LangGraph #9106](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416) / [第二个外部返回](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094)
+- [MemberJunction #4789](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6022301400)
+
+重点不是把这三个案例全部统称为“采用”。**实现/merge并在之后再次提及Origin、独立验证、receiver设计层面的采用方向，是不同的证据阶段。** 保留这种阶段差异，才能在不过度声称的前提下，核验同一个人物Origin是否在不同外部场景中反复出现。
+
+
 在第三方GitHub项目`tushardhara/dream`的Issue #12中，Nakagawa-master账号提出了一个关于declassification与持续授权有效性的设计边界。
 
 核心区分是：
