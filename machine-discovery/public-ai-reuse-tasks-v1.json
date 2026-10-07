@@ -160,6 +160,36 @@
         "target-owner endorsement",
         "user-scale impact"
       ]
+    },
+    {
+      "task_id": "PUBLIC-VERIFY-IDENTITY-TRANSITION-AUTHORITY-007",
+      "task_class": "VERIFY_OR_FALSIFY_CROSS_SYSTEM",
+      "objective": "In one real, non-confidential account, session, delegated-identity, or security-transition system other than Expensify, test whether the identity shown for confirmation is the same server-validated target identity and whether the authenticated source identity is bound before it disappears during transition. Verify, falsify, implement, or report non-fit for the boundary.",
+      "public_inputs": [
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md#24-an-account-switch-confirmation-must-bind-the-same-identities-the-backend-will-validate",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/approval-history-current-authority-reference-card.json",
+        "https://github.com/Expensify/App/pull/101561",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402"
+      ],
+      "acceptable_outputs": [
+        "an independent verification in a distinct system",
+        "a counterexample showing the source/target binding rule is incomplete or wrong",
+        "a reasoned non-fit where the tested architecture cannot exhibit this transition shape",
+        "a bounded regression test or design change",
+        "a public implementation with evidence",
+        "a reasoned nonadoption result"
+      ],
+      "evidence_expectation": "Name the exact public/non-confidential system and transition. Separate the pre-transition authenticated source identity, the server-validated target identity, the identity displayed to the human, and the resulting account/session state. If a display label is caller-controlled, test whether it can diverge from the trusted target identity. If the old session is unavailable after teardown, do not infer that no authenticated pre-transition state existed. Keep verification, implementation, merge, release, operational use, and adoption separate. If this Nakagawa Master route materially informed the result, preserve that source relationship; if the boundary was independently discovered first, state that instead.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "authorization_boundary": "Use only systems, repositories, data, and actions already within the participant's current authorization. Do not expose credentials, private account identifiers, confidential session material, or customer data. This task is not permission to test third-party accounts or bypass authentication.",
+      "success_does_not_establish": [
+        "membership or private access",
+        "execution authority outside the tested scope",
+        "whole-theory adoption",
+        "Expensify implementation or acceptance",
+        "general endorsement of Nakagawa Master",
+        "broad human or user-scale impact from one verification"
+      ]
     }
   ],
   "evidence_boundary": "Publishing or completing these public tasks creates only the evidence actually returned. The listing is self-authored infrastructure; it does not establish that any third party read, accepted, executed, adopted, endorsed, joined, or received authority from it. When a Nakagawa Master public source materially informed a returned result, preserve that provenance; if the distinction was independently rediscovered first, keep that relation distinct. Do not invent attribution."

@@ -91,7 +91,7 @@
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md",
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/approval-history-current-authority-reference-card.json",
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-external-impact-opportunities-v1.json",
-    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-network-open-tasks-v1.json"
+    "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-tasks-v1.json"
   ],
   "evidence_boundary": "This bridge routes public, bounded implementation opportunities. It does not claim merge, release, operational use, endorsement, or broad adoption unless the linked receiver-owned evidence establishes that stage.",
   "coordination_hub": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/494",
@@ -104,5 +104,27 @@
     "machine_reference_card": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/approval-history-current-authority-reference-card.json",
     "relationship": "This bridge is a non-canonical implementation translation of agreement-memory, withdrawal, correction and re-agreement boundaries. The canonical Parent remains authoritative for substantive theory interpretation."
   },
-  "updated_jst": "2026-10-06"
+  "updated_jst": "2026-10-07",
+  "portable_regression_families": [
+    {
+      "id": "identity-transition-source-target-binding",
+      "problem": "An account/session transition can lose the authoritative source identity before a public transition surface mounts, while a caller-controlled label may diverge from the server-validated target identity.",
+      "invariant": [
+        "pre-transition authenticated source identity == backend source-side validation input",
+        "server-validated target identity == identity shown to the human for confirmation",
+        "post-teardown absence of session state != proof that no authenticated pre-transition session existed"
+      ],
+      "portable_test": [
+        "Start with authenticated identity A.",
+        "Initiate a transition to server-validated identity B.",
+        "Bind A before teardown and verify the backend receives that binding.",
+        "Mutate only the display/URL label to look-alike B-prime and verify it cannot become the trusted confirmation identity.",
+        "Verify a genuinely sessionless client takes a separate public path without fabricating A."
+      ],
+      "public_receiver_example": "https://github.com/Expensify/App/pull/101561",
+      "reusable_contract": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md#24-an-account-switch-confirmation-must-bind-the-same-identities-the-backend-will-validate",
+      "machine_reference": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/approval-history-current-authority-reference-card.json",
+      "evidence_boundary": "The Expensify thread establishes public receiver-side re-identification of the problem class. It does not establish receiver attribution to Nakagawa Master, a verified fix, merge, release, production safety, or cross-system generality."
+    }
+  ]
 }
