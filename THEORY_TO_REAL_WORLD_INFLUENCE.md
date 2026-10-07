@@ -801,7 +801,12 @@ The structure then affected another document inside the receiver's publication s
 - [PR #58 re-review](https://github.com/kishibashi3/publications/pull/58#issuecomment-5749456249)
 - [PR #58 merge commit](https://github.com/kishibashi3/publications/commit/36e4c5df963e2b3645c7591d8cb933c4f36e48e0)
 
-The second document remains under the receiver's `drafts/` path, so this page does **not** count it as a second public-site publication or as second-person human carry. What it does show is narrower: a source-attributed distinction was merged and deployed in reader-facing third-party material, then became an internal consistency constraint for another document in the same independent publication system.
+The same boundary survives a later receiver-owned document-system rewrite. PR #71 says the consolidation preserves P1–P3 and D1–D8, and its current head `e06e748` still contains D8 “self-authority fixation” in the consolidated Principles. PR #71 is open / mergeable, so this is continued preservation evidence rather than another merged or public-site publication claim.
+
+- [PR #71 later consolidation](https://github.com/kishibashi3/publications/pull/71)
+- [Principles at PR #71 current head](https://github.com/kishibashi3/publications/blob/e06e74828f656796ec38f455efea24d49fcda83f/drafts/agentic-agile/principles.md)
+
+The second document and the later consolidated Principles remain under the receiver's `drafts/` path, so this page does **not** count them as additional public-site publications or as second-person human carry. What the chain does show is narrower but stronger than a one-off: a source-attributed distinction was merged and deployed in reader-facing third-party material, became an internal consistency constraint for another document, and remained intact through a later receiver-owned consolidation.
 
 For related public boundaries, see:
 
