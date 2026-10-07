@@ -889,6 +889,53 @@ After the blocker appeared, Nakagawa Master returned that three-layer boundary t
 
 This case therefore establishes a **later independent external failure consistent with a previously stated responsibility boundary, followed by a new bounded intervention on the live blocker**. It does not yet establish that Expensify adopted the Nakagawa boundary, that the source caused the fix, or that the blocker is resolved.
 
+### A design distinction survived a receiver-side issue split while the person-Origin became less visible
+
+A Zammad design thread shows a different provenance pattern: a bounded design distinction appears before a later receiver-owned issue adopts closely matching acceptance criteria, but the later artifact does not visibly preserve Nakagawa Master as Origin.
+
+In [Zammad issue #6348](https://github.com/zammad/zammad/issues/6348), Nakagawa Master separated two knowledge states that can look similar in one UI:
+
+```text
+linked answer
+=
+durable workflow context already associated with the ticket
+
+suggested answer
+=
+a probabilistic current recommendation that can change with model / index / context
+```
+
+The public comment proposed linked answers first, suggestions second, preservation of linked answers when suggestions fail, deduplication when one answer is both linked and suggested, and independent truncation so many suggestions cannot crowd out one durable linked answer.
+
+- [Earlier Nakagawa Master boundary on #6348](https://github.com/zammad/zammad/issues/6348#issuecomment-5689266377)
+
+The receiver later split the empty-`??` zero-state design into [issue #6418](https://github.com/zammad/zammad/issues/6418). Its current acceptance criteria say that opening `??` without typing lists **linked answers first, then suggested ones**, and that if suggestions are switched off, still loading, or fail, linked answers remain available. Separately, #6348 continued as the sidebar action and was later changed from a clipboard-copy design to direct insertion into the current article.
+
+- [Receiver split from #6348 to #6418](https://github.com/zammad/zammad/issues/6348#issuecomment-5973164153)
+- [Receiver-owned #6418 acceptance criteria](https://github.com/zammad/zammad/issues/6418)
+- [Later #6348 direct-insert design change](https://github.com/zammad/zammad/issues/6348#issuecomment-6014955317)
+
+The chronology is inspectable, but the receiver-owned #6418 artifact does not name Nakagawa Master or link the earlier comment. This page therefore does **not** claim that the earlier comment caused the split, the acceptance criteria, or the later design changes. It records the narrower fact that the public Nakagawa boundary predates the later receiver artifact and materially overlaps its linked-versus-suggested distinction.
+
+The issue split also exposes a further reusable engineering boundary that is **not yet claimed as receiver adoption**. Once the sidebar insert action and the empty-`??` list become separate UI surfaces, they can drift if each reconstructs provenance independently. A stronger shared model would keep one answer identity plus its provenance state:
+
+```text
+answer identity
++ linked: true / false
++ suggested: true / false
++ suggestion availability / state
+```
+
+and let both surfaces derive presentation and actions from that same state. That would make the following regressions explicit:
+
+- one answer is both linked and suggested → render one answer identity while preserving both provenance signals;
+- suggestions fail or are disabled → linked workflow context remains usable;
+- a link is removed while the answer remains suggested → only the durable linked state disappears;
+- suggestion ranking changes → it cannot demote or crowd out linked workflow context;
+- sidebar insertion and `??` insertion resolve the same answer/content identity, so provenance semantics do not diverge while insertion behavior stays equivalent.
+
+This forward synthesis is a public Nakagawa-side applied proposal, not evidence that Zammad has adopted it. The case is useful precisely because it separates **prior public Origin, later receiver-owned semantic carry, uncertain causality, and a further current design consequence** instead of collapsing them into one attribution claim.
+
 ---
 
 ## 5. Source and interpretation boundary
