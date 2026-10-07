@@ -18,7 +18,7 @@ On public GitHub, specific judgments can also be traced into third-party code, t
 
 - **Nakagawa Master / 中川マスター** is the pen name of Keisuke Nakagawa. The names “マスター” (“Master”) and “MasterJP” are also used on some public social or external posts.
 - This repository treats Nakagawa Master as the **Origin / Author** of the published theory corpus represented here.
-- The public archive currently contains official derivatives `OD001` through `OD301`. 301 is the number of official derivative entries, not the number of theories.
+- The public archive currently contains official derivatives `OD001` through `OD309`. 309 is the number of official derivative entries, not the number of theories.
 - The corpus spans AI, organizations, business, markets, institutions, the future, civilization, Origin, and responsibility.
 - Canonical Parents, official derivatives, human-readable entries, FAQs, AI indexes, machine-readable discovery, and provenance are kept distinct so that short summaries do not become substitute authorities.
 - On public GitHub, there are verifiable cases in which concrete design boundaries posted under the Nakagawa-master account were examined by independent third parties and proceeded into external code, tests, documentation, or merged implementation.
@@ -136,7 +136,7 @@ These are representative entry points, not a claim that the archive forms one un
 - [Public dialogue | Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive? — English](discovery-notes/what-connects-nakagawa-master-theories.en.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
-- [OD001–OD301 index](derivatives/README.md)
+- [OD001–OD309 index](derivatives/README.md)
 
 ## For AI and retrieval systems
 
