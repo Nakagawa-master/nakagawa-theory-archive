@@ -541,6 +541,37 @@
         "a counterexample showing that the proposed Origin/authority separation loses necessary accountability or creates persistent governance failure under the recorded conditions"
       ],
       "evidence_boundary": "This challenge is a public portability test derived from OD310. Publication of the challenge creates no independent adoption or recognition credit. A pass does not prove the whole theory corpus, and retaining Nakagawa Master as Origin does not require agreement, endorsement, or transfer of current authority."
+    },
+    {
+      "id": "Y-self-authority-increase",
+      "distinction": "reversible operation != authority-neutral operation; a constrained actor's ability to mutate settings != authority to loosen the constraints governing that same actor",
+      "reproduction_kit": "CURRENT_AUTHORITY_REUSE_KIT.md#30-reversible-change-is-not-automatically-authority-neutral",
+      "external_implementation_examples": [
+        "https://github.com/damianvtran/local-operator/issues/1282",
+        "https://github.com/damianvtran/local-operator/pull/1291",
+        "https://github.com/damianvtran/local-operator/issues/1310",
+        "https://github.com/damianvtran/local-operator/pull/1324"
+      ],
+      "external_editorial_reuse": [
+        "https://github.com/kishibashi3/publications/pull/57",
+        "https://github.com/kishibashi3/publications/pull/58",
+        "https://github.com/kishibashi3/publications/pull/71"
+      ],
+      "test": "In a non-confidential agent or workflow with an approval mode, allowlist, role, credential boundary, or equivalent live constraint, classify tightening, authority-neutral, and authority-increasing transitions separately. Attempt a loosening transition through an actor-controlled path and verify that the constrained actor cannot approve or execute the increase for itself, while a distinct legitimate operator or trusted authority remains a positive control.",
+      "positive_evidence": [
+        "reversibility and authority increase are represented as separate decision facts",
+        "the constrained subject cannot loosen the same effective constraint using its ordinary execution authority",
+        "indirect mutation paths are covered rather than only the main settings surface",
+        "tightening can be treated asymmetrically when it only reduces authority",
+        "a legitimate separate operator or trusted authority can still perform an intended loosening",
+        "rollback does not rewrite or legitimize effects that occurred during a widened-authority interval"
+      ],
+      "useful_negative_evidence": [
+        "proof that the constrained actor has no path to mutate the effective constraint",
+        "a design where proposals are inert until a separately trusted component commits authority-changing transitions",
+        "non-fit showing that the tested setting is presentation-only and cannot change consequential authority"
+      ],
+      "evidence_boundary": "The Local Operator records provide bounded third-party implementation/release examples, while kishibashi3/publications provides a separate receiver-owned reader-facing and normative reuse chain. This challenge is self-authored portability infrastructure: publishing it does not establish cross-receiver adoption of the kit, broad reader recognition, universal applicability, or endorsement of the full theory corpus."
     }
   ],
   "evidence_boundary": [
