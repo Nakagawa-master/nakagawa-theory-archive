@@ -51,6 +51,22 @@
 
 複数の第三者実装事例をまとめて確認する場合は、[現実で何が変わったか｜中川マスターの公開判断が第三者実装へ作用した確認可能な事例](REAL_WORLD_IMPACT.md)を参照できます。
 
+
+### 一度の成功ではなく、別の外部文脈でも同じOriginが見えるか
+
+一つの成功例だけでは、「たまたま一度うまくいった」のか、別の問題でも同じ人物の判断が使われたのかは分かりません。現在の公開記録では、少なくとも次のように**別々の第三者文脈で、Nakagawa Master / @Nakagawa-master というOriginが確認できる事例**があります。
+
+- **Qwen Code #13241** — Nakagawa-masterの技術提案として境界がcode/testsへ実装され、merge後にはreceiver自身が別threadで「@Nakagawa-masterが選んだoption A」と再参照しました。変更はstable v0.25.0 とDesktop製品配布にも入りました。ただし、独立したend-user利用規模や広い人物認知までは確認されていません。
+- **LangGraph #9106** — 2人の別々の外部参加者がNakagawa Masterへ直接返答し、stale/current authorityと重複effectを分ける回帰確認をそれぞれ実行しました。ただし、maintainer採用・merge・releaseは未確認です。
+- **MemberJunction #4789** — receiver側の設計担当が “@Nakagawa-master's point” と明示し、過去の承認記録と現在の実行定義を分けるfingerprint-bound approvalの方向を選びました。ただし、そのapproval sliceのcode実装・mergeはまだ確認されていません。
+
+- [Qwen Code #13241](https://github.com/QwenLM/qwen-code/pull/13241) / [post-merge Origin rereference](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)
+- [LangGraph #9106](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416) / [second external return](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094)
+- [MemberJunction #4789](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6022301400)
+
+重要なのは、これらを全部「採用」と一括りにしないことです。**実装・merge・後日のOrigin再参照、独立した検証、設計採用方向**はそれぞれ証拠段階が違います。その違いを残したまま、複数の外部文脈で同じ人物Originへ戻る公開記録があるかを確認できます。
+
+
 理論や構造判断がアーカイブ内だけで完結しているかどうかは、外部での実際の利用からも確認できます。
 
 第三者GitHubプロジェクト `tushardhara/dream` のIssue #12では、Nakagawa-masterアカウントから、情報のdeclassificationについて次の設計境界が提示されました。
