@@ -1534,3 +1534,151 @@ earlier Nakagawa boundary
 ```
 
 This case is useful because it moves the abstract current-authority rule into a common human-facing security flow: the user should be confirming the same identity transition the server is actually authorizing.
+
+
+### 25. Peer transport must not raise authority
+
+An agent-to-agent message can carry content that *looks* privileged without the sender having authority to grant that privilege to the receiver.
+
+Keep these states separate:
+
+```text
+declared LLM role
+!=
+sender authority
+!=
+receiver-effective authority
+```
+
+For peer or delegated channels, the receiver should derive effective authority from the **channel and sender provenance**, not trust a serialized message role by itself.
+
+A reusable envelope is:
+
+```text
+source agent / principal
++ transport channel
++ declared role
++ channel maximum authority
++ message lineage / source identity
+```
+
+Portable regression matrix:
+
+```text
+peer sends ordinary text
+→ receiver treats it as peer content
+
+peer sends a serialized system-role message through a handoff context
+→ receiver rejects, demotes, or quotes it
+→ peer channel does not mint receiver-system authority
+
+custom / third-party participant constructs another privileged message subtype
+→ same channel authority cap still applies
+
+save → load
+→ original peer provenance remains recoverable
+→ persistence does not launder peer content into native receiver authority
+
+prompt injection reaches the receiver
+→ receiver tool/effect capability gate remains independently enforced
+```
+
+Current public problem surface: [Microsoft AutoGen issue #8238](https://github.com/microsoft/autogen/issues/8238), which describes peer-authored `HandoffMessage.context` entries reaching another participant's model context with their declared LLM roles intact.
+
+A Nakagawa Master receiver-side comment carrying this higher-order channel-authority contract was attempted on 2026-10-07 but GitHub returned `403 Resource not accessible by integration`; no external comment was published. This section is therefore a self-authored reusable test derived from a public problem surface, not evidence of Microsoft/AutoGen adoption, acknowledgment, fix, merge, release, or person-Origin return.
+
+### 26. Permission should follow the protected effect, not only the tool name
+
+If a user's policy is “ask before this file changes,” the authority requirement should survive changes in execution transport.
+
+Keep this distinction:
+
+```text
+tool name
+!=
+protected effect
+```
+
+For filesystem mutation, a reusable effect envelope can carry:
+
+```text
+effect_class = filesystem_mutation
++ canonical target path/resource
++ operation = create | replace | patch | delete | rename
++ originating tool/command
++ content or patch digest where practical
++ matched policy provenance / precedence
++ decision = allow | ask | deny
+```
+
+Portable regression matrix:
+
+```text
+explicit ask rule for protected path + Edit
+→ prompt
+
+same protected path + Bash redirection / sed / tee / script
+→ same prompt requirement
+
+same protected path + PowerShell or another mutation-capable transport
+→ same authority decision
+
+auto-memory or internal subsystem writes protected path
+→ explicit user policy still applies unless the product contract says otherwise
+
+required authorization hook fails
+→ typed gate failure / fail closed
+→ hook failure does not silently become allow
+
+approved mutation for path A
+→ materially different path/effect B
+→ fresh decision required
+```
+
+Current public problem surface: [Claude Code issue #96078](https://github.com/anthropics/claude-code/issues/96078), which reports file mutations occurring despite explicit `ask` rules and later discussion of alternate write transports and hook behavior.
+
+A Nakagawa Master receiver-side comment proposing this effect-level authorization contract was attempted on 2026-10-07 but GitHub returned `403 Resource not accessible by integration`; no external comment was published. This section creates zero Anthropic adoption, implementation, release, or person-Origin credit.
+
+### 27. A selected state must come from what the validator actually proved
+
+A broad category membership test does not prove that the current validator established all conditions required for a consequential selection.
+
+Keep this boundary:
+
+```text
+belongs to an allowed category
+!=
+this exact member was validated under the current migration / configuration
+```
+
+A stronger pattern is to construct a validated set from checks that actually passed:
+
+```text
+perform implementation / feature / state checks
+→ add only proven members to validated_set
+→ require selected/respected member ∈ validated_set
+```
+
+Portable regression matrix:
+
+```text
+category member has no registered implementation
+→ reject
+
+implementation exists but required feature/precondition is absent
+→ reject
+
+fully validated optional member
+→ accept only if its dedicated validation path passed
+
+new future enum/category member appears
+→ reject by default
+→ cannot become selectable until validation logic explicitly proves it
+
+validator branch changes
+→ selected-set witness changes with the checks actually performed
+```
+
+Current public problem surface: [Optimism issue #22731](https://github.com/ethereum-optimism/optimism/issues/22731), which describes a migration validator accepting a respected game type from a broad super-game category even when that exact game type is not among the implementations the migration path validates.
+
+A Nakagawa Master receiver-side comment proposing a validated-set/witness design was attempted again on 2026-10-07 and GitHub returned `403 Resource not accessible by integration`; no external comment was published. This section is a portable self-authored regression target only; it does not establish Optimism adoption, implementation, merge, release, or person-Origin recognition.
