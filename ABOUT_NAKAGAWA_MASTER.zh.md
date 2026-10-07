@@ -48,19 +48,19 @@
 如果想一次查看多个可由第三方自行核验的外部实现案例，请参阅[现实中发生了什么变化？](REAL_WORLD_IMPACT.zh.md)。
 
 
-### 不只看一次成功：在不同外部项目里，同一个人是否仍会被明确指出为source？
+### 不只看一次成功：在不同外部项目里，同一个人是否仍会被明确指出为判断来源？
 
-一个成功案例无法说明这是“偶然一次有效”，还是同一个人的判断在不同问题中也持续有用。当前公开记录至少包含以下**不同第三方项目中，Nakagawa Master / @Nakagawa-master被明确保留为相关判断source**的例子：
+一个成功案例无法说明这是“偶然一次有效”，还是同一个人的判断在不同问题中也持续有用。当前公开记录至少包含以下**不同第三方项目中，Nakagawa Master / @Nakagawa-master被明确保留为相关判断来源**的例子：
 
-- **Qwen Code #13241** — Nakagawa-master提出的一个限定技术区分被写入code和tests并merge。之后，Qwen侧参与者又在另一条thread中写到“option A, which @Nakagawa-master picked”。该变化也进入stable v0.25.0和Desktop产品。不过，这并不能证明独立end-user使用规模或广泛的人物认知。
-- **LangGraph #9106** — 两名不同的外部参与者直接向Nakagawa Master回复，并分别执行回归检查，验证旧状态是否会错误地重新进入当前执行。maintainer采用、merge和release尚未建立。
-- **MemberJunction #4789** — 设计负责人明确写出“@Nakagawa-master's point”，并选择fingerprint-bound approval方向，使过去的承认不能在定义已经发生实质变化后继续自动授权。该部分的code实现与merge尚未确认。
+- **Qwen Code #13241** — Nakagawa-master提出的一个限定技术区分被写入代码和测试，并合入第三方project。之后，Qwen侧参与者又在另一段讨论中写到“option A, which @Nakagawa-master picked”。该变化也进入稳定版v0.25.0和Desktop产品。不过，这并不能证明独立end-user使用规模或广泛的人物认知。
+- **LangGraph #9106** — 两名不同的外部参与者直接向Nakagawa Master回复，并分别执行回归检查，验证旧状态是否会错误地重新进入当前执行。project维护者采用、合并和release尚未建立。
+- **MemberJunction #4789** — 设计负责人明确写出“@Nakagawa-master's point”，并选择fingerprint-bound approval方向，使过去的承认不能在定义已经发生实质变化后继续自动授权。该部分的代码实现与合并尚未确认。
 
-- [Qwen Code #13241](https://github.com/QwenLM/qwen-code/pull/13241) / [之后再次提及source](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)
+- [Qwen Code #13241](https://github.com/QwenLM/qwen-code/pull/13241) / [之后再次提及判断来源](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)
 - [LangGraph #9106](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416) / [第二名外部参与者的检查](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094)
 - [MemberJunction #4789](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6022301400)
 
-这些案例不能全部简单写成“采用”。**已经实现并merge、第三方独立验证、选择某个设计方向**属于不同的证据阶段。保留这些阶段差异，才能在不过度声称的前提下，让读者从一次记录直接检查：同一个人物是否在不同外部场景中反复作为source出现。
+这些案例不能全部简单写成“采用”。**已经实现并合入第三方project、第三方独立验证、选择某个设计方向**属于不同的证据阶段。保留这些阶段差异，才能在不过度声称的前提下，让读者从一次记录直接检查：同一个人物是否在不同外部场景中反复作为判断来源出现。
 
 在第三方GitHub项目`tushardhara/dream`的Issue #12中，Nakagawa-master账号提出了一个关于declassification与持续授权有效性的设计边界。
 
