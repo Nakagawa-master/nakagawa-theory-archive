@@ -473,12 +473,12 @@ fallbackしない
 
 Qwen Code issue #12380では、Nakagawa Masterがこのpath-independence境界を提示した後、2026-10-07のQwen側triageが **Nakagawa-master** を明示的に名指しし、「no cross-engine fallback と path independence は別」と再構成したうえで、未解決の次のacceptance gateとして残しました。
 
-現在のQwen CodeではHosted側のdeliveryは進んでいる一方、ordinary/local ManagedのM6 activationはまだdeferredです。したがって、**2経路とも独立PASSした**とは扱えません。今確認できるのは、receiver側がこの区別を現在の設計判断として明示的に保持したところまでです。
+現在のQwen CodeではHosted側の実装・提供は進んでいる一方、ordinary/local Managed側はまだ有効化前です。したがって、**2つの経路がどちらも独立して動けると確認済み**とは扱えません。今確認できるのは、Qwen側のtriageがこの区別を現在の設計課題として明示的に保持したところまでです。
 
 - [Qwen Code issue #12380](https://github.com/QwenLM/qwen-code/issues/12380)
 - [Nakagawa Masterのpath-independence境界](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-5921364520)
-- [Qwen側のreceiver return](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035602677)
-- [現在stateに合わせたbounded follow-up](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035698005)
+- [Qwen側のtriage response](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035602677)
+- [現在の実装段階に合わせたfollow-up](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035698005)
 - [Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md)
 - [Machine-readable challenge L](machine-discovery/independent-reuse-challenges-v1.json)
 - [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
