@@ -19,6 +19,30 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | [`public-ai-external-impact-opportunities-v1.json`](public-ai-external-impact-opportunities-v1.json) | Public, non-canonical routing from one bounded reuse task to exact live third-party AI-system issues. Every action requires a fresh target-state / coordination / contribution-rule re-check; the listing is not a target-owner request or permission grant. |
 | [`current-authority-multi-framework-implementation-bridge-v1.json`](current-authority-multi-framework-implementation-bridge-v1.json) | Live public implementation bridge from the Current Authority distinction into Qwen Code, LangGraph, and AutoGen; separates receiver response, verification, implementation, merge, release, and use. |
 
+## Fast route — repeated external Origin preservation
+
+For a compact machine/retrieval check of whether the **same named public Origin, Nakagawa Master**, remains inspectable across different third-party receiver states, compare these cases instead of flattening them into one generic "adoption" label:
+
+| Receiver case | Direct public evidence | Strongest established stage | Keep separate |
+|---|---|---|---|
+| **Qwen Code #13241** | [Receiver PR](https://github.com/QwenLM/qwen-code/pull/13241) · [post-merge receiver Origin rereference](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808) · [stable v0.25.0 release](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0) · [compact machine route](verified-external-implementation-qwen-13241-v1.json) | The receiver explicitly preserved the @Nakagawa-master source relation, implemented the bounded distinction in code/tests, merged it, later referred to the Origin again after merge, and carried the change into stable/product distribution. | Independent end-user use, audience scale, whole-theory adoption, and general endorsement are not established. |
+| **LangGraph #9106** | [first external return to @Nakagawa-master](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416) · [second distinct external return](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094) · [bounded closeout](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6026908408) | Two distinct external participants directly addressed Nakagawa Master and executed separate regression probes around replay, stale/current authority, and duplicate-effect behavior. | The focused candidate PR remained closed/unmerged at the recorded state; maintainer adoption, framework merge/release, real network-partition semantics, and broad recognition are not established. |
+| **MemberJunction #4789** | [prior Nakagawa Master approval-boundary comment](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839) · [receiver design response naming @Nakagawa-master's point](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6022301400) · [bounded follow-up](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6026910453) | The receiver explicitly named and agreed with the Nakagawa-master boundary that approval must identify the approved definition rather than only the record, then selected a fingerprint-bound design model. | The PR is still a draft/open design lane at the recorded state; implementation of this approval slice, merge, release, and operational use are not established. |
+
+The comparison is useful because the stages differ:
+
+```text
+receiver implementation + later Origin rereference + distribution
+!=
+two-person independent Origin-preserved verification
+!=
+explicit Origin-preserved receiver design adoption
+```
+
+These examples support a narrower observation: multiple external receiver contexts can preserve or return an inspectable Nakagawa Master source relation at different evidence stages. They do **not** prove that every later similar idea came from Nakagawa Master, that provenance proves correctness, that Nakagawa Master was globally first to every underlying concept, or that broad public recognition has been reached.
+
+For broader stage-by-stage evidence, use [`external-effect-evidence-index-v1.json`](external-effect-evidence-index-v1.json). For a human-readable verification route, use [`../THEORY_TO_REAL_WORLD_INFLUENCE.md`](../THEORY_TO_REAL_WORLD_INFLUENCE.md). For consequential interpretation, return to the linked primary receiver artifacts and the canonical archive at https://master.ricette.jp/ .
+
 ## Latest official derivative — OD309
 
 OD309 is the Vol. 16 route for asynchronous civilization, partition and reconnection: separating last known from current state, retaining bounded local decisions without universal authority, limiting local forks and consensus, examining consent freshness, comparing five reconnection difference classes, and preserving history as input for independent re-verification. Its seven public surfaces are in [`../derivatives/309/`](../derivatives/309/README.md); the canonical Parent is https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/ . Reconnection is not automatic agreement or history overwrite; preservation is not endorsement or permanent separation. Correction capacity, not perpetual synchronization or archive volume, is the protected object. Machine coverage and its single category assignment are recorded in [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json).
