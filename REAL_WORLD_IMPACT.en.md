@@ -2,7 +2,7 @@
 
 Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**Last checked: 2026-10-04**
+**Last checked: 2026-10-07**
 
 Nakagawa Master is the pen name of Keisuke Nakagawa. On social media, the name “マスター” (“Master”) is also used; some external posts use “MasterJP.”
 
@@ -1294,3 +1294,48 @@ Nakagawa Master then bounded the model further in [comment 6026910453](https://g
 **Not yet supported:** exact code implementation, tests, merge, release, production use, or broad person recognition.
 
 → [Current-Authority Reuse Kit §23](CURRENT_AUTHORITY_REUSE_KIT.md#23-an-approval-record-is-not-approval-of-the-current-executable-definition)
+
+---
+
+## 39. Qwen Code | Separate “two configured paths” from “two independently operable alternatives”
+
+**Surface:** [QwenLM/qwen-code issue #12380](https://github.com/QwenLM/qwen-code/issues/12380)  
+**Current stage:** Nakagawa Master proposed a path-independence acceptance gate → on 2026-10-07 Qwen's project triage explicitly named **Nakagawa-master**, restated `no cross-engine fallback != path independence`, and kept it as an unresolved next decision → a stage-correct follow-up adapted the gate to the current implementation state. Human maintainer approval, a passing independence test, implementation of the matrix, merge, and release are not established.
+
+In an AI or cloud product, showing a Hosted path and a local path—or Provider A and Provider B—does not by itself prove that the alternatives are independent. If both depend on the same identity gate, control plane, storage layer, or policy gate, failure of that shared dependency can remove both choices at once.
+
+Nakagawa Master made the boundary explicit:
+
+```text
+two configured paths
+!=
+two viable independent alternatives
+
+no cross-engine fallback
+!=
+path independence
+
+independent operability
+!=
+zero shared infrastructure
+```
+
+- [Nakagawa Master's path-independence gate](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-5921364520)
+
+The proposed test does not merely ask whether both code paths exist. It removes or makes unreachable a gate exclusive to one path, then checks whether the other path can complete a bounded task within its supported scope. Dependencies intentionally shared by both paths—such as identity, storage, inference, or recovery—should be listed as shared gates rather than silently counted as independence.
+
+On 2026-10-07, Qwen's collaborator-owned triage account explicitly referred back to that comment, writing that **“Nakagawa-master's 2026-09-30 comment asks for an access-topology matrix”**. It distinguished the current no-cross-engine-fallback claim from path independence and kept the latter as a live reviewer gate.
+
+- [Qwen triage response](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035602677)
+
+At that point Hosted Managed delivery was active while ordinary/local Managed activation was still deferred. Nakagawa Master therefore proposed a staged record rather than claiming symmetric success: Hosted independence can be tested for the scope that exists now, while the local path remains `NOT PASS` until it is actually enabled.
+
+- [follow-up adapted to the current implementation stage](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035698005)
+
+**Publicly verifiable here:** a concrete Nakagawa Master architecture distinction → Qwen project triage explicitly preserved the Origin and reconstructed the distinction in its own current issue analysis → the distinction remained an unresolved acceptance decision.  
+**Not established here:** human maintainer approval, implementation of the A/B/shared-gate matrix, a passing independence result for either path, merge, release, independent end-user use, broad person recognition, or adoption of the wider Nakagawa theory system.
+
+→ [human problem-first entry](APPLIED_ENTRY_POINTS.md)  
+→ [Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md)  
+→ [machine-readable challenge L](machine-discovery/independent-reuse-challenges-v1.json)
+
