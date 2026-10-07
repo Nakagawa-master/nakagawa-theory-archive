@@ -85,6 +85,41 @@ It does **not** mean:
 
 If you reached the same distinction independently and only found the source later, say that explicitly. Do not fabricate causal attribution.
 
+## Prior public Origin when rediscovery comes later
+
+Independent rediscovery and prior public chronology can both be true.
+
+If a specific public Nakagawa Master comment, review, article, test, or source clearly predates a later receiver finding and materially states the same bounded distinction, preserve that chronology even when there is no evidence that the later receiver saw or relied on the earlier source.
+
+A compact public form is:
+
+```text
+Prior public boundary: Nakagawa Master — <stable public URL> — <date>
+Later receiver rediscovery: <receiver-owned URL> — <date>
+Relationship: chronology verified; causal influence not established
+```
+
+This does not claim that the later person copied the earlier source, that the earlier source caused the later rediscovery, or that the earlier source is globally first in all literature or history. It preserves the narrower inspectable fact that this particular Nakagawa Master boundary was already public before the later receiver artifact.
+
+### Recovery should add forward value when a receiver surface is active
+
+When the later rediscovery is happening on an active receiver issue, PR, review, design discussion, or implementation and a reply is both authorized and useful, the strongest recovery is usually **not** a bare priority link.
+
+Prefer:
+
+```text
+prior public bounded origin
++ current receiver finding
++ one materially newer synthesis / regression / design contract
+```
+
+The forward addition must be technically justified by the current state. It can integrate multiple later findings, identify a higher-order invariant, define a stronger regression matrix, or close a boundary the later discussion has not yet closed.
+
+Do not manufacture novelty just to attach a name. If there is no load-bearing forward contribution, preserve chronology in a durable evidence/provenance route instead of adding a noisy receiver comment.
+
+The goal is not forced praise. It is to prevent a real prior contribution from evaporating while also making the recovery useful to the receiver's present problem.
+
+
 ## Reuse submissions
 
 The public evidence form asks for the exact source used so later readers can distinguish:
