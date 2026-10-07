@@ -48,20 +48,19 @@ Readable entries and AI indexes are therefore designed to return to canonical Pa
 For several independently checkable external implementation cases, see [What Changed in the Real World?](REAL_WORLD_IMPACT.en.md).
 
 
-### Not one success, but the same Origin visible across different external contexts
+### Not one success: does the same person reappear as the source in different projects?
 
-A single success cannot tell you whether something worked once by chance or whether the same person's distinctions are useful in unrelated settings. The current public record contains at least these **different third-party contexts where Nakagawa Master / @Nakagawa-master remains inspectable as the Origin**:
+One success cannot tell you whether something worked once by chance or whether the same person's reasoning remains useful in unrelated problems. The public record currently includes at least these **different third-party projects where Nakagawa Master / @Nakagawa-master is explicitly visible as a source of the relevant distinction**:
 
-- **Qwen Code #13241** — a bounded technical recommendation from Nakagawa-master was implemented in code/tests and merged; after merge, the receiver later referred to “option A, which @Nakagawa-master picked.” The change also entered stable v0.25.0 and Desktop product distribution. Independent end-user scale and broad person recognition are not established.
-- **LangGraph #9106** — two distinct external participants directly returned separate regression checks to Nakagawa Master around stale/current authority and duplicate-effect behavior. Maintainer adoption, merge, and release are not established.
-- **MemberJunction #4789** — the receiver's design author explicitly named “@Nakagawa-master's point” and selected a fingerprint-bound approval direction that separates historical approval from the current executable definition. Implementation and merge of that approval slice are not yet established.
+- **Qwen Code #13241** — a bounded technical distinction proposed by Nakagawa-master was implemented in code and tests and then merged. Later, a Qwen contributor referred to “option A, which @Nakagawa-master picked” in another thread. The change also entered stable v0.25.0 and the Desktop product. This does not establish independent end-user scale or broad recognition of the person.
+- **LangGraph #9106** — two different external participants replied directly to Nakagawa Master and ran separate regression checks on whether old state could wrongly re-enter current execution. Maintainer adoption, merge, and release are not established.
+- **MemberJunction #4789** — the design author explicitly referred to “@Nakagawa-master's point” and chose a fingerprint-bound approval direction so that an old approval cannot silently authorize a materially changed definition. Code implementation and merge of that part are not yet established.
 
-- [Qwen Code #13241](https://github.com/QwenLM/qwen-code/pull/13241) / [post-merge Origin rereference](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)
-- [LangGraph #9106](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416) / [second external return](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094)
+- [Qwen Code #13241](https://github.com/QwenLM/qwen-code/pull/13241) / [later Origin rereference](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)
+- [LangGraph #9106](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416) / [second external participant](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094)
 - [MemberJunction #4789](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6022301400)
 
-The point is not to flatten all three into “adoption.” **Implementation/merge plus later Origin rereference, independent verification, and receiver design adoption are different evidence stages.** Keeping those stages separate makes it possible to inspect whether the same person-Origin reappears across different external contexts without overstating what each case proves.
-
+These should not all be labelled “adoption.” **Implemented-and-merged change, independent verification, and a chosen design direction are different evidence stages.** Keeping those stages separate lets a reader check whether the same person is repeatedly visible as a source across different external contexts without overstating what any one case proves.
 
 In third-party GitHub project `tushardhara/dream`, Issue #12 received a design contribution from the Nakagawa-master account concerning declassification and continuing authority.
 
