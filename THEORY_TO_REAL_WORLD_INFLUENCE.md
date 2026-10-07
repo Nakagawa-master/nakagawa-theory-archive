@@ -829,6 +829,22 @@ About five hours later, participant `sadricfilip` added a separate Windows deskt
 
 The participant did not name Nakagawa Master or claim that the earlier comment caused the incident report. This therefore supports **second-person technical restatement / problem-class carry inside the same receiver surface**, not Person-Origin preservation, unique causation, product adoption, or implementation. No successful override, retry, token exchange, or Azure scan is claimed in that report.
 
+On 2026-10-07, Nakagawa Master directly reconnected that later incident to the earlier public boundary and advanced the design beyond a chronology link. The stronger contract treats **authorization provenance and authorization reachability** as separate but jointly necessary facts:
+
+```text
+which policy / authority denied the action
++ which authority class could change that decision
++ whether the current actor can actually satisfy that authority
++ where that authority can be exercised
+=
+the recovery state shown to the user
+```
+
+- [Nakagawa Master Origin-recovery and reachability synthesis](https://github.com/openai/codex/issues/50826#issuecomment-6029881891)
+
+That follow-up is a new Nakagawa-side proposal, not receiver adoption. The prior Origin is now directly recoverable on the live receiver thread, while the later independent incident is integrated into a stronger non-looping recovery contract. Receiver acknowledgment, implementation, release, operational use, and later person-Origin return remain unestablished.
+
+
 ### A separate public reproduction carried the current-authority distinction into a reusable artifact
 
 A different chain shows technical carry without explicit person attribution.
@@ -863,6 +879,23 @@ The reported control keeps LangGraph's replay behavior but uses a stable busines
 
 The attribution boundary is important: the XBSTACK repository links issue #9185 but does **not** name Nakagawa Master, and the participant did not explicitly state that Nakagawa caused the repository update. The timing and matching technical distinction support a public technical-carry observation; they do not establish unique causation, person-Origin preservation, upstream LangGraph adoption, or endorsement of a broader theory.
 
+Nakagawa Master later returned to the live issue with the earlier public Origin linked directly and integrated the independent reproduction into a higher-order four-layer contract:
+
+```text
+logical operation identity
+!=
+execution generation
+!=
+current authority state
+!=
+external-effect receipt / truth
+```
+
+- [Nakagawa Master Origin-recovery and four-layer recovery contract](https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-6029886841)
+
+The forward synthesis makes two failure modes jointly testable: replay may preserve the same business-operation identity without authorizing a fresh external effect, and a late result from an older execution generation may remain truthful evidence without gaining authority to overwrite current state. This is still a Nakagawa-side proposal layered over independent receiver evidence; it does not establish LangGraph maintainer adoption, merge, release, or person-Origin rereference.
+
+
 ### A financial configuration failure independently exposed the same presentation-versus-authority boundary
 
 In [Expensify issue #95750](https://github.com/Expensify/App/issues/95750), Nakagawa Master warned against treating client-side eligibility to show a Pay action as current authority to execute a payment. The concrete acceptance case was intentionally stronger than UI visibility: render Pay while authorized, revoke the relevant permission or account access before submission, then require the server to refuse the stale action with no payment side effect.
@@ -888,6 +921,27 @@ After the blocker appeared, Nakagawa Master returned that three-layer boundary t
 - [Nakagawa Master blocker follow-up](https://github.com/Expensify/App/issues/102967#issuecomment-5990865266)
 
 This case therefore establishes a **later independent external failure consistent with a previously stated responsibility boundary, followed by a new bounded intervention on the live blocker**. It does not yet establish that Expensify adopted the Nakagawa boundary, that the source caused the fix, or that the blocker is resolved.
+
+The reimplementation then produced a new receiver-side decision signal. On 2026-10-07, the author reported that testing left two practical directions: block bank-account setup for an admin who cannot access the existing workspace account, or allow the admin to add/use another bank without replacing the workspace preferred account, which appeared to require backend support.
+
+- [Receiver reimplementation decision signal](https://github.com/Expensify/App/issues/95750#issuecomment-6029885297)
+
+Nakagawa Master fresh-read the current rework and returned a stronger responsibility split:
+
+```text
+may pay this report using funding source B
+!=
+may attach B as the workspace reimbursement bank
+!=
+may replace workspace preferred bank A
+```
+
+- [Nakagawa Master payment-source / workspace-configuration synthesis](https://github.com/Expensify/App/issues/95750#issuecomment-6030052263)
+
+The proposal is to make payer-scoped funding-source selection and workspace reimbursement-bank configuration separate consequential operations, with current actor-to-funding-source authority checked at submit time. If the product still intends any eligible admin to pay with an authorized source, simply preventing that admin from adding a source would narrow the product capability rather than prove the original responsibility boundary fixed.
+
+This remains a live design response, not evidence that Expensify adopted the split, changed backend behavior, merged the rework, or restored the feature safely in production.
+
 
 ### A design distinction survived a receiver-side issue split while the person-Origin became less visible
 

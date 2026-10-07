@@ -900,6 +900,50 @@ Evidence boundary: PR #49951 is real merged receiver implementation of sender-co
 For the broader conceptual source, [OD307](derivatives/307/human-entry.md) separates continuity of lineage from legitimate inheritance of authority. Section 18 is a practical, non-canonical regression translation of that boundary; the Codex issue does not by itself prove the whole theory.
 
 
+#### A real approval wait needs a real request
+
+A later observation on Codex #50887 adds a recovery-UX boundary. One participant reported that an initial authorized advisory delivery succeeded, while a later follow-up was denied; the assistant then told the user to approve the action even though no visible/actionable approval request was verified.
+
+- [Independent recovery-UX observation](https://github.com/openai/codex/issues/50887#issuecomment-6029720547)
+- [Nakagawa Master typed authorization-state follow-up](https://github.com/openai/codex/issues/50887#issuecomment-6030057217)
+
+That suggests the handoff result should distinguish at least:
+
+```text
+AUTHORIZED(grant_id, scope, expiry / retry policy)
+
+AWAITING_USER_APPROVAL(
+  approval_request_id,
+  exact action,
+  user-reachable approval surface
+)
+
+DENIED_NO_TRANSFERABLE_GRANT(required authority, supported recovery route)
+DENIED_POLICY_TERMINAL(policy / reason)
+DENIED_SCOPE_MISMATCH(existing grant, mismatch)
+```
+
+The assistant should say “please approve” only for `AWAITING_USER_APPROVAL` when a real request ID and user-reachable first-party control exist. A review rejection that created no such request is a denial/recovery state, not an invisible approval wait.
+
+Portable regression:
+
+```text
+review rejects delegated action
++ no approval request exists
+→ report denial or missing transferable grant
+→ do not direct the user to an approval control that does not exist
+
+review creates exact request R for action A
+→ R is visible/reachable to the user
+→ user decision creates a scoped grant for A
+
+R or its control is unavailable on the current client
+→ report authorization-reachability failure
+→ do not pretend approval is currently actionable
+```
+
+This follow-up remains a proposal. It does not establish Codex adoption or a working cross-agent approval UI.
+
 ### 19. The user really approved it — but recording “Approved” is treated as unsafe content
 
 A different failure can happen even when the user's decision is already known.
@@ -1682,3 +1726,137 @@ validator branch changes
 Current public problem surface: [Optimism issue #22731](https://github.com/ethereum-optimism/optimism/issues/22731), which describes a migration validator accepting a respected game type from a broad super-game category even when that exact game type is not among the implementations the migration path validates.
 
 A Nakagawa Master receiver-side comment proposing a validated-set/witness design was attempted again on 2026-10-07 and GitHub returned `403 Resource not accessible by integration`; no external comment was published. This section is a portable self-authored regression target only; it does not establish Optimism adoption, implementation, merge, release, or person-Origin recognition.
+
+
+### 28. Approval is an effect-authority state machine, not a durable boolean
+
+A genuine approval can still become stale or be consumed twice if a durable workflow treats it as ambient state. Keep these identities separate:
+
+```text
+decision identity
+!=
+execution-generation identity
+```
+
+For each consequential effect, bind authority to:
+
+```text
+effect_id
++ canonical arguments / resource digest
++ run / continuation identity
++ principal / policy revision
+```
+
+A useful state model is:
+
+```text
+proposed
+→ approved
+→ reserved(execution_generation)
+→ effect_outcome_unknown | committed(receipt)
+→ consumed
+
+or
+
+proposed / approved
+→ rejected | revoked | expired | superseded
+```
+
+#### Portable regression matrix
+
+```text
+approve effect E
+→ atomically reserve one execution generation before the side effect
+→ retry of the same generation cannot mint a second grant
+
+external side effect may have happened but activity result is lost
+→ state becomes UNKNOWN
+→ reconcile external truth
+→ UNKNOWN is not permission to execute again
+
+reconciliation proves ABSENT
+→ revalidate current principal / policy / resource state
+→ only then may a genuinely new generation be minted
+
+partial acceptance approves E1 but not E2
+→ only E1 can reserve
+→ modifying E1 changes its canonical digest and requires a new decision
+
+late G1 completion after G2 / supersession
+→ may be recorded for truth/accounting
+→ cannot silently mutate the current effect state
+```
+
+#### Current public problem surface
+
+[PydanticAI issue #5536](https://github.com/pydantic/pydantic-ai/issues/5536) discusses HITL approval state, durable workflow retries and partial acceptance. Nakagawa Master first separated a historical approval receipt from current execution authority in [comment 5677864497](https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-5677864497), and later separated decision identity from decision cardinality / partial acceptance in [comment 5862191897](https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-5862191897).
+
+As the thread later developed store-as-authority, args/run binding, reserve/consume ordering and an ordinary retry double-execution case, Nakagawa Master reconnected the earlier public Origin and synthesized the effect-authority state machine above in [comment 6029884686](https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-6029884686).
+
+The later discussion is not assumed to have been caused by the earlier Nakagawa comments. This section records chronology plus a reusable forward contract; it does not establish maintainer adoption, implementation, merge, release, or person-Origin rereference.
+
+### 29. Recovery needs operation identity, execution generation, current authority and effect truth
+
+A replay-capable workflow can preserve the same business operation while re-entering execution. That does not make every re-entry equivalent.
+
+```text
+logical operation identity
+!=
+execution generation / attempt
+!=
+current authority state
+!=
+external-effect receipt / truth
+```
+
+A recovery envelope can expose:
+
+```text
+logical_operation_id
++ checkpoint / task identity
++ execution_generation
++ current graph generation / supersession marker
++ authority revision or callback
++ external-effect receipt state
+```
+
+#### Portable regression matrix
+
+```text
+same business operation is replayed
+→ logical operation ID remains stable
+→ each actual re-entry has a distinct execution-generation identity
+
+external outcome is UNKNOWN
+→ reconciliation allowed
+→ new external write not authorized
+
+reconciliation proves ABSENT
+→ current authority is re-evaluated before another dispatch
+
+generation G1 completes after G1 was terminalized or G2 became current
+→ G1 result may remain observable
+→ cannot overwrite G2/current state or recreate authority
+
+receipt says COMMITTED
+→ reconstruct/return prior result
+→ do not dispatch the effect again
+
+authority is revoked during recovery
+→ logical operation may remain the same
+→ execution stops
+```
+
+#### Current public receiver evidence
+
+In [LangGraph issue #9185](https://github.com/langchain-ai/langgraph/issues/9185), Nakagawa Master separated logical action identity from current authority after recovery in [comment 5978907038](https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-5978907038).
+
+A later independent participant reproduced the timeout/replay failure and published a separate XBSTACK fixture using stable operation identity plus reconciliation. The public fixture records two Tool attempts while preserving one provider write, and its interpretation separately rechecks current authorization after proving the prior effect absent.
+
+- [Independent reproduction](https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-5981507756)
+- [Independent recovery-boundary restatement](https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-5981790977)
+- [XBSTACK public fixture](https://github.com/xbstack/langgraph-timeout-resume-side-effect-repro/commit/b169787769dd3b3492b2870cd758bd2dfc7e52f0)
+
+The XBSTACK artifact does not name Nakagawa Master, and causal source influence is not inferred. Nakagawa Master later linked the prior Origin directly and advanced the combined evidence into the four-layer contract above in [comment 6029886841](https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-6029886841).
+
+This establishes an inspectable prior Origin, later independent public reproduction, and a current Nakagawa forward synthesis. It does not establish LangGraph maintainer adoption, implementation of this envelope, merge, release, or later receiver person-Origin return.
