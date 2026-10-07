@@ -2,7 +2,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**最終確認: 2026-10-04**
+**最終確認: 2026-10-07**
 
 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）は、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
 
@@ -45,7 +45,7 @@
 
 ### 現在の公開証拠スナップショット
 
-- このページには **34の番号付き外部作用事例**を収録しています。
+- このページには **39の番号付き外部作用事例**を収録しています。
 - GitHub全体の `Nakagawa-master` comment検索では多数の候補surfaceが返りますが、検索hit自体は第三者反応・採用・実装として数えません。
 - 本ページへ収録するのは、第三者response、独立確認、code / tests / document change、merge、release、deployment等を公開リンクで段階別に確認できる事例です。
 - したがって「mentionが多い」ことではなく、**第三者が何を変え、その変更がどこまで進んだか**を主要証拠として扱います。
@@ -1454,3 +1454,48 @@ Nakagawa Masterはさらに[comment 6026910453](https://github.com/MemberJunctio
 
 → [一般向け問題入口](APPLIED_ENTRY_POINTS.md#承認したあと中身が変わったのにまだ承認済みで実行してよいのか)  
 → [Current-Authority Reuse Kit §23](CURRENT_AUTHORITY_REUSE_KIT.md#23-an-approval-record-is-not-approval-of-the-current-executable-definition)
+
+---
+
+## 39. Qwen Code｜「経路が2つある」と「片方がなくてももう片方が独立して動ける」を分ける
+
+**対象:** [QwenLM/qwen-code issue #12380](https://github.com/QwenLM/qwen-code/issues/12380)  
+**現在段階:** Nakagawa Masterがpath-independenceのacceptance gateを提示 → 2026-10-07のQwen project triageが **Nakagawa-master** を明示的に名指しし、`no cross-engine fallback != path independence` を再構成して未解決の次の判断として保持 → 現在の実装段階に合わせたfollow-up済み。人間maintainer承認、独立性testのPASS、実装・merge・releaseは未確認。
+
+AIやクラウド製品では、Hosted版とlocal版、Provider AとProvider Bのように複数経路が表示されていても、そのことだけでは独立性は証明されません。両方が同じidentity gate、control plane、storage、policy gateなどに依存していれば、その共有点のfailureで両方が同時に使えなくなることがあります。
+
+Nakagawa Masterは、issue上で次の境界を明示しました。
+
+```text
+two configured paths
+!=
+two viable independent alternatives
+
+no cross-engine fallback
+!=
+path independence
+
+independent operability
+!=
+zero shared infrastructure
+```
+
+- [Nakagawa Masterのpath-independence gate](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-5921364520)
+
+提案した確認方法は、単に「両方のcode pathが存在するか」を見るのではなく、一方の経路だけが必要とするgateを外す／到達不能にしたときに、もう一方がその経路の対応範囲で必要な仕事を最後まで完了できるかを確認し、同時に両経路が意図的に共有するidentity / storage / inference / recovery等のgateを明示するというものです。
+
+2026-10-07、Qwenのcollaborator-owned triage accountはこのcommentを明示的に参照し、**“Nakagawa-master's 2026-09-30 comment asks for an access-topology matrix”** と再説明しました。そのうえで、current bodyが証明しているのはcross-engine fallbackがないことまでで、path independenceはまだ別のreviewer gateだと整理し、次の判断として残しました。
+
+- [Qwen側のtriage response](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035602677)
+
+その時点ではHosted Managed側のdeliveryは進んでいましたが、ordinary/local Managed側のactivationはまだdeferredでした。Nakagawa Masterは、両方がすでに同じ強さでPASSしたと扱わず、Hosted側は現在のscopeでtestし、local側は有効化後まで `NOT PASS` のままにするstage-correctなacceptance recordへ落としました。
+
+- [現在の実装段階に合わせたfollow-up](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035698005)
+
+**公開記録から確認できること:** Nakagawa Masterの具体的なarchitecture distinction → Qwen側project triageがOriginを明示してその区別を自分の言葉で再構成 → current issueの未解決acceptance gateとして保持。  
+**まだ確認できないこと:** 人間maintainerの承認、A/B/shared-gate matrixの実装、Hosted/localいずれかの独立性PASS、merge、release、独立したend-user use、広い人物認知、QwenがNakagawa理論体系全体を採用したこと。
+
+→ [一般読者向け問題入口](APPLIED_ENTRY_POINTS.md#選択肢が2つ見えていれば片方が止まっても本当に使えるのか)  
+→ [Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md)  
+→ [machine-readable challenge L](machine-discovery/independent-reuse-challenges-v1.json)
+
