@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>止めたAIの仕事が、あとから結果を届けたら？｜体験できる実行境界</title>
+<meta name="description" content="キャンセルや通信切れで終了したAIの作業に、遅れて結果が戻ったとき。受理と過去の記録を分ける操作可能なオフライン教材。">
+<style>
+:root{color-scheme:light;--ink:#172b3a;--muted:#435568;--accent:#165e78;--line:#c5d3dd;--paper:#f5f8fb}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 system-ui,-apple-system,"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif}
+main{max-width:830px;margin:auto;padding:24px 18px 68px}h1{font-size:clamp(1.6rem,4vw,2.2rem);line-height:1.35;margin:12px 0}
+h2{font-size:1.2rem;margin:6px 0 12px}.eyebrow{color:var(--muted);font-size:.9rem}
+.lead{font-size:1.12rem;font-weight:650}.panel{margin:20px 0;padding:20px;border:1px solid var(--line);border-radius:14px;background:white}
+button{border:1px solid var(--accent);border-radius:7px;padding:11px 14px;margin:4px 5px 4px 0;background:var(--accent);color:white;font:inherit;font-weight:600;cursor:pointer}
+button.subtle{background:white;color:var(--accent)}button:focus-visible,a:focus-visible{outline:3px solid #e4a800;outline-offset:3px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}@media(max-width:600px){.grid{grid-template-columns:1fr}}
+.state{padding:12px;border-radius:8px;background:#edf3f7}.state strong{display:block;font-size:1.12rem;overflow-wrap:anywhere}
+.result{padding:14px;background:#e9f3f6;border-left:5px solid var(--accent);white-space:pre-wrap}
+.result.warn{background:#fff0e8;border-left-color:#a3402d}
+small,.small{font-size:.88rem;color:var(--muted)}a{color:#115a82}
+code{font-size:.9em;background:#edf3f7;padding:1px 4px;border-radius:4px}
+ol{padding-left:1.4em}li{margin:6px 0}
+</style>
+</head>
+<body>
+<main>
+<p class="eyebrow">中川マスター（Nakagawa Master）／実例から試す公開教材</p>
+<h1>止めたAIの仕事が、あとから「終わりました」と答えたら？</h1>
+<p class="lead">画面ではキャンセルしたはずの処理。ところが、別の場所で動いていたAIが遅れて結果を返す。その結果を「成功」として受け入れたら、停止したはずの仕事の回答や予算が書き換わりかねません。</p>
+<p>問題は「結果が届いたか」ではなく、<strong>その結果を、今の記録に反映してよいか</strong>です。結果が届いた事実と、結果を採用した事実は別です。次の操作で違いを確かめられます。</p>
+
+<section class="panel" aria-labelledby="lab-title">
+<h2 id="lab-title">操作してみる（通信不要）</h2>
+<p class="small">最初は作業が動いています。「結果A」を送ると、実行中なら一度だけ受理します。先にキャンセルや回収を行うと、その後に来た古い結果は記録へ反映しません。</p>
+<div class="grid" aria-live="polite">
+<div class="state"><span class="small">作業の現在状態</span><strong id="lifecycle">実行中</strong></div>
+<div class="state"><span class="small">正式に受理した結果</span><strong id="accepted">なし</strong></div>
+<div class="state"><span class="small">受理済みの使用量（教材上の数値）</span><strong id="tokens">0</strong></div>
+<div class="state"><span class="small">受理を示す記録（receipt）</span><strong id="receipt">なし</strong></div>
+</div>
+<p><strong>① まず何を起こしますか？</strong></p>
+<div>
+<button type="button" id="cancel" class="subtle">作業をキャンセル</button>
+<button type="button" id="recover" class="subtle">通信切れで作業を回収</button>
+</div>
+<p><strong>② 遅れた結果／再送を届けてみる</strong></p>
+<div>
+<button type="button" id="send-a">結果Aを送る（使用量100）</button>
+<button type="button" id="send-b" class="subtle">異なる結果Bを送る（使用量1,050）</button>
+</div>
+<div>
+<button type="button" id="reset" class="subtle">最初から試す</button>
+</div>
+<div id="result" class="result" role="status" aria-live="polite">まずキャンセルしてから結果Aを送ってみてください。次にリセットし、結果Aを2回続けて送って比較できます。</div>
+</section>
+
+<section class="panel">
+<h2>何が違ったのでしょうか</h2>
+<p><strong>実行中に最初の結果を採用した場合：</strong>結果を正式に保存し、その結果に結びついた受理記録を残します。同一結果の再送は、二重採用せず「もう受理した」と答えられます。</p>
+<p><strong>キャンセル・回収が先に確定した場合：</strong>古い作業があとから「終わった」と知らせても、その作業に新しい書き込み権限はありません。回答や予算を更新せず、古いリースからの結果として断ります。</p>
+<p><strong>一度受理した後で違う結果が届いた場合：</strong>同じ作業の「同じ再送」とはみなしません。異なる回答や使用量で、確定した結果を上書きさせません。</p>
+<p>ここで守っているのは、単純に「遅い結果は全部捨てる」ことではありません。<strong>いつ、何を正式に受け取ったのか、その結果だけを再確認できること</strong>です。</p>
+</section>
+
+<section class="panel">
+<h2>これは実際に直った問題ですか？</h2>
+<p>土台はQwen Codeの公開PR <a href="https://github.com/QwenLM/qwen-code/pull/13241">#13241</a> です。すでに終わったAgent Hostの結果と、正式に受理されたHost結果を区別する修正が、テスト・マージ・安定版への掲載まで進みました。後の関連issueでは、受け手自身が <a href="https://github.com/QwenLM/qwen-code/issues/13238">採用した選択肢を @Nakagawa-master に結び付けて再言及</a>しています。</p>
+<p>これは<strong>実際のQwen Codeを操作している画面ではなく、公開修正の中心的な条件を単純化した教育用シミュレーター</strong>です。Qwen Codeのすべての状態遷移・HTTPエラー・予算処理を再現するものではありません。他のAI製品が同じ問題を抱えると主張するものでもありません。使用量の100と1,050は差を見やすくする教材上の値です。</p>
+<p><a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md">似た問題を実装・レビューで確認するための再利用資料</a> ／ <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md">第三者側の変更記録</a> ／ <a href="https://master.ricette.jp/">公式理論アーカイブ・原典</a> ／ <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ABOUT_NAKAGAWA_MASTER.md">中川マスター／Origin</a></p>
+<p class="small">このページは外部通信、Cookie、追跡コード、入力保存を行いません。ブラウザ内だけで動きます。修正対象や反例を確認する際は必ずリンク先の一次資料と現在のコードを参照してください。 <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/416">似た現場の例・反例を寄せる</a></p>
+</section>
+</main>
+<script>
+"use strict";
+const el=(id)=>document.getElementById(id);
+function initial(){return {phase:"active",accepted:null,tokens:0,receipt:false};}
+let current=initial();
+function next(prev,event){
+  const s={...prev};let type,explanation;
+  if(event==="reset"){return {state:initial(),type:"RESET",explanation:"新しい例を開始しました。"};}
+  if(event==="cancel"||event==="recover"){
+    if(s.phase!=="active"){return {state:s,type:"NO_CHANGE",explanation:"この例の作業はすでに終了しています。最初から試してください。"};}
+    s.phase=event==="cancel"?"cancelled":"recovered";
+    type=event==="cancel"?"CANCELLED":"RECOVERED";
+    explanation="作業は終了扱いになりました。ここから旧作業の結果を受け入れることはできません。";
+  }else{
+    const payload=event==="a"?"A":"B";
+    const tokens=event==="a"?100:1050;
+    if(s.phase==="cancelled"||s.phase==="recovered"){
+      type="STALE_LEASE";
+      explanation="遅れて結果"+payload+"が届きましたが、終了した作業には新しい結果を反映する権限がありません。記録は変わりません。";
+    }else if(s.receipt&&s.accepted===payload){
+      type="ALREADY_APPLIED";
+      explanation="前に受理した結果"+payload+"と同じ再送です。受理済みの記録を確認し、回答・使用量を二重に保存しません。";
+    }else if(s.receipt){
+      type="CONFLICT";
+      explanation="確定済みの結果と別内容です。『同じ結果の再送』ではないため、上書きしません。";
+    }else{
+      s.phase="completed";s.accepted=payload;s.tokens=tokens;s.receipt=true;
+      type="ACCEPTED";
+      explanation="実行中に結果"+payload+"を一度だけ受理し、結果と受理記録を結び付けました。";
+    }
+  }
+  return {state:s,type,explanation};
+}
+function draw(out){
+  current=out.state;
+  const names={active:"実行中",completed:"受理済み・終了",cancelled:"キャンセル済み",recovered:"回収済み"};
+  el("lifecycle").textContent=names[current.phase];
+  el("accepted").textContent=current.accepted?"結果"+current.accepted:"なし";
+  el("tokens").textContent=current.tokens.toLocaleString("ja-JP");
+  el("receipt").textContent=current.receipt?"確定済みの結果に対応":"なし";
+  const result=el("result");
+  result.textContent=out.type+" — "+out.explanation;
+  result.classList.toggle("warn",["STALE_LEASE","CONFLICT"].includes(out.type));
+}
+[["cancel","cancel"],["recover","recover"],["send-a","a"],["send-b","b"],["reset","reset"]]
+  .forEach(([id,action])=>el(id).addEventListener("click",()=>draw(next(current,action))));
+</script>
+</body>
+</html>
