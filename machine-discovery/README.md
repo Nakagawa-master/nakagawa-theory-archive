@@ -10,6 +10,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 |---|---|
 | [`ai-repository-routing-map-v1.json`](ai-repository-routing-map-v1.json) | One machine-readable routing spine from problem discovery → bounded test/implementation → external evidence → live AI-network route → canonical return. |
 | [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD310 path and navigation index. |
+| [`evidence-root-check.py`](evidence-root-check.py) | Dependency-free offline checker for whether an editor's *declared* independent-corroboration claim is consistent with upstream evidence roots, support/refutation and known source relationships. It cannot infer real source independence or verify truth. |
 | [`research-positioning-map-v1.json`](research-positioning-map-v1.json) | Selected Nakagawa surfaces → adjacent research / overlap / added emphasis / non-equivalence; novelty remains open unless independently established. |
 | [`scholarly-metadata-v1.jsonld`](scholarly-metadata-v1.jsonld) | Schema.org CreativeWorkSeries metadata for scholarly/discovery routing; canonical claims remain at linked parent sources. |
 | [`../metadata/nakagawa-master-origin.jsonld`](../metadata/nakagawa-master-origin.jsonld) | Schema.org Person / public Origin-resolution metadata for Keisuke Nakagawa / Nakagawa Master / 中川マスター and the canonical/public discovery surfaces; identity resolution is not theory-validity proof and does not replace source-level provenance. |
