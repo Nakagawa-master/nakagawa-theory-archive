@@ -40,6 +40,7 @@ def audit(payload):
         refuting_roots = set()
         qualifications = 0
         unknown_roots = 0
+        unresolved_refuters = 0
         url_to_root = {}
         errors = []
         for index, source in enumerate(sources, 1):
@@ -58,6 +59,8 @@ def audit(payload):
             url_to_root[url] = root
             if root is None or relation == "unknown":
                 unknown_roots += 1
+                if stance == "refutes":
+                    unresolved_refuters += 1
                 continue
             if stance == "supports":
                 positive_roots.add(root)
@@ -73,8 +76,8 @@ def audit(payload):
                 errors.append("independent confirmation claimed, but fewer than two supporting upstream roots")
             if not independent_positive_roots:
                 errors.append("no source marked independently observed positive evidence")
-            if refuting_roots:
-                errors.append("contrary source present; reconcile before claiming unqualified independent confirmation")
+            if refuting_roots or unresolved_refuters:
+                errors.append("contrary source present (possibly unresolved); reconcile before claiming unqualified independent confirmation")
         if errors:
             status = "BLOCK"
         else:
@@ -86,6 +89,7 @@ def audit(payload):
             "support_root_count": len(positive_roots),
             "independent_observation_root_count": len(independent_positive_roots),
             "refuting_root_count": len(refuting_roots),
+            "unresolved_refuting_sources": unresolved_refuters,
             "qualifying_sources": qualifications,
             "source_records_without_known_root": unknown_roots,
             "issues": sorted(set(errors)),
@@ -137,6 +141,12 @@ def self_test():
         "relation": "independent_observation", "stance": "refutes",
     }]
     assert audit({"claims": [contrary]})["blocked"] == 1
+    unresolved = dict(SAMPLE["claims"][1])
+    unresolved["sources"] = [*unresolved["sources"], {
+        "url": "https://example.org/untraced-refutation", "root_id": None,
+        "relation": "unknown", "stance": "refutes",
+    }]
+    assert audit({"claims": [unresolved]})["blocked"] == 1
     no_claim = dict(SAMPLE["claims"][0])
     no_claim["independent_confirmation_claimed"] = False
     assert audit({"claims": [no_claim]})["blocked"] == 0
@@ -146,7 +156,7 @@ def self_test():
         pass
     else:
         raise AssertionError("missing required boolean accepted")
-    print("self-test: 6 PASS", file=sys.stderr)
+    print("self-test: 7 PASS", file=sys.stderr)
 
 
 def main():
