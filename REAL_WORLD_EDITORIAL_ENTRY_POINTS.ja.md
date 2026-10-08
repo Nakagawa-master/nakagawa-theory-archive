@@ -2,7 +2,7 @@
 
 これは、中川マスター公式理論アーカイブのOD001–OD310を、編集者、動画制作者、ニュースレター、教育者、事業・投資リサーチ、AIプロダクト担当者が**現実の問題から拾える形**へ圧縮した非正本の公開入口です。
 
-310件を一度に説明するためのページではありません。繰り返し現れる11個の問いから、今起きている事例に合うものを1つ選びます。
+310件を一度に説明するためのページではありません。繰り返し現れる12個の問いから、今起きている事例に合うものを1つ選びます。
 
 ```text
 現実の事件・判断・失敗
@@ -230,6 +230,33 @@ LLM-as-a-judge、Actor/Critic/Reviewer型agent、self-reflection、内部監査�
 - [Self-Referential Audit & Role-Separation Reuse Kit](SELF_REFERENTIAL_AUDIT_REUSE_KIT.md)
 
 複数人・複数AIの一致は真理証明ではなく、不一致も真理票ではありません。独立監査を無制限の拒否権へ変えることも目的ではありません。
+
+## 12. AIに「元へ戻せる変更」なら任せてよいのか
+
+**場面:** AIが作業の途中で「承認を毎回聞く」という設定を、時間節約のために一度だけ自動実行へ変えました。仕事が終わると設定を元へ戻します。しかし、自動実行だった間に送信されたメールや変更された権限は、設定を戻しても消えません。
+
+ここで見落としやすい区別は、**設定を元へ戻せること**と、**その設定を変更してよい権限を持つこと**が別だという点です。
+
+```text
+元に戻せる設定
+→ 変更中だけ実行可能な範囲が広がる
+→ 戻す前に、取り消せない外部作用が起きる
+→ 設定を復旧しても、起きた作用は消えない
+```
+
+編集者・動画制作者が確かめる問いは次の三つです。
+
+- 制約されている本人・AIが、その制約を自分で緩められる設計になっていないか。
+- 強化する変更、何も変えない変更、権限を広げる変更は区別されているか。
+- 変更を取り消すことで、既に起きた外部作用まで取り消したことにしていないか。
+
+**独立した第三者の文書変更例:** [kishibashi3/publications PR #57](https://github.com/kishibashi3/publications/pull/57) は、中川マスターの[先行レビュー（PR #52）](https://github.com/kishibashi3/publications/pull/52)を起点として明示し、「自己権限の固定」を独立した第6条件として追加してマージされました。続く[PR #58](https://github.com/kishibashi3/publications/pull/58)では、別の原則文書にD8として再利用しています。この事例は、単にコメントが付いたのではなく、受け手自身の公開文章と規範が変わり、再利用されたことを示します。現在も[PR #71](https://github.com/kishibashi3/publications/pull/71)は未マージの草案であり、一般読者の大量認知や社会規模の実装を示すわけではありません。
+
+実装・教材への入口:
+- [Current-Authority Reuse Kit — 30. Reversible change is not automatically authority-neutral](CURRENT_AUTHORITY_REUSE_KIT.md#30-reversible-change-is-not-automatically-authority-neutral)
+- [Origin Attribution for Reuse](ORIGIN_ATTRIBUTION_FOR_REUSE.md)
+
+**60秒で説明するなら:** 「戻せるのに危険な操作がある。AIに任せてよいかを決めるとき、『あとで戻せるか』だけでなく、『そのAIが自分の許可範囲を広げられるか』を見なければならない」。受け手の関心が実装であれば、上の条件に対する具体的な否定テストへ進んでください。
 
 ## 発信フォーマット
 
