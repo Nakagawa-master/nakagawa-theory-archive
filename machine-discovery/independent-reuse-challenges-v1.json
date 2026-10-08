@@ -596,6 +596,37 @@
         "counterexample where extra checks make valid authorized work persistently impossible without improving any protected boundary"
       ],
       "evidence_boundary": "Pydantic AI #9209 proposes a context-policy extension; Nakagawa Master's linked intervention adds temporal/delegation approval-lineage and positive/negative tests from publicly inspected in-flight hook code. This is a proposal and a public independent verification opportunity, NOT an established exploit, maintainer agreement, implementation, release, independent reuse, or person-Origin recognition. The conceptual origin route is OD307 and its parent, but the external work is not claimed to have read or adopted that theory."
+    },
+    {
+      "id": "AA-quote-claim-relation-and-evidence-roots",
+      "distinction": "an authentic exact quotation != proof that the quotation supports the proposed claim; multiple URLs != multiple independent evidence roots",
+      "upstream_adopted_distinction": {
+        "origin": "Nakagawa Master",
+        "external_receiver_adoption": "https://github.com/022740mix-spec/AI-News/issues/124#issuecomment-5823549498",
+        "implemented_policy": "https://github.com/022740mix-spec/AI-News/pull/131",
+        "boundary": "The external editorial project adopted source-root independence. This does not establish that a different project has adopted the new quote-polarity test."
+      },
+      "current_cross_context_test_target": {
+        "project": "MusicNerdAPI question research (independent project)",
+        "source": "https://github.com/xdjs/MusicNerdAPI/pull/24",
+        "public_proposal": "https://github.com/xdjs/MusicNerdAPI/pull/24#issuecomment-6051625287",
+        "code": "https://github.com/xdjs/MusicNerdAPI/blob/3d7b454e85636a9315351ee220150c672f9bb5ab/lib/questionResearch/assessResearchEvidence.ts",
+        "existing_negative_quote_fixture": "https://github.com/xdjs/MusicNerdAPI/blob/3d7b454e85636a9315351ee220150c672f9bb5ab/lib/questionResearch/__tests__/assessResearchEvidence.test.ts"
+      },
+      "test": "For a concrete person/credit/edition claim, provide one authentic original that positively supports it, another that explicitly refutes or qualifies it, and two distinct URLs deriving from one shared publication. Verify that literal-quote validity is preserved separately from semantic support direction and that syndicated copies never silently count as two independent confirmations.",
+      "positive_evidence": [
+        "the exact original text and source/revision remain retrievable",
+        "claim-support relation distinguishes supports, refutes, qualifies, unknown, with an example where an authentic negative quote cannot establish a positive credit",
+        "artist and precise release/recording/role scope match before asserting a specific personnel credit",
+        "where independent corroboration is claimed, source roots are counted rather than just canonical URLs; a sole adequate original may still suffice",
+        "tests include negative and positive controls plus a common-root two-URL case"
+      ],
+      "useful_negative_evidence": [
+        "evidence that a narrower existing checker already proves semantic relation and prevents the negative-quote false-positive condition",
+        "a documented non-fit because no output path describes quoted material as support or independent corroboration",
+        "a demonstrable bounded per-claim editorial check sufficient without automatic lineage graph"
+      ],
+      "evidence_boundary": "As of submission, the MusicNerd review is an externally posted C0 proposal only. No third-party response, test change, merge, release, direct human use, or Nakagawa Origin return has been verified on that receiver. The reported source-test hole is static conditional acceptance of an incorrect model verdict, not proof that a live model produces it."
     }
   ],
   "evidence_boundary": [
