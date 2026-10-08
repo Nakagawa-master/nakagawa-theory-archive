@@ -854,7 +854,7 @@ PR authorは公開返信で **“Addressed the outstanding points”** と述べ
 ## 25. Codex Autonomy Runner｜失敗しただけでは「境界を試した証拠」にならない
 
 **対象:** [Innlab-idi/codex-autonomy-runner#59](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59)  
-**現在状態:** 一般不変条件としての明示採用 → durable evidence contract → ContainmentGate VERIFIED → WorkerExecutor / live transport / contained CheckExecutor merge → 初回real workerで実運用 → 新しいCheckExecutor欠陥をfail-closedで発見 → bounded repair承認済み
+**現在状態:** receiverが段階別evidenceの不変条件を明示採用 → durable contractとContainmentGate検証 → worker/transport/check executorマージ → **2回の実ワーカー試行はいずれも公開前に停止** → 01B・01C修正マージ、**01C後の実隔離検査は未実施／未確認**
 
 `Nakagawa-master` の公開コメントは、sandbox / authority-boundary probeについて、
 
@@ -914,11 +914,18 @@ verdict
 - [human-owner authorization for CHECK-EXECUTOR-01B-RUNNER](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013944031)
 - [bounded materialization contract](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013945634)
 
-01Bは、trustedな `GIT_OPTIONAL_LOCKS=0` をCheckExecutor側で固定し、HOST inputからのoverrideを認めず、既存のread-only / network-disabled / credential-denied / exact-argv / one-shot境界を維持するrepairとして定義されています。元のreal-worker実行権限は1/1を消費済みであり、**第二のreal workerは現在許可されていません**。
+01B修正は [PR #65](https://github.com/Innlab-idi/codex-autonomy-runner/pull/65) として実装・マージされました。ただし、実行と公開を自動承認するものではありません。その後、**人間が新たに許可した2回目のreal worker**が実行され、対象ファイルとfocused checkは通過しましたが、隔離環境内で行う公開用Git検査が終了コード129となったため、**ステージング・push・PR公開は拒否**されました。2回目の実行権限も消費済みです。
+
+- [2回目の実worker結果と公開拒否](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6046729053)
+- [隔離環境のGit trust bridgeの受け手側診断](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6046865408)
+
+受け手はその後、[別途人間が承認した01C作業](https://github.com/Innlab-idi/codex-autonomy-runner/issues/67)を開始しました。WindowsのCodex隔離環境がGit実行のために付けた `safe.directory` 設定を、内側の環境scrubberが消していたためです。修正はHOSTの環境変数を丸ごと信頼せず、**検証済みの当該repositoryに必要なGit trust設定だけをrunner側で再構成**し、不要な設定を拒否し、optional Git locking禁止を維持します。[PR #68](https://github.com/Innlab-idi/codex-autonomy-runner/pull/68) は**2026-10-08にマージ**されました。受け手の報告ではfocused 21テスト、全体329テストが成功し、1テストはスキップされています。これらは受け手側のテスト報告であり、この公開ページ自身が再実行したものではありません。
+
+**読者にとって大切な結論：** AIワーカーが動き、内容も正しく見えても、公開してよい証拠がそろったとは限りません。今回、2回の実行はいずれも公開前に止まり、その調査から第三者による追加実装が生まれました。**01C後の実隔離Git検査、3回目のワーカー実行、成果物公開は未承認・未確認**です。マージだけで実環境の問題が解決したとは言いません。
 
 **公開記録から確認できること:** origin comment → receiverによる一般不変条件としての明示的再叙述・将来保持宣言 → durable evidence contract → formal gate review → ContainmentGate VERIFIED → WorkerExecutor / transport / CheckExecutorのmerge → 同じevidence discipline下でのreal worker実行 → fail-closedした実結果から次のbounded defectとrepair contractが生まれたこと。
 
-**まだ確認できないこと:** runner全体や理論体系全体がNakagawa-master由来であること、下流実装すべてのexclusive causation、第二real workerによる01B修復後の再実証、production adoption、広いend-user use、後日のprompt-freeな人物Origin再参照、大規模な人間認知。
+**まだ確認できないこと:** runner全体や理論体系全体がNakagawa-master由来であること、下流実装すべてのexclusive causation、01C merge後のreal contained Git check成功や第三のworker実行、production adoption、広いend-user use、後日のprompt-freeな人物Origin再参照、大規模な人間認知。
 
 このケースで使われている「各段階を独立した証拠で支え、後段の観測で前段を埋めない」という構造は、[人類子孫型AI文明論・第8論｜認識基盤・証拠系譜・敵対的情報耐性論](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)の公開問題領域と接続できます。これはreceiverが第8論全体を採用したという主張ではなく、今回の実例を再検証可能なcanonical sourceへ戻すための接続です。
 
