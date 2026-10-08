@@ -168,7 +168,14 @@
         "a narrower contract proving all counted sources are structurally independent by construction",
         "counterexample showing lineage tracking adds no useful distinction under the tested workflow",
         "evidence that the proposed tracking cost exceeds correction benefit and a narrower boundary is sufficient"
-      ]
+      ],
+      "offline_checker": {
+        "path": "machine-discovery/evidence-root-check.py",
+        "readme": "machine-discovery/README.md#runnable-check--independent-evidence-roots",
+        "what_it_proves": "Checks that reviewer-supplied source-root relations and stances do not contradict a claimed independent corroboration.",
+        "what_it_does_not_prove": "It does not verify real source independence, claim truth, semantic quote support, editor approval, or external adoption.",
+        "run": "python3 machine-discovery/evidence-root-check.py --self-test"
+      }
     },
     {
       "id": "J-research-positioning-prior-work",
