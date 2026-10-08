@@ -867,7 +867,7 @@ human owner随后只授权了**一次**real pilot worker。worker process可靠�
 
 **实际含义：** worker启动并生成看似正确的结果，不代表已经取得发布许可。两次真实worker尝试均在发布前停止；对真实失败的诊断又促成了receiver自己实现并合并后续修复。**01C合并后的真实隔离Git检查、第三次worker执行及成果物发布仍未获授权或证实**。不能把代码合并等同于生产环境问题解决。
 
-**公开可确认：** origin comment → receiver把该区分明确重述并保留为一般不变量 → durable evidence contract → formal gate review → ContainmentGate VERIFIED → WorkerExecutor / transport / CheckExecutor merge → real worker在该evidence discipline下实际执行 → 一个真实fail-closed结果进一步暴露下一处bounded defect与repair contract。
+**公开可确认：** Nakagawa-master分阶段证据边界 → receiver明确采用并固化为durable contract → receiver实际验证gate → runner实现合并 → **两次分别获得人类授权的真实worker尝试均在发布前停止** → receiver自行诊断并合并01B、01C修复。01C后的真实受限检查、后续worker或发布仍未验证。
 
 **尚未确认：** 整个runner或整个理论体系都源自Nakagawa-master、所有后续代码的exclusive causation、01C合并后的真实受限Git检查成功或第三次worker执行、production adoption、大范围end-user use、之后不经提示的person-Origin再次引用、或大规模人类认知。
 
