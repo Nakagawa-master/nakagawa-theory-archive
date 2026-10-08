@@ -949,6 +949,32 @@ This follow-up remains a proposal. It does not establish Codex adoption or a wor
 
 [Codex PR #51467](https://github.com/openai/codex/pull/51467) was independently merged on 2026-10-06. It added payload-minimizing submission diagnostics: thread/submission identifiers, operation kind, parent/root turn identifiers, reviewer and policy categories, and Guardian denied-action retry status. Its [core submission change](https://github.com/openai/codex/pull/51467/files) is useful for reconstructing *where a request was submitted* without putting message content or filesystem paths into the diagnostic record. It is **not** a scoped authorization-grant protocol or a fix for delegated approval.
 
+#### Partial shipped fixes versus a reachable cross-Task approval
+
+Two further real Codex mainline changes make it possible to specify the *missing* test more precisely:
+
+- [PR #51683](https://github.com/openai/codex/pull/51683), merged 2026-10-07, revalidates authorization while the Guardian reviewer is reserved, rolls back obsolete review attempts, and keeps earlier valid context. **Within one authoritative review lineage**, this is substantive stale-authority hardening. It is not proof that parent-task permission can be consumed by a distinct delegated task.
+- [PR #51808](https://github.com/openai/codex/pull/51808), also merged 2026-10-07, transmits a bounded `openai/userVerificationReason` in **MCP user-verification** replies, including `userCancelled`, `interrupted`, and `approvalUnavailable`. The source explicitly labels this diagnostic rather than proof or an authorization decision. An MCP verification reason must not be read as a universal Guardian rejection code or a grant.
+
+After the [earlier publicly recorded Nakagawa distinction](https://github.com/openai/codex/issues/50769#issuecomment-5986370673) and [specific reachable-approval proposal](https://github.com/openai/codex/issues/50887#issuecomment-6030057217), a [separate issue #51834](https://github.com/openai/codex/issues/51834) again documented parent → delegated-Task consent recognition and unreachable confirmation. Whether its author encountered the earlier Nakagawa work is unknown. [The source-linked follow-up on #51834](https://github.com/openai/codex/issues/51834#issuecomment-6055317025) now proposes one joined, negative-and-positive integration matrix:
+
+```text
+PARENT OWNER: approves exact action A / destination D / scope S
+DELEGATED TASK: receives transcript quote only
+  => DENY: quoted text is not an authenticated grant
+HOST: validates existing scoped grant or emits a specific missing-grant result
+  => if fresh user decision is possible, return a real request ID + reachable UI
+  => if not, report a blocked path; do not pretend a request is waiting
+GUARDIAN: recheck current policy, grant and destination state at action time
+  => revoked, mismatched, expired => DENY
+EFFECT: on legitimate grant, dispatch at most once
+  => distinguish send accepted, destination receipt, and returned status
+```
+
+The test should *not* mix the MCP user-verification reply metadata from #51808 into the general approval channel as though they were interchangeable protocols. No bypass of automatic review is implied.
+
+**Attribution and evidence limit:** the two code changes are confirmed OpenAI-owned merged improvements, but the public sources do not establish that they were caused by Nakagawa Master. The issue comment is a newly proposed regression, not confirmed product acceptance. Independent [third-party semantic use of the earlier #50769 distinction](https://github.com/openai/codex/issues/50769#issuecomment-5987001957) is separately established and should not be erased or upgraded into OpenAI-code adoption.
+
 That distinction matters in the newer independent [2026-10-08 report on #50887](https://github.com/openai/codex/issues/50887#issuecomment-6051897331). A user approved a bounded status inquiry in the parent conversation; the task received only a forwarded transcript, and an attempted send was denied because the transcript was not trusted authority. The absence of an action-specific approval control was separately reported. This is another observed case, not proof that the reporter read or adopted the earlier Nakagawa Master comments.
 
 A receiving developer can now test two independent contracts, rather than treating better logs as permission to send:
