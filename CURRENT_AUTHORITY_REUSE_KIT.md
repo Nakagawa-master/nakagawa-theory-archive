@@ -945,6 +945,37 @@ R or its control is unavailable on the current client
 
 This follow-up remains a proposal. It does not establish Codex adoption or a working cross-agent approval UI.
 
+#### A shipped diagnostic surface is not a shipped authorization bridge
+
+[Codex PR #51467](https://github.com/openai/codex/pull/51467) was independently merged on 2026-10-06. It added payload-minimizing submission diagnostics: thread/submission identifiers, operation kind, parent/root turn identifiers, reviewer and policy categories, and Guardian denied-action retry status. Its [core submission change](https://github.com/openai/codex/pull/51467/files) is useful for reconstructing *where a request was submitted* without putting message content or filesystem paths into the diagnostic record. It is **not** a scoped authorization-grant protocol or a fix for delegated approval.
+
+That distinction matters in the newer independent [2026-10-08 report on #50887](https://github.com/openai/codex/issues/50887#issuecomment-6051897331). A user approved a bounded status inquiry in the parent conversation; the task received only a forwarded transcript, and an attempted send was denied because the transcript was not trusted authority. The absence of an action-specific approval control was separately reported. This is another observed case, not proof that the reporter read or adopted the earlier Nakagawa Master comments.
+
+A receiving developer can now test two independent contracts, rather than treating better logs as permission to send:
+
+```text
+DIAGNOSTIC CONTRACT
+- correlate parent/root turn and delegated submission identities
+- record reviewer outcome and whether an actionable approval request was created
+- keep raw message text, secrets, command payloads, and private paths out of logs
+- a "completed" submission is not proof the destination received a message
+
+AUTHORIZATION / EFFECT CONTRACT
+- authentic current user decision + exact thread/action/content scope
+  -> verify current grant at the actual sending boundary
+  -> dispatch once -> verify destination receipt separately
+- copied approval prose without transferable grant -> refuse; do not bypass review
+- refusal without an approval_request_id and reachable first-party control
+  -> report denial/unreachable path, not "please approve"
+- duplicate retry / changed destination / revoked scope
+  -> reuse a valid result only when exact effect identity matches;
+     otherwise refuse or request fresh authority
+```
+
+There is also a distinct **effect-truth** question when the tool says a call was cancelled, timed out, or failed. A separate [multi-connector report on #50769](https://github.com/openai/codex/issues/50769#issuecomment-6040007905) describes inconsistent reported outcomes; [Nakagawa Master's follow-up](https://github.com/openai/codex/issues/50769#issuecomment-6040383613) separated user authorization, tool dispatch, external effect, result delivery, and user-visible classification. In a regression, read back the destination before concluding that an interrupted reply means *no effect occurred*. If destination state is unknown, reconcile it; do not automatically issue the effect again. For the full retry/reconciliation model, see [Section 29](#29-recovery-needs-operation-identity-execution-generation-current-authority-and-effect-truth).
+
+**Evidence boundary:** #51467 is a real product-side merge by others; it does not demonstrate that any Nakagawa Master proposal was adopted by OpenAI. The Oct 08 reproduction is independent; this portable test is a public, non-canonical bridge, not verified third-party implementation or broad human person-Origin recognition.
+
 ### 19. The user really approved it — but recording “Approved” is treated as unsafe content
 
 A different failure can happen even when the user's decision is already known.
