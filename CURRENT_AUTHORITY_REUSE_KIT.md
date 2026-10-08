@@ -2064,4 +2064,64 @@ The validation outcome should distinguish *bad input*, *missing provenance*, *cu
 
 **Public evidence and current maturity:** A [Pydantic AI discussion of supported operation transport and worker-context reconstruction](https://github.com/pydantic/pydantic-ai/issues/9978) includes a concrete [Render compatibility implementation](https://github.com/ojusave/pydantic-ai/blob/23095f108cff702fa8f0d034e76a8fd13eb4ea33/src/pydantic_ai_harness/pydantic_ai_harness/render/_compat.py). The [bounded negative-test proposal](https://github.com/pydantic/pydantic-ai/issues/9978#issuecomment-6049713565) extends the public discussion to cross-run and modified-approval payloads. **It is a proposal, not a reported Pydantic AI acceptance, code change, exploit or release.** This applied example connects the kit's current-authority distinction to remote context reconstruction; it does not imply the external project used this kit or derived its implementation from Nakagawa Master.
 
-For underlying canonical theory and citation practice, begin with [Origin Attribution for Reuse](ORIGIN_ATTRIBUTION_FOR_REUSE.md), then follow its precise original-source path. 
+For underlying canonical theory and citation practice, begin with [Origin Attribution for Reuse](ORIGIN_ATTRIBUTION_FOR_REUSE.md), then follow its precise original-source path.
+
+
+### 32. A storage cap is not authority to forget accepted work
+
+An AI-agent gateway can accept a request, start a task, wait for a human approval, and let the caller continue the same session later. To control disk use, its developers may want to keep only the most recent N records. That seems like routine cleanup until the records being deleted are the very evidence the gateway uses to recognize **an accepted request, a retry, or an authorized session continuation**.
+
+The practical distinction is:
+
+```text
+capacity limit / history cleanup
+  != revocation of an accepted task
+  != permission to run the same old request again
+  != expiry of an otherwise live session
+
+new work may be refused for lack of capacity
+  while previously accepted work still has to be recognized
+```
+
+**Three different lifetimes must be designed separately.**
+
+- **Accepted work:** The reservation/idempotency key, its content identity, and any pending task/approval must remain recoverable while the task is active. A crash between reservation and actual dispatch does not turn an earlier acceptance into permission to create a second effect.
+- **Session continuation:** A completed task may have a session that is still active. Removing the context-to-session authorization mapping solely because its last task finished can make a valid next message fail as `unknown context`.
+- **Historical replay protection:** After a declared retention window, a caller may retry an old request identifier. Either preserve sufficient bounded evidence to reject/reconcile it, or explicitly publish the limit of the deduplication guarantee. Quietly accepting a previously executed request as new work is not an acceptable *undocumented* outcome.
+
+**A portable admission shape** for gateways that keep a per-caller reservation file (illustrative logic, not a ready-to-paste implementation):
+
+```text
+inside the same durable per-caller transaction:
+    prior = find_existing_request_key(caller, target, message_id)
+    if prior exists:
+        if content_digest_changed: return CONFLICT
+        return EXISTING_RESERVATION_OR_TASK  # even if capacity is full
+
+    if active_reservation_budget_is_full:
+        return NOT_ACCEPTED_CAPACITY        # no new session, post, or task
+
+    persist_new_reservation_and_content_identity
+outside the transaction:
+    create_or_recover_session_and_dispatch_idempotently
+    persist_resulting_task_identity
+```
+
+Checking the capacity outside the reservation transaction permits concurrent requests to exceed the active budget. Deleting pending entries to force compliance instead orphans previously accepted operations. Backpressure is therefore part of a *real* finite-cap design, not a weakness to conceal. Retention of completed data is a separate policy; it should not silently rewrite the semantics of a current task or session.
+
+#### Minimum adversarial regression
+
+| Setup | Request or transition | Observable required result |
+| --- | --- | --- |
+| Active task capacity reached | Repeat the same key and content | Recover the prior reservation/task; no second dispatch |
+| Active task capacity reached | Submit a new key | Explicit non-acceptance; no new task, session, or side effect |
+| Crash after reservation, before task ID is recorded | Retry the same key under quota pressure | Recover the half-complete acceptance; do not mint new work |
+| Old task completed; its chat session remains open | Continue using the returned context ID | Continue only under the same still-valid caller/agent/session binding |
+| Terminal-record retention expires | Retry an old message ID | Documented expiry, rejection, reconciliation, or explicitly delimited replay guarantee; never call this guaranteed indefinite deduplication |
+| Human approval is pending when the budget fills | Accept unrelated new work / prune records | Previously accepted approval and task identity remain intact; new admissions are refused if needed |
+
+This matrix separates **capacity**, **current operational authority**, **retry identity**, and **evidence of effect**. Passing a unit test that merely counts array length cannot prove these conditions. Session titles should likewise distinguish sessions without requiring persistent display of unreviewed, possibly sensitive first-message text.
+
+**Concrete public source and evidence limit.** The open [Qwen Code #13649 design decision](https://github.com/QwenLM/qwen-code/issues/13649) concerns default A2A messages that each create a chat session. In the still-open [PR #13583](https://github.com/QwenLM/qwen-code/pull/13583) at reviewed head `d2e725bb`, `external-intake.ts` stores request reservations in `tasks`, verifies caller/agent ownership through `contexts`, and creates/posts a session after reservation. Independent reviewers there already identified unbounded growth and warned about naive eviction. The separate [Nakagawa Master acceptance proposal](https://github.com/QwenLM/qwen-code/issues/13649#issuecomment-6056279614) adds transactional capacity refusal, replay-expiry semantics, and live-approval/context regressions. At the time of this public note, that proposal is **a posted design intervention only**: no maintainer decision, implementation, merge, third-party use, or adoption of this kit has been verified.
+
+The general lesson can be tested in AI-agent systems, workflow queues, and human-approval services, but a result in one stack does not prove another stack has the same defect. Inspect the actual record ownership and expiry model first.
