@@ -572,6 +572,30 @@
         "non-fit showing that the tested setting is presentation-only and cannot change consequential authority"
       ],
       "evidence_boundary": "The Local Operator records provide bounded third-party implementation/release examples, while kishibashi3/publications provides a separate receiver-owned reader-facing and normative reuse chain. This challenge is self-authored portability infrastructure: publishing it does not establish cross-receiver adoption of the kit, broad reader recognition, universal applicability, or endorsement of the full theory corpus."
+    },
+    {
+      "id": "Z-temporal-delegation-approval-lineage",
+      "distinction": "restrictive policy verdict order != continued authority of an earlier approval after delegation, resume, target or policy change",
+      "reproduction_kit": "CURRENT_AUTHORITY_REUSE_KIT.md#28-approval-is-an-effect-authority-state-machine-not-a-durable-boolean",
+      "official_derivative": "derivatives/307/README.md",
+      "canonical_source": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-14-self-modification-identity-kernel-lineage/",
+      "external_problem_example": "https://github.com/pydantic/pydantic-ai/issues/9209",
+      "current_public_design_contribution": "https://github.com/pydantic/pydantic-ai/issues/9209#issuecomment-6049883469",
+      "adjacent_problem": "https://github.com/pydantic/pydantic-ai/issues/6968",
+      "test": "In a non-confidential agent or tool-approval workflow, obtain approval for an exact actor, tenant, target, delegated scope, effective validated arguments and policy conditions; suspend/resume after one materially changes while the new rule still evaluates to ASK. Test whether the old approval is incorrectly carried into a different consequential operation, and whether the unchanged verified positive control still executes.",
+      "positive_evidence": [
+        "old approval history remains truthful but does not authorize a materially different resumed actor, tenant, delegated scope, target, effective arguments or policy state",
+        "DENY remains effective after a previously approved call",
+        "the approval binding or the trusted runtime authority that vouches for it is inspectable without treating caller-supplied role labels as authenticated facts",
+        "unchanged verified subject/scope/target and applicable approval executes without repetitive prompting",
+        "a target with genuine existing platform safeguards can demonstrate a precise non-fit rather than implementing an unnecessary new permission layer"
+      ],
+      "useful_negative_evidence": [
+        "proof that the existing deferred-resume system already binds the approved effect to trusted current actor and effective args and invalidates stale grants",
+        "proof that the intended workflow can never change the authority-relevant identity, tenant, target or policy between approval and effect",
+        "counterexample where extra checks make valid authorized work persistently impossible without improving any protected boundary"
+      ],
+      "evidence_boundary": "Pydantic AI #9209 proposes a context-policy extension; Nakagawa Master's linked intervention adds temporal/delegation approval-lineage and positive/negative tests from publicly inspected in-flight hook code. This is a proposal and a public independent verification opportunity, NOT an established exploit, maintainer agreement, implementation, release, independent reuse, or person-Origin recognition. The conceptual origin route is OD307 and its parent, but the external work is not claimed to have read or adopted that theory."
     }
   ],
   "evidence_boundary": [
