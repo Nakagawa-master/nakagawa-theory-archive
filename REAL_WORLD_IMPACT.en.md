@@ -797,7 +797,7 @@ A later `Nakagawa-master` re-check recorded no remaining blocker within the earl
 ## 25. Codex Autonomy Runner | A failed operation is not evidence that the intended boundary was exercised
 
 **Surface:** [Innlab-idi/codex-autonomy-runner#59](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59)  
-**Current state:** explicit adoption as a general invariant → durable evidence contract → ContainmentGate VERIFIED → WorkerExecutor / live transport / contained CheckExecutor merged → first real worker exercised → a new CheckExecutor defect surfaced fail-closed → bounded repair authorized
+**Current state:** receiver explicitly adopted a stage-evidence invariant → durable contract and ContainmentGate verified → worker/transport/check executor merged → **two real worker attempts, both stopped before publication** → 01B and 01C fixes independently implemented and merged, **real post-01C check still unverified**
 
 A public `Nakagawa-master` comment separated four states that are easy to collapse in sandbox / authority-boundary probes:
 
@@ -857,11 +857,18 @@ Read-only diagnosis then established that the worker-created content itself was 
 - [human-owner authorization for CHECK-EXECUTOR-01B-RUNNER](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013944031)
 - [bounded materialization contract](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013945634)
 
-The 01B repair is defined to inject a trusted fixed `GIT_OPTIONAL_LOCKS=0` at the CheckExecutor boundary, reject HOST override, and preserve the existing read-only / network-disabled / credential-denied / exact-argv / one-shot boundaries. The original real-worker authorization has been consumed 1/1; **a second real worker is not currently authorized**.
+The 01B repair was implemented in [PR #65](https://github.com/Innlab-idi/codex-autonomy-runner/pull/65), without granting publication permission. After a **separate human authorization**, the receiver actually ran a **second** one-shot worker. Its target files and focused check passed, but the contained Git publication check returned code 129; the runner again **refused staging, push, or PR publication**. The second authorized attempt is consumed, not pending.
+
+- [second real worker result and publication refusal](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6046729053)
+- [receiver diagnosis of the sandbox Git trust-bridge gap](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6046865408)
+
+The receiver then opened a [separately human-authorized 01C work item](https://github.com/Innlab-idi/codex-autonomy-runner/issues/67): Git's sandbox-owned `safe.directory` trust bridge was being erased by the inner check-environment scrubber. The repair **does not blindly pass through environment variables**. It rebuilds only the exact-repository Git trust settings under the runner's control, rejects unrelated Git configuration, and keeps optional Git locking disabled. [PR #68](https://github.com/Innlab-idi/codex-autonomy-runner/pull/68) **merged on 2026-10-08**; the receiver reports 21 focused tests passing and 329 total passing, with one skipped. Those counts are receiver-reported, not tests rerun by this archive.
+
+**The key result is a distinction, not a victory label:** both actual worker attempts reached a bounded check and stopped before publication; additional receiver-owned implementation was merged as a consequence of investigating the failure. **No post-01C real contained check probe, third worker, or publication was authorized or verified.** Code merge alone does not prove the original failure is now resolved in the live sandbox.
 
 **Publicly verifiable here:** origin comment → receiver explicit restatement and preservation of the general invariant → durable evidence contract → formal gate review → ContainmentGate VERIFIED → merged WorkerExecutor / transport / CheckExecutor → real worker execution under that evidence discipline → a fail-closed real result exposing the next bounded defect and repair contract.
 
-**Not established here:** that the whole runner or theory system originates from Nakagawa-master, exclusive causation of all downstream code, a second post-repair real-worker verification, production adoption, broad end-user use, later prompt-free person-Origin rereference, or mass human recognition.
+**Not established here:** that the whole runner or theory system originates from Nakagawa-master, exclusive causation of all downstream code, a successful real contained check after the 01C merge or a third worker run, production adoption, broad end-user use, later prompt-free person-Origin rereference, or mass human recognition.
 
 The “each stage needs its own evidence; later observations must not back-fill earlier stages” structure connects to the public problem domain of [Human-Descendant AI Civilization Theory Vol. 8 — epistemic integrity, evidence lineage and hostile-information resilience](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/). This link is a reusable canonical return path, not a claim that the receiver adopted the whole theory.
 
