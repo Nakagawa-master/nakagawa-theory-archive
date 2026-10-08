@@ -1788,6 +1788,33 @@ late G1 completion after G2 / supersession
 → cannot silently mutate the current effect state
 ```
 
+#### Delegation + resume: an approval must bind to the present actor, not only the action name
+
+There is a second failure mode even when a policy merges individual rules correctly using **deny > ask > allow**. That ordering is a valid rule *within one evaluation*. It does not prove that a human approval under the earlier actor, delegated role, target or policy remains applicable to a resumed action.
+
+```text
+approved(actor A, tenant X, target T, policy revision P)
+→ delegated task is suspended
+→ context / authority state changes
+→ new evaluation still returns "ask"
+→ old approved=True is re-used
+→ action runs under a meaningfully different scope
+```
+
+**The missing dimension is approval lineage across time.** A copied/reconstructed context can preserve the historical fact that approval occurred while losing the conditions making that approval applicable. The policy cannot settle this by naming a role alone; it must establish which authority attested the role, which parent grant was delegated, what exact consequential action was approved, and whether the same scope still holds now. A stable `tool_call_id` is useful matching evidence, not sufficient by itself.
+
+A bounded reusable negative/positive test, requiring no privileged system:
+
+1. Create a harmless `deploy_to_fixture` action with role/tenant/target under a mock context-dependent `ask` rule. Approve actor A's action against tenant X, target T, revision P.
+2. Suspend, then resume with a materially different authorized subject, delegated scope, target or policy revision, so the new context rule still produces `ask`. **Assert that the old approval cannot release this different effect.**
+3. Set current policy to `deny`. **Assert that deny remains binding even when earlier approval history exists.**
+4. Resume with unchanged verified subject, target, effective validated arguments and policy conditions. **Assert that the legitimate positive control executes without needlessly repeating approval.**
+5. Separately test the argument transformation case: the displayed approval request and the effective executed arguments must match or the difference must have an explicit new authorization. Preserve the original model arguments as immutable history, not a forged replacement.
+
+**Current public engineering surface:** [Pydantic AI #9209](https://github.com/pydantic/pydantic-ai/issues/9209) proposes context-aware policies; the [verified in-flight `PermissionPolicy` hook](https://github.com/pydantic/pydantic-ai-harness/blob/38162829f37a39f2fcf41db9cd32d3e279b39db4/pydantic_ai_harness/permission_policy/_capability.py#L228-L246) accepts a prior `ctx.tool_call_approved` boolean after an `ask` verdict. The [specific temporal/delegation design test](https://github.com/pydantic/pydantic-ai/issues/9209#issuecomment-6049883469) is **only a proposal**; neither an actual bypass nor upstream adoption is established. [#6968](https://github.com/pydantic/pydantic-ai/issues/6968) independently records the distinct approved-versus-executed-arguments mismatch.
+
+**Canonical conceptual return:** [OD307 / its cited parent, Human-Descendant AI Civilization Theory 14](derivatives/307/README.md) distinguishes lineage continuity from legitimate authority inheritance. This is a narrower software-approval test translation, not an assertion that the external project follows the theory or that origin attribution establishes truth.
+
 #### Current public problem surface
 
 [PydanticAI issue #5536](https://github.com/pydantic/pydantic-ai/issues/5536) discusses HITL approval state, durable workflow retries and partial acceptance. Nakagawa Master first separated a historical approval receipt from current execution authority in [comment 5677864497](https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-5677864497), and later separated decision identity from decision cardinality / partial acceptance in [comment 5862191897](https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-5862191897).
