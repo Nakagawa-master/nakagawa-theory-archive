@@ -866,7 +866,7 @@ The receiver then opened a [separately human-authorized 01C work item](https://g
 
 **The key result is a distinction, not a victory label:** both actual worker attempts reached a bounded check and stopped before publication; additional receiver-owned implementation was merged as a consequence of investigating the failure. **No post-01C real contained check probe, third worker, or publication was authorized or verified.** Code merge alone does not prove the original failure is now resolved in the live sandbox.
 
-**Publicly verifiable here:** origin comment → receiver explicit restatement and preservation of the general invariant → durable evidence contract → formal gate review → ContainmentGate VERIFIED → merged WorkerExecutor / transport / CheckExecutor → real worker execution under that evidence discipline → a fail-closed real result exposing the next bounded defect and repair contract.
+**Publicly verifiable here:** Nakagawa-master's stage-evidence distinction → explicit receiver adoption and durable contract → independently operated gate verification → merged runner implementations → **two** human-authorized real worker attempts stopped before publication → receiver-diagnosed failures → receiver-owned 01B and 01C repairs merged. The 01C live contained probe and any later worker/publication remain unverified.
 
 **Not established here:** that the whole runner or theory system originates from Nakagawa-master, exclusive causation of all downstream code, a successful real contained check after the 01C merge or a third worker run, production adoption, broad end-user use, later prompt-free person-Origin rereference, or mass human recognition.
 
