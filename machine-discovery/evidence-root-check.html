@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>複数のURLは、本当に独立した根拠か？｜中川マスター公式理論アーカイブ・実務チェック</title>
+<meta name="description" content="3つの記事が1つの発表を写していただけかもしれない。独立確認の入力上の整合性をブラウザ内で確かめる、オフライン編集チェック。">
+<style>
+:root {color-scheme:light;--ink:#182a38;--sub:#435568;--paper:#f6f8f9;--line:#c9d3dc;--action:#174d68;--warn:#8a321f}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif}
+main{max-width:850px;margin:0 auto;padding:32px 18px 64px}a{color:#125678}
+h1{font-size:clamp(1.6rem,4.3vw,2.35rem);line-height:1.3;margin:8px 0 18px}h2{font-size:1.2rem;margin:0 0 10px}
+p{margin:8px 0 15px}.lead{font-size:1.12rem;font-weight:600}.small{font-size:.89rem;color:var(--sub)}
+.panel{background:white;border:1px solid var(--line);border-radius:12px;padding:18px;margin:18px 0}
+.row{border:1px solid var(--line);border-radius:9px;padding:13px;margin:12px 0;background:#fcfdfe}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media(max-width:640px){.fields{grid-template-columns:1fr}}
+label{display:flex;flex-direction:column;font-size:.91rem;font-weight:600;gap:4px}
+input,select{width:100%;padding:10px;border:1px solid #9aabb9;border-radius:6px;font:inherit;background:white;color:var(--ink)}
+button{background:var(--action);color:white;border:0;border-radius:7px;padding:10px 13px;font:inherit;font-weight:600;cursor:pointer}
+button.secondary{background:#e5edf1;color:var(--ink);border:1px solid #a4bac6}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #f0a400;outline-offset:2px}
+.buttons{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.row-head{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:10px}
+.row-head button{font-size:.83rem;padding:5px 10px}
+.check{display:flex;flex-direction:row;align-items:flex-start;gap:8px;margin:12px 0}
+.check input{width:auto;margin-top:6px}
+.result{border-left:5px solid var(--action);padding:10px 14px;background:#edf5f8;white-space:pre-wrap}
+.result.blocked{border-left-color:var(--warn);background:#fff0e8}
+pre{overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;background:#f1f4f7;padding:12px;border-radius:6px;font-size:.82rem}
+</style>
+</head>
+<body>
+<main>
+<p class="small">中川マスター公式理論アーカイブ ｜ 公開実務補助ツール</p>
+<h1>記事が3本あっても、根拠は1つかもしれない。</h1>
+<p class="lead">3つの報道が同じプレスリリースを転載していたら、「3つの独立した確認」にはなりません。</p>
+<p>編集者、調査者、AIシステムの開発者向けの入力チェックです。各URLの根元にある一次情報と、その資料が主張を支持・反証する関係を整理して、<strong>「独立に確認された」という主張と入力情報が矛盾していないか</strong>を判定します。</p>
+<div class="panel">
+<h2>まず例で確かめる</h2>
+<div class="buttons">
+<button type="button" id="same">例A：URLは3つ、情報源は1つ</button>
+<button type="button" class="secondary" id="independent">例B：独立した観測がある</button>
+</div>
+<p class="small">例Aは「独立確認」を拒否します。例Bは入力上の整合性を満たします。ただし実際の独立性や記事内容の正しさまで保証するものではありません。</p>
+</div>
+<section class="panel" aria-labelledby="input-title">
+<h2 id="input-title">検証する主張と、その根拠</h2>
+<label>検証対象の主張
+<input id="claim" type="text" value="この製品の性能は独立した複数の情報源で確認された" maxlength="500"></label>
+<label class="check"><input id="claimed" type="checkbox" checked><span>「独立した複数の情報源による確認」を主張している</span></label>
+<p class="small">「同一起点ID」は同じ発表・実験・文書に依存する記事に同じ値を入力します。別々に調査された一次事実には異なるIDを付けます。IDの違いだけでは現実の独立性は証明できません。</p>
+<div id="sources"></div>
+<div class="buttons">
+<button type="button" class="secondary" id="add">根拠を追加</button>
+<button type="button" id="check">判定する</button>
+</div>
+</section>
+<section class="panel" aria-labelledby="result-title">
+<h2 id="result-title">判定結果</h2>
+<div id="result" class="result" role="status" aria-live="polite">「判定する」を選択してください。</div>
+<details><summary>構造化した結果（JSON）</summary><pre id="json"></pre></details>
+</section>
+<section class="panel">
+<h2>このツールが判定しないこと</h2>
+<p>URLの内容や出典元を自動取得・検証しません。引用が本物か、引用が主張を本当に支持するか、情報源同士が実際に独立しているか、主張が正しいかは人間による確認が必要です。<strong>「入力上の整合」は、真偽の保証・掲載許可ではありません。</strong></p>
+<p>外部通信、分析タグ、Cookie、データ保存、AIへの自動送信はありません。入力はこのブラウザ内で処理されます。結果を記事へ使う前に、原資料と反証を再確認してください。</p>
+<p class="small">来歴と検証の参考：
+<a href="https://github.com/022740mix-spec/AI-News/issues/124">AI-Newsでの独立した情報源の議論</a>、
+<a href="https://github.com/022740mix-spec/AI-News/pull/131">編集規則への採用PR</a>、
+<a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/evidence-root-check.py">Python版</a>。
+公開された他者の採用例があることと、このブラウザ版が他者に採用されたことは別です。</p>
+<p><a href="https://master.ricette.jp/">中川マスター公式アーカイブ（原典）</a> /
+<a href="https://github.com/Nakagawa-master/nakagawa-theory-archive">公式GitHubアーカイブ</a></p>
+</section>
+</main>
+<script>
+"use strict";
+const byId = (id) => document.getElementById(id);
+let nextId = 0;
+function optionList(values, selected) {
+  return values.map((v) => {
+    const el = document.createElement("option");
+    el.value = v[0]; el.textContent = v[1]; el.selected = v[0] === selected;
+    return el;
+  });
+}
+function field(labelText, className, value, options) {
+  const label = document.createElement("label");
+  label.textContent = labelText;
+  const el = options ? document.createElement("select") : document.createElement("input");
+  el.className = className;
+  if (options) el.append(...optionList(options, value));
+  else { el.type = "text"; el.value = value || ""; el.maxLength = 1000; }
+  label.append(el);
+  return label;
+}
+const relations = [
+  ["primary","一次情報（この出来事の直接資料）"],
+  ["independent_observation","独立に行った観測・検証"],
+  ["derived","派生・転載・引用"],
+  ["unknown","関係不明"]
+];
+const stances = [
+  ["supports","主張を支持する"],
+  ["refutes","主張と矛盾する・反証する"],
+  ["qualifies","条件付き・限定的に支持する"],
+  ["unknown","主張との関係不明"]
+];
+function appendSource(item) {
+  const row = document.createElement("div"); row.className = "row";
+  row.dataset.key = String(++nextId);
+  const head = document.createElement("div"); head.className = "row-head";
+  const title = document.createElement("strong"); title.textContent = "根拠 " + (byId("sources").children.length + 1);
+  const remove = document.createElement("button"); remove.type = "button"; remove.className = "secondary"; remove.textContent = "削除";
+  remove.addEventListener("click", () => { row.remove(); renumber(); });
+  head.append(title, remove);
+  const fields = document.createElement("div"); fields.className = "fields";
+  fields.append(
+    field("根拠URL", "url", item.url),
+    field("同一起点ID（不明なら空欄）", "root", item.root),
+    field("資料の関係", "relation", item.relation, relations),
+    field("この主張への方向", "stance", item.stance, stances)
+  );
+  row.append(head, fields); byId("sources").append(row);
+}
+function renumber() {
+  [...byId("sources").children].forEach((row, i) => row.querySelector("strong").textContent = "根拠 " + (i+1));
+}
+function loadExample(items) {
+  byId("sources").replaceChildren(); nextId = 0; byId("claimed").checked = true;
+  items.forEach(appendSource); byId("json").textContent = "";
+  byId("result").className = "result"; byId("result").textContent = "例を読み込みました。「判定する」を選択してください。";
+}
+const vendor = {url:"https://example.org/vendor/announcement",root:"release-A",relation:"primary",stance:"supports"};
+const repost1 = {url:"https://example.org/report/one",root:"release-A",relation:"derived",stance:"supports"};
+const repost2 = {url:"https://example.org/report/two",root:"release-A",relation:"derived",stance:"supports"};
+const lab = {url:"https://example.org/lab/measurement",root:"lab-B",relation:"independent_observation",stance:"supports"};
+function audit(sources, claimed) {
+  if (!sources.length) throw Error("少なくとも1件の根拠が必要です。");
+  const positiveRoots = new Set(), independentPositive = new Set(), refutingRoots = new Set();
+  const urls = new Map(), issues = [];
+  let unknown = 0, unresolvedRefutations = 0, qualifications = 0;
+  sources.forEach((s, i) => {
+    if (!/^https?:\/\/\S+$/i.test(s.url)) throw Error("根拠 " + (i+1) + " のURLは http(s) 形式で入力してください。");
+    if (!relations.some((r) => r[0] === s.relation) || !stances.some((r) => r[0] === s.stance)) throw Error("根拠 " + (i+1) + " の分類を確認してください。");
+    const root = s.root.trim() || null;
+    if (urls.has(s.url) && urls.get(s.url) !== root) issues.push("同じURLに異なる起点IDが入力されています。");
+    urls.set(s.url, root);
+    if (!root || s.relation === "unknown") {
+      unknown++;
+      if (s.stance === "refutes") unresolvedRefutations++;
+      return;
+    }
+    if (s.stance === "supports") {
+      positiveRoots.add(root);
+      if (s.relation === "independent_observation") independentPositive.add(root);
+    }
+    if (s.stance === "refutes") refutingRoots.add(root);
+    if (s.stance === "qualifies") qualifications++;
+  });
+  if (claimed) {
+    if (positiveRoots.size < 2) issues.push("支持方向の上流情報源が2つ未満です。");
+    if (!independentPositive.size) issues.push("独立観測と明示された支持根拠がありません。");
+    if (refutingRoots.size || unresolvedRefutations) issues.push("反証方向の根拠があります。掲載前に矛盾を確認してください。");
+  }
+  return {status:issues.length?"BLOCK":"CONSISTENT_INPUT",independent_confirmation_claimed:claimed,support_root_count:positiveRoots.size,independent_observation_root_count:independentPositive.size,refuting_root_count:refutingRoots.size,unresolved_refuting_sources:unresolvedRefutations,qualifying_sources:qualifications,source_records_without_known_root:unknown,issues:[...new Set(issues)],limitation:"入力整合だけの判定。独立性・真偽・引用の意味は検証していない"};
+}
+byId("same").addEventListener("click", () => loadExample([vendor, repost1, repost2]));
+byId("independent").addEventListener("click", () => loadExample([vendor, lab]));
+byId("add").addEventListener("click", () => appendSource({url:"",root:"",relation:"unknown",stance:"unknown"}));
+byId("check").addEventListener("click", () => {
+  const items = [...byId("sources").children].map((row) => ({
+    url:row.querySelector(".url").value.trim(),root:row.querySelector(".root").value.trim(),
+    relation:row.querySelector(".relation").value,stance:row.querySelector(".stance").value
+  }));
+  const target = byId("result");
+  try {
+    const report = audit(items, byId("claimed").checked);
+    target.className = report.status === "BLOCK" ? "result blocked" : "result";
+    target.textContent = (report.status === "BLOCK" ? "判定：独立確認の主張を保留\n" : "判定：入力上は整合\n") +
+      "支持する上流根拠 " + report.support_root_count + "件／独立観測 " + report.independent_observation_root_count + "件／反証根拠 " + report.refuting_root_count + "件\n" +
+      (report.issues.length ? report.issues.join("\n") + "\n" : "") +
+      "※ 実際の独立性、根拠の真偽、引用の意味は未検証です。";
+    byId("json").textContent = JSON.stringify(report, null, 2);
+  } catch (error) {
+    target.className = "result blocked"; target.textContent = "入力エラー：" + error.message;
+    byId("json").textContent = "";
+  }
+});
+loadExample([vendor,repost1,repost2]);
+</script>
+</body>
+</html>
