@@ -7,6 +7,7 @@ This page is a public, non-canonical entry point for people and AI systems encou
 - [Who is Nakagawa Master? | Public Origin overview](ABOUT_NAKAGAWA_MASTER.en.md)
 - [What changed in the real world? | Verifiable third-party implementation and reuse](REAL_WORLD_IMPACT.en.md)
 - [Four scenes: AI, organizations, future, Origin | Story-first entry](discovery-notes/four-scenes-one-structural-view.en.md)
+- [Hands-on: a cancelled AI worker returns late — try acceptance versus mere arrival](human-translation/agent-late-result-lab.en.html) (GitHub displays HTML source; choose **Raw**, save the `.html` file, then open it in your browser; works offline).
 - [Use the archive on a real problem | Practical Use & Collaboration Entry](PRACTICAL_USE.md)
 - [Bring a real problem | Public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [Locate these theories relative to existing research | Research Positioning Map](RESEARCH_POSITIONING_MAP.md)
