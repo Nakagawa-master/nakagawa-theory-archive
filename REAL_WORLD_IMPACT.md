@@ -923,7 +923,7 @@ verdict
 
 **読者にとって大切な結論：** AIワーカーが動き、内容も正しく見えても、公開してよい証拠がそろったとは限りません。今回、2回の実行はいずれも公開前に止まり、その調査から第三者による追加実装が生まれました。**01C後の実隔離Git検査、3回目のワーカー実行、成果物公開は未承認・未確認**です。マージだけで実環境の問題が解決したとは言いません。
 
-**公開記録から確認できること:** origin comment → receiverによる一般不変条件としての明示的再叙述・将来保持宣言 → durable evidence contract → formal gate review → ContainmentGate VERIFIED → WorkerExecutor / transport / CheckExecutorのmerge → 同じevidence discipline下でのreal worker実行 → fail-closedした実結果から次のbounded defectとrepair contractが生まれたこと。
+**公開記録から確認できること:** Nakagawa-masterの段階別証拠の区別 → 受け手の明示採用とdurable contract → 受け手自身のgate検証 → runner実装のマージ → **人間が別々に承認した2回のreal worker試行がいずれも公開前に停止** → 受け手自身の欠陥診断と01B・01C修正マージ。01C後の実隔離チェック、さらなるworkerや公開は未確認。
 
 **まだ確認できないこと:** runner全体や理論体系全体がNakagawa-master由来であること、下流実装すべてのexclusive causation、01C merge後のreal contained Git check成功や第三のworker実行、production adoption、広いend-user use、後日のprompt-freeな人物Origin再参照、大規模な人間認知。
 
