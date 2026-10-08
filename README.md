@@ -128,6 +128,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - **引用・文献管理へ直接持ち込みたい:** [CITATION.cff](CITATION.cff) / [BibTeX](research-positioning/references.bib) / [scholarly JSON-LD](machine-discovery/scholarly-metadata-v1.jsonld)
 - **AI / LLM・検索システム向けの最短入口:** [llms.txt](llms.txt) / [Machine Discovery](machine-discovery/README.md) — problem route、研究位置づけ、実装証拠、原典情報を機械側から辿る
 - **すぐ使える実務チェックを見たい:** [Practical Boundary Checks](PRACTICAL_BOUNDARY_CHECKS.md) · [AI agent向け5つの回帰テスト](AI_AGENT_EXECUTION_BOUNDARY_TESTS.md)
+- **ニュースの「3つの裏付け」は本当に別々か、手元で試したい:** [根拠の独立性を判定するブラウザ用ワークシート](machine-discovery/evidence-root-check.html)（GitHubのRawを保存して開く・ネット接続不要・真偽判定ではなく入力整合チェック）
 - **Python / RAG / AIニュースで「URL数」と「独立証拠root数」を分けたい:** [Python AI Evidence-Lineage Checklist](PYTHON_AI_EVIDENCE_LINEAGE_CHECKLIST.zh.md)
 - **編集・動画・ニュースレター・教材向けに現実問題から入りたい:** [日本語](REAL_WORLD_EDITORIAL_ENTRY_POINTS.ja.md) / [English](REAL_WORLD_EDITORIAL_ENTRY_POINTS.md)
 - **同じ構造レンズを反復企画としてすぐ実装したい:** [Recurring Media Implementation Pack](RECURRING_MEDIA_IMPLEMENTATION_PACK.md)
