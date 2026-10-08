@@ -35,6 +35,7 @@ You do not need to know the theory name before using this kit. Start with the fa
 | You explicitly approve a bounded change, but the system treats recording or carrying that approval state as suspicious content — forcing a global bypass even though a narrow grant exists | Section 19 |
 | A cancelled or superseded tool turn stays in audit history, then its old actionable prompt reappears in an unrelated fresh turn as ordinary prior work | Section 20 |
 | A delete button is hidden for a role, but the single or batch API still accepts the destructive request | Section 22 |
+| A worker reconstructs `RunContext` from JSON, and a copied or modified snapshot may look like fresh approval or available capability | Section 31 |
 
 The recurring question is not “was this ever approved?” It is:
 
@@ -1940,3 +1941,43 @@ A separate editorial receiver chain in [kishibashi3/publications PR #57](https:/
 
 These records establish bounded implementation and editorial-reuse examples. They do not establish universal applicability, broad reader recognition, cross-receiver adoption of this reuse kit, or endorsement of the whole Nakagawa theory corpus.
 
+
+
+### 31. Rebuilt worker context is evidence, not a new permission grant
+
+An AI tool or workflow can legitimately execute in one process and resume part of its work in another. It may carry a serialized execution context: tool call identifiers, an earlier approval flag, a capability list, an available-tools snapshot, and the recorded state needed to resume. A deserializer may reconstruct the same *shape* without proving that those fields originated from the trusted invocation, belong to this worker, or are still valid.
+
+```text
+historical context snapshot
+!=
+a new approval by the current authority
+
+JSON round-trip succeeds
+!=
+worker execution is authorized
+
+an agent instance is attached on the worker
+!=
+every approval/availability claim in the wire payload is trusted
+```
+
+**Where this is useful:** custom durability backends, task queues, remote agent workers, replayable tool calls, and workspace delegation. It matters especially when the transport boundary or provenance binding differs from the original in-process run. If an existing trusted transport already makes payload substitution impossible, verify and document that boundary; this kit does not claim an exploit in that case.
+
+**Reproduction design.** Construct an authorized invocation in a disposable test workflow, and capture the worker-context wire representation. Preserve the exact benign positive control: the original invocation with its unchanged binding must still run as designed.
+
+Then test each condition independently:
+
+| Test | Changed input | Required boundary |
+| --- | --- | --- |
+| Prior approval becomes a claim | Change a serialized `tool_call_approved` from false to true | The worker must not treat an unauthenticated edit as a real approval |
+| Another run supplies a valid-looking snapshot | Copy the snapshot under a different `run_id`, `tool_call_id`, tenant, or workspace | The accepting component must establish the current invocation binding, not infer it from copied fields |
+| A capability is self-added | Insert a tool/capability into `available_tool_names` or `active_capability_ids` | The effective trusted worker policy/agent capability remains authoritative |
+| An unavailable side effect is recreated | Reconstruct an event/message-enqueue action prohibited in a replayed activity | The backend must refuse the effect even if the context deserializes |
+
+The validation outcome should distinguish *bad input*, *missing provenance*, *currently unauthorized*, and *accepted trusted work* so a successful test cannot be counted merely because an object parsed.
+
+**Implementation boundary:** version and validate the data schema, but separately bind it to a trusted invocation and current execution policy. Reconstruct dependencies and local capabilities where supported; reject or hold provenance gaps. A serialized approval may be retained truthfully as history without being promoted into current effect permission. For a queue whose issuer and worker already have an authenticated and non-substitutable context envelope, that envelope can be the relevant proof rather than a new invented signing mechanism.
+
+**Public evidence and current maturity:** A [Pydantic AI discussion of supported operation transport and worker-context reconstruction](https://github.com/pydantic/pydantic-ai/issues/9978) includes a concrete [Render compatibility implementation](https://github.com/ojusave/pydantic-ai/blob/23095f108cff702fa8f0d034e76a8fd13eb4ea33/src/pydantic_ai_harness/pydantic_ai_harness/render/_compat.py). The [bounded negative-test proposal](https://github.com/pydantic/pydantic-ai/issues/9978#issuecomment-6049713565) extends the public discussion to cross-run and modified-approval payloads. **It is a proposal, not a reported Pydantic AI acceptance, code change, exploit or release.** This applied example connects the kit's current-authority distinction to remote context reconstruction; it does not imply the external project used this kit or derived its implementation from Nakagawa Master.
+
+For underlying canonical theory and citation practice, begin with [Origin Attribution for Reuse](ORIGIN_ATTRIBUTION_FOR_REUSE.md), then follow its precise original-source path. 
