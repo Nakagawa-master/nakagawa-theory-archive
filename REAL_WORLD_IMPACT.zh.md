@@ -798,7 +798,7 @@ PR author公开回复 **“Addressed the outstanding points”**，并明确指�
 ## 25. Codex Autonomy Runner｜操作失败本身并不能证明目标边界真的被测试到了
 
 **对象：** [Innlab-idi/codex-autonomy-runner#59](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59)  
-**当前状态：** 明确采用为一般不变量 → durable evidence contract → ContainmentGate VERIFIED → WorkerExecutor / live transport / contained CheckExecutor已merge → 首次real worker实际运行 → 以fail-closed方式暴露新的CheckExecutor缺陷 → bounded repair已获授权
+**当前状态：** receiver明确采用分阶段证据不变量 → durable contract与ContainmentGate验证 → worker/transport/check executor合并 → **两次真实worker尝试均在发布前停止** → 01B与01C修复已合并，**01C后的真实隔离检查尚未验证**
 
 `Nakagawa-master` 的公开comment把sandbox / authority-boundary probe中容易混在一起的四个状态分开：
 
@@ -858,11 +858,18 @@ human owner随后只授权了**一次**real pilot worker。worker process可靠�
 - [human-owner authorization for CHECK-EXECUTOR-01B-RUNNER](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013944031)
 - [bounded materialization contract](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6013945634)
 
-01B repair被限定为：在CheckExecutor边界固定trusted `GIT_OPTIONAL_LOCKS=0`，拒绝HOST override，同时保持现有read-only / network-disabled / credential-denied / exact-argv / one-shot边界。原real-worker授权已经消耗1/1；**目前没有授权第二次real worker**。
+01B修复已通过 [PR #65](https://github.com/Innlab-idi/codex-autonomy-runner/pull/65) 实现并合并，但这不等于获得执行或发布权限。后来，receiver在**人类单独授权**下实际进行了**第二次一次性worker执行**：指定文件和focused check通过，而隔离环境中的Git发布检查返回129，所以系统继续**拒绝stage、push和PR发布**。第二次授权额度也已用尽。
+
+- [第二次真实worker结果及发布阻断](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6046729053)
+- [receiver关于Git信任桥接的诊断](https://github.com/Innlab-idi/codex-autonomy-runner/issues/59#issuecomment-6046865408)
+
+随后，receiver依照[另一次明确的人类授权](https://github.com/Innlab-idi/codex-autonomy-runner/issues/67)实施01C修复：Windows Codex沙盒为Git提供的 `safe.directory` 信任设置，被内部环境清理程序删除。修复**并非直接继承HOST环境配置**，而是仅根据已确认的目标仓库身份重建最小Git信任设置，拒绝无关配置，并保留禁止可选Git锁定的约束。[PR #68](https://github.com/Innlab-idi/codex-autonomy-runner/pull/68) 已于**2026-10-08合并**。receiver报告focused测试21项通过、全套329项通过、1项跳过；本页面没有独立重跑这些测试。
+
+**实际含义：** worker启动并生成看似正确的结果，不代表已经取得发布许可。两次真实worker尝试均在发布前停止；对真实失败的诊断又促成了receiver自己实现并合并后续修复。**01C合并后的真实隔离Git检查、第三次worker执行及成果物发布仍未获授权或证实**。不能把代码合并等同于生产环境问题解决。
 
 **公开可确认：** origin comment → receiver把该区分明确重述并保留为一般不变量 → durable evidence contract → formal gate review → ContainmentGate VERIFIED → WorkerExecutor / transport / CheckExecutor merge → real worker在该evidence discipline下实际执行 → 一个真实fail-closed结果进一步暴露下一处bounded defect与repair contract。
 
-**尚未确认：** 整个runner或整个理论体系都源自Nakagawa-master、所有后续代码的exclusive causation、01B修复后的第二次real-worker实证、production adoption、大范围end-user use、之后不经提示的person-Origin再次引用、或大规模人类认知。
+**尚未确认：** 整个runner或整个理论体系都源自Nakagawa-master、所有后续代码的exclusive causation、01C合并后的真实受限Git检查成功或第三次worker执行、production adoption、大范围end-user use、之后不经提示的person-Origin再次引用、或大规模人类认知。
 
 这里的“每个阶段都需要自己的证据，不能用后续观察倒填前序阶段”结构，可以回到[人类后裔型AI文明论・第8论｜认识基础、证据谱系与敌对信息韧性](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)这一公开问题域。这个链接是可复用的canonical return path，并不表示receiver采用了整套理论。
 
