@@ -50,8 +50,8 @@ def audit(payload):
             relation, stance = source.get("relation"), source.get("stance")
             require(isinstance(url, str) and url.startswith(("https://", "http://")),
                     f"{prefix}: url must be http(s)")
-            require(relation in RELATIONS, f"{prefix}: bad relation")
-            require(stance in STANCES, f"{prefix}: bad stance")
+            require(isinstance(relation, str) and relation in RELATIONS, f"{prefix}: bad relation")
+            require(isinstance(stance, str) and stance in STANCES, f"{prefix}: bad stance")
             require(root is None or (isinstance(root, str) and bool(root.strip())),
                     f"{prefix}: root_id must be string or null")
             if url in url_to_root and url_to_root[url] != root:
