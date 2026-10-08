@@ -33,6 +33,7 @@ Use:
 - [Practical Use](PRACTICAL_USE.md)
 - [Practical Boundary Checks](PRACTICAL_BOUNDARY_CHECKS.md)
 - [AI Agent Execution Boundary Tests](AI_AGENT_EXECUTION_BOUNDARY_TESTS.md)
+- [Interactive delayed Agent-result boundary (English, offline browser example)](human-translation/agent-late-result-lab.en.html) — a teaching model, not a live Qwen integration. Open the GitHub **Raw** HTML locally to run it.
 - [AI Agent Execution Governance Preflight — 12 questions](discovery-notes/ai-agent-execution-governance-preflight.md)
 - [Model proposal is not execution authority](discovery-notes/model-proposal-is-not-execution-authority.md)
 - [Reuse Kits](REUSE_KITS.md)

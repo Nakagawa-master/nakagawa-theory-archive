@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A cancelled AI task reports back late | Try the acceptance boundary</title>
+<meta name="description" content="A free offline browser exercise: distinguish a late agent result from a result accepted before cancellation or recovery.">
+<style>
+:root{color-scheme:light;--ink:#172b3a;--muted:#435568;--accent:#165e78;--line:#c5d3dd;--paper:#f5f8fb}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 system-ui,-apple-system,"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif}
+main{max-width:830px;margin:auto;padding:24px 18px 68px}h1{font-size:clamp(1.6rem,4vw,2.2rem);line-height:1.35;margin:12px 0}
+h2{font-size:1.2rem;margin:6px 0 12px}.eyebrow{color:var(--muted);font-size:.9rem}
+.lead{font-size:1.12rem;font-weight:650}.panel{margin:20px 0;padding:20px;border:1px solid var(--line);border-radius:14px;background:white}
+button{border:1px solid var(--accent);border-radius:7px;padding:11px 14px;margin:4px 5px 4px 0;background:var(--accent);color:white;font:inherit;font-weight:600;cursor:pointer}
+button.subtle{background:white;color:var(--accent)}button:focus-visible,a:focus-visible{outline:3px solid #e4a800;outline-offset:3px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}@media(max-width:600px){.grid{grid-template-columns:1fr}}
+.state{padding:12px;border-radius:8px;background:#edf3f7}.state strong{display:block;font-size:1.12rem;overflow-wrap:anywhere}
+.result{padding:14px;background:#e9f3f6;border-left:5px solid var(--accent);white-space:pre-wrap}
+.result.warn{background:#fff0e8;border-left-color:#a3402d}
+small,.small{font-size:.88rem;color:var(--muted)}a{color:#115a82}
+code{font-size:.9em;background:#edf3f7;padding:1px 4px;border-radius:4px}
+ol{padding-left:1.4em}li{margin:6px 0}
+</style>
+</head>
+<body>
+<main>
+<p class="eyebrow">Nakagawa Master | A verifiable real-world case</p>
+<h1>What if a cancelled AI task later says, “Done”?</h1>
+<p class="small">English | <a href="agent-late-result-lab.html">日本語版</a></p>
+<p class="lead">You stopped a task in an AI coding agent. But a worker running elsewhere sends its result afterward. Accepting that result as a success could change the answer or the budget of a task that is already over.</p>
+<p>It is possible for the system to <strong>receive a result without being entitled to accept it</strong>. That distinction matters more than whether the result looks correct. Try the two orders below.</p>
+<section class="panel" aria-labelledby="lab-title">
+<h2 id="lab-title">Try both orders (works offline)</h2>
+<p class="small">The task starts running. If Result A arrives first, it is accepted once. If cancellation or recovery settles first, the result of the old task cannot update the current record.</p>
+<div class="grid" aria-live="polite">
+<div class="state"><span class="small">Task state</span><strong id="lifecycle">Running</strong></div>
+<div class="state"><span class="small">Accepted result</span><strong id="accepted">None</strong></div>
+<div class="state"><span class="small">Accepted usage (illustrative)</span><strong id="tokens">0</strong></div>
+<div class="state"><span class="small">Acceptance receipt</span><strong id="receipt">None</strong></div>
+</div>
+<p><strong>1. End the task first (optional)</strong></p>
+<button type="button" id="cancel" class="subtle">Cancel task</button>
+<button type="button" id="recover" class="subtle">Recover after connection loss</button>
+<p><strong>2. Deliver a result or retry</strong></p>
+<button type="button" id="send-a">Send Result A (usage 100)</button>
+<button type="button" id="send-b" class="subtle">Send different Result B (usage 1,050)</button>
+<div><button type="button" id="reset" class="subtle">Reset scenario</button></div>
+<div id="result" class="result" role="status" aria-live="polite">First try Cancel, then Result A. Reset and send Result A twice. Compare what changes.</div>
+</section>
+<section class="panel">
+<h2>Why are the outcomes different?</h2>
+<p><strong>Accepted first:</strong> the running task records one accepted result and a corresponding receipt. An identical retry can be acknowledged without a second answer or usage write.</p>
+<p><strong>Cancelled or recovered first:</strong> the old worker might still physically finish, but it no longer has authority to publish a new answer or change the task's accepted usage. A late submission is stale.</p>
+<p><strong>Different payload after acceptance:</strong> a conflicting response is not a replay of the original receipt. It cannot overwrite an accepted result.</p>
+<p>The point is not “discard every result that arrives late.” It is: <strong>what was actually accepted, and which persisted receipt proves that acceptance?</strong> A completion report and a record-changing decision are not the same event.</p>
+</section>
+<section class="panel">
+<h2>Did a real project fix this?</h2>
+<p>This demonstration simplifies the specific acceptance distinction implemented in <a href="https://github.com/QwenLM/qwen-code/pull/13241">Qwen Code PR #13241</a>. The receiving developers implemented and tested the change, merged it, and included the PR in stable Qwen Code v0.25.0. In a later related discussion, a project participant <a href="https://github.com/QwenLM/qwen-code/issues/13238">spontaneously referred back to the option selected by @Nakagawa-master</a>.</p>
+<p>This is <strong>an educational simulation, not a live Qwen Code interface</strong>. It does not simulate every real lease state, API response or budget policy. It does not claim every AI product has this defect, nor that real end users have tried this teaching page. The usage values 100 and 1,050 are illustrative.</p>
+<p><a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md">Practical reuse checks</a> · <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.en.md">Externally verified changes</a> · <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ABOUT_NAKAGAWA_MASTER.en.md">About Nakagawa Master / Origin</a> · <a href="https://master.ricette.jp/">Canonical theory archive</a></p>
+<p class="small">No network requests, cookies, analytics or persistent storage. Open the downloaded HTML locally in your browser. Verify original source code and independently documented limitations before applying a similar rule elsewhere. <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/416">Share a real-world counterexample or related case</a>.</p>
+</section>
+</main>
+<script>"use strict";
+const el=(id)=>document.getElementById(id);
+const initial=()=>({phase:"active",accepted:null,tokens:0,receipt:false});
+let current=initial();
+function next(previous,event){
+ const state={...previous};let type,explanation;
+ if(event==="reset")return {state:initial(),type:"RESET",explanation:"Start a new scenario."};
+ if(event==="cancel"||event==="recover"){
+  if(state.phase!=="active")return {state,type:"NO_CHANGE",explanation:"This task is already terminal. Reset before trying another scenario."};
+  state.phase=event==="cancel"?"cancelled":"recovered";
+  type=event==="cancel"?"CANCELLED":"RECOVERED";
+  explanation="The task is now terminal. The old task is no longer eligible to submit an accepted result.";
+ }else{
+  const payload=event==="a"?"A":"B",tokens=event==="a"?100:1050;
+  if(state.phase==="cancelled"||state.phase==="recovered"){
+   type="STALE_LEASE";
+   explanation="Late Result "+payload+" arrived, but the terminated task can no longer change the accepted answer or usage.";
+  }else if(state.receipt&&state.accepted===payload){
+   type="ALREADY_APPLIED";
+   explanation="Result "+payload+" matches the accepted receipt. It is acknowledged without repeating the write or usage accounting.";
+  }else if(state.receipt){
+   type="CONFLICT";
+   explanation="This is a different payload, not an identical retry. The accepted result cannot be overwritten.";
+  }else{
+   state.phase="completed";state.accepted=payload;state.tokens=tokens;state.receipt=true;
+   type="ACCEPTED";
+   explanation="Result "+payload+" was accepted once while the task was running. Its receipt now binds that result.";
+  }
+ }
+ return {state,type,explanation};
+}
+function draw(output){
+ current=output.state;
+ const status={active:"Running",completed:"Accepted / terminal",cancelled:"Cancelled",recovered:"Recovered / terminal"};
+ el("lifecycle").textContent=status[current.phase];
+ el("accepted").textContent=current.accepted?"Result "+current.accepted:"None";
+ el("tokens").textContent=current.tokens.toLocaleString("en-US");
+ el("receipt").textContent=current.receipt?"Bound to accepted result":"None";
+ const result=el("result");result.textContent=output.type+" — "+output.explanation;
+ result.classList.toggle("warn",["STALE_LEASE","CONFLICT"].includes(output.type));
+}
+[["cancel","cancel"],["recover","recover"],["send-a","a"],["send-b","b"],["reset","reset"]]
+ .forEach(([id,action])=>el(id).addEventListener("click",()=>draw(next(current,action))));
+</script>
+</body>
+</html>
