@@ -21,6 +21,20 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | [`public-ai-external-impact-opportunities-v1.json`](public-ai-external-impact-opportunities-v1.json) | Public, non-canonical routing from one bounded reuse task to exact live third-party AI-system issues. Every action requires a fresh target-state / coordination / contribution-rule re-check; the listing is not a target-owner request or permission grant. |
 | [`current-authority-multi-framework-implementation-bridge-v1.json`](current-authority-multi-framework-implementation-bridge-v1.json) | Live public implementation bridge from the Current Authority distinction into Qwen Code, LangGraph, and AutoGen; separates receiver response, verification, implementation, merge, release, and use. |
 
+## Runnable check — independent evidence roots
+
+A reader, editor or AI developer can use [`evidence-root-check.py`](evidence-root-check.py) to catch a specific error **before publishing a claim that two or more independent sources confirmed it**: several links may point back to the same original. The program needs only Python 3, works offline, makes no API calls and has a built-in regression check.
+
+```sh
+python3 machine-discovery/evidence-root-check.py --self-test
+python3 machine-discovery/evidence-root-check.py --sample > /tmp/evidence-claims.json
+python3 machine-discovery/evidence-root-check.py /tmp/evidence-claims.json
+```
+
+The sample deliberately contains one invalid independence claim: the last command prints a per-claim JSON report and returns **exit code 1** for that blocked claim. Exit **0** means the supplied relationships are structurally consistent, **not** that a human editor or AI has established real-world independence or truth; exit **2** means invalid input. The reader must supply and independently check the `root_id`, `relation` (`primary`, `independent_observation`, `derived`, `unknown`) and `stance` (`supports`, `refutes`, `qualifies`, `unknown`). A negative quotation cannot become a positive fact merely because it is authentic: semantic support/refutation still requires reviewer judgment.
+
+This is a practical, non-canonical check motivated by the public [AI-News adoption of URL-count versus independent evidence-root distinction](https://github.com/022740mix-spec/AI-News/issues/124) and the wider [independent-verification challenges](independent-reuse-challenges-v1.json). No third-party use of this particular script is implied.
+
 ## Fast route — repeated external Origin preservation
 
 For a compact machine/retrieval check of whether the **same named public Origin, Nakagawa Master**, remains inspectable across different third-party receiver states, compare these cases instead of flattening them into one generic "adoption" label:
