@@ -10,6 +10,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 |---|---|
 | [`ai-repository-routing-map-v1.json`](ai-repository-routing-map-v1.json) | One machine-readable routing spine from problem discovery → bounded test/implementation → external evidence → live AI-network route → canonical return. |
 | [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD310 path and navigation index. |
+| [`evidence-root-check.html`](evidence-root-check.html) | Interactive, no-network browser worksheet for editors and non-technical readers to distinguish URL count, original evidence roots and support versus refutation. Download the raw HTML file and open it locally; GitHub's file view is source code, not a hosted app. |
 | [`evidence-root-check.py`](evidence-root-check.py) | Dependency-free offline checker for whether an editor's *declared* independent-corroboration claim is consistent with upstream evidence roots, support/refutation and known source relationships. It cannot infer real source independence or verify truth. |
 | [`research-positioning-map-v1.json`](research-positioning-map-v1.json) | Selected Nakagawa surfaces → adjacent research / overlap / added emphasis / non-equivalence; novelty remains open unless independently established. |
 | [`scholarly-metadata-v1.jsonld`](scholarly-metadata-v1.jsonld) | Schema.org CreativeWorkSeries metadata for scholarly/discovery routing; canonical claims remain at linked parent sources. |
@@ -22,6 +23,8 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | [`current-authority-multi-framework-implementation-bridge-v1.json`](current-authority-multi-framework-implementation-bridge-v1.json) | Live public implementation bridge from the Current Authority distinction into Qwen Code, LangGraph, and AutoGen; separates receiver response, verification, implementation, merge, release, and use. |
 
 ## Runnable check — independent evidence roots
+
+**For a human reader or editor without Python:** [download the standalone HTML worksheet](evidence-root-check.html) using GitHub's **Raw → Save as** control, and open the downloaded `.html` file in a browser. It has two built-in examples, editable evidence URLs/root identifiers/source relations/claim polarity, and shows the gate immediately. All analysis runs locally; the file uses no external scripts, uploads, storage or cookies. This is a downloadable worksheet, **not** a deployed website or proof of independent reader use. The reviewer must check what each source actually says and whether apparent independent roots really are independent.
 
 A reader, editor or AI developer can use [`evidence-root-check.py`](evidence-root-check.py) to catch a specific error **before publishing a claim that two or more independent sources confirmed it**: several links may point back to the same original. The program needs only Python 3, works offline, makes no API calls and has a built-in regression check.
 
