@@ -1041,6 +1041,7 @@ PR authorは **“Thanks for catching the serialized-content gap.”** と明示
 
 **公開記録から確認できること:** Nakagawa reviewがdict形式のnon-text semantic lossを具体化 → receiverがgapを明示的に認める → 同じPRでparserとdict/object回帰matrixを変更 → focused re-check。  
 **まだ確認できないこと:** PR merge、release、production use、repository全体CI green、broader tools / mypy / live MCP検証、利用者規模、一般原理の知的優先権、理論体系全体への支持。
+
 ---
 
 ## 31. Qwen Code｜`maxCostUsd` の予測値とhard boundを分け、後続PRでNakagawa-originを自発的に再参照
@@ -1260,6 +1261,7 @@ Nakagawa-masterはcurrent head `cfbbc91244` でこのscopeを再確認し、こ�
 
 **公開記録から確認できること:** concrete atomicity review → receiver code/test change → exact regression → focused re-check → 同receiverからの継続的な再接触 → secret-strength境界の明示的採用 → provenance/control-path境界でもreceiverが明示的に同意しcode/test変更 → namespace sibling caseまでreceiverが自発的に修正 → 26 commits後のcurrent headでも境界保持 → [current-head scoped re-check](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5992661508)で当該scope closeを再確認。  
 **まだ確認できないこと:** PR #61982のmerge・release・production use、利用者規模、広い人物認知、PR全体がNakagawa-masterの指摘だけで作られたという因果。
+
 ---
 
 ## 35. Qwen Code｜終了したattemptに、現在の予算を書き換える権限を残さない
