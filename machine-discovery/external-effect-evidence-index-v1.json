@@ -3128,6 +3128,46 @@
         "separate-person dissemination or general theory adoption"
       ],
       "verification_boundary": "Shared parser and test patch directly inspected; no full repository runtime or test suite performed by this archive publisher."
+    },
+    {
+      "case_id": "codex-51962-historical-hosted-tool-compaction-only-authority",
+      "topic": "An AI agent's historical hosted tool-call item may require a compatible compaction schema, but this is not an authorization to make the historical tool executable in a later live turn.",
+      "external_repository": "openai/codex",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "issue_comment",
+        "url": "https://github.com/openai/codex/issues/51962#issuecomment-6057390199",
+        "summary": "After an independent 0.161.0 experimental imported-history A/B report, distinguished the tool schema necessary to interpret earlier web_search_call history during compaction from the currently granted executable tool set; specified non-lossy history handling, current-authority non-expansion and explicit error diagnostics as acceptance tests."
+      },
+      "initial_receiver_report": {
+        "actor": "original issue reporter (not Nakagawa Master)",
+        "url": "https://github.com/openai/codex/issues/51962",
+        "bounded_evidence": "Official Codex CLI 0.161.0 with an experimental imported native hosted web_search_call history failed remote compaction; removing only hosted search items let compaction and ordinary conversation finish. The route and observations belong to the original reporter."
+      },
+      "independent_receiver_followon": {
+        "actor": "philkunz",
+        "url": "https://github.com/openai/codex/issues/51962#issuecomment-6082971210",
+        "direct_source_relation": "The independent reporter explicitly says the compaction-only repair agrees with 'the invariant in the comment above' (the preceding Nakagawa-master comment), while presenting additional independently executed tests. They do not explicitly tag the Nakagawa-master handle.",
+        "receiver_owned_evidence": "Natural, non-imported Codex 0.162.0 Linux app-server threads with old hosted-search call items failed at local compaction with an outbound tool declaration inventory of tools: []; a pass-through Responses proxy captured the upstream SSE internal_error response protection is unavailable. Matched persisted-history A/B succeeded when only the compaction request included tools:[{type:web_search}] or when that one historical call item was deleted; reasoning-item removal alone did not fix it; no broad dataset claim.",
+        "bounded_change": "One independent human extended real-world diagnosis and visibly adopted the historical-decoding-vs-live-tool-authority distinction in the proposed fix, not a source-code change or a verified published correction."
+      },
+      "current_stage": "independent_receiver_understanding_or_design_restatement",
+      "current_delivery_state": "Open issue; no Codex maintainer implementation, regression commit, merge, release, or deployed user repair verified as of this evidence snapshot.",
+      "public_reuse": {
+        "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/independent-reuse-challenges-v1.json",
+        "challenge_id": "AG-historical-hosted-tool-compaction-not-live-authority",
+        "canonical_context": "https://master.ricette.jp/",
+        "source_identity_boundary": "The preceding Nakagawa-master public comment is directly referenced through its proposed invariant, but the other reporter's independent reproduction is their own work. This bounded engineering distinction does not establish adoption or technical derivation from the entire canonical theory corpus."
+      },
+      "not_claimed": [
+        "Codex core bug fixed or merged",
+        "that imported remote compaction and natural local compaction share one proven code root cause",
+        "that the later reporter executed the exact tests suggested by Nakagawa-master",
+        "that the independent reporter explicitly used the Nakagawa-master handle",
+        "that declaring web_search for compaction allows a new live web-search capability",
+        "actual repair of customer threads, product release, mass human recognition or AI-model adoption of a theory"
+      ],
+      "verification_boundary": "Only public issue comments and author-reported observed traces were inspected; no external account/proxy traffic, real user transcripts, or Codex test suite independently executed by the publisher. Test with synthetic, consented data only."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
