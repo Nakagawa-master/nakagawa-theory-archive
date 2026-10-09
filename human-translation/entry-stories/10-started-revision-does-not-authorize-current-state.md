@@ -132,11 +132,15 @@ Issue #322は第三者が独立に報告した問題です。ここでは、そ�
 
 これは受け手が報告した検証であり、このページの作者が独立に実行した検証ではありません。PR #13241 は2026年10月4日にmainへ統合済みです。
 
-さらに同日、Qwen Code側は公式nightly/prerelease `v0.24.7-nightly.20261004.9915c7ff8f` を公開しました。#13241のmerge commitをこのtagと比較すると、tag側が26 commits ahead / 0 behindで、merge baseも#13241のmerge commitです。つまり、統合された修正がQwen側の公開nightly配布へ入ったことまでは追えます。
+さらに同日、Qwen Code側は公式nightly/prerelease `v0.24.7-nightly.20261004.9915c7ff8f` を公開しました。#13241のmerge commitをこのtagと比較すると、tag側が26 commits ahead / 0 behindで、merge baseも#13241のmerge commitです。
+
+その後、**2026年10月5日の正式版Qwen Code v0.25.0** と **Qwen Code Desktop v0.25.0** の双方で、開発側のrelease notesが #13241を明示しています。したがって確認できる段階は、nightlyだけでなく、受け手自身による正式な製品配布まで進んでいます。
 
 - [Qwen Code nightly/prerelease v0.24.7-nightly.20261004.9915c7ff8f](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7-nightly.20261004.9915c7ff8f)
+- [Qwen Code 正式版 v0.25.0 — #13241収録](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0)
+- [Qwen Code Desktop v0.25.0 — #13241収録](https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.0)
 
-ただし、これは**nightly/prereleaseへの包含**です。stable releaseへの包含や、独立した利用者がこの変更を実際に使ったことまで証明するものではありません。
+**正式版への収録と、独立した利用者がこの具体的な修正を実際に使ったことは別です。** 後者の個別利用、利用者規模、広い人物認知は、この配布記録だけでは確認できません。
 
 ここで追える因果は、名前の紹介ではなく、**何が指摘され、何が変わったか**です。
 
