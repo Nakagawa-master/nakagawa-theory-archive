@@ -12,6 +12,27 @@ This page is a public, non-canonical entry point for people and AI systems encou
 - [Bring a real problem | Public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [Locate these theories relative to existing research | Research Positioning Map](RESEARCH_POSITIONING_MAP.md)
 
+### Try one decision right here — no code, download or signup
+
+**A real engineering problem:** AI task A has ended. Another task B is still running. Only now, A's usage report arrives. Should B's remaining allowance change because that late report arrived?
+
+- **1 — Yes:** a recent report should always affect the running task.
+- **2 — No:** discard the old report entirely, including its history.
+- **3 — Neither:** retain the late report as historical evidence about A, but do not silently treat it as a current budget decision about B.
+
+<details>
+<summary>Make your choice, then open the reasoning and primary evidence</summary>
+
+**In this bounded example, choice 3.** Keeping a historical fact and giving that fact current authority are different decisions. Deleting useful history loses evidence; carrying an old task's report into the current task can distort its budget.
+
+This distinction has a verifiable receiving-side path: [Qwen Code PR #13241](https://github.com/QwenLM/qwen-code/pull/13241) implemented and tested a related accepted-versus-terminal Host-result distinction, merged it, and included the fix in stable v0.25.0. In a later issue, a Qwen contributor independently [re-referenced `@Nakagawa-master` as the person who selected the relevant option](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808). The contributor's “option A” is the project's own design option, **not** choice 1 in this exercise.
+
+**Apply it yourself:** can your workflow preserve what happened yesterday without treating yesterday's state as permission to make a different decision today?
+
+</details>
+
+This is a teaching example, not a claim that you ran Qwen Code or that its entire budget system, user adoption or end-user recognition has been independently measured. For a longer offline simulation with buttons, use the HTML exercise linked above. For a simple Japanese version usable on GitHub itself, see [the public story and its 30-second choice](STORIES.md#まず30秒ここで一度だけ選んでみるダウンロード不要).
+
 You do not need to know the theory names first. Start from the problem closest to what you are trying to understand, then move to the official derivative and canonical Parent when exact definitions, conditions, boundaries, falsification, or revision status matter.
 
 ## First 10 seconds
