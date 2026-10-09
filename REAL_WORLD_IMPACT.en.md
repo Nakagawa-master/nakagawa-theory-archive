@@ -958,6 +958,7 @@ A focused re-check then confirmed no remaining blocker within the serialized-con
 
 **Publicly verifiable:** Nakagawa review identifies dict-form non-text semantic loss → receiver explicitly acknowledges the gap → parser and dict/object regression matrix change on the same PR → focused re-check.  
 **Not established:** PR merge, release, production use, green repository-wide CI, broader tools/mypy/live-MCP validation, user-scale impact, intellectual priority over the general principle, or endorsement of the wider theory corpus.
+
 ---
 
 ## 31. Qwen Code | Separate `maxCostUsd` forecast from its hard bound, then observe a prompt-free receiver re-reference to Nakagawa Master
@@ -1131,6 +1132,7 @@ Nakagawa-master re-checked current head `cfbbc91244` and reported no remaining b
 
 **Publicly verifiable here:** atomicity review → receiver code/test change → exact regression → focused re-check → continuing return from the same receiver → secret-strength boundary explicitly accepted and implemented → a third provenance/control-path boundary explicitly accepted and implemented with an operational regression → focused current-head re-check closed that scope.  
 **Not established here:** merge/release of PR #61982, production use, user scale, broad person recognition, or exclusive causality for the whole PR.
+
 ---
 
 ## 35. Qwen Code | A terminalized attempt no longer keeps budget-affecting write authority
