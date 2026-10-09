@@ -2,26 +2,30 @@
 
 > これは一般読者向けの非正本ストーリーです。正式な定義や結論は、リンク先の公式派生物・親原典で確認してください。
 
-## まず、ニュースで聞く話
+## 2026年10月、もう議会で議論されている
 
-最近、AIについてこんな話を聞くことが増えました。
+**AIが人類を滅ぼすかもしれない。では、その危険をどこまで許すか、最後は誰が決めるのでしょう。**
 
-**「AIが人間より賢くなったら、ちゃんと止められるの？」**
+2026年10月5日、ニューヨーク市議会はAIの安全を調べる公聴会を開きました。OpenAI、Anthropic、Google、Metaの代表者が出席し、議員は各社に、最悪の破局的リスクをどう見積もるか問いかけました。元Anthropicや元OpenAIの研究者らも証言しています。これは映画の設定でも、誰か一人の予言でもなく、実際に議会が開いた審議です。ただし、元研究者の危機予測が確定した事実になった、という意味ではありません。
 
-これは映画だけの話ではありません。
+[10月5日のニューヨーク市議会・公式発表](https://council.nyc.gov/press/2026/10/05/3278/)には、出席者、質問の主題、検討された安全策が記録されています。出席したのは各社の代表者であり、CEO本人がこの市議会で証言したという記録ではありません。少し前の9月23日にはOpenAIのSam AltmanとAnthropicのDario Amodeiが、それぞれ国連安全保障理事会でAI安全について説明しました。
 
-2026年9月23日、OpenAIのSam Altmanは国連安全保障理事会で、強力なAIを人間のコントロール下に置ける強い根拠なしに訓練すべきではないこと、AI安全について国際協力や共通基準が必要だと述べました。
+- [Sam Altmanの国連安全保障理事会での発言](https://openai.com/index/sam-altman-un-security-council-remarks/)
+- [AnthropicのFrontier Safety Roadmap](https://www.anthropic.com/responsible-scaling-policy/roadmap)
+- [CNN Brasilによる10月7日の市議会公聴会報道](https://www.cnnbrasil.com.br/economia/money/inteligencia-artificial/pode-acabar-em-extincao-humana-audiencia-em-ny-pode-definir-futuro-da-ia/)
 
-Anthropicも、Security / Safeguards / Alignment / PolicyをFrontier Safety Roadmapの中心に置き、能力が上がるほど外部テスト、incident reporting、政府による監督などが重要になるとしています。
+ここで気になるのは、「AIは危険か、安全か」という二択だけではありません。
 
-つまり、
+会社は製品を進歩させたい。利用者は便利に使いたい。政府は社会を守りたい。事故が起きたら、被害を受ける人は会社や政府の判断に従うしかないのでしょうか。三者が同じ言葉で「安全」と言っても、**何を失敗と数えるか、どの損失を許すか、誰が確かめられるか**が違えば、結論も変わり得ます。
 
-> **「AIは便利だね」で終わる時代ではなく、どう安全に扱うかを本気で決める段階に入っている。**
+中川マスターの公開理論群には、この問題を考えるための複数の入口があります。最初から理論全体を理解する必要はありません。気になるところを一つ選ぶだけでも、問いの見え方は変わります。
 
-ここまでは、ニュースを見ている人なら何となく分かります。
+- **「停止ボタンはある。けれど押したら仕事や社会が止まる」** — 悪いAIの暴走とは別に、依存が深まることで生じる停止困難を考える。[社会が戻れなくなる未来線](future-lines/01-ai-loss-of-control.md)
+- **「決めたのは人間。では、選ぶ前の候補と物差しを決めたのは？」** — AI会社・政府・利用者のどこに判断が残るかを考える。[人間の承認と選択肢](future-lines/02-human-approval-without-human-decision.md)
+- **「別のAIに監査させたから安全？」** — 同じ前提を共有する二者が同じ誤りを見逃す可能性を分ける。[監査の独立性を扱う第10論の人間向け要約](../derivatives/303/human-entry.md)
+- **「開発者が始めたものなら、将来の判断も永久に開発者だけが決める？」** — 出自を記録することと統治を承認することを分ける。[起源保存と主権非継承を扱う第17論の人間向け要約](../derivatives/310/human-entry.md)
 
-- OpenAI: [Sam Altman’s remarks at the United Nations Security Council](https://openai.com/index/sam-altman-un-security-council-remarks/)
-- Anthropic: [Frontier Safety Roadmap](https://www.anthropic.com/responsible-scaling-policy/roadmap)
+これらは、公聴会で議員や企業が中川理論を採用したという意味ではありません。また、上記の理論だけで将来の大災害を防げると証明されたという意味でもありません。**いま人々が議論している一つの問題を、異なる角度から自分で確かめるための道具**として、公開原典・要約・反例への道を用意しています。
 
 ## もっと大きな未来線で読む
 
