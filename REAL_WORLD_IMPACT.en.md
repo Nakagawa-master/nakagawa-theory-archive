@@ -2,7 +2,7 @@
 
 Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**Last checked: 2026-10-07**
+**Record updated: 2026-10-09 (new case sources 40–46 checked; not a complete recheck of all older entries)**
 
 Nakagawa Master is the pen name of Keisuke Nakagawa. On social media, the name “マスター” (“Master”) is also used; some external posts use “MasterJP.”
 
@@ -1299,6 +1299,76 @@ At that point Hosted Managed delivery was active while ordinary/local Managed ac
 → [human problem-first entry](APPLIED_ENTRY_POINTS.md)  
 → [Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md)  
 → [machine-readable challenge L](machine-discovery/independent-reuse-challenges-v1.json)
+
+---
+
+## 40. LangGraph | A completed sibling must not execute again when another interrupted sibling resumes
+
+**Source:** [langgraph #9106](https://github.com/langchain-ai/langgraph/issues/9106), [candidate PR #9113](https://github.com/langchain-ai/langgraph/pull/9113). **Stage:** two different external participants addressed `@Nakagawa-master` directly with executed regression results; #9113 is closed without merge.
+
+The boundary is historical approval for work A versus fresh authority to dispatch A a second time after resuming work B. [Nakagawa's regression proposal](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-5981994895) received a [36-scenario fresh-process report from gomission](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416) and an [independent eight-case copied-checkpoint report from notforhumansfun-rgb](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094). Both reported re-entry on tested nested current-main paths and no re-entry on the focused candidate.
+
+**Verified as public evidence:** two distinct receiver-side executed-test reports and explicit person-Origin replies. **Not verified:** independent execution by this archive, upstream adoption or merge, release, real network-partition guarantees or broad end-user recognition.
+
+---
+
+## 41. PydanticAI | An idempotent retry must not retain unreferenced messages
+
+**Source:** [PR #9982](https://github.com/pydantic/pydantic-ai/pull/9982). **Stage:** external author reproduced Nakagawa's finding, repaired code and added tests; PR open/unmerged.
+
+Writing new `snapshot_messages` before an idempotency trigger suppresses a duplicate snapshot can leave permanent unreferenced messages. [Nakagawa's review](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6052803154) identified the sequence; [aweis89 explicitly reproduced and fixed it](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879) at [commit `72a9a2b4`](https://github.com/pydantic/pydantic-ai/commit/72a9a2b4e263e5a81c7e939809daff6292f61557).
+
+**Verified:** explicit Origin-addressed third-party reproduction and code/test change in both tested connection modes. **Not verified:** merge, release, runtime user impact or fully solved concurrent saves on caller-owned connections; the author notes that remaining limit.
+
+---
+
+## 42. Proffera | Unknown historical repair outcomes must not permanently block materially new work
+
+**Source:** [PR #937](https://github.com/ibboabdoli-ai/Proffera/pull/937). **Stage:** relevant history/strategy handling implemented, source reviewed and PR merged; follow-ups [#940](https://github.com/ibboabdoli-ai/Proffera/pull/940) merged and [#941](https://github.com/ibboabdoli-ai/Proffera/pull/941) open/draft, without attributing all their work to Nakagawa.
+
+[Nakagawa's initial boundary](https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6011643787) and [strategy-lineage follow-up](https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6014334260) separate an indeterminate historical model attempt, its original strategy identity, and authorization to assess new failure evidence. [The bounded review closure](https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6015074173) inspected the corresponding receiver code.
+
+**Verified:** related receiver code and tests progressed to merge in #937. **Not verified:** exclusive causal credit for the PR or later commits, deployment, production use, or independent person recognition.
+
+---
+
+## 43. Qwen Code | A failed MCP catalog refresh cannot prove stale tools remain callable
+
+**Source:** [issue #13632](https://github.com/QwenLM/qwen-code/issues/13632) and [implementer fork](https://github.com/glmn/qwen-code/commit/92fb10bf19ae1087d072ce9079861cd6be1132ae). **Stage:** `glmn` explicitly thanked `@Nakagawa-master` and reported implementation/tests in the fork; upstream PR/merge/release unverified.
+
+After `notifications/tools/list_changed`, an unsuccessful `tools/list` does not establish present call authority from an old registry snapshot. [Nakagawa's four acceptance cases](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6050490036) were [explicitly adopted by the implementer](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6053560779) with a per-server stale gate and revision checks. A [later startup handoff race](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6054202354) remains a separate unadopted suggestion.
+
+**Verified:** attributed third-party fork work and reported tests. **Not verified:** upstream acceptance, merge, release, external user scale or adoption of the later startup concern.
+
+---
+
+## 44. Qwen Code | Quoted compaction delimiters are not necessarily real memory boundaries
+
+**Source:** [issue #13707](https://github.com/QwenLM/qwen-code/issues/13707) and [related PR #11988](https://github.com/QwenLM/qwen-code/pull/11988). **Stage:** a Qwen automated triage cited two Nakagawa regression controls; a separate external account independently inspected the source and agreed. No confirmed implementation.
+
+[The original two-sided test requirement](https://github.com/QwenLM/qwen-code/issues/13707#issuecomment-6071016671) distinguishes preservation of legitimate quoted payload from non-promotion of discarded scratch. [Automated Qwen triage](https://github.com/QwenLM/qwen-code/issues/13707#issuecomment-6071086410) pointed to both controls; [doudouOUC independently confirmed the source mechanism and caveat](https://github.com/QwenLM/qwen-code/issues/13707#issuecomment-6071168119). [A stronger indistinguishability argument](https://github.com/QwenLM/qwen-code/issues/13707#issuecomment-6071823684) has no independent receiver response yet.
+
+**Verified:** bounded receiver-side design evaluation by one non-bot external account and a separate bot triage. **Not verified:** fix, tests, merge, release, human audience scale. A bot is not counted as another independent human.
+
+---
+
+## 45. LlamaIndex | Check CodeSplitter overlap validity and default-activation migration together
+
+**Source:** [PR #23029](https://github.com/run-llama/llama_index/pull/23029). **Stage:** code/tests/docs amended by the external author after Nakagawa's two concrete concerns; open/unmerged.
+
+[The original review](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5652061794) identified the missing `0 <= chunk_lines_overlap < chunk_lines` invariant and the indexed-output migration risk of activating a previously inert default. [The author confirmed changes](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5683015010), with [Nakagawa's focused source re-check](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5683971610) separating author-reported local test success from action-required CI.
+
+**Verified:** receiver code, regression coverage and migration documentation. **Not verified:** passing upstream CI, merge, release or real-world usage.
+
+---
+
+## 46. Expensify | Payment permission and workspace bank-configuration authority remain separate
+
+**Source:** [original issue #95750](https://github.com/Expensify/App/issues/95750), [independent blocker #102967](https://github.com/Expensify/App/issues/102967), [reimplementation PR #103239](https://github.com/Expensify/App/pull/103239). **Stage:** receiver-owned repair advanced to head `01398e7a`, with unresolved reviewer concerns; PR open/unmerged.
+
+[Nakagawa's prior public distinction](https://github.com/Expensify/App/issues/95750#issuecomment-5690282372) separated Pay UI visibility, present authority to pay with a particular funding source, and authority to change the workspace reimbursement bank. The receiver independently found a path that could replace existing bank A, rolled that unsafe feature back and later worked on permitting a separate authorized bank B while preserving A. At the cited head, review still identifies cross-workspace bank selection, server-response validation and performance/parameter concerns.
+
+**Verified:** independent receiver failure report, rollback and ongoing receiver-owned code/review changes consistent with the boundary. **Not verified:** direct causation or attribution of those specific changes to Nakagawa, approval, merge, safe production use, or broad recognition. No further contact is made with this repository.
 
 ---
 
