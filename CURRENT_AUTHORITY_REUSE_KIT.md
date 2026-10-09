@@ -254,11 +254,13 @@ safe reimplementation of the original feature
 
 Issue #102967 is closed after the rollback path, while #95750 remains open. A future reimplementation still has to prove that broader Pay eligibility can coexist with existing-bank preservation and current execution-time authority checks. A new implementation, its regression coverage, review, staging verification, production release, and real use remain separate evidence stages.
 
-#### Receiver-owned reimplementation after rollback — current open state
+#### Receiver-owned reimplementation after rollback — open review, not merged
 
-A receiver-owned rework is now public as [Expensify PR #103239](https://github.com/Expensify/App/pull/103239). At the current Draft head `a20750b8bab9d6749167cc926fe6f1cceaa25d11`, the implementation and tests directly address the bank-replacement failure that forced the earlier rollback: when a workspace already has reimbursement bank A, a non-payer admin who adds or selects another funding source is kept outside the workspace-bank setup path, and the existing workspace bank remains A.
+A receiver-owned rework is public as [Expensify PR #103239](https://github.com/Expensify/App/pull/103239). **At the observed 2026-10-09 JST head `01398e7a652f94db37e123a6b15eae989a1e3d46` the PR is open and no longer Draft, but is not approved or merged.** Compared with the previously inspected `a20750b8` head, the receiver has made another real code/review iteration. The intended business rule is still to let a non-payer admin pay from an independently authorized business bank B while preserving the workspace's pre-existing reimbursement bank A.
 
-That advances the public state from **rollback-only safety closure** to a bounded **receiver-owned reimplementation in code and tests**. It still leaves a separate current-authority acceptance question:
+This advances the earlier rollback-only safety closure into **receiver-owned implementation and review work**, but current [reviewer feedback](https://github.com/Expensify/App/pull/103239#issuecomment-6070417152) states that three of eight earlier comments still need work, even though several other fixes were confirmed. In particular, resuming an incompletely configured bank account could select a different workspace's bank setup or currency; backend confirmation of the exact selected account remains insufficiently shown; and subscribing whole report rows to personal-details changes causes an avoidable performance issue. Two further smaller review asks concern partial-account selection and required data inputs.
+
+Keep the distinct **current-authorization at submit** acceptance check as well:
 
 ```text
 Pay is rendered while permission / account access is current
@@ -270,19 +272,9 @@ Pay is rendered while permission / account access is current
 → client reconciles to current state
 ```
 
-The [current rework review](https://github.com/Expensify/App/pull/103239#issuecomment-6026912662) records that separation explicitly: the existing-bank replacement regression is addressed by the Draft rework, while execution-time stale-authority refusal still needs direct acceptance evidence (an existing server/API regression or a reproducible result is sufficient).
+This test is still a **requested acceptance boundary**, not something demonstrated by the cited reviewer comments. The actual next state is receiver-owned closure of the account/currency/backend/performance findings, explicit verification of bank A unchanged after paying with B, current-authority refusal coverage, review approval, merge and eventual safe production use.
 
-Current bounded state:
-
-```text
-unsafe broadened feature
-→ production rollback / safe baseline
-→ receiver-owned bounded reimplementation with bank-A preservation tests
-→ current-authority refusal evidence still pending
-→ Ready / review / merge / staging / production-safe use still pending
-```
-
-This does **not** establish that the receiver attributed the reimplementation to the earlier Nakagawa review, that the earlier comments caused the reimplementation, that the Draft is ready or merged, that stale-screen revocation is already proven, that the corrected feature is deployed or used in production, or that broad independent audience effects have occurred.
+**Source and attribution limit:** Nakagawa previously distinguished current Pay execution authority from workspace-bank mutation authority, but the latest specific modifications were also driven by independent receiver reviewer findings and are **not verified to be caused by Nakagawa's contribution**. The new head is one receiver technical iteration, not an independent person-Origin re-reference or broad recognition. No external follow-up/comment is made where the receiver has asked that comments stop.
 
 
 ### 7. A destructive action is authorized by UI state but not by the locked backend state
