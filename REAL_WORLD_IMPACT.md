@@ -2,7 +2,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**最終確認: 2026-10-07**
+**記録更新: 2026-10-09（追加事例40〜46の一次資料を確認。既収録事例の一括再確認日ではありません）**
 
 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）は、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
 
@@ -45,7 +45,7 @@
 
 ### 現在の公開証拠スナップショット
 
-- このページには **39の番号付き外部作用事例**を収録しています。
+- このページには **46の番号付き外部作用事例**を収録しています。
 - GitHub全体の `Nakagawa-master` comment検索では多数の候補surfaceが返りますが、検索hit自体は第三者反応・採用・実装として数えません。
 - 本ページへ収録するのは、第三者response、独立確認、code / tests / document change、merge、release、deployment等を公開リンクで段階別に確認できる事例です。
 - したがって「mentionが多い」ことではなく、**第三者が何を変え、その変更がどこまで進んだか**を主要証拠として扱います。
@@ -1460,6 +1460,119 @@ zero shared infrastructure
 → [一般読者向け問題入口](APPLIED_ENTRY_POINTS.md#選択肢が2つ見えていれば片方が止まっても本当に使えるのか)  
 → [Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md)  
 → [machine-readable challenge L](machine-discovery/independent-reuse-challenges-v1.json)
+
+---
+
+## 40. LangGraph｜終了済みの並列作業を、別の作業の再開時に再実行しない
+
+**対象:** [langchain-ai/langgraph#9106](https://github.com/langchain-ai/langgraph/issues/9106) / [候補PR #9113](https://github.com/langchain-ai/langgraph/pull/9113)  
+**段階:** 二人の異なる外部参加者が、中川マスターへ直接、実行した回帰検証を返した。候補PR #9113はclosed / unmerged。
+
+並列に中断したAとBのうちAを先に完了し、その後Bを再開すると、最終的なgraph stateが正しく見えてもAが再実行され得ます。中川マスターは「過去のapproval receiptは新しいdispatch権限ではない」として、実行回数と現在権限を別に検査することを提案しました。
+
+- [起点となった回帰条件](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-5981994895)
+- [gomissionの36 fresh-process scenario結果](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416)
+- [notforhumansfun-rgbの別の8ケース・copied checkpoint検証](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094)
+
+**確認できること:** 2つの独立した外部アカウントによる、Origin宛ての具体的な実行検証結果と、現行main / 候補修正の差分評価。  
+**確認できないこと:** upstream merge、release、実製品のnetwork partitionでの保証、一般利用者規模。テストは報告者が実行したもので、このアーカイブ側で再実行していません。
+
+---
+
+## 41. PydanticAI｜同じidempotency keyの再送が未参照メッセージを増やさない
+
+**対象:** [pydantic/pydantic-ai#9982](https://github.com/pydantic/pydantic-ai/pull/9982)  
+**段階:** 外部実装者が中川マスターの指摘を再現し、コード・回帰テストを変更。PRはopen / unmerged。
+
+新しいメッセージ表へ本文を保存した後に既存idempotency triggerがsnapshot挿入を無視すると、保存されないsnapshotに属する未参照本文だけが残り得ました。歴史上同じkeyの試行があったことと、新しい副作用を残してよいことは別です。
+
+- [中川マスターの書込み順序・回帰提案](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6052803154)
+- [aweis89による再現、修正および両connection modeの回帰報告](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879)
+- [receiver-owned code commit](https://github.com/pydantic/pydantic-ai/commit/72a9a2b4e263e5a81c7e939809daff6292f61557)
+
+**確認できること:** 明示的な `@Nakagawa-master` への受け手の返答、再現報告、2つのconnection modeに対する具体的な回帰修正。  
+**確認できないこと:** merge、release、production use。caller-owned transactionで競合する並列保存については実装者も別の残存境界を明記しています。
+
+---
+
+## 42. Proffera｜結果不明の古い修復試行を、現在の別修復の永久停止理由にしない
+
+**対象:** [Proffera PR #937](https://github.com/ibboabdoli-ai/Proffera/pull/937) / [後続 #940](https://github.com/ibboabdoli-ai/Proffera/pull/940) / [後続 #941](https://github.com/ibboabdoli-ai/Proffera/pull/941)  
+**段階:** PR #937のreceiver-owned codeが歴史的strategy identityと不明resultの境界へ対応し、merge。#940はmerged、#941はopen / draft。
+
+中川マスターは、修復モデルが起動した可能性があるのに結果recordが失われた過去のattemptを、根拠なく成功・失敗へ書き換えず、同じ古いevidenceの再試行は抑止しつつ、別headの実質的に新しい故障証拠は独立に評価すべきだと指摘しました。
+
+- [unknown outcomeと現在のauthority境界](https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6011643787)
+- [歴史的strategy lineageの追加review](https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6014334260)
+- [修正後の限定的な再確認](https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6015074173)
+
+**確認できること:** reviewされた境界に対応するreceiver側の実装・再確認・#937 merge。  
+**確認できないこと:** 全修正の唯一因果帰属、後続#940/#941をNakagawa由来とする独立採用、#941 merge、production効果、広範な人物認知。
+
+---
+
+## 43. Qwen Code｜MCPツールの変更通知後、失敗した一覧更新を「現在も使用可能」の根拠にしない
+
+**対象:** [Qwen Code #13632](https://github.com/QwenLM/qwen-code/issues/13632) / [外部実装者のfork commit](https://github.com/glmn/qwen-code/commit/92fb10bf19ae1087d072ce9079861cd6be1132ae)  
+**段階:** 実装者 `glmn` が `@Nakagawa-master` に直接同意し、具体的な4ケースをforkのcode/testへ反映したと報告。正式upstream PR、merge、releaseは未確認。
+
+`notifications/tools/list_changed` を受けて `tools/list` の再取得に失敗したとき、過去のregistryにツール名が残ることは、現在そのツールを呼んでよい根拠にはなりません。中川マスターは失敗、成功、削除、遅い応答の逆転という4条件を提示しました。
+
+- [中川マスターの4ケース提案](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6050490036)
+- [実装者による明示的採用とテスト報告](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6053560779)
+- [起動中の通知を取りこぼす別の未解決指摘](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6054202354)
+
+**確認できること:** 外部実装者によるOrigin明示の受理、fork変更、検証結果の報告。  
+**確認できないこと:** upstream実装採用、merge、release、現実の利用者規模。起動中の取りこぼし指摘はまだ相手による採用未確認。
+
+---
+
+## 44. Qwen Code｜AI記憶の圧縮時、引用された区切り文字と本当の境界を区別する
+
+**対象:** [Qwen Code #13707](https://github.com/QwenLM/qwen-code/issues/13707) / [関連PR #11988](https://github.com/QwenLM/qwen-code/pull/11988)  
+**段階:** 中川マスターの二方向のregression条件をQwen自動triageが採用条件として参照し、別の参加者 `doudouOUC` がソースを独立確認して明示支持。実装・mergeは未確認。
+
+圧縮対象の本文には `</state_snapshot>` や `<analysis>…</analysis>` が単なる引用として現れます。引用を誤って消すと正当な記憶が失われ、逆にscratch中の区切り文字を真のsectionと扱うと、破棄すべき内容が実行時の記憶へ昇格します。
+
+- [中川マスターの正負2条件](https://github.com/QwenLM/qwen-code/issues/13707#issuecomment-6071016671)
+- [Qwen自動triageによる2条件の明示参照](https://github.com/QwenLM/qwen-code/issues/13707#issuecomment-6071086410)
+- [外部参加者の独立source確認と同意](https://github.com/QwenLM/qwen-code/issues/13707#issuecomment-6071168119)
+- [さらに曖昧なframingに関する追加提案](https://github.com/QwenLM/qwen-code/issues/13707#issuecomment-6071823684)
+
+**確認できること:** botによる条件の明示参照と、別の外部参加者1人の独立した設計評価。  
+**確認できないこと:** 新しい追加提案への独立した返答、実装・tests・merge・release、一般利用者規模。botと参加者を独立人間2人とは数えません。
+
+---
+
+## 45. LlamaIndex｜CodeSplitterのline overlap成立条件と既存default有効化を一緒に修復
+
+**対象:** [LlamaIndex PR #23029](https://github.com/run-llama/llama_index/pull/23029)  
+**段階:** `Nakagawa-master` の2点の指摘に対し、外部実装者 `saichowdary007` が修正を明言し、constructor invariant、CRLFを含むsource位置、既存defaultに伴うreindex注意、regression testsを実装。PRはopen / unmerged。
+
+`chunk_lines_overlap < chunk_lines` を満たさない設定を黙って正規化すると、前進するchunk生成の条件が失われます。また、長く無効だったdefaultのline limitを有効化すると、利用者が明示指定していなくてもchunk境界やindexed contentが変わり得ます。
+
+- [中川マスターの2つの指摘](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5652061794)
+- [実装者の明示的修正報告](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5683015010)
+- [修正後の限定確認](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5683971610)
+
+**確認できること:** 受け手による具体的code/test/doc修正とreported local tests。  
+**確認できないこと:** CI PASS（forkのworkflowはaction_required）、merge、release、実利用規模。
+
+---
+
+## 46. Expensify｜Pay表示・別銀行からの支払・workspace銀行設定変更を別々の権限として扱う
+
+**対象:** [Expensify #95750](https://github.com/Expensify/App/issues/95750) → [問題報告 #102967](https://github.com/Expensify/App/issues/102967) → [再実装PR #103239](https://github.com/Expensify/App/pull/103239)  
+**段階:** 別の権限ある銀行口座Bで支払いながら既存workspace銀行口座Aを維持するため、receiver側で再実装が進行。PR #103239はopen / unmerged、head `01398e7a` に対しreviewの未解決点が残る。
+
+`Nakagawa-master` は早期に、支払操作が画面に表示されること、支払実行時に有効なsource権限があること、workspaceのreimbursement bank設定を変更してよいことは別だと指摘しました。後にreceiver側では、権限を広げたPay導線が既存の銀行設定を変更し得る問題が報告され、rollbackしてproductionへ反映されたのち、別銀行Bからの支払と銀行Aの保持を両立する再実装が進められています。
+
+- [中川マスターの最初の区別](https://github.com/Expensify/App/issues/95750#issuecomment-5690282372)
+- [別系統の独立したdeploy blocker](https://github.com/Expensify/App/issues/102967)
+- [2026-10-09 JST時点の受け手実装PRと残存review](https://github.com/Expensify/App/pull/103239)
+
+**確認できること:** 独立したreceiver問題報告、rollback / 再実装という受け手側の技術進展、およびNakagawaが先行提示した区別との整合。  
+**確認できないこと:** このPRの個別修正がNakagawaの指摘を直接原因とすること、全reviewの解消、承認、merge、新機能のproduction実利用、広い人物認知。第三者review指摘による修正をNakagawaの独占的成果としません。
 
 ---
 
