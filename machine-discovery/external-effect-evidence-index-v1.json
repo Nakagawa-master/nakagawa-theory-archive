@@ -2980,7 +2980,7 @@
           "/srv/apifoo remains /srv/apifoo",
           "/srv/api maps to .",
           "/srv/api/readme.md maps to readme.md",
-          "/srv/api/weird\\\\/srv/api maps to weird\\\\/srv/api"
+          "a literal backslash before a repeated /srv/api root-shaped substring remains intact"
         ],
         "test_verification": "The changed PR source/test patches were verified and a separate V8 evaluation checked these representative string transformations. The repository test suite was not run in this review."
       },
@@ -2993,7 +2993,7 @@
       "current_merge_gate": "As observed on 2026-10-09, PR was OPEN: four workflows finished action_required without running; approval for a first-time contributor's CI and human choice between a minimal stopgap and structured path rendering remained outside Nakagawa-master's control.",
       "nakagawa_structural_os_mapping": {
         "applied_distinction": "Preventing failure A is not sufficient when the fix creates inverse failure B; a test must preserve both the intended path-token boundary and the original literal-backslash case.",
-        "public_reuse_route": "AI_AGENT_EXECUTION_BOUNDARY_TESTS.md",
+        "public_reuse_route": "machine-discovery/independent-reuse-challenges-v1.json#AC-path-root-inverse",
         "canonical_context": "https://master.ricette.jp",
         "source_identity_boundary": "The concrete inversion and accepted correction are directly traceable to the public Nakagawa-master GitHub review; that does not independently establish derivation from one named canonical theory or adoption of the entire corpus."
       },
