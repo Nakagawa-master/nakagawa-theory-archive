@@ -634,6 +634,30 @@
         "a demonstrable bounded per-claim editorial check sufficient without automatic lineage graph"
       ],
       "evidence_boundary": "As of submission, the MusicNerd review is an externally posted C0 proposal only. No third-party response, test change, merge, release, direct human use, or Nakagawa Origin return has been verified on that receiver. The reported source-test hole is static conditional acceptance of an incorrect model verdict, not proof that a live model produces it."
+    },
+    {
+      "id": "AB-retry-subgraph-identity",
+      "distinction": "retry-local invocation position or ordinal != stable callee/subgraph checkpoint identity",
+      "test": "On a non-confidential graph/agent runner with two same-shaped named children RESEARCH and REVIEW, exhaust a retry after a RESEARCH checkpoint is written but before the REVIEW child runs, then resume the same task. Separately change the first child from RESEARCH on attempt 1 to REVIEW on attempt 2. Compare stable-order recovery and changed-order recovery. Do not accept one case as proof of the other.",
+      "positive_evidence": [
+        "For the original fixed-order recovery, the second child REVIEW executes and returns REVIEW rather than replaying RESEARCH.",
+        "For changed order, REVIEW executes against its own checkpoint/namespace or the runtime explicitly rejects an unsupported changed-order contract; it never silently accepts RESEARCH as REVIEW.",
+        "A real executed test checks child execution counts/source identities, not just equality of same-shaped output values."
+      ],
+      "useful_negative_evidence": [
+        "Repro showing a positional counter reset fixes the original case but aliases different subgraphs if the call order changes.",
+        "A documented, test-enforced library contract that dynamic call order must stay stable, with a reasoned non-fit rather than silent wrong-subgraph recovery.",
+        "Evidence that the candidate runner already binds a stable callee identity into its checkpoint, plus tests showing that both original and inverted cases are safe."
+      ],
+      "source_provenance": {
+        "receiver_issue": "https://github.com/langchain-ai/langgraph/issues/9253",
+        "nakagawa_review_counterexample": "https://github.com/langchain-ai/langgraph/issues/9253#issuecomment-6074292557",
+        "independent_receiver_execution": "https://github.com/langchain-ai/langgraph/issues/9253#issuecomment-6077084784",
+        "canonical_related_theory": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/",
+        "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/309/README.md"
+      },
+      "observed_receiver_result": "The original reporter independently executed Nakagawa-master's changed-order negative case: a proposed subgraph-counter reset returned stale RESEARCH without executing review, while the unmodified main returned REVIEW on that inverted sequence. Original fixed-order recovery on main still returned RESEARCH in the reporter's separate reproduction. The reporter asked maintainers whether stable call order is a required contract or callee identity must be bound.",
+      "evidence_boundary": "This is an independent test/response to the Nakagawa-master GitHub counterexample, not an implemented LangGraph fix, merged PR, release, production bug exploit, other-framework applicability proof or any independent reader adoption of this public challenge. The adjacent canonical theory provides a conceptual comparison; its use by LangGraph participants or direct theoretical causation is not demonstrated. Test only an authorized local environment using synthetic data."
     }
   ],
   "evidence_boundary": [
