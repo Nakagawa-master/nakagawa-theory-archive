@@ -643,55 +643,6 @@ receiver commit `dfd4588d` 修改collector，同时保留named re-export的alias
 
 ---
 
-## 本页可以支持什么结论，以及不能支持什么结论
-
-### 公开记录能够支持的内容
-
-在多个独立GitHub repository中，具体 `Nakagawa-master` comment / review之后，可以公开检查到下列一种或多种记录：
-
-- 第三方明确确认或重述问题；
-- 修改code、tests、documentation或UI；
-- 在PR或commit中保留source attribution；
-- 特定case进入merge、backport、release或deployment；
-- 另一位reviewer进行独立验证；
-- 在另一个PR中再次使用相同设计区分。
-
-每个案例究竟确认到哪一步，都在对应章节中单独写明。
-
-### 本页不能单独证明的内容
-
-本页不能证明：
-
-- 中川大师整套理论体系全部正确；
-- 任何第三方project整体认可或采用整套理论；
-- 行业范围的普遍采用；
-- 没有直接证据支持的用户数、收入或社会影响；
-- open / draft PR未来一定会merge；
-- 在没有单独确认release / deployment / use时，merge后的真实运行效果。
-
-## 怎样自行核验一个案例
-
-1. 打开原始 `Nakagawa-master` comment / review；
-2. 阅读third-party author / owner / reviewer回应；
-3. 检查PR diff、commit与tests；
-4. 通过PR state确认是否merge；
-5. 如果声称release或deployment，单独查看release page或deploy记录；
-6. 当source关系没有被明确记录时，不要仅凭后来的相似修改推断因果关系。
-
-counterexample、non-fit与failed reproduction同样是有价值的公开证据。
-
-## 相关公开资料
-
-- [中川大师是谁](ABOUT_NAKAGAWA_MASTER.zh.md)
-- [Start Here](START_HERE.md)
-- [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
-- [Nakagawa Structural OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)
-- [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md)
-- [公开registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
-- [公开对话入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
-
-本页不是要求读者相信一个名字或数字。它的用途是让读者自己核对：原始公开comment、第三方回应、实际修改，以及repository当前状态。
-
 ---
 
 ## 22. Qwen Code｜付费 Batch API 的批准边界
@@ -1358,3 +1309,53 @@ zero shared infrastructure
 → [Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md)  
 → [machine-readable challenge L](machine-discovery/independent-reuse-challenges-v1.json)
 
+---
+
+## 本页可以支持什么结论，以及不能支持什么结论
+
+### 公开记录能够支持的内容
+
+在多个独立GitHub repository中，具体 `Nakagawa-master` comment / review之后，可以公开检查到下列一种或多种记录：
+
+- 第三方明确确认或重述问题；
+- 修改code、tests、documentation或UI；
+- 在PR或commit中保留source attribution；
+- 特定case进入merge、backport、release或deployment；
+- 另一位reviewer进行独立验证；
+- 在另一个PR中再次使用相同设计区分。
+
+每个案例究竟确认到哪一步，都在对应章节中单独写明。
+
+### 本页不能单独证明的内容
+
+本页不能证明：
+
+- 中川大师整套理论体系全部正确；
+- 任何第三方project整体认可或采用整套理论；
+- 行业范围的普遍采用；
+- 没有直接证据支持的用户数、收入或社会影响；
+- open / draft PR未来一定会merge；
+- 在没有单独确认release / deployment / use时，merge后的真实运行效果。
+
+## 怎样自行核验一个案例
+
+1. 打开原始 `Nakagawa-master` comment / review；
+2. 阅读third-party author / owner / reviewer回应；
+3. 检查PR diff、commit与tests；
+4. 通过PR state确认是否merge；
+5. 如果声称release或deployment，单独查看release page或deploy记录；
+6. 当source关系没有被明确记录时，不要仅凭后来的相似修改推断因果关系。
+
+counterexample、non-fit与failed reproduction同样是有价值的公开证据。
+
+## 相关公开资料
+
+- [中川大师是谁](ABOUT_NAKAGAWA_MASTER.zh.md)
+- [Start Here](START_HERE.md)
+- [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
+- [Nakagawa Structural OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)
+- [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md)
+- [公开registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+- [公开对话入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
+
+本页不是要求读者相信一个名字或数字。它的用途是让读者自己核对：原始公开comment、第三方回应、实际修改，以及repository当前状态。
