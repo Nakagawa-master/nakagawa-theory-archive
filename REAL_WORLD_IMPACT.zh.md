@@ -2,7 +2,7 @@
 
 语言: [日本語](REAL_WORLD_IMPACT.md) | [English](REAL_WORLD_IMPACT.en.md) | **中文**
 
-**最后确认：2026-10-07**
+**记录更新：2026-10-09（新增第40–46案的来源已核实，并非对原有全部案例的重新核查）**
 
 中川大师（Nakagawa Master）是Keisuke Nakagawa的笔名。在社交媒体上也使用“マスター（Master）”，部分外部投稿使用“MasterJP”名义。
 
@@ -642,55 +642,6 @@ receiver commit `dfd4588d` 修改collector，同时保留named re-export的alias
 **尚未确认：** 该具体fix在其他使用 `@memberjunction/standards` 的repo中的downstream adoption或用户规模、release范围、一般API兼容性原则的知识优先权、对完整理论体系的认可。
 
 ---
-
-## 本页可以支持什么结论，以及不能支持什么结论
-
-### 公开记录能够支持的内容
-
-在多个独立GitHub repository中，具体 `Nakagawa-master` comment / review之后，可以公开检查到下列一种或多种记录：
-
-- 第三方明确确认或重述问题；
-- 修改code、tests、documentation或UI；
-- 在PR或commit中保留source attribution；
-- 特定case进入merge、backport、release或deployment；
-- 另一位reviewer进行独立验证；
-- 在另一个PR中再次使用相同设计区分。
-
-每个案例究竟确认到哪一步，都在对应章节中单独写明。
-
-### 本页不能单独证明的内容
-
-本页不能证明：
-
-- 中川大师整套理论体系全部正确；
-- 任何第三方project整体认可或采用整套理论；
-- 行业范围的普遍采用；
-- 没有直接证据支持的用户数、收入或社会影响；
-- open / draft PR未来一定会merge；
-- 在没有单独确认release / deployment / use时，merge后的真实运行效果。
-
-## 怎样自行核验一个案例
-
-1. 打开原始 `Nakagawa-master` comment / review；
-2. 阅读third-party author / owner / reviewer回应；
-3. 检查PR diff、commit与tests；
-4. 通过PR state确认是否merge；
-5. 如果声称release或deployment，单独查看release page或deploy记录；
-6. 当source关系没有被明确记录时，不要仅凭后来的相似修改推断因果关系。
-
-counterexample、non-fit与failed reproduction同样是有价值的公开证据。
-
-## 相关公开资料
-
-- [中川大师是谁](ABOUT_NAKAGAWA_MASTER.zh.md)
-- [Start Here](START_HERE.md)
-- [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
-- [Nakagawa Structural OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)
-- [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md)
-- [公开registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
-- [公开对话入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
-
-本页不是要求读者相信一个名字或数字。它的用途是让读者自己核对：原始公开comment、第三方回应、实际修改，以及repository当前状态。
 
 ---
 
@@ -1358,3 +1309,123 @@ zero shared infrastructure
 → [Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md)  
 → [machine-readable challenge L](machine-discovery/independent-reuse-challenges-v1.json)
 
+---
+
+## 40. LangGraph｜恢复另一个中断任务，不应再次执行已完成的兄弟任务
+
+**对象：** [LangGraph issue #9106](https://github.com/langchain-ai/langgraph/issues/9106) / [候选PR #9113](https://github.com/langchain-ai/langgraph/pull/9113)。**阶段：** 两名不同的外部参与者直接回复 `@Nakagawa-master` 并提交实际执行的回归结果；#9113已关闭，未merge。
+
+中川大师将“过去对任务A的批准记录”与“恢复B时重新执行A的当前权限”分开。[原始回归要求](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-5981994895)收到了[gomission的36个fresh-process场景](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416)和[notforhumansfun-rgb另外8个copied-checkpoint场景](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094)的独立结果。
+
+**可确认：** 两个外部账号针对具体问题的执行报告及面向Origin的明确回复。**不可确认：** 本档案自行重跑测试、上游merge/release、真实网络分区保证、广泛用户认知。
+
+---
+
+## 41. PydanticAI｜相同idempotency key的重试不应留下未引用消息
+
+**对象：** [PR #9982](https://github.com/pydantic/pydantic-ai/pull/9982)。**阶段：** 外部作者重现中川大师指出的错误，并修改代码与回归测试；PR仍open / unmerged。
+
+如果先写入新 `snapshot_messages`，随后幂等触发器才跳过重复snapshot，数据库可能只留下永不被引用的消息。[中川大师的分析](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6052803154)得到[作者aweis89明确的重现与修复反馈](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879)，对应[receiver commit](https://github.com/pydantic/pydantic-ai/commit/72a9a2b4e263e5a81c7e939809daff6292f61557)。
+
+**可确认：** Origin明确归属的第三方重现与两种connection mode的代码/测试改动。**不可确认：** merge、release、正式使用，以及作者仍指出的caller-owned并发保存问题是否已彻底解决。
+
+---
+
+## 42. Proffera｜结果不明的历史修复尝试，不应永久阻断新证据
+
+**对象：** [PR #937](https://github.com/ibboabdoli-ai/Proffera/pull/937)。**阶段：** 历史strategy identity和unknown outcome相关实现修改并merge；后续[#940](https://github.com/ibboabdoli-ai/Proffera/pull/940)已merge、[#941](https://github.com/ibboabdoli-ai/Proffera/pull/941)仍open/draft，但不能将后续全部工作归功于中川大师。
+
+[原始历史与当前权限区分](https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6011643787)及[保留原strategy lineage的review](https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6014334260)强调：不应把未知结果改写为失败，也不应让一项过期尝试阻止不同head上的新问题。 [限定修复复查](https://github.com/ibboabdoli-ai/Proffera/pull/937#issuecomment-6015074173)检查了对应receiver源码。
+
+**可确认：** 相关receiver代码、测试、merge。**不可确认：** 唯一因果归属、后续所有修改的Nakagawa来源、部署、生产使用和广泛人物认知。
+
+---
+
+## 43. Qwen Code｜MCP目录变更通知后，旧工具不自动保留执行资格
+
+**对象：** [issue #13632](https://github.com/QwenLM/qwen-code/issues/13632) / [第三方fork commit](https://github.com/glmn/qwen-code/commit/92fb10bf19ae1087d072ce9079861cd6be1132ae)。**阶段：** 实现者 `glmn` 明确感谢 `@Nakagawa-master` 并在fork中报告实现与测试；尚无确认的upstream merge或release。
+
+MCP服务发送 `tools/list_changed` 后，如果刷新 `tools/list` 失败，旧registry记录不等于当前可调用权限。[四项验收条件](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6050490036)获得[外部实现者明确采纳](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6053560779)，通过server-local stale gate与revision校验处理；[启动阶段的另一个通知丢失问题](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6054202354)尚未得到采纳确认。
+
+**可确认：** 有Origin归属的外部fork代码与作者执行报告。**不可确认：** 上游PR、merge、release、最终用户规模或启动问题的修复。
+
+---
+
+## 44. Qwen Code｜被引用的压缩边界符不一定是真正的记忆边界
+
+**对象：** [issue #13707](https://github.com/QwenLM/qwen-code/issues/13707) / [关联PR #11988](https://github.com/QwenLM/qwen-code/pull/11988)。**阶段：** Qwen自动triage明确引用Nakagawa的双向回归条件，另一位外部参与者独立检查源码并支持；尚未确认对应修复。
+
+[中川大师的两个验收控制](https://github.com/QwenLM/qwen-code/issues/13707#issuecomment-6071016671)同时防止合法引用被删除以及草稿被错误提升为正式记忆。[Qwen自动triage](https://github.com/QwenLM/qwen-code/issues/13707#issuecomment-6071086410)引用两项条件，[doudouOUC独立阅读源码并赞同](https://github.com/QwenLM/qwen-code/issues/13707#issuecomment-6071168119)。后续的[格式不可判定性补充](https://github.com/QwenLM/qwen-code/issues/13707#issuecomment-6071823684)尚无独立回应。
+
+**可确认：** 自动triage与一位非bot外部参与者的明确设计评价。**不可确认：** 修复代码、测试、merge、release、用户规模。bot不计算为第二名独立人类。
+
+---
+
+## 45. LlamaIndex｜同时约束CodeSplitter的行overlap和默认值启用风险
+
+**对象：** [PR #23029](https://github.com/run-llama/llama_index/pull/23029)。**阶段：** 外部作者根据中川大师的两项review修改code/test/docs；PR open / unmerged。
+
+[原始review](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5652061794)要求 `0 <= chunk_lines_overlap < chunk_lines`，并指出激活原本未生效的默认行限制可能改变chunk及已建索引。[作者确认具体实现](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5683015010)；[限定复查](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5683971610)明确区分作者报告的本地通过与尚未通过的action-required CI。
+
+**可确认：** 第三方代码、回归测试与迁移说明。**不可确认：** upstream CI通过、merge、release、真实用户规模。
+
+---
+
+## 46. Expensify｜Pay操作权限不等于workspace银行设置的变更权限
+
+**对象：** [issue #95750](https://github.com/Expensify/App/issues/95750) → [独立故障#102967](https://github.com/Expensify/App/issues/102967) → [重构PR #103239](https://github.com/Expensify/App/pull/103239)。**阶段：** receiver侧代码进展至head `01398e7a`，review仍存在未解决点；PR open / unmerged。
+
+[中川大师此前提出的区分](https://github.com/Expensify/App/issues/95750#issuecomment-5690282372)分开了Pay按钮可见、使用指定资金来源付款的当前权限、修改workspace reimbursement bank的权限。后来receiver独立报告原有bank A可能被替换的风险、完成rollback，并重新实现使用授权bank B而不覆盖A的路径。该head仍有跨workspace账户选择、backend响应验证与性能相关review问题。
+
+**可确认：** receiver侧独立bug报告、rollback及后续技术实现进展，与此前结构区分方向一致。**不可确认：** 最新具体修复由Nakagawa直接导致、review认可、merge、新功能生产使用或广泛人物认知。遵守该repo的停止追加评论要求，不对外接触。
+
+---
+
+## 本页可以支持什么结论，以及不能支持什么结论
+
+### 公开记录能够支持的内容
+
+在多个独立GitHub repository中，具体 `Nakagawa-master` comment / review之后，可以公开检查到下列一种或多种记录：
+
+- 第三方明确确认或重述问题；
+- 修改code、tests、documentation或UI；
+- 在PR或commit中保留source attribution；
+- 特定case进入merge、backport、release或deployment；
+- 另一位reviewer进行独立验证；
+- 在另一个PR中再次使用相同设计区分。
+
+每个案例究竟确认到哪一步，都在对应章节中单独写明。
+
+### 本页不能单独证明的内容
+
+本页不能证明：
+
+- 中川大师整套理论体系全部正确；
+- 任何第三方project整体认可或采用整套理论；
+- 行业范围的普遍采用；
+- 没有直接证据支持的用户数、收入或社会影响；
+- open / draft PR未来一定会merge；
+- 在没有单独确认release / deployment / use时，merge后的真实运行效果。
+
+## 怎样自行核验一个案例
+
+1. 打开原始 `Nakagawa-master` comment / review；
+2. 阅读third-party author / owner / reviewer回应；
+3. 检查PR diff、commit与tests；
+4. 通过PR state确认是否merge；
+5. 如果声称release或deployment，单独查看release page或deploy记录；
+6. 当source关系没有被明确记录时，不要仅凭后来的相似修改推断因果关系。
+
+counterexample、non-fit与failed reproduction同样是有价值的公开证据。
+
+## 相关公开资料
+
+- [中川大师是谁](ABOUT_NAKAGAWA_MASTER.zh.md)
+- [Start Here](START_HERE.md)
+- [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
+- [Nakagawa Structural OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)
+- [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md)
+- [公开registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+- [公开对话入口](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
+
+本页不是要求读者相信一个名字或数字。它的用途是让读者自己核对：原始公开comment、第三方回应、实际修改，以及repository当前状态。
