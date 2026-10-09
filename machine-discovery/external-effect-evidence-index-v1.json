@@ -2909,6 +2909,50 @@
         "whole-theory adoption"
       ],
       "verification_boundary": "issue-body acceptance criteria updated with the gate, executable A/B/shared-gate tests, maintainer disposition, merge/release of those tests, independent operational use, or later prompt-free Person-Origin rereference"
+    },
+    {
+      "case_id": "pydantic-ai-9982-idempotent-retry-unreferenced-messages",
+      "topic": "A duplicate-key retry can be correctly ignored as a snapshot while still leaving newly inserted, unreferenced message rows if the idempotency check runs too late.",
+      "external_repository": "pydantic/pydantic-ai",
+      "human_evidence": "REAL_WORLD_IMPACT.md (case 41; Japanese, with parallel English and Chinese evidence pages)",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "pull_request_comment",
+        "url": "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6052803154",
+        "summary": "In the new SQLite snapshot_messages deduplication path, _store_messages ran before the snapshot-idempotency trigger. A reused key with a different or longer message history could retain unreferenced messages even while the snapshot INSERT was ignored."
+      },
+      "explicit_receiver_return": {
+        "actor": "aweis89",
+        "url": "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879",
+        "origin_preserved": true,
+        "reproduced": "The PR author reproduced a duplicate-key retry adding 4 snapshot_messages rows instead of 2 in both store-owned and caller-owned connection setups.",
+        "independent_change": "The PR author fixed the ordering at commit 72a9a2b4 and added test_idempotent_retry_does_not_store_its_messages for both connection modes."
+      },
+      "receiver_implementation": {
+        "url": "https://github.com/pydantic/pydantic-ai/commit/72a9a2b4e263e5a81c7e939809daff6292f61557",
+        "in_open_pr": "https://github.com/pydantic/pydantic-ai/pull/9982",
+        "author_reported_test": true,
+        "verified_scope": "Committed source and regression-test changes on the external contributor branch; the author explicitly acknowledges the source review."
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "causal_boundary": "A directly acknowledged reviewer finding was reproduced and fixed by the independent PR author. This is one receiver-owned implementation line, not an upstream merge, production-use proof, or independent repeated human recognition.",
+      "known_remaining_scope": "The author explicitly noted that concurrent same-key saves using caller-owned connections can both pass the early check because the store does not own the caller's transaction; do not claim concurrent exactly-once semantics.",
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "A historical idempotency record / suppressed final row is not sufficient proof that an attempted operation caused no earlier side effects.",
+        "public_practitioner_route": "CURRENT_AUTHORITY_REUSE_KIT.md",
+        "canonical_theory_context": "https://master.ricette.jp/",
+        "source_identity_boundary": "The concrete SQLite regression was supplied in a public Nakagawa-master review. Its derivation from any particular original theory is not independently established by this software fix."
+      },
+      "not_claimed": [
+        "upstream merge",
+        "release",
+        "production deployment or end-user feature use",
+        "concurrent caller-owned transaction exactly-once guarantee",
+        "second independent receiving implementer",
+        "broad or recurring human person recognition",
+        "endorsement of the entire Nakagawa theory corpus"
+      ],
+      "verification_boundary": "Independently check the PR author's exact current code, the replay regression and its two connection modes; look separately for maintainer review/merge, release and real independent reuse before advancing any evidence stage."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
