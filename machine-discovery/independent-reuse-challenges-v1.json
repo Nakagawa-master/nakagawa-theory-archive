@@ -735,6 +735,27 @@
       "nakagawa_review": "https://github.com/QwenLM/qwen-code/pull/13729#pullrequestreview-5467306105",
       "receiver_source_fix": "https://github.com/QwenLM/qwen-code/commit/5d9b9a1f3bf0a006a8ce2ff4855effd10e330bdf",
       "evidence_boundary": "The independent contributor explicitly credited and implemented this bounded invalid-ordinal review finding. The original ordinary rewind correction predates the finding; full CI and upstream merge were not verified."
+    },
+    {
+      "id": "AG-historical-hosted-tool-compaction-not-live-authority",
+      "distinction": "A historical tool-call item can require a schema declaration for decoding/compaction without authorizing that tool for future agent execution.",
+      "test": "In an authorized local AI-agent/runtime test fixture, create synthetic persisted history containing one completed hosted web_search_call with its response/provenance and an ordinary answer. Disable hosted web search in the live tool router. (A) Run history-preserving compaction with the current allowed tool inventory and capture item-type/declaration inventory and typed errors; (B) if the destination compaction protocol requires a hosted declaration to parse that legacy item, provide it only on the isolated compaction serialization path. Require that compaction retains the original answer/citation relationship, then attempt a fresh ordinary turn and check that web_search is still NOT offered as a callable tool. (C) Compare a modern custom_tool_call(name=exec)+output history; (D) inject a synthetic SSE error frame and assert the specific upstream error survives diagnostics rather than being flattened to a generic missing-completion message.",
+      "positive_evidence": [
+        "The historical hosted item and its citations can be compacted or explicitly rejected with a non-lossy, typed unsupported-history diagnostic; it is not silently deleted to make a test pass.",
+        "A declaration necessary for compaction-time decoding is scoped to the compaction request, and a later normal agent turn still uses only the current router's allowed tools.",
+        "An observed upstream SSE error event is surfaced as a distinct actionable error, not automatically mislabeled as an unobserved network disconnect.",
+        "A modern current-tool or custom_tool_call historical path continues to work unchanged."
+      ],
+      "useful_negative_evidence": [
+        "Compaction appears to work only after deleting the historical tool call or silently fabricating a replacement citation/result.",
+        "Because the compaction request declares web_search, the normal live turn can now invoke hosted web search despite the live router having disabled it.",
+        "The environment uses a backend that intentionally cannot represent hosted history, and its documented typed rejection preserves user data; this is a valid non-fit, not evidence that a tool should be re-enabled.",
+        "Imported-history remote v2 and natural-history local compaction have different code paths; proof for one does not by itself prove a common root cause in the other."
+      ],
+      "external_verified_case": "https://github.com/openai/codex/issues/51962",
+      "nakagawa_review": "https://github.com/openai/codex/issues/51962#issuecomment-6057390199",
+      "independent_human_response": "https://github.com/openai/codex/issues/51962#issuecomment-6082971210",
+      "evidence_boundary": "The initial 0.161.0 reporter and independent 0.162.0 Linux reporter supplied their own A/B evidence; the latter explicitly agrees with the preceding Nakagawa-master distinction. No external maintainers' implemented fix, shipped repair, direct handle acknowledgment by this reporter, unrelated framework adoption, user repair or whole-theory endorsement is established. Do not replay private credentials or sensitive histories."
     }
   ],
   "evidence_boundary": [
