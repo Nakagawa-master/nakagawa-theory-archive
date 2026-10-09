@@ -678,6 +678,63 @@
       "independent_receiver_change": "https://github.com/QwenLM/qwen-code/pull/13751#issuecomment-6079540115",
       "machine_evidence_index": "machine-discovery/external-effect-evidence-index-v1.json",
       "evidence_boundary": "The Qwen contributor directly acknowledged the Nakagawa review and changed code/tests, supporting one bounded C2 receiver-owned correction. The same PR still required maintainer CI authorization and design disposition as of the checked date; no merge, runtime deployment, cross-framework adoption, second human responder or wider theory adoption has been verified."
+    },
+    {
+      "id": "AD-cross-remote-resume-recipient-scope",
+      "distinction": "A parent-level authorization or resume map is not inherently the authorized payload of each child recipient.",
+      "test": "Create two independently owned remote graph sessions A and B, each paused at a different interrupt ID. Resume the parent with {idA: answerA, idB: answerB}. Capture the exact remote requests. A must receive only {idA: answerA} and B only {idB: answerB}. Repeat with a single matching ID and a foreign-only ID: matching must still resume, foreign-only must not be transmitted as input or as a resume to the wrong remote. Run sync and async variants if both are supported.",
+      "positive_evidence": [
+        "Two recipient-specific recorded outbound requests contain only the interrupt IDs owned by their intended remote.",
+        "Single-ID positive control still resumes correctly; foreign-only maps do not resume the wrong remote.",
+        "Cross-remote execution identity and permission boundaries remain stable across retry and checkpoint restore."
+      ],
+      "useful_negative_evidence": [
+        "One remote sees the parent's full map despite matching only one local ID.",
+        "A runner without distinct remote sessions documents that this exact cross-remote scenario does not fit, and proves its own boundary.",
+        "A remote API independently rejects foreign IDs, but the client still leaked those values over the request boundary: rejection is not enough to claim non-disclosure."
+      ],
+      "external_verified_case": "https://github.com/langchain-ai/langgraph/pull/9252",
+      "nakagawa_review": "https://github.com/langchain-ai/langgraph/pull/9252#pullrequestreview-5467723390",
+      "receiver_source_fix": "https://github.com/langchain-ai/langgraph/commit/9a0b96693613e2e5bba4609b5d2c842a79839dbb",
+      "evidence_boundary": "One external contributor committed an exact paired test and a recipient-scoped filter. PR remains unmerged at the observed head; source match is not a direct verbal attribution, and no other library's behavior or user deployment was checked."
+    },
+    {
+      "id": "AE-expression-index-leading-prefix",
+      "distinction": "A named key column appearing somewhere inside an index is not proof that it starts a usable leftmost prefix when an earlier key part is a functional expression.",
+      "test": "Create or mock an index on Orders with two ordered key parts. Negative: ((LOWER(Code)), CustomerID) must not count as left-prefix coverage of foreign key Orders.CustomerID. Positive: (CustomerID, (LOWER(Code))) must count as coverage. Repeat with PostgreSQL expression attnum 0 and MySQL NULL COLUMN_NAME catalog rows, preserving the slot positions while checking index recommendation behavior.",
+      "positive_evidence": [
+        "Expression-first mapper retains a slot that blocks CustomerID prefix coverage and proposes the missing FK-leading index.",
+        "CustomerID-first index keeps correct coverage even with an expression in a later key slot.",
+        "Actual catalog query or faithful metadata fixture proves both ordinal interpretations, not merely a preassembled columns list."
+      ],
+      "useful_negative_evidence": [
+        "Dropping expression positions makes a non-leading CustomerID appear to be first and suppresses a needed proposal.",
+        "Blanket exclusion of every index containing any expression incorrectly misses the positive control.",
+        "For a database engine/index type that cannot use the chosen composite key, a documented non-fit or alternate supported index with test."
+      ],
+      "external_verified_case": "https://github.com/MemberJunction/MJ/pull/5258",
+      "nakagawa_review": "https://github.com/MemberJunction/MJ/pull/5258#pullrequestreview-5466937795",
+      "independent_author_ack": "https://github.com/MemberJunction/MJ/pull/5258#issuecomment-6084898393",
+      "evidence_boundary": "The external author acknowledged the reviewer and implemented the mapper/test pair; repository CI is green at the checked head, but the PR is not merged and actual customer index migrations are unmeasured."
+    },
+    {
+      "id": "AF-retained-identity-safe-successor",
+      "distinction": "A persisted identifier's digits matching syntax does not imply that its numeric successor can be represented safely for a resumed identity generator.",
+      "test": "In an isolated transcript-resume parser, construct a retained file-history snapshot with session s and IDs s########12, s########<400 nines>, s########9007199254740992 and s########9007199254740991. Ensure the next generated ID uses the highest valid safe-successor ordinal (s########13) rather than Infinity, rounded aliases or a nonparseable token. Independently confirm that surviving valid IDs advance monotonically and foreign-session IDs are ignored.",
+      "positive_evidence": [
+        "Malformed/oversized/unsafe-successor ordinals are rejected before seeding a next prompt ID.",
+        "Valid ordinal 12 produces 13 and is not suppressed by corrupt retained snapshot metadata.",
+        "Reopen/resume uses the same stable identity and parsing contract as the initial generator."
+      ],
+      "useful_negative_evidence": [
+        "`/^\\d+$/` plus unchecked Number parsing yields Infinity for hundreds of digits.",
+        "Checking Number.isSafeInteger(turn) without validating turn+1 still permits a MAX_SAFE_INTEGER successor overflow.",
+        "A completely opaque UUID-based generator with no numeric ordinals can report non-fit and show no analogous truncation/reuse path."
+      ],
+      "external_verified_case": "https://github.com/QwenLM/qwen-code/pull/13729",
+      "nakagawa_review": "https://github.com/QwenLM/qwen-code/pull/13729#pullrequestreview-5467306105",
+      "receiver_source_fix": "https://github.com/QwenLM/qwen-code/commit/5d9b9a1f3bf0a006a8ce2ff4855effd10e330bdf",
+      "evidence_boundary": "The independent contributor explicitly credited and implemented this bounded invalid-ordinal review finding. The original ordinary rewind correction predates the finding; full CI and upstream merge were not verified."
     }
   ],
   "evidence_boundary": [

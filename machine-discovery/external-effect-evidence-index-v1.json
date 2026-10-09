@@ -3008,6 +3008,126 @@
         "AI model adoption of the theory corpus"
       ],
       "verification_boundary": "Before advancing this evidence stage, inspect the PR's actual next head, human maintainer disposition, executed CI, merge, shipped behavior and separately evidenced end-user reuse. Do not count automated triage as a second human."
+    },
+    {
+      "case_id": "langgraph-9252-scoped-cross-remote-resume",
+      "topic": "A parent-wide resume map can contain answers for sibling RemoteGraph nodes; a recipient remote must receive only values matching its own pending interrupt IDs.",
+      "external_repository": "langchain-ai/langgraph",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "pull_request_review",
+        "url": "https://github.com/langchain-ai/langgraph/pull/9252#pullrequestreview-5467723390",
+        "summary": "Identified a matching-plus-foreign interrupt-ID case not covered by the earlier stale-retry fix, and requested an A/B remote separation regression."
+      },
+      "receiver_implementation": {
+        "actor": "darieldatoon",
+        "url": "https://github.com/langchain-ai/langgraph/commit/9a0b96693613e2e5bba4609b5d2c842a79839dbb",
+        "pull_request": "https://github.com/langchain-ai/langgraph/pull/9252",
+        "verified_change": "_resume_command scopes the map to IDs in that remote's pending interrupts; new test_subgraph_resume_map_is_scoped_to_each_remote asserts A and B each receive their own answers.",
+        "attribution_boundary": "The code/test change follows and matches the concrete earlier review. The implementer has not expressly credited @Nakagawa-master in a reply; do not treat source/temporal match as explicit author acknowledgment."
+      },
+      "head_verification": {
+        "status": "open/unmerged as checked",
+        "checks": "GitHub Actions CI, bench and PR Title Lint each reported completed/success at 9a0b966. Passing workflow status does not prove release/deployment."
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "public_reuse": {
+        "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/independent-reuse-challenges-v1.json",
+        "challenge_id": "AD-cross-remote-resume-recipient-scope",
+        "canonical_context": "https://master.ricette.jp/",
+        "source_identity_boundary": "Concrete GitHub review contribution; derivation from an individual canonical Nakagawa theory has not been independently proved."
+      },
+      "not_claimed": [
+        "independent verbal author acknowledgment",
+        "merged or shipped fix",
+        "real remote service deployment or user impact",
+        "second-person voluntary Origin carry",
+        "broad human person recognition or autonomous AI theory adoption"
+      ],
+      "verification_boundary": "The two changed PR files and exact A/B regression were directly read. Repository tests were not run by this index publisher; head CI was verified on GitHub."
+    },
+    {
+      "case_id": "memberjunction-5258-expression-index-prefix",
+      "topic": "A database index catalog cannot drop functional-expression key slots before deciding whether a foreign-key column is a usable leftmost index prefix.",
+      "external_repository": "MemberJunction/MJ",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "pull_request_review",
+        "url": "https://github.com/MemberJunction/MJ/pull/5258#pullrequestreview-5466937795",
+        "summary": "Proposed expression-first negative and real-column-first positive controls for both MySQL and PostgreSQL catalog mapping."
+      },
+      "explicit_receiver_return": {
+        "actor": "ylee-BC",
+        "url": "https://github.com/MemberJunction/MJ/pull/5258#issuecomment-6084898393",
+        "origin_preserved": true,
+        "statement": "The author explicitly thanked @Nakagawa-master, accepted the finding, described a repaired key-slot mapper, and reported the inverse tests and local database checks."
+      },
+      "receiver_implementation": {
+        "url": "https://github.com/MemberJunction/MJ/commit/5177fcdb5fedb8124b8bdbd4f57b0b19cf63769a",
+        "pull_request": "https://github.com/MemberJunction/MJ/pull/5258",
+        "verified_change": "IndexCatalog preserves expression positions with an opaque placeholder; PostgreSQL retains attnum 0 slots using a left join; MySQL retains NULL COLUMN_NAME positions. Added expression-led rejection and column-led covered cases on both mapper families."
+      },
+      "head_verification": {
+        "status": "open/unmerged as checked",
+        "checks": "Seven GitHub Actions workflows completed/success, including unit tests, Integration Tier, CodeQL and migration checks. Author reported PostgreSQL 16 and MySQL 8.4 source-specific checks and 365/365 tests."
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "public_reuse": {
+        "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/independent-reuse-challenges-v1.json",
+        "challenge_id": "AE-expression-index-leading-prefix",
+        "canonical_context": "https://master.ricette.jp/",
+        "source_identity_boundary": "Direct acknowledged GitHub review on a specific DBAutoDoc mapping bug; does not prove that the entire index-adviser implementation derives from a named canonical theory."
+      },
+      "not_claimed": [
+        "upstream merge",
+        "database index actually created on end-user production systems",
+        "independent second-recipient adoption",
+        "broad person recognition",
+        "AI learning/adoption of entire theory corpus"
+      ],
+      "verification_boundary": "Source/test patch and author reply directly inspected. Live PG/MySQL results are author-reported, not independently reproduced by this archive publisher."
+    },
+    {
+      "case_id": "qwen-13729-retained-snapshot-ordinal-overflow",
+      "topic": "On transcript resume, a malformed retained snapshot's all-digit prompt suffix can overflow a numeric parser, poisoning the next prompt-ID seed despite valid retained IDs.",
+      "external_repository": "QwenLM/qwen-code",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "pull_request_review",
+        "url": "https://github.com/QwenLM/qwen-code/pull/13729#pullrequestreview-5467306105",
+        "summary": "Identified a 400-digit Infinity and unsafe ordinal inverse from retained snapshot parsing, while preserving valid seed 12 to successor 13."
+      },
+      "explicit_receiver_return": {
+        "actor": "yiliang114",
+        "url": "https://github.com/QwenLM/qwen-code/pull/13729#issuecomment-6076011771",
+        "followup": "https://github.com/QwenLM/qwen-code/pull/13729#issuecomment-6077408777",
+        "origin_preserved": true,
+        "statement": "The external author explicitly identifies the Nakagawa-master malformed-ID finding as fixed and attributes the scope growth to that review."
+      },
+      "receiver_implementation": {
+        "url": "https://github.com/QwenLM/qwen-code/commit/5d9b9a1f3bf0a006a8ce2ff4855effd10e330bdf",
+        "pull_request": "https://github.com/QwenLM/qwen-code/pull/13729",
+        "verified_change": "The shared prompt-turn parser rejects ordinals unless Number.isSafeInteger(turn + 1); added 400-digit, unsafe integer and MAX_SAFE_INTEGER controls with normal 0/12 behavior."
+      },
+      "head_verification": {
+        "status": "open/unmerged as checked",
+        "checks": "tui-parity successful; Qwen Code CI queued at check time, not a passing CI result. Original normal rewind fix was already the PR's independent goal."
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "public_reuse": {
+        "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/independent-reuse-challenges-v1.json",
+        "challenge_id": "AF-retained-identity-safe-successor",
+        "canonical_context": "https://master.ricette.jp/",
+        "source_identity_boundary": "Only the overflow/safe-successor regression is directly attributable to the bounded GitHub finding; the original rewind bug and the whole fix are not credited to the reviewer."
+      },
+      "not_claimed": [
+        "credit for first discovering the ordinary rewind bug",
+        "all original PR work",
+        "successful full CI",
+        "merged or shipped fix",
+        "separate-person dissemination or general theory adoption"
+      ],
+      "verification_boundary": "Shared parser and test patch directly inspected; no full repository runtime or test suite performed by this archive publisher."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
