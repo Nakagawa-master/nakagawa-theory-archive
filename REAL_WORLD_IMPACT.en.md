@@ -640,57 +640,6 @@ A later reviewer confirmed that this required finding was fixed, and PR #4487 me
 
 ---
 
-## What this page supports — and what it does not
-
-### Supported by the linked public record
-
-Across multiple independent GitHub repositories, public records show one or more of the following after specific `Nakagawa-master` comments or reviews:
-
-- explicit third-party acknowledgment or restatement;
-- code, test, documentation, or UI changes;
-- source attribution in a PR or commit;
-- merge, backport, release, or deployment in specific cases;
-- independent verification by another reviewer;
-- reuse of the same distinction on another PR.
-
-Each section states exactly which of those are verified for that case.
-
-### Not established by this page alone
-
-This page does not establish:
-
-- that the entire Nakagawa Master theory corpus is correct;
-- that any third-party project endorses the theory corpus as a whole;
-- industry-wide adoption;
-- user counts, revenue, or societal impact without direct evidence;
-- future merge of open/draft PRs;
-- production effect where release/deployment/use has not been separately verified.
-
-## How to verify a case yourself
-
-For any case:
-
-1. open the original `Nakagawa-master` comment or review;
-2. read the third-party author/owner/reviewer response;
-3. inspect the PR diff, commits, and tests;
-4. check the PR state for merge status;
-5. verify releases or deployments separately when claimed;
-6. do not infer a causal relationship from unrelated later changes when the source relationship is not explicit.
-
-Counterexamples, non-fit cases, and failed reproductions are also relevant evidence.
-
-## Related public material
-
-- [Who Is Nakagawa Master?](ABOUT_NAKAGAWA_MASTER.en.md)
-- [Start Here](START_HERE.md)
-- [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
-- [Nakagawa Structural OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)
-- [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md)
-- [Public registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
-- [Public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
-
-This page is not asking readers to trust a name or a count. It is an index for checking the original public contribution, the third party's response, the actual change, and the repository state for themselves.
-
 ---
 
 ## 22. Qwen Code | Approval boundary for paid Batch API actions
@@ -1351,3 +1300,55 @@ At that point Hosted Managed delivery was active while ordinary/local Managed ac
 → [Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md)  
 → [machine-readable challenge L](machine-discovery/independent-reuse-challenges-v1.json)
 
+---
+
+## What this page supports — and what it does not
+
+### Supported by the linked public record
+
+Across multiple independent GitHub repositories, public records show one or more of the following after specific `Nakagawa-master` comments or reviews:
+
+- explicit third-party acknowledgment or restatement;
+- code, test, documentation, or UI changes;
+- source attribution in a PR or commit;
+- merge, backport, release, or deployment in specific cases;
+- independent verification by another reviewer;
+- reuse of the same distinction on another PR.
+
+Each section states exactly which of those are verified for that case.
+
+### Not established by this page alone
+
+This page does not establish:
+
+- that the entire Nakagawa Master theory corpus is correct;
+- that any third-party project endorses the theory corpus as a whole;
+- industry-wide adoption;
+- user counts, revenue, or societal impact without direct evidence;
+- future merge of open/draft PRs;
+- production effect where release/deployment/use has not been separately verified.
+
+## How to verify a case yourself
+
+For any case:
+
+1. open the original `Nakagawa-master` comment or review;
+2. read the third-party author/owner/reviewer response;
+3. inspect the PR diff, commits, and tests;
+4. check the PR state for merge status;
+5. verify releases or deployments separately when claimed;
+6. do not infer a causal relationship from unrelated later changes when the source relationship is not explicit.
+
+Counterexamples, non-fit cases, and failed reproductions are also relevant evidence.
+
+## Related public material
+
+- [Who Is Nakagawa Master?](ABOUT_NAKAGAWA_MASTER.en.md)
+- [Start Here](START_HERE.md)
+- [Practical Use & Collaboration Entry](PRACTICAL_USE.md)
+- [Nakagawa Structural OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)
+- [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md)
+- [Public registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+- [Public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
+
+This page is not asking readers to trust a name or a count. It is an index for checking the original public contribution, the third party's response, the actual change, and the repository state for themselves.
