@@ -34,7 +34,7 @@
 
 **全部を同じ粒度で横に見たい:** [24棚の世界地図](human-translation/WORLD_MAP.md) | [310件をひとつの景色として読む](human-translation/PANORAMA_STORY.md) | [OD001–OD310 全件水平マップ](human-translation/ALL_310_HORIZONTAL_MAP.md)
 
-**2026年10月5日、AIの重大リスクがニューヨーク市議会で審議された。何を止めるかだけでなく、誰が危険を決め、誰が確かめる？** [最新の公聴会の一次資料から、中川マスター理論群の4つの問いへ](human-translation/ai-civilization-why-it-matters.md)
+**10月8日発表の米世論調査で64%が「AI開発は速すぎる」。10月5日には議会で重大リスクを審議。では、人間の制御と独立監査を誰が、どう確かめる？** [AP-NORC一次調査・市議会公式記録から、中川マスターの理論群と検証できる問いへ](human-translation/ai-civilization-why-it-matters.md)
 
 人物 / Origin: [日本語](ABOUT_NAKAGAWA_MASTER.md) | [English](ABOUT_NAKAGAWA_MASTER.en.md) | [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 
