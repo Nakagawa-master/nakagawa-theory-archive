@@ -686,56 +686,6 @@ receiver commit `dfd4588d` は、export aliasとsource declaration nameの両方
 
 ---
 
-## このページから言えること／言えないこと
-
-### 公開記録から確認できること
-
-複数の独立したGitHub repositoryで、`Nakagawa-master` 名義の具体的なコメントやreviewに対して、第三者が次のいずれかを行った公開記録があります。
-
-- 内容を明示的に確認・再説明した
-- code / tests / documentation / UIを変更した
-- source relationをPR本文やcommitで明示した
-- merge、backport、release、deploymentまで進んだ
-- 別のreviewerまたは別のPRで同じ区別を再利用した
-
-どの事例がどこまで進んでいるかは、各節に個別に記載しています。
-
-### このページだけでは言えないこと
-
-- 中川マスターの理論体系全体が正しいこと
-- 各第三者projectが理論体系全体を支持・採用していること
-- ここにないprojectや業界全体への影響
-- 公開記録がない利用者数、売上、社会的効果
-- open / draft PRについて、将来mergeされること
-- merge済み変更について、release / deployment /利用が確認できない場合の実運用効果
-
-このページは、確認できる範囲を超えて推測しません。
-
-## 自分で確認する方法
-
-事例を検証するときは、次の順にリンクを確認してください。
-
-1. `Nakagawa-master` の元comment / reviewを開く
-2. third-party author / owner / reviewerの応答を確認する
-3. PR diff、commit、test変更を確認する
-4. merge済みかどうかをPR stateで確認する
-5. releaseやdeploymentを主張する場合は、release pageやdeploy記録を別に確認する
-6. source relationが明示されていない変更は、このページだけを根拠に因果関係を推定しない
-
-反証可能性を残すため、counterexampleや「この事例では適用できない」という結果も重要です。
-
-## 関連する公開資料
-
-- [中川マスターとは｜この公開アーカイブで確認できること](ABOUT_NAKAGAWA_MASTER.md)
-- [Start Here](START_HERE.md)
-- [実際の問題に使う｜Practical Use & Collaboration Entry](PRACTICAL_USE.md)
-- [中川構造OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)
-- [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md)
-- [公開registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
-- [公開対話入口｜実際の問題から始める](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
-
-このページは、名前や件数だけで評価を求めるためのページではありません。**元の公開コメント、第三者側の応答、実際の変更、現在のrepository状態を読者自身が確認するための案内です。**
-
 ---
 
 ## 22. Qwen Code｜有料Batch APIの承認境界
@@ -1511,3 +1461,54 @@ zero shared infrastructure
 → [Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md)  
 → [machine-readable challenge L](machine-discovery/independent-reuse-challenges-v1.json)
 
+---
+
+## このページから言えること／言えないこと
+
+### 公開記録から確認できること
+
+複数の独立したGitHub repositoryで、`Nakagawa-master` 名義の具体的なコメントやreviewに対して、第三者が次のいずれかを行った公開記録があります。
+
+- 内容を明示的に確認・再説明した
+- code / tests / documentation / UIを変更した
+- source relationをPR本文やcommitで明示した
+- merge、backport、release、deploymentまで進んだ
+- 別のreviewerまたは別のPRで同じ区別を再利用した
+
+どの事例がどこまで進んでいるかは、各節に個別に記載しています。
+
+### このページだけでは言えないこと
+
+- 中川マスターの理論体系全体が正しいこと
+- 各第三者projectが理論体系全体を支持・採用していること
+- ここにないprojectや業界全体への影響
+- 公開記録がない利用者数、売上、社会的効果
+- open / draft PRについて、将来mergeされること
+- merge済み変更について、release / deployment /利用が確認できない場合の実運用効果
+
+このページは、確認できる範囲を超えて推測しません。
+
+## 自分で確認する方法
+
+事例を検証するときは、次の順にリンクを確認してください。
+
+1. `Nakagawa-master` の元comment / reviewを開く
+2. third-party author / owner / reviewerの応答を確認する
+3. PR diff、commit、test変更を確認する
+4. merge済みかどうかをPR stateで確認する
+5. releaseやdeploymentを主張する場合は、release pageやdeploy記録を別に確認する
+6. source relationが明示されていない変更は、このページだけを根拠に因果関係を推定しない
+
+反証可能性を残すため、counterexampleや「この事例では適用できない」という結果も重要です。
+
+## 関連する公開資料
+
+- [中川マスターとは｜この公開アーカイブで確認できること](ABOUT_NAKAGAWA_MASTER.md)
+- [Start Here](START_HERE.md)
+- [実際の問題に使う｜Practical Use & Collaboration Entry](PRACTICAL_USE.md)
+- [中川構造OS — Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md)
+- [Independent Verification & Reuse Protocol](INDEPENDENT_VERIFICATION_REUSE.md)
+- [公開registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
+- [公開対話入口｜実際の問題から始める](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
+
+このページは、名前や件数だけで評価を求めるためのページではありません。**元の公開コメント、第三者側の応答、実際の変更、現在のrepository状態を読者自身が確認するための案内です。**
