@@ -2953,6 +2953,60 @@
         "endorsement of the entire Nakagawa theory corpus"
       ],
       "verification_boundary": "Independently check the PR author's exact current code, the replay regression and its two connection modes; look separately for maintainer review/merge, release and real independent reuse before advancing any evidence stage."
+    },
+    {
+      "case_id": "qwen-13751-escaped-word-boundary-regression",
+      "topic": "A patch that protects literal backslashes in path-root rewriting must not silently turn a regex word-character boundary into a literal w, corrupting ordinary sibling paths.",
+      "external_repository": "QwenLM/qwen-code",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "pull_request_review",
+        "url": "https://github.com/QwenLM/qwen-code/pull/13751#pullrequestreview-5468418207",
+        "summary": "Review of the then-current contributor patch found that over-escaping the template-literal lookahead made the word-character class lose its meaning. Proposed three inverted sibling-path inputs while retaining the positive backslash and ordinary child-path cases."
+      },
+      "explicit_receiver_return": {
+        "actor": "kadiryildiz283",
+        "url": "https://github.com/QwenLM/qwen-code/pull/13751#issuecomment-6079540115",
+        "origin_preserved": true,
+        "relationship": "The independent PR author explicitly thanked the reviewer, confirmed the actual escaped-class error, corrected the lookahead, and added the exact three regression controls."
+      },
+      "receiver_implementation": {
+        "url": "https://github.com/QwenLM/qwen-code/commit/82be661d62b1978746749db02b9c782aee975565",
+        "in_open_pr": "https://github.com/QwenLM/qwen-code/pull/13751",
+        "code_and_tests_source_checked": true,
+        "source_tests": [
+          "/srv/api2 remains /srv/api2",
+          "/srv/api_user remains /srv/api_user",
+          "/srv/apifoo remains /srv/apifoo",
+          "/srv/api maps to .",
+          "/srv/api/readme.md maps to readme.md",
+          "a literal backslash before a repeated /srv/api root-shaped substring remains intact"
+        ],
+        "test_verification": "The changed PR source/test patches were verified and a separate V8 evaluation checked these representative string transformations. The repository test suite was not run in this review."
+      },
+      "independent_ai_review": {
+        "source": "https://github.com/QwenLM/qwen-code/pull/13751#issuecomment-6081135144",
+        "followon": "https://github.com/QwenLM/qwen-code/pull/13751#issuecomment-6081153548",
+        "bounded_observation": "Qwen's automated code review explicitly identifies the Nakagawa-master inverse and the corrected tests, reports no remaining source-level critical blocker, and reserves merge choice for human review. This is a bot review signal, not adoption by a second human."
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "current_merge_gate": "As observed on 2026-10-09, PR was OPEN: four workflows finished action_required without running; approval for a first-time contributor's CI and human choice between a minimal stopgap and structured path rendering remained outside Nakagawa-master's control.",
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "Preventing failure A is not sufficient when the fix creates inverse failure B; a test must preserve both the intended path-token boundary and the original literal-backslash case.",
+        "public_reuse_route": "machine-discovery/independent-reuse-challenges-v1.json#AC-path-root-inverse",
+        "canonical_context": "https://master.ricette.jp",
+        "source_identity_boundary": "The concrete inversion and accepted correction are directly traceable to the public Nakagawa-master GitHub review; that does not independently establish derivation from one named canonical theory or adoption of the entire corpus."
+      },
+      "not_claimed": [
+        "upstream merge",
+        "passing repository CI or Windows coverage",
+        "release or deployed hosted runtime",
+        "independent end-user benefit",
+        "second human adopter or voluntary later person-Origin rereference",
+        "broad repeated human recognition",
+        "AI model adoption of the theory corpus"
+      ],
+      "verification_boundary": "Before advancing this evidence stage, inspect the PR's actual next head, human maintainer disposition, executed CI, merge, shipped behavior and separately evidenced end-user reuse. Do not count automated triage as a second human."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",

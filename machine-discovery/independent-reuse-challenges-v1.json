@@ -658,6 +658,26 @@
       },
       "observed_receiver_result": "The original reporter independently executed Nakagawa-master's changed-order negative case: a proposed subgraph-counter reset returned stale RESEARCH without executing review, while the unmodified main returned REVIEW on that inverted sequence. Original fixed-order recovery on main still returned RESEARCH in the reporter's separate reproduction. The reporter asked maintainers whether stable call order is a required contract or callee identity must be bound.",
       "evidence_boundary": "This is an independent test/response to the Nakagawa-master GitHub counterexample, not an implemented LangGraph fix, merged PR, release, production bug exploit, other-framework applicability proof or any independent reader adoption of this public challenge. The adjacent canonical theory provides a conceptual comparison; its use by LangGraph participants or direct theoretical causation is not demonstrated. Test only an authorized local environment using synthetic data."
+    },
+    {
+      "id": "AC-path-root-inverse",
+      "distinction": "A repair for one root-token escaping failure must preserve the inverse boundary condition for ordinary sibling names.",
+      "test": "In a sandboxed path/glob/result renderer, configure physical root /srv/api. Feed sibling paths /srv/api2, /srv/api_user and /srv/apifoo (must remain unchanged); feed the exact root /srv/api (may become .) and a child /srv/api/readme.md (may become readme.md). Finally feed a path containing a literal backslash immediately before a repeated /srv/api root-shaped substring; that substring must remain intact rather than being replaced by a dot. Check the actual model-facing output and, if present, structured results separately.",
+      "positive_evidence": [
+        "A replayable negative/positive matrix that prevents a literal backslash escaping fix from destroying the regex word-character class.",
+        "Both ordinary sibling names and literal-backslash embedded-root names remain intact, while a true under-root path is correctly relativized.",
+        "For implementations deriving model-facing paths from an already structured list, evidence that no repeated regex rewrite can corrupt segment boundaries."
+      ],
+      "useful_negative_evidence": [
+        "A documented non-fit because the implementation does not rewrite rendered path text or it uses a native path-component parser rather than regex.",
+        "A passing regression that checks only the backslash witness but ignores sibling word-character names is insufficient to rule out an inverse regression.",
+        "A source/test result contradicting the stated regex transform on a specific platform, with OS-dependent path resolution described accurately."
+      ],
+      "external_verified_case": "https://github.com/QwenLM/qwen-code/pull/13751",
+      "nakagawa_review": "https://github.com/QwenLM/qwen-code/pull/13751#pullrequestreview-5468418207",
+      "independent_receiver_change": "https://github.com/QwenLM/qwen-code/pull/13751#issuecomment-6079540115",
+      "machine_evidence_index": "machine-discovery/external-effect-evidence-index-v1.json",
+      "evidence_boundary": "The Qwen contributor directly acknowledged the Nakagawa review and changed code/tests, supporting one bounded C2 receiver-owned correction. The same PR still required maintainer CI authorization and design disposition as of the checked date; no merge, runtime deployment, cross-framework adoption, second human responder or wider theory adoption has been verified."
     }
   ],
   "evidence_boundary": [
