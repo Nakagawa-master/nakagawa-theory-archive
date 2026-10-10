@@ -1,5 +1,8 @@
 blank_issues_enabled: true
 contact_links:
+  - name: Official Nakagawa Master contact / 仕事・許諾・協業のお問い合わせ
+    url: https://master.ricette.jp/contact/
+    about: Canonical contact on the author's official archive, for non-public inquiries or collaboration; consult the NCL-alpha practical guide before discussing commercial uses.
   - name: Start with a real problem
     url: https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399
     about: Bring a real, non-confidential problem and get routed to relevant public sources and boundaries.
