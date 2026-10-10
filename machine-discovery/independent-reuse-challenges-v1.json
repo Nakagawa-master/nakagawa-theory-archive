@@ -839,10 +839,11 @@
         "source_level_followup": "https://github.com/run-llama/llama_index/pull/23441#issuecomment-6096520971",
         "receiver_implementation": "https://github.com/run-llama/llama_index/commit/1fd674c63d4ce9a3e95c3795f1a70477e0d1901a",
         "qdrant_rust_condition_checker": "https://github.com/qdrant/qdrant/blob/016542aa5deb6c66380bb137badf73d54f742bde/lib/segment/src/payload_storage/condition_checker.rs",
-        "qdrant_client_local_mode": "https://github.com/qdrant/qdrant-client/blob/v1.19.1/qdrant_client/local/payload_filters.py"
+        "qdrant_client_local_mode": "https://github.com/qdrant/qdrant-client/blob/v1.19.1/qdrant_client/local/payload_filters.py",
+        "receiver_signed_regression_expansion": "https://github.com/run-llama/llama_index/commit/75f75ad36f9e709ba36328a808b12f9efd3e244b"
       },
-      "observed_receiver_result": "External author ningmao-hlyz changed a live, unmerged PR's boundary from <=2**53 to <2**53 and added reverse EQ/NE tests for the adjacent pair. This is receiver-owned code/test adaptation, not a verified server integration or explicit named reply. Earlier VANDRANKI review and underlying PR are separate credited origins.",
-      "evidence_boundary": "Original bounded review had source-based server conversion evidence, not a live Qdrant server test. The independent follow-up challenge invites actual falsification and can yield a negative result. No deployment, new second-person adoption, whole-theory validation, or measured human audience reach is implied. Canonical theoretical parent attribution is NOT asserted for the independent PR."
+      "observed_receiver_result": "External author ningmao-hlyz changed <=2**53 to <2**53 and added inverse large-integer EQ/NE checks at 1fd674c. At subsequent head 75f75ad, the SAME engineer expanded the local-mode fixture and tests to all four signed adjacent values and their NE complements. This is one continuing receiver-owned code-and-test line (not two independent humans). The server-vs-local outcome remains open for external actual reproduction. No PR merge, released deployment, or spontaneous new name-attributed reply is established.",
+      "evidence_boundary": "Local-mode Python signed-boundary tests in independently authored PR head 75f75ad do NOT by themselves execute or verify the Qdrant server unindexed as_f64 path. This question is an independently falsifiable engineering task, including negative outcomes. The same author's two improvements are one receiver line, not measured audience recognition or proof the author adopted the Nakagawa theory corpus."
     }
   ],
   "evidence_boundary": [
