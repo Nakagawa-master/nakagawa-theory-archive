@@ -3128,6 +3128,53 @@
         "separate-person dissemination or general theory adoption"
       ],
       "verification_boundary": "Shared parser and test patch directly inspected; no full repository runtime or test suite performed by this archive publisher."
+    },
+    {
+      "case_id": "llamaindex-22740-stream-final-event-parity",
+      "topic": "A streamed AI agent's final outward tool-call event must not promise a call discarded by final validation before the actual next execution step.",
+      "external_repository": "run-llama/llama_index",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "pull_request_comment",
+        "url": "https://github.com/run-llama/llama_index/pull/22740#issuecomment-5651572551",
+        "summary": "Identified the after-yield mutation boundary: final AgentStream can publish [A, B] even though only A remains after validation and is subsequently executed. Proposed one-response look-behind and a real FunctionAgent emitted-event regression."
+      },
+      "explicit_receiver_return": {
+        "actor": "2sumtech",
+        "url": "https://github.com/run-llama/llama_index/pull/22740#issuecomment-6096175756",
+        "origin_preserved": true,
+        "statement": "The independent PR author explicitly thanked @Nakagawa-master, chose contract (2), implemented the suggested one-item look-behind and two concrete inverse regressions at head a9fb01ce."
+      },
+      "receiver_implementation": {
+        "actor": "2sumtech",
+        "url": "https://github.com/run-llama/llama_index/commit/a9fb01ce05f090ff8de885fd059c739c58a0725f",
+        "pull_request": "https://github.com/run-llama/llama_index/pull/22740",
+        "verified_change": "Both sync/async streaming wrappers now retain one cumulative response, validate the actual final response before yielding it, and yield the validator's returned object. Added yield-time two-tool-call/nonparallel guard and FunctionAgent.AgentStream-to-returned-response parity tests, plus raising-validator-before-final-event guard."
+      },
+      "head_verification": {
+        "status": "open/unmerged at fresh 2026-10-10 check",
+        "checks": "Author states the new tests fail on the previous commit, and earlier PR body reported local 11 llm tests / 172 broad tests before the latest commit; the archive publisher did not independently run the repository suite or verify head CI."
+      },
+      "separate_followup": {
+        "source": "https://github.com/run-llama/llama_index/pull/22740#issuecomment-6096271152",
+        "status": "Additional Nakagawa source-level early-close resource-lifecycle finding and local standalone generator reproduction, POSTED ONLY. No independent author response, code change or fix established for this followup."
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "public_reuse": {
+        "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/independent-reuse-challenges-v1.json",
+        "challenge_id": "AI-stream-final-semantic-commit",
+        "canonical_context": "https://master.ricette.jp/",
+        "source_identity_boundary": "Specific GitHub contributor review and explicit author adoption, not an established independent derivation from a named canonical theory."
+      },
+      "not_claimed": [
+        "PR merged, released, deployed or used by end users",
+        "next close/cancel suggestion accepted or implemented",
+        "upstream streaming transport resource leak on a named provider",
+        "independent reuse of this public exercise",
+        "distinct person recognition beyond the one responding engineer",
+        "broad audience/C7 or whole-theory endorsement"
+      ],
+      "verification_boundary": "Reviewed the current PR head code, regression patch and exact author's named reply directly; generator-lifecycle mechanism reproduced separately in a dependency-free local harness; network providers and full repo tests were not run."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
