@@ -2,10 +2,6 @@
 
 Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**Coverage as checked on 2026-10-10: 46 numbered cases. The source review for the last additions (cases 40–46) was on 2026-10-09; that date is not a complete recheck of every case.**
-
-**Later verified changes (not yet numbered here):** Independent developers changed code and tests in [LlamaIndex #22740](https://github.com/run-llama/llama_index/pull/22740) (final streamed response) and [#23441](https://github.com/run-llama/llama_index/pull/23441) (large-integer precision boundary). Both PRs remained unmerged on 2026-10-10; release and real-world use are not claimed. [Machine Discovery](machine-discovery/README.md) separately lists 51 machine-readable evidence records and 36 test challenges under different counting rules.
-
 Nakagawa Master is the pen name of Keisuke Nakagawa. On social media, the name “マスター” (“Master”) is also used; some external posts use “MasterJP.”
 
 This page is a **public verification guide**. It links public GitHub comments or reviews made under the `Nakagawa-master` account to later changes that can be checked in third-party repositories.
