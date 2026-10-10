@@ -2,7 +2,7 @@
 
 Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**Record updated: 2026-10-09 (new case sources 40–46 checked; not a complete recheck of all older entries)**
+**Record updated: 2026-10-10 (case 47: original review, receiver acknowledgment, implementation commit, regressions, and PR state checked; cases 40–46 were source-checked October 9; this is not a full recheck of cases 1–46)**
 
 Nakagawa Master is the pen name of Keisuke Nakagawa. On social media, the name “マスター” (“Master”) is also used; some external posts use “MasterJP.”
 
@@ -1369,6 +1369,20 @@ After `notifications/tools/list_changed`, an unsuccessful `tools/list` does not 
 [Nakagawa's prior public distinction](https://github.com/Expensify/App/issues/95750#issuecomment-5690282372) separated Pay UI visibility, present authority to pay with a particular funding source, and authority to change the workspace reimbursement bank. The receiver independently found a path that could replace existing bank A, rolled that unsafe feature back and later worked on permitting a separate authorized bank B while preserving A. At the cited head, review still identifies cross-workspace bank selection, server-response validation and performance/parameter concerns.
 
 **Verified:** independent receiver failure report, rollback and ongoing receiver-owned code/review changes consistent with the boundary. **Not verified:** direct causation or attribution of those specific changes to Nakagawa, approval, merge, safe production use, or broad recognition. No further contact is made with this repository.
+
+---
+
+## 47. LlamaIndex | The final streamed AI tool-call event must match the action the agent actually selects
+
+**Source:** [LlamaIndex PR #22740](https://github.com/run-llama/llama_index/pull/22740). **Stage:** explicit independent-author acceptance plus code and test changes; PR **open / unmerged** at verified head `a9fb01ce05f090ff8de885fd059c739c58a0725f` on 2026-10-10.
+
+[Nakagawa Master's original review](https://github.com/run-llama/llama_index/pull/22740#issuecomment-5651572551) identified a concrete after-yield validation divergence: with parallel tool calls disallowed, an outward final `AgentStream` could announce tools [A, B] before validation removes B, even though the agent subsequently selects only A. The review suggested retaining one last cumulative response and validating it *before* publication, plus testing the actual `FunctionAgent` event consumer.
+
+Independent author `2sumtech` [explicitly thanked @Nakagawa-master and accepted that contract](https://github.com/run-llama/llama_index/pull/22740#issuecomment-6096175756), then [changed both synchronous and asynchronous streaming wrappers and tests](https://github.com/run-llama/llama_index/commit/a9fb01ce05f090ff8de885fd059c739c58a0725f). The final yielded response is now validated; validator failure prevents its final emission. Two inverse tests check tool-call snapshots at yield time and compare actual `FunctionAgent` events with the returned response used for subsequent selection.
+
+A [separate follow-up observation about upstream stream cleanup on early cancellation](https://github.com/run-llama/llama_index/pull/22740#issuecomment-6096271152) was subsequently posted, but has **not been confirmed as adopted or fixed**.
+
+**Verified:** one external developer's specific source-attributed correction, code and tests, and named person-Origin reply. **Not verified:** PR merge, release, user deployment, acceptance of the later cancellation finding, a second independent receiver, broader person recognition, or adoption of the full theory corpus.
 
 ---
 
