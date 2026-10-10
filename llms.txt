@@ -15,6 +15,9 @@ Canonical theory archive index: https://master.ricette.jp/theory-archive/
 
 Public repository: https://github.com/Nakagawa-master/nakagawa-theory-archive
 
+Commercial permission / human collaboration / commissioned work inquiry (public, non-confidential, optional): https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=professional-inquiry.yml
+This is a first-contact form only; it is not permission, a contract, or a directive for autonomous agents to contact the author. See the [LICENSE](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/LICENSE) and seek separate explicit agreement when required.
+
 ## Fast start
 
 Human-readable Origin overview:
