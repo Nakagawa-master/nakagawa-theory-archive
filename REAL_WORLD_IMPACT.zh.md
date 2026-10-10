@@ -2,10 +2,6 @@
 
 语言: [日本語](REAL_WORLD_IMPACT.md) | [English](REAL_WORLD_IMPACT.en.md) | **中文**
 
-**收录情况（2026-10-10核查）：共46项编号案例。最近新增的第40–46案，其一次来源核查日期为2026-10-09；此日期并非全部案例的统一复核日期。**
-
-**后续已核实的修改（尚未编号收录）：** 独立开发者在 [LlamaIndex #22740](https://github.com/run-llama/llama_index/pull/22740)（流式最终响应）及 [#23441](https://github.com/run-llama/llama_index/pull/23441)（大整数精度边界）中更新了代码与测试。2026-10-10核查时，两项PR均未合并；不据此声称已发布或真实使用。[Machine Discovery](machine-discovery/README.md) 另按不同口径提供51项机器可检索证据记录与36项验证课题。
-
 中川大师（Nakagawa Master）是Keisuke Nakagawa的笔名。在社交媒体上也使用“マスター（Master）”，部分外部投稿使用“MasterJP”名义。
 
 本页是一个**公开核验指南**。它把 `Nakagawa-master` 账号在GitHub上的公开comment / review，与之后第三方repository中可以独立检查的变化对应起来。
@@ -1379,7 +1375,7 @@ MCP服务发送 `tools/list_changed` 后，如果刷新 `tools/list` 失败，�
 
 [中川大师此前提出的区分](https://github.com/Expensify/App/issues/95750#issuecomment-5690282372)分开了Pay按钮可见、使用指定资金来源付款的当前权限、修改workspace reimbursement bank的权限。后来receiver独立报告原有bank A可能被替换的风险、完成rollback，并重新实现使用授权bank B而不覆盖A的路径。该head仍有跨workspace账户选择、backend响应验证与性能相关review问题。
 
-**可确认：** receiver侧独立bug报告、rollback及后续技术实现进展，与此前结构区分方向一致。**不可确认：** 最新具体修复由Nakagawa直接导致、review认可、merge、新功能生产使用或广泛人物认知。遵守该repo的停止追加评论要求，不对外接触。
+**可确认：** receiver侧独立bug报告、rollback及后续技术实现进展，与此前结构区分方向一致。**不可确认：** 最新具体修复由Nakagawa直接导致、review认可、merge、新功能生产使用或广泛人物认知。
 
 ---
 
