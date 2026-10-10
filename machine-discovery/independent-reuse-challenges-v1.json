@@ -785,7 +785,10 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/311/README.md",
       "human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/311/human-entry.md",
       "independent_parent_theory": "https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/",
-      "evidence_boundary": "This is an owner-authored PUBLIC hypothetical falsification exercise, not an observed AI civilization, a factual data center case, a validated scalar score, a fixed regulatory checklist, independent human/AI adoption, a discovery of new natural laws, or a demonstration of the Vol 18 unique diagnostic contribution. The proposed settlement-line principle is normative; attribution of legal/moral liability requires separate justification. Reuse only with real participant permission and non-confidential data."
+      "evidence_boundary": "This is an owner-authored PUBLIC hypothetical falsification exercise, not an observed AI civilization, a factual data center case, a validated scalar score, a fixed regulatory checklist, independent human/AI adoption, a discovery of new natural laws, or a demonstration of the Vol 18 unique diagnostic contribution. The proposed settlement-line principle is normative; attribution of legal/moral liability requires separate justification. Reuse only with real participant permission and non-confidential data.",
+      "offline_worksheet_path": "machine-discovery/od311_capacity_worksheet.py",
+      "worksheet_command": "python3 machine-discovery/od311_capacity_worksheet.py --self-test",
+      "worksheet_limit": "This standard-library script evaluates reporter-declared input structure and feasible-route declarations only. Its local tests use synthetic data. Real-world causal assessment, parent-theory comparison, independent adoption, and validity remain unproved."
     }
   ],
   "evidence_boundary": [
