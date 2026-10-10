@@ -814,7 +814,7 @@
         "separate_unadopted_close_finding": "https://github.com/run-llama/llama_index/pull/22740#issuecomment-6096271152"
       },
       "observed_receiver_result": "The external author 2sumtech expressly credited @Nakagawa-master and changed code and two regressions to validate the cumulative final streamed event before publishing it. That source-specific change is attributable; the earlier overall PR goal and unrelated streaming implementation are not.",
-      "evidence_boundary": "Only ONE distinct external author at C2 with explicit origin, not C3 merge/release/use or independent second-receiver carry. A separate post-commit early-close finding is public review only (C0), with no receiver fix yet. No proof that any named real HTTP provider leaked resources or that the entire conceptual theory corpus caused the correction. Tests are a bounded suggested fixture, not third-party execution of this specific public machine challenge."
+      "evidence_boundary": "One independent external PR author implemented and explicitly acknowledged the specific stream-boundary review. The PR is not merged or released; no independent second-receiver carry is verified. The separate early-close finding is an unadopted public comment with no receiver fix yet. A local iterator lifecycle reproduction does not demonstrate a real provider HTTP leak, and this isolated contribution does not establish entire theory-corpus adoption."
     }
   ],
   "evidence_boundary": [
