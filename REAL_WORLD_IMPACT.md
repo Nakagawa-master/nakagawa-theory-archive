@@ -2,7 +2,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**記録更新: 2026-10-09（追加事例40〜46の一次資料を確認。既収録事例の一括再確認日ではありません）**
+**記録更新: 2026-10-10（事例47の元コメント・第三者回答・修正commit・回帰テスト・PR状態を確認。事例40〜46は10月9日に資料確認。事例1〜46の一括再確認日ではありません）**
 
 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）は、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
 
@@ -45,7 +45,7 @@
 
 ### 現在の公開証拠スナップショット
 
-- このページには **46の番号付き外部作用事例**を収録しています。
+- このページには **47の番号付き外部作用事例**を収録しています。
 - GitHub全体の `Nakagawa-master` comment検索では多数の候補surfaceが返りますが、検索hit自体は第三者反応・採用・実装として数えません。
 - 本ページへ収録するのは、第三者response、独立確認、code / tests / document change、merge、release、deployment等を公開リンクで段階別に確認できる事例です。
 - したがって「mentionが多い」ことではなく、**第三者が何を変え、その変更がどこまで進んだか**を主要証拠として扱います。
@@ -1573,6 +1573,25 @@ zero shared infrastructure
 
 **確認できること:** 独立したreceiver問題報告、rollback / 再実装という受け手側の技術進展、およびNakagawaが先行提示した区別との整合。  
 **確認できないこと:** このPRの個別修正がNakagawaの指摘を直接原因とすること、全reviewの解消、承認、merge、新機能のproduction実利用、広い人物認知。第三者review指摘による修正をNakagawaの独占的成果としません。
+
+---
+
+## 47. LlamaIndex｜AIが表示した最後のツール呼び出しと、実際に実行する呼び出しを一致させる
+
+**対象:** [LlamaIndex PR #22740](https://github.com/run-llama/llama_index/pull/22740)（streaming chat-with-tools の出力検証）  
+**段階:** 外部開発者が具体的な指摘を明示的に認め、streaming処理と回帰テストを修正。2026-10-10確認時点でPRは **open / unmerged**（head `a9fb01ce05f090ff8de885fd059c739c58a0725f`）。
+
+`Nakagawa-master` は、AIが配信する最終の`AgentStream`イベントを**検証後の実行可能なツール呼び出し**と区別しました。元の案では、複数ツールA・Bが最終イベントとして先に表示され、その後に`allow_parallel_tool_calls=False` の検証によってBが除かれ、実行側はAだけとなる可能性がありました。マスターは「最後の応答を一つ保持し、検証してから流す」方法と、実際の`FunctionAgent`を通して表示時点のイベントと実行側の判断を比較するテストを提案しました。
+
+別の開発者 `2sumtech` は「@Nakagawa-master thanks, good catch」と明示的に返答し、**同期・非同期の両方に一応答分の先読み保持を実装**しました。最後の応答は検証を通してから配信し、検証時にエラーが起きる場合は未検証の最終イベントを配信しないように変更。回帰テストでは、実際に表示されるツール呼び出しと`FunctionAgent`が後で採用する呼び出しが一致することを確認しています。
+
+- [中川マスターによる元の具体的な指摘・反例](https://github.com/run-llama/llama_index/pull/22740#issuecomment-5651572551)
+- [実装者による名前付きの採用・テスト回答](https://github.com/run-llama/llama_index/pull/22740#issuecomment-6096175756)
+- [実装者の変更commitとテスト](https://github.com/run-llama/llama_index/commit/a9fb01ce05f090ff8de885fd059c739c58a0725f)
+- [途中終了時の上流ストリーム終了処理に関する追加指摘](https://github.com/run-llama/llama_index/pull/22740#issuecomment-6096271152)（**別件の提案段階。採用・修正は未確認**）
+
+**確認できること:** 一名の独立した外部実装者による元指摘の明示的受け入れ、コードと回帰テストの変更、人物名付き出所再確認。  
+**確認できないこと:** PRのmerge、release、実際のエンドユーザー利用、追加のストリーム終了問題の修正、別の独立人物による再利用、広範な人物認知、理論群全体の採用。
 
 ---
 
