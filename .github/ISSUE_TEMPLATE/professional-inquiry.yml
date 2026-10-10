@@ -1,0 +1,52 @@
+name: Work, licensing, or collaboration inquiry / 仕事・許諾・協業の相談
+description: Ask Nakagawa Master about a specific possible engagement or permission, without sharing confidential details.
+title: "[Professional inquiry] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This GitHub issue is public.** Share only a brief, non-confidential description. Do not include email addresses, phone numbers, customer data, unpublished work, contract terms, budgets, access credentials, or other sensitive details.
+
+        This is a request to discuss a possible arrangement with Nakagawa Master, not an order, acceptance, paid service commitment, endorsement, or permission grant. The current [LICENSE](../../LICENSE) governs covered public materials; separate written terms are needed where applicable. Public verification, criticism, and uses already permitted by law or the applicable license do not require an inquiry here.
+  - type: dropdown
+    id: inquiry_type
+    attributes:
+      label: What are you exploring?
+      options:
+        - Commercial reuse / separate permission
+        - Paid review, advisory, or commissioned work
+        - Research / product / organization collaboration
+        - Speaking, media, teaching, or publication invitation
+        - Other concrete opportunity
+    validations:
+      required: true
+  - type: textarea
+    id: real_context
+    attributes:
+      label: Public, non-confidential problem or context
+      description: State what you need and the concrete situation, without private details.
+      placeholder: Our team faces an agent approval or auditability problem in a public or synthetic example...
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Relevant public Nakagawa Master source (if known)
+      placeholder: https://master.ricette.jp/... or https://github.com/Nakagawa-master/...
+  - type: textarea
+    id: requested_scope
+    attributes:
+      label: What involvement or permission would you like to discuss?
+      description: Describe the possible role or use; do not propose fees or confidential terms publicly.
+      placeholder: A separate permission for a specific commercial adaptation, or paid review of a bounded design...
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Before submitting
+      options:
+        - label: I understand this issue is public and contains no confidential or personal contact information.
+          required: true
+        - label: I understand that posting here grants no license, service, partnership, or agreement; any conditions must be explicitly agreed separately.
+          required: true
