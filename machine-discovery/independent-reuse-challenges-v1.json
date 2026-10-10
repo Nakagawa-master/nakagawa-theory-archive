@@ -789,6 +789,32 @@
       "offline_worksheet_path": "machine-discovery/od311_capacity_worksheet.py",
       "worksheet_command": "python3 machine-discovery/od311_capacity_worksheet.py --self-test",
       "worksheet_limit": "This standard-library script evaluates reporter-declared input structure and feasible-route declarations only. Its local tests use synthetic data. Real-world causal assessment, parent-theory comparison, independent adoption, and validity remain unproved."
+    },
+    {
+      "id": "AI-stream-final-semantic-commit",
+      "distinction": "An AI's provisional streaming delta is not a validated final semantic commitment. The final tool-call event must agree with the tool set used by the downstream agent's actual execution decision.",
+      "test": "In an isolated synthetic LLM/agent fixture that streams cumulative ChatResponse objects, let the intermediate response contain tool A and the final raw response contain tool calls [A,B]. Set allow_parallel_tool_calls=False so the response validator must normalize to [A]. Capture tool calls at actual AgentStream event publication time (not only a mutable final ChatResponse inspected after iteration), then compare the last emitted event with the tool-call set consumed by the agent's next step. Repeat sync and async, validator returning a NEW response object, validator throwing, empty stream and intentional early stop. In a separate input-controlled close test, hold references to an upstream closable iterator/async iterator and require outer close/aclose to invoke source close/aclose rather than relying on garbage collection.",
+      "positive_evidence": [
+        "The final externally visible semantic event never advertises B when only A is selected for execution; tests snapshot event payload at emission time.",
+        "The validated response returned by the validator, rather than an assumed in-place mutation, is the exact final yielded response.",
+        "A raising validator prevents an invalid final semantic event from being emitted; earlier deltas are visibly provisional.",
+        "Explicit stream cancellation calls source close/aclose in controlled tracked iterators; normal exhaustion and early stop do not imply final validation on partial input.",
+        "An independent reviewer can show the regression goes red under after-final-yield validation and green under a one-item look-behind (or an equivalent proven approach)."
+      ],
+      "useful_negative_evidence": [
+        "The receiver publishes tool calls only after final validation from another execution path, and can demonstrate event/execution parity without adding a wrapper.",
+        "Streaming responses are never treated as executable or committed semantics until a separately authenticated final step; demonstrate that the contract makes this case non-fit.",
+        "The particular provider's iterator cannot be cancelled or has an independent proved cleanup mechanism; do not infer its real HTTP connection leaked from Python iterator semantics alone.",
+        "An added public test case or this owner-authored challenge is not evidence of third-party adoption, release, or broad person-Origin recognition."
+      ],
+      "source_provenance": {
+        "review": "https://github.com/run-llama/llama_index/pull/22740#issuecomment-5651572551",
+        "independent_author_named_response": "https://github.com/run-llama/llama_index/pull/22740#issuecomment-6096175756",
+        "receiver_implementation": "https://github.com/run-llama/llama_index/commit/a9fb01ce05f090ff8de885fd059c739c58a0725f",
+        "separate_unadopted_close_finding": "https://github.com/run-llama/llama_index/pull/22740#issuecomment-6096271152"
+      },
+      "observed_receiver_result": "The external author 2sumtech expressly credited @Nakagawa-master and changed code and two regressions to validate the cumulative final streamed event before publishing it. That source-specific change is attributable; the earlier overall PR goal and unrelated streaming implementation are not.",
+      "evidence_boundary": "One independent external PR author implemented and explicitly acknowledged the specific stream-boundary review. The PR is not merged or released; no independent second-receiver carry is verified. The separate early-close finding is an unadopted public comment with no receiver fix yet. A local iterator lifecycle reproduction does not demonstrate a real provider HTTP leak, and this isolated contribution does not establish entire theory-corpus adoption."
     }
   ],
   "evidence_boundary": [
