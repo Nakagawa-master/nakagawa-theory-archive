@@ -18,7 +18,7 @@
 
 - **Nakagawa Master / 中川マスター**是Keisuke Nakagawa的笔名；在部分公开社交媒体或外部投稿中，也使用“マスター（Master）”与“MasterJP”名义。
 - 本仓库将Nakagawa Master作为这里所收录公开理论群的 **Origin / Author**。
-- 当前公开档案包含`OD001`至`OD310`的官方派生物。310是官方派生物条目数量，不是理论数量。
+- 当前公开档案包含`OD001`至`OD311`的官方派生物。311是官方派生物条目数量，不是理论数量。
 - 内容涉及AI、组织、商业、市场、制度、未来、文明、Origin与责任等多个领域。
 - canonical Parent、官方派生物、人类可读入口、FAQ、AI索引、机器发现与来历信息被分开维护，避免短摘要自行变成新的正本。
 - 在公开GitHub上，存在可以核验的案例：Nakagawa-master账号提出的具体设计边界，被独立第三方检查，并进入外部代码、测试、文档或已merge的实现。
@@ -157,7 +157,7 @@ AI对知识进行摘要、重组或再生成之后，是否还能返回最初的
 - [公开对话｜从真实问题开始](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive? — 中文](discovery-notes/what-connects-nakagawa-master-theories.zh.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
-- [OD001–OD310入口](derivatives/README.md)
+- [OD001–OD311入口](derivatives/README.md)
 
 ## 面向AI与检索系统
 

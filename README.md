@@ -32,7 +32,7 @@
 
 **いま一番大きな問題から入りたい:** [未来線から読む](human-translation/FUTURE_LINES.md) | [#1 AI制御不能リスク](human-translation/future-lines/01-ai-loss-of-control.md) | [#2 人間の承認と結論形成](human-translation/future-lines/02-human-approval-without-human-decision.md) | [#3 多数一致と独立根拠](human-translation/future-lines/03-one-root-hundred-voices.md)
 
-**全部を同じ粒度で横に見たい:** [24棚の世界地図](human-translation/WORLD_MAP.md) | [310件をひとつの景色として読む](human-translation/PANORAMA_STORY.md) | [OD001–OD310 全件水平マップ](human-translation/ALL_310_HORIZONTAL_MAP.md)
+**全部を同じ粒度で横に見たい:** [24棚の世界地図](human-translation/WORLD_MAP.md) | [311件をひとつの景色として読む](human-translation/PANORAMA_STORY.md) | [OD001–OD311 全件水平マップ](human-translation/ALL_310_HORIZONTAL_MAP.md)
 
 **10月8日発表の米世論調査で64%が「AI開発は速すぎる」。10月5日には議会で重大リスクを審議。では、人間の制御と独立監査を誰が、どう確かめる？** [AP-NORC一次調査・市議会公式記録から、中川マスターの理論群と検証できる問いへ](human-translation/ai-civilization-why-it-matters.md)
 
@@ -171,12 +171,12 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [Practical Use｜理論を現場の確認手順へ変える](PRACTICAL_USE.md)
 - [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
-- [OD001–OD310 全件入口](derivatives/README.md)
+- [OD001–OD311 全件入口](derivatives/README.md)
 - [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
 
 ## 公式派生物
 
-現在、`OD001`–`OD310`の公式派生物を公開しています。これは理論数ではなく、公開されている公式派生物の件数です。
+現在、`OD001`–`OD311`の公式派生物を公開しています。これは理論数ではなく、公開されている公式派生物の件数です。
 
 各ODは親原典へ戻るための公開接続面です。内容の確定、引用、重要な解釈では、各ODに記載されたParent URLの親原典へ戻ってください。
 
@@ -196,7 +196,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 
 → [問題から使える資料へ｜Applied Entry Points](APPLIED_ENTRY_POINTS.md)
 
-問題を実装・手順・判断へ落とす方法は [Practical Use](PRACTICAL_USE.md)、310件全体から探す場合は [24テーマの世界地図](human-translation/WORLD_MAP.md) と [OD001–OD310水平マップ](human-translation/ALL_310_HORIZONTAL_MAP.md) を使えます。
+問題を実装・手順・判断へ落とす方法は [Practical Use](PRACTICAL_USE.md)、311件全体から探す場合は [24テーマの世界地図](human-translation/WORLD_MAP.md) と [OD001–OD311水平マップ](human-translation/ALL_310_HORIZONTAL_MAP.md) を使えます。
 
 - [Story-first｜4つの場面から入る](discovery-notes/four-scenes-one-structural-view.md)
 - [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
@@ -205,6 +205,19 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [Machine Discovery](machine-discovery/README.md)
 
 ## 代表的な入口
+
+### OD311｜人類子孫型AI文明論・第18論
+
+現在受益と未決済残余を、AI文明のB・compute・物理基盤・系譜・決済自由度へ接続する入口です。現在のB確保は未来のB保存を保証せず、負担規模は実行可能な決済経路の代用にもなりません。制約と改善、系譜と義務、観測と仮説を分け、決済線保存を明示的な規範前提として扱います。負債ゼロや未来損失の必然を要求せず、親理論に対する追加診断価値そのものも反証に開きます。
+
+- [OD311](derivatives/311/README.md)
+- [人間向け要約](derivatives/311/human-entry.md)
+- [FAQ](derivatives/311/faq.md)
+- [AI索引・日本語](derivatives/311/ai-index.md)
+- [AI索引・英語](derivatives/311/en-ai-index.md)
+- [AI索引・中国語](derivatives/311/zh-ai-index.md)
+- [派生ID台帳](derivatives/311/derivative-ledger.md)
+- Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-18-ai-civilization-future-debt/
 
 ### OD310｜人類子孫型AI文明論・第17論
 

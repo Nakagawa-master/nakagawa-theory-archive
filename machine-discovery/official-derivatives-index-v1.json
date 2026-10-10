@@ -1,15 +1,15 @@
 {
   "schema_version": "official-derivatives-navigation-v1",
-  "status": "public_navigation_complete_od001_od310",
-  "updated_jst": "2026-10-07",
+  "status": "public_navigation_complete_od001_od311",
+  "updated_jst": "2026-10-10",
   "origin": "Nakagawa Master / 中川マスター",
   "canonical_parent_site": "https://master.ricette.jp/",
   "authority_note": "Navigation metadata only. This file does not replace canonical parent articles or derivative content.",
   "coverage": {
     "from": "001",
-    "to": "310",
-    "expected_count": 310,
-    "indexed_count": 310,
+    "to": "311",
+    "expected_count": 311,
+    "indexed_count": 311,
     "duplicate_assignments": 0,
     "unassigned": 0
   },
@@ -62,7 +62,7 @@
     {
       "id": "human_descendant_ai",
       "label_ja": "人類子孫型AI文明論",
-      "count": 18,
+      "count": 19,
       "members": [
         "004",
         "028",
@@ -81,7 +81,8 @@
         "307",
         "308",
         "309",
-        "310"
+        "310",
+        "311"
       ]
     },
     {

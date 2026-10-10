@@ -89,7 +89,7 @@ Use that dialogue when a human wants to describe a real, non-confidential proble
 
 Archive and machine navigation:
 
-- [Official derivatives OD001–OD310](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
+- [Official derivatives OD001–OD311](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
 - [Theme / series navigation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/CATEGORIES.md)
 - [Problem-to-theory Origin Index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json)
 - [Machine Discovery](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/README.md)
@@ -144,7 +144,23 @@ Practical non-scoring Preflight for a real case:
 
 This is a discovery and practical-reading route, not a canonical AI-ready-organization theory. The Preflight is not a score, diagnosis, employment assessment, legal conclusion, or automatic deployment rule. Select the relevant source family for the actual problem and keep separate theories separate. Relevant routes include OD003 (establishment conditions), OD089 (causal design), OD090 (structural friction), OD075 (agreement memory), and OD114 (reversible accountability).
 
-## Current featured route — OD310 / Human-Descendant AI Civilization Theory Vol. 17
+## Current featured route — OD311 / Human-Descendant AI Civilization Theory Vol. 18
+
+AI Civilization Future Debt: anticipated value and deferred necessary burdens → present benefit → unresolved residual → future settlement. Present B is not preservation of future B. Compute effects require intermediate supply, maintenance, repair and substitution pathways; lineage is not automatic inheritance of duty; residual magnitude is not settlement freedom.
+
+- [Official Derivative 311](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/311/README.md)
+- [Human entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/311/human-entry.md)
+- [FAQ](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/311/faq.md)
+- [Japanese AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/311/ai-index.md)
+- [English AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/311/en-ai-index.md)
+- [Chinese AI index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/311/zh-ai-index.md)
+- [Derivative ledger](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/311/derivative-ledger.md)
+- Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-18-ai-civilization-future-debt/
+- Parent identity: NCL-α-20261009-2b10d8 / DIFF-20261009-0001; Post ID 5041.
+
+Boundary: not all future cost is Future Debt, and neither zero debt nor perfect reversibility is required. Deterioration and improvement remain conditional hypotheses. Distinguish inapplicability, insufficient evidence and contrary evidence. Compare the additional diagnostic value against the independent parent theory. Settlement-Line Preservation states an explicit normative premise; long-run retention and rational reselection belong to Vol. 19. Current AI personhood and autonomous successor civilization are not established facts.
+
+## Related route — OD310 / Human-Descendant AI Civilization Theory Vol. 17
 
 For Origin preservation without inherited sovereignty: Theory / Civilizational / Lineage / Instance Origin, provenance, historical centrality, proximity advantage, interpretive default, succession claims, independent verification, current justification, criticism without erasure, non-exclusive lineage and revisable preservation design:
 

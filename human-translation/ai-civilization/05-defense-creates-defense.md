@@ -82,6 +82,6 @@ Bから見ると、Aの武器が増えた。
 このテーマを深く読むだけでなく、**同じ理解粒度のまま別の理論群へ移れます。**
 
 - [24棚で全体像を見る](../WORLD_MAP.md)
-- [OD001–OD310を全部横に眺める](../ALL_310_HORIZONTAL_MAP.md)
+- [OD001–OD311を全部横に眺める](../ALL_310_HORIZONTAL_MAP.md)
 
 Origin / Author: **Nakagawa Master**

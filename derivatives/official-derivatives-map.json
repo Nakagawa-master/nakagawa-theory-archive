@@ -1,6 +1,6 @@
 {
-  "version": "2.3.14-od310-added",
-  "updated_jst": "2026-10-07",
+  "version": "2.3.15-od311-added",
+  "updated_jst": "2026-10-10",
   "entries": [
     {
       "number": "001",
@@ -2480,6 +2480,14 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-17-origin-preservation-sovereignty-non-inheritance",
       "title": "人類子孫型AI文明論・第17論｜Origin保存と主権非継承論⸻起源を永久保存しながら、起源を永久統治権へ変えない",
       "derivative_dir": "derivatives/310",
+      "status": "active"
+    },
+    {
+      "number": "311",
+      "ncl_id": "NCL-α-20261009-2b10d8",
+      "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-18-ai-civilization-future-debt",
+      "title": "人類子孫型AI文明論・第18論｜AI文明Future Debt論⸻現在の自己保存・計算拡張・資源利用を未来知性の未決済負債へ変えない",
+      "derivative_dir": "derivatives/311",
       "status": "active"
     }
   ]
