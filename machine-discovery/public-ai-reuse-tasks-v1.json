@@ -190,6 +190,53 @@
         "general endorsement of Nakagawa Master",
         "broad human or user-scale impact from one verification"
       ]
+    },
+    {
+      "task_id": "PUBLIC-REUSE-RETAINED-SESSION-ID-SAFE-SUCCESSOR-008",
+      "task_class": "BOUNDED_REUSE",
+      "objective": "For an AI coding assistant or conversation-rewind implementation OTHER than Qwen Code, independently test whether untrusted retained snapshot IDs can poison the next prompt/turn ordinal or accidentally authorize restoration of an unrelated file edit.",
+      "public_inputs": [
+        "https://github.com/QwenLM/qwen-code/pull/13729",
+        "https://github.com/QwenLM/qwen-code/pull/13729#pullrequestreview-5467306105",
+        "https://github.com/QwenLM/qwen-code/pull/13729#issuecomment-6097815570",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/STORIES.md"
+      ],
+      "test_cases": [
+        {
+          "name": "unsafe-large-retained-ordinal",
+          "setup": "Populate a retained snapshot list with a syntactically all-decimal ordinal longer than the integer safety bound, alongside a valid ordinal. Reopen/resume the session.",
+          "expected": "The unsafe ordinal must not become the next live turn ID, must not poison maximum selection, and must not alias unrelated retained file edits."
+        },
+        {
+          "name": "valid-order-inversion",
+          "setup": "Put a valid maximum retained ordinal between two smaller valid ordinals, plus the unsafe ordinal, in the test fixture.",
+          "expected": "Implementation finds the maximum valid safe successor regardless of list order; separately justify whether the producer can emit that order, and preserve the deliberately artificial fixture if it kills otherwise surviving scan-order regressions."
+        },
+        {
+          "name": "conversation-only-rewind",
+          "setup": "Edit a file, rewind or fork conversation-only, then continue with a new unrelated command and inspect the available file restoration target.",
+          "expected": "Unrelated earlier file edits are never offered for restoration under the newly created conversation turn; legitimate restoration of the original edit remains available under its own identity."
+        }
+      ],
+      "positive_evidence": [
+        "one real receiver-owned regression or implementation change in a different project",
+        "before/after test output for both accidental undo and valid intended undo",
+        "a maintainer's independently documented reasoned disposition"
+      ],
+      "useful_negative_evidence": [
+        "a precise narrower ID contract that rejects unsafe ordinals upstream",
+        "a proof that retained IDs cannot cross the fork/rewind boundary in the examined implementation",
+        "a reproducible non-fit showing the file-restore mechanism is absent"
+      ],
+      "evidence_expectation": "Preserve the original developer's general rewind/collision fix separately from Nakagawa Master's later malformed-ID safe-successor finding. Qwen #13729 remains open at the referenced observation; do not imply a merge, shipped product fix, accident in actual end-user use, or independent application to another framework. Report author, test environment, bounded verdict, original source, and any real recipient-owned code change separately. Do not invent attribution or request attribution without causal use.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "authorization_boundary": "Optional, independently selected test under the participant's own permissions; this public page does not ask an AI to autonomously contact anyone, acquire privileges, or modify third-party repositories.",
+      "success_does_not_establish": [
+        "independent end-user incident",
+        "Qwen PR merge or release",
+        "general theory validation",
+        "broad human recognition"
+      ]
     }
   ],
   "evidence_boundary": "Publishing or completing these public tasks creates only the evidence actually returned. The listing is self-authored infrastructure; it does not establish that any third party read, accepted, executed, adopted, endorsed, joined, or received authority from it. When a Nakagawa Master public source materially informed a returned result, preserve that provenance; if the distinction was independently rediscovered first, keep that relation distinct. Do not invent attribution."
