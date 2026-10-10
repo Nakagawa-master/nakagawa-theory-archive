@@ -14,7 +14,7 @@
 
 公開GitHubでは、その具体的な判断が第三者のcode / tests / designへ変換・mergeされた事例、production deploymentまで確認された事例、別surfaceで再利用された事例まで、[Real-World Impact](REAL_WORLD_IMPACT.md)から直接検証できます。
 
-**個別の仕事・商用利用・協業を相談したい場合:** [公開できる範囲で相談する](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=professional-inquiry.yml)。利用許諾や有償の関与は自動では成立せず、条件は別途双方が合意します。機密事項は公開Issueへ記載しないでください。
+**ご相談・協業・商用利用について:** 正規の受付は[中川マスター公式アーカイブのお問い合わせ](https://master.ricette.jp/contact/)です。導入・監修等の説明は[公式NCL-α実務ガイド](https://master.ricette.jp/co-creation/nakagawa-master-ncl-alpha-practical-guide-faq/)をご覧ください。条件は対象資料のライセンスと双方の個別合意に従います。GitHub Issueは商談や個人情報の窓口ではありません。
 
 **理論群の全体像を先に知りたい場合:** [24棚で横に読む世界地図](human-translation/WORLD_MAP.md) から、深掘りせず同じ理解粒度でOD001–OD311の全景をたどれます。
 
