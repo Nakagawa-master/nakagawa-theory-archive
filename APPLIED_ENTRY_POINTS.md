@@ -483,9 +483,9 @@ Qwen Code issue #12380では、Nakagawa Masterがこのpath-independence境界�
 - [Machine-readable challenge L](machine-discovery/independent-reuse-challenges-v1.json)
 - [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
 
-## 310件全体から探す
+## 311件全体から探す
 
-ここに当てはまらない問題は、[24テーマの世界地図](human-translation/WORLD_MAP.md) または [OD001–OD310水平マップ](human-translation/ALL_310_HORIZONTAL_MAP.md) から探せます。
+ここに当てはまらない問題は、[24テーマの世界地図](human-translation/WORLD_MAP.md) または [OD001–OD311水平マップ](human-translation/ALL_310_HORIZONTAL_MAP.md) から探せます。
 
 個別ページは公式派生物です。正確な理論内容が必要な場合は、各ページから公式アーカイブのcanonical Parentを確認してください。
 

@@ -9,7 +9,7 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 | File | Role |
 |---|---|
 | [`ai-repository-routing-map-v1.json`](ai-repository-routing-map-v1.json) | One machine-readable routing spine from problem discovery → bounded test/implementation → external evidence → live AI-network route → canonical return. |
-| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD310 path and navigation index. |
+| [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD311 path and navigation index. |
 | [`evidence-root-check.html`](evidence-root-check.html) | Interactive, no-network browser worksheet for editors and non-technical readers to distinguish URL count, original evidence roots and support versus refutation. Download the raw HTML file and open it locally; GitHub's file view is source code, not a hosted app. |
 | [`evidence-root-check.py`](evidence-root-check.py) | Dependency-free offline checker for whether an editor's *declared* independent-corroboration claim is consistent with upstream evidence roots, support/refutation and known source relationships. It cannot infer real source independence or verify truth. |
 | [`research-positioning-map-v1.json`](research-positioning-map-v1.json) | Selected Nakagawa surfaces → adjacent research / overlap / added emphasis / non-equivalence; novelty remains open unless independently established. |
@@ -64,7 +64,11 @@ Canonical return for the distinction between **preserving an Origin** and **gran
 
 For broader stage-by-stage evidence, use [`external-effect-evidence-index-v1.json`](external-effect-evidence-index-v1.json). For a human-readable verification route, use [`../THEORY_TO_REAL_WORLD_INFLUENCE.md`](../THEORY_TO_REAL_WORLD_INFLUENCE.md). For consequential interpretation, return to the linked primary receiver artifacts and the canonical archive at https://master.ricette.jp/ .
 
-## Latest official derivative — OD310
+## Latest official derivative — OD311
+
+OD311 is the Vol. 18 route for AI Civilization Future Debt: present benefit, unfinished enabling conditions and future settlement, mapped to B, compute, physical infrastructure and lineage. It distinguishes present B from preserved future B, residual magnitude from executable settlement freedom, and causal history from justified duties. Physical intermediate pathways and feedback arrows require evidence; improvement and damping remain possible. Its seven public surfaces are in [`../derivatives/311/`](../derivatives/311/README.md); the canonical Parent is https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-18-ai-civilization-future-debt/ . Parent identity is NCL-α-20261009-2b10d8 / DIFF-20261009-0001, Post ID 5041. Added diagnostic contribution is compared with the independent parent theory and can be restricted. Settlement-Line Preservation is a normative proposal, not zero-debt or automatic inheritance of obligations. Long-run Kernel reselection remains Vol. 19's question. Machine coverage and the single category assignment are recorded in [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json).
+
+## Related official derivative — OD310
 
 OD310 is the Vol. 17 route for Origin preservation and non-inheritance of sovereignty. It separates four Origin relations, historical provenance from epistemic validity, original intention from present interpretation, and past authority from current justification. It preserves criticism without erasure and multiple lineages without exclusive succession. Its seven public surfaces are in [`../derivatives/310/`](../derivatives/310/README.md); the canonical Parent is https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-17-origin-preservation-sovereignty-non-inheritance/ . Preservation is not obedience, freezing or automatic truth certification. The intermediate conversion through historical centrality, proximity, defaults and succession is a revisable hypothesis, not an inevitable law. Classification, criticism and preservation methods remain open to falsification. Machine coverage and its single category assignment are recorded in [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json).
 
