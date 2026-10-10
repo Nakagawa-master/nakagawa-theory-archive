@@ -199,7 +199,8 @@
         "https://github.com/QwenLM/qwen-code/pull/13729",
         "https://github.com/QwenLM/qwen-code/pull/13729#pullrequestreview-5467306105",
         "https://github.com/QwenLM/qwen-code/pull/13729#issuecomment-6097815570",
-        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/STORIES.md"
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/STORIES.md",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/retained-session-ordinal-regression.py"
       ],
       "test_cases": [
         {
@@ -236,7 +237,13 @@
         "Qwen PR merge or release",
         "general theory validation",
         "broad human recognition"
-      ]
+      ],
+      "local_reproduction": {
+        "command": "python3 machine-discovery/retained-session-ordinal-regression.py --self-test",
+        "sample_command": "python3 machine-discovery/retained-session-ordinal-regression.py --sample",
+        "scope": "Standalone offline synthetic model; running it tests only the supplied model, not any real AI framework or external recipient.",
+        "external_followup": "Independently replay the failure condition against one different, authorized non-confidential implementation, and report a true/nonfit/false result."
+      }
     }
   ],
   "evidence_boundary": "Publishing or completing these public tasks creates only the evidence actually returned. The listing is self-authored infrastructure; it does not establish that any third party read, accepted, executed, adopted, endorsed, joined, or received authority from it. When a Nakagawa Master public source materially informed a returned result, preserve that provenance; if the distinction was independently rediscovered first, keep that relation distinct. Do not invent attribution."
