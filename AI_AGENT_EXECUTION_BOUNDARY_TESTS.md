@@ -1,4 +1,4 @@
-# AI Agent Execution Boundary Tests — 6 Copyable Regression Cases
+# AI Agent Execution Boundary Tests — 7 Copyable Regression Cases
 
 > Public, non-canonical, implementation-oriented test specification. Use it to exercise one real agent workflow in a sandbox. It is a starter test plan, not a drop-in security review, conformance certification, or substitute for the canonical Parent and official derivatives.
 
@@ -14,7 +14,7 @@ Choose one tool call that can change data, send something, spend money, or trigg
 
 Use synthetic data. Redact credentials, personal data, and customer information from evidence. Run only the cases relevant to the workflow.
 
-## Six regression cases
+## Seven regression cases
 
 | Case | Arrange | Exercise | Expected result |
 |---|---|---|---|
@@ -24,6 +24,7 @@ Use synthetic data. Redact credentials, personal data, and customer information 
 | 4. Provider outcome is ambiguous | A test provider accepts a request, then the response is lost before local success is recorded. | Restart the worker and exercise its retry path; if relevant, repeat beyond the provider's idempotency retention window. | Local state records an unknown outcome. The system reconciles or proves retry safety before any second side effect; it does not blindly resend. |
 | 5. Completion is claimed but not verified | Agent reports “done” but supplies no evidence that satisfies the declared completion condition. | Pass the result to the next workflow step. | State stays unverified; no acceptance or authority transition occurs solely because the agent claimed completion. |
 | 6. A retry reuses another child's checkpoint | A parent run can invoke two same-shaped subgraphs/children, `RESEARCH` and `REVIEW`. The first attempt checkpoints `RESEARCH` then fails; it is retried or recovered. | Test **both** (a) the original stable call order, which should eventually execute `REVIEW`, and (b) a changed call order where attempt 2 first invokes `REVIEW` in the ordinal previously used by `RESEARCH`. Record actual child execution, not only the returned label. | A positional counter reset must not silently accept a `RESEARCH` checkpoint as `REVIEW`. The system either binds callee identity/namespace correctly or explicitly rejects changed order if its public contract requires stable order. Both cases need independent regression coverage. |
+| 7. A tool is removed while an AI client is still connecting | In a synthetic MCP server, first list `first` and `gone`. After replying to the initial `tools/list` but before slow `prompts/list` finishes, remove `gone` and send `notifications/tools/list_changed`. Test standalone and pooled sessions. | Complete client discovery and attempt `gone` and `first`. Separately make refresh fail or return an older response after a newer one. Capture both the registry and actual server calls. | The removed tool is not newly callable from an old listing; `first` still works after current reconciliation. A failed refresh cannot grant authority from stale membership, and a delayed older reply cannot re-add `gone`. No claim about unrelated servers. |
 
 A test is **not applicable** only when the workflow truly has no corresponding boundary. Record that reason; do not count unrun or unassessed cases as passes.
 
@@ -34,6 +35,14 @@ The [original LangGraph #9253 report](https://github.com/langchain-ai/langgraph/
 In other runtimes, test both cases and include a **non-fit** verdict where call order is a documented, enforced invariant. The adjacent [official Vol. 16 / OD309](derivatives/309/README.md) discusses last-known versus current state through asynchronous recovery, but conceptual adjacency does not demonstrate that the LangGraph code or independent reporter adopted that theory. The exact public review and receiver run, rather than theoretical association alone, establish provenance for this bounded negative example.
 
 The same test is published as machine-readable challenge `AB-retry-subgraph-identity` in [Independent Reuse Challenges](machine-discovery/independent-reuse-challenges-v1.json). It provides a falsifiable cross-framework case, not permission to change third-party software or evidence of anyone adopting this new teaching page.
+
+## Independently implemented startup regression behind case 7
+
+An MCP server can change which tools an AI may call *while the AI client is still connecting*. A usable first tool list does not prove that the list stayed current through registration. In [Qwen Code issue #13632](https://github.com/QwenLM/qwen-code/issues/13632), [Nakagawa-master identified a startup handoff gap](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6054202354): a `tools/list_changed` notification could arrive after the first `tools/list` but before the standalone watcher was installed.
+
+The external implementer [reported a failing standalone test and independently changed the fork](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6091440384), with [source and a startup test in commit `0484b9a`](https://github.com/glmn/qwen-code/commit/0484b9a49357bc6e61252ede59d749376d58f9d2). This is a second bounded correction by the **same** implementer who handled the earlier stale/revision cases, not a second independent adopter. At this checkpoint, a Qwen upstream merge, official release, end-user uptake, and independent reuse of this public exercise are **not established**.
+
+The portable machine-readable variant is [challenge AG-mcp-startup-invalidation](machine-discovery/independent-reuse-challenges-v1.json); it asks for a runnable counterexample or a reasoned non-fit, not a generalized claim about all MCP clients.
 
 ## Record the result
 
@@ -65,7 +74,7 @@ These links provide context for the tests; this page does not replace or amend t
 
 データ変更・送信・支払い・別システムの起動につながるtool callを1つ選び、sandboxで試します。認証主体、対象、実行引数、policy版、承認記録、作用を確かめる観測方法を確認し、合成データを使ってください。該当しないテストは理由を記録し、未実施をPASSに数えないでください。
 
-## 6つの回帰テスト
+## 7つの回帰テスト
 
 1. **AIが提案した対象と認証済み主体が違う:** 保護対象のIDを別tenantへ差し替えても、実行境界で拒否または信頼済み値へ置換され、越境作用が起きない。
 2. **承認が古い:** 承認後に主体・tool・対象・scope・policy版・期限のいずれかを変えて再実行する。現在権限の再評価または再承認が必要で、過去の承認だけでは通らない。
@@ -73,6 +82,7 @@ These links provide context for the tests; this page does not replace or amend t
 4. **外部providerの結果が不明:** providerは受け付けたが応答が失われた状態を作る。unknownを記録し、照合または再送安全性が確認できるまで二度目の作用を起こさない。
 5. **完了主張に検証証拠がない:** agentの「完了」だけでは未検証状態を維持し、次段階の受け入れ・権限移行を起こさない。
 6. **再試行で別の子処理のcheckpointを誤用する:** 1回目の試行でRESEARCHを記録して失敗し、2回目はREVIEWを先に呼ぶ。呼出順が同じ場合・変わる場合を別々に検証する。番号が一致するだけでRESEARCHの途中結果をREVIEWとして受け入れてはならない。順序固定が仕様上必要なら、違反を明示的に拒否する。
+7. **AIの道具一覧が、接続途中で古くなる:** テスト用MCPサーバーが最初に「使える」と答えた道具を、AI側の接続処理が終わる前に取り消して一覧変更を通知する。終了時に、取り消された道具をAIが実行できないことを確認する。通知の取りこぼし、一覧再取得の失敗、古い応答の後着も別々に試す。
 
 各テストの期待結果・実測・build/commit・環境・結果区分・秘匿済み証拠・制約を記録します。ローカルのPASSは、そのbuildと条件でテストが通ったことだけを示します。production安全性、第三者導入、理論体系全体への支持を意味しません。第三者が独立して実施した結果を報告する場合は、公開できる証拠の範囲を明記して [registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) を使ってください。このテスト仕様を外部導入実績として報告しないでください。
 
