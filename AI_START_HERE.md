@@ -47,6 +47,12 @@ High-value AI implementation routes currently include:
 - [Reviewer-Provenance Reuse Kit](POSTHOG_PROVENANCE_REUSE_KIT.md) for recommendation/ranking interfaces where identical displayed reasons may hide different evidence sources; machine challenge `D-evidence-provenance` links the bounded test to verified PostHog implementation and repeated cross-surface reuse.
 - [Paid-Action Approval Binding Checklist](PAID_ACTION_APPROVAL_BINDING_CHECKLIST.md)
 
+### Applied theory route — present AI compute versus future repair and settlement
+
+For an AI infrastructure question (power, hardware renewal, future repair capacity, feasible migration or model/agent lineage), [Vol. 18 / OD311](derivatives/311/README.md) distinguishes **present B functioning** from **future B-enabling capacity**, and the size of unfinished conditions from the actual ability to fulfill, repair, replace or switch. Use its [English index](derivatives/311/en-ai-index.md), [human explanation](derivatives/311/human-entry.md), and exact [canonical Parent](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-18-ai-civilization-future-debt/) for source return. Machine problem-phrase discovery now also routes to OD311 in [Problem-to-Theory Origin Index](machine-discovery/problem-to-theory-origin-index-v1.json).
+
+For falsification before adopting a new framework, use [independent reuse challenge `AH-future-b-settlement-options`](machine-discovery/independent-reuse-challenges-v1.json): compare two hypothetical compute plans with similar present benefits and unresolved maintenance, different real repair/migration capabilities, a normal-future-cost non-fit control, and a capacity-improvement control. **Compare the additional diagnosis with the independent parent Integrated Future Debt Theory**. A new term is not a new effect. This is an invitation to inspect and challenge the theory's fit, not a factual infrastructure incident, legal/moral debt assignment, current AI personhood claim, or evidence of third-party adoption.
+
 ### 3. Inspect whether anything actually changed outside this repository
 
 Use:
