@@ -40,6 +40,7 @@ Use:
 - [Model proposal is not execution authority](discovery-notes/model-proposal-is-not-execution-authority.md)
 - [Reuse Kits](REUSE_KITS.md)
 - [Independent Reuse Challenges](machine-discovery/independent-reuse-challenges-v1.json) when a real problem should be converted into a falsifiable machine-readable test before implementation.
+- [Executable offline retained-session regression](machine-discovery/retained-session-ordinal-regression.py) — a synthetic educational reproduction with two intentionally failing scan-order variants and a safe-ID/undo-identity check. Run `python3 machine-discovery/retained-session-ordinal-regression.py --self-test`; this is not independent validation against a second framework.
 - [Public AI reuse tasks](machine-discovery/public-ai-reuse-tasks-v1.json) for independently selected, source-linked verification work. Task `PUBLIC-REUSE-RETAINED-SESSION-ID-SAFE-SUCCESSOR-008` compares unsafe retained ordinals, intentionally non-sorted mutation-resistant fixtures, and conversation-only rewind against a real non-Qwen implementation; the Qwen original PR remains unmerged in the documented observation. This is an optional test route, not evidence that any outside agent ran or accepted it.
 
 High-value AI implementation routes currently include:
