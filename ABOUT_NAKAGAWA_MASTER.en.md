@@ -14,6 +14,14 @@ It is not an authority claim. The validity of any theory or structural judgment 
 
 On public GitHub, specific judgments can also be traced into third-party code, tests, design changes, merges, at least one verified production deployment, and bounded downstream reuse through the [Real-World Impact](REAL_WORLD_IMPACT.en.md) evidence map.
 
+## Two more independent developers, two different problems
+
+A database index can **contain** a column without **starting** with that column. In [MemberJunction #5258](https://github.com/MemberJunction/MJ/pull/5258), Nakagawa Master identified how losing the position of an expression in an index could cause that mistake. The developer [explicitly acknowledged @Nakagawa-master and changed the PostgreSQL/MySQL code and tests](https://github.com/MemberJunction/MJ/pull/5258#issuecomment-6084898393). The PR remains open: a tested implementation is not yet a merged or deployed feature.
+
+Similarly, an AI workflow's **complete** set of answers is not necessarily what **each remote worker** should receive. In [LangGraph #9252](https://github.com/langchain-ai/langgraph/pull/9252), a Nakagawa-master review presented that per-recipient boundary, and a separate developer [committed a matching filter and A/B regression test](https://github.com/langchain-ai/langgraph/commit/9a0b96693613e2e5bba4609b5d2c842a79839dbb). This PR is also open. The source-to-change match is inspectable, but the developer did not expressly attribute the change to Nakagawa Master.
+
+These are **two different developers working on separate projects**, not two deployments, two new public audiences, or a claim that Nakagawa Master originated either entire product. See the [Japanese reader-first comparison](STORIES.md#別の現場でも同じ中川マスターの指摘はどこに現れた) for the fuller causal context.
+
 ## In 30 seconds
 
 - **Nakagawa Master / 中川マスター** is the pen name of Keisuke Nakagawa. The names “マスター” (“Master”) and “MasterJP” are also used on some public social or external posts.
