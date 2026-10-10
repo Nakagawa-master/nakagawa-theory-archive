@@ -815,6 +815,34 @@
       },
       "observed_receiver_result": "The external author 2sumtech expressly credited @Nakagawa-master and changed code and two regressions to validate the cumulative final streamed event before publishing it. That source-specific change is attributable; the earlier overall PR goal and unrelated streaming implementation are not.",
       "evidence_boundary": "One independent external PR author implemented and explicitly acknowledged the specific stream-boundary review. The PR is not merged or released; no independent second-receiver carry is verified. The separate early-close finding is an unadopted public comment with no receiver fix yet. A local iterator lifecycle reproduction does not demonstrate a real provider HTTP leak, and this isolated contribution does not establish entire theory-corpus adoption."
+    },
+    {
+      "id": "AI-qdrant-int64-float64-reverse-boundary",
+      "distinction": "A filter value's exact float64 representation does not guarantee that the payload-side comparison preserves a neighboring stored integer. For unindexed Qdrant server ranges, integer JSON payloads are converted to f64; the Python in-memory client instead directly compares Python integer and floating-point values. Keep test/source parity separate from actual server execution.",
+      "test": "Create exactly two distinct documents with numeric metadata id=2**53 and id=2**53+1 (and a symmetric negative pair in a separate fixture). With a live Qdrant server collection with no numeric payload index, compare EQ and NE filtering on the LOWER integer (2**53) under the pre-review <=2**53 range-translation path and the receiver's corrected <2**53 exact-match path. Repeat in QdrantClient(':memory:') and report any difference; do not assume local-mode success proves server correctness. Test 10/10.0 EQ and NE separately so the original mixed-numeric regression stays fixed. Independently check both server indexed and unindexed paths if available; document query and payload serialized representations, plugin versions and observed results.",
+      "positive_evidence": [
+        "Before fix, server unindexed Range(gte=2**53,lte=2**53) may select both stored adjacent integers after conversion, while corrected exact-match lookup for int 2**53 selects only that record; independently record actual server outcome instead of inferring from source.",
+        "The lower-int EQ returns exactly the lower record; NE excludes only that record; for higher-int query analogous correctness is maintained.",
+        "Normal numeric values such as int 10 and float 10.0 continue matching numeric float payloads according to the receiver's stated intended cross-type semantics.",
+        "The local Python comparison may show different outcomes from a real server, making the backend distinction independently measurable rather than attributing a test pass to an unrun backend.",
+        "The independent receiver's head is source-bounded and only the post-review threshold adjustment and inverse tests are attributed to this specific Nakagawa review."
+      ],
+      "useful_negative_evidence": [
+        "The server's unindexed or indexed implementation does not convert payload values as predicted in the chosen version/route; report the actual execution contract and path, not assumed confirmation.",
+        "Local-mode reverse lookup passes on the old <=2**53 version; such a result alone neither confirms nor refutes the server-side collision.",
+        "One server/runtime fixture still allows collision under exact match or rejects out-of-range numeric payloads; identify the separate constraint rather than claiming the fix is sufficient.",
+        "A backend normalizes all large integers or rejects them before storage, making this exact numeric boundary non-fit for that backend while leaving the source distinction intact.",
+        "Documentation/owner-authored test preparation alone is not third-party operation, release or person-Origin recognition."
+      ],
+      "source_provenance": {
+        "original_review": "https://github.com/run-llama/llama_index/pull/23441#issuecomment-6096497191",
+        "source_level_followup": "https://github.com/run-llama/llama_index/pull/23441#issuecomment-6096520971",
+        "receiver_implementation": "https://github.com/run-llama/llama_index/commit/1fd674c63d4ce9a3e95c3795f1a70477e0d1901a",
+        "qdrant_rust_condition_checker": "https://github.com/qdrant/qdrant/blob/016542aa5deb6c66380bb137badf73d54f742bde/lib/segment/src/payload_storage/condition_checker.rs",
+        "qdrant_client_local_mode": "https://github.com/qdrant/qdrant-client/blob/v1.19.1/qdrant_client/local/payload_filters.py"
+      },
+      "observed_receiver_result": "External author ningmao-hlyz changed a live, unmerged PR's boundary from <=2**53 to <2**53 and added reverse EQ/NE tests for the adjacent pair. This is receiver-owned code/test adaptation, not a verified server integration or explicit named reply. Earlier VANDRANKI review and underlying PR are separate credited origins.",
+      "evidence_boundary": "Original bounded review had source-based server conversion evidence, not a live Qdrant server test. The independent follow-up challenge invites actual falsification and can yield a negative result. No deployment, new second-person adoption, whole-theory validation, or measured human audience reach is implied. Canonical theoretical parent attribution is NOT asserted for the independent PR."
     }
   ],
   "evidence_boundary": [
