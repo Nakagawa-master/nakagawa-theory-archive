@@ -16,6 +16,10 @@
 - AI-Newsでは、URL数と独立証拠root数を分ける提案が継続編集ルールへ入り、別の編集監査でも再利用されました。
 - MemberJunctionでは、具体的なAPI境界の指摘が独立reviewでも確認され、source relationを残したcode/test修正がmergeされました。
 
+**他の現場でも、違う二人の開発者がコードを変えています。** MemberJunctionでは、検索用の索引に「その項目が含まれる」と「その項目から始まる」は違うと[中川マスターが指摘](https://github.com/MemberJunction/MJ/pull/5258#issuecomment-6084898393)し、実装者が本人へ直接返答したうえで修正・テストを追加しました。LangGraphでは、AI処理を二つ再開するときの「全体の回答」と「片方だけに渡してよい回答」を区別する[レビュー](https://github.com/langchain-ai/langgraph/pull/9252#pullrequestreview-5467723390)に対応する実装とテストが[追加されています](https://github.com/langchain-ai/langgraph/commit/9a0b96693613e2e5bba4609b5d2c842a79839dbb)。**両PRとも未統合**で、後者の実装者による名前付きの謝意や、一般利用者への普及までは確認できません。
+
+→ [二つの現場で何が違っていたのか、身近な言葉で読む](../STORIES.md#別の現場でも同じ中川マスターの指摘はどこに現れた)
+
 この3件に共通するのは、単に「意見を言った」ことではありません。
 
 ```text
