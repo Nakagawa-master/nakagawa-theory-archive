@@ -2,7 +2,9 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**記録更新: 2026-10-09（追加事例40〜46の一次資料を確認。既収録事例の一括再確認日ではありません）**
+**収録事例の最終追加確認: 2026-10-09（事例40〜46。既収録事例すべての一括再確認ではありません）**
+
+**掲載範囲の確認: 2026-10-10。** この番号付き一覧は引き続き**1〜46件**です。10月10日に別途確認された、独立開発者による [LlamaIndex #22740](https://github.com/run-llama/llama_index/pull/22740) のストリーム最終応答・テスト修正、および [#23441](https://github.com/run-llama/llama_index/pull/23441) の整数精度境界・テスト修正は、まだ本一覧へ番号付き収録していません。確認時点で両PRとも **open / unmerged** であり、リリースや実利用を示すものではありません。追加の出典付き事例は [Machine Discovery](machine-discovery/README.md) から辿れます。そちらの機械向け**51件の証拠事例・36件の検証課題**は、ここに載る46の番号付き事例とは別の集合・集計基準です。
 
 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）は、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
 
