@@ -68,6 +68,8 @@ def self_test() -> dict:
     assert unsafe_first_match(ordered) != next_id
     assert unsafe_last_wins(ordered) != next_id
     assert next_turn_id([{"turn_id": "0008"}, {"turn_id": "8"}]) == 9
+    assert next_turn_id([{"turn_id": str(MAX_SAFE - 1)}]) == MAX_SAFE
+    assert next_turn_id([{"turn_id": str(MAX_SAFE)}]) == 1
     assert next_turn_id([{"turn_id": "NaN"}, {"turn_id": "-1"}, {"turn_id": str(MAX_SAFE)}]) == 1
 
     past = [{"turn_id": 9, "file": "old-draft.txt"}]
