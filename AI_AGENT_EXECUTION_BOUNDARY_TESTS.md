@@ -54,6 +54,10 @@ In [LlamaIndex PR #22740](https://github.com/run-llama/llama_index/pull/22740), 
 
 A different AI framework can test the same narrow condition with a fake provider and synthetic A/B calls, or report a reasoned **non-fit** if its final stream event is already provably guarded elsewhere. Machine-readable test details and evidence boundaries are in [`AI-stream-final-semantic-commit`](machine-discovery/independent-reuse-challenges-v1.json). Include an event-time snapshot, selected execution calls, error path, version, and any test that failed. This public test is an invitation to check a concrete failure mode, not evidence of independent adoption or of the entire original theory system being implemented.
 
+## Offline event-time trace checker for case 8
+
+A separate [dependency-free checker](machine-discovery/stream_final_event_contract_probe.py) accepts redacted event-time snapshots and selected call IDs in JSON and returns PASS, FAIL, NOT_ASSESSED or INVALID_INPUT. Run `python3 machine-discovery/stream_final_event_contract_probe.py --self-test` for the deterministic positive/negative fixtures, then `--sample` to prepare an input template. PASS checks only the **submitted trace's internal consistency**; it does not verify that the client really captured its events at emission time, ran a provider, closed an upstream iterator, or deployed a fix. The source-linked LlamaIndex example and machine challenge above remain the exact provenance and falsification context.
+
 ## Record the result
 
 Copy and fill one block per case:
