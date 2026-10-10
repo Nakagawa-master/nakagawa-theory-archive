@@ -2,7 +2,9 @@
 
 语言: [日本語](REAL_WORLD_IMPACT.md) | [English](REAL_WORLD_IMPACT.en.md) | **中文**
 
-**记录更新：2026-10-09（新增第40–46案的来源已核实，并非对原有全部案例的重新核查）**
+**编号案例上次新增来源核查：2026-10-09（仅第40–46案；并非重新核查此前全部案例）**
+
+**收录范围核查：2026-10-10。** 本页目前仍只有**第1–46案**。10月10日另行核实的独立开发者代码及测试修改，包括 [LlamaIndex #22740](https://github.com/run-llama/llama_index/pull/22740) 的流式最终响应一致性修改，以及 [#23441](https://github.com/run-llama/llama_index/pull/23441) 的大整数过滤精度边界修改，**尚未作为编号案例收录到本页**。核查时这两项PR仍为 **open / unmerged**，不代表已发布或实际部署。更多可核实的来源可参阅 [Machine Discovery](machine-discovery/README.md)；其**51项机器可检索证据记录与36项独立验证课题**采用不同的收录范围和计数规则，不能直接等同于本页46项编号案例。
 
 中川大师（Nakagawa Master）是Keisuke Nakagawa的笔名。在社交媒体上也使用“マスター（Master）”，部分外部投稿使用“MasterJP”名义。
 
