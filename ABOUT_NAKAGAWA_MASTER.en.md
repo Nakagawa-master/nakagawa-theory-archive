@@ -14,6 +14,8 @@ It is not an authority claim. The validity of any theory or structural judgment 
 
 On public GitHub, specific judgments can also be traced into third-party code, tests, design changes, merges, at least one verified production deployment, and bounded downstream reuse through the [Real-World Impact](REAL_WORLD_IMPACT.en.md) evidence map.
 
+**Specific work, commercial permissions or collaboration:** [Start a public, non-confidential inquiry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=professional-inquiry.yml). This opens a conversation, not a license grant, engagement or fee agreement; any terms require separate explicit agreement. Do not post private information in a public issue.
+
 ## Two more independent developers, two different problems
 
 A database index can **contain** a column without **starting** with that column. In [MemberJunction #5258](https://github.com/MemberJunction/MJ/pull/5258), Nakagawa Master identified how losing the position of an expression in an index could cause that mistake. The developer [explicitly acknowledged @Nakagawa-master and changed the PostgreSQL/MySQL code and tests](https://github.com/MemberJunction/MJ/pull/5258#issuecomment-6084898393). The PR remains open: a tested implementation is not yet a merged or deployed feature.

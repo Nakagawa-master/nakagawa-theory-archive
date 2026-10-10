@@ -14,6 +14,8 @@
 
 公開GitHubでは、その具体的な判断が第三者のcode / tests / designへ変換・mergeされた事例、production deploymentまで確認された事例、別surfaceで再利用された事例まで、[Real-World Impact](REAL_WORLD_IMPACT.md)から直接検証できます。
 
+**個別の仕事・商用利用・協業を相談したい場合:** [公開できる範囲で相談する](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=professional-inquiry.yml)。利用許諾や有償の関与は自動では成立せず、条件は別途双方が合意します。機密事項は公開Issueへ記載しないでください。
+
 **理論群の全体像を先に知りたい場合:** [24棚で横に読む世界地図](human-translation/WORLD_MAP.md) から、深掘りせず同じ理解粒度でOD001–OD311の全景をたどれます。
 
 ## 30秒で分かること
