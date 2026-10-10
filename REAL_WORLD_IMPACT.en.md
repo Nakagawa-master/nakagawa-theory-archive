@@ -2,6 +2,8 @@
 
 Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_IMPACT.zh.md)
 
+**46 publicly documented cases.** What did others actually do after Nakagawa Master identified a specific problem or distinction on GitHub? Follow the original contribution, the third party's response or change, and the available merge or release evidence case by case. The cases range from responses to implemented or released changes; 46 does not mean 46 adoptions or verified deployments.
+
 Nakagawa Master is the pen name of Keisuke Nakagawa. On social media, the name “マスター” (“Master”) is also used; some external posts use “MasterJP.”
 
 This page is a **public verification guide**. It links public GitHub comments or reviews made under the `Nakagawa-master` account to later changes that can be checked in third-party repositories.
