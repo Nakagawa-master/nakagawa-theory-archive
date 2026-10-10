@@ -81,6 +81,20 @@ def main() -> int:
         mentioned = re.search(r"には現在([0-9]+)の番号付き事例セクション", readme)
         if not mentioned or int(mentioned.group(1)) != count:
             raise ValueError("README case count differs from the three impact pages")
+
+        # The same README paragraph also contains a human-facing caveat such as
+        # "46件すべてが採用・リリース・運用まで進んだという意味ではありません".
+        # Check that numerical statement too: otherwise a case-47 proposal can
+        # pass this validator while still displaying 47 and 46 together.
+        caveat_counts = [
+            int(number)
+            for number in re.findall(
+                r"(?<![0-9])([0-9]+)件すべてが採用・リリース・運用まで進んだという意味ではありません",
+                readme,
+            )
+        ]
+        if any(number != count for number in caveat_counts):
+            raise ValueError("README adoption caveat count differs from numbered impact cases")
     except (OSError, ValueError) as exc:
         print(f"Impact index order FAILED: {exc}", file=sys.stderr)
         return 1
