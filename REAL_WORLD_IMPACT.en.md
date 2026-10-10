@@ -2,7 +2,9 @@
 
 Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**Record updated: 2026-10-09 (new case sources 40–46 checked; not a complete recheck of all older entries)**
+**Last addition-to-numbered-cases source review: 2026-10-09 (cases 40–46 only; not a complete recheck of older cases)**
+
+**Coverage checked: 2026-10-10.** This numbered guide still lists **cases 1–46**. Independent developers' subsequently verified code and test changes in [LlamaIndex #22740](https://github.com/run-llama/llama_index/pull/22740) (stream-final response consistency) and [#23441](https://github.com/run-llama/llama_index/pull/23441) (large-integer numeric filtering) have **not yet been added as numbered cases here**. Both PRs were **open and unmerged** at this check; neither a release nor real-world deployment is implied. See [Machine Discovery](machine-discovery/README.md) for additional source-linked evidence. Its **51 machine evidence records and 36 independent test challenges** use different scopes/counting rules from the 46 numbered cases in this guide.
 
 Nakagawa Master is the pen name of Keisuke Nakagawa. On social media, the name “マスター” (“Master”) is also used; some external posts use “MasterJP.”
 
