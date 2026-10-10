@@ -2,6 +2,8 @@
 
 语言: [日本語](REAL_WORLD_IMPACT.md) | [English](REAL_WORLD_IMPACT.en.md) | **中文**
 
+**46项有公开记录的案例。** 中川大师在GitHub提出具体问题或区别之后，第三方作出了什么回应、进行了什么修改？这里可以按案例追溯原始评论、第三方的回应或代码变化，以及可核验的合并、发布记录。各案例的进展不同；46项并不意味着全部已被采纳、合并或投入实际使用。
+
 中川大师（Nakagawa Master）是Keisuke Nakagawa的笔名。在社交媒体上也使用“マスター（Master）”，部分外部投稿使用“MasterJP”名义。
 
 本页是一个**公开核验指南**。它把 `Nakagawa-master` 账号在GitHub上的公开comment / review，与之后第三方repository中可以独立检查的变化对应起来。
