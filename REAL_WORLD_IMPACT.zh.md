@@ -2,7 +2,7 @@
 
 语言: [日本語](REAL_WORLD_IMPACT.md) | [English](REAL_WORLD_IMPACT.en.md) | **中文**
 
-**记录更新：2026-10-09（新增第40–46案的来源已核实，并非对原有全部案例的重新核查）**
+**记录更新：2026-10-10（新核查第47案的原评论、第三方回应、实现commit、回归测试与PR状态；第40–46案在10月9日核查；不代表第1–46案已全部重新核验）**
 
 中川大师（Nakagawa Master）是Keisuke Nakagawa的笔名。在社交媒体上也使用“マスター（Master）”，部分外部投稿使用“MasterJP”名义。
 
@@ -1378,6 +1378,20 @@ MCP服务发送 `tools/list_changed` 后，如果刷新 `tools/list` 失败，�
 [中川大师此前提出的区分](https://github.com/Expensify/App/issues/95750#issuecomment-5690282372)分开了Pay按钮可见、使用指定资金来源付款的当前权限、修改workspace reimbursement bank的权限。后来receiver独立报告原有bank A可能被替换的风险、完成rollback，并重新实现使用授权bank B而不覆盖A的路径。该head仍有跨workspace账户选择、backend响应验证与性能相关review问题。
 
 **可确认：** receiver侧独立bug报告、rollback及后续技术实现进展，与此前结构区分方向一致。**不可确认：** 最新具体修复由Nakagawa直接导致、review认可、merge、新功能生产使用或广泛人物认知。遵守该repo的停止追加评论要求，不对外接触。
+
+---
+
+## 47. LlamaIndex｜AI流式输出的最终工具事件必须与实际执行决策一致
+
+**对象：** [LlamaIndex PR #22740](https://github.com/run-llama/llama_index/pull/22740)。**阶段：** 独立开发者明确接受具体review意见，并修改代码和回归测试。2026-10-10核查时PR仍为 **open / unmerged**，head为 `a9fb01ce05f090ff8de885fd059c739c58a0725f`。
+
+[中川大师的原始review](https://github.com/run-llama/llama_index/pull/22740#issuecomment-5651572551)指出：禁止并行工具调用时，AI向外发送的最后一条 `AgentStream` 事件可能先公布工具[A, B]，随后验证才删除B，但实际agent只选择A。中川大师建议保留最后一个累计响应，在向外发送前验证，并通过真实的 `FunctionAgent` 消费路径检验事件与最终决策是否一致。
+
+外部开发者 `2sumtech` [明确回应“@Nakagawa-master thanks, good catch”并接受建议](https://github.com/run-llama/llama_index/pull/22740#issuecomment-6096175756)，在[修正commit与测试](https://github.com/run-llama/llama_index/commit/a9fb01ce05f090ff8de885fd059c739c58a0725f)中，将同步和异步流改为保留最后一个响应，验证后才发送；如果最终验证抛出错误，则不发送未经验证的最终事件。新增的对照测试检查发送当时的工具调用，以及`FunctionAgent`事件和最终选择之间的一致性。
+
+随后，[关于提前终止时上游流资源关闭的另一条意见](https://github.com/run-llama/llama_index/pull/22740#issuecomment-6096271152)已公开提出，但**尚未证实被开发者接受或修复**。
+
+**可确认：** 同一名独立外部开发者对具体问题作出明确署名反馈、完成代码及测试修改，并提及Nakagawa-master本人。**不可确认：** PR已merge或release、生产实际使用、后续关闭资源建议被采纳、第二名独立接收者采用、广泛人物认知或整套理论体系得到认可。
 
 ---
 
