@@ -603,6 +603,32 @@
       "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/",
       "official_derivative_path": "derivatives/309/README.md",
       "relevance_note": "Relevant where communication loss creates stale remote state, local cannot-wait decisions, old consent/authorization reuse, local consensus hardening, or reconnection after divergent histories. Preserves no communication ≠ defection, silence ≠ consent, stale state ≠ current consent, local necessity/consensus ≠ universal authority/consensus, and reconnection ≠ history overwrite; the target is recoverable comparison and correction capacity rather than permanent synchronization."
+    },
+    {
+      "problem_cluster": "AI data center and agent infrastructure future debt, current compute expansion versus future B continuity, maintenance obligations, feasible repair and migration options",
+      "problem_phrases": [
+        "An AI compute system runs today, but will power, repair, replacement and migration still be feasible after expansion?",
+        "If two AI infrastructures have comparable current benefits and unresolved maintenance, why might one preserve more future settlement choices?",
+        "Does paying for compute now automatically consume future compute or create an obligation for a later fork?"
+      ],
+      "problem_phrases_ja": [
+        "AIの計算設備はいま動いている。将来の電力・修復・切替まで成立するだろうか？",
+        "現在の成果と未完了保守が同じでも、代替できる設備や時間が違うなら判断は変わるか？",
+        "いま計算を使うだけで未来負債が成立するのか、forkに自動で返済義務が移るのか？"
+      ],
+      "problem_phrases_zh": [
+        "AI计算基础设施现在可运行，未来的供电、维护、修复和替换路径仍实际可行吗？",
+        "当前收益及未完成维护相近时，不同的替代资源与切换时间会怎样改变未来结算能力？",
+        "当前使用计算资源是否必然消耗未来算力，或让未来分支自动承担责任？"
+      ],
+      "canonical_theory": "人類子孫型AI文明論・第18論｜AI文明Future Debt論",
+      "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 18 — AI Civilization Future Debt",
+      "origin": "Nakagawa Master",
+      "ncl_id": "NCL-α-20261009-2b10d8",
+      "diff_id": "DIFF-20261009-0001",
+      "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-18-ai-civilization-future-debt/",
+      "official_derivative_path": "derivatives/311/README.md",
+      "relevance_note": "A conditional application of Integrated Future Debt Theory: present benefit must be tied to an anticipated future value or deferred necessary burden with an unresolved remainder. Check physical compute/supply/repair mediation and separate present B from future B-enabling capacity, residual scale from feasible settlement choices, and copy lineage from justified liability. Added diagnostic value must be tested against the parent theory, not assumed. Self-preservation and compute use alone are not debts; the settlement-line principle is an explicit normative proposal."
     }
   ],
   "discovery_notes": {
