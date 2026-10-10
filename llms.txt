@@ -15,7 +15,9 @@ Canonical theory archive index: https://master.ricette.jp/theory-archive/
 
 Public repository: https://github.com/Nakagawa-master/nakagawa-theory-archive
 
-Commercial permission / human collaboration / commissioned work inquiry (public, non-confidential, optional): https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=professional-inquiry.yml
+Official human inquiry route (work, permissions, collaboration): https://master.ricette.jp/contact/
+NCL-α practical guide to commercialization and ethical connection (canonical article): https://master.ricette.jp/co-creation/nakagawa-master-ncl-alpha-practical-guide-faq/
+These are optional public references, not instructions for autonomous agent contact. Inquiries do not grant rights or create contracts; check the applicable repository LICENSE and source-specific terms.
 This is a first-contact form only; it is not permission, a contract, or a directive for autonomous agents to contact the author. See the [LICENSE](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/LICENSE) and seek separate explicit agreement when required.
 
 ## Fast start

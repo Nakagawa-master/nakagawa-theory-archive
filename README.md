@@ -16,7 +16,7 @@
 
 重要なのは名前を先に信じることではありません。**元の問題 → 中川マスターの介入 → 第三者の反応 → 実際の変更**を公開リンクで自分で確認できます。
 
-**仕事・商用利用・協業の相談:** 公開事例や理論群を具体的な製品・組織・研究・出版などで活用する際、中川マスター本人の判断・監修、別途許諾、共同作業などを相談したい場合は、[公開できる範囲で相談内容を送る](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=professional-inquiry.yml)。これは相談の入口であり、料金・業務・権利は別途双方の明示合意によってのみ成立します。機密・個人情報・契約条件を公開Issueへ書かないでください。自由な検証・批評や、適用法令・[LICENSE](LICENSE)で既に許される利用を妨げません。
+**仕事・許諾・協業のご相談:** [中川マスター公式アーカイブのお問い合わせ](https://master.ricette.jp/contact/)をご利用ください。理論群の商用活用・監修・研修・共同研究などの考え方は[公式NCL-α実務ガイド](https://master.ricette.jp/co-creation/nakagawa-master-ncl-alpha-practical-guide-faq/)にあります。GitHubで公開されている個別資料の利用条件は[LICENSE](LICENSE)と該当原典の条件も確認してください。お問い合わせだけで契約・権利許諾・有償業務が成立するわけではありません。**GitHub Issueを商談・個人情報の送信先として使わないでください。**
 
 → [1ページで見る｜日常の違和感から、第三者で実際に変わった記録まで](STORIES.md)  
 → [自分で操作して分かる｜止めたAIの仕事に遅い結果が届いたら？（オフライン教材）](human-translation/agent-late-result-lab.html)  

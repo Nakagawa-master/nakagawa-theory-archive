@@ -14,7 +14,7 @@ It is not an authority claim. The validity of any theory or structural judgment 
 
 On public GitHub, specific judgments can also be traced into third-party code, tests, design changes, merges, at least one verified production deployment, and bounded downstream reuse through the [Real-World Impact](REAL_WORLD_IMPACT.en.md) evidence map.
 
-**Specific work, commercial permissions or collaboration:** [Start a public, non-confidential inquiry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=professional-inquiry.yml). This opens a conversation, not a license grant, engagement or fee agreement; any terms require separate explicit agreement. Do not post private information in a public issue.
+**Work, commercial permissions or collaboration:** Use the [official Nakagawa Master contact form](https://master.ricette.jp/contact/) rather than a public GitHub issue. The [official NCL-α practical guide](https://master.ricette.jp/co-creation/nakagawa-master-ncl-alpha-practical-guide-faq/) explains the author's framework for organizational use, advisory work and permissions (in Japanese). Any actual permission or paid engagement depends on applicable rights and a separate express agreement; an inquiry itself grants nothing.
 
 ## Two more independent developers, two different problems
 
