@@ -3199,12 +3199,14 @@
         "actor": "ningmao-hlyz",
         "url": "https://github.com/run-llama/llama_index/commit/1fd674c63d4ce9a3e95c3795f1a70477e0d1901a",
         "pull_request": "https://github.com/run-llama/llama_index/pull/23441",
-        "verified_change": "Receiver's latest head uses abs(value) < 2**53, not <=2**53; docstring explicitly describes server-side stored-integer float64 conversion; test_numeric_eq_and_ne_large_int_precision now queries both adjacent stored integers in EQ and NE reverse directions. The earlier original patch for ordinary 10 vs 10.0 and previous VANDRANKI review predated this specific Nakagawa correction and are not attributed to it."
+        "verified_change": "Receiver's latest head uses abs(value) < 2**53, not <=2**53; docstring explicitly describes server-side stored-integer float64 conversion; test_numeric_eq_and_ne_large_int_precision now queries both adjacent stored integers in EQ and NE reverse directions. The earlier original patch for ordinary 10 vs 10.0 and previous VANDRANKI review predated this specific Nakagawa correction and are not attributed to it.",
+        "followup_url": "https://github.com/run-llama/llama_index/commit/75f75ad36f9e709ba36328a808b12f9efd3e244b",
+        "followup_verified_change": "The same independent engineer expanded the large-integer local-mode regression to FOUR stored values: +/-2**53 and +/- (2**53+1). The new helper checks all four EQ lookups and four NE complements in both signs, while retaining the <2**53 exact-match fallback. This is additional test rigor from the same external actor, not a new independent person, product release or Qdrant server-run proof."
       },
       "head_verification": {
-        "sha": "1fd674c63d4ce9a3e95c3795f1a70477e0d1901a",
-        "status": "open/unmerged at the fresh 2026-10-10 inspection",
-        "checks": "Compared original PR patch before and after the specific review; directly read receiver-head code/tests and source implementations. Source inspection is not execution of the Qdrant server, Python suite, or GitHub Actions; no maintainer acceptance or merge was confirmed."
+        "sha": "75f75ad36f9e709ba36328a808b12f9efd3e244b",
+        "status": "open/unmerged on 2026-10-10 inspection, after same receiver expanded positive-and-negative boundary tests",
+        "checks": "Directly inspected receiver-owned commit 75f75ad after prior 1fd674c: +4 regression test lines replaced the earlier one-direction fixture with four signed adjacent values and EQ/NE assertions. The source-level server as_f64 claim has not been tested on a live Qdrant server here, and head CI was not verified."
       },
       "current_stage": "third_party_code_test_design_or_document_change",
       "public_reuse": {
@@ -3219,7 +3221,7 @@
         "one author change equals multiple independent recipients or general human fame",
         "formal proof that the full Nakagawa Master theory corpus was adopted by LlamaIndex"
       ],
-      "verification_boundary": "New independent author-owned code and EQ/NE regression additions directly match the precise newly posted boundary review; earlier base patch retained its original independent provenance. Actual semantic correctness beyond source plus test implementation remains externally testable, and independent user deployment or new person-name recurrence remains unknown."
+      "verification_boundary": "The 2026-10-10 source and commits show an independent author-owned boundary correction and a later same-author test expansion for positive/negative values after the specific Nakagawa review. Both remain one recipient line. Earlier VANDRANKI findings retain credit. The added local-mode tests are not live-server validation, GitHub PR merge, release, independent second-person adoption or broader recognition."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
