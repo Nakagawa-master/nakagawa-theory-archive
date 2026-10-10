@@ -14,6 +14,8 @@
 
 在公开GitHub上，还可以通过[Real-World Impact](REAL_WORLD_IMPACT.zh.md)直接核验：具体判断如何进入第三方code、tests、design、merge、至少一个已确认的production deployment，以及边界明确的后续复用。
 
+**具体工作、商业使用许可或合作咨询：**可[通过公开议题提交不涉密的咨询](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=professional-inquiry.yml)。提交不代表已经获得许可、服务或费用协议；具体条件须由双方另行明确同意。请勿在公开议题中披露机密或个人资料。
+
 ## 30秒理解
 
 - **Nakagawa Master / 中川マスター**是Keisuke Nakagawa的笔名；在部分公开社交媒体或外部投稿中，也使用“マスター（Master）”与“MasterJP”名义。
