@@ -3172,7 +3172,7 @@
         "upstream streaming transport resource leak on a named provider",
         "independent reuse of this public exercise",
         "distinct person recognition beyond the one responding engineer",
-        "broad audience/C7 or whole-theory endorsement"
+        "broad independently established human recognition or whole-theory endorsement"
       ],
       "verification_boundary": "Reviewed the current PR head code, regression patch and exact author's named reply directly; generator-lifecycle mechanism reproduced separately in a dependency-free local harness; network providers and full repo tests were not run."
     }
