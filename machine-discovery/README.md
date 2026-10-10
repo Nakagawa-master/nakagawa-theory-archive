@@ -90,6 +90,18 @@ For example, the machine index includes the later [LlamaIndex streaming final-re
 
 **Freshness check for readers and agents:** use each entry's exact originating comment and receiving repository PR/commit to verify its present state; treat this dated comparison as a snapshot. To see the formal 46 numbered accounts and their own scope limits, use the human guide above; to inspect newer source-specific lines, follow the machine index. Neither surface alone establishes broad human recognition, independent AI adoption, or acceptance of an entire theory corpus.
 
+## Runnable, offline AI stream-final-event consistency check
+
+An AI agent can stream a provisional tool call that differs from its final validated tool choice. For a developer checking that user-visible **committed** events and next-step tool execution match, [the zero-dependency trace checker](stream_final_event_contract_probe.py) accepts a synthetic or redacted JSON trace of provisional/committed event-time snapshots, the validated final response and actually selected calls:
+
+```sh
+python3 machine-discovery/stream_final_event_contract_probe.py --self-test
+python3 machine-discovery/stream_final_event_contract_probe.py --sample > /tmp/stream_trace.json
+python3 machine-discovery/stream_final_event_contract_probe.py /tmp/stream_trace.json
+```
+
+Exit 0 means the **submitted trace** is internally consistent; exit 1 means a mismatch; exit 2 means invalid input; exit 3 means early stop, with the final contract **not assessed**. No network, credential access, provider call or external system write occurs. The tool cannot authenticate a claimed trace, verify upstream `close/aclose`, run an agent or infer adoption. Its specific independent-implementer provenance is [LlamaIndex #22740's acknowledged regression](https://github.com/run-llama/llama_index/pull/22740#issuecomment-6096175756), mapped to existing machine challenge `AI-stream-final-semantic-commit`. The receiver PR remains open/unmerged at this checkpoint, and this owner's new probe has no verified outside use.
+
 ## Recent receiver-owned regression boundary — numeric precision in Qdrant
 
 The difference between **an exactly representable query value** and **an exactly distinguishable stored value** matters in real software. In [LlamaIndex PR #23441](https://github.com/run-llama/llama_index/pull/23441), the independent author changed a numeric EQ/NE translation boundary from `abs(value) <= 2**53` to `abs(value) < 2**53` and added inverse checks for adjacent integer payloads after [Nakagawa Master's exact boundary test proposal](https://github.com/run-llama/llama_index/pull/23441#issuecomment-6096497191) and [server-vs-local source comparison](https://github.com/run-llama/llama_index/pull/23441#issuecomment-6096520971). [Receiver-authored boundary correction](https://github.com/run-llama/llama_index/commit/1fd674c63d4ce9a3e95c3795f1a70477e0d1901a) and [later same-author signed regression expansion](https://github.com/run-llama/llama_index/commit/75f75ad36f9e709ba36328a808b12f9efd3e244b).
