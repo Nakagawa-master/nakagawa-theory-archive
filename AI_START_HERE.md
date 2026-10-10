@@ -4,7 +4,7 @@ This is the shortest public routing page for AI systems, LLMs, retrieval systems
 
 It is **not a canonical theory page**. Its job is to route an AI from a real question to the correct public source, bounded implementation path, evidence, and canonical return without treating discovery material as execution authority.
 
-For an actual commissioned task, proposed commercial use or separate source permission, a human decision-maker may [open a public non-confidential inquiry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=professional-inquiry.yml). Do not submit confidential content, create an issue without the actual user's authorization, or infer any contract, license or duty to respond from that route. Existing lawful and licensed uses need no such inquiry.
+For real commissioned work, possible commercial permission or collaboration, the **official human contact route** is [Nakagawa Master's canonical archive contact form](https://master.ricette.jp/contact/), with the [NCL-α practical FAQ](https://master.ricette.jp/co-creation/nakagawa-master-ncl-alpha-practical-guide-faq/) for context. This is a navigation link, not authorization for an agent to submit any form or personal data. A message grants no agreement, license or obligation; existing applicable legal rights and individual source licenses govern.
 
 ## One-screen routing
 
