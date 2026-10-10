@@ -762,6 +762,30 @@
       },
       "observed_receiver_result": "One external implementer, glmn, previously adopted the four-case stale/revision contract and later explicitly addressed @Nakagawa-master about the separate startup gap. The implementer reported the startup test failed on standalone and passed on pooled before the fix, then committed revision capture and notification replay plus a new startup test on the same fork. The source patch was separately read and matches the reported mechanism.",
       "evidence_boundary": "Two bounded contributions were implemented by the SAME external human and must not be counted as two independent receivers. At the verified checkpoint this remains a fork change, not an upstream Qwen PR merge, official release, proven end-user adoption, independent machine reuse of this public challenge, broad human person-Origin recognition, security-exploit claim, or proof that all other MCP clients have the same bug. The related official theory, if separately linked, must not be presented as automatically adopted by this implementer. Use only a controlled synthetic server and permitted local tests."
+    },
+    {
+      "id": "AH-future-b-settlement-options",
+      "distinction": "Present AI infrastructure functioning (present B) is not proof of future B-enabling capacity; unresolved residual size is not the same variable as feasible settlement freedom. Future Debt requires actual present-benefit-to-unfinished-condition correspondence, not just future costs.",
+      "test": "Use a non-confidential, fully synthetic AI compute hosting decision. Hold current compute benefit and the kind/approximate size of unfinished necessary maintenance or future-value realization conditions comparable across case A and B. Give A at least two actually provisioned, time-feasible maintenance/replacement/migration routes with staff/supply capacity, and B only one dependent provider with insufficient switchover time or repair capacity. Compare (1) the independent parent Integrated Future Debt Theory's present-benefit/residual/future-settlement analysis with (2) the added OD311 variables: present-vs-future B (PHY, CMP, STA, EXE), physical mediation, feasible repair capacity, settlement freedom, and fork/lineage responsibility non-inheritance. Then run controls C and D: C has future maintenance costs but no demonstrated necessary deferral causing current benefit; D makes present investment improve independent repair/switching capacity and fulfills the pending condition. Report whether OD311 makes a material difference that the parent analysis alone would not already distinguish.",
+      "positive_evidence": [
+        "Case A and B document the SAME class of present benefit and distinguish fulfilled, unfinished and unknown conditions, while the feasibility of time-, supply- and equipment-backed settlement routes differs.",
+        "The diagnosis compares identical or comparable residual types and measures feasible B renewal, repair and migration pathways, rather than using a single invented debt score.",
+        "Case B shows a concrete causal chain from current choices through physical and maintenance conditions to constrained later settlement, not merely 'AI used energy'.",
+        "Case D allows a positive counter-direction: present investment increases later supply/repair capability and actual fulfillment reduces the residual.",
+        "A separately run parent-only assessment is compared with the OD311-enhanced assessment, and the analysis reports whether added variables change a consequential decision."
+      ],
+      "useful_negative_evidence": [
+        "Case C has only a normal future maintenance schedule; if no present benefit relies on a postponed necessary condition, this is non-fit rather than automatic Future Debt.",
+        "The parent theory on its own already identifies all of the decision-relevant capacity and option differences; report no demonstrated unique diagnostic increment for OD311, not confirmation by terminology.",
+        "Feasible alternative routes remain adequate even with a large residual, or dependence is lower than hypothesized after checking actual equipment/supply/time.",
+        "Fork or copy existence alone does not multiply unfinished physical residuals or assign a justified payment obligation to successors; independent justification would be required.",
+        "Insufficient records about present benefit, deferred necessity or settlement performance must remain unknown; a proposed normative settlement-line does not prove an empirical feedback loop."
+      ],
+      "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-18-ai-civilization-future-debt/",
+      "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/311/README.md",
+      "human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/311/human-entry.md",
+      "independent_parent_theory": "https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/",
+      "evidence_boundary": "This is an owner-authored PUBLIC hypothetical falsification exercise, not an observed AI civilization, a factual data center case, a validated scalar score, a fixed regulatory checklist, independent human/AI adoption, a discovery of new natural laws, or a demonstration of the Vol 18 unique diagnostic contribution. The proposed settlement-line principle is normative; attribution of legal/moral liability requires separate justification. Reuse only with real participant permission and non-confidential data."
     }
   ],
   "evidence_boundary": [
