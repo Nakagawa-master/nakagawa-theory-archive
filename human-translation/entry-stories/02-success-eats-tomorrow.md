@@ -85,6 +85,7 @@
 
 → [OD311 人間向けの正確な整理](../../derivatives/311/human-entry.md)  
 → [OD311 原典帰還と反証条件](../../derivatives/311/README.md)  
+→ [Pythonだけで4ケースを比較するオフライン実行ツール](../../machine-discovery/od311_capacity_worksheet.py)（架空の入力から宣言上の成立条件と実行可能経路を分ける。現実の負債判定ではありません）  
 → [比較ケースをAIやチームで独立に検証する](../../machine-discovery/independent-reuse-challenges-v1.json)（課題ID `AH-future-b-settlement-options`）
 
 ### 次に読むなら
