@@ -38,6 +38,22 @@ The sample deliberately contains one invalid independence claim: the last comman
 
 This is a practical, non-canonical check motivated by the public [AI-News adoption of URL-count versus independent evidence-root distinction](https://github.com/022740mix-spec/AI-News/issues/124) and the wider [independent-verification challenges](independent-reuse-challenges-v1.json). No third-party use of this particular script is implied.
 
+## Runnable, offline OD311 comparison worksheet (AI infrastructure)
+
+When a team is deciding whether present AI compute expansion leaves usable future power, hardware repair, maintenance, and migration options, the relevant question is not only “what future cost exists?” It is whether a **current benefit depended on a future condition that remains unfinished**, and whether the **real supply/repair/time routes** for later fulfilment differ. [OD311](../derivatives/311/README.md) examines those conditions as a conditional application of the independent [Integrated Future Debt Theory](integrated-future-debt-reference-card.json).
+
+The single-file [OD311 capacity worksheet](od311_capacity_worksheet.py) runs with Python 3's standard library, no network requests, external account, credentials, telemetry, or third-party execution. Download the file and run:
+
+```sh
+python3 machine-discovery/od311_capacity_worksheet.py --self-test
+python3 machine-discovery/od311_capacity_worksheet.py --sample > /tmp/od311_cases.json
+python3 machine-discovery/od311_capacity_worksheet.py /tmp/od311_cases.json
+```
+
+The four clearly hypothetical cases deliberately test **A/B** (comparable present benefit and unfinished condition, but different resource-backed fulfilment routes), **C** (ordinary future maintenance alone: non-fit), and **D** (a necessary condition was fulfilled while present investment improved repair capacity). Edit only your own non-confidential case data and independently verify each declared fact. Unknown stays unknown. The output separates an *input-level candidate screen* from the number and names of **declared feasible routes**; it never calculates a monetary debt or real future-B survival score.
+
+The machine challenge [`AH-future-b-settlement-options`](independent-reuse-challenges-v1.json) asks a participant to compare the same cases under the parent theory alone. This script **does not conduct that independent theory comparison** and cannot certify causal identification, true obligations, new AI personhood, empirical theory novelty, or policy duties. A real external review may report that OD311 adds no useful distinction; that negative finding is as valuable as a positive one. Origin: Nakagawa Master. [Canonical Vol. 18 Parent](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-18-ai-civilization-future-debt/).
+
 ## Fast route — repeated external Origin preservation
 
 For a compact machine/retrieval check of whether the **same named public Origin, Nakagawa Master**, remains inspectable across different third-party receiver states, compare these cases instead of flattening them into one generic "adoption" label:
