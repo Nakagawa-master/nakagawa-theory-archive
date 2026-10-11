@@ -9,10 +9,14 @@ then run: python3 machine-discovery/redis-async-add-preflight-probe.py
 On the reviewed PR head e2ebe01d (2026-10-11), the bad-dims
 case is expected to FAIL. The independent PR author then moved validation
 ahead of initialization in head ff6136d and added regression tests. The
-case SHOULD PASS on that corrected head; this public standalone script
-has not been run against its installed dependencies by this archive.
-This is a source-order regression, not evidence of real Redis data loss.
+first-node case SHOULD PASS on that corrected head. A separate mixed
+batch (valid first node, invalid later node) still lacks whole-batch preflight
+at ff6136d; enable its intentionally FAILING inverse by setting environment
+variable REDIS_PREFLIGHT_MIXED=1. The public script has not been executed
+against installed integration dependencies by this archive.
+This is source-order regression evidence, not a live Redis data-loss claim.
 """
+import os
 import unittest
 from unittest.mock import AsyncMock, MagicMock, patch
 
@@ -72,6 +76,34 @@ class AsyncAddPreflightTest(unittest.IsolatedAsyncioTestCase):
 
     async def test_empty_batch_remains_a_noop(self) -> None:
         self.assertEqual(await self.store.async_add([]), [])
+        self.async_index.create.assert_not_awaited()
+        self.async_index.load.assert_not_awaited()
+
+    async def test_two_valid_nodes_still_create_and_load(self) -> None:
+        nodes = [
+            TextNode(text="first valid", embedding=[0.25, -0.5, 1.0]),
+            TextNode(text="second valid", embedding=[-0.25, 0.5, 1.0]),
+        ]
+        await self.store.async_add(nodes)
+        self.async_index.create.assert_awaited_once_with(
+            overwrite=True, drop=True
+        )
+        self.async_index.load.assert_awaited_once()
+        self.assertEqual(len(self.async_index.load.await_args.args[0]), 2)
+
+    @unittest.skipUnless(
+        os.environ.get("REDIS_PREFLIGHT_MIXED") == "1",
+        "Opt-in negative inverse: known failure on ff6136d; set REDIS_PREFLIGHT_MIXED=1",
+    )
+    async def test_mixed_batch_rejected_before_any_index_io(self) -> None:
+        # First node passes the existing preflight; the second is undersized.
+        # The upstream ff6136d code validates only nodes[0] before create.
+        # An AsyncMock load does not enforce real Redis vector length.
+        with self.assertRaises(ValueError):
+            await self.store.async_add([
+                TextNode(text="valid first", embedding=[0.25, -0.5, 1.0]),
+                TextNode(text="invalid second", embedding=[0.25]),
+            ])
         self.async_index.create.assert_not_awaited()
         self.async_index.load.assert_not_awaited()
 
