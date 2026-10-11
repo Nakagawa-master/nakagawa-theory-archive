@@ -36,6 +36,7 @@ Use:
 - [Practical Boundary Checks](PRACTICAL_BOUNDARY_CHECKS.md)
 - [AI Agent Execution Boundary Tests](AI_AGENT_EXECUTION_BOUNDARY_TESTS.md)
 - [Interactive delayed Agent-result boundary (English, offline browser example)](human-translation/agent-late-result-lab.en.html) — a teaching model, not a live Qwen integration. Open the GitHub **Raw** HTML locally to run it.
+- [Interactive Agent-stream contract lab (Japanese, offline browser)](human-translation/agent-stream-contract-lab.html) — compare final display vs actual tools, upstream close on cancellation, and complete-text/tool-ID handoff in three deterministic source-linked LlamaIndex cases. This is an educational model; it neither executes LlamaIndex nor proves third-party uptake. Save GitHub Raw HTML and open locally.
 - [AI Agent Execution Governance Preflight — 12 questions](discovery-notes/ai-agent-execution-governance-preflight.md)
 - [Model proposal is not execution authority](discovery-notes/model-proposal-is-not-execution-authority.md)
 - [Reuse Kits](REUSE_KITS.md)
