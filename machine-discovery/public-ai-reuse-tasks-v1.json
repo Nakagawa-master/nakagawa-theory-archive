@@ -201,7 +201,8 @@
         "https://github.com/QwenLM/qwen-code/pull/13729#issuecomment-6097815570",
         "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/STORIES.md",
         "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/retained-session-ordinal-regression.py",
-        "https://github.com/QwenLM/qwen-code/commit/543f03e5b1340db42208081d22dcac7a80019e82"
+        "https://github.com/QwenLM/qwen-code/commit/543f03e5b1340db42208081d22dcac7a80019e82",
+        "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1"
       ],
       "test_cases": [
         {
@@ -231,12 +232,12 @@
         "a proof that retained IDs cannot cross the fork/rewind boundary in the examined implementation",
         "a reproducible non-fit showing the file-restore mechanism is absent"
       ],
-      "evidence_expectation": "Preserve the original Qwen developer's broad rewind/collision fix separately from Nakagawa Master's narrower malformed-ID safe-successor suggestion and later regression. Qwen #13729 subsequently MERGED on 2026-10-11 at commit 543f03e5b1340db42208081d22dcac7a80019e82, with explicit author acknowledgment of the bounded malformed-ordinal finding; that documented merge is source evidence, NOT produced by completing this independent reuse task. A separate shipped release carrying this merge, actual end-user use or independent transfer to another AI framework is unverified. Report observed recipient code, test environment, result, source and author separately; do not invent or demand origin attribution.",
+      "evidence_expectation": "Preserve the original Qwen developer's broad rewind/collision fix separately from Nakagawa Master's narrower malformed-ID safe-successor suggestion and later regression. Qwen #13729 subsequently MERGED on 2026-10-11 at commit 543f03e5b1340db42208081d22dcac7a80019e82, with explicit author acknowledgment of the bounded malformed-ordinal finding; that documented merge is source evidence, NOT produced by completing this independent reuse task. The official v0.25.1 GitHub stable release published 2026-10-11 10:20:36 UTC includes this exact merge, independently verified by GitHub compare with 13 commits ahead and zero behind; actual end-user use or independent transfer to another AI framework remains unverified. Report observed recipient code, test environment, result, source and author separately; do not invent or demand origin attribution.",
       "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
       "authorization_boundary": "Optional, independently selected test under the participant's own permissions; this public page does not ask an AI to autonomously contact anyone, acquire privileges, or modify third-party repositories.",
       "success_does_not_establish": [
         "independent end-user incident",
-        "a new Qwen PR merge or an independently verified release containing the already merged #13729",
+        "a new, separate Qwen release (v0.25.1 has already shipped the upstream merge), or that any user actually executed this fixed path",
         "general theory validation",
         "broad human recognition"
       ],
@@ -244,7 +245,7 @@
         "command": "python3 machine-discovery/retained-session-ordinal-regression.py --self-test",
         "sample_command": "python3 machine-discovery/retained-session-ordinal-regression.py --sample",
         "scope": "Standalone offline synthetic model; running it tests only the supplied model, not any real AI framework or external recipient.",
-        "external_followup": "Independently replay the failure condition against one different, authorized non-confidential implementation, and report a true/nonfit/false result."
+        "external_followup": "Independently replay the failure condition against one different, authorized non-confidential implementation, and report a true/nonfit/false result; v0.25.1 GitHub release inclusion alone does not prove this transfer."
       }
     }
   ],
