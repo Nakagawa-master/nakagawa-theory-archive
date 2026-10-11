@@ -96,6 +96,16 @@
       ],
       "canonical_source": false,
       "receiver_verified_case": false
+    },
+    {
+      "id": "redis_async_batch_preflight_before_index_mutation",
+      "when": [
+        "LlamaIndex Redis async_add",
+        "Redis overwrite before validation",
+        "mixed valid and invalid embedding dimensions"
+      ],
+      "canonical_source": false,
+      "receiver_verified_case": true
     }
   ],
   "task_first_selection": {
@@ -241,6 +251,36 @@
         },
         "plain_language_return": "A child AI's unbroken answer should not acquire a stray newline just because an unrelated system event was recorded between its text chunks.",
         "independent_test_gate": "Run actual receiving system with interleaved/positive/reasoning controls and compare source journal and parent-consumed bytes."
+      },
+      {
+        "id": "redis_async_batch_preflight_before_index_mutation",
+        "matched_problem": [
+          "Async Redis vector-store indexing with overwrite enabled",
+          "Empty or malformed vector batches initiating remote index mutation",
+          "A valid first node followed by an invalid later embedding"
+        ],
+        "falsifiable_distinction": "Checking only the first input is not whole-batch admission: a valid first node and invalid second node can pass the pre-initialization first-node check and trigger create(overwrite=True, drop=True) before the remaining dimensions are checked.",
+        "canonical_parent": null,
+        "canonical_relation": "Technical analysis of publicly inspectable LlamaIndex source and an independent author response. It is not a claim that a named Nakagawa canonical theory was adopted by LlamaIndex; the theory relationship, if needed, requires separate canonical-source comparison.",
+        "machine_theory_selector": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+        "runnable_or_falsifiable_task": {
+          "public_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/redis-async-add-preflight-probe.py",
+          "setup": "Install the redis and LlamaIndex Redis-vector-store integration in a reader-owned local environment; no live Redis service is needed because RedisVL indices are mocked.",
+          "default_command": "python3 machine-discovery/redis-async-add-preflight-probe.py",
+          "opt_in_known_red_command": "REDIS_PREFLIGHT_MIXED=1 python3 machine-discovery/redis-async-add-preflight-probe.py",
+          "negative": "First valid three-dimensional embedding, second undersized one: reject before any async index create/load, regardless of overwrite choice.",
+          "positive": "Two valid three-dimensional embeddings preserve normal async index create/load semantics.",
+          "expected_and_executed": "The mixed-batch negative is expected to fail on inspected PR head ff6136d, and intentionally skipped by default. The archive standalone script has NOT been run against installed dependencies by its maintainer in this evidence."
+        },
+        "external_observation": {
+          "original_receiver_source": "https://github.com/run-llama/llama_index/pull/23458",
+          "first_nonempty_invalid_dimension_review": "https://github.com/run-llama/llama_index/pull/23458#pullrequestreview-5481943146",
+          "independent_author_confirmation_and_code_tests": "https://github.com/run-llama/llama_index/pull/23458#issuecomment-6105659570",
+          "follow_on_mixed_batch_suggestion": "https://github.com/run-llama/llama_index/pull/23458#issuecomment-6106097058",
+          "verified_upper_bound": "Independent upstream developer fixed the original first-node-before-index-initialization boundary and reported mocked tests (C2 in the bounded technical sense). The mixed-batch issue remains a separate self-authored suggestion without observed author implementation. PR open and unmerged at the last checked head; no demonstrated real Redis deletion, release or independent user/AI adoption."
+        },
+        "plain_language_return": "Before a database action can replace an index, check every document that is about to be accepted—not only the first one. The public LlamaIndex fix checks the first vector before initialization; a separate mixed-batch edge has been proposed and is not yet implemented.",
+        "independent_test_gate": "Inspect current upstream head and run the opt-in negative and positive in your authorized local environment. Distinguish observed source order, mocked regression, actual remote-service behavior, and independently merged/shipped use. Preserve contributor source without inferring popularity or theory validity."
       }
     ],
     "output_contract": {
