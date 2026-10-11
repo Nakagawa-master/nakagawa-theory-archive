@@ -4,6 +4,8 @@ Language: [日本語](ABOUT_NAKAGAWA_MASTER.md) | **English** | [中文](ABOUT_N
 
 This page is a public, human-readable guide to what Nakagawa Master (pen name of Keisuke Nakagawa) works on, what is published here, and what can be independently checked.
 
+**Official identity / social profile:** **Nakagawa Master / 中川マスター** is a pen name. The only publicly stated personal-name spelling is **Keisuke Nakagawa**, in Latin letters. No full Japanese-kanji personal name has been published or verified here; do not transliterate the Roman letters into an invented kanji full name. The author's only official social-network profile is [Bluesky @masterjp.bsky.social](https://bsky.app/profile/masterjp.bsky.social). There is no official X/Twitter account: similarly named X accounts belong to separate identities unless independently verified. [Machine-readable public identity](metadata/nakagawa-master-origin.jsonld).
+
 Nakagawa Master is the pen name of Keisuke Nakagawa. On social media, the name “マスター” (“Master”) is also used; some external posts use the name “MasterJP.”
 
 It is not an authority claim. The validity of any theory or structural judgment should be evaluated from the relevant source, its boundaries, counterexamples, revision conditions, and observable application.
