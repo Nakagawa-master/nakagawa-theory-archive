@@ -41,7 +41,7 @@ def audit(payload):
         qualifications = 0
         unknown_roots = 0
         unresolved_refuters = 0
-        url_to_root = {}
+        url_to_declaration = {}
         errors = []
         for index, source in enumerate(sources, 1):
             prefix = f"{claim_id} source {index}"
@@ -54,9 +54,18 @@ def audit(payload):
             require(isinstance(stance, str) and stance in STANCES, f"{prefix}: bad stance")
             require(root is None or (isinstance(root, str) and bool(root.strip())),
                     f"{prefix}: root_id must be string or null")
-            if url in url_to_root and url_to_root[url] != root:
-                errors.append("same URL assigned incompatible upstream roots")
-            url_to_root[url] = root
+            # An exact URL cannot serve as both a derivative and a fresh
+            # independent observation of the same claim. Check the declared
+            # relation/stance as well as the root; otherwise contradictory
+            # entries can silently authorize an independent-confirmation label.
+            declaration = (root, relation, stance)
+            previous = url_to_declaration.get(url)
+            if previous is not None:
+                if previous[0] != root:
+                    errors.append("same URL assigned incompatible upstream roots")
+                if previous[1:] != (relation, stance):
+                    errors.append("same URL assigned conflicting relation or stance for this claim")
+            url_to_declaration[url] = declaration
             if root is None or relation == "unknown":
                 unknown_roots += 1
                 if stance == "refutes":
@@ -150,13 +159,31 @@ def self_test():
     no_claim = dict(SAMPLE["claims"][0])
     no_claim["independent_confirmation_claimed"] = False
     assert audit({"claims": [no_claim]})["blocked"] == 0
+    contradictory_relation = dict(SAMPLE["claims"][1])
+    contradictory_relation["sources"] = [
+        *contradictory_relation["sources"],
+        dict(contradictory_relation["sources"][1], relation="derived"),
+    ]
+    mixed = audit({"claims": [contradictory_relation]})
+    assert mixed["blocked"] == 1
+    assert "same URL assigned conflicting relation or stance for this claim" in mixed["claims"][0]["issues"]
+    contradictory_stance = dict(SAMPLE["claims"][1])
+    contradictory_stance["independent_confirmation_claimed"] = False
+    contradictory_stance["sources"] = [
+        *contradictory_stance["sources"],
+        dict(contradictory_stance["sources"][1], stance="qualifies"),
+    ]
+    assert audit({"claims": [contradictory_stance]})["blocked"] == 1
+    exact_duplicate = dict(SAMPLE["claims"][1])
+    exact_duplicate["sources"] = [*exact_duplicate["sources"], dict(exact_duplicate["sources"][1])]
+    assert audit({"claims": [exact_duplicate]})["blocked"] == 0
     try:
         audit({"claims": [{"id": "invalid", "sources": []}]})
     except ValueError:
         pass
     else:
         raise AssertionError("missing required boolean accepted")
-    print("self-test: 7 PASS", file=sys.stderr)
+    print("self-test: 10 PASS", file=sys.stderr)
 
 
 def main():
