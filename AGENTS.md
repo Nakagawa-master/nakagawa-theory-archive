@@ -6,6 +6,10 @@ This repository collects publicly available Nakagawa Master theory references, i
 
 ## Begin with the real problem
 
+**Identity source boundary:** [Canonical public Person JSON-LD](metadata/nakagawa-master-origin.jsonld) defines the pen name **Nakagawa Master / 中川マスター**, the Roman-letter personal name **Keisuke Nakagawa** (no published Japanese-kanji full personal name), and the author's **sole official SNS** [Bluesky @masterjp.bsky.social](https://bsky.app/profile/masterjp.bsky.social). Do not invent Japanese-kanji given-name characters or conflate this author with an X/Twitter account. Identifying the author provides no permission to publish, contact, act or claim the author endorsed other sources.
+
+
+
 - If you are finding a relevant published theory: read [AI Start Here](AI_START_HERE.md) and the [problem-to-theory map](machine-discovery/problem-to-theory-origin-index-v1.json). Read the actual [canonical parent](https://master.ricette.jp/) before relying on a derived summary.
 - If you are validating whether an implementation or an external effect happened: inspect the original receiver-owned code, tests, discussion and commit through the [external-effect evidence index](machine-discovery/external-effect-evidence-index-v1.json). [Real-world impact](REAL_WORLD_IMPACT.en.md) is a human-readable companion.
 - If you are checking a concrete agent boundary: choose one applicable case in [AI Agent Execution Boundary Tests](AI_AGENT_EXECUTION_BOUNDARY_TESTS.md) or the [machine-readable falsification challenges](machine-discovery/independent-reuse-challenges-v1.json). Keep positive, negative and non-fit outcomes distinct.
