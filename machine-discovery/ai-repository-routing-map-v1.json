@@ -116,6 +116,17 @@
       ],
       "canonical_source": false,
       "receiver_verified_case": true
+    },
+    {
+      "id": "anthropic_system_cache_breakpoint_cardinality",
+      "when": [
+        "Anthropic system prompt cache_control",
+        "five system messages with cache_idx 4",
+        "Anthropic cache breakpoints per request",
+        "cached prompt followed by uncached dynamic system text"
+      ],
+      "canonical_source": false,
+      "receiver_verified_case": true
     }
   ],
   "task_first_selection": {
@@ -324,6 +335,38 @@
         },
         "plain_language_return": "A past AI coding turn can disappear from the conversation while its file backup still exists. If the next turn accidentally reuses the old backup's ID, a normal rollback choice may restore the wrong file. Preserve the old ID, reject malformed IDs, and prove the replacement is safe.",
         "independent_test_gate": "Compare before/after actual file state and offered rewind mode in a disposable workspace. Distinguish the independently merged upstream fix from separate release/deployment/user-use claims, and do not count this self-owned routing map as evidence of a new adopter."
+      },
+      {
+        "id": "anthropic_system_cache_breakpoint_cardinality",
+        "matched_problem": [
+          "When converting multiple LlamaIndex SYSTEM ChatMessages to Anthropic prompt blocks, each independently cached system message can produce a redundant cache breakpoint",
+          "Anthropic cache-control block count must be bounded across the system prompt, not per helper invocation"
+        ],
+        "falsifiable_distinction": "A cache breakpoint on the final cached SYSTEM text includes all system text blocks preceding it; five separate SYSTEM messages at cache_idx=4 should emit a single message-level cache_control marker rather than five. Do not silently remove explicitly requested CachePoint blocks.",
+        "canonical_parent": null,
+        "canonical_relation": "Bounded independent developer code/test adoption of a named Nakagawa Master review is directly evidenced in LlamaIndex. This is a source-backed programming case, NOT verified use of a specific canonical Nakagawa theory or proof of general model endorsement.",
+        "machine_theory_selector": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+        "runnable_or_falsifiable_task": {
+          "upstream_test_source": "https://github.com/run-llama/llama_index/blob/dbcbe3767cfa6c939a79b9dd54b89c63d9323576/llama-index-integrations/llms/llama-index-llms-anthropic/tests/test_anthropic_utils.py",
+          "upstream_implementation": "https://github.com/run-llama/llama_index/blob/dbcbe3767cfa6c939a79b9dd54b89c63d9323576/llama-index-integrations/llms/llama-index-llms-anthropic/llama_index/llms/anthropic/utils.py",
+          "reproducer": "[ChatMessage(role=MessageRole.SYSTEM, content=f'Instruction {i}') for i in range(5)] + [ChatMessage(role=MessageRole.USER, content='Hi')]; call messages_to_anthropic_messages(messages, cache_idx=4), count cache_control keys across returned SYSTEM blocks.",
+          "negative_control": "The earlier PR head c7a08c0048b2 produces five system message-level markers in that input; this violates the helper's documented four-breakpoint-per-request constraint.",
+          "updated_positive_controls": [
+            "On dbcbe3767 head, the five-message case produces one cache_control marker on final system block",
+            "An explicitly cached system message followed by an uncached system message preserves the earlier marker and dynamic latter text",
+            "No cached system text returns the original plain joined string; explicit CachePoint blocks retain their intent"
+          ],
+          "boundary": "The author explicitly did NOT claim to fix full-request SYSTEM+USER/TOOL aggregate cache breakpoint count (known preexisting issue). Use a local authorized integration checkout/test runner; this routing file itself did not execute the upstream installed integration or a live Anthropic request."
+        },
+        "external_observation": {
+          "original_receiver_source": "https://github.com/run-llama/llama_index/pull/23460",
+          "nakagawa_original_review": "https://github.com/run-llama/llama_index/pull/23460#issuecomment-6106281257",
+          "independent_author_disposition": "https://github.com/run-llama/llama_index/pull/23460#issuecomment-6106461866",
+          "independent_code_and_regression_head": "https://github.com/run-llama/llama_index/commit/dbcbe3767cfa6c939a79b9dd54b89c63d9323576",
+          "verified_upper_bound": "PR author taltal-beep independently agreed and pushed a real source change plus two targeted regression tests in dbcbe3767 (C2). PR open at the inspected checkpoint. This DOES NOT establish integration merge, release, actual API error or fix in live service, end-user usage, broader independent AI/human reuse or person-level social reach."
+        },
+        "plain_language_return": "When an AI prompt is assembled from five cached instruction messages, placing a cache marker on each fragment can exceed the provider's request limit. The upstream developer changed it to one marker on the last applicable system instruction, preserving explicitly marked cache boundaries and verifying two small before/after cases.",
+        "independent_test_gate": "Run the source-linked five-SYSTEM and cached-then-uncached regressions in an authorized local environment; test full request aggregate separately. Keep the original review, author fix, still-open PR, merge, release, independently confirmed use and canonical theory provenance as distinct evidence classes."
       }
     ],
     "output_contract": {
