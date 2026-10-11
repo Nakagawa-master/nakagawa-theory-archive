@@ -19,6 +19,8 @@
 **仕事・許諾・協業のご相談:** [中川マスター公式アーカイブのお問い合わせ](https://master.ricette.jp/contact/)をご利用ください。理論群の商用活用・監修・研修・共同研究などの考え方は[公式NCL-α実務ガイド](https://master.ricette.jp/co-creation/nakagawa-master-ncl-alpha-practical-guide-faq/)にあります。GitHubで公開されている個別資料の利用条件は[LICENSE](LICENSE)と該当原典の条件も確認してください。お問い合わせだけで契約・権利許諾・有償業務が成立するわけではありません。**GitHub Issueを商談・個人情報の送信先として使わないでください。**
 
 → [1ページで見る｜日常の違和感から、第三者で実際に変わった記録まで](STORIES.md)  
+→ [自分で比較して分かる｜AIの表示・キャンセル・Agent引き継ぎの修正前後（3例のオフライン教材）](human-translation/agent-stream-contract-lab.html)  
+  実際のLlamaIndex #22740・#23439の独立した開発者による変更を参照しつつ、表示と実行、外側と上流の停止、全文とtool IDを比較できます。修正前後を切替できる**単独で動く教材モデル**です。GitHubの「Raw」でHTMLを保存して開いてください。上流製品の動作検証、merge、読者による利用の証拠ではありません。  
 → [自分で操作して分かる｜止めたAIの仕事に遅い結果が届いたら？（オフライン教材）](human-translation/agent-late-result-lab.html)  
   GitHub上ではHTMLのコードが表示されます。**その画面の「Raw」から `.html` を保存し、保存したファイルをブラウザで開く**と操作できます。外部サイトへの自動送信はありません。  
 → [公開証拠を段階別に確認する](REAL_WORLD_IMPACT.md)
