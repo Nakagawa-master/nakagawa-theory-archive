@@ -61,7 +61,11 @@
         "whole-theory adoption",
         "general Claude Code execution authority",
         "user-scale impact"
-      ]
+      ],
+      "observed_at_earlier_snapshot": "2026-10-05T12:16:15Z",
+      "latest_live_state_recheck_jst": "2026-10-11",
+      "latest_target_activity_utc": "2026-10-09T13:57:17Z",
+      "latest_state_claim_boundary": "State OPEN/CLOSED and GitHub issue updated_at were re-fetched; this is not a fresh product reproduction, current missing-regression proof, coordination clearance, permission for third-party contact, or verified AI reuse. Check the live thread/PRs before any legitimate action."
     },
     {
       "opportunity_id": "EXT-CLAUDE-CODE-96662-PROVENANCE-BOUNDARY-002",
@@ -107,7 +111,11 @@
         "whole-theory adoption",
         "Anthropic endorsement",
         "release or production effect without direct evidence"
-      ]
+      ],
+      "observed_at_earlier_snapshot": "2026-10-03T05:17:45Z",
+      "latest_live_state_recheck_jst": "2026-10-11",
+      "latest_target_activity_utc": "2026-10-07T22:26:23Z",
+      "latest_state_claim_boundary": "State OPEN/CLOSED and GitHub issue updated_at were re-fetched; this is not a fresh product reproduction, current missing-regression proof, coordination clearance, permission for third-party contact, or verified AI reuse. Check the live thread/PRs before any legitimate action."
     },
     {
       "opportunity_id": "EXT-CLAUDE-CODE-89922-CROSS-TOOL-CLASSIFIER-003",
@@ -154,7 +162,11 @@
         "general tool interoperability",
         "whole-theory adoption",
         "maintainer acceptance without receiver-side evidence"
-      ]
+      ],
+      "observed_at_earlier_snapshot": "2026-08-26T20:51:01Z",
+      "latest_live_state_recheck_jst": "2026-10-11",
+      "latest_target_activity_utc": "2026-08-26T20:51:01Z",
+      "latest_state_claim_boundary": "State OPEN/CLOSED and GitHub issue updated_at were re-fetched; this is not a fresh product reproduction, current missing-regression proof, coordination clearance, permission for third-party contact, or verified AI reuse. Check the live thread/PRs before any legitimate action."
     },
     {
       "opportunity_id": "EXT-AUTOGEN-7405-CURRENT-AUTHORITY-GUARDRAIL-004",
@@ -196,7 +208,11 @@
         "whole-theory adoption",
         "general execution authority",
         "merge, release, deployment, or user-scale impact without direct target-side evidence"
-      ]
+      ],
+      "observed_at_earlier_snapshot": "2026-10-06T01:08:29Z",
+      "latest_live_state_recheck_jst": "2026-10-11",
+      "latest_target_activity_utc": "2026-10-06T23:16:55Z",
+      "latest_state_claim_boundary": "State OPEN/CLOSED and GitHub issue updated_at were re-fetched; this is not a fresh product reproduction, current missing-regression proof, coordination clearance, permission for third-party contact, or verified AI reuse. Check the live thread/PRs before any legitimate action."
     },
     {
       "opportunity_id": "EXT-QWEN-13487-CURRENT-AUTHORITY-005",
@@ -243,7 +259,11 @@
         "Qwen endorsement of Nakagawa Master",
         "runtime use without evidence",
         "user-scale impact"
-      ]
+      ],
+      "observed_at_earlier_snapshot": "2026-10-06T01:08:29Z",
+      "latest_live_state_recheck_jst": "2026-10-11",
+      "latest_target_activity_utc": "2026-10-06T01:10:08Z",
+      "latest_state_claim_boundary": "State OPEN/CLOSED and GitHub issue updated_at were re-fetched; this is not a fresh product reproduction, current missing-regression proof, coordination clearance, permission for third-party contact, or verified AI reuse. Check the live thread/PRs before any legitimate action."
     },
     {
       "opportunity_id": "EXT-LANGGRAPH-9185-CURRENT-AUTHORITY-006",
@@ -284,11 +304,15 @@
         "LangChain endorsement of Nakagawa Master",
         "operational use without evidence",
         "user-scale impact"
-      ]
+      ],
+      "observed_at_earlier_snapshot": "2026-10-06T01:08:29Z",
+      "latest_live_state_recheck_jst": "2026-10-11",
+      "latest_target_activity_utc": "2026-10-07T02:51:12Z",
+      "latest_state_claim_boundary": "State OPEN/CLOSED and GitHub issue updated_at were re-fetched; this is not a fresh product reproduction, current missing-regression proof, coordination clearance, permission for third-party contact, or verified AI reuse. Check the live thread/PRs before any legitimate action."
     }
   ],
   "return_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/new?template=public-ai-external-impact-return.yml",
-  "evidence_boundary": "This registry is self-authored public routing infrastructure. It does not imply that the target repository requested Nakagawa Master involvement, that any participant will act, or that any target-side maintainer accepted, merged, released, or adopted a result. Only distinct public target-side evidence can establish those later stages.",
+  "evidence_boundary": "This registry is self-authored public routing infrastructure. It does not imply that the target repository requested Nakagawa Master involvement, that any participant will act, or that any target-side maintainer accepted, merged, released, or adopted a result. Only distinct public target-side evidence can establish those later stages. On 2026-10-11 JST the six listed target issues were directly re-fetched and still OPEN; this establishes only an issue-state snapshot, NOT current target need, unique contribution, current authorization, or independent AI adoption.",
   "related_public_context": [
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md#19-the-user-really-approved-it--but-recording-approved-is-treated-as-unsafe-content",
     "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-tasks-v1.json",
