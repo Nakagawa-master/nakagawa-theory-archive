@@ -1,27 +1,39 @@
 #!/usr/bin/env python3
-"""Source-linked, no-network check of legacy image-message migration in LlamaIndex.
+"""No-network installed-package check of LlamaIndex legacy image migration.
 
-Reproduces the input boundary described at:
-https://github.com/run-llama/llama_index/pull/23463#issuecomment-6108430896
+Upstream bounded receiver evidence:
+https://github.com/run-llama/llama_index/pull/23463#issuecomment-6109245470
+https://github.com/run-llama/llama_index/pull/23463
 
-Run IN a local, authorized environment with llama-index-core installed:
+Run with the *exact desired* installed llama-index-core version:
     python3 machine-discovery/llamaindex-legacy-images-roundtrip-probe.py
 
-Reports the current integration's response to three bounded input conditions:
-  A: original ImageDocument object, no existing block (must migrate)
-  B: serialized document dict AND an already migrated ImageBlock (must not duplicate)
-  C: serialized document dict WITHOUT an ImageBlock (must not silently erase)
+Four independent checks:
+ A. an ImageDocument object migrates to one ImageBlock
+ B. already-migrated block plus serialized leftover avoids duplicate blocks
+ C. resolvable path-backed serialized dict with NO block reconstructs its image
+ D. inline-only serialized "husk" with NO block stays intact, rather than
+    pretending lost bytes can be recovered from ImageDocument.model_dump()
+ E. an unrelated invalid serialized dict is not silently deleted
 
-Exit 0: none of the three input scenarios loses or duplicates an image.
-Exit 1: at least one positive/negative condition fails.
-Exit 2: package not installed or an exception prevents test completion.
-No API calls, credentials, GitHub writes, external files or network I/O.
-This check is not evidence a public maintainer adopted the fix or that an end
-user actually lost an image in a deployed application.
+IMPORTANT: MediaResource.data is excluded from model_dump() by default, so a
+plain dump of an inline-only ImageDocument does NOT contain the original image
+bytes. The older version of this probe incorrectly expected those absent bytes
+to be recovered. D explicitly verifies metadata preservation only.
+
+Exit 0: all five checked input contracts pass on installed package.
+Exit 1: an observable contract mismatch.
+Exit 2: package missing or a test could not complete.
+Only an isolated temporary local PNG is created for C, then deleted.
+No network, external API, credential, GitHub write, telemetry, or claim about
+real downstream user adoption. No runnable result is claimed until executed.
 """
 from __future__ import annotations
 
+import base64
 import sys
+from pathlib import Path
+from tempfile import TemporaryDirectory
 
 
 def main() -> int:
@@ -32,48 +44,69 @@ def main() -> int:
         print(f"NOT RUN: install llama-index-core in the test environment ({exc})")
         return 2
 
-    # Minimal, public one-pixel PNG test fixture from upstream's own tests.
-    png = (b"iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJ"
-           b"AAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==")
+    png = (
+        b"iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJ"
+        b"AAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=="
+    )
+    results: list[tuple[str, bool]] = []
     try:
         doc = ImageDocument(image=png)
         expected = doc.resolve_image(as_base64=True).read()
 
-        object_only = ChatMessage(
-            role="user", additional_kwargs={"images": [doc]}
-        )
-        a = [b for b in object_only.blocks if isinstance(b, ImageBlock)]
-        a_pass = len(a) == 1 and a[0].image == expected
+        a_msg = ChatMessage(role="user", additional_kwargs={"images": [doc]})
+        a = [block for block in a_msg.blocks if isinstance(block, ImageBlock)]
+        results.append(("A object migration -> one image", len(a) == 1 and a[0].image == expected))
 
-        already_migrated = ChatMessage.model_validate({
+        b_msg = ChatMessage.model_validate({
             "role": "user",
             "blocks": [ImageBlock(image=expected).model_dump()],
             "additional_kwargs": {"images": [doc.model_dump()]},
         })
-        b = [v for v in already_migrated.blocks if isinstance(v, ImageBlock)]
-        b_pass = len(b) == 1 and b[0].image == expected
+        b = [block for block in b_msg.blocks if isinstance(block, ImageBlock)]
+        results.append(("B migrated block + serialized husk -> one image",
+                        len(b) == 1 and b[0].image == expected
+                        and "images" not in b_msg.additional_kwargs))
 
-        dict_only = ChatMessage.model_validate({
-            "role": "user",
-            "blocks": [],
-            "additional_kwargs": {"images": [doc.model_dump()]},
+        with TemporaryDirectory(prefix="llamaindex-legacy-image-") as tmp:
+            img_path = Path(tmp) / "one-pixel.png"
+            img_path.write_bytes(base64.b64decode(png))
+            c_msg = ChatMessage.model_validate({
+                "role": "user",
+                "blocks": [],
+                "additional_kwargs": {
+                    "images": [{"image_resource": {"path": str(img_path)}}]
+                },
+            })
+            c = [block for block in c_msg.blocks if isinstance(block, ImageBlock)]
+            results.append(("C serialized path-backed image without block -> recover",
+                            len(c) == 1 and c[0].image == expected
+                            and "images" not in c_msg.additional_kwargs))
+
+        husk = doc.model_dump()
+        d_msg = ChatMessage.model_validate({
+            "role": "user", "blocks": [], "additional_kwargs": {"images": [husk]},
         })
-        c = [v for v in dict_only.blocks if isinstance(v, ImageBlock)]
-        # Supporting this import is one policy option. Alternatively, an
-        # unsupported dict-only source should fail explicitly rather than
-        # successful validation followed by loss of both image representations.
-        c_pass = len(c) == 1 and c[0].image == expected
+        d = [block for block in d_msg.blocks if isinstance(block, ImageBlock)]
+        results.append(("D inline-only dump lacking bytes -> preserve husk",
+                        len(d) == 0 and d_msg.additional_kwargs.get("images") == [husk]))
+
+        unknown = {"not": "an image document"}
+        e_msg = ChatMessage.model_validate({
+            "role": "user", "blocks": [], "additional_kwargs": {"images": [unknown]},
+        })
+        e = [block for block in e_msg.blocks if isinstance(block, ImageBlock)]
+        results.append(("E unrecognized dict -> preserve original",
+                        len(e) == 0 and e_msg.additional_kwargs.get("images") == [unknown]))
     except Exception as exc:
         print(f"NOT COMPLETED: {type(exc).__name__}: {exc}")
         return 2
 
-    print("A ImageDocument object -> one block:", "PASS" if a_pass else "FAIL")
-    print("B dict plus existing block -> exactly one:", "PASS" if b_pass else "FAIL")
-    print("C dict without existing block -> one image:", "PASS" if c_pass else "FAIL (silent-loss candidate)")
-    if all((a_pass, b_pass, c_pass)):
-        print("ALL THREE PASS; verify application-level round-trip separately")
+    for name, passed in results:
+        print(f"{name}: {'PASS' if passed else 'FAIL'}")
+    if all(passed for _, passed in results):
+        print("FIVE CONTRACTS PASS on this installed package; upstream merge/use NOT established")
         return 0
-    print("FAIL: see LlamaIndex PR #23463 for producer context; no live data-loss claim")
+    print("CONTRACT MISMATCH: compare actual installed package against upstream PR #23463")
     return 1
 
 
