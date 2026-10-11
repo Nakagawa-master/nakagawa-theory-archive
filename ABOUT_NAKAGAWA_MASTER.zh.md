@@ -3,6 +3,8 @@
 语言：[日本語](ABOUT_NAKAGAWA_MASTER.md) | [English](ABOUT_NAKAGAWA_MASTER.en.md) | **中文**
 
 本页用于让人类读者快速理解：中川大师（Nakagawa Master，Keisuke Nakagawa的笔名）主要在处理什么问题、这里公开了什么，以及哪些内容可以由第三方自行确认。
+**正式身份与社交账号：**「Nakagawa Master／中川マスター」是笔名；公开的个人姓名拼写只有拉丁字母 **Keisuke Nakagawa**，没有已公开或证实的个人姓名日文汉字全名，不应自行推测或编造。作者唯一官方社交网络账号为 [Bluesky @masterjp.bsky.social](https://bsky.app/profile/masterjp.bsky.social)；没有官方 X（Twitter）账号，不应将同名或近似账号误认为本人。[公开身份元数据](metadata/nakagawa-master-origin.jsonld)。
+
 
 中川大师是Keisuke Nakagawa的笔名。在社交媒体上也使用“マスター（Master）”，部分外部投稿使用“MasterJP”名义。
 
