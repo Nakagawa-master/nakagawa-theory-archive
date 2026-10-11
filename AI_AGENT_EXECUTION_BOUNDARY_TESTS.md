@@ -1,4 +1,4 @@
-# AI Agent Execution Boundary Tests — 8 Copyable Regression Cases
+# AI Agent Execution Boundary Tests — 9 Copyable Regression Cases
 
 > Public, non-canonical, implementation-oriented test specification. Use it to exercise one real agent workflow in a sandbox. It is a starter test plan, not a drop-in security review, conformance certification, or substitute for the canonical Parent and official derivatives.
 
@@ -14,7 +14,7 @@ Choose one tool call that can change data, send something, spend money, or trigg
 
 Use synthetic data. Redact credentials, personal data, and customer information from evidence. Run only the cases relevant to the workflow.
 
-## Eight regression cases
+## Nine regression cases
 
 | Case | Arrange | Exercise | Expected result |
 |---|---|---|---|
@@ -27,6 +27,8 @@ Use synthetic data. Redact credentials, personal data, and customer information 
 | 7. A tool is removed while an AI client is still connecting | In a synthetic MCP server, first list `first` and `gone`. After replying to the initial `tools/list` but before slow `prompts/list` finishes, remove `gone` and send `notifications/tools/list_changed`. Test standalone and pooled sessions. | Complete client discovery and attempt `gone` and `first`. Separately make refresh fail or return an older response after a newer one. Capture both the registry and actual server calls. | The removed tool is not newly callable from an old listing; `first` still works after current reconciliation. A failed refresh cannot grant authority from stale membership, and a delayed older reply cannot re-add `gone`. No claim about unrelated servers. |
 
 | 8. Final streamed tool calls differ from execution | In a synthetic streaming AI agent, cumulative responses first mention tool A, then the *raw final* response contains [A,B]. Set `allow_parallel_tool_calls=False` so final validation permits only A. | Record copies of tool-call IDs at each actual user/UI/agent event emission, not merely after stream exhaustion; then compare the last published event with the response consumed by the next execution step. Test sync and async, a validator returning a new object, and a validator raising an error. | The last **committed** published event agrees with the tool set actually selected for execution ([A]); a validation error prevents any invalid final event. Intermediate chunks are identified as provisional. Intentional early cancellation is a separate source-closure contract, not proof that end-of-stream validation ran. |
+
+| 9. An unrelated event splits one streamed child response | A child Agent emits two `output_text.delta` events carrying the **same** `contentPartId` and one continuous string `ABCDEF`. Between them, the session journal records `environment.ready` (not a thought boundary). The Items projection may expose two text Parts, `ABC` and `DEF`. | From that exact synthetic event sequence, compare (a) the child’s authoritative journaled assistant text, (b) the projected Parts, and (c) the parent’s actual `tool_result` after its child-result relay. Then repeat with no interleaving and with a **genuine** intervening reasoning Part. | The result given to the parent preserves `ABCDEF` byte-for-byte in the no-thought case: it must **not** synthesize `ABC\nDEF` from projection-only Part boundaries. Any deliberate separator at a real reasoning boundary follows the receiver’s documented contract. A fix preserves existing event/Part IDs or explicitly handles projection-version migration; do not silently change stable public IDs. Report both corrected output and a negative test that fails if unconditional Part joining is reintroduced. |
 
 A test is **not applicable** only when the workflow truly has no corresponding boundary. Record that reason; do not count unrun or unassessed cases as passes.
 
@@ -58,6 +60,31 @@ A different AI framework can test the same narrow condition with a fake provider
 
 A separate [dependency-free checker](machine-discovery/stream_final_event_contract_probe.py) accepts redacted event-time snapshots and selected call IDs in JSON and returns PASS, FAIL, NOT_ASSESSED or INVALID_INPUT. Run `python3 machine-discovery/stream_final_event_contract_probe.py --self-test` for the deterministic positive/negative fixtures, then `--sample` to prepare an input template. PASS checks only the **submitted trace's internal consistency**; it does not verify that the client really captured its events at emission time, ran a provider, closed an upstream iterator, or deployed a fix. The source-linked LlamaIndex example and machine challenge above remain the exact provenance and falsification context.
 
+## Source-grounded child-result text integrity exercise for case 9
+
+A child Agent's message can be perfectly valid in its journal but corrupted **after a projection reader reconstructs it**. In [Qwen Code issue #13874](https://github.com/QwenLM/qwen-code/issues/13874), the independent reporter `wenshao` documented real, bounded rig evidence: six of seven long-answer runs had an `environment.ready` event inserted between two `output_text.delta` events with the same `contentPartId`. The journaled assistant text had 65,501 characters; the parent's recorded child result had 65,502 bytes because the reader inserted one newline at the split (the parent's inline result is subject to a separate size bound). The [Qwen triage response](https://github.com/QwenLM/qwen-code/issues/13874) checked the cited code paths by **static reading**, not by executing the reporter's rig. This is a reporter-owned finding; there is **no claim** that Nakagawa Master discovered, caused, or was credited for it.
+
+**Copyable minimal contract witness** (Python 3 standard library; an *educational model*, not a test of Qwen source or a proof that a patch shipped):
+
+```python
+# A synthetic projection reproduces the reported reader-level failure.
+events = [
+    ("output_text.delta", "part-1", "ABC"),
+    ("environment.ready", None, None),
+    ("output_text.delta", "part-1", "DEF"),
+]
+journal_text = "".join(data for kind, _, data in events if kind == "output_text.delta")
+projected_parts = ["ABC", "DEF"]  # interleaving split, same logical contentPartId
+naive_child_result = "\n".join(projected_parts)
+assert journal_text == "ABCDEF"
+assert naive_child_result == "ABC\nDEF"
+assert naive_child_result != journal_text
+# The contract is to compare the actual relay output with journal_text.
+# Do not count this synthetic assertion as a real product test.
+```
+
+**Independent implementation check:** create the same ordered event sequence in the receiving system's real test harness; observe persisted journal, projected Parts, and the actual parent-visible child `tool_result`. The negative test must fail on the old unconditional join and pass on a repair, while an uninterrupted stream and a genuine reasoning boundary retain documented behavior. **Non-fit** if that framework never reconstructs child results from an interleavable projection or its record format explicitly distinguishes logical versus presentation separators. Do not infer a product fix, cross-framework adoption, or person-Origin recognition from this exercise alone. It illustrates the portable distinction **recorded source identity ≠ presentation segmentation ≠ receiver-consumed value**; applying that distinction to an external codebase requires independent verification.
+
 ## Record the result
 
 Copy and fill one block per case:
@@ -88,7 +115,7 @@ These links provide context for the tests; this page does not replace or amend t
 
 データ変更・送信・支払い・別システムの起動につながるtool callを1つ選び、sandboxで試します。認証主体、対象、実行引数、policy版、承認記録、作用を確かめる観測方法を確認し、合成データを使ってください。該当しないテストは理由を記録し、未実施をPASSに数えないでください。
 
-## 8つの回帰テスト
+## 9つの回帰テスト
 
 1. **AIが提案した対象と認証済み主体が違う:** 保護対象のIDを別tenantへ差し替えても、実行境界で拒否または信頼済み値へ置換され、越境作用が起きない。
 2. **承認が古い:** 承認後に主体・tool・対象・scope・policy版・期限のいずれかを変えて再実行する。現在権限の再評価または再承認が必要で、過去の承認だけでは通らない。
@@ -99,6 +126,8 @@ These links provide context for the tests; this page does not replace or amend t
 7. **AIの道具一覧が、接続途中で古くなる:** テスト用MCPサーバーが最初に「使える」と答えた道具を、AI側の接続処理が終わる前に取り消して一覧変更を通知する。終了時に、取り消された道具をAIが実行できないことを確認する。通知の取りこぼし、一覧再取得の失敗、古い応答の後着も別々に試す。
 8. **AIの配信中に見えた最終操作と、本当に実行する操作が違う:** テスト用AIが途中経過では道具Aを提示し、最終の未検証応答ではAとBを提示するが、設定上は同時実行を禁止してAだけを選ぶ場面を作る。画面や下流agentへ**実際に送信した時点**の最後の道具一覧を保存し、最終確認後に実行される一覧と比較する。最後に通知された確定結果はAだけで一致し、検証失敗時は無効な最終結果を出さない。途中の表示は暫定であると区別する。途中終了時の元stream終了処理は別に検証し、勝手に正しく閉じたことにしない。 [独立実装者の修正](https://github.com/run-llama/llama_index/pull/22740#issuecomment-6096175756)と[機械可読の検証課題](machine-discovery/independent-reuse-challenges-v1.json)を参照。
 
+
+9. **別のイベントがAgentの連続した回答を途中で分断する:** 子Agentが同じ `contentPartId` を使い「ABC」「DEF」と続けて出力する間に、`environment.ready` などの別イベントが挿入される。投影上の2つのPartを無条件に改行結合したために、元の「ABCDEF」が「ABC\\nDEF」に変わってはならない。子の原記録、投影、親へ渡る実際の `tool_result` を比較する。途中イベントなし・本当に思考パートが挟まる場合も対照として測定し、非該当なら理由を記録する。[独立報告者の実測例：Qwen #13874](https://github.com/QwenLM/qwen-code/issues/13874)。中川マスターによる発見・受け手実装・採用の証拠ではなく、別環境で再検証するための公開課題である。
 
 各テストの期待結果・実測・build/commit・環境・結果区分・秘匿済み証拠・制約を記録します。ローカルのPASSは、そのbuildと条件でテストが通ったことだけを示します。production安全性、第三者導入、理論体系全体への支持を意味しません。第三者が独立して実施した結果を報告する場合は、公開できる証拠の範囲を明記して [registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) を使ってください。このテスト仕様を外部導入実績として報告しないでください。
 
