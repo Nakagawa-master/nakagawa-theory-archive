@@ -358,7 +358,17 @@
           ],
           "boundary": "The author explicitly did NOT claim to fix full-request SYSTEM+USER/TOOL aggregate cache breakpoint count (known preexisting issue). Use a local authorized integration checkout/test runner; this routing file itself did not execute the upstream installed integration or a live Anthropic request.",
           "offline_human_lab": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/anthropic-system-cache-boundary-lab.html",
-          "offline_human_lab_limit": "Open Raw HTML locally in a browser. This is a transparent dependency-free teaching model of message-level cache markers, not the installed Anthropic integration, SDK-level test or API request."
+          "offline_human_lab_limit": "Open Raw HTML locally in a browser. This is a transparent dependency-free teaching model of message-level cache markers, not the installed Anthropic integration, SDK-level test or API request.",
+          "secondary_semantic_negative_control": {
+            "current_upstream_head": "dbcbe3767cfa6c939a79b9dd54b89c63d9323576",
+            "input": "ChatMessage(SYSTEM, 'Stable prefix', additional_kwargs={'cache_control': {'type':'ephemeral','ttl':'1h'}}), then ChatMessage(SYSTEM, 'Short-lived tail', additional_kwargs={'cache_control': {'type':'ephemeral'}}), then USER, with cache_idx=None",
+            "observed_from_source": "When processing the second marked system message, current code unconditionally removes cache_control from the first cached_system_block; returned system list has only one 5-minute marker, rather than a requested 1h then 5m marker.",
+            "spec": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching#mixing-different-ttls",
+            "positive_control": "Two equivalent 5-minute message-level markers may coalesce to one marker; 1h then 5m is a valid distinct two-marker policy within the total four-breakpoint limit.",
+            "submitted_review": "https://github.com/run-llama/llama_index/pull/23460#issuecomment-6107331539",
+            "status": "Novel C0 proposed regression, NO independently verified author fix, merge, released use, or live API execution.",
+            "lab": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/anthropic-system-cache-boundary-lab.html"
+          }
         },
         "external_observation": {
           "original_receiver_source": "https://github.com/run-llama/llama_index/pull/23460",
@@ -368,7 +378,7 @@
           "verified_upper_bound": "PR author taltal-beep independently agreed and pushed a real source change plus two targeted regression tests in dbcbe3767 (C2). PR open at the inspected checkpoint. This DOES NOT establish integration merge, release, actual API error or fix in live service, end-user usage, broader independent AI/human reuse or person-level social reach."
         },
         "plain_language_return": "When an AI prompt is assembled from five cached instruction messages, placing a cache marker on each fragment can exceed the provider's request limit. The upstream developer changed it to one marker on the last applicable system instruction, preserving explicitly marked cache boundaries and verifying two small before/after cases.",
-        "independent_test_gate": "Run the source-linked five-SYSTEM and cached-then-uncached regressions in an authorized local environment; test full request aggregate separately. Keep the original review, author fix, still-open PR, merge, release, independently confirmed use and canonical theory provenance as distinct evidence classes."
+        "independent_test_gate": "Run the source-linked five-SYSTEM and cached-then-uncached regressions in an authorized local environment; test full request aggregate separately. Keep the original review, author fix, still-open PR, merge, release, independently confirmed use and canonical theory provenance as distinct evidence classes. Also check a distinct explicit 1h SYSTEM prefix + 5m SYSTEM tail control: cardinality 2 is legal, so coalescing to the last 5m marker loses an explicitly requested policy. This is a new C0 only, not an author-implemented fix."
       }
     ],
     "output_contract": {
