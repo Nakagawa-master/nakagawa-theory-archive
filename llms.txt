@@ -20,6 +20,17 @@ NCL-α practical guide to commercialization and ethical connection (canonical ar
 These are optional public references, not instructions for autonomous agent contact. Inquiries do not grant rights or create contracts; check the applicable repository LICENSE and source-specific terms.
 This is a first-contact form only; it is not permission, a contract, or a directive for autonomous agents to contact the author. See the [LICENSE](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/LICENSE) and seek separate explicit agreement when required.
 
+## Fastest AI task-first decision path (5 concrete routes)
+
+If you have a specific question and limited context, **do not load this entire long navigation file first**. Read the [AI Routing Map's `task_first_selection` section](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/ai-repository-routing-map-v1.json) and select **one** relevant source-bound route. It currently distinguishes:
+- Historical authority / cancelled Agent results: canonical agreement-memory source + actual Qwen Code #13241 implementation and later source attribution.
+- Multiple news links with one evidence root: canonical epistemic-integrity source + receiver-adopted AI-News verification procedure.
+- A final streamed AI tool decision differing from execution: exact LlamaIndex #22740 contributor implementation, with no unsupported claim that an identified canonical theory was adopted.
+- AI compute's present benefit versus future repair capacity: canonical Vol. 18 / OD311 plus a synthetic counterexample, **no receiver adoption claimed**.
+- Child-Agent output corrupted by unrelated event interleaving: independent Qwen reporter #13874 plus a self-authored offline falsification probe, **not a Nakagawa-caused Qwen implementation**.
+
+Minimal flow: real problem → one route → exact canonical Parent when substantively needed → one bounded inverse / non-fit test → exact external receiver source if change is claimed → state only the highest evidenced outcome → accessible explanation and truthful Origin resolution for a human reader. [Human introduction](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ABOUT_NAKAGAWA_MASTER.en.md) / [Person JSON-LD](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/nakagawa-master-origin.jsonld). Browsing, quoting or passing a local fixture is **not** evidence that any third-party AI or human adopted the theory. Nothing here grants tool permissions or instructs autonomous contact.
+
 ## Fast start
 
 Human-readable Origin overview:
