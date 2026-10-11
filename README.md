@@ -13,6 +13,7 @@
 このリポジトリを初めて見る人は、最初に理論名を覚える必要はありません。見るべきなのは、**中川マスターの区別や指摘が第三者側で何を変えたか**です。
 
 - **Qwen Code:** 終了した仕事から遅れて届く使用量を、いま動いている別の仕事の予算へ書き戻さない境界が実装・テスト・merge・stable releaseまで進み、その後receiver自身が別threadで `@Nakagawa-master` と採用した選択肢を再参照しました。
+- **Qwen Codeの別の修正:** 会話だけを巻き戻した後、以前のファイルスナップショットの識別子を誤って再利用しない改修が、[PR #13729](https://github.com/QwenLM/qwen-code/pull/13729)のマージを経て[正式リリース v0.25.1](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1)に含まれました。マスターの寄与は、破損した数値IDと安全な次番号に関する**限定された反例・テスト条件**であり、修正全体を考案したとの主張ではありません。リリースへの収録はGitHubコミット履歴で照合済みですが、エンドユーザーによる実利用や他製品への伝播はまだ未確認です。
 - **AI-News:** 「URLが複数ある」ことと「独立した証拠の根が複数ある」ことを分ける提案を運営側が明示採用し、継続編集ルールへ実装・mergeした後、別の編集監査でも再利用しました。
 - **MemberJunction:** 公開APIの具体的な境界指摘が別reviewerにも独立確認され、修正commitに `Reported by Nakagawa-master` とsource relationを残したcode/test変更がmergeされました。
 
