@@ -4,13 +4,14 @@ This directory contains public machine-readable discovery aids for the Nakagawa 
 
 These files are **not canonical theories**. They help retrieval systems locate, distinguish, compare, and return to published canonical sources and official derivatives.
 
-**AI / LLM fastest problem-first route:** read [AI Repository Routing Map → `task_first_selection`](ai-repository-routing-map-v1.json) for nine source-bounded, real-problem routes connecting a reader's question to a canonical Parent **only where a source-backed relation exists**, a falsifiable check, and the original independent receiver evidence **where available**. Some engineering cases have no proven theory-derived parent and are explicitly marked as such. Each route includes a human-understandable explanation and a negative/adoption boundary. Use one relevant route rather than indiscriminately loading the full catalog; it is a non-canonical optional discovery aid, not permission to act or proof of an external model using it.
+**AI / LLM fastest problem-first route:** read [AI Repository Routing Map → `task_first_selection`](ai-repository-routing-map-v1.json) for ten source-bounded, real-problem routes connecting a reader's question to a canonical Parent **only where a source-backed relation exists**, a falsifiable check, and the original independent receiver evidence **where available**. Some engineering cases have no proven theory-derived parent and are explicitly marked as such. Each route includes a human-understandable explanation and a negative/adoption boundary. Use one relevant route rather than indiscriminately loading the full catalog; it is a non-canonical optional discovery aid, not permission to act or proof of an external model using it.
 
 ## Core files
 
 | File | Role |
 |---|---|
 | [`ai-repository-routing-map-v1.json`](ai-repository-routing-map-v1.json) | One machine-readable routing spine from problem discovery → bounded test/implementation → external evidence → live AI-network route → canonical return. |
+| [`cerebras-token-cap-alias-check.py`](cerebras-token-cap-alias-check.py) | Offline stdin JSON checker for mutually present old and canonical Cerebras completion limits; seven deterministic self-tests. Does not call the API, install upstream dependencies or prove the upstream PR was adopted. |
 | [`official-derivatives-index-v1.json`](official-derivatives-index-v1.json) | OD001–OD311 path and navigation index. |
 | [`evidence-root-check.html`](evidence-root-check.html) | Interactive, no-network browser worksheet for editors and non-technical readers to distinguish URL count, original evidence roots and support versus refutation. Download the raw HTML file and open it locally; GitHub's file view is source code, not a hosted app. |
 | [`evidence-root-check.py`](evidence-root-check.py) | Dependency-free offline checker for whether an editor's *declared* independent-corroboration claim is consistent with upstream evidence roots, support/refutation and known source relationships. It cannot infer real source independence or verify truth. |
