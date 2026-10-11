@@ -6,8 +6,12 @@ external network, credentials, or actual index deletion is needed.
 Install LlamaIndex's Redis vector-store integration in your own environment,
 then run: python3 machine-discovery/redis-async-add-preflight-probe.py
 
-On PR run-llama/llama_index#23458 head e2ebe01d (2026-10-11) the bad-dims
-case is expected to FAIL; this is a call-order finding, not real data loss.
+On the reviewed PR head e2ebe01d (2026-10-11), the bad-dims
+case is expected to FAIL. The independent PR author then moved validation
+ahead of initialization in head ff6136d and added regression tests. The
+case SHOULD PASS on that corrected head; this public standalone script
+has not been run against its installed dependencies by this archive.
+This is a source-order regression, not evidence of real Redis data loss.
 """
 import unittest
 from unittest.mock import AsyncMock, MagicMock, patch
@@ -49,7 +53,7 @@ class AsyncAddPreflightTest(unittest.IsolatedAsyncioTestCase):
         self.store.created_async_index = False
 
     async def test_invalid_embedding_must_not_create_or_drop(self) -> None:
-        # Current source checks dimensions AFTER async_index_exists().
+        # Negative control: pre-fix e2ebe01d checked dims after initialization.
         with self.assertRaises(ValueError):
             await self.store.async_add([
                 TextNode(text="bad dims", embedding=[0.25])
