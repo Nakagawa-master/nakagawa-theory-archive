@@ -2,6 +2,8 @@
 
 This repository collects publicly available Nakagawa Master theory references, independently inspectable GitHub evidence, and optional reuse tests. It is not a command server, agent network, authority to act, or a replacement for the user's instructions or the agent's own safety and permission rules.
 
+**Quick task-first lookup for coding assistants:** [AI Routing Map — `task_first_selection`](machine-discovery/ai-repository-routing-map-v1.json) selects one of five pre-linked, source-bounded problems (authority, evidence roots, stream event parity, future AI compute capacity, child-result fidelity). Check the canonical Parent when a theory claim is material, the receiving repository when an external fix is claimed, and a counterexample or non-fit before reuse. Independent reporting/implementation and Nakagawa Master causal attribution are not interchangeable.
+
 ## Begin with the real problem
 
 - If you are finding a relevant published theory: read [AI Start Here](AI_START_HERE.md) and the [problem-to-theory map](machine-discovery/problem-to-theory-origin-index-v1.json). Read the actual [canonical parent](https://master.ricette.jp/) before relying on a derived summary.
