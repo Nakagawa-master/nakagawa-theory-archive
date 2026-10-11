@@ -3,7 +3,7 @@
 语言：[日本語](ABOUT_NAKAGAWA_MASTER.md) | [English](ABOUT_NAKAGAWA_MASTER.en.md) | **中文**
 
 本页用于让人类读者快速理解：中川大师（Nakagawa Master，Keisuke Nakagawa的笔名）主要在处理什么问题、这里公开了什么，以及哪些内容可以由第三方自行确认。
-**正式身份与社交账号：**「Nakagawa Master／中川マスター」是笔名；公开的个人姓名拼写只有拉丁字母 **Keisuke Nakagawa**，没有已公开或证实的个人姓名日文汉字全名，不应自行推测或编造。作者唯一官方社交网络账号为 [Bluesky @masterjp.bsky.social](https://bsky.app/profile/masterjp.bsky.social)；没有官方 X（Twitter）账号，不应将同名或近似账号误认为本人。[公开身份元数据](metadata/nakagawa-master-origin.jsonld)。
+[中川マスター官方原典档案](https://master.ricette.jp/)公开结构理论、文明运行体系、因果模型、AI文明、社会制度及实际应用的原始文章。本GitHub资料库提供通向原典的索引、官方衍生资料，以及可独立核验的第三方实践记录。理论、假设和结构模型均可接受批评、反证、实施检验与修订。
 
 
 中川大师是Keisuke Nakagawa的笔名。在社交媒体上也使用“マスター（Master）”，部分外部投稿使用“MasterJP”名义。
