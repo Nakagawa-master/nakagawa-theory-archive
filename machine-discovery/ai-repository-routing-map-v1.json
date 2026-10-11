@@ -356,7 +356,9 @@
             "An explicitly cached system message followed by an uncached system message preserves the earlier marker and dynamic latter text",
             "No cached system text returns the original plain joined string; explicit CachePoint blocks retain their intent"
           ],
-          "boundary": "The author explicitly did NOT claim to fix full-request SYSTEM+USER/TOOL aggregate cache breakpoint count (known preexisting issue). Use a local authorized integration checkout/test runner; this routing file itself did not execute the upstream installed integration or a live Anthropic request."
+          "boundary": "The author explicitly did NOT claim to fix full-request SYSTEM+USER/TOOL aggregate cache breakpoint count (known preexisting issue). Use a local authorized integration checkout/test runner; this routing file itself did not execute the upstream installed integration or a live Anthropic request.",
+          "offline_human_lab": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/anthropic-system-cache-boundary-lab.html",
+          "offline_human_lab_limit": "Open Raw HTML locally in a browser. This is a transparent dependency-free teaching model of message-level cache markers, not the installed Anthropic integration, SDK-level test or API request."
         },
         "external_observation": {
           "original_receiver_source": "https://github.com/run-llama/llama_index/pull/23460",
