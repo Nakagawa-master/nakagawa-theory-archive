@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>画面で見えたAIの動きと、実際に決まったこと｜実行境界ラボ</title>
+<meta name="description" content="表示と実行、キャンセルと通信終了、Agentへの引き継ぎ。第三者の実装修正から生まれた3つの比較を、通信不要で体験。">
+<style>
+:root{color-scheme:light;--a:#165e78;--ink:#172c3b;--border:#c7d5df}*{box-sizing:border-box}body{margin:0;background:#f4f8fb;color:var(--ink);font:16px/1.7 system-ui,"Noto Sans JP",sans-serif}main{max-width:860px;margin:auto;padding:24px 17px 60px}h1{font-size:clamp(1.6rem,4vw,2.1rem);line-height:1.4}h2{font-size:1.18rem}.lead{font-size:1.1rem;font-weight:650}.muted{color:#475a6c;font-size:.9rem}section{background:white;border:1px solid var(--border);border-radius:14px;padding:20px;margin:18px 0}button{font:inherit;padding:9px 12px;margin:4px;border:1px solid var(--a);border-radius:7px;background:white;color:var(--a);cursor:pointer}button[aria-pressed=true]{color:white;background:var(--a)}button:focus-visible,a:focus-visible{outline:3px solid #c68e00;outline-offset:3px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}@media(max-width:640px){.grid{grid-template-columns:1fr}}.output{white-space:pre-wrap;overflow-wrap:anywhere;padding:13px;background:#eaf3f7;border-left:5px solid var(--a)}.bad{background:#fff0e9;border-color:#a44029}a{color:#0d597a}li{margin:8px 0}
+</style></head><body><main>
+<p class="muted">Nakagawa Master（中川マスター）／独立した開発者のOSS修正を読み解く公開教材</p>
+<h1>AIが見せた答えと、実際に使った答えが違ったら？</h1>
+<p class="lead">「画面に表示された」「正式に採用された」「中断した」「次のAIへ渡った」。この四つは同じ出来事ではありません。</p>
+<p>AIがツールを二つ選んだように見えても、実行したのは一つだけかもしれない。キャンセル後も通信が残るかもしれない。別のAIへ仕事を渡す時に前半の説明だけ消えるかもしれない。実際のオープンソース修正をもとに、三つの違いを操作してみましょう。</p>
+<section><h2>操作する（オフライン）</h2>
+<div role="group" aria-label="実験を選ぶ"><button type="button" id="case-event" aria-pressed="true">① 表示と実行</button><button type="button" id="case-close" aria-pressed="false">② キャンセル</button><button type="button" id="case-handoff" aria-pressed="false">③ Agent引き継ぎ</button></div>
+<div role="group" aria-label="修正前と修正後の比較"><button type="button" id="mode-before" aria-pressed="true">修正前</button><button type="button" id="mode-after" aria-pressed="false">修正後</button></div>
+<p id="description" class="muted"></p><div class="grid"><div><h2>外から何が見えるか</h2><div id="visible" class="output" aria-live="polite"></div></div><div><h2>裏で何が確定するか</h2><div id="actual" class="output" aria-live="polite"></div></div></div>
+<p id="verdict" class="output" role="status" aria-live="polite"></p>
+<button type="button" id="self-test">6状態の内部検証を実行</button><p id="test-result" class="muted" role="status" aria-live="polite">これは教材モデルの検証であり、実製品のテストではありません。</p></section>
+<section><h2>第三者の開発で実際に変わったこと</h2><ol>
+<li><strong>表示と実行：</strong><a href="https://github.com/run-llama/llama_index/pull/22740">LlamaIndex #22740</a>。中川マスターが最終チャンクを検証前に表示する問題を指摘し、開発者は最後の一チャンクを検証してから表示する処理に変更しました。<a href="https://github.com/run-llama/llama_index/pull/22740#issuecomment-6096175756">開発者による修正説明</a>。</li>
+<li><strong>キャンセル：</strong>同じPRで、外側のストリーム停止が上流通信を閉じない問題を追加指摘。開発者は同期・非同期双方の上流終了処理と回帰テストを追加しました。<a href="https://github.com/run-llama/llama_index/pull/22740#issuecomment-6100105631">追加の修正報告</a>。</li>
+<li><strong>Agentへの引き継ぎ：</strong><a href="https://github.com/run-llama/llama_index/pull/23439">LlamaIndex #23439</a>。ツール呼び出しを保持しても文章の前半が失われ得る逆例を指摘。開発者は2-Agent構成で再現し、全文・ツールID・非テキスト情報を保持する修正を行いました。<a href="https://github.com/run-llama/llama_index/pull/23439#issuecomment-6100145500">作者自身の再現報告</a>。</li>
+</ol><p>これらは<strong>実際の第三者コード修正の、限定された事実</strong>です。各PRはこの教材の作成時点で未マージでした。リリース済み、全利用者に到達済み、あるいは理論体系全体を採用したとは主張しません。</p></section>
+<section><h2>別の現場でも使える見方</h2>
+<p><strong>何を見せたか／何を採用したか／資源を閉じたか／次の受け手に何を残したか</strong>を別々に検証する。画面上の「成功」をそのままシステム内部の正しさと見なさないための問いです。ただし各現場で実際のコードと仕様に照らして反証する必要があります。</p>
+<p>このHTMLはブラウザ内で固定の仮想イベントを計算する<strong>教育用の独立モデル</strong>であり、LlamaIndexや実際のAPI、通信資源、別のAI製品を動かすものではありません。外部送信・Cookie・追跡・入力保存はありません。</p>
+<p><a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ABOUT_NAKAGAWA_MASTER.md">中川マスター／Origin</a> ／ <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402">独立した検証・反証・再利用を記録</a></p></section>
+</main><script>
+"use strict";
+const descriptions={event:"最後の更新でツール候補AとBが届くが並列ツール実行は禁止されている。",close:"一度チャンクを受け取ったあと、利用者が外側のストリームを閉じた。",handoff:"「before 」「handoff」の2つのテキスト断片と最後にツール呼び出しIDが届く。"};
+function eventCase(fixed){const raw=[["A"],["A","B"]],executed=raw[1].slice(0,1),shown=fixed?executed:raw[1];const ok=shown.join()===executed.join();return {visible:"最終表示："+shown.join(" / "),actual:"確定して実行するツール："+executed.join(" / "),ok,reason:ok?"最終表示と実行が一致。":"画面のBは実際には実行されない。"}}
+function closeCase(fixed){const upstream={open:true,close(){this.open=false}},outer={close(){if(fixed)upstream.close()}};outer.close();return {visible:"外側の表示：停止",actual:"通信元："+(upstream.open?"開いたまま":"閉鎖済み"),ok:!upstream.open,reason:upstream.open?"外側を閉じても内側の資源は残り得る。":"終了操作が通信元へ伝わった。"}}
+function handoffCase(fixed){const chunks=[{text:"before ",id:null},{text:"handoff",id:"handoff-1"}],last=chunks[1],next={text:fixed?chunks.map(c=>c.text).join(""):last.text,id:last.id},ok=next.text==="before handoff"&&next.id==="handoff-1";return {visible:"次のAgentへ：「"+next.text+"」／ID="+next.id,actual:"本来の全文：「before handoff」／ID="+last.id,ok,reason:ok?"文章全文と呼び出しIDを保持。":"呼び出しIDだけ保持しても文章の前半が消えた。"}}
+function evaluate(kind,mode){if(!descriptions[kind]||!["before","after"].includes(mode))throw Error("Unknown case");const fixed=mode==="after";return {...(kind==="event"?eventCase(fixed):kind==="close"?closeCase(fixed):handoffCase(fixed)),description:descriptions[kind]}}
+function verify(){let count=0;for(const kind of Object.keys(descriptions)){const before=evaluate(kind,"before"),after=evaluate(kind,"after");if(before.ok!==false||after.ok!==true||!before.visible||!after.actual)throw Error("Invariant failed: "+kind);count+=2}return count}
+const el=id=>document.getElementById(id);let kind="event",mode="before";
+function render(){const s=evaluate(kind,mode);el("description").textContent=s.description;el("visible").textContent=s.visible;el("actual").textContent=s.actual;el("verdict").textContent=(s.ok?"境界が一致：":"不一致：")+s.reason;el("verdict").classList.toggle("bad",!s.ok);for(const k of Object.keys(descriptions))el("case-"+k).setAttribute("aria-pressed",String(k===kind));for(const k of ["before","after"])el("mode-"+k).setAttribute("aria-pressed",String(k===mode))}
+for(const k of Object.keys(descriptions))el("case-"+k).addEventListener("click",()=>{kind=k;render()});for(const k of ["before","after"])el("mode-"+k).addEventListener("click",()=>{mode=k;render()});el("self-test").addEventListener("click",()=>{try{el("test-result").textContent="教材モデルの内部検証PASS："+verify()+"状態（実製品のテストではありません）"}catch(e){el("test-result").textContent="FAILED："+e.message}});render();
+</script></body></html>
