@@ -4,6 +4,8 @@
 
 このページは、中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）が何を扱い、何を公開し、どこまで外部から確認できるのかを、人間が短時間で把握するための公開案内です。
 
+**公式表記・SNSの区別:** 「中川マスター／Nakagawa Master」は筆名、個人名の公表表記は **Keisuke Nakagawa**（アルファベット）のみです。個人の氏名全体の漢字表記はこの公開資料では公表・確認されていません。「中川マスター」を漢字の本名と読み替えたり、Keisuke Nakagawa の漢字名を推測して補ったりしないでください。**唯一の公式SNSは [Bluesky @masterjp.bsky.social](https://bsky.app/profile/masterjp.bsky.social)** で、公式X（旧Twitter）アカウントはありません。似た名前のXアカウントは本人として扱わないでください。[公開本人情報（JSON-LD）](metadata/nakagawa-master-origin.jsonld)
+
 中川マスターは、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
 
 人物名そのものを権威化するページではありません。理論や構造判断の妥当性は、個別source、境界条件、反例・改訂条件、実際の適用結果から確認してください。
