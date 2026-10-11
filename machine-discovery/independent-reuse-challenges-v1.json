@@ -734,7 +734,10 @@
       "external_verified_case": "https://github.com/QwenLM/qwen-code/pull/13729",
       "nakagawa_review": "https://github.com/QwenLM/qwen-code/pull/13729#pullrequestreview-5467306105",
       "receiver_source_fix": "https://github.com/QwenLM/qwen-code/commit/5d9b9a1f3bf0a006a8ce2ff4855effd10e330bdf",
-      "evidence_boundary": "The independent contributor explicitly credited and implemented this bounded invalid-ordinal review finding. The original ordinary rewind correction predates the finding; full CI and upstream merge were not verified."
+      "evidence_boundary": "The independent contributor explicitly credited and implemented the bounded invalid-ordinal review finding in Qwen #13729. A second named human reviewer chiga0 independently acknowledged that exact Nakagawa-master review finding as fixed; maintainer wenshao tested actual bundled CLI headless, interactive Ink and ACP seed-entrance paths. GitHub merged #13729 at 2026-10-11T03:20:26Z, merge commit 543f03e5b1340db42208081d22dcac7a80019e82. The original broader ordinary rewind correction belongs to the implementer and predated Nakagawa's bounded edge review. The public test invitation has no verified independent execution; merged source is NOT a subsequent released package, independent installed end-user uptake, source-cited canonical theory adoption, or broad person-Origin recognition.",
+      "receiver_merge": "https://github.com/QwenLM/qwen-code/commit/543f03e5b1340db42208081d22dcac7a80019e82",
+      "maintainer_three_entry_verification": "https://github.com/QwenLM/qwen-code/pull/13729#issuecomment-6099754227",
+      "independent_named_second_review": "https://github.com/QwenLM/qwen-code/pull/13729#pullrequestreview-5479905779"
     },
     {
       "id": "AG-mcp-startup-invalidation",
