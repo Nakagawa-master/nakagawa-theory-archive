@@ -15,7 +15,7 @@ Complete previously published long navigation (content preserved, not discarded)
 
 **Shortest machine path:** https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/ai-repository-routing-map-v1.json
 
-Read the **`quick_route_index`**, then the matching item under **`task_first_selection.routes`**. Seven problem-first routes have documented positive/negative and source-status boundaries:
+Read the **`quick_route_index`**, then the matching item under **`task_first_selection.routes`**. Eight problem-first routes have documented positive/negative and source-status boundaries:
 
 - Stale approvals, cancelled Agent results, current execution authority → canonical agreement-memory source + Qwen #13241 receiver evidence, merged/released, later same-receiver Origin reference, not confirmed end-user scale.
 - Multiple AI-news citations sharing one original root → canonical epistemic-integrity source + independent AI-News #124 / PR #131 receiver rule with bounded repeated same-project reuse.
@@ -24,6 +24,7 @@ Read the **`quick_route_index`**, then the matching item under **`task_first_sel
 - Interleaved event inserts text into a child Agent response → independent Qwen #13874 reporter's finding and an optional synthetic checker; **not a Nakagawa-discovered/caused Qwen fix**.
 - Redis async vector add runs index creation before a later invalid batch member is checked → LlamaIndex #23458 earlier first-node issue independently fixed in source/tests; distinct mixed-batch regression is an **unadopted, opt-in negative**. No live Redis deletion/release inferred.
 - Resumed AI coding session reuses an old retained snapshot identity → Qwen #13729 independently merged source-and-test fix; the bounded malformed ordinal/safe-successor suggestion was acknowledged, but release carrying that exact merge and end-user uptake are unverified.
+- Anthropic prompt composed from five cached system instruction messages → LlamaIndex #23460 author [acknowledged](https://github.com/run-llama/llama_index/pull/23460#issuecomment-6106461866) Nakagawa Master's explicit five-message inverse and added source/test fix `dbcbe3767` limiting redundant message-level system breakpoints; still OPEN, no merge, live Anthropic API test, release or independent user/AI consumption claimed.
 
 This task-specific machine map is a navigator, not a substitute for reading the real canonical theory or external receiver source. Six example evaluation questions are included but **not** evidence of running an independent LLM evaluation.
 
