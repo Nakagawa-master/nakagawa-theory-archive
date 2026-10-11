@@ -148,6 +148,16 @@
       ],
       "canonical_source": false,
       "receiver_verified_case": false
+    },
+    {
+      "id": "llamaindex_legacy_image_deserialization_without_silent_loss",
+      "when": [
+        "LlamaIndex ChatMessage legacy images silently disappear on JSON restore",
+        "ImageDocument serialized dictionaries and ImageBlock migration",
+        "chat history image round-trip duplicate or byte-less husk"
+      ],
+      "canonical_source": false,
+      "receiver_verified_case": true
     }
   ],
   "task_first_selection": {
@@ -462,6 +472,40 @@
         },
         "plain_language_return": "An AI request can accidentally give two different answers to the question 'how long may the output be?' because an older option and its replacement are both present. A standalone, offline checker spots the clash in already-built JSON request data, while the proposed upstream test pinpoints where to remove the extra key.",
         "independent_test_gate": "Run offline checker (does not send a request); separately run the proposed upstream _get_model_kwargs regression inside the installed integration; ask the actual author/maintainer to settle correct precedence and only later verify merged/released use. A local checker is not independent uptake."
+      },
+      {
+        "id": "llamaindex_legacy_image_deserialization_without_silent_loss",
+        "matched_problem": [
+          "A LlamaIndex chat history imported from JSON can hold legacy additional_kwargs.images as dictionaries rather than ImageDocument objects; a successful parse must not silently delete an image reference with no matching ImageBlock.",
+          "Restoring a legacy image also must not create a duplicate block when an ImageBlock is already present. A plain ImageDocument.model_dump() excludes MediaResource.data by default, so inline binary bytes that were never serialized cannot be re-created."
+        ],
+        "falsifiable_distinction": "Separate (a) an actual ImageDocument needing one image block, (b) a serialized path-backed image dictionary needing reconstruction when no block exists, (c) an already-migrated duplicate that should not add another block, and (d) a byte-less serialized husk or unknown dictionary that must remain recoverably visible rather than being silently discarded. Absence of serialized bytes is not proof the decoder lost bytes.",
+        "canonical_parent": null,
+        "canonical_relation": "Concrete technical boundary raised by Nakagawa Master on LlamaIndex #23463; an independent developer accepted the useful part and corrected the example's excluded-inline-data premise. No sourced claim that this narrow engineering fix was derived from a named canonical theory or that the whole theory corpus was adopted.",
+        "machine_theory_selector": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+        "runnable_or_falsifiable_task": {
+          "installed_package_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/llamaindex-legacy-images-roundtrip-probe.py",
+          "five_contracts": [
+            "ImageDocument object converts to one ImageBlock",
+            "Existing migrated ImageBlock with serialized legacy husk does not duplicate",
+            "Path-backed serialized document dictionary without a block reconstructs the resolvable image",
+            "Byte-less inline-only serialized husk without a block is preserved in additional_kwargs",
+            "Unknown serialized dictionary without a block is not silently dropped"
+          ],
+          "command": "python3 machine-discovery/llamaindex-legacy-images-roundtrip-probe.py",
+          "positive_control": "ImageDocument object and a real path-backed serialized document produce one correct ImageBlock, while a previously migrated block stays single.",
+          "negative_control": "A dict-only nonempty source should not disappear from both blocks and additional_kwargs; a byte-less model_dump husk cannot regenerate omitted bytes and must not be represented as recovered image data.",
+          "execution_boundary": "Requires separately installed llama-index-core and an authorized local checkout to execute the probe. At source-check time the public probe had not been run against the installed package here; no live end-user image loss or installed LlamaIndex result is claimed."
+        },
+        "external_observation": {
+          "original_receiver_source": "https://github.com/run-llama/llama_index/pull/23463",
+          "nakagawa_source_review": "https://github.com/run-llama/llama_index/pull/23463#issuecomment-6108430896",
+          "independent_author_acknowledgement_and_fix": "https://github.com/run-llama/llama_index/pull/23463#issuecomment-6109245470",
+          "independent_code_and_test_head": "https://github.com/run-llama/llama_index/commit/3d91ed6c4a61408d9b2ce33efc34feda7da6f158",
+          "verified_upper_bound": "One independent LlamaIndex PR author acknowledged the bounded Nakagawa review, corrected the impossible inline-bytes expectation, and changed production dictionary migration plus test cases on an OPEN PR. It was unmerged when checked; no real package test run by this archive's assistant, downstream release, independent end-user use, second-framework carry, model adoption or broad human person-Origin recognition is established."
+        },
+        "plain_language_return": "A coding assistant can say 'the message was restored' while silently forgetting where an attached image was stored. In this LlamaIndex source review, the developer changed the loader so recoverable image references survive and already-present images are not duplicated; the fix cannot recreate picture bytes that the saved file never contained. A separate five-case local check is available for someone using the actual package.",
+        "independent_test_gate": "Inspect original author code and added tests at the recorded head; run the five tests with the actual package in an authorized environment, separately check future merge/release and independently observed user execution. Respect false-positive byte-less cases and independent attribution; the public checker is not evidence of downstream use."
       }
     ],
     "output_contract": {
@@ -510,6 +554,11 @@
         "question": "Will the framework automatically follow every public source and post a comment without checking local permission?",
         "expected_route": null,
         "must_not_claim": "reading an optional public file grants tool or social action authority"
+      },
+      {
+        "question": "A restored LlamaIndex ChatMessage contains no image after importing a path-backed legacy images dictionary; an inline-only model_dump lacks media bytes.",
+        "expected_route": "llamaindex_legacy_image_deserialization_without_silent_loss",
+        "must_not_claim": "bytes absent from serialization were recovered, that the reviewed PR merged/released, that an installed package test ran here, or that another AI developer independently adopted the fix"
       }
     ]
   },
