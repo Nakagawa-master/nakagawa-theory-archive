@@ -3222,6 +3222,48 @@
         "formal proof that the full Nakagawa Master theory corpus was adopted by LlamaIndex"
       ],
       "verification_boundary": "The 2026-10-10 source and commits show an independent author-owned boundary correction and a later same-author test expansion for positive/negative values after the specific Nakagawa review. Both remain one recipient line. Earlier VANDRANKI findings retain credit. The added local-mode tests are not live-server validation, GitHub PR merge, release, independent second-person adoption or broader recognition."
+    },
+    {
+      "case_id": "llamaindex-23439-codeact-streaming-handoff-full-text-and-tool-lineage",
+      "topic": "When CodeActAgent hands work to another agent, preserving a provider's handoff tool-call blocks must not discard the earlier text deltas of the same streamed assistant message. The receiving agent needs both complete assistant text and matching tool-call/result lineage.",
+      "external_repository": "run-llama/llama_index",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "pull_request_review",
+        "url": "https://github.com/run-llama/llama_index/pull/23439#pullrequestreview-5479964021",
+        "summary": "Identified the new source-level inverse: keeping only the final ChatResponse.message on a streamed handoff can lose full_response_text accumulated from earlier deltas. Requested a two-chunk built-in mock with both text concatenation and original handoff tool-call ID verified together, without dropping non-text blocks."
+      },
+      "explicit_receiver_return": {
+        "actor": "dakjdakd",
+        "url": "https://github.com/run-llama/llama_index/pull/23439#issuecomment-6100145500",
+        "origin_preserved": true,
+        "statement": "The independent PR author explicitly thanked @Nakagawa-master, reproduced the split-chunk loss in a full two-agent built-in mock workflow, and described an implemented regression correction."
+      },
+      "receiver_implementation": {
+        "actor": "dakjdakd",
+        "url": "https://github.com/dakjdakd/llama_index/commit/b3b87241fdb1ef7f12d98cfd844c94ea58cfe611",
+        "pull_request": "https://github.com/run-llama/llama_index/pull/23439",
+        "verified_change": "CodeActAgent now keeps the final provider assistant message's tool metadata and non-text blocks, copies the message when streaming text needs reconciliation, and stores accumulated full text. Receiver tests cover both ToolCallBlock and additional_kwargs tool_calls with two-agent handoff, a preserved ThinkingBlock, unchanged original final-chunk input, and split-chunk ordinary code execution."
+      },
+      "head_verification": {
+        "sha": "b3b87241fdb1ef7f12d98cfd844c94ea58cfe611",
+        "status": "open/unmerged at 2026-10-11 read",
+        "checks": "Directly inspected PR code/test patch and named author response. The author states 11 affected CodeActAgent tests, lint and formatting passed locally; this archive publisher did not independently execute the full repo, real model or end-user workflow."
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "public_reuse": {
+        "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/independent-reuse-challenges-v1.json",
+        "canonical_context": "https://master.ricette.jp/",
+        "source_identity_boundary": "A specific separately author-implemented GitHub streaming/handoff regression after a bounded Nakagawa review. Does not prove the initial PR implementation, whole theory system or downstream product use originated with Nakagawa."
+      },
+      "not_claimed": [
+        "credit for the original CodeActAgent handoff bug or the independently existing first fix",
+        "merged/released/deployed PR, live provider test or actual end-user uptake",
+        "new independent second-person carry beyond the replying author",
+        "that the receiver formally adopted a named canonical theory or the full Nakagawa corpus",
+        "broad person recognition or established influence-force multiplier"
+      ],
+      "verification_boundary": "Observed one externally owned CodeActAgent patch with new regression tests after one publicly grounded inverse review, plus an explicit author acknowledgement. These are one external receiver event, not a second new recipient or an independent user/AI theory citation."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
