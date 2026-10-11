@@ -138,6 +138,16 @@
       ],
       "canonical_source": false,
       "receiver_verified_case": true
+    },
+    {
+      "id": "cerebras_canonical_vs_legacy_completion_cap_collision",
+      "when": [
+        "Cerebras max_tokens and max_completion_tokens both included",
+        "LlamaIndex Cerebras additional_kwargs overrides",
+        "Cerebras OpenAI-compatible output cap alias precedence"
+      ],
+      "canonical_source": false,
+      "receiver_verified_case": false
     }
   ],
   "task_first_selection": {
@@ -421,6 +431,35 @@
         },
         "plain_language_return": "An AI tool can return ordinary data that happens to contain the word 'error'. That does not mean running the tool failed. After a specific GitHub review, the CUGA implementer changed the adapter to check its own outcome channel instead of trusting a label inside the returned data, and added one successful-result and one real-exception regression.",
         "independent_test_gate": "Inspect original GitHub review and author patch, run both upstream regression tests in a properly configured CUGA environment, verify real deployment separately, and never infer adoption of the author's theories from use of a narrow programming fix."
+      },
+      {
+        "id": "cerebras_canonical_vs_legacy_completion_cap_collision",
+        "matched_problem": [
+          "When LlamaIndex Cerebras uses a max_tokens instance value while a consumer passes the canonical max_completion_tokens through additional_kwargs or per-call kwargs, two completion-token cap fields remain in the outgoing request dictionary",
+          "The new Cerebras override removes the alias only when its own constructor field is set, rather than when the merged outgoing payload already contains the canonical field"
+        ],
+        "falsifiable_distinction": "Two simultaneously set completion-cap keys have ambiguous precedence; test their merged request dictionary BEFORE calling a remote API, and keep the canonical cap while omitting the legacy alias. A constructor-level canonical cap passes on the same head, whereas additional_kwargs and per-call canonical caps leave both fields.",
+        "canonical_parent": null,
+        "canonical_relation": "Source-derived independent test suggested by Nakagawa Master on an open programming PR. No source-based claim that the upstream author, a canonical Nakagawa theory, the API provider or any independent model adopted this specific fix.",
+        "machine_theory_selector": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+        "runnable_or_falsifiable_task": {
+          "no_network_payload_checker": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/cerebras-token-cap-alias-check.py",
+          "commands": [
+            "python3 machine-discovery/cerebras-token-cap-alias-check.py --self-test",
+            "printf '%s\\n' '{\"max_tokens\":32,\"max_completion_tokens\":64}' | python3 machine-discovery/cerebras-token-cap-alias-check.py"
+          ],
+          "local_verification": "Seven dependency-free checker self-tests passed in assistant execution; the supplied ambiguous payload is flagged with exit status 1 and the canonical-only control exits 0. This tests only the pure payload checker, not the installed LlamaIndex integration or Cerebras API.",
+          "integration_regression": "Instantiate Cerebras(model='gpt-oss-120b',api_key='test-key',max_tokens=32,additional_kwargs={'max_completion_tokens':64}), call _get_model_kwargs(), require max_completion_tokens 64 and max_tokens absent; repeat with _get_model_kwargs(max_completion_tokens=96). Existing explicit constructor max_completion_tokens control should remain correct.",
+          "source_limit": "Open PR source algebra predicts both keys; no verified live API 4xx, no installed LlamaIndex integration pytest or independent maintainer uptake. The no-network checker cannot establish that Cerebras actually rejects a dual-key request."
+        },
+        "external_observation": {
+          "original_receiver_source": "https://github.com/run-llama/llama_index/pull/22769",
+          "nakagawa_source_review": "https://github.com/run-llama/llama_index/pull/22769#issuecomment-6108135348",
+          "upstream_exact_head": "https://github.com/run-llama/llama_index/commit/0e1e36a56213b411e5771fb37cf4ecd2ccf0b85e",
+          "verified_upper_bound": "This newly posted reviewer test is Nakagawa Master C0 only. No observed author change, approval, merge, release, downstream product use, independent model invocation or broad person recognition."
+        },
+        "plain_language_return": "An AI request can accidentally give two different answers to the question 'how long may the output be?' because an older option and its replacement are both present. A standalone, offline checker spots the clash in already-built JSON request data, while the proposed upstream test pinpoints where to remove the extra key.",
+        "independent_test_gate": "Run offline checker (does not send a request); separately run the proposed upstream _get_model_kwargs regression inside the installed integration; ask the actual author/maintainer to settle correct precedence and only later verify merged/released use. A local checker is not independent uptake."
       }
     ],
     "output_contract": {
