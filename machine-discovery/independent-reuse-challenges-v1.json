@@ -846,6 +846,31 @@
       "observed_receiver_result": "External author ningmao-hlyz changed <=2**53 to <2**53 and added inverse large-integer EQ/NE checks at 1fd674c. At subsequent head 75f75ad, the SAME engineer expanded the local-mode fixture and tests to all four signed adjacent values and their NE complements. This is one continuing receiver-owned code-and-test line (not two independent humans). The server-vs-local outcome remains open for external actual reproduction. No PR merge, released deployment, or spontaneous new name-attributed reply is established.",
       "evidence_boundary": "Local-mode Python signed-boundary tests in independently authored PR head 75f75ad do NOT by themselves execute or verify the Qdrant server unindexed as_f64 path. This question is an independently falsifiable engineering task, including negative outcomes. The same author's two improvements are one receiver line, not measured audience recognition or proof the author adopted the Nakagawa theory corpus. A new independently runnable owner-authored Qdrant backend probe is now supplied; it has not itself been confirmed run by another person or on a live server by the archive and does not raise the implementation's evidence stage.",
       "independent_probe_use": "python3 machine-discovery/qdrant_numeric_boundary_probe.py prints only a float64 model with NO Qdrant access or write. With voluntarily installed qdrant-client, --backend local tests in-memory actual Qdrant comparison. To target your own external server, supply BOTH --backend server --server-url <owned-server> --allow-server-writes: the test creates/upserts/deletes an isolated randomly named collection; do not run on servers without explicit permission. The probe measures direct Qdrant Range versus MatchValue semantics, not the LlamaIndex PR or real-product use. Preserve a negative result when found."
+    },
+    {
+      "id": "AJ-child-stream-projection-join-integrity",
+      "distinction": "A projected stream Part boundary caused by an unrelated lifecycle event is not permission to insert new text into the child Agent response received by a parent. Source journal text, projection segmentation and recipient-consumed result are three independently inspectable states.",
+      "test": "In a permitted isolated multi-agent test, emit one child assistant logical output text 'ABCDEF' as two delta events 'ABC' and 'DEF' bearing the same contentPartId. Interleave environment.ready between the deltas, while recording the child journal, the Items projection and the parent's actual child tool_result. Repeat without any interleaving and with a real reasoning Part inserted between separate text segments. In each run compare exact bytes (including newlines) at the parent, not just a rendered UI preview. Where available, test the product's actual result relay and bounded/truncated output path rather than an external toy join function alone.",
+      "positive_evidence": [
+        "The no-reasoning interleaved case delivers 'ABCDEF' to the parent, exactly matching the child journal; the old unconditional newline-between-Parts behavior would produce 'ABC\\nDEF' and must fail the regression.",
+        "The no-interleaving positive control retains existing child result behavior; a genuine reasoning boundary follows the receiver's documented separator rules without misclassifying an unrelated environment event.",
+        "A product-level regression records the original delta contentPartId, event order/sequence, projected Part boundaries and exact parent-visible result. It distinguishes a reader-level repair from a migration of published Part identities or projection schema.",
+        "If the product bounds or truncates child results, it reports truncation separately from insertion and avoids claiming unobserved full-length fidelity."
+      ],
+      "useful_negative_evidence": [
+        "Two projected Parts of one contentPartId are joined using '\\n' even though the source journal has no newline: receiver-visible text corruption, regardless of whether a UI seems readable.",
+        "A proposed blanket concatenation fixes unrelated-event splits but erases an explicitly required separator at a true reasoning boundary.",
+        "A system never derives parent child results from an interleavable projection, or has an explicit validated framing contract making this ordering impossible: report this as non-fit with code/test evidence, not adoption.",
+        "Only a synthetic model test runs without the actual receiver relay: it proves a possible join error but not an end-to-end product defect or deployed repair."
+      ],
+      "source_provenance": {
+        "independent_reporter": "wenshao",
+        "issue": "https://github.com/QwenLM/qwen-code/issues/13874",
+        "reported_source_commit": "9763580b84225b4811bd05c716f1d05b37cfdf9d",
+        "observed_report": "six of seven real-stack long-answer rig runs had environment.ready interleaved between deltas of the same logical text Part; the parent managed-child-result had one extra newline while the child journal did not",
+        "human_readable_test": "AI_AGENT_EXECUTION_BOUNDARY_TESTS.md"
+      },
+      "evidence_boundary": "Qwen reporter and Qwen triage independently pre-existed this public reuse challenge. The Qwen report is not a Nakagawa Master discovery or implementation and its AI-code triage was static; the challenge is a new self-authored portable verification invitation only. No third party is verified to have executed this published challenge, adopted a Nakagawa theory, attributed the Qwen fix to Nakagawa, or returned independent person recognition. The Python witness in the human-readable test is a synthetic model, not a Qwen runtime run."
     }
   ],
   "evidence_boundary": [
