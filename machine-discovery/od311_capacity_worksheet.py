@@ -59,10 +59,18 @@ def classify(case):
     routes = case.get("settlement_routes")
     if not isinstance(routes, list):
         raise ValueError(f"{case['id']}: settlement_routes must be a list")
+    # Two names for the same declared route do not provide two settlement options.
+    # This catches exact/name-normalized duplicates only, NOT two differently
+    # named paths that ultimately depend on the same supplier or repair team.
+    seen_route_names = set()
     evaluated = []
     for route in routes:
-        if not isinstance(route, dict) or not isinstance(route.get("name"), str) or not route["name"]:
-            raise ValueError(f"{case['id']}: every route requires a name")
+        if not isinstance(route, dict) or not isinstance(route.get("name"), str) or not route["name"].strip():
+            raise ValueError(f"{case['id']}: every route requires a non-empty name")
+        normalized_name = route["name"].strip().casefold()
+        if normalized_name in seen_route_names:
+            raise ValueError(f"{case['id']}: duplicate declared settlement route name: {route['name']}")
+        seen_route_names.add(normalized_name)
         checks = [route.get(key) for key in ("supply", "repair_capacity", "time_window")]
         if any(v not in ROUTE for v in checks):
             raise ValueError(f"{case['id']}: route evidence must be available/unavailable/unknown")
@@ -110,6 +118,7 @@ def report(data):
             "No assertion that user declarations are factual or causally identified.",
             "Unknown is neither fulfilled nor unpaid; scheduled future cost alone is not Future Debt.",
             "Route count is not a scalar freedom/benefit or future B survival score.",
+            "Unique labels do not establish distinct real suppliers, repair teams, time windows or independently feasible choices.",
             "A branch/fork does not inherit debt duties merely from lineage.",
             "Compare a full parent-only analysis: an OD311-only diagnostic advantage is unproven.",
             "Settlement-Line Preservation is a normative proposal, not an empirical finding.",
@@ -136,7 +145,16 @@ def self_test():
         pass
     else:
         raise AssertionError("Invalid route evidence was accepted")
-    print("7 synthetic assertions passed; this is not real-world validation")
+    duplicated = sample()
+    duplicated["cases"][0]["settlement_routes"].append(
+        dict(duplicated["cases"][0]["settlement_routes"][0], name="  ON-SITE REPAIR  "))
+    try:
+        report(duplicated)
+    except ValueError as error:
+        assert "duplicate declared settlement route name" in str(error)
+    else:
+        raise AssertionError("Repeated settlement path counted as a new option")
+    print("8 synthetic assertions passed; this is not real-world validation")
 
 
 def main():
