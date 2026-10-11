@@ -127,6 +127,17 @@
       ],
       "canonical_source": false,
       "receiver_verified_case": true
+    },
+    {
+      "id": "cuga_fc_tool_result_error_marker_boundary",
+      "when": [
+        "native function-calling tool result confused with executor error",
+        "tool payload contains __cuga_fc_error__ as ordinary data",
+        "CUGA Lite sandbox tool error provenance",
+        "tool result JSON keys cannot authenticate exceptions"
+      ],
+      "canonical_source": false,
+      "receiver_verified_case": true
     }
   ],
   "task_first_selection": {
@@ -379,6 +390,37 @@
         },
         "plain_language_return": "When an AI prompt is assembled from five cached instruction messages, placing a cache marker on each fragment can exceed the provider's request limit. The upstream developer changed it to one marker on the last applicable system instruction, preserving explicitly marked cache boundaries and verifying two small before/after cases.",
         "independent_test_gate": "Run the source-linked five-SYSTEM and cached-then-uncached regressions in an authorized local environment; test full request aggregate separately. Keep the original review, author fix, still-open PR, merge, release, independently confirmed use and canonical theory provenance as distinct evidence classes. Also check a distinct explicit 1h SYSTEM prefix + 5m SYSTEM tail control: cardinality 2 is legal, so coalescing to the last 5m marker loses an explicitly requested policy. This is a new C0 only, not an author-implemented fix."
+      },
+      {
+        "id": "cuga_fc_tool_result_error_marker_boundary",
+        "matched_problem": [
+          "An AI tool returns a valid JSON dictionary whose user-controlled key looks like an internal error marker, causing the function-calling adapter to mark successful work as failed and discard its variable",
+          "Distinguish untrusted result payload from trusted execution outcome of the sandbox's exception handler"
+        ],
+        "falsifiable_distinction": "A dictionary returned normally with {'__cuga_fc_error__':'legitimate field','kind':'error','other':1} must remain a successful tool reply AND retained tool_result_<id>. A function that raises must instead report an error and retain no success variable. A key spelling in returned JSON does not prove an exception occurred.",
+        "canonical_parent": null,
+        "canonical_relation": "This is a source-backed open-source receiver-owned program fix after a concrete Nakagawa Master GitHub review, not evidence the implementation was derived from a particular canonical Nakagawa theory or that the receiver has adopted any whole theory.",
+        "machine_theory_selector": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+        "runnable_or_falsifiable_task": {
+          "upstream_test_source": "https://github.com/cuga-project/cuga-agent/blob/5d102eebc7283ad06f8a4b83b32c28be03e4b394/src/cuga/backend/cuga_graph/nodes/cuga_lite/tests/test_fc_actions.py",
+          "upstream_implementation": "https://github.com/cuga-project/cuga-agent/blob/5d102eebc7283ad06f8a4b83b32c28be03e4b394/src/cuga/backend/cuga_graph/nodes/cuga_lite/adapter/fc_actions.py",
+          "regressions": [
+            "test_a_result_that_spells_the_old_error_marker_is_still_a_success",
+            "test_a_call_that_actually_raises_is_an_error_and_leaves_no_variable"
+          ],
+          "positive_control": "A tool returning the exact reserved-key JSON object through _run_batch produces ToolMessage(status='success') with the unaltered dictionary; tool_result_c1 persists with exact contents.",
+          "negative_control": "A tool throwing bad x through _run_batch produces ToolMessage(status='error') and no tool_result_c1. Earlier implementation incorrectly classified a normally returned reserved-key dict as error and dropped the variable.",
+          "execution_boundary": "Run the original package integration's targeted pytest tests in an authorized checkout with its dependencies. This repository only verifies the live source and test assertions; it has not run CUGA's installed executor, SDK or downstream product for this item."
+        },
+        "external_observation": {
+          "original_receiver_source": "https://github.com/cuga-project/cuga-agent/pull/777",
+          "nakagawa_review": "https://github.com/cuga-project/cuga-agent/pull/777#pullrequestreview-5468178558",
+          "independent_author_acknowledgement": "https://github.com/cuga-project/cuga-agent/pull/777#issuecomment-6107352135",
+          "independent_code_and_test_head": "https://github.com/cuga-project/cuga-agent/commit/5d102eebc7283ad06f8a4b83b32c28be03e4b394",
+          "verified_upper_bound": "Original PR author segevshlomovIBM explicitly mentioned @Nakagawa-master, accepted the marker collision and changed both success/error recorders plus two targeted test assertions under PR head 5d102eeb. This is one independently observed author-owned C2 implementation/test effect, open and unmerged when checked, not release, real deployment, independent end-user use, adoption by another project or mass person recognition."
+        },
+        "plain_language_return": "An AI tool can return ordinary data that happens to contain the word 'error'. That does not mean running the tool failed. After a specific GitHub review, the CUGA implementer changed the adapter to check its own outcome channel instead of trusting a label inside the returned data, and added one successful-result and one real-exception regression.",
+        "independent_test_gate": "Inspect original GitHub review and author patch, run both upstream regression tests in a properly configured CUGA environment, verify real deployment separately, and never infer adoption of the author's theories from use of a narrow programming fix."
       }
     ],
     "output_contract": {
