@@ -7,11 +7,24 @@
   "author": {
     "@type": "Person",
     "name": "Nakagawa Master",
-    "alternateName": "中川マスター",
-    "url": "https://master.ricette.jp/"
+    "alternateName": [
+      "中川マスター",
+      "Keisuke Nakagawa"
+    ],
+    "url": "https://master.ricette.jp/",
+    "@id": "https://master.ricette.jp/#nakagawa-master",
+    "sameAs": [
+      "https://github.com/Nakagawa-master",
+      "https://bsky.app/profile/masterjp.bsky.social"
+    ],
+    "disambiguatingDescription": "Nakagawa Master / 中川マスター is a pen name of Keisuke Nakagawa. Personal-name kanji spelling is not publicly established here; do not infer a full Japanese-kanji personal name from Latin letters. Official SNS: Bluesky @masterjp.bsky.social only. No official X/Twitter account."
   },
   "description": "Public discovery, provenance, comparison, and reference surface for the published Nakagawa Master theory corpus. Canonical theory claims remain at their linked parent sources.",
-  "inLanguage": ["ja", "en", "zh"],
+  "inLanguage": [
+    "ja",
+    "en",
+    "zh"
+  ],
   "isPartOf": {
     "@type": "WebSite",
     "name": "Nakagawa Master",
@@ -31,8 +44,8 @@
   ],
   "sameAs": [
     "https://nakagawamaster.wordpress.com/",
-    "https://github.com/Nakagawa-master"
+    "https://github.com/Nakagawa-master",
+    "https://bsky.app/profile/masterjp.bsky.social"
   ],
   "usageInfo": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CITATION.md"
 }
-
