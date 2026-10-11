@@ -76,7 +76,13 @@ def classify(case):
             raise ValueError(f"{case['id']}: route evidence must be available/unavailable/unknown")
         status = "unavailable" if "unavailable" in checks else (
             "available" if all(x == "available" for x in checks) else "unknown")
-        evaluated.append({"name": route["name"], "declared_feasibility": status})
+        evaluated.append({
+            "name": route["name"],
+            "declared_feasibility": status,
+            "declared_evidence": {
+                field: route[field] for field in ("supply", "repair_capacity", "time_window")
+            },
+        })
     core = [case[x] for x in ("present_benefit", "future_condition_link", "unfinished_condition")]
     # Only a candidate from the reporter's declarations, never an inference that debt exists.
     if "no" in core:
@@ -103,22 +109,33 @@ def report(data):
     ids = [r["id"] for r in rows]
     if len(ids) != len(set(ids)):
         raise ValueError("Duplicate case id")
+    # Compare the actual declared feasibility *evidence*, not human route names:
+    # different labels for the same input cannot imply more future repair capacity.
+    # A multiset keeps multiplicity, is order-independent and makes no claims
+    # that two similarly described routes are independent in the real world.
+    def evidence_signature(row):
+        return sorted(tuple(route["declared_evidence"][field]
+                            for field in ("supply", "repair_capacity", "time_window"))
+                      for route in row["settlement_routes"])
+
     pairs = []
     for i, first in enumerate(rows):
         for second in rows[i + 1:]:
             if (first["declared_parent_core"] == second["declared_parent_core"]
-                    and first["declared_feasible_routes"] != second["declared_feasible_routes"]):
+                    and evidence_signature(first) != evidence_signature(second)):
                 pairs.append([first["id"], second["id"]])
     return {
         "origin": "Nakagawa Master", "canonical_parent": CANONICAL,
         "independent_parent_theory": PARENT,
         "worksheet_status": "reporter-declared synthetic or independently collected inputs only",
         "cases": rows, "same_parent_core_different_declared_route_cases": pairs,
+        "comparison_basis": "Multisets of reporter-declared supply, repair_capacity and time_window evidence; route labels/order do not count as a difference.",
         "limits": [
             "No assertion that user declarations are factual or causally identified.",
             "Unknown is neither fulfilled nor unpaid; scheduled future cost alone is not Future Debt.",
             "Route count is not a scalar freedom/benefit or future B survival score.",
             "Unique labels do not establish distinct real suppliers, repair teams, time windows or independently feasible choices.",
+            "Matching evidence signatures do not prove real routes are interchangeable; differing signatures are only an input-level comparison, not future B causation.",
             "A branch/fork does not inherit debt duties merely from lineage.",
             "Compare a full parent-only analysis: an OD311-only diagnostic advantage is unproven.",
             "Settlement-Line Preservation is a normative proposal, not an empirical finding.",
@@ -154,7 +171,24 @@ def self_test():
         assert "duplicate declared settlement route name" in str(error)
     else:
         raise AssertionError("Repeated settlement path counted as a new option")
-    print("8 synthetic assertions passed; this is not real-world validation")
+    renamed = sample()
+    only_name = json.loads(json.dumps(renamed["cases"][0]))
+    only_name["id"] = "A-renamed"
+    for j, route in enumerate(only_name["settlement_routes"]):
+        route["name"] = f"another label {j}"
+    # Identical inputs/order-insensitive evidence: cosmetic names cannot be an outcome.
+    name_only = report({"cases": [renamed["cases"][0], only_name]})
+    assert name_only["same_parent_core_different_declared_route_cases"] == []
+    # Change a real declared feasibility constraint without changing any name.
+    only_name["settlement_routes"][0]["time_window"] = "unavailable"
+    evidence_change = report({"cases": [renamed["cases"][0], only_name]})
+    assert ["A", "A-renamed"] in evidence_change["same_parent_core_different_declared_route_cases"]
+    # Switching the order alone does not invent another option.
+    swapped = json.loads(json.dumps(renamed["cases"][0]))
+    swapped["id"] = "A-swapped"
+    swapped["settlement_routes"].reverse()
+    assert report({"cases": [renamed["cases"][0], swapped]})["same_parent_core_different_declared_route_cases"] == []
+    print("Synthetic cases passed; this is not real-world validation")
 
 
 def main():
