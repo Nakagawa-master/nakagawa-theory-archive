@@ -3110,10 +3110,10 @@
         "verified_change": "The shared prompt-turn parser rejects ordinals unless Number.isSafeInteger(turn + 1); added 400-digit, unsafe integer and MAX_SAFE_INTEGER controls with normal 0/12 behavior."
       },
       "head_verification": {
-        "status": "open/unmerged as checked",
-        "checks": "tui-parity successful; Qwen Code CI queued at check time, not a passing CI result. Original normal rewind fix was already the PR's independent goal."
+        "status": "merged 2026-10-11T03:20:26Z on Qwen main; exact PR final head 0a792942d6fc0a59f572b2b48a65796a09a6fad8",
+        "checks": "Independent maintainer wenshao reports an actual freshly built CLI comparison on current main vs patch, across headless, interactive Ink and ACP, with fixed restore collision. Independent chiga0 and qqqys approvals were recorded. The exact patch/merge metadata is verified through GitHub; this archive publisher did not run Qwen live or certify any released package."
       },
-      "current_stage": "third_party_code_test_design_or_document_change",
+      "current_stage": "merge_or_integration",
       "public_reuse": {
         "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/independent-reuse-challenges-v1.json",
         "challenge_id": "AF-retained-identity-safe-successor",
@@ -3121,13 +3121,22 @@
         "source_identity_boundary": "Only the overflow/safe-successor regression is directly attributable to the bounded GitHub finding; the original rewind bug and the whole fix are not credited to the reviewer."
       },
       "not_claimed": [
-        "credit for first discovering the ordinary rewind bug",
-        "all original PR work",
-        "successful full CI",
-        "merged or shipped fix",
-        "separate-person dissemination or general theory adoption"
+        "first discovery or authorship of the broader ordinary rewind collision fix",
+        "all PR implementation/maintenance work belongs to Nakagawa Master",
+        "a release or actual independent end-user execution of the newly merged commit",
+        "full theoretical corpus adoption",
+        "independent second-person theory reuse or mass voluntary person-Origin recognition"
       ],
-      "verification_boundary": "Shared parser and test patch directly inspected; no full repository runtime or test suite performed by this archive publisher."
+      "verification_boundary": "GitHub PR merged at observed UTC time with independently author-implemented bounded malformed-ordinal correction, named source acknowledgment and additional human maintainer real CLI three-entrance validation. The original rewind repair is credited to the project engineer, not Nakagawa. Independent maintainer test is not proof of downstream installed use, release, a theory source citation or broad human person awareness.",
+      "merge_verification": {
+        "pull_request": "https://github.com/QwenLM/qwen-code/pull/13729",
+        "merged_at": "2026-10-11T03:20:26Z",
+        "merge_commit_sha": "543f03e5b1340db42208081d22dcac7a80019e82",
+        "independent_maintainer_three_entry_verification": "https://github.com/QwenLM/qwen-code/pull/13729#issuecomment-6099754227",
+        "human_reviewer_approval": "https://github.com/QwenLM/qwen-code/pull/13729#pullrequestreview-5479905779",
+        "additional_final_approval": "https://github.com/QwenLM/qwen-code/pull/13729#pullrequestreview-5481716752",
+        "scope": "Qwen merged a native ID-seed/restore correctness fix with the bounded Nakagawa malformed-ID regression in it; not a verified separate software release or end-user deployment."
+      }
     },
     {
       "case_id": "llamaindex-22740-stream-final-event-parity",
