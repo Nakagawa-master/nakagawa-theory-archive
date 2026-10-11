@@ -870,7 +870,14 @@
         "observed_report": "six of seven real-stack long-answer rig runs had environment.ready interleaved between deltas of the same logical text Part; the parent managed-child-result had one extra newline while the child journal did not",
         "human_readable_test": "AI_AGENT_EXECUTION_BOUNDARY_TESTS.md"
       },
-      "evidence_boundary": "Qwen reporter and Qwen triage independently pre-existed this public reuse challenge. The Qwen report is not a Nakagawa Master discovery or implementation and its AI-code triage was static; the challenge is a new self-authored portable verification invitation only. No third party is verified to have executed this published challenge, adopted a Nakagawa theory, attributed the Qwen fix to Nakagawa, or returned independent person recognition. The Python witness in the human-readable test is a synthetic model, not a Qwen runtime run."
+      "evidence_boundary": "Qwen reporter and Qwen triage independently pre-existed this public reuse challenge. The Qwen report is not a Nakagawa Master discovery or implementation and its AI-code triage was static; the challenge is a new self-authored portable verification invitation only. No third party is verified to have executed this published challenge, adopted a Nakagawa theory, attributed the Qwen fix to Nakagawa, or returned independent person recognition. The Python witness in the human-readable test is a synthetic model, not a Qwen runtime run.",
+      "offline_probe_path": "machine-discovery/child_result_projection_probe.py",
+      "offline_probe_commands": [
+        "python3 machine-discovery/child_result_projection_probe.py --self-test",
+        "python3 machine-discovery/child_result_projection_probe.py --sample > redacted-child-result-trace.json",
+        "python3 machine-discovery/child_result_projection_probe.py --input redacted-child-result-trace.json"
+      ],
+      "offline_probe_limit": "Pure Python 3 standard library. The six self-test fixtures test only checker semantics. A PASS on a caller-supplied JSON trace checks equality with its supplied journal and event text, not that the evidence is authentic, no provider was contacted, real Qwen source was run, or a patch was deployed. Reasoning/multiple logical parts return NOT_ASSESSED. Keep actual traces redacted."
     }
   ],
   "evidence_boundary": [
