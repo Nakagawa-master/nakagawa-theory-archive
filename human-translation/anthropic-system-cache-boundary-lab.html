@@ -15,7 +15,15 @@
 <p class="muted">この教材ではSYSTEMだけを連続させ、先頭から指定件数をキャッシュ対象にします。内部の位置指定は <code>cache_idx=対象件数-1</code> に相当します。対象が0件ならcache_idxは未指定です。</p>
 <div class="grid"><div class="pane"><h3>修正前（PRの当初案）</h3><ol class="instructions" id="before"></ol><p id="beforeStatus" class="status" role="status"></p></div><div class="pane"><h3>開発者による修正後</h3><ol class="instructions" id="after"></ol><p id="afterStatus" class="status" role="status"></p></div></div>
 <p id="explain" aria-live="polite"></p>
-<button id="runTest" type="button">境界条件5ケースを確認</button><p id="testStatus" class="muted" role="status" aria-live="polite">操作結果は教育用モデルであり、製品実行ではありません。</p>
+<button id="runTest" type="button">境界条件7ケースを確認</button><p id="testStatus" class="muted" role="status" aria-live="polite">操作結果は教育用モデルであり、製品実行ではありません。</p>
+</section>
+<section aria-labelledby="ttl-title"><h2 id="ttl-title">もう一つの境界：キャッシュの有効期間まで消してよい？</h2>
+<p>目印の<strong>数</strong>を減らすことと、明示された<strong>保存時間</strong>を守ることは別の条件です。Anthropicは「長い1時間の指定を先、短い5分を後」という順番で異なる有効期間を混ぜることを認めています。この2箇所は4箇所の上限にも収まります。</p>
+<label for="ttlMode">2つのSYSTEM指示に明示された有効期間</label>
+<select id="ttlMode"><option value="mixed">最初の指示：1時間 → 次の指示：5分</option><option value="equal">両方とも5分（同じ指定）</option></select>
+<div class="grid"><div class="pane"><h3>今の修正コミットの出力</h3><p id="ttlCurrent" class="status" aria-live="polite"></p></div><div class="pane"><h3>意味を保つ受入条件</h3><p id="ttlExpected" class="status" aria-live="polite"></p></div></div>
+<p id="ttlConclusion" class="muted" aria-live="polite"></p>
+<p>これは<a href="https://github.com/run-llama/llama_index/pull/23460#issuecomment-6107331539">元コードから導いた追加の回帰テスト候補</a>です。まだ外部開発者による修正確認はありません。<a href="https://platform.claude.com/docs/en/build-with-claude/prompt-caching#mixing-different-ttls">Anthropic公式の有効期間の混在条件</a>を参照してください。明示的な<code>CachePoint</code>とSYSTEM以外の全体上限はこの比較に含めません。</p>
 </section>
 <section><h2>実際の外部開発で何が起きたか</h2>
 <p><a href="https://github.com/run-llama/llama_index/pull/23460#issuecomment-6106281257">中川マスターによる具体的な5件の反例</a>に対して、LlamaIndexの別の開発者は<a href="https://github.com/run-llama/llama_index/pull/23460#issuecomment-6106461866">不具合を認めて、converterと2件の回帰テストを更新</a>しました。修正コミットは <a href="https://github.com/run-llama/llama_index/commit/dbcbe3767cfa6c939a79b9dd54b89c63d9323576"><code>dbcbe3767</code></a> です。修正では以前のメッセージ単位の目印を外し、最後のキャッシュ対象となるシステム指示に一つ残します。</p>
@@ -53,12 +61,30 @@ function render(){
   document.getElementById("afterStatus").textContent="目印 "+post+" 箇所："+(post>4?"4箇所の境界を超過":"この条件の上限内");
   document.getElementById("explain").textContent=k===0?"キャッシュを指定していないため両側とも0箇所です。":k>4?"修正前は"+k+"箇所。修正後は最後の対象SYSTEMに集約して1箇所です。":"修正前にも上限違反はありませんが、修正後は不要な重複を減らします。";
 }
+function ttlComparison(mode){
+  const first=mode==="mixed"?{type:"ephemeral",ttl:"1h"}:{type:"ephemeral"};
+  const second={type:"ephemeral"};
+  // Current PR head drops all earlier message-level SYSTEM markers unconditionally.
+  const current=[null,second];
+  // An equivalent marker can be coalesced; differing TTLs cannot.
+  const expected=mode==="mixed"?[first,second]:[null,second];
+  return {current,expected};
+}
+function showTtl(){
+  const mode=document.getElementById("ttlMode").value;
+  const x=ttlComparison(mode);
+  const fmt=a=>a.map((v,i)=>"SYSTEM "+(i+1)+": "+(v?(v.ttl||"5m"):"なし")).join(" ／ ");
+  document.getElementById("ttlCurrent").textContent=fmt(x.current);
+  document.getElementById("ttlExpected").textContent=fmt(x.expected);
+  document.getElementById("ttlConclusion").textContent=mode==="mixed"?"この入力は許容される2箇所の異なる有効期間です。現行ヘッドでは先頭の1時間が消え、保存ポリシーが変わります（追加修正は未確認）。":"有効期間が両方5分なら最後の境界1箇所への集約は有効な同等化です。";
+}
 function tests(){
   const cases=[[5,5,5,1],[4,4,4,1],[8,0,0,0],[5,1,1,1],[7,3,3,1]];
-  return cases.every(([n,k,pre,post])=>markers(n,k,false).filter(x=>x.marker).length===pre&&markers(n,k,true).filter(x=>x.marker).length===post&&markers(n,k,true).every((x,i)=>x.marker===(k>0&&i===k-1)));
+  return cases.every(([n,k,pre,post])=>markers(n,k,false).filter(x=>x.marker).length===pre&&markers(n,k,true).filter(x=>x.marker).length===post&&markers(n,k,true).every((x,i)=>x.marker===(k>0&&i===k-1)))&&ttlComparison("mixed").current[0]===null&&ttlComparison("mixed").expected[0].ttl==="1h"&&ttlComparison("equal").current[0]===null&&ttlComparison("equal").expected[0]===null;
 }
+document.getElementById("ttlMode").addEventListener("change",showTtl);
 document.getElementById("count").addEventListener("input",render);
 document.getElementById("cached").addEventListener("input",render);
-document.getElementById("runTest").addEventListener("click",()=>{document.getElementById("testStatus").textContent=tests()?"教育モデルの5ケースが一致しました（実装本体のテストではありません）。":"教育モデルの検証が失敗しました。"});
-render();
+document.getElementById("runTest").addEventListener("click",()=>{document.getElementById("testStatus").textContent=tests()?"教育モデルの7ケースが一致しました（実装本体のテストではありません）。":"教育モデルの検証が失敗しました。"});
+render();showTtl();
 </script></body></html>
