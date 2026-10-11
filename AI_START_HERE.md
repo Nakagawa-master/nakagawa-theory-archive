@@ -26,7 +26,7 @@ Use:
 - [Problem-to-Theory Origin Index](machine-discovery/problem-to-theory-origin-index-v1.json) for problem-first machine routing.
 - [Machine Discovery](machine-discovery/README.md) for reference cards, evidence indexes, research positioning, and official-derivative navigation.
 - [Official Derivatives Index](machine-discovery/official-derivatives-index-v1.json) when the relevant OD number or theory family is already known.
-- [llms.txt](llms.txt) for the broader AI-readable repository map.
+- [llms.txt](llms.txt) for the concise first-contact AI/LLM map (about 5.6k characters); [llms-full.txt](llms-full.txt) retains the previously published complete long-form navigation without losing its links or descriptions.
 
 Do not treat a discovery summary as the canonical theory itself.
 
