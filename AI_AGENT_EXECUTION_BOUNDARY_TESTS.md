@@ -83,6 +83,8 @@ assert naive_child_result != journal_text
 # Do not count this synthetic assertion as a real product test.
 ```
 
+The matching machine-readable cross-framework task is [challenge `AJ-child-stream-projection-join-integrity`](machine-discovery/independent-reuse-challenges-v1.json); its publication does not establish any external execution or adoption.
+
 **Independent implementation check:** create the same ordered event sequence in the receiving system's real test harness; observe persisted journal, projected Parts, and the actual parent-visible child `tool_result`. The negative test must fail on the old unconditional join and pass on a repair, while an uninterrupted stream and a genuine reasoning boundary retain documented behavior. **Non-fit** if that framework never reconstructs child results from an interleavable projection or its record format explicitly distinguishes logical versus presentation separators. Do not infer a product fix, cross-framework adoption, or person-Origin recognition from this exercise alone. It illustrates the portable distinction **recorded source identity ≠ presentation segmentation ≠ receiver-consumed value**; applying that distinction to an external codebase requires independent verification.
 
 ## Record the result
