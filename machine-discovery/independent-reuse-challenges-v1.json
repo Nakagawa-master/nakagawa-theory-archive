@@ -878,6 +878,33 @@
         "python3 machine-discovery/child_result_projection_probe.py --input redacted-child-result-trace.json"
       ],
       "offline_probe_limit": "Pure Python 3 standard library. The six self-test fixtures test only checker semantics. A PASS on a caller-supplied JSON trace checks equality with its supplied journal and event text, not that the evidence is authentic, no provider was contacted, real Qwen source was run, or a patch was deployed. Reasoning/multiple logical parts return NOT_ASSESSED. Keep actual traces redacted."
+    },
+    {
+      "id": "AK-codeact-stream-handoff-text-and-tool-lineage",
+      "distinction": "A streamed agent handoff has at least two separately relevant requirements: the assistant text assembled from all deltas must be retained, and the provider's original tool-call declaration/ID must remain paired with the downstream tool result. Repairing either one alone is insufficient. Separate recorded provider message, accumulated stream text, memory, and receiving-agent observation.",
+      "test": "Using a locally owned, isolated LlamaIndex AgentWorkflow or an equivalent framework, create a CodeActAgent that emits two assistant text deltas ('before ' and 'handoff') followed by a handoff tool call 'handoff-1' to a FunctionAgent. Run the same fixture with (A) the final ChatResponse.message containing only 'handoff' plus tool-call metadata and (B) a complete final response containing 'before handoff'. Record the assistant message stored in memory, the receiving agent's actual observation, tool-call ID and tool result. Repeat with an additional non-text ThinkingBlock and with tool metadata represented both by ToolCallBlock and additional_kwargs['tool_calls']; preserve the original provider ChatResponse unmodified. As a negative control, run an ordinary split-chunk code-execution step without any handoff. Compare against the base/head versions of PR #23439 if permitted, and report exact versions; do not use confidential tasks or real users.",
+      "positive_evidence": [
+        "Case A: receiving agent and scratchpad retain exact assistant text 'before handoff', not just the final 'handoff'; original handoff-1 call is paired with the tool response.",
+        "Case B: a complete final message stays unchanged rather than duplicating text from deltas.",
+        "Both ToolCallBlock and additional_kwargs forms retain original call identifiers and relevant non-text blocks, including the thinking block if present under the framework's actual schema.",
+        "The original model-returned final-chunk message remains unchanged; the agent may copy/reconcile its own persisted representation.",
+        "The non-handoff execution control retains complete assembled text without inventing a handoff."
+      ],
+      "useful_negative_evidence": [
+        "Scratchpad and receiver have matching tool IDs but lose 'before ' from assistant text: a false 'handoff fixed' result.",
+        "Complete text is preserved but provider's handoff declaration or tool-call ID is recreated or lost: breaks downstream tool-result pairing.",
+        "A repair duplicates a full final response by prepending deltas again, or mutates the original provider response's blocks in place.",
+        "A framework has no streamed provider message splitting or no handoff tool calls, or explicitly reconstructs the entire source message before this layer: identify and document a non-fit instead of declaring a bug.",
+        "Only a synthetic local fixture runs: report a bounded source/contract finding, not live-provider or product-user adoption."
+      ],
+      "source_provenance": {
+        "nakagawa_review": "https://github.com/run-llama/llama_index/pull/23439#pullrequestreview-5479964021",
+        "receiver_named_reproduction_and_ack": "https://github.com/run-llama/llama_index/pull/23439#issuecomment-6100145500",
+        "receiver_implementation": "https://github.com/dakjdakd/llama_index/commit/b3b87241fdb1ef7f12d98cfd844c94ea58cfe611",
+        "receiver_pr": "https://github.com/run-llama/llama_index/pull/23439",
+        "machine_case_id": "llamaindex-23439-codeact-streaming-handoff-full-text-and-tool-lineage"
+      },
+      "evidence_boundary": "The independent PR author explicitly acknowledged and fixed the specific Nakagawa source-level streaming inverse; this challenge is an additional Nakagawa-authored publicly reusable falsification protocol. It has not been independently executed or adopted from this JSON. The original handoff fix and PR were authored independently, PR is open/unmerged as last checked, no live-provider use, different recipient or broader human recognition is established. Do not infer adoption of any entire theory system."
     }
   ],
   "evidence_boundary": [
