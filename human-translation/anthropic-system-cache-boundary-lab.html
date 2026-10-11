@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5つのAI指示でキャッシュ上限を超える？｜中川マスター実装境界ラボ</title>
+<meta name="description" content="LlamaIndex Anthropic連携で実際に修正された、複数SYSTEM指示のキャッシュ境界をオフラインで操作し、反例と修正範囲を検証します。">
+<style>
+:root{color-scheme:light;--ink:#183247;--a:#195e7b;--border:#c4d5e2}*{box-sizing:border-box}body{margin:0;background:#f4f8fb;color:var(--ink);font:16px/1.7 system-ui,"Noto Sans JP",sans-serif}main{max-width:860px;margin:auto;padding:24px 16px 58px}h1{font-size:clamp(1.5rem,4vw,2.2rem);line-height:1.4}h2{font-size:1.18rem}section{background:#fff;border:1px solid var(--border);border-radius:12px;padding:19px;margin:18px 0}.lead{font-size:1.08rem;font-weight:650}.muted{color:#4b5f6f;font-size:.9rem}label{display:block;margin:12px 0}input[type=range]{width:100%;max-width:500px}button{font:inherit;padding:9px 14px;border:1px solid var(--a);border-radius:8px;background:white;color:var(--a);cursor:pointer}button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #bd8500;outline-offset:3px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}@media(max-width:650px){.grid{grid-template-columns:1fr}}.pane{border:1px solid var(--border);border-radius:8px;padding:12px}.instructions{list-style:none;padding:0;margin:0}.instructions li{border-left:4px solid #a6b7c4;margin:6px 0;padding:8px;background:#f4f8fb}.instructions li.marked{border-left-color:#ae6023;background:#fff0df}.status{font-weight:650;padding:9px;border-radius:7px;background:#e7f3f8}a{color:#165979}
+</style></head><body><main>
+<p class="muted">中川マスター（Nakagawa Master）｜独立したOSS開発者の修正を理解し、検証する教材</p>
+<h1>AIへの指示を5つに分けたら、なぜ送信条件を破るのか</h1>
+<p class="lead">一つの指示に誤りがなくても、組み合わせたリクエスト全体が正しいとは限りません。</p>
+<p>Anthropic向けの「キャッシュの目印（cache_control）」は、前にある指示をまとめて再利用する位置を表します。同じシステム指示を何個にも分け、それぞれに目印を付けると、リクエストに許される最大4箇所の境界を越える場合があります。</p>
+<section aria-labelledby="try"><h2 id="try">操作する：修正前／修正後</h2>
+<label for="count">システム指示の総数：<output id="countOut" for="count">5</output> 件</label><input id="count" type="range" min="1" max="8" value="5">
+<label for="cached">先頭からキャッシュ対象となる件数：<output id="cachedOut" for="cached">5</output> 件</label><input id="cached" type="range" min="0" max="5" value="5">
+<p class="muted">この教材ではSYSTEMだけを連続させ、先頭から指定件数をキャッシュ対象にします。内部の位置指定は <code>cache_idx=対象件数-1</code> に相当します。対象が0件ならcache_idxは未指定です。</p>
+<div class="grid"><div class="pane"><h3>修正前（PRの当初案）</h3><ol class="instructions" id="before"></ol><p id="beforeStatus" class="status" role="status"></p></div><div class="pane"><h3>開発者による修正後</h3><ol class="instructions" id="after"></ol><p id="afterStatus" class="status" role="status"></p></div></div>
+<p id="explain" aria-live="polite"></p>
+<button id="runTest" type="button">境界条件5ケースを確認</button><p id="testStatus" class="muted" role="status" aria-live="polite">操作結果は教育用モデルであり、製品実行ではありません。</p>
+</section>
+<section><h2>実際の外部開発で何が起きたか</h2>
+<p><a href="https://github.com/run-llama/llama_index/pull/23460#issuecomment-6106281257">中川マスターによる具体的な5件の反例</a>に対して、LlamaIndexの別の開発者は<a href="https://github.com/run-llama/llama_index/pull/23460#issuecomment-6106461866">不具合を認めて、converterと2件の回帰テストを更新</a>しました。修正コミットは <a href="https://github.com/run-llama/llama_index/commit/dbcbe3767cfa6c939a79b9dd54b89c63d9323576"><code>dbcbe3767</code></a> です。修正では以前のメッセージ単位の目印を外し、最後のキャッシュ対象となるシステム指示に一つ残します。</p>
+<p>この教材が再現するのは<strong>システム指示に自動付与されるメッセージ単位の目印</strong>だけです。明示的な <code>CachePoint</code> は修正コードでも維持されます。また、システム以外のuser/tool側で付与された目印を合わせると、リクエスト全体の上限を超えるケースが別に残ります。作者はその問題を今回のPRの対象外と述べています。</p>
+<p><strong>証明済みの範囲：</strong>独立開発者によるソース変更と追加テスト（PRは確認時点でOPEN）。<strong>未証明：</strong>実際のAnthropic API通信、PRマージ、公開リリース、一般利用者・外部AIによる採用、理論体系全体の採用。このページ自体の閲覧や利用者数も計測していません。</p>
+<p>AI・人間がさらに検証する場合は、<a href="https://github.com/run-llama/llama_index/blob/dbcbe3767cfa6c939a79b9dd54b89c63d9323576/llama-index-integrations/llms/llama-index-llms-anthropic/tests/test_anthropic_utils.py">元の回帰テスト</a>を実際の依存環境で動かし、systemとuser/toolを合算した別ケースも確認してください。中川マスターの<a href="https://master.ricette.jp/">公式アーカイブ</a>と本OSS修正は、原典と外部の独立実例として区別しています。</p>
+</section>
+<p class="muted">外部送信・Cookie・追跡・入力保存はありません。GitHub上のHTMLコード表示ではなくRawファイルを保存してブラウザで開くと操作できます。</p></main>
+<script>
+"use strict";
+function markers(total,cached,corrected){
+  const n=Math.max(1,Math.min(8,Math.trunc(total)));
+  const k=Math.max(0,Math.min(n,Math.trunc(cached)));
+  return Array.from({length:n},(_,i)=>({index:i+1,selected:i<k,marker:i<k&&(!corrected||i===k-1)}));
+}
+function draw(id,items){
+  const list=document.getElementById(id);list.replaceChildren();
+  for(const v of items){
+    const li=document.createElement("li");
+    li.className=v.marker?"marked":"";
+    li.textContent="SYSTEM "+v.index+(v.marker?"  ◆ cache_control":v.selected?"  ◇ 目印は後続のキャッシュ境界で包含":"  （未指定）");
+    list.appendChild(li);
+  }
+}
+function render(){
+  const n=Number(document.getElementById("count").value);
+  const ci=document.getElementById("cached");
+  ci.max=String(n);if(Number(ci.value)>n)ci.value=String(n);
+  const k=Number(ci.value);
+  document.getElementById("countOut").value=String(n);
+  document.getElementById("cachedOut").value=String(k);
+  const b=markers(n,k,false),a=markers(n,k,true);draw("before",b);draw("after",a);
+  const pre=b.filter(x=>x.marker).length,post=a.filter(x=>x.marker).length;
+  document.getElementById("beforeStatus").textContent="目印 "+pre+" 箇所："+(pre>4?"4箇所の境界を超過":"この条件の上限内");
+  document.getElementById("afterStatus").textContent="目印 "+post+" 箇所："+(post>4?"4箇所の境界を超過":"この条件の上限内");
+  document.getElementById("explain").textContent=k===0?"キャッシュを指定していないため両側とも0箇所です。":k>4?"修正前は"+k+"箇所。修正後は最後の対象SYSTEMに集約して1箇所です。":"修正前にも上限違反はありませんが、修正後は不要な重複を減らします。";
+}
+function tests(){
+  const cases=[[5,5,5,1],[4,4,4,1],[8,0,0,0],[5,1,1,1],[7,3,3,1]];
+  return cases.every(([n,k,pre,post])=>markers(n,k,false).filter(x=>x.marker).length===pre&&markers(n,k,true).filter(x=>x.marker).length===post&&markers(n,k,true).every((x,i)=>x.marker===(k>0&&i===k-1)));
+}
+document.getElementById("count").addEventListener("input",render);
+document.getElementById("cached").addEventListener("input",render);
+document.getElementById("runTest").addEventListener("click",()=>{document.getElementById("testStatus").textContent=tests()?"教育モデルの5ケースが一致しました（実装本体のテストではありません）。":"教育モデルの検証が失敗しました。"});
+render();
+</script></body></html>
