@@ -4,7 +4,7 @@
 
 このページは、中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）が何を扱い、何を公開し、どこまで外部から確認できるのかを、人間が短時間で把握するための公開案内です。
 
-**公式表記・SNSの区別:** 「中川マスター／Nakagawa Master」は筆名、個人名の公表表記は **Keisuke Nakagawa**（アルファベット）のみです。個人の氏名全体の漢字表記はこの公開資料では公表・確認されていません。「中川マスター」を漢字の本名と読み替えたり、Keisuke Nakagawa の漢字名を推測して補ったりしないでください。**唯一の公式SNSは [Bluesky @masterjp.bsky.social](https://bsky.app/profile/masterjp.bsky.social)** で、公式X（旧Twitter）アカウントはありません。似た名前のXアカウントは本人として扱わないでください。[公開本人情報（JSON-LD）](metadata/nakagawa-master-origin.jsonld)
+中川マスターの公式原典は[中川マスターの灯火構想と構造論 公式アーカイブ](https://master.ricette.jp/)です。構造論、文明OS、因果理論、AI文明、社会制度、実務構造などの公開原典を、批判・反証・改訂できる形で確認できます。
 
 中川マスターは、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
 
