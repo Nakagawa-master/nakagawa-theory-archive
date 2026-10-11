@@ -71,6 +71,8 @@
 
 [公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md)には現在46の番号付き事例セクションがあります。第三者からの返答、コード・テスト・運用規則の変更、PRの統合、リリース、実際の運用について、公開証拠で確認できる段階と未確認の範囲を分けて記録しています。46件すべてが採用・リリース・運用まで進んだという意味ではありません。各事例のリンクから、何が変わり、どこまで確認できるかを確かめられます。
 
+別途、[AI・プログラム向けの機械可読な証拠索引](machine-discovery/external-effect-evidence-index-v1.json)には現在51レコードあります。これは46件の番号付き本文と掲載範囲・分類が異なるため、合計97件の独立成果という意味ではなく、51件すべてが第三者に採用されたという意味でもありません。新しい独立実装や受け手からの応答の一部は、機械可読な索引へ先に反映されています。詳細な人間向け事例の追加時には、元の証拠、各言語の本文、READMEの表示件数を揃えます。
+
 **最短で5件だけ検証する場合:**
 - [Local Operator #1324](https://github.com/damianvtran/local-operator/pull/1324) → independent reproduction / implementation / remediation / merge → [v0.61.11 release](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11)
 - [AI-News #124](https://github.com/022740mix-spec/AI-News/issues/124) → receiverが明示採用 → [merged PR #131](https://github.com/022740mix-spec/AI-News/pull/131) で継続編集ルールへ実装
