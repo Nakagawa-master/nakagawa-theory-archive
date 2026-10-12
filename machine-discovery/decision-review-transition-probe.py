@@ -34,8 +34,14 @@ def check(data):
         errors.append("stage_not_limited_to_non_enforcing_test")
     if data.get("uses_real_person_data") is not False:
         errors.append("must_explicitly_exclude_real_person_data")
-    if data.get("decision_reason") == data.get("evidence_refs"):
-        errors.append("reason_not_independent_of_evidence")
+    # The explanation must not merely repeat a cited evidence identifier.
+    # This is only a syntactic negative check, not a proof of independent reasons.
+    reason = data.get("decision_reason")
+    refs = data.get("evidence_refs")
+    if isinstance(reason, str) and isinstance(refs, list) and any(
+        isinstance(ref, str) and reason.strip() == ref.strip() for ref in refs
+    ):
+        errors.append("reason_repeats_evidence_reference")
     return errors
 
 
@@ -72,12 +78,13 @@ def self_test():
         ("ranking", {**good, "personality_ranking": True}, False),
         ("real person data", {**good, "uses_real_person_data": True}, False),
         ("empty evidence", {**good, "evidence_refs": []}, False),
+        ("reason repeats evidence ID", {**good, "decision_reason": "synthetic-policy-rule-v1"}, False),
         ("active rollout", {**good, "stage": "active"}, False),
     ]
     for name, value, expected in cases:
         if (not check(value)) != expected:
             raise AssertionError(name)
-    print("self-test: PASS (11 declared-fixture cases; not external system validation)")
+    print("self-test: PASS (12 declared-fixture cases; not external system validation)")
 
 
 def main():
