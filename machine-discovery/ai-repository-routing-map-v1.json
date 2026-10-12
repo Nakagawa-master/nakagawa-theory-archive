@@ -188,6 +188,16 @@
       ],
       "canonical_source": false,
       "receiver_verified_case": true
+    },
+    {
+      "id": "agent_team_approval_listener_and_per_request_identity",
+      "when": [
+        "Qwen ACP agent team tool permission prompted twice when same manager is notified twice",
+        "AI teammate approvals distinguished only by agent name and millisecond timestamp",
+        "fake event emitter uses Set and masks duplicate listener registrations"
+      ],
+      "canonical_source": false,
+      "receiver_verified_case": true
     }
   ],
   "task_first_selection": {
@@ -655,6 +665,39 @@
         },
         "plain_language_return": "Even if an AI can undo a change from 'ask a human' to 'run automatically', it may already have done new things before undoing it. Nakagawa Master made that distinction concrete in another author's agent-design manuscript; the author then wrote and merged a new sixth condition, and reused the condition in a second document. That is documented human editorial adoption, not proof that all AI products or readers are safe.",
         "independent_test_gate": "Do not infer another human reader, independent AI model use, product rollout, broader audience recognition or 2026 first-goal attainment from author-owned discovery text. Count a distinct receiver only from independently source-native new use or person-origin re-entry, never the number of routes."
+      },
+      {
+        "id": "agent_team_approval_listener_and_per_request_identity",
+        "matched_problem": [
+          "In an ACP-hosted multi-agent session, re-notifying the same TeamManager can inadvertently bind the same five event listeners twice and show two permission dialogs for one tool request.",
+          "A test double that deduplicates listeners with Set can give a green regression even when production Node EventEmitter allows duplicate registrations.",
+          "Distinct approvals from one teammate can compose the same display toolCallId if both were created in the same wall-clock millisecond; this second concern remains an open, unaccepted source-level challenge."
+        ],
+        "falsifiable_distinction": "Differentiate (a) same-manager re-notification idempotence, which is now implemented/tested by the receiver; (b) duplicate-preserving EventEmitter test semantics, without which the regression is unfalsifiable; and (c) identity of each individual tool-approval request, which cannot be guaranteed solely by agent name and millisecond clock. Observer/display identity is not evidence of a unique authorization subject.",
+        "canonical_parent": null,
+        "canonical_relation": "Specific external reviewer-origin engineering guidance, independently implemented by the Qwen receiving author, not a claim that Qwen adopted a named Nakagawa canonical theory. For theory-level study select an appropriate verified original independently, rather than fabricating a derivation.",
+        "machine_theory_selector": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+        "runnable_or_falsifiable_task": {
+          "upstream_test_source": "https://github.com/QwenLM/qwen-code/blob/42c5bfc7449297c81ccba653363e235b7016ecdd/packages/cli/src/acp-integration/session/team-sink.test.ts",
+          "upstream_production_source": "https://github.com/QwenLM/qwen-code/blob/42c5bfc7449297c81ccba653363e235b7016ecdd/packages/cli/src/acp-integration/session/team-sink.ts",
+          "upstream_producer_source": "https://github.com/QwenLM/qwen-code/blob/42c5bfc7449297c81ccba653363e235b7016ecdd/packages/core/src/agents/team/TeamManager.ts",
+          "positive_control": "Register one approval/roster/activity listener per event with a manager; notifying that same object again must keep all listener counts at one; detach must return them to zero. A single received approval must call requestPermission once.",
+          "negative_control": "A fake emitter must permit adding the SAME function reference twice (Node EventEmitter behavior). Delete the same-manager identity guard in a local authorized checkout: the test must fail, not stay green due to Set deduplication. If the test stays green, the harness is invalid even if production happens to be guarded.",
+          "separate_unaccepted_inverse": "With two same-teammate approval events bearing identical timestamp but distinct tool inputs and respond callbacks, the source ID expression `teammate-${event.teammateName}-${event.timestamp}` collides. Independently test distinct IDs and response correlation. There is no verified client misauthorization or receiver fix yet.",
+          "nonfit": "If the agent system has no event-emitter subscription or external approval-permission channel, this reproduction is not evidence the same defect applies.",
+          "execution_boundary": "Run the original Qwen test file under the correct dependencies in an authorized source checkout, and rederive current status from current head. This archive has only compared exact public code/test commits; receiver reported 11/11 tests and a mutant test, which were not independently rerun by the archive."
+        },
+        "external_observation": {
+          "receiver_pr": "https://github.com/QwenLM/qwen-code/pull/13902",
+          "nakagawa_original_review": "https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6110579188",
+          "receiver_guard_commit": "https://github.com/QwenLM/qwen-code/commit/b1eeae5547283d6b518a72b169b33d1fe6cd1b48",
+          "receiver_falsifiable_test_commit": "https://github.com/QwenLM/qwen-code/commit/42c5bfc7449297c81ccba653363e235b7016ecdd",
+          "receiver_explicit_acknowledgement": "https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6122203679",
+          "unaccepted_follow_on": "https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6122690398",
+          "verified_upper_bound": "One receiving author yiliang114 changed code and the test fixture in response to original Nakagawa Master review. That is C2 source/test adoption, not two independent implementers. PR remained open at checked head 42c5bfc744; no upstream merge, stable runtime release, independent client adoption or widespread person recognition is verified. Follow-on ID collision is C0 only."
+        },
+        "plain_language_return": "A team of AI tools can ask a human for permission. If the same notification listener is registered twice, the user may be asked twice for one action. Nakagawa Master pointed out the exact duplicate-subscription path in Qwen Code; the receiving developer fixed it and then fixed a flawed test that had hidden this type of regression. A distinct possible approval-ID collision still needs receiver verification.",
+        "independent_test_gate": "Check both actual receiver commits, deliberately remove the guard under local permission and require the test to fail, separately test two approvals with the same timestamp but different commands, and verify actual merge/release/user use later. Do not infer that this public route was used by another AI or that a whole theory was adopted."
       }
     ],
     "output_contract": {
