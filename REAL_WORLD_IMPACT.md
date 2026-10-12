@@ -541,6 +541,8 @@ receiverはこの指摘を独立した設計軸として再説明し、専用PR 
 - [PR #71｜後続の体系再編](https://github.com/kishibashi3/publications/pull/71)
 - [PR #71 current headのPrinciples](https://github.com/kishibashi3/publications/blob/e06e74828f656796ec38f455efea24d49fcda83f/drafts/agentic-agile/principles.md)
 
+**新しい独立の受け手変更（2026-10-12）:** 中川マスターが[issue #9で、Local Operator #1310の後続修正・#1324のmerge・v0.61.11 releaseを一次資料と分けて伝えた](https://github.com/kishibashi3/publications/issues/9#issuecomment-6108474377)後、同じ著者 `kishibashi3` は[自分で再確認して章の追記を決定](https://github.com/kishibashi3/publications/issues/9#issuecomment-6123421765)。実際に[新PR #103](https://github.com/kishibashi3/publications/pull/103) を起こし、第5章「条件6」に「執筆時点の未解決」と「その後の別開発者による修正・release」を別時点として併記する[文書差分](https://github.com/kishibashi3/publications/blob/61b929040334b6391bc1ad2b4b34dcabd294faaa/docs/ai/agent-design/chapter-05.ja.md)を追加しました。原稿内の `@Nakagawa-master` 起点を保持しています。**PR #103 はOPEN・未統合**で、この受け手は従来の#57/#58と同じ著者です。新しい別人の採用・別媒体への公開反応として水増ししません。著者は自分たちの運用規約にも先の三原則が入っていると説明していますが、当該規約本文を別途照合するまでは著者による報告として扱います。
+
 **公開記録から確認できること:** origin-preserved review → third-party restatement → 専用reader-facing本文実装 → merge / Pages反映 → 同じreceiver内の別文書で整合条件として再利用 → merge → 後続の体系再編headでも同じD8を維持。  
 **まだ確認できないこと:** PR #71のmerge、#58/#71を別のpublic-site publicationとして数えること、別receiverによる独立carry、大規模読者反応、広範な人間認知、理論体系全体への支持。
 
