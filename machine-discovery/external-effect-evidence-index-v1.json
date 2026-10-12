@@ -2891,30 +2891,46 @@
         "url": "https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035698005",
         "summary": "Adapted the gate to the current repository state: Hosted can be tested for its supported scope while ordinary/local Managed independence remains deferred until M6 activation rather than being prematurely marked PASS."
       },
-      "current_stage": "receiver_owned_design_acknowledgment_and_issue_body_proposed_gate_unadopted_unrun",
-      "causal_boundary": "Receiver project triage explicitly named Nakagawa Master; developer wenshao then expressly addressed the Nakagawa review, agreed with the axis and documented the staged path-independence gate as a proposed, still-open issue decision. Actual runtime independence testing and proposal-owner final acceptance are unverified.",
+      "current_stage": "independent_proposal_owner_adopted_release_acceptance_requirements_not_runtime_tested",
+      "causal_boundary": "The origin reviewer supplied the independent-operability versus no-fallback distinction and staged test, receiver developer wenshao explicitly acknowledged and added it as a proposed gate, and independent proposal owner doudouOUC adopted it into the product Acceptance criteria and Decision 4 on 2026-10-12. One bounded externally owned design/decision change; no runtime acceptance, independent product use or entire Nakagawa corpus theory adoption was verified.",
       "nakagawa_structural_os_mapping": {
         "applied_distinction": "configured alternatives != viable independent alternatives; no fallback != path independence; intentional shared gates must be explicit",
         "public_reuse_kit": "ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md",
         "machine_challenge": "L-access-topology-effective-exit"
       },
       "not_claimed": [
-        "human maintainer approval",
         "implementation of the A/B matrix",
         "passing local Managed independence",
         "passing Hosted independence",
         "merge or release caused by this gate",
         "independent end-user use",
         "broad human recognition",
-        "whole-theory adoption"
+        "whole-theory adoption",
+        "runtime/path-independence gate execution or pass; acceptance requirement alone is not acceptance evidence"
       ],
-      "verification_boundary": "Human maintainer/issue-owner decision to adopt the proposed decision 4, executable Hosted independence test, ordinary/local M6 activation + test, documented common-gate inventory, or released independent use. A source-acknowledged open decision is not a passed acceptance gate.",
+      "verification_boundary": "Next check must find receiver-owned actual scoped Hosted isolation test and, only after M6, separate local isolation test; source-reported acceptance specification by doudouOUC is already adopted. Do not count as independent installed use or add a second receiver for the same decision.",
       "receiver_human_design_record": {
         "actor": "wenshao",
         "response": "https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6045681161",
         "observed_change": "The developer explicitly agrees that no cross-engine fallback differs from independently operable routes, and records a staged Hosted-only acceptance proposal as open decision 4 in the issue body. Ordinary/local M6 remains deferred; intentionally shared gates require inventory before a test.",
         "authority_boundary": "Explicit developer acknowledgment and documented open design option, not issue-owner final adoption and not executed Hosted/local independence testing.",
         "current_public_issue": "https://github.com/QwenLM/qwen-code/issues/12380"
+      },
+      "owner_decision": {
+        "decision_owner": "doudouOUC",
+        "actor_role": "Qwen Managed Agent proposal owner",
+        "source": "https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6117130998",
+        "receiver_owned_specification": "https://github.com/QwenLM/qwen-code/issues/12380",
+        "specification_locations": [
+          "Acceptance criteria",
+          "Decision 4: Path independence"
+        ],
+        "adopted_requirements": [
+          "Hosted: make ordinary local-only state unreachable, prove one scoped create/Turn/recovery route",
+          "Local: deferred until M6; then make Hosted-exclusive control plane unreachable and prove select/execute/restart/recovery",
+          "Before test: list intentionally shared identity/config/inference/workspace/runtime/session/storage/recovery dependencies"
+        ],
+        "verified_boundary": "Design/acceptance rule adopted; neither route independently proved operational; M6 local activation deferred; no release or end-user use attributed to this change."
       }
     },
     {
