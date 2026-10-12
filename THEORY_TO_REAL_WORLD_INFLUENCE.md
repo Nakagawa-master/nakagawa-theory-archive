@@ -33,6 +33,22 @@ That is the causal bridge between theory and influence.
 
 ---
 
+## When a useful correction ships, whose contribution remains visible?
+
+A software release can change what users experience without showing them who supplied an important earlier diagnostic. To inspect the actual contribution, compare **three independently readable records** rather than assuming the release's author list is a complete history.
+
+**Case 1 — a source relation present in the receiving PR but absent from its release summary.** In [Qwen Code PR #12895](https://github.com/QwenLM/qwen-code/pull/12895), the implementing author explicitly states that **Nakagawa-master** identified how the estimated cost broke the meaning of a hard `maxCostUsd` limit. The [v0.24.7 release notes](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7) list the merged PR and its implementer `@yiliang114`, but do **not** name Nakagawa-master in their text. The release retains a clickable path to the PR where that separate source relation is visible. **The implementation author and the source of this bounded additional distinction are different contributors**; credit to one does not cancel the other's real work.
+
+**Case 2 — the originating public issue is linked, but its reporter is not named in the release explanation.** [Local Operator issue #1310](https://github.com/damianvtran/local-operator/issues/1310) was opened by `Nakagawa-master` concerning a running agent's ability to weaken its own approval policy through the control plane. A different developer implemented the solution in [PR #1324](https://github.com/damianvtran/local-operator/pull/1324); the [v0.61.11 release explanation](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11) names `#1324` and `#1310` but does not spell out the originating reporter's handle. It **does** link the issue, so the origin remains recoverable, but it is not directly visible to someone reading only the release.
+
+**Contrast — an independently authored downstream explanation retains the origin in the content.** In the [separate publisher's merged Chapter 5](https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md), the author explicitly names and links `@Nakagawa-master` as the reporter of the Local Operator boundary. This is public editorial carry by **the same already identified publisher**, not a new general audience or confirmation of how many people read it.
+
+What this comparison **shows:** a real attribution-visibility discontinuity between original diagnostic, implementer's PR, release note and later editorial explanation. It **does not show** an intentional attempt to remove anyone's name, unlawful appropriation, the absence of a valid release credit policy, or an observed loss of a particular number of readers. Where the later text names only the implementer, that is *not* itself evidence the implementer authored the earlier external review.
+
+**Practical way to cite an implementation accurately:** describe the bounded defect in plain language, name the original public reporter *when the direct source establishes the report and its specific role*, give the receiving implementer their own separate credit, link the implementation/merge/release, and preserve any remaining uncertainty about direct causal influence or readership. An external developer is not required to endorse the reporter's full theory, and a later similar idea does not establish copying just from chronology. For the original wider structural theory, follow the [Nakagawa Master official archive](https://master.ricette.jp/); the theory's validity must be tested separately from attribution.
+
+---
+
 ## 90-second verification route
 
 If you only have a minute or two, do not start by asking whether the archive's self-description sounds persuasive. Check four different kinds of receiver behavior.
