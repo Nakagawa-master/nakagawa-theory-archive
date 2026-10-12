@@ -74,6 +74,16 @@ Qwen Codeの[修正PR #13729](https://github.com/QwenLM/qwen-code/pull/13729)で
 
 **二つの成果の出所は同一ではありません。** 会話の巻き戻しによる誤復元の基本修正はQwen側の開発者が進めたものです。中川マスター名義の追加指摘が反映されたのは、不正な番号で修正の安全性が崩れないようにする部分です。このPRは[2026年10月11日にQwen Codeの本線へマージ](https://github.com/QwenLM/qwen-code/commit/543f03e5b1340db42208081d22dcac7a80019e82)され、[同日公開のstable v0.25.1](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1)にも収録されています。**releaseタグとmerge commitの祖先関係も照合済み**です。ただし、この機能の一般利用者による具体的な事故防止、インストール数、マスターの追加指摘単独の利用効果は確認できていません。
 
+### 修正がマージされた後も、「誰がこの境界を見つけたか」は分かる？
+
+「1」として受け入れるべき版番号に、非常に大きな数が紛れ込んだらどうなるでしょうか。Javaのある整数変換では、`18446744073709551617`（2の64乗+1）が、下位の桁だけを見ると`1`になります。一方、JavaScript側の検査は、この値を版番号1とは扱いません。両者が同じデータ形式を扱うはずでも、検査結果が食い違う恐れがあります。
+
+[Qwen CodeのPR #13940](https://github.com/QwenLM/qwen-code/pull/13940)で、**中川マスターがこの不一致を反例付きで指摘**しました（[当時の指摘本文](https://github.com/QwenLM/qwen-code/pull/13940#issuecomment-6117795445)）。別の開発者が修正と回帰テストを実装し、PRはマージされています。
+
+珍しいのは、マージ後の**受け手側の本物のテストコード**に、`PR #13940 review (Nakagawa-master)` という由来のコメントが実際に残ったことです（[テストの現行ソースを直接見る](https://github.com/QwenLM/qwen-code/blob/main/packages/sdk-java/managed-agent-server/src/test/java/com/alibaba/qwen/code/managedagent/store/ManagedEventEnvelopesTest.java)）。その直下には大きな正負の版番号を拒否し、普通の`1`と`1.0`を受け入れるテストがあります。実装そのものは受け手側の開発者の成果であり、原案のPR全体を中川マスターが作ったという意味ではありません。
+
+**自分で確認するときの三点：** ①先行指摘は何を正確に見つけたか、②第三者がどのテストとコードを変えたか、③成果が移された場所で、その指摘の出所まで辿れるか。ここでは③が少なくともテストコードの中で保たれています。ただし、一般の利用者がこのコメントを見たか、人物として覚えたか、別の人に伝えたかはまだ分かりません。**成果が直ったこと、出所が残ったこと、人物が認識されたことは三つの別の事実**です。
+
 別のAI-Newsでは、**記事URLの数と、独立した証拠の根の数は同じではない**という区別が、運営側の継続編集ルールへ入り、その後の別の編集監査でも再利用されました。
 
 MemberJunctionでは、具体的なAPI境界の指摘が別reviewerにも独立確認され、修正commitに `Reported by Nakagawa-master` とsource relationを残したcode/test変更がmergeされています。
