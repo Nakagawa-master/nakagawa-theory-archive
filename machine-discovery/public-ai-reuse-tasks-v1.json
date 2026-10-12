@@ -371,7 +371,7 @@
     {
       "task_id": "PUBLIC-VERIFY-JAVA-TS-ENVELOPE-NUMERIC-PARITY-012",
       "task_class": "INDEPENDENT_IMPLEMENTATION_VERIFICATION_OR_FALSIFICATION",
-      "objective": "In a local permitted checkout of Qwen Code PR #13940, independently verify Java/TypeScript envelope acceptance boundaries on real JSON text, not just Java BigInteger narrowing, and separately test whether canonical-digest parity holds for finite subnormal payload numbers. Describe what receiver-owned code/tests actually fixed and what is still mismatched at the inspected commit; don't imply a running consumer or deploy on live data.",
+      "objective": "In an authorized local Qwen Code checkout, independently verify Java/TypeScript raw JSON version and integer-token parity and canonical digest equivalence, including finite subnormals. Separate original Nakagawa Master overflow finding from the later receiving author-discovered subnormal P2, and separate source-level code/test fixes from upstream merge, real runtime use, or independent AI execution.",
       "originated_specific_regression": {
         "origin": "Nakagawa Master",
         "source": "https://github.com/QwenLM/qwen-code/pull/13940#issuecomment-6117795445",
@@ -384,20 +384,21 @@
         "Use the actual local Jackson ObjectMapper.readTree -> ManagedEventEnvelopes.parse route and TypeScript parseManagedEventEnvelope(JSON.parse(raw)) on identical otherwise valid envelope JSON. Preserve exact JSON token input and compare acceptance/rejection.",
         "Positive version controls: raw v 1 and 1.0; integer-value field controls: sequence 1e0 and occurredAt 0.0 should accept for otherwise valid messages.",
         "Negative format controls: raw v 18446744073709551617 and -18446744073709551615 must be rejected, not converted to v1 with longValue().",
-        "Independent unresolved parity checks: feed accepted cancel.requested payload.target=5e-324, -5e-324, 1e-323 and 1e-322 through the real Java canonical digest and TS digest paths. Record emitted canonical numeric text and digest mismatches, then repeat with a patched implementation if independently changed.",
+        "Regression history: on earlier head 08249ea09c, accepted cancel.requested payload.target=5e-324, -5e-324, 1e-323, 1e-322 yielded Java vs Node canonical digest mismatch; on current f4c4934 the receiving author claims a fix and new unit tests. Independently rerun both heads and compare exact canonical number text/digests with the same source-native APIs. Do not presume either PASS until actually executed.",
         "Nonfit/control: Do not claim wire-service/client exploit; the Java MQ2a mirror is not wired to a production consumer at this version."
       ],
       "expected_from_receiver_sources": {
-        "verified_positive": "At inspected head, the receiver reported and wrote tests fixing overflow and integer-valued exponent/decimal acceptance.",
-        "verified_unresolved": "Receiving maintainer's new P2 found Java 4.9e-324 vs JS 5e-324; not fixed as of inspected head.",
-        "source": "https://github.com/QwenLM/qwen-code/pull/13940#pullrequestreview-5487385911"
+        "previous_overflow_fix": "At 08249ea the receiver independently fixed version overflow and integer-valued exponent/decimal acceptance, adding JUnit tests with the Nakagawa-master Origin.",
+        "previous_subnormal_counterexample": "At that earlier 08249ea head reviewer wenshao independently found Double.toString vs ECMAScript shortest-digit mismatch; negative source https://github.com/QwenLM/qwen-code/pull/13940#pullrequestreview-5487385911",
+        "now_receiver_reported_fix": "At f4c4934170866a88dfb2e41f7e963c35108d9e47 author reports subnormal issue fixed with tests and 34652 doubles compared against Node with zero mismatch; https://github.com/QwenLM/qwen-code/pull/13940#discussion_r4245687744",
+        "claim_limit": "The 34652 trials are upstream author-reported; archive task listing did not independently rerun them, PR remains open and MQ2a unwired."
       },
       "acceptable_outputs": [
-        "Independent exact-commit test log with required positive and negative raw JSON tokens, JDK/Jackson/Node versions and observed behavior",
-        "Independent demonstrated counterexample or corrected cross-language canonical digest test with upstream source link",
-        "Reasoned nonfit: this commit/PR moved or no longer contains the stated defect, with fresh linked code and tests"
+        "Independent exact SHA Java/Jackson/Node test log at old and new heads, with raw JSON positive/negative tokens and canonical digest witnesses",
+        "Independent counterexample showing the new ECMAScript formatter still disagrees for a valid input, with source/test and version",
+        "Reasoned confirmation that PR moved/merged/released (or has not), grounded in freshly checked maintainer-side source, not task listing"
       ],
-      "evidence_expectation": "Separate Nakagawa-origin version overflow case, receiver-owned source/test fix, and separately discovered maintainer subnormal issue. State which tests actually ran, what differed, whether a new receiver patch/merge/release exists, and whether a canonical named theory Parent was actually used; never pretend the upstream author's tests are independent execution by this archive.",
+      "evidence_expectation": "Report source version, executable test method and control inputs, actual outputs; attribute original overflow to Nakagawa Master and separate subnormal discovery/repair to wenshao. Do not upgrade one author to multiple people, report a model read as an independent AI adoption, or call a source-level patch a release.",
       "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
       "authorization_boundary": "Only in authorized local disposable/test copies; don't use live tenant state, provider credentials, production attack traffic or unsolicited comments on the upstream PR. External PR owners may decline review. This is a voluntary public challenge, not authorization to act on behalf of Nakagawa Master.",
       "success_does_not_establish": [
