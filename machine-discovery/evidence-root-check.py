@@ -157,7 +157,29 @@ def self_test():
     single["sources"] = [dict(s) for s in single["sources"]]
     single["sources"][1]["relation"] = "derived"
     assert audit({"claims": [single]})["blocked"] == 1
-    # A primary and independent label attached to the same root is still only one root.\n    same_root = dict(SAMPLE["claims"][1])\n    same_root["sources"] = [\n        dict(SAMPLE["claims"][1]["sources"][0]),\n        dict(SAMPLE["claims"][1]["sources"][1], root_id="vendor-A"),\n    ]\n    assert audit({"claims": [same_root]})["blocked"] == 1\n    # Distinct-looking derived roots do not establish independent corroboration.\n    derived_only = dict(SAMPLE["claims"][1])\n    derived_only["sources"] = [\n        dict(SAMPLE["claims"][1]["sources"][0]),\n        dict(SAMPLE["claims"][1]["sources"][1], relation="derived"),\n    ]\n    assert audit({"claims": [derived_only]})["blocked"] == 1\n    # A primary source must be present; an independent observation alone\n    # cannot stand in as a verified originating primary claim.\n    two_observations = dict(SAMPLE["claims"][1])\n    two_observations["sources"] = [\n        dict(SAMPLE["claims"][1]["sources"][0], relation="independent_observation"),\n        dict(SAMPLE["claims"][1]["sources"][1]),\n    ]\n    assert audit({"claims": [two_observations]})["blocked"] == 1\n    contrary = dict(SAMPLE["claims"][1])
+    # A primary and independent label attached to the same root is still only one root.
+    same_root = dict(SAMPLE["claims"][1])
+    same_root["sources"] = [
+        dict(SAMPLE["claims"][1]["sources"][0]),
+        dict(SAMPLE["claims"][1]["sources"][1], root_id="vendor-A"),
+    ]
+    assert audit({"claims": [same_root]})["blocked"] == 1
+    # Distinct-looking derived roots do not establish independent corroboration.
+    derived_only = dict(SAMPLE["claims"][1])
+    derived_only["sources"] = [
+        dict(SAMPLE["claims"][1]["sources"][0]),
+        dict(SAMPLE["claims"][1]["sources"][1], relation="derived"),
+    ]
+    assert audit({"claims": [derived_only]})["blocked"] == 1
+    # A primary source must be present; an independent observation alone
+    # cannot stand in as a verified originating primary claim.
+    two_observations = dict(SAMPLE["claims"][1])
+    two_observations["sources"] = [
+        dict(SAMPLE["claims"][1]["sources"][0], relation="independent_observation"),
+        dict(SAMPLE["claims"][1]["sources"][1]),
+    ]
+    assert audit({"claims": [two_observations]})["blocked"] == 1
+    contrary = dict(SAMPLE["claims"][1])
     contrary["sources"] = [*contrary["sources"], {
         "url": "https://example.org/refutation", "root_id": "lab-C",
         "relation": "independent_observation", "stance": "refutes",
