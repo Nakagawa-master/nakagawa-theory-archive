@@ -3544,6 +3544,60 @@
         "whole theory corpus adoption"
       ],
       "verification_boundary": "Already-existing Oct 9 external actions now source-audited: one participant expressly attributes and re-runs Nakagawa's inverse; another executes a bounded related offline alternative and supplies a public reproduction. Two individuals, same issue/repository, no C3, release or broad C7. This archive write itself creates no new external receiver change."
+    },
+    {
+      "case_id": "qwen-13902-same-manager-acp-listeners-mutation-valid-regression",
+      "topic": "Repeated same-instance TeamManager change callbacks must not register duplicate ACP permission listeners; a Set-based fake emitter cannot prove Node EventEmitter duplicate preservation.",
+      "external_repository": "QwenLM/qwen-code",
+      "pull_request": "https://github.com/QwenLM/qwen-code/pull/13902",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "source_specific_pull_request_comment",
+        "url": "https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6110579188",
+        "reviewed_contract": "Config.setTeamManager calls subscribers even with the same object; old team-sink handleManagerChange only detached on a different object, then re-added five stable callbacks.",
+        "negative": "Notify the very same manager twice; real EventEmitter registers duplicate function references and separate approval notifications would call two listeners.",
+        "positive": "Exactly one attached handler per event after repeated same-instance notification; zero after detach; normal A-to-B manager swap and fail-closed permission path unchanged."
+      },
+      "explicit_receiver_return": {
+        "actor": "yiliang114",
+        "url": "https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6122203679",
+        "description": "Independently told @Nakagawa-master the production guard was implemented but the previously claimed regression could not fail because FakeTeamEmitter stored handlers in Set."
+      },
+      "receiver_implementation": {
+        "author": "yiliang114",
+        "production_fix_commit": "b1eeae5547283d6b518a72b169b33d1fe6cd1b48",
+        "production_fix_url": "https://github.com/QwenLM/qwen-code/commit/b1eeae5547283d6b518a72b169b33d1fe6cd1b48",
+        "falsifiable_test_commit": "42c5bfc7449297c81ccba653363e235b7016ecdd",
+        "test_url": "https://github.com/QwenLM/qwen-code/commit/42c5bfc7449297c81ccba653363e235b7016ecdd",
+        "negative_mutant": "Removing same-manager guard fails under duplicate-preserving fake emitter, where previous Set double masked the defect.",
+        "receiver_test_report": "11/11 reported by developer; archive has not independently run full Qwen suite."
+      },
+      "current_stage": "independent_receiver_code_and_falsifiable_test_changed_pr_open_unmerged",
+      "current_source_snapshot": {
+        "pr_state": "OPEN",
+        "head": "42c5bfc7449297c81ccba653363e235b7016ecdd",
+        "checked_date_jst": "2026-10-12",
+        "upstream_merged": false,
+        "stable_release": "NOT VERIFIED",
+        "external_runtime_use": "NOT VERIFIED"
+      },
+      "separate_not_yet_adopted_review": {
+        "url": "https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6122690398",
+        "topic": "The ACP approval toolCallId uses teammate name + timestamp from Date.now(), so two same-name same-ms requests can compose the same ID. Source-level deterministic proposal only; no client misapproval or author correction verified.",
+        "stage": "C0 not adoption"
+      },
+      "machine_reuse_route": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/ai-repository-routing-map-v1.json",
+      "public_human_route": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/README.md",
+      "not_claimed": [
+        "PR merged to Qwen main",
+        "release or installed product use",
+        "a real user reported or obtained fewer duplicate dialogs",
+        "two corrections by the same engineer count as two independent engineers",
+        "independent machine route execution or theory corpus adoption",
+        "accepted separate per-approval identity fix",
+        "mass recurring person recognition"
+      ],
+      "verification_boundary": "First verify original Nakagawa issue comment and the receiving developer's code + test commits at current head; run the actual Qwen test with a mutant deleting the production guard; inspect PR merge status and actual releases/third-party use independently. This is C2 upstream unmerged, NOT C3/C4/C7."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
