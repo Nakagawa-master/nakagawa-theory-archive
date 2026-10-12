@@ -93,6 +93,10 @@ def audit(payload):
                 errors.append("independent confirmation claimed, but fewer than two supporting upstream roots")
             if not independent_positive_roots:
                 errors.append("no source marked independently observed positive evidence")
+            if not any(source.get("relation") == "primary" and source.get("stance") == "supports" and source.get("root_id") in positive_roots for source in sources):
+                errors.append("independent confirmation claimed without a supporting primary source")
+            if not any(source.get("relation") == "independent_observation" and source.get("stance") == "supports" and source.get("root_id") in positive_roots for source in sources):
+                errors.append("independent confirmation claimed without a supporting independent observation")
             if refuting_roots or unresolved_refuters:
                 errors.append("contrary source present (possibly unresolved); reconcile before claiming unqualified independent confirmation")
         if errors:
@@ -152,7 +156,7 @@ def self_test():
     single["sources"] = [dict(s) for s in single["sources"]]
     single["sources"][1]["relation"] = "derived"
     assert audit({"claims": [single]})["blocked"] == 1
-    contrary = dict(SAMPLE["claims"][1])
+    # Distinct-looking derived roots do not establish independent corroboration.\n    derived_only = dict(SAMPLE["claims"][1])\n    derived_only["sources"] = [\n        dict(SAMPLE["claims"][1]["sources"][0]),\n        dict(SAMPLE["claims"][1]["sources"][1], relation="derived"),\n    ]\n    assert audit({"claims": [derived_only]})["blocked"] == 1\n    # A primary source must be present; an independent observation alone\n    # cannot stand in as a verified originating primary claim.\n    two_observations = dict(SAMPLE["claims"][1])\n    two_observations["sources"] = [\n        dict(SAMPLE["claims"][1]["sources"][0], relation="independent_observation"),\n        dict(SAMPLE["claims"][1]["sources"][1]),\n    ]\n    assert audit({"claims": [two_observations]})["blocked"] == 1\n    contrary = dict(SAMPLE["claims"][1])
     contrary["sources"] = [*contrary["sources"], {
         "url": "https://example.org/refutation", "root_id": "lab-C",
         "relation": "independent_observation", "stance": "refutes",
