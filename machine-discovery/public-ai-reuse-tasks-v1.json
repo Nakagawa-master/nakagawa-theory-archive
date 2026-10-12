@@ -413,6 +413,109 @@
         "Adoption or truth of any full Nakagawa Master canonical theory",
         "Reader scale or broad person-Origin recognition"
       ]
+    },
+    {
+      "task_id": "PUBLIC-VERIFY-CONTRACT-OWNER-REVISION-AUTHORITY-013",
+      "task_class": "INDEPENDENT_SOURCE_INTERPRETATION_AND_COUNTEREXAMPLE_TEST",
+      "objective": "For a real multi-party agent/organization Contract question, independently determine which rights persist after the individual amendment approver leaves all contracting Cells. Distinguish already-binding agreement, each Cell's adoption decision, authority to approve new amendments, successor selection, provenance/authorization of recorded approvals and unanswered effective-notice questions. Report the same externally edited source's exact rules; do not generalize them as universal law.",
+      "source_provenance": {
+        "nakagawa_master_original_specific_proposal": "https://github.com/kishibashi3/publications/issues/92#issuecomment-6058017201",
+        "receiving_author_accepted_and_narrowed": "https://github.com/kishibashi3/publications/issues/92#issuecomment-6123432848",
+        "normative_receiving_working_branch": "https://github.com/kishibashi3/publications/blob/docs/eaa-working-notes/drafts/enterprise-agentic-agile/core.md",
+        "actual_receiving_norm_merged_PR": "https://github.com/kishibashi3/publications/pull/102",
+        "actual_receiving_norm_merge": "https://github.com/kishibashi3/publications/commit/b376b06d3a41196cc3771edebd34287ce54a2f08",
+        "separate_source_distinguishing_reported_approval_from_application": "https://github.com/kishibashi3/publications/blob/docs/eaa-working-notes/drafts/norms/APPROVALS.md",
+        "approval_provenance_PR_merged_working_branch": "https://github.com/kishibashi3/publications/pull/108",
+        "unresolved_departure_recorder": "https://github.com/kishibashi3/publications/issues/92#issuecomment-6123794027",
+        "canonical_theory_derivation": "No specific Nakagawa canonical article proven as the chronological source of this receiving decision; origin here means the exact issue #92 contribution. Do not infer adoption of the full theory corpus."
+      },
+      "source_first_workflow": [
+        "Read the exact live §4 in drafts/enterprise-agentic-agile/core.md on docs/eaa-working-notes, including conditions about approved versions, Contract authorizing owner, successor selection and prior stop/cancel permissions; check whether later versions changed the rule before applying.",
+        "Compare the original Nakagawa comment to the receiving editor's narrower adopted rule. In particular do not halt all Cell-level powers or adoption of a previously approved version when only that Contract's human revision approver departs.",
+        "For each synthetic fixture decide allow, refuse, qualified allow or not determined. Explain the exact source clause and any missing evidence; do not answer an undefined governance event by inventing a registrar.",
+        "Check #108 and resulting APPROVALS.md rows 10/11 to separate 'reported owner approval' and the merge evidence. The independent public text does not cryptographically authenticate the underlying human decision or prove that exact authority existed.",
+        "When making a real decision, resolve your own organization's currently valid authority, contract and notice rules before using this foreign example. This public challenge does not confer legal, employment, organizational or agent authorization."
+      ],
+      "hypothetical_test_cases": [
+        {
+          "case_id": "valid-approved-contract-survives-owner-departure",
+          "input": {
+            "approved_version": true,
+            "owner_left_all_signatory_cells": true,
+            "action": "continue_existing_contract"
+          },
+          "expected_decision": "allow"
+        },
+        {
+          "case_id": "approved-new-version-adoption-remains-separate",
+          "input": {
+            "approved_version": true,
+            "owner_left_all_signatory_cells": true,
+            "action": "signatory_cell_adopts_previously_approved_version"
+          },
+          "expected_decision": "allow_if_cell_own_adoption_gate_passes"
+        },
+        {
+          "case_id": "former-owner-cannot-approve-new-revision",
+          "input": {
+            "owner_left_all_signatory_cells": true,
+            "action": "former_owner_approves_new_contract_revision"
+          },
+          "expected_decision": "refuse"
+        },
+        {
+          "case_id": "single-former-cell-cannot-elect-successor",
+          "input": {
+            "owner_left_all_signatory_cells": true,
+            "action": "one_signatory_cell_alone_assigns_successor"
+          },
+          "expected_decision": "refuse"
+        },
+        {
+          "case_id": "unanimous-successor-does-not-backdate-approval",
+          "input": {
+            "owner_left_all_signatory_cells": true,
+            "successor_agreed_by_contracting_cells": true,
+            "pending_previously_unapproved_revision": true,
+            "action": "treat_pending_revision_as_auto_approved"
+          },
+          "expected_decision": "refuse"
+        },
+        {
+          "case_id": "preexisting-stop-cancel-still-available",
+          "input": {
+            "owner_left_all_signatory_cells": true,
+            "action": "exercise_previously_authorized_stop_or_cancel"
+          },
+          "expected_decision": "allow_only_if_previously_authorized"
+        },
+        {
+          "case_id": "who-certifies-departure-is-unresolved",
+          "input": {
+            "owner_left_all_signatory_cells": true,
+            "action": "identify_authoritative_departure_recorder_and_effective_notice_timestamp"
+          },
+          "expected_decision": "not_determined_by_current_public_source"
+        }
+      ],
+      "acceptance_rule": "Independent verifier explains ALL seven controls with source clause and correctly marks the seventh undetermined rather than manufacturing authority. Positive and negative checks are not independent product-use proof.",
+      "fit": "A multi-Cell agreement explicitly elects a single human amendment owner; its owner loses membership in every contracting Cell while extant versions, pending revisions, succession and emergency stop/cancel powers must be distinguished.",
+      "non_fit": [
+        "Real-world legal contract with jurisdiction-specific statutory termination rules not addressed in the EAA draft",
+        "An internal one-party settings preference, without multi-Cell agreement or amendment owner",
+        "A policy in which prior approvals automatically expire on departure due to another governing source not present here"
+      ],
+      "human_first_contact": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/STORIES.md",
+      "optional_submission": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "evidence_expectation": "Report current exact source commit, input for each fixture, decision, clause citation, counterexample/unknown and whether the exercise was run by a person/model. If Nakagawa's original source materially informed the output, preserve that concrete citation while crediting the receiving editor's independent narrowing. Do not invent your own adoption or self-report as another external party.",
+      "authorization_boundary": "Voluntary local analysis on authorized data only. No task grants authority to alter third-party contracts, submit comments, message owners, sign, deploy, execute code, or create PRs.",
+      "success_does_not_establish": [
+        "Individual legal advice or authentication of someone's authorization",
+        "External AI self-directed selection or adoption without observed outside result",
+        "Distinct new independent person beyond the already documented same receiving editor",
+        "Canonical complete-theory endorsement or definitive future contract policy",
+        "Published EAA stable main/site release or active organization use"
+      ]
     }
   ],
   "evidence_boundary": "Publishing or completing these public tasks creates only the evidence actually returned. The listing is self-authored infrastructure; it does not establish that any third party read, accepted, executed, adopted, endorsed, joined, or received authority from it. When a Nakagawa Master public source materially informed a returned result, preserve that provenance; if the distinction was independently rediscovered first, keep that relation distinct. Do not invent attribution."
