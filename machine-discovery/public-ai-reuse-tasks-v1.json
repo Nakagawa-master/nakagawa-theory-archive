@@ -385,26 +385,30 @@
         "Positive version controls: raw v 1 and 1.0; integer-value field controls: sequence 1e0 and occurredAt 0.0 should accept for otherwise valid messages.",
         "Negative format controls: raw v 18446744073709551617 and -18446744073709551615 must be rejected, not converted to v1 with longValue().",
         "Regression history: on earlier head 08249ea09c, accepted cancel.requested payload.target=5e-324, -5e-324, 1e-323, 1e-322 yielded Java vs Node canonical digest mismatch; on current f4c4934 the receiving author claims a fix and new unit tests. Independently rerun both heads and compare exact canonical number text/digests with the same source-native APIs. Do not presume either PASS until actually executed.",
-        "Nonfit/control: Do not claim wire-service/client exploit; the Java MQ2a mirror is not wired to a production consumer at this version."
+        "Nonfit/control: Do not claim wire-service/client exploit; the Java MQ2a mirror is not wired to a production consumer at this version.",
+        "Post-merge, apply a NEW separately credited negative control from Qwen's sandbox verifier, not from Nakagawa: on the exact merged Java main source, compare real compiled TS managedSessionEventsDigest versus Java ManagedEventEnvelopes.digest on otherwise valid events with a nested payload across reported depth 60..70 and 100. Use equal actual JSON inputs and document what each side accepts/rejects. The bot reported a mismatch beginning at its depth-64 boundary; nesting interpretation must be independently calibrated to actual TS assertJsonValue. See https://github.com/QwenLM/qwen-code/pull/13940#issuecomment-6120198458",
+        "Do not convert an unreachable synthetic 9 MiB single-committed-event digest differential into a live vulnerability: check TS maxEventBytes 1 MiB before claiming possible producer output. For future MQ2b, require an explicit producer-to-Java entry path before measuring real impact."
       ],
       "expected_from_receiver_sources": {
         "previous_overflow_fix": "At 08249ea the receiver independently fixed version overflow and integer-valued exponent/decimal acceptance, adding JUnit tests with the Nakagawa-master Origin.",
         "previous_subnormal_counterexample": "At that earlier 08249ea head reviewer wenshao independently found Double.toString vs ECMAScript shortest-digit mismatch; negative source https://github.com/QwenLM/qwen-code/pull/13940#pullrequestreview-5487385911",
         "now_receiver_reported_fix": "At f4c4934170866a88dfb2e41f7e963c35108d9e47 author reports subnormal issue fixed with tests and 34652 doubles compared against Node with zero mismatch; https://github.com/QwenLM/qwen-code/pull/13940#discussion_r4245687744",
         "claim_limit": "The 34652 double trials remain upstream author-reported, not independently rerun by this archive. Upstream code merge verified, but the MQ2a Java mirror is not proven wired to actual runtime, released as a stable tagged product, or used by independent end users.",
-        "upstream_merge_verified": "https://github.com/QwenLM/qwen-code/commit/aaf97b869dfcc4cf529ada1b036cad9b18695486 merged at 2026-10-12T08:35:15Z; the receiver's code and JUnit are on upstream main."
+        "upstream_merge_verified": "https://github.com/QwenLM/qwen-code/commit/aaf97b869dfcc4cf529ada1b036cad9b18695486 merged at 2026-10-12T08:35:15Z; the receiver's code and JUnit are on upstream main.",
+        "post_merge_independent_bot_advisory": "Qwen triage's independent sandbox report: 17,939 pass / 8 failed scripted assertions, with a TypeScript maxJsonDepth=64 acceptance check not matched by Java's unbounded canonicalJson. Distinct reviewer discovery, not Nakagawa Master original. Upstream PR was nonetheless merged at aaf97b8, with other reviews approving. It is a non-runtime-wired future connection gate, not proof that Qwen users were exposed. https://github.com/QwenLM/qwen-code/pull/13940#issuecomment-6120198458"
       },
       "acceptable_outputs": [
         "Independent exact SHA Java/Jackson/Node test log at old and new heads, with raw JSON positive/negative tokens and canonical digest witnesses",
         "Independent counterexample showing the new ECMAScript formatter still disagrees for a valid input, with source/test and version",
-        "Reasoned confirmation that PR moved/merged/released (or has not), grounded in freshly checked maintainer-side source, not task listing"
+        "Reasoned confirmation that PR moved/merged/released (or has not), grounded in freshly checked maintainer-side source, not task listing",
+        "Source-pinned pre-MQ2b depth-bound positive/negative local tests with independent verification that raw shape and depth counting match the real TS digest's validation semantics; avoid fictional product-exposure claims"
       ],
-      "evidence_expectation": "Report source version, executable test method and control inputs, actual outputs; attribute original overflow to Nakagawa Master and separate subnormal discovery/repair to wenshao. Do not upgrade one author to multiple people, report a model read as an independent AI adoption, or call a source-level patch a release. An upstream merge is C3 integration, not by itself an installed or released runtime.",
+      "evidence_expectation": "Report source version, executable test method and control inputs, actual outputs; attribute original overflow to Nakagawa Master and separate subnormal discovery/repair to wenshao. Do not upgrade one author to multiple people, report a model read as an independent AI adoption, or call a source-level patch a release. An upstream merge is C3 integration, not by itself an installed or released runtime. Report the separately bot-origin depth validation issue as an independent reviewer finding; do not claim Nakagawa originated the depth finding. A source merge can coexist with deferred integration concerns.",
       "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
       "authorization_boundary": "Only in authorized local disposable/test copies; don't use live tenant state, provider credentials, production attack traffic or unsolicited comments on the upstream PR. External PR owners may decline review. This is a voluntary public challenge, not authorization to act on behalf of Nakagawa Master.",
       "success_does_not_establish": [
         "Production exploit or vulnerability severity",
-        "Merge/release/independent end-user use",
+        "Stable tagged release, a wired runtime consumer, or independent end-user use (upstream source merge is already verified)",
         "Independent AI ingestion or model self-recognition",
         "Adoption or truth of any full Nakagawa Master canonical theory",
         "Reader scale or broad person-Origin recognition"
