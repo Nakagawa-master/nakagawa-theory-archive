@@ -3357,7 +3357,7 @@
           "plan mode text-body parsing and lazy arming",
           "terminal settlement race"
         ],
-        "author_reported_validation": "npm build, typecheck and 815 directed tests passed; full physical Hosted end-to-end integration not verified by this archive."
+        "author_reported_validation": "Initial author push reported 815 directed tests passed, build and typecheck PASS; later self-review reports a separate run with 814/815 initial PASS, one unexplained /load 404 and successful isolated reruns. Eight real-route/local-journal negative/positive checks PASS. No physical Hosted full-stack E2E."
       },
       "current_stage": "third_party_code_test_design_or_document_change",
       "public_human_cases": [
@@ -3373,7 +3373,16 @@
         "whole Nakagawa theory corpus adopted",
         "repeat broad human Person-Origin"
       ],
-      "verification_boundary": "Stage C2 explicitly acknowledged external code/test adoption of one bounded original review; no C3 merge or C4-7 use/reuse evidence was established."
+      "verification_boundary": "Stage C2 explicitly acknowledged external code/test adoption of one bounded original review; no C3 merge or C4-7 use/reuse evidence was established.",
+      "receiver_followup_verification": {
+        "actor": "wenshao",
+        "url": "https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116265275",
+        "head": "ffdf3125ab29c68612ffe49b8cdf56e7960e758a",
+        "reported": "Author re-reviewed original four defects on corrected head; eight negative/positive controls passed using real local HTTP routes and journal/funnel recovery (external Store/Broker/model replaced in some checks).",
+        "tests": "Nine directed suites initially 814/815 passed; one cancellation takeover deny /load test failed 404; two isolated allow/deny reruns passed 2/2. Cause unknown and not established as flaky.",
+        "ci": "At author report time Java 17 job failed during Git checkout, before compile/test; other CI jobs running. CI later status requires separate fresh verification.",
+        "limits": "No real Hosted physical full-stack E2E, official merge, product release, independent end-user use or new second adopting recipient."
+      }
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",

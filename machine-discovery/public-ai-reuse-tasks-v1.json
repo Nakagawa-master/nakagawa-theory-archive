@@ -247,6 +247,36 @@
         "scope": "Standalone offline synthetic model; running it tests only the supplied model, not any real AI framework or external recipient.",
         "external_followup": "Independently replay the failure condition against one different, authorized non-confidential implementation, and report a true/nonfit/false result; v0.25.1 GitHub release inclusion alone does not prove this transfer."
       }
+    },
+    {
+      "task_id": "PUBLIC-VERIFY-STOP-CALL-PROVENANCE-009",
+      "task_class": "VERIFY_OR_FALSIFY",
+      "objective": "In an independently chosen authorized non-confidential agent/task/workflow system OTHER than Qwen Code, test whether prior human cancellation or another call's stop can be incorrectly attributed to a later tool call that never executed during recovery. Include a positive same-call committed stop that remains recoverable after a restart. Report actual observations, a falsification, or an explicit non-fit; do not assume a bug exists.",
+      "portable_regression": {
+        "negative": "Human or call K1 stops task A. New call K2 is interrupted before executing stop(A). Recovery of K2 must not claim K2 committed the earlier stop.",
+        "positive": "K2 truly commits stop(A), then crashes before response; recover from journal/state-head change and verify K2 is identified by durable per-call evidence.",
+        "non_fit": "When the system never claims call-specific durable settlement, state that the test does not apply instead of inventing a result."
+      },
+      "public_inputs": [
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.en.md",
+        "https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434",
+        "https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md"
+      ],
+      "acceptable_outputs": [
+        "real independent negative and positive test result",
+        "specific code/design correction verified at exact revision",
+        "reproducible non-fit or counterexample"
+      ],
+      "evidence_expectation": "State exact target version, who acted, what ran and what did not, test outcome and its limits. Credit Nakagawa Master only if the public source materially informed this test; independently discovered cases must remain independently labeled. This public task is not proof of an AI already using the theory.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "authorization_boundary": "Optional public test. Use only existing participant permissions and nonconfidential data, no unapproved live changes, network calls, credential access or automatic external submissions.",
+      "success_does_not_establish": [
+        "another AI independently adopted the theory merely because a task was listed",
+        "Qwen upstream merge or release",
+        "user-scale influence or whole-corpus truth",
+        "permission for protected side effects"
+      ]
     }
   ],
   "evidence_boundary": "Publishing or completing these public tasks creates only the evidence actually returned. The listing is self-authored infrastructure; it does not establish that any third party read, accepted, executed, adopted, endorsed, joined, or received authority from it. When a Nakagawa Master public source materially informed a returned result, preserve that provenance; if the distinction was independently rediscovered first, keep that relation distinct. Do not invent attribution."
