@@ -43,7 +43,7 @@
 
 ### 現在の公開証拠スナップショット
 
-- このページには **47の番号付き外部作用事例**を収録しています。
+- このページには **49の番号付き外部作用事例**を収録しています。
 - GitHub全体の `Nakagawa-master` comment検索では多数の候補surfaceが返りますが、検索hit自体は第三者反応・採用・実装として数えません。
 - 本ページへ収録するのは、第三者response、独立確認、code / tests / document change、merge、release、deployment等を公開リンクで段階別に確認できる事例です。
 - したがって「mentionが多い」ことではなく、**第三者が何を変え、その変更がどこまで進んだか**を主要証拠として扱います。
@@ -540,6 +540,8 @@ receiverはこの指摘を独立した設計軸として再説明し、専用PR 
 
 - [PR #71｜後続の体系再編](https://github.com/kishibashi3/publications/pull/71)
 - [PR #71 current headのPrinciples](https://github.com/kishibashi3/publications/blob/e06e74828f656796ec38f455efea24d49fcda83f/drafts/agentic-agile/principles.md)
+
+**新しい独立の受け手変更（2026-10-12）:** 中川マスターが[issue #9で、Local Operator #1310の後続修正・#1324のmerge・v0.61.11 releaseを一次資料と分けて伝えた](https://github.com/kishibashi3/publications/issues/9#issuecomment-6108474377)後、同じ著者 `kishibashi3` は[自分で再確認して章の追記を決定](https://github.com/kishibashi3/publications/issues/9#issuecomment-6123421765)。実際に[新PR #103](https://github.com/kishibashi3/publications/pull/103) を起こし、第5章「条件6」に「執筆時点の未解決」と「その後の別開発者による修正・release」を別時点として併記する[文書差分](https://github.com/kishibashi3/publications/blob/61b929040334b6391bc1ad2b4b34dcabd294faaa/docs/ai/agent-design/chapter-05.ja.md)を追加しました。原稿内の `@Nakagawa-master` 起点を保持しています。**PR #103 はOPEN・未統合**で、この受け手は従来の#57/#58と同じ著者です。新しい別人の採用・別媒体への公開反応として水増ししません。著者は自分たちの運用規約にも先の三原則が入っていると説明していますが、当該規約本文を別途照合するまでは著者による報告として扱います。
 
 **公開記録から確認できること:** origin-preserved review → third-party restatement → 専用reader-facing本文実装 → merge / Pages反映 → 同じreceiver内の別文書で整合条件として再利用 → merge → 後続の体系再編headでも同じD8を維持。  
 **まだ確認できないこと:** PR #71のmerge、#58/#71を別のpublic-site publicationとして数えること、別receiverによる独立carry、大規模読者反応、広範な人間認知、理論体系全体への支持。
@@ -1577,7 +1579,7 @@ zero shared infrastructure
 ## 47. Qwen Code｜誰かが停止したという記録は「今回の呼び出しが停止した」証拠ではない
 
 **対象:** [Qwen Code PR #13923](https://github.com/QwenLM/qwen-code/pull/13923) / [中川マスターの再現可能な指摘](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434) / [外部開発者の修正コミット](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a)  
-**段階:** 開発者 `wenshao` が `@Nakagawa-master` に[直接、不具合の実在と修正を回答](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)。実際にcode/testを変更した段階。PRは確認時点でOPEN / 未統合。
+**段階（2026年10月12日再確認）:** 開発者 `wenshao` が `@Nakagawa-master` に[直接、不具合の実在と修正を回答](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)。実際にcode/testを変更し、**PRは2026年10月12日03:31:17 UTCに[本線へ統合済み](https://github.com/QwenLM/qwen-code/commit/a9ad92b8df4e110b39c4e27ce86f5953324088a9)**。別途の安定版release／実利用は未確認。
 
 複数のAIが協調作業する仕組みで、あるメンバーの停止済みフラグは、**どの操作が停止させたか**の証拠ではありません。ユーザーが先に停止させたのに、後から生成されただけで実行されていないAIの `request_shutdown` にその結果を割り当てると、障害復旧の記録が間違います。中川マスターは、以前の人間による停止と今回の未実行の呼び出しを組み合わせた具体的な反例を提示しました。
 
@@ -1588,7 +1590,33 @@ zero shared infrastructure
 - [修正後の具体的なcode/test差分](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a)
 
 **確認できること:** 外部開発者本人によるOriginつき受理、対象ロジックと回帰テストの変更。  
-**確認できないこと:** PRのmerge、release、実環境での全経路検証、利用者規模、理論全体の採用。別のレビュー担当者も同PRの他の問題を指摘しているため、全修正を中川マスター単独に帰属させません。
+**確認できないこと:** この変更を含む安定版release、実環境での全経路検証、利用者規模、理論全体の採用。別のレビュー担当者も同PRの他の問題を指摘しているため、全修正を中川マスター単独に帰属させません。
+
+---
+
+## 48. Qwen Code｜巨大なバージョン番号を「v1」と誤認させない
+
+**対象:** [Qwen Code PR #13940](https://github.com/QwenLM/qwen-code/pull/13940)／[中川マスターによる数値の反例](https://github.com/QwenLM/qwen-code/pull/13940#issuecomment-6117795445)／[受け手の具体的な修正・検証説明](https://github.com/QwenLM/qwen-code/pull/13940#issuecomment-6119217015)。
+
+AIのイベント履歴をJavaとTypeScriptで同じように解釈する際、JSONのバージョン番号が `18446744073709551617` のように極端に大きいと、Java側で整数の上位部分を切り落として `v: 1` と誤認する境界がありました。中川マスターは受け手の実装を読んで具体的な反例と、正常な `v: 1` を維持する対照テストを提示しました。
+
+開発者 `wenshao` は当該問題を認め、数値を適切に比較する処理と[巨大バージョンを拒否する回帰テスト](https://github.com/QwenLM/qwen-code/commit/08249ea09c2c2108c891d86452ccc2ee5ac1c4e8)を追加しました。PRは**2026年10月12日に[本線へmerge済み](https://github.com/QwenLM/qwen-code/commit/aaf97b869dfcc4cf529ada1b036cad9b18695486)**です。
+
+**確認できること:** 具体的な反例に対する第三者実装者のcode/test修正と本線統合。これは第47事例と**同じ実装者による別件**であり、二人の独立した採用者とは数えません。開発者が別途発見した浮動小数点の不整合やbotの別指摘は中川マスターの成果へ合算しません。  
+**確認できないこと:** 安定版release、実際の製品利用者、別組織への自発的伝播、理論体系全体の採用。
+
+---
+
+## 49. Qwen Code｜同じAI管理者への再通知で許可確認が二重登録されないようにする
+
+**対象:** [Qwen Code PR #13902](https://github.com/QwenLM/qwen-code/pull/13902)／[中川マスターによる二重購読の反例](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6110579188)／[第三者開発者の説明](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6122203679)。
+
+複数AIが一緒に作業するACP接続で、同じチーム管理者をもう一度設定すると、許可を求めるイベントの受信処理が重複登録され得ました。中川マスターは管理者が**同じオブジェクトであるときの再通知**という通常の管理者交換とは違う条件を特定しました。
+
+開発者 `yiliang114` は[同一管理者なら再登録しない修正](https://github.com/QwenLM/qwen-code/commit/b1eeae5547283d6b518a72b169b33d1fe6cd1b48)を実装しました。その後、当初のテストは `Set` が同じlistenerを重複排除してしまうため**修正を取り消しても成功してしまう**と開発者が確認し、[実物のNode EventEmitterに合う配列型のテストへ修復](https://github.com/QwenLM/qwen-code/commit/42c5bfc7449297c81ccba653363e235b7016ecdd)しました。
+
+**確認できること:** 元レビューに対する別の外部開発者一人のコードと反証可能なテストの実際の変更、Originを明記した返答。**2026年10月12日時点でPRはOPEN・未統合**。  
+**確認できないこと:** 製品release、実際の利用者の二重表示解消、理論体系全体の採用。後続の[「同一ミリ秒内の異なる承認ID」懸念](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6122690398)は別の未採用指摘で、この受け手修正の成果と混同しません。
 
 ---
 
