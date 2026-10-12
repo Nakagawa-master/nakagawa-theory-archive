@@ -3450,7 +3450,7 @@
         "receiver_reported_verification": "Java 21 mvn test 10/10; Checkstyle and SpotBugs clean; author reports a 34,652-double cross-check against Node 22 on subnormals, MIN_NORMAL, exponent boundaries and sampled bit patterns with zero mismatches.",
         "test_source": "https://github.com/QwenLM/qwen-code/blob/f4c4934170866a88dfb2e41f7e963c35108d9e47/packages/sdk-java/managed-agent-server/src/test/java/com/alibaba/qwen/code/managedagent/store/ManagedEventEnvelopesTest.java",
         "independent_attribution": "The subnormal counterexample and repair were found/performed by receiving author wenshao, not credited to Nakagawa Master. The original version overflow review is separately source-credited.",
-        "status": "RESOLVED IN SOURCE/TESTS at f4c4934, PR remains OPEN and unmerged; 34,652 comparisons are author-reported, not independently repeated by this archive."
+        "status": "RESOLVED IN SOURCE/TESTS at f4c4934; this PR subsequently MERGED upstream at aaf97b8 on 2026-10-12T08:35:15Z. The 34,652 comparisons remain receiver-author-reported, not rerun here."
       },
       "current_stage": "third_party_receiver_implementation_merged",
       "source_snapshot": {
@@ -3468,16 +3468,16 @@
       },
       "public_human_route": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/README.md",
       "not_claimed": [
-        "unresolved subnormal digest parity fixed",
         "same receiving author is a new distinct adopter/person",
         "production exploit or live MQ transport exposure",
         "independent user or separate AI model ran this archive's optional task",
         "the entire original theory corpus was adopted or is verified true",
         "broad person recognition or first intermediate goal achieved",
         "stable tagged release containing upstream merge",
-        "end-user installation/usage of MQ2a Java mirror"
+        "end-user installation/usage of MQ2a Java mirror",
+        "all TypeScript digest validation limits are faithfully mirrored in Java before future MQ2b wiring"
       ],
-      "verification_boundary": "Original Nakagawa Java v-long overflow defect produced receiving developer's own corrected parser and JUnit tests explicitly citing review (C2), and is now verified upstream MERGED (C3) in aaf97b8 on Oct 12 08:35:15Z. Same author separately discovered and fixed subnormal-number digest issue; do not attribute it to Nakagawa. No proved release/deploy/wired MQ2a runtime, second newly adopting recipient, independent AI run or mass person-origin recognition.",
+      "verification_boundary": "Original Nakagawa Java v-long overflow defect produced receiving developer's own corrected parser and JUnit tests explicitly citing review (C2), and is now verified upstream MERGED (C3) in aaf97b8 on Oct 12 08:35:15Z. Same author separately discovered and fixed subnormal-number digest issue; do not attribute it to Nakagawa. No proved release/deploy/wired MQ2a runtime, second newly adopting recipient, independent AI run or mass person-origin recognition. Post-merge review-bot reported an additional source-checkable JSON-depth bound disparity (separate third-party discovery, no present live MQ2a consumer); this does not negate the credited version regression's merge and cannot be presented as a Nakagawa-origin report.",
       "upstream_merge": {
         "verified": true,
         "pr": "https://github.com/QwenLM/qwen-code/pull/13940",
@@ -3490,6 +3490,18 @@
           "packages/sdk-java/managed-agent-server/src/test/java/com/alibaba/qwen/code/managedagent/store/ManagedEventEnvelopesTest.java"
         ],
         "source_bounded_credit": "The preexisting same Qwen recipient independently integrated a concrete Java version overflow correction and regression explicitly citing Nakagawa-master's review. This is genuine C3 maturation, NOT a second new individual, product release or independent real user use."
+      },
+      "post_merge_unresolved_non_runtime_validation_gap": {
+        "origin": "Qwen's independent sandboxed review-bot, NOT Nakagawa Master's original version-overflow report",
+        "source": "https://github.com/QwenLM/qwen-code/pull/13940#issuecomment-6120198458",
+        "stage": "observed in merged-head source, not verified closed; pre-MQ2b integration check",
+        "independent_agent_result": "The sandbox reviewer reported 17,939 passed / 8 failed scripted assertions. The fail group concerns two validation bounds not mirrored, chiefly the TypeScript maxJsonDepth=64 limit: 7 depth cells in the reported 64..100 range were rejected by TypeScript's managedSessionEventsDigest but Java canonicalJson computed a digest. Another 9 MiB maxTransactionBytes discrepancy was constructed but reviewer found it unreachable for a single already-committed event due to the 1 MiB maxEventBytes write gate.",
+        "checkable_source": "https://github.com/QwenLM/qwen-code/blob/aaf97b869dfcc4cf529ada1b036cad9b18695486/packages/sdk-java/managed-agent-server/src/main/java/com/alibaba/qwen/code/managedagent/store/ManagedEventEnvelopes.java",
+        "test_precondition": "Test only when input bypasses TypeScript producer's existing validation; the Qwen Java MQ2a mirror has no verified runtime consumer at this source snapshot.",
+        "next_receiver_decision": "Before future MQ2b wiring, decide whether to mirror maxJsonDepth in Java's canonicalization and pin side-by-side accepted/rejected nested valid event fixtures. Do not treat maxTransactionBytes as a reachable production defect without another trace.",
+        "not_attributable_to_Nakagawa": "The independently observed depth check and detailed source-specific differential harness belong to the Qwen review bot. Mentioning the bot's findings here does not make them Nakagawa Master discoveries or Qwen maintainer adoption of this public verification task.",
+        "other_reviews": "https://github.com/QwenLM/qwen-code/pull/13940#pullrequestreview-5488302087",
+        "review_scope": "Advisory bot finding after code/test corrections; separate human reviews saw no P0/P1 and approved. PR was merged despite advisory, not evidence of complete future MQ2b parity."
       }
     },
     {
