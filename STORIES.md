@@ -78,6 +78,8 @@ MemberJunctionでは、具体的なAPI境界の指摘が別reviewerにも独立�
 
 ### 別の現場でも、「同じ中川マスターの指摘」はどこに現れた？
 
+**「元に戻せる操作なら、AIに自分の権限を広げさせてもよい？」**　たとえばAIが「実行のたびに人へ確認」から「今後は自動実行」に切り替えられると、設定を戻す前に、まだ許可していない操作が行われるかもしれません。中川マスターは**取り消せることと、本人が自分の許可範囲を広げられることは別**だと[別の著者の設計原稿へ指摘しました](https://github.com/kishibashi3/publications/pull/52#pullrequestreview-5258131687)。著者はこれを第6条件として[自分の著作へ採用・統合](https://github.com/kishibashi3/publications/pull/57)し、別の規範文書にも[引き継ぎました](https://github.com/kishibashi3/publications/pull/58)。さらに、別の開発者がLocal Operatorの同じ境界を[修正して正式リリースまで進めた事実](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11)を受けて、著者自身が[原稿の後続注記を追加したPR #103](https://github.com/kishibashi3/publications/pull/103)を作っています。**この追記PRはまだ未統合**です。同じ著者が再度動いたという現実の変化であって、新しい別人の採用や大勢の読者への広がりを示すわけではありません。
+
 **仕事で使うデータベースが、「この検索には必要な索引がもうあります」と判断した。でも、その索引は本当に探したい項目から始まっていなかったら？**
 
 MemberJunctionの索引提案機能では、計算式が先頭にある複合インデックスから式の位置が消え、後ろにある項目が先頭に見える可能性がありました。中川マスターは、「項目が含まれる」と「最初の項目として使える」を分け、反対向きの二つの検証条件を示しました。別の開発者は [@Nakagawa-masterの指摘を明示的に認め](https://github.com/MemberJunction/MJ/pull/5258#issuecomment-6084898393)、PostgreSQL・MySQLの取得処理とテストを[実際に修正しています](https://github.com/MemberJunction/MJ/commit/5177fcdb5fedb8124b8bdbd4f57b0b19cf63769a)。**このPRはまだ未統合**です。実際の利用者のデータベースで修正が使われた、とまでは言えません。
