@@ -371,7 +371,7 @@
     {
       "task_id": "PUBLIC-VERIFY-JAVA-TS-ENVELOPE-NUMERIC-PARITY-012",
       "task_class": "INDEPENDENT_IMPLEMENTATION_VERIFICATION_OR_FALSIFICATION",
-      "objective": "In an authorized local Qwen Code checkout, independently verify Java/TypeScript raw JSON version and integer-token parity and canonical digest equivalence, including finite subnormals. Separate original Nakagawa Master overflow finding from the later receiving author-discovered subnormal P2, and separate source-level code/test fixes from upstream merge, real runtime use, or independent AI execution.",
+      "objective": "In an authorized local Qwen Code checkout, independently verify Java/TypeScript raw JSON version and integer-token parity and canonical digest equivalence, including finite subnormals. Separate original Nakagawa Master overflow finding from the later receiving author-discovered subnormal P2, and separate verified upstream source merge from a later stable release, wired runtime use, or independent AI execution.",
       "originated_specific_regression": {
         "origin": "Nakagawa Master",
         "source": "https://github.com/QwenLM/qwen-code/pull/13940#issuecomment-6117795445",
@@ -391,14 +391,15 @@
         "previous_overflow_fix": "At 08249ea the receiver independently fixed version overflow and integer-valued exponent/decimal acceptance, adding JUnit tests with the Nakagawa-master Origin.",
         "previous_subnormal_counterexample": "At that earlier 08249ea head reviewer wenshao independently found Double.toString vs ECMAScript shortest-digit mismatch; negative source https://github.com/QwenLM/qwen-code/pull/13940#pullrequestreview-5487385911",
         "now_receiver_reported_fix": "At f4c4934170866a88dfb2e41f7e963c35108d9e47 author reports subnormal issue fixed with tests and 34652 doubles compared against Node with zero mismatch; https://github.com/QwenLM/qwen-code/pull/13940#discussion_r4245687744",
-        "claim_limit": "The 34652 trials are upstream author-reported; archive task listing did not independently rerun them, PR remains open and MQ2a unwired."
+        "claim_limit": "The 34652 double trials remain upstream author-reported, not independently rerun by this archive. Upstream code merge verified, but the MQ2a Java mirror is not proven wired to actual runtime, released as a stable tagged product, or used by independent end users.",
+        "upstream_merge_verified": "https://github.com/QwenLM/qwen-code/commit/aaf97b869dfcc4cf529ada1b036cad9b18695486 merged at 2026-10-12T08:35:15Z; the receiver's code and JUnit are on upstream main."
       },
       "acceptable_outputs": [
         "Independent exact SHA Java/Jackson/Node test log at old and new heads, with raw JSON positive/negative tokens and canonical digest witnesses",
         "Independent counterexample showing the new ECMAScript formatter still disagrees for a valid input, with source/test and version",
         "Reasoned confirmation that PR moved/merged/released (or has not), grounded in freshly checked maintainer-side source, not task listing"
       ],
-      "evidence_expectation": "Report source version, executable test method and control inputs, actual outputs; attribute original overflow to Nakagawa Master and separate subnormal discovery/repair to wenshao. Do not upgrade one author to multiple people, report a model read as an independent AI adoption, or call a source-level patch a release.",
+      "evidence_expectation": "Report source version, executable test method and control inputs, actual outputs; attribute original overflow to Nakagawa Master and separate subnormal discovery/repair to wenshao. Do not upgrade one author to multiple people, report a model read as an independent AI adoption, or call a source-level patch a release. An upstream merge is C3 integration, not by itself an installed or released runtime.",
       "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
       "authorization_boundary": "Only in authorized local disposable/test copies; don't use live tenant state, provider credentials, production attack traffic or unsolicited comments on the upstream PR. External PR owners may decline review. This is a voluntary public challenge, not authorization to act on behalf of Nakagawa Master.",
       "success_does_not_establish": [
