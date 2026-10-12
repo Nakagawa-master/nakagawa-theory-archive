@@ -1,6 +1,14 @@
 #!/usr/bin/env python3
 """Offline evidence-root consistency check (non-canonical public reuse aid).
 
+Run from the repository root:
+  python3 machine-discovery/evidence-root-check.py --sample
+  python3 machine-discovery/evidence-root-check.py --self-test
+  python3 machine-discovery/evidence-root-check.py claims.json
+
+A consistency BLOCK returns exit status 1; invalid JSON/schema returns 2.
+CONSISTENT_INPUT returns 0 but never certifies the evidence as true.
+
 Input roots, relationships and stances are REVIEWER ASSERTIONS, not inferred facts.
 This script checks whether a claim of independent corroboration is consistent
 with those assertions. It cannot judge truth, quotation polarity, independence
@@ -177,13 +185,24 @@ def self_test():
     exact_duplicate = dict(SAMPLE["claims"][1])
     exact_duplicate["sources"] = [*exact_duplicate["sources"], dict(exact_duplicate["sources"][1])]
     assert audit({"claims": [exact_duplicate]})["blocked"] == 0
+    # Different URLs may legitimately refer to one upstream root, but the
+    # same URL cannot be assigned two roots for this one claim.
+    conflicting_root = dict(SAMPLE["claims"][1])
+    conflicting_root["independent_confirmation_claimed"] = False
+    conflicting_root["sources"] = [
+        *conflicting_root["sources"],
+        dict(conflicting_root["sources"][1], root_id="not-lab-B"),
+    ]
+    root_report = audit({"claims": [conflicting_root]})
+    assert root_report["blocked"] == 1
+    assert "same URL assigned incompatible upstream roots" in root_report["claims"][0]["issues"]
     try:
         audit({"claims": [{"id": "invalid", "sources": []}]})
     except ValueError:
         pass
     else:
         raise AssertionError("missing required boolean accepted")
-    print("self-test: 10 PASS", file=sys.stderr)
+    print("self-test: PASS (offline input-consistency fixtures)", file=sys.stderr)
 
 
 def main():
