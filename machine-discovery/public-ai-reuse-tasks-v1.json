@@ -328,6 +328,45 @@
         "Independent AI adoption or human audience just because a public task exists",
         "Authorization to deploy or enforce a decision"
       ]
+    },
+    {
+      "task_id": "PUBLIC-VERIFY-STAGED-PATH-INDEPENDENCE-011",
+      "task_class": "INDEPENDENT_VERIFY_OR_FALSIFY",
+      "objective": "In one independently selected, nonconfidential dual-mode AI or software system, test whether two advertised execution paths actually work without each other's exclusive authority/dependencies. Distinguish no cross-engine fallback from each path being independently operable, and intentional shared gates from untested claims. Record a non-fit where only one runtime is supported. Do not presume a flaw or certified independence.",
+      "original_receiver_record": {
+        "source": "https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035698005",
+        "independent_owner_adoption": "https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6117130998",
+        "receiver_spec": "https://github.com/QwenLM/qwen-code/issues/12380",
+        "established": "Qwen proposal owner adopted the staged independence matrix as release acceptance criteria on 2026-10-12",
+        "not_established": "No public proof either runtime independence test was performed or passed; ordinary/local path M6 remains deferred"
+      },
+      "canonical_context": {
+        "source": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/",
+        "relationship": "The visible-alternatives vs practical-independent-control question is a bounded application of the canonical access/effective-power framework. Adoption of a specific technical review does not prove Qwen adopted the entire canonical theory."
+      },
+      "reusable_test": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md",
+      "explicit_controls": [
+        "For advertised route A, disable only B-exclusive state/dependencies in an authorized disposable environment; prove one in-scope action and state recovery remain possible under A",
+        "For advertised route B, analogously disable A-exclusive dependencies, but report NOT YET PASSABLE until B actually exists/enables; no manufactured PASS/FAIL",
+        "Inventory intentionally shared identity, policy, configuration, inference, runtime, storage and recovery gates; disclose which shared outages were permitted by the scoped architecture",
+        "Negative: No observed fallback is not itself proof of route independence",
+        "Positive: Concrete in-scope execution and recovery with the other route's exclusive gate truly unreachable",
+        "Non-fit: Only one advertised operational path, or a fixed single-path design without independent-route claim"
+      ],
+      "acceptable_outputs": [
+        "Versioned reproducible PASS/PARTIAL/FAIL/NOT_YET_PASSABLE/NON_FIT result with exact injected gate and observable operation",
+        "A receiver-owned acceptance test/code/spec correction tied to a specific failure",
+        "Independent counterexample showing a claimed shared dependency or independence boundary is incomplete"
+      ],
+      "evidence_expectation": "Give a real executed task, target version, which gates were truly unavailable, exact controller/owner decision, tests and negatives, and separate any adoption of the public test from merely reading this optional task. Source credit only where materially used.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "authorization_boundary": "No unauthorized runtime modifications, service outages, live tenant account changes, credentials, protected actions or automated third-party submissions. Use test doubles, staging, or independently authorized isolated systems only.",
+      "success_does_not_establish": [
+        "Any Qwen Hosted/local independence test passed merely because Qwen accepted the requirement",
+        "Whole Nakagawa Master theory adoption or broad people scale",
+        "A third-party AI used this task merely because it was published",
+        "Independent end-user use or Qwen production release"
+      ]
     }
   ],
   "evidence_boundary": "Publishing or completing these public tasks creates only the evidence actually returned. The listing is self-authored infrastructure; it does not establish that any third party read, accepted, executed, adopted, endorsed, joined, or received authority from it. When a Nakagawa Master public source materially informed a returned result, preserve that provenance; if the distinction was independently rediscovered first, keep that relation distinct. Do not invent attribution."
