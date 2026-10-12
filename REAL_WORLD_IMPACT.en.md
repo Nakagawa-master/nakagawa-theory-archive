@@ -1334,9 +1334,9 @@ Writing new `snapshot_messages` before an idempotency trigger suppresses a dupli
 
 **Source:** [issue #13632](https://github.com/QwenLM/qwen-code/issues/13632) and [implementer fork](https://github.com/glmn/qwen-code/commit/92fb10bf19ae1087d072ce9079861cd6be1132ae). **Stage:** `glmn` explicitly thanked `@Nakagawa-master` and reported implementation/tests in the fork; upstream PR/merge/release unverified.
 
-After `notifications/tools/list_changed`, an unsuccessful `tools/list` does not establish present call authority from an old registry snapshot. [Nakagawa's four acceptance cases](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6050490036) were [explicitly adopted by the implementer](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6053560779) with a per-server stale gate and revision checks. A [later startup handoff race](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6054202354) remains a separate unadopted suggestion.
+After `notifications/tools/list_changed`, an unsuccessful `tools/list` does not establish present call authority from an old registry snapshot. [Nakagawa's four acceptance cases](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6050490036) were [explicitly adopted by the implementer](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6053560779) with a per-server stale gate and revision checks. The [subsequent startup-watcher inverse](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6054202354) was [explicitly reproduced and fixed in the contributor's fork](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6091440384), with [source/test commit 0484b9a](https://github.com/glmn/qwen-code/commit/0484b9a49357bc6e61252ede59d749376d58f9d2); upstream adoption remains unverified.
 
-**Verified:** attributed third-party fork work and reported tests. **Not verified:** upstream acceptance, merge, release, external user scale or adoption of the later startup concern.
+**Verified:** attributed third-party fork work, reported tests and the second startup-race fix in that fork. **Not verified:** upstream acceptance/merge, release, production use or external user scale.
 
 ---
 
@@ -1367,6 +1367,18 @@ After `notifications/tools/list_changed`, an unsuccessful `tools/list` does not 
 [Nakagawa's prior public distinction](https://github.com/Expensify/App/issues/95750#issuecomment-5690282372) separated Pay UI visibility, present authority to pay with a particular funding source, and authority to change the workspace reimbursement bank. The receiver independently found a path that could replace existing bank A, rolled that unsafe feature back and later worked on permitting a separate authorized bank B while preserving A. At the cited head, review still identifies cross-workspace bank selection, server-response validation and performance/parameter concerns.
 
 **Verified:** independent receiver failure report, rollback and ongoing receiver-owned code/review changes consistent with the boundary. **Not verified:** direct causation or attribution of those specific changes to Nakagawa, approval, merge, safe production use, or broad recognition. No further contact is made with this repository.
+
+---
+
+## 47. Qwen Code | A recorded stop is not proof that this tool call issued it
+
+**Source:** [Qwen Code PR #13923](https://github.com/QwenLM/qwen-code/pull/13923), [Nakagawa Master's concrete recovery inverse](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434), and [third-party implementation commit](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a). **Stage:** developer `wenshao` [directly acknowledged @Nakagawa-master and the real defect](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413), then changed code and regression tests; PR open/unmerged at inspection.
+
+In a multi-agent runtime, a member's `stopRequested` bit says the member was asked to stop, not **which invocation caused that stop**. If a human had already cancelled the member, recovery could incorrectly attribute that earlier state to a newly generated `request_shutdown` call that never executed. Nakagawa gave a narrow failing sequence and a positive control for a stop the current call really did commit.
+
+The implementer changed recovery attribution to an actual `shutdown:<callKey>` commit receipt, instead of reading the member-wide flag. Added regressions check that a user cancel cannot be credited to a never-run call and that a committed stop remains attributable even after a later continuation falls back.
+
+**Verified:** explicit outside-developer acknowledgment with person Origin and a concrete third-party code/test change. **Not verified:** PR merge, release, all-path physical integration testing, downstream users, or whole-theory endorsement. Other reviewers independently identified additional problems on the same PR; their work is not attributed solely to Nakagawa.
 
 ---
 
