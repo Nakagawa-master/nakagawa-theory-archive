@@ -33,9 +33,11 @@ AIのチーム機能で、**同じ管理者をもう一度知らせただけな�
 
 AIチームの作業を人間が先に中止した後、別のAIが新しく「停止する」という操作を用意したとします。その操作が一度も実行されないままシステムが再開すると、以前の停止記録を見て「今のAIの操作が成功した」と誤解しかねません。
 
-中川マスターは[その取り違えが起きる具体的な順番を示し](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434)、Qwen Codeの開発者 `wenshao` は[「指摘された反例は実在した」と直接答え、呼び出しごとの停止記録とテストを追加しました](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)。[再検証](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116265275)では元の4問題を修正できたとの報告がありましたが、別のテストが初回に1件失敗し原因は未確定、実際のHosted全環境試験も未完了です。PRはまだ未統合です。
+中川マスターは[その取り違えが起きる具体的な順番を示し](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434)、Qwen Codeの開発者 `wenshao` は[「指摘された反例は実在した」と直接答え、呼び出しごとの停止記録とテストを追加しました](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)。[再検証](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116265275)では元の4問題を修正できたとの報告がありましたが、別のテストが初回に1件失敗し原因は未確定、実際のHosted全環境試験も未完了です。PRは2026年10月12日にmainへマージされました。修正全体の動作保証や一般の利用者による実利用・人物認知は未確認です。
 
 AIの作業履歴を読むときも、**「処理は終わっている」と「いまのAIがその処理を実行した」は違う**。状態だけでなく、誰のどの操作の結果なのかを確かめる理由です。
+
+この[修正PR #13923](https://github.com/QwenLM/qwen-code/pull/13923)は**2026年10月12日にmainへマージ**されています（[実際のmerge commit](https://github.com/QwenLM/qwen-code/commit/a9ad92b8df4e110b39c4e27ce86f5953324088a9)）。元のPR全体は別の開発者による実装です。その開発者は[「@Nakagawa-masterから指摘された反例は実在した」と本人の返答で認め、呼出しごとの停止の出所を区別する追加修正を説明](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)しています。**実装がmainへ入ったこと**と**この指摘の起源が一般の利用者に知られたこと**は別です。受け手側のPR本文と調査した一部の本線テストにはこの名前が直接書かれていません。元コメントでは出所を確認できますが、製品利用者による人物認知や別媒体への反復伝播は未確認です。
 
 **他の現場でも、違う二人の開発者がコードを変えています。** MemberJunctionでは、検索用の索引に「その項目が含まれる」と「その項目から始まる」は違うと[中川マスターが指摘](https://github.com/MemberJunction/MJ/pull/5258#issuecomment-6084898393)し、実装者が本人へ直接返答したうえで修正・テストを追加しました。LangGraphでは、AI処理を二つ再開するときの「全体の回答」と「片方だけに渡してよい回答」を区別する[レビュー](https://github.com/langchain-ai/langgraph/pull/9252#pullrequestreview-5467723390)に対応する実装とテストが[追加されています](https://github.com/langchain-ai/langgraph/commit/9a0b96693613e2e5bba4609b5d2c842a79839dbb)。**両PRとも未統合**で、後者の実装者による名前付きの謝意や、一般利用者への普及までは確認できません。
 
