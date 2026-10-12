@@ -3485,9 +3485,9 @@
       "origin_action": {
         "origin": "Nakagawa Master",
         "type": "source_specific_issue_comment",
-        "url": "https://github.com/langchain-ai/langgraph/issues/9253#issuecomment-6074233313",
+        "url": "https://github.com/langchain-ai/langgraph/issues/9253#issuecomment-6074292557",
         "summary": "Proposed a nonduplicate changed-call-order negative regression: after an earlier `research.invoke` checkpoint and ConnectionError, a retry switches to `review.invoke` as the first call. A reset of ordinal alone can alias the stale checkpoint despite a different callee. If stable dynamic call order is required instead, demand an explicit contract boundary and fail-closed behavior.",
-        "verification_note": "The issue page displays the Nakagawa source-specific comment; the URL should be verified as exact before public representation."
+        "verification_note": "The issue page displays the Nakagawa source-specific comment; Verified exact comment URL via GitHub source-native issue comments."
       },
       "first_independent_executed_response": {
         "actor": "jayzuccarelli",
