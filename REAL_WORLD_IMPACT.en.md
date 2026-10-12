@@ -1372,13 +1372,37 @@ After `notifications/tools/list_changed`, an unsuccessful `tools/list` does not 
 
 ## 47. Qwen Code | A recorded stop is not proof that this tool call issued it
 
-**Source:** [Qwen Code PR #13923](https://github.com/QwenLM/qwen-code/pull/13923), [Nakagawa Master's concrete recovery inverse](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434), and [third-party implementation commit](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a). **Stage:** developer `wenshao` [directly acknowledged @Nakagawa-master and the real defect](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413), then changed code and regression tests; PR open/unmerged at inspection.
+**Source:** [Qwen Code PR #13923](https://github.com/QwenLM/qwen-code/pull/13923), [Nakagawa Master's concrete recovery inverse](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434), and [third-party implementation commit](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a). **Stage (rechecked October 12, 2026):** developer `wenshao` [directly acknowledged @Nakagawa-master and the defect](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413), changed code and regression tests, and the PR was **[merged upstream](https://github.com/QwenLM/qwen-code/commit/a9ad92b8df4e110b39c4e27ce86f5953324088a9) at 03:31:17 UTC on October 12, 2026**. No containing stable release or real end-user operation was verified.
 
 In a multi-agent runtime, a member's `stopRequested` bit says the member was asked to stop, not **which invocation caused that stop**. If a human had already cancelled the member, recovery could incorrectly attribute that earlier state to a newly generated `request_shutdown` call that never executed. Nakagawa gave a narrow failing sequence and a positive control for a stop the current call really did commit.
 
 The implementer changed recovery attribution to an actual `shutdown:<callKey>` commit receipt, instead of reading the member-wide flag. Added regressions check that a user cancel cannot be credited to a never-run call and that a committed stop remains attributable even after a later continuation falls back.
 
-**Verified:** explicit outside-developer acknowledgment with person Origin and a concrete third-party code/test change. **Not verified:** PR merge, release, all-path physical integration testing, downstream users, or whole-theory endorsement. Other reviewers independently identified additional problems on the same PR; their work is not attributed solely to Nakagawa.
+**Verified:** explicit outside-developer acknowledgment with person Origin and a concrete third-party code/test change. **Not verified:** a stable release containing this change, all-path physical integration testing, downstream users, or whole-theory endorsement. Other reviewers independently identified additional problems on the same PR; their work is not attributed solely to Nakagawa.
+
+---
+
+## 48. Qwen Code | A huge version token must not become version 1 by integer truncation
+
+**Sources:** [Qwen Code #13940](https://github.com/QwenLM/qwen-code/pull/13940), [Nakagawa Master's precise overflow counterexample](https://github.com/QwenLM/qwen-code/pull/13940#issuecomment-6117795445), and the [receiver's own fix/test explanation](https://github.com/QwenLM/qwen-code/pull/13940#issuecomment-6119217015).
+
+A Java reader and a TypeScript reader must agree on the format version of an AI event envelope. In Java, the integer-valued JSON token `18446744073709551617` could have its high bits discarded by `longValue()`, incorrectly appearing to be `v: 1`. Nakagawa identified this exact source path, gave a bounded numeric negative, and required normal `v: 1` to remain valid.
+
+Receiving developer `wenshao` corrected the version-value comparison and added an [explicit regression for overflowed format versions](https://github.com/QwenLM/qwen-code/commit/08249ea09c2c2108c891d86452ccc2ee5ac1c4e8). The PR was **[merged into Qwen Code](https://github.com/QwenLM/qwen-code/commit/aaf97b869dfcc4cf529ada1b036cad9b18695486) on October 12, 2026**.
+
+**Verified:** independent receiving-author code/test change attributable to the bounded Nakagawa comment, followed by an upstream merge. This is a **second distinct issue addressed by the same developer as case 47**, not evidence of two independent adopting people. Separate subnormal-number findings by the author and independent bot advice are not attributed to Nakagawa. **Not verified:** containing stable release, product-end-user operation, other organizations' spontaneous adoption, or whole-theory endorsement.
+
+---
+
+## 49. Qwen Code | Same-manager notification must not duplicate AI permission handlers
+
+**Sources:** [Qwen Code #13902](https://github.com/QwenLM/qwen-code/pull/13902), [Nakagawa Master's exact duplicate-listener inverse](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6110579188), and the [independent developer's acknowledgment](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6122203679).
+
+In an ACP connection among collaborating AI agents, notifying the **same TeamManager object** twice could register the same approval-event handlers twice, even without changing teams. Nakagawa showed the source path and an intentionally repeated same-object callback, distinguishing it from the ordinary manager-swap path.
+
+Developer `yiliang114` [implemented an idempotent same-manager guard](https://github.com/QwenLM/qwen-code/commit/b1eeae5547283d6b518a72b169b33d1fe6cd1b48). The author then discovered that the original test double used `Set`, hiding duplicate subscriptions; even removing the guard left the test green. The author independently [replaced that fake with duplicate-preserving EventEmitter-like listener semantics](https://github.com/QwenLM/qwen-code/commit/42c5bfc7449297c81ccba653363e235b7016ecdd) and established a mutation-sensitive negative.
+
+**Verified:** one receiving author changed production code and the validity of the regression test and explicitly credited the original review. **As checked October 12, 2026, PR #13902 was still OPEN/unmerged.** **Not verified:** deployed product effect, independent real user experience, or adoption of the theory corpus. The separate [same-millisecond per-approval ID collision hypothesis](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6122690398) remains an unaccepted review, not the accepted fix.
 
 ---
 
