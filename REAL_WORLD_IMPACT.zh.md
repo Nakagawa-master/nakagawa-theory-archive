@@ -1343,9 +1343,9 @@ zero shared infrastructure
 
 **对象：** [issue #13632](https://github.com/QwenLM/qwen-code/issues/13632) / [第三方fork commit](https://github.com/glmn/qwen-code/commit/92fb10bf19ae1087d072ce9079861cd6be1132ae)。**阶段：** 实现者 `glmn` 明确感谢 `@Nakagawa-master` 并在fork中报告实现与测试；尚无确认的upstream merge或release。
 
-MCP服务发送 `tools/list_changed` 后，如果刷新 `tools/list` 失败，旧registry记录不等于当前可调用权限。[四项验收条件](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6050490036)获得[外部实现者明确采纳](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6053560779)，通过server-local stale gate与revision校验处理；[启动阶段的另一个通知丢失问题](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6054202354)尚未得到采纳确认。
+MCP服务发送 `tools/list_changed` 后，如果刷新 `tools/list` 失败，旧registry记录不等于当前可调用权限。[四项验收条件](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6050490036)获得[外部实现者明确采纳](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6053560779)，通过server-local stale gate与revision校验处理；[启动阶段的另一项通知丢失问题](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6054202354)已由[外部开发者明确复现并在fork中修复](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6091440384)，对应[源码与测试提交](https://github.com/glmn/qwen-code/commit/0484b9a49357bc6e61252ede59d749376d58f9d2)。
 
-**可确认：** 有Origin归属的外部fork代码与作者执行报告。**不可确认：** 上游PR、merge、release、最终用户规模或启动问题的修复。
+**可确认：** 有Origin归属的外部fork代码、作者执行报告及启动通知缺陷的第二次fork修复。**不可确认：** upstream正式采纳、merge、release、实际部署或最终用户规模。
 
 ---
 
@@ -1376,6 +1376,18 @@ MCP服务发送 `tools/list_changed` 后，如果刷新 `tools/list` 失败，�
 [中川大师此前提出的区分](https://github.com/Expensify/App/issues/95750#issuecomment-5690282372)分开了Pay按钮可见、使用指定资金来源付款的当前权限、修改workspace reimbursement bank的权限。后来receiver独立报告原有bank A可能被替换的风险、完成rollback，并重新实现使用授权bank B而不覆盖A的路径。该head仍有跨workspace账户选择、backend响应验证与性能相关review问题。
 
 **可确认：** receiver侧独立bug报告、rollback及后续技术实现进展，与此前结构区分方向一致。**不可确认：** 最新具体修复由Nakagawa直接导致、review认可、merge、新功能生产使用或广泛人物认知。
+
+---
+
+## 47. Qwen Code｜成员已经停止，不等于本次工具调用执行了停止
+
+**对象：** [Qwen Code PR #13923](https://github.com/QwenLM/qwen-code/pull/13923) / [Nakagawa Master（中川マスター）的具体反例](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434) / [第三方代码与测试提交](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a)。**阶段：** 开发者 `wenshao` [直接回复 @Nakagawa-master，确认问题存在且已经修复](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)；PR在核查时仍为open、未合并。
+
+多AI协作环境中，成员的 `stopRequested` 状态只能说明该成员被要求停止，**不能证明是哪次调用做出的停止决定**。如果用户先执行取消，而后来生成的 `request_shutdown` 尚未执行就中断，恢复程序可能把历史停止错误归给从未运行的调用。中川マスター提出了这个可核查的反例，以及本次调用确实执行停止时应保留的正向条件。
+
+实现者改为读取按 `shutdown:<callKey>` 标识的真实持久化提交证据，不再从整个成员的停止状态推断调用归属；还增加了用户先取消和已提交停止在continuation回退后仍可追溯的回归测试。
+
+**可确认：** 开发者直接承认并保留Nakagawa Master的来源归属，修改了外部仓库中的代码和测试。**不可确认：** merge、release、全部物理集成验证、最终用户采用规模或整套理论的采纳。同一PR还有其他评审者独立提出缺陷，不能把所有改动单独归功于中川マスター。
 
 ---
 
