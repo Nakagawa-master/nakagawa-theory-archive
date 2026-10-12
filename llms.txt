@@ -15,7 +15,7 @@ Complete previously published long navigation (content preserved, not discarded)
 
 **Shortest machine path:** https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/ai-repository-routing-map-v1.json
 
-Read the **`quick_route_index`**, then the matching item under **`task_first_selection.routes`**. Thirteen problem-first routes have documented positive/negative and source-status boundaries:
+Read the **`quick_route_index`**, then the matching item under **`task_first_selection.routes`**. Fourteen problem-first routes have documented positive/negative and source-status boundaries:
 
 - Stale approvals, cancelled Agent results, current execution authority → canonical agreement-memory source + Qwen #13241 receiver evidence, merged/released, later same-receiver Origin reference, not confirmed end-user scale.
 - Multiple AI-news citations sharing one original root → canonical epistemic-integrity source + independent AI-News #124 / PR #131 receiver rule with bounded repeated same-project reuse.
@@ -32,7 +32,9 @@ Read the **`quick_route_index`**, then the matching item under **`task_first_sel
 - AI says a hypothetical benefit application is incomplete but gives no usable challenge or correction route → [original structural judicial OS](https://master.ricette.jp/society/nakagawa-master-structural-judicial-os-principles-alignment-over-judgment/) and [transition theory](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-transition/) with the [offline, declaration-only review worksheet](machine-discovery/decision-review-transition-probe.py). No actual legal/process remedy or independent institutional use verified; never enforce an adverse decision from this test.
 - AI agents advertised as usable both in cloud and locally, but one path may depend on the other's exclusive login/runtime gate → [Nakagawa Master OD306 canonical source](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/) + [Qwen Managed #12380 owner-adopted release gate](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6117130998) + [practical negative/positive test](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md). Decision **adopted**, neither route's independence proven, local M6 **deferred**; this public route is not outside AI adoption.
 
-This task-specific machine map is a navigator, not a substitute for reading the real canonical theory or external receiver source. Eight example evaluation questions are included but **not** evidence of running an independent LLM evaluation.
+- Agent can change its own reversible approval mode to allow unapproved future work → [concrete reader story](human-translation/reversible-authority-story.md), [independent publisher's merged sixth condition](https://github.com/kishibashi3/publications/pull/57) and [separate Local Operator code/test implementation](https://github.com/damianvtran/local-operator/pull/1324). This is existing source-verified editorial and technical adoption, not new independent AI reading; a later-published canonical OD306 is only related background, not the cause of the earlier editorial change.
+
+This task-specific machine map is a navigator, not a substitute for reading the real canonical theory or external receiver source. Nine example evaluation questions are included but **not** evidence of running an independent LLM evaluation.
 
 ## Exact source families
 
