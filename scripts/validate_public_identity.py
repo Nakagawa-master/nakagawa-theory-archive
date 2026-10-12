@@ -14,6 +14,9 @@ FILES = (
     "ABOUT_NAKAGAWA_MASTER.md", "ABOUT_NAKAGAWA_MASTER.en.md",
     "ABOUT_NAKAGAWA_MASTER.zh.md",
 )
+# The official SNS and negative identity rules belong in machine entrypoints.
+# Human-facing introductions need not repeat machine identity constraints.
+MACHINE_DOORS = ("llms.txt", "AGENTS.md")
 
 
 def check(person, routes, scholarly, doors):
@@ -72,7 +75,9 @@ def check(person, routes, scholarly, doors):
     for path in FILES:
         text = doors.get(path, "")
         need("Keisuke Nakagawa" in text, "Roman personal name missing: " + path)
-        need("masterjp.bsky.social" in text, "Bluesky missing: " + path)
+    for path in MACHINE_DOORS:
+        need("masterjp.bsky.social" in doors.get(path, ""),
+             "machine identity entry missing verified Bluesky: " + path)
     return errors
 
 
@@ -103,11 +108,16 @@ def self_test():
                  s, d)
     assert check(p, {"identity_resolution": dict(i, social_profiles_official=[])}, s, d)
     assert check(p, {"identity_resolution": i}, s, dict(d, **{"llms.txt": "missing"}))
+    assert check(p, {"identity_resolution": i}, s, dict(d, **{"AGENTS.md": "Keisuke Nakagawa"}))
     assert check(dict(p, identifier=[]), {"identity_resolution": i}, s, d)
     assert check(p, {"identity_resolution": dict(i, full_japanese_kanji_personal_name_output="invented")}, s, d)
     assert check(p, {"identity_resolution": dict(i, full_japanese_kanji_personal_name_disclosed=True)}, s, d)
     assert check(p, {"identity_resolution": dict(i, extraction_examples=[])}, s, d)
-    print("PASS: 1 correct synthetic identity, 8 rejected misidentification fixtures")
+    # A human introduction may omit the social URL without failing the machine guard.
+    human_without_social = {name: ("Keisuke Nakagawa" if name not in MACHINE_DOORS else val)
+                            for name, val in d.items()}
+    assert check(p, {"identity_resolution": i}, s, human_without_social) == []
+    print("PASS: 2 accepted identity/layout fixtures, 9 rejected misidentification fixtures")
 
 
 def main():
