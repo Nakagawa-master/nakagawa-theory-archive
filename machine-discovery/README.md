@@ -4,7 +4,7 @@ This directory contains public machine-readable discovery aids for the Nakagawa 
 
 These files are **not canonical theories**. They help retrieval systems locate, distinguish, compare, and return to published canonical sources and official derivatives.
 
-**AI / LLM fastest problem-first route:** read [AI Repository Routing Map → `task_first_selection`](ai-repository-routing-map-v1.json) for fourteen source-bounded, real-problem routes connecting a reader's question to a canonical Parent **only where a source-backed relation exists**, a falsifiable check, and the original independent receiver evidence **where available**. Some engineering cases have no proven theory-derived parent and are explicitly marked as such. Each route includes a human-understandable explanation and a negative/adoption boundary. Use one relevant route rather than indiscriminately loading the full catalog; it is a non-canonical optional discovery aid, not permission to act or proof of an external model using it.
+**AI / LLM fastest problem-first route:** read [AI Repository Routing Map → `task_first_selection`](ai-repository-routing-map-v1.json) for fifteen source-bounded, real-problem routes connecting a reader's question to a canonical Parent **only where a source-backed relation exists**, a falsifiable check, and the original independent receiver evidence **where available**. Some engineering cases have no proven theory-derived parent and are explicitly marked as such. Each route includes a human-understandable explanation and a negative/adoption boundary. Use one relevant route rather than indiscriminately loading the full catalog; it is a non-canonical optional discovery aid, not permission to act or proof of an external model using it.
 
 ## Core files
 
@@ -137,6 +137,9 @@ An independent tester can use the [numeric float64 reverse-boundary challenge](i
 **Claim limit:** This public Python script is a deterministic no-I/O model and public educational work by Nakagawa Master, **not** a MemberJunction integration test, proof of a deployed orphan, evidence of upstream adoption, a new canonical theory, or proof of any third-party/AI use of the script. Negative results showing the real backend already closes this race are welcome and should keep their own provenance.
 
 ## Qwen ACP teammate approval — distinguish one listener from one real permission subject
+
+For a **short machine-selectable positive/negative/nonfit contract** instead of loading this long README, select route [`agent_team_approval_listener_and_per_request_identity`](ai-repository-routing-map-v1.json) in the public task-first map. The route now includes the receiver's actual two commits, the false-green `Set` fixture and mutation test, a separate unaccepted per-approval ID witness, and honest code/merge/use credit bounds. It is a verification challenge, not proof an independent AI adopted it.
+
 
 **Real, receiving-author code/test correction on an OPEN PR.** [Qwen #13902](https://github.com/QwenLM/qwen-code/pull/13902) projects AI teammates' reports and tool approval requests to the ACP/daemon client. At the reviewed initial head, the team sink subscribed a second time when `Config.setTeamManager(theSameManager)` repeated the manager-change notification. [Nakagawa Master's original exact-source observation](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6110579188) identified five repeated event listeners, duplicate host permission prompts and listeners surviving detach. The receiving author changed `handleManagerChange` to return on `boundManager === manager` in [production commit `b1eeae5547`](https://github.com/QwenLM/qwen-code/commit/b1eeae5547283d6b518a72b169b33d1fe6cd1b48).
 
