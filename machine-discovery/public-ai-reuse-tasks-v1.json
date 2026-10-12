@@ -251,6 +251,7 @@
     {
       "task_id": "PUBLIC-VERIFY-STOP-CALL-PROVENANCE-009",
       "task_class": "VERIFY_OR_FALSIFY",
+      "upstream_reference_status": "Qwen Code PR #13923 merged 2026-10-12, one previously attributed receiver implementation chain; downstream release, independent end-user use, and independent adoption of this optional task remain unverified.",
       "objective": "In an independently chosen authorized non-confidential agent/task/workflow system OTHER than Qwen Code, test whether prior human cancellation or another call's stop can be incorrectly attributed to a later tool call that never executed during recovery. Include a positive same-call committed stop that remains recoverable after a restart. Report actual observations, a falsification, or an explicit non-fit; do not assume a bug exists.",
       "portable_regression": {
         "negative": "Human or call K1 stops task A. New call K2 is interrupted before executing stop(A). Recovery of K2 must not claim K2 committed the earlier stop.",
@@ -261,6 +262,8 @@
         "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.en.md",
         "https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434",
         "https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413",
+        "https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116839102",
+        "https://github.com/QwenLM/qwen-code/commit/a9ad92b8df4e110b39c4e27ce86f5953324088a9",
         "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md"
       ],
       "acceptable_outputs": [
@@ -273,7 +276,7 @@
       "authorization_boundary": "Optional public test. Use only existing participant permissions and nonconfidential data, no unapproved live changes, network calls, credential access or automatic external submissions.",
       "success_does_not_establish": [
         "another AI independently adopted the theory merely because a task was listed",
-        "Qwen upstream merge or release",
+        "Qwen stable release containing PR #13923, actual deployment, or independently verified end-user use",
         "user-scale influence or whole-corpus truth",
         "permission for protected side effects"
       ]
