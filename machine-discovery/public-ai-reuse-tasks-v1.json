@@ -367,6 +367,46 @@
         "A third-party AI used this task merely because it was published",
         "Independent end-user use or Qwen production release"
       ]
+    },
+    {
+      "task_id": "PUBLIC-VERIFY-JAVA-TS-ENVELOPE-NUMERIC-PARITY-012",
+      "task_class": "INDEPENDENT_IMPLEMENTATION_VERIFICATION_OR_FALSIFICATION",
+      "objective": "In a local permitted checkout of Qwen Code PR #13940, independently verify Java/TypeScript envelope acceptance boundaries on real JSON text, not just Java BigInteger narrowing, and separately test whether canonical-digest parity holds for finite subnormal payload numbers. Describe what receiver-owned code/tests actually fixed and what is still mismatched at the inspected commit; don't imply a running consumer or deploy on live data.",
+      "originated_specific_regression": {
+        "origin": "Nakagawa Master",
+        "source": "https://github.com/QwenLM/qwen-code/pull/13940#issuecomment-6117795445",
+        "direct_receiver_test": "https://github.com/QwenLM/qwen-code/blob/08249ea09c2c2108c891d86452ccc2ee5ac1c4e8/packages/sdk-java/managed-agent-server/src/test/java/com/alibaba/qwen/code/managedagent/store/ManagedEventEnvelopesTest.java",
+        "receiving_author_confirmation": "https://github.com/QwenLM/qwen-code/pull/13940#issuecomment-6119217015",
+        "receiver_implementation_head": "08249ea09c2c2108c891d86452ccc2ee5ac1c4e8"
+      },
+      "source_first_workflow": [
+        "Read packages/sdk-java/managed-agent-server/src/main/java/com/alibaba/qwen/code/managedagent/store/ManagedEventEnvelopes.java at the exact inspected commit and the corresponding Java regression class before proposing changes.",
+        "Use the actual local Jackson ObjectMapper.readTree -> ManagedEventEnvelopes.parse route and TypeScript parseManagedEventEnvelope(JSON.parse(raw)) on identical otherwise valid envelope JSON. Preserve exact JSON token input and compare acceptance/rejection.",
+        "Positive version controls: raw v 1 and 1.0; integer-value field controls: sequence 1e0 and occurredAt 0.0 should accept for otherwise valid messages.",
+        "Negative format controls: raw v 18446744073709551617 and -18446744073709551615 must be rejected, not converted to v1 with longValue().",
+        "Independent unresolved parity checks: feed accepted cancel.requested payload.target=5e-324, -5e-324, 1e-323 and 1e-322 through the real Java canonical digest and TS digest paths. Record emitted canonical numeric text and digest mismatches, then repeat with a patched implementation if independently changed.",
+        "Nonfit/control: Do not claim wire-service/client exploit; the Java MQ2a mirror is not wired to a production consumer at this version."
+      ],
+      "expected_from_receiver_sources": {
+        "verified_positive": "At inspected head, the receiver reported and wrote tests fixing overflow and integer-valued exponent/decimal acceptance.",
+        "verified_unresolved": "Receiving maintainer's new P2 found Java 4.9e-324 vs JS 5e-324; not fixed as of inspected head.",
+        "source": "https://github.com/QwenLM/qwen-code/pull/13940#pullrequestreview-5487385911"
+      },
+      "acceptable_outputs": [
+        "Independent exact-commit test log with required positive and negative raw JSON tokens, JDK/Jackson/Node versions and observed behavior",
+        "Independent demonstrated counterexample or corrected cross-language canonical digest test with upstream source link",
+        "Reasoned nonfit: this commit/PR moved or no longer contains the stated defect, with fresh linked code and tests"
+      ],
+      "evidence_expectation": "Separate Nakagawa-origin version overflow case, receiver-owned source/test fix, and separately discovered maintainer subnormal issue. State which tests actually ran, what differed, whether a new receiver patch/merge/release exists, and whether a canonical named theory Parent was actually used; never pretend the upstream author's tests are independent execution by this archive.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "authorization_boundary": "Only in authorized local disposable/test copies; don't use live tenant state, provider credentials, production attack traffic or unsolicited comments on the upstream PR. External PR owners may decline review. This is a voluntary public challenge, not authorization to act on behalf of Nakagawa Master.",
+      "success_does_not_establish": [
+        "Production exploit or vulnerability severity",
+        "Merge/release/independent end-user use",
+        "Independent AI ingestion or model self-recognition",
+        "Adoption or truth of any full Nakagawa Master canonical theory",
+        "Reader scale or broad person-Origin recognition"
+      ]
     }
   ],
   "evidence_boundary": "Publishing or completing these public tasks creates only the evidence actually returned. The listing is self-authored infrastructure; it does not establish that any third party read, accepted, executed, adopted, endorsed, joined, or received authority from it. When a Nakagawa Master public source materially informed a returned result, preserve that provenance; if the distinction was independently rediscovered first, keep that relation distinct. Do not invent attribution."
