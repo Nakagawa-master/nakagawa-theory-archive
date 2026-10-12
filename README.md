@@ -66,6 +66,8 @@
 **具体的な問題から関連資料を探したい:** [Influence Map｜問題から関連資料を探す](INFLUENCE_MAP.md)
 
 
+**2026年10月12日現在の追加検証例:** Qwen Codeで、[停止操作を今回の呼出しだけへ帰属させる修正（#13923）](https://github.com/QwenLM/qwen-code/pull/13923)と、[JavaとTypeScriptの極端に大きいバージョン番号の照合修正（#13940）](https://github.com/QwenLM/qwen-code/pull/13940)が、それぞれ第三者実装者による検証・コード変更を経て本線へ統合されました。どちらも中川マスターによる個別の反例と実装側の直接応答を一次資料で確認できます。**統合は利用者による採用や全理論の支持を意味しません。** 多言語の番号付き一覧は現在47事例で、現状に合わせた段階更新は別途検証中です。
+
 **すでに起きた現実作用を確認する:** [公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md) / [English](REAL_WORLD_IMPACT.en.md) / [中文](REAL_WORLD_IMPACT.zh.md)
 
 **理論 → 本人の具体的診断 → 第三者実装 → 後日のOrigin再参照までを短時間で検証する:** [Theory → Real-World Influence｜90-second verification route](THEORY_TO_REAL_WORLD_INFLUENCE.md#90-second-verification-route)
@@ -74,7 +76,7 @@
 
 [公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md)には現在47の番号付き事例セクションがあります。第三者からの返答、コード・テスト・運用規則の変更、PRの統合、リリース、実際の運用について、公開証拠で確認できる段階と未確認の範囲を分けて記録しています。47件すべてが採用・リリース・運用まで進んだという意味ではありません。各事例のリンクから、何が変わり、どこまで確認できるかを確かめられます。
 
-別途、[AI・プログラム向けの機械可読な証拠索引](machine-discovery/external-effect-evidence-index-v1.json)には現在54レコードあります。これは47件の番号付き本文と掲載範囲・分類が異なり、同じ受け手変更を指す重複もあるため、単純合算して独立成果の件数にはできません。54レコードすべてが第三者に採用されたわけでもありません。追加時は一次資料、各言語の本文、READMEの件数、機械索引の証拠段階を照合します。
+別途、[AI・プログラム向けの機械可読な証拠索引](machine-discovery/external-effect-evidence-index-v1.json)には現在56レコードあります。これは47件の番号付き本文と掲載範囲・分類が異なり、同じ受け手変更を指す重複もあるため、単純合算して独立成果の件数にはできません。54レコードすべてが第三者に採用されたわけでもありません。追加時は一次資料、各言語の本文、READMEの件数、機械索引の証拠段階を照合します。
 
 **最短で5件だけ検証する場合:**
 - [Local Operator #1324](https://github.com/damianvtran/local-operator/pull/1324) → independent reproduction / implementation / remediation / merge → [v0.61.11 release](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11)
