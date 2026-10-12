@@ -1397,13 +1397,56 @@
         "source_head": "61b929040334b6391bc1ad2b4b34dcabd294faaa",
         "changed_chapter": "https://github.com/kishibashi3/publications/blob/61b929040334b6391bc1ad2b4b34dcabd294faaa/docs/ai/agent-design/chapter-05.ja.md",
         "concrete_change": "Chapter 5 condition 6 retains as-of-2026-09-20 unresolved statement and adds a dated 2026-10-12 paragraph: issue resolved, different developer fixed in PR 1324 and release v0.61.11, while limiting to source evidence and the independent structural axes.",
-        "stage": "receiver_owned_new_human_readable_editorial_code_PR_OPEN_UNMERGED_C2",
+        "stage": "receiver_owned_human_book_chapter_merged_to_main_C3",
         "not_claimed": [
           "new receiving human identity beyond existing author",
-          "merged PR #103 or GitHub Pages chapter updated",
+          "independent GitHub Pages deploy verified after this exact merge",
           "independently audited author operations conventions",
           "new mass audience/person-Origin adoption",
           "full theory independently validated"
+        ],
+        "merge": {
+          "base": "main",
+          "merged_at_utc": "2026-10-12T11:51:42Z",
+          "commit": "0d1ac5e564298d5a5b9758eabc7ee27a58c6a9ad",
+          "url": "https://github.com/kishibashi3/publications/commit/0d1ac5e564298d5a5b9758eabc7ee27a58c6a9ad",
+          "bounded_meaning": "Independent receiving author merged concrete chronological source clarification into publisher main. Not a second new author, not external reader use or proven GitHub Pages deploy."
+        },
+        "changed_chapter_main": "https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md"
+      },
+      "follow_on_contract_owner_departure_2026_10_12": {
+        "source_origin": "https://github.com/kishibashi3/publications/issues/92#issuecomment-6058017201",
+        "origin_name": "Nakagawa Master",
+        "owner_acceptance_and_narrowing": "https://github.com/kishibashi3/publications/issues/92#issuecomment-6123432848",
+        "independent_receiver": "kishibashi3, SAME preexisting editor/author as PR #57/#58/#103, not another independent person",
+        "accepted_distinction": "Binding force of an already agreed multi-Cell Contract is separate from authority of the human who can approve NEW Contract revisions.",
+        "receiver_narrower_correction": "Only approval of revision to that exact Contract is suspended while the owner is absent. Previously approved versions may still be adopted by Cells; other Cells' autonomous authorities do not become universally paused.",
+        "receiving_norm_PR": "https://github.com/kishibashi3/publications/pull/102",
+        "merge": {
+          "verified": true,
+          "merged_at_utc": "2026-10-12T11:56:04Z",
+          "commit": "b376b06d3a41196cc3771edebd34287ce54a2f08",
+          "url": "https://github.com/kishibashi3/publications/commit/b376b06d3a41196cc3771edebd34287ce54a2f08",
+          "base_branch": "docs/eaa-working-notes",
+          "not_verified_in_main_or_public_site": true
+        },
+        "actual_changed_file": "drafts/enterprise-agentic-agile/core.md",
+        "specific_changes": [
+          "Owner who no longer belongs to any contracting Cell no longer approves new revisions; preexisting Contract version remains binding.",
+          "Successor must be agreed by contracting Cells; previous owner/CelI hierarchy/agent assertion cannot alone confer approval authority.",
+          "Pending revisions do not auto-pass upon succession.",
+          "Previously allowed stop or cancel remains; urgency and reversibility do not mint new authority."
+        ],
+        "remaining_unresolved": "https://github.com/kishibashi3/publications/issues/92#issuecomment-6123794027",
+        "remaining_condition": "Who records the owner's departure or succession and how other Cells observe that fact still unresolved; terminology and Cell reorganization reading remain documented follow-up.",
+        "source_stage": "C3_RECEIVER_OWNED_WORKING_BRANCH_MERGE_ONLY",
+        "not_claimed": [
+          "merged to main",
+          "deployed to reader-facing GitHub Pages",
+          "a new independent editor or externally observed ordinary user",
+          "experimental evidence that whole Nakagawa original theory body is correct",
+          "the owner's narrowing was solely Nakagawa's original wording",
+          "any revenue, consultation or scale"
         ]
       }
     },
