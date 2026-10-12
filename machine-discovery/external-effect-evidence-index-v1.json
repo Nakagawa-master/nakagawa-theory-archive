@@ -1447,7 +1447,22 @@
           "experimental evidence that whole Nakagawa original theory body is correct",
           "the owner's narrowing was solely Nakagawa's original wording",
           "any revenue, consultation or scale"
-        ]
+        ],
+        "approval_record_PR108": {
+          "receiving_PR": "https://github.com/kishibashi3/publications/pull/108",
+          "repository": "kishibashi3/publications",
+          "current_state": "OPEN_UNMERGED_C2_RECEIVER_OWNED_LEDGER_PROPOSAL",
+          "receiving_branch": "docs/eaa-working-notes",
+          "head_at_source_check": "bf600fe5dada903b7a22e19da3836afb78934f52",
+          "path": "drafts/norms/APPROVALS.md",
+          "receiving_editor": "kishibashi3 (same already credited person)",
+          "actual_source_patch": "Two new existing-ledger rows only: 10 = owner approval report for EAA Core v4 at PR #102 head 4f12f32c; 11 = application at PR #102 merge b376b06.",
+          "upstream_order_dependency": "https://github.com/kishibashi3/publications/pull/107",
+          "upstream_order_status": "PR #107 merged into the same working branch at 2026-10-12T12:14:25Z; author rebased #108 from 4 added rows to only new rows 10 and 11.",
+          "origin_provenance": "Public ledger row 10 explicitly links the actual Nakagawa Master source proposal https://github.com/kishibashi3/publications/issues/92#issuecomment-6058017201; it independently differentiates original outside proposal from change proposer/philosopher, owner approver and later ledger writer.",
+          "owner_approval_evidence_limit": "The purported owner authorization is operator-relayed private speech for an earlier head; later head's version number changes. Author explicitly documents that no public owner-authored approval of exact current SHA is provided and that the proposer drafted the approval row. Do not equate an asserted ledger row, editor's records, actual owner signature and execution authorization.",
+          "no_new_credit": "Same recipient as PR #102 and #103; new concrete recipient-owned source ledger patch but no new person, merged approval ledger, publicly inspectable private owner approval, downstream user or AI adoption."
+        }
       }
     },
     {
