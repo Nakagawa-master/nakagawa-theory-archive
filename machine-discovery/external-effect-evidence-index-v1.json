@@ -3476,6 +3476,47 @@
         "broad person recognition or first intermediate goal achieved"
       ],
       "verification_boundary": "Original Nakagawa Master long-overflow bug prompted independently receiving author-owned parser correction and specifically crediting JUnit tests at 08249ea; a distinct maintainer-discovered subnormal-number digest defect was independently corrected at f4c4934 with author-reported 10/10 tests and 34,652 Node comparison cases. Neither source/test correction is yet a confirmed merge, release, service deployment, independent downstream person or actual other-AI adoption."
+    },
+    {
+      "case_id": "langgraph-9253-retry-subgraph-namespace-call-identity-two-independent-regression-checks",
+      "topic": "Retries and changing subgraph call order must not treat a previous callee's checkpoint as another callee's current result.",
+      "external_repository": "langchain-ai/langgraph",
+      "issue": "https://github.com/langchain-ai/langgraph/issues/9253",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "source_specific_issue_comment",
+        "url": "https://github.com/langchain-ai/langgraph/issues/9253#issuecomment-6074233313",
+        "summary": "Proposed a nonduplicate changed-call-order negative regression: after an earlier `research.invoke` checkpoint and ConnectionError, a retry switches to `review.invoke` as the first call. A reset of ordinal alone can alias the stale checkpoint despite a different callee. If stable dynamic call order is required instead, demand an explicit contract boundary and fail-closed behavior.",
+        "verification_note": "The issue page displays the Nakagawa source-specific comment; the URL should be verified as exact before public representation."
+      },
+      "first_independent_executed_response": {
+        "actor": "jayzuccarelli",
+        "url": "https://github.com/langchain-ai/langgraph/issues/9253#issuecomment-6077084784",
+        "observed": "The contributor explicitly addressed @Nakagawa-master, ran the variation after counter reset and reported RESEARCH with review never invoked; current main (without that reset) returns REVIEW. Concluded reset-alone is unsafe under altered call order and suggested checking checkpoint callee identity; maintainer contract decision still pending.",
+        "stage": "independent_contributor_executed_negative_test_and_revised_design"
+      },
+      "second_independent_executed_response": {
+        "actor": "epistemedeus",
+        "url": "https://github.com/langchain-ai/langgraph/issues/9253#issuecomment-6090311539",
+        "evidence_repository": "https://github.com/epistemedeus/pilot/tree/f4e2ddb179b4943aeb1e804d05a25a2659912e49/overview/research/phase-20261009/outside-workflow-restoration-129300",
+        "reported": "Independently reran original bug and changed-call-order example on official LangGraph source 12aeb0..., and reports eight offline cases with a local stateless-subgraph alternative. `checkpointer=False` recovers REVIEW but loses inner checkpoint, interrupts, inspection and durability; not equivalent to a checkpoint-preserving fix.",
+        "attribution_limit": "Second participant refers to changed-call-order example in issue, but does not explicitly name Nakagawa Master in own comment. Evidence of a tested scenario and third-party contribution, not verified new person-origin recognition."
+      },
+      "current_stage": "two_distinct_external_source_native_executed_checks_and_callee_identity_design_revision_no_upstream_fix",
+      "current_issue_state": "OPEN at 2026-10-12 source check; no linked fix PR or merge verified",
+      "causal_context": {
+        "technical_boundary": "Historical ordinal/position is not current callee identity after a retry or changed branch; a previously valid checkpoint must not be treated as proof that this different task executed.",
+        "canonical_theory": "No direct evidence that the named Nakagawa Master theory corpus was read or endorsed; this is a bounded original technical inverse from a source-specific review."
+      },
+      "not_claimed": [
+        "merge or changed LangGraph library code",
+        "acceptance by LangGraph maintainers of final contract",
+        "independent commercial deployment or released fix",
+        "second participant independently recognized Nakagawa Master as an influential person",
+        "large recurring person-origin or media exposure",
+        "whole theory corpus adoption"
+      ],
+      "verification_boundary": "Already-existing Oct 9 external actions now source-audited: one participant expressly attributes and re-runs Nakagawa's inverse; another executes a bounded related offline alternative and supplies a public reproduction. Two individuals, same issue/repository, no C3, release or broad C7. This archive write itself creates no new external receiver change."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
