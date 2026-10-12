@@ -516,6 +516,54 @@
         "Canonical complete-theory endorsement or definitive future contract policy",
         "Published EAA stable main/site release or active organization use"
       ]
+    },
+    {
+      "task_id": "PUBLIC-VERIFY-NAMED-CUSTOM-PROVIDER-CREDENTIAL-SOURCE-014",
+      "task_class": "INDEPENDENT_TECHNICAL_PROVENANCE_AND_NEGATIVE_CONTROL",
+      "objective": "When a configured named custom AI endpoint appears to have zero available models, isolate whether the catalog probe used the explicit selected endpoint's credential or a generic unrelated ambient environment credential. Keep original bug authorship and the separate new unaccepted review apart.",
+      "receiving_repository_source": "https://github.com/NousResearch/hermes-agent/pull/137200",
+      "actual_source_file": "https://github.com/NousResearch/hermes-agent/blob/07a77dd4c155937e240704b148493895ac5331f4/hermes_cli/models.py",
+      "independent_receiver_origin": "The Hermes PR author independently discovered and fixed two named custom model-discovery bugs. This task does NOT claim that Nakagawa Master discovered those original bugs or that his original theory was the implemented cause.",
+      "new_separate_nakagawa_review": "https://github.com/NousResearch/hermes-agent/pull/137200#pullrequestreview-5491831766",
+      "review_stage": "A distinct negative regression suggested publicly by Nakagawa Master; source patch not yet corrected by receiving author, PR OPEN at the recorded source check.",
+      "source_control_boundary": "model.provider: custom:acme and providers.acme.api_key or providers.acme.key_env identify the target provider, whereas unrelated generic global variables can be present in a multi-provider user environment. Source currently picks some generic values ahead of the named source. The same source helper may be changed later: fresh-read before evaluating.",
+      "hypothetical_test_cases": [
+        {
+          "case_id": "named-key-plus-unrelated-global",
+          "inputs": "Named custom:acme has explicit local api_key='named-test'; environment also has OPENAI_API_KEY='unrelated-test'; mock fetch_api_models and capture key; NO network.",
+          "expected": "The intended source-bound identity result should use 'named-test' for named provider catalog. At reviewed head current branch ordering appears to capture 'unrelated-test' first, demonstrating remaining failure. Distinguish proposed expected fix from actual current behavior."
+        },
+        {
+          "case_id": "named-key-env-plus-unrelated-global",
+          "inputs": "Named custom:acme has key_env ACME_TEST_KEY='named-env-test' and unrelated CUSTOM_API_KEY='unrelated-test'; mock catalog probe only.",
+          "expected": "For named provider, key_env resolves 'named-env-test'; current logic picks unrelated key first when present."
+        },
+        {
+          "case_id": "named-provider-with-no-generic-env",
+          "inputs": "Named acme entry configured correctly; remove unrelated generic key env vars, as upstream author's current tests do.",
+          "expected": "Configured named provider credential reaches catalog probe; this is a positive existing upstream control, not proof for ambient-conflict negative."
+        },
+        {
+          "case_id": "anonymous-custom-compatibility",
+          "inputs": "The bare anonymous 'custom' provider with model.api_key and local configured endpoint; no named entry.",
+          "expected": "Existing anonymous custom behavior remains unchanged after any fix."
+        },
+        {
+          "case_id": "independent-usage-evidence",
+          "inputs": "Ask whether a real external agent/user re-ran the negative and reported a fix.",
+          "expected": "No independent adoption, maintainer fix, CI run or release can be inferred from this published task or the review alone."
+        }
+      ],
+      "safe_execution": "Use an isolated local/authorized repository, dummy keys and a mocked fetch_api_models; do not send a real token to a third-party endpoint or expose API secrets in any report.",
+      "human_decision": "When a model list seems empty after update, confirm configured provider and its specific credential source before concluding the provider was removed. Reproduction in this context is a proposed source-level test, not a diagnosed end-user incident.",
+      "evidence_expectation": "Report exact checked commit and test output, current vendor-source precedence, the original external PR author's independent fix and the new unaccepted Nakagawa review separately. Record whether a receiving author independently changed code/test and whether actual users adopted it.",
+      "authorization_boundary": "Opt-in local safe analysis only. Does not authorize posting, credential use, remote network probes, repository changes, or impersonating the GitHub reviewer.",
+      "success_does_not_establish": [
+        "Full Nakagawa theory corpus adopted by Hermes",
+        "PR review accepted/merged/released without independent source verification",
+        "Production incident, credential leak, or real user impact",
+        "One more human adopter or autonomous AI use from this task page alone"
+      ]
     }
   ],
   "evidence_boundary": "Publishing or completing these public tasks creates only the evidence actually returned. The listing is self-authored infrastructure; it does not establish that any third party read, accepted, executed, adopted, endorsed, joined, or received authority from it. When a Nakagawa Master public source materially informed a returned result, preserve that provenance; if the distinction was independently rediscovered first, keep that relation distinct. Do not invent attribution."
