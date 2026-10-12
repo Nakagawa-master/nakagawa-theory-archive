@@ -198,6 +198,16 @@
       ],
       "canonical_source": false,
       "receiver_verified_case": true
+    },
+    {
+      "id": "contract_stays_effective_when_human_revision_owner_departs",
+      "when": [
+        "a multi-team Contract owner leaves the team but the existing signed Contract remains in force",
+        "an AI/governance assistant must distinguish who may approve Contract revisions from whether parties still must honor the current version",
+        "a successor Contract owner is selected and pending revisions must not become approved merely from succession"
+      ],
+      "canonical_source": false,
+      "receiver_verified_case": true
     }
   ],
   "task_first_selection": {
@@ -698,6 +708,38 @@
         },
         "plain_language_return": "A team of AI tools can ask a human for permission. If the same notification listener is registered twice, the user may be asked twice for one action. Nakagawa Master pointed out the exact duplicate-subscription path in Qwen Code; the receiving developer fixed it and then fixed a flawed test that had hidden this type of regression. A distinct possible approval-ID collision still needs receiver verification.",
         "independent_test_gate": "Check both actual receiver commits, deliberately remove the guard under local permission and require the test to fail, separately test two approvals with the same timestamp but different commands, and verify actual merge/release/user use later. Do not infer that this public route was used by another AI or that a whole theory was adopted."
+      },
+      {
+        "id": "contract_stays_effective_when_human_revision_owner_departs",
+        "matched_problem": [
+          "A multi-Cell agreement has an owner who was approved to authorize revisions; the person leaves every contracting Cell. Determine exactly which approval stops and which existing contractual effect and Cell-level adoption remain intact.",
+          "An AI governance reviewer needs to evaluate an independently edited protocol where reassignment of the decision-maker must not retroactively create approvals or erase earlier commitments."
+        ],
+        "falsifiable_distinction": "Separate the continuing normative validity of a mutually adopted Contract version from the departed human's live permission to APPROVE NEW REVISIONS. Only new revision approval by that former owner ceases; a pre-approved version may still be adopted by contracting Cells. Succession restores one approving person after required contracting-Cell agreement, NOT past or pending document-version acceptance.",
+        "canonical_parent": null,
+        "canonical_relation": "This bounded third-party EAA author decision was directly triggered by an independently inspectable Nakagawa Master comment on publications issue #92, then independently narrowed by the editor. No specific later Nakagawa canonical Parent has been established as the chronological cause and no whole-theory adoption is inferred.",
+        "machine_theory_selector": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+        "human_first_source": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/STORIES.md",
+        "runnable_or_falsifiable_task": {
+          "negative_control": "Owner A leaves all contracting Cells. If A approves a new Contract revision, reject that A approval; if A's former Cell unilaterally appoints B with no contracting-Cell agreement, reject B's authority; if B is elected correctly, any previously unapproved revision remains unapproved.",
+          "positive_control": "A previously valid Contract remains effective for its contracting Cells when A departs. A version authorized before departure can still be adopted by contracting Cells under their OWN unchanged adoption procedures. Previously permitted emergency stop/cancel remains usable.",
+          "narrowing_control": "Do NOT freeze all new Cell-level authorizations or later adoption of a previously approved version. The receiving EAA editor explicitly narrowed Nakagawa's broader suggested stopping condition to exactly 'approval of revision of this Contract'.",
+          "unresolved_control": "Record of departure and successor effective time/notice to other Cells remains a separate unresolved rule in issue #92; neither invent a unique registrar nor treat lack of record as sufficient proof of continuing authority.",
+          "non_fit": "If there is no shared multi-party Contract owner / amendment-approval distinction or no contracting-Cell adoption protocol, this case alone cannot determine authority in another legal or organizational system.",
+          "execution_boundary": "This is a source-based norm and a set of human-checkable hypothetical controls, not legal advice, an authorized agent action, verified runtime implementation, or independently run third-party test. Confirm the original EAA text and latest branch before applying anywhere."
+        },
+        "external_observation": {
+          "nakagawa_source_comment": "https://github.com/kishibashi3/publications/issues/92#issuecomment-6058017201",
+          "editor_independent_adoption_and_correction": "https://github.com/kishibashi3/publications/issues/92#issuecomment-6123432848",
+          "receiver_merged_PR": "https://github.com/kishibashi3/publications/pull/102",
+          "receiver_merged_commit": "https://github.com/kishibashi3/publications/commit/b376b06d3a41196cc3771edebd34287ce54a2f08",
+          "receiving_base": "docs/eaa-working-notes (NOT main)",
+          "unresolved_editor_report": "https://github.com/kishibashi3/publications/issues/92#issuecomment-6123794027",
+          "parallel_distinct_main_book_maturation": "https://github.com/kishibashi3/publications/pull/103",
+          "verified_upper_bound": "Same already-counted publisher independently accepted and narrowed Nakagawa's separate #92 contribution, authored four normative paragraphs and merged PR #102 to its working branch; distinct PR #103 merged a previous source-history fix to publisher main. Neither is a second independent receiving person, deployed EAA website, real operator practice, legal norm or new AI adopter."
+        },
+        "plain_language_return": "When the person appointed to approve contract changes leaves the group, the existing agreement does not disappear. The groups can still follow their previously approved agreement; the former approver cannot approve new amendments. Nakagawa Master proposed this distinction to an outside author, who independently narrowed what must stop and integrated four new rules into their EAA draft branch. The separate published agent-design chapter was also updated by the same author; no fresh reader scale is proven.",
+        "independent_test_gate": "Before real use, have another independent reviewer run both (a) departed-owner rejection and (b) existing-approved-version continued adoption and confirm the precise current project authority model and unresolved registrar. Verify that a later author-owned PR actually integrates the missing recorder rule before claiming closure; citations/AI reading alone do not prove independent reuse."
       }
     ],
     "output_contract": {
@@ -761,6 +803,11 @@
         "question": "A policy lets an AI change its own approval setting from ask to auto, then switch it back. Is this safely delegable because the change is reversible, and did a different human author actually add the missing boundary to a published agent-design book?",
         "expected_route": "reversible_config_change_cannot_mint_agent_authority",
         "must_not_claim": "that a reversible setting change is authority-neutral, that a 2026-09-30 theory caused a 2026-09-20 edit, that book adoption proves every AI safe, that the same author's two writings are two independent authors, or that the map was independently used"
+      },
+      {
+        "question": "An agreement among three teams remains valid, but its only amendment approver leaves every signatory team. May the old approver still change it; must a previously approved version stop being adopted; does naming a successor ratify a pending new version?",
+        "expected_route": "contract_stays_effective_when_human_revision_owner_departs",
+        "must_not_claim": "that all Contract actions or all Cell-level permissions are frozen, that already approved versions lose validity, that successor selection approves prior pending amendments, that a working-branch merge is a public main/release, or that different PRs by the same author are independent people"
       }
     ]
   },
