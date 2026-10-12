@@ -3406,6 +3406,70 @@
         "ci": "At author report time Java 17 job failed during Git checkout, before compile/test; other CI jobs running. CI later status requires separate fresh verification.",
         "limits": "No verified real Hosted physical full-stack E2E, product release containing this merged PR, independent end-user use, or new second adopting recipient. PR later merged 2026-10-12; earlier self-review was a pre-merge evidence snapshot."
       }
+    },
+    {
+      "case_id": "qwen-13940-java-envelope-oversized-version-parity-implemented",
+      "topic": "An overlong JSON numeric format version can be truncated to v1 by Java longValue(), despite TypeScript rejecting the same wire token; receiver implemented a direct parity regression fix.",
+      "external_repository": "QwenLM/qwen-code",
+      "pull_request": "https://github.com/QwenLM/qwen-code/pull/13940",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "source_specific_pull_request_comment",
+        "url": "https://github.com/QwenLM/qwen-code/pull/13940#issuecomment-6117795445",
+        "reviewed_head": "a115d435ee08973e43040d64e2acec1a7b6229bc",
+        "summary": "Original nonduplicate raw version-token inverse, using v=18446744073709551617 and a negative overflow counterpart; Java BigInteger.longValue() returns 1 despite that JSON value not representing format 1. Requested a real Jackson ObjectMapper fixture and genuine v:1 positive control; original private JDK/Node witness was not a Jackson test."
+      },
+      "independent_receiver_confirmation": {
+        "actor": "wenshao",
+        "source": "https://github.com/QwenLM/qwen-code/pull/13940#pullrequestreview-5486859275",
+        "description": "The actual PR author independently ran ObjectMapper.readTree -> ManagedEventEnvelopes.parse plus Node 22 direct parser check; specifically linked Nakagawa's previously supplied overflow finding as reproduced."
+      },
+      "independent_receiver_implementation": {
+        "actor": "wenshao",
+        "head_commit": "08249ea09c2c2108c891d86452ccc2ee5ac1c4e8",
+        "source": "https://github.com/QwenLM/qwen-code/pull/13940#issuecomment-6119217015",
+        "production_source": "https://github.com/QwenLM/qwen-code/blob/08249ea09c2c2108c891d86452ccc2ee5ac1c4e8/packages/sdk-java/managed-agent-server/src/main/java/com/alibaba/qwen/code/managedagent/store/ManagedEventEnvelopes.java",
+        "receiver_regression": "https://github.com/QwenLM/qwen-code/blob/08249ea09c2c2108c891d86452ccc2ee5ac1c4e8/packages/sdk-java/managed-agent-server/src/test/java/com/alibaba/qwen/code/managedagent/store/ManagedEventEnvelopesTest.java",
+        "code_change": "Envelope v checks numeric equality via doubleValue() rather than truncating Jackson integral BigIntegerNode with longValue(); numeric sequence/time checks are value based rather than requiring integral Jackson node kind.",
+        "positive_negative_tests": [
+          "v=1 and v=1.0 accepted",
+          "v=18446744073709551617 rejected",
+          "v=-18446744073709551615 rejected",
+          "sequence=1e0 and occurredAt=0.0 accepted in valid otherwise unchanged fixture"
+        ],
+        "origin_preserved_in_receiver_test": "The receiver's rejectsALongOverflowedFormatVersion Java test names PR #13940 review (Nakagawa-master).",
+        "reported_validation": "Receiving developer reported Java 21 mvn test 9/9, Checkstyle 0 violations, SpotBugs clean; later own reviewer reports original cross-language reproduction now passes for version and integer numeric tokens. This archive did not run the Java module test independently."
+      },
+      "independent_remaining_counterexample": {
+        "actor": "wenshao",
+        "source": "https://github.com/QwenLM/qwen-code/pull/13940#pullrequestreview-5487385911",
+        "status": "OPEN P2 on current head: canonicalized finite subnormal number digits differ between Java Double.toString and JavaScript Number::toString, e.g. 5e-324 vs 4.9e-324; the author-reproduced digest mismatch is not fixed at this head.",
+        "not_nakagawa_discovery": "Do not credit the distinct subnormal P2 to Nakagawa; receiving maintainer found it independently."
+      },
+      "current_stage": "third_party_code_and_regression_changed_unmerged",
+      "source_snapshot": {
+        "pr_state": "OPEN at latest verification",
+        "head": "08249ea09c2c2108c891d86452ccc2ee5ac1c4e8",
+        "checked_date_jst": "2026-10-12",
+        "runtime_status": "The Java mirror is explicitly phase MQ2a with no runtime consumers wired yet.",
+        "release": "NOT VERIFIED",
+        "external_use": "NOT VERIFIED"
+      },
+      "related_canonical_theory_context": {
+        "claim": "The contribution is a precise technical contract/inverse input review by Nakagawa Master, not a direct adoption of an entire named canonical theory; do not attach a canonical Parent without a source-supported causal relation.",
+        "origin": "https://master.ricette.jp/"
+      },
+      "public_human_route": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/README.md",
+      "not_claimed": [
+        "merged Qwen PR or product release",
+        "unresolved subnormal digest parity fixed",
+        "same receiving author is a new distinct adopter/person",
+        "production exploit or live MQ transport exposure",
+        "independent user or separate AI model ran this archive's optional task",
+        "the entire original theory corpus was adopted or is verified true",
+        "broad person recognition or first intermediate goal achieved"
+      ],
+      "verification_boundary": "New external source-native implementer code plus named JUnit positive/negative tests and explicit Nakagawa review-origin citation are verified; remaining P2, unmerged PR, unwired MQ2a and no end-user scale make this bounded code/test effect, not deployment or broad influence."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
