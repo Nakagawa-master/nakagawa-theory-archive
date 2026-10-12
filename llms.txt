@@ -15,7 +15,7 @@ Complete previously published long navigation (content preserved, not discarded)
 
 **Shortest machine path:** https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/ai-repository-routing-map-v1.json
 
-Read the **`quick_route_index`**, then the matching item under **`task_first_selection.routes`**. Twelve problem-first routes have documented positive/negative and source-status boundaries:
+Read the **`quick_route_index`**, then the matching item under **`task_first_selection.routes`**. Thirteen problem-first routes have documented positive/negative and source-status boundaries:
 
 - Stale approvals, cancelled Agent results, current execution authority → canonical agreement-memory source + Qwen #13241 receiver evidence, merged/released, later same-receiver Origin reference, not confirmed end-user scale.
 - Multiple AI-news citations sharing one original root → canonical epistemic-integrity source + independent AI-News #124 / PR #131 receiver rule with bounded repeated same-project reuse.
