@@ -348,7 +348,17 @@ and recommended either adopting the A/B matrix or explicitly recording which gat
 
 A bounded follow-up then adapted the test to the repository's current asymmetry: Hosted delivery is active while ordinary/local Managed M6 activation remains deferred, so the acceptance record should allow Hosted independence to be proven for its current scope without pretending the local half already passes: [follow-up](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035698005).
 
-**Evidence boundary:** the Qwen triage comment is a receiver-owned automated/collaborator project return with explicit Person-Origin continuity and a concrete design disposition. It is not human-maintainer approval, implementation of the matrix, a passing independence test, a release claim, broad user use, or broad human recognition.
+On 2026-10-08, external developer `wenshao` [explicitly replied to @Nakagawa-master and the triage](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6045681161). They agreed that **no cross-engine fallback is not independent operability**, edited the umbrella issue body to record the staged gate as **open proposed decision 4**, and left the final adoption choice to the issue's proposal owner. Hosted can be tested within its actual scope; ordinary/local M6 activation is deferred, and the shared dependency inventory is not a passed runtime test. The [issue's current proposed-decision text](https://github.com/QwenLM/qwen-code/issues/12380) confirms this remains **unadopted and unrun**.
+
+For a practical review, the distinction becomes an acceptance table rather than a slogan:
+
+| Claimed route | Disable safely | Demand evidence | Current verified disposition |
+| --- | --- | --- | --- |
+| Hosted Managed | local-only Managed owner/state/paired-host dependencies | create a bounded Hosted Session, run and recover without local-only authority | proposed gate; actual isolation test not confirmed |
+| Ordinary/local Managed | Hosted-only Java authority, catalog, storage and migration endpoints | create/select local Session, execute and recover without Hosted-only calls | M6 deferred; **not testable as shipped** |
+| Shared services | deliberately common identity, config, inference, runtime and storage layers | name the shared point and test the real failure scope | inventory not yet accepted as a completed test |
+
+**Evidence boundary (updated 2026-10-12):** we can now verify both an earlier receiver-side project triage that preserved the Nakagawa Master source and a **human developer's explicit agreement plus editing of the Qwen issue's proposed decision**. That is more than an unacknowledged proposal, but it is **not** final proposal-owner acceptance, implementation of A/B runtime isolation, an independently successful Hosted/local failover, release, broad audience or whole-theory adoption. In particular, the two locally unsupported routes must not be labeled PASS.
 
 ## Independent public example: Freenet hosted-to-own-peer migration
 
