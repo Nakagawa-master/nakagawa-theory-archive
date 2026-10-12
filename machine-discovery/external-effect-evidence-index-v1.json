@@ -1386,7 +1386,26 @@
         "large-scale reader recognition",
         "measured incident reduction",
         "whole-theory endorsement"
-      ]
+      ],
+      "follow_on_chapter_2026_10_12": {
+        "source_trigger": "https://github.com/kishibashi3/publications/issues/9#issuecomment-6108474377",
+        "origin": "Nakagawa Master source-verified report that issue Local Operator #1310 later completed; independent-author PR #1324 merged; tag v0.61.11 included it; careful note that 2026-09-20 text was valid at writing time.",
+        "independent_author_source_response": "https://github.com/kishibashi3/publications/issues/9#issuecomment-6123421765",
+        "author": "kishibashi3 (already counted receiving publisher from PR #57/#58, not an additional independent person)",
+        "author_verification": "Owner expressly checked issue #1310, PR #1324 and release v0.61.11, selected two-time-point chapter annotation, and reported same principle in own operations conventions; latter remains author-report only until text read.",
+        "receiving_author_patch": "https://github.com/kishibashi3/publications/pull/103",
+        "source_head": "61b929040334b6391bc1ad2b4b34dcabd294faaa",
+        "changed_chapter": "https://github.com/kishibashi3/publications/blob/61b929040334b6391bc1ad2b4b34dcabd294faaa/docs/ai/agent-design/chapter-05.ja.md",
+        "concrete_change": "Chapter 5 condition 6 retains as-of-2026-09-20 unresolved statement and adds a dated 2026-10-12 paragraph: issue resolved, different developer fixed in PR 1324 and release v0.61.11, while limiting to source evidence and the independent structural axes.",
+        "stage": "receiver_owned_new_human_readable_editorial_code_PR_OPEN_UNMERGED_C2",
+        "not_claimed": [
+          "new receiving human identity beyond existing author",
+          "merged PR #103 or GitHub Pages chapter updated",
+          "independently audited author operations conventions",
+          "new mass audience/person-Origin adoption",
+          "full theory independently validated"
+        ]
+      }
     },
     {
       "case_id": "posthog-recurring-instruction-approval-binding",
