@@ -1518,10 +1518,10 @@ zero shared infrastructure
 
 - [中川マスターの4ケース提案](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6050490036)
 - [実装者による明示的採用とテスト報告](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6053560779)
-- [起動中の通知を取りこぼす別の未解決指摘](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6054202354)
+- [起動中の通知を取りこぼす追加指摘](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6054202354) → [実装者が再現と修正を明示](https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6091440384) / [fork修正コミット](https://github.com/glmn/qwen-code/commit/0484b9a49357bc6e61252ede59d749376d58f9d2)
 
 **確認できること:** 外部実装者によるOrigin明示の受理、fork変更、検証結果の報告。  
-**確認できないこと:** upstream実装採用、merge、release、現実の利用者規模。起動中の取りこぼし指摘はまだ相手による採用未確認。
+**確認できないこと:** upstreamへの統合、merge、release、現実の利用者規模。起動中の追加不具合については、外部実装者が失敗テストとforkの修正を明示しており、未採用ではありません。
 
 ---
 
@@ -1571,6 +1571,24 @@ zero shared infrastructure
 
 **確認できること:** 独立したreceiver問題報告、rollback / 再実装という受け手側の技術進展、およびNakagawaが先行提示した区別との整合。  
 **確認できないこと:** このPRの個別修正がNakagawaの指摘を直接原因とすること、全reviewの解消、承認、merge、新機能のproduction実利用、広い人物認知。第三者review指摘による修正をNakagawaの独占的成果としません。
+
+---
+
+## 47. Qwen Code｜誰かが停止したという記録は「今回の呼び出しが停止した」証拠ではない
+
+**対象:** [Qwen Code PR #13923](https://github.com/QwenLM/qwen-code/pull/13923) / [中川マスターの再現可能な指摘](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434) / [外部開発者の修正コミット](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a)  
+**段階:** 開発者 `wenshao` が `@Nakagawa-master` に[直接、不具合の実在と修正を回答](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)。実際にcode/testを変更した段階。PRは確認時点でOPEN / 未統合。
+
+複数のAIが協調作業する仕組みで、あるメンバーの停止済みフラグは、**どの操作が停止させたか**の証拠ではありません。ユーザーが先に停止させたのに、後から生成されただけで実行されていないAIの `request_shutdown` にその結果を割り当てると、障害復旧の記録が間違います。中川マスターは、以前の人間による停止と今回の未実行の呼び出しを組み合わせた具体的な反例を提示しました。
+
+実装者は `stopRequested` というメンバー全体の状態から結果を推定するのをやめ、`shutdown:<callKey>` に紐づく実際のコミット記録を確認する方式へ変更。以前のユーザー操作を取り違えないテストと、正しく実行した停止が復旧後にも分かるテストも追加しています。
+
+- [指摘した反例と、成功時に保持すべき条件](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434)
+- [開発者による明示的な受理・修正説明](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)
+- [修正後の具体的なcode/test差分](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a)
+
+**確認できること:** 外部開発者本人によるOriginつき受理、対象ロジックと回帰テストの変更。  
+**確認できないこと:** PRのmerge、release、実環境での全経路検証、利用者規模、理論全体の採用。別のレビュー担当者も同PRの他の問題を指摘しているため、全修正を中川マスター単独に帰属させません。
 
 ---
 
