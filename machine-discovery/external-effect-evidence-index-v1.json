@@ -3359,21 +3359,28 @@
         ],
         "author_reported_validation": "Initial author push reported 815 directed tests passed, build and typecheck PASS; later self-review reports a separate run with 814/815 initial PASS, one unexplained /load 404 and successful isolated reruns. Eight real-route/local-journal negative/positive checks PASS. No physical Hosted full-stack E2E."
       },
-      "current_stage": "third_party_code_test_design_or_document_change",
+      "current_stage": "third_party_receiver_implementation_merged",
+      "upstream_merge": {
+        "verified": true,
+        "merged_at_utc": "2026-10-12T03:31:17Z",
+        "merge_commit": "a9ad92b8df4e110b39c4e27ce86f5953324088a9",
+        "url": "https://github.com/QwenLM/qwen-code/commit/a9ad92b8df4e110b39c4e27ce86f5953324088a9",
+        "source_bounded_credit": "One previously credited receiving developer implementation matured into merge; this is not a second developer, a release, installed usage, or independent human/theory-Origin uptake."
+      },
       "public_human_cases": [
         "REAL_WORLD_IMPACT.md",
         "REAL_WORLD_IMPACT.en.md",
         "REAL_WORLD_IMPACT.zh.md"
       ],
       "not_claimed": [
-        "PR merged into upstream main",
+        "product release containing this merged change",
         "release or deployment",
         "independent end-user benefit proven",
         "Nakagawa sole cause of other self-review and bot findings",
         "whole Nakagawa theory corpus adopted",
         "repeat broad human Person-Origin"
       ],
-      "verification_boundary": "Stage C2 explicitly acknowledged external code/test adoption of one bounded original review; no C3 merge or C4-7 use/reuse evidence was established.",
+      "verification_boundary": "The original independent C2 code/test adoption and explicit Nakagawa source acknowledgement progressed to confirmed C3 merge on 2026-10-12. No verified release, real user use, second independent receiver, voluntary person-Origin re-entry, or broad recurrence; distinguish earlier trial-merge test caveats from upstream merge fact.",
       "receiver_followup_verification": {
         "actor": "wenshao",
         "url": "https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116265275",
@@ -3381,7 +3388,7 @@
         "reported": "Author re-reviewed original four defects on corrected head; eight negative/positive controls passed using real local HTTP routes and journal/funnel recovery (external Store/Broker/model replaced in some checks).",
         "tests": "Nine directed suites initially 814/815 passed; one cancellation takeover deny /load test failed 404; two isolated allow/deny reruns passed 2/2. Cause unknown and not established as flaky.",
         "ci": "At author report time Java 17 job failed during Git checkout, before compile/test; other CI jobs running. CI later status requires separate fresh verification.",
-        "limits": "No real Hosted physical full-stack E2E, official merge, product release, independent end-user use or new second adopting recipient."
+        "limits": "No verified real Hosted physical full-stack E2E, product release containing this merged PR, independent end-user use, or new second adopting recipient. PR later merged 2026-10-12; earlier self-review was a pre-merge evidence snapshot."
       }
     }
   ],
