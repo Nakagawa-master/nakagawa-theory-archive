@@ -4,7 +4,7 @@ This directory contains public machine-readable discovery aids for the Nakagawa 
 
 These files are **not canonical theories**. They help retrieval systems locate, distinguish, compare, and return to published canonical sources and official derivatives.
 
-**AI / LLM fastest problem-first route:** read [AI Repository Routing Map → `task_first_selection`](ai-repository-routing-map-v1.json) for eleven source-bounded, real-problem routes connecting a reader's question to a canonical Parent **only where a source-backed relation exists**, a falsifiable check, and the original independent receiver evidence **where available**. Some engineering cases have no proven theory-derived parent and are explicitly marked as such. Each route includes a human-understandable explanation and a negative/adoption boundary. Use one relevant route rather than indiscriminately loading the full catalog; it is a non-canonical optional discovery aid, not permission to act or proof of an external model using it.
+**AI / LLM fastest problem-first route:** read [AI Repository Routing Map → `task_first_selection`](ai-repository-routing-map-v1.json) for twelve source-bounded, real-problem routes connecting a reader's question to a canonical Parent **only where a source-backed relation exists**, a falsifiable check, and the original independent receiver evidence **where available**. Some engineering cases have no proven theory-derived parent and are explicitly marked as such. Each route includes a human-understandable explanation and a negative/adoption boundary. Use one relevant route rather than indiscriminately loading the full catalog; it is a non-canonical optional discovery aid, not permission to act or proof of an external model using it.
 
 ## Core files
 
