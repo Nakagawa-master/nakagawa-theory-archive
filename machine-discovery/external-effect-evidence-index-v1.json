@@ -2891,8 +2891,8 @@
         "url": "https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035698005",
         "summary": "Adapted the gate to the current repository state: Hosted can be tested for its supported scope while ordinary/local Managed independence remains deferred until M6 activation rather than being prematurely marked PASS."
       },
-      "current_stage": "receiver_owned_ai_triage_origin_preserved_design_restatement_with_open_acceptance_gate",
-      "causal_boundary": "The receiver-side Qwen triage directly cites and reconstructs the Nakagawa-master distinction and promotes it into the issue's current next-decision set. This supports bounded AI/project-system Origin-preserved design carry. It does not establish human-maintainer approval, implementation, a passing independence test, or product adoption of the broader theory.",
+      "current_stage": "receiver_owned_design_acknowledgment_and_issue_body_proposed_gate_unadopted_unrun",
+      "causal_boundary": "Receiver project triage explicitly named Nakagawa Master; developer wenshao then expressly addressed the Nakagawa review, agreed with the axis and documented the staged path-independence gate as a proposed, still-open issue decision. Actual runtime independence testing and proposal-owner final acceptance are unverified.",
       "nakagawa_structural_os_mapping": {
         "applied_distinction": "configured alternatives != viable independent alternatives; no fallback != path independence; intentional shared gates must be explicit",
         "public_reuse_kit": "ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md",
@@ -2908,7 +2908,14 @@
         "broad human recognition",
         "whole-theory adoption"
       ],
-      "verification_boundary": "issue-body acceptance criteria updated with the gate, executable A/B/shared-gate tests, maintainer disposition, merge/release of those tests, independent operational use, or later prompt-free Person-Origin rereference"
+      "verification_boundary": "Human maintainer/issue-owner decision to adopt the proposed decision 4, executable Hosted independence test, ordinary/local M6 activation + test, documented common-gate inventory, or released independent use. A source-acknowledged open decision is not a passed acceptance gate.",
+      "receiver_human_design_record": {
+        "actor": "wenshao",
+        "response": "https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6045681161",
+        "observed_change": "The developer explicitly agrees that no cross-engine fallback differs from independently operable routes, and records a staged Hosted-only acceptance proposal as open decision 4 in the issue body. Ordinary/local M6 remains deferred; intentionally shared gates require inventory before a test.",
+        "authority_boundary": "Explicit developer acknowledgment and documented open design option, not issue-owner final adoption and not executed Hosted/local independence testing.",
+        "current_public_issue": "https://github.com/QwenLM/qwen-code/issues/12380"
+      }
     },
     {
       "case_id": "pydantic-ai-9982-idempotent-retry-unreferenced-messages",
@@ -3273,6 +3280,100 @@
         "broad person recognition or established influence-force multiplier"
       ],
       "verification_boundary": "Observed one externally owned CodeActAgent patch with new regression tests after one publicly grounded inverse review, plus an explicit author acknowledgement. These are one external receiver event, not a second new recipient or an independent user/AI theory citation."
+    },
+    {
+      "case_id": "qwen-13632-mcp-refresh-stale-and-startup-invalidation",
+      "topic": "A dynamic MCP tools catalog must not leave old callable tools authorized after an unsuccessful refresh, nor discard a tool-list invalidation arriving during initial discovery.",
+      "external_repository": "QwenLM/qwen-code",
+      "issue": "https://github.com/QwenLM/qwen-code/issues/13632",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "issue_comment_sequence",
+        "stale_refresh_invalidation": "https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6050490036",
+        "startup_watcher_handoff": "https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6054202354",
+        "applied_distinction": "A historical tool listing is not present execution eligibility; a startup notification must not be lost between discovery and installing its handler."
+      },
+      "explicit_receiver_return": {
+        "actor": "glmn",
+        "initial_acknowledgment": "https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6053560779",
+        "startup_acknowledgment": "https://github.com/QwenLM/qwen-code/issues/13632#issuecomment-6091440384",
+        "report": "The external developer explicitly credited Nakagawa's four-case contract, implemented it in a fork and later confirmed reproducing the standalone startup race with a failing test, followed by a fix."
+      },
+      "receiver_implementation": {
+        "scope": "third-party fork only; upstream Qwen main not yet integrated",
+        "initial_revision": "https://github.com/glmn/qwen-code/commit/92fb10bf19ae1087d072ce9079861cd6be1132ae",
+        "startup_fix": "https://github.com/glmn/qwen-code/commit/0484b9a49357bc6e61252ede59d749376d58f9d2",
+        "source_checks": [
+          "server-local stale call gate after list_changed until current tools are resolved",
+          "revision protection against late tools/list responses",
+          "startup notification advances revision before watcher exists",
+          "deferred refresh replay when standalone watcher is attached",
+          "new startup regression for pooled and standalone paths"
+        ],
+        "tests": "Implementer reported test and CLI results. GitHub source commit readback confirms new source/test code, but local full project suite not rerun by this archive."
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "public_human_case": "REAL_WORLD_IMPACT.md#43-qwen-codemcpツールの変更通知後失敗した一覧更新を現在も使用可能の根拠にしない",
+      "not_claimed": [
+        "official upstream Qwen PR acceptance or merge",
+        "product release",
+        "real independent MCP consumer deployment",
+        "universal MCP source truth",
+        "broad Person-Origin adoption"
+      ],
+      "verification_boundary": "Stage C2 is external contributor's authored fork code/tests plus explicit source acknowledgment, not upstream integration. Both source-receiver changes predate this evidence-index update."
+    },
+    {
+      "case_id": "qwen-13923-shutdown-stop-call-specific-evidence",
+      "topic": "An existing team member stopRequested flag cannot prove that the current abandoned request_shutdown tool invocation committed that stop.",
+      "external_repository": "QwenLM/qwen-code",
+      "pull_request": "https://github.com/QwenLM/qwen-code/pull/13923",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "pull_request_comment",
+        "url": "https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434",
+        "summary": "Specified a negative recovery case where a user had previously stopped the member but the newly generated shutdown call never ran, plus a positive case preserving the same-call committed stop."
+      },
+      "explicit_receiver_return": {
+        "actor": "wenshao",
+        "url": "https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413",
+        "quote_scope": "Developer explicitly told @Nakagawa-master the reported inverse was real and addressed at ffdf3125ab.",
+        "complementary_independent_review": "https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115585910"
+      },
+      "receiver_implementation": {
+        "commit": "ffdf3125ab29c68612ffe49b8cdf56e7960e758a",
+        "url": "https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a",
+        "author": "wenshao",
+        "code_changes": [
+          "child-run stop records exact operation/commandId shutdown:<callKey>",
+          "committedBy('request_shutdown',callKey) looks up per-call committed receipt rather than member-global stop bit",
+          "abandoned-turn recovery passes exact call key without guessing from member args"
+        ],
+        "added_tests": [
+          "prior human H4f cancel is not attributed to a never-executed call",
+          "actual keyed stop persists when the stopped continuation was never started and the head falls back"
+        ],
+        "adjacent_independently_reviewed_fixes": [
+          "plan mode text-body parsing and lazy arming",
+          "terminal settlement race"
+        ],
+        "author_reported_validation": "npm build, typecheck and 815 directed tests passed; full physical Hosted end-to-end integration not verified by this archive."
+      },
+      "current_stage": "third_party_code_test_design_or_document_change",
+      "public_human_cases": [
+        "REAL_WORLD_IMPACT.md",
+        "REAL_WORLD_IMPACT.en.md",
+        "REAL_WORLD_IMPACT.zh.md"
+      ],
+      "not_claimed": [
+        "PR merged into upstream main",
+        "release or deployment",
+        "independent end-user benefit proven",
+        "Nakagawa sole cause of other self-review and bot findings",
+        "whole Nakagawa theory corpus adopted",
+        "repeat broad human Person-Origin"
+      ],
+      "verification_boundary": "Stage C2 explicitly acknowledged external code/test adoption of one bounded original review; no C3 merge or C4-7 use/reuse evidence was established."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
