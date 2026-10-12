@@ -1381,13 +1381,37 @@ MCP服务发送 `tools/list_changed` 后，如果刷新 `tools/list` 失败，�
 
 ## 47. Qwen Code｜成员已经停止，不等于本次工具调用执行了停止
 
-**对象：** [Qwen Code PR #13923](https://github.com/QwenLM/qwen-code/pull/13923) / [Nakagawa Master（中川マスター）的具体反例](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434) / [第三方代码与测试提交](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a)。**阶段：** 开发者 `wenshao` [直接回复 @Nakagawa-master，确认问题存在且已经修复](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)；PR在核查时仍为open、未合并。
+**对象：** [Qwen Code PR #13923](https://github.com/QwenLM/qwen-code/pull/13923) / [Nakagawa Master（中川マスター）的具体反例](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434) / [第三方代码与测试提交](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a)。**阶段（2026年10月12日重新核查）：** 开发者 `wenshao` [直接回复 @Nakagawa-master，确认问题并修改代码、测试](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)。该PR已经在2026年10月12日03:31:17 UTC [合并进入主线](https://github.com/QwenLM/qwen-code/commit/a9ad92b8df4e110b39c4e27ce86f5953324088a9)；尚未核实包含该修改的稳定版或最终用户实际使用。
 
 多AI协作环境中，成员的 `stopRequested` 状态只能说明该成员被要求停止，**不能证明是哪次调用做出的停止决定**。如果用户先执行取消，而后来生成的 `request_shutdown` 尚未执行就中断，恢复程序可能把历史停止错误归给从未运行的调用。中川マスター提出了这个可核查的反例，以及本次调用确实执行停止时应保留的正向条件。
 
 实现者改为读取按 `shutdown:<callKey>` 标识的真实持久化提交证据，不再从整个成员的停止状态推断调用归属；还增加了用户先取消和已提交停止在continuation回退后仍可追溯的回归测试。
 
-**可确认：** 开发者直接承认并保留Nakagawa Master的来源归属，修改了外部仓库中的代码和测试。**不可确认：** merge、release、全部物理集成验证、最终用户采用规模或整套理论的采纳。同一PR还有其他评审者独立提出缺陷，不能把所有改动单独归功于中川マスター。
+**可确认：** 开发者直接承认并保留Nakagawa Master的来源归属，修改了外部仓库中的代码和测试。**不可确认：** 包含该修正的稳定版release、全部物理集成验证、最终用户采用规模或整套理论的采纳。同一PR还有其他评审者独立提出缺陷，不能把所有改动单独归功于中川マスター。
+
+---
+
+## 48. Qwen Code｜极大的版本号不应经过整数截断变成v1
+
+**来源：** [Qwen Code #13940](https://github.com/QwenLM/qwen-code/pull/13940)、[Nakagawa Master给出的确切反例](https://github.com/QwenLM/qwen-code/pull/13940#issuecomment-6117795445)、[接收方自己的修复说明](https://github.com/QwenLM/qwen-code/pull/13940#issuecomment-6119217015)。
+
+Java与TypeScript读取同一AI事件信封时，应对格式版本作出相同判断。原Java路径使用 `longValue()`，可能把 `18446744073709551617` 的高位截去，误认为合法的 `v: 1`。中川マスター阅读具体代码后提出该数值反例，同时要求正常的 `v: 1` 继续被接受。
+
+开发者 `wenshao` 改正版本号的数值比较，并添加了[拒绝超大版本号的回归测试](https://github.com/QwenLM/qwen-code/commit/08249ea09c2c2108c891d86452ccc2ee5ac1c4e8)。该PR已于**2026年10月12日[合并进入Qwen Code主线](https://github.com/QwenLM/qwen-code/commit/aaf97b869dfcc4cf529ada1b036cad9b18695486)**。
+
+**可确认：** 第三方开发者针对具体反例修改代码与测试，随后完成merge；此人与第47例是**同一名接收方开发者**，不能当作两名独立采纳者。开发者自己发现的其他浮点数问题及bot独立提出的问题不归给中川マスター。**不可确认：** 稳定版发布、最终用户实际使用、其他组织自发采用或整套理论的采纳。
+
+---
+
+## 49. Qwen Code｜重复通知同一AI团队管理者不应重复注册审批监听器
+
+**来源：** [Qwen Code #13902](https://github.com/QwenLM/qwen-code/pull/13902)、[Nakagawa Master指出的重复监听条件](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6110579188)、[接收方开发者的明确说明](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6122203679)。
+
+在多个AI协作的ACP连接里，即使TeamManager对象没有更换，重复通知也可能再次注册相同的授权请求监听器，使一个请求经过重复处理。中川マスター指出了**同一对象再次通知**的具体路径，这与正常的A→B管理者切换不同。
+
+开发者 `yiliang114` [加入了同一管理者不重复绑定的守卫](https://github.com/QwenLM/qwen-code/commit/b1eeae5547283d6b518a72b169b33d1fe6cd1b48)。随后开发者发现原来的假事件发射器使用 `Set` 自动去重，导致**删除守卫之后测试仍然通过**。他又将测试改成[与Node EventEmitter重复监听语义相符的存储方式](https://github.com/QwenLM/qwen-code/commit/42c5bfc7449297c81ccba653363e235b7016ecdd)，使逆向修改能真正触发测试失败。
+
+**可确认：** 一名外部开发者基于原始review修改生产代码及回归测试，并明确保留来源归属。**截至2026年10月12日PR仍然OPEN、尚未合并**。**不可确认：** 产品发布、真实使用者遭遇重复审批后获得改善、整套理论被采纳。另一个[同一毫秒内不同审批共用ID的可能问题](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6122690398)仍属尚未被接收的单独review，不能并入已采纳成果。
 
 ---
 
