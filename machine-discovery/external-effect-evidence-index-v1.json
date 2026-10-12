@@ -3452,12 +3452,13 @@
         "independent_attribution": "The subnormal counterexample and repair were found/performed by receiving author wenshao, not credited to Nakagawa Master. The original version overflow review is separately source-credited.",
         "status": "RESOLVED IN SOURCE/TESTS at f4c4934, PR remains OPEN and unmerged; 34,652 comparisons are author-reported, not independently repeated by this archive."
       },
-      "current_stage": "third_party_code_and_regression_changed_unmerged",
+      "current_stage": "third_party_receiver_implementation_merged",
       "source_snapshot": {
-        "pr_state": "OPEN at this later source check",
+        "pr_state": "MERGED to upstream main on 2026-10-12T08:35:15Z",
         "head": "f4c4934170866a88dfb2e41f7e963c35108d9e47",
+        "merge_commit": "aaf97b869dfcc4cf529ada1b036cad9b18695486",
         "checked_date_jst": "2026-10-12",
-        "runtime_status": "The Java mirror remains phase MQ2a with no wired runtime consumer.",
+        "runtime_status": "Phase MQ2a Java mirror: still no demonstrated live runtime consumer",
         "release": "NOT VERIFIED",
         "external_use": "NOT VERIFIED"
       },
@@ -3467,15 +3468,29 @@
       },
       "public_human_route": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/README.md",
       "not_claimed": [
-        "merged Qwen PR or product release",
         "unresolved subnormal digest parity fixed",
         "same receiving author is a new distinct adopter/person",
         "production exploit or live MQ transport exposure",
         "independent user or separate AI model ran this archive's optional task",
         "the entire original theory corpus was adopted or is verified true",
-        "broad person recognition or first intermediate goal achieved"
+        "broad person recognition or first intermediate goal achieved",
+        "stable tagged release containing upstream merge",
+        "end-user installation/usage of MQ2a Java mirror"
       ],
-      "verification_boundary": "Original Nakagawa Master long-overflow bug prompted independently receiving author-owned parser correction and specifically crediting JUnit tests at 08249ea; a distinct maintainer-discovered subnormal-number digest defect was independently corrected at f4c4934 with author-reported 10/10 tests and 34,652 Node comparison cases. Neither source/test correction is yet a confirmed merge, release, service deployment, independent downstream person or actual other-AI adoption."
+      "verification_boundary": "Original Nakagawa Java v-long overflow defect produced receiving developer's own corrected parser and JUnit tests explicitly citing review (C2), and is now verified upstream MERGED (C3) in aaf97b8 on Oct 12 08:35:15Z. Same author separately discovered and fixed subnormal-number digest issue; do not attribute it to Nakagawa. No proved release/deploy/wired MQ2a runtime, second newly adopting recipient, independent AI run or mass person-origin recognition.",
+      "upstream_merge": {
+        "verified": true,
+        "pr": "https://github.com/QwenLM/qwen-code/pull/13940",
+        "merged_at_utc": "2026-10-12T08:35:15Z",
+        "commit": "aaf97b869dfcc4cf529ada1b036cad9b18695486",
+        "url": "https://github.com/QwenLM/qwen-code/commit/aaf97b869dfcc4cf529ada1b036cad9b18695486",
+        "receiving_author": "wenshao",
+        "actual_files": [
+          "packages/sdk-java/managed-agent-server/src/main/java/com/alibaba/qwen/code/managedagent/store/ManagedEventEnvelopes.java",
+          "packages/sdk-java/managed-agent-server/src/test/java/com/alibaba/qwen/code/managedagent/store/ManagedEventEnvelopesTest.java"
+        ],
+        "source_bounded_credit": "The preexisting same Qwen recipient independently integrated a concrete Java version overflow correction and regression explicitly citing Nakagawa-master's review. This is genuine C3 maturation, NOT a second new individual, product release or independent real user use."
+      }
     },
     {
       "case_id": "langgraph-9253-retry-subgraph-namespace-call-identity-two-independent-regression-checks",
