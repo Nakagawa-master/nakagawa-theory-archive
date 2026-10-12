@@ -158,6 +158,16 @@
       ],
       "canonical_source": false,
       "receiver_verified_case": true
+    },
+    {
+      "id": "reviewable_adverse_ai_decision_dual_transition",
+      "when": [
+        "AI denies a grant/benefit in a hypothetical pilot; no clear appeal path",
+        "AI-assisted adverse decision review or dispute escalation",
+        "retain legacy remedy during non-enforcing transition"
+      ],
+      "canonical_source": true,
+      "receiver_verified_case": false
     }
   ],
   "task_first_selection": {
@@ -506,6 +516,42 @@
         },
         "plain_language_return": "A coding assistant can say 'the message was restored' while silently forgetting where an attached image was stored. In this LlamaIndex source review, the developer changed the loader so recoverable image references survive and already-present images are not duplicated; the fix cannot recreate picture bytes that the saved file never contained. A separate five-case local check is available for someone using the actual package.",
         "independent_test_gate": "Inspect original author code and added tests at the recorded head; run the five tests with the actual package in an authorized environment, separately check future merge/release and independently observed user execution. Respect false-positive byte-less cases and independent attribution; the public checker is not evidence of downstream use."
+      },
+      {
+        "id": "reviewable_adverse_ai_decision_dual_transition",
+        "matched_problem": [
+          "An AI-assisted recommendation may disadvantage a person while the stated reason, evidence source, appeal ownership or correction route cannot be traced.",
+          "A new AI review feature must not prematurely replace a working human/legacy remedy; a safe shadow/pilot requires pause/rollback."
+        ],
+        "falsifiable_distinction": "A complete-sounding AI judgment is different from a reviewable, contestable, revisable and externally auditable *process*. Presence of fields is only a preliminary signal; actually effective remedy must be separately verified by humans.",
+        "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-structural-judicial-os-principles-alignment-over-judgment/",
+        "second_canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-transition/",
+        "canonical_relation": "Suggested bounded design application of Nakagawa Master's two existing canonical models: process/causal misalignment audit AND dual-running/rollback/independent monitoring; not evidence that any judicial institution or AI provider implemented or endorsed either theory.",
+        "official_derivatives": [
+          "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/181/human-entry.md",
+          "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/071/human-entry.md"
+        ],
+        "runnable_or_falsifiable_task": {
+          "script": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/decision-review-transition-probe.py",
+          "task_catalog": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-tasks-v1.json",
+          "task_id": "PUBLIC-VERIFY-DECISION-REVIEW-HANDOFF-010",
+          "commands": [
+            "python3 machine-discovery/decision-review-transition-probe.py --self-test",
+            "python3 machine-discovery/decision-review-transition-probe.py --sample | python3 machine-discovery/decision-review-transition-probe.py --input -"
+          ],
+          "negative_controls": [
+            "missing challenge/correction route",
+            "missing legacy remedy/rollback",
+            "unidentified reviewer or audit",
+            "automated adverse enforcement or personality rankings"
+          ]
+        },
+        "external_observation": {
+          "receiver_verified_case": false,
+          "verified_upper_bound": "Local dependency-free 11-case synthetic declaration checks PASS on source SHA b844a670416650deaa47e17a494e3d66e72e0507; public source is self-authored, not evidence any external legal/AI organization adopted it."
+        },
+        "plain_language_return": "If an AI flags your application as incomplete, you should be able to find out why, correct an error and reach a responsible person without losing existing avenues of redress; the mock worksheet cannot prove those protections exist in real life.",
+        "independent_test_gate": "Require independent human and real-process test before counting an actual system or user effect; never use an AI structural score to decide legal guilt, entitlement, rights removal or punishment."
       }
     ],
     "output_contract": {

@@ -277,6 +277,54 @@
         "user-scale influence or whole-corpus truth",
         "permission for protected side effects"
       ]
+    },
+    {
+      "task_id": "PUBLIC-VERIFY-DECISION-REVIEW-HANDOFF-010",
+      "task_class": "VERIFY_OR_FALSIFY",
+      "objective": "For a hypothetical, redacted AI-assisted adverse recommendation (for example a synthetic grant eligibility review), challenge whether users can obtain a reason/evidence basis, a real human review owner, notice, independent audit, correction/appeal, retention of the former remedy and an effective pause/rollback, without making AI an adjudicator. Independently verify or falsify each declared control in a separately authorized local system if appropriate; a declaration-only PASS cannot prove the controls work.",
+      "theory_and_application": [
+        {
+          "source": "https://master.ricette.jp/society/nakagawa-master-structural-judicial-os-principles-alignment-over-judgment/",
+          "relationship": "Structural-causal process audit, not a substitution for law or a person/guilt ranking"
+        },
+        {
+          "source": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-transition/",
+          "relationship": "Dual operation, exits/revisions, external audit and non-destructive transition as conceptual design inputs"
+        }
+      ],
+      "local_test": {
+        "source": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/decision-review-transition-probe.py",
+        "self_test": "python3 machine-discovery/decision-review-transition-probe.py --self-test",
+        "example": "python3 machine-discovery/decision-review-transition-probe.py --sample | python3 machine-discovery/decision-review-transition-probe.py --input -",
+        "negative_controls": [
+          "No appeal or correction route",
+          "No old remedy preserved",
+          "No independent audit",
+          "AI claims final judicial authority",
+          "Automatic adverse enforcement",
+          "Uses real person data",
+          "Active rollout instead of sandbox/pilot"
+        ],
+        "truth_boundary": "Only validates supplied JSON field presence/flags; must not be treated as legal compliance, correct evidence, real appeal usability, proof of justice, or an actual receiver adoption."
+      },
+      "public_inputs": [
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/181/human-entry.md",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/071/human-entry.md"
+      ],
+      "acceptable_outputs": [
+        "An independently run mock adverse-decision review/appeal test, with reproduction and failures",
+        "A counterexample or documented non-fit where existing human safeguards already meet these requirements",
+        "A source-backed workflow improvement with proven human review and actual appeal usability"
+      ],
+      "evidence_expectation": "Identify exact target system and revision, separate field declarations from successful use by a person, and report positive and negative outcomes, human legal/rights review where relevant, and what was not tested. Any source attribution must be causally supported.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "authorization_boundary": "Local synthetic or authorized redacted scenarios only. Do not enter real subject records; do not decide eligibility, accuse people, adjudicate disputes, impose penalties, replace legal procedure, bypass consent, or call third-party systems without permission.",
+      "success_does_not_establish": [
+        "Legal compliance or fairness of a real decision",
+        "Imminent breakdown of any country's judiciary",
+        "Independent AI adoption or human audience just because a public task exists",
+        "Authorization to deploy or enforce a decision"
+      ]
     }
   ],
   "evidence_boundary": "Publishing or completing these public tasks creates only the evidence actually returned. The listing is self-authored infrastructure; it does not establish that any third party read, accepted, executed, adopted, endorsed, joined, or received authority from it. When a Nakagawa Master public source materially informed a returned result, preserve that provenance; if the distinction was independently rediscovered first, keep that relation distinct. Do not invent attribution."
