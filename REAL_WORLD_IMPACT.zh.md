@@ -499,6 +499,8 @@ receiver把这一点重新解释为正文缺失的独立设计轴，并建立PR 
 - [PR #71｜后续文档体系重组](https://github.com/kishibashi3/publications/pull/71)
 - [PR #71 current head中的Principles](https://github.com/kishibashi3/publications/blob/e06e74828f656796ec38f455efea24d49fcda83f/drafts/agentic-agile/principles.md)
 
+**2026年10月12日新增的接收方文档修改：** 中川マスター在[issue #9提供了Local Operator #1310关闭、#1324由另一开发者合并、v0.61.11发布的原始证据](https://github.com/kishibashi3/publications/issues/9#issuecomment-6108474377)之后，**同一位既有著者 `kishibashi3`** [亲自核对并决定补充章节](https://github.com/kishibashi3/publications/issues/9#issuecomment-6123421765)。该著者随后建立 [PR #103](https://github.com/kishibashi3/publications/pull/103)，实际修改了[第五章的读者可见正文](https://github.com/kishibashi3/publications/blob/61b929040334b6391bc1ad2b4b34dcabd294faaa/docs/ai/agent-design/chapter-05.ja.md)：明确分开2026年9月20日写作时的未解决状态与后来独立开发者的修复、release，保留原来的 `@Nakagawa-master` 来源。**PR #103仍是OPEN、尚未合并**；这属于接收方真正的文档修改，不是新出现的第二位独立采用者，也没有证明新的读者规模。著者同时称上述原则已用于其运用规约，但本次尚未独立核查规约正文。
+
 **公开可确认：** 保留origin的review → 第三方重述 → 专门的reader-facing正文实现 → merge / Pages反映 → 在同一receiver的另一份文档中作为一致性条件继续复用 → merge → 在后续receiver-owned文档体系重组head中继续保留同一D8。  
 **尚未确认：** PR #71 merge、把#58/#71计为额外独立public-site publication、不同receiver的独立carry、大规模reader response、广泛人类认知、或对完整理论体系的认可。
 
