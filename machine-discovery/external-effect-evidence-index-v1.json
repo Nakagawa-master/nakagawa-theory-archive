@@ -3442,16 +3442,22 @@
       },
       "independent_remaining_counterexample": {
         "actor": "wenshao",
-        "source": "https://github.com/QwenLM/qwen-code/pull/13940#pullrequestreview-5487385911",
-        "status": "OPEN P2 on current head: canonicalized finite subnormal number digits differ between Java Double.toString and JavaScript Number::toString, e.g. 5e-324 vs 4.9e-324; the author-reproduced digest mismatch is not fixed at this head.",
-        "not_nakagawa_discovery": "Do not credit the distinct subnormal P2 to Nakagawa; receiving maintainer found it independently."
+        "original_finding": "https://github.com/QwenLM/qwen-code/pull/13940#pullrequestreview-5487385911",
+        "previously_observed": "At intermediate head 08249ea09c, Java 4.9e-324 vs JS 5e-324 caused digest difference.",
+        "resolved_at_next_head": "f4c4934170866a88dfb2e41f7e963c35108d9e47",
+        "resolution_source": "https://github.com/QwenLM/qwen-code/pull/13940#discussion_r4245687744",
+        "technical_change": "Receiver independently corrected jsNumberToString to choose ECMAScript shortest round-trip digits from exact double values instead of Double.toString digits; new subnormal/JDK boundary regressions pinned in receiver JUnit tests.",
+        "receiver_reported_verification": "Java 21 mvn test 10/10; Checkstyle and SpotBugs clean; author reports a 34,652-double cross-check against Node 22 on subnormals, MIN_NORMAL, exponent boundaries and sampled bit patterns with zero mismatches.",
+        "test_source": "https://github.com/QwenLM/qwen-code/blob/f4c4934170866a88dfb2e41f7e963c35108d9e47/packages/sdk-java/managed-agent-server/src/test/java/com/alibaba/qwen/code/managedagent/store/ManagedEventEnvelopesTest.java",
+        "independent_attribution": "The subnormal counterexample and repair were found/performed by receiving author wenshao, not credited to Nakagawa Master. The original version overflow review is separately source-credited.",
+        "status": "RESOLVED IN SOURCE/TESTS at f4c4934, PR remains OPEN and unmerged; 34,652 comparisons are author-reported, not independently repeated by this archive."
       },
       "current_stage": "third_party_code_and_regression_changed_unmerged",
       "source_snapshot": {
-        "pr_state": "OPEN at latest verification",
-        "head": "08249ea09c2c2108c891d86452ccc2ee5ac1c4e8",
+        "pr_state": "OPEN at this later source check",
+        "head": "f4c4934170866a88dfb2e41f7e963c35108d9e47",
         "checked_date_jst": "2026-10-12",
-        "runtime_status": "The Java mirror is explicitly phase MQ2a with no runtime consumers wired yet.",
+        "runtime_status": "The Java mirror remains phase MQ2a with no wired runtime consumer.",
         "release": "NOT VERIFIED",
         "external_use": "NOT VERIFIED"
       },
@@ -3469,7 +3475,7 @@
         "the entire original theory corpus was adopted or is verified true",
         "broad person recognition or first intermediate goal achieved"
       ],
-      "verification_boundary": "New external source-native implementer code plus named JUnit positive/negative tests and explicit Nakagawa review-origin citation are verified; remaining P2, unmerged PR, unwired MQ2a and no end-user scale make this bounded code/test effect, not deployment or broad influence."
+      "verification_boundary": "Original Nakagawa Master long-overflow bug prompted independently receiving author-owned parser correction and specifically crediting JUnit tests at 08249ea; a distinct maintainer-discovered subnormal-number digest defect was independently corrected at f4c4934 with author-reported 10/10 tests and 34,652 Node comparison cases. Neither source/test correction is yet a confirmed merge, release, service deployment, independent downstream person or actual other-AI adoption."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
