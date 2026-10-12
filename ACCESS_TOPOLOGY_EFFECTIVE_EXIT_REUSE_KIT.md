@@ -348,17 +348,31 @@ and recommended either adopting the A/B matrix or explicitly recording which gat
 
 A bounded follow-up then adapted the test to the repository's current asymmetry: Hosted delivery is active while ordinary/local Managed M6 activation remains deferred, so the acceptance record should allow Hosted independence to be proven for its current scope without pretending the local half already passes: [follow-up](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035698005).
 
-On 2026-10-08, external developer `wenshao` [explicitly replied to @Nakagawa-master and the triage](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6045681161). They agreed that **no cross-engine fallback is not independent operability**, edited the umbrella issue body to record the staged gate as **open proposed decision 4**, and left the final adoption choice to the issue's proposal owner. Hosted can be tested within its actual scope; ordinary/local M6 activation is deferred, and the shared dependency inventory is not a passed runtime test. The [issue's current proposed-decision text](https://github.com/QwenLM/qwen-code/issues/12380) confirms this remains **unadopted and unrun**.
+On 2026-10-08, external developer `wenshao` [explicitly replied to @Nakagawa-master and the triage](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6045681161). They agreed that **no cross-engine fallback is not independent operability**, edited the umbrella issue body to record the staged gate as **open proposed decision 4**, and left the final adoption choice to the issue's proposal owner. Hosted can be tested within its actual scope; ordinary/local M6 activation is deferred, and the shared dependency inventory is not a passed runtime test. That was the **2026-10-08 state**, not the present disposition. On 2026-10-12 the proposal owner `doudouOUC` [explicitly adopted Nakagawa Master's staged acceptance matrix](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6117130998); the receiver's [live proposal body](https://github.com/QwenLM/qwen-code/issues/12380) now includes it in both the **Acceptance criteria** and Decision 4. This is a real, independent decision/requirements change, not proof that either runtime arm has passed the test.
 
 For a practical review, the distinction becomes an acceptance table rather than a slogan:
 
 | Claimed route | Disable safely | Demand evidence | Current verified disposition |
 | --- | --- | --- | --- |
-| Hosted Managed | local-only Managed owner/state/paired-host dependencies | create a bounded Hosted Session, run and recover without local-only authority | proposed gate; actual isolation test not confirmed |
+| Hosted Managed | local-only Managed owner/state/paired-host dependencies | create a bounded Hosted Session, run and recover without local-only authority | adopted release gate; actual Hosted independence evidence still owed |
 | Ordinary/local Managed | Hosted-only Java authority, catalog, storage and migration endpoints | create/select local Session, execute and recover without Hosted-only calls | M6 deferred; **not testable as shipped** |
-| Shared services | deliberately common identity, config, inference, runtime and storage layers | name the shared point and test the real failure scope | inventory not yet accepted as a completed test |
+| Shared services | deliberately common identity, config, inference, runtime and storage layers | name the shared point and test the real failure scope | required pre-gate inventory; actual dependency-failure proof not yet verified |
 
-**Evidence boundary (updated 2026-10-12):** we can now verify both an earlier receiver-side project triage that preserved the Nakagawa Master source and a **human developer's explicit agreement plus editing of the Qwen issue's proposed decision**. That is more than an unacknowledged proposal, but it is **not** final proposal-owner acceptance, implementation of A/B runtime isolation, an independently successful Hosted/local failover, release, broad audience or whole-theory adoption. In particular, the two locally unsupported routes must not be labeled PASS.
+**Evidence boundary (verified 2026-10-12):** This has progressed from public review to an **independent proposal-owner decision recorded inside the recipient's release Acceptance criteria**. It is one receiver-owned design decision, not a second Qwen implementation and not automatic proof that Nakagawa Master's whole theory corpus is independently adopted. No actual Hosted path-independence acceptance run, ordinary/local M6 enablement, successful local-arm independence, installed/end-user release or broad human-person recognition follows from the decision. Report **ADOPTED REQUIREMENT / TEST NOT YET PASSED**, not “proposed” or “fully independent.”
+
+### A short, reproducible acceptance record for any dual-route system
+
+The same question is useful outside Qwen Code. An engineer or AI-assisted reviewer may independently choose a **nonconfidential local test** with a disposable test environment. Before attempting it, record the advertised routes, the capability and exact exclusive gates. Do not disable live services or modify other users' permissions.
+
+| Controlled case | Positive evidence | Negative/control outcome to record |
+| --- | --- | --- |
+| Route A with B-only machinery unreachable | A creates one valid scoped session, performs its bounded action and recovers it under A's own authority | “No fallback happened” alone does **not** pass if an A action still required B-only identity or storage |
+| Route B with A-only machinery unreachable | B independently selects, executes, restarts and recovers within the scope actually shipped | If B is not implemented or enabled, report **NOT YET PASSABLE**, not PASS or FAIL |
+| Intentionally shared gate removed | Dependency inventory predicts which routes stop at that layer; observe and disclose actual failure scope | A shared failure is not automatically a violation of a gate that explicitly permits that shared dependency |
+
+Record actual build and route versions, which dependencies were truly made unreachable, the executing actor, primary action/restore result, negative-control outcome and any missing evidence. If only the acceptance *decision* exists, the result is **specification adopted; execution unverified**. An AI may summarize or challenge the publicly cited design, but that is not proof it ran the receiver's infrastructure or adopted the canonical theory.
+
+For the wider conceptual source, return to [Nakagawa Master's canonical non-ownership/effective-power theory](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/) and [OD306](derivatives/306/human-entry.md); this test kit is an application, not a claim that the Qwen implementation originated from that entire Parent.
 
 ## Independent public example: Freenet hosted-to-own-peer migration
 
