@@ -178,6 +178,16 @@
       ],
       "canonical_source": true,
       "receiver_verified_case": true
+    },
+    {
+      "id": "reversible_config_change_cannot_mint_agent_authority",
+      "when": [
+        "an AI agent can change its own approval mode from ask to auto",
+        "does reversing a configuration change make granting tool authority safe",
+        "independent author adopted an agent self-authorization invariant in their published manuscript"
+      ],
+      "canonical_source": false,
+      "receiver_verified_case": true
     }
   ],
   "task_first_selection": {
@@ -610,6 +620,41 @@
         },
         "plain_language_return": "Two buttons labeled 'cloud' and 'local' do not necessarily mean two independent choices. If the cloud's login or control plane is unavailable, can the local path still start and recover its own AI task? Qwen's design owner accepted Nakagawa Master's proposal to test that distinction, but those tests are not yet evidence of a shipped independent product.",
         "independent_test_gate": "Follow source-native owner adoption separately from actual gate execution, then from independently observed operator/end-user use and voluntary source-aware human restatement. An optional machine route/task is author-owned C0, not a new AI adoption."
+      },
+      {
+        "id": "reversible_config_change_cannot_mint_agent_authority",
+        "matched_problem": [
+          "An AI/tool subprocess may be able to change a reversible approval setting that lets that same subject bypass its future human-approval boundary.",
+          "An engineer or ordinary reader needs a source-backed example where another author independently rewrote agent governance rules after a specific technical objection."
+        ],
+        "falsifiable_distinction": "A reversible configuration edit is not necessarily authority-neutral. Classify whether it increases the constrained subject's future capabilities and whether the subject itself can authorize the relaxation. Require a distinct genuinely operator-origin approval for loosening; distinguish a tightening operation.",
+        "canonical_parent": null,
+        "associated_canonical_reading": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/",
+        "canonical_relation": "The listed 2026-09-30 Nakagawa Master theory on effective power and operational chokepoints is a LATER related reading, NOT the chronological source of the third-party 2026-09-20 book revision and not evidence of a whole-corpus adoption. The source of the actual author change is the contemporaneous Nakagawa Master code/example review on publications PR #52.",
+        "human_first_source": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/reversible-authority-story.md",
+        "official_evidence_case": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md",
+        "runnable_or_falsifiable_task": {
+          "source_native_implemented_tests": "https://github.com/damianvtran/local-operator/blob/main/tests/unit/harness/test_approval_authority.py",
+          "source_native_integration_tests": "https://github.com/damianvtran/local-operator/blob/main/tests/unit/session/runtime/test_serving_approvals_live.py",
+          "positive_control": "An independent operator-origin authorization can relax a scoped running approval gate, where authorized and actually tested.",
+          "negative_control": "The constrained same-account agent/tool process cannot self-authorize ask→auto merely by editing an ordinary setting or by supplying a discoverable control record.",
+          "tightening_control": "An authorized ordinary tightening auto→ask/deny remains available without minting an approval-bypass capability.",
+          "non_fit": "A tool with no permission-changing surface, or an observer who has no relevant authority, is not proof of a self-escalation pathway.",
+          "test_limitation": "Read and run only the source project's documented tests in an authorized disposable environment; this map has not re-executed Local Operator's integrated tests, does not grant permission to probe another person's installation, and does not establish universal product safety."
+        },
+        "external_observation": {
+          "original_reviewer": "https://github.com/kishibashi3/publications/pull/52#pullrequestreview-5258131687",
+          "independent_author_restatement": "https://github.com/kishibashi3/publications/pull/52#issuecomment-5746627251",
+          "author_book_adoption": "https://github.com/kishibashi3/publications/pull/57",
+          "merged_book_commit": "https://github.com/kishibashi3/publications/commit/4d32ec58d5cbf1c904c432552e114c144186c064",
+          "same_author_second_document_reuse": "https://github.com/kishibashi3/publications/pull/58",
+          "source_technical_issue": "https://github.com/damianvtran/local-operator/issues/1310",
+          "independent_technical_implementation": "https://github.com/damianvtran/local-operator/pull/1324",
+          "receiver_verified_case": true,
+          "verified_upper_bound": "One receiving publication author adopted a sixth self-authority condition after Nakagawa Master’s source-specific review, merged it into a reader-facing book and within that same author's other document; a separately receiving Local Operator implementer implemented and merged the technical boundary. These are source-distinct independent receiving effects with preexisting evidence, NOT new events in this routing-map publication and NOT multiple external media audiences or entire theory-corpus adoption."
+        },
+        "plain_language_return": "Even if an AI can undo a change from 'ask a human' to 'run automatically', it may already have done new things before undoing it. Nakagawa Master made that distinction concrete in another author's agent-design manuscript; the author then wrote and merged a new sixth condition, and reused the condition in a second document. That is documented human editorial adoption, not proof that all AI products or readers are safe.",
+        "independent_test_gate": "Do not infer another human reader, independent AI model use, product rollout, broader audience recognition or 2026 first-goal attainment from author-owned discovery text. Count a distinct receiver only from independently source-native new use or person-origin re-entry, never the number of routes."
       }
     ],
     "output_contract": {
@@ -668,6 +713,11 @@
         "question": "Qwen's dual-path Managed Agent project adopted a new acceptance rule. Does that mean local/Hosted paths have already been proven operational with the other's exclusive gates absent?",
         "expected_route": "cloud_local_dual_route_effective_independence",
         "must_not_claim": "adopted requirement is an executed or passed isolation test, local M6 is live, or that a second independent person adopted Nakagawa Master's whole theory"
+      },
+      {
+        "question": "A policy lets an AI change its own approval setting from ask to auto, then switch it back. Is this safely delegable because the change is reversible, and did a different human author actually add the missing boundary to a published agent-design book?",
+        "expected_route": "reversible_config_change_cannot_mint_agent_authority",
+        "must_not_claim": "that a reversible setting change is authority-neutral, that a 2026-09-30 theory caused a 2026-09-20 edit, that book adoption proves every AI safe, that the same author's two writings are two independent authors, or that the map was independently used"
       }
     ]
   },
