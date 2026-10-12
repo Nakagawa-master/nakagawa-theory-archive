@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>AIに「対象外」と言われたら？｜判断の見直しを考える7つの確認</title>
+<meta name="description" content="架空のAI補助判断について、理由・記録・訂正・人間の見直し・従来手段・停止・独立監査を7項目で整理する、個人情報不要のオフライン教材。中川マスターの原典へ接続。">
+<style>
+:root{font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;color:#172737;background:#f4f7f7;font-size:17px;line-height:1.7}
+*{box-sizing:border-box}
+body{margin:0}
+main{max-width:940px;padding:clamp(1rem,4vw,2.5rem);margin:0 auto}
+a{color:#145d67;text-underline-offset:.15em}
+a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid #dd8e2e;outline-offset:3px}
+.hero{background:#123c47;color:#fff;border-radius:20px;padding:clamp(1.2rem,5vw,3rem);margin:1rem 0 1.5rem}
+.hero p{max-width:51ch}.hero a{color:#bcf0f0}
+h1{font-size:clamp(1.55rem,4.2vw,2.75rem);line-height:1.3;margin:.25em 0 .65em}
+h2{font-size:1.35rem;line-height:1.35;margin:0 0 .7rem}
+.tag{display:inline-block;font-size:.85rem;background:#d8eef0;color:#164d56;border-radius:30px;padding:.1rem .65rem;font-weight:700}
+.hero .tag{background:#c2e9dd}
+.panel{background:white;padding:1.3rem clamp(1rem,3vw,1.65rem);border:1px solid #d5e1e3;border-radius:15px;margin:1.1rem 0}
+.lead{font-size:1.12rem}
+fieldset{border:0;padding:0;margin:0;min-width:0}
+legend{font-weight:700;font-size:1.15rem;padding:.3rem 0 1rem}
+.questions{list-style:none;margin:0;padding:0;display:grid;gap:.75rem}
+.questions li{display:grid;grid-template-columns:minmax(0,1fr) minmax(150px,215px);gap:1rem;align-items:center;padding:.85rem;background:#f5f8f9;border-radius:10px}
+.questions label{font-weight:700;line-height:1.45}
+.questions small{display:block;font-weight:400;color:#445f67;margin-top:.25rem}
+select{font:inherit;width:100%;padding:.45rem;border:1px solid #778e92;background:#fff;border-radius:8px;color:#172737}
+button{font:inherit;cursor:pointer;padding:.6rem .95rem;border:1px solid #205e68;border-radius:9px;background:#eaf7f6;color:#123d45;font-weight:700}
+button:hover{background:#d8eeed}
+.actions{display:flex;flex-wrap:wrap;gap:.6rem}
+#reading{font-weight:700;font-size:1.08rem}
+#reading-detail{margin-top:.3rem}
+#next{margin:1rem 0 0}
+#notes{font:inherit;width:100%;min-height:12rem;resize:vertical;padding:.75rem;border:1px solid #778e92;border-radius:9px}
+.note{border-left:4px solid #c18825;padding:.65rem 1rem;background:#fff6e7;margin:1rem 0}
+.subtle{color:#445f67;font-size:.93rem}
+footer{margin:1.8rem 0;color:#435b62;font-size:.95rem}
+@media(max-width:600px){.questions li{grid-template-columns:1fr;gap:.4rem}.hero{border-radius:12px}}
+@media print{body{background:#fff}.hero{color:#172737;background:#fff;border:1px solid #aaa}button,select{display:none!important}.panel{break-inside:avoid}}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+<span class="tag">匿名の架空例で試せる · オフライン</span>
+<h1>AIに「対象外」と言われたら、<br>その判断を直せる？</h1>
+<p class="lead">答えが正しいかだけでなく、<strong>理由を知る・誤りを直す・人間に見直してもらう・別の道を残す</strong>ことも大切です。</p>
+<p>中川マスター（Nakagawa Master／Keisuke Nakagawa）の構造的司法OS・接続移行戦略論を、身近なAI補助判断に当てはめて考えるための小さな教材です。原典とは別の<strong>応用例</strong>であり、実際の制度や裁判の代わりにはなりません。</p>
+</header>
+<section class="panel" aria-labelledby="scene">
+<h2 id="scene">30秒で考える架空の場面</h2>
+<p>架空の助成制度で、AIが書類を点検して「必要な書類が不足」と表示しました。<strong>AIには最終判断を任せず</strong>、担当者が見直す制度を想定します。申請者は本当に不足しているのか確かめたいと考えています。</p>
+<p>次の7項目について、用意された説明や手段を<strong>確認できる／確認できない／まだ分からない</strong>に分けてください。これは練習用なので実名・申請書・機密情報は入力しないでください。画面上の選択はサーバーに送信されません。</p>
+<div class="actions"><button type="button" id="demo-missing">例1：訂正・再確認がない場合</button><button type="button" id="demo-listed">例2：7項目が説明されている場合</button><button type="button" id="reset">全部「不明」に戻す</button></div>
+</section>
+<section class="panel">
+<fieldset>
+<legend>7つの確認 <span class="subtle">（実在性や法的適合性を採点するものではありません）</span></legend>
+<ol class="questions" id="questions">
+<li><label for="q-reason">1. 何が問題だと判断されたか、理由が分かる？<small>「対象外」だけで終わらず、どの条件に当たるか</small></label><select id="q-reason" data-question="理由" ><option value="unknown">まだ分からない</option><option value="yes">説明を確認できる</option><option value="no">説明がない／確認できない</option></select></li>
+<li><label for="q-evidence">2. その判断に使った情報を確認できる？<small>書類、条件、適用時点、出典をたどれるか</small></label><select id="q-evidence" data-question="根拠・記録"><option value="unknown">まだ分からない</option><option value="yes">説明を確認できる</option><option value="no">説明がない／確認できない</option></select></li>
+<li><label for="q-correct">3. 情報の間違いを訂正して、再審査できる？<small>誤った入力や記録を後から正せるか</small></label><select id="q-correct" data-question="訂正・再審査"><option value="unknown">まだ分からない</option><option value="yes">説明を確認できる</option><option value="no">説明がない／確認できない</option></select></li>
+<li><label for="q-human">4. AIとは別の人間に見直しを頼める？<small>責任者と相談先が明確で、連絡可能か</small></label><select id="q-human" data-question="人間の見直し"><option value="unknown">まだ分からない</option><option value="yes">説明を確認できる</option><option value="no">説明がない／確認できない</option></select></li>
+<li><label for="q-old">5. 以前からある申立て・救済手段は残っている？<small>新しいAI窓口が既存の手段を消していないか</small></label><select id="q-old" data-question="従来の手段"><option value="unknown">まだ分からない</option><option value="yes">説明を確認できる</option><option value="no">説明がない／確認できない</option></select></li>
+<li><label for="q-pause">6. 問題が見つかったらAI利用を止めて戻せる？<small>試験導入の一時停止や従来手続への復帰</small></label><select id="q-pause" data-question="停止・復帰"><option value="unknown">まだ分からない</option><option value="yes">説明を確認できる</option><option value="no">説明がない／確認できない</option></select></li>
+<li><label for="q-audit">7. 担当者の外から、独立に点検できる？<small>判断の記録を別の担当・監査者が検証できるか</small></label><select id="q-audit" data-question="独立の点検"><option value="unknown">まだ分からない</option><option value="yes">説明を確認できる</option><option value="no">説明がない／確認できない</option></select></li>
+</ol>
+</fieldset>
+</section>
+<section class="panel" aria-labelledby="result-heading" aria-live="polite" aria-atomic="true">
+<h2 id="result-heading">選択から考えられること</h2>
+<p id="reading">7項目は、まだ確認されていません。</p>
+<p id="reading-detail">「不明」は安全とも危険とも決めつけず、まず問い合わせる点として残します。</p>
+<p id="next">重要なのは、チェック欄の有無ではなく、理由や担当者に実際にたどり着けて、訂正・再確認が機能するかです。</p>
+</section>
+<section class="panel" aria-labelledby="handoff">
+<h2 id="handoff">そのまま使える確認メモ</h2>
+<p class="subtle">選択に応じて、担当者や設計者に確認したい項目を整理します。<strong>架空のデモ以外の個人情報は入れないでください。</strong> このページは外部通信や保存をしません。</p>
+<textarea id="notes" readonly aria-label="確認メモ">確認したい点：理由、根拠、訂正、担当者、既存手段、停止、独立監査</textarea>
+<div class="actions"><button type="button" id="copy">確認メモをコピー</button><span id="copy-status" role="status"></span></div>
+</section>
+<section class="panel">
+<h2>なぜこの7項目なのか</h2>
+<p><strong>中川マスターの「構造的司法OS」</strong>は、個人の善悪だけでなく、同じ問題を生み続ける判断の仕組みへ目を向けます。<strong>「接続移行戦略論」</strong>は、新しい仕組みへ移るときに、いま機能している道を突然失わせず、段階的に検証して戻れる条件を重視します。</p>
+<p>この教材は両者を<strong>AIが補助する架空の書類確認</strong>へ試みに写したものです。7項目は法令上の必要十分条件ではなく、「全部確認できる」と選んでも制度の公正・適法性・実効性は保証されません。反対に「不明」だけで違法・有害と判定することもできません。AIに人の権利・受給資格・処罰を自動決定させる教材ではありません。</p>
+<p><strong>原典・確かめる先：</strong><a href="https://master.ricette.jp/society/nakagawa-master-structural-judicial-os-principles-alignment-over-judgment/">構造的司法OS（原典）</a>／<a href="https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-transition/">接続移行戦略論（原典）</a>。より技術的な設計確認には<a href="../machine-discovery/decision-review-transition-probe.py">10項目の宣言内容を確認するオフラインPython教材</a>があります。</p>
+<p>類似場面で自分なりに考えたことがあれば、<a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/416">一言の感想・反例</a>を歓迎します。独立して実装・試験した結果は<a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402">検証・再利用の公開記録</a>へ。投稿は任意で、賛同や人物名の言及を求めません。</p>
+</section>
+<footer>制作：中川マスター公式理論の公開応用教材 · 個人情報入力不要 · ネットワーク要求なし · 教育目的 · 2026-10-12</footer>
+</main>
+<script>
+"use strict";
+const selects = Array.from(document.querySelectorAll("#questions select"));
+const labels = {"yes":"説明を確認できる","no":"説明がない／確認できない","unknown":"まだ分からない"};
+function update() {
+  const groups = {"yes":[],"no":[],"unknown":[]};
+  selects.forEach(el => groups[el.value].push(el.dataset.question));
+  const yn = groups.yes.length, nn = groups.no.length, un = groups.unknown.length;
+  document.getElementById("reading").textContent =
+    "説明あり " + yn + "項目・確認できない " + nn + "項目・不明 " + un + "項目";
+  document.getElementById("reading-detail").textContent = nn > 0
+    ? "まず「説明がない／確認できない」とした項目の確認先を探しましょう。欠落の疑いは調べる理由であり、即時の違法・危険判定ではありません。"
+    : un > 0
+      ? "まだ分からない項目の案内や担当者を確かめましょう。不明は合格でも不合格でもありません。"
+      : "7項目について「説明を確認できる」と選びました。これは自己申告上の説明確認に限り、制度の実効性・公正性・適法性を認証しません。";
+  document.getElementById("next").textContent =
+    "次の一歩：実際に担当者や資料へたどり着けるか、訂正と人間による見直しが運用で機能するかを、正当な手続で確かめてください。";
+  const out = ["架空のAI補助判断についての確認メモ（教材。個人情報なし）",
+    "説明あり："+yn+" ／ 確認できない："+nn+" ／ 不明："+un, ""];
+  for(const [k,title] of [["no","確認先が必要"],["unknown","まだ分からない"],["yes","説明を確認した"]]) {
+    out.push("【"+title+"】");
+    out.push(groups[k].length ? groups[k].map(x=>"・"+x+"： "+labels[k]).join("\n") : "・該当なし");
+  }
+  out.push("","このメモは法的判断や実際の制度の審査結果ではありません。","原典：中川マスター／構造的司法OS・接続移行戦略論",
+    "https://master.ricette.jp/society/nakagawa-master-structural-judicial-os-principles-alignment-over-judgment/",
+    "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-transition/");
+  document.getElementById("notes").value = out.join("\n");
+  document.getElementById("copy-status").textContent = "";
+}
+function preset(values) { selects.forEach((el,i) => el.value=values[i]); update(); }
+document.getElementById("demo-missing").addEventListener("click",() => preset(["yes","unknown","no","no","unknown","no","unknown"]));
+document.getElementById("demo-listed").addEventListener("click",() => preset(["yes","yes","yes","yes","yes","yes","yes"]));
+document.getElementById("reset").addEventListener("click",() => preset(["unknown","unknown","unknown","unknown","unknown","unknown","unknown"]));
+selects.forEach(el=>el.addEventListener("change",update));
+document.getElementById("copy").addEventListener("click", async () => {
+ const textarea=document.getElementById("notes"),status=document.getElementById("copy-status");
+ try { if(!navigator.clipboard || !navigator.clipboard.writeText) throw Error("clipboard unavailable");
+ await navigator.clipboard.writeText(textarea.value); status.textContent="コピーしました。";
+ } catch(_e) { textarea.focus();textarea.select();status.textContent="コピーできない環境です。選択した文字を手動でコピーしてください。"; }
+});
+update();
+</script>
+</body>
+</html>
