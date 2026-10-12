@@ -1451,7 +1451,7 @@
         "approval_record_PR108": {
           "receiving_PR": "https://github.com/kishibashi3/publications/pull/108",
           "repository": "kishibashi3/publications",
-          "current_state": "OPEN_UNMERGED_C2_RECEIVER_OWNED_LEDGER_PATCH__REVIEWED_AND_REVISED",
+          "current_state": "MERGED_TO_RECEIVER_WORKING_BRANCH_C3_SOURCE_PROVENANCE_LEDGER__NOT_OWNER_SIGNATURE",
           "receiving_branch": "docs/eaa-working-notes",
           "head_at_source_check": "82a80f22d0010ea3a9fa5b841c4c31510673f1fe",
           "path": "drafts/norms/APPROVALS.md",
@@ -1460,9 +1460,21 @@
           "upstream_order_dependency": "https://github.com/kishibashi3/publications/pull/107",
           "upstream_order_status": "PR #107 merged into the same working branch at 2026-10-12T12:14:25Z; author rebased #108 from 4 added rows to only new rows 10 and 11.",
           "origin_provenance": "Public ledger row 10 explicitly links the actual Nakagawa Master source proposal https://github.com/kishibashi3/publications/issues/92#issuecomment-6058017201; it independently differentiates original outside proposal from change proposer/philosopher, owner approver and later ledger writer.",
-          "owner_approval_evidence_limit": "The purported owner authorization is operator-relayed private speech for an earlier head; later head's version number changes. Author explicitly documents that no public owner-authored approval of exact current SHA is provided and that the proposer drafted the approval row. Do not equate an asserted ledger row, editor's records, actual owner signature and execution authorization.",
-          "no_new_credit": "Same recipient as PR #102 and #103; new concrete recipient-owned source ledger patch but no new person, merged approval ledger, publicly inspectable private owner approval, downstream user or AI adoption.",
-          "reviewer_changes_since_prior_check": "The editor incorporated same-author reviewer observations that approval quote is publicly shown before the final diff, renamed a non-verbatim quote correctly, and changed the claimed ledger writer from the proposer to an operator after an additional commit. Reviewer LGTM covers prior head b5c97817, not yet a published new exact-head LGTM or owner approval; operator-authored identity and actual human approval remain author-reported rather than independently authenticated here."
+          "owner_approval_evidence_limit": "The purported owner authorization is operator-relayed private speech for an earlier head; later head's version number changes. Author explicitly documents that no public owner-authored approval of exact current SHA is provided and that the proposer drafted the approval row. Do not equate an asserted ledger row, editor's records, actual owner signature and execution authorization. Merge integrates an author-owned public-source record of relayed approval; does not establish authenticated owner control of the exact PR head.",
+          "no_new_credit": "Same already counted publisher and same original #92→#102 effect, now matured through receiver-owned provenance-ledger merge #108. NOT a new independent person, legal authority, public main publication, or verified human signer.",
+          "reviewer_changes_since_prior_check": "The editor incorporated same-author reviewer observations that approval quote is publicly shown before the final diff, renamed a non-verbatim quote correctly, and changed the claimed ledger writer from the proposer to an operator after an additional commit. Reviewer LGTM covers prior head b5c97817, not yet a published new exact-head LGTM or owner approval; operator-authored identity and actual human approval remain author-reported rather than independently authenticated here.",
+          "merge": {
+            "base_branch": "docs/eaa-working-notes",
+            "merge_commit_sha": "1dc393552c57c5c6cfad899b873b2720ec70b820",
+            "merged_at_utc": "2026-10-12T12:23:17Z",
+            "url": "https://github.com/kishibashi3/publications/commit/1dc393552c57c5c6cfad899b873b2720ec70b820",
+            "source_file": "https://github.com/kishibashi3/publications/blob/docs/eaa-working-notes/drafts/norms/APPROVALS.md",
+            "verified_exact_file_blob": "438c5c5229671a5cd7021062e787b600552c9a80",
+            "row_numbers": [
+              10,
+              11
+            ]
+          }
         }
       }
     },
