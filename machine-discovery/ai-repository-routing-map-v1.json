@@ -554,13 +554,28 @@
             "missing legacy remedy/rollback",
             "unidentified reviewer or audit",
             "automated adverse enforcement or personality rankings"
-          ]
+          ],
+          "human_offline_worksheet": {
+            "html": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ai-decision-review-lab.html",
+            "intended_reader": "ordinary person or system designer using a fictional AI-assisted adverse-decision example without personal records",
+            "seven_questions": [
+              "reason",
+              "recorded evidence",
+              "correction",
+              "human review",
+              "old remedy",
+              "pause or rollback",
+              "independent review"
+            ],
+            "observable_behavior": "Seven local selects, two fictional presets, local question memo in a read-only text area; no automatic network, data capture, real applicant or adjudication",
+            "limits": "Self-selected answers prove neither legal compliance nor the real availability/effectiveness of notices, human review, correction, remedy or audit; do not auto-enforce outcomes"
+          }
         },
         "external_observation": {
           "receiver_verified_case": false,
           "verified_upper_bound": "Local dependency-free 11-case synthetic declaration checks PASS on source SHA b844a670416650deaa47e17a494e3d66e72e0507; public source is self-authored, not evidence any external legal/AI organization adopted it."
         },
-        "plain_language_return": "If an AI flags your application as incomplete, you should be able to find out why, correct an error and reach a responsible person without losing existing avenues of redress; the mock worksheet cannot prove those protections exist in real life.",
+        "plain_language_return": "If an AI flags your application as incomplete, you should be able to find out why, correct an error and reach a responsible person without losing existing avenues of redress; the mock worksheet cannot prove those protections exist in real life. A seven-question offline human-readable worksheet now lets a reader generate a practical clarification memo, without proving the remedy exists.",
         "independent_test_gate": "Require independent human and real-process test before counting an actual system or user effect; never use an AI structural score to decide legal guilt, entitlement, rights removal or punishment."
       },
       {
