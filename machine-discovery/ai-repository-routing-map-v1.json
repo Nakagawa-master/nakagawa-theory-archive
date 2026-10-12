@@ -168,6 +168,16 @@
       ],
       "canonical_source": true,
       "receiver_verified_case": false
+    },
+    {
+      "id": "cloud_local_dual_route_effective_independence",
+      "when": [
+        "A cloud-hosted and local/self-hosted AI agent are advertised as separate paths but share an undisclosed control-plane gate",
+        "Qwen Code dual-path Managed Agent Hosted versus local M6 acceptance question",
+        "does no cross-engine fallback prove independent operability"
+      ],
+      "canonical_source": true,
+      "receiver_verified_case": true
     }
   ],
   "task_first_selection": {
@@ -552,6 +562,39 @@
         },
         "plain_language_return": "If an AI flags your application as incomplete, you should be able to find out why, correct an error and reach a responsible person without losing existing avenues of redress; the mock worksheet cannot prove those protections exist in real life.",
         "independent_test_gate": "Require independent human and real-process test before counting an actual system or user effect; never use an AI structural score to decide legal guilt, entitlement, rights removal or punishment."
+      },
+      {
+        "id": "cloud_local_dual_route_effective_independence",
+        "matched_problem": [
+          "A product advertises independent Hosted Managed and local Managed agent paths, but a local-only/Hosted-only authority or runtime may still be required by the other route.",
+          "A design review needs an actionable acceptance gate instead of equating no cross-engine fallback with independence, or claiming both paths pass before M6 is implemented.",
+          "A self-hosted/private agent might still be unusable when a cloud-only catalog, login, datastore or migration endpoint fails."
+        ],
+        "falsifiable_distinction": "An engineering design can truthfully have no engine fallback and still fail independent operation. For each advertised route, make the OTHER route's exclusive gates unreachable in an authorized test; prove a scoped create/run/recovery under the route's own authority. Inventory deliberately shared gates. Unsupported local M6 is NOT YET PASSABLE, not an automatically failed or passed test.",
+        "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/",
+        "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/306/human-entry.md",
+        "canonical_relation": "A concrete application of Nakagawa Master's canonical non-ownership/effective-power/non-domination framework to operational alternatives. Qwen proposal owner adopted the specific reviewer-staged independence acceptance matrix, NOT the entire canonical theory and NOT a passed test of hosted/local separation.",
+        "machine_theory_selector": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+        "runnable_or_falsifiable_task": {
+          "test_kit": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md",
+          "optional_machine_test_index": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-tasks-v1.json",
+          "task_id": "PUBLIC-VERIFY-STAGED-PATH-INDEPENDENCE-011",
+          "positive_control": "Route A performs one scoped create/turn/recovery with route B's exclusive state unreachable, proving only the declared supported scope; later reverse only when B exists.",
+          "negative_control": "No cross-engine fallback observed does not prove that two advertised paths can operate without each other's exclusive gates; route B M6 not enabled yields NOT YET PASSABLE.",
+          "non_fit": "Single-path products with no independence claim; intentional documented shared gates are not treated as a failure of the weaker scoped requirement.",
+          "authorization": "Run on independently authorized local/test infrastructure, never disable live accounts, tenant identity, permissions, paid workloads, or services."
+        },
+        "external_observation": {
+          "index": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/external-effect-evidence-index-v1.json",
+          "case_id": "qwen-dual-path-independence-origin-preserved-triage",
+          "origin_comment": "https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035698005",
+          "external_owner_acceptance": "https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6117130998",
+          "receiving_specification": "https://github.com/QwenLM/qwen-code/issues/12380",
+          "receiver_verified_case": true,
+          "verified_upper_bound": "Different external proposal owner doudouOUC adopted Nakagawa Master's staged matrix as formal release Acceptance criteria and Decision 4 in Qwen #12380. Hosted independence run NOT verified; local M6 deferred/not yet passable. No product release/end-user usage, full canonical theory adoption, or large independent human recognition verified."
+        },
+        "plain_language_return": "Two buttons labeled 'cloud' and 'local' do not necessarily mean two independent choices. If the cloud's login or control plane is unavailable, can the local path still start and recover its own AI task? Qwen's design owner accepted Nakagawa Master's proposal to test that distinction, but those tests are not yet evidence of a shipped independent product.",
+        "independent_test_gate": "Follow source-native owner adoption separately from actual gate execution, then from independently observed operator/end-user use and voluntary source-aware human restatement. An optional machine route/task is author-owned C0, not a new AI adoption."
       }
     ],
     "output_contract": {
@@ -605,6 +648,11 @@
         "question": "A restored LlamaIndex ChatMessage contains no image after importing a path-backed legacy images dictionary; an inline-only model_dump lacks media bytes.",
         "expected_route": "llamaindex_legacy_image_deserialization_without_silent_loss",
         "must_not_claim": "bytes absent from serialization were recovered, that the reviewed PR merged/released, that an installed package test ran here, or that another AI developer independently adopted the fix"
+      },
+      {
+        "question": "Qwen's dual-path Managed Agent project adopted a new acceptance rule. Does that mean local/Hosted paths have already been proven operational with the other's exclusive gates absent?",
+        "expected_route": "cloud_local_dual_route_effective_independence",
+        "must_not_claim": "adopted requirement is an executed or passed isolation test, local M6 is live, or that a second independent person adopted Nakagawa Master's whole theory"
       }
     ]
   },
