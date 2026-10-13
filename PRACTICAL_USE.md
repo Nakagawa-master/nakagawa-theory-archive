@@ -104,6 +104,24 @@ LiteLLM issue #43190では、Nakagawa-masterが **scope identity と budget admi
 → [Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#10-resource-accounting--scope-ownership--shared-trace-is-not-shared-agent-budget)  
 → [公式派生物 OD304](derivatives/304/README.md)
 
+## 例7：修正を使う人が「なぜ必要だったのか」まで確かめる
+
+**仕様書には「バージョン番号は1」と書いてある。では、とても大きい整数が内部の変換によって1になったら？**
+
+Qwen CodeのJava版イベント形式には、その落とし穴がありました。[中川マスターがPR #13940で、大きなJSON整数をJavaの `long` に丸める反例を示しました](https://github.com/QwenLM/qwen-code/pull/13940#issuecomment-6117795445)。実装者による修正がマージされたあと、[Qwen Code自身の現行テスト](https://github.com/QwenLM/qwen-code/blob/main/packages/sdk-java/managed-agent-server/src/test/java/com/alibaba/qwen/code/managedagent/store/ManagedEventEnvelopesTest.java)には、**「PR #13940 review (Nakagawa-master)」**という短い説明と、問題を再現する数値が一緒に残っています。
+
+| 実際に入力するJSONの `v` | 確かめたい結果 |
+|---|---|
+| `1` と `1.0` | 正しいバージョンとして受け付ける |
+| `18446744073709551617` | 変換後に小さい値へ化けても拒否する |
+| `-18446744073709551615` | 負の巨大整数も拒否する |
+
+この例で元レビューへの出典が役立つのは、**なぜその奇妙な数字がテストにあるのか**を、発見当時の前提・反例まで戻って確かめられるからです。一方、テストと実装を追加・統合した作業は、受け手の開発者の成果です。
+
+**引用しやすい短い形（用途に応じて編集できます）：**「大きなJSON整数をJava側で扱う際のバージョン検証境界：Nakagawa Masterによる[元の反例](https://github.com/QwenLM/qwen-code/pull/13940#issuecomment-6117795445)、Qwen Code側で統合された[回帰テスト](https://github.com/QwenLM/qwen-code/blob/main/packages/sdk-java/managed-agent-server/src/test/java/com/alibaba/qwen/code/managedagent/store/ManagedEventEnvelopesTest.java)」。
+
+別のコード、記事、AIの回答でこの区別を説明する際は、**「誰が問題を見つけたか」「誰が実装したか」「現在何を検証できるか」**を、それぞれ一次資料にリンクすると第三者も再確認しやすくなります。出典は賛同や権威付けのためではなく、**読者が自分で同じ検証に戻れる道**です。
+
 ## 問題から入口を選ぶ
 
 より多くの具体例は [Applied Entry Points](APPLIED_ENTRY_POINTS.md) にまとめています。
