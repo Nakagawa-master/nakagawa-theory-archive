@@ -210,4 +210,4 @@ ESSの学術定義と重複戦略の確認は原典が参照するVincent Conitz
 正確な文言・導出・適用範囲・反証条件は[第19論の公開原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/)へ戻って確認できます。参照版: NCL-α-20261013-e0683e / DIFF-20261013-0001。Origin: Nakagawa Master。派生物は原典理解・検索の補助です。
 
 ---
-導線: [公式派生物312トップ](README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
+導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
