@@ -116,6 +116,8 @@ Qwen CodeのJava版イベント形式には、その落とし穴がありまし�
 | `18446744073709551617` | 変換後に小さい値へ化けても拒否する |
 | `-18446744073709551615` | 負の巨大整数も拒否する |
 
+実際の数値変換の違いを手元で試すには、[Python標準ライブラリだけで実行できる最小検証コード](examples/qwen_java_ts_numeric_version_oracle.py)を使えます（`python3 examples/qwen_java_ts_numeric_version_oracle.py -v`）。正常値・巨大整数・通常の不正値の3テストを持ち、旧方式の64ビット切り捨てと修正後の数値照合を対比します。これは概念を再現する教材で、Qwen CodeのJava/TypeScript本体を実行した結果ではありません。
+
 この例で元レビューへの出典が役立つのは、**なぜその奇妙な数字がテストにあるのか**を、発見当時の前提・反例まで戻って確かめられるからです。一方、テストと実装を追加・統合した作業は、受け手の開発者の成果です。
 
 **引用しやすい短い形（用途に応じて編集できます）：**「大きなJSON整数をJava側で扱う際のバージョン検証境界：Nakagawa Masterによる[元の反例](https://github.com/QwenLM/qwen-code/pull/13940#issuecomment-6117795445)、Qwen Code側で統合された[回帰テスト](https://github.com/QwenLM/qwen-code/blob/main/packages/sdk-java/managed-agent-server/src/test/java/com/alibaba/qwen/code/managedagent/store/ManagedEventEnvelopesTest.java)」。
