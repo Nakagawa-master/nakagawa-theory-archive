@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>グラフの50%が消えた？｜中川マスターの指摘が第三者の修正になった事例</title>
+<style>
+:root{font:16px/1.7 system-ui,sans-serif;background:#f4f7f8;color:#1b3540}
+*{box-sizing:border-box}body{margin:0}main{max-width:850px;margin:auto;padding:clamp(1rem,4vw,2.5rem)}
+h1{font-size:clamp(1.65rem,4vw,2.55rem);line-height:1.3}a{color:#12677b}
+header{padding:clamp(1.2rem,4vw,2.4rem);background:#18434e;color:#fff;border-radius:17px}
+section{background:#fff;border-radius:13px;border:1px solid #d9e5e8;padding:clamp(1rem,3vw,1.6rem);margin:1rem 0}
+.buttons{display:flex;gap:.45rem;flex-wrap:wrap}button{font:inherit;font-weight:660;cursor:pointer;border-radius:9px;border:1px solid #4d8898;padding:.52rem .76rem;background:#eef6f7;color:#174757}
+button[aria-pressed=true]{background:#19505d;color:#fff}button:focus-visible,a:focus-visible{outline:3px solid #efb452;outline-offset:3px}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.cell{background:#f0f6f7;border-radius:10px;padding:1rem}.cell h3{font-size:1rem}.result{min-height:3rem;font-weight:800;font-variant-numeric:tabular-nums}
+.bar{width:100%;height:27px;border-radius:5px;background:#dbe4e6;display:flex;overflow:hidden;margin:.5rem 0}
+.bar span:first-child{background:#178779}.bar span:last-child{background:#d9a146}
+pre{padding:1rem;border-radius:9px;background:#eff5f7;white-space:pre-wrap;overflow-wrap:anywhere}
+small{color:#566974}@media(max-width:680px){.twocol{grid-template-columns:1fr}}
+</style></head><body><main>
+<header><h1>どちらも同じ数字なのに、グラフから両方消えた？</h1>
+<p>一つひとつの数は正しくても、<strong>合計だけが大きすぎて壊れる</strong>ことがあります。そうすると本当は半分ずつなのに、0%と0%と表示されかねません。</p>
+<p>中川マスター（Nakagawa Master／Keisuke Nakagawa）が実際のグラフ部品にこの反例を示し、別の開発者が修正・テストを追加。2026年10月14日 JSTに、<strong>MemberJunctionの開発ブランチへ実際にマージ</strong>されました。</p></header>
+<section><h2>7つの計算を、自分で切り替えてみる</h2><div class="buttons" id="buttons" role="group" aria-label="比較場面"></div>
+<p id="case" aria-live="polite"></p><div class="twocol">
+<div class="cell"><h3>元の素朴な合計</h3><div class="result" id="before"></div><div id="oldBar" class="bar" role="img"></div></div>
+<div class="cell"><h3>合計が溢れるときだけ縮める</h3><div class="result" id="after"></div><div id="newBar" class="bar" role="img"></div></div></div>
+<pre id="explain" aria-live="polite"></pre><button type="button" id="tests">7ケースの計算テスト</button><p id="testResult" aria-live="polite"></p>
+<small>これは元のコードの考え方を説明する独立したオフラインモデルです。MemberJunctionのAngular製品、D3、顧客環境をそのまま実行したものではなく、入力や操作は送信されません。</small></section>
+<section><h2>別の開発者の実装と、その出典</h2>
+<p>修正は面グラフとドーナツ図の割合に使われました。開発者自身が、マスターの「有限の大きな値を二つ足すとInfinityになる」という指摘を取り上げ、最大値で縮める処理を実装。独立のレビュアーが回帰テストを再確認し、テストを意図的に壊したとき正しく失敗することも検査しています。</p>
+<ul><li><a href="https://github.com/MemberJunction/MJ/pull/5368#issuecomment-6136450986">実装した開発者が@Nakagawa-masterを明記した説明</a></li>
+<li><a href="https://github.com/MemberJunction/MJ/pull/5368#pullrequestreview-5499020316">別のレビュアーの独立確認</a></li>
+<li><a href="https://github.com/MemberJunction/MJ/pull/5368">マージ済みPR #5368（2026-10-13 15:08 UTC）</a></li>
+<li><a href="https://github.com/MemberJunction/MJ/blob/bfd3b23f44ac9072f066c63c763fa45d86e99a40/packages/Angular/Generic/charts/src/lib/internal/scales.ts">実際の計算関数 SummableValues</a></li>
+</ul>
+<p>ここで確認できるのは、第三者によるコード修正・テスト・開発ブランチへの統合です。正式パッケージへの配布・顧客利用は別に確かめます。<a href="https://master.ricette.jp/">中川マスターの原典群</a>・<a href="../REAL_WORLD_IMPACT.md">公開された第三者実装記録</a>も参照できます。</p></section></main>
+<script>
+"use strict";
+const samples=[
+ {name:"同じ巨大な2値",values:[1e308,1e308],note:"足すとInfinity。元は0%と0%なのに、縮めれば50%と50%。"},
+ {name:"巨大な数とその9割",values:[1e308,9e307],note:"元の合計はInfinity。比は約52.63%と47.37%。"},
+ {name:"普通の70対30",values:[70,30],note:"元の合計が有効なときは縮めない。"},
+ {name:"巨大な数とゼロ",values:[1e308,0],note:"合計はまだ有限。もともと100%と0%。"},
+ {name:"両方ゼロ",values:[0,0],note:"合計がゼロなら割合は定義できない。"},
+ {name:"無効な値を含む",values:[NaN,20],note:"グラフのこの用途では非有限なセルをゼロに正規化。オーバーフローとは別の入力条件。"},
+ {name:"小数0.1と0.2",values:[.1,.2],note:"小数の丸めと合計のオーバーフローは別問題。"}
+];
+const el=id=>document.getElementById(id);
+function clean(xs){return xs.map(x=>Number.isFinite(x)&&x>0?x:0)}
+function summable(xs){const total=xs.reduce((a,b)=>a+b,0);if(Number.isFinite(total))return xs.slice();const max=Math.max(0,...xs);return max>0?xs.map(x=>x/max):xs.map(()=>0)}
+function percent(xs){const sum=xs.reduce((a,b)=>a+b,0);return sum>0?xs.map(x=>(x/sum)*100):null}
+function label(p){return p===null?"合計ゼロ：割合なし":p.map((v,i)=>(i===0?"A ":"B ")+(Number.isFinite(v)?v.toFixed(2)+"%":"計算不能")).join(" / ")}
+function bar(id,p){const b=el(id);b.replaceChildren();if(!p||p.some(x=>!Number.isFinite(x))){b.setAttribute("aria-label","割合なし");return;}p.forEach(v=>{const span=document.createElement("span");span.style.width=Math.min(100,Math.max(0,v))+"%";b.appendChild(span)});b.setAttribute("aria-label",label(p))}
+const buttons=el("buttons");
+samples.forEach((s,i)=>{const btn=document.createElement("button");btn.type="button";btn.textContent=s.name;btn.setAttribute("aria-pressed","false");btn.addEventListener("click",()=>render(i));buttons.appendChild(btn)});
+function render(i){const s=samples[i],xs=clean(s.values),before=percent(xs),rescaled=summable(xs),after=percent(rescaled);
+ [...buttons.children].forEach((btn,j)=>btn.setAttribute("aria-pressed",String(i===j)));
+ el("case").textContent="A = "+String(s.values[0])+"、B = "+String(s.values[1]);
+ el("before").textContent=label(before);el("after").textContent=label(after);
+ bar("oldBar",before);bar("newBar",after);
+ el("explain").textContent="元の合計: "+String(xs.reduce((a,b)=>a+b,0))+"\n縮約後の数値: "+rescaled.join(" / ")+"\n"+s.note;
+}
+el("tests").addEventListener("click",()=>{
+const want=[[50,50],[100/1.9,90/1.9],[70,30],[100,0],null,[0,100],[100/3,200/3]];
+const n=samples.filter((s,i)=>{const a=percent(summable(clean(s.values))),w=want[i];return a===null?w===null:w!==null&&a.every((x,j)=>Math.abs(x-w[j])<1e-8)}).length;
+el("testResult").textContent=n+"/"+samples.length+" cases match expected values (offline model only).";
+});
+render(0);
+</script></body></html>
