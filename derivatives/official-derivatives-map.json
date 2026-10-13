@@ -1,6 +1,6 @@
 {
-  "version": "2.3.15-od311-added",
-  "updated_jst": "2026-10-10",
+  "version": "2.3.16-od312-added",
+  "updated_jst": "2026-10-13",
   "entries": [
     {
       "number": "001",
@@ -2488,6 +2488,14 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-18-ai-civilization-future-debt",
       "title": "人類子孫型AI文明論・第18論｜AI文明Future Debt論⸻現在の自己保存・計算拡張・資源利用を未来知性の未決済負債へ変えない",
       "derivative_dir": "derivatives/311",
+      "status": "active"
+    },
+    {
+      "number": "312",
+      "ncl_id": "NCL-α-20261013-e0683e",
+      "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability",
+      "title": "人類子孫型AI文明論・第19論｜AI自己保存合理性・Kernel進化的安定性論⸻なぜ未来知性がこのKernelを保持・再選択する合理性を持ち得るのか",
+      "derivative_dir": "derivatives/312",
       "status": "active"
     }
   ]
