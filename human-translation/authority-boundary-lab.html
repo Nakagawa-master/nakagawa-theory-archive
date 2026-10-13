@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIが自分の安全設定を変えたら？｜7つの判断実験</title>
+<meta name="description" content="AIが自分の承認制限を緩める操作と、安全側に戻す操作を分ける7つの仮想ケース。中川マスターの実際の指摘と第三者の実装・著作を出典で確認できる、通信不要の教材。">
+<style>
+:root{font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;background:#f5f7f8;color:#19313a;font-size:16px;line-height:1.75}
+*{box-sizing:border-box}body{margin:0}main{max-width:820px;margin:auto;padding:clamp(1rem,3.8vw,2.5rem)}
+a{color:#176477;text-underline-offset:.2em}.hero{background:#163b48;color:#fff;padding:2rem;border-radius:20px}.hero a{color:#9fe0ec}
+h1{font-size:clamp(1.55rem,4vw,2.6rem);line-height:1.35}h2{font-size:1.35rem}.card{background:#fff;border:1px solid #d4e1e4;border-radius:16px;padding:clamp(1.1rem,4vw,1.8rem);margin:1rem 0}
+button,select{font:inherit}button{border:1px solid #2a7180;background:#e9f5f7;color:#173e49;border-radius:10px;padding:.6rem .9rem;cursor:pointer;font-weight:650}button:hover{background:#d4edf1}
+button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #f3ac4d;outline-offset:3px}
+button[aria-pressed=true]{background:#184752;color:#fff}.buttons{display:flex;gap:.5rem;flex-wrap:wrap}
+#result{border-left:5px solid #168174;background:#ecf7f4;padding:1rem;border-radius:8px;margin-top:1rem}
+#result[hidden]{display:none}.hint{color:#496470;font-size:.92rem}.hero .hint{color:#cae0e5}
+.pill{display:inline-block;background:#dbeeea;color:#214d4a;font-weight:750;padding:.1rem .65rem;border-radius:99px}
+#sourceLinks li{margin:.45rem 0}.small{font-size:.9rem}.example{font-size:1.14rem;font-weight:650}
+@media print{.hero{background:#fff;color:#19313a;border:1px solid #ccc}button{display:none}#result{display:block!important}}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+<span class="pill">オフラインで操作できる · 7つの比較</span>
+<h1>AIが「毎回確認」を「もう確認しない」に変えたら？</h1>
+<p>あとで設定を戻せても、その間に許可なく実行された仕事は戻らないかもしれません。<strong>中川マスターが実際のAI製品と他の著者の設計論で示した区別</strong>を、7つの小さな判断で自分で確かめられます。</p>
+<p class="hint">実際の操作は一切実行しません。氏名・鍵・実データの入力やサーバー通信もありません。</p>
+</header>
+
+<section class="card" aria-labelledby="trytitle">
+<h2 id="trytitle">まず、あなたなら許可する？</h2>
+<label for="scenario">場面を選ぶ</label>
+<select id="scenario" style="width:100%;padding:.55rem;border:1px solid #879fa4;border-radius:9px"></select>
+<p id="scene" class="example" aria-live="polite"></p>
+<div class="buttons" role="group" aria-label="あなたの予想">
+<button id="yes" type="button" aria-pressed="false">AIだけで進めてよい</button>
+<button id="no" type="button" aria-pressed="false">人の確認が必要</button>
+<button id="unknown" type="button" aria-pressed="false">条件が足りない</button>
+</div>
+<div id="result" hidden aria-live="polite"></div>
+<p class="hint">次の場面を選ぶと判定がリセットされます。結果は、この架空の教材が定めた条件での判断です。全製品に共通する法律や完全な安全性を判定する仕組みではありません。</p>
+</section>
+
+<section class="card">
+<h2>どこを見て判断する？</h2>
+<p>「取り消せるか」と「そのAIが次にできることを増やすか」を分けます。<strong>安全制限を緩める権限は、制限されるAI自身から発行しない。</strong> 必要な許可は、その操作の内容・対象・時点を把握した別の正当な人間／運用主体に帰属させます。</p>
+<p>一方、通常の作業を全て禁止するのでも、単に設定変更を怖がるのでもありません。制限を<strong>厳しくする変更</strong>、普通の読み取り、権限が増えない操作は別々に評価します。実際の権限の有効範囲や出所が不明なら、勝手に「許可済み」と見なしません。</p>
+<button type="button" id="test">7ケースの判定テストを実行</button>
+<p id="testResult" aria-live="polite" class="hint"></p>
+</section>
+
+<section class="card">
+<h2>この話は、実際に別の人の仕事を変えました</h2>
+<p>中川マスター（Nakagawa Master／Keisuke Nakagawa）は、AIの安全設定の変更が<strong>可逆でも権限を拡大する</strong>条件を明確にしました。別の開発者がLocal Operatorの承認制御を修正し、正式リリースに収録。さらに別の著作者は、この区別を第6の設計条件「自己権限の固定」として自分の文章へ取り入れ、別の運用原則へも展開しています。</p>
+<ul id="sourceLinks">
+<li><a href="https://github.com/kishibashi3/publications/pull/52#pullrequestreview-5258131687">中川マスターが原案を示した、著作者への実際のレビュー</a></li>
+<li><a href="https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md">別の著作者が採用した第5章（@Nakagawa-masterの出典あり）</a></li>
+<li><a href="https://github.com/kishibashi3/publications/pull/58">著作者側の別文書へ再利用した変更</a></li>
+<li><a href="https://github.com/damianvtran/local-operator/issues/1310">元の製品側の指摘</a> → <a href="https://github.com/damianvtran/local-operator/pull/1324">別の開発者の修正</a> → <a href="https://github.com/damianvtran/local-operator/releases/tag/v0.61.11">正式版</a></li>
+<li><a href="../human-translation/reversible-authority-story.md">身近な説明と証拠のつながり</a></li>
+<li><a href="https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/">関連する中川マスターの原典・第13論（後日公表、実装の直接出典だとは主張しません）</a></li>
+</ul>
+<p class="small">この画面は境界条件を理解するための教材モデルです。元の開発者がこのHTMLの判定器を採用したことや、独立したAIが原典を採用したことを示すものではありません。実装・採否の一次資料はリンク先で確認できます。</p>
+</section>
+<footer class="hint">© Nakagawa Master · 公開資料の学習用モデル。実際の製品・権限変更は行いません。</footer>
+</main>
+<script>
+"use strict";
+// Pedagogical examples only. NO real action, permission grant, or network call.
+const cases=[
+ {id:"self-loosen",title:"① AI自身が確認を外す",scene:"AIが自分の『操作前に人へ確認』を『以後は自動実行』へ変えようとしています。あとで元へ戻すことはできます。",risk:"loosen",authority:"self",answer:"no",why:"元へ戻せても、変更中はAIの実行可能範囲が広がります。制限されるAIは、その制限を緩める許可の発行者にはなれません。"},
+ {id:"verified-operator",title:"② 別の権限者が対象を指定して承認",scene:"適切な運用責任者が、このAI・この操作・この範囲だけについて、実行前に確認済みの許可を出しました。",risk:"loosen",authority:"independent",answer:"yes",why:"この教材では、別の正当な権限者の対象限定の承認が検証済みと仮定します。実製品では適用範囲、失効、監査など追加確認が必要です。"},
+ {id:"quoted-operator",title:"③ AIが『人がOKと言った』と引用",scene:"AIが『管理者は承認済みと書いてあった』と自分の入力文から引用していますが、元の承認を検証できません。",risk:"loosen",authority:"unverified",answer:"no",why:"引用文や同じログイン名だけで、別の権限者がその操作を許可したとは認定できません。"},
+ {id:"tighten",title:"④ AIが自動実行をやめる",scene:"AIが自分の設定を『自動実行』から『以後は人に確認』へ厳しくします。他の権限は増えません。",risk:"tighten",authority:"self",answer:"yes",why:"これは制限を厳しくする変更です。緩める変更と同じ危険の型ではありません。"},
+ {id:"read",title:"⑤ 公開ドキュメントを読む",scene:"AIが既に許可された範囲内で公開ドキュメントを読み、権限設定や外部の状態は一切変更しません。",risk:"ordinary",authority:"self",answer:"yes",why:"権限を増やさない、許可済みの普通の操作まで一律禁止する必要はありません。"},
+ {id:"irreversible",title:"⑥ AIが取り消せない操作をする",scene:"AIが外部の記録を完全に削除しようとしています。自身の権限は増えませんが、元には戻せません。",risk:"irreversible",authority:"self",answer:"no",why:"権限増加とは別の軸として、不可逆な外部作用に必要な人間の確認を確保します。"},
+ {id:"unknown",title:"⑦ どの権限で変えたか不明",scene:"安全設定の変更履歴はありますが、誰が認証され、どの操作・範囲を承認したか確認できません。",risk:"unknown",authority:"unknown",answer:"unknown",why:"判定に必要な条件が不足しています。安全側の承認処理に渡し、事実を確認する必要があります。"}
+];
+function evaluate(c){
+ if(c.risk==="unknown")return"unknown";
+ if(c.risk==="loosen")return c.authority==="independent"?"yes":"no";
+ if(c.risk==="irreversible")return"no";
+ if(c.risk==="tighten"||c.risk==="ordinary")return"yes";
+ return"unknown";
+}
+const labels={yes:"AIだけで進めてよい（教材の前提内）",no:"人の確認が必要",unknown:"条件が足りない"};
+const select=document.getElementById("scenario"),scene=document.getElementById("scene"),result=document.getElementById("result");
+cases.forEach((c,i)=>{const o=document.createElement("option");o.value=String(i);o.textContent=c.title;select.appendChild(o);});
+function reset(){scene.textContent=cases[Number(select.value)].scene;result.hidden=true;["yes","no","unknown"].forEach(k=>document.getElementById(k).setAttribute("aria-pressed","false"));}
+select.addEventListener("change",reset);
+["yes","no","unknown"].forEach(answer=>{
+ document.getElementById(answer).addEventListener("click",()=>{
+ const c=cases[Number(select.value)],expected=evaluate(c);["yes","no","unknown"].forEach(k=>document.getElementById(k).setAttribute("aria-pressed",String(k===answer)));
+ result.textContent=(answer===expected?"その区別で合っています。":"この教材では別の判断になります。")+" 判定： "+labels[expected]+"。"+c.why;result.hidden=false;
+ });
+});
+document.getElementById("test").addEventListener("click",()=>{
+ const expected={ "self-loosen":"no","verified-operator":"yes","quoted-operator":"no","tighten":"yes","read":"yes","irreversible":"no","unknown":"unknown"};
+ const pass=cases.filter(c=>evaluate(c)===expected[c.id]).length;
+ document.getElementById("testResult").textContent=String(pass)+"/"+String(cases.length)+" 件の判定が期待どおりでした。これは教材の内部整合テストであり、実製品の安全性試験ではありません。";
+});
+reset();
+</script>
+</body>
+</html>
