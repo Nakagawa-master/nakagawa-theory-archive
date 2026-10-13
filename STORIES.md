@@ -196,7 +196,7 @@ MemberJunctionでは、具体的なAPI境界の指摘が別reviewerにも独立�
 
 **仕事で使うデータベースが、「この検索には必要な索引がもうあります」と判断した。でも、その索引は本当に探したい項目から始まっていなかったら？**
 
-MemberJunctionの索引提案機能では、計算式が先頭にある複合インデックスから式の位置が消え、後ろにある項目が先頭に見える可能性がありました。中川マスターは、「項目が含まれる」と「最初の項目として使える」を分け、反対向きの二つの検証条件を示しました。別の開発者は [@Nakagawa-masterの指摘を明示的に認め](https://github.com/MemberJunction/MJ/pull/5258#issuecomment-6084898393)、PostgreSQL・MySQLの取得処理とテストを[実際に修正しています](https://github.com/MemberJunction/MJ/commit/5177fcdb5fedb8124b8bdbd4f57b0b19cf63769a)。**このPRはまだ未統合**です。実際の利用者のデータベースで修正が使われた、とまでは言えません。
+MemberJunctionの索引提案機能では、計算式が先頭にある複合インデックスから式の位置が消え、後ろにある項目が先頭に見える可能性がありました。中川マスターは、「項目が含まれる」と「最初の項目として使える」を分け、反対向きの二つの検証条件を示しました。別の開発者は [@Nakagawa-masterの指摘を明示的に認め](https://github.com/MemberJunction/MJ/pull/5258#issuecomment-6084898393)、PostgreSQL・MySQLの取得処理とテストを[実際に修正しています](https://github.com/MemberJunction/MJ/commit/5177fcdb5fedb8124b8bdbd4f57b0b19cf63769a)。**2026年10月14日（日本時間）、このPRはマージされました。** 別のレビュアー `rkihm-BC` が、マスターの指摘による列順の修正に加え、本人が発見したSQLコメントの改行問題などについて再検証・承認し、開発者は369件のテストを報告しています。[受け手の統合PR](https://github.com/MemberJunction/MJ/pull/5258)と[マージコミット](https://github.com/MemberJunction/MJ/commit/df30e5c93e2c35047f0bef6ed5b3e35872aff8b7)で経緯を追えます。マスターの発見は「式の位置と先頭列」の問題、SQLコメントの別問題は当該レビュアー自身の発見です。一般利用者への正式配布・実利用は次の確認段階です。
 
 **二つのAIの仕事を再開するための回答。片方への回答が、もう片方にまで送られていたら？**
 
