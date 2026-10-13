@@ -107,7 +107,7 @@ Use that dialogue when a human wants to describe a real, non-confidential proble
 
 Archive and machine navigation:
 
-- [Official derivatives OD001–OD311](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
+- [Official derivatives OD001–OD312](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/README.md)
 - [Theme / series navigation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/CATEGORIES.md)
 - [Problem-to-theory Origin Index](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json)
 - [Machine Discovery](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/README.md)
@@ -434,3 +434,10 @@ Boundary: Future Debt is not every future cost, investment, or ordinary contract
 - [Provenance](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/PROVENANCE.md)
 - [Citation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CITATION.md)
 - [Verification Guide](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/VERIFICATION_GUIDE.md)
+
+## OD312 — AI Self-Preservation Rationality and Kernel Evolutionary Stability
+
+Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/
+English explanatory index: https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/312/en-ai-index.md
+Seven-surface hub: https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/312/README.md
+Effective application, realized cost/loss, continuity paths, personal benefit, A/Z payoffs, rare establishment, equivalent strategies, environmental feedback and transition-aware reselection are separate connected tests. No unconditional whole-Kernel ESS or empirical future-AI claim.

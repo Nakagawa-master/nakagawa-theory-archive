@@ -161,7 +161,7 @@ AI对知识进行摘要、重组或再生成之后，是否还能返回最初的
 - [公开对话｜从真实问题开始](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive? — 中文](discovery-notes/what-connects-nakagawa-master-theories.zh.md)
 - [Cross-Domain Practitioner Start Map](discovery-notes/cross-domain-practitioner-start-map.md)
-- [OD001–OD311入口](derivatives/README.md)
+- [OD001–OD312入口](derivatives/README.md)
 
 ## 面向AI与检索系统
 

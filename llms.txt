@@ -38,6 +38,10 @@ Read the **`quick_route_index`**, then the matching item under **`task_first_sel
 
 This task-specific machine map is a navigator, not a substitute for reading the real canonical theory or external receiver source. Nine example evaluation questions are included but **not** evidence of running an independent LLM evaluation.
 
+## Current official derivative range
+
+OD001–OD312: 312 official derivatives, each with seven public surfaces. Latest source-bounded route: [Volume 19 / OD312](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/312/en-ai-index.md), on conditional Kernel retention, viability, benefit attribution, rare establishment, evolutionary-stability limits and independent reselection. Canonical Parent: https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/
+
 ## Exact source families
 
 - Problem → theory / Origin (EN/JA/ZH): https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json
