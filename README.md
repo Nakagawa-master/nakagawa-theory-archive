@@ -30,6 +30,8 @@
   GitHub上ではHTMLのコードが表示されます。**その画面の「Raw」から `.html` を保存し、保存したファイルをブラウザで開く**と操作できます。外部サイトへの自動送信はありません。  
 → [5つのAI指示が送信条件を超える？｜実際に第三者が修正したキャッシュ境界を操作・比較](human-translation/anthropic-system-cache-boundary-lab.html)  
   オフラインで「5つのキャッシュ目印を1つに減らす」**独立開発者による実装済み修正**と、「1時間と5分という違う有効期間まで消してよいか」**新たな未採用の反例**を別々に操作できます。実際のAPI通信は行わず、ケースの成立条件を手元で比べる教材です。  
+→ [AIが自分の安全設定を変えたら？｜7つの判断を自分で試す（オフライン教材）](human-translation/authority-boundary-lab.html)  
+  「元に戻せる」と「自分の許可範囲を自分で広げてよい」を分ける7場面。中川マスターの指摘が[別の著者の第6条件へ取り込まれた実例](https://github.com/kishibashi3/publications/pull/57)と、[別の開発者の正式リリース](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11)を元の公開記録で確かめられます。GitHubの「Raw」からHTMLを保存して開きます。実際の操作・送信はありません。  
 → [公開証拠を段階別に確認する](REAL_WORLD_IMPACT.md)
 
 
