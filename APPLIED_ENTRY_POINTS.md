@@ -504,6 +504,20 @@ Qwen Code issue #12380では、Nakagawa Masterがこのpath-independence境界�
 - [Machine-readable challenge L](machine-discovery/independent-reuse-challenges-v1.json)
 - [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
 
+## 再試行しただけなのに、AIの保存履歴が増えるのはなぜ？
+
+AIエージェントが会話の途中状態を保存するとき、通信の再試行が起こる場合があります。同じ保存要求をもう一度送っただけなら、履歴は増えないはずです。ところが、**同じ保存キーで再試行した結果、保存されないはずのメッセージだけが残る**ことがあります。
+
+実際に[Pydantic AIの開発PR #9982](https://github.com/pydantic/pydantic-ai/pull/9982)で、この順序のずれが検討されました。従来の試作実装では、メッセージを別のテーブルへ書いてから、保存スナップショット本体の重複を検査していました。本体の重複だけを無視すると、先に書いたメッセージが参照されず残る可能性があります。
+
+[中川マスターが元の保存順序と重複キーの反例を指摘](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6052803154)し、開発者[aweis89自身が再現・修正](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879)しました。同じキーでも違う履歴を送る再試行で、修正前はメッセージ行が2件から4件に増えることを確認。修正後の[受け手の現在の保存コード](https://github.com/pydantic/pydantic-ai/blob/72a9a2b4e263e5a81c7e939809daff6292f61557/src/pydantic_ai_harness/pydantic_ai_harness/step_persistence/_store.py)は、メッセージを格納する**前**に保存済みの重複キーを検査し、接続方式の異なる2つの回帰テストも備えています。
+
+**自分のシステムで試すなら：** (1) 同じ保存キーで同じデータを再送する、(2) 同じキーで異なるメッセージを再送する、(3) 接続を自分で管理する場合と保存ライブラリに任せる場合を分ける、(4) スナップショット数だけでなく、参照されないメッセージ行の増減も検証します。
+
+ここには二つの境界があります。**「保存要求を受け取った」ことと「保存状態が増えた」ことは別**であり、**「スナップショットを二重登録しなかった」ことと「関連するメッセージを余分に書かなかった」ことも別**です。なお、開発者は呼び出し側が管理する接続での同時書込みについて、二つの処理が重複検査を同時に通る余地を明記しています。この修正だけで全ての同時実行が厳密に一度になると判断しません。PRは現在統合待ちです。
+
+この実例を違う現場へ応用する際、[合意形成の物理・第2論／公式派生物208](derivatives/208/README.md)の**「短く残った結論と、その理由・例外・変更履歴を分けて再現する」**視点が役立ちます。保存が冪等という結果だけを引き継がず、何を一度だけに保つのか、どの並行条件では保証しないのか、失敗を検知して誰が訂正するのかを残す、という使い方です。原典は[制度の意味圧縮](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol2-compression-of-meaning/)です。これは**今回のPR開発者が原典理論を読んで採用したという主張ではなく**、別の読者・AIが実装事実を正確に扱うための公開された適用レンズです。
+
 ## 312件全体から探す
 
 ここに当てはまらない問題は、[24テーマの世界地図](human-translation/WORLD_MAP.md) または [OD001–OD312水平マップ](human-translation/ALL_310_HORIZONTAL_MAP.md) から探せます。
