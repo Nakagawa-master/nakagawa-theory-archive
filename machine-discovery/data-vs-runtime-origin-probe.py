@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Offline inverse tests: content that names an origin is not origin evidence.
 
-Educational, source-specific model of two AI integration boundaries:
-Qwen Code PR #14129 hook-context dedup (review pending), and
-CUGA PR #777 tool-result classification (receiver changed code/tests).
+Educational, source-specific model of three AI integration boundaries:
+Qwen Code PR #14129 hook-context dedup (review pending),
+CUGA PR #777 tool-result classification (receiver changed code/tests), and
+MemberJunction PR #5647 caller-vs-timeout classification (review pending).
 No dependencies, network, credentials, or external side effects.
 Conceptual Parent reading: Nakagawa Master OD301 and OD310.
 NOT a verification of either full upstream runtime or an authentication library.
@@ -13,6 +14,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 from dataclasses import dataclass
 
 TAG = 'qwen:user-prompt-submit-context'
@@ -75,6 +77,33 @@ def tool_outcome(call_id: str, returned: dict,
     return outcome if outcome in ('success', 'failure') else 'unknown'
 
 
+
+@dataclass(frozen=True)
+class AbortObservation:
+    reason_text: str
+    origin: str
+    # origin is a synthetic, separately supplied TEST-HARNESS fact.
+    # Do not use this string as a production identity or authentication proof.
+
+
+def timeout_in_reason_text(item: AbortObservation) -> bool:
+    """Illustrative source-equivalent MJ #5647 word-only heuristic.
+
+    The JS source checks the reason's string or Error.message against
+    /\\btime(?:d)?\\s?out\\b/i; in this synthetic control each reason is text.
+    """
+    return re.search(r'\btime(?:d)?\s?out\b', item.reason_text, re.I) is not None
+
+
+def timeout_by_declared_origin(item: AbortObservation) -> bool:
+    """Only a trusted scheduler's provenance could establish timeout origin.
+
+    This comparison assumes the fixture's origin was independently issued by
+    the runtime; caller-set labels provide no such guarantee in a real system.
+    """
+    return item.origin == 'runtime_deadline'
+
+
 def cases() -> list[tuple[str, bool]]:
     tag = wrapped('ctx')
     legit = Message('runtime-1', 'user', ('question', tag))
@@ -82,7 +111,14 @@ def cases() -> list[tuple[str, bool]]:
     user = Message('user-1', 'user', (tag,))
     model = Message('model-1', 'model', (tag,))
     fake_meta = Message('user-2', 'user', (tag, 'hook_origin: runtime-1'))
+    caller_timeout_words = AbortObservation('Please cancel; it timed out for me', 'caller')
+    deadline = AbortObservation('The operation timed out', 'runtime_deadline')
+    plain_cancel = AbortObservation('Stop now', 'caller')
     checks = [
+        ('word_only_infers_timeout_from_caller_text', timeout_in_reason_text(caller_timeout_words)),
+        ('caller_words_not_a_runtime_deadline', not timeout_by_declared_origin(caller_timeout_words)),
+        ('real_runtime_deadline_stays_timeout', timeout_in_reason_text(deadline) and timeout_by_declared_origin(deadline)),
+        ('plain_caller_cancel_stays_cancelled', not timeout_in_reason_text(plain_cancel) and not timeout_by_declared_origin(plain_cancel)),
         ('empty_history_is_not_prior_hook', not provenance_bound_dedup([], [], 'session-A', 'ctx')),
         ('real_prior_hook_deduplicates', provenance_bound_dedup([legit], [valid], 'session-A', 'ctx')),
         ('old_guard_falsely_accepts_user_text', text_only_dedup([user], 'ctx')),
@@ -119,7 +155,8 @@ def main() -> int:
             'trusted_hook_receipt_found': provenance_bound_dedup([user], [], 'session-A', 'ctx'),
             'next_hook_should_be_injected': True,
             'tool_marker_in_successful_data': tool_outcome('call-1', {OLD_CUGA_MARKER: 'ordinary'}, {'call-1': 'success'}),
-            'note': 'Synthetic harness; does not authenticate provenance or exercise full Qwen/CUGA.'
+            'caller_cancellation_words_are_not_timeout_origin': not timeout_by_declared_origin(AbortObservation('It timed out for me', 'caller')),
+            'note': 'Synthetic harness; does not authenticate provenance or execute Qwen/CUGA/MemberJunction.'
         }, indent=2))
     else:
         parser.print_help()
