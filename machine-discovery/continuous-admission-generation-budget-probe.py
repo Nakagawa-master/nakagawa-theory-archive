@@ -104,7 +104,7 @@ def self_test():
             raise AssertionError("accepted invalid scenario")
         except ValueError:
             pass
-    return 10
+    return 11
 
 
 def main():
