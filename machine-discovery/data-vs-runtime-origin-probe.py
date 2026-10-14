@@ -5,7 +5,7 @@ Educational, source-specific model of four AI integration boundaries:
 Qwen Code PR #14129 hook-context dedup (receiver now uses injector-owned receipt),
 CUGA PR #777 tool-result classification (receiver changed code/tests),
 MemberJunction PR #5647 caller-vs-timeout classification (receiver fixed word-only logic; typed-marker follow-up open), and
-Pydantic AI PR #10235 same-provider-name/different-endpoint tool metadata (review pending).
+Pydantic AI PR #10235 same-name/different-endpoint metadata (receiver acknowledged the factual counterexample, corrected PR explanation, retained name-only gating).
 No dependencies, network, credentials, or external side effects.
 Conceptual Parent reading: Nakagawa Master OD301 and OD310.
 NOT a verification of full upstream runtimes or an authentication library.
@@ -136,7 +136,10 @@ def endpoint_bound_tool_metadata_replay(origin: ToolOrigin, destination_name: st
     """Illustrative exact-origin test, NOT production URL/authentication validation.
 
     In reality, source URL provenance and destination identity must be trusted
-    and canonicalized by the runtime. This is a synthetic contrast only.
+    and canonicalized by the runtime. Exact URL equality is NOT a recommended
+    production fix: a permitted gateway/proxy and its direct vendor endpoint may
+    legitimately require forwarding the same signature across different URLs.
+    This synthetic contrast only exposes a limitation of a name-only check.
     """
     return (origin.provider_name == destination_name
             and bool(origin.provider_url)
@@ -209,7 +212,7 @@ def main() -> int:
             'caller_cancellation_words_are_not_timeout_origin': not timeout_by_declared_origin(AbortObservation('It timed out for me', 'caller')),
             'caller_structural_timeout_flag_is_forgeable': timeout_from_reason_shape({'IsTimeout': True, 'message': 'User hit Stop'}),
             'gemini_extra_content_crosses_namesake_endpoint_under_name_only_gate': name_only_tool_metadata_replay(ToolOrigin('openai', 'https://generativelanguage.googleapis.com/v1beta/openai/'), 'openai'),
-            'note': 'Synthetic harness; does not authenticate provenance or execute Qwen/CUGA/MemberJunction.'
+            'note': 'Synthetic harness; does not authenticate provenance or execute Qwen/CUGA/MemberJunction/Pydantic. Endpoint equality is not a production fix across legitimate proxies.'
         }, indent=2))
     else:
         parser.print_help()
