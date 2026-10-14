@@ -340,7 +340,7 @@ The article kept its original distinctions — reversibility is not the same as 
 ## 12. MemberJunction | Row contents protected, then the remaining row-identity boundary carried into a second work item
 
 **Surface:** [MemberJunction/MJ#4595](https://github.com/MemberJunction/MJ/pull/4595) → [issue #4610](https://github.com/MemberJunction/MJ/issues/4610)  
-**Current state:** PR #4595 merged on 2026-09-23 → LTS backport PR #4712 merged → included in release v6.1.4; issue #4610 open
+**Current state:** #4595 merged → LTS #4712 merged/included in v6.1.4. A separately implemented [row-key disclosure fix #5242](https://github.com/MemberJunction/MJ/pull/5242) merged on 2026-10-14; [LTS port #5696](https://github.com/MemberJunction/MJ/pull/5696) is OPEN. The stronger record-specific authorization issue [#4610](https://github.com/MemberJunction/MJ/issues/4610) remains OPEN.
 
 PR #4595 stopped full row contents from riding an unfiltered cache-invalidation broadcast by default. A later `Nakagawa-master` review separated that fix from a remaining metadata boundary: even without `recordData`, a session could still learn another row's stable primary key and mutation timing.
 
@@ -359,8 +359,12 @@ PR #4595 was then backported to the `lts/6.1` line as [PR #4712](https://github.
 
 The 6.1.3 certification record treated this backport as a security **cert-blocker**. #4712 merged into LTS as `f0baf68415e0`, and the subsequent official [v6.1.4 release](https://github.com/MemberJunction/MJ/releases/tag/v6.1.4) (draft=false, prerelease=false; published 2026-09-24 23:53 UTC) explicitly lists #4712. The v6.1.4 release notes also record the changed behavior: cache-invalidation events no longer send row data to every client by default, and consumers re-read through the signed-in user's read path when needed.
 
-**Publicly verifiable here:** review → third-party code/test change → third-party explicit source attribution → #4595 merge → second work item carrying the stronger boundary and regression → LTS backport #4712 merge → inclusion in v6.1.4.  
-**Not established here:** row-level policy implementation, merge/closure of #4610, production deployment of v6.1.4, or user-scale impact.
+**New independent receiver-side implementation and tests (2026-10-14):** On [issue #5241](https://github.com/MemberJunction/MJ/issues/5241), the developers independently specified the remaining row-key exposure and merged [PR #5242](https://github.com/MemberJunction/MJ/pull/5242). For a subscriber whose reads are all row-filtered, the event now omits `PrimaryKeyValues` and `RecordData` while preserving cache correctness through whole-entity invalidation. A different developer [tested live WebSocket connections with restricted and unrestricted users](https://github.com/MemberJunction/MJ/pull/5242#issuecomment-6051805014), observing no record key for the restricted user and a key for the authorized unrestricted user. This was implemented, tested, reviewed and merged at `5aae20c2`. [LTS adaptation #5696](https://github.com/MemberJunction/MJ/pull/5696) has been implemented and tested but is not yet merged.
+
+**Source attribution and remaining scope:** The #4610 author's explicit acknowledgment that its issue framing largely came from `@Nakagawa-master` is primary evidence of a voluntary Origin re-reference. The #5241/#5242 authors are **not independently shown to have read or acted on that earlier review**, so the newer fix is a traceable matching receiving result rather than proof of direct causation. It narrows stable **row-key disclosure** to row-filtered readers; entity-level event existence and `Timestamp` remain observable. The stronger #4610 contract of per-row authorization and withholding unauthorized mutation timings is not yet fully implemented or closed. Live customer use and the LTS port's release are unverified.
+
+**Publicly verifiable here:** review → independent code/test response and explicit Origin attribution → #4595 merge → stronger follow-up issue → #4712 LTS merge/v6.1.4 release → a separate developer's #5242 row-key fix, live WebSocket contrast test and merge.  
+**Not established here:** full #4610 per-row/timing contract, #5696 merge or release, v6.1.4 production deployment, or user-scale impact.
 
 ---
 
