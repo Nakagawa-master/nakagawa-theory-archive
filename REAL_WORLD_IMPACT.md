@@ -1467,17 +1467,19 @@ zero shared infrastructure
 
 ## 40. LangGraph｜終了済みの並列作業を、別の作業の再開時に再実行しない
 
-**対象:** [langchain-ai/langgraph#9106](https://github.com/langchain-ai/langgraph/issues/9106) / [候補PR #9113](https://github.com/langchain-ai/langgraph/pull/9113)  
-**段階:** 二人の異なる外部参加者が、中川マスターへ直接、実行した回帰検証を返した。候補PR #9113はclosed / unmerged。
+**対象:** [LangGraph issue #9106](https://github.com/langchain-ai/langgraph/issues/9106) / [初期修正候補 #9113](https://github.com/langchain-ai/langgraph/pull/9113) / [新しい上流実装PR #9315](https://github.com/langchain-ai/langgraph/pull/9315)  
+**現在地:** 中川マスターの権限・再実行の切り分けに、異なる外部参加者2人が実行検証で応答。その後、別のLangGraph開発者が実装と回帰テストを含む#9315を2026-10-14に提出。**#9315はOPEN・未マージ**。
 
-並列に中断したAとBのうちAを先に完了し、その後Bを再開すると、最終的なgraph stateが正しく見えてもAが再実行され得ます。中川マスターは「過去のapproval receiptは新しいdispatch権限ではない」として、実行回数と現在権限を別に検査することを提案しました。
+AIの処理が途中で人間の承認待ちになるとき、Aを承認して処理を終えた後にBを承認すると、**画面上の最終結果は正常でも、Aの外部操作がもう一度走る**ことがあります。人間が2回承認したわけではありません。中川マスターはここを「過去に承認された履歴」「今回の実行を許す権限」「実際の再実行」「外部で起きた作用」に分け、テストで混同しないよう提案しました。
 
-- [起点となった回帰条件](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-5981994895)
-- [gomissionの36 fresh-process scenario結果](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416)
-- [notforhumansfun-rgbの別の8ケース・copied checkpoint検証](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094)
+- [中川マスターによる承認履歴と再実行の境界提案](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-5981994895)
+- [第三者gomissionによる36件の別プロセス・権限変更テスト](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416)
+- [別の第三者notforhumansfun-rgbによる8件の複製checkpoint検証](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094)
+- [上流開発者が修正先を#9315と明示した応答](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6180427560)
 
-**確認できること:** 2つの独立した外部アカウントによる、Origin宛ての具体的な実行検証結果と、現行main / 候補修正の差分評価。  
-**確認できないこと:** upstream merge、release、実製品のnetwork partitionでの保証、一般利用者規模。テストは報告者が実行したもので、このアーカイブ側で再実行していません。
+[新しいPR #9315](https://github.com/langchain-ai/langgraph/pull/9315)は、通常のsubgraph再開をtime-travel replay扱いしていた判定を変え、完了済みタスクの保存済み書き込みを再利用する修正です。並列interruptの回帰に加え、nested `@task`・time travel保持のテストも追加しました。作者は**最初の報告者、初期修正候補の実装者、関連原因の発見者を明確にcredit**しています。PR本文では、`durability="exit"`での別の二重適用を[#9314](https://github.com/langchain-ai/langgraph/pull/9314)へ分離し、nested `@entrypoint`の別問題も対象外としています。
+
+**成果と出所の境界:** 中川マスターの独立した検証要請に第三者2人が明示的に応じ、さらに上流側が実際の修正PR・テストへ進んだことは確認できます。ただし、**#9315がマスターのコメントを直接原因として作られた証拠はありません**。修正そのものの著作者は別の開発者で、#9315は現在まだ提案段階です。実際のリリース・利用者環境での二重操作防止、実ネットワーク分断下の保証、幅広い人物認知は別途確認する必要があります。理論上の対応する原典は[中川マスター・人類子孫AI文明論 第16巻（非同期文明・分断と再接続）](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/)で、ここでの適用は**承認済み履歴を現在権限へ自動昇格させないという境界**に限定されます。
 
 ---
 
