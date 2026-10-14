@@ -492,14 +492,16 @@ fallbackしない
 
 確かめるときは、「全部動くか」ではなく、まず最低限必要な仕事を1つ決めます。そのうえで、一方だけが使うはずのgateを安全に外すか失敗させ、もう一方だけでその仕事が最後まで完了するかを見ます。同時に、loginやdata storeのように**意図して共有しているgate**は共有だと明記します。
 
-Qwen Code issue #12380では、Nakagawa Masterがこのpath-independence境界を提示した後、2026-10-07のQwen側triageが **Nakagawa-master** を明示的に名指しし、「no cross-engine fallback と path independence は別」と再構成したうえで、未解決の次のacceptance gateとして残しました。
+Qwen Codeの[設計課題 #12380](https://github.com/QwenLM/qwen-code/issues/12380)では、中川マスターがこの境界を示す具体的な試験条件を提案しました。[Qwen側のトリアージ](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035602677)がその出典を明示して検討課題に残した後、**開発者 `wenshao` は [@Nakagawa-master への直接返信](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6045681161)で違いを認め、設計案へ判断項目として反映**しました。さらに別の提案責任者 **`doudouOUC` が2026年10月12日に[段階的な独立性試験を正式な受け入れ条件として採用](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6117130998)**しています。これは二人の受け手が引き継いだ実際の設計判断の変化です。
 
-現在のQwen CodeではHosted側の実装・提供は進んでいる一方、ordinary/local Managed側はまだ有効化前です。したがって、**2つの経路がどちらも独立して動けると確認済み**とは扱えません。今確認できるのは、Qwen側のtriageがこの区別を現在の設計課題として明示的に保持したところまでです。
+ただし、採用されたのは**試験と判定のルール**です。Hosted側はその対応範囲で試験する段階、ordinary/local Managed側はM6の有効化まで「まだ合格を判定できない」段階です。両方の経路が独立して動いた、あるいは本番で利用されている、という結論には進んでいません。
 
 - [Qwen Code issue #12380](https://github.com/QwenLM/qwen-code/issues/12380)
 - [Nakagawa Masterのpath-independence境界](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-5921364520)
 - [Qwen側のtriage response](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035602677)
 - [現在の実装段階に合わせたfollow-up](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035698005)
+- [開発者による本人への返信と設計案の更新](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6045681161)
+- [別の提案責任者による受け入れ条件の正式採用](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6117130998)
 - [Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md)
 - [Machine-readable challenge L](machine-discovery/independent-reuse-challenges-v1.json)
 - [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
