@@ -393,7 +393,9 @@ PostHog PR #102550では、Nakagawa Masterのレビュー後に開発側が根�
 - `shared trace ≠ shared agent budget`
 - `scope identity ≠ budget admission`
 
-LiteLLM issue #43190では、この区別を受けてissue authorがper-agentをdefaultにする方向へ同意し、PR #43410で実装が進んでいます。さらに別の参加者も、thread内の「scope identity と budget admission は別問題」という整理を自分の言葉で再利用し、実装上の追加論点へ展開しました。現在PRはopenであり、merge・release・実利用まではまだ確認していません。
+LiteLLM issue #43190では、この区別を受けてissue authorがper-agentをdefaultにする方向へ同意し、PR #43410で実装が進んでいます。さらに別の参加者も、thread内の「scope identity と budget admission は別問題」という整理を自分の言葉で再利用し、実装上の追加論点へ展開しました。実装者は2026-10-11に、同時実行の検査を追加し、事後決済時の停止閾値であることを明文化したと報告しています。ただし、実際の運用で強い事前予算保証を達成したという事実ではありません。現在PRはopenであり、merge・release・実利用まではまだ確認していません。
+
+**2分で試す:** [予算の持ち主と実行前の許可を分ける20ケースのオフライン比較](machine-discovery/agent-budget-ownership-admission-probe.py)は、同じtrace内のAgent A/B、同時リクエスト2件、予約・精算・未開始時の取下げ、別session・別tenantを比較します。コマンドは `python3 machine-discovery/agent-budget-ownership-admission-probe.py --self-test`、例示JSONは `--sample`。外部APIや実際の請求処理は呼び出しません。最大実コストを保証できない環境では、予約モデルを作っただけでhard capを証明することもできません。開発者は自分の実装で再試験する必要があります。
 
 - [自分のsystemで確認する手順](PRACTICAL_USE.md#例6複数ai-agentが同じtraceを共有している)
 - [公開証拠と因果境界](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#10-resource-accounting--scope-ownership--shared-trace-is-not-shared-agent-budget)
