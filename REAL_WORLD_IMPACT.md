@@ -382,7 +382,7 @@ AI-News側はlocal-operatorのGit履歴、Issue、release notesを自分の側�
 ## 12. MemberJunction｜row内容保護の次に残ったrow identity境界を第二work itemへcarry
 
 **対象:** [MemberJunction/MJ#4595](https://github.com/MemberJunction/MJ/pull/4595) → [issue #4610](https://github.com/MemberJunction/MJ/issues/4610)  
-**現在状態:** PR #4595 merged（2026-09-23）→ LTS backport PR #4712 merged → release v6.1.4収録、issue #4610 open
+**現在状態:** #4595 merged → LTS #4712 merged／v6.1.4収録。残存するrow-key開示を狭めた別の開発者の[#5242](https://github.com/MemberJunction/MJ/pull/5242)は2026-10-14 merged。LTS移植[#5696](https://github.com/MemberJunction/MJ/pull/5696)はOPEN。元の強い行別認可要件[#4610](https://github.com/MemberJunction/MJ/issues/4610)はOPEN
 
 PR #4595は、cache-invalidation broadcastでfull row内容をdefaultでは送らないようにしました。その後の `Nakagawa-master` reviewでは、その修正とは別に、`recordData` を消しても他rowのstable primary keyとmutation timingが見えるという残存metadata境界を分離しました。
 
@@ -401,8 +401,12 @@ PR authorはこの二層分解を明示的に採用し、commit `293b9b40` でen
 
 6.1.3 certificationではこのbackportがsecurityの **cert-blocker** として扱われ、#4712はmerge commit `f0baf68415e0` でLTSへ入りました。その後、正式release [v6.1.4](https://github.com/MemberJunction/MJ/releases/tag/v6.1.4)（draft=false / prerelease=false、2026-09-24 23:53 UTC公開）が #4712 を明示的に収録しています。v6.1.4 release notesも、cache-invalidation eventsが全clientへrow dataを送らず、allowlistとsigned-in userによる再読込へ切り替わったことを記録しています。
 
-**公開記録から確認できること:** review → 第三者code/test変更 → 第三者による明示的source attribution → #4595 merge → より強い境界とregressionを保った第二work item化 → LTS backport #4712 merge → v6.1.4 release収録。  
-**まだ確認できないこと:** row-level policy実装、#4610 close/merge、v6.1.4のproduction deploymentや実利用規模。
+**その後の第三者側の新たな実装・検証（2026-10-14）:** [issue #5241](https://github.com/MemberJunction/MJ/issues/5241)で開発側が同じrow-key漏えいの現実問題を具体化し、[PR #5242](https://github.com/MemberJunction/MJ/pull/5242)をマージしました。row-level securityで読める行が限定されるsubscriberには、通知の `PrimaryKeyValues` と `RecordData` を伏せ、全体invalidateによってキャッシュ整合性を保ちます。別の開発者が実際のWebSocketに権限の異なる二人を接続し、[制限付き受信者のkey欠落と権限のある受信者へのkey到達を対照検証](https://github.com/MemberJunction/MJ/pull/5242#issuecomment-6051805014)しました。実装側のテスト・レビューに続くmerge commitは `5aae20c2`。LTS版は[#5696](https://github.com/MemberJunction/MJ/pull/5696)で移植・検査されており、まだマージ待ちです。
+
+**帰属と残る条件:** #4610の開発者が `@Nakagawa-master` の元レビューを出典として明記した事実はそのままです。一方、#5241/#5242の著者がそのレビューを直接読んで実装したという因果までは証明できません。#5242は**row-filtered読者へ安定したレコードkeyを送らない**段階までの実装であり、entity単位の変更発生や `Timestamp` を知らせる通知は残ります。#4610のより強い「同一entity内で行ごとに認可し、許可されない人へmutation timingも漏らさない」契約全体が閉じたとは判定しません。実利用規模・稼働中のLTS移植も未検証です。
+
+**公開記録から確認できること:** review → 第三者code/test変更 → 第三者による明示的source attribution → #4595 merge → 第二work item化 → LTS #4712 merge／v6.1.4収録 → 別の開発者による限定row-key保護 #5242 code/test・独立WebSocket検証・merge。  
+**まだ確認できないこと:** #4610の行ごとの許諾・変更時刻非開示まで含む全面実装、#5696のマージや配布先実行、v6.1.4のproduction deployment・実利用規模。
 
 ---
 
