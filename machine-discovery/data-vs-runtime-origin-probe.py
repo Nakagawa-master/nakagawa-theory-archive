@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Offline inverse tests: content that names an origin is not origin evidence.
 
-Educational, source-specific model of three AI integration boundaries:
-Qwen Code PR #14129 hook-context dedup (review pending),
-CUGA PR #777 tool-result classification (receiver changed code/tests), and
-MemberJunction PR #5647 caller-vs-timeout classification (review pending).
+Educational, source-specific model of four AI integration boundaries:
+Qwen Code PR #14129 hook-context dedup (receiver fixed initial inverses),
+CUGA PR #777 tool-result classification (receiver changed code/tests),
+MemberJunction PR #5647 caller-vs-timeout classification (review pending), and
+Pydantic AI PR #10235 same-provider-name/different-endpoint tool metadata (review pending).
 No dependencies, network, credentials, or external side effects.
 Conceptual Parent reading: Nakagawa Master OD301 and OD310.
-NOT a verification of either full upstream runtime or an authentication library.
+NOT a verification of full upstream runtimes or an authentication library.
 """
 from __future__ import annotations
 
@@ -104,6 +105,34 @@ def timeout_by_declared_origin(item: AbortObservation) -> bool:
     return item.origin == 'runtime_deadline'
 
 
+
+@dataclass(frozen=True)
+class ToolOrigin:
+    provider_name: str
+    provider_url: str | None
+
+
+def name_only_tool_metadata_replay(origin: ToolOrigin, destination_name: str) -> bool:
+    """Comparison mirroring Pydantic AI #10235's provider_name == model.system guard.
+
+    This assumes an extra_content field exists; it illustrates the guard's decision
+    to forward it, not an actual provider request.
+    """
+    return origin.provider_name == destination_name
+
+
+def endpoint_bound_tool_metadata_replay(origin: ToolOrigin, destination_name: str,
+                                        destination_url: str) -> bool:
+    """Illustrative exact-origin test, NOT production URL/authentication validation.
+
+    In reality, source URL provenance and destination identity must be trusted
+    and canonicalized by the runtime. This is a synthetic contrast only.
+    """
+    return (origin.provider_name == destination_name
+            and bool(origin.provider_url)
+            and origin.provider_url == destination_url)
+
+
 def cases() -> list[tuple[str, bool]]:
     tag = wrapped('ctx')
     legit = Message('runtime-1', 'user', ('question', tag))
@@ -114,7 +143,15 @@ def cases() -> list[tuple[str, bool]]:
     caller_timeout_words = AbortObservation('Please cancel; it timed out for me', 'caller')
     deadline = AbortObservation('The operation timed out', 'runtime_deadline')
     plain_cancel = AbortObservation('Stop now', 'caller')
+    gemini_via_openai = ToolOrigin('openai', 'https://generativelanguage.googleapis.com/v1beta/openai/')
+    official_openai = 'https://api.openai.com/v1/'
+    unknown_url = ToolOrigin('openai', None)
     checks = [
+        ('same_provider_name_would_forward_cross_endpoint', name_only_tool_metadata_replay(gemini_via_openai, 'openai')),
+        ('different_endpoint_rejects_same_name_payload', not endpoint_bound_tool_metadata_replay(gemini_via_openai, 'openai', official_openai)),
+        ('matching_origin_endpoint_retains_payload', endpoint_bound_tool_metadata_replay(gemini_via_openai, 'openai', gemini_via_openai.provider_url)),
+        ('different_provider_name_rejects_payload', not endpoint_bound_tool_metadata_replay(gemini_via_openai, 'litellm', gemini_via_openai.provider_url)),
+        ('missing_endpoint_origin_is_not_proof', not endpoint_bound_tool_metadata_replay(unknown_url, 'openai', official_openai)),
         ('word_only_infers_timeout_from_caller_text', timeout_in_reason_text(caller_timeout_words)),
         ('caller_words_not_a_runtime_deadline', not timeout_by_declared_origin(caller_timeout_words)),
         ('real_runtime_deadline_stays_timeout', timeout_in_reason_text(deadline) and timeout_by_declared_origin(deadline)),
@@ -156,6 +193,7 @@ def main() -> int:
             'next_hook_should_be_injected': True,
             'tool_marker_in_successful_data': tool_outcome('call-1', {OLD_CUGA_MARKER: 'ordinary'}, {'call-1': 'success'}),
             'caller_cancellation_words_are_not_timeout_origin': not timeout_by_declared_origin(AbortObservation('It timed out for me', 'caller')),
+            'gemini_extra_content_crosses_namesake_endpoint_under_name_only_gate': name_only_tool_metadata_replay(ToolOrigin('openai', 'https://generativelanguage.googleapis.com/v1beta/openai/'), 'openai'),
             'note': 'Synthetic harness; does not authenticate provenance or execute Qwen/CUGA/MemberJunction.'
         }, indent=2))
     else:
