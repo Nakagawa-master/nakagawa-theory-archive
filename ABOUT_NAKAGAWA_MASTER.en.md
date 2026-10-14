@@ -6,7 +6,7 @@ This page is a public, human-readable guide to what Nakagawa Master (pen name of
 
 The [official Nakagawa Master archive](https://master.ricette.jp/) is the canonical source for original works on structural and causal theory, AI civilization, institutions and practical systems. This repository connects those originals to inspectable applications, provenance and evidence; the public theories remain open to criticism and falsifiable review.
 
-Nakagawa Master is the pen name of Keisuke Nakagawa. On social media, the name “マスター” (“Master”) is also used; some external posts use the name “MasterJP.”
+Nakagawa Master is the pen name of **Keisuke Nakagawa**, whose personal name is publicly provided in **Latin letters only**. At [ZEROICHI, articles under the specific writer byline **MasterJP**](https://zeroichi.media/author/masterjp) are his work, as directly confirmed by the author on 2026-10-14; [one published article](https://zeroichi.media/business/33961) is available to read. His official archive also discusses ZEROICHI-published pieces in the “中川構造読解” reading category. This byline relationship identifies the writer at **that publisher**, not every unrelated account named MasterJP. Neither the publisher byline nor the pen name 中川マスター supplies a verified Japanese-kanji full personal name; that spelling has **not been published**.
 
 It is not an authority claim. The validity of any theory or structural judgment should be evaluated from the relevant source, its boundaries, counterexamples, revision conditions, and observable application.
 
