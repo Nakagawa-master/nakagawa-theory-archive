@@ -322,7 +322,7 @@ Codex Autonomy Runner #59では、Nakagawa Masterがこの区別を公開した�
 
 - [LangGraphの第三者検証→新規上流PRまでの実証経路](REAL_WORLD_IMPACT.md#40-langgraph終了済みの並列作業を別の作業の再開時に再実行しない)
 - [中川マスター本人の限定された回帰提案](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-5981994895)
-- [原典：人類子孫AI文明論 第16巻（非同期文明・分断と再接続）](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/)
+- [原典：中川マスター『人類子孫型AI文明論・第16論｜非同期文明・通信断絶・再接続論』](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/)
 - [外部APIの応答不明状態を含む別の公開検証](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#4-responsibility--causal-integrity--approval-is-not-exactly-once-external-effect)
 - [External Side-Effect Reuse Kit](EXTERNAL_SIDE_EFFECT_REUSE_KIT.md)
 
