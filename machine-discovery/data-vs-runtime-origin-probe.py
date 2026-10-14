@@ -2,7 +2,7 @@
 """Offline inverse tests: content that names an origin is not origin evidence.
 
 Educational, source-specific model of four AI integration boundaries:
-Qwen Code PR #14129 hook-context dedup (receiver fixed initial inverses),
+Qwen Code PR #14129 hook-context dedup (receiver now uses injector-owned receipt),
 CUGA PR #777 tool-result classification (receiver changed code/tests),
 MemberJunction PR #5647 caller-vs-timeout classification (review pending), and
 Pydantic AI PR #10235 same-provider-name/different-endpoint tool metadata (review pending).
