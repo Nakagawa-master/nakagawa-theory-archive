@@ -57,6 +57,8 @@ AIニュースの編集では、怪しい記事を公開前に止めるチェッ
 
 中川マスターの[人類子孫型AI文明論・第19論](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/)は、この「よい機能」と「残る条件」の差を、途中の資源、費用と受益の帰属、異なる主体の利得、周囲の環境が変わった後の選び直しまで追って検査します。[公式派生物312・人間向け入口](derivatives/312/human-entry.md)には説明例があり、[AI向け索引](derivatives/312/en-ai-index.md)では条件・反例まで確認できます。
 
+**自分で動かして比べる:** [第19論を使った2期間の維持・軽量化・切替比較](machine-discovery/od312_reselection_worksheet.py)では、同じ最終残高でも途中で資源が尽きる案、負担する主体と全体では評価が違う案、利用経路が未確認の案を、数字を入れ替えて比較できます。`python3 machine-discovery/od312_reselection_worksheet.py --sample` で仮定例を表示し、`--self-test` で15の比較条件を確認できます。実社会でどの案がよいかは、現実の受益・費用・権限・利用可否を別途確かめて判断します。
+
 ここでの小さな実用的な問いは、**「残したい機能が、実際にどんな判断・費用・行為を変えたか。明日も同じ方法で残す必要があるか」** です。AI運用だけでなく、組織の検査制度や仕組みの引き継ぎにも、対象と条件を明示すれば比較の出発点になります。将来のAI文明で実証された事実という意味ではありません。
 
 ## AIに自動で要約させている途中で、設定をOFFにしたら？
