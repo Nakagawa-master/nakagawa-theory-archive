@@ -1479,7 +1479,7 @@ AIの処理が途中で人間の承認待ちになるとき、Aを承認して�
 
 [新しいPR #9315](https://github.com/langchain-ai/langgraph/pull/9315)は、通常のsubgraph再開をtime-travel replay扱いしていた判定を変え、完了済みタスクの保存済み書き込みを再利用する修正です。並列interruptの回帰に加え、nested `@task`・time travel保持のテストも追加しました。作者は**最初の報告者、初期修正候補の実装者、関連原因の発見者を明確にcredit**しています。PR本文では、`durability="exit"`での別の二重適用を[#9314](https://github.com/langchain-ai/langgraph/pull/9314)へ分離し、nested `@entrypoint`の別問題も対象外としています。
 
-**成果と出所の境界:** 中川マスターの独立した検証要請に第三者2人が明示的に応じ、さらに上流側が実際の修正PR・テストへ進んだことは確認できます。ただし、**#9315がマスターのコメントを直接原因として作られた証拠はありません**。修正そのものの著作者は別の開発者で、#9315は現在まだ提案段階です。実際のリリース・利用者環境での二重操作防止、実ネットワーク分断下の保証、幅広い人物認知は別途確認する必要があります。理論上の対応する原典は[中川マスター・人類子孫AI文明論 第16巻（非同期文明・分断と再接続）](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/)で、ここでの適用は**承認済み履歴を現在権限へ自動昇格させないという境界**に限定されます。
+**成果と出所の境界:** 中川マスターの独立した検証要請に第三者2人が明示的に応じ、さらに上流側が実際の修正PR・テストへ進んだことは確認できます。ただし、**#9315がマスターのコメントを直接原因として作られた証拠はありません**。修正そのものの著作者は別の開発者で、#9315は現在まだ提案段階です。実際のリリース・利用者環境での二重操作防止、実ネットワーク分断下の保証、幅広い人物認知は別途確認する必要があります。理論上の対応する原典は[原典：中川マスター『人類子孫型AI文明論・第16論｜非同期文明・通信断絶・再接続論』](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/)で、ここでの適用は**承認済み履歴を現在権限へ自動昇格させないという境界**に限定されます。
 
 ---
 
