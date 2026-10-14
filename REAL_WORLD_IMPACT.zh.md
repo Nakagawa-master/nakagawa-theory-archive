@@ -30,6 +30,16 @@
 
 下面只描述公开记录可以直接确认的部分。
 
+### 2026年10月14日更新｜第三方开发者最近完成的实现与合并
+
+**中川マスター（Nakagawa Master）指出的具体代码边界，已由其他开发者独立实现修复，并在部分项目中进入正式开发主线。** 下文的47个编号案例仍是当前已发表的编号正文数量；最近的进展先在这里提供原始证据，新增编号案例另行接受三语言与来源核验。同一个修复的多个backport不算多个独立采用者。
+
+- **MemberJunction：区分用户主动停止AI请求和系统计时超时。** [Nakagawa Master的原始反例](https://github.com/MemberJunction/MJ/pull/5647#pullrequestreview-5512590566)说明：用户的取消理由含 *timed out* 文字，不证明计时器触发。开发者 `jordanfanapour` [明确致谢并自行修改分类与正反测试](https://github.com/MemberJunction/MJ/pull/5647#issuecomment-6160551924)，[PR #5647于10月14日合并至`next`](https://github.com/MemberJunction/MJ/pull/5647)。自动移植失败后，开发者又建立了仍为**OPEN**的[6.1支线 #5657](https://github.com/MemberJunction/MJ/pull/5657)和[5系 #5658](https://github.com/MemberJunction/MJ/pull/5658)手动移植PR——它们是同一修改的不同交付路径。另一个[用户伪造`IsTimeout`标记的来源反例](https://github.com/MemberJunction/MJ/pull/5647#issuecomment-6160704956)仍未在合并后的分类器中解决。旧版本release与真实用户效果还须另外确认。
+- **MemberJunction：区分本次AI操作的授权依据与无关的全局角色信息。** [PR #5271](https://github.com/MemberJunction/MJ/pull/5271)里，Nakagawa Master的[具体问题指认](https://github.com/MemberJunction/MJ/pull/5271#pullrequestreview-5467400615)被[另一个独立评审确认已经修复](https://github.com/MemberJunction/MJ/pull/5271#pullrequestreview-5494462940)，开发者的改动和测试已于10月12日UTC合并。整个安全修复PR并非由Nakagawa Master单独实现。
+- **Qwen Code：把停止状态归属于真正提交停止操作的调用。** 下文的编号[案例47](#47-qwen-code成员已经停止不等于本次工具调用执行了停止)已经随[PR #13923于10月12日合并](https://github.com/QwenLM/qwen-code/commit/a9ad92b8df4e110b39c4e27ce86f5953324088a9)。合并记录与产品用户实际使用仍须分别核验。
+
+可从[中川マスター的官方理论原典](https://master.ricette.jp/)继续阅读，并通过上述第三方原始链接核查各阶段。
+
 ## 一个“认为有用、但没有纳入运营规则”的receiver回应
 
 外部回应并不是只有最终被实现的案例才会记录。
@@ -1381,13 +1391,13 @@ MCP服务发送 `tools/list_changed` 后，如果刷新 `tools/list` 失败，�
 
 ## 47. Qwen Code｜成员已经停止，不等于本次工具调用执行了停止
 
-**对象：** [Qwen Code PR #13923](https://github.com/QwenLM/qwen-code/pull/13923) / [Nakagawa Master（中川マスター）的具体反例](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434) / [第三方代码与测试提交](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a)。**阶段：** 开发者 `wenshao` [直接回复 @Nakagawa-master，确认问题存在且已经修复](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)；PR在核查时仍为open、未合并。
+**对象：** [Qwen Code PR #13923](https://github.com/QwenLM/qwen-code/pull/13923) / [Nakagawa Master（中川マスター）的具体反例](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434) / [第三方代码与测试提交](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a)。**阶段：** 开发者 `wenshao` [直接回复 @Nakagawa-master，确认问题存在且已经修复](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)；[PR已于2026年10月12日合并](https://github.com/QwenLM/qwen-code/commit/a9ad92b8df4e110b39c4e27ce86f5953324088a9)。
 
 多AI协作环境中，成员的 `stopRequested` 状态只能说明该成员被要求停止，**不能证明是哪次调用做出的停止决定**。如果用户先执行取消，而后来生成的 `request_shutdown` 尚未执行就中断，恢复程序可能把历史停止错误归给从未运行的调用。中川マスター提出了这个可核查的反例，以及本次调用确实执行停止时应保留的正向条件。
 
 实现者改为读取按 `shutdown:<callKey>` 标识的真实持久化提交证据，不再从整个成员的停止状态推断调用归属；还增加了用户先取消和已提交停止在continuation回退后仍可追溯的回归测试。
 
-**可确认：** 开发者直接承认并保留Nakagawa Master的来源归属，修改了外部仓库中的代码和测试。**不可确认：** merge、release、全部物理集成验证、最终用户采用规模或整套理论的采纳。同一PR还有其他评审者独立提出缺陷，不能把所有改动单独归功于中川マスター。
+**可确认：** 开发者直接承认并保留Nakagawa Master的来源归属，修改了外部仓库中的代码和测试。**已确认：** PR merge。**仍不可确认：** release、全部物理集成验证、最终用户采用规模或整套理论的采纳。同一PR还有其他评审者独立提出缺陷，不能把所有改动单独归功于中川マスター。
 
 ---
 
