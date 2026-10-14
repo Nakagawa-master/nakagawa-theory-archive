@@ -508,6 +508,18 @@ Qwen Codeの[設計課題 #12380](https://github.com/QwenLM/qwen-code/issues/123
 - [Machine-readable challenge L](machine-discovery/independent-reuse-challenges-v1.json)
 - [独立検証・別文脈再利用 registry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
 
+## AIの裏方が休めないとき、「自動的に上限が守られる」と言えるか
+
+AIサービスを24時間動かすため、一つのワーカーを複数の利用者が共有する。起動が速くなり、省資源にも見えます。しかし、処理のたびにワーカー内に履歴や管理記録が蓄積されるなら、**「一定回数で交換する設定がある」ことと「どんな負荷でも上限を超えない」ことは別**です。
+
+たとえば「3回使ったら交換」のつもりでも、交換担当が見るのは利用者がいない瞬間だけ。次の処理がすぐ始まる状態が続けば、4回、5回、8回と同じワーカーへ蓄積できます。問題は利用者が常に来ることではなく、**交換の可否を決めるタイミングに、その利用の連続性を織り込んでいないこと**です。
+
+[Qwen CodeのWorkspace常駐ランタイム設計PR #14214](https://github.com/QwenLM/qwen-code/pull/14214)について、中川マスターは[上限と退役条件の食い違いを指摘し、連続入場時の回帰試験を提案](https://github.com/QwenLM/qwen-code/pull/14214#pullrequestreview-5521245412)しました。これは設計段階のレビューであり、実システムの障害や実装上の欠陥が確認されたという主張ではありません。
+
+**自分で試す:** [依存なしPythonの連続受付・世代交代モデル](machine-discovery/continuous-admission-generation-budget-probe.py)を保存し、`python3 machine-discovery/continuous-admission-generation-budget-probe.py --self-test` または `--sample` で比較できます。仮の上限3、8回の順次実行では、アイドル時だけの検査は同じ世代に8件残し、受付側で上限を確認するモデルは3件以内で交代します。空き時間ごとに確実に検査する条件も別に試せます。実物のQwen worker、メモリ使用量、障害頻度を測った結果ではありません。
+
+この境界を使って、**交換をいつ行えるのか、処理中の仕事を守りながら次の受付をどう待たせるか、維持費が時間とともに成立し続けるか**を先に確かめます。長期の資源・更新・維持可能性という理論的な問いは、[中川マスター第19論／OD312の原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/)へ戻れます。開発側によるレビュー採用・実装・利用は別に確かめる段階です。
+
 ## 312件全体から探す
 
 ここに当てはまらない問題は、[24テーマの世界地図](human-translation/WORLD_MAP.md) または [OD001–OD312水平マップ](human-translation/ALL_310_HORIZONTAL_MAP.md) から探せます。
