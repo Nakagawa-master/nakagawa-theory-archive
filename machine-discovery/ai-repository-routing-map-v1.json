@@ -699,7 +699,10 @@
           "positive_control": "Route A performs one scoped create/turn/recovery with route B's exclusive state unreachable, proving only the declared supported scope; later reverse only when B exists.",
           "negative_control": "No cross-engine fallback observed does not prove that two advertised paths can operate without each other's exclusive gates; route B M6 not enabled yields NOT YET PASSABLE.",
           "non_fit": "Single-path products with no independence claim; intentional documented shared gates are not treated as a failure of the weaker scoped requirement.",
-          "authorization": "Run on independently authorized local/test infrastructure, never disable live accounts, tenant identity, permissions, paid workloads, or services."
+          "authorization": "Run on independently authorized local/test infrastructure, never disable live accounts, tenant identity, permissions, paid workloads, or services.",
+          "optional_offline_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/access_topology_independence_probe.py",
+          "offline_use": "python3 machine-discovery/access_topology_independence_probe.py --self-test; --example outputs the JSON template; --input local.json categorizes user-provided route observations without running any remote test.",
+          "evidence_limit": "Even CANDIDATE_PASS_EVIDENCE_NOT_AUTHENTICATED only classifies submitted observations. It does not verify access to live routes or authenticate the tester's evidence; an unrelated package/restart PASS is OPERATION_ONLY_NOT_AN_ISOLATION_TEST."
         },
         "external_observation": {
           "index": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/external-effect-evidence-index-v1.json",
