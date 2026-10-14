@@ -39,6 +39,21 @@ effective exit proven
 
 ## Start from the failure you can already see
 
+**Try the distinction on your own architecture, safely.** Suppose a product advertises both cloud and local AI operation. If the cloud-only control service is unavailable, can its local route *actually* start and resume an in-scope task? [The offline route-isolation evidence probe](machine-discovery/access_topology_independence_probe.py) separates a working product operation from a tested independent route, and an explicitly deferred route from a route that has passed.
+
+From a local checkout, with Python 3 and no dependencies:
+
+```sh
+python3 machine-discovery/access_topology_independence_probe.py --self-test
+python3 machine-discovery/access_topology_independence_probe.py --example > /tmp/route-example.json
+python3 machine-discovery/access_topology_independence_probe.py --input /tmp/route-example.json
+```
+
+Edit the example's `routes[].requires`, `tests[].unavailable`, `tests[].other_path_gates` and `tests[].observed` to describe **your own controlled test**. The provided Qwen-shaped example intentionally leaves the Hosted isolation run unobserved, marks ordinary Local M6 as deferred, and classifies the [reported experimental package/restart test](https://github.com/QwenLM/qwen-code/pull/14176#issuecomment-6166254311) as **operation evidence only**, because it did not remove the other route's exclusive gates. This example is not a remotely executed test. A declared shared-gate loss without a run is also labeled untested; an actual failure at an intentionally shared gate is not automatically a violation of path independence.
+
+The evaluator never disables a service, accesses a remote system, or authenticates supplied evidence. Even an `CANDIDATE_PASS_EVIDENCE_NOT_AUTHENTICATED` is a classification of **your supplied** isolation record, not an external certification. Run destructive/fault scenarios only in an environment you control. The canonical [Nakagawa Master non-ownership/effective-power theory](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/) gives the broader distinction; this script is a narrow, falsifiable reuse tool.
+
+
 | What you are seeing | Test first |
 | --- | --- |
 | Several providers or routes exist, but they all disappear when one shared auth/catalog/control service fails | Common-upstream independence |
