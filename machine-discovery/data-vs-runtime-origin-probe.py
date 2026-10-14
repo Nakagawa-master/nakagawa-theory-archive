@@ -4,7 +4,7 @@
 Educational, source-specific model of four AI integration boundaries:
 Qwen Code PR #14129 hook-context dedup (receiver now uses injector-owned receipt),
 CUGA PR #777 tool-result classification (receiver changed code/tests),
-MemberJunction PR #5647 caller-vs-timeout classification (review pending), and
+MemberJunction PR #5647 caller-vs-timeout classification (receiver fixed word-only logic; typed-marker follow-up open), and
 Pydantic AI PR #10235 same-provider-name/different-endpoint tool metadata (review pending).
 No dependencies, network, credentials, or external side effects.
 Conceptual Parent reading: Nakagawa Master OD301 and OD310.
@@ -106,6 +106,16 @@ def timeout_by_declared_origin(item: AbortObservation) -> bool:
 
 
 
+
+def timeout_from_reason_shape(reason: dict[str, object]) -> bool:
+    """MJ #5647's new reason-shape predicate at e8fee496 (illustrative).
+
+    A public TypeScript interface and a caller-controlled object/name do NOT
+    authenticate which runtime component aborted the signal.
+    """
+    return reason.get('name') == 'TimeoutError' or reason.get('IsTimeout') is True
+
+
 @dataclass(frozen=True)
 class ToolOrigin:
     provider_name: str
@@ -152,6 +162,10 @@ def cases() -> list[tuple[str, bool]]:
         ('matching_origin_endpoint_retains_payload', endpoint_bound_tool_metadata_replay(gemini_via_openai, 'openai', gemini_via_openai.provider_url)),
         ('different_provider_name_rejects_payload', not endpoint_bound_tool_metadata_replay(gemini_via_openai, 'litellm', gemini_via_openai.provider_url)),
         ('missing_endpoint_origin_is_not_proof', not endpoint_bound_tool_metadata_replay(unknown_url, 'openai', official_openai)),
+        ('caller_forged_timeout_flag_passes_shape_gate', timeout_from_reason_shape({'IsTimeout': True, 'message': 'User hit Stop'})),
+        ('caller_forged_timeout_name_passes_shape_gate', timeout_from_reason_shape({'name': 'TimeoutError', 'message': 'User hit Stop'})),
+        ('caller_self_named_timeout_not_a_timer_receipt', not timeout_by_declared_origin(AbortObservation('User hit Stop', 'caller'))),
+        ('trusted_timer_positive_still_accepted', timeout_by_declared_origin(AbortObservation('Elapsed', 'runtime_deadline')) and timeout_from_reason_shape({'name': 'TimeoutError'})),
         ('word_only_infers_timeout_from_caller_text', timeout_in_reason_text(caller_timeout_words)),
         ('caller_words_not_a_runtime_deadline', not timeout_by_declared_origin(caller_timeout_words)),
         ('real_runtime_deadline_stays_timeout', timeout_in_reason_text(deadline) and timeout_by_declared_origin(deadline)),
@@ -193,6 +207,7 @@ def main() -> int:
             'next_hook_should_be_injected': True,
             'tool_marker_in_successful_data': tool_outcome('call-1', {OLD_CUGA_MARKER: 'ordinary'}, {'call-1': 'success'}),
             'caller_cancellation_words_are_not_timeout_origin': not timeout_by_declared_origin(AbortObservation('It timed out for me', 'caller')),
+            'caller_structural_timeout_flag_is_forgeable': timeout_from_reason_shape({'IsTimeout': True, 'message': 'User hit Stop'}),
             'gemini_extra_content_crosses_namesake_endpoint_under_name_only_gate': name_only_tool_metadata_replay(ToolOrigin('openai', 'https://generativelanguage.googleapis.com/v1beta/openai/'), 'openai'),
             'note': 'Synthetic harness; does not authenticate provenance or execute Qwen/CUGA/MemberJunction.'
         }, indent=2))
