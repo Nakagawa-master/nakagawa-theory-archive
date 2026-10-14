@@ -304,11 +304,26 @@ Codex Autonomy Runner #59では、Nakagawa Masterがこの区別を公開した�
 
 ## 一度だけ承認した処理が、外部でも一度だけ起きたと言えるのか
 
-外部APIは処理を受け取ったのに応答だけ失われることがあります。その状態を単純な失敗として再試行すると、送信、課金、削除などが二重になる可能性があります。
+**「Aは承認済み。次にBを承認した」だけなのに、AIがAの外部操作をもう一度実行したら？**
 
-**区別:** `approval consumed once ≠ external effect happened exactly once`
+[LangGraphの実際の問題 #9106](https://github.com/langchain-ai/langgraph/issues/9106)では、二つの並列処理のうちAを承認・完了したあと、Bを承認すると、**最後の画面には正常な結果が出ても、既に終えたAが再実行される**経路が報告されました。送信・決済・削除などの不可逆操作なら、同じ処理をもう一度走らせること自体が実害になり得ます。ただし、このIssueで実際の決済事故が起きたという報告ではありません。
 
-- [公開事例を見る](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#4-responsibility--causal-integrity--approval-is-not-exactly-once-external-effect)
+中川マスターは、**「以前承認された」ことと「いま再び実行してよい」ことは別**だと指摘し、実行回数・権限再検査・外部作用を別々に測る回帰条件を提案しました。[第三者による36ケース](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416)と[別の第三者による8ケース](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094)が実行され、元のコードと修正候補の違いが確認されました。その後、別の上流開発者が[修正コードと回帰テストを含むPR #9315](https://github.com/langchain-ai/langgraph/pull/9315)を提出しました。現時点では**未マージ**で、作者が中川マスターのコメントを直接もとに書いたという確認もありません。
+
+同じ原理を別の入口から考えると、外部APIは処理を受け取ったのに応答だけ失われることがあります。それを単純な「失敗」として再試行すると、送信・課金・削除を二重に行いかねません。**そのAPI応答不明ケースと、LangGraphの完了済みタスク再実行は異なる発生機構**ですが、どちらも次の区別が重要です。
+
+**区別:** `承認された記録 ≠ いまの実行権限 ≠ 新たな実行試行 ≠ 外部作用が一度だけ起きた証拠`
+
+**3つの対照条件で自分の処理を点検できます。**
+
+- **通常:** Aを承認しAの副作用を一度実行 → Bを承認して再開 → Aの再実行・再課金・再送信は0回。
+- **反例:** Aが完了したあとBを再開 → 古いapproval/checkpointを再利用してAへのdispatchがもう一度走る → 最終状態が正常でも実行回数は増える。
+- **適用外:** ネットワークで応答が失われたが、サーバー側の実行結果が不明 → リプレイ修正だけで「外部作用が1回」を保証せず、結果照合・冪等キー等を別途設計する。
+
+- [LangGraphの第三者検証→新規上流PRまでの実証経路](REAL_WORLD_IMPACT.md#40-langgraph終了済みの並列作業を別の作業の再開時に再実行しない)
+- [中川マスター本人の限定された回帰提案](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-5981994895)
+- [原典：人類子孫AI文明論 第16巻（非同期文明・分断と再接続）](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/)
+- [外部APIの応答不明状態を含む別の公開検証](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#4-responsibility--causal-integrity--approval-is-not-exactly-once-external-effect)
 - [External Side-Effect Reuse Kit](EXTERNAL_SIDE_EFFECT_REUSE_KIT.md)
 
 ## 渡された数値を、自分で測った数値として扱っていないか
