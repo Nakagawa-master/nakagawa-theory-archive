@@ -344,7 +344,7 @@ AI-News随后自行核对了local-operator的Git历史、Issue状态和release n
 
 PR #4595默认停止在cache-invalidation broadcast中携带完整row内容。随后 `Nakagawa-master` 的review进一步区分了另一个尚未关闭的边界：即使没有 `recordData`，session仍可能看到其他row的stable primary key与mutation timing。
 
-- [Nakagawa-master row-identity review](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5253531713)
+- [Nakagawa-master row-identity review](https://github.com/MemberJunction/MJ/pull/4595#pullrequestreview-5253531713)
 - [Nakagawa-master 两层拆分follow-up](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5737565146)
 - [第三方实现/carry回应](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5737603820)
 - [follow-up issue #4610](https://github.com/MemberJunction/MJ/issues/4610)
