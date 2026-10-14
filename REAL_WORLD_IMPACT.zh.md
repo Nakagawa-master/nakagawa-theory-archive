@@ -340,7 +340,7 @@ AI-News随后自行核对了local-operator的Git历史、Issue状态和release n
 ## 12. MemberJunction｜在保护row内容之后，把剩余row identity边界继续推进到第二个work item
 
 **对象：** [MemberJunction/MJ#4595](https://github.com/MemberJunction/MJ/pull/4595) → [issue #4610](https://github.com/MemberJunction/MJ/issues/4610)  
-**当前状态：** PR #4595已于2026-09-23 merge → LTS backport PR #4712已merge → 已收录于release v6.1.4；issue #4610仍open
+**当前状态：** #4595已merge → LTS #4712已merge／收录于v6.1.4。另一项限定row-key泄露的修复[#5242](https://github.com/MemberJunction/MJ/pull/5242)于2026-10-14 merge；[LTS移植#5696](https://github.com/MemberJunction/MJ/pull/5696)仍OPEN。原本要求更完整行级权限控制的[#4610](https://github.com/MemberJunction/MJ/issues/4610)仍OPEN。
 
 PR #4595默认停止在cache-invalidation broadcast中携带完整row内容。随后 `Nakagawa-master` 的review进一步区分了另一个尚未关闭的边界：即使没有 `recordData`，session仍可能看到其他row的stable primary key与mutation timing。
 
@@ -359,8 +359,12 @@ PR author明确采用了这一两层拆分：commit `293b9b40` 实现entity-leve
 
 6.1.3 certification把该backport列为security **cert-blocker**。#4712以merge commit `f0baf68415e0` 进入LTS，随后正式 [v6.1.4 release](https://github.com/MemberJunction/MJ/releases/tag/v6.1.4)（draft=false / prerelease=false；2026-09-24 23:53 UTC公开）明确列出#4712。v6.1.4 release notes也记录：cache-invalidation events不再默认把row data发给所有client，需要row内容的consumer改为经signed-in user的read path重新读取。
 
-**公开可确认：** review → 第三方code/test变化 → 第三方明确source attribution → #4595 merge → 把更强边界与regression继续carry到第二work item → LTS backport #4712 merge → v6.1.4 release收录。  
-**尚未确认：** row-level policy实现、#4610关闭/实现、v6.1.4 production deployment或用户规模影响。
+**新的接收方独立实施与验证（2026-10-14）：** 开发方在[issue #5241](https://github.com/MemberJunction/MJ/issues/5241)再次明确了row-key泄露问题，并合并[PR #5242](https://github.com/MemberJunction/MJ/pull/5242)：对只能通过row-level security过滤读取的订阅者，通知不再包含 `PrimaryKeyValues` 与 `RecordData`，而是通过whole-entity invalidation维持缓存一致性。另一位开发者通过[真实WebSocket、两种权限的用户进行对照测试](https://github.com/MemberJunction/MJ/pull/5242#issuecomment-6051805014)，验证受限用户收不到record key、非受限用户仍能收到。该修复经过实现、测试、review，并以 `5aae20c2` merge。旧版本的[#5696](https://github.com/MemberJunction/MJ/pull/5696)已实施和测试，目前尚未merge。
+
+**来源归属与未完成范围：** #4610作者明确指出，其问题框架主要来自 `@Nakagawa-master` 的先前review；这是独立于作者自述的Origin引用证据。但目前不能证明#5241/#5242的作者直接阅读并据此实施了该review，因此新修复应作为**同一具体问题上的接收方实现成果**，而不是自动归因于直接采纳。#5242缩小的是row-filtered用户收到stable record key的范围；entity级变更事件与 `Timestamp` 仍可能传递。#4610要求的逐行授权判断、非授权用户不能得知行的变更时刻等更完整条件尚未整体实现。旧系列移植的release及真实用户使用规模也尚未验证。
+
+**公开可确认：** review → 第三方code/test变化及明确Origin归属 → #4595 merge → 后续更强问题独立立项 → #4712 LTS merge／v6.1.4发布 → 另一个开发者实施#5242的row-key限定修复、真实WebSocket对照验证并merge。  
+**尚未确认：** #4610的完整逐行授权／时刻隐私目标、#5696 merge及正式发布、v6.1.4生产环境部署或用户规模影响。
 
 ---
 
