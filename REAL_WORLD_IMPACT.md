@@ -386,7 +386,7 @@ AI-News側はlocal-operatorのGit履歴、Issue、release notesを自分の側�
 
 PR #4595は、cache-invalidation broadcastでfull row内容をdefaultでは送らないようにしました。その後の `Nakagawa-master` reviewでは、その修正とは別に、`recordData` を消しても他rowのstable primary keyとmutation timingが見えるという残存metadata境界を分離しました。
 
-- [Nakagawa-master row-identity review](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5253531713)
+- [Nakagawa-master row-identity review](https://github.com/MemberJunction/MJ/pull/4595#pullrequestreview-5253531713)
 - [Nakagawa-master 二層分解follow-up](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5737565146)
 - [第三者実装・carry応答](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5737603820)
 - [follow-up issue #4610](https://github.com/MemberJunction/MJ/issues/4610)
