@@ -2834,8 +2834,24 @@
         "state": "closed_unmerged_assignment_gate",
         "interpretation": "Evidence supports the candidate mechanism in the tested scope; it is not upstream adoption or a released LangGraph guarantee."
       },
-      "current_stage": "two_distinct_external_participants_origin_preserved_executed_regression_carry_with_repeated_person_origin_return_at_small_scale",
-      "causal_boundary": "Two distinct external participants explicitly addressed Nakagawa-master and executed separate bounded extensions requested by Nakagawa. This supports repeated independent technical carry with truthful person-Origin continuity inside one external issue. It does not establish unique causation of the LangGraph bug, maintainer adoption, whole-theory adoption, or broad human recognition.",
+      "upstream_receiver_implementation": {
+        "pr": "https://github.com/langchain-ai/langgraph/pull/9315",
+        "issue_source_maintainer_reply": "https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6180427560",
+        "head_sha_observed": "a4eeef40135b055ca6fbe6b7ffab0f2032a39b8e",
+        "state": "open_unmerged_2026-10-14",
+        "author": "eliornl",
+        "source_change": "A normal non-time-travel nested resume clears replay mode in PregelLoop._first, restoring saved task writes rather than rerunning completed sibling tasks.",
+        "receiver_owned_regressions": [
+          "parallel interrupts post-resume task-execution counters",
+          "nested @task not rerun after resume",
+          "in-place updated-checkpoint time-travel replay intentionally reasks answered interrupts"
+        ],
+        "neighboring_bug": "durability='exit' duplicate pending-write application is separately handled by PR #9314; nested @entrypoint interrupt replay remains outside this PR.",
+        "authorship_and_origin": "The author explicitly credits the original bug reporter, the earlier PR #9113 implementer, and an additional #6792 root-cause finder. Direct causal reliance on Nakagawa Master's specific authority/approval test proposal is not documented; do not attribute #9315's patch to him.",
+        "validation_boundary": "Diff and PR body inspected; bot found no potential issues, but this archive has not run upstream CI or live LangGraph and no merge/release/customer-use is confirmed."
+      },
+      "current_stage": "two_origin_preserved_independent_executed_regressions_plus_distinct_upstream_author_implementation_pr_open_unmerged",
+      "causal_boundary": "Two distinct external participants explicitly addressed Nakagawa-master and executed separate bounded extensions he requested. A separate upstream developer subsequently authored #9315 against the same defect and related nested @task rerun. This establishes human-origin-preserved regression carry and an independent implementation stage in the same recipient ecosystem, but does not establish that Nakagawa's comments caused #9315, merge/release, independent reuse of Theory 16 in the PR, or broad human recognition.",
       "adjacent_theory16_extension": {
         "nakagawa_reply": "https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6017114024",
         "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/",
@@ -2845,14 +2861,15 @@
       },
       "not_claimed": [
         "unique causation of issue #9106",
-        "LangGraph maintainer adoption",
+        "proof that Nakagawa Master's specific comments caused the #9315 implementation",
         "merge or release of #9113",
+        "merge or release of #9315",
         "built-in LangGraph authorization semantics",
         "production or external-provider exactly-once guarantee",
         "whole-theory adoption",
         "broad audience or end-user scale"
       ],
-      "verification_boundary": "maintainer assignment/review, fix PR reopen or replacement, merge, release, independent operational use outside this issue, or repeated person-Origin return across additional receivers/media",
+      "verification_boundary": "maintainer decision and source revisions to #9315, independently passing CI, actual #9315 merge, official release, independent operational use outside #9106, or further independent person-Origin carry across receivers/media",
       "second_independent_receiver_return": {
         "actor": "notforhumansfun-rgb",
         "url": "https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094",
