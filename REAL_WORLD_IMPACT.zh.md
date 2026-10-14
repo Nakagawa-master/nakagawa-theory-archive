@@ -1326,7 +1326,7 @@ zero shared infrastructure
 
 [上游PR #9315](https://github.com/langchain-ai/langgraph/pull/9315)修改了nested graph在普通resume与time-travel replay之间的判断，并加入parallel interrupt、nested `@task`以及保留正常time travel语义的回归测试。作者明确将原始bug报告、初期修复候选、相关原因分析分别归功于相应开发者。`durability="exit"`导致的另一类输出重复已被区分为独立[#9314](https://github.com/langchain-ai/langgraph/pull/9314)；nested `@entrypoint`的另一问题也不在本次修复范围。
 
-**来源与结果的界限：** 可以确认两名独立参与者针对中川大师的测试建议向本人提交了实际执行结果，也可以确认上游出现了新的修复代码和测试。但目前**没有证据证明#9315的作者直接以中川大师的评论为实现原因**；代码作者及此前修复作者的贡献必须独立保留。#9315目前尚未merge，正式release、实际用户使用、真实网络分区中的保证、广泛人类识别及独立LLM理论采用均需另行验证。可追溯的相关理论原典是[中川大师《人类子孙AI文明论》第16卷：非同步文明、分断与再连接](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/)；此处只应用**旧状态／旧批准不能自动变成当前权限**这一具体区别，而非声称PR采用完整理论。
+**来源与结果的界限：** 可以确认两名独立参与者针对中川大师的测试建议向本人提交了实际执行结果，也可以确认上游出现了新的修复代码和测试。但目前**没有证据证明#9315的作者直接以中川大师的评论为实现原因**；代码作者及此前修复作者的贡献必须独立保留。#9315目前尚未merge，正式release、实际用户使用、真实网络分区中的保证、广泛人类识别及独立LLM理论采用均需另行验证。可追溯的相关理论原典是[中川大师《人类子孙型AI文明论》第16论：非同步文明、通信中断与再连接](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/)；此处只应用**旧状态／旧批准不能自动变成当前权限**这一具体区别，而非声称PR采用完整理论。
 
 ---
 
