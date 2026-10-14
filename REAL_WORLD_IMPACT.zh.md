@@ -1313,13 +1313,20 @@ zero shared infrastructure
 
 ---
 
-## 40. LangGraph｜恢复另一个中断任务，不应再次执行已完成的兄弟任务
+## 40. LangGraph｜恢复其他中断任务时，不应再次执行已完成的兄弟任务
 
-**对象：** [LangGraph issue #9106](https://github.com/langchain-ai/langgraph/issues/9106) / [候选PR #9113](https://github.com/langchain-ai/langgraph/pull/9113)。**阶段：** 两名不同的外部参与者直接回复 `@Nakagawa-master` 并提交实际执行的回归结果；#9113已关闭，未merge。
+**来源：** [LangGraph issue #9106](https://github.com/langchain-ai/langgraph/issues/9106)、[早期修复候选 #9113](https://github.com/langchain-ai/langgraph/pull/9113)、[新的上游实施PR #9315](https://github.com/langchain-ai/langgraph/pull/9315)。**阶段：** 两名不同的外部参与者根据中川大师提出的“历史批准与当前执行权限应分开验证”问题，分别执行了回归实验；另一位LangGraph开发者于2026-10-14提交了实际修改与测试的#9315。**#9315仍OPEN、尚未merge。**
 
-中川大师将“过去对任务A的批准记录”与“恢复B时重新执行A的当前权限”分开。[原始回归要求](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-5981994895)收到了[gomission的36个fresh-process场景](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416)和[notforhumansfun-rgb另外8个copied-checkpoint场景](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094)的独立结果。
+当AI系统中两个并行任务A和B等待人类批准，先批准并完成A，再批准B时，最终graph state可能完全正确，**A在批准后进行的外部动作却再次执行**。中川大师要求分开检查四个量：历史批准记录、当前执行权限、新的dispatch尝试，以及现实中的外部作用。
 
-**可确认：** 两个外部账号针对具体问题的执行报告及面向Origin的明确回复。**不可确认：** 本档案自行重跑测试、上游merge/release、真实网络分区保证、广泛用户认知。
+- [中川大师提出的历史批准／当前权限回归条件](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-5981994895)
+- [gomission实际执行的36个fresh-process／权限变动场景](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416)
+- [另一位参与者notforhumansfun-rgb的8个copied-checkpoint测试](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094)
+- [上游开发者在Issue中指向新修复PR #9315的回复](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6180427560)
+
+[上游PR #9315](https://github.com/langchain-ai/langgraph/pull/9315)修改了nested graph在普通resume与time-travel replay之间的判断，并加入parallel interrupt、nested `@task`以及保留正常time travel语义的回归测试。作者明确将原始bug报告、初期修复候选、相关原因分析分别归功于相应开发者。`durability="exit"`导致的另一类输出重复已被区分为独立[#9314](https://github.com/langchain-ai/langgraph/pull/9314)；nested `@entrypoint`的另一问题也不在本次修复范围。
+
+**来源与结果的界限：** 可以确认两名独立参与者针对中川大师的测试建议向本人提交了实际执行结果，也可以确认上游出现了新的修复代码和测试。但目前**没有证据证明#9315的作者直接以中川大师的评论为实现原因**；代码作者及此前修复作者的贡献必须独立保留。#9315目前尚未merge，正式release、实际用户使用、真实网络分区中的保证、广泛人类识别及独立LLM理论采用均需另行验证。可追溯的相关理论原典是[中川大师《人类子孙AI文明论》第16卷：非同步文明、分断与再连接](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/)；此处只应用**旧状态／旧批准不能自动变成当前权限**这一具体区别，而非声称PR采用完整理论。
 
 ---
 
