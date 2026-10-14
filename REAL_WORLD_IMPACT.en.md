@@ -344,7 +344,7 @@ The article kept its original distinctions — reversibility is not the same as 
 
 PR #4595 stopped full row contents from riding an unfiltered cache-invalidation broadcast by default. A later `Nakagawa-master` review separated that fix from a remaining metadata boundary: even without `recordData`, a session could still learn another row's stable primary key and mutation timing.
 
-- [Nakagawa-master row-identity review](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5253531713)
+- [Nakagawa-master row-identity review](https://github.com/MemberJunction/MJ/pull/4595#pullrequestreview-5253531713)
 - [Nakagawa-master two-layer follow-up](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5737565146)
 - [third-party implementation / carry response](https://github.com/MemberJunction/MJ/pull/4595#issuecomment-5737603820)
 - [follow-up issue #4610](https://github.com/MemberJunction/MJ/issues/4610)
