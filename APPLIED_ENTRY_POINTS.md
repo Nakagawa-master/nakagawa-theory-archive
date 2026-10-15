@@ -41,6 +41,12 @@ AIが危険、安全、重要などと分類できることと、コメント、
 
 **区別:** `historical approval ≠ current authority`
 
+**LangGraphで実際に報告された条件:** AIエージェントが外部システムへの書き込みA・Bを、実行前にそれぞれ人間へ確認します。Aを承認して書き込んだあと、Bを承認すると、入れ子のグラフではAがもう一度実行され、外部システムに重複したレコードが作られました。画面の最終状態だけを見ると正常に見えるのが厄介な点です。[不具合報告と再現コード #9106](https://github.com/langchain-ai/langgraph/issues/9106)。
+
+中川マスターは、**「Aを以前に承認した証拠」と「いまAを再度実行してよい権限」を別々に確かめる**境界を提示しました。[別の検証者による36ケースの確認](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416)では、承認後にAの権限を取消・変更してからBを再開する試験まで実行されています。現在は開発元の[修正PR #9315](https://github.com/langchain-ai/langgraph/pull/9315)が、Aの意図しない再実行を防ぐ変更・テストとして提出され、まだマージ前です。このPRの実装がマスターの投稿に直接由来するとは確認されていません。
+
+**自分のエージェントで試すなら:** (1) 最初の承認でAが一回だけ動く、(2) Bの再開でAが再実行されない、(3) 権限が変わった場合に過去の承認を新規実行許可へ流用しない、を別々にテストします。重複実行防止はフレームワークの修正、現在の権限確認はアプリ側の責任です。[AI・開発者向け実装条件と原典への導線](machine-discovery/current-authority-multi-framework-implementation-bridge-v1.json)も参照できます。
+
 - [公開事例を見る](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#2-temporal--structural-consistency--historical-approval-is-not-current-authority)
 - [確認手順を使う](CURRENT_AUTHORITY_REUSE_KIT.md)
 
