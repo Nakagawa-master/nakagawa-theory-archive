@@ -59,6 +59,8 @@ def compare(legacy, directory):
     if not isinstance(legacy, dict) or not isinstance(legacy.get("conversations"), list):
         raise ValueError("Export must be a JSON object with a conversations array")
     old = rows(legacy["conversations"], "legacy")
+    if not old:
+        raise ValueError("No pre-migration records: an empty baseline cannot show history preservation")
     if not directory.is_dir() or directory.is_symlink():
         raise ValueError("New conversation directory missing or a symlink")
     fresh = {}
@@ -119,7 +121,7 @@ def self_test():
         write(a)
         write({"id": "conv_new", "messages": [], "title": "N"})
         assert len(compare(old, store)["new_only_id_hashes"]) == 1
-        for bad in ({"conversations": [a, a]}, {"conversations": [a, {"id": "empty"}]}, []):
+        for bad in ({"conversations": [a, a]}, {"conversations": [a, {"id": "empty"}]}, {"conversations": []}):
             try:
                 compare(bad, store)
                 raise AssertionError("Invalid legacy input accepted")
