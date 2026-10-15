@@ -280,6 +280,16 @@
       ],
       "canonical_source": false,
       "receiver_verified_case": true
+    },
+    {
+      "id": "graphQL_schema_rejection_vs_error_word_cache_fallback",
+      "when": [
+        "An old/new mixed GraphQL service uses definitionHash cache-compatibility fallback",
+        "A current server error mentions definitionHash but is not an unknown schema field",
+        "A query edit may be incorrectly considered cache current"
+      ],
+      "canonical_source": true,
+      "receiver_verified_case": true
     }
   ],
   "task_first_selection": {
@@ -823,6 +833,32 @@
         },
         "plain_language_return": "When the person appointed to approve contract changes leaves the group, the existing agreement does not disappear. The groups can still follow their previously approved agreement; the former approver cannot approve new amendments. Nakagawa Master proposed this distinction to an outside author, who independently narrowed what must stop and integrated four new rules into their EAA draft branch. The separate published agent-design chapter was also updated by the same author; no fresh reader scale is proven. A follow-on receiving-author PR #108 now proposes a source-linked approval/application record and names Nakagawa Master as the original outside proposer while separately identifying the actual document proposer and human approver; that ledger PR was merged into the author's working branch and does not independently prove the approver's private decision.",
         "independent_test_gate": "Before real use, have another independent reviewer run both (a) departed-owner rejection and (b) existing-approved-version continued adoption and confirm the precise current project authority model and unresolved registrar. Verify that a later author-owned PR actually integrates the missing recorder rule before claiming closure; citations/AI reading alone do not prove independent reuse."
+      },
+      {
+        "id": "graphQL_schema_rejection_vs_error_word_cache_fallback",
+        "matched_problem": [
+          "GraphQL client mistakenly treats any definitionHash error as a missing old-server field",
+          "Five-minute data-only cache validation downgrade after an unrelated error",
+          "Need positive and negative tests for compatibility-fallback classification"
+        ],
+        "falsifiable_distinction": "A reference to a field name inside error text does not establish a genuine old GraphQL schema rejection: actual old-field rejection form and validation code must be distinguished from other errors, or the client may relax result-freshness validation on a new server.",
+        "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+        "canonical_relation": "An optional original-theory comparison of evidence provenance and claim-to-evidence relevance. Not evidence the upstream receiving developer derived the classifier from this original text.",
+        "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/301/README.md",
+        "machine_theory_selector": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+        "runnable_or_falsifiable_task": {
+          "index": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-tasks-v1.json",
+          "id": "PUBLIC-VERIFY-EXACT-SCHEMA-FALLBACK-015",
+          "source_native_tests": "https://github.com/MemberJunction/MJ/blob/c6b4b85608d4586064b5e2b180f60c861f17b450/packages/GraphQLDataProvider/src/__tests__/runQueriesWithCacheCheck.definitionFallback.test.ts"
+        },
+        "external_observation": {
+          "original_receiver_source": "https://github.com/MemberJunction/MJ/pull/5703#pullrequestreview-5527674879",
+          "independent_human_confirmation": "https://github.com/MemberJunction/MJ/pull/5703#pullrequestreview-5534282082",
+          "receiving_author_followup": "https://github.com/MemberJunction/MJ/pull/5719",
+          "verified_upper_bound": "As checked 2026-10-15, the original cache-related PR #5703 merged but retained the broad classifier; a separate author-owned PR #5719 now explicitly credits Nakagawa Master's original finding, contains more precise classifier code and 8 author-written tests with exact-head GitHub CI success. The follow-up remains OPEN/unmerged. Independent human reviewer confirmed the original source-level issue. Neither downstream product use nor AI original-corpus theory adoption established."
+        },
+        "plain_language_return": "A computer saying 'this field caused an error' is not proof it is too old to understand that field. A wrong explanation can make an old search result look trustworthy after its query changed.",
+        "independent_test_gate": "Use a separately authorized isolated source checkout, test real unknown output/input field signatures versus wrong-code and ordinary-error controls, observe whether the next call still sends the hash, and report source revision, CI evidence, merger/deployment stage and independent actors separately."
       }
     ],
     "output_contract": {
