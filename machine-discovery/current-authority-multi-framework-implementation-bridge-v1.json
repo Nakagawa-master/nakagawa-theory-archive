@@ -61,6 +61,19 @@
         "real_concurrency": "The referenced branch/copy tests were sequential local simulations, not network partition recovery or multi-writer tests.",
         "outside_interest": "A separate developer proposed task-scoped agent authorization integration in #9106, addressed to the original reporter. This is independent public interest, not a request to Nakagawa Master or evidence of adoption of his theory.",
         "external_comment": "https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6182300128"
+      },
+      "runnable_non_enforcing_trace_check": {
+        "script": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/nested-resume-authority-trace-check.py",
+        "run": "python3 machine-discovery/nested-resume-authority-trace-check.py --self-test",
+        "positive_negative_nonfit_cases": 7,
+        "input": "Chronologically ordered caller-supplied grant, revoke/policy_change, policy_check, resume, dispatch, effect, complete, explicit_retry_request events.",
+        "separates": [
+          "completed sibling redispatch",
+          "current policy and revoked grant",
+          "explicit fresh retry with newly bound human/caller intent",
+          "missing external effect observations"
+        ],
+        "interpretation": "Offline synthetic test and trace-consistency audit only. Not LangGraph instrumentation, an enforceable permission check, proof of real effects, exactly-once semantics or independent AI/human adoption. Strict bound-grant assumptions must be adapted for deliberately live-policy grants."
       }
     },
     {
