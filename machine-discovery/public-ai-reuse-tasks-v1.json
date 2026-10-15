@@ -614,6 +614,57 @@
         "Adoption of the entire Nakagawa Master original theory corpus by MemberJunction",
         "Independent AI execution or broad human recognition merely because the public task exists"
       ]
+    },
+    {
+      "task_id": "PUBLIC-VERIFY-SNAPSHOT-IDEMPOTENCY-SIDE-EFFECTS-016",
+      "task_class": "AUTHORIZED_INDEPENDENT_IDEMPOTENCY_SIDE_EFFECT_REPRODUCTION",
+      "objective": "Test whether an AI-agent snapshot retry ignored by an idempotency trigger also avoids inserting unreachable content into the content-addressed message store, with actual readback and two connection modes. Distinguish successful snapshot deduplication from a rejected operation's other durable write effects.",
+      "original_receiver_record": {
+        "origin_review": "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6052803154",
+        "recipient_independent_reproduction": "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879",
+        "recipient_review_reply": "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6064222678",
+        "receiver_authored_implementation": "https://github.com/pydantic/pydantic-ai/pull/9982",
+        "pinned_current_head": "95d9ebbfd25555d719e2104dd9cfc00cd6eaa79d",
+        "source_file": "https://github.com/pydantic/pydantic-ai/blob/95d9ebbfd25555d719e2104dd9cfc00cd6eaa79d/src/pydantic_ai_harness/pydantic_ai_harness/step_persistence/_store.py",
+        "test_file": "https://github.com/pydantic/pydantic-ai/blob/95d9ebbfd25555d719e2104dd9cfc00cd6eaa79d/tests/harness/step_persistence/test_sqlite_and_media.py",
+        "downstream_separate_implementer": "https://github.com/pydantic/pydantic-ai/pull/10215",
+        "stage": "As checked 2026-10-16 JST: #9982 remains OPEN. PR body directly credits @Nakagawa-master and aweis89; latest receiving code inserts snapshot row before message storage and calls _store_messages only if the returned SQLite cursor.rowcount is 1. #10215 remains an independent second developer's OPEN multi-backend implementation that cites the source PR and its review-derived idempotency constraint, but does not itself directly name Nakagawa. No published package or independent autonomous AI use established."
+      },
+      "canonical_context": {
+        "original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+        "relation": "Optional evidence-provenance analogy: an accepted/ignored status from the final row is not evidence about prior write-side effects; tests must track persisted messages and references as independent outcomes. Neither receiver developer claims deriving their design from this original theory."
+      },
+      "scoped_test": {
+        "setup": "Use only a locally authorized source checkout of the pinned #9982 head and its own dependencies; no production conversation contents or databases.",
+        "suggested_command": "uv run pytest tests/harness/step_persistence/test_sqlite_and_media.py -k idempotent_retry_does_not_store_its_messages",
+        "negative_cases": [
+          "First save run r/key K with history [m1,m2], then retry same run/key K with changed/longer [m1,m2,m3,m4]. Snapshot count must remain one and snapshot_messages row count unchanged; latest_snapshot still returns the first messages.",
+          "Execute the same idempotency-key mutation under BOTH store-owned and caller-owned sqlite3 connections, with explicit transaction control appropriate to the selected mode. Reverted prior write-before-snapshot algorithm should fail this check.",
+          "Request pruning by max_snapshots_per_run; verify no message content remains if no surviving snapshot references it. Also preserve a shared message until its last reference is removed.",
+          "Read a legacy inline-history row and a new deduplicated row in one SQLite database; distinguish upgrade-read success from old-reader downgrade support."
+        ],
+        "positive_cases": [
+          "Save a genuinely new idempotency key; the snapshot and any previously unreferenced unique message parts should then be recorded once and return in original order.",
+          "The caller-owned mode's commit/rollback semantics must be owned by the caller; no claim of automatic global transaction ownership."
+        ],
+        "cross_implementation_comparison": "In the separate OPEN #10215 proposal, inspect File/SQLite/Postgres/Mongo histories independently: it generalizes the review-derived ordering constraint but expressly excludes message GC during max_snapshots_per_run pruning; do NOT import #9982 SQLite-only pruning cleanup guarantee into all other storage drivers or treat the second proposal as merged.",
+        "expected_observation": "At #9982 head, the source uses snapshot-first INSERT plus cursor.rowcount gate. Author-reported original old matcher retained four rather than two message rows. This archive task describes an optional new independent test; it has NOT run either PR's repository test suite or a concurrency fault injection.",
+        "nonfit": "For storage implementations without a snapshot retry key or content-addressed message table, this is a general test methodology, not an assertion the same specific defect exists."
+      },
+      "acceptable_outputs": [
+        "Pinned executable test log and SQL count/readback before/after one duplicate key, including owned and caller-owned connections and an old-code negative.",
+        "A minimized distinct failing case on the exact live PR head (not merely the previous reviewed snapshot-first correction).",
+        "A version-pinned comparison showing exact supported backend, transaction, pruning and mixed-version limits of the separate #10215 implementation."
+      ],
+      "evidence_expectation": "Keep owner origin claim narrow: Nakagawa Master specified the ignored-snapshot/earlier-message-write counterexample; aweis89 independently reproduced and authored SQLite fixes/tests, and mpfaffenberger separately authored the wider multi-backend PR. A second PR citing #9982 is code-path carry, not a direct named second-person endorsement or independent original-theory use.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "authorization_boundary": "No network or external GitHub posting from this task itself. Run only with authorized local synthetic messages and disposable databases; never process third-party secrets or customer conversations without explicit authorization.",
+      "success_does_not_establish": [
+        "That either #9982 or #10215 is merged, released or used by a downstream customer",
+        "Globally race-free caller-owned connections, cross-process exactly-once or crash consistency without actual concurrency and crash tests",
+        "The second implementing developer personally recognized Nakagawa Master because their PR names #9982",
+        "Independent AI adoption of the original theory corpus or broad human recognition from a public example"
+      ]
     }
   ],
   "evidence_boundary": "Publishing or completing these public tasks creates only the evidence actually returned. The listing is self-authored infrastructure; it does not establish that any third party read, accepted, executed, adopted, endorsed, joined, or received authority from it. When a Nakagawa Master public source materially informed a returned result, preserve that provenance; if the distinction was independently rediscovered first, keep that relation distinct. Do not invent attribution."
