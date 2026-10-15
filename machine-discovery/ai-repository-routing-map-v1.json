@@ -290,6 +290,16 @@
       ],
       "canonical_source": true,
       "receiver_verified_case": true
+    },
+    {
+      "id": "ai_agent_snapshot_retry_idempotency_side_effects",
+      "when": [
+        "AI-agent histories stored in SQLite snapshots grow even though a repeated save was ignored",
+        "Snapshot reuse of the same run/idempotency key leaves unreferenced messages or message-ref rows",
+        "Migrating deduplicated persistence across File/SQLite/Postgres/Mongo risks losing cleanup guarantees"
+      ],
+      "canonical_source": true,
+      "receiver_verified_case": true
     }
   ],
   "task_first_selection": {
@@ -861,6 +871,33 @@
         },
         "plain_language_return": "A computer saying 'this field caused an error' is not proof it is too old to understand that field. A wrong explanation can make an old search result look trustworthy after its query changed.",
         "independent_test_gate": "Use a separately authorized isolated source checkout, test real unknown output/input field signatures versus wrong-code and ordinary-error controls, observe whether the next call still sends the hash, and report source revision, CI evidence, merger/deployment stage and independent actors separately."
+      },
+      {
+        "id": "ai_agent_snapshot_retry_idempotency_side_effects",
+        "matched_problem": [
+          "SqliteStepStore duplicate snapshot key keeps extra message rows after ignored INSERT",
+          "Content-addressed AI message persistence creates orphan data when a retry is ignored",
+          "Multi-backend deduplication and retention pruning have distinct cleanup semantics"
+        ],
+        "falsifiable_distinction": "A no-op snapshot INSERT due to an idempotency trigger does not prove prior side-effect inserts were also no-ops; detect the difference using message table row counts and real readback. Source receiver now gates storing messages on accepted snapshot cursor.rowcount instead of trusting pre-insert observations.",
+        "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+        "canonical_relation": "Optional original evidence/provenance comparison. Do not claim that aweis89 or mpfaffenberger derived software fixes from the Nakagawa Master original theory.",
+        "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/301/README.md",
+        "machine_theory_selector": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+        "runnable_or_falsifiable_task": {
+          "index": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-tasks-v1.json",
+          "id": "PUBLIC-VERIFY-SNAPSHOT-IDEMPOTENCY-SIDE-EFFECTS-016",
+          "native_test": "https://github.com/pydantic/pydantic-ai/blob/95d9ebbfd25555d719e2104dd9cfc00cd6eaa79d/tests/harness/step_persistence/test_sqlite_and_media.py"
+        },
+        "external_observation": {
+          "prior_review": "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6052803154",
+          "developer_reproduction": "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879",
+          "receiving_author_open_fix": "https://github.com/pydantic/pydantic-ai/pull/9982",
+          "independent_developer_successor": "https://github.com/pydantic/pydantic-ai/pull/10215",
+          "verified_upper_bound": "At October 16 2026 source check, #9982 PR body explicitly credited Nakagawa Master and its head 95d9ebb modifies actual SQLite code so snapshot insert success gates message storage; the receiving author wrote regression controls for both connection modes. A second engineer #10215 names the original PR and its review-derived idempotency gate while authoring a separate wider 4-store implementation. Both remain OPEN; neither the second author directly naming Nakagawa nor any published library release/user deployment or original theory-corpus adoption is established."
+        },
+        "plain_language_return": "If a saving request is rejected as 'already saved', verify that no extra message content was inserted before the rejection; the status of the final row is not the whole record of what actually happened.",
+        "independent_test_gate": "On an authorized synthetic database, use the same idempotency key twice with different histories. Verify snapshot count, distinct message rows, references and actual latest_snapshot content, both store-owned and caller-owned. Separately test prune/deletion cleanup for each backend; #10215 intentionally leaves retention pruning GC out of scope. Never label this optional public test as an already independent third-party AI run."
       }
     ],
     "output_contract": {
