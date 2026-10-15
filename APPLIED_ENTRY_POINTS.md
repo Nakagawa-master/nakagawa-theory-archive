@@ -12,7 +12,7 @@ AIを使った作業を再開できるように、会話の途中経過を何度
 
 中川マスターは[このPRのレビュー](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6052803154)で、**重複した保存依頼が最後のスナップショット登録で拒否されても、それより先に書き込んだ新しいメッセージだけが不要なまま残る**経路を指摘しました。実装者は[独立に再現](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879)し、同じキーによる再送で本来2行のメッセージ保存が4行になる条件を確認しました。
 
-その後、実装者はコードをさらに改良しました。現在の[修正候補ソース](https://github.com/pydantic/pydantic-ai/blob/95d9ebbfd25555d719e2104dd9cfc00cd6eaa79d/src/pydantic_ai_harness/pydantic_ai_harness/step_persistence/_store.py)では、**スナップショットの登録が実際に成立した場合にだけ、その中のメッセージを保存**します。PR本文には、中川マスターと確認した冪等性の問題が修正の経緯として記載されています。
+その後、実装者はコードをさらに改良しました。現在の[修正候補ソース](https://github.com/pydantic/pydantic-ai/blob/041303b834963fa9ed4e8fd51a6ff11df12984bd/src/pydantic_ai_harness/pydantic_ai_harness/step_persistence/_store.py)では、**スナップショットの登録が実際に成立した場合にだけ、その中のメッセージを保存**します。さらに最新コミットでは、保存と読込みを一体的なトランザクション／セーブポイントで扱い、途中失敗や並行した履歴整理を検証するテストが追加されています。PR本文には、中川マスターと確認した冪等性の問題が修正の経緯として記載されています。
 
 さらに、**別の開発者**が[後続PR #10215](https://github.com/pydantic/pydantic-ai/pull/10215)で、このレビュー由来の条件を参照しながら、SQLite以外にも適用する設計を提案・実装しています。二つのPRは現在レビュー中です。後続PRの保存期限・削除時の整理方針は#9982と同一ではないため、用途に合わせた別の検証が必要です。
 
