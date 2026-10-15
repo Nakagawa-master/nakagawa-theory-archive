@@ -564,6 +564,54 @@
         "Production incident, credential leak, or real user impact",
         "One more human adopter or autonomous AI use from this task page alone"
       ]
+    },
+    {
+      "task_id": "PUBLIC-VERIFY-EXACT-SCHEMA-FALLBACK-015",
+      "task_class": "INDEPENDENT_SOURCE_REPRODUCTION_AND_FALSIFICATION",
+      "objective": "For an authorized GraphQL client with staged old/new servers, distinguish an actual schema rejection of definitionHash from an unrelated server/application failure that merely mentions the same field. Reproduce a false fallback, run the receiver's follow-up regression, and state whether the precise new-version validation boundary now holds on the tested source version.",
+      "original_receiver_record": {
+        "source_review": "https://github.com/MemberJunction/MJ/pull/5703#pullrequestreview-5527674879",
+        "human_independent_confirmation": "https://github.com/MemberJunction/MJ/pull/5703#pullrequestreview-5534282082",
+        "base_change_merged": "https://github.com/MemberJunction/MJ/pull/5703",
+        "receiver_authored_followup": "https://github.com/MemberJunction/MJ/pull/5719",
+        "exact_followup_head": "c6b4b85608d4586064b5e2b180f60c861f17b450",
+        "test_source": "https://github.com/MemberJunction/MJ/blob/c6b4b85608d4586064b5e2b180f60c861f17b450/packages/GraphQLDataProvider/src/__tests__/runQueriesWithCacheCheck.definitionFallback.test.ts",
+        "stage_as_checked_2026_10_15": "The base fix #5703 was merged. The distinct classifier follow-up #5719 is open, with a receiver-authored patch, eight reported local tests, and GitHub exact-commit checks at 24 success/5 skipped; no merge, release or production use of the follow-up is established."
+      },
+      "canonical_context": {
+        "source": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+        "relationship": "Optional independent application of evidence-provenance and claim-to-evidence matching: seeing a field name in an error is not evidence the server schema lacks that field. The receiving author did not claim deriving their design from this original theory."
+      },
+      "scoped_test": {
+        "location": "In a locally authorized MemberJunction checkout at the chosen exact commit, run the existing package's Vitest file. Its package.json defines test as vitest run.",
+        "suggested_command": "cd packages/GraphQLDataProvider && pnpm test src/__tests__/runQueriesWithCacheCheck.definitionFallback.test.ts",
+        "positive_controls": [
+          "Actual old GraphQL output schema unknown-field rejection + GRAPHQL_VALIDATION_FAILED permits one data-only retry.",
+          "Actual old input variable coercion unknown-field rejection + BAD_USER_INPUT permits one data-only retry.",
+          "The designated five-minute compatibility window expires and hash validation resumes."
+        ],
+        "negative_controls": [
+          "Error 'definitionHash validation failed for this request' with INTERNAL_SERVER_ERROR must cause one failed request and no compatibility suppression.",
+          "An unknown-field-looking text paired with INTERNAL_SERVER_ERROR must not count as old-schema validation.",
+          "Plain Error('could not read definitionHash') must not downgrade; the next query must still transmit its definition hash."
+        ],
+        "nonfit": "If no old-server rolling compatibility path exists in the chosen product, it is a classification lesson, not a claim the same defect or mitigation is present.",
+        "expected_observation": "The follow-up PR tests were authored to fail under the previous broad classifier and pass under the bounded classifier; this archive is supplying an independent challenge, not a fresh executed test log."
+      },
+      "acceptable_outputs": [
+        "Version-pinned real test log with positive, negative and nonfit outcomes and the actual result of every branch.",
+        "A supported counterexample showing a real historical-server response that the new matching rule wrongly rejects, or a current-server error that is wrongly downgraded.",
+        "A receiving-source implementation review demonstrating the exact classifier and test state, separated from merge and deployment."
+      ],
+      "evidence_expectation": "Report source revision, raw structured errors and codes, exact calls/next-call hash behavior, what was executed versus inferred, independent receiver roles and stage. Credit Nakagawa Master only for the bounded original review, independent reviewer for its separate confirmation and receiving developer for implementation and tests. If the canonical Parent was only linked after development, never call it original-theory adoption.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "authorization_boundary": "Optional reader-initiated local/staging validation with synthetic errors. No credentials, real customer records, production changes, unauthorised API calls, unsolicited upstream comments, or automation that sends external messages. This file is a reference task, not a permission grant.",
+      "success_does_not_establish": [
+        "That #5719 has merged or shipped",
+        "That any installed user was affected or protected",
+        "Adoption of the entire Nakagawa Master original theory corpus by MemberJunction",
+        "Independent AI execution or broad human recognition merely because the public task exists"
+      ]
     }
   ],
   "evidence_boundary": "Publishing or completing these public tasks creates only the evidence actually returned. The listing is self-authored infrastructure; it does not establish that any third party read, accepted, executed, adopted, endorsed, joined, or received authority from it. When a Nakagawa Master public source materially informed a returned result, preserve that provenance; if the distinction was independently rediscovered first, keep that relation distinct. Do not invent attribution."
