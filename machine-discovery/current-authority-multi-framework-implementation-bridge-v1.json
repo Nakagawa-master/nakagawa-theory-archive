@@ -36,9 +36,9 @@
         "https://github.com/langchain-ai/langgraph/issues/9106",
         "https://github.com/langchain-ai/langgraph/pull/9315"
       ],
-      "current_stage": "MAINTAINER_OWNED_FIX_PR_OPEN__INDEPENDENT_AUTHORITY_BOUNDARY_REGRESSIONS_EXIST",
-      "verified_change": "In #9106, Nakagawa Master distinguished historical approval from fresh dispatch/current authority; independent testers then reported 36 fresh-process policy-boundary scenarios and a separate bounded copied-checkpoint stale-branch regression. Maintainer eliornl explicitly reported a fix in OPEN/unmerged PR #9315, which changes nested replay on ordinary resume and adds completed-sibling, nested @task and time-travel regression tests. The PR credits the original reporter and earlier fix authors; a direct causal link from Nakagawa's comments to the maintainer code is NOT established. This patch targets duplicate redispatch, not application authorization.",
-      "next_target": "Check maintainer review, merge, tagged release and real receiver use of #9315; compare the separately scoped durability='exit' fix #9314 where relevant. In an application adapter (never assert LangGraph grants authorization), test that a saved approval receipt is not used as fresh scope/policy permission at a new tool-dispatch boundary. For example approve A under policy v1, execute A once, revoke or rotate A authority, then resume B; assert A has exactly one dispatch/effect and its historic approval does not authorize a second dispatch. Run a stable-policy control; test actual partition/concurrent writers separately before claiming those guarantees.",
+      "current_stage": "MAINTAINER_FIX_MERGED_2026_10_15_19_51_UTC__SEPARATE_APP_AUTHORIZATION_REMAINS_UNPROVEN",
+      "verified_change": "LangGraph issue #9106 reported completed sibling A re-executing after B resume despite correct-looking final state. Nakagawa Master provided a distinct old-approval-versus-current-authority regression distinction. Two independent humans ran source-versioned fresh-process and copied-checkpoint simulated-policy probes and addressed Nakagawa. Maintainer eliornl independently implemented a source fix through #9315, including an additional current-checkpoint top-level correction, with separate reviewer/test input. PR #9315 MERGED 2026-10-15T19:51:22Z at b0482d0627ec8fdf7c91fba7ffd17403583c59d0 and issue #9106 closed completed. The receiving fix addresses observed replay and re-dispatch boundaries; source did not establish that Nakagawa's distinct approval-policy comments directly caused maintainer source implementation or that the framework grants authorization.",
+      "next_target": "Verify next tagged LangGraph release and independent real downstream execution of the merged replay fix. In a separately authorized application test, contrast saved approval receipt with current scope/policy at real tool dispatch (A approved once, policy revoked or rotated, B resumed) and record both dispatch and effect counts. The framework duplicate-dispatch fix itself is not a blanket authorization solution or network-partition/concurrent-writer guarantee.",
       "larger_effect_if_achieved": "Durable/recoverable agent graphs gain a portable boundary between historical approval/replay state and current authority to dispatch a consequential action, with explicit Origin-preserved cross-receiver evidence.",
       "evidence_links": {
         "nakagawa_boundary": "https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-5981994895",
@@ -48,7 +48,8 @@
         "maintainer_fix_pr": "https://github.com/langchain-ai/langgraph/pull/9315",
         "maintainer_acknowledgment": "https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6180427560",
         "independent_partition_probe": "https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6021690094",
-        "durability_exit_separate": "https://github.com/langchain-ai/langgraph/pull/9314"
+        "durability_exit_separate": "https://github.com/langchain-ai/langgraph/pull/9314",
+        "merged_commit": "https://github.com/langchain-ai/langgraph/commit/b0482d0627ec8fdf7c91fba7ffd17403583c59d0"
       },
       "adjacent_theory16": {
         "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/",
@@ -56,7 +57,7 @@
         "relationship": "Future test extension only: stale/last-known state must not silently become current consent or authority after partition and reconnection. This does not claim whole-theory adoption by LangGraph participants."
       },
       "implementation_boundary": {
-        "framework_fix": "#9315 prevents a tested class of completed-sibling replay in nested graph resume. Merge and release remain pending.",
+        "framework_fix": "#9315 is merged into main with a bounded source-level completed-sibling latest-head checkpoint replay repair; later tagged release, real downstream deployment and application authorization remain distinct gates.",
         "application_authority": "Application-owned current-policy checks and effect logs remain necessary. No built-in LangGraph authorization or exactly-once guarantee is inferred.",
         "real_concurrency": "The referenced branch/copy tests were sequential local simulations, not network partition recovery or multi-writer tests.",
         "outside_interest": "A separate developer proposed task-scoped agent authorization integration in #9106, addressed to the original reporter. This is independent public interest, not a request to Nakagawa Master or evidence of adoption of his theory.",
