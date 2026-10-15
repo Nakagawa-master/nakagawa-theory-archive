@@ -3063,11 +3063,11 @@
         "in_open_pr": "https://github.com/pydantic/pydantic-ai/pull/9982",
         "author_reported_test": true,
         "verified_scope": "Committed source and regression-test changes on the external contributor branch; the author explicitly acknowledges the source review.",
-        "latest_head_as_checked": "041303b834963fa9ed4e8fd51a6ff11df12984bd",
-        "latest_revision_detail": "Current HEAD 041303b8 retains snapshot-first INSERT with cursor.rowcount gate, and additionally wraps writes in a store-owned BEGIN IMMEDIATE transaction or caller-owned SAVEPOINT step_store, with exception rollback and read transaction snapshot/ref integrity tests. This is another receiver-authored change after the original credited idempotency finding; no upstream test suite re-executed by this archive.",
-        "current_ci": "69 GitHub checks at new head: 23 completed success, 18 skipped, one cancelled, 27 in progress/queued at check, zero completed failures. Not a final CI or merge decision.",
+        "latest_head_as_checked": "1f4078fa4fa8234b80dd9bff034b249359058148",
+        "latest_revision_detail": "Latest OPEN HEAD 1f4078fa includes transaction/savepoint and read consistency introduced at 041303b8, followed by documentation-only correction: first-time schema setup commits a caller-owned SQLite connection regardless of pending caller transaction. Snapshot savepoints do not protect that first-use schema operation. No current HEAD successful CI/merge/release verified.",
+        "current_ci": "69 latest observed checks on prior 041303b8 source (23 success/18 skip/1 cancelled/27 pending) are historical after new docs commit 1f4078fa; do not call newest checks green.",
         "pr_body_origin_return": "PR body at current head expressly names @Nakagawa-master in connection with the original idempotent retry fix, a receiver-authored attribution independent of this archive.",
-        "updated_head_commit": "https://github.com/pydantic/pydantic-ai/commit/041303b834963fa9ed4e8fd51a6ff11df12984bd"
+        "updated_head_commit": "https://github.com/pydantic/pydantic-ai/commit/1f4078fa4fa8234b80dd9bff034b249359058148"
       },
       "current_stage": "open_receiver_owned_code_and_tests_with_explicit_origin_and_separate_engineer_reuse",
       "causal_boundary": "The original PR author independently reproduced and credited Nakagawa Master's source-specific idempotency side-effect review, then implemented and revised the actual SQLite fix; #9982 remains OPEN and not shipped. A DIFFERENT engineer's #10215 OPEN multi-backend generalized PR explicitly builds on the #9982 review-derived idempotency improvement, but does not itself directly name Nakagawa; no second developer direct-theory adoption or released use should be inferred.",
