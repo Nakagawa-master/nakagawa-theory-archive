@@ -560,7 +560,7 @@ AIサービスを24時間動かすため、一つのワーカーを複数の利�
 
 たとえば「3回使ったら交換」のつもりでも、交換担当が見るのは利用者がいない瞬間だけ。次の処理がすぐ始まる状態が続けば、4回、5回、8回と同じワーカーへ蓄積できます。問題は利用者が常に来ることではなく、**交換の可否を決めるタイミングに、その利用の連続性を織り込んでいないこと**です。
 
-[Qwen CodeのWorkspace常駐ランタイム設計PR #14214](https://github.com/QwenLM/qwen-code/pull/14214)について、中川マスターは[上限と退役条件の食い違いを指摘し、連続入場時の回帰試験を提案](https://github.com/QwenLM/qwen-code/pull/14214#pullrequestreview-5521245412)しました。これは設計段階のレビューであり、実システムの障害や実装上の欠陥が確認されたという主張ではありません。
+[Qwen CodeのWorkspace常駐ランタイム設計PR #14214](https://github.com/QwenLM/qwen-code/pull/14214)で、中川マスターは[「上限があっても、連続して仕事が入れば退役の空き時間がなくなる」という反例と、そのテスト条件](https://github.com/QwenLM/qwen-code/pull/14214#pullrequestreview-5521245412)を示しました。[別の人間レビュアーもその不一致を確認](https://github.com/QwenLM/qwen-code/pull/14214#pullrequestreview-5527791276)。設計PRは2026年10月15日にマージされ、[開発者は中川マスターに直接同意し、後続の設計を修正したと説明](https://github.com/QwenLM/qwen-code/pull/14214#issuecomment-6184869027)しています。[後続PR #14254](https://github.com/QwenLM/qwen-code/pull/14254)の改訂案では、上限に達した世代への新規受付を止め、実行中の処理は終了を待つ方式と、連続受付を試す検証条件が明記されています。ただし現在の#14254で実装しているのは前段の設定・識別の整理で、**受付上限の本体と連続受付テストは後続工程の設計段階**です。開発者がこの原典理論群を設計の根拠として直接採用したとは確認されていません。
 
 **自分で試す:** [依存なしPythonの連続受付・世代交代モデル](machine-discovery/continuous-admission-generation-budget-probe.py)を保存し、`python3 machine-discovery/continuous-admission-generation-budget-probe.py --self-test` または `--sample` で比較できます。仮の上限3、8回の順次実行では、アイドル時だけの検査は同じ世代に8件残し、受付側で上限を確認するモデルは3件以内で交代します。空き時間ごとに確実に検査する条件も別に試せます。実物のQwen worker、メモリ使用量、障害頻度を測った結果ではありません。
 
