@@ -574,9 +574,11 @@
         "human_independent_confirmation": "https://github.com/MemberJunction/MJ/pull/5703#pullrequestreview-5534282082",
         "base_change_merged": "https://github.com/MemberJunction/MJ/pull/5703",
         "receiver_authored_followup": "https://github.com/MemberJunction/MJ/pull/5719",
-        "exact_followup_head": "c6b4b85608d4586064b5e2b180f60c861f17b450",
+        "exact_followup_head": "c083e02d88c44cfbf065d10748490019252a6ef4",
         "test_source": "https://github.com/MemberJunction/MJ/blob/c6b4b85608d4586064b5e2b180f60c861f17b450/packages/GraphQLDataProvider/src/__tests__/runQueriesWithCacheCheck.definitionFallback.test.ts",
-        "stage_as_checked_2026_10_15": "The base fix #5703 was merged. The distinct classifier follow-up #5719 is open, with a receiver-authored patch, eight reported local tests, and GitHub exact-commit checks at 24 success/5 skipped; no merge, release or production use of the follow-up is established."
+        "stage_as_checked_2026_10_16": "Follow-up #5719 was receiver-merged into MemberJunction next on 2026-10-15T18:42:14Z, commit c8f1c92898cd8e839707f1c38df53187dc6776c7. The reviewer rkihm-BC independently verified and APPROVED the classifier fix: 635 package tests, three old-implementation red negative mutations, 24 exact-commit GitHub checks success / five skipped. No stable package publish, customer deployment, production incident, or actual outsider reuse established by the merge.",
+        "receiver_merge": "https://github.com/MemberJunction/MJ/commit/c8f1c92898cd8e839707f1c38df53187dc6776c7",
+        "independent_human_followup_review": "https://github.com/MemberJunction/MJ/pull/5719#pullrequestreview-5538174933"
       },
       "canonical_context": {
         "source": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
@@ -607,7 +609,7 @@
       "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
       "authorization_boundary": "Optional reader-initiated local/staging validation with synthetic errors. No credentials, real customer records, production changes, unauthorised API calls, unsolicited upstream comments, or automation that sends external messages. This file is a reference task, not a permission grant.",
       "success_does_not_establish": [
-        "That #5719 has merged or shipped",
+        "That the upstream #5719 source merge has reached an independently checked released package or customer runtime",
         "That any installed user was affected or protected",
         "Adoption of the entire Nakagawa Master original theory corpus by MemberJunction",
         "Independent AI execution or broad human recognition merely because the public task exists"
