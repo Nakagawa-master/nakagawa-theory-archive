@@ -566,6 +566,20 @@ AIサービスを24時間動かすため、一つのワーカーを複数の利�
 
 この境界を使って、**交換をいつ行えるのか、処理中の仕事を守りながら次の受付をどう待たせるか、維持費が時間とともに成立し続けるか**を先に確かめます。長期の資源・更新・維持可能性という理論的な問いは、[中川マスター第19論／OD312の原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/)へ戻れます。開発側によるレビュー採用・実装・利用は別に確かめる段階です。
 
+## AIとの会話が、更新したあとに消えていないか確かめる
+
+AIに相談していた仕事の経緯や、何日もかけて考えた会話が、アプリの更新後に読めなくなったら。あとから同じ結論だけを作り直せても、途中の問いや約束まで完全に取り戻せるとは限りません。
+
+実例は、[Qwen CodeのVS Code連携で報告された会話保存の問題 #14262](https://github.com/QwenLM/qwen-code/issues/14262)です。利用者の実測では、1,006件の会話と12,095件のメッセージを含む保存値が約75 MBとなり、短いメッセージを一つ足す際にも古い会話全体を書き直していました。これは報告者の環境での測定値です。
+
+[開発者自身は修正PR #14285](https://github.com/QwenLM/qwen-code/pull/14285)で、会話を個別ファイルへ移し、新規の空会話は最初のメッセージまで保存しない方式に変更しています。既存会話の移行・再読込・失敗時の再試行を対象とする129件の定向テストなどを報告しています。一方、PRは**現在DRAFT/OPEN**で、報告者の実際の75 MB環境やVS Code本体での移行完了はまだ検証済みではありません。
+
+重要なのは、**移行プログラムが「成功した」と返すことと、利用者の会話が一件も失われず同じ内容で読めることを分ける**ことです。そこで、利用者が自分の管理するデータだけで照合できる[会話移行の読み取り専用比較ツール](machine-discovery/conversation-migration-parity-probe.py)を用意しました。
+
+**自分で確かめる方法：** 移行**前**の会話一覧を `{"conversations": [...]}` 形式の非公開JSONとして安全に保存し、移行**直後**、まだ追加の会話編集を行っていない段階で、新保存先の `conversations/` フォルダと比較します。まず `python3 machine-discovery/conversation-migration-parity-probe.py --self-test`、実データでは `python3 machine-discovery/conversation-migration-parity-probe.py --legacy-json /private/legacy.json --store-dir /private/conversations`。元の会話の欠落、内容変更、後から作られた会話を別々に報告します。会話本文をネットワークに送らず、検査結果にも表示しません。アプリ自身の実行・データの永続性・復元成功を認定する道具ではなく、**自分の元記録を失ったかどうかを確かめる一つの独立した照合手段**です。バックアップには個人情報が含まれるため、公開リポジトリへアップロードしないでください。
+
+中川マスターの[第19論の原典・長期の維持と更新の構造](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/)に戻ると、改良を選ぶときは新機能だけでなく、古い状態・再構成費用・利用者が既に積み上げた価値を保てるかも独立に問う、という実用上の見方になります。これは原典から考える応用例であり、Qwenの開発者がこの理論を根拠に修正したという主張ではありません。
+
 ## 312件全体から探す
 
 ここに当てはまらない問題は、[24テーマの世界地図](human-translation/WORLD_MAP.md) または [OD001–OD312水平マップ](human-translation/ALL_310_HORIZONTAL_MAP.md) から探せます。
