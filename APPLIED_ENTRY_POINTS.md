@@ -66,6 +66,8 @@ AIが危険、安全、重要などと分類できることと、コメント、
 
 中川マスターは、**「Aを以前に承認した証拠」と「いまAを再度実行してよい権限」を別々に確かめる**境界を提示しました。[別の検証者による36ケースの確認](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6016877416)では、承認後にAの権限を取消・変更してからBを再開する試験まで実行されています。現在は開発元の[修正PR #9315](https://github.com/langchain-ai/langgraph/pull/9315)が、Aの意図しない再実行を防ぐ変更・テストとして提出され、まだマージ前です。このPRの実装がマスターの投稿に直接由来するとは確認されていません。
 
+**別の開発者にも同じ問題が接続しています。** LangGraphの議論では、[独立したTenuoの開発者が、過去の承認履歴と実行時の権限を分ける必要が自分たちのタスク単位認可の仕事にも当てはまると説明](https://github.com/langchain-ai/langgraph/issues/9106#issuecomment-6182300128)し、元の不具合報告者に連携を提案しました。これは一人の開発者が**別のOSSの実務と同型の問題を認め、対話を始めた**公開記録です。Tenuoの設計が中川マスターの原典から生まれたという証拠や、統合・採用が実現したという意味ではありません。
+
 **自分のエージェントで試すなら:** (1) 最初の承認でAが一回だけ動く、(2) Bの再開でAが再実行されない、(3) 権限が変わった場合に過去の承認を新規実行許可へ流用しない、を別々にテストします。重複実行防止はフレームワークの修正、現在の権限確認はアプリ側の責任です。[AI・開発者向け実装条件と原典への導線](machine-discovery/current-authority-multi-framework-implementation-bridge-v1.json)も参照できます。
 
 **AとBの動きを実際に区別する小さな道具:** [完了済み処理の再実行と古い承認の流用を調べるPython](machine-discovery/nested-resume-authority-trace-check.py)を追加しました。`python3 machine-discovery/nested-resume-authority-trace-check.py --self-test`で、(a) Bだけ再開する正常な例、(b) 完了済みAがもう一度動く例、(c) 取消済みの承認を使う例、(d) 本当に新しく依頼・承認してAをやり直す例など、７つの架空の履歴を比較できます。実際のエージェントでは、Aの実行回数と外部書き込み結果を別々に記録し、B再開前後の承認・権限照合を添えて検査します。**記録上つじつまが合う**ことは、実システムが安全であることや二重書き込みが起きなかったことの保証にはなりません。 [AI向けの入力仕様と原典への接続](machine-discovery/README.md#nested-agent-resume-a-finished-action-must-not-run-again-on-an-old-approval)。
