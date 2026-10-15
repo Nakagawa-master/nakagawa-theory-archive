@@ -624,12 +624,12 @@
         "recipient_independent_reproduction": "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879",
         "recipient_review_reply": "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6064222678",
         "receiver_authored_implementation": "https://github.com/pydantic/pydantic-ai/pull/9982",
-        "pinned_current_head": "041303b834963fa9ed4e8fd51a6ff11df12984bd",
-        "source_file": "https://github.com/pydantic/pydantic-ai/blob/041303b834963fa9ed4e8fd51a6ff11df12984bd/src/pydantic_ai_harness/pydantic_ai_harness/step_persistence/_store.py",
-        "test_file": "https://github.com/pydantic/pydantic-ai/blob/041303b834963fa9ed4e8fd51a6ff11df12984bd/tests/harness/step_persistence/test_sqlite_and_media.py",
+        "pinned_current_head": "1f4078fa4fa8234b80dd9bff034b249359058148",
+        "source_file": "https://github.com/pydantic/pydantic-ai/blob/1f4078fa4fa8234b80dd9bff034b249359058148/src/pydantic_ai_harness/pydantic_ai_harness/step_persistence/_store.py",
+        "test_file": "https://github.com/pydantic/pydantic-ai/blob/1f4078fa4fa8234b80dd9bff034b249359058148/tests/harness/step_persistence/test_sqlite_and_media.py",
         "downstream_separate_implementer": "https://github.com/pydantic/pydantic-ai/pull/10215",
-        "stage": "As checked Oct16 JST, exact new HEAD 041303b8 adds _atomically: BEGIN IMMEDIATE for store-owned writes, SAVEPOINT step_store for caller-owned writes, and transactionally consistent reference/snapshot reads, plus new exception rollback and prune-race tests. 69 Github checks observed: 23 successful, 18 skipped, 1 cancelled, 27 running or queued. OPEN/unmerged. No claimed executed tests by this archive.",
-        "updated_head_commit": "https://github.com/pydantic/pydantic-ai/commit/041303b834963fa9ed4e8fd51a6ff11df12984bd"
+        "stage": "Latest HEAD 1f4078fa follows the atomically guarded data code at 041303b8 by a 3-line docs-only edit: first use schema setup commits caller-owned connection regardless, even though subsequent snapshot savepoint joins an outer transaction. PR remains OPEN; previous exact 041303b8 CI 69 checks/23 success/18 skipped/1 cancelled/27 pending is historical, not claimed for new HEAD.",
+        "updated_head_commit": "https://github.com/pydantic/pydantic-ai/commit/1f4078fa4fa8234b80dd9bff034b249359058148"
       },
       "canonical_context": {
         "original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
@@ -642,7 +642,8 @@
           "First save run r/key K with history [m1,m2], then retry same run/key K with changed/longer [m1,m2,m3,m4]. Snapshot count must remain one and snapshot_messages row count unchanged; latest_snapshot still returns the first messages.",
           "Execute the same idempotency-key mutation under BOTH store-owned and caller-owned sqlite3 connections, with explicit transaction control appropriate to the selected mode. Reverted prior write-before-snapshot algorithm should fail this check.",
           "Request pruning by max_snapshots_per_run; verify no message content remains if no surviving snapshot references it. Also preserve a shared message until its last reference is removed.",
-          "Read a legacy inline-history row and a new deduplicated row in one SQLite database; distinguish upgrade-read success from old-reader downgrade support."
+          "Read a legacy inline-history row and a new deduplicated row in one SQLite database; distinguish upgrade-read success from old-reader downgrade support.",
+          "On caller-owned connection, distinguish FIRST schema initialization that commits any existing caller transaction from later snapshot savepoints that join an existing transaction. Set up schema before testing nested caller transaction rollback; do not claim schema setup is atomic with the caller's open transaction."
         ],
         "positive_cases": [
           "Save a genuinely new idempotency key; the snapshot and any previously unreferenced unique message parts should then be recorded once and return in original order.",
