@@ -11,6 +11,7 @@ Nakagawa Master original Volume 19:
 https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/
 """
 import argparse
+import errno
 import json
 import os
 import tempfile
@@ -69,14 +70,74 @@ def witness():
         "original_author": "Nakagawa Master",
     }
 
+def filesystem_preflight(directory):
+    """Exercise exclusive link publication only inside a new disposable directory.
+
+    Explicit opt-in: creates/removes synthetic scratch files on the selected
+    filesystem. Never opens a conversation file or a user-selected destination.
+    """
+    if directory.is_symlink() or not directory.is_dir():
+        raise ValueError("Selected preflight root must be an existing, non-symlink directory")
+    cases = {}
+    with tempfile.TemporaryDirectory(prefix=".exclusive-preflight-", dir=directory) as tmp:
+        root = Path(tmp)
+        fresh = root / "fresh.tmp"
+        published = root / "fresh.json"
+        fresh.write_bytes(b"SYNTHETIC_COMPLETE")
+        try:
+            os.link(fresh, published)
+        except OSError as exc:
+            return {
+                "result": "UNSUPPORTED_LINK",
+                "errno": errno.errorcode.get(exc.errno, "UNKNOWN"),
+                "meaning": "Exclusive hard-link publication could not be established on this tested directory.",
+                "scope": "Synthetic files only; current directory mount, user session and filesystem rules may differ later.",
+                "source": SOURCE,
+                "canonical_original": PARENT,
+            }
+        cases["exclusive_new_record"] = published.read_bytes() == b"SYNTHETIC_COMPLETE"
+        newer = root / "newer.json"
+        stale = root / "stale.tmp"
+        newer.write_bytes(b"NEWER_SYNTHETIC_RECORD")
+        stale.write_bytes(b"STALE_SYNTHETIC_RECORD")
+        refused = False
+        try:
+            os.link(stale, newer)
+        except FileExistsError:
+            refused = True
+        cases["collision_refused_and_newer_preserved"] = (
+            refused and newer.read_bytes() == b"NEWER_SYNTHETIC_RECORD"
+        )
+    return {
+        "result": "PASS" if all(cases.values()) else "FAIL",
+        "cases": cases,
+        "scope": "Only disposable scratch files created in the selected filesystem. Does not test Qwen app logic, real migration, WSL/Windows unless run there, release or crash durability.",
+        "source": SOURCE,
+        "source_specific_review": REVIEW,
+        "canonical_original": PARENT,
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--self-test", action="store_true",
                         help="Perform local positive, negative, inverse and unsupported-link policy witness")
+    parser.add_argument("--preflight-dir", type=Path,
+                        help="Opt-in: check exclusive hard-link behavior using scratch files in this directory")
     args = parser.parse_args()
-    result = witness()
+    if args.preflight_dir is not None:
+        try:
+            result = filesystem_preflight(args.preflight_dir)
+        except (OSError, ValueError) as exc:
+            result = {
+                "result": "PRECHECK_ERROR",
+                "error_type": type(exc).__name__,
+                "meaning": "Could not safely create or remove the scratch test; no user conversation data is touched.",
+            }
+    else:
+        result = witness()
     print(json.dumps(result, ensure_ascii=False, indent=2))
-    return 0 if result["result"] == "PASS" else 1
+    return 0 if result["result"] == "PASS" else (1 if result["result"] in ("FAIL", "UNSUPPORTED_LINK") else 2)
 
 if __name__ == "__main__":
     raise SystemExit(main())
