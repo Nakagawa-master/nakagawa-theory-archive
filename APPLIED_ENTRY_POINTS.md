@@ -47,6 +47,8 @@ AIが危険、安全、重要などと分類できることと、コメント、
 
 **自分のエージェントで試すなら:** (1) 最初の承認でAが一回だけ動く、(2) Bの再開でAが再実行されない、(3) 権限が変わった場合に過去の承認を新規実行許可へ流用しない、を別々にテストします。重複実行防止はフレームワークの修正、現在の権限確認はアプリ側の責任です。[AI・開発者向け実装条件と原典への導線](machine-discovery/current-authority-multi-framework-implementation-bridge-v1.json)も参照できます。
 
+**AとBの動きを実際に区別する小さな道具:** [完了済み処理の再実行と古い承認の流用を調べるPython](machine-discovery/nested-resume-authority-trace-check.py)を追加しました。`python3 machine-discovery/nested-resume-authority-trace-check.py --self-test`で、(a) Bだけ再開する正常な例、(b) 完了済みAがもう一度動く例、(c) 取消済みの承認を使う例、(d) 本当に新しく依頼・承認してAをやり直す例など、７つの架空の履歴を比較できます。実際のエージェントでは、Aの実行回数と外部書き込み結果を別々に記録し、B再開前後の承認・権限照合を添えて検査します。**記録上つじつまが合う**ことは、実システムが安全であることや二重書き込みが起きなかったことの保証にはなりません。 [AI向けの入力仕様と原典への接続](machine-discovery/README.md#nested-agent-resume-a-finished-action-must-not-run-again-on-an-old-approval)。
+
 - [公開事例を見る](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#2-temporal--structural-consistency--historical-approval-is-not-current-authority)
 - [確認手順を使う](CURRENT_AUTHORITY_REUSE_KIT.md)
 
