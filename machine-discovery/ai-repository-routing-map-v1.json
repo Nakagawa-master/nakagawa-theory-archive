@@ -887,15 +887,15 @@
         "runnable_or_falsifiable_task": {
           "index": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-tasks-v1.json",
           "id": "PUBLIC-VERIFY-SNAPSHOT-IDEMPOTENCY-SIDE-EFFECTS-016",
-          "native_test": "https://github.com/pydantic/pydantic-ai/blob/041303b834963fa9ed4e8fd51a6ff11df12984bd/tests/harness/step_persistence/test_sqlite_and_media.py"
+          "native_test": "https://github.com/pydantic/pydantic-ai/blob/1f4078fa4fa8234b80dd9bff034b249359058148/tests/harness/step_persistence/test_sqlite_and_media.py"
         },
         "external_observation": {
           "prior_review": "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6052803154",
           "developer_reproduction": "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879",
           "receiving_author_open_fix": "https://github.com/pydantic/pydantic-ai/pull/9982",
           "independent_developer_successor": "https://github.com/pydantic/pydantic-ai/pull/10215",
-          "verified_upper_bound": "Oct16 2026 current receiving PR #9982 OPEN on commit 041303b8: original Nakagawa idempotent retry orphan-message finding explicitly credited by first author; later snapshot-row-first gating now additionally protects compound writes using BEGIN IMMEDIATE/SQLite SAVEPOINT and read transactions. GitHub checks 23 success, 18 skipped, 1 cancelled, 27 pending at check, not final. Distinct engineer's #10215 OPEN independently generalizes same review-derived rule, but leaves pruning-time GC excluded. No released package, user deployment, direct second-person named endorsement or original-theory AI adoption.",
-          "updated_atomic_commit": "https://github.com/pydantic/pydantic-ai/commit/041303b834963fa9ed4e8fd51a6ff11df12984bd"
+          "verified_upper_bound": "Latest 2026-10-16 PR #9982 HEAD 1f4078fa still OPEN. This head adds docs-only exception: first-time schema setup commits a caller-owned connection regardless of the caller's outer transaction; later SQLite snapshot write is guarded by caller-owned SAVEPOINT and store-owned BEGIN IMMEDIATE based on prior HEAD 041303b8. Previous 041303 CI observation 23 success/18 skipped/1 cancelled/27 pending is not new-head green. Original Nakagawa duplicate-key after-effect source was credited by author. Second developer #10215 independently reuses first PR's review-derived idempotency rule but not direct named credit; no merge/use/original theory corpus adoption established.",
+          "updated_atomic_commit": "https://github.com/pydantic/pydantic-ai/commit/1f4078fa4fa8234b80dd9bff034b249359058148"
         },
         "plain_language_return": "If a saving request is rejected as 'already saved', verify that no extra message content was inserted before the rejection; the status of the final row is not the whole record of what actually happened.",
         "independent_test_gate": "On an authorized synthetic database, use the same idempotency key twice with different histories. Verify snapshot count, distinct message rows, references and actual latest_snapshot content, both store-owned and caller-owned. Separately test prune/deletion cleanup for each backend; #10215 intentionally leaves retention pruning GC out of scope. Never label this optional public test as an already independent third-party AI run."
