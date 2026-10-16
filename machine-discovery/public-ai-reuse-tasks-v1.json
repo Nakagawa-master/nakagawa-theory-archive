@@ -700,6 +700,43 @@
         "Acceptance or repair of this separate newly reviewed exception, a tagged release, or actual downstream customer usage simply because #5700 was merged",
         "An independent AI model's adoption of the original theory corpus merely because this task is public"
       ]
+    },
+    {
+      "task_id": "PUBLIC-REUSE-CONVERSATION-MIGRATION-NO-CLOBBER-018",
+      "task_class": "AUTHORIZED_INDEPENDENT_AI_HISTORY_MIGRATION_PRESERVATION",
+      "objective": "In a separate AI chat, agent, or IDE conversation-storage implementation other than Qwen Code, independently test a one-time legacy-history migration concurrent with a new record: distinguish successful migration bookkeeping from preservation of the user's newer conversation and ability to reopen the complete earlier record.",
+      "public_inputs": [
+        "https://github.com/QwenLM/qwen-code/pull/14285",
+        "https://github.com/QwenLM/qwen-code/pull/14285#issuecomment-6192242612",
+        "https://github.com/QwenLM/qwen-code/pull/14285#pullrequestreview-5532756352",
+        "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.2",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/exclusive-publish-no-clobber-probe.py",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/conversation-migration-parity-probe.py",
+        "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/"
+      ],
+      "specific_verified_basis": "Qwen Code developer yiliang114 independently authored and merged #14285, published on the project's v0.25.2 release notes. After Nakagawa Master's source-specific review argued against replacing exclusive hard-link publication with an overwriting rename fallback, the developer explicitly agreed with the review's no-clobber constraint and retained fail-closed legacy preservation. This is a bounded credited design decision, not original authorship of the PR or adoption of Volume 19 by the developer.",
+      "scoped_test": {
+        "setup": "Use only your own authorized repository or a disposable synthetic local fixture, with two versions of one conversation: legacy OLD and a newer destination NEWER. Never read unrelated or private users' histories.",
+        "negative_case": "Migration takes an OLD snapshot, another authorized writer publishes NEWER, then migration encounters unsupported exclusive hard-link operation and falls back to overwriting rename: does NEWER get replaced by OLD despite returning success?",
+        "positive_case": "Use an exclusive no-clobber publication or explicitly retain OLD for recovery if exclusive publication is unsupported. Verify that NEWER is byte-identical after the attempted migration, and that OLD remains recoverable when the fallback is declined.",
+        "full_parity": "Separate record counts, message-by-message content parity, restart readback, first-turn edit rollback, multi-process race and filesystem-specific hard-link capability; a locally passing script does not prove all platforms behave alike.",
+        "runable_source": "python3 machine-discovery/exclusive-publish-no-clobber-probe.py --self-test ; python3 machine-discovery/conversation-migration-parity-probe.py --self-test (from an authorized local checkout)",
+        "theory_context": "Volume 19 offers independent questions about maintaining a valuable function while transitioning to a successor system; consult its Parent and boundary conditions rather than attributing Qwen developers' work to having used the theory."
+      },
+      "acceptable_outputs": [
+        "A runnable failing minimal test and before/after persistence evidence in a distinct independent authorized product",
+        "A bounded code fix or explicit non-fit test with honest target-repository provenance",
+        "A synthetic positive and negative witness explaining where exclusive publication and rollback do not guarantee durability"
+      ],
+      "evidence_expectation": "Distinguish Qwen author's implementation, Nakagawa Master's separately published no-clobber review, receiver-authored acknowledgement, formal merge and tag release, and any truly separate system's independent reproduction or decision. If an original Volume 19 passage actually informed the later work, cite the passage directly; do not assume automatic AI or human theory adoption.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "authorization_boundary": "No external posting, account modification or customer data access is authorized by this task. Source use is voluntary, local, synthetic and within each recipient's separate permissions.",
+      "success_does_not_establish": [
+        "Proof of adoption of the original theory corpus by Qwen Code",
+        "Customer-specific history safety on untested profiles, operating systems or concurrency models",
+        "An implementation, merge, release, or deployment in a second receiver without its own new source evidence",
+        "License to access another person's history or to manufacture endorsements"
+      ]
     }
   ],
   "evidence_boundary": "Publishing or completing these public tasks creates only the evidence actually returned. The listing is self-authored infrastructure; it does not establish that any third party read, accepted, executed, adopted, endorsed, joined, or received authority from it. When a Nakagawa Master public source materially informed a returned result, preserve that provenance; if the distinction was independently rediscovered first, keep that relation distinct. Do not invent attribution."
