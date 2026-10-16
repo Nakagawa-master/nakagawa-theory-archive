@@ -47,7 +47,11 @@ def classify(trace: object) -> dict:
     if not mark:
         return {"verdict": "NOT_APPLICABLE", "reason": "mailbox was not acknowledged read"}
     if durable and (not discarded or at("record_durable") < at("queue_discard")):
-        return {"verdict": "SAFE_AT_CHECKPOINT", "reason": "receipt committed before volatile queue discard", "delivered": delivered}
+        if at("mailbox_mark_read") < at("record_durable"):
+            return {"verdict": "RECOVERED_BUT_EARLIER_CRASH_WINDOW",
+                    "reason": "durable copy exists now, but a crash after mark-read and before receipt could lose it",
+                    "delivered": delivered}
+        return {"verdict": "SAFE_AT_CHECKPOINT", "reason": "receipt committed before mark-read and volatile discard", "delivered": delivered}
     if discarded:
         cause = ("recorder closed before attempted rescue" if closed and
                  at("recorder_close") < at("queue_discard") and
@@ -63,7 +67,7 @@ CASES = [
     ("fire_and_forget_append", ["mailbox_mark_read", "volatile_enqueue", "append_requested", "queue_discard"], "LOSS_WINDOW"),
     ("mark_read_then_overflow", ["mailbox_mark_read", "queue_discard"], "LOSS_WINDOW"),
     ("durable_before_close", ["append_requested", "record_durable", "mailbox_mark_read", "recorder_close", "queue_discard"], "SAFE_AT_CHECKPOINT"),
-    ("durable_after_mark_before_close", ["mailbox_mark_read", "volatile_enqueue", "append_requested", "record_durable", "recorder_close", "queue_discard", "consumer_delivered"], "SAFE_AT_CHECKPOINT"),
+    ("durable_after_mark_before_close", ["mailbox_mark_read", "volatile_enqueue", "append_requested", "record_durable", "recorder_close", "queue_discard", "consumer_delivered"], "RECOVERED_BUT_EARLIER_CRASH_WINDOW"),
     ("close_without_discard", ["mailbox_mark_read", "recorder_close"], "UNRESOLVED_AFTER_CLOSE"),
     ("not_yet_completed", ["mailbox_mark_read", "volatile_enqueue"], "NOT_ESTABLISHED"),
     ("unread_mailbox", ["volatile_enqueue", "queue_discard"], "NOT_APPLICABLE"),
