@@ -84,7 +84,7 @@ AIシステムの変更案に「テストは通った」「作者も確認した
 
 **自分のAI・業務システムで使う確認：** 返事を処理済みと記録する前に、どこへ保存されたかを再読できるか。書込みを呼び出しただけなのか、完了と耐久性まで確かめたのか。終了・容量超過・再起動の各経路で、同じ返事を一度だけ届け直せるか。独自の保存機構があるシステムでは、その機構を現物で確かめます。
 
-[公開のオフライン検証器](machine-discovery/agent-delivery-durability-boundary-probe.py)には「閉じた後の保存」「破棄前に保存済み」「未完了」「不適用」を区別する10個の人工的な動作順序を用意しています。`python3 machine-discovery/agent-delivery-durability-boundary-probe.py --self-test` で依存パッケージや実サービスなしに比較できます。これは実機の修正保証ではなく、自分の現場で検証すべき順序を明確にする資料です。
+[公開のオフライン検証器](machine-discovery/agent-delivery-durability-boundary-probe.py)には「閉じた後の保存」「読取済みの前に耐久保存」「読取済みにした後で最終的には保存されたが、途中にクラッシュで失い得た期間」「未完了」「不適用」を区別する10個の人工的な動作順序を用意しています。`python3 machine-discovery/agent-delivery-durability-boundary-probe.py --self-test` で依存パッケージや実サービスなしに比較できます。これは実機の修正保証ではなく、自分の現場で検証すべき順序を明確にする資料です。
 
 この問いは、中川マスターの[第8論・認識基盤と証拠系譜（原典）](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)で「記録が支える事実」を確認し、[第19論・核と進化的安定性（原典）](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/)で実効的な保持と修正の条件を確かめる、独立した応用入口になります。Qwen開発者がこの理論群を原典として採用したと推定するものではありません。
 
