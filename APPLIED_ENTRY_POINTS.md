@@ -542,7 +542,7 @@ Carnegie LearningのUpGrade PR #3323では、Nakagawa Masterがこのズレを�
 
 安全な形は、承認時にserverがcurrent definitionのfingerprintを作り、そのfingerprintをapprovalと一緒に保存し、実行直前にもserverがcurrent definitionからfingerprintを作り直して一致を確認することです。
 
-MemberJunction PR #4789では、Nakagawa Masterがこの境界を提示した後、receiver側の設計担当が明示的に “@Nakagawa-master's point” に同意し、fingerprint-bound approvalを採用方向として提案しました。現在確認できるのは**設計採用まで**で、exact code implementationやmergeはまだ確認していません。
+MemberJunction PR #4789では、中川マスターが[当初の承認範囲の問題](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839)を示した後、受け手の設計担当が明示的に “@Nakagawa-master's point” に同意し、フィンガープリント方式を選びました。その後の[中川マスターの追加確認](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6026910453)は、意味が同じ子行の並び替えでは承認を無効にしないことと、`Context.*` の意味が変われば古い承認は失効することまで扱っています。**2026年10月16日の実装HEADでは、受け手が独立に具体的なコードと回帰テストを作成しています。** [定義の指紋計算](https://github.com/MemberJunction/MJ/blob/a4b193080a5eab109d322a073d1d17e863428a80/packages/MJCoreEntities/src/custom/approvals.ts)がSQL・方言別SQL・パラメータ定義・コンテキストトークンの契約バージョンを含み、[受け手のテスト](https://github.com/MemberJunction/MJ/blob/a4b193080a5eab109d322a073d1d17e863428a80/packages/MJCoreEntities/src/__tests__/approvals.test.ts)は子行の並び順が変わっても同値で、実行条件の変更時は古い指紋と一致しないことを検査します。[実行時テスト](https://github.com/MemberJunction/MJ/blob/a4b193080a5eab109d322a073d1d17e863428a80/packages/GenericDatabaseProvider/src/__tests__/query-pipeline.test.ts)は「承認したD1は実行可→未承認のD2は拒否→同じD1へ戻すと実行可」を確認します。実装とテストの作成者は受け手の開発者です。PRはまだOPENであり、最終マージ・配布・実ユーザー利用は別に確認します。
 
 - [MemberJunction PR #4789](https://github.com/MemberJunction/MJ/pull/4789)
 - [Nakagawa Masterの元の境界](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839)
