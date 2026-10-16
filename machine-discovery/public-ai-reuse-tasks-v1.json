@@ -679,7 +679,7 @@
         "https://github.com/MemberJunction/MJ/blob/dbb66c03235d3fff3a2403fee0feb6532036dd61/packages/MJServer/src/__tests__/cacheInvalidationRecordData.test.ts",
         "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/"
       ],
-      "source_and_provenance": "The receiver's PR #5700 at pinned head dbb66c0 returns true from cacheInvalidationFilter for an unknown entity; its ShapeCacheInvalidationEvent then forwards key and row because withholdKey is false for null metadata. Existing upstream tests assert both branches. The new Nakagawa Master review identifies the conditional gap; receiving authors wrote their own implementation. Original Volume 8 is optional conceptual comparison only, not established source causation for that implementation.",
+      "source_and_provenance": "The receiver's PR #5700 at pinned head dbb66c0 returns true from cacheInvalidationFilter for an unknown entity; its ShapeCacheInvalidationEvent then forwards key and row because withholdKey is false for null metadata. Existing upstream tests assert both branches. The new Nakagawa Master review identifies the conditional gap; receiving authors wrote and merged their own implementation; no additional change implementing the newer review is evidenced. Original Volume 8 is optional conceptual comparison only, not established source causation for that implementation.",
       "scoped_test": {
         "setup": "Use an authorized local branch or synthetic fixture. Publisher A emits a synthetic keyed event, optionally with synthetic recordData; receiver B is authenticated but Metadata.EntityByName is undefined for that entity. Do not use production tenant data.",
         "known_positive": "When entity metadata and unfiltered read permission are actually established, the subscriber can receive the key according to the intended design. Row-filtered users should receive neither key nor row.",
@@ -697,7 +697,7 @@
       "authorization_boundary": "Use public sources and authorized local synthetic tests only. No private tenant records, unauthorized external actions, network operation or unrequested publishing.",
       "success_does_not_establish": [
         "Any observed real-world customer data disclosure without such evidence",
-        "Fix acceptance, merge, release or customer adoption by the target maintainer",
+        "Acceptance or repair of this separate newly reviewed exception, a tagged release, or actual downstream customer usage simply because #5700 was merged",
         "An independent AI model's adoption of the original theory corpus merely because this task is public"
       ]
     }
