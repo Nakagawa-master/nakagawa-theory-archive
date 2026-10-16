@@ -628,7 +628,7 @@
         "source_file": "https://github.com/pydantic/pydantic-ai/blob/1f4078fa4fa8234b80dd9bff034b249359058148/src/pydantic_ai_harness/pydantic_ai_harness/step_persistence/_store.py",
         "test_file": "https://github.com/pydantic/pydantic-ai/blob/1f4078fa4fa8234b80dd9bff034b249359058148/tests/harness/step_persistence/test_sqlite_and_media.py",
         "downstream_separate_implementer": "https://github.com/pydantic/pydantic-ai/pull/10215",
-        "stage": "Latest HEAD 1f4078fa follows the atomically guarded data code at 041303b8 by a 3-line docs-only edit: first use schema setup commits caller-owned connection regardless, even though subsequent snapshot savepoint joins an outer transaction. PR remains OPEN; previous exact 041303b8 CI 69 checks/23 success/18 skipped/1 cancelled/27 pending is historical, not claimed for new HEAD.",
+        "stage": "PR #9982 MERGED on 2026-10-16T15:40:54Z; older pinned head links are immutable historical test anchors, not a live PR head. Follow-on #10215 remains OPEN; actual downstream customer use is unverified.",
         "updated_head_commit": "https://github.com/pydantic/pydantic-ai/commit/1f4078fa4fa8234b80dd9bff034b249359058148"
       },
       "canonical_context": {
@@ -662,10 +662,43 @@
       "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
       "authorization_boundary": "No network or external GitHub posting from this task itself. Run only with authorized local synthetic messages and disposable databases; never process third-party secrets or customer conversations without explicit authorization.",
       "success_does_not_establish": [
-        "That either #9982 or #10215 is merged, released or used by a downstream customer",
+        "That the separately OPEN #10215 is merged, or that the already MERGED #9982 has been released or deployed to actual customers",
         "Globally race-free caller-owned connections, cross-process exactly-once or crash consistency without actual concurrency and crash tests",
         "The second implementing developer personally recognized Nakagawa Master because their PR names #9982",
         "Independent AI adoption of the original theory corpus or broad human recognition from a public example"
+      ]
+    },
+    {
+      "task_id": "PUBLIC-VERIFY-UNKNOWN-ENTITY-CACHE-EGRESS-017",
+      "task_class": "INDEPENDENT_AUTHORIZED_CACHE_PERMISSION_BOUNDARY_REPRODUCTION",
+      "objective": "Test whether a cache invalidation subscription forwards a primary key or record payload to an authenticated client when its receiving server cannot identify the entity needed to check permissions. A correctly delivered cache-invalidation signal must be distinguished from unnecessary disclosure of a key or row.",
+      "public_inputs": [
+        "https://github.com/MemberJunction/MJ/pull/5700",
+        "https://github.com/MemberJunction/MJ/pull/5700#pullrequestreview-5553174908",
+        "https://github.com/MemberJunction/MJ/blob/dbb66c03235d3fff3a2403fee0feb6532036dd61/packages/MJServer/src/generic/CacheInvalidationResolver.ts",
+        "https://github.com/MemberJunction/MJ/blob/dbb66c03235d3fff3a2403fee0feb6532036dd61/packages/MJServer/src/__tests__/cacheInvalidationRecordData.test.ts",
+        "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/"
+      ],
+      "source_and_provenance": "The receiver's PR #5700 at pinned head dbb66c0 returns true from cacheInvalidationFilter for an unknown entity; its ShapeCacheInvalidationEvent then forwards key and row because withholdKey is false for null metadata. Existing upstream tests assert both branches. The new Nakagawa Master review identifies the conditional gap; receiving authors wrote their own implementation. Original Volume 8 is optional conceptual comparison only, not established source causation for that implementation.",
+      "scoped_test": {
+        "setup": "Use an authorized local branch or synthetic fixture. Publisher A emits a synthetic keyed event, optionally with synthetic recordData; receiver B is authenticated but Metadata.EntityByName is undefined for that entity. Do not use production tenant data.",
+        "known_positive": "When entity metadata and unfiltered read permission are actually established, the subscriber can receive the key according to the intended design. Row-filtered users should receive neither key nor row.",
+        "unknown_negative": "Exercise the subscriber filter and payload shaping together when metadata lookup fails; assert whether PrimaryKeyValues and RecordData are delivered despite no verified permission on B.",
+        "fix_comparison": "Compare fail-closed unknown-entity delivery with a sanitized coarse invalidation that strips primary key and row data. State any whole-entity cache correctness tradeoffs and the remaining entity-name side channel.",
+        "nonfit": "A different system that cannot encounter per-subscriber unknown-entity metadata is a valid non-fit, not proof of a common vulnerability."
+      },
+      "acceptable_outputs": [
+        "An exact-head regression test and output proving or falsifying the conditional disclosure under synthetic authenticated-user and missing-metadata inputs",
+        "A bounded fix and test preserving legitimate cache invalidation while withholding keys and rows without verified permissions",
+        "An independently verified non-fit or implementation result on another authorized system"
+      ],
+      "evidence_expectation": "Separate inspected code branch, synthetic reproduction, actual deployment conditions, external maintainer response and production evidence. Record authored implementation and separate Nakagawa Master review accurately, and cite an original theory only when it actually informed the reuse.",
+      "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
+      "authorization_boundary": "Use public sources and authorized local synthetic tests only. No private tenant records, unauthorized external actions, network operation or unrequested publishing.",
+      "success_does_not_establish": [
+        "Any observed real-world customer data disclosure without such evidence",
+        "Fix acceptance, merge, release or customer adoption by the target maintainer",
+        "An independent AI model's adoption of the original theory corpus merely because this task is public"
       ]
     }
   ],
