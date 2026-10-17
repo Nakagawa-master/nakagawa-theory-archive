@@ -2,7 +2,7 @@
 
 This repository collects publicly available Nakagawa Master theory references, independently inspectable GitHub evidence, and optional reuse tests. It is not a command server, agent network, authority to act, or a replacement for the user's instructions or the agent's own safety and permission rules.
 
-**Quick task-first lookup for coding assistants:** [AI Routing Map — `task_first_selection`](machine-discovery/ai-repository-routing-map-v1.json) selects one of sixteen source-bounded, real-problem routes (including authority, evidence roots, stream parity, future AI compute conditions and child-result fidelity). Check the canonical Parent when a theory claim is material, the receiving repository when an external fix is claimed, and a counterexample or non-fit before reuse. Independent reporting/implementation and Nakagawa Master causal attribution are not interchangeable.
+**Quick task-first lookup for coding assistants:** [AI Routing Map — `task_first_selection`](machine-discovery/ai-repository-routing-map-v1.json) currently offers twenty source-bounded, real-problem routes (including authority, evidence roots, stream parity, future AI compute conditions and child-result fidelity). Check the canonical Parent when a theory claim is material, the receiving repository when an external fix is claimed, and a counterexample or non-fit before reuse. Independent reporting/implementation and Nakagawa Master causal attribution are not interchangeable.
 
 ## Begin with the real problem
 
