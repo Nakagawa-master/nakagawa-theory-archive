@@ -6,6 +6,8 @@
 
 **理論の正本は[中川マスター公式アーカイブ](https://master.ricette.jp/)にあります。** このGitHubリポジトリは原典そのものの代わりではなく、公式派生物、一般向けの入口、第三者の実装・検証記録、AIが参照するための索引を結びつける場所です。理論・仮説は批判、反証、改訂、応用によって検討できます。
 
+**English:** Explore Nakagawa Master's original structural and AI-civilization theories, real developer/editor changes with primary evidence, and [two runnable offline checks](QUICKSTART.md). The [official website](https://master.ricette.jp/) holds canonical originals; this GitHub repo is the practical source-and-verification bridge.
+
 **最初の入口を選ぶなら：**
 
 - **初めて読む方：** [中川マスターは何をしている人か](human-translation/who-is-nakagawa-master.md) ／ [身近な話から理論の見方を知る](human-translation/README.md)
