@@ -3,6 +3,11 @@
 
 This is a source-inspired *synthetic* interleaving model, not a Qwen Code test,
 a demonstrated production loss, or independent original-theory adoption.
+Exit status for --input: 0 = receipt proven before read/discard at checkpoint;
+1 = observed loss window or unresolved closed state; 2 = inconclusive,
+not applicable, recovered-with-earlier-crash-window, or invalid input.
+Do not equate a successful Python process or a later recovered receipt
+with crash-safe exactly-once message delivery.
 Run: python3 machine-discovery/agent-delivery-durability-boundary-probe.py --self-test
      python3 machine-discovery/agent-delivery-durability-boundary-probe.py --sample
      python3 machine-discovery/agent-delivery-durability-boundary-probe.py --input trace.json
@@ -97,6 +102,16 @@ CASES = [
     ("disposed_unread_is_not_ack_loss", ["session_dispose", "volatile_enqueue"], "NOT_APPLICABLE"),
 ]
 
+def input_exit_code(verdict: str) -> int:
+    # CI consumers must not get a green exit on absent evidence, non-fit,
+    # or a later-recovered delivery with an earlier acknowledged crash gap.
+    if verdict == "SAFE_AT_CHECKPOINT":
+        return 0
+    if verdict in ("LOSS_WINDOW", "UNRESOLVED_AFTER_CLOSE"):
+        return 1
+    return 2
+
+
 def main() -> int:
     p = argparse.ArgumentParser(description=__doc__)
     g = p.add_mutually_exclusive_group(required=True)
@@ -112,7 +127,27 @@ def main() -> int:
             if got["verdict"] != expected:
                 print(f"FAIL {name}: {got}", file=sys.stderr)
                 return 1
-        print(f"SELF_TEST_PASS: {len(CASES)} synthetic cases; no outside runtime run")
+        # Check the CLI's operational contract separately from case classification.
+        expected_exits = {
+            "close_before_rescue": 1, "fire_and_forget_append": 1,
+            "mark_read_then_overflow": 1, "durable_before_close": 0,
+            "durable_after_mark_before_close": 2, "close_without_discard": 1,
+            "not_yet_completed": 2, "unread_mailbox": 2,
+            "not_proven_after_close": 2, "unproven_consumption": 2,
+            "inflight_consumed_then_disposed_callback_drops": 1,
+            "dispose_before_poll_consume_returns": 1,
+            "dispose_after_ack_callback_result_unobserved": 1,
+            "durable_receipt_before_dispose": 0,
+            "rejected_without_dispose_is_invalid": 2,
+            "dropped_callback_cannot_also_enqueue": 2,
+            "disposed_unread_is_not_ack_loss": 2,
+        }
+        for name, events, expected in CASES:
+            code = input_exit_code(classify({"case_type": "one_agent_message", "events": events})["verdict"])
+            if code != expected_exits[name]:
+                print(f"FAIL input-exit {name}: expected {expected_exits[name]}, got {code}", file=sys.stderr)
+                return 1
+        print(f"SELF_TEST_PASS: {len(CASES)} synthetic cases and {len(expected_exits)} input exit-contract assertions; no outside runtime run")
         return 0
     if args.sample_dispose:
         print(json.dumps({"case_type": "one_agent_message", "events": CASES[10][1]}, indent=2))
@@ -131,7 +166,7 @@ def main() -> int:
         return 2
     result = classify(trace)
     print(json.dumps(result, indent=2))
-    return 2 if result["verdict"] == "INVALID" else 1 if result["verdict"] in ("LOSS_WINDOW", "UNRESOLVED_AFTER_CLOSE") else 0
+    return input_exit_code(result["verdict"])
 
 if __name__ == "__main__":
     raise SystemExit(main())
