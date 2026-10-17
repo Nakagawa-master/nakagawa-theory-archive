@@ -3085,17 +3085,18 @@
       },
       "receiver_implementation": {
         "url": "https://github.com/pydantic/pydantic-ai/commit/72a9a2b4e263e5a81c7e939809daff6292f61557",
-        "in_open_pr": "https://github.com/pydantic/pydantic-ai/pull/9982",
         "author_reported_test": true,
         "verified_scope": "Committed source and regression-test changes on the external contributor branch; the author explicitly acknowledges the source review.",
-        "latest_head_as_checked": "1f4078fa4fa8234b80dd9bff034b249359058148",
-        "latest_revision_detail": "Latest OPEN HEAD 1f4078fa includes transaction/savepoint and read consistency introduced at 041303b8, followed by documentation-only correction: first-time schema setup commits a caller-owned SQLite connection regardless of pending caller transaction. Snapshot savepoints do not protect that first-use schema operation. No current HEAD successful CI/merge/release verified.",
+        "latest_head_as_checked": "0e01a864b925b1a6b8d760adf858e3d4e49497ab",
+        "latest_revision_detail": "#9982 MERGED on 2026-10-16T15:40:54Z into receiving main, merge commit 7d26ad70. Previously pinned 1f4078fa documentation warned about first-time caller-owned connection schema setup; that pinned revision and its incomplete historical CI cannot be substituted for latest merged head. Current merged PR body names @Nakagawa-master for the bounded original idempotent-retry fault. Independently verify package release and user use separately.",
         "current_ci": "69 latest observed checks on prior 041303b8 source (23 success/18 skip/1 cancelled/27 pending) are historical after new docs commit 1f4078fa; do not call newest checks green.",
         "pr_body_origin_return": "PR body at current head expressly names @Nakagawa-master in connection with the original idempotent retry fix, a receiver-authored attribution independent of this archive.",
-        "updated_head_commit": "https://github.com/pydantic/pydantic-ai/commit/1f4078fa4fa8234b80dd9bff034b249359058148"
+        "updated_head_commit": "https://github.com/pydantic/pydantic-ai/commit/1f4078fa4fa8234b80dd9bff034b249359058148",
+        "merged_pr": "https://github.com/pydantic/pydantic-ai/pull/9982",
+        "merge_commit": "https://github.com/pydantic/pydantic-ai/commit/7d26ad70b2eb5dcff4854ff09e1c15e50a98741b"
       },
-      "current_stage": "open_receiver_owned_code_and_tests_with_explicit_origin_and_separate_engineer_reuse",
-      "causal_boundary": "The original PR author independently reproduced and credited Nakagawa Master's source-specific idempotency side-effect review, then implemented and revised the actual SQLite fix; #9982 remains OPEN and not shipped. A DIFFERENT engineer's #10215 OPEN multi-backend generalized PR explicitly builds on the #9982 review-derived idempotency improvement, but does not itself directly name Nakagawa; no second developer direct-theory adoption or released use should be inferred.",
+      "current_stage": "MERGED_receiver_owned_SQLite_code_and_tests_with_explicit_person_origin__different_engineer_followup_OPEN",
+      "causal_boundary": "Receiving author independently reproduced and credited Nakagawa Master's source-specific idempotency side-effect review; original author and maintainers owned the implemented/tested SQLite fix, MERGED 2026-10-16 into main. A DIFFERENT engineer's #10215 OPEN multi-backend PR builds on that fix without directly naming Nakagawa in the second PR body. Stable package distribution, actual users, individual person-origin recognition beyond the PR record, and independent AI reading of the original theory corpus are not established.",
       "known_remaining_scope": "Original pre-check design's caller-owned concurrent same-key risk was explicitly admitted earlier. Latest insert-snapshot-row-first/code-gated message storage removes that specific early-check race at the statement order, but current code has not been independently stress-tested for actual simultaneous caller-owned transactions, cross-process execution, crashes, or mixed-version writers. #10215 openly excludes retention-triggered message GC, unlike #9982's SQLite cleanup, and is not merged.",
       "nakagawa_structural_os_mapping": {
         "applied_distinction": "A historical idempotency record / suppressed final row is not sufficient proof that an attempted operation caused no earlier side effects.",
@@ -3104,16 +3105,15 @@
         "source_identity_boundary": "The concrete SQLite regression was supplied in a public Nakagawa-master review. Its derivation from any particular original theory is not independently established by this software fix."
       },
       "not_claimed": [
-        "upstream merge",
         "release",
         "production deployment or end-user feature use",
         "broad or recurring human person recognition",
         "endorsement of the entire Nakagawa theory corpus",
-        "two independent source fixes merged or widely adopted: #9982 and #10215 are both still OPEN",
         "current caller-owned / cross-process concurrent exactly-once proven under controlled tests",
-        "direct personal mention of Nakagawa in the separate #10215 PR body (its named source is #9982)"
+        "direct personal mention of Nakagawa in the separate #10215 PR body (its named source is #9982)",
+        "follow-on multi-backend #10215 merge or runtime use; it remains OPEN, distinct from merged SQLite #9982"
       ],
-      "verification_boundary": "For #9982 re-run the targeted owned/caller-owned duplicate-key test against the latest snapshot-insert-first implementation, including a rejected snapshot and different message content, then observe no leaked unreferenced rows. Separately test simultaneous caller-owned access, error rollback and mixed-version read constraints before claiming their safety. For #10215 reproduce bound-retention pruning and document its different GC limits; check maintainer merge/release and actual user use separately. All PRs remain source implementations, not independent LLM original-theory adoption.",
+      "verification_boundary": "For already MERGED #9982, the prior reviewed tests and main merge are receiver-authored evidence. Rerun owned/caller-owned duplicate-key and pruning on the exact merged tree before new runtime/fault assertions. #10215 remains OPEN; verify separate retention pruning, concurrent connection race, maintainer decision, release and independent user use. Neither counts as independent LLM adoption of the source theory corpus.",
       "receiver_cross_engineer_carry": {
         "second_implementer": "mpfaffenberger",
         "source": "https://github.com/pydantic/pydantic-ai/pull/10215",
