@@ -7,7 +7,11 @@ Run: python3 machine-discovery/agent-delivery-durability-boundary-probe.py --sel
      python3 machine-discovery/agent-delivery-durability-boundary-probe.py --sample
      python3 machine-discovery/agent-delivery-durability-boundary-probe.py --input trace.json
 Events: mailbox_mark_read, volatile_enqueue, append_requested, record_durable,
-recorder_close, queue_discard, consumer_delivered. An append request or UI event
+recorder_close, session_dispose, callback_dropped_after_dispose,
+queue_discard, consumer_delivered.
+The dispose race covers an already-in-flight poll: consume can mark an inbox
+entry read after a callback was captured, while Session.dispose makes that
+callback drop the report before it ever enters the volatile queue. An append request or UI event
 is NOT durable delivery; record_durable requires an independently observed
 committed, rereadable receipt. A real system may use another persistence path.
 """
@@ -18,7 +22,8 @@ import sys
 from pathlib import Path
 
 EVENTS = frozenset(("mailbox_mark_read", "volatile_enqueue", "append_requested",
-                    "record_durable", "recorder_close", "queue_discard",
+                    "record_durable", "recorder_close", "session_dispose",
+                    "callback_dropped_after_dispose", "queue_discard",
                     "consumer_delivered"))
 
 def classify(trace: object) -> dict:
@@ -36,6 +41,14 @@ def classify(trace: object) -> dict:
     delivered = "consumer_delivered" in pos
     discarded = "queue_discard" in pos
     closed = "recorder_close" in pos
+    disposed = "session_dispose" in pos
+    dropped = "callback_dropped_after_dispose" in pos
+    if dropped and (not disposed or not mark or
+                    at("callback_dropped_after_dispose") < at("session_dispose") or
+                    at("callback_dropped_after_dispose") < at("mailbox_mark_read")):
+        return {"verdict": "INVALID", "reason": "callback drop requires a disposed session and an already-acknowledged message"}
+    if dropped and "volatile_enqueue" in pos:
+        return {"verdict": "INVALID", "reason": "this one-message callback cannot both be dropped and enqueued"}
     if durable and "append_requested" not in pos:
         return {"verdict": "INVALID", "reason": "durable receipt without append request provenance"}
     if durable and at("record_durable") < at("append_requested"):
@@ -52,14 +65,16 @@ def classify(trace: object) -> dict:
                     "reason": "durable copy exists now, but a crash after mark-read and before receipt could lose it",
                     "delivered": delivered}
         return {"verdict": "SAFE_AT_CHECKPOINT", "reason": "receipt committed before mark-read and volatile discard", "delivered": delivered}
+    if dropped and not durable:
+        return {"verdict": "LOSS_WINDOW", "reason": "already-acknowledged mailbox row was rejected by an in-flight callback after dispose, before queue admission", "proven_delivery": False}
     if discarded:
         cause = ("recorder closed before attempted rescue" if closed and
                  at("recorder_close") < at("queue_discard") and
                  at("recorder_close") < at("record_durable")
                  else "volatile copy discarded before proven durable receipt")
         return {"verdict": "LOSS_WINDOW", "reason": cause, "proven_delivery": delivered}
-    if closed and not durable:
-        return {"verdict": "UNRESOLVED_AFTER_CLOSE", "reason": "marked read, recorder closed, durable receipt absent"}
+    if (closed or disposed) and not durable:
+        return {"verdict": "UNRESOLVED_AFTER_CLOSE", "reason": "marked read, recorder/session closed, durable receipt absent; callback outcome is not established"}
     return {"verdict": "NOT_ESTABLISHED", "reason": "no observed durable handoff or discard yet"}
 
 CASES = [
@@ -73,6 +88,13 @@ CASES = [
     ("unread_mailbox", ["volatile_enqueue", "queue_discard"], "NOT_APPLICABLE"),
     ("not_proven_after_close", ["mailbox_mark_read", "append_requested", "recorder_close", "record_durable"], "INVALID"),
     ("unproven_consumption", ["mailbox_mark_read", "consumer_delivered"], "INVALID"),
+    ("inflight_consumed_then_disposed_callback_drops", ["mailbox_mark_read", "session_dispose", "callback_dropped_after_dispose"], "LOSS_WINDOW"),
+    ("dispose_before_poll_consume_returns", ["session_dispose", "mailbox_mark_read", "callback_dropped_after_dispose"], "LOSS_WINDOW"),
+    ("dispose_after_ack_callback_result_unobserved", ["mailbox_mark_read", "session_dispose"], "UNRESOLVED_AFTER_CLOSE"),
+    ("durable_receipt_before_dispose", ["append_requested", "record_durable", "mailbox_mark_read", "session_dispose"], "SAFE_AT_CHECKPOINT"),
+    ("rejected_without_dispose_is_invalid", ["mailbox_mark_read", "callback_dropped_after_dispose"], "INVALID"),
+    ("dropped_callback_cannot_also_enqueue", ["mailbox_mark_read", "session_dispose", "volatile_enqueue", "callback_dropped_after_dispose"], "INVALID"),
+    ("disposed_unread_is_not_ack_loss", ["session_dispose", "volatile_enqueue"], "NOT_APPLICABLE"),
 ]
 
 def main() -> int:
@@ -80,6 +102,7 @@ def main() -> int:
     g = p.add_mutually_exclusive_group(required=True)
     g.add_argument("--self-test", action="store_true")
     g.add_argument("--sample", action="store_true")
+    g.add_argument("--sample-dispose", action="store_true")
     g.add_argument("--json", action="store_true")
     g.add_argument("--input", type=Path)
     args = p.parse_args()
@@ -90,6 +113,9 @@ def main() -> int:
                 print(f"FAIL {name}: {got}", file=sys.stderr)
                 return 1
         print(f"SELF_TEST_PASS: {len(CASES)} synthetic cases; no outside runtime run")
+        return 0
+    if args.sample_dispose:
+        print(json.dumps({"case_type": "one_agent_message", "events": CASES[10][1]}, indent=2))
         return 0
     if args.sample:
         print(json.dumps({"case_type": "one_agent_message", "events": CASES[0][1]}, indent=2))
