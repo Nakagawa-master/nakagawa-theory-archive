@@ -2,6 +2,8 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
+**公開記録46件。** 中川マスターがGitHubで示した具体的な指摘や区別に、第三者はどう応答し、何を変えたのか。元のコメント、受け手側の変更、統合・公開状況を、事例ごとのリンクで確かめられます。応答段階の例から実装・リリースまで進んだ例まであり、46件すべてが採用・実利用されたという意味ではありません。
+
 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）は、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
 
 このページは、`Nakagawa-master` 名義で公開されたGitHub上のコメントやreviewと、その後に第三者プロジェクトで確認できる変更を、読者が自分で辿れる形にまとめた**公開記録の案内ページ**です。

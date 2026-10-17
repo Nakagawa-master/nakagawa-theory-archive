@@ -33,6 +33,15 @@ PAGES = {
 }
 
 
+# The reader's first-screen count must change whenever the numbered cases change.
+# Keep these bound to the three public introductions, not to an internal changelog.
+FIRST_SCREEN_COUNTS = {
+    "REAL_WORLD_IMPACT.md": r"^\*\*公開記録([0-9]+)件。\*\*",
+    "REAL_WORLD_IMPACT.en.md": r"^\*\*([0-9]+) publicly documented cases\.\*\*",
+    "REAL_WORLD_IMPACT.zh.md": r"^\*\*([0-9]+)项有公开记录的案例。\*\*",
+}
+
+
 def inspect_page(path: Path, footer_titles: tuple[str, ...]) -> int:
     text = path.read_text(encoding="utf-8")
     lines = text.splitlines()
@@ -71,6 +80,18 @@ def main() -> int:
         if len(unique) != 1:
             raise ValueError(f"language counts differ: {counts}")
         count = unique.pop()
+
+        # A case-count increase must also update the immediately visible number
+        # on every language page; the deeper JA overview and README are separate.
+        for filename, first_screen_pattern in FIRST_SCREEN_COUNTS.items():
+            intro = "\n".join(
+                (ROOT / filename).read_text(encoding="utf-8").splitlines()[:8]
+            )
+            matches = list(re.finditer(first_screen_pattern, intro, re.MULTILINE))
+            if len(matches) != 1 or int(matches[0].group(1)) != count:
+                raise ValueError(
+                    f"{filename}: first-screen case count must equal numbered cases ({count})"
+                )
 
         ja = (ROOT / "REAL_WORLD_IMPACT.md").read_text(encoding="utf-8")
         snapshot = re.search(r"[*][*]([0-9]+)の番号付き外部作用事例[*][*]", ja)
