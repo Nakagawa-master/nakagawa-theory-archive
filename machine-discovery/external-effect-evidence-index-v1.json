@@ -586,13 +586,15 @@
         "url": "https://github.com/MemberJunction/MJ/issues/4610#issuecomment-5739586260",
         "contribution": "mapped the row-disclosure seam onto MJ's existing ClassFactory/@RegisterClass pattern and kept the per-subscriber path synchronous/no-I/O rather than routing it through the async PermissionEngine"
       },
-      "current_stage": "merge_or_integration",
+      "current_stage": "third_party_implementation_merged_and_official_stable_releases_in_two_lts_lines__distinct_unknown_entity_regression_unresolved",
       "not_claimed": [
         "row-level disclosure policy implementation",
         "closure or implementation of issue #4610",
-        "release",
         "deployment",
-        "user-scale impact"
+        "user-scale impact",
+        "verified customer installation or use of v6.1.6 / v5.51.4",
+        "all row-level or unknown metadata disclosure conditions resolved",
+        "additional independent people using or recognizing Nakagawa Master as origin"
       ],
       "nakagawa_structural_os_mapping": {
         "applied_distinction": "row contents protected != authority to disclose stable row identity and mutation cadence",
@@ -609,6 +611,41 @@
         "at_utc": "2026-09-23T19:16:06Z",
         "commit": "4e47b75effbcd291d7d84d015568797a01094446",
         "url": "https://github.com/MemberJunction/MJ/commit/4e47b75effbcd291d7d84d015568797a01094446"
+      },
+      "third_party_code_and_stable_release_lineage": {
+        "bounded_origin": "Nakagawa Master's review supplied the remaining row-identity distinction that the receiving original developer explicitly preserved in issue #4610; downstream developer cadam11 owns the separate implementation and LTS hand-ports. A separate non-origin review was also involved; do not assert Nakagawa authored the code or independently caused each later LTS decision.",
+        "next_implementation": {
+          "source": "https://github.com/MemberJunction/MJ/pull/5242",
+          "merged_at_utc": "2026-10-14T14:55:40Z",
+          "effect": "Row-filtered subscription recipients do not receive a stable record key or record body; null key triggers general invalidation. Does not close all issues in #4610."
+        },
+        "lts_6_1": {
+          "pr": "https://github.com/MemberJunction/MJ/pull/5696",
+          "merged_at_utc": "2026-10-16T16:55:36Z",
+          "release_tag": "v6.1.6",
+          "release": "https://github.com/MemberJunction/MJ/releases/tag/v6.1.6",
+          "published_utc": "2026-10-16T19:50:33Z",
+          "release_note": "Explicitly lists PR #5696 as row-filtered record-key withholding"
+        },
+        "lts_5": {
+          "foundation_pr": "https://github.com/MemberJunction/MJ/pull/5699",
+          "foundation_merged_at_utc": "2026-10-16T20:13:24Z",
+          "row_key_pr": "https://github.com/MemberJunction/MJ/pull/5700",
+          "row_key_merged_at_utc": "2026-10-16T20:13:40Z",
+          "release_tag": "v5.51.4",
+          "release": "https://github.com/MemberJunction/MJ/releases/tag/v5.51.4",
+          "published_utc": "2026-10-16T21:58:47Z",
+          "release_note": "Explicitly lists both foundation PR #5699 and record-key PR #5700"
+        },
+        "remaining_bounded_risk": {
+          "source": "https://github.com/MemberJunction/MJ/pull/5700#pullrequestreview-5553174908",
+          "scope": "A later Nakagawa review separately questioned the missing/stale metadata branch on lts/5, which remains in the merged code/test; these two published releases must not be described as having fixed that newly identified unknown-entity case. No independent author repair/response verified for this finding."
+        },
+        "verification_boundaries": [
+          "Official release notes are verified publishing/distribution artifacts, not direct telemetry of customers installing, using or benefiting",
+          "Same downstream engineering fix across branches is one problem family, not extra independent original discoveries or additional humans",
+          "Issue #4610 remains open for deeper row-level/timestamp boundaries"
+        ]
       }
     },
     {
