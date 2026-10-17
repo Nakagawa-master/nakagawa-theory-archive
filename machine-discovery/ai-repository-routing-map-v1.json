@@ -128,7 +128,8 @@
       "id": "present_authority_after_termination",
       "when": [
         "stale approval",
-        "agent retry after cancel"
+        "agent retry after cancel",
+        "approval status is not effect execution receipt"
       ],
       "canonical_source": true,
       "receiver_verified_case": true
@@ -338,9 +339,11 @@
           "stale approval",
           "agent retry after cancel",
           "late child result changes current budget",
-          "resumed operation uses old authority"
+          "resumed operation uses old authority",
+          "approval answer decided once but external effect may execute twice on durable retry",
+          "approval grant current authority versus one-shot execution generation"
         ],
-        "falsifiable_distinction": "An old accepted event/lineage does not prove a terminal or superseded attempt can mutate current execution state.",
+        "falsifiable_distinction": "An old accepted event/lineage does not prove a terminal or superseded attempt can mutate current execution state. A one-time SQLite response-state UPDATE can prevent a second approve/reject decision without proving exactly-once execution of the resulting external side effect. Approval record identity, reservation of an execution generation, outcome-unknown reconciliation and effect receipt are separate checks.",
         "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/",
         "canonical_relation": "Conceptual alignment only; exact Qwen causal attribution is restricted to the cited external technical review.",
         "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/075/README.md",
@@ -354,10 +357,24 @@
           "case_id": "qwen-terminal-host-result-receipt-and-live-budget-authority",
           "original_receiver_source": "https://github.com/QwenLM/qwen-code/pull/13241",
           "post_merge_voluntary_origin": "https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808",
-          "verified_upper_bound": "Receiver implementation merged, bounded harness tests receiver-reported, stable release and later same-receiver person-Origin reference; no independently verified end-user use or audience scale."
+          "verified_upper_bound": "Receiver implementation merged, bounded harness tests receiver-reported, stable release and later same-receiver person-Origin reference; no independently verified end-user use or audience scale.",
+          "independent_applied_comparison": {
+            "verified_native_comment": "https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-6230290112",
+            "published_utc": "2026-10-17T05:40:47Z",
+            "independent_author": "tonydzi",
+            "source": "https://github.com/tonydzi/agent-approval-gate/blob/main/approval_gate.py",
+            "source_condition": "cmd_check SQL UPDATE pending SET status=?, decided=?, decided_by=? WHERE id=? AND status NOT IN ('approved','rejected') and rowcount == 1, public source lines 451-462",
+            "source_test": "https://github.com/tonydzi/agent-approval-gate/blob/main/tests/test_gate.py",
+            "author_reported_tests": "36 pass claimed by author; actual source contains 36 test_ methods; no two-supervisor race test; this assistant has not executed them",
+            "origin_statement": "Independent owner expressly describes this as the one-decision/single-consume half of @Nakagawa-master's verify_and_reserve, in own words. This is an actual new recipient-owned public person-origin restatement.",
+            "causal_limits": "The third-party implementation and repository existed before the October 17 citation and are not established as developed from Nakagawa Master's prior Pydantic comments. No execution-generation model, effect_outcome_unknown reconciliation, complete Temporal retry closure, independent original Parent theory reading, production use measurements or human mass reach proven.",
+            "original_nakagawa_thread_proposal": "https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-6029884686",
+            "receiver_question": "Should an approval's consumed bit live next to its decision record or effect idempotency key? Code-native test: approval single-write is insufficient to prove no double external execution after a lost activity result.",
+            "verified_credit_stage": "independent_developer_native_person_origin_reference_to_own_existing_implementation__not_causal_adoption"
+          }
         },
         "plain_language_return": "A cancelled old AI job must not silently change the budget or answer of work happening now, merely because the old record still exists.",
-        "independent_test_gate": "A real receiver applies and tests the current-vs-historical authority boundary; do not count source links or local documentation as receiver adoption."
+        "independent_test_gate": "A real receiver applies and tests the current-vs-historical authority boundary; do not count source links or local documentation as receiver adoption. Compare one-time approval decisions against one-time effect execution using a synthetic approved operation, an external effect success before a lost receipt, and a retry of the same execution generation; no effect idempotency receipt => outcome UNKNOWN, never silently re-execute."
       },
       {
         "id": "multiple_urls_one_evidence_root",
