@@ -302,6 +302,15 @@
       "receiver_verified_case": true
     },
     {
+      "id": "missing_entity_metadata_cache_invalidation_egress",
+      "when": [
+        "cache invalidation with unknown metadata",
+        "subscriber sees row key without verified read permission"
+      ],
+      "canonical_source": true,
+      "receiver_verified_case": true
+    },
+    {
       "id": "agent_mailbox_ack_vs_durable_delivery_dispose_race",
       "when": [
         "Multi-agent teammate inbox marks message read but does not deliver a durable model-visible copy",
@@ -928,6 +937,49 @@
         "independent_test_gate": "On an authorized synthetic database, use the same idempotency key twice with different histories. Verify snapshot count, distinct message rows, references and actual latest_snapshot content, both store-owned and caller-owned. Separately test prune/deletion cleanup for each backend; #10215 intentionally leaves retention pruning GC out of scope. Never label this optional public test as an already independent third-party AI run."
       },
       {
+        "id": "missing_entity_metadata_cache_invalidation_egress",
+        "matched_problem": [
+          "cache-invalidation subscriber server missing entity metadata",
+          "stale entity schema during staged rollout",
+          "unknown-entity event forwards record key without permission check",
+          "AI or multi-tenant data-access event can be sent without current entity authorization"
+        ],
+        "falsifiable_distinction": "A missing receiver-side entity definition prevents proof of permission; it does not grant permission to forward a record key or row payload. Metadata mismatch does not automatically imply an actual breach: verify the precise receiver, event, and granted rights.",
+        "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+        "canonical_relation": "Independent conceptual original-theory comparison about evidence/permission; not asserted as source of MemberJunction's downstream code. The separate review directly originates from Nakagawa Master's present conditional source analysis.",
+        "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/301/README.md",
+        "machine_theory_selector": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+        "runnable_or_falsifiable_task": {
+          "index": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-tasks-v1.json",
+          "id": "PUBLIC-VERIFY-UNKNOWN-ENTITY-CACHE-EGRESS-017",
+          "stable_tagged_comparison": [
+            "https://github.com/MemberJunction/MJ/blob/v5.51.4/packages/MJServer/src/generic/CacheInvalidationResolver.ts",
+            "https://github.com/MemberJunction/MJ/blob/v6.1.6/packages/MJServer/src/generic/CacheInvalidationResolver.ts"
+          ],
+          "observed_blob_sha_in_both_tags": "900608791c2de044b5d2374ce6596d9729ffc5a7",
+          "controls": [
+            "known permitted entity without row filter => record-key delivery allowed",
+            "known entity with row-filtered read => key and RecordData omitted",
+            "unknown entity on receiving server with valid user => inspect delivery predicate and data shaping together; compare with sanitizing both fields",
+            "missing user => no event; distinguish this control from a metadata mismatch"
+          ]
+        },
+        "external_observation": {
+          "index": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/external-effect-evidence-index-v1.json",
+          "case_id": "memberjunction-cache-invalidation-row-identity-second-hop",
+          "verified_related_implementation_and_distribution": [
+            "https://github.com/MemberJunction/MJ/pull/5242",
+            "https://github.com/MemberJunction/MJ/releases/tag/v6.1.6",
+            "https://github.com/MemberJunction/MJ/releases/tag/v5.51.4"
+          ],
+          "distinct_newer_nakagawa_review": "https://github.com/MemberJunction/MJ/pull/5700#pullrequestreview-5553174908",
+          "verified_upper_bound": "The earlier protection is merged and listed in two stable releases, while the distinct unknown-entity conditional branch is still present in the identically hashed tagged source. A separate new fix/reply, real customer leak/use, and independent AI consumption of the original theory are not verified."
+        },
+        "plain_language_return": "The system does not know which record this is. That is a reason to check what can be sent, not permission to send its identifier.",
+        "independent_test_gate": "An external authorized engineer/AI tests both tagged native branches with synthetic events and independently reports observed pass/fail, non-fit, actual code difference or receiving decision. No self-authored route or source inspection is counted as recipient AI use.",
+        "human_first_contact": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/APPLIED_ENTRY_POINTS.md"
+      },
+      {
         "id": "agent_mailbox_ack_vs_durable_delivery_dispose_race",
         "matched_problem": [
           "mailbox read flag advanced before agent report actually persisted",
@@ -1027,6 +1079,11 @@
         "question": "An AI teammate's mailbox is marked read, but while consumeLeaderInbox awaits storage, Session.dispose begins. The previously captured callback fires afterward and returns before enqueueing anything. Does a read flag prove delivery; what independent test and original source should an AI use?",
         "expected_route": "agent_mailbox_ack_vs_durable_delivery_dispose_race",
         "must_not_claim": "that the Bot review credits Nakagawa, that 17 offline fixtures are a Qwen runtime regression, that a callback result not observed proves loss, that an eventual durable receipt proves no prior crash window, or that a link implies canonical theory adoption"
+      },
+      {
+        "question": "A released AI-enabled business server receives a cache invalidation event for an entity its metadata does not know; can it forward the row's key because the filter lacks entity permissions?",
+        "expected_route": "missing_entity_metadata_cache_invalidation_egress",
+        "must_not_claim": "that previously released row-filtered key protection fixes this unknown metadata condition, that someone leaked customer data, or that an independent AI used the original theory merely by reading the route"
       }
     ]
   },
