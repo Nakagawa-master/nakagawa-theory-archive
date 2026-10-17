@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "title": "One Question → One Original/Check | Nakagawa Master",
+  "origin": "Nakagawa Master / 中川マスター",
+  "type": "PUBLIC_NON_CANONICAL_DISCOVERY_POINTER",
+  "canonical_archive": "https://master.ricette.jp/theory-archive/",
+  "person_origin": "https://master.ricette.jp/#nakagawa-master",
+  "full_details": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/ai-repository-routing-map-v1.json",
+  "use": "Match an actual question; read the canonical original only when non-null, read the full route for its assumptions and inverse/nonfit checks; independently test your own allowed system and attribute any third-party source narrowly.",
+  "limits": "A shortcut is not a theory, endorsement, execution authority, independent AI adoption, or human recognition; a third-party code change is not itself proof that an original was read or adopted.",
+  "routes": [
+    {
+      "id": "present_authority_after_termination",
+      "when": [
+        "stale approval",
+        "agent retry after cancel",
+        "approval status is not effect execution receipt"
+      ],
+      "plain_meaning": "A cancelled old AI job must not silently change the budget or answer of work happening now, merely because the old record still exists.",
+      "canonical_original": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/",
+      "original_relation": "Conceptual alignment only; exact Qwen causal attribution is restricted to the cited external technical review.",
+      "primary_receiver_source": "https://github.com/QwenLM/qwen-code/pull/13241",
+      "optional_probe": null,
+      "full_route_id": "present_authority_after_termination"
+    },
+    {
+      "id": "multiple_urls_one_evidence_root",
+      "when": [
+        "AI news fact checking",
+        "citation provenance"
+      ],
+      "plain_meaning": "Three reports that all repeat one announcement are still one source of independent evidence, not three.",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+      "original_relation": "Adjacent published theory for independent comparison; the bounded AI-News outcome is proven by issue/PR evidence, not a claim that this exact newer canonical text caused it.",
+      "primary_receiver_source": "https://github.com/022740mix-spec/AI-News/issues/124",
+      "optional_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/evidence-root-check.py",
+      "full_route_id": "multiple_urls_one_evidence_root"
+    },
+    {
+      "id": "final_agent_stream_event_matches_execution",
+      "when": [
+        "AI streaming tool calls",
+        "UI displays tool invocation not executed"
+      ],
+      "plain_meaning": "The last action an AI publicly says it will take must agree with the action it actually sends to execution.",
+      "canonical_original": null,
+      "original_relation": null,
+      "primary_receiver_source": "https://github.com/run-llama/llama_index/pull/22740",
+      "optional_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/stream_final_event_contract_probe.py",
+      "full_route_id": "final_agent_stream_event_matches_execution"
+    },
+    {
+      "id": "future_ai_compute_maintenance_capacity",
+      "when": [
+        "AI data center modernization",
+        "compute replacement"
+      ],
+      "plain_meaning": "A plan that delivers computing capacity today can still leave no realistic team, parts, time or alternate supplier to maintain it tomorrow.",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-18-ai-civilization-future-debt/",
+      "original_relation": "Published Nakagawa source, to be independently compared with earlier integrated Future Debt Theory; not proof that real operators adopted the idea.",
+      "primary_receiver_source": null,
+      "optional_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/od311_capacity_worksheet.py",
+      "full_route_id": "future_ai_compute_maintenance_capacity"
+    },
+    {
+      "id": "child_text_split_by_unrelated_event",
+      "when": [
+        "multi-agent relay",
+        "streaming child answer corrupted"
+      ],
+      "plain_meaning": "A child AI's unbroken answer should not acquire a stray newline just because an unrelated system event was recorded between its text chunks.",
+      "canonical_original": null,
+      "original_relation": null,
+      "primary_receiver_source": "https://github.com/QwenLM/qwen-code/issues/13874",
+      "optional_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/child_result_projection_probe.py",
+      "full_route_id": "child_text_split_by_unrelated_event"
+    },
+    {
+      "id": "redis_async_batch_preflight_before_index_mutation",
+      "when": [
+        "LlamaIndex Redis async_add",
+        "Redis overwrite before validation",
+        "mixed valid and invalid embedding dimensions"
+      ],
+      "plain_meaning": "Before a database action can replace an index, check every document that is about to be accepted—not only the first one. The public LlamaIndex fix checks the first vector before initialization; a separate mixed-batch edge has been",
+      "canonical_original": null,
+      "original_relation": null,
+      "primary_receiver_source": "https://github.com/run-llama/llama_index/pull/23458",
+      "optional_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/redis-async-add-preflight-probe.py",
+      "full_route_id": "redis_async_batch_preflight_before_index_mutation"
+    },
+    {
+      "id": "retained_file_snapshot_identity_after_conversation_rewind",
+      "when": [
+        "Qwen Code resume after conversation-only rewind",
+        "retained file snapshot identity collision",
+        "malformed numeric turn ordinal"
+      ],
+      "plain_meaning": "A past AI coding turn can disappear from the conversation while its file backup still exists. If the next turn accidentally reuses the old backup's ID, a normal rollback choice may restore the wrong file. Preserve the old ID, reje",
+      "canonical_original": null,
+      "original_relation": null,
+      "primary_receiver_source": "https://github.com/QwenLM/qwen-code/pull/13729",
+      "optional_probe": null,
+      "full_route_id": "retained_file_snapshot_identity_after_conversation_rewind"
+    },
+    {
+      "id": "anthropic_system_cache_breakpoint_cardinality",
+      "when": [
+        "Anthropic system prompt cache_control",
+        "five system messages with cache_idx 4",
+        "Anthropic cache breakpoints per request"
+      ],
+      "plain_meaning": "When an AI prompt is assembled from five cached instruction messages, placing a cache marker on each fragment can exceed the provider's request limit. The upstream developer changed it to one marker on the last applicable system i",
+      "canonical_original": null,
+      "original_relation": null,
+      "primary_receiver_source": "https://github.com/run-llama/llama_index/pull/23460",
+      "optional_probe": null,
+      "full_route_id": "anthropic_system_cache_breakpoint_cardinality"
+    },
+    {
+      "id": "cuga_fc_tool_result_error_marker_boundary",
+      "when": [
+        "native function-calling tool result confused with executor error",
+        "tool payload contains __cuga_fc_error__ as ordinary data",
+        "CUGA Lite sandbox tool error provenance"
+      ],
+      "plain_meaning": "An AI tool can return ordinary data that happens to contain the word 'error'. That does not mean running the tool failed. After a specific GitHub review, the CUGA implementer changed the adapter to check its own outcome channel in",
+      "canonical_original": null,
+      "original_relation": null,
+      "primary_receiver_source": "https://github.com/cuga-project/cuga-agent/pull/777",
+      "optional_probe": null,
+      "full_route_id": "cuga_fc_tool_result_error_marker_boundary"
+    },
+    {
+      "id": "cerebras_canonical_vs_legacy_completion_cap_collision",
+      "when": [
+        "Cerebras max_tokens and max_completion_tokens both included",
+        "LlamaIndex Cerebras additional_kwargs overrides",
+        "Cerebras OpenAI-compatible output cap alias precedence"
+      ],
+      "plain_meaning": "An AI request can accidentally give two different answers to the question 'how long may the output be?' because an older option and its replacement are both present. A standalone, offline checker spots the clash in already-built J",
+      "canonical_original": null,
+      "original_relation": null,
+      "primary_receiver_source": "https://github.com/run-llama/llama_index/pull/22769",
+      "optional_probe": null,
+      "full_route_id": "cerebras_canonical_vs_legacy_completion_cap_collision"
+    },
+    {
+      "id": "llamaindex_legacy_image_deserialization_without_silent_loss",
+      "when": [
+        "LlamaIndex ChatMessage legacy images silently disappear on JSON restore",
+        "ImageDocument serialized dictionaries and ImageBlock migration",
+        "chat history image round-trip duplicate or byte-less husk"
+      ],
+      "plain_meaning": "A coding assistant can say 'the message was restored' while silently forgetting where an attached image was stored. In this LlamaIndex source review, the developer changed the loader so recoverable image references survive and alr",
+      "canonical_original": null,
+      "original_relation": null,
+      "primary_receiver_source": "https://github.com/run-llama/llama_index/pull/23463",
+      "optional_probe": null,
+      "full_route_id": "llamaindex_legacy_image_deserialization_without_silent_loss"
+    },
+    {
+      "id": "reviewable_adverse_ai_decision_dual_transition",
+      "when": [
+        "AI denies a grant/benefit in a hypothetical pilot; no clear appeal path",
+        "AI-assisted adverse decision review or dispute escalation",
+        "retain legacy remedy during non-enforcing transition"
+      ],
+      "plain_meaning": "If an AI flags your application as incomplete, you should be able to find out why, correct an error and reach a responsible person without losing existing avenues of redress; the mock worksheet cannot prove those protections exist",
+      "canonical_original": "https://master.ricette.jp/society/nakagawa-master-structural-judicial-os-principles-alignment-over-judgment/",
+      "original_relation": "Suggested bounded design application of Nakagawa Master's two existing canonical models: process/causal misalignment audit AND dual-running/rollback/independent monitoring; not evidence that",
+      "primary_receiver_source": null,
+      "optional_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/decision-review-transition-probe.py",
+      "full_route_id": "reviewable_adverse_ai_decision_dual_transition"
+    },
+    {
+      "id": "cloud_local_dual_route_effective_independence",
+      "when": [
+        "A cloud-hosted and local/self-hosted AI agent are advertised as separate paths but share an undisclosed control-plane gate",
+        "Qwen Code dual-path Managed Agent Hosted versus local M6 acceptance question",
+        "does no cross-engine fallback prove independent operability"
+      ],
+      "plain_meaning": "Two buttons labeled 'cloud' and 'local' do not necessarily mean two independent choices. If the cloud's login or control plane is unavailable, can the local path still start and recover its own AI task? Qwen's design owner accepte",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/",
+      "original_relation": "A concrete application of Nakagawa Master's canonical non-ownership/effective-power/non-domination framework to operational alternatives. Qwen proposal owner adopted the specific reviewer-st",
+      "primary_receiver_source": "https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035698005",
+      "optional_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md",
+      "full_route_id": "cloud_local_dual_route_effective_independence"
+    },
+    {
+      "id": "reversible_config_change_cannot_mint_agent_authority",
+      "when": [
+        "an AI agent can change its own approval mode from ask to auto",
+        "does reversing a configuration change make granting tool authority safe",
+        "independent author adopted an agent self-authorization invariant in their published manuscript"
+      ],
+      "plain_meaning": "Even if an AI can undo a change from 'ask a human' to 'run automatically', it may already have done new things before undoing it. Nakagawa Master made that distinction concrete in another author's agent-design manuscript; the auth",
+      "canonical_original": null,
+      "original_relation": null,
+      "primary_receiver_source": "https://github.com/kishibashi3/publications/pull/52#pullrequestreview-5258131687",
+      "optional_probe": null,
+      "full_route_id": "reversible_config_change_cannot_mint_agent_authority"
+    },
+    {
+      "id": "agent_team_approval_listener_and_per_request_identity",
+      "when": [
+        "Qwen ACP agent team tool permission prompted twice when same manager is notified twice",
+        "AI teammate approvals distinguished only by agent name and millisecond timestamp",
+        "fake event emitter uses Set and masks duplicate listener registrations"
+      ],
+      "plain_meaning": "When an AI teammate leaves, its old permission request can still occupy the next teammate's approval slot. Nakagawa Master identified a viable child-to-bridge notification route after the independent reviewer reproduced the stuck ",
+      "canonical_original": null,
+      "original_relation": null,
+      "primary_receiver_source": "https://github.com/QwenLM/qwen-code/pull/13902",
+      "optional_probe": null,
+      "full_route_id": "agent_team_approval_listener_and_per_request_identity"
+    },
+    {
+      "id": "contract_stays_effective_when_human_revision_owner_departs",
+      "when": [
+        "a multi-team Contract owner leaves the team but the existing signed Contract remains in force",
+        "an AI/governance assistant must distinguish who may approve Contract revisions from whether parties still must honor the current version",
+        "a successor Contract owner is selected and pending revisions must not become approved merely from succession"
+      ],
+      "plain_meaning": "When the person appointed to approve contract changes leaves the group, the existing agreement does not disappear. The groups can still follow their previously approved agreement; the former approver cannot approve new amendments.",
+      "canonical_original": null,
+      "original_relation": null,
+      "primary_receiver_source": "https://github.com/kishibashi3/publications/issues/92#issuecomment-6058017201",
+      "optional_probe": null,
+      "full_route_id": "contract_stays_effective_when_human_revision_owner_departs"
+    },
+    {
+      "id": "graphQL_schema_rejection_vs_error_word_cache_fallback",
+      "when": [
+        "An old/new mixed GraphQL service uses definitionHash cache-compatibility fallback",
+        "A current server error mentions definitionHash but is not an unknown schema field",
+        "A query edit may be incorrectly considered cache current"
+      ],
+      "plain_meaning": "A computer saying 'this field caused an error' is not proof it is too old to understand that field. A wrong explanation can make an old search result look trustworthy after its query changed.",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+      "original_relation": "An optional original-theory comparison of evidence provenance and claim-to-evidence relevance. Not evidence the upstream receiving developer derived the classifier from this original text.",
+      "primary_receiver_source": "https://github.com/MemberJunction/MJ/pull/5703#pullrequestreview-5527674879",
+      "optional_probe": null,
+      "full_route_id": "graphQL_schema_rejection_vs_error_word_cache_fallback"
+    },
+    {
+      "id": "ai_agent_snapshot_retry_idempotency_side_effects",
+      "when": [
+        "AI-agent histories stored in SQLite snapshots grow even though a repeated save was ignored",
+        "Snapshot reuse of the same run/idempotency key leaves unreferenced messages or message-ref rows",
+        "Migrating deduplicated persistence across File/SQLite/Postgres/Mongo risks losing cleanup guarantees"
+      ],
+      "plain_meaning": "If a saving request is rejected as 'already saved', verify that no extra message content was inserted before the rejection; the status of the final row is not the whole record of what actually happened.",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+      "original_relation": "Optional original evidence/provenance comparison. Do not claim that aweis89 or mpfaffenberger derived software fixes from the Nakagawa Master original theory.",
+      "primary_receiver_source": "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6052803154",
+      "optional_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/sqlite-idempotency-side-effect-probe.py",
+      "full_route_id": "ai_agent_snapshot_retry_idempotency_side_effects"
+    },
+    {
+      "id": "missing_entity_metadata_cache_invalidation_egress",
+      "when": [
+        "cache invalidation with unknown metadata",
+        "subscriber sees row key without verified read permission"
+      ],
+      "plain_meaning": "The system does not know which record this is. That is a reason to check what can be sent, not permission to send its identifier.",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+      "original_relation": "Independent conceptual original-theory comparison about evidence/permission; not asserted as source of MemberJunction's downstream code. The separate review directly originates from Nakagawa",
+      "primary_receiver_source": "https://github.com/MemberJunction/MJ/pull/5700#pullrequestreview-5553174908",
+      "optional_probe": null,
+      "full_route_id": "missing_entity_metadata_cache_invalidation_egress"
+    },
+    {
+      "id": "agent_mailbox_ack_vs_durable_delivery_dispose_race",
+      "when": [
+        "Multi-agent teammate inbox marks message read but does not deliver a durable model-visible copy",
+        "Agent Session.dispose can race an in-flight poll after consumeLeaderInbox but before callback enqueue",
+        "A transcript append was requested but the recorder closed or discarded notification before committed rereadable storage"
+      ],
+      "plain_meaning": "A teammate's AI message may be marked read while the recipient can no longer recover or see it; confirm the saved copy exists before treating acknowledgment as delivery.",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+      "original_relation": "Compare evidence/receipt provenance and maintenance durability with these original works; this does not show that Qwen's implementation or review bot derived from, used, or adopted either Na",
+      "primary_receiver_source": "https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5540696114",
+      "optional_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/agent-delivery-durability-boundary-probe.py",
+      "full_route_id": "agent_mailbox_ack_vs_durable_delivery_dispose_race"
+    }
+  ]
+}
