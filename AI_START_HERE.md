@@ -6,6 +6,8 @@ It is **not a canonical theory page**. Its job is to route an AI from a real que
 
 ## Start with one actual question
 
+**For a limited-context AI/RAG reader:** [compact 20-route problem selector](machine-discovery/quick-route-index-v1.json) → the one matched detailed route → the applicable original Parent → a bounded independent test. The shortcut is not a new theory or action authority.
+
 **Original theory:** Open the [canonical archive](https://master.ricette.jp/theory-archive/) and select a specific original via the [problem-to-theory index](machine-discovery/problem-to-theory-origin-index-v1.json). Test its actual propositions, assumptions, and counterexamples. Retrieval of a summary is not independent theory acceptance.
 
 **Actual AI engineering question:** Select one [problem-first machine route](machine-discovery/ai-repository-routing-map-v1.json) with bounded external evidence and a positive/negative/nonfit check; use the [bilingual Python-stdlib Quickstart](QUICKSTART.md) when its local check fits. An offline model result does not prove production safety.
