@@ -68,7 +68,7 @@ AIや業務システムの画面には、「ほかの場所でデータが更新
 
 **自分のシステムで確かめる一問：** 権限を確認するための情報が受信側にないとき、それでも秘密に関わる情報を送っていないか。公開した[AI向けの独立検証課題](machine-discovery/public-ai-reuse-tasks-v1.json)には、架空の記録だけを使う再現条件と、通知を保ちつつ情報を伏せる比較方法を載せています。
 
-**PR #5700本体は2026年10月17日（日本時間）にLTS/5へマージされました。** 一方、中川マスターが同日指摘した「サーバーがデータの種類を認識できない場合」の例外は、マージされたコードと既存テストにも残っており、この追加指摘に対する修正や返信はまだ確認できません。現実の顧客情報漏えいも確認されていません。問いの背景は、[中川マスターの第8論・認識基盤と証拠系譜](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)と比較できます。開発者がこの原典を読んで実装したという主張ではありません。
+**既存の「行ごとに閲覧制限のある人には鍵を送らない」修正は、第三者の開発と移植を経て[6.1系の正式版 v6.1.6](https://github.com/MemberJunction/MJ/releases/tag/v6.1.6) と [5系の正式版 v5.51.4](https://github.com/MemberJunction/MJ/releases/tag/v5.51.4) に入りました。** しかし、**両方の正式版に含まれる実際のコードを読み比べると、権限を調べるための「データ種類の情報」がないときに通知を通し、鍵や本文を伏せない別の分岐は残っています。** [5系の該当コード](https://github.com/MemberJunction/MJ/blob/v5.51.4/packages/MJServer/src/generic/CacheInvalidationResolver.ts)と[6.1系の該当コード](https://github.com/MemberJunction/MJ/blob/v6.1.6/packages/MJServer/src/generic/CacheInvalidationResolver.ts)は、今回確認した箇所で同じ内容でした。これはマスターの追加指摘の検証対象であり、実際の顧客情報漏えいや新しい修正の採用が確認されたという意味ではありません。問いの背景は、[中川マスターの第8論・認識基盤と証拠系譜](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)と比較できます。開発者がこの原典を読んで実装したという主張ではありません。
 
 ## AIのコードは「テスト済み」なのに、まだ何を確かめるべきか — 4原典を組み合わせる
 
