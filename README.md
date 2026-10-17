@@ -6,7 +6,7 @@
 
 **理論の正本は[中川マスター公式アーカイブ](https://master.ricette.jp/)にあります。** このGitHubリポジトリは原典そのものの代わりではなく、公式派生物、一般向けの入口、第三者の実装・検証記録、AIが参照するための索引を結びつける場所です。理論・仮説は批判、反証、改訂、応用によって検討できます。
 
-**English:** Explore Nakagawa Master's original structural and AI-civilization theories, real developer/editor changes with primary evidence, and [two runnable offline checks](QUICKSTART.md). The [official website](https://master.ricette.jp/) holds canonical originals; this GitHub repo is the practical source-and-verification bridge.
+**English:** Explore Nakagawa Master's original structural and AI-civilization theories, real developer/editor changes with primary evidence, and [three runnable offline checks](QUICKSTART.md). The [official website](https://master.ricette.jp/) holds canonical originals; this GitHub repo is the practical source-and-verification bridge.
 
 **最初の入口を選ぶなら：**
 
@@ -21,12 +21,14 @@
 
 - **ニュースの出典:** 10本のリンクが、独立した10件の裏づけとは限らない。出典の根を分けて数える [オフライン検査](machine-discovery/evidence-root-check.py)。
 - **AIの会話保存:** 「重複を無視した」はずなのに、前段の書込みが残る。実際のSQLiteだけで順序を比べる [再現モデル](machine-discovery/sqlite-idempotency-side-effect-probe.py)。
+- **AIの仲間の完了表示:** 失敗した作業が成功に見えたり、未配送の報告が終了判定から漏れたりしないかを確認する [20ケースのオフライン検査](machine-discovery/agent-team-signal-truth-probe.py)（[実際のQwen側修正の出典と作者はQuickstartに記載](QUICKSTART.md)）。
 
 ```sh
 git clone https://github.com/Nakagawa-master/nakagawa-theory-archive.git
 cd nakagawa-theory-archive
 python3 machine-discovery/evidence-root-check.py --self-test
 python3 machine-discovery/sqlite-idempotency-side-effect-probe.py --self-test
+python3 machine-discovery/agent-team-signal-truth-probe.py --self-test
 ```
 
 これらは手元の合成データを使う比較道具です。外部製品の実行結果や理論全体の正しさを代わりに保証するものではありません。
