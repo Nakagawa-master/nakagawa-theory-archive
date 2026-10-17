@@ -300,6 +300,16 @@
       ],
       "canonical_source": true,
       "receiver_verified_case": true
+    },
+    {
+      "id": "agent_mailbox_ack_vs_durable_delivery_dispose_race",
+      "when": [
+        "Multi-agent teammate inbox marks message read but does not deliver a durable model-visible copy",
+        "Agent Session.dispose can race an in-flight poll after consumeLeaderInbox but before callback enqueue",
+        "A transcript append was requested but the recorder closed or discarded notification before committed rereadable storage"
+      ],
+      "canonical_source": true,
+      "receiver_verified_case": false
     }
   ],
   "task_first_selection": {
@@ -903,6 +913,34 @@
         },
         "plain_language_return": "If a saving request is rejected as 'already saved', verify that no extra message content was inserted before the rejection; the status of the final row is not the whole record of what actually happened.",
         "independent_test_gate": "On an authorized synthetic database, use the same idempotency key twice with different histories. Verify snapshot count, distinct message rows, references and actual latest_snapshot content, both store-owned and caller-owned. Separately test prune/deletion cleanup for each backend; #10215 intentionally leaves retention pruning GC out of scope. Never label this optional public test as an already independent third-party AI run."
+      },
+      {
+        "id": "agent_mailbox_ack_vs_durable_delivery_dispose_race",
+        "matched_problem": [
+          "mailbox read flag advanced before agent report actually persisted",
+          "callback captured before asynchronous mailbox consume, then Session.dispose rejects it",
+          "volatile teammate notification queued only after a recorder closes or is discarded"
+        ],
+        "falsifiable_distinction": "Mark-read, queue admission, append-requested, independently durable readback, and actual consumer delivery are different events. An already-captured callback may drop a read-acknowledged message after dispose even before queue admission; an eventual record receipt does not remove an earlier crash window.",
+        "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+        "second_canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/",
+        "canonical_relation": "Compare evidence/receipt provenance and maintenance durability with these original works; this does not show that Qwen's implementation or review bot derived from, used, or adopted either Nakagawa Master original.",
+        "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/301/README.md",
+        "machine_theory_selector": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+        "runnable_or_falsifiable_task": {
+          "offline_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/agent-delivery-durability-boundary-probe.py",
+          "example_command": "python3 machine-discovery/agent-delivery-durability-boundary-probe.py --sample-dispose",
+          "test_command": "python3 machine-discovery/agent-delivery-durability-boundary-probe.py --self-test",
+          "test_status": "17 source-defined synthetic expected cases; after this extension the exact GitHub Python was not directly executed by the authoring assistant; a JS-equivalent control independently agreed with all 17 expected outcomes."
+        },
+        "external_observation": {
+          "earlier_nakagawa_source_review": "https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5540696114",
+          "distinct_automated_review": "https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5550289739",
+          "target_pr": "https://github.com/QwenLM/qwen-code/pull/13902",
+          "verified_upper_bound": "The Qwen automated review flags this independent Critical at an older anchor and the receiving author described source-level current-head persistence; PR remains open. The new offline model is archive-authored, not a verified Qwen execution, upstream acceptance, human praise, or external AI reuse."
+        },
+        "plain_language_return": "A teammate's AI message may be marked read while the recipient can no longer recover or see it; confirm the saved copy exists before treating acknowledgment as delivery.",
+        "independent_test_gate": "Using an independently authorized isolated runner, reproduce both orderings of poll consumption and Session disposal; assert durable readback or retry visibility, never count the ack as delivery. Independently check rejected callbacks and recorder close/queue discard, and submit the actual runtime trace and bounded observation without private inbox contents or presumed adoption."
       }
     ],
     "output_contract": {
@@ -971,6 +1009,11 @@
         "question": "An agreement among three teams remains valid, but its only amendment approver leaves every signatory team. May the old approver still change it; must a previously approved version stop being adopted; does naming a successor ratify a pending new version?",
         "expected_route": "contract_stays_effective_when_human_revision_owner_departs",
         "must_not_claim": "that all Contract actions or all Cell-level permissions are frozen, that already approved versions lose validity, that successor selection approves prior pending amendments, that a working-branch merge is a public main/release, or that different PRs by the same author are independent people"
+      },
+      {
+        "question": "An AI teammate's mailbox is marked read, but while consumeLeaderInbox awaits storage, Session.dispose begins. The previously captured callback fires afterward and returns before enqueueing anything. Does a read flag prove delivery; what independent test and original source should an AI use?",
+        "expected_route": "agent_mailbox_ack_vs_durable_delivery_dispose_race",
+        "must_not_claim": "that the Bot review credits Nakagawa, that 17 offline fixtures are a Qwen runtime regression, that a callback result not observed proves loss, that an eventual durable receipt proves no prior crash window, or that a link implies canonical theory adoption"
       }
     ]
   },
