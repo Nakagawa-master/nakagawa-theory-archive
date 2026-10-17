@@ -30,6 +30,19 @@ python3 machine-discovery/sqlite-idempotency-side-effect-probe.py --json
 
 実際の上流製品を改変・検証するものではありません。現実の問題と開発者による修正は、[Pydantic AI #9982](https://github.com/pydantic/pydantic-ai/pull/9982) の議論・テスト・マージ記録から確認できます。
 
+## 3. AIが「完了」と言った。それは成功？ 返事が届く？
+
+仲間AIの `write_file` が `EACCES` で失敗したのに、画面には単に「finished」と出てしまうことがあります。「まだ仲間AIの報告が残っている」のに「安全に終了できる」と表示される場合もあります。
+
+```sh
+python3 machine-discovery/agent-team-signal-truth-probe.py --self-test
+python3 machine-discovery/agent-team-signal-truth-probe.py --sample
+```
+
+[20ケースの独立した人工モデル](machine-discovery/agent-team-signal-truth-probe.py)は、表示上の失敗／成功、未配送メッセージと終了判定、履歴再生時のAIの身元を**別々に**検査します。入力JSONも検査でき、結果は `0=整合／1=不整合・喪失リスク／2=不備・判断不能` の終了コードで返します。ローカルの20ケースは実行済みですが、実際のQwenのコードをここでテストしたわけではありません。
+
+実際の外部変化：[QwenのレビューBotによる問題の指摘](https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5556479545) → [Qwen開発者本人が3点の修正とテストを追加](https://github.com/QwenLM/qwen-code/commit/e9609863d4ef83c6c372fa8914fdfb00697327df)。この3件は**マスター本人の発見として主張しません**。同じPRの別の権限管理問題では、[開発者が中川マスターの具体的な提案を正しいと認め、修正に使った記録](https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4277173979)があります。PR全体はまだ未マージです。
+
 ## 役に立ったら、GitHubで残す
 
 - **Star:** [リポジトリのトップ](https://github.com/Nakagawa-master/nakagawa-theory-archive)右上の **Star** は、後で見返すための保存・推薦になります。
@@ -41,12 +54,14 @@ python3 machine-discovery/sqlite-idempotency-side-effect-probe.py --json
 
 ---
 
-## English — run two checks before deciding whether to star
+## English — run three checks before deciding whether to star
 
 This repository connects Nakagawa Master's original theory corpus, independently inspectable real-world developer/editor changes, and small offline verification tools. **You do not have to endorse a theory to try a test.**
 
 1. **Ten URLs ≠ ten independent sources.** Run `python3 machine-discovery/evidence-root-check.py --self-test`. This verifies declared evidence-root consistency; it cannot prove your source labels or the real-world truth.
 2. **An ignored duplicate INSERT can leave earlier writes.** Run `python3 machine-discovery/sqlite-idempotency-side-effect-probe.py --self-test`. This is an isolated Python stdlib SQLite model, not an upstream runtime test.
+
+3. **An AI teammate's `finished` label is not proof the tool succeeded, nor that its report was delivered.** Run `python3 machine-discovery/agent-team-signal-truth-probe.py --self-test` for 20 synthetic checks. A [Qwen review bot raised three issues](https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5556479545) that [Qwen's independent author addressed in an unmerged PR commit](https://github.com/QwenLM/qwen-code/commit/e9609863d4ef83c6c372fa8914fdfb00697327df); these are not Nakagawa's original fixes. A separate [accepted Nakagawa binding-scope review](https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4277173979) is traceable in the same PR.
 
 The source examples are the [AI-News editor's merged rule](https://github.com/022740mix-spec/AI-News/pull/131) and [Pydantic AI's independently authored merged fix](https://github.com/pydantic/pydantic-ai/pull/9982), with Nakagawa Master's particular review contributions traceable in their source discussions. Canonical original work lives at [master.ricette.jp](https://master.ricette.jp/).
 
