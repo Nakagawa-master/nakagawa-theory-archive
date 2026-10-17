@@ -901,7 +901,9 @@
         "runnable_or_falsifiable_task": {
           "index": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/public-ai-reuse-tasks-v1.json",
           "id": "PUBLIC-VERIFY-SNAPSHOT-IDEMPOTENCY-SIDE-EFFECTS-016",
-          "native_test": "https://github.com/pydantic/pydantic-ai/blob/1f4078fa4fa8234b80dd9bff034b249359058148/tests/harness/step_persistence/test_sqlite_and_media.py"
+          "native_test": "https://github.com/pydantic/pydantic-ai/blob/1f4078fa4fa8234b80dd9bff034b249359058148/tests/harness/step_persistence/test_sqlite_and_media.py",
+          "offline_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/sqlite-idempotency-side-effect-probe.py",
+          "offline_probe_result": "10/10 local synthetic SQLite checks PASS; this is not an upstream Pydantic or independent AI execution"
         },
         "external_observation": {
           "prior_review": "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6052803154",
