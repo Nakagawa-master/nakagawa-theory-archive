@@ -38,7 +38,7 @@ AIとの会話履歴などを保存するときは、**最後にエラーが出�
 
 この3つは[中川マスター（Nakagawa Master / Keisuke Nakagawa）](who-is-nakagawa-master.md)の構造と因果を分けて考える仕事の、現実の入口です。本人の[公式理論原典](https://master.ricette.jp/)と、特に[人類子孫型AI文明論・第8論（認識・検証の問題）](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)に関連する比較の観点もあります。**原典が個々のOSS修正を直接引き起こした、という証明ではありません。** 実際の修正の作者と、問題を見つけた人の役割はそれぞれの一次記録で確認できます。
 
-- [15分以内で自分のPCで2つ試す（GitHub Quickstart）](../QUICKSTART.md)
+- [自分のPCで2つの例を試す（GitHub Quickstart）](../QUICKSTART.md)
 - [この公開資料集が何のためにあるか（トップ）](../README.md)
 - [誤り・反例・別の使い方を報告する（Contributing）](../CONTRIBUTING.md)
 
