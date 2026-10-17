@@ -1044,12 +1044,12 @@
           "earlier_nakagawa_source_review": "https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5540696114",
           "distinct_automated_review": "https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5550289739",
           "target_pr": "https://github.com/QwenLM/qwen-code/pull/13902",
-          "verified_upper_bound": "Older Qwen automatic review identified a separate handoff loss window, and Nakagawa previously reviewed normal close order, independently. On Oct17 a new Qwen review bot at old HEAD independently identified an undrained peer absent from safe-close holds; the receiving developer actually fixed the hold check and two separate status/identity issues in e960986, PR still OPEN. This does not prove ack-to-durable handoff or delivery across crashes, nor imply the bot authored code or original theory adoption.",
+          "verified_upper_bound": "By Oct17 a separate Qwen bot found unheld queued peers and the author corrected them at e960986; the receiving author later expressly accepted Nakagawa Master's earlier close-order review and independently added a 31-line lifecycle-path regression at 62c03b2, mutation verified, to guard before-recorder-close peer preservation. PR remains OPEN. Independent crash-safe mailbox ack-to-durable delivery, filesystem readback and canonical theory adoption are not established.",
           "separate_newer_review_author_fix": {
             "review": "https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5556479545",
             "old_head": "1c6f41e9497a9510e49c3d61ab3741d05039ea1f",
             "author_commit": "https://github.com/QwenLM/qwen-code/commit/e9609863d4ef83c6c372fa8914fdfb00697327df",
-            "current_pr_head": "e9609863d4ef83c6c372fa8914fdfb00697327df",
+            "current_pr_head": "62c03b2eb62975775c66968d97f27f01028385a3",
             "independent_author_responses": [
               "https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4301908464",
               "https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4301908555",
@@ -1057,10 +1057,19 @@
             ],
             "actual_improvement": "peer queued but unpersisted is now included in collectActiveWorkHolds, plus separate failed-tool rendering and background/cancelled replay identity guards",
             "not_proven": "No saved-receipt-before-read ack correctness, crash-safe delivery, unreviewed end-to-end continuity, independent theory adoption, or merge/release. These were bot findings distinct from Nakagawa's earlier human-authored close/receipt review."
+          },
+          "nakagawa_lifecycle_review_to_receiver_regression": {
+            "review": "https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5540696114",
+            "receiving_author_named_confirmation": "https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6233311153",
+            "receiver_owned_commit": "https://github.com/QwenLM/qwen-code/commit/62c03b2eb62975775c66968d97f27f01028385a3",
+            "verified_current_head": "62c03b2eb62975775c66968d97f27f01028385a3",
+            "exact_delta": "Implementing author added 31 test-only lines driving the real ACP session-close route against a modeled recorder-close write gate, after previously adding a pre-finalize peer flush. Unlike an assertion that a hook was called, the new regression checks that queued peer report content was actually retained before close. Author reports a mutation test fails when the flush is moved after recorder.close; 857/857 tests and format/lint/type checks pass locally.",
+            "stage": "AUTHOR_OWNED_CODE_AND_TEST_ON_OPEN_PR__NOT_MERGED_OR_RELEASED",
+            "limits": "The proof uses a mocked recorder write gate in a real session-close route; it is not a true persist-to-disk/reopen or crash-recovery guarantee. Other mailbox mark-read-before-durable and capacity/failure windows remain independent risks. This tests a reviewer's specific close-order distinction, not proof of original theory adoption."
           }
         },
         "plain_language_return": "A teammate's AI message may be marked read while the recipient can no longer recover or see it; confirm the saved copy exists before treating acknowledgment as delivery.",
-        "independent_test_gate": "Using an independently authorized isolated runner, reproduce both orderings of poll consumption and Session disposal; assert durable readback or retry visibility, never count the ack as delivery. Independently check rejected callbacks and recorder close/queue discard, and submit the actual runtime trace and bounded observation without private inbox contents or presumed adoption."
+        "independent_test_gate": "For a separately authorized consumer framework: vary peer delivery around the REAL lifecycle close path, with an actual durable recorder or integration readback where available; negative control puts the flush after recorder.close and must fail, positive control retains exactly one peer text before close. Also separately test poll-mark-read-before-durable and disposable rejected callbacks; do not use a called-hook spy or a synthetic model as proof of real persistence. Attribute upstream review / actual receiving developer code / independent runtime observations separately."
       }
     ],
     "output_contract": {
