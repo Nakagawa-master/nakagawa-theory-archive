@@ -960,7 +960,7 @@
           "id": "PUBLIC-VERIFY-SNAPSHOT-IDEMPOTENCY-SIDE-EFFECTS-016",
           "native_test": "https://github.com/pydantic/pydantic-ai/blob/1f4078fa4fa8234b80dd9bff034b249359058148/tests/harness/step_persistence/test_sqlite_and_media.py",
           "offline_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/sqlite-idempotency-side-effect-probe.py",
-          "offline_probe_result": "10/10 local synthetic SQLite checks PASS; this is not an upstream Pydantic or independent AI execution"
+          "offline_probe_result": "Original local SQL-shape model passed 10/10 checks at its earlier revision. Current published probe extends it to 16 assertions and two separate SQLite connection interleavings; the new isolated two-connection negative and snapshot-first positive witnesses passed locally, while a full exact-current 16/16 run is not separately recorded here. This is not Pydantic harness CI, production use or independent AI theory adoption."
         },
         "external_observation": {
           "prior_review": "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6052803154",
