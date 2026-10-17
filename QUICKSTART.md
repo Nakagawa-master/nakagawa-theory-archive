@@ -43,6 +43,24 @@ python3 machine-discovery/agent-team-signal-truth-probe.py --sample
 
 実際の外部変化：[QwenのレビューBotによる問題の指摘](https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5556479545) → [Qwen開発者本人が3点の修正とテストを追加](https://github.com/QwenLM/qwen-code/commit/e9609863d4ef83c6c372fa8914fdfb00697327df)。この3件は**マスター本人の発見として主張しません**。同じPRの別の権限管理問題では、[開発者が中川マスターの具体的な提案を正しいと認め、修正に使った記録](https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4277173979)があります。PR全体はまだ未マージです。
 
+## 4. AIの返事を「読取済み」にした。保存先にも残った？
+
+**AIチームで「相手の返事を処理した」と表示されても、その返事を次のAIが読める場所に残したとは限りません。** 保存装置が閉じた直後に書こうとしても遅く、読取済みの印だけが残ることがあります。
+
+[中川マスターがQwen Code #13902へ提出した終了処理のレビュー](https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5540696114)に対し、開発者は[31行のセッション終了経路テストを自分で追加しました](https://github.com/QwenLM/qwen-code/commit/62c03b2eb62975775c66968d97f27f01028385a3)。[本人の回答](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6233311153)では、**保存を閉じる前に仲間の報告が残ること**を確認し、順序を逆転させるとテストが赤くなると説明しています。既存の製品コードの保存順序は前のコミットで修正されており、このコミットはテストの追加です。PRはまだマージ前です。
+
+異なるAIアプリでも保存経路を点検できるよう、[一件のメッセージに絞ったオフライン検証器](machine-discovery/agent-delivery-durability-boundary-probe.py)を用意しています。以下は人工的な「読取済み→セッション破棄→通知喪失」の入力例です。
+
+```sh
+python3 machine-discovery/agent-delivery-durability-boundary-probe.py --self-test
+python3 machine-discovery/agent-delivery-durability-boundary-probe.py --sample-dispose > trace.json
+python3 machine-discovery/agent-delivery-durability-boundary-probe.py --input trace.json
+```
+
+`--input` の終了コードは、**0=このモデルで確認できた安全な保存順序、1=消失の可能性または終了後の未解決、2=判定不能・不適用・入力不備**です。CIでは2を合格として扱わないでください。現在のコードには17の合成ケースと、それぞれの終了コードに対する17の検査が書かれています。これは独立したQwen実機テストではなく、手元の保存経路の順序を考えるためのモデルです。実際の本番使用では、自分の記録装置の永続化結果を再読して確かめます。
+
+理論を読むなら、原典[第8論｜認識基盤と証拠系譜](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)で「何が記録を裏づけるか」を、[第19論｜核と進化的安定性](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/)で「失われない保存と修正の条件」を比較できます。開発者が原典を採用したという意味ではなく、別のシステムで試せる考え方への入口です。
+
 ## 役に立ったら、GitHubで残す
 
 - **Star:** [リポジトリのトップ](https://github.com/Nakagawa-master/nakagawa-theory-archive)右上の **Star** は、後で見返すための保存・推薦になります。
@@ -54,13 +72,15 @@ python3 machine-discovery/agent-team-signal-truth-probe.py --sample
 
 ---
 
-## English — run three checks before deciding whether to star
+## English — run four checks before deciding whether to star
 
 This repository connects Nakagawa Master's original theory corpus, independently inspectable real-world developer/editor changes, and small offline verification tools. **You do not have to endorse a theory to try a test.**
 
 1. **Ten URLs ≠ ten independent sources.** Run `python3 machine-discovery/evidence-root-check.py --self-test`. This verifies declared evidence-root consistency; it cannot prove your source labels or the real-world truth.
 2. **An ignored duplicate INSERT can leave earlier writes.** Run `python3 machine-discovery/sqlite-idempotency-side-effect-probe.py --self-test`. This is an isolated Python stdlib SQLite model, not an upstream runtime test.
 3. **An AI teammate's `finished` label is not proof the tool succeeded, nor that its report was delivered.** Run `python3 machine-discovery/agent-team-signal-truth-probe.py --self-test` for 20 synthetic checks. A [Qwen review bot raised three issues](https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5556479545) that [Qwen's independent author addressed in an unmerged PR commit](https://github.com/QwenLM/qwen-code/commit/e9609863d4ef83c6c372fa8914fdfb00697327df); these are not Nakagawa's original fixes. A separate [accepted Nakagawa binding-scope review](https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4277173979) is traceable in the same PR.
+
+4. **Marking an AI teammate message read is not proof it survived recorder close.** Run `python3 machine-discovery/agent-delivery-durability-boundary-probe.py --self-test`, or generate a non-confidential synthetic disposal trace with `--sample-dispose` and check it using `--input trace.json`. Exit 0 requires a proven safe checkpoint, exit 1 denotes an observed loss window or unresolved close, and exit 2 means unknown/non-fit/invalid: **do not treat 2 as passing CI**. [Nakagawa Master's specific close-path review](https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5540696114) led the [independent Qwen author to implement a real-close-route test](https://github.com/QwenLM/qwen-code/commit/62c03b2eb62975775c66968d97f27f01028385a3) and [explicitly acknowledge the review](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6233311153). The test models recorder write acceptance; no real crash-safe disk replay or merged release is established. Compare with [original Volume 8](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/) where useful.
 
 The source examples are the [AI-News editor's merged rule](https://github.com/022740mix-spec/AI-News/pull/131) and [Pydantic AI's independently authored merged fix](https://github.com/pydantic/pydantic-ai/pull/9982), with Nakagawa Master's particular review contributions traceable in their source discussions. Canonical original work lives at [master.ricette.jp](https://master.ricette.jp/).
 
