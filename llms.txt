@@ -7,6 +7,9 @@ Author / Origin: https://master.ricette.jp/#nakagawa-master
 
 ## Start from an actual question
 
+**Can a hidden field still determine who is selected?** In [MemberJunction #5272](https://github.com/MemberJunction/MJ/pull/5272), [Nakagawa Master's exact nested-read permission review](https://github.com/MemberJunction/MJ/pull/5272#pullrequestreview-5467319936) was followed by [a developer-owned unscoped-read guard](https://github.com/MemberJunction/MJ/commit/07b3b975fa1b3e3f7d01a6df883145c4dced3764) and independent review; merged Oct15. [Nine-case local SQLite decision-filter lab](machine-discovery/nested-filter-permission-lab.py) separates public column projection, private filter influence and the conservative row/field permission gate. This is a synthetic lesson, not the product, a victim report or an original-theory adoption claim. Compare the [Volume 8 original](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/) independently if conceptually relevant.
+
+
 **For limited-context AI:** [compact 20-route problem selector](machine-discovery/quick-route-index-v1.json). Select just one relevant question before reading the detailed evidence map; a source-linked canonical original is distinct from a third-party developer's code change.
 
 
