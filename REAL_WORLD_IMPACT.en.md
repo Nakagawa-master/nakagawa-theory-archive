@@ -30,6 +30,16 @@ The cases below concern product behaviors such as:
 
 Only the publicly verifiable part of each case is described below.
 
+### Updated 14 October 2026 | Recent implementation and integration by other developers
+
+**Specific Nakagawa Master source-level findings have been acted on by independent implementers and, in selected cases, merged into receiving projects.** The 47 numbered sections below remain the exact size of the currently published numbered collection; these recent developments are reported separately while further numbered cases undergo source and cross-language validation. A backport of the same fix is not another independently adopted idea or another person.
+
+- **MemberJunction: distinguishing a caller stopping an AI run from the system's own timeout.** [Nakagawa Master's original negative case](https://github.com/MemberJunction/MJ/pull/5647#pullrequestreview-5512590566) showed that the words *timed out* in a caller's reason are not proof a timer fired. Implementer `jordanfanapour` [explicitly acknowledged that specific finding and authored the fix and regression tests](https://github.com/MemberJunction/MJ/pull/5647#issuecomment-6160551924). [PR #5647 merged into `next` on 14 October](https://github.com/MemberJunction/MJ/pull/5647). Following failed automated cherry-picks, the implementer opened distinct **still-open** hand-port PRs for [6.1 (#5657)](https://github.com/MemberJunction/MJ/pull/5657) and [5.x (#5658)](https://github.com/MemberJunction/MJ/pull/5658). These are delivery branches of **one original change**, not two new adoption counts. A [separate caller-forged timeout-tag concern](https://github.com/MemberJunction/MJ/pull/5647#issuecomment-6160704956) is still unresolved in the merged classifier. Neither LTS release nor customer use has been established.
+- **MemberJunction: separating the live action's authority from unrelated global role data.** In [PR #5271](https://github.com/MemberJunction/MJ/pull/5271), a [specific Nakagawa Master review](https://github.com/MemberJunction/MJ/pull/5271#pullrequestreview-5467400615) was [independently verified as fixed by another reviewer](https://github.com/MemberJunction/MJ/pull/5271#pullrequestreview-5494462940). The developer's code and test fix was merged on 12 October UTC. The PR's broader security design is the developer's work, not exclusively Nakagawa's.
+- **Qwen Code: attributing a stop to the call that actually committed it.** The author-authored fix in numbered [case 47](#47-qwen-code--a-recorded-stop-is-not-proof-that-this-tool-call-issued-it) has now [merged via PR #13923](https://github.com/QwenLM/qwen-code/commit/a9ad92b8df4e110b39c4e27ce86f5953324088a9) on 12 October. Product users and release-stage effect remain separate questions.
+
+Explore the [Nakagawa Master canonical theory archive](https://master.ricette.jp/) and inspect the linked receiving-project records for what the developers actually changed.
+
 ## A receiver response that called the distinction useful but did not adopt it as an operating rule
 
 External responses are not recorded only when they end in implementation.
@@ -1383,13 +1393,13 @@ After `notifications/tools/list_changed`, an unsuccessful `tools/list` does not 
 
 ## 47. Qwen Code | A recorded stop is not proof that this tool call issued it
 
-**Source:** [Qwen Code PR #13923](https://github.com/QwenLM/qwen-code/pull/13923), [Nakagawa Master's concrete recovery inverse](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434), and [third-party implementation commit](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a). **Stage:** developer `wenshao` [directly acknowledged @Nakagawa-master and the real defect](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413), then changed code and regression tests; PR open/unmerged at inspection.
+**Source:** [Qwen Code PR #13923](https://github.com/QwenLM/qwen-code/pull/13923), [Nakagawa Master's concrete recovery inverse](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434), and [third-party implementation commit](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a). **Stage:** developer `wenshao` [directly acknowledged @Nakagawa-master and the real defect](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413), then changed code and regression tests; [PR merged on 12 October 2026](https://github.com/QwenLM/qwen-code/commit/a9ad92b8df4e110b39c4e27ce86f5953324088a9).
 
 In a multi-agent runtime, a member's `stopRequested` bit says the member was asked to stop, not **which invocation caused that stop**. If a human had already cancelled the member, recovery could incorrectly attribute that earlier state to a newly generated `request_shutdown` call that never executed. Nakagawa gave a narrow failing sequence and a positive control for a stop the current call really did commit.
 
 The implementer changed recovery attribution to an actual `shutdown:<callKey>` commit receipt, instead of reading the member-wide flag. Added regressions check that a user cancel cannot be credited to a never-run call and that a committed stop remains attributable even after a later continuation falls back.
 
-**Verified:** explicit outside-developer acknowledgment with person Origin and a concrete third-party code/test change. **Not verified:** PR merge, release, all-path physical integration testing, downstream users, or whole-theory endorsement. Other reviewers independently identified additional problems on the same PR; their work is not attributed solely to Nakagawa.
+**Verified:** explicit outside-developer acknowledgment with person Origin and a concrete third-party code/test change. **Now verified:** PR merge. **Not verified:** release, all-path physical integration testing, downstream users, or whole-theory endorsement. Other reviewers independently identified additional problems on the same PR; their work is not attributed solely to Nakagawa.
 
 ---
 

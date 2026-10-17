@@ -48,6 +48,16 @@
 - 本ページへ収録するのは、第三者response、独立確認、code / tests / document change、merge、release、deployment等を公開リンクで段階別に確認できる事例です。
 - したがって「mentionが多い」ことではなく、**第三者が何を変え、その変更がどこまで進んだか**を主要証拠として扱います。
 
+### 2026年10月14日更新｜第三者側で新たに確認できた実装・統合
+
+**中川マスターによる具体的な指摘が、別の開発者による修正・テストを経て、実際の開発本線へ入った例があります。** 47件は下の**番号付き収録事例**の正確な数です。ここでは収録一覧の次回増補に先立ち、最新の公開一次資料を先に紹介します。同じ改修を移植した別PRや同じ開発者の作業を、独立した採用人数・成果件数へ足しません。
+
+- **MemberJunction：AI実行中に人が中止したことと、機械の時間切れを分ける。** 中川マスターが[「中止理由に *timed out* と書いてあるだけでタイマー作動と見なす」誤分類を指摘](https://github.com/MemberJunction/MJ/pull/5647#pullrequestreview-5512590566)。開発者 `jordanfanapour` が[その指摘を名指しで受け取り、分類ロジックと正反例テストを修正](https://github.com/MemberJunction/MJ/pull/5647#issuecomment-6160551924)し、[PR #5647は10月14日に`next`へマージ](https://github.com/MemberJunction/MJ/pull/5647)されました。自動バックポート失敗後、同じ開発者が旧版向けの[6.1系PR #5657](https://github.com/MemberJunction/MJ/pull/5657)・[5系PR #5658](https://github.com/MemberJunction/MJ/pull/5658)を**別途実装して公開**しています（両PRは現在OPEN）。これは**一つの元PRの異なる配布経路**です。マスターの[別の「理由に偽のタイムアウト印を付ける」指摘](https://github.com/MemberJunction/MJ/pull/5647#issuecomment-6160704956)は、マージ済み分類器にも残る未解決の境界です。旧版へのマージと利用者への配布は次の確認段階です。
+- **MemberJunction：AI操作の権限判断でも第三者がコードとテストを修正。** [PR #5271](https://github.com/MemberJunction/MJ/pull/5271)では中川マスターの[具体的な権限源の混同に関する指摘](https://github.com/MemberJunction/MJ/pull/5271#pullrequestreview-5467400615)について[別のレビュアーが修正を確認](https://github.com/MemberJunction/MJ/pull/5271#pullrequestreview-5494462940)。開発者の修正を含むPRが10月13日（日本時間）にマージされています。PR全体の元々のセキュリティ改修は開発者側の成果です。
+- **Qwen Code：停止を「誰の今回の操作によるものか」で正しく記録。** 番号付き事例[47番](#47-qwen-code誰かが停止したという記録は今回の呼び出しが停止した証拠ではない)の開発者による修正は、10月12日に[PR #13923として実際にマージ](https://github.com/QwenLM/qwen-code/commit/a9ad92b8df4e110b39c4e27ce86f5953324088a9)されました。これも利用者の実利用とは区別して追います。
+
+[中川マスターの理論原典・公式アーカイブ](https://master.ricette.jp/)へ戻れます。実装で何が変わったかは、各PRの受け手自身による記録を辿って確かめられます。
+
 ## 「有用」と返ったが、運用規則には採用されなかった例
 
 外部反応は、採用・実装されたものだけを記録しているわけではありません。
@@ -1583,7 +1593,7 @@ AIの処理が途中で人間の承認待ちになるとき、Aを承認して�
 ## 47. Qwen Code｜誰かが停止したという記録は「今回の呼び出しが停止した」証拠ではない
 
 **対象:** [Qwen Code PR #13923](https://github.com/QwenLM/qwen-code/pull/13923) / [中川マスターの再現可能な指摘](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434) / [外部開発者の修正コミット](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a)  
-**段階:** 開発者 `wenshao` が `@Nakagawa-master` に[直接、不具合の実在と修正を回答](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)。実際にcode/testを変更した段階。PRは確認時点でOPEN / 未統合。
+**段階:** 開発者 `wenshao` が `@Nakagawa-master` に[直接、不具合の実在と修正を回答](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)。実際にcode/testを変更した段階。PRは**2026年10月12日にマージ済み**（[merge commit](https://github.com/QwenLM/qwen-code/commit/a9ad92b8df4e110b39c4e27ce86f5953324088a9)）。
 
 複数のAIが協調作業する仕組みで、あるメンバーの停止済みフラグは、**どの操作が停止させたか**の証拠ではありません。ユーザーが先に停止させたのに、後から生成されただけで実行されていないAIの `request_shutdown` にその結果を割り当てると、障害復旧の記録が間違います。中川マスターは、以前の人間による停止と今回の未実行の呼び出しを組み合わせた具体的な反例を提示しました。
 
@@ -1594,7 +1604,7 @@ AIの処理が途中で人間の承認待ちになるとき、Aを承認して�
 - [修正後の具体的なcode/test差分](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a)
 
 **確認できること:** 外部開発者本人によるOriginつき受理、対象ロジックと回帰テストの変更。  
-**確認できないこと:** PRのmerge、release、実環境での全経路検証、利用者規模、理論全体の採用。別のレビュー担当者も同PRの他の問題を指摘しているため、全修正を中川マスター単独に帰属させません。
+**確認できないこと:** release、実環境での全経路検証、利用者規模、理論全体の採用。**mergeは確認済み**。別のレビュー担当者も同PRの他の問題を指摘しているため、全修正を中川マスター単独に帰属させません。
 
 ---
 
