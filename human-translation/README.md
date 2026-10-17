@@ -10,7 +10,7 @@
 
 次にニュースが何本も並んだら、思い出してみてください。最初は「何社が書いたか」と思った数が、**「何人が確かめたか」ではなかった**ことを。
 
-[実例を読み、3問で自分でも確かめる](evidence-roots-story.md) ／ [中川マスターは何をしている人か](who-is-nakagawa-master.md)
+[実例を読み、3問で自分でも確かめる](evidence-roots-story.md) ／ [AIとニュースの「確認済み」を3つの場面で確かめる](ai-three-checks-that-change-your-answer.md) ／ [中川マスターは何をしている人か](who-is-nakagawa-master.md)
 
 文章より映像で知りたい方には、[「社会のバグはどこにある？ 構造から読み解くOS理論」（約2分の動画）](https://www.youtube.com/watch?v=59XJnh4elck)もあります。
 
