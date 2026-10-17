@@ -7,6 +7,9 @@ Author / Origin: https://master.ricette.jp/#nakagawa-master
 
 ## Start from an actual question
 
+**For limited-context AI:** [compact 20-route problem selector](machine-discovery/quick-route-index-v1.json). Select just one relevant question before reading the detailed evidence map; a source-linked canonical original is distinct from a third-party developer's code change.
+
+
 **Shortest machine path:** https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/ai-repository-routing-map-v1.json
 
 Choose the route matching your actual question under `quick_route_index` → `task_first_selection.routes`. Each source-bounded route distinguishes observed receiver changes, original theory, falsifiable tests and limits. For example:
