@@ -639,12 +639,14 @@
         "recipient_independent_reproduction": "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879",
         "recipient_review_reply": "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6064222678",
         "receiver_authored_implementation": "https://github.com/pydantic/pydantic-ai/pull/9982",
-        "pinned_current_head": "1f4078fa4fa8234b80dd9bff034b249359058148",
         "source_file": "https://github.com/pydantic/pydantic-ai/blob/1f4078fa4fa8234b80dd9bff034b249359058148/src/pydantic_ai_harness/pydantic_ai_harness/step_persistence/_store.py",
         "test_file": "https://github.com/pydantic/pydantic-ai/blob/1f4078fa4fa8234b80dd9bff034b249359058148/tests/harness/step_persistence/test_sqlite_and_media.py",
         "downstream_separate_implementer": "https://github.com/pydantic/pydantic-ai/pull/10215",
         "stage": "PR #9982 MERGED on 2026-10-16T15:40:54Z; older pinned head links are immutable historical test anchors, not a live PR head. Follow-on #10215 remains OPEN; actual downstream customer use is unverified.",
-        "updated_head_commit": "https://github.com/pydantic/pydantic-ai/commit/1f4078fa4fa8234b80dd9bff034b249359058148"
+        "updated_head_commit": "https://github.com/pydantic/pydantic-ai/commit/1f4078fa4fa8234b80dd9bff034b249359058148",
+        "pinned_historical_head": "1f4078fa4fa8234b80dd9bff034b249359058148",
+        "actual_merged_head": "0e01a864b925b1a6b8d760adf858e3d4e49497ab",
+        "merge_commit": "https://github.com/pydantic/pydantic-ai/commit/7d26ad70b2eb5dcff4854ff09e1c15e50a98741b"
       },
       "canonical_context": {
         "original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
@@ -666,7 +668,13 @@
         ],
         "cross_implementation_comparison": "In the separate OPEN #10215 proposal, inspect File/SQLite/Postgres/Mongo histories independently: it generalizes the review-derived ordering constraint but expressly excludes message GC during max_snapshots_per_run pruning; do NOT import #9982 SQLite-only pruning cleanup guarantee into all other storage drivers or treat the second proposal as merged.",
         "expected_observation": "Current source inserts snapshot row before messages, only when cursor.rowcount==1, and wraps row/message/ref/pruning in one atomic unit; caller-owned uses a SAVEPOINT which participates in its outer transaction. Tests were added for exception rollback and multi-query coherent read. These are source and test-presence observations; this archive has not executed upstream test suite.",
-        "nonfit": "For storage implementations without a snapshot retry key or content-addressed message table, this is a general test methodology, not an assertion the same specific defect exists."
+        "nonfit": "For storage implementations without a snapshot retry key or content-addressed message table, this is a general test methodology, not an assertion the same specific defect exists.",
+        "portable_stdlib_probe": {
+          "file": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/sqlite-idempotency-side-effect-probe.py",
+          "command": "python3 machine-discovery/sqlite-idempotency-side-effect-probe.py --self-test",
+          "machine_readback": "python3 machine-discovery/sqlite-idempotency-side-effect-probe.py --json",
+          "evidence": "Owner-authored synthetic SQLite model with trigger RAISE(IGNORE): writes-before-snapshot leaves 1 unreferenced row on changed-key retry, snapshot-first gates to 0; same-body false-green control; scoped independent key; caller savepoint rollback. Local equivalent exact-length source model passed 10/10 stdlib checks; GitHub bytes readback confirmed. Does not invoke Pydantic test suite, production data or independent AI."
+        }
       },
       "acceptable_outputs": [
         "Pinned executable test log and SQL count/readback before/after one duplicate key, including owned and caller-owned connections and an old-code negative.",
