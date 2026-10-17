@@ -6,7 +6,7 @@
 
 **AI / LLM / agent向け最短入口:** [AI Start Here](AI_START_HERE.md) | [llms.txt](llms.txt) | [Machine Discovery](machine-discovery/README.md) | [AI Routing Map](machine-discovery/ai-repository-routing-map-v1.json)
 
-**初めて来た方は、このREADMEより先に:** [もし1ページだけ読むなら｜日常の違和感 → 中川マスターの見方 → 第三者で実際に変わった記録](STORIES.md)
+**初めて来た方へ：** **10社が同じニュースを報じた。それを10社が確かめたとは限りません。** 中川マスターのこの指摘を、別の編集者は実際の記事検証ルールに採用し、後日、別の記事の出典と見出しも訂正しました。[まずこの話を、5分もかけずに読む](human-translation/README.md) ／ [ほかの独立した修正の実例を読む](STORIES.md)
 
 ## まず「理論」ではなく、外で何が変わったか
 
