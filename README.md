@@ -13,20 +13,34 @@
 - **原典・体系を調べたい方：** [日本語の全体案内](START_HERE.md) ／ [公式原典アーカイブ](https://master.ricette.jp/)
 - **AI・開発者・研究者の方：** [AI向け原典参照入口](AI_START_HERE.md) ／ [問題から探せる機械可読索引](machine-discovery/ai-repository-routing-map-v1.json)
 
+## GitHubで最初に使えるもの
+
+**読むだけでなく、手元で反例を確かめられます。** [Python標準ライブラリだけで試す｜日本語・English Quickstart](QUICKSTART.md)
+
+- **ニュースの出典:** 10本のリンクが、独立した10件の裏づけとは限らない。出典の根を分けて数える [オフライン検査](machine-discovery/evidence-root-check.py)。
+- **AIの会話保存:** 「重複を無視した」はずなのに、前段の書込みが残る。実際のSQLiteだけで順序を比べる [再現モデル](machine-discovery/sqlite-idempotency-side-effect-probe.py)。
+
+```sh
+git clone https://github.com/Nakagawa-master/nakagawa-theory-archive.git
+cd nakagawa-theory-archive
+python3 machine-discovery/evidence-root-check.py --self-test
+python3 machine-discovery/sqlite-idempotency-side-effect-probe.py --self-test
+```
+
+これらは手元の合成データを使う比較道具です。外部製品の実行結果や理論全体の正しさを代わりに保証するものではありません。
+
+**使って役に立ったら、リポジトリ右上の `Star` で保存・推薦できます。** 更新を受け取る場合は `Watch`、著者を追う場合は [中川マスターのGitHubプロフィールで `Follow`](https://github.com/Nakagawa-master) を選べます。反例や修正提案も [Contributing](CONTRIBUTING.md) から歓迎します。
+
 ## まず「理論」ではなく、外で何が変わったか
 
-**まず見てほしいのは、中川マスターの指摘を受けて、第三者が実際に何を変えたか。** 理論名は、その具体的な変化から自然に辿れます。
+中川マスターの問い・指摘から、**別の人が実際に判断・設計・実装を変えた記録**を、元の開発議論と照合できます。例えば：
 
-- **Qwen Code:** 終了した仕事から遅れて届く使用量を、いま動いている別の仕事の予算へ書き戻さない境界が実装・テスト・merge・stable releaseまで進み、その後receiver自身が別threadで `@Nakagawa-master` と採用した選択肢を再参照しました。
-- **Qwen Codeの別の修正:** 会話だけを巻き戻した後、以前のファイルスナップショットの識別子を誤って再利用しない改修が、[PR #13729](https://github.com/QwenLM/qwen-code/pull/13729)のマージを経て[正式リリース v0.25.1](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1)に含まれました。中川マスターが示したのは、破損した数値IDと安全な次番号を区別する**具体的な反例・テスト条件**です。開発者が行った改修は正式リリースへ収録されました。実際の利用者への効果や他製品への展開は、ここから観察する段階です。
-- **AI-News:** 「URLが複数ある」ことと「独立した証拠の根が複数ある」ことを分ける提案を運営側が明示採用し、継続編集ルールへ実装・mergeした後、別の編集監査でも再利用しました。
-- **LangGraph：AIの処理を再試行するとき、前の別の仕事の記録を引き継いではいけない。** 中川マスターが[呼び出す子AIの順番が変わる反例](https://github.com/langchain-ai/langgraph/issues/9253#issuecomment-6074292557)を提示すると、[第三者 `jayzuccarelli` がその条件を自分で実行](https://github.com/langchain-ai/langgraph/issues/9253#issuecomment-6077084784)し、単純な番号リセットだけでは別の子AIの過去の結果が混ざると報告しました。さらに[別の参加者 `epistemedeus` が８条件を検証](https://github.com/langchain-ai/langgraph/issues/9253#issuecomment-6090311539)。旧履歴の再利用と、いま呼ばれている仕事の識別を区別する具体的な確認が、２人の別々の検証者へ届きました。修正案の[別PR #9279](https://github.com/langchain-ai/langgraph/pull/9279)は提出されましたが、担当者未割当の自動チェックで閉じられており、公式コードへ統合されたという段階ではありません。
-- **MemberJunctionの権限判定にも新たな実装成果:** AI・業務システムの操作を許可する際、**今回の権限情報と別のグローバルな役割情報が混ざる問題**を中川マスターが[具体的な正反例で指摘](https://github.com/MemberJunction/MJ/pull/5271#pullrequestreview-5467400615)。[第三者レビュアーが「@Nakagawa-masterの発見は修正された」と明記](https://github.com/MemberJunction/MJ/pull/5271#pullrequestreview-5494462940)し、開発者が同一情報源で判定するコードとテストを変更。[PR #5271は2026年10月13日（日本時間）に本線へ統合](https://github.com/MemberJunction/MJ/pull/5271)されています。元の大きなセキュリティ修正と、この個別指摘の役割は区別して追えます。
-- **MemberJunction：止めたAIが別の候補へ次々と再試行しないために。** [中川マスターが利用者のキャンセル理由と実際のタイムアウトを取り違える具体例を指摘](https://github.com/MemberJunction/MJ/pull/5647#pullrequestreview-5512590566)した後、[開発者が自分で修正と回帰テストを作成](https://github.com/MemberJunction/MJ/pull/5647#issuecomment-6160551924)。[PR #5647は10月14日に`next`へマージ](https://github.com/MemberJunction/MJ/pull/5647)されました。さらに同じ開発者が旧版向けに[6.1系 #5657](https://github.com/MemberJunction/MJ/pull/5657)・[5系 #5658](https://github.com/MemberJunction/MJ/pull/5658)を別のコード構造へ移植し、[6.1系 #5657は10月14日に旧版ブランチへマージ](https://github.com/MemberJunction/MJ/pull/5657)され、[5系 #5658も同日、開発者が用意した修正としてマージ](https://github.com/MemberJunction/MJ/pull/5658)されました。これで開発本線・6.1系・5系の３つのコード系列に、同じ元の問題への修正が入りました（独立した３人の採用ではありません）。実際の製品リリースと利用者への到達は次の確認段階です。新しい公開成果は開発者の仕事であり、個別の問題発見の出所と区別して確認できます。
-- **MemberJunction:** 公開APIの具体的な境界指摘が別reviewerにも独立確認され、修正commitに `Reported by Nakagawa-master` とsource relationを残したcode/test変更がmergeされました。
-- **MemberJunctionの別の実装と、その後の著者自身の再参照:** 「他人のデータの中身は見せない」ようにしただけで、その人の記録が**あること・いつ変更されたか**まで隠せるでしょうか。別の開発者は[PR #4595でデータ本体と通知の境界を修正してマージ](https://github.com/MemberJunction/MJ/pull/4595)し、なお残る行単位の問題を、自分の[追加Issue #4610](https://github.com/MemberJunction/MJ/issues/4610)に切り出しました。**そのIssueの冒頭で、問題の枠組みは @Nakagawa-master のレビューに大きく基づくと開発者本人が明記しています。** **受け手自身が、中川マスターの出所を別の公開問題へ持ち運んだ実例**です。さらに別の開発者が、この残った問題のうち**行のIDが漏れる経路**を[PR #5242で修正して2026年10月14日にマージ](https://github.com/MemberJunction/MJ/pull/5242)しました。権限の違う利用者を実際のWebSocketに接続する[第三者検証](https://github.com/MemberJunction/MJ/pull/5242#issuecomment-6051805014)でも、制限付きの人にはIDが届かず、通常権限の人には届くことを確かめています。前のマスターのレビューと、今回の開発者が直接結びついた証拠はありませんが、同じ問題の修正が**設計→別人の実装→実接続検証→マージ**まで進んだ事実は確認できます。さらに同じデータ保護修正は、別の開発者による旧系列向けの移植作業を経て、[6.1系 #5696が10月16日にマージ](https://github.com/MemberJunction/MJ/pull/5696)、[5系でも基盤の #5699 と保護追加の #5700 が順に10月16日にマージ](https://github.com/MemberJunction/MJ/pull/5700)されています。さらに、**[6.1系の正式リリース v6.1.6](https://github.com/MemberJunction/MJ/releases/tag/v6.1.6) と [5系の正式リリース v5.51.4](https://github.com/MemberJunction/MJ/releases/tag/v5.51.4) の双方が、この修正を変更履歴に明記**しました。第三者の開発・別系列への移植・正式リリースまで実際に届いています。ただし、移植を別々の新発見として数えたり、各利用者による導入・使用まで確認済みとしたりはしません。より厳密な行ごとの公開可否や変更時刻の問題は[Issue #4610](https://github.com/MemberJunction/MJ/issues/4610)に残ります。元の指摘と開発者自身の仕事を別々に辿れます。
+- **編集｜同じ発表を引用した記事が複数あっても、独立検証は複数とは限らない。** [中川マスターのAI-Newsでの提案](https://github.com/022740mix-spec/AI-News/issues/124)を受け、[編集者が根拠の独立性を確認する規則を実装・マージしました（#131）](https://github.com/022740mix-spec/AI-News/pull/131)。後日、[別の指摘を受けた記事の訂正（#156）](https://github.com/022740mix-spec/AI-News/pull/156)も行われました。訂正全体をマスターの単独成果にはしていません。
+- **AIの履歴｜保存済みの会話を誤って上書きしない。** [Qwen Code #14285](https://github.com/QwenLM/qwen-code/pull/14285)では、開発者自身が会話の移行・保存を修正し、[正式版 v0.25.2](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.2)にも収録されました。中川マスターの個別レビューは[開発者の明示的な返答](https://github.com/QwenLM/qwen-code/pull/14285#issuecomment-6192242612)から区別して追えます。
+- **実装｜SQLiteの重複履歴保存を直す。** [Pydantic AI #9982](https://github.com/pydantic/pydantic-ai/pull/9982)では、マスターが指摘した重複再試行時の残留書込みを、実装者が再現・修正・テストし、マージしました。現実の利用者による導入までは別の確認段階です。
+- **権限｜行を読めない人へ、その行の鍵も知らせない。** [MemberJunctionの開発者が実装・マージした修正（#5242）](https://github.com/MemberJunction/MJ/pull/5242)は、[正式版 v6.1.6](https://github.com/MemberJunction/MJ/releases/tag/v6.1.6)と[正式版 v5.51.4](https://github.com/MemberJunction/MJ/releases/tag/v5.51.4)にも収録されました。[元の人物出所が明記された別Issue（#4610）](https://github.com/MemberJunction/MJ/issues/4610)と、実装者自身の仕事は区別して辿れます。
 
-**元の問題 → 中川マスターの具体的な指摘 → 第三者の判断 → 実際の変更。** 名前と成果のつながりを、公開リンクから順番に確かめられます。
+**ここから先は実証記録を深く確認できます：** [人物と現実の変化から読む](STORIES.md) ／ [事例・一次資料を分けて確認する](REAL_WORLD_IMPACT.md) ／ [身近な日本語で読む](human-translation/README.md) ／ [AI・LLMが検査対象を探す](AI_START_HERE.md)。
 
 **仕事・許諾・協業のご相談:** [中川マスター公式アーカイブのお問い合わせ](https://master.ricette.jp/contact/)をご利用ください。理論群の商用活用・監修・研修・共同研究などの考え方は[公式NCL-α実務ガイド](https://master.ricette.jp/co-creation/nakagawa-master-ncl-alpha-practical-guide-faq/)にあります。GitHubで公開されている個別資料の利用条件は[LICENSE](LICENSE)と該当原典の条件も確認してください。契約・許諾・有償業務の条件は、実際の相談内容に応じて個別に合意します。個人情報や商談内容の送信には、公式お問い合わせ窓口をご利用ください。
 
