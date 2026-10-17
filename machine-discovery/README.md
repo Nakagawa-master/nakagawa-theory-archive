@@ -6,6 +6,22 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 
 **AI / LLM fastest problem-first route:** read [AI Repository Routing Map → `task_first_selection`](ai-repository-routing-map-v1.json) for twenty source-bounded, real-problem routes connecting a reader's question to a canonical Parent **only where a source-backed relation exists**, a falsifiable check, and the original independent receiver evidence **where available**. Some engineering cases have no proven theory-derived parent and are explicitly marked as such. Each route includes a human-understandable explanation and a negative/adoption boundary. Use one relevant route rather than indiscriminately loading the full catalog; it is a non-canonical optional discovery aid, not permission to act or proof of an external model using it.
 
+## Agent-team truth in three distinct channels — 20 runnable local cases
+
+**"Finished" is not "succeeded"; "queue is quiet" is not "safe to close"; "agent name exists" is not "agent actually ran".**
+
+[One-file Python 3 standard-library checker](agent-team-signal-truth-probe.py) accepts an input JSON, emits a verdict, and runs **20 synthetic positive, negative, ambiguous and invalid cases**. From repository root:
+
+```sh
+python3 machine-discovery/agent-team-signal-truth-probe.py --self-test
+python3 machine-discovery/agent-team-signal-truth-probe.py --sample
+python3 machine-discovery/agent-team-signal-truth-probe.py --input trace.json
+```
+
+Three independent input kinds are `tool_result` (failed-vs-neutral display with missing error), `close_hold` (undrained peer plus actual durability receipt versus close eligibility), and `replay_identity` (validated real-agent status versus a blocked/raw name). A `failed` spawn without separate `spawn_blocked` evidence is **UNDETERMINED**, not proof that no agent ran. An explicit durable receipt is not just a queued/pending flag.
+
+The [Qwen Code #13902 review](https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5556479545) supplied the bot-origin source examples; independent Qwen developer [commit `e960986`](https://github.com/QwenLM/qwen-code/commit/e9609863d4ef83c6c372fa8914fdfb00697327df) adds three corresponding actual code fixes and own regression tests. **Do not attribute those bot findings or developer implementation to Nakagawa Master.** His separately [acknowledged binding-retirement review](https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4277173979) is a different causal line in this PR. The new checker is a source-inspired **standalone offline model**, not a Qwen runtime or independent AI theory adoption test. [Japanese reader-friendly example](../APPLIED_ENTRY_POINTS.md) / [original source](https://master.ricette.jp/).
+
 ## Exact GraphQL schema rejection versus a coincidental error string — merged cache case
 
 [MemberJunction #5703](https://github.com/MemberJunction/MJ/pull/5703) **MERGED into the receiving `next` branch on 2026-10-15**, implementing the receiver's schema-hash mismatch local-miss rule, query-definition cache invalidation and rolling-deployment compatibility. [Nakagawa Master's separate, limited source review](https://github.com/MemberJunction/MJ/pull/5703#pullrequestreview-5527674879) identified a **specific remaining fallback-classification weakness**, not authorship of the main cache fix: `GraphQLDataProvider.isUnsupportedDefinitionHashError(e)` returns true on any error message containing `definitionHash`; then `RunQueriesWithCacheCheck` falls back to **data-only** validation and suppresses the definition check for five minutes. This remains in the [merged current code](https://github.com/MemberJunction/MJ/blob/next/packages/GraphQLDataProvider/src/graphQLDataProvider.ts).
