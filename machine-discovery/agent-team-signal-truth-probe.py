@@ -47,9 +47,12 @@ def classify(trace):
         status, validated, issued = trace.get("subagent_status"), trace.get("name_source_validated"), trace.get("agent_identity_emitted")
         if not isinstance(status, str) or not isinstance(validated, bool) or not isinstance(issued, bool):
             return {"verdict": "INVALID", "reason": "subagent_status and two boolean flags required"}
-        # A 'failed' spawn may have been blocked before any actual subagent ran.
+        # Failed can mean blocked BEFORE spawn or failure AFTER real execution.
+        # Only a separately established blocked-spawn cause licenses a negative identity claim.
         if status == "failed":
-            return {"verdict": "FALSE_IDENTITY" if issued else "NO_IDENTITY", "reason": "failed spawn must not certify a running subagent by replay alone"}
+            if trace.get("spawn_blocked") is not True:
+                return {"verdict": "UNDETERMINED", "reason": "failed alone cannot distinguish blocked spawn from failed executed agent"}
+            return {"verdict": "FALSE_IDENTITY" if issued else "NO_IDENTITY", "reason": "known blocked spawn must not mint a runnable-agent identity"}
         if status not in ("completed", "running", "background", "cancelled"):
             return {"verdict": "NOT_APPLICABLE", "reason": "status not a verified subagent execution state"}
         if not validated:
@@ -72,8 +75,9 @@ CASES = [
     ("background_lost_identity", {"kind": "replay_identity", "subagent_status": "background", "name_source_validated": True, "agent_identity_emitted": False}, "MISSING_IDENTITY"),
     ("background_preserved", {"kind": "replay_identity", "subagent_status": "background", "name_source_validated": True, "agent_identity_emitted": True}, "FAITHFUL"),
     ("cancelled_preserved", {"kind": "replay_identity", "subagent_status": "cancelled", "name_source_validated": True, "agent_identity_emitted": True}, "FAITHFUL"),
-    ("blocked_raw_name_rejected", {"kind": "replay_identity", "subagent_status": "failed", "name_source_validated": False, "agent_identity_emitted": False}, "NO_IDENTITY"),
-    ("blocked_raw_name_incorrect", {"kind": "replay_identity", "subagent_status": "failed", "name_source_validated": False, "agent_identity_emitted": True}, "FALSE_IDENTITY"),
+    ("blocked_raw_name_rejected", {"kind": "replay_identity", "subagent_status": "failed", "spawn_blocked": True, "name_source_validated": False, "agent_identity_emitted": False}, "NO_IDENTITY"),
+    ("blocked_raw_name_incorrect", {"kind": "replay_identity", "subagent_status": "failed", "spawn_blocked": True, "name_source_validated": False, "agent_identity_emitted": True}, "FALSE_IDENTITY"),
+    ("failed_unknown_origin", {"kind": "replay_identity", "subagent_status": "failed", "name_source_validated": True, "agent_identity_emitted": False}, "UNDETERMINED"),
     ("untrusted_name_rejected", {"kind": "replay_identity", "subagent_status": "completed", "name_source_validated": False, "agent_identity_emitted": False}, "NO_IDENTITY"),
     ("untrusted_name_accepted", {"kind": "replay_identity", "subagent_status": "completed", "name_source_validated": False, "agent_identity_emitted": True}, "FALSE_IDENTITY"),
     ("not_execution_status", {"kind": "replay_identity", "subagent_status": "planned", "name_source_validated": True, "agent_identity_emitted": False}, "NOT_APPLICABLE"),
