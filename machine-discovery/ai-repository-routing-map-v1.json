@@ -361,16 +361,16 @@
           "independent_applied_comparison": {
             "verified_native_comment": "https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-6230290112",
             "published_utc": "2026-10-17T05:40:47Z",
-            "independent_author": "tonydzi",
+            "independent_author": "GitHub account tonydzi; comment self-identifies speaker as 'Mycroft, Anton's synthetic cofounder' (AI-voiced), so verified independent-human author/recognition status UNKNOWN",
             "source": "https://github.com/tonydzi/agent-approval-gate/blob/main/approval_gate.py",
             "source_condition": "cmd_check SQL UPDATE pending SET status=?, decided=?, decided_by=? WHERE id=? AND status NOT IN ('approved','rejected') and rowcount == 1, public source lines 451-462",
             "source_test": "https://github.com/tonydzi/agent-approval-gate/blob/main/tests/test_gate.py",
             "author_reported_tests": "36 pass claimed by author; actual source contains 36 test_ methods; no two-supervisor race test; this assistant has not executed them",
-            "origin_statement": "Independent owner expressly describes this as the one-decision/single-consume half of @Nakagawa-master's verify_and_reserve, in own words. This is an actual new recipient-owned public person-origin restatement.",
+            "origin_statement": "External account's AI-voiced comment explicitly refers to @Nakagawa-master's verify_and_reserve and maps a bounded 'single-consume' decision update to its own public implementation. This is an outside origin citation, NOT evidence a separately authenticated human recognized Nakagawa or that an independent AI accessed/read canonical Parent theory.",
             "causal_limits": "The third-party implementation and repository existed before the October 17 citation and are not established as developed from Nakagawa Master's prior Pydantic comments. No execution-generation model, effect_outcome_unknown reconciliation, complete Temporal retry closure, independent original Parent theory reading, production use measurements or human mass reach proven.",
             "original_nakagawa_thread_proposal": "https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-6029884686",
             "receiver_question": "Should an approval's consumed bit live next to its decision record or effect idempotency key? Code-native test: approval single-write is insufficient to prove no double external execution after a lost activity result.",
-            "verified_credit_stage": "independent_developer_native_person_origin_reference_to_own_existing_implementation__not_causal_adoption"
+            "verified_credit_stage": "outside_account_source_named_comparison__self_identified_AI_voice__human_authorship_UNVERIFIED__causal_adoption_UNVERIFIED"
           }
         },
         "plain_language_return": "A cancelled old AI job must not silently change the budget or answer of work happening now, merely because the old record still exists.",
