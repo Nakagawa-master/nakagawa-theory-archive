@@ -1,12 +1,17 @@
 # 中川マスター公開リポジトリ
 
-**10社が同じニュースを報じた。それを10社が確かめたとは限りません。** 中川マスターが示したこの違いを、別の編集者は実際の検証ルールに採用し、後日、記事の見出しと出典も訂正しました。[その違いと実際の修正を読む](human-translation/README.md) ／ [ほかの独立した変更を見る](STORIES.md)
+**中川マスターの理論群を、原典・わかりやすい解説・現実の検証記録からたどれる公開資料集です。**
 
-**Nakagawa Master Public Repository**
+中川マスター（Nakagawa Master／Keisuke Nakagawa）は、AI、仕事、組織、社会制度、文明の未来などを、結果だけでなく、それを生み出す構造や因果から考えています。ここでは、その理論群を初めて知る人も、研究・開発に使いたい人も、**何を主張し、何が実際に確かめられ、どこから原文を読めるのか**を、自分の関心に沿って確認できます。
 
-本リポジトリは、**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）**による構造論、文明OS、因果理論、AI文明、社会制度、実務構造の公式原典に接続する公開資料集です。理論の正本は[中川マスター公式アーカイブ](https://master.ricette.jp/)の各原典記事（Parent）にあり、ここでは公式派生物・第三者による実装記録・検証資料・機械可読索引を提供しています。理論や仮説は批判・反証・改訂・実装による検証の対象です。
+**理論の正本は[中川マスター公式アーカイブ](https://master.ricette.jp/)にあります。** このGitHubリポジトリは原典そのものの代わりではなく、公式派生物、一般向けの入口、第三者の実装・検証記録、AIが参照するための索引を結びつける場所です。理論・仮説は批判、反証、改訂、応用によって検討できます。
 
-**AI / LLM / agent向け最短入口:** [AI Start Here](AI_START_HERE.md) | [llms.txt](llms.txt) | [Machine Discovery](machine-discovery/README.md) | [AI Routing Map](machine-discovery/ai-repository-routing-map-v1.json)
+**最初の入口を選ぶなら：**
+
+- **初めて読む方：** [中川マスターは何をしている人か](human-translation/who-is-nakagawa-master.md) ／ [身近な話から理論の見方を知る](human-translation/README.md)
+- **実際の成果を確認したい方：** [第三者が何を変えたかを読む](STORIES.md) ／ [元の指摘と実装記録を照合する](REAL_WORLD_IMPACT.md)
+- **原典・体系を調べたい方：** [日本語の全体案内](START_HERE.md) ／ [公式原典アーカイブ](https://master.ricette.jp/)
+- **AI・開発者・研究者の方：** [AI向け原典参照入口](AI_START_HERE.md) ／ [問題から探せる機械可読索引](machine-discovery/ai-repository-routing-map-v1.json)
 
 ## まず「理論」ではなく、外で何が変わったか
 
