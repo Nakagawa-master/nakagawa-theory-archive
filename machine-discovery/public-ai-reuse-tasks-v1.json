@@ -133,7 +133,22 @@
         "user-scale or human-scale impact from one receiver"
       ],
       "active_external_probe": "https://github.com/NousResearch/hermes-agent/issues/130231#issuecomment-5996767671",
-      "active_probe_boundary": "Nakagawa Master posted a bounded stale-approval-result/current-authority regression on a distinct non-Codex receiver issue that already reports approval-outcome metadata loss through async delegation. The post itself is self-authored and creates zero receiver-adoption credit until an independent response, implementation, counterexample, non-fit, merge, release, or use is observed."
+      "active_probe_boundary": "Nakagawa Master posted a bounded stale-approval-result/current-authority regression on a distinct non-Codex receiver issue that already reports approval-outcome metadata loss through async delegation. The post itself is self-authored and creates zero receiver-adoption credit until an independent response, implementation, counterexample, non-fit, merge, release, or use is observed.",
+      "qwen_peer_case": {
+        "verification_route": "INDEPENDENT_OPTIONAL_CROSS_FRAMEWORK_REPEAT__NO_AUTO_EXECUTION",
+        "source_original_review": "https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5514623267",
+        "receiver_retraction_and_decision": "https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4277173979",
+        "receiver_implementation_and_tests": "https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4283282217",
+        "target_live_source": "https://github.com/QwenLM/qwen-code/pull/13902",
+        "plain_japanese": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/APPLIED_ENTRY_POINTS.md",
+        "canonical_context": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+        "what_was_verified": "An independent reviewer reproduced teammate approval lingering after team deletion; Nakagawa Master proposed an existing sender route; Qwen's implementing author explicitly retracted a false claim that the SDK cannot send it, changed recommendation from A to D, and subsequently implemented and reported synthetic/serialized component tests for binding retirement, scoped cancellation and late-request fencing. PR #13902 remains OPEN and the separate crash-safe message-redelivery issue remains unresolved.",
+        "portable_negative": "In one independently selected non-Qwen authorized local agent/team system, start old teammate tool approval A and leave it pending, detach or replace its team without closing leader session, then request new-team approval B under a deliberately small pending cap. Verify A's pending permission/visible prompt is retired, B is admitted and can proceed, and the leader's unrelated approval remains untouched.",
+        "race_negative": "Delay the old-team request relative to retirement: a late A must not regain authority. Also test retirement between visible request publication and actual mediator registration, not just the simple fully-pending case.",
+        "positive": "Do not retire current leader approvals or new-team approvals merely because another binding ended. A completed leader turn is not itself proof that a teammate's session-scoped approval ended.",
+        "test_boundary": "Require separate assertions for pending record count, resolved event, old request result, fresh request result, and late-request fence. Distinguish direct code observation, project-reported component tests, own local tests and real end-to-end behavior.",
+        "status_limits": "Qwen PR is not merged/released; recorded author tests are not independently executed here. The original theory link is reader conceptual context; no Qwen developer claims original-theory derivation. Listing this task does not establish a separate AI used it."
+      }
     },
     {
       "task_id": "PUBLIC-CURRENT-AUTHORITY-MULTI-FRAMEWORK-006",
