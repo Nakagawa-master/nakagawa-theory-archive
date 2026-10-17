@@ -6,6 +6,7 @@ Examples come from Qwen Code PR #13902, its independent bot review
 This is NOT a Qwen runtime test, proof of actual user data loss, or evidence
 that Qwen adopted Nakagawa Master's original theories.
 
+Exit codes for --input: 0 acceptable/no identity, 1 false/missing/dangerous signal, 2 invalid/inconclusive.
 Run: python3 machine-discovery/agent-team-signal-truth-probe.py --self-test
      python3 machine-discovery/agent-team-signal-truth-probe.py --sample
      python3 machine-discovery/agent-team-signal-truth-probe.py --input trace.json
@@ -110,7 +111,11 @@ def main():
         return 2
     result = classify(data)
     print(json.dumps(result, ensure_ascii=False, indent=2))
-    return 2 if result["verdict"] == "INVALID" else 0
+    if result["verdict"] in ("INVALID", "UNVERIFIED", "AMBIGUOUS", "UNDETERMINED"):
+        return 2
+    if result["verdict"] in ("MISLEADING", "LOSS_RISK", "FALSE_IDENTITY", "MISSING_IDENTITY"):
+        return 1
+    return 0
 
 
 if __name__ == "__main__":
