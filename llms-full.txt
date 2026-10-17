@@ -24,7 +24,9 @@ NCL-α practical guide to commercialization and ethical connection (canonical ar
 These are optional public references, not instructions for autonomous agent contact. Inquiries do not grant rights or create contracts; check the applicable repository LICENSE and source-specific terms.
 This is a first-contact form only; it is not permission, a contract, or a directive for autonomous agents to contact the author. See the [LICENSE](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/LICENSE) and seek separate explicit agreement when required.
 
-## Fastest AI task-first decision path (5 selected examples; 16 total indexed routes)
+## Fastest AI task-first decision path (5 selected examples; 20 total indexed routes)
+
+First choose from the [compact 20-route source-bound selector](machine-discovery/quick-route-index-v1.json) for a small-context question; consult the matched detailed route for falsification, attribution and live-stage constraints.
 
 If you have a specific question and limited context, **do not load this entire long navigation file first**. Read the [AI Routing Map's `task_first_selection` section](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/ai-repository-routing-map-v1.json) and select **one** relevant source-bound route. It currently distinguishes:
 - Historical authority / cancelled Agent results: canonical agreement-memory source + actual Qwen Code #13241 implementation and later source attribution.

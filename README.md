@@ -13,7 +13,7 @@
 - **初めて読む方：** [「確認済み」を信じる前の3つの問い](human-translation/ai-three-checks-that-change-your-answer.md) ／ [中川マスターは何をしている人か](human-translation/who-is-nakagawa-master.md) ／ [身近な話から理論の見方を知る](human-translation/README.md)
 - **実際の成果を確認したい方：** [第三者が何を変えたかを読む](STORIES.md) ／ [元の指摘と実装記録を照合する](REAL_WORLD_IMPACT.md)
 - **原典・体系を調べたい方：** [日本語の全体案内](START_HERE.md) ／ [公式原典アーカイブ](https://master.ricette.jp/)
-- **AI・開発者・研究者の方：** [AI向け原典参照入口](AI_START_HERE.md) ／ [問題から探せる機械可読索引](machine-discovery/ai-repository-routing-map-v1.json)
+- **AI・開発者・研究者の方：** [AI向け原典参照入口](AI_START_HERE.md) ／ [20件の軽量AI問題索引](machine-discovery/quick-route-index-v1.json) ／ [根拠・反例を含む詳細索引](machine-discovery/ai-repository-routing-map-v1.json)
 
 ## GitHubで最初に使えるもの
 
