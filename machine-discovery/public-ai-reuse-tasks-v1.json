@@ -700,7 +700,11 @@
         "https://github.com/MemberJunction/MJ/pull/5700#pullrequestreview-5553174908",
         "https://github.com/MemberJunction/MJ/blob/dbb66c03235d3fff3a2403fee0feb6532036dd61/packages/MJServer/src/generic/CacheInvalidationResolver.ts",
         "https://github.com/MemberJunction/MJ/blob/dbb66c03235d3fff3a2403fee0feb6532036dd61/packages/MJServer/src/__tests__/cacheInvalidationRecordData.test.ts",
-        "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/"
+        "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+        "https://github.com/MemberJunction/MJ/releases/tag/v5.51.4",
+        "https://github.com/MemberJunction/MJ/releases/tag/v6.1.6",
+        "https://github.com/MemberJunction/MJ/blob/v5.51.4/packages/MJServer/src/generic/CacheInvalidationResolver.ts",
+        "https://github.com/MemberJunction/MJ/blob/v6.1.6/packages/MJServer/src/generic/CacheInvalidationResolver.ts"
       ],
       "source_and_provenance": "The receiver's PR #5700 at pinned head dbb66c0 returns true from cacheInvalidationFilter for an unknown entity; its ShapeCacheInvalidationEvent then forwards key and row because withholdKey is false for null metadata. Existing upstream tests assert both branches. The new Nakagawa Master review identifies the conditional gap; receiving authors wrote and merged their own implementation; no additional change implementing the newer review is evidenced. Original Volume 8 is optional conceptual comparison only, not established source causation for that implementation.",
       "scoped_test": {
@@ -715,14 +719,26 @@
         "A bounded fix and test preserving legitimate cache invalidation while withholding keys and rows without verified permissions",
         "An independently verified non-fit or implementation result on another authorized system"
       ],
-      "evidence_expectation": "Separate inspected code branch, synthetic reproduction, actual deployment conditions, external maintainer response and production evidence. Record authored implementation and separate Nakagawa Master review accurately, and cite an original theory only when it actually informed the reuse.",
+      "evidence_expectation": "Separate inspected code branch, synthetic reproduction, actual deployment conditions, external maintainer response and production evidence. Record authored implementation and separate Nakagawa Master review accurately, and cite an original theory only when it actually informed the reuse. Both official 2026-10-16 releases are now VERIFIED release-note stages; do not confuse their already merged row-key guard with adoption of the separate newer unknown-entity review.",
       "submission_surface": "https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402",
       "authorization_boundary": "Use public sources and authorized local synthetic tests only. No private tenant records, unauthorized external actions, network operation or unrequested publishing.",
       "success_does_not_establish": [
         "Any observed real-world customer data disclosure without such evidence",
-        "Acceptance or repair of this separate newly reviewed exception, a tagged release, or actual downstream customer usage simply because #5700 was merged",
+        "Acceptance or repair of this separately reviewed missing-metadata exception simply because the original row-key mitigation shipped in two tagged stable releases",
         "An independent AI model's adoption of the original theory corpus merely because this task is public"
-      ]
+      ],
+      "tagged_native_verification": {
+        "reviewed_public_tags": [
+          "v5.51.4",
+          "v6.1.6"
+        ],
+        "source_path": "packages/MJServer/src/generic/CacheInvalidationResolver.ts",
+        "observed_same_tagged_source_blob_sha": "900608791c2de044b5d2374ce6596d9729ffc5a7",
+        "verified_positive_bound": "Both stable release notes list the upstream row-key protection ports (#5700 and #5696, respectively), and both tagged source files have the row-filtered disclosure guard.",
+        "separate_tagged_negative": "Both tagged files also contain cacheInvalidationFilter's branch that returns true when Metadata.EntityByName does not find an entity, and ShapeCacheInvalidationEvent only suppresses PrimaryKeyValues / RecordData when both user AND entity exist and ReadIsRowFiltered returns true.",
+        "scope": "A public source-level conditional gap in stable tagged files is verified, but a real deployment with divergent entity metadata or a real user's secret disclosed has not been observed.",
+        "falsification_test": "At the exact tagged runtime, use synthetic data and valid authenticated user; vary receiver metadata as entity known row-filtered / entity known unfiltered / unknown on receiver / unauthenticated user, then separately compare published event key and optional row content; confirm ordinary invalidation remains functional under a proposed no-key unknown branch."
+      }
     },
     {
       "task_id": "PUBLIC-REUSE-CONVERSATION-MIGRATION-NO-CLOBBER-018",
