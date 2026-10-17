@@ -673,7 +673,7 @@
           "file": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/sqlite-idempotency-side-effect-probe.py",
           "command": "python3 machine-discovery/sqlite-idempotency-side-effect-probe.py --self-test",
           "machine_readback": "python3 machine-discovery/sqlite-idempotency-side-effect-probe.py --json",
-          "evidence": "Owner-authored synthetic SQLite model with trigger RAISE(IGNORE): writes-before-snapshot leaves 1 unreferenced row on changed-key retry, snapshot-first gates to 0; same-body false-green control; scoped independent key; caller savepoint rollback. Local equivalent exact-length source model passed 10/10 stdlib checks; GitHub bytes readback confirmed. Does not invoke Pydantic test suite, production data or independent AI."
+          "evidence": "Owner-authored synthetic SQLite model with trigger RAISE(IGNORE): writes-before-snapshot leaves 1 unreferenced row on changed-key retry, snapshot-first gates to 0; same-body false-green control; scoped independent key; caller savepoint rollback. The original single-connection model previously passed 10/10 checks. Current same-file probe adds six deterministic assertions across two separate SQLite connections: A reads key absent, B commits it, A messages-first loses its later snapshot insert and leaves one orphan; snapshot-first with accepted-rowcount gate does not. Isolated two-connection local witness passed both expected outcomes; published bytes were read back, but a full exact-current integrated 16/16 self-test was not separately executed. This is not a Pydantic harness run, production data or independent AI use."
         }
       },
       "acceptable_outputs": [
