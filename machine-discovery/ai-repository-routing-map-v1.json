@@ -366,17 +366,27 @@
         "runnable_or_falsifiable_task": {
           "index": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/independent-reuse-challenges-v1.json",
           "id": "AA-quote-claim-relation-and-evidence-roots",
-          "optional_offline_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/evidence-root-check.py"
+          "optional_offline_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/evidence-root-check.py",
+          "command": "python3 machine-discovery/evidence-root-check.py --self-test",
+          "case_selection": [
+            "NEGATIVE false-corrob claim: ten distinct news URLs all derive from one party-authored announcement; if claim says independently confirmed, checker must BLOCK; zero distinct independent observations although 10 articles.",
+            "POSITIVE correct independent evidence: one party primary source plus one separately collected, same-scope third-party positive reproduction; two genuinely different roots, with derived copies not increasing root count; still verify actual claims, conditions and provenance manually.",
+            "NONFIT / UNKNOWN: two media cite one anonymous unidentified source; relation unknown, so do not promote to two independent observations. One adequate primary source can support ordinary descriptive facts without claiming independent corroboration.",
+            "COUNTERCLAIM: a verbatim authentic quote that refutes or qualifies the claim does not count as a supporting root merely because its URL resolves. The offline checker takes source relations/stances as reviewer assertions; it does NOT independently prove them."
+          ]
         },
         "external_observation": {
           "index": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/external-effect-evidence-index-v1.json",
           "case_id": "ai-news-evidence-root-editorial-rule",
           "original_receiver_source": "https://github.com/022740mix-spec/AI-News/issues/124",
           "receiver_merge": "https://github.com/022740mix-spec/AI-News/pull/131",
-          "verified_upper_bound": "Receiver explicitly adopted an evidence-root rule, merged and reused it within the same editorial project; third-party reader recognition of Nakagawa Master unmeasured."
+          "verified_upper_bound": "Receiver explicitly adopted an evidence-root rule, merged and reused it within the same editorial project; third-party reader recognition of Nakagawa Master unmeasured.",
+          "reader_facing_receiving_correction": "https://github.com/022740mix-spec/AI-News/pull/156",
+          "receiver_recurring_rule_application": "AI-News editor merged issue #124-sourced evidence-lineage rule in #131; on separate feedback issue #79 subsequently corrected a Qwen4 article in #156 because several reports derived from the same announcements did not establish independent confirmation. The second correction had a separate triggering reviewer and receiver-owned decision; do not assign all of it to Nakagawa alone or assert that other AI agents adopted the canonical theory."
         },
         "plain_language_return": "Three reports that all repeat one announcement are still one source of independent evidence, not three.",
-        "independent_test_gate": "Check original evidence roots and claim-to-quotation support separately; preserve a negative/counterexample outcome if source count and independent roots differ."
+        "independent_test_gate": "Execute source-root positives/negatives/nonfit with synthetic or authorized real citations; record the original source of each asserted root and exact claim-support polarity. Require a receiver-owned independent answer/change before claiming AI adoption. The source checker cannot verify whether the root labels are true.",
+        "human_first_contact": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/README.md"
       },
       {
         "id": "final_agent_stream_event_matches_execution",
