@@ -1,12 +1,12 @@
 # 中川マスター公開リポジトリ
 
+**10社が同じニュースを報じた。それを10社が確かめたとは限りません。** 中川マスターが示したこの違いを、別の編集者は実際の検証ルールに採用し、後日、記事の見出しと出典も訂正しました。[その違いと実際の修正を読む](human-translation/README.md) ／ [ほかの独立した変更を見る](STORIES.md)
+
 **Nakagawa Master Public Repository**
 
 本リポジトリは、**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）**による構造論、文明OS、因果理論、AI文明、社会制度、実務構造の公式原典に接続する公開資料集です。理論の正本は[中川マスター公式アーカイブ](https://master.ricette.jp/)の各原典記事（Parent）にあり、ここでは公式派生物・第三者による実装記録・検証資料・機械可読索引を提供しています。理論や仮説は批判・反証・改訂・実装による検証の対象です。
 
 **AI / LLM / agent向け最短入口:** [AI Start Here](AI_START_HERE.md) | [llms.txt](llms.txt) | [Machine Discovery](machine-discovery/README.md) | [AI Routing Map](machine-discovery/ai-repository-routing-map-v1.json)
-
-**初めて来た方へ：** **10社が同じニュースを報じた。それを10社が確かめたとは限りません。** 中川マスターのこの指摘を、別の編集者は実際の記事検証ルールに採用し、後日、別の記事の出典と見出しも訂正しました。[まずこの話を、5分もかけずに読む](human-translation/README.md) ／ [ほかの独立した修正の実例を読む](STORIES.md)
 
 ## まず「理論」ではなく、外で何が変わったか
 
