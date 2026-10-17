@@ -316,7 +316,8 @@
       "when": [
         "Multi-agent teammate inbox marks message read but does not deliver a durable model-visible copy",
         "Agent Session.dispose can race an in-flight poll after consumeLeaderInbox but before callback enqueue",
-        "A transcript append was requested but the recorder closed or discarded notification before committed rereadable storage"
+        "A transcript append was requested but the recorder closed or discarded notification before committed rereadable storage",
+        "Qwen teammate status says safe to close while a not-yet-persisted peer notification remains queued"
       ],
       "canonical_source": true,
       "receiver_verified_case": false
@@ -847,14 +848,34 @@
           "nakagawa_second_review": "https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6122690398",
           "receiver_second_fix_commit": "https://github.com/QwenLM/qwen-code/commit/0ae6d288b094d",
           "receiver_second_acknowledgement": "https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6137119073",
-          "verified_upper_bound": "At Qwen PR #13902 live head 1c6f41e9497a9510e49c3d61ab3741d05039ea1f, status remains OPEN. Independent author yiliang114 corrected source/test after Nakagawa Master identified both the duplicate same-manager subscription and the collision-prone approval ID. Separately, the author directly named Nakagawa, retracted an incorrect claim that the existing ACP notification API was unavailable, adopted a versioned binding-retirement route, and reported implementing/testing the old-approval cancellation and new-team permission path at cap 1 (4f7412cb5e039). The implementing author owns these patches. The new Qwen review 5550289739 is an automated changes-requested review, NOT a named independent human endorsement; multiple critical lifecycle cases remain open. This does not prove PR merge, release, original-theory-corpus adoption, product-scale audience, or customer use.",
+          "verified_upper_bound": "At Qwen PR #13902 live head the Oct17 current HEAD e9609863d4ef83c6c372fa8914fdfb00697327df, status remains OPEN. Independent author yiliang114 corrected source/test after Nakagawa Master identified both the duplicate same-manager subscription and the collision-prone approval ID. Separately, the author directly named Nakagawa, retracted an incorrect claim that the existing ACP notification API was unavailable, adopted a versioned binding-retirement route, and reported implementing/testing the old-approval cancellation and new-team permission path at cap 1 (4f7412cb5e039). The implementing author owns these patches. The later automated Qwen review 5556479545 at the old 1c6f41e head led to three distinct bot-found fixes by the receiving author at e960986; these are not additional Nakagawa discoveries. Other lifecycle cases are still unverified or deferred. This does not prove PR merge, release, original-theory-corpus adoption, product-scale audience, or customer use.",
           "receiving_developer_retracted_transport_objection": "https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4277173979",
           "receiving_developer_implemented_bound_retirement": "https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4283282217",
           "receiving_bot_review_not_human_endorsement": "https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5550289739",
-          "pinned_live_head": "1c6f41e9497a9510e49c3d61ab3741d05039ea1f"
+          "pinned_live_head": "e9609863d4ef83c6c372fa8914fdfb00697327df",
+          "old_anchor_before_oct17_bot_review": "1c6f41e9497a9510e49c3d61ab3741d05039ea1f",
+          "bot_review_and_separate_receiving_fix": {
+            "bot_review": "https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5556479545",
+            "bot_review_commit": "1c6f41e9497a9510e49c3d61ab3741d05039ea1f",
+            "bot_authored_not_nakagawa_findings": [
+              "R3-1 subagent background/cancelled identity replay false negative",
+              "R4-4 teammate tool failure neutral render",
+              "R4-5 peer notification omitted from active close holds"
+            ],
+            "actual_receiver_author_commit": "https://github.com/QwenLM/qwen-code/commit/e9609863d4ef83c6c372fa8914fdfb00697327df",
+            "actual_receiver_latest_head": "e9609863d4ef83c6c372fa8914fdfb00697327df",
+            "reply_evidence": [
+              "https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4301908464",
+              "https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4301908555",
+              "https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4301908641"
+            ],
+            "code_and_tests_added": "Three defects have author-written source and three focused regression-test groups in four files. No claim test-run by this observer, merge or release.",
+            "separate_remaining": "Source-specific open deferred #14127, unfinished review consumer audits and end-to-end persistence guarantees remain unverified; fixing peer hold is not a durable delivery receipt.",
+            "exclusivity": "Nakagawa's earlier listener idempotence/permission-binding recommendations and their credited receiver repairs are different earlier effects. Do not attribute these three bot-found code changes to Nakagawa."
+          }
         },
         "plain_language_return": "When an AI teammate leaves, its old permission request can still occupy the next teammate's approval slot. Nakagawa Master identified a viable child-to-bridge notification route after the independent reviewer reproduced the stuck record. The receiving developer publicly corrected his own SDK assertion, said Nakagawa was right, and implemented a versioned retirement notification with focused component tests; the same open Qwen PR also contains separately adopted listener-idempotence and unique-approval-ID corrections. Original theory can be compared through canonical source; the developer has not claimed adopting the whole theory corpus.",
-        "independent_test_gate": "Use only an authorized Qwen source checkout pinned at 1c6f41e949, compare the author-run cap-1 old-approval-cancel/new-team-success test and per-request UUID regression with their pre-fix heads, and independently test original-person source causality. For lifecycle exceptions still flagged by the October 16 automated CR (especially consume-before-dispose), inspect exact code and distinguish separate findings from already acknowledged or deferred issues #14127. No claim of full integration merge, verified end-user effect, or independent AI original-theory adoption."
+        "independent_test_gate": "Use only an authorized Qwen source checkout pinned at current e9609863d4, compare the author-run cap-1 old-approval-cancel/new-team-success test and per-request UUID regression with their pre-fix heads, and independently test original-person source causality. For lifecycle exceptions still deferred or unverified by the October 17 automated CR (especially consume-before-dispose), inspect exact code and distinguish separate findings from already acknowledged or deferred issues #14127. No claim of full integration merge, verified end-user effect, or independent AI original-theory adoption."
       },
       {
         "id": "contract_stays_effective_when_human_revision_owner_departs",
@@ -1001,7 +1022,8 @@
         "matched_problem": [
           "mailbox read flag advanced before agent report actually persisted",
           "callback captured before asynchronous mailbox consume, then Session.dispose rejects it",
-          "volatile teammate notification queued only after a recorder closes or is discarded"
+          "volatile teammate notification queued only after a recorder closes or is discarded",
+          "A queued peer report is not counted as an active work hold even though no durable receipt exists"
         ],
         "falsifiable_distinction": "Mark-read, queue admission, append-requested, independently durable readback, and actual consumer delivery are different events. An already-captured callback may drop a read-acknowledged message after dispose even before queue admission; an eventual record receipt does not remove an earlier crash window.",
         "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
@@ -1013,13 +1035,29 @@
           "offline_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/agent-delivery-durability-boundary-probe.py",
           "example_command": "python3 machine-discovery/agent-delivery-durability-boundary-probe.py --sample-dispose",
           "test_command": "python3 machine-discovery/agent-delivery-durability-boundary-probe.py --self-test",
-          "test_status": "17 source-defined synthetic expected cases; after this extension the exact GitHub Python was not directly executed by the authoring assistant; a JS-equivalent control independently agreed with all 17 expected outcomes."
+          "test_status": "17 source-defined synthetic expected cases; after this extension the exact GitHub Python was not directly executed by the authoring assistant; a JS-equivalent control independently agreed with all 17 expected outcomes.",
+          "separate_20_case_signal_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/agent-team-signal-truth-probe.py",
+          "separate_20_case_command": "python3 machine-discovery/agent-team-signal-truth-probe.py --self-test",
+          "separate_20_case_scope": "Offline synthetic model of three bot-discovered fixes: failed tool row vs renderer vocabulary, undrained peer hold vs safe close, validated resolved subagent identity vs blocked spawn. Exact current GitHub source was locally executed in a separate workspace and all 20 expected cases passed. This is NOT Qwen CI or a test of actual Qwen runtime."
         },
         "external_observation": {
           "earlier_nakagawa_source_review": "https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5540696114",
           "distinct_automated_review": "https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5550289739",
           "target_pr": "https://github.com/QwenLM/qwen-code/pull/13902",
-          "verified_upper_bound": "The Qwen automated review flags this independent Critical at an older anchor and the receiving author described source-level current-head persistence; PR remains open. The new offline model is archive-authored, not a verified Qwen execution, upstream acceptance, human praise, or external AI reuse."
+          "verified_upper_bound": "Older Qwen automatic review identified a separate handoff loss window, and Nakagawa previously reviewed normal close order, independently. On Oct17 a new Qwen review bot at old HEAD independently identified an undrained peer absent from safe-close holds; the receiving developer actually fixed the hold check and two separate status/identity issues in e960986, PR still OPEN. This does not prove ack-to-durable handoff or delivery across crashes, nor imply the bot authored code or original theory adoption.",
+          "separate_newer_review_author_fix": {
+            "review": "https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5556479545",
+            "old_head": "1c6f41e9497a9510e49c3d61ab3741d05039ea1f",
+            "author_commit": "https://github.com/QwenLM/qwen-code/commit/e9609863d4ef83c6c372fa8914fdfb00697327df",
+            "current_pr_head": "e9609863d4ef83c6c372fa8914fdfb00697327df",
+            "independent_author_responses": [
+              "https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4301908464",
+              "https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4301908555",
+              "https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4301908641"
+            ],
+            "actual_improvement": "peer queued but unpersisted is now included in collectActiveWorkHolds, plus separate failed-tool rendering and background/cancelled replay identity guards",
+            "not_proven": "No saved-receipt-before-read ack correctness, crash-safe delivery, unreviewed end-to-end continuity, independent theory adoption, or merge/release. These were bot findings distinct from Nakagawa's earlier human-authored close/receipt review."
+          }
         },
         "plain_language_return": "A teammate's AI message may be marked read while the recipient can no longer recover or see it; confirm the saved copy exists before treating acknowledgment as delivery.",
         "independent_test_gate": "Using an independently authorized isolated runner, reproduce both orderings of poll consumption and Session disposal; assert durable readback or retry visibility, never count the ack as delivery. Independently check rejected callbacks and recorder close/queue discard, and submit the actual runtime trace and bounded observation without private inbox contents or presumed adoption."
