@@ -74,6 +74,22 @@ python3 machine-discovery/approval-effect-boundary-lab.py --sample
 
 出発点は[中川マスターのPydantic AIにおける具体的な設計上の区別](https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-6232362854)です。別の開発者は、そのうち[「二人が同じ承認を競合しても一人だけ成功する」検査を独自に実装](https://github.com/tonydzi/agent-approval-gate/commit/1bc8fc71470a3629546e28d47f04c76b5863fb8e)しています。今回の教材は**その先の外部処理との境界**も手元で確認するためのものです。[原典第8巻](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)は関連する比較対象であり、第三者が原典全体を採用したという主張ではありません。
 
+## 6. AIの仲間から二通届いた。画面では一通にまとめられていませんか？
+
+AIチームのメッセージは、同じ送信者・同じ受信者でも**別々の出来事**です。一方、進捗表示では同じツールの最新状態へまとめてよいものがあります。両者を受信者名だけでまとめると、別々の指示・報告が消えたり、ツールの表示が仲間の発言に上書きされたりします。
+
+中川マスターが[同じ送信者→受信者の二通でも失われる反例](https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4305247350)を示し、[Qwenの開発者がその条件を明示的に認めて実装・回帰テストを修正しました](https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4306135401)（PR #13902 は現在マージ前）。
+
+```sh
+python3 machine-discovery/agent-event-distinctness-probe.py --self-test
+python3 machine-discovery/agent-event-distinctness-probe.py --sample > event-trace.json
+python3 machine-discovery/agent-event-distinctness-probe.py --input event-trace.json
+```
+
+[14ケースの合成検査とJSON比較器](machine-discovery/agent-event-distinctness-probe.py)を用意しました。別のAgent UIの実測ログを使う場合は、元のメッセージ・ツール進捗を `events`、利用者に表示された行を `rows` へ整理して入力します。メッセージの件数・順序・本文・送受信者を守り、ツール進捗についてはこの教材の限定モデルとして**同一エージェントごとに最新一行**を確認します。終了コードは `0=教材の条件と整合`、`1=差分あり`、`2=入力不備`。実際のQwen製品テストや、AIが原典を独立採用したという結果ではありません。
+
+なぜ「数が合う」だけでは不十分かを理論側から考える場合は、[公式アーカイブの原典第8論（認識基盤と証拠系譜）](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)へ戻って比較できます。中川マスターの個別レビューの寄与と、第三者の実装者自身の修正は別々の一次資料に残っています。
+
 ## 役に立ったら、GitHubで残す
 
 - **Star:** [リポジトリのトップ](https://github.com/Nakagawa-master/nakagawa-theory-archive)右上の **Star** は、後で見返すための保存・推薦になります。
@@ -85,7 +101,7 @@ python3 machine-discovery/approval-effect-boundary-lab.py --sample
 
 ---
 
-## English — run five checks before deciding whether to star
+## English — run six checks before deciding whether to star
 
 This repository connects Nakagawa Master's original theory corpus, independently inspectable real-world developer/editor changes, and small offline verification tools. **You do not have to endorse a theory to try a test.**
 
@@ -96,6 +112,8 @@ This repository connects Nakagawa Master's original theory corpus, independently
 4. **Marking an AI teammate message read is not proof it survived recorder close.** Run `python3 machine-discovery/agent-delivery-durability-boundary-probe.py --self-test`, or generate a non-confidential synthetic disposal trace with `--sample-dispose` and check it using `--input trace.json`. Exit 0 requires a proven safe checkpoint, exit 1 denotes an observed loss window or unresolved close, and exit 2 means unknown/non-fit/invalid: **do not treat 2 as passing CI**. [Nakagawa Master's specific close-path review](https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5540696114) led the [independent Qwen author to implement a real-close-route test](https://github.com/QwenLM/qwen-code/commit/62c03b2eb62975775c66968d97f27f01028385a3) and [explicitly acknowledge the review](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6233311153). The test models recorder write acceptance, not actual crash-safe disk replay. A [separate reviewer has APPROVED the current PR head](https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5557786519) after evaluating the ten prior critical findings; a new session-approval policy suggestion remains and **the PR has not merged**. Compare with [original Volume 8](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/) where useful.
 
 5. **Approval does not prove a once-only external effect.** Run `python3 machine-discovery/approval-effect-boundary-lab.py --self-test` (12 synthetic checks) or `--sample` for the lost-acknowledgement sequence. One transaction atomically reserves authority; a *separate mock* SQLite effect store holds receipts. Same-generation reconciliation can avoid a double write **only because this synthetic mock provides a durable idempotency key**. Without that property at the real endpoint, the test models `UNKNOWN_BLOCK_REEXECUTION`. See [Nakagawa Master's specific authority/effect distinction](https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-6232362854) and an [independent developer's narrower one-winner race test](https://github.com/tonydzi/agent-approval-gate/commit/1bc8fc71470a3629546e28d47f04c76b5863fb8e). This check does not claim a real payment/tool ran or that another AI adopted the [adjacent canonical original](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/).
+
+6. **A teammate's two messages are not one mutable tool-progress row.** Run `python3 machine-discovery/agent-event-distinctness-probe.py --self-test` (14 synthetic positive/negative cases), `--sample`, then `--input your.json` to compare original events with UI rows. This portable observation model checks same-sender message preservation separately from per-agent latest tool progress; it does not run Qwen or certify independent AI theory adoption. [Nakagawa's distinct same-sender counterexample](https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4305247350) was [accepted and fixed by the receiving developer](https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4306135401) in an unmerged PR. See the [canonical original for conceptual comparison](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/).
 
 The source examples are the [AI-News editor's merged rule](https://github.com/022740mix-spec/AI-News/pull/131) and [Pydantic AI's independently authored merged fix](https://github.com/pydantic/pydantic-ai/pull/9982), with Nakagawa Master's particular review contributions traceable in their source discussions. Canonical original work lives at [master.ricette.jp](https://master.ricette.jp/).
 
