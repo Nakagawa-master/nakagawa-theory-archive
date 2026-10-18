@@ -1306,7 +1306,7 @@ At that point Hosted Managed delivery was active while ordinary/local Managed ac
 
 ## 40. LangGraph | A completed sibling must not execute again when another interrupted sibling resumes
 
-**Source:** [LangGraph issue #9106](https://github.com/langchain-ai/langgraph/issues/9106), [initial fix candidate #9113](https://github.com/langchain-ai/langgraph/pull/9113), and [new upstream fix PR #9315](https://github.com/langchain-ai/langgraph/pull/9315). **Stage:** two independent people answered Nakagawa Master's distinct authority-vs-re-execution test proposal with executed regressions; another LangGraph developer opened source-and-tests PR #9315 on 2026-10-14. **#9315 remains OPEN, not merged.**
+**Source:** [LangGraph issue #9106](https://github.com/langchain-ai/langgraph/issues/9106), [initial fix candidate #9113](https://github.com/langchain-ai/langgraph/pull/9113), and [new upstream fix PR #9315](https://github.com/langchain-ai/langgraph/pull/9315). **Stage:** two independent people answered Nakagawa Master's distinct authority-vs-re-execution test proposal with executed regressions; another LangGraph developer opened source-and-tests PR #9315 on 2026-10-14. **#9315 was MERGED on 2026-10-15** and appears in the [official LangGraph 1.2.16 release notes](https://github.com/langchain-ai/langgraph/releases/tag/1.2.16).
 
 Imagine two parallel AI-tool operations awaiting approval. A finishes after its approval, then B is approved and resumed. The graph's final state can look correct while **A's post-approval external effect executes a second time**. Nakagawa Master distinguished four things that should not be conflated: an old approval receipt, current authority to execute, an additional dispatch attempt, and the actual external effect.
 
@@ -1317,17 +1317,17 @@ Imagine two parallel AI-tool operations awaiting approval. A finishes after its 
 
 The [upstream #9315 patch](https://github.com/langchain-ai/langgraph/pull/9315) changes how a nested graph distinguishes an ordinary resumed run from time-travel replay. It adds parallel-interrupt and nested `@task` regressions plus a test retaining deliberate time-travel replay behavior. Its author expressly credits the original bug reporter, the earlier fix candidate's author, and another related root-cause finder. The PR also identifies a separate `durability="exit"` duplicate-output path in [#9314](https://github.com/langchain-ai/langgraph/pull/9314); nested `@entrypoint` interrupt replay is outside this patch.
 
-**What this establishes:** two distinct third parties explicitly ran and reported the requested authority/effect checks, and an upstream maintainer-side implementation now exists as an open PR. **Attribution boundary:** #9315's author does *not* document direct reliance on Nakagawa Master's proposal; the code and fix are the other developer's work. Its eventual merge, release, real-world effect counts, general network partition correctness, and broad human or independent LLM adoption remain separate observations. Nakagawa Master's [original Theory 16: Asynchronous Civilization, Communication Partition and Reconnection](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/) is a related Parent for the *specific* distinction that stale approval/state must not silently become current authority, not a claim that this PR implements the full theory.
+**What this establishes:** two distinct third parties explicitly ran and reported the requested authority/effect checks, and the independently authored upstream implementation was [merged via #9315](https://github.com/langchain-ai/langgraph/pull/9315). **Attribution boundary:** #9315's author does *not* document direct reliance on Nakagawa Master's proposal; the code and fix are the other developer's work. Its upstream merge and [official 1.2.16 release](https://github.com/langchain-ai/langgraph/releases/tag/1.2.16) are now verified; real-user effects, general network-partition correctness, and broad human or independent LLM adoption remain separate unverified observations. Nakagawa Master's [original Theory 16: Asynchronous Civilization, Communication Partition and Reconnection](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/) is a related Parent for the *specific* distinction that stale approval/state must not silently become current authority, not a claim that this PR implements the full theory.
 
 ---
 
 ## 41. PydanticAI | An idempotent retry must not retain unreferenced messages
 
-**Source:** [PR #9982](https://github.com/pydantic/pydantic-ai/pull/9982). **Stage:** external author reproduced Nakagawa's finding, repaired code and added tests; PR open/unmerged.
+**Source:** [PR #9982](https://github.com/pydantic/pydantic-ai/pull/9982). **Stage (checked 2026-10-19):** external author reproduced Nakagawa's finding, repaired code and added tests; **merged on 2026-10-16**.
 
 Writing new `snapshot_messages` before an idempotency trigger suppresses a duplicate snapshot can leave permanent unreferenced messages. [Nakagawa's review](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6052803154) identified the sequence; [aweis89 explicitly reproduced and fixed it](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879) at [commit `72a9a2b4`](https://github.com/pydantic/pydantic-ai/commit/72a9a2b4e263e5a81c7e939809daff6292f61557).
 
-**Verified:** explicit Origin-addressed third-party reproduction and code/test change in both tested connection modes. **Not verified:** merge, release, runtime user impact or fully solved concurrent saves on caller-owned connections; the author notes that remaining limit.
+**Verified:** explicit Origin-addressed third-party reproduction, code/test change in both tested connection modes and upstream merge. **Not verified:** downstream release, runtime user impact or fully solved concurrent saves on caller-owned connections; the author notes that remaining limit.
 
 ---
 
@@ -1383,13 +1383,13 @@ After `notifications/tools/list_changed`, an unsuccessful `tools/list` does not 
 
 ## 47. Qwen Code | A recorded stop is not proof that this tool call issued it
 
-**Source:** [Qwen Code PR #13923](https://github.com/QwenLM/qwen-code/pull/13923), [Nakagawa Master's concrete recovery inverse](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434), and [third-party implementation commit](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a). **Stage:** developer `wenshao` [directly acknowledged @Nakagawa-master and the real defect](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413), then changed code and regression tests; PR open/unmerged at inspection.
+**Source:** [Qwen Code PR #13923](https://github.com/QwenLM/qwen-code/pull/13923), [Nakagawa Master's concrete recovery inverse](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434), and [third-party implementation commit](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a). **Stage:** developer `wenshao` [directly acknowledged @Nakagawa-master and the real defect](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413), then changed code and regression tests; [PR #13923 merged on 2026-10-12](https://github.com/QwenLM/qwen-code/pull/13923).
 
 In a multi-agent runtime, a member's `stopRequested` bit says the member was asked to stop, not **which invocation caused that stop**. If a human had already cancelled the member, recovery could incorrectly attribute that earlier state to a newly generated `request_shutdown` call that never executed. Nakagawa gave a narrow failing sequence and a positive control for a stop the current call really did commit.
 
 The implementer changed recovery attribution to an actual `shutdown:<callKey>` commit receipt, instead of reading the member-wide flag. Added regressions check that a user cancel cannot be credited to a never-run call and that a committed stop remains attributable even after a later continuation falls back.
 
-**Verified:** explicit outside-developer acknowledgment with person Origin and a concrete third-party code/test change. **Not verified:** PR merge, release, all-path physical integration testing, downstream users, or whole-theory endorsement. Other reviewers independently identified additional problems on the same PR; their work is not attributed solely to Nakagawa.
+**Verified:** explicit outside-developer acknowledgment with person Origin, a concrete third-party code/test change, and upstream merge. **Not verified:** a release containing the exact fix, all-path physical integration testing, downstream users, or whole-theory endorsement. Other reviewers independently identified additional problems on the same PR; their work is not attributed solely to Nakagawa.
 
 ---
 
