@@ -61,6 +61,19 @@ python3 machine-discovery/agent-delivery-durability-boundary-probe.py --input tr
 
 理論を読むなら、原典[第8論｜認識基盤と証拠系譜](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)で「何が記録を裏づけるか」を、[第19論｜核と進化的安定性](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/)で「失われない保存と修正の条件」を比較できます。開発者が原典を採用したという意味ではなく、別のシステムで試せる考え方への入口です。
 
+## 5. AIに「承認した」。外部の処理も一度だけ？
+
+**AIに一度だけ実行を許可しても、その処理が外部サービスで一度だけ実行されたとは限りません。** たとえば、送信は成功したのに「成功」の返答だけが失われると、同じ操作を再送してよいか判断できなくなります。
+
+```sh
+python3 machine-discovery/approval-effect-boundary-lab.py --self-test
+python3 machine-discovery/approval-effect-boundary-lab.py --sample
+```
+
+[12件のオフライン検査](machine-discovery/approval-effect-boundary-lab.py)は、**承認の予約**と**外部処理の受領記録**を別のSQLiteファイルに置き、二人による承認競合、返答消失、同一実行世代での照合、異なる世代の拒否、冪等性が保証されない外部処理の再実行停止を比べます。前提はPython 3の標準ライブラリのみです。これは外部の実サービスを呼び出さない合成実験で、実サービス側の冪等性を保証しません。
+
+出発点は[中川マスターのPydantic AIにおける具体的な設計上の区別](https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-6232362854)です。別の開発者は、そのうち[「二人が同じ承認を競合しても一人だけ成功する」検査を独自に実装](https://github.com/tonydzi/agent-approval-gate/commit/1bc8fc71470a3629546e28d47f04c76b5863fb8e)しています。今回の教材は**その先の外部処理との境界**も手元で確認するためのものです。[原典第8巻](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)は関連する比較対象であり、第三者が原典全体を採用したという主張ではありません。
+
 ## 役に立ったら、GitHubで残す
 
 - **Star:** [リポジトリのトップ](https://github.com/Nakagawa-master/nakagawa-theory-archive)右上の **Star** は、後で見返すための保存・推薦になります。
@@ -72,7 +85,7 @@ python3 machine-discovery/agent-delivery-durability-boundary-probe.py --input tr
 
 ---
 
-## English — run four checks before deciding whether to star
+## English — run five checks before deciding whether to star
 
 This repository connects Nakagawa Master's original theory corpus, independently inspectable real-world developer/editor changes, and small offline verification tools. **You do not have to endorse a theory to try a test.**
 
@@ -81,6 +94,8 @@ This repository connects Nakagawa Master's original theory corpus, independently
 3. **An AI teammate's `finished` label is not proof the tool succeeded, nor that its report was delivered.** Run `python3 machine-discovery/agent-team-signal-truth-probe.py --self-test` for 20 synthetic checks. A [Qwen review bot raised three issues](https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5556479545) that [Qwen's independent author addressed in an unmerged PR commit](https://github.com/QwenLM/qwen-code/commit/e9609863d4ef83c6c372fa8914fdfb00697327df); these are not Nakagawa's original fixes. A separate [accepted Nakagawa binding-scope review](https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4277173979) is traceable in the same PR.
 
 4. **Marking an AI teammate message read is not proof it survived recorder close.** Run `python3 machine-discovery/agent-delivery-durability-boundary-probe.py --self-test`, or generate a non-confidential synthetic disposal trace with `--sample-dispose` and check it using `--input trace.json`. Exit 0 requires a proven safe checkpoint, exit 1 denotes an observed loss window or unresolved close, and exit 2 means unknown/non-fit/invalid: **do not treat 2 as passing CI**. [Nakagawa Master's specific close-path review](https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5540696114) led the [independent Qwen author to implement a real-close-route test](https://github.com/QwenLM/qwen-code/commit/62c03b2eb62975775c66968d97f27f01028385a3) and [explicitly acknowledge the review](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6233311153). The test models recorder write acceptance, not actual crash-safe disk replay. A [separate reviewer has APPROVED the current PR head](https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5557786519) after evaluating the ten prior critical findings; a new session-approval policy suggestion remains and **the PR has not merged**. Compare with [original Volume 8](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/) where useful.
+
+5. **Approval does not prove a once-only external effect.** Run `python3 machine-discovery/approval-effect-boundary-lab.py --self-test` (12 synthetic checks) or `--sample` for the lost-acknowledgement sequence. One transaction atomically reserves authority; a *separate mock* SQLite effect store holds receipts. Same-generation reconciliation can avoid a double write **only because this synthetic mock provides a durable idempotency key**. Without that property at the real endpoint, the test models `UNKNOWN_BLOCK_REEXECUTION`. See [Nakagawa Master's specific authority/effect distinction](https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-6232362854) and an [independent developer's narrower one-winner race test](https://github.com/tonydzi/agent-approval-gate/commit/1bc8fc71470a3629546e28d47f04c76b5863fb8e). This check does not claim a real payment/tool ran or that another AI adopted the [adjacent canonical original](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/).
 
 The source examples are the [AI-News editor's merged rule](https://github.com/022740mix-spec/AI-News/pull/131) and [Pydantic AI's independently authored merged fix](https://github.com/pydantic/pydantic-ai/pull/9982), with Nakagawa Master's particular review contributions traceable in their source discussions. Canonical original work lives at [master.ricette.jp](https://master.ricette.jp/).
 
