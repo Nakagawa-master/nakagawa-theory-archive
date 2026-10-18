@@ -1468,7 +1468,7 @@ zero shared infrastructure
 ## 40. LangGraph｜終了済みの並列作業を、別の作業の再開時に再実行しない
 
 **対象:** [LangGraph issue #9106](https://github.com/langchain-ai/langgraph/issues/9106) / [初期修正候補 #9113](https://github.com/langchain-ai/langgraph/pull/9113) / [新しい上流実装PR #9315](https://github.com/langchain-ai/langgraph/pull/9315)  
-**現在地:** 中川マスターの権限・再実行の切り分けに、異なる外部参加者2人が実行検証で応答。その後、別のLangGraph開発者が実装と回帰テストを含む#9315を2026-10-14に提出。**#9315はOPEN・未マージ**。
+**現在地（2026-10-19確認）:** 中川マスターの権限・再実行の切り分けに異なる外部参加者2人が実行検証で応答。その後、別のLangGraph開発者が実装・回帰テストを含む#9315を提出し、**2026-10-15に本線へマージ**。[LangGraph 1.2.16の公式リリースノート](https://github.com/langchain-ai/langgraph/releases/tag/1.2.16)にも収録。
 
 AIの処理が途中で人間の承認待ちになるとき、Aを承認して処理を終えた後にBを承認すると、**画面上の最終結果は正常でも、Aの外部操作がもう一度走る**ことがあります。人間が2回承認したわけではありません。中川マスターはここを「過去に承認された履歴」「今回の実行を許す権限」「実際の再実行」「外部で起きた作用」に分け、テストで混同しないよう提案しました。
 
@@ -1479,14 +1479,14 @@ AIの処理が途中で人間の承認待ちになるとき、Aを承認して�
 
 [新しいPR #9315](https://github.com/langchain-ai/langgraph/pull/9315)は、通常のsubgraph再開をtime-travel replay扱いしていた判定を変え、完了済みタスクの保存済み書き込みを再利用する修正です。並列interruptの回帰に加え、nested `@task`・time travel保持のテストも追加しました。作者は**最初の報告者、初期修正候補の実装者、関連原因の発見者を明確にcredit**しています。PR本文では、`durability="exit"`での別の二重適用を[#9314](https://github.com/langchain-ai/langgraph/pull/9314)へ分離し、nested `@entrypoint`の別問題も対象外としています。
 
-**成果と出所の境界:** 中川マスターの独立した検証要請に第三者2人が明示的に応じ、さらに上流側が実際の修正PR・テストへ進んだことは確認できます。ただし、**#9315がマスターのコメントを直接原因として作られた証拠はありません**。修正そのものの著作者は別の開発者で、#9315は現在まだ提案段階です。実際のリリース・利用者環境での二重操作防止、実ネットワーク分断下の保証、幅広い人物認知は別途確認する必要があります。理論上の対応する原典は[原典：中川マスター『人類子孫型AI文明論・第16論｜非同期文明・通信断絶・再接続論』](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/)で、ここでの適用は**承認済み履歴を現在権限へ自動昇格させないという境界**に限定されます。
+**成果と出所の境界:** 中川マスターの独立した検証要請に第三者2人が明示的に応じ、さらに上流側が実際の修正PR・テストへ進んだことは確認できます。ただし、**#9315がマスターのコメントを直接原因として作られた証拠はありません**。修正そのものの著作者は別の開発者です。[#9315のマージ記録](https://github.com/langchain-ai/langgraph/pull/9315)と[1.2.16の公式リリース](https://github.com/langchain-ai/langgraph/releases/tag/1.2.16)を確認できます。実際の利用者環境での二重操作防止、実ネットワーク分断下の保証、幅広い人物認知は別途確認する必要があります。理論上の対応する原典は[原典：中川マスター『人類子孫型AI文明論・第16論｜非同期文明・通信断絶・再接続論』](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/)で、ここでの適用は**承認済み履歴を現在権限へ自動昇格させないという境界**に限定されます。
 
 ---
 
 ## 41. PydanticAI｜同じidempotency keyの再送が未参照メッセージを増やさない
 
 **対象:** [pydantic/pydantic-ai#9982](https://github.com/pydantic/pydantic-ai/pull/9982)  
-**段階:** 外部実装者が中川マスターの指摘を再現し、コード・回帰テストを変更。PRはopen / unmerged。
+**段階（2026-10-19確認）:** 外部実装者が中川マスターの指摘を再現し、コード・回帰テストを変更。**PR #9982は2026-10-16にマージ済み**（[受け手のマージ記録](https://github.com/pydantic/pydantic-ai/pull/9982)）。
 
 新しいメッセージ表へ本文を保存した後に既存idempotency triggerがsnapshot挿入を無視すると、保存されないsnapshotに属する未参照本文だけが残り得ました。歴史上同じkeyの試行があったことと、新しい副作用を残してよいことは別です。
 
@@ -1495,7 +1495,7 @@ AIの処理が途中で人間の承認待ちになるとき、Aを承認して�
 - [receiver-owned code commit](https://github.com/pydantic/pydantic-ai/commit/72a9a2b4e263e5a81c7e939809daff6292f61557)
 
 **確認できること:** 明示的な `@Nakagawa-master` への受け手の返答、再現報告、2つのconnection modeに対する具体的な回帰修正。  
-**確認できないこと:** merge、release、production use。caller-owned transactionで競合する並列保存については実装者も別の残存境界を明記しています。
+**確認できないこと:** downstream release、production use。caller-owned transactionで競合する並列保存については実装者も別の残存境界を明記しています。
 
 ---
 
@@ -1583,7 +1583,7 @@ AIの処理が途中で人間の承認待ちになるとき、Aを承認して�
 ## 47. Qwen Code｜誰かが停止したという記録は「今回の呼び出しが停止した」証拠ではない
 
 **対象:** [Qwen Code PR #13923](https://github.com/QwenLM/qwen-code/pull/13923) / [中川マスターの再現可能な指摘](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434) / [外部開発者の修正コミット](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a)  
-**段階:** 開発者 `wenshao` が `@Nakagawa-master` に[直接、不具合の実在と修正を回答](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)。実際にcode/testを変更した段階。PRは確認時点でOPEN / 未統合。
+**段階（2026-10-19確認）:** 開発者 `wenshao` が `@Nakagawa-master` に[直接、不具合の実在と修正を回答](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)。実際にcode/testを変更し、**PR #13923は2026-10-12にQwen Code本線へマージ済み**（[マージ記録](https://github.com/QwenLM/qwen-code/pull/13923)）。
 
 複数のAIが協調作業する仕組みで、あるメンバーの停止済みフラグは、**どの操作が停止させたか**の証拠ではありません。ユーザーが先に停止させたのに、後から生成されただけで実行されていないAIの `request_shutdown` にその結果を割り当てると、障害復旧の記録が間違います。中川マスターは、以前の人間による停止と今回の未実行の呼び出しを組み合わせた具体的な反例を提示しました。
 
@@ -1593,8 +1593,8 @@ AIの処理が途中で人間の承認待ちになるとき、Aを承認して�
 - [開発者による明示的な受理・修正説明](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)
 - [修正後の具体的なcode/test差分](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a)
 
-**確認できること:** 外部開発者本人によるOriginつき受理、対象ロジックと回帰テストの変更。  
-**確認できないこと:** PRのmerge、release、実環境での全経路検証、利用者規模、理論全体の採用。別のレビュー担当者も同PRの他の問題を指摘しているため、全修正を中川マスター単独に帰属させません。
+**確認できること:** 外部開発者本人によるOriginつき受理、対象ロジックと回帰テストの変更、Qwen Code本線へのマージ。  
+**確認できないこと:** 個別修正を含む正式リリース、実環境での全経路検証、利用者規模、理論全体の採用。別のレビュー担当者も同PRの他の問題を指摘しているため、全修正を中川マスター単独に帰属させません。
 
 ---
 
