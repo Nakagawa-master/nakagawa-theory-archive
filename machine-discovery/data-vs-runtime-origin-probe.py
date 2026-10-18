@@ -2,7 +2,7 @@
 """Offline inverse tests: content that names an origin is not origin evidence.
 
 Educational, source-specific model of four AI integration boundaries:
-Qwen Code PR #14129 hook-context dedup (receiver now uses injector-owned receipt),
+Qwen Code PR #14129 hook-context dedup (injector-owned receipt proposed; live interactive history can lose it on flatten),
 CUGA PR #777 tool-result classification (receiver changed code/tests),
 MemberJunction PR #5647 caller-vs-timeout classification (receiver fixed word-only logic; typed-marker follow-up open), and
 Pydantic AI PR #10235 same-name/different-endpoint metadata (receiver acknowledged the factual counterexample, corrected PR explanation, retained name-only gating).
@@ -35,6 +35,24 @@ class Message:
     id: str
     role: str
     parts: tuple[str, ...]
+
+
+@dataclass(frozen=True)
+class StampedPart:
+    text: str
+    has_runtime_receipt: bool
+
+
+def hand_off_part_to_history(part: StampedPart, *, preserves_metadata: bool) -> StampedPart:
+    """Illustrate the Qwen #14129 distinction: sent text vs receipt survival.
+
+    In the under-review interactive route, flatMapTextParts returns raw strings
+    and toParts builds fresh text-only objects, losing the symbol receipt.
+    The preserving branch is an illustrative acceptance target, not upstream code.
+    """
+    if preserves_metadata:
+        return StampedPart(part.text, part.has_runtime_receipt)
+    return StampedPart(part.text, False)
 
 
 @dataclass(frozen=True)
@@ -153,6 +171,9 @@ def cases() -> list[tuple[str, bool]]:
     user = Message('user-1', 'user', (tag,))
     model = Message('model-1', 'model', (tag,))
     fake_meta = Message('user-2', 'user', (tag, 'hook_origin: runtime-1'))
+    stamped = StampedPart(tag, True)
+    flattened = hand_off_part_to_history(stamped, preserves_metadata=False)
+    preserved = hand_off_part_to_history(stamped, preserves_metadata=True)
     caller_timeout_words = AbortObservation('Please cancel; it timed out for me', 'caller')
     deadline = AbortObservation('The operation timed out', 'runtime_deadline')
     plain_cancel = AbortObservation('Stop now', 'caller')
@@ -175,6 +196,9 @@ def cases() -> list[tuple[str, bool]]:
         ('plain_caller_cancel_stays_cancelled', not timeout_in_reason_text(plain_cancel) and not timeout_by_declared_origin(plain_cancel)),
         ('empty_history_is_not_prior_hook', not provenance_bound_dedup([], [], 'session-A', 'ctx')),
         ('real_prior_hook_deduplicates', provenance_bound_dedup([legit], [valid], 'session-A', 'ctx')),
+        ('injector_receipt_exists_before_handoff', stamped.has_runtime_receipt),
+        ('string_projection_keeps_bytes_but_loses_receipt', flattened.text == tag and not flattened.has_runtime_receipt),
+        ('metadata_preserving_handoff_retains_receipt', preserved.text == tag and preserved.has_runtime_receipt),
         ('old_guard_falsely_accepts_user_text', text_only_dedup([user], 'ctx')),
         ('user_text_does_not_prove_hook', not provenance_bound_dedup([user], [], 'session-A', 'ctx')),
         ('old_guard_falsely_accepts_model_echo', text_only_dedup([model], 'ctx')),
@@ -207,6 +231,7 @@ def main() -> int:
             'scenario': 'ordinary user quoted the reserved tag; the hook has not run',
             'text_only_guard_claims_prior_hook': text_only_dedup([user], 'ctx'),
             'trusted_hook_receipt_found': provenance_bound_dedup([user], [], 'session-A', 'ctx'),
+            'live_interactive_string_projection_loses_receipt': not hand_off_part_to_history(StampedPart(wrapped('ctx'), True), preserves_metadata=False).has_runtime_receipt,
             'next_hook_should_be_injected': True,
             'tool_marker_in_successful_data': tool_outcome('call-1', {OLD_CUGA_MARKER: 'ordinary'}, {'call-1': 'success'}),
             'caller_cancellation_words_are_not_timeout_origin': not timeout_by_declared_origin(AbortObservation('It timed out for me', 'caller')),
