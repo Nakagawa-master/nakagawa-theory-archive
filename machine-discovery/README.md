@@ -11,6 +11,18 @@ These files are **not canonical theories**. They help retrieval systems locate, 
 
 **AI / LLM fastest problem-first route:** read [AI Repository Routing Map → `task_first_selection`](ai-repository-routing-map-v1.json) for twenty source-bounded, real-problem routes connecting a reader's question to a canonical Parent **only where a source-backed relation exists**, a falsifiable check, and the original independent receiver evidence **where available**. Some engineering cases have no proven theory-derived parent and are explicitly marked as such. Each route includes a human-understandable explanation and a negative/adoption boundary. Use one relevant route rather than indiscriminately loading the full catalog; it is a non-canonical optional discovery aid, not permission to act or proof of an external model using it.
 
+## Separate teammate messages from mutable tool progress — 14 portable checks
+
+In [Qwen Code #13902](https://github.com/QwenLM/qwen-code/pull/13902), [Nakagawa Master's same-sender/same-recipient two-message counterexample](https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4305247350) identified a way a recipient-keyed coalescer could erase a distinct message. The [independent receiving developer fixed the message/tool distinction and added tests](https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4306135401); the PR remains open. For a **different real agent UI** that you are authorized to inspect, the [agent-event-distinctness-probe.py](agent-event-distinctness-probe.py) accepts normalized original `events` and observed `rows`, preserving every separate message instance while testing the latest progress row per tool actor in its deliberately limited example model:
+
+```sh
+python3 machine-discovery/agent-event-distinctness-probe.py --self-test
+python3 machine-discovery/agent-event-distinctness-probe.py --sample > events.json
+python3 machine-discovery/agent-event-distinctness-probe.py --input events.json
+```
+
+It has 14 local positive/negative/invalid synthetic cases, makes no network requests, and is not an actual Qwen runtime test or independent original-theory adoption evidence. For conceptual comparison, independently consult the [canonical epistemic-integrity source](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/); no developer's use of that theory is inferred from a code change. Report actual nonfit or new independent reuse through [the existing protocol](../INDEPENDENT_VERIFICATION_REUSE.md).
+
 ## Agent-team truth in three distinct channels — 20 runnable local cases
 
 **"Finished" is not "succeeded"; "queue is quiet" is not "safe to close"; "agent name exists" is not "agent actually ran".**
