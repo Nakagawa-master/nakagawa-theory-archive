@@ -4,6 +4,12 @@
 
 中川マスター（Nakagawa Master／Keisuke Nakagawa）は、AI、仕事、組織、社会制度、文明の未来などを、結果だけでなく、それを生み出す構造や因果から考えています。ここでは、その理論群を初めて知る人も、研究・開発に使いたい人も、**何を主張し、何が実際に確かめられ、どこから原文を読めるのか**を、自分の関心に沿って確認できます。
 
+### 公式アーカイブ・公開アーカイブ・公式派生物の区別
+
+- **[公式アーカイブ](https://master.ricette.jp)**：理論・原典記事の公式サイト。
+- **[公開アーカイブ（公式GitHubリポジトリ）](https://github.com/Nakagawa-master/nakagawa-theory-archive)**：いまご覧のGitHub資料集全体。
+- **[公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/tree/main/derivatives/)**：このGitHubリポジトリの `derivatives/` 配下にある公式派生資料。
+
 **理論の正本は[中川マスター公式アーカイブ](https://master.ricette.jp/)にあります。** このGitHubリポジトリは原典そのものの代わりではなく、公式派生物、一般向けの入口、第三者の実装・検証記録、AIが参照するための索引を結びつける場所です。理論・仮説は批判、反証、改訂、応用によって検討できます。
 
 **English:** Explore Nakagawa Master's original structural and AI-civilization theories, real developer/editor changes with primary evidence, and [four runnable offline checks](QUICKSTART.md). The [official website](https://master.ricette.jp/) holds canonical originals; this GitHub repo is the practical source-and-verification bridge.
