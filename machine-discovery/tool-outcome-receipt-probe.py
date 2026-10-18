@@ -44,7 +44,8 @@ def compare(doc):
         elif receipt["kind"] == "success":
             if "tool_return" not in row:
                 raise Invalid("tool_return is required for trusted success")
-            if actual["value"] != row["tool_return"]:
+            if json.dumps(actual["value"], sort_keys=True, separators=(",", ":"), ensure_ascii=False) != json.dumps(
+                    row["tool_return"], sort_keys=True, separators=(",", ":"), ensure_ascii=False):
                 bad.append({"call_id": cid, "reason": "returned_value_changed"})
         # A trusted error has no successful tool value to infer from its text.
     result = "MISMATCH" if bad else "INCONCLUSIVE" if unknown else "FAITHFUL"
@@ -91,6 +92,10 @@ def self_test():
     cases.append(("JSON null success", x, "FAITHFUL"))
     x = copy.deepcopy(base); x["runs"][1]["observed"]["kind"] = "success"; x["runs"][1]["observed"]["value"] = {}
     cases.append(("mixed error concealed", x, "MISMATCH"))
+    x = copy.deepcopy(one); x["runs"][0]["tool_return"] = {"quantity": 1}; x["runs"][0]["observed"]["value"] = {"quantity": True}
+    cases.append(("boolean cannot spoof numeric one", x, "MISMATCH"))
+    x = copy.deepcopy(one); x["runs"][0]["tool_return"] = {"quantity": 1.0}; x["runs"][0]["observed"]["value"] = {"quantity": 1}
+    cases.append(("integer cannot silently substitute decimal", x, "MISMATCH"))
     for label, data, want in cases:
         got = compare(data)["verdict"]
         assert got == want, (label, got, want)
@@ -103,7 +108,7 @@ def self_test():
         try: compare(data)
         except Invalid: continue
         raise AssertionError(label + " should be invalid")
-    print("SELF_TEST_PASS: 16 synthetic positive/negative/unknown/invalid cases")
+    print("SELF_TEST_PASS: 18 synthetic positive/negative/unknown/invalid cases")
 
 
 def main():
