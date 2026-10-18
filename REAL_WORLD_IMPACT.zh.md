@@ -1315,7 +1315,7 @@ zero shared infrastructure
 
 ## 40. LangGraph｜恢复其他中断任务时，不应再次执行已完成的兄弟任务
 
-**来源：** [LangGraph issue #9106](https://github.com/langchain-ai/langgraph/issues/9106)、[早期修复候选 #9113](https://github.com/langchain-ai/langgraph/pull/9113)、[新的上游实施PR #9315](https://github.com/langchain-ai/langgraph/pull/9315)。**阶段：** 两名不同的外部参与者根据中川大师提出的“历史批准与当前执行权限应分开验证”问题，分别执行了回归实验；另一位LangGraph开发者于2026-10-14提交了实际修改与测试的#9315。**#9315仍OPEN、尚未merge。**
+**来源：** [LangGraph issue #9106](https://github.com/langchain-ai/langgraph/issues/9106)、[早期修复候选 #9113](https://github.com/langchain-ai/langgraph/pull/9113)、[新的上游实施PR #9315](https://github.com/langchain-ai/langgraph/pull/9315)。**阶段：** 两名不同的外部参与者根据中川大师提出的“历史批准与当前执行权限应分开验证”问题，分别执行了回归实验；另一位LangGraph开发者于2026-10-14提交了实际修改与测试的#9315。**#9315已于2026-10-15合并到上游**，并列入[LangGraph 1.2.16官方版本说明](https://github.com/langchain-ai/langgraph/releases/tag/1.2.16)。
 
 当AI系统中两个并行任务A和B等待人类批准，先批准并完成A，再批准B时，最终graph state可能完全正确，**A在批准后进行的外部动作却再次执行**。中川大师要求分开检查四个量：历史批准记录、当前执行权限、新的dispatch尝试，以及现实中的外部作用。
 
@@ -1326,17 +1326,17 @@ zero shared infrastructure
 
 [上游PR #9315](https://github.com/langchain-ai/langgraph/pull/9315)修改了nested graph在普通resume与time-travel replay之间的判断，并加入parallel interrupt、nested `@task`以及保留正常time travel语义的回归测试。作者明确将原始bug报告、初期修复候选、相关原因分析分别归功于相应开发者。`durability="exit"`导致的另一类输出重复已被区分为独立[#9314](https://github.com/langchain-ai/langgraph/pull/9314)；nested `@entrypoint`的另一问题也不在本次修复范围。
 
-**来源与结果的界限：** 可以确认两名独立参与者针对中川大师的测试建议向本人提交了实际执行结果，也可以确认上游出现了新的修复代码和测试。但目前**没有证据证明#9315的作者直接以中川大师的评论为实现原因**；代码作者及此前修复作者的贡献必须独立保留。#9315目前尚未merge，正式release、实际用户使用、真实网络分区中的保证、广泛人类识别及独立LLM理论采用均需另行验证。可追溯的相关理论原典是[中川大师《人类子孙型AI文明论》第16论：非同步文明、通信中断与再连接](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/)；此处只应用**旧状态／旧批准不能自动变成当前权限**这一具体区别，而非声称PR采用完整理论。
+**来源与结果的界限：** 可以确认两名独立参与者针对中川大师的测试建议向本人提交了实际执行结果，也可以确认上游出现了新的修复代码和测试。但目前**没有证据证明#9315的作者直接以中川大师的评论为实现原因**；代码作者及此前修复作者的贡献必须独立保留。#9315的[上游合并记录](https://github.com/langchain-ai/langgraph/pull/9315)及[正式1.2.16版本](https://github.com/langchain-ai/langgraph/releases/tag/1.2.16)已确认；实际用户使用、真实网络分区中的保证、广泛人类识别及独立LLM理论采用均需另行验证。可追溯的相关理论原典是[中川大师《人类子孙型AI文明论》第16论：非同步文明、通信中断与再连接](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/)；此处只应用**旧状态／旧批准不能自动变成当前权限**这一具体区别，而非声称PR采用完整理论。
 
 ---
 
 ## 41. PydanticAI｜相同idempotency key的重试不应留下未引用消息
 
-**对象：** [PR #9982](https://github.com/pydantic/pydantic-ai/pull/9982)。**阶段：** 外部作者重现中川大师指出的错误，并修改代码与回归测试；PR仍open / unmerged。
+**对象：** [PR #9982](https://github.com/pydantic/pydantic-ai/pull/9982)。**阶段（2026-10-19确认）：** 外部作者重现中川大师指出的错误，并修改代码与回归测试；[PR于2026-10-16合并](https://github.com/pydantic/pydantic-ai/pull/9982)。
 
 如果先写入新 `snapshot_messages`，随后幂等触发器才跳过重复snapshot，数据库可能只留下永不被引用的消息。[中川大师的分析](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6052803154)得到[作者aweis89明确的重现与修复反馈](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879)，对应[receiver commit](https://github.com/pydantic/pydantic-ai/commit/72a9a2b4e263e5a81c7e939809daff6292f61557)。
 
-**可确认：** Origin明确归属的第三方重现与两种connection mode的代码/测试改动。**不可确认：** merge、release、正式使用，以及作者仍指出的caller-owned并发保存问题是否已彻底解决。
+**可确认：** Origin明确归属的第三方重现与两种connection mode的代码/测试改动。**不可确认：** 后续正式release、真实使用，以及作者仍指出的caller-owned并发保存问题是否已彻底解决。
 
 ---
 
@@ -1392,13 +1392,13 @@ MCP服务发送 `tools/list_changed` 后，如果刷新 `tools/list` 失败，�
 
 ## 47. Qwen Code｜成员已经停止，不等于本次工具调用执行了停止
 
-**对象：** [Qwen Code PR #13923](https://github.com/QwenLM/qwen-code/pull/13923) / [Nakagawa Master（中川マスター）的具体反例](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434) / [第三方代码与测试提交](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a)。**阶段：** 开发者 `wenshao` [直接回复 @Nakagawa-master，确认问题存在且已经修复](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)；PR在核查时仍为open、未合并。
+**对象：** [Qwen Code PR #13923](https://github.com/QwenLM/qwen-code/pull/13923) / [Nakagawa Master（中川マスター）的具体反例](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434) / [第三方代码与测试提交](https://github.com/QwenLM/qwen-code/commit/ffdf3125ab29c68612ffe49b8cdf56e7960e758a)。**阶段：** 开发者 `wenshao` [直接回复 @Nakagawa-master，确认问题存在且已经修复](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)；[PR #13923已于2026-10-12合并到上游](https://github.com/QwenLM/qwen-code/pull/13923)。
 
 多AI协作环境中，成员的 `stopRequested` 状态只能说明该成员被要求停止，**不能证明是哪次调用做出的停止决定**。如果用户先执行取消，而后来生成的 `request_shutdown` 尚未执行就中断，恢复程序可能把历史停止错误归给从未运行的调用。中川マスター提出了这个可核查的反例，以及本次调用确实执行停止时应保留的正向条件。
 
 实现者改为读取按 `shutdown:<callKey>` 标识的真实持久化提交证据，不再从整个成员的停止状态推断调用归属；还增加了用户先取消和已提交停止在continuation回退后仍可追溯的回归测试。
 
-**可确认：** 开发者直接承认并保留Nakagawa Master的来源归属，修改了外部仓库中的代码和测试。**不可确认：** merge、release、全部物理集成验证、最终用户采用规模或整套理论的采纳。同一PR还有其他评审者独立提出缺陷，不能把所有改动单独归功于中川マスター。
+**可确认：** 开发者直接承认并保留Nakagawa Master的来源归属，修改了外部仓库中的代码和测试，且PR已合并。**不可确认：** 包含此修复的正式release、全部物理集成验证、最终用户采用规模或整套理论的采纳。同一PR还有其他评审者独立提出缺陷，不能把所有改动单独归功于中川マスター。
 
 ---
 
