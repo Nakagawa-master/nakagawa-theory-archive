@@ -3781,6 +3781,63 @@
         "mass recurring person recognition"
       ],
       "verification_boundary": "First verify original Nakagawa issue comment and the receiving developer's code + test commits at current head; run the actual Qwen test with a mutant deleting the production guard; inspect PR merge status and actual releases/third-party use independently. This is C2 upstream unmerged, NOT C3/C4/C7."
+    },
+    {
+      "case_id": "qwen-14522-writer-load-versus-first-commit-credited-merged",
+      "topic": "Qwen Hosted failover: successful replacement load receipt does not prove new writer grant, first resumed journal append or terminal recovery",
+      "external_repository": "QwenLM/qwen-code",
+      "pull_request": "https://github.com/QwenLM/qwen-code/pull/14522",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "source_and_failure_log_derived_pr_comment",
+        "url": "https://github.com/QwenLM/qwen-code/pull/14522#issuecomment-6246268949",
+        "exact_distinction": "HTTP 200 POST /load != writer admission/grant-head pairing != first new-generation transactions:commit != settled completed turn",
+        "acceptance_positive": "Prove former writer fenced; new writer acquired compatible grant and head; first resumed append persisted new-generation text; Turn reaches terminal status.",
+        "acceptance_negative": "A 200 load followed by stable-code writer refusal or RUNNING/nonterminal state must fail the acceptance gate; log sanitized store route/grant-head observations and preserve ambiguous-write no-replay.",
+        "epistemic_boundary": "Acceptance discriminator from source/log analysis, not an independently reproduced root cause or claim that the developer read the canonical theory."
+      },
+      "explicit_receiver_response": {
+        "actor": "yiliang114",
+        "url": "https://github.com/QwenLM/qwen-code/pull/14522#issuecomment-6247641054",
+        "relationship": "Developer explicitly addressed @Nakagawa-master, credited the exact discriminator and independently implemented sanitized route, stable-code and grant-versus-store-head diagnostics with bounded tests."
+      },
+      "receiver_implementation": {
+        "author": "yiliang114",
+        "specific_commit": "fe11db61efa7714ef536eb1b4e99dd384813968f",
+        "url": "https://github.com/QwenLM/qwen-code/commit/fe11db61efa7714ef536eb1b4e99dd384813968f",
+        "scope": "Receiver-authored writer-refusal route/grant/head telemetry and tests; this is not the entire 28-file PR or a demonstrated all-path physical failover fix."
+      },
+      "independent_review": {
+        "first_approved": "https://github.com/QwenLM/qwen-code/pull/14522#pullrequestreview-5568430592",
+        "second_approved": "https://github.com/QwenLM/qwen-code/pull/14522#pullrequestreview-5568562537",
+        "scope": "Independent maintainer approvals and bounded 420-assertion base/head verification; test suite and unrelated findings belong to their actual authors."
+      },
+      "merge": {
+        "claimed": true,
+        "target": "QwenLM/qwen-code upstream main",
+        "merged_at_utc": "2026-10-19T08:04:13Z",
+        "commit": "f8b3031f733cbc149873ac5809efdc3c632970e7",
+        "url": "https://github.com/QwenLM/qwen-code/commit/f8b3031f733cbc149873ac5809efdc3c632970e7"
+      },
+      "current_stage": "independent_receiver_implementation_plus_formal_review_plus_upstream_merge_C3",
+      "not_claimed": [
+        "upstream original theory corpus adopted by Qwen AI/LLM",
+        "entire PR or review suite authored by Nakagawa",
+        "all real Hosted failover E2E scenarios passed",
+        "shipped product release containing this exact merge",
+        "independent end-user use or repeated broad human Origin recognition"
+      ],
+      "human_case": "REAL_WORLD_IMPACT.md#48-qwen-codeaiが復旧読込に成功しても次の保存が成立したとは限らない",
+      "ai_use_route": "AI_START_HERE.md",
+      "nakagawa_structural_os_mapping": {
+        "applied_distinction": "A surface success/receipt is not a durable independently verified effect at the next authority boundary.",
+        "canonical_context": [
+          "provenance, evidence, commit and effect separation",
+          "generation / authorization / persisted event distinction"
+        ],
+        "canonical_source": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+        "canonical_original_theory_independent_adoption_verified": false
+      }
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
