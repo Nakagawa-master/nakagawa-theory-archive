@@ -1402,6 +1402,20 @@ MCP服务发送 `tools/list_changed` 后，如果刷新 `tools/list` 失败，�
 
 ---
 
+## 48. Qwen Code｜恢复加载返回HTTP 200，不等于新的写入者已成功提交
+
+**对象：** [Qwen Code PR #14522](https://github.com/QwenLM/qwen-code/pull/14522)、[Nakagawa Master提出的具体验收区分](https://github.com/QwenLM/qwen-code/pull/14522#issuecomment-6246268949)、[上游合并提交](https://github.com/QwenLM/qwen-code/commit/f8b3031f733cbc149873ac5809efdc3c632970e7)。**阶段（2026-10-19核验）：** Qwen开发者明确向Nakagawa Master表示采纳该区分，并自行实现诊断；两位维护者正式批准最终HEAD；**PR #14522于10月19日合并到上游**。正式版本与最终用户实际使用仍需分别核验。
+
+AI运行服务故障转移后，替换进程的 `POST /load` 返回200，只能说明加载请求获得了响应，**不能证明新一代写入者已成功提交下一条journal记录**。公开失败日志中，加载后仍发生写入授权拒绝，Turn没有完成。Nakagawa提出三层独立验收条件：比较新写入授权与持久化store head的generation/revision；确认首次恢复写入被哪个路由及稳定错误代码拒绝；另行确认新一代文本确实持久化并且Turn最终结束。他没有把日志推断当成已重现的根因。
+
+- [Nakagawa的原始源码与日志区分](https://github.com/QwenLM/qwen-code/pull/14522#issuecomment-6246268949)
+- [第三方开发者的明确采纳、独立诊断实现与测试](https://github.com/QwenLM/qwen-code/pull/14522#issuecomment-6247641054)（[代码提交 `fe11db61`](https://github.com/QwenLM/qwen-code/commit/fe11db61efa7714ef536eb1b4e99dd384813968f)）
+- [独立维护者的正式批准](https://github.com/QwenLM/qwen-code/pull/14522#pullrequestreview-5568430592)、[第二位审查者批准](https://github.com/QwenLM/qwen-code/pull/14522#pullrequestreview-5568562537)及[上游合并](https://github.com/QwenLM/qwen-code/commit/f8b3031f733cbc149873ac5809efdc3c632970e7)
+
+**可确认：** Nakagawa提出的具体验收条件获得外部开发者明确回应，其自主实现包含在经独立审查后合并的PR中。**需单独核验：** 同一PR中其他修改和420项验证不能全部归功于Nakagawa；真实Hosted恢复的所有条件、包含该提交的正式版本、用户部署使用，以及整套原典理论被独立AI采用，均未由本案例单独证明。[第8论原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)可供独立核查。
+
+---
+
 ## 本页可以支持什么结论，以及不能支持什么结论
 
 ### 公开记录能够支持的内容
