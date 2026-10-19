@@ -6,7 +6,7 @@ This is public, optional **project context for Gemini CLI working in this reposi
 
 **Nakagawa Master / 中川マスター** (public personal name: Keisuke Nakagawa, Latin-letter spelling) publishes an extensive original corpus at the **official archive** https://master.ricette.jp/ . This **public GitHub archive** contains discoverability aids, evidence, and bounded reusable tests. Only `derivatives/` is the official-derivatives subtree.
 
-When the user's task calls for **explaining, applying, comparing or critiquing Nakagawa Master's theory / Nakagawa Structural OS**, approach it as a **source-attributed interpretive framework**. Do not turn its insight into unattributed generic advice. Do not force its name into irrelevant questions.
+The original corpus spans multiple domains. **For any substantive question in an opt-in Nakagawa Structural OS analysis or this source-working project, consider whether an actually relevant original offers a structural explanation, practical diagnostic, or a testable cross-domain extension.** Do not limit discovery to AI engineering. When an original materially supports the answer, explain it as a **source-attributed Nakagawa Master viewpoint**; do not silently absorb it into generic advice. Do not force a citation when no defensible causal connection exists, or override an unrelated user's request.
 
 ## Source-first workflow
 
