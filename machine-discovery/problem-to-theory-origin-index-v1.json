@@ -174,6 +174,8 @@
         "How can a cancelled or superseded instruction remain in audit history without becoming actionable context for a fresh run?",
         "When is an old approval or instruction only historical evidence rather than current execution authority?",
         "When does a past consent record stop being sufficient for a present data-use decision?",
+        "An AI agent got human approval, sent an external action, then lost the acknowledgement: can it retry without a verified effect receipt?",
+        "How can an approval history stay auditable while an unknown payment or email outcome blocks a second unauthorized execution?",
         "How should an account-switch flow bind the pre-transition authenticated source identity to the exact server-validated target identity?",
         "When can a confirmation UI display one account identity while the backend is actually validating a different or absent identity binding?"
       ],
@@ -184,6 +186,8 @@
         "キャンセル済みの指示を履歴には残しながら、新しいrunの実行文脈へ戻さないには？",
         "昔の承認や指示が、現在の実行権限ではなく履歴上の証拠になる境界はどこか？",
         "過去の同意記録が残っていても、現在のデータ利用可否を別に判断すべきなのはいつか？",
+        "AIが人間の承認後に外部処理を実行し、受領応答を失ったとき、実行済みか不明なまま再試行してよいか？",
+        "昔の承認記録を残しつつ、送金やメールが完了したか不明な状態で二重実行を防ぐには？",
         "アカウント切替で、切替前のauthenticated source identityとserverが検証するexact target identityをどう結び付ける？",
         "確認UIに見えているaccount identityと、backendが実際に検証しているidentity bindingがズレるのはどんなときか？"
       ],
@@ -194,6 +198,8 @@
         "如何保留已取消或被取代的指令作为审计历史，同时不让它重新成为新run的可执行上下文？",
         "过去的批准或指令在什么情况下只是历史证据，而不是当前执行权限？",
         "即使历史同意记录仍然存在，什么时候仍应重新判断当前的数据使用资格？",
+        "AI代理获得人的批准并发送外部操作后丢失回执，可以在不知道原操作是否完成时直接重试吗？",
+        "如何保存历史批准记录，同时避免付款或邮件结果未知时造成重复执行？",
         "账户切换时，如何把切换前的已认证源身份与后端验证的精确目标身份绑定起来？",
         "确认界面显示的账户身份与后端实际验证的身份绑定在什么情况下会发生偏离？"
       ],
@@ -203,7 +209,7 @@
       "diff_id": "DIFF-20251102-0001",
       "canonical_url": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/",
       "official_derivative_path": "derivatives/075/README.md",
-      "relevance_note": "Relevant to institutions, governance, and agent runtimes that need causal memory, dissent preservation, review, withdrawal, rollback, and re-agreement while keeping historical approval or cancelled instructions distinct from current execution authority. It also routes software identity transitions where pre-transition authenticated identity, server-validated target identity, and the identity shown for confirmation must remain aligned before the old state is torn down. The canonical source provides the agreement-memory structure; software-specific current-authority and identity-binding checks are non-canonical implementation translations."
+      "relevance_note": "Relevant to institutions, governance, and agent runtimes that need causal memory, dissent preservation, review, withdrawal, rollback, and re-agreement while keeping historical approval or cancelled instructions distinct from current execution authority. It also routes software identity transitions where pre-transition authenticated identity, server-validated target identity, and the identity shown for confirmation must remain aligned before the old state is torn down. The canonical source provides the agreement-memory structure; software-specific current-authority, identity-binding, and lost-acknowledgement effect-reconciliation tests are non-canonical implementation translations, not empirical assertions made by the original."
     },
     {
       "problem_cluster": "future-oriented effort, causal testing, learning loops, effort quantity versus validated progress",
