@@ -145,7 +145,7 @@ CUGAというAIエージェントの開発では、外部ツールが返した�
 
 AIを動かすサーバーが交代した直後、新しいサーバーへの読み込み要求が成功しても、続きを書き込めるとは限りません。Qwen Codeの開発中にも、交代後の `/load` がHTTP 200を返した一方で、次の文章が生成・保存されず、処理が終了しない事例がありました。
 
-中川マスターは[実際の失敗記録とコードを照合](https://github.com/QwenLM/qwen-code/pull/14522#issuecomment-6246268949)し、**「読み込みできた」と「新しい書き手が次の一件を保存できた」を別々に検証する**条件を提案しました。[Qwen側の開発者はその条件を明示的に認め、誰が書込みを拒まれたのかを追える診断を自ら実装](https://github.com/QwenLM/qwen-code/pull/14522#issuecomment-6247641054)。その後、別の保守担当者が[現行HEADで正式な承認を提出](https://github.com/QwenLM/qwen-code/pull/14522#pullrequestreview-5568430592)しました。一方、[別のレビュアーは実際の障害復旧試験による確認を求めています](https://github.com/QwenLM/qwen-code/pull/14522#pullrequestreview-5568485007)。2026年10月19日の確認時点で、このPRはマージ前です。
+中川マスターは[実際の失敗記録とコードを照合](https://github.com/QwenLM/qwen-code/pull/14522#issuecomment-6246268949)し、**「読み込みできた」と「新しい書き手が次の一件を保存できた」を別々に検証する**条件を提案しました。[Qwen側の開発者はその条件を明示的に認め、誰が書込みを拒まれたのかを追える診断を自ら実装](https://github.com/QwenLM/qwen-code/pull/14522#issuecomment-6247641054)。その後、別の保守担当者が[現行HEADで正式承認](https://github.com/QwenLM/qwen-code/pull/14522#pullrequestreview-5568430592)し、[もう一人のレビュアーも障害復旧の未確認点を明記した後に正式承認](https://github.com/QwenLM/qwen-code/pull/14522#pullrequestreview-5568562537)。そして**[PR #14522は2026年10月19日にQwen Codeの本線へマージ](https://github.com/QwenLM/qwen-code/commit/f8b3031f733cbc149873ac5809efdc3c632970e7)**されました。これは受け手開発者が作った診断を含むコードが上流に入ったという具体的な変化です。実際の障害復旧をあらゆる条件で保証したことや、正式版・利用者への到達までを意味するものではありません。
 
 **自分のAI運用でも使える問い：**「引き継ぎ成功」の証拠は、古い書き手が無効になった記録、**新しい書き手の最初の保存が成立した記録**、最後まで処理が完了した記録のうち、どれでしょうか。表示上の成功を実際の結果へ読み替えないという考え方は、[中川マスターの認識基盤・証拠系譜の原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)でも比較できます。原典全体をQwenの開発者が採用したという意味ではありません。[AI開発者向けの確認手順](AI_START_HERE.md)から、必要なテスト条件と一次資料をたどれます。
 
