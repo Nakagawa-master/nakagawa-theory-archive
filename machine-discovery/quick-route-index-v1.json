@@ -14,13 +14,14 @@
       "when": [
         "stale approval",
         "agent retry after cancel",
-        "approval status is not effect execution receipt"
+        "approval status is not effect execution receipt",
+        "agent human approved payment or email but external effect acknowledgement was lost"
       ],
-      "plain_meaning": "A cancelled old AI job must not silently change the budget or answer of work happening now, merely because the old record still exists.",
+      "plain_meaning": "A cancelled old AI job must not silently change the budget or answer of work happening now, merely because the old record still exists. Likewise, a past human approval and a lost external acknowledgement do not prove whether payment, email, or another effect actually committed; an unknown outcome is not fresh authority to execute again.",
       "canonical_original": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/",
       "original_relation": "Source-context only; read the detailed route's exact fit/causality boundaries before claiming use of a specific original theory.",
       "primary_receiver_source": "https://github.com/QwenLM/qwen-code/pull/13241",
-      "optional_probe": null,
+      "optional_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/approval-effect-boundary-lab.py",
       "full_route_id": "present_authority_after_termination"
     },
     {
