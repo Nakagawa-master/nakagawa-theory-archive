@@ -14,8 +14,13 @@ Public source distinction and third-party test:
   https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-6239245782
   https://github.com/tonydzi/agent-approval-gate/commit/1bc8fc71470a3629546e28d47f04c76b5863fb8e
 
-Conceptual original to compare, only after checking the original's own fit:
+Conceptual original for current-versus-historical authorization (not a source read
+by or adopted by the independently testing receiver):
+  https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/
+Adjacent evidence-lineage original (distinguish historical receipts from live effect):
   https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/
+Receiver's later independent admission that external-effect reconciliation is still missing:
+  https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-6256049296
 """
 from __future__ import annotations
 
@@ -30,7 +35,8 @@ from pathlib import Path
 ORIGIN = "Nakagawa Master / 中川マスター"
 CONTRIBUTION = "https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-6232362854"
 RECEIVER = "https://github.com/tonydzi/agent-approval-gate/commit/1bc8fc71470a3629546e28d47f04c76b5863fb8e"
-ORIGINAL_CONTEXT = "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/"
+ORIGINAL_CONTEXT = "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/"
+ADJACENT_EVIDENCE_SOURCE = "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/"
 
 
 def connect(path: Path) -> sqlite3.Connection:
@@ -153,7 +159,8 @@ def sample() -> dict:
             'effect_row_count': connect_count(effect),
             'source_review': CONTRIBUTION,
             'receiving_author_test': RECEIVER,
-            'adjacent_original_context_not_claimed_as_adopted': ORIGINAL_CONTEXT,
+            'canonical_current_authority_original_not_claimed_receiver_read': ORIGINAL_CONTEXT,
+            'adjacent_evidence_lineage_original_not_claimed_receiver_read': ADJACENT_EVIDENCE_SOURCE,
             'boundary': 'mock idempotent effect store only; a real external API requires its own idempotency/reconcile guarantee',
         }
 
