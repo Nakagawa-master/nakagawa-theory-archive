@@ -79,6 +79,12 @@ AI-Newsの公開IssueでNakagawa-masterは、
 
 調査や編集の作業で繰り返し使いたい方には、[公開のオフライン確認用Pythonスクリプト](../../machine-discovery/evidence-root-check.py)もあります。入力例を見るときは `python3 machine-discovery/evidence-root-check.py --sample`、用意したJSONを点検するときは `python3 machine-discovery/evidence-root-check.py claims.json` を使います。**これは自分で記入した出所・関係の整合性を点検する補助道具であり、記事の真偽や、本当に独立調査したかを自動判定するものではありません。**
 
+### 中川マスターの原典と実際の検証を分ける
+
+中川マスターの[公式原典「人類子孫型AI文明論・第8論：認識基盤・証拠系譜・敵対的情報耐性論」](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)にある証拠系譜という見地を、ニュースと噂話の確認へ**応用**した説明です。
+
+「50人の噂」は構造を理解するための仮定です。実際に他者が運用ルールへ取り込んだ事実は、上に掲げたAI-NewsのIssueとPRという**別の一次証拠**で確認します。原典と、公開GitHubの検証記録を取り違えないでください。
+
 ### 次に読むなら
 
 - [承認した内容と実行内容がずれる話](06-approved-one-thing-executed-another.md)
