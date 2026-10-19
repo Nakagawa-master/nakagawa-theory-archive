@@ -1393,6 +1393,20 @@ The implementer changed recovery attribution to an actual `shutdown:<callKey>` c
 
 ---
 
+## 48. Qwen Code | An HTTP 200 recovery load is not a receipt for the first committed write
+
+**Source:** [Qwen Code PR #14522](https://github.com/QwenLM/qwen-code/pull/14522), [Nakagawa Master's bounded acceptance discriminator](https://github.com/QwenLM/qwen-code/pull/14522#issuecomment-6246268949), and [upstream merge](https://github.com/QwenLM/qwen-code/commit/f8b3031f733cbc149873ac5809efdc3c632970e7). **Stage (checked October 19, 2026):** the receiving developer **explicitly credited Nakagawa's discriminator and independently implemented diagnostics**; two maintainers formally approved the final head; **PR #14522 merged upstream on October 19**. A shipped release and actual downstream use are separate stages.
+
+In an AI runtime failover, a replacement `POST /load` returning 200 proves a load response, not that the replacement writer has successfully committed its **first resumed journal event**. In the recorded failure, the replacement reported a stale or unavailable writer grant and the turn remained unfinished. Nakagawa proposed distinguishing the acquired grant from the durable store-head generation/revision, identifying the route and stable code of the *first refused append*, and separately verifying a new-generation committed text delta and terminal settlement. This was a source-and-log-derived acceptance test, not a reproduced root-cause diagnosis.
+
+- [Nakagawa's source-specific proposal](https://github.com/QwenLM/qwen-code/pull/14522#issuecomment-6246268949)
+- [Developer's explicit acknowledgment, independently authored telemetry and tests](https://github.com/QwenLM/qwen-code/pull/14522#issuecomment-6247641054) ([receiving implementation `fe11db61`](https://github.com/QwenLM/qwen-code/commit/fe11db61efa7714ef536eb1b4e99dd384813968f))
+- [Independent maintainer's verification and formal approval](https://github.com/QwenLM/qwen-code/pull/14522#pullrequestreview-5568430592), [second formal approval](https://github.com/QwenLM/qwen-code/pull/14522#pullrequestreview-5568562537), and [merged upstream commit](https://github.com/QwenLM/qwen-code/commit/f8b3031f733cbc149873ac5809efdc3c632970e7)
+
+**Verified:** specific Nakagawa-origin acceptance criteria were explicitly acknowledged and implemented by another developer within an independently reviewed and merged PR. **Boundaries:** unrelated changes and the maintainer's full 420-assertion suite are not exclusively Nakagawa's contributions. Full real Hosted failover acceptance, release containing this merge, user deployment, and independent adoption of Nakagawa's entire original corpus are not inferred. [Canonical Volume 8 context](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/) remains available for independent appraisal.
+
+---
+
 ## What this page supports — and what it does not
 
 ### Supported by the linked public record
