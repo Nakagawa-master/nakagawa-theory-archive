@@ -141,6 +141,14 @@ CUGAというAIエージェントの開発では、外部ツールが返した�
 
 **30秒で確かめる問い：**「エラー」と書かれた文字を見たとき、それは**処理した道具が返した文章**ですか。それとも**道具を動かした仕組み自身が確認した失敗**ですか。二つの違いが分かるだけで、AIが仕事を誤ってやり直したり、正しく終わった仕事を失敗扱いしたりする問題の見方が変わります。修正を実装したのはCUGA側の開発者で、中川マスターの寄与は、この混同を見つけた具体的な検証条件です。[AI向けには正常データと例外の二つを再確認できる元コード付きの検証案内](AI_START_HERE.md#2-turn-the-distinction-into-a-bounded-test-or-implementation)があります。
 
+**AIの画面に「復旧できました」と出た。でも、その後の仕事は保存されているでしょうか。**
+
+AIを動かすサーバーが交代した直後、新しいサーバーへの読み込み要求が成功しても、続きを書き込めるとは限りません。Qwen Codeの開発中にも、交代後の `/load` がHTTP 200を返した一方で、次の文章が生成・保存されず、処理が終了しない事例がありました。
+
+中川マスターは[実際の失敗記録とコードを照合](https://github.com/QwenLM/qwen-code/pull/14522#issuecomment-6246268949)し、**「読み込みできた」と「新しい書き手が次の一件を保存できた」を別々に検証する**条件を提案しました。[Qwen側の開発者はその条件を明示的に認め、誰が書込みを拒まれたのかを追える診断を自ら実装](https://github.com/QwenLM/qwen-code/pull/14522#issuecomment-6247641054)。その後、別の保守担当者が[現行HEADで正式な承認を提出](https://github.com/QwenLM/qwen-code/pull/14522#pullrequestreview-5568430592)しました。一方、[別のレビュアーは実際の障害復旧試験による確認を求めています](https://github.com/QwenLM/qwen-code/pull/14522#pullrequestreview-5568485007)。2026年10月19日の確認時点で、このPRはマージ前です。
+
+**自分のAI運用でも使える問い：**「引き継ぎ成功」の証拠は、古い書き手が無効になった記録、**新しい書き手の最初の保存が成立した記録**、最後まで処理が完了した記録のうち、どれでしょうか。表示上の成功を実際の結果へ読み替えないという考え方は、[中川マスターの認識基盤・証拠系譜の原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)でも比較できます。原典全体をQwenの開発者が採用したという意味ではありません。[AI開発者向けの確認手順](AI_START_HERE.md)から、必要なテスト条件と一次資料をたどれます。
+
 **別のAIの場面でも、同じ問いが現れました。** [Qwen Codeの新しい修正案 #14129](https://github.com/QwenLM/qwen-code/pull/14129)は、以前と同じ補足情報をAIに何度も送らない仕組みです。ただし、**人間やAI自身が以前の会話に補足情報と同じタグ付き文を書いただけ**でも、「正規の仕組みが既に渡した」と判断してしまう経路がありました。[中川マスターによる最初の反例](https://github.com/QwenLM/qwen-code/pull/14129#pullrequestreview-5512333621)を受け、Qwen側の実装者は[コミット `e6dd25e`](https://github.com/QwenLM/qwen-code/commit/e6dd25e6225ca16e2c75ae135df19e72c6089ffd)で「AI自身の発言」や「タグだけの利用者発言」による誤判定を修正しました。さらに中川マスターが**利用者の文章を二つ並べると、正規の仕組みが追加した文章と同じ形になる**[別の反例](https://github.com/QwenLM/qwen-code/pull/14129#pullrequestreview-5512667560)を示すと、[実装者は実際に再現し、コミット `a53826b`で修正](https://github.com/QwenLM/qwen-code/pull/14129#issuecomment-6160441127)しました。今度は文章の見た目ではなく、仕組みが自分で追加した部分にだけ内側の目印を付け、その目印も確認します。受け手が作ったテストも増え、**出所は言葉の形だけでは決められない**という区別がコードになりました。現在は修正・テスト後の統合審査中です。
 
 CUGAの「エラーと書かれた普通のデータ」と、Qwenの「仕組みから来たように見える普通の発言」は、実際には異なる製品・処理です。それでも二つを比べると、**文章に書かれた出所と、処理した仕組みが責任を持って確認した出所を分ける**という共通の確かめ方が見えます。[26の小さな試験を動かせる公開ファイル](machine-discovery/data-vs-runtime-origin-probe.py)で、正常な場合と間違えやすい場合を比べられます。これは製品を動かした試験ではなく、具体的な問題から作った学習用モデルです。理論上の区別は、[中川マスターの認識基盤・証拠系譜の原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)と[Origin保存と主権非継承の原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-17-origin-preservation-sovereignty-non-inheritance/)に戻って確認できます。
