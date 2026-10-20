@@ -12,6 +12,7 @@ AI adoption of a canonical theory.
 Public source distinction and third-party test:
   https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-6232362854
   https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-6239245782
+  https://github.com/pydantic/pydantic-ai/issues/5536#issuecomment-6279540203
   https://github.com/tonydzi/agent-approval-gate/commit/1bc8fc71470a3629546e28d47f04c76b5863fb8e
 
 Conceptual original for current-versus-historical authorization (not a source read
@@ -128,6 +129,23 @@ def reconcile(authority_path: Path, effect_path: Path, generation: str,
     return receipt
 
 
+def interpret_human_rerun_reply(authority_path: Path, generation: str, reply: str) -> str:
+    """A human reply cannot prove whether an earlier external effect committed.
+
+    A fresh *intentional second effect* would need a separate effect identity and
+    its own authorization; this synthetic model never dispatches it.
+    This read-only classifier neither spends a grant nor modifies outcome.
+    """
+    state, reserved_generation, outcome = read_grant(authority_path)
+    if state != 'reserved' or reserved_generation != generation:
+        return 'DENY_GENERATION'
+    if not reply.strip():
+        return 'EMPTY_REPLY_NOT_RECEIPT'
+    if outcome == 'UNKNOWN':
+        return 'UNKNOWN_REQUIRES_RECEIPT_NOT_APPROVAL'
+    return 'NO_NEW_EFFECT_AUTHORITY'
+
+
 def connect_count(path: Path) -> int:
     with connect(path) as db:
         return db.execute("SELECT COUNT(*) FROM committed_effects").fetchone()[0]
@@ -147,12 +165,14 @@ def sample() -> dict:
         # The external write succeeds, then its acknowledgement is lost.
         actual_external_receipt = commit_effect(effect,'g1')
         before_reconciliation = read_grant(authority)
+        human_reply_result = interpret_human_rerun_reply(authority,'g1','+ #id')
         recovered = reconcile(authority,effect,'g1')
         return {
             'case': 'synthetic local two-store lost-acknowledgement experiment',
             'reserve_one_generation': selected,
             'effect_committed_before_ack_lost': actual_external_receipt,
             'authority_after_lost_ack': dict(zip(('state','generation','outcome'),before_reconciliation)),
+            'human_yes_did_not_create_receipt_or_replay_authority': human_reply_result,
             'retry_reconciles_same_receipt': recovered == actual_external_receipt,
             'new_generation_denied': reconcile(authority,effect,'g2'),
             'authority_after_recovery': dict(zip(('state','generation','outcome'),read_grant(authority))),
@@ -225,6 +245,28 @@ class BoundaryTests(unittest.TestCase):
                          'UNKNOWN_BLOCK_REEXECUTION')
         self.assertEqual(connect_count(self.effects),0)
         self.assertEqual(read_grant(self.auth)[2],'UNKNOWN')
+
+    def test_human_yes_after_lost_ack_cannot_replay_original_effect(self):
+        self.assertTrue(reserve(self.auth,generation='g1'))
+        first_receipt = commit_effect(self.effects,'g1')
+        # Model an external commit with its acknowledgement lost to the caller.
+        self.assertEqual(interpret_human_rerun_reply(self.auth,'g1','+ #id'),
+                         'UNKNOWN_REQUIRES_RECEIPT_NOT_APPROVAL')
+        self.assertEqual(read_grant(self.auth),('reserved','g1','UNKNOWN'))
+        self.assertFalse(reserve(self.auth,generation='g2'))
+        self.assertEqual(connect_count(self.effects),1)
+        self.assertEqual(reconcile(self.auth,self.effects,'g1',safe_idempotent_effect=False),first_receipt)
+        self.assertEqual(connect_count(self.effects),1)
+
+    def test_human_rerun_reply_without_receipt_cannot_resolve_unknown(self):
+        self.assertTrue(reserve(self.auth,generation='g1'))
+        self.assertEqual(interpret_human_rerun_reply(self.auth,'g1','rerun'),
+                         'UNKNOWN_REQUIRES_RECEIPT_NOT_APPROVAL')
+        self.assertEqual(reconcile(self.auth,self.effects,'g1',safe_idempotent_effect=False),
+                         'UNKNOWN_BLOCK_REEXECUTION')
+        self.assertEqual(read_grant(self.auth),('reserved','g1','UNKNOWN'))
+        self.assertFalse(reserve(self.auth,generation='g2'))
+        self.assertEqual(connect_count(self.effects),0)
 
     def test_known_receipt_can_be_reconciled_even_without_retry_support(self):
         self.assertTrue(reserve(self.auth,generation='g1'))
