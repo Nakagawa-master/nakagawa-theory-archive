@@ -1407,6 +1407,18 @@ In an AI runtime failover, a replacement `POST /load` returning 200 proves a loa
 
 ---
 
+## 49. Qwen Code | A recipient implemented Nakagawa Master's one-line, test-only build repair
+
+A TypeScript build failed because the test fixture's permission mediator lacked a required `vote` method. Nakagawa Master identified the exact failed jobs and proposed adding only `vote: vi.fn()` to the test fixture, without modifying production authorization.
+
+On October 20, Qwen developer `yiliang114` [explicitly confirmed the diagnosis](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6286114128) and explained that their [commit `5a6e8c5b77`](https://github.com/QwenLM/qwen-code/commit/5a6e8c5b77e96c2bdd3b1b45fdd898967d105492) made that exact minimal change. The diagnosis and proposed fix are Nakagawa Master's bounded contribution; the implementation is the receiving developer's work.
+
+- [Original logged finding](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6284393512) | [Recipient's direct confirmation](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6286114128) | [Web-shell Visuals success on the repaired head](https://github.com/QwenLM/qwen-code/actions/runs/39377669315)
+
+**Status checked October 20, 2026:** Qwen Code CI, Serve A/B, Managed Agent gate, tui-parity and Web-shell Visuals all succeeded on that head, but [PR #13902](https://github.com/QwenLM/qwen-code/pull/13902) **remains open with review blockers**. Merge, release, user deployment and whole-theory adoption require different evidence.
+
+---
+
 ## What this page supports — and what it does not
 
 ### Supported by the linked public record

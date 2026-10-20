@@ -23,7 +23,7 @@
 - **AIの履歴保存と重複処理｜PydanticAI（事例41）:** 「重複した保存を無視した」としても途中の余分な書込みが残る問題を指摘。[開発者が再現・修正](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879)し、[2026年10月16日に本線へ統合](https://github.com/pydantic/pydantic-ai/pull/9982)されました。
 - **AIの停止操作と証拠の取り違え｜Qwen Code（事例47）:** 人間が先に停止させた記録を、未実行のAIツール呼び出しの成果と誤認する反例を提示。[開発者本人が修正を明示](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)し、[2026年10月12日に統合](https://github.com/QwenLM/qwen-code/pull/13923)されました。
 
-**読み方の要点:** これらは複数の独立した受け手に見られる実装・検証成果です。全製品の設計や修正を中川マスターが単独で実装したという意味ではありません。また、本線への統合と、実利用の規模・業界全体への波及は別に確認します。以下の48件には、未マージ・未採用・限定的評価を含む事例も、それぞれの到達段階で収録しています。
+**読み方の要点:** これらは複数の独立した受け手に見られる実装・検証成果です。全製品の設計や修正を中川マスターが単独で実装したという意味ではありません。また、本線への統合と、実利用の規模・業界全体への波及は別に確認します。以下の49件には、未マージ・未採用・限定的評価を含む事例も、それぞれの到達段階で収録しています。
 
 ## このページの読み方
 
@@ -53,7 +53,7 @@
 
 ### 現在の公開証拠スナップショット
 
-- このページには **47の番号付き外部作用事例**を収録しています。
+- このページには **49の番号付き外部作用事例**を収録しています。
 - GitHub全体の `Nakagawa-master` comment検索では多数の候補surfaceが返りますが、検索hit自体は第三者反応・採用・実装として数えません。
 - 本ページへ収録するのは、第三者response、独立確認、code / tests / document change、merge、release、deployment等を公開リンクで段階別に確認できる事例です。
 - したがって「mentionが多い」ことではなく、**第三者が何を変え、その変更がどこまで進んだか**を主要証拠として扱います。
@@ -1620,6 +1620,18 @@ AIの処理サーバーが故障から交代したとき、新しいサーバー
 - [独立した保守担当による比較テストと正式承認](https://github.com/QwenLM/qwen-code/pull/14522#pullrequestreview-5568430592) ／ [もう一人の最終承認](https://github.com/QwenLM/qwen-code/pull/14522#pullrequestreview-5568562537) ／ [上流マージ](https://github.com/QwenLM/qwen-code/commit/f8b3031f733cbc149873ac5809efdc3c632970e7)
 
 **確認できること:** 中川マスター由来の具体的な判定条件に対する受け手の明示的応答、その実装を含むPRの独立したレビュー・上流マージ。**確認を分けること:** PR内の他の修正や420件の検査全体を中川マスター一人の発見とは扱いません。実際のHosted復旧の全条件、マージを含む正式リリース、利用者への配信・使用、原典理論群全体の第三者採用は、この記録だけでは確定しません。[関連する原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)も独立して検証できます。
+
+---
+
+## 49. Qwen Code｜テスト用の不足1行がAI開発ツールのビルドを止める――中川マスターの指摘と受け手の修正
+
+Qwen Codeのテスト用権限中介に必要な `vote` が欠け、TypeScript型検査が失敗していました。中川マスターはエラーログと型定義を照合し、**本番の許可処理を変えず、テスト専用の `vote: vi.fn()` を補う**と具体的に提案しました。
+
+[Qwen開発者 `yiliang114` の10月20日の返信](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6286114128)は、エラーが実在し、[自分のコミット `5a6e8c5b77`](https://github.com/QwenLM/qwen-code/commit/5a6e8c5b77e96c2bdd3b1b45fdd898967d105492)で指摘どおりの最小変更を入れたと明示しています。原因の具体的な指摘と修正候補は中川マスター、実装は受け手の開発者の仕事です。
+
+- [中川マスターのログに基づく原コメント](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6284393512) ／ [受け手自身の確認](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6286114128) ／ [同HEADのWeb-shell Visuals成功](https://github.com/QwenLM/qwen-code/actions/runs/39377669315)
+
+**2026-10-20時点の段階:** 修正HEADでQwen Code CI、Serve A/B、Managed Agent gate、tui-parity、Web-shell Visualsの5経路が成功。[PR #13902](https://github.com/QwenLM/qwen-code/pull/13902)は**レビュー待ち・未マージ**です。正式リリース、利用者の実稼働、原論体系全体の採用とは分けて確認します。
 
 ---
 
