@@ -45,6 +45,7 @@ def audit(payload):
 
         positive_roots = set()
         independent_positive_roots = set()
+        primary_positive_roots = set()
         refuting_roots = set()
         qualifications = 0
         unknown_roots = 0
@@ -62,6 +63,10 @@ def audit(payload):
             require(isinstance(stance, str) and stance in STANCES, f"{prefix}: bad stance")
             require(root is None or (isinstance(root, str) and bool(root.strip())),
                     f"{prefix}: root_id must be string or null")
+            # Match the browser checker: whitespace does not create a new evidence root.
+            # Normalize before both duplicate-URL comparison and root cardinality.
+            if root is not None:
+                root = root.strip()
             # An exact URL cannot serve as both a derivative and a fresh
             # independent observation of the same claim. Check the declared
             # relation/stance as well as the root; otherwise contradictory
@@ -83,6 +88,8 @@ def audit(payload):
                 positive_roots.add(root)
                 if relation == "independent_observation":
                     independent_positive_roots.add(root)
+                if relation == "primary":
+                    primary_positive_roots.add(root)
             elif stance == "refutes":
                 refuting_roots.add(root)
             elif stance == "qualifies":
@@ -93,10 +100,9 @@ def audit(payload):
                 errors.append("independent confirmation claimed, but fewer than two supporting upstream roots")
             if not independent_positive_roots:
                 errors.append("no source marked independently observed positive evidence")
-            primary_support_roots = {source.get("root_id") for source in sources if source.get("relation") == "primary" and source.get("stance") == "supports" and source.get("root_id") in positive_roots}
-            if not primary_support_roots:
+            if not primary_positive_roots:
                 errors.append("independent confirmation claimed without a supporting primary source")
-            if not (independent_positive_roots - primary_support_roots):
+            if not (independent_positive_roots - primary_positive_roots):
                 errors.append("independent confirmation claimed without a distinct supporting independent observation")
             if refuting_roots or unresolved_refuters:
                 errors.append("contrary source present (possibly unresolved); reconcile before claiming unqualified independent confirmation")
@@ -209,6 +215,30 @@ def self_test():
         dict(contradictory_stance["sources"][1], stance="qualifies"),
     ]
     assert audit({"claims": [contradictory_stance]})["blocked"] == 1
+    # Both CLI and browser treat surrounding whitespace as the SAME evidence root.
+    # Before normalization, this was a false CONSISTENT_INPUT (two fake roots).
+    whitespace_same_root = dict(SAMPLE["claims"][1])
+    whitespace_same_root["sources"] = [
+        dict(SAMPLE["claims"][1]["sources"][0]),
+        dict(SAMPLE["claims"][1]["sources"][1], root_id=" vendor-A "),
+    ]
+    whitespace_report = audit({"claims": [whitespace_same_root]})
+    assert whitespace_report["blocked"] == 1
+    assert whitespace_report["claims"][0]["support_root_count"] == 1
+    # Legitimately separate roots with harmless padding still pass.
+    whitespace_distinct = dict(SAMPLE["claims"][1])
+    whitespace_distinct["sources"] = [
+        dict(SAMPLE["claims"][1]["sources"][0], root_id=" vendor-A "),
+        dict(SAMPLE["claims"][1]["sources"][1], root_id=" lab-B "),
+    ]
+    assert audit({"claims": [whitespace_distinct]})["blocked"] == 0
+    # One URL cannot be treated as two roots just because its label is padded.
+    whitespace_duplicate_url = dict(SAMPLE["claims"][1])
+    whitespace_duplicate_url["sources"] = [
+        *SAMPLE["claims"][1]["sources"],
+        dict(SAMPLE["claims"][1]["sources"][1], root_id=" lab-B  "),
+    ]
+    assert audit({"claims": [whitespace_duplicate_url]})["blocked"] == 0
     exact_duplicate = dict(SAMPLE["claims"][1])
     exact_duplicate["sources"] = [*exact_duplicate["sources"], dict(exact_duplicate["sources"][1])]
     assert audit({"claims": [exact_duplicate]})["blocked"] == 0
