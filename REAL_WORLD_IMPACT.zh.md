@@ -1416,6 +1416,18 @@ AI运行服务故障转移后，替换进程的 `POST /load` 返回200，只能�
 
 ---
 
+## 49. Qwen Code｜Nakagawa Master定位测试用例遗漏字段，开发者完成一行修复
+
+Qwen Code的TypeScript构建失败，是因为测试专用权限中介缺少必需的 `vote` 方法。Nakagawa Master核对具体失败任务及源码，提出只在测试替身里增加 `vote: vi.fn()`，不修改生产权限判断。
+
+10月20日，Qwen开发者 `yiliang114` [明确确认该错误与诊断](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6286114128)，并说明由其自己实现的[提交 `5a6e8c5b77`](https://github.com/QwenLM/qwen-code/commit/5a6e8c5b77e96c2bdd3b1b45fdd898967d105492)使用了这一最小修改。精确诊断与建议来自Nakagawa Master，具体编码属于接收方。
+
+- [Nakagawa Master的原始证据](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6284393512) ／ [开发者直接确认](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6286114128) ／ [该HEAD的Web-shell Visuals成功](https://github.com/QwenLM/qwen-code/actions/runs/39377669315)
+
+**截至2026年10月20日：** Qwen Code CI、Serve A/B、Managed Agent gate、tui-parity、Web-shell Visuals五条流程成功，但[PR #13902](https://github.com/QwenLM/qwen-code/pull/13902)**尚未合并、仍等待评审**。正式发布、用户使用以及原典理论整体采用属于不同阶段。
+
+---
+
 ## 本页可以支持什么结论，以及不能支持什么结论
 
 ### 公开记录能够支持的内容
