@@ -30,7 +30,7 @@
 - **AIの仲間の完了表示:** 失敗した作業が成功に見えたり、未配送の報告が終了判定から漏れたりしないかを確認する [20ケースのオフライン検査](machine-discovery/agent-team-signal-truth-probe.py)（[実際のQwen側修正の出典と作者はQuickstartに記載](QUICKSTART.md)）。
 - **AIの仲間の二通の返事:** 同じ送信者・受信者でも別のメッセージは消さず、ツール進捗だけを正しくまとめる [14ケースの独立した合成比較器](machine-discovery/agent-event-distinctness-probe.py)（[Qwen開発者による実際の修正と実行手順](QUICKSTART.md#6-aiの仲間から二通届いた画面では一通にまとめられていませんか)）。
 - **AIの仲間の返事の保存:** 「受信箱は読取済み」と「保存記録に実際に残った」は別です。中川マスターの[具体的なレビュー](https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5540696114)を受けて[Qwen開発者が終了経路のテストを実装](https://github.com/QwenLM/qwen-code/commit/62c03b2eb62975775c66968d97f27f01028385a3)した順序を、[17ケースのオフラインモデル](machine-discovery/agent-delivery-durability-boundary-probe.py)で確かめられます（[使い方](QUICKSTART.md#4-aiの返事を読取済みにした保存先にも残った)）。
-- **AIの承認と外部処理:** 「実行を承認した」は「外部で一度だけ実行された」ではありません。成功の返答が消えた際に再送できる条件を[12ケースのオフライン検証器](machine-discovery/approval-effect-boundary-lab.py)で確認できます（[日本語・English手順](QUICKSTART.md#5-aiに承認した外部の処理も一度だけ)）。
+- **AIの承認と外部処理:** 「実行を承認した」は「外部で一度だけ実行された」ではありません。成功の返答が消えた場合の照合と、返答が不明なまま「もう一度」と許可されても安全に再実行できない条件を[14ケースのオフライン検証器](machine-discovery/approval-effect-boundary-lab.py)で確認できます（[日本語・English手順](QUICKSTART.md#5-aiに承認した外部の処理も一度だけ)）。
 
 ```sh
 git clone https://github.com/Nakagawa-master/nakagawa-theory-archive.git
