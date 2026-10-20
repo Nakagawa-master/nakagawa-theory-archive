@@ -3838,6 +3838,58 @@
         "canonical_source": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
         "canonical_original_theory_independent_adoption_verified": false
       }
+    },
+    {
+      "case_id": "qwen-13902-build-fixture-vote-ack-ci-green",
+      "topic": "A missing vote method in a test-only ACP PermissionMediator fixture caused exact-head TS2741 build failures; independently receiving developer repaired the fixture with vote: vi.fn(), then 5 head-specific workflows passed.",
+      "external_repository": "QwenLM/qwen-code",
+      "pull_request": "https://github.com/QwenLM/qwen-code/pull/13902",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "source_and_ci_log_derived_pull_request_comment",
+        "url": "https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6284393512",
+        "finding": "After main merge at a8687921, constructor Pick<PermissionMediator, request | cancelForPrompt | vote> did not match the test-only ancestor-trust makeClient mediator; TS2741 prevented TUI and Serve A/B tsc --build.",
+        "candidate_repair": "Add only vote: vi.fn() to test-only makeClient mediator; do not imply production permission mediation is broken or authorization changed."
+      },
+      "explicit_receiver_return": {
+        "actor": "yiliang114",
+        "url": "https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6286114128",
+        "time_utc": "2026-10-20T07:49:48Z",
+        "relationship": "Receiving developer explicitly confirmed Nakagawa Master's exact TS2741 finding and same proposed minimal repair, crediting it back to his comment."
+      },
+      "receiver_implementation": {
+        "author": "yiliang114",
+        "commit": "5a6e8c5b77e96c2bdd3b1b45fdd898967d105492",
+        "url": "https://github.com/QwenLM/qwen-code/commit/5a6e8c5b77e96c2bdd3b1b45fdd898967d105492",
+        "scope": "One test-only fixture method added; production approval logic unchanged. Receiver implemented the fix, Nakagawa originated the bounded log/code-based diagnosis."
+      },
+      "receiving_head_checks": {
+        "head": "5a6e8c5b77e96c2bdd3b1b45fdd898967d105492",
+        "workflows_success": [
+          "Qwen Code CI",
+          "Serve A/B",
+          "Managed Agent gate",
+          "tui-parity",
+          "Web-shell Visuals"
+        ],
+        "web_shell_visuals_url": "https://github.com/QwenLM/qwen-code/actions/runs/39377669315",
+        "web_shell_visuals_success_at_utc": "2026-10-20T08:12:29Z",
+        "review_workflow": "PENDING at last check",
+        "pr_mergeable_state": "blocked"
+      },
+      "current_stage": "third_party_receiver_test_fix_and_explicit_person_acknowledgment_C2_PR_OPEN",
+      "distinctness": "Separate current-head test-fixture typecheck finding on the SAME receiving PR and SAME developer as earlier teammate listener/approval review cases; not a new independent recipient, organization, model or release.",
+      "not_claimed": [
+        "upstream PR merged",
+        "product release containing this change",
+        "downstream real users impacted",
+        "whole original Nakagawa theory corpus independently adopted by Qwen",
+        "all source-diff changes originated with Nakagawa",
+        "Qwen review approval or absence of standing changes-requested",
+        "independent AI browsing or choosing the official original"
+      ],
+      "verification_boundary": "Verify original comment, author-owned commit, author reply, exact-head success of the five named workflows and live PR review/merge independently. An external developer's C2 fix is genuine; this own machine index row is C0 publication only.",
+      "canonical_theory_causation": "This is a bounded technical diagnosis; no first-hand claim that the implementer adopted any named canonical theory original. Do not force an unrelated theoretical provenance citation."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
