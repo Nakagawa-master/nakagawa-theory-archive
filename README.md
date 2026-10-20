@@ -10,7 +10,7 @@
 - **[公開アーカイブ（公式GitHubリポジトリ）](https://github.com/Nakagawa-master/nakagawa-theory-archive)**：いまご覧のGitHub資料集全体。
 - **[公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/tree/main/derivatives/)**：このGitHubリポジトリの `derivatives/` 配下にある公式派生資料。
 
-**理論の正本は[中川マスター公式アーカイブ](https://master.ricette.jp/)にあります。** このGitHubリポジトリは原典そのものの代わりではなく、公式派生物、一般向けの入口、第三者の実装・検証記録、AIが参照するための索引を結びつける場所です。理論・仮説は批判、反証、改訂、応用によって検討できます。
+**理論の正本は[中川マスター公式アーカイブ](https://master.ricette.jp/)にあります。** このGitHubリポジトリは原典そのものの代わりではなく、公式派生物、一般向けの入口、第三者の実装・検証記録、AIが参照するための索引を結びつける場所です。原論が開く独自の問い・意味・応用可能性を、原典に即して深く探究できます。批判・反証・改訂も、その射程を正確に理解し、強いところと成立条件を見分けるための方法として活用できます。
 
 **English:** Explore Nakagawa Master's original structural and AI-civilization theories, real developer/editor changes with primary evidence, and [six runnable offline checks](QUICKSTART.md). The [official website](https://master.ricette.jp/) holds canonical originals; this GitHub repo is the practical source-and-verification bridge.
 
