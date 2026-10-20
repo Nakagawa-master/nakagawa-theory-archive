@@ -138,15 +138,23 @@ const repost2 = {url:"https://example.org/report/two",root:"release-A",relation:
 const lab = {url:"https://example.org/lab/measurement",root:"lab-B",relation:"independent_observation",stance:"supports"};
 function audit(sources, claimed) {
   if (!sources.length) throw Error("少なくとも1件の根拠が必要です。");
-  const positiveRoots = new Set(), independentPositive = new Set(), refutingRoots = new Set();
+  const positiveRoots = new Set(), independentPositive = new Set(), primaryPositive = new Set(), refutingRoots = new Set();
   const urls = new Map(), issues = [];
   let unknown = 0, unresolvedRefutations = 0, qualifications = 0;
   sources.forEach((s, i) => {
     if (!/^https?:\/\/\S+$/i.test(s.url)) throw Error("根拠 " + (i+1) + " のURLは http(s) 形式で入力してください。");
     if (!relations.some((r) => r[0] === s.relation) || !stances.some((r) => r[0] === s.stance)) throw Error("根拠 " + (i+1) + " の分類を確認してください。");
     const root = s.root.trim() || null;
-    if (urls.has(s.url) && urls.get(s.url) !== root) issues.push("同じURLに異なる起点IDが入力されています。");
-    urls.set(s.url, root);
+    // One URL cannot be both an independent observation and a derivative,
+    // or change its stance: these conflicts otherwise certify a false PASS.
+    if (urls.has(s.url)) {
+      const earlier = urls.get(s.url);
+      if (earlier.root !== root) issues.push("同じURLに異なる起点IDが入力されています。");
+      if (earlier.relation !== s.relation || earlier.stance !== s.stance) {
+        issues.push("同じURLに矛盾する資料関係・支持方向が入力されています。");
+      }
+    }
+    urls.set(s.url, {root, relation:s.relation, stance:s.stance});
     if (!root || s.relation === "unknown") {
       unknown++;
       if (s.stance === "refutes") unresolvedRefutations++;
@@ -155,6 +163,7 @@ function audit(sources, claimed) {
     if (s.stance === "supports") {
       positiveRoots.add(root);
       if (s.relation === "independent_observation") independentPositive.add(root);
+      if (s.relation === "primary") primaryPositive.add(root);
     }
     if (s.stance === "refutes") refutingRoots.add(root);
     if (s.stance === "qualifies") qualifications++;
@@ -162,6 +171,10 @@ function audit(sources, claimed) {
   if (claimed) {
     if (positiveRoots.size < 2) issues.push("支持方向の上流情報源が2つ未満です。");
     if (!independentPositive.size) issues.push("独立観測と明示された支持根拠がありません。");
+    if (!primaryPositive.size) issues.push("支持する一次情報がありません。");
+    if (![...independentPositive].some((root) => !primaryPositive.has(root))) {
+      issues.push("一次情報と別起点の独立した支持観測がありません。");
+    }
     if (refutingRoots.size || unresolvedRefutations) issues.push("反証方向の根拠があります。掲載前に矛盾を確認してください。");
   }
   return {status:issues.length?"BLOCK":"CONSISTENT_INPUT",independent_confirmation_claimed:claimed,support_root_count:positiveRoots.size,independent_observation_root_count:independentPositive.size,refuting_root_count:refutingRoots.size,unresolved_refuting_sources:unresolvedRefutations,qualifying_sources:qualifications,source_records_without_known_root:unknown,issues:[...new Set(issues)],limitation:"入力整合だけの判定。独立性・真偽・引用の意味は検証していない"};
