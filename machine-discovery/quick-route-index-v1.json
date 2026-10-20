@@ -15,11 +15,13 @@
         "stale approval",
         "agent retry after cancel",
         "approval status is not effect execution receipt",
-        "agent human approved payment or email but external effect acknowledgement was lost"
+        "agent human approved payment or email but external effect acknowledgement was lost",
+        "A team voted to approve policy D1 but D2 is enforced later; how do we distinguish the original agreement from present authorization?",
+        "社内の承認から手続きが変わったのに、前の合意を今の実行許可として使える？"
       ],
       "plain_meaning": "A cancelled old AI job must not silently change the budget or answer of work happening now, merely because the old record still exists. Likewise, a past human approval and a lost external acknowledgement do not prove whether payment, email, or another effect actually committed; an unknown outcome is not fresh authority to execute again.",
       "canonical_original": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/",
-      "original_relation": "Source-context only; read the detailed route's exact fit/causality boundaries before claiming use of a specific original theory.",
+      "original_relation": "Source-context only; read the detailed route's exact fit/causality boundaries before claiming use of a specific original theory. Cross-domain human example (a meeting or organizational decision): retain the reasons, relationships, version and conditions under which a prior decision may be revisited. This is an application of the original's causal/relational/re-agreement distinction, not legal advice or proof that a particular company has invalid authorization.",
       "primary_receiver_source": "https://github.com/QwenLM/qwen-code/pull/13241",
       "optional_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/approval-effect-boundary-lab.py",
       "full_route_id": "present_authority_after_termination"
@@ -54,11 +56,13 @@
       "id": "future_ai_compute_maintenance_capacity",
       "when": [
         "AI data center modernization",
-        "compute replacement"
+        "compute replacement",
+        "A municipality can fund an AI public-service pilot but not its maintenance or supplier exit; who bears the future liability?",
+        "AI導入の初期費用は安いが、更新費用・人材・撤退手段を将来世代へ押しつけないには？"
       ],
       "plain_meaning": "A plan that delivers computing capacity today can still leave no realistic team, parts, time or alternate supplier to maintain it tomorrow.",
       "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-18-ai-civilization-future-debt/",
-      "original_relation": "Source-context only; read the detailed route's exact fit/causality boundaries before claiming use of a specific original theory.",
+      "original_relation": "Source-context only; read the detailed route's exact fit/causality boundaries before claiming use of a specific original theory. Cross-domain public/organizational budgeting example: test whether the current investment preserves future maintenance, replacement, exit and accountable decision capacity. This is a transparent use-case extension from the canonical future-debt theory, not evidence of a real municipal failure or an approved financial plan.",
       "primary_receiver_source": null,
       "optional_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/od311_capacity_worksheet.py",
       "full_route_id": "future_ai_compute_maintenance_capacity"
@@ -165,11 +169,13 @@
       "when": [
         "AI denies a grant/benefit in a hypothetical pilot; no clear appeal path",
         "AI-assisted adverse decision review or dispute escalation",
-        "retain legacy remedy during non-enforcing transition"
+        "retain legacy remedy during non-enforcing transition",
+        "A scholarship application was rejected by an automated screen; how can the applicant see reasons, correct records and reach a human?",
+        "AIで不採用や給付不認定になった。誤った情報の訂正と人間への異議申立て経路をどう確かめる？"
       ],
       "plain_meaning": "If an AI flags your application as incomplete, you should be able to find out why, correct an error and reach a responsible person without losing existing avenues of redress; the mock worksheet cannot prove those protections exist in real life. A seven-question offline human-readable worksheet now lets a reader generate a practical clarification memo, without proving the remedy exists.",
       "canonical_original": "https://master.ricette.jp/society/nakagawa-master-structural-judicial-os-principles-alignment-over-judgment/",
-      "original_relation": "Source-context only; read the detailed route's exact fit/causality boundaries before claiming use of a specific original theory.",
+      "original_relation": "Source-context only; read the detailed route's exact fit/causality boundaries before claiming use of a specific original theory. Cross-domain human example: map the structure of notice, evidence correction, appeal, responsible actor and reversible remedy. Do not infer legally guaranteed rights, an actual scholarship incident, or a deployed appeals mechanism from this synthetic worksheet.",
       "primary_receiver_source": null,
       "optional_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/decision-review-transition-probe.py",
       "full_route_id": "reviewable_adverse_ai_decision_dual_transition"
@@ -179,11 +185,13 @@
       "when": [
         "A cloud-hosted and local/self-hosted AI agent are advertised as separate paths but share an undisclosed control-plane gate",
         "Qwen Code dual-path Managed Agent Hosted versus local M6 acceptance question",
-        "does no cross-engine fallback prove independent operability"
+        "does no cross-engine fallback prove independent operability",
+        "Our local employee workflow and external cloud workflow share the same sign-in server; are they truly independent fallbacks?",
+        "社内ツールとクラウドの2系統が同じログイン障害で止まる。独立した選択肢と言える？"
       ],
       "plain_meaning": "Two buttons labeled 'cloud' and 'local' do not necessarily mean two independent choices. If the cloud's login or control plane is unavailable, can the local path still start and recover its own AI task? Qwen's design owner accepted Nakagawa Master's proposal to test that distinction, but those tests are not yet evidence of a shipped independent product.",
       "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/",
-      "original_relation": "Source-context only; read the detailed route's exact fit/causality boundaries before claiming use of a specific original theory.",
+      "original_relation": "Source-context only; read the detailed route's exact fit/causality boundaries before claiming use of a specific original theory. Cross-domain organization/continuity example: compare nominal two-path choice with effective independent access, exit and recovery when a common authentication chokepoint fails. This is a conditional analogy with the original non-ownership / effective-domination analysis; a shared login alone is not proof of domination.",
       "primary_receiver_source": "https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035698005",
       "optional_probe": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md",
       "full_route_id": "cloud_local_dual_route_effective_independence"
