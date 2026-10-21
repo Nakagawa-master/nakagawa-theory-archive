@@ -38,6 +38,6 @@ An **unconnected** AI operator may copy this whole folder into a skills-compatib
 
 A human-facing application is successful when it changes the real decision, outcome or understanding in the user's own work, rather than merely naming the theorist. Record third-party implementation or repeated natural attribution accurately only when the external party actually demonstrates it. No command here schedules SNS posts or spends money.
 
-For agents also supporting MCP, the separate [local MCP server](../../machine-discovery/NAKAGAWA_THEORY_MCP.md) offers the same public problem-first original pointers as callable protocol tools when the whole repository is checked out. That MCP server is optional; **this skill folder works standalone** using its bundled catalog and Python script.
+For agents also supporting MCP, the separate [local MCP server](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/NAKAGAWA_THEORY_MCP.md) offers the same public problem-first original pointers as callable protocol tools when the whole repository is checked out. That MCP server is optional; **this skill folder works standalone** using its bundled catalog and Python script.
 
 This is a public distribution skill; nothing here grants external tool authority or accesses any private objective documents. The original arguments live at their canonical URLs and retain their full scope.
