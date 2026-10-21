@@ -27,11 +27,9 @@ python3 machine-discovery/agent-event-distinctness-probe.py --input events.json
 
 It has 14 local positive/negative/invalid synthetic cases, makes no network requests, and is not an actual Qwen runtime test or independent original-theory adoption evidence. For conceptual comparison, independently consult the [canonical epistemic-integrity source](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/); no developer's use of that theory is inferred from a code change. Report actual nonfit or new independent reuse through [the existing protocol](../INDEPENDENT_VERIFICATION_REUSE.md).
 
-## Agent-team truth in three distinct channels — 20 runnable local cases
+## Agent-team truth and host receipt ordering — 38 runnable local cases
 
-**"Finished" is not "succeeded"; "queue is quiet" is not "safe to close"; "agent name exists" is not "agent actually ran".**
-
-[One-file Python 3 standard-library checker](agent-team-signal-truth-probe.py) accepts an input JSON, emits a verdict, and runs **20 synthetic positive, negative, ambiguous and invalid cases**. From repository root:
+**A failed tool result is not success; a quiet queue is not durable storage; a team name is not a verified running agent; and synchronous event emission is not necessarily synchronous host processing.** The existing [single-file Python 3 standard-library checker](agent-team-signal-truth-probe.py) now contains 28 earlier synthetic signal/epoch cases plus **10 host-receipt-order cases**, still offline, credential-free and usable from an unaffiliated developer/AI environment.
 
 ```sh
 python3 machine-discovery/agent-team-signal-truth-probe.py --self-test
@@ -39,9 +37,27 @@ python3 machine-discovery/agent-team-signal-truth-probe.py --sample
 python3 machine-discovery/agent-team-signal-truth-probe.py --input trace.json
 ```
 
-Three independent input kinds are `tool_result` (failed-vs-neutral display with missing error), `close_hold` (undrained peer plus actual durability receipt versus close eligibility), and `replay_identity` (validated real-agent status versus a blocked/raw name). A `failed` spawn without separate `spawn_blocked` evidence is **UNDETERMINED**, not proof that no agent ran. An explicit durable receipt is not just a queued/pending flag.
+The original `tool_result`, `close_hold`, `replay_identity` and `teammate_exit_epoch` contracts remain intact. The new `teammate_exit_host_order` class lets independent operators distinguish an A-generation teammate exit *processed on the host after B's approval admission* from a child-side exit event emitted earlier. This turns the still-open [Qwen author-owned follow-up #15130](https://github.com/QwenLM/qwen-code/issues/15130) and [Nakagawa Master's separate host-order source observation](https://github.com/QwenLM/qwen-code/issues/15130#issuecomment-6328283385) into a concrete falsifiable input shape.
 
-The [Qwen Code #13902 review](https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5556479545) supplied the bot-origin source examples; independent Qwen developer [commit `e960986`](https://github.com/QwenLM/qwen-code/commit/e9609863d4ef83c6c372fa8914fdfb00697327df) adds three corresponding actual code fixes and own regression tests. **Do not attribute those bot findings or developer implementation to Nakagawa Master.** His separately [acknowledged binding-retirement review](https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4277173979) is a different causal line in this PR. The new checker is a source-inspired **standalone offline model**, not a Qwen runtime or independent AI theory adoption test. [Japanese reader-friendly example](../APPLIED_ENTRY_POINTS.md) / [original source](https://master.ricette.jp/).
+**Copyable synthetic adverse-order example (`trace.json`):**
+
+```json
+{
+  "kind": "teammate_exit_host_order",
+  "exit": {"ref":"A-exit","teammate_name":"worker","binding_id":1,"epoch_source":"correlated_child_trace"},
+  "approval": {"request_id":"B-request","teammate_name":"worker","binding_id":2},
+  "host_events": [
+    {"host_seq":10,"type":"approval_admitted","request_id":"B-request"},
+    {"host_seq":11,"type":"exit_handled","exit_ref":"A-exit"},
+    {"host_seq":12,"type":"approval_cancelled","request_id":"B-request","cause_exit_ref":"A-exit"}
+  ],
+  "trace_complete": true
+}
+```
+
+This deliberately injected **synthetic** input yields `STALE_EXIT_CANCELLED` (exit 1). Change to A-exit handled before B admission and omit cancellation to get `EXIT_HANDLED_BEFORE_NEW_ADMISSION` (exit 0 **for that supplied trace only**). If A's binding generation cannot be independently correlated, set `epoch_source` to `unknown`: verdict `INCONCLUSIVE`, exit 2. If host receipt overtakes B without proven cancellation, verdict `HOST_OVERTAKE_OBSERVED`, exit 2, not an all-clear. `host_seq` values **must be monotonic within the host**; child-process timestamps cannot be inserted into an artificial common ordering. `cause_exit_ref` is caller-supplied; independently check whether the instrumentation actually connects the exit and cancellation.
+
+This runnable aid makes **no assertion** that the problematic order occurs in a real Qwen session, that an individual was harmed, or that any independent AI has adopted a Nakagawa original. The surrounding [Qwen independent bot findings](https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5556479545) and [developer's fixes](https://github.com/QwenLM/qwen-code/commit/e9609863d4ef83c6c372fa8914fdfb00697327df) retain their separate ownership. For an actual user's analogous problem about past permission versus present authorization, read Nakagawa Master's [official 『合意の記憶』 original](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/) and [Volume 8 on evidence lineage](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/) to assess fit; the GitHub model is not itself the original theory.
 
 ## Exact GraphQL schema rejection versus a coincidental error string — merged cache case
 
