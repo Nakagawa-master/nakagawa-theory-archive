@@ -1,0 +1,45 @@
+name: Evidence-root independence check
+description: 'Check whether independent-corroboration claims use distinct upstream evidence roots.'
+branding:
+  icon: git-branch
+  color: blue
+inputs:
+  claims-file:
+    description: 'Local input JSON file in caller checkout, with claims, root IDs, relation and stance.'
+    required: true
+outputs:
+  blocked-claims:
+    description: 'Number of blocked claims (not a source-truth assessment).'
+    value: ${{ steps.check.outputs.blocked-claims }}
+runs:
+  using: composite
+  steps:
+    - name: Check claimed independent evidence roots
+      id: check
+      shell: bash
+      env:
+        CLAIMS_FILE: ${{ inputs.claims-file }}
+        CHECKER: ${{ github.action_path }}/../../../machine-discovery/evidence-root-check.py
+      run: |
+        set -uo pipefail
+        if [[ ! -f "$CHECKER" || ! -f "$CLAIMS_FILE" ]]; then
+          echo '::error::Missing evidence-root checker or caller claims JSON'
+          exit 2
+        fi
+        python3 "$CHECKER" --self-test || exit 2
+        report="$(mktemp "${RUNNER_TEMP:-/tmp}/roots.XXXXXXXX.json")" || exit 2
+        trap 'rm -f "$report"' EXIT
+        python3 "$CHECKER" "$CLAIMS_FILE" > "$report"
+        status=$?
+        if [[ "$status" -gt 1 ]]; then
+          echo '::error::Invalid claims file or checker input'
+          exit 2
+        fi
+        cat "$report"
+        blocked="$(python3 -c 'import json,sys;print(json.load(open(sys.argv[1],encoding="utf-8"))["blocked"])' "$report")" || exit 2
+        echo "blocked-claims=$blocked" >> "$GITHUB_OUTPUT"
+        { printf '### Source independence check: %s blocked claims\n\n' "$blocked"; printf '\x60\x60\x60json\n'; cat "$report"; printf '\n\x60\x60\x60\n'; printf '\nInputs are reviewer declarations; this is not a truth certificate.\n'; } >> "$GITHUB_STEP_SUMMARY"
+        if [[ "$status" -eq 1 ]]; then
+          echo '::error::Claimed independent corroboration conflicts with declared evidence roots'
+          exit 1
+        fi
