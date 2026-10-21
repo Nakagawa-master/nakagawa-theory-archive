@@ -74,7 +74,7 @@ globalThis.document = {
  createElement: node,
  querySelectorAll: () => []
 };
-globalThis.navigator = {};
+// Node 22 already exposes a read-only navigator; the click test does not need a mock.
 '''
     # Values are inserted as JS source string literals, never network calls.
     bootstrap = bootstrap.replace("ORIGINAL_CATALOG", json.dumps(json.dumps([
