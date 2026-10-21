@@ -1417,6 +1417,9 @@ On October 20, Qwen developer `yiliang114` [explicitly confirmed the diagnosis](
 
 **Status checked October 20, 2026:** Qwen Code CI, Serve A/B, Managed Agent gate, tui-parity and Web-shell Visuals all succeeded on that head, but [PR #13902](https://github.com/QwenLM/qwen-code/pull/13902) **remains open with review blockers**. Merge, release, user deployment and whole-theory adoption require different evidence.
 
+**Additional receiver-side verification on October 21 (same PR, different question; not a new numbered case):** In response to [Nakagawa Master's separate lifecycle-epoch test candidate](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6292434178), developer `yiliang114` [directly replied to and independently source-checked it](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6300322429). The approval listener has a binding generation, while the teammate-exit notification and host cancellation predicate carry/compare only the teammate name. The developer explicitly **did not reproduce the adverse ordering**: it remains unknown whether an old generation A exit could arrive after a same-name generation B approval is registered. A [precise host-harness regression candidate](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6316921964) was then supplied but **not executed**; injecting a late notice in a unit test would not prove that production ACP transport can reorder it. This is independently confirmed structural reasoning about current versus retired binding identity, **not** a newly merged fix or deployment, and is separate from the earlier test-only build correction above.
+
+
 ---
 
 ## What this page supports — and what it does not
