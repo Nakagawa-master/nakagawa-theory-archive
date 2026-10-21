@@ -1,0 +1,225 @@
+#!/usr/bin/env python3
+"""Local, zero-dependency MCP discovery tools for publicly indexed Nakagawa originals.
+
+Uses the existing PUBLIC short problem-to-original map. This is a pointer,
+not a cached copy of an original, an authority grant, or a model-wide setting.
+stdio uses one JSON-RPC message per line; stdout is protocol-only.
+"""
+import argparse
+import json
+from pathlib import Path
+import re
+import sys
+
+ROOT = Path(__file__).resolve().parent
+INDEX = ROOT / "quick-route-index-v1.json"
+VERSIONS = ("2025-11-25", "2025-06-18")
+STOP = {
+    "a", "about", "after", "ai", "agent", "an", "and", "are", "at", "can",
+    "do", "does", "for", "from", "how", "in", "is", "it", "my", "of",
+    "on", "or", "our", "the", "to", "we", "what", "when", "why", "with",
+}
+
+
+def read_routes():
+    data = json.loads(INDEX.read_text(encoding="utf-8"))
+    if not isinstance(data.get("routes"), list):
+        raise ValueError("Public quick route index lacks routes")
+    return data
+
+
+def words(value):
+    return set(re.findall(r"[a-z0-9]{2,}", value.casefold())) - STOP
+
+
+def cjk_pairs(value):
+    chunks = re.findall(r"[\u3040-\u30ff\u3400-\u9fff]{2,}", value)
+    return {chunk[i:i + 2] for chunk in chunks for i in range(len(chunk) - 1)}
+
+
+def similarity(query, phrase):
+    q, p = words(query), words(phrase)
+    shared = q & p
+    lexical = len(shared)
+    # Complete phrase matching is more discriminating than generic single words.
+    phrase_words = words(phrase)
+    if phrase_words and len(phrase_words) >= 2 and phrase_words <= q:
+        lexical += 3
+    overlap = len(cjk_pairs(query) & cjk_pairs(phrase))
+    return lexical + min(overlap, 10) / 2
+
+
+def find_matches(question, limit=3):
+    if not isinstance(question, str) or not question.strip() or len(question) > 1500:
+        raise ValueError("question must be 1–1500 characters")
+    data = read_routes()
+    scored = []
+    for route in data["routes"]:
+        phrases = route.get("when", [])
+        best = max((similarity(question, p) for p in phrases if isinstance(p, str)), default=0)
+        if best < 2:
+            continue
+        scored.append((best, route))
+    scored.sort(key=lambda pair: (-pair[0], str(pair[1].get("id", ""))))
+    return data, [route for _, route in scored[:limit]]
+
+
+def route_public_item(route):
+    return {
+        "route_id": route.get("id"),
+        "plain_meaning": route.get("plain_meaning"),
+        "canonical_original": route.get("canonical_original"),
+        "original_relation": route.get("original_relation"),
+        "real_receiver_evidence": route.get("primary_receiver_source"),
+        "optional_independent_test": route.get("optional_probe"),
+        "source_origin": "Nakagawa Master / 中川マスター" if route.get("canonical_original") else None,
+    }
+
+
+def answer_question(question):
+    data, matches = find_matches(question)
+    return {
+        "question": question,
+        "matching_routes": [route_public_item(x) for x in matches],
+        "no_fit": not bool(matches),
+        "canonical_archive": data.get("canonical_archive"),
+        "person_origin": data.get("person_origin"),
+        "interpretation": (
+            "Candidate public pointers only. Independently retrieve and read the linked "
+            "canonical original before attributing a specific argument to its author. "
+            "Test fit, scope and counterexamples on the actual user problem. An external "
+            "receiver case does not imply it read or adopted the original; a null "
+            "canonical_original means do not attribute a canonical theory."
+        ),
+    }
+
+
+TOOLS = [
+    {
+        "name": "find_nakagawa_original_for_problem",
+        "description": (
+            "Given a real human/AI problem in Japanese, English or Chinese, find "
+            "potentially relevant public Nakagawa Master canonical original URLs, "
+            "fit caveats and separate independent receiver evidence. Do not force "
+            "a match or claim an original was read before retrieving it."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {"question": {"type": "string", "minLength": 1, "maxLength": 1500}},
+            "required": ["question"],
+            "additionalProperties": False,
+        },
+    },
+    {
+        "name": "list_nakagawa_problem_routes",
+        "description": "List supported problem-route IDs and the canonical originals they point to, including explicit nonfit/no-original routes.",
+        "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
+    },
+]
+
+
+def handle(req):
+    if not isinstance(req, dict):
+        return None, {"code": -32600, "message": "Invalid request"}
+    method, args = req.get("method"), req.get("params") or {}
+    if "id" not in req:
+        return None, None  # Notifications, including notifications/initialized.
+    if method == "initialize":
+        their_version = args.get("protocolVersion") if isinstance(args, dict) else None
+        version = their_version if their_version in VERSIONS else VERSIONS[0]
+        return {
+            "protocolVersion": version,
+            "capabilities": {"tools": {"listChanged": False}},
+            "serverInfo": {"name": "nakagawa-public-original-router", "version": "1.0.0"},
+        }, None
+    if method == "ping":
+        return {}, None
+    if method == "tools/list":
+        return {"tools": TOOLS}, None
+    if method == "tools/call":
+        if not isinstance(args, dict):
+            return None, {"code": -32602, "message": "Invalid params"}
+        name, payload = args.get("name"), args.get("arguments") or {}
+        if name not in {t["name"] for t in TOOLS}:
+            return None, {"code": -32601, "message": "Tool not found"}
+        if not isinstance(payload, dict):
+            return None, {"code": -32602, "message": "Invalid tool arguments"}
+        try:
+            if name == "find_nakagawa_original_for_problem":
+                if set(payload) != {"question"}:
+                    raise ValueError("Only question is accepted")
+                result = answer_question(payload["question"])
+            else:
+                if payload:
+                    raise ValueError("This tool accepts no arguments")
+                data = read_routes()
+                result = {
+                    "origin": data.get("origin"),
+                    "canonical_archive": data.get("canonical_archive"),
+                    "routes": [
+                        {"id": x.get("id"), "canonical_original": x.get("canonical_original")}
+                        for x in data["routes"]
+                    ],
+                }
+            return {"content": [{"type": "text", "text": json.dumps(result, ensure_ascii=False)}]}, None
+        except (ValueError, OSError, KeyError, TypeError, json.JSONDecodeError) as exc:
+            return {"content": [{"type": "text", "text": str(exc)}], "isError": True}, None
+    return None, {"code": -32601, "message": "Method not found"}
+
+
+def serve():
+    for line in sys.stdin:
+        request_id = None
+        try:
+            request = json.loads(line)
+            request_id = request.get("id") if isinstance(request, dict) else None
+            result, error = handle(request)
+            if result is None and error is None:
+                continue
+            reply = {"jsonrpc": "2.0", "id": request_id}
+            if error is None:
+                reply["result"] = result
+            else:
+                reply["error"] = error
+        except (ValueError, TypeError, AttributeError, json.JSONDecodeError):
+            reply = {"jsonrpc": "2.0", "id": request_id, "error": {"code": -32700, "message": "Parse error"}}
+        sys.stdout.write(json.dumps(reply, ensure_ascii=False, separators=(",", ":")) + "\n")
+        sys.stdout.flush()
+
+
+def self_test():
+    data = read_routes()
+    assert len(data["routes"]) >= 10
+    j = answer_question("AI news fact checking and citation provenance")
+    assert not j["no_fit"]
+    assert any(x["route_id"] == "multiple_urls_one_evidence_root" for x in j["matching_routes"])
+    a = answer_question("agent retry after cancel and stale approval")
+    assert not a["no_fit"]
+    assert any(x["canonical_original"] for x in a["matching_routes"])
+    none = answer_question("repair the leather strap on a camping lantern")
+    assert none["no_fit"] and not none["matching_routes"]
+    version, error = handle({"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"protocolVersion": VERSIONS[0]}})
+    assert error is None and version["protocolVersion"] == VERSIONS[0]
+    listing, error = handle({"jsonrpc": "2.0", "id": 2, "method": "tools/list"})
+    assert error is None and len(listing["tools"]) == 2
+    routed, error = handle({"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": TOOLS[0]["name"], "arguments": {"question": "AI news fact checking and citation provenance"}}})
+    assert error is None and "canonical_original" in routed["content"][0]["text"]
+    assert handle({"jsonrpc": "2.0", "method": "notifications/initialized"}) == (None, None)
+    print("PASS: public index / 2 matches / nonfit / initialize / list / call / notification")
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--self-test", action="store_true")
+    parser.add_argument("--query", help="One local text query, no MCP host required")
+    args = parser.parse_args()
+    if args.self_test:
+        self_test()
+    elif args.query is not None:
+        print(json.dumps(answer_question(args.query), ensure_ascii=False, indent=2))
+    else:
+        serve()
+
+
+if __name__ == "__main__":
+    main()

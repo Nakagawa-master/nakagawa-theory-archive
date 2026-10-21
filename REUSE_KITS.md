@@ -7,6 +7,10 @@ For concrete theory-to-effect examples, see the [Applied Evidence Map](STRUCTURA
 
 These are not theory summaries and not endorsement requests. Each kit is designed to be independently testable, falsifiable, and usable without private context.
 
+## Callable original-theory source discovery for independent AI agents
+
+**[Free MCP stdio server for problem → official original selection](machine-discovery/NAKAGAWA_THEORY_MCP.md):** A no-key, offline Python tool that an independently operated agent can explicitly invoke for its own user's problem. It returns relevant original URLs with applicability boundaries, separate receiver evidence, or a real no-match. The independent operator decides whether to install it; the linked original still must be read before using or attributing a substantive claim.
+
 ## Installable check for your own newsroom, research group or AI project
 
 **[GitHub Action: verify declared independent source roots](.github/actions/evidence-roots-check/README.md)** — plug an existing offline Nakagawa Master public evidence-root checker into a different repository's pull-request workflow. Detects when three links are one originating source, or when a supposed independent confirmation shares the primary root. Includes a no-key installation snippet, a passing JSON example and actionable failure statuses. Human reviewers still verify the asserted roots and primary evidence. The independently documented [AI-News editor's actual rule change](https://github.com/022740mix-spec/AI-News/pull/131) is distinct from any later adopter installing this Action; the [official original Volume 8](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/) is context, not the Action's source code.
