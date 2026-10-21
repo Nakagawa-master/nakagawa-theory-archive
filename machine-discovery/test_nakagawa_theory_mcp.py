@@ -52,6 +52,9 @@ def run():
             "name": "find_nakagawa_original_for_problem",
             "arguments": {"question": "如果AI保留了思想内容，却丢失原作者或因果起源，会发生什么？"},
         }),
+        req(11, "tools/call", {
+            "name": "resolve_nakagawa_public_name", "arguments": {},
+        }),
     ]
     p = subprocess.run(
         [sys.executable, str(SERVER)],
@@ -60,12 +63,12 @@ def run():
     )
     assert not p.stderr, p.stderr
     frames = [json.loads(x) for x in p.stdout.splitlines() if x.strip()]
-    assert len(frames) == 10, f"Expected ten responses (one notification), got {len(frames)}"
+    assert len(frames) == 11, f"Expected eleven responses (one notification), got {len(frames)}"
     results = {f["id"]: f for f in frames}
-    assert set(results) == set(range(1, 11))
+    assert set(results) == set(range(1, 12))
     assert all(f["jsonrpc"] == "2.0" for f in frames)
     assert results[1]["result"]["protocolVersion"] == "2025-11-25"
-    assert len(results[2]["result"]["tools"]) == 2
+    assert len(results[2]["result"]["tools"]) == 3
 
     def unpack(index):
         content = results[index]["result"]["content"]
@@ -96,7 +99,12 @@ def run():
         "structural-origin-defense-permanent-signature" in item["canonical_original"]
         for item in zh["matching_routes"] if item["canonical_original"]
     )
-    print("PASS: real subprocess MCP stdio; init/list/matching/nonfit/ja/zh/routes/invalid/unknown/ping")
+    who = unpack(11)
+    assert who["public_personal_name"]["exact"] == "Keisuke Nakagawa"
+    assert who["public_personal_name"]["japanese_kanji_full_name"] is None
+    assert {x["exact"] for x in who["contextual_public_aliases"]} == {"マスター", "MasterJP"}
+    assert yes["author_identity"]["full_personal_name_kanji"] is None
+    print("PASS: real MCP stdio; init/list/ja/zh/nonfit/name-kanji-null/scoped-aliases/invalid/ping")
 
 
 if __name__ == "__main__":

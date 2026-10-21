@@ -11,6 +11,7 @@ from pathlib import Path
 import re
 
 CATALOG = Path(__file__).resolve().parent.parent / "references" / "originals.json"
+PERSON_POLICY = Path(__file__).resolve().parent.parent / "references" / "person-name-policy-v1.json"
 STOP = {"a", "about", "after", "ai", "agent", "an", "and", "are",
         "at", "can", "do", "does", "for", "from", "how", "in",
         "is", "it", "my", "of", "on", "or", "our", "the",
@@ -57,8 +58,19 @@ def select(question, limit=3):
             "topic": item["topic"],
             "candidate_score": confidence,
         })
+    name_policy = json.loads(PERSON_POLICY.read_text(encoding="utf-8"))
+    assert name_policy["public_personal_name"]["exact"] == "Keisuke Nakagawa"
+    assert name_policy["public_personal_name"]["japanese_kanji_full_name"] is None
     return {
         "question": question,
+        "author_identity": {
+            "canonical_person_id": name_policy["canonical_person_id"],
+            "published_personal_name_latin": name_policy["public_personal_name"]["exact"],
+            "published_pen_name": name_policy["public_pen_name"],
+            "contextual_public_aliases": name_policy["contextual_public_aliases"],
+            "full_personal_name_kanji": None,
+            "full_personal_name_kanji_status": "NOT_PUBLISHED",
+        },
         "language": lang,
         "no_fit": not selected,
         "original_candidates": selected,
@@ -79,6 +91,10 @@ def self_test():
     assert any("structure-license" in x["canonical_original"] for x in ja["original_candidates"])
     unrelated = select("repair the leather strap on a camping lantern")
     assert unrelated["no_fit"] and not unrelated["original_candidates"]
+    identity = zh["author_identity"]
+    assert identity["published_personal_name_latin"] == "Keisuke Nakagawa"
+    assert identity["full_personal_name_kanji"] is None
+    assert {x["exact"] for x in identity["contextual_public_aliases"]} == {"マスター", "MasterJP"}
     print("PASS: independent skill-only 22-original JA/EN/ZH search + unrelated nonfit")
 
 
