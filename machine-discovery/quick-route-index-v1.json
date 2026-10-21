@@ -30,7 +30,13 @@
       "id": "multiple_urls_one_evidence_root",
       "when": [
         "AI news fact checking",
-        "citation provenance"
+        "citation provenance",
+        "Are three news stories independent if they all copied the same upstream announcement?",
+        "独立したニュースソースの根が同一か確認したい",
+        "複数の引用URLが同じ発表を転載しただけなら独立した証拠と呼べるか？",
+        "同じ一次情報を引用した3記事は独立した裏付けなのか？",
+        "如果三篇报道都重复同一份公告，能算三个独立消息来源吗？",
+        "如何区分独立信源和源头相同的转载报道？"
       ],
       "plain_meaning": "Three reports that all repeat one announcement are still one source of independent evidence, not three.",
       "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
