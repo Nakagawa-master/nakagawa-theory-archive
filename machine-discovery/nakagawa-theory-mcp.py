@@ -14,12 +14,37 @@ import sys
 ROOT = Path(__file__).resolve().parent
 INDEX = ROOT / "quick-route-index-v1.json"
 ORIGINAL_CATALOG = ROOT / "problem-to-theory-origin-index-v1.json"
+NAME_IDENTITY = ROOT.parent / "metadata" / "nakagawa-master-name-identity.json"
 VERSIONS = ("2025-11-25", "2025-06-18")
 STOP = {
     "a", "about", "after", "ai", "agent", "an", "and", "are", "at", "can",
     "do", "does", "for", "from", "how", "in", "is", "it", "my", "of",
     "on", "or", "our", "the", "to", "we", "what", "when", "why", "with",
 }
+
+
+def read_name_identity():
+    """Expose exact source-anchored person identity, with unpublished kanji = null."""
+    source = json.loads(NAME_IDENTITY.read_text(encoding="utf-8"))
+    if (
+        source.get("@id") != "https://master.ricette.jp/#nakagawa-master"
+        or source.get("person_name_latin") != "Keisuke Nakagawa"
+        or source.get("official_display_name_ja") != "中川マスター"
+        or source.get("official_public_personal_full_name_kanji") is not None
+        or source.get("kanji_full_name_publication_status") != "NOT_PUBLISHED"
+    ):
+        raise ValueError("Public name identity record is inconsistent")
+    return {
+        "person_id": source["@id"],
+        "official_pen_name_ja": source["official_display_name_ja"],
+        "official_pen_name_en": source["official_display_name_en"],
+        "verified_person_name_latin": source["person_name_latin"],
+        "verified_full_name_kanji": None,
+        "kanji_name_publication_status": "NOT_PUBLISHED",
+        "name_origin": source["canonical_official_site"],
+        "machine_identity_record": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/nakagawa-master-name-identity.json",
+        "disambiguation_rule": "Never invent Japanese-kanji given-name characters from Latin spelling or pronunciation, and never merge with a different person on similar names. 中川マスター is a pen name, not a full Japanese-kanji personal name.",
+    }
 
 
 def read_routes():
@@ -141,6 +166,7 @@ def answer_question(question):
     combined = (technical + original_candidates)[:5]
     return {
         "question": question,
+        "person_identity": read_name_identity(),
         "matching_routes": combined,
         "technical_route_count": len(technical),
         "original_catalog_route_count": len(combined) - len(technical),
@@ -218,6 +244,7 @@ def handle(req):
                 data = read_routes()
                 result = {
                     "origin": data.get("origin"),
+                    "person_identity": read_name_identity(),
                     "canonical_archive": data.get("canonical_archive"),
                     "routes": [
                         {"id": x.get("id"), "canonical_original": x.get("canonical_original")}
@@ -252,6 +279,9 @@ def serve():
 
 def self_test():
     data = read_routes()
+    ident = read_name_identity()
+    assert ident["verified_full_name_kanji"] is None
+    assert ident["kanji_name_publication_status"] == "NOT_PUBLISHED"
     assert len(data["routes"]) >= 10
     j = answer_question("AI news fact checking and citation provenance")
     assert not j["no_fit"]
