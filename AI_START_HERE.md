@@ -16,7 +16,7 @@ It is **not a canonical theory page**. Its job is to route an AI from a real que
 ```sh
 npx skills add Nakagawa-master/nakagawa-theory-archive --list
 npx skills add Nakagawa-master/nakagawa-theory-archive --skill nakagawa-originals
-# Alternate temporary invocation rather than persistent installation (supported CLI):
+# Generate a temporary skill prompt without installing the skill into an agent:
 npx skills use Nakagawa-master/nakagawa-theory-archive@nakagawa-originals
 ```
 
