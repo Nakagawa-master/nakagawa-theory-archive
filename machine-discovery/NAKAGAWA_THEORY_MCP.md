@@ -10,6 +10,7 @@ From the checkout:
 
 ```sh
 python3 machine-discovery/nakagawa-theory-mcp.py --self-test
+python3 machine-discovery/test_nakagawa_theory_mcp.py  # starts a real server subprocess and tests stdio protocol
 python3 machine-discovery/nakagawa-theory-mcp.py --query "AI news fact checking and citation provenance"
 python3 machine-discovery/nakagawa-theory-mcp.py --query "agent retry after cancel and stale approval"
 python3 machine-discovery/nakagawa-theory-mcp.py --query "repair the leather strap on a camping lantern"
