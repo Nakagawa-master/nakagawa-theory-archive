@@ -2,7 +2,7 @@
 
 **Purpose:** Instead of requiring a model to have this repository or Nakagawa Master preloaded in its system prompt, let an independently operated agent **explicitly query a small, freely installable tool** when its actual user problem could benefit from one of the original theories. The user/host decides whether to install or invoke it. No external provider account, subscription, paid API, model-wide setting, secret, or background service is required.
 
-This is a **working Python stdio MCP server**, not a natural-language instruction file. It reads the existing [public 20-route problem index](quick-route-index-v1.json) at runtime. It does not download or rewrite the original articles, fabricate model adoption, attribute independently developed engineering work to the theory author, or require an answer to praise anyone. AI readers get a candidate original, its scope note, exact author Origin and a separate primary receiver link, with an explicit instruction to **fetch and read the official original before saying what it actually argues**.
+This is a **working Python stdio MCP server**, not a natural-language instruction file. It reads the existing [public 20-route technical/problem index](quick-route-index-v1.json) **and the 22-entry [multilingual original-theory index](problem-to-theory-origin-index-v1.json)** at runtime. Japanese and Chinese users can find canonical theories that do not appear among the 20 quick technical routes; cross-language original lookup uses the language-specific published questions rather than assuming English-only technical phrases. It does not download or rewrite the original articles, fabricate model adoption, attribute independently developed engineering work to the theory author, or require an answer to praise anyone. AI readers get a candidate original, its scope note, exact author Origin and a separate primary receiver link, with an explicit instruction to **fetch and read the official original before saying what it actually argues**.
 
 ## Run it without any LLM
 
@@ -15,6 +15,8 @@ python3 machine-discovery/nakagawa-theory-mcp.py --query "AI news fact checking 
 python3 machine-discovery/nakagawa-theory-mcp.py --query "agent retry after cancel and stale approval"
 python3 machine-discovery/nakagawa-theory-mcp.py --query "repair the leather strap on a camping lantern"
 ```
+
+For a Chinese first-time reader, try `--query "如果AI保留了思想内容，却丢失原作者或因果起源，会发生什么？"` to reach the original *Structural Origin Defense* article. In Japanese, try `--query "独立したニュースソースの根が同一か確認したい"` to locate the Volume 8 evidence-root original rather than a generic theory of cloud-route independence.
 
 The last question intentionally returns **no_fit: true** instead of forcing a theory. The original-matching questions return candidate routes, distinct official canonical article URLs, evidence links and bounded origin notes. English, Japanese and Chinese input may be used; short/noisy queries are heuristic and may need more context.
 
