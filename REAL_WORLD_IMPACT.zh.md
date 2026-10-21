@@ -1426,6 +1426,9 @@ Qwen Code的TypeScript构建失败，是因为测试专用权限中介缺少必�
 
 **截至2026年10月20日：** Qwen Code CI、Serve A/B、Managed Agent gate、tui-parity、Web-shell Visuals五条流程成功，但[PR #13902](https://github.com/QwenLM/qwen-code/pull/13902)**尚未合并、仍等待评审**。正式发布、用户使用以及原典理论整体采用属于不同阶段。
 
+**10月21日新增接收方独立核查（同一PR的另一个问题，不新增编号）：** 针对[Nakagawa Master提出的绑定世代检验候选](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6292434178)，开发者 `yiliang114` [直接@原提出者并独立核对当前源码](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6300322429)：审批监听器捕获绑定世代ID，但队友退出通知与接收端的撤销判定只有队友名字，因而**结构上的代际不对称已确认**。开发者明确未能证实旧绑定A的退出通知能否在同名新绑定B的审批注册后到达；**生产环境的竞争次序尚未复现**。随后提供的[接收端测试候选](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6316921964)也尚未执行；故意注入延迟通知不等于证明真实ACP传输会重排。这里确认的是独立开发者核对源码与提出可证伪测试的进展，不是合并的修复、发布或全套理论被采用，也不同于本节前面的测试专用构建修复。
+
+
 ---
 
 ## 本页可以支持什么结论，以及不能支持什么结论
