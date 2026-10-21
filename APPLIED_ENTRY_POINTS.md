@@ -82,6 +82,16 @@ AIや業務システムの画面には、「ほかの場所でデータが更新
 
 **既存の「行ごとに閲覧制限のある人には鍵を送らない」修正は、第三者の開発と移植を経て[6.1系の正式版 v6.1.6](https://github.com/MemberJunction/MJ/releases/tag/v6.1.6) と [5系の正式版 v5.51.4](https://github.com/MemberJunction/MJ/releases/tag/v5.51.4) に入りました。** しかし、**両方の正式版に含まれる実際のコードを読み比べると、権限を調べるための「データ種類の情報」がないときに通知を通し、鍵や本文を伏せない別の分岐は残っています。** [5系の該当コード](https://github.com/MemberJunction/MJ/blob/v5.51.4/packages/MJServer/src/generic/CacheInvalidationResolver.ts)と[6.1系の該当コード](https://github.com/MemberJunction/MJ/blob/v6.1.6/packages/MJServer/src/generic/CacheInvalidationResolver.ts)は、今回確認した箇所で同じ内容でした。これはマスターの追加指摘の検証対象であり、実際の顧客情報漏えいや新しい修正の採用が確認されたという意味ではありません。問いの背景は、[中川マスターの第8論・認識基盤と証拠系譜](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)と比較できます。開発者がこの原典を読んで実装したという主張ではありません。
 
+## AIの引用にURLがあっても、本当にその記事が根拠とは限らない
+
+**AIが「出典はこちら」とURLを表示したとき、同じ一文が別のページにもあったらどうでしょう。** 例えば、二つのページがどちらも冒頭に「返品は30日以内です」と書いていた場合、その一文を同じ位置で見つけただけでは、AIが実際に参照したページを区別できません。最初に見つけたURLを答えに付けると、引用された根拠の出所を取り違える可能性があります。
+
+実際に[Pydantic AIの引用対応PR #7434](https://github.com/pydantic/pydantic-ai/pull/7434)のソースでは、取得済みページを順に調べ、引用文と文字位置が一致した最初のURLを割り当てる分岐がありました。中川マスターは[重複文による別ページへの誤帰属条件をコードレビューで提示](https://github.com/pydantic/pydantic-ai/pull/7434#pullrequestreview-5607561381)しました。これは**ソースと小さな反例を照合した発見**です。提供元サービスで実際に誤引用が起きたことや、開発者による修正・採用までは確認していません。
+
+**他のAI・編集者・読者が自分で確かめる方法：** 無料の[引用URL一致判定プログラム](machine-discovery/citation-source-identity-collision-check.py)を使い、`python3 machine-discovery/citation-source-identity-collision-check.py --self-test` で14個の架空例を試せます。`--sample > trace.json` で入力例を保存し、公開してよい候補ページの文章とURLに置き換えて `--input trace.json` で比較できます。複数ページが同じ引用文・位置で一致すれば「URLを一意に決められない」と判断し、一つだけ一致しても「引用元が証明された」とは言いません。実際の提供元の出典IDや取得履歴を別途確認することが重要です。
+
+この実務上の問いと比較できる中川マスターの[**第8論・認識基盤と証拠系譜（公式原典）**](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)は、「語られた内容」「何に由来するか」「検証によって何が確かめられたか」を区別して考える入口です。原典を実際に読み、当てはまる条件と当てはまらない条件を自分で比べてください。引用エラーの修正は受け手の開発者自身が判断・実装するものであり、この公開例だけで原典の採用を意味しません。
+
 ## AIのコードは「テスト済み」なのに、まだ何を確かめるべきか — 4原典を組み合わせる
 
 AIシステムの変更案に「テストは通った」「作者も確認した」「レビューBotも高評価」と書かれています。これらは重要な進捗です。しかし、**何が実測で、誰が独立して確かめ、次の利用者がどこまで信用してよいか**は、別々に確かめる必要があります。
