@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Offline checks for three distinct agent-team signals, using synthetic traces.
+"""Offline checks for four distinct agent-team signals, using synthetic traces.
 
 Examples come from Qwen Code PR #13902, its independent bot review
 #5556479545 and the independently authored fix e960986 (2026-10-17).
 This is NOT a Qwen runtime test, proof of actual user data loss, or evidence
 that Qwen adopted Nakagawa Master's original theories.
 
-Exit codes for --input: 0 faithful/acceptable, 1 incorrect/missing/dangerous signal, 2 invalid/inconclusive/not observed.\nFor teammate_exit_epoch, all data are caller-supplied; even a FAITHFUL result is\nnot proof of Qwen runtime ordering or upstream adoption. Require a real trace.
+Exit codes for --input: 0 faithful/acceptable, 1 incorrect/missing/dangerous signal, 2 invalid/inconclusive/not observed.\nFor teammate_exit_epoch, all data are caller-supplied; even a FAITHFUL result is
+not proof of Qwen runtime ordering or upstream adoption. Require a real trace.
 Run: python3 machine-discovery/agent-team-signal-truth-probe.py --self-test
      python3 machine-discovery/agent-team-signal-truth-probe.py --sample
      python3 machine-discovery/agent-team-signal-truth-probe.py --input trace.json
