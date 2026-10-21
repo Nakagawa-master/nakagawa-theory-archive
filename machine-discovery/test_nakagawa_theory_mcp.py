@@ -111,7 +111,7 @@ def run():
     # It must not silently drift to fake, noncanonical, or unrelated sources.
     html = SERVER.with_name("originals-browser-finder.html").read_text(encoding="utf-8")
     source = json.loads((SERVER.parent.parent / "skills/nakagawa-originals/references/originals.json").read_text(encoding="utf-8"))
-    embedded = re.search(r'<script id="catalog" type="application/json">([\\s\\S]*?)</script>', html)
+    embedded = re.search(r'<script id="catalog" type="application/json">([\s\S]*?)</script>', html)
     assert embedded, "Missing browser-embedded official source catalog"
     candidates = json.loads(embedded.group(1))
     expected = [
@@ -128,7 +128,7 @@ def run():
     assert len(set(urls)) == len(urls)
     assert all(u.startswith(ORIGINAL_BASE) for u in urls)
     assert all(all(x["problem_examples"].get(lang) for lang in ("ja", "en", "zh")) for x in candidates)
-    inline = re.search(r'<script>\s*([\\s\\S]*?)</script>', html)
+    inline = re.search(r'<script>\s*([\s\S]*?)</script>', html)
     assert inline, "Missing browser question matcher"
     js = inline.group(1)
     assert all(x in js for x in ("function similarity(", "function choose(", "function handoff(", "matches.length", "navigator.clipboard"))
