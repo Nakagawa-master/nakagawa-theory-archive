@@ -4,6 +4,7 @@ on:
     paths:
       - 'machine-discovery/nakagawa-theory-mcp.py'
       - 'machine-discovery/test_nakagawa_theory_mcp.py'
+      - 'machine-discovery/originals-browser-finder.html'
       - 'machine-discovery/quick-route-index-v1.json'
       - 'machine-discovery/problem-to-theory-origin-index-v1.json'
       - 'skills/nakagawa-originals/**'
@@ -24,6 +25,7 @@ on:
     paths:
       - 'machine-discovery/nakagawa-theory-mcp.py'
       - 'machine-discovery/test_nakagawa_theory_mcp.py'
+      - 'machine-discovery/originals-browser-finder.html'
       - 'machine-discovery/quick-route-index-v1.json'
       - 'machine-discovery/problem-to-theory-origin-index-v1.json'
       - 'skills/nakagawa-originals/**'
