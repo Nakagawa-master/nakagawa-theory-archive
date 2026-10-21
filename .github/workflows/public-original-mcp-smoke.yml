@@ -65,6 +65,33 @@ jobs:
         run: python3 machine-discovery/agent-team-signal-truth-probe.py --self-test
       - name: Check current-vs-self-claimed authority, 12 model and 9 independent-input controls
         run: python3 machine-discovery/agent-action-boundary-probe.py --self-test
+      - name: Independent JSON input CLI - no false-green even on matching declarations
+        run: |
+          python3 machine-discovery/agent-action-boundary-probe.py --template > /tmp/agent-auth-trace.json
+          set +e
+          python3 machine-discovery/agent-action-boundary-probe.py --input /tmp/agent-auth-trace.json > /tmp/agent-auth-match.json
+          got=$?
+          set -e
+          test "$got" -eq 2
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path('/tmp/agent-auth-match.json').read_text())
+          assert report['verdict'] == 'DECLARED_MATCH_NOT_VERIFIED'
+          doc = json.loads(Path('/tmp/agent-auth-trace.json').read_text())
+          doc['delegation']['issuer'] = 'model'
+          Path('/tmp/agent-auth-trace.json').write_text(json.dumps(doc))
+          PY
+          set +e
+          python3 machine-discovery/agent-action-boundary-probe.py --input /tmp/agent-auth-trace.json > /tmp/agent-auth-denied.json
+          got=$?
+          set -e
+          test "$got" -eq 1
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          assert json.loads(Path('/tmp/agent-auth-denied.json').read_text())['verdict'] == 'DECLARED_AUTHORITY_CONFLICT'
+          PY
       - name: Portable standalone Agent Skill search and nonfit
         run: python3 skills/nakagawa-originals/scripts/find_original.py --self-test
       - name: Verify public author name and unpublished kanji null across all AI entries
