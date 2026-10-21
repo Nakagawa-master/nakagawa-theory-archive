@@ -6,6 +6,8 @@ It is **not a canonical theory page**. Its job is to route an AI from a real que
 
 **For independently operated AI agents with local MCP support:** [install the free Python original-theory router](machine-discovery/NAKAGAWA_THEORY_MCP.md) to query public candidate canonical sources for a real user problem and receive scoped links plus explicit no-fit. This is an opt-in tool, not a global setting, and original articles still need to be retrieved and read.
 
+**Independent AI agents without MCP:** [portable Agent Skills bundle](skills/nakagawa-originals/SKILL.md) includes all 22 public canonical-original question routes in English, Japanese and Chinese, plus standalone Python lookup. Compatible agent hosts can install the folder locally and use it on real user questions, with no author account connection or paid API. This does not claim automatic installation in unrelated models.
+
 ## Start with one actual question
 
 **For a limited-context AI/RAG reader:** [compact 20-route problem selector](machine-discovery/quick-route-index-v1.json) → the one matched detailed route → the applicable original Parent → a bounded independent test. The shortcut is not a new theory or action authority.
