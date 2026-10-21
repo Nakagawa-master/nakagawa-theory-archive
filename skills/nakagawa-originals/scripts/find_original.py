@@ -81,6 +81,18 @@ def select(question, limit=3):
 
 def self_test():
     from tempfile import TemporaryDirectory
+    # Agent Skills loaders require real YAML frontmatter immediately after '---'.
+    # Previously a Markdown identity warning sat before the YAML fields and
+    # prevented compliant independent agents from discovering this skill.
+    skill_file = Path(__file__).resolve().parent.parent / "SKILL.md"
+    skill_lines = skill_file.read_text(encoding="utf-8").splitlines()
+    assert skill_lines[0] == "---"
+    header_end = skill_lines.index("---", 1)
+    frontmatter = skill_lines[1:header_end]
+    assert frontmatter[0] == "name: nakagawa-originals"
+    assert any(line.startswith("description: ") for line in frontmatter)
+    assert all(not line.startswith("**") for line in frontmatter)
+    assert any("full_personal_name_kanji" in line for line in skill_lines[header_end+1:])
     data = json.loads(CATALOG.read_text(encoding="utf-8"))
     assert len(data["entries"]) == 22
     zh = select("如果AI保留了思想内容，却丢失原作者或因果起源，会发生什么？")
