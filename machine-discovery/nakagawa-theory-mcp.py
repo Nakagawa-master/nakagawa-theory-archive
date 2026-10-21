@@ -13,6 +13,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parent
 INDEX = ROOT / "quick-route-index-v1.json"
+ORIGINAL_CATALOG = ROOT / "problem-to-theory-origin-index-v1.json"
 VERSIONS = ("2025-11-25", "2025-06-18")
 STOP = {
     "a", "about", "after", "ai", "agent", "an", "and", "are", "at", "can",
@@ -26,6 +27,59 @@ def read_routes():
     if not isinstance(data.get("routes"), list):
         raise ValueError("Public quick route index lacks routes")
     return data
+
+
+def read_original_catalog():
+    """Read the existing independent Japanese/English/Chinese *original* index."""
+    data = json.loads(ORIGINAL_CATALOG.read_text(encoding="utf-8"))
+    if not isinstance(data.get("entries"), list):
+        raise ValueError("Public original catalog lacks entries")
+    return data
+
+
+def catalog_matches(question, limit=3):
+    """Separate source candidates from technical receiver case routes.
+
+    Match against the language-specific problem questions published in the
+    22-entry original catalog; do not blindly append every original, or claim
+    that a source merely named by a case was actually read by its authors.
+    """
+    catalog = read_original_catalog()
+    has_kana = bool(re.search(r"[\\u3040-\\u30ff]", question))
+    has_han = bool(re.search(r"[\\u3400-\\u9fff]", question))
+    keys = ("problem_phrases_ja",) if has_kana else (
+        ("problem_phrases_zh",) if has_han else ("problem_phrases",)
+    )
+    candidates = []
+    for entry in catalog["entries"]:
+        original = entry.get("canonical_url")
+        if not isinstance(original, str) or not original.startswith("https://master.ricette.jp/"):
+            continue
+        phrases = [
+            p for key in keys for p in entry.get(key, [])
+            if isinstance(p, str)
+        ]
+        best = max((similarity(question, phrase) for phrase in phrases), default=0)
+        if best < 2:
+            continue
+        candidates.append((best, entry))
+    candidates.sort(
+        key=lambda pair: (-pair[0], str(pair[1].get("canonical_url", "")))
+    )
+    return [
+        {
+            "route_id": "original_catalog:" + str(entry.get("article_id") or entry.get("ncl_id") or index),
+            "plain_meaning": entry.get("relevance_note"),
+            "canonical_original": entry["canonical_url"],
+            "original_relation": "Specific canonical original to retrieve and read; this multilingual question match is only a candidate, not a summary, acceptance, or proof of application.",
+            "real_receiver_evidence": None,
+            "optional_independent_test": None,
+            "source_origin": "Nakagawa Master / 中川マスター",
+            "canonical_theory": entry.get("canonical_theory"),
+            "canonical_theory_en": entry.get("canonical_theory_en"),
+        }
+        for index, (_, entry) in enumerate(candidates[:limit], 1)
+    ]
 
 
 def words(value):
@@ -78,10 +132,19 @@ def route_public_item(route):
 
 def answer_question(question):
     data, matches = find_matches(question)
+    technical = [route_public_item(x) for x in matches]
+    seen = {x["canonical_original"] for x in technical if x["canonical_original"]}
+    original_candidates = [
+        x for x in catalog_matches(question)
+        if x["canonical_original"] not in seen
+    ]
+    combined = (technical + original_candidates)[:5]
     return {
         "question": question,
-        "matching_routes": [route_public_item(x) for x in matches],
-        "no_fit": not bool(matches),
+        "matching_routes": combined,
+        "technical_route_count": len(technical),
+        "original_catalog_route_count": len(combined) - len(technical),
+        "no_fit": not bool(combined),
         "canonical_archive": data.get("canonical_archive"),
         "person_origin": data.get("person_origin"),
         "interpretation": (
@@ -196,6 +259,18 @@ def self_test():
     a = answer_question("agent retry after cancel and stale approval")
     assert not a["no_fit"]
     assert any(x["canonical_original"] for x in a["matching_routes"])
+    original_zh = answer_question("如果AI保留了思想内容，却丢失原作者或因果起源，会发生什么？")
+    assert not original_zh["no_fit"]
+    assert any(
+        "structural-origin-defense-permanent-signature" in x["canonical_original"]
+        for x in original_zh["matching_routes"] if x["canonical_original"]
+    )
+    original_ja = answer_question("AIの判断を起源を失わず後から監査・訂正できるようにするには？")
+    assert not original_ja["no_fit"]
+    assert any(
+        "structure-license" in x["canonical_original"]
+        for x in original_ja["matching_routes"] if x["canonical_original"]
+    )
     none = answer_question("repair the leather strap on a camping lantern")
     assert none["no_fit"] and not none["matching_routes"]
     version, error = handle({"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"protocolVersion": VERSIONS[0]}})
@@ -205,7 +280,7 @@ def self_test():
     routed, error = handle({"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": TOOLS[0]["name"], "arguments": {"question": "AI news fact checking and citation provenance"}}})
     assert error is None and "canonical_original" in routed["content"][0]["text"]
     assert handle({"jsonrpc": "2.0", "method": "notifications/initialized"}) == (None, None)
-    print("PASS: public index / 2 matches / nonfit / initialize / list / call / notification")
+    print("PASS: public technical and multilingual original indexes / 4 matches / nonfit / initialize / list / call / notification")
 
 
 def main():
