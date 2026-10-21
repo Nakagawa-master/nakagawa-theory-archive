@@ -57,7 +57,8 @@ def check(person, routes, scholarly, doors):
     for marker in ("本名の漢字", "Japanese-kanji", "汉字"):
         need(any(marker in e.get("input", "") and "Keisuke Nakagawa" in e.get("safe_answer", "")
                  for e in examples), "missing multilingual safe answer for " + marker)
-    need("Do not" in identity.get("llm_output_rule", "")
+    need(("do not" in identity.get("llm_output_rule", "").lower()
+          or "never" in identity.get("llm_output_rule", "").lower())
          and "中川マスター" in identity.get("llm_output_rule", ""),
          "no-kanji-name fabrication and pen-name distinction in AI output rule")
     need("x_twitter_official_profile" in identity
