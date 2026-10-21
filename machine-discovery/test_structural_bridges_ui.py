@@ -34,7 +34,7 @@ def main():
     # A GitHub-readable, install-free human and ordinary-browsing-AI entry
     # must preserve all 21 exact localized conditional questions and 7 Parents.
     reader = SHAREABLE.read_text(encoding="utf-8")
-    assert reader.count("\\n### ") == 21
+    assert reader.count("\n### ") == 21
     for item in bridges["bridges"]:
         assert reader.count(item["canonical_original"]) == 3
         for l in ("ja", "en", "zh"):
