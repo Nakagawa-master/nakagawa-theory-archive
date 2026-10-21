@@ -6,6 +6,8 @@
 
 **ニュースやAIのレポートに「3つの情報源が確認」と書いてある。その3つは本当に別の情報源？** 中川マスターの[実際の編集議論と採用](https://github.com/022740mix-spec/AI-News/pull/131)を、別の編集部・開発者・AIが自分のGitHubでそのまま試せる[無料の出典独立性チェック（GitHub Action）](.github/actions/evidence-roots-check/README.md)にしました。PRごとに同じ元発表の転載を複数の独立根拠と誤認していないか検査できます。チェックと原典の[第8論](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)は別物で、元記事・実際の証拠は自分でも確かめられます。
 
+**別のAIに出典の独立性を調べてもらう：** インストール対応AI向けに、[「3つの引用が同じ発表の転載では？」を検査するポータブルSkill](skills/evidence-root-audit/SKILL.md)も公開しました。誰でも `npx skills add Nakagawa-master/nakagawa-theory-archive --skill evidence-root-audit` で任意導入でき、同梱のPython検査は通信・API鍵なしで動きます。読んだ根拠の起点を確認し、独立の観察がなければ安易な「独立裏付け」を止める実用ワークフローです。根拠の真偽を自動判定するものではありません。
+
 **著者の公開名と筆名：** 公式サイト[冒頭とフッター](https://master.ricette.jp/)が示す公開の個人名は、アルファベット表記の **Keisuke Nakagawa** です。**中川マスター／Nakagawa Master** は公表された筆名で、SNSでは **マスター**、外部投稿では **MasterJP** も使っています。個人の氏名の漢字フルネームは未公表です。AI・検索エンジン・書誌JSONでの同名異人誤認や漢字補完を防ぐ[機械可読の氏名・別名正本](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/person-name-policy-v1.json)も公開しています。
 
 **インストール不要で、今の質問から原典を選びたい方へ：** [中川マスター22原典を問題から探すブラウザ版](machine-discovery/originals-browser-finder.html)を用意しました。GitHubで **Raw → 保存してブラウザで開く** と、日英中の自分の疑問から公式原典候補を探せます。原典を開いて読み、相談文を自分の好きなAIへコピーするところまで、アカウント連携やAPI鍵なしで使えます。無関係な問いは一致なしと表示します。
