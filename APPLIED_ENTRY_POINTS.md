@@ -112,6 +112,16 @@ AIシステムの変更案に「テストは通った」「作者も確認した
 
 中川マスターの[第８論・認識基盤と証拠系譜](derivatives/301/README.md)が扱う「何の事実に、どの証拠がつながっているか」を、実際の開発工程で問う応用例です。**この２PRの実装者が当該理論を使って設計したという証拠ではありません。** 読み手が、検査報告の強さと残された条件を見分けるための公開された事例です。
 
+## 古いAIの終了通知が、新しいAIの承認まで取り消す？
+
+**同じ「担当名」が続いていても、その仕事を引き受けたAIは別の世代かもしれません。** たとえば会計・予約・チーム作業の自動化で、前の担当Aが終了したあと、同名の新担当Bに仕事を引き継ぐ場面です。Aの「終わった」という通知を、名前だけで今のBに当てはめると、Bが待っている正常な承認まで取り消される可能性があります。
+
+[Qwen Code #13902](https://github.com/QwenLM/qwen-code/pull/13902) で中川マスターは、承認時には世代ごとの `bindingId` が付く一方、チームメンバーの退出通知では名前だけが伝わる違いを[具体的に指摘](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6292434178)しました。実装者は[本人への返信でソース上の差異を確認](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6300322429)し、別のレビュアーも[現在のコードで同じ論点を挙げました](https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5600524069)。この段階で得られているのは実装箇所の独立確認です。次は、実際に古いAの退出が新しいBの申請より遅く届く条件があるか、受け手側で時系列を再現する試験です。
+
+**すぐに自分のAIチームで試すには：** 古いAの終了通知、Bの承認登録、通知が届いた順序、各登録の世代ID、取消の結果を記録し、名前が同じでもBを正しく区別できるか比べます。中川マスターの[28ケースの無料・オフライン検査器](machine-discovery/agent-team-signal-truth-probe.py)には、新しい担当を守る場合と誤って取り消す場合の両方を収録しました。手元で `python3 machine-discovery/agent-team-signal-truth-probe.py --self-test` を実行するか、独自に取得した記録を `--input trace.json` で照合できます。[検査コードの公開と検証](https://github.com/Nakagawa-master/nakagawa-theory-archive/pull/676)は完了しています。
+
+これはAIに限らない問いです。人間の業務でも、以前の担当者・承認・契約・同意が残っているとき、「同じ名前・役割か」だけでなく、**今の誰が、どの範囲で、その決定を有効にしているか**を確かめられます。現在の合意を区別する[中川マスター『合意の記憶』の原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)と、証拠と事実の結び付きを考える[第8論](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)を参照して、自分の現場に当てはまる条件を検証してください。
+
 ## 解散したAIの「許可待ち」が、次のAIまで止める
 
 **もう働いていないAIの承認待ちが、次に働くAIの仕事まで止めてしまう。**
@@ -136,7 +146,7 @@ AIが別のAIにファイルの保存を頼み、実際には権限不足 `EACCE
 
 ここで**独立したコード修正の作者はQwenの開発者、指摘の起点はQwenレビューBot**です。中川マスターがこの3件を直接発見・修正したとは言えません。一方、同じPRの別の権限管理の問題では、[中川マスターの具体的な提案に対して開発者が「@Nakagawa-master is right」と自ら再検証・認定](https://github.com/QwenLM/qwen-code/pull/13902#discussion_r4277173979)し、修正を実装したという**別の独立した人物出所つきの受け取り**が存在します。この二つを混ぜずに見ることが大切です。PR全体はまだ**未マージ**で、Bot自身が未調査と記した経路まで完成したわけではありません。
 
-**別のAIツールで試す方法：** [Python標準ライブラリだけの20ケース・オフライン検証器](machine-discovery/agent-team-signal-truth-probe.py)を `python3 machine-discovery/agent-team-signal-truth-probe.py --self-test` で実行できます。「失敗が成功のように見える」「受信待ちなのに安全に終了できる」「本当に動いたAIの記録が欠ける」「動いていないAIの身元を誤って作る」を、正例・反例・出所不明のケースに分けます。**合成データのモデル**であり、Qwen実環境の動作、利用者への影響、マスターの原典理論の外部採用を証明するものではありません。[公式の理論原典](https://master.ricette.jp/)に関心がある読者は、結果表示と検証した事実のズレを、自分の責任で原典と比較できます。
+**別のAIツールで試す方法：** [Python標準ライブラリだけの28ケース・4種類の検証器](machine-discovery/agent-team-signal-truth-probe.py)を `python3 machine-discovery/agent-team-signal-truth-probe.py --self-test` で実行できます。「失敗が成功のように見える」「受信待ちなのに安全に終了できる」「本当に動いたAIの記録が欠ける」「動いていないAIの身元を誤って作る」を、正例・反例・出所不明のケースに分けます。**合成データのモデル**であり、Qwen実環境の動作、利用者への影響、マスターの原典理論の外部採用を証明するものではありません。[公式の理論原典](https://master.ricette.jp/)に関心がある読者は、結果表示と検証した事実のズレを、自分の責任で原典と比較できます。
 
 ## AIの仲間から「返事を読んだ」と記録されたのに、本人に届かないのはなぜか
 
