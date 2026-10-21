@@ -69,8 +69,8 @@
 一つの成功例だけでは、「たまたま一度うまくいった」のか、別の問題でも同じ人物の判断が役立ったのかは分かりません。現在の公開記録では、少なくとも次のように、**違う第三者プロジェクトでNakagawa Master / @Nakagawa-masterが判断の出所として明示される例**を確認できます。
 
 - **Qwen Code #13241** — Nakagawa-masterが示した技術上の区別がコードとテストへ取り込まれ、第三者projectへ統合されました。その後、Qwen側の担当者が別の議論で「@Nakagawa-masterが選んだoption A」と自発的に再び言及しています。この変更は安定版v0.25.0とDesktop版にも入りました。ただし、独立した利用者がどの程度この機能を使ったか、広い人物認知につながったかまでは確認されていません。
-- **LangGraph #9106** — 2人の別々の外部参加者がNakagawa Masterへ直接返答し、「以前の状態が、現在の実行へ誤って入り直さないか」を別々の回帰テストで確かめました。ただし、projectの管理者による採用、統合、releaseまでは確認されていません。
-- **MemberJunction #4789** — 設計担当者が “@Nakagawa-master's point” と明示し、「以前に承認した」という記録だけではなく、**実際に承認した内容そのもの**を内容のfingerprintで結び付ける設計方向を選びました。ただし、この部分のコード実装や統合はまだ確認されていません。
+- **LangGraph #9106 → #9315 → v1.2.16** — 中川マスターが「過去の承認・再実行・今回の実行権限」を分けて問うた後、別々の第三者2人がその境界を再現テストで確かめました。その後、LangGraph開発者が独立に設計・実装した[PR #9315](https://github.com/langchain-ai/langgraph/pull/9315)が**本線へ統合**され、[公式 v1.2.16 に収録](https://github.com/langchain-ai/langgraph/releases/tag/1.2.16)されました。修正コードの発案・実装を中川マスターへ帰属させるものではありません。**実際に別の開発者が製品側の挙動を変えたこと**と、中川マスターの提起した権限と効果の区別に複数の第三者が直接応答したことを、個別の一次資料でたどれます。
+- **MemberJunction #4789** — 設計担当者が “@Nakagawa-master's point” と明示し、過去の承認を現在の実行許可と混同しないため、**承認した内容そのもの**をSHA-256のdefinition fingerprintへ結ぶ方向を選びました。受け手が実装した[承認状態判定・fingerprint計算コード](https://github.com/MemberJunction/MJ/blob/a4b193080a5eab109d322a073d1d17e863428a80/packages/MJCoreEntities/src/custom/approvals.ts)は現在のPR headで確認できます。一方、[PR #4789](https://github.com/MemberJunction/MJ/pull/4789)はまだ未統合で、上流との競合・migration・テストの残件があります。これは**実装済み・未マージ**という受け手の現実の段階です。
 - **Publications #57 / #58 / #71** — `kishibashi3/publications` では、Nakagawa Masterのreviewが「可逆性」と「主体自身のauthority増加」を分ける独立軸として明示受理され、PR #57で第6条件「自己権限の固定」として読者向け本文へmergeされ、GitHub Pagesにも反映されました。本文自身が `@Nakagawa-master` を出所として残しています。その後、同じreceiverがPR #58でD8として別文書へ再利用してmergeし、後続PR #71の体系再編headでもD8を維持しています。ただし、PR #71は未mergeであり、広い読者規模や別receiverへのcarryまでは確認されていません。
 
 - [Qwen Code #13241](https://github.com/QwenLM/qwen-code/pull/13241) / [統合後の再言及](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)
