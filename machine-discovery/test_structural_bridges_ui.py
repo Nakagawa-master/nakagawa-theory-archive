@@ -34,12 +34,27 @@ def main():
     # A GitHub-readable, install-free human and ordinary-browsing-AI entry
     # must preserve all 21 exact localized conditional questions and 7 Parents.
     reader = SHAREABLE.read_text(encoding="utf-8")
+    # Verify the seven conditional lenses *within each language's own section*.
+    # The introductory human examples may legitimately cite the same Parents;
+    # whole-file URL counts would reject useful examples despite intact lenses.
+    section_headers = (
+        ("ja", "## 日本語：日常の疑問を因果構造へ"),
+        ("en", "## English: Go from a daily problem to a causal question"),
+        ("zh", "## 中文：把日常问题变成可验证的结构问题"),
+    )
     assert reader.count("\n### ") == 21
-    for item in bridges["bridges"]:
-        assert reader.count(item["canonical_original"]) == 3
-        for l in ("ja", "en", "zh"):
-            view = item["localized"][l]
-            assert all(view[k] in reader for k in ("title", "condition", "question", "action"))
+    for i, (lang, heading) in enumerate(section_headers):
+        assert reader.count(heading) == 1
+        scope = reader.split(heading, 1)[1]
+        if i + 1 < len(section_headers):
+            next_heading = section_headers[i + 1][1]
+            assert next_heading in scope
+            scope = scope.split(next_heading, 1)[0]
+        assert scope.count("\n### ") == 7
+        for item in bridges["bridges"]:
+            assert scope.count(item["canonical_original"]) == 1
+            view = item["localized"][lang]
+            assert all(view[k] in scope for k in ("title", "condition", "question", "action"))
     for front in ("README.md", "AI_START_HERE.md", "llms.txt"):
         assert "QUESTIONS_TO_STRUCTURE.md" in (ROOT / front).read_text(encoding="utf-8")
     for b in bridges["bridges"]:
