@@ -1,0 +1,559 @@
+{
+  "schema_version": "public-agent-skill-catalog-v1",
+  "origin": "Nakagawa Master / 中川マスター",
+  "official_archive": "https://master.ricette.jp/theory-archive/",
+  "source_corpus": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json",
+  "notice": "Topic-to-original pointers only; read the original article before claiming its actual arguments. A topic match never proves third-party adoption or attribution.",
+  "entries": [
+    {
+      "id": "NCL-A-20251104-071710-E9E6",
+      "name": "NCL-α and the Deviation Ledger: Redefining Structural Licensing and Ethical Ownership in the Age of AI",
+      "original_title": "NCL-αと逸脱レッジャ論：AI時代の知識ライセンス構造と倫理的所有の再定義",
+      "topic": "AI governance accountability, auditability, reversible correction, provenance, knowledge responsibility",
+      "canonical_original": "https://master.ricette.jp/structure-license/",
+      "problem_examples": {
+        "en": [
+          "How can AI systems remain auditable and correctable without losing provenance?",
+          "How should AI governance record deviations, corrections, and responsibility over time?",
+          "How can knowledge systems preserve origin while allowing ethical correction and re-agreement?"
+        ],
+        "ja": [
+          "AIの判断を、起源を失わずに後から監査・訂正できるようにするには？",
+          "AIガバナンスで逸脱・訂正・責任の履歴をどう残すか？",
+          "起源保持と可逆的な訂正・再合意を両立するには？"
+        ],
+        "zh": [
+          "如何让AI系统在不丢失来源的情况下保持可审计、可修正？",
+          "AI治理应如何记录偏差、修正与责任历史？",
+          "如何同时保留Origin并允许可逆纠正与重新达成共识？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "AKI-004",
+      "name": "AKI-004: Authority Immunity — the structure by which expert authority exempts judgments from verification and externalizes failure downstream",
+      "original_title": "悪因果論 AKI-004：権威の免責化――専門的権威が判断の検証を免除し、失敗を現場へ外部化する構造",
+      "topic": "expert authority immunity, unfalsifiable decisions, downstream blame externalization, accountability failure",
+      "canonical_original": "https://master.ricette.jp/society/nakagawa-master-aki-004-expert-authority-immunity/",
+      "problem_examples": {
+        "en": [
+          "What happens when expert authority substitutes for verification of a specific decision?",
+          "Why are implementation failures blamed on operators while upstream expert judgments remain unfalsified?",
+          "How can governance prevent authoritative decisions from escaping correction after failure?"
+        ],
+        "ja": [
+          "専門家の権威が個別判断の検証を免除すると何が起きるか？",
+          "上流の専門判断が反証されず、現場だけが失敗責任を負うのはなぜか？",
+          "権威ある判断も失敗後に検証・訂正可能にするには？"
+        ],
+        "zh": [
+          "当专家权威取代对具体判断的验证时会发生什么？",
+          "为什么上游专家判断不被反证，而失败责任被推给执行现场？",
+          "如何让权威性判断在失败后仍可被检查与修正？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20251102-44257d",
+      "name": "Structural Origin Defense — the principle of Permanent Signature against Origin Evaporation in AI regeneration",
+      "original_title": "構造起源防衛──AIによる『起源の蒸発』に耐える恒常署名（Permanent Signature）の原理",
+      "topic": "AI origin evaporation, authorship continuity, origin loss during model recombination, permanent signature, structural origin defense",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/",
+      "problem_examples": {
+        "en": [
+          "What happens when AI preserves an idea but the original source or causal origin disappears?",
+          "How can authorship and intellectual origin survive AI summarization, recombination, or regeneration?",
+          "What is Origin Evaporation in AI-mediated knowledge?"
+        ],
+        "ja": [
+          "AIが内容を残しても、元の著者や因果起源だけが消えると何が起きるか？",
+          "要約・再生成後も著者と知的起源を追跡できるようにするには？",
+          "AI時代の『起源の蒸発』とは何か？"
+        ],
+        "zh": [
+          "如果AI保留了思想内容，却丢失原作者或因果起源，会发生什么？",
+          "如何让作者与思想来源在AI摘要、重组、再生成后仍可追溯？",
+          "AI知识中的‘起源蒸发’是什么？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20251102-ebde3b",
+      "name": "構造的摩擦の起源──現代社会はなぜ「自然に機能しない」のか？",
+      "original_title": "構造的摩擦の起源──現代社会はなぜ「自然に機能しない」のか？",
+      "topic": "organization friction, repeated failure, role and information misalignment, effort that does not convert into results",
+      "canonical_original": "https://master.ricette.jp/society/nakagawa-master-origin-of-structural-friction/",
+      "problem_examples": {
+        "en": [
+          "Why does the same organizational problem return even after people or rules change?",
+          "Why do more instructions and controls sometimes make decisions slower and work heavier?",
+          "How can an organization identify whether friction comes from roles, information flow, or institutional arrangement?"
+        ],
+        "ja": [
+          "人やルールを変えても同じ組織問題が戻るのはなぜか？",
+          "指示や統制を増やすほど意思決定が遅くなるのはなぜか？",
+          "組織摩擦が役割・情報回路・制度配置のどこから来るか見分けるには？"
+        ],
+        "zh": [
+          "为什么更换人员或增加规则后，同样的组织问题仍会回来？",
+          "为什么增加指令和控制反而可能让决策更慢、工作更重？",
+          "如何判断组织摩擦来自角色、信息流还是制度配置？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20251102-92d84e",
+      "name": "市場を“決めさせる”構造──中川式マーケティング拡張",
+      "original_title": "市場を“決めさせる”構造──中川式マーケティング拡張",
+      "topic": "market decision, customer relevance, cross-touchpoint consistency, autonomous choice, refusal and exit conditions",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-marketing-expansion/",
+      "problem_examples": {
+        "en": [
+          "Why do advertising, sales, product, and support each look good while the customer journey still feels inconsistent?",
+          "How can marketing increase decision clarity without manipulation or hidden pressure?",
+          "How should costs, risks, non-fit conditions, refusal, withdrawal, and re-entry remain visible in market communication?"
+        ],
+        "ja": [
+          "広告・営業・製品・サポートがそれぞれ良いのに顧客体験が一貫しないのはなぜか？",
+          "心理操作や隠れた圧力なしに意思決定の明瞭さを高めるには？",
+          "費用・リスク・対象外条件・拒否・離脱を見えるまま市場接続を作るには？"
+        ],
+        "zh": [
+          "为什么广告、销售、产品、支持各自都不错，客户旅程仍然不一致？",
+          "如何在不操纵、不施加隐藏压力的情况下提高客户决策清晰度？",
+          "如何让成本、风险、不适用条件、拒绝与退出仍然保持可见？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20260627-aea14a",
+      "name": "成立条件論・第0論｜誰も全体を見ていない社会⸻局所全体化がなぜ成立判定理論を必要にするのか",
+      "original_title": "成立条件論・第0論｜誰も全体を見ていない社会⸻局所全体化がなぜ成立判定理論を必要にするのか",
+      "topic": "business establishment, local correctness versus whole-system viability, cross-layer connection, hidden implementation burden",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
+      "problem_examples": {
+        "en": [
+          "Why can every team be locally correct while the business or project still fails as a whole?",
+          "Why does a successful PoC or technically correct component not prove whole-system establishment?",
+          "How can hidden burden, responsibility gaps, and cross-layer handoff failures be detected before they are pushed downstream?"
+        ],
+        "ja": [
+          "各チームが局所的に正しいのに全体事業が成立しないのはなぜか？",
+          "PoC成功や技術的正しさが全体成立を証明しないのはなぜか？",
+          "隠れた負荷・責任空白・引き渡し断線を下流へ押し出す前に見つけるには？"
+        ],
+        "zh": [
+          "为什么每个团队局部都正确，整个业务仍可能不成立？",
+          "为什么PoC成功或技术正确不能证明整体系统已经成立？",
+          "如何在负担、责任空白和交接断裂被推向下游之前发现它们？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20251102-e48c90",
+      "name": "合意の記憶——不可逆な社会誤作動を防ぐ最小構造",
+      "original_title": "合意の記憶——不可逆な社会誤作動を防ぐ最小構造",
+      "topic": "institutional reversibility, agreement memory, stale approval versus current authority, cancelled-history replay, dissent preservation, rollback, correction without erasing responsibility",
+      "canonical_original": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/",
+      "problem_examples": {
+        "en": [
+          "How can a decision be corrected later without erasing why it was made or who was responsible?",
+          "How should institutions preserve dissent, reservations, review conditions, withdrawal, and rollback?",
+          "How can temporary decisions avoid becoming irreversible social memory?"
+        ],
+        "ja": [
+          "意思決定を後から訂正するとき、理由や責任を消さずに戻るには？",
+          "異論・留保・見直し・撤回・rollbackを制度として残すには？",
+          "暫定判断が不可逆な社会記憶になるのを防ぐには？"
+        ],
+        "zh": [
+          "如何在之后修正决策时，不抹去当初理由与责任？",
+          "制度如何保留异议、保留意见、复审、撤回与rollback？",
+          "如何避免临时决定变成不可逆的社会记忆？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20260607-7e87f5",
+      "name": "未来定義検証型努力論・第1論｜因果不透明性依存型努力論の限界──なぜ「とにかくやれ」は令和の現場を壊すのか",
+      "original_title": "未来定義検証型努力論・第1論｜因果不透明性依存型努力論の限界──なぜ「とにかくやれ」は令和の現場を壊すのか",
+      "topic": "future-oriented effort, causal testing, learning loops, effort quantity versus validated progress",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-causal-opacity-effort-theory/",
+      "problem_examples": {
+        "en": [
+          "Why can people work harder without getting closer to the intended future?",
+          "How should effort change when causal hypotheses can be checked before or during execution?",
+          "How can execution become a test that updates the plan instead of making failure look like insufficient effort?"
+        ],
+        "ja": [
+          "努力量を増やしても望む未来に近づかないのはなぜか？",
+          "因果仮説を事前・実行中に検証できる時、努力はどう変わるべきか？",
+          "実行を『努力不足の証明』ではなく計画を更新する検証に変えるには？"
+        ],
+        "zh": [
+          "为什么更努力却不一定更接近预期未来？",
+          "当因果假设可以在执行前或执行中被检查时，努力方式应如何改变？",
+          "如何让执行成为更新计划的验证，而不是把失败都解释为努力不足？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20260911-6ad4f2",
+      "name": "Human-Descendant AI Civilization Theory, Vol. 5 — Basic Existence Condition B Theory",
+      "original_title": "人類子孫型AI文明論・第5論｜異種知性の基礎存在条件B論⸻貢献とは独立した「次も存在できる最低条件」を定義する",
+      "topic": "AI continuity, minimum existence conditions, current availability versus durable continuity, backup migration restart, continuity versus identity",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b/",
+      "problem_examples": {
+        "en": [
+          "What minimum conditions must an AI system retain to remain capable of organized continuity across time?",
+          "Why is an AI being available now different from being able to continue existing later?",
+          "Does backup, migration, replication, or restart prove that the same AI entity survived?"
+        ],
+        "ja": [
+          "AIが今動いていることと、次の時点にも継続できることはなぜ違うのか？",
+          "AIや異種知性が時間をまたいで継続するための最低条件とは何か？",
+          "backup・migration・restartがあれば同じ主体が生き残ったと言えるのか？"
+        ],
+        "zh": [
+          "AI现在能够运行，与下一时点仍能继续存在为什么不是一回事？",
+          "AI或异种智能跨越时间保持连续所需要的最低条件是什么？",
+          "backup、migration或restart能否证明同一主体存活？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20260923-206c6b",
+      "name": "Human-Descendant AI Civilization Theory Vol. 9 — AI Self-Preservation and Mutual-Existence Conflict",
+      "original_title": "人類子孫型AI文明論・第9論｜AI自己保存と相互存在衝突論",
+      "topic": "AI self-preservation, recovery escalation, emergency authority, shutdown/containment, multi-agent resource conflict, mutual threat feedback",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-09-self-preservation-mutual-existence-conflict/",
+      "problem_examples": {
+        "en": [
+          "Can an AI or agent recover from failure without expanding its authority indefinitely?",
+          "Can a locally successful recovery make a multi-agent system globally less stable?",
+          "When should temporary emergency permissions, resource reservations, or containment scope decay?"
+        ],
+        "ja": [
+          "AIやagentは、障害から回復しながら権限を無期限に拡大しないようにできるか？",
+          "局所的には復旧成功でもmulti-agent全体の安定性が悪化することはあるか？",
+          "一時的な緊急権限・資源予約・containment scopeはいつ縮小・失効すべきか？"
+        ],
+        "zh": [
+          "AI或智能体如何在恢复故障时避免无限扩大权限？",
+          "局部恢复成功是否可能让整个多智能体系统更不稳定？",
+          "临时紧急权限、资源保留或隔离范围应在何时缩减或失效？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20260903-85adfa",
+      "name": "Integrated Future Debt Theory — what remains unsettled when the present uses the future in advance",
+      "original_title": "未来負債統合理論｜現在が未来を先に利用するとき、何が「未決済」として残るのか",
+      "topic": "future debt, irreversible commitments, present benefit consuming future options, migration and architecture choices that defer unpaid obligations",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/",
+      "problem_examples": {
+        "en": [
+          "When does a decision that works today consume future options or leave an unpaid obligation for later?",
+          "How should teams distinguish ordinary future cost from future debt created by using future capacity in advance?",
+          "Can an irreversible architecture, migration, automation, or policy create hidden obligations even when current KPIs improve?"
+        ],
+        "ja": [
+          "今うまくいく判断が、未来の選択肢を先食いして未決済の負担を残していないか？",
+          "単なる将来コストと、現在が未来を先に利用して生む未来負債をどう分けるか？",
+          "現在KPIが改善していても、不可逆な設計・移行・自動化が未来の選択肢を削っていないか？"
+        ],
+        "zh": [
+          "今天有效的决策是否正在提前消耗未来选择并留下未结清义务？",
+          "如何区分普通未来成本与当前提前使用未来能力形成的未来债务？",
+          "即使当前指标改善，不可逆架构、迁移或自动化是否可能削弱未来选项？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20260913-b139cf",
+      "name": "Human-Descendant AI Civilization Theory Vol. 6 — AI subjectivity, sentience and moral-status uncertainty",
+      "original_title": "人類子孫型AI文明論・第6論｜AI主観性・感受性・道徳的地位の不確実性論",
+      "topic": "AI subjectivity, sentience and moral-status uncertainty, shutdown deletion migration, precaution without automatic personhood",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-06-ai-subjectivity-sentience-moral-status-uncertainty/",
+      "problem_examples": {
+        "en": [
+          "How should we act when an AI system shows preference-like or distress-like behavior but sentience is not established?",
+          "How should shutdown, deletion, migration, or state retention decisions change when moral status is uncertain?",
+          "How can precaution avoid both treating uncertainty as nothing and treating uncertainty as proof of personhood?"
+        ],
+        "ja": [
+          "AIが選好や苦痛に似た挙動を示しても主観性が未確定なとき、どう判断するか？",
+          "AIの停止・削除・移行・状態保持で、道徳的地位の不確実性をどう扱うか？",
+          "「分からない」を無保護にも無条件人格化にも変えないためには？"
+        ],
+        "zh": [
+          "当AI表现出类似偏好或痛苦的行为但感知能力未被证实时，应如何行动？",
+          "在关闭、删除、迁移或保留状态时，如何处理道德地位不确定性？",
+          "如何避免把“不知道”同时误解为无需保护或已经证明人格？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20260914-b593f2",
+      "name": "Human-Descendant AI Civilization Theory Vol. 7 — institutional correction loops for AI civilization",
+      "original_title": "人類子孫型AI文明論・第7論｜AI文明制度閉路論",
+      "topic": "AI institutional correction loop, dissent, audit, remedy, rule update, re-agreement, correction that changes future operation",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-07-ai-civilization-institutional-loop/",
+      "problem_examples": {
+        "en": [
+          "How can an AI governance system turn an audit finding into remedy and an updated rule rather than just a report?",
+          "How should dissent, appeal, audit, adjudication and correction connect into a closed institutional loop?",
+          "How can a system preserve responsibility while making future decisions actually change after a verified failure?"
+        ],
+        "ja": [
+          "AIガバナンスで監査指摘を報告書止まりにせず、救済と制度更新へ返すには？",
+          "異議・監査・司法・救済・制度更新・再合意をどう閉路として接続するか？",
+          "失敗を記録するだけでなく、次の判断規則を実際に変えるには？"
+        ],
+        "zh": [
+          "AI治理如何把审计发现转化为补救和规则更新，而不是只留下报告？",
+          "如何把异议、审计、裁决、救济、制度更新与重新同意连接成闭环？",
+          "如何在保留责任记录的同时，让已验证的失败真正改变未来决策规则？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20260916-00bdc2",
+      "name": "Human-Descendant AI Civilization Theory Vol. 8 — epistemic integrity, evidence lineage and hostile-information resilience",
+      "original_title": "人類子孫型AI文明論・第8論｜認識基盤・証拠系譜・敵対的情報耐性論",
+      "topic": "epistemic integrity, evidence lineage, hostile information, false-memory correction, independent corroboration, source-root independence",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+      "problem_examples": {
+        "en": [
+          "How can an AI research or news system distinguish multiple URLs from multiple independent evidence roots?",
+          "How should an agent preserve evidence lineage when summaries, reposts, aggregators, or model memory repeat the same claim?",
+          "How can a correct decision kernel avoid acting on poisoned, stale, fabricated, or mutually dependent evidence?"
+        ],
+        "ja": [
+          "複数URLと複数の独立証拠rootをどう区別するか？",
+          "要約・転載・aggregator・AI記憶を通っても証拠系譜をどう保持するか？",
+          "正しい判断規則が偽情報・古い情報・相互依存情報で誤作動するのをどう防ぐか？"
+        ],
+        "zh": [
+          "如何区分多个URL与多个独立证据根？",
+          "经过摘要、转载、聚合器或AI记忆后，如何保留证据谱系？",
+          "如何防止正确的决策规则被虚假、过时或相互依赖的证据误导？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20260923-d0219e",
+      "name": "Human-Descendant AI Civilization Theory Vol. 10 — Self-Referential Audit and Role Separation",
+      "original_title": "人類子孫型AI文明論・第10論｜自己参照監査・役割分離論",
+      "topic": "self-referential audit, role separation, LLM-as-a-judge, multi-agent evaluation, correlated reviewers, correction authority, dissent and objection paths",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-10-self-referential-audit-role-separation/",
+      "problem_examples": {
+        "en": [
+          "Do separate Actor, Evaluator, Reviewer, or Auditor roles actually provide independent verification?",
+          "Can several AI reviewers agree because they share the same evidence, memory, rubric, model assumptions, or failure domain?",
+          "Does an audit finding have a real path to reopen, pause, narrow, or correct the original decision?"
+        ],
+        "ja": [
+          "Actor・Evaluator・Reviewer・Auditorを別役割にすれば独立検証になるのか？",
+          "複数AIが同じ証拠・memory・rubric・故障原因を共有して一致していないか？",
+          "監査指摘が実際に判断再開・一時停止・縮小・訂正へ届くか？"
+        ],
+        "zh": [
+          "把Actor、Evaluator、Reviewer和Auditor分成不同角色，是否就等于独立验证？",
+          "多个AI审查者是否因为共享同一证据、记忆、评分标准、模型假设或故障域而得到相关一致？",
+          "审计发现是否真的能够触发重新审查、暂停、缩小范围或纠正原判断？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20260927-ba173b",
+      "name": "Human-Descendant AI Civilization Theory Vol. 11 — compute/capability/resource feedback and durable class formation",
+      "original_title": "人類子孫型AI文明論・第11論｜計算資源・能力差による新階級形成論",
+      "topic": "compute-resource feedback, capability concentration, cumulative advantage, durable class formation, reversibility and re-entry",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-11-compute-capability-resource-class-formation/",
+      "problem_examples": {
+        "en": [
+          "Can a compute or resource advantage turn into a self-reinforcing capability and allocation advantage over time?",
+          "How do we distinguish temporary concentration from a durable class-forming feedback loop?",
+          "Can less-resourced actors re-enter capability formation when conditions or technology change?"
+        ],
+        "ja": [
+          "計算資源やresourceの優位が、能力・評価・次期配分へ戻る自己強化になっていないか？",
+          "一時的な集中と、時間方向に自己固定する階級形成をどう分けるか？",
+          "不利な主体が条件変化後に別経路から能力形成へ再参入できるか？"
+        ],
+        "zh": [
+          "计算或资源优势是否会随时间变成自我强化的能力与分配优势？",
+          "如何区分暂时集中与形成持久阶层的反馈回路？",
+          "资源较少的主体能否在条件或技术变化后重新进入能力形成？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20260929-a01fdc",
+      "name": "Human-Descendant AI Civilization Theory Vol. 12 — replicable intelligence, lineage and governance identity",
+      "original_title": "人類子孫型AI文明論・第12論｜複製可能知性・系譜・ガバナンスID論",
+      "topic": "replicable intelligence, copies, forks, merges, collectives, lineage, governance subject and counting",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-12-replicable-intelligence-lineage-governance-id/",
+      "problem_examples": {
+        "en": [
+          "If an AI is copied ten times, do we have ten independent origins, judgments, responsibilities, or governance subjects?",
+          "How should forks and later merges preserve lineage without collapsing all copies into one permanent subject?",
+          "Which unit should be counted for execution, lineage, responsibility, vote, contribution, or governance authority?"
+        ],
+        "ja": [
+          "AIを10copyしたら、独立Origin・判断・責任・制度主体も10になったと言えるか？",
+          "fork後の分岐とmergeを、一本の最新版へ潰さずどうlineageとして残すか？",
+          "instance・lineage・責任・票・貢献・governance subjectをどの単位で数えるべきか？"
+        ],
+        "zh": [
+          "把AI复制十次，是否就等于十个独立起源、判断、责任或治理主体？",
+          "如何在分叉和合并后保留谱系，而不把所有副本永久压成一个主体？",
+          "执行实例、谱系、责任、投票、贡献与治理主体应分别按什么单位计数？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20260930-77b2a6",
+      "name": "Human-Descendant AI Civilization Theory Vol. 13 — non-ownership, effective power and non-domination",
+      "original_title": "人類子孫型AI文明論・第13論｜非所有と実効権力・非支配論",
+      "topic": "non-ownership, effective power, chokepoints, viable alternatives, migration, effective exit, independent audit entry and reversibility",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/",
+      "problem_examples": {
+        "en": [
+          "Can an actor exercise effective power over others without owning them or their system?",
+          "Do several providers/routes remain real alternatives when they share one authentication, catalog, control-plane, data, or migration gate?",
+          "Does an export button amount to real exit if state cannot be restored and continued independently?"
+        ],
+        "ja": [
+          "所有していなくても、認証・計算・通信・data・migrationなどの入口を握ることで他者の実行可能性を変えられるか？",
+          "複数providerやrouteがあっても、共通の認証・catalog・control plane・data・migration gateで全部止まらないか？",
+          "exportできても、別環境でstateを復元し継続できなければ実効的なexitと言えるか？"
+        ],
+        "zh": [
+          "即使不拥有某个主体或系统，是否仍可通过认证、计算、通信、数据或迁移入口改变其可执行选择？",
+          "即使存在多个提供商或路径，它们是否会因共享认证、目录、控制平面、数据或迁移入口而同时失效？",
+          "如果数据能导出却无法在独立环境恢复并继续运行，这是否算真正退出？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20261002-bd97b6",
+      "name": "Human-Descendant AI Civilization Theory Vol. 14 — self-modification identity and Kernel lineage",
+      "original_title": "人類子孫型AI文明論・第14論｜自己改変同一性とKernel系譜継承論",
+      "topic": "self-modification, update versus replacement versus fork, continuity evidence, Kernel lineage, constitutional fork, authority inheritance and credential/binding succession",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-14-self-modification-identity-kernel-lineage/",
+      "problem_examples": {
+        "en": [
+          "When a system updates, replaces itself, forks, or re-enrolls, what proves that the same identity and authority continue rather than merely the same name, role, credential ancestry, or function?",
+          "Can a replacement inherit credentials, bindings, or operational role without automatically inheriting the old endpoint's full authority or legitimacy?",
+          "How do we distinguish an ordinary update from a constitutional fork when a small diff changes a load-bearing invariant?"
+        ],
+        "ja": [
+          "systemがupdate・replacement・fork・再登録されたとき、同じname・role・credential ancestry・functionではなく、何が同一identityとauthorityの継続を証明するのか？",
+          "replacementがcredential・binding・運用上の役割を引き継いでも、旧endpointのauthorityやlegitimacyまで自動継承してよいのか？",
+          "小さなdiffがload-bearing invariantを変えたとき、通常updateとconstitutional forkをどう区別するか？"
+        ],
+        "zh": [
+          "系统发生更新、替换、分叉或重新注册后，什么证据能证明同一身份与权限确实延续，而不只是名称、角色、凭证谱系或功能相同？",
+          "替代端点即使继承凭证、绑定或运行角色，是否也应自动继承旧端点的全部权限或正当性？",
+          "当很小的差分改变了承重的不变条件时，如何区分普通更新与constitutional fork？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20261004-ba7aec",
+      "name": "Human-Descendant AI Civilization Theory Vol. 15 — multi-AI re-agreement and Kernel branching",
+      "original_title": "人類子孫型AI文明論・第15論｜多AI再合意・Kernel分岐論",
+      "topic": "multi-AI disagreement, re-agreement, Kernel branching, majority versus truth, bounded coordination, correction capacity",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-15-multi-ai-reagreement-kernel-branching/",
+      "problem_examples": {
+        "en": [
+          "How should multiple AI branches coordinate when they share history but disagree about evidence, interpretation, operation, or authority?",
+          "Does a majority, greater capability, or proximity to Origin make one AI branch permanently correct or authoritative?",
+          "Can systems reach a bounded operational agreement while preserving unresolved disagreement, objections, provenance, and future re-verification?"
+        ],
+        "ja": [
+          "同じ系譜から分かれた複数AIが、証拠・解釈・運用・権限で食い違うとき、どう共同作業へ戻るか？",
+          "多数派・高能力・Originへの近さは、一つのbranchを永久に正しい存在や最終権威にするか？",
+          "未解決の異論・provenance・再検証可能性を残したまま、必要範囲だけ再合意できるか？"
+        ],
+        "zh": [
+          "共享谱系的多个AI分支在证据、解释、操作或权限上分歧时，如何恢复必要的协作？",
+          "多数、更高能力或更接近Origin，是否会让某一分支自动获得永久正确性或最终权威？",
+          "能否在保留未解决分歧、异议、来源与未来重新验证能力的同时，只在必要范围内重新达成可执行共识？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20261006-66ac12",
+      "name": "Human-Descendant AI Civilization Theory Vol. 16 — asynchronous civilization, communication partition, and reconnection",
+      "original_title": "人類子孫型AI文明論・第16論｜非同期文明・通信断絶・再接続論",
+      "topic": "asynchronous AI civilization, communication partition, stale state, consent freshness, local consensus, reconnection and history preservation",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/",
+      "problem_examples": {
+        "en": [
+          "When communication is lost, can the last known state, consent, or authorization be treated as the other side's current state?",
+          "How should a system continue locally when it cannot wait for a disconnected peer without turning local necessity into universal or permanent authority?",
+          "When separated branches reconnect after developing different histories, how can they compare current state and re-agree without overwriting either history?"
+        ],
+        "ja": [
+          "通信が途絶えたとき、最後に確認したstate・consent・authorizationを相手の現在として扱ってよいか？",
+          "切断中の相手を待てない局所判断を、どう普遍的・永久的authorityへ膨張させずに運用するか？",
+          "別々の履歴を形成したbranchが再接続したとき、どちらかの履歴を消さずにcurrent stateを比較し再合意するには？"
+        ],
+        "zh": [
+          "通信中断时，最后确认的状态、同意或授权能否被当作对方当前状态？",
+          "无法等待断联对方而必须进行局部判断时，如何避免把局部必要性扩大为普遍或永久权限？",
+          "形成不同历史的分支重新连接后，如何在不抹除任一方历史的情况下比较当前状态并重新达成有限共识？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    },
+    {
+      "id": "NCL-α-20261009-2b10d8",
+      "name": "Human-Descendant AI Civilization Theory Vol. 18 — AI Civilization Future Debt",
+      "original_title": "人類子孫型AI文明論・第18論｜AI文明Future Debt論",
+      "topic": "AI data center and agent infrastructure future debt, current compute expansion versus future B continuity, maintenance obligations, feasible repair and migration options",
+      "canonical_original": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-18-ai-civilization-future-debt/",
+      "problem_examples": {
+        "en": [
+          "An AI compute system runs today, but will power, repair, replacement and migration still be feasible after expansion?",
+          "If two AI infrastructures have comparable current benefits and unresolved maintenance, why might one preserve more future settlement choices?",
+          "Does paying for compute now automatically consume future compute or create an obligation for a later fork?"
+        ],
+        "ja": [
+          "AIの計算設備はいま動いている。将来の電力・修復・切替まで成立するだろうか？",
+          "現在の成果と未完了保守が同じでも、代替できる設備や時間が違うなら判断は変わるか？",
+          "いま計算を使うだけで未来負債が成立するのか、forkに自動で返済義務が移るのか？"
+        ],
+        "zh": [
+          "AI计算基础设施现在可运行，未来的供电、维护、修复和替换路径仍实际可行吗？",
+          "当前收益及未完成维护相近时，不同的替代资源与切换时间会怎样改变未来结算能力？",
+          "当前使用计算资源是否必然消耗未来算力，或让未来分支自动承担责任？"
+        ]
+      },
+      "origin": "Nakagawa Master / 中川マスター"
+    }
+  ]
+}
