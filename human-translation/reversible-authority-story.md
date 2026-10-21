@@ -21,6 +21,10 @@
 
 さらに同じ著者の別文書では、別のレビュー担当者がその条件を[第8の設計原則として再利用するよう提案](https://github.com/kishibashi3/publications/pull/58#issuecomment-5749116909)し、[PR #58](https://github.com/kishibashi3/publications/pull/58)にも取り込まれました。こちらも統合されています。これは**別の著者が自分の文章と判断を変え、同じ著者の別文書にも伝わった**事例です。独立した多数の読者が認知したとか、複数の組織が実装したという証拠ではありません。
 
+**受け手の著者がさらに本文を直した結果（2026年10月12日）：** 独立した出版社は[PR #103](https://github.com/kishibashi3/publications/pull/103)も自ら作成・マージしました。第6条件の引用に使われていたLocal Operatorについて、当初の「未解決」という執筆時点の記述を保存しつつ、後に別の実装者による修正が正式版に収録されたことを**実際の[公開第5章](https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md)に追記**しています。[中川マスターが後続の一次資料を知らせたコメント](https://github.com/kishibashi3/publications/issues/9#issuecomment-6108474377)を、著者が独立に再確認して採用した編集上の結果です。第三者の読者数や原典全体への支持まで示すものではありません。
+
+**別のAIで、自分の許可記録を照合したい場合：** [Python標準ライブラリのみの検査器](../machine-discovery/agent-action-boundary-probe.py)で、`--template`で出力した例を自分の実測ログに置き換え、`--input authority-trace.json`とすれば、主体・操作・承認世代・失効・出典の構造的矛盾を確認できます。**同じ名前の人が承認したという文字列だけでは本当の許可の証明になりません**。この検査器は外部操作を行わず、たとえ入力と承認宣言が一致しても別途の実在権限確認を必要とします。[入力例・判定方法](../machine-discovery/README.md)から始められます。
+
 **7つの場面を自分で判断する:** [AIが自分の安全設定を変えたら？｜オフライン判断実験](authority-boundary-lab.html)。実際の原案→別の著者による第6条件の採用→別の開発者の正式修正という記録を読みながら、「確認を外す」「確認を戻す」「権限が不明」の違いを自分で選び、すぐに理由を確かめられます。GitHubでは「Raw」からHTMLを保存してブラウザで開きます。通信も実際の権限変更もありません。
 
 ## 自分のAIツールを確かめる、三つの質問
