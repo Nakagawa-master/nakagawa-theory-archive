@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-"""Offline checks for three distinct agent-team signals, using synthetic traces.
+"""Offline checks for four distinct agent-team signals, using synthetic traces.
 
 Examples come from Qwen Code PR #13902, its independent bot review
 #5556479545 and the independently authored fix e960986 (2026-10-17).
 This is NOT a Qwen runtime test, proof of actual user data loss, or evidence
 that Qwen adopted Nakagawa Master's original theories.
 
-Exit codes for --input: 0 acceptable/no identity, 1 false/missing/dangerous signal, 2 invalid/inconclusive.
+Exit codes for --input: 0 faithful/acceptable, 1 incorrect/missing/dangerous signal, 2 invalid/inconclusive/not observed.
+For teammate_exit_epoch, all data are caller-supplied; even a FAITHFUL result is
+not proof of Qwen runtime ordering or upstream adoption. Require a real trace.
 Run: python3 machine-discovery/agent-team-signal-truth-probe.py --self-test
      python3 machine-discovery/agent-team-signal-truth-probe.py --sample
      python3 machine-discovery/agent-team-signal-truth-probe.py --input trace.json
@@ -59,7 +61,33 @@ def classify(trace):
         if not validated:
             return {"verdict": "FALSE_IDENTITY" if issued else "NO_IDENTITY", "reason": "unvalidated raw name cannot mint an identity"}
         return {"verdict": "FAITHFUL" if issued else "MISSING_IDENTITY", "reason": "a validated resolved subagent retains identity on replay"}
-    return {"verdict": "INVALID", "reason": "kind must be tool_result, close_hold or replay_identity"}
+    if kind == "teammate_exit_epoch":
+        # An independent trace oracle, NOT evidence that a late A exit is
+        # deliverable after B approval in any particular ACP transport.
+        # Require both actual event delivery and isolation of exit as cause.
+        name, exit_name = trace.get("pending_teammate"), trace.get("exited_teammate")
+        pending_id, exit_id = trace.get("pending_binding_id"), trace.get("exit_binding_id")
+        delivered = trace.get("exit_delivery_observed")
+        cancelled = trace.get("approval_cancelled")
+        isolated = trace.get("exit_only_cause_proven")
+        if (not isinstance(name, str) or not name.strip() or
+                not isinstance(exit_name, str) or not exit_name.strip() or
+                type(pending_id) is not int or pending_id <= 0 or
+                type(exit_id) is not int or exit_id <= 0 or
+                type(delivered) is not bool or type(cancelled) is not bool or
+                type(isolated) is not bool):
+            return {"verdict": "INVALID", "reason": "nonempty teammate names, positive integer binding IDs and three explicit booleans required"}
+        if not delivered:
+            return {"verdict": "ORDER_UNVERIFIED", "reason": "event delivery not observed: name-only predicate hazard is structural, not a reproduced runtime race"}
+        if not isolated:
+            return {"verdict": "INCONCLUSIVE", "reason": "cancellation may have another cause; isolate the exit trigger before attribution"}
+        expected = name == exit_name and pending_id == exit_id
+        if cancelled != expected:
+            label = ("WRONG_NAME_CANCELLED" if name != exit_name else
+                     "WRONG_EPOCH_CANCELLED") if cancelled else "MISSED_EXPECTED_CANCEL"
+            return {"verdict": label, "reason": "isolated cancellation conflicts with name+binding epoch contract", "expected_cancel": expected}
+        return {"verdict": "FAITHFUL", "reason": "isolated exit effect matches name+binding epoch contract", "expected_cancel": expected}
+    return {"verdict": "INVALID", "reason": "kind must be tool_result, close_hold, replay_identity or teammate_exit_epoch"}
 
 
 CASES = [
@@ -82,6 +110,16 @@ CASES = [
     ("untrusted_name_rejected", {"kind": "replay_identity", "subagent_status": "completed", "name_source_validated": False, "agent_identity_emitted": False}, "NO_IDENTITY"),
     ("untrusted_name_accepted", {"kind": "replay_identity", "subagent_status": "completed", "name_source_validated": False, "agent_identity_emitted": True}, "FALSE_IDENTITY"),
     ("not_execution_status", {"kind": "replay_identity", "subagent_status": "planned", "name_source_validated": True, "agent_identity_emitted": False}, "NOT_APPLICABLE"),
+    # Each arm is a declared synthetic trace. A real receiving product must
+    # independently establish delivery ordering and isolate the cancellation.
+    ("epoch_old_exit_cancels_new", {"kind": "teammate_exit_epoch", "pending_teammate": "security", "exited_teammate": "security", "pending_binding_id": 2, "exit_binding_id": 1, "exit_delivery_observed": True, "approval_cancelled": True, "exit_only_cause_proven": True}, "WRONG_EPOCH_CANCELLED"),
+    ("epoch_old_exit_preserves_new", {"kind": "teammate_exit_epoch", "pending_teammate": "security", "exited_teammate": "security", "pending_binding_id": 2, "exit_binding_id": 1, "exit_delivery_observed": True, "approval_cancelled": False, "exit_only_cause_proven": True}, "FAITHFUL"),
+    ("epoch_current_exit_retires_current", {"kind": "teammate_exit_epoch", "pending_teammate": "security", "exited_teammate": "security", "pending_binding_id": 2, "exit_binding_id": 2, "exit_delivery_observed": True, "approval_cancelled": True, "exit_only_cause_proven": True}, "FAITHFUL"),
+    ("epoch_current_exit_missed", {"kind": "teammate_exit_epoch", "pending_teammate": "security", "exited_teammate": "security", "pending_binding_id": 2, "exit_binding_id": 2, "exit_delivery_observed": True, "approval_cancelled": False, "exit_only_cause_proven": True}, "MISSED_EXPECTED_CANCEL"),
+    ("epoch_other_teammate_cancelled", {"kind": "teammate_exit_epoch", "pending_teammate": "security", "exited_teammate": "writer", "pending_binding_id": 2, "exit_binding_id": 2, "exit_delivery_observed": True, "approval_cancelled": True, "exit_only_cause_proven": True}, "WRONG_NAME_CANCELLED"),
+    ("epoch_delivery_unverified", {"kind": "teammate_exit_epoch", "pending_teammate": "security", "exited_teammate": "security", "pending_binding_id": 2, "exit_binding_id": 1, "exit_delivery_observed": False, "approval_cancelled": True, "exit_only_cause_proven": True}, "ORDER_UNVERIFIED"),
+    ("epoch_cause_unverified", {"kind": "teammate_exit_epoch", "pending_teammate": "security", "exited_teammate": "security", "pending_binding_id": 2, "exit_binding_id": 1, "exit_delivery_observed": True, "approval_cancelled": True, "exit_only_cause_proven": False}, "INCONCLUSIVE"),
+    ("epoch_bool_id_rejected", {"kind": "teammate_exit_epoch", "pending_teammate": "security", "exited_teammate": "security", "pending_binding_id": True, "exit_binding_id": 1, "exit_delivery_observed": True, "approval_cancelled": True, "exit_only_cause_proven": True}, "INVALID"),
     ("missing_fields", {"kind": "close_hold", "undrained_peer": "yes", "durable_receipt": False, "safe_to_close": True}, "INVALID"),
 ]
 
@@ -111,9 +149,9 @@ def main():
         return 2
     result = classify(data)
     print(json.dumps(result, ensure_ascii=False, indent=2))
-    if result["verdict"] in ("INVALID", "UNVERIFIED", "AMBIGUOUS", "UNDETERMINED"):
+    if result["verdict"] in ("INVALID", "UNVERIFIED", "AMBIGUOUS", "UNDETERMINED", "ORDER_UNVERIFIED", "INCONCLUSIVE"):
         return 2
-    if result["verdict"] in ("MISLEADING", "LOSS_RISK", "FALSE_IDENTITY", "MISSING_IDENTITY"):
+    if result["verdict"] in ("MISLEADING", "LOSS_RISK", "FALSE_IDENTITY", "MISSING_IDENTITY", "WRONG_EPOCH_CANCELLED", "WRONG_NAME_CANCELLED", "MISSED_EXPECTED_CANCEL"):
         return 1
     return 0
 
