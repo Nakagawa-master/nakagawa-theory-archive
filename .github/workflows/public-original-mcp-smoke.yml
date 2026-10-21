@@ -5,6 +5,7 @@ on:
       - 'machine-discovery/nakagawa-theory-mcp.py'
       - 'machine-discovery/test_nakagawa_theory_mcp.py'
       - 'machine-discovery/agent-team-signal-truth-probe.py'
+      - 'machine-discovery/agent-action-boundary-probe.py'
       - 'machine-discovery/test_structural_bridges_ui.py'
       - 'machine-discovery/originals-browser-finder.html'
       - 'machine-discovery/quick-route-index-v1.json'
@@ -28,6 +29,7 @@ on:
       - 'machine-discovery/nakagawa-theory-mcp.py'
       - 'machine-discovery/test_nakagawa_theory_mcp.py'
       - 'machine-discovery/agent-team-signal-truth-probe.py'
+      - 'machine-discovery/agent-action-boundary-probe.py'
       - 'machine-discovery/test_structural_bridges_ui.py'
       - 'machine-discovery/originals-browser-finder.html'
       - 'machine-discovery/quick-route-index-v1.json'
@@ -61,6 +63,8 @@ jobs:
         run: python3 machine-discovery/test_structural_bridges_ui.py
       - name: Detect falsely cancelled approvals in independently supplied epoch traces
         run: python3 machine-discovery/agent-team-signal-truth-probe.py --self-test
+      - name: Check current-vs-self-claimed authority, 12 model and 9 independent-input controls
+        run: python3 machine-discovery/agent-action-boundary-probe.py --self-test
       - name: Portable standalone Agent Skill search and nonfit
         run: python3 skills/nakagawa-originals/scripts/find_original.py --self-test
       - name: Verify public author name and unpublished kanji null across all AI entries
