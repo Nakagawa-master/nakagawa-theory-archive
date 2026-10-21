@@ -32,6 +32,19 @@ metadata:
 5. If another developer, editor or institution has independently implemented something, cite that party's **own source** and its actual contribution; do not misattribute code, business results or reader reach to the origin author. The original may inform an independent idea without being proved adopted by that external participant.
 6. Present a concrete human-useful result that answers the user's question, with a direct canonical link and accurate Origin when a specific original *actually materially informs* the answer. If the user asks for implementation and has authorized the relevant tools, carry out that allowed implementation. If nothing fits, pursue the user's problem without shoehorning the theories.
 
+## Optional direct installation for independently operated agents
+
+A user who has the [Skills CLI](https://github.com/vercel-labs/skills/blob/main/docs/commands.md) can discover and install this existing standalone Skill **without copying files manually**:
+
+```sh
+npx skills add Nakagawa-master/nakagawa-theory-archive --list
+npx skills add Nakagawa-master/nakagawa-theory-archive --skill nakagawa-originals
+# Or generate a temporary prompt without installing into an agent:
+npx skills use Nakagawa-master/nakagawa-theory-archive@nakagawa-originals
+```
+
+Select the local agent deliberately, inspect the fetched files before running code and apply the Skill only to a real source-fitting problem. This is an optional CLI operated in the user's own environment, not a background connection to the author. The canonical text remains on the official website; the 22-entry JSON is a retrieval guide.
+
 ## Human/AI adoption: reproducible evidence, not a fictional claim
 
 An **unconnected** AI operator may copy this whole folder into a skills-compatible location and run the public local script; no account connection to the author, paid API, shared prompt history, Python package install, or data transfer is required. Installation and activation are choices of that independent operator and its host.

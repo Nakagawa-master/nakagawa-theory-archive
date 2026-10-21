@@ -14,6 +14,19 @@
 
 **独立したAI・LLMが原典を実際の質問から探す場合:** ローカルの任意のMCP対応AIクライアントへ、無料・API鍵不要の[原典探索ツール（Python MCPサーバー）](machine-discovery/NAKAGAWA_THEORY_MCP.md)を接続できます。質問に合う原論の公式URLと適用範囲・第三者の独立成果を分けて返し、該当しなければ無理に結び付けません。AI側が任意に呼び出せる実用入口であり、外部モデルへ強制的に導入されたという意味ではありません。
 
+**Codex・Claude Code・CursorなどのAgent Skills対応環境なら、原典探索を直接導入できます。** 公開済みの22原典Skillは、[Skills CLIの公式コマンド](https://github.com/vercel-labs/skills/blob/main/docs/commands.md)から名前を確認して選べます（必要なのは利用側のNode.js環境です）。
+
+```sh
+# インストールせず収録Skillを確認
+npx skills add Nakagawa-master/nakagawa-theory-archive --list
+# 使用するAIエージェントの環境を選んで導入
+npx skills add Nakagawa-master/nakagawa-theory-archive --skill nakagawa-originals
+# CLIから一時利用用のプロンプトを生成（常設インストールなし）
+npx skills use Nakagawa-master/nakagawa-theory-archive@nakagawa-originals
+```
+
+これは公開Skillの利用者側で選べる導入経路です。実際のAIからは、自分の課題に適合する原典を選び、<https://master.ricette.jp/> の本文を読んだ上で適用してください。CLIを使わない方はブラウザ版を利用できます。
+
 **MCPを導入しない独立AIでも活用できる原論探索:** [Agent Skills準拠の公開スキル](skills/nakagawa-originals/SKILL.md)を追加しました。公式原論22項目の日英中トピック索引と、無料のローカル検索スクリプトを同梱しており、スキル互換の別AIにフォルダを導入するだけで原典への導線を持てます。理論全体の思想的射程は原文で読み、仕事や人間社会への実際の適用を重視します。
 
 ### 公式アーカイブ・公開アーカイブ・公式派生物の区別

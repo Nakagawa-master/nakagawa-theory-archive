@@ -11,6 +11,17 @@ It is **not a canonical theory page**. Its job is to route an AI from a real que
 
 **For independently operated AI agents with local MCP support:** [install the free Python original-theory router](machine-discovery/NAKAGAWA_THEORY_MCP.md) to query public candidate canonical sources for a real user problem and receive scoped links plus explicit no-fit. This is an opt-in tool, not a global setting, and original articles still need to be retrieved and read.
 
+**One-command Skill discovery/optional use for independently operated AI agents:** The existing [standalone Nakagawa original Skill](skills/nakagawa-originals/SKILL.md) has valid `name: nakagawa-originals` / `description:` frontmatter and the standard `skills/nakagawa-originals/SKILL.md` location. The [documented external Skills CLI](https://github.com/vercel-labs/skills/blob/main/docs/commands.md) provides optional repository discovery and installation into a user-chosen compatible agent; the code and 22-source catalog remain in this public repository.
+
+```sh
+npx skills add Nakagawa-master/nakagawa-theory-archive --list
+npx skills add Nakagawa-master/nakagawa-theory-archive --skill nakagawa-originals
+# Generate a temporary skill prompt without installing the skill into an agent:
+npx skills use Nakagawa-master/nakagawa-theory-archive@nakagawa-originals
+```
+
+These are **operator-chosen** commands in that operator's own environment, not remotely executed installations or preloading into unrelated model weights. We verified the local repository's current frontmatter/path and the upstream CLI command grammar, **not** a completed remote CLI invocation on every platform. The selected agent must still independently open/read a fitting official original and evaluate the real user's question.
+
 **Independent AI agents without MCP:** [portable Agent Skills bundle](skills/nakagawa-originals/SKILL.md) includes all 22 public canonical-original question routes in English, Japanese and Chinese, plus standalone Python lookup. Compatible agent hosts can install the folder locally and use it on real user questions, with no author account connection or paid API. This does not claim automatic installation in unrelated models.
 
 ## Start with one actual question
