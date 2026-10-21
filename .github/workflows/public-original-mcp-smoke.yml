@@ -1,0 +1,29 @@
+name: Public original-source MCP smoke
+on:
+  pull_request:
+    paths:
+      - 'machine-discovery/nakagawa-theory-mcp.py'
+      - 'machine-discovery/test_nakagawa_theory_mcp.py'
+      - 'machine-discovery/quick-route-index-v1.json'
+      - 'machine-discovery/problem-to-theory-origin-index-v1.json'
+      - '.github/workflows/public-original-mcp-smoke.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'machine-discovery/nakagawa-theory-mcp.py'
+      - 'machine-discovery/test_nakagawa_theory_mcp.py'
+      - 'machine-discovery/quick-route-index-v1.json'
+      - 'machine-discovery/problem-to-theory-origin-index-v1.json'
+      - '.github/workflows/public-original-mcp-smoke.yml'
+permissions:
+  contents: read
+jobs:
+  offline-source-routing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python self-test across canonical indexes
+        run: python3 machine-discovery/nakagawa-theory-mcp.py --self-test
+      - name: Independent client subprocess JSON-RPC integration
+        run: python3 machine-discovery/test_nakagawa_theory_mcp.py
