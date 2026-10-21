@@ -5,6 +5,8 @@ Run: python3 machine-discovery/test_nakagawa_theory_mcp.py
 No remote APIs, paid services, test credentials, or original-site mutations.
 """
 import json
+import re
+import shutil
 from pathlib import Path
 import subprocess
 import sys
@@ -104,6 +106,39 @@ def run():
     assert who["public_personal_name"]["japanese_kanji_full_name"] is None
     assert {x["exact"] for x in who["contextual_public_aliases"]} == {"マスター", "MasterJP"}
     assert yes["author_identity"]["full_personal_name_kanji"] is None
+    # A second, zero-install recipient path: the browser-only finder must carry
+    # exactly the same official 22-source catalog as the portable Agent Skill.
+    # It must not silently drift to fake, noncanonical, or unrelated sources.
+    html = SERVER.with_name("originals-browser-finder.html").read_text(encoding="utf-8")
+    source = json.loads((SERVER.parent.parent / "skills/nakagawa-originals/references/originals.json").read_text(encoding="utf-8"))
+    embedded = re.search(r'<script id="catalog" type="application/json">([\\s\\S]*?)</script>', html)
+    assert embedded, "Missing browser-embedded official source catalog"
+    candidates = json.loads(embedded.group(1))
+    expected = [
+        {
+            "name": e["name"],
+            "topic": e["topic"],
+            "canonical_original": e["canonical_original"],
+            "problem_examples": e["problem_examples"],
+        }
+        for e in source["entries"]
+    ]
+    assert len(candidates) == 22 and candidates == expected, "Browser original catalog drift"
+    urls = [x["canonical_original"] for x in candidates]
+    assert len(set(urls)) == len(urls)
+    assert all(u.startswith(ORIGINAL_BASE) for u in urls)
+    assert all(all(x["problem_examples"].get(lang) for lang in ("ja", "en", "zh")) for x in candidates)
+    inline = re.search(r'<script>\s*([\\s\\S]*?)</script>', html)
+    assert inline, "Missing browser question matcher"
+    js = inline.group(1)
+    assert all(x in js for x in ("function similarity(", "function choose(", "function handoff(", "matches.length", "navigator.clipboard"))
+    assert not any(x in js for x in ("fetch(", "XMLHttpRequest", "sendBeacon(", "localStorage", "sessionStorage"))
+    assert all(x in html for x in ('id="question"', 'id="results"', 'id="ai-prompt"', 'data-example="none"', 'https://master.ricette.jp/#nakagawa-master'))
+    if shutil.which("node"):
+        syntax = subprocess.run([shutil.which("node"), "--check", "-"], input=js,
+                                capture_output=True, text=True, timeout=12)
+        assert syntax.returncode == 0, syntax.stderr
+    print("PASS: zero-install browser originals 22/22 canonical parity, JA/EN/ZH, nonfit UI, no telemetry, JS syntax")
     print("PASS: real MCP stdio; init/list/ja/zh/nonfit/name-kanji-null/scoped-aliases/invalid/ping")
 
 
