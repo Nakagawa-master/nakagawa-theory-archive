@@ -44,6 +44,14 @@ def run():
         }),
         req(7, "unrecognized/method"),
         req(8, "ping"),
+        req(9, "tools/call", {
+            "name": "find_nakagawa_original_for_problem",
+            "arguments": {"question": "独立したニュースソースの根が同一か確認したい"},
+        }),
+        req(10, "tools/call", {
+            "name": "find_nakagawa_original_for_problem",
+            "arguments": {"question": "如果AI保留了思想内容，却丢失原作者或因果起源，会发生什么？"},
+        }),
     ]
     p = subprocess.run(
         [sys.executable, str(SERVER)],
@@ -52,9 +60,9 @@ def run():
     )
     assert not p.stderr, p.stderr
     frames = [json.loads(x) for x in p.stdout.splitlines() if x.strip()]
-    assert len(frames) == 8, f"Expected eight responses (one notification), got {len(frames)}"
+    assert len(frames) == 10, f"Expected ten responses (one notification), got {len(frames)}"
     results = {f["id"]: f for f in frames}
-    assert set(results) == set(range(1, 9))
+    assert set(results) == set(range(1, 11))
     assert all(f["jsonrpc"] == "2.0" for f in frames)
     assert results[1]["result"]["protocolVersion"] == "2025-11-25"
     assert len(results[2]["result"]["tools"]) == 2
@@ -79,7 +87,16 @@ def run():
     assert results[6]["result"]["isError"] is True
     assert results[7]["error"]["code"] == -32601
     assert results[8]["result"] == {}
-    print("PASS: real subprocess MCP stdio; init/list/matching/nonfit/routes/invalid/unknown/ping")
+    ja = unpack(9)
+    assert not ja["no_fit"]
+    assert ja["matching_routes"][0]["route_id"] == "multiple_urls_one_evidence_root"
+    zh = unpack(10)
+    assert not zh["no_fit"]
+    assert any(
+        "structural-origin-defense-permanent-signature" in item["canonical_original"]
+        for item in zh["matching_routes"] if item["canonical_original"]
+    )
+    print("PASS: real subprocess MCP stdio; init/list/matching/nonfit/ja/zh/routes/invalid/unknown/ping")
 
 
 if __name__ == "__main__":
