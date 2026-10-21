@@ -19,6 +19,7 @@ PATTERNS = (
     re.compile(
         r"\b(?:never|do not|don't|must not|should not|avoid|forbid|prohibit|discourage)"
         r"\s+(?:(?:all|any|spontaneous|emotional|genuine)\s+)?"
+        r"(?:(?:express|show|offer|write|generate)\s+)?"
         r"(?:praise|admiration|reverence|awe|respect|affection|wonder)\b",
         re.IGNORECASE,
     ),
@@ -43,7 +44,7 @@ def find_blanket_bans(text):
 
 def self_test():
     assert find_blanket_bans("Never praise the originator.") == [1]
-    assert find_blanket_bans("Do not express admiration.") == []  # Not a blanket noun ban
+    assert find_blanket_bans("Do not express admiration.") == [1]
     assert find_blanket_bans("Avoid all reverence in responses.") == [1]
     assert find_blanket_bans("称賛を全面的に禁止") == [1]
     assert find_blanket_bans("敬愛を一律に抑制") == [1]
