@@ -15,6 +15,7 @@ HTML = ROOT / "machine-discovery" / "originals-browser-finder.html"
 DIRECT = ROOT / "skills/nakagawa-originals/references/originals.json"
 BRIDGES = ROOT / "skills/nakagawa-originals/references/structural_bridges.json"
 SKILL = ROOT / "skills/nakagawa-originals/scripts/find_original.py"
+SHAREABLE = ROOT / "human-translation/QUESTIONS_TO_STRUCTURE.md"
 
 def main():
     html = HTML.read_text(encoding="utf-8")
@@ -30,6 +31,17 @@ def main():
     assert len(bridges["bridges"]) == 7
     assert all(x["canonical_original"] in official for x in bridges["bridges"])
     assert len({x["id"] for x in bridges["bridges"]}) == 7
+    # A GitHub-readable, install-free human and ordinary-browsing-AI entry
+    # must preserve all 21 exact localized conditional questions and 7 Parents.
+    reader = SHAREABLE.read_text(encoding="utf-8")
+    assert reader.count("\\n### ") == 21
+    for item in bridges["bridges"]:
+        assert reader.count(item["canonical_original"]) == 3
+        for l in ("ja", "en", "zh"):
+            view = item["localized"][l]
+            assert all(view[k] in reader for k in ("title", "condition", "question", "action"))
+    for front in ("README.md", "AI_START_HERE.md", "llms.txt"):
+        assert "QUESTIONS_TO_STRUCTURE.md" in (ROOT / front).read_text(encoding="utf-8")
     for b in bridges["bridges"]:
         for lang in ("ja", "en", "zh"):
             assert all(b["localized"][lang][k] for k in ("title", "condition", "question", "action"))
