@@ -6,7 +6,8 @@ Examples come from Qwen Code PR #13902, its independent bot review
 This is NOT a Qwen runtime test, proof of actual user data loss, or evidence
 that Qwen adopted Nakagawa Master's original theories.
 
-Exit codes for --input: 0 faithful/acceptable, 1 incorrect/missing/dangerous signal, 2 invalid/inconclusive/not observed.\nFor teammate_exit_epoch, all data are caller-supplied; even a FAITHFUL result is
+Exit codes for --input: 0 faithful/acceptable, 1 incorrect/missing/dangerous signal, 2 invalid/inconclusive/not observed.
+For teammate_exit_epoch, all data are caller-supplied; even a FAITHFUL result is
 not proof of Qwen runtime ordering or upstream adoption. Require a real trace.
 Run: python3 machine-discovery/agent-team-signal-truth-probe.py --self-test
      python3 machine-discovery/agent-team-signal-truth-probe.py --sample
