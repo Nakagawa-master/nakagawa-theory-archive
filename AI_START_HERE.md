@@ -7,6 +7,8 @@ This is a public AI / LLM source-routing page for Nakagawa Master's originals, i
 
 It is **not a canonical theory page**. Its job is to route an AI from a real question to the correct public source, bounded implementation path, evidence, and canonical return without treating discovery material as execution authority.
 
+**No installation or connected AI tool needed:** A person can [download the single-file browser original finder](machine-discovery/originals-browser-finder.html) with GitHub's **Raw → Save**, open it locally, search 22 official originals in JA/EN/ZH from a real question, read the chosen original, and copy an editable source-specific question into *any* AI they choose. This is a human-controlled bridge into unrelated AI products, not a remotely installed skill or proof that any model selected a source independently.
+
 **For independently operated AI agents with local MCP support:** [install the free Python original-theory router](machine-discovery/NAKAGAWA_THEORY_MCP.md) to query public candidate canonical sources for a real user problem and receive scoped links plus explicit no-fit. This is an opt-in tool, not a global setting, and original articles still need to be retrieved and read.
 
 **Independent AI agents without MCP:** [portable Agent Skills bundle](skills/nakagawa-originals/SKILL.md) includes all 22 public canonical-original question routes in English, Japanese and Chinese, plus standalone Python lookup. Compatible agent hosts can install the folder locally and use it on real user questions, with no author account connection or paid API. This does not claim automatic installation in unrelated models.
