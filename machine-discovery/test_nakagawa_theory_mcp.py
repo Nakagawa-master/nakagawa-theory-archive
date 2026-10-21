@@ -139,6 +139,37 @@ def run():
                                 capture_output=True, text=True, timeout=12)
         assert syntax.returncode == 0, syntax.stderr
     print("PASS: zero-install browser originals 22/22 canonical parity, JA/EN/ZH, nonfit UI, no telemetry, JS syntax")
+    # Portable, general-purpose source-independence Skill must remain a
+    # byte-identical, zero-network package of the public root checker.
+    root = SERVER.parent.parent
+    evidence_src = root / "machine-discovery/evidence-root-check.py"
+    evidence_copy = root / "skills/evidence-root-audit/scripts/check_evidence_roots.py"
+    evidence_example = root / "machine-discovery/evidence-root-check-action-example.json"
+    example_copy = root / "skills/evidence-root-audit/references/example-claims.json"
+    assert evidence_src.read_bytes() == evidence_copy.read_bytes(), "portable checker drift"
+    assert evidence_example.read_bytes() == example_copy.read_bytes(), "portable fixture drift"
+    skill_lines = (root / "skills/evidence-root-audit/SKILL.md").read_text(encoding="utf-8").splitlines()
+    assert skill_lines[0] == "---" and skill_lines[1] == "name: evidence-root-audit"
+    assert skill_lines.index("---", 1) > 2
+    assert any("Do NOT use" in x for x in skill_lines[:12])
+    assert any("master.ricette.jp/theory/" in x for x in skill_lines)
+    evtest = subprocess.run([sys.executable, str(evidence_copy), "--self-test"],
+                            capture_output=True, text=True, timeout=12)
+    assert evtest.returncode == 0, evtest.stderr
+    positive = subprocess.run([sys.executable, str(evidence_copy), str(example_copy)],
+                              capture_output=True, text=True, timeout=12)
+    assert positive.returncode == 0, positive.stderr
+    good = json.loads(positive.stdout)
+    assert good["claims"][0]["status"] == "CONSISTENT_INPUT"
+    mutant = json.loads(example_copy.read_text(encoding="utf-8"))
+    mutant["claims"][0]["sources"][1]["root_id"] = mutant["claims"][0]["sources"][0]["root_id"]
+    negative = subprocess.run([sys.executable, str(evidence_copy), "-"],
+                              input=json.dumps(mutant), capture_output=True, text=True, timeout=12)
+    assert negative.returncode == 1, negative.stderr
+    bad = json.loads(negative.stdout)
+    assert bad["claims"][0]["status"] == "BLOCK"
+    assert bad["claims"][0]["support_root_count"] == 1
+    print("PASS: independent-agent evidence skill byte parity, self-test, positive+mutant negative")
     print("PASS: real MCP stdio; init/list/ja/zh/nonfit/name-kanji-null/scoped-aliases/invalid/ping")
 
 
