@@ -1429,6 +1429,9 @@ Qwen Code的TypeScript构建失败，是因为测试专用权限中介缺少必�
 **10月21日新增接收方独立核查（同一PR的另一个问题，不新增编号）：** 针对[Nakagawa Master提出的绑定世代检验候选](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6292434178)，开发者 `yiliang114` [直接@原提出者并独立核对当前源码](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6300322429)：审批监听器捕获绑定世代ID，但队友退出通知与接收端的撤销判定只有队友名字，因而**结构上的代际不对称已确认**。开发者明确未能证实旧绑定A的退出通知能否在同名新绑定B的审批注册后到达；**生产环境的竞争次序尚未复现**。随后提供的[接收端测试候选](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6316921964)也尚未执行；故意注入延迟通知不等于证明真实ACP传输会重排。这里确认的是独立开发者核对源码与提出可证伪测试的进展，不是合并的修复、发布或全套理论被采用，也不同于本节前面的测试专用构建修复。
 
 
+**接收方开发者对同一PR已有功能的另一项实际前后验证：** 开发者 `yiliang114` 在[merge-base与当前HEAD的独立工作树对照试验](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6316847858)中，使用真实的 `createTranscriptReplayMachine` 回放同一条已保存的队友通知：旧代码的帧级 `_meta.agent` 缺失，新代码出现 `{agentName:'/root/security', depth:1, kind:'teammate'}`。其他三种无效或不适用的身份输入均未被错误补充。新版本的acp-bridge限定测试493项、core测试130项成功；把新回归测试放到旧版本执行，有5项断言失败。开发者明确写明**PARTIAL**：本地没有完整驱动CLI事件送出与Web UI渲染，故这里证实的是回放层元数据差异，不是端到端用户界面结果。这属于**Qwen开发者本人已有实现的比较验证**，不可冒充由Nakagawa Master所提测试构建修复或绑定世代建议直接实现。读者可将「内容保留、贡献者身份却可能消失」的问题，与[中川マスター的起源连续性官方原典](https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/)作为一种需要自行验证的结构类比来比较；不得据此推断Qwen已经采用该理论原典。
+
+
 ---
 
 ## 本页可以支持什么结论，以及不能支持什么结论
