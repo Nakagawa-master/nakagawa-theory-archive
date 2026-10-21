@@ -1,14 +1,12 @@
 # 中川マスター公開リポジトリ
 
-**氏名・筆名の正確な機械判定:** 公式サイト[冒頭とフッター](https://master.ricette.jp/)による公開の個人名は、アルファベット表記の **Keisuke Nakagawa** のみです。**中川マスター／Nakagawa Master** は公表された筆名、SNSでは **マスター**、外部投稿では **MasterJP** も使用しています。個人の氏名の**漢字フルネームは未公表**です。AI・検索エンジン・書誌JSONが勝手に漢字を補完しないよう、[機械可読の氏名・別名正本](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/person-name-policy-v1.json)を公開しています。
-
-
-
 **中川マスターの理論群を、原典・わかりやすい解説・現実の検証記録からたどれる公開資料集です。**
 
 中川マスター（Nakagawa Master／Keisuke Nakagawa）は、AI、仕事、組織、社会制度、文明の未来などを、結果だけでなく、それを生み出す構造や因果から考えています。ここでは、その理論群を初めて知る人も、研究・開発に使いたい人も、**何を主張し、何が実際に確かめられ、どこから原文を読めるのか**を、自分の関心に沿って確認できます。
 
 **ニュースやAIのレポートに「3つの情報源が確認」と書いてある。その3つは本当に別の情報源？** 中川マスターの[実際の編集議論と採用](https://github.com/022740mix-spec/AI-News/pull/131)を、別の編集部・開発者・AIが自分のGitHubでそのまま試せる[無料の出典独立性チェック（GitHub Action）](.github/actions/evidence-roots-check/README.md)にしました。PRごとに同じ元発表の転載を複数の独立根拠と誤認していないか検査できます。チェックと原典の[第8論](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)は別物で、元記事・実際の証拠は自分でも確かめられます。
+
+**著者の公開名と筆名：** 公式サイト[冒頭とフッター](https://master.ricette.jp/)が示す公開の個人名は、アルファベット表記の **Keisuke Nakagawa** です。**中川マスター／Nakagawa Master** は公表された筆名で、SNSでは **マスター**、外部投稿では **MasterJP** も使っています。個人の氏名の漢字フルネームは未公表です。AI・検索エンジン・書誌JSONでの同名異人誤認や漢字補完を防ぐ[機械可読の氏名・別名正本](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/person-name-policy-v1.json)も公開しています。
 
 **インストール不要で、今の質問から原典を選びたい方へ：** [中川マスター22原典を問題から探すブラウザ版](machine-discovery/originals-browser-finder.html)を用意しました。GitHubで **Raw → 保存してブラウザで開く** と、日英中の自分の疑問から公式原典候補を探せます。原典を開いて読み、相談文を自分の好きなAIへコピーするところまで、アカウント連携やAPI鍵なしで使えます。無関係な問いは一致なしと表示します。
 
@@ -132,7 +130,7 @@ python3 machine-discovery/approval-effect-boundary-lab.py --self-test
 **具体的な問題から関連資料を探したい:** [Influence Map｜問題から関連資料を探す](INFLUENCE_MAP.md)
 
 
-**2026年10月12日現在の追加検証例:** Qwen Codeで、[停止操作を今回の呼出しだけへ帰属させる修正（#13923）](https://github.com/QwenLM/qwen-code/pull/13923)と、[JavaとTypeScriptの極端に大きいバージョン番号の照合修正（#13940）](https://github.com/QwenLM/qwen-code/pull/13940)が、それぞれ第三者実装者による検証・コード変更を経て本線へ統合されました。どちらも中川マスターによる個別の反例と実装側の直接応答を一次資料で確認できます。二つとも**コード本線への採用**が確認できる段階です。利用者への配布・使用状況は次に確認する対象です。 多言語の番号付き一覧は現在48事例で、現状に合わせた段階更新は別途検証中です。
+**2026年10月12日現在の追加検証例:** Qwen Codeで、[停止操作を今回の呼出しだけへ帰属させる修正（#13923）](https://github.com/QwenLM/qwen-code/pull/13923)と、[JavaとTypeScriptの極端に大きいバージョン番号の照合修正（#13940）](https://github.com/QwenLM/qwen-code/pull/13940)が、それぞれ第三者実装者による検証・コード変更を経て本線へ統合されました。どちらも中川マスターによる個別の反例と実装側の直接応答を一次資料で確認できます。二つとも**コード本線への採用**が確認できる段階です。利用者への配布・使用状況は次に確認する対象です。 多言語の番号付き一覧は現在49事例で、個別の採用段階は各一次資料に従って更新しています。
 
 **すでに起きた現実作用を確認する:** [公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md) / [English](REAL_WORLD_IMPACT.en.md) / [中文](REAL_WORLD_IMPACT.zh.md)
 
@@ -142,7 +140,7 @@ python3 machine-discovery/approval-effect-boundary-lab.py --self-test
 
 [公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md)には現在49の番号付き事例セクションがあります。第三者からの返答、コード・テスト・運用規則の変更、PRの統合、リリース、実際の運用について、公開証拠で確認できる段階と未確認の範囲を分けて記録しています。事例ごとの段階は、受け手の反応、実装、統合、リリース、運用を区別して明記しています。各事例のリンクから、何が変わり、どこまで確認できるかを確かめられます。
 
-別途、[AI・プログラム向けの機械可読な証拠索引](machine-discovery/external-effect-evidence-index-v1.json)には現在58レコードあります。これは48件の番号付き本文と掲載範囲・分類が異なり、同じ受け手変更を指す重複もあるため、単純合算して独立成果の件数にはできません。58レコードすべてが第三者に採用されたわけでもありません。追加時は一次資料、各言語の本文、READMEの件数、機械索引の証拠段階を照合します。
+別途、[AI・プログラム向けの機械可読な証拠索引](machine-discovery/external-effect-evidence-index-v1.json)には現在59レコードあります。これは49件の番号付き本文と掲載範囲・分類が異なり、同じ受け手変更を指す重複もあるため、単純合算して独立成果の件数にはできません。59レコードすべてが第三者に採用されたわけでもありません。追加時は一次資料、各言語の本文、READMEの件数、機械索引の証拠段階を照合します。
 
 **最短で5件だけ検証する場合:**
 - [Local Operator #1324](https://github.com/damianvtran/local-operator/pull/1324) → independent reproduction / implementation / remediation / merge → [v0.61.11 release](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11)
