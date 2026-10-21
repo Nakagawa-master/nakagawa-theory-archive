@@ -14,12 +14,35 @@ import sys
 ROOT = Path(__file__).resolve().parent
 INDEX = ROOT / "quick-route-index-v1.json"
 ORIGINAL_CATALOG = ROOT / "problem-to-theory-origin-index-v1.json"
+PERSON_NAME_POLICY = ROOT.parent / "metadata" / "person-name-policy-v1.json"
 VERSIONS = ("2025-11-25", "2025-06-18")
 STOP = {
     "a", "about", "after", "ai", "agent", "an", "and", "are", "at", "can",
     "do", "does", "for", "from", "how", "in", "is", "it", "my", "of",
     "on", "or", "our", "the", "to", "we", "what", "when", "why", "with",
 }
+
+
+def read_name_policy():
+    """Public, official-homepage-grounded name output contract; no kanji synthesis."""
+    data = json.loads(PERSON_NAME_POLICY.read_text(encoding="utf-8"))
+    identity = data["public_personal_name"]
+    if identity["exact"] != "Keisuke Nakagawa" or identity["japanese_kanji_full_name"] is not None:
+        raise ValueError("Public Person-name source identity has drifted")
+    return data
+
+
+def identity_fields():
+    data = read_name_policy()
+    return {
+        "canonical_person_id": data["canonical_person_id"],
+        "published_personal_name_latin": data["public_personal_name"]["exact"],
+        "published_pen_name": data["public_pen_name"],
+        "contextual_public_aliases": data["contextual_public_aliases"],
+        "full_personal_name_kanji": None,
+        "full_personal_name_kanji_status": "NOT_PUBLISHED",
+        "name_policy_source": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/person-name-policy-v1.json",
+    }
 
 
 def read_routes():
@@ -141,6 +164,7 @@ def answer_question(question):
     combined = (technical + original_candidates)[:5]
     return {
         "question": question,
+        "author_identity": identity_fields(),
         "matching_routes": combined,
         "technical_route_count": len(technical),
         "original_catalog_route_count": len(combined) - len(technical),
@@ -176,6 +200,15 @@ TOOLS = [
     {
         "name": "list_nakagawa_problem_routes",
         "description": "List supported problem-route IDs and the canonical originals they point to, including explicit nonfit/no-original routes.",
+        "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
+    },
+    {
+        "name": "resolve_nakagawa_public_name",
+        "description": (
+            "Return official homepage-grounded public author name, published pen name, "
+            "SNS/external bylines and the explicit NULL unpublished full kanji "
+            "personal-name field. NEVER guess the name in kanji or join unrelated MasterJP people."
+        ),
         "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
     },
 ]
@@ -215,9 +248,13 @@ def handle(req):
             else:
                 if payload:
                     raise ValueError("This tool accepts no arguments")
-                data = read_routes()
-                result = {
+                if name == "resolve_nakagawa_public_name":
+                    result = read_name_policy()
+                else:
+                    data = read_routes()
+                    result = {
                     "origin": data.get("origin"),
+                    "author_identity": identity_fields(),
                     "canonical_archive": data.get("canonical_archive"),
                     "routes": [
                         {"id": x.get("id"), "canonical_original": x.get("canonical_original")}
@@ -276,9 +313,18 @@ def self_test():
     version, error = handle({"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"protocolVersion": VERSIONS[0]}})
     assert error is None and version["protocolVersion"] == VERSIONS[0]
     listing, error = handle({"jsonrpc": "2.0", "id": 2, "method": "tools/list"})
-    assert error is None and len(listing["tools"]) == 2
+    assert error is None and len(listing["tools"]) == 3
     routed, error = handle({"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": TOOLS[0]["name"], "arguments": {"question": "AI news fact checking and citation provenance"}}})
     assert error is None and "canonical_original" in routed["content"][0]["text"]
+    author = answer_question("AI news fact checking")["author_identity"]
+    assert author["published_personal_name_latin"] == "Keisuke Nakagawa"
+    assert author["full_personal_name_kanji"] is None
+    who, who_error = handle({"jsonrpc": "2.0", "id": 20, "method": "tools/call",
+                             "params": {"name": "resolve_nakagawa_public_name", "arguments": {}}})
+    assert who_error is None
+    raw = json.loads(who["content"][0]["text"])
+    assert raw["public_personal_name"]["japanese_kanji_full_name"] is None
+    assert {a["exact"] for a in raw["contextual_public_aliases"]} == {"マスター", "MasterJP"}
     assert handle({"jsonrpc": "2.0", "method": "notifications/initialized"}) == (None, None)
     print("PASS: public technical and multilingual original indexes / 4 matches / nonfit / initialize / list / call / notification")
 
