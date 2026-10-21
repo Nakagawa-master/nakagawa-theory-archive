@@ -149,7 +149,9 @@ def run():
     assert explored["structural_exploration_available"]
     assert explored["structural_exploration"]["status"] == "OPTIONAL_HYPOTHESIS_NOT_DIRECT_MATCH"
     assert len(explored["structural_exploration"]["lenses"]) == 7
-    assert explored["structural_exploration"]["lenses"][0]["id"] == "independent-evidence"
+    assert explored["structural_exploration"]["lenses"][0]["id"] == "effort-to-results"
+    assert {x["id"] for x in explored["structural_exploration"]["lenses"]} == {x["id"] for x in bridge_source["bridges"]}
+    assert explored["structural_exploration"]["first_lens_is_hint_not_factual_fit"]
     inline = re.search(r'<script>\s*([\s\S]*?)</script>', html)
     assert inline, "Missing browser question matcher"
     js = inline.group(1)

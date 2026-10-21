@@ -41,6 +41,22 @@ def score(question, phrase):
     return overlap + min(10, len(two_grams(question) & two_grams(phrase))) / 2
 
 
+def context_hint_score(question, lang, bridge):
+    """Rank *optional* lenses by surface cues; never certify causal fit."""
+    cues = bridge.get("context_cues", {}).get(lang, [])
+    text = question.casefold()
+    if lang == "en":
+        words = set(re.findall(r"[a-z0-9]+", text))
+        return sum(1 for cue in cues if cue.casefold() in words)
+    return sum(1 for cue in cues if cue.casefold() in text)
+
+
+def ranked_bridges(question, lang, bridges):
+    # Pure order-only operation. Every one of the seven lenses remains
+    # selectable even if no cue matches. User/agent verifies causal conditions.
+    return sorted(bridges, key=lambda b: -context_hint_score(question, lang, b))
+
+
 def select(question, limit=3, explore=False):
     if not isinstance(question, str) or not question.strip() or len(question) > 1500:
         raise ValueError("Supply a real question of up to 1500 characters")
@@ -89,13 +105,17 @@ def select(question, limit=3, explore=False):
         source = json.loads(BRIDGES.read_text(encoding="utf-8"))
         canonical = {e["canonical_original"] for e in data["entries"]}
         lenses = []
-        for item in source["bridges"]:
+        for item in ranked_bridges(question, lang, source["bridges"]):
             assert item["canonical_original"] in canonical
             view = item["localized"][lang]
+            cue_count = context_hint_score(question, lang, item)
             lenses.append({"id": item["id"], "canonical_original": item["canonical_original"],
-                           "original_title": item["original_title"], **view})
+                           "original_title": item["original_title"],
+                           "surface_cue_count": cue_count,
+                           "surface_hint_only": bool(cue_count), **view})
         output["structural_exploration"] = {
             "status": "OPTIONAL_HYPOTHESIS_NOT_DIRECT_MATCH",
+            "first_lens_is_hint_not_factual_fit": True,
             "instruction": "Choose an underlying condition only if it is genuinely present. Explain causal consequences, read the original, and separate its argument from your new analogy or application. If none is present, solve the original user task without invoking the source.",
             "lenses": lenses,
         }
@@ -164,6 +184,24 @@ def self_test():
         assert len(lenses) == 7 and len({x["id"] for x in lenses}) == 7
         assert all(x["canonical_original"].startswith("https://master.ricette.jp/") for x in lenses)
         assert all(x["condition"] and x["question"] and x["action"] for x in lenses)
+    # Contact-expansion regression: a real-world question should activate a
+    # *plausible* conditional route first, without removing all other lenses.
+    scenario_ranks = (
+        ("How can a student prepare for a history exam without memorizing all dates?", "effort-to-results"),
+        ("How can I give a teacher constructive feedback after a failed class?", "verifiable-authority"),
+        ("AIの最新モデルの価格を比較したい", "future-options"),
+        ("同じ場所で毎日同じ時間に運動しても問題はない？", "effort-to-results"),
+        ("我想比较AI服务价格和迁移费用", "future-options"),
+    )
+    for scenario, expected_first in scenario_ranks:
+        result = select(scenario, explore=True)
+        options = result["structural_exploration"]["lenses"]
+        assert len(options) == 7 and options[0]["id"] == expected_first, (scenario, options)
+        assert options[0]["surface_cue_count"] > 0
+        assert result["structural_exploration"]["first_lens_is_hint_not_factual_fit"]
+    unknown = select("repair the leather strap on a camping lantern", explore=True)
+    assert len(unknown["structural_exploration"]["lenses"]) == 7
+    assert all(x["surface_cue_count"] == 0 for x in unknown["structural_exploration"]["lenses"])
     history = select("How can a student prepare for a history exam without memorizing all dates?", explore=True)
     assert history["no_fit"] and not history["original_candidates"]
     assert next(x for x in history["structural_exploration"]["lenses"] if x["id"] == "independent-evidence")["question"]

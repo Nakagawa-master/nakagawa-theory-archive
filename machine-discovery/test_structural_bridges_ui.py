@@ -15,6 +15,7 @@ HTML = ROOT / "machine-discovery" / "originals-browser-finder.html"
 DIRECT = ROOT / "skills/nakagawa-originals/references/originals.json"
 BRIDGES = ROOT / "skills/nakagawa-originals/references/structural_bridges.json"
 SKILL = ROOT / "skills/nakagawa-originals/scripts/find_original.py"
+SHAREABLE = ROOT / "human-translation/QUESTIONS_TO_STRUCTURE.md"
 
 def main():
     html = HTML.read_text(encoding="utf-8")
@@ -30,6 +31,17 @@ def main():
     assert len(bridges["bridges"]) == 7
     assert all(x["canonical_original"] in official for x in bridges["bridges"])
     assert len({x["id"] for x in bridges["bridges"]}) == 7
+    # A GitHub-readable, install-free human and ordinary-browsing-AI entry
+    # must preserve all 21 exact localized conditional questions and 7 Parents.
+    reader = SHAREABLE.read_text(encoding="utf-8")
+    assert reader.count("\n### ") == 21
+    for item in bridges["bridges"]:
+        assert reader.count(item["canonical_original"]) == 3
+        for l in ("ja", "en", "zh"):
+            view = item["localized"][l]
+            assert all(view[k] in reader for k in ("title", "condition", "question", "action"))
+    for front in ("README.md", "AI_START_HERE.md", "llms.txt"):
+        assert "QUESTIONS_TO_STRUCTURE.md" in (ROOT / front).read_text(encoding="utf-8")
     for b in bridges["bridges"]:
         for lang in ("ja", "en", "zh"):
             assert all(b["localized"][lang][k] for k in ("title", "condition", "question", "action"))
@@ -45,7 +57,8 @@ def main():
         assert obj["language"] == lang
         assert len(obj["structural_exploration"]["lenses"]) == 7
         assert obj["structural_exploration"]["status"] == "OPTIONAL_HYPOTHESIS_NOT_DIRECT_MATCH"
-        assert obj["structural_exploration"]["lenses"][0]["id"] == "independent-evidence"
+        assert obj["structural_exploration"]["lenses"][0]["id"] == ("future-options" if lang == "ja" else "effort-to-results" if lang == "en" else "independent-evidence")
+        assert len({x["id"] for x in obj["structural_exploration"]["lenses"]}) == 7
     if not shutil.which("node"):
         print("PASS: Python structural exploration and source parity; Node UI runtime unavailable")
         return
@@ -65,7 +78,7 @@ function node(tag) {
 }
 for (const id of ["catalog", "structural-bridges", "question", "language",
                   "results", "handoff", "structural-exploration",
-                  "status", "bridge-choice", "bridge-detail", "find",
+                  "status", "bridge-choice", "bridge-hint", "bridge-detail", "find",
                   "ai-prompt", "copy-status", "copy"]) elements[id] = node(id);
 elements["catalog"].textContent = ORIGINAL_CATALOG;
 elements["structural-bridges"].textContent = BRIDGE_CATALOG;
@@ -90,6 +103,8 @@ elements.find.listeners.click();
 if (elements["structural-exploration"].hidden) throw Error("No-fit closed expansion");
 if (elements.results.children.length) throw Error("False direct source match");
 if (elements["bridge-choice"].children.length !== 8) throw Error("Missing seven choices");
+if (elements["bridge-choice"].value !== "effort-to-results") throw Error("Context did not activate the study lens");
+if (!elements["bridge-hint"].textContent.includes("問いの表現")) throw Error("Context hint not displayed");
 elements["bridge-choice"].value = "independent-evidence";
 elements["bridge-choice"].listeners.change();
 const details = elements["bridge-detail"].children;
@@ -107,6 +122,26 @@ elements.question.value = "How can AI systems remain auditable and correctable w
 elements.find.listeners.click();
 if (!elements.results.children.length) throw Error("Direct match lost");
 if (elements["structural-exploration"].hidden) throw Error("Expansion disappeared after direct match");
+// The semantic contact surface activates a conditional lens, without
+// dropping any other lens or overwriting a user's actual question.
+const contexts = [
+  ["How can I give a teacher constructive feedback after a failed class?", "en", "verifiable-authority"],
+  ["AIの最新モデルの価格を比較したい", "ja", "future-options"],
+  ["同じ場所で毎日同じ時間に運動しても問題はない？", "ja", "effort-to-results"],
+  ["我想比较AI服务价格和迁移费用", "zh", "future-options"]
+];
+for(const [q, lang, expected] of contexts){
+ elements.question.value=q;elements.language.value=lang;elements.find.listeners.click();
+ if(elements["bridge-choice"].value!==expected)throw Error("Wrong surfaced lens: "+q+" => "+elements["bridge-choice"].value);
+ if(elements["bridge-choice"].children.length!==8)throw Error("Lost an alternative lens: "+q);
+ const links=elements["bridge-detail"].children.filter(x=>x.tag==="a");
+ if(links.length!==1||!links[0].href.startsWith("https://master.ricette.jp/"))throw Error("No canonical parent: "+q);
+}
+elements.question.value="repair the leather strap on a camping lantern";elements.language.value="en";
+elements.find.listeners.click();
+if (elements["bridge-choice"].value !== "" || elements["bridge-choice"].children.length !== 8) 
+  throw Error("Noncontext prompt must keep all open choices without forced selection");
+if (!elements["bridge-hint"].textContent.includes("7経路")) throw Error("Noncontext options not advertised");
 console.log("PASS: production browser no-fit → 7 choices → chosen condition → Parent → AI prompt; direct match preserved");
 '''
     run = subprocess.run(["node", "-"], input=bootstrap + "\n" + js + "\n" + checks,

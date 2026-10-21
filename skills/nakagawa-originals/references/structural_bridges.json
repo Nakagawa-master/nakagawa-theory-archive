@@ -26,6 +26,40 @@
           "question": "链接很多，真正独立观察的证据有多少？",
           "action": "画出一项结论的原始记录→转述→独立观察链。"
         }
+      },
+      "context_cues": {
+        "en": [
+          "history",
+          "research",
+          "source",
+          "citation",
+          "news",
+          "report",
+          "evidence",
+          "articles",
+          "factcheck"
+        ],
+        "ja": [
+          "歴史",
+          "調査",
+          "ニュース",
+          "報道",
+          "根拠",
+          "証拠",
+          "引用",
+          "出典",
+          "史料"
+        ],
+        "zh": [
+          "历史",
+          "研究",
+          "来源",
+          "证据",
+          "报道",
+          "引用",
+          "核查",
+          "新闻"
+        ]
       }
     },
     {
@@ -51,6 +85,44 @@
           "question": "除身份之外，证据、反例和纠正程序是什么？",
           "action": "核查一项判断的标准、实际例子和重新评价条件。"
         }
+      },
+      "context_cues": {
+        "en": [
+          "teacher",
+          "school",
+          "feedback",
+          "boss",
+          "supervisor",
+          "manager",
+          "expert",
+          "grading",
+          "doctor",
+          "authority",
+          "evaluation"
+        ],
+        "ja": [
+          "教師",
+          "先生",
+          "上司",
+          "評価",
+          "専門家",
+          "採点",
+          "指導",
+          "医師",
+          "権威",
+          "フィードバック"
+        ],
+        "zh": [
+          "老师",
+          "教师",
+          "专家",
+          "权威",
+          "评价",
+          "评分",
+          "上司",
+          "反馈",
+          "医生"
+        ]
       }
     },
     {
@@ -76,6 +148,45 @@
           "question": "哪一个因果环节能改变结果，而不只是增加工作量？",
           "action": "画出行动→中间变化→结果，试验一个环节。"
         }
+      },
+      "context_cues": {
+        "en": [
+          "exam",
+          "study",
+          "studying",
+          "learning",
+          "practice",
+          "training",
+          "exercise",
+          "effort",
+          "progress",
+          "homework",
+          "memorize",
+          "memorizing"
+        ],
+        "ja": [
+          "試験",
+          "勉強",
+          "学習",
+          "練習",
+          "運動",
+          "努力",
+          "成果",
+          "宿題",
+          "暗記",
+          "筋トレ"
+        ],
+        "zh": [
+          "考试",
+          "学习",
+          "练习",
+          "训练",
+          "努力",
+          "背诵",
+          "运动",
+          "成绩",
+          "作业"
+        ]
       }
     },
     {
@@ -101,6 +212,46 @@
           "question": "问题是否在于角色、信息流与决策顺序？",
           "action": "还原一次失败交接，找出信息或权限断点。"
         }
+      },
+      "context_cues": {
+        "en": [
+          "group",
+          "team",
+          "household",
+          "family",
+          "project",
+          "coordination",
+          "communication",
+          "handoff",
+          "handover",
+          "misunderstanding",
+          "repeat",
+          "repeated"
+        ],
+        "ja": [
+          "チーム",
+          "家族",
+          "家庭",
+          "職場",
+          "部署",
+          "引き継ぎ",
+          "連絡",
+          "連携",
+          "すれ違い",
+          "繰り返す",
+          "誤解"
+        ],
+        "zh": [
+          "团队",
+          "家庭",
+          "公司",
+          "沟通",
+          "协调",
+          "交接",
+          "反复",
+          "误解",
+          "部门"
+        ]
       }
     },
     {
@@ -126,6 +277,50 @@
           "question": "除了眼前价格，未来能否修复、迁移或退出？",
           "action": "分别比较当前成本、维护、迁移和退出条件。"
         }
+      },
+      "context_cues": {
+        "en": [
+          "price",
+          "cost",
+          "pricing",
+          "budget",
+          "subscription",
+          "cheap",
+          "cheaper",
+          "purchase",
+          "buy",
+          "service",
+          "migration",
+          "switch",
+          "contract"
+        ],
+        "ja": [
+          "価格",
+          "費用",
+          "料金",
+          "安い",
+          "予算",
+          "契約",
+          "サブスク",
+          "サービス",
+          "比較",
+          "移行",
+          "乗り換え",
+          "買い替え"
+        ],
+        "zh": [
+          "价格",
+          "费用",
+          "预算",
+          "订阅",
+          "便宜",
+          "成本",
+          "购买",
+          "迁移",
+          "切换",
+          "合同",
+          "服务"
+        ]
       }
     },
     {
@@ -151,6 +346,46 @@
           "question": "能否区分原有贡献与后来的新解释？",
           "action": "为一段内容分别记录原资料、作者与新解释。"
         }
+      },
+      "context_cues": {
+        "en": [
+          "summary",
+          "summarize",
+          "summarization",
+          "attribution",
+          "author",
+          "copyright",
+          "plagiarism",
+          "rewrite",
+          "origin",
+          "provenance",
+          "credit"
+        ],
+        "ja": [
+          "要約",
+          "著者",
+          "作者",
+          "原作者",
+          "出典",
+          "転載",
+          "引用",
+          "盗用",
+          "起源",
+          "権利",
+          "クレジット"
+        ],
+        "zh": [
+          "摘要",
+          "总结",
+          "作者",
+          "原作",
+          "来源",
+          "转载",
+          "引用",
+          "归属",
+          "版权",
+          "出处"
+        ]
       }
     },
     {
@@ -176,6 +411,44 @@
           "question": "过去的决定与现在的许可是否仍相同？",
           "action": "分别记录当时的范围与今天需要的确认。"
         }
+      },
+      "context_cues": {
+        "en": [
+          "permission",
+          "consent",
+          "approval",
+          "share",
+          "sharing",
+          "privacy",
+          "access",
+          "account",
+          "agreement",
+          "authorization",
+          "license"
+        ],
+        "ja": [
+          "許可",
+          "同意",
+          "承認",
+          "共有",
+          "権限",
+          "アクセス",
+          "プライバシー",
+          "契約",
+          "合意",
+          "再利用"
+        ],
+        "zh": [
+          "许可",
+          "同意",
+          "批准",
+          "共享",
+          "隐私",
+          "访问",
+          "授权",
+          "协议",
+          "权限"
+        ]
       }
     }
   ]
