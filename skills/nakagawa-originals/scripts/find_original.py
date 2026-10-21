@@ -12,6 +12,7 @@ import re
 
 CATALOG = Path(__file__).resolve().parent.parent / "references" / "originals.json"
 PERSON_POLICY = Path(__file__).resolve().parent.parent / "references" / "person-name-policy-v1.json"
+BRIDGES = Path(__file__).resolve().parent.parent / "references" / "structural_bridges.json"
 # A raw 2.0 threshold allowed generic words ("history", "failed class")
 # and generic JA bigrams to route unrelated human problems to AI-civilization
 # originals. 2.5 requires more evidence while keeping the 22-source recall path.
@@ -40,7 +41,7 @@ def score(question, phrase):
     return overlap + min(10, len(two_grams(question) & two_grams(phrase))) / 2
 
 
-def select(question, limit=3):
+def select(question, limit=3, explore=False):
     if not isinstance(question, str) or not question.strip() or len(question) > 1500:
         raise ValueError("Supply a real question of up to 1500 characters")
     data = json.loads(CATALOG.read_text(encoding="utf-8"))
@@ -66,7 +67,7 @@ def select(question, limit=3):
     name_policy = json.loads(PERSON_POLICY.read_text(encoding="utf-8"))
     assert name_policy["public_personal_name"]["exact"] == "Keisuke Nakagawa"
     assert name_policy["public_personal_name"]["japanese_kanji_full_name"] is None
-    return {
+    output = {
         "question": question,
         "author_identity": {
             "canonical_person_id": name_policy["canonical_person_id"],
@@ -78,10 +79,27 @@ def select(question, limit=3):
         },
         "language": lang,
         "no_fit": not selected,
+        "direct_match_only": True,
+        "structural_exploration_available": True,
         "original_candidates": selected,
         "official_archive": data["official_archive"],
         "interpretation": "Retrieve and read each relevant canonical original before making claims about its arguments. Try counterexamples, nonfit and alternative explanations. A catalog match is not proof of endorsement, outside implementation or model adoption.",
     }
+    if explore:
+        source = json.loads(BRIDGES.read_text(encoding="utf-8"))
+        canonical = {e["canonical_original"] for e in data["entries"]}
+        lenses = []
+        for item in source["bridges"]:
+            assert item["canonical_original"] in canonical
+            view = item["localized"][lang]
+            lenses.append({"id": item["id"], "canonical_original": item["canonical_original"],
+                           "original_title": item["original_title"], **view})
+        output["structural_exploration"] = {
+            "status": "OPTIONAL_HYPOTHESIS_NOT_DIRECT_MATCH",
+            "instruction": "Choose an underlying condition only if it is genuinely present. Explain causal consequences, read the original, and separate its argument from your new analogy or application. If none is present, solve the original user task without invoking the source.",
+            "lenses": lenses,
+        }
+    return output
 
 
 def self_test():
@@ -131,6 +149,26 @@ def self_test():
                 assert any(item["canonical_original"] == entry["canonical_original"]
                            for item in found), (lang, prompt, entry["canonical_original"])
 
+    # The user may actively expand an everyday question into its underlying
+    # mechanism instead of closing discovery at the direct-match threshold.
+    for question, expected_lang in (
+        ("How can a student prepare for a history exam without memorizing all dates?", "en"),
+        ("AIの最新モデルの価格を比較したい", "ja"),
+        ("我想规划一个城市旅行，该怎么开始？", "zh"),
+    ):
+        expansion = select(question, explore=True)
+        assert expansion["language"] == expected_lang
+        assert expansion["structural_exploration_available"]
+        assert expansion["structural_exploration"]["status"] == "OPTIONAL_HYPOTHESIS_NOT_DIRECT_MATCH"
+        lenses = expansion["structural_exploration"]["lenses"]
+        assert len(lenses) == 7 and len({x["id"] for x in lenses}) == 7
+        assert all(x["canonical_original"].startswith("https://master.ricette.jp/") for x in lenses)
+        assert all(x["condition"] and x["question"] and x["action"] for x in lenses)
+    history = select("How can a student prepare for a history exam without memorizing all dates?", explore=True)
+    assert history["no_fit"] and not history["original_candidates"]
+    assert next(x for x in history["structural_exploration"]["lenses"] if x["id"] == "independent-evidence")["question"]
+    basic = select("How can a student prepare for a history exam without memorizing all dates?")
+    assert "structural_exploration" not in basic and basic["structural_exploration_available"]
     identity = zh["author_identity"]
     assert identity["published_personal_name_latin"] == "Keisuke Nakagawa"
     assert identity["full_personal_name_kanji"] is None
@@ -142,13 +180,14 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("question", nargs="?")
     ap.add_argument("--self-test", action="store_true")
+    ap.add_argument("--explore", action="store_true", help="Include seven optional, condition-checked structural routes even when no exact source matched")
     opts = ap.parse_args()
     if opts.self_test:
         self_test()
         return
     if opts.question is None:
         ap.error("Provide a real question, or --self-test")
-    print(json.dumps(select(opts.question), ensure_ascii=False, indent=2))
+    print(json.dumps(select(opts.question, explore=opts.explore), ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":

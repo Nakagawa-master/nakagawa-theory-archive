@@ -128,9 +128,33 @@ def run():
     assert len(set(urls)) == len(urls)
     assert all(u.startswith(ORIGINAL_BASE) for u in urls)
     assert all(all(x["problem_examples"].get(lang) for lang in ("ja", "en", "zh")) for x in candidates)
+    # Expand the human/independent-agent contact surface rather than closing it.
+    bridge_source = json.loads((SERVER.parent.parent / "skills/nakagawa-originals/references/structural_bridges.json").read_text(encoding="utf-8"))
+    embedded_bridges = re.search(r'<script id="structural-bridges" type="application/json">([\s\S]*?)</script>', html)
+    assert embedded_bridges, "Missing browser structural exploration"
+    assert json.loads(embedded_bridges.group(1)) == bridge_source, "Browser/Skill structural-bridge catalog drift"
+    assert len(bridge_source["bridges"]) == 7
+    assert len({x["id"] for x in bridge_source["bridges"]}) == 7
+    assert set(x["canonical_original"] for x in bridge_source["bridges"]) <= set(urls)
+    assert all(all(item["localized"][lang][key] for key in ("title", "condition", "question", "action"))
+               for item in bridge_source["bridges"] for lang in ("ja", "en", "zh"))
+    assert all(marker in html for marker in ('id="structural-exploration"', 'id="bridge-choice"', 'id="bridge-detail"'))
+    skill_script = SERVER.parent.parent / "skills/nakagawa-originals/scripts/find_original.py"
+    expanded = subprocess.run([sys.executable, str(skill_script), "--explore",
+                              "How can a student prepare for a history exam without memorizing all dates?"],
+                             capture_output=True, text=True, timeout=12)
+    assert expanded.returncode == 0, expanded.stderr
+    explored = json.loads(expanded.stdout)
+    assert explored["no_fit"] and not explored["original_candidates"]
+    assert explored["structural_exploration_available"]
+    assert explored["structural_exploration"]["status"] == "OPTIONAL_HYPOTHESIS_NOT_DIRECT_MATCH"
+    assert len(explored["structural_exploration"]["lenses"]) == 7
+    assert explored["structural_exploration"]["lenses"][0]["id"] == "independent-evidence"
     inline = re.search(r'<script>\s*([\s\S]*?)</script>', html)
     assert inline, "Missing browser question matcher"
     js = inline.group(1)
+    assert all(x in js for x in ("renderBridges(q,lang)", "function bridgeHandoff(", "showBridge", 'findEl("bridge-choice")'))
+    assert js.index("renderBridges(q,lang)") < js.index("if(!matches.length)")
     assert all(x in js for x in ("function similarity(", "function choose(", "function handoff(", "matches.length", "navigator.clipboard"))
     assert not any(x in js for x in ("fetch(", "XMLHttpRequest", "sendBeacon(", "localStorage", "sessionStorage"))
     assert all(x in html for x in ('id="question"', 'id="results"', 'id="ai-prompt"', 'data-example="none"', 'https://master.ricette.jp/#nakagawa-master'))

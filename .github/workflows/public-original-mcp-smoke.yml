@@ -4,6 +4,7 @@ on:
     paths:
       - 'machine-discovery/nakagawa-theory-mcp.py'
       - 'machine-discovery/test_nakagawa_theory_mcp.py'
+      - 'machine-discovery/test_structural_bridges_ui.py'
       - 'machine-discovery/originals-browser-finder.html'
       - 'machine-discovery/quick-route-index-v1.json'
       - 'machine-discovery/problem-to-theory-origin-index-v1.json'
@@ -25,6 +26,7 @@ on:
     paths:
       - 'machine-discovery/nakagawa-theory-mcp.py'
       - 'machine-discovery/test_nakagawa_theory_mcp.py'
+      - 'machine-discovery/test_structural_bridges_ui.py'
       - 'machine-discovery/originals-browser-finder.html'
       - 'machine-discovery/quick-route-index-v1.json'
       - 'machine-discovery/problem-to-theory-origin-index-v1.json'
@@ -53,6 +55,8 @@ jobs:
         run: python3 machine-discovery/nakagawa-theory-mcp.py --self-test
       - name: Independent client subprocess JSON-RPC integration
         run: python3 machine-discovery/test_nakagawa_theory_mcp.py
+      - name: Real browser DOM conditional structural exploration in JA EN ZH
+        run: python3 machine-discovery/test_structural_bridges_ui.py
       - name: Portable standalone Agent Skill search and nonfit
         run: python3 skills/nakagawa-originals/scripts/find_original.py --self-test
       - name: Verify public author name and unpublished kanji null across all AI entries
