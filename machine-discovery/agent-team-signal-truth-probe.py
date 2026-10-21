@@ -231,7 +231,7 @@ def main():
         print(f"SELF_TEST_PASS: {len(CASES)} base + {len(ORDER_CASES)} host-order synthetic cases; no external runtime executed")
         return 0
     if args.sample:
-        print(json.dumps({"examples": [{"name": n, "input": x, "expected": y} for n, x, y in CASES[:3] + CASES[6:9] + CASES[10:15]]}, ensure_ascii=False, indent=2))
+        print(json.dumps({"examples": [{"name": n, "input": x, "expected": y} for n, x, y in CASES[:3] + CASES[6:9] + CASES[10:15] + ORDER_CASES[:3] + ORDER_CASES[5:6]]}, ensure_ascii=False, indent=2))
         return 0
     try:
         data = json.loads(args.input.read_text(encoding="utf-8"))
@@ -240,7 +240,7 @@ def main():
         return 2
     result = classify(data)
     print(json.dumps(result, ensure_ascii=False, indent=2))
-    if result["verdict"] in ("INVALID", "UNVERIFIED", "AMBIGUOUS", "UNDETERMINED", "ORDER_UNVERIFIED", "INCONCLUSIVE"):
+    if result["verdict"] in ("INVALID", "UNVERIFIED", "AMBIGUOUS", "UNDETERMINED", "ORDER_UNVERIFIED", "INCONCLUSIVE", "HOST_OVERTAKE_OBSERVED"):
         return 2
     if result["verdict"] in ("MISLEADING", "LOSS_RISK", "FALSE_IDENTITY", "MISSING_IDENTITY", "WRONG_EPOCH_CANCELLED", "WRONG_NAME_CANCELLED", "MISSED_EXPECTED_CANCEL", "STALE_EXIT_CANCELLED"):
         return 1
