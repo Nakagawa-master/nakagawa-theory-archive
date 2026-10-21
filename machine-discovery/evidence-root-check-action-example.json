@@ -1,0 +1,28 @@
+{
+  "claims": [
+    {
+      "id": "vendor-and-independent-lab",
+      "independent_confirmation_claimed": true,
+      "sources": [
+        {
+          "url": "https://example.org/vendor",
+          "root_id": "vendor",
+          "relation": "primary",
+          "stance": "supports"
+        },
+        {
+          "url": "https://example.org/lab",
+          "root_id": "lab",
+          "relation": "independent_observation",
+          "stance": "supports"
+        },
+        {
+          "url": "https://example.org/news-copy",
+          "root_id": "vendor",
+          "relation": "derived",
+          "stance": "supports"
+        }
+      ]
+    }
+  ]
+}
