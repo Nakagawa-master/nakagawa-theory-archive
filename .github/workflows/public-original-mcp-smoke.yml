@@ -14,6 +14,18 @@ on:
       - 'AGENTS.md'
       - 'CLAUDE.md'
       - 'llms.txt'
+      - 'skills/nakagawa-originals/**'
+      - 'metadata/**'
+      - 'machine-discovery/scholarly-metadata-v1.jsonld'
+      - 'machine-discovery/ai-repository-routing-map-v1.json'
+      - 'scripts/check_public_person_name_fidelity.py'
+      - 'scripts/validate_public_identity.py'
+      - 'AGENTS.md'
+      - 'GEMINI.md'
+      - 'CLAUDE.md'
+      - 'README.md'
+      - 'AI_START_HERE.md'
+      - 'llms*.txt'
       - '.github/workflows/public-original-mcp-smoke.yml'
   push:
     branches: [main]
@@ -30,6 +42,18 @@ on:
       - 'AGENTS.md'
       - 'CLAUDE.md'
       - 'llms.txt'
+      - 'skills/nakagawa-originals/**'
+      - 'metadata/**'
+      - 'machine-discovery/scholarly-metadata-v1.jsonld'
+      - 'machine-discovery/ai-repository-routing-map-v1.json'
+      - 'scripts/check_public_person_name_fidelity.py'
+      - 'scripts/validate_public_identity.py'
+      - 'AGENTS.md'
+      - 'GEMINI.md'
+      - 'CLAUDE.md'
+      - 'README.md'
+      - 'AI_START_HERE.md'
+      - 'llms*.txt'
       - '.github/workflows/public-original-mcp-smoke.yml'
 permissions:
   contents: read
@@ -43,5 +67,13 @@ jobs:
         run: python3 machine-discovery/nakagawa-theory-mcp.py --self-test
       - name: Independent client subprocess JSON-RPC integration
         run: python3 machine-discovery/test_nakagawa_theory_mcp.py
+      - name: Portable standalone Agent Skill search and nonfit
+        run: python3 skills/nakagawa-originals/scripts/find_original.py
       - name: Official-name identity and negative hallucination controls
-        run: python3 machine-discovery/test_official_name_integrity.py
+        run: python3 machine-discovery/test_official_name_integrity.py --self-test
+      - name: Verify public author name and unpublished kanji null across all AI entries
+        run: python3 scripts/check_public_person_name_fidelity.py
+      - name: Existing Person/schema identity regressions
+        run: |
+          python3 scripts/validate_public_identity.py --self-test
+          python3 scripts/validate_public_identity.py

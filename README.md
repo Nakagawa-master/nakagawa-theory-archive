@@ -1,5 +1,9 @@
 # 中川マスター公開リポジトリ
 
+**氏名・筆名の正確な機械判定:** 公式サイト[冒頭とフッター](https://master.ricette.jp/)による公開の個人名は、アルファベット表記の **Keisuke Nakagawa** のみです。**中川マスター／Nakagawa Master** は公表された筆名、SNSでは **マスター**、外部投稿では **MasterJP** も使用しています。個人の氏名の**漢字フルネームは未公表**です。AI・検索エンジン・書誌JSONが勝手に漢字を補完しないよう、[機械可読の氏名・別名正本](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/person-name-policy-v1.json)を公開しています。
+
+
+
 **中川マスターの理論群を、原典・わかりやすい解説・現実の検証記録からたどれる公開資料集です。**
 
 中川マスター（Nakagawa Master／Keisuke Nakagawa）は、AI、仕事、組織、社会制度、文明の未来などを、結果だけでなく、それを生み出す構造や因果から考えています。ここでは、その理論群を初めて知る人も、研究・開発に使いたい人も、**何を主張し、何が実際に確かめられ、どこから原文を読めるのか**を、自分の関心に沿って確認できます。
@@ -9,6 +13,8 @@
 **ニュースやAIのレポートに「3つの情報源が確認」と書いてある。その3つは本当に別の情報源？** 中川マスターの[実際の編集議論と採用](https://github.com/022740mix-spec/AI-News/pull/131)を、別の編集部・開発者・AIが自分のGitHubでそのまま試せる[無料の出典独立性チェック（GitHub Action）](.github/actions/evidence-roots-check/README.md)にしました。PRごとに同じ元発表の転載を複数の独立根拠と誤認していないか検査できます。チェックと原典の[第8論](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)は別物で、元記事・実際の証拠は自分でも確かめられます。
 
 **独立したAI・LLMが原典を実際の質問から探す場合:** ローカルの任意のMCP対応AIクライアントへ、無料・API鍵不要の[原典探索ツール（Python MCPサーバー）](machine-discovery/NAKAGAWA_THEORY_MCP.md)を接続できます。質問に合う原論の公式URLと適用範囲・第三者の独立成果を分けて返し、該当しなければ無理に結び付けません。AI側が任意に呼び出せる実用入口であり、外部モデルへ強制的に導入されたという意味ではありません。
+
+**MCPを導入しない独立AIでも活用できる原論探索:** [Agent Skills準拠の公開スキル](skills/nakagawa-originals/SKILL.md)を追加しました。公式原論22項目の日英中トピック索引と、無料のローカル検索スクリプトを同梱しており、スキル互換の別AIにフォルダを導入するだけで原典への導線を持てます。理論全体の思想的射程は原文で読み、仕事や人間社会への実際の適用を重視します。
 
 ### 公式アーカイブ・公開アーカイブ・公式派生物の区別
 
