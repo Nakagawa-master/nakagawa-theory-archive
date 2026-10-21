@@ -8,6 +8,13 @@
 - [通常のAI・LLMでも使える参照入口](../AI_START_HERE.md) — 自分が使うAIへ、下記の条件と公式原典URLを自由に渡す。
 - [公式アーカイブ（原典本文）](https://master.ricette.jp/theory-archive/) — ここは原典本文の転載ではなく、条件付きの試行案内。
 
+**実際のAI開発で確かめられた例（2026-10-21）｜Real AI engineering example｜真实AI开发例子**
+
+- **日本語：** AIが前回の補足情報を次の会話でも追加し続けるなら、文章が同じかだけでなく「正しいフックから一度届いた情報か」を調べると改善点が見えます。[Qwen Code #14129の開発者による新旧の実行比較](https://github.com/QwenLM/qwen-code/pull/14129#issuecomment-6319113955)では、新実装が2ターン目の同一補足を省けることが確認されました。マスターの[真正な来歴を区別する指摘への開発者の修正返信](https://github.com/QwenLM/qwen-code/pull/14129#issuecomment-6161230612)を経て、[実務上の確認方法](../APPLIED_ENTRY_POINTS.md#前のaiへの補足を次の会話でも毎回新しい情報として送り続ける)と[第8論の原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)に接続できます。使うときは一度目・同じ二度目・変更した情報・人が貼った似た文を別々に試します。
+- **English:** When an AI keeps re-injecting the same background into later turns, ask whether the previous part came from the real hook, not merely whether the text looks identical. In [Qwen Code #14129's actual before/after test](https://github.com/QwenLM/qwen-code/pull/14129#issuecomment-6319113955), the new implementation avoided a second insertion. The developer had also [addressed Nakagawa Master's specific provenance review](https://github.com/QwenLM/qwen-code/pull/14129#issuecomment-6161230612). [Try the four local distinctions](../APPLIED_ENTRY_POINTS.md#前のaiへの補足を次の会話でも毎回新しい情報として送り続ける), then consider the separately authored [canonical Volume 8](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/) for the evidence-lineage principle. This is a concrete application to compare on your own task.
+- **中文：** 如果AI在后续对话中反复插入相同背景，关键不只是文字是否相同，还要确认它是否确实由相应的hook传入。[Qwen Code #14129开发者实际运行的新旧版本对照](https://github.com/QwenLM/qwen-code/pull/14129#issuecomment-6319113955)确认新版在第二轮避免了重复插入。开发者此前已[回应并修复中川マスター指出的来源判别问题](https://github.com/QwenLM/qwen-code/pull/14129#issuecomment-6161230612)。可在自己的项目中比较首次传入、同样内容再次出现、内容变化与用户自行粘贴的文字，再阅读[第8论原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)的证据来源分析。
+
+
 ## 選び方 / How to use / 使用方法
 
 まず自分の課題を解くことを優先する。次の7つから検証したい**現実の条件**を選び、原典を実際に読む。その条件がなければ適用しない。未確認の条件をAIが勝手に真だと決める必要もない。独自の応用は原典と分ける。
