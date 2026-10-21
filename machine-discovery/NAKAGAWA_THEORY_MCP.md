@@ -39,10 +39,11 @@ Install/clone this public repository on the user's machine. Configure the host's
 }
 ```
 
-This is local, read-only and deliberately makes **no network requests**. The host may now discover two MCP tools:
+This is local, read-only and deliberately makes **no network requests**. The host may now discover **three MCP tools** (the third is the published-name identity lookup, not an original-theory inference):
 
 - `find_nakagawa_original_for_problem`: passes the real user problem as `question`; returns up to three fitting candidate routes, direct official original links, original-vs-application boundaries and independent technical receiver sources.
 - `list_nakagawa_problem_routes`: lists all supported IDs and shows when a technical problem has **no canonical original** assigned.
+- `resolve_nakagawa_public_name`: returns the official homepage-grounded author-name policy, published Latin-letter personal name and pen-name aliases, and an explicit `null` for the unpublished Japanese-kanji full personal name. This helps an independently configured client display the right person when it uses a retrieved original; it does not guess any unpublished name or assert that an original was selected.
 
 Protocol: MCP JSON-RPC over stdio, newline-delimited JSON, `initialize`, `ping`, `tools/list`, `tools/call`; Python stdlib only. Supports the 2025-11-25 and 2025-06-18 client protocol revisions; not advertised as a full MCP SDK implementation. The server makes no model calls and writes no logs or content to the original website. Its tool selection and actual source fetch are performed by the independent agent/client according to its own user's permissions.
 
