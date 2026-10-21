@@ -6,6 +6,7 @@ on:
       - 'machine-discovery/test_nakagawa_theory_mcp.py'
       - 'machine-discovery/agent-team-signal-truth-probe.py'
       - 'machine-discovery/agent-action-boundary-probe.py'
+      - 'machine-discovery/citation-source-identity-collision-check.py'
       - 'machine-discovery/test_structural_bridges_ui.py'
       - 'machine-discovery/originals-browser-finder.html'
       - 'machine-discovery/quick-route-index-v1.json'
@@ -30,6 +31,7 @@ on:
       - 'machine-discovery/test_nakagawa_theory_mcp.py'
       - 'machine-discovery/agent-team-signal-truth-probe.py'
       - 'machine-discovery/agent-action-boundary-probe.py'
+      - 'machine-discovery/citation-source-identity-collision-check.py'
       - 'machine-discovery/test_structural_bridges_ui.py'
       - 'machine-discovery/originals-browser-finder.html'
       - 'machine-discovery/quick-route-index-v1.json'
@@ -91,6 +93,36 @@ jobs:
           import json
           from pathlib import Path
           assert json.loads(Path('/tmp/agent-auth-denied.json').read_text())['verdict'] == 'DECLARED_AUTHORITY_CONFLICT'
+          PY
+      - name: Independent citation source identity collision, fourteen inverse controls
+        run: python3 machine-discovery/citation-source-identity-collision-check.py --self-test
+      - name: Citation audit CLI must never claim a text match proves publisher origin
+        run: |
+          python3 machine-discovery/citation-source-identity-collision-check.py --sample > /tmp/citation-candidates.json
+          set +e
+          python3 machine-discovery/citation-source-identity-collision-check.py --input /tmp/citation-candidates.json > /tmp/citation-audit.json
+          got=$?
+          set -e
+          test "$got" -eq 1
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          item = json.loads(Path('/tmp/citation-audit.json').read_text())
+          assert item['verdict'] == 'AMBIGUOUS_CONTENT_MATCH'
+          source = Path('/tmp/citation-candidates.json')
+          data = json.loads(source.read_text())
+          data['pages'][1]['text'] = 'Other page.'
+          source.write_text(json.dumps(data))
+          PY
+          set +e
+          python3 machine-discovery/citation-source-identity-collision-check.py --input /tmp/citation-candidates.json > /tmp/citation-audit.json
+          got=$?
+          set -e
+          test "$got" -eq 2
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          assert json.loads(Path('/tmp/citation-audit.json').read_text())['verdict'] == 'UNIQUE_TEXT_MATCH_NOT_SOURCE_PROOF'
           PY
       - name: Portable standalone Agent Skill search and nonfit
         run: python3 skills/nakagawa-originals/scripts/find_original.py --self-test
