@@ -75,7 +75,7 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:26px}
 </section>
 <section class="panel">
 <h2>この検索の特徴</h2>
-<p>原典候補は、日本語・英語・中国語の実際の問題例との一致から提示しています。短い質問や表記違いでは候補を取りこぼす場合があり、候補に挙がっても、その理論が正しい・問題に適合することまで自動判定するわけではありません。</p>
+<p>原典候補は、日本語・英語・中国語の実際の問題例との一致から提示しています。日常の無関係な問いに偶然似た語があっても候補を無理に出さない設定です。短い質問や表記違いでは候補を取りこぼす場合があり、候補に挙がっても、その理論が正しい・問題に適合することまで自動判定するわけではありません。</p>
 <p>合う理論が見つからない場合は「一致なし」と表示します。その場合も、あなたの問題を無理に理論へ結び付ける必要はありません。原典の思想、独自の応用、第三者の実装はそれぞれ区別して確かめてください。</p>
 <p class="small"><a href="https://master.ricette.jp/theory-archive/">中川マスター公式アーカイブで全原典を読む</a> ／ <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/tree/main/skills/nakagawa-originals">外部Agent向けの導入型Skill</a> ／ <a href="https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/NAKAGAWA_THEORY_MCP.md">MCP対応AI向けツール</a></p>
 </section>
@@ -112,7 +112,9 @@ const result=[];
 for(const entry of catalog){
 const phrases=entry.problem_examples[lang]||[];
 const score=Math.max(0,...phrases.map(p=>similarity(q,p)));
-if(score>=2)result.push({entry,score});
+// Two generic English words or four common CJK bigrams alone should
+// not advertise an unrelated original as the answer to a real-life task.
+if(score>=2.5)result.push({entry,score});
 }
 result.sort((a,b)=>b.score-a.score||a.entry.canonical_original.localeCompare(b.entry.canonical_original));
 return result.slice(0,3);

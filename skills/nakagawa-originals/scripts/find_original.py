@@ -12,6 +12,11 @@ import re
 
 CATALOG = Path(__file__).resolve().parent.parent / "references" / "originals.json"
 PERSON_POLICY = Path(__file__).resolve().parent.parent / "references" / "person-name-policy-v1.json"
+# A raw 2.0 threshold allowed generic words ("history", "failed class")
+# and generic JA bigrams to route unrelated human problems to AI-civilization
+# originals. 2.5 requires more evidence while keeping the 22-source recall path.
+MIN_CANDIDATE_SCORE = 2.5
+
 STOP = {"a", "about", "after", "ai", "agent", "an", "and", "are",
         "at", "can", "do", "does", "for", "from", "how", "in",
         "is", "it", "my", "of", "on", "or", "our", "the",
@@ -45,7 +50,7 @@ def select(question, limit=3):
     for item in data["entries"]:
         phrases = item.get("problem_examples", {}).get(lang, [])
         confidence = max((score(question, p) for p in phrases), default=0)
-        if confidence < 2:
+        if confidence < MIN_CANDIDATE_SCORE:
             continue
         matches.append((confidence, item))
     matches.sort(key=lambda candidate: (-candidate[0], candidate[1]["canonical_original"]))
@@ -103,6 +108,29 @@ def self_test():
     assert any("structure-license" in x["canonical_original"] for x in ja["original_candidates"])
     unrelated = select("repair the leather strap on a camping lantern")
     assert unrelated["no_fit"] and not unrelated["original_candidates"]
+    # Hard negative controls gathered from real, unrelated user-wording.
+    # Before the 2.5 gate, these each falsely returned a canonical original
+    # solely because unrelated contexts shared 2 generic words / JA grams.
+    for question in (
+        "How can a student prepare for a history exam without memorizing all dates?",
+        "How can I give a teacher constructive feedback after a failed class?",
+        "AIの最新モデルの価格を比較したい",
+        "同じ場所で毎日同じ時間に運動しても問題はない？",
+    ):
+        wrong = select(question)
+        assert wrong["no_fit"] and not wrong["original_candidates"], (question, wrong)
+    # Positive independent-reader evidence-root wording stays discoverable.
+    check = select("How can we distinguish three syndicated AI articles from independent evidence?")
+    assert any("epistemic-integrity" in item["canonical_original"] for item in check["original_candidates"])
+    # The complete public 22-entry catalog still works through the portable
+    # Skill: all canonical source-authored JA/EN/ZH problem prompts must match.
+    for entry in data["entries"]:
+        for lang in ("en", "ja", "zh"):
+            for prompt in entry["problem_examples"][lang]:
+                found = select(prompt)["original_candidates"]
+                assert any(item["canonical_original"] == entry["canonical_original"]
+                           for item in found), (lang, prompt, entry["canonical_original"])
+
     identity = zh["author_identity"]
     assert identity["published_personal_name_latin"] == "Keisuke Nakagawa"
     assert identity["full_personal_name_kanji"] is None

@@ -138,6 +138,48 @@ def run():
         syntax = subprocess.run([shutil.which("node"), "--check", "-"], input=js,
                                 capture_output=True, text=True, timeout=12)
         assert syntax.returncode == 0, syntax.stderr
+    # Actually execute browser search logic, not only its JavaScript parser.
+    # Source extraction deliberately excludes DOM/event registration, so a
+    # plain Node CLI can exercise the same algorithm as an unrelated browser.
+    assert "function asciiTerms(" in js and "function element(" in js
+    matcher_js = js[js.index("function asciiTerms("):js.index("function element(")]
+    assert "if(score>=2.5)" in matcher_js, "browser/Skill nonfit threshold drift"
+    if shutil.which("node"):
+        scenario_js = (
+            "const catalog = " + json.dumps(candidates, ensure_ascii=False) + ";\n"
+            + matcher_js + "\n"
+            + r'''
+const negative = [
+  ["How can a student prepare for a history exam without memorizing all dates?", "en"],
+  ["How can I give a teacher constructive feedback after a failed class?", "en"],
+  ["AIの最新モデルの価格を比較したい", "ja"],
+  ["同じ場所で毎日同じ時間に運動しても問題はない？", "ja"]
+];
+for (const [q, lang] of negative) {
+  if (choose(q, lang).length !== 0) throw Error("False original route: " + q);
+}
+let covered = 0;
+for (const entry of catalog) {
+  for (const lang of ["en", "ja", "zh"]) {
+    for (const q of entry.problem_examples[lang]) {
+      const candidates = choose(q, lang);
+      if (!candidates.some(hit => hit.entry.canonical_original === entry.canonical_original)) {
+        throw Error("Original source lost: " + lang + " / " + q);
+      }
+      covered++;
+    }
+  }
+}
+if (covered !== 198) throw Error("Catalog coverage drift: " + covered);
+console.log("PASS: browser real algorithm / 4 negatives / " + covered + " positives");
+'''
+        )
+        functional = subprocess.run([shutil.which("node"), "-"],
+                                    input=scenario_js, capture_output=True,
+                                    text=True, timeout=12)
+        assert functional.returncode == 0, functional.stderr
+        assert "198 positives" in functional.stdout
+    print("PASS: browser search real score cross-check, 198 known positive routes, 4 unrelated negatives")
     print("PASS: zero-install browser originals 22/22 canonical parity, JA/EN/ZH, nonfit UI, no telemetry, JS syntax")
     # Portable, general-purpose source-independence Skill must remain a
     # byte-identical, zero-network package of the public root checker.
