@@ -52,6 +52,13 @@ def run():
             "name": "find_nakagawa_original_for_problem",
             "arguments": {"question": "如果AI保留了思想内容，却丢失原作者或因果起源，会发生什么？"},
         }),
+        req(11, "tools/call", {
+            "name": "get_nakagawa_public_name_identity", "arguments": {},
+        }),
+        req(12, "tools/call", {
+            "name": "find_nakagawa_original_for_problem",
+            "arguments": {"question": "中川マスターの本名の漢字は何ですか？"},
+        }),
     ]
     p = subprocess.run(
         [sys.executable, str(SERVER)],
@@ -60,12 +67,12 @@ def run():
     )
     assert not p.stderr, p.stderr
     frames = [json.loads(x) for x in p.stdout.splitlines() if x.strip()]
-    assert len(frames) == 10, f"Expected ten responses (one notification), got {len(frames)}"
+    assert len(frames) == 12, f"Expected twelve responses (one notification), got {len(frames)}"
     results = {f["id"]: f for f in frames}
-    assert set(results) == set(range(1, 11))
+    assert set(results) == set(range(1, 13))
     assert all(f["jsonrpc"] == "2.0" for f in frames)
     assert results[1]["result"]["protocolVersion"] == "2025-11-25"
-    assert len(results[2]["result"]["tools"]) == 2
+    assert len(results[2]["result"]["tools"]) == 3
 
     def unpack(index):
         content = results[index]["result"]["content"]
@@ -96,7 +103,20 @@ def run():
         "structural-origin-defense-permanent-signature" in item["canonical_original"]
         for item in zh["matching_routes"] if item["canonical_original"]
     )
-    print("PASS: real subprocess MCP stdio; init/list/matching/nonfit/ja/zh/routes/invalid/unknown/ping")
+    identity = unpack(11)
+    assert identity["person_id"] == "https://master.ricette.jp/#nakagawa-master"
+    assert identity["official_pen_name_ja"] == "中川マスター"
+    assert identity["verified_person_name_latin"] == "Keisuke Nakagawa"
+    assert identity["verified_full_name_kanji"] is None
+    assert identity["kanji_name_publication_status"] == "NOT_PUBLISHED"
+    name_question = unpack(12)
+    assert name_question["person_identity"]["verified_full_name_kanji"] is None
+    assert name_question["person_identity"]["kanji_name_publication_status"] == "NOT_PUBLISHED"
+    # The source tool must never answer an unpublished-kanji request with an invented name.
+    for item in name_question["matching_routes"]:
+        assert not item.get("official_full_name_kanji")
+    print("PASS: real subprocess MCP stdio; identity null/disambiguation, ja/zh source routing, nonfit, protocol")
+
 
 
 if __name__ == "__main__":
