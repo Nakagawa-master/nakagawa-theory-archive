@@ -21,7 +21,7 @@
 npx skills add Nakagawa-master/nakagawa-theory-archive --list
 # 使用するAIエージェントの環境を選んで導入
 npx skills add Nakagawa-master/nakagawa-theory-archive --skill nakagawa-originals
-# CLIに対応した環境で、一時利用する別経路（導入の代わり）
+# CLIから一時利用用のプロンプトを生成（常設インストールなし）
 npx skills use Nakagawa-master/nakagawa-theory-archive@nakagawa-originals
 ```
 
