@@ -391,12 +391,23 @@ def run():
             "const catalog = " + json.dumps(candidates, ensure_ascii=False) + ";\n"
             + matcher_js + "\n"
             + r'''
-const positiveHan = chooseAutoHanOnly("組織摩擦役割情報");
+const positiveHan = chooseAutoMultiscript("組織摩擦役割情報");
 if (!positiveHan.some(x => x.entry.canonical_original ===
   "https://master.ricette.jp/society/nakagawa-master-origin-of-structural-friction/" && x.candidateLanguage === "ja")) {
   throw Error("Japanese Han-only original was lost to Chinese auto detection");
 }
-if (chooseAutoHanOnly("皮革灯笼").length) throw Error("Unrelated Han-only false source");
+if (chooseAutoMultiscript("皮革灯笼").length) throw Error("Unrelated Han-only false source");
+for (const suffix of [" について教えて", " 我想知道"]) {
+  const q = "How can AI systems remain auditable and correctable without losing provenance?" + suffix;
+  const matches = chooseAutoMultiscript(q);
+  if (!matches.some(hit => hit.entry.canonical_original ===
+    "https://master.ricette.jp/structure-license/" && hit.candidateLanguage === "en")) {
+    throw Error("Mixed English+CJK first-contact question lost matching original");
+  }
+}
+if (chooseAutoMultiscript("repair the leather strap on a camping lantern 作業").length) {
+  throw Error("Mixed-script unrelated question gained a false original");
+}
 const negative = [
   ["How can a student prepare for a history exam without memorizing all dates?", "en"],
   ["How can I give a teacher constructive feedback after a failed class?", "en"],
