@@ -70,6 +70,29 @@ def run():
     )
     assert json.loads(nofit_han.stdout)["no_fit"], "Unrelated Han-only text must not force an original"
 
+    # Real multilingual human questions may preserve their English core and
+    # append a short Japanese/Chinese note. A single-script classifier used
+    # to hide the exact canonical source and often report no_fit.
+    mixed_english = "How can AI systems remain auditable and correctable without losing provenance?"
+    expected_mixed_parent = "https://master.ricette.jp/structure-license/"
+    for mixed_query in (mixed_english + " について教えて", mixed_english + " 我想知道"):
+        for script, args, field in (
+            (SERVER, ["--query", mixed_query, "--explore"], "matching_routes"),
+            (SERVER.parent.parent / "skills/nakagawa-originals/scripts/find_original.py",
+             [mixed_query, "--explore"], "original_candidates"),
+        ):
+            completed = subprocess.run([sys.executable, str(script), *args],
+                                       capture_output=True, text=True, timeout=12, check=True)
+            output = json.loads(completed.stdout)
+            assert not output["no_fit"], output
+            assert any(x["canonical_original"] == expected_mixed_parent
+                       for x in output[field]), output
+            if script == SERVER:
+                assert output["structural_exploration"]["language"] == "en", output
+            else:
+                assert output["language"] == "en", output
+    print("PASS: mixed English + Japanese/Chinese question retains canonical English original")
+
     # Exercise the same line-oriented stdin/stdout protocol an actual MCP client uses.
     messages = [
         req(1, "initialize", {"protocolVersion": "2025-11-25", "capabilities": {}, "clientInfo": {"name": "portable-wire-test", "version": "1"}}),
