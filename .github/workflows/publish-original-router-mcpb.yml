@@ -60,10 +60,22 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           test -s dist/nakagawa-original-router-1.1.0.mcpb
-          gh release create mcp-router-v1.1.0 dist/nakagawa-original-router-1.1.0.mcpb \
-            --target "$GITHUB_SHA" \
-            --title "Nakagawa Original-Theory Router MCP Bundle v1.1.0" \
-            --notes "Free local read-only Python MCP source router. Supports 2026-07-28 and legacy 2025 stdio, 22 canonical original pointers, seven optional JA/EN/ZH conditional lenses and genuine nonfit. Requires independently installed Python. Author: Nakagawa Master. Source and CC BY-NC-ND-4.0 rights notice included."
+          if gh release view mcp-router-v1.1.0 > /dev/null 2>&1; then
+            gh release download mcp-router-v1.1.0 --pattern "nakagawa-original-router-1.1.0.mcpb" --dir /tmp/mcp-existing
+            python3 - <<'PY'
+          from pathlib import Path
+          import hashlib
+          created = Path("dist/nakagawa-original-router-1.1.0.mcpb").read_bytes()
+          published = Path("/tmp/mcp-existing/nakagawa-original-router-1.1.0.mcpb").read_bytes()
+          assert hashlib.sha256(created).digest() == hashlib.sha256(published).digest(), "Existing released bundle differs: use a NEW release/version, never silently overwrite"
+          print("PASS: existing immutable release matches tested source bundle")
+          PY
+          else
+            gh release create mcp-router-v1.1.0 dist/nakagawa-original-router-1.1.0.mcpb \
+              --target "$GITHUB_SHA" \
+              --title "Nakagawa Original-Theory Router MCP Bundle v1.1.0" \
+              --notes "Free local read-only Python MCP source router. Supports 2026-07-28 and legacy 2025 stdio, 22 canonical original pointers, seven optional JA/EN/ZH conditional lenses and genuine nonfit. Requires independently installed Python. Author: Nakagawa Master. Source and CC BY-NC-ND-4.0 rights notice included."
+          fi
       - name: Create verified registry metadata for released exact checksum
         run: |
           SHA256="$(sha256sum dist/nakagawa-original-router-1.1.0.mcpb | awk '{print $1}')"
@@ -75,7 +87,7 @@ jobs:
           assert len(digest) == 64
           record = {
             "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-            "name": "io.github.nakagawa-master/nakagawa-original-router",
+            "name": "io.github.Nakagawa-master/nakagawa-original-router",
             "title": "Nakagawa Original-Theory Source Router",
             "description": "Local read-only original theory source lookup with seven optional causal lenses in JA EN ZH.",
             "version": "1.1.0",
