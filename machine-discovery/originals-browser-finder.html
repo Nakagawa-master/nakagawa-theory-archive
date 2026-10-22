@@ -24,6 +24,7 @@ textarea[readonly]{background:#f2f5f7}
 select{max-width:225px}
 button{background:var(--navy);color:white;border:0;border-radius:8px;padding:10px 14px;cursor:pointer;font:inherit;font-weight:650}
 button.secondary{background:#e3eef0;color:#153c4d;border:1px solid #b5cbd1}
+.ai-open{display:inline-flex;align-items:center;justify-content:center;background:#e3eef0;color:#153c4d;border:1px solid #b5cbd1;border-radius:8px;padding:10px 14px;font:inherit;font-weight:650;text-decoration:none}
 button:focus-visible,textarea:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #e4aa36;outline-offset:2px}
 .buttons{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0}
 .result{border-top:1px solid var(--line);padding:14px 0}
@@ -78,7 +79,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:26px}
 <p>原典を読んだ後、下の文を好きなAIに渡せます。AIが原文URLを開けない場合は、自分で読んだ内容を渡してください。原典の主張とAI独自の応用を分けて考えるための下書きです。</p>
 <label for="ai-prompt">AIへの相談文（編集できます）</label>
 <textarea id="ai-prompt" rows="7"></textarea>
-<div class="buttons"><button id="copy" type="button">相談文をコピーする</button></div>
+<div class="buttons"><button id="copy" type="button">相談文をコピーする</button><a id="open-chatgpt" class="ai-open" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPTで相談文を開く（送信前に確認）</a></div>
+<p class="small">上のリンクを押す場合、編集した相談文がURLに入ってChatGPTへ渡ります。個人情報・社外秘を除き、開いた画面で確認してから自分で送信してください。ほかのAIは従来の「コピーする」を使えます。入力内容の自動投稿や外部API呼び出しは行いません。</p>
 <p id="copy-status" class="small" aria-live="polite">AIへの送信は自動では行いません。</p>
 </section>
 <section class="panel">
@@ -231,6 +233,18 @@ findEl("handoff").hidden=false;findEl("copy-status").textContent="この文章�
 findEl("find").addEventListener("click",search);
 question.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&e.key==="Enter")search();});
 document.querySelectorAll("[data-example]").forEach(b=>b.addEventListener("click",()=>{const v=b.getAttribute("data-example");question.value=examples[v];language.value=v==="none"?"en":v;search();}));
+findEl("open-chatgpt").addEventListener("click",event=>{
+  // Deliberately user-triggered: this may transfer the editable question in a URL.
+  const text=findEl("ai-prompt").value.trim();
+  const href="https://chatgpt.com/?q="+encodeURIComponent(text);
+  if(!text || href.length>8000){
+    event.preventDefault();
+    findEl("copy-status").textContent=!text?"先に相談文を作成してください。":"相談文が長いためURLで開けません。「相談文をコピーする」を使ってください。";
+    return;
+  }
+  event.currentTarget.href=href;
+  findEl("copy-status").textContent="ChatGPTを開きました。相談文を確認し、ご自身で送信してください。対応しない画面では「コピーする」を使えます。";
+});
 findEl("copy").addEventListener("click",async()=>{
 const t=findEl("ai-prompt").value;
 try{if(!navigator.clipboard?.writeText)throw Error("clipboard unavailable");await navigator.clipboard.writeText(t);findEl("copy-status").textContent="コピーしました。利用するAIへ貼り付けてください。";}
