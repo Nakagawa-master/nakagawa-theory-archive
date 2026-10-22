@@ -79,6 +79,12 @@ def catalog_matches(question, limit=3):
     keys = ((("problem_phrases_ja", "ja"),) if has_kana
             else (("problem_phrases_ja", "ja"), ("problem_phrases_zh", "zh")) if has_han
             else (("problem_phrases", "en"),))
+    # Mixed-script human questions often retain their substantive English
+    # problem and add a short Japanese/Chinese explanation. Do not discard
+    # the English original-question corpus just because one CJK token occurs.
+    # Only add the extra candidate lane; preserve the independent fit gate.
+    if words(question) and ("problem_phrases", "en") not in keys:
+        keys += (("problem_phrases", "en"),)
     candidates = []
     for entry in catalog["entries"]:
         original = entry.get("canonical_url")
@@ -174,7 +180,10 @@ def structural_lenses(question, matched_language=None):
     has_kana = bool(re.search(r"[\u3040-\u30ff]", question))
     has_han = bool(re.search(r"[\u3400-\u9fff]", question))
     lang = "ja" if has_kana else "zh" if has_han else "en"
-    if has_han and not has_kana and matched_language in ("ja", "zh"):
+    # The strongest real original-question source corpus, when present,
+    # also determines the optional lens locale for mixed-language questions.
+    # Previously English+JA picked an English Parent but explained it in JA.
+    if matched_language in ("ja", "zh", "en"):
         lang = matched_language
     canonical = {x["canonical_url"] for x in read_original_catalog()["entries"]}
 

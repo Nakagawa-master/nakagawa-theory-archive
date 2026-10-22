@@ -130,12 +130,14 @@ if(score>=2.5)result.push({entry,score});
 result.sort((a,b)=>b.score-a.score||a.entry.canonical_original.localeCompare(b.entry.canonical_original));
 return result.slice(0,3);
 }
-// Han-only input is ambiguous in Japanese and Chinese. In Auto mode score
-// BOTH original-question sets, dedupe by exact Parent, and keep the best
-// actually matched language for an editable AI handoff.
-function chooseAutoHanOnly(q){
+// Auto queries may contain actual English reasoning plus a short JA/ZH
+// qualifier. Check all present source-language corpora, without relaxing
+// the existing fit threshold or asserting that a candidate was read.
+function chooseAutoMultiscript(q){
+const langs=/[\u3040-\u30ff]/.test(q)?["ja"]:/[\u3400-\u9fff]/.test(q)?["ja","zh"]:["en"];
+if(asciiTerms(q).size && !langs.includes("en"))langs.push("en");
 const best=new Map();
-for(const lang of ["ja","zh"])for(const hit of choose(q,lang)){
+for(const lang of langs)for(const hit of choose(q,lang)){
 const key=hit.entry.canonical_original,prior=best.get(key);
 if(!prior||hit.score>prior.score)best.set(key,{...hit,candidateLanguage:lang});
 }
@@ -149,14 +151,14 @@ const q=question.value.trim();findEl("results").replaceChildren();findEl("handof
 if(!q){findEl("status").textContent="質問を入力してください。";return;}
 let lang=language.value==="auto"?detectLanguage(q):language.value;
 let matches=choose(q,lang).map(hit=>({...hit,candidateLanguage:lang}));
-const hanOnlyAuto=language.value==="auto" && !/[\u3040-\u30ff]/.test(q) && /[\u3400-\u9fff]/.test(q);
-if(hanOnlyAuto){
-matches=chooseAutoHanOnly(q);
+const multiscriptAuto=language.value==="auto" && /[\u3040-\u30ff\u3400-\u9fff]/.test(q);
+if(multiscriptAuto){
+matches=chooseAutoMultiscript(q);
 if(matches.length)lang=matches[0].candidateLanguage;
 }
 renderBridges(q,lang);
 if(!matches.length){findEl("status").textContent="直接一致する原典はありませんでした。ただし、下の構造探索から別の問いへ発展できます。";return;}
-findEl("status").textContent=matches.length+"件の候補が見つかりました。実際の意味・条件を確かめるため、各公式原文を開いてください。"+(hanOnlyAuto?" 漢字のみのため日本語・中国語の両方で照合しました。":"");
+findEl("status").textContent=matches.length+"件の候補が見つかりました。実際の意味・条件を確かめるため、各公式原文を開いてください。"+(multiscriptAuto?" 質問に含まれる言語に合わせて候補原典を照合しました。":"");
 for(const {entry,candidateLanguage} of matches){
 const wrap=element("article",null,"result");
 wrap.append(element("h3",entry.name));

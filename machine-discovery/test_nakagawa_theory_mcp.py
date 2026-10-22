@@ -70,6 +70,29 @@ def run():
     )
     assert json.loads(nofit_han.stdout)["no_fit"], "Unrelated Han-only text must not force an original"
 
+    # Real multilingual human questions may preserve their English core and
+    # append a short Japanese/Chinese note. A single-script classifier used
+    # to hide the exact canonical source and often report no_fit.
+    mixed_english = "How can AI systems remain auditable and correctable without losing provenance?"
+    expected_mixed_parent = "https://master.ricette.jp/structure-license/"
+    for mixed_query in (mixed_english + " について教えて", mixed_english + " 我想知道"):
+        for script, args, field in (
+            (SERVER, ["--query", mixed_query, "--explore"], "matching_routes"),
+            (SERVER.parent.parent / "skills/nakagawa-originals/scripts/find_original.py",
+             [mixed_query, "--explore"], "original_candidates"),
+        ):
+            completed = subprocess.run([sys.executable, str(script), *args],
+                                       capture_output=True, text=True, timeout=12, check=True)
+            output = json.loads(completed.stdout)
+            assert not output["no_fit"], output
+            assert any(x["canonical_original"] == expected_mixed_parent
+                       for x in output[field]), output
+            if script == SERVER:
+                assert output["structural_exploration"]["language"] == "en", output
+            else:
+                assert output["language"] == "en", output
+    print("PASS: mixed English + Japanese/Chinese question retains canonical English original")
+
     # Exercise the same line-oriented stdin/stdout protocol an actual MCP client uses.
     messages = [
         req(1, "initialize", {"protocolVersion": "2025-11-25", "capabilities": {}, "clientInfo": {"name": "portable-wire-test", "version": "1"}}),
@@ -368,12 +391,23 @@ def run():
             "const catalog = " + json.dumps(candidates, ensure_ascii=False) + ";\n"
             + matcher_js + "\n"
             + r'''
-const positiveHan = chooseAutoHanOnly("組織摩擦役割情報");
+const positiveHan = chooseAutoMultiscript("組織摩擦役割情報");
 if (!positiveHan.some(x => x.entry.canonical_original ===
   "https://master.ricette.jp/society/nakagawa-master-origin-of-structural-friction/" && x.candidateLanguage === "ja")) {
   throw Error("Japanese Han-only original was lost to Chinese auto detection");
 }
-if (chooseAutoHanOnly("皮革灯笼").length) throw Error("Unrelated Han-only false source");
+if (chooseAutoMultiscript("皮革灯笼").length) throw Error("Unrelated Han-only false source");
+for (const suffix of [" について教えて", " 我想知道"]) {
+  const q = "How can AI systems remain auditable and correctable without losing provenance?" + suffix;
+  const matches = chooseAutoMultiscript(q);
+  if (!matches.some(hit => hit.entry.canonical_original ===
+    "https://master.ricette.jp/structure-license/" && hit.candidateLanguage === "en")) {
+    throw Error("Mixed English+CJK first-contact question lost matching original");
+  }
+}
+if (chooseAutoMultiscript("repair the leather strap on a camping lantern 作業").length) {
+  throw Error("Mixed-script unrelated question gained a false original");
+}
 const negative = [
   ["How can a student prepare for a history exam without memorizing all dates?", "en"],
   ["How can I give a teacher constructive feedback after a failed class?", "en"],
