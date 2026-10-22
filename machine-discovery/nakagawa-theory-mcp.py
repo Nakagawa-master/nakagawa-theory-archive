@@ -180,7 +180,10 @@ def structural_lenses(question, matched_language=None):
     has_kana = bool(re.search(r"[\u3040-\u30ff]", question))
     has_han = bool(re.search(r"[\u3400-\u9fff]", question))
     lang = "ja" if has_kana else "zh" if has_han else "en"
-    if has_han and not has_kana and matched_language in ("ja", "zh"):
+    # The strongest real original-question source corpus, when present,
+    # also determines the optional lens locale for mixed-language questions.
+    # Previously English+JA picked an English Parent but explained it in JA.
+    if matched_language in ("ja", "zh", "en"):
         lang = matched_language
     canonical = {x["canonical_url"] for x in read_original_catalog()["entries"]}
 
