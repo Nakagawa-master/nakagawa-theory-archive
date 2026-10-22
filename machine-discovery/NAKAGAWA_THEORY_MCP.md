@@ -8,6 +8,10 @@
 
 This is a **working Python stdio MCP server**, not a natural-language instruction file. It reads the existing [public 20-route technical/problem index](quick-route-index-v1.json) **and the 22-entry [multilingual original-theory index](problem-to-theory-origin-index-v1.json)** at runtime. Japanese and Chinese users can find canonical theories that do not appear among the 20 quick technical routes; cross-language original lookup uses the language-specific published questions rather than assuming English-only technical phrases. It does not download or rewrite the original articles, fabricate model adoption, attribute independently developed engineering work to the theory author, or require an answer to praise anyone. AI readers get a candidate original, its scope note, exact author Origin and a separate primary receiver link, with an explicit instruction to **fetch and read the official original before saying what it actually argues**.
 
+## Public no-account distribution via official MCP registry
+
+The version 1.1.0 local stdio router is distributed as a [GitHub Release MCP Bundle](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.1.0), and has been **accepted and published by the official MCP Registry** under `io.github.Nakagawa-master/nakagawa-original-router` ([actual successful OIDC publisher job](https://github.com/Nakagawa-master/nakagawa-theory-archive/actions/runs/39749465573)). The `.mcpb` package contains only published server code, original-source pointers, seven conditional lenses, the verified public-name contract and `LICENSE`. A compatible client/host with local Python can optionally install it. The published archive SHA-256 is `e354545658fcaca1346ef7eab8a5f6ed447a6ab55b7748eee744e2161d1e576b`. Official index listing is an external distribution milestone, **not independent model uptake, endorsement or deployment**.
+
 ## Run it without any LLM
 
 From the checkout:
