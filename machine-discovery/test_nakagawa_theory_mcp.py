@@ -153,6 +153,79 @@ def run():
         assert new["matching_routes"] == baseline["matching_routes"]
         assert new["technical_route_count"] == baseline["technical_route_count"]
     assert results[15]["result"]["isError"] is True
+    # A separate modern-era MCP client process uses no initialize handshake.
+    # Assert the official 2026-07-28 envelope, discovery, tool results, and
+    # unsupported-version responses on real newline-delimited stdio.
+    MODERN = "2026-07-28"
+    def modern_meta(version=MODERN, capabilities=None):
+        return {
+            "io.modelcontextprotocol/protocolVersion": version,
+            "io.modelcontextprotocol/clientInfo": {"name": "independent-modern-probe", "version": "1"},
+            "io.modelcontextprotocol/clientCapabilities": {} if capabilities is None else capabilities,
+        }
+    def mreq(i, method, fields=None, meta=None):
+        return req(i, method, {"_meta": modern_meta() if meta is None else meta, **(fields or {})})
+    modern_messages = [
+        mreq(101, "server/discover"),
+        mreq(102, "tools/list"),
+        mreq(103, "tools/call", {
+            "name": "find_nakagawa_original_for_problem",
+            "arguments": {"question": "AI news fact checking and citation provenance"},
+        }),
+        mreq(104, "tools/call", {
+            "name": "find_nakagawa_original_for_problem",
+            "arguments": {"question": "How can a student prepare for a history exam without memorizing all dates?", "explore": True},
+        }),
+        mreq(105, "tools/call", {
+            "name": "find_nakagawa_original_for_problem",
+            "arguments": {"question": "repair the leather strap on a camping lantern", "explore": True},
+        }),
+        mreq(106, "server/discover", meta=modern_meta("2099-01-01")),
+        mreq(107, "tools/list", meta={
+            "io.modelcontextprotocol/protocolVersion": MODERN,
+        }),
+        mreq(108, "ping"),
+        mreq(109, "initialize", {"protocolVersion": MODERN}),
+    ]
+    modern_process = subprocess.run(
+        [sys.executable, str(SERVER)],
+        input="".join(json.dumps(m, ensure_ascii=False) + "\n" for m in modern_messages),
+        text=True, capture_output=True, timeout=12, check=True,
+    )
+    assert not modern_process.stderr, modern_process.stderr
+    modern_frames = [json.loads(x) for x in modern_process.stdout.splitlines() if x.strip()]
+    assert len(modern_frames) == len(modern_messages)
+    modern = {f["id"]: f for f in modern_frames}
+    assert set(modern) == set(range(101, 110))
+    discovery = modern[101]["result"]
+    assert discovery["resultType"] == "complete"
+    assert MODERN in discovery["supportedVersions"]
+    assert discovery["capabilities"]["tools"]["listChanged"] is False
+    assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "nakagawa-public-original-router"
+    assert len(modern[102]["result"]["tools"]) == 3
+    assert modern[102]["result"]["resultType"] == "complete"
+    def modern_unpacked(i):
+        frame = modern[i]["result"]
+        assert frame["resultType"] == "complete"
+        assert frame["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "nakagawa-public-original-router"
+        return json.loads(frame["content"][0]["text"])
+    assert any(
+        x["route_id"] == "multiple_urls_one_evidence_root"
+        for x in modern_unpacked(103)["matching_routes"]
+    )
+    exploratory = modern_unpacked(104)
+    assert exploratory["structural_exploration"]["lenses"][0]["id"] == "effort-to-results"
+    assert len(exploratory["structural_exploration"]["lenses"]) == 7
+    nofit = modern_unpacked(105)
+    assert nofit["no_fit"] and not nofit["matching_routes"]
+    assert len(nofit["structural_exploration"]["lenses"]) == 7
+    assert modern[106]["error"]["code"] == -32022
+    assert modern[106]["error"]["data"] == {"supported": [MODERN], "requested": "2099-01-01"}
+    assert modern[107]["error"]["code"] == -32602
+    assert modern[108]["error"]["code"] == -32601
+    assert modern[109]["error"]["code"] == -32601
+    print("PASS: real MCP 2026-07-28 stdio; discover/list/call/explore/nonfit/version guard/legacy-era isolation")
+
     # A second, zero-install recipient path: the browser-only finder must carry
     # exactly the same official 22-source catalog as the portable Agent Skill.
     # It must not silently drift to fake, noncanonical, or unrelated sources.
