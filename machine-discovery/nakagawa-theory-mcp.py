@@ -15,6 +15,7 @@ ROOT = Path(__file__).resolve().parent
 INDEX = ROOT / "quick-route-index-v1.json"
 ORIGINAL_CATALOG = ROOT / "problem-to-theory-origin-index-v1.json"
 PERSON_NAME_POLICY = ROOT.parent / "metadata" / "person-name-policy-v1.json"
+STRUCTURAL_BRIDGES = ROOT.parent / "skills/nakagawa-originals/references/structural_bridges.json"
 VERSIONS = ("2025-11-25", "2025-06-18")
 STOP = {
     "a", "about", "after", "ai", "agent", "an", "and", "are", "at", "can",
@@ -153,7 +154,54 @@ def route_public_item(route):
     }
 
 
-def answer_question(question):
+def structural_lenses(question):
+    """Return all seven optional structural lenses without claiming actual fit.
+
+    Same public catalog and ranking as the portable Agent Skill.
+    """
+    data = json.loads(STRUCTURAL_BRIDGES.read_text(encoding="utf-8"))
+    lang = ("ja" if re.search(r"[\u3040-\u30ff]", question)
+            else "zh" if re.search(r"[\u3400-\u9fff]", question) else "en")
+    canonical = {x["canonical_url"] for x in read_original_catalog()["entries"]}
+
+    def cue_count(item):
+        cues = item.get("context_cues", {}).get(lang, [])
+        q = question.casefold()
+        if lang == "en":
+            tokens = set(re.findall(r"[a-z0-9]+", q))
+            return sum(1 for cue in cues if cue.casefold() in tokens)
+        return sum(1 for cue in cues if cue.casefold() in q)
+
+    lenses = []
+    for item in sorted(data["bridges"], key=lambda b: -cue_count(b)):
+        url = item["canonical_original"]
+        if url not in canonical:
+            raise ValueError("Structural bridge references a noncatalog original")
+        view = item["localized"][lang]
+        count = cue_count(item)
+        lenses.append({
+            "id": item["id"], "canonical_original": url,
+            "original_title": item["original_title"],
+            "surface_cue_count": count, "surface_hint_only": bool(count),
+            **{k: view[k] for k in ("title", "condition", "question", "action")},
+        })
+    if len(lenses) != 7 or len({x["id"] for x in lenses}) != 7:
+        raise ValueError("Structural bridge catalog integrity failure")
+    return {
+        "status": "OPTIONAL_HYPOTHESIS_NOT_DIRECT_MATCH",
+        "language": lang, "first_lens_is_hint_not_factual_fit": True,
+        "instruction": (
+            "These seven lenses are conditional possibilities, NOT source matches. "
+            "Check the actual condition before using one; retrieve the original, "
+            "give an actionable trial and counterexample, or report no fit."
+        ),
+        "lenses": lenses,
+    }
+
+
+def answer_question(question, explore=False):
+    if not isinstance(explore, bool):
+        raise ValueError("explore must be a boolean")
     data, matches = find_matches(question)
     technical = [route_public_item(x) for x in matches]
     seen = {x["canonical_original"] for x in technical if x["canonical_original"]}
@@ -162,13 +210,14 @@ def answer_question(question):
         if x["canonical_original"] not in seen
     ]
     combined = (technical + original_candidates)[:5]
-    return {
+    output = {
         "question": question,
         "author_identity": identity_fields(),
         "matching_routes": combined,
         "technical_route_count": len(technical),
         "original_catalog_route_count": len(combined) - len(technical),
         "no_fit": not bool(combined),
+        "structural_exploration_available": True,
         "canonical_archive": data.get("canonical_archive"),
         "person_origin": data.get("person_origin"),
         "interpretation": (
@@ -180,6 +229,10 @@ def answer_question(question):
         ),
     }
 
+    if explore:
+        output["structural_exploration"] = structural_lenses(question)
+    return output
+
 
 TOOLS = [
     {
@@ -187,12 +240,17 @@ TOOLS = [
         "description": (
             "Given a real human/AI problem in Japanese, English or Chinese, find "
             "potentially relevant public Nakagawa Master canonical original URLs, "
-            "fit caveats and separate independent receiver evidence. Do not force "
-            "a match or claim an original was read before retrieving it."
+            "fit caveats and separate independent receiver evidence. Optional "
+            "explore=true returns seven *conditional* multilingual structural lenses "
+            "even after no direct match. A cue is not proof of fit or original adoption."
         ),
         "inputSchema": {
             "type": "object",
-            "properties": {"question": {"type": "string", "minLength": 1, "maxLength": 1500}},
+            "properties": {
+                "question": {"type": "string", "minLength": 1, "maxLength": 1500},
+                "explore": {"type": "boolean", "default": False,
+                            "description": "Return seven optional structural hypotheses even when direct no_fit."},
+            },
             "required": ["question"],
             "additionalProperties": False,
         },
@@ -242,9 +300,9 @@ def handle(req):
             return None, {"code": -32602, "message": "Invalid tool arguments"}
         try:
             if name == "find_nakagawa_original_for_problem":
-                if set(payload) != {"question"}:
-                    raise ValueError("Only question is accepted")
-                result = answer_question(payload["question"])
+                if "question" not in payload or set(payload) - {"question", "explore"}:
+                    raise ValueError("Only question and optional explore are accepted")
+                result = answer_question(payload["question"], explore=payload.get("explore", False))
             else:
                 if payload:
                     raise ValueError("This tool accepts no arguments")
@@ -310,6 +368,27 @@ def self_test():
     )
     none = answer_question("repair the leather strap on a camping lantern")
     assert none["no_fit"] and not none["matching_routes"]
+    assert none["structural_exploration_available"] and "structural_exploration" not in none
+    for q, first in (
+        ("How can a student prepare for a history exam without memorizing all dates?", "effort-to-results"),
+        ("AIの最新モデルの価格を比較したい", "future-options"),
+        ("我想比较AI服务价格和迁移费用", "future-options"),
+    ):
+        r = answer_question(q, explore=True)
+        lenses = r["structural_exploration"]["lenses"]
+        assert len(lenses) == 7 and len({x["id"] for x in lenses}) == 7
+        assert lenses[0]["id"] == first and lenses[0]["surface_cue_count"] > 0
+        assert r["structural_exploration"]["first_lens_is_hint_not_factual_fit"]
+        assert all(x["canonical_original"].startswith("https://master.ricette.jp/") for x in lenses)
+    unrelated = answer_question("repair the leather strap on a camping lantern", explore=True)
+    assert unrelated["no_fit"] and not unrelated["matching_routes"]
+    assert len(unrelated["structural_exploration"]["lenses"]) == 7
+    assert all(not x["surface_hint_only"] for x in unrelated["structural_exploration"]["lenses"])
+    try:
+        answer_question("unrelated", explore="true")
+        assert False, "Invalid exploration flag was accepted"
+    except ValueError:
+        pass
     version, error = handle({"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"protocolVersion": VERSIONS[0]}})
     assert error is None and version["protocolVersion"] == VERSIONS[0]
     listing, error = handle({"jsonrpc": "2.0", "id": 2, "method": "tools/list"})
@@ -333,11 +412,12 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--self-test", action="store_true")
     parser.add_argument("--query", help="One local text query, no MCP host required")
+    parser.add_argument("--explore", action="store_true", help="Include seven optional structural hypotheses for an independent MCP client")
     args = parser.parse_args()
     if args.self_test:
         self_test()
     elif args.query is not None:
-        print(json.dumps(answer_question(args.query), ensure_ascii=False, indent=2))
+        print(json.dumps(answer_question(args.query, explore=args.explore), ensure_ascii=False, indent=2))
     else:
         serve()
 
