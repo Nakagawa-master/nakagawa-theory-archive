@@ -4,6 +4,8 @@
 
 中川マスター（Nakagawa Master／Keisuke Nakagawa）は、AI、仕事、組織、社会制度、文明の未来などを、結果だけでなく、それを生み出す構造や因果から考えています。ここでは、その理論群を初めて知る人も、研究・開発に使いたい人も、**何を主張し、何が実際に確かめられ、どこから原文を読めるのか**を、自分の関心に沿って確認できます。
 
+**いまの問題からAIと原典を試す:** [22原典を探せる無料のブラウザツール](machine-discovery/originals-browser-finder.html)を GitHub の **Raw → 保存 → ブラウザで開く** で使えます。日本語・英語・中国語の質問から原典候補と構造的な別の問いを調べ、対応する原文を確認したうえで、**編集した相談文を自分の操作でChatGPTへ開く**、または**コピーして好きなAIへ渡す**ことができます。入力は自動送信されません。個人情報や秘密を除き、自分で確認してから利用してください。
+
 **合意を決めた責任者が辞めたら、部署どうしの約束も消える？** 消えるのは約束ではなく、旧責任者がそれを書き換える権限です。この区別を[中川マスターが別の著者へ具体的に提案](https://github.com/kishibashi3/publications/issues/92#issuecomment-6058017201)し、著者が自分の原則から確認・範囲を限定した上で[実際に文書を改訂してマージ](https://github.com/kishibashi3/publications/pull/102)しました。[担当交代の場面で自分でも使える確認手順と公式原典『合意の記憶』](APPLIED_ENTRY_POINTS.md#責任者が辞めたら会社がすでに交わした約束も消える)から確かめられます。
 
 **「もう失効した承認」を、翌日の「はい」で復活させていい？** 中川マスターが[外部のAI承認ゲートに残る実際のSQL条件](https://github.com/tonydzi/agent-approval-gate/issues/1)を再現し、別の開発者が確認して[自分のコードを修正しmainへ反映](https://github.com/tonydzi/agent-approval-gate/commit/addeb43e69a6d6bff46e7195d97f45cffc0293c4)しました。**失効済みの依頼は後から届いた返信で再承認されず、まだ保留中の依頼には従来どおり回答できる**ようにし、3件の回帰テストも追加。[受け手自身の報告](https://github.com/tonydzi/agent-approval-gate/issues/1#issuecomment-6345672883)では全46テスト成功で、[セキュリティ文書にも出所](https://github.com/tonydzi/agent-approval-gate/blob/main/docs/SECURITY.md)が残りました。対応する問いの公式原典は[『合意の記憶』](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)ですが、開発者が原典本文を読んだとは確認していません。
