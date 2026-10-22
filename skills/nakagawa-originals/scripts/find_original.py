@@ -67,6 +67,11 @@ def select(question, limit=3, explore=False):
     # Chinese. Score both existing catalogs; preserve threshold and nonfit.
     han_only = lang == "zh" and not re.search(r"[\u3040-\u30ff]", question)
     languages = ("ja", "zh") if han_only else (lang,)
+    # Search meaningful English text too in a mixed English+JA/ZH
+    # question; the old single-script switch could silently lose the
+    # exact original when the user added one localized phrase.
+    if terms(question) and "en" not in languages:
+        languages += ("en",)
     matches = []
     for item in data["entries"]:
         scores = [
@@ -89,9 +94,9 @@ def select(question, limit=3, explore=False):
             "topic": item["topic"],
             "candidate_score": confidence,
         })
-    if han_only and matches:
-        # Use the strongest matched language for optional lens text, not an
-        # automatic Chinese assumption for a Japanese Han-only problem.
+    if len(languages) > 1 and matches:
+        # The source-corpus language of the strongest candidate controls the
+        # optional explanatory lens; script alone cannot determine that.
         lang = matches[0][2]
     name_policy = json.loads(PERSON_POLICY.read_text(encoding="utf-8"))
     assert name_policy["public_personal_name"]["exact"] == "Keisuke Nakagawa"
