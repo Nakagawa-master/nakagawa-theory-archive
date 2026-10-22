@@ -9,6 +9,9 @@ on:
       - 'machine-discovery/test_structural_bridges_ui.py'
       - 'machine-discovery/originals-browser-finder.html'
       - 'machine-discovery/quick-route-index-v1.json'
+      - 'human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md'
+      - 'human-translation/QUESTIONS_TO_STRUCTURE.md'
+      - 'scripts/test_no_install_ai_links.py'
       - 'machine-discovery/problem-to-theory-origin-index-v1.json'
       - 'skills/nakagawa-originals/**'
       - 'metadata/**'
@@ -33,6 +36,9 @@ on:
       - 'machine-discovery/test_structural_bridges_ui.py'
       - 'machine-discovery/originals-browser-finder.html'
       - 'machine-discovery/quick-route-index-v1.json'
+      - 'human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md'
+      - 'human-translation/QUESTIONS_TO_STRUCTURE.md'
+      - 'scripts/test_no_install_ai_links.py'
       - 'machine-discovery/problem-to-theory-origin-index-v1.json'
       - 'skills/nakagawa-originals/**'
       - 'metadata/**'
@@ -55,6 +61,8 @@ jobs:
     timeout-minutes: 4
     steps:
       - uses: actions/checkout@v4
+      - name: Zero-install user-driven AI request / original-source fidelity
+        run: python3 scripts/test_no_install_ai_links.py
       - name: Python self-test across canonical indexes
         run: python3 machine-discovery/nakagawa-theory-mcp.py --self-test
       - name: Independent client subprocess JSON-RPC integration
