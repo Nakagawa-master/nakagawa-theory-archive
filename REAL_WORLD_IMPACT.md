@@ -1405,7 +1405,7 @@ Nakagawa Masterはさらに[#3326のcomment](https://github.com/CarnegieLearning
 ## 38. MemberJunction｜recordへの承認を、current executable definitionへの承認と混同しない
 
 **対象:** [MemberJunction PR #4789](https://github.com/MemberJunction/MJ/pull/4789)  
-**現在段階:** Nakagawa Masterがstale approval境界を提示 → receiver設計担当が明示的に “@Nakagawa-master's point” に同意し、fingerprint-bound approval modelを選択 → exact implementation / mergeは未確認
+**現在段階:** 中川マスターの具体的な承認境界への提案 → 受け手開発者による出所を明示した設計採用 → 同開発者自身が依存する子クエリの承認失効検査と単体・統合テストを実装 → **受け手側GitHub ActionsのQA5統合テスト成功を2回確認**。PRはOPENで、PR全体のCI・マージ・リリースは未完了
 
 同じquery recordでも、SQL、parameter contract、context contractなどが変われば、実際に実行される定義は別物になり得ます。
 
@@ -1423,8 +1423,14 @@ current execution authority
 
 Nakagawa Masterはさらに[comment 6026910453](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6026910453)で、server側が承認時・実行時の両方でauthoritative fingerprintを計算すること、semantically unorderedなchild rowsをdeterministicに並べること、global context semanticsが変わり得るならcontext-contract versionもfingerprintへ含めることを確認しました。
 
-**公開証拠から確認できること:** 具体的な境界提示 → receiverがOriginを明示して設計を採用方向へ変更。  
-**まだ確認できないこと:** exact approval-model code、tests、merge、release、production use、広い人物認知。
+**受け手自身の実装と再現検証:** [開発者 `cmbrock-BC` の修正報告](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6343703623)によれば、`GenericDatabaseProvider.ValidateQueryApprovalAsync` が承認を要求する実行について親・子・間接依存の現在の承認状態を確認するよう変更されました。実コードとテストを[受け手のコミット `05e5cf98`](https://github.com/MemberJunction/MJ/commit/05e5cf98b7093eb80360eed593e71f746b163907)で照合。親P1を変更しないまま、子D1だけD2に変えると親経由でも拒否し、子をD1へ戻すと再び通るテストが追加されています。
+
+さらに[最新HEAD `85734328` のSQL Server統合ジョブ](https://github.com/MemberJunction/MJ/actions/runs/39803263908/job/119910210296)は `✓ query-approvals.QA5` を実際に記録しています。同じテストは一つ前のHEADでも成功していました。**統合ジョブ全体は別の `conversation-compaction.CC22` の外部キー制約違反で失敗**し、Buildにも生成済みclass-registration manifestの不一致が残っています。[中川マスターの追加確認](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6344385601)は受け手が作成したテストと成果を区別しています。
+
+**別の開発者やAIが試せる問い：** 親のSQLを変えずに、以前承認された子クエリだけを変更したらどうなるでしょうか。親の承認だけで通してしまわず、現在の子の承認も確認できるかを[再利用可能な検証手順](CURRENT_AUTHORITY_REUSE_KIT.md#when-approval-spans-a-dependency-graph)で試せます。対応する[公式原典『合意の記憶』](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)は「過去の合意記録と、条件に応じた再合意」の構造を論じます。本件のソフトウェア実装はその応用的な読み方であり、受け手開発者が原典本文を読んだことの証拠ではありません。
+
+**公開証拠から確認できること:** 原因を絞った中川マスターの問題提起 → 名前を挙げた受け手の設計採用 → **受け手自身のコード・回帰テスト追加と、GitHub Actions上のQA5実行成功（2 HEAD）**。  
+**まだ確認できないこと:** PR全体のmerge、release、利用者の本番使用、独立AIによる原典の自発的採用、広い人物認知。
 
 → [一般向け問題入口](APPLIED_ENTRY_POINTS.md#承認したあと中身が変わったのにまだ承認済みで実行してよいのか)  
 → [Current-Authority Reuse Kit §23](CURRENT_AUTHORITY_REUSE_KIT.md#23-an-approval-record-is-not-approval-of-the-current-executable-definition)
