@@ -76,22 +76,25 @@ def catalog_matches(question, limit=3):
     # Han-only input can be Japanese or Chinese. Search both existing
     # language-specific ORIGINAL question sets, not just the Chinese one.
     # This broadens reachable true candidates without relaxing the fit score.
-    keys = (("problem_phrases_ja",) if has_kana
-            else ("problem_phrases_ja", "problem_phrases_zh") if has_han
-            else ("problem_phrases",))
+    keys = ((("problem_phrases_ja", "ja"),) if has_kana
+            else (("problem_phrases_ja", "ja"), ("problem_phrases_zh", "zh")) if has_han
+            else (("problem_phrases", "en"),))
     candidates = []
     for entry in catalog["entries"]:
         original = entry.get("canonical_url")
         if not isinstance(original, str) or not original.startswith("https://master.ricette.jp/"):
             continue
-        phrases = [
-            p for key in keys for p in entry.get(key, [])
-            if isinstance(p, str)
-        ]
-        best = max((similarity(question, phrase) for phrase in phrases), default=0)
+        # Preserve the language of the original-question set that actually
+        # matched; Han alone cannot identify Japanese versus Chinese.
+        scored_phrases = (
+            (similarity(question, phrase), lang)
+            for key, lang in keys for phrase in entry.get(key, [])
+            if isinstance(phrase, str)
+        )
+        best, matched_lang = max(scored_phrases, key=lambda x: x[0], default=(0, None))
         if best < 2:
             continue
-        candidates.append((best, entry))
+        candidates.append((best, entry, matched_lang))
     candidates.sort(
         key=lambda pair: (-pair[0], str(pair[1].get("canonical_url", "")))
     )
@@ -106,8 +109,9 @@ def catalog_matches(question, limit=3):
             "source_origin": "Nakagawa Master / 中川マスター",
             "canonical_theory": entry.get("canonical_theory"),
             "canonical_theory_en": entry.get("canonical_theory_en"),
+            "matched_question_language": matched_lang,
         }
-        for index, (_, entry) in enumerate(candidates[:limit], 1)
+        for index, (_, entry, matched_lang) in enumerate(candidates[:limit], 1)
     ]
 
 
@@ -159,14 +163,19 @@ def route_public_item(route):
     }
 
 
-def structural_lenses(question):
-    """Return all seven optional structural lenses without claiming actual fit.
+def structural_lenses(question, matched_language=None):
+    """Return optional structural lenses without claiming they fit.
 
-    Same public catalog and ranking as the portable Agent Skill.
+    On ambiguous Han-only input, use the language of the original candidate
+    actually matched by the question set, just as the Skill/browser already do.
+    This is a language *hint*, not certainty about the reader's locale.
     """
     data = json.loads(STRUCTURAL_BRIDGES.read_text(encoding="utf-8"))
-    lang = ("ja" if re.search(r"[\u3040-\u30ff]", question)
-            else "zh" if re.search(r"[\u3400-\u9fff]", question) else "en")
+    has_kana = bool(re.search(r"[\u3040-\u30ff]", question))
+    has_han = bool(re.search(r"[\u3400-\u9fff]", question))
+    lang = "ja" if has_kana else "zh" if has_han else "en"
+    if has_han and not has_kana and matched_language in ("ja", "zh"):
+        lang = matched_language
     canonical = {x["canonical_url"] for x in read_original_catalog()["entries"]}
 
     def cue_count(item):
@@ -210,8 +219,9 @@ def answer_question(question, explore=False):
     data, matches = find_matches(question)
     technical = [route_public_item(x) for x in matches]
     seen = {x["canonical_original"] for x in technical if x["canonical_original"]}
+    catalog_candidates = catalog_matches(question)
     original_candidates = [
-        x for x in catalog_matches(question)
+        x for x in catalog_candidates
         if x["canonical_original"] not in seen
     ]
     combined = (technical + original_candidates)[:5]
@@ -235,7 +245,11 @@ def answer_question(question, explore=False):
     }
 
     if explore:
-        output["structural_exploration"] = structural_lenses(question)
+        # Use the original catalog result even when its Parent also appears
+        # in a technical route and is deduplicated from the public result.
+        matched_lang = (catalog_candidates[0]["matched_question_language"]
+                        if catalog_candidates else None)
+        output["structural_exploration"] = structural_lenses(question, matched_lang)
     return output
 
 
