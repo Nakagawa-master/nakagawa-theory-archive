@@ -79,8 +79,8 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:26px}
 <p>原典を読んだ後、下の文を好きなAIに渡せます。AIが原文URLを開けない場合は、自分で読んだ内容を渡してください。原典の主張とAI独自の応用を分けて考えるための下書きです。</p>
 <label for="ai-prompt">AIへの相談文（編集できます）</label>
 <textarea id="ai-prompt" rows="7"></textarea>
-<div class="buttons"><button id="copy" type="button">相談文をコピーする</button><a id="open-chatgpt" class="ai-open" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPTで相談文を開く（送信前に確認）</a></div>
-<p class="small">上のリンクを押す場合、編集した相談文がURLに入ってChatGPTへ渡ります。個人情報・社外秘を除き、開いた画面で確認してから自分で送信してください。ほかのAIは従来の「コピーする」を使えます。入力内容の自動投稿や外部API呼び出しは行いません。</p>
+<div class="buttons"><button id="copy" type="button">相談文をコピーする</button><a id="open-chatgpt" class="ai-open" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPTで相談文を開く（送信前に確認）</a><button id="share-ai" type="button" class="secondary" hidden>相談文をアプリへ共有する</button></div>
+<p class="small">上のリンクを押す場合、編集した相談文がURLに入ってChatGPTへ渡ります。個人情報・社外秘を除き、開いた画面で確認してから自分で送信してください。ほかのAIには「コピーする」か、対応端末の「アプリへ共有する」から自分で送れます。入力内容の自動投稿や外部API呼び出しは行いません。</p>
 <p id="copy-status" class="small" aria-live="polite">AIへの送信は自動では行いません。</p>
 </section>
 <section class="panel">
@@ -233,6 +233,19 @@ findEl("handoff").hidden=false;findEl("copy-status").textContent="この文章�
 findEl("find").addEventListener("click",search);
 question.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&e.key==="Enter")search();});
 document.querySelectorAll("[data-example]").forEach(b=>b.addEventListener("click",()=>{const v=b.getAttribute("data-example");question.value=examples[v];language.value=v==="none"?"en":v;search();}));
+// Optional native share-sheet lets the human choose an installed app, not an AI provider.
+const shareAI=findEl("share-ai");
+if(typeof navigator.share==="function")shareAI.hidden=false;
+shareAI.addEventListener("click",async()=>{
+  const draft=findEl("ai-prompt").value.trim();
+  if(!draft){findEl("copy-status").textContent="先に相談文を作成してください。";return;}
+  try{
+    await navigator.share({title:"中川マスター原典から、現実の問題を考える",text:draft});
+    findEl("copy-status").textContent="共有メニューへ渡しました。アプリ側で内容を確かめてから送信してください。";
+  }catch(error){
+    if(error?.name!=="AbortError")findEl("copy-status").textContent="共有できませんでした。「相談文をコピーする」を使えます。";
+  }
+});
 findEl("open-chatgpt").addEventListener("click",event=>{
   // Deliberately user-triggered: this may transfer the editable question in a URL.
   const text=findEl("ai-prompt").value.trim();
