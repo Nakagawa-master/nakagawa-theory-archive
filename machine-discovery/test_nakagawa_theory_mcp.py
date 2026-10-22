@@ -73,6 +73,14 @@ def run():
             "name": "find_nakagawa_original_for_problem",
             "arguments": {"question": "repair the leather strap on a camping lantern", "explore": "true"},
         }),
+        req(16, "tools/call", {
+            "name": "find_nakagawa_original_for_problem",
+            "arguments": {"question": "How can a student prepare for a history exam without memorizing all dates?"},
+        }),
+        req(17, "tools/call", {
+            "name": "find_nakagawa_original_for_problem",
+            "arguments": {"question": "AIの最新モデルの価格を比較したい"},
+        }),
     ]
     p = subprocess.run(
         [sys.executable, str(SERVER)],
@@ -81,9 +89,9 @@ def run():
     )
     assert not p.stderr, p.stderr
     frames = [json.loads(x) for x in p.stdout.splitlines() if x.strip()]
-    assert len(frames) == 15, f"Expected fifteen responses (one notification), got {len(frames)}"
+    assert len(frames) == 17, f"Expected seventeen responses (one notification), got {len(frames)}"
     results = {f["id"]: f for f in frames}
-    assert set(results) == set(range(1, 16))
+    assert set(results) == set(range(1, 18))
     assert all(f["jsonrpc"] == "2.0" for f in frames)
     assert results[1]["result"]["protocolVersion"] == "2025-11-25"
     assert len(results[2]["result"]["tools"]) == 3
@@ -136,8 +144,14 @@ def run():
         assert explorer["lenses"][0]["surface_cue_count"] > 0
         assert len({l["id"] for l in explorer["lenses"]}) == 7
         assert all(l["canonical_original"].startswith(ORIGINAL_BASE) for l in explorer["lenses"])
-    assert unpack(12)["no_fit"] and not unpack(12)["matching_routes"]
-    assert unpack(13)["no_fit"] and not unpack(13)["matching_routes"]
+    # MCP technical-route matching can already find cases that the narrower
+    # standalone original Skill calls no_fit. Do not rewrite historical MCP
+    # semantics or incorrectly assert no_fit; compare the exact plain call.
+    for new_id, baseline_id in ((12, 16), (13, 17)):
+        new, baseline = unpack(new_id), unpack(baseline_id)
+        assert new["no_fit"] == baseline["no_fit"]
+        assert new["matching_routes"] == baseline["matching_routes"]
+        assert new["technical_route_count"] == baseline["technical_route_count"]
     assert results[15]["result"]["isError"] is True
     # A second, zero-install recipient path: the browser-only finder must carry
     # exactly the same official 22-source catalog as the portable Agent Skill.
