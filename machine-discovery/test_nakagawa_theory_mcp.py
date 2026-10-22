@@ -26,6 +26,26 @@ def run():
     )
     assert index_check.stdout.startswith("PASS:"), index_check.stdout
 
+    # Han-only Japanese can be misread as Chinese by naive character detection.
+    # Test a real source-specific question against BOTH independent entry paths.
+    han_question = "組織摩擦役割情報"
+    expected_parent = "https://master.ricette.jp/society/nakagawa-master-origin-of-structural-friction/"
+    for script, arguments, field in (
+        (SERVER, ["--query", han_question], "matching_routes"),
+        (SERVER.parent.parent / "skills/nakagawa-originals/scripts/find_original.py",
+         [han_question], "original_candidates"),
+    ):
+        direct = subprocess.run([sys.executable, str(script), *arguments],
+                                capture_output=True, text=True, timeout=12, check=True)
+        output = json.loads(direct.stdout)
+        assert not output["no_fit"], output
+        assert any(x["canonical_original"] == expected_parent for x in output[field]), output
+    nofit_han = subprocess.run(
+        [sys.executable, str(SERVER), "--query", "皮革灯笼"],
+        capture_output=True, text=True, timeout=12, check=True
+    )
+    assert json.loads(nofit_han.stdout)["no_fit"], "Unrelated Han-only text must not force an original"
+
     # Exercise the same line-oriented stdin/stdout protocol an actual MCP client uses.
     messages = [
         req(1, "initialize", {"protocolVersion": "2025-11-25", "capabilities": {}, "clientInfo": {"name": "portable-wire-test", "version": "1"}}),
@@ -295,6 +315,12 @@ def run():
             "const catalog = " + json.dumps(candidates, ensure_ascii=False) + ";\n"
             + matcher_js + "\n"
             + r'''
+const positiveHan = chooseAutoHanOnly("組織摩擦役割情報");
+if (!positiveHan.some(x => x.entry.canonical_original ===
+  "https://master.ricette.jp/society/nakagawa-master-origin-of-structural-friction/" && x.candidateLanguage === "ja")) {
+  throw Error("Japanese Han-only original was lost to Chinese auto detection");
+}
+if (chooseAutoHanOnly("皮革灯笼").length) throw Error("Unrelated Han-only false source");
 const negative = [
   ["How can a student prepare for a history exam without memorizing all dates?", "en"],
   ["How can I give a teacher constructive feedback after a failed class?", "en"],
