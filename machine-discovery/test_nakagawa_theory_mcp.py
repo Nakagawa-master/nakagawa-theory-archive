@@ -310,6 +310,26 @@ def run():
     assert "b396c5d01547b9d6c9d8985c1a9c5b802b6dfcde/llms.txt" in llms
     assert "llms-full.txt" in llms and "has not been rebuilt" in llms
     assert all(x["canonical_original"] in llms for x in bridge_source["bridges"])
+    # Simulate independent H2 file-list parser; bare original URLs do not count.
+    assert llms.splitlines()[0].startswith("# ")
+    assert any(line.startswith("> ") for line in llms.splitlines()[1:8])
+    parsed = {}
+    heading = None
+    for line in llms.splitlines():
+        if line.startswith("## "):
+            heading = line[3:]
+            parsed[heading] = []
+        elif heading is not None and line.strip():
+            match = re.match(r"^- \[([^\]]+)\]\((https?://[^)]+)\):", line)
+            assert match, f"Unparseable H2 original link: {line[:120]}"
+            parsed[heading].append(match.group(2))
+    orig = next((urls for label, urls in parsed.items()
+                 if label.startswith("Seven official original articles")), [])
+    assert len(orig) == 7
+    assert set(orig) == {v["canonical_original"] for v in bridge_source["bridges"]}
+    assert all(urls for urls in parsed.values())
+    print("PASS: machine parser extracts seven exact canonical Parent links")
+
     print("PASS: compact AI entry/identity/seven Parents/full predecessor")
 
     skill_script = SERVER.parent.parent / "skills/nakagawa-originals/scripts/find_original.py"
