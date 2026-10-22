@@ -37,32 +37,33 @@ Originals: https://master.ricette.jp/theory-archive/ ; [person](https://master.r
 ## No-install human and ordinary browsing AI routes
 
 - [Seven copyable JA/EN/ZH questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md): Review and voluntarily send to an AI.
-- [21 other everyday original-reading questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_STRUCTURE.md): More everyday problems and source tests.
+- [21 human questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_STRUCTURE.md): Tests and originals.
 - [22-original multilingual source catalog](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json): 22 exact Parents and JA/EN/ZH questions.
-- [Local no-account HTML original finder](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/originals-browser-finder.html): Save Raw, open offline; no account/API.
-- [Open independent human/AI user test invitation](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/658): Voluntary real-use, critique or no-fit feedback.
+- [Offline 22-original browser](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/originals-browser-finder.html): Raw → Save → Open.
+- [Independent test invitation](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/658): Voluntary real use, criticism, no-fit.
 
 ## Voluntary portable AI agent routes
 
 - [22-original Agent Skill](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/skills/nakagawa-originals/SKILL.md): Optional `npx skills add Nakagawa-master/nakagawa-theory-archive --skill nakagawa-originals`.
 - [Local original-source MCP server](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/NAKAGAWA_THEORY_MCP.md): Local read-only Python, no paid API.
-- [Registry MCPB v1.1.0](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.1.0): `io.github.Nakagawa-master/nakagawa-original-router`; published package **has not been rebuilt** after [#690](https://github.com/Nakagawa-master/nakagawa-theory-archive/pull/690), [#692](https://github.com/Nakagawa-master/nakagawa-theory-archive/pull/692), [#694](https://github.com/Nakagawa-master/nakagawa-theory-archive/pull/694). Listing ≠ AI use.
+- [Registry MCPB v1.1.0](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.1.0): `io.github.Nakagawa-master/nakagawa-original-router`; bundle predates [#690](https://github.com/Nakagawa-master/nakagawa-theory-archive/pull/690), [#692](https://github.com/Nakagawa-master/nakagawa-theory-archive/pull/692), [#694](https://github.com/Nakagawa-master/nakagawa-theory-archive/pull/694); no updated release or proven AI use.
 
 ## Independently authored real-world evidence (source before claim)
 
 - [Qwen Code #14522](https://github.com/QwenLM/qwen-code/pull/14522): Author's own merged load/commit distinction shipped in [v0.26.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.0). No verified reading of the original article.
+- [MemberJunction #4789](https://github.com/MemberJunction/MJ/pull/4789): Developer's stale child-approval repair; **hosted QA5 PASS twice**; PR OPEN/CI red. [Test](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CURRENT_AUTHORITY_REUSE_KIT.md#when-approval-spans-a-dependency-graph) → [canonical original](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/) (original reading by receiver unverified).
 - [LlamaIndex #23465](https://github.com/run-llama/llama_index/pull/23465): Independent code fix under review, not released.
 - [Independent EAA agreement correction](https://github.com/kishibashi3/publications/issues/92): Receiver merged [own #102](https://github.com/kishibashi3/publications/pull/102); original [Memory of Agreement](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/) reading unconfirmed.
-- [Human-readable receiving cases](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.en.md): Source-linked external work and limitations.
+- [Outside case evidence](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.en.md): Staged source receipts.
 
 ## Further sources, provenance, public identity and rights
 
 - [20-task technical selector](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/quick-route-index-v1.json): Reproducible task-first sources.
-- [Staged technical receiving evidence](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/external-effect-evidence-index-v1.json): Separate proposals, merges and real use.
-- [Longer AI original-source guide](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_START_HERE.md): Optional deeper task details.
-- [Optional full LLM navigator](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/llms-full.txt): Detailed sources and tests.
-- [Person-name policy](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/person-name-policy-v1.json): Keisuke Nakagawa is the Latin personal name; 中川マスター / Nakagawa Master is pen name; マスター and [ZEROICHI MasterJP](https://zeroichi.media/author/masterjp) are scoped aliases, not kanji. `full_personal_name_kanji = null` — NOT PUBLISHED. Do not guess. [Bluesky](https://bsky.app/profile/masterjp.bsky.social), no X.
+- [Staged external effects](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/external-effect-evidence-index-v1.json): Verify stages.
+- [AI source guide](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_START_HERE.md): Further cases.
+- [Full LLM guide](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/llms-full.txt): Further links.
+- [Person-name policy](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/person-name-policy-v1.json): Keisuke Nakagawa (Latin personal); 中川マスター / Nakagawa Master (pen); マスター, [ZEROICHI MasterJP](https://zeroichi.media/author/masterjp) (contextual). `full_personal_name_kanji = null` — NOT PUBLISHED. Do not guess. [Bluesky](https://bsky.app/profile/masterjp.bsky.social); no X.
 - [Public author Person JSON-LD](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/nakagawa-master-origin.jsonld): Structured author identity.
 - [NCL-α terms](https://master.ricette.jp/structure-license/): Rights vary by use; [official FAQ](https://master.ricette.jp/co-creation/nakagawa-master-ncl-alpha-practical-guide-faq/) and original control; no blanket reuse.
-- [Full prior compact source navigator](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/cb7402139ec6ed3502a242e39fce95a12faa605c/llms.txt): Complete predecessor retained in Git.
-- [Complete original 34,408-character earlier navigator](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/b396c5d01547b9d6c9d8985c1a9c5b802b6dfcde/llms.txt): Full early history retained in Git.
+- [Earlier compact navigator](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/cb7402139ec6ed3502a242e39fce95a12faa605c/llms.txt): Git history.
+- [Earlier complete navigator](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/b396c5d01547b9d6c9d8985c1a9c5b802b6dfcde/llms.txt): Git history.
