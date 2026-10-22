@@ -21,12 +21,18 @@ links = re.findall(
     page,
 )
 assert len(links) == len(bridges), f"Expected exactly seven opt-in links, got {len(links)}"
-for b, link in zip(bridges, links):
+# Independently readable/copyable prompts must exist in rendered Markdown;
+# encoded URL payloads alone are not a portable human-to-other-LLM fallback.
+copyable = re.findall(r"```text\n(.*?)\n```", page, re.S)
+assert len(copyable) == len(bridges), f"Expected seven human-copyable text blocks; found {len(copyable)}"
+for b, link, human_prompt in zip(bridges, links, copyable):
     parsed = urlparse(link)
     assert parsed.scheme == "https" and parsed.hostname == "chatgpt.com"
     assert parsed.path == "/" and parsed.fragment == ""
     assert set(parse_qs(parsed.query)) == {"q"}
     question, = parse_qs(parsed.query)["q"]
+    assert human_prompt == question, "Human-selectable prompt must exactly equal the user-inspected URL prefill"
+    assert "中川マスター" in human_prompt
     assert b["canonical_original"] in question
     assert b["localized"]["ja"]["question"] in question
     assert "読めなければ未読と明示してください" in question
@@ -37,4 +43,4 @@ for b, link in zip(bridges, links):
         assert b["localized"][lang]["title"] in page
 assert "個人情報や社外秘" in page
 assert "理論を当てはめない" in page
-print("PASS: exactly 7 independently verifiable no-install user-prefill links; canonical Parent/JA EN ZH parity; no silent fetch or adoption claim")
+print("PASS: 7 URL prefills match 7 visible human-copyable prompts byte-for-byte; canonical Parent/JA EN ZH parity; no silent fetch or adoption claim")
