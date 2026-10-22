@@ -130,25 +130,41 @@ if(score>=2.5)result.push({entry,score});
 result.sort((a,b)=>b.score-a.score||a.entry.canonical_original.localeCompare(b.entry.canonical_original));
 return result.slice(0,3);
 }
+// Han-only input is ambiguous in Japanese and Chinese. In Auto mode score
+// BOTH original-question sets, dedupe by exact Parent, and keep the best
+// actually matched language for an editable AI handoff.
+function chooseAutoHanOnly(q){
+const best=new Map();
+for(const lang of ["ja","zh"])for(const hit of choose(q,lang)){
+const key=hit.entry.canonical_original,prior=best.get(key);
+if(!prior||hit.score>prior.score)best.set(key,{...hit,candidateLanguage:lang});
+}
+return [...best.values()].sort((a,b)=>b.score-a.score||a.entry.canonical_original.localeCompare(b.entry.canonical_original)).slice(0,3);
+}
 function element(tag,text,className){
 const e=document.createElement(tag);if(text!==null)e.textContent=text;if(className)e.className=className;return e;
 }
 function search(){
 const q=question.value.trim();findEl("results").replaceChildren();findEl("handoff").hidden=true;findEl("structural-exploration").hidden=!q;
 if(!q){findEl("status").textContent="質問を入力してください。";return;}
-const lang=language.value==="auto"?detectLanguage(q):language.value;
-const matches=choose(q,lang);
+let lang=language.value==="auto"?detectLanguage(q):language.value;
+let matches=choose(q,lang).map(hit=>({...hit,candidateLanguage:lang}));
+const hanOnlyAuto=language.value==="auto" && !/[\u3040-\u30ff]/.test(q) && /[\u3400-\u9fff]/.test(q);
+if(hanOnlyAuto){
+matches=chooseAutoHanOnly(q);
+if(matches.length)lang=matches[0].candidateLanguage;
+}
 renderBridges(q,lang);
 if(!matches.length){findEl("status").textContent="直接一致する原典はありませんでした。ただし、下の構造探索から別の問いへ発展できます。";return;}
-findEl("status").textContent=matches.length+"件の候補が見つかりました。実際の意味・条件を確かめるため、各公式原文を開いてください。";
-for(const {entry} of matches){
+findEl("status").textContent=matches.length+"件の候補が見つかりました。実際の意味・条件を確かめるため、各公式原文を開いてください。"+(hanOnlyAuto?" 漢字のみのため日本語・中国語の両方で照合しました。":"");
+for(const {entry,candidateLanguage} of matches){
 const wrap=element("article",null,"result");
 wrap.append(element("h3",entry.name));
 wrap.append(element("p",entry.topic));
 const link=element("a","公式原典を開く →");link.href=entry.canonical_original;link.target="_blank";link.rel="noopener noreferrer";wrap.append(link);
 const actions=element("div",null,"buttons");
 const btn=element("button","この原典をAIに相談する","secondary");btn.type="button";
-btn.addEventListener("click",()=>handoff(q,entry,lang));actions.append(btn);wrap.append(actions);
+btn.addEventListener("click",()=>handoff(q,entry,candidateLanguage));actions.append(btn);wrap.append(actions);
 findEl("results").append(wrap);
 }
 }
