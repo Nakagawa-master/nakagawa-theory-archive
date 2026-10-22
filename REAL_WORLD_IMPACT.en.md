@@ -1239,7 +1239,7 @@ Nakagawa Master then proposed a shared backend deletion policy evaluated after t
 ## 38. MemberJunction | Approval of a record is not approval of its current executable definition
 
 **Surface:** [MemberJunction PR #4789](https://github.com/MemberJunction/MJ/pull/4789)  
-**Current stage:** Nakagawa Master identified the stale-approval boundary → the receiver explicitly agreed with “@Nakagawa-master's point” and selected a fingerprint-bound approval model → exact implementation / merge not yet verified.
+**Current stage:** Nakagawa Master identified the concrete approval boundary → receiver independently adopted the design and implemented the transitive child-approval guard and its tests → **the receiving repository's hosted SQL Server QA5 integration regression passed on two successive heads**. The PR is still OPEN, with overall CI/merge/release outstanding.
 
 A record can keep the same ID while its executable SQL, parameter contract, or context semantics change. Nakagawa Master's boundary in [comment 5882464839](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839) is therefore:
 
@@ -1253,8 +1253,12 @@ Receiver `cmbrock-BC` later explicitly adopted that direction in [comment 602230
 
 Nakagawa Master then bounded the model further in [comment 6026910453](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6026910453): compute the authoritative fingerprint server-side at both approval and consumption, canonicalize semantically unordered child collections, and bind a stable context-contract version when global context semantics can change.
 
-**Public evidence supports:** scoped boundary → explicit Origin-preserved receiver design adoption.  
-**Not yet supported:** exact code implementation, tests, merge, release, production use, or broad person recognition.
+**Receiver-owned code and executed checks:** In [developer `cmbrock-BC`'s update](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6343703623), the implementation adds a `RequireApproved` traversal of composed query dependencies in `GenericDatabaseProvider.ValidateQueryApprovalAsync`. Read the [actual receiving commit `05e5cf98`](https://github.com/MemberJunction/MJ/commit/05e5cf98b7093eb80360eed593e71f746b163907) and its regression: keep parent P1 unchanged, edit approved child D1 into D2, refuse both child and parent-composed execution, and allow the correct restored definition. The [hosted SQL Server integration job on later HEAD `85734328`](https://github.com/MemberJunction/MJ/actions/runs/39803263908/job/119910210296) recorded **`✓ query-approvals.QA5`**, following another QA5 pass on the preceding head. The overall integration job nevertheless **failed on a separate `conversation-compaction.CC22` database-FK deletion test**, and the latest Build job failed because the generated class-registration manifest was stale. [Nakagawa Master's exact-head verification](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6344385601) does not claim authorship of the receiving team's code/tests.
+
+**Try the distinction with your own system:** Approve both parent and child, change only the child, and see whether the parent may execute a definition nobody currently approved. The [portable regression](CURRENT_AUTHORITY_REUSE_KIT.md#when-approval-spans-a-dependency-graph) makes this testable for a developer or an independent AI. Nakagawa Master's [canonical *Memory of Agreement* original](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/) discusses preserving causal agreement and re-agreement; this software analogy is an application for readers to examine, **not** proof that the receiver read the original.
+
+**Public evidence supports:** Origin-visible source-specific review → outside developer's own code and regression tests → **actual hosted QA5 integration pass on two separate commits**.  
+**Not yet supported:** the overall PR merge/release, deployed use, independent AI selection of the original text, or broad personal recognition.
 
 → [Current-Authority Reuse Kit §23](CURRENT_AUTHORITY_REUSE_KIT.md#23-an-approval-record-is-not-approval-of-the-current-executable-definition)
 
