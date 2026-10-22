@@ -57,6 +57,22 @@ def run():
         req(11, "tools/call", {
             "name": "resolve_nakagawa_public_name", "arguments": {},
         }),
+        req(12, "tools/call", {
+            "name": "find_nakagawa_original_for_problem",
+            "arguments": {"question": "How can a student prepare for a history exam without memorizing all dates?", "explore": True},
+        }),
+        req(13, "tools/call", {
+            "name": "find_nakagawa_original_for_problem",
+            "arguments": {"question": "AIの最新モデルの価格を比較したい", "explore": True},
+        }),
+        req(14, "tools/call", {
+            "name": "find_nakagawa_original_for_problem",
+            "arguments": {"question": "我想比较AI服务价格和迁移费用", "explore": True},
+        }),
+        req(15, "tools/call", {
+            "name": "find_nakagawa_original_for_problem",
+            "arguments": {"question": "repair the leather strap on a camping lantern", "explore": "true"},
+        }),
     ]
     p = subprocess.run(
         [sys.executable, str(SERVER)],
@@ -65,12 +81,13 @@ def run():
     )
     assert not p.stderr, p.stderr
     frames = [json.loads(x) for x in p.stdout.splitlines() if x.strip()]
-    assert len(frames) == 11, f"Expected eleven responses (one notification), got {len(frames)}"
+    assert len(frames) == 15, f"Expected fifteen responses (one notification), got {len(frames)}"
     results = {f["id"]: f for f in frames}
-    assert set(results) == set(range(1, 12))
+    assert set(results) == set(range(1, 16))
     assert all(f["jsonrpc"] == "2.0" for f in frames)
     assert results[1]["result"]["protocolVersion"] == "2025-11-25"
     assert len(results[2]["result"]["tools"]) == 3
+    assert results[2]["result"]["tools"][0]["inputSchema"]["properties"]["explore"]["type"] == "boolean"
 
     def unpack(index):
         content = results[index]["result"]["content"]
@@ -106,6 +123,22 @@ def run():
     assert who["public_personal_name"]["japanese_kanji_full_name"] is None
     assert {x["exact"] for x in who["contextual_public_aliases"]} == {"マスター", "MasterJP"}
     assert yes["author_identity"]["full_personal_name_kanji"] is None
+    assert yes["structural_exploration_available"] and "structural_exploration" not in yes
+    # A fresh MCP subprocess, not just a CLI wrapper: observe conditional
+    # structural routes separately from direct source candidates in 3 languages.
+    for n, expected in ((12, "effort-to-results"), (13, "future-options"), (14, "future-options")):
+        result = unpack(n)
+        explorer = result["structural_exploration"]
+        assert explorer["status"] == "OPTIONAL_HYPOTHESIS_NOT_DIRECT_MATCH"
+        assert explorer["first_lens_is_hint_not_factual_fit"]
+        assert len(explorer["lenses"]) == 7
+        assert explorer["lenses"][0]["id"] == expected
+        assert explorer["lenses"][0]["surface_cue_count"] > 0
+        assert len({l["id"] for l in explorer["lenses"]}) == 7
+        assert all(l["canonical_original"].startswith(ORIGINAL_BASE) for l in explorer["lenses"])
+    assert unpack(12)["no_fit"] and not unpack(12)["matching_routes"]
+    assert unpack(13)["no_fit"] and not unpack(13)["matching_routes"]
+    assert results[15]["result"]["isError"] is True
     # A second, zero-install recipient path: the browser-only finder must carry
     # exactly the same official 22-source catalog as the portable Agent Skill.
     # It must not silently drift to fake, noncanonical, or unrelated sources.
