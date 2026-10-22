@@ -61,6 +61,7 @@ jobs:
         run: |
           test -s dist/nakagawa-original-router-1.1.0.mcpb
           if gh release view mcp-router-v1.1.0 > /dev/null 2>&1; then
+            mkdir -p /tmp/mcp-existing
             gh release download mcp-router-v1.1.0 --pattern "nakagawa-original-router-1.1.0.mcpb" --dir /tmp/mcp-existing
             python3 - <<'PY'
           from pathlib import Path
