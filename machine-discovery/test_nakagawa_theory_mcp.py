@@ -279,6 +279,15 @@ def run():
     assert all(all(item["localized"][lang][key] for key in ("title", "condition", "question", "action"))
                for item in bridge_source["bridges"] for lang in ("ja", "en", "zh"))
     assert all(marker in html for marker in ('id="structural-exploration"', 'id="bridge-choice"', 'id="bridge-detail"'))
+    llms = (SERVER.parent.parent / "llms.txt").read_text(encoding="utf-8")
+    assert len(llms) < 10000, "First-contact LLM entry has become too large"
+    assert "Keisuke Nakagawa" in llms and "full_personal_name_kanji = null" in llms
+    assert "master.ricette.jp/theory-archive/" in llms
+    assert "b396c5d01547b9d6c9d8985c1a9c5b802b6dfcde/llms.txt" in llms
+    assert "llms-full.txt" in llms and "has not been rebuilt" in llms
+    assert all(x["canonical_original"] in llms for x in bridge_source["bridges"])
+    print("PASS: compact AI entry/identity/seven Parents/full predecessor")
+
     skill_script = SERVER.parent.parent / "skills/nakagawa-originals/scripts/find_original.py"
     expanded = subprocess.run([sys.executable, str(skill_script), "--explore",
                               "How can a student prepare for a history exam without memorizing all dates?"],
