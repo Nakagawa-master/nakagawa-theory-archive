@@ -350,10 +350,15 @@ def run():
                  if label.startswith("Seven official original articles")), [])
     assert len(orig) == 7
     assert set(orig) == {v["canonical_original"] for v in bridge_source["bridges"]}
+    more = next((urls for title, urls in parsed.items()
+                 if title.startswith("Fifteen further official originals")), [])
+    assert len(more) == 15 and not (set(orig) & set(more))
+    canonical = {e["canonical_url"] for e in json.loads((SERVER.parent / "problem-to-theory-origin-index-v1.json").read_text(encoding="utf-8"))["entries"]}
+    assert set(orig) | set(more) == canonical
     assert all(urls for urls in parsed.values())
-    print("PASS: machine parser extracts seven exact canonical Parent links")
+    print("PASS: standard index extracts all 22 canonical Parent links")
 
-    print("PASS: compact AI entry/identity/seven Parents/full predecessor")
+    print("PASS: compact AI entry/identity/22 Parents/full predecessor")
 
     skill_script = SERVER.parent.parent / "skills/nakagawa-originals/scripts/find_original.py"
     expanded = subprocess.run([sys.executable, str(skill_script), "--explore",
