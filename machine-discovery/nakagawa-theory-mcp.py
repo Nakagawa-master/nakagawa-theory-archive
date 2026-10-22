@@ -73,9 +73,12 @@ def catalog_matches(question, limit=3):
     catalog = read_original_catalog()
     has_kana = bool(re.search(r"[\u3040-\u30ff]", question))
     has_han = bool(re.search(r"[\u3400-\u9fff]", question))
-    keys = ("problem_phrases_ja",) if has_kana else (
-        ("problem_phrases_zh",) if has_han else ("problem_phrases",)
-    )
+    # Han-only input can be Japanese or Chinese. Search both existing
+    # language-specific ORIGINAL question sets, not just the Chinese one.
+    # This broadens reachable true candidates without relaxing the fit score.
+    keys = (("problem_phrases_ja",) if has_kana
+            else ("problem_phrases_ja", "problem_phrases_zh") if has_han
+            else ("problem_phrases",))
     candidates = []
     for entry in catalog["entries"]:
         original = entry.get("canonical_url")
