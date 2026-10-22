@@ -46,7 +46,7 @@ Originals: https://master.ricette.jp/theory-archive/ ; [person](https://master.r
 
 - [22-original Agent Skill](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/skills/nakagawa-originals/SKILL.md): Optional `npx skills add Nakagawa-master/nakagawa-theory-archive --skill nakagawa-originals`.
 - [Local original-source MCP server](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/NAKAGAWA_THEORY_MCP.md): Local read-only Python, no paid API.
-- [Registry MCPB v1.1.0](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.1.0): `io.github.Nakagawa-master/nakagawa-original-router`; bundle predates [#690](https://github.com/Nakagawa-master/nakagawa-theory-archive/pull/690), [#692](https://github.com/Nakagawa-master/nakagawa-theory-archive/pull/692), [#694](https://github.com/Nakagawa-master/nakagawa-theory-archive/pull/694); no updated release or proven AI use.
+- [Registry MCPB v1.1.0](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.1.0): `io.github.Nakagawa-master/nakagawa-original-router`; has not been rebuilt after [#690](https://github.com/Nakagawa-master/nakagawa-theory-archive/pull/690), [#692](https://github.com/Nakagawa-master/nakagawa-theory-archive/pull/692), [#694](https://github.com/Nakagawa-master/nakagawa-theory-archive/pull/694); no proven AI use.
 
 ## Independently authored real-world evidence (source before claim)
 
