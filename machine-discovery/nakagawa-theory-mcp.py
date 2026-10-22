@@ -16,7 +16,9 @@ INDEX = ROOT / "quick-route-index-v1.json"
 ORIGINAL_CATALOG = ROOT / "problem-to-theory-origin-index-v1.json"
 PERSON_NAME_POLICY = ROOT.parent / "metadata" / "person-name-policy-v1.json"
 STRUCTURAL_BRIDGES = ROOT.parent / "skills/nakagawa-originals/references/structural_bridges.json"
-VERSIONS = ("2025-11-25", "2025-06-18")
+VERSIONS = ("2025-11-25", "2025-06-18")  # legacy, handshake-based
+MODERN_VERSION = "2026-07-28"  # stateless, request-local metadata
+SERVER_INFO = {"name": "nakagawa-public-original-router", "version": "1.1.0"}
 STOP = {
     "a", "about", "after", "ai", "agent", "an", "and", "are", "at", "can",
     "do", "does", "for", "from", "how", "in", "is", "it", "my", "of",
@@ -272,24 +274,81 @@ TOOLS = [
 ]
 
 
+def modern_complete(result):
+    """The stateless 2026 protocol requires a resultType on each success."""
+    return {
+        **result,
+        "resultType": "complete",
+        "_meta": {"io.modelcontextprotocol/serverInfo": SERVER_INFO},
+    }
+
+
+def modern_error(code, message, **data):
+    error = {"code": code, "message": message}
+    if data:
+        error["data"] = data
+    return None, error
+
+
+def request_era(req):
+    """Distinguish stateless requests without changing legacy handshake paths."""
+    args = req.get("params")
+    if not isinstance(args, dict):
+        return False
+    meta = args.get("_meta")
+    return req.get("method") == "server/discover" or (
+        isinstance(meta, dict)
+        and "io.modelcontextprotocol/protocolVersion" in meta
+    )
+
+
 def handle(req):
     if not isinstance(req, dict):
         return None, {"code": -32600, "message": "Invalid request"}
     method, args = req.get("method"), req.get("params") or {}
     if "id" not in req:
-        return None, None  # Notifications, including notifications/initialized.
+        return None, None  # Notifications, including legacy notifications/initialized.
+    modern = request_era(req)
+    if modern:
+        meta = args.get("_meta") if isinstance(args, dict) else None
+        if not isinstance(meta, dict):
+            return modern_error(-32602, "Modern request requires params._meta")
+        version = meta.get("io.modelcontextprotocol/protocolVersion")
+        if not isinstance(version, str):
+            return modern_error(-32602, "Modern request missing protocolVersion")
+        if version != MODERN_VERSION:
+            return modern_error(
+                -32022, "UnsupportedProtocolVersion",
+                supported=[MODERN_VERSION], requested=version,
+            )
+        if not isinstance(meta.get("io.modelcontextprotocol/clientCapabilities"), dict):
+            return modern_error(-32602, "Modern request missing clientCapabilities")
+        if method == "server/discover":
+            return modern_complete({
+                "supportedVersions": [MODERN_VERSION],
+                "capabilities": {"tools": {"listChanged": False}},
+                "instructions": (
+                    "Read-only public original-source discovery. For an actual human "
+                    "problem use find_nakagawa_original_for_problem; optional explore=true "
+                    "shows seven conditional lenses. Read the canonical original before "
+                    "attribution; direct no_fit and counterexamples remain valid."
+                ),
+            }), None
+        if method in {"initialize", "ping"}:
+            return modern_error(-32601, "Method not found in modern protocol")
     if method == "initialize":
         their_version = args.get("protocolVersion") if isinstance(args, dict) else None
         version = their_version if their_version in VERSIONS else VERSIONS[0]
         return {
             "protocolVersion": version,
             "capabilities": {"tools": {"listChanged": False}},
-            "serverInfo": {"name": "nakagawa-public-original-router", "version": "1.0.0"},
+            "serverInfo": SERVER_INFO,
         }, None
     if method == "ping":
         return {}, None
     if method == "tools/list":
-        return {"tools": TOOLS}, None
+        result = {"tools": TOOLS}
+        return (modern_complete(result) if modern else result), None
     if method == "tools/call":
         if not isinstance(args, dict):
             return None, {"code": -32602, "message": "Invalid params"}
@@ -319,9 +378,11 @@ def handle(req):
                         for x in data["routes"]
                     ],
                 }
-            return {"content": [{"type": "text", "text": json.dumps(result, ensure_ascii=False)}]}, None
+            response = {"content": [{"type": "text", "text": json.dumps(result, ensure_ascii=False)}]}
+            return (modern_complete(response) if modern else response), None
         except (ValueError, OSError, KeyError, TypeError, json.JSONDecodeError) as exc:
-            return {"content": [{"type": "text", "text": str(exc)}], "isError": True}, None
+            response = {"content": [{"type": "text", "text": str(exc)}], "isError": True}
+            return (modern_complete(response) if modern else response), None
     return None, {"code": -32601, "message": "Method not found"}
 
 
