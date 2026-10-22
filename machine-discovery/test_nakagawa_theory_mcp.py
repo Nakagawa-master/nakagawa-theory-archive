@@ -40,6 +40,30 @@ def run():
         output = json.loads(direct.stdout)
         assert not output["no_fit"], output
         assert any(x["canonical_original"] == expected_parent for x in output[field]), output
+    # The direct candidate repair must also propagate its evidence-grounded
+    # Japanese/Chinese language to the optional seven actionable lenses.
+    # Earlier code found the correct Japanese Parent but still explained the
+    # condition and next action in Chinese because Han-only defaulted to zh.
+    for han_query, expected_lang in (
+        ("組織摩擦役割情報", "ja"),
+        ("组织摩擦角色信息", "zh"),
+    ):
+        routed = subprocess.run(
+            [sys.executable, str(SERVER), "--query", han_query, "--explore"],
+            capture_output=True, text=True, timeout=12, check=True
+        )
+        result = json.loads(routed.stdout)
+        candidates = [item for item in result["matching_routes"]
+                      if item["canonical_original"] == expected_parent]
+        assert candidates, result
+        assert candidates[0]["matched_question_language"] == expected_lang, result
+        explorer = result["structural_exploration"]
+        assert explorer["language"] == expected_lang, result
+        assert len(explorer["lenses"]) == 7
+        assert all(x["condition"] and x["question"] and x["action"]
+                   for x in explorer["lenses"])
+    print("PASS: Japanese/Chinese Han-only original → matching-language actionable lens")
+
     nofit_han = subprocess.run(
         [sys.executable, str(SERVER), "--query", "皮革灯笼"],
         capture_output=True, text=True, timeout=12, check=True
