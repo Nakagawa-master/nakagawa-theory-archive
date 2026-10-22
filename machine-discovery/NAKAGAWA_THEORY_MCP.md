@@ -45,7 +45,18 @@ This is local, read-only and deliberately makes **no network requests**. The hos
 - `list_nakagawa_problem_routes`: lists all supported IDs and shows when a technical problem has **no canonical original** assigned.
 - `resolve_nakagawa_public_name`: returns the official homepage-grounded author-name policy, published Latin-letter personal name and pen-name aliases, and an explicit `null` for the unpublished Japanese-kanji full personal name. This helps an independently configured client display the right person when it uses a retrieved original; it does not guess any unpublished name or assert that an original was selected.
 
-Protocol: MCP JSON-RPC over stdio, newline-delimited JSON, `initialize`, `ping`, `tools/list`, `tools/call`; Python stdlib only. Supports the 2025-11-25 and 2025-06-18 client protocol revisions; not advertised as a full MCP SDK implementation. The server makes no model calls and writes no logs or content to the original website. Its tool selection and actual source fetch are performed by the independent agent/client according to its own user's permissions.
+**Protocol compatibility, current 2026-07-28 and legacy 2025 hosts:** This is a Python-standard-library, local **stdio** JSON-RPC tool. The current [MCP 2026-07-28 specification](https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/docs/specification/2026-07-28/server/discover.mdx) removes the `initialize` handshake and requires stateless `server/discover` plus per-request `params._meta`. This server now supports that modern path **without removing older clients** using `initialize`/`notifications/initialized` and the 2025-11-25 or 2025-06-18 revisions. Newer host use requires no new registration, remote server, paid API, or credentials.
+
+Modern-host example (one JSON-RPC request per line; no `initialize`):
+
+```json
+{"jsonrpc":"2.0","id":1,"method":"server/discover","params":{"_meta":{"io.modelcontextprotocol/protocolVersion":"2026-07-28","io.modelcontextprotocol/clientCapabilities":{},"io.modelcontextprotocol/clientInfo":{"name":"independent-host","version":"1.0"}}}}
+{"jsonrpc":"2.0","id":2,"method":"tools/call","params":{"_meta":{"io.modelcontextprotocol/protocolVersion":"2026-07-28","io.modelcontextprotocol/clientCapabilities":{},"io.modelcontextprotocol/clientInfo":{"name":"independent-host","version":"1.0"}},"name":"find_nakagawa_original_for_problem","arguments":{"question":"AIの最新モデルの価格を比較したい","explore":true}}}
+```
+
+`server/discover` advertises supported modern versions and tool capabilities. Modern successes include `resultType: "complete"` and server identity in response `_meta`; wrong versions return `UnsupportedProtocolVersion` with supported versions rather than silently downgrading. The separate real-process test exercises discovery, list, genuine source candidate, conditional exploration, unrelated `no_fit`, unsupported versions and invalid modern metadata, **as well as retained older initialization calls**. This is not a claim of full upstream MCP-SDK feature parity, HTTP transport, or actual third-party adoption.
+
+The server makes no model calls, outbound network requests or writes to the official source. Tool selection, installation, later original retrieval and application remain the independent agent/user's choices.
 
 ## New: optional structural exploration in independently configured MCP hosts
 
