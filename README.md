@@ -4,6 +4,8 @@
 
 中川マスター（Nakagawa Master／Keisuke Nakagawa）は、AI、仕事、組織、社会制度、文明の未来などを、結果だけでなく、それを生み出す構造や因果から考えています。ここでは、その理論群を初めて知る人も、研究・開発に使いたい人も、**何を主張し、何が実際に確かめられ、どこから原文を読めるのか**を、自分の関心に沿って確認できます。
 
+**合意を決めた責任者が辞めたら、部署どうしの約束も消える？** 消えるのは約束ではなく、旧責任者がそれを書き換える権限です。この区別を[中川マスターが別の著者へ具体的に提案](https://github.com/kishibashi3/publications/issues/92#issuecomment-6058017201)し、著者が自分の原則から確認・範囲を限定した上で[実際に文書を改訂してマージ](https://github.com/kishibashi3/publications/pull/102)しました。[担当交代の場面で自分でも使える確認手順と公式原典『合意の記憶』](APPLIED_ENTRY_POINTS.md#責任者が辞めたら会社がすでに交わした約束も消える)から確かめられます。
+
 **ニュースやAIのレポートに「3つの情報源が確認」と書いてある。その3つは本当に別の情報源？** 中川マスターの[実際の編集議論と採用](https://github.com/022740mix-spec/AI-News/pull/131)を、別の編集部・開発者・AIが自分のGitHubでそのまま試せる[無料の出典独立性チェック（GitHub Action）](.github/actions/evidence-roots-check/README.md)にしました。PRごとに同じ元発表の転載を複数の独立根拠と誤認していないか検査できます。チェックと原典の[第8論](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)は別物で、元記事・実際の証拠は自分でも確かめられます。
 
 **AIチームの「担当名」が同じなら、古い終了通知で新しい担当の許可を取り消してよい？** Qwen Codeの開発者は、[中川マスターの具体的な指摘に本人宛てで返信](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6300322429)し、「承認には担当の結び付け世代IDがあるのに、終了通知は名前しか渡さない」という構造を独立に確認しました。**実際に通知が順序を追い越すかは未確認**で、[追試のためのコード候補](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6316921964)を別途提示しています。[技術的な原資料と進捗](REAL_WORLD_IMPACT.md#49-qwen-codeテスト用の不足1行がai開発ツールのビルドを止める中川マスターの指摘と受け手の修正)を自分で確かめられます。これは「過去の同じ名前」と「いまの実際の相手」を取り違えないための問いです。
@@ -58,7 +60,7 @@ npx skills use Nakagawa-master/nakagawa-theory-archive@nakagawa-originals
 
 - **ニュースの出典:** 10本のリンクが、独立した10件の裏づけとは限りません。編集・調査の入口は [ブラウザで試せる根拠の独立性チェック](machine-discovery/evidence-root-check.html)（GitHubの **Raw** を保存して開く・通信不要）。コードやAI処理で検査する方は [Python版](machine-discovery/evidence-root-check.py)。どちらも入力された起点・関係の整合性を確認するもので、情報の真偽を自動判定するものではありません。
 - **AIの会話保存:** 「重複を無視した」はずなのに、前段の書込みが残る。実際のSQLiteだけで順序を比べる [再現モデル](machine-discovery/sqlite-idempotency-side-effect-probe.py)。
-- **AIの仲間の完了表示:** 失敗した作業が成功に見えたり、未配送の報告が終了判定から漏れたりしないかを確認する [20ケースのオフライン検査](machine-discovery/agent-team-signal-truth-probe.py)（[実際のQwen側修正の出典と作者はQuickstartに記載](QUICKSTART.md)）。
+- **AIの仲間の完了表示:** 失敗した作業が成功に見えたり、未配送の報告が終了判定から漏れたりしないかを確認する [38ケース・5種類のオフライン検査](machine-discovery/agent-team-signal-truth-probe.py)（[実際のQwen側修正の出典と作者はQuickstartに記載](QUICKSTART.md)）。
 - **AIの仲間の二通の返事:** 同じ送信者・受信者でも別のメッセージは消さず、ツール進捗だけを正しくまとめる [14ケースの独立した合成比較器](machine-discovery/agent-event-distinctness-probe.py)（[Qwen開発者による実際の修正と実行手順](QUICKSTART.md#6-aiの仲間から二通届いた画面では一通にまとめられていませんか)）。
 - **AIの仲間の返事の保存:** 「受信箱は読取済み」と「保存記録に実際に残った」は別です。中川マスターの[具体的なレビュー](https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5540696114)を受けて[Qwen開発者が終了経路のテストを実装](https://github.com/QwenLM/qwen-code/commit/62c03b2eb62975775c66968d97f27f01028385a3)した順序を、[17ケースのオフラインモデル](machine-discovery/agent-delivery-durability-boundary-probe.py)で確かめられます（[使い方](QUICKSTART.md#4-aiの返事を読取済みにした保存先にも残った)）。
 - **AIの承認と外部処理:** 「実行を承認した」は「外部で一度だけ実行された」ではありません。成功の返答が消えた場合の照合と、返答が不明なまま「もう一度」と許可されても安全に再実行できない条件を[14ケースのオフライン検証器](machine-discovery/approval-effect-boundary-lab.py)で確認できます（[日本語・English手順](QUICKSTART.md#5-aiに承認した外部の処理も一度だけ)）。
