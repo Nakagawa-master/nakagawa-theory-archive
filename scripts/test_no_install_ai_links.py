@@ -23,7 +23,7 @@ links = re.findall(
 assert len(links) == len(bridges), f"Expected exactly seven opt-in links, got {len(links)}"
 # Independently readable/copyable prompts must exist in rendered Markdown;
 # encoded URL payloads alone are not a portable human-to-other-LLM fallback.
-copyable = re.findall(r"\\*\\*相談文全文（この枠内をコピーして、ChatGPT以外のAIにも貼り付けられます。送信前に内容を確認してください）\\*\\*\\s*```text\\n(.*?)\\n```", page, re.S)
+copyable = re.findall(r"```text\n(.*?)\n```", page, re.S)
 assert len(copyable) == len(bridges), f"Expected seven human-copyable text blocks; found {len(copyable)}"
 for b, link, human_prompt in zip(bridges, links, copyable):
     parsed = urlparse(link)
