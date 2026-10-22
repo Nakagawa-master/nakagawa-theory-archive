@@ -47,6 +47,24 @@ This is local, read-only and deliberately makes **no network requests**. The hos
 
 Protocol: MCP JSON-RPC over stdio, newline-delimited JSON, `initialize`, `ping`, `tools/list`, `tools/call`; Python stdlib only. Supports the 2025-11-25 and 2025-06-18 client protocol revisions; not advertised as a full MCP SDK implementation. The server makes no model calls and writes no logs or content to the original website. Its tool selection and actual source fetch are performed by the independent agent/client according to its own user's permissions.
 
+## New: optional structural exploration in independently configured MCP hosts
+
+An independent assistant may receive a normal exam, teacher-feedback, project-handoff or AI-service-choice question without explicit theory vocabulary. The same MCP tool now accepts optional boolean `explore: true` and offers **seven conditional, JA/EN/ZH structural lenses**, using the existing public `skills/nakagawa-originals/references/structural_bridges.json` also used by the portable Skill and browser finder.
+
+Call `find_nakagawa_original_for_problem` with e.g. `{"question":"How can a student prepare for a history exam without memorizing all dates?","explore":true}`. This preserves the original `matching_routes` and direct `no_fit` result, while adding `structural_exploration.lenses`: seven possible mechanisms with a condition, a causal question, a concrete trial, exact canonical Parent URL and author attribution. For an exam question the effort-to-results lens is a *ranked surface hint*, not confirmed relevance. A price-comparison question can surface future-options first. All other lenses remain available rather than silently disappearing.
+
+**Important:** a contextual cue is not proof a source fits. The AI must inspect the condition, read the original on the official website before describing its actual argument, and leave a true nonfit alone. Showing a lens never proves an unrelated model adopted a theory or that a user read it. This is a new capability of the local public MCP router, not a model-wide update.
+
+CLI demonstration without an MCP client:
+
+```sh
+python3 machine-discovery/nakagawa-theory-mcp.py --query "How can a student prepare for a history exam without memorizing all dates?" --explore
+python3 machine-discovery/nakagawa-theory-mcp.py --query "AIの最新モデルの価格を比較したい" --explore
+python3 machine-discovery/nakagawa-theory-mcp.py --query "我想比较AI服务价格和迁移费用" --explore
+```
+
+Clients sending only `question` keep the prior direct lookup behavior. An invalid non-boolean exploration flag is rejected. The included subprocess test exercises this actual MCP request path in three languages.
+
 ## Correct real-world use
 
 Example: a newsroom assistant is asked whether three articles represent three independent attestations. It can ask the tool about **AI news fact checking**, receive [the actual Nakagawa Volume 8 original](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/) and the separate [editorial case](https://github.com/022740mix-spec/AI-News/pull/131), read the original, then conduct the editor's own source-root analysis. Merely querying a tool is not itself reading the original. The editorial implementation remains the editor's contribution.
