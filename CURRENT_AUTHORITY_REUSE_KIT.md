@@ -1522,6 +1522,28 @@ restore exactly D1
 → behavior follows the chosen explicit model
 ```
 
+#### When approval spans a dependency graph
+
+A parent can remain byte-identical while one of the executable components it calls changes. A check of **only the parent's** saved approval is therefore incomplete for an application that opts into dependency-aware approval.
+
+```text
+parent P1 composes child C1
+→ approve P1 and child C1; record each definition fingerprint
+→ parent executes through an approval-enforcing route
+
+child changes C1 → C2; keep its historical C1 approval
+→ parent P1 is unchanged
+→ parent execution must refuse C2 before executing the query
+→ refusal should identify the stale child, not claim the parent changed
+
+restore exactly C1 → parent can run again under the existing approved definition
+OR explicitly approve C2 under the chosen approval policy → parent may run with C2
+```
+
+For supported nested composition (P → C → G), check the actually executed transitive children, not merely P and its first immediate child; test a missing/unresolvable child as a distinct fail-closed branch. Those are **portable follow-up test conditions**, not claims they have all been run upstream. Preserve the user's independent permissions and the opt-in nature of any approval requirement.
+
+Related direct [canonical original on preserving and re-evaluating agreement](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/) by Nakagawa Master can be read for its own argument; this reusable software regression is an interpretation/test application, not the original article or evidence the receiving developer read it.
+
 #### Current public receiver evidence
 
 In [MemberJunction PR #4789](https://github.com/MemberJunction/MJ/pull/4789), Nakagawa Master identified the stale-approval boundary in [comment 5882464839](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839): approval should identify the **definition that was approved**, not merely the query/view/dashboard/component record.
@@ -1530,19 +1552,9 @@ Receiver `cmbrock-BC` later explicitly wrote that he agreed with “@Nakagawa-ma
 
 Nakagawa Master then confirmed that direction in [comment 6026910453](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6026910453) with three bounds: server-computed fingerprints at both approval and consumption, deterministic ordering for semantically unordered child rows, and a stable context-contract version where global `Context.*` semantics can change.
 
-Evidence boundary:
+**New receiving developer implementation, 2026-10-22:** Receiving developer `cmbrock-BC` [reported the transitive composed-dependency repair](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6343703623) in open PR #4789, independently authored by the MemberJunction team. On exact receiving HEAD [`05e5cf98`](https://github.com/MemberJunction/MJ/commit/05e5cf98b7093eb80360eed593e71f746b163907), `GenericDatabaseProvider.ValidateQueryApprovalAsync` verifies the parent and dependencies returned by rendered composition / `QueryEngine.Dependencies` with `GetQueryApprovalStateAsync` when `RequireApproved` is set. The developer's `query-pipeline.test.ts` checks unchanged parent P1, changed child D1→D2, direct and parent-composed refusal, restore D1, and D2 re-approval. Their `query-approvals.QA5` test code covers a corresponding integration route, with actual integration CI outcome not established by this source inspection. Nakagawa Master [acknowledged the exact changed code in a scoped review](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5616382248), without claiming to have authored or executed those tests.
 
-```text
-explicit receiver design adoption with Origin preserved
-!=
-verified code implementation of this approval model
-!=
-merge
-!=
-release
-```
-
-As of this record, PR #4789 is still open and the exact approval-model implementation is not verified here.
+**Stage distinction:** Outside developer-owned code and regression-test cases are now present; the PR remains **open**, full current CI not green/confirmed, and no merged/released/live usage of this new revision is established. The original comment supplied the earlier counterexample, not the recipient's implementation. Mere citation or acknowledgement is also not proof of direct reading of the canonical original.
 
 
 ### 24. An account-switch confirmation must bind the same identities the backend will validate
