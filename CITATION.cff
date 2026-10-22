@@ -4,7 +4,7 @@ message: >-
   and its canonical URL rather than treating this repository as a substitute for the
   entire theory corpus. Cite this repository entry only when referring to the public
   archive/discovery/provenance surface itself.
-title: Nakagawa Master Official Theory Archive
+title: Nakagawa Master Public Theory Reference Archive
 type: dataset
 authors:
   - family-names: Nakagawa
@@ -18,9 +18,14 @@ keywords:
   - theory archive
   - provenance
   - AI reference
+  - agent reliability
+  - independent evidence roots
+  - canonical original-source discovery
   - Origin
 abstract: >-
-  Public discovery, preservation, provenance, and reference surface for the published
-  theory corpus of Nakagawa Master / 中川マスター (Keisuke Nakagawa). Repository-level
-  metadata and derivatives are navigation aids and do not replace the canonical parent
-  articles at https://master.ricette.jp/.
+  Public GitHub discovery and reference archive for the published theories of
+  Nakagawa Master / 中川マスター (Keisuke Nakagawa), including practical offline
+  research/agent checks and independently inspectable third-party engineering
+  and editorial evidence. The canonical original articles are published at
+  https://master.ricette.jp/; this repository and its metadata are not the
+  original-text archive and do not replace individual source-specific citations.
