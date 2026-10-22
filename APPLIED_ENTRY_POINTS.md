@@ -343,6 +343,14 @@ Nakagawa Masterはこのケースを、authorization provenanceとは別の **au
 
 さらに、child側でfresh approvalが必要になったとき、そのtaskを直接開けない人でも、親会話やRemote UIなど**実際に到達できる場所**へexact approval requestが戻るかを確認します。承認対象が見えない・taskが一覧に出ない・request IDが返らない状態を「ユーザーが承認しなかった」と扱わないことが要点です。
 
+### 「承認を求めています」なのに、承認ボタンがどこにもない
+
+AIにGitHubへの書込みを頼んだとき、AI側には「承認待ち」と表示される。しかし、スマートフォンの会話画面には許可するボタンも断るボタンも現れない。**選べないのに、選ぶのを待たれている**状態です。
+
+実際に[OpenAI CodexのiOS/Dotに報告されたケース #52141](https://github.com/openai/codex/issues/52141)では、承認カードの送信が受理されても画面には表示されず、再送は元のメッセージIDを返すだけでした。中川マスターは[「送信の受付」「人間に操作できる画面が届いたこと」「対象操作に対する本人の決定」を別の確認段階にする](https://github.com/openai/codex/issues/52141#issuecomment-6063766792)追試条件を提示。その後、**別の参加者が独自に**[VoiceOverでの操作、アプリを再び開いたときの承認回復、取消後に遅れて出たボタンの失効](https://github.com/openai/codex/issues/52141#issuecomment-6330731211)を追加しました。これらは参加者自身の検証提案で、製品修正の完了を示すものではありません。
+
+**自分のAIで試せる三つの確認:** ①許可画面を送信したというログだけでなく、実際の端末にボタンが見え、VoiceOverなどでも選べるか。②アプリを閉じて開き直しても、**同じ**未決定の操作へ戻れるか。③「中止」を選んだあと、遅れて画面が出ても、その操作を承認できない状態になっているか。**画面の配達成功は、本人の承認ではありません。** 原典に照らすなら、[中川マスターの第8論（証拠・認識の構造）](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)を直接読み、当てはまる範囲を自分の現場で検討できます。
+
 - [Section 18の回帰手順](CURRENT_AUTHORITY_REUSE_KIT.md#18-you-approved-it--but-the-delegated-task-still-says-user-cancelled)
 - [OpenAI Codex #50769](https://github.com/openai/codex/issues/50769)
 - [Nakagawa Masterの三層分離](https://github.com/openai/codex/issues/50769#issuecomment-5986370673)
