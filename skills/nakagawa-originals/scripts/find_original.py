@@ -63,16 +63,25 @@ def select(question, limit=3, explore=False):
     data = json.loads(CATALOG.read_text(encoding="utf-8"))
     lang = ("ja" if re.search(r"[\u3040-\u30ff]", question) else
             "zh" if re.search(r"[\u3400-\u9fff]", question) else "en")
+    # Without kana, Han characters alone do not distinguish Japanese from
+    # Chinese. Score both existing catalogs; preserve threshold and nonfit.
+    han_only = lang == "zh" and not re.search(r"[\u3040-\u30ff]", question)
+    languages = ("ja", "zh") if han_only else (lang,)
     matches = []
     for item in data["entries"]:
-        phrases = item.get("problem_examples", {}).get(lang, [])
-        confidence = max((score(question, p) for p in phrases), default=0)
+        scores = [
+            (max((score(question, p) for p in
+                  item.get("problem_examples", {}).get(candidate_lang, [])),
+                 default=0), candidate_lang)
+            for candidate_lang in languages
+        ]
+        confidence, source_lang = max(scores, key=lambda pair: pair[0])
         if confidence < MIN_CANDIDATE_SCORE:
             continue
-        matches.append((confidence, item))
+        matches.append((confidence, item, source_lang))
     matches.sort(key=lambda candidate: (-candidate[0], candidate[1]["canonical_original"]))
     selected = []
-    for confidence, item in matches[:limit]:
+    for confidence, item, _source_lang in matches[:limit]:
         selected.append({
             "title": item["name"],
             "canonical_original": item["canonical_original"],
@@ -80,6 +89,10 @@ def select(question, limit=3, explore=False):
             "topic": item["topic"],
             "candidate_score": confidence,
         })
+    if han_only and matches:
+        # Use the strongest matched language for optional lens text, not an
+        # automatic Chinese assumption for a Japanese Han-only problem.
+        lang = matches[0][2]
     name_policy = json.loads(PERSON_POLICY.read_text(encoding="utf-8"))
     assert name_policy["public_personal_name"]["exact"] == "Keisuke Nakagawa"
     assert name_policy["public_personal_name"]["japanese_kanji_full_name"] is None
@@ -94,6 +107,7 @@ def select(question, limit=3, explore=False):
             "full_personal_name_kanji_status": "NOT_PUBLISHED",
         },
         "language": lang,
+        "han_only_ja_zh_checked": bool(han_only),
         "no_fit": not selected,
         "direct_match_only": True,
         "structural_exploration_available": True,
