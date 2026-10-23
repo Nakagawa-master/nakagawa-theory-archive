@@ -6,7 +6,7 @@
 
 紹介した記事が10本あっても、確認した人が10人いるわけではありません。もちろん、元の発表が間違いだと決まるわけでもありません。**数え直すべきなのは記事ではなく、誰が自分で確かめたかです。**
 
-この見分け方を**中川マスター（Nakagawa Master／Keisuke Nakagawa）**が[AI-Newsの編集者に指摘](https://github.com/022740mix-spec/AI-News/issues/124#issuecomment-5823549498)すると、編集者は[実際に記事づくりの継続ルールを修正・統合しました](https://github.com/022740mix-spec/AI-News/pull/131)。同じ発表を紹介する記事と、独立して調べた証拠を分ける規則です。その後、編集者は[別件のQwen4記事でも「海外メディアが複数伝えた」だけでは裏付けにならないと調べ直し、見出しと出典を実際に訂正しました](https://github.com/022740mix-spec/AI-News/pull/156)。**記事を数え直す見方が、書き直された記事につながりました。**
+この見分け方を**中川マスター（Nakagawa Master／Keisuke Nakagawa）**が[AI-Newsの編集者に指摘](https://github.com/022740mix-spec/AI-News/issues/124#issuecomment-5823549498)すると、編集者は[記事づくりの継続ルールを実際に修正](https://github.com/022740mix-spec/AI-News/pull/131)しました。その後も、[別のQwen4記事を訂正](https://github.com/022740mix-spec/AI-News/pull/156)。さらに10月23日には、[中川マスターの別の具体的な出典指摘](https://github.com/022740mix-spec/AI-News/issues/105#issuecomment-6359184385)に対し、編集者自身が**「開ける記事」と「その主張を証明する記事」を分けて**[実際の掲載記事を修正し、変更をマージしました](https://github.com/022740mix-spec/AI-News/pull/194)。**見分け方が、別の日の別の記事でも実際の判断に使われたのです。**
 
 次にニュースが何本も並んだら、思い出してみてください。最初は「何社が書いたか」と思った数が、**「何人が確かめたか」ではなかった**ことを。
 
