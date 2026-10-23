@@ -110,6 +110,22 @@ For comparison, [Concrete Problems in AI Safety](https://arxiv.org/abs/1606.0656
 
 **阅读与引用原则：** 请打开具体官方原文，核对其实际论证与适用条件，区别作者理论、这里的应用问题、其他研究者的成果。无证据不主张任何第三方 AI、论文或机构已采用这些理论。
 
+## Run a falsifiable offline experiment (no AI account, model API or server access)
+
+A reader can move from the question to a **real local check** without accepting an author's conclusion. These existing, open-source examples use synthetic data and require no credentials or network calls after cloning this repository. They are *application probes* that explore the questions above, not passages from the original theories or certification of any production system.
+
+| Research question → exact original | Run locally from the repository root | Positive and negative controls |
+| --- | --- | --- |
+| **5. Is a past approval still current?** [Agreement Memory](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/) | `python3 machine-discovery/agent-action-boundary-probe.py --self-test` ([source](machine-discovery/agent-action-boundary-probe.py)) | Compare mismatched/revoked/stale actor/action/policy epochs with a correctly bound still-valid grant; the sample fingerprints are illustrative, not secure authorization tokens. |
+| **5. After a stopped run, did the user ask for *that* task to continue?** [Agreement Memory](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/) | `node machine-discovery/stopped-run-new-task-boundary.mjs --self-test` ([source](machine-discovery/stopped-run-new-task-boundary.mjs)) | A fresh unrelated user request must not silently resume an old stopped task; an explicit, correctly scoped continue choice should still work. The model checks a prior receiving code shape but does not run the real SDK. |
+| **4. Did an appeal change the review and remedy path?** [Volume 7](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-07-ai-civilization-institutional-loop/) | `python3 machine-discovery/decision-review-transition-probe.py --self-test` ([source](machine-discovery/decision-review-transition-probe.py)) | Synthetic case fixtures require declared notice, reviewer, appeal, correction and rollback fields; they also reject AI-only final decisions. Filled fields **do not prove** any real remedy occurred. |
+
+**A concrete next step:** choose a single failure condition that matters to *your* system, run the appropriate local fixture, identify a case the rule would wrongly reject, and compare the observed outcome to the linked original and your existing safety model. A real result is a changed receiver-owned test, review decision or observed counterexample—not a self-reported adoption claim.
+
+**日本語:** 上記３つは、過去の承認の失効・停止後の再開条件・苦情後の救済経路を、合成データで試す既存コードです。原典本文の代わりではありません。ご自身の環境で、適用例と誤判定例の両方を確かめてください。
+
+**中文:** 上面的现有离线脚本可用合成数据测试旧批准的失效、暂停任务的错误续跑，以及申诉后的复核路径。它们不是原文，也不能证明真实系统已经安全；请同时检查适用案例和反例。
+
 ## Choose one research test, not six slogans
 
 1. Specify an actual safety threat model: actor, objective, environment, external effect, failure mode, time horizon and what humans/other systems could lose.
