@@ -22,7 +22,7 @@
 
 - **Nakagawa Master / 中川マスター**是Keisuke Nakagawa的笔名；在部分公开社交媒体或外部投稿中，也使用“マスター（Master）”与“MasterJP”名义。
 - 本仓库将Nakagawa Master作为这里所收录公开理论群的 **Origin / Author**。
-- 当前公开档案包含`OD001`至`OD311`的官方派生物。311是官方派生物条目数量，不是理论数量。
+- 当前公开资料库包含 `OD001` 至 `OD313` 共313个编号的官方派生物条目。该数字不表示313项独立已证实的成果，也不表示313个互不相同的原典URL。[可查看全部313个原始标题与返回原典的路径](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)。
 - 内容涉及AI、组织、商业、市场、制度、未来、文明、Origin与责任等多个领域。
 - canonical Parent、官方派生物、人类可读入口、FAQ、AI索引、机器发现与来历信息被分开维护，避免短摘要自行变成新的正本。
 - 在公开GitHub上，存在可以核验的案例：Nakagawa-master账号提出的具体设计边界，被独立第三方检查，并进入外部代码、测试、文档或已merge的实现。
@@ -58,7 +58,7 @@
 
 - **Qwen Code #13241** — Nakagawa-master提出的一个限定技术区分被写入代码和测试，并合入第三方project。之后，Qwen侧参与者又在另一段讨论中写到“option A, which @Nakagawa-master picked”。该变化也进入稳定版v0.25.0和Desktop产品。不过，这并不能证明独立end-user使用规模或广泛的人物认知。
 - **LangGraph #9106 → #9315 → v1.2.16** — 两名不同的外部参与者直接回应了中川マスター提出的“历史审批、当前执行权限、重复外部操作”之间的区分，并分别进行回归测试。之后，LangGraph的开发者独立完成[修复PR #9315](https://github.com/langchain-ai/langgraph/pull/9315)，该PR已**合并到主分支**并进入[官方v1.2.16版本](https://github.com/langchain-ai/langgraph/releases/tag/1.2.16)。修复代码及根因研究属于其独立作者，不能归为中川マスター的代码贡献。这里分别呈现第三方对其问题的实际回应，以及产品接收方确实完成修复并发布的事实。
-- **MemberJunction #4789** — 设计负责人明确提到“@Nakagawa-master's point”，决定把历史批准绑定到**当时被批准的实际定义**，而不是仅凭记录ID继续授权。接收方已在PR分支中实际实现[SHA-256定义指纹及Current/Stale审批状态判断](https://github.com/MemberJunction/MJ/blob/a4b193080a5eab109d322a073d1d17e863428a80/packages/MJCoreEntities/src/custom/approvals.ts)。但[PR #4789](https://github.com/MemberJunction/MJ/pull/4789)目前仍**未合并**，相关合并冲突、迁移和测试问题尚待接收方处理。这是“已实现、尚未合并”，不能与“尚无代码”混为一谈。
+- **MemberJunction #4789——一个人的具体问题，引发开发者修改，并得到另一位人类维护者的明确确认。** 历史记录显示“已批准”，但现在真正执行的内容发生改变，旧批准还能放行吗？[Nakagawa Master（`@Nakagawa-master`）提出这一边界](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839)，[接收方设计者直接提及其观点并选用基于当前定义的方案](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6022301400)。后来，[Nakagawa具体指出新增保存参数测试失败的原因](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6369711289)，[接收方开发者自主修改代码及正反回归测试](https://github.com/MemberJunction/MJ/commit/222047870b7de1f8eb5bfeaca1d969031c45da11)。**另一位人类维护者在[独立复审](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5631941835)中明确确认了这一诊断及修改。** 该维护者另外提出的SQL模板问题，以及开发者后续的相关改进，均归各自作者所有。此PR仍处于审查和检查阶段，尚不能视为已合并或产品部署。[可在自己的系统中测试父子审批及保存值权限](APPLIED_ENTRY_POINTS.md#承認したあと中身が変わったのにまだ承認済みで実行してよいのか)，并将软件应用与[《合意的记忆》官方原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)作比较。
 - **Publications #57 / #58 / #71** — 在`kishibashi3/publications`中，receiver明确接受Nakagawa Master关于“可逆性”与“主体自身authority增加”应分开的review，并在PR #57中把它作为第6个结构条件“自己权限固定”合入面向读者的正文，同时通过GitHub Pages发布。正文自身保留`@Nakagawa-master`作为来源。之后，同一receiver又在PR #58中把该边界作为D8复用并merge；后续PR #71的体系重组current head仍保留D8。PR #71尚未merge，大规模reader认知以及不同receiver之间的carry也尚未建立。
 
 - [Qwen Code #13241](https://github.com/QwenLM/qwen-code/pull/13241) / [之后再次提及判断来源](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)
