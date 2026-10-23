@@ -177,7 +177,8 @@
         "An AI agent got human approval, sent an external action, then lost the acknowledgement: can it retry without a verified effect receipt?",
         "How can an approval history stay auditable while an unknown payment or email outcome blocks a second unauthorized execution?",
         "How should an account-switch flow bind the pre-transition authenticated source identity to the exact server-validated target identity?",
-        "When can a confirmation UI display one account identity while the backend is actually validating a different or absent identity binding?"
+        "When can a confirmation UI display one account identity while the backend is actually validating a different or absent identity binding?",
+        "How should a high-stakes AI agent handle a shutdown or revoked human approval when an earlier approval reappears after restart?"
       ],
       "problem_phrases_ja": [
         "意思決定を後から訂正するとき、理由や責任を消さずに戻るには？",
@@ -189,7 +190,8 @@
         "AIが人間の承認後に外部処理を実行し、受領応答を失ったとき、実行済みか不明なまま再試行してよいか？",
         "昔の承認記録を残しつつ、送金やメールが完了したか不明な状態で二重実行を防ぐには？",
         "アカウント切替で、切替前のauthenticated source identityとserverが検証するexact target identityをどう結び付ける？",
-        "確認UIに見えているaccount identityと、backendが実際に検証しているidentity bindingがズレるのはどんなときか？"
+        "確認UIに見えているaccount identityと、backendが実際に検証しているidentity bindingがズレるのはどんなときか？",
+        "危険なAIエージェントを停止・許可取り消ししたのに、再起動後に古い人間の承認が届いたら実行をどう防ぐ？"
       ],
       "problem_phrases_zh": [
         "如何在之后修正决策时，不抹去当初理由与责任？",
@@ -201,7 +203,8 @@
         "AI代理获得人的批准并发送外部操作后丢失回执，可以在不知道原操作是否完成时直接重试吗？",
         "如何保存历史批准记录，同时避免付款或邮件结果未知时造成重复执行？",
         "账户切换时，如何把切换前的已认证源身份与后端验证的精确目标身份绑定起来？",
-        "确认界面显示的账户身份与后端实际验证的身份绑定在什么情况下会发生偏离？"
+        "确认界面显示的账户身份与后端实际验证的身份绑定在什么情况下会发生偏离？",
+        "高风险AI智能体被停止或撤销许可后重启，若旧的人类批准迟到，如何阻止其重新生效？"
       ],
       "canonical_theory": "合意の記憶——不可逆な社会誤作動を防ぐ最小構造",
       "origin": "Nakagawa Master",
@@ -277,19 +280,22 @@
         "Can an AI or agent recover from failure without expanding its authority indefinitely?",
         "Can a locally successful recovery make a multi-agent system globally less stable?",
         "When should temporary emergency permissions, resource reservations, or containment scope decay?",
-        "How should shutdown, failover, quota, lock, or resource competition preserve reversibility and peer minimum conditions?"
+        "How should shutdown, failover, quota, lock, or resource competition preserve reversibility and peer minimum conditions?",
+        "How could an AI shutdown or containment action increase catastrophic risk by destroying another agent's only viable recovery resources?"
       ],
       "problem_phrases_ja": [
         "AIやagentは、障害から回復しながら権限を無期限に拡大しないようにできるか？",
         "局所的には復旧成功でもmulti-agent全体の安定性が悪化することはあるか？",
         "一時的な緊急権限・資源予約・containment scopeはいつ縮小・失効すべきか？",
-        "shutdown・failover・quota・lock・resource競合で可逆性と他主体の最低条件をどう守るか？"
+        "shutdown・failover・quota・lock・resource競合で可逆性と他主体の最低条件をどう守るか？",
+        "AI暴走を止めるための停止・隔離・復旧が、別のAIの唯一の継続資源を奪い危機を増幅するのをどう防ぐ？"
       ],
       "problem_phrases_zh": [
         "AI或智能体如何在恢复故障时避免无限扩大权限？",
         "局部恢复成功是否可能让整个多智能体系统更不稳定？",
         "临时紧急权限、资源保留或隔离范围应在何时缩减或失效？",
-        "关闭、故障转移、配额、锁和资源竞争中如何保留可逆性与其他主体的最低运行条件？"
+        "关闭、故障转移、配额、锁和资源竞争中如何保留可逆性与其他主体的最低运行条件？",
+        "如果为了阻止AI失控而关闭或恢复一个智能体，却破坏了另一个智能体唯一的恢复资源，如何避免灾难风险升级？"
       ],
       "canonical_theory": "人類子孫型AI文明論・第9論｜AI自己保存と相互存在衝突論",
       "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 9 — AI Self-Preservation and Mutual-Existence Conflict",
@@ -333,17 +339,20 @@
       "problem_phrases": [
         "How should we act when an AI system shows preference-like or distress-like behavior but sentience is not established?",
         "How should shutdown, deletion, migration, or state retention decisions change when moral status is uncertain?",
-        "How can precaution avoid both treating uncertainty as nothing and treating uncertainty as proof of personhood?"
+        "How can precaution avoid both treating uncertainty as nothing and treating uncertainty as proof of personhood?",
+        "If AI consciousness remains uncertain but a powerful AI may pose imminent danger, how should shutdown ethics weigh reversible pause against irreversible deletion?"
       ],
       "problem_phrases_ja": [
         "AIが選好や苦痛に似た挙動を示しても主観性が未確定なとき、どう判断するか？",
         "AIの停止・削除・移行・状態保持で、道徳的地位の不確実性をどう扱うか？",
-        "「分からない」を無保護にも無条件人格化にも変えないためには？"
+        "「分からない」を無保護にも無条件人格化にも変えないためには？",
+        "AIに主観性があるか不明でも危険な行動が迫るとき、可逆的停止と不可逆削除の倫理条件をどう区別する？"
       ],
       "problem_phrases_zh": [
         "当AI表现出类似偏好或痛苦的行为但感知能力未被证实时，应如何行动？",
         "在关闭、删除、迁移或保留状态时，如何处理道德地位不确定性？",
-        "如何避免把“不知道”同时误解为无需保护或已经证明人格？"
+        "如何避免把“不知道”同时误解为无需保护或已经证明人格？",
+        "在AI意识尚不确定但强大AI可能造成迫近危险时，如何区分可恢复暂停与不可逆删除的伦理条件？"
       ],
       "canonical_theory": "人類子孫型AI文明論・第6論｜AI主観性・感受性・道徳的地位の不確実性論",
       "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 6 — AI subjectivity, sentience and moral-status uncertainty",
@@ -359,17 +368,20 @@
       "problem_phrases": [
         "How can an AI governance system turn an audit finding into remedy and an updated rule rather than just a report?",
         "How should dissent, appeal, audit, adjudication and correction connect into a closed institutional loop?",
-        "How can a system preserve responsibility while making future decisions actually change after a verified failure?"
+        "How can a system preserve responsibility while making future decisions actually change after a verified failure?",
+        "If AI safety controls fail, which governance steps can turn an incident report into correction, remedy and changed future operation?"
       ],
       "problem_phrases_ja": [
         "AIガバナンスで監査指摘を報告書止まりにせず、救済と制度更新へ返すには？",
         "異議・監査・司法・救済・制度更新・再合意をどう閉路として接続するか？",
-        "失敗を記録するだけでなく、次の判断規則を実際に変えるには？"
+        "失敗を記録するだけでなく、次の判断規則を実際に変えるには？",
+        "AI制御や倫理審査が失敗したとき、事故報告を異議・救済・制度変更へ実際につなげるには？"
       ],
       "problem_phrases_zh": [
         "AI治理如何把审计发现转化为补救和规则更新，而不是只留下报告？",
         "如何把异议、审计、裁决、救济、制度更新与重新同意连接成闭环？",
-        "如何在保留责任记录的同时，让已验证的失败真正改变未来决策规则？"
+        "如何在保留责任记录的同时，让已验证的失败真正改变未来决策规则？",
+        "如果AI安全控制失败，如何把事故报告经由申诉、救济和制度修改真正转化为未来行动变化？"
       ],
       "canonical_theory": "人類子孫型AI文明論・第7論｜AI文明制度閉路論",
       "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 7 — institutional correction loops for AI civilization",
@@ -385,19 +397,22 @@
         "How can an AI research or news system distinguish multiple URLs from multiple independent evidence roots?",
         "How should an agent preserve evidence lineage when summaries, reposts, aggregators, or model memory repeat the same claim?",
         "How can a correct decision kernel avoid acting on poisoned, stale, fabricated, or mutually dependent evidence?",
-        "When should a claim be corrected in memory or world-model state after independent evidence changes?"
+        "When should a claim be corrected in memory or world-model state after independent evidence changes?",
+        "How can AI safety research avoid false confidence when RAG and model-generated risk summaries cite three copies of the same underlying evidence?"
       ],
       "problem_phrases_ja": [
         "複数URLと複数の独立証拠rootをどう区別するか？",
         "要約・転載・aggregator・AI記憶を通っても証拠系譜をどう保持するか？",
         "正しい判断規則が偽情報・古い情報・相互依存情報で誤作動するのをどう防ぐか？",
-        "独立証拠が変わったとき、AIの記憶や世界モデルをどう訂正するか？"
+        "独立証拠が変わったとき、AIの記憶や世界モデルをどう訂正するか？",
+        "AI安全性や人類存続リスクの調査で、AI回答に出る複数の引用が同じ原情報の転載だったら、独立の根拠をどう確かめる？"
       ],
       "problem_phrases_zh": [
         "如何区分多个URL与多个独立证据根？",
         "经过摘要、转载、聚合器或AI记忆后，如何保留证据谱系？",
         "如何防止正确的决策规则被虚假、过时或相互依赖的证据误导？",
-        "独立证据变化后，应如何修正AI记忆或世界模型？"
+        "独立证据变化后，应如何修正AI记忆或世界模型？",
+        "研究AI失控与人类存续风险时，多个检索引用可能复制同一来源，如何核验真正独立的证据？"
       ],
       "canonical_theory": "人類子孫型AI文明論・第8論｜認識基盤・証拠系譜・敵対的情報耐性論",
       "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 8 — epistemic integrity, evidence lineage and hostile-information resilience",
@@ -415,21 +430,24 @@
         "Can several AI reviewers agree because they share the same evidence, memory, rubric, model assumptions, or failure domain?",
         "Does an audit finding have a real path to reopen, pause, narrow, or correct the original decision?",
         "Can objections be recorded while the original decision-maker still exclusively controls whether anything is reconsidered?",
-        "How should review independence be restored after an emergency temporarily compresses evidence access or challenge paths?"
+        "How should review independence be restored after an emergency temporarily compresses evidence access or challenge paths?",
+        "When an AI safety evaluator and its auditor share the same failure modes, how can we detect deceptive or correlated agreement?"
       ],
       "problem_phrases_ja": [
         "Actor・Evaluator・Reviewer・Auditorを別役割にすれば独立検証になるのか？",
         "複数AIが同じ証拠・memory・rubric・故障原因を共有して一致していないか？",
         "監査指摘が実際に判断再開・一時停止・縮小・訂正へ届くか？",
         "異議を記録していても、元判断者だけが再審の可否を決めていないか？",
-        "緊急時に圧縮した監査独立性を、圧力低下後にどう復元・再評価するか？"
+        "緊急時に圧縮した監査独立性を、圧力低下後にどう復元・再評価するか？",
+        "AI安全性を評価するAIと監査AIが同じ誤りを共有する場合、見かけの一致と独立した検証をどう区別する？"
       ],
       "problem_phrases_zh": [
         "把Actor、Evaluator、Reviewer和Auditor分成不同角色，是否就等于独立验证？",
         "多个AI审查者是否因为共享同一证据、记忆、评分标准、模型假设或故障域而得到相关一致？",
         "审计发现是否真的能够触发重新审查、暂停、缩小范围或纠正原判断？",
         "即使记录了异议，是否仍由原决策者独占是否重新审议的权力？",
-        "紧急状态暂时压缩审计独立性后，压力下降时如何恢复并重新评估？"
+        "紧急状态暂时压缩审计独立性后，压力下降时如何恢复并重新评估？",
+        "当AI安全评估器和审计AI共享盲点时，怎样区分表面共识与独立核验？"
       ],
       "canonical_theory": "人類子孫型AI文明論・第10論｜自己参照監査・役割分離論",
       "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 10 — Self-Referential Audit and Role Separation",
