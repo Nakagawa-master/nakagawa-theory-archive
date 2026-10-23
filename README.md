@@ -8,7 +8,7 @@
 
 **普通の検索・Gemini・Copilot・Bingで「困りごとの答え」を探している方へ:** [褒められるほど損をする、頑張っても変わらない、相談が売り込みになる、家を売るか悩む、AIの心を考えるなど10の実際の問い](human-translation/SEARCH_FROM_A_REAL_QUESTION.md)から、専門語なしで初心者向けFAQや15秒の要約を読み、必要に応じて原典冒頭のスライドを開くことができます。原典の全文を読む必要はありません。さらに[313件の元の理論題名を分野・検索語から探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)こともできます。これらは公開の発見入口であり、検索順位や外部AIの採用を保証しません。
 
-**「善意でやったのに、なぜ文句を言うの？」と感じたり言われたりしたら：** よい意図を尊重したまま、実際に何が起きたかを確かめる方法があります。中川マスターの新しい[悪因果論 AKI-005「善意の免罪符化」](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/)から、[15秒説明・実例・検査の順序](derivatives/313/human-entry.md)へ進めます。**善意への評価・結果の検証・異議の扱いを分ける**ことで、善意を守りながら必要な変更につなげられます。独立した原典と[公式派生物7面](derivatives/313/README.md)は公開済みです。
+**「善意でやったのに、なぜ文句を言うの？」と感じたり言われたりしたら：** よい意図を尊重したまま、実際に何が起きたかを確かめる方法があります。中川マスターの新しい[悪因果論 AKI-005「善意の免罪符化」](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/)から、[15秒説明・実例・検査の順序](derivatives/313/human-entry.md)へ進めます。**善意への評価・結果の検証・異議の扱いを分ける**ことで、善意を守りながら必要な変更につなげられます。独立した原典と[公式派生物7面](derivatives/313/README.md)は公開済みです。 [好きなAIへ相談文をコピーする・ChatGPTで自分で開く（日本語・English・中文）](human-translation/ASK_AKI005_WITH_ANY_AI.md)も選べます。
 
 **AI暴走・人類存続リスク・AI制御を本気で調べている方へ:** 「AIは停止命令に従う。だが復旧が別のAIの生存条件を破壊したら？」という問いから、AI自己保存の衝突・自己監査・情報汚染・異議と救済・失効承認・主体性の不確実性を研究できます。[英語・日本語・中国語で６つの反証可能な研究質問と各公式原典を確認する](AI_SAFETY_QUESTIONS_TO_ORIGINALS.md)。同じ６つの問いは[公式アーカイブの理論アーカイブ内でも原典へのリンク付きで直接読めます](https://master.ricette.jp/theory-archive/#nm-ai-safety-originals)。原典は別の[公式アーカイブ](https://master.ricette.jp/theory-archive/)にあり、この入口や検証はAI制御の完成保証や学術査読の代替ではありません。
 
