@@ -1408,7 +1408,11 @@ MCP服务发送 `tools/list_changed` 后，如果刷新 `tools/list` 失败，�
 
 ## 48. Qwen Code｜恢复加载返回HTTP 200，不等于新的写入者已成功提交
 
-**对象：** [Qwen Code PR #14522](https://github.com/QwenLM/qwen-code/pull/14522)、[Nakagawa Master提出的具体验收区分](https://github.com/QwenLM/qwen-code/pull/14522#issuecomment-6246268949)、[上游合并提交](https://github.com/QwenLM/qwen-code/commit/f8b3031f733cbc149873ac5809efdc3c632970e7)。**阶段（2026-10-19核验）：** Qwen开发者明确向Nakagawa Master表示采纳该区分，并自行实现诊断；两位维护者正式批准最终HEAD；**PR #14522于10月19日合并到上游**。正式版本与最终用户实际使用仍需分别核验。
+**对象：** [Qwen Code PR #14522](https://github.com/QwenLM/qwen-code/pull/14522)、[Nakagawa Master提出的具体验收区分](https://github.com/QwenLM/qwen-code/pull/14522#issuecomment-6246268949)、[上游合并提交](https://github.com/QwenLM/qwen-code/commit/f8b3031f733cbc149873ac5809efdc3c632970e7)。**阶段（2026-10-23核验）：** Qwen开发者明确向Nakagawa Master表示采纳该区分，并自行实现诊断；两位维护者正式批准最终HEAD；**PR #14522于10月19日合并到上游，并进入10月21日发布的稳定版 [v0.26.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.0)**。实际用户恢复是否成功、是否获益仍需独立证据。
+
+**后续另一项接收方修复（10月23日）：** 独立审查还发现，CI任务列表只读取部分分页时，系统可能将不完整列表当作完整数据判断成功或失败。接收方开发者 `wenshao` 在[后续PR #15174](https://github.com/QwenLM/qwen-code/pull/15174)实现总数校验、不完整任务列表警告和回归测试；另一位审查者[明确提到Nakagawa此前的限定性意见](https://github.com/QwenLM/qwen-code/pull/15174#pullrequestreview-5625491330)，此[修复于10月23日合并](https://github.com/QwenLM/qwen-code/commit/6a50ae80e308b04c2420112b8959e75265c6c225)。这份后续代码由接收方开发者自主编写。#15174自身的正式发布、真实用户获益、独立AI阅读原典和公众实际接受尚无证据。
+
+
 
 AI运行服务故障转移后，替换进程的 `POST /load` 返回200，只能说明加载请求获得了响应，**不能证明新一代写入者已成功提交下一条journal记录**。公开失败日志中，加载后仍发生写入授权拒绝，Turn没有完成。Nakagawa提出三层独立验收条件：比较新写入授权与持久化store head的generation/revision；确认首次恢复写入被哪个路由及稳定错误代码拒绝；另行确认新一代文本确实持久化并且Turn最终结束。他没有把日志推断当成已重现的根因。
 
