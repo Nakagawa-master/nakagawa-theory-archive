@@ -1407,7 +1407,7 @@ Nakagawa Masterはさらに[#3326のcomment](https://github.com/CarnegieLearning
 ## 38. MemberJunction｜recordへの承認を、current executable definitionへの承認と混同しない
 
 **対象:** [MemberJunction PR #4789](https://github.com/MemberJunction/MJ/pull/4789)  
-**現在段階:** 中川マスターの具体的な承認境界への提案 → 受け手開発者による出所を明示した設計採用 → 同開発者自身が依存する子クエリの承認失効検査と単体・統合テストを実装 → **受け手側GitHub ActionsのQA5統合テスト成功を確認。さらに最新確認済みHEAD `6fb81938` のQA5・CC22・Build・Unit Testsを含む受け手側15件のPR workflowはすべて成功**。PRはOPEN、マージ・リリース・本番使用は未確認
+**現在段階:** 中川マスターの承認境界の指摘 → 受け手によるQA5の独立した実装とテスト成功 → **続いて受け手開発者がALS14のサーバー権限経路と直接書込み拒否を検証するコードを追加**。受け手HEAD `139e829f` のチェックは46件中40件成功・6件スキップ・失敗0件。PRはOPEN、マージ・リリース・実利用は今後の確認対象
 
 同じquery recordでも、SQL、parameter contract、context contractなどが変われば、実際に実行される定義は別物になり得ます。
 
@@ -1429,9 +1429,11 @@ Nakagawa Masterはさらに[comment 6026910453](https://github.com/MemberJunctio
 
 [過去のHEAD `85734328` のSQL Server統合ジョブ](https://github.com/MemberJunction/MJ/actions/runs/39803263908/job/119910210296)は `✓ query-approvals.QA5` を記録した一方、当時の総合ジョブには別件CC22の外部キー制約違反がありました。**その古い失敗を最新状態とは扱いません。** [現行確認済みHEAD `6fb81938` のSQL Server統合ジョブ 120133611362](https://github.com/MemberJunction/MJ/actions/runs/39867489113/job/120133611362)は `✓ query-approvals.QA5` と `✓ conversation-compaction.CC22` の双方を実際に記録して **SUCCESS**。[同HEADのBuildと6つのUnit Test shardを含むワークフロー](https://github.com/MemberJunction/MJ/actions/runs/39867489167)も成功しています。これらは[中川マスターが受け手本体の検査結果を時点付きで確認した証拠](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6353403486)であり、実装・テスト・CIの所有者は受け手開発者です。
 
+**同じ受け手による次の独立修正（10月23日）:** AI実行履歴の保存保護に対して統合テストALS14が直接代入して失敗したため、中川マスターは[正規のサーバー権限経路と不正な直接書込みを区別する検証](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6369711289)を提案。開発者 `cmbrock-BC` は[返信](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6369985463)と[実装差分](https://github.com/MemberJunction/MJ/commit/222047870b7de1f8eb5bfeaca1d969031c45da11)で `SetServerBoundActionParams` による正規保存と、初回・更新時の不正直接代入拒否をテストへ加えました。[受け手HEAD `139e829f`](https://github.com/MemberJunction/MJ/commit/139e829f8e63ae2358dde8cba474bd8a0dbc7244)のチェック46件は40件成功、6件スキップ、失敗0件。受け手側の修正・検証成立であり、PRのマージや外部の実利用は別の段階です。同一PRの前段のQA5成果を独立件数として二重計上しません。
+
 **別の開発者やAIが試せる問い：** 親のSQLを変えずに、以前承認された子クエリだけを変更したらどうなるでしょうか。親の承認だけで通してしまわず、現在の子の承認も確認できるかを[再利用可能な検証手順](CURRENT_AUTHORITY_REUSE_KIT.md#when-approval-spans-a-dependency-graph)で試せます。対応する[公式原典『合意の記憶』](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)は「過去の合意記録と、条件に応じた再合意」の構造を論じます。本件のソフトウェア実装はその応用的な読み方であり、受け手開発者が原典本文を読んだことの証拠ではありません。
 
-**公開証拠から確認できること:** 原因を絞った中川マスターの問題提起 → 名前を挙げた受け手の設計採用 → **受け手自身のコード・回帰テスト追加、QA5の複数HEAD実行成功、最新確認済みHEADのQA5・CC22・Build・Unit Testsを含むPR workflow 15件成功**。  
+**公開証拠から確認できること:** 中川マスターの問題提起 → 受け手自身のQA5修正と実テスト成功 → **後続ALS14についても受け手開発者が独自にコード・負例を変更し、新HEADのチェック46件で失敗0件**。  
 **まだ確認できないこと:** PR全体のmerge、release、利用者の本番使用、独立AIによる原典の自発的採用、広い人物認知。
 
 → [一般向け問題入口](APPLIED_ENTRY_POINTS.md#承認したあと中身が変わったのにまだ承認済みで実行してよいのか)  

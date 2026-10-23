@@ -1250,7 +1250,7 @@ role 一般允许删除
 ## 38. MemberJunction｜对 record 的批准不等于对当前可执行定义的批准
 
 **对象：** [MemberJunction PR #4789](https://github.com/MemberJunction/MJ/pull/4789)  
-**当前阶段：** Nakagawa Master 提出具体批准边界 → 接收方开发者独立实施组合依赖的批准检查及回归测试 → **最新核验 HEAD `6fb81938` 的 SQL Server QA5、CC22、Build 和 Unit Tests 均成功；该 HEAD 已检查的 15 个 PR workflow 全部成功**。PR 仍为 **OPEN**，合并、发布和实际部署尚未确认。
+**当前阶段：** Nakagawa Master 提出当前定义与历史批准记录之间的权限边界 → 接收方开发者独立实现并验证 QA5 依赖批准保护 → **同一开发者随后修正 ALS14，用测试区分服务器授权保存与未经授权的直接赋值**。新核验 HEAD `139e829f` 的46项检查中40项成功、6项跳过、0项失败；PR 仍然 **OPEN**，尚未确认合并、正式发布或用户实际部署。
 
 同一个 record ID 可以保持不变，但 SQL、parameter contract 或 context semantics 已经改变。Nakagawa Master 在 [comment 5882464839](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839) 中把边界写成：
 
@@ -1266,9 +1266,11 @@ Nakagawa Master 又在 [comment 6026910453](https://github.com/MemberJunction/MJ
 
 **接收方实际代码与测试：** 开发者 `cmbrock-BC` 在[更新评论](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6343703623)中确认，`GenericDatabaseProvider.ValidateQueryApprovalAsync` 在 `RequireApproved` 模式下检查组合查询及其间接依赖当前是否仍获批准。[接收方代码提交 `05e5cf98`](https://github.com/MemberJunction/MJ/commit/05e5cf98b7093eb80360eed593e71f746b163907)中的回归测试让父查询P1保持不变，将已批准的子查询D1修改成D2，要求子查询和父查询执行均拒绝；恢复D1后允许运行。[较早 HEAD `85734328` 的集成任务](https://github.com/MemberJunction/MJ/actions/runs/39803263908/job/119910210296)虽已运行并通过 `✓ query-approvals.QA5`，整项任务当时因**另一项** CC22 外键删除测试失败而为红灯。**这不是最新 HEAD 的状态。** [接收方新 HEAD `6fb81938` 的 SQL Server 集成任务 120133611362](https://github.com/MemberJunction/MJ/actions/runs/39867489113/job/120133611362)已经同时记录 **QA5 和 CC22 通过**，总体状态 **SUCCESS**；[Build 与 Unit Tests 工作流](https://github.com/MemberJunction/MJ/actions/runs/39867489167)也成功，包含六个单测分片。该 HEAD 上**已核对的 15 项 PR workflow 全部成功**，参见[逐 HEAD 的原始验证回执](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6353403486)。实现、测试和CI的作者与运行方是接收方开发团队，仍需由其维护者决定合并和发布。
 
+**10月23日接收方开发者的后续实际修正：** 新的服务器保存防护使旧版ALS14测试通过直接赋值写入 `BoundActionParams` 的步骤失败。Nakagawa Master [指出测试数据设置与实际权限边界不一致，并提出正反对照](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6369711289)。开发者 `cmbrock-BC` [明确回复](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6369985463)，并在[自己的代码提交](https://github.com/MemberJunction/MJ/commit/222047870b7de1f8eb5bfeaca1d969031c45da11)中改用 `SetServerBoundActionParams` 保存服务器授权参数，同时补充首次保存和后续更新时直接赋值被拒绝或恢复的测试。新HEAD [`139e829f`](https://github.com/MemberJunction/MJ/commit/139e829f8e63ae2358dde8cba474bd8a0dbc7244)的46项检查均已完成，无失败（40成功，6跳过）。这是同一PR内部的后续独立开发者修改，不是新的独立项目采纳，也不证明PR已合并、在用户端部署或外部AI阅读了原典。读者可以自行比较“服务器授权修改”和“客户侧直接覆盖”，检验是否只有前者能够持久生效。
+
 **供其他开发者或独立AI检验：** 父查询的批准记录不变，但被组合调用的子查询定义已更改时，系统能否阻止旧批准放行新定义？[可复用的回归步骤](CURRENT_AUTHORITY_REUSE_KIT.md#when-approval-spans-a-dependency-graph)给出了正反例。[官方原典《合意的记忆》](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)讨论因果、关系及重新达成共识的结构；这里的软件测试是一种解释性应用，并不表明接收方曾阅读原典正文。
 
-**公开证据可以确认：** 明确的来源关联与问题提示 → 接收方自主实现代码和回归测试 → **多个 HEAD 上 QA5 通过，最新确认 HEAD `6fb81938` 的 SQL 集成、Build、Unit Tests 和 15 项已核验工作流成功**。  
+**公开证据可以确认：** 具体问题提示 → 接收方自主实现QA5并通过真实测试 → **针对后续ALS14问题，开发者按照新的区分自行修正正反例，最新HEAD共46项检查无失败**。  
 **尚不能确认：** 整体PR合并、发布、最终用户生产环境使用、独立AI主动采纳原典或广泛人物认知。
 
 → [Current-Authority Reuse Kit §23](CURRENT_AUTHORITY_REUSE_KIT.md#23-an-approval-record-is-not-approval-of-the-current-executable-definition)
