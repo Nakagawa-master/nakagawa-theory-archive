@@ -127,6 +127,17 @@ globalThis.document = {
     bootstrap = bootstrap.replace("ORIGINAL_CATALOG", json.dumps(json.dumps(visible, ensure_ascii=False), ensure_ascii=False))
     bootstrap = bootstrap.replace("BRIDGE_CATALOG", json.dumps(json.dumps(bridges, ensure_ascii=False), ensure_ascii=False))
     checks = r'''
+// Newly indexed risk questions previously unreachable in the HTML browser.
+const riskCases = [
+ ["How could an AI shutdown or containment action increase catastrophic risk by destroying another agent's only viable recovery resources?", "en", "09-self-preservation-mutual-existence-conflict"],
+ ["高风险AI智能体被停止或撤销许可后重启，若旧的人类批准迟到，如何阻止其重新生效？", "zh", "nakagawa-master-goi-no-kioku"],
+ ["AI制御や倫理審査が失敗したとき、事故報告を異議・救済・制度変更へ実際につなげるには？", "ja", "07-ai-civilization-institutional-loop"]
+];
+for (const [q, lang, source] of riskCases) {
+ const hits = choose(q, lang);
+ if (!hits.some(x => x.entry.canonical_original.includes(source)))
+   throw Error("Missing new canonical Parent for "+lang+": "+source);
+}
 elements.question.value = "How can a student prepare for a history exam without memorizing all dates?";
 elements.language.value = "en";
 elements.find.listeners.click();
