@@ -15,7 +15,7 @@ This is an opt-in, portable, vendor-neutral research and review workflow. Do not
 
 ## Do this on a real claim
 
-1. **Get the real user claim and cited URLs.** Read the actual sources with tools permitted by the user, or explicitly say when working from excerpts only. Separate what each source directly observed from what it quoted, summarized or inferred. Different URLs, brands or authors do not automatically imply independent observation.
+1. **Get the real user claim and cited URLs.** Read the actual sources with tools permitted by the user, or explicitly say when working from excerpts only. **Before assigning any source `stance: supports`, check that its actual subject, date, scope and quoted passage answer this exact claim. HTTP 200 means a page was retrieved, not that it proves the claim; HTTP 404 means that URL failed now, not that the underlying event was false.** Separate what each source directly observed from what it quoted, summarized or inferred. Different URLs, brands or authors do not automatically imply independent observation. For a broken URL, check an accurately scoped alternate source without counting syndicated copies as separate corroboration.
 2. **Trace roots rather than link counts.** For each evidence item find its earliest checkable root and its relationship to other items. Use `root_id: null` for unknown origin. Mark a source's stance as `supports`, `refutes`, `qualifies` or `unknown`. Never manufacture a new root just to make the user's desired claim pass.
 3. **Create JSON matching** [the supplied example](references/example-claims.json): an array `claims`, each having `id`, `independent_confirmation_claimed` (boolean), and `sources`. Each source has `url`, `root_id` (string or null), `relation` (`primary`, `independent_observation`, `derived`, `unknown`) and `stance`.
 4. **Run the bundled offline test from this folder** (Python 3 standard library only; no external network, paid API or secret):
@@ -32,6 +32,7 @@ This is an opt-in, portable, vendor-neutral research and review workflow. Do not
 
 - A product release plus two newsletters that repeat it is three URLs but **one** upstream root. Claiming independent corroboration must block.
 - A primary release plus a demonstrably separate lab measurement may count as two roots in the declared graph. The graph may pass while the lab's measurement quality and its relationship to the actual claim still require separate verification.
+- **A reachable but irrelevant page is not support.** A real [AI-News citation-repair issue](https://github.com/022740mix-spec/AI-News/issues/105#issuecomment-6359184385) illustrates three different outcomes: an AP report mirrored at another ABC affiliate is still the **same reporting root**; a reachable FDA announcement about **2023 sickle-cell gene-therapy approvals** does **not** substantiate an article's separate claim of **a 2026 AI-discovered enzyme**; a broken news link can have a different, relevant contemporary report worth inspecting. Review the real claim and original page first, then assign `supports`, `qualifies`, `refutes` or `unknown` without pretending the offline checker fetched the page.
 
 ## Genuine intellectual and implementation provenance
 
