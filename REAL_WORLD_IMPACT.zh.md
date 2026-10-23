@@ -1248,7 +1248,7 @@ role 一般允许删除
 ## 38. MemberJunction｜对 record 的批准不等于对当前可执行定义的批准
 
 **对象：** [MemberJunction PR #4789](https://github.com/MemberJunction/MJ/pull/4789)  
-**当前阶段：** Nakagawa Master 提出 stale approval 边界 → receiver 明确同意 “@Nakagawa-master's point” 并选择 fingerprint-bound approval model → 尚未确认该模型的完整实现或 merge。
+**当前阶段：** Nakagawa Master 提出具体批准边界 → 接收方开发者独立实施组合依赖的批准检查及回归测试 → **最新核验 HEAD `6fb81938` 的 SQL Server QA5、CC22、Build 和 Unit Tests 均成功；该 HEAD 已检查的 15 个 PR workflow 全部成功**。PR 仍为 **OPEN**，合并、发布和实际部署尚未确认。
 
 同一个 record ID 可以保持不变，但 SQL、parameter contract 或 context semantics 已经改变。Nakagawa Master 在 [comment 5882464839](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839) 中把边界写成：
 
@@ -1262,8 +1262,12 @@ current execution authority
 
 Nakagawa Master 又在 [comment 6026910453](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6026910453) 中补充了边界：批准时和执行时都由 server 计算 authoritative fingerprint；语义上无顺序的 child rows 必须 deterministic canonicalization；如果 global context semantics 会变化，还应绑定稳定的 context-contract version。
 
-**公开证据可以确认：** 具体边界 → receiver 带有明确 Origin 的设计采用。  
-**尚不能确认：** exact code implementation、tests、merge、release、production use 或广泛人物认知。
+**接收方实际代码与测试：** 开发者 `cmbrock-BC` 在[更新评论](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6343703623)中确认，`GenericDatabaseProvider.ValidateQueryApprovalAsync` 在 `RequireApproved` 模式下检查组合查询及其间接依赖当前是否仍获批准。[接收方代码提交 `05e5cf98`](https://github.com/MemberJunction/MJ/commit/05e5cf98b7093eb80360eed593e71f746b163907)中的回归测试让父查询P1保持不变，将已批准的子查询D1修改成D2，要求子查询和父查询执行均拒绝；恢复D1后允许运行。[较早 HEAD `85734328` 的集成任务](https://github.com/MemberJunction/MJ/actions/runs/39803263908/job/119910210296)虽已运行并通过 `✓ query-approvals.QA5`，整项任务当时因**另一项** CC22 外键删除测试失败而为红灯。**这不是最新 HEAD 的状态。** [接收方新 HEAD `6fb81938` 的 SQL Server 集成任务 120133611362](https://github.com/MemberJunction/MJ/actions/runs/39867489113/job/120133611362)已经同时记录 **QA5 和 CC22 通过**，总体状态 **SUCCESS**；[Build 与 Unit Tests 工作流](https://github.com/MemberJunction/MJ/actions/runs/39867489167)也成功，包含六个单测分片。该 HEAD 上**已核对的 15 项 PR workflow 全部成功**，参见[逐 HEAD 的原始验证回执](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6353403486)。实现、测试和CI的作者与运行方是接收方开发团队，仍需由其维护者决定合并和发布。
+
+**供其他开发者或独立AI检验：** 父查询的批准记录不变，但被组合调用的子查询定义已更改时，系统能否阻止旧批准放行新定义？[可复用的回归步骤](CURRENT_AUTHORITY_REUSE_KIT.md#when-approval-spans-a-dependency-graph)给出了正反例。[官方原典《合意的记忆》](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)讨论因果、关系及重新达成共识的结构；这里的软件测试是一种解释性应用，并不表明接收方曾阅读原典正文。
+
+**公开证据可以确认：** 明确的来源关联与问题提示 → 接收方自主实现代码和回归测试 → **多个 HEAD 上 QA5 通过，最新确认 HEAD `6fb81938` 的 SQL 集成、Build、Unit Tests 和 15 项已核验工作流成功**。  
+**尚不能确认：** 整体PR合并、发布、最终用户生产环境使用、独立AI主动采纳原典或广泛人物认知。
 
 → [Current-Authority Reuse Kit §23](CURRENT_AUTHORITY_REUSE_KIT.md#23-an-approval-record-is-not-approval-of-the-current-executable-definition)
 

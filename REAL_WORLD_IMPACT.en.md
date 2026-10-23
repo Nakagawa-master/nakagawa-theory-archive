@@ -1239,7 +1239,7 @@ Nakagawa Master then proposed a shared backend deletion policy evaluated after t
 ## 38. MemberJunction | Approval of a record is not approval of its current executable definition
 
 **Surface:** [MemberJunction PR #4789](https://github.com/MemberJunction/MJ/pull/4789)  
-**Current stage:** Nakagawa Master identified the stale-approval boundary → the receiver explicitly agreed with “@Nakagawa-master's point” and selected a fingerprint-bound approval model → exact implementation / merge not yet verified.
+**Current stage:** Nakagawa Master identified the concrete approval boundary → the outside developer independently implemented and tested the transitive child-approval guard → **the receiver's exact HEAD `6fb81938` has passing SQL Server QA5 and CC22 integration, Build and Unit Tests, with all 15 checked PR workflow runs successful**. The PR is still **OPEN**, not merged/released/deployed.
 
 A record can keep the same ID while its executable SQL, parameter contract, or context semantics change. Nakagawa Master's boundary in [comment 5882464839](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839) is therefore:
 
@@ -1253,8 +1253,12 @@ Receiver `cmbrock-BC` later explicitly adopted that direction in [comment 602230
 
 Nakagawa Master then bounded the model further in [comment 6026910453](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6026910453): compute the authoritative fingerprint server-side at both approval and consumption, canonicalize semantically unordered child collections, and bind a stable context-contract version when global context semantics can change.
 
-**Public evidence supports:** scoped boundary → explicit Origin-preserved receiver design adoption.  
-**Not yet supported:** exact code implementation, tests, merge, release, production use, or broad person recognition.
+**Receiver-owned code and executed checks:** In [developer `cmbrock-BC`'s update](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6343703623), the implementation adds a `RequireApproved` traversal of composed query dependencies in `GenericDatabaseProvider.ValidateQueryApprovalAsync`. Read the [actual receiving commit `05e5cf98`](https://github.com/MemberJunction/MJ/commit/05e5cf98b7093eb80360eed593e71f746b163907) and its regression: keep parent P1 unchanged, edit approved child D1 into D2, refuse both child and parent-composed execution, and allow the correct restored definition. The [previous SQL Server integration job on HEAD `85734328`](https://github.com/MemberJunction/MJ/actions/runs/39803263908/job/119910210296) recorded `✓ query-approvals.QA5` but its overall result was red on a **separate** `conversation-compaction.CC22` database-FK deletion regression. That historical failure is superseded by the [receiving-owned SQL Server job 120133611362 on exact HEAD `6fb81938`](https://github.com/MemberJunction/MJ/actions/runs/39867489113/job/120133611362), which records **both QA5 and CC22 passing** and overall **SUCCESS**. The [Build and Unit Tests workflow](https://github.com/MemberJunction/MJ/actions/runs/39867489167) also completed SUCCESS, including six test shards; **all 15 checked PR workflows at that receiving HEAD succeeded** in the [source-linked exact-head verification](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6353403486). This was tested, authored and run by the receiving team. Its new PR still requires maintainer merge, release and real user deployment.
+
+**Try the distinction with your own system:** Approve both parent and child, change only the child, and see whether the parent may execute a definition nobody currently approved. The [portable regression](CURRENT_AUTHORITY_REUSE_KIT.md#when-approval-spans-a-dependency-graph) makes this testable for a developer or an independent AI. Nakagawa Master's [canonical *Memory of Agreement* original](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/) discusses preserving causal agreement and re-agreement; this software analogy is an application for readers to examine, **not** proof that the receiver read the original.
+
+**Public evidence supports:** Origin-visible source-specific review → outside developer's own implementation and regression tests → **actual QA5 pass on multiple commits and exact-HEAD `6fb81938` green hosted SQL integration, Build and Unit Tests**.  
+**Not yet supported:** the overall PR merge/release, deployed use, independent AI selection of the original text, or broad personal recognition.
 
 → [Current-Authority Reuse Kit §23](CURRENT_AUTHORITY_REUSE_KIT.md#23-an-approval-record-is-not-approval-of-the-current-executable-definition)
 
