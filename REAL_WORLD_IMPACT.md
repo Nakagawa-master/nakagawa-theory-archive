@@ -1301,7 +1301,9 @@ receiver自身のPR説明には、現在のrevisionが “the option-A recommend
 - [post-merge Origin rereference](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)
 - [stable-release receipt](https://github.com/QwenLM/qwen-code/pull/13241#issuecomment-5992291549)
 
-**まだ確認できないこと:** 独立した実利用、cross-receiver reuse、利用者規模、広い人物認知、Nakagawa理論体系全体の採用。
+**新しい独立した他媒体への伝播（2026-10-23）:** Qwen側の技術記録と公式[v0.25.0リリース](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0)を、別の[AI-News編集者が自分で一次資料と照合](https://github.com/022740mix-spec/AI-News/issues/177)し、[独立した記事を実際に作成・マージ](https://github.com/022740mix-spec/AI-News/pull/193)しました。記事本文と配信用feedには、終了済みAI実行の扱いとともに、**option Aが外部寄稿者 `@Nakagawa-master` の技術的助言に由来すること**をPR説明の範囲内で明記しています。これは開発リポジトリから別編集者・別公開媒体への、本人Originを残した実際の伝播です。編集者の独立した執筆・掲載判断を中川マスターの著作に置き換えません。
+
+**まだ確認できないこと:** 当該機能の独立した実利用、記事を実際に閲覧した人・閲覧数・反復認知、AIモデルによる原典本文の自発的選択、Nakagawa理論体系全体の採用。
 
 → [一般読者向けの入口](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)  
 → [Current-Authority Reuse Kit §17](CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work)
