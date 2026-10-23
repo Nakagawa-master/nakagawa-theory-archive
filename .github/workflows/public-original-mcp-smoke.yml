@@ -23,6 +23,9 @@ on:
       - 'GEMINI.md'
       - 'CLAUDE.md'
       - 'README.md'
+      - 'REAL_WORLD_IMPACT*.md'
+      - 'CURRENT_AUTHORITY_REUSE_KIT.md'
+      - 'scripts/validate_impact_index.py'
       - 'AI_START_HERE.md'
       - 'llms*.txt'
       - '.github/workflows/public-original-mcp-smoke.yml'
@@ -50,6 +53,9 @@ on:
       - 'GEMINI.md'
       - 'CLAUDE.md'
       - 'README.md'
+      - 'REAL_WORLD_IMPACT*.md'
+      - 'CURRENT_AUTHORITY_REUSE_KIT.md'
+      - 'scripts/validate_impact_index.py'
       - 'AI_START_HERE.md'
       - 'llms*.txt'
       - '.github/workflows/public-original-mcp-smoke.yml'
@@ -61,6 +67,8 @@ jobs:
     timeout-minutes: 4
     steps:
       - uses: actions/checkout@v4
+      - name: Verify three-language external evidence case order and README count (Python)
+        run: python3 scripts/validate_impact_index.py
       - name: Zero-install user-driven AI request / original-source fidelity
         run: python3 scripts/test_no_install_ai_links.py
       - name: Python self-test across canonical indexes
