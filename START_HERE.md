@@ -161,9 +161,9 @@ AIによる要約・翻訳・再生成の後でも、知識がどこから来た
 - [Problem-to-theory Origin Index](machine-discovery/problem-to-theory-origin-index-v1.json)
 - [Machine Discovery](machine-discovery/README.md)
 
-## 312件から直接探す
+## 313件から直接探す
 
-- [OD001–OD312 全件入口](derivatives/README.md)
+- [OD001–OD313 全件入口](derivatives/README.md) ／ [元の題名を分野・身近な検索語から探す（313件・AKI-005を含む）](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)
 - [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
 - [Official Derivatives Map](derivatives/official-derivatives-map.json)
 - [Official Derivatives Machine Index](machine-discovery/official-derivatives-index-v1.json)

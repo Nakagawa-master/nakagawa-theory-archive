@@ -44,9 +44,9 @@ def verify() -> tuple[int, int, int]:
                 f"Source URL disagrees with both derivative anchors: {page}, {ident}",
             )
             source_routes += 1
-    catalog = (HUMAN / "ALL_312_THEORIES_BY_TITLE_AND_THEME.md").read_text(encoding="utf-8")
+    catalog = (HUMAN / "ALL_313_THEORIES_BY_TITLE_AND_THEME.md").read_text(encoding="utf-8")
     rows = [x for x in catalog.splitlines() if x.startswith("- **OD")]
-    require(len(rows) == 312, f"312-title index count changed: {len(rows)}")
+    require(len(rows) == 313, f"313-title index count changed: {len(rows)}")
     seen: set[str] = set()
     for row in rows:
         match = re.match(r"- \*\*OD(\d{3})\*\*", row)
@@ -59,7 +59,11 @@ def verify() -> tuple[int, int, int]:
             require(target.is_file(), f"Missing derivative target: {target}")
             require(f"../derivatives/{ident}/{file_name}" in row, f"Broken {file_name} catalogue link: {ident}")
         require(f"../derivatives/{ident}/README.md" in row, f"Lost derivative root route: {ident}")
-    require(seen == {f"{x:03d}" for x in range(1, 313)}, "Not every OD001–OD312 indexed")
+    require(seen == {f"{x:03d}" for x in range(1, 314)}, "Not every OD001–OD313 indexed")
+    aki_row = next(x for x in rows if x.startswith("- **OD313**"))
+    require("AKI-005" in aki_row, "OD313 must retain source theory name")
+    require("../derivatives/313/faq.md" in aki_row, "OD313 reader FAQ missing")
+    require("master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/" in aki_row, "OD313 actual original Parent missing")
 
     hub = (HUMAN / "SEARCH_FROM_A_REAL_QUESTION.md").read_text(encoding="utf-8")
     require(len(re.findall(r"^### \d+\. ", hub, re.MULTILINE)) == 10, "Hub 10 questions missing")
@@ -67,7 +71,7 @@ def verify() -> tuple[int, int, int]:
             "Hub 10 direct novice FAQ links missing")
     landing = (ROOT / "README.md").read_text(encoding="utf-8")
     require("SEARCH_FROM_A_REAL_QUESTION.md" in landing, "Top-level real-problem entry missing")
-    require("ALL_312_THEORIES_BY_TITLE_AND_THEME.md" in landing, "Top-level complete catalogue missing")
+    require("ALL_313_THEORIES_BY_TITLE_AND_THEME.md" in landing, "Top-level complete catalogue missing")
     require("初心者向けFAQ" in landing, "Top-level reader depth not described")
     return len(pages), source_routes, len(rows)
 
