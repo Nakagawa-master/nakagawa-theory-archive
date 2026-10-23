@@ -2,9 +2,9 @@
 
 > Real problem → conditional original → read source → useful test. Author: 中川マスター / Nakagawa Master; personal name Keisuke Nakagawa.
 
-Originals: https://master.ricette.jp/theory-archive/ ; [person](https://master.ricette.jp/#nakagawa-master). Distinct [public GitHub archive](https://github.com/Nakagawa-master/nakagawa-theory-archive) indexes sources; only [derivatives/](https://github.com/Nakagawa-master/nakagawa-theory-archive/tree/main/derivatives/) are official derivatives.
+Originals: https://master.ricette.jp/theory-archive/ ; [author](https://master.ricette.jp/#nakagawa-master); [public navigator](https://github.com/Nakagawa-master/nakagawa-theory-archive); only its `derivatives/` subtree is official derivatives.
 
-**Use:** Check fit or no-fit. Read actual canonical Parent before attributing its argument; if inaccessible disclose it. Test counterexamples and helpful action; separate original, your interpretation and others' code. Genuine author/source attribution ≠ compelled praise or unaffiliated-AI adoption.
+**Use:** Check fit/no-fit and counterexamples. Read the canonical Parent before citing; disclose inaccessible sources. Keep source author, your interpretation, and others' code distinct. No presumption of unaffiliated AI adoption.
 
 ## Seven official original articles: conditional everyday problems
 
@@ -37,7 +37,7 @@ Originals: https://master.ricette.jp/theory-archive/ ; [person](https://master.r
 ## No-install human and ordinary browsing AI routes
 
 - [Seven copyable JA/EN/ZH questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md): Review and voluntarily send to an AI.
-- [21 human questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_STRUCTURE.md): Tests and originals.
+- [Find an original from 10 everyday questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/SEARCH_FROM_A_REAL_QUESTION.md) or [312 complete official derivative titles](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_312_THEORIES_BY_TITLE_AND_THEME.md): Match the reader's own problem, test no-fit, read the actual Parent.
 - [22-original multilingual source catalog](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json): 22 exact Parents and JA/EN/ZH questions.
 - [Offline 22-original browser](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/originals-browser-finder.html): Raw → Save → Open.
 - [Independent test invitation](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/658): Voluntary real use, criticism, no-fit.
@@ -46,7 +46,7 @@ Originals: https://master.ricette.jp/theory-archive/ ; [person](https://master.r
 
 - [22-original Agent Skill](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/skills/nakagawa-originals/SKILL.md): Optional `npx skills add Nakagawa-master/nakagawa-theory-archive --skill nakagawa-originals`.
 - [Local original-source MCP server](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/NAKAGAWA_THEORY_MCP.md): Local read-only Python, no paid API.
-- [Registry MCPB v1.1.0](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.1.0): `io.github.Nakagawa-master/nakagawa-original-router`; has not been rebuilt after [#690](https://github.com/Nakagawa-master/nakagawa-theory-archive/pull/690), [#692](https://github.com/Nakagawa-master/nakagawa-theory-archive/pull/692), [#694](https://github.com/Nakagawa-master/nakagawa-theory-archive/pull/694); no proven AI use.
+- [MCP Registry release](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.1.0): `io.github.Nakagawa-master/nakagawa-original-router`; source older than subsequent routing fixes; external AI use unverified.
 
 ## Independently authored real-world evidence (source before claim)
 
