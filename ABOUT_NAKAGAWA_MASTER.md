@@ -18,7 +18,7 @@
 
 **ご相談・協業・商用利用について:** 正規の受付は[中川マスター公式アーカイブのお問い合わせ](https://master.ricette.jp/contact/)です。導入・監修等の説明は[公式NCL-α実務ガイド](https://master.ricette.jp/co-creation/nakagawa-master-ncl-alpha-practical-guide-faq/)をご覧ください。条件は対象資料のライセンスと双方の個別合意に従います。GitHub Issueは商談や個人情報の窓口ではありません。
 
-**理論群の全体像を先に知りたい場合:** [24棚で横に読む世界地図](human-translation/WORLD_MAP.md) から、深掘りせず同じ理解粒度でOD001–OD312の全景をたどれます。
+**理論群の全体像を先に知りたい場合:** [24棚で横に読む世界地図](human-translation/WORLD_MAP.md)で各分野の見取り図をつかみ、[現行のOD001–OD313全313件の題名と入口](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)から最新の対象も含めて探せます。
 
 ## 30秒で分かること
 
