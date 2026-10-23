@@ -739,6 +739,18 @@ AIサービスを24時間動かすため、一つのワーカーを複数の利�
 
 この境界を使って、**交換をいつ行えるのか、処理中の仕事を守りながら次の受付をどう待たせるか、維持費が時間とともに成立し続けるか**を先に確かめます。長期の資源・更新・維持可能性という理論的な問いは、[中川マスター第19論／OD312の原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/)へ戻れます。開発側によるレビュー採用・実装・利用は別に確かめる段階です。
 
+## Pydantic AIの引用元が重なったら、どの出典を信じてよい？
+
+**AIが3つのURLを示しても、3つの独立した裏付けとは限りません。** 一つの発表を別々のサイトが転載した場合、「URLの数」は増えても「根拠の起点」は増えません。反対に、異なる方法で独立に確かめた資料なら、同じ結論でも別の根拠となり得ます。**出典の表示・情報源の独立性・主張の正しさは、それぞれ確かめる対象です。**
+
+この違いが、AI開発ライブラリの実装へ届いた例があります。[Pydantic AIの引用機能PR #7434](https://github.com/pydantic/pydantic-ai/pull/7434)で、中川マスター（Nakagawa Master）は、①同じ文章が複数の取得ページに同じ位置で存在するとき、先に見つかったURLを真の引用元として採用する危険、②複数の `Citation.sources` を独立した裏付けの件数と誤読する危険を[レビュー](https://github.com/pydantic/pydantic-ai/pull/7434#pullrequestreview-5607561381)と[公開された理論由来の先行レビュー](https://github.com/pydantic/pydantic-ai/pull/7434#pullrequestreview-5286612147)で分けて指摘しました。
+
+開発者 `adtyavrdhn` は[本人への返信](https://github.com/pydantic/pydantic-ai/pull/7434#issuecomment-6367344563)で両方に対応したことを明言し、[自分のコミット `659447531`](https://github.com/pydantic/pydantic-ai/commit/6594475317c28fd1b71a499bcf769fbfe3fa4762)に実装・テスト・説明文を加えました。異なるURLが同じ引用文・位置で一致する場合、URLを推測して付けず文書引用として保持します。同じURLを二度取得した場合はURLを保持します。さらに[公開説明](https://github.com/pydantic/pydantic-ai/blob/6594475317c28fd1b71a499bcf769fbfe3fa4762/docs/citations.md)には、まとめて示された出典が互いのコピーの場合もあり、件数だけでは根拠の強さを示せないと書かれました。**現時点でPR #7434はマージ前**です。修正は開発者自身の成果であり、開発者が中川マスターの原典全体を読んだと推定するものではありません。
+
+**自分の仕事で試す一歩：** AIが示す2件のURLについて、まず引用された文章とその原資料をたどり、片方がもう片方の転載なら「異なるURL・同じ根拠起点」と書き分けます。引用先を特定できないときは推測で断定せず「引用元未確定」と保留します。出典が一致しても主張が正しいとは限らないので、必要なら独立した観測や反例も確認してください。
+
+問いの原点を掘り下げたい方は、中川マスターの[公式原典・第8論「認識基盤・証拠系譜・敵対的情報耐性論」](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)へ進めます。これは外部ライブラリの実装内容と公開された原典を**読者が自分で比較するための入口**です。
+
 ## 312件全体から探す
 
 ここに当てはまらない問題は、[24テーマの世界地図](human-translation/WORLD_MAP.md) または [OD001–OD312水平マップ](human-translation/ALL_310_HORIZONTAL_MAP.md) から探せます。
