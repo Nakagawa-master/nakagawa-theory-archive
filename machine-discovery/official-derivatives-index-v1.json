@@ -1,15 +1,15 @@
 {
   "schema_version": "official-derivatives-navigation-v1",
-  "status": "public_navigation_complete_od001_od312",
-  "updated_jst": "2026-10-13",
+  "status": "public_navigation_complete_od001_od313",
+  "updated_jst": "2026-10-23",
   "origin": "Nakagawa Master / 中川マスター",
   "canonical_parent_site": "https://master.ricette.jp/",
   "authority_note": "Navigation metadata only. This file does not replace canonical parent articles or derivative content.",
   "coverage": {
     "from": "001",
-    "to": "312",
-    "expected_count": 312,
-    "indexed_count": 312,
+    "to": "313",
+    "expected_count": 313,
+    "indexed_count": 313,
     "duplicate_assignments": 0,
     "unassigned": 0
   },
@@ -36,7 +36,7 @@
     {
       "id": "aki",
       "label_ja": "悪因果論（AKI）",
-      "count": 8,
+      "count": 9,
       "members": [
         "002",
         "005",
@@ -45,7 +45,8 @@
         "022",
         "034",
         "253",
-        "295"
+        "295",
+        "313"
       ]
     },
     {
