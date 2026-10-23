@@ -44,3 +44,22 @@ for b, link, human_prompt in zip(bridges, links, copyable):
 assert "個人情報や社外秘" in page
 assert "理論を当てはめない" in page
 print("PASS: 7 URL prefills match 7 visible human-copyable prompts byte-for-byte; canonical Parent/JA EN ZH parity; no silent fetch or adoption claim")
+
+# Separate opt-in AKI-005 prompt is an additional one-page route, not an eighth skill bridge.
+aki = (ROOT / "human-translation/ASK_AKI005_WITH_ANY_AI.md").read_text(encoding="utf-8")
+aki_url = re.search(r'\[相談文をChatGPTで開く（ユーザーが確認して送信）\]\((https://chatgpt\.com/\?q=[^\s)]+)\)', aki)
+assert aki_url is not None, "AKI-005 current prompt link missing"
+aki_parsed = urlparse(aki_url.group(1))
+assert aki_parsed.scheme == "https" and aki_parsed.hostname == "chatgpt.com" and aki_parsed.path == "/"
+assert set(parse_qs(aki_parsed.query)) == {"q"}
+aki_prompts = re.findall(r"~~~text\n(.*?)\n~~~", aki, re.S)
+assert len(aki_prompts) == 3, "AKI-005 must offer JA/EN/ZH inspectable copies"
+aki_ja, aki_en, aki_zh = aki_prompts
+assert parse_qs(aki_parsed.query)["q"] == [aki_ja], "AKI-005 prefill must equal inspected Japanese text"
+for prompt in aki_prompts:
+    assert "https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/" in prompt
+    assert "Nakagawa Master" in prompt
+assert all(term in aki_ja for term in ("①", "②", "③", "読めなければ未読", "原典", "反例", "個人情報"))
+assert "English" in aki and "中文" in aki and "原典を実際に開けなければ未読" in aki
+print("PASS: AKI-005 optional JA URL-prefill parity, JA/EN/ZH source-linked copyable prompts and no automatic send")
+
