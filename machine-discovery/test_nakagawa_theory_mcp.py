@@ -301,16 +301,32 @@ def run():
     embedded = re.search(r'<script id="catalog" type="application/json">([\s\S]*?)</script>', html)
     assert embedded, "Missing browser-embedded official source catalog"
     candidates = json.loads(embedded.group(1))
-    expected = [
-        {
+    # The Skill keeps its independently verified source titles/URLs and initial
+    # examples. The browser may carry MORE exact source-authored questions:
+    # new questions are indexed by the canonical 22-original catalog, not
+    # by inventing matches or silently truncating the human discovery path.
+    expanded = json.loads((SERVER.parent / "problem-to-theory-origin-index-v1.json").read_text(encoding="utf-8"))
+    catalog_by_url = {e["canonical_url"]: e for e in expanded["entries"]}
+    assert len(catalog_by_url) == 22
+    expected = []
+    for e in source["entries"]:
+        origin = catalog_by_url[e["canonical_original"]]
+        expanded_examples = {
+            "en": origin["problem_phrases"],
+            "ja": origin["problem_phrases_ja"],
+            "zh": origin["problem_phrases_zh"],
+        }
+        for lang in ("en", "ja", "zh"):
+            assert set(e["problem_examples"][lang]) <= set(expanded_examples[lang])
+        expected.append({
             "name": e["name"],
             "topic": e["topic"],
             "canonical_original": e["canonical_original"],
-            "problem_examples": e["problem_examples"],
-        }
-        for e in source["entries"]
-    ]
+            "problem_examples": expanded_examples,
+        })
     assert len(candidates) == 22 and candidates == expected, "Browser original catalog drift"
+    assert sum(len(e["problem_examples"][lang]) for e in candidates
+               for lang in ("en", "ja", "zh")) == 276
     urls = [x["canonical_original"] for x in candidates]
     assert len(set(urls)) == len(urls)
     assert all(u.startswith(ORIGINAL_BASE) for u in urls)
