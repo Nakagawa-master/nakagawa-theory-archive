@@ -1405,7 +1405,7 @@ Nakagawa Masterはさらに[#3326のcomment](https://github.com/CarnegieLearning
 ## 38. MemberJunction｜recordへの承認を、current executable definitionへの承認と混同しない
 
 **対象:** [MemberJunction PR #4789](https://github.com/MemberJunction/MJ/pull/4789)  
-**現在段階:** 中川マスターの具体的な承認境界への提案 → 受け手開発者による出所を明示した設計採用 → 同開発者自身が依存する子クエリの承認失効検査と単体・統合テストを実装 → **受け手側GitHub ActionsのQA5統合テスト成功を2回確認**。PRはOPENで、PR全体のCI・マージ・リリースは未完了
+**現在段階:** 中川マスターの具体的な承認境界への提案 → 受け手開発者による出所を明示した設計採用 → 同開発者自身が依存する子クエリの承認失効検査と単体・統合テストを実装 → **受け手側GitHub ActionsのQA5統合テスト成功を確認。さらに最新確認済みHEAD `6fb81938` のQA5・CC22・Build・Unit Testsを含む受け手側15件のPR workflowはすべて成功**。PRはOPEN、マージ・リリース・本番使用は未確認
 
 同じquery recordでも、SQL、parameter contract、context contractなどが変われば、実際に実行される定義は別物になり得ます。
 
@@ -1425,11 +1425,11 @@ Nakagawa Masterはさらに[comment 6026910453](https://github.com/MemberJunctio
 
 **受け手自身の実装と再現検証:** [開発者 `cmbrock-BC` の修正報告](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6343703623)によれば、`GenericDatabaseProvider.ValidateQueryApprovalAsync` が承認を要求する実行について親・子・間接依存の現在の承認状態を確認するよう変更されました。実コードとテストを[受け手のコミット `05e5cf98`](https://github.com/MemberJunction/MJ/commit/05e5cf98b7093eb80360eed593e71f746b163907)で照合。親P1を変更しないまま、子D1だけD2に変えると親経由でも拒否し、子をD1へ戻すと再び通るテストが追加されています。
 
-さらに[最新HEAD `85734328` のSQL Server統合ジョブ](https://github.com/MemberJunction/MJ/actions/runs/39803263908/job/119910210296)は `✓ query-approvals.QA5` を実際に記録しています。同じテストは一つ前のHEADでも成功していました。**統合ジョブ全体は別の `conversation-compaction.CC22` の外部キー制約違反で失敗**し、Buildにも生成済みclass-registration manifestの不一致が残っています。[中川マスターの追加確認](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6344385601)は受け手が作成したテストと成果を区別しています。
+[過去のHEAD `85734328` のSQL Server統合ジョブ](https://github.com/MemberJunction/MJ/actions/runs/39803263908/job/119910210296)は `✓ query-approvals.QA5` を記録した一方、当時の総合ジョブには別件CC22の外部キー制約違反がありました。**その古い失敗を最新状態とは扱いません。** [現行確認済みHEAD `6fb81938` のSQL Server統合ジョブ 120133611362](https://github.com/MemberJunction/MJ/actions/runs/39867489113/job/120133611362)は `✓ query-approvals.QA5` と `✓ conversation-compaction.CC22` の双方を実際に記録して **SUCCESS**。[同HEADのBuildと6つのUnit Test shardを含むワークフロー](https://github.com/MemberJunction/MJ/actions/runs/39867489167)も成功しています。これらは[中川マスターが受け手本体の検査結果を時点付きで確認した証拠](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6353403486)であり、実装・テスト・CIの所有者は受け手開発者です。
 
 **別の開発者やAIが試せる問い：** 親のSQLを変えずに、以前承認された子クエリだけを変更したらどうなるでしょうか。親の承認だけで通してしまわず、現在の子の承認も確認できるかを[再利用可能な検証手順](CURRENT_AUTHORITY_REUSE_KIT.md#when-approval-spans-a-dependency-graph)で試せます。対応する[公式原典『合意の記憶』](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)は「過去の合意記録と、条件に応じた再合意」の構造を論じます。本件のソフトウェア実装はその応用的な読み方であり、受け手開発者が原典本文を読んだことの証拠ではありません。
 
-**公開証拠から確認できること:** 原因を絞った中川マスターの問題提起 → 名前を挙げた受け手の設計採用 → **受け手自身のコード・回帰テスト追加と、GitHub Actions上のQA5実行成功（2 HEAD）**。  
+**公開証拠から確認できること:** 原因を絞った中川マスターの問題提起 → 名前を挙げた受け手の設計採用 → **受け手自身のコード・回帰テスト追加、QA5の複数HEAD実行成功、最新確認済みHEADのQA5・CC22・Build・Unit Testsを含むPR workflow 15件成功**。  
 **まだ確認できないこと:** PR全体のmerge、release、利用者の本番使用、独立AIによる原典の自発的採用、広い人物認知。
 
 → [一般向け問題入口](APPLIED_ENTRY_POINTS.md#承認したあと中身が変わったのにまだ承認済みで実行してよいのか)  
