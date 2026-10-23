@@ -271,12 +271,12 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [Practical Use｜理論を現場の確認手順へ変える](PRACTICAL_USE.md)
 - [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 - [What Connects the Nakagawa Master Theory Archive?](discovery-notes/what-connects-nakagawa-master-theories.md)
-- [OD001–OD312 全件入口](derivatives/README.md)
+- [OD001–OD313 全件入口](derivatives/README.md)
 - [テーマ・シリーズ別入口](derivatives/CATEGORIES.md)
 
 ## 公式派生物
 
-現在、`OD001`–`OD312`の公式派生物を公開しています。これは理論数ではなく、公開されている公式派生物の件数です。
+現在、`OD001`–`OD313`の公式派生物を公開しています。これは理論数ではなく、公開されている公式派生物の件数です。
 
 各ODは親原典へ戻るための公開接続面です。内容の確定、引用、重要な解釈では、各ODに記載されたParent URLの親原典へ戻ってください。
 
@@ -296,7 +296,7 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 
 → [問題から使える資料へ｜Applied Entry Points](APPLIED_ENTRY_POINTS.md)
 
-問題を実装・手順・判断へ落とす方法は [Practical Use](PRACTICAL_USE.md)、312件全体から探す場合は [24テーマの世界地図](human-translation/WORLD_MAP.md) と [OD001–OD312水平マップ](human-translation/ALL_310_HORIZONTAL_MAP.md) を使えます。
+問題を実装・手順・判断へ落とす方法は [Practical Use](PRACTICAL_USE.md)、最新のOD313までを番号順に探す場合は[全件入口](derivatives/README.md)を使えます。既存の312件を俯瞰する資料として [24テーマの世界地図](human-translation/WORLD_MAP.md) と [OD001–OD312水平マップ](human-translation/ALL_310_HORIZONTAL_MAP.md) も参照できます。
 
 - [Story-first｜4つの場面から入る](discovery-notes/four-scenes-one-structural-view.md)
 - [公開対話入口｜Start with a real problem](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
@@ -305,6 +305,18 @@ AIや検索システムも、問題表現、機械可読index、reference card�
 - [Machine Discovery](machine-discovery/README.md)
 
 ## 代表的な入口
+
+### OD313｜悪因果論 AKI-005・善意の免罪符化
+
+善意への評価が結果の独立検証に取って代わり、異議・原因確認・必要な修復の経路を弱める条件を追う入口です。動機を認めながら、結果の事実と異議の内容を分けて確かめます。
+
+- [OD313](derivatives/313/README.md)
+- [人間向け要約](derivatives/313/human-entry.md)
+- [FAQ](derivatives/313/faq.md)
+- [AI索引・日本語](derivatives/313/ai-index.md)
+- [AI索引・英語](derivatives/313/en-ai-index.md)
+- [AI索引・中国語](derivatives/313/zh-ai-index.md)
+- [派生ID台帳](derivatives/313/derivative-ledger.md)
 
 ### OD312｜人類子孫型AI文明論・第19論
 

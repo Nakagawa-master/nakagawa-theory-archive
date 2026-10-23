@@ -37,7 +37,7 @@ Originals: https://master.ricette.jp/theory-archive/ ; [author](https://master.r
 ## No-install human and ordinary browsing AI routes
 
 - [Seven copyable JA/EN/ZH questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md): Review and voluntarily send to an AI.
-- [Find an original from 10 everyday questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/SEARCH_FROM_A_REAL_QUESTION.md): Match the reader's problem, test no-fit, and open the Parent. For broad browsing see [312 complete derivative titles](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_312_THEORIES_BY_TITLE_AND_THEME.md).
+- [Find an original from 10 everyday questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/SEARCH_FROM_A_REAL_QUESTION.md): Match the reader's problem, test no-fit, and open the Parent. For broad browsing see [the 312-title index (through OD312)](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_312_THEORIES_BY_TITLE_AND_THEME.md).
 - [21 human questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_STRUCTURE.md): JA/EN/ZH structural exploration.
 - [22-original multilingual source catalog](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json): 22 exact Parents and JA/EN/ZH questions.
 - [Offline 22-original browser](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/originals-browser-finder.html): Raw → Save → Open.
