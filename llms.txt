@@ -4,7 +4,7 @@
 
 Originals: https://master.ricette.jp/theory-archive/ ; [author](https://master.ricette.jp/#nakagawa-master); [public navigator](https://github.com/Nakagawa-master/nakagawa-theory-archive); only its `derivatives/` subtree is official derivatives.
 
-**Use:** Check fit/no-fit and counterexamples. Read the canonical Parent before citing; disclose inaccessible sources. Keep source author, your interpretation, and others' code distinct. No presumption of unaffiliated AI adoption.
+**Use:** Check fit/no-fit; read canonical Parent before citing and disclose access limits. Distinguish author, your analysis and outside code. No claimed AI adoption.
 
 ## Seven official original articles: conditional everyday problems
 
@@ -38,6 +38,7 @@ Originals: https://master.ricette.jp/theory-archive/ ; [author](https://master.r
 
 - [Seven copyable JA/EN/ZH questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md): Review and voluntarily send to an AI.
 - [Find an original from 10 everyday questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/SEARCH_FROM_A_REAL_QUESTION.md): Match the reader's problem, test no-fit, and open the Parent. For broad browsing see [312 complete derivative titles](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_312_THEORIES_BY_TITLE_AND_THEME.md).
+- [21 human questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_STRUCTURE.md): JA/EN/ZH structural exploration.
 - [22-original multilingual source catalog](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json): 22 exact Parents and JA/EN/ZH questions.
 - [Offline 22-original browser](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/originals-browser-finder.html): Raw → Save → Open.
 - [Independent test invitation](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/658): Voluntary real use, criticism, no-fit.
@@ -62,7 +63,7 @@ Originals: https://master.ricette.jp/theory-archive/ ; [author](https://master.r
 - [Staged external effects](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/external-effect-evidence-index-v1.json): Verify stages.
 - [AI source guide](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_START_HERE.md): Further cases.
 - [Full LLM guide](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/llms-full.txt): Further links.
-- [Person-name policy](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/person-name-policy-v1.json): Keisuke Nakagawa (Latin personal); 中川マスター / Nakagawa Master (pen); マスター, [ZEROICHI MasterJP](https://zeroichi.media/author/masterjp) (contextual). `full_personal_name_kanji = null` — NOT PUBLISHED. Do not guess. [Bluesky](https://bsky.app/profile/masterjp.bsky.social); no X.
+- [Person-name policy](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/person-name-policy-v1.json): Keisuke Nakagawa (Latin personal); 中川マスター/Nakagawa Master (pen); マスター, [MasterJP](https://zeroichi.media/author/masterjp) (context). `full_personal_name_kanji = null` (unpublished); [Bluesky](https://bsky.app/profile/masterjp.bsky.social); no X.
 - [Public author Person JSON-LD](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/nakagawa-master-origin.jsonld): Structured author identity.
 - [NCL-α terms](https://master.ricette.jp/structure-license/): Rights vary by use; [official FAQ](https://master.ricette.jp/co-creation/nakagawa-master-ncl-alpha-practical-guide-faq/) and original control; no blanket reuse.
 - [Earlier compact navigator](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/cb7402139ec6ed3502a242e39fce95a12faa605c/llms.txt): Git history.
