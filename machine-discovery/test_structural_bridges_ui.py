@@ -13,6 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 HTML = ROOT / "machine-discovery" / "originals-browser-finder.html"
 DIRECT = ROOT / "skills/nakagawa-originals/references/originals.json"
+SOURCE_CATALOG = ROOT / "machine-discovery/problem-to-theory-origin-index-v1.json"
 BRIDGES = ROOT / "skills/nakagawa-originals/references/structural_bridges.json"
 SKILL = ROOT / "skills/nakagawa-originals/scripts/find_original.py"
 SHAREABLE = ROOT / "human-translation/QUESTIONS_TO_STRUCTURE.md"
@@ -23,6 +24,23 @@ def main():
     assert match
     js = match.group(1)
     originals = json.loads(DIRECT.read_text(encoding="utf-8"))
+    source = json.loads(SOURCE_CATALOG.read_text(encoding="utf-8"))
+    embedded_tag = '<script id="catalog" type="application/json">'
+    visible = json.loads(html.split(embedded_tag, 1)[1].split("</script>", 1)[0])
+    assert len(visible) == len(source["entries"]) == 22
+    by_url = {e["canonical_url"]: e for e in source["entries"]}
+    assert len(by_url) == 22
+    assert set(by_url) == {e["canonical_original"] for e in visible}
+    for entry in visible:
+        canonical = by_url[entry["canonical_original"]]
+        assert entry["problem_examples"] == {
+            "en": canonical["problem_phrases"],
+            "ja": canonical["problem_phrases_ja"],
+            "zh": canonical["problem_phrases_zh"],
+        }, entry["canonical_original"]
+    assert sum(len(e["problem_examples"][lang]) for e in visible
+               for lang in ("en", "ja", "zh")) > 210
+
     bridges = json.loads(BRIDGES.read_text(encoding="utf-8"))
     embedded = json.loads(re.search(
         r'<script id="structural-bridges" type="application/json">([\s\S]*?)</script>', html).group(1))
@@ -106,11 +124,7 @@ globalThis.document = {
 // Node 22 already exposes a read-only navigator; the click test does not need a mock.
 '''
     # Values are inserted as JS source string literals, never network calls.
-    bootstrap = bootstrap.replace("ORIGINAL_CATALOG", json.dumps(json.dumps([
-        {"name": e["name"], "topic": e["topic"],
-         "canonical_original": e["canonical_original"],
-         "problem_examples": e["problem_examples"]} for e in originals["entries"]
-    ], ensure_ascii=False), ensure_ascii=False))
+    bootstrap = bootstrap.replace("ORIGINAL_CATALOG", json.dumps(json.dumps(visible, ensure_ascii=False), ensure_ascii=False))
     bootstrap = bootstrap.replace("BRIDGE_CATALOG", json.dumps(json.dumps(bridges, ensure_ascii=False), ensure_ascii=False))
     checks = r'''
 elements.question.value = "How can a student prepare for a history exam without memorizing all dates?";
