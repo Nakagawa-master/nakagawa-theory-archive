@@ -1420,7 +1420,7 @@ AI运行服务故障转移后，替换进程的 `POST /load` 返回200，只能�
 - [第三方开发者的明确采纳、独立诊断实现与测试](https://github.com/QwenLM/qwen-code/pull/14522#issuecomment-6247641054)（[代码提交 `fe11db61`](https://github.com/QwenLM/qwen-code/commit/fe11db61efa7714ef536eb1b4e99dd384813968f)）
 - [独立维护者的正式批准](https://github.com/QwenLM/qwen-code/pull/14522#pullrequestreview-5568430592)、[第二位审查者批准](https://github.com/QwenLM/qwen-code/pull/14522#pullrequestreview-5568562537)及[上游合并](https://github.com/QwenLM/qwen-code/commit/f8b3031f733cbc149873ac5809efdc3c632970e7)
 
-**可确认：** Nakagawa提出的具体验收条件获得外部开发者明确回应，其自主实现包含在经独立审查后合并的PR中。**需单独核验：** 同一PR中其他修改和420项验证不能全部归功于Nakagawa；真实Hosted恢复的所有条件、包含该提交的正式版本、用户部署使用，以及整套原典理论被独立AI采用，均未由本案例单独证明。[第8论原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)可供独立核查。
+**可确认：** Nakagawa提出的具体验收条件获得外部开发者明确回应，其自主实现包含在经独立审查后合并的PR中。**需单独核验：** 同一PR中其他修改和420项验证不能全部归功于Nakagawa；PR #14522已进入稳定版v0.26.0；但真实Hosted恢复的全部条件、独立观察到的用户部署、后续PR #15174的正式发布，以及整套原典理论被独立AI采用，仍未由本案例证明。[第8论原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)可供独立核查。
 
 ---
 

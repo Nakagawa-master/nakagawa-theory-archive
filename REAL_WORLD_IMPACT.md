@@ -1629,7 +1629,7 @@ AIの処理サーバーが故障から交代したとき、新しいサーバー
 - [Qwen実装者による明示的な採用報告と診断・テストの実装](https://github.com/QwenLM/qwen-code/pull/14522#issuecomment-6247641054) ／ [受け手実装コミット `fe11db61`](https://github.com/QwenLM/qwen-code/commit/fe11db61efa7714ef536eb1b4e99dd384813968f)
 - [独立した保守担当による比較テストと正式承認](https://github.com/QwenLM/qwen-code/pull/14522#pullrequestreview-5568430592) ／ [もう一人の最終承認](https://github.com/QwenLM/qwen-code/pull/14522#pullrequestreview-5568562537) ／ [上流マージ](https://github.com/QwenLM/qwen-code/commit/f8b3031f733cbc149873ac5809efdc3c632970e7)
 
-**確認できること:** 中川マスター由来の具体的な判定条件に対する受け手の明示的応答、その実装を含むPRの独立したレビュー・上流マージ。**確認を分けること:** PR内の他の修正や420件の検査全体を中川マスター一人の発見とは扱いません。実際のHosted復旧の全条件、マージを含む正式リリース、利用者への配信・使用、原典理論群全体の第三者採用は、この記録だけでは確定しません。[関連する原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)も独立して検証できます。
+**確認できること:** 中川マスター由来の具体的な判定条件に対する受け手の明示的応答、その実装を含むPRの独立したレビュー・上流マージ。**確認を分けること:** PR内の他の修正や420件の検査全体を中川マスター一人の発見とは扱いません。PR #14522は安定版v0.26.0に収録済みですが、実際のHosted復旧の全条件、利用者が稼働させた実例、別PR #15174の製品リリース、原典理論群全体の第三者採用は、この記録だけでは確定しません。[関連する原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)も独立して検証できます。
 
 ---
 
