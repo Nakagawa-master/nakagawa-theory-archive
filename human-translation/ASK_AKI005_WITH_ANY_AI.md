@@ -1,0 +1,49 @@
+# 善意だったのに、結果を確かめてはいけない？ — AKI-005を好きなAIと一緒に読む
+
+誰かが親切にしてくれた。でも、実際には困ってしまった。その結果を話したいだけなのに「善意だったのだから感謝しなさい」と言われたら、どこから考えればよいのでしょうか。
+
+中川マスター（Nakagawa Master / Keisuke Nakagawa）の[公式原典『悪因果論 AKI-005：善意の免罪符化』](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/)は、**善意の有無を非難する議論ではなく、善意の評価が事後の検証を置き換え、異議や必要な修正の経路を弱める場合**を見分けます。善意に感謝しながら、結果を確かめることは両立します。
+
+原典は[公式アーカイブ](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/)、簡単な15秒説明と反例は[公式派生物OD313](../derivatives/313/human-entry.md)です。両者は別の役割を持ちます。
+
+## 今の問題から使う3つの観点
+
+- **動機：** 誰かの善意・目的が評価されているか。
+- **結果と判断：** その評価によって、結果・原因・責任・修復を別に確かめる判断が実際に省かれたか。
+- **影響：** そのために、異議を聞く・結果を確かめる・必要な修正をする経路の少なくとも一つが弱まったか。
+
+「好意はあった」「結果はよくなかった」という2事実だけでは、この仕組みの成立を決められません。情報や時間の不足、異議が妥当でなかった場合、確認の仕組みがきちんと働いた場合も比較できます。「最近、苦情が減った」も、それだけで改善した証拠にはなりません。
+
+## 日本語｜自分の好きなAIに渡す
+
+**使い方：** 次のリンクを選ぶとChatGPTの相談文が開きます。**送信前に自分で編集・確認**してください。ChatGPT以外のAI（Gemini、Claude、Copilotなど）では下の相談文をそのままコピーして使えます。どのAIでも、原典を実際に開けなければ未読と扱ってください。秘密や他人の氏名は入力しないでください。
+
+[相談文をChatGPTで開く（ユーザーが確認して送信）](https://chatgpt.com/?q=%E6%AC%A1%E3%81%AE%E5%87%BA%E6%9D%A5%E4%BA%8B%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%81%E8%AA%B0%E3%81%8B%E3%81%AE%E5%96%84%E6%84%8F%E3%82%92%E5%90%A6%E5%AE%9A%E3%81%9B%E3%81%9A%E3%80%81%E5%AE%9F%E9%9A%9B%E3%81%AE%E7%B5%90%E6%9E%9C%E3%81%A8%E7%95%B0%E8%AD%B0%E3%81%AE%E6%89%B1%E3%81%84%E3%82%92%E8%AA%BF%E3%81%B9%E3%81%9F%E3%81%84%E3%81%A7%E3%81%99%E3%80%82%E4%B8%AD%E5%B7%9D%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC%EF%BC%88Nakagawa%20Master%20%2F%20Keisuke%20Nakagawa%EF%BC%89%E3%81%AE%E5%85%AC%E5%BC%8F%E5%8E%9F%E5%85%B8%E3%80%8E%E6%82%AA%E5%9B%A0%E6%9E%9C%E8%AB%96%20AKI-005%EF%BC%9A%E5%96%84%E6%84%8F%E3%81%AE%E5%85%8D%E7%BD%AA%E7%AC%A6%E5%8C%96%E3%80%8F%20https%3A%2F%2Fmaster.ricette.jp%2Fsociety%2Fnakagawa-master-aki-005-good-intentions-as-exemption%2F%20%E3%82%92%E3%80%81%E9%96%B2%E8%A6%A7%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%AA%E3%82%89%E5%AE%9F%E9%9A%9B%E3%81%AB%E6%9C%AC%E6%96%87%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A7%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%E8%AA%AD%E3%82%81%E3%81%AA%E3%81%91%E3%82%8C%E3%81%B0%E6%9C%AA%E8%AA%AD%E3%81%A8%E6%98%8E%E7%A4%BA%E3%81%97%E3%80%81%E9%A1%8C%E5%90%8D%E3%82%84%E3%81%93%E3%81%AE%E7%9B%B8%E8%AB%87%E6%96%87%E3%81%A0%E3%81%91%E3%81%8B%E3%82%89%E5%8E%9F%E5%85%B8%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A0%E3%81%A8%E8%A3%85%E3%82%8F%E3%81%AA%E3%81%84%E3%81%A7%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%E7%A7%81%E3%81%8C%E3%81%93%E3%82%8C%E3%81%8B%E3%82%89%E6%9B%B8%E3%81%8F%E5%87%BA%E6%9D%A5%E4%BA%8B%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%81%E2%91%A0%E5%8B%95%E6%A9%9F%E3%81%B8%E3%81%AE%E8%82%AF%E5%AE%9A%E7%9A%84%E8%A9%95%E4%BE%A1%E3%81%8C%E3%81%82%E3%82%8B%E3%80%81%E2%91%A1%E3%81%9D%E3%81%AE%E8%A9%95%E4%BE%A1%E3%81%8C%E7%B5%90%E6%9E%9C%E3%83%BB%E5%8E%9F%E5%9B%A0%E3%83%BB%E8%B2%AC%E4%BB%BB%E3%83%BB%E4%BF%AE%E5%BE%A9%E3%81%AE%E7%8B%AC%E7%AB%8B%E5%88%A4%E6%96%AD%E3%82%92%E5%AE%9F%E9%9A%9B%E3%81%AB%E4%BB%A3%E6%9B%BF%E3%81%99%E3%82%8B%E3%80%81%E2%91%A2%E3%81%9D%E3%81%AE%E4%BB%A3%E6%9B%BF%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E7%95%B0%E8%AD%B0%E5%8F%97%E7%90%86%E3%83%BB%E7%B5%90%E6%9E%9C%E6%A4%9C%E8%A8%BC%E3%83%BB%E5%BF%85%E8%A6%81%E3%81%AA%E5%A4%89%E6%9B%B4%E3%81%AE%E5%B0%91%E3%81%AA%E3%81%8F%E3%81%A8%E3%82%82%E4%B8%80%E7%B5%8C%E8%B7%AF%E3%81%8C%E5%AE%9F%E8%B3%AA%E7%9A%84%E3%81%AB%E5%BC%B1%E3%81%BE%E3%82%8B%E3%80%81%E3%81%A8%E3%81%84%E3%81%86%E4%B8%89%E6%9D%A1%E4%BB%B6%E3%82%92%E5%88%A5%E3%80%85%E3%81%AB%E6%A4%9C%E8%A8%8E%E3%81%97%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%E6%88%90%E7%AB%8B%E3%82%92%E6%B1%BA%E3%82%81%E3%81%A4%E3%81%91%E3%81%9A%E3%80%81%E5%90%84%E6%9D%A1%E4%BB%B6%E3%81%AE%E8%A6%B3%E6%B8%AC%E4%BA%8B%E5%AE%9F%E3%80%81%E3%81%BE%E3%81%A0%E5%88%86%E3%81%8B%E3%82%89%E3%81%AA%E3%81%84%E3%81%93%E3%81%A8%E3%80%81%E5%8F%8D%E4%BE%8B%E3%80%81%E5%88%A5%E5%8E%9F%E5%9B%A0%EF%BC%88%E6%83%85%E5%A0%B1%E4%B8%8D%E8%B6%B3%E3%83%BB%E6%A8%A9%E9%99%90%E3%83%BB%E6%99%82%E9%96%93%E3%83%BB%E8%B3%87%E6%BA%90%EF%BC%89%E3%82%92%E5%88%86%E3%81%91%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%E5%96%84%E6%84%8F%E3%81%B8%E3%81%AE%E8%A9%95%E4%BE%A1%E3%81%A8%E3%80%81%E5%AE%9F%E9%9A%9B%E3%81%AB%E5%9B%B0%E3%81%A3%E3%81%9F%E4%BA%BA%E3%81%B8%E3%81%AE%E7%B5%90%E6%9E%9C%E8%AA%AC%E6%98%8E%E3%82%92%E4%B8%A1%E7%AB%8B%E3%81%95%E3%81%9B%E3%80%81%E7%95%B0%E8%AD%B0%E3%82%92%E7%84%A1%E6%9D%A1%E4%BB%B6%E3%81%AB%E6%8E%A1%E7%94%A8%E3%81%9B%E3%81%9A%E5%86%85%E5%AE%B9%E3%81%A7%E5%AF%A9%E6%9F%BB%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%E3%80%81%E5%B0%91%E3%81%AA%E3%81%84%E8%B2%A0%E6%8B%85%E3%81%A7%E8%A9%A6%E3%81%9B%E3%82%8B%E4%BF%AE%E6%AD%A3%E3%81%A8%E3%81%9D%E3%81%AE%E5%BE%8C%E3%81%AE%E7%B5%90%E6%9E%9C%E7%A2%BA%E8%AA%8D%E3%82%92%E6%8F%90%E6%A1%88%E3%81%97%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%E5%8E%9F%E5%85%B8%E3%81%AB%E6%9B%B8%E3%81%8B%E3%82%8C%E3%81%9F%E4%B8%BB%E5%BC%B5%E3%80%81%E3%81%82%E3%81%AA%E3%81%9F%E7%8B%AC%E8%87%AA%E3%81%AE%E6%8F%90%E6%A1%88%E3%80%81%E7%A7%81%E3%81%AE%E6%9C%AA%E6%A4%9C%E8%A8%BC%E3%81%AE%E7%94%B3%E5%91%8A%E3%82%92%E6%98%8E%E7%A2%BA%E3%81%AB%E5%8C%BA%E5%88%A5%E3%81%97%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%E7%9B%B8%E6%89%8B%E3%82%84%E7%A7%81%E3%81%AE%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E3%82%92%E8%A6%81%E6%B1%82%E3%81%97%E3%81%AA%E3%81%84%E3%81%A7%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82)
+
+**日本語の相談文（コピー用）**
+
+~~~text
+次の出来事について、誰かの善意を否定せず、実際の結果と異議の扱いを調べたいです。中川マスター（Nakagawa Master / Keisuke Nakagawa）の公式原典『悪因果論 AKI-005：善意の免罪符化』 https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/ を、閲覧できるなら実際に本文を読んでください。読めなければ未読と明示し、題名やこの相談文だけから原典を読んだと装わないでください。私がこれから書く出来事について、①動機への肯定的評価がある、②その評価が結果・原因・責任・修復の独立判断を実際に代替する、③その代替によって異議受理・結果検証・必要な変更の少なくとも一経路が実質的に弱まる、という三条件を別々に検討してください。成立を決めつけず、各条件の観測事実、まだ分からないこと、反例、別原因（情報不足・権限・時間・資源）を分けてください。善意への評価と、実際に困った人への結果説明を両立させ、異議を無条件に採用せず内容で審査する方法、少ない負担で試せる修正とその後の結果確認を提案してください。原典に書かれた主張、あなた独自の提案、私の未検証の申告を明確に区別してください。相手や私の個人情報を要求しないでください。
+~~~
+
+## English | Copy into any AI you choose
+
+Use your own AI and verify whether it actually accessed the original. Do not enter sensitive details.
+
+~~~text
+I want to evaluate whether good intentions have displaced verification of actual outcomes, without treating kindness itself as wrongdoing. Please read Nakagawa Master's canonical original AKI-005, if accessible: https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/ . If it is inaccessible, say it was not read. On my own example, separately check three required conditions: a positively valued intention; that valuation substituting for independent assessment of outcome, cause, responsibility or repair; and that substitution materially weakening the channel for objections, result-checking or needed changes. Ask what evidence is missing, which counterexample might overturn this interpretation, and what alternative causes such as limited information, authority, time or resources fit. Distinguish the author's original, my unverified account and your own analysis. Suggest one small, consentful change and a later result check. Do not request identifying information.
+~~~
+
+## 中文｜复制到自己选择的AI
+
+请自行检查并决定是否发送，不要输入个人隐私信息；请核实AI是否真正读取了原文。
+
+~~~text
+请针对我遇到的情况，区分善意的动机与实际结果的核验，不要预设善意就是错误。先尝试阅读中川大师（Nakagawa Master）的官方原典《恶因果论 AKI-005：善意的免责化》：https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/ 。如果无法读取，请明确说明未读，不要假装读过。分别检查三个成立条件：①肯定善意的动机；②这种肯定实际替代了对结果、原因、责任或修复的独立判断；③这种替代实质性削弱了异议受理、结果核实或必要修正的至少一条路径。说明支持事实、缺失信息、反例及其他原因（信息、权限、时间、资源），区别作者原文、我的陈述与模型自己的分析，并提出一个可自愿尝试的小改进及后续结果核验；无需个人身份信息。
+~~~
+
+## 判断したあと、何を変える？
+
+① 見聞きした事実と推測を分ける。② 善意への評価をそのままに、結果を確かめる独立した方法を一つ用意する。③ その方法で異議の扱いや結果が実際に変化したか、次の機会に確認する。AIの回答も、この判断の代行ではありません。原典に合わない場合は、別の説明・対応を選んで構いません。
+
+[313件全件の題名から別の原典を選ぶ](ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [公式原典を直接読む](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/) ／ [全体の7つのAI相談例に戻る](ASK_ANY_AI_WITHOUT_INSTALLING.md)
