@@ -10,7 +10,7 @@
 
 次にニュースが何本も並んだら、思い出してみてください。最初は「何社が書いたか」と思った数が、**「何人が確かめたか」ではなかった**ことを。
 
-[実例を読み、3問で自分でも確かめる](evidence-roots-story.md) ／ [AIとニュースの「確認済み」を3つの場面で確かめる](ai-three-checks-that-change-your-answer.md) ／ [中川マスターは何をしている人か](who-is-nakagawa-master.md)
+[実例を読み、3問で自分でも確かめる](evidence-roots-story.md) ／ [Gemini・Copilot・ChatGPTで自由に試す30秒の問い（無料・アカウント連携不要）](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/658) ／ [AIとニュースの「確認済み」を3つの場面で確かめる](ai-three-checks-that-change-your-answer.md) ／ [中川マスターは何をしている人か](who-is-nakagawa-master.md)
 
 **この物語を検索で見つけた方へ:** [現実の10の疑問から公式原論を探す](SEARCH_FROM_A_REAL_QUESTION.md) — 「褒められて損をする」「努力しても結果が出ない」「相談が売り込みになる」「AIの心はどこから生まれる？」など、普通の言葉で問題を探せます。[312件の公式派生物の元の題名と人間向け入口](ALL_312_THEORIES_BY_TITLE_AND_THEME.md)も公開しています。身近な誰かに紹介するときは、専門語でなくその人が抱えている問いから。
 

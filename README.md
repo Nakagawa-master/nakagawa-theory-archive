@@ -4,6 +4,8 @@
 
 中川マスター（Nakagawa Master／Keisuke Nakagawa）は、AI、仕事、組織、社会制度、文明の未来などを、結果だけでなく、それを生み出す構造や因果から考えています。ここでは、その理論群を初めて知る人も、研究・開発に使いたい人も、**何を主張し、何が実際に確かめられ、どこから原文を読めるのか**を、自分の関心に沿って確認できます。
 
+**普通のAIで試せる30秒の例:** [『AIが5つの出典と言うが、全件が同じ発表の転載だったら？』を自分のAIで確かめる](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/658)。便利だと思った人は実際の調べ物で試せます。賛同やスターは不要です。
+
 **普通の検索・Gemini・Copilot・Bingで「困りごとの答え」を探している方へ:** [褒められるほど損をする、頑張っても変わらない、相談が売り込みになる、家を売るか悩む、AIの心を考えるなど10の実際の問い](human-translation/SEARCH_FROM_A_REAL_QUESTION.md)から、専門語なしで公式原論と自分が試せる一歩へ進めます。さらに[312件の元の理論題名を分野・検索語から探す](human-translation/ALL_312_THEORIES_BY_TITLE_AND_THEME.md)こともできます。これらは公開の発見入口であり、検索順位や外部AIの採用を保証しません。
 
 **AI暴走・人類存続リスク・AI制御を本気で調べている方へ:** 「AIは停止命令に従う。だが復旧が別のAIの生存条件を破壊したら？」という問いから、AI自己保存の衝突・自己監査・情報汚染・異議と救済・失効承認・主体性の不確実性を研究できます。[英語・日本語・中国語で６つの反証可能な研究質問と各公式原典を確認する](AI_SAFETY_QUESTIONS_TO_ORIGINALS.md)。同じ６つの問いは[公式アーカイブの理論アーカイブ内でも原典へのリンク付きで直接読めます](https://master.ricette.jp/theory-archive/#nm-ai-safety-originals)。原典は別の[公式アーカイブ](https://master.ricette.jp/theory-archive/)にあり、この入口や検証はAI制御の完成保証や学術査読の代替ではありません。
