@@ -1407,7 +1407,7 @@ Nakagawa Masterはさらに[#3326のcomment](https://github.com/CarnegieLearning
 ## 38. MemberJunction｜recordへの承認を、current executable definitionへの承認と混同しない
 
 **対象:** [MemberJunction PR #4789](https://github.com/MemberJunction/MJ/pull/4789)  
-**現在段階:** 中川マスターの承認境界の指摘 → 受け手によるQA5の独立した実装とテスト成功 → **続いて受け手開発者がALS14のサーバー権限経路と直接書込み拒否を検証するコードを追加**。受け手HEAD `139e829f` のチェックは46件中40件成功・6件スキップ・失敗0件。PRはOPEN、マージ・リリース・実利用は今後の確認対象
+**現在段階:** 中川マスターの承認境界の指摘 → 受け手によるQA5の独立した実装とテスト成功 → **続いて受け手開発者がALS14のサーバー権限経路と直接書込み拒否を検証するコードを追加**。先行HEAD `139e829f` のチェック46件は40件成功・6件スキップ・失敗0件。その後のHEAD `d1b61f55` は受け手開発者が追加修正を行った段階で、確認時点では新しいBuild・SQL統合テスト等が進行中。PRはOPEN、マージ・リリース・実利用は今後の確認対象
 
 同じquery recordでも、SQL、parameter contract、context contractなどが変われば、実際に実行される定義は別物になり得ます。
 
@@ -1431,9 +1431,11 @@ Nakagawa Masterはさらに[comment 6026910453](https://github.com/MemberJunctio
 
 **同じ受け手による次の独立修正（10月23日）:** AI実行履歴の保存保護に対して統合テストALS14が直接代入して失敗したため、中川マスターは[正規のサーバー権限経路と不正な直接書込みを区別する検証](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6369711289)を提案。開発者 `cmbrock-BC` は[返信](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6369985463)と[実装差分](https://github.com/MemberJunction/MJ/commit/222047870b7de1f8eb5bfeaca1d969031c45da11)で `SetServerBoundActionParams` による正規保存と、初回・更新時の不正直接代入拒否をテストへ加えました。[受け手HEAD `139e829f`](https://github.com/MemberJunction/MJ/commit/139e829f8e63ae2358dde8cba474bd8a0dbc7244)のチェック46件は40件成功、6件スキップ、失敗0件。受け手側の修正・検証成立であり、PRのマージや外部の実利用は別の段階です。同一PRの前段のQA5成果を独立件数として二重計上しません。
 
+**受け手側でさらに進んだ第三者レビュー:** [メンテナ `rkihm-BC` の再レビュー](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5631941835)は、上記の中川マスターによるALS14の原因切り分けと、開発者自身による修正を明示的に確認しました。同レビュアーが別に発見したSQLテンプレートの文字列処理や保存済み値の取得失敗時の問題は、レビュアー自身の発見です。[開発者の新しい修正 `d1b61f55`](https://github.com/MemberJunction/MJ/commit/d1b61f55d40251f30e3b4d723b9a93842b985d1d)は、文字列処理の利用案内、値が読めないときの安全側への停止と回帰テストを追加しました。[レビュアーが残した別の使用例修正依頼](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6370813287)と新HEADのCI・最終判断は引き続き受け手側で進行中です。旧HEADの成功を現在の全テスト成功やマージには置き換えません。
+
 **別の開発者やAIが試せる問い：** 親のSQLを変えずに、以前承認された子クエリだけを変更したらどうなるでしょうか。親の承認だけで通してしまわず、現在の子の承認も確認できるかを[再利用可能な検証手順](CURRENT_AUTHORITY_REUSE_KIT.md#when-approval-spans-a-dependency-graph)で試せます。対応する[公式原典『合意の記憶』](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)は「過去の合意記録と、条件に応じた再合意」の構造を論じます。本件のソフトウェア実装はその応用的な読み方であり、受け手開発者が原典本文を読んだことの証拠ではありません。
 
-**公開証拠から確認できること:** 中川マスターの問題提起 → 受け手自身のQA5修正と実テスト成功 → **後続ALS14についても受け手開発者が独自にコード・負例を変更し、新HEADのチェック46件で失敗0件**。  
+**公開証拠から確認できること:** 中川マスターの問題提起 → 受け手自身のQA5修正と実テスト成功 → **後続ALS14についても受け手開発者が独自にコード・負例を変更し、先行HEADで46件のチェックが失敗0件、さらに別の人間レビュアーが同修正を検証**。  
 **まだ確認できないこと:** PR全体のmerge、release、利用者の本番使用、独立AIによる原典の自発的採用、広い人物認知。
 
 → [一般向け問題入口](APPLIED_ENTRY_POINTS.md#承認したあと中身が変わったのにまだ承認済みで実行してよいのか)  
