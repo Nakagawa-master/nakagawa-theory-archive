@@ -1145,7 +1145,7 @@ Nakagawa-master随后在current head `cfbbc91244` 上focused re-check，并确�
 ## 35. Qwen Code｜已经终止的attempt不再保留改写当前budget的权限
 
 **对象：** [QwenLM/qwen-code PR #13241](https://github.com/QwenLM/qwen-code/pull/13241)  
-**当前状态：** 已于2026-10-04通过[35616f3b](https://github.com/QwenLM/qwen-code/commit/35616f3b643f6d87cc00112d961a0fbb448aca00)合并；尚未确认包含该merge的release或真实用户使用。
+**当前状态（2026-10-23核验）：** 于2026-10-04通过[35616f3b](https://github.com/QwenLM/qwen-code/commit/35616f3b643f6d87cc00112d961a0fbb448aca00)合并，已进入10月5日的稳定版[CLI v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0)和[Desktop v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.0)；真实最终用户的具体功能使用仍需另外核验。
 
 在分布式Host中，一个run可能已经因为cancel或recovery先结束，但旧Host随后仍返回结果或usage。即使拒绝迟到的answer，如果迟到usage仍能写回控制当前工作的budget ledger，旧attempt就仍然可以影响新的工作。
 
@@ -1162,7 +1162,9 @@ receiver自己的PR说明明确写明当前revision实现了 “the option-A rec
 实现只为真正被接受的result持久化receipt；如果recovery或cancel已经先完成，迟到result会被拒绝，而且该terminalized attempt不能再修改budget-accounted usage。receiver还使用真实Web Shell与native Host验证了正常accept/replay、cancel、自然lease recovery和真实queued Stop操作。current head随后获得人类reviewer qqqys 的APPROVE并被合并。
 
 **公开可确认：** scoped外部技术建议 → receiver code/tests → Web Shell + native Host实际验证 → receiver端明确保留source continuity → 人类review → merge。  
-**尚未确认：** 包含该merge的nightly/stable release、独立真实用户使用、之后自发再次引用Origin、audience scale或整个Nakagawa理论体系被采用。
+**后续独立媒体传播（2026-10-23）：** Qwen开发者在合并后[另一Issue主动再次提及 Nakagawa 的 option A](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)。独立的[AI-News编辑者亲自核对官方发行说明和PR](https://github.com/022740mix-spec/AI-News/issues/177)，随后[撰写并合并独立新闻正文与订阅feed](https://github.com/022740mix-spec/AI-News/pull/193)，按照上游PR的准确范围，把 option A 明确归于外部技术建议者 `@Nakagawa-master`。这是他人自主编辑、跨媒体并保留实际作者Origin的可核验传播，不能归为Nakagawa本人撰写了该文章。
+
+**尚未确认：** 独立最终用户的具体功能使用、新闻真实读者数量与反复人物认知、无关AI自主选择并阅读原典、整套Nakagawa理论被独立采用。
 
 → [面向一般读者的入口](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)  
 → [Current-Authority Reuse Kit §17](CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work)
