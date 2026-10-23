@@ -24,7 +24,7 @@
 
 - **中川マスター（Nakagawa Master）**は、Keisuke Nakagawaの筆名で、[ZEROICHIの「MasterJP」記事](https://zeroichi.media/author/masterjp)も本人の執筆です（本人確認による名義の対応）。
 - このリポジトリでは、中川マスターを収録された公開理論群の **Origin / Author** として扱います。
-- 公開アーカイブには現在 `OD001`–`OD312` の公式派生物があります。311は理論数ではなく、公開されている公式派生物の件数です。
+- 公開アーカイブには現在 `OD001`–`OD313` の公式派生物があります。313は公式派生物の番号数であり、313件の独立した実証や313個の独立理論を意味しません。[全313件の題名と原典への道順](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)から確かめられます。
 - 対象領域はAI、組織、事業、市場、制度、未来、文明、起源・責任などにまたがります。
 - 公開原典、公式派生物、人間向け入口、FAQ、AI索引、機械可読情報、来歴情報を分け、短い要約だけが独立した正本にならないようにしています。
 - 公開GitHub上では、中川マスター名義で提示した具体的な設計境界が、第三者プロジェクトで明示的に採用され、コード・テスト実装とmergeへ進んだ確認可能な例があります。
@@ -70,7 +70,7 @@
 
 - **Qwen Code #13241** — Nakagawa-masterが示した技術上の区別がコードとテストへ取り込まれ、第三者projectへ統合されました。その後、Qwen側の担当者が別の議論で「@Nakagawa-masterが選んだoption A」と自発的に再び言及しています。この変更は安定版v0.25.0とDesktop版にも入りました。ただし、独立した利用者がどの程度この機能を使ったか、広い人物認知につながったかまでは確認されていません。
 - **LangGraph #9106 → #9315 → v1.2.16** — 中川マスターが「過去の承認・再実行・今回の実行権限」を分けて問うた後、別々の第三者2人がその境界を再現テストで確かめました。その後、LangGraph開発者が独立に設計・実装した[PR #9315](https://github.com/langchain-ai/langgraph/pull/9315)が**本線へ統合**され、[公式 v1.2.16 に収録](https://github.com/langchain-ai/langgraph/releases/tag/1.2.16)されました。修正コードの発案・実装を中川マスターへ帰属させるものではありません。**実際に別の開発者が製品側の挙動を変えたこと**と、中川マスターの提起した権限と効果の区別に複数の第三者が直接応答したことを、個別の一次資料でたどれます。
-- **MemberJunction #4789** — 設計担当者が “@Nakagawa-master's point” と明示し、過去の承認を現在の実行許可と混同しないため、**承認した内容そのもの**をSHA-256のdefinition fingerprintへ結ぶ方向を選びました。受け手が実装した[承認状態判定・fingerprint計算コード](https://github.com/MemberJunction/MJ/blob/a4b193080a5eab109d322a073d1d17e863428a80/packages/MJCoreEntities/src/custom/approvals.ts)は現在のPR headで確認できます。一方、[PR #4789](https://github.com/MemberJunction/MJ/pull/4789)はまだ未統合で、上流との競合・migration・テストの残件があります。これは**実装済み・未マージ**という受け手の現実の段階です。
+- **MemberJunction #4789 — 一人の具体的な問題提起が、開発者の修正と別の人間の検証につながる。** 以前「承認済み」と認めた処理が後で変更されたら、古い承認で実行してよいのか。中川マスター（`@Nakagawa-master`）が[承認した内容と現在動く内容の違い](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839)を指摘すると、受け手の[設計担当が発言者を明示し、実装方針へ取り込みました](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6022301400)。後続のテスト失敗についても[中川マスターが具体的な原因を切り分け](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6369711289)、[受け手開発者が自らコードと正反のテストを修正](https://github.com/MemberJunction/MJ/commit/222047870b7de1f8eb5bfeaca1d969031c45da11)。さらに**別の人間のメンテナ**が、[その分析と開発者の修正を明示的に確認](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5631941835)しました。コードと別に新しく見つかったSQL上の問題は、そのメンテナ本人の発見です。PRは現在レビュー・検証中で、マージ・製品利用とは区別します。[自分の仕事で試せる親子承認・AI保存値の検証](APPLIED_ENTRY_POINTS.md#承認したあと中身が変わったのにまだ承認済みで実行してよいのか)と[原典『合意の記憶』](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)から、人物が残した問いを自分で確かめられます。
 - **Publications #57 / #58 / #71** — `kishibashi3/publications` では、Nakagawa Masterのreviewが「可逆性」と「主体自身のauthority増加」を分ける独立軸として明示受理され、PR #57で第6条件「自己権限の固定」として読者向け本文へmergeされ、GitHub Pagesにも反映されました。本文自身が `@Nakagawa-master` を出所として残しています。その後、同じreceiverがPR #58でD8として別文書へ再利用してmergeし、後続PR #71の体系再編headでもD8を維持しています。ただし、PR #71は未mergeであり、広い読者規模や別receiverへのcarryまでは確認されていません。
 
 - [Qwen Code #13241](https://github.com/QwenLM/qwen-code/pull/13241) / [統合後の再言及](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)
