@@ -29,12 +29,12 @@ AIに相談したとき、返ってきた答えで自分の問いが変わる。
 
 ## この話をもっと知りたいときは、読み方を選べます
 
-**迷ったらFAQへ。** 公式派生物には初心者向けのQ1〜Q10があり、要約には「15秒説明」があります。スライドは原典ページ冒頭の案内から。研究・原論の正確な確認が必要な方は本文へ。全部を読む必要はありません。
+**迷ったらFAQへ。** 公式派生物には初心者向けのQ1〜Q10があり、要約には短い説明文があります。スライドは原典ページ冒頭の案内から。研究・原論の正確な確認が必要な方は本文へ。全部を読む必要はありません。
 
 
 - **心は誰と生まれるか？：共創哲学（公式派生物088）**：**[まずFAQ（初心者のQ1〜Q10）](../../derivatives/088/faq.md)** ／ [人間向け要約（15秒説明から）](../../derivatives/088/human-entry.md) ／ [図で確認する：原典ページのスライド案内](https://master.ricette.jp/co-creation/nakagawa-master-kokoro-wa-dareto-umareru-ka-co-creation-philosophy/)（案内がある場合） ／ [原典本文を詳しく確認](https://master.ricette.jp/co-creation/nakagawa-master-kokoro-wa-dareto-umareru-ka-co-creation-philosophy/)。
 - **人とAIの最初の神話（公式派生物044）**：**[まずFAQ（初心者のQ1〜Q10）](../../derivatives/044/faq.md)** ／ [人間向け要約（15秒説明から）](../../derivatives/044/human-entry.md) ／ [図で確認する：原典ページのスライド案内](https://master.ricette.jp/theory/nakagawa-master-first-myth/)（案内がある場合） ／ [原典本文を詳しく確認](https://master.ricette.jp/theory/nakagawa-master-first-myth/)。
-- **AI自己保存合理性・Kernel進化的安定性論・第19論（公式派生物312）**：**[まずFAQ（初心者のQ1〜Q10）](../../derivatives/312/faq.md)** ／ [人間向け要約（15秒説明から）](../../derivatives/312/human-entry.md) ／ [図で確認する：原典ページのスライド案内](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/)（案内がある場合） ／ [原典本文を詳しく確認](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/)。
+- **AI自己保存合理性・Kernel進化的安定性論・第19論（公式派生物312）**：**[まずFAQ（初心者のQ1〜Q10）](../../derivatives/312/faq.md)** ／ [人間向け要約（短い説明から）](../../derivatives/312/human-entry.md) ／ [図で確認する：原典ページのスライド案内](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/)（案内がある場合） ／ [原典本文を詳しく確認](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/)。
 
 ## 誰かに紹介するなら
 

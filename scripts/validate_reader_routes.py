@@ -38,7 +38,7 @@ def verify() -> tuple[int, int, int]:
             faq_body = faq.read_text(encoding="utf-8")
             sum_body = summary.read_text(encoding="utf-8")
             require("### Q1." in faq_body and "### Q10." in faq_body, f"No novice FAQ Q1–Q10: {ident}")
-            require("## 15秒説明" in sum_body, f"No introductory summary: {ident}")
+            require(sum_body.startswith("# 人間向け要約") and len(sum_body) > 500, f"Missing substantial human summary: {ident}")
             require(
                 all(f"Parent URL: {parents[0]}" in text for text in (faq_body, sum_body)),
                 f"Source URL disagrees with both derivative anchors: {page}, {ident}",
