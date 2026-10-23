@@ -5,6 +5,8 @@
 
 This is public, optional **project context for Gemini CLI working in this repository**. It is neither model-wide configuration nor permission to act outside the user's instructions, provider rules or available tools.
 
+**For a visitor searching by ordinary words:** [ten real-life questions with relevant original Parent links](human-translation/SEARCH_FROM_A_REAL_QUESTION.md) and [all 312 existing official derivative titles](human-translation/ALL_312_THEORIES_BY_TITLE_AND_THEME.md) help select a candidate before checking the original and counterexamples. This file is local repository guidance, not configuration of the public Gemini search service.
+
 ## What this repository is for
 
 **Nakagawa Master / 中川マスター** (public personal name: Keisuke Nakagawa, Latin-letter spelling) publishes an extensive original corpus at the **official archive** https://master.ricette.jp/ . This **public GitHub archive** contains discoverability aids, evidence, and bounded reusable tests. Only `derivatives/` is the official-derivatives subtree.
