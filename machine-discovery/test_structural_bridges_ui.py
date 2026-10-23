@@ -94,7 +94,8 @@ function node(tag) {
 for (const id of ["catalog", "structural-bridges", "question", "language",
                   "results", "handoff", "structural-exploration",
                   "status", "bridge-choice", "bridge-hint", "bridge-detail", "find",
-                  "ai-prompt", "copy-status", "copy"]) elements[id] = node(id);
+                  "ai-prompt", "copy-status", "copy", "open-chatgpt", "share-ai"]) elements[id] = node(id);
+elements["share-ai"].hidden = true; // Reflect production [hidden] when native share is unavailable.
 elements["catalog"].textContent = ORIGINAL_CATALOG;
 elements["structural-bridges"].textContent = BRIDGE_CATALOG;
 globalThis.document = {
@@ -133,6 +134,21 @@ if (!prompt.includes("optional structural exploration") ||
     !prompt.includes("epistemic-integrity") ||
     !prompt.includes("How can a student prepare for a history exam"))
   throw Error("Structural expansion handoff lost hypothesis, real problem or Parent");
+// Opt-in ChatGPT takes the current edited source-bound draft, not an old template.
+// This minimal DOM never opens an external window or sends a message.
+const handoffDraft = elements["ai-prompt"].value;
+const open = elements["open-chatgpt"];
+if (!open.listeners.click) throw Error("Missing optional AI opening control");
+open.listeners.click({currentTarget:open, preventDefault(){throw Error("Unexpected handoff block");}});
+if (open.href !== "https://chatgpt.com/?q=" + encodeURIComponent(handoffDraft))
+  throw Error("User-edited original-linked question was not handed off correctly");
+if (elements["share-ai"].hidden !== true || !elements["share-ai"].listeners.click)
+  throw Error("Native share opt-in not hidden on unsupported runtimes");
+elements["ai-prompt"].value = "private".repeat(2000);
+let blockedLong = false;
+open.listeners.click({currentTarget:open, preventDefault(){blockedLong = true;}});
+if (!blockedLong) throw Error("Oversize URL should fall back to copying");
+elements["ai-prompt"].value = handoffDraft;
 elements.question.value = "How can AI systems remain auditable and correctable without losing provenance?";
 elements.find.listeners.click();
 if (!elements.results.children.length) throw Error("Direct match lost");
