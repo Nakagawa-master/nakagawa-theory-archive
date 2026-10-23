@@ -450,7 +450,7 @@ for (const entry of catalog) {
     }
   }
 }
-if (covered !== 198) throw Error("Catalog coverage drift: " + covered);
+if (covered !== 276) throw Error("Catalog coverage drift: " + covered);
 console.log("PASS: browser real algorithm / 4 negatives / " + covered + " positives");
 '''
         )
@@ -458,8 +458,8 @@ console.log("PASS: browser real algorithm / 4 negatives / " + covered + " positi
                                     input=scenario_js, capture_output=True,
                                     text=True, timeout=12)
         assert functional.returncode == 0, functional.stderr
-        assert "198 positives" in functional.stdout
-    print("PASS: browser search real score cross-check, 198 known positive routes, 4 unrelated negatives")
+        assert "276 positives" in functional.stdout
+    print("PASS: browser search real score cross-check, 276 known positive routes, 4 unrelated negatives")
     print("PASS: zero-install browser originals 22/22 canonical parity, JA/EN/ZH, nonfit UI, no telemetry, JS syntax")
     # Portable, general-purpose source-independence Skill must remain a
     # byte-identical, zero-network package of the public root checker.
