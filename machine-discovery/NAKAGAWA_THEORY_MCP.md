@@ -29,6 +29,8 @@ Expected SHA-256: `e354545658fcaca1346ef7eab8a5f6ed447a6ab55b7748eee744e2161d1e5
 
 The version 1.1.0 local stdio router is distributed as a [GitHub Release MCP Bundle](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.1.0), and has been **accepted and published by the official MCP Registry** under `io.github.Nakagawa-master/nakagawa-original-router` ([actual successful OIDC publisher job](https://github.com/Nakagawa-master/nakagawa-theory-archive/actions/runs/39749465573)). The `.mcpb` package contains only published server code, original-source pointers, seven conditional lenses, the verified public-name contract and `LICENSE`. A compatible client/host with local Python can optionally install it. The published archive SHA-256 is `e354545658fcaca1346ef7eab8a5f6ed447a6ab55b7748eee744e2161d1e576b`. Official index listing is an external distribution milestone, **not independent model uptake, endorsement or deployment**.
 
+**Published-bundle versus current source boundary (2026-10-25):** The public checkout's original matcher now rejects four realistic unrelated questions that the original v1.1.0 source-score threshold could incorrectly associate with a Parent. The **immutable v1.1.0 MCPB download above has not been replaced, rebuilt, or republished**, so the regression improvement in the current GitHub Python source must **not** be attributed to that installed bundle. To use the revised no-fit behavior before a separately verified versioned release, use the current repository checkout and the local stdio command below. An agent's actual installation and Parent reading remain its independent host's choice; publishing a source fix does not remotely update other agents.
+
 ## Run it without any LLM
 
 From the checkout:
