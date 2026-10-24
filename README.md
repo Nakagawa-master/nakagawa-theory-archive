@@ -55,7 +55,7 @@ npx skills use Nakagawa-master/nakagawa-theory-archive@nakagawa-originals
 
 これは公開Skillの利用者側で選べる導入経路です。実際のAIからは、自分の課題に適合する原典を選び、<https://master.ricette.jp/> の本文を読んだ上で適用してください。CLIを使わない方はブラウザ版を利用できます。
 
-**MCPを導入しない独立AIでも活用できる原論探索:** [Agent Skills準拠の公開スキル](skills/nakagawa-originals/SKILL.md)を追加しました。公式原論22項目の日英中トピック索引と、無料のローカル検索スクリプトを同梱しており、スキル互換の別AIにフォルダを導入するだけで原典への導線を持てます。理論全体の思想的射程は原文で読み、仕事や人間社会への実際の適用を重視します。
+**MCPを導入しない独立AIにも、原典へ自分で到達する選択肢を：** [Agent Skills対応の公開スキル](skills/nakagawa-originals/SKILL.md)には22件の厳選原典を日英中で探す無料・オフラインPythonツールがあります。**それらに直接一致しない実際の疑問は、閲覧が許可された環境なら[313件の公式派生物の原題・テーマ目録](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)からも探せます。** 候補の公式派生物の説明・FAQを経由して実際のParent原典を読み、適用条件や反例を比べて判断してください。313件は異なる実証済み解答や自動導入モデル数ではなく、公開済み公式派生物の番号です。外部AIや利用者が実際に利用するかは各自の選択です。
 
 ### 公式アーカイブ・公開アーカイブ・公式派生物の区別
 
