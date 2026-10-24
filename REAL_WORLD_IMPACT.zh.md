@@ -1408,7 +1408,7 @@ MCP服务发送 `tools/list_changed` 后，如果刷新 `tools/list` 失败，�
 
 **对象：** [Qwen Code PR #14522](https://github.com/QwenLM/qwen-code/pull/14522)、[Nakagawa Master提出的具体验收区分](https://github.com/QwenLM/qwen-code/pull/14522#issuecomment-6246268949)、[上游合并提交](https://github.com/QwenLM/qwen-code/commit/f8b3031f733cbc149873ac5809efdc3c632970e7)。**阶段（2026-10-23核验）：** Qwen开发者明确向Nakagawa Master表示采纳该区分，并自行实现诊断；两位维护者正式批准最终HEAD；**PR #14522于10月19日合并到上游，并进入10月21日发布的稳定版 [v0.26.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.0)**。实际用户恢复是否成功、是否获益仍需独立证据。
 
-**后续另一项接收方修复（10月23日）：** 独立审查还发现，CI任务列表只读取部分分页时，系统可能将不完整列表当作完整数据判断成功或失败。接收方开发者 `wenshao` 在[后续PR #15174](https://github.com/QwenLM/qwen-code/pull/15174)实现总数校验、不完整任务列表警告和回归测试；另一位审查者[明确提到Nakagawa此前的限定性意见](https://github.com/QwenLM/qwen-code/pull/15174#pullrequestreview-5625491330)，此[修复于10月23日合并](https://github.com/QwenLM/qwen-code/commit/6a50ae80e308b04c2420112b8959e75265c6c225)。这份后续代码由接收方开发者自主编写。#15174自身的正式发布、真实用户获益、独立AI阅读原典和公众实际接受尚无证据。
+**后续另一项接收方修复（10月23日）：** 独立审查还发现，CI任务列表只读取部分分页时，系统可能将不完整列表当作完整数据判断成功或失败。接收方开发者 `wenshao` 在[后续PR #15174](https://github.com/QwenLM/qwen-code/pull/15174)实现总数校验、不完整任务列表警告和回归测试；另一位审查者[明确提到Nakagawa此前的限定性意见](https://github.com/QwenLM/qwen-code/pull/15174#pullrequestreview-5625491330)，此[修复于10月23日合并](https://github.com/QwenLM/qwen-code/commit/6a50ae80e308b04c2420112b8959e75265c6c225)。这份后续代码由接收方开发者自主编写。#15174现已列入[2026年10月24日发布的正式稳定版 v0.26.1 更新说明](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.1)；其[合并提交 `6a50ae80`](https://github.com/QwenLM/qwen-code/commit/6a50ae80e308b04c2420112b8959e75265c6c225)是该版本标签的祖先。也就是说，接收方开发者亲自编写的修复已进入稳定版。真实用户获益、独立AI阅读原典和更广泛公众认识，仍需另外验证。
 
 
 
