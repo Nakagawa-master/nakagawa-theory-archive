@@ -1439,6 +1439,20 @@ On October 20, Qwen developer `yiliang114` [explicitly confirmed the diagnosis](
 
 ---
 
+## 50. LangGraph | A recovered second subgraph can inherit the first subgraph's answer
+
+**Actual receiving problem:** In [LangGraph issue #9253](https://github.com/langchain-ai/langgraph/issues/9253), a node calls RESEARCH and then REVIEW. After retries and resume, REVIEW can return RESEARCH's persisted answer. Invocation position alone does not establish **which subgraph actually owns a checkpoint**.
+
+[Nakagawa Master proposed a changed-call-order negative test](https://github.com/langchain-ai/langgraph/issues/9253#issuecomment-6074292557): a counter reset might repair the original fixed-order retry but cause a different subgraph at the same invocation slot to consume the earlier child's checkpoint. Independent participant [`jayzuccarelli` actually ran the variant](https://github.com/langchain-ai/langgraph/issues/9253#issuecomment-6077084784) and reported RESEARCH, with REVIEW not executed, under the proposed reset; unchanged main produced REVIEW for that changed-order variant. This is a concrete independently executed discriminator, not merely the author's original suggestion.
+
+**Further outside work:** [`JimmyLiujx`](https://github.com/langchain-ai/langgraph/issues/9253#issuecomment-6251059545) described a separate local candidate binding child identity and invocation index to namespaces, checking metadata on recovery and treating named/unnamed graphs differently across process reconstruction. The developer reported **2,770 passing tests, 43 skipped, plus two-process SQLite checks**; those are their reported local results, not merged upstream CI. [`Hs1000` later independently reported](https://github.com/langchain-ai/langgraph/issues/9253#issuecomment-6382408223) an additional LangGraph 1.2.17 retry-count observation: one attempt yielded REVIEW, while three yielded RESEARCH.
+
+**Native stage, checked October 24, 2026:** [PR #9279](https://github.com/langchain-ai/langgraph/pull/9279) was automatically closed because the contributor had not been assigned to the linked issue; it was **not merged**. The later identity-aware candidate remains locally reported; maintainers have not yet established the migration contract for legacy checkpoints lacking identity metadata, an accepted merge, release or downstream use. This is a distinct bug from the [parallel-interrupt sibling replay in case 40](#40-langgraph-a-completed-parallel-sibling-must-not-reexecute-when-another-interrupt-resumes).
+
+**Meaning of the result:** An independently authored and executed regression demonstrated a concrete insufficiency in an apparent fix after Nakagawa's published test proposal. The later developer owns their implementation, and additional reproductions belong to their own authors. Independent reading of a theory original or adoption by an unaffiliated AI is **not** established. Readers may separately compare the distinction with [Nakagawa Master's *Memory of Agreement* original](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/); the code-level application is not a verbatim claim from that article.
+
+---
+
 ## What this page supports — and what it does not
 
 ### Supported by the linked public record
