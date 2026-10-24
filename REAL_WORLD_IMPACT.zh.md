@@ -1472,7 +1472,9 @@ PR创建约两分钟后，**中川大师（`@Nakagawa-master`）提供了具体�
 
 该PR于[9月29日合并](https://github.com/openclaw/openclaw/commit/f922f69fc1078757d9855b3941944804eb50f7ce)。OpenClaw的[官方v2026.9.7发布说明](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)在PR #160136旁**明确列出 `@Nakagawa-master`**。该页面由另一位编辑通过[PR #160933](https://github.com/openclaw/openclaw/pull/160933)拟定，随后[PR #162163](https://github.com/openclaw/openclaw/pull/162163)将经过核验的GitHub账号关联到个人资料。这是**第三方正式发布文档中的姓名署名**，并不是GitHub自动生成的PR作者标签。
 
-**已经确认：** 真实的代码审查、其他开发者的PR合并、第三方官方发布说明中的明确署名。**重要边界：** 发布说明同时注明，“无关agent/store清单变动导致审批失效”**不属于该次修复的范围**。公开资料没有揭示编辑作出署名决定的内部理由，也不能证明中川大师的附加建议在该PR中被实现、真实用户已经使用此功能，或开发团队读过其[《合意的记忆》对应原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)。
+**之后还发生了更强的接收方成果。** 开发者steipete另建[修复PR #160856](https://github.com/openclaw/openclaw/pull/160856)，**在PR正文第一段直接把中川大师的原始评论标为问题报告来源**。开发者亲自实现“定位审批对象之前采用完整查找范围，定位后只保留与该对象相关的权限和store条件”的两阶段逻辑，并加入与 `main`／无关 `other` 一致的回归用例。开发者报告修复前关键3例失败（3 failed／44 passed），修复后目标测试文件**49/49通过**。这一独立PR已于[9月29日合并](https://github.com/openclaw/openclaw/commit/6922a50b287ad76557b085eb78125fc9a250a2dd)。这证明明确的“中川大师的审查意见→其他开发者修改代码与测试”关联；实际代码与测试的作者仍是steipete。
+
+**已确认：** (1) 中川大师的具体审查意见；(2) 接收方在**明确引用其原评论的独立PR #160856中实现修复、给出修复前后测试并合并至main**；(3) 官方发布说明在原PR #160136旁列出的账号署名。**范围：** #160136本身将这一附加问题列为范围外，**随后由#160856修复**。署名编辑的内部理由、#160856是否进入某个正式稳定二进制版本、真实用户运行情况，以及对[原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)的独立阅读，仍需各自验证。
 
 ---
 
