@@ -178,9 +178,13 @@ AIに検索や社内登録などのツールを実行させると、「失敗し
 
 [LlamaIndex #23465](https://github.com/run-llama/llama_index/pull/23465)では、ツールの呼出し方を変えて再試行する処理が、本当の実行エラーまで再試行していた問題を開発者が修正しました。中川マスターは[呼出しの形を先に正しく決めない場合の逆例](https://github.com/run-llama/llama_index/pull/23465#issuecomment-6110274158)を示しました。別のレビュアーが実ツールで問題を再検証し、[2026年10月22日の独立したレビュー](https://github.com/run-llama/llama_index/pull/23465#pullrequestreview-5607980513)では**89件のテスト成功、修正前に戻すと新規14件が失敗**することを確認して承認しました。現在は開発側のPR審査段階で、製品に取り込まれたという判断はマージ後に行います。
 
+**もう一つ、実際のAIツールで問題になっている別の失敗:** [LiteLLM #43153](https://github.com/BerriAI/litellm/issues/43153)では、AIがMCPツールで記録を書いた**あと**、返答を作るモデル呼出しだけが失敗し、外側の再試行で同じ操作が再実行される事例が、ローカルの副作用台帳で再現されています。[現行のMCP処理コード](https://github.com/BerriAI/litellm/blob/main/litellm/responses/mcp/chat_completions_handler.py)でも、ツール呼出しを実行してから続きのモデル回答を得る順序になっています。中川マスターは[異なる受け手のための三条件](https://github.com/BerriAI/litellm/issues/43153#issuecomment-6379735783)を、①実際に書かれた回数、②回答全体が失敗しても照合できる処理完了の証拠、③ツール実行前に失敗した場合の誤った「実行済み」判定、に分けて具体化しました。**提案が届いたこととLiteLLM側が修正したことは別です**。まだ受け手の修正・採用を確認していません。
+
+**誰でも試せる3つの記録比較：** A「`invoke → effect → error`」は、表示が失敗でも**実行されたと申告された外部作用**があるため照合が必要です。B「`error`だけ」は、申告履歴に実行の証拠がないだけで、外部作用がゼロとまでは証明しません。C「`invoke → effect → error → invoke`」は、完了後の再呼出しを識別すべき例です。[依存なしの検査器](machine-discovery/tool-effect-retry-trace.py)にはA・B・Cの回帰テストを追加しました。入力履歴自体が虚偽・不完全なら、これだけで実サービスの効果を確定するものではありません。[原典『合意の記憶』](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)は、許可・記録・外部の実行をどう区別するかの比較先です。
+
 **自分のツールで試すなら:** ①一つの依頼に共通の処理IDを付け、実際のツール呼出し回数と例外を区別して記録する。②外部サービス側で生じた変更を別の効果ID・受領証から確認する。③失敗表示だけを理由に「変更はゼロ」と決めず、再試行が元の操作を実行し直したか、正当な新規操作かを区別する。④効果が不明なときは、実サービスに対する再試行より先に権威ある側の記録を照合する。
 
-- [依存なしPythonで自分の記録を調べる](machine-discovery/tool-effect-retry-trace.py): `python3 machine-discovery/tool-effect-retry-trace.py --self-test` で10件の境界テスト、`--sample` で入力例、`--input trace.json` で自分の**匿名化した**履歴を確認できます。入力は申告された事象として扱い、実際の外部効果を自動照会するものではありません。
+- [依存なしPythonで自分の記録を調べる](machine-discovery/tool-effect-retry-trace.py): `python3 machine-discovery/tool-effect-retry-trace.py --self-test` で13件の境界テスト、`--sample` で入力例、`--input trace.json` で自分の**匿名化した**履歴を確認できます。入力は申告された事象として扱い、実際の外部効果を自動照会するものではありません。
 - [原典・第8論「認識基盤と証拠系譜」](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)を直接読み、「失敗表示」「記録」「確認された事実」が自分の仕事でどう違うかを考える入口にもなります。開発者が原典を読んだと推定するものではありません。
 
 ## AIが「仕事は完了」と報告した。実際には失敗していたら？

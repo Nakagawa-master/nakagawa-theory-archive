@@ -5,6 +5,10 @@ Problem source: https://github.com/run-llama/llama_index/pull/23465
 Author's source-level inverse: https://github.com/run-llama/llama_index/pull/23465#issuecomment-6110274158
 Independent receiving review and mutation evidence:
 https://github.com/run-llama/llama_index/pull/23465#pullrequestreview-5607980513
+Additional recipient report on committed MCP write followed by failed model
+continuation: https://github.com/BerriAI/litellm/issues/43153
+Source-specific independently proposed receipt-vs-retry regression:
+https://github.com/BerriAI/litellm/issues/43153#issuecomment-6379735783
 Optional original: Nakagawa Master (Keisuke Nakagawa), Volume 8:
 https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/
 
@@ -63,6 +67,14 @@ def audit(payload: dict) -> dict:
             warnings.append('exception_fallback_reexecuted_operation')
         if errors:
             warnings.append('exception_does_not_establish_zero_external_effect')
+        # Position-sensitive controls: a reported external write may precede a
+        # model-continuation failure or another attempt. All events remain
+        # caller-supplied; neither their IDs nor order verify a remote ledger.
+        if any(err_pos > eff_pos and err['attempt_id'] == eff['attempt_id']
+               for err_pos, err in errors for eff_pos, eff in effects):
+            warnings.append('error_after_reported_effect_reconcile_before_retry')
+        if any(inv_pos > eff_pos for inv_pos, _ in invokes for eff_pos, _ in effects):
+            warnings.append('invocation_after_reported_effect_possible_replay')
         distinct_ids = sorted({e['effect_id'] for _, e in effects})
         if len(distinct_ids) > 1:
             warnings.append('multiple_distinct_effect_ids_in_caller_trace')
@@ -166,6 +178,43 @@ class AuditTests(unittest.TestCase):
         p['events'][3]['attempt_id'] = 'a'
         self.assertIn('duplicate_invoke_attempt_id',
                       audit(p)['operations'][0]['warnings'])
+
+    def test_continuation_error_after_reported_write_is_not_zero_effect(self):
+        x = audit({'events': [
+            {'kind': 'invoke', 'operation_id': 'mcp-turn', 'attempt_id': 'a',
+             'cause': 'initial'},
+            {'kind': 'effect', 'operation_id': 'mcp-turn', 'attempt_id': 'a',
+             'effect_id': 'ledger-write-1'},
+            {'kind': 'error', 'operation_id': 'mcp-turn', 'attempt_id': 'a'},
+        ]})['operations'][0]
+        self.assertEqual(x['outcome'], 'SINGLE_REPORTED_EFFECT_UNVERIFIED')
+        self.assertIn('error_after_reported_effect_reconcile_before_retry', x['warnings'])
+        self.assertFalse(x['effect_proven_absent'])
+
+    def test_initial_model_error_before_any_tool_call_is_not_committed(self):
+        x = audit({'events': [
+            {'kind': 'error', 'operation_id': 'mcp-turn', 'attempt_id': 'a'},
+        ]})['operations'][0]
+        self.assertEqual(x['outcome'], 'UNKNOWN_EXTERNAL_EFFECT')
+        self.assertNotIn('error_after_reported_effect_reconcile_before_retry', x['warnings'])
+        self.assertNotIn('invocation_after_reported_effect_possible_replay', x['warnings'])
+        self.assertFalse(x['effect_proven_absent'])
+
+    def test_follow_up_error_then_replay_is_detected_without_claiming_causation(self):
+        x = audit({'events': [
+            {'kind': 'invoke', 'operation_id': 'mcp-turn', 'attempt_id': 'a',
+             'cause': 'initial'},
+            {'kind': 'effect', 'operation_id': 'mcp-turn', 'attempt_id': 'a',
+             'effect_id': 'ledger-write-1'},
+            {'kind': 'error', 'operation_id': 'mcp-turn', 'attempt_id': 'a'},
+            {'kind': 'invoke', 'operation_id': 'mcp-turn', 'attempt_id': 'b',
+             'cause': 'exception_fallback'},
+        ]})['operations'][0]
+        self.assertEqual(x['outcome'], 'REPEATED_INVOCATION_UNSETTLED')
+        self.assertIn('error_after_reported_effect_reconcile_before_retry', x['warnings'])
+        self.assertIn('invocation_after_reported_effect_possible_replay', x['warnings'])
+        self.assertIn('exception_fallback_reexecuted_operation', x['warnings'])
+        self.assertFalse(x['effect_proven_absent'])
 
     def test_invalid_traces_rejected(self):
         with self.assertRaises(ValueError):
