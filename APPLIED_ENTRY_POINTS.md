@@ -752,15 +752,15 @@ AIサービスを24時間動かすため、一つのワーカーを複数の利�
 
 この違いが、AI開発ライブラリの実装へ届いた例があります。[Pydantic AIの引用機能PR #7434](https://github.com/pydantic/pydantic-ai/pull/7434)で、中川マスター（Nakagawa Master）は、①同じ文章が複数の取得ページに同じ位置で存在するとき、先に見つかったURLを真の引用元として採用する危険、②複数の `Citation.sources` を独立した裏付けの件数と誤読する危険を[レビュー](https://github.com/pydantic/pydantic-ai/pull/7434#pullrequestreview-5607561381)と[公開された理論由来の先行レビュー](https://github.com/pydantic/pydantic-ai/pull/7434#pullrequestreview-5286612147)で分けて指摘しました。
 
-開発者 `adtyavrdhn` は[本人への返信](https://github.com/pydantic/pydantic-ai/pull/7434#issuecomment-6367344563)で両方に対応したことを明言し、[自分のコミット `659447531`](https://github.com/pydantic/pydantic-ai/commit/6594475317c28fd1b71a499bcf769fbfe3fa4762)に実装・テスト・説明文を加えました。異なるURLが同じ引用文・位置で一致する場合、URLを推測して付けず文書引用として保持します。同じURLを二度取得した場合はURLを保持します。さらに[公開説明](https://github.com/pydantic/pydantic-ai/blob/6594475317c28fd1b71a499bcf769fbfe3fa4762/docs/citations.md)には、まとめて示された出典が互いのコピーの場合もあり、件数だけでは根拠の強さを示せないと書かれました。このコード・テスト・公開説明を含む[PR #7434は、2026年10月23日15:39 UTCに上流へマージ](https://github.com/pydantic/pydantic-ai/commit/97b06fff7f8d8355671da38d378fd472755c756a)されました。正式版リリースへの収録や外部利用者の稼働は別の確認段階です。修正は開発者自身の成果であり、開発者が中川マスターの原典全体を読んだと推定するものではありません。
+開発者 `adtyavrdhn` は[本人への返信](https://github.com/pydantic/pydantic-ai/pull/7434#issuecomment-6367344563)で両方に対応したことを明言し、[自分のコミット `659447531`](https://github.com/pydantic/pydantic-ai/commit/6594475317c28fd1b71a499bcf769fbfe3fa4762)に実装・テスト・説明文を加えました。異なるURLが同じ引用文・位置で一致する場合、URLを推測して付けず文書引用として保持します。同じURLを二度取得した場合はURLを保持します。さらに[公開説明](https://github.com/pydantic/pydantic-ai/blob/6594475317c28fd1b71a499bcf769fbfe3fa4762/docs/citations.md)には、まとめて示された出典が互いのコピーの場合もあり、件数だけでは根拠の強さを示せないと書かれました。このコード・テスト・公開説明を含む[PR #7434は、2026年10月23日15:39 UTCに上流へマージ](https://github.com/pydantic/pydantic-ai/commit/97b06fff7f8d8355671da38d378fd472755c756a)されました。さらに[正式版 Pydantic AI v2.61.0](https://github.com/pydantic/pydantic-ai/releases/tag/v2.61.0)が**2026年10月24日03:13 UTCに公開**され、[正式リリースノートがこのPRを引用機能として明記](https://github.com/pydantic/pydantic-ai/releases/tag/v2.61.0)しました。GitHubのコミット祖先比較でもマージ `97b06fff` はこのバージョンに含まれています。**独立した開発者が修正・マージし、正式配布へ進んだ実例**です。利用者の実際の稼働は別の確認段階です。修正は開発者自身の成果であり、開発者が中川マスターの原典全体を読んだと推定するものではありません。
 
 **自分の仕事で試す一歩：** AIが示す2件のURLについて、まず引用された文章とその原資料をたどり、片方がもう片方の転載なら「異なるURL・同じ根拠起点」と書き分けます。引用先を特定できないときは推測で断定せず「引用元未確定」と保留します。出典が一致しても主張が正しいとは限らないので、必要なら独立した観測や反例も確認してください。
 
 問いの原点を掘り下げたい方は、中川マスターの[公式原典・第8論「認識基盤・証拠系譜・敵対的情報耐性論」](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)へ進めます。これは外部ライブラリの実装内容と公開された原典を**読者が自分で比較するための入口**です。
 
-## 312件全体から探す
+## 313件全体から探す
 
-ここに当てはまらない問題は、[24テーマの世界地図](human-translation/WORLD_MAP.md) または [OD001–OD312水平マップ](human-translation/ALL_310_HORIZONTAL_MAP.md) から探せます。
+ここに当てはまらない問題は、[現在の全313件の元の題名を検索](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)するか、[24テーマの世界地図](human-translation/WORLD_MAP.md)で分野を探せます。[OD001–OD312水平マップ](human-translation/ALL_310_HORIZONTAL_MAP.md)は先行範囲の図として残っています。
 
 個別ページは公式派生物です。正確な理論内容が必要な場合は、各ページから公式アーカイブのcanonical Parentを確認してください。
 
