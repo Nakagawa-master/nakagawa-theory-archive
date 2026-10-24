@@ -1453,6 +1453,22 @@ On October 20, Qwen developer `yiliang114` [explicitly confirmed the diagnosis](
 
 ---
 
+## 51. OpenClaw | A security-scope review credited by name in official release notes
+
+**A practical problem:** Why should changing one person's permissions interrupt another person's AI session or pending approval? The distinction is between *a global configuration edit* and *the exact work whose present authority actually changed*.
+
+On September 28, 2026, OpenClaw maintainer **steipete** opened [PR #160136](https://github.com/openclaw/openclaw/pull/160136), implementing a fix for unrelated `identityScopes` edits revoking token/HTTP activity, connections and approvals. **steipete wrote that PR's code.**
+
+Approximately two minutes after it opened, **Nakagawa Master (`@Nakagawa-master`) contributed a source-specific review** identifying a distinct remaining issue in approval lookup: the global agent/store inventory was still part of the revocation fence, so adding an unrelated agent could invalidate an unchanged pending approval. [The original review comment](https://github.com/openclaw/openclaw/pull/160136#issuecomment-5863857114) supplied a concrete `main`-versus-`other` configuration regression and proposed separating pre-lookup discovery from a post-lookup, source-specific authority fence. That is a real technical review contribution, **not authorship of the merged code**.
+
+The receiving PR was [merged on September 29](https://github.com/openclaw/openclaw/commit/f922f69fc1078757d9855b3941944804eb50f7ce). OpenClaw's [official v2026.9.7 release-notes page](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md) **explicitly credits `@Nakagawa-master` alongside #160136**. A separate release editor prepared that page in [#160933](https://github.com/openclaw/openclaw/pull/160933); [#162163](https://github.com/openclaw/openclaw/pull/162163) subsequently linked verified contributor handles to profiles. This is an official third-party published account credit, not the GitHub PR's automatic author label.
+
+**A separate, stronger receiving outcome followed.** Maintainer steipete opened [fix PR #160856](https://github.com/openclaw/openclaw/pull/160856), **explicitly identifying Nakagawa Master's original comment as the report source** in the PR body's first paragraph. The author implemented the two-phase discovery/source-bound authority fence and included the exact `main`/unrelated `other` regression shape. In the author's reported base-versus-fixed test, three must-survive cases failed before the change (3 failed, 44 passed); at the fixed head the targeted suite **passed 49/49 tests**. That separate PR was [merged on September 29](https://github.com/openclaw/openclaw/commit/6922a50b287ad76557b085eb78125fc9a250a2dd). This supports an explicit review-to-independent-code-and-test causal link; the implementation and test authorship remain steipete's.
+
+**Confirmed:** (1) Nakagawa Master's distinct review, (2) an **explicitly attributed separate PR #160856 implementing his reported boundary with failing-before/passing-after tests and a main-branch merge**, and (3) official release-notes account credit attached to the original #160136. **Boundary:** #160136 itself excluded the agent/store inventory issue, which the **subsequent #160856 fixed**. The precise editorial rationale for the name credit, #160856's inclusion in a particular stable binary, actual users' operation, and independent reading of the [canonical theory original](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/) are not established by these records.
+
+---
+
 ## What this page supports — and what it does not
 
 ### Supported by the linked public record
