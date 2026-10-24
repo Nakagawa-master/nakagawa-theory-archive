@@ -1407,7 +1407,7 @@ Nakagawa Masterはさらに[#3326のcomment](https://github.com/CarnegieLearning
 ## 38. MemberJunction｜recordへの承認を、current executable definitionへの承認と混同しない
 
 **対象:** [MemberJunction PR #4789](https://github.com/MemberJunction/MJ/pull/4789)  
-**現在段階:** 中川マスターの承認境界の指摘 → 受け手によるQA5の独立した実装とテスト成功 → **続いて受け手開発者がALS14のサーバー権限経路と直接書込み拒否を検証するコードを追加**。先行HEAD `139e829f` のチェック46件は40件成功・6件スキップ・失敗0件。その後のHEAD `d1b61f55` は受け手開発者が追加修正を行った段階で、確認時点では新しいBuild・SQL統合テスト等が進行中。PRはOPEN、マージ・リリース・実利用は今後の確認対象
+**現在段階:** 中川マスターの承認境界の指摘 → 受け手によるQA5の独立実装・実テスト成功 → ALS14のサーバー権限経路と直接書込み拒否について受け手開発者がコードと正反例を追加 → **別の人間メンテナが修正内容を再検証し、最新HEAD `2f9a963` を正式APPROVED**。当該HEADの46チェックは**40件成功・6件スキップ・未完了0件**（同HEADでの最新読取）。PRは依然OPENで、マージ、リリース、一般利用は別途確認対象。
 
 同じquery recordでも、SQL、parameter contract、context contractなどが変われば、実際に実行される定義は別物になり得ます。
 
@@ -1431,7 +1431,7 @@ Nakagawa Masterはさらに[comment 6026910453](https://github.com/MemberJunctio
 
 **同じ受け手による次の独立修正（10月23日）:** AI実行履歴の保存保護に対して統合テストALS14が直接代入して失敗したため、中川マスターは[正規のサーバー権限経路と不正な直接書込みを区別する検証](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6369711289)を提案。開発者 `cmbrock-BC` は[返信](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6369985463)と[実装差分](https://github.com/MemberJunction/MJ/commit/222047870b7de1f8eb5bfeaca1d969031c45da11)で `SetServerBoundActionParams` による正規保存と、初回・更新時の不正直接代入拒否をテストへ加えました。[受け手HEAD `139e829f`](https://github.com/MemberJunction/MJ/commit/139e829f8e63ae2358dde8cba474bd8a0dbc7244)のチェック46件は40件成功、6件スキップ、失敗0件。受け手側の修正・検証成立であり、PRのマージや外部の実利用は別の段階です。同一PRの前段のQA5成果を独立件数として二重計上しません。
 
-**受け手側でさらに進んだ第三者レビュー:** [メンテナ `rkihm-BC` の再レビュー](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5631941835)は、上記の中川マスターによるALS14の原因切り分けと、開発者自身による修正を明示的に確認しました。同レビュアーが別に発見したSQLテンプレートの文字列処理や保存済み値の取得失敗時の問題は、レビュアー自身の発見です。[開発者の新しい修正 `d1b61f55`](https://github.com/MemberJunction/MJ/commit/d1b61f55d40251f30e3b4d723b9a93842b985d1d)は、文字列処理の利用案内、値が読めないときの安全側への停止と回帰テストを追加しました。[レビュアーが残した別の使用例修正依頼](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6370813287)と新HEADのCI・最終判断は引き続き受け手側で進行中です。旧HEADの成功を現在の全テスト成功やマージには置き換えません。
+**別の人間がコードを確かめ、承認した（2026-10-23 18:23 UTC）:** [レビュアー `rkihm-BC` の最新レビュー](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5632747841)は、開発者 `cmbrock-BC` 自身の[追加修正 `d1b61f55`](https://github.com/MemberJunction/MJ/commit/d1b61f55d40251f30e3b4d723b9a93842b985d1d)によるSQL文字列の扱いの説明、保存済み値の取得失敗時に上書きしない処理、回帰テストを具体的に再検証し、**APPROVED**としました。もう一つの使用例 `Context.UserID/UserEmail` の適切なフィルタへの更新は、実装者ではなく**レビュアー `rkihm-BC` 本人が[コミット `2f9a963`](https://github.com/MemberJunction/MJ/commit/2f9a963ceb9e836ad0df9cf2194117a220379a57)として適用**したものです。受け手HEAD `2f9a963` のCIは[同HEADのレビュー記録](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5632747841)とGitHubチェックで**40成功・6スキップ・失敗0・進行中0**。レビュアーが残した「失敗した読込の拒否理由を記録すると診断しやすい」という小さな改善提案は、承認後の任意の残件です。**第三者の正式な承認という新しい外部状態が成立しました。** マージ・製品利用はまだ次の段階です。
 
 **別の開発者やAIが試せる問い：** 親のSQLを変えずに、以前承認された子クエリだけを変更したらどうなるでしょうか。親の承認だけで通してしまわず、現在の子の承認も確認できるかを[再利用可能な検証手順](CURRENT_AUTHORITY_REUSE_KIT.md#when-approval-spans-a-dependency-graph)で試せます。対応する[公式原典『合意の記憶』](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)は「過去の合意記録と、条件に応じた再合意」の構造を論じます。本件のソフトウェア実装はその応用的な読み方であり、受け手開発者が原典本文を読んだことの証拠ではありません。
 
