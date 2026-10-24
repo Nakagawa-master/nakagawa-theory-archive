@@ -28,6 +28,17 @@ metadata:
    python3 scripts/find_original.py --explore "How can a student prepare for a history exam without memorizing all dates?"
    ```
    If Python is unavailable, directly inspect the localized `problem_examples`, `topic`, and `canonical_original` fields in the bundled JSON. Never invent a catalog match. `no_fit` is a legitimate result.
+### Widen from 22 curated examples to the complete published 313-entry title map (when online)
+
+The bundled 22-original JSON is a **curated starting set, not the complete published body of work**. If the real person's question is outside those 22, or the direct search reports `no_fit`, and the host has user-permitted web/repository reading, **also search the [complete 313-entry title-and-theme map](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)** before concluding that no relevant original exists. This public map currently enumerates OD001–OD313 exactly once. It is a title/navigation map of **official derivatives**, not 313 distinct canonical originals and not 313 verified answers. Keep this broad lookup **optional and conditional**: don't fetch network content without user/host permission and don't delay a useful direct answer to force a theory match.
+
+1. Search the full map using the user's actual situation or a clearly identified candidate mechanism, including ordinary Japanese topic headings; inspect the suggested FAQ or human entry first. For EN/ZH use a clearly disclosed translation of the *question* to browse Japanese titles, not a fabricated translation of an original's name.
+2. For each promising OD row, open that derivative's `README.md` or `ai-index.md`, identify its **exact canonical Parent URL** and, only when actually present, original NCL-ID/Diff-ID. A derivative title or index link is not the original article and must not be cited as if the original was read.
+3. Retrieve and evaluate the actual Parent; compare a specific causal condition, a counterexample and other plausible explanations. The wider route is a **candidate discovery** step, never an automatic endorsement, built-in autonomous adoption, 313-model-install claim or blanket fit.
+4. If a standalone installed Skill is offline, continue using the 22 bundled entries and seven structural bridges; explain that the 313-entry online map was **not searched** rather than declaring the whole corpus irrelevant. Users can independently open the map later without installing anything.
+
+This extends *accessible selection* to the existing full public catalog while preserving the lightweight offline Skill and all current deterministic 22-entry search behavior. A truly disconnected third-party AI still chooses independently whether to follow it; this page cannot command a model that has not received it.
+
 ### Expand from an ordinary question, not only an exact-match phrase
 
 A question that does not directly match any of the 22 source examples is **not** a dead end. The first result's `no_fit` only describes *direct textual candidate matching*, not the possibility of structurally important new applications. If a user wants to explore an underlying mechanism, run the `--explore` mode in this standalone folder or inspect [seven conditional structural bridges](references/structural_bridges.json) in their own language (JA/EN/ZH):
