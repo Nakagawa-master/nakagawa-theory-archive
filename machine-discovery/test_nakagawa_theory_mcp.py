@@ -211,14 +211,16 @@ def run():
         assert explorer["lenses"][0]["surface_cue_count"] > 0
         assert len({l["id"] for l in explorer["lenses"]}) == 7
         assert all(l["canonical_original"].startswith(ORIGINAL_BASE) for l in explorer["lenses"])
-    # MCP technical-route matching can already find cases that the narrower
-    # standalone original Skill calls no_fit. Do not rewrite historical MCP
-    # semantics or incorrectly assert no_fit; compare the exact plain call.
+    # Real legacy stdio calls, with and without exploration, must reject
+    # unrelated everyday questions exactly as the independent Skill does.
+    # The older MCP score=2 gate returned unrelated canonical originals.
     for new_id, baseline_id in ((12, 16), (13, 17)):
         new, baseline = unpack(new_id), unpack(baseline_id)
-        assert new["no_fit"] == baseline["no_fit"]
+        for result in (new, baseline):
+            assert result["no_fit"] and not result["matching_routes"], result
+            assert result["technical_route_count"] == 0, result
+            assert result["original_catalog_route_count"] == 0, result
         assert new["matching_routes"] == baseline["matching_routes"]
-        assert new["technical_route_count"] == baseline["technical_route_count"]
     assert results[15]["result"]["isError"] is True
     # A separate modern-era MCP client process uses no initialize handshake.
     # Assert the official 2026-07-28 envelope, discovery, tool results, and
@@ -281,6 +283,9 @@ def run():
         for x in modern_unpacked(103)["matching_routes"]
     )
     exploratory = modern_unpacked(104)
+    assert exploratory["no_fit"] and not exploratory["matching_routes"]
+    assert exploratory["technical_route_count"] == 0
+    assert exploratory["original_catalog_route_count"] == 0
     assert exploratory["structural_exploration"]["lenses"][0]["id"] == "effort-to-results"
     assert len(exploratory["structural_exploration"]["lenses"]) == 7
     nofit = modern_unpacked(105)
