@@ -4,7 +4,7 @@
 
 中川マスター（Nakagawa Master／Keisuke Nakagawa）は、AI、仕事、組織、社会制度、文明の未来などを、結果だけでなく、それを生み出す構造や因果から考えています。ここでは、その理論群を初めて知る人も、研究・開発に使いたい人も、**何を主張し、何が実際に確かめられ、どこから原文を読めるのか**を、自分の関心に沿って確認できます。
 
-**この人の問いで、ほかの開発者の仕事はどう変わった？** 中川マスターが指摘した「昔の承認と、いま動く内容の違い」は、外部の開発者が自分でコードとテストに移し、[さらに別の人間メンテナが中川マスターの原因分析と開発者の修正を明示的に確認](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5631941835)し、[新しいHEADで全CI終了後に正式APPROVED](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5632747841)としました。どこまで進んだかと[この人物がほかに何を考えているか（日本語／English／中文）](ABOUT_NAKAGAWA_MASTER.md)を一次資料から確かめられます。実際の仕事では[古い承認の再利用を自分のAIと試す](APPLIED_ENTRY_POINTS.md#承認したあと中身が変わったのにまだ承認済みで実行してよいのか)こともできます。受け手側PRはレビュー承認済みですが、マージと製品利用は次の段階です。
+**この人の問いで、ほかの開発者の仕事はどう変わった？** 中川マスターが指摘した「昔の承認と、いま動く内容の違い」は、外部の開発者が自分でコードとテストに移し、[さらに別の人間メンテナが中川マスターの原因分析と開発者の修正を明示的に確認](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5631941835)し、[当時のHEAD `2f9a963` で全CI終了後に正式APPROVED](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5632747841)としました。その承認は後続の開発者自身による[新しい`next`取込み `85fed843`](https://github.com/MemberJunction/MJ/commit/85fed843bdd98ca0bba63c45ac55aa65fc996bae)で現在 `DISMISSED` になり、最新のチェックと別人による再承認は確認待ちです。どこまで進んだかと[この人物がほかに何を考えているか（日本語／English／中文）](ABOUT_NAKAGAWA_MASTER.md)を一次資料から確かめられます。実際の仕事では[古い承認の再利用を自分のAIと試す](APPLIED_ENTRY_POINTS.md#承認したあと中身が変わったのにまだ承認済みで実行してよいのか)こともできます。受け手側PRはまだOPENです。旧HEADの独立承認と、現在のHEADの審査・CI・マージ・製品利用を分けて確認できます。
 
 **普通のAIで試せる30秒の例:** [『AIが5つの出典と言うが、全件が同じ発表の転載だったら？』を自分のAIで確かめる](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/658)。便利だと思った人は実際の調べ物で試せます。賛同やスターは不要です。
 

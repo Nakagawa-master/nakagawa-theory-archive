@@ -1250,7 +1250,7 @@ role 一般允许删除
 ## 38. MemberJunction｜对 record 的批准不等于对当前可执行定义的批准
 
 **对象：** [MemberJunction PR #4789](https://github.com/MemberJunction/MJ/pull/4789)  
-**当前阶段：** Nakagawa Master 提出历史批准与当前定义的权限区别 → 接收方开发者自主实现、验证 QA5 依赖检查 → 开发者继续为 ALS14 补充服务器授权写入及非法直接赋值的正反回归测试 → **另一位人类维护者在最新 HEAD `2f9a963` 正式提交 APPROVED 复审**。该HEAD共46项检查：**40成功、6跳过、0失败、0待完成**。PR仍OPEN，合并、正式发布、用户部署属于后续阶段。
+**当前阶段：** Nakagawa Master 指出历史批准与当前定义的权限区别 → 接收方开发者自主修复QA5/ALS14并增加正反测试 → 另一位人类维护者曾对**旧HEAD `2f9a963` 提交 APPROVED**（当时46项CI：40成功/6跳过）。**该旧批准现在已 DISMISSED**。接收方开发者自行[合并 `next` 并调整migration顺序至新HEAD `85fed843`](https://github.com/MemberJunction/MJ/commit/85fed843bdd98ca0bba63c45ac55aa65fc996bae)。新HEAD的37项检查已有**24成功、6跳过、1 neutral、6进行中**（2026-10-24 04:37 UTC时点）。[新HEAD上的APPROVED由PR开发者 `cmbrock-BC` 本人提交](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5636858320)，并非另一位人类维护者重新批准。PR仍OPEN，尚未合并、正式发布或部署。
 
 同一个 record ID 可以保持不变，但 SQL、parameter contract 或 context semantics 已经改变。Nakagawa Master 在 [comment 5882464839](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839) 中把边界写成：
 
@@ -1268,7 +1268,7 @@ Nakagawa Master 又在 [comment 6026910453](https://github.com/MemberJunction/MJ
 
 **10月23日接收方开发者的后续实际修正：** 新的服务器保存防护使旧版ALS14测试通过直接赋值写入 `BoundActionParams` 的步骤失败。Nakagawa Master [指出测试数据设置与实际权限边界不一致，并提出正反对照](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6369711289)。开发者 `cmbrock-BC` [明确回复](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6369985463)，并在[自己的代码提交](https://github.com/MemberJunction/MJ/commit/222047870b7de1f8eb5bfeaca1d969031c45da11)中改用 `SetServerBoundActionParams` 保存服务器授权参数，同时补充首次保存和后续更新时直接赋值被拒绝或恢复的测试。新HEAD [`139e829f`](https://github.com/MemberJunction/MJ/commit/139e829f8e63ae2358dde8cba474bd8a0dbc7244)的46项检查均已完成，无失败（40成功，6跳过）。这是同一PR内部的后续独立开发者修改，不是新的独立项目采纳，也不证明PR已合并、在用户端部署或外部AI阅读了原典。读者可以自行比较“服务器授权修改”和“客户侧直接覆盖”，检验是否只有前者能够持久生效。
 
-**另一位人类维护者正式复审并批准（2026-10-23 18:23 UTC）：** [维护者 `rkihm-BC` 的最新 APPROVED 审查](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5632747841)核对了接收方开发者自主完成的 [`d1b61f55`](https://github.com/MemberJunction/MJ/commit/d1b61f55d40251f30e3b4d723b9a93842b985d1d)：SQL字符串过滤使用说明、读取保存值失败时拒绝覆盖、以及相应的回归测试。特别要区分：对使用示例 `Context.UserID/UserEmail` 的最终改写，是**审查者 `rkihm-BC` 本人提交的 [`2f9a963`](https://github.com/MemberJunction/MJ/commit/2f9a963ceb9e836ad0df9cf2194117a220379a57)**，不能误记为开发者的代码。最新HEAD的46项CI均已结束：**40成功、6跳过、0失败、0进行中**。[审查](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5632747841)另提及读取失败时显示清楚的拒绝原因，这是不阻止批准的小建议。**独立人类维护者的正式批准已真实发生**，但仍不意味着PR合并或客户实际使用。
+**另一位人类维护者曾正式复审并批准旧HEAD（2026-10-23 18:23 UTC；当前DISMISSED）：** [维护者 `rkihm-BC` 的历史 APPROVED 审查](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5632747841)核对了接收方开发者自主完成的 [`d1b61f55`](https://github.com/MemberJunction/MJ/commit/d1b61f55d40251f30e3b4d723b9a93842b985d1d)：SQL字符串过滤使用说明、读取保存值失败时拒绝覆盖、以及相应的回归测试。特别要区分：对使用示例 `Context.UserID/UserEmail` 的最终改写，是**审查者 `rkihm-BC` 本人提交的 [`2f9a963`](https://github.com/MemberJunction/MJ/commit/2f9a963ceb9e836ad0df9cf2194117a220379a57)**，不能误记为开发者的代码。此前HEAD的46项CI均已结束：**40成功、6跳过、0失败、0进行中**。[审查](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5632747841)另提及读取失败时显示清楚的拒绝原因，这是不阻止批准的小建议。**独立人类维护者的正式批准已真实发生**，但仍不意味着PR合并或客户实际使用。
 
 **供其他开发者或独立AI检验：** 父查询的批准记录不变，但被组合调用的子查询定义已更改时，系统能否阻止旧批准放行新定义？[可复用的回归步骤](CURRENT_AUTHORITY_REUSE_KIT.md#when-approval-spans-a-dependency-graph)给出了正反例。[官方原典《合意的记忆》](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)讨论因果、关系及重新达成共识的结构；这里的软件测试是一种解释性应用，并不表明接收方曾阅读原典正文。
 
