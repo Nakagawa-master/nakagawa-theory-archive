@@ -760,6 +760,18 @@ AIサービスを24時間動かすため、一つのワーカーを複数の利�
 
 **自分の仕事で試す一歩：** AIが示す2件のURLについて、まず引用された文章とその原資料をたどり、片方がもう片方の転載なら「異なるURL・同じ根拠起点」と書き分けます。引用先を特定できないときは推測で断定せず「引用元未確定」と保留します。出典が一致しても主張が正しいとは限らないので、必要なら独立した観測や反例も確認してください。
 
+**開発者や別のAIが無料で試すもう一歩：** 「出典を保ったままAIの返答本文を編集・要約・再送する」と、**出典の内容が変わらなくても、その出典が新しい文を裏付けているかは別**です。たとえば「申請は拒否された」という原文と引用を保存し、本文だけを「申請は承認された」に書き換えて元の引用をそのまま表示すると、古い証拠が新しい主張の証拠に見えてしまいます。
+
+実際のAIプロバイダーを呼ばずに、各自のアダプターから取得した**変更前テキスト・変更後テキスト・元の引用・再表示した引用**を検査する[Python 3だけで使える引用再利用検査](machine-discovery/citation-replay-fidelity-audit.py)を追加しました。独立した開発者や、ユーザーが選んだAIが同じJSONを読んで反例を確認できます。
+
+```sh
+python3 machine-discovery/citation-replay-fidelity-audit.py --self-test
+python3 machine-discovery/citation-replay-fidelity-audit.py --example > citation-case.json
+python3 machine-discovery/citation-replay-fidelity-audit.py --case citation-case.json
+```
+
+例では、同じAIプロバイダーでも本文改変後に古い引用を付けた場合は `UNSAFE_REPLAY`（終了コード1）、同じ本文・同じプロバイダー・保存済みの引用のみなら `NO_CONTRACT_VIOLATION_DETECTED`（0）です。入力が欠落・形式不正なら2。**この検査は、入力として渡された再利用の一貫性を監査するだけで、引用の真実性、引用元を実際に読んだ事実、Pydantic AIや他社製品での実行・採用を証明しません。** 本文に少しでも差があれば引用は保守的に拒否します。提供側が信頼できる新しい文と出典の対応関係を検証できた場合は、別途その証拠で判断してください。
+
 問いの原点を掘り下げたい方は、中川マスターの[公式原典・第8論「認識基盤・証拠系譜・敵対的情報耐性論」](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)へ進めます。これは外部ライブラリの実装内容と公開された原典を**読者が自分で比較するための入口**です。
 
 ## 313件全体から探す
