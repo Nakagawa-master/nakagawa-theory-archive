@@ -43,7 +43,7 @@
 ## 1. PostHog｜区分AI/producer提供的数字与PostHog自身测量
 
 **起点：** [PostHog/posthog#92252](https://github.com/PostHog/posthog/pull/92252) 中的 Nakagawa-master review  
-**当前状态：** 原PR #92252已于2026-09-28关闭且未合并。author明确把后续stack拆开：outcome measurement移到 [#107879](https://github.com/PostHog/posthog/pull/107879)，measurement/evidence移到 [#107795](https://github.com/PostHog/posthog/pull/107795)，suggestion/action层继续在 [#107802](https://github.com/PostHog/posthog/pull/107802)。三个PR均于2026-10-02 merge到master，并已确认deploy到dev / prod-us / prod-eu；但仍受feature flag / rollout控制，尚不能据此声称customer availability或真实使用。
+**当前状态：** **接收方开发者重新组织的三个后续PR于2026年10月2日全部合并至PostHog的master**，并有dev、prod-us和prod-eu环境的部署记录。原始[#92252](https://github.com/PostHog/posthog/pull/92252)于9月28日**未合并而关闭，是因为作者明确改用拆分后的后续实现**：outcome measurement [#107879](https://github.com/PostHog/posthog/pull/107879)、真实测量与证据展示 [#107795](https://github.com/PostHog/posthog/pull/107795)、建议与执行层 [#107802](https://github.com/PostHog/posthog/pull/107802)。**边界：** 这些变更仍受feature flag和rollout控制，尚无证据证明客户已经能够使用或已实际采用。
 
 Nakagawa-master review指出：producer / scout自己提供的数字，不应被显示成PostHog独立测量得到的数字。
 
