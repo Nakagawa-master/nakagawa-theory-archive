@@ -19,6 +19,9 @@ STRUCTURAL_BRIDGES = ROOT.parent / "skills/nakagawa-originals/references/structu
 VERSIONS = ("2025-11-25", "2025-06-18")  # legacy, handshake-based
 MODERN_VERSION = "2026-07-28"  # stateless, request-local metadata
 SERVER_INFO = {"name": "nakagawa-public-original-router", "version": "1.1.0"}
+# Match the standalone Skill's false-positive gate: two generic shared words
+# must not silently become a canonical-original recommendation.
+MIN_CANDIDATE_SCORE = 2.5
 STOP = {
     "a", "about", "after", "ai", "agent", "an", "and", "are", "at", "can",
     "do", "does", "for", "from", "how", "in", "is", "it", "my", "of",
@@ -98,7 +101,7 @@ def catalog_matches(question, limit=3):
             if isinstance(phrase, str)
         )
         best, matched_lang = max(scored_phrases, key=lambda x: x[0], default=(0, None))
-        if best < 2:
+        if best < MIN_CANDIDATE_SCORE:
             continue
         candidates.append((best, entry, matched_lang))
     candidates.sort(
@@ -150,7 +153,7 @@ def find_matches(question, limit=3):
     for route in data["routes"]:
         phrases = route.get("when", [])
         best = max((similarity(question, p) for p in phrases if isinstance(p, str)), default=0)
-        if best < 2:
+        if best < MIN_CANDIDATE_SCORE:
             continue
         scored.append((best, route))
     scored.sort(key=lambda pair: (-pair[0], str(pair[1].get("id", ""))))
@@ -455,6 +458,31 @@ def self_test():
     )
     none = answer_question("repair the leather strap on a camping lantern")
     assert none["no_fit"] and not none["matching_routes"]
+    # The portable offline Skill already rejects these four genuine everyday
+    # questions. The older MCP score=2 gate misrouted them to unrelated
+    # official Parents from just two incidental word/CJK-bigram overlaps.
+    for question in (
+        "How can a student prepare for a history exam without memorizing all dates?",
+        "How can I give a teacher constructive feedback after a failed class?",
+        "AIの最新モデルの価格を比較したい",
+        "同じ場所で毎日同じ時間に運動しても問題はない？",
+    ):
+        direct = answer_question(question)
+        assert direct["no_fit"] and not direct["matching_routes"], (question, direct)
+        exploratory = answer_question(question, explore=True)
+        assert exploratory["no_fit"] and not exploratory["matching_routes"]
+        assert len(exploratory["structural_exploration"]["lenses"]) == 7
+        assert exploratory["structural_exploration"]["first_lens_is_hint_not_factual_fit"]
+
+    # Recall gate: every published 22-Parent JA/EN/ZH example still retrieves
+    # its own exact original, not only the pre-existing English technical route.
+    for entry in read_original_catalog()["entries"]:
+        for key in ("problem_phrases", "problem_phrases_ja", "problem_phrases_zh"):
+            for example in entry.get(key, []):
+                match = catalog_matches(example)
+                assert any(x["canonical_original"] == entry["canonical_url"]
+                           for x in match), (key, example, entry["canonical_url"])
+
     assert none["structural_exploration_available"] and "structural_exploration" not in none
     for q, first in (
         ("How can a student prepare for a history exam without memorizing all dates?", "effort-to-results"),
@@ -492,7 +520,7 @@ def self_test():
     assert raw["public_personal_name"]["japanese_kanji_full_name"] is None
     assert {a["exact"] for a in raw["contextual_public_aliases"]} == {"マスター", "MasterJP"}
     assert handle({"jsonrpc": "2.0", "method": "notifications/initialized"}) == (None, None)
-    print("PASS: public technical and multilingual original indexes / 4 matches / nonfit / initialize / list / call / notification")
+    print("PASS: 22-Parent JA/EN/ZH source recall; 4 realistic unrelated no-fits; optional lenses; MCP initialize/list/call")
 
 
 def main():
