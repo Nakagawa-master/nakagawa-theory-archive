@@ -4,10 +4,14 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** These are public, source-linked outcomes—not self-ratings or claims of writing somebody else's code.
 
+**51 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. Cases at earlier or declined stages are also kept and not counted as successful adoption. The code authors remain the receiving developers.
+
 ## Proof first: independent developers changed and merged code
 
 - **OpenClaw | An unrelated agent's configuration edit invalidated another person's pending approval.** Nakagawa Master [reported the exact remaining problem and a regression case](https://github.com/openclaw/openclaw/pull/160136#issuecomment-5863857114). The maintainer **explicitly cited that report**, [implemented and merged the separate fix](https://github.com/openclaw/openclaw/pull/160856), and [official release documentation named `@Nakagawa-master`](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md). See case 51.
 - **MemberJunction | Matching an ID is not authorization to overwrite a record.** The receiving team implemented the distinction and published [v6.1.2](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2). See case 3.
+- **PostHog | Numbers asserted by a producer are not the same as measurements made by the product.** The receiving team split the work into [three merged successor PRs](https://github.com/PostHog/posthog/pull/107795) with recorded dev / US / EU production deployments. Customer rollout is not proven. See case 1.
+- **Qwen Code | A previously recorded stop is not proof that this particular AI call stopped.** Receiving developer `wenshao` implemented and [merged the correction on October 12](https://github.com/QwenLM/qwen-code/pull/13923). See case 47.
 - **PydanticAI | Skipping a duplicate AI history request can still leave unwanted writes.** The developer [reproduced and fixed the issue](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879); [the fix merged](https://github.com/pydantic/pydantic-ai/pull/9982). See case 41.
 
 **Demonstrated capability:** Spot a false equivalence inside different systems, make it testable, and help independent implementers change their own software. The code authors are the receiving developers.

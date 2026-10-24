@@ -4,10 +4,14 @@
 
 **中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 这里记录的是可以追溯第三方来源的实际成果，而不是自我打分或冒认他人代码成果。
 
+**公开记录共51例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。尚在处理或未被采纳的案例也完整保留，**不算成已经采纳的成果**；修复代码属于接收方开发者。
+
 ## 先看成果：其他开发者实际修改并合并代码
 
 - **OpenClaw｜修改无关代理配置，却让另一个人的审批失效。** 中川大师[指出具体漏洞和回归测试](https://github.com/openclaw/openclaw/pull/160136#issuecomment-5863857114)。开发者**明确引用其报告**，在[独立PR中实现并合并修复](https://github.com/openclaw/openclaw/pull/160856)；[官方版本文档列出 `@Nakagawa-master`](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)。详见案例51。
 - **MemberJunction｜ID相同不代表有权覆盖已有记录。** 接收团队修改代码和测试，并发布[正式版v6.1.2](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)。详见案例3。
+- **PostHog｜数据提供者自称的数值，不等于产品独立测量的结果。** 接收团队将修改拆为[三个已合并的后续PR](https://github.com/PostHog/posthog/pull/107795)，并有dev、美国和欧洲生产环境部署记录；客户是否已开放使用尚未核实。详见案例1。
+- **Qwen Code｜“之前曾停止”不等于“本次AI调用确实已停止”。** 开发者`wenshao`完成修复，并于[10月12日合并](https://github.com/QwenLM/qwen-code/pull/13923)。详见案例47。
 - **PydanticAI｜跳过重复请求，仍可能留下多余的AI历史写入。** 开发者[独立复现并修复](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879)，[修复已合并](https://github.com/pydantic/pydantic-ai/pull/9982)。详见案例41。
 
 **可以核验的能力：** 跨领域识别隐藏的错误等同关系，把问题转化为可测试的反例，帮助独立开发团队修改实际软件。代码作者仍是接收方开发者。
