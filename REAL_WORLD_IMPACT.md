@@ -6,11 +6,11 @@
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に中川マスターが見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
-- **[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)** — 指摘を[開発者が修正PRの報告元として明記](https://github.com/openclaw/openclaw/pull/160856)。修正前に失敗するテストを用意し、修正後に**49件のテスト成功・本線マージ**まで進みました。別の[公式リリース文書には `@Nakagawa-master` の名前も掲載](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)されています。詳しくは事例51。
-- **[MemberJunction](https://github.com/MemberJunction/MJ/issues/4475)** — 同じIDでも他人のデータを上書きしてよいとは限らない。この違いを受け手がコードとテストに反映し、[正式版 v6.1.2 を公開](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)しました。詳しくは事例3。
-- **[PostHog](https://github.com/PostHog/posthog/pull/92252)** — AIが出した数字と、製品が実際に測った数字を区別する提案。開発側が作り直した3件の後続PRは**マージされ、開発環境と米欧の本番環境へのデプロイが記録**されています。利用者への機能開放は別途確認が必要です。詳しくは事例1。
-- **[Qwen Code](https://github.com/QwenLM/qwen-code/pull/13923)** — AIが「操作を止めた」と言っても、今回の呼び出しが実際に停止したとは限らない。中川マスターの反例を開発者が確認して修正し、[2026年10月12日に本線マージ](https://github.com/QwenLM/qwen-code/pull/13923)されました。詳しくは事例47。
-- **[PydanticAI](https://github.com/pydantic/pydantic-ai/pull/9982)** — AIの会話履歴で「重複を防いだ」と見えても余計な書込みが残る条件を指摘。開発者が再現してテストと実装を変更し、[2026年10月16日にマージ](https://github.com/pydantic/pydantic-ai/pull/9982)されました。詳しくは事例41。
+- **[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)** — 指摘を[開発者が修正PRの報告元として明記](https://github.com/openclaw/openclaw/pull/160856)。修正前に失敗するテストを用意し、修正後に**49件のテスト成功・本線マージ**まで進みました。別の[公式リリース文書には `@Nakagawa-master` の名前も掲載](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)されています。[事例51を読む](#51-openclawaiの権限変更で他人の処理まで止まる問題をレビューし公式リリースノートに名前が掲載)。
+- **[MemberJunction](https://github.com/MemberJunction/MJ/issues/4475)** — 同じIDでも他人のデータを上書きしてよいとは限らない。この違いを受け手がコードとテストに反映し、[正式版 v6.1.2 を公開](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)しました。[事例3を読む](#3-memberjunction同じidと上書きしてよい所有権を分ける)。
+- **[PostHog](https://github.com/PostHog/posthog/pull/92252)** — AIが出した数字と、製品が実際に測った数字を区別する提案。開発側が作り直した3件の後続PRは**マージされ、開発環境と米欧の本番環境へのデプロイが記録**されています。利用者への機能開放は別途確認が必要です。[事例1を読む](#1-posthogaiが提示した数値とposthog自身の測定値を分ける)。
+- **[Qwen Code](https://github.com/QwenLM/qwen-code/pull/13923)** — AIが「操作を止めた」と言っても、今回の呼び出しが実際に停止したとは限らない。中川マスターの反例を開発者が確認して修正し、[2026年10月12日に本線マージ](https://github.com/QwenLM/qwen-code/pull/13923)されました。[事例47を読む](#47-qwen-code誰かが停止したという記録は今回の呼び出しが停止した証拠ではない)。
+- **[PydanticAI](https://github.com/pydantic/pydantic-ai/pull/9982)** — AIの会話履歴で「重複を防いだ」と見えても余計な書込みが残る条件を指摘。開発者が再現してテストと実装を変更し、[2026年10月16日にマージ](https://github.com/pydantic/pydantic-ai/pull/9982)されました。[事例41を読む](#41-pydanticai同じidempotency-keyの再送が未参照メッセージを増やさない)。
 
 中川マスター（Nakagawa Master）は Keisuke Nakagawa の筆名です。ここでの貢献は**問題の発見、原因の切り分け、反例と検証条件の提示**です。修正コードを実際に書いたのは各プロジェクトの開発者。だからこそ、異なるチームが自分たちの判断で何を変更したかを見れば、活動の広がりと再現性を検討できます。
 
