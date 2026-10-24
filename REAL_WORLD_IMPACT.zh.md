@@ -1462,6 +1462,20 @@ Qwen Code的TypeScript构建失败，是因为测试专用权限中介缺少必�
 
 ---
 
+## 51. OpenClaw｜审查AI权限变更的影响边界，姓名获官方发布说明列明
+
+**实际问题：** 为什么修改甲用户的权限，会让乙用户正在进行的AI任务或待审批操作一起中断？关键是区分“全局配置发生变化”和“当前究竟是谁的执行授权发生了变化”。
+
+2026年9月28日，OpenClaw开发者 **steipete** 提交了[PR #160136](https://github.com/openclaw/openclaw/pull/160136)，修复无关用户的 `identityScopes` 修改导致连接、HTTP任务、审批等失效的问题。**该PR的代码由steipete实现。**
+
+PR创建约两分钟后，**中川大师（`@Nakagawa-master`）提供了具体的代码审查意见**。[原始评论](https://github.com/openclaw/openclaw/pull/160136#issuecomment-5863857114)指出另一条尚存的边界：审批流程仍依赖全体agent及store清单，可能仅因为加入无关的agent，就让目标不变的待审批请求失效。他给出主agent为 `main`、新增无关agent `other` 的正反回归测试，并提出将确认对象之前的查找条件与确认之后的精确授权条件分开。**这是真实的技术审查贡献，不等于由本人编写该PR的修复代码。**
+
+该PR于[9月29日合并](https://github.com/openclaw/openclaw/commit/f922f69fc1078757d9855b3941944804eb50f7ce)。OpenClaw的[官方v2026.9.7发布说明](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)在PR #160136旁**明确列出 `@Nakagawa-master`**。该页面由另一位编辑通过[PR #160933](https://github.com/openclaw/openclaw/pull/160933)拟定，随后[PR #162163](https://github.com/openclaw/openclaw/pull/162163)将经过核验的GitHub账号关联到个人资料。这是**第三方正式发布文档中的姓名署名**，并不是GitHub自动生成的PR作者标签。
+
+**已经确认：** 真实的代码审查、其他开发者的PR合并、第三方官方发布说明中的明确署名。**重要边界：** 发布说明同时注明，“无关agent/store清单变动导致审批失效”**不属于该次修复的范围**。公开资料没有揭示编辑作出署名决定的内部理由，也不能证明中川大师的附加建议在该PR中被实现、真实用户已经使用此功能，或开发团队读过其[《合意的记忆》对应原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)。
+
+---
+
 ## 本页可以支持什么结论，以及不能支持什么结论
 
 ### 公开记录能够支持的内容
