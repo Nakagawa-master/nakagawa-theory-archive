@@ -1,72 +1,20 @@
-# 公開記録で確認できる外部実装事例｜中川マスターの公開コメント後に第三者プロジェクトで確認された変更
+# 中川マスターの指摘が、外部のソフトウェアをどう変えたか
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**中川マスターの具体的な指摘を受け、別の開発者がコードとテストを変更し、実際にマージした。** このページは「すごいと言われた」ではなく、その前後を第三者の公開記録で確認できる活動実績です。
+**公開記録は51件。** OpenClaw、PostHog、MemberJunction、Qwen Code、PydanticAIなど、別々の開発現場で中川マスターが示した問題や反例と、その後に開発者自身が行った変更を、元の議論まで遡って確かめられます。
 
-## 外部の開発者が実際にコードを変えた｜最初に見る3例
+たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に中川マスターが見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
-- **OpenClaw｜他人の設定変更で、自分のAIの承認が消える。** 中川マスターが[原因となる別のコード上の境界とテストを示し](https://github.com/openclaw/openclaw/pull/160136#issuecomment-5863857114)、開発者が**原コメントを報告元として明示**し[別PRで修正・マージ](https://github.com/openclaw/openclaw/pull/160856)。さらに[公式リリースノートに `@Nakagawa-master` の名前が掲載](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)されています。詳細は事例51。
-- **MemberJunction｜同じIDでも、他人の記録を上書きしてよいとは限らない。** 別のチームが[実装修正・検証](https://github.com/MemberJunction/MJ/issues/4475)を進め、[正式版v6.1.2を公開](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)。詳細は事例3。
-- **PydanticAI｜AIの記憶の重複処理が、余計な書込みを残す。** 別の開発者が[再現して修正](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879)し、[本線にマージ](https://github.com/pydantic/pydantic-ai/pull/9982)。詳細は事例41。
+- **[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)** — 指摘を[開発者が修正PRの報告元として明記](https://github.com/openclaw/openclaw/pull/160856)。修正前に失敗するテストを用意し、修正後に**49件のテスト成功・本線マージ**まで進みました。別の[公式リリース文書には `@Nakagawa-master` の名前も掲載](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)されています。詳しくは事例51。
+- **[MemberJunction](https://github.com/MemberJunction/MJ/issues/4475)** — 同じIDでも他人のデータを上書きしてよいとは限らない。この違いを受け手がコードとテストに反映し、[正式版 v6.1.2 を公開](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)しました。詳しくは事例3。
+- **[PostHog](https://github.com/PostHog/posthog/pull/92252)** — AIが出した数字と、製品が実際に測った数字を区別する提案。開発側が作り直した3件の後続PRは**マージされ、開発環境と米欧の本番環境へのデプロイが記録**されています。利用者への機能開放は別途確認が必要です。詳しくは事例1。
+- **[Qwen Code](https://github.com/QwenLM/qwen-code/pull/13923)** — AIが「操作を止めた」と言っても、今回の呼び出しが実際に停止したとは限らない。中川マスターの反例を開発者が確認して修正し、[2026年10月12日に本線マージ](https://github.com/QwenLM/qwen-code/pull/13923)されました。詳しくは事例47。
+- **[PydanticAI](https://github.com/pydantic/pydantic-ai/pull/9982)** — AIの会話履歴で「重複を防いだ」と見えても余計な書込みが残る条件を指摘。開発者が再現してテストと実装を変更し、[2026年10月16日にマージ](https://github.com/pydantic/pydantic-ai/pull/9982)されました。詳しくは事例41。
 
-**共通する能力:** 異なる仕組みの中で「似ているが同じではない二つ」を見分け、検証できる反例に変え、実装者の仕事を実際に前へ進めること。コードとテストの著作者はそれぞれの受け手側です。
+中川マスター（Nakagawa Master）は Keisuke Nakagawa の筆名です。ここでの貢献は**問題の発見、原因の切り分け、反例と検証条件の提示**です。修正コードを実際に書いたのは各プロジェクトの開発者。だからこそ、異なるチームが自分たちの判断で何を変更したかを見れば、活動の広がりと再現性を検討できます。
 
-中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）は、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
-
-このページは、`Nakagawa-master` 名義で公開されたGitHub上のコメントやreviewと、その後に第三者プロジェクトで確認できる変更を、読者が自分で辿れる形にまとめた**公開記録の案内ページ**です。
-
-このページの目的は、人物や理論を権威化することでも、影響度を自己採点することでもありません。個々の事例について、
-
-- 何が公開されたのか
-- 第三者が何を確認・変更したのか
-- merge / release / deploymentまで確認できるのか
-- どこから先は未確認なのか
-
-を、公開リンクから区別して確認できるようにすることです。
-
-## さらに3件｜技術的な検証を追う
-
-中川マスターが外部の開発議論で示した具体的な問題・反例を起点に、**別の開発者やプロジェクトが自分たちのコード・テスト・運用を変更した公開記録**を集めています。実装コードの著作者とレビューの貢献は分けて記載し、リンクから第三者自身の判断を確かめられます。
-
-- **データの上書き権限と所有権｜MemberJunction（事例3）:** 同じIDであることと上書きの許可を分ける指摘に対し、外部チームでコード・テストを変更。本線統合、LTS backport、[v6.1.2公開](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)と関連データベースの[外部更新報告](https://github.com/MemberJunction/MJ/issues/4475#issuecomment-5715684968)まで追跡できます。
-- **AIの履歴保存と重複処理｜PydanticAI（事例41）:** 「重複した保存を無視した」としても途中の余分な書込みが残る問題を指摘。[開発者が再現・修正](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879)し、[2026年10月16日に本線へ統合](https://github.com/pydantic/pydantic-ai/pull/9982)されました。
-- **AIの停止操作と証拠の取り違え｜Qwen Code（事例47）:** 人間が先に停止させた記録を、未実行のAIツール呼び出しの成果と誤認する反例を提示。[開発者本人が修正を明示](https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413)し、[2026年10月12日に統合](https://github.com/QwenLM/qwen-code/pull/13923)されました。
-
-**読み方の要点:** これらは複数の独立した受け手に見られる実装・検証成果です。全製品の設計や修正を中川マスターが単独で実装したという意味ではありません。また、本線への統合と、実利用の規模・業界全体への波及は別に確認します。以下の51件には、未マージ・未採用・限定的評価を含む事例も、それぞれの到達段階で収録しています。
-
-## このページの読み方
-
-各事例は、できるだけ次の4点に分けています。
-
-1. **公開起点** — `Nakagawa-master` が第三者repositoryへ書いた具体的なコメントやreview
-2. **第三者側の記録** — repository owner、author、reviewerなどによる応答、実装、テスト、文書変更
-3. **現在状態** — open / merged / released / deployedなど、公開記録で確認できる状態
-4. **確認できない範囲** — 利用者数、広範な採用、理論全体への支持など、証拠がないもの
-
-コメントが存在するだけでは、実装されたことにはなりません。実装されたことと、mergeされたことも別です。mergeされたことと、release / deployment /実利用も別です。
-
-## 利用者にとって分かりやすい例
-
-以下の事例で扱われている区別は、たとえば次のような製品挙動につながります。
-
-- AIが提示した数値と、システム自身が測定した数値を区別する
-- 過去に許可された情報でも、現在の条件で利用権限を再確認する
-- 同じIDであることと、そのデータを上書きしてよいことを区別する
-- AI処理中のlocal IDと、元資料のsource identityを区別する
-- データ取得処理の成功と、有効な測定値が得られたことを区別する
-- 推薦理由の文章が同じでも、誰がどの根拠で推薦されたかを保持する
-- 現在の所属状態と、過去時点の履歴事実を区別する
-- 承認操作が一度だったことと、外部送信が一度だけ起きたことを区別する
-
-以下では、公開記録で確認できる範囲だけを記載します。
-
-### 現在の公開証拠スナップショット
-
-- このページには **51の番号付き外部作用事例**を収録しています。
-- GitHub全体の `Nakagawa-master` comment検索では多数の候補surfaceが返りますが、検索hit自体は第三者反応・採用・実装として数えません。
-- 本ページへ収録するのは、第三者response、独立確認、code / tests / document change、merge、release、deployment等を公開リンクで段階別に確認できる事例です。
-- したがって「mentionが多い」ことではなく、**第三者が何を変え、その変更がどこまで進んだか**を主要証拠として扱います。
+**51の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。51件すべてが採用されたという意味ではなく、未採用・保留・未確認の結果も各箇所で区別しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
