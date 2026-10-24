@@ -45,7 +45,7 @@ Originals: https://master.ricette.jp/theory-archive/ ; [author](https://master.r
 
 ## Voluntary portable AI agent routes
 
-- [Portable Agent Skill: 22 curated offline originals + conditional wider 313-derivative title-map lookup](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/skills/nakagawa-originals/SKILL.md): user-directed optional `npx skills add Nakagawa-master/nakagawa-theory-archive --skill nakagawa-originals`, then actual canonical Parent validation; 313 is a derivative-navigation count, not independently verified originals or installs.
+- [Agent Skill: 22 original routes offline, optional 313-title wider lookup online](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/skills/nakagawa-originals/SKILL.md).
 - [Local original-source MCP server](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/NAKAGAWA_THEORY_MCP.md): Local read-only Python, no paid API.
 - [MCP Registry release](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.1.0): `io.github.Nakagawa-master/nakagawa-original-router`; has not been rebuilt since later routing fixes; external AI use unverified.
 
