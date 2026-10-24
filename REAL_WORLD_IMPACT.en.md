@@ -1453,6 +1453,20 @@ On October 20, Qwen developer `yiliang114` [explicitly confirmed the diagnosis](
 
 ---
 
+## 51. OpenClaw | A security-scope review credited by name in official release notes
+
+**A practical problem:** Why should changing one person's permissions interrupt another person's AI session or pending approval? The distinction is between *a global configuration edit* and *the exact work whose present authority actually changed*.
+
+On September 28, 2026, OpenClaw maintainer **steipete** opened [PR #160136](https://github.com/openclaw/openclaw/pull/160136), implementing a fix for unrelated `identityScopes` edits revoking token/HTTP activity, connections and approvals. **steipete wrote that PR's code.**
+
+Approximately two minutes after it opened, **Nakagawa Master (`@Nakagawa-master`) contributed a source-specific review** identifying a distinct remaining issue in approval lookup: the global agent/store inventory was still part of the revocation fence, so adding an unrelated agent could invalidate an unchanged pending approval. [The original review comment](https://github.com/openclaw/openclaw/pull/160136#issuecomment-5863857114) supplied a concrete `main`-versus-`other` configuration regression and proposed separating pre-lookup discovery from a post-lookup, source-specific authority fence. That is a real technical review contribution, **not authorship of the merged code**.
+
+The receiving PR was [merged on September 29](https://github.com/openclaw/openclaw/commit/f922f69fc1078757d9855b3941944804eb50f7ce). OpenClaw's [official v2026.9.7 release-notes page](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md) **explicitly credits `@Nakagawa-master` alongside #160136**. A separate release editor prepared that page in [#160933](https://github.com/openclaw/openclaw/pull/160933); [#162163](https://github.com/openclaw/openclaw/pull/162163) subsequently linked verified contributor handles to profiles. This is an official third-party published account credit, not the GitHub PR's automatic author label.
+
+**Confirmed:** A substantive review comment, the other developer's merged implementation, and named credit in the project's official release documentation. **Boundary:** The release notes explicitly state that unrelated *agent/store inventory* invalidation — the separate issue in Nakagawa Master's comment — was **outside the scope of this fix**. The editorial reasoning behind the credit is not public; do not infer that his additional suggestion was implemented in this PR, that its code was written by him, that users adopted it, or that maintainers read his [canonical original on the memory of agreement](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/).
+
+---
+
 ## What this page supports — and what it does not
 
 ### Supported by the linked public record
