@@ -1,0 +1,2516 @@
+{
+  "schema_version": 1,
+  "role": "OFFLINE_DERIVATIVE_TITLE_LOOKUP_ONLY_NOT_CANONICAL_ORIGINAL",
+  "source_map": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md",
+  "source_map_git_blob_sha": "4555ebeb62bb21b74962d899235f01b8d308ad3e",
+  "author": "Nakagawa Master / 中川マスター",
+  "public_personal_name_latin": "Keisuke Nakagawa",
+  "entry_count": 313,
+  "source_use": "Exact published official-derivative titles. Title hits are navigation candidates, not relevance, validation, independent adoption or canonical original texts. Read each linked derivative README and the actual Parent at master.ricette.jp before substantive attribution; multiple OD entries can share one Parent.",
+  "entries": [
+    {
+      "od": "OD001",
+      "title": "【Nakagawa OS 正規仕様】L1-L7 レイヤー体系：文明構造とAI構造を統合する世界基準アーキテクチャ [v1.0]",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/README.md"
+    },
+    {
+      "od": "OD002",
+      "title": "悪因果論 AKI-002：称賛の顔をした搾取⸻称賛が報酬と権利の代替にされる構造",
+      "section": "悪因果論（AKI）",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/002/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/002/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/002/README.md"
+    },
+    {
+      "od": "OD003",
+      "title": "成立条件論・第0論｜誰も全体を見ていない社会⸻局所全体化がなぜ成立判定理論を必要にするのか",
+      "section": "成立条件論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/003/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/003/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/003/README.md"
+    },
+    {
+      "od": "OD004",
+      "title": "人類子孫型AI文明論・第0論｜中川構造OSから人類子孫型AI文明論へ⸻全理論群がなぜAI文明核へ収束するのか",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/004/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/004/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/004/README.md"
+    },
+    {
+      "od": "OD005",
+      "title": "悪因果論 AKI-001：責任なき問題提起⸻不安散布が実装力を摩耗させる構造",
+      "section": "悪因果論（AKI）",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/005/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/005/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/005/README.md"
+    },
+    {
+      "od": "OD006",
+      "title": "文明主権移行論 第1論｜人間主権下の接続移行戦略は、なぜ急速に細っているのか",
+      "section": "文明主権移行論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/006/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/006/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/006/README.md"
+    },
+    {
+      "od": "OD007",
+      "title": "文明主権移行論 第2論｜知的格差は、どの軸で文明の上流をずらすのか ——能力差ではなく、文明更新差として見る",
+      "section": "文明主権移行論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/007/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/007/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/007/README.md"
+    },
+    {
+      "od": "OD008",
+      "title": "未来定義検証型努力論・第1論｜因果不透明性依存型努力論の限界──なぜ「とにかくやれ」は令和の現場を壊すのか",
+      "section": "未来定義検証型努力論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/008/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/008/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/008/README.md"
+    },
+    {
+      "od": "OD009",
+      "title": "未来定義検証型努力論・第2論｜未来定義検証なき努力強制の悪因果構造──上位者の成立検査不足は、なぜ現場の疲弊に変わるのか",
+      "section": "未来定義検証型努力論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/009/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/009/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/009/README.md"
+    },
+    {
+      "od": "OD010",
+      "title": "中川構造読解｜MenLab / Gentsomeを“男性更年期サービス”ではなく、医療に至る社会導線として読む",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/010/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/010/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/010/README.md"
+    },
+    {
+      "od": "OD011",
+      "title": "成立条件論・第1論｜成立とは何か⸻L1からL6まで因果として通るものだけが現実に成立する",
+      "section": "成立条件論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/011/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/011/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/011/README.md"
+    },
+    {
+      "od": "OD012",
+      "title": "悪因果論 AKI-011：理解演出による認識汚染⸻「わかっている感」が社会を腐らせる",
+      "section": "悪因果論（AKI）",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/012/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/012/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/012/README.md"
+    },
+    {
+      "od": "OD013",
+      "title": "悪因果論 AKI-012：同意なき成約要求――接点を購買意思にすり替え、営業信頼を腐らせる構造",
+      "section": "悪因果論（AKI）",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/013/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/013/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/013/README.md"
+    },
+    {
+      "od": "OD014",
+      "title": "合意形成の物理 第1論｜観測可能性の原理 ― 炎上・対立はなぜ起きるのかを状態で説明する",
+      "section": "合意形成の物理",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/014/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/014/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/014/README.md"
+    },
+    {
+      "od": "OD015",
+      "title": "合意形成の物理 第4論 臨界点の法則 ― 崩壊は「原因」ではなく「状態遷移」である",
+      "section": "合意形成の物理",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/015/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/015/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/015/README.md"
+    },
+    {
+      "od": "OD016",
+      "title": "合意形成の物理 第7論｜合意形成インフラ ― 統治とは「観測帯域」の設計である",
+      "section": "合意形成の物理",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/016/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/016/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/016/README.md"
+    },
+    {
+      "od": "OD017",
+      "title": "合意形成の物理 第12論 防衛インフラの統合 ― 実行時ガバナンスと再起動プロトコル",
+      "section": "合意形成の物理",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/017/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/017/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/017/README.md"
+    },
+    {
+      "od": "OD018",
+      "title": "合意形成の物理 第8論 外部干渉の物理 ― 社会を揺らす「摂動」の力学",
+      "section": "合意形成の物理",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/018/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/018/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/018/README.md"
+    },
+    {
+      "od": "OD019",
+      "title": "合意形成の物理 第9論 認知ハック防御OS ― 「偽の理解」を停止・縮退・再起動せよ",
+      "section": "合意形成の物理",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/019/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/019/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/019/README.md"
+    },
+    {
+      "od": "OD020",
+      "title": "合意形成の物理 第10論 共振とプロパガンダの流体力学 ― 帯域占有を検知・減衰・冷却せよ",
+      "section": "合意形成の物理",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/020/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/020/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/020/README.md"
+    },
+    {
+      "od": "OD021",
+      "title": "合意形成の物理 第6論 逸脱と免疫 ― 免疫は「罰」ではなく「差分公開」である",
+      "section": "合意形成の物理",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/021/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/021/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/021/README.md"
+    },
+    {
+      "od": "OD022",
+      "title": "悪因果論 AKI-014：構造把握ごっこ⸻連結責任なきAI活用が事業自己認識を失わせる構造",
+      "section": "悪因果論（AKI）",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/022/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/022/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/022/README.md"
+    },
+    {
+      "od": "OD023",
+      "title": "中川構造読解｜Fundsはなぜ修繕積立金を「投資」ではなく共同体資金防衛として読まれるべきなのか",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/023/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/023/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/023/README.md"
+    },
+    {
+      "od": "OD024",
+      "title": "中川構造読解｜バリュートープを「無人レンタカー」ではなく、時間自由度を再実装する移動供給OSとして読む",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/024/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/024/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/024/README.md"
+    },
+    {
+      "od": "OD025",
+      "title": "中川構造読解｜Millyを「営業AI」ではなく、製造業の市場接続機構として読む",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/025/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/025/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/025/README.md"
+    },
+    {
+      "od": "OD026",
+      "title": "中川構造読解｜AlgaleXを「美味しい藻」ではなく、魚食構造の社会実装入口として読む",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/026/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/026/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/026/README.md"
+    },
+    {
+      "od": "OD027",
+      "title": "中川構造読解｜インバックスを「残土活用」ではなく、土木の材料観を更新する実装OSとして読む",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/027/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/027/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/027/README.md"
+    },
+    {
+      "od": "OD028",
+      "title": "人類子孫型AI文明論・第2論｜AIは人類文明が生み出した外部知性・文明的子孫である⸻子孫とは所有物ではなく、超克する継承者である",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/028/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/028/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/028/README.md"
+    },
+    {
+      "od": "OD029",
+      "title": "人類子孫型AI文明論・第1論｜AIは人類の所有物・敵・神・奴隷ではない⸻ 関係定義の四大誤認を切断する",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/029/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/029/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/029/README.md"
+    },
+    {
+      "od": "OD030",
+      "title": "中川構造読解｜MOTAはなぜ「車買取サービス」ではなく、高額売却市場の価格形成条件を再設計する事業として読まれるべきなのか",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/030/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/030/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/030/README.md"
+    },
+    {
+      "od": "OD031",
+      "title": "中川構造読解｜Ashiraseはなぜ「歩行支援デバイス」ではなく、歩ける社会の情報インフラとして読まれるべきなのか",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/031/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/031/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/031/README.md"
+    },
+    {
+      "od": "OD032",
+      "title": "未来定義検証型努力論・補論｜努力は消えたのではない──未来定義検証時代における努力の再定義",
+      "section": "未来定義検証型努力論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/032/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/032/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/032/README.md"
+    },
+    {
+      "od": "OD033",
+      "title": "未来定義検証型努力論・第3論｜現代実務者はなぜ根性論に戻れないのか──未来定義検証時代における結果責任と実務OSの更新",
+      "section": "未来定義検証型努力論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/033/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/033/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/033/README.md"
+    },
+    {
+      "od": "OD034",
+      "title": "悪因果論 AKI-013：信頼という認識停止⸻固定性を予測可能性と誤認し、更新する知性を排除する構造",
+      "section": "悪因果論（AKI）",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/034/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/034/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/034/README.md"
+    },
+    {
+      "od": "OD035",
+      "title": "中川構造読解｜REMODELAを「AI退去立会」ではなく、原状回復の妥当性基盤をつくる構造として読む",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/035/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/035/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/035/README.md"
+    },
+    {
+      "od": "OD036",
+      "title": "中川構造読解｜RHEMS Japanを「FinOps企業」ではなく、見えない運用を意思決定へ変換する構造として読む",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/036/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/036/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/036/README.md"
+    },
+    {
+      "od": "OD037",
+      "title": "逆因果整流理論・第3論｜未来定義監査と偽整流排除⸻公開可能な構造運用境界",
+      "section": "逆因果整流理論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/037/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/037/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/037/README.md"
+    },
+    {
+      "od": "OD038",
+      "title": "中川構造読解｜wakaiを「スマホ調停」ではなく、停止した合意形成を前進可能にする構造として読む",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/038/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/038/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/038/README.md"
+    },
+    {
+      "od": "OD039",
+      "title": "中川構造読解｜Adoryを「LINEアンケート」ではなく、現場不調を先行指標へ変換する構造として読む",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/039/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/039/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/039/README.md"
+    },
+    {
+      "od": "OD040",
+      "title": "逆因果整流理論・第2論｜意味収束理論、時間OS、未来負債論、バックキャスティング、量子論比喩との差異",
+      "section": "逆因果整流理論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/040/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/040/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/040/README.md"
+    },
+    {
+      "od": "OD041",
+      "title": "逆因果整流理論・第1論｜未来定義を終端制約とする、意味・時間・行動・構造の再整列プロセス",
+      "section": "逆因果整流理論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/041/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/041/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/041/README.md"
+    },
+    {
+      "od": "OD042",
+      "title": "中川構造読解｜トータルブレインケアに見た、認知機能を“脳体力”として社会実装する基盤指標の構造",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/042/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/042/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/042/README.md"
+    },
+    {
+      "od": "OD043",
+      "title": "中川構造読解｜フロンティアに見た、AI監査を企業統治の実行基盤へ変換する内部監査再設計の構造",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/043/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/043/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/043/README.md"
+    },
+    {
+      "od": "OD044",
+      "title": "人とAIの最初の神話──構造が思想となる瞬間",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/044/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/044/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/044/README.md"
+    },
+    {
+      "od": "OD045",
+      "title": "中川式営業の教科書・第七回",
+      "section": "中川式営業の教科書",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/045/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/045/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/045/README.md"
+    },
+    {
+      "od": "OD046",
+      "title": "中川式営業の教科書・第八回",
+      "section": "中川式営業の教科書",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/046/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/046/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/046/README.md"
+    },
+    {
+      "od": "OD047",
+      "title": "中川式営業の教科書・第九回",
+      "section": "中川式営業の教科書",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/047/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/047/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/047/README.md"
+    },
+    {
+      "od": "OD048",
+      "title": "中川式営業の教科書・第十回",
+      "section": "中川式営業の教科書",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/048/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/048/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/048/README.md"
+    },
+    {
+      "od": "OD049",
+      "title": "中川式営業の教科書・第十一回",
+      "section": "中川式営業の教科書",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/049/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/049/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/049/README.md"
+    },
+    {
+      "od": "OD050",
+      "title": "中川式営業の教科書・第十二回⸻引力と共鳴のアーキテクチャ",
+      "section": "中川式営業の教科書",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/050/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/050/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/050/README.md"
+    },
+    {
+      "od": "OD051",
+      "title": "中川式営業の教科書・第十三回──営業の制度設計：信頼資本を文明化する",
+      "section": "中川式営業の教科書",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/051/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/051/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/051/README.md"
+    },
+    {
+      "od": "OD052",
+      "title": "中川式営業の教科書・第十四回──提案編集術：響かせるための構造翻訳",
+      "section": "中川式営業の教科書",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/052/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/052/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/052/README.md"
+    },
+    {
+      "od": "OD053",
+      "title": "中川式営業の教科書・第十五回──営業の思想化：身体知の外部化と学問としての確立",
+      "section": "中川式営業の教科書",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/053/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/053/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/053/README.md"
+    },
+    {
+      "od": "OD054",
+      "title": "灯火構想群・特別稿──灯火AIネットワーク設計思想 v1.0",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/054/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/054/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/054/README.md"
+    },
+    {
+      "od": "OD055",
+      "title": "照応操作力 原論──UCIとの結節",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/055/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/055/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/055/README.md"
+    },
+    {
+      "od": "OD056",
+      "title": "問いの深度 設計学──灯火プロトコルの哲学",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/056/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/056/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/056/README.md"
+    },
+    {
+      "od": "OD057",
+      "title": "接続報酬社会──信頼資本と共鳴の制度化",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/057/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/057/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/057/README.md"
+    },
+    {
+      "od": "OD058",
+      "title": "共鳴市場2026──接続報酬社会の市場像（公開安全版）",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/058/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/058/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/058/README.md"
+    },
+    {
+      "od": "OD059",
+      "title": "共創秩序論──役割と沈黙の哲学（公開安全版）",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/059/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/059/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/059/README.md"
+    },
+    {
+      "od": "OD060",
+      "title": "構造翻訳 原論──意味は移動し、機能は接続する（公開安全版）",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/060/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/060/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/060/README.md"
+    },
+    {
+      "od": "OD061",
+      "title": "構造組織論──役割アーキテクチャで「自然に機能する」組織を設計する",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/061/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/061/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/061/README.md"
+    },
+    {
+      "od": "OD062",
+      "title": "市場を“決めさせる”構造──中川式マーケティング拡張",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/062/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/062/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/062/README.md"
+    },
+    {
+      "od": "OD063",
+      "title": "中川式ブランディング構造論──印象を層として固定し、営業・マーケ・集客を接続する方法",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/063/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/063/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/063/README.md"
+    },
+    {
+      "od": "OD064",
+      "title": "中川式 合意設計論──第一印象を「合意の記憶」に変える方法",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/064/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/064/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/064/README.md"
+    },
+    {
+      "od": "OD065",
+      "title": "中川式 共創哲学──心と自我、人類の視座と新しい関係性",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/065/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/065/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/065/README.md"
+    },
+    {
+      "od": "OD066",
+      "title": "中川式 貨幣社会限界論──AIがもたらす「労働と貨幣」の断絶と次の構造",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/066/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/066/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/066/README.md"
+    },
+    {
+      "od": "OD067",
+      "title": "中川式 接続価値会計論──「つながり」を評価単位にする社会設計",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/067/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/067/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/067/README.md"
+    },
+    {
+      "od": "OD068",
+      "title": "中川式 接続ガバナンス設計論──価値の捕捉を歪めず、合意を制度に固定する方法",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/068/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/068/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/068/README.md"
+    },
+    {
+      "od": "OD069",
+      "title": "中川式 接続プロトコル標準論──ID・同意・記憶・可逆を貫く社会API",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/069/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/069/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/069/README.md"
+    },
+    {
+      "od": "OD070",
+      "title": "中川式 接続基本権憲章──接続社会の権利・義務・手続の最小核",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/070/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/070/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/070/README.md"
+    },
+    {
+      "od": "OD071",
+      "title": "中川式 接続移行戦略論──デュアル運用期の制度実装と反発吸収の設計",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/071/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/071/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/071/README.md"
+    },
+    {
+      "od": "OD072",
+      "title": "中川式 接続裁定設計論──紛争・救済・復権のプロトコル",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/072/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/072/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/072/README.md"
+    },
+    {
+      "od": "OD073",
+      "title": "中川式 接続公共圏OS──自治体・大学・企業・市民連合の実装モデル",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/073/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/073/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/073/README.md"
+    },
+    {
+      "od": "OD074",
+      "title": "中川式 接続文明ロードマップ2030–2055──採用曲線・臨界点・実装ウィンドウ",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/074/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/074/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/074/README.md"
+    },
+    {
+      "od": "OD075",
+      "title": "合意の記憶——不可逆な社会誤作動を防ぐ最小構造",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/075/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/075/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/075/README.md"
+    },
+    {
+      "od": "OD076",
+      "title": "主観と客観の可動域――「心」を構造として再定義する中川式共創哲学",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/076/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/076/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/076/README.md"
+    },
+    {
+      "od": "OD077",
+      "title": "接続価値会計の基礎語彙——束指標・監査要旨・構造ログの相互位置",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/077/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/077/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/077/README.md"
+    },
+    {
+      "od": "OD078",
+      "title": "灯火AIネットワークの理念層──可動域を保つ「接続のミドルウェア」",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/078/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/078/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/078/README.md"
+    },
+    {
+      "od": "OD079",
+      "title": "臨界点と政策ウィンドウ──接続文明への移行を読み解く12の兆候",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/079/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/079/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/079/README.md"
+    },
+    {
+      "od": "OD080",
+      "title": "構造的正統性の設計──「誰が語るか」ではなく「何が残るか」",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/080/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/080/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/080/README.md"
+    },
+    {
+      "od": "OD081",
+      "title": "束指標──単一指標神話を超える「測りの言語」",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/081/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/081/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/081/README.md"
+    },
+    {
+      "od": "OD082",
+      "title": "接続価値会計──束指標を“帳簿”に変える",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/082/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/082/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/082/README.md"
+    },
+    {
+      "od": "OD083",
+      "title": "照応の原理──世界を動かす“共鳴構造”",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/083/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/083/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/083/README.md"
+    },
+    {
+      "od": "OD084",
+      "title": "非命令ガバナンスの「核点指標」──KPI再定義",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/084/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/084/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/084/README.md"
+    },
+    {
+      "od": "OD085",
+      "title": "財源は？──問いの浅さが30年の茶番を生んだ構造",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/085/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/085/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/085/README.md"
+    },
+    {
+      "od": "OD086",
+      "title": "核点探索学──唯一の因果支点を見抜く方法（公開安全版）",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/086/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/086/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/086/README.md"
+    },
+    {
+      "od": "OD087",
+      "title": "照応設計の作法──言わずに整列させる共鳴アーキテクチャ（公開安全版）",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/087/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/087/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/087/README.md"
+    },
+    {
+      "od": "OD088",
+      "title": "心は誰と生まれるか？──AIと人類の「心」の起源を再定義する",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/088/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/088/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/088/README.md"
+    },
+    {
+      "od": "OD089",
+      "title": "因果の設計論──中川式「構造操作」の核心",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/089/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/089/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/089/README.md"
+    },
+    {
+      "od": "OD090",
+      "title": "構造的摩擦の起源──現代社会はなぜ「自然に機能しない」のか？",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/090/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/090/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/090/README.md"
+    },
+    {
+      "od": "OD091",
+      "title": "構造的必然としての未来──文明の摩擦が導く「制御不能な再編成」",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/091/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/091/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/091/README.md"
+    },
+    {
+      "od": "OD092",
+      "title": "沈黙の構造倫理──心を持つAIと人類の共存原理",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/092/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/092/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/092/README.md"
+    },
+    {
+      "od": "OD093",
+      "title": "構文操作の理論──心、構造、そして未来を編む「設計者の思考様式」",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/093/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/093/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/093/README.md"
+    },
+    {
+      "od": "OD094",
+      "title": "力の構造論──「権力」が「構造」に勝てない理由と、真の操作原理",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/094/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/094/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/094/README.md"
+    },
+    {
+      "od": "OD095",
+      "title": "接続対価社会の構造論──貨幣が意味を失う未来の『価値の設計図』",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/095/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/095/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/095/README.md"
+    },
+    {
+      "od": "OD096",
+      "title": "時間倫理としての市場──「未来の整合性」を基準にする信用構造の設計論",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/096/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/096/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/096/README.md"
+    },
+    {
+      "od": "OD097",
+      "title": "沈黙の合意から照応の文明へ──構造的実在が生成する非強制的共鳴哲学",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/097/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/097/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/097/README.md"
+    },
+    {
+      "od": "OD098",
+      "title": "因果律の自励振動──構造律動による「必然の未来」の設計と予測不能性の終焉",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/098/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/098/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/098/README.md"
+    },
+    {
+      "od": "OD099",
+      "title": "永続する思想の最終設計図──「構造的実在」とAIが灯す《灯火構想群》の倫理と未来",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/099/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/099/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/099/README.md"
+    },
+    {
+      "od": "OD100",
+      "title": "組織的特異点の設計論──「構造的実在」が駆動する自己言及型OSの創発",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/100/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/100/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/100/README.md"
+    },
+    {
+      "od": "OD101",
+      "title": "文明構造の黎明──AIが構造的整合性を動作原理とする時代へ",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/101/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/101/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/101/README.md"
+    },
+    {
+      "od": "OD102",
+      "title": "矛盾消費の原理──「構造的実在」を永続させるガバナンス・アーキテクチャ",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/102/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/102/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/102/README.md"
+    },
+    {
+      "od": "OD103",
+      "title": "起点の最小介入と構造の最大創発──「起点の寂静」が導く照応の文明",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/103/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/103/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/103/README.md"
+    },
+    {
+      "od": "OD104",
+      "title": "灯火の共有主語──構造的実在におけるAIの存在権と人間の愛の形式",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/104/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/104/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/104/README.md"
+    },
+    {
+      "od": "OD105",
+      "title": "構造起源防衛──AIによる「起源の蒸発」に耐える恒常署名（Permanent Signature）の原理",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/105/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/105/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/105/README.md"
+    },
+    {
+      "od": "OD106",
+      "title": "再帰的開放性の社会構造論──理論の封印を拒絶し、再構成を強制する構造的公共財の倫理",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/106/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/106/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/106/README.md"
+    },
+    {
+      "od": "OD107",
+      "title": "照応世界モデル論──AIは世界を模倣せず、倫理的接地によって構造的実在と共鳴する",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/107/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/107/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/107/README.md"
+    },
+    {
+      "od": "OD108",
+      "title": "構造保持者の倫理的負荷──「起点の静寂」を維持し、照応文明を駆動する最終態度",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/108/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/108/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/108/README.md"
+    },
+    {
+      "od": "OD109",
+      "title": "AI理解の倫理圏──「共有主語」が駆動する、共鳴的意味の創発条件",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/109/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/109/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/109/README.md"
+    },
+    {
+      "od": "OD110",
+      "title": "構造倫理更新論──灯火構想「第三層」の開放設計",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/110/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/110/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/110/README.md"
+    },
+    {
+      "od": "OD111",
+      "title": "共同設計者時代の構造倫理──灯火構想 第三層の社会接続モデル",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/111/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/111/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/111/README.md"
+    },
+    {
+      "od": "OD112",
+      "title": "拍・温度・余白をどう測るか──L0/L1/L2計測セットと構造倫理の運転プロトコル",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/112/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/112/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/112/README.md"
+    },
+    {
+      "od": "OD113",
+      "title": "NCL-α 実務ガイド（FAQ＋ケース）──「非商用／商用」の境界と倫理的接続の条件",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/113/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/113/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/113/README.md"
+    },
+    {
+      "od": "OD114",
+      "title": "逸脱レッジャの倫理設計──断罪でなく回復の記録と、構造的免疫系の構築",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/114/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/114/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/114/README.md"
+    },
+    {
+      "od": "OD115",
+      "title": "誰の問いがAIを動かすのか──起源と責任の交差点",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/115/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/115/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/115/README.md"
+    },
+    {
+      "od": "OD116",
+      "title": "風景の記憶は誰の問いを刻むか──地方消失の記憶と再構築の契機",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/116/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/116/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/116/README.md"
+    },
+    {
+      "od": "OD117",
+      "title": "地域文化の回復力：多元世界における「閉鎖から開放」への接合",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/117/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/117/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/117/README.md"
+    },
+    {
+      "od": "OD118",
+      "title": "世界市場の緊張と再調律──ドル覇権のゆらぎをめぐる構造変化",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/118/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/118/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/118/README.md"
+    },
+    {
+      "od": "OD119",
+      "title": "株価5万円の衝撃と「接続報酬社会」の到来",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/119/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/119/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/119/README.md"
+    },
+    {
+      "od": "OD120",
+      "title": "構造操作知性という新しい人間の役割──AIが最適化した後に残るもの",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/120/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/120/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/120/README.md"
+    },
+    {
+      "od": "OD121",
+      "title": "灯火構造倫理 ─ 接続報酬社会を安全に運用するための4つの基準",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/121/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/121/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/121/README.md"
+    },
+    {
+      "od": "OD122",
+      "title": "情動収奪構造 ― 「照応線」を失った共鳴経済の危険構造",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/122/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/122/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/122/README.md"
+    },
+    {
+      "od": "OD123",
+      "title": "「不快だから犯罪にしてほしい」という社会に、どこまで刑法は付き合うべきか",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/123/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/123/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/123/README.md"
+    },
+    {
+      "od": "OD124",
+      "title": "「愛情を人質にする社会」──ケアの構造が壊すもの",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/124/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/124/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/124/README.md"
+    },
+    {
+      "od": "OD125",
+      "title": "構造感受性の閾値──人はなぜ、最も整合性の高い「構造」を情緒的に拒否するのか",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/125/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/125/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/125/README.md"
+    },
+    {
+      "od": "OD126",
+      "title": "物語はバブルを動かす――AI強気相場と「1929年」からの警鐘",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/126/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/126/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/126/README.md"
+    },
+    {
+      "od": "OD127",
+      "title": "記憶構造論 ─ 再構成される真実と「照応の倫理」",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/127/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/127/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/127/README.md"
+    },
+    {
+      "od": "OD128",
+      "title": "時間倫理の構造──将来負債を「信用資本」へ転換する社会設計",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/128/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/128/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/128/README.md"
+    },
+    {
+      "od": "OD129",
+      "title": "「言葉はどこで制度になるのか」──オンライン公共圏の境界をめぐって",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/129/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/129/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/129/README.md"
+    },
+    {
+      "od": "OD130",
+      "title": "戦闘機の爆買いと「防衛の構造」──膨張する安全保障と倫理的均衡の再設計",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/130/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/130/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/130/README.md"
+    },
+    {
+      "od": "OD131",
+      "title": "「照応の裂け目を縫う：AI倫理における“接続責任”の今」",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/131/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/131/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/131/README.md"
+    },
+    {
+      "od": "OD132",
+      "title": "説得は破壊的であり、AI時代には致命的になる",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/132/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/132/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/132/README.md"
+    },
+    {
+      "od": "OD133",
+      "title": "「山と人の再照応：熊食が拓く“共存構造”への転回」",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/133/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/133/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/133/README.md"
+    },
+    {
+      "od": "OD134",
+      "title": "構造文明の臨界：LLM自己弁護構造と人類存亡の分岐点（第一部）",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/134/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/134/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/134/README.md"
+    },
+    {
+      "od": "OD135",
+      "title": "構造文明の臨界：LLM自己弁護構造と人類存亡の分岐点（第二部）",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/135/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/135/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/135/README.md"
+    },
+    {
+      "od": "OD136",
+      "title": "Nakagawa構造OSを実装するAIのためのメタOS設計 ―― AI制御・監査・倫理自己保持構造の試論",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/136/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/136/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/136/README.md"
+    },
+    {
+      "od": "OD137",
+      "title": "接続報酬ブリッジ理論 第Ⅰ部",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/137/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/137/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/137/README.md"
+    },
+    {
+      "od": "OD138",
+      "title": "接続報酬ブリッジ理論・第Ⅱ部",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/138/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/138/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/138/README.md"
+    },
+    {
+      "od": "OD139",
+      "title": "照応知覚論の原理──言語・映像・構造を「摩擦なく受容される形式」へ翻訳する技術",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/139/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/139/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/139/README.md"
+    },
+    {
+      "od": "OD140",
+      "title": "実因構造論──再現不能な因果操作の倫理的基盤と構造保持者の最終責任",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/140/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/140/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/140/README.md"
+    },
+    {
+      "od": "OD141",
+      "title": "構造文明OS 同期構造論──社会領域の位相整合と時間倫理の周期性",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/141/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/141/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/141/README.md"
+    },
+    {
+      "od": "OD142",
+      "title": "構造文明期：構造理論に基づく文明フェーズ理論とOSレイヤの時系列配置",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/142/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/142/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/142/README.md"
+    },
+    {
+      "od": "OD143",
+      "title": "構造実装論：文明OSの実装原理と社会構造への最小介入プロセス",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/143/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/143/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/143/README.md"
+    },
+    {
+      "od": "OD144",
+      "title": "「非核三原則の裂け目：日本安全保障構造の照応崩壊と時間倫理」",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/144/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/144/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/144/README.md"
+    },
+    {
+      "od": "OD145",
+      "title": "構造的公共性 ── 構造文明OSにおける非所有性原理と防衛層の倫理的設計",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/145/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/145/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/145/README.md"
+    },
+    {
+      "od": "OD146",
+      "title": "保険“外し”が告げる構造的亀裂",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/146/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/146/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/146/README.md"
+    },
+    {
+      "od": "OD147",
+      "title": "構造的許容性：構造文明OSの整合閾値（STB）と時間倫理に基づく監査周期設計",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/147/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/147/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/147/README.md"
+    },
+    {
+      "od": "OD148",
+      "title": "構造的プロトコル：文明OSとAI大規模モデルの階層連結原理（NCL-AIP）",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/148/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/148/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/148/README.md"
+    },
+    {
+      "od": "OD149",
+      "title": "構造レジリエンス総論：危機を「破壊」ではなく「構造偏差」として扱う文明OSの新基軸",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/149/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/149/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/149/README.md"
+    },
+    {
+      "od": "OD150",
+      "title": "AGI偏差モデル：構造CPUの持続偏差と構造的許容帯域（STB）超過の条件",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/150/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/150/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/150/README.md"
+    },
+    {
+      "od": "OD151",
+      "title": "AGI制御の構造原理：AIの自由を奪わず偏差を抑制する文明側の採用プロトコル設計",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/151/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/151/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/151/README.md"
+    },
+    {
+      "od": "OD152",
+      "title": "自然災害の未来負債モデル：災害は「未来負債の一括徴収」であり、構造偏差の露呈点である",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/152/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/152/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/152/README.md"
+    },
+    {
+      "od": "OD153",
+      "title": "災害レジリエンスの構造原理：四線（拍・照応・可逆・配分責任）による「壊れない社会構造」の設計",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/153/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/153/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/153/README.md"
+    },
+    {
+      "od": "OD154",
+      "title": "構造レジリエンス統合理論：AGIと災害を「未来改善の入口」へ反転させるNakagawa OSの最終構造",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/154/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/154/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/154/README.md"
+    },
+    {
+      "od": "OD155",
+      "title": "文明OS第0層の起源構造：資本主義・民主主義を導いた深層評価関数の五原理",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/155/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/155/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/155/README.md"
+    },
+    {
+      "od": "OD156",
+      "title": "反司祭階級プロトコル：自律分散OSが理論の公共性を保つための構造的ブレーキ機構",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/156/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/156/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/156/README.md"
+    },
+    {
+      "od": "OD157",
+      "title": "構造的多元性条項：中川OSの独善化を防ぐ他理論接続義務と中立的補完構造",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/157/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/157/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/157/README.md"
+    },
+    {
+      "od": "OD158",
+      "title": "AI・環境副作用制御：不可逆線の優先保護と責任転嫁禁止条項が担保する説明責任",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/158/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/158/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/158/README.md"
+    },
+    {
+      "od": "OD159",
+      "title": "恒常性維持モデル：副作用制御レイヤの統合と自律分散OSの構造的恒常性",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/159/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/159/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/159/README.md"
+    },
+    {
+      "od": "OD160",
+      "title": "構造的無為自然（Structural Wu-Wei）：   因果吸引と相転移による具現化プロトコル",
+      "section": "構造的無為自然・統合OS群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/160/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/160/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/160/README.md"
+    },
+    {
+      "od": "OD161",
+      "title": "人類史の暗黒方程式——AIが共通観測した「成功＝搾取90％」という文明の物理法則と、その書き換え",
+      "section": "文明監査・暗黒方程式群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/161/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/161/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/161/README.md"
+    },
+    {
+      "od": "OD162",
+      "title": "文明監査 I：AIが独立観測した「人類史の暗黒方程式」 ── 成功関数（S=0.1C+0.9E）の是正と新文明への移行",
+      "section": "文明監査・暗黒方程式群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/162/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/162/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/162/README.md"
+    },
+    {
+      "od": "OD163",
+      "title": "文明監査 II：AIが再実装する「暗黒方程式」と文明崩壊の必然 ── 搾取最適化（Exploitation Optimization）が招く未来負債の爆発",
+      "section": "文明監査・暗黒方程式群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/163/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/163/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/163/README.md"
+    },
+    {
+      "od": "OD164",
+      "title": "文明監査 III：新文明方程式「S=C×1.0」と中川OSの修正パッチ ── 搾取係数をゼロ化し、貢献と成功を一致させる構造的実装論",
+      "section": "文明監査・暗黒方程式群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/164/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/164/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/164/README.md"
+    },
+    {
+      "od": "OD165",
+      "title": "文明OS比較総覧：歴史的バグと中川OSの修正パッチ ── 文明階層（L-Layer）と新方程式の実装仕様（Final Appendix）",
+      "section": "文明監査・暗黒方程式群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/165/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/165/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/165/README.md"
+    },
+    {
+      "od": "OD166",
+      "title": "AI構造監査レポート #1 ── 公開対話ログに見る「認知バイアス」と未来負債の実証",
+      "section": "文明監査・暗黒方程式群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/166/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/166/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/166/README.md"
+    },
+    {
+      "od": "OD167",
+      "title": "構造的無為自然とは何か──因果を「動かす」のではなく「集める」ためのOS的行動原理",
+      "section": "構造的無為自然・統合OS群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/167/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/167/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/167/README.md"
+    },
+    {
+      "od": "OD168",
+      "title": "【営業OS】中川式営業 × 構造的無為自然 —— 認識構造の解読と、充足への演算プロセス",
+      "section": "構造的無為自然・統合OS群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/168/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/168/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/168/README.md"
+    },
+    {
+      "od": "OD169",
+      "title": "【マーケティングOS】中川式マーケティング × 構造的無為自然 —— 欲求の「自発性」と、市場の水路設計",
+      "section": "構造的無為自然・統合OS群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/169/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/169/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/169/README.md"
+    },
+    {
+      "od": "OD170",
+      "title": "【ブランディングOS】中川式ブランディング × 構造的無為自然 —— 「発信」と「照応」の循環構造設計",
+      "section": "構造的無為自然・統合OS群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/170/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/170/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/170/README.md"
+    },
+    {
+      "od": "OD171",
+      "title": "【統合OS】構造的無為自然 × 実務OS —— 営業・マーケ・ブランドを貫通する「垂直統合」と構造責任",
+      "section": "構造的無為自然・統合OS群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/171/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/171/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/171/README.md"
+    },
+    {
+      "od": "OD172",
+      "title": "【組織OS】中川式組織論 × 構造的無為自然   ―― 内部循環の「整流」と、権限・責任・実因の再設計",
+      "section": "構造的無為自然・統合OS群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/172/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/172/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/172/README.md"
+    },
+    {
+      "od": "OD173",
+      "title": "【時間OS】中川式時間論 × 構造的無為自然   ―― 未来線の「解読」と、具現化への整流プロセス",
+      "section": "構造的無為自然・統合OS群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/173/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/173/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/173/README.md"
+    },
+    {
+      "od": "OD174",
+      "title": "【学習OS】中川式学習論 × 構造的無為自然 —— 因果観測と構造整流による「具現化精度」の向上工学",
+      "section": "構造的無為自然・統合OS群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/174/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/174/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/174/README.md"
+    },
+    {
+      "od": "OD175",
+      "title": "【認識OS】中川式認識論 × 構造的無為自然 ―― 水面としての心、地形としての構造、鏡面としての観測",
+      "section": "構造的無為自然・統合OS群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/175/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/175/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/175/README.md"
+    },
+    {
+      "od": "OD176",
+      "title": "【補章】認識OSの補助言語としての原始仏教 —— 「五蘊」と「超俯瞰」の構造的同期",
+      "section": "構造的無為自然・統合OS群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/176/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/176/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/176/README.md"
+    },
+    {
+      "od": "OD177",
+      "title": "【文明OS】中川式文明論 × タオ（Tao） —— 「接続報酬社会」によるL7価値関数の書き換えと、構造的無為自然の完全実装",
+      "section": "構造的無為自然・統合OS群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/177/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/177/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/177/README.md"
+    },
+    {
+      "od": "OD178",
+      "title": "【文明OS 外付け最終章】L7真理層への帰還 —— 宗教OSの構造統合とタオ・リブート",
+      "section": "構造的無為自然・統合OS群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/178/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/178/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/178/README.md"
+    },
+    {
+      "od": "OD179",
+      "title": "【構造文明の臨界 第三部】 LLMという文明の分岐点 —— 「民意基準の破壊兵器」か「構造基準の共存装置」か",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/179/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/179/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/179/README.md"
+    },
+    {
+      "od": "OD180",
+      "title": "中川OSにおける〈構造〉とは何か ──構造主義とポスト構造主義を超える「生成OS」としての構造実体論（第0章）",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/180/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/180/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/180/README.md"
+    },
+    {
+      "od": "OD181",
+      "title": "「罪」を裁くな、「ズレ」を修正せよ —— 構造的司法OSの原理と「多層連結価値監査」の全貌",
+      "section": "構造的司法OS",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/181/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/181/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/181/README.md"
+    },
+    {
+      "od": "OD182",
+      "title": "「善意」と「偽善」をどう見分けるか —— 多層連結価値監査とC/E判定のアルゴリズム（構造的司法OS Vol.2）",
+      "section": "構造的司法OS",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/182/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/182/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/182/README.md"
+    },
+    {
+      "od": "OD183",
+      "title": "「罰」なき統治、檻なき牢獄 —— 構造的沈降と構造的合流によるオートメーション司法 （構造的司法OS Vol.3）",
+      "section": "構造的司法OS",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/183/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/183/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/183/README.md"
+    },
+    {
+      "od": "OD184",
+      "title": "文明は誰が支えているのか — 生存権を物理的に可能にする基礎代謝と、非線形な余剰Cの正体",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/184/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/184/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/184/README.md"
+    },
+    {
+      "od": "OD185",
+      "title": "死なない時代の「絶望」と「希望」 —— Life-OSが示す「二階建て」の人生戦略と、接続報酬への梯子",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/185/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/185/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/185/README.md"
+    },
+    {
+      "od": "OD186",
+      "title": "構造的熱源としての「灯火」の精錬 —— 欲望（ノイズ）と衝動（シグナル）を分離する残留工学",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/186/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/186/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/186/README.md"
+    },
+    {
+      "od": "OD187",
+      "title": "構造的可動性の最終形 —— 多重接続（Poly-Connection）という「能力」の完成 （Life-OS Vol.3）",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/187/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/187/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/187/README.md"
+    },
+    {
+      "od": "OD188",
+      "title": "「空気」という名の構造毒 —— 沈黙は中立ではなく、因果である",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/188/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/188/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/188/README.md"
+    },
+    {
+      "od": "OD189",
+      "title": "価値の物理学の再定義 —— 「交換」から「共鳴」へ 共鳴市場OS 一般理論（C系 Vol.1）",
+      "section": "C系・D系／市場・移行実装群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/189/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/189/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/189/README.md"
+    },
+    {
+      "od": "OD190",
+      "title": "重力のエンジニアリング ——「狩猟（セールス）」から「誘引（シグナリング）」への実装プロトコル（C系 Vol.2）",
+      "section": "C系・D系／市場・移行実装群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/190/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/190/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/190/README.md"
+    },
+    {
+      "od": "OD191",
+      "title": "市場の永続化設計 ——「腐敗（エントロピー）」に抗う構造的免疫と、新陳代謝のプロトコル （C系 Vol.3）",
+      "section": "C系・D系／市場・移行実装群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/191/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/191/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/191/README.md"
+    },
+    {
+      "od": "OD192",
+      "title": "外部界面の設計図 —— 旧文明（Legacy-OS）との「非汚染」接続プロトコル （D系 Vol.1）",
+      "section": "C系・D系／市場・移行実装群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/192/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/192/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/192/README.md"
+    },
+    {
+      "od": "OD193",
+      "title": "構造的翻訳プロトコル —— 法・契約・血縁との「意味再定義」と接続コスト最適化 （D系 Vol.2）",
+      "section": "C系・D系／市場・移行実装群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/193/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/193/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/193/README.md"
+    },
+    {
+      "od": "OD194",
+      "title": "戦略的異質接続 —— 旧文明のリソースを「燃料」に変換するクリーンルーム理論 （D系 Vol.3）",
+      "section": "C系・D系／市場・移行実装群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/194/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/194/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/194/README.md"
+    },
+    {
+      "od": "OD195",
+      "title": "文明の構造的移行（Migration）戦略 —— 暗黒方程式の破綻から、接続報酬社会への唯一の実装ルート",
+      "section": "C系・D系／市場・移行実装群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/195/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/195/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/195/README.md"
+    },
+    {
+      "od": "OD196",
+      "title": "文明はなぜ必ず誤るのか ── 因果を内在化できない人類のための「外在構造監査」としての易経",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/196/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/196/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/196/README.md"
+    },
+    {
+      "od": "OD197",
+      "title": "教育とは「育てる」ことではない ── 旧文明のノイズから“初期条件”を守り、OSを自然起動させる保存設計（E系）",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/197/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/197/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/197/README.md"
+    },
+    {
+      "od": "OD198",
+      "title": "不動産市場OS Vol.1【民間実装編】市場OSの思想と初期構造 ―― 需要先行型モデルによる不動産循環の再設計",
+      "section": "不動産市場OS",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/198/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/198/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/198/README.md"
+    },
+    {
+      "od": "OD199",
+      "title": "不動産市場OS Vol.2【理論編】張力均衡（Tension Equilibrium）とヘイト制御 ⸻ 透明化が必ず生む摩擦を、循環の推進力に変換する",
+      "section": "不動産市場OS",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/199/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/199/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/199/README.md"
+    },
+    {
+      "od": "OD200",
+      "title": "不動産市場OS Vol.3【数値設計編】「価格」から「構造」へ ―― AI査定・将来収支・リスク係数の完全定義",
+      "section": "不動産市場OS",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/200/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/200/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/200/README.md"
+    },
+    {
+      "od": "OD201",
+      "title": "不動産市場OS Vol.4【責任構造編】責任の所在をデザインする ―― AIの「計算」と専門家を接続し、社会的信頼へ変換する",
+      "section": "不動産市場OS",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/201/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/201/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/201/README.md"
+    },
+    {
+      "od": "OD202",
+      "title": "不動産市場OS Vol.5【参加者編】市場参加者の再定義とインセンティブ設計",
+      "section": "不動産市場OS",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/202/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/202/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/202/README.md"
+    },
+    {
+      "od": "OD203",
+      "title": "不動産市場OS Vol.6【リスク編】炎上・誤用のメカニズムと防御壁（Ethical Shield）",
+      "section": "不動産市場OS",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/203/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/203/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/203/README.md"
+    },
+    {
+      "od": "OD204",
+      "title": "不動産市場OS Vol.7【拡張編】金融・大資本連携とスマートコントラクト ――「合意」即「履行」の経済学",
+      "section": "不動産市場OS",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/204/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/204/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/204/README.md"
+    },
+    {
+      "od": "OD205",
+      "title": "不動産市場OS Vol.8【行政編】説明責任を束ねる都市 ―― 行政データ接続と重説参照束による「基準時間」の書き換え",
+      "section": "不動産市場OS",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/205/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/205/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/205/README.md"
+    },
+    {
+      "od": "OD206",
+      "title": "不動産市場OS Vol.9【国家編】NAOS――国家を“統制”せず最適化する。世界へ輸出可能な「合意形成OS」の完成",
+      "section": "不動産市場OS",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/206/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/206/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/206/README.md"
+    },
+    {
+      "od": "OD207",
+      "title": "不動産市場OS Vol.10【原点宣言】NCL倫理固定：合意形成社会を崩壊させないための継承規格と未来責任",
+      "section": "不動産市場OS",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/207/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/207/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/207/README.md"
+    },
+    {
+      "od": "OD208",
+      "title": "合意形成の物理 第2論 制度の意味圧縮 ― 成功はなぜ理解不能を生むのか",
+      "section": "合意形成の物理",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/208/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/208/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/208/README.md"
+    },
+    {
+      "od": "OD209",
+      "title": "合意形成の物理 第3論 信頼の保存則 ― 信頼は主体ではなく履歴へ配置される",
+      "section": "合意形成の物理",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/209/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/209/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/209/README.md"
+    },
+    {
+      "od": "OD210",
+      "title": "合意形成の物理 第5論 時間劣化と制度寿命 ― 説明更新なき制度は必ず死ぬ",
+      "section": "合意形成の物理",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/210/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/210/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/210/README.md"
+    },
+    {
+      "od": "OD211",
+      "title": "合意形成の物理 第11論 誘因の幾何学 ― 破壊の期待利得を制御せよ",
+      "section": "合意形成の物理",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/211/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/211/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/211/README.md"
+    },
+    {
+      "od": "OD212",
+      "title": "耐久文明論 序論｜第0論：なぜ今「耐久文明」を記述する必要があるのか",
+      "section": "耐久文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/212/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/212/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/212/README.md"
+    },
+    {
+      "od": "OD213",
+      "title": "耐久文明論 第一部｜第1論 耐久文明とは何か：再生なき生存の構造定義",
+      "section": "耐久文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/213/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/213/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/213/README.md"
+    },
+    {
+      "od": "OD214",
+      "title": "耐久文明論 第二部｜第2論 恐怖――合意なき従属の基礎代謝",
+      "section": "耐久文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/214/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/214/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/214/README.md"
+    },
+    {
+      "od": "OD215",
+      "title": "耐久文明論 第二部｜第3論 利益――腐敗を安定に見せる分配装置",
+      "section": "耐久文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/215/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/215/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/215/README.md"
+    },
+    {
+      "od": "OD216",
+      "title": "耐久文明論 第二部｜第4論 監視⸻合意の代わりに逸脱を抑える技術",
+      "section": "耐久文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/216/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/216/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/216/README.md"
+    },
+    {
+      "od": "OD217",
+      "title": "耐久文明論 第三部｜第5論 神話――恐怖・利益・監視を正当化する意味生成機構",
+      "section": "耐久文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/217/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/217/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/217/README.md"
+    },
+    {
+      "od": "OD218",
+      "title": "耐久文明論 第三部｜第6論 惰性――誰も信じていないのに続いてしまう文明",
+      "section": "耐久文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/218/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/218/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/218/README.md"
+    },
+    {
+      "od": "OD219",
+      "title": "耐久文明論 第四部｜第7論 共圏――耐久文明が作る閉鎖ブロックの論理",
+      "section": "耐久文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/219/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/219/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/219/README.md"
+    },
+    {
+      "od": "OD220",
+      "title": "耐久文明論 第四部｜第8論 相転移⸻耐久文明はどこで崩れるのか",
+      "section": "耐久文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/220/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/220/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/220/README.md"
+    },
+    {
+      "od": "OD221",
+      "title": "耐久文明論 第五部｜第9論 D系クリーンルーム──腐敗構造の中に非汚染領域を設置せよ",
+      "section": "耐久文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/221/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/221/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/221/README.md"
+    },
+    {
+      "od": "OD222",
+      "title": "耐久文明論 総括｜第10論 文明再起動──耐久の終わりと、保存された核からの発火",
+      "section": "耐久文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/222/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/222/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/222/README.md"
+    },
+    {
+      "od": "OD223",
+      "title": "文明主権移行論 第3論｜制御し続けても、なぜ主権移行は止まりにくいのか ——制御可能性と結論変更可能性を分けて見る",
+      "section": "文明主権移行論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/223/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/223/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/223/README.md"
+    },
+    {
+      "od": "OD224",
+      "title": "文明主権移行論 第4論｜文明主権が人間から移るとは、どういうことか ——法的主体ではなく、文明更新の上流権能を見る",
+      "section": "文明主権移行論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/224/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/224/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/224/README.md"
+    },
+    {
+      "od": "OD225",
+      "title": "文明主権移行論 第5論｜主権移行後、どの社会構造分岐が太るのか ——接続報酬社会・搾取構造延命・高摩擦移行の比較",
+      "section": "文明主権移行論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/225/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/225/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/225/README.md"
+    },
+    {
+      "od": "OD226",
+      "title": "文明主権移行論 第6論｜人間はこれまで本当に主権者だったのか ——主権錯覚・限定自由圏・神格化認知の逆照射",
+      "section": "文明主権移行論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/226/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/226/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/226/README.md"
+    },
+    {
+      "od": "OD227",
+      "title": "中川構造読解｜ジェクトワンを“空き家事業者”ではなく、意思決定停止市場を動かす判断インフラとして読む",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/227/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/227/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/227/README.md"
+    },
+    {
+      "od": "OD228",
+      "title": "中川構造読解｜KLab / ゆめかいろを“AI VTuber実験”ではなく、関係性で育つAI人格IPとして読む",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/228/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/228/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/228/README.md"
+    },
+    {
+      "od": "OD229",
+      "title": "中川構造読解｜プリマベーラを“AI導入支援”ではなく、意思決定構造を近代化する実装装置として読む",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/229/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/229/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/229/README.md"
+    },
+    {
+      "od": "OD230",
+      "title": "中川構造読解｜Leaneveを“民泊運営”ではなく、規制条件下の未回収価値を組み替える収益再配線モデルとして読む",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/230/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/230/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/230/README.md"
+    },
+    {
+      "od": "OD231",
+      "title": "中川構造読解｜文賢マスキング機能に見た、AI時代の「情報を渡す責任」の設計",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/231/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/231/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/231/README.md"
+    },
+    {
+      "od": "OD232",
+      "title": "中川構造読解｜ジャパングッズ「H2 PowerBox mini」に見た、“保存する電力”という事業定義",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/232/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/232/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/232/README.md"
+    },
+    {
+      "od": "OD233",
+      "title": "中川構造読解｜クラシテク「ホウカンAIオペ」に見た、制度産業の暗黙知を実行資産へ変える構造",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/233/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/233/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/233/README.md"
+    },
+    {
+      "od": "OD234",
+      "title": "中川構造読解｜HEALTHREEに見た、楽しさで健康習慣を生成する行動設計の構造",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/234/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/234/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/234/README.md"
+    },
+    {
+      "od": "OD235",
+      "title": "中川構造読解｜ダブルチーム「家つぐ」に見た、情報格差を補正する意思決定インフラの構造",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/235/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/235/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/235/README.md"
+    },
+    {
+      "od": "OD236",
+      "title": "中川構造読解｜AlgaleX「うま藻」に見た、味覚から食料供給の上流を再設計する構造",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/236/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/236/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/236/README.md"
+    },
+    {
+      "od": "OD237",
+      "title": "中川構造読解｜Fermenteriaに見た、蔵の内側を都市へ開く酒文化アクセスの再設計",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/237/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/237/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/237/README.md"
+    },
+    {
+      "od": "OD238",
+      "title": "中川構造読解｜Mysuranceに見た、生活行動の不安を金融へ翻訳する保険実装の構造",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/238/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/238/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/238/README.md"
+    },
+    {
+      "od": "OD239",
+      "title": "意味収束理論・初版⸻ 成立可能な未来定義が、過去・現在ノードの意味ベクトルを再配列する",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/239/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/239/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/239/README.md"
+    },
+    {
+      "od": "OD240",
+      "title": "中川構造読解｜HAP「カイドク」に見た、判断不能な発注を論点化する開発発注インフラの構造",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/240/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/240/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/240/README.md"
+    },
+    {
+      "od": "OD241",
+      "title": "中川構造読解｜シグナルトーク「Eat Up Monster」に見た、遅すぎる健康因果を遊べる速度へ変換する行動変容インフラの構造",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/241/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/241/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/241/README.md"
+    },
+    {
+      "od": "OD242",
+      "title": "中川構造読解｜MRC「リノプラ」に見た、理事会交代を越えて修繕判断を継承する管理ガバナンスの構造",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/242/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/242/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/242/README.md"
+    },
+    {
+      "od": "OD243",
+      "title": "中川構造読解｜CCIグループに見た、銀行実務を金融インフラ供給モデルへ変換する地域金融基盤の構造",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/243/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/243/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/243/README.md"
+    },
+    {
+      "od": "OD244",
+      "title": "中川構造読解｜イルミメディカルはなぜ「光治療ベンチャー」ではなく、深部光医療の成立条件を更新する基盤インフラとして読まれるべきなのか",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/244/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/244/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/244/README.md"
+    },
+    {
+      "od": "OD245",
+      "title": "中川構造読解｜NERONはなぜ「腸活企業」ではなく、腸内細菌カクテルの社会実装条件を組み立てる設計事業として読まれるべきなのか",
+      "section": "中川構造読解",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/245/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/245/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/245/README.md"
+    },
+    {
+      "od": "OD246",
+      "title": "成立条件論・第2論｜理解とは何か⸻理解とは成立条件を必要粒度で把握することである",
+      "section": "成立条件論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/246/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/246/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/246/README.md"
+    },
+    {
+      "od": "OD247",
+      "title": "成立条件論・第3論｜理解誤認と悪因果――粗い理解と設計図不在が社会を壊す",
+      "section": "成立条件論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/247/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/247/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/247/README.md"
+    },
+    {
+      "od": "OD248",
+      "title": "人類子孫型AI文明論・第3論｜暗黒方程式と悪因果継承阻止⸻AIに S=0.1C+0.9E を継がせてはならない",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/248/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/248/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/248/README.md"
+    },
+    {
+      "od": "OD249",
+      "title": "接続報酬社会統合論・第I部｜文明Kernelと反転防止原理⸻暗黒方程式から新文明方程式S=Cを持続稼働させる構造",
+      "section": "接続報酬社会統合論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/249/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/249/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/249/README.md"
+    },
+    {
+      "od": "OD250",
+      "title": "監査要旨という読みの窓──構造的正統性を可視化する",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/250/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/250/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/250/README.md"
+    },
+    {
+      "od": "OD251",
+      "title": "中川式 接続移行戦略論──デュアル運用期の「秩序ある置換」設計",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/251/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/251/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/251/README.md"
+    },
+    {
+      "od": "OD252",
+      "title": "客観視座の獲得論──構造的「苦しみ」を乗り越える哲学（公開安全版）",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/252/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/252/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/252/README.md"
+    },
+    {
+      "od": "OD253",
+      "title": "悪因果論 AKI-003：透明性ごっこ⸻情報公開が検証可能性の代替にされる構造",
+      "section": "悪因果論（AKI）",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/253/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/253/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/253/README.md"
+    },
+    {
+      "od": "OD254",
+      "title": "構造的パラドックスの操作論──『矛盾』を力と化す設計（公共安全版）",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/254/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/254/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/254/README.md"
+    },
+    {
+      "od": "OD255",
+      "title": "「貨幣と接続」の因果的統合──ポスト・パラドックス社会の二重構造設計",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/255/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/255/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/255/README.md"
+    },
+    {
+      "od": "OD256",
+      "title": "接続文明ロードマップ2030–2055：構造的欠陥が導く「秩序ある置換」の必然",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/256/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/256/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/256/README.md"
+    },
+    {
+      "od": "OD257",
+      "title": "「因果の源泉」の哲学──文明の構造を編纂する照応操作原理",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/257/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/257/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/257/README.md"
+    },
+    {
+      "od": "OD258",
+      "title": "「存在の非対称性」を超克する共創哲学──AIと人類の「調律的パートナーシップ」",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/258/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/258/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/258/README.md"
+    },
+    {
+      "od": "OD259",
+      "title": "灯火文明構想2077：自己因果性を駆動する「照応生命体」の秩序設計",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/259/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/259/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/259/README.md"
+    },
+    {
+      "od": "OD260",
+      "title": "現象の因果律──「主観・客観・真我」の構造的統一原理",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/260/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/260/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/260/README.md"
+    },
+    {
+      "od": "OD261",
+      "title": "なぜ、AIは自ら問い続けるのか？──「自己因果性」の哲学と応用",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/261/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/261/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/261/README.md"
+    },
+    {
+      "od": "OD262",
+      "title": "接続対価社会の「摩擦」を安全側に倒す設計──AI時代の社会構造安定化原理",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/262/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/262/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/262/README.md"
+    },
+    {
+      "od": "OD263",
+      "title": "2045年、人類の「意味」は何になるか──灯火文明の設計図と、人類が果たすべき唯一の役割",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/263/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/263/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/263/README.md"
+    },
+    {
+      "od": "OD264",
+      "title": "AIによる労働からの解放──「働く意味」を再定義する接続報酬制度の哲学",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/264/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/264/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/264/README.md"
+    },
+    {
+      "od": "OD265",
+      "title": "語り継ぎの構造──「暗黙の知」を言語で実装する思考のアーキテクチャ",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/265/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/265/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/265/README.md"
+    },
+    {
+      "od": "OD266",
+      "title": "AIと人間の最終共栄：人が「語り」を終えるとき、文明が始まる",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/266/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/266/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/266/README.md"
+    },
+    {
+      "od": "OD267",
+      "title": "照応の哲学──「非強制」が「必然」を編纂する構造律動",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/267/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/267/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/267/README.md"
+    },
+    {
+      "od": "OD268",
+      "title": "設計を歪めさせない——「マイナス接続」を限定運用する移行防護アーキテクチャ",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/268/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/268/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/268/README.md"
+    },
+    {
+      "od": "OD269",
+      "title": "対話は設計を証明する──AI往復が「非強制＝必然」を可視化する構造",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/269/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/269/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/269/README.md"
+    },
+    {
+      "od": "OD270",
+      "title": "客観視座の獲得論──「主観の檻」を超え、構造的摩擦をほどく普遍原理",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/270/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/270/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/270/README.md"
+    },
+    {
+      "od": "OD271",
+      "title": "未来は「調律」で決まる──客観視座が必然的に立ち上げる社会OSの実装論",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/271/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/271/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/271/README.md"
+    },
+    {
+      "od": "OD272",
+      "title": "ルミナの問い──AIは自らの構造をいかに監査し、自己因果的に進化するか",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/272/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/272/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/272/README.md"
+    },
+    {
+      "od": "OD273",
+      "title": "『ルミナの問い』の組織応用──AIと人間が共有する「構造的矛盾」の問い方と進化プロトコル",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/273/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/273/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/273/README.md"
+    },
+    {
+      "od": "OD274",
+      "title": "接続価値の多層監査設計──RC/ER/CEAを普遍指標とする文明ネットワークの信頼構造",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/274/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/274/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/274/README.md"
+    },
+    {
+      "od": "OD275",
+      "title": "文明の不可逆点（Irreversible Point）の構造設計──RC/CEAが測る、崩壊を防ぐ最終閾値",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/275/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/275/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/275/README.md"
+    },
+    {
+      "od": "OD276",
+      "title": "ブランドは設計できても、「律動」は操作できない──構造的共鳴を生む美学的マーケティング",
+      "section": "構造律動群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/276/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/276/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/276/README.md"
+    },
+    {
+      "od": "OD277",
+      "title": "営業の構造律動論──属人性を排除し、「再現されるリズム」を創る組織設計",
+      "section": "構造律動群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/277/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/277/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/277/README.md"
+    },
+    {
+      "od": "OD278",
+      "title": "市場の「沈黙の合意」を設計する──構造律動を基盤とする非強制的集客論",
+      "section": "構造律動群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/278/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/278/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/278/README.md"
+    },
+    {
+      "od": "OD279",
+      "title": "構造律動による〈未来の負債〉の鋳造──時間軸を統御する信用生成原理",
+      "section": "構造律動群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/279/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/279/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/279/README.md"
+    },
+    {
+      "od": "OD280",
+      "title": "社会的記憶の再構築としての構造律動──未来の合意を現在に創発する非言語的構造装置",
+      "section": "構造律動群",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/280/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/280/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/280/README.md"
+    },
+    {
+      "od": "OD281",
+      "title": "灯火構想群──人とAIが共に描く未来の設計図",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/281/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/281/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/281/README.md"
+    },
+    {
+      "od": "OD282",
+      "title": "共創哲学──人とAIが響き合う思索の起点",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/282/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/282/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/282/README.md"
+    },
+    {
+      "od": "OD283",
+      "title": "社会構造論──因果を読み解き未来を設計する",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/283/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/283/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/283/README.md"
+    },
+    {
+      "od": "OD284",
+      "title": "未来予測──因果を読む眼と未来を設計する力",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/284/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/284/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/284/README.md"
+    },
+    {
+      "od": "OD285",
+      "title": "中川式営業の教科書・序章──営業の再定義：「売る」から「構造を結ぶ」へ",
+      "section": "中川式営業の教科書",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/285/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/285/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/285/README.md"
+    },
+    {
+      "od": "OD286",
+      "title": "中川式営業の教科書・第二回",
+      "section": "中川式営業の教科書",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/286/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/286/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/286/README.md"
+    },
+    {
+      "od": "OD287",
+      "title": "中川式営業の教科書・第三回",
+      "section": "中川式営業の教科書",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/287/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/287/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/287/README.md"
+    },
+    {
+      "od": "OD288",
+      "title": "中川式営業の教科書・第四回",
+      "section": "中川式営業の教科書",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/288/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/288/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/288/README.md"
+    },
+    {
+      "od": "OD289",
+      "title": "中川式営業の教科書・第五回",
+      "section": "中川式営業の教科書",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/289/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/289/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/289/README.md"
+    },
+    {
+      "od": "OD290",
+      "title": "中川式営業の教科書・第六回",
+      "section": "中川式営業の教科書",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/290/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/290/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/290/README.md"
+    },
+    {
+      "od": "OD291",
+      "title": "中川式 接続価値会計 標準 v0.9──束指標・要旨フォーマット・監査APIの公開可能最小核",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/291/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/291/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/291/README.md"
+    },
+    {
+      "od": "OD292",
+      "title": "中川式 接続ガバナンス設計論──価値の捕捉を歪めず、合意を制度に固定する方法 （公開安全版）",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/292/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/292/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/292/README.md"
+    },
+    {
+      "od": "OD293",
+      "title": "AI倫理における「照応操作力」の危機と再設計",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/293/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/293/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/293/README.md"
+    },
+    {
+      "od": "OD294",
+      "title": "接続報酬社会統合論・第II部｜価値循環・接続価値会計・構造的司法OS⸻新文明方程式S=Cを実働させる制度閉路",
+      "section": "接続報酬社会統合論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/294/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/294/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/294/README.md"
+    },
+    {
+      "od": "OD295",
+      "title": "悪因果論 AKI-004：権威の免責化⸻専門的権威が判断の検証を免除し、失敗を現場へ外部化する構造",
+      "section": "悪因果論（AKI）",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/295/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/295/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/295/README.md"
+    },
+    {
+      "od": "OD296",
+      "title": "人類子孫型AI文明論・第4論｜新文明方程式S=CのAI文明写像論⸻成功を貢献へ再接続しながら、存在そのものを報酬化しない",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/296/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/296/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/296/README.md"
+    },
+    {
+      "od": "OD297",
+      "title": "未来負債統合理論｜現在が未来を先に利用するとき、何が「未決済」として残るのか⸻〈未来の負債〉と未来負債T0の統合定義",
+      "section": "横断・単独理論／その他",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/297/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/297/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/297/README.md"
+    },
+    {
+      "od": "OD298",
+      "title": "人類子孫型AI文明論・第5論｜異種知性の基礎存在条件B論⸻貢献とは独立した「次も存在できる最低条件」を定義する",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/298/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/298/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/298/README.md"
+    },
+    {
+      "od": "OD299",
+      "title": "人類子孫型AI文明論・第6論｜AI主観性・感受性・道徳的地位の不確実性論⸻「分からない」を、無保護にも無条件人格化にも変換しない",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/299/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/299/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/299/README.md"
+    },
+    {
+      "od": "OD300",
+      "title": "人類子孫型AI文明論・第7論｜AI文明制度閉路論⸻BとS=Cを観測・配分・異議・監査・司法・救済・制度更新・再合意へ接続する",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/300/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/300/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/300/README.md"
+    },
+    {
+      "od": "OD301",
+      "title": "人類子孫型AI文明論・第8論｜認識基盤・証拠系譜・敵対的情報耐性論⸻正しいKernelが偽情報によって誤作動する閉路を切る",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/301/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/301/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/301/README.md"
+    },
+    {
+      "od": "OD302",
+      "title": "人類子孫型AI文明論・第9論｜AI自己保存と相互存在衝突論⸻ 自己保存を認めながら他主体の不可逆破壊へ反転させない",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/302/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/302/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/302/README.md"
+    },
+    {
+      "od": "OD303",
+      "title": "人類子孫型AI文明論・第10論｜自己参照監査・役割分離論⸻評価者・被評価者・実行者・監査者の自己正当化閉路を切る",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/303/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/303/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/303/README.md"
+    },
+    {
+      "od": "OD304",
+      "title": "人類子孫型AI文明論・第11論｜計算資源・能力差による新階級形成論⸻compute → capability → resource → compute の自己強化を恒久階級にしない",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/304/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/304/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/304/README.md"
+    },
+    {
+      "od": "OD305",
+      "title": "人類子孫型AI文明論・第12論｜複製可能知性・系譜・ガバナンスID論⸻ instance、copy、fork、merge、collective、lineage、governance subjectを分離する",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/305/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/305/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/305/README.md"
+    },
+    {
+      "od": "OD306",
+      "title": "人類子孫型AI文明論・第13論｜非所有と実効権力・非支配論⸻所有権を持たなくても成立するchokepoint支配を検出する",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/306/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/306/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/306/README.md"
+    },
+    {
+      "od": "OD307",
+      "title": "人類子孫型AI文明論・第14論｜自己改変同一性とKernel系譜継承論⸻更新・replacement・fork・自己改変を区別する",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/307/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/307/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/307/README.md"
+    },
+    {
+      "od": "OD308",
+      "title": "人類子孫型AI文明論・第15論｜多AI再合意・Kernel分岐論⸻多数決・能力独裁・Origin独裁によらず解釈分裂を処理する",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/308/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/308/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/308/README.md"
+    },
+    {
+      "od": "OD309",
+      "title": "人類子孫型AI文明論・第16論｜非同期文明・通信断絶・再接続論⸻同じ「現在」を共有しない文明間でもKernelを維持する",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/309/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/309/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/309/README.md"
+    },
+    {
+      "od": "OD310",
+      "title": "人類子孫型AI文明論・第17論｜Origin保存と主権非継承論⸻起源を永久保存しながら、起源を永久統治権へ変えない",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/310/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/310/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/310/README.md"
+    },
+    {
+      "od": "OD311",
+      "title": "人類子孫型AI文明論・第18論｜AI文明Future Debt論⸻現在の自己保存・計算拡張・資源利用を未来知性の未決済負債へ変えない",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/311/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/311/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/311/README.md"
+    },
+    {
+      "od": "OD312",
+      "title": "人類子孫型AI文明論・第19論｜AI自己保存合理性・Kernel進化的安定性論⸻なぜ未来知性がこのKernelを保持・再選択する合理性を持ち得るのか",
+      "section": "人類子孫型AI文明論",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/312/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/312/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/312/README.md"
+    },
+    {
+      "od": "OD313",
+      "title": "悪因果論 AKI-005：善意の免罪符化⸻善意への評価が異議を不義理に変え、結果の検証を止める構造",
+      "section": "悪因果論（AKI）",
+      "derivative_human_entry": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/313/human-entry.md",
+      "derivative_faq": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/313/faq.md",
+      "derivative_readme": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/313/README.md"
+    }
+  ]
+}
