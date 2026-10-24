@@ -1448,6 +1448,20 @@ Qwen Code的TypeScript构建失败，是因为测试专用权限中介缺少必�
 
 ---
 
+## 50. LangGraph｜第二个子图恢复执行时，可能把第一个子图的答案当成自己的结果
+
+**真实问题：** [LangGraph issue #9253](https://github.com/langchain-ai/langgraph/issues/9253) 报告：父节点先调用 RESEARCH 再调用 REVIEW，失败重试与恢复后，后者可能读取前者保存的 checkpoint。**调用位置相同，不等于子图的真实身份相同。**
+
+[中川マスター提出了改变子图调用顺序的反向测试](https://github.com/langchain-ai/langgraph/issues/9253#issuecomment-6074292557)：简单地在每次重试时重置计数器，虽可能修复固定顺序的原例，却可能让另一个子图在相同位置读取错误的旧checkpoint。独立开发者 [`jayzuccarelli` 实际运行这个变体](https://github.com/langchain-ai/langgraph/issues/9253#issuecomment-6077084784)，报告采用计数器重置时得到 RESEARCH，REVIEW没有真正运行；未改动的 main 在这个变序案例中返回REVIEW。这是接收方的独立执行验证，而非仅转述原评论。
+
+**第三方的后续行动：** [`JimmyLiujx`](https://github.com/langchain-ai/langgraph/issues/9253#issuecomment-6251059545) 介绍了本人编写的本地修复候选：区分子图身份与调用序号、在checkpoint元数据中核对真实身份，并检验进程重建时的命名持久性。其本人报告**2770项测试通过、43项跳过**，包括SQLite跨两个进程的检验。这些是本地结果，不是官方合并的CI。[另一位`Hs1000`](https://github.com/langchain-ai/langgraph/issues/9253#issuecomment-6382408223)报告在LangGraph 1.2.17下，尝试一次返回REVIEW，三次则返回RESEARCH的额外复现情况。
+
+**截至2026年10月24日：** [PR #9279](https://github.com/langchain-ai/langgraph/pull/9279) 因外部贡献者尚未获Issue分配被自动关闭，**未合并**。新的身份绑定方案尚停留在开发者报告的本地候选阶段；旧checkpoint缺少身份信息时的兼容策略、上游接受、发布及生产使用仍需核实。本例与[第40例中并行interrupt恢复造成已完成节点重新执行](#40-langgraph已完成的并行节点不应因另一中断恢复而重复执行)属于不同问题。
+
+**可以核实的现实变化：** 中川マスター给出的具体反例被其他开发者真正运行，用来区分不安全的简单修补与需要继续验证的身份绑定；后续实现及测试成果属于各自开发者。不能据此推断外部开发者已经阅读整套原论、官方代码已经修复发布，或无关联AI已自主采用原典。可自主比较中川マスター的[《合意の记忆》原典](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)，但这里的程序分析是单独的技术应用。
+
+---
+
 ## 本页可以支持什么结论，以及不能支持什么结论
 
 ### 公开记录能够支持的内容
