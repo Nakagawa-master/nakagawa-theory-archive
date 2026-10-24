@@ -19,7 +19,7 @@
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
 **起点:** [PostHog/posthog#92252](https://github.com/PostHog/posthog/pull/92252) の Nakagawa-master review  
-**現在状態:** 元PR #92252は2026-09-28にclosed unmerged。authorが後続stackへの置換を明記し、outcome measurementは [#107879](https://github.com/PostHog/posthog/pull/107879)、測定evidence surfaceは [#107795](https://github.com/PostHog/posthog/pull/107795)、suggestion/action側は [#107802](https://github.com/PostHog/posthog/pull/107802) へ移行。3PRはいずれも2026-10-02にmasterへmergeされ、dev / prod-us / prod-euへのdeploymentも確認済み。ただしfeature flag / held-back rollout配下で、customer availabilityや実利用は未確認。
+**現在状態:** **開発側が作り直した3件の後続PRは、2026年10月2日にすべてmasterへマージ**され、dev・米国／欧州の本番環境へのデプロイも記録されています。元の[#92252](https://github.com/PostHog/posthog/pull/92252)は、その実装を後続へ移すため**2026年9月28日に未マージでクローズ**されました。開発者が置換先を明記した結果、成果はoutcome measurement [#107879](https://github.com/PostHog/posthog/pull/107879)、独立した計測とevidence表示 [#107795](https://github.com/PostHog/posthog/pull/107795)、提案とaction [#107802](https://github.com/PostHog/posthog/pull/107802)へ分かれています。**ただし**feature flagで公開が制限されており、顧客が利用できたことや実利用は未確認です。
 
 PostHogのworkflow scoutは、AIがworkflow改善案と数値的なevidenceを人に提示する仕組みです。
 
