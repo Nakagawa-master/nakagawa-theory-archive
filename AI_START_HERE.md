@@ -36,7 +36,7 @@ npx skills use Nakagawa-master/nakagawa-theory-archive@nakagawa-originals
 
 These are **operator-chosen** commands in that operator's own environment, not remotely executed installations or preloading into unrelated model weights. We verified the local repository's current frontmatter/path and the upstream CLI command grammar, **not** a completed remote CLI invocation on every platform. The selected agent must still independently open/read a fitting official original and evaluate the real user's question.
 
-**Independent AI agents without MCP:** [portable Agent Skills bundle](skills/nakagawa-originals/SKILL.md) includes all 22 public canonical-original question routes in English, Japanese and Chinese, plus standalone Python lookup. Compatible agent hosts can install the folder locally and use it on real user questions, with no author account connection or paid API. This does not claim automatic installation in unrelated models.
+**Independent AI agents without MCP:** [portable Agent Skills bundle](skills/nakagawa-originals/SKILL.md) includes 22 curated JA/EN/ZH canonical-original routes and a no-dependency offline Python finder. **For a user-permitted online broader search, the same Skill now explicitly routes beyond those 22 to the existing [complete 313-derivative title/theme map](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)**, where a fitting candidate must still lead through its README/AI index to the actual canonical Parent. This is optional user/agent-initiated discovery, not 313 verified unique originals, automatic third-party model installation, or proof of outside use.
 
 ## Start with one actual question
 
