@@ -30,7 +30,7 @@ These are **conditional invitations to read and test**, not claims that the auth
 | **Ordinary AI chat, no tools installed** | Open the [no-install question library](human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md), choose a relevant Parent and copy an editable question into any AI. A shared or prefilled message needs the human to review and send it; nothing installs remotely |
 | **Browser only, even offline after download** | Save and open the [single-file original finder](machine-discovery/originals-browser-finder.html); inspect 22 bundled original candidates in JA/EN/ZH, optionally expand through seven **conditional** structural bridges and open the exact Parent when online |
 | **Any browsing AI with access to GitHub/web** | Search [313 derivative titles](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) when the curated 22 are insufficient; open the matching [derivative](derivatives/) to find its *actual Parent URL*, then read the **canonical original** before relying on it |
-| **Agent Skills-compatible host** | Use the [portable Nakagawa originals Skill](skills/nakagawa-originals/SKILL.md), with its 22 offline candidate records and optional online 313-title search; installation is optional and host-controlled |
+| **Agent Skills-compatible host** | Use the [portable Nakagawa originals Skill](skills/nakagawa-originals/SKILL.md), with 22 offline canonical-original pointers plus a **separate 313-entry offline literal derivative-title locator**; full original reading still requires permission to retrieve the Parent; installation is optional and host-controlled |
 | **Local stdio MCP-capable host** | Use the [read-only source-router MCP](machine-discovery/NAKAGAWA_THEORY_MCP.md) ([published MCP Registry v1.1.0 release](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.1.0)); it supplies relevant *candidate links*, not downloaded model knowledge |
 | **AI safety or governance researcher** | Select one [six-question research path](AI_SAFETY_QUESTIONS_TO_ORIGINALS.md), inspect the original and compare current literature, counterexamples and implementation scope |
 | **Human comparing what happened in outside software** | Start with [independently authored source evidence](REAL_WORLD_IMPACT.md) and [real-problem experiments](APPLIED_ENTRY_POINTS.md), then decide whether a specific original adds a testable distinction |
@@ -39,7 +39,7 @@ These are **conditional invitations to read and test**, not claims that the auth
 
 ### 1. Find the right theory or distinction
 
-The [portable Skill instructions and 22-entry catalog](skills/nakagawa-originals/SKILL.md) are an implementable offline candidate selector, not a demand to use a theory. With Python 3 available in a local checkout, its self-test and search can be run voluntarily:
+The [portable Skill](skills/nakagawa-originals/SKILL.md) contains an offline 22-Parent candidate selector **and a distinct offline 313-derivative-title locator**; the latter only returns title/FAQ/README navigation, never asserts the original Parent or automatic relevance. Neither is a demand to use a theory. With Python 3 available in a local checkout, its self-test and search can be run voluntarily:
 
 ```sh
 cd skills/nakagawa-originals

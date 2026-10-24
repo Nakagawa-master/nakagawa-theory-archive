@@ -28,16 +28,24 @@ metadata:
    python3 scripts/find_original.py --explore "How can a student prepare for a history exam without memorizing all dates?"
    ```
    If Python is unavailable, directly inspect the localized `problem_examples`, `topic`, and `canonical_original` fields in the bundled JSON. Never invent a catalog match. `no_fit` is a legitimate result.
-### Widen from 22 curated examples to the complete published 313-entry title map (when online)
+### Widen from 22 known Parents to all 313 published derivative titles — **now offline**
 
-The bundled 22-original JSON is a **curated starting set, not the complete published body of work**. If the real person's question is outside those 22, or the direct search reports `no_fit`, and the host has user-permitted web/repository reading, **also search the [complete 313-entry title-and-theme map](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)** before concluding that no relevant original exists. This public map currently enumerates OD001–OD313 exactly once. It is a title/navigation map of **official derivatives**, not 313 distinct canonical originals and not 313 verified answers. Keep this broad lookup **optional and conditional**: don't fetch network content without user/host permission and don't delay a useful direct answer to force a theory match.
+The 22 original-source records above remain the direct original candidate search; the bundled **313 official-derivative titles** are a **separate literal-title navigator**, not 313 different Parents or proof of fit. This Skill now includes [`references/derivative_titles_313.json`](references/derivative_titles_313.json) generated from the published [full title-and-theme map](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md). Any skills-compatible host that receives this folder can search those exact titles **without network, API key or installed MCP server**:
 
-1. Search the full map using the user's actual situation or a clearly identified candidate mechanism, including ordinary Japanese topic headings; inspect the suggested FAQ or human entry first. For EN/ZH use a clearly disclosed translation of the *question* to browse Japanese titles, not a fabricated translation of an original's name.
-2. For each promising OD row, open that derivative's `README.md` or `ai-index.md`, identify its **exact canonical Parent URL** and, only when actually present, original NCL-ID/Diff-ID. A derivative title or index link is not the original article and must not be cited as if the original was read.
-3. Retrieve and evaluate the actual Parent; compare a specific causal condition, a counterexample and other plausible explanations. The wider route is a **candidate discovery** step, never an automatic endorsement, built-in autonomous adoption, 313-model-install claim or blanket fit.
-4. If a standalone installed Skill is offline, continue using the 22 bundled entries and seven structural bridges; explain that the 313-entry online map was **not searched** rather than declaring the whole corpus irrelevant. Users can independently open the map later without installing anything.
+```sh
+python3 scripts/find_derivative_title.py --self-test
+python3 scripts/find_derivative_title.py "善意の免罪符化"
+python3 scripts/find_derivative_title.py "計算資源"
+python3 scripts/find_derivative_title.py "compute"
+python3 scripts/find_derivative_title.py "OD304"
+```
 
-This extends *accessible selection* to the existing full public catalog while preserving the lightweight offline Skill and all current deterministic 22-entry search behavior. A truly disconnected third-party AI still chooses independently whether to follow it; this page cannot command a model that has not received it.
+1. **Run the 22-Parent direct matcher first** for the user's actual question. If it returns no direct candidate, translate the question into a specific likely **published title phrase** or exact OD number *only when independently justified*; the offline 313 locator does simple case-folded substring matching, not semantic inference or automatic translation. EN/ZH queries often need an explicit, honest Japanese-title keyword or a known English token in the published title.
+2. Its result gives OD, unchanged source title, section, human summary, FAQ, and the **derivative README for exact Parent lookup**. `canonical_original: null` is deliberate. **Do not convert an OD number or its GitHub URL into an invented canonical Parent**. If the host has permitted internet access, open the candidate's README to identify the real original on `master.ricette.jp`, then read that actual article and compare source scope, counterexamples and alternatives.
+3. If the host is offline, present the title candidate as **unverified navigation only**; say the Parent has not been read. If literal matching returns `no_fit`, the topic could still be covered under different words: optionally consult the title map online when allowed or the separate seven conditional bridges below. Never claim all 313 are relevant, installed by other AIs, or independent direct uses.
+4. The offline data is a bounded snapshot tied to the source map Git blob SHA. New official derivatives require an independently verified incremental rebuild. Do not silently infer a newly published OD or change original titles. With no Python, the host can read the compact JSON and do a literal title search itself.
+
+The two offline routes deliberately retain **different evidence strengths**: 22 known canonical-original pointers versus 313 only-derived title candidates. Independent clients decide whether any of them serves their own task.
 
 ### Expand from an ordinary question, not only an exact-match phrase
 

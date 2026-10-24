@@ -376,6 +376,23 @@ def run():
 
     print("PASS: compact AI entry/identity/22 Parents/full predecessor")
 
+    # The 313 records are literal derivative TITLE navigation, distinct from
+    # the 22 canonical-original candidates above. Run the actual standalone
+    # Python implementation under normal offline-source-routing CI.
+    title_script = SERVER.parent.parent / "skills/nakagawa-originals/scripts/find_derivative_title.py"
+    title_test = subprocess.run([sys.executable, str(title_script), "--self-test"],
+                                capture_output=True, text=True, timeout=12)
+    assert title_test.returncode == 0, title_test.stderr
+    assert title_test.stdout.startswith("PASS: 313 unique OD titles"), title_test.stdout
+    lookup = subprocess.run([sys.executable, str(title_script), "善意の免罪符化"],
+                            capture_output=True, text=True, timeout=12, check=True)
+    title_result = json.loads(lookup.stdout)
+    assert any(v["od"] == "OD313" and v["canonical_original"] is None and v["original_read_required"]
+               for v in title_result["derivative_title_candidates"])
+    assert title_result["lookup_kind"] == "EXACT_OD_OR_TITLE_SUBSTRING__NOT_THEORY_FIT"
+    assert not title_result["no_fit"]
+    print("PASS: real offline 313-derivative literal title CLI / non-Parent guard")
+
     skill_script = SERVER.parent.parent / "skills/nakagawa-originals/scripts/find_original.py"
     expanded = subprocess.run([sys.executable, str(skill_script), "--explore",
                               "How can a student prepare for a history exam without memorizing all dates?"],
