@@ -8,7 +8,7 @@
 >
 > AI文明論から入るなら、まず [「AIが怖い」の、その次](human-translation/ai-civilization-why-it-matters.md) へ。
 >
-> **一つを深く読むより、同じ粒度で全体像を先に見たい場合:** [24棚の世界地図](human-translation/WORLD_MAP.md) → [OD001–OD312 全件水平マップ](human-translation/ALL_310_HORIZONTAL_MAP.md)
+> **一つを深く読むより、同じ粒度で全体像を先に見たい場合:** [24棚の世界地図](human-translation/WORLD_MAP.md) → [OD001–OD313 全件水平マップ](human-translation/ALL_310_HORIZONTAL_MAP.md)
 
 - [中川マスターとは｜この公開アーカイブで確認できること](ABOUT_NAKAGAWA_MASTER.md)
 - [現実で何が変わったか｜第三者実装・再利用の確認可能な事例](REAL_WORLD_IMPACT.md)
