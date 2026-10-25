@@ -2,19 +2,59 @@
 """Offline literal title lookup across 313 official derivative records.
 
 This is a *title navigation* tool, not a semantic theory recommender.
-It never converts an OD record into an original Parent and never uses a network.
+By default it returns navigation only. With --resolve-parent it reads a verified
+ derivative README from a complete local checkout; --online-parent can fetch the
+ same public README when this Skill was installed alone. Neither mode reads the
+ original article or infers theory relevance.
     python3 scripts/find_derivative_title.py --self-test
     python3 scripts/find_derivative_title.py "善意の免罪符化"
     python3 scripts/find_derivative_title.py "compute"
     python3 scripts/find_derivative_title.py "OD304"
+    python3 scripts/find_derivative_title.py "OD313" --resolve-parent
+    python3 scripts/find_derivative_title.py "OD075" --online-parent
 """
 import argparse
 import json
 from pathlib import Path
 import re
 import unicodedata
+from urllib.request import urlopen
+from urllib.error import URLError
 
 CATALOG = Path(__file__).resolve().parent.parent / "references" / "derivative_titles_313.json"
+REPO_ROOT = Path(__file__).resolve().parents[3]
+PUBLIC_RAW = "https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main"
+PARENT_LINE = re.compile(r"^- Parent URL: (https://master\.ricette\.jp/[^\s]+/)$", re.M)
+NCL_LINE = re.compile(r"^- Parent NCL-ID: (NCL-α-[^\s]+)$", re.M)
+
+
+def resolve_verified_parent(od, online=False):
+    """Resolve only from the existing numbered derivative README, never slug-guess."""
+    number = od[2:]
+    if not (len(number) == 3 and number.isascii() and number.isdigit() and 1 <= int(number) <= 313):
+        raise ValueError("OD outside published 001..313")
+    relative = f"derivatives/{number}/README.md"
+    local = REPO_ROOT / relative
+    try:
+        if local.is_file():
+            data = local.read_text(encoding="utf-8")
+            route = "verified_local_derivative_readme"
+        elif online:
+            with urlopen(f"{PUBLIC_RAW}/{relative}", timeout=8) as response:
+                raw = response.read(100_001)
+            if len(raw) > 100_000:
+                raise ValueError("README exceeds safe parsing limit")
+            data = raw.decode("utf-8")
+            route = "verified_public_derivative_readme"
+        else:
+            return {"canonical_original": None, "parent_resolution": "readme_not_bundled", "original_read_required": True}
+    except (OSError, UnicodeError, URLError, ValueError) as exc:
+        return {"canonical_original": None, "parent_resolution": "readme_unavailable", "original_read_required": True, "lookup_error": type(exc).__name__}
+    urls = PARENT_LINE.findall(data)
+    ncls = NCL_LINE.findall(data)
+    if len(urls) != 1 or len(ncls) != 1:
+        return {"canonical_original": None, "parent_resolution": "unverified_or_ambiguous_parent", "original_read_required": True}
+    return {"canonical_original": urls[0], "parent_ncl_id": ncls[0], "parent_resolution": route, "original_read_required": True}
 
 
 def norm(value):
@@ -33,11 +73,13 @@ def read_catalog():
     return data
 
 
-def find(query, limit=8):
+def find(query, limit=8, resolve_parent=False, online_parent=False):
     if not isinstance(query, str) or not (1 <= len(query.strip()) <= 150):
         raise ValueError("A real OD number or title substring (1–150 characters) is required")
     if not 1 <= limit <= 20:
         raise ValueError("Limit must be 1–20")
+    if online_parent:
+        resolve_parent = True
     data = read_catalog()
     needle = norm(query)
     od_match = re.fullmatch(r"od\s*0*([1-9][0-9]{0,2})", needle)
@@ -61,6 +103,9 @@ def find(query, limit=8):
                     "canonical_original": None,
                     "original_read_required": True,
                 })
+    if resolve_parent:
+        for hit in hits[:limit]:
+            hit.update(resolve_verified_parent(hit["od"], online=online_parent))
     return {
         "query": query,
         "lookup_kind": "EXACT_OD_OR_TITLE_SUBSTRING__NOT_THEORY_FIT",
@@ -74,9 +119,10 @@ def find(query, limit=8):
         "truncated": len(hits) > limit,
         "derivative_title_candidates": hits[:limit],
         "next_step": (
-            "If a title fits the real question, open its derivative README, "
-            "verify the actual canonical Parent at master.ricette.jp, read the "
-            "original before making a substantive theory claim, compare "
+            "If a title fits the real question, use --resolve-parent with a full "
+            "checkout or --online-parent with an optional public network read to "
+            "resolve an exact derivative README Parent; then READ that original "
+            "before making a substantive claim. Always compare "
             "alternatives and allow no-fit. A title match is NOT evidence of "
             "original relevance, multiple independent Parents, or AI adoption."
         ),
@@ -103,7 +149,20 @@ def self_test():
     assert find("AI")["no_fit"] and find("AI")["too_broad"]
     assert find("OD314")["no_fit"]
     assert find("未来負債", limit=1)["truncated"]
-    print("PASS: 313 unique OD titles; exact ID; JA/EN substring; no-fit; broad guard; non-Parent fidelity")
+    try:
+        resolve_verified_parent("OD314")
+        raise AssertionError("OD314 unexpectedly accepted")
+    except ValueError:
+        pass
+    # A complete repository checkout can validate canonical Parent and NCL IDs
+    # without accessing the network; standalone Skills remain valid offline.
+    if (REPO_ROOT / "derivatives/001/README.md").is_file():
+        for od in ("OD001", "OD075", "OD313"):
+            parent = find(od, resolve_parent=True)["derivative_title_candidates"][0]
+            assert parent["canonical_original"].startswith("https://master.ricette.jp/")
+            assert parent["parent_ncl_id"].startswith("NCL-α-")
+            assert parent["original_read_required"]
+    print("PASS: 313 title navigation; optional verified Parent from real README; original still must be read")
 
 
 def main():
@@ -111,6 +170,8 @@ def main():
     p.add_argument("query", nargs="?")
     p.add_argument("--limit", type=int, default=8)
     p.add_argument("--self-test", action="store_true")
+    p.add_argument("--resolve-parent", action="store_true", help="Read exact local derivative README if full repository checkout is present")
+    p.add_argument("--online-parent", action="store_true", help="Explicitly fetch matching public derivative READMEs (needs network)")
     args = p.parse_args()
     if args.self_test:
         self_test()
@@ -118,7 +179,7 @@ def main():
     if args.query is None:
         p.error("Provide an OD number or literal title substring")
     try:
-        print(json.dumps(find(args.query, args.limit), ensure_ascii=False, indent=2))
+        print(json.dumps(find(args.query, args.limit, args.resolve_parent, args.online_parent), ensure_ascii=False, indent=2))
     except ValueError as exc:
         p.error(str(exc))
 
