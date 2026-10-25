@@ -62,6 +62,14 @@ AIに何日もかけて話した仕事、迷い、約束。アプリを更新し
 
 中川マスターの[第8論『認識基盤・証拠系譜・敵対的情報耐性論』](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)に立ち戻れば、**情報が同じに見えることと、その情報がどの経路から来て有効なのかは違う**、という問いを他分野にも展開できます。また[『構造起源防衛・恒常署名』](https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/)は、要約・再利用で生まれた内容と元の起源をどう区別し保持するかを考える原典です。ここでは、理論に照らした独立の応用例として、この具体的な受領印の仕組みと比べられます。
 
+## AIが「考えていない」のか、途中で情報が消えたのか？
+
+**画面には答えが出るのに、推論の途中経過や二つ目のツール操作が消え、利用トークン数まで0になる。** [独立したLiteLLM利用者 `amine-lah` の実例](https://github.com/BerriAI/litellm/issues/48238)では、Vertex上の推論モデルが生データでは送っていた情報が、別の経路を通したときだけ欠けました。単に「モデルに推論能力がない」と決めつけると、原因を取り違えます。
+
+中川マスターは[生のSSE → 解析後のチャンク → 最終クライアント](https://github.com/BerriAI/litellm/issues/48238#issuecomment-6391960701)を別々に照合する試験を提案しました。独立開発者 `Rajasimhareddybolla` は[実際に原因を再現し、自分の修正PR #48307を作成](https://github.com/BerriAI/litellm/issues/48238#issuecomment-6397536277)。推論だけの断片・同時の複数ツール呼び出し・使用量を引き継ぐコードとテストを追加しています。その後の[中川マスターによる追加レビュー](https://github.com/BerriAI/litellm/pull/48307#pullrequestreview-5643215302)では、書式CIの実際の失敗と、別々のフレームに分割された引数の再現条件を指摘しました。現段階では開発PRの修正・受入れ途中です。
+
+**自分のAIで比較するなら：** 「応答が見えない」「推論がない」「操作が失われた」を同義語にせず、入力・各経由地点・出力を照合する。第8論[『認識基盤・証拠系譜・敵対的情報耐性論』の原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)を、証拠の所在と帰属を考える別の参照点として独立に比較できます。開発者が原典を読んだという未確認の関係や、原典がこのバグを予言したという主張はしません。
+
 ## AIが同じファイルを59回読み直したら？
 
 **25分半、AIは同じファイルを59回連続で読み、59回とも「前回から変更なし」という419バイトの結果を受け取っていました。** 外部の利用者 `Andrea-Bruno` が[Qwen Codeで実際に起きたループ](https://github.com/QwenLM/qwen-code/issues/15526)を報告しています。合計では同じ引数の読み取りが70回あり、この59回の間に編集もコマンド実行もなかったと、報告者はセッション記録で照合しました。開発側の[トリアージは設定とコードの原因を独自に確認](https://github.com/QwenLM/qwen-code/issues/15526#issuecomment-6397137890)しましたが、実行再現や修正の完了を発表したわけではありません。
