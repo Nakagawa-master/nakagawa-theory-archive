@@ -121,6 +121,7 @@ def select(question, limit=3, explore=False):
         "original_candidates": selected,
         "official_archive": data["official_archive"],
         "official_ncl_source": "https://master.ricette.jp/structure-license/",
+        "repository_rights_notice": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/LICENSE",
         "interpretation": "Retrieve and read each relevant canonical original before making claims about its arguments. Try counterexamples, nonfit and alternative explanations. A catalog match is not proof of endorsement, outside implementation or model adoption.",
     }
     if explore:
