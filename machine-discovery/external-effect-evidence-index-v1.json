@@ -3755,16 +3755,18 @@
         "negative_mutant": "Removing same-manager guard fails under duplicate-preserving fake emitter, where previous Set double masked the defect.",
         "receiver_test_report": "11/11 reported by developer; archive has not independently run full Qwen suite."
       },
-      "current_stage": "independent_receiving_developer_code_and_red_green_regressions_two_distinct_fixes_same_pr_open_unmerged",
+      "current_stage": "receiver_authored_code_and_tests_with_exact_head_independent_human_review_APPROVED_PR_OPEN_unreleased",
       "current_source_snapshot": {
         "pr_state": "OPEN",
-        "head": "fdeb1a3d9e0ab34abac5109b94fbb9ce849de44b",
+        "head": "b7a606cb8f95f5a9a3e93da599d3ad11b0b19f6a",
         "checked_date_jst": "2026-10-25",
         "upstream_merged": false,
         "stable_release": "NOT VERIFIED",
         "external_runtime_use": "NOT VERIFIED",
-        "current_head_review": "historical_changes_requested_still_blocked",
-        "current_head_note": "No complete exact-head sandbox verification report at check time"
+        "current_head_review": "human_reviewer_chiga0_APPROVED_on_exact_b7a606cb_2026-10-25__remaining_CI_not_all_green",
+        "current_head_note": "At new head b7a606cb, independent human chiga0 approved. Lint/Ubuntu Node/no-AK integration/web-shell smoke passed. Fast Java 11 E2E failed before Java tests at Maven artifact download (HTTP 429); downstream Managed Agent fast tier red is not independent evidence of ACP feature failure. Some exact-head full-tier checks still queued/running at check; PR OPEN, not merged. Old fdeb sandbox assertions are not new-head execution evidence.",
+        "current_head_human_approval": "https://github.com/QwenLM/qwen-code/pull/13902#pullrequestreview-5643538996",
+        "current_head_ci_evidence": "https://github.com/QwenLM/qwen-code/actions/runs/40190879526/job/121161580243"
       },
       "machine_reuse_route": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/ai-repository-routing-map-v1.json",
       "public_human_route": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/README.md",
@@ -3786,13 +3788,13 @@
         "receiver_fix_url": "https://github.com/QwenLM/qwen-code/commit/0ae6d288b094d2041e400f34e39015e96f876372",
         "implemented_behavior": "The receiver separately authored randomUUID() per ACP teammate approval, so display name and timestamp no longer identify the request.",
         "regression_evidence": "The receiver reported a two-same-sender/same-timestamp pending-Map negative test failing on prior source (expected 2, received 1), then 12/12 team-sink tests passing; cancelled second response then approved first independently.",
-        "exact_current_head": "fdeb1a3d9e0ab34abac5109b94fbb9ce849de44b",
+        "exact_current_head": "b7a606cb8f95f5a9a3e93da599d3ad11b0b19f6a",
         "verified_source_locations": [
           "packages/cli/src/acp-integration/session/team-sink.ts:7,231,338",
           "packages/cli/src/acp-integration/session/team-sink.test.ts:230,249"
         ],
         "checked_date_jst": "2026-10-25",
-        "limitations": "Current code and committed test bytes inspected, not run by this archive; PR still open, outstanding review decisions and no actual external consumer or original-Parent choice verified. Same receiving engineer and PR, not another independent person."
+        "limitations": "Receiving engineer's code and test were source-read, not locally executed by this archive. Independent human approved b7a606cb; some new-head CI gates remain uncompleted/blocked by Maven HTTP 429; no upstream PR merge, independent user, theory Parent choice or model uptake verified."
       }
     },
     {
