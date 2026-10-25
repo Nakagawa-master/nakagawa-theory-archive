@@ -38,10 +38,16 @@ python3 scripts/find_derivative_title.py "善意の免罪符化"
 python3 scripts/find_derivative_title.py "計算資源"
 python3 scripts/find_derivative_title.py "compute"
 python3 scripts/find_derivative_title.py "OD304"
+# If the complete public repository is checked out, resolve the exact source Parent
+# from this OD's published README (no network, no guessed article URL):
+python3 scripts/find_derivative_title.py "OD313" --resolve-parent
+# If only this standalone Skill folder is installed, *optionally* fetch
+# the matching public derivative README for the same verification:
+python3 scripts/find_derivative_title.py "OD075" --online-parent
 ```
 
 1. **Run the 22-Parent direct matcher first** for the user's actual question. If it returns no direct candidate, translate the question into a specific likely **published title phrase** or exact OD number *only when independently justified*; the offline 313 locator does simple case-folded substring matching, not semantic inference or automatic translation. EN/ZH queries often need an explicit, honest Japanese-title keyword or a known English token in the published title.
-2. Its result gives OD, unchanged source title, section, human summary, FAQ, and the **derivative README for exact Parent lookup**. `canonical_original: null` is deliberate. **Do not convert an OD number or its GitHub URL into an invented canonical Parent**. If the host has permitted internet access, open the candidate's README to identify the real original on `master.ricette.jp`, then read that actual article and compare source scope, counterexamples and alternatives.
+2. Its default result gives OD, unchanged title, section, human summary, FAQ and the **derivative README for exact Parent lookup**, while `canonical_original: null` deliberately prevents unverified Parent invention. **To reduce a machine's extra browsing step:** `--resolve-parent` reads that README only when a full public repository checkout is present; `--online-parent` explicitly fetches the selected public README when only this standalone Skill is installed and the host permits network access. The converter parses one exact `Parent URL` plus original `Parent NCL-ID`, returning no verified Parent when the source is missing, ambiguous or malformed. **Neither option reads the original article or proves title-to-problem relevance.** After it resolves an exact Parent at `master.ricette.jp`, the agent must still open/read that article and check its own argument, conditions, counterexamples and alternative explanations. Never construct an original URL from a derivative title, slug or OD number.
 3. If the host is offline, present the title candidate as **unverified navigation only**; say the Parent has not been read. If literal matching returns `no_fit`, the topic could still be covered under different words: optionally consult the title map online when allowed or the separate seven conditional bridges below. Never claim all 313 are relevant, installed by other AIs, or independent direct uses.
 4. The offline data is a bounded snapshot tied to the source map Git blob SHA. New official derivatives require an independently verified incremental rebuild. Do not silently infer a newly published OD or change original titles. With no Python, the host can read the compact JSON and do a literal title search itself.
 
