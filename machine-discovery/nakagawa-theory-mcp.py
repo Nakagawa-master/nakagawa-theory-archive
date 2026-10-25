@@ -259,6 +259,7 @@ def answer_question(question, explore=False):
         "canonical_archive": data.get("canonical_archive"),
         "person_origin": data.get("person_origin"),
         "official_ncl_source": "https://master.ricette.jp/structure-license/",
+        "repository_rights_notice": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/LICENSE",
         "interpretation": (
             "Candidate public pointers only. Independently retrieve and read the linked "
             "canonical original before attributing a specific argument to its author. "
