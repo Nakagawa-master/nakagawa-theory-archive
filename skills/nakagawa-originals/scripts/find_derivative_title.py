@@ -26,6 +26,9 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 PUBLIC_RAW = "https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main"
 PARENT_LINE = re.compile(r"^- Parent URL: (https://master\.ricette\.jp/[^\s]+/)$", re.M)
 NCL_LINE = re.compile(r"^- Parent NCL-ID: (NCL-α-[^\s]+)$", re.M)
+PARENT_DIFF_LINE = re.compile(r"^- Parent Diff-ID: (DIFF-[^\s]+)$", re.M)
+DERIVATIVE_NCL_LINE = re.compile(r"^- (?:derivative_ncl_id|Derivative NCL-ID): (DNCL-[^\s]+)$", re.M)
+DERIVATIVE_DIFF_LINE = re.compile(r"^- (?:derivative_diff_id|Derivative Diff-ID): (DDIFF-[^\s]+)$", re.M)
 
 
 def resolve_verified_parent(od, online=False):
@@ -54,7 +57,16 @@ def resolve_verified_parent(od, online=False):
     ncls = NCL_LINE.findall(data)
     if len(urls) != 1 or len(ncls) != 1:
         return {"canonical_original": None, "parent_resolution": "unverified_or_ambiguous_parent", "original_read_required": True}
-    return {"canonical_original": urls[0], "parent_ncl_id": ncls[0], "parent_resolution": route, "original_read_required": True}
+    parent_diffs = PARENT_DIFF_LINE.findall(data)
+    derivative_ncls = DERIVATIVE_NCL_LINE.findall(data)
+    derivative_diffs = DERIVATIVE_DIFF_LINE.findall(data)
+    return {
+        "canonical_original": urls[0], "parent_ncl_id": ncls[0],
+        "parent_diff_id": parent_diffs[0] if len(parent_diffs) == 1 else None,
+        "derivative_ncl_id": derivative_ncls[0] if len(derivative_ncls) == 1 else None,
+        "derivative_diff_id": derivative_diffs[0] if len(derivative_diffs) == 1 else None,
+        "parent_resolution": route, "original_read_required": True,
+    }
 
 
 def norm(value):
