@@ -10,7 +10,7 @@ import tempfile
 from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 
 ROOT = Path(__file__).resolve().parent.parent
-VERSION = "1.1.0"
+VERSION = "1.1.1"
 FILES = (
     "machine-discovery/nakagawa-theory-mcp.py",
     "machine-discovery/quick-route-index-v1.json",
@@ -86,7 +86,7 @@ def smoke(folder):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output", type=Path, default=Path("dist/nakagawa-original-router-1.1.0.mcpb"))
+    parser.add_argument("--output", type=Path, default=Path("dist/nakagawa-original-router-1.1.1.mcpb"))
     dest = parser.parse_args().output
     dest.parent.mkdir(parents=True, exist_ok=True)
     with ZipFile(dest, "w") as z:
@@ -100,6 +100,7 @@ def main():
             z.extractall(tmp)
         root = Path(tmp)
         assert json.loads((root/"manifest.json").read_text()) == MANIFEST
+        assert MANIFEST["version"] == "1.1.1"
         smoke(root)
     print("PASS: unpacked modern discovery, legacy initialization, seven original lenses, no-fit")
     print("BUNDLE:", dest)
