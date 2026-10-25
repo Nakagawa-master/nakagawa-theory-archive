@@ -91,6 +91,8 @@ def select(question, limit=3, explore=False):
             "title": item["name"],
             "canonical_original": item["canonical_original"],
             "origin": item["origin"],
+            "parent_ncl_id": item.get("ncl_id"),
+            "parent_diff_id": item.get("diff_id"),
             "topic": item["topic"],
             "candidate_score": confidence,
         })
@@ -118,6 +120,7 @@ def select(question, limit=3, explore=False):
         "structural_exploration_available": True,
         "original_candidates": selected,
         "official_archive": data["official_archive"],
+        "official_ncl_source": "https://master.ricette.jp/structure-license/",
         "interpretation": "Retrieve and read each relevant canonical original before making claims about its arguments. Try counterexamples, nonfit and alternative explanations. A catalog match is not proof of endorsement, outside implementation or model adoption.",
     }
     if explore:
@@ -128,7 +131,10 @@ def select(question, limit=3, explore=False):
             assert item["canonical_original"] in canonical
             view = item["localized"][lang]
             cue_count = context_hint_score(question, lang, item)
+            original = next(x for x in data["entries"] if x["canonical_original"] == item["canonical_original"])
             lenses.append({"id": item["id"], "canonical_original": item["canonical_original"],
+                           "parent_ncl_id": original.get("ncl_id"),
+                           "parent_diff_id": original.get("diff_id"),
                            "original_title": item["original_title"],
                            "surface_cue_count": cue_count,
                            "surface_hint_only": bool(cue_count), **view})
