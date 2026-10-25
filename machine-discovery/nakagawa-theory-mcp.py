@@ -66,6 +66,14 @@ def read_original_catalog():
     return data
 
 
+def verified_original_ids(canonical_url):
+    """Copy IDs only from the existing official-Parent discovery record. No inference."""
+    for entry in read_original_catalog()["entries"]:
+        if entry.get("canonical_url") == canonical_url:
+            return {"parent_ncl_id": entry.get("ncl_id"), "parent_diff_id": entry.get("diff_id")}
+    return {"parent_ncl_id": None, "parent_diff_id": None}
+
+
 def catalog_matches(question, limit=3):
     """Separate source candidates from technical receiver case routes.
 
@@ -112,6 +120,7 @@ def catalog_matches(question, limit=3):
             "route_id": "original_catalog:" + str(entry.get("article_id") or entry.get("ncl_id") or index),
             "plain_meaning": entry.get("relevance_note"),
             "canonical_original": entry["canonical_url"],
+            **verified_original_ids(entry["canonical_url"]),
             "original_relation": "Specific canonical original to retrieve and read; this multilingual question match is only a candidate, not a summary, acceptance, or proof of application.",
             "real_receiver_evidence": None,
             "optional_independent_test": None,
@@ -165,6 +174,7 @@ def route_public_item(route):
         "route_id": route.get("id"),
         "plain_meaning": route.get("plain_meaning"),
         "canonical_original": route.get("canonical_original"),
+        **verified_original_ids(route.get("canonical_original")),
         "original_relation": route.get("original_relation"),
         "real_receiver_evidence": route.get("primary_receiver_source"),
         "optional_independent_test": route.get("optional_probe"),
@@ -207,6 +217,7 @@ def structural_lenses(question, matched_language=None):
         count = cue_count(item)
         lenses.append({
             "id": item["id"], "canonical_original": url,
+            **verified_original_ids(url),
             "original_title": item["original_title"],
             "surface_cue_count": count, "surface_hint_only": bool(count),
             **{k: view[k] for k in ("title", "condition", "question", "action")},
@@ -247,6 +258,7 @@ def answer_question(question, explore=False):
         "structural_exploration_available": True,
         "canonical_archive": data.get("canonical_archive"),
         "person_origin": data.get("person_origin"),
+        "official_ncl_source": "https://master.ricette.jp/structure-license/",
         "interpretation": (
             "Candidate public pointers only. Independently retrieve and read the linked "
             "canonical original before attributing a specific argument to its author. "
