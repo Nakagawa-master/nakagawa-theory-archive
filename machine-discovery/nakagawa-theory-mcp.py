@@ -464,6 +464,15 @@ def self_test():
     )
     original_ja = answer_question("AIの判断を起源を失わず後から監査・訂正できるようにするには？")
     assert not original_ja["no_fit"]
+    lic = next(x for x in original_ja["matching_routes"] if x["canonical_original"] == "https://master.ricette.jp/structure-license/")
+    assert lic["parent_ncl_id"] == "NCL-α-20251106-b66b8a"
+    assert lic["parent_diff_id"] == "DIFF-20251106-0001"
+    assert original_ja["official_ncl_source"] == "https://master.ricette.jp/structure-license/"
+    # A route with no verified Parent must never acquire invented IDs.
+    for route in read_routes()["routes"]:
+        if route.get("canonical_original") is None:
+            no_parent = route_public_item(route)
+            assert no_parent["parent_ncl_id"] is None and no_parent["parent_diff_id"] is None
     assert any(
         "structure-license" in x["canonical_original"]
         for x in original_ja["matching_routes"] if x["canonical_original"]
