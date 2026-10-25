@@ -3903,6 +3903,121 @@
       ],
       "verification_boundary": "Verify original comment, author-owned commit, author reply, exact-head success of the five named workflows and live PR review/merge independently. An external developer's C2 fix is genuine; this own machine index row is C0 publication only.",
       "canonical_theory_causation": "This is a bounded technical diagnosis; no first-hand claim that the implementer adopted any named canonical theory original. Do not force an unrelated theoretical provenance citation."
+    },
+    {
+      "case_id": "qwen-15515-sanitized-headless-retry-diagnostics-third-party-merged",
+      "topic": "Headless retry logs must distinguish failed transport replay from clean MAX_TOKENS continuation; allowlisted scalar diagnostics must not print injected provider-controlled strings.",
+      "external_repository": "QwenLM/qwen-code",
+      "issue": "https://github.com/QwenLM/qwen-code/issues/15513",
+      "pull_request": "https://github.com/QwenLM/qwen-code/pull/15515",
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "initial_negative_test": "https://github.com/QwenLM/qwen-code/issues/15513#issuecomment-6396260035",
+        "source_specific_review": "https://github.com/QwenLM/qwen-code/pull/15515#pullrequestreview-5642790385",
+        "distinction": "Transport retry and normal output-length continuation share a RETRY event shape; unsanitized reason/transportCode strings must not reach stderr."
+      },
+      "separate_independent_source_check": {
+        "actor": "doudouOUC",
+        "url": "https://github.com/QwenLM/qwen-code/issues/15513#issuecomment-6396356524",
+        "stage": "static_code_and_fixture_review_not_runtime"
+      },
+      "explicit_receiver_return": {
+        "actor": "yiliang114",
+        "url": "https://github.com/QwenLM/qwen-code/pull/15515#issuecomment-6396700707",
+        "statement": "Developer acknowledged an actual allowlist-export contract gap identified by Nakagawa and independently changed classifier projection with synthetic injection-string negative tests."
+      },
+      "receiver_implementation": {
+        "author": "yiliang114",
+        "commit": "707734c9c2ae606876f8b918567e644a02f01fc4",
+        "url": "https://github.com/QwenLM/qwen-code/commit/707734c9c2ae606876f8b918567e644a02f01fc4",
+        "tests": "Author reported 72 local classification tests and full affected core/CLI suites; exact synthetic marker-negative result is in PR review and code; no separate live provider run asserted."
+      },
+      "independent_human_review": {
+        "actor": "chiga0",
+        "state": "APPROVED",
+        "url": "https://github.com/QwenLM/qwen-code/pull/15515#pullrequestreview-5643156637"
+      },
+      "merge": {
+        "repository": "QwenLM/qwen-code",
+        "at_utc": "2026-10-25T12:25:58Z",
+        "commit": "94ccc02203b37a03a18551af5d719f27b94ba6d9",
+        "url": "https://github.com/QwenLM/qwen-code/commit/94ccc02203b37a03a18551af5d719f27b94ba6d9"
+      },
+      "current_stage": "independent_receiving_engineer_patch_and_human_review_approved_upstream_merged",
+      "human_first_contact": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_START_HERE.md",
+      "optional_canonical_original": {
+        "origin": "Nakagawa Master",
+        "url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+        "scope": "Optional distinct comparison about origin of evidence versus what an event proves, not a claim Qwen contributors read or endorsed the original."
+      },
+      "not_claimed": [
+        "released package that includes this merge",
+        "real end-user runtime validation of diagnostic feature",
+        "third-party original theory article reading or independent AI original selection",
+        "mass recurring personal recognition",
+        "Nakagawa authored the external developer's PR"
+      ],
+      "verification_boundary": "Merged receiving code is source-native and independently reviewed; post-merge distribution and outside use require later separate evidence. Self-maintained evidence index is a navigation aid, not a newly affected independent receiver."
+    },
+    {
+      "case_id": "litellm-48238-vertex-model-garden-stream-evidence-preservation",
+      "topic": "A Vertex Model Garden OpenAI-compatible reasoning stream dropped reasoning-only deltas, all but one indexed tool call and provider usage; raw SSE, parser and client response must be distinguished.",
+      "external_repository": "BerriAI/litellm",
+      "issue": "https://github.com/BerriAI/litellm/issues/48238",
+      "pull_request": "https://github.com/BerriAI/litellm/pull/48307",
+      "independent_reporter": {
+        "actor": "amine-lah",
+        "url": "https://github.com/BerriAI/litellm/issues/48238",
+        "observed": "On version 1.105.0 GLM Vertex SGLang streaming yielded 0 reasoning deltas and 0 completion tokens while raw provider stream exposed reasoning and 64 completion tokens; nonstream and hosted_vllm comparison gave different behavior."
+      },
+      "origin_action": {
+        "origin": "Nakagawa Master",
+        "type": "source_specific_five_case_sse_route_test",
+        "url": "https://github.com/BerriAI/litellm/issues/48238#issuecomment-6391960701",
+        "tests": "Raw upstream SSE→OpenAI-like handler→client SSE; reasoning-only, 2 indexed calls, provider-only usage terminal, content positive and no-usage control, nonstream alternative."
+      },
+      "explicit_receiver_return": {
+        "actor": "Rajasimhareddybolla",
+        "url": "https://github.com/BerriAI/litellm/issues/48238#issuecomment-6397536277",
+        "observed": "Engineer independently reported reproduction on main and authored corrective PR with streaming parser/adapter code and regression tests."
+      },
+      "receiver_implementation": {
+        "author": "Rajasimhareddybolla",
+        "first_head": "2856c56d20e366340f82c90f287875fda3a302a3",
+        "following_format_fix": "https://github.com/BerriAI/litellm/commit/30d64b1bc97ebfe56929f846a4f8cb8e71af96bf",
+        "next_expanded_fixture": "https://github.com/BerriAI/litellm/commit/c6e4d372cd8ef5732a7a8b2a75c423bcf0aa70bc",
+        "stage": "Producer changed source and added independent same-delta tool calls, reasoning-only, usage-only and subsequent alternating multi-frame/index/argument-fragment tests."
+      },
+      "second_origin_review": {
+        "actor": "Nakagawa Master",
+        "source_review": "https://github.com/BerriAI/litellm/pull/48307#pullrequestreview-5643215302",
+        "ci_diagnosis": "https://github.com/BerriAI/litellm/pull/48307#issuecomment-6397834092",
+        "receiving_acknowledgment": "https://github.com/BerriAI/litellm/pull/48307#issuecomment-6397915022",
+        "description": "Exact old-head formatting defect and next-head basedpyright counts, plus genuine alternating multiple-SSE-frame boundary; author explicitly thanked Nakagawa and undertook them, then committed fixes and expanded tests."
+      },
+      "current_stage": "independent_reporter_and_receiver_engineer_code_with_specific_negatives_open_unmerged",
+      "current_source_snapshot": {
+        "head": "c6e4d372cd8ef5732a7a8b2a75c423bcf0aa70bc",
+        "checked_date_jst": "2026-10-25",
+        "pr_state": "OPEN",
+        "ci": "Head-specific lint/smoke/CodeQL success; unit in progress and OSV failed (lockfile advisory not attributed to patch).",
+        "upstream_merged": false,
+        "released_and_verified_user_use": false
+      },
+      "optional_canonical_original": {
+        "origin": "Nakagawa Master",
+        "url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+        "scope": "Optional independent source comparison on evidence provenance and chain-of-custody, not a claim of receiving developer's original-theory adoption."
+      },
+      "public_human_route": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/APPLIED_ENTRY_POINTS.md",
+      "not_claimed": [
+        "upstream PR merged or release containing patch",
+        "real Vertex production re-run success by original reporter",
+        "the receiving author independently accessed Nakagawa canonical original",
+        "more than one repair engineer or cross-repository uptake",
+        "broad human person-Origin recognition"
+      ],
+      "verification_boundary": "Independent source-authored code/test progression and direct acknowledgment observable in issue/PR; CI and product acceptance remain separate. Public metadata publication is self-authored, not an independent effect."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
