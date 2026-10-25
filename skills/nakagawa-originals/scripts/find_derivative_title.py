@@ -173,6 +173,10 @@ def self_test():
             parent = find(od, resolve_parent=True)["derivative_title_candidates"][0]
             assert parent["canonical_original"].startswith("https://master.ricette.jp/")
             assert parent["parent_ncl_id"].startswith("NCL-α-")
+            if od == "OD075":
+                assert parent["parent_diff_id"] == "DIFF-20251102-0001"
+                assert parent["derivative_ncl_id"] == "DNCL-NCL-ALPHA-20251102-E48C90-HUB-JA-0075-0000"
+                assert parent["derivative_diff_id"] == "DDIFF-20260815-DNCL-075-0000-0004"
             assert parent["original_read_required"]
     print("PASS: 313 title navigation; optional verified Parent from real README; original still must be read")
 
