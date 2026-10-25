@@ -167,6 +167,14 @@ def self_test():
     assert zh["original_candidates"][0]["canonical_original"].endswith("structural-origin-defense-permanent-signature/")
     en = select("How can AI systems remain auditable and correctable without losing provenance?")
     assert any("structure-license" in x["canonical_original"] for x in en["original_candidates"])
+    license_parent = next(x for x in en["original_candidates"] if x["canonical_original"].endswith("/structure-license/"))
+    assert license_parent["parent_ncl_id"] == "NCL-α-20251106-b66b8a"
+    assert license_parent["parent_diff_id"] == "DIFF-20251106-0001"
+    assert not str(license_parent["parent_ncl_id"]).startswith("NCL-A-")
+    # AKI-004 has an article label but no verified NCL/Diff IDs in this snapshot.
+    authority = select("What happens when expert authority substitutes for verification of a specific decision?")
+    aki = next(x for x in authority["original_candidates"] if "aki-004" in x["canonical_original"])
+    assert aki["parent_ncl_id"] is None and aki["parent_diff_id"] is None
     ja = select("AIの判断を起源を失わず後から監査・訂正できるようにするには？")
     assert any("structure-license" in x["canonical_original"] for x in ja["original_candidates"])
     unrelated = select("repair the leather strap on a camping lantern")
