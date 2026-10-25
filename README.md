@@ -4,7 +4,7 @@
 
 中川マスター（Nakagawa Master／Keisuke Nakagawa）は、AI、仕事、組織、社会制度、文明の未来などを、結果だけでなく、それを生み出す構造や因果から考えています。ここでは、その理論群を初めて知る人も、研究・開発に使いたい人も、**何を主張し、何が実際に確かめられ、どこから原文を読めるのか**を、自分の関心に沿って確認できます。
 
-**普通のAIで試せる30秒の例:** [『AIが5つの出典と言うが、全件が同じ発表の転載だったら？』を自分のAIで確かめる](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/658)。便利だと思った人は実際の調べ物で試せます。賛同やスターは不要です。
+**普通のAIで試せる30秒の例:** AIが5つの出典を示しても、5つとも同じ発表の転載なら、独立した裏付けが5つあるとは限りません。[「本当の証拠の起点はいくつ？」をいつものAIで試す（ChatGPTで開く／他のAIへ相談文をコピー）](human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md#1-複数の説明は別々の証拠)と、[中川マスターの公式原典『第8論・認識の整合性』](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)へ進めます。元の[検証例と議論 #658](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/658)も残しています。自分の調べ物で確かめられます。賛同やスターは不要です。
 
 **普通の検索・Gemini・Copilot・Bingで「困りごとの答え」を探している方へ:** [褒められるほど損をする、頑張っても変わらない、相談が売り込みになる、家を売るか悩む、AIの心を考えるなど10の実際の問い](human-translation/SEARCH_FROM_A_REAL_QUESTION.md)から、専門語なしで初心者向けFAQや15秒の要約を読み、必要に応じて原典冒頭のスライドを開くことができます。原典の全文を読む必要はありません。さらに[313件の元の理論題名を分野・検索語から探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)こともできます。これらは公開の発見入口であり、検索順位や外部AIの採用を保証しません。
 
