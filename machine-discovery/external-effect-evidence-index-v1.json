@@ -3755,19 +3755,16 @@
         "negative_mutant": "Removing same-manager guard fails under duplicate-preserving fake emitter, where previous Set double masked the defect.",
         "receiver_test_report": "11/11 reported by developer; archive has not independently run full Qwen suite."
       },
-      "current_stage": "independent_receiver_code_and_falsifiable_test_changed_pr_open_unmerged",
+      "current_stage": "independent_receiving_developer_code_and_red_green_regressions_two_distinct_fixes_same_pr_open_unmerged",
       "current_source_snapshot": {
         "pr_state": "OPEN",
-        "head": "42c5bfc7449297c81ccba653363e235b7016ecdd",
-        "checked_date_jst": "2026-10-12",
+        "head": "fdeb1a3d9e0ab34abac5109b94fbb9ce849de44b",
+        "checked_date_jst": "2026-10-25",
         "upstream_merged": false,
         "stable_release": "NOT VERIFIED",
-        "external_runtime_use": "NOT VERIFIED"
-      },
-      "separate_not_yet_adopted_review": {
-        "url": "https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6122690398",
-        "topic": "The ACP approval toolCallId uses teammate name + timestamp from Date.now(), so two same-name same-ms requests can compose the same ID. Source-level deterministic proposal only; no client misapproval or author correction verified.",
-        "stage": "C0 not adoption"
+        "external_runtime_use": "NOT VERIFIED",
+        "current_head_review": "historical_changes_requested_still_blocked",
+        "current_head_note": "No complete exact-head sandbox verification report at check time"
       },
       "machine_reuse_route": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/ai-repository-routing-map-v1.json",
       "public_human_route": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/README.md",
@@ -3777,10 +3774,26 @@
         "a real user reported or obtained fewer duplicate dialogs",
         "two corrections by the same engineer count as two independent engineers",
         "independent machine route execution or theory corpus adoption",
-        "accepted separate per-approval identity fix",
         "mass recurring person recognition"
       ],
-      "verification_boundary": "First verify original Nakagawa issue comment and the receiving developer's code + test commits at current head; run the actual Qwen test with a mutant deleting the production guard; inspect PR merge status and actual releases/third-party use independently. This is C2 upstream unmerged, NOT C3/C4/C7."
+      "verification_boundary": "Read the original review, receiving-author 0ae6d288 commit and native before/after test, then current PR HEAD; do not equate archived 11/11 or 12/12 author-reported focused tests with current full PR approval. Both receiving code/test changes are by one independent engineer on one open PR; no C3 release or unrelated AI original choice inferred.",
+      "separate_approval_identity_review_and_receiver_fix": {
+        "source_review_url": "https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6122690398",
+        "original_issue": "The earlier teammate display-name + Date.now() ID could collide for two requests from the same teammate in one millisecond.",
+        "receiver_author": "yiliang114",
+        "receiver_source_acknowledgement": "https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6137119073",
+        "receiver_fix_commit": "0ae6d288b094d2041e400f34e39015e96f876372",
+        "receiver_fix_url": "https://github.com/QwenLM/qwen-code/commit/0ae6d288b094d2041e400f34e39015e96f876372",
+        "implemented_behavior": "The receiver separately authored randomUUID() per ACP teammate approval, so display name and timestamp no longer identify the request.",
+        "regression_evidence": "The receiver reported a two-same-sender/same-timestamp pending-Map negative test failing on prior source (expected 2, received 1), then 12/12 team-sink tests passing; cancelled second response then approved first independently.",
+        "exact_current_head": "fdeb1a3d9e0ab34abac5109b94fbb9ce849de44b",
+        "verified_source_locations": [
+          "packages/cli/src/acp-integration/session/team-sink.ts:7,231,338",
+          "packages/cli/src/acp-integration/session/team-sink.test.ts:230,249"
+        ],
+        "checked_date_jst": "2026-10-25",
+        "limitations": "Current code and committed test bytes inspected, not run by this archive; PR still open, outstanding review decisions and no actual external consumer or original-Parent choice verified. Same receiving engineer and PR, not another independent person."
+      }
     },
     {
       "case_id": "qwen-14522-writer-load-versus-first-commit-credited-merged",
