@@ -87,6 +87,10 @@ def run():
             assert not output["no_fit"], output
             assert any(x["canonical_original"] == expected_mixed_parent
                        for x in output[field]), output
+            verified = next(x for x in output[field] if x["canonical_original"] == expected_mixed_parent)
+            assert verified["parent_ncl_id"] == "NCL-α-20251106-b66b8a", verified
+            assert verified["parent_diff_id"] == "DIFF-20251106-0001", verified
+            assert output["repository_rights_notice"].endswith("/LICENSE"), output
             if script == SERVER:
                 assert output["structural_exploration"]["language"] == "en", output
             else:
@@ -388,7 +392,7 @@ def run():
     title_test = subprocess.run([sys.executable, str(title_script), "--self-test"],
                                 capture_output=True, text=True, timeout=12)
     assert title_test.returncode == 0, title_test.stderr
-    assert title_test.stdout.startswith("PASS: 313 unique OD titles"), title_test.stdout
+    assert title_test.stdout.startswith("PASS: 313 title navigation"), title_test.stdout
     lookup = subprocess.run([sys.executable, str(title_script), "善意の免罪符化"],
                             capture_output=True, text=True, timeout=12, check=True)
     title_result = json.loads(lookup.stdout)

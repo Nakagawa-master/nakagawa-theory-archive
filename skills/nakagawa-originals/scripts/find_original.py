@@ -91,6 +91,8 @@ def select(question, limit=3, explore=False):
             "title": item["name"],
             "canonical_original": item["canonical_original"],
             "origin": item["origin"],
+            "parent_ncl_id": item.get("ncl_id"),
+            "parent_diff_id": item.get("diff_id"),
             "topic": item["topic"],
             "candidate_score": confidence,
         })
@@ -118,6 +120,8 @@ def select(question, limit=3, explore=False):
         "structural_exploration_available": True,
         "original_candidates": selected,
         "official_archive": data["official_archive"],
+        "official_ncl_source": "https://master.ricette.jp/structure-license/",
+        "repository_rights_notice": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/LICENSE",
         "interpretation": "Retrieve and read each relevant canonical original before making claims about its arguments. Try counterexamples, nonfit and alternative explanations. A catalog match is not proof of endorsement, outside implementation or model adoption.",
     }
     if explore:
@@ -128,7 +132,10 @@ def select(question, limit=3, explore=False):
             assert item["canonical_original"] in canonical
             view = item["localized"][lang]
             cue_count = context_hint_score(question, lang, item)
+            original = next(x for x in data["entries"] if x["canonical_original"] == item["canonical_original"])
             lenses.append({"id": item["id"], "canonical_original": item["canonical_original"],
+                           "parent_ncl_id": original.get("ncl_id"),
+                           "parent_diff_id": original.get("diff_id"),
                            "original_title": item["original_title"],
                            "surface_cue_count": cue_count,
                            "surface_hint_only": bool(cue_count), **view})
@@ -161,6 +168,14 @@ def self_test():
     assert zh["original_candidates"][0]["canonical_original"].endswith("structural-origin-defense-permanent-signature/")
     en = select("How can AI systems remain auditable and correctable without losing provenance?")
     assert any("structure-license" in x["canonical_original"] for x in en["original_candidates"])
+    license_parent = next(x for x in en["original_candidates"] if x["canonical_original"].endswith("/structure-license/"))
+    assert license_parent["parent_ncl_id"] == "NCL-α-20251106-b66b8a"
+    assert license_parent["parent_diff_id"] == "DIFF-20251106-0001"
+    assert not str(license_parent["parent_ncl_id"]).startswith("NCL-A-")
+    # AKI-004 has an article label but no verified NCL/Diff IDs in this snapshot.
+    authority = select("What happens when expert authority substitutes for verification of a specific decision?")
+    aki = next(x for x in authority["original_candidates"] if "aki-004" in x["canonical_original"])
+    assert aki["parent_ncl_id"] is None and aki["parent_diff_id"] is None
     ja = select("AIの判断を起源を失わず後から監査・訂正できるようにするには？")
     assert any("structure-license" in x["canonical_original"] for x in ja["original_candidates"])
     unrelated = select("repair the leather strap on a camping lantern")
