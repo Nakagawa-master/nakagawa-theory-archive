@@ -82,6 +82,10 @@ Run `qwen mcp list` to inspect the saved server; in an interactive Qwen session 
 
 The host and user decide whether to install, call or ignore this tool. A suggested original is a link to examine, not a requirement to accept its thesis.
 
+### Optional VS Code / Copilot portable setup (use the right JSON schema)
+
+For a separate, user-controlled VS Code/Copilot workspace, the **portable** MCP configuration is the workspace-root `.mcp.json` (or the user's Copilot `~/.copilot/mcp-config.json` on systems using the default location). Copy the **`mcpServers` JSON example above** into that file after cloning this repository and replacing the local Python-script path with its real absolute path. This uses the Copilot harness's portable stdio config: the AI host still must be explicitly installed/configured and run by its own user. In contrast, a **VS Code-specific** `.vscode/mcp.json` uses a **`servers`** top-level object and an explicit `"type": "stdio"` for each local server; do not paste the portable configuration unchanged there. See [Microsoft's current MCP configuration reference](https://github.com/microsoft/vscode-docs/blob/main/docs/agents/reference/mcp-configuration.md) and [setup guide](https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/mcp-servers.md). Settings in an unrelated third-party workspace do not automatically appear in other models, products, or sessions; users choose whether to expose and use the three source-location tools.
+
 This is local, read-only and deliberately makes **no network requests**. The host may now discover **three MCP tools** (the third is the published-name identity lookup, not an original-theory inference):
 
 - `find_nakagawa_original_for_problem`: passes the real user problem as `question`; returns up to three fitting candidate routes, direct official original links, original-vs-application boundaries and independent technical receiver sources.
