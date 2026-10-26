@@ -1,4 +1,4 @@
-# Local stdio MCP server; no network access, credentials, or Python packages required.
+# Local stdio MCP server; its Python runtime requires no network calls, credentials, or packages.
 # Build: docker build -t nakagawa-original-router:local .
 # Run from an MCP host using stdio: docker run --rm -i nakagawa-original-router:local
 FROM python:3.12-slim
@@ -10,7 +10,7 @@ ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1
 WORKDIR /srv/nakagawa
 
-# Include only the original lookup server and its five required public sources.
+# Include the server, its four lookup assets, and the repository license notice.
 COPY machine-discovery/nakagawa-theory-mcp.py \
      machine-discovery/quick-route-index-v1.json \
      machine-discovery/problem-to-theory-origin-index-v1.json \
