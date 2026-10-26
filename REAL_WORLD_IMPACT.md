@@ -12,6 +12,13 @@
 - **[Qwen Code](https://github.com/QwenLM/qwen-code/pull/13923)** — AIが「操作を止めた」と言っても、今回の呼び出しが実際に停止したとは限らない。中川マスターの反例を開発者が確認して修正し、[2026年10月12日に本線マージ](https://github.com/QwenLM/qwen-code/pull/13923)されました。[事例47を読む](#47-qwen-code誰かが停止したという記録は今回の呼び出しが停止した証拠ではない)。
 - **[PydanticAI](https://github.com/pydantic/pydantic-ai/pull/9982)** — AIの会話履歴で「重複を防いだ」と見えても余計な書込みが残る条件を指摘。開発者が再現してテストと実装を変更し、[2026年10月16日にマージ](https://github.com/pydantic/pydantic-ai/pull/9982)されました。[事例41を読む](#41-pydanticai同じidempotency-keyの再送が未参照メッセージを増やさない)。
 
+**最新の独立した実装変化（2026年10月26日・いずれも未マージ、上の51件とは別に検証する追補）：**
+
+- **[Qwen Code｜AIツールが、失効した認証情報を送ってしまう](https://github.com/QwenLM/qwen-code/pull/15650)** — 中川マスターは[古いトークンが残る具体的な負例](https://github.com/QwenLM/qwen-code/pull/15650#pullrequestreview-5652729278)を提示しました。PR作者は[その指摘に直接同意して修正内容を説明](https://github.com/QwenLM/qwen-code/pull/15650#issuecomment-6418604749)し、[コードと回帰テストを追加](https://github.com/QwenLM/qwen-code/commit/b2f9d2bbdc94e6cbbe31ed6a6dc072254c9b1ec7)しました。**指摘→作者の受諾→コード変更**は確認できますが、PRのマージ・正式版への収録・実利用は未確認です。
+- **[Qwen Code｜届いていないメッセージを「配達済み」と表示する](https://github.com/QwenLM/qwen-code/pull/15634)** — 中川マスターは[容量超過や失効セッションで拒否した通知にも配達済みと記録される矛盾](https://github.com/QwenLM/qwen-code/pull/15634#pullrequestreview-5653273988)を指摘しました。続いて外部作者は[成功／拒否の受領結果、制限付きの後続処理、21件目と失効セッションのテスト](https://github.com/QwenLM/qwen-code/commit/6c51c01818ae402a354be82a14f928f4ab07c708)を追加しました。**レビュー後の技術的対応は明確**ですが、作者が修正の起因を明言したものではなく、PRも未マージです。
+
+共通する問いは「以前に認証・送信したこと」と「いま実際に正しく認証され、届いたこと」は別だという区別です。社会の約束の継続と再確認を考察する[公式原典『合意の記憶』](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)は、異なる領域からその問いを深める**任意の比較対象**です。これらの開発者がこの原典を読んだ、ソフトウェアがその理論を採用した、独立AIが自発的に参照したという証拠ではありません。
+
 中川マスター（Nakagawa Master）は Keisuke Nakagawa の筆名です。ここでの貢献は**問題の発見、原因の切り分け、反例と検証条件の提示**です。修正コードを実際に書いたのは各プロジェクトの開発者。だからこそ、異なるチームが自分たちの判断で何を変更したかを見れば、活動の広がりと再現性を検討できます。
 
 **51の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。51件すべてが採用されたという意味ではなく、未採用・保留・未確認の結果も各箇所で区別しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
