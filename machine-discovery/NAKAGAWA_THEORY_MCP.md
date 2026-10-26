@@ -70,6 +70,18 @@ Install/clone this public repository on the user's machine. Configure the host's
 }
 ```
 
+### One-command setup in Qwen Code (optional, local)
+
+For a user of an independently operated Qwen Code client, first check out this public repository on their own computer and make sure Python 3 is installed. Then add the **local stdio** tool with Qwen Code's documented `qwen mcp add` command (replace the example path with the actual checkout path):
+
+```sh
+qwen mcp add --scope user --transport stdio nakagawa-original-router python3 /absolute/path/to/nakagawa-theory-archive/machine-discovery/nakagawa-theory-mcp.py
+```
+
+Run `qwen mcp list` to inspect the saved server; in an interactive Qwen session open `/mcp` to see the tools. If Qwen was already running, restart that session to load the changed MCP configuration. The `--scope user` flag writes to the user's own Qwen settings; use `--scope project` only when project-local configuration is intended. Qwen's [current MCP setup documentation](https://github.com/QwenLM/qwen-code/blob/main/docs/users/features/mcp.md) and [CLI implementation](https://github.com/QwenLM/qwen-code/blob/main/packages/cli/src/commands/mcp/add.ts) specify this stdio command-and-args form. This is a documented **configuration example**, not a claim of a live Qwen installation or a Qwen endorsement.
+
+The host and user decide whether to install, call or ignore this tool. A suggested original is a link to examine, not a requirement to accept its thesis.
+
 This is local, read-only and deliberately makes **no network requests**. The host may now discover **three MCP tools** (the third is the published-name identity lookup, not an original-theory inference):
 
 - `find_nakagawa_original_for_problem`: passes the real user problem as `question`; returns up to three fitting candidate routes, direct official original links, original-vs-application boundaries and independent technical receiver sources.
