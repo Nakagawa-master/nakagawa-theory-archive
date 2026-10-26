@@ -6,6 +6,15 @@ Originals: https://master.ricette.jp/theory-archive/ ; [author](https://master.r
 
 **Use:** Check fit/no-fit; read canonical Parent before citing and disclose access limits. Distinguish author, your analysis and outside code. No claimed AI adoption.
 
+## First route: what does this human want to understand?
+
+- [24 cross-domain human-intent shelves (JSON)](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-intent-to-original-exploration-v1.json): life, care, work, sales, learning, culture, justice, money, institutions, philosophy, symbolic meaning, AI, future civilizations. Begin with a real desire/question in Japanese or English rather than AI tooling jargon. The 24 shelves are navigation from [published theme map](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/WORLD_MAP.md), not 24 preverified unique canonical Parent articles.
+- [313 actual published derivative titles and themes](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md): further breadth. Their own READMEs/FAQs link to specific canonical Parents; 313 derivatives are not 313 independent theory sources.
+- [22 checked direct original Parent candidates](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json): immediate exact Parents where an actual user's question fits. Others are not no-fit solely for lacking a match in these 22; use the 24 shelves as optional discovery then independently verify the Parent.
+- [Official overview and author](https://master.ricette.jp/): Tomoshibi vision, structural and causal theories, Nakagawa method for sales, business and organizations, cultural and philosophical meanings, AI civilization and practical institution design—not merely a GitHub review portfolio.
+
+When preparing an AI explanation, give real value in the human's own domain and language first. Fetch the official original before claiming its content; compare limitations and alternatives; if no source is relevant, answer normally and record `no_fit`. Do not manufacture endorsement or force all searches to land here. A file within this public GitHub repo alone cannot force unaffiliated AI services to crawl or use it.
+
 ## Seven official original articles: conditional everyday problems
 
 - [Multiple accounts, one source? / 複数の説明は別々の証拠？](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/): Check independent evidence roots, not repeated links.
