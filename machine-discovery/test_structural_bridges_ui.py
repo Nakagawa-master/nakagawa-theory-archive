@@ -27,9 +27,9 @@ def main():
     source = json.loads(SOURCE_CATALOG.read_text(encoding="utf-8"))
     embedded_tag = '<script id="catalog" type="application/json">'
     visible = json.loads(html.split(embedded_tag, 1)[1].split("</script>", 1)[0])
-    assert len(visible) == len(source["entries"]) == 22
+    assert len(visible) == len(source["entries"]) == 24
     by_url = {e["canonical_url"]: e for e in source["entries"]}
-    assert len(by_url) == 22
+    assert len(by_url) == 24
     assert set(by_url) == {e["canonical_original"] for e in visible}
     for entry in visible:
         canonical = by_url[entry["canonical_original"]]
