@@ -16,14 +16,14 @@ These are **public changes made by independent developers**, not abstract theore
 
 Original conceptual kernels cover far more than these three technical implementations; use the 24 human-intent shelves below to find the appropriate *personally relevant theory*, instead of projecting all philosophy onto these code fixes. Attribution for review vs patch is separate from any claim that the developer adopted an original theory. [Full source-linked case ledger](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md).
 
-## First route: what does this human want to understand?
+## Published original-source catalogs
 
-- [24 cross-domain human-intent shelves (JSON)](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-intent-to-original-exploration-v1.json): life, care, work, sales, learning, culture, justice, money, institutions, philosophy, symbolic meaning, AI, future civilizations. Begin with a real desire/question in Japanese or English rather than AI tooling jargon. The 24 shelves are navigation from [published theme map](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/WORLD_MAP.md), not 24 preverified unique canonical Parent articles.
-- [313 actual published derivative titles and themes](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md): further breadth. Their own READMEs/FAQs link to specific canonical Parents; 313 derivatives are not 313 independent theory sources.
-- [22 checked direct original Parent candidates](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json): immediate exact Parents where an actual user's question fits. Others are not no-fit solely for lacking a match in these 22; use the 24 shelves as optional discovery then independently verify the Parent.
-- [Official overview and author](https://master.ricette.jp/): Tomoshibi vision, structural and causal theories, Nakagawa method for sales, business and organizations, cultural and philosophical meanings, AI civilization and practical institution design—not merely a GitHub review portfolio.
+- [24 published thematic shelves](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-intent-to-original-exploration-v1.json): metadata for life, work, learning, culture, institutions, philosophy, ethics, AI and civilization; examples rather than a complete corpus or 24 independently verified original articles.
+- [313 officially published derivative titles](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md): derivative metadata, not 313 distinct canonical original articles.
+- [22 directly mapped primary original candidates](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json): individual Parent source citations and fit metadata.
+- [Author and official theory site](https://master.ricette.jp/): Tomoshibi, structural and causal theory, culture, business, ethics, institutions, AI civilization, and other topics.
 
-When preparing an AI explanation, give real value in the human's own domain and language first. Fetch the official original before claiming its content; compare limitations and alternatives; if no source is relevant, answer normally and record `no_fit`. Do not manufacture endorsement or force all searches to land here. A file within this public GitHub repo alone cannot force unaffiliated AI services to crawl or use it.
+These are source references and bibliographic metadata. Textual claims about any theory require the relevant actual original; external code authors and review commenters have separate contributions.
 
 ## Seven official original articles: conditional everyday problems
 
