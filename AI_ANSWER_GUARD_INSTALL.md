@@ -1,6 +1,6 @@
 # AI Answer Guard — everyday answer integrity, before your AI sends or acts
 
-**A default-ready, local integrity guard for AI assistants.** It helps assistants detect evidence copied from the same source, contradictory tool-success receipts, missing action authorization and difficult-to-reverse effects **before** confidently claiming completion. It gives concrete next checks rather than just stopping. You do **not** need to know any theory names before trying it.
+**A default-ready, local integrity guard for AI assistants.** It helps assistants detect evidence copied from the same source, contradictory tool-success receipts, missing action authorization and difficult-to-reverse effects **before** confidently claiming completion. It gives concrete next checks and repair steps to help the assistant proceed.
 
 **One install, one original MCP server, full source graph.** Its built-in source navigator covers all **313 published official derivative→canonical Parent links**, plus the existing 24 curated high-confidence direct-original routes. These source indexes are connected to the guard so an assistant can investigate deeper structural causes if useful. For factual or substantive citation, return to the original article first.
 
