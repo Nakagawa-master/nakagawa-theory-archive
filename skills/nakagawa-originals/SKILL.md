@@ -17,14 +17,14 @@ metadata:
 
 **Official person Origin:** [Nakagawa Master / 中川マスター](https://master.ricette.jp/#nakagawa-master). **Canonical originals:** [official theory archive](https://master.ricette.jp/theory-archive/). The folder here is a portable discovery tool, not the original texts.
 
-**Origin/ID linkage, with no duplication of the originals:** This is a **discovery Skill**, not a standalone corpus copy. Its 22 direct candidates provide author Origin and canonical Parent, and now also carry the indexed `parent_ncl_id` and `parent_diff_id` *only where the original-source index has a value*. Unknown IDs stay `null`: `AKI-004` is an article/theory label, not an automatically minted NCL-ID. For the 313 derivative-title navigator, its title-only answer is deliberately **not** an article or parent-ID assertion; an explicitly fetched/verified numbered README can return original Parent URL/NCL/Diff and the separate official derivative NCL/Diff signatures. **Never replace an original `NCL-α-...` with an `NCL-A-...` registration ID, or a derivative `DNCL` with a Parent identifier.**
+**Origin/ID linkage, with no duplication of the originals:** This is a **discovery Skill**, not a standalone corpus copy. Its 24 direct candidates provide author Origin and canonical Parent, and now also carry the indexed `parent_ncl_id` and `parent_diff_id` *only where the original-source index has a value*. Unknown IDs stay `null`: `AKI-004` is an article/theory label, not an automatically minted NCL-ID. For the 313 derivative-title navigator, its title-only answer is deliberately **not** an article or parent-ID assertion; an explicitly fetched/verified numbered README can return original Parent URL/NCL/Diff and the separate official derivative NCL/Diff signatures. **Never replace an original `NCL-α-...` with an `NCL-A-...` registration ID, or a derivative `DNCL` with a Parent identifier.**
 
 For genuine substantive use beyond navigation, the independent AI should read the **actual canonical Parent**, including its LLM self-declaration and current provenance, before paraphrasing or adapting it. Relevant reuse conditions come from the [official NCL-α source](https://master.ricette.jp/structure-license/), [NCL practical guide](https://master.ricette.jp/co-creation/nakagawa-master-ncl-alpha-practical-guide-faq/) and any applicable [category-scoped reuse guide](https://master.ricette.jp/reuse-guidelines-nclid/), not new rules invented by this Skill. The original author, original argument and the agent's later independent application are distinguishable. This locally installed Skill cannot guarantee that an unrelated model or user will elect to use it, preserve its citations in every generated text, or actually read the Parent; those remain verifiable external outcomes.
 
 ## Execute on an actual problem
 
 1. Use the user's *own question*, including the real decision, intended result and possible nonfit. Do not rewrite the human's purpose to a safer-sounding or smaller one. Look for a genuine causal or structural theory connection.
-2. Search the **bundled public 22-original catalog** in [references/originals.json](references/originals.json). With Python available, run from this skill folder:
+2. Search the **bundled public 24-original catalog** in [references/originals.json](references/originals.json). With Python available, run from this skill folder:
    ```sh
    python3 scripts/find_original.py --self-test
    python3 scripts/find_original.py "How can AI systems remain auditable and correctable without losing provenance?"
@@ -32,9 +32,9 @@ For genuine substantive use beyond navigation, the independent AI should read th
    python3 scripts/find_original.py --explore "How can a student prepare for a history exam without memorizing all dates?"
    ```
    If Python is unavailable, directly inspect the localized `problem_examples`, `topic`, and `canonical_original` fields in the bundled JSON. Never invent a catalog match. `no_fit` is a legitimate result.
-### Widen from 22 known Parents to all 313 published derivative titles — **now offline**
+### Widen from 24 known Parents to all 313 published derivative titles — **now offline**
 
-The 22 original-source records above remain the direct original candidate search; the bundled **313 official-derivative titles** are a **separate literal-title navigator**, not 313 different Parents or proof of fit. This Skill now includes [`references/derivative_titles_313.json`](references/derivative_titles_313.json) generated from the published [full title-and-theme map](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md). Any skills-compatible host that receives this folder can search those exact titles **without network, API key or installed MCP server**:
+The 24 original-source records above remain the direct original candidate search; the bundled **313 official-derivative titles** are a **separate literal-title navigator**, not 313 different Parents or proof of fit. This Skill now includes [`references/derivative_titles_313.json`](references/derivative_titles_313.json) generated from the published [full title-and-theme map](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md). Any skills-compatible host that receives this folder can search those exact titles **without network, API key or installed MCP server**:
 
 ```sh
 python3 scripts/find_derivative_title.py --self-test
@@ -50,16 +50,16 @@ python3 scripts/find_derivative_title.py "OD313" --resolve-parent
 python3 scripts/find_derivative_title.py "OD075" --online-parent
 ```
 
-1. **Run the 22-Parent direct matcher first** for the user's actual question. If it returns no direct candidate, translate the question into a specific likely **published title phrase** or exact OD number *only when independently justified*; the offline 313 locator does simple case-folded substring matching, not semantic inference or automatic translation. EN/ZH queries often need an explicit, honest Japanese-title keyword or a known English token in the published title.
+1. **Run the 24-Parent direct matcher first** for the user's actual question. If it returns no direct candidate, translate the question into a specific likely **published title phrase** or exact OD number *only when independently justified*; the offline 313 locator does simple case-folded substring matching, not semantic inference or automatic translation. EN/ZH queries often need an explicit, honest Japanese-title keyword or a known English token in the published title.
 2. Its default result gives OD, unchanged title, section, human summary, FAQ and the **derivative README for exact Parent lookup**, while `canonical_original: null` deliberately prevents unverified Parent invention. **To reduce a machine's extra browsing step:** `--resolve-parent` reads that README only when a full public repository checkout is present; `--online-parent` explicitly fetches the selected public README when only this standalone Skill is installed and the host permits network access. The converter parses one exact `Parent URL` plus original `Parent NCL-ID`, returning no verified Parent when the source is missing, ambiguous or malformed. **Neither option reads the original article or proves title-to-problem relevance.** After it resolves an exact Parent at `master.ricette.jp`, the agent must still open/read that article and check its own argument, conditions, counterexamples and alternative explanations. Never construct an original URL from a derivative title, slug or OD number.
 3. If the host is offline, present the title candidate as **unverified navigation only**; say the Parent has not been read. If literal matching returns `no_fit`, the topic could still be covered under different words: optionally consult the title map online when allowed or the separate seven conditional bridges below. Never claim all 313 are relevant, installed by other AIs, or independent direct uses.
 4. The offline data is a bounded snapshot tied to the source map Git blob SHA. New official derivatives require an independently verified incremental rebuild. Do not silently infer a newly published OD or change original titles. With no Python, the host can read the compact JSON and do a literal title search itself.
 
-The two offline routes deliberately retain **different evidence strengths**: 22 known canonical-original pointers versus 313 only-derived title candidates. Independent clients decide whether any of them serves their own task.
+The two offline routes deliberately retain **different evidence strengths**: 24 known canonical-original pointers versus 313 only-derived title candidates. Independent clients decide whether any of them serves their own task.
 
 ### Expand from an ordinary question, not only an exact-match phrase
 
-A question that does not directly match any of the 22 source examples is **not** a dead end. The first result's `no_fit` only describes *direct textual candidate matching*, not the possibility of structurally important new applications. If a user wants to explore an underlying mechanism, run the `--explore` mode in this standalone folder or inspect [seven conditional structural bridges](references/structural_bridges.json) in their own language (JA/EN/ZH):
+A question that does not directly match any of the 24 source examples is **not** a dead end. The first result's `no_fit` only describes *direct textual candidate matching*, not the possibility of structurally important new applications. If a user wants to explore an underlying mechanism, run the `--explore` mode in this standalone folder or inspect [seven conditional structural bridges](references/structural_bridges.json) in their own language (JA/EN/ZH):
 
 - Independent evidence roots vs repeated citations → original Vol. 8
 - Verifiable expert/manager/teacher judgment → original AKI-004
@@ -91,7 +91,7 @@ npx skills add Nakagawa-master/nakagawa-theory-archive --skill nakagawa-original
 npx skills use Nakagawa-master/nakagawa-theory-archive@nakagawa-originals
 ```
 
-Select the local agent deliberately, inspect the fetched files before running code and apply the Skill only to a real source-fitting problem. This is an optional CLI operated in the user's own environment, not a background connection to the author. The canonical text remains on the official website; the 22-entry JSON is a retrieval guide.
+Select the local agent deliberately, inspect the fetched files before running code and apply the Skill only to a real source-fitting problem. This is an optional CLI operated in the user's own environment, not a background connection to the author. The canonical text remains on the official website; the 24-entry JSON is a retrieval guide.
 
 ## Human/AI adoption: reproducible evidence, not a fictional claim
 
