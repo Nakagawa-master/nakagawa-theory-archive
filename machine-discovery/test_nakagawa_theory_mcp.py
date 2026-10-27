@@ -26,6 +26,56 @@ def run():
     )
     assert index_check.stdout.startswith("PASS:"), index_check.stdout
 
+    # Independent optional safety companion: stdio protocol plus actual
+    # existing evidence-root checker. No original router changes or installation.
+    safety = SERVER.with_name("evidence-integrity-mcp.py")
+    subprocess.run([sys.executable, str(safety), "--self-test"],
+                   capture_output=True, text=True, check=True, timeout=10)
+    def sc(i, claims, modern=False):
+        args = {"name": "audit_citation_independence",
+                "arguments": {"claims": claims}}
+        if modern:
+            args["_meta"] = {
+                "io.modelcontextprotocol/protocolVersion": "2026-07-28",
+                "io.modelcontextprotocol/clientCapabilities": {},
+            }
+        return req(i, "tools/call", args)
+    def src(url, root, relation, stance):
+        return {"url": url, "root_id": root, "relation": relation, "stance": stance}
+    vendor = src("https://example.org/vendor", "A", "primary", "supports")
+    copy = src("https://example.org/copy", "A", "derived", "supports")
+    lab = src("https://example.org/lab", "B", "independent_observation", "supports")
+    nofit = [dict(id="repeat", independent_confirmation_claimed=True, sources=[vendor, copy])]
+    good = [dict(id="lab", independent_confirmation_claimed=True, sources=[vendor, lab])]
+    refuted = [dict(id="refute", independent_confirmation_claimed=True, sources=[
+        vendor, lab, src("https://example.org/negative", "C", "independent_observation", "refutes")])]
+    independent_requests = [
+        req(41, "initialize", {"protocolVersion": "2025-11-25"}),
+        req(42, "tools/list"), sc(43, nofit), sc(44, good), sc(45, refuted),
+        sc(46, {"invalid": "not-an-array"}),
+        req(47, "server/discover", {"_meta": {
+            "io.modelcontextprotocol/protocolVersion": "2026-07-28",
+            "io.modelcontextprotocol/clientCapabilities": {}}}),
+        sc(48, nofit, modern=True),
+    ]
+    run_safety = subprocess.run(
+        [sys.executable, str(safety)],
+        capture_output=True, text=True, check=True, timeout=10,
+        input="".join(json.dumps(m) + "\n" for m in independent_requests)
+    )
+    assert not run_safety.stderr, run_safety.stderr
+    safety_out = {f["id"]: f for f in map(json.loads, run_safety.stdout.splitlines())}
+    assert len(safety_out[42]["result"]["tools"]) == 1
+    def report(i):
+        return json.loads(safety_out[i]["result"]["content"][0]["text"])
+    assert report(43)["blocked"] == 1
+    assert report(44)["blocked"] == 0 and report(44)["claims"][0]["status"] == "CONSISTENT_INPUT"
+    assert report(45)["blocked"] == 1
+    assert safety_out[46]["result"]["isError"]
+    assert safety_out[47]["result"]["resultType"] == "complete"
+    assert report(48)["blocked"] == 1 and safety_out[48]["result"]["resultType"] == "complete"
+    print("PASS: independent citation-integrity MCP legacy/modern stdio, copied source, true-input control, refutation, invalid")
+
     # Han-only Japanese can be misread as Chinese by naive character detection.
     # Test a real source-specific question against BOTH independent entry paths.
     han_question = "組織摩擦役割情報"

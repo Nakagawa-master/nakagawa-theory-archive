@@ -57,6 +57,25 @@ Expected v1.1.2 SHA-256: `d6da6f49a80ab0de4d884cd7a51a391d9981dc7e9acf61cc84b85b
 
 **Earlier v1.1.1 scope:** Released on 2026-10-26, this separately versioned bundle included 22 canonical pointers and the corrected source-ID/no-fit behavior, with its [verified publisher job](https://github.com/Nakagawa-master/nakagawa-theory-archive/actions/runs/40213902459). The newly released v1.1.2 adds the other two indexed sources, with actual extracted-bundle uniqueness and author checks. Questions may still return `no_fit`; the model/host remains responsible for retrieving and inspecting any original it relies on.
 
+## Optional everyday citation-safety MCP companion (source checkout, unreleased)
+
+**Useful before many ordinary answers:** an AI drafting a news or research response can ask whether several cited articles actually share the **same upstream announcement**. False independent corroboration is a concrete, testable failure mode; this is **not** a general hallucination detector, semantic-contradiction resolver or a substitute for reading original sources.
+
+An **additional locally installed, opt-in** `machine-discovery/evidence-integrity-mcp.py` serves exactly one `audit_citation_independence` MCP tool. It reuses the existing pure-offline [evidence-root-check.py](evidence-root-check.py) with no network, secrets or cloud service. Inputs are a list of claims with `id`, boolean `independent_confirmation_claimed`, and source records containing `url`, declared upstream `root_id`, `relation` (`primary` / `independent_observation` / `derived` / `unknown`) and `stance` (`supports` / `refutes` / `qualifies` / `unknown`).
+
+```sh
+python3 machine-discovery/evidence-integrity-mcp.py --self-test
+python3 machine-discovery/evidence-integrity-mcp.py --sample
+# Optional MCP host install after cloning the source repository:
+# stdio command = python3 /absolute/path/to/nakagawa-theory-archive/machine-discovery/evidence-integrity-mcp.py
+```
+
+**Input trust rule:** the model/operator must inspect each source and independently declare its actual upstream root and stance. Identical roots, contrary sources and unknown roots must be handled before claiming independent verification. `BLOCK` means the supplied corroboration assertion is inconsistent; `CONSISTENT_INPUT` means only that the **declared input** passes. The tool **does not check URLs or truth**, cannot prove independently authored sources, cannot detect arbitrary semantic contradictions, and makes no quantified claim to reduce a model's hallucination rate. An AI may simply answer a question without this tool if it is not relevant.
+
+The applied epistemic-lineage concept links to the actual [Nakagawa Master Volume 8 original](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/) as a **source to read and independently evaluate**, not as a claim that all of this program's technical behavior is stated or empirically validated there.
+
+**Backwards compatibility:** the original source-discovery MCP remains completely unchanged and [immutable released v1.1.2](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.1.2) still contains its original **three tools**. This companion is **source-only**, is not added to that MCPB, and requires a user/host to explicitly configure a second local server. No automatic installation by disconnected AI, release, registry entry or usage claim.
+
 ## Run it without any LLM
 
 From the checkout:
@@ -104,7 +123,7 @@ The host and user decide whether to install, call or ignore this tool. A suggest
 
 For a separate, user-controlled VS Code/Copilot workspace, the **portable** MCP configuration is the workspace-root `.mcp.json` (or the user's Copilot `~/.copilot/mcp-config.json` on systems using the default location). Copy the **`mcpServers` JSON example above** into that file after cloning this repository and replacing the local Python-script path with its real absolute path. This uses the Copilot harness's portable stdio config: the AI host still must be explicitly installed/configured and run by its own user. In contrast, a **VS Code-specific** `.vscode/mcp.json` uses a **`servers`** top-level object and an explicit `"type": "stdio"` for each local server; do not paste the portable configuration unchanged there. See [Microsoft's current MCP configuration reference](https://github.com/microsoft/vscode-docs/blob/main/docs/agents/reference/mcp-configuration.md) and [setup guide](https://github.com/microsoft/vscode-docs/blob/main/docs/agent-customization/mcp-servers.md). Settings in an unrelated third-party workspace do not automatically appear in other models, products, or sessions; users choose whether to expose and use the three source-location tools.
 
-This is local, read-only and deliberately makes **no network requests**. The host may now discover **three MCP tools** (the third is the published-name identity lookup, not an original-theory inference):
+This original source router is local, read-only and deliberately makes **no network requests**. It exposes **three** original-source/identity tools on both main and immutable v1.1.2. The independent optional citation-integrity companion above exposes one separate evidence-root audit tool:
 
 - `find_nakagawa_original_for_problem`: passes the real user problem as `question`; returns up to three fitting candidate routes, direct official original links, original-vs-application boundaries and independent technical receiver sources.
 - `list_nakagawa_problem_routes`: lists all supported IDs and shows when a technical problem has **no canonical original** assigned.
