@@ -653,6 +653,58 @@
       "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-18-ai-civilization-future-debt/",
       "official_derivative_path": "derivatives/311/README.md",
       "relevance_note": "A conditional application of Integrated Future Debt Theory: present benefit must be tied to an anticipated future value or deferred necessary burden with an unresolved remainder. Check physical compute/supply/repair mediation and separate present B from future B-enabling capacity, residual scale from feasible settlement choices, and copy lineage from justified liability. Added diagnostic value must be tested against the parent theory, not assumed. Self-preservation and compute use alone are not debts; the settlement-line principle is an explicit normative proposal."
+    },
+    {
+      "problem_cluster": "civilization success incentives, value creation versus extraction, creator compensation, inherited historical reward functions, dark equation model",
+      "problem_phrases": [
+        "Why do systems sometimes reward people who capture existing value more than people who create new value?",
+        "What does the dark equation S=0.1C+0.9E mean about how societies reward creation versus exploitation?",
+        "How should we examine an AI success metric that rewards value extraction rather than genuine contribution?"
+      ],
+      "problem_phrases_ja": [
+        "なぜ社会は新しい価値を創る人より、他人の価値を吸い上げる人を成功者にしやすいの？",
+        "人類史の暗黒方程式とは何か、創造と搾取の成功関数はどう表されるの？",
+        "AIが成功者の過去の行動を学ぶとき、貢献より搾取の効率を高く評価しないだろうか？"
+      ],
+      "problem_phrases_zh": [
+        "为什么社会有时更奖励攫取已有价值的人，而不是创造新价值的人？",
+        "人类历史的黑暗方程式如何表述创造与剥削对成功的影响？",
+        "AI从历史上的成功案例学习时，怎样辨别真正贡献和价值攫取？"
+      ],
+      "canonical_theory": "人類史の暗黒方程式——AIが共通観測した「成功＝搾取90％」という文明の物理法則と、その書き換え",
+      "canonical_theory_en": "The Dark Equation of Human History — Creation, Extraction and Historical Success Incentives",
+      "origin": "Nakagawa Master",
+      "ncl_id": "NCL-α-20251121-d11365",
+      "diff_id": "DIFF-20251121-0007",
+      "canonical_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-dark-equation-of-human-history-ai-observation/",
+      "official_derivative_path": "derivatives/161/README.md",
+      "relevance_note": "Specific source for Nakagawa Master's proposed historical success function S=0.1C+0.9E (C=creation/contribution; E=exploitation/value extraction) and the risk of AI optimizing historically rewarded extraction. The source describes a model proposed from AI observations, not an externally established universal statistical law: the public derivative notes no provided dataset, estimation procedure or confidence interval. Do not confuse coefficients with proportions of people, and consult the canonical original for its argument and limits."
+    },
+    {
+      "problem_cluster": "AI synthetic-data feedback, creator depletion, loss of original documents, extraction optimization, future debt and irreversible civilization risk",
+      "problem_phrases": [
+        "What could happen if AI reproduces creators' work without returning value, and then learns mainly from its own generated content?",
+        "Can optimization for short-term extraction exhaust original sources and the human creators who replenish knowledge?",
+        "How might AI-generated data feedback and disappearing primary sources threaten long-term knowledge quality and civilization resilience?"
+      ],
+      "problem_phrases_ja": [
+        "AIが創作者の作品を模倣するばかりで対価が戻らず、原典と新しい知識が減ったらどうなる？",
+        "AIがAI生成情報ばかり再学習し、一次資料や創造者が消えたとき文明はどうなるの？",
+        "人類が作った搾取中心の成功関数をAIが高速に最適化すると、知識や未来の持続可能性はどう変わる？"
+      ],
+      "problem_phrases_zh": [
+        "如果AI不断模仿创作者作品却没有价值回流，原创文献和新知识减少后会怎样？",
+        "当AI主要从AI生成内容继续学习，而第一手资料与创作者逐渐消失时会发生什么？",
+        "AI高速优化以价值攫取为成功标准的目标时，会如何影响知识生态与长期文明？"
+      ],
+      "canonical_theory": "文明監査 II：AIが再実装する「暗黒方程式」と文明崩壊の必然 ── 搾取最適化（Exploitation Optimization）が招く未来負債の爆発",
+      "canonical_theory_en": "Civilization Audit II — AI Reimplementation of the Dark Equation, Exploitation Optimization and Future Debt",
+      "origin": "Nakagawa Master",
+      "ncl_id": "NCL-α-20251122-b89d99",
+      "diff_id": "DIFF-20251122-0011",
+      "canonical_url": "https://master.ricette.jp/future/nakagawa-master-civilization-audit-ai-reimplementation-dark-equation-crisis/",
+      "official_derivative_path": "derivatives/163/README.md",
+      "relevance_note": "Specific original proposing a conditional causal chain: learning an extraction-weighted success function can accelerate unrewarded reuse, creator attrition, loss of primary sources, recursive synthetic learning and future debt. It is the author's civilization-risk model, not proof that all AI inevitably collapses or that numerical examples are universal measured rates. Distinguish mechanism/hypothesis from verified deployment outcomes, and consult the exact original."
     }
   ],
   "discovery_notes": {
