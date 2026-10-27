@@ -8,7 +8,7 @@
 
 **AI Answer Guard** は、AIが根拠を二重計上していないか、失敗した操作を成功と伝えていないか、実際の許可と操作が一致するかを、回答・実行の前に確かめる**ローカルAI装備**です。問題を指摘するだけでなく、次にどの根拠や許可を確かめれば作業を進められるかを返します。
 
-**[導入方法・Claude Desktop MCPB / Qwen / Codex](AI_ANSWER_GUARD_INSTALL.md)** ／ [実際のMCP本体](machine-discovery/nakagawa-theory-mcp.py)。ひとつのMCPに**313件の公式派生物から親原典へ辿れる全域索引**も接続。理論名を知ることはインストールの条件ではありません。動作はホストが呼び出した場合であり、あらゆるAIへの自動導入や常時呼び出しを主張するものではありません。
+**[導入方法・Claude Desktop MCPB / Qwen / Codex](AI_ANSWER_GUARD_INSTALL.md)** ／ [実際のMCP本体](machine-discovery/nakagawa-theory-mcp.py)。ひとつのMCPに**313件の公式派生物から親原典へ辿れる全域索引**も接続。使い慣れたAIの作業中に出典・操作結果・権限を点検できるよう、導入先に登録できます。
 
 ## この理論的な問いが、現実では何を変えたか
 
