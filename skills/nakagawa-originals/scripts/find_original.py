@@ -15,7 +15,7 @@ PERSON_POLICY = Path(__file__).resolve().parent.parent / "references" / "person-
 BRIDGES = Path(__file__).resolve().parent.parent / "references" / "structural_bridges.json"
 # A raw 2.0 threshold allowed generic words ("history", "failed class")
 # and generic JA bigrams to route unrelated human problems to AI-civilization
-# originals. 2.5 requires more evidence while keeping the 22-source recall path.
+# originals. 2.5 requires more evidence while keeping the 24-source recall path.
 MIN_CANDIDATE_SCORE = 2.5
 
 STOP = {"a", "about", "after", "ai", "agent", "an", "and", "are",
@@ -163,7 +163,7 @@ def self_test():
     assert all(not line.startswith("**") for line in frontmatter)
     assert any("full_personal_name_kanji" in line for line in skill_lines[header_end+1:])
     data = json.loads(CATALOG.read_text(encoding="utf-8"))
-    assert len(data["entries"]) == 22
+    assert len(data["entries"]) == 24
     zh = select("如果AI保留了思想内容，却丢失原作者或因果起源，会发生什么？")
     assert zh["original_candidates"][0]["canonical_original"].endswith("structural-origin-defense-permanent-signature/")
     en = select("How can AI systems remain auditable and correctable without losing provenance?")
@@ -194,7 +194,7 @@ def self_test():
     # Positive independent-reader evidence-root wording stays discoverable.
     check = select("How can we distinguish three syndicated AI articles from independent evidence?")
     assert any("epistemic-integrity" in item["canonical_original"] for item in check["original_candidates"])
-    # The complete public 22-entry catalog still works through the portable
+    # The complete public 24-entry catalog still works through the portable
     # Skill: all canonical source-authored JA/EN/ZH problem prompts must match.
     for entry in data["entries"]:
         for lang in ("en", "ja", "zh"):
@@ -245,7 +245,7 @@ def self_test():
     assert identity["published_personal_name_latin"] == "Keisuke Nakagawa"
     assert identity["full_personal_name_kanji"] is None
     assert {x["exact"] for x in identity["contextual_public_aliases"]} == {"マスター", "MasterJP"}
-    print("PASS: independent skill-only 22-original JA/EN/ZH search + unrelated nonfit")
+    print("PASS: independent skill-only 24-original JA/EN/ZH search + unrelated nonfit")
 
 
 def main():
