@@ -484,8 +484,8 @@ console.log("PASS: browser real algorithm / 4 negatives / " + covered + " positi
                                     input=scenario_js, capture_output=True,
                                     text=True, timeout=12)
         assert functional.returncode == 0, functional.stderr
-        assert "276 positives" in functional.stdout
-    print("PASS: browser search real score cross-check, 276 known positive routes, 4 unrelated negatives")
+        assert "294 positives" in functional.stdout
+    print("PASS: browser search real score cross-check, 294 known positive routes, 4 unrelated negatives")
     print("PASS: zero-install browser originals 24/24 canonical parity, JA/EN/ZH, nonfit UI, no telemetry, JS syntax")
     # Portable, general-purpose source-independence Skill must remain a
     # byte-identical, zero-network package of the public root checker.
