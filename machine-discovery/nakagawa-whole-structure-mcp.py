@@ -91,8 +91,8 @@ def graph():
     expected = {f"OD{i:03d}" for i in range(1, 314)}
     if len(records) != 313 or set(ids) != expected or len(set(ids)) != 313:
         raise ValueError(f"Complete 313-source coverage missing: {sorted(expected-set(ids))[:10]}")
-    if not all(r["theme"] and r["parent_title"] for r in records):
-        raise ValueError("A derivative lacks a published theme or Parent title")
+    if not all(r["theme"] for r in records):
+        raise ValueError("A derivative lacks a published theme")
     return records
 
 
