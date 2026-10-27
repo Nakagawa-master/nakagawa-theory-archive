@@ -1,0 +1,40 @@
+name: Verify AI Answer Guard container for third-party MCP directories
+on:
+  pull_request:
+    paths:
+      - 'Dockerfile'
+      - '.dockerignore'
+      - 'glama.json'
+      - 'machine-discovery/test_ai_answer_guard_container.py'
+      - '.github/workflows/ai-answer-guard-glama-smoke.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'Dockerfile'
+      - '.dockerignore'
+      - 'glama.json'
+      - 'machine-discovery/test_ai_answer_guard_container.py'
+permissions:
+  contents: read
+jobs:
+  container-introspection:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify directory ownership metadata and immutable original v1.2 source identity
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          j=json.loads(Path("glama.json").read_text())
+          assert j["$schema"] == "https://glama.ai/mcp/schemas/server.json"
+          assert j["maintainers"] == ["Nakagawa-master"]
+          s=Path("machine-discovery/nakagawa-theory-mcp.py").read_text()
+          assert '"name": "nakagawa-public-original-router"' in s
+          assert '"version": "1.2.0"' in s
+          PY
+      - name: Build same 313-source single MCP for Glama-style introspection
+        run: docker build --tag nakagawa-ai-answer-guard:glama-smoke .
+      - name: Run isolated real MCP legacy/modern and core daily benefit checks
+        run: python3 machine-discovery/test_ai_answer_guard_container.py
