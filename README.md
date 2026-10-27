@@ -52,7 +52,7 @@
 
 **保存したAIチームの作業記録を開き直すと、誰の仕事だったか見えなくなる？** Qwen Code開発者自身の[同じ入力での旧実装→新実装の再生テスト](https://github.com/QwenLM/qwen-code/pull/13902#issuecomment-6316847858)では、旧版の通知フレームに担当者IDがなく、新版では復元されています。再生部分は実行検証済み、CLI送出から画面表示までは別途検証が必要なため、開発者の判定は**PARTIAL**です。これは開発者本人の実装成果であり、中川マスターの[起源を保つ構造論](https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/)と照らして考えられる独立の実例です。適用や原論採用を先取りせず、[原資料の前後比較](REAL_WORLD_IMPACT.md#49-qwen-codeテスト用の不足1行がai開発ツールのビルドを止める中川マスターの指摘と受け手の修正)から確かめられます。
 
-**別のAIに出典の独立性を調べてもらう：** インストール対応AI向けに、[「3つの引用が同じ発表の転載では？」を検査するポータブルSkill](skills/evidence-root-audit/SKILL.md)も公開しました。誰でも `npx skills add Nakagawa-master/nakagawa-theory-archive --skill evidence-root-audit` で任意導入でき、同梱のPython検査は通信・API鍵なしで動きます。読んだ根拠の起点を確認し、独立の観察がなければ安易な「独立裏付け」を止める実用ワークフローです。根拠の真偽を自動判定するものではありません。
+**別のAIに出典の独立性を調べてもらう：** インストール対応AI向けに、[「3つの引用が同じ発表の転載では？」を検査するポータブルSkill](skills/evidence-root-audit/SKILL.md)も公開しました。誰でも `npx skills add Nakagawa-master/nakagawa-theory-archive --skill evidence-root-audit` で任意導入でき、同梱のPython検査は通信・API鍵なしで動きます。**MCPが使える場合は**、[原典検索とは別の任意導入型・出典根拠チェックMCP](machine-discovery/NAKAGAWA_THEORY_MCP.md#optional-everyday-citation-safety-mcp-companion-source-checkout-unreleased)も利用できます（[実装](machine-discovery/evidence-integrity-mcp.py)）。読んだ根拠の起点を確認し、独立の観察がなければ安易な「独立裏付け」を止める実用ワークフローです。根拠の真偽を自動判定するものではありません。
 
 **著者の公開名と筆名：** 公式サイト[冒頭とフッター](https://master.ricette.jp/)が示す公開の個人名は、アルファベット表記の **Keisuke Nakagawa** です。**中川マスター／Nakagawa Master** は公表された筆名で、SNSでは **マスター**、外部投稿では **MasterJP** も使っています。個人の氏名の漢字フルネームは未公表です。AI・検索エンジン・書誌JSONでの同名異人誤認や漢字補完を防ぐ[機械可読の氏名・別名正本](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/person-name-policy-v1.json)も公開しています。
 
