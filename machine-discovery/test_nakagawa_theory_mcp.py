@@ -152,6 +152,42 @@ def run():
             "name": "find_nakagawa_original_for_problem",
             "arguments": {"question": "AIの最新モデルの価格を比較したい"},
         }),
+        req(18, "tools/call", {
+            "name": "audit_citation_independence",
+            "arguments": {"claims": [{
+                "id": "repeated-vendor-release", "independent_confirmation_claimed": True,
+                "sources": [
+                    {"url": "https://example.org/original", "root_id": "vendor",
+                     "relation": "primary", "stance": "supports"},
+                    {"url": "https://example.org/repost", "root_id": "vendor",
+                     "relation": "derived", "stance": "supports"}]}]},
+        }),
+        req(19, "tools/call", {
+            "name": "audit_citation_independence",
+            "arguments": {"claims": [{
+                "id": "lab-check", "independent_confirmation_claimed": True,
+                "sources": [
+                    {"url": "https://example.org/original", "root_id": "vendor",
+                     "relation": "primary", "stance": "supports"},
+                    {"url": "https://example.org/lab", "root_id": "lab",
+                     "relation": "independent_observation", "stance": "supports"}]}]},
+        }),
+        req(20, "tools/call", {
+            "name": "audit_citation_independence",
+            "arguments": {"claims": [{
+                "id": "unresolved-refutation", "independent_confirmation_claimed": True,
+                "sources": [
+                    {"url": "https://example.org/original", "root_id": "vendor",
+                     "relation": "primary", "stance": "supports"},
+                    {"url": "https://example.org/lab", "root_id": "lab",
+                     "relation": "independent_observation", "stance": "supports"},
+                    {"url": "https://example.org/refute", "root_id": "other",
+                     "relation": "independent_observation", "stance": "refutes"}]}]},
+        }),
+        req(21, "tools/call", {
+            "name": "audit_citation_independence",
+            "arguments": {"claims": "unsupported"},
+        }),
     ]
     p = subprocess.run(
         [sys.executable, str(SERVER)],
@@ -160,12 +196,12 @@ def run():
     )
     assert not p.stderr, p.stderr
     frames = [json.loads(x) for x in p.stdout.splitlines() if x.strip()]
-    assert len(frames) == 17, f"Expected seventeen responses (one notification), got {len(frames)}"
+    assert len(frames) == 21, f"Expected 21 responses (one notification), got {len(frames)}"
     results = {f["id"]: f for f in frames}
-    assert set(results) == set(range(1, 18))
+    assert set(results) == set(range(1, 22))
     assert all(f["jsonrpc"] == "2.0" for f in frames)
     assert results[1]["result"]["protocolVersion"] == "2025-11-25"
-    assert len(results[2]["result"]["tools"]) == 3
+    assert len(results[2]["result"]["tools"]) == 4
     assert results[2]["result"]["tools"][0]["inputSchema"]["properties"]["explore"]["type"] == "boolean"
 
     def unpack(index):
@@ -226,6 +262,20 @@ def run():
             assert result["original_catalog_route_count"] == 0, result
         assert new["matching_routes"] == baseline["matching_routes"]
     assert results[15]["result"]["isError"] is True
+    # Real external-client style framed calls. Controls detect both bad and
+    # apparently consistent source declarations without claiming outside truth.
+    blocked = unpack(18)
+    assert blocked["blocked"] == 1
+    assert blocked["claims"][0]["status"] == "BLOCK"
+    assert "fewer than two supporting upstream roots" in blocked["claims"][0]["issues"]
+    consistent = unpack(19)
+    assert consistent["blocked"] == 0
+    assert consistent["claims"][0]["status"] == "CONSISTENT_INPUT"
+    assert "does not establish" in consistent["decision_boundary"]
+    refuted = unpack(20)
+    assert refuted["blocked"] == 1
+    assert any("contrary source present" in m for m in refuted["claims"][0]["issues"])
+    assert results[21]["result"]["isError"] is True
     # A separate modern-era MCP client process uses no initialize handshake.
     # Assert the official 2026-07-28 envelope, discovery, tool results, and
     # unsupported-version responses on real newline-delimited stdio.
@@ -259,6 +309,11 @@ def run():
         }),
         mreq(108, "ping"),
         mreq(109, "initialize", {"protocolVersion": MODERN}),
+        mreq(110, "tools/call", {"name": "audit_citation_independence",
+            "arguments": {"claims": [{
+                "id": "single-origin", "independent_confirmation_claimed": True,
+                "sources": [{"url": "https://example.org/article", "root_id": "release-A",
+                            "relation": "primary", "stance": "supports"}]}]}}),
     ]
     modern_process = subprocess.run(
         [sys.executable, str(SERVER)],
@@ -269,14 +324,14 @@ def run():
     modern_frames = [json.loads(x) for x in modern_process.stdout.splitlines() if x.strip()]
     assert len(modern_frames) == len(modern_messages)
     modern = {f["id"]: f for f in modern_frames}
-    assert set(modern) == set(range(101, 110))
+    assert set(modern) == set(range(101, 111))
     discovery = modern[101]["result"]
     assert discovery["resultType"] == "complete"
     assert MODERN in discovery["supportedVersions"]
     assert discovery["capabilities"]["tools"]["listChanged"] is False
     assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "nakagawa-public-original-router"
-    assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["version"] == "1.1.2"
-    assert len(modern[102]["result"]["tools"]) == 3
+    assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["version"] == "1.1.3-dev"
+    assert len(modern[102]["result"]["tools"]) == 4
     assert modern[102]["result"]["resultType"] == "complete"
     def modern_unpacked(i):
         frame = modern[i]["result"]
@@ -301,6 +356,8 @@ def run():
     assert modern[107]["error"]["code"] == -32602
     assert modern[108]["error"]["code"] == -32601
     assert modern[109]["error"]["code"] == -32601
+    assert modern_unpacked(110)["blocked"] == 1
+    assert modern_unpacked(110)["conceptual_source"]["author_pen_name"] == "Nakagawa Master / 中川マスター"
     print("PASS: real MCP 2026-07-28 stdio; discover/list/call/explore/nonfit/version guard/legacy-era isolation")
 
     # A second, zero-install recipient path: the browser-only finder must carry
