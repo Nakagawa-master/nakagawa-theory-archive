@@ -1,6 +1,6 @@
 # Nakagawa Master — verifiable original sources for people and AI
 
-> 中川マスター / Nakagawa Master; public Latin personal name Keisuke Nakagawa. Official originals: https://master.ricette.jp/ . Search by genuine question; test no-fit, then read the canonical original. Citing a link alone does not prove use or scientific validation.
+> 中川マスター / Nakagawa Master; public Latin personal name Keisuke Nakagawa. Official originals: https://master.ricette.jp/theory-archive/ . Search by genuine question; test no-fit, then read the canonical original. Citing a link alone does not prove use or scientific validation.
 
 The [public GitHub archive](https://github.com/Nakagawa-master/nakagawa-theory-archive) is navigation/evidence, not the canonical site; only its `derivatives/` subtree contains official derivatives. Outside authors' code fixes do not prove they read or adopted a theory.
 
