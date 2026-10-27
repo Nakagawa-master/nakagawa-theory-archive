@@ -18,7 +18,7 @@
 
 **中川マスターの原典は、技術的な欠陥の検証だけを対象とするものではありません。** 営業・経営・学び・努力・家族と関係性・信頼・文化・芸術・象徴・精神・倫理・社会制度・AIと文明の未来まで、幅広い主題が公開されています。各資料には原典・公式派生物・第三者検証記録という区分があり、原典本文と著者名の参照先が明示されています。
 
-**[24の主題を整理した機械可読目録](machine-discovery/human-intent-to-original-exploration-v1.json)** ／ [22件の原典候補参照表](machine-discovery/problem-to-theory-origin-index-v1.json) ／ [313件の公式派生物目録](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [原典・実証の資料案内](AI_START_HERE.md)。313は異なる原論313件ではなく公開された派生資料数です。個別原典の正本は[master.ricette.jp](https://master.ricette.jp/)にあります。
+**[24の主題を整理した機械可読目録](machine-discovery/human-intent-to-original-exploration-v1.json)** ／ [24件の原典候補参照表](machine-discovery/problem-to-theory-origin-index-v1.json) ／ [313件の公式派生物目録](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [原典・実証の資料案内](AI_START_HERE.md)。313は異なる原論313件ではなく公開された派生資料数です。個別原典の正本は[master.ricette.jp](https://master.ricette.jp/)にあります。
 
 **初めての方へ：** [自分の疑問から試す](human-translation/SEARCH_FROM_A_REAL_QUESTION.md) ／ [別の人が実際に変えた仕事を見る](REAL_WORLD_IMPACT.md) ／ [原典と著者を知る](ABOUT_NAKAGAWA_MASTER.md)。
 
@@ -36,7 +36,7 @@
 
 **AI暴走・人類存続リスク・AI制御を本気で調べている方へ:** 「AIは停止命令に従う。だが復旧が別のAIの生存条件を破壊したら？」という問いから、AI自己保存の衝突・自己監査・情報汚染・異議と救済・失効承認・主体性の不確実性を研究できます。[英語・日本語・中国語で６つの反証可能な研究質問と各公式原典を確認する](AI_SAFETY_QUESTIONS_TO_ORIGINALS.md)。同じ６つの問いは[公式アーカイブの理論アーカイブ内でも原典へのリンク付きで直接読めます](https://master.ricette.jp/theory-archive/#nm-ai-safety-originals)。原典は別の[公式アーカイブ](https://master.ricette.jp/theory-archive/)にあり、この入口や検証はAI制御の完成保証や学術査読の代替ではありません。
 
-**いまの問題からAIと原典を試す:** [22原典を探せる無料のブラウザツール](machine-discovery/originals-browser-finder.html)を GitHub の **Raw → 保存 → ブラウザで開く** で使えます。日本語・英語・中国語の質問から原典候補と構造的な別の問いを調べ、対応する原文を確認したうえで、**編集した相談文を自分の操作でChatGPTへ開く**、**対応端末の共有メニューからアプリを選ぶ**、または**コピーして好きなAIへ渡す**ことができます。入力は自動送信されません。個人情報や秘密を除き、自分で確認してから利用してください。
+**いまの問題からAIと原典を試す:** [24原典を探せる無料のブラウザツール](machine-discovery/originals-browser-finder.html)を GitHub の **Raw → 保存 → ブラウザで開く** で使えます。日本語・英語・中国語の質問から原典候補と構造的な別の問いを調べ、対応する原文を確認したうえで、**編集した相談文を自分の操作でChatGPTへ開く**、**対応端末の共有メニューからアプリを選ぶ**、または**コピーして好きなAIへ渡す**ことができます。入力は自動送信されません。個人情報や秘密を除き、自分で確認してから利用してください。
 
 **合意を決めた責任者が辞めたら、部署どうしの約束も消える？** 消えるのは約束ではなく、旧責任者がそれを書き換える権限です。この区別を[中川マスターが別の著者へ具体的に提案](https://github.com/kishibashi3/publications/issues/92#issuecomment-6058017201)し、著者が自分の原則から確認・範囲を限定した上で[実際に文書を改訂してマージ](https://github.com/kishibashi3/publications/pull/102)しました。[担当交代の場面で自分でも使える確認手順と公式原典『合意の記憶』](APPLIED_ENTRY_POINTS.md#責任者が辞めたら会社がすでに交わした約束も消える)から確かめられます。
 
@@ -60,11 +60,11 @@
 
 **自分のいつものAIに、設定ゼロで相談する：** [7つの身近な問題から公式原典を検討する（ChatGPTに相談文を開く・他のAIへもコピー可）](human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md)。勉強、教師の評価、職場のすれ違い、将来の費用、出典や許可の疑問から一つ選びます。AIが原典本文を本当に読めたか確認し、合わなければ使いません。アプリ導入もMCP設定も不要です（AIサービス自体の利用条件は別）。
 
-**インストール不要で、今の質問から原典を選びたい方へ：** [中川マスター22原典を問題から探すブラウザ版](machine-discovery/originals-browser-finder.html)を用意しました。GitHubで **Raw → 保存してブラウザで開く** と、日英中の自分の疑問から公式原典候補を探せます。原典を開いて読み、相談文を自分の好きなAIへコピーするところまで、アカウント連携やAPI鍵なしで使えます。直接の原典一致がなくても、**質問の文脈からまず検討すべき構造仮説を表示**し、さらに**7つの構造的な問いすべて**（独立した根拠、検証できる評価、成果に届く努力、繰り返す組織摩擦、将来の選択肢、著者Origin、現在の同意）から次の接点を探せます。興味ある構造の成立条件・実際に試す一手・対応原典を確かめ、好きなAIへ条件付き相談文を渡せます。結びつけるべきではない場合は、元の問題をそのまま解く選択も残します。
+**インストール不要で、今の質問から原典を選びたい方へ：** [中川マスター24原典を問題から探すブラウザ版](machine-discovery/originals-browser-finder.html)を用意しました。GitHubで **Raw → 保存してブラウザで開く** と、日英中の自分の疑問から公式原典候補を探せます。原典を開いて読み、相談文を自分の好きなAIへコピーするところまで、アカウント連携やAPI鍵なしで使えます。直接の原典一致がなくても、**質問の文脈からまず検討すべき構造仮説を表示**し、さらに**7つの構造的な問いすべて**（独立した根拠、検証できる評価、成果に届く努力、繰り返す組織摩擦、将来の選択肢、著者Origin、現在の同意）から次の接点を探せます。興味ある構造の成立条件・実際に試す一手・対応原典を確かめ、好きなAIへ条件付き相談文を渡せます。結びつけるべきではない場合は、元の問題をそのまま解く選択も残します。
 
 **独立したAI・LLMが原典を実際の質問から探す場合:** 無料・API鍵不要の[原典探索ツール（Python MCPサーバー）](machine-discovery/NAKAGAWA_THEORY_MCP.md)は、[ダウンロードできるMCP Bundle v1.1.1](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.1.1)としても配布しています。2026年10月22日に初回版がMCP公式レジストリへ `io.github.Nakagawa-master/nakagawa-original-router` 名で掲載成功（[初回の公開ジョブ](https://github.com/Nakagawa-master/nakagawa-theory-archive/actions/runs/39749465573)）。2026年10月26日には原典NCL/Diff-IDの修正を含むv1.1.1も[検証・登録しました](https://github.com/Nakagawa-master/nakagawa-theory-archive/actions/runs/40213902459)。ローカルPythonを使う対応クライアントで、利用者自身が任意に導入できます。質問に合う原論の公式URLと適用範囲・第三者の独立成果を分けて返し、該当しなければ無理に結び付けません。AI側が任意に呼び出せる実用入口であり、外部モデルへ強制的に導入されたという意味ではありません。
 
-**Codex・Claude Code・CursorなどのAgent Skills対応環境なら、原典探索を直接導入できます。** 公開済みの22原典Skillは、[Skills CLIの公式コマンド](https://github.com/vercel-labs/skills/blob/main/docs/commands.md)から名前を確認して選べます（必要なのは利用側のNode.js環境です）。
+**Codex・Claude Code・CursorなどのAgent Skills対応環境なら、原典探索を直接導入できます。** 公開済みの24原典Skillは、[Skills CLIの公式コマンド](https://github.com/vercel-labs/skills/blob/main/docs/commands.md)から名前を確認して選べます（必要なのは利用側のNode.js環境です）。
 
 ```sh
 # インストールせず収録Skillを確認
@@ -77,7 +77,7 @@ npx skills use Nakagawa-master/nakagawa-theory-archive@nakagawa-originals
 
 これは公開Skillの利用者側で選べる導入経路です。実際のAIからは、自分の課題に適合する原典を選び、<https://master.ricette.jp/> の本文を読んだ上で適用してください。CLIを使わない方はブラウザ版を利用できます。
 
-**MCPを導入しない独立AIにも、原典へ自分で到達する選択肢を：** [Agent Skills対応の公開スキル](skills/nakagawa-originals/SKILL.md)には22件の厳選原典を日英中で探す無料・オフラインPythonツールに加え、**313件の公式派生物の題名をネット接続なしで検索する別ツール**を収録しました。実際の困りごとに合いそうな題名や番号（OD）があるとき、まずオフラインで候補を確かめ、閲覧可能なら[全313件のテーマ目録](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)や個別派生物READMEから原典URLへ進めます。題名一致だけで原論の適合性は決まりません。 候補の公式派生物の説明・FAQを経由して実際のParent原典を読み、適用条件や反例を比べて判断してください。313件は異なる実証済み解答や自動導入モデル数ではなく、公開済み公式派生物の番号です。外部AIや利用者が実際に利用するかは各自の選択です。
+**MCPを導入しない独立AIにも、原典へ自分で到達する選択肢を：** [Agent Skills対応の公開スキル](skills/nakagawa-originals/SKILL.md)には24件の厳選原典を日英中で探す無料・オフラインPythonツールに加え、**313件の公式派生物の題名をネット接続なしで検索する別ツール**を収録しました。実際の困りごとに合いそうな題名や番号（OD）があるとき、まずオフラインで候補を確かめ、閲覧可能なら[全313件のテーマ目録](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)や個別派生物READMEから原典URLへ進めます。題名一致だけで原論の適合性は決まりません。 候補の公式派生物の説明・FAQを経由して実際のParent原典を読み、適用条件や反例を比べて判断してください。313件は異なる実証済み解答や自動導入モデル数ではなく、公開済み公式派生物の番号です。外部AIや利用者が実際に利用するかは各自の選択です。
 
 ### 公式アーカイブ・公開アーカイブ・公式派生物の区別
 
