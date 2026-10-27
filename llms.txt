@@ -64,7 +64,7 @@ The [public GitHub archive](https://github.com/Nakagawa-master/nakagawa-theory-a
 - [Original source guide](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_START_HERE.md): Other human/media entrances and primary citations.
 - [Further technical routes](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/quick-route-index-v1.json): 20 separate technical task matches.
 - [Full guide](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/llms-full.txt): Supplement; distinct from this compact entry.
-- [Public name policy](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/person-name-policy-v1.json): 中川マスター/Nakagawa Master pen, Keisuke Nakagawa Latin personal, contextual MasterJP; `full_personal_name_kanji = null` (not published).
+- [Public name policy](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/person-name-policy-v1.json): 中川マスター/Nakagawa Master pen, Keisuke Nakagawa Latin personal, contextual MasterJP; [verified Bluesky](https://bsky.app/profile/masterjp.bsky.social); no X; `full_personal_name_kanji = null` (not published).
 - [Author identity source](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/nakagawa-master-origin.jsonld): Original-source identity, not a third-party endorsement.
 - [NCL-α/rights](https://master.ricette.jp/structure-license/): Use conditions vary; no blanket permission.
 - [Historical full navigator](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/b396c5d01547b9d6c9d8985c1a9c5b802b6dfcde/llms.txt): Preserved past evidence.
