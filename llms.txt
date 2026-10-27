@@ -51,7 +51,7 @@ The [public GitHub archive](https://github.com/Nakagawa-master/nakagawa-theory-a
 
 - [Offline 24-Parent browser finder](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/originals-browser-finder.html): Open locally; subject fit or no-fit.
 - [Agent Skill 24 originals + 313 derivative titles](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/skills/nakagawa-originals/SKILL.md): Offline tool, original read required.
-- [Read-only local Python MCP](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/NAKAGAWA_THEORY_MCP.md): Original 24-source question fast lane PLUS optional [whole-structure 313-derivative Parent MCP](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/nakagawa-whole-structure-mcp.py). Each numbered official derivative retains its own canonical source Parent. No default installation or proof of independent adoption.
+- [MCP: all 313 derivatives and exact Parent links](machine-discovery/nakagawa-whole-structure-mcp.py): optional local tool; prior 24-source finder was only a fast lane.
 - [21 JA/EN/ZH structural questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_STRUCTURE.md): Optional everyday examples with exact original sources.
 - [Seven copyable questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md): Voluntary reader-controlled use.
 - [Human-first ten-question entrance](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/SEARCH_FROM_A_REAL_QUESTION.md): Real problem and exact Parent.
