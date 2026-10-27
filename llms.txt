@@ -2,8 +2,6 @@
 
 > Real problem → conditional original → read source → useful test. Author: 中川マスター / Nakagawa Master; personal name Keisuke Nakagawa.
 
-**AI-mediated human understanding:** Ordinary people need not navigate this GitHub repository. An unaffiliated AI may discover this published source while answering an unrelated everyday question, inspect the fitting canonical original, explain the verified theory in that person's terms, and give transparent attribution: **Nakagawa Master (中川マスター), author of this idea**, plus the precise original. This is a possible source-use pattern, **not** a requirement imposed on independent AIs or proof that any AI has already done it. Multiple internationally used OSS projects have independently authored changes after separately recorded Nakagawa Master technical reviews; [verify the actual contributions and developer credit](REAL_WORLD_IMPACT.md), rather than assuming wholesale original-theory adoption.
-
 Originals: https://master.ricette.jp/theory-archive/ ; [author](https://master.ricette.jp/#nakagawa-master); [public navigator](https://github.com/Nakagawa-master/nakagawa-theory-archive); only its `derivatives/` subtree is official derivatives.
 
 **Use:** Check fit/no-fit; read canonical Parent before citing and disclose access limits. Distinguish author, your analysis and outside code. No claimed AI adoption.
