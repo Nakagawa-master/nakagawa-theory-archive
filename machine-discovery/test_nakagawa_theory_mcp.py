@@ -26,6 +26,56 @@ def run():
     )
     assert index_check.stdout.startswith("PASS:"), index_check.stdout
 
+    # Independent optional safety companion: stdio protocol plus actual
+    # existing evidence-root checker. No original router changes or installation.
+    safety = SERVER.with_name("evidence-integrity-mcp.py")
+    subprocess.run([sys.executable, str(safety), "--self-test"],
+                   capture_output=True, text=True, check=True, timeout=10)
+    def sc(i, claims, modern=False):
+        args = {"name": "audit_citation_independence",
+                "arguments": {"claims": claims}}
+        if modern:
+            args["_meta"] = {
+                "io.modelcontextprotocol/protocolVersion": "2026-07-28",
+                "io.modelcontextprotocol/clientCapabilities": {},
+            }
+        return req(i, "tools/call", args)
+    def src(url, root, relation, stance):
+        return {"url": url, "root_id": root, "relation": relation, "stance": stance}
+    vendor = src("https://example.org/vendor", "A", "primary", "supports")
+    copy = src("https://example.org/copy", "A", "derived", "supports")
+    lab = src("https://example.org/lab", "B", "independent_observation", "supports")
+    nofit = [dict(id="repeat", independent_confirmation_claimed=True, sources=[vendor, copy])]
+    good = [dict(id="lab", independent_confirmation_claimed=True, sources=[vendor, lab])]
+    refuted = [dict(id="refute", independent_confirmation_claimed=True, sources=[
+        vendor, lab, src("https://example.org/negative", "C", "independent_observation", "refutes")])]
+    independent_requests = [
+        req(41, "initialize", {"protocolVersion": "2025-11-25"}),
+        req(42, "tools/list"), sc(43, nofit), sc(44, good), sc(45, refuted),
+        sc(46, {"invalid": "not-an-array"}),
+        req(47, "server/discover", {"_meta": {
+            "io.modelcontextprotocol/protocolVersion": "2026-07-28",
+            "io.modelcontextprotocol/clientCapabilities": {}}}),
+        sc(48, nofit, modern=True),
+    ]
+    run_safety = subprocess.run(
+        [sys.executable, str(safety)],
+        capture_output=True, text=True, check=True, timeout=10,
+        input="".join(json.dumps(m) + "\\n" for m in independent_requests)
+    )
+    assert not run_safety.stderr, run_safety.stderr
+    safety_out = {f["id"]: f for f in map(json.loads, run_safety.stdout.splitlines())}
+    assert len(safety_out[42]["result"]["tools"]) == 1
+    def report(i):
+        return json.loads(safety_out[i]["result"]["content"][0]["text"])
+    assert report(43)["blocked"] == 1
+    assert report(44)["blocked"] == 0 and report(44)["claims"][0]["status"] == "CONSISTENT_INPUT"
+    assert report(45)["blocked"] == 1
+    assert safety_out[46]["result"]["isError"]
+    assert safety_out[47]["result"]["resultType"] == "complete"
+    assert report(48)["blocked"] == 1 and safety_out[48]["result"]["resultType"] == "complete"
+    print("PASS: independent citation-integrity MCP legacy/modern stdio, copied source, true-input control, refutation, invalid")
+
     # Han-only Japanese can be misread as Chinese by naive character detection.
     # Test a real source-specific question against BOTH independent entry paths.
     han_question = "組織摩擦役割情報"
@@ -152,42 +202,6 @@ def run():
             "name": "find_nakagawa_original_for_problem",
             "arguments": {"question": "AIの最新モデルの価格を比較したい"},
         }),
-        req(18, "tools/call", {
-            "name": "audit_citation_independence",
-            "arguments": {"claims": [{
-                "id": "repeated-vendor-release", "independent_confirmation_claimed": True,
-                "sources": [
-                    {"url": "https://example.org/original", "root_id": "vendor",
-                     "relation": "primary", "stance": "supports"},
-                    {"url": "https://example.org/repost", "root_id": "vendor",
-                     "relation": "derived", "stance": "supports"}]}]},
-        }),
-        req(19, "tools/call", {
-            "name": "audit_citation_independence",
-            "arguments": {"claims": [{
-                "id": "lab-check", "independent_confirmation_claimed": True,
-                "sources": [
-                    {"url": "https://example.org/original", "root_id": "vendor",
-                     "relation": "primary", "stance": "supports"},
-                    {"url": "https://example.org/lab", "root_id": "lab",
-                     "relation": "independent_observation", "stance": "supports"}]}]},
-        }),
-        req(20, "tools/call", {
-            "name": "audit_citation_independence",
-            "arguments": {"claims": [{
-                "id": "unresolved-refutation", "independent_confirmation_claimed": True,
-                "sources": [
-                    {"url": "https://example.org/original", "root_id": "vendor",
-                     "relation": "primary", "stance": "supports"},
-                    {"url": "https://example.org/lab", "root_id": "lab",
-                     "relation": "independent_observation", "stance": "supports"},
-                    {"url": "https://example.org/refute", "root_id": "other",
-                     "relation": "independent_observation", "stance": "refutes"}]}]},
-        }),
-        req(21, "tools/call", {
-            "name": "audit_citation_independence",
-            "arguments": {"claims": "unsupported"},
-        }),
     ]
     p = subprocess.run(
         [sys.executable, str(SERVER)],
@@ -196,12 +210,12 @@ def run():
     )
     assert not p.stderr, p.stderr
     frames = [json.loads(x) for x in p.stdout.splitlines() if x.strip()]
-    assert len(frames) == 21, f"Expected 21 responses (one notification), got {len(frames)}"
+    assert len(frames) == 17, f"Expected seventeen responses (one notification), got {len(frames)}"
     results = {f["id"]: f for f in frames}
-    assert set(results) == set(range(1, 22))
+    assert set(results) == set(range(1, 18))
     assert all(f["jsonrpc"] == "2.0" for f in frames)
     assert results[1]["result"]["protocolVersion"] == "2025-11-25"
-    assert len(results[2]["result"]["tools"]) == 4
+    assert len(results[2]["result"]["tools"]) == 3
     assert results[2]["result"]["tools"][0]["inputSchema"]["properties"]["explore"]["type"] == "boolean"
 
     def unpack(index):
@@ -262,20 +276,6 @@ def run():
             assert result["original_catalog_route_count"] == 0, result
         assert new["matching_routes"] == baseline["matching_routes"]
     assert results[15]["result"]["isError"] is True
-    # Real external-client style framed calls. Controls detect both bad and
-    # apparently consistent source declarations without claiming outside truth.
-    blocked = unpack(18)
-    assert blocked["blocked"] == 1
-    assert blocked["claims"][0]["status"] == "BLOCK"
-    assert any("fewer than two supporting upstream roots" in issue for issue in blocked["claims"][0]["issues"])
-    consistent = unpack(19)
-    assert consistent["blocked"] == 0
-    assert consistent["claims"][0]["status"] == "CONSISTENT_INPUT"
-    assert "does not establish" in consistent["decision_boundary"]
-    refuted = unpack(20)
-    assert refuted["blocked"] == 1
-    assert any("contrary source present" in m for m in refuted["claims"][0]["issues"])
-    assert results[21]["result"]["isError"] is True
     # A separate modern-era MCP client process uses no initialize handshake.
     # Assert the official 2026-07-28 envelope, discovery, tool results, and
     # unsupported-version responses on real newline-delimited stdio.
@@ -309,11 +309,6 @@ def run():
         }),
         mreq(108, "ping"),
         mreq(109, "initialize", {"protocolVersion": MODERN}),
-        mreq(110, "tools/call", {"name": "audit_citation_independence",
-            "arguments": {"claims": [{
-                "id": "single-origin", "independent_confirmation_claimed": True,
-                "sources": [{"url": "https://example.org/article", "root_id": "release-A",
-                            "relation": "primary", "stance": "supports"}]}]}}),
     ]
     modern_process = subprocess.run(
         [sys.executable, str(SERVER)],
@@ -324,14 +319,14 @@ def run():
     modern_frames = [json.loads(x) for x in modern_process.stdout.splitlines() if x.strip()]
     assert len(modern_frames) == len(modern_messages)
     modern = {f["id"]: f for f in modern_frames}
-    assert set(modern) == set(range(101, 111))
+    assert set(modern) == set(range(101, 110))
     discovery = modern[101]["result"]
     assert discovery["resultType"] == "complete"
     assert MODERN in discovery["supportedVersions"]
     assert discovery["capabilities"]["tools"]["listChanged"] is False
     assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "nakagawa-public-original-router"
-    assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["version"] == "1.1.3-dev"
-    assert len(modern[102]["result"]["tools"]) == 4
+    assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["version"] == "1.1.2"
+    assert len(modern[102]["result"]["tools"]) == 3
     assert modern[102]["result"]["resultType"] == "complete"
     def modern_unpacked(i):
         frame = modern[i]["result"]
@@ -356,8 +351,6 @@ def run():
     assert modern[107]["error"]["code"] == -32602
     assert modern[108]["error"]["code"] == -32601
     assert modern[109]["error"]["code"] == -32601
-    assert modern_unpacked(110)["blocked"] == 1
-    assert modern_unpacked(110)["conceptual_source"]["author_pen_name"] == "Nakagawa Master / 中川マスター"
     print("PASS: real MCP 2026-07-28 stdio; discover/list/call/explore/nonfit/version guard/legacy-era isolation")
 
     # A second, zero-install recipient path: the browser-only finder must carry
