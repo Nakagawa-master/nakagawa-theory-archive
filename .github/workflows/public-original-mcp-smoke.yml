@@ -4,6 +4,8 @@ on:
     paths:
       - 'machine-discovery/nakagawa-theory-mcp.py'
       - 'machine-discovery/test_nakagawa_theory_mcp.py'
+      - 'machine-discovery/evidence-integrity-mcp.py'
+      - 'machine-discovery/evidence-root-check.py'
       - 'machine-discovery/public-original-http-api.py'
       - 'machine-discovery/test_public_original_http_api.py'
       - 'machine-discovery/agent-team-signal-truth-probe.py'
@@ -41,6 +43,8 @@ on:
     paths:
       - 'machine-discovery/nakagawa-theory-mcp.py'
       - 'machine-discovery/test_nakagawa_theory_mcp.py'
+      - 'machine-discovery/evidence-integrity-mcp.py'
+      - 'machine-discovery/evidence-root-check.py'
       - 'machine-discovery/public-original-http-api.py'
       - 'machine-discovery/test_public_original_http_api.py'
       - 'machine-discovery/agent-team-signal-truth-probe.py'
