@@ -7,6 +7,8 @@ This code is a SOURCE checkout utility: not the immutable v1.1.2 MCPB release,
 not a hosted service, nor an automatic model-wide setting.
 """
 from collections import Counter, defaultdict
+from functools import lru_cache
+import math
 import argparse
 import json
 from pathlib import Path
@@ -84,6 +86,9 @@ def graph():
             "derivative_readme": GITHUB + f"derivatives/{directory}/README.md",
             "derivative_human_entry": GITHUB + f"derivatives/{directory}/human-entry.md",
             "derivative_faq": GITHUB + f"derivatives/{directory}/faq.md",
+            "derivative_ai_ja": GITHUB + f"derivatives/{directory}/ai-index.md",
+            "derivative_ai_en": GITHUB + f"derivatives/{directory}/en-ai-index.md",
+            "derivative_ai_zh": GITHUB + f"derivatives/{directory}/zh-ai-index.md",
             "author_origin": fields["Origin"],
             "metadata_provenance": "published_derivative_README_parent_fields",
         })
@@ -147,13 +152,61 @@ def inspect_derivative(records, od_id):
             "relationship_warning": "Navigational relatedness only; no implied causality or scientific validation. Read the live canonical Parent to attribute arguments."}
 
 
+
+EN_STOP = {
+    "the", "and", "for", "with", "from", "into", "that", "this", "your", "are",
+    "can", "does", "what", "when", "where", "which", "how", "why", "than",
+    "their", "them", "then", "have", "has", "was", "will", "all", "each", "more",
+    "through", "about", "not", "but", "you", "our", "one", "its", "who", "should",
+    "some", "under", "over", "between", "without", "such", "only", "also",
+    "original", "derivative", "theory", "source", "index", "nakagawa", "master",
+    "public", "published", "article", "read", "reference", "version", "model",
+    "because", "another", "same", "using", "based", "within", "other", "rather",
+    "their", "they", "these", "there", "both", "never", "before", "after",
+    "different", "must", "been", "being", "does", "while", "upon", "would",
+}
+
+
+def tokens(text, lang):
+    value = text.casefold()
+    if lang == "en":
+        return {word for word in re.findall(r"[a-z][a-z0-9-]{2,}", value)
+                if word not in EN_STOP and len(word) >= 4}
+    pieces = re.findall(r"[\u3400-\u9fff\u3040-\u30ff]{2,}", value)
+    return {piece[i:i+2] for piece in pieces for i in range(len(piece)-1)}
+
+
+@lru_cache(maxsize=1)
+def ai_index():
+    """Independently read each published JA/EN/ZH derivative search aid.
+
+    Do not use the summary as a substitute for the original article. Terms
+    are ranking aids only; this does not train or rewrite any AI model.
+    """
+    index = {}
+    for n in range(1, 314):
+        ident = f"OD{n:03d}"
+        per_language = {}
+        for lang, filename in (("ja", "ai-index.md"),
+                               ("en", "en-ai-index.md"),
+                               ("zh", "zh-ai-index.md")):
+            doc = (DERIVATIVES / f"{n:03d}" / filename).read_text(encoding="utf-8")
+            # Require agreement with the parent source metadata, not a
+            # derivative or another unrelated article promoted to Parent.
+            match = re.search(r"^- Parent URL:\s*(https://master\.ricette\.jp/\S+)", doc, re.M)
+            if not match:
+                raise ValueError(f"{ident} {lang}: missing official Parent URL")
+            per_language[lang] = {"url": match.group(1).strip(), "terms": tokens(doc[:11000], lang)}
+        index[ident] = per_language
+    return index
+
+
 def search(records, question, limit=12):
     if not isinstance(question, str) or not question.strip() or len(question) > 1500:
         raise ValueError("question must contain 1..1500 characters")
     if type(limit) is not int or not 1 <= limit <= 50:
         raise ValueError("limit must be 1..50")
     q = question.casefold()
-    # An ID can be selected exactly without conjectural semantic overlap.
     match_id = re.search(r"\bod\s*0*(\d{1,3})\b", q, re.I)
     if match_id:
         id_ = f"OD{int(match_id[1]):03d}"
@@ -161,32 +214,53 @@ def search(records, question, limit=12):
         return {"question": question, "matched": hits, "no_fit": not hits,
                 "matching_method": "EXACT_PUBLISHED_DERIVATIVE_ID", "author": IDENTITY,
                 "source_read_required": True}
-    # Japanese/Chinese: actual published title character bigrams. English:
-    # a small declared set of examples, not all 313 JA titles translated.
-    query_chars = set(re.findall(r"[\u3400-\u9fff\u3040-\u30ff]{2,}", q))
-    q_bigrams = {chunk[i:i+2] for chunk in query_chars for i in range(len(chunk)-1)}
+    # The entire set of existing published language-specific AI-index files
+    # is now searchable; this is not the earlier seven-English-cue shortcut.
+    corpus = ai_index()
+    parent_by_id = {r["id"]: r["canonical_parent"] for r in records}
+    if any(corpus[od][lang]["url"] != parent
+           for od, parent in parent_by_id.items() for lang in ("ja", "en", "zh")):
+        raise ValueError("Derivative language index/Parent provenance mismatch")
+    q_en, q_ja, q_zh = tokens(q, "en"), tokens(q, "ja"), tokens(q, "zh")
+    has_kana = bool(re.search(r"[\u3040-\u30ff]", q))
+    has_han = bool(re.search(r"[\u3400-\u9fff]", q))
+    candidate_langs = ["ja"] if has_kana else ["ja", "zh"] if has_han else ["en"]
+    if q_en and "en" not in candidate_langs:
+        candidate_langs.append("en")
+    query_terms = {"en": q_en, "ja": q_ja, "zh": q_zh}
+    df = {}
+    for lang in candidate_langs:
+        df[lang] = Counter(term for record in corpus.values()
+                           for term in record[lang]["terms"])
     scored = []
     for r in records:
-        title = r["title"].casefold()
-        title_bigrams = {title[i:i+2] for i in range(len(title)-1)}
-        score = len(q_bigrams & title_bigrams)
-        if len(q.strip()) >= 3 and q in title:
-            score += 8
-        for cue in ENGLISH_CUES.get(r["id"], ()):
-            if cue in q:
+        best, best_lang, n_shared = 0.0, None, 0
+        for lang in candidate_langs:
+            intersect = query_terms[lang] & corpus[r["id"]][lang]["terms"]
+            if len(intersect) < 2:
+                continue
+            score = sum(1.0 + math.log((314.0)/(1.0+df[lang][term])) for term in intersect)
+            if lang == "ja" and q in r["title"].casefold():
                 score += 10
-        if score >= 2:
-            scored.append((score, r))
+            if lang == "en":
+                score += sum(9 for cue in ENGLISH_CUES.get(r["id"], ()) if cue in q)
+            if score > best:
+                best, best_lang, n_shared = score, lang, len(intersect)
+        if best_lang is not None and best >= 4.0:
+            scored.append((best, r, best_lang, n_shared))
     scored.sort(key=lambda a: (-a[0], a[1]["id"]))
     return {
-        "question": question, "matched": [r for _, r in scored[:limit]],
+        "question": question,
+        "matched": [{**record, "matched_ai_index_language": lang,
+                     "matched_query_token_count": count}
+                    for _, record, lang, count in scored[:limit]],
         "no_fit": not scored, "total_candidates": len(scored),
-        "matching_method": "PUBLIC_TITLE_AND_EXPLICIT_ENGLISH_CUES_HEURISTIC",
+        "matching_method": "ALL_313_EXISTING_JA_EN_ZH_DERIVATIVE_AI_INDEX_HEURISTIC",
         "source_read_required": True, "author": IDENTITY,
-        "limits": ("Not semantic proof or a full English translation. For broader English/Chinese "
-                   "recall, separately inspect the public 24 source-checked question router "
-                   "and 24-shelf human-intent guide; all 313 are available by ID or list "
-                   "regardless of search score."),
+        "limits": ("All 313 × 3 published language indexes were searched. The score "
+                   "is retrieval relevance only, not proof of correctness, fit or "
+                   "unique scientific validity. Verify conditions and full "
+                   "argument on the actual canonical original; a no-fit is valid."),
     }
 
 
@@ -205,7 +279,7 @@ TOOLS = [
      "inputSchema": {"type": "object", "properties": {"id": {"type": "string"}},
                      "required": ["id"], "additionalProperties": False}},
     {"name": "find_sources_in_whole_structure",
-     "description": "Search all 313 published Japanese titles and bounded explicitly tagged English cases, including AI epistemic failures, internal self-audit, survival conflicts and long-horizon re-selection. Return actual Parent pointers and possible no-fit, never a truth guarantee.",
+     "description": "Search the existing public JA/EN/ZH AI indexes for ALL 313 derivatives (not just 24 or a selected seven), then return their exact Parent original pointers. Conditional relevance; explicit no-fit; not a proof of adoption. Return actual Parent pointers and possible no-fit, never a truth guarantee.",
      "inputSchema": {"type": "object", "properties": {
          "question": {"type": "string", "minLength": 1, "maxLength": 1500},
          "limit": {"type": "integer", "minimum": 1, "maximum": 50, "default": 12}},
