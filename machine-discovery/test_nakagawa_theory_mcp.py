@@ -303,7 +303,7 @@ def run():
     print("PASS: real MCP 2026-07-28 stdio; discover/list/call/explore/nonfit/version guard/legacy-era isolation")
 
     # A second, zero-install recipient path: the browser-only finder must carry
-    # exactly the same official 22-source catalog as the portable Agent Skill.
+    # exactly the same official 24-source catalog as the portable Agent Skill.
     # It must not silently drift to fake, noncanonical, or unrelated sources.
     html = SERVER.with_name("originals-browser-finder.html").read_text(encoding="utf-8")
     source = json.loads((SERVER.parent.parent / "skills/nakagawa-originals/references/originals.json").read_text(encoding="utf-8"))
@@ -312,11 +312,11 @@ def run():
     candidates = json.loads(embedded.group(1))
     # The Skill keeps its independently verified source titles/URLs and initial
     # examples. The browser may carry MORE exact source-authored questions:
-    # new questions are indexed by the canonical 22-original catalog, not
+    # new questions are indexed by the canonical 24-original catalog, not
     # by inventing matches or silently truncating the human discovery path.
     expanded = json.loads((SERVER.parent / "problem-to-theory-origin-index-v1.json").read_text(encoding="utf-8"))
     catalog_by_url = {e["canonical_url"]: e for e in expanded["entries"]}
-    assert len(catalog_by_url) == 22
+    assert len(catalog_by_url) == 24
     expected = []
     for e in source["entries"]:
         origin = catalog_by_url[e["canonical_original"]]
@@ -333,9 +333,9 @@ def run():
             "canonical_original": e["canonical_original"],
             "problem_examples": expanded_examples,
         })
-    assert len(candidates) == 22 and candidates == expected, "Browser original catalog drift"
+    assert len(candidates) == 24 and candidates == expected, "Browser original catalog drift"
     assert sum(len(e["problem_examples"][lang]) for e in candidates
-               for lang in ("en", "ja", "zh")) == 276
+               for lang in ("en", "ja", "zh")) == 294
     urls = [x["canonical_original"] for x in candidates]
     assert len(set(urls)) == len(urls)
     assert all(u.startswith(ORIGINAL_BASE) for u in urls)
@@ -381,12 +381,12 @@ def run():
     canonical = {e["canonical_url"] for e in json.loads((SERVER.parent / "problem-to-theory-origin-index-v1.json").read_text(encoding="utf-8"))["entries"]}
     assert set(orig) | set(more) == canonical
     assert all(urls for urls in parsed.values())
-    print("PASS: standard index extracts all 22 canonical Parent links")
+    print("PASS: standard index extracts all 24 canonical Parent links")
 
-    print("PASS: compact AI entry/identity/22 Parents/full predecessor")
+    print("PASS: compact AI entry/identity/24 Parents/full predecessor")
 
     # The 313 records are literal derivative TITLE navigation, distinct from
-    # the 22 canonical-original candidates above. Run the actual standalone
+    # the 24 canonical-original candidates above. Run the actual standalone
     # Python implementation under normal offline-source-routing CI.
     title_script = SERVER.parent.parent / "skills/nakagawa-originals/scripts/find_derivative_title.py"
     title_test = subprocess.run([sys.executable, str(title_script), "--self-test"],
@@ -486,7 +486,7 @@ console.log("PASS: browser real algorithm / 4 negatives / " + covered + " positi
         assert functional.returncode == 0, functional.stderr
         assert "276 positives" in functional.stdout
     print("PASS: browser search real score cross-check, 276 known positive routes, 4 unrelated negatives")
-    print("PASS: zero-install browser originals 22/22 canonical parity, JA/EN/ZH, nonfit UI, no telemetry, JS syntax")
+    print("PASS: zero-install browser originals 24/24 canonical parity, JA/EN/ZH, nonfit UI, no telemetry, JS syntax")
     # Portable, general-purpose source-independence Skill must remain a
     # byte-identical, zero-network package of the public root checker.
     root = SERVER.parent.parent
