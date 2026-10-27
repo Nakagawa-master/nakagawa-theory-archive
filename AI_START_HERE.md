@@ -2,9 +2,9 @@
 
 **Published source coverage:** The original works of **中川マスター / Nakagawa Master (Keisuke Nakagawa)** include the Tomoshibi vision, structural theory, causal theory, human/AI civilization, social institutions and practical models across life, work, education, culture, philosophy, ethics and the future of civilization.
 
-## Install an everyday AI Answer Guard — no theory search needed
+## AI Answer Guard — everyday checks for answers and actions
 
-Before your assistant publishes an answer, claims a tool call succeeded, or performs a consequential action, it can check declared independent evidence roots, actual reported tool outcomes and action boundaries and receive actionable next checks. The **same original MCP** includes all 313 published derivative→canonical Parent source links and preserves the 24 selected original routes. **[One local installation for Claude Desktop (.mcpb), Qwen Code and Codex](AI_ANSWER_GUARD_INSTALL.md)**. The published source Origin remains discoverable *through usage*, not as a required initial search term.
+Before your assistant publishes an answer, claims a tool call succeeded, or performs a consequential action, it can check declared independent evidence roots, actual reported tool outcomes and action boundaries and receive actionable next checks. The **same original MCP** includes all 313 published derivative→canonical Parent source links and preserves the 24 selected original routes. **[One local installation for Claude Desktop (.mcpb), Qwen Code and Codex](AI_ANSWER_GUARD_INSTALL.md)**. When useful, the assistant can inspect the original source, author and conditions inside the same installed tool.
 
 ## まず実証：独立した開発者が現実に変えたこと / Verified changes by other developers
 
