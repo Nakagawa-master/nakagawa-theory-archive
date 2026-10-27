@@ -18,7 +18,7 @@ PERSON_NAME_POLICY = ROOT.parent / "metadata" / "person-name-policy-v1.json"
 STRUCTURAL_BRIDGES = ROOT.parent / "skills/nakagawa-originals/references/structural_bridges.json"
 VERSIONS = ("2025-11-25", "2025-06-18")  # legacy, handshake-based
 MODERN_VERSION = "2026-07-28"  # stateless, request-local metadata
-SERVER_INFO = {"name": "nakagawa-public-original-router", "version": "1.1.1"}
+SERVER_INFO = {"name": "nakagawa-public-original-router", "version": "1.1.2"}
 # Match the standalone Skill's false-positive gate: two generic shared words
 # must not silently become a canonical-original recommendation.
 MIN_CANDIDATE_SCORE = 2.5
