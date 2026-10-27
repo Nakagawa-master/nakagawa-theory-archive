@@ -106,7 +106,7 @@ jobs:
             "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
             "name": "io.github.Nakagawa-master/nakagawa-original-router",
             "title": "AI Answer Guard — Source Integrity & Action Preflight",
-            "description": "Offline AI answer preflight for citations, tool receipts and actions; one install links all 313 published original Parents.",
+            "description": "AI answer guard: check sources, tool results and actions; find 313 canonical originals.",
             "version": "1.2.0",
             "repository": {
               "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
