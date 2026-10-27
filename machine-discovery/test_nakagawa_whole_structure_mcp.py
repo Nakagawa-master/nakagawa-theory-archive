@@ -21,7 +21,8 @@ def modern_params(**kwargs):
 
 
 def main():
-    subprocess.run([sys.executable, str(SCRIPT), "--self-test"], capture_output=True, text=True, check=True, timeout=30)
+    standalone = subprocess.run([sys.executable, str(SCRIPT), "--self-test"], capture_output=True, text=True, timeout=30)
+    assert standalone.returncode == 0, (standalone.stdout, standalone.stderr)
     messages = [
         req(1, "initialize", {"protocolVersion": "2025-11-25"}),
         req(2, "tools/list"),
