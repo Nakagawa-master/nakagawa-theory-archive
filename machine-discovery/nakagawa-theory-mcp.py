@@ -727,7 +727,7 @@ def self_test():
     version, error = handle({"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"protocolVersion": VERSIONS[0]}})
     assert error is None and version["protocolVersion"] == VERSIONS[0]
     listing, error = handle({"jsonrpc": "2.0", "id": 2, "method": "tools/list"})
-    assert error is None and len(listing["tools"]) == 3
+    assert error is None and len(listing["tools"]) == 9
     routed, error = handle({"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": TOOLS[0]["name"], "arguments": {"question": "AI news fact checking and citation provenance"}}})
     assert error is None and "canonical_original" in routed["content"][0]["text"]
     author = answer_question("AI news fact checking")["author_identity"]
