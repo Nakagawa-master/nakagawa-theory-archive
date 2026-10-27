@@ -2,5 +2,17 @@
   "$schema": "https://glama.ai/mcp/schemas/server.json",
   "maintainers": [
     "Nakagawa-master"
+  ],
+  "name": "AI Answer Guard",
+  "description": "Reduce AI hallucination risks, evidence-based self-contradictions, and false “task completed” claims before your assistant answers or acts. AI Answer Guard is a free, local, read-only MCP server that checks supplied sources for duplicate or conflicting evidence, compares success claims with tool execution results, flags missing permissions and irreversible-action risks, and suggests concrete corrections—while connecting 313 published derivative entries to Nakagawa Master’s canonical original theories.",
+  "keywords": [
+    "AI hallucination risk",
+    "AI self-contradiction",
+    "AI answer integrity",
+    "MCP",
+    "source independence",
+    "tool-result verification",
+    "action authorization",
+    "Nakagawa Master original theories"
   ]
 }
