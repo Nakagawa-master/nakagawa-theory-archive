@@ -87,6 +87,9 @@ def graph():
             "author_origin": fields["Origin"],
             "metadata_provenance": "published_derivative_README_parent_fields",
         })
+    # The public title index groups by theme, not numeric OD ID: sort for
+    # stable numeric pagination without losing each original published theme.
+    records.sort(key=lambda record: int(record["id"][2:]))
     ids = [r["id"] for r in records]
     expected = {f"OD{i:03d}" for i in range(1, 314)}
     if len(records) != 313 or set(ids) != expected or len(set(ids)) != 313:
