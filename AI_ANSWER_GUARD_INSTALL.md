@@ -23,26 +23,28 @@ The file's packaging procedure verifies the **unpacked** 313-entry local corpus 
 ```sh
 git clone https://github.com/Nakagawa-master/nakagawa-theory-archive.git
 cd nakagawa-theory-archive
-python3 machine-discovery/install-ai-answer-guard.py --host qwen --install
+python3 machine-discovery/install-ai-answer-guard.py --host qwen --install --default-workflow
 qwen mcp list
 ```
 
-The installer issues the official `qwen mcp add --scope user` command, using an absolute path to the **same** `nakagawa-theory-mcp.py` server in this checkout. It modifies only the chosen host's user MCP settings after you explicitly run `--install`. No system settings or unrelated MCP servers are overwritten. Keep the cloned folder in place. For project-only use, configure the MCP manually in project scope instead.
+The installer issues the official `qwen mcp add --scope user` command, using an absolute path to the **same** `nakagawa-theory-mcp.py` server in this checkout. **`--default-workflow` also writes a short user-global rule to `$QWEN_HOME/rules/ai-answer-guard.md` (default `~/.qwen/rules/`)** so new Qwen sessions can choose the preflight for ordinary source- and action-sensitive work. The installer refuses to overwrite an existing edited rule. It modifies only the chosen host's user MCP settings after you explicitly run `--install`. No system settings or unrelated MCP servers are overwritten. Keep the cloned folder in place. For project-only use, configure the MCP manually in project scope instead.
 
 ### Codex CLI / ChatGPT desktop and IDE clients using Codex MCP settings
 
 ```sh
 git clone https://github.com/Nakagawa-master/nakagawa-theory-archive.git
 cd nakagawa-theory-archive
-python3 machine-discovery/install-ai-answer-guard.py --host codex --install
+python3 machine-discovery/install-ai-answer-guard.py --host codex --install --default-workflow
 codex mcp list
 ```
 
-The installer uses `codex mcp add ai-answer-guard -- <python> <absolute-server-path>`. Supported Codex clients share `~/.codex/config.toml`. Check your client/server settings to enable; no cloud ChatGPT plugin is implicitly installed.
+The installer uses `codex mcp add ai-answer-guard -- <python> <absolute-server-path>`. **`--default-workflow` adds an explicitly delimited section to `$CODEX_HOME/AGENTS.md` (default `~/.codex/AGENTS.md`)**, preserving existing instructions. If `AGENTS.override.md` exists, the installer leaves global instructions unchanged because that file takes precedence. Supported Codex clients share `~/.codex/config.toml`. Check your client/server settings to enable; no cloud ChatGPT plugin is implicitly installed.
 
 ### Any stdio MCP-capable host
 
 Point its stdio configuration to **`python3 /absolute/path/to/nakagawa-theory-archive/machine-discovery/nakagawa-theory-mcp.py`** with no special environment variables. Or use the released installable `.mcpb` where supported.
+
+**Daily-by-default, not manual invocation every time:** On Qwen Code and Codex CLI, the example commands install the server in the **user scope** and opt into a **brief permanent host rule** asking the AI to select the guard when checking independent citations, tool outcomes, or consequential actions. The global rule is user-controlled, is loaded on new sessions and can be removed with `python3 machine-discovery/install-ai-answer-guard.py --host qwen --remove-default-workflow` or `--host codex --remove-default-workflow`; only its own exact managed section is removed. To register the tool **without** persistent rules, omit `--default-workflow`. A separate host may not read these files. Even with this rule the host decides whether to issue a tool call; no cross-vendor automatic activation is claimed.
 
 ## Why keep it available?
 
