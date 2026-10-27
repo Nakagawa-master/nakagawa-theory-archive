@@ -69,7 +69,8 @@ class ApiTests(unittest.TestCase):
         self.assertEqual(status, 200)
         self.assertTrue(result["no_fit"])
         self.assertIn("structural_exploration", result)
-        self.assertIsInstance(result["structural_exploration"], list)
+        self.assertEqual(result["structural_exploration"]["status"], "OPTIONAL_HYPOTHESIS_NOT_DIRECT_MATCH")
+        self.assertEqual(len(result["structural_exploration"]["lenses"]), 7)
 
     def test_bad_input_refused_without_side_effects(self):
         self.assertEqual(self.call("POST", "/v1/originals/match", {"question": ""})[0], 400)
