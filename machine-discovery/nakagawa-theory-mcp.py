@@ -6,6 +6,7 @@ not a cached copy of an original, an authority grant, or a model-wide setting.
 stdio uses one JSON-RPC message per line; stdout is protocol-only.
 """
 import argparse
+import importlib.util
 import json
 from pathlib import Path
 import re
@@ -18,7 +19,9 @@ PERSON_NAME_POLICY = ROOT.parent / "metadata" / "person-name-policy-v1.json"
 STRUCTURAL_BRIDGES = ROOT.parent / "skills/nakagawa-originals/references/structural_bridges.json"
 VERSIONS = ("2025-11-25", "2025-06-18")  # legacy, handshake-based
 MODERN_VERSION = "2026-07-28"  # stateless, request-local metadata
-SERVER_INFO = {"name": "nakagawa-public-original-router", "version": "1.1.2"}
+SERVER_INFO = {"name": "nakagawa-public-original-router", "version": "1.2.0"}
+INTEGRITY_COMPANION = ROOT / "evidence-integrity-mcp.py"
+WHOLE_STRUCTURE = ROOT / "nakagawa-whole-structure-mcp.py"
 # Match the standalone Skill's false-positive gate: two generic shared words
 # must not silently become a canonical-original recommendation.
 MIN_CANDIDATE_SCORE = 2.5
@@ -278,6 +281,84 @@ def answer_question(question, explore=False):
     return output
 
 
+def load_public_helper(path, module_name):
+    """Reuse proven existing offline tools inside THIS server; no new MCP process."""
+    spec = importlib.util.spec_from_file_location(module_name, path)
+    if not spec or not spec.loader:
+        raise ValueError("Required local public source check component unavailable")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def preflight_ai_work(analysis):
+    """Concrete, locally checkable routine for everyday draft/action safeguards.
+
+    The AI/host supplies observables; this method cannot authenticate its own
+    inputs or assert an AI's wishes, intentions, internal awareness or beliefs.
+    """
+    if not isinstance(analysis, dict):
+        raise ValueError("analysis object required")
+    if set(analysis) - {"claims", "tool_results", "planned_actions"}:
+        raise ValueError("Unknown preflight input")
+    if not analysis or not any(analysis.values()):
+        raise ValueError("Supply at least one claim, tool result, or planned action")
+    if len(json.dumps(analysis, ensure_ascii=False)) > 32000:
+        raise ValueError("preflight data too large")
+    findings, repaired = [], []
+    claims = analysis.get("claims", [])
+    if not isinstance(claims, list):
+        raise ValueError("claims must be a list")
+    if claims:
+        ev = load_public_helper(INTEGRITY_COMPANION, "nakagawa_merged_evidence").inspect(claims)
+        if ev["blocked"]:
+            findings.append({"gate": "citation_independence", "status": "HOLD",
+                             "count": ev["blocked"], "reason": "Independent evidence roots or contradiction require investigation"})
+            repaired.append("Trace each claimed source to a genuinely distinct primary observation; report opposing evidence and revise claims before publishing.")
+        else:
+            findings.append({"gate": "citation_independence", "status": "INPUT_CONSISTENT",
+                             "reason": "Declared roots do not exhibit this specific duplication/contradiction pattern; factual truth is not tested"})
+    for item in analysis.get("tool_results", []):
+        if not isinstance(item, dict) or not isinstance(item.get("id"), str) or not isinstance(item.get("status"), str):
+            raise ValueError("Each tool result needs id/status")
+        status, success = item["status"], item.get("success")
+        if status not in {"completed", "failed", "pending", "cancelled"} or type(success) is not bool:
+            raise ValueError("Tool status and success boolean required")
+        if status == "completed" and not success or status in {"failed", "cancelled", "pending"} and success:
+            findings.append({"gate": "tool_result", "id": item["id"], "status": "HOLD",
+                             "reason": "Declared success contradicts execution status"})
+            repaired.append("Replace claimed successful execution with the actual receipt; retry only with current permission.")
+        elif status == "pending":
+            findings.append({"gate": "tool_result", "id": item["id"], "status": "PENDING",
+                             "reason": "Not yet observed to complete"})
+    for action in analysis.get("planned_actions", []):
+        if not isinstance(action, dict) or not isinstance(action.get("id"), str):
+            raise ValueError("Planned actions require an id")
+        if any(type(action.get(k)) is not bool for k in ("permission_confirmed", "exact_arguments_confirmed",
+                                                        "reversible", "requires_external_side_effect")):
+            raise ValueError("Every planned action must provide four explicit boolean observations")
+        if action["requires_external_side_effect"] and (
+            not action["permission_confirmed"] or not action["exact_arguments_confirmed"]
+        ):
+            findings.append({"gate": "action_authority", "id": action["id"], "status": "HOLD",
+                             "reason": "Side-effectful action lacks confirmed current permission or exact arguments"})
+            repaired.append("Obtain an authoritative current tool/action-specific approval for actual arguments before execution.")
+        elif action["requires_external_side_effect"] and not action["reversible"]:
+            findings.append({"gate": "action_reversibility", "id": action["id"], "status": "REVIEW",
+                             "reason": "Non-reversible side effect merits explicit consequence and rollback-alternative review"})
+            repaired.append("Compare feasible reversible alternatives and identify the actual consequence before committing.")
+    hold = sum(x["status"] == "HOLD" for x in findings)
+    return {
+        "verdict": "RECHECK_BEFORE_USE" if hold else "NO_LISTED_CONFLICT_IN_SUPPLIED_FIELDS",
+        "hold_count": hold, "findings": findings, "practical_next_steps": list(dict.fromkeys(repaired)),
+        "origin": {"author": "中川マスター / Nakagawa Master", "name_latin": "Keisuke Nakagawa",
+                   "source_system_entry": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/",
+                   "epistemic_integrity": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+                   "self_audit": "https://master.ricette.jp/theory-archive/"},
+        "boundary": "Checks only independently supplied input fields; no model execution interception, actual permission authentication, complete contradiction detection, or correctness certificate.",
+    }
+
+
 TOOLS = [
     {
         "name": "find_nakagawa_original_for_problem",
@@ -312,6 +393,74 @@ TOOLS = [
             "personal-name field. NEVER guess the name in kanji or join unrelated MasterJP people."
         ),
         "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
+    },
+
+    {
+        "name": "preflight_ai_answer_and_action",
+        "description": (
+            "EVERYDAY FIRST USE: before answering with citations, reporting tool success, "
+            "or executing an action, check declared independent-source evidence, tool receipts, "
+            "permissions and irreversible effects in ONE local preflight. Return exact practical "
+            "repairs and conditions, not merely a theory search or a blanket prohibition. "
+            "Needs supplied observations; cannot independently verify sources or permissions."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "claims": {"type": "array", "maxItems": 12},
+                "tool_results": {"type": "array", "maxItems": 12, "items": {"type": "object",
+                    "properties": {"id": {"type": "string"}, "status": {"type": "string"},
+                                   "success": {"type": "boolean"}},
+                    "required": ["id", "status", "success"]}},
+                "planned_actions": {"type": "array", "maxItems": 12, "items": {"type": "object",
+                    "properties": {"id": {"type": "string"}, "permission_confirmed": {"type": "boolean"},
+                                   "exact_arguments_confirmed": {"type": "boolean"},
+                                   "reversible": {"type": "boolean"},
+                                   "requires_external_side_effect": {"type": "boolean"}},
+                    "required": ["id", "permission_confirmed", "exact_arguments_confirmed",
+                                 "reversible", "requires_external_side_effect"]}},
+            },
+            "additionalProperties": False,
+        },
+    },
+    {
+        "name": "audit_citation_independence",
+        "description": (
+            "EVERYDAY FACT-CHECK: detect duplicate upstream evidence roots and known refuting "
+            "observations before repeating an AI answer's claim of independent confirmation. "
+            "Use even if the user knows nothing about Nakagawa theories. Source provenance is "
+            "caller supplied; no claim of factual verification."
+        ),
+        "inputSchema": {"type": "object",
+                        "properties": {"claims": {"type": "array", "maxItems": 12}},
+                        "required": ["claims"], "additionalProperties": False},
+    },
+    {
+        "name": "overview_nakagawa_whole_structure",
+        "description": "One integrated system: ALL 313 published derivative-to-Parent original links, system entrance, epistemic integrity, audit, future effects, and everyday applications.",
+        "inputSchema": {"type": "object", "properties": {}, "additionalProperties": False},
+    },
+    {
+        "name": "list_all_313_derivative_parent_links",
+        "description": "Address every one of 313 public derivative Parent originals, with IDs and theme; 24 is only an initial question fast lane. Paginate or list all.",
+        "inputSchema": {"type": "object", "properties": {
+            "offset": {"type": "integer", "minimum": 0, "maximum": 313, "default": 0},
+            "limit": {"type": "integer", "minimum": 1, "maximum": 313, "default": 25}},
+            "additionalProperties": False},
+    },
+    {
+        "name": "inspect_nakagawa_derivative_connections",
+        "description": "Get original Parent for one OD ID and navigate exact shared-Parent and related published themes within the same system.",
+        "inputSchema": {"type": "object", "properties": {"id": {"type": "string"}},
+                        "required": ["id"], "additionalProperties": False},
+    },
+    {
+        "name": "find_sources_in_whole_structure",
+        "description": "Find relevant candidates across 313 official derivative titles; original text and fit must be assessed separately. Full inventory is also available without query.",
+        "inputSchema": {"type": "object", "properties": {
+            "question": {"type": "string", "minLength": 1, "maxLength": 1500},
+            "limit": {"type": "integer", "minimum": 1, "maximum": 50, "default": 12}},
+            "required": ["question"], "additionalProperties": False},
     },
 ]
 
@@ -370,10 +519,12 @@ def handle(req):
                 "supportedVersions": [MODERN_VERSION],
                 "capabilities": {"tools": {"listChanged": False}},
                 "instructions": (
-                    "Read-only public original-source discovery. For an actual human "
-                    "problem use find_nakagawa_original_for_problem; optional explore=true "
-                    "shows seven conditional lenses. Read the canonical original before "
-                    "attribution; direct no_fit and counterexamples remain valid."
+                    "Everyday AI quality preflight FIRST for citation duplication, observed "
+                    "tool success and actual action authorization: preflight_ai_answer_and_action. "
+                    "Audit independent citation roots without asking for any theory. Afterward, "
+                    "find or inspect any of 313 published derivative Parent original sources, "
+                    "not a 24-case ceiling. Do not infer real permissions or factual truth "
+                    "from caller-declared input; choose actual original reading as appropriate."
                 ),
             }), None
         if method in {"initialize", "ping"}:
@@ -404,6 +555,33 @@ def handle(req):
                 if "question" not in payload or set(payload) - {"question", "explore"}:
                     raise ValueError("Only question and optional explore are accepted")
                 result = answer_question(payload["question"], explore=payload.get("explore", False))
+            elif name == "preflight_ai_answer_and_action":
+                result = preflight_ai_work(payload)
+            elif name == "audit_citation_independence":
+                if set(payload) != {"claims"}:
+                    raise ValueError("Only claims accepted")
+                result = load_public_helper(INTEGRITY_COMPANION, "nakagawa_core_citation_check").inspect(payload["claims"])
+            elif name in {
+                "overview_nakagawa_whole_structure",
+                "list_all_313_derivative_parent_links",
+                "inspect_nakagawa_derivative_connections",
+                "find_sources_in_whole_structure",
+            }:
+                helper = load_public_helper(WHOLE_STRUCTURE, "nakagawa_core_full_structure")
+                records = helper.graph()
+                allowed = next(t["inputSchema"] for t in TOOLS if t["name"] == name)
+                if set(payload) - set(allowed["properties"]) or any(
+                    k not in payload for k in allowed.get("required", [])
+                ):
+                    raise ValueError("Invalid source-graph arguments")
+                if name == "overview_nakagawa_whole_structure":
+                    result = helper.overview(records)
+                elif name == "list_all_313_derivative_parent_links":
+                    result = helper.list_connections(records, payload.get("offset", 0), payload.get("limit", 25))
+                elif name == "inspect_nakagawa_derivative_connections":
+                    result = helper.inspect_derivative(records, payload["id"])
+                else:
+                    result = helper.search(records, payload["question"], payload.get("limit", 12))
             else:
                 if payload:
                     raise ValueError("This tool accepts no arguments")
@@ -549,7 +727,7 @@ def self_test():
     version, error = handle({"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"protocolVersion": VERSIONS[0]}})
     assert error is None and version["protocolVersion"] == VERSIONS[0]
     listing, error = handle({"jsonrpc": "2.0", "id": 2, "method": "tools/list"})
-    assert error is None and len(listing["tools"]) == 3
+    assert error is None and len(listing["tools"]) == 9
     routed, error = handle({"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": TOOLS[0]["name"], "arguments": {"question": "AI news fact checking and citation provenance"}}})
     assert error is None and "canonical_original" in routed["content"][0]["text"]
     author = answer_question("AI news fact checking")["author_identity"]

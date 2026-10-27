@@ -1,4 +1,4 @@
-name: Distribute original-source MCP Bundle to official registry
+name: Verify immutable previous original-source MCPB v1.1.2
 
 on:
   pull_request:
@@ -25,6 +25,8 @@ jobs:
     timeout-minutes: 7
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: mcp-router-v1.1.2
       - name: Existing real client and source-index checks
         run: |
           python3 machine-discovery/nakagawa-theory-mcp.py --self-test
@@ -45,7 +47,7 @@ jobs:
 
   publish:
     needs: verify
-    if: github.event_name != 'pull_request' && github.repository == 'Nakagawa-master/nakagawa-theory-archive' && github.ref == 'refs/heads/main' && needs.verify.result == 'success'
+    if: github.event_name == 'workflow_dispatch' && github.repository == 'Nakagawa-master/nakagawa-theory-archive' && needs.verify.result == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -53,6 +55,8 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: mcp-router-v1.1.2
       - name: Build checked exact source MCPB
         run: python3 machine-discovery/build-original-router-mcpb.py
       - name: Publish no-cost immutable GitHub Release asset

@@ -215,7 +215,7 @@ def run():
     assert set(results) == set(range(1, 18))
     assert all(f["jsonrpc"] == "2.0" for f in frames)
     assert results[1]["result"]["protocolVersion"] == "2025-11-25"
-    assert len(results[2]["result"]["tools"]) == 3
+    assert len(results[2]["result"]["tools"]) == 9
     assert results[2]["result"]["tools"][0]["inputSchema"]["properties"]["explore"]["type"] == "boolean"
 
     def unpack(index):
@@ -325,8 +325,8 @@ def run():
     assert MODERN in discovery["supportedVersions"]
     assert discovery["capabilities"]["tools"]["listChanged"] is False
     assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "nakagawa-public-original-router"
-    assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["version"] == "1.1.2"
-    assert len(modern[102]["result"]["tools"]) == 3
+    assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["version"] == "1.2.0"
+    assert len(modern[102]["result"]["tools"]) == 9
     assert modern[102]["result"]["resultType"] == "complete"
     def modern_unpacked(i):
         frame = modern[i]["result"]
