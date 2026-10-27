@@ -78,7 +78,7 @@ def catalog_matches(question, limit=3):
     """Separate source candidates from technical receiver case routes.
 
     Match against the language-specific problem questions published in the
-    22-entry original catalog; do not blindly append every original, or claim
+    public original catalog; do not blindly append every original, or claim
     that a source merely named by a case was actually read by its authors.
     """
     catalog = read_original_catalog()
@@ -469,6 +469,26 @@ def self_test():
     assert lic["parent_ncl_id"] == "NCL-α-20251106-b66b8a"
     assert lic["parent_diff_id"] == "DIFF-20251106-0001"
     assert original_ja["official_ncl_source"] == "https://master.ricette.jp/structure-license/"
+    # Direct-source regression for genuine creation-vs-extraction and AI
+    # knowledge-depletion questions. Exact Parent URLs/NCLs are from OD161/163,
+    # not inferred from a model's summary or a website-domain-only citation.
+    dark_cases = (
+        ("なぜ社会は新しい価値を創る人より、他人の価値を吸い上げる人を成功者にしやすいの？",
+         "dark-equation-of-human-history-ai-observation", "NCL-α-20251121-d11365"),
+        ("AIがAI生成情報ばかり再学習し、一次資料や創造者が消えたとき文明はどうなるの？",
+         "civilization-audit-ai-reimplementation-dark-equation-crisis", "NCL-α-20251122-b89d99"),
+        ("What could happen if AI reproduces creators' work without returning value, and then learns mainly from its own generated content?",
+         "civilization-audit-ai-reimplementation-dark-equation-crisis", "NCL-α-20251122-b89d99"),
+    )
+    for question, expected_slug, expected_ncl in dark_cases:
+        routed = answer_question(question)
+        found = [route for route in routed["matching_routes"] if expected_slug in (route.get("canonical_original") or "")]
+        assert found and found[0]["parent_ncl_id"] == expected_ncl, (question, routed)
+    # An ordinary unrelated AI question must remain no_fit even though
+    # the new Parents concern AI technology.
+    ambiguous = answer_question("AIの最新モデルの価格を比較したい")
+    assert ambiguous["no_fit"] and not ambiguous["matching_routes"]
+
     # A route with no verified Parent must never acquire invented IDs.
     for route in read_routes()["routes"]:
         if route.get("canonical_original") is None:
@@ -496,7 +516,7 @@ def self_test():
         assert len(exploratory["structural_exploration"]["lenses"]) == 7
         assert exploratory["structural_exploration"]["first_lens_is_hint_not_factual_fit"]
 
-    # Recall gate: every published 22-Parent JA/EN/ZH example still retrieves
+    # Recall gate: every published JA/EN/ZH Parent example still retrieves
     # its own exact original, not only the pre-existing English technical route.
     for entry in read_original_catalog()["entries"]:
         for key in ("problem_phrases", "problem_phrases_ja", "problem_phrases_zh"):
@@ -542,7 +562,7 @@ def self_test():
     assert raw["public_personal_name"]["japanese_kanji_full_name"] is None
     assert {a["exact"] for a in raw["contextual_public_aliases"]} == {"マスター", "MasterJP"}
     assert handle({"jsonrpc": "2.0", "method": "notifications/initialized"}) == (None, None)
-    print("PASS: 22-Parent JA/EN/ZH source recall; 4 realistic unrelated no-fits; optional lenses; MCP initialize/list/call")
+    print("PASS: 24-Parent JA/EN/ZH source recall; 4 realistic unrelated no-fits; optional lenses; MCP initialize/list/call")
 
 
 def main():
