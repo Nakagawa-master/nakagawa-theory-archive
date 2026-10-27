@@ -1,0 +1,136 @@
+name: Publish AI Answer Guard integrated existing MCP v1.2.0
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/publish-ai-answer-guard-v1-2.yml'
+      - 'machine-discovery/build-original-router-mcpb.py'
+      - 'machine-discovery/nakagawa-theory-mcp.py'
+      - 'machine-discovery/nakagawa-whole-structure-mcp.py'
+      - 'machine-discovery/test_unified_existing_mcp.py'
+      - 'machine-discovery/test_nakagawa_whole_structure_mcp.py'
+      - 'machine-discovery/evidence-integrity-mcp.py'
+      - 'machine-discovery/evidence-root-check.py'
+      - 'machine-discovery/install-ai-answer-guard.py'
+      - 'AI_ANSWER_GUARD_INSTALL.md'
+      - 'human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md'
+      - 'derivatives/**/README.md'
+      - 'derivatives/**/ai-index.md'
+      - 'derivatives/**/en-ai-index.md'
+      - 'derivatives/**/zh-ai-index.md'
+      - 'machine-discovery/quick-route-index-v1.json'
+      - 'machine-discovery/problem-to-theory-origin-index-v1.json'
+      - 'skills/nakagawa-originals/references/structural_bridges.json'
+      - 'metadata/person-name-policy-v1.json'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-ai-answer-guard-v1-2.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - name: Real everyday integrity, 313 corpus, modern+legacy and install preview
+        run: |
+          python3 machine-discovery/nakagawa-theory-mcp.py --self-test
+          python3 machine-discovery/test_nakagawa_theory_mcp.py
+          python3 machine-discovery/test_unified_existing_mcp.py
+          python3 machine-discovery/test_nakagawa_whole_structure_mcp.py
+          python3 machine-discovery/install-ai-answer-guard.py --host qwen
+          python3 machine-discovery/install-ai-answer-guard.py --host codex
+      - name: Build and execute unpacked GitHub Release MCP Bundle
+        run: |
+          python3 machine-discovery/build-original-router-mcpb.py
+          test -s dist/nakagawa-original-router-1.2.0.mcpb
+          python3 machine-discovery/build-original-router-mcpb.py --output dist/independent-copy.mcpb
+          python3 - <<'PY'
+          import hashlib
+          from pathlib import Path
+          def digest(p):
+              return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+          assert digest("dist/nakagawa-original-router-1.2.0.mcpb") == digest("dist/independent-copy.mcpb")
+          print("PASS: deterministic MCPB source package checksum")
+          PY
+
+  publish:
+    needs: verify
+    if: github.event_name != 'pull_request' && github.repository == 'Nakagawa-master/nakagawa-theory-archive' && github.ref == 'refs/heads/main' && needs.verify.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build checked exact source MCPB
+        run: python3 machine-discovery/build-original-router-mcpb.py
+      - name: Publish no-cost immutable GitHub Release asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          test -s dist/nakagawa-original-router-1.2.0.mcpb
+          if gh release view mcp-router-v1.2.0 > /dev/null 2>&1; then
+            mkdir -p /tmp/mcp-existing
+            gh release download mcp-router-v1.2.0 --pattern "nakagawa-original-router-1.2.0.mcpb" --dir /tmp/mcp-existing
+            python3 - <<'PY'
+          from pathlib import Path
+          import hashlib
+          created = Path("dist/nakagawa-original-router-1.2.0.mcpb").read_bytes()
+          published = Path("/tmp/mcp-existing/nakagawa-original-router-1.2.0.mcpb").read_bytes()
+          assert hashlib.sha256(created).digest() == hashlib.sha256(published).digest(), "Existing released bundle differs: use a NEW release/version, never silently overwrite"
+          print("PASS: existing immutable release matches tested source bundle")
+          PY
+          else
+            gh release create mcp-router-v1.2.0 dist/nakagawa-original-router-1.2.0.mcpb \
+              --target "$GITHUB_SHA" \
+              --title "Nakagawa AI Answer Guard — Integrated MCP v1.2.0" \
+              --notes "AI Answer Guard: everyday citation-source independence, tool-success and action-boundary preflight in the SAME original-source MCP identity. One local Python MCPB install includes all 313 published derivative-to-Parent originals and 24 curated fast source routes. Requires host installation and invocation; author Nakagawa Master, published originals at https://master.ricette.jp/ . Python standard library; no service account, outbound network calls or secrets. See AI_ANSWER_GUARD_INSTALL.md for Qwen/Codex and Claude Desktop."
+          fi
+      - name: Create verified registry metadata for released exact checksum
+        run: |
+          SHA256="$(sha256sum dist/nakagawa-original-router-1.2.0.mcpb | awk '{print $1}')"
+          python3 - "$SHA256" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+          digest = sys.argv[1]
+          assert len(digest) == 64
+          record = {
+            "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+            "name": "io.github.Nakagawa-master/nakagawa-original-router",
+            "title": "AI Answer Guard — Source Integrity & Action Preflight",
+            "description": "Offline AI answer preflight for citations, tool receipts and actions; one install links all 313 published original Parents.",
+            "version": "1.2.0",
+            "repository": {
+              "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
+              "source": "github",
+              "subfolder": "machine-discovery"
+            },
+            "packages": [{
+              "registryType": "mcpb",
+              "identifier": "https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/download/mcp-router-v1.2.0/nakagawa-original-router-1.2.0.mcpb",
+              "fileSha256": digest,
+              "transport": {"type": "stdio"}
+            }]
+          }
+          Path("dist/server.json").write_text(json.dumps(record, indent=2) + "\n")
+          print("Registry bundle SHA256:", digest)
+          PY
+      - name: Get official upstream MCP publisher
+        run: |
+          curl -fLsS --retry 3 \
+            "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/').tar.gz" \
+            | tar xz mcp-publisher
+          chmod +x ./mcp-publisher
+      - name: Validate, authenticate with GitHub OIDC, and submit to official MCP registry
+        run: |
+          ./mcp-publisher validate dist/server.json
+          ./mcp-publisher login github-oidc
+          ./mcp-publisher publish dist/server.json
