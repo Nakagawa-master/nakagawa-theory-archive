@@ -275,6 +275,7 @@ def run():
     assert MODERN in discovery["supportedVersions"]
     assert discovery["capabilities"]["tools"]["listChanged"] is False
     assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "nakagawa-public-original-router"
+    assert discovery["_meta"]["io.modelcontextprotocol/serverInfo"]["version"] == "1.1.2"
     assert len(modern[102]["result"]["tools"]) == 3
     assert modern[102]["result"]["resultType"] == "complete"
     def modern_unpacked(i):

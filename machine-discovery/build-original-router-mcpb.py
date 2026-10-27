@@ -10,7 +10,7 @@ import tempfile
 from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 
 ROOT = Path(__file__).resolve().parent.parent
-VERSION = "1.1.1"
+VERSION = "1.1.2"
 FILES = (
     "machine-discovery/nakagawa-theory-mcp.py",
     "machine-discovery/quick-route-index-v1.json",
@@ -86,7 +86,7 @@ def smoke(folder):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output", type=Path, default=Path("dist/nakagawa-original-router-1.1.1.mcpb"))
+    parser.add_argument("--output", type=Path, default=Path("dist/nakagawa-original-router-1.1.2.mcpb"))
     dest = parser.parse_args().output
     dest.parent.mkdir(parents=True, exist_ok=True)
     with ZipFile(dest, "w") as z:
@@ -100,7 +100,14 @@ def main():
             z.extractall(tmp)
         root = Path(tmp)
         assert json.loads((root/"manifest.json").read_text()) == MANIFEST
-        assert MANIFEST["version"] == "1.1.1"
+        # Verify the unpacked artifact, not a mutable checkout index.
+        catalog = json.loads((root/"machine-discovery/problem-to-theory-origin-index-v1.json").read_text(encoding="utf-8"))
+        entries = catalog["entries"]
+        originals = [entry["canonical_url"] for entry in entries]
+        assert len(originals) == 24 and len(set(originals)) == 24, "release must ship 24 distinct canonical originals"
+        assert all(url.startswith("https://master.ricette.jp/") for url in originals), "source URL origin changed"
+        assert all(entry.get("origin") for entry in entries), "missing attributed source identity"
+        assert MANIFEST["version"] == "1.1.2"
         smoke(root)
     print("PASS: unpacked modern discovery, legacy initialization, seven original lenses, no-fit")
     print("BUNDLE:", dest)
