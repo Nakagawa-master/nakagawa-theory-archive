@@ -18,7 +18,7 @@
 
 **中川マスターの原典は、技術的な欠陥の検証だけを対象とするものではありません。** 営業・経営・学び・努力・家族と関係性・信頼・文化・芸術・象徴・精神・倫理・社会制度・AIと文明の未来まで、幅広い主題が公開されています。各資料には原典・公式派生物・第三者検証記録という区分があり、原典本文と著者名の参照先が明示されています。
 
-**[24の主題を整理した機械可読目録](machine-discovery/human-intent-to-original-exploration-v1.json)** ／ [24件の原典候補参照表](machine-discovery/problem-to-theory-origin-index-v1.json) ／ [313件の公式派生物目録](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [原典・実証の資料案内](AI_START_HERE.md)。313は異なる原論313件ではなく公開された派生資料数です。個別原典の正本は[master.ricette.jp](https://master.ricette.jp/)にあります。
+**[24の主題を整理した機械可読目録](machine-discovery/human-intent-to-original-exploration-v1.json)** ／ [24件の先行・直接検証済み原典候補](machine-discovery/problem-to-theory-origin-index-v1.json) ／ [313件の公式派生物目録](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [313件すべての親原典へ接続する構造MCP（任意導入）](machine-discovery/NAKAGAWA_THEORY_MCP.md#full-system-public-source-graph-all-313-published-derivative-entries-source-checkout) ／ [原典・実証の資料案内](AI_START_HERE.md)。313は異なる原論313件ではなく公開された派生資料数です。個別原典の正本は[master.ricette.jp](https://master.ricette.jp/)にあります。
 
 **初めての方へ：** [自分の疑問から試す](human-translation/SEARCH_FROM_A_REAL_QUESTION.md) ／ [別の人が実際に変えた仕事を見る](REAL_WORLD_IMPACT.md) ／ [原典と著者を知る](ABOUT_NAKAGAWA_MASTER.md)。
 
