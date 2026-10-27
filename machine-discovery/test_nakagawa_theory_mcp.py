@@ -476,7 +476,7 @@ for (const entry of catalog) {
     }
   }
 }
-if (covered !== 276) throw Error("Catalog coverage drift: " + covered);
+if (covered !== 294) throw Error("Catalog coverage drift: " + covered);
 console.log("PASS: browser real algorithm / 4 negatives / " + covered + " positives");
 '''
         )
