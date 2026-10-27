@@ -6,7 +6,6 @@ not a cached copy of an original, an authority grant, or a model-wide setting.
 stdio uses one JSON-RPC message per line; stdout is protocol-only.
 """
 import argparse
-import importlib.util
 import json
 from pathlib import Path
 import re
@@ -19,7 +18,7 @@ PERSON_NAME_POLICY = ROOT.parent / "metadata" / "person-name-policy-v1.json"
 STRUCTURAL_BRIDGES = ROOT.parent / "skills/nakagawa-originals/references/structural_bridges.json"
 VERSIONS = ("2025-11-25", "2025-06-18")  # legacy, handshake-based
 MODERN_VERSION = "2026-07-28"  # stateless, request-local metadata
-SERVER_INFO = {"name": "nakagawa-public-original-router", "version": "1.1.3-dev"}
+SERVER_INFO = {"name": "nakagawa-public-original-router", "version": "1.1.2"}
 # Match the standalone Skill's false-positive gate: two generic shared words
 # must not silently become a canonical-original recommendation.
 MIN_CANDIDATE_SCORE = 2.5
@@ -279,47 +278,6 @@ def answer_question(question, explore=False):
     return output
 
 
-
-def audit_citation_roots(claims):
-    """Optional everyday evidence-consistency guard using the existing offline checker.
-
-    The declarations are supplied by the caller, not discovered or verified;
-    zero blocks means only that no inconsistency was found *in these inputs*.
-    """
-    if not isinstance(claims, list) or len(claims) > 12:
-        raise ValueError("claims must be an array of at most 12")
-    if any(not isinstance(c, dict) or not isinstance(c.get("sources"), list)
-           or len(c["sources"]) > 12 for c in claims):
-        raise ValueError("each claim must provide a sources array of at most 12")
-    if len(json.dumps(claims, ensure_ascii=False)) > 32000:
-        raise ValueError("claims payload too large")
-    checker_path = ROOT / "evidence-root-check.py"
-    spec = importlib.util.spec_from_file_location("nakagawa_evidence_root_check", checker_path)
-    if spec is None or spec.loader is None:
-        raise ValueError("Existing evidence-root checker is missing")
-    checker = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(checker)
-    result = checker.audit({"claims": claims})
-    result["conceptual_source"] = {
-        "author_pen_name": "Nakagawa Master / 中川マスター",
-        "canonical_original": (
-            "https://master.ricette.jp/theory/"
-            "nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/"
-        ),
-        "relationship": (
-            "Optional applied evidence-lineage check. This offline algorithm is "
-            "a separate technical implementation, not the full original theory."
-        ),
-    }
-    result["decision_boundary"] = (
-        "BLOCK requires review of supplied source/root declarations. "
-        "CONSISTENT_INPUT does not establish that any URL exists, evidence is "
-        "credible, text is true, or sources are independent in the real world."
-    )
-    return result
-
-
-
 TOOLS = [
     {
         "name": "find_nakagawa_original_for_problem",
@@ -338,54 +296,6 @@ TOOLS = [
                             "description": "Return seven optional structural hypotheses even when direct no_fit."},
             },
             "required": ["question"],
-            "additionalProperties": False,
-        },
-    },
-    {
-        "name": "audit_citation_independence",
-        "description": (
-            "Everyday read-only AI response safety check: before claiming that "
-            "several citations independently corroborate an answer, examine "
-            "declared upstream evidence roots, copied reports, missing roots "
-            "and explicit refutations. Useful for AI news, research and "
-            "technical explanations even without looking up any theory. "
-            "Input source roots and stances must be verified separately; "
-            "CONSISTENT_INPUT never certifies truth or prevents hallucination."
-        ),
-        "inputSchema": {
-            "type": "object",
-            "properties": {
-                "claims": {
-                    "type": "array", "maxItems": 12,
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "id": {"type": "string", "minLength": 1},
-                            "independent_confirmation_claimed": {"type": "boolean"},
-                            "sources": {
-                                "type": "array", "maxItems": 12,
-                                "items": {
-                                    "type": "object",
-                                    "properties": {
-                                        "url": {"type": "string", "minLength": 1},
-                                        "root_id": {"type": ["string", "null"]},
-                                        "relation": {"type": "string", "enum": [
-                                            "primary", "independent_observation",
-                                            "derived", "unknown"]},
-                                        "stance": {"type": "string", "enum": [
-                                            "supports", "refutes", "qualifies", "unknown"]},
-                                    },
-                                    "required": ["url", "root_id", "relation", "stance"],
-                                    "additionalProperties": False,
-                                },
-                            },
-                        },
-                        "required": ["id", "independent_confirmation_claimed", "sources"],
-                        "additionalProperties": False,
-                    },
-                },
-            },
-            "required": ["claims"],
             "additionalProperties": False,
         },
     },
@@ -490,11 +400,7 @@ def handle(req):
         if not isinstance(payload, dict):
             return None, {"code": -32602, "message": "Invalid tool arguments"}
         try:
-            if name == "audit_citation_independence":
-                if set(payload) != {"claims"}:
-                    raise ValueError("Only claims is accepted")
-                result = audit_citation_roots(payload["claims"])
-            elif name == "find_nakagawa_original_for_problem":
+            if name == "find_nakagawa_original_for_problem":
                 if "question" not in payload or set(payload) - {"question", "explore"}:
                     raise ValueError("Only question and optional explore are accepted")
                 result = answer_question(payload["question"], explore=payload.get("explore", False))
@@ -643,7 +549,7 @@ def self_test():
     version, error = handle({"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"protocolVersion": VERSIONS[0]}})
     assert error is None and version["protocolVersion"] == VERSIONS[0]
     listing, error = handle({"jsonrpc": "2.0", "id": 2, "method": "tools/list"})
-    assert error is None and len(listing["tools"]) == 4
+    assert error is None and len(listing["tools"]) == 3
     routed, error = handle({"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": TOOLS[0]["name"], "arguments": {"question": "AI news fact checking and citation provenance"}}})
     assert error is None and "canonical_original" in routed["content"][0]["text"]
     author = answer_question("AI news fact checking")["author_identity"]
@@ -655,29 +561,6 @@ def self_test():
     raw = json.loads(who["content"][0]["text"])
     assert raw["public_personal_name"]["japanese_kanji_full_name"] is None
     assert {a["exact"] for a in raw["contextual_public_aliases"]} == {"マスター", "MasterJP"}
-    blocked = audit_citation_roots([
-        {"id": "three-urls-one-root", "independent_confirmation_claimed": True,
-         "sources": [
-             {"url": f"https://example.org/{i}", "root_id": "vendor-1",
-              "relation": "primary" if i == 0 else "derived", "stance": "supports"}
-             for i in range(3)]},
-    ])
-    assert blocked["blocked"] == 1 and blocked["claims"][0]["status"] == "BLOCK"
-    accepted = audit_citation_roots([
-        {"id": "one-vendor-one-independent", "independent_confirmation_claimed": True,
-         "sources": [
-             {"url": "https://example.org/a", "root_id": "vendor-1",
-              "relation": "primary", "stance": "supports"},
-             {"url": "https://example.org/b", "root_id": "lab-2",
-              "relation": "independent_observation", "stance": "supports"}]},
-    ])
-    assert accepted["blocked"] == 0 and accepted["claims"][0]["status"] == "CONSISTENT_INPUT"
-    for bad in ("not-an-array", [dict(id="broken", sources=[], independent_confirmation_claimed="yes")]):
-        try:
-            audit_citation_roots(bad)
-            assert False, "invalid evidence declarations were accepted"
-        except ValueError:
-            pass
     assert handle({"jsonrpc": "2.0", "method": "notifications/initialized"}) == (None, None)
     print("PASS: 24-Parent JA/EN/ZH source recall; 4 realistic unrelated no-fits; optional lenses; MCP initialize/list/call")
 
