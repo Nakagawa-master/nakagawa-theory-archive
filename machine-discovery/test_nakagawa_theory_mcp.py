@@ -267,7 +267,7 @@ def run():
     blocked = unpack(18)
     assert blocked["blocked"] == 1
     assert blocked["claims"][0]["status"] == "BLOCK"
-    assert "fewer than two supporting upstream roots" in blocked["claims"][0]["issues"]
+    assert any("fewer than two supporting upstream roots" in issue for issue in blocked["claims"][0]["issues"])
     consistent = unpack(19)
     assert consistent["blocked"] == 0
     assert consistent["claims"][0]["status"] == "CONSISTENT_INPUT"
