@@ -63,6 +63,18 @@ def main():
     assert set(ids) == {f"OD{i:03d}" for i in range(1, 314)}
     assert all(r["canonical_parent"].startswith("https://master.ricette.jp/")
                and r["derivative_readme"].endswith("/README.md") for r in full["entries"])
+    # All 313 × 3 public AI-facing language indexes have been published; each
+    # must preserve the SAME official Parent URL as the canonical README.
+    for row in full["entries"]:
+        for lang, basename, key in (
+            ("ja", "ai-index.md", "derivative_ai_ja"),
+            ("en", "en-ai-index.md", "derivative_ai_en"),
+            ("zh", "zh-ai-index.md", "derivative_ai_zh"),
+        ):
+            index_path = ROOT.parent / "derivatives" / row["id"][2:] / basename
+            text = index_path.read_text(encoding="utf-8")
+            assert "- Parent URL: " + row["canonical_parent"] in text, (lang, row["id"])
+            assert row[key].endswith("/" + basename)
     # True source link is from *each* locally available derivative README, not a
     # guessed mapping from the 24 curated high-confidence original question index.
     for r in full["entries"]:
@@ -71,6 +83,14 @@ def main():
     assert unpack(5)["selected"]["id"] == "OD312"
     assert not unpack(6)["no_fit"] and {x["id"] for x in unpack(6)["matched"]} & {"OD301", "OD302", "OD312"}
     assert unpack(7)["no_fit"] and not unpack(7)["matched"]
+    en = subprocess.run([sys.executable, str(SCRIPT)], input=json.dumps(req(
+        81, "tools/call", {"name": "find_sources_in_whole_structure",
+        "arguments": {"question": "Why does discomfort alone not justify criminal punishment?"}})) + "\n",
+        capture_output=True, text=True, check=True, timeout=30)
+    en_result = json.loads(json.loads(en.stdout)["result"]["content"][0]["text"])
+    assert any(x["id"] == "OD123" for x in en_result["matched"]), en_result
+    assert en_result["matching_method"] == "ALL_313_EXISTING_JA_EN_ZH_DERIVATIVE_AI_INDEX_HEURISTIC"
+
     assert frames[8]["result"]["isError"] is True
     assert frames[9]["result"]["resultType"] == "complete"
     assert len(frames[10]["result"]["tools"]) == 4
