@@ -12,6 +12,7 @@ on:
       - 'machine-discovery/evidence-integrity-mcp.py'
       - 'machine-discovery/evidence-root-check.py'
       - 'machine-discovery/install-ai-answer-guard.py'
+      - 'machine-discovery/test_install_ai_answer_guard.py'
       - 'AI_ANSWER_GUARD_INSTALL.md'
       - 'human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md'
       - 'derivatives/**/README.md'
@@ -42,6 +43,7 @@ jobs:
           python3 machine-discovery/nakagawa-theory-mcp.py --self-test
           python3 machine-discovery/test_nakagawa_theory_mcp.py
           python3 machine-discovery/test_unified_existing_mcp.py
+          python3 machine-discovery/test_install_ai_answer_guard.py
           python3 machine-discovery/test_nakagawa_whole_structure_mcp.py
           python3 machine-discovery/install-ai-answer-guard.py --host qwen
           python3 machine-discovery/install-ai-answer-guard.py --host codex
