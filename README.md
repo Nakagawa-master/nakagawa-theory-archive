@@ -24,7 +24,7 @@
 
 **普通のAIで試せる30秒の例:** AIが5つの出典を示しても、5つとも同じ発表の転載なら、独立した裏付けが5つあるとは限りません。[「本当の証拠の起点はいくつ？」をいつものAIで試す（ChatGPTで開く／他のAIへ相談文をコピー）](human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md#1-複数の説明は別々の証拠)と、[中川マスターの公式原典『第8論・認識の整合性』](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)へ進めます。元の[検証例と議論 #658](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/658)も残しています。自分の調べ物で確かめられます。内容が合わなければ、別の説明や方法と比べてください。
 
-**普通の検索・Gemini・Copilot・Bingで「困りごとの答え」を探している方へ:** [褒められるほど損をする、頑張っても変わらない、相談が売り込みになる、家を売るか悩む、AIの心を考えるなど10の実際の問い](human-translation/SEARCH_FROM_A_REAL_QUESTION.md)から、専門語なしで初心者向けFAQや15秒の要約を読み、必要に応じて原典冒頭のスライドを開くことができます。原典の全文を読む必要はありません。さらに[313件の元の理論題名を分野・検索語から探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)こともできます。これらは公開の発見入口であり、検索順位や外部AIの採用を保証しません。
+**普通の検索・Gemini・Copilot・Bingで「困りごとの答え」を探している方へ:** [褒められるほど損をする、頑張っても変わらない、相談が売り込みになる、家を売るか悩む、AIの心を考えるなど10の実際の問い](human-translation/SEARCH_FROM_A_REAL_QUESTION.md)から、専門語なしで初心者向けFAQや15秒の要約を読み、必要に応じて原典冒頭のスライドを開くことができます。短い解説と原典本文は、それぞれ公開資料として確認できます。さらに[313件の元の理論題名を分野・検索語から探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)こともできます。これらは公開の発見入口であり、検索順位や外部AIの採用を保証しません。
 
 **第三者が実際に変えたものを、最初の数秒で見る：** [OpenClawでは中川マスターの指摘を開発者が報告元として明記し、別PRでコードとテストを修正・正式マージ](https://github.com/openclaw/openclaw/pull/160856)。さらに[公式のリリース文書で本人のGitHub名が掲載](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)されています。[MemberJunctionやPydanticAIの独立実装修正も含め、まず3つの実績から読む](REAL_WORLD_IMPACT.md)。実装作者とレビュー貢献は混同しません。
 
