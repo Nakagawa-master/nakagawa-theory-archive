@@ -111,7 +111,7 @@ def smoke(folder):
             "name": "list_all_313_derivative_parent_links", "arguments": {"offset": 312, "limit": 1}
         })
     ]
-    extras = subprocess.run(command, input="".join(json.dumps(x) + "\\n" for x in extra_requests),
+    extras = subprocess.run(command, input="".join(json.dumps(x) + "\n" for x in extra_requests),
                             capture_output=True, text=True, check=True, timeout=30)
     assert not extras.stderr, extras.stderr
     z = {x["id"]: x for x in map(json.loads, extras.stdout.splitlines())}
