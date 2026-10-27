@@ -61,7 +61,7 @@ def run():
     run_safety = subprocess.run(
         [sys.executable, str(safety)],
         capture_output=True, text=True, check=True, timeout=10,
-        input="".join(json.dumps(m) + "\\n" for m in independent_requests)
+        input="".join(json.dumps(m) + "\n" for m in independent_requests)
     )
     assert not run_safety.stderr, run_safety.stderr
     safety_out = {f["id"]: f for f in map(json.loads, run_safety.stdout.splitlines())}
