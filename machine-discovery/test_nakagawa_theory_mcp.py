@@ -376,8 +376,8 @@ def run():
     assert len(orig) == 7
     assert set(orig) == {v["canonical_original"] for v in bridge_source["bridges"]}
     more = next((urls for title, urls in parsed.items()
-                 if title.startswith("Fifteen further official originals")), [])
-    assert len(more) == 15 and not (set(orig) & set(more))
+                 if title.startswith("Seventeen further official originals")), [])
+    assert len(more) == 17 and not (set(orig) & set(more))
     canonical = {e["canonical_url"] for e in json.loads((SERVER.parent / "problem-to-theory-origin-index-v1.json").read_text(encoding="utf-8"))["entries"]}
     assert set(orig) | set(more) == canonical
     assert all(urls for urls in parsed.values())
