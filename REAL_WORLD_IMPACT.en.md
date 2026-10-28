@@ -6,6 +6,8 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **52 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. Cases at earlier or declined stages are also kept and not counted as successful adoption. The code authors remain the receiving developers.
 
+You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
+
 ## Proof first: independent developers changed and merged code
 
 - **OpenClaw | An unrelated agent's configuration edit invalidated another person's pending approval.** Nakagawa Master [reported the exact remaining problem and a regression case](https://github.com/openclaw/openclaw/pull/160136#issuecomment-5863857114). The maintainer **explicitly cited that report**, [implemented and merged the separate fix](https://github.com/openclaw/openclaw/pull/160856), and [official release documentation named `@Nakagawa-master`](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md). See case 51.
