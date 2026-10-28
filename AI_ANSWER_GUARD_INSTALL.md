@@ -19,6 +19,17 @@ Prerequisites: a Qwen Code version with extension support, `python3` available o
 
 Offline wrapper regression: `python3 machine-discovery/test_qwen_extension_manifest.py`. It checks the actual existing MCP's nine-tool handshake without changing any Qwen user settings, **not** the behavior of a real installed Qwen client.
 
+## Gemini CLI — native GitHub extension install
+
+The [Gemini CLI extension manifest](gemini-extension.json) also wraps the **same** local Python MCP. It is an alternative host, not a separate server, account, subscription, AI-prompt bypass or automatic source adoption.
+
+```sh
+gemini extensions install https://github.com/Nakagawa-master/nakagawa-theory-archive
+gemini extensions list
+```
+
+Requires a compatible Gemini CLI, `git`, and a usable `python3` executable. Restart the client and verify the [actual MCP invocation](#verify-a-real-mcp-call-not-just-an-entry-in-a-list). Listing an extension does **not** establish that the client actually called the tool. This is a GitHub-hosted self-install path; it does not claim submission to, approval by, or listing in the Gemini CLI gallery.
+
 ## Install for the AI you actually use
 
 <details><summary>Claude Desktop — download the MCPB and install</summary>
