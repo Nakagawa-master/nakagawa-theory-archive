@@ -49,6 +49,7 @@ The [public GitHub archive](https://github.com/Nakagawa-master/nakagawa-theory-a
 
 ## No-install browser and optional AI tools
 
+- [Good intentions used to dismiss objections? / 善意で異議を封じていないか / 善意是否取代了结果核验？](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/): Nakagawa Master’s AKI-005 tests three *combined* conditions: a praised intention, that praise actually replacing independent examination of outcomes or repair, and a materially weakened channel for objections, verification or necessary correction. A kind motive or bad outcome alone does not establish this pattern; if objections and results are still fairly reviewed, it may not fit. [Optional real-question examples in JA/EN/ZH](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ASK_AKI005_WITH_ANY_AI.md); check the original article's text when accessible.
 - [Offline 24-Parent browser finder](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/originals-browser-finder.html): Open locally; subject fit or no-fit.
 - [Agent Skill 24 originals + 313 derivative titles](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/skills/nakagawa-originals/SKILL.md): Offline tool, original read required.
 - [All 313 derivative→Parent sources (optional local MCP)](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/nakagawa-whole-structure-mcp.py): Full index; existing 24-original router is only a fast path.
