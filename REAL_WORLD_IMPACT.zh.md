@@ -6,6 +6,8 @@
 
 **公开记录共52例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。尚在处理或未被采纳的案例也完整保留，**不算成已经采纳的成果**；修复代码属于接收方开发者。
 
+还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
+
 ## 先看成果：其他开发者实际修改并合并代码
 
 - **OpenClaw｜修改无关代理配置，却让另一个人的审批失效。** 中川大师[指出具体漏洞和回归测试](https://github.com/openclaw/openclaw/pull/160136#issuecomment-5863857114)。开发者**明确引用其报告**，在[独立PR中实现并合并修复](https://github.com/openclaw/openclaw/pull/160856)；[官方版本文档列出 `@Nakagawa-master`](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)。详见案例51。
