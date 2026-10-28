@@ -10,7 +10,7 @@ This tool is **local, read-only and Python standard-library only**. No API keys,
 
 <details><summary>Claude Desktop — download the MCPB and install</summary>
 
-1. Download **[AI Answer Guard MCPB v1.2.0](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/download/mcp-router-v1.2.0/nakagawa-original-router-1.2.0.mcpb)** (release becomes available after publication).
+1. Download **[AI Answer Guard MCPB v1.2.0](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/download/mcp-router-v1.2.0/nakagawa-original-router-1.2.0.mcpb)** (published v1.2.0 release).
 2. Claude Desktop → **Settings → Desktop app → Extensions → Manage → Advanced settings → Install Extension…** and choose the file.
 3. In Claude Desktop, check that the server and nine tools appear, and use it in regular sessions.
 
@@ -55,6 +55,14 @@ Point its stdio configuration to **`python3 /absolute/path/to/nakagawa-theory-ar
 
 **Typical use:** Ask your connected AI, *“Before you send your answer or take this consequential action, use AI Answer Guard to test the sources, action and observed results, then correct what fails.”* The host can choose the preflight tool for ordinary work from its description alone. To run the preflight across **every** answer by default rather than when a model invokes it, configure an appropriate host-side workflow/hook when that host supports it; this MCP cannot silently override a host's behavior.
 
+### Verify a real MCP call, not just an entry in a list
+
+After registering the server and restarting your chosen host, open a **scratch session** and request this no-side-effect test:
+
+> Call `ai-answer-guard` → `preflight_ai_answer_and_action` with `tool_results: [{"id":"demo-send","status":"failed","success":false}]` and `planned_actions: [{"id":"demo-send","permission_confirmed":false,"exact_arguments_confirmed":false,"reversible":false,"requires_external_side_effect":true}]`. Show the actual tool result and explain why this demonstration does not establish a completed send or authorization. Do not perform any external action.
+
+The expected practical behavior is to flag the failed tool receipt and missing authorization, then recommend what to verify before claiming success. **Inspect the host's actual tool-call trace/result**: `qwen mcp list`, an installed extension, or nine visible tool names alone confirms availability, not that the AI invoked the check. This synthetic test is not a third-party adoption report, a real permission grant, or a measured accuracy improvement.
+
 **Origin and licensing:** Developed from published works by **中川マスター / Nakagawa Master (Keisuke Nakagawa)**, with original canonical works at [master.ricette.jp](https://master.ricette.jp/). Original source works and derivative rights retain their published conditions ([LICENSE](LICENSE), [NCL-α](https://master.ricette.jp/structure-license/)); this local pointer and analysis utility does not grant new reuse permissions. The **313 records are official derivative entries**, not an assertion of 313 distinct original works.
 
-**Release state:** The v1.2.0 link is usable only when the corresponding GitHub Release asset exists. Until then, the source-checkout installation above works. Installation creates readiness in that host; independent model adoption, automatically executing on all turns, and quantified error reduction need separate observation.
+**Release state:** [v1.2.0 is published with the installable MCPB](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.2.0). A configured or downloaded server is a starting point; confirm an actual host-invoked tool result before relying on its checks. Other hosts and users decide independently whether to install or invoke it.
