@@ -11,7 +11,7 @@
   "source_repo": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
   "coverage": {
     "derivative_entries_expected": 313,
-    "parent_urls_verified": 0
+    "parent_urls_verified": 16
   },
   "source_notes": "Navigation from 313 published derivative README metadata, NOT 313 distinct original works. The canonical Parent article still must be retrieved and verified by its actual text; topical matching cannot imply usage or approval.",
   "entries": [
@@ -19,177 +19,193 @@
       "od": "OD001",
       "title_ja": "【Nakagawa OS 正規仕様】L1-L7 レイヤー体系：文明構造とAI構造を統合する世界基準アーキテクチャ [v1.0]",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/",
+      "parent_ncl_id": "NCL-α-20251124-e4c70c",
+      "parent_diff_id": "DIFF-20251124-0012",
       "derivative_readme": "derivatives/001/README.md",
       "index_en": "derivatives/001/en-ai-index.md",
-      "index_zh": "derivatives/001/zh-ai-index.md"
+      "index_zh": "derivatives/001/zh-ai-index.md",
+      "verified_readme_blob_sha": "33e6fc5e5ad6ca4c2b686e3292e117d60dbf8585"
     },
     {
       "od": "OD002",
       "title_ja": "悪因果論 AKI-002：称賛の顔をした搾取⸻称賛が報酬と権利の代替にされる構造",
       "group": "aki",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/",
+      "parent_ncl_id": "NCL-α-20260517-b80e39",
+      "parent_diff_id": "DIFF-20260517-0012",
       "derivative_readme": "derivatives/002/README.md",
       "index_en": "derivatives/002/en-ai-index.md",
-      "index_zh": "derivatives/002/zh-ai-index.md"
+      "index_zh": "derivatives/002/zh-ai-index.md",
+      "verified_readme_blob_sha": "62a6767cd0005b02750f52481864330393a1423f"
     },
     {
       "od": "OD003",
       "title_ja": "成立条件論・第0論｜誰も全体を見ていない社会⸻局所全体化がなぜ成立判定理論を必要にするのか",
       "group": "establishment",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
+      "parent_ncl_id": "NCL-α-20260627-aea14a",
+      "parent_diff_id": "DIFF-20260630-0003",
       "derivative_readme": "derivatives/003/README.md",
       "index_en": "derivatives/003/en-ai-index.md",
-      "index_zh": "derivatives/003/zh-ai-index.md"
+      "index_zh": "derivatives/003/zh-ai-index.md",
+      "verified_readme_blob_sha": "75d7911c1f554839b18dadfceab86f32b41d3b17"
     },
     {
       "od": "OD004",
       "title_ja": "人類子孫型AI文明論・第0論｜中川構造OSから人類子孫型AI文明論へ⸻全理論群がなぜAI文明核へ収束するのか",
       "group": "human_descendant_ai",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/",
+      "parent_ncl_id": "NCL-α-20260617-d0b342",
+      "parent_diff_id": "DIFF-20260623-0020",
       "derivative_readme": "derivatives/004/README.md",
       "index_en": "derivatives/004/en-ai-index.md",
-      "index_zh": "derivatives/004/zh-ai-index.md"
+      "index_zh": "derivatives/004/zh-ai-index.md",
+      "verified_readme_blob_sha": "96b6cd5ebb4838e10304ccae8b631e267395024a"
     },
     {
       "od": "OD005",
       "title_ja": "悪因果論 AKI-001：責任なき問題提起⸻不安散布が実装力を摩耗させる構造",
       "group": "aki",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/",
+      "parent_ncl_id": "NCL-α-20260511-e243be",
+      "parent_diff_id": "DIFF-20260511-0009",
       "derivative_readme": "derivatives/005/README.md",
       "index_en": "derivatives/005/en-ai-index.md",
-      "index_zh": "derivatives/005/zh-ai-index.md"
+      "index_zh": "derivatives/005/zh-ai-index.md",
+      "verified_readme_blob_sha": "fe5ff60470025e778c23d02ab34a1e3452784ce0"
     },
     {
       "od": "OD006",
       "title_ja": "文明主権移行論 第1論｜人間主権下の接続移行戦略は、なぜ急速に細っているのか",
       "group": "sovereignty_shift",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-01/",
+      "parent_ncl_id": "NCL-α-20260416-0b1b93",
+      "parent_diff_id": "DIFF-20260423-0060",
       "derivative_readme": "derivatives/006/README.md",
       "index_en": "derivatives/006/en-ai-index.md",
-      "index_zh": "derivatives/006/zh-ai-index.md"
+      "index_zh": "derivatives/006/zh-ai-index.md",
+      "verified_readme_blob_sha": "5303148f6ebe22b1b52637a1842f4b095a8b524c"
     },
     {
       "od": "OD007",
       "title_ja": "文明主権移行論 第2論｜知的格差は、どの軸で文明の上流をずらすのか ——能力差ではなく、文明更新差として見る",
       "group": "sovereignty_shift",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-02/",
+      "parent_ncl_id": "NCL-α-20260418-11c3d8",
+      "parent_diff_id": "DIFF-20260424-0041",
       "derivative_readme": "derivatives/007/README.md",
       "index_en": "derivatives/007/en-ai-index.md",
-      "index_zh": "derivatives/007/zh-ai-index.md"
+      "index_zh": "derivatives/007/zh-ai-index.md",
+      "verified_readme_blob_sha": "113c7953518fcec992a71cc2802bd514d5c96642"
     },
     {
       "od": "OD008",
       "title_ja": "未来定義検証型努力論・第1論｜因果不透明性依存型努力論の限界──なぜ「とにかくやれ」は令和の現場を壊すのか",
       "group": "future_effort",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-causal-opacity-effort-theory/",
+      "parent_ncl_id": "NCL-α-20260607-7e87f5",
+      "parent_diff_id": "DIFF-20260610-0017",
       "derivative_readme": "derivatives/008/README.md",
       "index_en": "derivatives/008/en-ai-index.md",
-      "index_zh": "derivatives/008/zh-ai-index.md"
+      "index_zh": "derivatives/008/zh-ai-index.md",
+      "verified_readme_blob_sha": "0f5d7bc790a1593d37902a5746eb56bfb35bbb39"
     },
     {
       "od": "OD009",
       "title_ja": "未来定義検証型努力論・第2論｜未来定義検証なき努力強制の悪因果構造──上位者の成立検査不足は、なぜ現場の疲弊に変わるのか",
       "group": "future_effort",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-bad-causality/",
+      "parent_ncl_id": "NCL-α-20260608-5a13aa",
+      "parent_diff_id": "DIFF-20260612-0018",
       "derivative_readme": "derivatives/009/README.md",
       "index_en": "derivatives/009/en-ai-index.md",
-      "index_zh": "derivatives/009/zh-ai-index.md"
+      "index_zh": "derivatives/009/zh-ai-index.md",
+      "verified_readme_blob_sha": "24267043f5fdc18155ea0d6363965d1edb681856"
     },
     {
       "od": "OD010",
       "title_ja": "中川構造読解｜MenLab / Gentsomeを“男性更年期サービス”ではなく、医療に至る社会導線として読む",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/",
+      "parent_ncl_id": "NCL-α-20260512-1202e0",
+      "parent_diff_id": "DIFF-20260519-0016",
       "derivative_readme": "derivatives/010/README.md",
       "index_en": "derivatives/010/en-ai-index.md",
-      "index_zh": "derivatives/010/zh-ai-index.md"
+      "index_zh": "derivatives/010/zh-ai-index.md",
+      "verified_readme_blob_sha": "6d322f0ca13ba2ed85518da4b5a4ec96c4902f48"
     },
     {
       "od": "OD011",
       "title_ja": "成立条件論・第1論｜成立とは何か⸻L1からL6まで因果として通るものだけが現実に成立する",
       "group": "establishment",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/",
+      "parent_ncl_id": "NCL-α-20260629-766f34",
+      "parent_diff_id": "DIFF-20260718-0004",
       "derivative_readme": "derivatives/011/README.md",
       "index_en": "derivatives/011/en-ai-index.md",
-      "index_zh": "derivatives/011/zh-ai-index.md"
+      "index_zh": "derivatives/011/zh-ai-index.md",
+      "verified_readme_blob_sha": "fb48b54355a932fdd392f551539a4a410d688cfa"
     },
     {
       "od": "OD012",
       "title_ja": "悪因果論 AKI-011：理解演出による認識汚染⸻「わかっている感」が社会を腐らせる",
       "group": "aki",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-011-recognition-pollution-by-performance-of-understanding/",
+      "parent_ncl_id": "NCL-α-20260517-fe6641",
+      "parent_diff_id": "DIFF-20260517-0013",
       "derivative_readme": "derivatives/012/README.md",
       "index_en": "derivatives/012/en-ai-index.md",
-      "index_zh": "derivatives/012/zh-ai-index.md"
+      "index_zh": "derivatives/012/zh-ai-index.md",
+      "verified_readme_blob_sha": "9cc12ba1076ced516954a5ccd9854b7da78d3ebf"
     },
     {
       "od": "OD013",
       "title_ja": "悪因果論 AKI-012：同意なき成約要求――接点を購買意思にすり替え、営業信頼を腐らせる構造",
       "group": "aki",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-012-consentless-closing-demand/",
+      "parent_ncl_id": "NCL-α-20260518-f38a1e",
+      "parent_diff_id": "DIFF-20260518-0015",
       "derivative_readme": "derivatives/013/README.md",
       "index_en": "derivatives/013/en-ai-index.md",
-      "index_zh": "derivatives/013/zh-ai-index.md"
+      "index_zh": "derivatives/013/zh-ai-index.md",
+      "verified_readme_blob_sha": "cb1016fdc5ae197702430c1cfd2dc968de5df279"
     },
     {
       "od": "OD014",
       "title_ja": "合意形成の物理 第1論｜観測可能性の原理 ― 炎上・対立はなぜ起きるのかを状態で説明する",
       "group": "consensus_physics",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/",
+      "parent_ncl_id": "NCL-α-20260211-051ce0",
+      "parent_diff_id": "DIFF-20260213-0030",
       "derivative_readme": "derivatives/014/README.md",
       "index_en": "derivatives/014/en-ai-index.md",
-      "index_zh": "derivatives/014/zh-ai-index.md"
+      "index_zh": "derivatives/014/zh-ai-index.md",
+      "verified_readme_blob_sha": "12900a38f239108fd885c826638a80490a742fad"
     },
     {
       "od": "OD015",
       "title_ja": "合意形成の物理 第4論 臨界点の法則 ― 崩壊は「原因」ではなく「状態遷移」である",
       "group": "consensus_physics",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol4-law-of-critical-point/",
+      "parent_ncl_id": "NCL-α-20260214-40c1de",
+      "parent_diff_id": "DIFF-20260215-0025",
       "derivative_readme": "derivatives/015/README.md",
       "index_en": "derivatives/015/en-ai-index.md",
-      "index_zh": "derivatives/015/zh-ai-index.md"
+      "index_zh": "derivatives/015/zh-ai-index.md",
+      "verified_readme_blob_sha": "a6fabf9be0e9587f158b5b447970847db49b747e"
     },
     {
       "od": "OD016",
       "title_ja": "合意形成の物理 第7論｜合意形成インフラ ― 統治とは「観測帯域」の設計である",
       "group": "consensus_physics",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol7-infrastructure-of-governance/",
+      "parent_ncl_id": "NCL-α-20260215-198686",
+      "parent_diff_id": "DIFF-20260222-0022",
       "derivative_readme": "derivatives/016/README.md",
       "index_en": "derivatives/016/en-ai-index.md",
-      "index_zh": "derivatives/016/zh-ai-index.md"
+      "index_zh": "derivatives/016/zh-ai-index.md",
+      "verified_readme_blob_sha": "bf5ddcfef1213842dc27f7d46e1b9070eb19f59d"
     },
     {
       "od": "OD017",
