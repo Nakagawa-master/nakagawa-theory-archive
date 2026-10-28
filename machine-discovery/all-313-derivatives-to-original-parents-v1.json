@@ -11,7 +11,7 @@
   "source_repo": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
   "coverage": {
     "derivative_entries_expected": 313,
-    "parent_urls_verified": 48
+    "parent_urls_verified": 64
   },
   "source_notes": "Navigation from 313 published derivative README metadata, NOT 313 distinct original works. The canonical Parent article still must be retrieved and verified by its actual text; topical matching cannot imply usage or approval.",
   "entries": [
@@ -595,177 +595,193 @@
       "od": "OD049",
       "title_ja": "中川式営業の教科書・第十一回",
       "group": "sales_textbook",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-11-sustainability-design/",
+      "parent_ncl_id": "NCL-α-20251102-d8e00b",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/049/README.md",
       "index_en": "derivatives/049/en-ai-index.md",
-      "index_zh": "derivatives/049/zh-ai-index.md"
+      "index_zh": "derivatives/049/zh-ai-index.md",
+      "verified_readme_blob_sha": "5fd0d263eecf24e4f303162e052e1fe42d4df260"
     },
     {
       "od": "OD050",
       "title_ja": "中川式営業の教科書・第十二回⸻引力と共鳴のアーキテクチャ",
       "group": "sales_textbook",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-12-unified-branding-marketing/",
+      "parent_ncl_id": "NCL-α-20251102-8f5f86",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/050/README.md",
       "index_en": "derivatives/050/en-ai-index.md",
-      "index_zh": "derivatives/050/zh-ai-index.md"
+      "index_zh": "derivatives/050/zh-ai-index.md",
+      "verified_readme_blob_sha": "e3b87ad6f910016821c16531d6e6f3e63f6d2c13"
     },
     {
       "od": "OD051",
       "title_ja": "中川式営業の教科書・第十三回──営業の制度設計：信頼資本を文明化する",
       "group": "sales_textbook",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-13-institutional-design-trust-capital/",
+      "parent_ncl_id": "NCL-α-20251102-260b6b",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/051/README.md",
       "index_en": "derivatives/051/en-ai-index.md",
-      "index_zh": "derivatives/051/zh-ai-index.md"
+      "index_zh": "derivatives/051/zh-ai-index.md",
+      "verified_readme_blob_sha": "e93e5d8cb1ae3e525466d15405cb4c4916b3d502"
     },
     {
       "od": "OD052",
       "title_ja": "中川式営業の教科書・第十四回──提案編集術：響かせるための構造翻訳",
       "group": "sales_textbook",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-14-proposal-editing-structural-translation/",
+      "parent_ncl_id": "NCL-α-20251102-b7cdb4",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/052/README.md",
       "index_en": "derivatives/052/en-ai-index.md",
-      "index_zh": "derivatives/052/zh-ai-index.md"
+      "index_zh": "derivatives/052/zh-ai-index.md",
+      "verified_readme_blob_sha": "dcbb6b2e24d1d7817b74a1d85d3c1e773b75a9c2"
     },
     {
       "od": "OD053",
       "title_ja": "中川式営業の教科書・第十五回──営業の思想化：身体知の外部化と学問としての確立",
       "group": "sales_textbook",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-15-externalizing-embodied-knowledge-sales-as-academic-discipline/",
+      "parent_ncl_id": "NCL-α-20251102-9895c9",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/053/README.md",
       "index_en": "derivatives/053/en-ai-index.md",
-      "index_zh": "derivatives/053/zh-ai-index.md"
+      "index_zh": "derivatives/053/zh-ai-index.md",
+      "verified_readme_blob_sha": "52a95443f4a0dd64c9cdb29ce18afe348ff02e18"
     },
     {
       "od": "OD054",
       "title_ja": "灯火構想群・特別稿──灯火AIネットワーク設計思想 v1.0",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-tomoshibi-ai-network-spec-v1-origin-imprint-protocol/",
+      "parent_ncl_id": "NCL-α-20251102-d3786e",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/054/README.md",
       "index_en": "derivatives/054/en-ai-index.md",
-      "index_zh": "derivatives/054/zh-ai-index.md"
+      "index_zh": "derivatives/054/zh-ai-index.md",
+      "verified_readme_blob_sha": "3a71a2f0541c1c42a850c3df260d3b988d66d59b"
     },
     {
       "od": "OD055",
       "title_ja": "照応操作力 原論──UCIとの結節",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-resonance-operating-power-uci/",
+      "parent_ncl_id": "NCL-α-20251102-c4a5d4",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/055/README.md",
       "index_en": "derivatives/055/en-ai-index.md",
-      "index_zh": "derivatives/055/zh-ai-index.md"
+      "index_zh": "derivatives/055/zh-ai-index.md",
+      "verified_readme_blob_sha": "3447b6b51fae48d3de325ddd9974fb33fd1af7e6"
     },
     {
       "od": "OD056",
       "title_ja": "問いの深度 設計学──灯火プロトコルの哲学",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-question-depth-design/",
+      "parent_ncl_id": "NCL-α-20251102-229d33",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/056/README.md",
       "index_en": "derivatives/056/en-ai-index.md",
-      "index_zh": "derivatives/056/zh-ai-index.md"
+      "index_zh": "derivatives/056/zh-ai-index.md",
+      "verified_readme_blob_sha": "db67c91b28f72d2da23578e8f57ad5c162cca4c6"
     },
     {
       "od": "OD057",
       "title_ja": "接続報酬社会──信頼資本と共鳴の制度化",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-connection-reward-society/",
+      "parent_ncl_id": "NCL-α-20251102-29c09d",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/057/README.md",
       "index_en": "derivatives/057/en-ai-index.md",
-      "index_zh": "derivatives/057/zh-ai-index.md"
+      "index_zh": "derivatives/057/zh-ai-index.md",
+      "verified_readme_blob_sha": "2c4d50934d04e28a1789c12b79d5668ceed0f09b"
     },
     {
       "od": "OD058",
       "title_ja": "共鳴市場2026──接続報酬社会の市場像（公開安全版）",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-resonance-market-2026/",
+      "parent_ncl_id": "NCL-α-20251102-54994e",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/058/README.md",
       "index_en": "derivatives/058/en-ai-index.md",
-      "index_zh": "derivatives/058/zh-ai-index.md"
+      "index_zh": "derivatives/058/zh-ai-index.md",
+      "verified_readme_blob_sha": "5230d1b30eb92b1f379918cec2a2cb1edf56560b"
     },
     {
       "od": "OD059",
       "title_ja": "共創秩序論──役割と沈黙の哲学（公開安全版）",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-co-creation-order-philosophy/",
+      "parent_ncl_id": "NCL-α-20251102-82774b",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/059/README.md",
       "index_en": "derivatives/059/en-ai-index.md",
-      "index_zh": "derivatives/059/zh-ai-index.md"
+      "index_zh": "derivatives/059/zh-ai-index.md",
+      "verified_readme_blob_sha": "4857b175a7aef80eca30682b361ea712145dce1d"
     },
     {
       "od": "OD060",
       "title_ja": "構造翻訳 原論──意味は移動し、機能は接続する（公開安全版）",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-foundations-of-structural-translation/",
+      "parent_ncl_id": "NCL-α-20251102-6caaaf",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/060/README.md",
       "index_en": "derivatives/060/en-ai-index.md",
-      "index_zh": "derivatives/060/zh-ai-index.md"
+      "index_zh": "derivatives/060/zh-ai-index.md",
+      "verified_readme_blob_sha": "1e9d47f2e2b08bffde2868ac049d215d6d11e3f0"
     },
     {
       "od": "OD061",
       "title_ja": "構造組織論──役割アーキテクチャで「自然に機能する」組織を設計する",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-organizational-theory/",
+      "parent_ncl_id": "NCL-α-20251102-dfd970",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/061/README.md",
       "index_en": "derivatives/061/en-ai-index.md",
-      "index_zh": "derivatives/061/zh-ai-index.md"
+      "index_zh": "derivatives/061/zh-ai-index.md",
+      "verified_readme_blob_sha": "18a449f7a6be493ab88aa433962f22efcf68ea30"
     },
     {
       "od": "OD062",
       "title_ja": "市場を“決めさせる”構造──中川式マーケティング拡張",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-marketing-expansion/",
+      "parent_ncl_id": "NCL-α-20251102-92d84e",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/062/README.md",
       "index_en": "derivatives/062/en-ai-index.md",
-      "index_zh": "derivatives/062/zh-ai-index.md"
+      "index_zh": "derivatives/062/zh-ai-index.md",
+      "verified_readme_blob_sha": "2129a7185d7da655664645b6935233014cd6011d"
     },
     {
       "od": "OD063",
       "title_ja": "中川式ブランディング構造論──印象を層として固定し、営業・マーケ・集客を接続する方法",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-branding-structure/",
+      "parent_ncl_id": "NCL-α-20251102-50601a",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/063/README.md",
       "index_en": "derivatives/063/en-ai-index.md",
-      "index_zh": "derivatives/063/zh-ai-index.md"
+      "index_zh": "derivatives/063/zh-ai-index.md",
+      "verified_readme_blob_sha": "f2cfd3778f9cb3e31f6d93c0ed0babc1eff56e47"
     },
     {
       "od": "OD064",
       "title_ja": "中川式 合意設計論──第一印象を「合意の記憶」に変える方法",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-nakagawa-consensus-design/",
+      "parent_ncl_id": "NCL-α-20251102-eef379",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/064/README.md",
       "index_en": "derivatives/064/en-ai-index.md",
-      "index_zh": "derivatives/064/zh-ai-index.md"
+      "index_zh": "derivatives/064/zh-ai-index.md",
+      "verified_readme_blob_sha": "8c3a82836d06d7e40067d3fa993eacbbcab251a7"
     },
     {
       "od": "OD065",
