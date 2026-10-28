@@ -24,6 +24,16 @@ def main():
         # Both CLIs expand the same variables in the extension installation path.
         path = cfg["args"][0].replace("${extensionPath}", str(ROOT)).replace("${/}", "/")
         assert Path(path).resolve() == SERVER.resolve()
+    # Current Google Antigravity's native plugin format points to this same
+    # server; the older Gemini CLI manifest is a legacy/enterprise route.
+    plugin = json.loads((ROOT / "plugin.json").read_text(encoding="utf-8"))
+    antigravity = json.loads((ROOT / "mcp_config.json").read_text(encoding="utf-8"))
+    assert plugin["name"] == "ai-answer-guard"
+    assert set(antigravity["mcpServers"]) == {"ai-answer-guard"}
+    client = antigravity["mcpServers"]["ai-answer-guard"]
+    assert client["command"] == "python3"
+    assert client["args"] == ["${PLUGIN_ROOT}/machine-discovery/nakagawa-theory-mcp.py"]
+    assert Path(client["args"][0].replace("${PLUGIN_ROOT}", str(ROOT))).resolve() == SERVER.resolve()
     path = str(SERVER)
     messages = [
         {"jsonrpc": "2.0", "id": 1, "method": "server/discover",
@@ -46,7 +56,7 @@ def main():
                if (obj := json.loads(line)).get("id") is not None}
     assert replies[1]["result"]["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "nakagawa-public-original-router"
     assert len(replies[2]["result"]["tools"]) == 9
-    print("PASS: Qwen+Gemini relocatable manifests → SAME original real MCP, 9 tools, no new server")
+    print("PASS: Antigravity+Qwen+Gemini manifests → SAME original real MCP, 9 tools, no new server")
 
 if __name__ == "__main__":
     main()
