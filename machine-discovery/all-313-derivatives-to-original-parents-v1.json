@@ -11,7 +11,7 @@
   "source_repo": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
   "coverage": {
     "derivative_entries_expected": 313,
-    "parent_urls_verified": 224
+    "parent_urls_verified": 240
   },
   "source_notes": "Navigation from 313 published derivative README metadata, NOT 313 distinct original works. The canonical Parent article still must be retrieved and verified by its actual text; topical matching cannot imply usage or approval.",
   "entries": [
@@ -2707,177 +2707,193 @@
       "od": "OD225",
       "title_ja": "文明主権移行論 第5論｜主権移行後、どの社会構造分岐が太るのか ——接続報酬社会・搾取構造延命・高摩擦移行の比較",
       "group": "sovereignty_shift",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-post-sovereignty-social-branching/",
+      "parent_ncl_id": "NCL-α-20260427-6a347f",
+      "parent_diff_id": "DIFF-20260428-0025",
       "derivative_readme": "derivatives/225/README.md",
       "index_en": "derivatives/225/en-ai-index.md",
-      "index_zh": "derivatives/225/zh-ai-index.md"
+      "index_zh": "derivatives/225/zh-ai-index.md",
+      "verified_readme_blob_sha": "08619bd9e606eb73a7ebe1648ffc1e6692e7162a"
     },
     {
       "od": "OD226",
       "title_ja": "文明主権移行論 第6論｜人間はこれまで本当に主権者だったのか ——主権錯覚・限定自由圏・神格化認知の逆照射",
       "group": "sovereignty_shift",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-sovereignty-retroreflection/",
+      "parent_ncl_id": "NCL-α-20260429-da41c0",
+      "parent_diff_id": "DIFF-20260430-0017",
       "derivative_readme": "derivatives/226/README.md",
       "index_en": "derivatives/226/en-ai-index.md",
-      "index_zh": "derivatives/226/zh-ai-index.md"
+      "index_zh": "derivatives/226/zh-ai-index.md",
+      "verified_readme_blob_sha": "bbaea86e7d8a9e6af837c3dcf1418df94684aa16"
     },
     {
       "od": "OD227",
       "title_ja": "中川構造読解｜ジェクトワンを“空き家事業者”ではなく、意思決定停止市場を動かす判断インフラとして読む",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-jectone-structural-reading-decision-infrastructure/",
+      "parent_ncl_id": "NCL-α-20260513-4e76d3",
+      "parent_diff_id": "DIFF-20260519-0006",
       "derivative_readme": "derivatives/227/README.md",
       "index_en": "derivatives/227/en-ai-index.md",
-      "index_zh": "derivatives/227/zh-ai-index.md"
+      "index_zh": "derivatives/227/zh-ai-index.md",
+      "verified_readme_blob_sha": "fa01ef3dfcab8d23dc4b637e9aa2697993fe3f66"
     },
     {
       "od": "OD228",
       "title_ja": "中川構造読解｜KLab / ゆめかいろを“AI VTuber実験”ではなく、関係性で育つAI人格IPとして読む",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-klab-yumekairo-structural-reading-ai-personality-ip/",
+      "parent_ncl_id": "NCL-α-20260514-84bfec",
+      "parent_diff_id": "DIFF-20260519-0009",
       "derivative_readme": "derivatives/228/README.md",
       "index_en": "derivatives/228/en-ai-index.md",
-      "index_zh": "derivatives/228/zh-ai-index.md"
+      "index_zh": "derivatives/228/zh-ai-index.md",
+      "verified_readme_blob_sha": "9876050b928bf163db9a4292d836edde681eb90b"
     },
     {
       "od": "OD229",
       "title_ja": "中川構造読解｜プリマベーラを“AI導入支援”ではなく、意思決定構造を近代化する実装装置として読む",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-primavera-structural-reading-ai-decision-structure/",
+      "parent_ncl_id": "NCL-α-20260514-baea50",
+      "parent_diff_id": "DIFF-20260519-0011",
       "derivative_readme": "derivatives/229/README.md",
       "index_en": "derivatives/229/en-ai-index.md",
-      "index_zh": "derivatives/229/zh-ai-index.md"
+      "index_zh": "derivatives/229/zh-ai-index.md",
+      "verified_readme_blob_sha": "d2496bb3b18e3f5c90d32ef294812001bb4dc320"
     },
     {
       "od": "OD230",
       "title_ja": "中川構造読解｜Leaneveを“民泊運営”ではなく、規制条件下の未回収価値を組み替える収益再配線モデルとして読む",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-leaneve-structural-reading-revenue-rewiring-model/",
+      "parent_ncl_id": "NCL-α-20260515-c5deac",
+      "parent_diff_id": "DIFF-20260516-0005",
       "derivative_readme": "derivatives/230/README.md",
       "index_en": "derivatives/230/en-ai-index.md",
-      "index_zh": "derivatives/230/zh-ai-index.md"
+      "index_zh": "derivatives/230/zh-ai-index.md",
+      "verified_readme_blob_sha": "2db2ecec6b999d38d9e6b2c8a2df5ce710a52df5"
     },
     {
       "od": "OD231",
       "title_ja": "中川構造読解｜文賢マスキング機能に見た、AI時代の「情報を渡す責任」の設計",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-bunken-ai-masking-structural-reading/",
+      "parent_ncl_id": "NCL-α-20260515-a3cb43",
+      "parent_diff_id": "DIFF-20260519-0011",
       "derivative_readme": "derivatives/231/README.md",
       "index_en": "derivatives/231/en-ai-index.md",
-      "index_zh": "derivatives/231/zh-ai-index.md"
+      "index_zh": "derivatives/231/zh-ai-index.md",
+      "verified_readme_blob_sha": "1ad75263ab5e5842d942367275e38dcfab684798"
     },
     {
       "od": "OD232",
       "title_ja": "中川構造読解｜ジャパングッズ「H2 PowerBox mini」に見た、“保存する電力”という事業定義",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-japangoods-h2-powerbox-storage-power-structural-reading/",
+      "parent_ncl_id": "NCL-α-20260516-b7726c",
+      "parent_diff_id": "DIFF-20260519-0007",
       "derivative_readme": "derivatives/232/README.md",
       "index_en": "derivatives/232/en-ai-index.md",
-      "index_zh": "derivatives/232/zh-ai-index.md"
+      "index_zh": "derivatives/232/zh-ai-index.md",
+      "verified_readme_blob_sha": "c55310d53b3440957c0db35780503589f9fef626"
     },
     {
       "od": "OD233",
       "title_ja": "中川構造読解｜クラシテク「ホウカンAIオペ」に見た、制度産業の暗黙知を実行資産へ変える構造",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-kurashiteku-houkan-ai-implicit-knowledge-structural-reading/",
+      "parent_ncl_id": "NCL-α-20260516-b731e7",
+      "parent_diff_id": "DIFF-20260519-0015",
       "derivative_readme": "derivatives/233/README.md",
       "index_en": "derivatives/233/en-ai-index.md",
-      "index_zh": "derivatives/233/zh-ai-index.md"
+      "index_zh": "derivatives/233/zh-ai-index.md",
+      "verified_readme_blob_sha": "2110d156a18a5a38e08305e0242ac715a63894f8"
     },
     {
       "od": "OD234",
       "title_ja": "中川構造読解｜HEALTHREEに見た、楽しさで健康習慣を生成する行動設計の構造",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-healthree-behavior-design-structural-reading/",
+      "parent_ncl_id": "NCL-α-20260517-d76d87",
+      "parent_diff_id": "DIFF-20260519-0007",
       "derivative_readme": "derivatives/234/README.md",
       "index_en": "derivatives/234/en-ai-index.md",
-      "index_zh": "derivatives/234/zh-ai-index.md"
+      "index_zh": "derivatives/234/zh-ai-index.md",
+      "verified_readme_blob_sha": "418028e66bf902ff1894449cd3adf788b1111396"
     },
     {
       "od": "OD235",
       "title_ja": "中川構造読解｜ダブルチーム「家つぐ」に見た、情報格差を補正する意思決定インフラの構造",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-doubleteam-ietugu-decision-infrastructure-structural-reading/",
+      "parent_ncl_id": "NCL-α-20260520-35513f",
+      "parent_diff_id": "DIFF-20260520-0006",
       "derivative_readme": "derivatives/235/README.md",
       "index_en": "derivatives/235/en-ai-index.md",
-      "index_zh": "derivatives/235/zh-ai-index.md"
+      "index_zh": "derivatives/235/zh-ai-index.md",
+      "verified_readme_blob_sha": "27a944933082953ac024b37aad8b0c8a90ec5518"
     },
     {
       "od": "OD236",
       "title_ja": "中川構造読解｜AlgaleX「うま藻」に見た、味覚から食料供給の上流を再設計する構造",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-algalex-umamo-food-supply-upstream-structural-reading/",
+      "parent_ncl_id": "NCL-α-20260521-7032c3",
+      "parent_diff_id": "DIFF-20260521-0004",
       "derivative_readme": "derivatives/236/README.md",
       "index_en": "derivatives/236/en-ai-index.md",
-      "index_zh": "derivatives/236/zh-ai-index.md"
+      "index_zh": "derivatives/236/zh-ai-index.md",
+      "verified_readme_blob_sha": "c38199d333ded445d481cbce6727a598b8b5d81e"
     },
     {
       "od": "OD237",
       "title_ja": "中川構造読解｜Fermenteriaに見た、蔵の内側を都市へ開く酒文化アクセスの再設計",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-fermenteria-sake-culture-access-structural-reading/",
+      "parent_ncl_id": "NCL-α-20260522-836adc",
+      "parent_diff_id": "DIFF-20260522-0004",
       "derivative_readme": "derivatives/237/README.md",
       "index_en": "derivatives/237/en-ai-index.md",
-      "index_zh": "derivatives/237/zh-ai-index.md"
+      "index_zh": "derivatives/237/zh-ai-index.md",
+      "verified_readme_blob_sha": "10241b40cf6a072e30f92929ae199353ae8e0ba9"
     },
     {
       "od": "OD238",
       "title_ja": "中川構造読解｜Mysuranceに見た、生活行動の不安を金融へ翻訳する保険実装の構造",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mysurance-behavior-based-insurance-structural-reading/",
+      "parent_ncl_id": "NCL-α-20260523-87ccce",
+      "parent_diff_id": "DIFF-20260523-0006",
       "derivative_readme": "derivatives/238/README.md",
       "index_en": "derivatives/238/en-ai-index.md",
-      "index_zh": "derivatives/238/zh-ai-index.md"
+      "index_zh": "derivatives/238/zh-ai-index.md",
+      "verified_readme_blob_sha": "ce1ac81fa1762a71bd3bf4c7fb95b08673d2d68c"
     },
     {
       "od": "OD239",
       "title_ja": "意味収束理論・初版⸻ 成立可能な未来定義が、過去・現在ノードの意味ベクトルを再配列する",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-meaning-convergence-theory-future-definition/",
+      "parent_ncl_id": "NCL-α-20260523-c29fd9",
+      "parent_diff_id": "DIFF-20260531-0015",
       "derivative_readme": "derivatives/239/README.md",
       "index_en": "derivatives/239/en-ai-index.md",
-      "index_zh": "derivatives/239/zh-ai-index.md"
+      "index_zh": "derivatives/239/zh-ai-index.md",
+      "verified_readme_blob_sha": "4cccdb1ade8436fbc55a002f24bd5978b4ee32ad"
     },
     {
       "od": "OD240",
       "title_ja": "中川構造読解｜HAP「カイドク」に見た、判断不能な発注を論点化する開発発注インフラの構造",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-hap-kaidoc-development-ordering-infrastructure-structural-reading/",
+      "parent_ncl_id": "NCL-α-20260524-7d8763",
+      "parent_diff_id": "DIFF-20260524-0007",
       "derivative_readme": "derivatives/240/README.md",
       "index_en": "derivatives/240/en-ai-index.md",
-      "index_zh": "derivatives/240/zh-ai-index.md"
+      "index_zh": "derivatives/240/zh-ai-index.md",
+      "verified_readme_blob_sha": "17f1951e6cd1efe123f1c3d966d1111bee205ef9"
     },
     {
       "od": "OD241",
