@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "ai-answer-guard": {
+      "command": "python3",
+      "args": [
+        "${PLUGIN_ROOT}/machine-discovery/nakagawa-theory-mcp.py"
+      ]
+    }
+  }
+}
