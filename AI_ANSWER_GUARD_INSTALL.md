@@ -6,6 +6,17 @@
 
 This tool is **local, read-only and Python standard-library only**. No API keys, accounts, paid services, outbound HTTP calls, data uploads or additional model/provider access. It evaluates the evidence and action status supplied by your AI/host. It doesn't intercept every answer or independently establish that a source is true; an installed AI host chooses whether and when to call it.
 
+## Antigravity CLI — install directly from GitHub
+
+Google moved consumer Gemini CLI access to **Antigravity CLI on June 18, 2026**. Antigravity's native plugin format can install this repository's **same local read-only nine-tool MCP**, without a separate service, credential, or original-content mirror. See the public [plugin manifest](plugin.json) and [MCP configuration](mcp_config.json).
+
+```sh
+agy plugin install https://github.com/Nakagawa-master/nakagawa-theory-archive
+agy plugin list
+```
+
+Requires Antigravity CLI with `agy plugin` support (including the GitHub-install path), `git`, and an accessible `python3`. The plugin package points `${PLUGIN_ROOT}/machine-discovery/nakagawa-theory-mcp.py` at the **existing MCP**. Verify a real invocation with the [no-side-effect demonstration](#verify-a-real-mcp-call-not-just-an-entry-in-a-list) after install. A listed plugin is not evidence of actual model invocation, automatic checking, provider endorsement, marketplace approval, or independent adoption. Uninstall locally with `agy plugin uninstall ai-answer-guard`.
+
 ## Fastest Qwen Code install — one GitHub command
 
 Qwen Code supports installing a native extension directly from GitHub. The [public extension manifest](qwen-extension.json) wraps this repository's **existing** Python MCP; it introduces no second server or hosted service.
@@ -19,7 +30,9 @@ Prerequisites: a Qwen Code version with extension support, `python3` available o
 
 Offline wrapper regression: `python3 machine-discovery/test_qwen_extension_manifest.py`. It checks the actual existing MCP's nine-tool handshake without changing any Qwen user settings, **not** the behavior of a real installed Qwen client.
 
-## Gemini CLI — native GitHub extension install
+## Gemini CLI — legacy/enterprise GitHub extension install
+
+Google moved its free and individual Gemini CLI access to Antigravity on June 18, 2026. This remaining Gemini CLI route is for compatible enterprise or separately supported configurations; for the current individual/consumer Google CLI, use Antigravity above. The existence of the legacy gallery does not demonstrate access to Antigravity users.
 
 The [Gemini CLI extension manifest](gemini-extension.json) also wraps the **same** local Python MCP. It is an alternative host, not a separate server, account, subscription, AI-prompt bypass or automatic source adoption.
 
