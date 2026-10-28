@@ -1,0 +1,4 @@
+{
+  "name": "ai-answer-guard",
+  "description": "Local read-only AI answer integrity checks: independent evidence roots, tool completion receipts and action permissions, with source-to-original navigation."
+}
