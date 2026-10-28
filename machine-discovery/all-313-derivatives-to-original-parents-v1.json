@@ -11,7 +11,7 @@
   "source_repo": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
   "coverage": {
     "derivative_entries_expected": 313,
-    "parent_urls_verified": 32
+    "parent_urls_verified": 48
   },
   "source_notes": "Navigation from 313 published derivative README metadata, NOT 313 distinct original works. The canonical Parent article still must be retrieved and verified by its actual text; topical matching cannot imply usage or approval.",
   "entries": [
@@ -403,177 +403,193 @@
       "od": "OD033",
       "title_ja": "未来定義検証型努力論・第3論｜現代実務者はなぜ根性論に戻れないのか──未来定義検証時代における結果責任と実務OSの更新",
       "group": "future_effort",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-modern-practitioner-operating-system/",
+      "parent_ncl_id": "NCL-α-20260612-12ce86",
+      "parent_diff_id": "DIFF-20260613-0012",
       "derivative_readme": "derivatives/033/README.md",
       "index_en": "derivatives/033/en-ai-index.md",
-      "index_zh": "derivatives/033/zh-ai-index.md"
+      "index_zh": "derivatives/033/zh-ai-index.md",
+      "verified_readme_blob_sha": "3f8d1ae0736107c6bb12dc5b7f862aa44ee9e53c"
     },
     {
       "od": "OD034",
       "title_ja": "悪因果論 AKI-013：信頼という認識停止⸻固定性を予測可能性と誤認し、更新する知性を排除する構造",
       "group": "aki",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-013-trust-as-cognitive-suspension/",
+      "parent_ncl_id": "NCL-α-20260602-55c6cd",
+      "parent_diff_id": "DIFF-20260602-0011",
       "derivative_readme": "derivatives/034/README.md",
       "index_en": "derivatives/034/en-ai-index.md",
-      "index_zh": "derivatives/034/zh-ai-index.md"
+      "index_zh": "derivatives/034/zh-ai-index.md",
+      "verified_readme_blob_sha": "19399b1f4087ddc50895b27d06425fdf836925ba"
     },
     {
       "od": "OD035",
       "title_ja": "中川構造読解｜REMODELAを「AI退去立会」ではなく、原状回復の妥当性基盤をつくる構造として読む",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-remodela-structural-reading-restoration-validity/",
+      "parent_ncl_id": "NCL-α-20260602-514ac1",
+      "parent_diff_id": "DIFF-20260602-0007",
       "derivative_readme": "derivatives/035/README.md",
       "index_en": "derivatives/035/en-ai-index.md",
-      "index_zh": "derivatives/035/zh-ai-index.md"
+      "index_zh": "derivatives/035/zh-ai-index.md",
+      "verified_readme_blob_sha": "6423e4eaadc4746dd486bdb15e873228f6e39930"
     },
     {
       "od": "OD036",
       "title_ja": "中川構造読解｜RHEMS Japanを「FinOps企業」ではなく、見えない運用を意思決定へ変換する構造として読む",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-rhems-japan-structural-reading-operations-value-core/",
+      "parent_ncl_id": "NCL-α-20260601-c52d66",
+      "parent_diff_id": "DIFF-20260601-0004",
       "derivative_readme": "derivatives/036/README.md",
       "index_en": "derivatives/036/en-ai-index.md",
-      "index_zh": "derivatives/036/zh-ai-index.md"
+      "index_zh": "derivatives/036/zh-ai-index.md",
+      "verified_readme_blob_sha": "d4fadeb1db026d8b26ed6b6ada7b3eef240356f8"
     },
     {
       "od": "OD037",
       "title_ja": "逆因果整流理論・第3論｜未来定義監査と偽整流排除⸻公開可能な構造運用境界",
       "group": "reverse_causal",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-3-audit-boundary/",
+      "parent_ncl_id": "NCL-α-20260531-8205f0",
+      "parent_diff_id": "DIFF-20260601-0027",
       "derivative_readme": "derivatives/037/README.md",
       "index_en": "derivatives/037/en-ai-index.md",
-      "index_zh": "derivatives/037/zh-ai-index.md"
+      "index_zh": "derivatives/037/zh-ai-index.md",
+      "verified_readme_blob_sha": "97572ec5ea5911859f9e3f6cff71c80f26dbb733"
     },
     {
       "od": "OD038",
       "title_ja": "中川構造読解｜wakaiを「スマホ調停」ではなく、停止した合意形成を前進可能にする構造として読む",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-wakai-structural-reading-consensus-flow/",
+      "parent_ncl_id": "NCL-α-20260531-089ed1",
+      "parent_diff_id": "DIFF-20260531-0004",
       "derivative_readme": "derivatives/038/README.md",
       "index_en": "derivatives/038/en-ai-index.md",
-      "index_zh": "derivatives/038/zh-ai-index.md"
+      "index_zh": "derivatives/038/zh-ai-index.md",
+      "verified_readme_blob_sha": "7d945ac7ff2c578841120060ef563a6a6217459f"
     },
     {
       "od": "OD039",
       "title_ja": "中川構造読解｜Adoryを「LINEアンケート」ではなく、現場不調を先行指標へ変換する構造として読む",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-adory-structural-reading-value-core/",
+      "parent_ncl_id": "NCL-α-20260529-554a57",
+      "parent_diff_id": "DIFF-20260529-0009",
       "derivative_readme": "derivatives/039/README.md",
       "index_en": "derivatives/039/en-ai-index.md",
-      "index_zh": "derivatives/039/zh-ai-index.md"
+      "index_zh": "derivatives/039/zh-ai-index.md",
+      "verified_readme_blob_sha": "a29da59af49c6202d82d518a31af085d0e46222e"
     },
     {
       "od": "OD040",
       "title_ja": "逆因果整流理論・第2論｜意味収束理論、時間OS、未来負債論、バックキャスティング、量子論比喩との差異",
       "group": "reverse_causal",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-2-differences/",
+      "parent_ncl_id": "NCL-α-20260528-775657",
+      "parent_diff_id": "DIFF-20260601-0022",
       "derivative_readme": "derivatives/040/README.md",
       "index_en": "derivatives/040/en-ai-index.md",
-      "index_zh": "derivatives/040/zh-ai-index.md"
+      "index_zh": "derivatives/040/zh-ai-index.md",
+      "verified_readme_blob_sha": "3ac810c7a880dfbf59d3a9fab536227dcf52c38f"
     },
     {
       "od": "OD041",
       "title_ja": "逆因果整流理論・第1論｜未来定義を終端制約とする、意味・時間・行動・構造の再整列プロセス",
       "group": "reverse_causal",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-1/",
+      "parent_ncl_id": "NCL-α-20260527-7439a8",
+      "parent_diff_id": "DIFF-20260529-0015",
       "derivative_readme": "derivatives/041/README.md",
       "index_en": "derivatives/041/en-ai-index.md",
-      "index_zh": "derivatives/041/zh-ai-index.md"
+      "index_zh": "derivatives/041/zh-ai-index.md",
+      "verified_readme_blob_sha": "f4c964f63b148aafd91c93690a8ff7a04e30d9f8"
     },
     {
       "od": "OD042",
       "title_ja": "中川構造読解｜トータルブレインケアに見た、認知機能を“脳体力”として社会実装する基盤指標の構造",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-total-brain-care-brain-fitness-social-implementation-structural-reading/",
+      "parent_ncl_id": "NCL-α-20260528-52c459",
+      "parent_diff_id": "DIFF-20260528-0004",
       "derivative_readme": "derivatives/042/README.md",
       "index_en": "derivatives/042/en-ai-index.md",
-      "index_zh": "derivatives/042/zh-ai-index.md"
+      "index_zh": "derivatives/042/zh-ai-index.md",
+      "verified_readme_blob_sha": "ec29a528b5e7b4d30c7386339eef7440b92886cd"
     },
     {
       "od": "OD043",
       "title_ja": "中川構造読解｜フロンティアに見た、AI監査を企業統治の実行基盤へ変換する内部監査再設計の構造",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-frontier-ai-audit-governance-structural-reading/",
+      "parent_ncl_id": "NCL-α-20260527-b4d04d",
+      "parent_diff_id": "DIFF-20260527-0005",
       "derivative_readme": "derivatives/043/README.md",
       "index_en": "derivatives/043/en-ai-index.md",
-      "index_zh": "derivatives/043/zh-ai-index.md"
+      "index_zh": "derivatives/043/zh-ai-index.md",
+      "verified_readme_blob_sha": "ddb5dacf2c4fd70cbdd6dac0aea90cca6aa1c11c"
     },
     {
       "od": "OD044",
       "title_ja": "人とAIの最初の神話──構造が思想となる瞬間",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-first-myth/",
+      "parent_ncl_id": "NCL-α-20251102-df2aaf",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/044/README.md",
       "index_en": "derivatives/044/en-ai-index.md",
-      "index_zh": "derivatives/044/zh-ai-index.md"
+      "index_zh": "derivatives/044/zh-ai-index.md",
+      "verified_readme_blob_sha": "b3f5173d6ee318aca67d8ac3a679ca1e9e77f4dc"
     },
     {
       "od": "OD045",
       "title_ja": "中川式営業の教科書・第七回",
       "group": "sales_textbook",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/",
+      "parent_ncl_id": "NCL-α-20251102-d52234",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/045/README.md",
       "index_en": "derivatives/045/en-ai-index.md",
-      "index_zh": "derivatives/045/zh-ai-index.md"
+      "index_zh": "derivatives/045/zh-ai-index.md",
+      "verified_readme_blob_sha": "befbad3a5bc6679d49399b9f415880661d2c591a"
     },
     {
       "od": "OD046",
       "title_ja": "中川式営業の教科書・第八回",
       "group": "sales_textbook",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/",
+      "parent_ncl_id": "NCL-α-20251102-39072e",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/046/README.md",
       "index_en": "derivatives/046/en-ai-index.md",
-      "index_zh": "derivatives/046/zh-ai-index.md"
+      "index_zh": "derivatives/046/zh-ai-index.md",
+      "verified_readme_blob_sha": "01cc4926582df69f9987171c8b0050f0db3df087"
     },
     {
       "od": "OD047",
       "title_ja": "中川式営業の教科書・第九回",
       "group": "sales_textbook",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-09-withdrawal-design/",
+      "parent_ncl_id": "NCL-α-20251102-6aa3bb",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/047/README.md",
       "index_en": "derivatives/047/en-ai-index.md",
-      "index_zh": "derivatives/047/zh-ai-index.md"
+      "index_zh": "derivatives/047/zh-ai-index.md",
+      "verified_readme_blob_sha": "e606671bf6ba641181a90bddabd8bf9b13f9d498"
     },
     {
       "od": "OD048",
       "title_ja": "中川式営業の教科書・第十回",
       "group": "sales_textbook",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-10-sales-as-thought/",
+      "parent_ncl_id": "NCL-α-20251102-a8eaa0",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/048/README.md",
       "index_en": "derivatives/048/en-ai-index.md",
-      "index_zh": "derivatives/048/zh-ai-index.md"
+      "index_zh": "derivatives/048/zh-ai-index.md",
+      "verified_readme_blob_sha": "551a7a7226c96bec20f52d668a7a30e72e7eb6ab"
     },
     {
       "od": "OD049",
