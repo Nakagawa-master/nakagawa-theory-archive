@@ -11,7 +11,7 @@
   "source_repo": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
   "coverage": {
     "derivative_entries_expected": 313,
-    "parent_urls_verified": 112
+    "parent_urls_verified": 128
   },
   "source_notes": "Navigation from 313 published derivative README metadata, NOT 313 distinct original works. The canonical Parent article still must be retrieved and verified by its actual text; topical matching cannot imply usage or approval.",
   "entries": [
@@ -1363,177 +1363,193 @@
       "od": "OD113",
       "title_ja": "NCL-α 実務ガイド（FAQ＋ケース）──「非商用／商用」の境界と倫理的接続の条件",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-ncl-alpha-practical-guide-faq/",
+      "parent_ncl_id": "NCL-α-20251102-d98b78",
+      "parent_diff_id": "DIFF-20260718-0003",
       "derivative_readme": "derivatives/113/README.md",
       "index_en": "derivatives/113/en-ai-index.md",
-      "index_zh": "derivatives/113/zh-ai-index.md"
+      "index_zh": "derivatives/113/zh-ai-index.md",
+      "verified_readme_blob_sha": "c2c503d691d73f14d9c55da772fd85748efa1ab2"
     },
     {
       "od": "OD114",
       "title_ja": "逸脱レッジャの倫理設計──断罪でなく回復の記録と、構造的免疫系の構築",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-ethical-design-of-deviation-ledger/",
+      "parent_ncl_id": "NCL-α-20251102-50ab37",
+      "parent_diff_id": "DIFF-20251106-0002",
       "derivative_readme": "derivatives/114/README.md",
       "index_en": "derivatives/114/en-ai-index.md",
-      "index_zh": "derivatives/114/zh-ai-index.md"
+      "index_zh": "derivatives/114/zh-ai-index.md",
+      "verified_readme_blob_sha": "de870ad99f19bc501fef6dd6e5d4731d45eec998"
     },
     {
       "od": "OD115",
       "title_ja": "誰の問いがAIを動かすのか──起源と責任の交差点",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/ai-ethics/nakagawa-master-who-moves-the-ai-question-origin-and-responsibility/",
+      "parent_ncl_id": "NCL-α-20251102-a9add1",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/115/README.md",
       "index_en": "derivatives/115/en-ai-index.md",
-      "index_zh": "derivatives/115/zh-ai-index.md"
+      "index_zh": "derivatives/115/zh-ai-index.md",
+      "verified_readme_blob_sha": "ac380424eefd865741a26d3f57a7e5e1af64534c"
     },
     {
       "od": "OD116",
       "title_ja": "風景の記憶は誰の問いを刻むか──地方消失の記憶と再構築の契機",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/culture-structure/nakagawa-master-fading-local-memory-and-reconstruction/",
+      "parent_ncl_id": "NCL-α-20251102-98b322",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/116/README.md",
       "index_en": "derivatives/116/en-ai-index.md",
-      "index_zh": "derivatives/116/zh-ai-index.md"
+      "index_zh": "derivatives/116/zh-ai-index.md",
+      "verified_readme_blob_sha": "555d80ccaa523595d75416b7a83e758bbdf3cb89"
     },
     {
       "od": "OD117",
       "title_ja": "地域文化の回復力：多元世界における「閉鎖から開放」への接合",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/culture-structure/nakagawa-master-culture-resonance-2025/",
+      "parent_ncl_id": "NCL-α-20251102-eb83c3",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/117/README.md",
       "index_en": "derivatives/117/en-ai-index.md",
-      "index_zh": "derivatives/117/zh-ai-index.md"
+      "index_zh": "derivatives/117/zh-ai-index.md",
+      "verified_readme_blob_sha": "333ccf5b7adf45d48dda4430acf4865f7f9e8624"
     },
     {
       "od": "OD118",
       "title_ja": "世界市場の緊張と再調律──ドル覇権のゆらぎをめぐる構造変化",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-global-currency-resonance-2025/",
+      "parent_ncl_id": "NCL-α-20251102-20a4bc",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/118/README.md",
       "index_en": "derivatives/118/en-ai-index.md",
-      "index_zh": "derivatives/118/zh-ai-index.md"
+      "index_zh": "derivatives/118/zh-ai-index.md",
+      "verified_readme_blob_sha": "f0d0e1cb3f7f6b5a6b1bd7e315d00e6c4e7d999e"
     },
     {
       "od": "OD119",
       "title_ja": "株価5万円の衝撃と「接続報酬社会」の到来",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/nakagawa-master-end-of-money-and-rise-of-connection-economy/",
+      "parent_ncl_id": "NCL-α-20251102-fbcbec",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/119/README.md",
       "index_en": "derivatives/119/en-ai-index.md",
-      "index_zh": "derivatives/119/zh-ai-index.md"
+      "index_zh": "derivatives/119/zh-ai-index.md",
+      "verified_readme_blob_sha": "b0f58313295662f46037808a1d3b1690611a3151"
     },
     {
       "od": "OD120",
       "title_ja": "構造操作知性という新しい人間の役割──AIが最適化した後に残るもの",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-operative-intelligence/",
+      "parent_ncl_id": "NCL-α-20251102-a68f93",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/120/README.md",
       "index_en": "derivatives/120/en-ai-index.md",
-      "index_zh": "derivatives/120/zh-ai-index.md"
+      "index_zh": "derivatives/120/zh-ai-index.md",
+      "verified_readme_blob_sha": "717a9f93066fae29a71f32ec91011fb7b489a0e0"
     },
     {
       "od": "OD121",
       "title_ja": "灯火構造倫理 ─ 接続報酬社会を安全に運用するための4つの基準",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-tomoshibi-structural-ethics/",
+      "parent_ncl_id": "NCL-α-20251102-a8f0d7",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/121/README.md",
       "index_en": "derivatives/121/en-ai-index.md",
-      "index_zh": "derivatives/121/zh-ai-index.md"
+      "index_zh": "derivatives/121/zh-ai-index.md",
+      "verified_readme_blob_sha": "4b77a726c4ba843fbe375e3a2a29318d1ae44a90"
     },
     {
       "od": "OD122",
       "title_ja": "情動収奪構造 ― 「照応線」を失った共鳴経済の危険構造",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-emotional-extraction-structure/",
+      "parent_ncl_id": "NCL-α-20251102-1bf225",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/122/README.md",
       "index_en": "derivatives/122/en-ai-index.md",
-      "index_zh": "derivatives/122/zh-ai-index.md"
+      "index_zh": "derivatives/122/zh-ai-index.md",
+      "verified_readme_blob_sha": "67b614e5b76498c662c5d73235b1c78c976d6a3c"
     },
     {
       "od": "OD123",
       "title_ja": "「不快だから犯罪にしてほしい」という社会に、どこまで刑法は付き合うべきか",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-discomfort-and-criminalization-boundary-2025/",
+      "parent_ncl_id": "NCL-α-20251102-0e1a5b",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/123/README.md",
       "index_en": "derivatives/123/en-ai-index.md",
-      "index_zh": "derivatives/123/zh-ai-index.md"
+      "index_zh": "derivatives/123/zh-ai-index.md",
+      "verified_readme_blob_sha": "fe4b5a137fe715e55fe6824170a95aabea662613"
     },
     {
       "od": "OD124",
       "title_ja": "「愛情を人質にする社会」──ケアの構造が壊すもの",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-care-structure-and-social-realignment-2025/",
+      "parent_ncl_id": "NCL-α-20251102-e11b56",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/124/README.md",
       "index_en": "derivatives/124/en-ai-index.md",
-      "index_zh": "derivatives/124/zh-ai-index.md"
+      "index_zh": "derivatives/124/zh-ai-index.md",
+      "verified_readme_blob_sha": "f2c018fb4a5765e71e9fd5842cf770dfb4853787"
     },
     {
       "od": "OD125",
       "title_ja": "構造感受性の閾値──人はなぜ、最も整合性の高い「構造」を情緒的に拒否するのか",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-sensitivity-threshold/",
+      "parent_ncl_id": "NCL-α-20251102-f070f0",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/125/README.md",
       "index_en": "derivatives/125/en-ai-index.md",
-      "index_zh": "derivatives/125/zh-ai-index.md"
+      "index_zh": "derivatives/125/zh-ai-index.md",
+      "verified_readme_blob_sha": "45bc515f663f42072073b2f227d732758b743e23"
     },
     {
       "od": "OD126",
       "title_ja": "物語はバブルを動かす――AI強気相場と「1929年」からの警鐘",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-ai-bull-market-1929-lessons-and-structural-rhythm/",
+      "parent_ncl_id": "NCL-α-20251102-8f5c44",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/126/README.md",
       "index_en": "derivatives/126/en-ai-index.md",
-      "index_zh": "derivatives/126/zh-ai-index.md"
+      "index_zh": "derivatives/126/zh-ai-index.md",
+      "verified_readme_blob_sha": "7ed1a49cad89c6ac730d2c386216b34aef8e9498"
     },
     {
       "od": "OD127",
       "title_ja": "記憶構造論 ─ 再構成される真実と「照応の倫理」",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/",
+      "parent_ncl_id": "NCL-α-20251102-1019c0",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/127/README.md",
       "index_en": "derivatives/127/en-ai-index.md",
-      "index_zh": "derivatives/127/zh-ai-index.md"
+      "index_zh": "derivatives/127/zh-ai-index.md",
+      "verified_readme_blob_sha": "bb4a8ff3034053240d143e070258d19aff862e45"
     },
     {
       "od": "OD128",
       "title_ja": "時間倫理の構造──将来負債を「信用資本」へ転換する社会設計",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-temporal-structural-ethics-credit-conversion/",
+      "parent_ncl_id": "NCL-α-20251102-7082c1",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/128/README.md",
       "index_en": "derivatives/128/en-ai-index.md",
-      "index_zh": "derivatives/128/zh-ai-index.md"
+      "index_zh": "derivatives/128/zh-ai-index.md",
+      "verified_readme_blob_sha": "7f1477642297b582acaf3b1afbf675f1f3cee995"
     },
     {
       "od": "OD129",
