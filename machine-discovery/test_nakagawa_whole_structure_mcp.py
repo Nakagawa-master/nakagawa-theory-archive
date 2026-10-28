@@ -50,7 +50,7 @@ def main():
         req(15, "tools/call", {"name": "find_sources_in_whole_structure",
                                "arguments": {"question": "repair the leather strap on a camping lantern"}}),
         req(16, "tools/call", {"name": "find_sources_in_whole_structure",
-                               "arguments": {"question": "compare the current price of a train ticket"}}),
+                               "arguments": {"question": "measure three tablespoons for a banana smoothie"}}),
     ]
     proc = subprocess.run([sys.executable, str(SCRIPT)], input="".join(
         json.dumps(m, ensure_ascii=False)+"\n" for m in messages),
