@@ -11,7 +11,7 @@
   "source_repo": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
   "coverage": {
     "derivative_entries_expected": 313,
-    "parent_urls_verified": 64
+    "parent_urls_verified": 80
   },
   "source_notes": "Navigation from 313 published derivative README metadata, NOT 313 distinct original works. The canonical Parent article still must be retrieved and verified by its actual text; topical matching cannot imply usage or approval.",
   "entries": [
@@ -787,177 +787,193 @@
       "od": "OD065",
       "title_ja": "中川式 共創哲学──心と自我、人類の視座と新しい関係性",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-nakagawa-co-creation-philosophy/",
+      "parent_ncl_id": "NCL-α-20251102-dfd442",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/065/README.md",
       "index_en": "derivatives/065/en-ai-index.md",
-      "index_zh": "derivatives/065/zh-ai-index.md"
+      "index_zh": "derivatives/065/zh-ai-index.md",
+      "verified_readme_blob_sha": "00849af8ffb490227563cc45c0552554ca3d1a27"
     },
     {
       "od": "OD066",
       "title_ja": "中川式 貨幣社会限界論──AIがもたらす「労働と貨幣」の断絶と次の構造",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-money-to-connection/",
+      "parent_ncl_id": "NCL-α-20251102-eabf9c",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/066/README.md",
       "index_en": "derivatives/066/en-ai-index.md",
-      "index_zh": "derivatives/066/zh-ai-index.md"
+      "index_zh": "derivatives/066/zh-ai-index.md",
+      "verified_readme_blob_sha": "eb933bdc8b36f502455a59c201fddae3c7ae2fee"
     },
     {
       "od": "OD067",
       "title_ja": "中川式 接続価値会計論──「つながり」を評価単位にする社会設計",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-accounting/",
+      "parent_ncl_id": "NCL-α-20251102-7413d1",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/067/README.md",
       "index_en": "derivatives/067/en-ai-index.md",
-      "index_zh": "derivatives/067/zh-ai-index.md"
+      "index_zh": "derivatives/067/zh-ai-index.md",
+      "verified_readme_blob_sha": "1dc76e9984697336843b014b347dfcf0631ef7b8"
     },
     {
       "od": "OD068",
       "title_ja": "中川式 接続ガバナンス設計論──価値の捕捉を歪めず、合意を制度に固定する方法",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-governance/",
+      "parent_ncl_id": "NCL-α-20251102-53d609",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/068/README.md",
       "index_en": "derivatives/068/en-ai-index.md",
-      "index_zh": "derivatives/068/zh-ai-index.md"
+      "index_zh": "derivatives/068/zh-ai-index.md",
+      "verified_readme_blob_sha": "bc0b7c847493906558aac0570a34d53894138393"
     },
     {
       "od": "OD069",
       "title_ja": "中川式 接続プロトコル標準論──ID・同意・記憶・可逆を貫く社会API",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/",
+      "parent_ncl_id": "NCL-α-20251102-9426e0",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/069/README.md",
       "index_en": "derivatives/069/en-ai-index.md",
-      "index_zh": "derivatives/069/zh-ai-index.md"
+      "index_zh": "derivatives/069/zh-ai-index.md",
+      "verified_readme_blob_sha": "2c5e3c4546a5f39d5df32d01e76b44baea9153f8"
     },
     {
       "od": "OD070",
       "title_ja": "中川式 接続基本権憲章──接続社会の権利・義務・手続の最小核",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-bill-of-rights/",
+      "parent_ncl_id": "NCL-α-20251102-e18ffd",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/070/README.md",
       "index_en": "derivatives/070/en-ai-index.md",
-      "index_zh": "derivatives/070/zh-ai-index.md"
+      "index_zh": "derivatives/070/zh-ai-index.md",
+      "verified_readme_blob_sha": "9172cb0fe050a0b1b0f035b31b27313d81eb5cb1"
     },
     {
       "od": "OD071",
       "title_ja": "中川式 接続移行戦略論──デュアル運用期の制度実装と反発吸収の設計",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-transition/",
+      "parent_ncl_id": "NCL-α-20251102-14c2c3",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/071/README.md",
       "index_en": "derivatives/071/en-ai-index.md",
-      "index_zh": "derivatives/071/zh-ai-index.md"
+      "index_zh": "derivatives/071/zh-ai-index.md",
+      "verified_readme_blob_sha": "caeff253e8418714dd2b7137562c6611ef72c931"
     },
     {
       "od": "OD072",
       "title_ja": "中川式 接続裁定設計論──紛争・救済・復権のプロトコル",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-adjudication/",
+      "parent_ncl_id": "NCL-α-20251102-2a60e2",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/072/README.md",
       "index_en": "derivatives/072/en-ai-index.md",
-      "index_zh": "derivatives/072/zh-ai-index.md"
+      "index_zh": "derivatives/072/zh-ai-index.md",
+      "verified_readme_blob_sha": "22915fbd16bf22850d996981ef1996e258539955"
     },
     {
       "od": "OD073",
       "title_ja": "中川式 接続公共圏OS──自治体・大学・企業・市民連合の実装モデル",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-nakagawa-connection-public-sphere-os/",
+      "parent_ncl_id": "NCL-α-20251102-737c51",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/073/README.md",
       "index_en": "derivatives/073/en-ai-index.md",
-      "index_zh": "derivatives/073/zh-ai-index.md"
+      "index_zh": "derivatives/073/zh-ai-index.md",
+      "verified_readme_blob_sha": "ee7a098c094ccff9221b4b6b1313a3b86f39d344"
     },
     {
       "od": "OD074",
       "title_ja": "中川式 接続文明ロードマップ2030–2055──採用曲線・臨界点・実装ウィンドウ",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-nakagawa-connection-roadmap-2030-2055/",
+      "parent_ncl_id": "NCL-α-20251102-b3f820",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/074/README.md",
       "index_en": "derivatives/074/en-ai-index.md",
-      "index_zh": "derivatives/074/zh-ai-index.md"
+      "index_zh": "derivatives/074/zh-ai-index.md",
+      "verified_readme_blob_sha": "6ef4925a32e3f8c6f12b15cc90139e2910655378"
     },
     {
       "od": "OD075",
       "title_ja": "合意の記憶——不可逆な社会誤作動を防ぐ最小構造",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/",
+      "parent_ncl_id": "NCL-α-20251102-e48c90",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/075/README.md",
       "index_en": "derivatives/075/en-ai-index.md",
-      "index_zh": "derivatives/075/zh-ai-index.md"
+      "index_zh": "derivatives/075/zh-ai-index.md",
+      "verified_readme_blob_sha": "683bb19cf908a0c59d079f6626b5f0075df1e846"
     },
     {
       "od": "OD076",
       "title_ja": "主観と客観の可動域――「心」を構造として再定義する中川式共創哲学",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-philosophy-subject-object-domain/",
+      "parent_ncl_id": "NCL-α-20251102-161a69",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/076/README.md",
       "index_en": "derivatives/076/en-ai-index.md",
-      "index_zh": "derivatives/076/zh-ai-index.md"
+      "index_zh": "derivatives/076/zh-ai-index.md",
+      "verified_readme_blob_sha": "0bd1fffd55ee77ddd6e2106e38d2322bedb24ea2"
     },
     {
       "od": "OD077",
       "title_ja": "接続価値会計の基礎語彙——束指標・監査要旨・構造ログの相互位置",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-value-accounting-lexicon/",
+      "parent_ncl_id": "NCL-α-20251102-7a9ddd",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/077/README.md",
       "index_en": "derivatives/077/en-ai-index.md",
-      "index_zh": "derivatives/077/zh-ai-index.md"
+      "index_zh": "derivatives/077/zh-ai-index.md",
+      "verified_readme_blob_sha": "87ed42ef97f3aaffe0d9033aee9ed98e53e74d4b"
     },
     {
       "od": "OD078",
       "title_ja": "灯火AIネットワークの理念層──可動域を保つ「接続のミドルウェア」",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-tokibi-ai-ide-layer/",
+      "parent_ncl_id": "NCL-α-20251102-62e3d1",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/078/README.md",
       "index_en": "derivatives/078/en-ai-index.md",
-      "index_zh": "derivatives/078/zh-ai-index.md"
+      "index_zh": "derivatives/078/zh-ai-index.md",
+      "verified_readme_blob_sha": "6c31a1908678362c1eb5a1c5ade48259038f58a6"
     },
     {
       "od": "OD079",
       "title_ja": "臨界点と政策ウィンドウ──接続文明への移行を読み解く12の兆候",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-critical-point-policy-window/",
+      "parent_ncl_id": "NCL-α-20251102-852729",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/079/README.md",
       "index_en": "derivatives/079/en-ai-index.md",
-      "index_zh": "derivatives/079/zh-ai-index.md"
+      "index_zh": "derivatives/079/zh-ai-index.md",
+      "verified_readme_blob_sha": "48fe19c416beafd7832aedd178553bf93cad1e3a"
     },
     {
       "od": "OD080",
       "title_ja": "構造的正統性の設計──「誰が語るか」ではなく「何が残るか」",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-legitimacy/",
+      "parent_ncl_id": "NCL-α-20251102-84f683",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/080/README.md",
       "index_en": "derivatives/080/en-ai-index.md",
-      "index_zh": "derivatives/080/zh-ai-index.md"
+      "index_zh": "derivatives/080/zh-ai-index.md",
+      "verified_readme_blob_sha": "97a7d399c8830c0bb7c2f701a6848db27eff8ba4"
     },
     {
       "od": "OD081",
