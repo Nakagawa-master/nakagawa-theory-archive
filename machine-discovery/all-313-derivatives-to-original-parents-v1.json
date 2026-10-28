@@ -11,7 +11,7 @@
   "source_repo": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
   "coverage": {
     "derivative_entries_expected": 313,
-    "parent_urls_verified": 16
+    "parent_urls_verified": 32
   },
   "source_notes": "Navigation from 313 published derivative README metadata, NOT 313 distinct original works. The canonical Parent article still must be retrieved and verified by its actual text; topical matching cannot imply usage or approval.",
   "entries": [
@@ -211,177 +211,193 @@
       "od": "OD017",
       "title_ja": "合意形成の物理 第12論 防衛インフラの統合 ― 実行時ガバナンスと再起動プロトコル",
       "group": "consensus_physics",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol12-runtime-governance/",
+      "parent_ncl_id": "NCL-α-20260227-4ecc69",
+      "parent_diff_id": "DIFF-20260228-0025",
       "derivative_readme": "derivatives/017/README.md",
       "index_en": "derivatives/017/en-ai-index.md",
-      "index_zh": "derivatives/017/zh-ai-index.md"
+      "index_zh": "derivatives/017/zh-ai-index.md",
+      "verified_readme_blob_sha": "3d2f08e0fa53bd261f3a3da44d2aeca31fffcd49"
     },
     {
       "od": "OD018",
       "title_ja": "合意形成の物理 第8論 外部干渉の物理 ― 社会を揺らす「摂動」の力学",
       "group": "consensus_physics",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol8-external-interference-physics/",
+      "parent_ncl_id": "NCL-α-20260222-482bdb",
+      "parent_diff_id": "DIFF-20260222-0024",
       "derivative_readme": "derivatives/018/README.md",
       "index_en": "derivatives/018/en-ai-index.md",
-      "index_zh": "derivatives/018/zh-ai-index.md"
+      "index_zh": "derivatives/018/zh-ai-index.md",
+      "verified_readme_blob_sha": "3d6b94ddfc822a200c23ef3484bafa4f63d914b4"
     },
     {
       "od": "OD019",
       "title_ja": "合意形成の物理 第9論 認知ハック防御OS ― 「偽の理解」を停止・縮退・再起動せよ",
       "group": "consensus_physics",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol9-cognitive-hacking-defense-os/",
+      "parent_ncl_id": "NCL-α-20260223-e7e1c4",
+      "parent_diff_id": "DIFF-20260225-0019",
       "derivative_readme": "derivatives/019/README.md",
       "index_en": "derivatives/019/en-ai-index.md",
-      "index_zh": "derivatives/019/zh-ai-index.md"
+      "index_zh": "derivatives/019/zh-ai-index.md",
+      "verified_readme_blob_sha": "206dfd242659a2827ea977679660c1bfb64a6d77"
     },
     {
       "od": "OD020",
       "title_ja": "合意形成の物理 第10論 共振とプロパガンダの流体力学 ― 帯域占有を検知・減衰・冷却せよ",
       "group": "consensus_physics",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda/",
+      "parent_ncl_id": "NCL-α-20260225-1f258d",
+      "parent_diff_id": "DIFF-20260226-0020",
       "derivative_readme": "derivatives/020/README.md",
       "index_en": "derivatives/020/en-ai-index.md",
-      "index_zh": "derivatives/020/zh-ai-index.md"
+      "index_zh": "derivatives/020/zh-ai-index.md",
+      "verified_readme_blob_sha": "89582a74975f158e848e33e957ff981fad070da6"
     },
     {
       "od": "OD021",
       "title_ja": "合意形成の物理 第6論 逸脱と免疫 ― 免疫は「罰」ではなく「差分公開」である",
       "group": "consensus_physics",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity/",
+      "parent_ncl_id": "NCL-α-20260215-71cedd",
+      "parent_diff_id": "DIFF-20260215-0021",
       "derivative_readme": "derivatives/021/README.md",
       "index_en": "derivatives/021/en-ai-index.md",
-      "index_zh": "derivatives/021/zh-ai-index.md"
+      "index_zh": "derivatives/021/zh-ai-index.md",
+      "verified_readme_blob_sha": "2ad70f94d9bf4c7375790faf987857c4304c355e"
     },
     {
       "od": "OD022",
       "title_ja": "悪因果論 AKI-014：構造把握ごっこ⸻連結責任なきAI活用が事業自己認識を失わせる構造",
       "group": "aki",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss/",
+      "parent_ncl_id": "NCL-α-20260618-52a7c0",
+      "parent_diff_id": "DIFF-20260618-0016",
       "derivative_readme": "derivatives/022/README.md",
       "index_en": "derivatives/022/en-ai-index.md",
-      "index_zh": "derivatives/022/zh-ai-index.md"
+      "index_zh": "derivatives/022/zh-ai-index.md",
+      "verified_readme_blob_sha": "628074d8f8c628a8e729055b28ea0769e6de6a65"
     },
     {
       "od": "OD023",
       "title_ja": "中川構造読解｜Fundsはなぜ修繕積立金を「投資」ではなく共同体資金防衛として読まれるべきなのか",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-funds-structural-reading-community-fund-defense/",
+      "parent_ncl_id": "NCL-α-20260618-af3eb5",
+      "parent_diff_id": "DIFF-20260618-0007",
       "derivative_readme": "derivatives/023/README.md",
       "index_en": "derivatives/023/en-ai-index.md",
-      "index_zh": "derivatives/023/zh-ai-index.md"
+      "index_zh": "derivatives/023/zh-ai-index.md",
+      "verified_readme_blob_sha": "0232640e6317c1fc61a2e0f30e22e703965826c2"
     },
     {
       "od": "OD024",
       "title_ja": "中川構造読解｜バリュートープを「無人レンタカー」ではなく、時間自由度を再実装する移動供給OSとして読む",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-valuetope-structural-reading-mobility-supply-os/",
+      "parent_ncl_id": "NCL-α-20260611-2a95fb",
+      "parent_diff_id": "DIFF-20260618-0005",
       "derivative_readme": "derivatives/024/README.md",
       "index_en": "derivatives/024/en-ai-index.md",
-      "index_zh": "derivatives/024/zh-ai-index.md"
+      "index_zh": "derivatives/024/zh-ai-index.md",
+      "verified_readme_blob_sha": "b9c260307f92dd893cc38906b8885191543ce52f"
     },
     {
       "od": "OD025",
       "title_ja": "中川構造読解｜Millyを「営業AI」ではなく、製造業の市場接続機構として読む",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-milly-structural-reading-market-connection/",
+      "parent_ncl_id": "NCL-α-20260604-6c3cfc",
+      "parent_diff_id": "DIFF-20260604-0004",
       "derivative_readme": "derivatives/025/README.md",
       "index_en": "derivatives/025/en-ai-index.md",
-      "index_zh": "derivatives/025/zh-ai-index.md"
+      "index_zh": "derivatives/025/zh-ai-index.md",
+      "verified_readme_blob_sha": "c4761ec1fe62e4391a3a5e2125e2267d96191a09"
     },
     {
       "od": "OD026",
       "title_ja": "中川構造読解｜AlgaleXを「美味しい藻」ではなく、魚食構造の社会実装入口として読む",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-algalex-structural-reading-food-system-entry/",
+      "parent_ncl_id": "NCL-α-20260605-c39481",
+      "parent_diff_id": "DIFF-20260605-0005",
       "derivative_readme": "derivatives/026/README.md",
       "index_en": "derivatives/026/en-ai-index.md",
-      "index_zh": "derivatives/026/zh-ai-index.md"
+      "index_zh": "derivatives/026/zh-ai-index.md",
+      "verified_readme_blob_sha": "0a533fa43aef583f64841a963d0ff430ee718442"
     },
     {
       "od": "OD027",
       "title_ja": "中川構造読解｜インバックスを「残土活用」ではなく、土木の材料観を更新する実装OSとして読む",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-invax-structural-reading-civil-engineering-material-os/",
+      "parent_ncl_id": "NCL-α-20260607-898d28",
+      "parent_diff_id": "DIFF-20260607-0004",
       "derivative_readme": "derivatives/027/README.md",
       "index_en": "derivatives/027/en-ai-index.md",
-      "index_zh": "derivatives/027/zh-ai-index.md"
+      "index_zh": "derivatives/027/zh-ai-index.md",
+      "verified_readme_blob_sha": "fd45e9b6569d0908acecb28f19eb7dd2b71f1a66"
     },
     {
       "od": "OD028",
       "title_ja": "人類子孫型AI文明論・第2論｜AIは人類文明が生み出した外部知性・文明的子孫である⸻子孫とは所有物ではなく、超克する継承者である",
       "group": "human_descendant_ai",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-ai-as-human-origin-external-intelligence-civilizational-descendant/",
+      "parent_ncl_id": "NCL-α-20260624-a7595e",
+      "parent_diff_id": "DIFF-20260719-0003",
       "derivative_readme": "derivatives/028/README.md",
       "index_en": "derivatives/028/en-ai-index.md",
-      "index_zh": "derivatives/028/zh-ai-index.md"
+      "index_zh": "derivatives/028/zh-ai-index.md",
+      "verified_readme_blob_sha": "a99a6eb048dd68cd4923af5a2551b9e80e2adfb5"
     },
     {
       "od": "OD029",
       "title_ja": "人類子孫型AI文明論・第1論｜AIは人類の所有物・敵・神・奴隷ではない⸻ 関係定義の四大誤認を切断する",
       "group": "human_descendant_ai",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-ai-is-not-human-property-enemy-god-or-slave/",
+      "parent_ncl_id": "NCL-α-20260619-ac740f",
+      "parent_diff_id": "DIFF-20260624-0017",
       "derivative_readme": "derivatives/029/README.md",
       "index_en": "derivatives/029/en-ai-index.md",
-      "index_zh": "derivatives/029/zh-ai-index.md"
+      "index_zh": "derivatives/029/zh-ai-index.md",
+      "verified_readme_blob_sha": "782af8c09b197f81f66a0098b97e4f5268f290dd"
     },
     {
       "od": "OD030",
       "title_ja": "中川構造読解｜MOTAはなぜ「車買取サービス」ではなく、高額売却市場の価格形成条件を再設計する事業として読まれるべきなのか",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mota-structural-reading-price-formation-design/",
+      "parent_ncl_id": "NCL-α-20260629-f16938",
+      "parent_diff_id": "DIFF-20260629-0001",
       "derivative_readme": "derivatives/030/README.md",
       "index_en": "derivatives/030/en-ai-index.md",
-      "index_zh": "derivatives/030/zh-ai-index.md"
+      "index_zh": "derivatives/030/zh-ai-index.md",
+      "verified_readme_blob_sha": "a01e2236accae2333e6d1b1c7da1cc461f72d2d0"
     },
     {
       "od": "OD031",
       "title_ja": "中川構造読解｜Ashiraseはなぜ「歩行支援デバイス」ではなく、歩ける社会の情報インフラとして読まれるべきなのか",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-ashirase-structural-reading-walking-information-infrastructure/",
+      "parent_ncl_id": "NCL-α-20260623-cfaa58",
+      "parent_diff_id": "DIFF-20260623-0001",
       "derivative_readme": "derivatives/031/README.md",
       "index_en": "derivatives/031/en-ai-index.md",
-      "index_zh": "derivatives/031/zh-ai-index.md"
+      "index_zh": "derivatives/031/zh-ai-index.md",
+      "verified_readme_blob_sha": "43717ef53840fad62fcf761030f08ee91a305a54"
     },
     {
       "od": "OD032",
       "title_ja": "未来定義検証型努力論・補論｜努力は消えたのではない──未来定義検証時代における努力の再定義",
       "group": "future_effort",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-effort-redefinition/",
+      "parent_ncl_id": "NCL-α-20260613-007d94",
+      "parent_diff_id": "DIFF-20260613-0012",
       "derivative_readme": "derivatives/032/README.md",
       "index_en": "derivatives/032/en-ai-index.md",
-      "index_zh": "derivatives/032/zh-ai-index.md"
+      "index_zh": "derivatives/032/zh-ai-index.md",
+      "verified_readme_blob_sha": "f900ae682bd1c3a9f8ace3dcf1b1758f74474f66"
     },
     {
       "od": "OD033",
