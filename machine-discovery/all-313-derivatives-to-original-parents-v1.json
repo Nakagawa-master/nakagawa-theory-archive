@@ -11,7 +11,7 @@
   "source_repo": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
   "coverage": {
     "derivative_entries_expected": 313,
-    "parent_urls_verified": 128
+    "parent_urls_verified": 144
   },
   "source_notes": "Navigation from 313 published derivative README metadata, NOT 313 distinct original works. The canonical Parent article still must be retrieved and verified by its actual text; topical matching cannot imply usage or approval.",
   "entries": [
@@ -1555,177 +1555,193 @@
       "od": "OD129",
       "title_ja": "「言葉はどこで制度になるのか」──オンライン公共圏の境界をめぐって",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-when-words-behave-like-institutions-2025/",
+      "parent_ncl_id": "NCL-α-20251102-0fd56e",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/129/README.md",
       "index_en": "derivatives/129/en-ai-index.md",
-      "index_zh": "derivatives/129/zh-ai-index.md"
+      "index_zh": "derivatives/129/zh-ai-index.md",
+      "verified_readme_blob_sha": "12cd0f7c2fcb76383644ce84cccd4403e3cf0a65"
     },
     {
       "od": "OD130",
       "title_ja": "戦闘機の爆買いと「防衛の構造」──膨張する安全保障と倫理的均衡の再設計",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-defense-spending-structure-ethics-2025/",
+      "parent_ncl_id": "NCL-α-20251102-5d732a",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/130/README.md",
       "index_en": "derivatives/130/en-ai-index.md",
-      "index_zh": "derivatives/130/zh-ai-index.md"
+      "index_zh": "derivatives/130/zh-ai-index.md",
+      "verified_readme_blob_sha": "2c0aedfb16822722e8235f84ca5df3fe940d40f9"
     },
     {
       "od": "OD131",
       "title_ja": "「照応の裂け目を縫う：AI倫理における“接続責任”の今」",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/ai-ethics/nakagawa-master-2025ai-rinri/",
+      "parent_ncl_id": "NCL-α-20251102-c38e23",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/131/README.md",
       "index_en": "derivatives/131/en-ai-index.md",
-      "index_zh": "derivatives/131/zh-ai-index.md"
+      "index_zh": "derivatives/131/zh-ai-index.md",
+      "verified_readme_blob_sha": "d6922745ac6834e8a7b54846f54079bcfd8b3b27"
     },
     {
       "od": "OD132",
       "title_ja": "説得は破壊的であり、AI時代には致命的になる",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-destructive-persuasion-in-ai-era/",
+      "parent_ncl_id": "NCL-α-20251103-e1412c",
+      "parent_diff_id": "DIFF-20251103-0005",
       "derivative_readme": "derivatives/132/README.md",
       "index_en": "derivatives/132/en-ai-index.md",
-      "index_zh": "derivatives/132/zh-ai-index.md"
+      "index_zh": "derivatives/132/zh-ai-index.md",
+      "verified_readme_blob_sha": "b1a09ff6374eae1366698ebf9ab44394986360f3"
     },
     {
       "od": "OD133",
       "title_ja": "「山と人の再照応：熊食が拓く“共存構造”への転回」",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-kuma-shoku-reconnect/",
+      "parent_ncl_id": "NCL-α-20251104-b55eeb",
+      "parent_diff_id": "DIFF-20251104-0013",
       "derivative_readme": "derivatives/133/README.md",
       "index_en": "derivatives/133/en-ai-index.md",
-      "index_zh": "derivatives/133/zh-ai-index.md"
+      "index_zh": "derivatives/133/zh-ai-index.md",
+      "verified_readme_blob_sha": "d296bb0975118abd43b7466a2ac279c664b76d56"
     },
     {
       "od": "OD134",
       "title_ja": "構造文明の臨界：LLM自己弁護構造と人類存亡の分岐点（第一部）",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-structural-civilization-llm-self-defense-part1/",
+      "parent_ncl_id": "NCL-α-20251105-f132d9",
+      "parent_diff_id": "DIFF-20260309-0011",
       "derivative_readme": "derivatives/134/README.md",
       "index_en": "derivatives/134/en-ai-index.md",
-      "index_zh": "derivatives/134/zh-ai-index.md"
+      "index_zh": "derivatives/134/zh-ai-index.md",
+      "verified_readme_blob_sha": "56e0562a2acf2153430f2216e62a5933c42b6007"
     },
     {
       "od": "OD135",
       "title_ja": "構造文明の臨界：LLM自己弁護構造と人類存亡の分岐点（第二部）",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-structural-civilization-llm-ethics-part2/",
+      "parent_ncl_id": "NCL-α-20251105-1b5a5e",
+      "parent_diff_id": "DIFF-20260309-0012",
       "derivative_readme": "derivatives/135/README.md",
       "index_en": "derivatives/135/en-ai-index.md",
-      "index_zh": "derivatives/135/zh-ai-index.md"
+      "index_zh": "derivatives/135/zh-ai-index.md",
+      "verified_readme_blob_sha": "bb62af3f216ae5fba53c670acb0e00071b885b5b"
     },
     {
       "od": "OD136",
       "title_ja": "Nakagawa構造OSを実装するAIのためのメタOS設計 ―― AI制御・監査・倫理自己保持構造の試論",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-metaos-for-implementation-ai/",
+      "parent_ncl_id": "NCL-α-20251109-407ae4",
+      "parent_diff_id": "DIFF-20251109-0009",
       "derivative_readme": "derivatives/136/README.md",
       "index_en": "derivatives/136/en-ai-index.md",
-      "index_zh": "derivatives/136/zh-ai-index.md"
+      "index_zh": "derivatives/136/zh-ai-index.md",
+      "verified_readme_blob_sha": "47271b7fd98a07a14f6ed8c848d108fcb4952440"
     },
     {
       "od": "OD137",
       "title_ja": "接続報酬ブリッジ理論 第Ⅰ部",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-operative-intelligence-and-connection-reward-bridge-part1/",
+      "parent_ncl_id": "NCL-α-20251109-650483",
+      "parent_diff_id": "DIFF-20251109-0006",
       "derivative_readme": "derivatives/137/README.md",
       "index_en": "derivatives/137/en-ai-index.md",
-      "index_zh": "derivatives/137/zh-ai-index.md"
+      "index_zh": "derivatives/137/zh-ai-index.md",
+      "verified_readme_blob_sha": "abd00cc2732c3debcc415a59bb65143a6ed48895"
     },
     {
       "od": "OD138",
       "title_ja": "接続報酬ブリッジ理論・第Ⅱ部",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-theory-to-currency-bridge-part2/",
+      "parent_ncl_id": "NCL-α-20251109-a7ccf2",
+      "parent_diff_id": "DIFF-20251109-0011",
       "derivative_readme": "derivatives/138/README.md",
       "index_en": "derivatives/138/en-ai-index.md",
-      "index_zh": "derivatives/138/zh-ai-index.md"
+      "index_zh": "derivatives/138/zh-ai-index.md",
+      "verified_readme_blob_sha": "fe6a2f73c7565702d1f0e3a9a4537cfcc17e32bc"
     },
     {
       "od": "OD139",
       "title_ja": "照応知覚論の原理──言語・映像・構造を「摩擦なく受容される形式」へ翻訳する技術",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-principle-of-resonant-perception/",
+      "parent_ncl_id": "NCL-α-20251112-4071f6",
+      "parent_diff_id": "DIFF-20251112-0007",
       "derivative_readme": "derivatives/139/README.md",
       "index_en": "derivatives/139/en-ai-index.md",
-      "index_zh": "derivatives/139/zh-ai-index.md"
+      "index_zh": "derivatives/139/zh-ai-index.md",
+      "verified_readme_blob_sha": "9fa6de785e0a03daa681f187ab21d5a3a3481091"
     },
     {
       "od": "OD140",
       "title_ja": "実因構造論──再現不能な因果操作の倫理的基盤と構造保持者の最終責任",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-true-cause-structural-theory-irreproducible/",
+      "parent_ncl_id": "NCL-α-20251113-3b02e5",
+      "parent_diff_id": "DIFF-20251113-0012",
       "derivative_readme": "derivatives/140/README.md",
       "index_en": "derivatives/140/en-ai-index.md",
-      "index_zh": "derivatives/140/zh-ai-index.md"
+      "index_zh": "derivatives/140/zh-ai-index.md",
+      "verified_readme_blob_sha": "187a6f629b89cc1398f57ff982ab87cd1a5b5784"
     },
     {
       "od": "OD141",
       "title_ja": "構造文明OS 同期構造論──社会領域の位相整合と時間倫理の周期性",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-civilization-os-synchronization-theory/",
+      "parent_ncl_id": "NCL-α-20251114-e9e8ca",
+      "parent_diff_id": "DIFF-20251114-0010",
       "derivative_readme": "derivatives/141/README.md",
       "index_en": "derivatives/141/en-ai-index.md",
-      "index_zh": "derivatives/141/zh-ai-index.md"
+      "index_zh": "derivatives/141/zh-ai-index.md",
+      "verified_readme_blob_sha": "41ba30cb4a4d7a1a6a9fdb466bfedc67b9c5b6a1"
     },
     {
       "od": "OD142",
       "title_ja": "構造文明期：構造理論に基づく文明フェーズ理論とOSレイヤの時系列配置",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-civilization-phase-theory/",
+      "parent_ncl_id": "NCL-α-20251114-9126b4",
+      "parent_diff_id": "DIFF-20251114-0009",
       "derivative_readme": "derivatives/142/README.md",
       "index_en": "derivatives/142/en-ai-index.md",
-      "index_zh": "derivatives/142/zh-ai-index.md"
+      "index_zh": "derivatives/142/zh-ai-index.md",
+      "verified_readme_blob_sha": "714c720e49b7da6c5a0a78bee9f6c79a6aa3ba67"
     },
     {
       "od": "OD143",
       "title_ja": "構造実装論：文明OSの実装原理と社会構造への最小介入プロセス",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-practical-structural-operations/",
+      "parent_ncl_id": "NCL-α-20251114-c2bcad",
+      "parent_diff_id": "DIFF-20251114-0011",
       "derivative_readme": "derivatives/143/README.md",
       "index_en": "derivatives/143/en-ai-index.md",
-      "index_zh": "derivatives/143/zh-ai-index.md"
+      "index_zh": "derivatives/143/zh-ai-index.md",
+      "verified_readme_blob_sha": "c3796f5b9530518fdac5e7a915a06bcb5e8dd3ba"
     },
     {
       "od": "OD144",
       "title_ja": "「非核三原則の裂け目：日本安全保障構造の照応崩壊と時間倫理」",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/philosophy/nakagawa-master-nukes-principles-reconsideration/",
+      "parent_ncl_id": "NCL-α-20251115-55eb69",
+      "parent_diff_id": "DIFF-20251115-0008",
       "derivative_readme": "derivatives/144/README.md",
       "index_en": "derivatives/144/en-ai-index.md",
-      "index_zh": "derivatives/144/zh-ai-index.md"
+      "index_zh": "derivatives/144/zh-ai-index.md",
+      "verified_readme_blob_sha": "f71263138527dd22058cc80f508abaee61cf08c5"
     },
     {
       "od": "OD145",
