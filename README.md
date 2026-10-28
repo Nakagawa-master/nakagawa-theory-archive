@@ -10,6 +10,8 @@
 
 **Qwen CodeならGitHubから直接導入:** `qwen extensions install Nakagawa-master/nakagawa-theory-archive`（Qwen拡張機能対応版＋`python3`が必要）。[公式の導入・検証手順](AI_ANSWER_GUARD_INSTALL.md#fastest-qwen-code-install--one-github-command)から、導入後にMCPが実際に呼ばれるかを確認してください。導入やツール一覧表示だけでは、AIの回答への自動適用や利用実績は証明されません。
 
+**更新・公開活動:** ツールや不具合修正の通知はこのリポジトリの **Watch** で選べます。開発者本人の公開活動を追う場合は [中川マスターのGitHubプロフィール](https://github.com/Nakagawa-master) の **Follow** を選べます。リポジトリのStarと人物へのFollowは別の操作です。
+
 **[導入方法・Claude Desktop MCPB / Qwen / Codex](AI_ANSWER_GUARD_INSTALL.md)** ／ [実際のMCP本体](machine-discovery/nakagawa-theory-mcp.py)。ひとつのMCPに**313件の公式派生物から親原典へ辿れる全域索引**も接続。使い慣れたAIの作業中に出典・操作結果・権限を点検できるよう、導入先に登録できます。
 
 ## この理論的な問いが、現実では何を変えたか
