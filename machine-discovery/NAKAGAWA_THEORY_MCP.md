@@ -81,7 +81,7 @@ Expected v1.1.2 SHA-256: `d6da6f49a80ab0de4d884cd7a51a391d9981dc7e9acf61cc84b85b
 
 **Useful before many ordinary answers:** an AI drafting a news or research response can ask whether several cited articles actually share the **same upstream announcement**. False independent corroboration is a concrete, testable failure mode; this is **not** a general hallucination detector, semantic-contradiction resolver or a substitute for reading original sources.
 
-**Current v1.2.0** includes `audit_citation_independence` in its primary nine-tool server and also retains the existing **optional separate helper** `machine-discovery/evidence-integrity-mcp.py` for independent local checking. The helper serves
+**Current v1.2.0** includes `audit_citation_independence` inside the primary nine-tool server and retains the existing **optional standalone** `machine-discovery/evidence-integrity-mcp.py`. The standalone helper exposes the same declared-evidence-root check, backed by `evidence-root-check.py`, and needs no network, secrets or cloud service. Inputs are claims with declared independent-root IDs, relation and stance; a consistent result validates only the supplied declarations, not source truth.
 
 ```sh
 python3 machine-discovery/evidence-integrity-mcp.py --self-test
