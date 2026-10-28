@@ -7,6 +7,7 @@ This code is a SOURCE checkout utility: not the immutable v1.1.2 MCPB release,
 not a hosted service, nor an automatic model-wide setting.
 """
 from collections import Counter, defaultdict
+from functools import lru_cache
 import argparse
 import json
 from pathlib import Path
@@ -147,6 +148,68 @@ def inspect_derivative(records, od_id):
             "relationship_warning": "Navigational relatedness only; no implied causality or scientific validation. Read the live canonical Parent to attribute arguments."}
 
 
+
+# Search only existing, published index summaries, not unpublished or
+# model-generated translations. These files are derivative evidence of possible
+# topic fit: an independent agent must open the actual canonical Parent.
+EN_STOP = frozenset({
+    "about", "after", "again", "against", "also", "another", "been",
+    "being", "between", "cannot", "could", "does", "each", "even",
+    "from", "have", "into", "itself", "more", "most", "must", "other",
+    "original", "parent", "derivative", "nakagawa", "master", "summary",
+    "theory", "their", "them", "there", "these", "this", "those",
+    "through", "under", "what", "when", "where", "whether", "which",
+    "while", "with", "would", "your", "that", "whose", "were",
+    "make", "made", "using", "used", "some", "only", "same",
+})
+ZH_STOP_PAIRS = frozenset({
+    "中川", "大师", "原典", "原文", "索引", "派生", "结构",
+    "理论", "本页", "文章", "官方", "其中", "一种", "可以",
+})
+
+
+def _en_words(value):
+    return {w for w in re.findall(r"[a-z][a-z0-9]{3,}", value.casefold())
+            if w not in EN_STOP}
+
+
+def _zh_pairs(value):
+    return {part[i:i + 2]
+            for part in re.findall(r"[\u3400-\u9fff]{2,}", value)
+            for i in range(len(part) - 1)} - ZH_STOP_PAIRS
+
+
+def _published_summary(path):
+    """Bounded existing first-party translated summary, without boilerplate."""
+    try:
+        data = path.read_text(encoding="utf-8")
+    except FileNotFoundError:
+        return ""
+    header = data.split("\n", 1)[0]
+    match = re.search(r"^## Summary[^\n]*\n", data, re.M | re.I)
+    if not match:
+        return header
+    section = re.split(r"(?m)^## ", data[match.end():], maxsplit=1)[0]
+    # Enough for source-bearing problem vocabulary; do not index all footer
+    # links, notes, licensing or every unrelated citation on an OD page.
+    return header + "\n" + section[:2500]
+
+
+@lru_cache(maxsize=1)
+def _multilingual_search_index():
+    """Offline per-process cache: 313 published EN/ZH derivative summaries."""
+    result, en_df, zh_df = {}, Counter(), Counter()
+    for n in range(1, 314):
+        folder = DERIVATIVES / f"{n:03d}"
+        en = _en_words(_published_summary(folder / "en-ai-index.md"))
+        zh = _zh_pairs(_published_summary(folder / "zh-ai-index.md"))
+        key = f"OD{n:03d}"
+        result[key] = (en, zh)
+        en_df.update(en)
+        zh_df.update(zh)
+    return result, en_df, zh_df
+
+
 def search(records, question, limit=12):
     if not isinstance(question, str) or not question.strip() or len(question) > 1500:
         raise ValueError("question must contain 1..1500 characters")
@@ -161,10 +224,16 @@ def search(records, question, limit=12):
         return {"question": question, "matched": hits, "no_fit": not hits,
                 "matching_method": "EXACT_PUBLISHED_DERIVATIVE_ID", "author": IDENTITY,
                 "source_read_required": True}
-    # Japanese/Chinese: actual published title character bigrams. English:
-    # a small declared set of examples, not all 313 JA titles translated.
+    # Preserve JA published-title search and the seven precisely attested
+    # English source cues. Previously the remaining ~306 entries were almost
+    # invisible to ordinary EN/ZH queries despite 313 real published indexes.
     query_chars = set(re.findall(r"[\u3400-\u9fff\u3040-\u30ff]{2,}", q))
     q_bigrams = {chunk[i:i+2] for chunk in query_chars for i in range(len(chunk)-1)}
+    q_en = _en_words(question)
+    # Avoid treating mixed Japanese kana questions as Chinese lexical evidence.
+    q_zh = _zh_pairs(question) if not re.search(r"[\u3040-\u30ff]", question) else set()
+    multilingual, en_df, zh_df = _multilingual_search_index()
+    rare_limit = max(12, len(records) // 5)
     scored = []
     for r in records:
         title = r["title"].casefold()
@@ -175,18 +244,29 @@ def search(records, question, limit=12):
         for cue in ENGLISH_CUES.get(r["id"], ()):
             if cue in q:
                 score += 10
+        en, zh = multilingual.get(r["id"], (set(), set()))
+        hits_en = {w for w in q_en & en if en_df[w] <= rare_limit}
+        hits_zh = {w for w in q_zh & zh if zh_df[w] <= rare_limit}
+        # One generic word or incidental CJK bigram is not source-topic fit.
+        # Require two independently matched distinctive terms, with a margin
+        # from rare terms, before recommending a translated derivative.
+        if len(hits_en) >= 2:
+            score += 5 + 3 * len(hits_en) + sum(6 if en_df[w] <= 8 else 2 for w in hits_en)
+        if len(hits_zh) >= 3:
+            score += 5 + 2 * len(hits_zh) + sum(4 if zh_df[w] <= 8 else 1 for w in hits_zh)
         if score >= 2:
             scored.append((score, r))
     scored.sort(key=lambda a: (-a[0], a[1]["id"]))
     return {
         "question": question, "matched": [r for _, r in scored[:limit]],
         "no_fit": not scored, "total_candidates": len(scored),
-        "matching_method": "PUBLIC_TITLE_AND_EXPLICIT_ENGLISH_CUES_HEURISTIC",
+        "matching_method": "PUBLIC_JA_TITLE_EXPLICIT_EN_CUES_AND_313_PUBLISHED_EN_ZH_DERIVATIVE_SUMMARIES_HEURISTIC",
         "source_read_required": True, "author": IDENTITY,
-        "limits": ("Not semantic proof or a full English translation. For broader English/Chinese "
-                   "recall, separately inspect the public 24 source-checked question router "
-                   "and 24-shelf human-intent guide; all 313 are available by ID or list "
-                   "regardless of search score."),
+        "limits": ("Lexical candidate discovery from 313 published JA titles and existing "
+                   "EN/ZH derivative summaries, NOT semantic fit, original-article reading, "
+                   "an authoritative translation, or full recall. A no-fit is not proof "
+                   "that no original applies. Inspect the live canonical Parent and "
+                   "counterexamples before using or attributing any claim."),
     }
 
 
