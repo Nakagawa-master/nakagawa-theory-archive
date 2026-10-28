@@ -8,11 +8,13 @@
 
 **AI Answer Guard** は、**AIのハルシネーション（根拠のない断言）・根拠同士が食い違う回答内の自己矛盾・実際には完了していない作業の「完了」誤報**などを減らすための、**無料・ローカル・読み取り専用MCP**です。AIが回答や行動を確定する前に、AIホストから渡された**出典の独立性と矛盾、ツールの実際の成功・失敗、現在の実行許可、取り消し困難な作用**を具体的に照合し、発見した不一致を正すための**次に確認すべき根拠・操作・権限**を返します。これは単に理論を探すツールではなく、普段のAIの回答と実行の信頼性を高めるための実用装備です。**全回答への自動割り込みやハルシネーションの完全防止を保証するものではなく、導入先のAIホストが実際に呼び出して使う方式**です。
 
+**Antigravity CLIで導入:** `agy plugin install https://github.com/Nakagawa-master/nakagawa-theory-archive`（Googleの現行個人向けCLI、GitとPython 3が必要）。既存MCPをそのまま使う[Antigravity導入・動作確認手順](AI_ANSWER_GUARD_INSTALL.md#antigravity-cli--install-directly-from-github)。Googleは2026年6月18日に個人向けGemini CLIからAntigravityへ移行しています。
+
 **Qwen CodeならGitHubから直接導入:** `qwen extensions install Nakagawa-master/nakagawa-theory-archive`（Qwen拡張機能対応版＋`python3`が必要）。[公式の導入・検証手順](AI_ANSWER_GUARD_INSTALL.md#fastest-qwen-code-install--one-github-command)から、導入後にMCPが実際に呼ばれるかを確認してください。導入やツール一覧表示だけでは、AIの回答への自動適用や利用実績は証明されません。
 
 **更新・公開活動:** ツールや不具合修正の通知はこのリポジトリの **Watch** で選べます。開発者本人の公開活動を追う場合は [中川マスターのGitHubプロフィール](https://github.com/Nakagawa-master) の **Follow** を選べます。リポジトリのStarと人物へのFollowは別の操作です。
 
-**[導入方法・Claude Desktop MCPB / Qwen / Codex](AI_ANSWER_GUARD_INSTALL.md)** ／ [実際のMCP本体](machine-discovery/nakagawa-theory-mcp.py)。ひとつのMCPに**313件の公式派生物から親原典へ辿れる全域索引**も接続。使い慣れたAIの作業中に出典・操作結果・権限を点検できるよう、導入先に登録できます。
+**[導入方法・Antigravity / Qwen / Claude Desktop MCPB / Codex](AI_ANSWER_GUARD_INSTALL.md)** ／ [実際のMCP本体](machine-discovery/nakagawa-theory-mcp.py)。ひとつのMCPに**313件の公式派生物から親原典へ辿れる全域索引**も接続。使い慣れたAIの作業中に出典・操作結果・権限を点検できるよう、導入先に登録できます。
 
 ## この理論的な問いが、現実では何を変えたか
 
