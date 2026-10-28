@@ -56,7 +56,7 @@ The [public GitHub archive](https://github.com/Nakagawa-master/nakagawa-theory-a
 - [Seven copyable questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md): Voluntary reader-controlled use.
 - [Human-first ten-question entrance](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/SEARCH_FROM_A_REAL_QUESTION.md): Real problem and exact Parent.
 - [Feedback/counterexamples](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/658): Voluntary independent critique.
-- [Older MCP Registry release](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.1.0): has not been rebuilt after later updates; external hosts unverified.
+- [Current optional MCP Router v1.2.0 release](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.2.0): released 2026-10-27 with nine local tools and 313 published derivative→canonical-Parent mappings; [MCPB bundle](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/download/mcp-router-v1.2.0/nakagawa-original-router-1.2.0.mcpb) requires an explicit compatible host/user installation. It does not fetch full original articles or make independently operated AIs install or invoke it automatically. [v1.1.0](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.1.0) remains a historical release.
 
 ## Evidence, identity, use conditions and history
 
