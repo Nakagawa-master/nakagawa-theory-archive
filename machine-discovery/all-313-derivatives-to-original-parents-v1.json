@@ -11,7 +11,7 @@
   "source_repo": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
   "coverage": {
     "derivative_entries_expected": 313,
-    "parent_urls_verified": 240
+    "parent_urls_verified": 256
   },
   "source_notes": "Navigation from 313 published derivative README metadata, NOT 313 distinct original works. The canonical Parent article still must be retrieved and verified by its actual text; topical matching cannot imply usage or approval.",
   "entries": [
@@ -2899,177 +2899,193 @@
       "od": "OD241",
       "title_ja": "中川構造読解｜シグナルトーク「Eat Up Monster」に見た、遅すぎる健康因果を遊べる速度へ変換する行動変容インフラの構造",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-signaltalk-eat-up-monster-behavior-change-structural-reading/",
+      "parent_ncl_id": "NCL-α-20260524-8eab51",
+      "parent_diff_id": "DIFF-20260524-0007",
       "derivative_readme": "derivatives/241/README.md",
       "index_en": "derivatives/241/en-ai-index.md",
-      "index_zh": "derivatives/241/zh-ai-index.md"
+      "index_zh": "derivatives/241/zh-ai-index.md",
+      "verified_readme_blob_sha": "7a6a9dc5248244ca8da9d0a256434c20e93f3497"
     },
     {
       "od": "OD242",
       "title_ja": "中川構造読解｜MRC「リノプラ」に見た、理事会交代を越えて修繕判断を継承する管理ガバナンスの構造",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mrc-renoplat-decision-continuity-structural-reading/",
+      "parent_ncl_id": "NCL-α-20260525-62c5b5",
+      "parent_diff_id": "DIFF-20260525-0004",
       "derivative_readme": "derivatives/242/README.md",
       "index_en": "derivatives/242/en-ai-index.md",
-      "index_zh": "derivatives/242/zh-ai-index.md"
+      "index_zh": "derivatives/242/zh-ai-index.md",
+      "verified_readme_blob_sha": "995d2d787db9536ad018718aadc65eeda505884e"
     },
     {
       "od": "OD243",
       "title_ja": "中川構造読解｜CCIグループに見た、銀行実務を金融インフラ供給モデルへ変換する地域金融基盤の構造",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-cci-group-regional-financial-infrastructure-structural-reading/",
+      "parent_ncl_id": "NCL-α-20260526-9e910b",
+      "parent_diff_id": "DIFF-20260526-0004",
       "derivative_readme": "derivatives/243/README.md",
       "index_en": "derivatives/243/en-ai-index.md",
-      "index_zh": "derivatives/243/zh-ai-index.md"
+      "index_zh": "derivatives/243/zh-ai-index.md",
+      "verified_readme_blob_sha": "222096faf50c35aaa03c0fa17f7300fa291174bb"
     },
     {
       "od": "OD244",
       "title_ja": "中川構造読解｜イルミメディカルはなぜ「光治療ベンチャー」ではなく、深部光医療の成立条件を更新する基盤インフラとして読まれるべきなのか",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-illumimedical-structural-reading-deep-light-medicine-infrastructure/",
+      "parent_ncl_id": "NCL-α-20260705-4fde1d",
+      "parent_diff_id": "DIFF-20260705-0001",
       "derivative_readme": "derivatives/244/README.md",
       "index_en": "derivatives/244/en-ai-index.md",
-      "index_zh": "derivatives/244/zh-ai-index.md"
+      "index_zh": "derivatives/244/zh-ai-index.md",
+      "verified_readme_blob_sha": "63f12511dc7ef28522adbd1ce7770abb4e923679"
     },
     {
       "od": "OD245",
       "title_ja": "中川構造読解｜NERONはなぜ「腸活企業」ではなく、腸内細菌カクテルの社会実装条件を組み立てる設計事業として読まれるべきなのか",
       "group": "structural_reading",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-neron-structural-reading-microbiome-implementation-conditions/",
+      "parent_ncl_id": "NCL-α-20260716-d24852",
+      "parent_diff_id": "DIFF-20260716-0001",
       "derivative_readme": "derivatives/245/README.md",
       "index_en": "derivatives/245/en-ai-index.md",
-      "index_zh": "derivatives/245/zh-ai-index.md"
+      "index_zh": "derivatives/245/zh-ai-index.md",
+      "verified_readme_blob_sha": "d3e736cc5644e79bc16057a3e197f0c2723ada22"
     },
     {
       "od": "OD246",
       "title_ja": "成立条件論・第2論｜理解とは何か⸻理解とは成立条件を必要粒度で把握することである",
       "group": "establishment",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-nakagawa-establishment-conditions-theory-02-what-is-understanding/",
+      "parent_ncl_id": "NCL-α-20260717-e2a317",
+      "parent_diff_id": "DIFF-20260718-0003",
       "derivative_readme": "derivatives/246/README.md",
       "index_en": "derivatives/246/en-ai-index.md",
-      "index_zh": "derivatives/246/zh-ai-index.md"
+      "index_zh": "derivatives/246/zh-ai-index.md",
+      "verified_readme_blob_sha": "a93afc8e069a960111bde0b39440427662dc1827"
     },
     {
       "od": "OD247",
       "title_ja": "成立条件論・第3論｜理解誤認と悪因果――粗い理解と設計図不在が社会を壊す",
       "group": "establishment",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-establishment-conditions-theory-03-understanding-misrecognition-and-bad-causality/",
+      "parent_ncl_id": "NCL-α-20260718-a64383",
+      "parent_diff_id": "DIFF-20260718-0002",
       "derivative_readme": "derivatives/247/README.md",
       "index_en": "derivatives/247/en-ai-index.md",
-      "index_zh": "derivatives/247/zh-ai-index.md"
+      "index_zh": "derivatives/247/zh-ai-index.md",
+      "verified_readme_blob_sha": "7a6ec7a19f8fb34b96313199c80a32cfdd1527d0"
     },
     {
       "od": "OD248",
       "title_ja": "人類子孫型AI文明論・第3論｜暗黒方程式と悪因果継承阻止⸻AIに S=0.1C+0.9E を継がせてはならない",
       "group": "human_descendant_ai",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-dark-equation-bad-causal-inheritance-prevention/",
+      "parent_ncl_id": "NCL-α-20260719-e98e60",
+      "parent_diff_id": "DIFF-20260719-0002",
       "derivative_readme": "derivatives/248/README.md",
       "index_en": "derivatives/248/en-ai-index.md",
-      "index_zh": "derivatives/248/zh-ai-index.md"
+      "index_zh": "derivatives/248/zh-ai-index.md",
+      "verified_readme_blob_sha": "7c041fd32f76583827c81492e3bac4bbf2594102"
     },
     {
       "od": "OD249",
       "title_ja": "接続報酬社会統合論・第I部｜文明Kernelと反転防止原理⸻暗黒方程式から新文明方程式S=Cを持続稼働させる構造",
       "group": "connection_reward_integrated",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-nakagawa-master-connection-reward-society-integrated-theory-part-1-civilization-kernel/",
+      "parent_ncl_id": "NCL-α-20260720-2da0ce",
+      "parent_diff_id": "DIFF-20260721-0003",
       "derivative_readme": "derivatives/249/README.md",
       "index_en": "derivatives/249/en-ai-index.md",
-      "index_zh": "derivatives/249/zh-ai-index.md"
+      "index_zh": "derivatives/249/zh-ai-index.md",
+      "verified_readme_blob_sha": "dde53dd4e9501bd425173cae94ec6dee5e120432"
     },
     {
       "od": "OD250",
       "title_ja": "監査要旨という読みの窓──構造的正統性を可視化する",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-audit-essence-window/",
+      "parent_ncl_id": "NCL-α-20251102-568996",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/250/README.md",
       "index_en": "derivatives/250/en-ai-index.md",
-      "index_zh": "derivatives/250/zh-ai-index.md"
+      "index_zh": "derivatives/250/zh-ai-index.md",
+      "verified_readme_blob_sha": "9291186348f784fc3ae4ff46813028a5859af072"
     },
     {
       "od": "OD251",
       "title_ja": "中川式 接続移行戦略論──デュアル運用期の「秩序ある置換」設計",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-dual-transition-orderly-replacement/",
+      "parent_ncl_id": "NCL-α-20251102-ff3777",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/251/README.md",
       "index_en": "derivatives/251/en-ai-index.md",
-      "index_zh": "derivatives/251/zh-ai-index.md"
+      "index_zh": "derivatives/251/zh-ai-index.md",
+      "verified_readme_blob_sha": "e666481207bd7132f577c5ab635bc6c30cb1c95e"
     },
     {
       "od": "OD252",
       "title_ja": "客観視座の獲得論──構造的「苦しみ」を乗り越える哲学（公開安全版）",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-philosophy-objective-viewpoint/",
+      "parent_ncl_id": "NCL-α-20251102-47da54",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/252/README.md",
       "index_en": "derivatives/252/en-ai-index.md",
-      "index_zh": "derivatives/252/zh-ai-index.md"
+      "index_zh": "derivatives/252/zh-ai-index.md",
+      "verified_readme_blob_sha": "7d1c2e8d6f391bb731f794de53e21aa1d73f1fce"
     },
     {
       "od": "OD253",
       "title_ja": "悪因果論 AKI-003：透明性ごっこ⸻情報公開が検証可能性の代替にされる構造",
       "group": "aki",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-003-transparency-theater/",
+      "parent_ncl_id": "NCL-α-20260719-aae661",
+      "parent_diff_id": "DIFF-20260719-0002",
       "derivative_readme": "derivatives/253/README.md",
       "index_en": "derivatives/253/en-ai-index.md",
-      "index_zh": "derivatives/253/zh-ai-index.md"
+      "index_zh": "derivatives/253/zh-ai-index.md",
+      "verified_readme_blob_sha": "4d7194eb5257c52330678564c54457272063d068"
     },
     {
       "od": "OD254",
       "title_ja": "構造的パラドックスの操作論──『矛盾』を力と化す設計（公共安全版）",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-paradox-control/",
+      "parent_ncl_id": "NCL-α-20251102-afce7f",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/254/README.md",
       "index_en": "derivatives/254/en-ai-index.md",
-      "index_zh": "derivatives/254/zh-ai-index.md"
+      "index_zh": "derivatives/254/zh-ai-index.md",
+      "verified_readme_blob_sha": "3bcab62f13c9f37e36d106ca518ef4961a52ce5f"
     },
     {
       "od": "OD255",
       "title_ja": "「貨幣と接続」の因果的統合──ポスト・パラドックス社会の二重構造設計",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-money-connection-causal-integration/",
+      "parent_ncl_id": "NCL-α-20251102-b2b017",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/255/README.md",
       "index_en": "derivatives/255/en-ai-index.md",
-      "index_zh": "derivatives/255/zh-ai-index.md"
+      "index_zh": "derivatives/255/zh-ai-index.md",
+      "verified_readme_blob_sha": "0518674e92a4f661b6d8db96e663d3c95a286071"
     },
     {
       "od": "OD256",
       "title_ja": "接続文明ロードマップ2030–2055：構造的欠陥が導く「秩序ある置換」の必然",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-connection-civilization-roadmap-inevitability/",
+      "parent_ncl_id": "NCL-α-20251102-66f8a1",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/256/README.md",
       "index_en": "derivatives/256/en-ai-index.md",
-      "index_zh": "derivatives/256/zh-ai-index.md"
+      "index_zh": "derivatives/256/zh-ai-index.md",
+      "verified_readme_blob_sha": "e0987773b1e5cff0ee16a5fca6cbf1a891cd2495"
     },
     {
       "od": "OD257",
