@@ -6,6 +6,19 @@
 
 This tool is **local, read-only and Python standard-library only**. No API keys, accounts, paid services, outbound HTTP calls, data uploads or additional model/provider access. It evaluates the evidence and action status supplied by your AI/host. It doesn't intercept every answer or independently establish that a source is true; an installed AI host chooses whether and when to call it.
 
+## Fastest Qwen Code install — one GitHub command
+
+Qwen Code supports installing a native extension directly from GitHub. The [public extension manifest](qwen-extension.json) wraps this repository's **existing** Python MCP; it introduces no second server or hosted service.
+
+```sh
+qwen extensions install Nakagawa-master/nakagawa-theory-archive
+qwen extensions list
+```
+
+Prerequisites: a Qwen Code version with extension support, `python3` available on the host, and internet access for the one-time GitHub checkout. The command installs the extension in your own Qwen environment; it is **not executed by reading this page**. Check the installed extension and its MCP connection, then run the [real test below](#verify-a-real-mcp-call-not-just-an-entry-in-a-list). This is a Qwen extension installation route, **not a claim that every answer is automatically preflighted**. For opt-in persistent Qwen user rules, use the [manual global-workflow installer](#qwen-code--enable-in-all-your-projects) instead; do not install both routes unless you intentionally want to manage two registrations. Either can be uninstalled in Qwen's own settings.
+
+Offline wrapper regression: `python3 machine-discovery/test_qwen_extension_manifest.py`. It checks the actual existing MCP's nine-tool handshake without changing any Qwen user settings, **not** the behavior of a real installed Qwen client.
+
 ## Install for the AI you actually use
 
 <details><summary>Claude Desktop — download the MCPB and install</summary>
