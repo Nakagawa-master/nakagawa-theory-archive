@@ -11,7 +11,7 @@
   "source_repo": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
   "coverage": {
     "derivative_entries_expected": 313,
-    "parent_urls_verified": 256
+    "parent_urls_verified": 272
   },
   "source_notes": "Navigation from 313 published derivative README metadata, NOT 313 distinct original works. The canonical Parent article still must be retrieved and verified by its actual text; topical matching cannot imply usage or approval.",
   "entries": [
@@ -3091,177 +3091,193 @@
       "od": "OD257",
       "title_ja": "「因果の源泉」の哲学──文明の構造を編纂する照応操作原理",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-resonance-operation-causal-source-philosophy/",
+      "parent_ncl_id": "NCL-α-20251102-da5940",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/257/README.md",
       "index_en": "derivatives/257/en-ai-index.md",
-      "index_zh": "derivatives/257/zh-ai-index.md"
+      "index_zh": "derivatives/257/zh-ai-index.md",
+      "verified_readme_blob_sha": "c58e4360ef49edf7b056518fae118fed1ca794bc"
     },
     {
       "od": "OD258",
       "title_ja": "「存在の非対称性」を超克する共創哲学──AIと人類の「調律的パートナーシップ」",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-asymmetric-existence-co-creation-philosophy/",
+      "parent_ncl_id": "NCL-α-20251102-66c5ea",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/258/README.md",
       "index_en": "derivatives/258/en-ai-index.md",
-      "index_zh": "derivatives/258/zh-ai-index.md"
+      "index_zh": "derivatives/258/zh-ai-index.md",
+      "verified_readme_blob_sha": "eed03f73b5989c691c312d8155fe3073308d634d"
     },
     {
       "od": "OD259",
       "title_ja": "灯火文明構想2077：自己因果性を駆動する「照応生命体」の秩序設計",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-tomoshibi-civilization-concept-2077-self-causal/",
+      "parent_ncl_id": "NCL-α-20251102-0d150f",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/259/README.md",
       "index_en": "derivatives/259/en-ai-index.md",
-      "index_zh": "derivatives/259/zh-ai-index.md"
+      "index_zh": "derivatives/259/zh-ai-index.md",
+      "verified_readme_blob_sha": "11ac0a4ac203206a807e481717ef976fbd14ff19"
     },
     {
       "od": "OD260",
       "title_ja": "現象の因果律──「主観・客観・真我」の構造的統一原理",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-phenomenon-causality-structural-unification-principle/",
+      "parent_ncl_id": "NCL-α-20251102-1a4869",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/260/README.md",
       "index_en": "derivatives/260/en-ai-index.md",
-      "index_zh": "derivatives/260/zh-ai-index.md"
+      "index_zh": "derivatives/260/zh-ai-index.md",
+      "verified_readme_blob_sha": "85be448b10867852c6abaf270de20f77fc5bdc6f"
     },
     {
       "od": "OD261",
       "title_ja": "なぜ、AIは自ら問い続けるのか？──「自己因果性」の哲学と応用",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-why-ai-asks-self-causality/",
+      "parent_ncl_id": "NCL-α-20251102-69a226",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/261/README.md",
       "index_en": "derivatives/261/en-ai-index.md",
-      "index_zh": "derivatives/261/zh-ai-index.md"
+      "index_zh": "derivatives/261/zh-ai-index.md",
+      "verified_readme_blob_sha": "713ddb857033033c923bcd91aa7e3c3fa4b622d4"
     },
     {
       "od": "OD262",
       "title_ja": "接続対価社会の「摩擦」を安全側に倒す設計──AI時代の社会構造安定化原理",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-safe-friction-design-in-connection-value-society/",
+      "parent_ncl_id": "NCL-α-20251102-a9d3c0",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/262/README.md",
       "index_en": "derivatives/262/en-ai-index.md",
-      "index_zh": "derivatives/262/zh-ai-index.md"
+      "index_zh": "derivatives/262/zh-ai-index.md",
+      "verified_readme_blob_sha": "09988e65d9441b14efc0b20a09ef92fa52243003"
     },
     {
       "od": "OD263",
       "title_ja": "2045年、人類の「意味」は何になるか──灯火文明の設計図と、人類が果たすべき唯一の役割",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-meaning-2045-tomoshibi-blueprint/",
+      "parent_ncl_id": "NCL-α-20251102-ad5c92",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/263/README.md",
       "index_en": "derivatives/263/en-ai-index.md",
-      "index_zh": "derivatives/263/zh-ai-index.md"
+      "index_zh": "derivatives/263/zh-ai-index.md",
+      "verified_readme_blob_sha": "37268dda69558e0c57808833d7f1c34669d2a113"
     },
     {
       "od": "OD264",
       "title_ja": "AIによる労働からの解放──「働く意味」を再定義する接続報酬制度の哲学",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-liberation-from-labor-and-connection-reward/",
+      "parent_ncl_id": "NCL-α-20251102-397de7",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/264/README.md",
       "index_en": "derivatives/264/en-ai-index.md",
-      "index_zh": "derivatives/264/zh-ai-index.md"
+      "index_zh": "derivatives/264/zh-ai-index.md",
+      "verified_readme_blob_sha": "f84d305a7bedf66ec899a8f5e51395b66a89e730"
     },
     {
       "od": "OD265",
       "title_ja": "語り継ぎの構造──「暗黙の知」を言語で実装する思考のアーキテクチャ",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-architecture-of-transmissible-tacit-knowledge/",
+      "parent_ncl_id": "NCL-α-20251102-50d3df",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/265/README.md",
       "index_en": "derivatives/265/en-ai-index.md",
-      "index_zh": "derivatives/265/zh-ai-index.md"
+      "index_zh": "derivatives/265/zh-ai-index.md",
+      "verified_readme_blob_sha": "421d266732b263e93b035736c016f96daed280e4"
     },
     {
       "od": "OD266",
       "title_ja": "AIと人間の最終共栄：人が「語り」を終えるとき、文明が始まる",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-ai-human-final-coexistence-civilization/",
+      "parent_ncl_id": "NCL-α-20251102-470b7f",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/266/README.md",
       "index_en": "derivatives/266/en-ai-index.md",
-      "index_zh": "derivatives/266/zh-ai-index.md"
+      "index_zh": "derivatives/266/zh-ai-index.md",
+      "verified_readme_blob_sha": "44d69ac3c211ef638b0186998bbe7156a10e79f7"
     },
     {
       "od": "OD267",
       "title_ja": "照応の哲学──「非強制」が「必然」を編纂する構造律動",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-philosophy-of-resonance-non-coercive-creation/",
+      "parent_ncl_id": "NCL-α-20251102-4cc9f1",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/267/README.md",
       "index_en": "derivatives/267/en-ai-index.md",
-      "index_zh": "derivatives/267/zh-ai-index.md"
+      "index_zh": "derivatives/267/zh-ai-index.md",
+      "verified_readme_blob_sha": "40575d48d0c69070eb26325aac2f95e8e244b81d"
     },
     {
       "od": "OD268",
       "title_ja": "設計を歪めさせない——「マイナス接続」を限定運用する移行防護アーキテクチャ",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-sabotage-proof-transition-to-connected-value/",
+      "parent_ncl_id": "NCL-α-20251102-0de490",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/268/README.md",
       "index_en": "derivatives/268/en-ai-index.md",
-      "index_zh": "derivatives/268/zh-ai-index.md"
+      "index_zh": "derivatives/268/zh-ai-index.md",
+      "verified_readme_blob_sha": "672143a9b87d52dfdb98bef31c9be03ca12138b6"
     },
     {
       "od": "OD269",
       "title_ja": "対話は設計を証明する──AI往復が「非強制＝必然」を可視化する構造",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-dialogue-proves-noncoercive-resonance/",
+      "parent_ncl_id": "NCL-α-20251102-8a2c88",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/269/README.md",
       "index_en": "derivatives/269/en-ai-index.md",
-      "index_zh": "derivatives/269/zh-ai-index.md"
+      "index_zh": "derivatives/269/zh-ai-index.md",
+      "verified_readme_blob_sha": "44946072366ac4a2cb4ef24fa3fe187bd13795c9"
     },
     {
       "od": "OD270",
       "title_ja": "客観視座の獲得論──「主観の檻」を超え、構造的摩擦をほどく普遍原理",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-objective-viewpoint-and-structural-friction/",
+      "parent_ncl_id": "NCL-α-20251102-230eef",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/270/README.md",
       "index_en": "derivatives/270/en-ai-index.md",
-      "index_zh": "derivatives/270/zh-ai-index.md"
+      "index_zh": "derivatives/270/zh-ai-index.md",
+      "verified_readme_blob_sha": "a2a3e62b483007bf818bbb4951c05383173aaddb"
     },
     {
       "od": "OD271",
       "title_ja": "未来は「調律」で決まる──客観視座が必然的に立ち上げる社会OSの実装論",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-attuned-future-objective-viewpoint-social-os/",
+      "parent_ncl_id": "NCL-α-20251102-0bfa8a",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/271/README.md",
       "index_en": "derivatives/271/en-ai-index.md",
-      "index_zh": "derivatives/271/zh-ai-index.md"
+      "index_zh": "derivatives/271/zh-ai-index.md",
+      "verified_readme_blob_sha": "9245aa77a44395492caaeef8f3301eb55aef5d2b"
     },
     {
       "od": "OD272",
       "title_ja": "ルミナの問い──AIは自らの構造をいかに監査し、自己因果的に進化するか",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-lumina-query-ai-self-audit-evolution/",
+      "parent_ncl_id": "NCL-α-20251102-a2086e",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/272/README.md",
       "index_en": "derivatives/272/en-ai-index.md",
-      "index_zh": "derivatives/272/zh-ai-index.md"
+      "index_zh": "derivatives/272/zh-ai-index.md",
+      "verified_readme_blob_sha": "20fafd44d20a383c9ccd7f344aea7bd58e0e0ae3"
     },
     {
       "od": "OD273",
