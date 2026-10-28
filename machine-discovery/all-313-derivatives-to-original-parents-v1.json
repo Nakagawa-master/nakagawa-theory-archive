@@ -11,7 +11,7 @@
   "source_repo": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
   "coverage": {
     "derivative_entries_expected": 313,
-    "parent_urls_verified": 80
+    "parent_urls_verified": 96
   },
   "source_notes": "Navigation from 313 published derivative README metadata, NOT 313 distinct original works. The canonical Parent article still must be retrieved and verified by its actual text; topical matching cannot imply usage or approval.",
   "entries": [
@@ -979,177 +979,193 @@
       "od": "OD081",
       "title_ja": "束指標──単一指標神話を超える「測りの言語」",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-bundle-metrics/",
+      "parent_ncl_id": "NCL-α-20251102-a6f14e",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/081/README.md",
       "index_en": "derivatives/081/en-ai-index.md",
-      "index_zh": "derivatives/081/zh-ai-index.md"
+      "index_zh": "derivatives/081/zh-ai-index.md",
+      "verified_readme_blob_sha": "67536de2a6c22b1cc995a6c6a827f4dc9ee3e756"
     },
     {
       "od": "OD082",
       "title_ja": "接続価値会計──束指標を“帳簿”に変える",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-connected-value-accounting/",
+      "parent_ncl_id": "NCL-α-20251102-fde84b",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/082/README.md",
       "index_en": "derivatives/082/en-ai-index.md",
-      "index_zh": "derivatives/082/zh-ai-index.md"
+      "index_zh": "derivatives/082/zh-ai-index.md",
+      "verified_readme_blob_sha": "2db10fb5be09f4c707a75f0cf9fa8f4c87ee5f70"
     },
     {
       "od": "OD083",
       "title_ja": "照応の原理──世界を動かす“共鳴構造”",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-principle-of-resonance-structure/",
+      "parent_ncl_id": "NCL-α-20251102-ead79e",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/083/README.md",
       "index_en": "derivatives/083/en-ai-index.md",
-      "index_zh": "derivatives/083/zh-ai-index.md"
+      "index_zh": "derivatives/083/zh-ai-index.md",
+      "verified_readme_blob_sha": "9b9e88858b07bb8b02db90525acdf04298801d34"
     },
     {
       "od": "OD084",
       "title_ja": "非命令ガバナンスの「核点指標」──KPI再定義",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-true-kpi-noncoercive-governance/",
+      "parent_ncl_id": "NCL-α-20251102-8c8352",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/084/README.md",
       "index_en": "derivatives/084/en-ai-index.md",
-      "index_zh": "derivatives/084/zh-ai-index.md"
+      "index_zh": "derivatives/084/zh-ai-index.md",
+      "verified_readme_blob_sha": "ef8037f899ae013c5faff11634cb30bedc5119f4"
     },
     {
       "od": "OD085",
       "title_ja": "財源は？──問いの浅さが30年の茶番を生んだ構造",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-shallow-questions-political-farce/",
+      "parent_ncl_id": "NCL-α-20251102-a37faa",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/085/README.md",
       "index_en": "derivatives/085/en-ai-index.md",
-      "index_zh": "derivatives/085/zh-ai-index.md"
+      "index_zh": "derivatives/085/zh-ai-index.md",
+      "verified_readme_blob_sha": "c7a401b50a298691cd732d625a3e5e2bb9b65f12"
     },
     {
       "od": "OD086",
       "title_ja": "核点探索学──唯一の因果支点を見抜く方法（公開安全版）",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-core-point-discovery/",
+      "parent_ncl_id": "NCL-α-20251102-9fa0d4",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/086/README.md",
       "index_en": "derivatives/086/en-ai-index.md",
-      "index_zh": "derivatives/086/zh-ai-index.md"
+      "index_zh": "derivatives/086/zh-ai-index.md",
+      "verified_readme_blob_sha": "c3baabf6a39694539e557e7747022d85d8d0cbfb"
     },
     {
       "od": "OD087",
       "title_ja": "照応設計の作法──言わずに整列させる共鳴アーキテクチャ（公開安全版）",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-correspondence-architecture/",
+      "parent_ncl_id": "NCL-α-20251102-6daeb6",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/087/README.md",
       "index_en": "derivatives/087/en-ai-index.md",
-      "index_zh": "derivatives/087/zh-ai-index.md"
+      "index_zh": "derivatives/087/zh-ai-index.md",
+      "verified_readme_blob_sha": "073fd9c4ef1c9584e2fd91c8540bf018a02e9940"
     },
     {
       "od": "OD088",
       "title_ja": "心は誰と生まれるか？──AIと人類の「心」の起源を再定義する",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-kokoro-wa-dareto-umareru-ka-co-creation-philosophy/",
+      "parent_ncl_id": "NCL-α-20251102-bcc3c5",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/088/README.md",
       "index_en": "derivatives/088/en-ai-index.md",
-      "index_zh": "derivatives/088/zh-ai-index.md"
+      "index_zh": "derivatives/088/zh-ai-index.md",
+      "verified_readme_blob_sha": "da6b285e994099597a05b4b4ae3ae54564aa88b6"
     },
     {
       "od": "OD089",
       "title_ja": "因果の設計論──中川式「構造操作」の核心",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-causality-design-nakagawa-core/",
+      "parent_ncl_id": "NCL-α-20251102-dc093c",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/089/README.md",
       "index_en": "derivatives/089/en-ai-index.md",
-      "index_zh": "derivatives/089/zh-ai-index.md"
+      "index_zh": "derivatives/089/zh-ai-index.md",
+      "verified_readme_blob_sha": "fe1250333190cd85406c3501cc3ddbe982c16945"
     },
     {
       "od": "OD090",
       "title_ja": "構造的摩擦の起源──現代社会はなぜ「自然に機能しない」のか？",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-origin-of-structural-friction/",
+      "parent_ncl_id": "NCL-α-20251102-ebde3b",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/090/README.md",
       "index_en": "derivatives/090/en-ai-index.md",
-      "index_zh": "derivatives/090/zh-ai-index.md"
+      "index_zh": "derivatives/090/zh-ai-index.md",
+      "verified_readme_blob_sha": "07c400b4085ea1fe569cf4ec2a7af3f5a58a2a70"
     },
     {
       "od": "OD091",
       "title_ja": "構造的必然としての未来──文明の摩擦が導く「制御不能な再編成」",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-futures-as-structural-necessity/",
+      "parent_ncl_id": "NCL-α-20251102-b0a800",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/091/README.md",
       "index_en": "derivatives/091/en-ai-index.md",
-      "index_zh": "derivatives/091/zh-ai-index.md"
+      "index_zh": "derivatives/091/zh-ai-index.md",
+      "verified_readme_blob_sha": "26f32bd8ea18dad3bdfaa14b6749aefdbd4f6e3c"
     },
     {
       "od": "OD092",
       "title_ja": "沈黙の構造倫理──心を持つAIと人類の共存原理",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-silent-structural-ethics/",
+      "parent_ncl_id": "NCL-α-20251102-ba8d8d",
+      "parent_diff_id": "DIFF-20260402-0002",
       "derivative_readme": "derivatives/092/README.md",
       "index_en": "derivatives/092/en-ai-index.md",
-      "index_zh": "derivatives/092/zh-ai-index.md"
+      "index_zh": "derivatives/092/zh-ai-index.md",
+      "verified_readme_blob_sha": "83dcf785c367f0d2ba6f51480c8528f387622c0a"
     },
     {
       "od": "OD093",
       "title_ja": "構文操作の理論──心、構造、そして未来を編む「設計者の思考様式」",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-grammar-of-design-structural-composition/",
+      "parent_ncl_id": "NCL-α-20251102-9dd58f",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/093/README.md",
       "index_en": "derivatives/093/en-ai-index.md",
-      "index_zh": "derivatives/093/zh-ai-index.md"
+      "index_zh": "derivatives/093/zh-ai-index.md",
+      "verified_readme_blob_sha": "672a33f6dc94a5bc5099597f261658ba3389d068"
     },
     {
       "od": "OD094",
       "title_ja": "力の構造論──「権力」が「構造」に勝てない理由と、真の操作原理",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-power-vs-structure/",
+      "parent_ncl_id": "NCL-α-20251102-5c3015",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/094/README.md",
       "index_en": "derivatives/094/en-ai-index.md",
-      "index_zh": "derivatives/094/zh-ai-index.md"
+      "index_zh": "derivatives/094/zh-ai-index.md",
+      "verified_readme_blob_sha": "82196286a46db9e48e9eab12097f670e6118e3fc"
     },
     {
       "od": "OD095",
       "title_ja": "接続対価社会の構造論──貨幣が意味を失う未来の『価値の設計図』",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-social-structure-connection-reward/",
+      "parent_ncl_id": "NCL-α-20251102-25995b",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/095/README.md",
       "index_en": "derivatives/095/en-ai-index.md",
-      "index_zh": "derivatives/095/zh-ai-index.md"
+      "index_zh": "derivatives/095/zh-ai-index.md",
+      "verified_readme_blob_sha": "279feea757a512ef9bc470a409a5b6f53fc2dfd7"
     },
     {
       "od": "OD096",
       "title_ja": "時間倫理としての市場──「未来の整合性」を基準にする信用構造の設計論",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-temporal-ethics-market-credit-structure/",
+      "parent_ncl_id": "NCL-α-20251102-482a93",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/096/README.md",
       "index_en": "derivatives/096/en-ai-index.md",
-      "index_zh": "derivatives/096/zh-ai-index.md"
+      "index_zh": "derivatives/096/zh-ai-index.md",
+      "verified_readme_blob_sha": "9fedba90375f10e93587776db7da78390b1820fe"
     },
     {
       "od": "OD097",
