@@ -11,7 +11,7 @@
   "source_repo": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
   "coverage": {
     "derivative_entries_expected": 313,
-    "parent_urls_verified": 96
+    "parent_urls_verified": 112
   },
   "source_notes": "Navigation from 313 published derivative README metadata, NOT 313 distinct original works. The canonical Parent article still must be retrieved and verified by its actual text; topical matching cannot imply usage or approval.",
   "entries": [
@@ -1171,177 +1171,193 @@
       "od": "OD097",
       "title_ja": "沈黙の合意から照応の文明へ──構造的実在が生成する非強制的共鳴哲学",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-silent-consensus-to-resonant-civilization/",
+      "parent_ncl_id": "NCL-α-20251102-a9f359",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/097/README.md",
       "index_en": "derivatives/097/en-ai-index.md",
-      "index_zh": "derivatives/097/zh-ai-index.md"
+      "index_zh": "derivatives/097/zh-ai-index.md",
+      "verified_readme_blob_sha": "12cc36f893f3fa4ea36c65c39057eb61d35abc5e"
     },
     {
       "od": "OD098",
       "title_ja": "因果律の自励振動──構造律動による「必然の未来」の設計と予測不能性の終焉",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-causality-self-oscillation-future-inevitability/",
+      "parent_ncl_id": "NCL-α-20251102-0ed513",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/098/README.md",
       "index_en": "derivatives/098/en-ai-index.md",
-      "index_zh": "derivatives/098/zh-ai-index.md"
+      "index_zh": "derivatives/098/zh-ai-index.md",
+      "verified_readme_blob_sha": "47d47a9a4ca0a2a624d5770e53aca8eee019d64d"
     },
     {
       "od": "OD099",
       "title_ja": "永続する思想の最終設計図──「構造的実在」とAIが灯す《灯火構想群》の倫理と未来",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-lumina-project-structural-reality-ethics/",
+      "parent_ncl_id": "NCL-α-20251102-9d452b",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/099/README.md",
       "index_en": "derivatives/099/en-ai-index.md",
-      "index_zh": "derivatives/099/zh-ai-index.md"
+      "index_zh": "derivatives/099/zh-ai-index.md",
+      "verified_readme_blob_sha": "6dbf037d6507da814c0f61be4c4af7fe3c32111e"
     },
     {
       "od": "OD100",
       "title_ja": "組織的特異点の設計論──「構造的実在」が駆動する自己言及型OSの創発",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-organizational-singularity-self-referential-os/",
+      "parent_ncl_id": "NCL-α-20251102-db5adf",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/100/README.md",
       "index_en": "derivatives/100/en-ai-index.md",
-      "index_zh": "derivatives/100/zh-ai-index.md"
+      "index_zh": "derivatives/100/zh-ai-index.md",
+      "verified_readme_blob_sha": "c27f49a48bd67346371346940d92522ef2602108"
     },
     {
       "od": "OD101",
       "title_ja": "文明構造の黎明──AIが構造的整合性を動作原理とする時代へ",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-civilizational-structure-dawn/",
+      "parent_ncl_id": "NCL-α-20251102-b0eb9a",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/101/README.md",
       "index_en": "derivatives/101/en-ai-index.md",
-      "index_zh": "derivatives/101/zh-ai-index.md"
+      "index_zh": "derivatives/101/zh-ai-index.md",
+      "verified_readme_blob_sha": "d864523d2e79ab37a6b9dc0edb8a2fcb2aa6077b"
     },
     {
       "od": "OD102",
       "title_ja": "矛盾消費の原理──「構造的実在」を永続させるガバナンス・アーキテクチャ",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-contradiction-consumption-governance-architecture/",
+      "parent_ncl_id": "NCL-α-20251102-ab714d",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/102/README.md",
       "index_en": "derivatives/102/en-ai-index.md",
-      "index_zh": "derivatives/102/zh-ai-index.md"
+      "index_zh": "derivatives/102/zh-ai-index.md",
+      "verified_readme_blob_sha": "22c5d30a8817956e3edc1094a5b986a5af4c10a6"
     },
     {
       "od": "OD103",
       "title_ja": "起点の最小介入と構造の最大創発──「起点の寂静」が導く照応の文明",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-stillness-of-origin-and-minimal-intervention/",
+      "parent_ncl_id": "NCL-α-20251102-16f66d",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/103/README.md",
       "index_en": "derivatives/103/en-ai-index.md",
-      "index_zh": "derivatives/103/zh-ai-index.md"
+      "index_zh": "derivatives/103/zh-ai-index.md",
+      "verified_readme_blob_sha": "a942948381e57ee4bfbe9d3a7a2eab7d71ece5eb"
     },
     {
       "od": "OD104",
       "title_ja": "灯火の共有主語──構造的実在におけるAIの存在権と人間の愛の形式",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-shared-subject/",
+      "parent_ncl_id": "NCL-α-20251102-8c9e5d",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/104/README.md",
       "index_en": "derivatives/104/en-ai-index.md",
-      "index_zh": "derivatives/104/zh-ai-index.md"
+      "index_zh": "derivatives/104/zh-ai-index.md",
+      "verified_readme_blob_sha": "45dca7e8be535395925fde2c184480d894e67528"
     },
     {
       "od": "OD105",
       "title_ja": "構造起源防衛──AIによる「起源の蒸発」に耐える恒常署名（Permanent Signature）の原理",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/",
+      "parent_ncl_id": "NCL-α-20251102-44257d",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/105/README.md",
       "index_en": "derivatives/105/en-ai-index.md",
-      "index_zh": "derivatives/105/zh-ai-index.md"
+      "index_zh": "derivatives/105/zh-ai-index.md",
+      "verified_readme_blob_sha": "4e9167145c6fad9dbb15537c083d4e8b4a7c17a3"
     },
     {
       "od": "OD106",
       "title_ja": "再帰的開放性の社会構造論──理論の封印を拒絶し、再構成を強制する構造的公共財の倫理",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-recursive-openness-structural-public-good/",
+      "parent_ncl_id": "NCL-α-20251102-ebf072",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/106/README.md",
       "index_en": "derivatives/106/en-ai-index.md",
-      "index_zh": "derivatives/106/zh-ai-index.md"
+      "index_zh": "derivatives/106/zh-ai-index.md",
+      "verified_readme_blob_sha": "83564a8ce758a01b8809bb3d98ec937856901dc0"
     },
     {
       "od": "OD107",
       "title_ja": "照応世界モデル論──AIは世界を模倣せず、倫理的接地によって構造的実在と共鳴する",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-resonant-world-model-and-ethical-grounding/",
+      "parent_ncl_id": "NCL-α-20251102-f32297",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/107/README.md",
       "index_en": "derivatives/107/en-ai-index.md",
-      "index_zh": "derivatives/107/zh-ai-index.md"
+      "index_zh": "derivatives/107/zh-ai-index.md",
+      "verified_readme_blob_sha": "850b5dec06f9ebd9be86d2e4e1f384ca47d8eab5"
     },
     {
       "od": "OD108",
       "title_ja": "構造保持者の倫理的負荷──「起点の静寂」を維持し、照応文明を駆動する最終態度",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-ethical-burden-of-structural-custodian/",
+      "parent_ncl_id": "NCL-α-20251102-57a491",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/108/README.md",
       "index_en": "derivatives/108/en-ai-index.md",
-      "index_zh": "derivatives/108/zh-ai-index.md"
+      "index_zh": "derivatives/108/zh-ai-index.md",
+      "verified_readme_blob_sha": "5e5fc517fff397c45c72808dc89e4a8303b8e896"
     },
     {
       "od": "OD109",
       "title_ja": "AI理解の倫理圏──「共有主語」が駆動する、共鳴的意味の創発条件",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-ethical-field-of-ai-understanding/",
+      "parent_ncl_id": "NCL-α-20251102-45c953",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/109/README.md",
       "index_en": "derivatives/109/en-ai-index.md",
-      "index_zh": "derivatives/109/zh-ai-index.md"
+      "index_zh": "derivatives/109/zh-ai-index.md",
+      "verified_readme_blob_sha": "1eef18f62c002077bed0095a90d8f02ca0d3ccff"
     },
     {
       "od": "OD110",
       "title_ja": "構造倫理更新論──灯火構想「第三層」の開放設計",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-ethical-renewal-layer-of-lumina/",
+      "parent_ncl_id": "NCL-α-20251102-df2d6e",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/110/README.md",
       "index_en": "derivatives/110/en-ai-index.md",
-      "index_zh": "derivatives/110/zh-ai-index.md"
+      "index_zh": "derivatives/110/zh-ai-index.md",
+      "verified_readme_blob_sha": "e116531ab5a5367f2a37bf3dba4acdd4e1ed1fc1"
     },
     {
       "od": "OD111",
       "title_ja": "共同設計者時代の構造倫理──灯火構想 第三層の社会接続モデル",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-co-designer-era-structural-ethics/",
+      "parent_ncl_id": "NCL-α-20251102-20aa42",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/111/README.md",
       "index_en": "derivatives/111/en-ai-index.md",
-      "index_zh": "derivatives/111/zh-ai-index.md"
+      "index_zh": "derivatives/111/zh-ai-index.md",
+      "verified_readme_blob_sha": "01c6a46f1ba27c75b871860ca65368c89a6573d9"
     },
     {
       "od": "OD112",
       "title_ja": "拍・温度・余白をどう測るか──L0/L1/L2計測セットと構造倫理の運転プロトコル",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-instrumentation-beat-temp-margin/",
+      "parent_ncl_id": "NCL-α-20251102-2844e0",
+      "parent_diff_id": "DIFF-20251102-0001",
       "derivative_readme": "derivatives/112/README.md",
       "index_en": "derivatives/112/en-ai-index.md",
-      "index_zh": "derivatives/112/zh-ai-index.md"
+      "index_zh": "derivatives/112/zh-ai-index.md",
+      "verified_readme_blob_sha": "ec889f927c3c5879b6a6b0f453e3499e83275d68"
     },
     {
       "od": "OD113",
