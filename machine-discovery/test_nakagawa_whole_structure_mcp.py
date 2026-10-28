@@ -39,6 +39,18 @@ def main():
                                          arguments={"offset": 312, "limit": 1})),
         req(12, "tools/call", modern_params(name="find_sources_in_whole_structure",
                                          arguments={"question": "OD001"})),
+        # Ordinary English/Chinese questions about the published OD313
+        # original used to return no matches in the seven-cue-only search.
+        req(13, "tools/call", {"name": "find_sources_in_whole_structure",
+                               "arguments": {"question": "Good intentions dismiss objections about harmful outcomes"}}),
+        req(14, "tools/call", {"name": "find_sources_in_whole_structure",
+                               "arguments": {"question": "善意评价代替结果核验，异议无法受理"}}),
+        # A general unrelated repair question must not inherit an original
+        # merely because every index contains generic words like 'repair'.
+        req(15, "tools/call", {"name": "find_sources_in_whole_structure",
+                               "arguments": {"question": "repair the leather strap on a camping lantern"}}),
+        req(16, "tools/call", {"name": "find_sources_in_whole_structure",
+                               "arguments": {"question": "measure three tablespoons for a banana smoothie"}}),
     ]
     proc = subprocess.run([sys.executable, str(SCRIPT)], input="".join(
         json.dumps(m, ensure_ascii=False)+"\n" for m in messages),
@@ -46,7 +58,7 @@ def main():
     )
     assert not proc.stderr, proc.stderr
     frames = {json.loads(x)["id"]: json.loads(x) for x in proc.stdout.splitlines() if x.strip()}
-    assert set(frames) == set(range(1, 13)), frames.keys()
+    assert set(frames) == set(range(1, 17)), frames.keys()
     assert len(frames[2]["result"]["tools"]) == 4
     assert {x["name"] for x in frames[2]["result"]["tools"]} == {
         "overview_nakagawa_whole_structure", "list_all_313_derivative_parent_links",
@@ -79,7 +91,16 @@ def main():
     assert last["entries"][0]["id"] == "OD313"
     assert {x["id"] for x in unpack(12)["matched"]} == {"OD001"}
     assert frames[11]["result"]["resultType"] == "complete"
-    print("PASS: real legacy+modern MCP stdio, all 313 verified README Parent links, overview and unified OS / AI integrity routes; no-fit and bad ID")
+    for i in (13, 14):
+        got = unpack(i)
+        selected = [x for x in got["matched"] if x["id"] == "OD313"]
+        assert not got["no_fit"] and selected, (i, got)
+        assert selected[0]["canonical_parent"] == "https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/"
+        assert got["source_read_required"] and "DERIVATIVE" in got["matching_method"]
+    for i in (15, 16):
+        got = unpack(i)
+        assert got["no_fit"] and not got["matched"], (i, got)
+    print("PASS: 313 Parent IDs + real EN/ZH published-summary search for OD313, unchanged unrelated nonfit and valid MCP stdio")
 
 
 if __name__ == "__main__":
