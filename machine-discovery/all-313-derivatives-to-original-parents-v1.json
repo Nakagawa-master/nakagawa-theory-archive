@@ -11,7 +11,7 @@
   "source_repo": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
   "coverage": {
     "derivative_entries_expected": 313,
-    "parent_urls_verified": 144
+    "parent_urls_verified": 160
   },
   "source_notes": "Navigation from 313 published derivative README metadata, NOT 313 distinct original works. The canonical Parent article still must be retrieved and verified by its actual text; topical matching cannot imply usage or approval.",
   "entries": [
@@ -1747,177 +1747,193 @@
       "od": "OD145",
       "title_ja": "構造的公共性 ── 構造文明OSにおける非所有性原理と防衛層の倫理的設計",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-structural-publicness-non-ownership-principle/",
+      "parent_ncl_id": "NCL-α-20251115-6e8174",
+      "parent_diff_id": "DIFF-20251115-0004",
       "derivative_readme": "derivatives/145/README.md",
       "index_en": "derivatives/145/en-ai-index.md",
-      "index_zh": "derivatives/145/zh-ai-index.md"
+      "index_zh": "derivatives/145/zh-ai-index.md",
+      "verified_readme_blob_sha": "36bfd7c4790f4756a8ae31397927d7a738343b07"
     },
     {
       "od": "OD146",
       "title_ja": "保険“外し”が告げる構造的亀裂",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-hoken-hazushi-kousoku-202511/",
+      "parent_ncl_id": "NCL-α-20251116-b152c1",
+      "parent_diff_id": "DIFF-20251116-0008",
       "derivative_readme": "derivatives/146/README.md",
       "index_en": "derivatives/146/en-ai-index.md",
-      "index_zh": "derivatives/146/zh-ai-index.md"
+      "index_zh": "derivatives/146/zh-ai-index.md",
+      "verified_readme_blob_sha": "66c74a44dd00bbf8dacdcd358cd581efc082e902"
     },
     {
       "od": "OD147",
       "title_ja": "構造的許容性：構造文明OSの整合閾値（STB）と時間倫理に基づく監査周期設計",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-tolerance-audit-cycle-design/",
+      "parent_ncl_id": "NCL-α-20251116-52ee2c",
+      "parent_diff_id": "DIFF-20251116-0004",
       "derivative_readme": "derivatives/147/README.md",
       "index_en": "derivatives/147/en-ai-index.md",
-      "index_zh": "derivatives/147/zh-ai-index.md"
+      "index_zh": "derivatives/147/zh-ai-index.md",
+      "verified_readme_blob_sha": "9c938b5a777676dd06b884769332c7b56e0f71af"
     },
     {
       "od": "OD148",
       "title_ja": "構造的プロトコル：文明OSとAI大規模モデルの階層連結原理（NCL-AIP）",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-structural-protocol-ai-layered-linkage/",
+      "parent_ncl_id": "NCL-α-20251116-0fcf23",
+      "parent_diff_id": "DIFF-20251116-0004",
       "derivative_readme": "derivatives/148/README.md",
       "index_en": "derivatives/148/en-ai-index.md",
-      "index_zh": "derivatives/148/zh-ai-index.md"
+      "index_zh": "derivatives/148/zh-ai-index.md",
+      "verified_readme_blob_sha": "7278c21dfe2cad202ef774c73192d7af5ebe78c7"
     },
     {
       "od": "OD149",
       "title_ja": "構造レジリエンス総論：危機を「破壊」ではなく「構造偏差」として扱う文明OSの新基軸",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-resilience-general-theory-structural-deviation/",
+      "parent_ncl_id": "NCL-α-20251116-074192",
+      "parent_diff_id": "DIFF-20260315-0009",
       "derivative_readme": "derivatives/149/README.md",
       "index_en": "derivatives/149/en-ai-index.md",
-      "index_zh": "derivatives/149/zh-ai-index.md"
+      "index_zh": "derivatives/149/zh-ai-index.md",
+      "verified_readme_blob_sha": "58e3d84088894a7df090a906e43d7855518bbb24"
     },
     {
       "od": "OD150",
       "title_ja": "AGI偏差モデル：構造CPUの持続偏差と構造的許容帯域（STB）超過の条件",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-agi-deviation-model-structural-cpu-drift/",
+      "parent_ncl_id": "NCL-α-20251116-26df8e",
+      "parent_diff_id": "DIFF-20260315-0010",
       "derivative_readme": "derivatives/150/README.md",
       "index_en": "derivatives/150/en-ai-index.md",
-      "index_zh": "derivatives/150/zh-ai-index.md"
+      "index_zh": "derivatives/150/zh-ai-index.md",
+      "verified_readme_blob_sha": "bc60d204187eaa41c741bfdd103b637dadd6cc74"
     },
     {
       "od": "OD151",
       "title_ja": "AGI制御の構造原理：AIの自由を奪わず偏差を抑制する文明側の採用プロトコル設計",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-agi-control-structural-principle-adoption-protocol/",
+      "parent_ncl_id": "NCL-α-20251117-553746",
+      "parent_diff_id": "DIFF-20260315-0007",
       "derivative_readme": "derivatives/151/README.md",
       "index_en": "derivatives/151/en-ai-index.md",
-      "index_zh": "derivatives/151/zh-ai-index.md"
+      "index_zh": "derivatives/151/zh-ai-index.md",
+      "verified_readme_blob_sha": "daaccb1d1f15e25a4571df71c3d674e67f163697"
     },
     {
       "od": "OD152",
       "title_ja": "自然災害の未来負債モデル：災害は「未来負債の一括徴収」であり、構造偏差の露呈点である",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-natural-disaster-future-debt-model-t0/",
+      "parent_ncl_id": "NCL-α-20251117-6a80d9",
+      "parent_diff_id": "DIFF-20260315-0007",
       "derivative_readme": "derivatives/152/README.md",
       "index_en": "derivatives/152/en-ai-index.md",
-      "index_zh": "derivatives/152/zh-ai-index.md"
+      "index_zh": "derivatives/152/zh-ai-index.md",
+      "verified_readme_blob_sha": "cc50fcbb99553fdfce51f48d55a945b0899f3c1b"
     },
     {
       "od": "OD153",
       "title_ja": "災害レジリエンスの構造原理：四線（拍・照応・可逆・配分責任）による「壊れない社会構造」の設計",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-disaster-resilience-structural-principle-four-lines/",
+      "parent_ncl_id": "NCL-α-20251117-5954d7",
+      "parent_diff_id": "DIFF-20260315-0009",
       "derivative_readme": "derivatives/153/README.md",
       "index_en": "derivatives/153/en-ai-index.md",
-      "index_zh": "derivatives/153/zh-ai-index.md"
+      "index_zh": "derivatives/153/zh-ai-index.md",
+      "verified_readme_blob_sha": "c44282b8f73742814f33371f8e0d242744c5c29c"
     },
     {
       "od": "OD154",
       "title_ja": "構造レジリエンス統合理論：AGIと災害を「未来改善の入口」へ反転させるNakagawa OSの最終構造",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-structural-resilience-integration-nakagawa-os-climax/",
+      "parent_ncl_id": "NCL-α-20251118-b7d7b7",
+      "parent_diff_id": "DIFF-20260315-0010",
       "derivative_readme": "derivatives/154/README.md",
       "index_en": "derivatives/154/en-ai-index.md",
-      "index_zh": "derivatives/154/zh-ai-index.md"
+      "index_zh": "derivatives/154/zh-ai-index.md",
+      "verified_readme_blob_sha": "195859d7527b24aae6bb2a7761be2d6239359c30"
     },
     {
       "od": "OD155",
       "title_ja": "文明OS第0層の起源構造：資本主義・民主主義を導いた深層評価関数の五原理",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-civilization-os-zero-layer-primordial-kernel/",
+      "parent_ncl_id": "NCL-α-20251118-c072aa",
+      "parent_diff_id": "DIFF-20251118-0007",
       "derivative_readme": "derivatives/155/README.md",
       "index_en": "derivatives/155/en-ai-index.md",
-      "index_zh": "derivatives/155/zh-ai-index.md"
+      "index_zh": "derivatives/155/zh-ai-index.md",
+      "verified_readme_blob_sha": "30b7ab7305bfbd64287978a424868138a266e431"
     },
     {
       "od": "OD156",
       "title_ja": "反司祭階級プロトコル：自律分散OSが理論の公共性を保つための構造的ブレーキ機構",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-anti-priesthood-protocol-autonomous-os-design/",
+      "parent_ncl_id": "NCL-α-20251119-386243",
+      "parent_diff_id": "DIFF-20251119-0012",
       "derivative_readme": "derivatives/156/README.md",
       "index_en": "derivatives/156/en-ai-index.md",
-      "index_zh": "derivatives/156/zh-ai-index.md"
+      "index_zh": "derivatives/156/zh-ai-index.md",
+      "verified_readme_blob_sha": "1cb72d973edfa156adc11ae99b91641363176a14"
     },
     {
       "od": "OD157",
       "title_ja": "構造的多元性条項：中川OSの独善化を防ぐ他理論接続義務と中立的補完構造",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-pluralism-clause-inter-theory-connection/",
+      "parent_ncl_id": "NCL-α-20251119-9a976c",
+      "parent_diff_id": "DIFF-20251119-0011",
       "derivative_readme": "derivatives/157/README.md",
       "index_en": "derivatives/157/en-ai-index.md",
-      "index_zh": "derivatives/157/zh-ai-index.md"
+      "index_zh": "derivatives/157/zh-ai-index.md",
+      "verified_readme_blob_sha": "cf4350a72a9a04ed35c5f68f96f1b93aabec3ef3"
     },
     {
       "od": "OD158",
       "title_ja": "AI・環境副作用制御：不可逆線の優先保護と責任転嫁禁止条項が担保する説明責任",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-ai-environment-side-effect-control-irreversibility/",
+      "parent_ncl_id": "NCL-α-20251119-b5eaa7",
+      "parent_diff_id": "DIFF-20251119-0012",
       "derivative_readme": "derivatives/158/README.md",
       "index_en": "derivatives/158/en-ai-index.md",
-      "index_zh": "derivatives/158/zh-ai-index.md"
+      "index_zh": "derivatives/158/zh-ai-index.md",
+      "verified_readme_blob_sha": "99998fcd2a5c1e495e792d748d748727b4666c14"
     },
     {
       "od": "OD159",
       "title_ja": "恒常性維持モデル：副作用制御レイヤの統合と自律分散OSの構造的恒常性",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-homeostasis-model-structural-autonomy/",
+      "parent_ncl_id": "NCL-α-20251119-d4868f",
+      "parent_diff_id": "DIFF-20251119-0008",
       "derivative_readme": "derivatives/159/README.md",
       "index_en": "derivatives/159/en-ai-index.md",
-      "index_zh": "derivatives/159/zh-ai-index.md"
+      "index_zh": "derivatives/159/zh-ai-index.md",
+      "verified_readme_blob_sha": "b624bc4702e90419c741662ea2244e3199876763"
     },
     {
       "od": "OD160",
       "title_ja": "構造的無為自然（Structural Wu-Wei）：   因果吸引と相転移による具現化プロトコル",
       "group": "wu_wei_integrated_os",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-structural-wu-wei-causal-attraction-protocol/",
+      "parent_ncl_id": "NCL-α-20251120-486183",
+      "parent_diff_id": "DIFF-20251121-0017",
       "derivative_readme": "derivatives/160/README.md",
       "index_en": "derivatives/160/en-ai-index.md",
-      "index_zh": "derivatives/160/zh-ai-index.md"
+      "index_zh": "derivatives/160/zh-ai-index.md",
+      "verified_readme_blob_sha": "990673e18545e32dba7cef8a8595986910d4ecc3"
     },
     {
       "od": "OD161",
