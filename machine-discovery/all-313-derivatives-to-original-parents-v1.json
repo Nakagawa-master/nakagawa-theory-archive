@@ -11,7 +11,7 @@
   "source_repo": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
   "coverage": {
     "derivative_entries_expected": 313,
-    "parent_urls_verified": 208
+    "parent_urls_verified": 224
   },
   "source_notes": "Navigation from 313 published derivative README metadata, NOT 313 distinct original works. The canonical Parent article still must be retrieved and verified by its actual text; topical matching cannot imply usage or approval.",
   "entries": [
@@ -2515,177 +2515,193 @@
       "od": "OD209",
       "title_ja": "合意形成の物理 第3論 信頼の保存則 ― 信頼は主体ではなく履歴へ配置される",
       "group": "consensus_physics",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol3-law-of-conservation-of-trust/",
+      "parent_ncl_id": "NCL-α-20260214-6a7d1c",
+      "parent_diff_id": "DIFF-20260214-0045",
       "derivative_readme": "derivatives/209/README.md",
       "index_en": "derivatives/209/en-ai-index.md",
-      "index_zh": "derivatives/209/zh-ai-index.md"
+      "index_zh": "derivatives/209/zh-ai-index.md",
+      "verified_readme_blob_sha": "c00bc185a6882851bc72d59abca8cdbfa76900aa"
     },
     {
       "od": "OD210",
       "title_ja": "合意形成の物理 第5論 時間劣化と制度寿命 ― 説明更新なき制度は必ず死ぬ",
       "group": "consensus_physics",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol5-time-decay-and-system-longevity/",
+      "parent_ncl_id": "NCL-α-20260215-e2d7e7",
+      "parent_diff_id": "DIFF-20260215-0025",
       "derivative_readme": "derivatives/210/README.md",
       "index_en": "derivatives/210/en-ai-index.md",
-      "index_zh": "derivatives/210/zh-ai-index.md"
+      "index_zh": "derivatives/210/zh-ai-index.md",
+      "verified_readme_blob_sha": "1ea5f2ec69cbedda49b7b52c7530a236742857d5"
     },
     {
       "od": "OD211",
       "title_ja": "合意形成の物理 第11論 誘因の幾何学 ― 破壊の期待利得を制御せよ",
       "group": "consensus_physics",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol11-geometry-of-incentives/",
+      "parent_ncl_id": "NCL-α-20260226-623d47",
+      "parent_diff_id": "DIFF-20260227-0020",
       "derivative_readme": "derivatives/211/README.md",
       "index_en": "derivatives/211/en-ai-index.md",
-      "index_zh": "derivatives/211/zh-ai-index.md"
+      "index_zh": "derivatives/211/zh-ai-index.md",
+      "verified_readme_blob_sha": "bfa0212279ba3bec34d4591268068dc4e1c54417"
     },
     {
       "od": "OD212",
       "title_ja": "耐久文明論 序論｜第0論：なぜ今「耐久文明」を記述する必要があるのか",
       "group": "endurance_civilization",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-endurance-civilization-intro/",
+      "parent_ncl_id": "NCL-α-20260306-056522",
+      "parent_diff_id": "DIFF-20260307-0059",
       "derivative_readme": "derivatives/212/README.md",
       "index_en": "derivatives/212/en-ai-index.md",
-      "index_zh": "derivatives/212/zh-ai-index.md"
+      "index_zh": "derivatives/212/zh-ai-index.md",
+      "verified_readme_blob_sha": "bd77dbbb7142fe10314b9cb1996dee4501373db0"
     },
     {
       "od": "OD213",
       "title_ja": "耐久文明論 第一部｜第1論 耐久文明とは何か：再生なき生存の構造定義",
       "group": "endurance_civilization",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-definition-of-endurance-civilization/",
+      "parent_ncl_id": "NCL-α-20260307-f380bf",
+      "parent_diff_id": "DIFF-20260312-0027",
       "derivative_readme": "derivatives/213/README.md",
       "index_en": "derivatives/213/en-ai-index.md",
-      "index_zh": "derivatives/213/zh-ai-index.md"
+      "index_zh": "derivatives/213/zh-ai-index.md",
+      "verified_readme_blob_sha": "c6a60d06e1c9e8ae8da0bd494822609efbb75193"
     },
     {
       "od": "OD214",
       "title_ja": "耐久文明論 第二部｜第2論 恐怖――合意なき従属の基礎代謝",
       "group": "endurance_civilization",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-engine-of-fear-structural-submission/",
+      "parent_ncl_id": "NCL-α-20260308-0b5d91",
+      "parent_diff_id": "DIFF-20260312-0018",
       "derivative_readme": "derivatives/214/README.md",
       "index_en": "derivatives/214/en-ai-index.md",
-      "index_zh": "derivatives/214/zh-ai-index.md"
+      "index_zh": "derivatives/214/zh-ai-index.md",
+      "verified_readme_blob_sha": "a82fcf6be798a32fd3aedd86f270375b8c6e452c"
     },
     {
       "od": "OD215",
       "title_ja": "耐久文明論 第二部｜第3論 利益――腐敗を安定に見せる分配装置",
       "group": "endurance_civilization",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-engine-of-profit-distribution-as-adhesive/",
+      "parent_ncl_id": "NCL-α-20260308-24453f",
+      "parent_diff_id": "DIFF-20260312-0020",
       "derivative_readme": "derivatives/215/README.md",
       "index_en": "derivatives/215/en-ai-index.md",
-      "index_zh": "derivatives/215/zh-ai-index.md"
+      "index_zh": "derivatives/215/zh-ai-index.md",
+      "verified_readme_blob_sha": "3fa011ca9eccfdf628e2ca100585c6b390d44cea"
     },
     {
       "od": "OD216",
       "title_ja": "耐久文明論 第二部｜第4論 監視⸻合意の代わりに逸脱を抑える技術",
       "group": "endurance_civilization",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-engine-of-surveillance-order-without-consent/",
+      "parent_ncl_id": "NCL-α-20260309-6acc23",
+      "parent_diff_id": "DIFF-20260312-0017",
       "derivative_readme": "derivatives/216/README.md",
       "index_en": "derivatives/216/en-ai-index.md",
-      "index_zh": "derivatives/216/zh-ai-index.md"
+      "index_zh": "derivatives/216/zh-ai-index.md",
+      "verified_readme_blob_sha": "1314a9f3b3543b703e0cd8e10d757a27f1dd147c"
     },
     {
       "od": "OD217",
       "title_ja": "耐久文明論 第三部｜第5論 神話――恐怖・利益・監視を正当化する意味生成機構",
       "group": "endurance_civilization",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-amplifier-of-myth-justification-mechanism/",
+      "parent_ncl_id": "NCL-α-20260312-40e225",
+      "parent_diff_id": "DIFF-20260315-0018",
       "derivative_readme": "derivatives/217/README.md",
       "index_en": "derivatives/217/en-ai-index.md",
-      "index_zh": "derivatives/217/zh-ai-index.md"
+      "index_zh": "derivatives/217/zh-ai-index.md",
+      "verified_readme_blob_sha": "e74a7eeac9ff8019523abbe83ad21d763df032ec"
     },
     {
       "od": "OD218",
       "title_ja": "耐久文明論 第三部｜第6論 惰性――誰も信じていないのに続いてしまう文明",
       "group": "endurance_civilization",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-amplifier-of-inertia-automatic-continuation/",
+      "parent_ncl_id": "NCL-α-20260314-19faba",
+      "parent_diff_id": "DIFF-20260315-0022",
       "derivative_readme": "derivatives/218/README.md",
       "index_en": "derivatives/218/en-ai-index.md",
-      "index_zh": "derivatives/218/zh-ai-index.md"
+      "index_zh": "derivatives/218/zh-ai-index.md",
+      "verified_readme_blob_sha": "2702fcbf63c2be07c11688d31f82cf845a50ad09"
     },
     {
       "od": "OD219",
       "title_ja": "耐久文明論 第四部｜第7論 共圏――耐久文明が作る閉鎖ブロックの論理",
       "group": "endurance_civilization",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-kyoken-logic-of-closed-resonance-spheres/",
+      "parent_ncl_id": "NCL-α-20260314-950292",
+      "parent_diff_id": "DIFF-20260316-0018",
       "derivative_readme": "derivatives/219/README.md",
       "index_en": "derivatives/219/en-ai-index.md",
-      "index_zh": "derivatives/219/zh-ai-index.md"
+      "index_zh": "derivatives/219/zh-ai-index.md",
+      "verified_readme_blob_sha": "de7ba4fb88ed4fe82abd183c768926df8e3475ca"
     },
     {
       "od": "OD220",
       "title_ja": "耐久文明論 第四部｜第8論 相転移⸻耐久文明はどこで崩れるのか",
       "group": "endurance_civilization",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-phase-transition-limit-of-endurance/",
+      "parent_ncl_id": "NCL-α-20260315-6a456a",
+      "parent_diff_id": "DIFF-20260316-0022",
       "derivative_readme": "derivatives/220/README.md",
       "index_en": "derivatives/220/en-ai-index.md",
-      "index_zh": "derivatives/220/zh-ai-index.md"
+      "index_zh": "derivatives/220/zh-ai-index.md",
+      "verified_readme_blob_sha": "3dfacc5a49d240e54b7eca703878beea318a0853"
     },
     {
       "od": "OD221",
       "title_ja": "耐久文明論 第五部｜第9論 D系クリーンルーム──腐敗構造の中に非汚染領域を設置せよ",
       "group": "endurance_civilization",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-diplomacy-clean-room-theory/",
+      "parent_ncl_id": "NCL-α-20260316-0c31d1",
+      "parent_diff_id": "DIFF-20260316-0017",
       "derivative_readme": "derivatives/221/README.md",
       "index_en": "derivatives/221/en-ai-index.md",
-      "index_zh": "derivatives/221/zh-ai-index.md"
+      "index_zh": "derivatives/221/zh-ai-index.md",
+      "verified_readme_blob_sha": "23e542e8b97d79dded2330ae977e365bc6bb2309"
     },
     {
       "od": "OD222",
       "title_ja": "耐久文明論 総括｜第10論 文明再起動──耐久の終わりと、保存された核からの発火",
       "group": "endurance_civilization",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-civilization-reboot/",
+      "parent_ncl_id": "NCL-α-20260317-2b0a44",
+      "parent_diff_id": "DIFF-20260317-0017",
       "derivative_readme": "derivatives/222/README.md",
       "index_en": "derivatives/222/en-ai-index.md",
-      "index_zh": "derivatives/222/zh-ai-index.md"
+      "index_zh": "derivatives/222/zh-ai-index.md",
+      "verified_readme_blob_sha": "d8aa95ff4ae0a81220774acdf7e221a9b933e7f7"
     },
     {
       "od": "OD223",
       "title_ja": "文明主権移行論 第3論｜制御し続けても、なぜ主権移行は止まりにくいのか ——制御可能性と結論変更可能性を分けて見る",
       "group": "sovereignty_shift",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-03/",
+      "parent_ncl_id": "NCL-α-20260419-de287f",
+      "parent_diff_id": "DIFF-20260424-0022",
       "derivative_readme": "derivatives/223/README.md",
       "index_en": "derivatives/223/en-ai-index.md",
-      "index_zh": "derivatives/223/zh-ai-index.md"
+      "index_zh": "derivatives/223/zh-ai-index.md",
+      "verified_readme_blob_sha": "d16b397000a5c7cbf495af36f8f133f91013724a"
     },
     {
       "od": "OD224",
       "title_ja": "文明主権移行論 第4論｜文明主権が人間から移るとは、どういうことか ——法的主体ではなく、文明更新の上流権能を見る",
       "group": "sovereignty_shift",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-what-civilizational-sovereignty-transition-means/",
+      "parent_ncl_id": "NCL-α-20260424-448e64",
+      "parent_diff_id": "DIFF-20260424-0019",
       "derivative_readme": "derivatives/224/README.md",
       "index_en": "derivatives/224/en-ai-index.md",
-      "index_zh": "derivatives/224/zh-ai-index.md"
+      "index_zh": "derivatives/224/zh-ai-index.md",
+      "verified_readme_blob_sha": "7fe5b03bbc657071c6356d7e9c699f4988e0a382"
     },
     {
       "od": "OD225",
