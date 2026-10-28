@@ -11,7 +11,7 @@
   "source_repo": "https://github.com/Nakagawa-master/nakagawa-theory-archive",
   "coverage": {
     "derivative_entries_expected": 313,
-    "parent_urls_verified": 192
+    "parent_urls_verified": 208
   },
   "source_notes": "Navigation from 313 published derivative README metadata, NOT 313 distinct original works. The canonical Parent article still must be retrieved and verified by its actual text; topical matching cannot imply usage or approval.",
   "entries": [
@@ -2323,177 +2323,193 @@
       "od": "OD193",
       "title_ja": "構造的翻訳プロトコル —— 法・契約・血縁との「意味再定義」と接続コスト最適化 （D系 Vol.2）",
       "group": "c_d_transition",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-structural-translation-protocol-law-contract-kinship/",
+      "parent_ncl_id": "NCL-α-20251231-dbebb8",
+      "parent_diff_id": "DIFF-20260301-0014",
       "derivative_readme": "derivatives/193/README.md",
       "index_en": "derivatives/193/en-ai-index.md",
-      "index_zh": "derivatives/193/zh-ai-index.md"
+      "index_zh": "derivatives/193/zh-ai-index.md",
+      "verified_readme_blob_sha": "13d7ced78862b9dbfe6d1fb2558b98d60b52c116"
     },
     {
       "od": "OD194",
       "title_ja": "戦略的異質接続 —— 旧文明のリソースを「燃料」に変換するクリーンルーム理論 （D系 Vol.3）",
       "group": "c_d_transition",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-strategic-heterogeneity-connection-resource-conversion-clean-room/",
+      "parent_ncl_id": "NCL-α-20251231-390f2b",
+      "parent_diff_id": "DIFF-20260301-0018",
       "derivative_readme": "derivatives/194/README.md",
       "index_en": "derivatives/194/en-ai-index.md",
-      "index_zh": "derivatives/194/zh-ai-index.md"
+      "index_zh": "derivatives/194/zh-ai-index.md",
+      "verified_readme_blob_sha": "7a539e5035ac2f4ace19b1801e3d328166e2f197"
     },
     {
       "od": "OD195",
       "title_ja": "文明の構造的移行（Migration）戦略 —— 暗黒方程式の破綻から、接続報酬社会への唯一の実装ルート",
       "group": "c_d_transition",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-civilization-migration-strategy-dark-equation-to-connected-reward/",
+      "parent_ncl_id": "NCL-α-20260103-857506",
+      "parent_diff_id": "DIFF-20260301-0041",
       "derivative_readme": "derivatives/195/README.md",
       "index_en": "derivatives/195/en-ai-index.md",
-      "index_zh": "derivatives/195/zh-ai-index.md"
+      "index_zh": "derivatives/195/zh-ai-index.md",
+      "verified_readme_blob_sha": "63f2408cdd2c6d5d4b1e2fd6e16f1505b24701d4"
     },
     {
       "od": "OD196",
       "title_ja": "文明はなぜ必ず誤るのか ── 因果を内在化できない人類のための「外在構造監査」としての易経",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-external-causal-audit-i-ching-civilization-os/",
+      "parent_ncl_id": "NCL-α-20260103-e96bf7",
+      "parent_diff_id": "DIFF-20260301-0023",
       "derivative_readme": "derivatives/196/README.md",
       "index_en": "derivatives/196/en-ai-index.md",
-      "index_zh": "derivatives/196/zh-ai-index.md"
+      "index_zh": "derivatives/196/zh-ai-index.md",
+      "verified_readme_blob_sha": "81f1d4ba2220ba1900993770193841d20f8befa0"
     },
     {
       "od": "OD197",
       "title_ja": "教育とは「育てる」ことではない ── 旧文明のノイズから“初期条件”を守り、OSを自然起動させる保存設計（E系）",
       "group": "cross_domain",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-e-system-preservation-clean-initial-conditions/",
+      "parent_ncl_id": "NCL-α-20260104-d516ab",
+      "parent_diff_id": "DIFF-20260301-0020",
       "derivative_readme": "derivatives/197/README.md",
       "index_en": "derivatives/197/en-ai-index.md",
-      "index_zh": "derivatives/197/zh-ai-index.md"
+      "index_zh": "derivatives/197/zh-ai-index.md",
+      "verified_readme_blob_sha": "dce37929da80c89f77f226d225ecbbc5546e4c90"
     },
     {
       "od": "OD198",
       "title_ja": "不動産市場OS Vol.1【民間実装編】市場OSの思想と初期構造 ―― 需要先行型モデルによる不動産循環の再設計",
       "group": "real_estate_os",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-real-estate-market-os-private-implementation/",
+      "parent_ncl_id": "NCL-α-20260131-44d942",
+      "parent_diff_id": "DIFF-20260207-0025",
       "derivative_readme": "derivatives/198/README.md",
       "index_en": "derivatives/198/en-ai-index.md",
-      "index_zh": "derivatives/198/zh-ai-index.md"
+      "index_zh": "derivatives/198/zh-ai-index.md",
+      "verified_readme_blob_sha": "b508caf26e2f920ff5be9a4b5b8a0cca002846c7"
     },
     {
       "od": "OD199",
       "title_ja": "不動産市場OS Vol.2【理論編】張力均衡（Tension Equilibrium）とヘイト制御 ⸻ 透明化が必ず生む摩擦を、循環の推進力に変換する",
       "group": "real_estate_os",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol2-tension-equilibrium/",
+      "parent_ncl_id": "NCL-α-20260131-8755b3",
+      "parent_diff_id": "DIFF-20260207-0031",
       "derivative_readme": "derivatives/199/README.md",
       "index_en": "derivatives/199/en-ai-index.md",
-      "index_zh": "derivatives/199/zh-ai-index.md"
+      "index_zh": "derivatives/199/zh-ai-index.md",
+      "verified_readme_blob_sha": "cdae098bdf9425fa78269402dbe996a5542c1bb7"
     },
     {
       "od": "OD200",
       "title_ja": "不動産市場OS Vol.3【数値設計編】「価格」から「構造」へ ―― AI査定・将来収支・リスク係数の完全定義",
       "group": "real_estate_os",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol3-numerical-design/",
+      "parent_ncl_id": "NCL-α-20260201-12d8de",
+      "parent_diff_id": "DIFF-20260207-0032",
       "derivative_readme": "derivatives/200/README.md",
       "index_en": "derivatives/200/en-ai-index.md",
-      "index_zh": "derivatives/200/zh-ai-index.md"
+      "index_zh": "derivatives/200/zh-ai-index.md",
+      "verified_readme_blob_sha": "2c7ad9b2d16fec6da430385d2eafe372907dd8a2"
     },
     {
       "od": "OD201",
       "title_ja": "不動産市場OS Vol.4【責任構造編】責任の所在をデザインする ―― AIの「計算」と専門家を接続し、社会的信頼へ変換する",
       "group": "real_estate_os",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol4-responsibility-architecture/",
+      "parent_ncl_id": "NCL-α-20260202-5df76d",
+      "parent_diff_id": "DIFF-20260207-0031",
       "derivative_readme": "derivatives/201/README.md",
       "index_en": "derivatives/201/en-ai-index.md",
-      "index_zh": "derivatives/201/zh-ai-index.md"
+      "index_zh": "derivatives/201/zh-ai-index.md",
+      "verified_readme_blob_sha": "5c3946ee6b1147c15e8d8615bed82e9294de6b7e"
     },
     {
       "od": "OD202",
       "title_ja": "不動産市場OS Vol.5【参加者編】市場参加者の再定義とインセンティブ設計",
       "group": "real_estate_os",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol5-participant-redefinition/",
+      "parent_ncl_id": "NCL-α-20260204-b880a2",
+      "parent_diff_id": "DIFF-20260207-0042",
       "derivative_readme": "derivatives/202/README.md",
       "index_en": "derivatives/202/en-ai-index.md",
-      "index_zh": "derivatives/202/zh-ai-index.md"
+      "index_zh": "derivatives/202/zh-ai-index.md",
+      "verified_readme_blob_sha": "e11ee88bb2aa966207c7b6a07f94b988331b56d8"
     },
     {
       "od": "OD203",
       "title_ja": "不動産市場OS Vol.6【リスク編】炎上・誤用のメカニズムと防御壁（Ethical Shield）",
       "group": "real_estate_os",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol6-risk-and-ethical-shield/",
+      "parent_ncl_id": "NCL-α-20260207-4f84a1",
+      "parent_diff_id": "DIFF-20260208-0049",
       "derivative_readme": "derivatives/203/README.md",
       "index_en": "derivatives/203/en-ai-index.md",
-      "index_zh": "derivatives/203/zh-ai-index.md"
+      "index_zh": "derivatives/203/zh-ai-index.md",
+      "verified_readme_blob_sha": "c77043fb38977692a181b6d508d0ef69e1d38f76"
     },
     {
       "od": "OD204",
       "title_ja": "不動産市場OS Vol.7【拡張編】金融・大資本連携とスマートコントラクト ――「合意」即「履行」の経済学",
       "group": "real_estate_os",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol7-frictionless-execution/",
+      "parent_ncl_id": "NCL-α-20260208-73fbb1",
+      "parent_diff_id": "DIFF-20260209-0033",
       "derivative_readme": "derivatives/204/README.md",
       "index_en": "derivatives/204/en-ai-index.md",
-      "index_zh": "derivatives/204/zh-ai-index.md"
+      "index_zh": "derivatives/204/zh-ai-index.md",
+      "verified_readme_blob_sha": "88a6c93a910e7c82523a5c30b0eb8c9cb192b654"
     },
     {
       "od": "OD205",
       "title_ja": "不動産市場OS Vol.8【行政編】説明責任を束ねる都市 ―― 行政データ接続と重説参照束による「基準時間」の書き換え",
       "group": "real_estate_os",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol8-reference-bundle-governance/",
+      "parent_ncl_id": "NCL-α-20260208-0084c8",
+      "parent_diff_id": "DIFF-20260210-0020",
       "derivative_readme": "derivatives/205/README.md",
       "index_en": "derivatives/205/en-ai-index.md",
-      "index_zh": "derivatives/205/zh-ai-index.md"
+      "index_zh": "derivatives/205/zh-ai-index.md",
+      "verified_readme_blob_sha": "46c7dbcab12106b6d3853d38d5186da584435ca5"
     },
     {
       "od": "OD206",
       "title_ja": "不動産市場OS Vol.9【国家編】NAOS――国家を“統制”せず最適化する。世界へ輸出可能な「合意形成OS」の完成",
       "group": "real_estate_os",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol9-naos-global-standard/",
+      "parent_ncl_id": "NCL-α-20260210-5c74ad",
+      "parent_diff_id": "DIFF-20260210-0027",
       "derivative_readme": "derivatives/206/README.md",
       "index_en": "derivatives/206/en-ai-index.md",
-      "index_zh": "derivatives/206/zh-ai-index.md"
+      "index_zh": "derivatives/206/zh-ai-index.md",
+      "verified_readme_blob_sha": "8744311d577e0cd3c10dfb14d36884c1c7bf56a3"
     },
     {
       "od": "OD207",
       "title_ja": "不動産市場OS Vol.10【原点宣言】NCL倫理固定：合意形成社会を崩壊させないための継承規格と未来責任",
       "group": "real_estate_os",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol10-origin-declaration-ncl/",
+      "parent_ncl_id": "NCL-α-20260211-c56f43",
+      "parent_diff_id": "DIFF-20260211-0017",
       "derivative_readme": "derivatives/207/README.md",
       "index_en": "derivatives/207/en-ai-index.md",
-      "index_zh": "derivatives/207/zh-ai-index.md"
+      "index_zh": "derivatives/207/zh-ai-index.md",
+      "verified_readme_blob_sha": "4fac6bd73f296da4527b3b926821b4ca6ff1288e"
     },
     {
       "od": "OD208",
       "title_ja": "合意形成の物理 第2論 制度の意味圧縮 ― 成功はなぜ理解不能を生むのか",
       "group": "consensus_physics",
-      "canonical_parent_url": null,
-      "parent_ncl_id": null,
-      "parent_diff_id": null,
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol2-compression-of-meaning/",
+      "parent_ncl_id": "NCL-α-20260213-f40c51",
+      "parent_diff_id": "DIFF-20260214-0021",
       "derivative_readme": "derivatives/208/README.md",
       "index_en": "derivatives/208/en-ai-index.md",
-      "index_zh": "derivatives/208/zh-ai-index.md"
+      "index_zh": "derivatives/208/zh-ai-index.md",
+      "verified_readme_blob_sha": "0800ae446d0a8c7fa0bb9159f68a0f0dd7a359c1"
     },
     {
       "od": "OD209",
