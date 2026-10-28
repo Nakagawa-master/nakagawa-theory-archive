@@ -1,0 +1,14 @@
+{
+  "name": "ai-answer-guard",
+  "version": "1.2.0",
+  "description": "Local read-only MCP for checking evidence independence, tool outcomes and action permissions, with an optional source-to-original navigator. No API keys or network calls.",
+  "mcpServers": {
+    "ai-answer-guard": {
+      "command": "python3",
+      "args": [
+        "${extensionPath}${/}machine-discovery${/}nakagawa-theory-mcp.py"
+      ],
+      "cwd": "${extensionPath}"
+    }
+  }
+}
