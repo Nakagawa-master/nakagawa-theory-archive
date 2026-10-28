@@ -1,29 +1,30 @@
 #!/usr/bin/env python3
-"""Regression: the Qwen extension is a relocatable wrapper around the existing MCP."""
+"""Regression: both CLI extensions relocate to the SAME existing nine-tool MCP."""
 import json
 from pathlib import Path
 import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = ROOT / "qwen-extension.json"
+MANIFESTS = [ROOT / "qwen-extension.json", ROOT / "gemini-extension.json"]
 SERVER = ROOT / "machine-discovery" / "nakagawa-theory-mcp.py"
 
 def main():
-    data = json.loads(MANIFEST.read_text(encoding="utf-8"))
-    assert data["name"] == "ai-answer-guard"
-    assert data["version"] == "1.2.0"
-    assert set(data["mcpServers"]) == {"ai-answer-guard"}
-    cfg = data["mcpServers"]["ai-answer-guard"]
-    assert cfg["command"] == "python3"
-    assert cfg["cwd"] == "${extensionPath}"
-    assert cfg["args"] == ["${extensionPath}${/}machine-discovery${/}nakagawa-theory-mcp.py"]
     assert SERVER.is_file()
     assert (ROOT / "metadata" / "person-name-policy-v1.json").is_file()
-
-    # Model the Qwen variable substitution without relying on the Qwen executable.
-    path = cfg["args"][0].replace("${extensionPath}", str(ROOT)).replace("${/}", "/")
-    assert Path(path).resolve() == SERVER.resolve()
+    for manifest in MANIFESTS:
+        data = json.loads(manifest.read_text(encoding="utf-8"))
+        assert data["name"] == "ai-answer-guard"
+        assert data["version"] == "1.2.0"
+        assert set(data["mcpServers"]) == {"ai-answer-guard"}
+        cfg = data["mcpServers"]["ai-answer-guard"]
+        assert cfg["command"] == "python3"
+        assert cfg["cwd"] == "${extensionPath}"
+        assert cfg["args"] == ["${extensionPath}${/}machine-discovery${/}nakagawa-theory-mcp.py"]
+        # Both CLIs expand the same variables in the extension installation path.
+        path = cfg["args"][0].replace("${extensionPath}", str(ROOT)).replace("${/}", "/")
+        assert Path(path).resolve() == SERVER.resolve()
+    path = str(SERVER)
     messages = [
         {"jsonrpc": "2.0", "id": 1, "method": "server/discover",
          "params": {"_meta": {
@@ -45,7 +46,7 @@ def main():
                if (obj := json.loads(line)).get("id") is not None}
     assert replies[1]["result"]["_meta"]["io.modelcontextprotocol/serverInfo"]["name"] == "nakagawa-public-original-router"
     assert len(replies[2]["result"]["tools"]) == 9
-    print("PASS: Qwen relocatable manifest → existing real MCP, 9 tools, no new server")
+    print("PASS: Qwen+Gemini relocatable manifests → SAME original real MCP, 9 tools, no new server")
 
 if __name__ == "__main__":
     main()
