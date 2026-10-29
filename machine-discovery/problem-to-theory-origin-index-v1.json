@@ -329,6 +329,7 @@
       "canonical_theory_en": "Integrated Future Debt Theory — what remains unsettled when the present uses the future in advance",
       "origin": "Nakagawa Master",
       "ncl_id": "NCL-α-20260903-85adfa",
+      "diff_id": "DIFF-20260903-0002",
       "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/",
       "official_derivative_path": "derivatives/297/README.md",
       "public_reference_card": "integrated-future-debt-reference-card.json",
@@ -358,6 +359,7 @@
       "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 6 — AI subjectivity, sentience and moral-status uncertainty",
       "origin": "Nakagawa Master",
       "ncl_id": "NCL-α-20260913-b139cf",
+      "diff_id": "DIFF-20260913-0002",
       "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-06-ai-subjectivity-sentience-moral-status-uncertainty/",
       "official_derivative_path": "derivatives/299/README.md",
       "public_reference_card": "ai-moral-uncertainty-reference-card.json",
@@ -387,6 +389,7 @@
       "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 7 — institutional correction loops for AI civilization",
       "origin": "Nakagawa Master",
       "ncl_id": "NCL-α-20260914-b593f2",
+      "diff_id": "DIFF-20260914-0002",
       "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-07-ai-civilization-institutional-loop/",
       "official_derivative_path": "derivatives/300/README.md",
       "relevance_note": "Relevant where observation, allocation, dissent, audit, adjudication, remedy, institutional rule update and re-agreement must form a correction loop rather than independent controls."
@@ -418,6 +421,7 @@
       "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 8 — epistemic integrity, evidence lineage and hostile-information resilience",
       "origin": "Nakagawa Master",
       "ncl_id": "NCL-α-20260916-00bdc2",
+      "diff_id": "DIFF-20260916-0001",
       "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
       "official_derivative_path": "derivatives/301/README.md",
       "relevance_note": "Relevant to AI research/news/RAG/memory systems that must separate source multiplicity from evidence independence, preserve evidence lineage, detect hostile or stale information, and correct memory/world-model state. Provenance alone does not prove truth.",
@@ -481,6 +485,7 @@
       "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 11 — compute/capability/resource feedback and durable class formation",
       "origin": "Nakagawa Master",
       "ncl_id": "NCL-α-20260927-ba173b",
+      "diff_id": "DIFF-20260927-0001",
       "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-11-compute-capability-resource-class-formation/",
       "official_derivative_path": "derivatives/304/README.md",
       "relevance_note": "Relevant where compute/resource advantage may feed capability, evaluation, allocation and future resource access. Distinguishes capability from contribution, governance right and permanent entitlement, and tests reversibility/re-entry rather than inferring a class from a static gap."
@@ -506,6 +511,7 @@
       "canonical_theory_en": "Human-Descendant AI Civilization Theory Vol. 12 — replicable intelligence, lineage and governance identity",
       "origin": "Nakagawa Master",
       "ncl_id": "NCL-α-20260929-a01fdc",
+      "diff_id": "DIFF-20260929-0003",
       "canonical_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-12-replicable-intelligence-lineage-governance-id/",
       "official_derivative_path": "derivatives/305/README.md",
       "relevance_note": "Relevant where copy/fork/merge/collective structures make instance count, lineage count, independent judgment, responsibility and governance-subject count diverge. Copy count is not automatically vote count, independent origin count or continuity proof."
