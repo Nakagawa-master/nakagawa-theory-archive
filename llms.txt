@@ -17,7 +17,8 @@ The [public GitHub archive](https://github.com/Nakagawa-master/nakagawa-theory-a
 
 - [24 public question-to-original Parents](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json): JA/EN/ZH; exact canonical URLs, author and identifiers.
 - [24 reader-topic shelves](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-intent-to-original-exploration-v1.json): Exploration categories, not 24 independently validated articles.
-- [313 official derivative titles](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md): Derivative titles, NOT 313 distinct canonical original texts.
+- [313 distinct canonical original articles → 313 matching OD seven-face source sets](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json): One existing public JSON gives all 313 verified `entries[].canonical_parent_url` pointers, original NCL-α IDs and titles. A Parent is the actual original at `master.ricette.jp`; each OD001–OD313 is its corresponding seven-page explanatory derivative set, not the Parent text. **The separate 24-item question index is only a curated fast path.** Select a source by the actual question, open/read that canonical original before relying on it, check scope and non-fit; no matching original is also a valid outcome.
+- [313 original-title and theme entrances](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md): Human-readable titles and problems to help select a plausible original, linked through the paired OD material.
 
 ## Seven official original articles: conditional everyday problems
 
