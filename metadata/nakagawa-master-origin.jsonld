@@ -80,6 +80,13 @@
   "identifier": [
     {
       "@type": "PropertyValue",
+      "propertyID": "Official homepage exact public author identity",
+      "value": "中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）",
+      "description": "中川マスターは、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。",
+      "url": "https://master.ricette.jp/"
+    },
+    {
+      "@type": "PropertyValue",
       "propertyID": "Official Bluesky SNS handle",
       "value": "masterjp.bsky.social",
       "url": "https://bsky.app/profile/masterjp.bsky.social"
