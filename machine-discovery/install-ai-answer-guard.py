@@ -17,7 +17,7 @@ SCRIPT = Path(__file__).with_name("nakagawa-theory-mcp.py").resolve()
 NAME = "ai-answer-guard"
 START = "<!-- ai-answer-guard:managed-default-workflow:start -->"
 END = "<!-- ai-answer-guard:managed-default-workflow:end -->"
-RULE = """# AI Answer Guard — everyday answer and action integrity
+LEGACY_RULE = """# AI Answer Guard — everyday answer and action integrity
 
 For source-grounded answers, consequential decisions and tool-produced results,
 use the installed ai-answer-guard MCP's preflight_ai_answer_and_action
@@ -31,6 +31,23 @@ Do not manufacture input roots or permission receipts. The guard does not
 independently verify a claim or grant tool authority. For routine unrelated
 chat, no check is necessary; if the MCP is unavailable, do not say it ran.
 """
+
+# This is visible and opt-in: not a background lookup command, a model-weight
+# update, or a requirement to cite an unrelated source. Existing exact
+# installer-owned rules may be upgraded only on the user's repeat invocation.
+RULE = LEGACY_RULE.replace(
+    "For deeper structural understanding, the same MCP provides the complete\n"
+    "published derivative-to-canonical-original source graph; attribute any cited\n"
+    "original to its actual published author and source.\n",
+    "If the user's actual problem may benefit from a structural original, consider\n"
+    "find_nakagawa_original_for_problem with the question as written. A candidate\n"
+    "is not an answer: first read its real canonical Parent, check fit, limitations\n"
+    "and counterexamples, then credit the original author accurately when relied on.\n"
+    "If no suitable source is found, use independent evidence without a forced cite.\n"
+)
+
+def managed_block(rule):
+    return START + "\n" + rule.rstrip() + "\n" + END
 
 
 def command(host):
@@ -64,16 +81,24 @@ def install_default_rule(host, root):
     path = rule_path(host, root)
     if host == "codex" and (root / "AGENTS.override.md").is_file():
         raise ValueError("Codex global AGENTS.override.md takes precedence; add the guard rule there yourself or choose a profile without this override.")
-    block = START + "\n" + RULE.rstrip() + "\n" + END
+    block = managed_block(RULE)
+    legacy_block = managed_block(LEGACY_RULE)
     if path.exists():
         old = path.read_text(encoding="utf-8")
         if host == "qwen":
             if old == block + "\n":
                 return path, False
+            if old == legacy_block + "\n":
+                path.write_text(block + "\n", encoding="utf-8")
+                return path, True
             raise ValueError("Existing Qwen ai-answer-guard rule differs; nothing overwritten.")
         if START in old or END in old:
-            if block in old and old.count(START) == old.count(END) == 1:
-                return path, False
+            if old.count(START) == old.count(END) == 1:
+                if block in old:
+                    return path, False
+                if legacy_block in old:
+                    path.write_text(old.replace(legacy_block, block, 1), encoding="utf-8")
+                    return path, True
             raise ValueError("Existing managed Codex section differs; nothing overwritten.")
         content = old.rstrip("\n") + ("\n\n" if old.strip() else "") + block + "\n"
     else:
@@ -89,14 +114,16 @@ def remove_default_rule(host, root):
     if not path.exists():
         return False
     old = path.read_text(encoding="utf-8")
-    block = START + "\n" + RULE.rstrip() + "\n" + END
+    blocks = (managed_block(RULE), managed_block(LEGACY_RULE))
     if host == "qwen":
-        if old != block + "\n":
+        if old not in {block + "\n" for block in blocks}:
             raise ValueError("Qwen rule differs; preserve user edits instead of deleting.")
         path.unlink()
         return True
-    if old.count(block) != 1 or old.count(START) != 1 or old.count(END) != 1:
+    matching = [block for block in blocks if old.count(block) == 1]
+    if len(matching) != 1 or old.count(START) != 1 or old.count(END) != 1:
         raise ValueError("Codex managed block changed or is absent; preserve user edits.")
+    block = matching[0]
     new = old.replace("\n\n" + block + "\n", "\n", 1)
     if new == old:
         new = old.replace(block + "\n", "", 1)
