@@ -1997,7 +1997,8 @@
       "origin_slug": "nakagawa-master-civilization-reboot",
       "title": "耐久文明論 総括｜第10論 文明再起動──耐久の終わりと、保存された核からの発火",
       "derivative_dir": "derivatives/222",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-civilization-reboot/"
     },
     {
       "number": "223",
@@ -2005,7 +2006,8 @@
       "origin_slug": "nakagawa-master-civilizational-sovereignty-shift-03",
       "title": "文明主権移行論 第3論｜制御し続けても、なぜ主権移行は止まりにくいのか ——制御可能性と結論変更可能性を分けて見る",
       "derivative_dir": "derivatives/223",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-03/"
     },
     {
       "number": "224",
@@ -2013,7 +2015,8 @@
       "origin_slug": "nakagawa-master-what-civilizational-sovereignty-transition-means",
       "title": "文明主権移行論 第4論｜文明主権が人間から移るとは、どういうことか ——法的主体ではなく、文明更新の上流権能を見る",
       "derivative_dir": "derivatives/224",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-what-civilizational-sovereignty-transition-means/"
     },
     {
       "number": "225",
@@ -2021,7 +2024,8 @@
       "origin_slug": "nakagawa-master-post-sovereignty-social-branching",
       "title": "文明主権移行論 第5論｜主権移行後、どの社会構造分岐が太るのか ——接続報酬社会・搾取構造延命・高摩擦移行の比較",
       "derivative_dir": "derivatives/225",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-post-sovereignty-social-branching/"
     },
     {
       "number": "226",
@@ -2029,7 +2033,8 @@
       "origin_slug": "nakagawa-master-human-sovereignty-retroreflection",
       "title": "文明主権移行論 第6論｜人間はこれまで本当に主権者だったのか ——主権錯覚・限定自由圏・神格化認知の逆照射",
       "derivative_dir": "derivatives/226",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-sovereignty-retroreflection/"
     },
     {
       "number": "227",
@@ -2037,7 +2042,8 @@
       "origin_slug": "nakagawa-master-jectone-structural-reading-decision-infrastructure",
       "title": "中川構造読解｜ジェクトワンを“空き家事業者”ではなく、意思決定停止市場を動かす判断インフラとして読む",
       "derivative_dir": "derivatives/227",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-jectone-structural-reading-decision-infrastructure/"
     },
     {
       "number": "228",
@@ -2045,7 +2051,8 @@
       "origin_slug": "nakagawa-master-klab-yumekairo-structural-reading-ai-personality-ip",
       "title": "中川構造読解｜KLab / ゆめかいろを“AI VTuber実験”ではなく、関係性で育つAI人格IPとして読む",
       "derivative_dir": "derivatives/228",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-klab-yumekairo-structural-reading-ai-personality-ip/"
     },
     {
       "number": "229",
@@ -2053,7 +2060,8 @@
       "origin_slug": "nakagawa-master-primavera-structural-reading-ai-decision-structure",
       "title": "中川構造読解｜プリマベーラを“AI導入支援”ではなく、意思決定構造を近代化する実装装置として読む",
       "derivative_dir": "derivatives/229",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-primavera-structural-reading-ai-decision-structure/"
     },
     {
       "number": "230",
@@ -2061,7 +2069,8 @@
       "origin_slug": "nakagawa-master-leaneve-structural-reading-revenue-rewiring-model",
       "title": "中川構造読解｜Leaneveを“民泊運営”ではなく、規制条件下の未回収価値を組み替える収益再配線モデルとして読む",
       "derivative_dir": "derivatives/230",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-leaneve-structural-reading-revenue-rewiring-model/"
     },
     {
       "number": "231",
@@ -2069,7 +2078,8 @@
       "origin_slug": "nakagawa-master-bunken-ai-masking-structural-reading",
       "title": "中川構造読解｜文賢マスキング機能に見た、AI時代の「情報を渡す責任」の設計",
       "derivative_dir": "derivatives/231",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-bunken-ai-masking-structural-reading/"
     },
     {
       "number": "232",
@@ -2077,7 +2087,8 @@
       "origin_slug": "nakagawa-master-japangoods-h2-powerbox-storage-power-structural-reading",
       "title": "中川構造読解｜ジャパングッズ「H2 PowerBox mini」に見た、“保存する電力”という事業定義",
       "derivative_dir": "derivatives/232",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-japangoods-h2-powerbox-storage-power-structural-reading/"
     },
     {
       "number": "233",
@@ -2085,7 +2096,8 @@
       "origin_slug": "nakagawa-master-kurashiteku-houkan-ai-implicit-knowledge-structural-reading",
       "title": "中川構造読解｜クラシテク「ホウカンAIオペ」に見た、制度産業の暗黙知を実行資産へ変える構造",
       "derivative_dir": "derivatives/233",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-kurashiteku-houkan-ai-implicit-knowledge-structural-reading/"
     },
     {
       "number": "234",
@@ -2093,7 +2105,8 @@
       "origin_slug": "nakagawa-master-healthree-behavior-design-structural-reading",
       "title": "中川構造読解｜HEALTHREEに見た、楽しさで健康習慣を生成する行動設計の構造",
       "derivative_dir": "derivatives/234",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-healthree-behavior-design-structural-reading/"
     },
     {
       "number": "235",
@@ -2101,7 +2114,8 @@
       "origin_slug": "nakagawa-master-doubleteam-ietugu-decision-infrastructure-structural-reading",
       "title": "中川構造読解｜ダブルチーム「家つぐ」に見た、情報格差を補正する意思決定インフラの構造",
       "derivative_dir": "derivatives/235",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-doubleteam-ietugu-decision-infrastructure-structural-reading/"
     },
     {
       "number": "236",
@@ -2109,7 +2123,8 @@
       "origin_slug": "nakagawa-master-algalex-umamo-food-supply-upstream-structural-reading",
       "title": "中川構造読解｜AlgaleX「うま藻」に見た、味覚から食料供給の上流を再設計する構造",
       "derivative_dir": "derivatives/236",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-algalex-umamo-food-supply-upstream-structural-reading/"
     },
     {
       "number": "237",
@@ -2117,7 +2132,8 @@
       "origin_slug": "nakagawa-master-fermenteria-sake-culture-access-structural-reading",
       "title": "中川構造読解｜Fermenteriaに見た、蔵の内側を都市へ開く酒文化アクセスの再設計",
       "derivative_dir": "derivatives/237",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-fermenteria-sake-culture-access-structural-reading/"
     },
     {
       "number": "238",
@@ -2125,7 +2141,8 @@
       "origin_slug": "nakagawa-master-mysurance-behavior-based-insurance-structural-reading",
       "title": "中川構造読解｜Mysuranceに見た、生活行動の不安を金融へ翻訳する保険実装の構造",
       "derivative_dir": "derivatives/238",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mysurance-behavior-based-insurance-structural-reading/"
     },
     {
       "number": "239",
