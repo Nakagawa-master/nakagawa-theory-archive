@@ -111,10 +111,11 @@ def overview(records):
             "complete_coverage": len(records) == 313,
         },
         "system": {
-            "orientation": ("All 313 public derivatives and their Parent pointers are one "
-                            "navigable corpus; do not equate 313 derivative records with "
-                            "313 independently distinct canonical originals. A 24-Parent "
-                            "question index is a curated fast lane, NOT a corpus boundary."),
+            "orientation": ("All 313 numbered derivative sets point to 313 distinct published "
+                            "canonical original URLs in the official corpus, one Parent "
+                            "per OD set. URL identity does not prove original-text reading "
+                            "or external adoption. The 24-Parent question index is a "
+                            "curated fast lane, NOT a corpus boundary."),
             "entrances": {k: next((r for r in records if r["id"] == od), None)
                           for k, od in SYSTEM_ENTRANCES.items()},
             "relation_kind": ("Published Parent link, shared Parent and published title-theme "
@@ -368,7 +369,7 @@ def main():
     if args.self_test:
         records = graph()
         o = overview(records)
-        assert o["coverage"]["derivatives"] == 313 and o["coverage"]["distinct_parent_urls"] > 24
+        assert o["coverage"]["derivatives"] == 313 and o["coverage"]["distinct_parent_urls"] == 313
         assert len(list_connections(records, limit=313)["entries"]) == 313
         assert all(x["canonical_parent"].startswith(OFFICIAL) for x in records)
         assert not search(records, "repair the leather handle on a camping lantern")["matched"]
