@@ -27,7 +27,7 @@ The [public GitHub archive](https://github.com/Nakagawa-master/nakagawa-theory-a
 - [Why does the same failure return? / 同じ失敗が繰り返される](https://master.ricette.jp/society/nakagawa-master-origin-of-structural-friction/): Trace roles, information and failed handoffs.
 - [Cheap now, costly to change later? / 今の安さが将来の自由を失わせないか](https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/): Compare maintenance, migration and exit costs.
 - [Did a useful summary lose its origin? / 便利な要約で作者が消えないか](https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/): Keep author/source through AI summarization.
-- [Does earlier consent still apply? / 昔の合意は今も有効？](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/): Recheck past consent against present authority.
+- [Does earlier consent still apply? / 昔の合意は今も有効？](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/): Recheck past consent against present authority. [OD075 source explanation for temporary original outages](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/075/README.md) — official author-published *derivative*, identifying canonical Parent, original post ID 324, NCL-ID `NCL-α-20251102-e48c90` and Diff-ID `DIFF-20251102-0001`; it explains causal/relationship/re-agreement memory, current-vs-historical authority and negative cases. An offline original remains unread, and this author-published fallback does not independently verify the original's content or prove third-party adoption.
 
 ## Seventeen further official originals: society and AI
 
