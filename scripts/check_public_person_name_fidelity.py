@@ -21,7 +21,7 @@ CANONICAL_ID = "https://master.ricette.jp/#nakagawa-master"
 LATIN = "Keisuke Nakagawa"
 HOMEPAGE_INTRO = "中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）"
 HOMEPAGE_FOOTER = "中川マスターは、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。"
-HOMEPAGE_ANSWER = HOMEPAGE_INTRO + "\\n" + HOMEPAGE_FOOTER
+HOMEPAGE_ANSWER = HOMEPAGE_INTRO + "\n" + HOMEPAGE_FOOTER
 ALIASES = {"マスター", "MasterJP"}
 PEN = {"Nakagawa Master", "中川マスター"}
 
@@ -179,7 +179,7 @@ def main():
         assert check(p, sp, person, scholarly, index, removed_policy_link)
     print("PASS: official Latin personal name, pen/context aliases, 3-language safe answers; "
           "Person + scholarly + AI route + all AI entrances + standalone Skill; "
-          "8 negative mutation controls")
+          "10 negative mutation controls")
     return 0
 
 
