@@ -6,7 +6,7 @@
 
 ## 自分の問いから原典を探す（MCP導入不要）
 
-**初めての方へ：** [自分の疑問から試す](human-translation/SEARCH_FROM_A_REAL_QUESTION.md) ／ [公式アーカイブに蓄積された原典記事全体から探す](https://master.ricette.jp/) ／ [別の人が実際に変えた仕事を見る](REAL_WORLD_IMPACT.md) ／ [原典と著者を知る](ABOUT_NAKAGAWA_MASTER.md)。
+**初めての方へ：** [自分の疑問から試す](human-translation/SEARCH_FROM_A_REAL_QUESTION.md) ／ [質問から24原典を照合し、任意で313原典の題名も探す](machine-discovery/originals-browser-finder.html) ／ [公式アーカイブに蓄積された原典記事全体から探す](https://master.ricette.jp/) ／ [別の人が実際に変えた仕事を見る](REAL_WORLD_IMPACT.md) ／ [原典と著者を知る](ABOUT_NAKAGAWA_MASTER.md)。
 
 **普通のAIで試せる30秒の例:** AIが5つの出典を示しても、5つとも同じ発表の転載なら、独立した裏付けが5つあるとは限りません。[「本当の証拠の起点はいくつ？」をいつものAIで試す（ChatGPTで開く／他のAIへ相談文をコピー）](human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md#1-複数の説明は別々の証拠)と、[中川マスターの公式原典『第8論・認識の整合性』](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)へ進めます。元の[検証例と議論 #658](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/658)も残しています。自分の調べ物で確かめられます。内容が合わなければ、別の説明や方法と比べてください。
 
