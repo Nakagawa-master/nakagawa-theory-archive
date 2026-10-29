@@ -26,6 +26,9 @@ def main():
             s = path.read_text(encoding="utf-8")
             assert module.START in s and module.END in s
             assert "preflight_ai_answer_and_action" in s
+            assert "find_nakagawa_original_for_problem" in s
+            assert "first read its real canonical Parent" in s
+            assert "If no suitable source is found" in s
             assert "list_all_313" not in s  # no massive always-on prompt payload
             if host == "codex":
                 assert s.startswith("# My existing global instructions\n")
@@ -35,6 +38,30 @@ def main():
             assert module.remove_default_rule(host, home)
             if host == "codex":
                 assert path.read_text(encoding="utf-8") == "# My existing global instructions\n"
+            else:
+                assert not path.exists()
+        # Upgrading an unchanged v1.2.0 managed rule must be reversible.
+        for host in ("qwen", "codex"):
+            old_home = root / (host + "-legacy")
+            path = module.rule_path(host, old_home)
+            path.parent.mkdir(parents=True, exist_ok=True)
+            prefix = "# Existing user instructions\n\n" if host == "codex" else ""
+            old_block = module.managed_block(module.LEGACY_RULE)
+            path.write_text(prefix + old_block + "\n", encoding="utf-8")
+            updated, changed = module.install_default_rule(host, old_home)
+            assert changed and updated == path
+            new_text = path.read_text(encoding="utf-8")
+            assert new_text == prefix + module.managed_block(module.RULE) + "\n"
+            assert module.remove_default_rule(host, old_home)
+            if host == "codex":
+                assert path.read_text(encoding="utf-8") == "# Existing user instructions\n"
+            else:
+                assert not path.exists()
+            # Removing an exact previous rule still works without upgrading.
+            path.write_text(prefix + old_block + "\n", encoding="utf-8")
+            assert module.remove_default_rule(host, old_home)
+            if host == "codex":
+                assert path.read_text(encoding="utf-8") == "# Existing user instructions\n"
             else:
                 assert not path.exists()
         qwen = root / "qwen-forked"
