@@ -222,7 +222,7 @@ def search(records, question, limit=12):
         id_ = f"OD{int(match_id[1]):03d}"
         hits = [r for r in records if r["id"] == id_]
         return {"question": question, "matched": hits, "no_fit": not hits,
-                "matching_method": "EXACT_PUBLISHED_DERIVATIVE_ID", "author": IDENTITY,
+                "matching_method": "EXACT_PUBLISHED_DERIVATIVE_ID", "lexical_scores": [100] if hits else [], "author": IDENTITY,
                 "source_read_required": True}
     # Preserve JA published-title search and the seven precisely attested
     # English source cues. Previously the remaining ~306 entries were almost
@@ -259,6 +259,7 @@ def search(records, question, limit=12):
     scored.sort(key=lambda a: (-a[0], a[1]["id"]))
     return {
         "question": question, "matched": [r for _, r in scored[:limit]],
+        "lexical_scores": [score for score, _ in scored[:limit]],
         "no_fit": not scored, "total_candidates": len(scored),
         "matching_method": "PUBLIC_JA_TITLE_EXPLICIT_EN_CUES_AND_313_PUBLISHED_EN_ZH_DERIVATIVE_SUMMARIES_HEURISTIC",
         "source_read_required": True, "author": IDENTITY,
