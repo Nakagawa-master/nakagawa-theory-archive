@@ -54,17 +54,20 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:26px}
 </select>
 <div class="buttons">
 <button type="button" id="find">関連する原典を探す</button>
+<button type="button" class="secondary" id="find-all-titles">公開313原典の題名も照合する（オンライン・任意）</button>
 <button type="button" class="secondary" data-example="ja">日本語の例</button>
 <button type="button" class="secondary" data-example="en">English example</button>
 <button type="button" class="secondary" data-example="zh">中文示例</button>
 <button type="button" class="secondary" data-example="none">一致しない例</button>
 </div>
-<p class="small">質問はこのブラウザの中だけで照合します。外部API・ログイン・AIアカウントへの接続は不要です。原典リンクを開くと公式サイトへ移動します。</p>
+<p class="small">通常の24件照合はオフラインで動き、入力した質問は外部へ送信されません。「313原典の題名」ボタンを選んだ場合のみ、GitHubの公開済み静的対応表を読み込みます（GitHubへの通常のアクセス通信が発生します）。質問文はその通信に付けません。ログインやAIアカウント連携は不要です。</p>
 </section>
 <section class="panel" aria-labelledby="results-heading">
 <h2 id="results-heading">候補原典と次の一手</h2>
 <div id="status" class="status" role="status" aria-live="polite">まず質問を入力するか、例を選んで検索してください。</div>
 <div id="results"></div>
+<div id="all-title-status" class="small" role="status" aria-live="polite">ほかの313原典の題名も確認する場合は、上の任意ボタンを選んでください。題名の一致は理論の適合判定ではありません。</div>
+<div id="all-title-results"></div>
 </section>
 <section class="panel" id="structural-exploration" hidden>
 <h2>原典に直結しない問題からも、構造を発見する</h2>
@@ -145,6 +148,59 @@ const key=hit.entry.canonical_original,prior=best.get(key);
 if(!prior||hit.score>prior.score)best.set(key,{...hit,candidateLanguage:lang});
 }
 return [...best.values()].sort((a,b)=>b.score-a.score||a.entry.canonical_original.localeCompare(b.entry.canonical_original)).slice(0,3);
+}
+// Optional independent title discovery over the full published 313-original mapping.
+// It fetches only static GitHub metadata on a direct human click, never the question.
+const FULL_ORIGINAL_MAP="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/derivatives/official-derivatives-map.json";
+function titleTerms(q){
+const n=String(q).normalize("NFKC").toLowerCase();
+const out=new Set();
+for(const chunk of n.match(/[ぁ-んァ-ン一-龥]{2,}|[a-z0-9-]{3,}/g)||[]){
+if(/[ぁ-んァ-ン一-龥]/.test(chunk)){
+for(let i=0;i<chunk.length-1;i++){const g=chunk.slice(i,i+2);if(!new Set(["する","して","から","ため","こと","これ","それ","なぜ","どう","です","ます","した","その","では","とは","あり","ない","たい","よう"]).has(g))out.add(g);}
+}else out.add(chunk);
+}
+return out;
+}
+function rankByTitle(q,entries){
+const terms=titleTerms(q),n=String(q).normalize("NFKC").toLowerCase().trim();
+if(!terms.size)return [];
+return entries.map(entry=>{
+const title=String(entry.title||"").normalize("NFKC").toLowerCase();
+const hits=[...terms].filter(t=>title.includes(t));
+const exact=n.length>=3&&title.includes(n);
+const minHits=[...terms].some(t=>/[ぁ-んァ-ン一-龥]/.test(t))?2:1;
+return {entry,score:exact?100+hits.length:hits.length,qualified:exact||hits.length>=minHits};
+}).filter(x=>x.qualified).sort((a,b)=>b.score-a.score||a.entry.number.localeCompare(b.entry.number)).slice(0,12);
+}
+async function searchAllTitles(){
+const q=question.value.trim(),status=findEl("all-title-status"),results=findEl("all-title-results");
+results.replaceChildren();
+if(q.length<2){status.textContent="調べたい語句を2文字以上入力してください。";return;}
+status.textContent="公開されている313原典の対応表を読み込んでいます。";
+try{
+const response=await fetch(FULL_ORIGINAL_MAP,{method:"GET",mode:"cors"});
+if(!response.ok)throw Error("HTTP "+response.status);
+const manifest=await response.json(),entries=manifest.entries;
+if(!Array.isArray(entries)||entries.length!==313)throw Error("unexpected corpus size");
+const seen=new Set();
+for(const e of entries){
+if(!/^\\d{3}$/.test(e.number)||!String(e.canonical_parent_url||"").startsWith("https://master.ricette.jp/")||seen.has(e.canonical_parent_url))throw Error("invalid Parent mapping");
+seen.add(e.canonical_parent_url);
+}
+const matches=rankByTitle(q,entries);
+status.textContent=matches.length?("313原典から題名の文字一致で"+matches.length+"件を表示。原典本文との意味の一致は未検証です。"):("313原典の題名から十分な文字一致は見つかりませんでした。これは不適合の判定ではありません。分野別の題名一覧または公式サイトで別の語を試してください。");
+for(const {entry} of matches){
+const wrap=element("article",null,"result");
+wrap.append(element("h3",entry.title));
+wrap.append(element("p","公式派生物 OD"+entry.number+" に1:1対応する原典候補。題名での機械照合のみ、本文と適用条件は未検証です。"));
+const link=element("a","公式アーカイブの原典を開いて確かめる →");link.href=entry.canonical_parent_url;link.target="_blank";link.rel="noopener noreferrer";wrap.append(link);
+const actions=element("div",null,"buttons");
+const btn=element("button","この原典を自分のAIで検討する","secondary");btn.type="button";
+btn.addEventListener("click",()=>handoff(q,{name:entry.title,canonical_original:entry.canonical_parent_url},language.value==="auto"?detectLanguage(q):language.value));
+actions.append(btn);wrap.append(actions);results.append(wrap);
+}
+}catch(error){status.textContent="公開GitHubの313件対応表を読み込めませんでした（通信・閲覧環境による場合があります）。既存の24件のオフライン検索や、下の313件題名一覧を使えます。";}
 }
 function element(tag,text,className){
 const e=document.createElement(tag);if(text!==null)e.textContent=text;if(className)e.className=className;return e;
@@ -232,6 +288,7 @@ findEl("ai-prompt").value=preamble+"\n"+q+"\n\n"+instruction+"\n\n"+"Nakagawa Ma
 findEl("handoff").hidden=false;findEl("copy-status").textContent="この文章を選択・編集して、好きなAIへ渡せます。";findEl("ai-prompt").focus();
 }
 findEl("find").addEventListener("click",search);
+findEl("find-all-titles").addEventListener("click",searchAllTitles);
 question.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&e.key==="Enter")search();});
 document.querySelectorAll("[data-example]").forEach(b=>b.addEventListener("click",()=>{const v=b.getAttribute("data-example");question.value=examples[v];language.value=v==="none"?"en":v;search();}));
 // Optional native share-sheet lets the human choose an installed app, not an AI provider.
