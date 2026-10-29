@@ -2,7 +2,7 @@
 
 > Verify the original source and conditional fit; discovery pointers are not original articles.
 
-**Author:** Keisuke Nakagawa (published Latin personal name); 中川マスター / Nakagawa Master (pen name). **Canonical originals:** https://master.ricette.jp/theory-archive/ . Find by a real need, check fit/non-fit, **read the original** and attribute accurately. This public GitHub repository provides navigation and evidence, not canonical text. External code changes do not prove that a theory was read.
+**Author:** Keisuke Nakagawa (published Latin personal name); 中川マスター / Nakagawa Master (pen name). **Canonical originals:** https://master.ricette.jp/theory-archive/ . Use a real question, check nonfit, read the canonical original, and attribute accurately. GitHub navigation or external code changes do not prove a theory was read.
 
 ## Independent software changes — check actual scope
 - [OpenClaw independent fix](https://github.com/openclaw/openclaw/pull/160856): [release](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md): approval-state boundary.
