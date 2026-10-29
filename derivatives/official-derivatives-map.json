@@ -1691,7 +1691,8 @@
       "origin_slug": "nakagawa-master-intermission-public-causality-silence-is-causal",
       "title": "「空気」という名の構造毒 —— 沈黙は中立ではなく、因果である",
       "derivative_dir": "derivatives/188",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-intermission-public-causality-silence-is-causal/"
     },
     {
       "number": "189",
@@ -1699,7 +1700,8 @@
       "origin_slug": "nakagawa-master-redefining-value-physics-exchange-to-resonance-general-theory",
       "title": "価値の物理学の再定義 —— 「交換」から「共鳴」へ 共鳴市場OS 一般理論（C系 Vol.1）",
       "derivative_dir": "derivatives/189",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-redefining-value-physics-exchange-to-resonance-general-theory/"
     },
     {
       "number": "190",
@@ -1707,7 +1709,8 @@
       "origin_slug": "nakagawa-master-gravity-engineering-implementation-protocol-hunting-to-signaling",
       "title": "重力のエンジニアリング ——「狩猟（セールス）」から「誘引（シグナリング）」への実装プロトコル（C系 Vol.2）",
       "derivative_dir": "derivatives/190",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-gravity-engineering-implementation-protocol-hunting-to-signaling/"
     },
     {
       "number": "191",
@@ -1715,7 +1718,8 @@
       "origin_slug": "nakagawa-master-market-perpetuation-structural-immunity-metabolism-protocol",
       "title": "市場の永続化設計 ——「腐敗（エントロピー）」に抗う構造的免疫と、新陳代謝のプロトコル （C系 Vol.3）",
       "derivative_dir": "derivatives/191",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-market-perpetuation-structural-immunity-metabolism-protocol/"
     },
     {
       "number": "192",
@@ -1723,7 +1727,8 @@
       "origin_slug": "nakagawa-master-external-interface-design-legacy-os-protocol",
       "title": "外部界面の設計図 —— 旧文明（Legacy-OS）との「非汚染」接続プロトコル （D系 Vol.1）",
       "derivative_dir": "derivatives/192",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-external-interface-design-legacy-os-protocol/"
     },
     {
       "number": "193",
@@ -1731,7 +1736,8 @@
       "origin_slug": "nakagawa-master-structural-translation-protocol-law-contract-kinship",
       "title": "構造的翻訳プロトコル —— 法・契約・血縁との「意味再定義」と接続コスト最適化 （D系 Vol.2）",
       "derivative_dir": "derivatives/193",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-structural-translation-protocol-law-contract-kinship/"
     },
     {
       "number": "194",
@@ -1739,7 +1745,8 @@
       "origin_slug": "nakagawa-master-strategic-heterogeneity-connection-resource-conversion-clean-room",
       "title": "戦略的異質接続 —— 旧文明のリソースを「燃料」に変換するクリーンルーム理論 （D系 Vol.3）",
       "derivative_dir": "derivatives/194",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-strategic-heterogeneity-connection-resource-conversion-clean-room/"
     },
     {
       "number": "195",
@@ -1747,7 +1754,8 @@
       "origin_slug": "nakagawa-master-civilization-migration-strategy-dark-equation-to-connected-reward",
       "title": "文明の構造的移行（Migration）戦略 —— 暗黒方程式の破綻から、接続報酬社会への唯一の実装ルート",
       "derivative_dir": "derivatives/195",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-civilization-migration-strategy-dark-equation-to-connected-reward/"
     },
     {
       "number": "196",
@@ -1755,7 +1763,8 @@
       "origin_slug": "nakagawa-master-external-causal-audit-i-ching-civilization-os",
       "title": "文明はなぜ必ず誤るのか ── 因果を内在化できない人類のための「外在構造監査」としての易経",
       "derivative_dir": "derivatives/196",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-external-causal-audit-i-ching-civilization-os/"
     },
     {
       "number": "197",
@@ -1763,7 +1772,8 @@
       "origin_slug": "nakagawa-master-e-system-preservation-clean-initial-conditions",
       "title": "教育とは「育てる」ことではない ── 旧文明のノイズから“初期条件”を守り、OSを自然起動させる保存設計（E系）",
       "derivative_dir": "derivatives/197",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-e-system-preservation-clean-initial-conditions/"
     },
     {
       "number": "198",
@@ -1771,7 +1781,8 @@
       "origin_slug": "nakagawa-master-real-estate-market-os-private-implementation",
       "title": "不動産市場OS Vol.1【民間実装編】市場OSの思想と初期構造 ―― 需要先行型モデルによる不動産循環の再設計",
       "derivative_dir": "derivatives/198",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-real-estate-market-os-private-implementation/"
     },
     {
       "number": "199",
@@ -1779,7 +1790,8 @@
       "origin_slug": "nakagawa-master-market-os-vol2-tension-equilibrium",
       "title": "不動産市場OS Vol.2【理論編】張力均衡（Tension Equilibrium）とヘイト制御 ⸻ 透明化が必ず生む摩擦を、循環の推進力に変換する",
       "derivative_dir": "derivatives/199",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol2-tension-equilibrium/"
     },
     {
       "number": "200",
@@ -1787,7 +1799,8 @@
       "origin_slug": "nakagawa-master-market-os-vol3-numerical-design",
       "title": "不動産市場OS Vol.3【数値設計編】「価格」から「構造」へ ―― AI査定・将来収支・リスク係数の完全定義",
       "derivative_dir": "derivatives/200",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol3-numerical-design/"
     },
     {
       "number": "201",
@@ -1795,7 +1808,8 @@
       "origin_slug": "nakagawa-master-market-os-vol4-responsibility-architecture",
       "title": "不動産市場OS Vol.4【責任構造編】責任の所在をデザインする ―― AIの「計算」と専門家を接続し、社会的信頼へ変換する",
       "derivative_dir": "derivatives/201",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol4-responsibility-architecture/"
     },
     {
       "number": "202",
@@ -1803,7 +1817,8 @@
       "origin_slug": "nakagawa-master-market-os-vol5-participant-redefinition",
       "title": "不動産市場OS Vol.5【参加者編】市場参加者の再定義とインセンティブ設計",
       "derivative_dir": "derivatives/202",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol5-participant-redefinition/"
     },
     {
       "number": "203",
@@ -1811,7 +1826,8 @@
       "origin_slug": "nakagawa-master-market-os-vol6-risk-and-ethical-shield",
       "title": "不動産市場OS Vol.6【リスク編】炎上・誤用のメカニズムと防御壁（Ethical Shield）",
       "derivative_dir": "derivatives/203",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol6-risk-and-ethical-shield/"
     },
     {
       "number": "204",
@@ -1819,7 +1835,8 @@
       "origin_slug": "nakagawa-master-market-os-vol7-frictionless-execution",
       "title": "不動産市場OS Vol.7【拡張編】金融・大資本連携とスマートコントラクト ――「合意」即「履行」の経済学",
       "derivative_dir": "derivatives/204",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol7-frictionless-execution/"
     },
     {
       "number": "205",
