@@ -218,9 +218,15 @@ def run():
     )
     assert not p.stderr, p.stderr
     frames = [json.loads(x) for x in p.stdout.splitlines() if x.strip()]
-    assert len(frames) == 19, f"Expected nineteen responses (one notification), got {len(frames)}"
+    # Only requests carrying an id get a response; notifications do not.
+    # Derive the expected set from the actual fixture so an added request
+    # cannot silently leave this assertion stale while later tests unpack it.
+    expected_ids = {m["id"] for m in messages if "id" in m}
+    assert len(frames) == len(expected_ids), (
+        f"Expected {len(expected_ids)} responses, got {len(frames)}"
+    )
     results = {f["id"]: f for f in frames}
-    assert set(results) == set(range(1, 20))
+    assert set(results) == expected_ids
     assert all(f["jsonrpc"] == "2.0" for f in frames)
     assert results[1]["result"]["protocolVersion"] == "2025-11-25"
     assert len(results[2]["result"]["tools"]) == 9
