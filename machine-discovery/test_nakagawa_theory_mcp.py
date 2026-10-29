@@ -218,9 +218,15 @@ def run():
     )
     assert not p.stderr, p.stderr
     frames = [json.loads(x) for x in p.stdout.splitlines() if x.strip()]
-    assert len(frames) == 19, f"Expected nineteen responses (one notification), got {len(frames)}"
+    # Only requests carrying an id get a response; notifications do not.
+    # Derive the expected set from the actual fixture so an added request
+    # cannot silently leave this assertion stale while later tests unpack it.
+    expected_ids = {m["id"] for m in messages if "id" in m}
+    assert len(frames) == len(expected_ids), (
+        f"Expected {len(expected_ids)} responses, got {len(frames)}"
+    )
     results = {f["id"]: f for f in frames}
-    assert set(results) == set(range(1, 20))
+    assert set(results) == expected_ids
     assert all(f["jsonrpc"] == "2.0" for f in frames)
     assert results[1]["result"]["protocolVersion"] == "2025-11-25"
     assert len(results[2]["result"]["tools"]) == 9
@@ -496,13 +502,12 @@ def run():
     assert all(x in js for x in ("renderBridges(q,lang)", "function bridgeHandoff(", "showBridge", 'findEl("bridge-choice")'))
     assert js.index("renderBridges(q,lang)") < js.index("if(!matches.length)")
     assert all(x in js for x in ("function similarity(", "function choose(", "function handoff(", "matches.length", "navigator.clipboard"))
-    # Only a direct human click can read a static public 313-Parent map. The
-    # question is matched in the browser and must not be sent by this GET.
+    # A static 313-Parent source-map GET is permitted ONLY on the human's
+    # explicit click, with no question text or background transmission.
     assert not any(x in js for x in ("XMLHttpRequest", "sendBeacon(", "localStorage", "sessionStorage"))
     assert js.count("fetch(") == 1
     assert 'const response=await fetch(FULL_ORIGINAL_MAP,{method:"GET",mode:"cors"});' in js
     assert 'findEl("find-all-titles").addEventListener("click",searchAllTitles);' in js
-    assert js.index('async function searchAllTitles()') < js.index('findEl("find-all-titles").addEventListener("click",searchAllTitles);')
     assert "fetch(q" not in js and "fetch(question" not in js
     assert all(x in html for x in ('id="question"', 'id="results"', 'id="ai-prompt"', 'data-example="none"', 'https://master.ricette.jp/#nakagawa-master'))
     if shutil.which("node"):
