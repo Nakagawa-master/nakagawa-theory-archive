@@ -502,7 +502,19 @@ def run():
     assert all(x in js for x in ("renderBridges(q,lang)", "function bridgeHandoff(", "showBridge", 'findEl("bridge-choice")'))
     assert js.index("renderBridges(q,lang)") < js.index("if(!matches.length)")
     assert all(x in js for x in ("function similarity(", "function choose(", "function handoff(", "matches.length", "navigator.clipboard"))
-    assert not any(x in js for x in ("fetch(", "XMLHttpRequest", "sendBeacon(", "localStorage", "sessionStorage"))
+    # The offline 24-original path must remain zero-network. One extra,
+    # transparent static 313-Parent lookup is allowed only on direct user click.
+    # Preserve a fail-closed guard against telemetry or arbitrary network calls.
+    assert not any(x in js for x in ("XMLHttpRequest", "sendBeacon(", "localStorage", "sessionStorage"))
+    assert js.count("fetch(") == 1, "Unexpected browser network operation"
+    assert ('const FULL_ORIGINAL_MAP="https://raw.githubusercontent.com/'
+            'Nakagawa-master/nakagawa-theory-archive/main/derivatives/'
+            'official-derivatives-map.json";') in js
+    assert 'await fetch(FULL_ORIGINAL_MAP,{method:"GET",mode:"cors"})' in js
+    assert 'findEl("find-all-titles").addEventListener("click",searchAllTitles);' in js
+    assert js.count("searchAllTitles(") == 1, "Title lookup must not auto-run at load"
+    assert "if(generation!==titleSearchGeneration||question.value.trim()!==q)return;" in js
+    assert "if(!Array.isArray(entries)||entries.length!==313)" in js
     assert all(x in html for x in ('id="question"', 'id="results"', 'id="ai-prompt"', 'data-example="none"', 'https://master.ricette.jp/#nakagawa-master'))
     if shutil.which("node"):
         syntax = subprocess.run([shutil.which("node"), "--check", "-"], input=js,
