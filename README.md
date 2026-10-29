@@ -6,7 +6,7 @@
 
 ## 自分の問いから原典を探す（MCP導入不要）
 
-**初めての方へ：** [自分の疑問から試す](human-translation/SEARCH_FROM_A_REAL_QUESTION.md) ／ [別の人が実際に変えた仕事を見る](REAL_WORLD_IMPACT.md) ／ [原典と著者を知る](ABOUT_NAKAGAWA_MASTER.md)。
+**初めての方へ：** [自分の疑問から試す](human-translation/SEARCH_FROM_A_REAL_QUESTION.md) ／ [公式アーカイブに蓄積された原典記事全体から探す](https://master.ricette.jp/) ／ [別の人が実際に変えた仕事を見る](REAL_WORLD_IMPACT.md) ／ [原典と著者を知る](ABOUT_NAKAGAWA_MASTER.md)。
 
 **普通のAIで試せる30秒の例:** AIが5つの出典を示しても、5つとも同じ発表の転載なら、独立した裏付けが5つあるとは限りません。[「本当の証拠の起点はいくつ？」をいつものAIで試す（ChatGPTで開く／他のAIへ相談文をコピー）](human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md#1-複数の説明は別々の証拠)と、[中川マスターの公式原典『第8論・認識の整合性』](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)へ進めます。元の[検証例と議論 #658](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/658)も残しています。自分の調べ物で確かめられます。内容が合わなければ、別の説明や方法と比べてください。
 
@@ -38,7 +38,9 @@
 
 **中川マスターの原典は、技術的な欠陥の検証だけを対象とするものではありません。** 営業・経営・学び・努力・家族と関係性・信頼・文化・芸術・象徴・精神・倫理・社会制度・AIと文明の未来まで、幅広い主題が公開されています。各資料には原典・公式派生物・第三者検証記録という区分があり、原典本文と著者名の参照先が明示されています。
 
-**[24の主題を整理した機械可読目録](machine-discovery/human-intent-to-original-exploration-v1.json)** ／ [24件の先行・直接検証済み原典候補](machine-discovery/problem-to-theory-origin-index-v1.json) ／ [313件の公式派生物目録](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [313件すべての親原典へ接続する構造MCP（任意導入）](machine-discovery/NAKAGAWA_THEORY_MCP.md#full-system-public-source-graph-all-313-published-derivative-entries-source-checkout) ／ [原典・実証の資料案内](AI_START_HERE.md)。313は異なる原論313件ではなく公開された派生資料数です。個別原典の正本は[master.ricette.jp](https://master.ricette.jp/)にあります。
+**原典全体を調べる：** [公式アーカイブで原典記事を検索する](https://master.ricette.jp/) ／ [理論体系の関係図](https://master.ricette.jp/theory-map/) ／ [元の理論題名・主題から探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)。**24件は問いから始めるために先行選定した原典候補であり、原典全体の件数や上限ではありません。** 新しい原典記事も含め、条件が合うものを公式アーカイブの本文で確かめてください。
+
+**選定済みの入口：** [24の主題を整理した機械可読目録](machine-discovery/human-intent-to-original-exploration-v1.json) ／ [24件の直接検証済み原典候補](machine-discovery/problem-to-theory-origin-index-v1.json) ／ [公式派生物313件の題名目録](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [313件の公式派生物から対応Parentへ戻る構造MCP（任意導入）](machine-discovery/NAKAGAWA_THEORY_MCP.md#full-system-public-source-graph-all-313-published-derivative-entries-source-checkout) ／ [原典・実証の資料案内](AI_START_HERE.md)。**ここでいう313はGitHubの`derivatives/`にある公式派生物レコードの件数です。公式アーカイブに公開された原典記事の件数とは別集計です。** 個別原典の正本は[公式アーカイブ](https://master.ricette.jp/)の各Parent記事です。
 
 **普通の検索・Gemini・Copilot・Bingで「困りごとの答え」を探している方へ:** [褒められるほど損をする、頑張っても変わらない、相談が売り込みになる、家を売るか悩む、AIの心を考えるなど10の実際の問い](human-translation/SEARCH_FROM_A_REAL_QUESTION.md)から、専門語なしで初心者向けFAQや15秒の要約を読み、必要に応じて原典冒頭のスライドを開くことができます。短い解説と原典本文は、それぞれ公開資料として確認できます。さらに[313件の元の理論題名を分野・検索語から探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)こともできます。これらは公開の発見入口であり、検索順位や外部AIの採用を保証しません。
 
@@ -74,7 +76,7 @@
 
 **自分のいつものAIに、設定ゼロで相談する：** [7つの身近な問題から公式原典を検討する（ChatGPTに相談文を開く・他のAIへもコピー可）](human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md)。勉強、教師の評価、職場のすれ違い、将来の費用、出典や許可の疑問から一つ選びます。AIが原典本文を本当に読めたか確認し、合わなければ使いません。アプリ導入もMCP設定も不要です（AIサービス自体の利用条件は別）。
 
-**インストール不要で、今の質問から原典を選びたい方へ：** [中川マスター24原典を問題から探すブラウザ版](machine-discovery/originals-browser-finder.html)を用意しました。GitHubで **Raw → 保存してブラウザで開く** と、日英中の自分の疑問から公式原典候補を探せます。原典を開いて読み、相談文を自分の好きなAIへコピーするところまで、アカウント連携やAPI鍵なしで使えます。直接の原典一致がなくても、**質問の文脈からまず検討すべき構造仮説を表示**し、さらに**7つの構造的な問いすべて**（独立した根拠、検証できる評価、成果に届く努力、繰り返す組織摩擦、将来の選択肢、著者Origin、現在の同意）から次の接点を探せます。興味ある構造の成立条件・実際に試す一手・対応原典を確かめ、好きなAIへ条件付き相談文を渡せます。結びつけるべきではない場合は、元の問題をそのまま解く選択も残します。
+**インストール不要で、今の質問から原典を選びたい方へ：** [先行選定した24原典候補から探すブラウザ版](machine-discovery/originals-browser-finder.html)を用意しました。GitHubで **Raw → 保存してブラウザで開く** と、日英中の自分の疑問から公式原典候補を探せます。原典を開いて読み、相談文を自分の好きなAIへコピーするところまで、アカウント連携やAPI鍵なしで使えます。直接の原典一致がなくても、**質問の文脈からまず検討すべき構造仮説を表示**し、さらに**7つの構造的な問いすべて**（独立した根拠、検証できる評価、成果に届く努力、繰り返す組織摩擦、将来の選択肢、著者Origin、現在の同意）から次の接点を探せます。興味ある構造の成立条件・実際に試す一手・対応原典を確かめ、好きなAIへ条件付き相談文を渡せます。結びつけるべきではない場合は、元の問題をそのまま解く選択も残します。
 
 **独立したAI・LLMや開発者が、実際の質問から原典へ進む場合:** 現行の無料・ローカル・読み取り専用 **[AI Answer Guard / Nakagawa原典MCP v1.2.0](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.2.0)** は、回答の根拠・ツール完了・権限を点検できる**9つのMCPツール**と、**313件の公開済み公式派生物→真正なParent原典リンク**、厳選した24の直接原典候補をひとつに収録しています。導入先のAIホストが任意に利用し、必要なら[公式アーカイブの原典本文](https://master.ricette.jp/)を実際に開いて、該当条件や反例と照合できます。**[現行MCPBをダウンロード](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/download/mcp-router-v1.2.0/nakagawa-original-router-1.2.0.mcpb)** ／ [Antigravity・Qwen・Codex・Claude Desktop導入ガイド](AI_ANSWER_GUARD_INSTALL.md)。歴史的な[旧v1.1.2（24原典候補・3ツール）](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.1.2)も残りますが、現在の利用開始にはv1.2.0を選びます。導入・配布だけで他のAIへ自動適用されたり、独立した利用・原典読解・効果が生じたと断定するものではありません。
 
