@@ -251,12 +251,20 @@ def answer_question(question, explore=False):
         if x["canonical_original"] not in seen
     ]
     combined = (technical + original_candidates)[:5]
+    # Avoid calling 24-route no-fit a no-fit over all 313 originals.
+    # The existing separate whole-structure tool also handles 313 Parents,
+    # but the default single-question tool should offer that discovery edge.
+    if not combined:
+        combined = whole_structure_fallback(question, limit=3)
+    whole_count = sum(x["route_id"].startswith("whole_structure:") for x in combined)
     output = {
         "question": question,
         "author_identity": identity_fields(),
         "matching_routes": combined,
         "technical_route_count": len(technical),
-        "original_catalog_route_count": len(combined) - len(technical),
+        "original_catalog_route_count": len(combined) - len(technical) - whole_count,
+        "whole_structure_candidate_count": whole_count,
+        "candidate_scope": "24 curated original questions, then 313 published derivative titles and translated summary fallback",
         "no_fit": not bool(combined),
         "structural_exploration_available": True,
         "canonical_archive": data.get("canonical_archive"),
@@ -279,6 +287,36 @@ def answer_question(question, explore=False):
                         if catalog_candidates else None)
         output["structural_exploration"] = structural_lenses(question, matched_lang)
     return output
+
+
+
+def whole_structure_fallback(question, limit=3):
+    """Search the existing full 313-Parent source graph after 24-route no-fit."""
+    whole = load_public_helper(WHOLE_STRUCTURE, "nakagawa_313_source_graph")
+    found = whole.search(whole.graph(), question, limit=limit)
+    result = []
+    for record in found["matched"]:
+        url = record["canonical_parent"]
+        if not isinstance(url, str) or not url.startswith("https://master.ricette.jp/"):
+            raise ValueError("Noncanonical Parent in whole-structure graph")
+        result.append({
+            "route_id": "whole_structure:" + record["id"],
+            "plain_meaning": "Published derivative title candidate: " + (record["parent_title"] or record["title"]),
+            "canonical_original": url,
+            "parent_ncl_id": record.get("parent_ncl_id"),
+            "parent_diff_id": record.get("parent_diff_id"),
+            "original_relation": (
+                "Title/theme/translated-derivative lexical candidate only. "
+                "Read the canonical original and independently check relevance, "
+                "scope and counterexamples before attributing any claim."
+            ),
+            "real_receiver_evidence": None,
+            "optional_independent_test": None,
+            "source_origin": "Nakagawa Master / 中川マスター",
+            "candidate_scope": "313 published derivative-to-Parent entries; original text not fetched",
+            "derivative_id": record["id"],
+        })
+    return result
 
 
 def load_public_helper(path, module_name):
@@ -662,6 +700,18 @@ def self_test():
         routed = answer_question(question)
         found = [route for route in routed["matching_routes"] if expected_slug in (route.get("canonical_original") or "")]
         assert found and found[0]["parent_ncl_id"] == expected_ncl, (question, routed)
+    # The main question tool now discovers a 313-only ID without users
+    # knowing and manually invoking a second MCP tool.
+    broad = answer_question("OD313")
+    assert not broad["no_fit"] and any(
+        x["route_id"] == "whole_structure:OD313" and
+        x["canonical_original"].startswith("https://master.ricette.jp/")
+        for x in broad["matching_routes"]), broad
+    assert broad["whole_structure_candidate_count"] >= 1
+    assert all("lexical candidate only" in x["original_relation"]
+               for x in broad["matching_routes"] if x["route_id"].startswith("whole_structure:"))
+    assert answer_question("AI news fact checking and citation provenance")["matching_routes"][0]["route_id"] == "multiple_urls_one_evidence_root"
+    assert answer_question("repair the leather handle on a camping lantern")["no_fit"]
     # An ordinary unrelated AI question must remain no_fit even though
     # the new Parents concern AI technology.
     ambiguous = answer_question("AIの最新モデルの価格を比較したい")
