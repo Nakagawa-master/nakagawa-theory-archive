@@ -295,7 +295,11 @@ def whole_structure_fallback(question, limit=3):
     whole = load_public_helper(WHOLE_STRUCTURE, "nakagawa_313_source_graph")
     found = whole.search(whole.graph(), question, limit=limit)
     result = []
-    for record in found["matched"]:
+    for record, score in zip(found["matched"], found["lexical_scores"]):
+        # A pair of incidental shared characters must not convert a real
+        # unrelated question into a purported original recommendation.
+        if score < 10:
+            continue
         url = record["canonical_parent"]
         if not isinstance(url, str) or not url.startswith("https://master.ricette.jp/"):
             raise ValueError("Noncanonical Parent in whole-structure graph")
