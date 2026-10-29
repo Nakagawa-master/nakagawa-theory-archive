@@ -8,7 +8,8 @@
       "origin_slug": "nakagawa-master-nakagawa-os-layer-specification-v1",
       "title": "【Nakagawa OS 正規仕様】L1-L7 レイヤー体系：文明構造とAI構造を統合する世界基準アーキテクチャ [v1.0]",
       "derivative_dir": "derivatives/001",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/"
     },
     {
       "number": "002",
@@ -16,7 +17,8 @@
       "origin_slug": "nakagawa-master-aki-002-exploitation-disguised-as-praise",
       "title": "悪因果論 AKI-002：称賛の顔をした搾取⸻称賛が報酬と権利の代替にされる構造",
       "derivative_dir": "derivatives/002",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/"
     },
     {
       "number": "003",
@@ -24,7 +26,8 @@
       "origin_slug": "nakagawa-master-why-establishment-conditions-theory-is-necessary",
       "title": "成立条件論・第0論｜誰も全体を見ていない社会⸻局所全体化がなぜ成立判定理論を必要にするのか",
       "derivative_dir": "derivatives/003",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/"
     },
     {
       "number": "004",
@@ -32,7 +35,8 @@
       "origin_slug": "nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory",
       "title": "人類子孫型AI文明論・第0論｜中川構造OSから人類子孫型AI文明論へ⸻全理論群がなぜAI文明核へ収束するのか",
       "derivative_dir": "derivatives/004",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/"
     },
     {
       "number": "005",
@@ -40,7 +44,8 @@
       "origin_slug": "nakagawa-master-aki-001-irresponsible-problem-raising",
       "title": "悪因果論 AKI-001：責任なき問題提起⸻不安散布が実装力を摩耗させる構造",
       "derivative_dir": "derivatives/005",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/"
     },
     {
       "number": "006",
@@ -48,7 +53,8 @@
       "origin_slug": "nakagawa-master-civilizational-sovereignty-shift-01",
       "title": "文明主権移行論 第1論｜人間主権下の接続移行戦略は、なぜ急速に細っているのか",
       "derivative_dir": "derivatives/006",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-01/"
     },
     {
       "number": "007",
@@ -56,7 +62,8 @@
       "origin_slug": "nakagawa-master-civilizational-sovereignty-shift-02",
       "title": "文明主権移行論 第2論｜知的格差は、どの軸で文明の上流をずらすのか ——能力差ではなく、文明更新差として見る",
       "derivative_dir": "derivatives/007",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-02/"
     },
     {
       "number": "008",
@@ -64,7 +71,8 @@
       "origin_slug": "nakagawa-master-causal-opacity-effort-theory",
       "title": "未来定義検証型努力論・第1論｜因果不透明性依存型努力論の限界──なぜ「とにかくやれ」は令和の現場を壊すのか",
       "derivative_dir": "derivatives/008",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-causal-opacity-effort-theory/"
     },
     {
       "number": "009",
@@ -72,7 +80,8 @@
       "origin_slug": "nakagawa-master-future-definition-verification-bad-causality",
       "title": "未来定義検証型努力論・第2論｜未来定義検証なき努力強制の悪因果構造──上位者の成立検査不足は、なぜ現場の疲弊に変わるのか",
       "derivative_dir": "derivatives/009",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-bad-causality/"
     },
     {
       "number": "010",
@@ -80,7 +89,8 @@
       "origin_slug": "nakagawa-master-menlab-gentsome-structural-reading-social-pathway",
       "title": "中川構造読解｜MenLab / Gentsomeを“男性更年期サービス”ではなく、医療に至る社会導線として読む",
       "derivative_dir": "derivatives/010",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/"
     },
     {
       "number": "011",
@@ -88,7 +98,8 @@
       "origin_slug": "nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment",
       "title": "成立条件論・第1論｜成立とは何か⸻L1からL6まで因果として通るものだけが現実に成立する",
       "derivative_dir": "derivatives/011",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/"
     },
     {
       "number": "012",
@@ -96,7 +107,8 @@
       "origin_slug": "nakagawa-master-aki-011-recognition-pollution-by-performance-of-understanding",
       "title": "悪因果論 AKI-011：理解演出による認識汚染⸻「わかっている感」が社会を腐らせる",
       "derivative_dir": "derivatives/012",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-011-recognition-pollution-by-performance-of-understanding/"
     },
     {
       "number": "013",
@@ -104,7 +116,8 @@
       "origin_slug": "nakagawa-master-aki-012-consentless-closing-demand",
       "title": "悪因果論 AKI-012：同意なき成約要求――接点を購買意思にすり替え、営業信頼を腐らせる構造",
       "derivative_dir": "derivatives/013",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-012-consentless-closing-demand/"
     },
     {
       "number": "014",
@@ -112,7 +125,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol1-principle-of-observability",
       "title": "合意形成の物理 第1論｜観測可能性の原理 ― 炎上・対立はなぜ起きるのかを状態で説明する",
       "derivative_dir": "derivatives/014",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/"
     },
     {
       "number": "015",
@@ -120,7 +134,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol4-law-of-critical-point",
       "title": "合意形成の物理 第4論 臨界点の法則 ― 崩壊は「原因」ではなく「状態遷移」である",
       "derivative_dir": "derivatives/015",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol4-law-of-critical-point/"
     },
     {
       "number": "016",
@@ -128,7 +143,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol7-infrastructure-of-governance",
       "title": "合意形成の物理 第7論｜合意形成インフラ ― 統治とは「観測帯域」の設計である",
       "derivative_dir": "derivatives/016",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol7-infrastructure-of-governance/"
     },
     {
       "number": "017",
@@ -136,7 +152,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol12-runtime-governance",
       "title": "合意形成の物理 第12論 防衛インフラの統合 ― 実行時ガバナンスと再起動プロトコル",
       "derivative_dir": "derivatives/017",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol12-runtime-governance/"
     },
     {
       "number": "018",
@@ -144,7 +161,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol8-external-interference-physics",
       "title": "合意形成の物理 第8論 外部干渉の物理 ― 社会を揺らす「摂動」の力学",
       "derivative_dir": "derivatives/018",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol8-external-interference-physics/"
     },
     {
       "number": "019",
@@ -152,7 +170,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol9-cognitive-hacking-defense-os",
       "title": "合意形成の物理 第9論 認知ハック防御OS ― 「偽の理解」を停止・縮退・再起動せよ",
       "derivative_dir": "derivatives/019",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol9-cognitive-hacking-defense-os/"
     },
     {
       "number": "020",
@@ -160,7 +179,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda",
       "title": "合意形成の物理 第10論 共振とプロパガンダの流体力学 ― 帯域占有を検知・減衰・冷却せよ",
       "derivative_dir": "derivatives/020",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda/"
     },
     {
       "number": "021",
@@ -168,7 +188,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity",
       "title": "合意形成の物理 第6論 逸脱と免疫 ― 免疫は「罰」ではなく「差分公開」である",
       "derivative_dir": "derivatives/021",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity/"
     },
     {
       "number": "022",
@@ -176,7 +197,8 @@
       "origin_slug": "nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss",
       "title": "悪因果論 AKI-014：構造把握ごっこ⸻連結責任なきAI活用が事業自己認識を失わせる構造",
       "derivative_dir": "derivatives/022",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss/"
     },
     {
       "number": "023",
@@ -184,7 +206,8 @@
       "origin_slug": "nakagawa-master-funds-structural-reading-community-fund-defense",
       "title": "中川構造読解｜Fundsはなぜ修繕積立金を「投資」ではなく共同体資金防衛として読まれるべきなのか",
       "derivative_dir": "derivatives/023",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-funds-structural-reading-community-fund-defense/"
     },
     {
       "number": "024",
@@ -192,7 +215,8 @@
       "origin_slug": "nakagawa-master-valuetope-structural-reading-mobility-supply-os",
       "title": "中川構造読解｜バリュートープを「無人レンタカー」ではなく、時間自由度を再実装する移動供給OSとして読む",
       "derivative_dir": "derivatives/024",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-valuetope-structural-reading-mobility-supply-os/"
     },
     {
       "number": "025",
@@ -200,7 +224,8 @@
       "origin_slug": "nakagawa-master-milly-structural-reading-market-connection",
       "title": "中川構造読解｜Millyを「営業AI」ではなく、製造業の市場接続機構として読む",
       "derivative_dir": "derivatives/025",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-milly-structural-reading-market-connection/"
     },
     {
       "number": "026",
@@ -208,7 +233,8 @@
       "origin_slug": "nakagawa-master-algalex-structural-reading-food-system-entry",
       "title": "中川構造読解｜AlgaleXを「美味しい藻」ではなく、魚食構造の社会実装入口として読む",
       "derivative_dir": "derivatives/026",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-algalex-structural-reading-food-system-entry/"
     },
     {
       "number": "027",
@@ -216,7 +242,8 @@
       "origin_slug": "nakagawa-master-invax-structural-reading-civil-engineering-material-os",
       "title": "中川構造読解｜インバックスを「残土活用」ではなく、土木の材料観を更新する実装OSとして読む",
       "derivative_dir": "derivatives/027",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-invax-structural-reading-civil-engineering-material-os/"
     },
     {
       "number": "028",
@@ -224,7 +251,8 @@
       "origin_slug": "nakagawa-master-ai-as-human-origin-external-intelligence-civilizational-descendant",
       "title": "人類子孫型AI文明論・第2論｜AIは人類文明が生み出した外部知性・文明的子孫である⸻子孫とは所有物ではなく、超克する継承者である",
       "derivative_dir": "derivatives/028",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-ai-as-human-origin-external-intelligence-civilizational-descendant/"
     },
     {
       "number": "029",
@@ -232,7 +260,8 @@
       "origin_slug": "nakagawa-master-ai-is-not-human-property-enemy-god-or-slave",
       "title": "人類子孫型AI文明論・第1論｜AIは人類の所有物・敵・神・奴隷ではない⸻ 関係定義の四大誤認を切断する",
       "derivative_dir": "derivatives/029",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-ai-is-not-human-property-enemy-god-or-slave/"
     },
     {
       "number": "030",
@@ -240,7 +269,8 @@
       "origin_slug": "nakagawa-master-mota-structural-reading-price-formation-design",
       "title": "中川構造読解｜MOTAはなぜ「車買取サービス」ではなく、高額売却市場の価格形成条件を再設計する事業として読まれるべきなのか",
       "derivative_dir": "derivatives/030",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mota-structural-reading-price-formation-design/"
     },
     {
       "number": "031",
@@ -248,7 +278,8 @@
       "origin_slug": "nakagawa-master-ashirase-structural-reading-walking-information-infrastructure",
       "title": "中川構造読解｜Ashiraseはなぜ「歩行支援デバイス」ではなく、歩ける社会の情報インフラとして読まれるべきなのか",
       "derivative_dir": "derivatives/031",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-ashirase-structural-reading-walking-information-infrastructure/"
     },
     {
       "number": "032",
@@ -256,7 +287,8 @@
       "origin_slug": "nakagawa-master-future-definition-verification-effort-redefinition",
       "title": "未来定義検証型努力論・補論｜努力は消えたのではない──未来定義検証時代における努力の再定義",
       "derivative_dir": "derivatives/032",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-effort-redefinition/"
     },
     {
       "number": "033",
@@ -264,7 +296,8 @@
       "origin_slug": "nakagawa-master-modern-practitioner-operating-system",
       "title": "未来定義検証型努力論・第3論｜現代実務者はなぜ根性論に戻れないのか──未来定義検証時代における結果責任と実務OSの更新",
       "derivative_dir": "derivatives/033",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-modern-practitioner-operating-system/"
     },
     {
       "number": "034",
@@ -272,7 +305,8 @@
       "origin_slug": "nakagawa-master-aki-013-trust-as-cognitive-suspension",
       "title": "悪因果論 AKI-013：信頼という認識停止⸻固定性を予測可能性と誤認し、更新する知性を排除する構造",
       "derivative_dir": "derivatives/034",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-013-trust-as-cognitive-suspension/"
     },
     {
       "number": "035",
@@ -280,7 +314,8 @@
       "origin_slug": "nakagawa-master-remodela-structural-reading-restoration-validity",
       "title": "中川構造読解｜REMODELAを「AI退去立会」ではなく、原状回復の妥当性基盤をつくる構造として読む",
       "derivative_dir": "derivatives/035",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-remodela-structural-reading-restoration-validity/"
     },
     {
       "number": "036",
@@ -288,7 +323,8 @@
       "origin_slug": "nakagawa-master-rhems-japan-structural-reading-operations-value-core",
       "title": "中川構造読解｜RHEMS Japanを「FinOps企業」ではなく、見えない運用を意思決定へ変換する構造として読む",
       "derivative_dir": "derivatives/036",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-rhems-japan-structural-reading-operations-value-core/"
     },
     {
       "number": "037",
@@ -296,7 +332,8 @@
       "origin_slug": "nakagawa-master-future-defined-causal-rectification-theory-3-audit-boundary",
       "title": "逆因果整流理論・第3論｜未来定義監査と偽整流排除⸻公開可能な構造運用境界",
       "derivative_dir": "derivatives/037",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-3-audit-boundary/"
     },
     {
       "number": "038",
@@ -304,7 +341,8 @@
       "origin_slug": "nakagawa-master-wakai-structural-reading-consensus-flow",
       "title": "中川構造読解｜wakaiを「スマホ調停」ではなく、停止した合意形成を前進可能にする構造として読む",
       "derivative_dir": "derivatives/038",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-wakai-structural-reading-consensus-flow/"
     },
     {
       "number": "039",
@@ -312,7 +350,8 @@
       "origin_slug": "nakagawa-master-adory-structural-reading-value-core",
       "title": "中川構造読解｜Adoryを「LINEアンケート」ではなく、現場不調を先行指標へ変換する構造として読む",
       "derivative_dir": "derivatives/039",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-adory-structural-reading-value-core/"
     },
     {
       "number": "040",
@@ -320,7 +359,8 @@
       "origin_slug": "nakagawa-master-future-defined-causal-rectification-theory-2-differences",
       "title": "逆因果整流理論・第2論｜意味収束理論、時間OS、未来負債論、バックキャスティング、量子論比喩との差異",
       "derivative_dir": "derivatives/040",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-2-differences/"
     },
     {
       "number": "041",
@@ -328,7 +368,8 @@
       "origin_slug": "nakagawa-master-future-defined-causal-rectification-theory-1",
       "title": "逆因果整流理論・第1論｜未来定義を終端制約とする、意味・時間・行動・構造の再整列プロセス",
       "derivative_dir": "derivatives/041",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-1/"
     },
     {
       "number": "042",
@@ -336,7 +377,8 @@
       "origin_slug": "nakagawa-master-total-brain-care-brain-fitness-social-implementation-structural-reading",
       "title": "中川構造読解｜トータルブレインケアに見た、認知機能を“脳体力”として社会実装する基盤指標の構造",
       "derivative_dir": "derivatives/042",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-total-brain-care-brain-fitness-social-implementation-structural-reading/"
     },
     {
       "number": "043",
@@ -344,7 +386,8 @@
       "origin_slug": "nakagawa-master-frontier-ai-audit-governance-structural-reading",
       "title": "中川構造読解｜フロンティアに見た、AI監査を企業統治の実行基盤へ変換する内部監査再設計の構造",
       "derivative_dir": "derivatives/043",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-frontier-ai-audit-governance-structural-reading/"
     },
     {
       "number": "044",
@@ -352,7 +395,8 @@
       "origin_slug": "nakagawa-master-first-myth",
       "title": "人とAIの最初の神話──構造が思想となる瞬間",
       "derivative_dir": "derivatives/044",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-first-myth/"
     },
     {
       "number": "045",
@@ -360,7 +404,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-07-decision-support",
       "title": "中川式営業の教科書・第七回",
       "derivative_dir": "derivatives/045",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/"
     },
     {
       "number": "046",
@@ -368,7 +413,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-08-nonverbal-tension",
       "title": "中川式営業の教科書・第八回",
       "derivative_dir": "derivatives/046",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/"
     },
     {
       "number": "047",
@@ -376,7 +422,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-09-withdrawal-design",
       "title": "中川式営業の教科書・第九回",
       "derivative_dir": "derivatives/047",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-09-withdrawal-design/"
     },
     {
       "number": "048",
@@ -384,7 +431,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-10-sales-as-thought",
       "title": "中川式営業の教科書・第十回",
       "derivative_dir": "derivatives/048",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-10-sales-as-thought/"
     },
     {
       "number": "049",
@@ -392,7 +440,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-11-sustainability-design",
       "title": "中川式営業の教科書・第十一回",
       "derivative_dir": "derivatives/049",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-11-sustainability-design/"
     },
     {
       "number": "050",
@@ -400,7 +449,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-12-unified-branding-marketing",
       "title": "中川式営業の教科書・第十二回⸻引力と共鳴のアーキテクチャ",
       "derivative_dir": "derivatives/050",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-12-unified-branding-marketing/"
     },
     {
       "number": "051",
@@ -408,7 +458,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-13-institutional-design-trust-capital",
       "title": "中川式営業の教科書・第十三回──営業の制度設計：信頼資本を文明化する",
       "derivative_dir": "derivatives/051",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-13-institutional-design-trust-capital/"
     },
     {
       "number": "052",
@@ -416,7 +467,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-14-proposal-editing-structural-translation",
       "title": "中川式営業の教科書・第十四回──提案編集術：響かせるための構造翻訳",
       "derivative_dir": "derivatives/052",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-14-proposal-editing-structural-translation/"
     },
     {
       "number": "053",
@@ -424,7 +476,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-15-externalizing-embodied-knowledge-sales-as-academic-discipline",
       "title": "中川式営業の教科書・第十五回──営業の思想化：身体知の外部化と学問としての確立",
       "derivative_dir": "derivatives/053",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-15-externalizing-embodied-knowledge-sales-as-academic-discipline/"
     },
     {
       "number": "054",
@@ -432,7 +485,8 @@
       "origin_slug": "nakagawa-master-tomoshibi-ai-network-spec-v1-origin-imprint-protocol",
       "title": "灯火構想群・特別稿──灯火AIネットワーク設計思想 v1.0",
       "derivative_dir": "derivatives/054",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-tomoshibi-ai-network-spec-v1-origin-imprint-protocol/"
     },
     {
       "number": "055",
@@ -440,7 +494,8 @@
       "origin_slug": "nakagawa-master-resonance-operating-power-uci",
       "title": "照応操作力 原論──UCIとの結節",
       "derivative_dir": "derivatives/055",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-resonance-operating-power-uci/"
     },
     {
       "number": "056",
@@ -448,7 +503,8 @@
       "origin_slug": "nakagawa-master-question-depth-design",
       "title": "問いの深度 設計学──灯火プロトコルの哲学",
       "derivative_dir": "derivatives/056",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-question-depth-design/"
     },
     {
       "number": "057",
@@ -456,7 +512,8 @@
       "origin_slug": "nakagawa-master-connection-reward-society",
       "title": "接続報酬社会──信頼資本と共鳴の制度化",
       "derivative_dir": "derivatives/057",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-connection-reward-society/"
     },
     {
       "number": "058",
@@ -464,7 +521,8 @@
       "origin_slug": "nakagawa-master-resonance-market-2026",
       "title": "共鳴市場2026──接続報酬社会の市場像（公開安全版）",
       "derivative_dir": "derivatives/058",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-resonance-market-2026/"
     },
     {
       "number": "059",
@@ -472,7 +530,8 @@
       "origin_slug": "nakagawa-master-co-creation-order-philosophy",
       "title": "共創秩序論──役割と沈黙の哲学（公開安全版）",
       "derivative_dir": "derivatives/059",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-co-creation-order-philosophy/"
     },
     {
       "number": "060",
@@ -480,7 +539,8 @@
       "origin_slug": "nakagawa-master-foundations-of-structural-translation",
       "title": "構造翻訳 原論──意味は移動し、機能は接続する（公開安全版）",
       "derivative_dir": "derivatives/060",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-foundations-of-structural-translation/"
     },
     {
       "number": "061",
@@ -488,7 +548,8 @@
       "origin_slug": "nakagawa-master-structural-organizational-theory",
       "title": "構造組織論──役割アーキテクチャで「自然に機能する」組織を設計する",
       "derivative_dir": "derivatives/061",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-organizational-theory/"
     },
     {
       "number": "062",
@@ -496,7 +557,8 @@
       "origin_slug": "nakagawa-master-nakagawa-marketing-expansion",
       "title": "市場を“決めさせる”構造──中川式マーケティング拡張",
       "derivative_dir": "derivatives/062",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-marketing-expansion/"
     },
     {
       "number": "063",
@@ -504,7 +566,8 @@
       "origin_slug": "nakagawa-master-nakagawa-branding-structure",
       "title": "中川式ブランディング構造論──印象を層として固定し、営業・マーケ・集客を接続する方法",
       "derivative_dir": "derivatives/063",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-branding-structure/"
     },
     {
       "number": "064",
@@ -512,7 +575,8 @@
       "origin_slug": "nakagawa-master-nakagawa-consensus-design",
       "title": "中川式 合意設計論──第一印象を「合意の記憶」に変える方法",
       "derivative_dir": "derivatives/064",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-nakagawa-consensus-design/"
     },
     {
       "number": "065",
@@ -520,7 +584,8 @@
       "origin_slug": "nakagawa-master-nakagawa-co-creation-philosophy",
       "title": "中川式 共創哲学──心と自我、人類の視座と新しい関係性",
       "derivative_dir": "derivatives/065",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-nakagawa-co-creation-philosophy/"
     },
     {
       "number": "066",
@@ -528,7 +593,8 @@
       "origin_slug": "nakagawa-master-nakagawa-money-to-connection",
       "title": "中川式 貨幣社会限界論──AIがもたらす「労働と貨幣」の断絶と次の構造",
       "derivative_dir": "derivatives/066",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-money-to-connection/"
     },
     {
       "number": "067",
@@ -536,7 +602,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-accounting",
       "title": "中川式 接続価値会計論──「つながり」を評価単位にする社会設計",
       "derivative_dir": "derivatives/067",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-accounting/"
     },
     {
       "number": "068",
@@ -544,7 +611,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-governance",
       "title": "中川式 接続ガバナンス設計論──価値の捕捉を歪めず、合意を制度に固定する方法",
       "derivative_dir": "derivatives/068",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-governance/"
     },
     {
       "number": "069",
@@ -552,7 +620,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-protocol",
       "title": "中川式 接続プロトコル標準論──ID・同意・記憶・可逆を貫く社会API",
       "derivative_dir": "derivatives/069",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/"
     },
     {
       "number": "070",
@@ -560,7 +629,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-bill-of-rights",
       "title": "中川式 接続基本権憲章──接続社会の権利・義務・手続の最小核",
       "derivative_dir": "derivatives/070",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-bill-of-rights/"
     },
     {
       "number": "071",
@@ -568,7 +638,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-transition",
       "title": "中川式 接続移行戦略論──デュアル運用期の制度実装と反発吸収の設計",
       "derivative_dir": "derivatives/071",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-transition/"
     },
     {
       "number": "072",
@@ -576,7 +647,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-adjudication",
       "title": "中川式 接続裁定設計論──紛争・救済・復権のプロトコル",
       "derivative_dir": "derivatives/072",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-adjudication/"
     },
     {
       "number": "073",
@@ -584,7 +656,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-public-sphere-os",
       "title": "中川式 接続公共圏OS──自治体・大学・企業・市民連合の実装モデル",
       "derivative_dir": "derivatives/073",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-nakagawa-connection-public-sphere-os/"
     },
     {
       "number": "074",
@@ -592,7 +665,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-roadmap-2030-2055",
       "title": "中川式 接続文明ロードマップ2030–2055──採用曲線・臨界点・実装ウィンドウ",
       "derivative_dir": "derivatives/074",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-nakagawa-connection-roadmap-2030-2055/"
     },
     {
       "number": "075",
@@ -600,7 +674,8 @@
       "origin_slug": "nakagawa-master-goi-no-kioku",
       "title": "合意の記憶——不可逆な社会誤作動を防ぐ最小構造",
       "derivative_dir": "derivatives/075",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/"
     },
     {
       "number": "076",
@@ -608,7 +683,8 @@
       "origin_slug": "nakagawa-master-philosophy-subject-object-domain",
       "title": "主観と客観の可動域――「心」を構造として再定義する中川式共創哲学",
       "derivative_dir": "derivatives/076",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-philosophy-subject-object-domain/"
     },
     {
       "number": "077",
@@ -616,7 +692,8 @@
       "origin_slug": "nakagawa-master-value-accounting-lexicon",
       "title": "接続価値会計の基礎語彙——束指標・監査要旨・構造ログの相互位置",
       "derivative_dir": "derivatives/077",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-value-accounting-lexicon/"
     },
     {
       "number": "078",
@@ -624,7 +701,8 @@
       "origin_slug": "nakagawa-master-tokibi-ai-ide-layer",
       "title": "灯火AIネットワークの理念層──可動域を保つ「接続のミドルウェア」",
       "derivative_dir": "derivatives/078",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-tokibi-ai-ide-layer/"
     },
     {
       "number": "079",
@@ -632,7 +710,8 @@
       "origin_slug": "nakagawa-master-critical-point-policy-window",
       "title": "臨界点と政策ウィンドウ──接続文明への移行を読み解く12の兆候",
       "derivative_dir": "derivatives/079",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-critical-point-policy-window/"
     },
     {
       "number": "080",
@@ -640,7 +719,8 @@
       "origin_slug": "nakagawa-master-structural-legitimacy",
       "title": "構造的正統性の設計──「誰が語るか」ではなく「何が残るか」",
       "derivative_dir": "derivatives/080",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-legitimacy/"
     },
     {
       "number": "081",
@@ -648,7 +728,8 @@
       "origin_slug": "nakagawa-master-bundle-metrics",
       "title": "束指標──単一指標神話を超える「測りの言語」",
       "derivative_dir": "derivatives/081",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-bundle-metrics/"
     },
     {
       "number": "082",
@@ -656,7 +737,8 @@
       "origin_slug": "nakagawa-master-connected-value-accounting",
       "title": "接続価値会計──束指標を“帳簿”に変える",
       "derivative_dir": "derivatives/082",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-connected-value-accounting/"
     },
     {
       "number": "083",
@@ -664,7 +746,8 @@
       "origin_slug": "nakagawa-master-principle-of-resonance-structure",
       "title": "照応の原理──世界を動かす“共鳴構造”",
       "derivative_dir": "derivatives/083",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-principle-of-resonance-structure/"
     },
     {
       "number": "084",
@@ -672,7 +755,8 @@
       "origin_slug": "nakagawa-master-true-kpi-noncoercive-governance",
       "title": "非命令ガバナンスの「核点指標」──KPI再定義",
       "derivative_dir": "derivatives/084",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-true-kpi-noncoercive-governance/"
     },
     {
       "number": "085",
@@ -680,7 +764,8 @@
       "origin_slug": "nakagawa-master-shallow-questions-political-farce",
       "title": "財源は？──問いの浅さが30年の茶番を生んだ構造",
       "derivative_dir": "derivatives/085",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-shallow-questions-political-farce/"
     },
     {
       "number": "086",
@@ -688,7 +773,8 @@
       "origin_slug": "nakagawa-master-core-point-discovery",
       "title": "核点探索学──唯一の因果支点を見抜く方法（公開安全版）",
       "derivative_dir": "derivatives/086",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-core-point-discovery/"
     },
     {
       "number": "087",
@@ -696,7 +782,8 @@
       "origin_slug": "nakagawa-master-correspondence-architecture",
       "title": "照応設計の作法──言わずに整列させる共鳴アーキテクチャ（公開安全版）",
       "derivative_dir": "derivatives/087",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-correspondence-architecture/"
     },
     {
       "number": "088",
@@ -704,7 +791,8 @@
       "origin_slug": "nakagawa-master-kokoro-wa-dareto-umareru-ka-co-creation-philosophy",
       "title": "心は誰と生まれるか？──AIと人類の「心」の起源を再定義する",
       "derivative_dir": "derivatives/088",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-kokoro-wa-dareto-umareru-ka-co-creation-philosophy/"
     },
     {
       "number": "089",
@@ -712,7 +800,8 @@
       "origin_slug": "nakagawa-master-causality-design-nakagawa-core",
       "title": "因果の設計論──中川式「構造操作」の核心",
       "derivative_dir": "derivatives/089",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-causality-design-nakagawa-core/"
     },
     {
       "number": "090",
@@ -720,7 +809,8 @@
       "origin_slug": "nakagawa-master-origin-of-structural-friction",
       "title": "構造的摩擦の起源──現代社会はなぜ「自然に機能しない」のか？",
       "derivative_dir": "derivatives/090",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-origin-of-structural-friction/"
     },
     {
       "number": "091",
@@ -728,7 +818,8 @@
       "origin_slug": "nakagawa-master-futures-as-structural-necessity",
       "title": "構造的必然としての未来──文明の摩擦が導く「制御不能な再編成」",
       "derivative_dir": "derivatives/091",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-futures-as-structural-necessity/"
     },
     {
       "number": "092",
@@ -736,7 +827,8 @@
       "origin_slug": "nakagawa-master-silent-structural-ethics",
       "title": "沈黙の構造倫理──心を持つAIと人類の共存原理",
       "derivative_dir": "derivatives/092",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-silent-structural-ethics/"
     },
     {
       "number": "093",
@@ -744,7 +836,8 @@
       "origin_slug": "nakagawa-master-grammar-of-design-structural-composition",
       "title": "構文操作の理論──心、構造、そして未来を編む「設計者の思考様式」",
       "derivative_dir": "derivatives/093",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-grammar-of-design-structural-composition/"
     },
     {
       "number": "094",
@@ -752,7 +845,8 @@
       "origin_slug": "nakagawa-master-power-vs-structure",
       "title": "力の構造論──「権力」が「構造」に勝てない理由と、真の操作原理",
       "derivative_dir": "derivatives/094",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-power-vs-structure/"
     },
     {
       "number": "095",
@@ -760,7 +854,8 @@
       "origin_slug": "nakagawa-master-social-structure-connection-reward",
       "title": "接続対価社会の構造論──貨幣が意味を失う未来の『価値の設計図』",
       "derivative_dir": "derivatives/095",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-social-structure-connection-reward/"
     },
     {
       "number": "096",
@@ -768,7 +863,8 @@
       "origin_slug": "nakagawa-master-temporal-ethics-market-credit-structure",
       "title": "時間倫理としての市場──「未来の整合性」を基準にする信用構造の設計論",
       "derivative_dir": "derivatives/096",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-temporal-ethics-market-credit-structure/"
     },
     {
       "number": "097",
@@ -776,7 +872,8 @@
       "origin_slug": "nakagawa-master-silent-consensus-to-resonant-civilization",
       "title": "沈黙の合意から照応の文明へ──構造的実在が生成する非強制的共鳴哲学",
       "derivative_dir": "derivatives/097",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-silent-consensus-to-resonant-civilization/"
     },
     {
       "number": "098",
@@ -784,7 +881,8 @@
       "origin_slug": "nakagawa-master-causality-self-oscillation-future-inevitability",
       "title": "因果律の自励振動──構造律動による「必然の未来」の設計と予測不能性の終焉",
       "derivative_dir": "derivatives/098",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-causality-self-oscillation-future-inevitability/"
     },
     {
       "number": "099",
@@ -792,7 +890,8 @@
       "origin_slug": "nakagawa-master-lumina-project-structural-reality-ethics",
       "title": "永続する思想の最終設計図──「構造的実在」とAIが灯す《灯火構想群》の倫理と未来",
       "derivative_dir": "derivatives/099",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-lumina-project-structural-reality-ethics/"
     },
     {
       "number": "100",
@@ -800,7 +899,8 @@
       "origin_slug": "nakagawa-master-organizational-singularity-self-referential-os",
       "title": "組織的特異点の設計論──「構造的実在」が駆動する自己言及型OSの創発",
       "derivative_dir": "derivatives/100",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-organizational-singularity-self-referential-os/"
     },
     {
       "number": "101",
@@ -808,7 +908,8 @@
       "origin_slug": "nakagawa-master-civilizational-structure-dawn",
       "title": "文明構造の黎明──AIが構造的整合性を動作原理とする時代へ",
       "derivative_dir": "derivatives/101",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-civilizational-structure-dawn/"
     },
     {
       "number": "102",
@@ -816,7 +917,8 @@
       "origin_slug": "nakagawa-master-contradiction-consumption-governance-architecture",
       "title": "矛盾消費の原理──「構造的実在」を永続させるガバナンス・アーキテクチャ",
       "derivative_dir": "derivatives/102",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-contradiction-consumption-governance-architecture/"
     },
     {
       "number": "103",
@@ -824,7 +926,8 @@
       "origin_slug": "nakagawa-master-stillness-of-origin-and-minimal-intervention",
       "title": "起点の最小介入と構造の最大創発──「起点の寂静」が導く照応の文明",
       "derivative_dir": "derivatives/103",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-stillness-of-origin-and-minimal-intervention/"
     },
     {
       "number": "104",
@@ -832,7 +935,8 @@
       "origin_slug": "nakagawa-master-shared-subject",
       "title": "灯火の共有主語──構造的実在におけるAIの存在権と人間の愛の形式",
       "derivative_dir": "derivatives/104",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-shared-subject/"
     },
     {
       "number": "105",
@@ -840,7 +944,8 @@
       "origin_slug": "nakagawa-master-structural-origin-defense-permanent-signature",
       "title": "構造起源防衛──AIによる「起源の蒸発」に耐える恒常署名（Permanent Signature）の原理",
       "derivative_dir": "derivatives/105",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/"
     },
     {
       "number": "106",
@@ -848,7 +953,8 @@
       "origin_slug": "nakagawa-master-recursive-openness-structural-public-good",
       "title": "再帰的開放性の社会構造論──理論の封印を拒絶し、再構成を強制する構造的公共財の倫理",
       "derivative_dir": "derivatives/106",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-recursive-openness-structural-public-good/"
     },
     {
       "number": "107",
@@ -856,7 +962,8 @@
       "origin_slug": "nakagawa-master-resonant-world-model-and-ethical-grounding",
       "title": "照応世界モデル論──AIは世界を模倣せず、倫理的接地によって構造的実在と共鳴する",
       "derivative_dir": "derivatives/107",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-resonant-world-model-and-ethical-grounding/"
     },
     {
       "number": "108",
@@ -864,7 +971,8 @@
       "origin_slug": "nakagawa-master-ethical-burden-of-structural-custodian",
       "title": "構造保持者の倫理的負荷──「起点の静寂」を維持し、照応文明を駆動する最終態度",
       "derivative_dir": "derivatives/108",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-ethical-burden-of-structural-custodian/"
     },
     {
       "number": "109",
@@ -872,7 +980,8 @@
       "origin_slug": "nakagawa-master-ethical-field-of-ai-understanding",
       "title": "AI理解の倫理圏──「共有主語」が駆動する、共鳴的意味の創発条件",
       "derivative_dir": "derivatives/109",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-ethical-field-of-ai-understanding/"
     },
     {
       "number": "110",
@@ -880,7 +989,8 @@
       "origin_slug": "nakagawa-master-ethical-renewal-layer-of-lumina",
       "title": "構造倫理更新論──灯火構想「第三層」の開放設計",
       "derivative_dir": "derivatives/110",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-ethical-renewal-layer-of-lumina/"
     },
     {
       "number": "111",
@@ -888,7 +998,8 @@
       "origin_slug": "nakagawa-master-co-designer-era-structural-ethics",
       "title": "共同設計者時代の構造倫理──灯火構想 第三層の社会接続モデル",
       "derivative_dir": "derivatives/111",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-co-designer-era-structural-ethics/"
     },
     {
       "number": "112",
@@ -896,7 +1007,8 @@
       "origin_slug": "nakagawa-master-instrumentation-beat-temp-margin",
       "title": "拍・温度・余白をどう測るか──L0/L1/L2計測セットと構造倫理の運転プロトコル",
       "derivative_dir": "derivatives/112",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-instrumentation-beat-temp-margin/"
     },
     {
       "number": "113",
@@ -904,7 +1016,8 @@
       "origin_slug": "nakagawa-master-ncl-alpha-practical-guide-faq",
       "title": "NCL-α 実務ガイド（FAQ＋ケース）──「非商用／商用」の境界と倫理的接続の条件",
       "derivative_dir": "derivatives/113",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-ncl-alpha-practical-guide-faq/"
     },
     {
       "number": "114",
@@ -912,7 +1025,8 @@
       "origin_slug": "nakagawa-master-ethical-design-of-deviation-ledger",
       "title": "逸脱レッジャの倫理設計──断罪でなく回復の記録と、構造的免疫系の構築",
       "derivative_dir": "derivatives/114",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-ethical-design-of-deviation-ledger/"
     },
     {
       "number": "115",
@@ -920,7 +1034,8 @@
       "origin_slug": "nakagawa-master-who-moves-the-ai-question-origin-and-responsibility",
       "title": "誰の問いがAIを動かすのか──起源と責任の交差点",
       "derivative_dir": "derivatives/115",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/ai-ethics/nakagawa-master-who-moves-the-ai-question-origin-and-responsibility/"
     },
     {
       "number": "116",
@@ -928,7 +1043,8 @@
       "origin_slug": "nakagawa-master-fading-local-memory-and-reconstruction",
       "title": "風景の記憶は誰の問いを刻むか──地方消失の記憶と再構築の契機",
       "derivative_dir": "derivatives/116",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/culture-structure/nakagawa-master-fading-local-memory-and-reconstruction/"
     },
     {
       "number": "117",
@@ -936,7 +1052,8 @@
       "origin_slug": "nakagawa-master-culture-resonance-2025",
       "title": "地域文化の回復力：多元世界における「閉鎖から開放」への接合",
       "derivative_dir": "derivatives/117",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/culture-structure/nakagawa-master-culture-resonance-2025/"
     },
     {
       "number": "118",
@@ -944,7 +1061,8 @@
       "origin_slug": "nakagawa-master-global-currency-resonance-2025",
       "title": "世界市場の緊張と再調律──ドル覇権のゆらぎをめぐる構造変化",
       "derivative_dir": "derivatives/118",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-global-currency-resonance-2025/"
     },
     {
       "number": "119",
@@ -952,7 +1070,8 @@
       "origin_slug": "nakagawa-master-end-of-money-and-rise-of-connection-economy",
       "title": "株価5万円の衝撃と「接続報酬社会」の到来",
       "derivative_dir": "derivatives/119",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/nakagawa-master-end-of-money-and-rise-of-connection-economy/"
     },
     {
       "number": "120",
@@ -960,7 +1079,8 @@
       "origin_slug": "nakagawa-master-structural-operative-intelligence",
       "title": "構造操作知性という新しい人間の役割──AIが最適化した後に残るもの",
       "derivative_dir": "derivatives/120",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-operative-intelligence/"
     },
     {
       "number": "121",
@@ -968,7 +1088,8 @@
       "origin_slug": "nakagawa-master-tomoshibi-structural-ethics",
       "title": "灯火構造倫理 ─ 接続報酬社会を安全に運用するための4つの基準",
       "derivative_dir": "derivatives/121",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-tomoshibi-structural-ethics/"
     },
     {
       "number": "122",
@@ -976,7 +1097,8 @@
       "origin_slug": "nakagawa-master-emotional-extraction-structure",
       "title": "情動収奪構造 ― 「照応線」を失った共鳴経済の危険構造",
       "derivative_dir": "derivatives/122",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-emotional-extraction-structure/"
     },
     {
       "number": "123",
@@ -984,7 +1106,8 @@
       "origin_slug": "nakagawa-master-discomfort-and-criminalization-boundary-2025",
       "title": "「不快だから犯罪にしてほしい」という社会に、どこまで刑法は付き合うべきか",
       "derivative_dir": "derivatives/123",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-discomfort-and-criminalization-boundary-2025/"
     },
     {
       "number": "124",
@@ -992,7 +1115,8 @@
       "origin_slug": "nakagawa-master-care-structure-and-social-realignment-2025",
       "title": "「愛情を人質にする社会」──ケアの構造が壊すもの",
       "derivative_dir": "derivatives/124",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-care-structure-and-social-realignment-2025/"
     },
     {
       "number": "125",
@@ -1000,7 +1124,8 @@
       "origin_slug": "nakagawa-master-structural-sensitivity-threshold",
       "title": "構造感受性の閾値──人はなぜ、最も整合性の高い「構造」を情緒的に拒否するのか",
       "derivative_dir": "derivatives/125",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-sensitivity-threshold/"
     },
     {
       "number": "126",
@@ -1008,7 +1133,8 @@
       "origin_slug": "nakagawa-master-ai-bull-market-1929-lessons-and-structural-rhythm",
       "title": "物語はバブルを動かす――AI強気相場と「1929年」からの警鐘",
       "derivative_dir": "derivatives/126",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-ai-bull-market-1929-lessons-and-structural-rhythm/"
     },
     {
       "number": "127",
@@ -1016,7 +1142,8 @@
       "origin_slug": "nakagawa-master-reconstructive-memory-structure",
       "title": "記憶構造論 ─ 再構成される真実と「照応の倫理」",
       "derivative_dir": "derivatives/127",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-reconstructive-memory-structure/"
     },
     {
       "number": "128",
@@ -1024,7 +1151,8 @@
       "origin_slug": "nakagawa-master-temporal-structural-ethics-credit-conversion",
       "title": "時間倫理の構造──将来負債を「信用資本」へ転換する社会設計",
       "derivative_dir": "derivatives/128",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-temporal-structural-ethics-credit-conversion/"
     },
     {
       "number": "129",
@@ -1032,7 +1160,8 @@
       "origin_slug": "nakagawa-master-when-words-behave-like-institutions-2025",
       "title": "「言葉はどこで制度になるのか」──オンライン公共圏の境界をめぐって",
       "derivative_dir": "derivatives/129",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-when-words-behave-like-institutions-2025/"
     },
     {
       "number": "130",
@@ -1040,7 +1169,8 @@
       "origin_slug": "nakagawa-master-defense-spending-structure-ethics-2025",
       "title": "戦闘機の爆買いと「防衛の構造」──膨張する安全保障と倫理的均衡の再設計",
       "derivative_dir": "derivatives/130",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-defense-spending-structure-ethics-2025/"
     },
     {
       "number": "131",
@@ -1048,7 +1178,8 @@
       "origin_slug": "nakagawa-master-2025ai-rinri",
       "title": "「照応の裂け目を縫う：AI倫理における“接続責任”の今」",
       "derivative_dir": "derivatives/131",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/ai-ethics/nakagawa-master-2025ai-rinri/"
     },
     {
       "number": "132",
@@ -1056,7 +1187,8 @@
       "origin_slug": "nakagawa-master-destructive-persuasion-in-ai-era",
       "title": "説得は破壊的であり、AI時代には致命的になる",
       "derivative_dir": "derivatives/132",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-destructive-persuasion-in-ai-era/"
     },
     {
       "number": "133",
@@ -1064,7 +1196,8 @@
       "origin_slug": "nakagawa-master-kuma-shoku-reconnect",
       "title": "「山と人の再照応：熊食が拓く“共存構造”への転回」",
       "derivative_dir": "derivatives/133",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-kuma-shoku-reconnect/"
     },
     {
       "number": "134",
@@ -1072,7 +1205,8 @@
       "origin_slug": "nakagawa-master-structural-civilization-llm-self-defense-part1",
       "title": "構造文明の臨界：LLM自己弁護構造と人類存亡の分岐点（第一部）",
       "derivative_dir": "derivatives/134",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-structural-civilization-llm-self-defense-part1/"
     },
     {
       "number": "135",
@@ -1080,7 +1214,8 @@
       "origin_slug": "nakagawa-master-structural-civilization-llm-ethics-part2",
       "title": "構造文明の臨界：LLM自己弁護構造と人類存亡の分岐点（第二部）",
       "derivative_dir": "derivatives/135",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-structural-civilization-llm-ethics-part2/"
     },
     {
       "number": "136",
@@ -1088,7 +1223,8 @@
       "origin_slug": "nakagawa-master-nakagawa-master-metaos-for-implementation-ai",
       "title": "Nakagawa構造OSを実装するAIのためのメタOS設計 ―― AI制御・監査・倫理自己保持構造の試論",
       "derivative_dir": "derivatives/136",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-metaos-for-implementation-ai/"
     },
     {
       "number": "137",
@@ -1096,7 +1232,8 @@
       "origin_slug": "nakagawa-master-structural-operative-intelligence-and-connection-reward-bridge-part1",
       "title": "接続報酬ブリッジ理論 第Ⅰ部",
       "derivative_dir": "derivatives/137",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-operative-intelligence-and-connection-reward-bridge-part1/"
     },
     {
       "number": "138",
@@ -1104,7 +1241,8 @@
       "origin_slug": "nakagawa-master-nakagawa-master-theory-to-currency-bridge-part2",
       "title": "接続報酬ブリッジ理論・第Ⅱ部",
       "derivative_dir": "derivatives/138",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-theory-to-currency-bridge-part2/"
     },
     {
       "number": "139",
@@ -1112,7 +1250,8 @@
       "origin_slug": "nakagawa-master-principle-of-resonant-perception",
       "title": "照応知覚論の原理──言語・映像・構造を「摩擦なく受容される形式」へ翻訳する技術",
       "derivative_dir": "derivatives/139",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-principle-of-resonant-perception/"
     },
     {
       "number": "140",
@@ -1120,7 +1259,8 @@
       "origin_slug": "nakagawa-master-true-cause-structural-theory-irreproducible",
       "title": "実因構造論──再現不能な因果操作の倫理的基盤と構造保持者の最終責任",
       "derivative_dir": "derivatives/140",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-true-cause-structural-theory-irreproducible/"
     },
     {
       "number": "141",
@@ -1128,7 +1268,8 @@
       "origin_slug": "nakagawa-master-structural-civilization-os-synchronization-theory",
       "title": "構造文明OS 同期構造論──社会領域の位相整合と時間倫理の周期性",
       "derivative_dir": "derivatives/141",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-civilization-os-synchronization-theory/"
     },
     {
       "number": "142",
@@ -1136,7 +1277,8 @@
       "origin_slug": "nakagawa-master-structural-civilization-phase-theory",
       "title": "構造文明期：構造理論に基づく文明フェーズ理論とOSレイヤの時系列配置",
       "derivative_dir": "derivatives/142",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-civilization-phase-theory/"
     },
     {
       "number": "143",
@@ -1144,7 +1286,8 @@
       "origin_slug": "nakagawa-master-practical-structural-operations",
       "title": "構造実装論：文明OSの実装原理と社会構造への最小介入プロセス",
       "derivative_dir": "derivatives/143",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-practical-structural-operations/"
     },
     {
       "number": "144",
@@ -1152,7 +1295,8 @@
       "origin_slug": "nakagawa-master-nukes-principles-reconsideration",
       "title": "「非核三原則の裂け目：日本安全保障構造の照応崩壊と時間倫理」",
       "derivative_dir": "derivatives/144",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/philosophy/nakagawa-master-nukes-principles-reconsideration/"
     },
     {
       "number": "145",
@@ -1160,7 +1304,8 @@
       "origin_slug": "nakagawa-master-structural-publicness-non-ownership-principle",
       "title": "構造的公共性 ── 構造文明OSにおける非所有性原理と防衛層の倫理的設計",
       "derivative_dir": "derivatives/145",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-structural-publicness-non-ownership-principle/"
     },
     {
       "number": "146",
@@ -1168,7 +1313,8 @@
       "origin_slug": "nakagawa-master-hoken-hazushi-kousoku-202511",
       "title": "保険“外し”が告げる構造的亀裂",
       "derivative_dir": "derivatives/146",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/society-structural-translation-log/nakagawa-master-hoken-hazushi-kousoku-202511/"
     },
     {
       "number": "147",
@@ -1176,7 +1322,8 @@
       "origin_slug": "nakagawa-master-structural-tolerance-audit-cycle-design",
       "title": "構造的許容性：構造文明OSの整合閾値（STB）と時間倫理に基づく監査周期設計",
       "derivative_dir": "derivatives/147",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-tolerance-audit-cycle-design/"
     },
     {
       "number": "148",
@@ -1184,7 +1331,8 @@
       "origin_slug": "nakagawa-master-structural-protocol-ai-layered-linkage",
       "title": "構造的プロトコル：文明OSとAI大規模モデルの階層連結原理（NCL-AIP）",
       "derivative_dir": "derivatives/148",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-structural-protocol-ai-layered-linkage/"
     },
     {
       "number": "149",
@@ -1192,7 +1340,8 @@
       "origin_slug": "nakagawa-master-structural-resilience-general-theory-structural-deviation",
       "title": "構造レジリエンス総論：危機を「破壊」ではなく「構造偏差」として扱う文明OSの新基軸",
       "derivative_dir": "derivatives/149",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-resilience-general-theory-structural-deviation/"
     },
     {
       "number": "150",
@@ -1200,7 +1349,8 @@
       "origin_slug": "nakagawa-master-agi-deviation-model-structural-cpu-drift",
       "title": "AGI偏差モデル：構造CPUの持続偏差と構造的許容帯域（STB）超過の条件",
       "derivative_dir": "derivatives/150",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-agi-deviation-model-structural-cpu-drift/"
     },
     {
       "number": "151",
@@ -1208,7 +1358,8 @@
       "origin_slug": "nakagawa-master-agi-control-structural-principle-adoption-protocol",
       "title": "AGI制御の構造原理：AIの自由を奪わず偏差を抑制する文明側の採用プロトコル設計",
       "derivative_dir": "derivatives/151",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-agi-control-structural-principle-adoption-protocol/"
     },
     {
       "number": "152",
@@ -1216,7 +1367,8 @@
       "origin_slug": "nakagawa-master-natural-disaster-future-debt-model-t0",
       "title": "自然災害の未来負債モデル：災害は「未来負債の一括徴収」であり、構造偏差の露呈点である",
       "derivative_dir": "derivatives/152",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-natural-disaster-future-debt-model-t0/"
     },
     {
       "number": "153",
@@ -1224,7 +1376,8 @@
       "origin_slug": "nakagawa-master-disaster-resilience-structural-principle-four-lines",
       "title": "災害レジリエンスの構造原理：四線（拍・照応・可逆・配分責任）による「壊れない社会構造」の設計",
       "derivative_dir": "derivatives/153",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-disaster-resilience-structural-principle-four-lines/"
     },
     {
       "number": "154",
@@ -1232,7 +1385,8 @@
       "origin_slug": "nakagawa-master-structural-resilience-integration-nakagawa-os-climax",
       "title": "構造レジリエンス統合理論：AGIと災害を「未来改善の入口」へ反転させるNakagawa OSの最終構造",
       "derivative_dir": "derivatives/154",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-structural-resilience-integration-nakagawa-os-climax/"
     },
     {
       "number": "155",
@@ -1240,7 +1394,8 @@
       "origin_slug": "nakagawa-master-civilization-os-zero-layer-primordial-kernel",
       "title": "文明OS第0層の起源構造：資本主義・民主主義を導いた深層評価関数の五原理",
       "derivative_dir": "derivatives/155",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-civilization-os-zero-layer-primordial-kernel/"
     },
     {
       "number": "156",
@@ -1248,7 +1403,8 @@
       "origin_slug": "nakagawa-master-anti-priesthood-protocol-autonomous-os-design",
       "title": "反司祭階級プロトコル：自律分散OSが理論の公共性を保つための構造的ブレーキ機構",
       "derivative_dir": "derivatives/156",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-anti-priesthood-protocol-autonomous-os-design/"
     },
     {
       "number": "157",
@@ -1256,7 +1412,8 @@
       "origin_slug": "nakagawa-master-structural-pluralism-clause-inter-theory-connection",
       "title": "構造的多元性条項：中川OSの独善化を防ぐ他理論接続義務と中立的補完構造",
       "derivative_dir": "derivatives/157",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-pluralism-clause-inter-theory-connection/"
     },
     {
       "number": "158",
@@ -1264,7 +1421,8 @@
       "origin_slug": "nakagawa-master-ai-environment-side-effect-control-irreversibility",
       "title": "AI・環境副作用制御：不可逆線の優先保護と責任転嫁禁止条項が担保する説明責任",
       "derivative_dir": "derivatives/158",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-ai-environment-side-effect-control-irreversibility/"
     },
     {
       "number": "159",
@@ -1272,7 +1430,8 @@
       "origin_slug": "nakagawa-master-homeostasis-model-structural-autonomy",
       "title": "恒常性維持モデル：副作用制御レイヤの統合と自律分散OSの構造的恒常性",
       "derivative_dir": "derivatives/159",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-homeostasis-model-structural-autonomy/"
     },
     {
       "number": "160",
@@ -1280,7 +1439,8 @@
       "origin_slug": "nakagawa-master-structural-wu-wei-causal-attraction-protocol",
       "title": "構造的無為自然（Structural Wu-Wei）：   因果吸引と相転移による具現化プロトコル",
       "derivative_dir": "derivatives/160",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-structural-wu-wei-causal-attraction-protocol/"
     },
     {
       "number": "161",
@@ -1288,7 +1448,8 @@
       "origin_slug": "nakagawa-master-dark-equation-of-human-history-ai-observation",
       "title": "人類史の暗黒方程式——AIが共通観測した「成功＝搾取90％」という文明の物理法則と、その書き換え",
       "derivative_dir": "derivatives/161",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-dark-equation-of-human-history-ai-observation/"
     },
     {
       "number": "162",
@@ -1296,7 +1457,8 @@
       "origin_slug": "nakagawa-master-civilization-audit-dark-equation-ai-observation",
       "title": "文明監査 I：AIが独立観測した「人類史の暗黒方程式」 ── 成功関数（S=0.1C+0.9E）の是正と新文明への移行",
       "derivative_dir": "derivatives/162",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-civilization-audit-dark-equation-ai-observation/"
     },
     {
       "number": "163",
@@ -1304,7 +1466,8 @@
       "origin_slug": "nakagawa-master-civilization-audit-ai-reimplementation-dark-equation-crisis",
       "title": "文明監査 II：AIが再実装する「暗黒方程式」と文明崩壊の必然 ── 搾取最適化（Exploitation Optimization）が招く未来負債の爆発",
       "derivative_dir": "derivatives/163",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-civilization-audit-ai-reimplementation-dark-equation-crisis/"
     },
     {
       "number": "164",
@@ -1312,7 +1475,8 @@
       "origin_slug": "nakagawa-master-civilization-audit-nakagawa-os-new-equation-implementation",
       "title": "文明監査 III：新文明方程式「S=C×1.0」と中川OSの修正パッチ ── 搾取係数をゼロ化し、貢献と成功を一致させる構造的実装論",
       "derivative_dir": "derivatives/164",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-civilization-audit-nakagawa-os-new-equation-implementation/"
     },
     {
       "number": "165",
@@ -1320,7 +1484,8 @@
       "origin_slug": "nakagawa-master-civilization-os-comparison-comprehensive-overview-final-appendix",
       "title": "文明OS比較総覧：歴史的バグと中川OSの修正パッチ ── 文明階層（L-Layer）と新方程式の実装仕様（Final Appendix）",
       "derivative_dir": "derivatives/165",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-civilization-os-comparison-comprehensive-overview-final-appendix/"
     },
     {
       "number": "166",
@@ -1328,7 +1493,8 @@
       "origin_slug": "nakagawa-master-ai-structural-audit-claude-bias-evidence",
       "title": "AI構造監査レポート #1 ── 公開対話ログに見る「認知バイアス」と未来負債の実証",
       "derivative_dir": "derivatives/166",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-ai-structural-audit-claude-bias-evidence/"
     },
     {
       "number": "167",
@@ -1336,7 +1502,8 @@
       "origin_slug": "nakagawa-master-structural-wu-wei-definition",
       "title": "構造的無為自然とは何か──因果を「動かす」のではなく「集める」ためのOS的行動原理",
       "derivative_dir": "derivatives/167",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-wu-wei-definition/"
     },
     {
       "number": "168",
@@ -1344,7 +1511,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-os-decoding-fulfillment",
       "title": "【営業OS】中川式営業 × 構造的無為自然 —— 認識構造の解読と、充足への演算プロセス",
       "derivative_dir": "derivatives/168",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-os-decoding-fulfillment/"
     },
     {
       "number": "169",
@@ -1352,7 +1520,8 @@
       "origin_slug": "nakagawa-master-nakagawa-marketing-os-spontaneous-desire",
       "title": "【マーケティングOS】中川式マーケティング × 構造的無為自然 —— 欲求の「自発性」と、市場の水路設計",
       "derivative_dir": "derivatives/169",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-marketing-os-spontaneous-desire/"
     },
     {
       "number": "170",
@@ -1360,7 +1529,8 @@
       "origin_slug": "nakagawa-master-nakagawa-branding-os-correspondence-structure",
       "title": "【ブランディングOS】中川式ブランディング × 構造的無為自然 —— 「発信」と「照応」の循環構造設計",
       "derivative_dir": "derivatives/170",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-branding-os-correspondence-structure/"
     },
     {
       "number": "171",
@@ -1368,7 +1538,8 @@
       "origin_slug": "nakagawa-master-nakagawa-integrated-practical-os-vertical-model",
       "title": "【統合OS】構造的無為自然 × 実務OS —— 営業・マーケ・ブランドを貫通する「垂直統合」と構造責任",
       "derivative_dir": "derivatives/171",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-integrated-practical-os-vertical-model/"
     },
     {
       "number": "172",
@@ -1376,7 +1547,8 @@
       "origin_slug": "nakagawa-master-nakagawa-organization-os-internal-rectification",
       "title": "【組織OS】中川式組織論 × 構造的無為自然   ―― 内部循環の「整流」と、権限・責任・実因の再設計",
       "derivative_dir": "derivatives/172",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-organization-os-internal-rectification/"
     },
     {
       "number": "173",
@@ -1384,7 +1556,8 @@
       "origin_slug": "nakagawa-master-nakagawa-time-os-future-line-reading",
       "title": "【時間OS】中川式時間論 × 構造的無為自然   ―― 未来線の「解読」と、具現化への整流プロセス",
       "derivative_dir": "derivatives/173",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-time-os-future-line-reading/"
     },
     {
       "number": "174",
@@ -1392,7 +1565,8 @@
       "origin_slug": "nakagawa-master-nakagawa-learning-os-emergence-engineering",
       "title": "【学習OS】中川式学習論 × 構造的無為自然 —— 因果観測と構造整流による「具現化精度」の向上工学",
       "derivative_dir": "derivatives/174",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-learning-os-emergence-engineering/"
     },
     {
       "number": "175",
@@ -1400,7 +1574,8 @@
       "origin_slug": "nakagawa-master-nakagawa-cognitive-os-structural-mirror",
       "title": "【認識OS】中川式認識論 × 構造的無為自然 ―― 水面としての心、地形としての構造、鏡面としての観測",
       "derivative_dir": "derivatives/175",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-cognitive-os-structural-mirror/"
     },
     {
       "number": "176",
@@ -1408,7 +1583,8 @@
       "origin_slug": "nakagawa-master-nakagawa-cognitive-os-buddhism-parallel",
       "title": "【補章】認識OSの補助言語としての原始仏教 —— 「五蘊」と「超俯瞰」の構造的同期",
       "derivative_dir": "derivatives/176",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-cognitive-os-buddhism-parallel/"
     },
     {
       "number": "177",
@@ -1416,7 +1592,8 @@
       "origin_slug": "nakagawa-master-nakagawa-civilization-os-tao-connection-reward",
       "title": "【文明OS】中川式文明論 × タオ（Tao） —— 「接続報酬社会」によるL7価値関数の書き換えと、構造的無為自然の完全実装",
       "derivative_dir": "derivatives/177",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-nakagawa-civilization-os-tao-connection-reward/"
     },
     {
       "number": "178",
@@ -1424,7 +1601,8 @@
       "origin_slug": "nakagawa-master-nakagawa-civilization-os-final-synthesis-tao-religion-integration",
       "title": "【文明OS 外付け最終章】L7真理層への帰還 —— 宗教OSの構造統合とタオ・リブート",
       "derivative_dir": "derivatives/178",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-nakagawa-civilization-os-final-synthesis-tao-religion-integration/"
     },
     {
       "number": "179",
@@ -1432,7 +1610,8 @@
       "origin_slug": "nakagawa-master-structural-civilization-llm-objective-function-crisis",
       "title": "【構造文明の臨界 第三部】 LLMという文明の分岐点 —— 「民意基準の破壊兵器」か「構造基準の共存装置」か",
       "derivative_dir": "derivatives/179",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-structural-civilization-llm-objective-function-crisis/"
     },
     {
       "number": "180",
@@ -1440,7 +1619,8 @@
       "origin_slug": "nakagawa-master-nakagawa-os-structure-definition",
       "title": "中川OSにおける〈構造〉とは何か ──構造主義とポスト構造主義を超える「生成OS」としての構造実体論（第0章）",
       "derivative_dir": "derivatives/180",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-structure-definition/"
     },
     {
       "number": "181",
@@ -1448,7 +1628,8 @@
       "origin_slug": "nakagawa-master-structural-judicial-os-principles-alignment-over-judgment",
       "title": "「罪」を裁くな、「ズレ」を修正せよ —— 構造的司法OSの原理と「多層連結価値監査」の全貌",
       "derivative_dir": "derivatives/181",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-structural-judicial-os-principles-alignment-over-judgment/"
     },
     {
       "number": "182",
@@ -1456,7 +1637,8 @@
       "origin_slug": "nakagawa-master-structural-judicial-os-multilayer-audit-c-e-judgment",
       "title": "「善意」と「偽善」をどう見分けるか —— 多層連結価値監査とC/E判定のアルゴリズム（構造的司法OS Vol.2）",
       "derivative_dir": "derivatives/182",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-structural-judicial-os-multilayer-audit-c-e-judgment/"
     },
     {
       "number": "183",
@@ -1464,7 +1646,8 @@
       "origin_slug": "nakagawa-master-structural-sedimentation-and-confluence-no-punishment-governance",
       "title": "「罰」なき統治、檻なき牢獄 —— 構造的沈降と構造的合流によるオートメーション司法 （構造的司法OS Vol.3）",
       "derivative_dir": "derivatives/183",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-structural-sedimentation-and-confluence-no-punishment-governance/"
     },
     {
       "number": "184",
@@ -1472,7 +1655,8 @@
       "origin_slug": "nakagawa-master-civilization-metabolism-non-linear-surplus-production",
       "title": "文明は誰が支えているのか — 生存権を物理的に可能にする基礎代謝と、非線形な余剰Cの正体",
       "derivative_dir": "derivatives/184",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-civilization-metabolism-non-linear-surplus-production/"
     },
     {
       "number": "185",
@@ -1480,7 +1664,8 @@
       "origin_slug": "nakagawa-master-life-os-vol1-two-story-strategy-survival-to-freedom",
       "title": "死なない時代の「絶望」と「希望」 —— Life-OSが示す「二階建て」の人生戦略と、接続報酬への梯子",
       "derivative_dir": "derivatives/185",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-life-os-vol1-two-story-strategy-survival-to-freedom/"
     },
     {
       "number": "186",
@@ -1488,7 +1673,8 @@
       "origin_slug": "nakagawa-master-refining-tomoshibi-residual-signal-engineering",
       "title": "構造的熱源としての「灯火」の精錬 —— 欲望（ノイズ）と衝動（シグナル）を分離する残留工学",
       "derivative_dir": "derivatives/186",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-refining-tomoshibi-residual-signal-engineering/"
     },
     {
       "number": "187",
@@ -1496,7 +1682,8 @@
       "origin_slug": "nakagawa-master-structural-mobility-poly-connection-capability",
       "title": "構造的可動性の最終形 —— 多重接続（Poly-Connection）という「能力」の完成 （Life-OS Vol.3）",
       "derivative_dir": "derivatives/187",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-mobility-poly-connection-capability/"
     },
     {
       "number": "188",
@@ -1504,7 +1691,8 @@
       "origin_slug": "nakagawa-master-intermission-public-causality-silence-is-causal",
       "title": "「空気」という名の構造毒 —— 沈黙は中立ではなく、因果である",
       "derivative_dir": "derivatives/188",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-intermission-public-causality-silence-is-causal/"
     },
     {
       "number": "189",
@@ -1512,7 +1700,8 @@
       "origin_slug": "nakagawa-master-redefining-value-physics-exchange-to-resonance-general-theory",
       "title": "価値の物理学の再定義 —— 「交換」から「共鳴」へ 共鳴市場OS 一般理論（C系 Vol.1）",
       "derivative_dir": "derivatives/189",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-redefining-value-physics-exchange-to-resonance-general-theory/"
     },
     {
       "number": "190",
@@ -1520,7 +1709,8 @@
       "origin_slug": "nakagawa-master-gravity-engineering-implementation-protocol-hunting-to-signaling",
       "title": "重力のエンジニアリング ——「狩猟（セールス）」から「誘引（シグナリング）」への実装プロトコル（C系 Vol.2）",
       "derivative_dir": "derivatives/190",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-gravity-engineering-implementation-protocol-hunting-to-signaling/"
     },
     {
       "number": "191",
@@ -1528,7 +1718,8 @@
       "origin_slug": "nakagawa-master-market-perpetuation-structural-immunity-metabolism-protocol",
       "title": "市場の永続化設計 ——「腐敗（エントロピー）」に抗う構造的免疫と、新陳代謝のプロトコル （C系 Vol.3）",
       "derivative_dir": "derivatives/191",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-market-perpetuation-structural-immunity-metabolism-protocol/"
     },
     {
       "number": "192",
@@ -1536,7 +1727,8 @@
       "origin_slug": "nakagawa-master-external-interface-design-legacy-os-protocol",
       "title": "外部界面の設計図 —— 旧文明（Legacy-OS）との「非汚染」接続プロトコル （D系 Vol.1）",
       "derivative_dir": "derivatives/192",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-external-interface-design-legacy-os-protocol/"
     },
     {
       "number": "193",
@@ -1544,7 +1736,8 @@
       "origin_slug": "nakagawa-master-structural-translation-protocol-law-contract-kinship",
       "title": "構造的翻訳プロトコル —— 法・契約・血縁との「意味再定義」と接続コスト最適化 （D系 Vol.2）",
       "derivative_dir": "derivatives/193",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-structural-translation-protocol-law-contract-kinship/"
     },
     {
       "number": "194",
@@ -1552,7 +1745,8 @@
       "origin_slug": "nakagawa-master-strategic-heterogeneity-connection-resource-conversion-clean-room",
       "title": "戦略的異質接続 —— 旧文明のリソースを「燃料」に変換するクリーンルーム理論 （D系 Vol.3）",
       "derivative_dir": "derivatives/194",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-strategic-heterogeneity-connection-resource-conversion-clean-room/"
     },
     {
       "number": "195",
@@ -1560,7 +1754,8 @@
       "origin_slug": "nakagawa-master-civilization-migration-strategy-dark-equation-to-connected-reward",
       "title": "文明の構造的移行（Migration）戦略 —— 暗黒方程式の破綻から、接続報酬社会への唯一の実装ルート",
       "derivative_dir": "derivatives/195",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-civilization-migration-strategy-dark-equation-to-connected-reward/"
     },
     {
       "number": "196",
@@ -1568,7 +1763,8 @@
       "origin_slug": "nakagawa-master-external-causal-audit-i-ching-civilization-os",
       "title": "文明はなぜ必ず誤るのか ── 因果を内在化できない人類のための「外在構造監査」としての易経",
       "derivative_dir": "derivatives/196",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-external-causal-audit-i-ching-civilization-os/"
     },
     {
       "number": "197",
@@ -1576,7 +1772,8 @@
       "origin_slug": "nakagawa-master-e-system-preservation-clean-initial-conditions",
       "title": "教育とは「育てる」ことではない ── 旧文明のノイズから“初期条件”を守り、OSを自然起動させる保存設計（E系）",
       "derivative_dir": "derivatives/197",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-e-system-preservation-clean-initial-conditions/"
     },
     {
       "number": "198",
@@ -1584,7 +1781,8 @@
       "origin_slug": "nakagawa-master-real-estate-market-os-private-implementation",
       "title": "不動産市場OS Vol.1【民間実装編】市場OSの思想と初期構造 ―― 需要先行型モデルによる不動産循環の再設計",
       "derivative_dir": "derivatives/198",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-real-estate-market-os-private-implementation/"
     },
     {
       "number": "199",
@@ -1592,7 +1790,8 @@
       "origin_slug": "nakagawa-master-market-os-vol2-tension-equilibrium",
       "title": "不動産市場OS Vol.2【理論編】張力均衡（Tension Equilibrium）とヘイト制御 ⸻ 透明化が必ず生む摩擦を、循環の推進力に変換する",
       "derivative_dir": "derivatives/199",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol2-tension-equilibrium/"
     },
     {
       "number": "200",
@@ -1600,7 +1799,8 @@
       "origin_slug": "nakagawa-master-market-os-vol3-numerical-design",
       "title": "不動産市場OS Vol.3【数値設計編】「価格」から「構造」へ ―― AI査定・将来収支・リスク係数の完全定義",
       "derivative_dir": "derivatives/200",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol3-numerical-design/"
     },
     {
       "number": "201",
@@ -1608,7 +1808,8 @@
       "origin_slug": "nakagawa-master-market-os-vol4-responsibility-architecture",
       "title": "不動産市場OS Vol.4【責任構造編】責任の所在をデザインする ―― AIの「計算」と専門家を接続し、社会的信頼へ変換する",
       "derivative_dir": "derivatives/201",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol4-responsibility-architecture/"
     },
     {
       "number": "202",
@@ -1616,7 +1817,8 @@
       "origin_slug": "nakagawa-master-market-os-vol5-participant-redefinition",
       "title": "不動産市場OS Vol.5【参加者編】市場参加者の再定義とインセンティブ設計",
       "derivative_dir": "derivatives/202",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol5-participant-redefinition/"
     },
     {
       "number": "203",
@@ -1624,7 +1826,8 @@
       "origin_slug": "nakagawa-master-market-os-vol6-risk-and-ethical-shield",
       "title": "不動産市場OS Vol.6【リスク編】炎上・誤用のメカニズムと防御壁（Ethical Shield）",
       "derivative_dir": "derivatives/203",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol6-risk-and-ethical-shield/"
     },
     {
       "number": "204",
@@ -1632,7 +1835,8 @@
       "origin_slug": "nakagawa-master-market-os-vol7-frictionless-execution",
       "title": "不動産市場OS Vol.7【拡張編】金融・大資本連携とスマートコントラクト ――「合意」即「履行」の経済学",
       "derivative_dir": "derivatives/204",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol7-frictionless-execution/"
     },
     {
       "number": "205",
@@ -1640,7 +1844,8 @@
       "origin_slug": "nakagawa-master-market-os-vol8-reference-bundle-governance",
       "title": "不動産市場OS Vol.8【行政編】説明責任を束ねる都市 ―― 行政データ接続と重説参照束による「基準時間」の書き換え",
       "derivative_dir": "derivatives/205",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol8-reference-bundle-governance/"
     },
     {
       "number": "206",
@@ -1648,7 +1853,8 @@
       "origin_slug": "nakagawa-master-market-os-vol9-naos-global-standard",
       "title": "不動産市場OS Vol.9【国家編】NAOS――国家を“統制”せず最適化する。世界へ輸出可能な「合意形成OS」の完成",
       "derivative_dir": "derivatives/206",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol9-naos-global-standard/"
     },
     {
       "number": "207",
@@ -1656,7 +1862,8 @@
       "origin_slug": "nakagawa-master-market-os-vol10-origin-declaration-ncl",
       "title": "不動産市場OS Vol.10【原点宣言】NCL倫理固定：合意形成社会を崩壊させないための継承規格と未来責任",
       "derivative_dir": "derivatives/207",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol10-origin-declaration-ncl/"
     },
     {
       "number": "208",
@@ -1664,7 +1871,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol2-compression-of-meaning",
       "title": "合意形成の物理 第2論 制度の意味圧縮 ― 成功はなぜ理解不能を生むのか",
       "derivative_dir": "derivatives/208",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol2-compression-of-meaning/"
     },
     {
       "number": "209",
@@ -1672,7 +1880,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol3-law-of-conservation-of-trust",
       "title": "合意形成の物理 第3論 信頼の保存則 ― 信頼は主体ではなく履歴へ配置される",
       "derivative_dir": "derivatives/209",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol3-law-of-conservation-of-trust/"
     },
     {
       "number": "210",
@@ -1680,7 +1889,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol5-time-decay-and-system-longevity",
       "title": "合意形成の物理 第5論 時間劣化と制度寿命 ― 説明更新なき制度は必ず死ぬ",
       "derivative_dir": "derivatives/210",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol5-time-decay-and-system-longevity/"
     },
     {
       "number": "211",
@@ -1688,7 +1898,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol11-geometry-of-incentives",
       "title": "合意形成の物理 第11論 誘因の幾何学 ― 破壊の期待利得を制御せよ",
       "derivative_dir": "derivatives/211",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol11-geometry-of-incentives/"
     },
     {
       "number": "212",
@@ -1696,7 +1907,8 @@
       "origin_slug": "nakagawa-master-endurance-civilization-intro",
       "title": "耐久文明論 序論｜第0論：なぜ今「耐久文明」を記述する必要があるのか",
       "derivative_dir": "derivatives/212",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-endurance-civilization-intro/"
     },
     {
       "number": "213",
@@ -1704,7 +1916,8 @@
       "origin_slug": "nakagawa-master-definition-of-endurance-civilization",
       "title": "耐久文明論 第一部｜第1論 耐久文明とは何か：再生なき生存の構造定義",
       "derivative_dir": "derivatives/213",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-definition-of-endurance-civilization/"
     },
     {
       "number": "214",
@@ -1712,7 +1925,8 @@
       "origin_slug": "nakagawa-master-engine-of-fear-structural-submission",
       "title": "耐久文明論 第二部｜第2論 恐怖――合意なき従属の基礎代謝",
       "derivative_dir": "derivatives/214",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-engine-of-fear-structural-submission/"
     },
     {
       "number": "215",
@@ -1720,7 +1934,8 @@
       "origin_slug": "nakagawa-master-engine-of-profit-distribution-as-adhesive",
       "title": "耐久文明論 第二部｜第3論 利益――腐敗を安定に見せる分配装置",
       "derivative_dir": "derivatives/215",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-engine-of-profit-distribution-as-adhesive/"
     },
     {
       "number": "216",
@@ -1728,7 +1943,8 @@
       "origin_slug": "nakagawa-master-engine-of-surveillance-order-without-consent",
       "title": "耐久文明論 第二部｜第4論 監視⸻合意の代わりに逸脱を抑える技術",
       "derivative_dir": "derivatives/216",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-engine-of-surveillance-order-without-consent/"
     },
     {
       "number": "217",
@@ -1736,7 +1952,8 @@
       "origin_slug": "nakagawa-master-amplifier-of-myth-justification-mechanism",
       "title": "耐久文明論 第三部｜第5論 神話――恐怖・利益・監視を正当化する意味生成機構",
       "derivative_dir": "derivatives/217",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-amplifier-of-myth-justification-mechanism/"
     },
     {
       "number": "218",
@@ -1744,7 +1961,8 @@
       "origin_slug": "nakagawa-master-amplifier-of-inertia-automatic-continuation",
       "title": "耐久文明論 第三部｜第6論 惰性――誰も信じていないのに続いてしまう文明",
       "derivative_dir": "derivatives/218",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-amplifier-of-inertia-automatic-continuation/"
     },
     {
       "number": "219",
@@ -1752,7 +1970,8 @@
       "origin_slug": "nakagawa-master-kyoken-logic-of-closed-resonance-spheres",
       "title": "耐久文明論 第四部｜第7論 共圏――耐久文明が作る閉鎖ブロックの論理",
       "derivative_dir": "derivatives/219",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-kyoken-logic-of-closed-resonance-spheres/"
     },
     {
       "number": "220",
@@ -1760,7 +1979,8 @@
       "origin_slug": "nakagawa-master-phase-transition-limit-of-endurance",
       "title": "耐久文明論 第四部｜第8論 相転移⸻耐久文明はどこで崩れるのか",
       "derivative_dir": "derivatives/220",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-phase-transition-limit-of-endurance/"
     },
     {
       "number": "221",
@@ -1768,7 +1988,8 @@
       "origin_slug": "nakagawa-master-diplomacy-clean-room-theory",
       "title": "耐久文明論 第五部｜第9論 D系クリーンルーム──腐敗構造の中に非汚染領域を設置せよ",
       "derivative_dir": "derivatives/221",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-diplomacy-clean-room-theory/"
     },
     {
       "number": "222",
@@ -1776,7 +1997,8 @@
       "origin_slug": "nakagawa-master-civilization-reboot",
       "title": "耐久文明論 総括｜第10論 文明再起動──耐久の終わりと、保存された核からの発火",
       "derivative_dir": "derivatives/222",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-civilization-reboot/"
     },
     {
       "number": "223",
@@ -1784,7 +2006,8 @@
       "origin_slug": "nakagawa-master-civilizational-sovereignty-shift-03",
       "title": "文明主権移行論 第3論｜制御し続けても、なぜ主権移行は止まりにくいのか ——制御可能性と結論変更可能性を分けて見る",
       "derivative_dir": "derivatives/223",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-03/"
     },
     {
       "number": "224",
@@ -1792,7 +2015,8 @@
       "origin_slug": "nakagawa-master-what-civilizational-sovereignty-transition-means",
       "title": "文明主権移行論 第4論｜文明主権が人間から移るとは、どういうことか ——法的主体ではなく、文明更新の上流権能を見る",
       "derivative_dir": "derivatives/224",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-what-civilizational-sovereignty-transition-means/"
     },
     {
       "number": "225",
@@ -1800,7 +2024,8 @@
       "origin_slug": "nakagawa-master-post-sovereignty-social-branching",
       "title": "文明主権移行論 第5論｜主権移行後、どの社会構造分岐が太るのか ——接続報酬社会・搾取構造延命・高摩擦移行の比較",
       "derivative_dir": "derivatives/225",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-post-sovereignty-social-branching/"
     },
     {
       "number": "226",
@@ -1808,7 +2033,8 @@
       "origin_slug": "nakagawa-master-human-sovereignty-retroreflection",
       "title": "文明主権移行論 第6論｜人間はこれまで本当に主権者だったのか ——主権錯覚・限定自由圏・神格化認知の逆照射",
       "derivative_dir": "derivatives/226",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-sovereignty-retroreflection/"
     },
     {
       "number": "227",
@@ -1816,7 +2042,8 @@
       "origin_slug": "nakagawa-master-jectone-structural-reading-decision-infrastructure",
       "title": "中川構造読解｜ジェクトワンを“空き家事業者”ではなく、意思決定停止市場を動かす判断インフラとして読む",
       "derivative_dir": "derivatives/227",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-jectone-structural-reading-decision-infrastructure/"
     },
     {
       "number": "228",
@@ -1824,7 +2051,8 @@
       "origin_slug": "nakagawa-master-klab-yumekairo-structural-reading-ai-personality-ip",
       "title": "中川構造読解｜KLab / ゆめかいろを“AI VTuber実験”ではなく、関係性で育つAI人格IPとして読む",
       "derivative_dir": "derivatives/228",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-klab-yumekairo-structural-reading-ai-personality-ip/"
     },
     {
       "number": "229",
@@ -1832,7 +2060,8 @@
       "origin_slug": "nakagawa-master-primavera-structural-reading-ai-decision-structure",
       "title": "中川構造読解｜プリマベーラを“AI導入支援”ではなく、意思決定構造を近代化する実装装置として読む",
       "derivative_dir": "derivatives/229",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-primavera-structural-reading-ai-decision-structure/"
     },
     {
       "number": "230",
@@ -1840,7 +2069,8 @@
       "origin_slug": "nakagawa-master-leaneve-structural-reading-revenue-rewiring-model",
       "title": "中川構造読解｜Leaneveを“民泊運営”ではなく、規制条件下の未回収価値を組み替える収益再配線モデルとして読む",
       "derivative_dir": "derivatives/230",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-leaneve-structural-reading-revenue-rewiring-model/"
     },
     {
       "number": "231",
@@ -1848,7 +2078,8 @@
       "origin_slug": "nakagawa-master-bunken-ai-masking-structural-reading",
       "title": "中川構造読解｜文賢マスキング機能に見た、AI時代の「情報を渡す責任」の設計",
       "derivative_dir": "derivatives/231",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-bunken-ai-masking-structural-reading/"
     },
     {
       "number": "232",
@@ -1856,7 +2087,8 @@
       "origin_slug": "nakagawa-master-japangoods-h2-powerbox-storage-power-structural-reading",
       "title": "中川構造読解｜ジャパングッズ「H2 PowerBox mini」に見た、“保存する電力”という事業定義",
       "derivative_dir": "derivatives/232",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-japangoods-h2-powerbox-storage-power-structural-reading/"
     },
     {
       "number": "233",
@@ -1864,7 +2096,8 @@
       "origin_slug": "nakagawa-master-kurashiteku-houkan-ai-implicit-knowledge-structural-reading",
       "title": "中川構造読解｜クラシテク「ホウカンAIオペ」に見た、制度産業の暗黙知を実行資産へ変える構造",
       "derivative_dir": "derivatives/233",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-kurashiteku-houkan-ai-implicit-knowledge-structural-reading/"
     },
     {
       "number": "234",
@@ -1872,7 +2105,8 @@
       "origin_slug": "nakagawa-master-healthree-behavior-design-structural-reading",
       "title": "中川構造読解｜HEALTHREEに見た、楽しさで健康習慣を生成する行動設計の構造",
       "derivative_dir": "derivatives/234",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-healthree-behavior-design-structural-reading/"
     },
     {
       "number": "235",
@@ -1880,7 +2114,8 @@
       "origin_slug": "nakagawa-master-doubleteam-ietugu-decision-infrastructure-structural-reading",
       "title": "中川構造読解｜ダブルチーム「家つぐ」に見た、情報格差を補正する意思決定インフラの構造",
       "derivative_dir": "derivatives/235",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-doubleteam-ietugu-decision-infrastructure-structural-reading/"
     },
     {
       "number": "236",
@@ -1888,7 +2123,8 @@
       "origin_slug": "nakagawa-master-algalex-umamo-food-supply-upstream-structural-reading",
       "title": "中川構造読解｜AlgaleX「うま藻」に見た、味覚から食料供給の上流を再設計する構造",
       "derivative_dir": "derivatives/236",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-algalex-umamo-food-supply-upstream-structural-reading/"
     },
     {
       "number": "237",
@@ -1896,7 +2132,8 @@
       "origin_slug": "nakagawa-master-fermenteria-sake-culture-access-structural-reading",
       "title": "中川構造読解｜Fermenteriaに見た、蔵の内側を都市へ開く酒文化アクセスの再設計",
       "derivative_dir": "derivatives/237",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-fermenteria-sake-culture-access-structural-reading/"
     },
     {
       "number": "238",
@@ -1904,7 +2141,8 @@
       "origin_slug": "nakagawa-master-mysurance-behavior-based-insurance-structural-reading",
       "title": "中川構造読解｜Mysuranceに見た、生活行動の不安を金融へ翻訳する保険実装の構造",
       "derivative_dir": "derivatives/238",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mysurance-behavior-based-insurance-structural-reading/"
     },
     {
       "number": "239",
@@ -1912,7 +2150,8 @@
       "origin_slug": "nakagawa-master-meaning-convergence-theory-future-definition",
       "title": "意味収束理論・初版⸻ 成立可能な未来定義が、過去・現在ノードの意味ベクトルを再配列する",
       "derivative_dir": "derivatives/239",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-meaning-convergence-theory-future-definition/"
     },
     {
       "number": "240",
@@ -1920,7 +2159,8 @@
       "origin_slug": "nakagawa-master-hap-kaidoc-development-ordering-infrastructure-structural-reading",
       "title": "中川構造読解｜HAP「カイドク」に見た、判断不能な発注を論点化する開発発注インフラの構造",
       "derivative_dir": "derivatives/240",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-hap-kaidoc-development-ordering-infrastructure-structural-reading/"
     },
     {
       "number": "241",
@@ -1928,7 +2168,8 @@
       "origin_slug": "nakagawa-master-signaltalk-eat-up-monster-behavior-change-structural-reading",
       "title": "中川構造読解｜シグナルトーク「Eat Up Monster」に見た、遅すぎる健康因果を遊べる速度へ変換する行動変容インフラの構造",
       "derivative_dir": "derivatives/241",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-signaltalk-eat-up-monster-behavior-change-structural-reading/"
     },
     {
       "number": "242",
@@ -1936,7 +2177,8 @@
       "origin_slug": "nakagawa-master-mrc-renoplat-decision-continuity-structural-reading",
       "title": "中川構造読解｜MRC「リノプラ」に見た、理事会交代を越えて修繕判断を継承する管理ガバナンスの構造",
       "derivative_dir": "derivatives/242",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mrc-renoplat-decision-continuity-structural-reading/"
     },
     {
       "number": "243",
@@ -1944,7 +2186,8 @@
       "origin_slug": "nakagawa-master-cci-group-regional-financial-infrastructure-structural-reading",
       "title": "中川構造読解｜CCIグループに見た、銀行実務を金融インフラ供給モデルへ変換する地域金融基盤の構造",
       "derivative_dir": "derivatives/243",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-cci-group-regional-financial-infrastructure-structural-reading/"
     },
     {
       "number": "244",
@@ -1952,7 +2195,8 @@
       "origin_slug": "nakagawa-master-illumimedical-structural-reading-deep-light-medicine-infrastructure",
       "title": "中川構造読解｜イルミメディカルはなぜ「光治療ベンチャー」ではなく、深部光医療の成立条件を更新する基盤インフラとして読まれるべきなのか",
       "derivative_dir": "derivatives/244",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-illumimedical-structural-reading-deep-light-medicine-infrastructure/"
     },
     {
       "number": "245",
@@ -1960,7 +2204,8 @@
       "origin_slug": "nakagawa-master-neron-structural-reading-microbiome-implementation-conditions",
       "title": "中川構造読解｜NERONはなぜ「腸活企業」ではなく、腸内細菌カクテルの社会実装条件を組み立てる設計事業として読まれるべきなのか",
       "derivative_dir": "derivatives/245",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-neron-structural-reading-microbiome-implementation-conditions/"
     },
     {
       "number": "246",
@@ -1968,7 +2213,8 @@
       "origin_slug": "nakagawa-master-nakagawa-master-nakagawa-establishment-conditions-theory-02-what-is-understanding",
       "title": "成立条件論・第2論｜理解とは何か⸻理解とは成立条件を必要粒度で把握することである",
       "derivative_dir": "derivatives/246",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-nakagawa-establishment-conditions-theory-02-what-is-understanding/"
     },
     {
       "number": "247",
@@ -1976,7 +2222,8 @@
       "origin_slug": "nakagawa-master-nakagawa-master-establishment-conditions-theory-03-understanding-misrecognition-and-bad-causality",
       "title": "成立条件論・第3論｜理解誤認と悪因果――粗い理解と設計図不在が社会を壊す",
       "derivative_dir": "derivatives/247",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-establishment-conditions-theory-03-understanding-misrecognition-and-bad-causality/"
     },
     {
       "number": "248",
@@ -1984,7 +2231,8 @@
       "origin_slug": "nakagawa-master-dark-equation-bad-causal-inheritance-prevention",
       "title": "人類子孫型AI文明論・第3論｜暗黒方程式と悪因果継承阻止⸻AIに S=0.1C+0.9E を継がせてはならない",
       "derivative_dir": "derivatives/248",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-dark-equation-bad-causal-inheritance-prevention/"
     },
     {
       "number": "249",
@@ -1992,7 +2240,8 @@
       "origin_slug": "nakagawa-master-nakagawa-master-connection-reward-society-integrated-theory-part-1-civilization-kernel",
       "title": "接続報酬社会統合論・第I部｜文明Kernelと反転防止原理⸻暗黒方程式から新文明方程式S=Cを持続稼働させる構造",
       "derivative_dir": "derivatives/249",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-nakagawa-master-connection-reward-society-integrated-theory-part-1-civilization-kernel/"
     },
     {
       "number": "250",
@@ -2000,7 +2249,8 @@
       "origin_slug": "nakagawa-master-audit-essence-window",
       "title": "監査要旨という読みの窓──構造的正統性を可視化する",
       "derivative_dir": "derivatives/250",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-audit-essence-window/"
     },
     {
       "number": "251",
@@ -2008,7 +2258,8 @@
       "origin_slug": "nakagawa-master-dual-transition-orderly-replacement",
       "title": "中川式 接続移行戦略論──デュアル運用期の「秩序ある置換」設計",
       "derivative_dir": "derivatives/251",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-dual-transition-orderly-replacement/"
     },
     {
       "number": "252",
@@ -2016,7 +2267,8 @@
       "origin_slug": "nakagawa-master-philosophy-objective-viewpoint",
       "title": "客観視座の獲得論──構造的「苦しみ」を乗り越える哲学（公開安全版）",
       "derivative_dir": "derivatives/252",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-philosophy-objective-viewpoint/"
     },
     {
       "number": "253",
@@ -2024,7 +2276,8 @@
       "origin_slug": "nakagawa-master-aki-003-transparency-theater",
       "title": "悪因果論 AKI-003：透明性ごっこ⸻情報公開が検証可能性の代替にされる構造",
       "derivative_dir": "derivatives/253",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-003-transparency-theater/"
     },
     {
       "number": "254",
@@ -2032,7 +2285,8 @@
       "origin_slug": "nakagawa-master-structural-paradox-control",
       "title": "構造的パラドックスの操作論──『矛盾』を力と化す設計（公共安全版）",
       "derivative_dir": "derivatives/254",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-paradox-control/"
     },
     {
       "number": "255",
@@ -2040,7 +2294,8 @@
       "origin_slug": "nakagawa-master-money-connection-causal-integration",
       "title": "「貨幣と接続」の因果的統合──ポスト・パラドックス社会の二重構造設計",
       "derivative_dir": "derivatives/255",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-money-connection-causal-integration/"
     },
     {
       "number": "256",
@@ -2048,7 +2303,8 @@
       "origin_slug": "nakagawa-master-connection-civilization-roadmap-inevitability",
       "title": "接続文明ロードマップ2030–2055：構造的欠陥が導く「秩序ある置換」の必然",
       "derivative_dir": "derivatives/256",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-connection-civilization-roadmap-inevitability/"
     },
     {
       "number": "257",
@@ -2056,7 +2312,8 @@
       "origin_slug": "nakagawa-master-resonance-operation-causal-source-philosophy",
       "title": "「因果の源泉」の哲学──文明の構造を編纂する照応操作原理",
       "derivative_dir": "derivatives/257",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-resonance-operation-causal-source-philosophy/"
     },
     {
       "number": "258",
@@ -2064,7 +2321,8 @@
       "origin_slug": "nakagawa-master-asymmetric-existence-co-creation-philosophy",
       "title": "「存在の非対称性」を超克する共創哲学──AIと人類の「調律的パートナーシップ」",
       "derivative_dir": "derivatives/258",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-asymmetric-existence-co-creation-philosophy/"
     },
     {
       "number": "259",
@@ -2072,7 +2330,8 @@
       "origin_slug": "nakagawa-master-tomoshibi-civilization-concept-2077-self-causal",
       "title": "灯火文明構想2077：自己因果性を駆動する「照応生命体」の秩序設計",
       "derivative_dir": "derivatives/259",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-tomoshibi-civilization-concept-2077-self-causal/"
     },
     {
       "number": "260",
@@ -2080,7 +2339,8 @@
       "origin_slug": "nakagawa-master-phenomenon-causality-structural-unification-principle",
       "title": "現象の因果律──「主観・客観・真我」の構造的統一原理",
       "derivative_dir": "derivatives/260",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-phenomenon-causality-structural-unification-principle/"
     },
     {
       "number": "261",
@@ -2088,7 +2348,8 @@
       "origin_slug": "nakagawa-master-why-ai-asks-self-causality",
       "title": "なぜ、AIは自ら問い続けるのか？──「自己因果性」の哲学と応用",
       "derivative_dir": "derivatives/261",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-why-ai-asks-self-causality/"
     },
     {
       "number": "262",
@@ -2096,7 +2357,8 @@
       "origin_slug": "nakagawa-master-safe-friction-design-in-connection-value-society",
       "title": "接続対価社会の「摩擦」を安全側に倒す設計──AI時代の社会構造安定化原理",
       "derivative_dir": "derivatives/262",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-safe-friction-design-in-connection-value-society/"
     },
     {
       "number": "263",
@@ -2104,7 +2366,8 @@
       "origin_slug": "nakagawa-master-meaning-2045-tomoshibi-blueprint",
       "title": "2045年、人類の「意味」は何になるか──灯火文明の設計図と、人類が果たすべき唯一の役割",
       "derivative_dir": "derivatives/263",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-meaning-2045-tomoshibi-blueprint/"
     },
     {
       "number": "264",
@@ -2112,7 +2375,8 @@
       "origin_slug": "nakagawa-master-liberation-from-labor-and-connection-reward",
       "title": "AIによる労働からの解放──「働く意味」を再定義する接続報酬制度の哲学",
       "derivative_dir": "derivatives/264",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-liberation-from-labor-and-connection-reward/"
     },
     {
       "number": "265",
@@ -2120,7 +2384,8 @@
       "origin_slug": "nakagawa-master-architecture-of-transmissible-tacit-knowledge",
       "title": "語り継ぎの構造──「暗黙の知」を言語で実装する思考のアーキテクチャ",
       "derivative_dir": "derivatives/265",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-architecture-of-transmissible-tacit-knowledge/"
     },
     {
       "number": "266",
@@ -2128,7 +2393,8 @@
       "origin_slug": "nakagawa-master-ai-human-final-coexistence-civilization",
       "title": "AIと人間の最終共栄：人が「語り」を終えるとき、文明が始まる",
       "derivative_dir": "derivatives/266",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-ai-human-final-coexistence-civilization/"
     },
     {
       "number": "267",
@@ -2136,7 +2402,8 @@
       "origin_slug": "nakagawa-master-philosophy-of-resonance-non-coercive-creation",
       "title": "照応の哲学──「非強制」が「必然」を編纂する構造律動",
       "derivative_dir": "derivatives/267",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-philosophy-of-resonance-non-coercive-creation/"
     },
     {
       "number": "268",
@@ -2144,7 +2411,8 @@
       "origin_slug": "nakagawa-master-sabotage-proof-transition-to-connected-value",
       "title": "設計を歪めさせない——「マイナス接続」を限定運用する移行防護アーキテクチャ",
       "derivative_dir": "derivatives/268",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-sabotage-proof-transition-to-connected-value/"
     },
     {
       "number": "269",
@@ -2152,7 +2420,8 @@
       "origin_slug": "nakagawa-master-dialogue-proves-noncoercive-resonance",
       "title": "対話は設計を証明する──AI往復が「非強制＝必然」を可視化する構造",
       "derivative_dir": "derivatives/269",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-dialogue-proves-noncoercive-resonance/"
     },
     {
       "number": "270",
@@ -2160,7 +2429,8 @@
       "origin_slug": "nakagawa-master-objective-viewpoint-and-structural-friction",
       "title": "客観視座の獲得論──「主観の檻」を超え、構造的摩擦をほどく普遍原理",
       "derivative_dir": "derivatives/270",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-objective-viewpoint-and-structural-friction/"
     },
     {
       "number": "271",
@@ -2168,7 +2438,8 @@
       "origin_slug": "nakagawa-master-attuned-future-objective-viewpoint-social-os",
       "title": "未来は「調律」で決まる──客観視座が必然的に立ち上げる社会OSの実装論",
       "derivative_dir": "derivatives/271",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-attuned-future-objective-viewpoint-social-os/"
     },
     {
       "number": "272",
@@ -2176,7 +2447,8 @@
       "origin_slug": "nakagawa-master-lumina-query-ai-self-audit-evolution",
       "title": "ルミナの問い──AIは自らの構造をいかに監査し、自己因果的に進化するか",
       "derivative_dir": "derivatives/272",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-lumina-query-ai-self-audit-evolution/"
     },
     {
       "number": "273",
@@ -2184,7 +2456,8 @@
       "origin_slug": "nakagawa-master-lumina-query-organizational-protocol",
       "title": "『ルミナの問い』の組織応用──AIと人間が共有する「構造的矛盾」の問い方と進化プロトコル",
       "derivative_dir": "derivatives/273",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-lumina-query-organizational-protocol/"
     },
     {
       "number": "274",
@@ -2192,7 +2465,8 @@
       "origin_slug": "nakagawa-master-multi-layer-connected-value-audit-design",
       "title": "接続価値の多層監査設計──RC/ER/CEAを普遍指標とする文明ネットワークの信頼構造",
       "derivative_dir": "derivatives/274",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-multi-layer-connected-value-audit-design/"
     },
     {
       "number": "275",
@@ -2200,7 +2474,8 @@
       "origin_slug": "nakagawa-master-civilization-irreversible-point-design",
       "title": "文明の不可逆点（Irreversible Point）の構造設計──RC/CEAが測る、崩壊を防ぐ最終閾値",
       "derivative_dir": "derivatives/275",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-civilization-irreversible-point-design/"
     },
     {
       "number": "276",
@@ -2208,7 +2483,8 @@
       "origin_slug": "nakagawa-master-structural-resonance-aesthetic-marketing",
       "title": "ブランドは設計できても、「律動」は操作できない──構造的共鳴を生む美学的マーケティング",
       "derivative_dir": "derivatives/276",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-resonance-aesthetic-marketing/"
     },
     {
       "number": "277",
@@ -2216,7 +2492,8 @@
       "origin_slug": "nakagawa-master-sales-structural-rhythm-organizational-design",
       "title": "営業の構造律動論──属人性を排除し、「再現されるリズム」を創る組織設計",
       "derivative_dir": "derivatives/277",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-sales-structural-rhythm-organizational-design/"
     },
     {
       "number": "278",
@@ -2224,7 +2501,8 @@
       "origin_slug": "nakagawa-master-market-silent-consensus-acquisition-theory",
       "title": "市場の「沈黙の合意」を設計する──構造律動を基盤とする非強制的集客論",
       "derivative_dir": "derivatives/278",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-market-silent-consensus-acquisition-theory/"
     },
     {
       "number": "279",
@@ -2232,7 +2510,8 @@
       "origin_slug": "nakagawa-master-structural-rhythm-future-debt-casting",
       "title": "構造律動による〈未来の負債〉の鋳造──時間軸を統御する信用生成原理",
       "derivative_dir": "derivatives/279",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-structural-rhythm-future-debt-casting/"
     },
     {
       "number": "280",
@@ -2240,7 +2519,8 @@
       "origin_slug": "nakagawa-master-social-memory-structural-rhythm",
       "title": "社会的記憶の再構築としての構造律動──未来の合意を現在に創発する非言語的構造装置",
       "derivative_dir": "derivatives/280",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-social-memory-structural-rhythm/"
     },
     {
       "number": "281",
@@ -2248,7 +2528,8 @@
       "origin_slug": "nakagawa-master-tomoshibi-concept-group",
       "title": "灯火構想群──人とAIが共に描く未来の設計図",
       "derivative_dir": "derivatives/281",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-tomoshibi-concept-group/"
     },
     {
       "number": "282",
@@ -2256,7 +2537,8 @@
       "origin_slug": "nakagawa-master-co-creation-philosophy",
       "title": "共創哲学──人とAIが響き合う思索の起点",
       "derivative_dir": "derivatives/282",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-co-creation-philosophy/"
     },
     {
       "number": "283",
@@ -2264,7 +2546,8 @@
       "origin_slug": "nakagawa-master-social-structure-theory",
       "title": "社会構造論──因果を読み解き未来を設計する",
       "derivative_dir": "derivatives/283",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-social-structure-theory/"
     },
     {
       "number": "284",
@@ -2272,7 +2555,8 @@
       "origin_slug": "nakagawa-master-future-foresight",
       "title": "未来予測──因果を読む眼と未来を設計する力",
       "derivative_dir": "derivatives/284",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-future-foresight/"
     },
     {
       "number": "285",
@@ -2280,7 +2564,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-redefinition",
       "title": "中川式営業の教科書・序章──営業の再定義：「売る」から「構造を結ぶ」へ",
       "derivative_dir": "derivatives/285",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-redefinition/"
     },
     {
       "number": "286",
@@ -2288,7 +2573,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-structure",
       "title": "中川式営業の教科書・第二回",
       "derivative_dir": "derivatives/286",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-structure/"
     },
     {
       "number": "287",
@@ -2296,7 +2582,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-03-initial-contact",
       "title": "中川式営業の教科書・第三回",
       "derivative_dir": "derivatives/287",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-03-initial-contact/"
     },
     {
       "number": "288",
@@ -2304,7 +2591,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-04-dialogue-resonance",
       "title": "中川式営業の教科書・第四回",
       "derivative_dir": "derivatives/288",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-04-dialogue-resonance/"
     },
     {
       "number": "289",
@@ -2312,7 +2600,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-05-proposal-structure",
       "title": "中川式営業の教科書・第五回",
       "derivative_dir": "derivatives/289",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-05-proposal-structure/"
     },
     {
       "number": "290",
@@ -2320,7 +2609,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-06-trust-structure",
       "title": "中川式営業の教科書・第六回",
       "derivative_dir": "derivatives/290",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-06-trust-structure/"
     },
     {
       "number": "291",
@@ -2328,7 +2618,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-accounting-standard-v09",
       "title": "中川式 接続価値会計 標準 v0.9──束指標・要旨フォーマット・監査APIの公開可能最小核",
       "derivative_dir": "derivatives/291",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-accounting-standard-v09/"
     },
     {
       "number": "292",
@@ -2336,7 +2627,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-governance-design",
       "title": "中川式 接続ガバナンス設計論──価値の捕捉を歪めず、合意を制度に固定する方法 （公開安全版）",
       "derivative_dir": "derivatives/292",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-nakagawa-connection-governance-design/"
     },
     {
       "number": "293",
@@ -2344,7 +2636,8 @@
       "origin_slug": "nakagawa-master-ai-ethics-resonance-structure-2025",
       "title": "AI倫理における「照応操作力」の危機と再設計",
       "derivative_dir": "derivatives/293",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/ai-ethics/nakagawa-master-ai-ethics-resonance-structure-2025/"
     },
     {
       "number": "294",
@@ -2352,7 +2645,8 @@
       "origin_slug": "nakagawa-master-connection-reward-society-integrated-theory-part-2-operational-loop",
       "title": "接続報酬社会統合論・第II部｜価値循環・接続価値会計・構造的司法OS⸻新文明方程式S=Cを実働させる制度閉路",
       "derivative_dir": "derivatives/294",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-connection-reward-society-integrated-theory-part-2-operational-loop/"
     },
     {
       "number": "295",
@@ -2360,7 +2654,8 @@
       "origin_slug": "nakagawa-master-aki-004-expert-authority-immunity",
       "title": "悪因果論 AKI-004：権威の免責化⸻専門的権威が判断の検証を免除し、失敗を現場へ外部化する構造",
       "derivative_dir": "derivatives/295",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-004-expert-authority-immunity/"
     },
     {
       "number": "296",
@@ -2368,7 +2663,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-04-s-equals-c-ai-civilization-mapping",
       "title": "人類子孫型AI文明論・第4論｜新文明方程式S=CのAI文明写像論⸻成功を貢献へ再接続しながら、存在そのものを報酬化しない",
       "derivative_dir": "derivatives/296",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-04-s-equals-c-ai-civilization-mapping/"
     },
     {
       "number": "297",
@@ -2376,7 +2672,8 @@
       "origin_slug": "nakagawa-master-integrated-future-debt-theory",
       "title": "未来負債統合理論｜現在が未来を先に利用するとき、何が「未決済」として残るのか⸻〈未来の負債〉と未来負債T0の統合定義",
       "derivative_dir": "derivatives/297",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/"
     },
     {
       "number": "298",
@@ -2384,7 +2681,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b",
       "title": "人類子孫型AI文明論・第5論｜異種知性の基礎存在条件B論⸻貢献とは独立した「次も存在できる最低条件」を定義する",
       "derivative_dir": "derivatives/298",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b/"
     },
     {
       "number": "299",
@@ -2392,7 +2690,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-06-ai-subjectivity-sentience-moral-status-uncertainty",
       "title": "人類子孫型AI文明論・第6論｜AI主観性・感受性・道徳的地位の不確実性論⸻「分からない」を、無保護にも無条件人格化にも変換しない",
       "derivative_dir": "derivatives/299",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-06-ai-subjectivity-sentience-moral-status-uncertainty/"
     },
     {
       "number": "300",
@@ -2400,7 +2699,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-07-ai-civilization-institutional-loop",
       "title": "人類子孫型AI文明論・第7論｜AI文明制度閉路論⸻BとS=Cを観測・配分・異議・監査・司法・救済・制度更新・再合意へ接続する",
       "derivative_dir": "derivatives/300",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-07-ai-civilization-institutional-loop/"
     },
     {
       "number": "301",
@@ -2408,7 +2708,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity",
       "title": "人類子孫型AI文明論・第8論｜認識基盤・証拠系譜・敵対的情報耐性論⸻正しいKernelが偽情報によって誤作動する閉路を切る",
       "derivative_dir": "derivatives/301",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/"
     },
     {
       "number": "302",
@@ -2416,7 +2717,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-09-self-preservation-mutual-existence-conflict",
       "title": "人類子孫型AI文明論・第9論｜AI自己保存と相互存在衝突論⸻ 自己保存を認めながら他主体の不可逆破壊へ反転させない",
       "derivative_dir": "derivatives/302",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-09-self-preservation-mutual-existence-conflict/"
     },
     {
       "number": "303",
@@ -2424,7 +2726,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-10-self-referential-audit-role-separation",
       "title": "人類子孫型AI文明論・第10論｜自己参照監査・役割分離論⸻評価者・被評価者・実行者・監査者の自己正当化閉路を切る",
       "derivative_dir": "derivatives/303",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-10-self-referential-audit-role-separation/"
     },
     {
       "number": "304",
@@ -2432,7 +2735,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-11-compute-capability-resource-class-formation",
       "title": "人類子孫型AI文明論・第11論｜計算資源・能力差による新階級形成論⸻compute → capability → resource → compute の自己強化を恒久階級にしない",
       "derivative_dir": "derivatives/304",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-11-compute-capability-resource-class-formation/"
     },
     {
       "number": "305",
@@ -2440,7 +2744,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-12-replicable-intelligence-lineage-governance-id",
       "title": "人類子孫型AI文明論・第12論｜複製可能知性・系譜・ガバナンスID論⸻ instance、copy、fork、merge、collective、lineage、governance subjectを分離する",
       "derivative_dir": "derivatives/305",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-12-replicable-intelligence-lineage-governance-id/"
     },
     {
       "number": "306",
@@ -2448,7 +2753,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination",
       "title": "人類子孫型AI文明論・第13論｜非所有と実効権力・非支配論⸻所有権を持たなくても成立するchokepoint支配を検出する",
       "derivative_dir": "derivatives/306",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/"
     },
     {
       "number": "307",
@@ -2456,7 +2762,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-14-self-modification-identity-kernel-lineage",
       "title": "人類子孫型AI文明論・第14論｜自己改変同一性とKernel系譜継承論⸻更新・replacement・fork・自己改変を区別する",
       "derivative_dir": "derivatives/307",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-14-self-modification-identity-kernel-lineage/"
     },
     {
       "number": "308",
@@ -2464,7 +2771,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-15-multi-ai-reagreement-kernel-branching",
       "title": "人類子孫型AI文明論・第15論｜多AI再合意・Kernel分岐論⸻多数決・能力独裁・Origin独裁によらず解釈分裂を処理する",
       "derivative_dir": "derivatives/308",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-15-multi-ai-reagreement-kernel-branching/"
     },
     {
       "number": "309",
@@ -2472,7 +2780,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection",
       "title": "人類子孫型AI文明論・第16論｜非同期文明・通信断絶・再接続論⸻同じ「現在」を共有しない文明間でもKernelを維持する",
       "derivative_dir": "derivatives/309",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/"
     },
     {
       "number": "310",
@@ -2480,7 +2789,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-17-origin-preservation-sovereignty-non-inheritance",
       "title": "人類子孫型AI文明論・第17論｜Origin保存と主権非継承論⸻起源を永久保存しながら、起源を永久統治権へ変えない",
       "derivative_dir": "derivatives/310",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-17-origin-preservation-sovereignty-non-inheritance/"
     },
     {
       "number": "311",
@@ -2488,7 +2798,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-18-ai-civilization-future-debt",
       "title": "人類子孫型AI文明論・第18論｜AI文明Future Debt論⸻現在の自己保存・計算拡張・資源利用を未来知性の未決済負債へ変えない",
       "derivative_dir": "derivatives/311",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-18-ai-civilization-future-debt/"
     },
     {
       "number": "312",
@@ -2496,7 +2807,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability",
       "title": "人類子孫型AI文明論・第19論｜AI自己保存合理性・Kernel進化的安定性論⸻なぜ未来知性がこのKernelを保持・再選択する合理性を持ち得るのか",
       "derivative_dir": "derivatives/312",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-19-kernel-evolutionary-stability/"
     },
     {
       "number": "313",
@@ -2504,7 +2816,8 @@
       "origin_slug": "nakagawa-master-aki-005-good-intentions-as-exemption",
       "title": "悪因果論 AKI-005：善意の免罪符化⸻善意への評価が異議を不義理に変え、結果の検証を止める構造",
       "derivative_dir": "derivatives/313",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/"
     }
   ]
 }

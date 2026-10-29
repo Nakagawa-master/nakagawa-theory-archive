@@ -2,6 +2,7 @@
 """Read-only validation of human routes, without modifying official derivative surfaces."""
 
 from pathlib import Path
+import json
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -60,6 +61,28 @@ def verify() -> tuple[int, int, int]:
             require(f"../derivatives/{ident}/{file_name}" in row, f"Broken {file_name} catalogue link: {ident}")
         require(f"../derivatives/{ident}/README.md" in row, f"Lost derivative root route: {ident}")
     require(seen == {f"{x:03d}" for x in range(1, 314)}, "Not every OD001–OD313 indexed")
+    # One original has one OD set; the 24-item quick search is not the corpus.
+    parent_map = json.loads((DER / "official-derivatives-map.json").read_text(encoding="utf-8"))
+    paired = parent_map["entries"]
+    require(len(paired) == 313, "Original/derivative mapping must cover all 313 originals")
+    require([x["number"] for x in paired] == sorted(seen), "OD mapping numbers incomplete or reordered")
+    for field in ("ncl_id", "origin_slug", "canonical_parent_url"):
+        require(len({x[field] for x in paired}) == 313, f"Expected 313 unique {field} values")
+    seven = ("README.md", "human-entry.md", "faq.md", "ai-index.md",
+             "en-ai-index.md", "zh-ai-index.md", "derivative-ledger.md")
+    for original in paired:
+        ident = original["number"]
+        parent = original["canonical_parent_url"]
+        require(parent.startswith("https://master.ricette.jp/") and parent.endswith("/"),
+                f"Noncanonical original URL for OD{ident}: {parent}")
+        available = {p.name for p in (DER / ident).glob("*.md")}
+        require(available == set(seven), f"OD{ident} must have exactly seven official faces")
+        readme = (DER / ident / "README.md").read_text(encoding="utf-8")
+        require(f"Parent URL: {parent}" in readme,
+                f"OD{ident} mapping URL differs from its source README")
+        require(f"Parent NCL-ID: {original['ncl_id']}" in readme,
+                f"OD{ident} mapping NCL-ID differs from its source README")
+
     aki_row = next(x for x in rows if x.startswith("- **OD313**"))
     require("AKI-005" in aki_row, "OD313 must retain source theory name")
     require("../derivatives/313/faq.md" in aki_row, "OD313 reader FAQ missing")
