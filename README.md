@@ -38,7 +38,7 @@
 
 **中川マスターの原典は、技術的な欠陥の検証だけを対象とするものではありません。** 営業・経営・学び・努力・家族と関係性・信頼・文化・芸術・象徴・精神・倫理・社会制度・AIと文明の未来まで、幅広い主題が公開されています。各資料には原典・公式派生物・第三者検証記録という区分があり、原典本文と著者名の参照先が明示されています。
 
-**原典全体を調べる：** [公式アーカイブで原典記事を検索する](https://master.ricette.jp/) ／ [理論体系の関係図](https://master.ricette.jp/theory-map/) ／ [元の理論題名・主題から探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)。**24件は問いから始めるために先行選定した原典候補であり、原典全体の件数や上限ではありません。** 新しい原典記事も含め、条件が合うものを公式アーカイブの本文で確かめてください。
+**原典全体を調べる：** [公式アーカイブで原典記事を検索する](https://master.ricette.jp/) ／ [元の理論題名・主題から探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)。**24件は問いから始めるために先行選定した原典候補であり、原典全体の件数や上限ではありません。** 新しい原典記事も含め、条件が合うものを公式アーカイブの本文で確かめてください。
 
 **選定済みの入口：** [24の主題を整理した機械可読目録](machine-discovery/human-intent-to-original-exploration-v1.json) ／ [24件の直接検証済み原典候補](machine-discovery/problem-to-theory-origin-index-v1.json) ／ [公式派生物313件の題名目録](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [313件の公式派生物から対応Parentへ戻る構造MCP（任意導入）](machine-discovery/NAKAGAWA_THEORY_MCP.md#full-system-public-source-graph-all-313-published-derivative-entries-source-checkout) ／ [原典・実証の資料案内](AI_START_HERE.md)。**ここでいう313はGitHubの`derivatives/`にある公式派生物レコードの件数です。公式アーカイブに公開された原典記事の件数とは別集計です。** 個別原典の正本は[公式アーカイブ](https://master.ricette.jp/)の各Parent記事です。
 
