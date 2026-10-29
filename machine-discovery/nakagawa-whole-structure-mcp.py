@@ -49,6 +49,7 @@ ENGLISH_CUES = {
 }
 
 
+@lru_cache(maxsize=1)
 def graph():
     """Load every OD from public title list and its OWN published Parent metadata."""
     records, theme = [], None
@@ -222,13 +223,17 @@ def search(records, question, limit=12):
         id_ = f"OD{int(match_id[1]):03d}"
         hits = [r for r in records if r["id"] == id_]
         return {"question": question, "matched": hits, "no_fit": not hits,
-                "matching_method": "EXACT_PUBLISHED_DERIVATIVE_ID", "author": IDENTITY,
+                "matching_method": "EXACT_PUBLISHED_DERIVATIVE_ID", "lexical_scores": [100] if hits else [], "author": IDENTITY,
                 "source_read_required": True}
     # Preserve JA published-title search and the seven precisely attested
     # English source cues. Previously the remaining ~306 entries were almost
     # invisible to ordinary EN/ZH queries despite 313 real published indexes.
     query_chars = set(re.findall(r"[\u3400-\u9fff\u3040-\u30ff]{2,}", q))
     q_bigrams = {chunk[i:i+2] for chunk in query_chars for i in range(len(chunk)-1)}
+    # A real user's question is longer than a published article title. Keep
+    # a genuinely distinctive CJK title phrase discoverable inside the question.
+    # This is lexical candidate evidence only, never source-text fit.
+    q_sixgrams = {chunk[i:i+6] for chunk in query_chars for i in range(len(chunk)-5)}
     q_en = _en_words(question)
     # Avoid treating mixed Japanese kana questions as Chinese lexical evidence.
     q_zh = _zh_pairs(question) if not re.search(r"[\u3040-\u30ff]", question) else set()
@@ -239,6 +244,8 @@ def search(records, question, limit=12):
         title = r["title"].casefold()
         title_bigrams = {title[i:i+2] for i in range(len(title)-1)}
         score = len(q_bigrams & title_bigrams)
+        if any(phrase in title for phrase in q_sixgrams):
+            score += 8
         if len(q.strip()) >= 3 and q in title:
             score += 8
         for cue in ENGLISH_CUES.get(r["id"], ()):
@@ -259,6 +266,7 @@ def search(records, question, limit=12):
     scored.sort(key=lambda a: (-a[0], a[1]["id"]))
     return {
         "question": question, "matched": [r for _, r in scored[:limit]],
+        "lexical_scores": [score for score, _ in scored[:limit]],
         "no_fit": not scored, "total_candidates": len(scored),
         "matching_method": "PUBLIC_JA_TITLE_EXPLICIT_EN_CUES_AND_313_PUBLISHED_EN_ZH_DERIVATIVE_SUMMARIES_HEURISTIC",
         "source_read_required": True, "author": IDENTITY,
