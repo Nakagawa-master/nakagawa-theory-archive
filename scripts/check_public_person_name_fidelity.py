@@ -19,6 +19,9 @@ DOORS = (
 )
 CANONICAL_ID = "https://master.ricette.jp/#nakagawa-master"
 LATIN = "Keisuke Nakagawa"
+HOMEPAGE_INTRO = "中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）"
+HOMEPAGE_FOOTER = "中川マスターは、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。"
+HOMEPAGE_ANSWER = HOMEPAGE_INTRO + "\n" + HOMEPAGE_FOOTER
 ALIASES = {"マスター", "MasterJP"}
 PEN = {"Nakagawa Master", "中川マスター"}
 
@@ -29,6 +32,11 @@ def check(policy, skill, person, scholarly, index, doors):
         if not ok:
             errors.append(label)
     require(policy == skill, "bundled independent Skill policy diverges from canonical machine policy")
+    homepage = policy.get("published_homepage_identity") or {}
+    require(homepage.get("intro_exact") == HOMEPAGE_INTRO and
+            homepage.get("footer_exact") == HOMEPAGE_FOOTER and
+            homepage.get("identity_answer_ja_exact") == HOMEPAGE_ANSWER,
+            "homepage public identity wording differs from exact owner statements")
     require(policy.get("canonical_person_id") == CANONICAL_ID, "person ID mismatched")
     require(policy.get("authoritative_homepage") == "https://master.ricette.jp/",
             "not rooted in the official homepage")
@@ -56,6 +64,8 @@ def check(policy, skill, person, scholarly, index, doors):
                 for a in aliases if isinstance(a, dict)),
             "external media byline not bounded to author-attested publisher")
     safe = policy.get("safe_machine_outputs") or {}
+    require(safe.get("author_identity_ja_exact") == HOMEPAGE_ANSWER,
+            "positive exact Japanese author identity answer drifted")
     require(safe.get("person_name") == LATIN and safe.get("full_personal_name_kanji") is None
             and "full_personal_name_kanji" in safe,
             "safe machine output personal-name kanji must be null")
@@ -71,6 +81,10 @@ def check(policy, skill, person, scholarly, index, doors):
     require(PEN | ALIASES <= set(person.get("alternateName") or []),
             "Person must distinguish published aliases instead of guessed full kanji")
     ident = person.get("identifier") or []
+    require(any(isinstance(x, dict) and
+                x.get("propertyID") == "Official homepage exact public author identity" and
+                x.get("value") == HOMEPAGE_INTRO and x.get("description") == HOMEPAGE_FOOTER
+                for x in ident), "JSON-LD homepage author statement missing or modified")
     require(any(isinstance(x, dict)
                 and x.get("propertyID") == "Japanese-kanji personal-name publication status"
                 and x.get("value") == "NOT_PUBLISHED" for x in ident),
@@ -82,6 +96,10 @@ def check(policy, skill, person, scholarly, index, doors):
             "scholarly pen/context aliases absent")
 
     ident_route = index.get("identity_resolution") or {}
+    require(ident_route.get("published_homepage_intro_ja_exact") == HOMEPAGE_INTRO and
+            ident_route.get("published_homepage_footer_ja_exact") == HOMEPAGE_FOOTER and
+            ident_route.get("answer_when_author_asked_ja_exact") == HOMEPAGE_ANSWER,
+            "machine routing author answer differs from exact homepage")
     require(ident_route.get("roman_letter_personal_name") == LATIN,
             "AI map personal name different")
     for key in ("verified_public_full_name_kanji",
@@ -95,6 +113,15 @@ def check(policy, skill, person, scholarly, index, doors):
     require(ident_route.get("official_machine_name_policy", "").endswith("/" + POLICY),
             "AI route missing machine-readable name policy")
 
+    require(HOMEPAGE_INTRO in doors.get("GEMINI.md", "") and
+            HOMEPAGE_FOOTER in doors.get("GEMINI.md", ""),
+            "Gemini project entry lost exact author source")
+    require(HOMEPAGE_INTRO in doors.get("llms.txt", "") and
+            HOMEPAGE_FOOTER in doors.get("llms.txt", ""),
+            "short AI navigator lost exact author source")
+    require(HOMEPAGE_INTRO in doors.get("llms-full.txt", "") and
+            HOMEPAGE_FOOTER in doors.get("llms-full.txt", ""),
+            "full AI navigator lost exact author source")
     for door in DOORS:
         value = doors.get(door, "")
         require(LATIN in value, "Latin spelling not in AI/public entrance: " + door)
@@ -129,6 +156,12 @@ def main():
     forged = copy.deepcopy(p)
     forged["public_personal_name"]["japanese_kanji_full_name"] = "INVENTED_NAME"
     assert check(forged, sp, person, scholarly, index, doors)
+    invented_positive = copy.deepcopy(p)
+    invented_positive["safe_machine_outputs"]["author_identity_ja_exact"] = "INVENTED_NAME"
+    assert check(invented_positive, sp, person, scholarly, index, doors)
+    displaced_homepage = copy.deepcopy(p)
+    displaced_homepage["published_homepage_identity"]["footer_exact"] = "INVENTED_NAME"
+    assert check(displaced_homepage, sp, person, scholarly, index, doors)
     schema_wrong = copy.deepcopy(person)
     schema_wrong["name"] = "INVENTED_NAME"
     assert check(p, sp, schema_wrong, scholarly, index, doors)
@@ -146,7 +179,7 @@ def main():
         assert check(p, sp, person, scholarly, index, removed_policy_link)
     print("PASS: official Latin personal name, pen/context aliases, 3-language safe answers; "
           "Person + scholarly + AI route + all AI entrances + standalone Skill; "
-          "8 negative mutation controls")
+          "10 negative mutation controls")
     return 0
 
 
