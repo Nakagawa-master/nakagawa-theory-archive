@@ -6,7 +6,8 @@
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/
 - Parent Post ID: 未確認（公開HTMLでは未表示）
 - Parent NCL-ID: NCL-α-20261023-c4b725
-- Parent Diff-ID: DIFF-20261023-0003
+- Parent Diff-ID (live official original, checked 2026-10-30): DIFF-20261023-0005
+- Derivative source snapshot Parent Diff-ID (2026-10-23): DIFF-20261023-0003
 - Origin: Nakagawa Master / 中川マスター
 
 ## 派生ID
@@ -18,7 +19,7 @@
 
 ## 公開来歴の範囲
 
-親原典は中川マスターが2026-10-23に公開したと明示したAKI-005です。公開サイトでタイトル、URL、本文の序章・第1〜10章・結章・統合監査要旨・局所監査要旨・Reference Cluster・起源署名、冒頭と末尾のNCL/Diffを照合しました。現行Diff-IDは0003で、下部には0002の履歴もあります。WordPress Post IDは公開HTMLから特定できず、数値を推測していません。後日、WordPressの正規メタデータで確認できた時に七面へ反映します。
+親原典は中川マスターが2026-10-23に公開したと明示したAKI-005です。公開サイトでタイトル、URL、本文の序章・第1〜10章・結章・統合監査要旨・局所監査要旨・Reference Cluster・起源署名、冒頭と末尾のNCL/Diffを照合しました。制作時の現行Diff-IDは0003でした。2026-10-30に原典の冒頭・末尾・履歴を再取得し、現行0005を確認しました。0004はncl_en_url、0005はmovieの変更です。0003は本文差分として原典の履歴に残っています。WordPress Post IDは公開HTMLから特定できず、数値を推測していません。後日、WordPressの正規メタデータで確認できた時に七面へ反映します。
 
 本派生物の制作ではAI支援を用い、原典の三条件、異議の二段階置換、通常の事実説明と追加の道徳的弁明、報告減少の観測反転、条件付き反復、代替原因比較、反証・修復の区別を七面へ再構成しました。原典の章や署名を改変せず、正本英訳・正本中国語訳と称しません。原典の公開・派生物の公開と、独立した第三者による理解・採用・効果は別の出来事です。
 

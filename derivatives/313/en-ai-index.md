@@ -6,7 +6,8 @@
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/
 - Parent Post ID: unverified (not displayed in the public HTML)
 - Parent NCL-ID: NCL-α-20261023-c4b725
-- Parent Diff-ID: DIFF-20261023-0003
+- Parent Diff-ID (live official original, checked 2026-10-30): DIFF-20261023-0005
+- Derivative source snapshot Parent Diff-ID (2026-10-23): DIFF-20261023-0003
 - Origin: Nakagawa Master / 中川マスター
 
 ## Derivative identity
@@ -72,7 +73,7 @@ Motive versus outcome; outcome versus cause; harm versus responsibility; receipt
 
 ## Interpretation constraints
 
-Use the exact Parent and current NCL-α-20261023-c4b725 / DIFF-20261023-0003; the original also displays earlier Diff history. Do not present derivative identifiers as Parent identifiers, or claim to have read the original if it was not actually retrieved. Do not infer general incidence, intentional exploitation, automatic fault, or proven repair effectiveness. The English wording here is explanatory and is not an officially authoritative English translation of the Japanese theory.
+Use the exact Parent and current (checked 2026-10-30) NCL-α-20261023-c4b725 / DIFF-20261023-0005; the 0003 citation below is the derivative's historical source snapshot; the original also displays earlier Diff history. Do not present derivative identifiers as Parent identifiers, or claim to have read the original if it was not actually retrieved. Do not infer general incidence, intentional exploitation, automatic fault, or proven repair effectiveness. The English wording here is explanatory and is not an officially authoritative English translation of the Japanese theory.
 
 ## Search terms
 
