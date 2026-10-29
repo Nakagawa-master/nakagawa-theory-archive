@@ -202,6 +202,10 @@ def run():
             "name": "find_nakagawa_original_for_problem",
             "arguments": {"question": "AIの最新モデルの価格を比較したい"},
         }),
+        req(18, "tools/call", {
+            "name": "find_nakagawa_original_for_problem",
+            "arguments": {"question": "OD313"},
+        }),
     ]
     p = subprocess.run(
         [sys.executable, str(SERVER)],
@@ -210,9 +214,9 @@ def run():
     )
     assert not p.stderr, p.stderr
     frames = [json.loads(x) for x in p.stdout.splitlines() if x.strip()]
-    assert len(frames) == 17, f"Expected seventeen responses (one notification), got {len(frames)}"
+    assert len(frames) == 18, f"Expected eighteen responses (one notification), got {len(frames)}"
     results = {f["id"]: f for f in frames}
-    assert set(results) == set(range(1, 18))
+    assert set(results) == set(range(1, 19))
     assert all(f["jsonrpc"] == "2.0" for f in frames)
     assert results[1]["result"]["protocolVersion"] == "2025-11-25"
     assert len(results[2]["result"]["tools"]) == 9
@@ -275,6 +279,15 @@ def run():
             assert result["technical_route_count"] == 0, result
             assert result["original_catalog_route_count"] == 0, result
         assert new["matching_routes"] == baseline["matching_routes"]
+    # A real stdio request should now reach an otherwise non-curated
+    # member of the whole 313-Parent corpus without a second-tool call.
+    all_313 = unpack(18)
+    assert not all_313["no_fit"] and all_313["whole_structure_candidate_count"] >= 1
+    assert any(x["route_id"] == "whole_structure:OD313"
+               and x["canonical_original"].startswith(ORIGINAL_BASE)
+               for x in all_313["matching_routes"])
+    assert all("original" in x["original_relation"]
+               for x in all_313["matching_routes"])
     assert results[15]["result"]["isError"] is True
     # A separate modern-era MCP client process uses no initialize handshake.
     # Assert the official 2026-07-28 envelope, discovery, tool results, and
