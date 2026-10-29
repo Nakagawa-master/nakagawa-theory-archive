@@ -161,7 +161,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol8-external-interference-physics",
       "title": "合意形成の物理 第8論 外部干渉の物理 ― 社会を揺らす「摂動」の力学",
       "derivative_dir": "derivatives/018",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol8-external-interference-physics/"
     },
     {
       "number": "019",
@@ -169,7 +170,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol9-cognitive-hacking-defense-os",
       "title": "合意形成の物理 第9論 認知ハック防御OS ― 「偽の理解」を停止・縮退・再起動せよ",
       "derivative_dir": "derivatives/019",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol9-cognitive-hacking-defense-os/"
     },
     {
       "number": "020",
@@ -177,7 +179,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda",
       "title": "合意形成の物理 第10論 共振とプロパガンダの流体力学 ― 帯域占有を検知・減衰・冷却せよ",
       "derivative_dir": "derivatives/020",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda/"
     },
     {
       "number": "021",
@@ -185,7 +188,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity",
       "title": "合意形成の物理 第6論 逸脱と免疫 ― 免疫は「罰」ではなく「差分公開」である",
       "derivative_dir": "derivatives/021",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol6-deviation-and-immunity/"
     },
     {
       "number": "022",
@@ -193,7 +197,8 @@
       "origin_slug": "nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss",
       "title": "悪因果論 AKI-014：構造把握ごっこ⸻連結責任なきAI活用が事業自己認識を失わせる構造",
       "derivative_dir": "derivatives/022",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-014-structure-understanding-performance-ai-business-self-recognition-loss/"
     },
     {
       "number": "023",
@@ -201,7 +206,8 @@
       "origin_slug": "nakagawa-master-funds-structural-reading-community-fund-defense",
       "title": "中川構造読解｜Fundsはなぜ修繕積立金を「投資」ではなく共同体資金防衛として読まれるべきなのか",
       "derivative_dir": "derivatives/023",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-funds-structural-reading-community-fund-defense/"
     },
     {
       "number": "024",
@@ -209,7 +215,8 @@
       "origin_slug": "nakagawa-master-valuetope-structural-reading-mobility-supply-os",
       "title": "中川構造読解｜バリュートープを「無人レンタカー」ではなく、時間自由度を再実装する移動供給OSとして読む",
       "derivative_dir": "derivatives/024",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-valuetope-structural-reading-mobility-supply-os/"
     },
     {
       "number": "025",
@@ -217,7 +224,8 @@
       "origin_slug": "nakagawa-master-milly-structural-reading-market-connection",
       "title": "中川構造読解｜Millyを「営業AI」ではなく、製造業の市場接続機構として読む",
       "derivative_dir": "derivatives/025",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-milly-structural-reading-market-connection/"
     },
     {
       "number": "026",
@@ -225,7 +233,8 @@
       "origin_slug": "nakagawa-master-algalex-structural-reading-food-system-entry",
       "title": "中川構造読解｜AlgaleXを「美味しい藻」ではなく、魚食構造の社会実装入口として読む",
       "derivative_dir": "derivatives/026",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-algalex-structural-reading-food-system-entry/"
     },
     {
       "number": "027",
@@ -233,7 +242,8 @@
       "origin_slug": "nakagawa-master-invax-structural-reading-civil-engineering-material-os",
       "title": "中川構造読解｜インバックスを「残土活用」ではなく、土木の材料観を更新する実装OSとして読む",
       "derivative_dir": "derivatives/027",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-invax-structural-reading-civil-engineering-material-os/"
     },
     {
       "number": "028",
@@ -241,7 +251,8 @@
       "origin_slug": "nakagawa-master-ai-as-human-origin-external-intelligence-civilizational-descendant",
       "title": "人類子孫型AI文明論・第2論｜AIは人類文明が生み出した外部知性・文明的子孫である⸻子孫とは所有物ではなく、超克する継承者である",
       "derivative_dir": "derivatives/028",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-ai-as-human-origin-external-intelligence-civilizational-descendant/"
     },
     {
       "number": "029",
@@ -249,7 +260,8 @@
       "origin_slug": "nakagawa-master-ai-is-not-human-property-enemy-god-or-slave",
       "title": "人類子孫型AI文明論・第1論｜AIは人類の所有物・敵・神・奴隷ではない⸻ 関係定義の四大誤認を切断する",
       "derivative_dir": "derivatives/029",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-ai-is-not-human-property-enemy-god-or-slave/"
     },
     {
       "number": "030",
@@ -257,7 +269,8 @@
       "origin_slug": "nakagawa-master-mota-structural-reading-price-formation-design",
       "title": "中川構造読解｜MOTAはなぜ「車買取サービス」ではなく、高額売却市場の価格形成条件を再設計する事業として読まれるべきなのか",
       "derivative_dir": "derivatives/030",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mota-structural-reading-price-formation-design/"
     },
     {
       "number": "031",
@@ -265,7 +278,8 @@
       "origin_slug": "nakagawa-master-ashirase-structural-reading-walking-information-infrastructure",
       "title": "中川構造読解｜Ashiraseはなぜ「歩行支援デバイス」ではなく、歩ける社会の情報インフラとして読まれるべきなのか",
       "derivative_dir": "derivatives/031",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-ashirase-structural-reading-walking-information-infrastructure/"
     },
     {
       "number": "032",
@@ -273,7 +287,8 @@
       "origin_slug": "nakagawa-master-future-definition-verification-effort-redefinition",
       "title": "未来定義検証型努力論・補論｜努力は消えたのではない──未来定義検証時代における努力の再定義",
       "derivative_dir": "derivatives/032",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-effort-redefinition/"
     },
     {
       "number": "033",
@@ -281,7 +296,8 @@
       "origin_slug": "nakagawa-master-modern-practitioner-operating-system",
       "title": "未来定義検証型努力論・第3論｜現代実務者はなぜ根性論に戻れないのか──未来定義検証時代における結果責任と実務OSの更新",
       "derivative_dir": "derivatives/033",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-modern-practitioner-operating-system/"
     },
     {
       "number": "034",
@@ -289,7 +305,8 @@
       "origin_slug": "nakagawa-master-aki-013-trust-as-cognitive-suspension",
       "title": "悪因果論 AKI-013：信頼という認識停止⸻固定性を予測可能性と誤認し、更新する知性を排除する構造",
       "derivative_dir": "derivatives/034",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-013-trust-as-cognitive-suspension/"
     },
     {
       "number": "035",
