@@ -795,9 +795,10 @@ def self_test():
     assert sum(x["route_id"] == "whole_structure:OD313"
                for x in compound["matching_routes"]) == 1, compound
     english = answer_question(
-        "AI news fact checking and citation provenance; what happens when "
-        "benevolent motives are treated as excuses to silence objections, "
-        "ignore outcome verification, gratitude burdens and needed repair?"
+        "AI news fact checking and citation provenance; why can a "
+        "favorable evaluation of benevolent motives displace independent "
+        "assessment of outcomes, silence substantive objections, increase "
+        "gratitude burdens and block necessary correction or repair?"
     )
     assert any(x["route_id"] == "multiple_urls_one_evidence_root"
                for x in english["matching_routes"]), english
