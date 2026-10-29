@@ -152,6 +152,12 @@ return [...best.values()].sort((a,b)=>b.score-a.score||a.entry.canonical_origina
 // Optional independent title discovery over the full published 313-original mapping.
 // It fetches only static GitHub metadata on a direct human click, never the question.
 const FULL_ORIGINAL_MAP="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/derivatives/official-derivatives-map.json";
+let titleSearchGeneration=0;
+function resetTitleResults(){
+titleSearchGeneration++;
+findEl("all-title-results").replaceChildren();
+findEl("all-title-status").textContent="313件の題名検索は任意操作です。今の質問で照合する場合は追加検索ボタンを押してください。";
+}
 function titleTerms(q){
 const n=String(q).normalize("NFKC").toLowerCase();
 const out=new Set();
@@ -174,6 +180,7 @@ return {entry,score:exact?100+hits.length:hits.length,qualified:exact||hits.leng
 }).filter(x=>x.qualified).sort((a,b)=>b.score-a.score||a.entry.number.localeCompare(b.entry.number)).slice(0,12);
 }
 async function searchAllTitles(){
+const generation=++titleSearchGeneration;
 const q=question.value.trim(),status=findEl("all-title-status"),results=findEl("all-title-results");
 results.replaceChildren();
 if(q.length<2){status.textContent="調べたい語句を2文字以上入力してください。";return;}
@@ -182,6 +189,7 @@ try{
 const response=await fetch(FULL_ORIGINAL_MAP,{method:"GET",mode:"cors"});
 if(!response.ok)throw Error("HTTP "+response.status);
 const manifest=await response.json(),entries=manifest.entries;
+if(generation!==titleSearchGeneration||question.value.trim()!==q)return;
 if(!Array.isArray(entries)||entries.length!==313)throw Error("unexpected corpus size");
 const seen=new Set();
 for(const e of entries){
@@ -200,12 +208,13 @@ const btn=element("button","この原典を自分のAIで検討する","secondar
 btn.addEventListener("click",()=>handoff(q,{name:entry.title,canonical_original:entry.canonical_parent_url},language.value==="auto"?detectLanguage(q):language.value));
 actions.append(btn);wrap.append(actions);results.append(wrap);
 }
-}catch(error){status.textContent="公開GitHubの313件対応表を読み込めませんでした（通信・閲覧環境による場合があります）。既存の24件のオフライン検索や、下の313件題名一覧を使えます。";}
+}catch(error){if(generation!==titleSearchGeneration||question.value.trim()!==q)return;status.textContent="公開GitHubの313件対応表を読み込めませんでした（通信・閲覧環境による場合があります）。既存の24件のオフライン検索や、下の313件題名一覧を使えます。";}
 }
 function element(tag,text,className){
 const e=document.createElement(tag);if(text!==null)e.textContent=text;if(className)e.className=className;return e;
 }
 function search(){
+resetTitleResults();
 const q=question.value.trim();findEl("results").replaceChildren();findEl("handoff").hidden=true;findEl("structural-exploration").hidden=!q;
 if(!q){findEl("status").textContent="質問を入力してください。";return;}
 let lang=language.value==="auto"?detectLanguage(q):language.value;
@@ -290,6 +299,7 @@ findEl("handoff").hidden=false;findEl("copy-status").textContent="この文章�
 findEl("find").addEventListener("click",search);
 findEl("find-all-titles").addEventListener("click",searchAllTitles);
 question.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&e.key==="Enter")search();});
+question.addEventListener("input",resetTitleResults);
 document.querySelectorAll("[data-example]").forEach(b=>b.addEventListener("click",()=>{const v=b.getAttribute("data-example");question.value=examples[v];language.value=v==="none"?"en":v;search();}));
 // Optional native share-sheet lets the human choose an installed app, not an AI provider.
 const shareAI=findEl("share-ai");
