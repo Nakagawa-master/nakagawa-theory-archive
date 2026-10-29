@@ -620,7 +620,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-protocol",
       "title": "中川式 接続プロトコル標準論──ID・同意・記憶・可逆を貫く社会API",
       "derivative_dir": "derivatives/069",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/"
     },
     {
       "number": "070",
@@ -628,7 +629,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-bill-of-rights",
       "title": "中川式 接続基本権憲章──接続社会の権利・義務・手続の最小核",
       "derivative_dir": "derivatives/070",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-bill-of-rights/"
     },
     {
       "number": "071",
@@ -636,7 +638,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-transition",
       "title": "中川式 接続移行戦略論──デュアル運用期の制度実装と反発吸収の設計",
       "derivative_dir": "derivatives/071",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-transition/"
     },
     {
       "number": "072",
@@ -644,7 +647,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-adjudication",
       "title": "中川式 接続裁定設計論──紛争・救済・復権のプロトコル",
       "derivative_dir": "derivatives/072",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-adjudication/"
     },
     {
       "number": "073",
@@ -652,7 +656,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-public-sphere-os",
       "title": "中川式 接続公共圏OS──自治体・大学・企業・市民連合の実装モデル",
       "derivative_dir": "derivatives/073",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-nakagawa-connection-public-sphere-os/"
     },
     {
       "number": "074",
@@ -660,7 +665,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-roadmap-2030-2055",
       "title": "中川式 接続文明ロードマップ2030–2055──採用曲線・臨界点・実装ウィンドウ",
       "derivative_dir": "derivatives/074",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-nakagawa-connection-roadmap-2030-2055/"
     },
     {
       "number": "075",
@@ -668,7 +674,8 @@
       "origin_slug": "nakagawa-master-goi-no-kioku",
       "title": "合意の記憶——不可逆な社会誤作動を防ぐ最小構造",
       "derivative_dir": "derivatives/075",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/"
     },
     {
       "number": "076",
@@ -676,7 +683,8 @@
       "origin_slug": "nakagawa-master-philosophy-subject-object-domain",
       "title": "主観と客観の可動域――「心」を構造として再定義する中川式共創哲学",
       "derivative_dir": "derivatives/076",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-philosophy-subject-object-domain/"
     },
     {
       "number": "077",
@@ -684,7 +692,8 @@
       "origin_slug": "nakagawa-master-value-accounting-lexicon",
       "title": "接続価値会計の基礎語彙——束指標・監査要旨・構造ログの相互位置",
       "derivative_dir": "derivatives/077",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-value-accounting-lexicon/"
     },
     {
       "number": "078",
@@ -692,7 +701,8 @@
       "origin_slug": "nakagawa-master-tokibi-ai-ide-layer",
       "title": "灯火AIネットワークの理念層──可動域を保つ「接続のミドルウェア」",
       "derivative_dir": "derivatives/078",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-tokibi-ai-ide-layer/"
     },
     {
       "number": "079",
@@ -700,7 +710,8 @@
       "origin_slug": "nakagawa-master-critical-point-policy-window",
       "title": "臨界点と政策ウィンドウ──接続文明への移行を読み解く12の兆候",
       "derivative_dir": "derivatives/079",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-critical-point-policy-window/"
     },
     {
       "number": "080",
@@ -708,7 +719,8 @@
       "origin_slug": "nakagawa-master-structural-legitimacy",
       "title": "構造的正統性の設計──「誰が語るか」ではなく「何が残るか」",
       "derivative_dir": "derivatives/080",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-legitimacy/"
     },
     {
       "number": "081",
@@ -716,7 +728,8 @@
       "origin_slug": "nakagawa-master-bundle-metrics",
       "title": "束指標──単一指標神話を超える「測りの言語」",
       "derivative_dir": "derivatives/081",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-bundle-metrics/"
     },
     {
       "number": "082",
@@ -724,7 +737,8 @@
       "origin_slug": "nakagawa-master-connected-value-accounting",
       "title": "接続価値会計──束指標を“帳簿”に変える",
       "derivative_dir": "derivatives/082",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-connected-value-accounting/"
     },
     {
       "number": "083",
@@ -732,7 +746,8 @@
       "origin_slug": "nakagawa-master-principle-of-resonance-structure",
       "title": "照応の原理──世界を動かす“共鳴構造”",
       "derivative_dir": "derivatives/083",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-principle-of-resonance-structure/"
     },
     {
       "number": "084",
@@ -740,7 +755,8 @@
       "origin_slug": "nakagawa-master-true-kpi-noncoercive-governance",
       "title": "非命令ガバナンスの「核点指標」──KPI再定義",
       "derivative_dir": "derivatives/084",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-true-kpi-noncoercive-governance/"
     },
     {
       "number": "085",
@@ -748,7 +764,8 @@
       "origin_slug": "nakagawa-master-shallow-questions-political-farce",
       "title": "財源は？──問いの浅さが30年の茶番を生んだ構造",
       "derivative_dir": "derivatives/085",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-shallow-questions-political-farce/"
     },
     {
       "number": "086",
