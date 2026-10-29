@@ -49,6 +49,7 @@ ENGLISH_CUES = {
 }
 
 
+@lru_cache(maxsize=1)
 def graph():
     """Load every OD from public title list and its OWN published Parent metadata."""
     records, theme = [], None
