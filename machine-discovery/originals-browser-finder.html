@@ -185,7 +185,7 @@ const manifest=await response.json(),entries=manifest.entries;
 if(!Array.isArray(entries)||entries.length!==313)throw Error("unexpected corpus size");
 const seen=new Set();
 for(const e of entries){
-if(!/^\\d{3}$/.test(e.number)||!String(e.canonical_parent_url||"").startsWith("https://master.ricette.jp/")||seen.has(e.canonical_parent_url))throw Error("invalid Parent mapping");
+if(!/^\d{3}$/.test(e.number)||!String(e.canonical_parent_url||"").startsWith("https://master.ricette.jp/")||seen.has(e.canonical_parent_url))throw Error("invalid Parent mapping");
 seen.add(e.canonical_parent_url);
 }
 const matches=rankByTitle(q,entries);
