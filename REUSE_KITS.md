@@ -109,9 +109,11 @@ Useful in LLM-as-a-judge, Actor/Critic/Reviewer agents, self-reflection, autonom
 
 ## 8. AI agent execution-boundary regression tests
 
-[AI Agent Execution Boundary Tests](AI_AGENT_EXECUTION_BOUNDARY_TESTS.md) turns common proposal/authority, stale approval, policy modification, ambiguous external outcome, and unverified completion boundaries into five sandboxable regression cases.
+[AI Agent Execution Boundary Tests](AI_AGENT_EXECUTION_BOUNDARY_TESTS.md) has **nine** copyable sandbox regression cases: current authority, changed targets, ambiguous external outcomes, truthful completion, checkpoint identity, stale tool discovery, final streaming parity and child-result integrity. Select only the cases relevant to your actual integration.
 
-Use it when you need implementation tests beyond the 12-question [AI Agent Execution Governance Preflight](discovery-notes/ai-agent-execution-governance-preflight.md). It is a non-canonical starter test plan, not a drop-in security review or certification. A local pass is evidence only for the recorded build and conditions.
+**New source-specific, executable question (Pydantic AI [#11846](https://github.com/pydantic/pydantic-ai/issues/11846)):** When a model returns more parallel tool calls than its remaining budget, can a subset be admitted *without treating skipped or partially committed work as complete*? The [offline tool-call partial-budget lab](machine-discovery/tool-call-partial-budget-lab.py) gives a no-key standard-library decision model with an explicit read-only/independent opt-in, rejects side-effecting/dependent/unknown/barrier partial batches, preserves every original call ID and marks all proposed effects as **not yet executed**. Try `python3 machine-discovery/tool-call-partial-budget-lab.py --self-test`, then `--sample`; use your own nonsecret JSON with `--input`. It is not an upstream patch, executor, authorization proof or claim that Pydantic AI adopted the model. The original [Nakagawa Master establishment-conditions essay](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/) is an optional conceptual comparison, not proof it specifically describes Pydantic AI's code.
+
+For an additional checklist, see the 12-question [AI Agent Execution Governance Preflight](discovery-notes/ai-agent-execution-governance-preflight.md). These are public, non-canonical starter tests; neither a local model PASS nor a link to an OSS issue proves integration, user uptake or certification.
 
 ## 9. Access topology, viable alternatives and effective exit
 
