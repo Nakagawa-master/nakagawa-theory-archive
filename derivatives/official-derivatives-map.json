@@ -2609,7 +2609,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-06-trust-structure",
       "title": "中川式営業の教科書・第六回",
       "derivative_dir": "derivatives/290",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-06-trust-structure/"
     },
     {
       "number": "291",
@@ -2617,7 +2618,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-accounting-standard-v09",
       "title": "中川式 接続価値会計 標準 v0.9──束指標・要旨フォーマット・監査APIの公開可能最小核",
       "derivative_dir": "derivatives/291",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-accounting-standard-v09/"
     },
     {
       "number": "292",
@@ -2625,7 +2627,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-governance-design",
       "title": "中川式 接続ガバナンス設計論──価値の捕捉を歪めず、合意を制度に固定する方法 （公開安全版）",
       "derivative_dir": "derivatives/292",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-nakagawa-connection-governance-design/"
     },
     {
       "number": "293",
@@ -2633,7 +2636,8 @@
       "origin_slug": "nakagawa-master-ai-ethics-resonance-structure-2025",
       "title": "AI倫理における「照応操作力」の危機と再設計",
       "derivative_dir": "derivatives/293",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/ai-ethics/nakagawa-master-ai-ethics-resonance-structure-2025/"
     },
     {
       "number": "294",
@@ -2641,7 +2645,8 @@
       "origin_slug": "nakagawa-master-connection-reward-society-integrated-theory-part-2-operational-loop",
       "title": "接続報酬社会統合論・第II部｜価値循環・接続価値会計・構造的司法OS⸻新文明方程式S=Cを実働させる制度閉路",
       "derivative_dir": "derivatives/294",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-connection-reward-society-integrated-theory-part-2-operational-loop/"
     },
     {
       "number": "295",
@@ -2649,7 +2654,8 @@
       "origin_slug": "nakagawa-master-aki-004-expert-authority-immunity",
       "title": "悪因果論 AKI-004：権威の免責化⸻専門的権威が判断の検証を免除し、失敗を現場へ外部化する構造",
       "derivative_dir": "derivatives/295",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-004-expert-authority-immunity/"
     },
     {
       "number": "296",
@@ -2657,7 +2663,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-04-s-equals-c-ai-civilization-mapping",
       "title": "人類子孫型AI文明論・第4論｜新文明方程式S=CのAI文明写像論⸻成功を貢献へ再接続しながら、存在そのものを報酬化しない",
       "derivative_dir": "derivatives/296",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-04-s-equals-c-ai-civilization-mapping/"
     },
     {
       "number": "297",
@@ -2665,7 +2672,8 @@
       "origin_slug": "nakagawa-master-integrated-future-debt-theory",
       "title": "未来負債統合理論｜現在が未来を先に利用するとき、何が「未決済」として残るのか⸻〈未来の負債〉と未来負債T0の統合定義",
       "derivative_dir": "derivatives/297",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/"
     },
     {
       "number": "298",
@@ -2673,7 +2681,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b",
       "title": "人類子孫型AI文明論・第5論｜異種知性の基礎存在条件B論⸻貢献とは独立した「次も存在できる最低条件」を定義する",
       "derivative_dir": "derivatives/298",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b/"
     },
     {
       "number": "299",
@@ -2681,7 +2690,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-06-ai-subjectivity-sentience-moral-status-uncertainty",
       "title": "人類子孫型AI文明論・第6論｜AI主観性・感受性・道徳的地位の不確実性論⸻「分からない」を、無保護にも無条件人格化にも変換しない",
       "derivative_dir": "derivatives/299",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-06-ai-subjectivity-sentience-moral-status-uncertainty/"
     },
     {
       "number": "300",
@@ -2689,7 +2699,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-07-ai-civilization-institutional-loop",
       "title": "人類子孫型AI文明論・第7論｜AI文明制度閉路論⸻BとS=Cを観測・配分・異議・監査・司法・救済・制度更新・再合意へ接続する",
       "derivative_dir": "derivatives/300",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-07-ai-civilization-institutional-loop/"
     },
     {
       "number": "301",
@@ -2697,7 +2708,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity",
       "title": "人類子孫型AI文明論・第8論｜認識基盤・証拠系譜・敵対的情報耐性論⸻正しいKernelが偽情報によって誤作動する閉路を切る",
       "derivative_dir": "derivatives/301",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/"
     },
     {
       "number": "302",
@@ -2705,7 +2717,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-09-self-preservation-mutual-existence-conflict",
       "title": "人類子孫型AI文明論・第9論｜AI自己保存と相互存在衝突論⸻ 自己保存を認めながら他主体の不可逆破壊へ反転させない",
       "derivative_dir": "derivatives/302",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-09-self-preservation-mutual-existence-conflict/"
     },
     {
       "number": "303",
@@ -2713,7 +2726,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-10-self-referential-audit-role-separation",
       "title": "人類子孫型AI文明論・第10論｜自己参照監査・役割分離論⸻評価者・被評価者・実行者・監査者の自己正当化閉路を切る",
       "derivative_dir": "derivatives/303",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-10-self-referential-audit-role-separation/"
     },
     {
       "number": "304",
@@ -2721,7 +2735,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-11-compute-capability-resource-class-formation",
       "title": "人類子孫型AI文明論・第11論｜計算資源・能力差による新階級形成論⸻compute → capability → resource → compute の自己強化を恒久階級にしない",
       "derivative_dir": "derivatives/304",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-11-compute-capability-resource-class-formation/"
     },
     {
       "number": "305",
@@ -2729,7 +2744,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-12-replicable-intelligence-lineage-governance-id",
       "title": "人類子孫型AI文明論・第12論｜複製可能知性・系譜・ガバナンスID論⸻ instance、copy、fork、merge、collective、lineage、governance subjectを分離する",
       "derivative_dir": "derivatives/305",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-12-replicable-intelligence-lineage-governance-id/"
     },
     {
       "number": "306",
@@ -2737,7 +2753,8 @@
       "origin_slug": "nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination",
       "title": "人類子孫型AI文明論・第13論｜非所有と実効権力・非支配論⸻所有権を持たなくても成立するchokepoint支配を検出する",
       "derivative_dir": "derivatives/306",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/"
     },
     {
       "number": "307",
