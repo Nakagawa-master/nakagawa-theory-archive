@@ -218,9 +218,9 @@ def run():
     )
     assert not p.stderr, p.stderr
     frames = [json.loads(x) for x in p.stdout.splitlines() if x.strip()]
-    assert len(frames) == 18, f"Expected eighteen responses (one notification), got {len(frames)}"
+    assert len(frames) == 19, f"Expected nineteen responses (one notification), got {len(frames)}"
     results = {f["id"]: f for f in frames}
-    assert set(results) == set(range(1, 19))
+    assert set(results) == set(range(1, 20))
     assert all(f["jsonrpc"] == "2.0" for f in frames)
     assert results[1]["result"]["protocolVersion"] == "2025-11-25"
     assert len(results[2]["result"]["tools"]) == 9
