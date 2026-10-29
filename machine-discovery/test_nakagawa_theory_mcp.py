@@ -496,7 +496,14 @@ def run():
     assert all(x in js for x in ("renderBridges(q,lang)", "function bridgeHandoff(", "showBridge", 'findEl("bridge-choice")'))
     assert js.index("renderBridges(q,lang)") < js.index("if(!matches.length)")
     assert all(x in js for x in ("function similarity(", "function choose(", "function handoff(", "matches.length", "navigator.clipboard"))
-    assert not any(x in js for x in ("fetch(", "XMLHttpRequest", "sendBeacon(", "localStorage", "sessionStorage"))
+    # Only a direct human click can read a static public 313-Parent map. The
+    # question is matched in the browser and must not be sent by this GET.
+    assert not any(x in js for x in ("XMLHttpRequest", "sendBeacon(", "localStorage", "sessionStorage"))
+    assert js.count("fetch(") == 1
+    assert 'const response=await fetch(FULL_ORIGINAL_MAP,{method:"GET",mode:"cors"});' in js
+    assert 'findEl("find-all-titles").addEventListener("click",searchAllTitles);' in js
+    assert js.index('async function searchAllTitles()') < js.index('findEl("find-all-titles").addEventListener("click",searchAllTitles);')
+    assert "fetch(q" not in js and "fetch(question" not in js
     assert all(x in html for x in ('id="question"', 'id="results"', 'id="ai-prompt"', 'data-example="none"', 'https://master.ricette.jp/#nakagawa-master'))
     if shutil.which("node"):
         syntax = subprocess.run([shutil.which("node"), "--check", "-"], input=js,
