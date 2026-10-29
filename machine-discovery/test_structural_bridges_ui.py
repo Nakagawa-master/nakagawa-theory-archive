@@ -112,7 +112,10 @@ function node(tag) {
 for (const id of ["catalog", "structural-bridges", "question", "language",
                   "results", "handoff", "structural-exploration",
                   "status", "bridge-choice", "bridge-hint", "bridge-detail", "find",
-                  "ai-prompt", "copy-status", "copy", "open-chatgpt", "share-ai"]) elements[id] = node(id);
+                  "ai-prompt", "copy-status", "copy", "open-chatgpt", "share-ai",
+                  "find-all-titles", "all-title-status", "all-title-results"]) elements[id] = node(id);
+// Guard against any network access until the optional 313-title button is clicked.
+globalThis.fetch = () => { throw Error("Unexpected browser GET without explicit title-search click"); };
 elements["share-ai"].hidden = true; // Reflect production [hidden] when native share is unavailable.
 elements["catalog"].textContent = ORIGINAL_CATALOG;
 elements["structural-bridges"].textContent = BRIDGE_CATALOG;
@@ -127,6 +130,9 @@ globalThis.document = {
     bootstrap = bootstrap.replace("ORIGINAL_CATALOG", json.dumps(json.dumps(visible, ensure_ascii=False), ensure_ascii=False))
     bootstrap = bootstrap.replace("BRIDGE_CATALOG", json.dumps(json.dumps(bridges, ensure_ascii=False), ensure_ascii=False))
     checks = r'''
+// The 24 offline search path is independently usable without static-313 GET.
+if(!elements["find-all-titles"].listeners.click) throw Error("Optional 313-title click handler missing");
+if(elements["all-title-results"].children.length) throw Error("Title search ran before click");
 // Newly indexed risk questions previously unreachable in the HTML browser.
 const riskCases = [
  ["How could an AI shutdown or containment action increase catastrophic risk by destroying another agent's only viable recovery resources?", "en", "09-self-preservation-mutual-existence-conflict"],
