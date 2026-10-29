@@ -206,6 +206,10 @@ def run():
             "name": "find_nakagawa_original_for_problem",
             "arguments": {"question": "OD313"},
         }),
+        req(19, "tools/call", {
+            "name": "find_nakagawa_original_for_problem",
+            "arguments": {"question": "AI news fact checking and citation provenance; inspect OD313"},
+        }),
     ]
     p = subprocess.run(
         [sys.executable, str(SERVER)],
@@ -281,6 +285,13 @@ def run():
         assert new["matching_routes"] == baseline["matching_routes"]
     # A real stdio request should now reach an otherwise non-curated
     # member of the whole 313-Parent corpus without a second-tool call.
+    mixed = unpack(19)
+    assert mixed["matching_routes"][0]["route_id"] == "whole_structure:OD313"
+    assert mixed["whole_structure_candidate_count"] == 1
+    assert mixed["technical_route_count"] >= 1
+    assert mixed["original_catalog_route_count"] >= 0
+    assert any(x["route_id"] == "multiple_urls_one_evidence_root"
+               for x in mixed["matching_routes"])
     all_313 = unpack(18)
     assert not all_313["no_fit"] and all_313["whole_structure_candidate_count"] >= 1
     assert any(x["route_id"] == "whole_structure:OD313"
