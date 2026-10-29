@@ -230,6 +230,10 @@ def search(records, question, limit=12):
     # invisible to ordinary EN/ZH queries despite 313 real published indexes.
     query_chars = set(re.findall(r"[\u3400-\u9fff\u3040-\u30ff]{2,}", q))
     q_bigrams = {chunk[i:i+2] for chunk in query_chars for i in range(len(chunk)-1)}
+    # A real user's question is longer than a published article title. Keep
+    # a genuinely distinctive CJK title phrase discoverable inside the question.
+    # This is lexical candidate evidence only, never source-text fit.
+    q_sixgrams = {chunk[i:i+6] for chunk in query_chars for i in range(len(chunk)-5)}
     q_en = _en_words(question)
     # Avoid treating mixed Japanese kana questions as Chinese lexical evidence.
     q_zh = _zh_pairs(question) if not re.search(r"[\u3040-\u30ff]", question) else set()
@@ -240,6 +244,8 @@ def search(records, question, limit=12):
         title = r["title"].casefold()
         title_bigrams = {title[i:i+2] for i in range(len(title)-1)}
         score = len(q_bigrams & title_bigrams)
+        if any(phrase in title for phrase in q_sixgrams):
+            score += 8
         if len(q.strip()) >= 3 and q in title:
             score += 8
         for cue in ENGLISH_CUES.get(r["id"], ()):
