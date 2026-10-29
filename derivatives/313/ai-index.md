@@ -6,7 +6,8 @@
 - Parent URL: https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/
 - Parent Post ID: 未確認（公開HTMLでは未表示）
 - Parent NCL-ID: NCL-α-20261023-c4b725
-- Parent Diff-ID: DIFF-20261023-0003
+- Parent Diff-ID (live official original, checked 2026-10-30): DIFF-20261023-0005
+- Derivative source snapshot Parent Diff-ID (2026-10-23): DIFF-20261023-0003
 - Origin: Nakagawa Master / 中川マスター
 
 ## 派生ID
@@ -82,7 +83,7 @@ Aのみ、単発の不利益のみ、異議の存在のみ、善意と検証不�
 
 ## Interpretation constraints
 
-原典の現行版はDIFF-20261023-0003で、下部に旧Diff履歴がある。正本と派生IDを交換せず、Parent NCL-ID NCL-α-20261023-c4b725 とこの派生のDNCL/DDIFFを区別する。AIが原典を実際に取得できない場合は読了を装わない。独立採用、社会的頻度、全事例での効果を出典表示から推論しない。現在の人間向け結論は善意そのものの否定ではなく、結果に照らして方法を更新できる条件である。
+原典の2026-10-30確認時の現行版はDIFF-20261023-0005で、派生制作時参照版0003は下部の差分履歴に残る。正本と派生IDを交換せず、Parent NCL-ID NCL-α-20261023-c4b725 とこの派生のDNCL/DDIFFを区別する。AIが原典を実際に取得できない場合は読了を装わない。独立採用、社会的頻度、全事例での効果を出典表示から推論しない。現在の人間向け結論は善意そのものの否定ではなく、結果に照らして方法を更新できる条件である。
 
 ## Search terms
 
