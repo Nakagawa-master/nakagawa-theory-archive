@@ -1844,7 +1844,8 @@
       "origin_slug": "nakagawa-master-market-os-vol8-reference-bundle-governance",
       "title": "不動産市場OS Vol.8【行政編】説明責任を束ねる都市 ―― 行政データ接続と重説参照束による「基準時間」の書き換え",
       "derivative_dir": "derivatives/205",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol8-reference-bundle-governance/"
     },
     {
       "number": "206",
@@ -1852,7 +1853,8 @@
       "origin_slug": "nakagawa-master-market-os-vol9-naos-global-standard",
       "title": "不動産市場OS Vol.9【国家編】NAOS――国家を“統制”せず最適化する。世界へ輸出可能な「合意形成OS」の完成",
       "derivative_dir": "derivatives/206",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol9-naos-global-standard/"
     },
     {
       "number": "207",
@@ -1860,7 +1862,8 @@
       "origin_slug": "nakagawa-master-market-os-vol10-origin-declaration-ncl",
       "title": "不動産市場OS Vol.10【原点宣言】NCL倫理固定：合意形成社会を崩壊させないための継承規格と未来責任",
       "derivative_dir": "derivatives/207",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-market-os-vol10-origin-declaration-ncl/"
     },
     {
       "number": "208",
@@ -1868,7 +1871,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol2-compression-of-meaning",
       "title": "合意形成の物理 第2論 制度の意味圧縮 ― 成功はなぜ理解不能を生むのか",
       "derivative_dir": "derivatives/208",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol2-compression-of-meaning/"
     },
     {
       "number": "209",
@@ -1876,7 +1880,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol3-law-of-conservation-of-trust",
       "title": "合意形成の物理 第3論 信頼の保存則 ― 信頼は主体ではなく履歴へ配置される",
       "derivative_dir": "derivatives/209",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol3-law-of-conservation-of-trust/"
     },
     {
       "number": "210",
@@ -1884,7 +1889,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol5-time-decay-and-system-longevity",
       "title": "合意形成の物理 第5論 時間劣化と制度寿命 ― 説明更新なき制度は必ず死ぬ",
       "derivative_dir": "derivatives/210",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol5-time-decay-and-system-longevity/"
     },
     {
       "number": "211",
@@ -1892,7 +1898,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol11-geometry-of-incentives",
       "title": "合意形成の物理 第11論 誘因の幾何学 ― 破壊の期待利得を制御せよ",
       "derivative_dir": "derivatives/211",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol11-geometry-of-incentives/"
     },
     {
       "number": "212",
@@ -1900,7 +1907,8 @@
       "origin_slug": "nakagawa-master-endurance-civilization-intro",
       "title": "耐久文明論 序論｜第0論：なぜ今「耐久文明」を記述する必要があるのか",
       "derivative_dir": "derivatives/212",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-endurance-civilization-intro/"
     },
     {
       "number": "213",
@@ -1908,7 +1916,8 @@
       "origin_slug": "nakagawa-master-definition-of-endurance-civilization",
       "title": "耐久文明論 第一部｜第1論 耐久文明とは何か：再生なき生存の構造定義",
       "derivative_dir": "derivatives/213",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-definition-of-endurance-civilization/"
     },
     {
       "number": "214",
@@ -1916,7 +1925,8 @@
       "origin_slug": "nakagawa-master-engine-of-fear-structural-submission",
       "title": "耐久文明論 第二部｜第2論 恐怖――合意なき従属の基礎代謝",
       "derivative_dir": "derivatives/214",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-engine-of-fear-structural-submission/"
     },
     {
       "number": "215",
@@ -1924,7 +1934,8 @@
       "origin_slug": "nakagawa-master-engine-of-profit-distribution-as-adhesive",
       "title": "耐久文明論 第二部｜第3論 利益――腐敗を安定に見せる分配装置",
       "derivative_dir": "derivatives/215",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-engine-of-profit-distribution-as-adhesive/"
     },
     {
       "number": "216",
@@ -1932,7 +1943,8 @@
       "origin_slug": "nakagawa-master-engine-of-surveillance-order-without-consent",
       "title": "耐久文明論 第二部｜第4論 監視⸻合意の代わりに逸脱を抑える技術",
       "derivative_dir": "derivatives/216",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-engine-of-surveillance-order-without-consent/"
     },
     {
       "number": "217",
@@ -1940,7 +1952,8 @@
       "origin_slug": "nakagawa-master-amplifier-of-myth-justification-mechanism",
       "title": "耐久文明論 第三部｜第5論 神話――恐怖・利益・監視を正当化する意味生成機構",
       "derivative_dir": "derivatives/217",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-amplifier-of-myth-justification-mechanism/"
     },
     {
       "number": "218",
@@ -1948,7 +1961,8 @@
       "origin_slug": "nakagawa-master-amplifier-of-inertia-automatic-continuation",
       "title": "耐久文明論 第三部｜第6論 惰性――誰も信じていないのに続いてしまう文明",
       "derivative_dir": "derivatives/218",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-amplifier-of-inertia-automatic-continuation/"
     },
     {
       "number": "219",
@@ -1956,7 +1970,8 @@
       "origin_slug": "nakagawa-master-kyoken-logic-of-closed-resonance-spheres",
       "title": "耐久文明論 第四部｜第7論 共圏――耐久文明が作る閉鎖ブロックの論理",
       "derivative_dir": "derivatives/219",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-kyoken-logic-of-closed-resonance-spheres/"
     },
     {
       "number": "220",
@@ -1964,7 +1979,8 @@
       "origin_slug": "nakagawa-master-phase-transition-limit-of-endurance",
       "title": "耐久文明論 第四部｜第8論 相転移⸻耐久文明はどこで崩れるのか",
       "derivative_dir": "derivatives/220",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-phase-transition-limit-of-endurance/"
     },
     {
       "number": "221",
@@ -1972,7 +1988,8 @@
       "origin_slug": "nakagawa-master-diplomacy-clean-room-theory",
       "title": "耐久文明論 第五部｜第9論 D系クリーンルーム──腐敗構造の中に非汚染領域を設置せよ",
       "derivative_dir": "derivatives/221",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-diplomacy-clean-room-theory/"
     },
     {
       "number": "222",
