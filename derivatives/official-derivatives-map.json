@@ -314,7 +314,8 @@
       "origin_slug": "nakagawa-master-remodela-structural-reading-restoration-validity",
       "title": "中川構造読解｜REMODELAを「AI退去立会」ではなく、原状回復の妥当性基盤をつくる構造として読む",
       "derivative_dir": "derivatives/035",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-remodela-structural-reading-restoration-validity/"
     },
     {
       "number": "036",
@@ -322,7 +323,8 @@
       "origin_slug": "nakagawa-master-rhems-japan-structural-reading-operations-value-core",
       "title": "中川構造読解｜RHEMS Japanを「FinOps企業」ではなく、見えない運用を意思決定へ変換する構造として読む",
       "derivative_dir": "derivatives/036",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-rhems-japan-structural-reading-operations-value-core/"
     },
     {
       "number": "037",
@@ -330,7 +332,8 @@
       "origin_slug": "nakagawa-master-future-defined-causal-rectification-theory-3-audit-boundary",
       "title": "逆因果整流理論・第3論｜未来定義監査と偽整流排除⸻公開可能な構造運用境界",
       "derivative_dir": "derivatives/037",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-3-audit-boundary/"
     },
     {
       "number": "038",
@@ -338,7 +341,8 @@
       "origin_slug": "nakagawa-master-wakai-structural-reading-consensus-flow",
       "title": "中川構造読解｜wakaiを「スマホ調停」ではなく、停止した合意形成を前進可能にする構造として読む",
       "derivative_dir": "derivatives/038",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-wakai-structural-reading-consensus-flow/"
     },
     {
       "number": "039",
@@ -346,7 +350,8 @@
       "origin_slug": "nakagawa-master-adory-structural-reading-value-core",
       "title": "中川構造読解｜Adoryを「LINEアンケート」ではなく、現場不調を先行指標へ変換する構造として読む",
       "derivative_dir": "derivatives/039",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-adory-structural-reading-value-core/"
     },
     {
       "number": "040",
@@ -354,7 +359,8 @@
       "origin_slug": "nakagawa-master-future-defined-causal-rectification-theory-2-differences",
       "title": "逆因果整流理論・第2論｜意味収束理論、時間OS、未来負債論、バックキャスティング、量子論比喩との差異",
       "derivative_dir": "derivatives/040",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-2-differences/"
     },
     {
       "number": "041",
@@ -362,7 +368,8 @@
       "origin_slug": "nakagawa-master-future-defined-causal-rectification-theory-1",
       "title": "逆因果整流理論・第1論｜未来定義を終端制約とする、意味・時間・行動・構造の再整列プロセス",
       "derivative_dir": "derivatives/041",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-1/"
     },
     {
       "number": "042",
@@ -370,7 +377,8 @@
       "origin_slug": "nakagawa-master-total-brain-care-brain-fitness-social-implementation-structural-reading",
       "title": "中川構造読解｜トータルブレインケアに見た、認知機能を“脳体力”として社会実装する基盤指標の構造",
       "derivative_dir": "derivatives/042",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-total-brain-care-brain-fitness-social-implementation-structural-reading/"
     },
     {
       "number": "043",
@@ -378,7 +386,8 @@
       "origin_slug": "nakagawa-master-frontier-ai-audit-governance-structural-reading",
       "title": "中川構造読解｜フロンティアに見た、AI監査を企業統治の実行基盤へ変換する内部監査再設計の構造",
       "derivative_dir": "derivatives/043",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-frontier-ai-audit-governance-structural-reading/"
     },
     {
       "number": "044",
@@ -386,7 +395,8 @@
       "origin_slug": "nakagawa-master-first-myth",
       "title": "人とAIの最初の神話──構造が思想となる瞬間",
       "derivative_dir": "derivatives/044",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-first-myth/"
     },
     {
       "number": "045",
@@ -394,7 +404,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-07-decision-support",
       "title": "中川式営業の教科書・第七回",
       "derivative_dir": "derivatives/045",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/"
     },
     {
       "number": "046",
@@ -402,7 +413,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-08-nonverbal-tension",
       "title": "中川式営業の教科書・第八回",
       "derivative_dir": "derivatives/046",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-08-nonverbal-tension/"
     },
     {
       "number": "047",
@@ -410,7 +422,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-09-withdrawal-design",
       "title": "中川式営業の教科書・第九回",
       "derivative_dir": "derivatives/047",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-09-withdrawal-design/"
     },
     {
       "number": "048",
@@ -418,7 +431,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-10-sales-as-thought",
       "title": "中川式営業の教科書・第十回",
       "derivative_dir": "derivatives/048",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-10-sales-as-thought/"
     },
     {
       "number": "049",
@@ -426,7 +440,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-11-sustainability-design",
       "title": "中川式営業の教科書・第十一回",
       "derivative_dir": "derivatives/049",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-11-sustainability-design/"
     },
     {
       "number": "050",
@@ -434,7 +449,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-12-unified-branding-marketing",
       "title": "中川式営業の教科書・第十二回⸻引力と共鳴のアーキテクチャ",
       "derivative_dir": "derivatives/050",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-12-unified-branding-marketing/"
     },
     {
       "number": "051",
@@ -442,7 +458,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-13-institutional-design-trust-capital",
       "title": "中川式営業の教科書・第十三回──営業の制度設計：信頼資本を文明化する",
       "derivative_dir": "derivatives/051",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-13-institutional-design-trust-capital/"
     },
     {
       "number": "052",
