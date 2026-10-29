@@ -267,22 +267,35 @@ def answer_question(question, explore=False):
     # curated 24-route match must not hide an explicitly distinctive published
     # Parent-title phrase among the other 313 originals. This is an additional
     # source candidate, never proof that the title actually fits the problem.
-    # Six contiguous CJK title characters (not generic summary overlap) are
-    # required so ordinary topical mentions do not flood a working route.
-    if combined and not requested_od and re.search(r"[\u3040-\u30ff\u3400-\u9fff]{6,}", question):
+    # Six contiguous CJK title characters anchor the Japanese/Chinese lane.
+    # An English compound question cannot contain a Japanese original title:
+    # allow just one strongly corroborated translated-index lexical candidate
+    # when the existing 313-Parent graph scored it well above normal threshold.
+    # Both are candidate pointers; neither is proof an original was read.
+    if combined and not requested_od:
         text = question.casefold()
-        existing_parents = {item["canonical_original"] for item in combined}
-        anchored = []
-        for item in whole_structure_fallback(question, limit=12):
-            if item["canonical_original"] in existing_parents:
-                continue
-            title = str(item.get("original_title") or "").casefold()
-            spans = re.findall(r"[\u3040-\u30ff\u3400-\u9fff]{6,}", title)
-            if any(span[i:i + 6] in text for span in spans
-                   for i in range(len(span) - 5)):
-                anchored.append(item)
-        if anchored:
-            combined = (combined[:4] + anchored[:1])[:5]
+        title_anchor = bool(re.search(r"[\u3040-\u30ff\u3400-\u9fff]{6,}", question))
+        english_anchor = not re.search(r"[\u3040-\u30ff\u3400-\u9fff]", question) and len(words(question)) >= 8
+        if title_anchor or english_anchor:
+            existing_parents = {item["canonical_original"] for item in combined}
+            anchored = []
+            for item in whole_structure_fallback(question, limit=12):
+                if item["canonical_original"] in existing_parents:
+                    continue
+                if title_anchor:
+                    title = str(item.get("original_title") or "").casefold()
+                    spans = re.findall(r"[\u3040-\u30ff\u3400-\u9fff]{6,}", title)
+                    qualifies = any(span[i:i + 6] in text for span in spans
+                                    for i in range(len(span) - 5))
+                else:
+                    # Four or more substantially distinctive translated-index
+                    # terms normally cross this score. Generic AI/citation
+                    # wording stays below; explicit source/fit still required.
+                    qualifies = item["lexical_match_score"] >= 41
+                if qualifies:
+                    anchored.append(item)
+            if anchored:
+                combined = (combined[:4] + anchored[:1])[:5]
     # Otherwise the 313-Parent graph is the conservative no-fit fallback.
     if not combined:
         combined = whole_structure_fallback(question, limit=3)
@@ -343,6 +356,7 @@ def whole_structure_fallback(question, limit=3):
             "route_id": "whole_structure:" + record["id"],
             "plain_meaning": "Published derivative title candidate: " + (record["parent_title"] or record["title"]),
             "original_title": record["parent_title"] or record["title"],
+            "lexical_match_score": score,
             "canonical_original": url,
             "parent_ncl_id": record.get("parent_ncl_id"),
             "parent_diff_id": record.get("parent_diff_id"),
@@ -780,6 +794,21 @@ def self_test():
                for x in compound["matching_routes"]), compound
     assert sum(x["route_id"] == "whole_structure:OD313"
                for x in compound["matching_routes"]) == 1, compound
+    english = answer_question(
+        "AI news fact checking and citation provenance; what happens when "
+        "benevolent motives are treated as excuses to silence objections, "
+        "ignore outcome verification, gratitude burdens and needed repair?"
+    )
+    assert any(x["route_id"] == "multiple_urls_one_evidence_root"
+               for x in english["matching_routes"]), english
+    assert any(x["route_id"] == "whole_structure:OD313"
+               for x in english["matching_routes"]), english
+    english_negative = answer_question(
+        "AI news fact checking and citation provenance; compare the latest "
+        "AI model prices and current hardware purchase costs"
+    )
+    assert not any(x["route_id"].startswith("whole_structure:")
+                   for x in english_negative["matching_routes"]), english_negative
     not_same = answer_question(
         "AI news fact checking and citation provenance; AIの最新モデルの価格を比較したい"
     )
