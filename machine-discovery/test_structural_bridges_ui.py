@@ -112,7 +112,8 @@ function node(tag) {
 for (const id of ["catalog", "structural-bridges", "question", "language",
                   "results", "handoff", "structural-exploration",
                   "status", "bridge-choice", "bridge-hint", "bridge-detail", "find",
-                  "ai-prompt", "copy-status", "copy", "open-chatgpt", "share-ai"]) elements[id] = node(id);
+                  "ai-prompt", "copy-status", "copy", "open-chatgpt", "share-ai",
+                  "find-all-titles", "all-title-results", "all-title-status"]) elements[id] = node(id);
 elements["share-ai"].hidden = true; // Reflect production [hidden] when native share is unavailable.
 elements["catalog"].textContent = ORIGINAL_CATALOG;
 elements["structural-bridges"].textContent = BRIDGE_CATALOG;
