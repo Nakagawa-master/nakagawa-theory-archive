@@ -114,9 +114,6 @@ for (const id of ["catalog", "structural-bridges", "question", "language",
                   "status", "bridge-choice", "bridge-hint", "bridge-detail", "find",
                   "ai-prompt", "copy-status", "copy", "open-chatgpt", "share-ai",
                   "find-all-titles", "all-title-status", "all-title-results"]) elements[id] = node(id);
-// Keep the optional user-click-only source-map control present in the test DOM.
-if (!elements["find-all-titles"] || !elements["all-title-status"] ||
-    !elements["all-title-results"]) throw Error("313 title search controls unavailable");
 elements["share-ai"].hidden = true; // Reflect production [hidden] when native share is unavailable.
 elements["catalog"].textContent = ORIGINAL_CATALOG;
 elements["structural-bridges"].textContent = BRIDGE_CATALOG;

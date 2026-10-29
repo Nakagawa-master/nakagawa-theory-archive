@@ -502,8 +502,7 @@ def run():
     assert all(x in js for x in ("renderBridges(q,lang)", "function bridgeHandoff(", "showBridge", 'findEl("bridge-choice")'))
     assert js.index("renderBridges(q,lang)") < js.index("if(!matches.length)")
     assert all(x in js for x in ("function similarity(", "function choose(", "function handoff(", "matches.length", "navigator.clipboard"))
-    # A static 313-Parent source-map GET is permitted ONLY on the human's
-    # explicit click, with no question text or background transmission.
+    # User-triggered static 313 Parent metadata lookup only, never question text.
     assert not any(x in js for x in ("XMLHttpRequest", "sendBeacon(", "localStorage", "sessionStorage"))
     assert js.count("fetch(") == 1
     assert 'const response=await fetch(FULL_ORIGINAL_MAP,{method:"GET",mode:"cors"});' in js
