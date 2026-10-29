@@ -6,6 +6,7 @@ not a cached copy of an original, an authority grant, or a model-wide setting.
 stdio uses one JSON-RPC message per line; stdout is protocol-only.
 """
 import argparse
+from functools import lru_cache
 import importlib.util
 import json
 from pathlib import Path
@@ -323,6 +324,7 @@ def whole_structure_fallback(question, limit=3):
     return result
 
 
+@lru_cache(maxsize=6)
 def load_public_helper(path, module_name):
     """Reuse proven existing offline tools inside THIS server; no new MCP process."""
     spec = importlib.util.spec_from_file_location(module_name, path)
