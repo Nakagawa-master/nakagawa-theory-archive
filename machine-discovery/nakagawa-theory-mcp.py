@@ -714,6 +714,11 @@ def self_test():
         x["canonical_original"].startswith("https://master.ricette.jp/")
         for x in broad["matching_routes"]), broad
     assert broad["whole_structure_candidate_count"] >= 1
+    # A natural original-topic question, not an OD number or tool name,
+    # must retrieve its specific OD313 Parent when the title span is real.
+    human = answer_question("なぜ善意の免罪符化は問題なの？")
+    assert any(x["route_id"] == "whole_structure:OD313"
+               for x in human["matching_routes"]), human
     assert all("lexical candidate only" in x["original_relation"]
                for x in broad["matching_routes"] if x["route_id"].startswith("whole_structure:"))
     assert answer_question("AI news fact checking and citation provenance")["matching_routes"][0]["route_id"] == "multiple_urls_one_evidence_root"
