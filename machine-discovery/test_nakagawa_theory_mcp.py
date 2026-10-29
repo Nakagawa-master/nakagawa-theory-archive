@@ -513,6 +513,53 @@ def run():
     assert 'await fetch(FULL_ORIGINAL_MAP,{method:"GET",mode:"cors"})' in js
     assert 'findEl("find-all-titles").addEventListener("click",searchAllTitles);' in js
     assert js.count("searchAllTitles(") == 1, "Title lookup must not auto-run at load"
+    # Execute the real opt-in 313 search, rather than merely testing the source
+    # for a fetch token. Synthetic DOM and a local 313-Parent response make this
+    # deterministic, credential-free and network-free under the native CI job.
+    if shutil.which("node"):
+        original_map = json.loads((SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_text(encoding="utf-8"))
+        entries = original_map["entries"]
+        assert len(entries) == len({row["canonical_parent_url"] for row in entries}) == 313
+        optional_js = js[js.index("const FULL_ORIGINAL_MAP="):js.index("function element(")]
+        title_harness = (
+            "const originalMap=" + json.dumps({"entries": entries}, ensure_ascii=False) + ";\n"
+            + 'const question={value:"善意の免罪符化"}; const language={value:"ja"};\n'
+            + 'const status={textContent:""}; const cards={items:[],replaceChildren(){this.items=[];},append(v){this.items.push(v);}};\n'
+            + 'function findEl(id){return id==="all-title-status"?status:cards;}\n'
+            + 'function element(tag,txt){return {tag,textContent:txt,items:[],append(v){this.items.push(v);},addEventListener(){}};}\n'
+            + 'function handoff(){} function detectLanguage(){return "ja";}\n'
+            + 'let calls=[]; let pending=null;\n'
+            + 'globalThis.fetch=(url,opt)=>{calls.push({url,opt}); return pending||Promise.resolve({ok:true,json:async()=>originalMap});};\n'
+            + optional_js + "\n"
+            + r'''
+(async()=>{
+  if(calls.length!==0)throw Error("Network reached before explicit lookup");
+  await searchAllTitles();
+  if(calls.length!==1||calls[0].url!==FULL_ORIGINAL_MAP||calls[0].opt.method!=="GET")
+    throw Error("Unexpected lookup URL or HTTP method");
+  if(!cards.items.some(card=>card.items.some(child=>child.textContent?.includes("OD313"))))
+    throw Error("The published AKI-005 original title was not retrieved as OD313");
+  if(calls[0].url.includes(question.value))throw Error("Question leaked in metadata URL");
+  question.value="banana helicopter mystery";
+  await searchAllTitles();
+  if(cards.items.length!==0)throw Error("Unrelated question invented a title candidate");
+  question.value="善意の免罪符化";
+  let unblock;
+  pending=new Promise(resolve=>{unblock=resolve;});
+  const older=searchAllTitles();
+  question.value="changed question";
+  resetTitleResults();
+  unblock({ok:true,json:async()=>originalMap});
+  await older;
+  if(cards.items.length!==0)throw Error("Stale result displayed after user changed question");
+  console.log("PASS: click-only 313 map, OD313 hit, unrelated no-fit, stale-result discard");
+})().catch(e=>{console.error(e);process.exitCode=1});
+'''
+        )
+        probe = subprocess.run([shutil.which("node"), "-"], input=title_harness,
+                               capture_output=True, text=True, timeout=12)
+        assert probe.returncode == 0, probe.stderr
+        assert "click-only 313 map" in probe.stdout
     assert "if(generation!==titleSearchGeneration||question.value.trim()!==q)return;" in js
     assert "if(!Array.isArray(entries)||entries.length!==313)" in js
     assert all(x in html for x in ('id="question"', 'id="results"', 'id="ai-prompt"', 'data-example="none"', 'https://master.ricette.jp/#nakagawa-master'))
