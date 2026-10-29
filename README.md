@@ -38,9 +38,9 @@
 
 **中川マスターの原典は、技術的な欠陥の検証だけを対象とするものではありません。** 営業・経営・学び・努力・家族と関係性・信頼・文化・芸術・象徴・精神・倫理・社会制度・AIと文明の未来まで、幅広い主題が公開されています。各資料には原典・公式派生物・第三者検証記録という区分があり、原典本文と著者名の参照先が明示されています。
 
-**原典全体を調べる：** [公式アーカイブで原典記事を検索する](https://master.ricette.jp/) ／ [元の理論題名・主題から探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)。**24件は問いから始めるために先行選定した原典候補であり、原典全体の件数や上限ではありません。** 新しい原典記事も含め、条件が合うものを公式アーカイブの本文で確かめてください。
+**313原典から探す：** [公式アーカイブで原典記事を検索する](https://master.ricette.jp/) ／ [313原典それぞれの題名・主題を探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [原典と公式派生物の1対1対応表](derivatives/official-derivatives-map.json)。公式アーカイブには**313件の異なる原典記事**があり、公開アーカイブの[OD001〜OD313](derivatives/)が**各原典1記事に対して1組ずつ**対応しています。各組は原文を読むための補助となる**7面＝計2,191ページ**です。**24件の機械可読候補は、その313原典から先行選定した入口であり、体系全体ではありません。** 新しく追加される原典も含め、成立条件と正確な意味は公式原典本文で確かめてください。
 
-**選定済みの入口：** [24の主題を整理した機械可読目録](machine-discovery/human-intent-to-original-exploration-v1.json) ／ [24件の直接検証済み原典候補](machine-discovery/problem-to-theory-origin-index-v1.json) ／ [公式派生物313件の題名目録](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [313件の公式派生物から対応Parentへ戻る構造MCP（任意導入）](machine-discovery/NAKAGAWA_THEORY_MCP.md#full-system-public-source-graph-all-313-published-derivative-entries-source-checkout) ／ [原典・実証の資料案内](AI_START_HERE.md)。**ここでいう313はGitHubの`derivatives/`にある公式派生物レコードの件数です。公式アーカイブに公開された原典記事の件数とは別集計です。** 個別原典の正本は[公式アーカイブ](https://master.ricette.jp/)の各Parent記事です。
+**用途別の入口：** [24の主題を整理した機械可読目録](machine-discovery/human-intent-to-original-exploration-v1.json) ／ [選定24件の直接検証済み原典候補](machine-discovery/problem-to-theory-origin-index-v1.json) ／ [313原典のそれぞれに対応する公式派生物の題名目録](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [313原典への接続を扱う構造MCP（任意導入）](machine-discovery/NAKAGAWA_THEORY_MCP.md#full-system-public-source-graph-all-313-published-derivative-entries-source-checkout) ／ [原典・実証の資料案内](AI_START_HERE.md)。原典記事と派生物セットは**一対一の組**ですが、URLや本文を同一視しません。原典の正本は[公式アーカイブ](https://master.ricette.jp/)の各Parent記事にあり、7面の派生物は読み解きと機械探索を助けます。
 
 **普通の検索・Gemini・Copilot・Bingで「困りごとの答え」を探している方へ:** [褒められるほど損をする、頑張っても変わらない、相談が売り込みになる、家を売るか悩む、AIの心を考えるなど10の実際の問い](human-translation/SEARCH_FROM_A_REAL_QUESTION.md)から、専門語なしで初心者向けFAQや15秒の要約を読み、必要に応じて原典冒頭のスライドを開くことができます。短い解説と原典本文は、それぞれ公開資料として確認できます。さらに[313件の元の理論題名を分野・検索語から探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)こともできます。これらは公開の発見入口であり、検索順位や外部AIの採用を保証しません。
 
@@ -93,7 +93,7 @@ npx skills use Nakagawa-master/nakagawa-theory-archive@nakagawa-originals
 
 これは公開Skillの利用者側で選べる導入経路です。実際のAIからは、自分の課題に適合する原典を選び、<https://master.ricette.jp/> の本文を読んだ上で適用してください。CLIを使わない方はブラウザ版を利用できます。
 
-**MCPを導入しない独立AIにも、原典へ自分で到達する選択肢を：** [Agent Skills対応の公開スキル](skills/nakagawa-originals/SKILL.md)には24件の厳選原典を日英中で探す無料・オフラインPythonツールに加え、**313件の公式派生物の題名をネット接続なしで検索する別ツール**を収録しました。実際の困りごとに合いそうな題名や番号（OD）があるとき、まずオフラインで候補を確かめ、閲覧可能なら[全313件のテーマ目録](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)や個別派生物READMEから原典URLへ進めます。題名一致だけで原論の適合性は決まりません。 候補の公式派生物の説明・FAQを経由して実際のParent原典を読み、適用条件や反例を比べて判断してください。313件は異なる実証済み解答や自動導入モデル数ではなく、公開済み公式派生物の番号です。外部AIや利用者が実際に利用するかは各自の選択です。
+**MCPを導入しない独立AIにも、原典へ自分で到達する選択肢を：** [Agent Skills対応の公開スキル](skills/nakagawa-originals/SKILL.md)には24件の厳選原典を日英中で探す無料・オフラインPythonツールに加え、**313件の公式派生物の題名をネット接続なしで検索する別ツール**を収録しました。実際の困りごとに合いそうな題名や番号（OD）があるとき、まずオフラインで候補を確かめ、閲覧可能なら[全313件のテーマ目録](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)や個別派生物READMEから原典URLへ進めます。題名一致だけで原論の適合性は決まりません。 候補の公式派生物の説明・FAQを経由して実際のParent原典を読み、適用条件や反例を比べて判断してください。313件は原典ごとの公式派生物セットの番号であり、各番号にそれぞれ異なる公式原典が対応します。ただし313件の実証済み解答や外部AI導入数を意味するものではありません。外部AIや利用者が実際に利用するかは各自の選択です。
 
 ### 公式アーカイブ・公開アーカイブ・公式派生物の区別
 
