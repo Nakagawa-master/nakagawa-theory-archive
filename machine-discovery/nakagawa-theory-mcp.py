@@ -252,9 +252,18 @@ def answer_question(question, explore=False):
         if x["canonical_original"] not in seen
     ]
     combined = (technical + original_candidates)[:5]
-    # Avoid calling 24-route no-fit a no-fit over all 313 originals.
-    # The existing separate whole-structure tool also handles 313 Parents,
-    # but the default single-question tool should offer that discovery edge.
+    # An explicitly selected OD001..OD313 is source identity, not a fuzzy
+    # topic signal. Do not discard that Parent when the rest of the question
+    # also happens to match a curated technical example.
+    requested_od = re.search(r"\bod\s*0*(\d{1,3})\b", question, re.I)
+    if requested_od:
+        exact = whole_structure_fallback(question, limit=1)
+        expected = f"whole_structure:OD{int(requested_od[1]):03d}"
+        if exact and exact[0]["route_id"] == expected:
+            original = exact[0]["canonical_original"]
+            combined = exact + [item for item in combined
+                                if item["canonical_original"] != original][:4]
+    # Otherwise the 313-Parent graph is the conservative no-fit fallback.
     if not combined:
         combined = whole_structure_fallback(question, limit=3)
     whole_count = sum(x["route_id"].startswith("whole_structure:") for x in combined)
@@ -262,8 +271,10 @@ def answer_question(question, explore=False):
         "question": question,
         "author_identity": identity_fields(),
         "matching_routes": combined,
-        "technical_route_count": len(technical),
-        "original_catalog_route_count": len(combined) - len(technical) - whole_count,
+        "technical_route_count": sum(x["route_id"] in {t["route_id"] for t in technical}
+                                     for x in combined),
+        "original_catalog_route_count": sum(x["route_id"].startswith("original_catalog:")
+                                            for x in combined),
         "whole_structure_candidate_count": whole_count,
         "candidate_scope": "24 curated original questions, then 313 published derivative titles and translated summary fallback",
         "no_fit": not bool(combined),
@@ -712,6 +723,19 @@ def self_test():
         assert found and found[0]["parent_ncl_id"] == expected_ncl, (question, routed)
     # The main question tool now discovers a 313-only ID without users
     # knowing and manually invoking a second MCP tool.
+    # The original's explicit identity must outrank unrelated technical
+    # question matches instead of silently suppressing 313-only lookup.
+    mixed = answer_question("AI news fact checking and citation provenance; inspect OD313")
+    assert mixed["matching_routes"][0]["route_id"] == "whole_structure:OD313", mixed
+    assert any(x["route_id"] == "multiple_urls_one_evidence_root"
+               for x in mixed["matching_routes"]), mixed
+    assert mixed["whole_structure_candidate_count"] == 1
+    assert mixed["technical_route_count"] >= 1
+    assert mixed["original_catalog_route_count"] >= 0
+    unknown = answer_question("AI news fact checking and citation provenance; inspect OD999")
+    assert unknown["technical_route_count"] >= 1
+    assert all(not x["route_id"].startswith("whole_structure:")
+               for x in unknown["matching_routes"]), unknown
     broad = answer_question("OD313")
     assert not broad["no_fit"] and any(
         x["route_id"] == "whole_structure:OD313" and
