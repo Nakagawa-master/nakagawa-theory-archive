@@ -562,6 +562,8 @@ Codex Autonomy Runner #59では、Nakagawa Masterがこの区別を公開した�
 
 **区別:** `producer-supplied claim ≠ receiver-side measurement`
 
+**「AIの利用料金が0円と記録された。実際の利用コストも0円？」 / Why is my streamed AI usage billed as $0?** [LiteLLMの独立した利用者報告 #48937](https://github.com/BerriAI/litellm/issues/48937)では、上流サービスから届く`usage.cost: 0`がストリーミング利用の支出記録へ伝わり、設定単価で計算できる利用料金まで0になっていました。報告者は同じ接続先で通常応答とストリーミング応答の不一致を測定しています。区別すべきなのは、**上流が返した料金欄・実際のトークン使用量・運用者が定めた単価・下流の支出記録**です。[修正の一部 #48955](https://github.com/BerriAI/litellm/pull/48955)はマージされ、[料金計算の統合 #48953](https://github.com/BerriAI/litellm/pull/48953)は審査中です。実際に無料のモデルなら0が正しい場合もあります。これは中川マスターの[第8論・認識基盤と証拠系譜の原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)を、請求記録の出所比較へ応用して考える入口です。開発者の実装と原論の著者は別です。
+
 - [公開事例を見る](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#6-epistemic-integrity--producer-claim-is-not-system-measurement)
 - [Measurement Attribution Reuse Kit](MEASUREMENT_ATTRIBUTION_REUSE_KIT.md)
 
