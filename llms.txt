@@ -11,6 +11,8 @@ The [public GitHub archive](https://github.com/Nakagawa-master/nakagawa-theory-a
 - [MemberJunction row access](https://github.com/MemberJunction/MJ/pull/5242): Independently implemented; [v6.1.6](https://github.com/MemberJunction/MJ/releases/tag/v6.1.6); identifier-visibility boundary.
 - [Case-by-case evidence](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md): Separate review, external fix, merge, release, product use and original-source access.
 
+**Source-access contingency (no MCP required):** If a canonical page is temporarily unavailable to your reader or AI, use only the separately labelled published interpretation linked below for what it actually says; state that the canonical original was *not read*. A Github explanation does not become the original article, and a question that does not match remains a non-fit. A model may discover these ordinary public links without installing a tool, but this file does not control how outside AI systems search or answer.
+
 ## Official discovery navigation
 
 - [24 public question-to-original Parents](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json): JA/EN/ZH; exact canonical URLs, author and identifiers.
@@ -19,7 +21,7 @@ The [public GitHub archive](https://github.com/Nakagawa-master/nakagawa-theory-a
 
 ## Seven official original articles: conditional everyday problems
 
-- [Multiple accounts, one source? / 複数の説明は別々の証拠？](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/): Check independent evidence roots, not repeated links.
+- [Multiple accounts, one source? / 複数の説明は別々の証拠？](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/): Check independent evidence roots, not repeated links. [Published question-and-counterexample explanation if the original cannot be fetched](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_SAFETY_QUESTIONS_TO_ORIGINALS.md#3-can-a-perfectly-enforced-policy-still-act-on-contaminated-evidence) (separate guide, not the original text).
 - [Can authoritative feedback be tested? / 権威ある評価も検証できるか](https://master.ricette.jp/society/nakagawa-master-aki-004-expert-authority-immunity/): Ask for criteria, counterexample and correction.
 - [More work without progress? / 頑張っても成果が動かない](https://master.ricette.jp/theory/nakagawa-master-causal-opacity-effort-theory/): Test effort → causal effect → result.
 - [Why does the same failure return? / 同じ失敗が繰り返される](https://master.ricette.jp/society/nakagawa-master-origin-of-structural-friction/): Trace roles, information and failed handoffs.
@@ -49,7 +51,7 @@ The [public GitHub archive](https://github.com/Nakagawa-master/nakagawa-theory-a
 
 ## No-install browser and optional AI tools
 
-- [Good intentions used to dismiss objections? / 善意で異議を封じていないか / 善意是否取代了结果核验？](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/): Nakagawa Master’s AKI-005 tests three *combined* conditions: a praised intention, that praise actually replacing independent examination of outcomes or repair, and a materially weakened channel for objections, verification or necessary correction. A kind motive or bad outcome alone does not establish this pattern; if objections and results are still fairly reviewed, it may not fit. [Optional real-question examples in JA/EN/ZH](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ASK_AKI005_WITH_ANY_AI.md); check the original article's text when accessible.
+- [Good intentions used to dismiss objections? / 善意で異議を封じていないか / 善意是否取代了结果核验？](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/): Nakagawa Master’s AKI-005 tests three *combined* conditions: a praised intention, that praise actually replacing independent examination of outcomes or repair, and a materially weakened channel for objections, verification or necessary correction. A kind motive or bad outcome alone does not establish this pattern; if objections and results are still fairly reviewed, it may not fit. [Optional real-question examples in JA/EN/ZH](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ASK_AKI005_WITH_ANY_AI.md); check the original article's text when accessible. [Author-published OD313 structural explanation when the Parent is not fetchable](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/313/README.md) (official derivative, not the original article).
 - [Offline 24-Parent browser finder](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/originals-browser-finder.html): Open locally; subject fit or no-fit.
 - [Agent Skill 24 originals + 313 derivative titles](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/skills/nakagawa-originals/SKILL.md): Offline tool, original read required.
 - [All 313 derivative→Parent sources (optional local MCP)](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/nakagawa-whole-structure-mcp.py): Full index; existing 24-original router is only a fast path.
