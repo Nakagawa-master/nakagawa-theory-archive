@@ -23,7 +23,7 @@
     "markdown_faces_per_set": 7,
     "total_derivative_markdown_pages": 2191,
     "canonical_original_truth_location": "https://master.ricette.jp/",
-    "all_original_parent_urls": "read each derivatives/{number}/README.md; the 24 selected route index is only a discovery subset",
+    "all_original_parent_urls": "derivatives/official-derivatives-map.json entries[].canonical_parent_url; each matched derivative README is a separate provenance cross-check; the 24-item route index is a selected fast lane",
     "growing_corpus": true
   },
   "directory_pattern": "derivatives/{number}",
