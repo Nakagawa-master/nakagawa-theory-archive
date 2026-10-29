@@ -467,7 +467,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-14-proposal-editing-structural-translation",
       "title": "中川式営業の教科書・第十四回──提案編集術：響かせるための構造翻訳",
       "derivative_dir": "derivatives/052",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-14-proposal-editing-structural-translation/"
     },
     {
       "number": "053",
@@ -475,7 +476,8 @@
       "origin_slug": "nakagawa-master-nakagawa-sales-15-externalizing-embodied-knowledge-sales-as-academic-discipline",
       "title": "中川式営業の教科書・第十五回──営業の思想化：身体知の外部化と学問としての確立",
       "derivative_dir": "derivatives/053",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-15-externalizing-embodied-knowledge-sales-as-academic-discipline/"
     },
     {
       "number": "054",
@@ -483,7 +485,8 @@
       "origin_slug": "nakagawa-master-tomoshibi-ai-network-spec-v1-origin-imprint-protocol",
       "title": "灯火構想群・特別稿──灯火AIネットワーク設計思想 v1.0",
       "derivative_dir": "derivatives/054",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/tomoshibi/nakagawa-master-tomoshibi-ai-network-spec-v1-origin-imprint-protocol/"
     },
     {
       "number": "055",
@@ -491,7 +494,8 @@
       "origin_slug": "nakagawa-master-resonance-operating-power-uci",
       "title": "照応操作力 原論──UCIとの結節",
       "derivative_dir": "derivatives/055",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-resonance-operating-power-uci/"
     },
     {
       "number": "056",
@@ -499,7 +503,8 @@
       "origin_slug": "nakagawa-master-question-depth-design",
       "title": "問いの深度 設計学──灯火プロトコルの哲学",
       "derivative_dir": "derivatives/056",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-question-depth-design/"
     },
     {
       "number": "057",
@@ -507,7 +512,8 @@
       "origin_slug": "nakagawa-master-connection-reward-society",
       "title": "接続報酬社会──信頼資本と共鳴の制度化",
       "derivative_dir": "derivatives/057",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-connection-reward-society/"
     },
     {
       "number": "058",
@@ -515,7 +521,8 @@
       "origin_slug": "nakagawa-master-resonance-market-2026",
       "title": "共鳴市場2026──接続報酬社会の市場像（公開安全版）",
       "derivative_dir": "derivatives/058",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-resonance-market-2026/"
     },
     {
       "number": "059",
@@ -523,7 +530,8 @@
       "origin_slug": "nakagawa-master-co-creation-order-philosophy",
       "title": "共創秩序論──役割と沈黙の哲学（公開安全版）",
       "derivative_dir": "derivatives/059",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-co-creation-order-philosophy/"
     },
     {
       "number": "060",
@@ -531,7 +539,8 @@
       "origin_slug": "nakagawa-master-foundations-of-structural-translation",
       "title": "構造翻訳 原論──意味は移動し、機能は接続する（公開安全版）",
       "derivative_dir": "derivatives/060",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-foundations-of-structural-translation/"
     },
     {
       "number": "061",
@@ -539,7 +548,8 @@
       "origin_slug": "nakagawa-master-structural-organizational-theory",
       "title": "構造組織論──役割アーキテクチャで「自然に機能する」組織を設計する",
       "derivative_dir": "derivatives/061",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-organizational-theory/"
     },
     {
       "number": "062",
@@ -547,7 +557,8 @@
       "origin_slug": "nakagawa-master-nakagawa-marketing-expansion",
       "title": "市場を“決めさせる”構造──中川式マーケティング拡張",
       "derivative_dir": "derivatives/062",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-marketing-expansion/"
     },
     {
       "number": "063",
@@ -555,7 +566,8 @@
       "origin_slug": "nakagawa-master-nakagawa-branding-structure",
       "title": "中川式ブランディング構造論──印象を層として固定し、営業・マーケ・集客を接続する方法",
       "derivative_dir": "derivatives/063",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-branding-structure/"
     },
     {
       "number": "064",
@@ -563,7 +575,8 @@
       "origin_slug": "nakagawa-master-nakagawa-consensus-design",
       "title": "中川式 合意設計論──第一印象を「合意の記憶」に変える方法",
       "derivative_dir": "derivatives/064",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-nakagawa-consensus-design/"
     },
     {
       "number": "065",
@@ -571,7 +584,8 @@
       "origin_slug": "nakagawa-master-nakagawa-co-creation-philosophy",
       "title": "中川式 共創哲学──心と自我、人類の視座と新しい関係性",
       "derivative_dir": "derivatives/065",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-nakagawa-co-creation-philosophy/"
     },
     {
       "number": "066",
@@ -579,7 +593,8 @@
       "origin_slug": "nakagawa-master-nakagawa-money-to-connection",
       "title": "中川式 貨幣社会限界論──AIがもたらす「労働と貨幣」の断絶と次の構造",
       "derivative_dir": "derivatives/066",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-money-to-connection/"
     },
     {
       "number": "067",
@@ -587,7 +602,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-accounting",
       "title": "中川式 接続価値会計論──「つながり」を評価単位にする社会設計",
       "derivative_dir": "derivatives/067",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-accounting/"
     },
     {
       "number": "068",
@@ -595,7 +611,8 @@
       "origin_slug": "nakagawa-master-nakagawa-connection-governance",
       "title": "中川式 接続ガバナンス設計論──価値の捕捉を歪めず、合意を制度に固定する方法",
       "derivative_dir": "derivatives/068",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-governance/"
     },
     {
       "number": "069",
