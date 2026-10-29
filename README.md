@@ -4,6 +4,14 @@
 
 中川マスター（Nakagawa Master／Keisuke Nakagawa）は、AI、仕事、組織、社会制度、文明の未来などを、結果だけでなく、それを生み出す構造や因果から考えています。ここでは、その理論群を初めて知る人も、研究・開発に使いたい人も、**何を主張し、何が実際に確かめられ、どこから原文を読めるのか**を、自分の関心に沿って確認できます。
 
+## 自分の問いから原典を探す（MCP導入不要）
+
+**初めての方へ：** [自分の疑問から試す](human-translation/SEARCH_FROM_A_REAL_QUESTION.md) ／ [別の人が実際に変えた仕事を見る](REAL_WORLD_IMPACT.md) ／ [原典と著者を知る](ABOUT_NAKAGAWA_MASTER.md)。
+
+**普通のAIで試せる30秒の例:** AIが5つの出典を示しても、5つとも同じ発表の転載なら、独立した裏付けが5つあるとは限りません。[「本当の証拠の起点はいくつ？」をいつものAIで試す（ChatGPTで開く／他のAIへ相談文をコピー）](human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md#1-複数の説明は別々の証拠)と、[中川マスターの公式原典『第8論・認識の整合性』](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)へ進めます。元の[検証例と議論 #658](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/658)も残しています。自分の調べ物で確かめられます。内容が合わなければ、別の説明や方法と比べてください。
+
+**「善意でやったのに、なぜ文句を言うの？」と感じたり言われたりしたら：** よい意図を尊重したまま、実際に何が起きたかを確かめる方法があります。中川マスターの新しい[悪因果論 AKI-005「善意の免罪符化」](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/)から、[15秒説明・実例・検査の順序](derivatives/313/human-entry.md)へ進めます。**善意への評価・結果の検証・異議の扱いを分ける**ことで、善意を守りながら必要な変更につなげられます。独立した原典と[公式派生物7面](derivatives/313/README.md)は公開済みです。 [好きなAIへ相談文をコピーする・ChatGPTで自分で開く（日本語・English・中文）](human-translation/ASK_AKI005_WITH_ANY_AI.md)も選べます。
+
 ## AIが普段から使える「回答・行動の破綻防止」MCP
 
 **AI Answer Guard** は、**AIのハルシネーション（根拠のない断言）・根拠同士が食い違う回答内の自己矛盾・実際には完了していない作業の「完了」誤報**などを減らすための、**無料・ローカル・読み取り専用MCP**です。AIが回答や行動を確定する前に、AIホストから渡された**出典の独立性と矛盾、ツールの実際の成功・失敗、現在の実行許可、取り消し困難な作用**を具体的に照合し、発見した不一致を正すための**次に確認すべき根拠・操作・権限**を返します。これは単に理論を探すツールではなく、普段のAIの回答と実行の信頼性を高めるための実用装備です。**全回答への自動割り込みやハルシネーションの完全防止を保証するものではなく、導入先のAIホストが実際に呼び出して使う方式**です。
@@ -32,15 +40,9 @@
 
 **[24の主題を整理した機械可読目録](machine-discovery/human-intent-to-original-exploration-v1.json)** ／ [24件の先行・直接検証済み原典候補](machine-discovery/problem-to-theory-origin-index-v1.json) ／ [313件の公式派生物目録](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [313件すべての親原典へ接続する構造MCP（任意導入）](machine-discovery/NAKAGAWA_THEORY_MCP.md#full-system-public-source-graph-all-313-published-derivative-entries-source-checkout) ／ [原典・実証の資料案内](AI_START_HERE.md)。313は異なる原論313件ではなく公開された派生資料数です。個別原典の正本は[master.ricette.jp](https://master.ricette.jp/)にあります。
 
-**初めての方へ：** [自分の疑問から試す](human-translation/SEARCH_FROM_A_REAL_QUESTION.md) ／ [別の人が実際に変えた仕事を見る](REAL_WORLD_IMPACT.md) ／ [原典と著者を知る](ABOUT_NAKAGAWA_MASTER.md)。
-
-**普通のAIで試せる30秒の例:** AIが5つの出典を示しても、5つとも同じ発表の転載なら、独立した裏付けが5つあるとは限りません。[「本当の証拠の起点はいくつ？」をいつものAIで試す（ChatGPTで開く／他のAIへ相談文をコピー）](human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md#1-複数の説明は別々の証拠)と、[中川マスターの公式原典『第8論・認識の整合性』](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)へ進めます。元の[検証例と議論 #658](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/658)も残しています。自分の調べ物で確かめられます。内容が合わなければ、別の説明や方法と比べてください。
-
 **普通の検索・Gemini・Copilot・Bingで「困りごとの答え」を探している方へ:** [褒められるほど損をする、頑張っても変わらない、相談が売り込みになる、家を売るか悩む、AIの心を考えるなど10の実際の問い](human-translation/SEARCH_FROM_A_REAL_QUESTION.md)から、専門語なしで初心者向けFAQや15秒の要約を読み、必要に応じて原典冒頭のスライドを開くことができます。短い解説と原典本文は、それぞれ公開資料として確認できます。さらに[313件の元の理論題名を分野・検索語から探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)こともできます。これらは公開の発見入口であり、検索順位や外部AIの採用を保証しません。
 
 **第三者が実際に変えたものを、最初の数秒で見る：** [OpenClawでは中川マスターの指摘を開発者が報告元として明記し、別PRでコードとテストを修正・正式マージ](https://github.com/openclaw/openclaw/pull/160856)。さらに[公式のリリース文書で本人のGitHub名が掲載](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)されています。[MemberJunctionやPydanticAIの独立実装修正も含め、まず3つの実績から読む](REAL_WORLD_IMPACT.md)。実装作者とレビュー貢献は混同しません。
-
-**「善意でやったのに、なぜ文句を言うの？」と感じたり言われたりしたら：** よい意図を尊重したまま、実際に何が起きたかを確かめる方法があります。中川マスターの新しい[悪因果論 AKI-005「善意の免罪符化」](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/)から、[15秒説明・実例・検査の順序](derivatives/313/human-entry.md)へ進めます。**善意への評価・結果の検証・異議の扱いを分ける**ことで、善意を守りながら必要な変更につなげられます。独立した原典と[公式派生物7面](derivatives/313/README.md)は公開済みです。 [好きなAIへ相談文をコピーする・ChatGPTで自分で開く（日本語・English・中文）](human-translation/ASK_AKI005_WITH_ANY_AI.md)も選べます。
 
 **この人の問いで、ほかの開発者の仕事はどう変わった？** 中川マスターが区別した「過去の承認記録」と「現在実行される内容」は、受け手の開発者が自分のコードと正反テストに組み込み、[別の人間レビュアーも旧HEADで具体的に再確認](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5631941835)しました。そのレビュアーの[当時の正式承認](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5632747841)は後続変更でGitHub上DISMISSEDとなりましたが、受け手チームは**2026年10月24日に[MemberJunction #4789を`next`へ正式マージ](https://github.com/MemberJunction/MJ/commit/beeea177d1185caf8d8f82d12e82ada7b1512471)**しています。最終HEADの47チェックは41成功・6スキップ。コード実装者・元指摘者・別レビュアーの功績を区別し、[3言語の証拠付き事例 #38](REAL_WORLD_IMPACT.md#38-memberjunctionrecordへの承認をcurrent-executable-definitionへの承認と混同しない)で確かめられます。日常の問題からは[古い承認をAIと検証する具体例](APPLIED_ENTRY_POINTS.md#承認したあと中身が変わったのにまだ承認済みで実行してよいのか)、さらに[中川マスターの理論群と人物の紹介](ABOUT_NAKAGAWA_MASTER.md)へ進めます。マージ後の製品リリース・ユーザー実利用・独立AIによる原典選択は別の確認段階です。
 
