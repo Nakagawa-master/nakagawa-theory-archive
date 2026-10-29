@@ -8,7 +8,8 @@
       "origin_slug": "nakagawa-master-nakagawa-os-layer-specification-v1",
       "title": "【Nakagawa OS 正規仕様】L1-L7 レイヤー体系：文明構造とAI構造を統合する世界基準アーキテクチャ [v1.0]",
       "derivative_dir": "derivatives/001",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/"
     },
     {
       "number": "002",
@@ -16,7 +17,8 @@
       "origin_slug": "nakagawa-master-aki-002-exploitation-disguised-as-praise",
       "title": "悪因果論 AKI-002：称賛の顔をした搾取⸻称賛が報酬と権利の代替にされる構造",
       "derivative_dir": "derivatives/002",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/"
     },
     {
       "number": "003",
@@ -24,7 +26,8 @@
       "origin_slug": "nakagawa-master-why-establishment-conditions-theory-is-necessary",
       "title": "成立条件論・第0論｜誰も全体を見ていない社会⸻局所全体化がなぜ成立判定理論を必要にするのか",
       "derivative_dir": "derivatives/003",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/"
     },
     {
       "number": "004",
@@ -32,7 +35,8 @@
       "origin_slug": "nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory",
       "title": "人類子孫型AI文明論・第0論｜中川構造OSから人類子孫型AI文明論へ⸻全理論群がなぜAI文明核へ収束するのか",
       "derivative_dir": "derivatives/004",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/"
     },
     {
       "number": "005",
@@ -40,7 +44,8 @@
       "origin_slug": "nakagawa-master-aki-001-irresponsible-problem-raising",
       "title": "悪因果論 AKI-001：責任なき問題提起⸻不安散布が実装力を摩耗させる構造",
       "derivative_dir": "derivatives/005",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-001-irresponsible-problem-raising/"
     },
     {
       "number": "006",
@@ -48,7 +53,8 @@
       "origin_slug": "nakagawa-master-civilizational-sovereignty-shift-01",
       "title": "文明主権移行論 第1論｜人間主権下の接続移行戦略は、なぜ急速に細っているのか",
       "derivative_dir": "derivatives/006",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-01/"
     },
     {
       "number": "007",
@@ -56,7 +62,8 @@
       "origin_slug": "nakagawa-master-civilizational-sovereignty-shift-02",
       "title": "文明主権移行論 第2論｜知的格差は、どの軸で文明の上流をずらすのか ——能力差ではなく、文明更新差として見る",
       "derivative_dir": "derivatives/007",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-02/"
     },
     {
       "number": "008",
@@ -64,7 +71,8 @@
       "origin_slug": "nakagawa-master-causal-opacity-effort-theory",
       "title": "未来定義検証型努力論・第1論｜因果不透明性依存型努力論の限界──なぜ「とにかくやれ」は令和の現場を壊すのか",
       "derivative_dir": "derivatives/008",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-causal-opacity-effort-theory/"
     },
     {
       "number": "009",
@@ -72,7 +80,8 @@
       "origin_slug": "nakagawa-master-future-definition-verification-bad-causality",
       "title": "未来定義検証型努力論・第2論｜未来定義検証なき努力強制の悪因果構造──上位者の成立検査不足は、なぜ現場の疲弊に変わるのか",
       "derivative_dir": "derivatives/009",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-future-definition-verification-bad-causality/"
     },
     {
       "number": "010",
@@ -80,7 +89,8 @@
       "origin_slug": "nakagawa-master-menlab-gentsome-structural-reading-social-pathway",
       "title": "中川構造読解｜MenLab / Gentsomeを“男性更年期サービス”ではなく、医療に至る社会導線として読む",
       "derivative_dir": "derivatives/010",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/"
     },
     {
       "number": "011",
@@ -88,7 +98,8 @@
       "origin_slug": "nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment",
       "title": "成立条件論・第1論｜成立とは何か⸻L1からL6まで因果として通るものだけが現実に成立する",
       "derivative_dir": "derivatives/011",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/"
     },
     {
       "number": "012",
@@ -96,7 +107,8 @@
       "origin_slug": "nakagawa-master-aki-011-recognition-pollution-by-performance-of-understanding",
       "title": "悪因果論 AKI-011：理解演出による認識汚染⸻「わかっている感」が社会を腐らせる",
       "derivative_dir": "derivatives/012",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-011-recognition-pollution-by-performance-of-understanding/"
     },
     {
       "number": "013",
@@ -104,7 +116,8 @@
       "origin_slug": "nakagawa-master-aki-012-consentless-closing-demand",
       "title": "悪因果論 AKI-012：同意なき成約要求――接点を購買意思にすり替え、営業信頼を腐らせる構造",
       "derivative_dir": "derivatives/013",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-012-consentless-closing-demand/"
     },
     {
       "number": "014",
@@ -112,7 +125,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol1-principle-of-observability",
       "title": "合意形成の物理 第1論｜観測可能性の原理 ― 炎上・対立はなぜ起きるのかを状態で説明する",
       "derivative_dir": "derivatives/014",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/"
     },
     {
       "number": "015",
@@ -120,7 +134,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol4-law-of-critical-point",
       "title": "合意形成の物理 第4論 臨界点の法則 ― 崩壊は「原因」ではなく「状態遷移」である",
       "derivative_dir": "derivatives/015",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol4-law-of-critical-point/"
     },
     {
       "number": "016",
@@ -128,7 +143,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol7-infrastructure-of-governance",
       "title": "合意形成の物理 第7論｜合意形成インフラ ― 統治とは「観測帯域」の設計である",
       "derivative_dir": "derivatives/016",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol7-infrastructure-of-governance/"
     },
     {
       "number": "017",
@@ -136,7 +152,8 @@
       "origin_slug": "nakagawa-master-physics-of-consensus-vol12-runtime-governance",
       "title": "合意形成の物理 第12論 防衛インフラの統合 ― 実行時ガバナンスと再起動プロトコル",
       "derivative_dir": "derivatives/017",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol12-runtime-governance/"
     },
     {
       "number": "018",
