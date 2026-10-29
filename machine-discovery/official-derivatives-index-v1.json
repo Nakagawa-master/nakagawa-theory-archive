@@ -30,6 +30,8 @@
   "human_all_index": "derivatives/README.md",
   "human_category_index": "derivatives/CATEGORIES.md",
   "parent_identity_map": "derivatives/official-derivatives-map.json",
+  "parent_identity_map_direct_original_url_field": "entries[].canonical_parent_url",
+  "parent_identity_map_direct_url_semantics": "One verified published canonical original URL for every one of 313 original-to-OD pairs. A source candidate must still be retrieved and read; text fit is not established by URL matching.",
   "surface_pattern": {
     "hub": "derivatives/{number}/README.md",
     "human_entry": "derivatives/{number}/human-entry.md",
