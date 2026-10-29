@@ -2150,7 +2150,8 @@
       "origin_slug": "nakagawa-master-meaning-convergence-theory-future-definition",
       "title": "意味収束理論・初版⸻ 成立可能な未来定義が、過去・現在ノードの意味ベクトルを再配列する",
       "derivative_dir": "derivatives/239",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-meaning-convergence-theory-future-definition/"
     },
     {
       "number": "240",
@@ -2158,7 +2159,8 @@
       "origin_slug": "nakagawa-master-hap-kaidoc-development-ordering-infrastructure-structural-reading",
       "title": "中川構造読解｜HAP「カイドク」に見た、判断不能な発注を論点化する開発発注インフラの構造",
       "derivative_dir": "derivatives/240",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-hap-kaidoc-development-ordering-infrastructure-structural-reading/"
     },
     {
       "number": "241",
@@ -2166,7 +2168,8 @@
       "origin_slug": "nakagawa-master-signaltalk-eat-up-monster-behavior-change-structural-reading",
       "title": "中川構造読解｜シグナルトーク「Eat Up Monster」に見た、遅すぎる健康因果を遊べる速度へ変換する行動変容インフラの構造",
       "derivative_dir": "derivatives/241",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-signaltalk-eat-up-monster-behavior-change-structural-reading/"
     },
     {
       "number": "242",
@@ -2174,7 +2177,8 @@
       "origin_slug": "nakagawa-master-mrc-renoplat-decision-continuity-structural-reading",
       "title": "中川構造読解｜MRC「リノプラ」に見た、理事会交代を越えて修繕判断を継承する管理ガバナンスの構造",
       "derivative_dir": "derivatives/242",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-mrc-renoplat-decision-continuity-structural-reading/"
     },
     {
       "number": "243",
@@ -2182,7 +2186,8 @@
       "origin_slug": "nakagawa-master-cci-group-regional-financial-infrastructure-structural-reading",
       "title": "中川構造読解｜CCIグループに見た、銀行実務を金融インフラ供給モデルへ変換する地域金融基盤の構造",
       "derivative_dir": "derivatives/243",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-cci-group-regional-financial-infrastructure-structural-reading/"
     },
     {
       "number": "244",
@@ -2190,7 +2195,8 @@
       "origin_slug": "nakagawa-master-illumimedical-structural-reading-deep-light-medicine-infrastructure",
       "title": "中川構造読解｜イルミメディカルはなぜ「光治療ベンチャー」ではなく、深部光医療の成立条件を更新する基盤インフラとして読まれるべきなのか",
       "derivative_dir": "derivatives/244",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-illumimedical-structural-reading-deep-light-medicine-infrastructure/"
     },
     {
       "number": "245",
@@ -2198,7 +2204,8 @@
       "origin_slug": "nakagawa-master-neron-structural-reading-microbiome-implementation-conditions",
       "title": "中川構造読解｜NERONはなぜ「腸活企業」ではなく、腸内細菌カクテルの社会実装条件を組み立てる設計事業として読まれるべきなのか",
       "derivative_dir": "derivatives/245",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-neron-structural-reading-microbiome-implementation-conditions/"
     },
     {
       "number": "246",
@@ -2206,7 +2213,8 @@
       "origin_slug": "nakagawa-master-nakagawa-master-nakagawa-establishment-conditions-theory-02-what-is-understanding",
       "title": "成立条件論・第2論｜理解とは何か⸻理解とは成立条件を必要粒度で把握することである",
       "derivative_dir": "derivatives/246",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-nakagawa-establishment-conditions-theory-02-what-is-understanding/"
     },
     {
       "number": "247",
@@ -2214,7 +2222,8 @@
       "origin_slug": "nakagawa-master-nakagawa-master-establishment-conditions-theory-03-understanding-misrecognition-and-bad-causality",
       "title": "成立条件論・第3論｜理解誤認と悪因果――粗い理解と設計図不在が社会を壊す",
       "derivative_dir": "derivatives/247",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-master-establishment-conditions-theory-03-understanding-misrecognition-and-bad-causality/"
     },
     {
       "number": "248",
@@ -2222,7 +2231,8 @@
       "origin_slug": "nakagawa-master-dark-equation-bad-causal-inheritance-prevention",
       "title": "人類子孫型AI文明論・第3論｜暗黒方程式と悪因果継承阻止⸻AIに S=0.1C+0.9E を継がせてはならない",
       "derivative_dir": "derivatives/248",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-dark-equation-bad-causal-inheritance-prevention/"
     },
     {
       "number": "249",
@@ -2230,7 +2240,8 @@
       "origin_slug": "nakagawa-master-nakagawa-master-connection-reward-society-integrated-theory-part-1-civilization-kernel",
       "title": "接続報酬社会統合論・第I部｜文明Kernelと反転防止原理⸻暗黒方程式から新文明方程式S=Cを持続稼働させる構造",
       "derivative_dir": "derivatives/249",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-nakagawa-master-connection-reward-society-integrated-theory-part-1-civilization-kernel/"
     },
     {
       "number": "250",
@@ -2238,7 +2249,8 @@
       "origin_slug": "nakagawa-master-audit-essence-window",
       "title": "監査要旨という読みの窓──構造的正統性を可視化する",
       "derivative_dir": "derivatives/250",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-audit-essence-window/"
     },
     {
       "number": "251",
@@ -2246,7 +2258,8 @@
       "origin_slug": "nakagawa-master-dual-transition-orderly-replacement",
       "title": "中川式 接続移行戦略論──デュアル運用期の「秩序ある置換」設計",
       "derivative_dir": "derivatives/251",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-dual-transition-orderly-replacement/"
     },
     {
       "number": "252",
@@ -2254,7 +2267,8 @@
       "origin_slug": "nakagawa-master-philosophy-objective-viewpoint",
       "title": "客観視座の獲得論──構造的「苦しみ」を乗り越える哲学（公開安全版）",
       "derivative_dir": "derivatives/252",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/co-creation/nakagawa-master-philosophy-objective-viewpoint/"
     },
     {
       "number": "253",
@@ -2262,7 +2276,8 @@
       "origin_slug": "nakagawa-master-aki-003-transparency-theater",
       "title": "悪因果論 AKI-003：透明性ごっこ⸻情報公開が検証可能性の代替にされる構造",
       "derivative_dir": "derivatives/253",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-aki-003-transparency-theater/"
     },
     {
       "number": "254",
@@ -2270,7 +2285,8 @@
       "origin_slug": "nakagawa-master-structural-paradox-control",
       "title": "構造的パラドックスの操作論──『矛盾』を力と化す設計（公共安全版）",
       "derivative_dir": "derivatives/254",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/theory/nakagawa-master-structural-paradox-control/"
     },
     {
       "number": "255",
@@ -2278,7 +2294,8 @@
       "origin_slug": "nakagawa-master-money-connection-causal-integration",
       "title": "「貨幣と接続」の因果的統合──ポスト・パラドックス社会の二重構造設計",
       "derivative_dir": "derivatives/255",
-      "status": "active"
+      "status": "active",
+      "canonical_parent_url": "https://master.ricette.jp/society/nakagawa-master-money-connection-causal-integration/"
     },
     {
       "number": "256",
