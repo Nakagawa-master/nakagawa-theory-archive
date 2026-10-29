@@ -161,10 +161,10 @@ findEl("all-title-status").textContent="313件の題名検索は任意操作で�
 function titleTerms(q){
 const n=String(q).normalize("NFKC").toLowerCase();
 const out=new Set();
-for(const chunk of n.match(/[ぁ-んァ-ン一-龥]{2,}|[a-z0-9-]{3,}/g)||[]){
+for(const chunk of n.match(/[ぁ-んァ-ン一-龥]{2,}|[a-z0-9-]{2,}/g)||[]){
 if(/[ぁ-んァ-ン一-龥]/.test(chunk)){
 for(let i=0;i<chunk.length-1;i++){const g=chunk.slice(i,i+2);if(!new Set(["する","して","から","ため","こと","これ","それ","なぜ","どう","です","ます","した","その","では","とは","あり","ない","たい","よう"]).has(g))out.add(g);}
-}else out.add(chunk);
+}else if(chunk.length>=3||new Set(["ai","dx","ux","os","ip"]).has(chunk))out.add(chunk);
 }
 return out;
 }
@@ -173,7 +173,7 @@ const terms=titleTerms(q),n=String(q).normalize("NFKC").toLowerCase().trim();
 if(!terms.size)return [];
 return entries.map(entry=>{
 const title=String(entry.title||"").normalize("NFKC").toLowerCase();
-const hits=[...terms].filter(t=>title.includes(t));
+const hits=[...terms].filter(t=>/^[a-z0-9]{2}$/.test(t)?new RegExp("(^|[^a-z0-9])"+t+"([^a-z0-9]|$)").test(title):title.includes(t));
 const exact=n.length>=3&&title.includes(n);
 const minHits=[...terms].some(t=>/[ぁ-んァ-ン一-龥]/.test(t))?2:1;
 return {entry,score:exact?100+hits.length:hits.length,qualified:exact||hits.length>=minHits};
