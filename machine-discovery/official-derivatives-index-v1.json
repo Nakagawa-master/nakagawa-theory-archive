@@ -13,6 +13,19 @@
     "duplicate_assignments": 0,
     "unassigned": 0
   },
+  "original_derivative_pairing": {
+    "relationship": "one distinct canonical original article to one numbered OD derivative set",
+    "published_original_articles": 313,
+    "original_article_count_basis": "author-confirmed official archive corpus; GitHub parent identity map independently contains 313 unique NCL IDs and 313 unique slugs",
+    "mapped_original_ncl_id_count": 313,
+    "mapped_original_slug_count": 313,
+    "numbered_derivative_sets": 313,
+    "markdown_faces_per_set": 7,
+    "total_derivative_markdown_pages": 2191,
+    "canonical_original_truth_location": "https://master.ricette.jp/",
+    "all_original_parent_urls": "read each derivatives/{number}/README.md; the 24 selected route index is only a discovery subset",
+    "growing_corpus": true
+  },
   "directory_pattern": "derivatives/{number}",
   "human_all_index": "derivatives/README.md",
   "human_category_index": "derivatives/CATEGORIES.md",
