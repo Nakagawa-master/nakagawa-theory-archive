@@ -802,7 +802,7 @@ def self_test():
     assert any(x["route_id"] == "multiple_urls_one_evidence_root"
                for x in english["matching_routes"]), english
     assert any(x["route_id"] == "whole_structure:OD313"
-               for x in english["matching_routes"]), english
+               for x in english["matching_routes"]), (english, [(x["route_id"], x["lexical_match_score"]) for x in whole_structure_fallback(english["question"], limit=12)])
     english_negative = answer_question(
         "AI news fact checking and citation provenance; compare the latest "
         "AI model prices and current hardware purchase costs"
