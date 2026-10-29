@@ -296,10 +296,14 @@ def whole_structure_fallback(question, limit=3):
     whole = load_public_helper(WHOLE_STRUCTURE, "nakagawa_313_source_graph")
     found = whole.search(whole.graph(), question, limit=limit)
     result = []
+    # Translated derivative summaries are very broad: an ordinary generic
+    # EN/ZH question needs stronger independent lexical evidence than an
+    # exact distinctive Japanese title span. Explicit OD IDs score 100.
+    threshold = 10 if re.search(r"[\u3040-\u30ff]", question) else 24
     for record, score in zip(found["matched"], found["lexical_scores"]):
         # A pair of incidental shared characters must not convert a real
         # unrelated question into a purported original recommendation.
-        if score < 10:
+        if score < threshold:
             continue
         url = record["canonical_parent"]
         if not isinstance(url, str) or not url.startswith("https://master.ricette.jp/"):
