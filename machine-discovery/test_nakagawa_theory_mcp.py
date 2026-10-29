@@ -502,7 +502,65 @@ def run():
     assert all(x in js for x in ("renderBridges(q,lang)", "function bridgeHandoff(", "showBridge", 'findEl("bridge-choice")'))
     assert js.index("renderBridges(q,lang)") < js.index("if(!matches.length)")
     assert all(x in js for x in ("function similarity(", "function choose(", "function handoff(", "matches.length", "navigator.clipboard"))
-    assert not any(x in js for x in ("fetch(", "XMLHttpRequest", "sendBeacon(", "localStorage", "sessionStorage"))
+    # The 24-source path remains offline. The separate 313-title path may make
+    # exactly one explicit, user-triggered GET of a public static source map.
+    # Never transmit a question, enable background telemetry, or regress the
+    # first-contact 24-source path into an implicit network prerequisite.
+    assert js.count("fetch(") == 1
+    assert 'const response=await fetch(FULL_ORIGINAL_MAP,{method:"GET",mode:"cors"});' in js
+    assert 'const FULL_ORIGINAL_MAP="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/derivatives/official-derivatives-map.json";' in js
+    assert 'findEl("find-all-titles").addEventListener("click",searchAllTitles);' in js
+    assert 'question.addEventListener("input",resetTitleResults);' in js
+    assert js.index('function search(){') < js.index('findEl("find-all-titles").addEventListener')
+    assert 'if(generation!==titleSearchGeneration||question.value.trim()!==q)return;' in js
+    assert not any(x in js for x in ("XMLHttpRequest", "sendBeacon(", "localStorage", "sessionStorage"))
+    # Exercise the published browser's exact new path in Node with synthetic
+    # DOM + in-memory response: positive 313 original mapping, no-fit, and
+    # an async stale-result race. It does not touch the network or an LLM.
+    if shutil.which("node"):
+        full_map = json.loads((SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_text(encoding="utf-8"))
+        records = full_map["entries"]
+        assert len(records) == 313 and len({x["canonical_parent_url"] for x in records}) == 313
+        optional_script = js[js.index("const FULL_ORIGINAL_MAP="):js.index("function element(")]
+        optional_scenario = (
+            "const originalMap=" + json.dumps({"entries": records}, ensure_ascii=False) + ";\n"
+            + 'const question={value:"善意の免罪符化"}; const language={value:"ja"};\n'
+            + 'const status={textContent:""}; const cards={items:[],replaceChildren(){this.items=[];},append(v){this.items.push(v);}};\n'
+            + 'function findEl(id){return id==="all-title-status"?status:cards;}\n'
+            + 'function element(tag,txt){return {tag,textContent:txt,items:[],append(v){this.items.push(v);},addEventListener(){}};}\n'
+            + 'function handoff(){} function detectLanguage(){return "ja";}\n'
+            + "let calls=[]; let pending=null;\n"
+            + 'globalThis.fetch=(url,opt)=>{calls.push({url,opt}); return pending||Promise.resolve({ok:true,json:async()=>originalMap});};\n'
+            + optional_script + "\n"
+            + r'''
+(async()=>{
+  if(calls.length!==0)throw Error("Network reached before explicit click");
+  await searchAllTitles();
+  if(calls.length!==1 || calls[0].url!==FULL_ORIGINAL_MAP || calls[0].opt.method!=="GET")
+    throw Error("Source metadata request shape drift");
+  if(!cards.items.length || !cards.items.some(c=>c.items.some(x=>x.textContent?.includes("OD313"))))
+    throw Error("OD313 title-only source not reachable");
+  if(calls[0].url.includes(question.value))throw Error("Private question leaked in request URL");
+  question.value="banana helicopter mystery";
+  await searchAllTitles();
+  if(cards.items.length!==0)throw Error("Unrelated title search invented an original");
+  question.value="善意の免罪符化";
+  let unblock;
+  pending=new Promise(resolve=>{unblock=resolve;});
+  const old=searchAllTitles();
+  question.value="changed query";
+  resetTitleResults();
+  unblock({ok:true,json:async()=>originalMap});
+  await old;
+  if(cards.items.length!==0)throw Error("Old metadata response resurfaced under changed question");
+  console.log("PASS: explicit-only 313 static GET / OD313 / no-fit / stale-query discard");
+})().catch(error=>{console.error(error);process.exitCode=1});
+'''
+        )
+        optional_run = subprocess.run([shutil.which("node"), "-"], input=optional_scenario,
+                                      capture_output=True, text=True, timeout=12)
+        assert optional_run.returncode == 0, optional_run.stderr
+        assert "explicit-only 313" in optional_run.stdout
     assert all(x in html for x in ('id="question"', 'id="results"', 'id="ai-prompt"', 'data-example="none"', 'https://master.ricette.jp/#nakagawa-master'))
     if shutil.which("node"):
         syntax = subprocess.run([shutil.which("node"), "--check", "-"], input=js,
