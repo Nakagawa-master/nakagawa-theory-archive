@@ -4,7 +4,7 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** These are public, source-linked outcomes—not self-ratings or claims of writing somebody else's code.
 
-**52 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. Cases at earlier or declined stages are also kept and not counted as successful adoption. The code authors remain the receiving developers.
+**53 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. Cases at earlier or declined stages are also kept and not counted as successful adoption. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -1494,6 +1494,16 @@ In [Qwen Code PR #15515](https://github.com/QwenLM/qwen-code/pull/15515), indepe
 The receiving developer's code now accepts only declared retry-reason values, degrades unknown reasons to `unclassified`, checks transport codes against a vetted set and emits only integer HTTP statuses from 100 to 599. Added negative cases ensure an injected-looking token marker and embedded newline never survive into the serialized diagnostic. The author reported **72/72 classifier tests passing**, plus typecheck and formatting. This is the author's code and test work, not Nakagawa Master's implementation.
 
 **Verified delivery stage:** [PR #15515 merged into Qwen Code on October 25, 2026](https://github.com/QwenLM/qwen-code/commit/94ccc02203b37a03a18551af5d719f27b94ba6d9). The visible chain is a source-specific counterexample, direct acceptance by another developer, independently authored safeguards/tests, and merge. A stable-version release, actual end-user improvement, or adoption of any original Nakagawa philosophical article is not established by this record.
+
+## 53. PydanticAI | An outside developer implemented crash/retry approval boundaries after a source-specific review
+
+**The real user need:** An approval record is not proof that a consequential tool actually executed, nor does a lost receipt prove it did not. Retrying after a crash could create a second external effect.
+
+In [PydanticAI issue #11847](https://github.com/pydantic/pydantic-ai/issues/11847), Nakagawa Master [examined the existing deferred-tool SDK contracts and identified distinct approval, dispatch, external-effect and receipt stages](https://github.com/pydantic/pydantic-ai/issues/11847#issuecomment-6501216180), including stale argument/policy checks and crash windows. The independent developer **`jabrailkhalil` explicitly agreed with these distinctions** and committed to test them in [a direct reply](https://github.com/pydantic/pydantic-ai/issues/11847#issuecomment-6504209218).
+
+The developer then built [pydantic-ai-decision-inbox](https://github.com/jabrailkhalil/pydantic-ai-decision-inbox) in **their own repository**: a SQLite decision/dispatch/receipt ledger, genuine PydanticAI `FunctionModel` deferred-tool pause/resume, process-kill crash scenarios, competing decisions, read-only decision replay, and an external-effect-unknown branch. [Ten native CI jobs succeeded](https://github.com/jabrailkhalil/pydantic-ai-decision-inbox/actions/runs/40950857263). The individual 78 Python, 32 TypeScript and 18 browser test counts are [the author's reported results](https://github.com/pydantic/pydantic-ai/issues/11847#issuecomment-6507836279), not tests this archive independently reran.
+
+**Verified stage: an independent contributor's working repository and passing CI**, not an upstream PydanticAI merge, production tool installation, real payment, or universal exactly-once guarantee. [Nakagawa Master's *Agreement Memory* original](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/) appears as a conceptual provenance link in the original review: the record does **not** establish that the third-party author independently read that Parent or derived all engineering design from it. Code and test authorship belongs to **`jabrailkhalil`**.
 
 ---
 

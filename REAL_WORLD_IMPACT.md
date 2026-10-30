@@ -2,7 +2,7 @@
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**公開記録は52件。** OpenClaw、PostHog、MemberJunction、Qwen Code、PydanticAIなど、別々の開発現場で中川マスターが示した問題や反例と、その後に開発者自身が行った変更を、元の議論まで遡って確かめられます。
+**公開記録は53件。** OpenClaw、PostHog、MemberJunction、Qwen Code、PydanticAIなど、別々の開発現場で中川マスターが示した問題や反例と、その後に開発者自身が行った変更を、元の議論まで遡って確かめられます。
 
 たとえば、ある人の設定を変えただけで、関係のない人のAI作業が止まる。OpenClawの修正作業中に中川マスターが見つけたのは、**まだ残っていた別の承認失効条件**でした。開発者はそのコメントを報告元として明記し、別PRでコードと回帰テストを修正・マージしました。
 
@@ -16,7 +16,7 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
-**52の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。52件すべてが採用されたという意味ではなく、未採用・保留・未確認の結果も各箇所で区別しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
+**53の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。53件すべてが採用されたという意味ではなく、未採用・保留・未確認の結果も各箇所で区別しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
@@ -1658,6 +1658,16 @@ Qwen Codeの[修正PR #15515](https://github.com/QwenLM/qwen-code/pull/15515)は
 受け手のコードでは、再試行理由を定義済みの値だけに限定し、不明な値は`unclassified`として扱います。通信エラーコードも承認済みの集合に限定し、HTTP状態コードは100〜599の整数だけを出力します。埋め込まれた偽のトークン文字列や改行を、信頼できる診断結果として流出させない否定系テストを追加し、実装者は分類器の**72/72テスト成功**と型検査・整形の成功を報告しました。これは開発者自身のコードと試験成果です。
 
 **確認済みの段階：** [PR #15515は2026年10月25日に正式マージ](https://github.com/QwenLM/qwen-code/commit/94ccc02203b37a03a18551af5d719f27b94ba6d9)されました。中川マスターの具体的な反例 → 受け手自身の明示的な承認 → 修正と否定系テスト → `main`への統合まで一次資料で追えます。特定の安定版への収録、実利用者の診断改善、理論原典の独立した読解・採用は別途確認する段階です。
+
+## 53. PydanticAI｜「承認した」と「実際に実行した」を分ける――外部開発者が再起動・重複実行の試作とテストを公開
+
+**現実の問題：** 人間がAIツールの操作を許可した後にプロセスが停止した場合、「承認済み」の記録だけで送金・更新・通知が完了したと判断したり、反対に失敗したと思って再実行すると、処理を二重に起こしかねません。どこまで実行されたかを後から確かめられる仕組みが必要でした。
+
+[PydanticAIの提案Issue #11847](https://github.com/pydantic/pydantic-ai/issues/11847)で、**中川マスターは既存の `DeferredToolRequests` / `DeferredToolResults` と再開APIを照合**し、[承認の決定、外部への実行指示、実際の作用、完了受領記録の違いと、クラッシュ前後の反例](https://github.com/pydantic/pydantic-ai/issues/11847#issuecomment-6501216180)を具体化しました。受け手の開発者**`jabrailkhalil`自身がこの区別に明示的に同意**し、判断者・引数・対象・期限・ポリシーを結び付けること、作用が不明なら無条件に再実行しないことを[返信](https://github.com/pydantic/pydantic-ai/issues/11847#issuecomment-6504209218)しました。
+
+その後、同開発者は**自分の独立したリポジトリ** [pydantic-ai-decision-inbox](https://github.com/jabrailkhalil/pydantic-ai-decision-inbox)でSQLiteによる承認／実行／受領状態と、実際のPydanticAI SDKによる一時停止・再開を試作しました。決定直後・実行指示直後・外部作用の直後などに**子プロセスを実際に強制終了**する例、重複承認の対照例、作用が観測されても受領記録がなければ`unknown`のままにする例を含みます。[GitHub Actions実行](https://github.com/jabrailkhalil/pydantic-ai-decision-inbox/actions/runs/40950857263)は**10ジョブすべて成功**。テスト数（Python 78件・TypeScript 32件・ブラウザ18件など）は[開発者本人の報告](https://github.com/pydantic/pydantic-ai/issues/11847#issuecomment-6507836279)として区別します。
+
+**現在段階：外部開発者が独立実装し、CIも成功。** これはPydanticAI本体への正式マージ、決済システムでの実運用、任意の外部APIについてのexactly-once保証を意味しません。また中川マスターの[原典『合意の記憶』](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)は、判断の因果・関係・再合意可能性を残す**概念上の参照**として元コメントに示されていますが、開発者による原典全文の独立読了やコードの理論起源までが証明されたわけではありません。実装・テストの著作者は**`jabrailkhalil`**です。
 
 ---
 
