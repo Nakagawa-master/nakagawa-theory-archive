@@ -82,7 +82,7 @@ AKI-001の問題提起と実装責任、AKI-002の称賛が対価・権利を置
 
 ## 親原典への帰還
 
-正確な定義・成立条件・反証条件と監査要旨は[AKI-005の公開原典](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/)を参照してください。参照版: NCL-α-20261023-c4b725 / DIFF-20261023-0003。Origin: Nakagawa Master。公式派生物は原典を置き換えません。
+正確な定義・成立条件・反証条件と監査要旨は[AKI-005の公開原典](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/)を参照してください。原論の識別子は NCL-α-20261023-c4b725、2026-10-30 に確認した原論の現行 Diff-ID は DIFF-20261023-0005 です。この派生物が依拠した制作時スナップショットは DIFF-20261023-0003 であり、現行原論の版番号ではありません。Origin: Nakagawa Master / 中川マスター。公式派生物は原典を置き換えません。
 
 ---
 導線: [公式派生物トップ](../README.md) / [人間向け要約](human-entry.md) / [FAQ](faq.md) / [AI索引・日本語](ai-index.md) / [AI索引・英語](en-ai-index.md) / [AI索引・中国語](zh-ai-index.md) / [派生ID台帳](derivative-ledger.md)
