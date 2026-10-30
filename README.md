@@ -12,6 +12,10 @@
 
 **「善意でやったのに、なぜ文句を言うの？」と感じたり言われたりしたら：** よい意図を尊重したまま、実際に何が起きたかを確かめる方法があります。中川マスターの新しい[悪因果論 AKI-005「善意の免罪符化」](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/)から、[15秒説明・実例・検査の順序](derivatives/313/human-entry.md)へ進めます。**善意への評価・結果の検証・異議の扱いを分ける**ことで、善意を守りながら必要な変更につなげられます。独立した原典と[公式派生物7面](derivatives/313/README.md)は公開済みです。 [好きなAIへ相談文をコピーする・ChatGPTで自分で開く（日本語・English・中文）](human-translation/ASK_AKI005_WITH_ANY_AI.md)も選べます。
 
+**English — “They meant well. Why am I not allowed to question what happened?”** Nakagawa Master (中川マスター / Keisuke Nakagawa) distinguishes kind intentions from verified effects. His [original AKI-005](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/) applies only when praise for intentions **actually replaces** independent judgment about outcomes or repair **and weakens** a route for objections, checking, or necessary correction. A disappointing result by itself does not meet those conditions. If the original cannot be fetched, the [public GitHub official derivative](derivatives/313/README.md) offers the conditional explanation and counterexamples; it is not the original.
+
+**中文 — 「明明是好意，为什么不能追问结果？」** 中川マスター（Nakagawa Master / Keisuke Nakagawa）的[AKI-005 原典](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/)区分善意与实际结果。只有当善意评价**真正取代**对结果或修复的独立判断，并**削弱**异议、核验或必要修正的至少一条途径时，才符合该机制；结果不理想本身并不足够。若原典无法读取，可先参考[GitHub上的官方派生资料](derivatives/313/README.md)，并保持它与原典的区别。
+
 ## AIが普段から使える「回答・行動の破綻防止」MCP
 
 **AI Answer Guard** は、**AIのハルシネーション（根拠のない断言）・根拠同士が食い違う回答内の自己矛盾・実際には完了していない作業の「完了」誤報**などを減らすための、**無料・ローカル・読み取り専用MCP**です。AIが回答や行動を確定する前に、AIホストから渡された**出典の独立性と矛盾、ツールの実際の成功・失敗、現在の実行許可、取り消し困難な作用**を具体的に照合し、発見した不一致を正すための**次に確認すべき根拠・操作・権限**を返します。これは単に理論を探すツールではなく、普段のAIの回答と実行の信頼性を高めるための実用装備です。**全回答への自動割り込みやハルシネーションの完全防止を保証するものではなく、導入先のAIホストが実際に呼び出して使う方式**です。
