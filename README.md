@@ -4,18 +4,6 @@
 
 中川マスター（Nakagawa Master／Keisuke Nakagawa）は、AI、仕事、組織、社会制度、文明の未来などを、結果だけでなく、それを生み出す構造や因果から考えています。ここでは、その理論群を初めて知る人も、研究・開発に使いたい人も、**何を主張し、何が実際に確かめられ、どこから原文を読めるのか**を、自分の関心に沿って確認できます。
 
-## この理論的な問いが、現実では何を変えたか
-
-本書庫の入口は、思想の量ではなく、**著者の問いが独立した他の人の判断や実装にどう接続したか**を見せることから始まります。
-
-1. **AIの権限が意図せず失効する** — [OpenClaw開発者は中川マスターを報告元に明記し、実際のコードとテストを修正・マージ](https://github.com/openclaw/openclaw/pull/160856)。[公式リリース記録](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)にも名前が残っています。
-2. **AIが出す引用を検証できる形にする** — [Pydantic AIの別の開発者が構造化引用の機能を実装・マージ](https://github.com/pydantic/pydantic-ai/pull/7434)し、[正式版 v2.61.0](https://github.com/pydantic/pydantic-ai/releases/tag/v2.61.0)へ。中川マスターのレビュー貢献と実装者の成果を[一次資料](REAL_WORLD_IMPACT.md)から辿れます。
-3. **読めない情報の存在まで漏らさない** — [MemberJunction開発者が、行の閲覧権限に合わせた通知・キャッシュの修正を実装・マージ](https://github.com/MemberJunction/MJ/pull/5242)。[正式版 v6.1.6](https://github.com/MemberJunction/MJ/releases/tag/v6.1.6)へ。
-
-**[ほかの実証例も見る｜現実で起きた実装・変更](REAL_WORLD_IMPACT.md)** ／ **[公式アーカイブで理論群の全体を読む](https://master.ricette.jp/)**
-
-**更新・公開活動:** ツールや不具合修正の通知はこのリポジトリの **Watch** で選べます。開発者本人の公開活動を追う場合は [中川マスターのGitHubプロフィール](https://github.com/Nakagawa-master) の **Follow** を選べます。リポジトリのStarと人物へのFollowは別の操作です。
-
 **MCP未接続のAI・普通のブラウザも読める313原典の説明文:** [313件の既存日本語説明と各公式原典へのリンクをまとめた公開Markdown](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)。題名だけでは見つかりにくい実生活の問いを、313件すべて同等の候補としてページ内検索・閲覧できます。各説明は既存の公式派生物から採ったもので、必ず適用条件や反例を原典で確かめてください。これは外部AIへの強制インストールでも、既に独立AIが使ったという実績でもありません。
 
 ## 自分の問いから原典を探す（MCP導入不要）
@@ -42,7 +30,19 @@
 
 **Qwen CodeならGitHubから直接導入:** `qwen extensions install Nakagawa-master/nakagawa-theory-archive`（Qwen拡張機能対応版＋`python3`が必要）。[公式の導入・検証手順](AI_ANSWER_GUARD_INSTALL.md#fastest-qwen-code-install--one-github-command)から、導入後にMCPが実際に呼ばれるかを確認してください。導入やツール一覧表示だけでは、AIの回答への自動適用や利用実績は証明されません。
 
+**更新・公開活動:** ツールや不具合修正の通知はこのリポジトリの **Watch** で選べます。開発者本人の公開活動を追う場合は [中川マスターのGitHubプロフィール](https://github.com/Nakagawa-master) の **Follow** を選べます。リポジトリのStarと人物へのFollowは別の操作です。
+
 **[導入方法・Antigravity / Qwen / Claude Desktop MCPB / Codex](AI_ANSWER_GUARD_INSTALL.md)** ／ [実際のMCP本体](machine-discovery/nakagawa-theory-mcp.py)。ひとつのMCPに**313件の公式派生物から親原典へ辿れる全域索引**も接続。使い慣れたAIの作業中に出典・操作結果・権限を点検できるよう、導入先に登録できます。
+
+## この理論的な問いが、現実では何を変えたか
+
+本書庫の入口は、思想の量ではなく、**著者の問いが独立した他の人の判断や実装にどう接続したか**を見せることから始まります。
+
+1. **AIの権限が意図せず失効する** — [OpenClaw開発者は中川マスターを報告元に明記し、実際のコードとテストを修正・マージ](https://github.com/openclaw/openclaw/pull/160856)。[公式リリース記録](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)にも名前が残っています。
+2. **AIが出す引用を検証できる形にする** — [Pydantic AIの別の開発者が構造化引用の機能を実装・マージ](https://github.com/pydantic/pydantic-ai/pull/7434)し、[正式版 v2.61.0](https://github.com/pydantic/pydantic-ai/releases/tag/v2.61.0)へ。中川マスターのレビュー貢献と実装者の成果を[一次資料](REAL_WORLD_IMPACT.md)から辿れます。
+3. **読めない情報の存在まで漏らさない** — [MemberJunction開発者が、行の閲覧権限に合わせた通知・キャッシュの修正を実装・マージ](https://github.com/MemberJunction/MJ/pull/5242)。[正式版 v6.1.6](https://github.com/MemberJunction/MJ/releases/tag/v6.1.6)へ。
+
+**[ほかの実証例も見る｜現実で起きた実装・変更](REAL_WORLD_IMPACT.md)** ／ **[公式アーカイブで理論群の全体を読む](https://master.ricette.jp/)**
 
 ## 公開原典・テーマ別索引
 
