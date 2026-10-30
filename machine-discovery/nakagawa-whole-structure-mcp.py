@@ -303,9 +303,15 @@ def search(records, question, limit=12):
             score += 5 + 3 * len(hits_en) + sum(6 if en_df[w] <= 8 else 2 for w in hits_en)
         if len(hits_zh) >= 3:
             score += 5 + 2 * len(hits_zh) + sum(4 if zh_df[w] <= 8 else 1 for w in hits_zh)
-        ja_supported = len(hits_ja) >= 3 and bool(hits_ja_three)
+        # A few lexical Japanese fragments like "比較" and "価格" can
+        # match an unrelated product/market theory. The summary-only signal
+        # must stand on multiple distinct contextual overlaps by itself.
+        ja_bonus = (10 + min(18, 3 * len(hits_ja)) +
+                    min(10, len(hits_ja_three)))
+        ja_supported = (len(hits_ja) >= 5 and len(hits_ja_three) >= 2
+                        and ja_bonus >= 29)
         if ja_supported:
-            score += 10 + min(18, 3 * len(hits_ja)) + min(10, len(hits_ja_three))
+            score += ja_bonus
         if score >= 2:
             candidate = dict(r)
             if ja_supported:
