@@ -529,7 +529,7 @@ def run():
     mapping = json.loads((SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_text(encoding="utf-8"))
     assert source_dataset["canonical_mapping_blob_sha"] == hashlib.sha1(
         b"blob " + str(len((SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_bytes())).encode() +
-        b"\\0" + (SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_bytes()
+        b"\0" + (SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_bytes()
     ).hexdigest()
     assert len({r["number"] for r in source_rows}) == 313
     for i, row in enumerate(source_rows):
@@ -537,7 +537,7 @@ def run():
         assert row["canonical_parent_url"] == mapping["entries"][i]["canonical_parent_url"]
         assert row["title"] == mapping["entries"][i]["title"]
         raw = (SERVER.parent.parent / "derivatives" / row["number"] / "human-entry.md").read_bytes()
-        sha = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+        sha = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
         assert sha == row["sha"], row["number"]
         content = raw.decode("utf-8")
         assert row["brief"].strip() in content
