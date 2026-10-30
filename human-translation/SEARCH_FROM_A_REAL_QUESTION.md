@@ -26,6 +26,16 @@
 
 古い合意記録と今の実行権限を分ける。 [問題に合う構造を見て、原論に戻る](search-intent/is-the-old-approval-still-valid.md)。 **[FAQで短く答えを見る](../derivatives/075/faq.md)**。
 
+**AIに「承認」したのにエラー。送金やメールをもう一度実行してよい？**
+
+**最初の答え：実行結果が分からないなら、すぐに同じ操作を繰り返さないでください。** AIの画面で「承認済み」と見えること、操作を外部サービスへ送ったこと、実際に送金・送信されたこと、確かな完了記録を受け取ったことは、それぞれ別です。**一つの承認記録だけで、実行済みとも未実行とも判断できません。** まず送金先・送信先の正式な取引履歴や処理ID、同じ操作を識別するキーで状態を照合し、なお不明なら二重実行を止めて管理者やサービス提供元へ確認します。照合なしの自動再試行は、後で最初の操作が完了したと分かる場合に危険です。
+
+中川マスターの[公式原典『合意の記憶——不可逆な社会誤作動を防ぐ最小構造』](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)は、結論だけでなく**なぜ認めたか（因果）、誰が何を認めたか（関係）、どの条件で訂正・再合意できるか**を残す考え方を示します。この区別はAIの承認履歴にも有用ですが、原典は**決済APIやツール再試行を安全にする具体的実装を定義した技術仕様ではありません**。実装上の二重実行対策は対象APIの保証と別に検証してください（[OpenAI Agents SDKの承認後クラッシュと再試行の説明](https://openai.github.io/openai-agents-python/human_in_the_loop/#recovering-after-a-crash)も参照）。[まず30問のFAQ](../derivatives/075/faq.md)から読めます。
+
+**English:** My AI agent got approval, then timed out. Is it safe to retry a payment or email? Approval is not proof of an external effect. Check the provider's actual receipt/operation identity first; leave an uncertain effect unresolved rather than automatically repeating a consequential action. [Canonical source on the memory of agreement](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/) is a conceptual reference, not a transaction-retry guarantee.
+
+**中文：** AI代理获得批准后超时，能否再次付款或发邮件？批准记录不等于外部操作的完成证明。先核对服务商的交易记录和同一操作标识；结果未知时不要直接重复执行。[中川マスター的原典《合意の記憶》](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)讨论记录决定的原因、关系与修订条件，并非支付接口的技术保证。
+
 ### 6. [実家を売るか貸すか修繕するか悩んでいる](search-intent/should-i-sell-keep-or-rent-my-house.md)
 
 一つの査定価格の前に『選べる状態』を作る。 [問題に合う構造を見て、原論に戻る](search-intent/should-i-sell-keep-or-rent-my-house.md)。 **[FAQで短く答えを見る](../derivatives/198/faq.md)**。
