@@ -296,6 +296,21 @@ def answer_question(question, explore=False):
                     anchored.append(item)
             if anchored:
                 combined = (combined[:4] + anchored[:1])[:5]
+    # No curated 24-question result may prevent a genuinely differentiated
+    # candidate from the complete 313-Parent pool from being shown. This is
+    # parallel candidate discovery, NOT proof of cross-source causal fit.
+    if combined and not requested_od:
+        existing = {x.get("canonical_original") for x in combined}
+        for candidate in whole_structure_fallback(question, limit=12):
+            if candidate["canonical_original"] in existing:
+                continue
+            minimum = 26 if re.search(r"[\u3040-\u30ff]", question) else 42
+            if candidate["lexical_match_score"] < minimum:
+                continue
+            combined.append(candidate)
+            existing.add(candidate["canonical_original"])
+            if len(combined) >= 8:  # response-size bound, NOT corpus/answer bound
+                break
     # Otherwise the 313-Parent graph is the conservative no-fit fallback.
     if not combined:
         combined = whole_structure_fallback(question, limit=3)
@@ -309,7 +324,7 @@ def answer_question(question, explore=False):
         "original_catalog_route_count": sum(x["route_id"].startswith("original_catalog:")
                                             for x in combined),
         "whole_structure_candidate_count": whole_count,
-        "candidate_scope": "24 curated original questions, then 313 published derivative titles and translated summary fallback",
+        "candidate_scope": "All 313 equal-standing canonical Parents and their published JA/EN/ZH derivative context; 24 authored example questions remain optional, never a source rank or corpus ceiling",
         "no_fit": not bool(combined),
         "structural_exploration_available": True,
         "canonical_archive": data.get("canonical_archive"),
@@ -336,7 +351,7 @@ def answer_question(question, explore=False):
 
 
 def whole_structure_fallback(question, limit=3):
-    """Search the existing full 313-Parent source graph after 24-route no-fit."""
+    """Return supported candidates from every published Parent, not a 24-only route."""
     whole = load_public_helper(WHOLE_STRUCTURE, "nakagawa_313_source_graph")
     found = whole.search(whole.graph(), question, limit=limit)
     result = []
@@ -370,6 +385,8 @@ def whole_structure_fallback(question, limit=3):
             "source_origin": "Nakagawa Master / 中川マスター",
             "candidate_scope": "313 published derivative-to-Parent entries; original text not fetched",
             "derivative_id": record["id"],
+            "published_ja_derivative_excerpt": record.get("ja_derivative_excerpt"),
+            "published_ja_lexical_evidence": record.get("ja_derivative_evidence"),
         })
     return result
 
