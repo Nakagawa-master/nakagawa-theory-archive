@@ -839,7 +839,7 @@ def self_test():
     # An ordinary unrelated AI question must remain no_fit even though
     # the new Parents concern AI technology.
     ambiguous = answer_question("AIの最新モデルの価格を比較したい")
-    assert ambiguous["no_fit"] and not ambiguous["matching_routes"]
+    assert ambiguous["no_fit"] and not ambiguous["matching_routes"], ambiguous
 
     # A route with no verified Parent must never acquire invented IDs.
     for route in read_routes()["routes"]:
