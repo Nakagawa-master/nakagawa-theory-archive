@@ -14,7 +14,8 @@
 - [MemberJunction row-access fix](https://github.com/MemberJunction/MJ/pull/5242): [v6.1.6](https://github.com/MemberJunction/MJ/releases/tag/v6.1.6): identifier visibility.
 - [Receiver-owned evidence/stages](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md): own review ≠ third-party adoption ≠ original reading.
 
-## Source selection — 24 fast lanes, all 313 distinct Parents
+## All-313 source navigation; 24 examples are not privileged
+- [313 public Japanese summaries and canonical Parent pointers](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/published-ja-source-briefs-313-v1.json): derivative context, verify actual Parent, no forced adoption.
 - [24 JA/EN/ZH question → original source references](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json): 
 - [24 topic-fit and non-fit questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-intent-to-original-exploration-v1.json): 
 - [All 313 original → OD001–OD313 links](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json): use `entries[].canonical_parent_url`. Each original has one seven-face derivative set; a derivative is **not** the Parent article.

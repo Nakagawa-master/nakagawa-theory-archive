@@ -40,7 +40,7 @@ footer{border-top:1px solid var(--line);padding-top:18px;margin-top:26px}
 <p class="small">公式原典を探す無料の実用入口 ｜ Nakagawa Master / 中川マスター</p>
 <h1>いま困っていることから、原典を探す。</h1>
 <p class="lead">AIの判断をあとから直したい。複数の報道が本当に独立しているか確かめたい。組織の合意を次の行動へつなげたい。</p>
-<p>その問いから、公開済み313原典の題名を通常の検索操作で照合し、別途24件の具体的な質問事例とも比較できます。24件は便宜的な掲載例で、原典の優先順位でも解釈可能数の上限でもありません。各原典から複数の状況別解釈が生まれ、関連する複数原典の組合せによって別の説明につながることもあります。ただし、このページで自動照合できる313件の範囲は題名の文字一致であり、本文の意味や原典同士の接合を自動検証するものではありません。原典本文で根拠と成立条件を確かめてください。</p>
+<p>その問いから、公開済み313原典の題名と各公式派生物の日本語説明を照合し、別途24件の具体的な質問事例とも比較できます。24件は便宜的な掲載例で、原典の優先順位でも解釈可能数の上限でもありません。各原典から複数の状況別解釈が生まれ、関連する複数原典の組合せによって別の説明につながることもあります。ただし、このページで自動照合できる313件は題名・日本語派生物の文字一致であり、本文の意味や原典同士の接合を自動検証するものではありません。原典本文で根拠と成立条件を確かめてください。</p>
 <section class="panel">
 <h2>自分の質問で探す</h2>
 <label for="question">いまの問題・疑問</label>
@@ -154,6 +154,7 @@ return [...best.values()].sort((a,b)=>b.score-a.score||a.entry.canonical_origina
 // First-class, user-initiated title discovery over all 313 published originals.
 // Main Search click triggers this static fetch; the private question is never sent.
 const FULL_ORIGINAL_MAP="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/derivatives/official-derivatives-map.json";
+const FULL_SOURCE_BRIEFS="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/published-ja-source-briefs-313-v1.json";
 let titleSearchGeneration=0;
 function resetTitleResults(){
 titleSearchGeneration++;
@@ -181,6 +182,35 @@ const minHits=[...terms].some(t=>/[ぁ-んァ-ン一-龥]/.test(t))?2:1;
 return {entry,score:exact?100+hits.length:hits.length,qualified:exact||hits.length>=minHits};
 }).filter(x=>x.qualified).sort((a,b)=>b.score-a.score||a.entry.number.localeCompare(b.entry.number)).slice(0,12);
 }
+// All 313 published JA summaries are source-specific context hypotheses.
+// Candidate matches do not certify the Parent's actual claims.
+function jaContextNgrams(value,width){
+  const result=new Set();
+  for(const chunk of String(value).normalize("NFKC").toLowerCase().match(/[ぁ-んァ-ン一-龥]{2,}/g)||[]){
+    for(let i=0;i<=chunk.length-width;i++)result.add(chunk.slice(i,i+width));
+  }
+  return result;
+}
+function rankByPublishedContext(q,entries,briefRows){
+  const base=rankByTitle(q,entries),ranked=new Map(base.map(x=>[x.entry.number,{...x,via:"title"}]));
+  if(!briefRows)return [...ranked.values()];
+  const stop=new Set(["これ","それ","ため","こと","よう","から","その","する","した","して","ます","です","ある","ない","中川","原典","派生","本文","理論","本論","この","もの","問題","場合","人間","社会","判断","構造"]);
+  const q2=[...jaContextNgrams(q,2)].filter(x=>!stop.has(x)),q3=jaContextNgrams(q,3);
+  if(q2.length<5||q3.size<2)return [...ranked.values()];
+  const df=new Map();
+  for(const row of briefRows)for(const g of jaContextNgrams(row.brief,2))df.set(g,(df.get(g)||0)+1);
+  for(let i=0;i<briefRows.length;i++){
+    const row=briefRows[i],entry=entries[i];
+    const g2=jaContextNgrams(row.brief,2),g3=jaContextNgrams(row.brief,3);
+    const h2=q2.filter(g=>g2.has(g)&&(df.get(g)||0)<=32),h3=[...q3].filter(g=>g3.has(g));
+    if(h2.length<5||h3.length<2)continue;
+    const score=10+Math.min(18,3*h2.length)+Math.min(10,h3.length);
+    if(score<29)continue;
+    const prev=ranked.get(entry.number);
+    ranked.set(entry.number,{entry,score:(prev?.score||0)+score,via:"published_context",brief:row.brief,source:row.derivative_url,section:row.section});
+  }
+  return [...ranked.values()].sort((a,b)=>b.score-a.score||a.entry.number.localeCompare(b.entry.number)).slice(0,12);
+}
 async function searchAllTitles(){
 const generation=++titleSearchGeneration;
 const q=question.value.trim(),status=findEl("all-title-status"),results=findEl("all-title-results");
@@ -198,12 +228,25 @@ for(const e of entries){
 if(!/^\d{3}$/.test(e.number)||!String(e.canonical_parent_url||"").startsWith("https://master.ricette.jp/")||seen.has(e.canonical_parent_url))throw Error("invalid Parent mapping");
 seen.add(e.canonical_parent_url);
 }
-const matches=rankByTitle(q,entries);
-status.textContent=matches.length?("313原典から題名の文字一致で"+matches.length+"件を表示。原典本文との意味の一致は未検証です。"):("313原典の題名から十分な文字一致は見つかりませんでした。これは不適合の判定ではありません。分野別の題名一覧または公式サイトで別の語を試してください。");
-for(const {entry} of matches){
+let briefRows=null;
+try{
+  const sourceResponse=await fetch(FULL_SOURCE_BRIEFS,{method:"GET",mode:"cors"});
+  if(sourceResponse.ok){
+    const source=await sourceResponse.json(),rows=source.entries;
+    if(source.count===313&&Array.isArray(rows)&&rows.length===313&&rows.every((row,i)=>row.number===entries[i].number&&row.canonical_parent_url===entries[i].canonical_parent_url&&row.title===entries[i].title&&row.derivative_url.endsWith("/derivatives/"+row.number+"/human-entry.md")&&/^[0-9a-f]{40}$/.test(row.sha)&&typeof row.brief==="string"))briefRows=rows;
+  }
+}catch(error){/* Source unavailable: retain complete title fallback. */}
+if(generation!==titleSearchGeneration||question.value.trim()!==q)return;
+const matches=rankByPublishedContext(q,entries,briefRows);
+status.textContent=matches.length?("313原典の題名"+(briefRows?"と既存の日本語公式派生説明":"")+"から"+matches.length+"候補を表示。候補の適合・原文の主張は未検証です。"):("313原典の"+(briefRows?"題名と公式日本語説明":"題名")+"から十分な文字一致は見つかりませんでした。これは不適合の判定ではありません。別の問いや原典一覧も確認してください。");
+for(const {entry,via,brief,source,section} of matches){
 const wrap=element("article",null,"result");
 wrap.append(element("h3",entry.title));
-wrap.append(element("p","公式派生物 OD"+entry.number+" に1:1対応する原典候補。題名での機械照合のみ、本文と適用条件は未検証です。"));
+wrap.append(element("p","公式派生物 OD"+entry.number+" の公開情報による候補（"+(via==="published_context"?"公開済み日本語解説との文字照合":"題名の文字照合")+"）。適用条件・反例・原典本文は未検証です。"));
+if(brief&&source){
+  wrap.append(element("p",brief));
+  const evidence=element("a","公式派生物の原文（"+section+"）を読む →");evidence.href=source;evidence.target="_blank";evidence.rel="noopener noreferrer";wrap.append(evidence);
+}
 const link=element("a","公式アーカイブの原典を開いて確かめる →");link.href=entry.canonical_parent_url;link.target="_blank";link.rel="noopener noreferrer";wrap.append(link);
 const actions=element("div",null,"buttons");
 const btn=element("button","この原典を自分のAIで検討する","secondary");btn.type="button";
