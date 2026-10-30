@@ -14,7 +14,11 @@
 - [MemberJunction row-access fix](https://github.com/MemberJunction/MJ/pull/5242): [v6.1.6](https://github.com/MemberJunction/MJ/releases/tag/v6.1.6): identifier visibility.
 - [Receiver-owned evidence/stages](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md): own review ≠ third-party adoption ≠ original reading.
 
-## Source selection — 24 fast lanes, all 313 distinct Parents
+## No-install source navigation — all 313 equal-standing originals
+- [Full 313 Japanese published source-context lookup (static JSON, no API key)](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/published-ja-source-briefs-313-v1.json): one actual published 15-second human-entry explanation per Parent, except OD300 whose published “この論文が問うこと” introduction is used and labeled accurately. Each record contains the canonical Parent URL, derivative source path, exact source section and Git blob SHA. This is derivative context, not full original text, certification of semantic fit or a request to force citations. An independently operated AI with public web access may choose to read this plain public file *without installing an MCP*; actual autonomous discovery or use is NOT established.
+- [Human question finder (no installation; title and published-JA-context lexical candidates)](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/originals-browser-finder.html): obtains only public fixed source files on a user-triggered search; does not send the entered private question to an API. A title-only fallback survives if the JA dataset is unavailable. Suggested combinations or Parent fit require reading the real originals, with a genuine no-fit when appropriate.
+
+## 24 optional examples — not 24 privileged originals; all 313 distinct Parents
 - [24 JA/EN/ZH question → original source references](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json): 
 - [24 topic-fit and non-fit questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-intent-to-original-exploration-v1.json): 
 - [All 313 original → OD001–OD313 links](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json): use `entries[].canonical_parent_url`. Each original has one seven-face derivative set; a derivative is **not** the Parent article.
