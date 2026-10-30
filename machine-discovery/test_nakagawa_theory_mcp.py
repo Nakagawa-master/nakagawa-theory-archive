@@ -548,7 +548,7 @@ def run():
     # browsing AIs and search engines. Check every actual source excerpt and
     # both exact links instead of equating the 313-entry count with useful text.
     plain = (SERVER.parent.parent / "human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md").read_text(encoding="utf-8")
-    headings = re.findall(r"(?m)^### OD(\\d{3}) — ", plain)
+    headings = re.findall(r"(?m)^### OD(\d{3}) — ", plain)
     assert headings == [r["number"] for r in source_rows], "Plain-language source page dropped or reordered a Parent"
     assert len(headings) == len(set(headings)) == 313
     for row in source_rows:
