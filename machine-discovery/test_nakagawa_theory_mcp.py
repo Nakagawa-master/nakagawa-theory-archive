@@ -502,9 +502,10 @@ def run():
     assert all(x in js for x in ("renderBridges(q,lang)", "function bridgeHandoff(", "showBridge", 'findEl("bridge-choice")'))
     assert js.index("renderBridges(q,lang)") < js.index("if(!matches.length)")
     assert all(x in js for x in ("function similarity(", "function choose(", "function handoff(", "matches.length", "navigator.clipboard"))
-    # The offline 24-original path must remain zero-network. One extra,
-    # transparent static 313-Parent lookup is allowed only on direct user click.
-    # Preserve a fail-closed guard against telemetry or arbitrary network calls.
+    # The 24 editorial examples remain embedded and offline; the ordinary
+    # user-initiated Search now also triggers the complete public 313-title
+    # lookup. No network at page load and no question transmission in the
+    # static map request. Guard against telemetry/unrelated network calls.
     assert not any(x in js for x in ("XMLHttpRequest", "sendBeacon(", "localStorage", "sessionStorage"))
     assert js.count("fetch(") == 1, "Unexpected browser network operation"
     assert ('const FULL_ORIGINAL_MAP="https://raw.githubusercontent.com/'
@@ -512,7 +513,9 @@ def run():
             'official-derivatives-map.json";') in js
     assert 'await fetch(FULL_ORIGINAL_MAP,{method:"GET",mode:"cors"})' in js
     assert 'findEl("find-all-titles").addEventListener("click",searchAllTitles);' in js
-    assert js.count("searchAllTitles(") == 1, "Title lookup must not auto-run at load"
+    assert js.count("searchAllTitles(") == 2, "Expected function definition plus one user-search invocation"
+    assert 'if(!q){findEl("status").textContent="質問を入力してください。";return;}\n// The complete 313-title route runs on every user-initiated search, regardless of sample-24 matches.\nvoid searchAllTitles();' in js, "313 lookup must be behind nonempty user-initiated Search, not page load"
+    assert js.index("void searchAllTitles();") > js.index("function search(){"), "313 lookup misplaced outside user Search"
     # Execute the real opt-in 313 search, rather than merely testing the source
     # for a fetch token. Synthetic DOM and a local 313-Parent response make this
     # deterministic, credential-free and network-free under the native CI job.
