@@ -4,6 +4,7 @@
 Run: python3 machine-discovery/test_nakagawa_theory_mcp.py
 No remote APIs, paid services, test credentials, or original-site mutations.
 """
+import hashlib
 import json
 import re
 import shutil
@@ -507,11 +508,12 @@ def run():
     # lookup. No network at page load and no question transmission in the
     # static map request. Guard against telemetry/unrelated network calls.
     assert not any(x in js for x in ("XMLHttpRequest", "sendBeacon(", "localStorage", "sessionStorage"))
-    assert js.count("fetch(") == 1, "Unexpected browser network operation"
+    assert js.count("fetch(") == 2, "Only two public static source GETs may be issued"
     assert ('const FULL_ORIGINAL_MAP="https://raw.githubusercontent.com/'
             'Nakagawa-master/nakagawa-theory-archive/main/derivatives/'
             'official-derivatives-map.json";') in js
     assert 'await fetch(FULL_ORIGINAL_MAP,{method:"GET",mode:"cors"})' in js
+    assert 'await fetch(FULL_SOURCE_BRIEFS,{method:"GET",mode:"cors"})' in js
     assert 'findEl("find-all-titles").addEventListener("click",searchAllTitles);' in js
     assert js.count("searchAllTitles(") == 2, "Expected function definition plus one user-search invocation"
     assert 'if(!q){findEl("status").textContent="質問を入力してください。";return;}\n// The complete 313-title route runs on every user-initiated search, regardless of sample-24 matches.\nvoid searchAllTitles();' in js, "313 lookup must be behind nonempty user-initiated Search, not page load"
@@ -519,6 +521,29 @@ def run():
     # Execute the real opt-in 313 search, rather than merely testing the source
     # for a fetch token. Synthetic DOM and a local 313-Parent response make this
     # deterministic, credential-free and network-free under the native CI job.
+    # Verify that all 313 derivative excerpts come verbatim from published
+    # immutable source blobs and preserve the single official Parent URL.
+    source_dataset = json.loads((SERVER.parent / "published-ja-source-briefs-313-v1.json").read_text(encoding="utf-8"))
+    source_rows = source_dataset["entries"]
+    assert source_dataset["count"] == len(source_rows) == 313
+    mapping = json.loads((SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_text(encoding="utf-8"))
+    assert source_dataset["canonical_mapping_blob_sha"] == hashlib.sha1(
+        b"blob " + str(len((SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_bytes())).encode() +
+        b"\\0" + (SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_bytes()
+    ).hexdigest()
+    assert len({r["number"] for r in source_rows}) == 313
+    for i, row in enumerate(source_rows):
+        assert row["number"] == mapping["entries"][i]["number"]
+        assert row["canonical_parent_url"] == mapping["entries"][i]["canonical_parent_url"]
+        assert row["title"] == mapping["entries"][i]["title"]
+        raw = (SERVER.parent.parent / "derivatives" / row["number"] / "human-entry.md").read_bytes()
+        sha = hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\\0" + raw).hexdigest()
+        assert sha == row["sha"], row["number"]
+        content = raw.decode("utf-8")
+        assert row["brief"].strip() in content
+        assert row["canonical_parent_url"] in content
+        assert row["section"] in ("15秒説明", "この論文が問うこと")
+        assert row["derivative_url"].endswith("/" + row["number"] + "/human-entry.md")
     if shutil.which("node"):
         original_map = json.loads((SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_text(encoding="utf-8"))
         entries = original_map["entries"]
@@ -526,23 +551,40 @@ def run():
         optional_js = js[js.index("const FULL_ORIGINAL_MAP="):js.index("function element(")]
         title_harness = (
             "const originalMap=" + json.dumps({"entries": entries}, ensure_ascii=False) + ";\n"
+            + "const sourceBriefs=" + json.dumps(source_dataset, ensure_ascii=False) + ";\n"
             + 'const question={value:"善意の免罪符化"}; const language={value:"ja"};\n'
             + 'const status={textContent:""}; const cards={items:[],replaceChildren(){this.items=[];},append(v){this.items.push(v);}};\n'
             + 'function findEl(id){return id==="all-title-status"?status:cards;}\n'
             + 'function element(tag,txt){return {tag,textContent:txt,items:[],append(v){this.items.push(v);},addEventListener(){}};}\n'
             + 'function handoff(){} function detectLanguage(){return "ja";}\n'
             + 'let calls=[]; let pending=null;\n'
-            + 'globalThis.fetch=(url,opt)=>{calls.push({url,opt}); return pending||Promise.resolve({ok:true,json:async()=>originalMap});};\n'
+            + 'let sourceUnavailable=false; globalThis.fetch=(url,opt)=>{calls.push({url,opt}); if(url===FULL_ORIGINAL_MAP) return pending||Promise.resolve({ok:true,json:async()=>originalMap}); if(url===FULL_SOURCE_BRIEFS) return Promise.resolve(sourceUnavailable?{ok:false,status:503}:{ok:true,json:async()=>sourceBriefs}); throw Error("Nonpublic URL");};\n'
             + optional_js + "\n"
             + r'''
 (async()=>{
   if(calls.length!==0)throw Error("Network reached before explicit lookup");
   await searchAllTitles();
-  if(calls.length!==1||calls[0].url!==FULL_ORIGINAL_MAP||calls[0].opt.method!=="GET")
-    throw Error("Unexpected lookup URL or HTTP method");
+  if(calls.length!==2||calls[0].url!==FULL_ORIGINAL_MAP||calls[1].url!==FULL_SOURCE_BRIEFS||calls.some(x=>x.opt.method!=="GET"))
+    throw Error("Unexpected public source URLs or HTTP method");
   if(!cards.items.some(card=>card.items.some(child=>child.textContent?.includes("OD313"))))
     throw Error("The published AKI-005 original title was not retrieved as OD313");
-  if(calls[0].url.includes(question.value))throw Error("Question leaked in metadata URL");
+  if(calls.some(x=>x.url.includes(question.value)))throw Error("Question leaked in source URL");
+  // The normal question does NOT name the theory; derivative context
+  // must reveal its official Parent without requiring a 24-example route.
+  question.value="感謝や態度の審査になり、何が起きたか確認できなくなる";
+  await searchAllTitles();
+  if(!cards.items.some(card=>card.items.some(child=>child.textContent?.includes("OD313"))))
+    throw Error("Actual JA explanatory context failed to find OD313");
+  question.value="異議が記録され監査で誤りが見つかっても、資源や機会が戻らない";
+  await searchAllTitles();
+  if(!cards.items.some(card=>card.items.some(child=>child.textContent?.includes("OD300"))))
+    throw Error("Non-15-second OD300 source section failed contextual search");
+  sourceUnavailable=true;
+  question.value="善意の免罪符化";
+  await searchAllTitles();
+  if(!cards.items.some(card=>card.items.some(child=>child.textContent?.includes("OD313"))))
+    throw Error("Full title fallback disappeared when static JA source unavailable");
+  sourceUnavailable=false;
   question.value="banana helicopter mystery";
   await searchAllTitles();
   if(cards.items.length!==0)throw Error("Unrelated question invented a title candidate");
@@ -555,14 +597,14 @@ def run():
   unblock({ok:true,json:async()=>originalMap});
   await older;
   if(cards.items.length!==0)throw Error("Stale result displayed after user changed question");
-  console.log("PASS: click-only 313 map, OD313 hit, unrelated no-fit, stale-result discard");
+  console.log("PASS: two click-only public static files, 313 real JA explanations, OD313/OD300 non-title fit, honest fallback, unrelated no-fit and stale cancellation");
 })().catch(e=>{console.error(e);process.exitCode=1});
 '''
         )
         probe = subprocess.run([shutil.which("node"), "-"], input=title_harness,
                                capture_output=True, text=True, timeout=12)
         assert probe.returncode == 0, probe.stderr
-        assert "click-only 313 map" in probe.stdout
+        assert "two click-only public static files" in probe.stdout
     assert "if(generation!==titleSearchGeneration||question.value.trim()!==q)return;" in js
     assert "if(!Array.isArray(entries)||entries.length!==313)" in js
     assert all(x in html for x in ('id="question"', 'id="results"', 'id="ai-prompt"', 'data-example="none"', 'https://master.ricette.jp/#nakagawa-master'))
