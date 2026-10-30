@@ -544,6 +544,25 @@ def run():
         assert row["canonical_parent_url"] in content
         assert row["section"] in ("15秒説明", "この論文が問うこと")
         assert row["derivative_url"].endswith("/" + row["number"] + "/human-entry.md")
+    # Public GitHub Markdown is the zero-install / JS-free route for ordinary
+    # browsing AIs and search engines. Check every actual source excerpt and
+    # both exact links instead of equating the 313-entry count with useful text.
+    plain = (SERVER.parent.parent / "human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md").read_text(encoding="utf-8")
+    headings = re.findall(r"(?m)^### OD(\d{3}) — ", plain)
+    assert headings == [r["number"] for r in source_rows], "Plain-language source page dropped or reordered a Parent"
+    assert len(headings) == len(set(headings)) == 313
+    for row in source_rows:
+        section = plain.split("### OD" + row["number"] + " — ", 1)[1].split("\n### OD", 1)[0]
+        assert section.startswith(row["title"] + "\n"), row["number"]
+        assert row["canonical_parent_url"] in section, row["number"]
+        assert row["derivative_url"] in section, row["number"]
+        assert ("Git blob SHA:** `" + row["sha"] + "`") in section, row["number"]
+        quoted = "\n".join("> " + v for v in row["brief"].strip().splitlines())
+        assert quoted in section, row["number"]
+    assert "原典313本が同等" in plain and "適合なし" in plain
+    for referral in ("README.md", "AI_START_HERE.md", "AGENTS.md"):
+        entrypoint = (SERVER.parent.parent / referral).read_text(encoding="utf-8")
+        assert "313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md" in entrypoint
     if shutil.which("node"):
         original_map = json.loads((SERVER.parent.parent / "derivatives/official-derivatives-map.json").read_text(encoding="utf-8"))
         entries = original_map["entries"]
