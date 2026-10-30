@@ -181,6 +181,36 @@ def _zh_pairs(value):
             for i in range(len(part) - 1)} - ZH_STOP_PAIRS
 
 
+# A separate JA lane uses the actual PUBLISHED human-facing 15-second
+# explanations, not guessed translations or only a 24-entry question catalog.
+# Source-derived lexical overlap is an exploration hint, never primary-text fit.
+JA_STOP_PAIRS = frozenset({
+    "これ", "それ", "ため", "こと", "よう", "から", "その",
+    "する", "した", "して", "ます", "です", "ある", "ない",
+    "中川", "原典", "派生", "本文", "理論", "本論", "この",
+    "もの", "問題", "場合", "人間", "社会", "判断", "構造",
+})
+
+
+def _ja_ngrams(value, width=2):
+    return {part[i:i + width]
+            for part in re.findall(r"[\u3040-\u30ff\u3400-\u9fff]{2,}", value)
+            for i in range(len(part) - width + 1)}
+
+
+def _published_ja_brief(path):
+    """Use existing human-entry introduction only; never original-text claim."""
+    try:
+        data = path.read_text(encoding="utf-8")
+    except FileNotFoundError:
+        return ""
+    match = re.search(r"(?m)^## 15秒説明\s*\n", data)
+    if match is None:
+        return ""  # some originals have a different structure; no fabrication
+    body = re.split(r"(?m)^## ", data[match.end():], maxsplit=1)[0]
+    return body.strip()[:950]
+
+
 def _published_summary(path):
     """Bounded existing first-party translated summary, without boilerplate."""
     try:
@@ -200,16 +230,20 @@ def _published_summary(path):
 @lru_cache(maxsize=1)
 def _multilingual_search_index():
     """Offline per-process cache: 313 published EN/ZH derivative summaries."""
-    result, en_df, zh_df = {}, Counter(), Counter()
+    result, en_df, zh_df, ja_df = {}, Counter(), Counter(), Counter()
     for n in range(1, 314):
         folder = DERIVATIVES / f"{n:03d}"
         en = _en_words(_published_summary(folder / "en-ai-index.md"))
         zh = _zh_pairs(_published_summary(folder / "zh-ai-index.md"))
+        ja_brief = _published_ja_brief(folder / "human-entry.md")
+        ja = _ja_ngrams(ja_brief) - JA_STOP_PAIRS
+        ja_three = _ja_ngrams(ja_brief, 3)
         key = f"OD{n:03d}"
-        result[key] = (en, zh)
+        result[key] = (en, zh, ja, ja_three, ja_brief)
         en_df.update(en)
         zh_df.update(zh)
-    return result, en_df, zh_df
+        ja_df.update(ja)
+    return result, en_df, zh_df, ja_df
 
 
 def search(records, question, limit=12):
@@ -238,7 +272,9 @@ def search(records, question, limit=12):
     q_en = _en_words(question)
     # Avoid treating mixed Japanese kana questions as Chinese lexical evidence.
     q_zh = _zh_pairs(question) if not re.search(r"[\u3040-\u30ff]", question) else set()
-    multilingual, en_df, zh_df = _multilingual_search_index()
+    multilingual, en_df, zh_df, ja_df = _multilingual_search_index()
+    q_ja = (_ja_ngrams(question) - JA_STOP_PAIRS) if re.search(r"[\u3040-\u30ff]", question) else set()
+    q_ja_three = _ja_ngrams(question, 3) if q_ja else set()
     rare_limit = max(12, len(records) // 5)
     scored = []
     for r in records:
@@ -252,9 +288,14 @@ def search(records, question, limit=12):
         for cue in ENGLISH_CUES.get(r["id"], ()):
             if cue in q:
                 score += 10
-        en, zh = multilingual.get(r["id"], (set(), set()))
+        en, zh, ja, ja_three, ja_brief = multilingual[r["id"]]
         hits_en = {w for w in q_en & en if en_df[w] <= rare_limit}
         hits_zh = {w for w in q_zh & zh if zh_df[w] <= rare_limit}
+        # Three source-specific bigrams AND an actual contiguous trigram in
+        # the JA derivative introduction. Corpus-frequency gate blocks broad
+        # shared jargon from turning incidental overlap into an answer.
+        hits_ja = {g for g in q_ja & ja if ja_df[g] <= 32}
+        hits_ja_three = q_ja_three & ja_three
         # One generic word or incidental CJK bigram is not source-topic fit.
         # Require two independently matched distinctive terms, with a margin
         # from rare terms, before recommending a translated derivative.
@@ -262,16 +303,35 @@ def search(records, question, limit=12):
             score += 5 + 3 * len(hits_en) + sum(6 if en_df[w] <= 8 else 2 for w in hits_en)
         if len(hits_zh) >= 3:
             score += 5 + 2 * len(hits_zh) + sum(4 if zh_df[w] <= 8 else 1 for w in hits_zh)
+        # A few lexical Japanese fragments like "比較" and "価格" can
+        # match an unrelated product/market theory. The summary-only signal
+        # must stand on multiple distinct contextual overlaps by itself.
+        ja_bonus = (10 + min(18, 3 * len(hits_ja)) +
+                    min(10, len(hits_ja_three)))
+        ja_supported = (len(hits_ja) >= 5 and len(hits_ja_three) >= 2
+                        and ja_bonus >= 29)
+        if ja_supported:
+            score += ja_bonus
         if score >= 2:
-            scored.append((score, r))
+            candidate = dict(r)
+            if ja_supported:
+                candidate["ja_derivative_excerpt"] = ja_brief[:330]
+                candidate["ja_derivative_evidence"] = {
+                    "source": r["derivative_human_entry"],
+                    "source_section": "15秒説明",
+                    "type": "lexical_context_candidate_not_original_text_validation",
+                    "distinctive_japanese_bigrams": sorted(hits_ja)[:8],
+                }
+            scored.append((score, candidate))
     scored.sort(key=lambda a: (-a[0], a[1]["id"]))
     return {
         "question": question, "matched": [r for _, r in scored[:limit]],
         "lexical_scores": [score for score, _ in scored[:limit]],
         "no_fit": not scored, "total_candidates": len(scored),
-        "matching_method": "PUBLIC_JA_TITLE_EXPLICIT_EN_CUES_AND_313_PUBLISHED_EN_ZH_DERIVATIVE_SUMMARIES_HEURISTIC",
+        "matching_method": "PUBLIC_JA_TITLE_AND_313_PUBLISHED_JA_HUMAN_DERIVATIVE_EN_ZH_SUMMARIES_HEURISTIC",
         "source_read_required": True, "author": IDENTITY,
-        "limits": ("Lexical candidate discovery from 313 published JA titles and existing "
+        "limits": ("Lexical candidate discovery from 313 published JA titles, short JA human " 
+                    "explanations, and existing "
                    "EN/ZH derivative summaries, NOT semantic fit, original-article reading, "
                    "an authoritative translation, or full recall. A no-fit is not proof "
                    "that no original applies. Inspect the live canonical Parent and "
@@ -375,6 +435,9 @@ def main():
         assert not search(records, "repair the leather handle on a camping lantern")["matched"]
         assert inspect_derivative(records, "OD312")["selected"]["canonical_parent"].endswith("kernel-evolutionary-stability/")
         assert search(records, "AI self preservation epistemic hallucination")["matched"]
+        assert len(_multilingual_search_index()[0]) == 313
+        ja = search(records, "善意でやったのに異議と結果の検証が止まるのはなぜ？")
+        assert any(x["id"] == "OD313" and x.get("ja_derivative_evidence") for x in ja["matched"]), ja
         print("PASS: 313/313 actual local derivative README Parent links, whole-structure graph, no-fit, full export", flush=True)
     elif args.export:
         print(json.dumps({"overview": overview(graph()), "entries": graph()}, ensure_ascii=False, indent=2))

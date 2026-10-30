@@ -51,6 +51,12 @@ def main():
                                "arguments": {"question": "repair the leather strap on a camping lantern"}}),
         req(16, "tools/call", {"name": "find_sources_in_whole_structure",
                                "arguments": {"question": "measure three tablespoons for a banana smoothie"}}),
+        # Ordinary Japanese: published 15-second explanation, not a 24-case
+        # quota or name-aware question, supplies context for an OD313 candidate.
+        req(17, "tools/call", {"name": "find_sources_in_whole_structure",
+                               "arguments": {"question": "善意でやったのに異議と結果の検証が止まるのはなぜ？"}}),
+        req(18, "tools/call", {"name": "find_sources_in_whole_structure",
+                               "arguments": {"question": "キャンプのランタンの革ひもを直したい"}}),
     ]
     proc = subprocess.run([sys.executable, str(SCRIPT)], input="".join(
         json.dumps(m, ensure_ascii=False)+"\n" for m in messages),
@@ -58,7 +64,7 @@ def main():
     )
     assert not proc.stderr, proc.stderr
     frames = {json.loads(x)["id"]: json.loads(x) for x in proc.stdout.splitlines() if x.strip()}
-    assert set(frames) == set(range(1, 17)), frames.keys()
+    assert set(frames) == set(range(1, 19)), frames.keys()
     assert len(frames[2]["result"]["tools"]) == 4
     assert {x["name"] for x in frames[2]["result"]["tools"]} == {
         "overview_nakagawa_whole_structure", "list_all_313_derivative_parent_links",
@@ -100,7 +106,14 @@ def main():
     for i in (15, 16):
         got = unpack(i)
         assert got["no_fit"] and not got["matched"], (i, got)
-    print("PASS: 313 Parent IDs + real EN/ZH published-summary search for OD313, unchanged unrelated nonfit and valid MCP stdio")
+    ja = unpack(17)
+    matches = [x for x in ja["matched"] if x["id"] == "OD313"]
+    assert matches and matches[0]["ja_derivative_evidence"]["source_section"] == "15秒説明", ja
+    assert "善意" in matches[0]["ja_derivative_excerpt"], matches[0]
+    assert ja["source_read_required"] and "313_PUBLISHED_JA" in ja["matching_method"]
+    unrelated_ja = unpack(18)
+    assert unrelated_ja["no_fit"] and not unrelated_ja["matched"], unrelated_ja
+    print("PASS: 313 equal Parent links + published JA/EN/ZH source-context candidates, unrelated JA/EN no-fits and real MCP stdio")
 
 
 if __name__ == "__main__":
