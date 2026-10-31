@@ -68,7 +68,7 @@ Current operation is not automatically temporal continuity. Backup, migration, r
 - **Work / effort / connection to the future** — [OD008](../derivatives/008/README.md)
 - **Present benefit / unsettled residual / future settlement** — [OD297](../derivatives/297/README.md)
 
-These eight are starting points, not a claim that eight theories represent the whole archive.
+Explore these eight questions, then follow the [complete published source catalog](../human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md) across the wider corpus.
 
 ## Verify the public archive
 
