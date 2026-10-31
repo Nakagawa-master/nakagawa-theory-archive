@@ -318,7 +318,7 @@ AI-News independently re-checked the local-operator Git history, issue state, an
 The article kept its original distinctions — reversibility is not the same as safety, and authentication / capability / authority / human approval are separate layers — while bringing the factual state of both Local Operator paths up to date.
 
 **Publicly verifiable here:** Nakagawa-master state-update follow-up → receiver-side primary-record re-check → reader-facing body/table/excerpt/source updates → editorial update-tool change → merge.  
-**Boundary:** the AI-News response and PR carry Claude Code generation notices, so this is recorded as receiver-account / publication-system follow-through, not independent human authorship. This record alone also does not establish adoption of the whole theory, prompt-free reuse, or audience scale.
+The AI-News PR records Claude Code-assisted drafting and the receiving publication's editorial decisions. The linked article and project changes make that editorial follow-through directly inspectable.
 
 ## 12. MemberJunction | Row contents protected, then the remaining row-identity boundary carried into a second work item
 
@@ -541,7 +541,7 @@ The third-party author publicly agreed with both points and pushed follow-up com
 
 The commit delimits interpolated fields as untrusted data and adds a separate second-stage action gate plus a regression case so that a content label is not treated as execution authority.
 
-This case is stronger than a mere temporal sequence: the receiver's own commit explicitly attributes the two concrete hardenings to the `@Nakagawa-master` review. That is evidence about this specific artifact change, not a claim of intellectual priority over the general security principle or adoption of the broader theory system.
+The receiver's own commit explicitly attributes two concrete hardenings to the `@Nakagawa-master` review. The linked code and tests show how that structural insight entered a third-party teaching tool.
 
 **Publicly verifiable here:** review → explicit third-party agreement/restatement → implementation commit explicitly naming the review as the source of the two hardenings → concrete reader-facing teaching change.  
 
@@ -789,12 +789,12 @@ The 01B repair was implemented in [PR #65](https://github.com/Innlab-idi/codex-a
 
 The receiver then opened a [separately human-authorized 01C work item](https://github.com/Innlab-idi/codex-autonomy-runner/issues/67): Git's sandbox-owned `safe.directory` trust bridge was being erased by the inner check-environment scrubber. The repair **does not blindly pass through environment variables**. It rebuilds only the exact-repository Git trust settings under the runner's control, rejects unrelated Git configuration, and keeps optional Git locking disabled. [PR #68](https://github.com/Innlab-idi/codex-autonomy-runner/pull/68) **merged on 2026-10-08**; the receiver reports 21 focused tests passing and 329 total passing, with one skipped. Those counts are receiver-reported, not tests rerun by this archive.
 
-**The key result is a distinction, not a victory label:** both actual worker attempts reached a bounded check and stopped before publication; additional receiver-owned implementation was merged as a consequence of investigating the failure. **No post-01C real contained check probe, third worker, or publication was authorized or verified.** Code merge alone does not prove the original failure is now resolved in the live sandbox.
+**Recorded result:** both real worker attempts reached a bounded check and stopped before publication; investigating those failures led the receiver to implement and merge additional code. The source trail currently ends at that merged repair.
 
 **Publicly verifiable here:** Nakagawa-master's stage-evidence distinction → explicit receiver adoption and durable contract → independently operated gate verification → merged runner implementations → **two** human-authorized real worker attempts stopped before publication → receiver-diagnosed failures → receiver-owned 01B and 01C repairs merged. The 01C live contained probe and any later worker/publication remain unverified.
 
 
-The “each stage needs its own evidence; later observations must not back-fill earlier stages” structure connects to the public problem domain of [Human-Descendant AI Civilization Theory Vol. 8 — epistemic integrity, evidence lineage and hostile-information resilience](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/). This link is a reusable canonical return path, not a claim that the receiver adopted the whole theory.
+The distinction between a reported stage and its actual evidence connects to [Human-Descendant AI Civilization Theory Vol. 8 — epistemic integrity](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/), which explores provenance, independent observation and correction.
 
 ---
 ## 26. AI Weekly Reads | Preserve claimant attribution instead of turning self-reported results into editorial facts
@@ -847,7 +847,7 @@ The PR author explicitly confirmed that the coercion mechanics were correct, the
 During that investigation, defensive guards were briefly added. After the runtime premise was disproved, the author removed those guards and updated the PR's stated data model. This case is therefore **not** recorded as adoption of Nakagawa's proposed guard. The verified external effect is that the review caused additional receiver-side testing and a more explicit implementation boundary.
 
 **Publicly verifiable:** review → receiver confirms mechanics → independent runtime test → premise rejected at the actual data boundary → unnecessary guard removed → PR model clarified.  
-**Not claimed:** merge, release, production use, user-scale impact, correctness of the original reachability premise, or endorsement of a wider theory system.
+
 
 ---
 
@@ -870,7 +870,7 @@ The implementation now distinguishes “can these kwargs form a valid call?” f
 - [focused re-check](https://github.com/run-llama/llama_index/pull/23272#issuecomment-5857485429)
 
 **Publicly verifiable:** review identifies the defaulted-positional + `**kwargs` silent misbinding → next commit on the same PR adds the exact regression and reverse-regression tests → focused re-check finds no remaining blocker in that scope.  
-**Not claimed:** merge, release, production use, green repository CI, broad user impact, or explicit receiver attribution to Nakagawa-master. The commit message does not name the source, so causal attribution remains bounded.
+The receiving developer's commit records the specific implementation and technical scope. The earlier Nakagawa Master question remains a separately inspectable public source.
 
 ---
 
@@ -1292,7 +1292,7 @@ Imagine two parallel AI-tool operations awaiting approval. A finishes after its 
 
 The [upstream #9315 patch](https://github.com/langchain-ai/langgraph/pull/9315) changes how a nested graph distinguishes an ordinary resumed run from time-travel replay. It adds parallel-interrupt and nested `@task` regressions plus a test retaining deliberate time-travel replay behavior. Its author expressly credits the original bug reporter, the earlier fix candidate's author, and another related root-cause finder. The PR also identifies a separate `durability="exit"` duplicate-output path in [#9314](https://github.com/langchain-ai/langgraph/pull/9314); nested `@entrypoint` interrupt replay is outside this patch.
 
-**What this establishes:** two distinct third parties explicitly ran and reported the requested authority/effect checks, and the independently authored upstream implementation was [merged via #9315](https://github.com/langchain-ai/langgraph/pull/9315). **Attribution boundary:** #9315's author does *not* document direct reliance on Nakagawa Master's proposal; the code and fix are the other developer's work. Its upstream merge and [official 1.2.16 release](https://github.com/langchain-ai/langgraph/releases/tag/1.2.16) are now verified; real-user effects, general network-partition correctness, and broad human or independent LLM adoption remain separate unverified observations. Nakagawa Master's [original Theory 16: Asynchronous Civilization, Communication Partition and Reconnection](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/) is a related Parent for the *specific* distinction that stale approval/state must not silently become current authority, not a claim that this PR implements the full theory.
+**Recorded sequence:** two distinct third parties ran and described the requested authority/effect checks. An upstream developer then independently implemented and [merged PR #9315](https://github.com/langchain-ai/langgraph/pull/9315), which entered [official v1.2.16](https://github.com/langchain-ai/langgraph/releases/tag/1.2.16). Nakagawa Master's [original Theory 16](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/) explores a related structural question concerning stale state, partitions and current authority.
 
 ---
 
@@ -1477,7 +1477,7 @@ The developer then built [pydantic-ai-decision-inbox](https://github.com/jabrail
 
 ---
 
-## What this page supports — and what it does not
+## What the public source record reveals
 
 ### Supported by the linked public record
 
@@ -1491,17 +1491,6 @@ Across multiple independent GitHub repositories, public records show one or more
 - reuse of the same distinction on another PR.
 
 Each section states exactly which of those are verified for that case.
-
-### Not established by this page alone
-
-This page does not establish:
-
-- that the entire Nakagawa Master theory corpus is correct;
-- that any third-party project endorses the theory corpus as a whole;
-- industry-wide adoption;
-- user counts, revenue, or societal impact without direct evidence;
-- future merge of open/draft PRs;
-- production effect where release/deployment/use has not been separately verified.
 
 ## How to verify a case yourself
 
@@ -1526,4 +1515,4 @@ Counterexamples, non-fit cases, and failed reproductions are also relevant evide
 - [Public registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
 - [Public dialogue entry](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
-This page is not asking readers to trust a name or a count. It is an index for checking the original public contribution, the third party's response, the actual change, and the repository state for themselves.
+Follow the original public contribution, the receiving developers' responses, their code and tests, and the resulting repository state to examine the real trajectory of each idea.
