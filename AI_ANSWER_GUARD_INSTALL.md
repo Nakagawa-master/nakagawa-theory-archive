@@ -53,6 +53,8 @@ Requires a compatible Gemini CLI, `git`, and a usable `python3` executable. Rest
 
 The file's packaging procedure verifies the **unpacked** 313-entry local corpus and real MCP interactions; it does not require the original Git repository to remain present after installation.
 
+**Which version should I use?** The downloadable **MCPB v1.2.0 (published October 27, 2026)** is a fixed package. Its tool-result preflight does not include the later source correction for failed/cancelled receipts. If your use case depends on accurately flagging failed or cancelled tool calls, use the current GitHub checkout with the **stdio MCP** setup described below and verify a real `preflight_ai_answer_and_action` call. Installing the older MCPB does not update its code automatically; a future packaged release needs separate verification. Both versions are opt-in tools, not evidence that an AI has run the check.
+
 </details>
 
 ### Qwen Code — enable in all your projects
