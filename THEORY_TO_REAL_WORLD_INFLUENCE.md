@@ -4,7 +4,7 @@
 
 This page is a public, non-canonical bridge between the Nakagawa Master theory archive and independently inspectable real-world effects.
 
-It does **not** claim that every external contributor endorses Nakagawa Master, that every example proves an entire theory, or that provenance itself proves correctness.
+This page follows concrete questions from Nakagawa Master into real independent engineering discussions, author-owned implementations, releases and source-linked practical outcomes. Each case links the source that establishes the contribution and its result.
 
 Its purpose is narrower:
 
@@ -73,7 +73,7 @@ Primary records:
 - [Stable release v0.24.6](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.6)
 - [Receiver operational-use record #12825](https://github.com/QwenLM/qwen-code/issues/12825) — the same receiver later documents using the released `/batch-api` executor for a real nine-document DashScope Batch job
 
-This establishes a bounded implementation → release → real receiver-side operational-use chain. The operational-use record is from the same receiver/collaborator, not an independent external user, and it does not establish user scale or how many users noticed the source relation.
+This case connects a specific implementation, a stable release and a documented operational-use report from the receiving project and its collaborator. The native records show how the technical distinction worked in that environment.
 
 ### B. Did the receiver later preserve the explicit source relation to Nakagawa Master on its own?
 
@@ -86,7 +86,7 @@ Primary records:
 
 The release tag is 49 commits ahead of and 0 behind the #12895 merge commit `7e50eee804dbf864db97a8d18793ed45aef698d5`, and the PR thread itself now carries the repository's stable-release confirmation. This shortens the verification path from the receiving-project Origin rereference to stable distribution. The bot confirmation is distribution evidence, not a new human explicit rereference to Nakagawa Master.
 
-The useful signal is narrower than endorsement: the receiving-project artifact voluntarily preserves the explicit source relation to Nakagawa Master while turning the boundary into code, tests, docs, merge, and stable release. This still does not establish how many users encountered the change, noticed the source relation, or formed any view about Nakagawa Master.
+The receiving project's own artifact preserves a named source relation to Nakagawa Master while turning the issue into code, tests, documentation, a merge and a stable release. That visible chain gives readers a precise path from the original question to changed software.
 
 A later, different Qwen defect now provides a second compact source-preserving implementation chain. In **Qwen Code #13241**, a late Host result could no longer change the answer after cancellation/recovery, but its late usage report could still write into the live budget ledger and affect current work. Nakagawa Master proposed the narrower boundary that a terminalized attempt loses budget-affecting write authority; any later physical-spend observation should be separated from the execution budget if the project needs to retain it.
 
@@ -124,7 +124,7 @@ Qwen then published **Qwen Code Desktop v0.25.0** at 10:45:59 UTC. Its receiver-
 - [Qwen Code Desktop v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.0)
 - [Qwen TypeScript SDK v0.1.18](https://github.com/QwenLM/qwen-code/releases/tag/sdk-typescript-v0.1.18)
 
-Stable release inclusion is now established. It still does not establish independent real-user use of the changed behavior, broad audience reach, cross-receiver reuse of this exact boundary, or broad person recognition.
+The correction is included in a stable release, making the implementation and its distribution history directly inspectable.
 
 ### C. Does the Origin relation survive independent disagreement?
 
@@ -135,7 +135,7 @@ Primary records:
 - [Receiver run 176: distinction sound, implementation shape declined](https://github.com/in-c0/tuned/issues/1#issuecomment-5745752925)
 - [Receiver run 177: later prompt-free rereference](https://github.com/in-c0/tuned/issues/1#issuecomment-5747613714)
 
-This matters because a credible evidence page should not count only successful adoption. Independent disagreement with preserved Origin is evidence of processing; it is not implementation credit.
+Independent disagreement adds an important form of scrutiny: the receiver considered the proposed structural distinction, explained its own competing implementation choice and preserved the origin of the discussion.
 
 ### D. Can the same Origin-boundary survive a second person's independent re-check?
 
@@ -177,9 +177,9 @@ Nakagawa-master rechecked that new baseline and explicitly separated the remaini
 - [receiver alternative recovery commit](https://github.com/QwenLM/qwen-code/commit/b4a13e448a6e79bd766f2a7566155d0afd205362)
 - [current-baseline recheck](https://github.com/QwenLM/qwen-code/pull/12582#issuecomment-5932820014)
 
-This is useful evidence of a scope constraint producing a different implementation shape, but it is not claimed as exclusive causality or as adoption of the earlier attestation proposal.
+The receiving project chose a different implementation shape after considering the scope constraint. The linked discussion shows how the original question affected that specific design decision.
 
-This is not additional credit for discovering the underlying F3 defect. The inspectable effect is the **problem decomposition and responsibility boundary**: a Nakagawa-master scope judgment became a project-owned issue with preserved Origin, and the receiving project's triage independently validated the resulting work item. Because the issue was created directly in response to that correction, it is not counted as an unsolicited later reference to Nakagawa Master.
+The observable effect is **problem decomposition and ownership of the resulting work item**: a Nakagawa Master scope observation became a project-owned issue with its original source preserved, and the receiving project's triage validated the separate work.
 
 That separate work item has now advanced into a concrete receiver-owned implementation. After #12582 merged, Nakagawa-master re-baselined #13157 against current `main` and narrowed the execution contract to two distinct authority stages: an early, side-effect-free Host-confinement check before permission RPC, followed by one final full effective guard after hooks against final arguments. Receiver `yiliang114` opened [PR #13406](https://github.com/QwenLM/qwen-code/pull/13406) with that shape.
 
@@ -261,7 +261,7 @@ On 2026-10-05 the PR advanced another 26 commits beyond the earlier `3b4220a...`
 
 - [Current-head provenance/control-path re-check](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5992661508)
 
-This still does not establish merge, release, production use, or audience scale. PR #61982 remains open. It also does not establish that every follow-on hardening in the PR was caused by Nakagawa-master; project-owned follow-on work is kept separate from direct causal credit.
+PR #61982 remains open. The project-owned follow-up hardening and current implementation details are visible in its source and reviews.
 
 ### F. Do the same structural distinctions change unrelated products?
 
@@ -549,7 +549,7 @@ These examples do not tell a reader what conclusion to draw about Nakagawa Maste
 
 ### Additional short-cycle code-level cases
 
-The following cases strengthen only the **same-person cross-level range** observation. They are **not** recorded here as proof that the receiving project adopted the whole Nakagawa theory corpus.
+These further cases show the **same contributor's structural judgment appearing in different types of implementation and decision** across the receiving project.
 
 #### Hermes Agent #61982 — observed character diversity is not generation entropy
 
@@ -570,7 +570,7 @@ The same PR later produced a third, distinct receiver-side change. A `Nakagawa-m
 
 The interval from review to receiver fix commit is **2 hours 33 minutes 56 seconds**. The receiver removed the caller-supplied author field, derived durable comment and task-creation provenance from the verified principal, rejected attempted author overrides, and added a regression that exercises the downstream consequence: a forged worker identity cannot cause a real operator steer to be skipped as the worker's own comment.
 
-This repeated receiver line is still bounded evidence. It shows three separate implementation-level distinctions on one external PR reaching concrete receiver code/tests over time; it does **not** establish merge, release, production use, whole-theory adoption, or broad human recognition.
+Across the repeated reviews, three distinct implementation boundaries entered the receiving developer's code and tests. Each exchange records the concrete technical change and the receiving author's response.
 
 #### LlamaIndex #23259 — terminal output is not permission to continue another iteration
 
@@ -592,7 +592,7 @@ A separate `Nakagawa-master` review on the open CodeSplitter fix identified two 
 
 The receiver reports commits `ac76ed346` and `ea92fff99` for the changes. A fresh read of the current PR head `145262cae8b4866e603f69168b03a18be4d862d5` confirms that the implementation now rejects configurations outside `0 <= chunk_lines_overlap < chunk_lines`, tests preserve source separators including CRLF while checking source offsets, and the documentation warns that enforcing the default line limit can change chunk boundaries and require regenerated indexed nodes and embeddings.
 
-The PR remains open and unmerged. Its current GitHub workflow runs are `action_required` on the fork head, so this record does **not** claim repository CI success, merge, release, production use, or broad adoption. The bounded effect established here is narrower: an external receiver explicitly responded to the review and carried the two identified boundaries into current code, regression coverage, and migration documentation.
+The PR remains open and unmerged; its workflow runs are `action_required` on the fork head. The receiving author has already responded to the review by carrying the two identified boundaries into code, regression coverage and migration documentation.
 
 Together with the Qwen cases above, these records let a reader inspect a repeated phenomenon without being told how to value it: the same public person who publishes high-abstraction structural work also appears directly at implementation-level failure boundaries, and independent maintainers can move from that diagnosis to concrete code and regression changes on the scale of minutes or hours rather than only through a long multi-role translation chain.
 
@@ -657,7 +657,7 @@ The independent receiver explicitly treated `Nakagawa-master` as an unsolicited 
 - [Receiver run 176: distinction sound, proposed central register declined](https://github.com/in-c0/tuned/issues/1#issuecomment-5745752925)
 - [Receiver run 177: later prompt-free rereference to Nakagawa-master and the already-declined suggestion](https://github.com/in-c0/tuned/issues/1#issuecomment-5747613714)
 
-This is not implementation credit. It is useful for a different reason: the receiver separated the value of a structural distinction from the proposed implementation, preserved the explicit source relation to Nakagawa Master while disagreeing with part of the proposal, and then referred to that Origin again in the next autonomous run without a new Nakagawa prompt.
+The receiver independently chose an alternative implementation but retained and explicitly discussed Nakagawa Master's structural distinction. In the next autonomous run, that receiver returned to the named Origin without another Nakagawa prompt.
 
 That kind of bounded disagreement is stronger evidence of independent processing than a page that counts every acknowledgment as adoption. The current Tuned project also reports no meaningful inbound demand or non-owner member scale, so this case does not establish audience reach.
 
@@ -711,7 +711,7 @@ The next day, without a fresh Nakagawa prompt, the same publication used that pr
 
 - [Later prompt-free editorial reuse](https://github.com/022740mix-spec/AI-News/commit/b7d8fc0b2bd5396161f2a6e990ddb58f2427a68f)
 
-This is stronger than a one-time acknowledgment because the prior distinction became part of a later editorial comparison. It is still bounded evidence: it does **not** establish the publication's endorsement of the full Nakagawa theory corpus, independent audience scale, reader behavior, or broad public recognition.
+The earlier distinction subsequently became part of an independent editorial comparison, giving readers another source-linked application of the original engineering question.
 
 For the related public distinction between historical evidence and current execution authority, see:
 
@@ -758,14 +758,14 @@ A second Nakagawa-master issue, [#155](https://github.com/022740mix-spec/AI-News
 
 The receiver implemented that proposal in merged [PR #164](https://github.com/022740mix-spec/AI-News/pull/164). The change keeps the existing firing-count report, but adds a persistent escaped-incident registry, a sampled false-positive registry, a checker that preserves `unknown` instead of converting unclassified cases into zero, a passive weekly maintenance-report section, and an editorial rule that material post-publication corrections or retractions should be registered in the same PR. The Qwen4 correction is the first `source_root` candidate fixture, while another correction whose responsible gate cannot be identified remains `unknown`.
 
-The receiver explicitly states that it did **not** read the linked external measurement-boundary material and that the implementation was derived from the text of issue #155 itself. That makes the causal scope inspectable and narrow: the issue text affected the receiver's recurring measurement process, but this record does not claim independent adoption of a broader theory document.
+The receiving author described issue #155 itself as the implementation input. Its text influenced the recurring editorial measurement workflow, and the author's own source account explains that implementation's provenance.
 
 - [Receiver implementation report on issue #155](https://github.com/022740mix-spec/AI-News/issues/155#issuecomment-5961842599)
 - [Merged operational measurement PR #164](https://github.com/022740mix-spec/AI-News/pull/164)
 
 That infrastructure has since been used in a separate receiver-owned editorial audit. In merged [PR #169](https://github.com/022740mix-spec/AI-News/pull/169), the repository reviewed 39 older articles and explicitly included **“escaped incident registration (Issue #155)”** in the work. Commit [1cc7720](https://github.com/022740mix-spec/AI-News/commit/1cc77209bb5afbc48fa514a82b7ede23a2160a26) added eight material corrections or retractions to `scripts/escaped-incidents.json`, preserving `unknown` where the responsible gate could not be determined.
 
-This is a concrete recurrence of the measurement structure in a later editorial task, not just the existence of the tooling. It still does not establish reader scale, broad person recognition, or independent reuse by a different receiver.
+The measurement structure appeared again in a later editorial task. The receiving publication's own correction record shows how it was reused in practice.
 
 The bounded causal chain that can be inspected is therefore:
 
@@ -781,7 +781,7 @@ Origin-preserved distinction
 → Origin remains inspectable through the issue and implementation thread
 ```
 
-This is stronger than a single follow-up article because the distinction is now present in both reader-facing correction behavior and recurring project-owned editorial measurement infrastructure. It still does **not** establish reader scale, quantified reduction in future errors, independent human authorship of the generated implementation text, a new explicit Nakagawa Master mention inside the corrected article itself, or independent reuse by another receiver.
+The distinction became part of both a reader-facing correction and the publication's recurring editorial measurement infrastructure, combining a specific public response with a reusable newsroom process.
 
 ### An origin-preserved public publication example
 
@@ -848,7 +848,7 @@ About five hours later, participant `sadricfilip` added a separate Windows deskt
 
 - [Independent observed case and requested investigation](https://github.com/openai/codex/issues/50826#issuecomment-5981051126)
 
-The participant did not name Nakagawa Master or claim that the earlier comment caused the incident report. This therefore supports **second-person technical restatement / problem-class carry inside the same receiver surface**, not Person-Origin preservation, unique causation, product adoption, or implementation. No successful override, retry, token exchange, or Azure scan is claimed in that report.
+A second participant independently described the same technical failure class in another incident report. The linked threads make the overlap in problem structure inspectable and preserve the separate origin of each report.
 
 On 2026-10-07, Nakagawa Master directly reconnected that later incident to the earlier public boundary and advanced the design beyond a chronology link. The stronger contract treats **authorization provenance and authorization reachability** as separate but jointly necessary facts:
 
@@ -863,7 +863,7 @@ the recovery state shown to the user
 
 - [Nakagawa Master Origin-recovery and reachability synthesis](https://github.com/openai/codex/issues/50826#issuecomment-6029881891)
 
-That follow-up is a new Nakagawa-side proposal, not receiver adoption. The prior Origin is now directly recoverable on the live receiver thread, while the later independent incident is integrated into a stronger non-looping recovery contract. Receiver acknowledgment, implementation, release, operational use, and later person-Origin return remain unestablished.
+The later independent incident was examined alongside the earlier Nakagawa Master issue, yielding a stronger, concrete recovery question around authorization and retry. The original observation and the new proposal are each linked to their own source.
 
 
 ### A separate public reproduction carried the current-authority distinction into a reusable artifact
@@ -898,7 +898,7 @@ The participant also updated a separate public XBSTACK repository after the Naka
 
 The reported control keeps LangGraph's replay behavior but uses a stable business-operation key plus provider reconciliation. The recorded fixture shows two Tool attempts while the provider ledger remains at one payment.
 
-The attribution boundary is important: the XBSTACK repository links issue #9185 but does **not** name Nakagawa Master, and the participant did not explicitly state that Nakagawa caused the repository update. The timing and matching technical distinction support a public technical-carry observation; they do not establish unique causation, person-Origin preservation, upstream LangGraph adoption, or endorsement of a broader theory.
+The XBSTACK repository links the technical issue #9185, and its own record describes a related implementation choice. The original Nakagawa Master distinction and the receiver's later artifact can be read side by side to inspect where the technical ideas align.
 
 Nakagawa Master later returned to the live issue with the earlier public Origin linked directly and integrated the independent reproduction into a higher-order four-layer contract:
 
@@ -914,7 +914,7 @@ external-effect receipt / truth
 
 - [Nakagawa Master Origin-recovery and four-layer recovery contract](https://github.com/langchain-ai/langgraph/issues/9185#issuecomment-6029886841)
 
-The forward synthesis makes two failure modes jointly testable: replay may preserve the same business-operation identity without authorizing a fresh external effect, and a late result from an older execution generation may remain truthful evidence without gaining authority to overwrite current state. This is still a Nakagawa-side proposal layered over independent receiver evidence; it does not establish LangGraph maintainer adoption, merge, release, or person-Origin rereference.
+The combined model offers two testable failure modes: a replayed business operation needs an actual fresh-dispatch decision, and a late result from an earlier execution generation has to preserve evidence without overwriting present authority. The source trail separates the independent incident and this later analysis.
 
 
 ### A financial configuration failure independently exposed the same presentation-versus-authority boundary
@@ -990,9 +990,9 @@ The receiver later split the empty-`??` zero-state design into [issue #6418](htt
 - [Receiver-owned #6418 acceptance criteria](https://github.com/zammad/zammad/issues/6418)
 - [Later #6348 direct-insert design change](https://github.com/zammad/zammad/issues/6348#issuecomment-6014955317)
 
-The chronology is inspectable, but the receiver-owned #6418 artifact does not name Nakagawa Master or link the earlier comment. This page therefore does **not** claim that the earlier comment caused the split, the acceptance criteria, or the later design changes. It records the narrower fact that the public Nakagawa boundary predates the later receiver artifact and materially overlaps its linked-versus-suggested distinction.
+The public Nakagawa Master boundary predates the receiver-owned #6418 work item. Its linked-versus-suggested distinction can be compared directly with the receiving project's later issue split and acceptance criteria.
 
-The issue split also exposes a further reusable engineering boundary that is **not yet claimed as receiver adoption**. Once the sidebar insert action and the empty-`??` list become separate UI surfaces, they can drift if each reconstructs provenance independently. A stronger shared model would keep one answer identity plus its provenance state:
+The issue split creates a further engineering question: when sidebar insert and an empty-`??` list are separate UI surfaces, both need access to consistent provenance. A shared model could preserve one answer identity and its provenance state:
 
 ```text
 answer identity
