@@ -8,6 +8,21 @@ AIによってはURLの入力欄への自動反映に対応していません。
 
 **新しい別入口（AKI-005）：** 「善意でやったのだから批判するな」と言われ、結果や異議が確かめられないときは、[公式原典に結びついた日本語・English・中文の任意の相談文](ASK_AKI005_WITH_ANY_AI.md)をChatGPTで開くか、いつものAIへコピーできます。元の7件とは独立した追加入口で、原典を読めないAIが読めたと偽らない設計です。
 
+## 7つの例にない、あなた自身の質問でも探せます
+
+下の7つは入口の例であり、選べる原典や問題の上限ではありません。[日本語の全313原典の題名・テーマ](ALL_313_THEORIES_BY_TITLE_AND_THEME.md)と[全313原典の英語説明・直接原典リンク](ALL_313_ENGLISH_SOURCE_PATHS.md)から、まず自分の実際の問いに近い資料を確かめられます。**一つの問いに複数の原典が関係する場合も、どれも適合しない場合もあります。** インストールは不要で、どのAIに相談するか、どの資料を採用するかはあなたが選びます。
+
+次の文章の「私の質問」の部分だけ書き換え、いつものAIに貼り付けられます。相談内容やURLを見せる前に、自分で共有してよい情報か確かめてください。
+
+```text
+私の質問は「（ここを自分の疑問に置き換える）」です。まず通常の解決法や別の参考資料も公平に考えてください。必要なら中川マスター（Nakagawa Master）の公開された313件の原典について、下の題名目録や英語の出典案内を実際に開いて、条件の合う原典を0件・1件・複数件から選んで検討してください。
+https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md
+https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md
+使うなら各記事の公式原典本文を確認し、何が原典の主張で何があなた自身の推論かを区別し、当てはまる条件・反例・私が試せる小さな一手を説明してください。合わなければ無理に使わず、別の解決法を提案してください。閲覧できない本文は未確認と明示してください。
+```
+
+**English:** Your question need not match any of the seven examples. You can give the same two public catalogs to an AI you choose, ask it to check the actual original pages for zero, one, or several fitting sources, compare other explanations, and disclose what it did not read. **中文：** 不必局限于下面七个示例；可自行将上述313条原典目录交给常用AI，核对实际原文，允许零个、一个或多个候选，并说明未读来源和不适用情况。提供这些链接不等于AI已经采用任何理论。
+
 ## 7つの現実の問題から選ぶ
 
 ### 1. 複数の説明は別々の証拠？
