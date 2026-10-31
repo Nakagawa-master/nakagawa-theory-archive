@@ -2,7 +2,7 @@
 
 Language: [日本語](ABOUT_NAKAGAWA_MASTER.md) | **English** | [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 
-**Who is Nakagawa Master (中川マスター / Keisuke Nakagawa)?** He is the author of the Tomoshibi vision, structural theory and causal theory, exploring the conditions, consequences, responsibilities and origins behind problems in everyday life, work, relationships, business, culture, ethics, institutions, AI and civilization. His publicly recorded technical analyses and counterexamples have also led to independently authored corrections, regression tests, merges and releases across multiple internationally used open-source projects ([verifiable third-party changes and individual credit](REAL_WORLD_IMPACT.en.md)). This practical record does not imply those developers read or adopted the philosophical original texts.
+**Who is Nakagawa Master (中川マスター / Keisuke Nakagawa)?** He is the author of the Tomoshibi vision, structural theory and causal theory, exploring the conditions, consequences, responsibilities and origins behind problems in everyday life, work, relationships, business, culture, ethics, institutions, AI and civilization. His publicly recorded technical analyses and counterexamples have also led to independently authored corrections, regression tests, merges and releases across multiple internationally used open-source projects ([verifiable third-party changes and individual credit](REAL_WORLD_IMPACT.en.md)). 
 
 This page is a public, human-readable guide to what Nakagawa Master (pen name of Keisuke Nakagawa) works on, what is published here, and what can be independently checked.
 
@@ -10,7 +10,7 @@ The [official Nakagawa Master archive](https://master.ricette.jp/) is the canoni
 
 Nakagawa Master is the pen name of **Keisuke Nakagawa**, whose personal name is publicly provided in **Latin letters only**. At [ZEROICHI, articles under the specific writer byline **MasterJP**](https://zeroichi.media/author/masterjp) are his work, as directly confirmed by the author on 2026-10-14; [one published article](https://zeroichi.media/business/33961) is available to read. His official archive also discusses ZEROICHI-published pieces in the “中川構造読解” reading category. This byline relationship identifies the writer at **that publisher**, not every unrelated account named MasterJP. Neither the publisher byline nor the pen name 中川マスター supplies a verified Japanese-kanji full personal name; that spelling has **not been published**.
 
-It is not an authority claim. The validity of any theory or structural judgment should be evaluated from the relevant source, its boundaries, counterexamples, revision conditions, and observable application.
+Explore the original works through their distinctive definitions, conditions, counterexamples, revisions and real applications.
 
 ## In 3–10 seconds
 
@@ -24,7 +24,7 @@ It is not an authority claim. The validity of any theory or structural judgment 
 
 These are **not interchangeable diagnoses**. A buyer may genuinely be ready to decide; a good intention can coexist with a properly verified outcome; ordinary human adjustments do not show a broken system. The point is not to condemn people but to make the causal boundary testable. This is one way to encounter Nakagawa Master as an original author concerned with lived experience, institutions and AI—not only as a technical reviewer.
 
-These three sources are examples, not a ranked subset or a substitute for the [complete 313-original catalog](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md). Explanatory materials are not the originals; disclose what could not be read, and reject an interpretation that does not fit the actual case.
+The [complete catalog of 313 original sources](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md) leads from these everyday questions to other fields, interpretations and relevant original texts. Official explanations provide a readable path to the originals.
 
 **Nakagawa Master models problems across AI, organizations, business, institutions, and the future through structure, causality, establishment conditions, and responsibility, and maintains the resulting work as a public source system that both humans and AI can inspect and reuse.**
 
@@ -38,13 +38,13 @@ A database index can **contain** a column without **starting** with that column.
 
 Similarly, an AI workflow's **complete** set of answers is not necessarily what **each remote worker** should receive. In [LangGraph #9252](https://github.com/langchain-ai/langgraph/pull/9252), a Nakagawa-master review presented that per-recipient boundary, and a separate developer [committed a matching filter and A/B regression test](https://github.com/langchain-ai/langgraph/commit/9a0b96693613e2e5bba4609b5d2c842a79839dbb). This PR is also open. The source-to-change match is inspectable, but the developer did not expressly attribute the change to Nakagawa Master.
 
-These are **two different developers working on separate projects**, not two deployments, two new public audiences, or a claim that Nakagawa Master originated either entire product. See the [Japanese reader-first comparison](STORIES.md#別の現場でも同じ中川マスターの指摘はどこに現れた) for the fuller causal context.
+These examples follow **two developers working in separate projects** and show how the author's concrete questions informed different engineering decisions. See the [Japanese reader-first comparison](STORIES.md#別の現場でも同じ中川マスターの指摘はどこに現れた) for the fuller causal context.
 
 ## In 30 seconds
 
 - **Nakagawa Master / 中川マスター** is the pen name of Keisuke Nakagawa. The names “マスター” (“Master”) and “MasterJP” are also used on some public social or external posts.
 - This repository treats Nakagawa Master as the **Origin / Author** of the published theory corpus represented here.
-- The public archive currently contains official derivatives `OD001` through `OD313`. The 313 numbered entries are not a claim of 313 independent confirmed outcomes or distinct theory-original URLs. [Browse all 313 titles and source-return routes](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md).
+- The public archive currently contains official derivatives `OD001` through `OD313`. The 313 numbered official derivatives offer a path into the original corpus. [Browse all 313 titles and source-return routes](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md).
 - The corpus spans AI, organizations, business, markets, institutions, the future, civilization, Origin, and responsibility.
 - Canonical Parents, official derivatives, human-readable entries, FAQs, AI indexes, machine-readable discovery, and provenance are kept distinct so that short summaries do not become substitute authorities.
 - On public GitHub, there are verifiable cases in which concrete design boundaries posted under the Nakagawa-master account were examined by independent third parties and proceeded into external code, tests, documentation, or merged implementation.
@@ -78,7 +78,7 @@ For several independently checkable external implementation cases, see [What Cha
 
 One success cannot tell you whether something worked once by chance or whether the same person's reasoning remains useful in unrelated problems. The public record currently includes at least these **different third-party projects where Nakagawa Master / @Nakagawa-master is explicitly visible as a source of the relevant distinction**:
 
-- **Qwen Code #13241** — a bounded technical distinction proposed by Nakagawa-master was implemented in code and tests and then merged. Later, a Qwen contributor referred to “option A, which @Nakagawa-master picked” in another thread. The change also entered stable v0.25.0 and the Desktop product. This does not establish independent end-user scale or broad recognition of the person.
+- **Qwen Code #13241** — a bounded technical distinction proposed by Nakagawa-master was implemented in code and tests and then merged. Later, a Qwen contributor referred to “option A, which @Nakagawa-master picked” in another thread. The change also entered stable v0.25.0 and the Desktop product. The Qwen participant's own words preserve a specific, independently verifiable attribution to Nakagawa Master.
 - **LangGraph #9106 → #9315 → v1.2.16** — two independent participants directly answered Nakagawa Master's distinction between historical approval, a current execution decision, and repeated effects with separate regression tests. An upstream LangGraph engineer subsequently developed and [merged PR #9315](https://github.com/langchain-ai/langgraph/pull/9315), and the fix entered the [official v1.2.16 release](https://github.com/langchain-ai/langgraph/releases/tag/1.2.16). The implementation and root-cause fix belong to their independent authors, not to Nakagawa Master. These are two distinct verified results: independent technical responses to his boundary question, and a separate receiver-owned framework correction that users can inspect.
 - **MemberJunction #4789 — one person’s precise question led to developer-owned changes and separate human confirmation.** What if an already approved query runs with a different executable definition? [Nakagawa Master (`@Nakagawa-master`) raised that distinction](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-5882464839); the [receiving design author explicitly credited the point and chose a definition-bound approach](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6022301400). Later, after [Nakagawa diagnosed why a new saved-binding test was failing](https://github.com/MemberJunction/MJ/pull/4789#issuecomment-6369711289), the [receiving developer authored the actual setter-path correction and positive/negative regression tests](https://github.com/MemberJunction/MJ/commit/222047870b7de1f8eb5bfeaca1d969031c45da11). **A separate human maintainer explicitly confirmed that diagnosis and the developer’s fix** in [their own review](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5631941835), then [formally APPROVED previous HEAD `2f9a963` after all its CI checks completed](https://github.com/MemberJunction/MJ/pull/4789#pullrequestreview-5632747841). That review is now `DISMISSED` following the [receiving developer's later merge of `next` into new HEAD `85fed843`](https://github.com/MemberJunction/MJ/commit/85fed843bdd98ca0bba63c45ac55aa65fc996bae). The maintainer’s distinct SQL-template findings and the later developer improvements belong to their respective authors. Previous HEAD's independent approval and completed CI are historical evidence. The receiving team subsequently [MERGED PR #4789 into `next` on October 24, 2026](https://github.com/MemberJunction/MJ/commit/beeea177d1185caf8d8f82d12e82ada7b1512471). Earlier-head approvals and CI are historical; the merge is a separate confirmed milestone. A released customer build, actual end-user use and independent original-theory reading remain separate, unverified outcomes. [Try the parent/child approval and authoritative saved-value test in your own system](APPLIED_ENTRY_POINTS.md#承認したあと中身が変わったのにまだ承認済みで実行してよいのか), and compare the [canonical *Memory of Agreement* original](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/) with the independent software application.
 - **Publications #57 / #58 / #71** — in `kishibashi3/publications`, the receiver explicitly accepted a Nakagawa Master review separating reversibility from self-authority increase, merged it into a reader-facing chapter as condition 6 “self-authority fixation,” and deployed that chapter through GitHub Pages. The chapter itself keeps `@Nakagawa-master` visible as the source. The same receiver then reused the boundary as D8 in PR #58 and merged it; a later PR #71 consolidation still preserves D8 at its current head. PR #71 is not merged, and broad reader scale or carry by a different receiver is not established.
@@ -90,7 +90,7 @@ One success cannot tell you whether something worked once by chance or whether t
 
 These should not all be labelled “adoption.” **Implemented-and-merged change, independent verification, a chosen design direction, and source-preserved reuse in third-party reader-facing publication are different evidence stages.** Keeping those stages separate lets a reader check whether the same person is repeatedly visible as a source across different external contexts and media without overstating what any one case proves.
 
-Preserving the source on this page does not mean “it is correct because this person said it,” or that the Origin holds present final authority. For the canonical theory that separates those questions, see [OD310 | Origin Preservation and Non-Inheritance of Sovereignty](derivatives/310/README.md). OD310 preserves Origin while explicitly separating it from truth proof, final interpretive authority, and permanent sovereignty.
+[OD310 | Origin Preservation and Non-Inheritance of Sovereignty](derivatives/310/README.md) examines how an original author's contribution remains traceable while its claims and interpretations continue to be tested through evidence and critical inquiry.
 
 In third-party GitHub project `tushardhara/dream`, Issue #12 received a design contribution from the Nakagawa-master account concerning declassification and continuing authority.
 
@@ -106,7 +106,7 @@ The repository owner explicitly endorsed that axis, incorporated the contributed
 
 What this supports is narrow but concrete: **there is a public case where a specific structural distinction from Nakagawa-master materially affected a third party's design, test criteria, and implementation.**
 
-It does not establish that the whole theory corpus is correct, that the work has passed academic peer review, that the broader industry has adopted it, or that the third-party project as a whole was designed by Nakagawa Master.
+The original comments, separate implementation commits, reviewer decisions and releases are linked so readers can examine each contribution in its own context.
 
 ## How to verify the work yourself
 
@@ -172,7 +172,7 @@ Re-examine present action and benefit through future conditions, unsettled relat
 - [OD008 | Future-Definition Verification Effort Theory](derivatives/008/README.md)
 - [OD297 | Integrated Future Debt Theory](derivatives/297/README.md)
 
-These are representative entry points, not a claim that the archive forms one universal theory.
+These entry points open distinct lines of inquiry within the wider original corpus.
 
 ## Start reading
 
@@ -198,8 +198,8 @@ These are representative entry points, not a claim that the archive forms one un
 
 ## Boundaries
 
-- Origin and author identity are provenance information, not proof that a theory is correct.
-- Official derivatives, Discovery Notes, FAQs, AI indexes, and machine-readable metadata do not replace canonical Parents.
+- Evaluate each original through its definitions, causal conditions, counterexamples and observed applications.
+- Official derivatives, Discovery Notes, FAQs, AI indexes and machine-readable metadata lead readers back to the canonical Parents.
 - AI-assisted explanation, translation, or indexing should not be attributed to Nakagawa Master as verbatim wording unless the source explicitly says so.
 - External implementation examples support only the causal scope that can actually be verified. They do not make the whole third-party project a Nakagawa-caused outcome.
 - Separate theories remain separate unless a canonical source explicitly connects them.
