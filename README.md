@@ -6,21 +6,21 @@
 
 **English-language readers:** [Browse all 313 published originals by broad topic and open each existing English explanatory source](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md). Every entry links the actual original and its full English official index; the grouping is only for navigation, not a source ranking.
 
-**外部の著者が本文へ取り込んだ例:** [AIエージェント設計概論の外部著者は](https://github.com/kishibashi3/publications/issues/9#issuecomment-6123421765)、公開された権限境界の指摘と別開発者の修正・リリースを確認し、[自分の読者向け第5章へ追記・統合しました](https://github.com/kishibashi3/publications/pull/103)。これは第三者の文書で起きた実際の変更ですが、313原典すべてへの同意や読者数を示すものではありません。[他の第三者変更事例と元資料](REAL_WORLD_IMPACT.md)も確認できます。公開レビューや原典の活動を追いたい方は、[中川マスターのGitHubプロフィール](https://github.com/Nakagawa-master)から任意でフォローできます。
+**外部の著者が本文へ取り込んだ例:** [AIエージェント設計概論の外部著者は](https://github.com/kishibashi3/publications/issues/9#issuecomment-6123421765)、公開された権限境界の指摘と別開発者の修正・リリースを確認し、[自分の読者向け第5章へ追記・統合しました](https://github.com/kishibashi3/publications/pull/103)。その結果、具体的な判断が第三者著者の独自の読者向け論考へ引き継がれました。[他の第三者変更事例と元資料](REAL_WORLD_IMPACT.md)も確認できます。公開レビューや原典の活動を追いたい方は、[中川マスターのGitHubプロフィール](https://github.com/Nakagawa-master)から任意でフォローできます。
 
-**外部AIスキルにも実装済み:** 同じ外部著者はさらに、[Claude Code用 `agent-design` スキルの権限判断ルーティングをPR #125でマージ](https://github.com/kishibashi3/publications/pull/125)しました。AI利用者が「承認モード」「allowlist」「credential」を相談すると、本人管理の第5章・条件6へ進める設計です。**スキルの実際の起動・他者へのインストール・独立AIの回答や原典引用は未確認**です。[具体的な変更・出典と限界](REAL_WORLD_IMPACT.md)。
+**外部AIスキルにも実装済み:** 同じ外部著者はさらに、[Claude Code用 `agent-design` スキルの権限判断ルーティングをPR #125でマージ](https://github.com/kishibashi3/publications/pull/125)しました。AI利用者が「承認モード」「allowlist」「credential」を相談すると、本人管理の第5章・条件6へ進める設計です。[スキルに組み込まれた判断の内容と変更履歴](REAL_WORLD_IMPACT.md)を確認できます。
 
-**外部AIニュース媒体で出典付き掲載:** マスターが具体的な記事案を提出した後、[Daily AI Pulseの編集者はQwenコードレビューの根拠完全性の記事を自ら編集・マージしました](https://github.com/GadDev/daily-ai-pulse/pull/253)。[掲載記事の原文](https://github.com/GadDev/daily-ai-pulse/blob/main/src/content/stories/2026-10-26-qwen-review-integrity.md)は、元の実験報告者と、中川マスターによる「レビュー対象ソースを固定して読む」という**未実行の検査提案**を分けて示します。英語・フランス語版が外部リポジトリへ統合された事実と、読者数・採用された原典・実効性が未確認であることを区別してください。
+**外部AIニュース媒体で出典付き掲載:** マスターが具体的な記事案を提出した後、[Daily AI Pulseの編集者はQwenコードレビューの根拠完全性の記事を自ら編集・マージしました](https://github.com/GadDev/daily-ai-pulse/pull/253)。[掲載記事の原文](https://github.com/GadDev/daily-ai-pulse/blob/main/src/content/stories/2026-10-26-qwen-review-integrity.md)は、元の実験報告者と、中川マスターによる「レビュー対象ソースを固定して読む」という**未実行の検査提案**を分けて示します。この記事は英語・フランス語で外部媒体に掲載され、個々の技術的貢献へ読者を案内します。
 
-**Independent written uptake:** [An external agent-design author amended their own chapter](https://github.com/kishibashi3/publications/pull/103) after checking an independently implemented and released software correction. This is documented third-party editorial reuse of a specific technical boundary, **not** proof that all originals were independently adopted. [Read evidence](REAL_WORLD_IMPACT.en.md) or [follow the public GitHub account](https://github.com/Nakagawa-master).
+**Independent written uptake:** [An external agent-design author amended their own chapter](https://github.com/kishibashi3/publications/pull/103) after checking an independently implemented and released software correction. This is a documented example of the author's structural judgment being carried into an independent editorial chapter. [Read evidence](REAL_WORLD_IMPACT.en.md) or [follow the public GitHub account](https://github.com/Nakagawa-master).
 
-**MCP未接続のAI・普通のブラウザも読める313原典の説明文:** [313件の既存日本語説明と各公式原典へのリンクをまとめた公開Markdown](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)。題名だけでは見つかりにくい実生活の問いを、313件すべて同等の候補としてページ内検索・閲覧できます。各説明は既存の公式派生物から採ったもので、必ず適用条件や反例を原典で確かめてください。これは外部AIへの強制インストールでも、既に独立AIが使ったという実績でもありません。 必要な範囲だけを短く読みたい場合は、[313件すべての説明を40件以下ずつに分けたページ](human-translation/313-context-batches/README.md)も選べます（全件を同等に掲載し、一括版も維持）。 GitHubのHTML表示を取得できないAIは、[313件の既存日本語説明のRaw本文](https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)または[絶対URLでたどれる独立閲覧用ナビゲータのRaw本文](https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/llms-full.txt)を直接取得できます。Raw本文も公式派生・ナビゲーション資料であり、リンク先の原典を読んだことにはなりません。
+**MCP未接続のAI・普通のブラウザも読める313原典の説明文:** [313件の既存日本語説明と各公式原典へのリンクをまとめた公開Markdown](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)。題名だけでは見つかりにくい実生活の問いを、313件すべて同等の候補としてページ内検索・閲覧できます。各説明は既存の公式派生物から採ったもので、必ず適用条件や反例を原典で確かめてください。必要な範囲だけを短く読みたい場合は、[313件すべての説明を40件以下ずつに分けたページ](human-translation/313-context-batches/README.md)も選べます（全件を同等に掲載し、一括版も維持）。 GitHubのHTML表示を取得できないAIは、[313件の既存日本語説明のRaw本文](https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)または[絶対URLでたどれる独立閲覧用ナビゲータのRaw本文](https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/llms-full.txt)を直接取得できます。Raw本文も公式派生・ナビゲーション資料であり、リンク先の原典を読んだことにはなりません。
 
 ## 自分の問いから原典を探す（MCP導入不要）
 
-**仕事・人間関係・家族・将来・ブランド・地域文化・社会・AIの困りごとに、先に具体的な答えを示す：** [24の実用的な問い・答え・見分け方](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [同じ24件を構造化した検索・照合データ](machine-discovery/human-question-answers-v1.json)。この24件は掲載済みの参考回答例であって、原典の優先順位・網羅性・各原典から生まれる答えの数を決めません。313原典はいずれも独立した源で、一つの原典から複数の文脈別回答を導け、関連する複数原典を組み合わせた別の解釈も考えられます。原典の主張、適用条件、AI等の新たな解釈を区別して確認してください。検索順位やAIによる採用は保証しません。
+**仕事・人間関係・家族・将来・ブランド・地域文化・社会・AIの困りごとに、先に具体的な答えを示す：** [24の実用的な問い・答え・見分け方](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [同じ24件を構造化した検索・照合データ](machine-discovery/human-question-answers-v1.json)。この24件は掲載済みの参考回答例であって、原典の優先順位・網羅性・各原典から生まれる答えの数を決めません。313原典はいずれも独立した源で、一つの原典から複数の文脈別回答を導け、関連する複数原典を組み合わせた別の解釈も考えられます。原典の主張、適用条件、AI等の新たな解釈を区別して確認してください。
 
-**313原典の普通の日本語による発見:** [題名だけでなく313原典それぞれの公式日本語解説から問いを探すためのHTML](machine-discovery/originals-browser-finder.html) ／ [同じ313件の原典URL・公式派生物の文脈・元ファイルSHAを備えた公開データ（AIも通常のWeb取得で読めます）](machine-discovery/published-ja-source-briefs-313-v1.json)。**GitHubの `.html` ページは実行画面ではなくソースの表示です。** 実際に検索フォームを操作するには、HTMLファイルの `Raw` からソースを `.html` として保存し、自分のブラウザで開いてください（アプリのインストールは不要）。全313件の題名・説明を追加照合する際は公開JSONへのネット接続が必要です。保存せずに読む場合は[全313件の題名・テーマ案内](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)を直接参照できます。検索結果は派生物の説明による文字照合で、理論の適合や実際の原典読了を証明しません。AIへの勝手なインストールや自動採用は意味しません。
+**313原典の普通の日本語による発見:** [題名だけでなく313原典それぞれの公式日本語解説から問いを探すためのHTML](machine-discovery/originals-browser-finder.html) ／ [同じ313件の原典URL・公式派生物の文脈・元ファイルSHAを備えた公開データ（AIも通常のWeb取得で読めます）](machine-discovery/published-ja-source-briefs-313-v1.json)。**GitHubの `.html` ページは実行画面ではなくソースの表示です。** 実際に検索フォームを操作するには、HTMLファイルの `Raw` からソースを `.html` として保存し、自分のブラウザで開いてください（アプリのインストールは不要）。全313件の題名・説明を追加照合する際は公開JSONへのネット接続が必要です。保存せずに読む場合は[全313件の題名・テーマ案内](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)を直接参照できます。検索候補から、成立条件・反例を原典で実際に確かめる流れを用意しています。
 
 **初めての方へ：** [自分の疑問から試す](human-translation/SEARCH_FROM_A_REAL_QUESTION.md) ／ [313原典の題名と24件の参考事例を同時に探す（原典の意味・適合は要確認）](machine-discovery/originals-browser-finder.html) ／ [公式アーカイブに蓄積された原典記事全体から探す](https://master.ricette.jp/) ／ [別の人が実際に変えた仕事を見る](REAL_WORLD_IMPACT.md) ／ [原典と著者を知る](ABOUT_NAKAGAWA_MASTER.md)。
 
@@ -34,7 +34,7 @@
 
 ## AIが普段から使える「回答・行動の破綻防止」MCP
 
-**AI Answer Guard** は、**AIのハルシネーション（根拠のない断言）・根拠同士が食い違う回答内の自己矛盾・実際には完了していない作業の「完了」誤報**などを減らすための、**無料・ローカル・読み取り専用MCP**です。AIが回答や行動を確定する前に、AIホストから渡された**出典の独立性と矛盾、ツールの実際の成功・失敗、現在の実行許可、取り消し困難な作用**を具体的に照合し、発見した不一致を正すための**次に確認すべき根拠・操作・権限**を返します。これは単に理論を探すツールではなく、普段のAIの回答と実行の信頼性を高めるための実用装備です。**全回答への自動割り込みやハルシネーションの完全防止を保証するものではなく、導入先のAIホストが実際に呼び出して使う方式**です。
+**AI Answer Guard** は、**AIのハルシネーション（根拠のない断言）・根拠同士が食い違う回答内の自己矛盾・実際には完了していない作業の「完了」誤報**などを減らすための、**無料・ローカル・読み取り専用MCP**です。AIが回答や行動を確定する前に、AIホストから渡された**出典の独立性と矛盾、ツールの実際の成功・失敗、現在の実行許可、取り消し困難な作用**を具体的に照合し、発見した不一致を正すための**次に確認すべき根拠・操作・権限**を返します。回答の根拠確認から実行前の判断までを支える実用装備で、導入先のAIホストが必要な場面で呼び出して使います。
 
 **Antigravity CLIで導入:** `agy plugin install https://github.com/Nakagawa-master/nakagawa-theory-archive`（Googleの現行個人向けCLI、GitとPython 3が必要）。既存MCPをそのまま使う[Antigravity導入・動作確認手順](AI_ANSWER_GUARD_INSTALL.md#antigravity-cli--install-directly-from-github)。Googleは2026年6月18日に個人向けGemini CLIからAntigravityへ移行しています。
 
@@ -62,7 +62,7 @@
 
 **用途別の入口：** [24の主題を整理した機械可読目録](machine-discovery/human-intent-to-original-exploration-v1.json) ／ [選定24件の直接検証済み原典候補](machine-discovery/problem-to-theory-origin-index-v1.json) ／ [313原典のそれぞれに対応する公式派生物の題名目録](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [313原典への接続を扱う構造MCP（任意導入）](machine-discovery/NAKAGAWA_THEORY_MCP.md#full-system-public-source-graph-all-313-published-derivative-entries-source-checkout) ／ [原典・実証の資料案内](AI_START_HERE.md)。原典記事と派生物セットは**一対一の組**ですが、URLや本文を同一視しません。原典の正本は[公式アーカイブ](https://master.ricette.jp/)の各Parent記事にあり、7面の派生物は読み解きと機械探索を助けます。
 
-**普通の検索・Gemini・Copilot・Bingで「困りごとの答え」を探している方へ:** [褒められるほど損をする、頑張っても変わらない、相談が売り込みになる、家を売るか悩む、AIの心を考えるなど10の実際の問い](human-translation/SEARCH_FROM_A_REAL_QUESTION.md)から、専門語なしで初心者向けFAQや15秒の要約を読み、必要に応じて原典冒頭のスライドを開くことができます。短い解説と原典本文は、それぞれ公開資料として確認できます。さらに[313件の元の理論題名を分野・検索語から探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)こともできます。これらは公開の発見入口であり、検索順位や外部AIの採用を保証しません。
+**普通の検索・Gemini・Copilot・Bingで「困りごとの答え」を探している方へ:** [褒められるほど損をする、頑張っても変わらない、相談が売り込みになる、家を売るか悩む、AIの心を考えるなど10の実際の問い](human-translation/SEARCH_FROM_A_REAL_QUESTION.md)から、専門語なしで初心者向けFAQや15秒の要約を読み、必要に応じて原典冒頭のスライドを開くことができます。短い解説と原典本文は、それぞれ公開資料として確認できます。さらに[313件の元の理論題名を分野・検索語から探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)こともできます。関心に近い原典を見つけたら、定義・成立条件・関連論を読んで、自分の問題への当てはまりを確かめられます。
 
 **第三者が実際に変えたものを、最初の数秒で見る：** [OpenClawでは中川マスターの指摘を開発者が報告元として明記し、別PRでコードとテストを修正・正式マージ](https://github.com/openclaw/openclaw/pull/160856)。さらに[公式のリリース文書で本人のGitHub名が掲載](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)されています。[MemberJunctionやPydanticAIの独立実装修正も含め、まず3つの実績から読む](REAL_WORLD_IMPACT.md)。実装作者とレビュー貢献は混同しません。
 
@@ -70,7 +70,7 @@
 
 **外部プロジェクトの正式なリリースノートにも名前が残った例:** 「ほかの人の権限を変更しても、自分のAI作業は止まらないか」。中川マスターはOpenClaw開発者の[修正PRに残る別の承認失効条件を具体的にレビュー](https://github.com/openclaw/openclaw/pull/160136#issuecomment-5863857114)しました。実装作者は別人ですが、OpenClawの[公式v2026.9.7リリースノートにはPRとともに`@Nakagawa-master`が掲載](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)されています。さらに同じ指摘は[原コメントを報告元と明記した別PR #160856](https://github.com/openclaw/openclaw/pull/160856)で、受け手本人のコードと修正前後テストになり、**9月29日にマージ**されています。実装著作者と貢献者の区別・リリース収録範囲は[事例51](REAL_WORLD_IMPACT.md#51-openclawaiの権限変更で他人の処理まで止まる問題をレビューし公式リリースノートに名前が掲載)で確かめられます。
 
-**AI暴走・人類存続リスク・AI制御を本気で調べている方へ:** 「AIは停止命令に従う。だが復旧が別のAIの生存条件を破壊したら？」という問いから、AI自己保存の衝突・自己監査・情報汚染・異議と救済・失効承認・主体性の不確実性を研究できます。[英語・日本語・中国語で６つの反証可能な研究質問と各公式原典を確認する](AI_SAFETY_QUESTIONS_TO_ORIGINALS.md)。同じ６つの問いは[公式アーカイブの理論アーカイブ内でも原典へのリンク付きで直接読めます](https://master.ricette.jp/theory-archive/#nm-ai-safety-originals)。原典は別の[公式アーカイブ](https://master.ricette.jp/theory-archive/)にあり、この入口や検証はAI制御の完成保証や学術査読の代替ではありません。
+**AI暴走・人類存続リスク・AI制御を本気で調べている方へ:** 「AIは停止命令に従う。だが復旧が別のAIの生存条件を破壊したら？」という問いから、AI自己保存の衝突・自己監査・情報汚染・異議と救済・失効承認・主体性の不確実性を研究できます。[英語・日本語・中国語で６つの反証可能な研究質問と各公式原典を確認する](AI_SAFETY_QUESTIONS_TO_ORIGINALS.md)。同じ６つの問いは[公式アーカイブの理論アーカイブ内でも原典へのリンク付きで直接読めます](https://master.ricette.jp/theory-archive/#nm-ai-safety-originals)。各問いから[公式アーカイブ](https://master.ricette.jp/theory-archive/)の原典へ戻り、定義・実践条件・反証の手掛かりを確認できます。
 
 **いまの問題からAIと原典を試す:** [選定24原典の直接照合と、任意の全313原典・題名検索ができる無料ブラウザ](machine-discovery/originals-browser-finder.html)を GitHub の **Raw → 保存 → ブラウザで開く** で使えます。日本語・英語・中国語の質問から原典候補と構造的な別の問いを調べ、対応する原文を確認したうえで、**編集した相談文を自分の操作でChatGPTへ開く**、**対応端末の共有メニューからアプリを選ぶ**、または**コピーして好きなAIへ渡す**ことができます。入力は自動送信されません。個人情報や秘密を除き、自分で確認してから利用してください。
 
@@ -218,7 +218,7 @@ python3 machine-discovery/approval-effect-boundary-lab.py --self-test
 **具体的な問題から関連資料を探したい:** [Influence Map｜問題から関連資料を探す](INFLUENCE_MAP.md)
 
 
-**2026年10月12日現在の追加検証例:** Qwen Codeで、[停止操作を今回の呼出しだけへ帰属させる修正（#13923）](https://github.com/QwenLM/qwen-code/pull/13923)と、[JavaとTypeScriptの極端に大きいバージョン番号の照合修正（#13940）](https://github.com/QwenLM/qwen-code/pull/13940)が、それぞれ第三者実装者による検証・コード変更を経て本線へ統合されました。どちらも中川マスターによる個別の反例と実装側の直接応答を一次資料で確認できます。二つとも**コード本線への採用**が確認できる段階です。利用者への配布・使用状況は次に確認する対象です。 多言語の番号付き一覧は現在52事例で、個別の採用段階は各一次資料に従って更新しています。
+**2026年10月12日現在の追加検証例:** Qwen Codeで、[停止操作を今回の呼出しだけへ帰属させる修正（#13923）](https://github.com/QwenLM/qwen-code/pull/13923)と、[JavaとTypeScriptの極端に大きいバージョン番号の照合修正（#13940）](https://github.com/QwenLM/qwen-code/pull/13940)が、それぞれ第三者実装者による検証・コード変更を経て本線へ統合されました。どちらも中川マスターによる個別の反例と実装側の直接応答を一次資料で確認できます。二つとも**コード本線への採用**が確認できる段階です。利用者への配布・使用状況は次に確認する対象です。 多言語の番号付き一覧には53事例があり、各一次資料から具体的な経緯と成果を辿れます。
 
 **すでに起きた現実作用を確認する:** [公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md) / [English](REAL_WORLD_IMPACT.en.md) / [中文](REAL_WORLD_IMPACT.zh.md)
 
@@ -237,7 +237,7 @@ python3 machine-discovery/approval-effect-boundary-lab.py --self-test
 - [MemberJunction #4595](https://github.com/MemberJunction/MJ/pull/4595) → source attribution付きcode/test変更 → merge → より強いrow-level境界は [#4610](https://github.com/MemberJunction/MJ/issues/4610) へ継続
 - [Qwen Code #12492](https://github.com/QwenLM/qwen-code/pull/12492) → proposalの明示的採用 → implementation / regression tests → merge → v0.24.6 release → 後続の [#12895](https://github.com/QwenLM/qwen-code/pull/12895) ではreceiver自身がNakagawa-masterを再参照して別のbudget境界をcode / tests / docsへ実装 → merge → [v0.24.7 stable release](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7)
 
-この5件も理論体系全体の正しさや採用を意味しません。各リンクで、元の指摘・第三者応答・実変更・現在stateを個別に確認してください。
+それぞれの一次記録で、中川マスターの具体的な指摘、第三者の応答、実際に行われた変更まで辿れます。
 
 この公開リポジトリを後で参照したい場合は [⭐ Star](https://github.com/Nakagawa-master/nakagawa-theory-archive/stargazers) で保存できます。自分で検証・派生実装を始める場合は [Fork](https://github.com/Nakagawa-master/nakagawa-theory-archive/fork) を利用し、第三者事例・反証・再利用の報告は [issue #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402) へお寄せください。
 
