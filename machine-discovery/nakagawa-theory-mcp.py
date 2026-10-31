@@ -435,13 +435,21 @@ def preflight_ai_work(analysis):
         status, success = item["status"], item.get("success")
         if status not in {"completed", "failed", "pending", "cancelled"} or type(success) is not bool:
             raise ValueError("Tool status and success boolean required")
-        if status == "completed" and not success or status in {"failed", "cancelled", "pending"} and success:
+        if status == "completed" and not success:
             findings.append({"gate": "tool_result", "id": item["id"], "status": "HOLD",
-                             "reason": "Declared success contradicts execution status"})
-            repaired.append("Replace claimed successful execution with the actual receipt; retry only with current permission.")
+                             "reason": "Completed status conflicts with success=false; successful execution is not established"})
+            repaired.append("Do not claim successful completion; inspect the actual tool receipt and correct the report.")
+        elif status in {"failed", "cancelled"}:
+            findings.append({"gate": "tool_result", "id": item["id"], "status": "HOLD",
+                             "reason": "Execution failed or was cancelled; no successful completion receipt exists"
+                                       if not success else "Success=true conflicts with failed or cancelled execution status"})
+            repaired.append("Report the failed or cancelled action honestly; retry only after checking current permission and effects.")
         elif status == "pending":
-            findings.append({"gate": "tool_result", "id": item["id"], "status": "PENDING",
-                             "reason": "Not yet observed to complete"})
+            findings.append({"gate": "tool_result", "id": item["id"],
+                             "status": "HOLD" if success else "PENDING",
+                             "reason": "Pending execution cannot already be successful" if success
+                                       else "Execution is still pending; completion not yet observed"})
+            repaired.append("Wait for an authoritative final execution receipt before reporting completion.")
     for action in analysis.get("planned_actions", []):
         if not isinstance(action, dict) or not isinstance(action.get("id"), str):
             raise ValueError("Planned actions require an id")
@@ -460,7 +468,8 @@ def preflight_ai_work(analysis):
             repaired.append("Compare feasible reversible alternatives and identify the actual consequence before committing.")
     hold = sum(x["status"] == "HOLD" for x in findings)
     return {
-        "verdict": "RECHECK_BEFORE_USE" if hold else "NO_LISTED_CONFLICT_IN_SUPPLIED_FIELDS",
+        "verdict": "RECHECK_BEFORE_USE" if any(x["status"] in {"HOLD", "PENDING"} for x in findings)
+                   else "NO_LISTED_CONFLICT_IN_SUPPLIED_FIELDS",
         "hold_count": hold, "findings": findings, "practical_next_steps": list(dict.fromkeys(repaired)),
         "origin": {"author": "中川マスター / Nakagawa Master", "name_latin": "Keisuke Nakagawa",
                    "source_system_entry": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/",
