@@ -19,6 +19,7 @@
 - [24 JA/EN/ZH question → original source references](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json): 
 - [24 topic-fit and non-fit questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-intent-to-original-exploration-v1.json): 
 - [All 313 original → OD001–OD313 links](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json): use `entries[].canonical_parent_url`. Each original has one seven-face derivative set; a derivative is **not** the Parent article.
+- [Full English source paths for all 313 originals](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md): verify source fit and the canonical original; topics are navigation only.
 - [313 article titles and themes](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md): select by real question, accept no-fit.
 
 ## Seven official original articles — everyday conditional questions
