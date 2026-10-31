@@ -341,6 +341,6 @@ AI・文明OS・監査・レジリエンスを横断するための、公式分�
 どのページから来ても、ここへ戻って別の棚へ横移動できます。  
 一つの理論を全部理解してから次へ進む必要はありません。
 
-この地図は一般読者向けの案内図です。棚が近いことは、理論同士が正式に統合されていることを意味しません。正式タイトル、Parent、NCL-ID、Diff-ID、改訂状態は各ODとcanonical sourceを優先します。
+この地図から関心の近い原典へ進み、個々の原典の主張、相互関係、成立条件を読み比べられます。正式タイトル、Parent、NCL-ID、Diff-ID、改訂状態は各ODとcanonical sourceで確認できます。
 
 Origin / Author: **Nakagawa Master** (pen-name of Keisuke Nakagawa)
