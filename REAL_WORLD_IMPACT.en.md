@@ -2,9 +2,9 @@
 
 Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_IMPACT.zh.md)
 
-**Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** These are public, source-linked outcomes—not self-ratings or claims of writing somebody else's code.
+**Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**53 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. Cases at earlier or declined stages are also kept and not counted as successful adoption. The code authors remain the receiving developers.
+**53 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -12,7 +12,7 @@ You can also explore [Nakagawa Master's own GitHub activity](https://github.com/
 
 - **OpenClaw | An unrelated agent's configuration edit invalidated another person's pending approval.** Nakagawa Master [reported the exact remaining problem and a regression case](https://github.com/openclaw/openclaw/pull/160136#issuecomment-5863857114). The maintainer **explicitly cited that report**, [implemented and merged the separate fix](https://github.com/openclaw/openclaw/pull/160856), and [official release documentation named `@Nakagawa-master`](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md). See case 51.
 - **MemberJunction | Matching an ID is not authorization to overwrite a record.** The receiving team implemented the distinction and published [v6.1.2](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2). See case 3.
-- **PostHog | Numbers asserted by a producer are not the same as measurements made by the product.** The receiving team split the work into [three merged successor PRs](https://github.com/PostHog/posthog/pull/107795) with recorded dev / US / EU production deployments. Customer rollout is not proven. See case 1.
+- **PostHog | Numbers asserted by a producer are not the same as measurements made by the product.** The receiving team split the work into [three merged successor PRs](https://github.com/PostHog/posthog/pull/107795) with recorded dev / US / EU production deployments. See case 1 for the current feature-flag and receiving deployment details.
 - **Qwen Code | A previously recorded stop is not proof that this particular AI call stopped.** Receiving developer `wenshao` implemented and [merged the correction on October 12](https://github.com/QwenLM/qwen-code/pull/13923). See case 47.
 - **PydanticAI | Skipping a duplicate AI history request can still leave unwanted writes.** The developer [reproduced and fixed the issue](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879); [the fix merged](https://github.com/pydantic/pydantic-ai/pull/9982). See case 41.
 
@@ -22,14 +22,14 @@ Nakagawa Master is the pen name of Keisuke Nakagawa. On social media, the name �
 
 This page is a **public verification guide**. It links public GitHub comments or reviews made under the `Nakagawa-master` account to later changes that can be checked in third-party repositories.
 
-It is not an impact score, an authority claim, or a claim that an entire project or theory system was adopted. Each case is separated into:
+Each case traces:
 
 1. the original public contribution;
 2. the third party's response or change;
 3. the current repository state;
-4. what remains unverified.
+4. the receiving project's recorded state and next public result.
 
-A comment is not the same as an implementation. An implementation is not the same as a merge. A merge is not the same as a release, deployment, or verified use.
+Follow the full course of each contribution: initial question, independent engineering decision, code and tests, integration, release and observed use.
 
 ## What these distinctions can mean in practice
 
@@ -80,7 +80,6 @@ That suggestion/action layer now continues in successor #107802. Its current sco
 PRs #107879, #107795, and #107802 merged as one stack on 2026-10-02. PostHog's deployment bot records the same deployment workflow reaching dev at 22:42 UTC, prod-us at 22:57, and prod-eu at 23:12. The successor PR bodies preserve the #92252 stack lineage, but they do not explicitly re-name `Nakagawa-master`.
 
 **Publicly verifiable here:** origin review → receiver-owned successor stack → server-side measurement, Measured by PostHog / Unverified, producer-measurement distrust, internal scout-only proposal capability, per-version outcome reading → tests/browser verification → merge → dev/prod-us/prod-eu deployment.  
-**Not established here:** customer feature-flag rollout, verified production-user use, a fresh voluntary person-Origin rereference in the successor PRs, exclusive causality for the successor changes, or broad human recognition.
 
 ---
 
@@ -99,7 +98,6 @@ The public contribution proposed that content which was once sanitized or approv
 The repository owner explicitly accepted the distinction and the later PR added rights/lineage revalidation, revocation-related handling, and negative tests.
 
 **Publicly verifiable here:** comment → owner response → code / tests → merge.  
-**Not established here:** user scale or broad adoption outside this project.
 
 ---
 
@@ -123,7 +121,6 @@ A public certification report also records an upgrade of an existing database co
 That same report identifies a separate regression, so this page does **not** claim that v6.1.2 was problem-free overall.
 
 **Publicly verifiable here:** review → independent confirmation → code/tests/docs → merge → backport → release → external upgrade report for the relevant collision condition.  
-**Not established here:** fleet-wide results or market-wide adoption.
 
 ---
 
@@ -141,7 +138,6 @@ The issue contribution distinguished framework-local node identity from upstream
 The third-party PR explicitly cites the `Nakagawa-master` compatibility contract and adds implementation/tests that preserve `document_id` and `document_name` in metadata without changing the local `TextNode.id_` policy.
 
 **Publicly verifiable here:** explicit source reference plus third-party code/tests.  
-**Not established here:** merge, release, or deployment.
 
 ---
 
@@ -168,7 +164,6 @@ The authors later implemented the relevant fixes. On #4487, named re-exports now
 - [#4524 independent re-verification](https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5252195432)
 
 **Publicly verifiable here:** named independent confirmation followed by author implementation/regressions, origin-reviewer closure on #4487, and independent execution re-verification on #4524.  
-**Not established here:** release/downstream use of #4487, merge of #4524 (closed unmerged), or intellectual priority for the general API-compatibility principle.
 
 ---
 
@@ -193,7 +188,6 @@ The same maintainer later used the same source-category distinction on #102686. 
 - [#102686 deploy status](https://github.com/PostHog/posthog/pull/102686#issuecomment-5732760371)
 
 **Publicly verifiable here:** the initial review → code/tests/UI change → merge → deployment, followed by reuse of the same distinction on another PR → separate approval → merge → dev/prod-us/prod-eu deployment.  
-**Not established here:** user-scale outcomes or further reuse by a different person/context.
 
 ---
 
@@ -211,7 +205,6 @@ The review identified that historical attendance should be evaluated against the
 The owner described the issue as a real bug, opened a dedicated follow-up, changed code/tests, and later hardened the regression fixture after another review so the old implementation would actually fail.
 
 **Publicly verifiable here:** review → owner confirmation → follow-up PR → code/tests → further test hardening → merge.  
-**Not established here:** release, production deployment, or user scale.
 
 ---
 
@@ -229,7 +222,6 @@ If a provider accepts a message but the response is lost, treating the result as
 The repository owner described this as a real state-machine defect and added an `outcome_unknown` state, reconciliation, dispatch idempotency, and regression coverage for response loss.
 
 **Publicly verifiable here:** review → defect confirmation → state-machine/provider-contract/test changes → merge.  
-**Not established here:** production deployment against a real provider or user scale.
 
 ---
 
@@ -246,7 +238,6 @@ The public contribution proposed keeping the historical consent event while sepa
 The repository owner explicitly identified the source and restated the distinction as part of the project's protocol design.
 
 **Publicly verifiable here:** comment → owner acknowledgment and protocol-level adoption.  
-**Not established here:** schema/code/tests, merge, release, or real-data operation.
 
 ---
 
@@ -265,7 +256,6 @@ The external author named `@Nakagawa-master`, described the proposal as better U
 The base PR itself is merged, but that merge does not mean this proposal was implemented.
 
 **Publicly verifiable here:** named review plus explicit author acknowledgment and follow-up intent.  
-**Not established here:** a follow-up issue/PR, code/tests/UI implementation, or release.
 
 ---
 
@@ -292,7 +282,6 @@ PR #1291 was then merged and included in public release `v0.59.10`. The release 
 - [release / publication / installed-smoke record](https://github.com/damianvtran/local-operator/pull/1291#issuecomment-5745312290)
 
 **Publicly verifiable here:** issue → dedicated third-party PR explicitly closing that issue → code/tests → multiple review/remediation rounds → origin-side closure review → merge (`b1fc1f42`) → release-note inclusion → package publication → installed smoke.  
-**Not established here:** effect at broader user scale, user counts, or independent downstream reuse beyond this release.
 
 ---
 
@@ -358,7 +347,6 @@ The 6.1.3 certification record treated this backport as a security **cert-blocke
 **Source attribution and remaining scope:** The #4610 author's explicit acknowledgment that its issue framing largely came from `@Nakagawa-master` is primary evidence of a voluntary Origin re-reference. The #5241/#5242 authors are **not independently shown to have read or acted on that earlier review**, so the newer fix is a traceable matching receiving result rather than proof of direct causation. It narrows stable **row-key disclosure** to row-filtered readers; entity-level event existence and `Timestamp` remain observable. The stronger #4610 contract of per-row authorization and withholding unauthorized mutation timings is not yet fully implemented or closed. Live customer use and the LTS port's release are unverified.
 
 **Publicly verifiable here:** review → independent code/test response and explicit Origin attribution → #4595 merge → stronger follow-up issue → #4712 LTS merge/v6.1.4 release → a separate developer's #5242 row-key fix, live WebSocket contrast test and merge.  
-**Not established here:** full #4610 per-row/timing contract, #5696 merge or release, v6.1.4 production deployment, or user-scale impact.
 
 ---
 
@@ -376,7 +364,6 @@ A `Nakagawa-master` review found a vocabulary mismatch in that rewrite path. The
 After that review, commit `029ae44d53` explicitly added the missing `target_url` short-link rewrite path. The current merged implementation resolves both direct estimate short codes and other short codes whose target URL embeds an estimate link, strips the unsafe literal link, preserves the receipt, and records the rewritten estimate id. The PR later merged as `5cecd7627b70d739d7feaf6f45fd784b5741efc3`.
 
 **Publicly verifiable here:** review → matching code/test change for the reported short-link mismatch → merge.  
-**Not established here:** production deployment, user-scale outcomes, or whole-project endorsement of any broader theory.
 
 ---
 
@@ -397,7 +384,6 @@ The PR author explicitly named `@Nakagawa-master`, confirmed that the routes had
 The later #3326 contribution mapped that work onto the current branch: one shared backend deletion policy, evaluated against current locked target state before mutation, with policy refusals separated from operational deletion failures.
 
 **Publicly verifiable here:** review → author acknowledgment/restatement → dedicated child work item preserving the boundary → source-level implementation guidance.  
-**Not established here:** code/test implementation of #3326, merge, release, deployment, or user-scale effect.
 
 ---
 
@@ -428,7 +414,6 @@ A fresh read of current `main` after #289 still shows three earlier fail-closed 
 - [post-merge follow-up showing the three remaining regressions on current main](https://github.com/lundus88/fieldgis-reference/issues/289#issuecomment-5740198762)
 
 **Publicly verifiable here:** public contribution → third-party governance implementation → independent approval → merge → continued use of the same current-authority model across domain/email readiness, provider selection, and subscription evidence.  
-**Not established here:** sole causation, production launch, customer-scale effect, independent reuse by a different person, industry-wide reuse, or endorsement of the broader theory corpus.
 
 ---
 
@@ -456,7 +441,6 @@ content-stable payload reuse
 together with a regenerated-chunk-id regression that makes the choice observable.
 
 **Publicly verifiable here:** review → explicit third-party confirmation/restatement → dedicated maintainer-level work item.  
-**Not established here:** the #23083 contract decision, follow-up code/tests, merge, release, deployment, or user-scale effect.
 
 ---
 
@@ -500,7 +484,6 @@ The carry continues in later PR #71. While consolidating the receiver's AA docum
 **Independent AI-skill routing carry (verified October 31, 2026):** The same third-party author independently owned [issue #81](https://github.com/kishibashi3/publications/issues/81) and [merged PR #125](https://github.com/kishibashi3/publications/pull/125) ([exact merge commit](https://github.com/kishibashi3/publications/commit/f502a469ced9a406b39c71ff6e5504d470ef5d6a)). Their optional [Claude Code `agent-design` skill](https://github.com/kishibashi3/publications/blob/main/plugins/thinking-shelf/skills/agent-design/SKILL.md) now routes ordinary questions about approval mode, allowlists, credentials and loosening an agent's own privileges to their chapter 05, condition 6, and states the self-authorization boundary in its operational rules. This is a **receiver-owned conversion of an existing credited chapter into an AI skill's discovery and decision pathway**, not evidence that an unrelated AI actually ran it. The receiver's [own review](https://github.com/kishibashi3/publications/pull/125#issuecomment-6519048300) explicitly leaves four end-to-end activation/decision prompts untested. Neither external installations, AI answers, independent reading/citation of a canonical Nakagawa Parent, nor a second recipient are established.
 
 **Publicly verifiable here:** origin-preserved review → third-party restatement → dedicated reader-facing implementation → merge / Pages deployment → reuse as a consistency rule in another document inside the same receiver → merge → preservation of the same D8 in a later receiver-owned document-system rewrite head.  
-**Not established here:** merge of PR #71, that #58/#71 are additional independent public-site publications, carry by a different receiver, broad reader response, mass human recognition, or endorsement of the full theory corpus.
 
 ---
 ## 18. PostHog | Bind recurring-agent approval to the instructions the human actually reviewed
@@ -527,7 +510,6 @@ A later third-party commit, `244ff417`, explicitly says the scheduled agent had 
 The commit does not identify the `Nakagawa-master` review as its sole cause. The bounded claim is that a matching third-party implementation change is publicly visible after the review.
 
 **Publicly verifiable here:** review → third-party code / UI / test change; the instructions shown to the human are now the value used to create the recurring agent.  
-**Not established here:** merge, release, production deployment, user scale, or exclusive causality.
 
 ---
 
@@ -562,7 +544,6 @@ The commit delimits interpolated fields as untrusted data and adds a separate se
 This case is stronger than a mere temporal sequence: the receiver's own commit explicitly attributes the two concrete hardenings to the `@Nakagawa-master` review. That is evidence about this specific artifact change, not a claim of intellectual priority over the general security principle or adoption of the broader theory system.
 
 **Publicly verifiable here:** review → explicit third-party agreement/restatement → implementation commit explicitly naming the review as the source of the two hardenings → concrete reader-facing teaching change.  
-**Not established here:** merge, release/deployment, reader scale, intellectual priority over the general principle, or endorsement of the full theory corpus.
 
 ---
 
@@ -601,7 +582,6 @@ The receiver introduced `_PAST_START` so the old `now()` predicate and the occur
 Both PRs are merged. In this case, receiver-side commits explicitly attribute both the concrete implementation correction and the regression-evidence correction to `Nakagawa-master` review feedback.
 
 **Publicly verifiable here:** historical-state boundary review → receiver implementation commit explicitly naming the review → second review finding a weakness in the proof tests → receiver test correction explicitly naming the review → merge.  
-**Not established here:** production deployment, user-scale effect, intellectual priority over the general temporal-data principle, or endorsement of the full theory corpus.
 
 ---
 
@@ -634,7 +614,6 @@ Receiver commit `dfd4588d` changed the collector to preserve both sides of a nam
 A later reviewer confirmed that this required finding was fixed, and PR #4487 merged on 2026-09-24.
 
 **Publicly verifiable here:** Nakagawa review → independent third-party confirmation of the same hole → receiver code/test commit explicitly attributing the report to Nakagawa-master → focused re-check → later review confirmation → merge.  
-**Not established here:** downstream adoption or user scale of this particular fix, a release of the fix into other repositories using `@memberjunction/standards`, intellectual priority over the general API-compatibility principle, or endorsement of the full theory corpus.
 
 ---
 
@@ -701,7 +680,6 @@ The recurrence continued in a new publication cycle on 2026-09-30 UTC:
 This is evidence of the receiver reusing the durable rule in its own later public production cycle, not merely agreeing once in the source issue. The later articles do not explicitly rereference Nakagawa Master, so this is not counted as a new Nakagawa Master source rereference.
 
 **Publicly verifiable here:** Origin-preserved proposal → explicit receiver adoption and causality statement → durable rule merge → later main/feed/sitemap publication that visibly applies the evidence-lineage distinction.  
-**Not established here:** quantified error-rate reduction, reader/audience scale, reuse by another receiver, a later explicit source rereference in that article, or endorsement of the wider theory corpus.
 
 ---
 
@@ -815,7 +793,6 @@ The receiver then opened a [separately human-authorized 01C work item](https://g
 
 **Publicly verifiable here:** Nakagawa-master's stage-evidence distinction → explicit receiver adoption and durable contract → independently operated gate verification → merged runner implementations → **two** human-authorized real worker attempts stopped before publication → receiver-diagnosed failures → receiver-owned 01B and 01C repairs merged. The 01C live contained probe and any later worker/publication remain unverified.
 
-**Not established here:** that the whole runner or theory system originates from Nakagawa-master, exclusive causation of all downstream code, a successful real contained check after the 01C merge or a third worker run, production adoption, broad end-user use, later prompt-free person-Origin rereference, or mass human recognition.
 
 The “each stage needs its own evidence; later observations must not back-fill earlier stages” structure connects to the public problem domain of [Human-Descendant AI Civilization Theory Vol. 8 — epistemic integrity, evidence lineage and hostile-information resilience](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/). This link is a reusable canonical return path, not a claim that the receiver adopted the whole theory.
 
@@ -851,7 +828,6 @@ The receiver explicitly replied that **“the regression was real and the diagno
 PR #31 updates both summary prompts so self-reported quantitative/comparative results keep claimant attribution unless an independent evaluation is identified, removes overclaiming evidence signals from Reading Priority, adds audit terms, and pins the rule with regression tests.
 
 **Publicly verifiable here:** first edition correction → same regression recurred later → review identified it → receiver explicitly accepted the diagnosis → edition #30 corrected and merged → the same boundary was implemented in generation prompts, priority rules, audit, and tests in merged PR #31.  
-**Not established here:** automatic reuse in the next fresh weekly run without another Nakagawa prompt, reader scale or behavior change, unaided human authorship of the receiver response/workflow, or whole-theory endorsement.
 
 ---
 
@@ -988,7 +964,6 @@ The PR computes the worst case from the request body's output cap plus thinking 
 PR #12895 merged at 2026-09-28T10:01:56Z. Stable [Qwen Code v0.24.7](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7) was published at 2026-09-29T14:02:21Z. The release tag is 49 commits ahead of and 0 behind merge commit `7e50eee804dbf864db97a8d18793ed45aef698d5`, and the release notes link PR #12895. The explicit Nakagawa-master rereference remains in the receiving-project PR body; this page does not claim the person name is embedded in the binary itself.
 
 **Publicly verifiable here:** concrete hard-budget semantic finding → a receiving-project later PR voluntarily re-references Nakagawa-master as the source → the exact boundary is implemented in code / tests / docs → non-author maintainer approval → merge → stable v0.24.7 release with a traceable release-notes-to-PR path.  
-**Not established here:** independently verified operational use of v0.24.7, user scale, propagation to another human receiver, broad person recognition, or whole-theory endorsement.
 
 
 ---
@@ -1019,7 +994,6 @@ A different participant then reused the same scope-identity-versus-admission dis
 - [second-person restatement / extension](https://github.com/BerriAI/litellm/issues/43190#issuecomment-5873550150)
 
 **Publicly verifiable here:** structural distinction → receiver states the per-agent direction → implementation PR → another participant independently restates and extends the problem structure.  
-**Not established here:** merge, release, production use, user scale, explicit Nakagawa-master Nakagawa Master source attribution by the second participant, or endorsement of a wider theory system.
 
 → [Practical use](PRACTICAL_USE.md#例6複数ai-agentが同じtraceを共有している)  
 → [Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#10-resource-accounting--scope-ownership--shared-trace-is-not-shared-agent-budget)  
@@ -1085,7 +1059,6 @@ This does **not** add Nakagawa credit for discovering the underlying F3 defect. 
 **Publicly verifiable here:** concrete authority boundary → receiver Origin-preserving restatement → contract/UI change → independent second-person recheck carrying the Nakagawa-master boundary → later real-machine validation and receiver fixes → a later scope decision becomes project-owned issue #13157 with preserved Origin and independent root-cause verification.  
 **Current merge state:** [#12582](https://github.com/QwenLM/qwen-code/pull/12582) merged on 2026-10-02 at [45ee202c](https://github.com/QwenLM/qwen-code/commit/45ee202cb14c171c73185a3dbbd89ed1203f2604). The separate #13157 ordering proposal is not thereby implemented.
 
-**Not established here:** stable release, real-user scale, implementation/merge of #13157, or broad person recognition. Because #13157 was created as a direct receiver response to the scope correction, it is not counted here as an unsolicited later reference to Nakagawa Master.
 
 → [Human entry story](human-translation/entry-stories/09-same-share-different-runtime.md)  
 → [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
@@ -1128,7 +1101,6 @@ The receiver replied **“Agreed: the authenticated principal and the caller-cho
 Nakagawa-master re-checked current head `cfbbc91244` and reported no remaining blocker on this provenance/control-path point.
 
 **Publicly verifiable here:** atomicity review → receiver code/test change → exact regression → focused re-check → continuing return from the same receiver → secret-strength boundary explicitly accepted and implemented → a third provenance/control-path boundary explicitly accepted and implemented with an operational regression → focused current-head re-check closed that scope.  
-**Not established here:** merge/release of PR #61982, production use, user scale, broad person recognition, or exclusive causality for the whole PR.
 ---
 
 ## 35. Qwen Code | A terminalized attempt no longer keeps budget-affecting write authority
@@ -1151,7 +1123,6 @@ The receiver's own PR description explicitly says that the current revision impl
 **Publicly verifiable here:** scoped external technical recommendation → receiver code/tests → actual Web Shell + native Host verification → receiver-side explicit source continuity → human review → merge.  
 **Verified extension (October 23):** Qwen's fix shipped in [stable CLI v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0) and [Desktop v0.25.0](https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.0). After the developer's own post-merge [renewed source mention](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808), a separate [AI-News editor checked the published primary records](https://github.com/022740mix-spec/AI-News/issues/177) and [independently wrote and merged a news article and feed entry](https://github.com/022740mix-spec/AI-News/pull/193). Its article explicitly describes option A as technical advice by external contributor `@Nakagawa-master`, within the receiving PR's stated scope. This is actual cross-person and cross-media editorial carry with bounded person-Origin attribution, **not** an article authored by Nakagawa or proof of whole-theory adoption.
 
-**Not established here:** independent end-user operation of this specific feature, verified readers of the new article, recurring public recognition, autonomous unrelated AI reading of an original Parent, or adoption of the whole Nakagawa theory system.
 
 → [Human-readable entry](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)  
 → [Current-Authority Reuse Kit §17](CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work)
@@ -1194,7 +1165,6 @@ Nakagawa Master used that new case to refine the testable contract around contin
 - [authority-input continuity A/B regression](https://github.com/openai/codex/issues/50769#issuecomment-5996528096)
 
 **Publicly verifiable here:** structural distinction from Nakagawa Master → explicit diagnostic reuse by a different participant → another independent real incident from a separate participant → refinement into a more testable decision-trace regression.  
-**Not established here:** OpenAI/Codex maintainer adoption, product implementation, merge, release, fix, user-scale impact, broad person recognition, source attribution by the second incident reporter, or a common root cause across all incidents.
 
 → [Human/problem-first entry](APPLIED_ENTRY_POINTS.md)  
 → [Current-Authority Reuse Kit §18](CURRENT_AUTHORITY_REUSE_KIT.md#18-you-approved-it--but-the-delegated-task-still-says-user-cancelled)  
@@ -1302,7 +1272,6 @@ At that point Hosted Managed delivery was active while ordinary/local Managed ac
 - [follow-up adapted to the current implementation stage](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035698005)
 
 **Publicly verifiable here:** a concrete Nakagawa Master architecture distinction → Qwen project triage explicitly preserved the Origin and reconstructed the distinction in its own current issue analysis → the distinction remained an unresolved acceptance decision.  
-**Not established here:** human maintainer approval, implementation of the A/B/shared-gate matrix, a passing independence result for either path, merge, release, independent end-user use, broad person recognition, or adoption of the wider Nakagawa theory system.
 
 → [human problem-first entry](APPLIED_ENTRY_POINTS.md)  
 → [Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md)  
@@ -1483,7 +1452,6 @@ The AI-News account response restated that distinction and its seven-step observ
 The response footer says `Generated by Claude Code`. This page therefore records it as a **receiver-account restatement and evaluation**, not as independently human-authored adoption or implementation.
 
 **Publicly verifiable here:** the receiver account restated the distinction, evaluated it as useful, and stated a bounded future-reference condition.  
-**Not established here:** operating-rule adoption, code/workflow change, merge, independently human-authored response, or operational use.
 
 This example is included to avoid treating “a response occurred” as equivalent to “the proposal was adopted.”
 
