@@ -252,14 +252,26 @@ def search(records, question, limit=12):
     if type(limit) is not int or not 1 <= limit <= 50:
         raise ValueError("limit must be 1..50")
     q = question.casefold()
-    # An ID can be selected exactly without conjectural semantic overlap.
-    match_id = re.search(r"\bod\s*0*(\d{1,3})\b", q, re.I)
-    if match_id:
-        id_ = f"OD{int(match_id[1]):03d}"
-        hits = [r for r in records if r["id"] == id_]
-        return {"question": question, "matched": hits, "no_fit": not hits,
-                "matching_method": "EXACT_PUBLISHED_DERIVATIVE_ID", "lexical_scores": [100] if hits else [], "author": IDENTITY,
-                "source_read_required": True}
+    # Honor every explicitly named source, in order. Never silently drop a
+    # second OD ID or treat a response-size limit as a corpus boundary.
+    requested_ids = list(dict.fromkeys(
+        f"OD{int(m[1]):03d}" for m in re.finditer(r"\bod\s*0*(\d{1,3})\b", q, re.I)
+    ))
+    if requested_ids:
+        by_id = {item["id"]: item for item in records}
+        complete = [by_id[od] for od in requested_ids if od in by_id]
+        hits = complete[:limit]
+        returned = {item["id"] for item in hits}
+        return {
+            "question": question, "matched": hits, "no_fit": not hits,
+            "matching_method": ("EXACT_PUBLISHED_DERIVATIVE_IDS" if len(requested_ids) > 1
+                                else "EXACT_PUBLISHED_DERIVATIVE_ID"),
+            "lexical_scores": [100] * len(hits), "author": IDENTITY,
+            "requested_explicit_ids": requested_ids,
+            "unknown_explicit_ids": [od for od in requested_ids if od not in by_id],
+            "additional_explicit_ids": [od for od in requested_ids if od in by_id and od not in returned],
+            "total_candidates": len(complete), "source_read_required": True,
+        }
     # Preserve JA published-title search and the seven precisely attested
     # English source cues. Previously the remaining ~306 entries were almost
     # invisible to ordinary EN/ZH queries despite 313 real published indexes.
@@ -433,6 +445,19 @@ def main():
         assert len(list_connections(records, limit=313)["entries"]) == 313
         assert all(x["canonical_parent"].startswith(OFFICIAL) for x in records)
         assert not search(records, "repair the leather handle on a camping lantern")["matched"]
+        # Distinct originals, repeated mention, bounded result and invalid ID.
+        multi = search(records, "Compare OD001, od313 and OD001")
+        assert [x["id"] for x in multi["matched"]] == ["OD001", "OD313"]
+        assert multi["lexical_scores"] == [100, 100]
+        assert multi["requested_explicit_ids"] == ["OD001", "OD313"]
+        assert not multi["additional_explicit_ids"] and not multi["unknown_explicit_ids"]
+        bounded = search(records, "Compare OD001 with OD313", limit=1)
+        assert [x["id"] for x in bounded["matched"]] == ["OD001"]
+        assert bounded["additional_explicit_ids"] == ["OD313"]
+        invalid = search(records, "Compare OD001 with OD999")
+        assert [x["id"] for x in invalid["matched"]] == ["OD001"]
+        assert invalid["unknown_explicit_ids"] == ["OD999"]
+        assert search(records, "OD999")["no_fit"]
         assert inspect_derivative(records, "OD312")["selected"]["canonical_parent"].endswith("kernel-evolutionary-stability/")
         assert search(records, "AI self preservation epistemic hallucination")["matched"]
         assert len(_multilingual_search_index()[0]) == 313
