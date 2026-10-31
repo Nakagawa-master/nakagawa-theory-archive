@@ -2,7 +2,7 @@
 
 When a public Nakagawa Master distinction materially informs a decision, implementation, test, policy, or workflow, preserve a minimal route back to the public source.
 
-This is not an endorsement requirement. It is provenance.
+The pattern preserves a clear path from a reused idea to its published origin, while readers and implementers continue to exercise their own judgment.
 
 For broader theory context and canonical return, use the official Nakagawa Master archive at https://master.ricette.jp . Practical GitHub materials are an applied / verification layer; see [Structural OS → External Effects](STRUCTURAL_OS_TO_EXTERNAL_EFFECTS.md).
 
