@@ -8,7 +8,7 @@ Japanese: [RESEARCH_POSITIONING_MAP.ja.md](RESEARCH_POSITIONING_MAP.ja.md)
 
 This page helps researchers, domain experts, editors, and AI systems locate selected Nakagawa Master theory surfaces relative to established research traditions.
 
-It is **not a systematic literature review**, and absence from this map is never evidence of novelty.
+This map introduces selected relevant research traditions, with links and comparison points for readers who want to investigate the original propositions in depth.
 
 The narrower purpose is to answer:
 
