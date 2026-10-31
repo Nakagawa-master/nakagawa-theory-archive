@@ -255,14 +255,16 @@ def answer_question(question, explore=False):
     # An explicitly selected OD001..OD313 is source identity, not a fuzzy
     # topic signal. Do not discard that Parent when the rest of the question
     # also happens to match a curated technical example.
-    requested_od = re.search(r"\bod\s*0*(\d{1,3})\b", question, re.I)
-    if requested_od:
-        exact = whole_structure_fallback(question, limit=1)
-        expected = f"whole_structure:OD{int(requested_od[1]):03d}"
-        if exact and exact[0]["route_id"] == expected:
-            original = exact[0]["canonical_original"]
-            combined = exact + [item for item in combined
-                                if item["canonical_original"] != original][:4]
+    requested_ods = list(dict.fromkeys(
+        f"OD{int(m[1]):03d}" for m in re.finditer(r"\bod\s*0*(\d{1,3})\b", question, re.I)
+    ))
+    if requested_ods:
+        # Exact source identity outranks fuzzy examples. An omitted result
+        # stays visible to the client, not secretly replaced by a top sample.
+        exact = whole_structure_fallback(question, limit=min(len(requested_ods), 50))
+        selected = {x["canonical_original"] for x in exact}
+        combined = exact + [x for x in combined if x["canonical_original"] not in selected]
+        combined = combined[:max(5, len(exact))]
     # A human can ask two related but DIFFERENT questions in one turn. A
     # curated 24-route match must not hide an explicitly distinctive published
     # Parent-title phrase among the other 313 originals. This is an additional
@@ -272,7 +274,7 @@ def answer_question(question, explore=False):
     # allow just one strongly corroborated translated-index lexical candidate
     # when the existing 313-Parent graph scored it well above normal threshold.
     # Both are candidate pointers; neither is proof an original was read.
-    if combined and not requested_od:
+    if combined and not requested_ods:
         text = question.casefold()
         title_anchor = bool(re.search(r"[\u3040-\u30ff\u3400-\u9fff]{6,}", question))
         english_anchor = not re.search(r"[\u3040-\u30ff\u3400-\u9fff]", question) and len(words(question)) >= 8
@@ -299,7 +301,7 @@ def answer_question(question, explore=False):
     # No curated 24-question result may prevent a genuinely differentiated
     # candidate from the complete 313-Parent pool from being shown. This is
     # parallel candidate discovery, NOT proof of cross-source causal fit.
-    if combined and not requested_od:
+    if combined and not requested_ods:
         existing = {x.get("canonical_original") for x in combined}
         for candidate in whole_structure_fallback(question, limit=12):
             if candidate["canonical_original"] in existing:
@@ -339,6 +341,15 @@ def answer_question(question, explore=False):
             "canonical_original means do not attribute a canonical theory."
         ),
     }
+
+    if requested_ods:
+        returned = {item["route_id"] for item in combined
+                    if item["route_id"].startswith("whole_structure:")}
+        output["explicit_source_requests"] = requested_ods
+        output["unreturned_explicit_source_requests"] = [
+            od for od in requested_ods if f"whole_structure:{od}" not in returned
+        ]
+        output["explicit_source_display_limit"] = 50
 
     if explore:
         # Use the original catalog result even when its Parent also appears
@@ -749,6 +760,19 @@ def serve():
 def self_test():
     data = read_routes()
     assert len(data["routes"]) >= 10
+    # Comparative questions need both exact canonical sources, with a
+    # real invalid-ID and repeated-ID negative control.
+    multi = answer_question("Compare OD001 and OD313 for their differences")
+    assert [x["route_id"] for x in multi["matching_routes"][:2]] == [
+        "whole_structure:OD001", "whole_structure:OD313"], multi
+    assert multi["explicit_source_requests"] == ["OD001", "OD313"]
+    assert not multi["unreturned_explicit_source_requests"]
+    invalid = answer_question("Compare OD001 and OD999")
+    assert invalid["matching_routes"][0]["route_id"] == "whole_structure:OD001"
+    assert invalid["unreturned_explicit_source_requests"] == ["OD999"]
+    duplicate = answer_question("Compare OD001 with od001")
+    assert sum(x["route_id"] == "whole_structure:OD001"
+               for x in duplicate["matching_routes"]) == 1
     j = answer_question("AI news fact checking and citation provenance")
     assert not j["no_fit"]
     assert any(x["route_id"] == "multiple_urls_one_evidence_root" for x in j["matching_routes"])
