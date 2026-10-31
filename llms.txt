@@ -18,8 +18,9 @@
 - [313 public Japanese summaries and canonical Parent pointers](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/published-ja-source-briefs-313-v1.json): derivative context, verify actual Parent, no forced adoption.
 - [24 JA/EN/ZH question → original source references](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json): 
 - [24 topic-fit and non-fit questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-intent-to-original-exploration-v1.json): 
-- [All 313 original → OD001–OD313 links](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json): use `entries[].canonical_parent_url`. Each original has one seven-face derivative set; a derivative is **not** the Parent article.
-- [313 article titles and themes](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md): select by real question, accept no-fit.
+- [All 313 original → OD001–OD313 links](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json): Parent URL per original; derivatives differ.
+- [313 English originals](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md): source links.
+- [313 Japanese titles](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md): check fit.
 
 ## Seven official original articles — everyday conditional questions
 - [Multiple accounts, one source? / 複数の説明は別々の証拠？](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/): Check independent evidence roots, not repeated links.
