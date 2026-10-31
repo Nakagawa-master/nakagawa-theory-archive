@@ -24,8 +24,21 @@ assert len(links) == len(bridges), f"Expected exactly seven opt-in links, got {l
 # Independently readable/copyable prompts must exist in rendered Markdown;
 # encoded URL payloads alone are not a portable human-to-other-LLM fallback.
 copyable = re.findall(r"```text\n(.*?)\n```", page, re.S)
-assert len(copyable) == len(bridges), f"Expected seven human-copyable text blocks; found {len(copyable)}"
-for b, link, human_prompt in zip(bridges, links, copyable):
+assert len(copyable) == len(bridges) + 1, (
+    f"Expected one general 313-source question and seven examples; found {len(copyable)}"
+)
+general_prompt, *seven_example_prompts = copyable
+assert "私の質問は" in general_prompt
+assert "0件・1件・複数件" in general_prompt
+assert "合わなければ無理に使わず" in general_prompt
+assert "閲覧できない本文は未確認" in general_prompt
+for catalog_path in (
+    "human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md",
+    "human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md",
+):
+    assert (ROOT / catalog_path).is_file()
+    assert catalog_path in general_prompt
+for b, link, human_prompt in zip(bridges, links, seven_example_prompts):
     parsed = urlparse(link)
     assert parsed.scheme == "https" and parsed.hostname == "chatgpt.com"
     assert parsed.path == "/" and parsed.fragment == ""
@@ -43,7 +56,7 @@ for b, link, human_prompt in zip(bridges, links, copyable):
         assert b["localized"][lang]["title"] in page
 assert "個人情報や社外秘" in page
 assert "理論を当てはめない" in page
-print("PASS: 7 URL prefills match 7 visible human-copyable prompts byte-for-byte; canonical Parent/JA EN ZH parity; no silent fetch or adoption claim")
+print("PASS: all-313 general user-owned prompt plus 7 exact opt-in URL/copyable pairs; canonical Parent/JA EN ZH parity; no automatic adoption")
 
 # Separate opt-in AKI-005 prompt is an additional one-page route, not an eighth skill bridge.
 aki = (ROOT / "human-translation/ASK_AKI005_WITH_ANY_AI.md").read_text(encoding="utf-8")
