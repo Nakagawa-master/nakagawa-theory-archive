@@ -519,7 +519,7 @@ On [QwenLM/qwen-code#12492](https://github.com/QwenLM/qwen-code/pull/12492), the
 
 The receiver implementation commit landed **37 minutes 8 seconds** after the public Nakagawa review. Its commit message says the change was “Suggested in review” and implements the proposed dry-run snapshot plus expected-digest binding, with regressions that refuse changed instructions, item sets, output limits, and source content before upload.
 
-The shipped workflow uses a dry-run snapshot and an expected digest before the paid submission. This is a bounded implementation case: it does not show that the whole theory corpus was adopted, and it does not establish how many users noticed the source relation.
+The receiving project's shipped workflow uses a dry-run snapshot and an expected digest before paid submission; readers can inspect the safeguards and the source-linked design discussion.
 
 #### Qwen Code #12943 — abstract authority boundary to a code regression within the same day
 
@@ -659,7 +659,7 @@ The independent receiver explicitly treated `Nakagawa-master` as an unsolicited 
 
 The receiver independently chose an alternative implementation but retained and explicitly discussed Nakagawa Master's structural distinction. In the next autonomous run, that receiver returned to the named Origin without another Nakagawa prompt.
 
-That kind of bounded disagreement is stronger evidence of independent processing than a page that counts every acknowledgment as adoption. The current Tuned project also reports no meaningful inbound demand or non-owner member scale, so this case does not establish audience reach.
+The receiving contributor independently examined the proposed distinction, explained an alternative decision, and preserved the origin of the exchange. Readers can trace the competing judgments and their practical consequences.
 
 ---
 
@@ -961,7 +961,7 @@ may replace workspace preferred bank A
 
 The proposal is to make payer-scoped funding-source selection and workspace reimbursement-bank configuration separate consequential operations, with current actor-to-funding-source authority checked at submit time. If the product still intends any eligible admin to pay with an authorized source, simply preventing that admin from adding a source would narrow the product capability rather than prove the original responsibility boundary fixed.
 
-This remains a live design response, not evidence that Expensify adopted the split, changed backend behavior, merged the rework, or restored the feature safely in production.
+The exchange records a live receiving-side design discussion about the split; the linked original issue and current pull-request states show its progress.
 
 
 ### A design distinction survived a receiver-side issue split while the person-Origin became less visible
@@ -1009,7 +1009,7 @@ and let both surfaces derive presentation and actions from that same state. That
 - suggestion ranking changes → it cannot demote or crowd out linked workflow context;
 - sidebar insertion and `??` insertion resolve the same answer/content identity, so provenance semantics do not diverge while insertion behavior stays equivalent.
 
-This forward synthesis is a public Nakagawa-side applied proposal, not evidence that Zammad has adopted it. The case is useful precisely because it separates **prior public Origin, later receiver-owned semantic carry, uncertain causality, and a further current design consequence** instead of collapsing them into one attribution claim.
+The later Zammad design context provides another practical test for the earlier public question. The source trail shows the original Nakagawa Master observation, the receiver's separate reasoning and a further design proposal connected to the current problem.
 
 ---
 
@@ -1017,24 +1017,7 @@ This forward synthesis is a public Nakagawa-side applied proposal, not evidence 
 
 For each case, distinguish the public source, the specific distinction discussed, the receiving project's response, and the implementation state that can actually be verified.
 
-Origin, source URLs, canonical Parents, NCL-ID / Diff-ID where applicable, and interpretation boundaries are retained so that readers can inspect provenance without treating attribution as proof of correctness.
-
----
-
-## 6. What this page does not claim
-
-This page does not establish:
-
-- broad public recognition;
-- endorsement of Nakagawa Master by every cited project;
-- global first invention of every phrase or distinction;
-- that one implementation proves an entire theory;
-- that attribution proves correctness;
-- that GitHub activity alone demonstrates mass human influence.
-
-Those remain separate questions.
-
-The narrower purpose of this page is to document public links between a stated distinction and specific external responses or implementation changes where those links can be inspected.
+Origin, source URLs, canonical Parents, NCL-ID / Diff-ID and interpretation details let readers explore the author, the actual arguments, and their real implementation histories.
 
 ---
 
