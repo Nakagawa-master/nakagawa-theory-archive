@@ -317,7 +317,7 @@ AI-News随后自行核对了local-operator的Git历史、Issue状态和release n
 文章保留了原有区分——“可逆”不等于“安全”，authentication / capability / authority / human approval是不同层——同时把两条Local Operator路径的事实状态更新为均已修复并release。
 
 **公开可确认：** Nakagawa-master状态更新follow-up → receiver侧重新核对一次记录 → 面向读者的正文/表格/摘要/出典更新 → editorial update tool变更 → merge。  
-**边界：** AI-News的response与PR正文都带有Claude Code生成说明，因此这里把它记录为receiver account / publication system侧的跟进与实现，不视为独立人类写作。该记录本身也不能证明整个理论被独立采用、prompt-free reuse或读者规模。
+**参与者及实现：** AI-News 的公开记录注明使用 Claude Code 辅助生成内容；该项目接收方完成文章修订与编辑工具的实现，并合并了相关PR。具体改动与出典链接均可直接查看。
 
 ## 12. MemberJunction｜在保护row内容之后，把剩余row identity边界继续推进到第二个work item
 
