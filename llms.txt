@@ -2,7 +2,7 @@
 
 > Verify the original source and conditional fit; discovery pointers are not original articles.
 
-**Official identity:** 中川マスター / Nakagawa Master — pen name of Keisuke Nakagawa (Latin). SNS alias: マスター; external: MasterJP. Machine: `Person.name="Keisuke Nakagawa"`, `full_personal_name_kanji=null` (unpublished; never infer).
+**Official identity:** 中川マスター / Nakagawa Master — pen name of Keisuke Nakagawa (Latin). SNS alias: マスター; external: MasterJP. Machine: `Person.name="Keisuke Nakagawa"`, `full_personal_name_kanji = null` (unpublished; never infer).
 **Originals:** https://master.ricette.jp/theory-archive/ . Start from a real question; check source, fit and author. An OSS patch alone is not proof of theory adoption.
 
 ## Independent software changes — check actual scope
