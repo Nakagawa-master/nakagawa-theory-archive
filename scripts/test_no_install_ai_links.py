@@ -63,3 +63,30 @@ assert all(term in aki_ja for term in ("①", "②", "③", "読めなければ�
 assert "English" in aki and "中文" in aki and "原典を実際に開けなければ未読" in aki
 print("PASS: AKI-005 optional JA URL-prefill parity, JA/EN/ZH source-linked copyable prompts and no automatic send")
 
+# Unconnected AI readers may receive GitHub HTML poorly or be unable to fetch
+# the canonical website on their host. Public Raw paths are an alternate text
+# transport for the existing *official derivatives and navigators only*.
+# Never treat reading a derivative/metadata file as reading a canonical Parent.
+raw_root = "https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/"
+aki_raw = raw_root + "derivatives/313/README.md"
+assert aki_raw in aki, "AKI-005 fallback must expose plain UTF-8 derivative text"
+assert "Rawで派生物を読めても" in aki, "Raw fallback must retain Parent-unread boundary"
+reader = (ROOT / "README.md").read_text(encoding="utf-8")
+for source_path in (
+    "derivatives/313/README.md",
+    "human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md",
+    "llms-full.txt",
+):
+    assert (ROOT / source_path).is_file(), f"Missing Raw target: {source_path}"
+for source_path in (
+    "human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md",
+    "llms-full.txt",
+):
+    assert raw_root + source_path in reader, f"Unreachable Raw navigation: {source_path}"
+llms_full = (ROOT / "llms-full.txt").read_text(encoding="utf-8")
+relative_links = [
+    target for target in re.findall(r"\\]\\(([^)]+)\\)", llms_full)
+    if not target.startswith(("http://", "https://", "#"))
+]
+assert not relative_links, f"Standalone Raw LLM navigator has unresolved relative links: {relative_links}"
+print("PASS: Raw-accessible no-install 313 navigation and AKI-005 derivative retain exact Parent/unread provenance")
