@@ -26,7 +26,7 @@ The original corpus spans work, business, relationships, institutions, ethics, c
 - **Third-party technical effects:** independent PR/issue/release evidence in [Real-World Impact](REAL_WORLD_IMPACT.en.md), separating Nakagawa Master's report or review from the implementation authored by its developer
 - **Public author identity:** [official homepage](https://master.ricette.jp/) and [person metadata](metadata/nakagawa-master-origin.jsonld)
 
-Project documentation provides navigation and evidence, not independent proof of theoretical validity, external model adoption or authorization to act.
+Project documentation gives direct access to original sources, evidence and concrete applications. Evaluate the relevant theory from its actual argument and use the host's normal authorization for external actions.
 
 ## Distinct originals and illustrative problem matches
 
