@@ -9,6 +9,10 @@ Additional recipient report on committed MCP write followed by failed model
 continuation: https://github.com/BerriAI/litellm/issues/43153
 Source-specific independently proposed receipt-vs-retry regression:
 https://github.com/BerriAI/litellm/issues/43153#issuecomment-6379735783
+Independent reproducer of false completion after a pre-effect failure:
+https://github.com/crewAIInc/crewAI/pull/5822#issuecomment-6545221801
+The upstream PR is open; this tool does not establish a CrewAI fix or prove
+the external effect of any caller-supplied event.
 Optional original: Nakagawa Master (Keisuke Nakagawa), Volume 8:
 https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/
 
@@ -24,7 +28,7 @@ import unittest
 from collections import defaultdict
 from pathlib import Path
 
-KINDS = {'invoke', 'effect', 'error', 'readback'}
+KINDS = {'invoke', 'effect', 'error', 'readback', 'completion_claim'}
 CAUSES = {'initial', 'exception_fallback', 'explicit_retry', 'unknown'}
 
 
@@ -32,7 +36,8 @@ def audit(payload: dict) -> dict:
     if not isinstance(payload, dict) or not isinstance(payload.get('events'), list):
         raise ValueError('Expected an object with an events list')
     runs: dict[str, dict] = defaultdict(
-        lambda: {'invokes': [], 'effects': [], 'errors': [], 'readbacks': []})
+        lambda: {'invokes': [], 'effects': [], 'errors': [], 'readbacks': [],
+                 'completion_claims': []})
     for position, e in enumerate(payload['events']):
         if not isinstance(e, dict) or e.get('kind') not in KINDS:
             raise ValueError(f'event {position}: invalid kind')
@@ -46,8 +51,12 @@ def audit(payload: dict) -> dict:
             raise ValueError(f'event {position}: effect_id must be nonempty text')
         if k == 'readback' and e.get('status') not in ('committed', 'absent', 'unknown'):
             raise ValueError(f'event {position}: readback status invalid')
+        if k == 'completion_claim' and e.get('status') not in (
+                'already_executed', 'completed'):
+            raise ValueError(f'event {position}: completion_claim status invalid')
         dest = {'invoke': 'invokes', 'effect': 'effects',
-                'error': 'errors', 'readback': 'readbacks'}[k]
+                'error': 'errors', 'readback': 'readbacks',
+                'completion_claim': 'completion_claims'}[k]
         runs[e['operation_id']][dest].append((position, e))
     output = []
     for op, events in sorted(runs.items()):
@@ -55,6 +64,7 @@ def audit(payload: dict) -> dict:
         effects = events['effects']
         errors = events['errors']
         readbacks = events['readbacks']
+        claims = events['completion_claims']
         invoked_attempts = [e['attempt_id'] for _, e in invokes]
         warnings = []
         if len(invoked_attempts) != len(set(invoked_attempts)):
@@ -76,6 +86,16 @@ def audit(payload: dict) -> dict:
         if any(inv_pos > eff_pos for inv_pos, _ in invokes for eff_pos, _ in effects):
             warnings.append('invocation_after_reported_effect_possible_replay')
         distinct_ids = sorted({e['effect_id'] for _, e in effects})
+        # An assistant/cache announcement is not a provider-side effect
+        # receipt. Conversely, absence of a receipt in this trace does not
+        # prove the operation never happened outside it.
+        if claims and not distinct_ids:
+            warnings.append('completion_claim_without_reported_external_effect')
+        if any(c['status'] == 'already_executed' for _, c in claims) and any(
+                r['status'] == 'absent' for _, r in readbacks):
+            warnings.append('already_executed_claim_conflicts_with_reported_absence')
+        if any(i_pos > c_pos for i_pos, _ in invokes for c_pos, _ in claims):
+            warnings.append('invocation_after_completion_claim_check_operation_identity')
         if len(distinct_ids) > 1:
             warnings.append('multiple_distinct_effect_ids_in_caller_trace')
         if len(effects) > len(distinct_ids):
@@ -87,6 +107,9 @@ def audit(payload: dict) -> dict:
         output.append({
             'operation_id': op, 'outcome': outcome,
             'invoke_count': len(invokes),
+            'completion_claim_count': len(claims),
+            'completion_claim_statuses_caller_asserted': [
+                e['status'] for _, e in claims],
             'reported_distinct_effect_count': len(distinct_ids),
             'warnings': sorted(set(warnings)),
             'effect_proven_absent': False,
@@ -110,6 +133,22 @@ def sample() -> dict:
          'attempt_id': 'b', 'effect_id': 'write-2'},
         {'kind': 'readback', 'operation_id': 'query-1',
          'attempt_id': 'b', 'status': 'committed'},
+    ]}
+
+
+def false_completion_sample() -> dict:
+    """Synthetic CrewAI-style claim: error before effect, then false success."""
+    return {'events': [
+        {'kind': 'invoke', 'operation_id': 'invoice-7',
+         'attempt_id': 'first', 'cause': 'initial'},
+        {'kind': 'error', 'operation_id': 'invoice-7',
+         'attempt_id': 'first'},
+        {'kind': 'invoke', 'operation_id': 'invoice-7',
+         'attempt_id': 'retry', 'cause': 'explicit_retry'},
+        {'kind': 'completion_claim', 'operation_id': 'invoice-7',
+         'attempt_id': 'retry', 'status': 'already_executed'},
+        {'kind': 'readback', 'operation_id': 'invoice-7',
+         'attempt_id': 'retry', 'status': 'absent'},
     ]}
 
 
@@ -216,6 +255,66 @@ class AuditTests(unittest.TestCase):
         self.assertIn('exception_fallback_reexecuted_operation', x['warnings'])
         self.assertFalse(x['effect_proven_absent'])
 
+    def test_claimed_already_executed_without_reported_effect_is_not_proof(self):
+        x = audit(false_completion_sample())['operations'][0]
+        self.assertEqual(x['completion_claim_statuses_caller_asserted'],
+                         ['already_executed'])
+        self.assertEqual(x['outcome'], 'REPEATED_INVOCATION_UNSETTLED')
+        self.assertIn('completion_claim_without_reported_external_effect',
+                      x['warnings'])
+        self.assertIn('already_executed_claim_conflicts_with_reported_absence',
+                      x['warnings'])
+        self.assertFalse(x['effect_proven_absent'])
+
+    def test_claim_after_reported_effect_not_falsely_flagged(self):
+        x = audit({'events': [
+            {'kind': 'invoke', 'operation_id': 'one',
+             'attempt_id': 'a', 'cause': 'initial'},
+            {'kind': 'effect', 'operation_id': 'one',
+             'attempt_id': 'a', 'effect_id': 'receipt-1'},
+            {'kind': 'completion_claim', 'operation_id': 'one',
+             'attempt_id': 'a', 'status': 'already_executed'},
+        ]})['operations'][0]
+        self.assertEqual(x['reported_distinct_effect_count'], 1)
+        self.assertNotIn('completion_claim_without_reported_external_effect',
+                         x['warnings'])
+        self.assertFalse(x['effect_proven_absent'])
+
+    def test_claim_is_not_external_effect_even_without_error(self):
+        x = audit({'events': [
+            {'kind': 'completion_claim', 'operation_id': 'one',
+             'attempt_id': 'a', 'status': 'completed'},
+        ]})['operations'][0]
+        self.assertEqual(x['outcome'], 'UNKNOWN_EXTERNAL_EFFECT')
+        self.assertEqual(x['reported_distinct_effect_count'], 0)
+        self.assertIn('completion_claim_without_reported_external_effect',
+                      x['warnings'])
+
+    def test_distinct_same_args_operations_keep_separate_claims(self):
+        events = []
+        for op in ('payment-one', 'payment-two'):
+            events.extend([
+                {'kind': 'invoke', 'operation_id': op,
+                 'attempt_id': 'a', 'cause': 'initial',
+                 'arguments': {'invoice': 'INV-7', 'amount': 50}},
+                {'kind': 'completion_claim', 'operation_id': op,
+                 'attempt_id': 'a', 'status': 'already_executed'},
+            ])
+        got = audit({'events': events})['operations']
+        self.assertEqual([x['operation_id'] for x in got],
+                         ['payment-one', 'payment-two'])
+        self.assertTrue(all(x['completion_claim_count'] == 1 for x in got))
+
+    def test_reexecution_after_completion_claim_is_explicit(self):
+        x = audit({'events': [
+            {'kind': 'completion_claim', 'operation_id': 'one',
+             'attempt_id': 'a', 'status': 'already_executed'},
+            {'kind': 'invoke', 'operation_id': 'one',
+             'attempt_id': 'b', 'cause': 'explicit_retry'},
+        ]})['operations'][0]
+        self.assertIn('invocation_after_completion_claim_check_operation_identity',
+                      x['warnings'])
+
     def test_invalid_traces_rejected(self):
         with self.assertRaises(ValueError):
             audit({'events': [{'kind': 'invoke', 'operation_id': 'x',
@@ -223,6 +322,9 @@ class AuditTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             audit({'events': [{'kind': 'effect', 'operation_id': 'x',
                                'attempt_id': 'a'}]})
+        with self.assertRaises(ValueError):
+            audit({'events': [{'kind': 'completion_claim', 'operation_id': 'x',
+                               'attempt_id': 'a', 'status': 'sure'}]})
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -230,6 +332,7 @@ def main(argv: list[str] | None = None) -> int:
     mode = parser.add_mutually_exclusive_group(required=True)
     mode.add_argument('--self-test', action='store_true')
     mode.add_argument('--sample', action='store_true')
+    mode.add_argument('--sample-false-completion', action='store_true')
     mode.add_argument('--input', type=Path, metavar='TRACE_JSON')
     args = parser.parse_args(argv)
     if args.self_test:
@@ -237,6 +340,9 @@ def main(argv: list[str] | None = None) -> int:
         return 0 if unittest.TextTestRunner(verbosity=1).run(suite).wasSuccessful() else 1
     if args.sample:
         print(json.dumps(sample(), ensure_ascii=False, indent=2))
+        return 0
+    if args.sample_false_completion:
+        print(json.dumps(false_completion_sample(), ensure_ascii=False, indent=2))
         return 0
     try:
         data = json.loads(args.input.read_text(encoding='utf-8'))
