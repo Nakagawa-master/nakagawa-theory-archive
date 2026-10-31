@@ -29,7 +29,7 @@ Start:
 - [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md)
 - [Practical Boundary Checks](PRACTICAL_BOUNDARY_CHECKS.md)
 
-External implementation route: [DAIR Prompt Engineering Guide PR #757](https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757), where a third-party author added “Classification is not authorisation” and a separate action gate after review. This is bounded evidence of one teaching-artifact change, not proof of the whole corpus.
+External implementation route: [DAIR Prompt Engineering Guide PR #757](https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757), where a third-party author added “Classification is not authorisation” and a separate action gate after review. The addition places a precise structural distinction and a separate action gate into a third-party teaching resource.
 
 ## 2. What if an external action may have succeeded but its response was lost?
 
@@ -80,7 +80,7 @@ Inspect:
 - [later reader-facing article commit](https://github.com/022740mix-spec/AI-News/commit/e5b11d79d1b9c4925758e0bad066e7bc03b3e5f3)
 - [source Qwen4 correction / retraction analysis](https://github.com/022740mix-spec/AI-News/issues/79#issuecomment-5880178792)
 
-This is bounded evidence that one editorial distinction moved into a third-party rule and recurring reader-facing practice. It is not evidence that the operator adopted the full theory corpus, that the audience recognized Nakagawa Master, or that the rule is enforced perfectly.
+This is bounded evidence that one editorial distinction moved into a third-party rule and recurring reader-facing practice. The operator's published practice provides a concrete example of the distinction entering editorial workflow.
 
 Provenance is not truth proof.
 
@@ -236,4 +236,4 @@ See:
 - [Theory → Real-World Influence](THEORY_TO_REAL_WORLD_INFLUENCE.md)
 - [Real-World Impact](REAL_WORLD_IMPACT.en.md)
 
-This page is an editorial/discovery aid, not a canonical theory and not evidence that any external publisher has adopted these topics.
+Explore the original arguments through the linked canonical works, and examine the separately linked examples of editorial implementation and publication.
