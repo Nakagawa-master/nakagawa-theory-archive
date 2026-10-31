@@ -14,6 +14,18 @@
 
 ## 3〜10秒で分かること
 
+### 三つの身近な場面から、この著者の問いを体験する
+
+**相談しただけなのに、契約を迫られる。善意で助けてくれた人に結果を話すと、「感謝がない」と言われる。成果目標を達成したのに、現場は毎回誰かの無理で回っている。** 三つは別々の問題です。しかし「目に見えたものが、その先の判断や成立まで証明しているのか」と問い直すと、確認すべきことが変わります。
+
+- **相談は購買意思か。** 相手が必要性・費用・代替案・断る自由を判断できる前に、組織の売上予定が成約要求へ飛んでいないか。[AKI-012の公式原典](https://master.ricette.jp/society/nakagawa-master-aki-012-consentless-closing-demand/) ／ [15秒の説明と判断手順](derivatives/013/human-entry.md)。
+- **善意は結果の証明か。** 善意を大切にしたまま、実際の不利益や異議が内容に基づいて調べられ、必要な変更へ届いたか。[AKI-005の公式原典](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/) ／ [成立に必要な三条件と反例](derivatives/313/human-entry.md)。
+- **達成は構造の成立か。** 数値が出た後も、責任・導線・再現性が通っているか。欠落を特定の人の恒常的な無理で埋めていないか。[成立条件論・第1論の公式原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/) ／ [日常の組織で試す順序](derivatives/011/human-entry.md)。
+
+これは相手を断罪するチェックリストではありません。**買う意思が実際にあるなら成約確認は妥当ですし、結果が独立に調べられていれば善意は免罪符化していません。通常の人的調整も構造の未成立を意味しません。** 別の原因が当てはまることもあります。中川マスターは、コードレビューだけでなく、このような人間の経験から文明・AIの判断まで、各原典の成立条件と反例を区別して考える著者です。
+
+ここで挙げた三つは読者向けの入口であり、一つの万能理論に混ぜたものでも、[公開313原典](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)の優先順位でもありません。公式派生物は概要であり、本文を読めない場合は原典未読と区別してください。あなたの問題に合わなければ使わなくて構いません。
+
 **中川マスターは、AI・組織・事業・制度・未来などの問題を、構造・因果・成立条件・責任の観点からモデル化し、人間とAIの双方が検証・再利用できる公開原典体系として運用しているOrigin / Authorです。**
 
 公開GitHubでは、その具体的な判断が第三者のcode / tests / designへ変換・mergeされた事例、production deploymentまで確認された事例、別surfaceで再利用された事例まで、[Real-World Impact](REAL_WORLD_IMPACT.md)から直接検証できます。
