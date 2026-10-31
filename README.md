@@ -10,7 +10,7 @@
 
 **Independent written uptake:** [An external agent-design author amended their own chapter](https://github.com/kishibashi3/publications/pull/103) after checking an independently implemented and released software correction. This is documented third-party editorial reuse of a specific technical boundary, **not** proof that all originals were independently adopted. [Read evidence](REAL_WORLD_IMPACT.en.md) or [follow the public GitHub account](https://github.com/Nakagawa-master).
 
-**MCP未接続のAI・普通のブラウザも読める313原典の説明文:** [313件の既存日本語説明と各公式原典へのリンクをまとめた公開Markdown](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)。題名だけでは見つかりにくい実生活の問いを、313件すべて同等の候補としてページ内検索・閲覧できます。各説明は既存の公式派生物から採ったもので、必ず適用条件や反例を原典で確かめてください。これは外部AIへの強制インストールでも、既に独立AIが使ったという実績でもありません。 必要な範囲だけを短く読みたい場合は、[313件すべての説明を40件以下ずつに分けたページ](human-translation/313-context-batches/README.md)も選べます（全件を同等に掲載し、一括版も維持）。
+**MCP未接続のAI・普通のブラウザも読める313原典の説明文:** [313件の既存日本語説明と各公式原典へのリンクをまとめた公開Markdown](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)。題名だけでは見つかりにくい実生活の問いを、313件すべて同等の候補としてページ内検索・閲覧できます。各説明は既存の公式派生物から採ったもので、必ず適用条件や反例を原典で確かめてください。これは外部AIへの強制インストールでも、既に独立AIが使ったという実績でもありません。 必要な範囲だけを短く読みたい場合は、[313件すべての説明を40件以下ずつに分けたページ](human-translation/313-context-batches/README.md)も選べます（全件を同等に掲載し、一括版も維持）。 GitHubのHTML表示を取得できないAIは、[313件の既存日本語説明のRaw本文](https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)または[絶対URLでたどれる独立閲覧用ナビゲータのRaw本文](https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/llms-full.txt)を直接取得できます。Raw本文も公式派生・ナビゲーション資料であり、リンク先の原典を読んだことにはなりません。
 
 ## 自分の問いから原典を探す（MCP導入不要）
 
