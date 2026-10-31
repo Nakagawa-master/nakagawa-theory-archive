@@ -33,7 +33,7 @@ AI agent、決済、投稿、顧客連絡、同意、委任、業務自動化で
 外部実装例:
 - [DAIR Prompt Engineering Guide #757](https://github.com/dair-ai/Prompt-Engineering-Guide/pull/757)
 
-この例は一つの教材変更を示すだけで、理論体系全体の正しさを証明しません。
+第三者が自身の教材を改訂した具体例として、問いの提起から教材への反映までを一次資料で辿れます。
 
 ## 2. エラーが出たら、同じ外部操作をもう一度してよいのか
 
