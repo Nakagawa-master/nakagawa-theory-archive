@@ -20,7 +20,7 @@
 
 **仕事・人間関係・家族・将来・ブランド・地域文化・社会・AIの困りごとに、先に具体的な答えを示す：** [24の実用的な問い・答え・見分け方](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [同じ24件を構造化した検索・照合データ](machine-discovery/human-question-answers-v1.json)。この24件は掲載済みの参考回答例であって、原典の優先順位・網羅性・各原典から生まれる答えの数を決めません。313原典はいずれも独立した源で、一つの原典から複数の文脈別回答を導け、関連する複数原典を組み合わせた別の解釈も考えられます。原典の主張、適用条件、AI等の新たな解釈を区別して確認してください。検索順位やAIによる採用は保証しません。
 
-**313原典の普通の日本語による発見:** [題名だけでなく313原典それぞれの公式日本語解説から問いを探す（インストール不要）](machine-discovery/originals-browser-finder.html) ／ [同じ313件の原典URL・公式派生物の文脈・元ファイルSHAを備えた公開データ（AIも通常のWeb取得で読めます）](machine-discovery/published-ja-source-briefs-313-v1.json)。全文ではなく派生物の説明に基づく文字照合であり、無関係な理論を当てはめず、実際の原典を読んで検証してください。AIへの勝手なインストールや自動採用は意味しません。
+**313原典の普通の日本語による発見:** [題名だけでなく313原典それぞれの公式日本語解説から問いを探すためのHTML](machine-discovery/originals-browser-finder.html) ／ [同じ313件の原典URL・公式派生物の文脈・元ファイルSHAを備えた公開データ（AIも通常のWeb取得で読めます）](machine-discovery/published-ja-source-briefs-313-v1.json)。**GitHubの `.html` ページは実行画面ではなくソースの表示です。** 実際に検索フォームを操作するには、HTMLファイルの `Raw` からソースを `.html` として保存し、自分のブラウザで開いてください（アプリのインストールは不要）。全313件の題名・説明を追加照合する際は公開JSONへのネット接続が必要です。保存せずに読む場合は[全313件の題名・テーマ案内](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)を直接参照できます。検索結果は派生物の説明による文字照合で、理論の適合や実際の原典読了を証明しません。AIへの勝手なインストールや自動採用は意味しません。
 
 **初めての方へ：** [自分の疑問から試す](human-translation/SEARCH_FROM_A_REAL_QUESTION.md) ／ [313原典の題名と24件の参考事例を同時に探す（原典の意味・適合は要確認）](machine-discovery/originals-browser-finder.html) ／ [公式アーカイブに蓄積された原典記事全体から探す](https://master.ricette.jp/) ／ [別の人が実際に変えた仕事を見る](REAL_WORLD_IMPACT.md) ／ [原典と著者を知る](ABOUT_NAKAGAWA_MASTER.md)。
 
