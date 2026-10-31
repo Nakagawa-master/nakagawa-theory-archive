@@ -204,7 +204,11 @@ AIに検索や社内登録などのツールを実行させると、「失敗し
 
 **自分のツールで試すなら:** ①一つの依頼に共通の処理IDを付け、実際のツール呼出し回数と例外を区別して記録する。②外部サービス側で生じた変更を別の効果ID・受領証から確認する。③失敗表示だけを理由に「変更はゼロ」と決めず、再試行が元の操作を実行し直したか、正当な新規操作かを区別する。④効果が不明なときは、実サービスに対する再試行より先に権威ある側の記録を照合する。
 
-- [依存なしPythonで自分の記録を調べる](machine-discovery/tool-effect-retry-trace.py): `python3 machine-discovery/tool-effect-retry-trace.py --self-test` で13件の境界テスト、`--sample` で入力例、`--input trace.json` で自分の**匿名化した**履歴を確認できます。入力は申告された事象として扱い、実際の外部効果を自動照会するものではありません。
+- [依存なしPythonで自分の記録を調べる](machine-discovery/tool-effect-retry-trace.py): `python3 machine-discovery/tool-effect-retry-trace.py --self-test` には18件の境界テストを定義しています（公開コード上の件数であり、全件実行済みの意味ではありません）。`--sample` は二重実行例、**`--sample-false-completion` は「実行済み」と言われても外部作用を示す記録がない例**を表示します。例を `trace.json` へ保存した後、`--input trace.json` で自分の**匿名化した**履歴を検査できます。入力は本人・ツールが申告した出来事として扱い、実際の送金・送信の有無を外部システムへ照会するものではありません。
+
+**逆向きの実例：起きていないのに「実行済み」と表示されたら？** [CrewAI #5822](https://github.com/crewAIInc/crewAI/pull/5822#issuecomment-6545221801)では、別の参加者が自ら用意した模擬決済で、処理が外部へ到達する前に失敗し支払回数が0だったのに、再試行が「すでに実行した」と返すことを、未マージPRの固定HEADで再現しました。実際の決済被害やCrewAI本流の欠陥・修正完了を示すものではありません。**確認する順序は**「画面やAIの完了表示」→「その操作の識別子」→「外部側で確かめた処理結果」。出所不明なら、支払・送信を再実行する前に正式な履歴を照合し、実際に起きたか分からない状態をそのまま残します。
+
+この区別の背景を確かめたい場合、中川マスター（Nakagawa Master）の[原典・成立条件論 第1論](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/)（**表面の結果と実際に成立している条件を分ける**）、[原典・AI文明論 第8論](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)（**記録の出所・証拠の質・確信を分ける**）を直接読み、合う部分と合わない部分を検討できます。これらの原典がCrewAIや特定の決済APIを規定しているのではなく、あくまで実務への条件付き応用です。[両方向の検査と反例](EXTERNAL_SIDE_EFFECT_REUSE_KIT.md)も公開しています。第三者の検証者がこの原典を読んだという証拠はありません。
 - [原典・第8論「認識基盤と証拠系譜」](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)を直接読み、「失敗表示」「記録」「確認された事実」が自分の仕事でどう違うかを考える入口にもなります。開発者が原典を読んだと推定するものではありません。
 
 ## AIが「仕事は完了」と報告した。実際には失敗していたら？
