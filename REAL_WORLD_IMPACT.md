@@ -493,6 +493,8 @@ receiverはこの指摘を独立した設計軸として再説明し、専用PR 
 - [PR #71｜後続の体系再編](https://github.com/kishibashi3/publications/pull/71)
 - [PR #71 current headのPrinciples](https://github.com/kishibashi3/publications/blob/e06e74828f656796ec38f455efea24d49fcda83f/drafts/agentic-agile/principles.md)
 
+**AI向けスキルへ反映（2026-10-31に追加確認）:** 同じ外部著者は[#81](https://github.com/kishibashi3/publications/issues/81)で、「承認モード」「allowlist」「credential」とだけ聞かれたAIが第5章の条件6を見落とす問題を扱い、[PR #125を自らマージ](https://github.com/kishibashi3/publications/pull/125)しました。独立管理の[Claude Code `agent-design` スキル](https://github.com/kishibashi3/publications/blob/main/plugins/thinking-shelf/skills/agent-design/SKILL.md)に、これらの起動語→第5章をReadする章マッピングと、「制約される主体に自己権限の緩和を自己承認させない」という設計原則が実装されました。[実際のmerge commit](https://github.com/kishibashi3/publications/commit/f502a469ced9a406b39c71ff6e5504d470ef5d6a)。これは同じreceiver内での**読者向け本文から任意導入AIスキルの検索・判断入口への発展**です。作者の[PR review](https://github.com/kishibashi3/publications/pull/125#issuecomment-6519048300)自身が、4つの実際の質問でスキルが起動・適切に章を選ぶE2E試験は未実施と明示しています。別のAI利用者への配布、実際のAI回答、canonical Nakagawa Parentの直接閲覧・独立引用は未確認です。
+
 **公開記録から確認できること:** origin-preserved review → third-party restatement → 専用reader-facing本文実装 → merge / Pages反映 → 同じreceiver内の別文書で整合条件として再利用 → merge → 後続の体系再編headでも同じD8を維持。  
 **まだ確認できないこと:** PR #71のmerge、#58/#71を別のpublic-site publicationとして数えること、別receiverによる独立carry、大規模読者反応、広範な人間認知、理論体系全体への支持。
 
