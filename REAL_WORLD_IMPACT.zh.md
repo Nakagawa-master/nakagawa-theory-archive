@@ -497,6 +497,8 @@ receiver把这一点重新解释为正文缺失的独立设计轴，并建立PR 
 - [PR #71｜后续文档体系重组](https://github.com/kishibashi3/publications/pull/71)
 - [PR #71 current head中的Principles](https://github.com/kishibashi3/publications/blob/e06e74828f656796ec38f455efea24d49fcda83f/drafts/agentic-agile/principles.md)
 
+**第三方AI技能中的实际延伸（2026-10-31核实）：** 同一外部作者通过[issue #81](https://github.com/kishibashi3/publications/issues/81)及[已合并PR #125](https://github.com/kishibashi3/publications/pull/125)（[merge commit](https://github.com/kishibashi3/publications/commit/f502a469ced9a406b39c71ff6e5504d470ef5d6a)），在其自行维护的[Claude Code `agent-design` skill](https://github.com/kishibashi3/publications/blob/main/plugins/thinking-shelf/skills/agent-design/SKILL.md)中加入了对“审批模式、allowlist、credential、自我放宽权限”等问题的章路由，要求读取第5章条件6，并把“受约束者不能自行批准放宽自身约束”写进设计原则。这是**同一receiver将已采纳的文章条件扩展到可选AI技能的发现/判断路径**，并非新受众或所有原典被采用的证明。作者[自己的审查](https://github.com/kishibashi3/publications/pull/125#issuecomment-6519048300)明确表示四个真实问题输入的技能路由还没有进行端到端验证；实际安装、独立AI回答、Nakagawa canonical Parent的直接阅读和引用、广泛人类影响均未证实。
+
 **公开可确认：** 保留origin的review → 第三方重述 → 专门的reader-facing正文实现 → merge / Pages反映 → 在同一receiver的另一份文档中作为一致性条件继续复用 → merge → 在后续receiver-owned文档体系重组head中继续保留同一D8。  
 **尚未确认：** PR #71 merge、把#58/#71计为额外独立public-site publication、不同receiver的独立carry、大规模reader response、广泛人类认知、或对完整理论体系的认可。
 
