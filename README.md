@@ -6,6 +6,8 @@
 
 **English-language readers:** [Browse all 313 published originals by broad topic and open each existing English explanatory source](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md). Every entry links the actual original and its full English official index; the grouping is only for navigation, not a source ranking.
 
+**外部の著者が本文へ取り込んだ例:** [AIエージェント設計概論の外部著者は](https://github.com/kishibashi3/publications/issues/9#issuecomment-6123421765)、公開された権限境界の指摘と別開発者の修正・リリースを確認し、[自分の読者向け第5章へ追記・統合しました](https://github.com/kishibashi3/publications/pull/103)。これは第三者の文書で起きた実際の変更ですが、313原典すべてへの同意や読者数を示すものではありません。[他の第三者変更事例と元資料](REAL_WORLD_IMPACT.md)も確認できます。公開レビューや原典の活動を追いたい方は、[中川マスターのGitHubプロフィール](https://github.com/Nakagawa-master)から任意でフォローできます。\n\n**Independent written uptake:** [An external agent-design author amended their own chapter](https://github.com/kishibashi3/publications/pull/103) after checking an independently implemented and released software correction. This is documented third-party editorial reuse of a specific technical boundary, **not** proof that all originals were independently adopted. [Read evidence](REAL_WORLD_IMPACT.en.md) or [follow the public GitHub account](https://github.com/Nakagawa-master).
+
 **MCP未接続のAI・普通のブラウザも読める313原典の説明文:** [313件の既存日本語説明と各公式原典へのリンクをまとめた公開Markdown](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)。題名だけでは見つかりにくい実生活の問いを、313件すべて同等の候補としてページ内検索・閲覧できます。各説明は既存の公式派生物から採ったもので、必ず適用条件や反例を原典で確かめてください。これは外部AIへの強制インストールでも、既に独立AIが使ったという実績でもありません。 必要な範囲だけを短く読みたい場合は、[313件すべての説明を40件以下ずつに分けたページ](human-translation/313-context-batches/README.md)も選べます（全件を同等に掲載し、一括版も維持）。
 
 ## 自分の問いから原典を探す（MCP導入不要）
