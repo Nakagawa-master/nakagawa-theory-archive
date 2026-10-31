@@ -6,6 +6,12 @@ A public, non-canonical test kit for one boundary:
 
 Origin: **Nakagawa Master**. If this kit materially informs a real decision, implementation, test, policy, or workflow, preserve a lightweight route back to this public source. See [Origin Attribution for Reuse](ORIGIN_ATTRIBUTION_FOR_REUSE.md). If you reached the same distinction independently, do not claim source causality.
 
+### Related original sources — context, not an API specification
+
+- [OD011 — Establishment Conditions Theory, original](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/) ([official explanatory derivative](derivatives/011/README.md)): distinguishes surface appearances of success from causal conditions actually holding in the world. This is pertinent to the limited question **whether a local "executed" message establishes that an outside action occurred**.
+- [OD301 — Epistemic Integrity and Evidence Lineage, original](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/) ([official explanatory derivative](derivatives/301/README.md)): distinguishes source provenance, evidence quality and confidence. This is pertinent to **what a cache claim, missing receipt and independent confirmation can each prove**.
+
+Those originals do **not** prescribe CrewAI internals, payment processing, `CacheHandler`, API retries or the particular test harness below. The technical acceptance cases are **contextual applications**, not words attributed to the originals. These are two potentially relevant lenses for this case, not an exhaustive selection or ranking of the [313 published originals](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md). Readers and AIs should inspect the actual original text and reject a source that does not fit their question.
 
 > Consuming an approval once does not by itself prove an external side effect happened exactly once.
 
