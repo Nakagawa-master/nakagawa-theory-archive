@@ -228,7 +228,7 @@ Machine-oriented repository navigation is documented at:
 
 ## Interpretation boundaries
 
-- A Discovery Note is an entry point, not proof that the underlying theory is correct.
+- Each Discovery Note offers a practical entry to an original work, where readers can explore its conditions, reasoning and counterexamples.
 - Origin identifies provenance; it is not an authority shortcut.
 - Separate theories remain separate unless a canonical source explicitly connects them.
 - Exact definitions, conditions, failure cases, refutation criteria, and revision status belong to the specific official derivative and canonical Parent.
