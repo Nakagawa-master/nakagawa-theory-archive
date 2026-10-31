@@ -45,6 +45,18 @@ def main():
              {"question": "repair a camping lantern leather strap"}),
         call(13, "find_nakagawa_original_for_problem",
              {"question": "AI news fact checking and citation provenance"}),
+        # A factual failure receipt must not silently receive a green verdict.
+        # These run with no other claims/actions, so no different gate can mask it.
+        call(14, "preflight_ai_answer_and_action",
+             {"tool_results": [{"id": "send", "status": "failed", "success": False}]}),
+        call(15, "preflight_ai_answer_and_action",
+             {"tool_results": [{"id": "send", "status": "pending", "success": False}]}),
+        call(16, "preflight_ai_answer_and_action",
+             {"tool_results": [{"id": "send", "status": "cancelled", "success": False}]}),
+        call(17, "preflight_ai_answer_and_action",
+             {"tool_results": [{"id": "send", "status": "completed", "success": False}]}),
+        call(18, "preflight_ai_answer_and_action",
+             {"tool_results": [{"id": "send", "status": "pending", "success": True}]}),
         req(21, "initialize", {"protocolVersion": "2025-11-25"}),
         req(22, "tools/list"),
         call(23, "preflight_ai_answer_and_action", {"claims": claimed}, modern=False),
@@ -76,6 +88,18 @@ def main():
     assert not text(got, 11)["no_fit"]
     assert text(got, 12)["no_fit"]
     assert not text(got, 13)["no_fit"]
+    for case in (14, 16, 17, 18):
+        result = text(got, case)
+        assert result["verdict"] == "RECHECK_BEFORE_USE", (case, result)
+        assert result["hold_count"] == 1, (case, result)
+        assert result["findings"][0]["gate"] == "tool_result", (case, result)
+        assert result["findings"][0]["status"] == "HOLD", (case, result)
+        assert result["practical_next_steps"], (case, result)
+    pending = text(got, 15)
+    assert pending["verdict"] == "RECHECK_BEFORE_USE", pending
+    assert pending["hold_count"] == 0, pending
+    assert pending["findings"][0]["status"] == "PENDING", pending
+    assert pending["practical_next_steps"], pending
     assert got[21]["result"]["protocolVersion"] == "2025-11-25"
     assert text(got, 23)["hold_count"] == 1
     assert text(got, 24)["entries"][0]["id"] == "OD313"
