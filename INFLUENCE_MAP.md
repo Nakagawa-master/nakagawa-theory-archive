@@ -2,7 +2,7 @@
 
 このページは、具体的な問題から関連する理論、検証例、再利用資料を探すための案内です。
 
-各項目では、混同しやすい概念を分け、公開されている事例と関連資料を示します。個別事例は、その事例で確認できる範囲を示すものであり、理論体系全体の妥当性や外部プロジェクトによる全面採用を意味しません。
+各項目では、混同しやすい概念を分け、公開されている事例と関連資料を示します。各事例から、発見された課題、他者による修正や再利用、関連する原典の問いを具体的に辿れます。
 
 ## 1. 過去の承認は、現在の実行権限と同じか
 
@@ -213,7 +213,7 @@ Agent Marketplace issue #322では、古いcheckoutが新しいexecution planを
 
 Issue自身のstale-publication対策に加えて、終了時にcurrent published lineageを再確認し、今回のrevisionが確定してよいstateだけをreleaseする回帰テストとして再利用できます。
 
-これは第三者によるNakagawa Master理論の採用証拠ではありません。独立した公開問題を、current-authorityの再利用challengeへ接続したものです。
+この実践課題では、公開された現実の問題を起点に、現在の実行権限を確かめる条件とその反例を検討できます。
 
 関連資料:
 - [一般向けの入口](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)
