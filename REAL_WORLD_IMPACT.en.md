@@ -75,7 +75,7 @@ A separate review also identified the capability boundary **narrow capability !=
 
 - [Nakagawa-master capability-boundary review](https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5245587245)
 
-That suggestion/action layer now continues in successor #107802. Its current scout contract still separates suggestion creation from human approval and later publication. This page does not attribute the whole successor stack to Nakagawa-master alone.
+That suggestion/action layer now continues in successor #107802. Its current scout contract still separates suggestion creation from human approval and later publication. The source links distinguish Nakagawa Master's review contribution from the receiving developers' independently authored successor work.
 
 PRs #107879, #107795, and #107802 merged as one stack on 2026-10-02. PostHog's deployment bot records the same deployment workflow reaching dev at 22:42 UTC, prod-us at 22:57, and prod-eu at 23:12. The successor PR bodies preserve the #92252 stack lineage, but they do not explicitly re-name `Nakagawa-master`.
 
@@ -253,7 +253,7 @@ A `Nakagawa-master` review proposed that a person approving delegation should be
 
 The external author named `@Nakagawa-master`, described the proposal as better UX than the current behavior, and stated an intention to include it in future agent-config work.
 
-The base PR itself is merged, but that merge does not mean this proposal was implemented.
+The base PR is merged; the separate proposal's follow-up remains the receiving project's next implementation step.
 
 **Publicly verifiable here:** named review plus explicit author acknowledgment and follow-up intent.  
 
