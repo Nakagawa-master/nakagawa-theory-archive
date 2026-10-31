@@ -14,6 +14,18 @@ It is not an authority claim. The validity of any theory or structural judgment 
 
 ## In 3–10 seconds
 
+### Three everyday situations, three distinct questions
+
+**You asked for advice and were treated as ready to buy. Someone meant to help, yet asking whether it worked was called ungrateful. The targets were met, but the team keeps running on someone's unpaid extra effort.** These are different problems. Nakagawa Master's published work asks whether a visible signal actually establishes the next condition people assume it establishes.
+
+- **Does a conversation mean consent to purchase?** Can the person compare necessity, alternatives, timing and cost and still decline? See [AKI-012 original](https://master.ricette.jp/society/nakagawa-master-aki-012-consentless-closing-demand/) and its [official explanatory source](derivatives/013/human-entry.md) (Japanese).
+- **Does a good intention establish a good outcome?** Could the affected person raise an objection, have its substance examined and see an appropriate correction, without having to deny the helper's good will? See [AKI-005 original](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/) and its [official explanatory source](derivatives/313/human-entry.md) (Japanese).
+- **Does hitting a target mean a system really works?** Are decisions, responsibility, ordinary adjustments and repeatability connected, or is someone constantly compensating for a missing process? See the [Establishment Conditions Theory original](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/) and its [official explanatory source](derivatives/011/human-entry.md) (Japanese).
+
+These are **not interchangeable diagnoses**. A buyer may genuinely be ready to decide; a good intention can coexist with a properly verified outcome; ordinary human adjustments do not show a broken system. The point is not to condemn people but to make the causal boundary testable. This is one way to encounter Nakagawa Master as an original author concerned with lived experience, institutions and AI—not only as a technical reviewer.
+
+These three sources are examples, not a ranked subset or a substitute for the [complete 313-original catalog](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md). Explanatory materials are not the originals; disclose what could not be read, and reject an interpretation that does not fit the actual case.
+
 **Nakagawa Master models problems across AI, organizations, business, institutions, and the future through structure, causality, establishment conditions, and responsibility, and maintains the resulting work as a public source system that both humans and AI can inspect and reuse.**
 
 On public GitHub, specific judgments can also be traced into third-party code, tests, design changes, merges, at least one verified production deployment, and bounded downstream reuse through the [Real-World Impact](REAL_WORLD_IMPACT.en.md) evidence map.
