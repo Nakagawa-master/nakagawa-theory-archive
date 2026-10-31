@@ -77,6 +77,48 @@ def run():
     assert report(48)["blocked"] == 1 and safety_out[48]["result"]["resultType"] == "complete"
     print("PASS: independent citation-integrity MCP legacy/modern stdio, copied source, true-input control, refutation, invalid")
 
+    # Production guard regression through a fresh real stdio server. The
+    # failure-only arm cannot pass due to a separate permission/citation hold.
+    def guard_case(i, status, success):
+        return req(i, "tools/call", {
+            "name": "preflight_ai_answer_and_action",
+            "arguments": {"tool_results": [{"id": "send", "status": status,
+                                           "success": success}]},
+        })
+    guard_requests = [
+        req(60, "initialize", {"protocolVersion": "2025-11-25"}),
+        guard_case(61, "failed", False),
+        guard_case(62, "cancelled", False),
+        guard_case(63, "pending", False),
+        guard_case(64, "completed", False),
+        guard_case(65, "pending", True),
+        guard_case(66, "completed", True),
+    ]
+    guard_run = subprocess.run(
+        [sys.executable, str(SERVER)],
+        input="".join(json.dumps(item) + "\n" for item in guard_requests),
+        capture_output=True, text=True, check=True, timeout=12,
+    )
+    assert not guard_run.stderr, guard_run.stderr
+    guard_packets = {item["id"]: item for item in
+                     map(json.loads, guard_run.stdout.splitlines())}
+    assert set(guard_packets) == {item["id"] for item in guard_requests}
+    def guard_result(i):
+        return json.loads(guard_packets[i]["result"]["content"][0]["text"])
+    for case in (61, 62, 64, 65):
+        result = guard_result(case)
+        assert result["verdict"] == "RECHECK_BEFORE_USE", (case, result)
+        assert result["hold_count"] == 1, (case, result)
+        assert result["findings"][0]["status"] == "HOLD", (case, result)
+        assert result["practical_next_steps"], (case, result)
+    pending = guard_result(63)
+    assert pending["verdict"] == "RECHECK_BEFORE_USE", pending
+    assert pending["hold_count"] == 0 and pending["findings"][0]["status"] == "PENDING", pending
+    good_receipt = guard_result(66)
+    assert good_receipt["verdict"] == "NO_LISTED_CONFLICT_IN_SUPPLIED_FIELDS", good_receipt
+    assert good_receipt["hold_count"] == 0, good_receipt
+    print("PASS: real MCP failure/cancel/pending receipts never silently masquerade as success")
+
     # Han-only Japanese can be misread as Chinese by naive character detection.
     # Test a real source-specific question against BOTH independent entry paths.
     han_question = "組織摩擦役割情報"
