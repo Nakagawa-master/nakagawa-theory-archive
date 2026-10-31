@@ -8,6 +8,8 @@
 
 **原典URLを直接開けない場合も、そこで終わりではありません。** [公式アーカイブのトップ](https://master.ricette.jp/)の投稿一覧から「悪因果論 AKI-005」を選ぶと、原典本文を取得できることがあります。直接URLが失敗した読解環境で、この順路から本文と現行Diff-IDまで確認できました。そこでも取得できなければ、別の公開ホストにある[OD313の出典・三条件・反例・確認手順（GitHub Markdown）](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/313/README.md)を、読める場合だけ参照できます。これは中川マスターによる原論に対応する**公式派生物であり、原論本文の代わりではありません**。AIには「原典未読／派生物を読んだ／それも未読」の区別をそのまま伝え、読めた範囲から現実の問題への答えと次の確認手順を考えてもらえます。
 
+**GitHubの通常画面を読み込めないAI向け:** 同じ公式派生物OD313を、装飾のないUTF-8原文ファイルとして[GitHub Rawで直接読む](https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/derivatives/313/README.md)こともできます。ここには原典のURL・原典識別子・成立条件・反例が載っていますが、**Rawで派生物を読めても、WordPress上のcanonical Parent本文を読んだことにはなりません**。読めた資料と実際の取得経路だけを出典として報告してください。
+
 ## 今の問題から使う3つの観点
 
 - **動機：** 誰かの善意・目的が評価されているか。
