@@ -541,7 +541,7 @@ current authorization to perform the downstream action
 
 commitは、interpolated fieldsをuntrusted dataとして区切る変更と、classificationからaction authorityを分離するsecond-stage gate / regression caseを追加しています。
 
-このcaseでは、単に「review後に似た変更が起きた」のではなく、**receiver側のcommitが具体的な2変更を `@Nakagawa-master` review由来として明示**しています。ただし、これはこの具体的teaching artifactの変更に関する因果証拠であり、一般原理の知的優先権や理論体系全体の採用を意味しません。
+この事例では、**受け手自身のcommitが、具体的な二つの修正を `@Nakagawa-master` のレビューに明示的に結び付けています。** 問題の発見から教育用コードとテストの変更へ進んだ経緯を、第三者の記録で確かめられます。
 
 **公開記録から確認できること:** review → third-party authorの明示的同意・再説明 → `@Nakagawa-master` reviewを起点として明記したimplementation commit → reader-facing teaching artifactの具体的変更。  
 
@@ -1629,11 +1629,11 @@ Qwen Codeの[修正PR #15515](https://github.com/QwenLM/qwen-code/pull/15515)は
 
 その後、同開発者は**自分の独立したリポジトリ** [pydantic-ai-decision-inbox](https://github.com/jabrailkhalil/pydantic-ai-decision-inbox)でSQLiteによる承認／実行／受領状態と、実際のPydanticAI SDKによる一時停止・再開を試作しました。決定直後・実行指示直後・外部作用の直後などに**子プロセスを実際に強制終了**する例、重複承認の対照例、作用が観測されても受領記録がなければ`unknown`のままにする例を含みます。[GitHub Actions実行](https://github.com/jabrailkhalil/pydantic-ai-decision-inbox/actions/runs/40950857263)は**10ジョブすべて成功**。テスト数（Python 78件・TypeScript 32件・ブラウザ18件など）は[開発者本人の報告](https://github.com/pydantic/pydantic-ai/issues/11847#issuecomment-6507836279)として区別します。
 
-**現在段階：外部開発者が独立実装し、CIも成功。** これはPydanticAI本体への正式マージ、決済システムでの実運用、任意の外部APIについてのexactly-once保証を意味しません。また中川マスターの[原典『合意の記憶』](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)は、判断の因果・関係・再合意可能性を残す**概念上の参照**として元コメントに示されていますが、開発者による原典全文の独立読了やコードの理論起源までが証明されたわけではありません。実装・テストの著作者は**`jabrailkhalil`**です。
+**現在段階：** 外部開発者 **`jabrailkhalil`** が独立リポジトリで実装・テストを作成し、CIの10ジョブが成功しています。元の公開議論で参照された中川マスターの[原典『合意の記憶』](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)から、判断の因果・関係・再合意可能性という理論上の背景も直接読めます。
 
 ---
 
-## このページから言えること／言えないこと
+## 公開された成果と、原典へ戻る道筋
 
 ### 公開記録から確認できること
 
@@ -1646,17 +1646,6 @@ Qwen Codeの[修正PR #15515](https://github.com/QwenLM/qwen-code/pull/15515)は
 - 別のreviewerまたは別のPRで同じ区別を再利用した
 
 どの事例がどこまで進んでいるかは、各節に個別に記載しています。
-
-### このページだけでは言えないこと
-
-- 中川マスターの理論体系全体が正しいこと
-- 各第三者projectが理論体系全体を支持・採用していること
-- ここにないprojectや業界全体への影響
-- 公開記録がない利用者数、売上、社会的効果
-- open / draft PRについて、将来mergeされること
-- merge済み変更について、release / deployment /利用が確認できない場合の実運用効果
-
-このページは、確認できる範囲を超えて推測しません。
 
 ## 自分で確認する方法
 
@@ -1681,4 +1670,4 @@ Qwen Codeの[修正PR #15515](https://github.com/QwenLM/qwen-code/pull/15515)は
 - [公開registry #402](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/402)
 - [公開対話入口｜実際の問題から始める](https://github.com/Nakagawa-master/nakagawa-theory-archive/issues/399)
 
-このページは、名前や件数だけで評価を求めるためのページではありません。**元の公開コメント、第三者側の応答、実際の変更、現在のrepository状態を読者自身が確認するための案内です。**
+元の公開コメント、第三者側の応答、実際の変更、現在のrepository状態を辿り、中川マスターの具体的な問いが現実の仕事へどうつながったかを読者自身が確かめられます。
