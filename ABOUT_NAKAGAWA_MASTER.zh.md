@@ -14,6 +14,18 @@
 
 ## 3–10秒理解
 
+### 三个生活场景，三种不能混淆的判断
+
+**只是想咨询，却被当成准备签约。有人出于好意帮忙，但询问实际效果却被说成不懂感恩。业绩完成了，团队却每次都依靠某个人长期超负荷维持。** 这不是同一种问题。中川マスター的公开原典所追问的是：眼前的信号，是否真的证明了被人直接推定的下一层事实？
+
+- **接触就代表购买意愿吗？** 对方是否了解必要性、费用、替代选择，并有权暂缓或拒绝？参阅[AKI-012原典](https://master.ricette.jp/society/nakagawa-master-aki-012-consentless-closing-demand/)及[官方日文解读](derivatives/013/human-entry.md)。
+- **善意就证明结果良好吗？** 尊重帮助者的善意，同时还能否根据事实审查异议并进行必要修正？参阅[AKI-005原典](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/)及[官方日文解读](derivatives/313/human-entry.md)。
+- **达成指标就代表结构成立吗？** 责任、执行路径和可重复性是否真正贯通，还是长期由个人的超额努力填补缺口？参阅[成立条件论第1论原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/)及[官方日文解读](derivatives/011/human-entry.md)。
+
+这**不是给人贴标签**的万能判断表。客户可以真心准备签约；善意的行为也可以经得起独立检验；正常的人为协调并不意味着结构失败。还应考虑其他原因。这里展示的是作为原创思想作者的中川マスター，如何在日常关系、组织制度和AI问题之间保持因果与成立条件的区别，而不只是进行软件代码审查。
+
+上述三项只是入门示例，不是将不同原典合并成一套理论，也不代表[313件公开原典](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)的优先级。官方衍生解读不能替代原文，未能阅读原典时应明确说明，不适用时不必引用。
+
 **中川大师把AI、组织、商业、制度与未来等领域的问题，从结构、因果、成立条件与责任的角度进行模型化，并把这些工作维护为一个人类与AI都可以检查、再利用并返回原典的公开source体系。**
 
 在公开GitHub上，还可以通过[Real-World Impact](REAL_WORLD_IMPACT.zh.md)直接核验：具体判断如何进入第三方code、tests、design、merge、至少一个已确认的production deployment，以及边界明确的后续复用。
