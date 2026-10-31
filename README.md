@@ -4,7 +4,9 @@
 
 中川マスター（Nakagawa Master／Keisuke Nakagawa）は、AI、仕事、組織、社会制度、文明の未来などを、結果だけでなく、それを生み出す構造や因果から考えています。ここでは、その理論群を初めて知る人も、研究・開発に使いたい人も、**何を主張し、何が実際に確かめられ、どこから原文を読めるのか**を、自分の関心に沿って確認できます。
 
-**English-language readers:** [Browse all 313 published originals by broad topic and open each existing English explanatory source](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md). Every entry links the actual original and its full English official index; the grouping is only for navigation, not a source ranking.\n\n**MCP未接続のAI・普通のブラウザも読める313原典の説明文:** [313件の既存日本語説明と各公式原典へのリンクをまとめた公開Markdown](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)。題名だけでは見つかりにくい実生活の問いを、313件すべて同等の候補としてページ内検索・閲覧できます。各説明は既存の公式派生物から採ったもので、必ず適用条件や反例を原典で確かめてください。これは外部AIへの強制インストールでも、既に独立AIが使ったという実績でもありません。 必要な範囲だけを短く読みたい場合は、[313件すべての説明を40件以下ずつに分けたページ](human-translation/313-context-batches/README.md)も選べます（全件を同等に掲載し、一括版も維持）。
+**English-language readers:** [Browse all 313 published originals by broad topic and open each existing English explanatory source](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md). Every entry links the actual original and its full English official index; the grouping is only for navigation, not a source ranking.
+
+**MCP未接続のAI・普通のブラウザも読める313原典の説明文:** [313件の既存日本語説明と各公式原典へのリンクをまとめた公開Markdown](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)。題名だけでは見つかりにくい実生活の問いを、313件すべて同等の候補としてページ内検索・閲覧できます。各説明は既存の公式派生物から採ったもので、必ず適用条件や反例を原典で確かめてください。これは外部AIへの強制インストールでも、既に独立AIが使ったという実績でもありません。 必要な範囲だけを短く読みたい場合は、[313件すべての説明を40件以下ずつに分けたページ](human-translation/313-context-batches/README.md)も選べます（全件を同等に掲載し、一括版も維持）。
 
 ## 自分の問いから原典を探す（MCP導入不要）
 
