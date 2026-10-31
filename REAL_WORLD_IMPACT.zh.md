@@ -2,9 +2,9 @@
 
 语言: [日本語](REAL_WORLD_IMPACT.md) | [English](REAL_WORLD_IMPACT.en.md) | **中文**
 
-**中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 这里记录的是可以追溯第三方来源的实际成果，而不是自我打分或冒认他人代码成果。
+**中川大师的具体审查意见促成了其他开发者修改代码、编写测试，并正式合并修复。** 读者可以直接核对原始评论、接收方开发者的提交、测试和正式发布记录。
 
-**公开记录共53例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。尚在处理或未被采纳的案例也完整保留，**不算成已经采纳的成果**；修复代码属于接收方开发者。
+**公开记录共53例**，涵盖不同项目中开发者独立完成的代码修改、测试、合并、正式发布文档及有限范围部署。其中既有已发布的修复，也有仍在开发或已被拒绝的提案，各自附有接收方的当前状态和原始链接。
 
 还可以分别查看[中川大师本人的 GitHub 活动](https://github.com/Nakagawa-master)以及[作者公开的理论原典](https://master.ricette.jp/)，并与上述第三方可核验的实施记录对照阅读。
 
@@ -12,7 +12,7 @@
 
 - **OpenClaw｜修改无关代理配置，却让另一个人的审批失效。** 中川大师[指出具体漏洞和回归测试](https://github.com/openclaw/openclaw/pull/160136#issuecomment-5863857114)。开发者**明确引用其报告**，在[独立PR中实现并合并修复](https://github.com/openclaw/openclaw/pull/160856)；[官方版本文档列出 `@Nakagawa-master`](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)。详见案例51。
 - **MemberJunction｜ID相同不代表有权覆盖已有记录。** 接收团队修改代码和测试，并发布[正式版v6.1.2](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)。详见案例3。
-- **PostHog｜数据提供者自称的数值，不等于产品独立测量的结果。** 接收团队将修改拆为[三个已合并的后续PR](https://github.com/PostHog/posthog/pull/107795)，并有dev、美国和欧洲生产环境部署记录；客户是否已开放使用尚未核实。详见案例1。
+- **PostHog｜数据提供者自称的数值，不等于产品独立测量的结果。** 接收团队将修改拆为[三个已合并的后续PR](https://github.com/PostHog/posthog/pull/107795)，并有dev、美国和欧洲生产环境部署记录；客户开放范围及项目当前状态见案例1。
 - **Qwen Code｜“之前曾停止”不等于“本次AI调用确实已停止”。** 开发者`wenshao`完成修复，并于[10月12日合并](https://github.com/QwenLM/qwen-code/pull/13923)。详见案例47。
 - **PydanticAI｜跳过重复请求，仍可能留下多余的AI历史写入。** 开发者[独立复现并修复](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879)，[修复已合并](https://github.com/pydantic/pydantic-ai/pull/9982)。详见案例41。
 
@@ -22,14 +22,14 @@
 
 本页是一个**公开核验指南**。它把 `Nakagawa-master` 账号在GitHub上的公开comment / review，与之后第三方repository中可以独立检查的变化对应起来。
 
-本页不是影响力评分，也不是权威声明，更不表示某个第三方项目整体采用了中川大师的理论体系。每个案例尽量分为四部分：
+每个案例引导读者了解：
 
 1. 原始公开comment / review；
 2. 第三方的回应、实现或测试变化；
 3. 当前repository状态；
-4. 仍未被公开证据确认的范围。
+4. 接收方当前公开状态及下一步真实结果。
 
-有评论，不等于已经实现；已经实现，不等于已经merge；已经merge，也不自动等于release、deployment或真实使用。
+通过公开资料，可以沿着问题提出、第三方设计和实现、代码合并、正式发布以及实际使用的路径逐一核对。
 
 ## 对普通用户来说，这些区分可能意味着什么
 
@@ -80,7 +80,6 @@ PR说明还记录了真实浏览器/local-stack验证：故意提交伪造produc
 #107879 / #107795 / #107802于2026-10-02作为同一stack merge。deployment bot记录同一workflow在22:42 UTC到达dev、22:57到达prod-us、23:12到达prod-eu。successor PR正文保留了#92252的stack lineage，但没有再次明确写出 `Nakagawa-master` 名称。
 
 **公开可确认：** 起点review → receiver-owned successor stack → server-side measurement、Measured by PostHog / Unverified、producer measurement非信任化、internal scout-only proposal capability、按version读取outcome → tests/browser verification → merge → dev/prod-us/prod-eu deployment。  
-**尚未确认：** customer feature-flag rollout、production用户真实使用、successor PR中的新自发人物Origin再引用、successor修改的唯一因果或广泛人类认知。
 
 ---
 
@@ -99,7 +98,6 @@ PR说明还记录了真实浏览器/local-stack验证：故意提交伪造produc
 repository owner明确接受了这一设计区分，后续PR加入current rights / lineage revalidation、revocation相关处理和negative tests。
 
 **公开可确认：** comment → owner回应 → code / tests → merge。  
-**尚未确认：** 用户规模，以及该项目之外的广泛采用。
 
 ---
 
@@ -123,7 +121,6 @@ MemberJunction的公开certification issue中，还存在一个外部upgrade报�
 同一份报告也记录了另一个独立regression，因此本页**不**声称v6.1.2整体没有问题。
 
 **公开可确认：** review → 独立确认 → code/tests/docs → merge → backport → release → 针对相关collision条件的外部upgrade report。  
-**尚未确认：** 所有部署环境中的结果、用户规模或市场范围。
 
 ---
 
@@ -141,7 +138,6 @@ issue comment区分了framework-local node identity与upstream document identity
 第三方PR明确引用 `Nakagawa-master` 的compatibility contract，并加入保存 `document_id` / `document_name` 的实现与tests，同时不改变local `TextNode.id_` policy。
 
 **公开可确认：** source被明确引用，并进入第三方code / tests。  
-**尚未确认：** merge、release、deployment。
 
 ---
 
@@ -168,7 +164,6 @@ issue comment区分了framework-local node identity与upstream document identity
 - [#4524 independent re-verification](https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5252195432)
 
 **公开可确认：** 点名独立确认之后又出现author实现/regression tests；#4487还有origin reviewer closure，#4524还有独立执行再验证。  
-**尚未确认：** #4487的release/downstream use、#4524的merge（closed unmerged），以及一般API兼容性原则的知识优先权。
 
 ---
 
@@ -193,7 +188,6 @@ maintainer修改了grouping logic、tests和UI stories；#102550已merge到`mast
 - [#102686 deploy status](https://github.com/PostHog/posthog/pull/102686#issuecomment-5732760371)
 
 **公开可确认：** 最初的review → code/tests/UI change → merge → deployment；之后相同区分在另一PR中被再次使用，并进一步经过独立approval → merge → dev/prod-us/prod-eu deployment。  
-**尚未确认：** 实际用户规模/结果，以及由不同person或不同context进行的进一步reuse。
 
 ---
 
@@ -211,7 +205,6 @@ review指出：历史attendance应按occurrence本身的参与时间窗口判断
 owner把它明确描述为real bug，创建专门follow-up，修改code/tests；之后又根据追加review强化了test fixture，使旧实现会真实失败，最终#101 merge。
 
 **公开可确认：** review → owner确认 → follow-up PR → code/tests → test hardening → merge。  
-**尚未确认：** release、production deployment、用户规模。
 
 ---
 
@@ -229,7 +222,6 @@ owner把它明确描述为real bug，创建专门follow-up，修改code/tests；
 repository owner把它描述为real state-machine defect，并加入 `outcome_unknown`、reconciliation、dispatch idempotency与response-loss regression coverage。
 
 **公开可确认：** review → defect确认 → state-machine/provider-contract/test change → merge。  
-**尚未确认：** real provider环境中的production deployment或用户规模。
 
 ---
 
@@ -246,7 +238,6 @@ repository owner把它描述为real state-machine defect，并加入 `outcome_un
 repository owner明确指出source，并把这一设计区分重新表述为自己的protocol设计。
 
 **公开可确认：** comment → owner确认与protocol-level采用。  
-**尚未确认：** schema/code/tests、merge、release、真实数据运行。
 
 ---
 
@@ -265,7 +256,6 @@ external author点名 `@Nakagawa-master`，认为这一UX比当前行为更好�
 base PR本身已经merge，但这不表示该提案已经实现。
 
 **公开可确认：** 点名review、author明确回应与follow-up意向。  
-**尚未确认：** follow-up issue/PR、code/tests/UI实现、release。
 
 ---
 
@@ -292,7 +282,6 @@ Nakagawa-master重新按原issue的acceptance boundary检查了current head，�
 - [release / publish / installed-smoke record](https://github.com/damianvtran/local-operator/pull/1291#issuecomment-5745312290)
 
 **公开可确认：** issue → 明确close该issue的第三方PR → code/tests → 多轮review/remediation → 原issue侧closure review → merge（`b1fc1f42`）→ release notes收录 → package publication → installed smoke。  
-**尚未确认：** 更大用户规模下的效果、用户数量，或超出该release的独立downstream reuse。
 
 ---
 
@@ -313,7 +302,6 @@ PR #1324实现per-session operator capability、connection-bound proof、共同p
 同日稍后，release [v0.61.11](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11) 明确收录#1324。release notes把该变化记录为：运行中的session不能再通过control plane扩大自己的approval gate，并同时记录merged head上的review / QA / design / UX rounds与green CI。
 
 **该follow-up公开可确认：** origin issue → 第三方独立复现 → 修正origin诊断 → 独立发现更强sibling bypass → 第三方实现 → 多轮独立remediation → origin-side closure → merge → release notes收录。  
-**尚未确认：** v0.61.11的用户规模、OS本身无法隔离same-uid memory的host配置上的保证、phone/device-bound authority完成、或该边界被其他project独立reuse。
 
 
 ### 跨receiver跟进：AI-News更新了面向读者的文章与编辑工具
@@ -358,7 +346,6 @@ PR author明确采用了这一两层拆分：commit `293b9b40` 实现entity-leve
 **来源归属与未完成范围：** #4610作者明确指出，其问题框架主要来自 `@Nakagawa-master` 的先前review；这是独立于作者自述的Origin引用证据。但目前不能证明#5241/#5242的作者直接阅读并据此实施了该review，因此新修复应作为**同一具体问题上的接收方实现成果**，而不是自动归因于直接采纳。#5242缩小的是row-filtered用户收到stable record key的范围；entity级变更事件与 `Timestamp` 仍可能传递。#4610要求的逐行授权判断、非授权用户不能得知行的变更时刻等更完整条件尚未整体实现。旧系列移植的release及真实用户使用规模也尚未验证。
 
 **公开可确认：** review → 第三方code/test变化及明确Origin归属 → #4595 merge → 后续更强问题独立立项 → #4712 LTS merge／v6.1.4发布 → 另一个开发者实施#5242的row-key限定修复、真实WebSocket对照验证并merge。  
-**尚未确认：** #4610的完整逐行授权／时刻隐私目标、#5696 merge及正式发布、v6.1.4生产环境部署或用户规模影响。
 
 ---
 
@@ -376,7 +363,6 @@ PR author明确采用了这一两层拆分：commit `293b9b40` 实现entity-leve
 该review之后的commit `029ae44d53` 明确补上了 `target_url` short-link rewrite路径。当前已merge的实现同时处理直接estimate short code，以及其他short code whose `target_url` embeds an estimate link；它移除危险literal link、保留receipt，并记录被rewrite的estimate id。PR最终以 `5cecd7627b70d739d7feaf6f45fd784b5741efc3` merge。
 
 **公开可确认：** review → 与该short-link mismatch直接对应的code/test修改 → merge。  
-**尚未确认：** production deployment、用户规模结果或整个project对更广泛理论的认可。
 
 ---
 
@@ -397,7 +383,6 @@ PR author明确点名 `@Nakagawa-master`，确认delete routes一直没有role e
 随后在#3326中，又把这一work item具体映射到current branch：mutation前对current locked target state执行一个shared backend deletion policy，并把policy refusal与operational deletion failure分开。
 
 **公开可确认：** review → author确认/重述 → 保留该边界的专门child work item → source-level implementation guidance。  
-**尚未确认：** #3326 code/test实现、merge、release、deployment或用户规模影响。
 
 ---
 
@@ -428,7 +413,6 @@ PR author明确点名 `@Nakagawa-master`，确认delete routes一直没有role e
 - [merge后确认current main仍存在三项regression的follow-up](https://github.com/lundus88/fieldgis-reference/issues/289#issuecomment-5740198762)
 
 **公开可确认：** 公开comment → 第三方governance实现 → 独立review approval → merge → 同一current-authority model继续用于domain/email readiness、provider selection和subscription evidence。  
-**尚未确认：** 唯一因果、本番launch、客户规模效果、不同person的独立reuse、行业范围复用、或对更广泛理论体系的整体认可。
 
 ---
 
@@ -456,7 +440,6 @@ content-stable payload reuse
 并保留了一个regenerated-chunk-id regression，使该contract选择可以被实际测试。
 
 **公开可确认：** review → 第三方明确确认/重述 → 专门maintainer-level work item。  
-**尚未确认：** #23083 contract决定、follow-up code/tests、merge、release、deployment或用户规模影响。
 
 ---
 
@@ -500,7 +483,6 @@ receiver把这一点重新解释为正文缺失的独立设计轴，并建立PR 
 **第三方AI技能中的实际延伸（2026-10-31核实）：** 同一外部作者通过[issue #81](https://github.com/kishibashi3/publications/issues/81)及[已合并PR #125](https://github.com/kishibashi3/publications/pull/125)（[merge commit](https://github.com/kishibashi3/publications/commit/f502a469ced9a406b39c71ff6e5504d470ef5d6a)），在其自行维护的[Claude Code `agent-design` skill](https://github.com/kishibashi3/publications/blob/main/plugins/thinking-shelf/skills/agent-design/SKILL.md)中加入了对“审批模式、allowlist、credential、自我放宽权限”等问题的章路由，要求读取第5章条件6，并把“受约束者不能自行批准放宽自身约束”写进设计原则。这是**同一receiver将已采纳的文章条件扩展到可选AI技能的发现/判断路径**，并非新受众或所有原典被采用的证明。作者[自己的审查](https://github.com/kishibashi3/publications/pull/125#issuecomment-6519048300)明确表示四个真实问题输入的技能路由还没有进行端到端验证；实际安装、独立AI回答、Nakagawa canonical Parent的直接阅读和引用、广泛人类影响均未证实。
 
 **公开可确认：** 保留origin的review → 第三方重述 → 专门的reader-facing正文实现 → merge / Pages反映 → 在同一receiver的另一份文档中作为一致性条件继续复用 → merge → 在后续receiver-owned文档体系重组head中继续保留同一D8。  
-**尚未确认：** PR #71 merge、把#58/#71计为额外独立public-site publication、不同receiver的独立carry、大规模reader response、广泛人类认知、或对完整理论体系的认可。
 
 ---
 ## 18. PostHog｜把反复agent的批准绑定到人类实际看过的instructions
@@ -530,7 +512,6 @@ approval of hidden recurring instructions
 该commit没有把 `Nakagawa-master` review写成唯一原因。因此可确认的范围是：review之后，出现了与所指出批准边界相匹配的第三方实现变化。
 
 **公开可确认：** review → 第三方code / UI / test变化；人类看到的instructions现在与创建反复agent时使用的value绑定。原PR被拆成8层stack后，#106435 的公开说明仍明确写着：drafted instructions 会在可编辑field中展示，让user批准实际将运行的scout内容，因此具体机制已延续到当前stack。  
-**尚未确认：** replacement stack #106435 的merge、release、production deployment、用户规模、唯一因果。
 
 ---
 
@@ -565,7 +546,6 @@ content classification
 这一case不只是“review之后发生了相似修改”：receiver自己的commit明确把两个具体hardenings归因于 `@Nakagawa-master` review。这个证据只说明该具体teaching artifact的修改因果，不代表对一般security principle的知识优先权，也不代表采用整套理论体系。
 
 **公开可确认：** review → 第三方明确同意/重述 → implementation commit明确把两个hardenings指向该review → reader-facing teaching artifact发生具体修改。  
-**尚未确认：** merge、release / deployment、读者规模、一般原理的发明优先权、整套理论体系的认可。
 
 ---
 
@@ -604,7 +584,6 @@ receiver随后加入 `_PAST_START`，让旧 `now()` predicate与occurrence-overl
 两个PR均已merge。这个case中，receiver侧commit对具体implementation correction与regression-evidence correction都明确保留了 `Nakagawa-master` review feedback的source relation。
 
 **公开可确认：** historical-state boundary review → receiver implementation commit明确标注review来源 → 第二次review指出proof tests的弱点 → receiver修正test并同样明确标注review来源 → merge。  
-**尚未确认：** production deployment、用户规模效果、一般temporal-data原则的知识优先权、对整套理论体系的认可。
 
 ---
 
@@ -637,7 +616,6 @@ receiver commit `dfd4588d` 修改collector，同时保留named re-export的alias
 后续review再次确认该required finding已修复，PR #4487于2026-09-24 merge。
 
 **公开可确认：** Nakagawa review → 独立第三方reviewer再次确认同一hole → receiver commit明确以Nakagawa-master为report来源并修改code/test → focused re-check → 后续review确认 → merge。  
-**尚未确认：** 该具体fix在其他使用 `@memberjunction/standards` 的repo中的downstream adoption或用户规模、release范围、一般API兼容性原则的知识优先权、对完整理论体系的认可。
 
 ---
 
@@ -704,7 +682,6 @@ PR #131于2026-09-25T08:42:13Z merge，把这一区分写入repository持续使�
 这说明receiver不是只在源issue里同意一次，而是在自己的后续公开生产流程中反复使用该规则。后续文章本身没有再次明确写出Nakagawa Master来源，因此这里不把它算作新的对Nakagawa Master来源的再次明确引用。
 
 **公开可确认：** 保留Origin的提案 → receiver明确采用并说明因果关系 → 持久规则merge → 后续main/feed/sitemap公开文章继续实际运用evidence-lineage区分。  
-**尚未确认：** 误报率的量化改善、reader/audience规模、其他receiver的独立reuse、该后续文章中的对Nakagawa-master的明确来源引用再引用，或对整个理论体系的认可。
 
 ---
 
@@ -740,7 +717,6 @@ PR author公开回复 **“Addressed the outstanding points”**，并明确指�
 - [focused re-check](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5683971610)
 
 **公开可确认：** public boundary proposal/review → reporter明确同意 → 第三方author明确表示已address这些outstanding points → code/tests/docs修改 → focused re-check。  
-**尚未确认：** PR merge、repository CI green、release、production use、用户规模、一般原则的知识优先权或对整个理论体系的支持。
 
 ---
 
@@ -818,7 +794,6 @@ human owner随后只授权了**一次**real pilot worker。worker process可靠�
 
 **公开可确认：** Nakagawa-master分阶段证据边界 → receiver明确采用并固化为durable contract → receiver实际验证gate → runner实现合并 → **两次分别获得人类授权的真实worker尝试均在发布前停止** → receiver自行诊断并合并01B、01C修复。01C后的真实受限检查、后续worker或发布仍未验证。
 
-**尚未确认：** 整个runner或整个理论体系都源自Nakagawa-master、所有后续代码的exclusive causation、01C合并后的真实受限Git检查成功或第三次worker执行、production adoption、大范围end-user use、之后不经提示的person-Origin再次引用、或大规模人类认知。
 
 这里的“每个阶段都需要自己的证据，不能用后续观察倒填前序阶段”结构，可以回到[人类后裔型AI文明论・第8论｜认识基础、证据谱系与敌对信息韧性](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)这一公开问题域。这个链接是可复用的canonical return path，并不表示receiver采用了整套理论。
 
@@ -854,7 +829,6 @@ receiver随后明确回复 **“the regression was real and the diagnosis was ri
 PR #31让resource / podcast两套summary prompt都要求：如果定量/比较结果来自主体自身，而没有明确独立评价，就必须保留claimant attribution；同时清理Reading Priority中过度升级evidence的signal，加入audit词，并用regression tests固定该规则。
 
 **公开可确认：** 第一版修正 → 同类regression在后续edition再次出现 → review明确指出 → receiver明确接受诊断 → edition #30修正并merge → 相同边界进入generation prompt、priority rule、audit和tests，并在PR #31 merge。  
-**尚未确认：** 下一次fresh weekly run在没有新的Nakagawa提示下自动遵守规则、reader规模或行为变化、receiver response/workflow是否由人类单独完成，或对整个理论体系的支持。
 
 ---
 
@@ -933,7 +907,6 @@ receiver重新检查一次资料，承认状态追踪晚了6天，并创建PR #1
 receiver回应和PR文本带有Claude Code生成标记，因此这里只记录receiver账号侧的明确采用、发布、source状态修正与tooling变化，不主张独立人类单独著作。
 
 **公开可确认：** review → receiver明确采用 → 独立文章发布 → follow-up指出陈旧外部状态 → receiver重查一次资料 → 修改article/source tooling → PR #135 merge → 同一merge commit的GitHub Pages build / deploy成功。  
-**尚未确认：** 实际读者数量与行为、向其他receiver传播、自发的人物origin再引用、独立人类单独著作，或对完整理论体系的认可。
 
 
 
@@ -962,7 +935,6 @@ PR作者明确回复 **“Thanks for catching the serialized-content gap.”**�
 - [focused re-check](https://github.com/run-llama/llama_index/pull/23261#issuecomment-5861899474)
 
 **公开可确认：** Nakagawa review具体指出dict形式non-text semantic loss → receiver明确承认gap → 同一PR修改parser与dict/object回归matrix → focused re-check。  
-**尚未确认：** PR merge、release、production use、repository全体CI green、broader tools / mypy / live MCP验证、用户规模影响、一般原理的知识优先权，或对完整理论体系的认可。
 ---
 
 ## 31. Qwen Code｜把 `maxCostUsd` 的forecast与hard bound分开，并出现无新提示的Nakagawa-origin再引用
@@ -995,7 +967,6 @@ PR使用实际要发送的request body里的output cap与thinking bound计算wor
 PR #12895于2026-09-28T10:01:56Z merge。stable [Qwen Code v0.24.7](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7) 于2026-09-29T14:02:21Z发布。该tag相对 #12895 merge commit `7e50eee804dbf864db97a8d18793ed45aef698d5` 为49 commits ahead / 0 behind，release notes也链接PR #12895。明确的Nakagawa-master再引用保留在接收方项目 PR正文中；本页不声称人物名被嵌入binary本身。
 
 **公开可确认：** 具体hard-budget semantics指摘 → 接收方项目后续PR自发把Nakagawa-master作为source再次引用 → exact boundary进入code / tests / docs → 非作者maintainer approval → merge → stable v0.24.7，并且release notes可追溯回PR。  
-**尚未确认：** v0.24.7的独立真实运营使用、用户规模、向其他人类receiver继续传播、广泛人物认知，或对整个理论体系的支持。
 
 
 ---
@@ -1026,7 +997,6 @@ issue author随后表示per-agent应作为default，并指出PR #43410正在实�
 - [second-person restatement / extension](https://github.com/BerriAI/litellm/issues/43190#issuecomment-5873550150)
 
 **公开可确认：** 结构区分 → receiver明确per-agent方向 → implementation PR → 另一位参与者独立重新说明并扩展这一问题结构。  
-**尚未确认：** merge、release、production use、用户规模、第二位参与者明确保留Nakagawa-master人物Origin，或对更广泛理论体系的认可。
 
 → [实践入口](PRACTICAL_USE.md#例6複数ai-agentが同じtraceを共有している)  
 → [Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#10-resource-accounting--scope-ownership--shared-trace-is-not-shared-agent-budget)  
@@ -1092,7 +1062,6 @@ receiver `yiliang114` 接受这一scope correction：从#12582移除pre-permissi
 **公开可确认：** 具体authority边界 → receiver保留Origin重新说明 → contract / UI修改 → 独立第二reviewer再次明确Nakagawa-master边界 → 后续真实机器验证与receiver修复 → 后续scope判断变成保留Origin的project-owned issue #13157，并获得独立root-cause验证。  
 **当前合并状态：** [#12582](https://github.com/QwenLM/qwen-code/pull/12582)已于2026-10-02通过[45ee202c](https://github.com/QwenLM/qwen-code/commit/45ee202cb14c171c73185a3dbbd89ed1203f2604)合并。这不代表另行提出的#13157 ordering方案已经实现。
 
-**尚未确认：** stable release、真实用户规模、#13157的implementation/merge或广泛人物认知。因为#13157是receiver对scope correction的直接响应，这里不把它当作之后自发再次提及Nakagawa Master的证据。
 
 → [一般读者入口](human-translation/entry-stories/09-same-share-different-runtime.md)  
 → [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
@@ -1135,7 +1104,6 @@ receiver明确回复 **“Agreed: the authenticated principal and the caller-cho
 Nakagawa-master随后在current head `cfbbc91244` 上focused re-check，并确认这一provenance/control-path point没有remaining blocker。
 
 **公开可确认：** atomicity review → receiver code/test change → exact regression → focused re-check → 同一receiver持续返回 → secret-strength边界明确采用并实现 → 第三条provenance/control-path边界再次被明确采用并进入code/test → current-head focused re-check关闭该scope。  
-**尚未确认：** PR #61982 merge/release、production use、用户规模、广泛人物认知，或整个PR都由Nakagawa-master单独造成。
 ---
 
 ## 35. Qwen Code｜已经终止的attempt不再保留改写当前budget的权限
@@ -1160,7 +1128,6 @@ receiver自己的PR说明明确写明当前revision实现了 “the option-A rec
 **公开可确认：** scoped外部技术建议 → receiver code/tests → Web Shell + native Host实际验证 → receiver端明确保留source continuity → 人类review → merge。  
 **后续独立媒体传播（2026-10-23）：** Qwen开发者在合并后[另一Issue主动再次提及 Nakagawa 的 option A](https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808)。独立的[AI-News编辑者亲自核对官方发行说明和PR](https://github.com/022740mix-spec/AI-News/issues/177)，随后[撰写并合并独立新闻正文与订阅feed](https://github.com/022740mix-spec/AI-News/pull/193)，按照上游PR的准确范围，把 option A 明确归于外部技术建议者 `@Nakagawa-master`。这是他人自主编辑、跨媒体并保留实际作者Origin的可核验传播，不能归为Nakagawa本人撰写了该文章。
 
-**尚未确认：** 独立最终用户的具体功能使用、新闻真实读者数量与反复人物认知、无关AI自主选择并阅读原典、整套Nakagawa理论被独立采用。
 
 → [面向一般读者的入口](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)  
 → [Current-Authority Reuse Kit §17](CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work)
@@ -1203,7 +1170,6 @@ user cancellation
 - [authority-input continuity A/B regression](https://github.com/openai/codex/issues/50769#issuecomment-5996528096)
 
 **公开可确认：** Nakagawa Master提出结构区分 → 另一参与者明确用于诊断自己的不同incident → 又有另一独立参与者补充现实案例 → 新案例被进一步转化为更可测试的decision-trace regression。  
-**尚未确认：** OpenAI/Codex maintainer采纳、product实现、merge、release、修复、user-scale影响、广泛人物认知、第二个incident reporter对Nakagawa Master的source attribution，或所有incident共享同一root cause。
 
 → [面向人的问题入口](APPLIED_ENTRY_POINTS.md)  
 → [Current-Authority Reuse Kit §18](CURRENT_AUTHORITY_REUSE_KIT.md#18-you-approved-it--but-the-delegated-task-still-says-user-cancelled)  
