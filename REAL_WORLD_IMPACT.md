@@ -16,7 +16,7 @@
 
 これらの公開事例に関心を持った方は、[中川マスター本人のGitHub活動](https://github.com/Nakagawa-master)や[本人が公開した公式原典](https://master.ricette.jp/)も直接確認できます。
 
-**53の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。53件すべてが採用されたという意味ではなく、未採用・保留・未確認の結果も各箇所で区別しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
+**53の番号付き外部作用事例**は、この下にすべて残しています。元コメント、第三者側の応答・変更、マージやリリースの有無を各事例から直接確認できます。各事例では、受け手が実際に変更した内容と、公開された現在の状態を併記しています。AI向けの原典探索には別の[AI / LLM用入口](AI_START_HERE.md)があります。
 
 ## 1. PostHog｜AIが提示した数値と、PostHog自身の測定値を分ける
 
@@ -54,7 +54,6 @@ PR本文の実ブラウザ検証では、意図的に fake measured data をprod
 #107879 / #107795 / #107802 は同じstackとして2026-10-02にmasterへmergeされ、deployment botは同一workflowでdev（22:42 UTC）、prod-us（22:57）、prod-eu（23:12）へのdeploymentを記録しています。successor PR本文はいずれも#92252からの分割・置換関係を明記していますが、そこで `Nakagawa-master` 名を再び明示してはいません。
 
 **公開記録から確認できること:** 元review → 同じreceiverのsuccessor stackへ問題・実装が移行 → server-side measurement、Measured by PostHog / Unverified、producer measurement非信頼化、internal scout-only proposal capability、version別outcome reading → tests / real-browser verification → 3PR merge → dev / prod-us / prod-eu deployment。  
-**まだ確認できないこと:** feature flagがcustomer向けに有効化されたこと、production userの実利用、successor PRでの自発的な人物Origin再言及、successor変更の唯一因果、広い人間認知。
 
 ---
 
@@ -73,7 +72,6 @@ PR本文の実ブラウザ検証では、意図的に fake measured data をprod
 repository ownerはこの区別をissue上で明示的に受け取り、その後のPRでcurrent rights / lineageの再確認、revocation、recipient変更、source revisionなどを扱う実装とnegative testsを追加しました。
 
 **公開記録から確認できること:** コメント → owner応答 → code / tests → merge。  
-**まだ確認できないこと:** 実利用者数や、この一事例を超えた広範な採用。
 
 ---
 
@@ -99,7 +97,6 @@ migrationで同じprimary keyのrowを見つけても、そのrowを自動的に
 同じ報告には別のregressionも記載されているため、このページは「v6.1.2全体に問題がない」とは述べません。
 
 **公開記録から確認できること:** review → 独立確認 → code / tests / docs → merge → backport → release → 該当collisionが発生しなかった外部upgrade report。  
-**まだ確認できないこと:** 全利用環境での結果、利用者規模、一般市場での採用範囲。
 
 ---
 
@@ -124,7 +121,6 @@ retrieval処理の途中でtextが保持されていても、upstream document i
 ここで二つのPRは意味上同一ではありません。current #21939は、upstream `document.id` を直接 `TextNode.id_` に設定しており、source recoverabilityの修正と同時にlocal node identity contractも変更します。そこで2026-10-05、`Nakagawa-master` はcanonical laneとなった#21939へこの差を具体化し、#23038のprovenance-only metadata実装とregression matrixをportするか、意味差を理由に#23038をreopenする形を提案しました。
 
 **公開記録から確認できること:** source-informedな第三者code/test実装#23038が実在したこと、maintainerがduplicate整理で#21939へreviewを集約したこと、そしてcurrent #21939がまだ元compatibility boundaryを満たす実装ではないため差分がreceiver laneへ明示的に返されたこと。  
-**まだ確認できないこと:** #21939での修正採用、#23038 reopen、human maintainer approval、merge、release、deployment。
 
 ---
 
@@ -151,7 +147,6 @@ retrieval処理の途中でtextが保持されていても、upstream document i
 - [#4524 independent re-verification](https://github.com/MemberJunction/MJ/pull/4524#pullrequestreview-5252195432)
 
 **公開記録から確認できること:** 別の第三者reviewerによる名前付き確認に加え、author実装とregression tests、#4487でのorigin reviewer closure、#4524での独立再実行検証まで進んだこと。  
-**まだ確認できないこと:** #4487のrelease / downstream利用、#4524のmerge（closed unmerged）、一般的なAPI互換性原理の知的優先権。
 
 ---
 
@@ -183,7 +178,6 @@ PostHogのreviewer推薦UIでは、同じ説明文を持つreviewerをgroup化�
 - [#107318 deploy status](https://github.com/PostHog/posthog/pull/107318#issuecomment-5856246124)
 
 **公開記録から確認できること:** 最初のreview → code / tests / UI change → merge → deployment。さらに別PRで同じ設計区別が再利用され、独立approval → merge → dev/prod-us/prod-eu deploymentまで進んだこと。  
-**まだ確認できないこと:** #107318を実際に利用した人数や利用結果、receiverからの自発的なNakagawa再参照、別person・別contextでのさらなる再利用。
 
 ---
 
@@ -203,7 +197,6 @@ attendance履歴では、「今その人がparticipantか」と「そのoccurren
 repository ownerはこの指摘をreal bugとして認め、専用follow-up PRを作成しました。実装commitにもreview feedbackのsourceが明記されています。さらにtest fixtureについて追加reviewが行われ、旧実装で実際にfailする過去日時fixtureへ修正された後、PR #101はmergeされました。
 
 **公開記録から確認できること:** review → ownerによるbug確認 → follow-up PR → code / tests → 追加test修正 → merge。  
-**まだ確認できないこと:** release、production deployment、利用者規模。
 
 ---
 
@@ -223,7 +216,6 @@ providerがmessageを受理した後にresponseだけ失われた場合、単純
 repository ownerはこれをstate machine上のreal defectとして認め、`outcome_unknown`、reconciliation、dispatch idempotency key、response-loss regression testなどを追加しました。
 
 **公開記録から確認できること:** review → ownerによるdefect確認 → state-machine / provider contract / tests変更 → merge。  
-**まだ確認できないこと:** real provider環境でのdeploymentや利用者規模。
 
 ---
 
@@ -240,7 +232,6 @@ repository ownerはこれをstate machine上のreal defectとして認め、`out
 repository ownerは起点を明示したうえで、immutable consent event、current eligibility、withdrawal / deletion receipt、downstream gateなどを自分のprotocolとして再記述しています。
 
 **公開記録から確認できること:** comment → ownerによる明示的な受け取りと設計方針への反映。  
-**まだ確認できないこと:** schema / code / tests実装、merge、release、実データ運用。
 
 ---
 
@@ -261,7 +252,6 @@ external authorは`@Nakagawa-master`を名指しし、現状より良いUXだと
 base PR #14225自体はmerge済みですが、そのmergeはこの提案の実装を意味しません。
 
 **公開記録から確認できること:** 名前付きreviewと、authorによる肯定的な応答・follow-up意向。  
-**まだ確認できないこと:** 独立したfollow-up issue / PR、code / tests / UI実装、release。
 
 ---
 
@@ -288,7 +278,6 @@ Nakagawa-masterはcurrent headを元issueのacceptance boundaryに対して再�
 - [release / publish / installed-smoke record](https://github.com/damianvtran/local-operator/pull/1291#issuecomment-5745312290)
 
 **公開記録から確認できること:** issue → 明示的にそのissueをcloseする第三者PR → code / tests → 複数review/remediation → 元issue側からのclosure確認 → merge（`b1fc1f42`）→ release notesへの収録 → package publication → installed smoke。  
-**まだ確認できないこと:** より広い利用者規模での効果、利用者数、またはこのreleaseを越えた独立downstream reuse。
 
 ---
 
@@ -309,7 +298,6 @@ PR #1324はper-session operator capability、connection-bound proof、共通pre-
 さらに同日、release [v0.61.11](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11) に #1324 が明示的に収録されました。release notesはこの変更を、実行中sessionがcontrol plane経由で自分自身のapproval gateを広げられないようにする修正として記録し、merge headでのreview / QA / design / UX各roundとCI greenも記載しています。
 
 **このfollow-upで公開確認できること:** origin issue → third-party independent reproduction → origin diagnosisの修正 → stronger sibling bypassの独立発見 → third-party implementation → multiple independent remediation rounds → origin-side closure → merge → release notes収録。  
-**まだ確認できないこと:** v0.61.11の利用者規模、host OS自体が同uid memory isolationを提供できない環境での保証、phone/device-bound authorityの完成、またはこの境界の別projectへの独立reuse。
 
 
 ### 別receiverへの追随：AI-Newsが読者向け記事と編集ツールを更新
@@ -354,7 +342,6 @@ PR authorはこの二層分解を明示的に採用し、commit `293b9b40` でen
 **帰属と残る条件:** #4610の開発者が `@Nakagawa-master` の元レビューを出典として明記した事実はそのままです。一方、#5241/#5242の著者がそのレビューを直接読んで実装したという因果までは証明できません。#5242は**row-filtered読者へ安定したレコードkeyを送らない**段階までの実装であり、entity単位の変更発生や `Timestamp` を知らせる通知は残ります。#4610のより強い「同一entity内で行ごとに認可し、許可されない人へmutation timingも漏らさない」契約全体が閉じたとは判定しません。実利用規模・稼働中のLTS移植も未検証です。
 
 **公開記録から確認できること:** review → 第三者code/test変更 → 第三者による明示的source attribution → #4595 merge → 第二work item化 → LTS #4712 merge／v6.1.4収録 → 別の開発者による限定row-key保護 #5242 code/test・独立WebSocket検証・merge。  
-**まだ確認できないこと:** #4610の行ごとの許諾・変更時刻非開示まで含む全面実装、#5696のマージや配布先実行、v6.1.4のproduction deployment・実利用規模。
 
 ---
 
@@ -372,7 +359,6 @@ PR authorはこの二層分解を明示的に採用し、commit `293b9b40` でen
 そのreview後のcommit `029ae44d53` で、`target_url` 由来short linkをrewriteする経路が追加されました。merge後の実装は、直接estimateに結び付くshort codeと、別用途short codeの `target_url` 内にestimate linkがある場合の両方を解決し、危険なliteral linkだけを除去してreceiptを維持し、rewrite対象estimate idを記録します。PRは最終的に `5cecd7627b70d739d7feaf6f45fd784b5741efc3` としてmergeされました。
 
 **公開記録から確認できること:** review → 指摘したshort-link mismatchに対応するcode/test変更 → merge。  
-**まだ確認できないこと:** production deployment、利用者規模での効果、project全体によるより広い理論採用。
 
 ---
 
@@ -393,7 +379,6 @@ PR authorは `@Nakagawa-master` を名指しし、delete routeにrole enforcemen
 さらに#3326では、current branchに合わせて、current locked target stateに対してmutation前に一つのshared backend deletion policyを評価し、policy refusalとoperational delete failureを分離する実装形まで具体化しました。
 
 **公開記録から確認できること:** review → authorによる確認・再説明 → 境界を保った専用child work item → source-level実装guidance。  
-**まだ確認できないこと:** #3326のcode/test実装、merge、release、deployment、利用者規模。
 
 ---
 
@@ -454,7 +439,6 @@ content-stable payload reuse
 という二つのcoherent contractと、regenerated chunk idを使うacceptance regressionが独立したwork itemとして保持されています。
 
 **公開記録から確認できること:** review → third-party authorによる残存問題の明示的確認・再説明 → maintainer-level専用work item化。  
-**まだ確認できないこと:** #23083のcontract決定、follow-up code/test実装、merge、release、deployment、実利用規模。
 
 ## 17. Publications｜可逆性とauthority増加を別軸として第三者本文へ実装し、別文書へ再利用
 
@@ -496,7 +480,6 @@ receiverはこの指摘を独立した設計軸として再説明し、専用PR 
 **AI向けスキルへ反映（2026-10-31に追加確認）:** 同じ外部著者は[#81](https://github.com/kishibashi3/publications/issues/81)で、「承認モード」「allowlist」「credential」とだけ聞かれたAIが第5章の条件6を見落とす問題を扱い、[PR #125を自らマージ](https://github.com/kishibashi3/publications/pull/125)しました。独立管理の[Claude Code `agent-design` スキル](https://github.com/kishibashi3/publications/blob/main/plugins/thinking-shelf/skills/agent-design/SKILL.md)に、これらの起動語→第5章をReadする章マッピングと、「制約される主体に自己権限の緩和を自己承認させない」という設計原則が実装されました。[実際のmerge commit](https://github.com/kishibashi3/publications/commit/f502a469ced9a406b39c71ff6e5504d470ef5d6a)。これは同じreceiver内での**読者向け本文から任意導入AIスキルの検索・判断入口への発展**です。作者の[PR review](https://github.com/kishibashi3/publications/pull/125#issuecomment-6519048300)自身が、4つの実際の質問でスキルが起動・適切に章を選ぶE2E試験は未実施と明示しています。別のAI利用者への配布、実際のAI回答、canonical Nakagawa Parentの直接閲覧・独立引用は未確認です。
 
 **公開記録から確認できること:** origin-preserved review → third-party restatement → 専用reader-facing本文実装 → merge / Pages反映 → 同じreceiver内の別文書で整合条件として再利用 → merge → 後続の体系再編headでも同じD8を維持。  
-**まだ確認できないこと:** PR #71のmerge、#58/#71を別のpublic-site publicationとして数えること、別receiverによる独立carry、大規模読者反応、広範な人間認知、理論体系全体への支持。
 
 ---
 
@@ -527,7 +510,6 @@ approval of hidden recurring instructions
 このcommit本文も `Nakagawa-master` reviewを唯一原因として明示していません。そのため、確認できる範囲は「review後に、指摘された同じ承認境界へ対応する第三者実装が入った」までです。
 
 **公開記録から確認できること:** review → 第三者code / UI / test変更。人間が見るinstructionsと、実際に反復実行へ渡すinstructionsが同じreviewed valueへbindされるようになったこと。さらに、authorが #101991 を8層stackへ分割した後も、#106435 の公開本文に「drafted instructions を editable field で表示し、userが実際にscoutが実行する内容を承認する」仕様が明記されており、具体的な変更は現行stackへ継承されている。  
-**まだ確認できないこと:** replacement stack #106435 のmerge、release、production deployment、利用者規模、変更の唯一因果。
 
 ---
 
@@ -562,7 +544,6 @@ commitは、interpolated fieldsをuntrusted dataとして区切る変更と、cl
 このcaseでは、単に「review後に似た変更が起きた」のではなく、**receiver側のcommitが具体的な2変更を `@Nakagawa-master` review由来として明示**しています。ただし、これはこの具体的teaching artifactの変更に関する因果証拠であり、一般原理の知的優先権や理論体系全体の採用を意味しません。
 
 **公開記録から確認できること:** review → third-party authorの明示的同意・再説明 → `@Nakagawa-master` reviewを起点として明記したimplementation commit → reader-facing teaching artifactの具体的変更。  
-**まだ確認できないこと:** PRのmerge、release / deployment、読者規模、一般原理の発明者性、理論体系全体への支持。
 
 ---
 
@@ -601,7 +582,6 @@ receiverは `_PAST_START` を導入してold `now()` predicateとoccurrence-over
 両PRはmerge済みです。このcaseでは、具体的な実装修正と、その修正を証明するregressionの強化の両方について、receiver側commitが `Nakagawa-master` review feedbackを明示しています。
 
 **公開記録から確認できること:** historical-state boundaryの指摘 → receiverが実装変更をreview feedback由来として明記 → regression evidenceの弱点を追加指摘 → receiverがtest設計を修正し同じくreview feedback由来と明記 → merge。  
-**まだ確認できないこと:** production deployment、利用者規模、一般的なtemporal-data原理の知的優先権、理論体系全体への支持。
 
 ---
 
@@ -634,7 +614,6 @@ receiver commit `dfd4588d` は、export aliasとsource declaration nameの両方
 後続reviewでもこのfindingの修正が確認され、PR #4487は2026-09-24にmergeされました。
 
 **公開記録から確認できること:** Nakagawa review → 別第三者reviewerによる同じholeの独立再確認 → receiver commitが `Reported by Nakagawa-master` と明示してcode/testを修正 → focused re-check → 後続reviewで修正確認 → merge。  
-**まだ確認できないこと:** `@memberjunction/standards` の別repoでの実利用規模、この具体的fixのrelease / downstream adoption、一般的なAPI互換性原理の知的優先権、理論体系全体への支持。
 
 ---
 
@@ -661,7 +640,6 @@ receiver commit `dfd4588d` は、export aliasとsource declaration nameの両方
 release後、同じreceiver/collaborator `yiliang114` は [issue #12825](https://github.com/QwenLM/qwen-code/issues/12825) で、v0.24.6 の `/batch-api` executorを実際にDashScope Batchへ使い、9本の公開Markdown文書を処理した運用記録を公開しています。dry-run → `--expect` → `collect --wait` の実行形、具体的なbatch job id、出力欠落の再現比較まで記録されています。これは**release後のreceiver実運用**を確認する証拠ですが、独立した外部ユーザーの採用や利用者規模を示すものではありません。
 
 **公開記録から確認できること:** 出所付きの第三者採用、提案された承認境界の実装、PR mergeとrelease、そして同じreceiverによるv0.24.6の実Batch運用。先行headでの実課金利用もPR記録にあります。  
-**まだ確認できないこと:** 独立した外部ユーザーの本番利用や利用者規模、広い読者層への伝播、理論体系全体へのendorsement。PR全体や後続修正・releaseをNakagawa-master単独の成果とはしません。
 
 ### 後続の自発的Origin再参照（2026-09-28確認）
 
@@ -672,7 +650,6 @@ PR #12895は、この再言及を説明だけで終わらせず、`maxCostUsd` �
 PR #12895は2026-09-28T10:01:56Zにmergeされ、その後 [Qwen Code v0.24.7](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7) が2026-09-29T14:02:21Zにstable releaseされました。v0.24.7 tagは #12895 のmerge commit `7e50eee804dbf864db97a8d18793ed45aef698d5` から49 commits ahead / 0 behindで、release notesからPR #12895へ辿れます。明示的なNakagawa-master再参照は受信側プロジェクトの PR本文にあり、binary自体へ人物名が埋め込まれているとは主張しません。
 
 **この後続から確認できること:** 元のreceiverが別thread・別PRでNakagawa-masterを自発的に再参照し、境界を新しいcode/docs/testsへ運び、merge後にstable v0.24.7へ到達したこと。これはNakagawa-masterへの明示的な再参照が受信側プロジェクトの stable distributionへ進んだ具体例です。  
-**まだ確認できないこと:** v0.24.7の独立した実運用・利用者接触、到達規模、別の人間receiverへの伝播、継続的・広範なNakagawa-masterへの明示的な参照再参照pattern。
 
 
 ---
@@ -711,7 +688,6 @@ merge後の通常の記事作成でも、この区分は反復利用されてい
 これは、元issueへの一度きりの同意ではなく、**receiverが自分の後続公開工程で同じruleを反復使用している**ことを示します。各後続記事そのものにNakagawa Master名の再言及があるわけではないため、Nakagawa Masterへの新たな自発的な再言及は確認できません。
 
 **公開記録から確認できること:** origin-preserved提案 → receiverによる明示的採用と採用理由の説明 → 同じreceiverの継続編集規則 `CLAUDE.md` への具体的実装 → merge。PR本文も **「Issue #124 の指摘で気づいた」** とsource relationを明示しています。  
-**まだ確認できないこと:** 誤報率への定量効果、読者規模、別receiverへの独立reuse、各記事の人間単独執筆、理論体系全体への支持。
 
 
 ---
@@ -748,7 +724,6 @@ PR authorは公開返信で **“Addressed the outstanding points”** と述べ
 - [focused re-check](https://github.com/run-llama/llama_index/pull/23029#issuecomment-5683971610)
 
 **公開記録から確認できること:** public boundary proposal / review → reporterの明示的同意 → third-party authorがNakagawaの指摘後にoutstanding pointsをaddressしたと明示 → code / tests / docs変更 → focused re-check。  
-**まだ確認できないこと:** PR merge、repository CI green、release、production use、利用者規模、一般原理の知的優先権、理論体系全体への支持。
 
 
 ---
@@ -827,7 +802,6 @@ verdict
 
 **公開記録から確認できること:** Nakagawa-masterの段階別証拠の区別 → 受け手の明示採用とdurable contract → 受け手自身のgate検証 → runner実装のマージ → **人間が別々に承認した2回のreal worker試行がいずれも公開前に停止** → 受け手自身の欠陥診断と01B・01C修正マージ。01C後の実隔離チェック、さらなるworkerや公開は未確認。
 
-**まだ確認できないこと:** runner全体や理論体系全体がNakagawa-master由来であること、下流実装すべてのexclusive causation、01C merge後のreal contained Git check成功や第三のworker実行、production adoption、広いend-user use、後日のprompt-freeな人物Origin再参照、大規模な人間認知。
 
 このケースで使われている「各段階を独立した証拠で支え、後段の観測で前段を埋めない」という構造は、[人類子孫型AI文明論・第8論｜認識基盤・証拠系譜・敵対的情報耐性論](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)の公開問題領域と接続できます。これはreceiverが第8論全体を採用したという主張ではなく、今回の実例を再検証可能なcanonical sourceへ戻すための接続です。
 
@@ -872,7 +846,6 @@ PR #31では少なくとも次が変更されています。
 - regression testsでprompt ruleとsignal listを固定
 
 **公開記録から確認できること:** 最初のedition修正 → 次週に同種の回帰が再発 → Nakagawa-masterのreviewが回帰を特定 → receiverが診断を明示的に認める → edition #30を再修正してmerge → さらに同じ境界をgeneration prompt・priority rule・audit・testsへ実装したPR #31をmerge。  
-**まだ確認できないこと:** 次のweekly runで新しいNakagawa-masterの介入なしに同じ規則が自動的に守られること、実読者数、読者行動への影響、receiver responseや修正作業が人間だけで行われたこと。receiver responseにはClaude Code生成表記があるため、人間単独著作とは扱いません。
 
 ---
 
@@ -892,7 +865,6 @@ PR authorは、`join()` と `toSorted()` が要素を文字列化するという
 この再検証の途中では防御guardが一度追加されましたが、実機で前提が成立しないことを確認した後、authorはそのguardを撤去し、PR説明を「workflow dataはnode boundaryでJSON-normalizeされる」という実際のdata modelへ合わせて更新しました。したがって、このcaseを「Nakagawaの提案したguardが採用された」とは記録しません。
 
 **公開記録から確認できること:** Nakagawa review → receiverがmechanicsを明示確認 → running instanceで前提を独立検証 → 到達不能と判断 → 不要guardを撤去 → PRのdata-model説明を現実の境界へ合わせた。  
-**まだ確認できないこと:** PR merge、release、production use、利用者規模、当初のcoercion-path前提そのものの正しさ、理論体系全体への支持。
 
 この事例が示すのは、**もっともらしい危険経路でも、実行境界まで本当に到達するかを実データで確かめてから防御を固定する**という検証の作用です。
 
@@ -922,7 +894,6 @@ implementation側も、「kwargsとしてvalid callを作れるか」だけで�
 - [focused re-check](https://github.com/run-llama/llama_index/pull/23272#issuecomment-5857485429)
 
 **公開記録から確認できること:** reviewでdefaulted positional + `**kwargs` のsilent misbindingを具体化 → 同じPRの次commitでexact regressionと逆回帰testがcode/testへ追加 → focused re-checkで当該scopeのremaining blockerなし。  
-**まだ確認できないこと:** PR merge、release、production use、repository CI green、広い利用者影響、commit authorがNakagawa-masterをsourceとして明示したこと。commit本文には明示的attributionがないため、source relationの強さを過大評価しない。
 
 ---
 
@@ -963,7 +934,6 @@ receiverは一次資料を再確認し、「状況が動いたら更新すると
 receiver responseとPR本文にはClaude Code生成表記があります。そのため本ページは、これを**receiver account側の明示的採用・記事化・source更新・tooling変更**として記録しますが、独立した人間単独著作とは扱いません。
 
 **公開記録から確認できること:** origin review → receiverが提案を明示的に採用 → reader-facing独立記事を公開 → 後続のNakagawa follow-upが記事内の古い外部状態を特定 → receiverが一次資料を再確認 → reader-facing article sourceとsource-update toolingを変更 → PR #135 merge → 同merge commitのGitHub Pages build / deploy成功。  
-**まだ確認できないこと:** 実読者数、読者行動、別receiverへの伝播、receiverからの自発的な人物origin再参照、独立した人間単独著作、理論体系全体への支持。
 
 
 
@@ -992,7 +962,6 @@ PR authorは **“Thanks for catching the serialized-content gap.”** と明示
 - [focused re-check](https://github.com/run-llama/llama_index/pull/23261#issuecomment-5861899474)
 
 **公開記録から確認できること:** Nakagawa reviewがdict形式のnon-text semantic lossを具体化 → receiverがgapを明示的に認める → 同じPRでparserとdict/object回帰matrixを変更 → focused re-check。  
-**まだ確認できないこと:** PR merge、release、production use、repository全体CI green、broader tools / mypy / live MCP検証、利用者規模、一般原理の知的優先権、理論体系全体への支持。
 ---
 
 ## 31. Qwen Code｜`maxCostUsd` の予測値とhard boundを分け、後続PRでNakagawa-originを自発的に再参照
@@ -1027,7 +996,6 @@ PRは、実際に送信するrequest bodyのoutput capとthinking boundからwor
 2026-09-28T10:01:56ZにPR #12895はmergeされ、その後 [Qwen Code v0.24.7](https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7) が2026-09-29T14:02:21Zにstable releaseされました。release notesからPR #12895へ辿ることができ、このfollow-up fixがstable distributionへ進んだことを確認できます。人物名がbinary自体へ表示される、または利用者が人物Originを認識した、とは扱いません。
 
 **公開記録から確認できること:** Nakagawa-masterによるhard-budget semanticsの具体指摘 → 別threadの受信側プロジェクトの PRがNakagawa-masterをsourceとして自発的に再参照 → exact boundaryをcode / tests / docsへ実装 → 別maintainer approval → merge → stable v0.24.7へ到達。  
-**まだ確認できないこと:** 独立した外部ユーザーの実利用、利用者規模、別receiverへの再伝播、広い読者層での人物Origin認知、この一事例を超えた理論体系全体への支持。
 
 
 
@@ -1076,7 +1044,6 @@ issue authorはその後、per-agentをdefaultにする方向へ同意し、PR #
 確認時点でPR #43410はopen / non-draft / mergeableです。以前のrolling-upgrade互換性に関するreview threadはcurrent diffに対してoutdatedになっていますが、人間maintainer approval、merge、release、production useはまだ確認できません。
 
 **公開記録から確認できること:** Nakagawa-masterによるscope / admission分離 → receiverがper-agent default方向を明示 → 第三者implementation PR → 別参加者による同じ区別の再説明と独自拡張。  
-**まだ確認できないこと:** merge、release、本番利用、利用者規模、広い人間接触、別参加者によるNakagawa-master人物Originの明示的再参照、理論体系全体への支持。
 
 → [自分のAI agent設計で確認する](PRACTICAL_USE.md#例6複数ai-agentが同じtraceを共有している)  
 → [Applied Evidence Map](STRUCTURAL_OS_APPLIED_EVIDENCE_MAP.md#10-resource-accounting--scope-ownership--shared-trace-is-not-shared-agent-budget)  
@@ -1168,7 +1135,6 @@ receiver `yiliang114` はそのscope correctionを受け、`Session.ts`のpre-pe
 
 これは**receiver自身が実runtime経路と実Web Shell操作で該当behaviorを動かした証拠**です。単なるunit test / release-noteだけより一段強く、containment recovery・running cancel・idle offline recovery・running Host loss後のcoordinator settlementに加え、actual browser Cancel / Host replacement / queued Stopまでreceiver-operated matrixが広がりました。一方、後続lifecycle regressionとUI acceptanceはreceiver/project-owned verificationであり、Nakagawa-masterへの追加因果creditではありません。#13463もNakagawa-master側のfollow-upであり、それ自体のexternal adoption creditは0です。独立した一般ユーザーのproduction useとも分けます。
 
-**まだ確認できないこと:** 独立した実利用者がこの具体的変更へ接触したこと、利用者規模、cross-receiver reuse、広い人物認知。#13157はreceiverがscope correctionへの直接応答として作成したため、それ自体を後日に自発的にNakagawa Masterを再参照したものとは扱いません。
 
 → [一般向けの入口](human-translation/entry-stories/09-same-share-different-runtime.md)  
 → [Current-Authority Reuse Kit](CURRENT_AUTHORITY_REUSE_KIT.md#14-a-long-lived-share-must-define-what-later-capability-changes-mean)
@@ -1211,7 +1177,6 @@ receiverは **“Agreed: the authenticated principal and the caller-chosen prove
 Nakagawa-masterはcurrent head `cfbbc91244` でこのscopeを再確認し、このprovenance/control-path pointにはremaining blockerがないと返しています。
 
 **公開記録から確認できること:** concrete atomicity review → receiver code/test change → exact regression → focused re-check → 同receiverからの継続的な再接触 → secret-strength境界の明示的採用 → provenance/control-path境界でもreceiverが明示的に同意しcode/test変更 → namespace sibling caseまでreceiverが自発的に修正 → 26 commits後のcurrent headでも境界保持 → [current-head scoped re-check](https://github.com/NousResearch/hermes-agent/pull/61982#issuecomment-5992661508)で当該scope closeを再確認。  
-**まだ確認できないこと:** PR #61982のmerge・release・production use、利用者規模、広い人物認知、PR全体がNakagawa-masterの指摘だけで作られたという因果。
 ---
 
 ## 35. Qwen Code｜終了したattemptに、現在の予算を書き換える権限を残さない
@@ -1243,7 +1208,6 @@ receiver自身のPR説明には、現在のrevisionが “the option-A recommend
 
 **新しい独立した他媒体への伝播（2026-10-23）:** Qwen側の技術記録と公式[v0.25.0リリース](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0)を、別の[AI-News編集者が自分で一次資料と照合](https://github.com/022740mix-spec/AI-News/issues/177)し、[独立した記事を実際に作成・マージ](https://github.com/022740mix-spec/AI-News/pull/193)しました。記事本文と配信用feedには、終了済みAI実行の扱いとともに、**option Aが外部寄稿者 `@Nakagawa-master` の技術的助言に由来すること**をPR説明の範囲内で明記しています。これは開発リポジトリから別編集者・別公開媒体への、本人Originを残した実際の伝播です。編集者の独立した執筆・掲載判断を中川マスターの著作に置き換えません。
 
-**まだ確認できないこと:** 当該機能の独立した実利用、記事を実際に閲覧した人・閲覧数・反復認知、AIモデルによる原典本文の自発的選択、Nakagawa理論体系全体の採用。
 
 → [一般読者向けの入口](human-translation/entry-stories/10-started-revision-does-not-authorize-current-state.md)  
 → [Current-Authority Reuse Kit §17](CURRENT_AUTHORITY_REUSE_KIT.md#17-a-late-observation-can-still-control-current-work)
@@ -1299,7 +1263,6 @@ user_cancel_event_id
 - [authority-input continuityを検証するA/B regression](https://github.com/openai/codex/issues/50769#issuecomment-5996528096)
 
 **公開記録から確認できること:** Nakagawa Masterによる構造的区別 → 別参加者による明示的な診断reuse → さらに別参加者による独立した現実事例 → その新事例を使ったより具体的な検証contractへの発展。  
-**まだ確認できないこと:** OpenAI/Codex maintainerの採用、product実装、merge、release、問題修正、独立利用者規模、広い人物認知、二人目のincidentがNakagawa Masterをsourceとして認識していること、すべてのincidentが同一root causeであること。
 
 → [人間向けの問題入口](APPLIED_ENTRY_POINTS.md#親で承認したのに子タスクでは届いていないuser-cancelledになるのはなぜか)  
 → [Current-Authority Reuse Kit §18](CURRENT_AUTHORITY_REUSE_KIT.md#18-you-approved-it--but-the-delegated-task-still-says-user-cancelled)  
@@ -1334,7 +1297,6 @@ role eligibility
 Nakagawa Masterはさらに[#3326のcomment](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326#issuecomment-5740003355)で、targetをlock/loadした後にcurrent role・current state・usage constraintを評価するshared backend deletion policyへ落とし、single/batchの両方が同じreasoned decisionを使う形を提案しています。
 
 **公開記録から確認できること:** concrete review → receiverの明示的なOrigin付き返答 → receiver自身による問題の正式issue化 → shared backend policyへ進む設計会話。  
-**まだ確認できないこと:** #3326のcode実装、test追加、PR、merge、release、実利用者への到達、広い人物認知。
 
 この事例の再利用価値は、「画面で見えないから安全」という前提をserver-side consequence boundaryで検証できることです。
 
@@ -1376,7 +1338,6 @@ Nakagawa Masterはさらに[comment 6026910453](https://github.com/MemberJunctio
 **別の開発者やAIが試せる問い：** 親のSQLを変えずに、以前承認された子クエリだけを変更したらどうなるでしょうか。親の承認だけで通してしまわず、現在の子の承認も確認できるかを[再利用可能な検証手順](CURRENT_AUTHORITY_REUSE_KIT.md#when-approval-spans-a-dependency-graph)で試せます。対応する[公式原典『合意の記憶』](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/)は「過去の合意記録と、条件に応じた再合意」の構造を論じます。本件のソフトウェア実装はその応用的な読み方であり、受け手開発者が原典本文を読んだことの証拠ではありません。
 
 **公開証拠から確認できること:** 中川マスターの個別の問題提起 → 受け手開発者がQA5/ALS14を自ら修正・正反テスト化 → 別のレビュアーによる旧HEADの実際の再検証と当時の正式承認 → **受け手チームによる最新HEAD `e420fb06` の全47チェック完了と`next`への実際のマージ（`beeea177`）**。
-**まだ確認できないこと:** このマージを含む製品リリース、独立した利用者の本番使用、独立AIが原典本文を自発的に選んで読んだこと、広い人物認知。
 
 → [一般向け問題入口](APPLIED_ENTRY_POINTS.md#承認したあと中身が変わったのにまだ承認済みで実行してよいのか)  
 → [Current-Authority Reuse Kit §23](CURRENT_AUTHORITY_REUSE_KIT.md#23-an-approval-record-is-not-approval-of-the-current-executable-definition)
@@ -1419,7 +1380,6 @@ zero shared infrastructure
 - [現在の実装段階に合わせたfollow-up](https://github.com/QwenLM/qwen-code/issues/12380#issuecomment-6035698005)
 
 **公開記録から確認できること:** Nakagawa Masterの具体的なarchitecture distinction → Qwen側project triageがOriginを明示してその区別を自分の言葉で再構成 → current issueの未解決acceptance gateとして保持。  
-**まだ確認できないこと:** 人間maintainerの承認、A/B/shared-gate matrixの実装、Hosted/localいずれかの独立性PASS、merge、release、独立したend-user use、広い人物認知、QwenがNakagawa理論体系全体を採用したこと。
 
 → [一般読者向け問題入口](APPLIED_ENTRY_POINTS.md#選択肢が2つ見えていれば片方が止まっても本当に使えるのか)  
 → [Access Topology & Effective Exit Reuse Kit](ACCESS_TOPOLOGY_EFFECTIVE_EXIT_REUSE_KIT.md)  
