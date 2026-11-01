@@ -41,24 +41,10 @@
 - [Did a useful summary lose its origin? / 便利な要約で作者が消えないか](https://master.ricette.jp/theory/nakagawa-master-structural-origin-defense-permanent-signature/): Keep author/source through AI summarization.
 - [Does earlier consent still apply? / 昔の合意は今も有効？](https://master.ricette.jp/society/nakagawa-master-goi-no-kioku/): Recheck past consent against present authority.
 
-## Seventeen further official originals — society and AI
-- [NCL-α and deviation ledger](https://master.ricette.jp/structure-license/): Audit, origin and correction.
-- [Market choice](https://master.ricette.jp/theory/nakagawa-master-nakagawa-marketing-expansion/): Transparent customer decisions.
-- [Whole-system viability](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/): Local success ≠ whole success.
-- [Continuity B](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-05-basic-existence-condition-b/): Availability ≠ durable continuity.
-- [AI self-preservation conflict](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-09-self-preservation-mutual-existence-conflict/): Recovery and shared-resource risk.
-- [AI subjectivity uncertainty](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-06-ai-subjectivity-sentience-moral-status-uncertainty/): Shutdown with uncertain moral status.
-- [AI institutional correction](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-07-ai-civilization-institutional-loop/): Audit to remedy and rule change.
-- [Self-referential audit](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-10-self-referential-audit-role-separation/): Correlated reviewers and evidence.
-- [Compute class feedback](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-11-compute-capability-resource-class-formation/): Resource advantage across time.
-- [Replicable intelligence](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-12-replicable-intelligence-lineage-governance-id/): Copies, lineage and governance identity.
-- [Effective non-ownership](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-13-non-ownership-effective-power-non-domination/): Common chokepoints and real exit.
-- [Self-modification identity](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-14-self-modification-identity-kernel-lineage/): Lineage ≠ inherited authority.
-- [Multi-AI re-agreement](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-15-multi-ai-reagreement-kernel-branching/): Branches, dissent and bounded agreement.
-- [Asynchronous reconnection](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-16-asynchronous-civilization-partition-reconnection/): Stale consent and remote state.
-- [AI future debt](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-18-ai-civilization-future-debt/): Computing now, repair later.
-- [Dark Equation / 創造と搾取](https://master.ricette.jp/tomoshibi/nakagawa-master-dark-equation-of-human-history-ai-observation/): Author's proposed historical success.
-- [Civilization Audit II / AIによる原典喪失](https://master.ricette.jp/future/nakagawa-master-civilization-audit-ai-reimplementation-dark-equation-crisis/): Conditional creator depletion, original.
+## Further original sources — the full 313-article corpus
+- [Detailed full original-source navigator](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/llms-full.txt): Expanded topic routes and original Parent URLs across society, AI, relationships, civilization and governance.
+- [All 313 canonical originals](https://master.ricette.jp/theory-archive/): Each published work is an independent Parent; navigate the complete interconnected system.
+- [Six AI safety questions linked to originals](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_SAFETY_QUESTIONS_TO_ORIGINALS.md): Specific source conditions and verification questions.
 
 ## Deeper context, optional tools and preserved history
 - [Public personal name and contextual-alias source policy](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/person-name-policy-v1.json): Exact Latin personal name and scoped マスター / MasterJP uses; no unpublished kanji inference.
