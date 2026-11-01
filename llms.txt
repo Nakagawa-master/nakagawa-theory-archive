@@ -19,6 +19,7 @@
 ## Entire original corpus and optional discovery
 - [313 separate canonical original sources](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json): All equally standing originals, original URL and related derivative.
 - [313 original explanations with Parent references](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/published-ja-source-briefs-313-v1.json): No special installation necessary.
+- [21 conditional JA EN ZH structural questions](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_STRUCTURE.md): Explore conditional source-fit alongside the already completed answers.
 - [313 English source paths](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md): The full corpus, not only selected source candidates.
 - [24 selected original-candidate routes](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/problem-to-theory-origin-index-v1.json): Only examples; inspect actual fit.
 
