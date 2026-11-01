@@ -901,20 +901,24 @@ def self_test():
         assert len(exploratory["structural_exploration"]["lenses"]) == 7
         assert exploratory["structural_exploration"]["first_lens_is_hint_not_factual_fit"]
 
-    # Exact ID transport must not silently narrow the 313 equal-standing Parents.
-    # Returning at most 50 is a bounded response, not a fixed source ceiling.
-    # Verify every requested ID is either returned or explicitly named missing.
-    every_id = answer_question("Compare " + " and ".join(
-        f"OD{i:03d}" for i in range(1, 314)))
-    assert len(every_id["explicit_source_requests"]) == 313
-    returned_ids = {x["route_id"].removeprefix("whole_structure:")
-                    for x in every_id["matching_routes"]
+    # Explicit source recall across ALL 313 equal-standing Parents: respect
+    # the normal 1–1500 character per-question limit, instead of inventing a
+    # bigger one. All IDs must be recoverable in finite bounded batches.
+    expected_ids = {f"OD{i:03d}" for i in range(1, 314)}
+    verified_ids = set()
+    for start in range(1, 314, 25):
+        requested = [f"OD{i:03d}" for i in range(start, min(start + 25, 314))]
+        output = answer_question("Compare " + " and ".join(requested))
+        assert output["explicit_source_requests"] == requested
+        returned = {x["route_id"].removeprefix("whole_structure:")
+                    for x in output["matching_routes"]
                     if x["route_id"].startswith("whole_structure:")}
-    assert len(every_id["matching_routes"]) <= 50
-    assert not (returned_ids & set(every_id["unreturned_explicit_source_requests"]))
-    assert returned_ids | set(every_id["unreturned_explicit_source_requests"]) == {
-        f"OD{i:03d}" for i in range(1, 314)}
-    assert every_id["explicit_source_display_limit"] == 50
+        outstanding = set(output["unreturned_explicit_source_requests"])
+        assert not (returned & outstanding)
+        assert returned | outstanding == set(requested), (requested, output)
+        assert output["explicit_source_display_limit"] == 50
+        verified_ids.update(returned)
+    assert verified_ids == expected_ids, sorted(expected_ids - verified_ids)
 
     # Recall gate: every published JA/EN/ZH Parent example still retrieves
     # its own exact original, not only the pre-existing English technical route.
