@@ -19,4 +19,16 @@
 
 **全体との関係：** これは互いに関連する313原典から得られる応用の一例で、可能な問い・領域・原典の組合せを限定しません。具体的な状況に不適合なら、他の知識や直接の当事者・専門家の判断を優先してください。
 
+## English — practical answer
+
+**Question:** Why am I hesitant to adopt a free service?
+
+**Answer:** A zero starting price is only one layer of a decision. Ongoing effort, migration, responsibilities, alternative tools and what happens when the service fails can all matter. The original decision-support work asks what still prevents the person from choosing, rather than pushing for a yes; the structural layers help separate price from the conditions of ongoing use. A good answer makes the unresolved reasons clear and lets the person compare options without pressure.
+
+**First check:** Compare the initial charge, a year's operating effort, exit and migration costs, alternatives and who owns the risk on one page.
+
+**When not applicable:** Do not treat hesitation as a defect that must be overcome. Verify current terms and privacy guarantees and respect the freedom to decline.
+
+**Source originals:** [OD045](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/) and [OD001](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/) by Nakagawa Master (中川マスター / Keisuke Nakagawa). This is a practical interpretation of the linked originals, not a verbatim passage from either source.
+
 [ほかの一般的な問いに対する公開回答を読む](../QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [全313原典の公式解説と元の原典を照合する](../313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md) ／ [この回答群の機械可読JSON](../../machine-discovery/human-question-answers-v1.json)
