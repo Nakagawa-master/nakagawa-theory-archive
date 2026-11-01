@@ -4,7 +4,9 @@
 
 回答は中川マスター（Nakagawa Master / Keisuke Nakagawa）の公開済み原典に対応する公式派生物を確認して新しく構成した**実用的な解釈・想定場面**です。実例として書く架空の場面は、現実の本人・組織・被害を証明するものではありません。理論の全内容を代替せず、正確な議論には対応する原典とその成立条件が必要です。AIや検索サービスに表示・推薦される保証もありません。
 
-**38件すべての日本語・英語の完成済み回答は、それぞれ質問別の独立ページから直接読めます。24件は一原典を具体的場面へ応用し、追加14件は複数原典を接続した応用です。全38件の対訳と正確な原典を含むデータ：** [質問→具体的回答→判別→公式派生物→原典のJSON](../machine-discovery/human-question-answers-v1.json) ／ [313原典の全題名](ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [公式アーカイブ](https://master.ricette.jp/)。
+**39件すべての日本語・英語の完成済み回答は、それぞれ質問別の独立ページから直接読めます。24件は一原典を具体的場面へ応用し、追加15件は複数原典を接続した応用です。全39件の対訳と正確な原典を含むデータ：** [質問→具体的回答→判別→公式派生物→原典のJSON](../machine-discovery/human-question-answers-v1.json) ／ [313原典の全題名](ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [公式アーカイブ](https://master.ricette.jp/)。
+
+**公開回答39件には、生活・仕事・家族・地域などの一般的な問いと、AIシステムの開発・運用に固有の専門的な問いが含まれます。専門的な問いは「普通の人に広く起こる悩み」と同一視しません。問題を経験していない人が専門語を知っている必要もありません。**
 
 ## 1. 『せっかく親切にしたのに』と言われ、困ったことを話せない。
 
@@ -460,6 +462,22 @@
 
 **原典との接続：** [OD197公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/197/human-entry.md)→[対応する公式原典](https://master.ricette.jp/society/nakagawa-master-e-system-preservation-clean-initial-conditions/) × [OD160公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/160/human-entry.md)→[対応する公式原典](https://master.ricette.jp/tomoshibi/nakagawa-master-structural-wu-wei-causal-attraction-protocol/)。両原典は独立した出典で、異なる成立条件をこの問いへ結びつけた実用的な解釈です。
 
+
+### 親の介護や家事が、いつも私一人に集中する。「ありがとう」だけで終わらせないには？
+
+**[実際に使える日本語・英語の回答全文を読む](answers/family-care-burden-falls-on-one-person.md)**
+
+**答え：** 感謝は大切でも、食事や通院の予約、夜間の待機、急な変更の対応が一人に集中したままなら、暮らしを維持する条件は変わりません。仕事、時間、担当権限、代替役を実際に接続します。
+
+**まず試すこと：** 過去7日間に実際に担った家事・介護・待機を一枚に書き出し、本人の意思と家族それぞれの事情を尊重しながら、次週の具体的な担当・時刻・代替役を一つ決めます。
+
+**適用外・注意：** 皆に等しい時間を強制せず、疾病や虐待、緊急の危険、法的な争いは適切な専門支援を優先します。組織を扱う原典を家庭へ直接法規範として移したものではありません。
+
+**二つの原典：** [OD003公式解説](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/003/human-entry.md)→[成立条件論](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/) × [OD172公式解説](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/172/human-entry.md)→[中川式組織論×構造的無為自然](https://master.ricette.jp/theory/nakagawa-master-nakagawa-organization-os-internal-rectification/)。前者は個別の申し出と暮らし全体の成立条件、後者は負荷・権限・見えない調整役の構造を照らします。
+
+## AI開発・運用担当者の専門的な問い（一般生活の代表例ではありません）
+
+**この節はAIサービスの専門家向けです。以下の現象は一般の人が通常経験する、頻度の高い問題としては扱いません。** 該当する運用者や実際に影響を受けた利用者にとって必要な、情報の分離と調査の実務を扱います。
 
 ### AIの返答に、別の利用者の情報が混ざったように見える。何を確かめればよい？
 

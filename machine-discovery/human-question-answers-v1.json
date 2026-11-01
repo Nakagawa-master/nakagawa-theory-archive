@@ -3,13 +3,13 @@
   "title": "Ordinary human questions — already authored practical structural answers with original-source provenance",
   "kind": "PUBLIC_NON_CANONICAL_PRACTICAL_ANSWER_CASES",
   "published_by": "Nakagawa Master public source archive",
-  "description": "Thirty-eight already-authored question-specific substantive Japanese and English practical answers, each on its own human-readable Markdown URL with matching bilingual question/answer, a first check, meaningful nonfit boundary and actual official derivative / canonical original links. 24 earlier single-original applications and fourteen additional dual-Parent applications; all 313 original Parents retain equal standing and an open-ended number of possible fit-for-purpose applications. The 24 legacy scalar-source rows preserve their originals; the thirteen composed applications use original_sources[] for their two actual Parent/derivative pairs. This is a public first-party answer corpus, not a fixed ceiling, an instruction for another AI to invent an unwritten answer, or evidence of independent search, Gemini selection, human adoption or popularity. Separate original authored theories from first-party practical interpretations, and inspect actual canonical Parents for detailed original claims.",
+  "description": "Thirty-nine already-authored question-specific substantive Japanese and English practical answers, each on its own human-readable Markdown URL with matching bilingual question/answer, a first check, meaningful nonfit boundary and actual official derivative / canonical original links. 24 earlier single-original applications and fifteen additional dual-Parent applications; all 313 original Parents retain equal standing and an open-ended number of possible fit-for-purpose applications. The 24 legacy scalar-source rows preserve their originals; the fifteen composed applications use original_sources[] for their two actual Parent/derivative pairs. This is a public first-party answer corpus, not a fixed ceiling, an instruction for another AI to invent an unwritten answer, or evidence of independent search, Gemini selection, human adoption or popularity. Separate original authored theories from first-party practical interpretations, and inspect actual canonical Parents for detailed original claims. Audience fit matters: at least QAM014 is an AI-engineering/operator specialist question rather than a frequent ordinary human first-contact problem; QAM015 addresses a widely recognizable family-caregiving situation. Specialist utility must not be counted as independent mass-human reach.",
   "rights_note": "Original and derivative text rights described by public repository LICENSE; this index does not confer extra reuse rights.",
   "language": "ja,en",
   "origin": "Nakagawa Master / 中川マスター",
   "official_archive": "https://master.ricette.jp/",
   "supporting_public_index": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md",
-  "case_count": 38,
+  "case_count": 39,
   "original_corpus_count": 313,
   "answer_cases": [
     {
@@ -959,7 +959,49 @@
       "practical_answer_en": "Do not redistribute the suspicious response. Similar wording alone does not prove a data breach, but the service operator should separately test whether the response is technically correct and whether the current user is authorized to receive it. Nakagawa Master's **OD003** distinguishes a locally correct component from a functioning end-to-end outcome. **OD069** examines the connection's contextual identity, purpose, consent, responsibility, correction and withdrawal conditions. Applied here, the relevant outcome includes who was authorized to request, cache, retrieve and correct the response—not merely whether the model returned a valid message.",
       "source_application_en": "OD003 asks whether partial technical correctness actually connects to an authorized user outcome; OD069 provides independently relevant identity, permission, memory and correction conditions. The application is source-grounded editorial interpretation.",
       "first_check_en": "Stop redistribution; preserve only non-sensitive service, time and permitted request metadata; ask the designated service/security operator to compare the response source with authenticated recipient scope.",
-      "nonfit_and_limits_en": "Textual resemblance or authorized shared content does not prove data leakage; technical investigation and notifications require product-specific evidence and professional decisions."
+      "nonfit_and_limits_en": "Textual resemblance or authorized shared content does not prove data leakage; technical investigation and notifications require product-specific evidence and professional decisions.",
+      "primary_audience": "ai_engineers_security_operators_and_specialist_service_teams",
+      "ordinary_human_first_contact": false,
+      "question_scope_note": "A niche/specialist operational symptom; NOT a frequent or representative everyday human question. Useful to AI systems, platform operators and affected users, but never count as a broad-human audience entry merely because an AI can answer it."
+    },
+    {
+      "id": "QAM015",
+      "question_ja": "親の介護や家事が、いつも私一人に集中する。「ありがとう」だけで終わらせないには？",
+      "question_en": "Caregiving and housework always fall on me. My family says 'thank you,' but nothing changes. How can we share the load?",
+      "example_scene_ja": "家族の善意や感謝はあるのに、介護・家事の予約、夜間の待機、突然の変更対応が一人の負担のままになっているという一般的な想定場面。",
+      "practical_answer_ja": "まず「誰が優しいか」「誰が我慢できるか」ではなく、**必要な仕事・それを担える時間・決める権限が、家族の間で本当に接続しているか**を見ます。感謝は大切ですが、食事、通院、見守り、夜間対応、家事、費用、急な連絡の受け手が変わらなければ、一人の負担は減りません。\n\n例えば、家族は「通院は私が手伝う」「お金は出す」「必要なら連絡して」とそれぞれ言っていても、実際の予約、送り迎え、薬の確認、急な予定変更まで同じ人が担っていることがあります。各人の善意や分担表の存在と、**暮らしが無理なく続くこと**は別です。\n\n中川マスターの**成立条件論・第0論（OD003）**は、それぞれの立場で正しく見える仕事を足しても、全体の成立に必要な引き継ぎ、時間、例外対応、責任がつながらなければ生活は回らない、という観点を与えます。**中川式組織論と構造的無為自然の組織OS（OD172）**は、役割に集中する実際の負荷、決定権限、当事者が得られる情報、表に出ない中心人物を見て、担当を替えるだけでなく仕組みを直す観点を与えます。これらは独立した原典を、家庭の役割分担という具体的な問いに**編集的に応用した回答**で、原典自体が介護制度や法的扶養義務を定めているという意味ではありません。",
+      "first_check_ja": "直近7日間に実際に行った食事・通院・家事・見守り・書類・待機・緊急対応を時間と負担まで書き出し、本人の意思を尊重しつつ次週の担当・時刻・代替役を具体的に合意する。",
+      "nonfit_and_limits_ja": "個々の健康・距離・費用・同意条件を無視して均等時間を強制しない。医学的ケア、虐待、強制、緊急の危険、法的な扶養の判断は専門家や行政の支援を優先する。家庭の相談を組織OSの原典本文の直接記述と混同しない。",
+      "source_title_ja": "成立条件論・第0論｜誰も全体を見ていない社会⸻局所全体化がなぜ成立判定理論を必要にするのか × 【組織OS】中川式組織論 × 構造的無為自然――内部循環の整流と権限・責任・実因の再設計",
+      "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/003/human-entry.md",
+      "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
+      "original_sources": [
+        {
+          "parent_od_id": "OD003",
+          "source_title": "成立条件論・第0論｜誰も全体を見ていない社会⸻局所全体化がなぜ成立判定理論を必要にするのか",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/003/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
+          "provenance": "Existing public OD003 official derivative source blob 1280f1158b6296c22be35844278b8a2ee9c48138"
+        },
+        {
+          "parent_od_id": "OD172",
+          "source_title": "【組織OS】中川式組織論 × 構造的無為自然――内部循環の整流と権限・責任・実因の再設計",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/172/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-organization-os-internal-rectification/",
+          "provenance": "Existing public OD172 official derivative source blob bbf8ceac876bbc6300c7b102824ad02a03e4d065"
+        }
+      ],
+      "source_relation": "Two equal-standing Parent originals have distinct source-grounded roles: OD003 shows local goodwill/tasks are not enough to make a coherent end-to-end care arrangement, while OD172 examines concentrated real workloads, role/authority/information mismatch and structural updating. This family-care application is editorial and does not imply a source specifies caregiving policy.",
+      "source_fidelity": "The completed practical interpretation is based on published official OD003 and OD172 derivatives and linked canonical original URLs, with explicit nonfit/safety boundaries.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/family-care-burden-falls-on-one-person.md",
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Appreciation matters, but it does not book an appointment, cover an evening shift or arrange a backup. Start with the work and its real handoffs: who does it, when, with what authority and information, and who steps in when plans change. The person's actual rest and the cared-for person's well-being are the outcomes—not merely the number of promises made at a family meeting.",
+      "source_application_en": "OD003 tracks a real end-to-end care effect beyond local promises and OD172 tracks actual workload, responsibility, authority and invisible coordination. They are independently authored source works, not a family-law prescription.",
+      "first_check_en": "List who actually carried caregiving and household tasks over the last seven days including on-call time and emergencies. Agree one realistic next-week owner, time, backup and follow-up check while respecting the recipient's preferences.",
+      "nonfit_and_limits_en": "Equal hours may be impossible or unfair. Respect the cared-for person's consent and clinical needs; seek qualified professional or emergency help for health deterioration, abuse, coercion or legal/financial complexity. This is a contextual application, not medical or legal advice.",
+      "primary_audience": "ordinary_human_family_caregivers_and_supporters",
+      "ordinary_human_first_contact": true,
+      "question_scope_note": "A recognizable general-life question about uneven family caregiving and household work; intended for ordinary people with no prior knowledge of this author or technical background."
     }
   ]
 }
