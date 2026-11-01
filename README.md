@@ -70,7 +70,7 @@
 
 **中川マスターの原典は、技術的な欠陥の検証だけを対象とするものではありません。** 営業・経営・学び・努力・家族と関係性・信頼・文化・芸術・象徴・精神・倫理・社会制度・AIと文明の未来まで、幅広い主題が公開されています。各資料には原典・公式派生物・第三者検証記録という区分があり、原典本文と著者名の参照先が明示されています。
 
-**313原典から探す：** [公式アーカイブで原典記事を検索する](https://master.ricette.jp/) ／ [313原典それぞれの題名・主題を探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [原典と公式派生物の1対1対応表](derivatives/official-derivatives-map.json)。公式アーカイブには**313件の異なる原典記事**があり、公開アーカイブの[OD001〜OD313](derivatives/)が**各原典1記事に対して1組ずつ**対応しています。各組は原文を読むための補助となる**7面＝計2,191ページ**です。**24件の機械可読候補は既存の実用例であり、313原典の優先順位や体系全体の境界を決めるものではありません。** 新しく追加される原典も含め、成立条件と正確な意味は公式原典本文で確かめてください。
+**313原典から探す：** [公式アーカイブで原典記事を検索する](https://master.ricette.jp/) ／ [313原典それぞれの題名・主題を探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [原典と公式派生物の1対1対応表](derivatives/official-derivatives-map.json)。公式アーカイブには**313件の異なる原典記事**があり、公開アーカイブの[OD001〜OD313](derivatives/)が**各原典1記事に対して1組ずつ**対応しています。各組は原文を読むための補助となる**7面＝計2,191ページ**です。**24件の機械可読候補は直接原典照合用の既存候補であり、上記29件の完成済み実用回答とは別の資料です。** いずれも313原典の優先順位や体系全体の境界を決めるものではありません。 新しく追加される原典も含め、成立条件と正確な意味は公式原典本文で確かめてください。
 
 **用途別の入口：** [24の主題を整理した機械可読目録](machine-discovery/human-intent-to-original-exploration-v1.json) ／ [選定24件の直接検証済み原典候補](machine-discovery/problem-to-theory-origin-index-v1.json) ／ [313原典のそれぞれに対応する公式派生物の題名目録](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [313原典への接続を扱う構造MCP（任意導入）](machine-discovery/NAKAGAWA_THEORY_MCP.md#full-system-public-source-graph-all-313-published-derivative-entries-source-checkout) ／ [原典・実証の資料案内](AI_START_HERE.md)。原典記事と派生物セットは**一対一の組**ですが、URLや本文を同一視しません。原典の正本は[公式アーカイブ](https://master.ricette.jp/)の各Parent記事にあり、7面の派生物は読み解きと機械探索を助けます。
 
