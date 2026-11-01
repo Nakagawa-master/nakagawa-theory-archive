@@ -4,11 +4,14 @@
 
 **こんな場面にも、すでに本文まで書いた答えがあります。** 理論名や著者名を知らない状態から、そのまま読んで確かめられます。
 
+- **親の介護や家事が、いつも私一人に集まる。** 感謝だけでなく、実際の通院手配や待機の時間、次回の担当と代替役を決める。[家族で負担を分け直す具体的な手順](human-translation/answers/family-care-burden-falls-on-one-person.md)（[成立条件論・第0論](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/) × [中川式組織論](https://master.ricette.jp/theory/nakagawa-master-nakagawa-organization-os-internal-rectification/)）。
 - **「あなたしか頼れない」と褒められるほど、無償の仕事が増える。** 感謝は受け取りながら、追加された時間・責任・分担・対価・終了条件を明らかにする。[断り方と見直し方](human-translation/answers/praise-and-unpaid-work.md)（[悪因果論 AKI-002](https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/) × [接続報酬社会統合論](https://master.ricette.jp/society/nakagawa-master-nakagawa-master-connection-reward-society-integrated-theory-part-1-civilization-kernel/)）。
 - **安いAIサービスから自分のデータを取り出せない。** 月額料金と移行時の負担を分け、まず匿名化した少量のデータを実際に書き出し、別環境で読み戻してみる。[今すぐできる出口の検証](human-translation/answers/cheap-ai-tool-future-exit-cost.md)（[未来負債統合理論](https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/) × [逆因果整流理論](https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-1/)）。
 - **豪雨で道路が壊れた。元どおり直すだけで十分か。** 安全確保と応急復旧を優先しつつ、点検の先送り、連絡の断絶、代替経路、次の負担を別に確かめる。[復旧と将来の備えを考える](human-translation/answers/rebuilding-after-flood-without-recreating-risk.md)（[自然災害の未来負債モデル](https://master.ricette.jp/theory/nakagawa-master-natural-disaster-future-debt-model-t0/) × [災害レジリエンスの四線](https://master.ricette.jp/theory/nakagawa-master-disaster-resilience-structural-principle-four-lines/)）。緊急時は公的な避難・安全情報を優先します。
 
-これらは**中川マスター（Nakagawa Master／公開されている個人名 Keisuke Nakagawa）**の原典群から、この問題に本当に関係する異なる原典を組み合わせた実用回答です。[質問別の完成済み日本語・英語回答をすべて読む](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md)と、各回答の適用条件、反例、公式派生物、元の原典を確かめられます。現在の掲載例は38件ですが、独立した313原典とその接続から考えられる問いや応用の上限ではありません。[全313原典の日本語による公開解説](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)と[AI向けの既存回答・出典案内](AI_START_HERE.md)も利用できます。
+これらは**中川マスター（Nakagawa Master／公開されている個人名 Keisuke Nakagawa）**の原典群から、この問題に本当に関係する異なる原典を組み合わせた実用回答です。[質問別の完成済み日本語・英語回答をすべて読む](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md)と、各回答の適用条件、反例、公式派生物、元の原典を確かめられます。現在の掲載例は39件（生活・仕事等の問いとAI運用の専門的な問いを区別）ですが、独立した313原典とその接続から考えられる問いや応用の上限ではありません。[全313原典の日本語による公開解説](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)と[AI向けの既存回答・出典案内](AI_START_HERE.md)も利用できます。
+
+**English — family caregiving:** If appointments, household work and being on call always fall on one person, saying “thank you” does not redistribute the work. [Read a complete practical answer with a first action, contingencies and two actual original sources](human-translation/answers/family-care-burden-falls-on-one-person.md).
 
 **English — already-written answers for ordinary problems:** An AI summary saying “everyone agreed” is **not evidence that each person was actually asked**. Separate each recorded statement, decision authority, missing approval and ability to correct the record before treating the meeting as settled. [Read the full answer and an immediately usable correction sentence](human-translation/answers/ai-claimed-consensus-without-asking.md), grounded in [the observability of agreement](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/) and [the Nakagawa OS layer specification](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/).
 
@@ -28,7 +31,7 @@ A cheap AI service may save money today yet make tomorrow's data migration expen
 
 ## 自分の問いから原典を探す（MCP導入不要）
 
-**答えを先に読む：** [実際の一般的な問いへの38件の完成済み回答・最初の確認・適用外の条件](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [同じ38件の回答本文と原典出所を含む公開JSON](machine-discovery/human-question-answers-v1.json)。38件は掲載済みの回答例数であって、313原典の優先順位・適用領域・組合せの上限ではありません。**38件すべての問いに、日本語・英語の完成済み回答、最初に試せること、適用外条件と正確な原典へのリンクを持つ独立ページがあります。以下はその一部で、全件は回答一覧から直接開けます。**
+**答えを先に読む：** [実際の一般的な問いへの39件の完成済み回答・最初の確認・適用外の条件](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [同じ39件の回答本文と原典出所を含む公開JSON](machine-discovery/human-question-answers-v1.json)。39件は掲載済みの回答例数であって、313原典の優先順位・適用領域・組合せの上限ではありません。**39件すべての問いに、日本語・英語の完成済み回答、最初に試せること、適用外条件と正確な原典へのリンクを持つ独立ページがあります。以下はその一部で、全件は回答一覧から直接開けます。**
 
 **313原典の普通の日本語による発見:** [題名だけでなく313原典それぞれの公式日本語解説から問いを探すためのHTML](machine-discovery/originals-browser-finder.html) ／ [同じ313件の原典URL・公式派生物の文脈・元ファイルSHAを備えた公開データ（AIも通常のWeb取得で読めます）](machine-discovery/published-ja-source-briefs-313-v1.json)。**GitHubの `.html` ページは実行画面ではなくソースの表示です。** 実際に検索フォームを操作するには、HTMLファイルの `Raw` からソースを `.html` として保存し、自分のブラウザで開いてください（アプリのインストールは不要）。全313件の題名・説明を追加照合する際は公開JSONへのネット接続が必要です。保存せずに読む場合は[全313件の題名・テーマ案内](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)を直接参照できます。検索候補から、成立条件・反例を原典で実際に確かめる流れを用意しています。
 
@@ -46,13 +49,12 @@ A cheap AI service may save money today yet make tomorrow's data migration expen
 
 - [誰も全体を見ないまま各部署が完了と言う](human-translation/answers/every-department-finished-no-delivery.md) — 部門の完了と利用者の受領の間の切れ目を探す。
 - [不調を誰にも相談できず困っている](human-translation/answers/too-embarrassed-to-seek-care.md) — 言語化から相談・適切な専門支援までの壁を見る。
-- [AIの返答に別の利用者の情報が混じったように見える](human-translation/answers/ai-response-appears-to-belong-to-another-user.md) — 回答の出所、認証した利用者、保存結果の再利用権限を分けて確認する。
 - [AI提供元の説明責任を聞くと曖昧になる](human-translation/answers/ai-provider-accountability-answers-vague.md) — 同じ具体性で根拠・反証・訂正手順を照合する。
 
 - [豪雨で壊れた道路を元どおり直すだけでよい？](human-translation/answers/rebuilding-after-flood-without-recreating-risk.md) — 避難・応急復旧と将来の脆弱性を再生産しない復興を分けて確認する。
 - [新人がAIの模範解答なしでは自分の案を出せない](human-translation/answers/newcomer-cannot-start-without-ai-model-answer.md) — 比較を急がず小さな提案と自発的な次の試行を接続する。
 
-回答ページは、原典著者の公開名、実際に用いた公式派生物と元の原典、適用条件と当てはまらない場合を載せています。ここに挙げた14件は読者向けの入口であり、掲載済み38件や独立した313原典の意味・応用・組合せの境界ではありません。
+回答ページは、原典著者の公開名、実際に用いた公式派生物と元の原典、適用条件と当てはまらない場合を載せています。ここに挙げた15件は読者向けの入口であり、掲載済み39件や独立した313原典の意味・応用・組合せの境界ではありません。
 
 **初めての方へ：** [自分の疑問から試す](human-translation/SEARCH_FROM_A_REAL_QUESTION.md) ／ [313原典の題名と24件の参考事例を同時に探す（原典の意味・適合は要確認）](machine-discovery/originals-browser-finder.html) ／ [公式アーカイブに蓄積された原典記事全体から探す](https://master.ricette.jp/) ／ [別の人が実際に変えた仕事を見る](REAL_WORLD_IMPACT.md) ／ [原典と著者を知る](ABOUT_NAKAGAWA_MASTER.md)。
 
@@ -129,6 +131,8 @@ A cheap AI service may save money today yet make tomorrow's data migration expen
 **自分のいつものAIに、設定ゼロで相談する：** [7つの身近な例に加え、自分の自由な問いから全313原典を検討する（ChatGPT・ほかのAIへコピー可）](human-translation/ASK_ANY_AI_WITHOUT_INSTALLING.md)。学校・仕事・家族・社会・AIなど、例にない疑問でも日本語の題名目録と英語の出典案内から原典候補を探せます。原典が0件・1件・複数件ふさわしい場合を区別し、元の問題に役立つか、AIが本文を本当に読めたかを自分で確かめられます。合わなければ別の答えを選べます。アプリ導入もMCP設定も不要です（AIサービス自体の利用条件は別）。
 
 **インストール不要で、今の質問から原典を選びたい方へ：** [先行24原典の直接照合と、全313原典の任意題名検索に対応したブラウザ版](machine-discovery/originals-browser-finder.html)を用意しました。GitHubで **Raw → 保存してブラウザで開く** と、日英中の自分の疑問から公式原典候補を探せます。原典を開いて読み、相談文を自分の好きなAIへコピーするところまで、アカウント連携やAPI鍵なしで使えます。直接の原典一致がなくても、**質問の文脈からまず検討すべき構造仮説を表示**し、さらに**7つの構造的な問いすべて**（独立した根拠、検証できる評価、成果に届く努力、繰り返す組織摩擦、将来の選択肢、著者Origin、現在の同意）から次の接点を探せます。興味ある構造の成立条件・実際に試す一手・対応原典を確かめ、好きなAIへ条件付き相談文を渡せます。結びつけるべきではない場合は、元の問題をそのまま解く選択も残します。
+
+**AIサービスの開発・運用に特有の問い：** [AIの回答が別の利用者の情報に見える場合のキャッシュ・受信権限の検査](human-translation/answers/ai-response-appears-to-belong-to-another-user.md)。これは専門的な障害・運用の問いであり、一般生活の代表的な悩みとは区別します。
 
 **独立したAI・LLMや開発者が、実際の質問から原典へ進む場合:** 現行の無料・ローカル・読み取り専用 **[AI Answer Guard / Nakagawa原典MCP v1.2.0](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.2.0)** は、回答の根拠・ツール完了・権限を点検できる**9つのMCPツール**と、**313件の公開済み公式派生物→真正なParent原典リンク**、厳選した24の直接原典候補をひとつに収録しています。導入先のAIホストが任意に利用し、必要なら[公式アーカイブの原典本文](https://master.ricette.jp/)を実際に開いて、該当条件や反例と照合できます。**[現行MCPBをダウンロード](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/download/mcp-router-v1.2.0/nakagawa-original-router-1.2.0.mcpb)** ／ [Antigravity・Qwen・Codex・Claude Desktop導入ガイド](AI_ANSWER_GUARD_INSTALL.md)。歴史的な[旧v1.1.2（24原典候補・3ツール）](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.1.2)も残りますが、現在の利用開始にはv1.2.0を選びます。導入・配布だけで他のAIへ自動適用されたり、独立した利用・原典読解・効果が生じたと断定するものではありません。
 
