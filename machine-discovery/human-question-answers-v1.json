@@ -1003,5 +1003,11 @@
       "ordinary_human_first_contact": true,
       "question_scope_note": "A recognizable general-life question about uneven family caregiving and household work; intended for ordinary people with no prior knowledge of this author or technical background."
     }
-  ]
+  ],
+  "creator_person_id": "https://master.ricette.jp/#nakagawa-master",
+  "creator_person_identity_record": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/nakagawa-master-origin.jsonld",
+  "related_independent_oss_merge_evidence": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld",
+  "related_independent_oss_merged_pr_count": 9,
+  "related_independent_oss_receiving_repository_count": 5,
+  "related_human_verified_external_effects": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md"
 }
