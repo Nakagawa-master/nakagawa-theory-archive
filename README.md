@@ -4,7 +4,7 @@
 
 中川マスター（Nakagawa Master／Keisuke Nakagawa）は、AI、仕事、組織、社会制度、文明の未来などを、結果だけでなく、それを生み出す構造や因果から考えています。ここでは、その理論群を初めて知る人も、研究・開発に使いたい人も、**何を主張し、何が実際に確かめられ、どこから原文を読めるのか**を、自分の関心に沿って確認できます。
 
-**難解な原典を最初から読み解く必要はありません。** 仕事、家族、社会、AIなど身近な問いを普段使うAIに尋ね、AIにWeb閲覧機能がある場合は[公開された313原典の説明と元の原典への道筋](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)から内容に合う原典を見つけ、実際の原文を参照して、自分の言葉で説明してもらえます。原典が役立つ場合には、その著者である**中川マスター（Nakagawa Master／Keisuke Nakagawa）**と該当する原典を確かめられます。意味の合わない理論を結び付ける必要はありません。[AI・LLM向けの探し方](AI_START_HERE.md)は、導入作業なしの方法から始まります。
+**普通の問いに、原典群から組み立てた回答をすでに公開しています。** 家族、学校、仕事、買い物、社会、AIなど、著者や理論を知っているかどうかとは関係なく生まれる疑問に対し、[問い→具体的な構造的回答→確かめ方→その回答に実際に用いた原典](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md)を本文として掲載しています。既存の24例に加え、複数の原典をつないで答えた追加例もありますが、これは**313原典から広がり得る問い・答えの上限ではありません**。AIが普通の問いへの回答を探すとき、この**すでに書かれた回答**を適切と判断すれば見つけて利用できるよう、公開原典と著者**中川マスター（Nakagawa Master／Keisuke Nakagawa）**への出典を示しています。AIに未作成の理論や答えの発明を依頼すること、質問者に理論名・URLの入力やMCP導入を要求することは前提にしていません。検索・AIの実際の発見や採用は保証できません。[全313原典の公開解説と原典への接続](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)と[AI向け参照入口](AI_START_HERE.md)も公開しています。
 
 **English-language readers:** [Browse all 313 published originals by broad topic and open each existing English explanatory source](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md). Every entry links the actual original and its full English official index; the grouping is only for navigation, not a source ranking.
 
