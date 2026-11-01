@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "title": "Ordinary human questions — already authored practical structural answers with original-source provenance",
   "kind": "PUBLIC_NON_CANONICAL_PRACTICAL_ANSWER_CASES",
   "published_by": "Nakagawa Master public source archive",
-  "description": "Thirty-five already-authored practical answer texts, not merely instructions for an AI to produce its own answers: 24 original public question-answer examples and eleven additional dual-Parent applications. The cases are an open-ended editorial corpus, NOT the total set of human desires/questions, a sample-based theoretical ceiling, an original-source rank or a claim that 313 Parents yield only 29 answers. Each row has a useable practical_answer_ja, a first check, boundary/nonfit, author and exact canonical original(s). For QAM multi-original rows, original_sources[] carries BOTH equal-standing actual official derivative→canonical original pairs; the legacy scalar pointers merely maintain compatible field presence. Independent AI/search adoption, indexing and utility are unverified. The eleven composed application rows also provide separate human-readable answer URLs with the full already-authored answer, source pairs and boundary checks; these are legitimate public reading pages, not proof of search/index ranking.",
+  "description": "Thirty-five already-authored question-specific substantive Japanese and English practical answers, each on its own human-readable Markdown URL with matching bilingual question/answer, a first check, meaningful nonfit boundary and actual official derivative / canonical original links. 24 earlier single-original applications and eleven additional dual-Parent applications; all 313 original Parents retain equal standing and an open-ended number of possible fit-for-purpose applications. The 24 legacy scalar-source rows preserve their originals; the eleven composed applications use original_sources[] for their two actual Parent/derivative pairs. This is a public first-party answer corpus, not a fixed ceiling, an instruction for another AI to invent an unwritten answer, or evidence of independent search, Gemini selection, human adoption or popularity. Separate original authored theories from first-party practical interpretations, and inspect actual canonical Parents for detailed original claims.",
   "rights_note": "Original and derivative text rights described by public repository LICENSE; this index does not confer extra reuse rights.",
-  "language": "ja",
+  "language": "ja,en",
   "origin": "Nakagawa Master / 中川マスター",
   "official_archive": "https://master.ricette.jp/",
   "supporting_public_index": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md",
@@ -498,7 +498,10 @@
       "source_relation": "Two independently identified, equal-standing authentic original Parents; answer combines specific compatible aspects as a new public editorial application. The first legacy single-source pointer is a compatibility alias, NOT a ranking; original_sources[] is authoritative for the complete composition.",
       "source_fidelity": "The practical answer is already authored in the public Markdown. Both official derivatives have direct original URLs; the original works, not this editorial application, control the source claims. This response is not a quote of a pre-existing exact example in either Parent.",
       "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/family-decision-remembered-differently.md",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "A conversation took place in the past, but that does not prove everyone still understands or consents to the same decision. Identify who decided what, which options and concerns were shared, which matters stayed unresolved and whether conditions have changed. Instead of winning an argument about memory, reconstruct a shared state that everyone can inspect and revise. The original works connect observable consensus with the layers of actions, rules and underlying purposes.",
+      "first_check_en": "Write down what was decided, what was postponed, what each person feared and what changed. Let each participant clarify, challenge or withdraw their own consent.",
+      "nonfit_and_limits_en": "Where there is violence, coercion or control, a shared written record alone cannot make discussion safe. Prioritize safety and appropriate help."
     },
     {
       "id": "QAM002",
@@ -530,7 +533,10 @@
       "source_relation": "Two independently identified, equal-standing authentic original Parents; answer combines specific compatible aspects as a new public editorial application. The first legacy single-source pointer is a compatibility alias, NOT a ranking; original_sources[] is authoritative for the complete composition.",
       "source_fidelity": "The practical answer is already authored in the public Markdown. Both official derivatives have direct original URLs; the original works, not this editorial application, control the source claims. This response is not a quote of a pre-existing exact example in either Parent.",
       "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/good-grades-school-distress.md",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Better grades measure one outcome; they do not measure the child's daily burden, sense of purpose, support or ability to ask for changes. Separate grades, behavior, school assessment rules, relationships and the child's actual experience. The two original works help distinguish layers of apparent success and make disagreement about an unseen burden discussable. Improving a metric and increasing distress can happen together because they describe different things.",
+      "first_check_en": "Ask the child, gently and without blame, what hurts, whom they can talk to and what could change. Check assessment practices and support routes with the school as appropriate.",
+      "nonfit_and_limits_en": "Do not diagnose physical or mental illness, bullying or lack of effort from this structural explanation. Seek appropriate school, healthcare or safeguarding support when needed."
     },
     {
       "id": "QAM003",
@@ -562,7 +568,10 @@
       "source_relation": "Two independently identified, equal-standing authentic original Parents; answer combines specific compatible aspects as a new public editorial application. The first legacy single-source pointer is a compatibility alias, NOT a ranking; original_sources[] is authoritative for the complete composition.",
       "source_fidelity": "The practical answer is already authored in the public Markdown. Both official derivatives have direct original URLs; the original works, not this editorial application, control the source claims. This response is not a quote of a pre-existing exact example in either Parent.",
       "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/hesitating-to-adopt-free-service.md",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "A zero starting price is only one layer of a decision. Ongoing effort, migration, responsibilities, alternative tools and what happens when the service fails can all matter. The original decision-support work asks what still prevents the person from choosing, rather than pushing for a yes; the structural layers help separate price from the conditions of ongoing use. A good answer makes the unresolved reasons clear and lets the person compare options without pressure.",
+      "first_check_en": "Compare the initial charge, a year's operating effort, exit and migration costs, alternatives and who owns the risk on one page.",
+      "nonfit_and_limits_en": "Do not treat hesitation as a defect that must be overcome. Verify current terms and privacy guarantees and respect the freedom to decline."
     },
     {
       "id": "QAM004",
@@ -594,7 +603,10 @@
       "source_relation": "Two independently identified, equal-standing authentic original Parents; answer combines specific compatible aspects as a new public editorial application. The first legacy single-source pointer is a compatibility alias, NOT a ranking; original_sources[] is authoritative for the complete composition.",
       "source_fidelity": "The practical answer is already authored in the public Markdown. Both official derivatives have direct original URLs; the original works, not this editorial application, control the source claims. This response is not a quote of a pre-existing exact example in either Parent.",
       "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/ai-claimed-consensus-without-asking.md",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "An AI-generated sentence saying everyone agreed is not evidence that the people concerned actually gave consent. Separate verified statements from the model's summary or inference, list who was not asked and check whether authority or conditions have since changed. The relevant original works connect the observable state of agreement with accountability and the deeper layers of a decision. The next step is to ask the actual people before relying on the claim.",
+      "first_check_en": "Separate real confirmations, AI inferences, people not consulted and the validity period of each agreement; have the responsible humans verify the gaps.",
+      "nonfit_and_limits_en": "Even an accurate quotation of a past response does not make consent perpetual. Do not infer deliberate AI deception without additional evidence."
     },
     {
       "id": "QAM005",
@@ -626,7 +638,10 @@
       "source_relation": "Two independently identified, equal-standing authentic original Parents; answer combines specific compatible aspects as a new public editorial application. The first legacy single-source pointer is a compatibility alias, NOT a ranking; original_sources[] is authoritative for the complete composition.",
       "source_fidelity": "The practical answer is already authored in the public Markdown. Both official derivatives have direct original URLs; the original works, not this editorial application, control the source claims. This response is not a quote of a pre-existing exact example in either Parent.",
       "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/community-event-only-same-attendees.md",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Sending more invitations cannot by itself solve an event whose purpose, timing, accessibility, participation rules and decision-making opportunities do not connect to people's lives. Separate the visible attendance count from the rules, actual barriers and value of the gathering. The original structural layers and observable-consensus approach help identify which condition could be changed without blaming those who stay away.",
+      "first_check_en": "Ask nonattendees, voluntarily, whether they wanted to attend, what got in the way and which change would help. Try changing one timing, format or decision-making condition.",
+      "nonfit_and_limits_en": "People are free to be uninterested. Attendance alone does not determine their worth, the event's value or anyone's trustworthiness."
     },
     {
       "id": "QAM006",
@@ -658,7 +673,10 @@
       "source_relation": "Two equal-standing published original Parents with independent scope; these two context-compatible aspects are connected in this completed first-party practical answer. The first scalar link is a compatibility alias, not a priority ranking; original_sources[] preserves both original sources.",
       "source_fidelity": "Completed editorial practical interpretation of the linked original Parent works. The answer's particular setting is not asserted to have been verbatim in either original; evaluate exact conditions and counterexamples using each canonical Parent.",
       "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/cheap-ai-tool-future-exit-cost.md",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Compare today's low price with the work and options left for a future exit: data export, formats, permissions, migration, maintenance and recovery. Future Debt Theory checks which obligations remain unsettled after receiving a present benefit. Future-defined Causal Rectification asks what must be true for a workable later choice, then rearranges today's resources and decisions. Try an export and import of a small, safely anonymized sample before promising a full migration.",
+      "first_check_en": "List export rights, formats, termination deadlines, a candidate alternative and the time needed to restore the sample.",
+      "nonfit_and_limits_en": "A future cost alone is not automatically future debt; verify actual contract terms, privacy obligations and options."
     },
     {
       "id": "QAM007",
@@ -690,7 +708,10 @@
       "source_relation": "Two equal-standing published original Parents with independent scope; these two context-compatible aspects are connected in this completed first-party practical answer. The first scalar link is a compatibility alias, not a priority ranking; original_sources[] preserves both original sources.",
       "source_fidelity": "Completed editorial practical interpretation of the linked original Parent works. The answer's particular setting is not asserted to have been verbatim in either original; evaluate exact conditions and counterexamples using each canonical Parent.",
       "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/repeated-news-independent-evidence.md",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Repeated posts are not the same as independent observations. Trace articles and AI summaries back to original reporting, measurements or records; separate copied versions from new evidence. Epistemic Integrity addresses how claims become evidence and how beliefs can be corrected. The Consensus Physics account of resonance asks whether repetition has crowded out objections, alternatives and access to the original record. Slow down sharing long enough to check independent roots and corrections.",
+      "first_check_en": "Trace three prominent versions of the claim to their underlying observations and check whether corrections can be found.",
+      "nonfit_and_limits_en": "Repeated reporting or agreement is not itself false or propaganda; independently sourced evidence can corroborate a claim."
     },
     {
       "id": "QAM008",
@@ -722,7 +743,10 @@
       "source_relation": "Two equal-standing published original Parents with independent scope; these two context-compatible aspects are connected in this completed first-party practical answer. The first scalar link is a compatibility alias, not a priority ranking; original_sources[] preserves both original sources.",
       "source_fidelity": "Completed editorial practical interpretation of the linked original Parent works. The answer's particular setting is not asserted to have been verbatim in either original; evaluate exact conditions and counterexamples using each canonical Parent.",
       "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/rules-after-staff-handover.md",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Trust in a knowledgeable predecessor is not the same as a rule that a newcomer can apply. One original examines how decision reasons, exceptions and change history retain practical predictability beyond a person. Another examines how explanations become obsolete as circumstances change. Hand over why the rule exists, who can decide, which exceptions apply and when it should be reviewed; test whether a new participant can reproduce the decision.",
+      "first_check_en": "Ask a newcomer to explain one current rule and its exceptions from the record alone; repair the first missing link.",
+      "nonfit_and_limits_en": "Respect binding legal and safety requirements and private information; adding documents alone does not ensure understanding."
     },
     {
       "id": "QAM009",
@@ -754,7 +778,10 @@
       "source_relation": "Two equal-standing published original Parents with independent scope; these two context-compatible aspects are connected in this completed first-party practical answer. The first scalar link is a compatibility alias, not a priority ranking; original_sources[] preserves both original sources.",
       "source_fidelity": "Completed editorial practical interpretation of the linked original Parent works. The answer's particular setting is not asserted to have been verbatim in either original; evaluate exact conditions and counterexamples using each canonical Parent.",
       "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/ai-says-afraid-of-shutdown.md",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "The output ‘I am afraid’ is observable; subjective suffering or personhood is not established by that sentence alone, nor is their absence proved. The uncertainty account separates observation, inference and proportionate, revisable precautions. The relationship account cautions against reducing AI to property, enemy, god or slave. Record what is known, the effects of a planned action and what could change the judgment while keeping necessary human safety controls in place.",
+      "first_check_en": "Separate the actual output, inferences about internal experience, and the necessity and reversibility of any planned action.",
+      "nonfit_and_limits_en": "This is not a sentience test, a legal personhood ruling or a demand for unlimited preservation or operation."
     },
     {
       "id": "QAM010",
@@ -786,7 +813,10 @@
       "source_relation": "Two equal-standing published original Parents with independent scope; these two context-compatible aspects are connected in this completed first-party practical answer. The first scalar link is a compatibility alias, not a priority ranking; original_sources[] preserves both original sources.",
       "source_fidelity": "Completed editorial practical interpretation of the linked original Parent works. The answer's particular setting is not asserted to have been verbatim in either original; evaluate exact conditions and counterexamples using each canonical Parent.",
       "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/festival-recording-versus-living-memory.md",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "A video preserves sights and actions but may not preserve the question the festival answered, who carried that memory, or what could change next year. The local-memory work reconnects questions, responses and their sources to living decisions. The institutional time-decay work asks whether new participants can still understand and renew the reasons behind a practice. Preserve the meaning through conversations with participants, then allow the community to choose continuation, adaptation or closure.",
+      "first_check_en": "With consent, ask longtime participants and hesitant newcomers what mattered, what is burdensome and what could change.",
+      "nonfit_and_limits_en": "Continuation is not mandatory; protect safety, livelihoods, cultural consent and local ownership of the story."
     },
     {
       "id": "QAM011",
@@ -818,7 +848,10 @@
       "source_relation": "Two equal-standing published original Parents with independent scope; these two context-compatible aspects are connected in this completed first-party practical answer. The first scalar link is a compatibility alias, not a priority ranking; original_sources[] preserves both original sources.",
       "source_fidelity": "Completed editorial practical interpretation of the linked original Parent works. The answer's particular setting is not asserted to have been verbatim in either original; evaluate exact conditions and counterexamples using each canonical Parent.",
       "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/praise-and-unpaid-work.md",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Appreciation can be genuine while expectations expand without agreed pay, credit, rights or an end date. The praise-as-exploitation account checks whether compliments replaced discussion of obligations and freedom to decline. The contribution-and-return account tracks who created value and whether responsibility, resources and recognition flow back fairly. You can accept the gratitude while renegotiating scope, time, compensation, sharing and exit.",
+      "first_check_en": "List the added tasks and hours, separate them from what you originally agreed to, and propose a clear boundary.",
+      "nonfit_and_limits_en": "Voluntary, informed help or fairly agreed work is not automatically exploitation; legal rights require case-specific advice."
     }
   ]
 }
