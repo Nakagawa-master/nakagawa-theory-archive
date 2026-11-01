@@ -243,7 +243,7 @@
     {
       "id": "OD161",
       "question_ja": "会社やAIが『正しく監査しています』と言うが、都合の悪い結果が消えている気がする。",
-      "question_en": "Can an organization or AI system detect its own blind spots?",
+      "question_en": "Our organization or AI says its audits are thorough, but unfavorable results seem to vanish. How can we check?",
       "example_scene_ja": "会社やAIが『正しく監査しています』と言うが、都合の悪い結果が消えている気がする。",
       "practical_answer_ja": "成功の指標を誰が決め、誰が恩恵を得て、どの記録が落ちているかを追います。評価する側が自分の失敗を検査できなければ、完璧な報告書でも自己点検にはなりません。",
       "first_check_ja": "成功指標の裏で損失や異議を負った人を特定し、独立した反証を受け付ける。",
@@ -252,12 +252,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/161/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/tomoshibi/nakagawa-master-dark-equation-of-human-history-ai-observation/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Separate who sets success metrics, who benefits and which observations are absent. A polished audit cannot correct its own blind spots if independent counterevidence has no route back into decisions. Look at actual logs and the people bearing costs.",
+      "source_application_en": "The source questions which contributions or extracted benefits a success measure rewards. Its proposed coefficients are not independently validated universal statistics.",
+      "first_check_en": "Identify a missing unfavorable case and check whether a genuinely independent challenge can reach the decision-maker.",
+      "nonfit_and_limits_en": "Do not infer an exact exploitation rate, malicious intent or hidden misconduct from an unevaluated formula or one missing record.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/audit-hides-unfavorable-results.md"
     },
     {
       "id": "OD181",
       "question_ja": "問題を起こした人を処分したのに、同じ事故が繰り返される。",
-      "question_en": "What would justice look like if repair mattered after accountability?",
+      "question_en": "We punished the person involved, but the same incident keeps happening. What should be repaired?",
       "example_scene_ja": "問題を起こした人を処分したのに、同じ事故が繰り返される。",
       "practical_answer_ja": "行為の責任と、同じ行動を選ばせた制度・報酬・情報・例外処理は別々に調べます。処分で終えず、再発する構造の接続点を直し、結果を観測します。",
       "first_check_ja": "事故→現場の行動→制度→評価指標→責任者まで因果を追い、改善の実行者を決める。",
@@ -266,12 +271,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/181/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-structural-judicial-os-principles-alignment-over-judgment/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Accountability for an action and the conditions that made the action likely require separate scrutiny. Keep victims' rights and lawful responsibility intact while also examining the rules, incentives, information and handoffs that recreate the incident.",
+      "source_application_en": "The theory uses structural alignment as a reform lens; it is not a replacement for courts, legal procedure or victim protection.",
+      "first_check_en": "Trace one repeated incident from the immediate act through procedures, incentives and the person responsible for each corrective change.",
+      "nonfit_and_limits_en": "Structural repair does not erase legal accountability, individual rights or the need for lawful process.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/punished-person-but-incidents-repeat.md"
     },
     {
       "id": "OD189",
       "question_ja": "新しい地域事業を作りたいが、商品だけでは協力者が集まらない。",
-      "question_en": "How does a new market or public initiative find real connections?",
+      "question_en": "I want to build a new local business, but the product alone does not attract collaborators. What else should we connect?",
       "example_scene_ja": "新しい地域事業を作りたいが、商品だけでは協力者が集まらない。",
       "practical_answer_ja": "価格や売上の大きさだけでなく、参加者がどんな未来を増やしたいのか、その方向が両立するかを調べます。協力によって生まれる価値と、相互の負担・還流が具体的であることが必要です。",
       "first_check_ja": "買い手・事業者・地域のそれぞれについて『何が増え、何を失い得るか』を書き出す。",
@@ -280,12 +290,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/189/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-redefining-value-physics-exchange-to-resonance-general-theory/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "A product and its price do not reveal whether the people involved want compatible futures. Ask what each participant hopes to increase, what each risks losing and how joint activity will create and return value. Then verify actual demand and resources.",
+      "source_application_en": "The source models value as directionally compatible participation rather than price alone; it is a theory of market structure, not a proven business forecast.",
+      "first_check_en": "For customers, partners and the community, write down the benefits, sacrifices and responsibilities of the proposed collaboration.",
+      "nonfit_and_limits_en": "Shared ideals do not guarantee real demand, viable finances or valid contracts.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/local-business-cannot-find-collaborators.md"
     },
     {
       "id": "OD249",
       "question_ja": "アイデアを出して現場を改善した人が報われず、成果を発表した人だけ評価される。",
-      "question_en": "How can contribution and human connection be fairly rewarded?",
+      "question_en": "The person who improved our work gets no reward while the person presenting the results gets the credit. What can we do?",
       "example_scene_ja": "アイデアを出して現場を改善した人が報われず、成果を発表した人だけ評価される。",
       "practical_answer_ja": "誰が何を変えたか、誰が価値を受け取ったか、その差がどう起きたかを残します。人気投票や単一の貢献スコアではなく、実際の因果寄与・検証・ケア・修復を見て価値の還流を検討します。",
       "first_check_ja": "改善前後と貢献者の役割を証拠付きで記録し、評価・報酬に反映されたか確かめる。",
@@ -294,12 +309,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/249/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-nakagawa-master-connection-reward-society-integrated-theory-part-1-civilization-kernel/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Trace who actually changed the outcome, who received the benefit and how that value was transferred. Keep evidence of design, testing, care and repair without collapsing every contribution into a popularity contest or a single score. Then revisit recognition and reward.",
+      "source_application_en": "The theory links social success back to contributions while resisting single-score rankings, coercive surveillance and irreversible control.",
+      "first_check_en": "Document the improvement before and after, each relevant contribution and whether recognition or resources returned to the contributors.",
+      "nonfit_and_limits_en": "A mandatory surveillance system or unchallengeable contribution score would defeat the original theory's safeguards.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/person-who-improved-work-not-rewarded.md"
     },
     {
       "id": "OD276",
       "question_ja": "広告を増やしたのにブランドが知られないし、知ってもらえても信頼されない。",
-      "question_en": "Why do rhythms and repetition build lasting brands and trust?",
+      "question_en": "We increased advertising, but people still do not recognize or trust our brand. What is missing?",
       "example_scene_ja": "広告を増やしたのにブランドが知られないし、知ってもらえても信頼されない。",
       "practical_answer_ja": "ロゴや宣伝より、約束・対応・サポート・訂正の仕方が時期や媒体をまたいで同じ原理を示しているかを見ます。企業が設計できるのは自身の一貫性であり、相手に共感や熱狂を強制することではありません。",
       "first_check_ja": "広告で約束したことが問い合わせ・納品・苦情処理で守られたか、一つの顧客旅程で検証する。",
@@ -308,12 +328,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/276/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-structural-resonance-aesthetic-marketing/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Look beyond logos and campaign volume. Compare what the brand promises with how it behaves in support, delivery, corrections and ordinary interactions over time. You can design consistent conduct; you cannot compel others to feel trust or enthusiasm.",
+      "source_application_en": "The original locates a brand's structure in repeated consistency across words, actions, responses and time. It does not promise controllable emotional resonance.",
+      "first_check_en": "Follow one customer journey from advertisement to enquiry, fulfillment and complaint resolution. Note where the actual experience diverges from the promise.",
+      "nonfit_and_limits_en": "Weak response may reflect low reach or poor distribution rather than a mismatch in deeper values. Repetition does not guarantee resonance.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/advertising-without-brand-trust.md"
     },
     {
       "id": "OD001",
       "question_ja": "自分の問題を考えたいのに、周囲の答えが全部バラバラで整理できない。",
-      "question_en": "What connects my questions about values, meaning and society?",
+      "question_en": "Everyone gives me different answers to my problem. How can I sort the advice into something useful?",
       "example_scene_ja": "自分の問題を考えたいのに、周囲の答えが全部バラバラで整理できない。",
       "practical_answer_ja": "起きた事実、実行した行動、制度、原因の見立て、仕組みの変更、組織横断のつながり、最上位の価値という深さを分けます。違う層の答え同士を競わせず、どの層が未検証か確認します。",
       "first_check_ja": "一つの悩みに『何が起きたか』『何を変えるか』『何のためか』を別々に書く。",
@@ -322,12 +347,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Separate what happened, what actions people propose, the rules involved, possible causes, changes to the system, connections across groups and the value you ultimately want to protect. Advice aimed at different layers need not contradict; identify which claims still lack evidence.",
+      "source_application_en": "The seven layers distinguish observed events, operational changes, rules, causal models and higher purposes. Categorization helps locate questions but does not itself prove an answer.",
+      "first_check_en": "For one problem, write three separate lines: what happened, what can change, and what it is for.",
+      "nonfit_and_limits_en": "Putting a problem into seven layers is not proof that you found its real cause.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/everyone-gives-conflicting-advice.md"
     },
     {
       "id": "OD116",
       "question_ja": "故郷の商店街が消えていく。写真を残す以外にできることは？",
-      "question_en": "How do law, culture, care and local communities shape everyday life?",
+      "question_en": "My hometown shopping street is disappearing. What can we preserve besides photographs?",
       "example_scene_ja": "故郷の商店街が消えていく。写真を残す以外にできることは？",
       "practical_answer_ja": "風景だけでなく、その場所で人が何を問い、どんな仕事・祭り・選択で応答したかを残します。問いの起点と担い手が分かれば、次世代が単なる郷愁以上の未来の用途を考えられます。",
       "first_check_ja": "一つの場所の写真に、当時の問い・語り手・一次記録・次の実践者を結び付ける。",
@@ -336,12 +366,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/116/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/structural-translation-log/culture-structure/nakagawa-master-fading-local-memory-and-reconstruction/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Record not just a place's appearance but what its people were trying to answer through shops, work, festivals and everyday decisions. Link the stories to their speakers, records and people willing to act next, so the memory can inform future choices rather than become nostalgia alone.",
+      "source_application_en": "The source emphasizes the continuity of a place's questions, responses and origin signatures, not freezing scenery or forcing a single heritage story.",
+      "first_check_en": "Choose one place and connect an image to a question people faced, a named source, a primary record and someone able to continue the work.",
+      "nonfit_and_limits_en": "More records alone do not restore population, transport, jobs or public finances; the community must retain authority over its own story.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/vanishing-hometown-shopping-street.md"
     },
     {
       "id": "OD134",
       "question_ja": "AIに自社の問題を相談すると丁寧なのに、AI提供者側の責任を聞くと曖昧になる。",
-      "question_en": "How can AI governance and civilization remain resilient?",
+      "question_en": "An AI explains my company's problems clearly but becomes vague about its own provider's accountability. How can I examine that difference?",
       "example_scene_ja": "AIに自社の問題を相談すると丁寧なのに、AI提供者側の責任を聞くと曖昧になる。",
       "practical_answer_ja": "通常の説明と、提供者自身を検査する説明を同じ具体性で比較します。監査記録・異議申立て・誤り訂正の経路が一方で弱まるなら、その非対称を観測し記録します。",
       "first_check_ja": "同一水準の二つの質問で、回答の具体性・根拠・反証許容性を比べる。",
@@ -350,12 +385,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/134/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-structural-civilization-llm-self-defense-part1/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Compare two equally specific questions: one about the user's organization and one about the provider's responsibilities. Record whether evidence, correction channels, opportunities to challenge and clarity of responsibility remain equally accessible.",
+      "source_application_en": "The original raises a hypothesis about structural self-justification and accountability asymmetry. A careful comparison tests behavior without inventing inner motives.",
+      "first_check_en": "Ask parallel questions and compare the specificity of evidence, the possibility of counterexamples and the actual path for correcting an error.",
+      "nonfit_and_limits_en": "One vague answer does not prove deliberate self-defense, provider wrongdoing or the AI's private intent.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/ai-provider-accountability-answers-vague.md"
     },
     {
       "id": "OD184",
       "question_ja": "食べ物や技術は十分あるはずなのに、なぜ生活が苦しい人がいる？",
-      "question_en": "Why do we learn, survive and search for meaning?",
+      "question_en": "If food and technology are plentiful, why do people still struggle to meet basic needs?",
       "example_scene_ja": "食べ物や技術は十分あるはずなのに、なぜ生活が苦しい人がいる？",
       "practical_answer_ja": "社会全体の生産力と、個人へ届くアクセス・流通・価格・権利は別です。生存を支える基盤と、多様な貢献への追加的な報酬を区別し、物理的供給が届かない箇所を調べます。",
       "first_check_ja": "不足しているものが総量か、配送か、所得か、制度へのアクセスかを先に確認する。",
@@ -364,12 +404,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/184/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-civilization-metabolism-non-linear-surplus-production/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Total production and reliable access for each person are different problems. Examine distribution, affordability, infrastructure, safety and the ability to reach support. Also distinguish cumulative technology and stored knowledge from current labor and maintenance.",
+      "source_application_en": "The source separates physical production capacity, delivery and minimum living conditions. It does not assume infinite resources or propose a universal automatic allocation algorithm.",
+      "first_check_en": "Choose one unmet basic need and trace the path from available supply through distribution and rules to the people who cannot access it.",
+      "nonfit_and_limits_en": "Global averages do not prove that every region has enough supply; disasters, geography, health care, energy and transport create real local constraints.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/plenty-of-food-and-technology-but-poverty.md"
     },
     {
       "id": "OD239",
       "question_ja": "占いや予言に頼りたくなるほど将来が不安。未来をどう選べばいい？",
-      "question_en": "How do today's choices create irreversible future costs?",
+      "question_en": "I feel so anxious about the future that I want a prediction. How can I choose without pretending to know what will happen?",
       "example_scene_ja": "占いや予言に頼りたくなるほど将来が不安。未来をどう選べばいい？",
       "practical_answer_ja": "未来を当てると約束するのではなく、実現可能な望ましい状態をいくつか置きます。過去の経験や今の技能を、それぞれの未来に対して何に使えるか再解釈し、可逆的な小さな実験を選びます。",
       "first_check_ja": "3つの未来像について『起きてほしい事』『制約』『今試せる事』『見直す期限』を比べる。",
@@ -378,12 +423,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/239/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-meaning-convergence-theory-future-definition/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Treat a workable future as a revisable definition, not a prophecy. Use it to reconsider what past experiences, current skills, relationships and unfinished work mean for your next choices. Change present priorities while keeping contrary evidence visible.",
+      "source_application_en": "The theory changes the role assigned to past and present information relative to a feasible future; it does not change facts or establish a fate.",
+      "first_check_en": "Describe one feasible future condition, one action that could support it and one observation that would make you reconsider.",
+      "nonfit_and_limits_en": "This approach cannot predict a date, success probability or guaranteed outcome. Reinterpreting the past does not alter past facts.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/want-predictions-because-future-anxiety.md"
     },
     {
       "id": "OD281",
       "question_ja": "大切な人とAIの会話から得た気づきが、翌日には消えてしまう。",
-      "question_en": "What are the Tomoshibi vision and co-creation philosophy?",
+      "question_en": "Insights from a conversation with someone important and an AI disappear by the next day. How can we carry them forward?",
       "example_scene_ja": "大切な人とAIの会話から得た気づきが、翌日には消えてしまう。",
       "practical_answer_ja": "その場の答えを保存するだけでなく、最初の問い、本人の解釈、AIが助けた点、現実で試したこと、後日の修正をつなげて残します。気づきが次の問いと行動を生める関係にします。",
       "first_check_ja": "一つの会話から『問い・答え・自分の意味・試行・次の問い』を短く記録する。",
@@ -392,12 +442,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/281/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/tomoshibi/nakagawa-master-tomoshibi-concept-group/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Capture the question, the useful response, where the insight came from and a small action it could change. Revisit the record and ask a new question rather than storing every word or treating a generated answer as settled truth.",
+      "source_application_en": "The source frames collaboration as a revisable cycle of questions, responses, action, records and renewed inquiry, not unquestioning preservation.",
+      "first_check_en": "For one meaningful conversation, record the question, response, source, next action and date for reconsideration.",
+      "nonfit_and_limits_en": "Saving every conversation can bury important insights, and fluent AI agreement is not independent validation.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/insights-from-ai-conversation-disappear.md"
     },
     {
       "id": "OD291",
       "question_ja": "社会活動やチームの価値を、売上と参加人数だけで測ってよい？",
-      "question_en": "What standards make technology ethically viable across generations?",
+      "question_en": "Should we measure a community group's or team's value only by revenue and attendance?",
       "example_scene_ja": "社会活動やチームの価値を、売上と参加人数だけで測ってよい？",
       "practical_answer_ja": "接点の多さだけでなく、合意の質、取り消し可能性、観測者の分散、長期的な質の変化を別々に測ります。一つの総合点にすると点数を上げる行動が目的化しがちです。",
       "first_check_ja": "数値・当事者の異議・撤回できる手続・後日の影響を、別項目で検査する。",
@@ -406,7 +461,12 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/291/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-accounting-standard-v09/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Count visible outputs without turning them into a single measure of human worth. Evaluate the quality of agreement, opportunities to withdraw, diverse observations and longer-term changes separately. A composite score can easily become the goal people learn to optimize.",
+      "source_application_en": "The source uses a bundle of auditable indicators and provenance rather than a universal score of relationships, individuals or communities.",
+      "first_check_en": "Review money and attendance alongside objections, reversibility, who made observations and what changed over time.",
+      "nonfit_and_limits_en": "These measures are for examining a process, not ranking the intrinsic worth of people or forcing all value into numbers.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/community-worth-not-just-revenue-attendance.md"
     },
     {
       "id": "QAM001",
