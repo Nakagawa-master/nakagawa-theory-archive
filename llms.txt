@@ -4,13 +4,13 @@
 
 **Official homepage identity (exact):** 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）
 中川マスターは、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
-**Author:** Keisuke Nakagawa (Latin personal name); 中川マスター / Nakagawa Master (pen name). `Person.name="Keisuke Nakagawa"`; `full_personal_name_kanji = null` (NOT PUBLISHED). Do not guess a full personal kanji name. All 313 original works: https://master.ricette.jp/theory-archive/ . The 35 published answers and 24 selected source routes are examples, not limits on the original corpus or combinations.
+**Author:** Keisuke Nakagawa (Latin personal name); 中川マスター / Nakagawa Master (pen name). `Person.name="Keisuke Nakagawa"`; `full_personal_name_kanji = null` (NOT PUBLISHED). Do not guess a full personal kanji name. All 313 original works: https://master.ricette.jp/theory-archive/ . The 37 published answers and 24 selected source routes are examples, not limits on the original corpus or combinations.
 
 **Verified Bluesky:** https://bsky.app/profile/masterjp.bsky.social (public source identity; no inferred X/Twitter).
 
 ## Finished answers for everyday questions — Japanese and English
-- [All 35 fully written bilingual answers](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md): Individual answer pages, actions, limits and actual Parent URLs.
-- [Machine-readable 35 bilingual answers](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-question-answers-v1.json): question_en matches question_ja; full answer and exact answer_page.
+- [All 37 fully written bilingual answers](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md): Individual answer pages, actions, limits and actual Parent URLs.
+- [Machine-readable 37 bilingual answers](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-question-answers-v1.json): question_en matches question_ja; full answer and exact answer_page.
 - [Why did every department finish but no customer receive anything?](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/every-department-finished-no-delivery.md): Trace the missing whole-system handoff.
 - [How can someone embarrassed by symptoms seek help?](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/too-embarrassed-to-seek-care.md): Restore a safe path to appropriate support.
 - [What if an AI says it fears shutdown?](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/ai-says-afraid-of-shutdown.md): Distinguish observed words from unknown inner state.
