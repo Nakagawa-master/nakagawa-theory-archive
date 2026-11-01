@@ -4,7 +4,7 @@
 
 回答は中川マスター（Nakagawa Master / Keisuke Nakagawa）の公開済み原典に対応する公式派生物を確認して新しく構成した**実用的な解釈・想定場面**です。実例として書く架空の場面は、現実の本人・組織・被害を証明するものではありません。理論の全内容を代替せず、正確な議論には対応する原典とその成立条件が必要です。AIや検索サービスに表示・推薦される保証もありません。
 
-**35件すべての日本語・英語の完成済み回答は、それぞれ質問別の独立ページから直接読めます。24件は一原典を具体的場面へ応用し、追加11件は複数原典を接続した応用です。全35件の対訳と正確な原典を含むデータ：** [質問→具体的回答→判別→公式派生物→原典のJSON](../machine-discovery/human-question-answers-v1.json) ／ [313原典の全題名](ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [公式アーカイブ](https://master.ricette.jp/)。
+**37件すべての日本語・英語の完成済み回答は、それぞれ質問別の独立ページから直接読めます。24件は一原典を具体的場面へ応用し、追加13件は複数原典を接続した応用です。全37件の対訳と正確な原典を含むデータ：** [質問→具体的回答→判別→公式派生物→原典のJSON](../machine-discovery/human-question-answers-v1.json) ／ [313原典の全題名](ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [公式アーカイブ](https://master.ricette.jp/)。
 
 ## 1. 『せっかく親切にしたのに』と言われ、困ったことを話せない。
 
@@ -433,6 +433,32 @@
 **適用外・注意：** 本人が納得して自由に行うボランティアや、対価・条件が明示された仕事まで搾取と決めません。雇用契約や労働法上の権利を確定するには個別資料と専門家による確認が必要です。
 
 **原典との接続：** [OD002公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/002/human-entry.md)→[元の原典](https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/) × [OD249公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/249/human-entry.md)→[元の原典](https://master.ricette.jp/society/nakagawa-master-nakagawa-master-connection-reward-society-integrated-theory-part-1-civilization-kernel/)。異なる起源の内容をこの問題へ応用した本文であり、単なるタイトル索引ではありません。
+
+
+### 豪雨で壊れた道路を元どおり直せば、次の災害への備えも十分？
+
+**[具体的な回答全文を日本語・英語で読む](answers/rebuilding-after-flood-without-recreating-risk.md)**
+
+**答え：** 被害を受けた人の安全と生活をまず守り、道路を使えるようにする応急復旧と、同じ脆弱性を残さない長期復興を分けます。自然災害の未来負債モデルは、豪雨そのものと、修繕延期・情報の不達・制度の遅れが被害を増幅した経路を区別します。災害レジリエンスの四線は、更新の拍、情報と判断の照応、代替経路を含む再構成可能性、負担と決定権の配分を点検します。「元どおり」を急いだ後で同じ途絶が再発しないか、当事者と専門家が確認できる復興判断につなげます。
+
+**まず試すこと：** 自治体などの最新の避難・安全情報を優先し、安全が確保されてから、①どの設備が壊れたか、②点検・更新の取りこぼし、③住民に情報が届いたか、④仮設・別経路、⑤修復費用と決定者を一枚に分け、応急措置と長期再設計の担当を確認する。
+
+**適用外・注意：** 災害の発生を地域の責任や未来負債で説明しません。危険が続く場面では公式の警報・避難指示・医療・土木専門家の判断が最優先です。構造理論だけで道路の安全、予算、耐水基準や工事方法を決定しません。
+
+**原典との接続：** [OD152公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/152/human-entry.md)→[対応する公式原典](https://master.ricette.jp/theory/nakagawa-master-natural-disaster-future-debt-model-t0/) × [OD153公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/153/human-entry.md)→[対応する公式原典](https://master.ricette.jp/theory/nakagawa-master-disaster-resilience-structural-principle-four-lines/)。両原典は独立した出典で、異なる成立条件をこの問いへ結びつけた実用的な解釈です。
+
+
+### 新人がAIの模範解答を見ないと、自分の提案を一行も書けない。どう支える？
+
+**[具体的な回答全文を日本語・英語で読む](answers/newcomer-cannot-start-without-ai-model-answer.md)**
+
+**答え：** AIの答えを取り上げて自力だけを強制するより、「正解と比較される前に、安全な小さな案を一度出せる条件」を作ります。教育のE系は比較・恐怖・同調・正解主義が最初から判断基準を固定しないようにし、評価を介さず小さな出力が人や課題に接続するMini Loopを重視します。構造的無為自然は、毎回「考えろ」と命令するのではなく、役割・材料・時間・反応の流れを整え、自分で次の試行へ進める条件を作ります。AIは提案後に案を検討する道具として使えても、最初の試みを比較で消す審判にはしません。
+
+**まず試すこと：** 危険のない小さな課題を選び、5分だけAIや点数表を見る前に「分かっていること／まだ分からないこと／試したい一案」を書ける時間と相談相手を確保する。最初は順位づけせず、その案が誰の何に届いたかを返し、次の修正機会を作る。
+
+**適用外・注意：** 模範解答の利用自体を否定しません。安全・法律・医療・個人情報など厳密な検証が必要な課題では、専門家の確認と事前の制約を省きません。本人が希望する支援・特性・学習環境を無視して「自律」を強制する方法でもありません。
+
+**原典との接続：** [OD197公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/197/human-entry.md)→[対応する公式原典](https://master.ricette.jp/society/nakagawa-master-e-system-preservation-clean-initial-conditions/) × [OD160公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/160/human-entry.md)→[対応する公式原典](https://master.ricette.jp/tomoshibi/nakagawa-master-structural-wu-wei-causal-attraction-protocol/)。両原典は独立した出典で、異なる成立条件をこの問いへ結びつけた実用的な解釈です。
 
 ## 技術的な実証と、原典の理論的妥当性は区別する
 
