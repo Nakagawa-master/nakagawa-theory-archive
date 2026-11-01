@@ -17,7 +17,7 @@ AKI-002は称賛が条件確認の代替になる機構を特定し、接続報�
 ## 根拠を読み比べる：二つの独立した原典
 
 - **OD002 — 悪因果論 AKI-002：称賛の顔をした搾取⸻称賛が報酬と権利の代替にされる構造**：[公開済みの公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/002/human-entry.md) ／ [この原典の本文](https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/)
-- **OD249 — 接続報酬社会統合理論・第I部**：[公開済みの公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/249/human-entry.md) ／ [この原典の本文](https://master.ricette.jp/society/nakagawa-master-nakagawa-master-connection-reward-society-integrated-theory-part-1-civilization-kernel/)
+- **OD249 — 接続報酬社会統合論・第I部｜文明Kernelと反転防止原理⸻暗黒方程式から新文明方程式S=Cを持続稼働させる構造**：[公開済みの公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/249/human-entry.md) ／ [この原典の本文](https://master.ricette.jp/society/nakagawa-master-nakagawa-master-connection-reward-society-integrated-theory-part-1-civilization-kernel/)
 
 この回答は、中川マスター（Nakagawa Master、公開個人名 Keisuke Nakagawa）の原典を参照して構成した、特定の一般的な問いへの**完成済み実用回答**です。異なる二つのParent原典を同格の出所として参照し、上記の場面への接続は新たな編集的応用として区別します。原典著者がこの場面を原文で逐語的に論じたという意味ではありません。具体的な定義と成立条件は各原典本文を確かめてください。
 
