@@ -19,4 +19,16 @@ AIが当事者の回答を正しく引用した場合でも、現在の権限や
 
 **全体との関係：** これは互いに関連する313原典から得られる応用の一例で、可能な問い・領域・原典の組合せを限定しません。具体的な状況に不適合なら、他の知識や直接の当事者・専門家の判断を優先してください。
 
+## English — practical answer
+
+**Question:** An AI says everyone agreed, but I was never asked. How do I verify the claim?
+
+**Answer:** An AI-generated sentence saying everyone agreed is not evidence that the people concerned actually gave consent. Separate verified statements from the model's summary or inference, list who was not asked and check whether authority or conditions have since changed. The relevant original works connect the observable state of agreement with accountability and the deeper layers of a decision. The next step is to ask the actual people before relying on the claim.
+
+**First check:** Separate real confirmations, AI inferences, people not consulted and the validity period of each agreement; have the responsible humans verify the gaps.
+
+**When not applicable:** Even an accurate quotation of a past response does not make consent perpetual. Do not infer deliberate AI deception without additional evidence.
+
+**Source originals:** [OD014](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/) and [OD001](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/) by Nakagawa Master (中川マスター / Keisuke Nakagawa). This is a practical interpretation of the linked originals, not a verbatim passage from either source.
+
 [ほかの一般的な問いに対する公開回答を読む](../QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [全313原典の公式解説と元の原典を照合する](../313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md) ／ [この回答群の機械可読JSON](../../machine-discovery/human-question-answers-v1.json)
