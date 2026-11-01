@@ -536,7 +536,17 @@
       "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
       "practical_answer_en": "Better grades measure one outcome; they do not measure the child's daily burden, sense of purpose, support or ability to ask for changes. Separate grades, behavior, school assessment rules, relationships and the child's actual experience. The two original works help distinguish layers of apparent success and make disagreement about an unseen burden discussable. Improving a metric and increasing distress can happen together because they describe different things.",
       "first_check_en": "Ask the child, gently and without blame, what hurts, whom they can talk to and what could change. Check assessment practices and support routes with the school as appropriate.",
-      "nonfit_and_limits_en": "Do not diagnose physical or mental illness, bullying or lack of effort from this structural explanation. Seek appropriate school, healthcare or safeguarding support when needed."
+      "nonfit_and_limits_en": "Do not diagnose physical or mental illness, bullying or lack of effort from this structural explanation. Seek appropriate school, healthcare or safeguarding support when needed.",
+      "natural_question_variants_ja": [
+        "テストの点数はいいのに、学校に行きたくないと言う",
+        "先生には順調と言われるのに、本人はつらそう",
+        "成績が上がるほど、子どもに無理が増えている気がする"
+      ],
+      "natural_question_variants_en": [
+        "My child gets good grades but dreads going to school",
+        "Teachers say things are fine, but my child seems overwhelmed",
+        "Grades keep rising while school feels harder"
+      ]
     },
     {
       "id": "QAM003",
@@ -676,7 +686,17 @@
       "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
       "practical_answer_en": "Compare today's low price with the work and options left for a future exit: data export, formats, permissions, migration, maintenance and recovery. Future Debt Theory checks which obligations remain unsettled after receiving a present benefit. Future-defined Causal Rectification asks what must be true for a workable later choice, then rearranges today's resources and decisions. Try an export and import of a small, safely anonymized sample before promising a full migration.",
       "first_check_en": "List export rights, formats, termination deadlines, a candidate alternative and the time needed to restore the sample.",
-      "nonfit_and_limits_en": "A future cost alone is not automatically future debt; verify actual contract terms, privacy obligations and options."
+      "nonfit_and_limits_en": "A future cost alone is not automatically future debt; verify actual contract terms, privacy obligations and options.",
+      "natural_question_variants_ja": [
+        "無料のAIサービスに仕事を預けて大丈夫？",
+        "CSVは書き出せるけれど、別のサービスで使える？",
+        "解約したら会話履歴や業務データを取り出せる？"
+      ],
+      "natural_question_variants_en": [
+        "What should I check before trusting a free AI tool with my work?",
+        "It exports CSV, but can another service actually read it?",
+        "Will I still be able to retrieve my history and files after cancellation?"
+      ]
     },
     {
       "id": "QAM007",
@@ -711,7 +731,17 @@
       "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
       "practical_answer_en": "Repeated posts are not the same as independent observations. Trace articles and AI summaries back to original reporting, measurements or records; separate copied versions from new evidence. Epistemic Integrity addresses how claims become evidence and how beliefs can be corrected. The Consensus Physics account of resonance asks whether repetition has crowded out objections, alternatives and access to the original record. Slow down sharing long enough to check independent roots and corrections.",
       "first_check_en": "Trace three prominent versions of the claim to their underlying observations and check whether corrections can be found.",
-      "nonfit_and_limits_en": "Repeated reporting or agreement is not itself false or propaganda; independently sourced evidence can corroborate a claim."
+      "nonfit_and_limits_en": "Repeated reporting or agreement is not itself false or propaganda; independently sourced evidence can corroborate a claim.",
+      "natural_question_variants_ja": [
+        "複数のAIが同じ説明をしたら本当？",
+        "五つのニュースサイトに書いてあるなら五つの証拠？",
+        "同じ動画が何度も拡散されると事実になる？"
+      ],
+      "natural_question_variants_en": [
+        "Several AIs agree—does that count as independent verification?",
+        "Five news sites repeat the claim—are those five sources of evidence?",
+        "Does a repeatedly shared video become more reliable?"
+      ]
     },
     {
       "id": "QAM008",
