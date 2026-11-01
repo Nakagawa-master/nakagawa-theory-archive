@@ -19,4 +19,16 @@
 
 **全体との関係：** これは互いに関連する313原典から得られる応用の一例で、可能な問い・領域・原典の組合せを限定しません。具体的な状況に不適合なら、他の知識や直接の当事者・専門家の判断を優先してください。
 
+## English — practical answer
+
+**Question:** Why do only the same few people attend our community meetings despite more invitations?
+
+**Answer:** Sending more invitations cannot by itself solve an event whose purpose, timing, accessibility, participation rules and decision-making opportunities do not connect to people's lives. Separate the visible attendance count from the rules, actual barriers and value of the gathering. The original structural layers and observable-consensus approach help identify which condition could be changed without blaming those who stay away.
+
+**First check:** Ask nonattendees, voluntarily, whether they wanted to attend, what got in the way and which change would help. Try changing one timing, format or decision-making condition.
+
+**When not applicable:** People are free to be uninterested. Attendance alone does not determine their worth, the event's value or anyone's trustworthiness.
+
+**Source originals:** [OD001](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/) and [OD014](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/) by Nakagawa Master (中川マスター / Keisuke Nakagawa). This is a practical interpretation of the linked originals, not a verbatim passage from either source.
+
 [ほかの一般的な問いに対する公開回答を読む](../QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [全313原典の公式解説と元の原典を照合する](../313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md) ／ [この回答群の機械可読JSON](../../machine-discovery/human-question-answers-v1.json)
