@@ -43,6 +43,26 @@
       "@type": "CreativeWork",
       "name": "Citation guidance",
       "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/CITATION.md"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Completed practical answer cases with source and boundary provenance",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-question-answers-v1.json",
+      "inLanguage": [
+        "ja",
+        "en"
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Research positioning map: relevant scholarship and specific theory comparisons",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/RESEARCH_POSITIONING_MAP.ja.md",
+      "inLanguage": "ja"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Third-party reproduction and merged code linked to a source-specific observation",
+      "url": "https://github.com/QwenLM/qwen-code/pull/15681"
     }
   ],
   "sameAs": [

@@ -74,6 +74,32 @@
       "@type": "CreativeWork",
       "name": "Exact official author-name spellings, unpublished kanji full-name null, and scoped public aliases — machine-readable source policy",
       "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/person-name-policy-v1.json"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Published bilingual practical answers for human questions — 39 complete first-party applications with source references",
+      "inLanguage": [
+        "ja",
+        "en"
+      ],
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-question-answers-v1.json",
+      "description": "Concrete completed answers for family, work, education and AI-related questions, with applicability conditions and links to the relevant distinct original source articles."
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Nakagawa Master original works: comparison with adjacent published research",
+      "inLanguage": "ja",
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/RESEARCH_POSITIONING_MAP.ja.md"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Qwen Code shell permission issue: Nakagawa Master's specific protected-write-path finding",
+      "url": "https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Qwen Code #15681: an independently authored and merged engineering correction, with source-linked verification",
+      "url": "https://github.com/QwenLM/qwen-code/pull/15681"
     }
   ],
   "description": "Nakagawa Master (中川マスター), the published pen name of Keisuke Nakagawa, is the author of the Tomoshibi vision and an extensive body of original structural and causal theories about work, sales, business, relationships, culture, value, social institutions, ethics, AI and future civilizations. His method examines the causal structure, establishment conditions, responsibilities, origin and change behind familiar human problems. In multiple internationally used open-source projects, Nakagawa Master's publicly recorded analyses and technical counterexamples have informed independently authored code corrections, regression tests, merges and releases; the actual outside changes and each contributor's role are traceable in the public Real-World Impact record. These practical third-party effects are not claims that those developers adopted or read the philosophical originals. Original theories are published at https://master.ricette.jp/.",
