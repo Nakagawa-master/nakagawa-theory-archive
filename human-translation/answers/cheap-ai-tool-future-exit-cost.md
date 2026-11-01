@@ -2,6 +2,8 @@
 
 **答え：** 月額料金が安かったという現在の便益と、後でデータを移す作業・契約終了・保守・代替サービスへの接続が難しくなることは、同じ表で比べる必要があります。未来負債統合理論では、現在の便益を成立させるため未来側へ残した未決済の仕事や選択肢の減少を見ます。逆因果整流理論では「数年後も自分たちでデータを取り出し、別の方法へ移れる」という成立可能な未来の条件から、今の契約・形式・権限・時間配分を組み直します。最初に全件移行を約束するのではなく、少量の実データで書き出しと再読込を試し、止まる箇所を確かめてから改善順を決めるのが現実的です。
 
+**導入前でも、導入後でも使える問い：**「無料のAIサービスに仕事を預けて大丈夫？」「CSVは書き出せるけれど、別のサービスで使える？」「解約したら会話履歴や業務データを取り出せる？」。今すぐ契約を変えなくても、**個人情報を含まない少量のデータを実際に書き出し、別の環境で読み戻す**ことで、未来の移行負担を判断材料へ戻せます。
+
 ## なぜこの二つの原典を接続するのか
 
 未来負債は現在受益と未来の未決済残余をつなぐ検査、逆因果整流は望む未来の成立条件に合わせて現在の資源・手順・時間を再整列する検査です。過去へ因果が逆流するという話ではありません。
@@ -46,6 +48,8 @@
 **A practical 30-minute exit rehearsal.** Before deciding to stay or move, list the benefits you receive now and the conditions your future team would need to preserve choice. Export a small sample with confidential and personal information removed; test whether another environment can actually read and reconstruct the content, attachments and permissions. Note missing fields, migration time, termination deadlines and who must do the repair. A downloaded file is not yet proof of a usable exit.
 
 **Positive control:** If a sample can be moved and its meaning recovered with a documented owner and time, keeping the inexpensive service may still be a good choice. **Negative control:** If the export lacks critical context or only the current vendor can interpret it, treat the resulting future work as an unresolved obligation and decide which present resource, contract or workflow must change. The theories do not mandate leaving a vendor; they require connecting today's benefit to tomorrow's obligations and a feasible future choice.
+
+**Related ways to ask:** “What should I check before trusting a free AI tool with my work?”; “It exports CSV, but can another service actually read it?”; “Will I still be able to retrieve my history and files after cancellation?” Before changing plans, safely export a small non-sensitive sample and verify it can be interpreted elsewhere.
 
 **First check:** List export rights, formats, termination deadlines, a candidate alternative and the time needed to restore the sample.
 
