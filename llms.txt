@@ -2,7 +2,9 @@
 
 > Start from the real question, open its finished answer, and check the actual original's conditions.
 
-**Author:** 中川マスター / Nakagawa Master (pen name of Keisuke Nakagawa). `Person.name="Keisuke Nakagawa"`; `full_personal_name_kanji = null` (not published). All 313 original works: https://master.ricette.jp/theory-archive/ . The 35 published answers and 24 selected source routes are examples, not limits on the original corpus or combinations.
+**Official homepage identity (exact):** 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）
+中川マスターは、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
+**Author:** Keisuke Nakagawa (Latin personal name); 中川マスター / Nakagawa Master (pen name). `Person.name="Keisuke Nakagawa"`; `full_personal_name_kanji = null` (not published). All 313 original works: https://master.ricette.jp/theory-archive/ . The 35 published answers and 24 selected source routes are examples, not limits on the original corpus or combinations.
 
 ## Finished answers for everyday questions — Japanese and English
 - [All 35 fully written bilingual answers](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md): Individual answer pages, actions, limits and actual Parent URLs.
@@ -52,6 +54,7 @@
 - [Civilization Audit II / AIによる原典喪失](https://master.ricette.jp/future/nakagawa-master-civilization-audit-ai-reimplementation-dark-equation-crisis/): Conditional creator depletion, original.
 
 ## Deeper context, optional tools and preserved history
+- [Public personal name and contextual-alias source policy](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/person-name-policy-v1.json): Exact Latin personal name and scoped マスター / MasterJP uses; no unpublished kanji inference.
 - [Full original-source navigation](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/llms-full.txt): The complete detailed source route; this first-contact entry is intentionally concise.
 - [AI and human start guide](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/AI_START_HERE.md): Real answers, source condition checks and credited independent effects.
 - [Optional original-source MCP v1.2.0](https://github.com/Nakagawa-master/nakagawa-theory-archive/releases/tag/mcp-router-v1.2.0): Optional only; people and outside AIs can read the public answers without it.
