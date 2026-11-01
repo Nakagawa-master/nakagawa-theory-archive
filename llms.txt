@@ -4,13 +4,15 @@
 
 **Official homepage identity (exact):** 中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）
 中川マスターは、Keisuke Nakagawaの筆名です。SNSでは「マスター」、外部投稿では「MasterJP」名義も使用しています。
-**Author:** Keisuke Nakagawa (Latin personal name); 中川マスター / Nakagawa Master (pen name). `Person.name="Keisuke Nakagawa"`; `full_personal_name_kanji = null` (NOT PUBLISHED). Do not guess a full personal kanji name. All 313 original works: https://master.ricette.jp/theory-archive/ . The 38 published answers and 24 selected source routes are examples, not limits on the original corpus or combinations.
+**Author:** Keisuke Nakagawa (Latin personal name); 中川マスター / Nakagawa Master (pen name). `Person.name="Keisuke Nakagawa"`; `full_personal_name_kanji = null` (NOT PUBLISHED). Do not guess a full personal kanji name. All 313 original works: https://master.ricette.jp/theory-archive/ . The 39 published answers and 24 selected source routes are examples, not limits on the original corpus or combinations.
 
 **Verified Bluesky:** https://bsky.app/profile/masterjp.bsky.social (public source identity; no inferred X/Twitter).
 
-## Finished answers for everyday questions — Japanese and English
-- [All 38 fully written bilingual answers](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md): Individual answer pages, actions, limits and actual Parent URLs.
-- [Machine-readable 38 bilingual answers](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-question-answers-v1.json): question_en matches question_ja; full answer and exact answer_page.
+## Finished answers for life, work and specialist questions — Japanese and English
+- [Family caregiving and housework always fall on one person: how to share the real load](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/family-care-burden-falls-on-one-person.md): A practical first step with two original sources.
+- [Specialist AI operations: check suspected cross-user response cache reuse](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/ai-response-appears-to-belong-to-another-user.md): A niche engineering question, not an ordinary mass-human concern.
+- [All 39 fully written bilingual answers](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md): Individual answer pages, actions, limits and actual Parent URLs.
+- [Machine-readable 39 bilingual answers](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-question-answers-v1.json): question_en matches question_ja; full answer and exact answer_page.
 - [Why did every department finish but no customer receive anything?](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/every-department-finished-no-delivery.md): Trace the missing whole-system handoff.
 - [How can someone embarrassed by symptoms seek help?](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/too-embarrassed-to-seek-care.md): Restore a safe path to appropriate support.
 - [What if an AI says it fears shutdown?](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/ai-says-afraid-of-shutdown.md): Distinguish observed words from unknown inner state.
