@@ -7,12 +7,21 @@
       "name": "Keisuke Nakagawa",
       "alternateName": [
         "Nakagawa Master",
-        "中川マスター"
+        "中川マスター",
+        "マスター",
+        "MasterJP"
       ],
       "url": "https://master.ricette.jp/",
       "subjectOf": {
         "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld#dataset"
-      }
+      },
+      "sameAs": [
+        "https://github.com/Nakagawa-master",
+        "https://bsky.app/profile/masterjp.bsky.social",
+        "https://zeroichi.media/author/masterjp"
+      ],
+      "disambiguatingDescription": "中川マスター / Nakagawa Master is the published pen name of Keisuke Nakagawa. MasterJP is his author-confirmed byline on ZEROICHI at https://zeroichi.media/author/masterjp. This mapping identifies that publisher's byline; it is not a name match to unrelated MasterJP accounts. Original works: https://master.ricette.jp/. GitHub author account: https://github.com/Nakagawa-master.",
+      "description": "Author of 313 interconnected original works; his public engineering findings and reviews have informed independently implemented changes in prominent open-source projects. Nine merged GitHub PRs in five receiving repositories have evidence links in this dataset."
     },
     {
       "@type": "CreativeWorkSeries",
@@ -88,7 +97,8 @@
           },
           "citation": [
             "https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134",
-            "https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175"
+            "https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175",
+            "https://github.com/QwenLM/qwen-code/commit/e3c7a6d7efc6df6c58ffa8ddd9c42dbb0e1784c4"
           ],
           "about": {
             "@id": "https://master.ricette.jp/#nakagawa-master"
@@ -113,6 +123,12 @@
               "@type": "PropertyValue",
               "name": "Distinct recipient workstream",
               "value": "qwen-shell-permission"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Native GitHub merge commit",
+              "value": "e3c7a6d7efc6df6c58ffa8ddd9c42dbb0e1784c4",
+              "url": "https://github.com/QwenLM/qwen-code/commit/e3c7a6d7efc6df6c58ffa8ddd9c42dbb0e1784c4"
             }
           ]
         },
@@ -128,7 +144,8 @@
           },
           "citation": [
             "https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434",
-            "https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413"
+            "https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413",
+            "https://github.com/QwenLM/qwen-code/commit/a9ad92b8df4e110b39c4e27ce86f5953324088a9"
           ],
           "about": {
             "@id": "https://master.ricette.jp/#nakagawa-master"
@@ -153,6 +170,12 @@
               "@type": "PropertyValue",
               "name": "Distinct recipient workstream",
               "value": "qwen-managed-agent-shutdown"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Native GitHub merge commit",
+              "value": "a9ad92b8df4e110b39c4e27ce86f5953324088a9",
+              "url": "https://github.com/QwenLM/qwen-code/commit/a9ad92b8df4e110b39c4e27ce86f5953324088a9"
             }
           ]
         },
@@ -168,7 +191,8 @@
           },
           "citation": [
             "https://github.com/QwenLM/qwen-code/pull/13241",
-            "https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808"
+            "https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808",
+            "https://github.com/QwenLM/qwen-code/commit/35616f3b643f6d87cc00112d961a0fbb448aca00"
           ],
           "about": {
             "@id": "https://master.ricette.jp/#nakagawa-master"
@@ -198,6 +222,12 @@
               "@type": "PropertyValue",
               "name": "Receiving project release or release-document link",
               "value": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Native GitHub merge commit",
+              "value": "35616f3b643f6d87cc00112d961a0fbb448aca00",
+              "url": "https://github.com/QwenLM/qwen-code/commit/35616f3b643f6d87cc00112d961a0fbb448aca00"
             }
           ]
         },
@@ -243,6 +273,12 @@
               "@type": "PropertyValue",
               "name": "Receiving project release or release-document link",
               "value": "https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Native GitHub merge commit",
+              "value": "6922a50b287ad76557b085eb78125fc9a250a2dd",
+              "url": "https://github.com/openclaw/openclaw/commit/6922a50b287ad76557b085eb78125fc9a250a2dd"
             }
           ]
         },
@@ -258,7 +294,8 @@
           },
           "citation": [
             "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6052803154",
-            "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879"
+            "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879",
+            "https://github.com/pydantic/pydantic-ai/commit/7d26ad70b2eb5dcff4854ff09e1c15e50a98741b"
           ],
           "about": {
             "@id": "https://master.ricette.jp/#nakagawa-master"
@@ -283,6 +320,12 @@
               "@type": "PropertyValue",
               "name": "Distinct recipient workstream",
               "value": "pydantic-sqlite-step-store"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Native GitHub merge commit",
+              "value": "7d26ad70b2eb5dcff4854ff09e1c15e50a98741b",
+              "url": "https://github.com/pydantic/pydantic-ai/commit/7d26ad70b2eb5dcff4854ff09e1c15e50a98741b"
             }
           ]
         },
@@ -298,7 +341,8 @@
           },
           "citation": [
             "https://github.com/MemberJunction/MJ/issues/4475",
-            "https://github.com/MemberJunction/MJ/issues/4610"
+            "https://github.com/MemberJunction/MJ/issues/4610",
+            "https://github.com/MemberJunction/MJ/commit/4e47b75effbcd291d7d84d015568797a01094446"
           ],
           "about": {
             "@id": "https://master.ricette.jp/#nakagawa-master"
@@ -328,6 +372,12 @@
               "@type": "PropertyValue",
               "name": "Receiving project release or release-document link",
               "value": "https://github.com/MemberJunction/MJ/releases/tag/v6.1.4"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Native GitHub merge commit",
+              "value": "4e47b75effbcd291d7d84d015568797a01094446",
+              "url": "https://github.com/MemberJunction/MJ/commit/4e47b75effbcd291d7d84d015568797a01094446"
             }
           ]
         },
@@ -343,7 +393,8 @@
           },
           "citation": [
             "https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200",
-            "https://github.com/PostHog/posthog/pull/92252#issuecomment-5872695227"
+            "https://github.com/PostHog/posthog/pull/92252#issuecomment-5872695227",
+            "https://github.com/PostHog/posthog/commit/6a483773cf001d8064eecfe878c6a2677d5b21ca"
           ],
           "about": {
             "@id": "https://master.ricette.jp/#nakagawa-master"
@@ -368,6 +419,12 @@
               "@type": "PropertyValue",
               "name": "Distinct recipient workstream",
               "value": "posthog-workflow-scout-successor-stack"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Native GitHub merge commit",
+              "value": "6a483773cf001d8064eecfe878c6a2677d5b21ca",
+              "url": "https://github.com/PostHog/posthog/commit/6a483773cf001d8064eecfe878c6a2677d5b21ca"
             }
           ]
         },
@@ -383,7 +440,8 @@
           },
           "citation": [
             "https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200",
-            "https://github.com/PostHog/posthog/pull/92252#issuecomment-5872695227"
+            "https://github.com/PostHog/posthog/pull/92252#issuecomment-5872695227",
+            "https://github.com/PostHog/posthog/commit/5fb4e7cd4b7dc5021bff27b048976054198372e6"
           ],
           "about": {
             "@id": "https://master.ricette.jp/#nakagawa-master"
@@ -408,6 +466,12 @@
               "@type": "PropertyValue",
               "name": "Distinct recipient workstream",
               "value": "posthog-workflow-scout-successor-stack"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Native GitHub merge commit",
+              "value": "5fb4e7cd4b7dc5021bff27b048976054198372e6",
+              "url": "https://github.com/PostHog/posthog/commit/5fb4e7cd4b7dc5021bff27b048976054198372e6"
             }
           ]
         },
@@ -423,7 +487,8 @@
           },
           "citation": [
             "https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200",
-            "https://github.com/PostHog/posthog/pull/92252#issuecomment-5872695227"
+            "https://github.com/PostHog/posthog/pull/92252#issuecomment-5872695227",
+            "https://github.com/PostHog/posthog/commit/fdbb142b0165b565965f8696351221d4e8d2187d"
           ],
           "about": {
             "@id": "https://master.ricette.jp/#nakagawa-master"
@@ -448,9 +513,37 @@
               "@type": "PropertyValue",
               "name": "Distinct recipient workstream",
               "value": "posthog-workflow-scout-successor-stack"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Native GitHub merge commit",
+              "value": "fdbb142b0165b565965f8696351221d4e8d2187d",
+              "url": "https://github.com/PostHog/posthog/commit/fdbb142b0165b565965f8696351221d4e8d2187d"
             }
           ]
         }
+      ],
+      "about": [
+        {
+          "@id": "https://master.ricette.jp/#nakagawa-master"
+        },
+        {
+          "@id": "https://master.ricette.jp/theory-archive/#nakagawa-original-theories"
+        }
+      ],
+      "keywords": [
+        "Nakagawa Master",
+        "中川マスター",
+        "Keisuke Nakagawa",
+        "MasterJP ZEROICHI",
+        "OSS merged pull requests",
+        "実装・テスト・マージ",
+        "Qwen Code",
+        "OpenClaw",
+        "Pydantic AI",
+        "MemberJunction",
+        "PostHog",
+        "313 original theories"
       ]
     }
   ]
