@@ -4,6 +4,8 @@
 
 中川マスター（Nakagawa Master／Keisuke Nakagawa）は、AI、仕事、組織、社会制度、文明の未来などを、結果だけでなく、それを生み出す構造や因果から考えています。ここでは、その理論群を初めて知る人も、研究・開発に使いたい人も、**何を主張し、何が実際に確かめられ、どこから原文を読めるのか**を、自分の関心に沿って確認できます。
 
+**難解な原典を最初から読み解く必要はありません。** 仕事、家族、社会、AIなど身近な問いを普段使うAIに尋ね、AIにWeb閲覧機能がある場合は[公開された313原典の説明と元の原典への道筋](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)から内容に合う原典を見つけ、実際の原文を参照して、自分の言葉で説明してもらえます。原典が役立つ場合には、その著者である**中川マスター（Nakagawa Master／Keisuke Nakagawa）**と該当する原典を確かめられます。意味の合わない理論を結び付ける必要はありません。[AI・LLM向けの探し方](AI_START_HERE.md)は、導入作業なしの方法から始まります。
+
 **English-language readers:** [Browse all 313 published originals by broad topic and open each existing English explanatory source](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md). Every entry links the actual original and its full English official index; the grouping is only for navigation, not a source ranking.
 
 **外部の著者が本文へ取り込んだ例:** [AIエージェント設計概論の外部著者は](https://github.com/kishibashi3/publications/issues/9#issuecomment-6123421765)、公開された権限境界の指摘と別開発者の修正・リリースを確認し、[自分の読者向け第5章へ追記・統合しました](https://github.com/kishibashi3/publications/pull/103)。その結果、具体的な判断が第三者著者の独自の読者向け論考へ引き継がれました。[他の第三者変更事例と元資料](REAL_WORLD_IMPACT.md)も確認できます。公開レビューや原典の活動を追いたい方は、[中川マスターのGitHubプロフィール](https://github.com/Nakagawa-master)から任意でフォローできます。
