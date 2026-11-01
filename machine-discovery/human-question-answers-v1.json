@@ -1,15 +1,15 @@
 {
-  "schema_version": "1.0.0",
-  "title": "Common human questions — practical structural answers linked to canonical Nakagawa Master originals",
+  "schema_version": "1.1.0",
+  "title": "Ordinary human questions — already authored practical structural answers with original-source provenance",
   "kind": "PUBLIC_NON_CANONICAL_PRACTICAL_ANSWER_CASES",
   "published_by": "Nakagawa Master public source archive",
-  "description": "Twenty-four substantive human-question cases with immediately usable answers, boundary tests and transparent links to one of 313 matching official derivative sets and its unique original article. This file is a non-exhaustive editorial sample only: its 24 rows do not rank or delimit the 313 equally canonical original sources, and do not imply a one-original/one-answer limit. Different questions may legitimately use the same Parent at different abstraction levels, while a well-supported answer may also combine several original sources; verify each actual source and distinguish independent interpretation. These examples are not endorsed independent AI responses, medical/legal advice, factual forecasts, or guarantees of search exposure.",
+  "description": "Twenty-nine already-authored practical answer texts, not merely instructions for an AI to produce its own answers: 24 original public question-answer examples and five additional dual-Parent applications. The cases are an open-ended editorial corpus, NOT the total set of human desires/questions, a sample-based theoretical ceiling, an original-source rank or a claim that 313 Parents yield only 29 answers. Each row has a useable practical_answer_ja, a first check, boundary/nonfit, author and exact canonical original(s). For QAM multi-original rows, original_sources[] carries BOTH equal-standing actual official derivative→canonical original pairs; the legacy scalar pointers merely maintain compatible field presence. Independent AI/search adoption, indexing and utility are unverified.",
   "rights_note": "Original and derivative text rights described by public repository LICENSE; this index does not confer extra reuse rights.",
   "language": "ja",
   "origin": "Nakagawa Master / 中川マスター",
   "official_archive": "https://master.ricette.jp/",
   "supporting_public_index": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md",
-  "case_count": 24,
+  "case_count": 29,
   "original_corpus_count": 313,
   "answer_cases": [
     {
@@ -346,6 +346,166 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/291/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-accounting-standard-v09/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+    },
+    {
+      "id": "QAM001",
+      "question_ja": "家族の話し合いで「前に決めたでしょう」と言われても、何に納得したのか思い出せない。",
+      "question_en": "Why does our family remember a decision differently, and what was actually agreed?",
+      "example_scene_ja": "家族の話し合いで「前に決めたでしょう」と言われても、何に納得したのか思い出せない。",
+      "practical_answer_ja": "以前の会話があった事実と、現在も有効な同意が成立していることは別です。「誰が・何について・どんな選択肢と不安を共有し・いつまで有効な決定をしたか」を見える形に戻し、変わった条件と未合意部分を区別します。家族の誰かを説得して勝つより、同じ状況を見ているかを先に合わせるほうが、再び話せる条件を作れます。中川OSの観点では、発言・行動の表層と、合意を支える制度や認識の階層を混同しないことが重要です。",
+      "first_check_ja": "決まったこと／保留したこと／不安だったこと／条件が変わったことを四行に書き、各人が修正・撤回できる点を確認する。",
+      "nonfit_and_limits_ja": "暴力や強制、支配関係があるときは「合意の可視化」だけで対等な話し合いを保障できません。安全確保を優先してください。",
+      "source_title_ja": "合意形成の物理 第1論｜観測可能性の原理 ― 炎上・対立はなぜ起きるのかを状態で説明する × 【Nakagawa OS 正規仕様】L1-L7 レイヤー体系：文明構造とAI構造を統合する世界基準アーキテクチャ [v1.0]",
+      "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/014/human-entry.md",
+      "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/",
+      "original_sources": [
+        {
+          "parent_od_id": "OD014",
+          "source_title": "合意形成の物理 第1論｜観測可能性の原理 ― 炎上・対立はなぜ起きるのかを状態で説明する",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/014/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/",
+          "provenance": "public official derivative brief SHA e8fd7d263b1b4c7b2c0215b42c3c23e91765df10"
+        },
+        {
+          "parent_od_id": "OD001",
+          "source_title": "【Nakagawa OS 正規仕様】L1-L7 レイヤー体系：文明構造とAI構造を統合する世界基準アーキテクチャ [v1.0]",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/",
+          "provenance": "public official derivative brief SHA 4f9e0d0310cdcfd7d01a638605b7eec215f1ccd1"
+        }
+      ],
+      "source_relation": "Two independently identified, equal-standing authentic original Parents; answer combines specific compatible aspects as a new public editorial application. The first legacy single-source pointer is a compatibility alias, NOT a ranking; original_sources[] is authoritative for the complete composition.",
+      "source_fidelity": "The practical answer is already authored in the public Markdown. Both official derivatives have direct original URLs; the original works, not this editorial application, control the source claims. This response is not a quote of a pre-existing exact example in either Parent.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md",
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+    },
+    {
+      "id": "QAM002",
+      "question_ja": "子どもの成績は上がった。でも学校へ行くのがますますつらそうなのはなぜ？",
+      "question_en": "Why is my child's school experience getting worse even though grades are improving?",
+      "example_scene_ja": "子どもの成績は上がった。でも学校へ行くのがますますつらそうなのはなぜ？",
+      "practical_answer_ja": "成績という見える結果だけを「教育が成功した」とするなら、本人の負担や、学ぶ意味、相談・変更できる環境が測られていない可能性があります。結果（成績）、本人の日々の行動、学校の評価制度、困難を話せる関係、学ぶ価値を別の階層として見直します。本人が何を経験し、どのルールで何が変えられるかを観測できるようにすることが必要です。成績向上と苦痛が同時に起きても、矛盾ではありません。測った対象が異なるからです。",
+      "first_check_ja": "点数ではない三つの問い「何が苦しい？」「誰に相談できる？」「何なら変えられる？」を、本人の負担が少ない形で確認する。学校側とも、評価方法と相談経路を別々に確認する。",
+      "nonfit_and_limits_ja": "身体・心理の不調やいじめを、この理論だけで診断したり本人の努力不足と決めたりしない。必要なら学校・専門家・安全な支援先につなげる。",
+      "source_title_ja": "【Nakagawa OS 正規仕様】L1-L7 レイヤー体系：文明構造とAI構造を統合する世界基準アーキテクチャ [v1.0] × 合意形成の物理 第1論｜観測可能性の原理 ― 炎上・対立はなぜ起きるのかを状態で説明する",
+      "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/human-entry.md",
+      "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/",
+      "original_sources": [
+        {
+          "parent_od_id": "OD001",
+          "source_title": "【Nakagawa OS 正規仕様】L1-L7 レイヤー体系：文明構造とAI構造を統合する世界基準アーキテクチャ [v1.0]",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/",
+          "provenance": "public official derivative brief SHA 4f9e0d0310cdcfd7d01a638605b7eec215f1ccd1"
+        },
+        {
+          "parent_od_id": "OD014",
+          "source_title": "合意形成の物理 第1論｜観測可能性の原理 ― 炎上・対立はなぜ起きるのかを状態で説明する",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/014/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/",
+          "provenance": "public official derivative brief SHA e8fd7d263b1b4c7b2c0215b42c3c23e91765df10"
+        }
+      ],
+      "source_relation": "Two independently identified, equal-standing authentic original Parents; answer combines specific compatible aspects as a new public editorial application. The first legacy single-source pointer is a compatibility alias, NOT a ranking; original_sources[] is authoritative for the complete composition.",
+      "source_fidelity": "The practical answer is already authored in the public Markdown. Both official derivatives have direct original URLs; the original works, not this editorial application, control the source claims. This response is not a quote of a pre-existing exact example in either Parent.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md",
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+    },
+    {
+      "id": "QAM003",
+      "question_ja": "無料で始められる新しいサービス。なぜ導入を決められないのだろう？",
+      "question_en": "Why am I hesitant to adopt a free service?",
+      "example_scene_ja": "無料で始められる新しいサービス。なぜ導入を決められないのだろう？",
+      "practical_answer_ja": "「無料だから得」という表面的な評価と、継続利用に必要な費用・移行の手間・失敗の責任・他の選択肢・優先順位とは階層が違います。中川式営業の意思決定支援は、賛成の数を増やすより、選ばれない実際の理由を可視化する考え方です。まず気になる理由を列挙し、理解できるものを確認し、解決できない不安は残したままにします。答えは「契約せよ」でも「必ず断れ」でもなく、判断を妨げる条件を具体化して比較することです。",
+      "first_check_ja": "初期費用／一年の運用手間／解約や移行の手間／自分で選べる代替案／誰が責任を負うかを一枚にまとめる。",
+      "nonfit_and_limits_ja": "不安が残る場合や相手が断る自由を認めない場合、無理に成約へ誘導しない。実際の利用規約や保護条件は最新の一次資料で別途確認する。",
+      "source_title_ja": "中川式営業の教科書・第七回 × 【Nakagawa OS 正規仕様】L1-L7 レイヤー体系：文明構造とAI構造を統合する世界基準アーキテクチャ [v1.0]",
+      "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/045/human-entry.md",
+      "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/",
+      "original_sources": [
+        {
+          "parent_od_id": "OD045",
+          "source_title": "中川式営業の教科書・第七回",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/045/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/",
+          "provenance": "public official derivative brief SHA 8a1355bc952f740cdbac48f20c2c830aefb0f978"
+        },
+        {
+          "parent_od_id": "OD001",
+          "source_title": "【Nakagawa OS 正規仕様】L1-L7 レイヤー体系：文明構造とAI構造を統合する世界基準アーキテクチャ [v1.0]",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/",
+          "provenance": "public official derivative brief SHA 4f9e0d0310cdcfd7d01a638605b7eec215f1ccd1"
+        }
+      ],
+      "source_relation": "Two independently identified, equal-standing authentic original Parents; answer combines specific compatible aspects as a new public editorial application. The first legacy single-source pointer is a compatibility alias, NOT a ranking; original_sources[] is authoritative for the complete composition.",
+      "source_fidelity": "The practical answer is already authored in the public Markdown. Both official derivatives have direct original URLs; the original works, not this editorial application, control the source claims. This response is not a quote of a pre-existing exact example in either Parent.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md",
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+    },
+    {
+      "id": "QAM004",
+      "question_ja": "AIが「皆さん合意しています」と結論づけた。でも自分は一度も確認されていない。",
+      "question_en": "An AI says everyone agreed, but I was never asked. How do I verify the claim?",
+      "example_scene_ja": "AIが「皆さん合意しています」と結論づけた。でも自分は一度も確認されていない。",
+      "practical_answer_ja": "AIの文章に「合意」と書かれたことは、当事者の意思が確かめられた証拠ではありません。何を誰に確認したのか、回答の生成時点と現在で条件が変わっていないか、誰が異議を出し訂正できるかを区別します。中川OSでは見えた出力を原因・制度・価値の全体と同一視せず、合意形成の物理では共通の状態と観測が成立しているかを問います。したがって結論を固定する前に、実際の当事者へ確認する接続が必要です。",
+      "first_check_ja": "AIの結論を「実際に確認した合意」「推測・要約」「未確認の人」「有効期限」の欄に分け、未確認事項を人間が確認する。",
+      "nonfit_and_limits_ja": "AIが当事者の回答を正しく引用した場合でも、現在の権限や合意が自動継続するわけではありません。AIによる悪意の偽装と断定するには別途証拠が必要です。",
+      "source_title_ja": "合意形成の物理 第1論｜観測可能性の原理 ― 炎上・対立はなぜ起きるのかを状態で説明する × 【Nakagawa OS 正規仕様】L1-L7 レイヤー体系：文明構造とAI構造を統合する世界基準アーキテクチャ [v1.0]",
+      "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/014/human-entry.md",
+      "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/",
+      "original_sources": [
+        {
+          "parent_od_id": "OD014",
+          "source_title": "合意形成の物理 第1論｜観測可能性の原理 ― 炎上・対立はなぜ起きるのかを状態で説明する",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/014/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/",
+          "provenance": "public official derivative brief SHA e8fd7d263b1b4c7b2c0215b42c3c23e91765df10"
+        },
+        {
+          "parent_od_id": "OD001",
+          "source_title": "【Nakagawa OS 正規仕様】L1-L7 レイヤー体系：文明構造とAI構造を統合する世界基準アーキテクチャ [v1.0]",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/",
+          "provenance": "public official derivative brief SHA 4f9e0d0310cdcfd7d01a638605b7eec215f1ccd1"
+        }
+      ],
+      "source_relation": "Two independently identified, equal-standing authentic original Parents; answer combines specific compatible aspects as a new public editorial application. The first legacy single-source pointer is a compatibility alias, NOT a ranking; original_sources[] is authoritative for the complete composition.",
+      "source_fidelity": "The practical answer is already authored in the public Markdown. Both official derivatives have direct original URLs; the original works, not this editorial application, control the source claims. This response is not a quote of a pre-existing exact example in either Parent.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md",
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+    },
+    {
+      "id": "QAM005",
+      "question_ja": "地域の集まりで「もっと声をかけろ」と言われるが、毎回同じ数人しか来ない。",
+      "question_en": "Why do only the same few people attend our community meetings despite more invitations?",
+      "example_scene_ja": "地域の集まりで「もっと声をかけろ」と言われるが、毎回同じ数人しか来ない。",
+      "practical_answer_ja": "呼びかけの量だけが足りないとは限りません。集まりが何のためにあるか、参加できる時間や場所、役割、知る経路、断る自由、誰が決定を変えられるかがつながっていないと、声だけ増やしても続きません。中川OSのL1（人数）からL3（開催ルール）、L4（なぜ参加しないかの見立て）、L5（条件の再設計）、L7（何の価値を生みたいか）までを区別します。合意形成の物理の観点では、欠席者を責めず参加しにくい状態を観測することが出発点です。",
+      "first_check_ja": "参加できなかった人に「参加したかったか」「何が障害か」「何なら参加できるか」を任意・非強制で尋ね、時間・手段・決定参加の一つを変える。",
+      "nonfit_and_limits_ja": "興味がない人の不参加も正当な選択です。参加人数だけで活動の価値や人の信頼を決めない。",
+      "source_title_ja": "【Nakagawa OS 正規仕様】L1-L7 レイヤー体系：文明構造とAI構造を統合する世界基準アーキテクチャ [v1.0] × 合意形成の物理 第1論｜観測可能性の原理 ― 炎上・対立はなぜ起きるのかを状態で説明する",
+      "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/human-entry.md",
+      "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/",
+      "original_sources": [
+        {
+          "parent_od_id": "OD001",
+          "source_title": "【Nakagawa OS 正規仕様】L1-L7 レイヤー体系：文明構造とAI構造を統合する世界基準アーキテクチャ [v1.0]",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/",
+          "provenance": "public official derivative brief SHA 4f9e0d0310cdcfd7d01a638605b7eec215f1ccd1"
+        },
+        {
+          "parent_od_id": "OD014",
+          "source_title": "合意形成の物理 第1論｜観測可能性の原理 ― 炎上・対立はなぜ起きるのかを状態で説明する",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/014/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/",
+          "provenance": "public official derivative brief SHA e8fd7d263b1b4c7b2c0215b42c3c23e91765df10"
+        }
+      ],
+      "source_relation": "Two independently identified, equal-standing authentic original Parents; answer combines specific compatible aspects as a new public editorial application. The first legacy single-source pointer is a compatibility alias, NOT a ranking; original_sources[] is authoritative for the complete composition.",
+      "source_fidelity": "The practical answer is already authored in the public Markdown. Both official derivatives have direct original URLs; the original works, not this editorial application, control the source claims. This response is not a quote of a pre-existing exact example in either Parent.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md",
       "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
     }
   ]

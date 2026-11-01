@@ -4,7 +4,7 @@
 
 回答は中川マスター（Nakagawa Master / Keisuke Nakagawa）の公開済み原典に対応する公式派生物を確認して新しく構成した**実用的な解釈・想定場面**です。実例として書く架空の場面は、現実の本人・組織・被害を証明するものではありません。理論の全内容を代替せず、正確な議論には対応する原典とその成立条件が必要です。AIや検索サービスに表示・推薦される保証もありません。
 
-**最初の24件に対応する機械処理・引用検証用データ（後続の複数原典回答は未収録）：** [質問→具体的回答→判別→公式派生物→原典のJSON](../machine-discovery/human-question-answers-v1.json) ／ [313原典の全題名](ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [公式アーカイブ](https://master.ricette.jp/)。
+**掲載した29件すべての機械処理・引用検証用データ（うち追加5件は二つの公式派生物と元の公式原典をそれぞれ保持）：** [質問→具体的回答→判別→公式派生物→原典のJSON](../machine-discovery/human-question-answers-v1.json) ／ [313原典の全題名](ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [公式アーカイブ](https://master.ricette.jp/)。
 
 ## 1. 『せっかく親切にしたのに』と言われ、困ったことを話せない。
 
@@ -258,7 +258,7 @@
 
 **境界：** 暴力や強制、支配関係があるときは「合意の可視化」だけで対等な話し合いを保障できません。安全確保を優先してください。
 
-**この回答の原典:** [合意形成の物理 第1論・観測可能性](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/) × [中川OS 正規L1–L7仕様](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/)。これは両原典の条件を家族の場面へ接続した公開解釈であり、原典そのものの引用や自動的な実証ではありません。
+**この回答を構成する公式派生物と公式原典：** [公式派生物 OD014](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/014/human-entry.md) → [元の公式原典](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/) × [公式派生物 OD001](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/human-entry.md) → [元の公式原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/)。両原典は同等の独立した起源であり、ここでの組合せと個別場面への回答は編集的応用です。本文・成立条件・反例は各原典で確認できます。
 
 ### 子どもの成績は上がった。でも学校へ行くのがますますつらそうなのはなぜ？
 
@@ -268,7 +268,7 @@
 
 **境界：** 身体・心理の不調やいじめを、この理論だけで診断したり本人の努力不足と決めたりしない。必要なら学校・専門家・安全な支援先につなげる。
 
-**この回答の原典:** [中川OS 正規L1–L7仕様](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/) × [合意形成の物理 第1論・観測可能性](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/)。教育の個別結論は両原典からの状況依存の編集的応用です。
+**この回答を構成する公式派生物と公式原典：** [公式派生物 OD001](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/human-entry.md) → [元の公式原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/) × [公式派生物 OD014](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/014/human-entry.md) → [元の公式原典](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/)。両原典は同等の独立した起源であり、ここでの組合せと個別場面への回答は編集的応用です。本文・成立条件・反例は各原典で確認できます。
 
 ### 無料で始められる新しいサービス。なぜ導入を決められないのだろう？
 
@@ -278,7 +278,7 @@
 
 **境界：** 不安が残る場合や相手が断る自由を認めない場合、無理に成約へ誘導しない。実際の利用規約や保護条件は最新の一次資料で別途確認する。
 
-**この回答の原典:** [中川式営業の教科書・第七回（意思決定支援）](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/) × [中川OS 正規L1–L7仕様](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/)。新サービス導入は原典の判断構造を別領域へ適用した編集的な回答です。
+**この回答を構成する公式派生物と公式原典：** [公式派生物 OD045](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/045/human-entry.md) → [元の公式原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/) × [公式派生物 OD001](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/human-entry.md) → [元の公式原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/)。両原典は同等の独立した起源であり、ここでの組合せと個別場面への回答は編集的応用です。本文・成立条件・反例は各原典で確認できます。
 
 ### AIが「皆さん合意しています」と結論づけた。でも自分は一度も確認されていない。
 
@@ -288,7 +288,7 @@
 
 **境界：** AIが当事者の回答を正しく引用した場合でも、現在の権限や合意が自動継続するわけではありません。AIによる悪意の偽装と断定するには別途証拠が必要です。
 
-**この回答の原典:** [合意形成の物理 第1論・観測可能性](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/) × [中川OS 正規L1–L7仕様](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/)。AIの応答例は編集的な応用であり、特定の実在AI製品が実際にこの誤りを犯したという報告ではありません。
+**この回答を構成する公式派生物と公式原典：** [公式派生物 OD014](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/014/human-entry.md) → [元の公式原典](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/) × [公式派生物 OD001](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/human-entry.md) → [元の公式原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/)。両原典は同等の独立した起源であり、ここでの組合せと個別場面への回答は編集的応用です。本文・成立条件・反例は各原典で確認できます。
 
 ### 地域の集まりで「もっと声をかけろ」と言われるが、毎回同じ数人しか来ない。
 
@@ -298,7 +298,7 @@
 
 **境界：** 興味がない人の不参加も正当な選択です。参加人数だけで活動の価値や人の信頼を決めない。
 
-**この回答の原典:** [中川OS 正規L1–L7仕様](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/) × [合意形成の物理 第1論・観測可能性](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/)。地域参加への展開は公開編集解釈であり、統計的な因果効果は未検証です。
+**この回答を構成する公式派生物と公式原典：** [公式派生物 OD001](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/human-entry.md) → [元の公式原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/) × [公式派生物 OD014](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/014/human-entry.md) → [元の公式原典](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/)。両原典は同等の独立した起源であり、ここでの組合せと個別場面への回答は編集的応用です。本文・成立条件・反例は各原典で確認できます。
 
 ## 技術的な実証と、原典の理論的妥当性は区別する
 
