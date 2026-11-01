@@ -13,6 +13,7 @@
 - **OpenClaw｜修改无关代理配置，却让另一个人的审批失效。** 中川大师[指出具体漏洞和回归测试](https://github.com/openclaw/openclaw/pull/160136#issuecomment-5863857114)。开发者**明确引用其报告**，在[独立PR中实现并合并修复](https://github.com/openclaw/openclaw/pull/160856)；[官方版本文档列出 `@Nakagawa-master`](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)。详见案例51。
 - **MemberJunction｜ID相同不代表有权覆盖已有记录。** 接收团队修改代码和测试，并发布[正式版v6.1.2](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)。详见案例3。
 - **PostHog｜数据提供者自称的数值，不等于产品独立测量的结果。** 接收团队将修改拆为[三个已合并的后续PR](https://github.com/PostHog/posthog/pull/107795)，并有dev、美国和欧洲生产环境部署记录；客户开放范围及项目当前状态见案例1。
+- **[Qwen Code｜权限解析器误拒绝只读命令，也可能漏掉受保护文件的实际写入目标](https://github.com/QwenLM/qwen-code/pull/15681)。** 除了原有 `2>&1` 被误判为写入，中川大师还[指出](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134)，`>&protected.txt` 实际写入 `protected.txt`，旧解析器却检查 `&protected.txt`，可能绕过针对具体文件的拒绝规则。[原问题报告者独立验证权限判定从修复前 `allow` 变为修复后 `deny`](https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175)，并自行完成代码及回归测试。[PR #15681 于2026年11月1日合并](https://github.com/QwenLM/qwen-code/pull/15681)。是否进入正式发布版本以及独立用户的实际使用效果尚未核实。
 - **Qwen Code｜“之前曾停止”不等于“本次AI调用确实已停止”。** 开发者`wenshao`完成修复，并于[10月12日合并](https://github.com/QwenLM/qwen-code/pull/13923)。详见案例47。
 - **PydanticAI｜跳过重复请求，仍可能留下多余的AI历史写入。** 开发者[独立复现并修复](https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879)，[修复已合并](https://github.com/pydantic/pydantic-ai/pull/9982)。详见案例41。
 
