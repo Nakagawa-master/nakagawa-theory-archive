@@ -901,6 +901,25 @@ def self_test():
         assert len(exploratory["structural_exploration"]["lenses"]) == 7
         assert exploratory["structural_exploration"]["first_lens_is_hint_not_factual_fit"]
 
+    # Explicit source recall across ALL 313 equal-standing Parents: respect
+    # the normal 1–1500 character per-question limit, instead of inventing a
+    # bigger one. All IDs must be recoverable in finite bounded batches.
+    expected_ids = {f"OD{i:03d}" for i in range(1, 314)}
+    verified_ids = set()
+    for start in range(1, 314, 25):
+        requested = [f"OD{i:03d}" for i in range(start, min(start + 25, 314))]
+        output = answer_question("Compare " + " and ".join(requested))
+        assert output["explicit_source_requests"] == requested
+        returned = {x["route_id"].removeprefix("whole_structure:")
+                    for x in output["matching_routes"]
+                    if x["route_id"].startswith("whole_structure:")}
+        outstanding = set(output["unreturned_explicit_source_requests"])
+        assert not (returned & outstanding)
+        assert returned | outstanding == set(requested), (requested, output)
+        assert output["explicit_source_display_limit"] == 50
+        verified_ids.update(returned)
+    assert verified_ids == expected_ids, sorted(expected_ids - verified_ids)
+
     # Recall gate: every published JA/EN/ZH Parent example still retrieves
     # its own exact original, not only the pre-existing English technical route.
     for entry in read_original_catalog()["entries"]:
