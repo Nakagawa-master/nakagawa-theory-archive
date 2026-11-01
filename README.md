@@ -20,9 +20,19 @@
 
 ## 自分の問いから原典を探す（MCP導入不要）
 
-**仕事・人間関係・家族・将来・ブランド・地域文化・社会・AIの困りごとに、先に具体的な答えを示す：** [24の実用的な問い・答え・見分け方](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [同じ24件を構造化した検索・照合データ](machine-discovery/human-question-answers-v1.json)。この24件は掲載済みの参考回答例であって、原典の優先順位・網羅性・各原典から生まれる答えの数を決めません。313原典はいずれも独立した源で、一つの原典から複数の文脈別回答を導け、関連する複数原典を組み合わせた別の解釈も考えられます。原典の主張、適用条件、AI等の新たな解釈を区別して確認してください。
+**答えを先に読む：** [実際の一般的な問いへの29件の完成済み回答・最初の確認・適用外の条件](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [同じ29件の回答本文と原典出所を含む公開JSON](machine-discovery/human-question-answers-v1.json)。29件は掲載済みの回答例数であって、313原典の優先順位・適用領域・組合せの上限ではありません。**質問別の独立した回答ページへ直接進む場合は、下記の実例を選べます。**
 
 **313原典の普通の日本語による発見:** [題名だけでなく313原典それぞれの公式日本語解説から問いを探すためのHTML](machine-discovery/originals-browser-finder.html) ／ [同じ313件の原典URL・公式派生物の文脈・元ファイルSHAを備えた公開データ（AIも通常のWeb取得で読めます）](machine-discovery/published-ja-source-briefs-313-v1.json)。**GitHubの `.html` ページは実行画面ではなくソースの表示です。** 実際に検索フォームを操作するには、HTMLファイルの `Raw` からソースを `.html` として保存し、自分のブラウザで開いてください（アプリのインストールは不要）。全313件の題名・説明を追加照合する際は公開JSONへのネット接続が必要です。保存せずに読む場合は[全313件の題名・テーマ案内](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)を直接参照できます。検索候補から、成立条件・反例を原典で実際に確かめる流れを用意しています。
+
+
+**普通の問いへの具体的な答え（質問別にそのまま読める公開ページ）：**
+- [「前に決めた」と言われたのに納得した記憶がない](human-translation/answers/family-decision-remembered-differently.md) — 過去の会話と現在の同意を分け、決定・未決・変更条件を双方が見直せるようにする。
+- [成績は上がったのに子どもが学校をつらがる](human-translation/answers/good-grades-school-distress.md) — 点数と本人の負担・相談経路を別の観測対象として確かめる。
+- [無料サービスなのに導入を決められない](human-translation/answers/hesitating-to-adopt-free-service.md) — 初期価格だけでなく継続費用・移行・責任・代替案を本人が比較できるようにする。
+- [AIが「全員合意」と書いたが自分は確認されていない](human-translation/answers/ai-claimed-consensus-without-asking.md) — 生成された文章と実際に確認した当事者の意思を分離する。
+- [地域の集まりは声をかけても同じ人しか来ない](human-translation/answers/community-event-only-same-attendees.md) — 呼びかけ量より参加条件・目的・断る自由・変更できる部分を点検する。
+
+回答ページは、原典著者の公開名、実際に用いた公式派生物と元の原典、適用条件と当てはまらない場合を載せています。ここに挙げた5件は読者向けの入口であり、掲載済み29件や独立した313原典の意味・応用・組合せの境界ではありません。
 
 **初めての方へ：** [自分の疑問から試す](human-translation/SEARCH_FROM_A_REAL_QUESTION.md) ／ [313原典の題名と24件の参考事例を同時に探す（原典の意味・適合は要確認）](machine-discovery/originals-browser-finder.html) ／ [公式アーカイブに蓄積された原典記事全体から探す](https://master.ricette.jp/) ／ [別の人が実際に変えた仕事を見る](REAL_WORLD_IMPACT.md) ／ [原典と著者を知る](ABOUT_NAKAGAWA_MASTER.md)。
 
