@@ -37,7 +37,7 @@ This is a first-contact form only; it is not permission, a contract, or a direct
 
 ## Already authored answers to ordinary questions — full answers, not instructions to invent them
 
-The published first-party [35 substantive practical answers](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) include a first check, a nonfit condition and exact originating official derivative/Parent references. The [35 full answer texts are also machine-readable](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-question-answers-v1.json). In addition to the catalog, eleven question-specific public pages are directly usable (selected links below):
+The published first-party [35 substantive practical answers](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) include a first check, a nonfit condition and exact originating official derivative/Parent references. The [35 full answer texts are also machine-readable](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-question-answers-v1.json). All 35 examples have directly readable Japanese+English question-specific pages (selected links below):
 
 - **「前に決めた」と言われたのに納得した記憶がない** — 過去の会話と現在の同意を分け、決定・未決・変更条件を双方が見直せるようにする。 [Read the finished question-specific answer and both source originals](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/family-decision-remembered-differently.md).
 - **成績は上がったのに子どもが学校をつらがる** — 点数と本人の負担・相談経路を別の観測対象として確かめる。 [Read the finished question-specific answer and both source originals](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/good-grades-school-distress.md).
@@ -48,6 +48,9 @@ The published first-party [35 substantive practical answers](https://github.com/
 - **A cheap AI tool is difficult to leave; assess migration and future repair costs.** [Read the finished answer, checks and source originals](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/cheap-ai-tool-future-exit-cost.md).
 - **Repeated news claims are not the same as independently verified evidence.** [Read the finished answer, checks and source originals](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/repeated-news-independent-evidence.md).
 - **An AI fears shutdown; separate its words from uncertain inner experience.** [Read the finished answer, checks and source originals](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/ai-says-afraid-of-shutdown.md).
+
+- **誰も全体を見ないまま各部署が完了と言う** — [Read the complete bilingual answer and canonical original](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/every-department-finished-no-delivery.md).
+- **不調を誰にも相談できず困っている** — [Read the complete bilingual answer and canonical original](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/too-embarrassed-to-seek-care.md).
 
 These selected questions are independent entry examples, not a closed ontology; original theories and grounded combinations have broader potential. The authorship of originals, first-party application and a later independent user's or AI's choices are distinct. Source suitability and independent adoption must be judged case by case.
 
