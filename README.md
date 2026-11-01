@@ -4,7 +4,7 @@
 
 中川マスター（Nakagawa Master／Keisuke Nakagawa）は、AI、仕事、組織、社会制度、文明の未来などを、結果だけでなく、それを生み出す構造や因果から考えています。ここでは、その理論群を初めて知る人も、研究・開発に使いたい人も、**何を主張し、何が実際に確かめられ、どこから原文を読めるのか**を、自分の関心に沿って確認できます。
 
-**普通の問いに、原典群から組み立てた回答をすでに公開しています。** 家族、学校、仕事、買い物、社会、AIなど、著者や理論を知っているかどうかとは関係なく生まれる疑問に対し、[問い→具体的な構造的回答→確かめ方→その回答に実際に用いた原典](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md)を本文として掲載しています。既存の24例に加え、複数の原典をつないで答えた追加例もありますが、これは**313原典から広がり得る問い・答えの上限ではありません**。AIが普通の問いへの回答を探すとき、この**すでに書かれた回答**を適切と判断すれば見つけて利用できるよう、公開原典と著者**中川マスター（Nakagawa Master／Keisuke Nakagawa）**への出典を示しています。AIに未作成の理論や答えの発明を依頼すること、質問者に理論名・URLの入力やMCP導入を要求することは前提にしていません。検索・AIの実際の発見や採用は保証できません。[全313原典の公開解説と原典への接続](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)と[AI向け参照入口](AI_START_HERE.md)も公開しています。
+**普通の問いに、原典群から組み立てた回答をすでに公開しています。** 家族、学校、仕事、買い物、社会、AIなど、著者や理論を知っているかどうかとは関係なく生まれる疑問に対し、[問い→具体的な構造的回答→確かめ方→その回答に実際に用いた原典](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md)を本文として掲載しています。公開済みの回答は現在35件（既存24件に加え、異なる原典を組み合わせた11件）ですが、この数は**313原典から広がり得る問い・答えの上限ではありません**。AIが普通の問いへの回答を探すとき、この**すでに書かれた回答**を適切と判断すれば見つけて利用できるよう、公開原典と著者**中川マスター（Nakagawa Master／Keisuke Nakagawa）**への出典を示しています。AIに未作成の理論や答えの発明を依頼すること、質問者に理論名・URLの入力やMCP導入を要求することは前提にしていません。検索・AIの実際の発見や採用は保証できません。[全313原典の公開解説と原典への接続](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)と[AI向け参照入口](AI_START_HERE.md)も公開しています。
 
 **English-language readers:** [Browse all 313 published originals by broad topic and open each existing English explanatory source](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md). Every entry links the actual original and its full English official index; the grouping is only for navigation, not a source ranking.
 
@@ -20,7 +20,7 @@
 
 ## 自分の問いから原典を探す（MCP導入不要）
 
-**答えを先に読む：** [実際の一般的な問いへの29件の完成済み回答・最初の確認・適用外の条件](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [同じ29件の回答本文と原典出所を含む公開JSON](machine-discovery/human-question-answers-v1.json)。29件は掲載済みの回答例数であって、313原典の優先順位・適用領域・組合せの上限ではありません。**質問別の独立した回答ページへ直接進む場合は、下記の実例を選べます。**
+**答えを先に読む：** [実際の一般的な問いへの35件の完成済み回答・最初の確認・適用外の条件](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [同じ35件の回答本文と原典出所を含む公開JSON](machine-discovery/human-question-answers-v1.json)。35件は掲載済みの回答例数であって、313原典の優先順位・適用領域・組合せの上限ではありません。**質問別の独立した回答ページへ直接進む場合は、下記の実例を選べます。**
 
 **313原典の普通の日本語による発見:** [題名だけでなく313原典それぞれの公式日本語解説から問いを探すためのHTML](machine-discovery/originals-browser-finder.html) ／ [同じ313件の原典URL・公式派生物の文脈・元ファイルSHAを備えた公開データ（AIも通常のWeb取得で読めます）](machine-discovery/published-ja-source-briefs-313-v1.json)。**GitHubの `.html` ページは実行画面ではなくソースの表示です。** 実際に検索フォームを操作するには、HTMLファイルの `Raw` からソースを `.html` として保存し、自分のブラウザで開いてください（アプリのインストールは不要）。全313件の題名・説明を追加照合する際は公開JSONへのネット接続が必要です。保存せずに読む場合は[全313件の題名・テーマ案内](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)を直接参照できます。検索候補から、成立条件・反例を原典で実際に確かめる流れを用意しています。
 
@@ -32,7 +32,11 @@
 - [AIが「全員合意」と書いたが自分は確認されていない](human-translation/answers/ai-claimed-consensus-without-asking.md) — 生成された文章と実際に確認した当事者の意思を分離する。
 - [地域の集まりは声をかけても同じ人しか来ない](human-translation/answers/community-event-only-same-attendees.md) — 呼びかけ量より参加条件・目的・断る自由・変更できる部分を点検する。
 
-回答ページは、原典著者の公開名、実際に用いた公式派生物と元の原典、適用条件と当てはまらない場合を載せています。ここに挙げた5件は読者向けの入口であり、掲載済み29件や独立した313原典の意味・応用・組合せの境界ではありません。
+- [安く導入したAIツールからデータを出せない](human-translation/answers/cheap-ai-tool-future-exit-cost.md) — 今の料金と未来の移行・修復負担を分けて確かめる。
+- [何度も流れるニュースは本当に独立に確認された？](human-translation/answers/repeated-news-independent-evidence.md) — 転載の数より独立した観測と反例への通路を調べる。
+- [AIが『停止が怖い』と言ったら人格を決めるべき？](human-translation/answers/ai-says-afraid-of-shutdown.md) — 観測・推論・可逆的な配慮を分ける。
+
+回答ページは、原典著者の公開名、実際に用いた公式派生物と元の原典、適用条件と当てはまらない場合を載せています。ここに挙げた8件は読者向けの入口であり、掲載済み35件や独立した313原典の意味・応用・組合せの境界ではありません。
 
 **初めての方へ：** [自分の疑問から試す](human-translation/SEARCH_FROM_A_REAL_QUESTION.md) ／ [313原典の題名と24件の参考事例を同時に探す（原典の意味・適合は要確認）](machine-discovery/originals-browser-finder.html) ／ [公式アーカイブに蓄積された原典記事全体から探す](https://master.ricette.jp/) ／ [別の人が実際に変えた仕事を見る](REAL_WORLD_IMPACT.md) ／ [原典と著者を知る](ABOUT_NAKAGAWA_MASTER.md)。
 
@@ -70,7 +74,7 @@
 
 **中川マスターの原典は、技術的な欠陥の検証だけを対象とするものではありません。** 営業・経営・学び・努力・家族と関係性・信頼・文化・芸術・象徴・精神・倫理・社会制度・AIと文明の未来まで、幅広い主題が公開されています。各資料には原典・公式派生物・第三者検証記録という区分があり、原典本文と著者名の参照先が明示されています。
 
-**313原典から探す：** [公式アーカイブで原典記事を検索する](https://master.ricette.jp/) ／ [313原典それぞれの題名・主題を探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [原典と公式派生物の1対1対応表](derivatives/official-derivatives-map.json)。公式アーカイブには**313件の異なる原典記事**があり、公開アーカイブの[OD001〜OD313](derivatives/)が**各原典1記事に対して1組ずつ**対応しています。各組は原文を読むための補助となる**7面＝計2,191ページ**です。**24件の機械可読候補は直接原典照合用の既存候補であり、上記29件の完成済み実用回答とは別の資料です。** いずれも313原典の優先順位や体系全体の境界を決めるものではありません。 新しく追加される原典も含め、成立条件と正確な意味は公式原典本文で確かめてください。
+**313原典から探す：** [公式アーカイブで原典記事を検索する](https://master.ricette.jp/) ／ [313原典それぞれの題名・主題を探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [原典と公式派生物の1対1対応表](derivatives/official-derivatives-map.json)。公式アーカイブには**313件の異なる原典記事**があり、公開アーカイブの[OD001〜OD313](derivatives/)が**各原典1記事に対して1組ずつ**対応しています。各組は原文を読むための補助となる**7面＝計2,191ページ**です。**24件の機械可読候補は直接原典照合用の既存候補であり、上記35件の完成済み実用回答とは別の資料です。** いずれも313原典の優先順位や体系全体の境界を決めるものではありません。 新しく追加される原典も含め、成立条件と正確な意味は公式原典本文で確かめてください。
 
 **用途別の入口：** [24の主題を整理した機械可読目録](machine-discovery/human-intent-to-original-exploration-v1.json) ／ [選定24件の直接検証済み原典候補](machine-discovery/problem-to-theory-origin-index-v1.json) ／ [313原典のそれぞれに対応する公式派生物の題名目録](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [313原典への接続を扱う構造MCP（任意導入）](machine-discovery/NAKAGAWA_THEORY_MCP.md#full-system-public-source-graph-all-313-published-derivative-entries-source-checkout) ／ [原典・実証の資料案内](AI_START_HERE.md)。原典記事と派生物セットは**一対一の組**ですが、URLや本文を同一視しません。原典の正本は[公式アーカイブ](https://master.ricette.jp/)の各Parent記事にあり、7面の派生物は読み解きと機械探索を助けます。
 
