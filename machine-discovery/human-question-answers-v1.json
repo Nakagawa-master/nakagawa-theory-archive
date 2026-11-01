@@ -3,13 +3,13 @@
   "title": "Ordinary human questions — already authored practical structural answers with original-source provenance",
   "kind": "PUBLIC_NON_CANONICAL_PRACTICAL_ANSWER_CASES",
   "published_by": "Nakagawa Master public source archive",
-  "description": "Thirty-seven already-authored question-specific substantive Japanese and English practical answers, each on its own human-readable Markdown URL with matching bilingual question/answer, a first check, meaningful nonfit boundary and actual official derivative / canonical original links. 24 earlier single-original applications and thirteen additional dual-Parent applications; all 313 original Parents retain equal standing and an open-ended number of possible fit-for-purpose applications. The 24 legacy scalar-source rows preserve their originals; the thirteen composed applications use original_sources[] for their two actual Parent/derivative pairs. This is a public first-party answer corpus, not a fixed ceiling, an instruction for another AI to invent an unwritten answer, or evidence of independent search, Gemini selection, human adoption or popularity. Separate original authored theories from first-party practical interpretations, and inspect actual canonical Parents for detailed original claims.",
+  "description": "Thirty-eight already-authored question-specific substantive Japanese and English practical answers, each on its own human-readable Markdown URL with matching bilingual question/answer, a first check, meaningful nonfit boundary and actual official derivative / canonical original links. 24 earlier single-original applications and fourteen additional dual-Parent applications; all 313 original Parents retain equal standing and an open-ended number of possible fit-for-purpose applications. The 24 legacy scalar-source rows preserve their originals; the thirteen composed applications use original_sources[] for their two actual Parent/derivative pairs. This is a public first-party answer corpus, not a fixed ceiling, an instruction for another AI to invent an unwritten answer, or evidence of independent search, Gemini selection, human adoption or popularity. Separate original authored theories from first-party practical interpretations, and inspect actual canonical Parents for detailed original claims.",
   "rights_note": "Original and derivative text rights described by public repository LICENSE; this index does not confer extra reuse rights.",
   "language": "ja,en",
   "origin": "Nakagawa Master / 中川マスター",
   "official_archive": "https://master.ricette.jp/",
   "supporting_public_index": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md",
-  "case_count": 37,
+  "case_count": 38,
   "original_corpus_count": 313,
   "answer_cases": [
     {
@@ -924,6 +924,42 @@
       "source_application_en": "OD197 addresses how to protect a newcomer's initial conditions from premature external evaluation; OD160 addresses the conditions under which output and coordination can continue without constant pushing by a central authority. They serve distinct complementary roles rather than being the same theory.",
       "first_check_en": "Choose a low-risk task. Before showing an AI answer, allow five minutes to note what is known, what remains unknown and one tentative idea. Return specific feedback about where the idea helps, then offer another attempt.",
       "nonfit_and_limits_en": "This does not reject examples, feedback or AI tools. Do not waive expert review, safety rules or privacy constraints in high-stakes tasks; adapt support to the actual person and do not force independence by withholding help."
+    },
+    {
+      "id": "QAM014",
+      "question_ja": "AIの返答に、別の利用者の情報が混ざったように見える。何を確かめればよい？",
+      "question_en": "An AI response looks like it contains another user's information. What should I check?",
+      "example_scene_ja": "同じAIサービスを使う別の部署の情報が回答に混じったように見える、という未確認の想定事例。",
+      "practical_answer_ja": "まず、その返答を他の人へ転送したり、仕事の判断に再利用したりするのを止めます。表示された文字だけでは、本当に他人の情報が漏れたのか、似た文面をAIが生成しただけなのかは決まりません。ただし、AIサービスの運営側には、**「回答が正しく生成されたか」と「その回答を今の利用者に見せる権限があるか」**を別々に確認してもらう必要があります。\n\n中川マスターの**成立条件論・第0論（OD003）**は、一部分で正しく動くことを、利用者まで含めた全体成立の証明と混同しない視点を示します。**接続プロトコル標準論（OD069）**は、利用者・組織・AIの接続を、ID、目的、同意範囲、責任、訂正可能性などの文脈とともに保持する視点を示します。これらを組み合わせると、「AIが返した」という局所的な成功だけでなく、**誰の文脈で生成・保存・再利用され、誤りを誰が止めて訂正できるか**まで確かめる実用的な問いになります。",
+      "first_check_ja": "回答の転送・再利用をいったん止め、内容を広めずに調べられる発生日時・サービス・許可された依頼IDを残して、サービス管理者へ出所と受信者の権限照合を依頼する。",
+      "nonfit_and_limits_ja": "同じ表現だけで漏えいを確定しない。許可された共有、AIの通常生成、本人の誤操作は区別する。個別の情報セキュリティ・法的判断は運営者・専門家が担当する。",
+      "source_title_ja": "成立条件論・第0論｜誰も全体を見ていない社会⸻局所全体化がなぜ成立判定理論を必要にするのか × 中川式 接続プロトコル標準論──ID・同意・記憶・可逆を貫く社会API",
+      "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/003/human-entry.md",
+      "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
+      "original_sources": [
+        {
+          "parent_od_id": "OD003",
+          "source_title": "成立条件論・第0論｜誰も全体を見ていない社会⸻局所全体化がなぜ成立判定理論を必要にするのか",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/003/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
+          "provenance": "Published official derivative source blob 1280f1158b6296c22be35844278b8a2ee9c48138"
+        },
+        {
+          "parent_od_id": "OD069",
+          "source_title": "中川式 接続プロトコル標準論──ID・同意・記憶・可逆を貫く社会API",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/069/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/",
+          "provenance": "Published official derivative source blob 2bd18794e1c51c77cc56c3db5448215424e08e48"
+        }
+      ],
+      "source_relation": "OD003 distinguishes a locally correct AI/cache component from functioning end-to-end recipient safety; OD069 independently treats identity, consent scope, responsibility, memory and correction as connection conditions. This authored practical application treats both equal-standing Parents separately and does not assert they define caching implementation.",
+      "source_fidelity": "An independently checkable editorial practical interpretation based on the two official derivatives and linked actual canonical Parent URLs, not a statement that either original describes a specific code bug or confirmed privacy incident.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/ai-response-appears-to-belong-to-another-user.md",
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Do not redistribute the suspicious response. Similar wording alone does not prove a data breach, but the service operator should separately test whether the response is technically correct and whether the current user is authorized to receive it. Nakagawa Master's **OD003** distinguishes a locally correct component from a functioning end-to-end outcome. **OD069** examines the connection's contextual identity, purpose, consent, responsibility, correction and withdrawal conditions. Applied here, the relevant outcome includes who was authorized to request, cache, retrieve and correct the response—not merely whether the model returned a valid message.",
+      "source_application_en": "OD003 asks whether partial technical correctness actually connects to an authorized user outcome; OD069 provides independently relevant identity, permission, memory and correction conditions. The application is source-grounded editorial interpretation.",
+      "first_check_en": "Stop redistribution; preserve only non-sensitive service, time and permitted request metadata; ask the designated service/security operator to compare the response source with authenticated recipient scope.",
+      "nonfit_and_limits_en": "Textual resemblance or authorized shared content does not prove data leakage; technical investigation and notifications require product-specific evidence and professional decisions."
     }
   ]
 }

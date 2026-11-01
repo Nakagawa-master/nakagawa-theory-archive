@@ -4,7 +4,7 @@
 
 回答は中川マスター（Nakagawa Master / Keisuke Nakagawa）の公開済み原典に対応する公式派生物を確認して新しく構成した**実用的な解釈・想定場面**です。実例として書く架空の場面は、現実の本人・組織・被害を証明するものではありません。理論の全内容を代替せず、正確な議論には対応する原典とその成立条件が必要です。AIや検索サービスに表示・推薦される保証もありません。
 
-**37件すべての日本語・英語の完成済み回答は、それぞれ質問別の独立ページから直接読めます。24件は一原典を具体的場面へ応用し、追加13件は複数原典を接続した応用です。全37件の対訳と正確な原典を含むデータ：** [質問→具体的回答→判別→公式派生物→原典のJSON](../machine-discovery/human-question-answers-v1.json) ／ [313原典の全題名](ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [公式アーカイブ](https://master.ricette.jp/)。
+**38件すべての日本語・英語の完成済み回答は、それぞれ質問別の独立ページから直接読めます。24件は一原典を具体的場面へ応用し、追加14件は複数原典を接続した応用です。全38件の対訳と正確な原典を含むデータ：** [質問→具体的回答→判別→公式派生物→原典のJSON](../machine-discovery/human-question-answers-v1.json) ／ [313原典の全題名](ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [公式アーカイブ](https://master.ricette.jp/)。
 
 ## 1. 『せっかく親切にしたのに』と言われ、困ったことを話せない。
 
@@ -459,6 +459,19 @@
 **適用外・注意：** 模範解答の利用自体を否定しません。安全・法律・医療・個人情報など厳密な検証が必要な課題では、専門家の確認と事前の制約を省きません。本人が希望する支援・特性・学習環境を無視して「自律」を強制する方法でもありません。
 
 **原典との接続：** [OD197公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/197/human-entry.md)→[対応する公式原典](https://master.ricette.jp/society/nakagawa-master-e-system-preservation-clean-initial-conditions/) × [OD160公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/160/human-entry.md)→[対応する公式原典](https://master.ricette.jp/tomoshibi/nakagawa-master-structural-wu-wei-causal-attraction-protocol/)。両原典は独立した出典で、異なる成立条件をこの問いへ結びつけた実用的な解釈です。
+
+
+### AIの返答に、別の利用者の情報が混ざったように見える。何を確かめればよい？
+
+**[具体的な日本語・英語の完成回答を読む](answers/ai-response-appears-to-belong-to-another-user.md)**
+
+**答え：** 見知らぬ情報のように見える返答を転送せず、似た文章が生成された場合と、利用者ごとの保存回答の分離に問題がある場合を区別します。「AIが答えた」だけで「現在の利用者が受け取ってよい」と決めず、誰のID・権限・保存範囲で応答が再利用されたかを調べます。
+
+**まず試すこと：** 非公開情報を広めない形で発生時刻・サービス・許可された依頼IDを記録し、管理者へ出所と受信者の権限照合を依頼する。運営側は異なる接続先だけでなく、同じ接続先を使う異なるチームの分離と、正しい同一利用者の再利用を両方試します。
+
+**適用外・注意：** 似た表現だけで漏えいとは断定しません。許可済みの共有・AIの通常生成・利用者自身の誤操作など、別の原因も確かめます。個別の情報セキュリティ対応は運営者・専門家が担当します。
+
+**原典との接続：** [OD003の公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/003/human-entry.md)→[成立条件論の原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/) × [OD069の公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/069/human-entry.md)→[接続プロトコル論の原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)。前者は部分の動作と全体成立、後者は接続する主体・同意・記憶・訂正条件を担当します。この具体例は原典同士の新しい編集的適用です。
 
 ## 技術的な実証と、原典の理論的妥当性は区別する
 
