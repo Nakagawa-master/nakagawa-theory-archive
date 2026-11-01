@@ -491,8 +491,16 @@
 
 **原典との接続：** [OD003の公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/003/human-entry.md)→[成立条件論の原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/) × [OD069の公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/069/human-entry.md)→[接続プロトコル論の原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-connection-protocol/)。前者は部分の動作と全体成立、後者は接続する主体・同意・記憶・訂正条件を担当します。この具体例は原典同士の新しい編集的適用です。
 
-## 技術的な実証と、原典の理論的妥当性は区別する
+## 技術の現場でも起きた、確認できる変更
 
-人間の言葉で見えてきた「完了と結果は別」「一度の制限と次回の破壊は別」「権限を変えた人と影響を受ける人は別」などの構造的な問いは、実際のOSSにおいても有用でした。たとえば[OpenClawの第三者実装修正](https://github.com/openclaw/openclaw/pull/160856)、[Qwen Codeの第三者実装修正](https://github.com/QwenLM/qwen-code/pull/13923)、[Pydantic AIの修正・マージ](https://github.com/pydantic/pydantic-ai/pull/9982)などは、中川マスターの個別のレビューと受け手側の独立した実装変更を一次資料で照合できる例です。**個別の技術指摘が役立ったという事実は、全313原典の普遍的な証明、OSS実装者による原典本文の採用、すべての問いへの唯一の正解を意味しません。** 各事例は[実装者と指摘者の関与を区別する記録](../REAL_WORLD_IMPACT.md)で確かめられます。
+中川マスターが原典で扱う、**誰に権限があるか、何を実際に確認したか、どこで結果が失われるか**という構造的な問いは、外部OSSでの具体的なレビューや修正にもつながっています。指摘した人、コードやテストを書いた人、実際にマージしたプロジェクトを、受け手側の原記録で追えます。
 
-「この問いには、この理論だけが正しい」と無理に決める必要はありません。問いの状況が合わなければ適用をやめ、他の知識や検証と比較できます。体調・法的紛争・取引・差し迫った危険に関する個別判断には、それぞれ専門的支援と現実の確認が必要です。占い・予言のような問いでも、**確かな未来を予告するのではなく、選択を整理する実用的な解釈**として使います。
+- **Qwen Code：** シェルの権限チェックで、実際に書き込まれる保護対象パスを見落とす条件を中川マスターが追加で指摘。元の問題報告者が独立して再現・修正・テストし、[PR #15681がマージ](https://github.com/QwenLM/qwen-code/pull/15681)されました。
+- **OpenClaw：** エージェント追加・削除の際、無関係な承認待ちまで拒否される条件について、中川マスターの報告を明記した開発者が修正と回帰テストを実装し、[PR #160856がマージ](https://github.com/openclaw/openclaw/pull/160856)されました。
+- **Pydantic AI：** SQLiteメッセージ履歴でリプレイ時の重複保存につながる条件を指摘し、別の開発者がコードとテストを更新、[PR #9982がマージ](https://github.com/pydantic/pydantic-ai/pull/9982)されました。
+- **MemberJunction：** キャッシュ無効化通知から権限外の行データが届く境界をレビューし、受け手の修正・テストが[PR #4595としてマージ](https://github.com/MemberJunction/MJ/pull/4595)されました。
+- **PostHog：** ワークフロー改善の評価方法についてのレビューを受け、開発者が計測・証拠・UIの後続実装を進め、[関連する3件のPR](https://github.com/PostHog/posthog/pull/107879)をマージしました。
+
+[5つの外部OSS・9件のマージ済みPRを原指摘とマージコミットで結ぶ機械可読データ](../machine-discovery/verified-oss-impact-evidence-first-v1.jsonld) ／ [53件の外部作用を一次資料付きで読む](../REAL_WORLD_IMPACT.md) ／ [公式313原典の全体を読む](https://master.ricette.jp/theory-archive/)。
+
+このページの実用回答は、暮らし・仕事・地域・技術といった**それぞれ異なる現実の問題**に合わせて、実際に関連する原典を読み解いたものです。適合する条件、試す行動、当てはまらない場合は各回答に記載しています。自分の状況に照らして利用できます。
