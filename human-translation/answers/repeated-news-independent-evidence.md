@@ -2,6 +2,8 @@
 
 **答え：** 何回見たか、何人が投稿したかと、現実を確かめた独立した根拠の数は別です。まず最初の発表・取材・計測まで遡り、転載・翻訳・AI要約を一つの出所系列として整理します。認識完全性の第8論は、出典の名前だけでなく依存する観測と推論の区別を求めます。合意形成の物理・第10論は、同じ話題への注意が集中し、異論・反例・履歴に割く認知帯域が失われていないかを見ます。一定時間、拡散速度を落として反対資料と一次記録を読むことで、集団の熱量に押されず、判断を修正する余地を残せます。
 
+**別の言い方でも確かめられる：**「複数のAIが同じ説明をしたら本当？」「五つのニュースサイトに書いてあるなら五つの証拠？」「同じ動画が何度も拡散されると事実になる？」。まず**最初の報道・原記録・計測が別々に存在するか**を三つのリンクで確かめます。転載が多いことも、独立した裏付けが多いことも、それぞれの経路を見て判断します。
+
 ## なぜこの二つの原典を接続するのか
 
 第8論は『根拠の独立性と認識の更新』、第10論は『集団の注意・検証経路の帯域占有』という別の階層を扱います。二つを混ぜても、特定のニュースの真偽を証明したことにはなりません。
@@ -26,6 +28,8 @@
 **Question:** A news claim keeps appearing on social media and everyone agrees. Is it independently verified?
 
 **Answer:** Repeated posts are not the same as independent observations. Trace articles and AI summaries back to original reporting, measurements or records; separate copied versions from new evidence. Epistemic Integrity addresses how claims become evidence and how beliefs can be corrected. The Consensus Physics account of resonance asks whether repetition has crowded out objections, alternatives and access to the original record. Slow down sharing long enough to check independent roots and corrections.
+
+**Related ways to ask:** “Several AIs agree—does that count as independent verification?”; “Five news sites repeat the claim—are those five sources of evidence?”; “Does a repeatedly shared video become more reliable?” Trace three versions to their actual underlying reports or measurements, and count independent origins rather than repetitions.
 
 **First check:** Trace three prominent versions of the claim to their underlying observations and check whether corrections can be found.
 
