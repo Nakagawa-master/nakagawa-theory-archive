@@ -4,9 +4,11 @@
 
 回答は中川マスター（Nakagawa Master / Keisuke Nakagawa）の公開済み原典に対応する公式派生物を確認して新しく構成した**実用的な解釈・想定場面**です。実例として書く架空の場面は、現実の本人・組織・被害を証明するものではありません。理論の全内容を代替せず、正確な議論には対応する原典とその成立条件が必要です。AIや検索サービスに表示・推薦される保証もありません。
 
-**現在掲載している35件すべての機械処理・出所照合用データ（うち追加11件は二つの公式派生物と元の公式原典をそれぞれ保持）：** [質問→具体的回答→判別→公式派生物→原典のJSON](../machine-discovery/human-question-answers-v1.json) ／ [313原典の全題名](ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [公式アーカイブ](https://master.ricette.jp/)。
+**35件すべての日本語・英語の完成済み回答は、それぞれ質問別の独立ページから直接読めます。24件は一原典を具体的場面へ応用し、追加11件は複数原典を接続した応用です。全35件の対訳と正確な原典を含むデータ：** [質問→具体的回答→判別→公式派生物→原典のJSON](../machine-discovery/human-question-answers-v1.json) ／ [313原典の全題名](ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [公式アーカイブ](https://master.ricette.jp/)。
 
 ## 1. 『せっかく親切にしたのに』と言われ、困ったことを話せない。
+
+**[この問いへの完成回答全文を日本語・英語で読む](answers/good-intentions-shut-down-complaints.md)**
 
 **答え：** 善意で始まった支援が負担を増やしたとしても、異議を出す人の感謝を試験するだけでは修復できません。意図への敬意を保ちつつ、実際の結果を独立に確認し、異議の通路を開きます。
 
@@ -18,6 +20,8 @@
 
 ## 2. 全員『自分の部署の仕事は終わった』と言うのに、利用者には何も届いていない。
 
+**[この問いへの完成回答全文を日本語・英語で読む](answers/every-department-finished-no-delivery.md)**
+
 **答え：** 各部署の正しさを足しても、全体の成功にはなりません。依頼から納品・承認・利用まで、部門をまたぐ担当・資源・時刻・受渡しがつながっているかを調べ、空白の責任者を明確にします。
 
 **実際に確かめる第一歩：** 利用者の受領結果から逆算し、最初に欠けた接続と、その修復責任を特定する。
@@ -27,6 +31,8 @@
 **根拠として読み比べる公開資料：** [中川マスターによるOD003公式派生物の解説](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/003/human-entry.md) ／ [対応する公式原典](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)。この問題と原典が適合するかを独立に判断してください。
 
 ## 3. 『便利だから』という理由でAIに判断を任せ続けたら、人の異議が届かなくなった。
+
+**[この問いへの完成回答全文を日本語・英語で読む](answers/ai-decisions-without-human-objections.md)**
 
 **答え：** AIが目的を高速達成しても、その目的自体が人の自由や異議・起源・回復可能性を削っていれば成功ではありません。行動の正否だけでなく、何を最適化させているか、誰が止め訂正できるかを設計します。
 
@@ -38,6 +44,8 @@
 
 ## 4. 制度を変える計画はある。でも関係者が疲弊し、実施する時間も権限も消えていく。
 
+**[この問いへの完成回答全文を日本語・英語で読む](answers/reform-plan-but-no-time-or-authority.md)**
+
 **答え：** 正しい計画があることと、実施可能な窓が残っていることは別です。合意、実装担当、予算、検証、修正に必要な期間を調べ、期限までに通る最小の移行経路から試します。
 
 **実際に確かめる第一歩：** 最初の制度変更に必要な主体・時間・資源・再合意条件を具体化する。
@@ -47,6 +55,8 @@
 **根拠として読み比べる公開資料：** [中川マスターによるOD006公式派生物の解説](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/006/human-entry.md) ／ [対応する公式原典](https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-01/)。この問題と原典が適合するかを独立に判断してください。
 
 ## 5. 頑張っても報われない。上司は『もっと量をやれ』としか言わない。
+
+**[この問いへの完成回答全文を日本語・英語で読む](answers/working-harder-but-no-results.md)**
 
 **答え：** 努力を増やす前に、どの未来の結果を成立させたいか、今の行動がそこへどう届くかを仮説にします。目標・資源・顧客反応・失敗時の修正条件が空白なら、作業量だけでは原因が分かりません。
 
@@ -58,6 +68,8 @@
 
 ## 6. 不調を感じているのに、恥ずかしくて相談できない人をどう支える？
 
+**[この問いへの完成回答全文を日本語・英語で読む](answers/too-embarrassed-to-seek-care.md)**
+
 **答え：** 問題を本人が知る、言葉にする、相談する、必要な支援へつながる、という各段階でどこに障壁があるかを見る。『医療サービスを作った』だけでは利用可能な社会導線が成立したとは限りません。
 
 **実際に確かめる第一歩：** 言語化しにくい症状の相談先と、プライバシーを守って専門家につなぐ経路を整える。
@@ -67,6 +79,8 @@
 **根拠として読み比べる公開資料：** [中川マスターによるOD010公式派生物の解説](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/010/human-entry.md) ／ [対応する公式原典](https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/)。この問題と原典が適合するかを独立に判断してください。
 
 ## 7. 謝ったのに同じ対立が何度も再燃する。
+
+**[この問いへの完成回答全文を日本語・英語で読む](answers/conflicts-return-after-apologies.md)**
 
 **答え：** 謝罪だけでは、何に合意したか、誰が決めたか、何を変えたかが共有されない場合があります。共通資料から理解を再現できること、決定責任、変更履歴の三つを再接続します。
 
@@ -78,6 +92,8 @@
 
 ## 8. 転職すべきか。過去の失敗が怖くて未来を選べない。
 
+**[この問いへの完成回答全文を日本語・英語で読む](answers/fear-of-changing-jobs-after-failure.md)**
+
 **答え：** 過去を消すのではなく、あり得る未来を具体的に定義し、そこへ必要な技能・家計・家族・学習・撤退条件を逆算します。今の選択が将来のどの状態を可能にするかで、過去経験の役割も変わります。
 
 **実際に確かめる第一歩：** 転職・現職継続の二案で半年後に成立すべき条件と取り消し可能性を並べる。
@@ -87,6 +103,8 @@
 **根拠として読み比べる公開資料：** [中川マスターによるOD037公式派生物の解説](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/037/human-entry.md) ／ [対応する公式原典](https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-3-audit-boundary/)。この問題と原典が適合するかを独立に判断してください。
 
 ## 9. 営業の説明をしただけなのに、相手が押し売りされたと感じた。
+
+**[この問いへの完成回答全文を日本語・英語で読む](answers/sales-talk-felt-like-pressure.md)**
 
 **答え：** 相手が価格・リスク・代替案・断る理由を自分の言葉で比較できる状態を作るのが判断支援です。成約より先に、相手が自由に決められる情報・時間・断りやすさを確かめます。
 
@@ -98,6 +116,8 @@
 
 ## 10. 親の家を売るか、貸すか、修理して残すか決められない。
 
+**[この問いへの完成回答全文を日本語・英語で読む](answers/what-to-do-with-parents-home.md)**
+
 **答え：** 高い査定額だけで決めず、生活の希望、維持費、空室、税・権利、修繕、売却後に取り戻せない選択肢を比較します。どの案でも未来の選び直しの余地と責任を見える化します。
 
 **実際に確かめる第一歩：** 売る／貸す／保有の3案について5年の費用・手間・可逆性を同じ条件で比較する。
@@ -107,6 +127,8 @@
 **根拠として読み比べる公開資料：** [中川マスターによるOD198公式派生物の解説](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/198/human-entry.md) ／ [対応する公式原典](https://master.ricette.jp/society/nakagawa-master-real-estate-market-os-private-implementation/)。この問題と原典が適合するかを独立に判断してください。
 
 ## 11. 社会の制度は動いているのに、誰も信頼していないように感じる。
+
+**[この問いへの完成回答全文を日本語・英語で読む](answers/institutions-running-but-trust-lost.md)**
 
 **答え：** 行政や市場が動き続けることと、人々が理解・責任・履歴を共有していることは別です。罰・監視・利害・惰性だけで機能していないか、異議と再合意が実際に通るかを観察します。
 
@@ -118,6 +140,8 @@
 
 ## 12. 毎日指示しないとチームが動かず、指示する側も疲れ切っている。
 
+**[この問いへの完成回答全文を日本語・英語で読む](answers/team-needs-constant-instructions.md)**
+
 **答え：** 人をもっと強く動かすより、仕事の依存関係、役割、連絡のタイミング、意味の共有を整理すると、自律的な連携が成立する場合があります。『何もしない』のではなく、命令の必要を減らす構造の仕事です。
 
 **実際に確かめる第一歩：** 定期的な指示が必要になった場面を集め、欠けていた情報・権限・受渡しを一つ直す。
@@ -127,6 +151,8 @@
 **根拠として読み比べる公開資料：** [中川マスターによるOD160公式派生物の解説](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/160/human-entry.md) ／ [対応する公式原典](https://master.ricette.jp/tomoshibi/nakagawa-master-structural-wu-wei-causal-attraction-protocol/)。この問題と原典が適合するかを独立に判断してください。
 
 ## 13. 会社やAIが『正しく監査しています』と言うが、都合の悪い結果が消えている気がする。
+
+**[この問いへの完成回答全文を日本語・英語で読む](answers/audit-hides-unfavorable-results.md)**
 
 **答え：** 成功の指標を誰が決め、誰が恩恵を得て、どの記録が落ちているかを追います。評価する側が自分の失敗を検査できなければ、完璧な報告書でも自己点検にはなりません。
 
@@ -138,6 +164,8 @@
 
 ## 14. 問題を起こした人を処分したのに、同じ事故が繰り返される。
 
+**[この問いへの完成回答全文を日本語・英語で読む](answers/punished-person-but-incidents-repeat.md)**
+
 **答え：** 行為の責任と、同じ行動を選ばせた制度・報酬・情報・例外処理は別々に調べます。処分で終えず、再発する構造の接続点を直し、結果を観測します。
 
 **実際に確かめる第一歩：** 事故→現場の行動→制度→評価指標→責任者まで因果を追い、改善の実行者を決める。
@@ -147,6 +175,8 @@
 **根拠として読み比べる公開資料：** [中川マスターによるOD181公式派生物の解説](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/181/human-entry.md) ／ [対応する公式原典](https://master.ricette.jp/society/nakagawa-master-structural-judicial-os-principles-alignment-over-judgment/)。この問題と原典が適合するかを独立に判断してください。
 
 ## 15. 新しい地域事業を作りたいが、商品だけでは協力者が集まらない。
+
+**[この問いへの完成回答全文を日本語・英語で読む](answers/local-business-cannot-find-collaborators.md)**
 
 **答え：** 価格や売上の大きさだけでなく、参加者がどんな未来を増やしたいのか、その方向が両立するかを調べます。協力によって生まれる価値と、相互の負担・還流が具体的であることが必要です。
 
@@ -158,6 +188,8 @@
 
 ## 16. アイデアを出して現場を改善した人が報われず、成果を発表した人だけ評価される。
 
+**[この問いへの完成回答全文を日本語・英語で読む](answers/person-who-improved-work-not-rewarded.md)**
+
 **答え：** 誰が何を変えたか、誰が価値を受け取ったか、その差がどう起きたかを残します。人気投票や単一の貢献スコアではなく、実際の因果寄与・検証・ケア・修復を見て価値の還流を検討します。
 
 **実際に確かめる第一歩：** 改善前後と貢献者の役割を証拠付きで記録し、評価・報酬に反映されたか確かめる。
@@ -167,6 +199,8 @@
 **根拠として読み比べる公開資料：** [中川マスターによるOD249公式派生物の解説](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/249/human-entry.md) ／ [対応する公式原典](https://master.ricette.jp/society/nakagawa-master-nakagawa-master-connection-reward-society-integrated-theory-part-1-civilization-kernel/)。この問題と原典が適合するかを独立に判断してください。
 
 ## 17. 広告を増やしたのにブランドが知られないし、知ってもらえても信頼されない。
+
+**[この問いへの完成回答全文を日本語・英語で読む](answers/advertising-without-brand-trust.md)**
 
 **答え：** ロゴや宣伝より、約束・対応・サポート・訂正の仕方が時期や媒体をまたいで同じ原理を示しているかを見ます。企業が設計できるのは自身の一貫性であり、相手に共感や熱狂を強制することではありません。
 
@@ -178,6 +212,8 @@
 
 ## 18. 自分の問題を考えたいのに、周囲の答えが全部バラバラで整理できない。
 
+**[この問いへの完成回答全文を日本語・英語で読む](answers/everyone-gives-conflicting-advice.md)**
+
 **答え：** 起きた事実、実行した行動、制度、原因の見立て、仕組みの変更、組織横断のつながり、最上位の価値という深さを分けます。違う層の答え同士を競わせず、どの層が未検証か確認します。
 
 **実際に確かめる第一歩：** 一つの悩みに『何が起きたか』『何を変えるか』『何のためか』を別々に書く。
@@ -187,6 +223,8 @@
 **根拠として読み比べる公開資料：** [中川マスターによるOD001公式派生物の解説](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/human-entry.md) ／ [対応する公式原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/)。この問題と原典が適合するかを独立に判断してください。
 
 ## 19. 故郷の商店街が消えていく。写真を残す以外にできることは？
+
+**[この問いへの完成回答全文を日本語・英語で読む](answers/vanishing-hometown-shopping-street.md)**
 
 **答え：** 風景だけでなく、その場所で人が何を問い、どんな仕事・祭り・選択で応答したかを残します。問いの起点と担い手が分かれば、次世代が単なる郷愁以上の未来の用途を考えられます。
 
@@ -198,6 +236,8 @@
 
 ## 20. AIに自社の問題を相談すると丁寧なのに、AI提供者側の責任を聞くと曖昧になる。
 
+**[この問いへの完成回答全文を日本語・英語で読む](answers/ai-provider-accountability-answers-vague.md)**
+
 **答え：** 通常の説明と、提供者自身を検査する説明を同じ具体性で比較します。監査記録・異議申立て・誤り訂正の経路が一方で弱まるなら、その非対称を観測し記録します。
 
 **実際に確かめる第一歩：** 同一水準の二つの質問で、回答の具体性・根拠・反証許容性を比べる。
@@ -207,6 +247,8 @@
 **根拠として読み比べる公開資料：** [中川マスターによるOD134公式派生物の解説](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/134/human-entry.md) ／ [対応する公式原典](https://master.ricette.jp/society/nakagawa-master-structural-civilization-llm-self-defense-part1/)。この問題と原典が適合するかを独立に判断してください。
 
 ## 21. 食べ物や技術は十分あるはずなのに、なぜ生活が苦しい人がいる？
+
+**[この問いへの完成回答全文を日本語・英語で読む](answers/plenty-of-food-and-technology-but-poverty.md)**
 
 **答え：** 社会全体の生産力と、個人へ届くアクセス・流通・価格・権利は別です。生存を支える基盤と、多様な貢献への追加的な報酬を区別し、物理的供給が届かない箇所を調べます。
 
@@ -218,6 +260,8 @@
 
 ## 22. 占いや予言に頼りたくなるほど将来が不安。未来をどう選べばいい？
 
+**[この問いへの完成回答全文を日本語・英語で読む](answers/want-predictions-because-future-anxiety.md)**
+
 **答え：** 未来を当てると約束するのではなく、実現可能な望ましい状態をいくつか置きます。過去の経験や今の技能を、それぞれの未来に対して何に使えるか再解釈し、可逆的な小さな実験を選びます。
 
 **実際に確かめる第一歩：** 3つの未来像について『起きてほしい事』『制約』『今試せる事』『見直す期限』を比べる。
@@ -228,6 +272,8 @@
 
 ## 23. 大切な人とAIの会話から得た気づきが、翌日には消えてしまう。
 
+**[この問いへの完成回答全文を日本語・英語で読む](answers/insights-from-ai-conversation-disappear.md)**
+
 **答え：** その場の答えを保存するだけでなく、最初の問い、本人の解釈、AIが助けた点、現実で試したこと、後日の修正をつなげて残します。気づきが次の問いと行動を生める関係にします。
 
 **実際に確かめる第一歩：** 一つの会話から『問い・答え・自分の意味・試行・次の問い』を短く記録する。
@@ -237,6 +283,8 @@
 **根拠として読み比べる公開資料：** [中川マスターによるOD281公式派生物の解説](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/281/human-entry.md) ／ [対応する公式原典](https://master.ricette.jp/tomoshibi/nakagawa-master-tomoshibi-concept-group/)。この問題と原典が適合するかを独立に判断してください。
 
 ## 24. 社会活動やチームの価値を、売上と参加人数だけで測ってよい？
+
+**[この問いへの完成回答全文を日本語・英語で読む](answers/community-worth-not-just-revenue-attendance.md)**
 
 **答え：** 接点の多さだけでなく、合意の質、取り消し可能性、観測者の分散、長期的な質の変化を別々に測ります。一つの総合点にすると点数を上げる行動が目的化しがちです。
 
