@@ -2,6 +2,8 @@
 
 **答え：** 成績という見える結果だけを「教育が成功した」とするなら、本人の負担や、学ぶ意味、相談・変更できる環境が測られていない可能性があります。結果（成績）、本人の日々の行動、学校の評価制度、困難を話せる関係、学ぶ価値を別の階層として見直します。本人が何を経験し、どのルールで何が変えられるかを観測できるようにすることが必要です。成績向上と苦痛が同時に起きても、矛盾ではありません。測った対象が異なるからです。
 
+**同じ問題を、別の言葉で相談するとき：**「テストの点数はいいのに、学校に行きたくないと言う」「先生には順調と言われるのに、本人はつらそう」「成績が上がるほど、子どもに無理が増えている気がする」。どの場合も、成績と本人の経験を別々に聞き、**誰に相談でき、学校生活の何を変えられるか**を一つ具体化するところから始められます。
+
 ## まず確かめること
 
 点数ではない三つの問い「何が苦しい？」「誰に相談できる？」「何なら変えられる？」を、本人の負担が少ない形で確認する。学校側とも、評価方法と相談経路を別々に確認する。
@@ -24,6 +26,8 @@
 **Question:** Why is my child's school experience getting worse even though grades are improving?
 
 **Answer:** Better grades measure one outcome; they do not measure the child's daily burden, sense of purpose, support or ability to ask for changes. Separate grades, behavior, school assessment rules, relationships and the child's actual experience. The two original works help distinguish layers of apparent success and make disagreement about an unseen burden discussable. Improving a metric and increasing distress can happen together because they describe different things.
+
+**Related ways to ask:** “My child gets good grades but dreads going to school”; “Teachers say things are fine, but my child seems overwhelmed”; “Grades keep rising while school feels harder.” Begin by listening to the child's experience separately from test scores and finding one safe support or change the child can actually access.
 
 **First check:** Ask the child, gently and without blame, what hurts, whom they can talk to and what could change. Check assessment practices and support routes with the school as appropriate.
 
