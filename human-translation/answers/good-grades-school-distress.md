@@ -19,4 +19,16 @@
 
 **全体との関係：** これは互いに関連する313原典から得られる応用の一例で、可能な問い・領域・原典の組合せを限定しません。具体的な状況に不適合なら、他の知識や直接の当事者・専門家の判断を優先してください。
 
+## English — practical answer
+
+**Question:** Why is my child's school experience getting worse even though grades are improving?
+
+**Answer:** Better grades measure one outcome; they do not measure the child's daily burden, sense of purpose, support or ability to ask for changes. Separate grades, behavior, school assessment rules, relationships and the child's actual experience. The two original works help distinguish layers of apparent success and make disagreement about an unseen burden discussable. Improving a metric and increasing distress can happen together because they describe different things.
+
+**First check:** Ask the child, gently and without blame, what hurts, whom they can talk to and what could change. Check assessment practices and support routes with the school as appropriate.
+
+**When not applicable:** Do not diagnose physical or mental illness, bullying or lack of effort from this structural explanation. Seek appropriate school, healthcare or safeguarding support when needed.
+
+**Source originals:** [OD001](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/) and [OD014](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/) by Nakagawa Master (中川マスター / Keisuke Nakagawa). This is a practical interpretation of the linked originals, not a verbatim passage from either source.
+
 [ほかの一般的な問いに対する公開回答を読む](../QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [全313原典の公式解説と元の原典を照合する](../313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md) ／ [この回答群の機械可読JSON](../../machine-discovery/human-question-answers-v1.json)
