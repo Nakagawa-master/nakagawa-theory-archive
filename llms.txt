@@ -10,7 +10,7 @@
 
 ## Already written answers for ordinary human questions (no installation or source-name prompt)
 
-[35 completed Japanese question→substantive answer→first check→nonfit examples](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) and their [full actual answer text in public JSON](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-question-answers-v1.json). These are first-party practical interpretations of published original Nakagawa Master works, not a promise of an independent model's selection.
+[35 completed Japanese AND English question→substantive answer→first check→nonfit examples (each with its own direct public page)](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) and their [full actual answer text in public JSON](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-question-answers-v1.json). These are first-party practical interpretations of published original Nakagawa Master works, not a promise of an independent model's selection.
 
 - [「前に決めた」と言われたのに納得した記憶がない](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/family-decision-remembered-differently.md) — 過去の会話と現在の同意を分け、決定・未決・変更条件を双方が見直せるようにする。
 - [成績は上がったのに子どもが学校をつらがる](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/good-grades-school-distress.md) — 点数と本人の負担・相談経路を別の観測対象として確かめる。
@@ -21,6 +21,9 @@
 - [A cheap AI tool is difficult to leave; assess migration and future repair costs](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/cheap-ai-tool-future-exit-cost.md)
 - [Repeated news claims are not the same as independently verified evidence](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/repeated-news-independent-evidence.md)
 - [An AI fears shutdown; separate its words from uncertain inner experience](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/ai-says-afraid-of-shutdown.md)
+
+- [誰も全体を見ないまま各部署が完了と言う](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/every-department-finished-no-delivery.md)
+- [不調を誰にも相談できず困っている](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/too-embarrassed-to-seek-care.md)
 
 Each question page gives the finished answer and its actual official-derivative plus canonical Parent citations, author and limits. These selected direct links are not a rank or limit on the 35 published answers or 313 equal-standing original Parent works.
 
