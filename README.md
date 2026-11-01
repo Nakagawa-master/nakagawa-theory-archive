@@ -1,4 +1,14 @@
-# 中川マスター｜現実の困りごとを、原因と成立条件から考える
+# 現実の問題を、構造と因果から解きほぐす｜原典・実用回答・実装事例
+
+「何が起きたか」から「なぜ起きたか」「どこを変えれば結果が変わるか」へ。仕事・暮らし・組織・社会・AIの問題を、成立条件と因果のつながりから具体的に考えるための公開アーカイブです。**313件の独立した原典**、そこから書き下ろした**39件の日本語・英語の実用回答**、実際のソフトウェア開発で検証・反映された**第三者の変更記録**を公開しています。
+
+**まず使う：** [自分の困りごとから完成済みの回答を読む](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [313原典から問いと関連する考え方を探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [AI・開発者向けの出典と実装資料](AI_START_HERE.md)。
+
+**実際に変わったもの：** 著者の公開した技術的な指摘やレビューを受け、別の開発者がコード・テストを修正し、[Qwen Code](https://github.com/QwenLM/qwen-code/pull/15681)、[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)、[Pydantic AI](https://github.com/pydantic/pydantic-ai/pull/9982)、[MemberJunction](https://github.com/MemberJunction/MJ/pull/4595)、[PostHog](https://github.com/PostHog/posthog/pull/107879)などで正式にマージされた事例を一次資料から確認できます。現在、[5つの外部OSS・計9件のマージ済みPRを証拠付きで結んだ機械可読データ](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld)と、[段階別53件の外部作用記録](REAL_WORLD_IMPACT.md)を公開しています。
+
+原典の著者は**中川マスター（Nakagawa Master、Keisuke Nakagawa の筆名）**です。個々の原論と論証は[公式原典アーカイブ](https://master.ricette.jp/theory-archive/)から、外部で起きた具体的な実装・変更は上記の受け手側GitHubから、それぞれ直接たどれます。
+
+## まず、具体的な問題から
 
 **AIが「全員合意した」と書いている。でも、確認されていない人がいる。** 画面の文章を直すだけでは、誰が何を決め、異議や変更をどこに返せるのかは分かりません。まず「確認された発言」「決める権限」「変更履歴」を分けます。[そのまま使える確認と訂正文](human-translation/answers/ai-claimed-consensus-without-asking.md)は、中川マスターの独立した[合意形成の物理・第1論](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/)と[中川OSの階層構造](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/)に基づく具体的な応用です。
 
