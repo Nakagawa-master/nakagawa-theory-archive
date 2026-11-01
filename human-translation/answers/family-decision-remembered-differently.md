@@ -19,4 +19,16 @@
 
 **全体との関係：** これは互いに関連する313原典から得られる応用の一例で、可能な問い・領域・原典の組合せを限定しません。具体的な状況に不適合なら、他の知識や直接の当事者・専門家の判断を優先してください。
 
+## English — practical answer
+
+**Question:** Why does our family remember a decision differently, and what was actually agreed?
+
+**Answer:** A conversation took place in the past, but that does not prove everyone still understands or consents to the same decision. Identify who decided what, which options and concerns were shared, which matters stayed unresolved and whether conditions have changed. Instead of winning an argument about memory, reconstruct a shared state that everyone can inspect and revise. The original works connect observable consensus with the layers of actions, rules and underlying purposes.
+
+**First check:** Write down what was decided, what was postponed, what each person feared and what changed. Let each participant clarify, challenge or withdraw their own consent.
+
+**When not applicable:** Where there is violence, coercion or control, a shared written record alone cannot make discussion safe. Prioritize safety and appropriate help.
+
+**Source originals:** [OD014](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/) and [OD001](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/) by Nakagawa Master (中川マスター / Keisuke Nakagawa). This is a practical interpretation of the linked originals, not a verbatim passage from either source.
+
 [ほかの一般的な問いに対する公開回答を読む](../QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [全313原典の公式解説と元の原典を照合する](../313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md) ／ [この回答群の機械可読JSON](../../machine-discovery/human-question-answers-v1.json)
