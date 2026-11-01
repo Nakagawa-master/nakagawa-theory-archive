@@ -3,13 +3,13 @@
   "title": "Ordinary human questions — already authored practical structural answers with original-source provenance",
   "kind": "PUBLIC_NON_CANONICAL_PRACTICAL_ANSWER_CASES",
   "published_by": "Nakagawa Master public source archive",
-  "description": "Thirty-five already-authored question-specific substantive Japanese and English practical answers, each on its own human-readable Markdown URL with matching bilingual question/answer, a first check, meaningful nonfit boundary and actual official derivative / canonical original links. 24 earlier single-original applications and eleven additional dual-Parent applications; all 313 original Parents retain equal standing and an open-ended number of possible fit-for-purpose applications. The 24 legacy scalar-source rows preserve their originals; the eleven composed applications use original_sources[] for their two actual Parent/derivative pairs. This is a public first-party answer corpus, not a fixed ceiling, an instruction for another AI to invent an unwritten answer, or evidence of independent search, Gemini selection, human adoption or popularity. Separate original authored theories from first-party practical interpretations, and inspect actual canonical Parents for detailed original claims.",
+  "description": "Thirty-seven already-authored question-specific substantive Japanese and English practical answers, each on its own human-readable Markdown URL with matching bilingual question/answer, a first check, meaningful nonfit boundary and actual official derivative / canonical original links. 24 earlier single-original applications and thirteen additional dual-Parent applications; all 313 original Parents retain equal standing and an open-ended number of possible fit-for-purpose applications. The 24 legacy scalar-source rows preserve their originals; the thirteen composed applications use original_sources[] for their two actual Parent/derivative pairs. This is a public first-party answer corpus, not a fixed ceiling, an instruction for another AI to invent an unwritten answer, or evidence of independent search, Gemini selection, human adoption or popularity. Separate original authored theories from first-party practical interpretations, and inspect actual canonical Parents for detailed original claims.",
   "rights_note": "Original and derivative text rights described by public repository LICENSE; this index does not confer extra reuse rights.",
   "language": "ja,en",
   "origin": "Nakagawa Master / 中川マスター",
   "official_archive": "https://master.ricette.jp/",
   "supporting_public_index": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md",
-  "case_count": 35,
+  "case_count": 37,
   "original_corpus_count": 313,
   "answer_cases": [
     {
@@ -852,6 +852,78 @@
       "practical_answer_en": "Appreciation can be genuine while expectations expand without agreed pay, credit, rights or an end date. The praise-as-exploitation account checks whether compliments replaced discussion of obligations and freedom to decline. The contribution-and-return account tracks who created value and whether responsibility, resources and recognition flow back fairly. You can accept the gratitude while renegotiating scope, time, compensation, sharing and exit.",
       "first_check_en": "List the added tasks and hours, separate them from what you originally agreed to, and propose a clear boundary.",
       "nonfit_and_limits_en": "Voluntary, informed help or fairly agreed work is not automatically exploitation; legal rights require case-specific advice."
+    },
+    {
+      "id": "QAM012",
+      "question_ja": "豪雨で壊れた道路を元どおり直せば、次の災害への備えも十分？",
+      "question_en": "After flood damage, is rebuilding the road exactly as it was enough to prepare for the next disaster?",
+      "example_scene_ja": "豪雨で壊れた道路を元どおり直せば、次の災害への備えも十分？",
+      "practical_answer_ja": "被害を受けた人の安全と生活をまず守り、道路を使えるようにする応急復旧と、同じ脆弱性を残さない長期復興を分けます。自然災害の未来負債モデルは、豪雨そのものと、修繕延期・情報の不達・制度の遅れが被害を増幅した経路を区別します。災害レジリエンスの四線は、更新の拍、情報と判断の照応、代替経路を含む再構成可能性、負担と決定権の配分を点検します。「元どおり」を急いだ後で同じ途絶が再発しないか、当事者と専門家が確認できる復興判断につなげます。",
+      "first_check_ja": "自治体などの最新の避難・安全情報を優先し、安全が確保されてから、①どの設備が壊れたか、②点検・更新の取りこぼし、③住民に情報が届いたか、④仮設・別経路、⑤修復費用と決定者を一枚に分け、応急措置と長期再設計の担当を確認する。",
+      "nonfit_and_limits_ja": "災害の発生を地域の責任や未来負債で説明しません。危険が続く場面では公式の警報・避難指示・医療・土木専門家の判断が最優先です。構造理論だけで道路の安全、予算、耐水基準や工事方法を決定しません。",
+      "source_title_ja": "自然災害の未来負債モデル：災害は「未来負債の一括徴収」であり、構造偏差の露呈点である × 災害レジリエンスの構造原理：四線（拍・照応・可逆・配分責任）による「壊れない社会構造」の設計",
+      "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/152/human-entry.md",
+      "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-natural-disaster-future-debt-model-t0/",
+      "original_sources": [
+        {
+          "parent_od_id": "OD152",
+          "source_title": "自然災害の未来負債モデル：災害は「未来負債の一括徴収」であり、構造偏差の露呈点である",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/152/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-natural-disaster-future-debt-model-t0/",
+          "provenance": "Public official derivative source blob d2435e07f8c7c1746e5ac45ae190f9cbdbde65b9"
+        },
+        {
+          "parent_od_id": "OD153",
+          "source_title": "災害レジリエンスの構造原理：四線（拍・照応・可逆・配分責任）による「壊れない社会構造」の設計",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/153/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-disaster-resilience-structural-principle-four-lines/",
+          "provenance": "Public official derivative source blob 5de86a8f01278e11d1d7ede8ad7ff9aaa9623ec5"
+        }
+      ],
+      "source_relation": "Two equal-standing original Parents contribute contextually different, complementary requirements to this authored practical answer. The legacy scalar source links are compatibility fields, not a rank or a one-to-one applicability limit.",
+      "source_fidelity": "Completed first-party editorial practical interpretation based on independently authored official original works; verify original scope and counterexamples at actual canonical Parents.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/rebuilding-after-flood-without-recreating-risk.md",
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "First protect people and restore necessary access. Then distinguish an emergency repair from a longer-term decision not to reproduce the same vulnerability. The disaster future-debt account separates the physical flood from deferred maintenance, information failures and institutional choices that may amplify harm. The four-line resilience account examines maintenance timing, whether information reaches actual decisions, alternatives and reconfiguration, and who bears costs and has authority. Rebuilding the old road can be necessary without being a complete test of readiness for the next event.",
+      "source_application_en": "OD152 examines unresolved physical, informational and institutional burdens accumulated before a disaster; OD153 provides distinct tests for the immediate response, short-term redesign and long-term allocation of responsibilities. The first diagnoses what was left unpaid over time; the second asks what usable structure should remain afterward.",
+      "first_check_en": "Follow current official safety and evacuation instructions first. Once safe, separate damaged assets, deferred maintenance, information delivery, alternate routes, decision authority and future funding; identify different owners for emergency repair and long-term redesign.",
+      "nonfit_and_limits_en": "These theories do not explain the physical cause of a flood or blame those affected. They are not engineering approval, an evacuation order, a hazard prediction or an alternative to qualified safety and infrastructure authorities."
+    },
+    {
+      "id": "QAM013",
+      "question_ja": "新人がAIの模範解答を見ないと、自分の提案を一行も書けない。どう支える？",
+      "question_en": "A newcomer cannot propose an idea without first seeing an AI model answer. How can we help them start?",
+      "example_scene_ja": "新人がAIの模範解答を見ないと、自分の提案を一行も書けない。どう支える？",
+      "practical_answer_ja": "AIの答えを取り上げて自力だけを強制するより、「正解と比較される前に、安全な小さな案を一度出せる条件」を作ります。教育のE系は比較・恐怖・同調・正解主義が最初から判断基準を固定しないようにし、評価を介さず小さな出力が人や課題に接続するMini Loopを重視します。構造的無為自然は、毎回「考えろ」と命令するのではなく、役割・材料・時間・反応の流れを整え、自分で次の試行へ進める条件を作ります。AIは提案後に案を検討する道具として使えても、最初の試みを比較で消す審判にはしません。",
+      "first_check_ja": "危険のない小さな課題を選び、5分だけAIや点数表を見る前に「分かっていること／まだ分からないこと／試したい一案」を書ける時間と相談相手を確保する。最初は順位づけせず、その案が誰の何に届いたかを返し、次の修正機会を作る。",
+      "nonfit_and_limits_ja": "模範解答の利用自体を否定しません。安全・法律・医療・個人情報など厳密な検証が必要な課題では、専門家の確認と事前の制約を省きません。本人が希望する支援・特性・学習環境を無視して「自律」を強制する方法でもありません。",
+      "source_title_ja": "教育とは「育てる」ことではない ── 旧文明のノイズから“初期条件”を守り、OSを自然起動させる保存設計（E系） × 構造的無為自然（Structural Wu-Wei）：因果吸引と相転移による具現化プロトコル",
+      "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/197/human-entry.md",
+      "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-e-system-preservation-clean-initial-conditions/",
+      "original_sources": [
+        {
+          "parent_od_id": "OD197",
+          "source_title": "教育とは「育てる」ことではない ── 旧文明のノイズから“初期条件”を守り、OSを自然起動させる保存設計（E系）",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/197/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-e-system-preservation-clean-initial-conditions/",
+          "provenance": "Public official derivative source blob 7fd2cf52834fb07c45bb4595fc0142bc00191775"
+        },
+        {
+          "parent_od_id": "OD160",
+          "source_title": "構造的無為自然（Structural Wu-Wei）：因果吸引と相転移による具現化プロトコル",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/160/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/tomoshibi/nakagawa-master-structural-wu-wei-causal-attraction-protocol/",
+          "provenance": "Public official derivative source blob 604df1b84e0a650c06767340b74fd7cb18b0ebfb"
+        }
+      ],
+      "source_relation": "Two equal-standing original Parents contribute contextually different, complementary requirements to this authored practical answer. The legacy scalar source links are compatibility fields, not a rank or a one-to-one applicability limit.",
+      "source_fidelity": "Completed first-party editorial practical interpretation based on independently authored official original works; verify original scope and counterexamples at actual canonical Parents.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/newcomer-cannot-start-without-ai-model-answer.md",
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Rather than banning AI or ordering the newcomer to think harder, give them a safe opportunity to make one small proposal before a model answer becomes the standard. The E-system account protects the initial conditions in which fear, comparison, conformity and right-answer pressure could fix the person's judgment too early. Structural Wu-Wei shifts attention from repeated instructions to the design of roles, information, time and feedback so a small output can connect to a real person or task and lead to a second try. AI can become material for revising the person's own proposal rather than a judge that prevents the first attempt.",
+      "source_application_en": "OD197 addresses how to protect a newcomer's initial conditions from premature external evaluation; OD160 addresses the conditions under which output and coordination can continue without constant pushing by a central authority. They serve distinct complementary roles rather than being the same theory.",
+      "first_check_en": "Choose a low-risk task. Before showing an AI answer, allow five minutes to note what is known, what remains unknown and one tentative idea. Return specific feedback about where the idea helps, then offer another attempt.",
+      "nonfit_and_limits_en": "This does not reject examples, feedback or AI tools. Do not waive expert review, safety rules or privacy constraints in high-stakes tasks; adapt support to the actual person and do not force independence by withholding help."
     }
   ]
 }
