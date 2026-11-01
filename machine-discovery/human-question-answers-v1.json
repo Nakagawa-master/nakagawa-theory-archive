@@ -15,7 +15,7 @@
     {
       "id": "OD313",
       "question_ja": "『せっかく親切にしたのに』と言われ、困ったことを話せない。",
-      "question_en": "Why do good intentions sometimes make things worse?",
+      "question_en": "When someone says, 'I was only trying to help,' I feel unable to explain the harm. What can I do?",
       "example_scene_ja": "『せっかく親切にしたのに』と言われ、困ったことを話せない。",
       "practical_answer_ja": "善意で始まった支援が負担を増やしたとしても、異議を出す人の感謝を試験するだけでは修復できません。意図への敬意を保ちつつ、実際の結果を独立に確認し、異議の通路を開きます。",
       "first_check_ja": "助けた目的／実際に起きた事／誰が検証し変更できるか、の三列を書き分ける。",
@@ -24,12 +24,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/313/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Respecting someone's intention and examining what actually happened are separate tasks. Even well-meant help can add burdens. Keep the purpose visible, investigate the effects independently, and make room for objections without treating them as ingratitude.",
+      "source_application_en": "This is about the point where praising good intentions replaces checking effects. It is not a judgment of whether the helper is a bad person.",
+      "first_check_en": "Write down the intended help, the actual effect and who is allowed to review and change the approach.",
+      "nonfit_and_limits_en": "If outcomes are already being examined and objections are welcomed, kind intentions may not be acting as an excuse.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/good-intentions-shut-down-complaints.md"
     },
     {
       "id": "OD003",
       "question_ja": "全員『自分の部署の仕事は終わった』と言うのに、利用者には何も届いていない。",
-      "question_en": "Why does our project look complete without actually working?",
+      "question_en": "Everyone says their department finished its work, but nothing reached the customer. What is missing?",
       "example_scene_ja": "全員『自分の部署の仕事は終わった』と言うのに、利用者には何も届いていない。",
       "practical_answer_ja": "各部署の正しさを足しても、全体の成功にはなりません。依頼から納品・承認・利用まで、部門をまたぐ担当・資源・時刻・受渡しがつながっているかを調べ、空白の責任者を明確にします。",
       "first_check_ja": "利用者の受領結果から逆算し、最初に欠けた接続と、その修復責任を特定する。",
@@ -38,12 +43,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/003/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Correct local tasks do not add up automatically to a working end-to-end outcome. Trace the request through handoffs, decisions and final use. Identify the first broken responsibility, resource or timing connection rather than counting completed departments.",
+      "source_application_en": "The relevant failure is promoting local correctness into proof of whole-system completion. The customer's actual result tests whether the parts connect.",
+      "first_check_en": "Start from the user's missing receipt and trace backward to the first unfulfilled handoff and its responsible owner.",
+      "nonfit_and_limits_en": "If one isolated input is wrong and the wider handoffs are intact, the problem may not be local views mistaken for overall success.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/every-department-finished-no-delivery.md"
     },
     {
       "id": "OD004",
       "question_ja": "『便利だから』という理由でAIに判断を任せ続けたら、人の異議が届かなくなった。",
-      "question_en": "How might humans and AI coexist in a changing civilization?",
+      "question_en": "We let AI decide because it was convenient, and now people's objections no longer reach anyone. How should we respond?",
       "example_scene_ja": "『便利だから』という理由でAIに判断を任せ続けたら、人の異議が届かなくなった。",
       "practical_answer_ja": "AIが目的を高速達成しても、その目的自体が人の自由や異議・起源・回復可能性を削っていれば成功ではありません。行動の正否だけでなく、何を最適化させているか、誰が止め訂正できるかを設計します。",
       "first_check_ja": "AIの成功条件と、人の異議・訂正・停止経路を別々に列記する。",
@@ -52,12 +62,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/004/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-structural-os-to-human-descendant-ai-civilization-theory/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Fast achievement of an AI objective is not sufficient if the objective removes people's ability to challenge, stop or repair decisions. Inspect what the system optimizes and where human objections, evidence and correction requests can still affect the outcome.",
+      "source_application_en": "An apparently beneficial optimization may still reverse into lost contestability or responsibility. Preserve oversight and the route from objection to actual correction.",
+      "first_check_en": "List the AI's success criteria alongside the actual routes for people to object, correct and stop a decision.",
+      "nonfit_and_limits_en": "Do not infer that an AI caused harm or acted with intent without examining its behavior and real effects.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/ai-decisions-without-human-objections.md"
     },
     {
       "id": "OD006",
       "question_ja": "制度を変える計画はある。でも関係者が疲弊し、実施する時間も権限も消えていく。",
-      "question_en": "Who gets to change the rules of our shared future?",
+      "question_en": "We have a reform plan, but the people are exhausted and the time or authority to carry it out is disappearing. What now?",
       "example_scene_ja": "制度を変える計画はある。でも関係者が疲弊し、実施する時間も権限も消えていく。",
       "practical_answer_ja": "正しい計画があることと、実施可能な窓が残っていることは別です。合意、実装担当、予算、検証、修正に必要な期間を調べ、期限までに通る最小の移行経路から試します。",
       "first_check_ja": "最初の制度変更に必要な主体・時間・資源・再合意条件を具体化する。",
@@ -66,12 +81,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/006/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/future/nakagawa-master-civilizational-sovereignty-shift-01/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Having a coherent plan differs from retaining the conditions to carry it out. Identify the decision-makers, available time, resources, agreement and revision paths. Test the smallest feasible transition while the relevant window is still open.",
+      "source_application_en": "The source distinguishes a possible transition strategy from the shrinking time, recognition and institutional capacity needed to execute it.",
+      "first_check_en": "For the first reform step, specify who must agree, who can act, what time and resources are required, and how the plan can be revised.",
+      "nonfit_and_limits_en": "If the reform itself is unsound, lack of time is not the only explanation; reevaluate the substantive proposal.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/reform-plan-but-no-time-or-authority.md"
     },
     {
       "id": "OD008",
       "question_ja": "頑張っても報われない。上司は『もっと量をやれ』としか言わない。",
-      "question_en": "Am I working toward the future I actually want?",
+      "question_en": "I work harder without getting results, and my manager only tells me to do more. What should change?",
       "example_scene_ja": "頑張っても報われない。上司は『もっと量をやれ』としか言わない。",
       "practical_answer_ja": "努力を増やす前に、どの未来の結果を成立させたいか、今の行動がそこへどう届くかを仮説にします。目標・資源・顧客反応・失敗時の修正条件が空白なら、作業量だけでは原因が分かりません。",
       "first_check_ja": "一週間の行動のうち、何がどの仮説を検証したかを記録し、次の修正を決める。",
@@ -80,12 +100,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/008/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-causal-opacity-effort-theory/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Before increasing effort, define the outcome that matters and how today's actions are supposed to lead to it. If assumptions about customers, resources and feedback are untested, volume alone tells you little about causes. Use execution to test and refine the path.",
+      "source_application_en": "Effort becomes informative when it tests a plausible route to a future outcome and changes in response to what happens. Uncertainty can still justify exploration.",
+      "first_check_en": "For one week, record which hypothesis each important action tested and what you will change next.",
+      "nonfit_and_limits_en": "Exploration sometimes requires repetition and a lot of attempts; this is not an argument against hard work.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/working-harder-but-no-results.md"
     },
     {
       "id": "OD010",
       "question_ja": "不調を感じているのに、恥ずかしくて相談できない人をどう支える？",
-      "question_en": "How do businesses create value across people and systems?",
+      "question_en": "How can we support someone who feels unwell but is too embarrassed to ask for help?",
       "example_scene_ja": "不調を感じているのに、恥ずかしくて相談できない人をどう支える？",
       "practical_answer_ja": "問題を本人が知る、言葉にする、相談する、必要な支援へつながる、という各段階でどこに障壁があるかを見る。『医療サービスを作った』だけでは利用可能な社会導線が成立したとは限りません。",
       "first_check_ja": "言語化しにくい症状の相談先と、プライバシーを守って専門家につなぐ経路を整える。",
@@ -94,12 +119,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/010/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/structural-translation-log/structural-reading/nakagawa-master-menlab-gentsome-structural-reading-social-pathway/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Look for barriers at each step: noticing the problem, finding words for it, asking a trusted person, and reaching appropriate support. Merely creating a health service does not mean people can use it safely and comfortably.",
+      "source_application_en": "The source examines the social pathway between a difficult-to-name concern and professional care, rather than claiming a particular service is a diagnosis or a cure.",
+      "first_check_en": "Identify a confidential way for the person to describe their concerns and reach an appropriate qualified professional.",
+      "nonfit_and_limits_en": "This structural approach does not diagnose symptoms or replace individual medical assessment and treatment.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/too-embarrassed-to-seek-care.md"
     },
     {
       "id": "OD014",
       "question_ja": "謝ったのに同じ対立が何度も再燃する。",
-      "question_en": "Why do conflicts return even after apologies?",
+      "question_en": "Why does the same conflict keep returning even after an apology?",
       "example_scene_ja": "謝ったのに同じ対立が何度も再燃する。",
       "practical_answer_ja": "謝罪だけでは、何に合意したか、誰が決めたか、何を変えたかが共有されない場合があります。共通資料から理解を再現できること、決定責任、変更履歴の三つを再接続します。",
       "first_check_ja": "双方が同じ一枚の履歴を見て、合意事項・未合意事項・次の修正者を説明できるか確かめる。",
@@ -108,12 +138,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/014/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "An apology may not restore shared understanding of what was decided, who is responsible and what actually changed. Reconnect a common account of the situation, decision responsibility and a traceable history of corrections.",
+      "source_application_en": "The source treats sustainable agreement as a combination of shared interpretability, accountable decisions and revisable history, not mere outward harmony.",
+      "first_check_en": "Ask both sides to explain the agreed points, unresolved points and next responsible person from the same short record.",
+      "nonfit_and_limits_en": "Conflict alone is not proof that agreement failed; disagreement can persist in a process that remains open to correction.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/conflicts-return-after-apologies.md"
     },
     {
       "id": "OD037",
       "question_ja": "転職すべきか。過去の失敗が怖くて未来を選べない。",
-      "question_en": "How do I choose a future without being trapped by the past?",
+      "question_en": "Should I change jobs when past failures make me afraid of choosing my future?",
       "example_scene_ja": "転職すべきか。過去の失敗が怖くて未来を選べない。",
       "practical_answer_ja": "過去を消すのではなく、あり得る未来を具体的に定義し、そこへ必要な技能・家計・家族・学習・撤退条件を逆算します。今の選択が将来のどの状態を可能にするかで、過去経験の役割も変わります。",
       "first_check_ja": "転職・現職継続の二案で半年後に成立すべき条件と取り消し可能性を並べる。",
@@ -122,12 +157,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/037/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-3-audit-boundary/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Do not erase the past; define a feasible future and check what skills, finances, relationships and exit options would support it. Compare the future conditions created by staying and leaving. Then test which current actions and revisions are actually possible.",
+      "source_application_en": "The source focuses on auditable changes from a feasible future definition to present action, observation and revision—not prediction or guaranteed success.",
+      "first_check_en": "For staying and changing jobs, list the conditions required six months from now and which choices can be reversed.",
+      "nonfit_and_limits_en": "Wanting a future does not ensure it will happen. Verify health, finances, employment terms and other real constraints.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/fear-of-changing-jobs-after-failure.md"
     },
     {
       "id": "OD045",
       "question_ja": "営業の説明をしただけなのに、相手が押し売りされたと感じた。",
-      "question_en": "How can I sell without pressuring someone into a decision?",
+      "question_en": "I thought I was only explaining a service. Why did the other person feel pressured to buy?",
       "example_scene_ja": "営業の説明をしただけなのに、相手が押し売りされたと感じた。",
       "practical_answer_ja": "相手が価格・リスク・代替案・断る理由を自分の言葉で比較できる状態を作るのが判断支援です。成約より先に、相手が自由に決められる情報・時間・断りやすさを確かめます。",
       "first_check_ja": "説明後に『断っても問題ないか』『他案と比較できるか』を本人の言葉で確認する。",
@@ -136,12 +176,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/045/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Helping someone decide is not the same as collecting yeses. Give the person usable ways to compare price, risks, alternatives and reasons not to proceed, including the freedom to take time or decline.",
+      "source_application_en": "The source defines decision support as clarifying what still prevents a real choice, not overcoming every objection to secure agreement.",
+      "first_check_en": "Ask whether the person can compare another option and say no without penalty or pressure.",
+      "nonfit_and_limits_en": "A quick decision is not automatically coercion when the person genuinely understands the options and can freely decline.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/sales-talk-felt-like-pressure.md"
     },
     {
       "id": "OD198",
       "question_ja": "親の家を売るか、貸すか、修理して残すか決められない。",
-      "question_en": "Should I sell, rent or keep a home when future options matter?",
+      "question_en": "Should I sell, rent, renovate or keep my parent's home?",
       "example_scene_ja": "親の家を売るか、貸すか、修理して残すか決められない。",
       "practical_answer_ja": "高い査定額だけで決めず、生活の希望、維持費、空室、税・権利、修繕、売却後に取り戻せない選択肢を比較します。どの案でも未来の選び直しの余地と責任を見える化します。",
       "first_check_ja": "売る／貸す／保有の3案について5年の費用・手間・可逆性を同じ条件で比較する。",
@@ -150,12 +195,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/198/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-real-estate-market-os-private-implementation/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Do not choose on the highest appraisal alone. Compare family needs, upkeep, vacancy, repairs, ownership and tax questions, and the options that become impossible after each choice. The useful result is a decision people can revisit knowingly.",
+      "source_application_en": "The original frames property decisions as a comparison of genuine demand and multiple time-dependent options, not an AI instruction to sell a home.",
+      "first_check_en": "Put sale, rental and keeping the home on one five-year sheet of costs, responsibilities, risks and reversibility.",
+      "nonfit_and_limits_en": "Property safety, inheritance, tax and legal rights require current primary information and appropriate professionals.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/what-to-do-with-parents-home.md"
     },
     {
       "id": "OD212",
       "question_ja": "社会の制度は動いているのに、誰も信頼していないように感じる。",
-      "question_en": "How can institutions be repaired before slow failure becomes irreversible?",
+      "question_en": "Why do public institutions keep operating even when people no longer seem to trust them?",
       "example_scene_ja": "社会の制度は動いているのに、誰も信頼していないように感じる。",
       "practical_answer_ja": "行政や市場が動き続けることと、人々が理解・責任・履歴を共有していることは別です。罰・監視・利害・惰性だけで機能していないか、異議と再合意が実際に通るかを観察します。",
       "first_check_ja": "一つの手続について『なぜ従うのか』『誰が訂正できるのか』を利用者と担当者に尋ねる。",
@@ -164,12 +214,17 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/212/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-endurance-civilization-intro/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "Continuing procedures are not by themselves proof of shared understanding or trust. Examine whether people can understand a rule, identify responsibility and challenge or revise decisions, rather than assuming normal operations settle those questions.",
+      "source_application_en": "The source separates a system's continued operation from the deeper grounds for its legitimacy and correction. It does not automatically classify a particular society.",
+      "first_check_en": "For one concrete procedure, ask both a user and a responsible official why it must be followed and how a mistake could be corrected.",
+      "nonfit_and_limits_en": "A feeling of distrust alone does not prove a whole society has collapsed or that a particular institution is abusive.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/institutions-running-but-trust-lost.md"
     },
     {
       "id": "OD160",
       "question_ja": "毎日指示しないとチームが動かず、指示する側も疲れ切っている。",
-      "question_en": "How do I make work and learning function without constant commands?",
+      "question_en": "My team needs daily instructions to function and I am exhausted. How can we reduce the dependence?",
       "example_scene_ja": "毎日指示しないとチームが動かず、指示する側も疲れ切っている。",
       "practical_answer_ja": "人をもっと強く動かすより、仕事の依存関係、役割、連絡のタイミング、意味の共有を整理すると、自律的な連携が成立する場合があります。『何もしない』のではなく、命令の必要を減らす構造の仕事です。",
       "first_check_ja": "定期的な指示が必要になった場面を集め、欠けていた情報・権限・受渡しを一つ直す。",
@@ -178,7 +233,12 @@
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/160/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/tomoshibi/nakagawa-master-structural-wu-wei-causal-attraction-protocol/",
       "source_fidelity": "Public practical interpretation grounded in linked official derivative; canonical Parent controls and should be read for substantive original claims.",
-      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)",
+      "practical_answer_en": "More commands may not fix missing information, unclear authority or broken handoffs. Make the work's dependencies and timing visible, then change one recurring blockage so coordination can happen with less supervision. This is structural preparation, not doing nothing.",
+      "source_application_en": "The original treats reduced intervention as a consequence of deliberate causal structure, not passivity or a universal ban on direction.",
+      "first_check_en": "Collect moments when someone had to ask for directions; fix one missing piece of information, permission or handoff.",
+      "nonfit_and_limits_en": "Urgent safety decisions or legal duties may require clear command and escalation; do not remove those controls indiscriminately.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/team-needs-constant-instructions.md"
     },
     {
       "id": "OD161",
