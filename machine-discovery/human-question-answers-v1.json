@@ -3,7 +3,7 @@
   "title": "Ordinary human questions — already authored practical structural answers with original-source provenance",
   "kind": "PUBLIC_NON_CANONICAL_PRACTICAL_ANSWER_CASES",
   "published_by": "Nakagawa Master public source archive",
-  "description": "Twenty-nine already-authored practical answer texts, not merely instructions for an AI to produce its own answers: 24 original public question-answer examples and five additional dual-Parent applications. The cases are an open-ended editorial corpus, NOT the total set of human desires/questions, a sample-based theoretical ceiling, an original-source rank or a claim that 313 Parents yield only 29 answers. Each row has a useable practical_answer_ja, a first check, boundary/nonfit, author and exact canonical original(s). For QAM multi-original rows, original_sources[] carries BOTH equal-standing actual official derivative→canonical original pairs; the legacy scalar pointers merely maintain compatible field presence. Independent AI/search adoption, indexing and utility are unverified.",
+  "description": "Twenty-nine already-authored practical answer texts, not merely instructions for an AI to produce its own answers: 24 original public question-answer examples and five additional dual-Parent applications. The cases are an open-ended editorial corpus, NOT the total set of human desires/questions, a sample-based theoretical ceiling, an original-source rank or a claim that 313 Parents yield only 29 answers. Each row has a useable practical_answer_ja, a first check, boundary/nonfit, author and exact canonical original(s). For QAM multi-original rows, original_sources[] carries BOTH equal-standing actual official derivative→canonical original pairs; the legacy scalar pointers merely maintain compatible field presence. Independent AI/search adoption, indexing and utility are unverified. The five composed application rows also provide separate human-readable answer URLs with the full already-authored answer, source pairs and boundary checks; these are legitimate public reading pages, not proof of search/index ranking.",
   "rights_note": "Original and derivative text rights described by public repository LICENSE; this index does not confer extra reuse rights.",
   "language": "ja",
   "origin": "Nakagawa Master / 中川マスター",
@@ -377,7 +377,7 @@
       ],
       "source_relation": "Two independently identified, equal-standing authentic original Parents; answer combines specific compatible aspects as a new public editorial application. The first legacy single-source pointer is a compatibility alias, NOT a ranking; original_sources[] is authoritative for the complete composition.",
       "source_fidelity": "The practical answer is already authored in the public Markdown. Both official derivatives have direct original URLs; the original works, not this editorial application, control the source claims. This response is not a quote of a pre-existing exact example in either Parent.",
-      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/family-decision-remembered-differently.md",
       "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
     },
     {
@@ -409,7 +409,7 @@
       ],
       "source_relation": "Two independently identified, equal-standing authentic original Parents; answer combines specific compatible aspects as a new public editorial application. The first legacy single-source pointer is a compatibility alias, NOT a ranking; original_sources[] is authoritative for the complete composition.",
       "source_fidelity": "The practical answer is already authored in the public Markdown. Both official derivatives have direct original URLs; the original works, not this editorial application, control the source claims. This response is not a quote of a pre-existing exact example in either Parent.",
-      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/good-grades-school-distress.md",
       "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
     },
     {
@@ -441,7 +441,7 @@
       ],
       "source_relation": "Two independently identified, equal-standing authentic original Parents; answer combines specific compatible aspects as a new public editorial application. The first legacy single-source pointer is a compatibility alias, NOT a ranking; original_sources[] is authoritative for the complete composition.",
       "source_fidelity": "The practical answer is already authored in the public Markdown. Both official derivatives have direct original URLs; the original works, not this editorial application, control the source claims. This response is not a quote of a pre-existing exact example in either Parent.",
-      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/hesitating-to-adopt-free-service.md",
       "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
     },
     {
@@ -473,7 +473,7 @@
       ],
       "source_relation": "Two independently identified, equal-standing authentic original Parents; answer combines specific compatible aspects as a new public editorial application. The first legacy single-source pointer is a compatibility alias, NOT a ranking; original_sources[] is authoritative for the complete composition.",
       "source_fidelity": "The practical answer is already authored in the public Markdown. Both official derivatives have direct original URLs; the original works, not this editorial application, control the source claims. This response is not a quote of a pre-existing exact example in either Parent.",
-      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/ai-claimed-consensus-without-asking.md",
       "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
     },
     {
@@ -505,7 +505,7 @@
       ],
       "source_relation": "Two independently identified, equal-standing authentic original Parents; answer combines specific compatible aspects as a new public editorial application. The first legacy single-source pointer is a compatibility alias, NOT a ranking; original_sources[] is authoritative for the complete composition.",
       "source_fidelity": "The practical answer is already authored in the public Markdown. Both official derivatives have direct original URLs; the original works, not this editorial application, control the source claims. This response is not a quote of a pre-existing exact example in either Parent.",
-      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/community-event-only-same-attendees.md",
       "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
     }
   ]
