@@ -1,0 +1,457 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://master.ricette.jp/#nakagawa-master",
+      "name": "Keisuke Nakagawa",
+      "alternateName": [
+        "Nakagawa Master",
+        "中川マスター"
+      ],
+      "url": "https://master.ricette.jp/",
+      "subjectOf": {
+        "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld#dataset"
+      }
+    },
+    {
+      "@type": "CreativeWorkSeries",
+      "@id": "https://master.ricette.jp/theory-archive/#nakagawa-original-theories",
+      "name": "Nakagawa Master — 313 interconnected original works",
+      "creator": {
+        "@id": "https://master.ricette.jp/#nakagawa-master"
+      },
+      "url": "https://master.ricette.jp/theory-archive/",
+      "subjectOf": {
+        "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld#dataset"
+      },
+      "citation": [
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/official-derivatives-map.json",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/published-ja-source-briefs-313-v1.json"
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld#dataset",
+      "name": "Nakagawa Master — verified independent OSS integration and merge evidence",
+      "alternateName": "中川マスター：外部OSSへの実装・マージ実績の一次証拠",
+      "description": "Evidence-first map of nine individually verified merged GitHub pull requests in five independent receiving projects (Qwen Code, OpenClaw, Pydantic AI, MemberJunction and PostHog). Each record links Nakagawa Master's relevant public observation or review, the receiving engineer's work and the actual merged pull request. PostHog's three PRs belong to one successor workstream. The full linked Japanese, English and Chinese impact record contains 53 documented cases at different progress stages. The independently inspectable changes show consequential technical influence in real software development.",
+      "creator": {
+        "@id": "https://master.ricette.jp/#nakagawa-master"
+      },
+      "dateModified": "2026-11-02",
+      "inLanguage": [
+        "ja",
+        "en"
+      ],
+      "isAccessibleForFree": true,
+      "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld",
+      "citation": [
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.en.md",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.zh.md",
+        "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/external-effect-evidence-index-v1.json"
+      ],
+      "mainEntityOfPage": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld",
+      "variableMeasured": [
+        {
+          "@type": "PropertyValue",
+          "name": "Individually checked merged PRs in this dataset",
+          "value": 9
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Distinct independent receiving GitHub repositories in this dataset",
+          "value": 5
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Documented cases in the linked human impact record, across various evidence stages",
+          "value": 53
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Canonical separately published original works indexed",
+          "value": 313
+        }
+      ],
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "@id": "https://github.com/QwenLM/qwen-code/pull/15681",
+          "name": "QwenLM/qwen-code #15681 — Shell permission checks: protected output-redirection target and fd-duplication parsing",
+          "url": "https://github.com/QwenLM/qwen-code/pull/15681",
+          "dateModified": "2026-11-01",
+          "isBasedOn": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134"
+          },
+          "citation": [
+            "https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6412304134",
+            "https://github.com/QwenLM/qwen-code/issues/15600#issuecomment-6413173175"
+          ],
+          "about": {
+            "@id": "https://master.ricette.jp/#nakagawa-master"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "GitHub native merge status",
+              "value": "MERGED"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving repository",
+              "value": "QwenLM/qwen-code"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Observed contribution and implementation authorship",
+              "value": "Nakagawa Master reported a distinct protected-write-path escape; the original issue reporter independently tested, authored the correction and regression tests; Qwen Code merged the PR."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Distinct recipient workstream",
+              "value": "qwen-shell-permission"
+            }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://github.com/QwenLM/qwen-code/pull/13923",
+          "name": "QwenLM/qwen-code #13923 — Managed agent shutdown: verify the current requested stop",
+          "url": "https://github.com/QwenLM/qwen-code/pull/13923",
+          "dateModified": "2026-10-12",
+          "isBasedOn": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434"
+          },
+          "citation": [
+            "https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6115529434",
+            "https://github.com/QwenLM/qwen-code/pull/13923#issuecomment-6116088413"
+          ],
+          "about": {
+            "@id": "https://master.ricette.jp/#nakagawa-master"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "GitHub native merge status",
+              "value": "MERGED"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving repository",
+              "value": "QwenLM/qwen-code"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Observed contribution and implementation authorship",
+              "value": "Nakagawa Master supplied a reproducible counterexample; the receiving engineer confirmed it, changed code and tests, and the project merged the PR."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Distinct recipient workstream",
+              "value": "qwen-managed-agent-shutdown"
+            }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://github.com/QwenLM/qwen-code/pull/13241",
+          "name": "QwenLM/qwen-code #13241 — Host result acceptance: avoid late-result writes after a terminated attempt",
+          "url": "https://github.com/QwenLM/qwen-code/pull/13241",
+          "dateModified": "2026-10-04",
+          "isBasedOn": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/QwenLM/qwen-code/pull/13241"
+          },
+          "citation": [
+            "https://github.com/QwenLM/qwen-code/pull/13241",
+            "https://github.com/QwenLM/qwen-code/issues/13238#issuecomment-5981371808"
+          ],
+          "about": {
+            "@id": "https://master.ricette.jp/#nakagawa-master"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "GitHub native merge status",
+              "value": "MERGED"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving repository",
+              "value": "QwenLM/qwen-code"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Observed contribution and implementation authorship",
+              "value": "The receiving developer's PR explicitly attributes an implemented option-A distinction to Nakagawa Master; receiver-authored tests and code were merged and later listed in a stable release."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Distinct recipient workstream",
+              "value": "qwen-host-result-acceptance"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving project release or release-document link",
+              "value": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0"
+            }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://github.com/openclaw/openclaw/pull/160856",
+          "name": "openclaw/openclaw #160856 — Gateway pending approvals: scope rejection to the correct agent",
+          "url": "https://github.com/openclaw/openclaw/pull/160856",
+          "dateModified": "2026-09-29",
+          "isBasedOn": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/openclaw/openclaw/pull/160856"
+          },
+          "citation": [
+            "https://github.com/openclaw/openclaw/pull/160856",
+            "https://github.com/openclaw/openclaw/commit/6922a50b287ad76557b085eb78125fc9a250a2dd"
+          ],
+          "about": {
+            "@id": "https://master.ricette.jp/#nakagawa-master"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "GitHub native merge status",
+              "value": "MERGED"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving repository",
+              "value": "openclaw/openclaw"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Observed contribution and implementation authorship",
+              "value": "The maintainer's fix PR expressly cites Nakagawa Master's issue report, includes before/after regression tests and was merged."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Distinct recipient workstream",
+              "value": "openclaw-agent-approval"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving project release or release-document link",
+              "value": "https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md"
+            }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://github.com/pydantic/pydantic-ai/pull/9982",
+          "name": "pydantic/pydantic-ai #9982 — SQLite message history: avoid duplicate writes on idempotent replay",
+          "url": "https://github.com/pydantic/pydantic-ai/pull/9982",
+          "dateModified": "2026-10-16",
+          "isBasedOn": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6052803154"
+          },
+          "citation": [
+            "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6052803154",
+            "https://github.com/pydantic/pydantic-ai/pull/9982#issuecomment-6063881879"
+          ],
+          "about": {
+            "@id": "https://master.ricette.jp/#nakagawa-master"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "GitHub native merge status",
+              "value": "MERGED"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving repository",
+              "value": "pydantic/pydantic-ai"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Observed contribution and implementation authorship",
+              "value": "Nakagawa Master identified a write-order/idempotency counterexample; a separate contributor reproduced it, changed code and tests, and Pydantic AI merged the PR."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Distinct recipient workstream",
+              "value": "pydantic-sqlite-step-store"
+            }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://github.com/MemberJunction/MJ/pull/4595",
+          "name": "MemberJunction/MJ #4595 — Cache invalidation notifications: keep row-level data from unauthorized subscribers",
+          "url": "https://github.com/MemberJunction/MJ/pull/4595",
+          "dateModified": "2026-09-23",
+          "isBasedOn": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/MemberJunction/MJ/issues/4475"
+          },
+          "citation": [
+            "https://github.com/MemberJunction/MJ/issues/4475",
+            "https://github.com/MemberJunction/MJ/issues/4610"
+          ],
+          "about": {
+            "@id": "https://master.ricette.jp/#nakagawa-master"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "GitHub native merge status",
+              "value": "MERGED"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving repository",
+              "value": "MemberJunction/MJ"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Observed contribution and implementation authorship",
+              "value": "Nakagawa Master's review identified an authorization boundary that the receiving implementation and related work items explicitly tracked; the developer's code and tests were merged."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Distinct recipient workstream",
+              "value": "memberjunction-row-permissions"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving project release or release-document link",
+              "value": "https://github.com/MemberJunction/MJ/releases/tag/v6.1.4"
+            }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://github.com/PostHog/posthog/pull/107879",
+          "name": "PostHog/posthog #107879 — Workflow outcome measurement per published version",
+          "url": "https://github.com/PostHog/posthog/pull/107879",
+          "dateModified": "2026-10-02",
+          "isBasedOn": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200"
+          },
+          "citation": [
+            "https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200",
+            "https://github.com/PostHog/posthog/pull/92252#issuecomment-5872695227"
+          ],
+          "about": {
+            "@id": "https://master.ricette.jp/#nakagawa-master"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "GitHub native merge status",
+              "value": "MERGED"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving repository",
+              "value": "PostHog/posthog"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Observed contribution and implementation authorship",
+              "value": "A Nakagawa Master review influenced a receiving workflow-scout redesign; the author split the successor stack and merged this receiver-authored outcome-measurement PR."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Distinct recipient workstream",
+              "value": "posthog-workflow-scout-successor-stack"
+            }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://github.com/PostHog/posthog/pull/107795",
+          "name": "PostHog/posthog #107795 — Store PostHog's measured evidence separately from an AI-generated suggestion claim",
+          "url": "https://github.com/PostHog/posthog/pull/107795",
+          "dateModified": "2026-10-02",
+          "isBasedOn": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200"
+          },
+          "citation": [
+            "https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200",
+            "https://github.com/PostHog/posthog/pull/92252#issuecomment-5872695227"
+          ],
+          "about": {
+            "@id": "https://master.ricette.jp/#nakagawa-master"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "GitHub native merge status",
+              "value": "MERGED"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving repository",
+              "value": "PostHog/posthog"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Observed contribution and implementation authorship",
+              "value": "The receiving author carried the review into a successor stack and merged this measurement/provenance implementation."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Distinct recipient workstream",
+              "value": "posthog-workflow-scout-successor-stack"
+            }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://github.com/PostHog/posthog/pull/107802",
+          "name": "PostHog/posthog #107802 — Display workflow suggestions and actions",
+          "url": "https://github.com/PostHog/posthog/pull/107802",
+          "dateModified": "2026-10-02",
+          "isBasedOn": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200"
+          },
+          "citation": [
+            "https://github.com/PostHog/posthog/pull/92252#pullrequestreview-5233849200",
+            "https://github.com/PostHog/posthog/pull/92252#issuecomment-5872695227"
+          ],
+          "about": {
+            "@id": "https://master.ricette.jp/#nakagawa-master"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "GitHub native merge status",
+              "value": "MERGED"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving repository",
+              "value": "PostHog/posthog"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Observed contribution and implementation authorship",
+              "value": "The author merged the independently written successor UI and action part of the same PostHog stack."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Distinct recipient workstream",
+              "value": "posthog-workflow-scout-successor-stack"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
