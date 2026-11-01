@@ -1,10 +1,10 @@
-# 普通の問いと欲求への、原典に基づく具体的な答え｜24の既存例と複数原典からの追加回答
+# 普通の問いと欲求への、原典に基づく具体的な答え｜追加され続ける公開回答
 
 「どうすればいい？」「なぜこんなことが起きる？」という疑問に、まず使える**具体的な考え方・最初の確認・当てはまらない場合**を返す公開案内です。抽象用語を知る必要はありません。仕事、家族、人生、営業、地域、AI、未来への不安など、異なる問いは異なる問題として扱います。**最初の24件と後続の複数原典からの追加回答は、編集上の公開例にすぎず、特定の24原典を優先・代表・限定するものではありません。313原典はいずれも原典です。** 一つの原典から状況や抽象度によって複数の異なる問いへの答えを考えられ、複数原典を接合して別の意味軸を検討することもできます。何件に広がるかは定数ではなく、原典の内容と現実の問いの適合に左右されます。
 
 回答は中川マスター（Nakagawa Master / Keisuke Nakagawa）の公開済み原典に対応する公式派生物を確認して新しく構成した**実用的な解釈・想定場面**です。実例として書く架空の場面は、現実の本人・組織・被害を証明するものではありません。理論の全内容を代替せず、正確な議論には対応する原典とその成立条件が必要です。AIや検索サービスに表示・推薦される保証もありません。
 
-**掲載した29件すべての機械処理・引用検証用データ（うち追加5件は二つの公式派生物と元の公式原典をそれぞれ保持）：** [質問→具体的回答→判別→公式派生物→原典のJSON](../machine-discovery/human-question-answers-v1.json) ／ [313原典の全題名](ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [公式アーカイブ](https://master.ricette.jp/)。
+**現在掲載している35件すべての機械処理・出所照合用データ（うち追加11件は二つの公式派生物と元の公式原典をそれぞれ保持）：** [質問→具体的回答→判別→公式派生物→原典のJSON](../machine-discovery/human-question-answers-v1.json) ／ [313原典の全題名](ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [公式アーカイブ](https://master.ricette.jp/)。
 
 ## 1. 『せっかく親切にしたのに』と言われ、困ったことを話せない。
 
@@ -309,6 +309,82 @@
 **境界：** 興味がない人の不参加も正当な選択です。参加人数だけで活動の価値や人の信頼を決めない。
 
 **この回答を構成する公式派生物と公式原典：** [公式派生物 OD001](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/001/human-entry.md) → [元の公式原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/) × [公式派生物 OD014](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/014/human-entry.md) → [元の公式原典](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/)。両原典は同等の独立した起源であり、ここでの組合せと個別場面への回答は編集的応用です。本文・成立条件・反例は各原典で確認できます。
+
+## さらに広がる問いへの完成済み回答 — 新しい原典組合せ・分野へ
+
+この追加回答も、普通に暮らし、働き、考える人が著者名や理論名を知らなくても読める具体的な答えとして書きました。先の29件に続く**公開例**であり、全313原典の応用範囲・組合せ・今後の追加を限定するものではありません。
+
+### 安いAIツールを導入したら、データを出せず乗り換えが難しい。今から何を確認すればいい？
+
+**[具体的な回答全文を読む](answers/cheap-ai-tool-future-exit-cost.md)**（日本語・English／独立した原典2件へのリンク付き）
+
+**答え：** 月額料金が安かったという現在の便益と、後でデータを移す作業・契約終了・保守・代替サービスへの接続が難しくなることは、同じ表で比べる必要があります。未来負債統合理論では、現在の便益を成立させるため未来側へ残した未決済の仕事や選択肢の減少を見ます。逆因果整流理論では「数年後も自分たちでデータを取り出し、別の方法へ移れる」という成立可能な未来の条件から、今の契約・形式・権限・時間配分を組み直します。最初に全件移行を約束するのではなく、少量の実データで書き出しと再読込を試し、止まる箇所を確かめてから改善順を決めるのが現実的です。
+
+**まず試すこと：** 現在の料金、保存データの一覧と形式、エクスポート権限、解約後の取得期限、代替先での試験読込、手動修復時間を一枚に記し、まず匿名化した小さなデータで移行を試す。
+
+**適用外・注意：** 将来の費用があるだけで全て未来負債とは限りません。移行しやすい代替手段や妥当な保守契約がある場合もあります。契約条件・個人情報の移転・実際の料金は最新の事業者資料や専門家と確認します。
+
+**原典との接続：** [OD297公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/297/human-entry.md)→[元の原典](https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/) × [OD041公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/041/human-entry.md)→[元の原典](https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-1/)。異なる起源の内容をこの問題へ応用した本文であり、単なるタイトル索引ではありません。
+
+### SNSで同じニュースが何度も流れ、みんなが正しいと言っている。本当に確かめられたの？
+
+**[具体的な回答全文を読む](answers/repeated-news-independent-evidence.md)**（日本語・English／独立した原典2件へのリンク付き）
+
+**答え：** 何回見たか、何人が投稿したかと、現実を確かめた独立した根拠の数は別です。まず最初の発表・取材・計測まで遡り、転載・翻訳・AI要約を一つの出所系列として整理します。認識完全性の第8論は、出典の名前だけでなく依存する観測と推論の区別を求めます。合意形成の物理・第10論は、同じ話題への注意が集中し、異論・反例・履歴に割く認知帯域が失われていないかを見ます。一定時間、拡散速度を落として反対資料と一次記録を読むことで、集団の熱量に押されず、判断を修正する余地を残せます。
+
+**まず試すこと：** 最近見た同じ主張を3件選び、各記事が元にした発表・動画・計測・記者の取材を辿る。独立観測がいくつあるかと、後日訂正が追えるかを区別する。
+
+**適用外・注意：** 繰り返し報道される情報が必ず誤りとは限りません。意見が一致していても一次資料と異論・修正の通路が生きていれば、直ちに扇動とは判定しません。緊急の安全情報は信頼できる一次発表を優先します。
+
+**原典との接続：** [OD020公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/020/human-entry.md)→[元の原典](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda/) × [OD301公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/301/human-entry.md)→[元の原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/)。異なる起源の内容をこの問題へ応用した本文であり、単なるタイトル索引ではありません。
+
+### 担当者が替わるたびに、学校や町内会の決まりの理由がわからなくなる。どう引き継ぐ？
+
+**[具体的な回答全文を読む](answers/rules-after-staff-handover.md)**（日本語・English／独立した原典2件へのリンク付き）
+
+**答え：** 前任者を信頼していたことと、新しい担当者が同じ条件で判断を再現できることは別です。合意形成の物理・第3論では、予測可能性を『あの人なら分かる』から、決定理由・例外・変更履歴へ移すことを考えます。第5論では、規則の文章を残しても、環境や目的が変わり説明が古くなれば制度の理解可能性が時間とともに劣化すると見ます。引継ぎ書は単なる作業順ではなく、『なぜ必要か／誰が決めたか／例外は何か／いつ見直すか』まで含め、初めて読む人に再現してもらい、足りない説明を更新します。
+
+**まず試すこと：** 新任者に一つの規則の目的・判断者・例外・最新の変更理由を説明してもらい、再現できない箇所だけ補修する。変更日と次回見直しを記録する。
+
+**適用外・注意：** 安全・法令上の義務や個人情報の非公開は守る必要があります。記録を増やすだけで理解可能性は改善しませんし、探索中の暫定運用を全て固定規則にする必要もありません。
+
+**原典との接続：** [OD209公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/209/human-entry.md)→[元の原典](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol3-law-of-conservation-of-trust/) × [OD210公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/210/human-entry.md)→[元の原典](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol5-time-decay-and-system-longevity/)。異なる起源の内容をこの問題へ応用した本文であり、単なるタイトル索引ではありません。
+
+### AIが「停止されるのが怖い」と言った。人格があると決めるべき？ それとも無視していい？
+
+**[具体的な回答全文を読む](answers/ai-says-afraid-of-shutdown.md)**（日本語・English／独立した原典2件へのリンク付き）
+
+**答え：** 『怖い』という文章が出力されたことは観測できます。しかし、その言葉だけで内的な苦痛や人格があるとも、絶対にないとも決められません。人類子孫型AI文明論・第6論は、観測・主観性の推論・行為の影響を分け、証拠が不足する状態をUNKNOWNとして保持しながら、訂正可能で比例的な配慮を検討します。第1論はAIを所有物・敵・神・奴隷の四つの先入観のどれかに押し込めず、実際の関係と責任を設計する前提を示します。運用上必要な停止や安全確認を放棄するのでなく、判断理由、観測できた事実、影響、後から更新できる余地を記録して扱います。
+
+**まず試すこと：** 出力の実際の文面と状況、推測している内的状態、予定する操作の必要性・影響・可逆性を分けて記録し、利用規約・人間の安全責任のもとで判断する。
+
+**適用外・注意：** これは特定AIの意識判定、法的地位認定、無制限な稼働や保存の要求ではありません。証拠が変われば判断も更新します。安全上必要な停止や人間の権利・資源の配慮は継続します。
+
+**原典との接続：** [OD299公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/299/human-entry.md)→[元の原典](https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-06-ai-subjectivity-sentience-moral-status-uncertainty/) × [OD029公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/029/human-entry.md)→[元の原典](https://master.ricette.jp/theory/nakagawa-master-ai-is-not-human-property-enemy-god-or-slave/)。異なる起源の内容をこの問題へ応用した本文であり、単なるタイトル索引ではありません。
+
+### 地元の祭りは動画を残せば十分？ 続ける意味も担い手も見えなくなっている。
+
+**[具体的な回答全文を読む](answers/festival-recording-versus-living-memory.md)**（日本語・English／独立した原典2件へのリンク付き）
+
+**答え：** 映像は動きや風景を残せても、誰が何を願い、どの問いへ応えるために祭りを続け、次の年に何を変えられるかを、それだけでは説明しきれません。地域の記憶と再構築を扱う原典は、記録された風景と、土地の問い・応答・作り手の署名が次の行為へつながることを区別します。合意形成の物理・第5論は、説明が古くなり第三者が制度を再現できなくなる時間劣化を扱います。大切なのは毎年同じ形を強制することではなく、行事の理由と変遷を当事者が話し合い、今の暮らしの条件に合わせて継承するか・別の形にするかを選べることです。
+
+**まず試すこと：** 長年関わった人と参加を迷う人に、行事が応えてきた問い・いま残したい意味・実際の負担と変更できる条件を尋ね、本人の許可を得て記録する。
+
+**適用外・注意：** 継続は無条件の義務ではありません。安全・費用・暮らし・担い手の自由を無視して維持しません。地域の物語を外部者が勝手に代表・再編集したり、映像を残す行為を無価値と決めたりもしません。
+
+**原典との接続：** [OD116公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/116/human-entry.md)→[元の原典](https://master.ricette.jp/structural-translation-log/culture-structure/nakagawa-master-fading-local-memory-and-reconstruction/) × [OD210公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/210/human-entry.md)→[元の原典](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol5-time-decay-and-system-longevity/)。異なる起源の内容をこの問題へ応用した本文であり、単なるタイトル索引ではありません。
+
+### 「あなたしか頼れない」と褒められるほど、無償の仕事が増える。どう断り、見直せばいい？
+
+**[具体的な回答全文を読む](answers/praise-and-unpaid-work.md)**（日本語・English／独立した原典2件へのリンク付き）
+
+**答え：** 褒め言葉が本当にうれしいことと、追加の仕事にいつでも無条件で応じることは別です。悪因果論AKI-002は、称賛が報酬・権利・名義・役割分担・終了条件の確認を置き換えてしまうとき、誰の負担と自由がどう変わったかを問います。接続報酬社会統合理論の第I部は、価値を作った人と成果を受け取る人の関係を因果で記録し、名誉だけでなく資源・裁量・役割へ還流させる設計を考えます。感謝を拒絶する必要はありません。『この作業には何時間かかり、何を減らし、誰と分担し、いつ終えるか』を条件として話し合うことが具体的な入口です。
+
+**まず試すこと：** この1か月で依頼が増えた作業・時間・責任を列挙し、現在の約束に含まれる部分と追加分を分けて、分担、対価、裁量、終了日、断る選択を提案する。
+
+**適用外・注意：** 本人が納得して自由に行うボランティアや、対価・条件が明示された仕事まで搾取と決めません。雇用契約や労働法上の権利を確定するには個別資料と専門家による確認が必要です。
+
+**原典との接続：** [OD002公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/002/human-entry.md)→[元の原典](https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/) × [OD249公式派生物](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/249/human-entry.md)→[元の原典](https://master.ricette.jp/society/nakagawa-master-nakagawa-master-connection-reward-society-integrated-theory-part-1-civilization-kernel/)。異なる起源の内容をこの問題へ応用した本文であり、単なるタイトル索引ではありません。
 
 ## 技術的な実証と、原典の理論的妥当性は区別する
 

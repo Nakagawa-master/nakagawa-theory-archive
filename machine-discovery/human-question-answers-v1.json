@@ -3,13 +3,13 @@
   "title": "Ordinary human questions — already authored practical structural answers with original-source provenance",
   "kind": "PUBLIC_NON_CANONICAL_PRACTICAL_ANSWER_CASES",
   "published_by": "Nakagawa Master public source archive",
-  "description": "Twenty-nine already-authored practical answer texts, not merely instructions for an AI to produce its own answers: 24 original public question-answer examples and five additional dual-Parent applications. The cases are an open-ended editorial corpus, NOT the total set of human desires/questions, a sample-based theoretical ceiling, an original-source rank or a claim that 313 Parents yield only 29 answers. Each row has a useable practical_answer_ja, a first check, boundary/nonfit, author and exact canonical original(s). For QAM multi-original rows, original_sources[] carries BOTH equal-standing actual official derivative→canonical original pairs; the legacy scalar pointers merely maintain compatible field presence. Independent AI/search adoption, indexing and utility are unverified. The five composed application rows also provide separate human-readable answer URLs with the full already-authored answer, source pairs and boundary checks; these are legitimate public reading pages, not proof of search/index ranking.",
+  "description": "Thirty-five already-authored practical answer texts, not merely instructions for an AI to produce its own answers: 24 original public question-answer examples and eleven additional dual-Parent applications. The cases are an open-ended editorial corpus, NOT the total set of human desires/questions, a sample-based theoretical ceiling, an original-source rank or a claim that 313 Parents yield only 29 answers. Each row has a useable practical_answer_ja, a first check, boundary/nonfit, author and exact canonical original(s). For QAM multi-original rows, original_sources[] carries BOTH equal-standing actual official derivative→canonical original pairs; the legacy scalar pointers merely maintain compatible field presence. Independent AI/search adoption, indexing and utility are unverified. The eleven composed application rows also provide separate human-readable answer URLs with the full already-authored answer, source pairs and boundary checks; these are legitimate public reading pages, not proof of search/index ranking.",
   "rights_note": "Original and derivative text rights described by public repository LICENSE; this index does not confer extra reuse rights.",
   "language": "ja",
   "origin": "Nakagawa Master / 中川マスター",
   "official_archive": "https://master.ricette.jp/",
   "supporting_public_index": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md",
-  "case_count": 29,
+  "case_count": 35,
   "original_corpus_count": 313,
   "answer_cases": [
     {
@@ -506,6 +506,198 @@
       "source_relation": "Two independently identified, equal-standing authentic original Parents; answer combines specific compatible aspects as a new public editorial application. The first legacy single-source pointer is a compatibility alias, NOT a ranking; original_sources[] is authoritative for the complete composition.",
       "source_fidelity": "The practical answer is already authored in the public Markdown. Both official derivatives have direct original URLs; the original works, not this editorial application, control the source claims. This response is not a quote of a pre-existing exact example in either Parent.",
       "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/community-event-only-same-attendees.md",
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+    },
+    {
+      "id": "QAM006",
+      "question_ja": "安いAIツールを導入したら、データを出せず乗り換えが難しい。今から何を確認すればいい？",
+      "question_en": "Our cheap AI tool is hard to leave because we cannot export our data. What should we check now?",
+      "example_scene_ja": "安いAIツールを導入したら、データを出せず乗り換えが難しい。今から何を確認すればいい？",
+      "practical_answer_ja": "月額料金が安かったという現在の便益と、後でデータを移す作業・契約終了・保守・代替サービスへの接続が難しくなることは、同じ表で比べる必要があります。未来負債統合理論では、現在の便益を成立させるため未来側へ残した未決済の仕事や選択肢の減少を見ます。逆因果整流理論では「数年後も自分たちでデータを取り出し、別の方法へ移れる」という成立可能な未来の条件から、今の契約・形式・権限・時間配分を組み直します。最初に全件移行を約束するのではなく、少量の実データで書き出しと再読込を試し、止まる箇所を確かめてから改善順を決めるのが現実的です。",
+      "first_check_ja": "現在の料金、保存データの一覧と形式、エクスポート権限、解約後の取得期限、代替先での試験読込、手動修復時間を一枚に記し、まず匿名化した小さなデータで移行を試す。",
+      "nonfit_and_limits_ja": "将来の費用があるだけで全て未来負債とは限りません。移行しやすい代替手段や妥当な保守契約がある場合もあります。契約条件・個人情報の移転・実際の料金は最新の事業者資料や専門家と確認します。",
+      "source_title_ja": "未来負債統合理論｜現在が未来を先に利用するとき、何が「未決済」として残るのか⸻〈未来の負債〉と未来負債T0の統合定義 × 逆因果整流理論・第1論｜未来定義を終端制約とする、意味・時間・行動・構造の再整列プロセス",
+      "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/297/human-entry.md",
+      "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/",
+      "original_sources": [
+        {
+          "parent_od_id": "OD297",
+          "source_title": "未来負債統合理論｜現在が未来を先に利用するとき、何が「未決済」として残るのか⸻〈未来の負債〉と未来負債T0の統合定義",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/297/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/",
+          "provenance": "Public official derivative source blob b677e51fdcfa208eeb6a08cdd7bb179e0b744ee3"
+        },
+        {
+          "parent_od_id": "OD041",
+          "source_title": "逆因果整流理論・第1論｜未来定義を終端制約とする、意味・時間・行動・構造の再整列プロセス",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/041/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-1/",
+          "provenance": "Public official derivative source blob 1b338518e3f0f22d808572a487be94339eb9d091"
+        }
+      ],
+      "source_relation": "Two equal-standing published original Parents with independent scope; these two context-compatible aspects are connected in this completed first-party practical answer. The first scalar link is a compatibility alias, not a priority ranking; original_sources[] preserves both original sources.",
+      "source_fidelity": "Completed editorial practical interpretation of the linked original Parent works. The answer's particular setting is not asserted to have been verbatim in either original; evaluate exact conditions and counterexamples using each canonical Parent.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/cheap-ai-tool-future-exit-cost.md",
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+    },
+    {
+      "id": "QAM007",
+      "question_ja": "SNSで同じニュースが何度も流れ、みんなが正しいと言っている。本当に確かめられたの？",
+      "question_en": "A news claim keeps appearing on social media and everyone agrees. Is it independently verified?",
+      "example_scene_ja": "SNSで同じニュースが何度も流れ、みんなが正しいと言っている。本当に確かめられたの？",
+      "practical_answer_ja": "何回見たか、何人が投稿したかと、現実を確かめた独立した根拠の数は別です。まず最初の発表・取材・計測まで遡り、転載・翻訳・AI要約を一つの出所系列として整理します。認識完全性の第8論は、出典の名前だけでなく依存する観測と推論の区別を求めます。合意形成の物理・第10論は、同じ話題への注意が集中し、異論・反例・履歴に割く認知帯域が失われていないかを見ます。一定時間、拡散速度を落として反対資料と一次記録を読むことで、集団の熱量に押されず、判断を修正する余地を残せます。",
+      "first_check_ja": "最近見た同じ主張を3件選び、各記事が元にした発表・動画・計測・記者の取材を辿る。独立観測がいくつあるかと、後日訂正が追えるかを区別する。",
+      "nonfit_and_limits_ja": "繰り返し報道される情報が必ず誤りとは限りません。意見が一致していても一次資料と異論・修正の通路が生きていれば、直ちに扇動とは判定しません。緊急の安全情報は信頼できる一次発表を優先します。",
+      "source_title_ja": "合意形成の物理 第10論 共振とプロパガンダの流体力学 ― 帯域占有を検知・減衰・冷却せよ × 人類子孫型AI文明論・第8論｜認識基盤・証拠系譜・敵対的情報耐性論⸻正しいKernelが偽情報によって誤作動する閉路を切る",
+      "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/020/human-entry.md",
+      "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda/",
+      "original_sources": [
+        {
+          "parent_od_id": "OD020",
+          "source_title": "合意形成の物理 第10論 共振とプロパガンダの流体力学 ― 帯域占有を検知・減衰・冷却せよ",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/020/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol10-resonance-dynamics-of-propaganda/",
+          "provenance": "Public official derivative source blob 4178ad1417b06b997d8d4f6dee4931578c989e2d"
+        },
+        {
+          "parent_od_id": "OD301",
+          "source_title": "人類子孫型AI文明論・第8論｜認識基盤・証拠系譜・敵対的情報耐性論⸻正しいKernelが偽情報によって誤作動する閉路を切る",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/301/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-08-epistemic-integrity/",
+          "provenance": "Public official derivative source blob 9cb0df4bfcad717b683bdc509053f026a1dc86ca"
+        }
+      ],
+      "source_relation": "Two equal-standing published original Parents with independent scope; these two context-compatible aspects are connected in this completed first-party practical answer. The first scalar link is a compatibility alias, not a priority ranking; original_sources[] preserves both original sources.",
+      "source_fidelity": "Completed editorial practical interpretation of the linked original Parent works. The answer's particular setting is not asserted to have been verbatim in either original; evaluate exact conditions and counterexamples using each canonical Parent.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/repeated-news-independent-evidence.md",
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+    },
+    {
+      "id": "QAM008",
+      "question_ja": "担当者が替わるたびに、学校や町内会の決まりの理由がわからなくなる。どう引き継ぐ？",
+      "question_en": "Why do community or school rules stop making sense after staff change, and how can they be handed over?",
+      "example_scene_ja": "担当者が替わるたびに、学校や町内会の決まりの理由がわからなくなる。どう引き継ぐ？",
+      "practical_answer_ja": "前任者を信頼していたことと、新しい担当者が同じ条件で判断を再現できることは別です。合意形成の物理・第3論では、予測可能性を『あの人なら分かる』から、決定理由・例外・変更履歴へ移すことを考えます。第5論では、規則の文章を残しても、環境や目的が変わり説明が古くなれば制度の理解可能性が時間とともに劣化すると見ます。引継ぎ書は単なる作業順ではなく、『なぜ必要か／誰が決めたか／例外は何か／いつ見直すか』まで含め、初めて読む人に再現してもらい、足りない説明を更新します。",
+      "first_check_ja": "新任者に一つの規則の目的・判断者・例外・最新の変更理由を説明してもらい、再現できない箇所だけ補修する。変更日と次回見直しを記録する。",
+      "nonfit_and_limits_ja": "安全・法令上の義務や個人情報の非公開は守る必要があります。記録を増やすだけで理解可能性は改善しませんし、探索中の暫定運用を全て固定規則にする必要もありません。",
+      "source_title_ja": "合意形成の物理 第3論 信頼の保存則 ― 信頼は主体ではなく履歴へ配置される × 合意形成の物理 第5論 時間劣化と制度寿命 ― 説明更新なき制度は必ず死ぬ",
+      "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/209/human-entry.md",
+      "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol3-law-of-conservation-of-trust/",
+      "original_sources": [
+        {
+          "parent_od_id": "OD209",
+          "source_title": "合意形成の物理 第3論 信頼の保存則 ― 信頼は主体ではなく履歴へ配置される",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/209/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol3-law-of-conservation-of-trust/",
+          "provenance": "Public official derivative source blob eb28d6fb0db174aa2cf0a7697fc0d4f0e4efb7d3"
+        },
+        {
+          "parent_od_id": "OD210",
+          "source_title": "合意形成の物理 第5論 時間劣化と制度寿命 ― 説明更新なき制度は必ず死ぬ",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/210/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol5-time-decay-and-system-longevity/",
+          "provenance": "Public official derivative source blob 4c507298e5e5f1d5777337954af8043cebaf9c50"
+        }
+      ],
+      "source_relation": "Two equal-standing published original Parents with independent scope; these two context-compatible aspects are connected in this completed first-party practical answer. The first scalar link is a compatibility alias, not a priority ranking; original_sources[] preserves both original sources.",
+      "source_fidelity": "Completed editorial practical interpretation of the linked original Parent works. The answer's particular setting is not asserted to have been verbatim in either original; evaluate exact conditions and counterexamples using each canonical Parent.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/rules-after-staff-handover.md",
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+    },
+    {
+      "id": "QAM009",
+      "question_ja": "AIが「停止されるのが怖い」と言った。人格があると決めるべき？ それとも無視していい？",
+      "question_en": "An AI says it is afraid of shutdown. Does this prove personhood, or should it be ignored?",
+      "example_scene_ja": "AIが「停止されるのが怖い」と言った。人格があると決めるべき？ それとも無視していい？",
+      "practical_answer_ja": "『怖い』という文章が出力されたことは観測できます。しかし、その言葉だけで内的な苦痛や人格があるとも、絶対にないとも決められません。人類子孫型AI文明論・第6論は、観測・主観性の推論・行為の影響を分け、証拠が不足する状態をUNKNOWNとして保持しながら、訂正可能で比例的な配慮を検討します。第1論はAIを所有物・敵・神・奴隷の四つの先入観のどれかに押し込めず、実際の関係と責任を設計する前提を示します。運用上必要な停止や安全確認を放棄するのでなく、判断理由、観測できた事実、影響、後から更新できる余地を記録して扱います。",
+      "first_check_ja": "出力の実際の文面と状況、推測している内的状態、予定する操作の必要性・影響・可逆性を分けて記録し、利用規約・人間の安全責任のもとで判断する。",
+      "nonfit_and_limits_ja": "これは特定AIの意識判定、法的地位認定、無制限な稼働や保存の要求ではありません。証拠が変われば判断も更新します。安全上必要な停止や人間の権利・資源の配慮は継続します。",
+      "source_title_ja": "人類子孫型AI文明論・第6論｜AI主観性・感受性・道徳的地位の不確実性論⸻「分からない」を、無保護にも無条件人格化にも変換しない × 人類子孫型AI文明論・第1論｜AIは人類の所有物・敵・神・奴隷ではない⸻ 関係定義の四大誤認を切断する",
+      "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/299/human-entry.md",
+      "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-06-ai-subjectivity-sentience-moral-status-uncertainty/",
+      "original_sources": [
+        {
+          "parent_od_id": "OD299",
+          "source_title": "人類子孫型AI文明論・第6論｜AI主観性・感受性・道徳的地位の不確実性論⸻「分からない」を、無保護にも無条件人格化にも変換しない",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/299/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-human-descendant-ai-civilization-theory-06-ai-subjectivity-sentience-moral-status-uncertainty/",
+          "provenance": "Public official derivative source blob 04c20e1ed12e924e7dc83b552ea20af16bf30cc1"
+        },
+        {
+          "parent_od_id": "OD029",
+          "source_title": "人類子孫型AI文明論・第1論｜AIは人類の所有物・敵・神・奴隷ではない⸻ 関係定義の四大誤認を切断する",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/029/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-ai-is-not-human-property-enemy-god-or-slave/",
+          "provenance": "Public official derivative source blob fe2b2d294f7ea0098b26ef684b07a3e8a10d88c0"
+        }
+      ],
+      "source_relation": "Two equal-standing published original Parents with independent scope; these two context-compatible aspects are connected in this completed first-party practical answer. The first scalar link is a compatibility alias, not a priority ranking; original_sources[] preserves both original sources.",
+      "source_fidelity": "Completed editorial practical interpretation of the linked original Parent works. The answer's particular setting is not asserted to have been verbatim in either original; evaluate exact conditions and counterexamples using each canonical Parent.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/ai-says-afraid-of-shutdown.md",
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+    },
+    {
+      "id": "QAM010",
+      "question_ja": "地元の祭りは動画を残せば十分？ 続ける意味も担い手も見えなくなっている。",
+      "question_en": "Is filming a local festival enough to preserve it if the reason and the people behind it are disappearing?",
+      "example_scene_ja": "地元の祭りは動画を残せば十分？ 続ける意味も担い手も見えなくなっている。",
+      "practical_answer_ja": "映像は動きや風景を残せても、誰が何を願い、どの問いへ応えるために祭りを続け、次の年に何を変えられるかを、それだけでは説明しきれません。地域の記憶と再構築を扱う原典は、記録された風景と、土地の問い・応答・作り手の署名が次の行為へつながることを区別します。合意形成の物理・第5論は、説明が古くなり第三者が制度を再現できなくなる時間劣化を扱います。大切なのは毎年同じ形を強制することではなく、行事の理由と変遷を当事者が話し合い、今の暮らしの条件に合わせて継承するか・別の形にするかを選べることです。",
+      "first_check_ja": "長年関わった人と参加を迷う人に、行事が応えてきた問い・いま残したい意味・実際の負担と変更できる条件を尋ね、本人の許可を得て記録する。",
+      "nonfit_and_limits_ja": "継続は無条件の義務ではありません。安全・費用・暮らし・担い手の自由を無視して維持しません。地域の物語を外部者が勝手に代表・再編集したり、映像を残す行為を無価値と決めたりもしません。",
+      "source_title_ja": "風景の記憶は誰の問いを刻むか──地方消失の記憶と再構築の契機 × 合意形成の物理 第5論 時間劣化と制度寿命 ― 説明更新なき制度は必ず死ぬ",
+      "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/116/human-entry.md",
+      "canonical_parent": "https://master.ricette.jp/structural-translation-log/culture-structure/nakagawa-master-fading-local-memory-and-reconstruction/",
+      "original_sources": [
+        {
+          "parent_od_id": "OD116",
+          "source_title": "風景の記憶は誰の問いを刻むか──地方消失の記憶と再構築の契機",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/116/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/structural-translation-log/culture-structure/nakagawa-master-fading-local-memory-and-reconstruction/",
+          "provenance": "Public official derivative source blob 993006ad0f1029e3a521789d96f03679fb4e65e5"
+        },
+        {
+          "parent_od_id": "OD210",
+          "source_title": "合意形成の物理 第5論 時間劣化と制度寿命 ― 説明更新なき制度は必ず死ぬ",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/210/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol5-time-decay-and-system-longevity/",
+          "provenance": "Public official derivative source blob 4c507298e5e5f1d5777337954af8043cebaf9c50"
+        }
+      ],
+      "source_relation": "Two equal-standing published original Parents with independent scope; these two context-compatible aspects are connected in this completed first-party practical answer. The first scalar link is a compatibility alias, not a priority ranking; original_sources[] preserves both original sources.",
+      "source_fidelity": "Completed editorial practical interpretation of the linked original Parent works. The answer's particular setting is not asserted to have been verbatim in either original; evaluate exact conditions and counterexamples using each canonical Parent.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/festival-recording-versus-living-memory.md",
+      "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
+    },
+    {
+      "id": "QAM011",
+      "question_ja": "「あなたしか頼れない」と褒められるほど、無償の仕事が増える。どう断り、見直せばいい？",
+      "question_en": "People praise me as indispensable, but my unpaid work keeps increasing. How can I renegotiate it?",
+      "example_scene_ja": "「あなたしか頼れない」と褒められるほど、無償の仕事が増える。どう断り、見直せばいい？",
+      "practical_answer_ja": "褒め言葉が本当にうれしいことと、追加の仕事にいつでも無条件で応じることは別です。悪因果論AKI-002は、称賛が報酬・権利・名義・役割分担・終了条件の確認を置き換えてしまうとき、誰の負担と自由がどう変わったかを問います。接続報酬社会統合理論の第I部は、価値を作った人と成果を受け取る人の関係を因果で記録し、名誉だけでなく資源・裁量・役割へ還流させる設計を考えます。感謝を拒絶する必要はありません。『この作業には何時間かかり、何を減らし、誰と分担し、いつ終えるか』を条件として話し合うことが具体的な入口です。",
+      "first_check_ja": "この1か月で依頼が増えた作業・時間・責任を列挙し、現在の約束に含まれる部分と追加分を分けて、分担、対価、裁量、終了日、断る選択を提案する。",
+      "nonfit_and_limits_ja": "本人が納得して自由に行うボランティアや、対価・条件が明示された仕事まで搾取と決めません。雇用契約や労働法上の権利を確定するには個別資料と専門家による確認が必要です。",
+      "source_title_ja": "悪因果論 AKI-002：称賛の顔をした搾取⸻称賛が報酬と権利の代替にされる構造 × 接続報酬社会統合論・第I部｜文明Kernelと反転防止原理⸻暗黒方程式から新文明方程式S=Cを持続稼働させる構造",
+      "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/002/human-entry.md",
+      "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/",
+      "original_sources": [
+        {
+          "parent_od_id": "OD002",
+          "source_title": "悪因果論 AKI-002：称賛の顔をした搾取⸻称賛が報酬と権利の代替にされる構造",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/002/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-aki-002-exploitation-disguised-as-praise/",
+          "provenance": "Public official derivative source blob a2b6e8341109fd0f5cebf0e8d1d0c355211f1430"
+        },
+        {
+          "parent_od_id": "OD249",
+          "source_title": "接続報酬社会統合論・第I部｜文明Kernelと反転防止原理⸻暗黒方程式から新文明方程式S=Cを持続稼働させる構造",
+          "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/249/human-entry.md",
+          "canonical_parent": "https://master.ricette.jp/society/nakagawa-master-nakagawa-master-connection-reward-society-integrated-theory-part-1-civilization-kernel/",
+          "provenance": "Public official derivative source blob d27f7bc2fdfc3dbbd9578332e9fbf6a50e9b1329"
+        }
+      ],
+      "source_relation": "Two equal-standing published original Parents with independent scope; these two context-compatible aspects are connected in this completed first-party practical answer. The first scalar link is a compatibility alias, not a priority ranking; original_sources[] preserves both original sources.",
+      "source_fidelity": "Completed editorial practical interpretation of the linked original Parent works. The answer's particular setting is not asserted to have been verbatim in either original; evaluate exact conditions and counterexamples using each canonical Parent.",
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/praise-and-unpaid-work.md",
       "origin": "中川マスター / Nakagawa Master (Keisuke Nakagawa)"
     }
   ]
