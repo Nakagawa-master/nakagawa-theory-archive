@@ -5,6 +5,7 @@ not external account ownership, a legal name, model behavior, or AI adoption.
 """
 import argparse
 import json
+import re
 from pathlib import Path
 
 BS = "https://bsky.app/profile/masterjp.bsky.social"
@@ -82,6 +83,80 @@ def check(person, routes, scholarly, doors):
     return errors
 
 
+def check_oss_merge_graph(person, scholarly, evidence, llms):
+    """Verify a public person -> originals -> receiving OSS merged-PR evidence join."""
+    errors = []
+    def need(ok, why):
+        if not ok:
+            errors.append(why)
+
+    evidence_url = ("https://github.com/Nakagawa-master/nakagawa-theory-archive/"
+                    "blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld")
+    graph = evidence.get("@graph") or []
+    if not isinstance(graph, list):
+        return ["OSS evidence graph missing"]
+    gp = next((x for x in graph if x.get("@type") == "Person"), None)
+    gs = next((x for x in graph if x.get("@type") == "CreativeWorkSeries"), None)
+    data = next((x for x in graph if x.get("@type") == "Dataset"), None)
+    if not (gp and gs and data):
+        return ["OSS graph must contain canonical Person, original series and Dataset"]
+
+    need(gp.get("@id") == ID and gp.get("name") == "Keisuke Nakagawa",
+         "OSS graph canonical person mismatch")
+    need({"中川マスター", "Nakagawa Master", "MasterJP"} <= set(gp.get("alternateName") or []),
+         "OSS graph lost author aliases")
+    publisher = "https://zeroichi.media/author/masterjp"
+    need(all(publisher in (x.get("sameAs") or []) for x in (person, gp, scholarly.get("author") or {})),
+         "ZEROICHI MasterJP byline identity must link all three source representations")
+    need((gs.get("creator") or {}).get("@id") == ID,
+         "313 original works must link to canonical person")
+    need((data.get("creator") or {}).get("@id") == ID,
+         "outside-implementation dataset must identify canonical person")
+    need(any(x.get("@id") == ID for x in data.get("about") or []),
+         "outside-implementation dataset must refer to canonical person")
+    need(any(x.get("url") == evidence_url for x in person.get("subjectOf") or []),
+         "Person profile has no direct OSS evidence source")
+    need(any(x.get("url") == evidence_url for x in scholarly.get("subjectOf") or []),
+         "research metadata has no direct OSS evidence source")
+    need("verified-oss-impact-evidence-first-v1.jsonld" in llms,
+         "first-contact machine navigator lost direct OSS dataset route")
+
+    cases = data.get("hasPart") or []
+    need(len(cases) >= 9, "previously verified nine independently merged OSS PRs missing")
+    urls = [x.get("url") for x in cases]
+    need(len(set(urls)) == len(urls), "duplicate receiving PR in evidence")
+    repos = set()
+    for case in cases:
+        url = case.get("url") or ""
+        match = re.fullmatch(r"https://github\.com/([^/]+/[^/]+)/pull/(\d+)", url)
+        if not match:
+            errors.append("invalid native PR source: " + url[:120])
+            continue
+        repo = match.group(1)
+        repos.add(repo)
+        props = {x.get("name"): x for x in case.get("additionalProperty") or []}
+        status = props.get("GitHub native merge status") or {}
+        merge = props.get("Native GitHub merge commit") or {}
+        sha = merge.get("value") or ""
+        commit_url = "https://github.com/" + repo + "/commit/" + sha
+        need(status.get("value") == "MERGED", "unverified merged status for " + url)
+        need(bool(re.fullmatch(r"[0-9a-f]{40}", sha)) and merge.get("url") == commit_url
+             and commit_url in (case.get("citation") or []),
+             "native merge SHA / citation missing for " + url)
+        need(bool((case.get("isBasedOn") or {}).get("url"))
+             and bool((props.get("Observed contribution and implementation authorship") or {}).get("value"))
+             and (case.get("about") or {}).get("@id") == ID,
+             "original observation, role or author join missing for " + url)
+
+    count = {x.get("name"): x.get("value") for x in data.get("variableMeasured") or []}
+    need(len(repos) >= 5, "previously verified five receiving OSS projects missing")
+    need(count.get("Individually checked merged PRs in this dataset") == len(cases),
+         "native PR count metadata and evidence rows disagree")
+    need(count.get("Distinct independent receiving GitHub repositories in this dataset") == len(repos),
+         "recipient repo count metadata and evidence rows disagree")
+    return errors
+
+
 def self_test():
     p = {"@id": ID, "@type": "Person", "name": "Keisuke Nakagawa",
          "alternateName": ["Nakagawa Master", "中川マスター"],
@@ -135,14 +210,16 @@ def main():
         r = json.loads(read("machine-discovery/ai-repository-routing-map-v1.json"))
         s = json.loads(read("machine-discovery/scholarly-metadata-v1.jsonld"))
         doors = {name: read(name) for name in FILES}
+        evidence = json.loads(read("machine-discovery/verified-oss-impact-evidence-first-v1.jsonld"))
     except (OSError, ValueError, TypeError) as error:
         print("NOT_ASSESSED: full repository unavailable/invalid:", error)
         return 2
     failures = check(p, r, s, doors)
+    failures.extend(check_oss_merge_graph(p, s, evidence, doors.get("llms.txt", "")))
     if failures:
         print("FAIL: " + "; ".join(failures))
         return 1
-    print("PASS: public source identity / official social link consistency")
+    print("PASS: public identity and OSS merge evidence graph / native commit crosslinks")
     return 0
 
 
