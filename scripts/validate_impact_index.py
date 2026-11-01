@@ -16,12 +16,12 @@ CASE_HEADING = re.compile(r"^## ([1-9][0-9]*)[.] ", re.MULTILINE)
 
 PAGES = {
     "REAL_WORLD_IMPACT.md": (
-        "## このページから言えること／言えないこと",
+        "## 公開された成果と、原典へ戻る道筋",
         "## 自分で確認する方法",
         "## 関連する公開資料",
     ),
     "REAL_WORLD_IMPACT.en.md": (
-        "## What this page supports — and what it does not",
+        "## What the public source record reveals",
         "## How to verify a case yourself",
         "## Related public material",
     ),
