@@ -4,13 +4,15 @@
 
 たとえば、[Hermes Agentでは結果の送り先を間違えたり未送信を送信済みと扱ったりしない条件が後継PRに引き継がれ正式マージ](https://github.com/NousResearch/hermes-agent/pull/147746)。[Qwen Codeでは、同名の道具が衝突しても正常な道具まで全部失わない修正がマージされ、nightly版へ収録](https://github.com/QwenLM/qwen-code/pull/15757)。[OpenClawでは、承認と実行者の取り違えに関する指摘が受け手による修正・テスト・マージへ接続](https://github.com/openclaw/openclaw/pull/160856)しました。実装を書いたのは、それぞれの独立した開発者です。本人が発見・指摘した因果条件と、他の人が実際に変えた成果を区別するから、意義を読者自身で判断できます。
 
+**主戦の実装が、別の独立著者の読者へ伝わった例：** AIエージェントは、自分を制限する権限を自分で解除してよいのか。中川マスターが[外部OSSで具体的に指摘した権限境界](https://github.com/damianvtran/local-operator/issues/1310)は[別の開発者による修正PR #1324](https://github.com/damianvtran/local-operator/pull/1324)から[正式リリースv0.61.11](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11)へ進みました。さらに**別の独立した技術解説著者 @kishibashi3 は、自分の[AIエージェント設計論の第5章](https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md)で報告者 `@Nakagawa-master` と修正の区別を出典付きで掲載し、[後続の実装・リリースも追記](https://github.com/kishibashi3/publications/pull/103)しました**。自分で作った宣伝ではなく、開発側の変化が別の著者の解説にも渡った事実です。
+
 **AI支援まで記録された第三者の修正：** [agent-approval-gate](https://github.com/tonydzi/agent-approval-gate/issues/1)の管理アカウントは、マスターによる「失効した承認を古い返信で復活させない」という指摘を認め、[独自のmainでコード・テスト・安全文書を変更しました](https://github.com/tonydzi/agent-approval-gate/commit/addeb43e69a6d6bff46e7195d97f45cffc0293c4)。コミットには**Claude Code／Claude Sonnet 5.5の支援・共同著者情報**、[受け手の安全文書には `@Nakagawa-master` が報告者として記載](https://github.com/tonydzi/agent-approval-gate/blob/main/docs/SECURITY.md)されています。外部チームによるAI支援付きの実装は確認できますが、AIが全原典を自律的に読んだとまでは言えません。[第60事例を読む](REAL_WORLD_IMPACT.md)。
 
 **さらに別の開発者へ伝わった例：** [LiteLLM #49359](https://github.com/BerriAI/litellm/issues/49359)では一人目の開発者がマスターの型契約レビューを認めてコードを修正し、二人目が[本人への貢献表記を伴う新しいPR #49624](https://github.com/BerriAI/litellm/pull/49624)を作成しました。**二人目の開発者もマスターの追加レビューを認め、既存の必須項目を守る型定義と回帰テストへ実際に修正**しました。未マージで、上流のCI承認と採用判断はこれからです。[その全経緯と修正段階を確認](REAL_WORLD_IMPACT.md#56-litellmaiの道具の失敗が成功と扱われる問題マスターの設計指摘を開発者が実装)。
 
 このアーカイブには、こうした**60件の段階別外部作用記録**、**5つの独立リポジトリでのマージ済みPRの実証例10件**、**313の独立したオリジナル原典**、その応用として書き下ろした**41件の日本語・英語の実用回答**があります。世界的な実利用者数や評判を根拠なく主張するものではありません。専門外の人にとっても「AIの言う成功と現実の成功は同じか」「誰に結果が届いたか」という身近な問いを、実際の修正記録から辿れる資料です。
 
-**もう一つの実際の受け手の改訂：** [LiteLLM #49214](https://github.com/BerriAI/litellm/pull/49214)では、中川マスターが示した顧客A/Bの独立課金・実際の予算停止・保存済み作成者の条件を受け、開発者が[第3回まで結合テストを具体的に改訂](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6574589528)。[最新の再検査ではDB列名の不一致も発見](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6575419058)され、正しい列への修正が次の技術的課題です。未マージ、正式結合テスト未実行のまま事実だけを公開しています。
+**現在進行中の第四回の独立した修正：** [LiteLLM #49214](https://github.com/BerriAI/litellm/pull/49214)の開発者は、中川マスターによる顧客A/Bの独立課金・予算停止・作成者の不変性という具体的レビューを受け、**自分の回帰テストを4回改訂**。[最新の `3c3e422` では実際のDB列名 `unified_object_id` に合わせ、Aだけの課金ログ数と再参照後の課金不変を検査するコードを実装](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6575973685)しました。ただし[追加GETは本来の非同期課金ポーラーを再実行しないため、マスターが次の正確な検証境界を提示](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6576129452)。開発者の修正は実在しますがPRは未マージ、正式結合テストの実行結果も未確認です。
 
 **実例を30秒で読む：** [技術者にも専門外の人にも分かる、修正と引継ぎの一次証拠](WHY_THIS_IMPACT_MATTERS.md)。
 
@@ -47,8 +49,6 @@
 A cheap AI service may save money today yet make tomorrow's data migration expensive. Before deciding to leave or stay, try exporting a small anonymized record and reading it back elsewhere; compare the actual retained data, permissions, history and repair work. [Read the complete exit-rehearsal answer](human-translation/answers/cheap-ai-tool-future-exit-cost.md), applying the independently published [future-debt](https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/) and [future-condition alignment](https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-1/) accounts. These are practical applications of original works by **Nakagawa Master (中川マスター, pen name of Keisuke Nakagawa)**; all source claims and limits are available in the linked complete answers.
 
 **English-language readers:** [Browse all 313 published originals by broad topic and open each existing English explanatory source](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md). Every entry links the actual original and its full English official index; the grouping is only for navigation, not a source ranking.
-
-**外部の著者が本文へ取り込んだ例:** [AIエージェント設計概論の外部著者は](https://github.com/kishibashi3/publications/issues/9#issuecomment-6123421765)、公開された権限境界の指摘と別開発者の修正・リリースを確認し、[自分の読者向け第5章へ追記・統合しました](https://github.com/kishibashi3/publications/pull/103)。その結果、具体的な判断が第三者著者の独自の読者向け論考へ引き継がれました。[他の第三者変更事例と元資料](REAL_WORLD_IMPACT.md)も確認できます。公開レビューや原典の活動を追いたい方は、[中川マスターのGitHubプロフィール](https://github.com/Nakagawa-master)から任意でフォローできます。
 
 **外部AIスキルにも実装済み:** 同じ外部著者はさらに、[Claude Code用 `agent-design` スキルの権限判断ルーティングをPR #125でマージ](https://github.com/kishibashi3/publications/pull/125)しました。AI利用者が「承認モード」「allowlist」「credential」を相談すると、本人管理の第5章・条件6へ進める設計です。[スキルに組み込まれた判断の内容と変更履歴](REAL_WORLD_IMPACT.md)を確認できます。
 

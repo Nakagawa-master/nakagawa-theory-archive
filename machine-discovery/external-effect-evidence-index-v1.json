@@ -4295,7 +4295,7 @@
       ]
     },
     {
-      "case_id": "litellm-49202-49214-async-batch-end-user-budget-3-independent-test-revisions",
+      "case_id": "litellm-49202-49214-async-batch-end-user-budget-4-independent-test-revisions",
       "topic": "Async AI batch cost logs omitted end_user attribution and could bypass a customer's budget; independently authored actual regression tests progressed through three review rounds.",
       "external_repository": "BerriAI/litellm",
       "issue": "https://github.com/BerriAI/litellm/issues/49202",
@@ -4309,23 +4309,24 @@
       },
       "receiving_developer": {
         "actor": "SurenderguliaEnginner",
-        "pr_head_sha": "813a197bb6537f4077ef39ccecebb0103c7460de",
+        "pr_head_sha": "3c3e422f11cfe6bad712286596c17367f8161ed5",
         "revision1": "https://github.com/BerriAI/litellm/pull/49214#issuecomment-6571436021",
         "revision2": "https://github.com/BerriAI/litellm/pull/49214#issuecomment-6573816836",
         "revision3": "https://github.com/BerriAI/litellm/pull/49214#issuecomment-6574589528",
-        "concrete_code": "End-to-end harness creates/settles A and B batches under same API key, checks A budget denial, B independent spend and non-denial, and separately compares creator end_user_id before/after alternate-key GET. Three independently authored source changes following Master's review are inspectable, not just replies."
+        "concrete_code": "FOUR actual outside-author revisions: A budget enforcement, independently settled same-key B batch, creator before/after alternate-key GET, corrected schema unified_object_id, A-scoped exactly-one spend log and unchanged spend following a second GET. New second GET is not a direct second CheckBatchCost polling invocation.",
+        "revision4": "https://github.com/BerriAI/litellm/pull/49214#issuecomment-6575973685"
       },
       "latest_source_specific_review": {
         "actor": "Nakagawa Master",
-        "url": "https://github.com/BerriAI/litellm/pull/49214#issuecomment-6575419058",
-        "unresolved": "In exact current test, creator before/after SQL WHERE object_id=%s references nonexistent Prisma column: actual column unified_object_id; a_spend_logs len>=1 across same key A/B is not an exactly-once A batch assertion; no explicit second settled A CheckBatchCost re-poll. Fix without unrelated refactor before consuming maintainer CI."
+        "url": "https://github.com/BerriAI/litellm/pull/49214#issuecomment-6576129452",
+        "unresolved": "After fourth independent developer revision, no outstanding nonexistent SQL column. Current source's second GET of a completed batch exits early from retrieve_batch; it does not trigger CheckBatchCost.check_batch_cost()/_poll_batches() on that finished batch. Evidence for two actual accounting worker cycles must come from a separate fixture/test or accurately call current test observation idempotency. Native integration CI remains action_required."
       },
       "native_checks": {
-        "latest_head": "813a197bb6537f4077ef39ccecebb0103c7460de",
+        "latest_head": "3c3e422f11cfe6bad712286596c17367f8161ed5",
         "upstream_workflows": "action_required; no authorized integration test execution on current head",
         "security_review": "Veria AI SUCCESS: no security issues found; NOT proof budget code or integration tests passed."
       },
-      "current_stage": "outside_developer_three_sequential_source_test_revisions_C2__OPEN_UNMERGED__NATIVE_INTEGRATION_UNEXECUTED",
+      "current_stage": "outside_developer_FOUR_sequential_code_test_revisions_C2__OPEN_UNMERGED__NATIVE_INTEGRATION_UNEXECUTED__ACTUAL_WORKER_REPOLL_UNPROVEN",
       "human_first_contact": "WHY_THIS_IMPACT_MATTERS.md",
       "not_claimed": [
         "budget bypass fixed for actual customer",
@@ -4336,7 +4337,7 @@
         "broad person-origin uptake",
         "independent model understanding or endorsement of original corpus"
       ],
-      "next_native_receiver": "External test author fixes schema key, scopes A settlement row and actively exercises once-only poll, then a permitted maintainer approves relevant integration test and reviews; separately voluntary independent reader/editor chooses to relay the genuine person+case."
+      "next_native_receiver": "Outside developer chooses actual second CheckBatchCost cycle evidence or scopes claim to post-settlement GET observation; authorized maintainer targeted integration run/review; independent editor/public/AI can freely source-link real PERSON and specific demonstrated result."
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
