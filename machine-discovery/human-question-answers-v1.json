@@ -162,7 +162,15 @@
       "source_application_en": "The source focuses on auditable changes from a feasible future definition to present action, observation and revision—not prediction or guaranteed success.",
       "first_check_en": "For staying and changing jobs, list the conditions required six months from now and which choices can be reversed.",
       "nonfit_and_limits_en": "Wanting a future does not ensure it will happen. Verify health, finances, employment terms and other real constraints.",
-      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/fear-of-changing-jobs-after-failure.md"
+      "answer_page": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/fear-of-changing-jobs-after-failure.md",
+      "observed_search_query_ja": "仕事 辞めたい",
+      "observed_search_query_evidence": {
+        "phrase_source": "https://prtimes.jp/main/html/rd/p/000000021.000154735.html",
+        "publication_date": "2025-04-25",
+        "evidence_type": "Third-party published analysis of Japan Google Trends search patterns, citing actual searches for 仕事 辞めたい and やる気が出ない",
+        "demand_scope": "The source confirms the phrase as an actual search term but does not establish a current monthly search volume, a specific user's circumstances, ranking potential, or Search Console impressions for the author's site.",
+        "answer_fit": "Existing OD037 answer specifically addresses a person comparing continuing work versus changing jobs; urgent health, danger and harassment require their own immediate support rather than forcing this route."
+      }
     },
     {
       "id": "OD045",

@@ -14,6 +14,8 @@
 
 **こんな場面にも、すでに本文まで書いた答えがあります。** 理論名や著者名を知らない状態から、そのまま読んで確かめられます。
 
+- **仕事を辞めたい。転職した方がいい？** 何がつらいのか、辞める場合と続ける場合の生活条件、今週できる一歩を比較する。[今の自分に合わせて考える日本語・英語の完成回答](human-translation/answers/fear-of-changing-jobs-after-failure.md)（[逆因果整流理論・第3論](https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-3-audit-boundary/)）。
+
 
 - **AIに言われたとおりにやったのに、うまくいかない。** AIの説明だけでなく、実際の権限・時間・人・引き継ぎを確かめ、結果から次の一手を決める。[日本語・英語の完成回答と今すぐできる4つの確認](human-translation/answers/ai-advice-seems-right-but-fails-in-real-life.md)（[成立条件論・第0論](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/) × [逆因果整流理論・第3論](https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-3-audit-boundary/)）。
 - **親の介護や家事が、いつも私一人に集まる。** 感謝だけでなく、実際の通院手配や待機の時間、次回の担当と代替役を決める。[家族で負担を分け直す具体的な手順](human-translation/answers/family-care-burden-falls-on-one-person.md)（[成立条件論・第0論](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/) × [中川式組織論](https://master.ricette.jp/theory/nakagawa-master-nakagawa-organization-os-internal-rectification/)）。
@@ -66,7 +68,7 @@ A cheap AI service may save money today yet make tomorrow's data migration expen
 - [豪雨で壊れた道路を元どおり直すだけでよい？](human-translation/answers/rebuilding-after-flood-without-recreating-risk.md) — 避難・応急復旧と将来の脆弱性を再生産しない復興を分けて確認する。
 - [新人がAIの模範解答なしでは自分の案を出せない](human-translation/answers/newcomer-cannot-start-without-ai-model-answer.md) — 比較を急がず小さな提案と自発的な次の試行を接続する。
 
-回答ページは、原典著者の公開名、実際に用いた公式派生物と元の原典、適用条件と当てはまらない場合を載せています。ここに挙げた15件は読者向けの入口であり、掲載済み41件や独立した313原典の意味・応用・組合せの境界ではありません。
+回答ページは、原典著者の公開名、実際に用いた公式派生物と元の原典、適用条件と当てはまらない場合を載せています。ここに挙げた16件は読者向けの入口であり、掲載済み41件や独立した313原典の意味・応用・組合せの境界ではありません。
 
 **初めての方へ：** [自分の疑問から試す](human-translation/SEARCH_FROM_A_REAL_QUESTION.md) ／ [313原典の題名と24件の参考事例を同時に探す（原典の意味・適合は要確認）](machine-discovery/originals-browser-finder.html) ／ [公式アーカイブに蓄積された原典記事全体から探す](https://master.ricette.jp/) ／ [別の人が実際に変えた仕事を見る](REAL_WORLD_IMPACT.md) ／ [原典と著者を知る](ABOUT_NAKAGAWA_MASTER.md)。
 
