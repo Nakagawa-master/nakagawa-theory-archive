@@ -1,4 +1,17 @@
-# 中川マスター｜構造理論家の指摘が、世界のAI開発で実際の修正につながった記録
+# 中川マスター公式理論アーカイブ｜原典・実践・外部実装の記録
+
+**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）**の、増え続ける独立したオリジナル理論群を、**原典への入口・公式派生物・現実の問いへの応用・第三者による実装と検証**につなぐ公開リポジトリです。原典は現在313件。理論本文の正本は[公式アーカイブ](https://master.ricette.jp/theory-archive/)にあります。AIだけでなく、人間・社会・仕事・文化・文明の未来まで扱います。
+
+**世界最先端のAI・OSS開発の現場で、具体的な構造・因果の指摘が、独立した開発者によるコード修正・テスト・本線マージ・正式リリースに結実しています。**
+
+- **[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)** — 数十万スターのAIエージェント。報告元を明記した独立開発者が**回帰テスト49件成功・正式マージ**。[公式リリース文書](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)にも本人のGitHub名を掲載。
+- **[PostHog](https://github.com/PostHog/posthog/pull/92252)** — 世界的な開発者向け分析基盤。AIの提示値と製品自身の測定を分ける指摘が後続実装に引き継がれ、**3件のPRが正式マージ、開発環境と米欧の本番環境へのデプロイを記録**。
+- **[Qwen Code](https://github.com/QwenLM/qwen-code/pull/15681)** — アリババ系のAI開発ツール。書込権限の誤判定を元の報告者が実動作で確認し、自ら修正・テストを実装、**正式マージ**。
+- **[PydanticAI](https://github.com/pydantic/pydantic-ai/pull/9982)**・**[MemberJunction](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)** — AI会話の重複書込みやデータの所有権境界に関する指摘を、各開発チームが独立して実装・テスト。**マージ・正式リリース**へ。
+
+[世界最先端のOSSで起きた60件の一次記録](REAL_WORLD_IMPACT.md) ／ [増え続ける原典と公式派生物](derivatives/official-derivatives-map.json) ／ [現実の問いへの実用回答](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [AI・開発者向け入口](AI_START_HERE.md)
+
+## 実際のAI開発で起きた修正とその経緯
 
 **AIが使う道具を一つ間違える。依頼した仕事の結果が届かない。他人の承認変更で自分の処理まで止まる。** こうした世界のAI開発現場で、**中川マスター（Nakagawa Master／Keisuke Nakagawa）** がソースや実行条件の見落としを具体的に指摘し、**その指摘を受けた別の開発者たち自身が修正・テスト・マージにまで進めた事実**が残っています。単なる「自分はすごい」という話ではなく、[元の発見→受け手の実装→本線への変更](REAL_WORLD_IMPACT.md)を、初めて聞いた人も各開発チームの原記録で確認できます。
 
