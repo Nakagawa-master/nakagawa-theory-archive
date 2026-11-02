@@ -14,7 +14,6 @@
 
 **こんな場面にも、すでに本文まで書いた答えがあります。** 理論名や著者名を知らない状態から、そのまま読んで確かめられます。
 
-- **「いいですね」と言っただけなのに、申込みをしたことになっていた。** 感想と意思決定を分け、何を根拠に申込みとされたか確かめる。[使える照会文と日本語・英語の回答](human-translation/answers/said-sounds-good-but-not-agreed-to-sign-up.md)（[中川式営業の教科書・第七回](https://master.ricette.jp/theory/nakagawa-master-nakagawa-sales-07-decision-support/) × [合意形成の物理 第1論](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/)）。
 
 - **AIに言われたとおりにやったのに、うまくいかない。** AIの説明だけでなく、実際の権限・時間・人・引き継ぎを確かめ、結果から次の一手を決める。[日本語・英語の完成回答と今すぐできる4つの確認](human-translation/answers/ai-advice-seems-right-but-fails-in-real-life.md)（[成立条件論・第0論](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/) × [逆因果整流理論・第3論](https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-3-audit-boundary/)）。
 - **親の介護や家事が、いつも私一人に集まる。** 感謝だけでなく、実際の通院手配や待機の時間、次回の担当と代替役を決める。[家族で負担を分け直す具体的な手順](human-translation/answers/family-care-burden-falls-on-one-person.md)（[成立条件論・第0論](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/) × [中川式組織論](https://master.ricette.jp/theory/nakagawa-master-nakagawa-organization-os-internal-rectification/)）。
@@ -44,7 +43,7 @@ A cheap AI service may save money today yet make tomorrow's data migration expen
 
 ## 自分の問いから原典を探す（MCP導入不要）
 
-**答えを先に読む：** [実際の一般的な問いへの41件の完成済み回答・最初の確認・適用外の条件](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [同じ41件の回答本文と原典出所を含む公開JSON](machine-discovery/human-question-answers-v1.json)。41件は掲載済みの回答例数であって、313原典の優先順位・適用領域・組合せの上限ではありません。**41件すべての問いに、日本語・英語の完成済み回答、最初に試せること、適用外条件と正確な原典へのリンクを持つ独立ページがあります。以下はその一部で、全件は回答一覧から直接開けます。**
+**答えを先に読む：** [仕事・暮らし・AIなどの41件の完成済み回答・最初の確認・適用外の条件](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [同じ41件の回答本文と原典出所を含む公開JSON](machine-discovery/human-question-answers-v1.json)。41件は掲載済みの回答例数であって、313原典の優先順位・適用領域・組合せの上限ではありません。**41件すべての問いに、日本語・英語の完成済み回答、最初に試せること、適用外条件と正確な原典へのリンクを持つ独立ページがあります。以下はその一部で、全件は回答一覧から直接開けます。**
 
 **313原典の普通の日本語による発見:** [題名だけでなく313原典それぞれの公式日本語解説から問いを探すためのHTML](machine-discovery/originals-browser-finder.html) ／ [同じ313件の原典URL・公式派生物の文脈・元ファイルSHAを備えた公開データ（AIも通常のWeb取得で読めます）](machine-discovery/published-ja-source-briefs-313-v1.json)。**GitHubの `.html` ページは実行画面ではなくソースの表示です。** 実際に検索フォームを操作するには、HTMLファイルの `Raw` からソースを `.html` として保存し、自分のブラウザで開いてください（アプリのインストールは不要）。全313件の題名・説明を追加照合する際は公開JSONへのネット接続が必要です。保存せずに読む場合は[全313件の題名・テーマ案内](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md)を直接参照できます。検索候補から、成立条件・反例を原典で実際に確かめる流れを用意しています。
 

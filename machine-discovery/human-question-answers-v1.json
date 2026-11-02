@@ -1107,9 +1107,9 @@
       "source_application_en": "OD045 offers customer-owned informed comparison instead of accumulating yeses; OD014 makes the decision meaning, who decided and history traceable. This is a new hypothetical practical application of both originals.",
       "first_check_en": "Preserve your messages and actions; ask what exactly was considered consent and what terms were shown.",
       "nonfit_and_limits_en": "An actual signature, enrollment click, payment or use also matters. Memory alone cannot settle legal validity. Seek suitable consumer/legal advice in disputes.",
-      "primary_audience": "ordinary_human_consumer_service_decision",
-      "ordinary_human_first_contact": true,
-      "question_scope_note": "Common consumer question; no specialist terminology, author name or supplied link required."
+      "primary_audience": "situational_customer_service_signup_clarification",
+      "ordinary_human_first_contact": false,
+      "question_scope_note": "A specific hypothetical service-enrollment discrepancy. This exact wording has no verified independent search-query or broad-audience frequency evidence; retain the answer as a situational reference rather than a featured general first-contact question."
     }
   ],
   "creator_person_id": "https://master.ricette.jp/#nakagawa-master",
