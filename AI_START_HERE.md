@@ -8,6 +8,7 @@ People ask real questions about family, school, choices, organizations, society 
 
 **Open an actual finished bilingual answer by a human-life question (no author or theory name needed in the question; all 41 have their own direct page):**
 - [仕事を辞めたい。転職した方がいい？／I want to quit my job. How should I decide?](human-translation/answers/fear-of-changing-jobs-after-failure.md) — An already finished Japanese/English answer: compare staying or leaving, health, household finances and one real next action, grounded in OD037.
+- [仕事でやる気が出ない。努力が成果につながらない／No motivation at work despite trying](human-translation/answers/working-harder-but-no-results.md) — OD008を用いた完成回答。休息・安全の問題と仕事の成立条件を分け、具体的な一週間の試し方まで示す。
 - [AIに言われたとおりにやったのにうまくいかない／I followed AI advice, but it failed in real life](human-translation/answers/ai-advice-seems-right-but-fails-in-real-life.md) — 実際の条件を確認し、許可された小さな一歩を試して結果を確かめる。日本語・英語の完成回答と二つの公式原典。
 - [家族の介護や家事を一人で背負う：実際の仕事と代替役を分けて決め直す](human-translation/answers/family-care-burden-falls-on-one-person.md) — 「ありがとう」だけで終わらせず本人の希望と実際の負担を見直す。
 - [「前に決めた」と言われたのに納得した記憶がない](human-translation/answers/family-decision-remembered-differently.md) — 過去の会話と現在の同意を分け、決定・未決・変更条件を双方が見直せるようにする。
