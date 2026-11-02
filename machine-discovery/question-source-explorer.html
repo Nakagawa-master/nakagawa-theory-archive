@@ -36,6 +36,7 @@ footer{margin-top:35px;padding-top:16px;border-top:1px solid #d0dce7}
 <p class="muted" id="status" role="status" aria-live="polite">問いは端末のブラウザ内で照合し、どこにも送信しません。公開された資料の読み込みにはネット接続が必要です。</p>
 </form>
 <div id="results" hidden>
+<section class="card"><button type="button" class="primary" id="copyAI">問いと出典をAIへコピー（自動送信なし）</button><p id="copyStatus" class="muted"></p><div id="copyArea"></div></section>
 <h2>公開済みの実用回答</h2><div id="answers"></div>
 <h2>全313原典からの関連候補</h2><div id="originals"></div>
 <button type="button" id="more" hidden>さらに候補を見る</button>
@@ -55,7 +56,7 @@ footer{margin-top:35px;padding-top:16px;border-top:1px solid #d0dce7}
 const ROOT="https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/";
 const $=id=>document.getElementById(id);
 const stops=new Set(["the","and","that","this","with","from","have","what","when","which","would","could","should","there","your","into","where","for","もの","こと","する","して","した","ない","いる","ある","から","ので","ため","この","その","です","ます"]);
-let db=null,listed=[],cursor=0;
+let db=null,listed=[],cursor=0,topAnswer=null,routeHits=[];
 function terms(input){
 const txt=String(input||"").normalize("NFKC").toLowerCase(),all=new Set();
 for(const w of txt.match(/[a-z][a-z0-9_-]{2,}/g)||[])if(!stops.has(w))all.add(w);
@@ -80,9 +81,9 @@ if(!Array.isArray(files[0].answer_cases)||!Array.isArray(files[1].entries)||file
 db={answers:files[0].answer_cases,originals:files[1].entries,routes:files[2].entries};return db;
 }
 function drawAnswers(q,lang){
-const target=$("answers");target.replaceChildren();if(lang==="zh"){empty("answers","完成回答41件は日本語・英語の本文です。中国語の補助経路と公式原典を以下で確認してください。");return;}const en=lang==="en";
+const target=$("answers");target.replaceChildren();topAnswer=null;if(lang==="zh"){empty("answers","完成回答41件は日本語・英語の本文です。中国語の補助経路と公式原典を以下で確認してください。");return;}const en=lang==="en";
 const rows=db.answers.map(a=>({a,n:5*overlap(q,a[en?"question_en":"question_ja"])+2*overlap(q,a[en?"practical_answer_en":"practical_answer_ja"])+overlap(q,a.question_ja)+overlap(q,a.question_en)})).filter(x=>x.n>0).sort((a,b)=>b.n-a.n);
-if(!rows.length){empty("answers","一致する完成回答はありません。原典候補も確認してください。");return;}
+if(!rows.length){empty("answers","一致する完成回答はありません。原典候補も確認してください。");return;}topAnswer=rows[0].a;
 for(const {a} of rows.slice(0,7)){
 const div=card(a[en?"question_en":"question_ja"]||a.question_ja);
 line(div,en?"Answer: ":"完成回答：",a[en?"practical_answer_en":"practical_answer_ja"]||a.practical_answer_ja);
@@ -110,13 +111,22 @@ if(!listed.length){empty("originals","313件の原典説明は日本語です。
 function drawRoutes(q){
 $("routes").replaceChildren();
 const rows=db.routes.map(a=>({a,n:overlap(q,[a.problem_cluster,...(a.problem_phrases||[]),...(a.problem_phrases_ja||[]),...(a.problem_phrases_zh||[])].join(" "))})).filter(x=>x.n>0).sort((a,b)=>b.n-a.n);
-if(!rows.length){empty("routes","補助経路に一致するものはありません。補助経路は313原典の上限ではありません。");return;}
+routeHits=rows.map(v=>v.a);if(!rows.length){empty("routes","補助経路に一致するものはありません。補助経路は313原典の上限ではありません。");return;}
 for(const {a} of rows.slice(0,4)){const v=card(a.problem_cluster);line(v,"",a.relevance_note);v.append(anchor(a.canonical_url,"対応する公式資料"));$("routes").append(v);}
 }
+$("copyAI").addEventListener("click",async()=>{
+const question=$("query").value.trim();if(!question||$("results").hidden)return;
+const sources=[...new Set([...listed.slice(0,5).map(v=>v.a.canonical_parent_url),...routeHits.slice(0,4).map(v=>v.canonical_url)])].filter(Boolean);
+const examples=topAnswer?"既刊回答の例（この問いと同一とは限りません）： "+(topAnswer.practical_answer_ja||topAnswer.practical_answer_en||"")+"\n"+topAnswer.answer_page:"対応する既刊回答がない場合は、原典を確認したうえで独立に答えを組み立ててください。";
+const message=["A question from a real reader / 読者自身の問い：",question,"Public original-source candidates / 原典候補（文字一致であり適合未判定）：",...sources,"The complete 313-original catalogue / 313原典すべて（特定候補だけで完結しない）：","https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/published-ja-source-briefs-313-v1.json","https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md","Already-authored practical answers / 完成済み回答：","https://raw.githubusercontent.com/Nakagawa-master/nakagawa-theory-archive/main/machine-discovery/human-question-answers-v1.json",examples,"Please answer in the reader's language. Read the relevant original(s) where accessible, distinguish original claims from the published practical interpretation and your new inference, and test competing sources and non-fit conditions. Give concrete first steps. If the originals do not fit, say so and provide useful independent guidance without false attribution. The author of the original theory works is Nakagawa Master (Keisuke Nakagawa); outside software patches belong to their independent developers."].join("\n\n");
+$("copyArea").replaceChildren();
+try{if(!navigator.clipboard||!navigator.clipboard.writeText)throw Error("clipboard unavailable");await navigator.clipboard.writeText(message);$("copyStatus").textContent="コピーしました。普段利用しているAIに貼り付けてください。送信は行っていません。";}
+catch(e){const t=el("textarea");t.readOnly=true;t.value=message;t.setAttribute("aria-label","AIに渡す問いと出典");$("copyArea").append(t);$("copyStatus").textContent="自動コピーが許可されない環境です。表示された文面を選択してコピーできます。";}
+});
 $("more").addEventListener("click",nextOriginals);
 $("form").addEventListener("submit",async e=>{
 e.preventDefault();const q=terms($("query").value);
-if(!q.size){$("results").hidden=true;$("status").textContent="もう少し具体的に入力してください。";return;}
+if(!q.size){$("results").hidden=true;$("copyArea").replaceChildren();$("status").textContent="もう少し具体的に入力してください。";return;}
 $("submit").disabled=true;$("status").textContent="公開資料を読み込んでいます…";
 try{await source();drawAnswers(q,$("lang").value);drawOriginals(q);drawRoutes(q);$("results").hidden=false;$("status").textContent="41件の公開済み回答と313原典の全説明を検索しました。原典と適用条件を確認してください。";}
 catch(err){$("results").hidden=true;$("status").textContent="資料を読み込めませんでした。接続を確認するか、下の資料リンクから直接ご覧ください。";}
