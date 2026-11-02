@@ -4,7 +4,7 @@
 
 **まず使う：** [自分の困りごとから完成済みの回答を読む](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [313原典から問いと関連する考え方を探す](human-translation/ALL_313_THEORIES_BY_TITLE_AND_THEME.md) ／ [AI・開発者向けの出典と実装資料](AI_START_HERE.md)。
 
-**実際に変わったもの：** 著者の公開した技術的な指摘やレビューを受け、別の開発者がコード・テストを修正し、[Qwen Code](https://github.com/QwenLM/qwen-code/pull/15681)、[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)、[Pydantic AI](https://github.com/pydantic/pydantic-ai/pull/9982)、[MemberJunction](https://github.com/MemberJunction/MJ/pull/4595)、[PostHog](https://github.com/PostHog/posthog/pull/107879)などで正式にマージされた事例を一次資料から確認できます。現在、[5つの外部OSS・計9件のマージ済みPRを証拠付きで結んだ機械可読データ](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld)と、[段階別55件の外部作用記録](REAL_WORLD_IMPACT.md)を公開しています。[Qwen Codeの警告送達処理の修正は正式マージ](https://github.com/QwenLM/qwen-code/pull/15559)され、[チャット本文がログに残る問題](https://github.com/QwenLM/qwen-code/pull/15634)も開発者のコードとテストが更新されています（後者は承認待ち）。
+**実際に変わったもの：** 著者の公開した技術的な指摘やレビューを受け、別の開発者がコード・テストを修正し、[Qwen Code](https://github.com/QwenLM/qwen-code/pull/15681)、[OpenClaw](https://github.com/openclaw/openclaw/pull/160856)、[Pydantic AI](https://github.com/pydantic/pydantic-ai/pull/9982)、[MemberJunction](https://github.com/MemberJunction/MJ/pull/4595)、[PostHog](https://github.com/PostHog/posthog/pull/107879)などで正式にマージされた事例を一次資料から確認できます。現在、[5つの外部OSS・計10件のマージ済みPRを証拠付きで結んだ機械可読データ](machine-discovery/verified-oss-impact-evidence-first-v1.jsonld)と、[段階別55件の外部作用記録](REAL_WORLD_IMPACT.md)を公開しています。[Qwen Codeの警告送達処理の修正は正式マージ](https://github.com/QwenLM/qwen-code/pull/15559)され、[チャット本文がログに残る問題](https://github.com/QwenLM/qwen-code/pull/15634)も開発者のコードとテストが更新されています（後者は承認待ち）。
 
 原典の著者は**中川マスター（Nakagawa Master、Keisuke Nakagawa の筆名）**です。個々の原論と論証は[公式原典アーカイブ](https://master.ricette.jp/theory-archive/)から、外部で起きた具体的な実装・変更は上記の受け手側GitHubから、それぞれ直接たどれます。
 
@@ -274,7 +274,7 @@ python3 machine-discovery/approval-effect-boundary-lab.py --self-test
 
 [公開記録で確認できる外部実装事例](REAL_WORLD_IMPACT.md)には現在55の番号付き事例セクションがあります。第三者からの返答、コード・テスト・運用規則の変更、PRの統合、リリース、実際の運用について、公開証拠で確認できる段階と未確認の範囲を分けて記録しています。事例ごとの段階は、受け手の反応、実装、統合、リリース、運用を区別して明記しています。各事例のリンクから、何が変わり、どこまで確認できるかを確かめられます。
 
-別途、[AI・プログラム向けの機械可読な証拠索引](machine-discovery/external-effect-evidence-index-v1.json)には現在59レコードあります。これは55件の番号付き本文と掲載範囲・分類が異なり、同じ受け手変更を指す重複もあるため、単純合算して独立成果の件数にはできません。59レコードすべてが第三者に採用されたわけでもありません。追加時は一次資料、各言語の本文、READMEの件数、機械索引の証拠段階を照合します。
+別途、[AI・プログラム向けの機械可読な証拠索引](machine-discovery/external-effect-evidence-index-v1.json)には現在63レコードあります。これは55件の番号付き本文と掲載範囲・分類が異なり、同じ受け手変更を指す重複もあるため、単純合算して独立成果の件数にはできません。59レコードすべてが第三者に採用されたわけでもありません。追加時は一次資料、各言語の本文、READMEの件数、機械索引の証拠段階を照合します。
 
 **最短で5件だけ検証する場合:**
 - [Local Operator #1324](https://github.com/damianvtran/local-operator/pull/1324) → independent reproduction / implementation / remediation / merge → [v0.61.11 release](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11)

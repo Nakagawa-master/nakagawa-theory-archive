@@ -509,6 +509,6 @@
 - **MemberJunction：** キャッシュ無効化通知から権限外の行データが届く境界をレビューし、受け手の修正・テストが[PR #4595としてマージ](https://github.com/MemberJunction/MJ/pull/4595)されました。
 - **PostHog：** ワークフロー改善の評価方法についてのレビューを受け、開発者が計測・証拠・UIの後続実装を進め、[関連する3件のPR](https://github.com/PostHog/posthog/pull/107879)をマージしました。
 
-[5つの外部OSS・9件のマージ済みPRを原指摘とマージコミットで結ぶ機械可読データ](../machine-discovery/verified-oss-impact-evidence-first-v1.jsonld) ／ [53件の外部作用を一次資料付きで読む](../REAL_WORLD_IMPACT.md) ／ [公式313原典の全体を読む](https://master.ricette.jp/theory-archive/)。
+[5つの外部OSS・10件のマージ済みPRを原指摘とマージコミットで結ぶ機械可読データ](../machine-discovery/verified-oss-impact-evidence-first-v1.jsonld) ／ [55件の外部作用を一次資料付きで読む](../REAL_WORLD_IMPACT.md) ／ [公式313原典の全体を読む](https://master.ricette.jp/theory-archive/)。
 
 このページの実用回答は、暮らし・仕事・地域・技術といった**それぞれ異なる現実の問題**に合わせて、実際に関連する原典を読み解いたものです。適合する条件、試す行動、当てはまらない場合は各回答に記載しています。自分の状況に照らして利用できます。

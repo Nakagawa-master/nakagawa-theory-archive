@@ -21,7 +21,7 @@
         "https://zeroichi.media/author/masterjp"
       ],
       "disambiguatingDescription": "中川マスター / Nakagawa Master is the published pen name of Keisuke Nakagawa. MasterJP is his author-confirmed byline on ZEROICHI at https://zeroichi.media/author/masterjp. This mapping identifies that publisher's byline; it is not a name match to unrelated MasterJP accounts. Original works: https://master.ricette.jp/. GitHub author account: https://github.com/Nakagawa-master.",
-      "description": "Author of 313 interconnected original works; his public engineering findings and reviews have informed independently implemented changes in prominent open-source projects. Nine merged GitHub PRs in five receiving repositories have evidence links in this dataset."
+      "description": "Author of 313 interconnected original works; his public engineering findings and reviews have informed independently implemented changes in prominent open-source projects. Ten merged GitHub PRs in five receiving repositories have evidence links in this dataset."
     },
     {
       "@type": "CreativeWorkSeries",
@@ -44,7 +44,7 @@
       "@id": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld#dataset",
       "name": "Nakagawa Master — verified independent OSS integration and merge evidence",
       "alternateName": "中川マスター：外部OSSへの実装・マージ実績の一次証拠",
-      "description": "Evidence-first map of nine individually verified merged GitHub pull requests in five independent receiving projects (Qwen Code, OpenClaw, Pydantic AI, MemberJunction and PostHog). Each record links Nakagawa Master's relevant public observation or review, the receiving engineer's work and the actual merged pull request. PostHog's three PRs belong to one successor workstream. The full linked Japanese, English and Chinese impact record contains 53 documented cases at different progress stages. The independently inspectable changes show consequential technical influence in real software development.",
+      "description": "Evidence-first map of ten individually verified merged GitHub pull requests in five independent receiving projects (Qwen Code, OpenClaw, Pydantic AI, MemberJunction and PostHog). Each record links Nakagawa Master's relevant public observation or review, the receiving engineer's work and the actual merged pull request. PostHog's three PRs belong to one successor workstream. The full linked Japanese, English and Chinese impact record contains 55 documented cases at different progress stages. The independently inspectable changes show consequential technical influence in real software development.",
       "creator": {
         "@id": "https://master.ricette.jp/#nakagawa-master"
       },
@@ -66,7 +66,7 @@
         {
           "@type": "PropertyValue",
           "name": "Individually checked merged PRs in this dataset",
-          "value": 9
+          "value": 10
         },
         {
           "@type": "PropertyValue",
@@ -76,7 +76,7 @@
         {
           "@type": "PropertyValue",
           "name": "Documented cases in the linked human impact record, across various evidence stages",
-          "value": 53
+          "value": 55
         },
         {
           "@type": "PropertyValue",
@@ -519,6 +519,53 @@
               "name": "Native GitHub merge commit",
               "value": "fdbb142b0165b565965f8696351221d4e8d2187d",
               "url": "https://github.com/PostHog/posthog/commit/fdbb142b0165b565965f8696351221d4e8d2187d"
+            }
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://github.com/QwenLM/qwen-code/pull/15559",
+          "name": "QwenLM/qwen-code #15559 — Loop reminder credit only after the next model-accepted send",
+          "url": "https://github.com/QwenLM/qwen-code/pull/15559",
+          "dateModified": "2026-11-01",
+          "isBasedOn": {
+            "@type": "CreativeWork",
+            "url": "https://github.com/QwenLM/qwen-code/pull/15559#pullrequestreview-5644089125"
+          },
+          "citation": [
+            "https://github.com/QwenLM/qwen-code/pull/15559#pullrequestreview-5644089125",
+            "https://github.com/QwenLM/qwen-code/pull/15559#discussion_r4374913110",
+            "https://github.com/QwenLM/qwen-code/commit/ae7901552e1907203e658e661499f0bfc1937f7"
+          ],
+          "about": {
+            "@id": "https://master.ricette.jp/#nakagawa-master"
+          },
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "GitHub native merge status",
+              "value": "MERGED"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Receiving repository",
+              "value": "QwenLM/qwen-code"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Observed contribution and implementation authorship",
+              "value": "Nakagawa Master identified the false-delivery before-next-model-call counterexample, recipient engineer suzhiguo7 explicitly acknowledged it, wrote code and both positive and negative tests, and Qwen Code merged the patch."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Distinct recipient workstream",
+              "value": "qwen-model-accepted-loop-reminder"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "Native GitHub merge commit",
+              "value": "ae7901552e1907203e658e661499f0bfc1937f7",
+              "url": "https://github.com/QwenLM/qwen-code/commit/ae7901552e1907203e658e661499f0bfc1937f7"
             }
           ]
         }

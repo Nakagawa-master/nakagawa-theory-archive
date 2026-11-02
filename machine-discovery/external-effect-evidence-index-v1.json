@@ -4020,6 +4020,85 @@
         "broad human person-Origin recognition"
       ],
       "verification_boundary": "Independent source-authored code/test progression and direct acknowledgment observable in issue/PR; CI and product acceptance remain separate. Public metadata publication is self-authored, not an independent effect."
+    },
+    {
+      "case_id": "qwen-15559-model-acceptance-loop-reminder-credited-merged",
+      "topic": "A prepared AI loop reminder is not a delivered warning before the next model-accepted request.",
+      "external_repository": "QwenLM/qwen-code",
+      "pull_request": "https://github.com/QwenLM/qwen-code/pull/15559",
+      "origin_action": {
+        "actor": "Nakagawa Master",
+        "type": "source_specific_pr_review",
+        "url": "https://github.com/QwenLM/qwen-code/pull/15559#pullrequestreview-5644089125",
+        "distinction": "An agent run may hit maxTurns before the next model call, so a reminder may be prepared but never received; assert zero committed reminded events and a positive exactly-once accepted event."
+      },
+      "explicit_receiver_return": {
+        "actor": "suzhiguo7",
+        "url": "https://github.com/QwenLM/qwen-code/pull/15559#discussion_r4374913110",
+        "observation": "Engineer explicitly accepted the distinct pre-send failure, moved commit to the actual next model acceptance boundary and added positive and negative regression tests."
+      },
+      "receiver_implementation": {
+        "author": "suzhiguo7",
+        "patch_head": "565de5405b998a2ebd21a136913f2efcf71871f8",
+        "tests": "Negative maxTurns and pre-send error plus positive one-time model-accepted warning delivery; independently implemented by the engineer."
+      },
+      "merge": {
+        "claimed": true,
+        "merged_at_utc": "2026-11-01T16:43:24Z",
+        "commit": "ae7901552e1907203e658e661499f0bfc1937f7",
+        "url": "https://github.com/QwenLM/qwen-code/commit/ae7901552e1907203e658e661499f0bfc1937f7"
+      },
+      "current_stage": "independent_receiver_implementation_tests_UPSTREAM_MERGED",
+      "human_case": "REAL_WORLD_IMPACT.md#54",
+      "not_claimed": [
+        "stable package delivery",
+        "end-user outcome",
+        "recipient adopted original theory texts",
+        "Nakagawa authored receiving source code"
+      ]
+    },
+    {
+      "case_id": "qwen-15634-rejected-chat-text-stderr-capacity-privacy",
+      "topic": "Rejected chat message content should never be emitted to the coding agent stderr capacity diagnostic.",
+      "external_repository": "QwenLM/qwen-code",
+      "pull_request": "https://github.com/QwenLM/qwen-code/pull/15634",
+      "origin_action": {
+        "actor": "Nakagawa Master",
+        "type": "inline_pr_code_review",
+        "url": "https://github.com/QwenLM/qwen-code/pull/15634#discussion_r4423012915",
+        "distinction": "Queue capacity refusal logged sanitized private message bytes; sanitizer strips controls but does not redact secrets; use length/queue metadata and canary-negative tests."
+      },
+      "explicit_receiver_return": {
+        "actor": "Eric-GoodBoy-Tech",
+        "url": "https://github.com/QwenLM/qwen-code/pull/15634#discussion_r4423074659",
+        "observation": "Implementing engineer acknowledged the distinct finding, independently fixed queue and sibling ChannelBase fallback logs and added test that a rejected SECRET_CANARY_12345 never reaches stderr."
+      },
+      "receiver_implementation": {
+        "author": "Eric-GoodBoy-Tech",
+        "current_head": "9ea0c9d27fd1a5928bf6daa2317642c792962d43",
+        "source_paths": [
+          "packages/channels/base/src/AcpBridge.ts",
+          "packages/channels/base/src/AcpBridge.test.ts",
+          "packages/channels/base/src/ChannelBase.ts",
+          "packages/channels/base/src/ChannelBase.test.ts"
+        ]
+      },
+      "current_source_snapshot": {
+        "date_jst": "2026-11-02",
+        "pr_state": "OPEN",
+        "mergeable": true,
+        "merged": false,
+        "required_review_approvals_pending": true
+      },
+      "current_stage": "independent_receiver_source_and_tests_OPEN_PR",
+      "human_case": "REAL_WORLD_IMPACT.md#55",
+      "not_claimed": [
+        "observed live data leakage",
+        "maintainer merge",
+        "stable release",
+        "end-user realized benefit",
+        "receiving author read the canonical original theory texts"
+      ]
     }
   ],
   "update_policy": "Only advance a case to a stronger evidence stage when a fresh public source directly supports that stage. Do not infer release from merge, implementation from intent, or endorsement of an entire theory from a bounded case.",
