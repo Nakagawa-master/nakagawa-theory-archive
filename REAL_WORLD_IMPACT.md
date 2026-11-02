@@ -370,7 +370,7 @@ PR authorはこの二層分解を明示的に採用し、commit `293b9b40` でen
 ## 14. UpGrade｜UIだけのdelete ruleがbackend authority work itemへcarryされた
 
 **対象:** [CarnegieLearningWeb/UpGrade#3323](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323) → [issue #3326](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326)  
-**現在状態:** #3323 open、#3326 open / implementation pending
+**現在状態:** #3323 は **2026年11月2日に dev へ正式マージ**（[merge b5ce4805](https://github.com/CarnegieLearningWeb/UpGrade/commit/b5ce4805a8edf3685b270fdd3b105a2234681125)）。**別課題 #3326 のサーバー側削除認可修正はOPEN・未完了**。
 
 `Nakagawa-master` reviewは、frontendのdelete permission matrixがbackendではauthorityとして強制されていないことを確認しました。review対象branchでは、UIがDeleteを隠していても、認証済みReaderがsingle/batchの破壊的APIを直接呼べる状態でした。
 
@@ -382,6 +382,8 @@ PR authorはこの二層分解を明示的に採用し、commit `293b9b40` でen
 PR authorは `@Nakagawa-master` を名指しし、delete routeにrole enforcementが存在していなかったことを確認したうえで、single/batch両方へrole matrixとstate ruleを適用するための#3326を新規作成しました。
 
 さらに#3326では、current branchに合わせて、current locked target stateに対してmutation前に一つのshared backend deletion policyを評価し、policy refusalとoperational delete failureを分離する実装形まで具体化しました。
+
+**二つの別々の結果：** #3323は外部開発チーム自身の**バッチ削除機能のマージ**。マスターが指摘した**削除権限のサーバー側強制**は[#3326](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326)に残ります。認可修正のマージ、拒否時にデータが変わらないテスト、正式配布、現実の被害防止は未確認です。機能マージを安全対策の完了として数えません。
 
 **公開記録から確認できること:** review → authorによる確認・再説明 → 境界を保った専用child work item → source-level実装guidance。  
 
