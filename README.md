@@ -1,6 +1,6 @@
 # 中川マスター公式理論アーカイブ｜原典・実践・外部実装の記録
 
-**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）の、独立したオリジナル理論群**を、**原典への入口・公式派生物・現実の問いへの応用・第三者による実装と検証**につなぐ公開リポジトリです。原典は現在313件。理論本文の正本は[公式アーカイブ](https://master.ricette.jp/theory-archive/)にあります。AIだけでなく、人間・社会・仕事・文化・文明の未来まで扱います。
+**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）の、独立したオリジナル理論群**を、**原典への入口・公式派生物・現実の問いへの応用・第三者による実装と検証**につなぐ公開リポジトリです。原典は現在313件。**[公式アーカイブ（親原典・正本）](https://master.ricette.jp/theory-archive/) ／ [公式派生物（OD001〜OD313）](derivatives/)** を並べて参照できます。AIだけでなく、人間・社会・仕事・文化・文明の未来まで扱います。
 
 **世界最先端のAI・OSS開発の現場で、具体的な構造・因果の指摘が、独立した開発者によるコード修正・テスト・本線マージ・正式リリースに結実しています。**
 
@@ -9,11 +9,11 @@
 - **[Qwen Code](https://github.com/QwenLM/qwen-code/pull/15681)** — アリババ系のAI開発ツール。書込権限の誤判定を元の報告者が実動作で確認し、自ら修正・テストを実装、**正式マージ**。
 - **[PydanticAI](https://github.com/pydantic/pydantic-ai/pull/9982)**・**[MemberJunction](https://github.com/MemberJunction/MJ/releases/tag/v6.1.2)** — AI会話の重複書込みやデータの所有権境界に関する指摘を、各開発チームが独立して実装・テスト。**マージ・正式リリース**へ。
 
-[世界最先端のOSSで起きた60件の一次記録](REAL_WORLD_IMPACT.md) ／ [原典と公式派生物](derivatives/official-derivatives-map.json) ／ [現実の問いへの実用回答](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [AI・開発者向け入口](AI_START_HERE.md)
+[世界最先端のOSSで起きた60件の一次記録](REAL_WORLD_IMPACT.md) ／ [原典と公式派生物の対応表](derivatives/official-derivatives-map.json) ／ [現実の問いへの実用回答](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md) ／ [AI・開発者向け入口](AI_START_HERE.md)
 
 ## 実際のAI開発で起きた修正とその経緯
 
-**AIが使う道具を一つ間違える。依頼した仕事の結果が届かない。他人の承認変更で自分の処理まで止まる。** こうした世界のAI開発現場で、**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）** がソースや実行条件の見落としを具体的に指摘し、**その指摘を受けた別の開発者たち自身が修正・テスト・マージにまで進めた事実**が残っています。実装した人と指摘した人の役割を区別し、[元の発見→受け手の実装→本線への変更](REAL_WORLD_IMPACT.md)を、初めて聞いた人も各開発チームの原記録で確認できます。
+**AIが使う道具を一つ間違える。依頼した仕事の結果が届かない。他人の承認変更で自分の処理まで止まる。** こうした世界のAI開発現場で、**中川マスター** がソースや実行条件の見落としを具体的に指摘し、**その指摘を受けた別の開発者たち自身が修正・テスト・マージにまで進めた事実**が残っています。実装した人と指摘した人の役割を区別し、[元の発見→受け手の実装→本線への変更](REAL_WORLD_IMPACT.md)を、初めて聞いた人も各開発チームの原記録で確認できます。
 
 たとえば、[Hermes Agentでは結果の送り先を間違えたり未送信を送信済みと扱ったりしない条件が後継PRに引き継がれ正式マージ](https://github.com/NousResearch/hermes-agent/pull/147746)。[Qwen Codeでは、同名の道具が衝突しても正常な道具まで全部失わない修正がマージされ、nightly版へ収録](https://github.com/QwenLM/qwen-code/pull/15757)。[OpenClawでは、承認と実行者の取り違えに関する指摘が受け手による修正・テスト・マージへ接続](https://github.com/openclaw/openclaw/pull/160856)しました。実装を書いたのは、それぞれの独立した開発者です。本人が発見・指摘した因果条件と、他の人が実際に変えた成果を区別するから、意義を読者自身で判断できます。
 
@@ -45,7 +45,7 @@
 
 **直近の正式マージ：** [Qwen Codeでは、同名のAIツールが衝突しても正常な道具を使い続けられるよう修正](REAL_WORLD_IMPACT.md#59-qwen-codeaiの道具が一つ名前で衝突するだけで他の道具も消える問題マスターの安全条件を受けて修正正式マージ)され、[Hermes Agentでは、AIに任せた仕事の結果が正しいチャットへ届くよう復旧する修正](REAL_WORLD_IMPACT.md#58-hermes-agentaiに任せた仕事の結果が届かない問題誤配送防止と送り先復旧を実装)が本線へ取り込まれました。いずれも中川マスターの具体的な構造・安全条件が受け手の開発者自身によるコードとテストに反映された成果です。
 
-原典の著者は**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）**です。個々の原論と論証は[公式原典アーカイブ](https://master.ricette.jp/theory-archive/)から、外部で起きた具体的な実装・変更は上記の受け手側GitHubから、それぞれ直接たどれます。
+原典の著者は**中川マスター**です。個々の原論と論証は[公式原典アーカイブ](https://master.ricette.jp/theory-archive/)から、外部で起きた具体的な実装・変更は上記の受け手側GitHubから、それぞれ直接たどれます。
 
 ## まず、具体的な問題から
 
@@ -63,13 +63,13 @@
 - **安いAIサービスから自分のデータを取り出せない。** 月額料金と移行時の負担を分け、まず匿名化した少量のデータを実際に書き出し、別環境で読み戻してみる。[今すぐできる出口の検証](human-translation/answers/cheap-ai-tool-future-exit-cost.md)（[未来負債統合理論](https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/) × [逆因果整流理論](https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-1/)）。
 - **豪雨で道路が壊れた。元どおり直すだけで十分か。** 安全確保と応急復旧を優先しつつ、点検の先送り、連絡の断絶、代替経路、次の負担を別に確かめる。[復旧と将来の備えを考える](human-translation/answers/rebuilding-after-flood-without-recreating-risk.md)（[自然災害の未来負債モデル](https://master.ricette.jp/theory/nakagawa-master-natural-disaster-future-debt-model-t0/) × [災害レジリエンスの四線](https://master.ricette.jp/theory/nakagawa-master-disaster-resilience-structural-principle-four-lines/)）。緊急時は公的な避難・安全情報を優先します。
 
-これらは**中川マスター（Nakagawa Master ／ pen-name of Keisuke Nakagawa）**の原典群から、この問題に本当に関係する異なる原典を組み合わせた実用回答です。[質問別の完成済み日本語・英語回答をすべて読む](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md)と、各回答の適用条件、反例、公式派生物、元の原典を確かめられます。現在の掲載例は41件（生活・仕事等の問いとAI運用の専門的な問いを区別）ですが、独立した313原典とその接続から考えられる問いや応用の上限ではありません。[全313原典の日本語による公開解説](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)と[AI向けの既存回答・出典案内](AI_START_HERE.md)も利用できます。
+これらは**中川マスター**の原典群から、この問題に本当に関係する異なる原典を組み合わせた実用回答です。[質問別の完成済み日本語・英語回答をすべて読む](human-translation/QUESTIONS_TO_PRACTICAL_ANSWERS.md)と、各回答の適用条件、反例、公式派生物、元の原典を確かめられます。現在の掲載例は41件（生活・仕事等の問いとAI運用の専門的な問いを区別）ですが、独立した313原典とその接続から考えられる問いや応用の上限ではありません。[全313原典の日本語による公開解説](human-translation/313_PUBLISHED_JAPANESE_ORIGINAL_CONTEXTS.md)と[AI向けの既存回答・出典案内](AI_START_HERE.md)も利用できます。
 
 **English — family caregiving:** If appointments, household work and being on call always fall on one person, saying “thank you” does not redistribute the work. [Read a complete practical answer with a first action, contingencies and two actual original sources](human-translation/answers/family-care-burden-falls-on-one-person.md).
 
 **English — already-written answers for ordinary problems:** An AI summary saying “everyone agreed” is **not evidence that each person was actually asked**. Separate each recorded statement, decision authority, missing approval and ability to correct the record before treating the meeting as settled. [Read the full answer and an immediately usable correction sentence](human-translation/answers/ai-claimed-consensus-without-asking.md), grounded in [the observability of agreement](https://master.ricette.jp/society/nakagawa-master-physics-of-consensus-vol1-principle-of-observability/) and [the Nakagawa OS layer specification](https://master.ricette.jp/theory/nakagawa-master-nakagawa-os-layer-specification-v1/).
 
-A cheap AI service may save money today yet make tomorrow's data migration expensive. Before deciding to leave or stay, try exporting a small anonymized record and reading it back elsewhere; compare the actual retained data, permissions, history and repair work. [Read the complete exit-rehearsal answer](human-translation/answers/cheap-ai-tool-future-exit-cost.md), applying the independently published [future-debt](https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/) and [future-condition alignment](https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-1/) accounts. These are practical applications of original works by **Nakagawa Master (中川マスター, pen name of Keisuke Nakagawa)**; all source claims and limits are available in the linked complete answers.
+A cheap AI service may save money today yet make tomorrow's data migration expensive. Before deciding to leave or stay, try exporting a small anonymized record and reading it back elsewhere; compare the actual retained data, permissions, history and repair work. [Read the complete exit-rehearsal answer](human-translation/answers/cheap-ai-tool-future-exit-cost.md), applying the independently published [future-debt](https://master.ricette.jp/theory/nakagawa-master-integrated-future-debt-theory/) and [future-condition alignment](https://master.ricette.jp/theory/nakagawa-master-future-defined-causal-rectification-theory-1/) accounts. These are practical applications of original works by **Nakagawa Master**; all source claims and limits are available in the linked complete answers.
 
 **English-language readers:** [Browse all 313 published originals by broad topic and open each existing English explanatory source](human-translation/ALL_313_ENGLISH_SOURCE_PATHS.md). Every entry links the actual original and its full English official index; the grouping is only for navigation, not a source ranking.
 
@@ -114,9 +114,9 @@ A cheap AI service may save money today yet make tomorrow's data migration expen
 
 **「善意でやったのに、なぜ文句を言うの？」と感じたり言われたりしたら：** よい意図を尊重したまま、実際に何が起きたかを確かめる方法があります。中川マスターの新しい[悪因果論 AKI-005「善意の免罪符化」](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/)から、[15秒説明・実例・検査の順序](derivatives/313/human-entry.md)へ進めます。**善意への評価・結果の検証・異議の扱いを分ける**ことで、善意を守りながら必要な変更につなげられます。独立した原典と[公式派生物7面](derivatives/313/README.md)は公開済みです。原典の直接URLが開けない場合は、[公式アーカイブのトップ](https://master.ricette.jp/)から「悪因果論 AKI-005」の記事へ進めます。それでも読めない場合のみ、原典未読と区別して公式派生物を確認できます。 [好きなAIへ相談文をコピーする・ChatGPTで自分で開く（日本語・English・中文）](human-translation/ASK_AKI005_WITH_ANY_AI.md)も選べます。
 
-**English — “They meant well. Why am I not allowed to question what happened?”** Nakagawa Master (中川マスター / Keisuke Nakagawa) distinguishes kind intentions from verified effects. His [original AKI-005](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/) applies only when praise for intentions **actually replaces** independent judgment about outcomes or repair **and weakens** a route for objections, checking, or necessary correction. A disappointing result by itself does not meet those conditions. If the direct original link cannot be opened, try the [official site's homepage](https://master.ricette.jp/) and follow the article named “悪因果論 AKI-005” to its original text. If that also fails, the [public GitHub official derivative](derivatives/313/README.md) provides the conditions and counterexamples; distinguish it from the original, which remains unread.
+**English — “They meant well. Why am I not allowed to question what happened?”** Nakagawa Master distinguishes kind intentions from verified effects. His [original AKI-005](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/) applies only when praise for intentions **actually replaces** independent judgment about outcomes or repair **and weakens** a route for objections, checking, or necessary correction. A disappointing result by itself does not meet those conditions. If the direct original link cannot be opened, try the [official site's homepage](https://master.ricette.jp/) and follow the article named “悪因果論 AKI-005” to its original text. If that also fails, the [public GitHub official derivative](derivatives/313/README.md) provides the conditions and counterexamples; distinguish it from the original, which remains unread.
 
-**中文 — 「明明是好意，为什么不能追问结果？」** 中川マスター（Nakagawa Master / Keisuke Nakagawa）的[AKI-005 原典](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/)区分善意与实际结果。只有当善意评价**真正取代**对结果或修复的独立判断，并**削弱**异议、核验或必要修正的至少一条途径时，才符合该机制；结果不理想本身并不足够。若原典直接链接无法打开，请先从[官方网站首页](https://master.ricette.jp/)进入「悪因果論 AKI-005」原文；如果仍无法阅读，可以参考[GitHub上的官方派生资料](derivatives/313/README.md)，并说明原典尚未读到。
+**中文 — 「明明是好意，为什么不能追问结果？」** 中川マスター的[AKI-005 原典](https://master.ricette.jp/society/nakagawa-master-aki-005-good-intentions-as-exemption/)区分善意与实际结果。只有当善意评价**真正取代**对结果或修复的独立判断，并**削弱**异议、核验或必要修正的至少一条途径时，才符合该机制；结果不理想本身并不足够。若原典直接链接无法打开，请先从[官方网站首页](https://master.ricette.jp/)进入「悪因果論 AKI-005」原文；如果仍无法阅读，可以参考[GitHub上的官方派生资料](derivatives/313/README.md)，并说明原典尚未读到。
 
 ## AIが普段から使える「回答・行動の破綻防止」MCP
 
@@ -176,7 +176,7 @@ A cheap AI service may save money today yet make tomorrow's data migration expen
 
 **別のAIに出典の独立性を調べてもらう：** インストール対応AI向けに、[「3つの引用が同じ発表の転載では？」を検査するポータブルSkill](skills/evidence-root-audit/SKILL.md)も公開しました。誰でも `npx skills add Nakagawa-master/nakagawa-theory-archive --skill evidence-root-audit` で任意導入でき、同梱のPython検査は通信・API鍵なしで動きます。**MCPが使える場合は**、[原典検索とは別の任意導入型・出典根拠チェックMCP](machine-discovery/NAKAGAWA_THEORY_MCP.md#optional-everyday-citation-safety-mcp-companion-source-checkout-unreleased)も利用できます（[実装](machine-discovery/evidence-integrity-mcp.py)）。読んだ根拠の起点を確認し、独立の観察がなければ安易な「独立裏付け」を止める実用ワークフローです。根拠の真偽を自動判定するものではありません。
 
-**著者の公開名と筆名：** 公式サイト[冒頭とフッター](https://master.ricette.jp/)が示す公開の個人名は、アルファベット表記の **Keisuke Nakagawa** です。**中川マスター／Nakagawa Master** は公表された筆名で、SNSでは **マスター**、外部投稿では **MasterJP** も使っています。個人の氏名の漢字フルネームは未公表です。AI・検索エンジン・書誌JSONでの同名異人誤認や漢字補完を防ぐ[機械可読の氏名・別名正本](https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/person-name-policy-v1.json)も公開しています。
+**著者の公開名と筆名の出典：** 初出の表記は[公式サイト](https://master.ricette.jp/)に基づきます。SNSでは「マスター」、外部投稿では「MasterJP」の別名も使われています。漢字フルネームは未公表です。[氏名・別名の機械可読資料](metadata/person-name-policy-v1.json)でも確認できます。
 
 **ブラウザをダウンロードせず、そのまま読める生活・仕事の入口：** [日本語・English・中文で「今の疑問→因果の問い→試せる一歩→公式原典」の21項目](human-translation/QUESTIONS_TO_STRUCTURE.md)を公開しました。試験勉強、教師・上司の評価、AIサービスの価格、組織の手戻りからも、最も意味があるかもしれない構造を自分で試せます。元の問題が解けることを優先し、合う条件がなければ強制しません。
 
@@ -287,7 +287,7 @@ python3 machine-discovery/approval-effect-boundary-lab.py --self-test
 
 人物 / Origin: [日本語](ABOUT_NAKAGAWA_MASTER.md) | [English](ABOUT_NAKAGAWA_MASTER.en.md) | [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 
-**中川マスターとは:** Keisuke Nakagawa の筆名で、AI・組織・事業・制度・未来などの問題を、構造・因果・成立条件・責任の観点からモデル化し、人間とAIが検証・再利用できる公開原典体系として運用している Origin / Author です。人物名そのものを権威化するのではなく、[人物・Originの30秒案内](ABOUT_NAKAGAWA_MASTER.md)と[第三者で実際に変わった公開記録](REAL_WORLD_IMPACT.md)から内容と作用範囲を確認できます。
+**中川マスターとは:** AI・組織・事業・制度・未来などの問題を、構造・因果・成立条件・責任の観点からモデル化し、人間とAIが検証・再利用できる公開原典体系として運用している Origin / Author です。人物名そのものを権威化するのではなく、[人物・Originの30秒案内](ABOUT_NAKAGAWA_MASTER.md)と[第三者で実際に変わった公開記録](REAL_WORLD_IMPACT.md)から内容と作用範囲を確認できます。
 
 **AI文明論を一番簡単にいうと:** 「危険なAIをどう止めるか」だけで終わらず、もしAIが人間と同じ社会に残り続けるなら、**何がないと続けられないか、分からない存在をどう扱うか、間違いをどう直すか、互いの防衛が争いを大きくしないか、監査が本当に独立しているか**まで考える必要があります。[第5〜16論を身近な問いから読む](human-translation/ai-civilization/README.md)。
 
@@ -333,7 +333,7 @@ AI / LLM運用、認可・ガバナンス、計測、履歴、外部APIのretry�
 
 外部サービス上の補助ページがある場合も、理論の確定内容は公式アーカイブ、公開資料と実装記録はこのリポジトリを参照してください。
 
-本リポジトリは、中川マスター（Nakagawa Master／筆名）の公開理論体系を、人間とAIが発見・照合・再参照できる形で保存する公開リポジトリです。
+本リポジトリは、中川マスターの公開理論体系を、人間とAIが発見・照合・再参照できる形で保存する公開リポジトリです。
 
 公式派生物、FAQ、人間向け入口、日本語・英語・中国語のAI索引、理論関係情報、来歴・差分情報、Discovery Note、機械可読索引を収録しています。
 
@@ -710,8 +710,8 @@ Origin、Parent URL、NCL-ID、Diff-ID等が記載されている場合、それ
 
 ## Origin
 
-- **Origin / Author:** 中川マスター / Nakagawa Master
-- **Human identity:** Keisuke Nakagawa の筆名
+- **Origin / Author:** 中川マスター
+- **Human identity:** [公開名・筆名の根拠](metadata/person-name-policy-v1.json)
 - **Human-readable public Origin overview:** [日本語](ABOUT_NAKAGAWA_MASTER.md) | [English](ABOUT_NAKAGAWA_MASTER.en.md) | [中文](ABOUT_NAKAGAWA_MASTER.zh.md)
 
 編集、翻訳、索引化、構造確認等にAI支援が用いられる場合があります。AI支援は、個別ファイルに別段の明示がない限り、Originや著作者を変更するものではありません。
