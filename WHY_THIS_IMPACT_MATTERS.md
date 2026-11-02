@@ -12,6 +12,14 @@
 
 **3. 他人の権限を変更しただけで、自分のAI作業が止まってしまう条件。** [OpenClawで受け手の開発者はマスターを報告元として明記](https://github.com/openclaw/openclaw/pull/160856)し、実装・再発防止テストを修正してマージしました。[公式リリース文書にも本人のGitHub名](https://github.com/openclaw/openclaw/blob/main/docs/releases/2026.9.7.md)が載っています。ここで確かめられるのは修正と収録であり、未観測の利用者数ではありません。
 
+## 「削除できない」「予算内です」――本当に守られている？
+
+**画面に削除ボタンがなくても、サーバーが拒否するとは限らない。** [UpGrade #3323](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323)で中川マスターは[画面の権限と削除APIの実際の認可が食い違う条件をソースとテストで指摘](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#pullrequestreview-5249193998)。外部開発者は[その問題を認めて別の修正課題を作成](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#issuecomment-5732584639)しました。**機能は11月2日にマージ**されましたが、[削除APIの認可修正 #3326 は未完成](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326)です。
+
+**設定したAIの費用上限も、実際の課金を必ず止めるとは限らない。** [LiteLLM #49179の独立した実運用報告](https://github.com/BerriAI/litellm/issues/49179#issuecomment-6533817755)では、７日間の利用額 **209.8900ドル**に対して、予算枠の記録は **193.8792ドル**。**200ドル**の上限を超えても次の要求が通りました。マスターは[キャッシュ期限が切れた場合の費用保存と、その後の拒否判断を検証する条件](https://github.com/BerriAI/litellm/issues/49179#issuecomment-6535985229)を示し、別の開発者は[その境界を確認](https://github.com/BerriAI/litellm/issues/49179#issuecomment-6519461222)。保守担当者は[計上先のルールを決定](https://github.com/BerriAI/litellm/issues/49179#issuecomment-6583039192)しました。[修正PR #47608](https://github.com/BerriAI/litellm/pull/47608)と[#49603](https://github.com/BerriAI/litellm/pull/49603)は未マージです。
+
+**人間の日常にも通じる問い：**「制度がある」「表示された」「了承された」は、それが現実に守られたことの証明でしょうか。中川マスターの[成立条件論・第1論の原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/)と[公式派生物011](derivatives/011/human-entry.md)から、表面の表示、実際の権限・履歴、再現できる結果のつながりを調べられます。これは**原典の成立条件を新たな問題へ応用する読解**であり、外部開発者が原典を直接採用した証拠でも、マスターが未確認の損害を既に防いだ証拠でもありません。
+
 ## AIの実行は成功したのに、結果を「失敗」と誤認する問題
 
 **道具が正常に返したデータに「エラー」という名前の項目があるだけで、AIの実行結果まで失敗扱いになる。** [CUGA Agentの機能追加PR #777](https://github.com/cuga-project/cuga-agent/pull/777)では、中川マスターがこの区別の欠落を[元コードに即して指摘](https://github.com/cuga-project/cuga-agent/pull/777#pullrequestreview-5468178558)しました。外部開発者 **@segevshlomovIBM** は[その指摘を認め](https://github.com/cuga-project/cuga-agent/pull/777#issuecomment-6107352135)、道具の戻り値の文字列ではなく実行側が管理する成功・失敗の記録で判定するコードへ変更。正しい結果を保持するテストと、本当に例外が起きた場合の反対テストを追加し、[2026年10月18日に正式マージ](https://github.com/cuga-project/cuga-agent/commit/93a630a68d937177a919a07343e2b4b9c7477e1f)されました。**見た目の言葉と本当に起きた処理を区別する**ことが、独立した開発者自身の修正に具体化した例です。中川マスターの公開原典[成立条件論・第0論](https://master.ricette.jp/theory/nakagawa-master-why-establishment-conditions-theory-is-necessary/)は、局所的に正しい情報だけを全体の成立証拠にしてしまう問題を扱います。この実装例から原典の論証へ進み、各々の成立条件を比較できます。
@@ -74,6 +82,12 @@
 
 ---
 
+### Is a disabled Delete button actual authorization? Is a budget limit actual enforcement?
+
+In [UpGrade #3323](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323), Nakagawa Master [identified a concrete mismatch between visible deletion restrictions and backend authority](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#pullrequestreview-5249193998). The author [acknowledged this and created a separate backend work item](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#issuecomment-5732584639). The feature merged, but [authorization fix #3326 remains open](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326). In another real [LiteLLM user report](https://github.com/BerriAI/litellm/issues/49179#issuecomment-6533817755), seven-day actual spend was **$209.8900** against a **$200** cap while the durable budget-window total showed only **$193.8792** and subsequent requests were allowed. Nakagawa Master [specified a source-grounded cache-expiry and subsequent-denial acceptance condition](https://github.com/BerriAI/litellm/issues/49179#issuecomment-6535985229); another engineer [engaged with this boundary](https://github.com/BerriAI/litellm/issues/49179#issuecomment-6519461222), and the [maintainer clarified the accounting policy](https://github.com/BerriAI/litellm/issues/49179#issuecomment-6583039192). Both [#47608](https://github.com/BerriAI/litellm/pull/47608) and [#49603](https://github.com/BerriAI/litellm/pull/49603) are unmerged.
+
+When does a rule *actually work*, rather than merely appear on a screen? Nakagawa Master's [original Establishment Conditions Theory, Part 1](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/) and [official derivative 011](derivatives/011/en-ai-index.md) offer an applicable way to distinguish display, operative authority and real results. This is **a source-grounded interpretation**, not evidence the outside engineers directly used that original or that a particular loss was prevented.
+
 ## 中文 — 一位结构理论作者的发现，如何被独立开发者用于真实修复
 
 **AI说“完成了”，但外部工具实际失败；任务完成却没有送到正确的聊天；一个工具名称冲突让其他正常工具也不能使用。** 这些是可以检查的真实软件问题，而不是虚构的用户事故。
@@ -95,3 +109,9 @@
 [LiteLLM #49359](https://github.com/BerriAI/litellm/issues/49359)更加直接地展示了**从一名开发者到另一名开发者的接续**：第一人[承认中川マスター发现的类型契约问题并改正](https://github.com/BerriAI/litellm/issues/49359#issuecomment-6537951352)，第二人[创建新的上游PR #49624，并在说明中明确提到他的审查贡献](https://github.com/BerriAI/litellm/pull/49624)。中川マスター[再次准确指出必填契约问题](https://github.com/BerriAI/litellm/pull/49624#issuecomment-6573055353)后，第二位开发者[亲自承认并修复成 `NotRequired[bool]`，增加测试](https://github.com/BerriAI/litellm/pull/49624#issuecomment-6574736711)；[第一位开发者要求共同作者署名](https://github.com/BerriAI/litellm/pull/49624#issuecomment-6575309340)，[第二位作者已将署名写入两次真实提交](https://github.com/BerriAI/litellm/pull/49624#issuecomment-6581966268)。这是第二个独立作者实际改动代码、两人的贡献在真实提交记录中得到归属的事实。PR仍未合并。
 
 [核对60项外部影响的原始证据](REAL_WORLD_IMPACT.zh.md) ／ [认识作者及其原典体系](ABOUT_NAKAGAWA_MASTER.zh.md) ／ [本人GitHub](https://github.com/Nakagawa-master)。读者可以自己判断，并在准确区分作者、实施者和未确认结果的前提下传播真实信息。
+
+### 画面说“禁止删除”，服务器真的拒绝吗？预算上限真的生效吗？
+
+在[UpGrade #3323](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323)，中川マスター[从代码指出前端限制与后端真正权限不一致](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#pullrequestreview-5249193998)。作者[确认问题并建立独立修复议题](https://github.com/CarnegieLearningWeb/UpGrade/pull/3323#issuecomment-5732584639)。功能已合并，但[权限修复 #3326 仍未完成](https://github.com/CarnegieLearningWeb/UpGrade/issues/3326)。在另一个[LiteLLM真实用户报告](https://github.com/BerriAI/litellm/issues/49179#issuecomment-6533817755)中，七天实际消费为**209.8900美元**，而预算窗口只显示**193.8792美元**，超过**200美元**上限仍能发出请求。中川マスター给出[缓存过期、耐久记录与下一次拒绝的具体测试条件](https://github.com/BerriAI/litellm/issues/49179#issuecomment-6535985229)，另一个开发者[认可该区分](https://github.com/BerriAI/litellm/issues/49179#issuecomment-6519461222)，维护者[明确计费规则](https://github.com/BerriAI/litellm/issues/49179#issuecomment-6583039192)。[PR #47608](https://github.com/BerriAI/litellm/pull/47608)和[#49603](https://github.com/BerriAI/litellm/pull/49603)仍未合并。
+
+规则存在并不意味着现实结果成立。可阅读中川マスター的[成立条件论・第1论原典](https://master.ricette.jp/theory/nakagawa-master-nakagawa-establishment-conditions-theory-01-what-is-establishment/)和[官方派生物011](derivatives/011/zh-ai-index.md)，比较可见承诺、实际授权、真实记录与结果。这是**有来源的扩展解读**，不意味着外部作者直接采用了该原典，也不证明特定损失已被防止。
