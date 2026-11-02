@@ -4,6 +4,8 @@
 
 たとえば、[Hermes Agentでは結果の送り先を間違えたり未送信を送信済みと扱ったりしない条件が後継PRに引き継がれ正式マージ](https://github.com/NousResearch/hermes-agent/pull/147746)。[Qwen Codeでは、同名の道具が衝突しても正常な道具まで全部失わない修正がマージされ、nightly版へ収録](https://github.com/QwenLM/qwen-code/pull/15757)。[OpenClawでは、承認と実行者の取り違えに関する指摘が受け手による修正・テスト・マージへ接続](https://github.com/openclaw/openclaw/pull/160856)しました。実装を書いたのは、それぞれの独立した開発者です。本人が発見・指摘した因果条件と、他の人が実際に変えた成果を区別するから、意義を読者自身で判断できます。
 
+**自分の問いから探す方へ：** [41件の完成回答と313原典を探す、端末内で動く検索画面](machine-discovery/question-source-explorer.html)を公開しています。GitHubのファイル画面で「Raw」からHTMLを保存し、ブラウザで開いて問いを入力できます。追加のAI接続やアカウントは不要です。既刊の具体的な回答、公式原典の候補、当てはまらない場合を区別して確認できます。
+
 **はじめて読む方へ：** [30秒で分かる第三者修正と原典の出所](WHY_THIS_IMPACT_MATTERS.md) ／ [60事例の一次証拠](REAL_WORLD_IMPACT.md) ／ [どのような人物・理論体系か](ABOUT_NAKAGAWA_MASTER.md) ／ [原典313件](https://master.ricette.jp/theory-archive/)。
 
 <details>
