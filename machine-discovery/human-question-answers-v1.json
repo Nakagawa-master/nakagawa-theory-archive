@@ -96,6 +96,14 @@
       "practical_answer_ja": "努力を増やす前に、どの未来の結果を成立させたいか、今の行動がそこへどう届くかを仮説にします。目標・資源・顧客反応・失敗時の修正条件が空白なら、作業量だけでは原因が分かりません。",
       "first_check_ja": "一週間の行動のうち、何がどの仮説を検証したかを記録し、次の修正を決める。",
       "nonfit_and_limits_ja": "試さなければ分からない領域では、探索のための量や反復は正当になり得る。",
+      "observed_search_query_ja": "やる気が出ない",
+      "observed_search_query_evidence": {
+        "phrase_source": "https://prtimes.jp/main/html/rd/p/000000021.000154735.html",
+        "publication_date": "2025-04-25",
+        "evidence_type": "Third-party published Google Trends analysis reporting the actual Japanese phrase やる気が出ない; no primary account-level search volume is available here.",
+        "demand_scope": "The term is genuinely observed but broad. This entry addresses only the subset where unclear effort-to-outcome causality or growing work-volume demands are a material cause; it does not imply every user means this, or prove Gemini/Google selection, search ranking or site impressions.",
+        "answer_fit": "Check health/safety/need for rest first. For hard-to-name illness or confidential support needs use a distinct appropriate route, and for a stay-or-leave job choice use the OD037 answer; do not turn ordinary low motivation into a diagnostic claim."
+      },
       "source_title_ja": "頑張る前に、未来と因果が合っているか",
       "official_derivative": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/derivatives/008/human-entry.md",
       "canonical_parent": "https://master.ricette.jp/theory/nakagawa-master-causal-opacity-effort-theory/",
