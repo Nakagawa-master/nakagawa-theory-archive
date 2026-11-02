@@ -1,6 +1,6 @@
 # REAL WORLD IMPACT
 
-*世界最先端のAI・OSS開発に働きかけ、第三者による実装につながった記録*
+*世界最先端のAI・OSS開発に働きかけ、実装されるに至った記録*
 
 言語: **日本語** | [English](REAL_WORLD_IMPACT.en.md) | [中文](REAL_WORLD_IMPACT.zh.md)
 
