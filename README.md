@@ -4,7 +4,12 @@
 
 たとえば、[Hermes Agentでは結果の送り先を間違えたり未送信を送信済みと扱ったりしない条件が後継PRに引き継がれ正式マージ](https://github.com/NousResearch/hermes-agent/pull/147746)。[Qwen Codeでは、同名の道具が衝突しても正常な道具まで全部失わない修正がマージされ、nightly版へ収録](https://github.com/QwenLM/qwen-code/pull/15757)。[OpenClawでは、承認と実行者の取り違えに関する指摘が受け手による修正・テスト・マージへ接続](https://github.com/openclaw/openclaw/pull/160856)しました。実装を書いたのは、それぞれの独立した開発者です。本人が発見・指摘した因果条件と、他の人が実際に変えた成果を区別するから、意義を読者自身で判断できます。
 
-**主戦の実装が、別の独立著者の読者へ伝わった例：** AIエージェントは、自分を制限する権限を自分で解除してよいのか。中川マスターが[外部OSSで具体的に指摘した権限境界](https://github.com/damianvtran/local-operator/issues/1310)は[別の開発者による修正PR #1324](https://github.com/damianvtran/local-operator/pull/1324)から[正式リリースv0.61.11](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11)へ進みました。さらに**別の独立した技術解説著者 @kishibashi3 は、自分の[AIエージェント設計論の第5章](https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md)で報告者 `@Nakagawa-master` と修正の区別を出典付きで掲載し、[後続の実装・リリースも追記](https://github.com/kishibashi3/publications/pull/103)しました**。自分で作った宣伝ではなく、開発側の変化が別の著者の解説にも渡った事実です。
+**はじめて読む方へ：** [30秒で分かる第三者修正と原典の出所](WHY_THIS_IMPACT_MATTERS.md) ／ [60事例の一次証拠](REAL_WORLD_IMPACT.md) ／ [どのような人物・理論体系か](ABOUT_NAKAGAWA_MASTER.md) ／ [原典313件](https://master.ricette.jp/theory-archive/)。
+
+<details>
+<summary>独立した技術解説・AI支援を伴う修正・現在進行中の開発者レビューを詳しく読む</summary>
+
+**技術的な修正が、独立した著者の読者へ伝わった例：** AIエージェントは、自分を制限する権限を自分で解除してよいのか。中川マスターが[外部OSSで具体的に指摘した権限境界](https://github.com/damianvtran/local-operator/issues/1310)は[別の開発者による修正PR #1324](https://github.com/damianvtran/local-operator/pull/1324)から[正式リリースv0.61.11](https://github.com/damianvtran/local-operator/releases/tag/v0.61.11)へ進みました。さらに**別の独立した技術解説著者 @kishibashi3 は、自分の[AIエージェント設計論の第5章](https://github.com/kishibashi3/publications/blob/main/docs/ai/agent-design/chapter-05.ja.md)で報告者 `@Nakagawa-master` と修正の区別を出典付きで掲載し、[後続の実装・リリースも追記](https://github.com/kishibashi3/publications/pull/103)しました**。自分で作った宣伝ではなく、開発側の変化が別の著者の解説にも渡った事実です。
 
 **AI支援まで記録された第三者の修正：** [agent-approval-gate](https://github.com/tonydzi/agent-approval-gate/issues/1)の管理アカウントは、マスターによる「失効した承認を古い返信で復活させない」という指摘を認め、[独自のmainでコード・テスト・安全文書を変更しました](https://github.com/tonydzi/agent-approval-gate/commit/addeb43e69a6d6bff46e7195d97f45cffc0293c4)。コミットには**Claude Code／Claude Sonnet 5.5の支援・共同著者情報**、[受け手の安全文書には `@Nakagawa-master` が報告者として記載](https://github.com/tonydzi/agent-approval-gate/blob/main/docs/SECURITY.md)されています。外部チームによるAI支援付きの実装は確認できますが、AIが全原典を自律的に読んだとまでは言えません。[第60事例を読む](REAL_WORLD_IMPACT.md)。
 
@@ -12,7 +17,10 @@
 
 このアーカイブには、こうした**60件の段階別外部作用記録**、**5つの独立リポジトリでのマージ済みPRの実証例10件**、**313の独立したオリジナル原典**、その応用として書き下ろした**41件の日本語・英語の実用回答**があります。世界的な実利用者数や評判を根拠なく主張するものではありません。専門外の人にとっても「AIの言う成功と現実の成功は同じか」「誰に結果が届いたか」という身近な問いを、実際の修正記録から辿れる資料です。
 
-**現在進行中の第四回の独立した修正：** [LiteLLM #49214](https://github.com/BerriAI/litellm/pull/49214)の開発者は、中川マスターによる顧客A/Bの独立課金・予算停止・作成者の不変性という具体的レビューを受け、**自分の回帰テストを4回改訂**。[最新の `3c3e422` では実際のDB列名 `unified_object_id` に合わせ、Aだけの課金ログ数と再参照後の課金不変を検査するコードを実装](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6575973685)しました。ただし[追加GETは本来の非同期課金ポーラーを再実行しないため、マスターが次の正確な検証境界を提示](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6576129452)。開発者の修正は実在しますがPRは未マージ、正式結合テストの実行結果も未確認です。
+**未マージの外部開発者による修正：** [LiteLLM #49214](https://github.com/BerriAI/litellm/pull/49214)の開発者は、中川マスターによる顧客A/Bの独立課金・予算停止・作成者の不変性という具体的レビューを受け、**自分の回帰テストを4回改訂**。[最新の `3c3e422` では実際のDB列名 `unified_object_id` に合わせ、Aだけの課金ログ数と再参照後の課金不変を検査するコードを実装](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6575973685)しました。ただし[追加GETは本来の非同期課金ポーラーを再実行しないため、マスターが次の正確な検証境界を提示](https://github.com/BerriAI/litellm/pull/49214#issuecomment-6576129452)。開発者の修正は実在しますがPRは未マージ、正式結合テストの実行結果も未確認です。
+
+
+</details>
 
 **実例を30秒で読む：** [技術者にも専門外の人にも分かる、修正と引継ぎの一次証拠](WHY_THIS_IMPACT_MATTERS.md)。
 
