@@ -1543,7 +1543,7 @@ AI编程助手连接了许多工具，却因为部分工具名称发生冲突，
 
 [PR #15757 的代码审查直接注明中川大师的原始评论并要求采用这一条件](https://github.com/QwenLM/qwen-code/pull/15757#discussion_r4402027138)。接收方开发者 **@2SinceJuly** [接受了该修复条件](https://github.com/QwenLM/qwen-code/pull/15757#issuecomment-6485055684)，并[重写代码及回归测试](https://github.com/QwenLM/qwen-code/pull/15757#issuecomment-6486120155)。另一位审查人员 **@wenshao** 还通过真实工具发现与分页流程进行了修复前后对照验证。
 
-**成果：** **[2026年10月31日（UTC），Qwen Code正式将PR #15757合并至main](https://github.com/QwenLM/qwen-code/commit/8a2817ac8acbf9444c8a99549445c482caf1796e)。** 中川大师提出的“不得把不同的真实执行对象当成同一个工具”这一判断，成为独立开发者的代码、测试与上游合并成果。最初的问题报告者为 **@nipercop**，具体代码及测试作者为 **@2SinceJuly**。正式版本发布和真实用户使用情况是下一步确认的事项。
+**成果：** **[2026年10月31日（UTC），Qwen Code正式将PR #15757合并至main](https://github.com/QwenLM/qwen-code/commit/8a2817ac8acbf9444c8a99549445c482caf1796e)。** 中川大师提出的“不得把不同的真实执行对象当成同一个工具”这一判断，成为独立开发者的代码、测试与上游合并成果。最初的问题报告者为 **@nipercop**，具体代码及测试作者为 **@2SinceJuly**。随后，该修复还被**[2026年11月1日公开的Qwen Code nightly版本明确列为更新项目](https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5-nightly.20261101.7b4b353750)**，对应的nightly标签也包含已合并的提交。这是与稳定版v0.26.5不同的nightly发布；真实用户的使用结果仍待核验。
 
 ## 本页可以支持什么结论，以及不能支持什么结论
 
