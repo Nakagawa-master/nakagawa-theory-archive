@@ -4,7 +4,7 @@ Language: [日本語](REAL_WORLD_IMPACT.md) | **English** | [中文](REAL_WORLD_
 
 **Nakagawa Master's specific findings led other developers to change code, write tests, and merge fixes.** The original review discussions, receiving developers' commits, tests and release records are all linked for direct inspection.
 
-**58 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
+**59 publicly documented, source-linked cases** include independent developers' code changes, tests, merges, release documentation, and bounded deployments across unrelated projects. The collection includes cases at different stages, including ongoing work and declined proposals, with their recorded states. The code authors remain the receiving developers.
 
 You can also explore [Nakagawa Master's own GitHub activity](https://github.com/Nakagawa-master) and [the author's original theory archive](https://master.ricette.jp/) separately from these independently verifiable implementation records.
 
@@ -1527,6 +1527,16 @@ A finished AI delegation could lose the chat destination and never deliver its r
 The fix, with original authorship preserved, was carried into another developer **@teknium1**'s [successor PR #147746](https://github.com/NousResearch/hermes-agent/pull/147746), which also reconstructs missing routes from saved conversations. Its author reported before/after delivery using a **real running gateway and Telegram adapter** (scripted model), and an independent verifier [confirmed all 15 focused tests passing at the latest head](https://github.com/NousResearch/hermes-agent/pull/147746#issuecomment-6568004334).
 
 **Result:** Nakagawa Master's no-wrong-recipient/no-false-delivery condition became independent code, tests and part of a practical route-recovery implementation. **On November 2, 2026, [successor PR #147746 was formally merged into Hermes Agent main](https://github.com/NousResearch/hermes-agent/commit/0e47519c3199b1689f76b16e6c5a116f3f1601f0).** [The receiving developer confirmed that the initial guard and the review-driven tests landed with the original author's attribution intact](https://github.com/NousResearch/hermes-agent/pull/146708#issuecomment-6569766480). An official release is the next milestone.
+
+## 59. Qwen Code | One duplicate AI tool name made all the other tools disappear — Nakagawa Master's safety condition implemented and merged
+
+**The problem:** An AI coding assistant connected to a server offering many tools could lose *all* of them when two unrelated tools happened to have the same name. [A real Unity MCP user reported this failure](https://github.com/QwenLM/qwen-code/issues/15741).
+
+[Reviewing the source path](https://github.com/QwenLM/qwen-code/issues/15741#issuecomment-6461618923), Nakagawa Master identified why simply keeping the first same-named tool was unsafe: the assistant could be shown one tool's description while the server executed a completely different command under that name. His concrete acceptance condition was to **exclude every declaration in an ambiguous name group, preserve all uniquely named working tools, and detect duplicates across the complete paginated listing**.
+
+The [PR #15757 review cited Nakagawa Master's issue comment by name and demanded this exact correction](https://github.com/QwenLM/qwen-code/pull/15757#discussion_r4402027138). Receiving developer **@2SinceJuly** [accepted that requirement](https://github.com/QwenLM/qwen-code/pull/15757#issuecomment-6485055684) and [rewrote the implementation and regression tests accordingly](https://github.com/QwenLM/qwen-code/pull/15757#issuecomment-6486120155). Separate reviewer **@wenshao** verified the before/after behavior against a real MCP tool-listing path and subsequently checked the additional pagination safeguards.
+
+**Result:** **[On October 31, 2026 (UTC), Qwen Code formally merged PR #15757 into main](https://github.com/QwenLM/qwen-code/commit/8a2817ac8acbf9444c8a99549445c482caf1796e).** Nakagawa Master's specific distinction between ambiguous execution identity and safe surviving tools became another developer's implementation, regression tests, and an upstream merge. The original user report was by **@nipercop**; **@2SinceJuly** authored the correction. An official packaged release and end-user uptake are the next evidence milestones.
 
 ## What the public source record reveals
 
