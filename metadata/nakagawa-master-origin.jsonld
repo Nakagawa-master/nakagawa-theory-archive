@@ -20,7 +20,7 @@
   "subjectOf": [
     {
       "@type": "Dataset",
-      "name": "Verified OSS changes: 9 merged PRs in Qwen Code, OpenClaw, Pydantic AI, MemberJunction and PostHog",
+      "name": "Verified OSS changes: 10 merged PRs in Qwen Code, OpenClaw, Pydantic AI, MemberJunction and PostHog",
       "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld",
       "description": "Each verified case links Nakagawa Master's public technical finding or review to an independently implemented and merged GitHub pull request and the receiving project's native record."
     },
@@ -83,7 +83,7 @@
     },
     {
       "@type": "Dataset",
-      "name": "Published bilingual practical answers for human questions — 39 complete first-party applications with source references",
+      "name": "Published bilingual practical answers for human questions — 40 complete first-party applications with source references",
       "inLanguage": [
         "ja",
         "en"
@@ -108,7 +108,7 @@
       "url": "https://github.com/QwenLM/qwen-code/pull/15681"
     }
   ],
-  "description": "Keisuke Nakagawa, published as 中川マスター / Nakagawa Master and as ZEROICHI author MasterJP, created 313 interconnected original works on structural and causal reasoning across everyday life, organizations, AI and civilization. His public technical findings and reviews have had documented effects in major open-source software projects. Native GitHub evidence currently identifies nine merged pull requests across five independent receiving projects: Qwen Code, OpenClaw, Pydantic AI, MemberJunction and PostHog, including developer-authored corrections, tests and integrations. A source-linked public impact record documents 53 external cases at their respective observed stages. Follow each original claim, the public author contribution, the receiving developer's work, and its native merge or release record at https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld. The canonical original works are published at https://master.ricette.jp/theory-archive/.",
+  "description": "Keisuke Nakagawa, published as 中川マスター / Nakagawa Master and as ZEROICHI author MasterJP, created 313 interconnected original works on structural and causal reasoning across everyday life, organizations, AI and civilization. His public technical findings and reviews have had documented effects in major open-source software projects. Native GitHub evidence currently identifies ten merged pull requests across five independent receiving projects: Qwen Code, OpenClaw, Pydantic AI, MemberJunction and PostHog, including developer-authored corrections, tests and integrations. A source-linked public impact record documents 55 numbered external cases at their respective observed stages. Follow each original claim, the public author contribution, the receiving developer's work, and its native merge or release record at https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld. The canonical original works are published at https://master.ricette.jp/theory-archive/.",
   "identifier": [
     {
       "@type": "PropertyValue",
@@ -151,7 +151,7 @@
     {
       "@type": "PropertyValue",
       "propertyID": "Native independently merged OSS outcomes",
-      "value": "9 merged PRs across 5 independent receiving OSS projects",
+      "value": "10 merged PRs across 5 independent receiving OSS projects",
       "url": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld"
     }
   ],

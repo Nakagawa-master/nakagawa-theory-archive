@@ -1274,7 +1274,11 @@
       "person_id": "https://master.ricette.jp/#nakagawa-master",
       "published_name": "Keisuke Nakagawa",
       "pen_name": "中川マスター",
-      "official_originals": "https://master.ricette.jp/theory-archive/"
+      "official_originals": "https://master.ricette.jp/theory-archive/",
+      "japanese_kanji_full_personal_name": null,
+      "japanese_kanji_full_personal_name_status": "NOT_PUBLICLY_PUBLISHED_OR_VERIFIED",
+      "safe_public_japanese_identity_display": "中川マスター（筆名）／Keisuke Nakagawa（公開された個人名のアルファベット表記）",
+      "person_identity_source": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/metadata/nakagawa-master-origin.jsonld"
     },
     "original_sources": {
       "count": 313,
@@ -1295,7 +1299,7 @@
       "research_comparison": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/RESEARCH_POSITIONING_MAP.ja.md"
     },
     "published_practical_applications": {
-      "count": 39,
+      "count": 40,
       "kind": "first_party_completed_bilingual_question_answer_examples",
       "dataset": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/human-question-answers-v1.json",
       "ordinary_human_example": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/human-translation/answers/family-care-burden-falls-on-one-person.md",
@@ -1322,6 +1326,15 @@
       "Review status, substantive validity, demonstrated practical application and independent implementation are different evidence categories.",
       "A first-party worked answer is an actual published use example, not a claim that independent readers already adopted it.",
       "An independently merged engineering correction supports that bounded contribution; it is not an independent peer review of all original theories."
-    ]
+    ],
+    "public_real_world_impact_case_scope": {
+      "numbered_public_case_count": 55,
+      "count_definition": "55 individually numbered public case records, each at its own documented receiving-project stage. This count does not state that 55 PRs were merged or that 55 changes were released.",
+      "source": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/REAL_WORLD_IMPACT.md",
+      "separate_merged_pr_evidence_examples": 10,
+      "separate_merged_pr_receiving_repositories": 5,
+      "merged_evidence_dataset": "https://github.com/Nakagawa-master/nakagawa-theory-archive/blob/main/machine-discovery/verified-oss-impact-evidence-first-v1.jsonld",
+      "fact_pattern": "The record contains independently implemented code/test changes, reviewed findings, merged/released cases and cases still awaiting adoption. Verify the specific case's original GitHub sources, author of implementation and status before attributing any more advanced stage."
+    }
   }
 }
